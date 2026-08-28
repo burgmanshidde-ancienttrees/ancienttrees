@@ -1,80 +1,80 @@
 {
- "city": "Roosendaal",
- "country": "Netherlands",
- "city_slug": "roosendaal",
- "note": "Staged 2026-08-22 from the Landelijk Register Monumentale Bomen (Bomenstichting, attribution required). Publicly visitable single trees only, entries the register's own history says are gone already removed. Needs only a story per tree; see data/research/roosendaal-verified.json for the write-pass input.",
- "leads": [
-  {
-   "name": "De Kring",
-   "species": "Oriental Plane (Platanus orientalis)",
-   "lat": 51.533444,
-   "lng": 4.458621,
-   "status": "lead",
-   "why": "LRMB register nr 1680199 ('Oosterse plataan De Kring'). Register planting band 1840-1850, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
-  },
-  {
-   "name": "Common Lime, Emile van Loonpark",
-   "species": "Common Lime (Tilia x europaea)",
-   "lat": 51.534444,
-   "lng": 4.454043,
-   "status": "lead",
-   "why": "LRMB register nr 1680922 ('Hollandse linde'). Register planting band 1750-1800, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: In 1998 al dood verklaard. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
-  },
-  {
-   "name": "Horse Chestnut, bij De Kring Roosendaal",
-   "species": "Horse Chestnut (Aesculus hippocastanum)",
-   "lat": 51.533716,
-   "lng": 4.459202,
-   "status": "lead",
-   "why": "LRMB register nr 1680201 ('Witte paardenkastanje'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
-  },
-  {
-   "name": "(catalpa)",
-   "species": "Southern Catalpa (Catalpa bignonioides)",
-   "lat": 51.529969,
-   "lng": 4.461691,
-   "status": "lead",
-   "why": "LRMB register nr 1680933 ('Trompetboom (catalpa)'). Register planting band 1890-1900, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
-  },
-  {
-   "name": "European Beech, achter Restaurant Vrouwenhof",
-   "species": "European Beech (Fagus sylvatica)",
-   "lat": 51.527941,
-   "lng": 4.464392,
-   "status": "lead",
-   "why": "LRMB register nr 1680973 ('Beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
-  },
-  {
-   "name": "Dennestraat Nispen",
-   "species": "European Beech (Fagus sylvatica)",
-   "lat": 51.487109,
-   "lng": 4.441575,
-   "status": "blocked",
-   "why": "BLOCKED (roo_006): Private owner, square (plein) setting but no address or corroborating detail at all; too thin to place or clear for access."
-  },
-  {
-   "name": "Canadian Poplar, parkeerplaats",
-   "species": "Canadian Poplar (Populus x canadensis)",
-   "lat": 51.533692,
-   "lng": 4.457607,
-   "status": "lead",
-   "why": "LRMB register nr 1690544 ('Canadese populier'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
-  },
-  {
-   "name": "Horse Chestnut, achter vijver",
-   "species": "Horse Chestnut (Aesculus hippocastanum)",
-   "lat": 51.534394,
-   "lng": 4.455283,
-   "status": "lead",
-   "why": "LRMB register nr 1680920 ('Witte paardenkastanje'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
-  },
-  {
-   "name": "London Plane, aan de voorzijde van het gebouw",
-   "species": "London Plane (Platanus x acerifolia)",
-   "lat": 51.530571,
-   "lng": 4.461931,
-   "status": "lead",
-   "why": "LRMB register nr 1680936 ('Gewone plataan'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
-  }
- ]
+  "city": "Roosendaal",
+  "country": "Netherlands",
+  "city_slug": "roosendaal",
+  "note": "Staged 2026-08-22 from the Landelijk Register Monumentale Bomen (Bomenstichting, attribution required). Publicly visitable single trees only, entries the register's own history says are gone already removed. Needs only a story per tree; see data/research/roosendaal-verified.json for the write-pass input.",
+  "leads": [
+    {
+      "name": "De Kring",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "lat": 51.533444,
+      "lng": 4.458621,
+      "status": "lead",
+      "why": "LRMB register nr 1680199 ('Oosterse plataan De Kring'). Register planting band 1840-1850, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+    },
+    {
+      "name": "Common Lime, Emile van Loonpark",
+      "species": "Common Lime (Tilia x europaea)",
+      "lat": 51.534444,
+      "lng": 4.454043,
+      "status": "resolved",
+      "why": "LRMB register nr 1680922 ('Hollandse linde'). Register planting band 1750-1800, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: In 1998 al dood verklaard. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged. [RESOLVED 2026-08-28, delivered as roo_010]"
+    },
+    {
+      "name": "Horse Chestnut, bij De Kring Roosendaal",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "lat": 51.533716,
+      "lng": 4.459202,
+      "status": "lead",
+      "why": "LRMB register nr 1680201 ('Witte paardenkastanje'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+    },
+    {
+      "name": "(catalpa)",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "lat": 51.529969,
+      "lng": 4.461691,
+      "status": "lead",
+      "why": "LRMB register nr 1680933 ('Trompetboom (catalpa)'). Register planting band 1890-1900, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+    },
+    {
+      "name": "European Beech, achter Restaurant Vrouwenhof",
+      "species": "European Beech (Fagus sylvatica)",
+      "lat": 51.527941,
+      "lng": 4.464392,
+      "status": "lead",
+      "why": "LRMB register nr 1680973 ('Beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+    },
+    {
+      "name": "Dennestraat Nispen",
+      "species": "European Beech (Fagus sylvatica)",
+      "lat": 51.487109,
+      "lng": 4.441575,
+      "status": "blocked",
+      "why": "BLOCKED (roo_006): Private owner, square (plein) setting but no address or corroborating detail at all; too thin to place or clear for access."
+    },
+    {
+      "name": "Canadian Poplar, parkeerplaats",
+      "species": "Canadian Poplar (Populus x canadensis)",
+      "lat": 51.533692,
+      "lng": 4.457607,
+      "status": "lead",
+      "why": "LRMB register nr 1690544 ('Canadese populier'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+    },
+    {
+      "name": "Horse Chestnut, achter vijver",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "lat": 51.534394,
+      "lng": 4.455283,
+      "status": "lead",
+      "why": "LRMB register nr 1680920 ('Witte paardenkastanje'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+    },
+    {
+      "name": "London Plane, aan de voorzijde van het gebouw",
+      "species": "London Plane (Platanus x acerifolia)",
+      "lat": 51.530571,
+      "lng": 4.461931,
+      "status": "lead",
+      "why": "LRMB register nr 1680936 ('Gewone plataan'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+    }
+  ]
 }

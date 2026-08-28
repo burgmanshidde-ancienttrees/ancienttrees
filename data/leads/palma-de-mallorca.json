@@ -48,6 +48,115 @@
       "name": "FLEIX DE BUNYOLÍ",
       "species": "Fraxinus angustifolia",
       "reason": "BLOCKED, private land. Same Bunyolí estate as the eucalyptus above (two fused trunks, added to the catalogue in the same expansion). No evidence of public access found this pass; 7.9km from centre. Verified this pass, 2026-08-15."
+    },
+    {
+      "register_id": 684,
+      "name": "SURERA DE SON QUINT",
+      "species": "Quercus suber",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Esporles, 10.9km from Palma centre, effectively a different town. No evidence of public access found this pass. Verified this pass, 2026-08-28 (register field only)."
+    },
+    {
+      "register_id": 683,
+      "name": "XIPRER AMERICÀ DE SON NÉT",
+      "species": "Cupressus macrocarpa",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Puigpunyent, 11.4km from Palma centre, effectively a different town. No evidence of public access found this pass. Verified this pass, 2026-08-28 (register field only)."
+    },
+    {
+      "register_id": 407,
+      "name": "ALZINA DES MOLÍ NOU",
+      "species": "Quercus ilex",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Puigpunyent, 11.9km from Palma centre, effectively a different town. No evidence of public access found this pass. Verified this pass, 2026-08-28 (register field only)."
+    },
+    {
+      "register_id": 672,
+      "name": "PLATER DE SA GRANJA",
+      "species": "Platanus x hispanica",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Esporles, 12.8km from Palma centre; this is the plane tree at La Granja d'Esporles estate, which is a paid tourist attraction, so public access may exist under a ticket, but the register itself records the land as private and no access evidence was pulled this pass (time-boxed). Worth a dedicated look for Esporles as its own future city/collection entry rather than folding into Palma, which is 12.8km and a different town."
+    },
+    {
+      "register_id": 679,
+      "name": "TEIX DE SA GRANJA",
+      "species": "Taxus baccata",
+      "reason": "BLOCKED, private land. Same La Granja d'Esporles estate as the plane tree above; register lists ownership Privada, holder particular. 12.8km from Palma centre, different town. See note on Plater de Sa Granja re: possible paid public access, unconfirmed this pass."
+    },
+    {
+      "register_id": 657,
+      "name": "PI DE SON CORCÓ",
+      "species": "Pinus halepensis",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Consell, 12.8km from Palma centre, different town. No evidence of public access found this pass."
+    },
+    {
+      "register_id": 411,
+      "name": "BELLAOMBRA DE CAN CONRADO",
+      "species": "Phytolacca dioica",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Santa Maria del Camí, 14.4km from Palma centre, different town. No evidence of public access found this pass."
+    },
+    {
+      "register_id": 649,
+      "name": "OLIVERA LA REINA",
+      "species": "Olea europaea",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Calvià, 14.8km from Palma centre, different town. No evidence of public access found this pass."
+    },
+    {
+      "register_id": 655,
+      "name": "PI DE SA COMA",
+      "species": "Pinus halepensis",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Valldemossa, 15.5km from Palma centre, different town. No evidence of public access found this pass."
+    },
+    {
+      "register_id": 658,
+      "name": "PI DE SON CREUS",
+      "species": "Pinus halepensis",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Bunyola, 16.3km from Palma centre, different town. No evidence of public access found this pass."
+    },
+    {
+      "register_id": 671,
+      "name": "PLATER DE SA CLASTRA D'ALFÀBIA",
+      "species": "Platanus x hispanica",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Bunyola, 16.6km from Palma centre, different town; this is likely the plane tree of the Jardins d'Alfàbia estate (a known paid-entry garden), but the register records private ownership and no access evidence was pulled this pass (time-boxed). Worth a dedicated look if Alfàbia/Bunyola is researched as its own entry."
+    },
+    {
+      "register_id": 680,
+      "name": "ULLASTRE DE SON CORCÓ",
+      "species": "Olea europaea var. Sylvestris",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Consell, 18.1km from Palma centre, different town. No evidence of public access found this pass."
+    },
+    {
+      "register_id": 659,
+      "name": "PI DE SON GUITARD",
+      "species": "Pinus halepensis",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Alaró, 18.6km from Palma centre, different town. No evidence of public access found this pass."
+    },
+    {
+      "register_id": 663,
+      "name": "PI RAMUT DE BINIORELLA",
+      "species": "Pinus halepensis",
+      "reason": "BLOCKED, private land. Register: ownership Privada, holder particular. Andratx, 19.3km from Palma centre, different town. No evidence of public access found this pass."
+    }
+  ],
+  "leads_far_public": [
+    {
+      "register_id": 661,
+      "name": "PI DES CAÜLLS",
+      "species": "Pinus halepensis",
+      "reason": "LEAD, not verified this pass. Register lists ownership Publica, holder Ajuntament de Marratxí, catalogued 2001, 10.2km from Palma centre in Marratxí (a different municipality). Checked Marratxí's own 2023 updated singular-tree catalogue (CATALEG-ACTUALITZAT-DARBRES-SINGULARS-2023.pdf, fetched via a Wayback Machine snapshot after the live marratxi.es URL served a bot-challenge page to both curl and WebFetch) for a second source and access details: the current municipal catalogue names a 'Garrover des Caülls' (carob, private urbanització land) and other pines ('Pi de les Cases de Son Verí', 'Pi de sa Via') at the same general area, but does NOT contain an entry named 'Pi des Caülls' anywhere in the extracted text. This is a real discrepancy, not a search failure (checked for every occurrence of 'CAÜLLS' in the document, found exactly one, the carob). Possible explanations: the tree was delisted or renamed since the CAIB register's 2001 catalogue date, or the municipal document's OCR/text layer dropped the entry. Either way this is not a second independent source confirming the CAIB register entry, so it does not clear the two-source bar. Also 10.2km from Palma centre and administratively a different town (Marratxí), so even if confirmed it is a candidate for a future Marratxí entry rather than a Palma tree. Do not re-research from the CAIB register page alone; check with Marratxí town hall directly or a dated aerial/satellite pass on the coordinates (39.630312, 2.732178) first.",
+      "sources_checked": [
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/ (register)",
+        "https://marratxi.es/wp-content/uploads/2023/06/CATALEG-ACTUALITZAT-DARBRES-SINGULARS-2023.pdf (bot-challenge to curl and WebFetch)",
+        "http://web.archive.org/web/20230614143737/https://marratxi.es/wp-content/uploads/2023/06/CATALEG-ACTUALITZAT-DARBRES-SINGULARS-2023.pdf (Wayback snapshot, fetched successfully, extracted text checked for every occurrence of CAULLS)"
+      ]
+    },
+    {
+      "register_id": 420,
+      "name": "EUCALIPTUS DE SA BASTIDA",
+      "species": "Eucalyptus globulosus",
+      "reason": "LEAD, not verified this pass. Register lists ownership Publica, holder CAIB, catalogued 2021, 19.3km from Palma centre in Alaró (a different municipality, past this pass's cluster radius and past a reasonable day-trip boundary from Palma). Not fetched further this pass (time-boxed, prioritised the closer Pi des Caülls candidate). Public ownership makes it a plausible future lead, but for an Alaró entry, not a Palma one."
+    },
+    {
+      "register_id": 418,
+      "name": "ELS ESTANCA-SANGS",
+      "species": "Fraxinus angustifolia",
+      "reason": "LEAD, not verified this pass. Register lists ownership Publica, holder CIMA, catalogued 1992, 15.8km from Palma centre in Santa Maria del Camí (a different municipality). Register notes 'Nomes resta un exemplar' (only one specimen remains; catalogued 3, 2 already recorded dead in the register itself), so alive-now is not certain even from the register's own data and would need a fresh check before shipping anywhere. Not fetched further this pass (time-boxed). A future Santa Maria del Camí entry, not a Palma one."
     }
   ]
 }
