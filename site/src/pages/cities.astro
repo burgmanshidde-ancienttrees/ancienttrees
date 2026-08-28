@@ -17,7 +17,16 @@ function esc(s: string): string {
 // city-list.json order, matching load_cities()/renderable (build_site.py:
 // 2579-2585): the JSON-LD ItemList below quotes `published` in this raw
 // order, only the VISIBLE grouped grid is alphabetically re-sorted.
-const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
+// CITIES ONLY, since blueprint v1.15. A place may now be a region, a park or a
+// forest, and those belong on their country page and in collections rather than
+// in an index called cities: an index of cities that is not a list of cities is
+// the first step to a page nobody trusts. Everything else about them is
+// identical to a city, which is the whole point of widening one word instead of
+// adding a page type.
+const allCities = byCityListOrderEntry(
+  (await getCollection("cities"))
+    .filter(cityIsRenderable)
+    .filter((c) => (c.data.kind ?? "city") === "city"));
 const published = allCities.map((c) => ({
   slug: c.id,
   city: c.data.city,

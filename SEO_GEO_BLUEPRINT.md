@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.14 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.15 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -39,6 +39,40 @@ This document has two layers with different lifespans. Layer 1 (Principles) shou
 - **Every page that owns an image declares it in schema (v1.11).** The page's main entity carries `image`, largest first: the source original for a crawler, then the 960px variant. This is P4 applied to pictures, and it is the only way Google is told which image represents the page rather than guessing. Metadata may point at a larger file than the page renders; the `<img>` itself still goes through `imgSrcset` and qa.py still fails a full-resolution original in an img tag.
 - **Build-time validation:** title length, description length, schema validity, and link minima are checked at build. A page that fails validation does not deploy.
 - **Language:** English. Local-language tree names appear in the body and may appear in the title where the tree is famous under that name.
+
+### What `[city]` means, since v1.15
+
+**A PLACE, not necessarily a city.** Approved by Hidde 2026-08-28, and it changes
+one word rather than any machinery: every contract below that says `[city]` means
+the place a tree belongs to, which may be a city, a region, a national park or a
+forest. `/veluwe/de-kroezeboom` and `/sequoia-national-park/general-sherman` are
+Contract A pages exactly as `/amsterdam/de-wertheimpark-wingnut` is.
+
+It exists because the model had no home for a tree that belongs to no city, and
+the trees that suffered were the best ones: General Sherman stands in a national
+park, and of sixty famous American trees only nine were within forty kilometres
+of a city we publish. A tree without a home cannot have a URL, and a tree without
+a URL is not on this site at all.
+
+This is the shape goal 3 anticipated (DECISIONS.md 2026-08-14): the schema must
+not assume "city", because villages, parks and forests have to become new views
+on the same data rather than a second system.
+
+Three rules come with it, and they are what stop this becoming a spam farm:
+
+1. **A place earns a page on the same floor as a city: four verified trees.**
+   Below that its trees are collection entries, not a place. A hamlet with one
+   fine oak has always been a collection entry and still is.
+2. **A place is a name a person would use for where they are going.** The
+   Veluwe, Sequoia National Park, the Black Forest. Not a municipality nobody
+   says out loud, and never a bounding box invented to hold two trees.
+3. **Only cities appear on `/cities`.** A region belongs on its country page and
+   in collections. Mixing them makes the city index a list of things that are
+   not cities, which is the first step to a page nobody trusts.
+
+Nothing else in this document changes. The titles, the schema, the internal link
+minima and the content minima are the same for a region as for a city, because
+a reader arriving at either wants the same thing.
 
 ### Contract A — Tree page  `/[city]/[tree-slug]`
 
@@ -258,6 +292,8 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 ---
 
 ## CHANGELOG
+
+- **v1.15 (2026-08-28):** `[city]` in every contract means a PLACE: a city, a region, a national park or a forest. Approved by Hidde in session ("ja"), after the measurement that forced the question. Sixty famous American trees sit on Commons with photographs and coordinates, and only NINE of them fall within forty kilometres of a city we publish: General Sherman stands in Sequoia National Park, the Charter Oak in Hartford, the Lahaina Banyan on Maui. A tree with no home has no URL and is therefore not on this site at all, so the model was quietly excluding the best trees in the world. His own words for the shape: "het is toch prima om bomen zonder stad online te zetten... maar horen niet bij een stad." No contract changes and no page type is added; one word widens, which is the shape goal 3 anticipated (DECISIONS.md 2026-08-14: the schema must not assume "city"). Three rules come with it and they are what stop it becoming a spam farm: a place earns a page on the same four-tree floor as a city, a place must be a name a person would say out loud rather than a bounding box invented to hold two trees, and only cities appear on /cities.
 
 - **v1.14 (2026-08-24):** Added Contract K (city walks page `/[city]/walks`), approved by Hidde in session ("nou letsgo") after a conversation about how walks should be addressed at all. 179 walks existed as data and as an app feed since they were built, and had no URL anywhere, so nothing could be linked to or shared, ours or anybody's. His own question decided the shape: "de wandelingen kunnen nog wel eens verschuiven, andere bomen andere start punten, of krijgen we gewoon oneindig wandelingen, hoe gaan onze concurrenten hier slim mee om". Checked rather than assumed, on AllTrails the same day: `/netherlands/north-holland/amsterdam` is titled "10 Best trails and hikes in Amsterdam" and its list is free to change, while a fixed route somebody made lives permanently at `/trail/...`. So a computed thing gets a place's URL and a decided thing gets its own, and every walk we generate is computed. Noted with it, because it is the reason this contract stops where it does: a walk a READER makes is a fixed object and would earn its own permanent URL, unlisted and `noindex`, which is a separate contract nobody has asked for yet. AllTrails' robots.txt disallows ClaudeBot, so that check was made through the browser at Hidde's request and stopped there.
 
