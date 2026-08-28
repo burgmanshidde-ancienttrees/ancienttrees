@@ -9,12 +9,28 @@
    "reason": "Register (netherlands-lrmb nr 1680853) calls this the tallest/thickest tree in Noorderplantsoen ('de koning van het plantsoen') but its own 2020 note records large sections of dying bark and says the tree is entering its final phase, though still alive with enough sap flow for lush foliage as of the register's last update. It also sits only 31.2 m from the already-published gro_004 (The Duck's Foot Tree of Noorderplantsoen, Ginkgo biloba) per the brief's near_published flag, a different species but close enough that a health recheck and a clearer sense of it as its own distinct stop (not just 'more park trees near the ginkgo') should happen before it ships. Not blocked: nothing here says it is dead, and a declining-but-alive veteran is exactly the kind of tree this project wants once its status is current."
   },
   {
-   "register_nr": 1680046,
-   "name": "Leilindes Pepergasthuis Groningen",
-   "species": "Pollarded Lime, ensemble of 11 (Tilia sp.)",
-   "latitude": 53.217258,
-   "longitude": 6.571846,
-   "reason": "New candidate found this pass. Register (nr 1680046) records 11 pollarded lindens ('leivorm') on the binnenplaats of the Pepergasthuis (Sint Geertruidsgasthuis), a historic hofje founded 1405 on Peperstraat, gemeente-owned, visitable listed as 'ja', in good condition with visible old tree-surgery scars from the 1980s. A genuinely good candidate (compact, historic, named ensemble) but access is a real judgement call, not a clean yes: a general source on Groningen's hofjes says 'most hofjes are freely accessible, respect residents' privacy', but this specific courtyard was recently sold to a private investor, which local reporting says has created uncertainty about its future ('mensen weten niet wat er gaat gebeuren met de binnenplaats'), and no source found this pass explicitly confirms public entry to THIS courtyard today. Per BRIEF_RESEARCH.md's 'when in doubt, leave it out', left as a lead rather than shipped; a future pass should look for explicit signage/visiting-hours confirmation or treat a site visit report as decisive."
+   "register_nr": 1680051,
+   "name": "Valse acacia (Zuiderpark 2)",
+   "species": "False Acacia / Black Locust (Robinia pseudoacacia)",
+   "latitude": 53.212903,
+   "longitude": 6.573514,
+   "reason": "Register lists this tree at the same address, 'Zuiderpark 2, Groningen', as the already-blocked Plataan (villa front garden, visitable 'nee'), but WITHOUT the 'voortuin villa' qualifier, with owner_category 'gemeente' (not the villa's private ownership) and visitable 'ja'. Web search confirms Zuiderpark is a villa neighbourhood laid out as a municipal public park (plantsoen) in 1883 by the gemeente, and that robinia is among the species the park itself contains, so a gemeente-owned, visitable robinia at this street frontage is plausible as a public-park tree distinct from the villa's own front garden. But the coordinate is identical to the private villa's, and no source found this pass distinguishes 'stands in the public plantsoen strip' from 'stands in the villa's front garden' for this specific specimen. Left as a lead rather than shipped: a future pass should check aerial imagery or a street-level photo to see whether this tree sits on the public park side of the property line or inside the villa's grounds."
+  },
+  {
+   "register_nr": 1688677,
+   "name": "Hollandse iep (Oosterhaven)",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "latitude": 53.212984,
+   "longitude": 6.569848,
+   "reason": "Register's own place field: 'Park nabij Oosterhaven, Groningen. Geen adres, locatie niet vindbaar, navraag gemGroningen 2015 CE' (no address, location not findable, inquiry with the municipality of Groningen 2015). The register itself records that even the municipality could not pin down this tree's location as of 2015, which is a stronger problem than ordinary approximate precision: it puts the tree's continued existence and location both in doubt from the source's own words, and no second source (news, local history, a park inventory) was found this pass to confirm it. Left as a lead; not blocked, because nothing says it is dead, but not shippable without a source that can actually place it."
+  },
+  {
+   "register_nr": 1680047,
+   "name": "Grauwe abeel (Bloemsingel/Bloemstraat)",
+   "species": "Grey Poplar (Populus x canescens)",
+   "latitude": 53.224004,
+   "longitude": 6.569417,
+   "reason": "Register (nr 1680047) lists this tree at 'Bloemsingel, kruising Bloemstraat', owner_category 'publiekrechtelijke organisatie' (a public body, not a private individual, unlike the villa lead below) and visitable 'ja'. Distinct from the already-blocked 'Gewone plataan RUG / Hollandse iep' pair (Bloemstraat 36 binnenplaats, ~130m away): that pair sits inside a specific faculty building's inner courtyard, this one is registered at the street intersection itself. This pass found Bloemsingel 1 is a large 1911 educational building (6,078 sqm, 'onderwijsfunctie') right at that corner, but found no source confirming whether the tree stands on open street/plantsoen ground at the intersection or inside that institution's own grounds. Register's 'ja' for visitable is a real signal but not, on its own, the same as a source describing what a visitor would actually meet there. Left as a lead pending either a site-level source (satellite/street view check, or a Groningen tree-inventory record with an exact address) or a future pass with time to look."
   }
  ],
  "blocked": [
@@ -65,6 +81,22 @@
    "latitude": 53.215533,
    "longitude": 6.567169,
    "reason": "Register's own history ends: 'En toen viel de boom spontaan om! Zie laatste waarneming' (and then the tree spontaneously fell over! see latest observation), following a multi-year record of a bracket-fungus infection (dikrand tondelzwam, korstjeshoutskoolzwam) at the trunk base. Dead/fallen, confirmed by the register's own last entry. Blocked, we doen niet aan dode bomen. Also note: even before falling, it stood 'in het hofje... tegen de gevel geklemd' (clamped against the facade in the hofje courtyard), so it would also have needed an access check."
+  },
+  {
+   "register_nr": 1694833,
+   "name": "Plataan park Hereweg / Zuiderpark 2 villa",
+   "species": "London Plane (Platanus x acerifolia)",
+   "latitude": 53.212271,
+   "longitude": 6.571324,
+   "reason": "Register's own place field: 'Zuiderpark 2 (voortuin villa)', i.e. the front garden of a specific villa, not the public Zuiderpark despite the street name. Confirmed by web search: Zuiderpark 2 is a protected Rijksmonument villa built 1881/82 for R.P. Cleveringa, 'currently still in use as a residence' (monumenten.nl/rijksmonumenten.nl). The register itself records visitable as 'nee' (visible 'ja', i.e. glimpsable but not enterable). A private residence's front garden is excluded under hard rule 10 (front gardens and private houses stay out whatever the register says), whatever partial street-level visibility exists. Blocked rather than shipped as a view-only tree, because view-only ships only when the source affirmatively describes public visibility, not merely 'visible: ja' against a 'visitable: nee' private-residence flag."
+  },
+  {
+   "register_nr": 1690706,
+   "name": "Witte paardenkastanje (Munnikeholm/Schoolholm binnentuin)",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "latitude": 53.215848,
+   "longitude": 6.562105,
+   "reason": "Register's own 'place' field: 'In binnentuin tussen Munnikeholm en Schoolholm, Groningen. Is gekapt in sept 2010. Kastanjeziekte 2015 CE.' The register's own text records the tree as felled ('gekapt') in September 2010, with a further note about chestnut disease dated 2015 (possibly referring to a resprout or a neighbouring tree, unclear, but the felling statement is unambiguous). Web search for the inner courtyard between these two streets found only unrelated general descriptions of the area's courtyards, nothing contradicting the felling. Blocked as dead/removed per the register's own history, matching the pattern of this city's other already-blocked chestnut (Pelstergasthuis, 'toen viel de boom spontaan om')."
   },
   {
    "register_nr": 1694831,
