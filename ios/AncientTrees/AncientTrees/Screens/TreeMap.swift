@@ -172,6 +172,11 @@ struct TreeMap: UIViewRepresentable {
         }
         map.addGestureRecognizer(tap)
 
+        // A first paint so the map never shows the Atlantic while it lays out.
+        // It is deliberately NOT the final word: at this moment the view has no
+        // height, so there is no content inset yet and this centres the
+        // collection in the whole map, half of which is about to be covered by
+        // the sheet. updateUIView sets it again the moment the inset is real.
         if let focus {
             map.setCenter(focus, zoomLevel: Self.zoom(forMeters: spanMeters), animated: false)
         }
@@ -223,6 +228,25 @@ struct TreeMap: UIViewRepresentable {
                              map.bounds.height * 0.55)
             if abs(map.contentInset.bottom - bottom) > 1 {
                 map.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottom, right: 0)
+            }
+
+            // AND NOW AIM, once, with an inset that is finally real.
+            //
+            // makeUIView centred the collection while the view still had no
+            // height and therefore no inset, so it landed in the middle of the
+            // whole map rather than the middle of the strip somebody can see.
+            // On My trees, where the sheet is tall, that is most of the error
+            // Hidde reported (2026-08-28: "de map en de boom niet in het midden
+            // uitgelijnt"). Same shape as the clustering bug beside it: a value
+            // read before it exists, and a first frame that is wrong until
+            // something else happens to correct it.
+            //
+            // Once only, and never again: after this the camera belongs to
+            // whoever is holding the phone.
+            if let focus, !context.coordinator.aimed {
+                context.coordinator.aimed = true
+                map.setCenter(focus, zoomLevel: Self.zoom(forMeters: spanMeters),
+                              animated: false)
             }
         }
 
@@ -522,6 +546,9 @@ struct TreeMap: UIViewRepresentable {
         /// and re-sorting fifteen hundred trees for every three metres would be
         /// work nobody can see. Three hundred metres is under one screen at
         /// street zoom, so the list still feels live.
+        /// Whether the opening shot has been taken with a real content inset.
+        var aimed = false
+
         func mapView(_ map: MLNMapView, regionDidChangeAnimated animated: Bool) {
             // Our own clustering regroups on a change of zoom level and does
             // nothing on a pan, which is what makes a pan free.
