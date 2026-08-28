@@ -235,6 +235,12 @@
       "seen": "2026-08-23",
       "cost": "one 15s timeout during a Brisbane deepen verify pass, plus a live-fetch check on the bare root",
       "workaround": "Wayback Machine snapshots load fine via curl with a browser user agent (e.g. web.archive.org/web/20250426212328/https://brisbanebotanictreasures.info/exploring-brisbane-city-botanic-gardens/brisbane-city-botanic-gardens-description/); use the archive.org/wayback/available API to find the closest snapshot per page first"
+    },
+    "trusttrees.org.au": {
+      "behaviour": "the /search endpoint (e.g. /search?state=QLD&region=Brisbane) hangs, no response at all (curl -m 20, exit 28, both plain and browser UA); individual /tree/QLD/<suburb>/<slug> pages load fine via plain curl, and WebFetch also succeeded on the search URL where curl did not",
+      "seen": "2026-08-28",
+      "cost": "burned one 20s timeout during a Brisbane deepen verify pass",
+      "workaround": "use WebFetch instead of curl for the /search form, or better, avoid the search form entirely and go straight to known /tree/QLD/<suburb>/<slug> URLs (findable via WebSearch) or WebSearch itself"
     }
   }
 }

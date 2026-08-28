@@ -748,6 +748,153 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "kra_022",
+      "name": "The Bednarski Park Black Walnut",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 298,
+      "location": {
+        "address": "Park im. Wojciecha Bednarskiego, Podgorze, Krakow",
+        "latitude": 50.04195686821437,
+        "longitude": 19.949573920925484,
+        "neighbourhood": "Podgorze"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2873",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "https://pl.wikipedia.org/wiki/Park_im._Wojciecha_Bednarskiego_w_Krakowie"
+      ],
+      "access": "Free, open public park (Zarzad Zieleni Miejskiej), entrances on ul. Parkowa and ul. Zamoyskiego near Plac Niepodleglosci",
+      "transport": "Podgorze tram stops (Rondo Matecznego / Plac Bohaterow Getta area), roughly 10-15 min walk uphill into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Krakow's register of natural monuments holds exactly one black walnut, and this is it. The city recorded 298 centimetres of trunk when it granted the tree protection in February 2017.\n\nThe species belongs to the river valleys of eastern North America, not to a Polish hillside, and it is here because the park around it was built to show things off. Park Bednarskiego was laid out inside a worked-out limestone quarry from the 1890s, its terraces planted with what the city had little of: tulip tree, tree of heaven, this walnut. The garden section it stands in is called Szkola Twardowskiego, the school of Twardowski, after the sorcerer whose workshop local legend placed in the quarry basin.\n\nBlack walnut makes its case in autumn. The fruit comes down in green husks the size of tennis balls, and the pulp inside stains hands, gloves and paving a brown that does not wash off.\n\nThe whole park closed for rebuilding in January 2022 and reopened on 27 April 2023, the work written up as keeping the existing old growth standing. This tree came through it.\n\nNobody has recorded its age. The park was planted in more than one campaign and no source ties this trunk to any of them. If you know when it went in, tell us.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "late September into October, when the green husks come down and stain everything they touch"
+      }
+    },
+    {
+      "id": "kra_023",
+      "name": "The Bednarski Park Larch",
+      "species": "European Larch (Larix decidua)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 223,
+      "location": {
+        "address": "Park im. Wojciecha Bednarskiego, Podgorze, Krakow",
+        "latitude": 50.04092888952095,
+        "longitude": 19.948700326448318,
+        "neighbourhood": "Podgorze"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2874",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "https://pl.wikipedia.org/wiki/Park_im._Wojciecha_Bednarskiego_w_Krakowie"
+      ],
+      "access": "Free, open public park (Zarzad Zieleni Miejskiej), entrances on ul. Parkowa and ul. Zamoyskiego near Plac Niepodleglosci",
+      "transport": "Podgorze tram stops (Rondo Matecznego / Plac Bohaterow Getta area), roughly 10-15 min walk uphill into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The slope this larch grows on was fenced, guarded and shut to the public for roughly half a century. Park Bednarskiego planted its western side as woodland between 1902 and 1909, named the section Zalesienie, and then kept people out of it with high fines for trespassing. It opened to walkers only in the 1950s, decades after the rest of the park was in daily use.\n\nThe tree is also the only European larch on Krakow's list of natural monuments. The city recorded 223 centimetres of trunk when it protected the tree in February 2017, in the same council resolution that covered three of its neighbours in this park.\n\nLarch is the conifer that does not stay green. Soft needles in little bunches, fresh green in April, gold through late October, and by December nothing at all: a bare grey frame standing among evergreens that kept theirs. Almost nothing else in a European park does that, and it is the reason to come here in November rather than in July.\n\nNo age is recorded for it anywhere, and the park's own planting history is not specific enough to supply one honestly. If you know this tree's story, we would like to hear it. The park closed for a full rebuild in 2022 and reopened in April 2023 with its old growth kept in place, so what you walk up to is the tree the register measured.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the needles turn gold and then drop"
+      }
+    },
+    {
+      "id": "kra_024",
+      "name": "The Bednarski Park Ash",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 278,
+      "location": {
+        "address": "Park im. Wojciecha Bednarskiego, Podgorze, Krakow",
+        "latitude": 50.04268285755624,
+        "longitude": 19.948703203849714,
+        "neighbourhood": "Podgorze"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2872",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "https://pl.wikipedia.org/wiki/Park_im._Wojciecha_Bednarskiego_w_Krakowie"
+      ],
+      "access": "Free, open public park (Zarzad Zieleni Miejskiej), entrances on ul. Parkowa and ul. Zamoyskiego near Plac Niepodleglosci",
+      "transport": "Podgorze tram stops (Rondo Matecznego / Plac Bohaterow Getta area), roughly 10-15 min walk uphill into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Krakow protects three European ashes, and this is the only one that does not grow out of a pavement. The other two stand on ul. Straszewskiego and on Plac Kossaka, thicker trunks but boxed in by kerbs and parked cars. This one has a park around it.\n\nIt measures 278 centimetres round, the figure the city entered when it added the tree to the register in February 2017. Ash is the species that gives Park Bednarskiego its shape: jesiony line the Aleja Okrezna, the circular promenade that carries walkers around the old quarry basin, and this is the trunk the register picked out of the row.\n\nThe ground is worth knowing about before you get there. The park is a worked-out limestone quarry turned into a public garden from the 1890s, terraced where the stone had been cut away, so everything growing here is standing on an industrial site that was given back. The city rebuilt the park between January 2022 and April 2023 and wrote the old trees into the specification, which is why the promenade still has its ash.\n\nNo record gives this tree an age, and the park's history is not precise enough to settle it without guessing. A tape measure round the trunk at chest height would get us closer than any document we have found. If you have one, tell us what it says."
+    },
+    {
+      "id": "kra_025",
+      "name": "The Bednarski Park Sycamore Maple",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 204,
+      "location": {
+        "address": "Park im. Wojciecha Bednarskiego, Podgorze, Krakow",
+        "latitude": 50.04183782134378,
+        "longitude": 19.94729145165342,
+        "neighbourhood": "Podgorze"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2871",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "https://pl.wikipedia.org/wiki/Park_im._Wojciecha_Bednarskiego_w_Krakowie"
+      ],
+      "access": "Free, open public park (Zarzad Zieleni Miejskiej), entrances on ul. Parkowa and ul. Zamoyskiego near Plac Niepodleglosci",
+      "transport": "Podgorze tram stops (Rondo Matecznego / Plac Bohaterow Getta area), roughly 10-15 min walk uphill into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The city's register carries this maple under two numbers, 204 centimetres and 191, because it has two trunks rather than one. That is the register being careful, and it is also the easiest way to find the tree: among the maples on this slope, look for the one going up as a pair.\n\nSycamore is a mountain species, the maple of the Carpathians and the Alps, and it makes timber size on thin stony ground where most broadleaves give up. Park Bednarskiego, cut into a limestone quarry above Podgorze and planted from the 1890s, is that kind of ground. Three maple species grow here and this is the klon jawor, the one whose bark flakes off in plates as it ages, leaving the trunk mottled like a plane tree.\n\nIt was protected in February 2017, one of four trees in this single garden that Krakow put on the natural monument register in one council resolution, alongside a black walnut, a European larch and an ash. Four monuments inside one park, which is why this hillside is worth an afternoon rather than a detour.\n\nNobody has dated it, and no source says whether it was planted here or seeded itself, which sycamore does readily. If you know more about this one, tell us."
+    },
+    {
+      "id": "kra_026",
+      "name": "The Kosciuszki Norway Maple",
+      "species": "Norway Maple (Acer platanoides)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 210,
+      "location": {
+        "address": "ul. Kosciuszki 18, Krakow",
+        "latitude": 50.054012889699806,
+        "longitude": 19.92553760021184,
+        "neighbourhood": "Debniki"
+      },
+      "verified_sources": [
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.3048",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+      ],
+      "access": "Free, street tree on public ground (ul. Kosciuszki), visible and reachable at all times",
+      "transport": "Same street as the already-published Kosciuszki Silver Lime (kra_020), about 115m away; same tram/bus stops on ul. Kosciuszki",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Norway maple is the tree Krakow plants when it simply needs a tree. It lines streets all over the city, which is what makes a protected one strange: in 2020 the council entered this specimen at ul. Kosciuszki 18 on the register of natural monuments, at 210 centimetres round.\n\nThe girth is the whole case. Street maples are pruned back, hemmed in under paving and usually replaced long before they thicken, so a trunk over two metres round on an open pavement is not what the species normally manages in a city.\n\nIt is also the second monument on this stretch of road. The Kosciuszki Silver Lime, twice as thick at 424 centimetres, stands about 115 metres along the same street, so the two are one short walk rather than two separate trips.\n\nApril is the moment worth turning up for. Norway maple flowers before it leafs, and the bare crown fills with clusters of acid yellow-green that read, on a grey Krakow street, as the first colour of the year. A broken leaf stalk bleeds milky white, which is how the species is told from the sycamore it otherwise resembles.\n\nNo age is on record. The register is interested in the measurement rather than the year, and nobody has published a figure. If you know when this one went in, tell us.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "April, when it flowers before it leafs and the bare crown turns acid yellow-green"
+      }
     }
   ]
 }

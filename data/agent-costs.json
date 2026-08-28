@@ -3733,6 +3733,42 @@
     "note": "scout_next.py --target named Cagliari as the city to unblock; its country/region register was stalled since 2026-08-17 on an unfound licence. Found the layers own GeoNetwork metadata record (bypassing the geoportale landing page) confirming CC BY 4.0, and imported the full 405-tree WFS layer to data/registers/sardinia-alberi-monumentali.json (species, girth, height, no age, same as every other Italian region). 6 trees sit within 1.4km of Cagliaris centre incl. a 1200cm-girth fig, ready for a future verify pass once a claim slot frees up. register-scouting.json and OPEN_DATA_SURVEY.md updated with the resolved verdict.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "brisbane",
+    "kind": "verify",
+    "tokens": 170000,
+    "trees": 3,
+    "note": "Newstead Park cluster (Crows Ash, White Rabbit crepe myrtle, both near bne_016) plus a new standalone Toowong candidate (Memorial Crows Ash, 1924); all single-source/flagged, Kelvin Grove Fig Trees newly blocked as an avenue (not one collectible point)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "brisbane",
+    "kind": "write",
+    "tokens": 95000,
+    "trees": 3,
+    "note": "Write pass, 3 trees. Merged: 15 to 18 trees. Fixed stale count-promise copy across intro/meta_description/question_meta/question_context/faq (thirteen-of-fifteen structure rewritten for the new Newstead+Toowong split, trimmed back under Contract B/C word limits after expanding)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "krakow",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 5,
+    "note": "Bednarski Park cluster (4 trees, incl. Krakows only registered black walnut and larch) plus one Kosciuszki street maple extending an existing pair; GDOS+Wikipedia wykaz join",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "krakow",
+    "kind": "write",
+    "tokens": 48000,
+    "trees": 5,
+    "note": "Write pass, 5 trees, merged 21 to 26. No stale count-promise copy found (Krakow city file uses no spelled-out totals in the affected fields).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
