@@ -34,12 +34,33 @@ WANT = (1320, 2868)
 ORIGIN = "-at=52.3731,4.8922"
 
 # name, launch arguments, seconds to wait before the shutter.
+# WHAT IS ON THE SCREEN MATTERS AS MUCH AS THE SIZE, and the first version of
+# this table got that wrong in three places out of five. It was right about
+# every dimension and wrong about every subject, which is exactly the failure
+# this script warns about at the end of its own run.
+#
+# What was wrong, on 2026-08-28, once somebody looked:
+#   the tree page opened ams_005, the Cycad of the Hortus, which is a potted
+#     plant in a glasshouse behind a paid ticket, and which CLAUDE.md itself
+#     names as the thing that is not a tree
+#   My trees was headed "test", because the demo session has no name and the
+#     app falls back to the local part of its address
+#   the city page led with the Heimanseik, whose card is a green panel reading
+#     "No photograph yet" at the largest size on the screen
+#
+# So every subject here is now chosen and the reason is written down, because
+# the data moves under it: a tree can lose its photograph, a city can gain one.
 SHOTS = [
     ("1-map", ["-tab=0", "-sheet=half"], 9),
-    ("2-tree", ["-tab=0", "-open=tree:ams_005"], 7),
-    ("3-my-trees", ["-tab=2", "-signed-in", "-collected=ams_001,ams_002"], 6),
+    # Photographed, free, and outdoors: the promise is an afternoon outside.
+    ("2-tree", ["-tab=0", "-open=tree:ams_010"], 7),
+    # A name rather than "test", and two collected trees that carry a picture.
+    ("3-my-trees", ["-tab=2", "-signed-in", "-as=Hidde",
+                    "-collected=ams_002,ams_010"], 6),
     ("4-discover", ["-tab=1"], 6),
-    ("5-city", ["-tab=0", "-open=city:amsterdam"], 8),
+    # Munich rather than Amsterdam: 45 trees and the first four all
+    # photographed, so the page opens on trees instead of on empty cards.
+    ("5-city", ["-tab=0", "-open=city:munich"], 8),
 ]
 
 

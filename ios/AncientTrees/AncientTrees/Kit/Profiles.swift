@@ -34,7 +34,24 @@ public final class Profiles {
 
     private var base: URL { Submission.url.deletingLastPathComponent() }
 
-    public init() {}
+    public init() {
+        // Debug scaffolding, the same family as -collected=, -mine-demo and
+        // -signed-in: give the signed-in demo account a name.
+        //
+        // Without it the name falls back to the local part of the fake
+        // session's address and every screenshot of My trees is headed "test",
+        // which is how a store screenshot announces that it is a test build.
+        // Found by looking at the five App Store screenshots on 2026-08-28,
+        // which is what the script that makes them tells you to do.
+        if let arg = ProcessInfo.processInfo.arguments
+            .first(where: { $0.hasPrefix("-as=") }) {
+            let name = String(arg.dropFirst(4))
+            if !name.isEmpty {
+                me = Profile(user_id: "00000000-0000-0000-0000-0000000000ab",
+                             display_name: name, avatar_url: nil, units: nil)
+            }
+        }
+    }
 
     private func request(_ path: String, _ method: String, token: String?,
                          body: Data? = nil, prefer: String? = nil) -> URLRequest {
