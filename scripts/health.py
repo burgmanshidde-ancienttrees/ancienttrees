@@ -124,7 +124,7 @@ def looks_starved(workflow):
 # "nothing new pushed" while the truth was "the engine has been off for two
 # days". This reads the runs' own health ledger and says so.
 RUN_HEALTH = os.path.join(ROOT, "data", "run-health.json")
-IDLE_STREAK_FLOOR = 4  # nine knocks a day, so four in a row is most of a shift
+IDLE_STREAK_FLOOR = 4  # four dead in a row is a third of a day, whatever the knock count
 
 
 def night_shift_idle():
@@ -156,8 +156,8 @@ def night_shift_idle():
 # fire used their full window and worked fine. The digest's own watchdog cannot
 # see it either, because it waits for 26 hours of TOTAL silence and 2-of-9 never
 # produces a gap that long.
-KNOCKS_A_DAY = 9
-KNOCK_FLOOR = 5  # under this in 24h is a delivery problem, not a quiet night
+KNOCKS_A_DAY = 12  # nightly.yml, every two hours round the clock since 2026-08-28
+KNOCK_FLOOR = 7  # under this in 24h is a delivery problem, not a quiet night
 
 
 def knocks_fired():

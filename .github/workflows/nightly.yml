@@ -85,8 +85,36 @@ on:
     # back to six, which is the line below.
     #     six-knock line to restore:  - cron: "0 20,23 * * *"
     #                                 - cron: "0 2,5,8,11 * * *"
-    - cron: "0 18,20,22 * * *"
-    - cron: "0 0,2,4,6,8,10 * * *"
+    #     nine-knock line to restore: - cron: "0 18,20,22 * * *"
+    #                                 - cron: "0 0,2,4,6,8,10 * * *"
+    #
+    # 2026-08-28, Hidde: "i think we can increase the amount of nightruns",
+    # "since tokens are ok". TWELVE knocks, every two hours, round the clock.
+    # What actually changed is the DAYTIME GAP: nine knocks left 10:00 to 18:00
+    # UTC empty, which was the 2026-07-26 rhythm giving his working day back to
+    # him. The capacity doctrine replaced that on 2026-07-28 ("runs fire day and
+    # night, not politeness by clock") and this cron never caught up.
+    #
+    # Why this is nearly free, measured from data/run-health.json over the
+    # eleven days to 08-28: the ceiling is 1080 minutes a day and the BEST day
+    # spent 329 of them, 30%. Most days sat between 4% and 20%. The ceiling has
+    # never once been the binding constraint, so the arithmetic that justified
+    # every earlier change to this list ("nine lands near 10% of the week") is
+    # measuring a thing that does not happen.
+    #
+    # And the honest limit of this change, so the next tune does not mistake it
+    # for a lever it is not: knock count does not make trees, RUN LENGTH does.
+    # 08-27 delivered 2 knocks and 32 trees, because both runs got a full 78
+    # minutes. 08-21 delivered 9 knocks and 8 trees, because every one of them
+    # stalled early. More knocks buys more CHANCES at a window that works; it
+    # does nothing about a run that hands its window back after 20 minutes,
+    # which is still the biggest single loss in this file's history.
+    #
+    # Two hours apart is the floor for spacing, not a preference: timeout is
+    # 120 minutes below and the concurrency group does not cancel, so a knock
+    # arriving inside a maxed-out run queues behind it and GitHub keeps only
+    # the newest pending one. Closer than two hours starts throwing knocks away.
+    - cron: "0 0,2,4,6,8,10,12,14,16,18,20,22 * * *"
   workflow_dispatch: {}
 
 permissions:
