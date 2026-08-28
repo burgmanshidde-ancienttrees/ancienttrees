@@ -2,11 +2,11 @@
   "city": "Cagliari",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Cagliari's biggest tree stands on the square outside the central railway station: a Moreton Bay fig with a trunk twelve metres round, fenced at the base and closely watched. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest public park, adds a twinned pair of figs, a honey locust and a jacaranda that turns violet in May. Further out in Pirri, a cypress older than the cemetery around it. Six of the seven stand within a kilometre and a half.",
+  "intro": "Cagliari's biggest tree stands on the square outside the central railway station: a Moreton Bay fig with a trunk twelve metres round, fenced at the base and closely watched. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest park, adds twinned figs, a honey locust and a jacaranda that turns violet in May. Further out, a cypress in Pirri older than its cemetery, and a day trip to Dolianova for two pines by a Romanesque cathedral. Six of eight stand within a kilometre and a half.",
   "meta_description": "Cagliari's monumental trees: a fig twelve metres round outside the station, another on the Via Roma waterfront, and three in Sardinia's oldest park.",
   "question_meta": "Cagliari's oldest tree is the cypress in the Pirri cemetery, over two hundred years old and older than the graveyard. Where it stands, plus six more.",
   "question_answer": "The oldest tree in Cagliari is the cypress in the Pirri cemetery, which Sardinian press covering its 2025 protection puts at more than two hundred years old: it was already standing when the burial ground was consecrated in November 1913. The only tree here that comes close is the Tintitaco in the Parco della Rimembranza, and its own record disagrees with itself, roughly 166 years on the Italian tree registry against about 200 in local reporting. The figs are younger than both. The two on the city squares are given 140 to 150 years, and the pair in the Giardini Pubblici anywhere between 140 and 195, a range nobody has narrowed.",
-  "question_context": "Ages are the soft part of the record in Cagliari, and it is worth knowing why. Italy's national register of monumental trees, which covers every tree on this page, measures girth and height and carries no age field at all. Every year given here therefore comes from somewhere else: local and regional newspapers, the council's own designation notices, or the independent Italian tree registry, which is the only source that has dated the Tintitaco. Where two of those disagree, this page gives both figures rather than choosing. Access is simpler. All seven trees stand on free public ground, six of them within a kilometre and a half of each other in the centre, and the seventh four kilometres out in Pirri, on a bus route. Two qualifications: a precautionary fence rings the ground under the station fig, so you can stand beside it and not under it, and the Pirri cypress is in a working cemetery with visiting hours. Two further register trees in Cagliari were checked and left off, a Norfolk Island pine and a coral tree, both standing on private ground.",
+  "question_context": "Ages are the soft part of the record in Cagliari, and it is worth knowing why. Italy's national register of monumental trees, which covers every tree on this page, measures girth and height and carries no age field at all. Every year given here therefore comes from somewhere else: local and regional newspapers, the council's own designation notices, or the independent Italian tree registry, which is the only source that has dated the Tintitaco. Where two of those disagree, this page gives both figures rather than choosing. Access is simpler. All eight trees stand on free public ground, six of them within a kilometre and a half of each other in the centre, the seventh four kilometres out in Pirri on a bus route, and the eighth eighteen kilometres out in Dolianova on the regional train. Two qualifications: a precautionary fence rings the ground under the station fig, so you can stand beside it and not under it, and the Pirri cypress is in a working cemetery with visiting hours. Two further register trees in Cagliari were checked and left off, a Norfolk Island pine and a coral tree, both standing on private ground.",
   "faq": [
     {
       "q": "What is the oldest tree in Cagliari?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Six of the seven, yes. The station fig, the Via Roma fig, the Tintitaco and the three Giardini Pubblici trees sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus."
+      "a": "Six of the seven, yes. The station fig, the Via Roma fig, the Tintitaco and the three Giardini Pubblici trees sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus. Dolianova's two pines are further still, an 18km train ride, and make their own separate day out."
     }
   ],
   "hero_tree_id": "cag_004",
@@ -260,6 +260,36 @@
       },
       "height_m": 15.0,
       "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+    },
+    {
+      "id": "cag_008",
+      "name": "The Aleppo Pines of San Pantaleo",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "under 100 years",
+      "age_min": 60,
+      "age_max": 95,
+      "location": {
+        "address": "Piazza San Pantaleo, 09041 Dolianova, Sardinia",
+        "latitude": 39.381608,
+        "longitude": 9.174147,
+        "neighbourhood": "Dolianova"
+      },
+      "verified_sources": [
+        "https://comune.dolianova.su.it/vivere-il-comune/luoghi/bellezza-naturale/pino-d-aleppo",
+        "https://comune.dolianova.su.it/vivere-il-comune/luoghi/bellezza-naturale/pino-d-aleppo-via-san-martino"
+      ],
+      "access": "Free, open piazza and cathedral churchyard",
+      "transport": "Regional train from Cagliari to Dolianova, about 23 minutes, then a short walk to the cathedral square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Day trip entry, 18km/23 min train from Cagliari centre, per the day-trip boundary rule. Two register entries (MASAF sheets 01/D323/CA/20 and 02/D323/CA/20) folded into one entry per the twin/group convention: the larger pine (girth 340cm, height 19.5m) stands in the open Piazza San Pantaleo; the smaller (girth 265cm, height 16.7m) stands inside the cathedral's own sagrato (walled forecourt) a short walk away on Via San Martino. Both are the Comune di Dolianova's own designated 'Bellezza naturale' landmarks, each with its own page explicitly stating public access ('libera e fruibile a tutti'). Age is the municipality's own register estimate, a band under 100 years, deliberately not sharpened.",
+      "location_precision": "confirmed",
+      "story": "Two Aleppo pines stand at the doorstep of one of Sardinia's most important Romanesque churches, in the small town of Dolianova, about 23 minutes from Cagliari by regional train. The larger, 3.4 metres round and just under 20 metres tall, grows in the open Piazza San Pantaleo, facing the cathedral's stone facade. The second, a metre smaller round, stands inside the sagrato, the walled forecourt where the cathedral keeps its own patch of ground.\n\nThe Concattedrale di San Pantaleo behind them was built between the early 1100s and 1289, one of the oldest and most complete Romanesque buildings on the island, its sandstone walls carved with the geometric and animal motifs typical of the period. The pines are far younger: Dolianova's own register puts each at under a century old, but they have grown up in the shadow of a building that predates them by 800 years, and the town has designated both as protected natural landmarks in their own right.\n\nBoth stand on open, unticketed ground, which the town's own listing describes in as many words as free and open to everyone. A short detour off any Cagliari itinerary, and a chance to see Italy's national register of monumental trees include something other than a giant."
     }
   ]
 }
