@@ -73,7 +73,7 @@ struct SponsorSheet: View {
                             .font(.footnote).foregroundStyle(.red)
                     }
 
-                    Text("Sponsoring unlocks nothing and is not a subscription. If you would rather help without money, send me a tree I am missing.")
+                    Text("Sponsoring unlocks nothing and is not a subscription. You can also contribute by adding a tree that is missing.")
                         .font(.footnote).foregroundStyle(Brand.inkSoft)
                 }
                 .padding(20)
