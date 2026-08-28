@@ -79,10 +79,14 @@
     {
       "name": "The Wadow Park Silver Linden",
       "species": "Silver Lime (Tilia tomentosa)",
-      "latitude": null,
-      "longitude": null,
+      "gid": 203682,
+      "kodinspire": "PL.ZIPOP.1393.PP.1261011.2912",
+      "latitude": 50.09936396880366,
+      "longitude": 20.124425000000148,
       "girth_cm": 559,
-      "reason": "Named by krakow.pl's own 2020-era announcement (dziewietnascie_pomnikow_przyrody) as the largest-girth tree among a batch of 19 newly designated monuments, in Wadow Park. Not pursued this pass because Wadow Park's location relative to the centre was not checked and it did not fit the Planty-ring cluster; worth a dedicated look, since 559cm girth would make it larger than every tree shipped this pass, in a second, separate cluster with a tall elm (29.5m) and a wide-crowned oak (28.2 x 22.8m canopy) from the same announcement."
+      "designated": "2017-12-29",
+      "reason": "Coordinates now resolved via the GDOS register join: Park Wadow sits in Wzgorza Krzeslawickie, roughly 14 km from the centre by straight line (Nominatim confirms the park itself, place_id 425489551, in the Glinik/Wadow area of that district). That is well past this project's day-trip boundary (~30 min transit of the centre) on distance alone, and this pass did not have time to check whether a fast direct bus/tram route could still bring it inside 30 minutes; until someone checks a real transit time, treat this as likely too far rather than confirmed too far. The rest of the cluster (elm 463cm, two oaks 340/353cm, a small-leaved lime with no girth recorded) sits within about 100m of this tree, same designation batch (2017-12-29), same source. If a transit check clears it, this is a strong second Krakow walk: the 559cm girth here would be larger than every tree currently published for this city.",
+      "status": "unresolved, transit time to centre needs checking before this can ship"
     },
     {
       "name": "French Maple on ul. [unnamed nearby street]",
@@ -92,13 +96,31 @@
       "latitude": 50.0627,
       "longitude": 19.94454,
       "designated": "2026-06-06 per GDOS (very recent designation)",
-      "reason": "0.54 km from centre, 454 m from any published tree; a genuinely rare species for a Krakow street tree, which would have made a strong, distinctive addition. Not pursued this pass: designated only weeks before this pass (2026-06-06), too recent to appear in the 2023-snapshot Wikipedia wykaz table used to cross-source this city's other trees, so no second independent source (address, girth, or photo) could be found in the time available. GDOS alone is one source. Worth a dedicated look once a 2026 update to the city's own wykaz or a local news item about the new designation surfaces.",
+      "reason": "0.54 km from centre, 454 m from any published tree; a genuinely rare species for a Krakow street tree, which would have made a strong, distinctive addition. Not pursued this pass: designated only weeks before this pass (2026-06-06), too recent to appear in the 2023-snapshot Wikipedia wykaz table used to cross-source this city's other trees, so no second independent source (address, girth, or photo) could be found in the time available. GDOS alone is one source. Re-checked this pass (2026-08-28): still absent from the wykaz table, which tops out at entry 362 (2023 batch). Worth a dedicated look once a 2026 update to the city's own wykaz or a local news item about the new designation surfaces.",
       "status": "unresolved, second source needed"
     },
     {
       "name": "Cluster of exotic monuments in the Botanical Garden area (Ogród Botaniczny UJ vicinity)",
       "species": "Hungarian Oak (Quercus frainetto), Canary Island Date Palm (Phoenix canariensis), Sago Palm (Cycas circinalis), a second Ginkgo biloba, and others",
       "reason": "A second cluster roughly 1.4-1.6 km from the main Planty-ring cluster, around Al. Daszyńskiego / ul. Kopernika, likely inside or adjacent to the Jagiellonian University Botanical Garden, which is PAID ENTRY. Not investigated this pass beyond noting the location: worth checking who owns each individual tree's exact spot, since some (the Hungarian oak, the ginkgo) may stand on the public street outside the garden fence while the palm and cycad candidates are almost certainly under glass or paid grounds. A future pass should resolve garden-vs-street per tree before shipping any of them, per the paid-entry-share rule (at most about a third of a city behind a ticket)."
+    },
+    {
+      "name": "Debniki elm/oak/maple micro-cluster near ul. Baluckiego",
+      "species": "Pedunculate Elm / European White Elm (Ulmus laevis, seven separately-designated specimens), Pedunculate Oak (Quercus robur), Sycamore Maple (Acer pseudoplatanus), Northern Red Oak (Quercus rubra), Honey Locust (Gleditsia triacanthos)",
+      "latitude": 50.0507,
+      "longitude": 19.9270,
+      "reason": "Roughly 1.0-1.2 km southwest of the centre, in Debniki near ul. Michala Baluckiego (Nominatim reverse geocode). GDOS carries seven separate Ulmus laevis register entries within about 100m of each other, plus nearby oaks and a maple, all individually designated ('jednoobiektowy', not a group/avenue designation in the register's own typing). Not pursued this pass: seven elms this tightly packed reads either as a genuine remarkable stand worth its own stop, or as a planted row/avenue, which CLAUDE.md's collectible-point rule blocks ('one identifiable tree, or a compact famous ensemble with one obvious place to stand... an avenue is blocked'). Resolving which one it is needs either a site description/photo or aerial imagery showing whether these read as a distinct grove versus a street planting, which this pass did not have time for. Worth a dedicated look; if it is a grove rather than an avenue, it is a second walkable cluster of real size close to the centre.",
+      "status": "unresolved, needs aerial imagery or a site description to rule avenue in or out"
+    },
+    {
+      "name": "Park przy Zawilej cluster (tulip tree, plane, ash)",
+      "species": "American Tulip Tree (Liriodendron tulipifera), London Plane (Platanus x acerifolia), European Ash (Fraxinus excelsior)",
+      "latitude": 50.0069,
+      "longitude": 19.9226,
+      "girth_cm": "334 (tulip tree) / 269 (plane) / 359 (ash)",
+      "designated": "2017-12-29",
+      "reason": "About 5.8 km south of the centre in Swoszowice/Kliny (Nominatim), three register trees within about 60m of each other, cross-confirmed by the Wikipedia wykaz table (entries 301-303) which independently names Liriodendron tulipifera here as one of only a few in the city. Not pursued this pass: 5.8 km is beyond comfortable walking and this pass did not check a real public-transport time against the ~30 min day-trip boundary, so it is neither cleared nor ruled out. A 334cm tulip tree would be a genuinely distinctive addition if the transit time holds up.",
+      "status": "unresolved, transit time to centre needs checking"
     }
   ],
   "blocked": [
