@@ -9,6 +9,44 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-28 - Twelve photographs too small to carry a page, and why the fix is a new file
+
+Hidde, looking at the Rothe-Linde in the app: "de foto lijkt pixelig wat gaat fout".
+Nothing is going wrong in the pipeline. That photograph on Commons is 428 x 262
+pixels, the app paints its hero about 1200 pixels wide, and Wikimedia never
+upscales: asking for the 960px version hands back the 428px original. The file
+is simply small, and the hero magnifies it about two and a half times.
+
+Measured across all 374 approved photographs: 38 are under the 960px a hero
+wants, and 12 are under the 540px a CARD wants, which is the honest bar. Those
+twelve, smallest first:
+
+- 281px Barcelona: The Regrown Carob of Placa de la Natura (bcn_003)
+- 319px Porto: The Ginkgo of the Jardim das Virtudes (por_018)
+- 375px Barcelona: The Ombu of Placa Prim (bcn_009)
+- 375px New York: The Great Elm of Central Park West (nyc_011)
+- 375px Portland: The Balch Creek Fir (ptl_009)
+- 375px Trieste: The Great Plane of the Giardino Pubblico (tri_005)
+- 428px Munich: The Roth-Linde (muc_001)
+- 480px Antwerp: The Summer Linden of Rivierenhof (ant_002)
+- 500px Lyon: The Pin de Bunge, or Pin de Napoleon (lyo_001)
+- 500px Strasbourg: The Old Plane of Quai de la Bruche (stg_005)
+- 507px Warsaw: Dab Mieszko I (King Mieszko I's Oak) (war_001)
+- 525px Granada: The Cypress of San Juan de la Cruz (gra_001)
+
+What was considered and rejected: rendering them "fit" rather than "fill", or on
+a blurred backdrop. Both are the treatment for the wrong ASPECT and neither adds
+a pixel. A 428px file fitted to the width of a modern phone is upscaled about as
+much as a cropped one; the only thing that makes it sharp is a bigger file or a
+much smaller frame, and a much smaller frame is a page redesign for twelve trees.
+
+So this is a REPLACEMENT list for a viewing pass, not a rendering job: a
+different photograph of the same tree, at the usual standard. The Roth-Linde's
+own Commons original is 428px, so for that one it means another photographer's
+file or none. `python3 scripts/photo_res.py --report` reprints this whenever it
+is needed, and scripts/qa.py already fails a build on a card under 540px, which
+is why these twelve are the whole list rather than a growing one.
+
 ## 2026-08-28 - Leipzig opens (7 trees, all flagged): a Naturdenkmal cluster in Plagwitz, from Wikidata supply
 
 Opened per rule 1(0) (a zero-ranked city, #51, with supply already on hand: 56 Wikidata-sourced Naturdenkmal candidates within 15km, none imported as a register). No register covers Saxony yet, so this was web verification against the candidates themselves rather than a register import. Five trees (a ginkgo, European white elm, bald cypress, copper beech, Japanese pagoda tree) sit within about 150 metres of each other on Karl-Heine-Strasse, Plagwitz, all sharing the "natural monument in Saxony" designation on Wikidata; two more (a fern-leaved beech, a pedunculate oak) sit roughly 1km away and are double-sourced against Leipzig's own published Naturdenkmal list (German Wikipedia's transcription), which independently confirmed their ND numbers, plot references and the 1996 municipal resolution (601/96) that protects all seven. The other five rest on the Wikidata/Commons designation alone (flagged, single source) because that older published list has not caught up with several newer additions to the register. None carry a girth or age, only the protected root-zone diameter Leipzig recorded when it designated each one; none of that blocks publication (Step 2). All seven stand on public street frontage. `python3 scripts/city_names.py --city leipzig` and `python3 scripts/city_queue.py` (full re-rank) run afterward; the latter surfaced a real gap worth flagging for a future session: `rebuild_list()` in city_queue.py only updates existing rows in data/city-list.json, it never adds a new city's row, so Leipzig had to be added there by hand.
