@@ -6,7 +6,7 @@
   "meta_description": "Oahu's most remarkable trees, all in one Honolulu garden: a baobab, a Bodhi tree from Bodh Gaya, and a kapok planted before the garden existed.",
   "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 5.",
   "question_answer": "Oahu's oldest documented tree is the Hillebrand Kapok in Foster Botanical Garden, planted around 1851 by the garden's founder, William Hillebrand, on what was then his own homestead. That makes it roughly 175 years old, older than the garden itself.",
-  "question_context": "Foster Botanical Garden holds all five of Oahu's most remarkable trees, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before the property became a public botanical garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, depending on which of two disagreeing sources you read. Two more of the garden's trees carry documented arrival dates: a Bodhi tree grown from a cutting of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s that has already grown a trunk thirteen metres around. A cannonball tree and a quipo, the softest-wooded tree in the garden, round out the five, both flagged for gaps rather than disputes: nobody has recorded when the cannonball tree was planted, and the quipo's height comes from a single source. All five stand within easy walking distance of each other inside the garden's fourteen acres, along with roughly twenty other city-designated Exceptional Trees this page does not yet cover.",
+  "question_context": "Foster Botanical Garden holds five of the six trees on this page, and the sixth stands eight kilometres away under a ticket of its own, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before the property became a public botanical garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, depending on which of two disagreeing sources you read. Two more of the garden's trees carry documented arrival dates: a Bodhi tree grown from a cutting of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s that has already grown a trunk thirteen metres around. A cannonball tree and a quipo, the softest-wooded tree in the garden, round out the five, both flagged for gaps rather than disputes: nobody has recorded when the cannonball tree was planted, and the quipo's height comes from a single source. Those five stand within easy walking distance of each other inside the garden's fourteen acres, along with roughly twenty other city-designated Exceptional Trees this page does not yet cover.",
   "faq": [
     {
       "q": "What is the oldest tree in Oahu?",
@@ -187,6 +187,37 @@
         "status": "missing"
       },
       "paid_entry": true
+    },
+    {
+      "id": "hnl_006",
+      "name": "The Hitachi Tree",
+      "species": "Monkeypod (Samanea saman)",
+      "age_estimate": "about 130 years",
+      "age_min": 110,
+      "age_max": 140,
+      "height_m": 25,
+      "location": {
+        "address": "Moanalua Gardens, 2850A Moanalua Road, Honolulu, HI 96819",
+        "latitude": 21.34725,
+        "longitude": -157.89334,
+        "neighbourhood": "Moanalua"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Moanalua_Gardens",
+        "https://www.hawaiimagazine.com/moanalua-gardens-home-of-the-hitachi-tree/",
+        "https://www.to-hawaii.com/oahu/gardens/moanaluagardens.php"
+      ],
+      "access": "Paid entry, Moanalua Gardens admission (10 dollars), daily 08:30 to 16:00",
+      "transport": "About 8 km from Waikiki; TheBus routes along Moanalua Road stop by the gardens, and there is parking at the gate",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "story": "This monkeypod is on Japanese television most weeks, and almost nobody watching knows it is in Honolulu. Hitachi has used it as the company emblem since 1973, with a jingle that begins \"this tree, what tree\", and it is famous enough in Japan that visitors arrive at Moanalua Gardens asking for it by the company's name rather than the tree's.\n\nWhat brought the advertising people here is obvious from the lawn. A monkeypod grows outward rather than upward, and this one has spent about 130 years doing it: roughly 25 metres tall and a crown wide enough to shade some three thousand square feet of grass, held up on limbs that reach almost horizontally before turning. Stand under the middle and the canopy closes overhead like a roof.\n\nThe leaves do something worth timing your visit for. Monkeypod leaflets fold shut in the late afternoon and in rain, which is why the species is called the rain tree, and the light through the canopy changes completely when they do.\n\nThe gardens are privately owned and charge admission, which is unusual for a tree on this site and worth knowing before you drive out. The lawn around the trunk is open, so you can walk right up to it."
     }
   ]
 }

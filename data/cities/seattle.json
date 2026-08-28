@@ -7,7 +7,7 @@
   "meta_description": "Seattle's oldest trees: a 500 year old Douglas fir in Seward Park's old growth, a Capitol Hill sequoia, and a poplar from the 1909 world's fair.",
   "question_answer": "The oldest tree in Seattle is the Big Tree in Seward Park, a Douglas fir of roughly 400 to 500 years standing in the old-growth remnant on the peninsula, with a bald eagle nest near its top. Nobody publishes exactly where it is in the park's 120 acres, so finding it is part of the walk, and the much younger fir the park's own leaflet starts you at is not it.",
   "question_meta": "The Big Tree in Seward Park, a Douglas fir of 400 to 500 years in Seattle's last old-growth remnant, is the city's oldest known tree.",
-  "question_context": "Seattle has no register of individual trees, which shapes everything on this page. The city runs a Heritage Tree programme with the group PlantAmnesty and it names trees without publishing a dataset, the parks department's own file is a full street inventory rather than a selection, and Washington's state champion list records size rather than age. So every pin here is approximate, meaning we know the park and not the trunk, and two of the five trees have no recorded age at all. That includes the giant sequoia on Capitol Hill, where the city's own tree-walk leaflet quotes a height and a diameter that belong to what the species can reach rather than to this tree, which is the kind of number that gets repeated until somebody checks it. We would rather say we do not know. If you have a tape measure and ten minutes in Volunteer Park, you can settle it, and we will put your figure on the page.",
+  "question_context": "Seattle has no register of individual trees, which shapes everything on this page. The city runs a Heritage Tree programme with the group PlantAmnesty and it names trees without publishing a dataset, the parks department's own file is a full street inventory rather than a selection, and Washington's state champion list records size rather than age. So every pin here is approximate, meaning we know the park and not the trunk, and two of the six trees have no recorded age at all. That includes the giant sequoia on Capitol Hill, where the city's own tree-walk leaflet quotes a height and a diameter that belong to what the species can reach rather than to this tree, which is the kind of number that gets repeated until somebody checks it. We would rather say we do not know. If you have a tape measure and ten minutes in Volunteer Park, you can settle it, and we will put your figure on the page.",
   "faq": [
     {
       "q": "What is the oldest tree in Seattle?",
@@ -183,6 +183,37 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "sea_006",
+      "name": "Sylvia",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "about 600 years",
+      "age_min": 500,
+      "age_max": 600,
+      "girth_cm": 800,
+      "location": {
+        "address": "O.O. Denny Park, 12032 Holmes Point Drive NE, Kirkland, WA 98034 (in the old-growth grove along the creek; the park does not publish a pin for the tree itself)",
+        "latitude": 47.710556,
+        "longitude": -122.246028,
+        "neighbourhood": "Holmes Point, Kirkland"
+      },
+      "verified_sources": [
+        "https://www.seattletimes.com/life/outdoors/meet-sylvia-the-topless-fir-in-kirklands-oo-denny-park/",
+        "https://www.seattletimes.com/life/outdoors/fall-hikes-walk-through-old-growth-majesty-and-meet-a-tree-named-sylvia-in-o-o-denny-park/",
+        "https://www.kirklandreporter.com/news/o-o-denny-park-kirklands-enchanted-forest-our-parks/"
+      ],
+      "access": "Free, public park, open daylight hours",
+      "transport": "About 13 km from central Seattle across Lake Washington; no direct bus, so it is a drive or a ride to Holmes Point Drive NE and a short walk into the grove",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "story": "Sylvia was the biggest tree in King County until the morning of 20 January 1993, when an inauguration day windstorm came up Lake Washington and took her top off. She was 255 feet then. She is a good deal shorter now and still standing, which is the part worth walking for: a Douglas fir about eight metres round, growing here since roughly the time Constantinople fell.\n\nThe snapped crown is not damage so much as biography. A Douglas fir that loses its leader does not die, it reorganises, pushing side branches upward into a candelabra of new tops. Sylvia has been doing that for thirty years and the result looks nothing like the clean spire in a forestry photograph.\n\nShe stands in what is left of the lowland old growth that once ran unbroken from the lake to the Cascades. O.O. Denny Park keeps about forty acres of it, given to Seattle by the Denny family and now looked after by Kirkland. The trail in from Holmes Point Drive follows a creek under trees that were already large when the first mill opened on the far shore.\n\nWe cannot give you a pin on the trunk. Follow the creek trail and look for the one with no proper top."
     }
   ]
 }
