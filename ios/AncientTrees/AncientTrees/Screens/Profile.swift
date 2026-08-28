@@ -43,6 +43,9 @@ struct ProfileView: View {
     @State private var showingLegal = false
     @State private var sponsoring = false
     @State private var showingSponsor = ProcessInfo.processInfo.arguments.contains("-sponsor")
+    /// The maps app Take me there opens, empty while nobody has answered. Same
+    /// key Directions reads; @AppStorage so the row redraws when it changes.
+    @AppStorage("directions.app") private var directionsApp: String = ""
     /// Debug scaffolding, same family as -tab and -open in ContentView: the
     /// screenshot sweep cannot tap, and this sheet is otherwise only reachable
     /// by tapping a card on this screen.
@@ -252,6 +255,40 @@ struct ProfileView: View {
                         Text("Distances").font(.callout).foregroundStyle(Brand.ink)
                         Spacer()
                         Text(units.unit.label).font(.callout).foregroundStyle(Brand.inkSoft)
+                        Image(systemName: "chevron.up.chevron.down")
+                            .font(.caption2).foregroundStyle(Brand.inkSoft)
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                Divider().padding(.leading, 48)
+                // WHICH MAPS APP Take me there opens. It is asked once, on the
+                // first tap, and this is where somebody changes their mind
+                // (Hidde, 2026-08-28: "waarom opent die niet mn google maps
+                // app, 90% van de mensen hebben die app"). Same row shape as
+                // Distances above it, because it is the same kind of choice.
+                // "Ask again" rather than a third app: it clears the answer, so
+                // the next Take me there asks.
+                // @AppStorage, not Directions.preferred directly: that reads
+                // UserDefaults and SwiftUI has no way to know it changed, so
+                // the row would keep printing the old answer until something
+                // else redrew the screen.
+                Menu {
+                    Picker("", selection: $directionsApp) {
+                        ForEach(Directions.MapsApp.allCases) { a in
+                            Text(a.label).tag(a.rawValue)
+                        }
+                        Text("Ask again").tag("")
+                    }
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "arrow.turn.up.right")
+                            .frame(width: 20).foregroundStyle(Brand.moss)
+                        Text("Directions").font(.callout).foregroundStyle(Brand.ink)
+                        Spacer()
+                        Text(Directions.MapsApp(rawValue: directionsApp)?.label ?? "Ask each time")
+                            .font(.callout).foregroundStyle(Brand.inkSoft)
                         Image(systemName: "chevron.up.chevron.down")
                             .font(.caption2).foregroundStyle(Brand.inkSoft)
                     }
