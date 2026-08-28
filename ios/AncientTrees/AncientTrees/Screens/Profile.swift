@@ -562,7 +562,14 @@ struct ProfileView: View {
                 Text("We keep your collection under this address. Sign in on ancienttrees.app with the same one and it is there too.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
-                Text("We hold your email address and the trees you have saved and collected. Nothing else.")
+                // "Nothing else" until 2026-08-28, and by then it was wrong on
+                // four counts: a display name, a profile picture, who you
+                // follow, and every tree you have photographed with the place
+                // it stands. Hidde asked for a sweep of old promises after
+                // catching the location one, and this was the worst of them,
+                // because it stands on the screen where somebody decides
+                // whether to trust us with any of it.
+                Text("We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. You can delete all of it from this screen.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 Text("To use a different address, write to info@ancienttrees.app and we will move your collection across.")

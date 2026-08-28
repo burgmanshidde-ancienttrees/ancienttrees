@@ -80,7 +80,13 @@ struct ContributeView: View {
                     } header: {
                         if feedbackMode { Text("Tell us what you would like") }
                     } footer: {
-                        Text("We never publish your name, and we do not ask for it.")
+                        // Not "we never publish your name": the display name
+                        // somebody chooses on their profile is shown beside a
+                        // follow, so as a blanket promise that stopped being
+                        // true when profiles arrived. What is true, and is the
+                        // thing they are actually asking, is that nobody sees
+                        // who sent THIS.
+                        Text("Nobody sees who sent this, and we do not ask for your name.")
                     }
                     Section {
                         // Visible to everyone; sending needs the account that

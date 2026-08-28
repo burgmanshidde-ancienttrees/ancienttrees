@@ -95,10 +95,103 @@ Buttons are the exception and stay imperative: "Add a tree", "Take a photo".
 """
 
 
+# A CLAIM ABOUT WHAT WE DO WITH SOMEBODY'S DATA, which is the one kind of
+# sentence that rots without anybody touching it.
+#
+# Added 2026-08-28 after Hidde caught "Your location stays on your phone. We
+# never send it anywhere" on the permission screen and then asked the right
+# question: "can you check the copy of the app if there are any other promises
+# like this that are old." There were. The same afternoon turned up SIX copies
+# of the same falsehood, written when they were true and left standing when the
+# app changed under them: the privacy manifest, the release checklist Hidde
+# types his App Store answers from, Sightings.swift, the location primer, and
+# "We store your email address and the trees you collect. Nothing else." on
+# both the sign-in and the account screen, against eight declared data types.
+#
+# Nothing here can tell whether a promise is TRUE. What it can do is refuse the
+# ABSOLUTE FORM, because that is what makes the rot expensive: a qualified
+# sentence ages into being imprecise, and "never", "nothing else" and "stays on
+# your phone" age into being a lie, on the screen where somebody decides
+# whether to trust us. Say what we hold and let the list be the limit.
+#
+# Deliberately narrow: it fires on absolutes ABOUT DATA, never on "nothing
+# matches that yet" or "nobody has photographed this one".
+DATA_WORDS = re.compile(
+    r"\b(location|position|photograph|photo|picture|email|address|name|data|"
+    r"collection|trees you|we store|we hold|we keep)\b", re.I)
+
+# WHAT WE HOLD, not what we send. "One email. Nothing else." is a promise
+# about our own behaviour on a waitlist, which we control and can keep; "We
+# store your email address. Nothing else." is a claim about a data model that
+# changes underneath the sentence. Only the second kind rots on its own, so the
+# closed absolutes need a holding verb beside them before they count.
+HOLDING = re.compile(r"\b(store|stores|hold|holds|keep|keeps|save[sd]?|"
+                     r"we have|is kept|are kept)\b", re.I)
+
+DATA_ABSOLUTES = [
+    (re.compile(r"nothing else", re.I), True,
+     "an absolute about what we hold: say what we hold instead, so the list is the limit"),
+    (re.compile(r"\b(only|just) (your|the) (email|address)\b", re.I), True,
+     "an absolute about what we hold: name the things instead"),
+    # These two need no holding verb: they are the claim, whole.
+    (re.compile(r"never (send|sends|leaves?|leave|share|shares|publish|publishes)", re.I), False,
+     "a never about somebody's data: it was true when written and the app moves"),
+    (re.compile(r"stays? (on|in) (your|this) (phone|device)", re.I), False,
+     "this stopped being true on 2026-08-27; say who can see it instead"),
+]
+
+
+def data_promise(text):
+    """The offence, or None. Both halves have to be present."""
+    if not DATA_WORDS.search(text):
+        return None
+    holds = bool(HOLDING.search(text))
+    for pattern, needs_holding, why in DATA_ABSOLUTES:
+        if pattern.search(text) and (holds or not needs_holding):
+            return why
+    return None
+
+
+SITE = ROOT / "site" / "src"
+# Anything long enough to be a sentence, in quotes of either kind. Deliberately
+# looser than the Swift pattern: the website writes its copy in .astro props,
+# in i18n tables and in template literals, and a rule that only reads one of
+# those would miss the translation of the sentence it just caught.
+COMMENT = re.compile(r"^\s*(//|\*|/\*).*$", re.M)
+SITE_STRING = re.compile(r"""["'`]((?:[^"'`\\\n]|\\.){25,300})["'`]""")
+
+
 def strings():
     for f in sorted(APP.rglob("*.swift")):
         src = f.read_text(encoding="utf-8")
         for m in STRING.finditer(src):
+            line = src[:m.start()].count("\n") + 1
+            yield f.relative_to(ROOT), line, m.group(1)
+
+
+def site_sentences():
+    """The website's copy, for the data-promise rule only.
+
+    BOTH SURFACES, because the sentence this rule exists for was on both and
+    was corrected on one first (2026-08-28). The app's sign-in sheet said "We
+    store your email address and the trees you collect. Nothing else"; the
+    website's sign-in modal said "We store only your email address, for sign-in
+    links and nothing else", and its Spanish translation said it again. A check
+    that only reads Swift would have called that afternoon finished.
+
+    Only the data-promise rule runs here. The tics are about the app's own
+    register, and TONE_OF_VOICE governs the website's prose.
+    """
+    if not SITE.exists():
+        return
+    for f in sorted(list(SITE.rglob("*.astro")) + list(SITE.rglob("*.ts"))):
+        src = f.read_text(encoding="utf-8")
+        # A COMMENT IS NOT COPY. Without this, every note explaining why a
+        # sentence was wrong quotes the sentence and trips the rule that
+        # caught it, which is a checker that punishes writing down the reason.
+        # Blanked rather than deleted so the line numbers stay true.
+        src = COMMENT.sub(lambda m: " " * len(m.group(0)), src)
+        for m in SITE_STRING.finditer(src):
             line = src[:m.start()].count("\n") + 1
             yield f.relative_to(ROOT), line, m.group(1)
 
@@ -126,10 +219,19 @@ def main():
             continue
         # Interpolated strings are mostly numbers and names; the tics live in
         # the prose around them and this still sees that.
+        promise = data_promise(text)
+        if promise:
+            hits.append((path, line, text, promise))
+            continue
         for pattern, why in TICS:
             if pattern.search(text):
                 hits.append((path, line, text, why))
                 break
+
+    for path, line, text in site_sentences():
+        promise = data_promise(text)
+        if promise:
+            hits.append((path, line, text, promise))
 
     for path, line, text, why in hits:
         print(f"{path}:{line}: {why}")
