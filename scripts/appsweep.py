@@ -169,14 +169,47 @@ def udid_for(name, devicetype):
     return sh("xcrun", "simctl", "create", name, devicetype).stdout.strip()
 
 
-def boot(udid):
+def booted(udid):
     state = json.loads(sh("xcrun", "simctl", "list", "devices", "-j").stdout)
     for devices in state["devices"].values():
         for d in devices:
             if d["udid"] == udid and d["state"] == "Booted":
-                return
+                return True
+    return False
+
+
+def boot(udid, patience=180):
+    """Boot the device and wait, but never forever.
+
+    `simctl bootstatus` HAS NO TIMEOUT and can wedge on a device that is
+    already booted, which is not theoretical: a night run started one at
+    00:03 on 2026-08-28 and it was still sitting there at 11:20 the next
+    morning, at nought per cent CPU, holding the build lock. Every app build
+    on this machine had been refused for eleven hours and nothing said so,
+    because the guard that refused them was doing its job correctly.
+
+    Two of them were waiting on the same device by then, which is how the
+    wedge is usually reached in the first place.
+
+    So: ask bootstatus, with a deadline, and then ask the device itself. The
+    list command always answers, and a device that reports Booted IS booted
+    whatever bootstatus has decided to do about it. This is the same rule
+    CLAUDE.md already sets for fetching: a hang costs a whole window, a
+    refusal costs a second, so everything that can hang gets a deadline.
+    """
+    if booted(udid):
+        return
     sh("xcrun", "simctl", "boot", udid, check=False)
-    sh("xcrun", "simctl", "bootstatus", udid, check=False, capture=False)
+    try:
+        subprocess.run(["xcrun", "simctl", "bootstatus", udid],
+                       timeout=patience, capture_output=True)
+    except subprocess.TimeoutExpired:
+        print(f"  bootstatus did not return in {patience}s, asking the device instead")
+    except Exception:
+        pass
+    if not booted(udid):
+        print("  the simulator did not come up; carrying on and letting the "
+              "build say so rather than waiting any longer")
 
 
 def bundled_data_note():
