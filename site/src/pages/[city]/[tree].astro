@@ -19,7 +19,7 @@ import { haversineKm } from "../../lib/walks";
 // nothing updated this line to follow them. It counts them from the same helper
 // the walks page itself uses, so the two cannot disagree, and it says nothing
 // when a city has no walk.
-import { pageWalksFor } from "../../lib/city-walks";
+import { pageWalksFor, hasWalksPage } from "../../lib/city-walks";
 import { speciesCommon } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
 import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditName, metaImageUrls, ogImageUrl } from "../../lib/images";
@@ -105,8 +105,12 @@ const parkPage = parkName ? (parkPages as Map<string, any>).get(parkGroupKey(cit
 const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
-// Counted from the same helper /[city]/walks builds its own pages with, so the
-// link and the page it points at can never disagree about whether a walk exists.
+// Gated on hasWalksPage(), the exact test /[city]/walks itself uses to decide
+// whether it gets built (WALKS_PAGE_MIN_TREES total trees across its walks),
+// so a city with one thin 2-4 tree walk cannot link to a page that never
+// exists. cityWalkCount (the number of walks, not trees) only picks the
+// wording once that gate has already passed.
+const cityHasWalksPage = hasWalksPage(city);
 const cityWalkCount = pageWalksFor(city).length;
 const tslugs = treeSlugsForCity(city);
 const tslug = tslugs[tree.id];
@@ -237,7 +241,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <a class="tb-primary dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
       <a class="tb-secondary" href="/app" data-app-modal data-ev="app-cta">Get the app</a>
     </div>
-    {cityWalkCount > 0 && (
+    {cityHasWalksPage && (
       <p class="under-bar-link"><a href={`/${cslug}/walks`}>
         {cityWalkCount === 1
           ? `See the walk past ${cityName}'s other trees →`
