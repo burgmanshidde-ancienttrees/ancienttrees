@@ -27,7 +27,22 @@ export function ageToken(tree: Tree): string | null {
   // number from the sentence that falls inside them, fall back to age_min
   // when the sentence offers no such number, and only trust the raw first
   // match when the tree carries no range at all.
-  const nums = [...(tree.age_estimate ?? "").matchAll(/(\d[\d,]*\+?)/g)].map((m) => m[1]);
+  const said = tree.age_estimate ?? "";
+
+  // A title may not state an age our own data refuses to state. Hard rule 2,
+  // found 2026-08-28 while chasing a click-through problem that turned out not
+  // to exist: the Drago's field reads "disputed: a modern study puts it near
+  // 700 years, popular tradition says 1,000 years or more" and its title read
+  // "700 Year Old Dragon Tree", flattening a dispute our own sentence names
+  // into a fact, in the one line a searcher reads before deciding.
+  //
+  // 21 pages did that. Athens' olive is "300-2,500 years (disputed)" and said
+  // 300; Crete's is "contested: at least 2,000, possibly up to 4,000" and said
+  // 2,000. Picking one end of a disputed range and printing it flat is the
+  // same error the softening rule elsewhere exists to stop.
+  if (/\b(disputed|contested)\b/i.test(said)) return null;
+
+  const nums = [...said.matchAll(/(\d[\d,]*\+?)/g)].map((m) => m[1]);
   const lo = tree.age_min ?? null;
   const hi = tree.age_max ?? null;
   if (lo || hi) {
@@ -36,7 +51,15 @@ export function ageToken(tree: Tree): string | null {
       return (!lo || v >= lo) && (!hi || v <= hi);
     });
     if (inRange) return inRange;
-    return lo ? String(lo) : hi ? String(hi) : null;
+
+    // The sentence offers no usable number, so the old code reached for
+    // age_min instead and printed a figure the age field never contains. 211
+    // pages did that. Aarhus reads "not documented" and said "100 Year Old";
+    // Alicante reads "over a century" and said "90 Year Old", which is not
+    // merely overconfident but lower than the data claims. age_min is a bound
+    // for sorting and filtering, not a statement anybody wrote down, and a
+    // title is a statement.
+    return null;
   }
   return nums[0] ?? null;
 }

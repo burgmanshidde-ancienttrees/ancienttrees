@@ -101,6 +101,10 @@ const title = fitTitle([
     `${tree.name}: ${age} Year Old ${speciesCommon(tree)} in ${cityName}`,
     `${tree.name}: ${age} Year Old Tree in ${cityName}`,
   ] : []),
+  // Without an age the species still earns its place: it is what somebody
+  // searching "dragon tree tenerife" is looking for, and dropping the age must
+  // not drop the whole description with it.
+  `${tree.name}: ${speciesCommon(tree)} in ${cityName}`,
   `${tree.name} in ${cityName}`,
   tree.name,
 ]);
