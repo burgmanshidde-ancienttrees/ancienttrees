@@ -9,6 +9,27 @@
 // The copy changed again on 2026-08-23, when add and collect became one act.
 // It no longer explains two paths, because there are no longer two: it says
 // what to do, and names the two things that can come back.
+//
+// AND ON 2026-08-28 IT STOPPED NAMING THEM. Hidde: "slaat collect nog wel
+// ergens op want je hebt my trees... hoe leggen we makkelijk uit dat je fotos
+// van bestaande bomen kan toevoegen en ze zo spaart en dat je nieuwe bomen kan
+// toevoegen. Of is dat gewoon te complex."
+//
+// It is, and the reason is the one CollectSheet already wrote down: what
+// separates the two cases is not something the person does, it is something
+// only our database knows. Two lines teaching that distinction ask somebody to
+// hold a difference that has no consequence for their next action, before
+// anything has happened. Seek is the reference and does not do it: you point
+// the camera and it tells you what you found.
+//
+// So one line, and it is the example PRODUCT_COPY.md's own rule 6 gives.
+// "Your tree collection" rather than "your trees" is his (2026-08-28): the tab
+// that holds them is called My trees, and somebody opening this screen for the
+// first time has never seen it, so "your trees" points at nothing while a
+// collection explains itself.
+//
+// The title says what you DO. "Collect a tree" was an outcome, and an outcome
+// is the one thing this flow deliberately does not decide up front.
 
 import SwiftUI
 
@@ -22,7 +43,7 @@ struct CollectIntro: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("Collect a tree")
+            Text("Photograph a tree")
                 .font(.brand(28, .bold, relativeTo: .title))
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
@@ -35,25 +56,20 @@ struct CollectIntro: View {
                 // made the title read as the first line of the text.
                 .padding(.bottom, 8)
 
-            // TWO THINGS, each with its own mark, which is his own structure
-            // (Hidde, 2026-08-25, giving both sentences): one paragraph had to
-            // carry collecting a tree we map AND adding one we do not, and the
-            // second half arrived as a clause tacked onto the first ("if we do
-            // not have it, it is yours, and it reaches us too"). They are two
-            // different things somebody might be about to do.
-            //
-            // PRODUCT_COPY.md governs the wording: the reader is the subject,
-            // the method is joined with "by", and there is no summary line. His
-            // own draft said "if review succesfully added to the database for
-            // all", and rule 5 is why that is not what it says here: nobody
-            // needs the word database, they need to know it joins the map
-            // everybody sees.
-            VStack(alignment: .leading, spacing: 18) {
-                line("checkmark.seal",
-                     "You can collect a tree by photographing it, now or from a photo you already took. We tell you which one it is and tick it off.")
-                line("plus.circle",
-                     "If it is a tree we do not have, you can add it. It appears on your own map straight away, and once we have checked it, it joins the map everybody sees.")
-            }
+            // ONE LINE. The two that stood here until 2026-08-28 explained
+            // our side of the deal (which trees we already map, what happens
+            // after we have checked one), and that is rule 6: not at the
+            // moment somebody is deciding to act. What each of the two cases
+            // means is said on the screen where it is true, one step later,
+            // where it is specific instead of hypothetical.
+            // No icon. It was there to tell two lines apart, and a mark
+            // beside a list of one is decoration, which is what this screen
+            // already threw a hand-drawn figure out for once before.
+            Text("Every tree you photograph joins your tree collection.")
+                .font(.system(size: 17))
+                .foregroundStyle(Brand.inkSoft)
+                .lineSpacing(3)
+                .fixedSize(horizontal: false, vertical: true)
 
             Spacer(minLength: 24)
 
@@ -82,19 +98,5 @@ struct CollectIntro: View {
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .padding(.top, 8)
-    }
-
-    private func line(_ icon: String, _ text: String) -> some View {
-        HStack(alignment: .top, spacing: 12) {
-            Image(systemName: icon)
-                .font(.system(size: 19))
-                .foregroundStyle(Brand.moss)
-                .frame(width: 24)
-            Text(text)
-                .font(.system(size: 17))
-                .foregroundStyle(Brand.inkSoft)
-                .lineSpacing(3)
-                .fixedSize(horizontal: false, vertical: true)
-        }
     }
 }
