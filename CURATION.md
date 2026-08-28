@@ -9,6 +9,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-28 - Submission #42 processed: a reaction, not a report
+
+Row 42, kind `feedback`, no city/tree/location_hint, `why: "Super"`, sent from the app profile page. No claim to verify, nothing to change: a positive reaction rather than a correction or a supply lead, per the kind split in CLAUDE.md's "Closing the loop". Marked processed (data/submissions-processed.json), no outcome/reply set since there is no question to answer.
+
 ## 2026-08-28 (night run) - Deploy fix (EXIF orientation); Barcelona and Napoli READY leads checked, all correctly held
 
 Deploy had been failing since 2026-08-27 21:59 UTC on one QA gate: por_018 (Porto's Jardim das Virtudes ginkgo) carried EXIF orientation tag 0, not a real rotation value. Verified the pixels were already upright (an invalid tag makes viewers fall back to no rotation) and patched the tag to 1 directly rather than rotating anything; build+qa.py+preflight.py all clean.
