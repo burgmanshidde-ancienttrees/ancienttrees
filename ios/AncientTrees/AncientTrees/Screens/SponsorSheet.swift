@@ -4,11 +4,10 @@
 // trial and not a feature list: it is somebody deciding they want this to keep
 // existing.
 //
-// The copy is the website's, on purpose. /sponsor leads with what Ancient
-// Trees is and ties the money to the one unit of work this project has, the
-// next city, because that is what the strongest creator pages do: orientation
-// first, then a concrete outcome. Both surfaces say the same thing in their
-// own shape, which is the both-surfaces rule.
+// The copy is the website's, word for word (Hidde, 2026-08-28, having
+// rewritten /sponsor himself: "gebruik deze tekst ook in de app"). It is his
+// own sentences, so it is not paraphrased per surface: the ask reads the same
+// on a phone as on the page, which is the both-surfaces rule at its plainest.
 
 import SwiftUI
 import StoreKit
@@ -27,10 +26,10 @@ struct SponsorSheet: View {
                     Text("Sponsor this project")
                         .font(.largeTitle.bold()).foregroundStyle(Brand.ink)
 
-                    Text("Ancient Trees maps the oldest and most remarkable trees of the world's cities: where each one stands, how old it is, and why it is worth the walk.")
+                    Text("Ancient Trees is a passion project. I'm building it to let others appreciate nature and go outside. Marvel at something older than you can imagine.")
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
 
-                    Text("A city takes days rather than minutes: finding the trees a listicle never mentions, checking each one against two independent sources, and placing every pin. Sponsoring is what puts the next city on the map.")
+                    Text("Running the website and app does cost money. A donation would help me enormously: more time and more resources to make this much better, and to get more of these trees on the map.")
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
 
                     if tips.thanked {
@@ -74,7 +73,7 @@ struct SponsorSheet: View {
                             .font(.footnote).foregroundStyle(.red)
                     }
 
-                    Text("Sponsoring unlocks nothing and is not a subscription. If you would rather help without money, send us a tree we are missing.")
+                    Text("Sponsoring unlocks nothing and is not a subscription. If you would rather help without money, send me a tree I am missing.")
                         .font(.footnote).foregroundStyle(Brand.inkSoft)
                 }
                 .padding(20)
