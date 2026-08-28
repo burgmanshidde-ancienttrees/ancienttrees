@@ -1,0 +1,27 @@
+[
+ {
+  "id": "gro_020",
+  "name": "The Pollarded Lindens of the Pepergasthuis",
+  "species": "Small-leaved Lime (Tilia sp.), ensemble of 11 pollarded (leivorm) trees",
+  "age_estimate": "about 190 years",
+  "age_min": 186,
+  "age_max": 196,
+  "girth_cm": null,
+  "location": {
+   "address": "Pepergasthuis (Sint Geertruidsgasthuis), Peperstraat, Groningen",
+   "latitude": 53.217258,
+   "longitude": 6.571846,
+   "neighbourhood": "Binnenstad-Zuid"
+  },
+  "verified_sources": [
+   "data/registers/netherlands-lrmb.json (register nr 1680046, Landelijk Register Monumentale Bomen)",
+   "https://www.rtvnoord.nl/nieuws/759799/verkoop-pepergasthuis-van-de-baan-29-woningen-blijven-in-sociale-huur",
+   "https://travelaar.nl/hofjes-groningen-stad/ (daily 9:00-18:00 visiting hours for the hofje)"
+  ],
+  "access": "Free, open courtyard (hofje). The Pepergasthuis is a working almshouse with residents living around the courtyard; visitors are welcome daily roughly 9:00-18:00 but should respect residents' privacy. An earlier pass flagged that a 2019 plan to sell the complex to a private investor had left its future uncertain; RTV Noord (2020) confirms that sale was cancelled and the housing corporation Lefier kept the almshouse in social rent, so the access basis has not changed.",
+  "transport": "Central Groningen, short walk from Grote Markt",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Register (LRMB nr 1680046) records 11 pollarded lindens ('leivorm') on the binnenplaats of the Pepergasthuis, founded 1405 on Peperstraat, one of Groningen's best-known hofjes (also called Sint Geertruidsgasthuis). Planted band 1830-1840 per the register; one of the 11 has been replaced, the other ten original trees survive. Trunks carry healed hollows with visible 1980s tree-surgery scars (trekstangen/tie rods). No girth figure given by the register for this ensemble entry. FLAGGED for two reasons: (1) age is a planting-band estimate from the register only, not independently corroborated by a second source; (2) this is an ensemble entry (11 trees as one collectible stop, per the compact-famous-ensemble rule), so the writer should describe it as a group rather than implying a single specimen. Access history: an earlier verification pass left this as a lead because a 2019/2020 controversy over selling the Pepergasthuis to a private investor (Jan Berry Drenth) left its future looking uncertain in some reporting. This pass found the resolution: the sale was called off after municipal and tenant opposition (RTV Noord, 'Verkoop Pepergasthuis van de baan', reporting the housing corporation Lefier retained the complex with its 29 dwellings in social rent). General hofje-visiting sources (travelaar.nl, jtravel.nl, discovergroningen.com) describe Groningen's hofjes including the Pepergasthuis as open daily roughly 9:00-18:00, respecting residents' privacy, which is the same access pattern the site already accepts for other Dutch hofjes. No source found this pass gives a girth or a more specific access statement (e.g. posted opening hours sign) for this exact courtyard, so treat the access line as generally-open-hofje rather than confirmed-by-signage."
+ }
+]
