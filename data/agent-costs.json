@@ -3805,6 +3805,15 @@
     "note": "Register-join via de.wikipedia Naturdenkmale wikitext + Wikidata scouting file; 4 confirmed (2 clean, 2 flagged), 10 leads/blocked recorded (1 dead, 1 private land, 5 avenues, 1 access-unconfirmed, 2 follow-up leads)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "buenos aires",
+    "kind": "verify",
+    "tokens": 110000,
+    "trees": 4,
+    "note": "web research only (no register for Argentina); 4 verified via city Arbopedia register cross-checked with press/Wikidata, 2 leads and 1 blocked-dead tree recorded",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
