@@ -3679,6 +3679,15 @@
     "note": "Write pass on 16 already-verified trees (data/research/*-verified.json): 4 maastricht, 1 oss, 11 utrecht. Merged into data/cities/, but oss_010 pulled back out before merge: it was a duplicate of the already-published oss_007 (register lists the same silver lime twice, a few metres apart, oss_007 already folds both), recorded as a duplicate lead instead. Net 15 trees shipped. Fixed stale count-promise copy in maastricht.json and utrecht.json (10->14, 22->33), reran build/preflight/qa/tree_index, walk routes checked sane (Maastricht Jekerdal 3km/40min, Utrecht two walks 2.3km/31min and 2.8km/37min).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "groningen+heerlen+hilversum",
+    "kind": "write",
+    "tokens": 27000,
+    "trees": 1,
+    "note": "Write pass on 3 briefed trees; 2 of 3 (hee_010, hil_008) turned out to be exact-coordinate duplicates of already-published hee_003/hil_006 (same LRMB register nr), caught by the writer before prose was written. passcheck.py --pending matches on id only, not coordinates, so it cleared all 3; both stale research files removed and their leads entries marked duplicate so a future pass does not re-serve them. gro_020 merged (Pepergasthuis pollarded lindens); fixed a hard-rule-9 species-name collision the merge introduced (Small-leaved Lime -> canonical Lime for Tilia sp.) and stale count-promise copy in groningen.json (19->20).",
+    "wasted": 5000,
+    "brief_wrong": true
    }
   ]
  }

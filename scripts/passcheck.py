@@ -500,13 +500,15 @@ def pending_research():
     id it claims is a collision, and it is reported loudly rather than silently
     counted as done. This is the same rule the register and lead matching
     already follow: position cannot be fooled by a label."""
-    live, live_pt = set(), {}
+    live, live_pt, live_all_pts = set(), {}, []
     for f in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
         for t in json.load(open(f)).get("trees", []):
             live.add(t["id"])
             loc = t.get("location") or {}
             if loc.get("latitude") is not None:
-                live_pt[t["id"]] = (loc["latitude"], loc["longitude"])
+                pt = (loc["latitude"], loc["longitude"])
+                live_pt[t["id"]] = pt
+                live_all_pts.append((t["id"], str(t.get("name"))[:46], pt))
 
     def same_tree(t):
         """Is this research entry really the live tree that holds its id?"""
@@ -516,24 +518,54 @@ def pending_research():
             return True          # cannot tell; trust the id, as before
         return km(pt, (loc["latitude"], loc["longitude"])) <= 0.15
 
+    # A different id can still be the same tree. hee_010 and hil_008
+    # (2026-08-28) sat within centimetres of already-published hee_003 and
+    # hil_006, same register entry, and a write pass produced a second story
+    # for each before the duplicate was noticed by hand. An id match alone
+    # cannot catch this because the ids never collided; only the coordinates
+    # do. 50m is deliberately tighter than the 150m same_tree() threshold
+    # above: that one is asking "is this still the same tree I already know
+    # the id for", this is asking "is this an entirely unrelated id that
+    # happens to sit on top of a live tree", which needs more confidence to
+    # avoid flaring on two genuinely close but different specimens.
+    DUPLICATE_KM = 0.05
+
+    def find_duplicate(t):
+        loc = t.get("location") or {}
+        if loc.get("latitude") is None:
+            return None
+        pt = (loc["latitude"], loc["longitude"])
+        best = None
+        for oid, name, opt in live_all_pts:
+            if oid == t.get("id"):
+                continue
+            d = km(pt, opt)
+            if d <= DUPLICATE_KM and (best is None or d < best[2]):
+                best = (oid, name, d)
+        return best
+
     out = []
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "research", "*-verified.json"))):
         try:
             rows = _research_trees(json.load(open(f)))
         except Exception:
             continue
-        unpublished, stale, collisions = [], 0, []
+        unpublished, stale, collisions, duplicates = [], 0, [], []
         for t in rows:
             if not t.get("id"):
                 continue
             if t["id"] not in live:
-                unpublished.append(t)
+                dup = find_duplicate(t)
+                if dup:
+                    duplicates.append((t, dup))
+                else:
+                    unpublished.append(t)
             elif same_tree(t):
                 stale += 1
             else:
                 collisions.append(t)
-        if unpublished or stale or collisions:
-            out.append((os.path.relpath(f, ROOT), unpublished, stale, collisions))
+        if unpublished or stale or collisions or duplicates:
+            out.append((os.path.relpath(f, ROOT), unpublished, stale, collisions, duplicates))
     return out
 
 
@@ -543,13 +575,20 @@ def print_pending():
         print("\nNothing pending: every verified tree is published.")
         return
     print("\nVERIFIED BUT NOT YET PUBLISHED (brief a write pass on these, and only these):")
-    for path, unpublished, stale, collisions in rows:
+    for path, unpublished, stale, collisions, duplicates in rows:
         if unpublished:
             need = sum(1 for t in unpublished if not t.get("story"))
             print(f"  {path}: {len(unpublished)} unpublished "
                   f"({need} still need a story, {len(unpublished) - need} written and ready to merge)")
             for t in unpublished[:6]:
                 print(f"      {t['id']} {str(t.get('name'))[:46]}")
+        if duplicates:
+            print(f"  !! {path}: {len(duplicates)} entries sit within 50m of an ALREADY-PUBLISHED "
+                  f"tree under a DIFFERENT id. Do not write these; check by hand, then fold into "
+                  f"a lead marked duplicate and remove from this file.")
+            for t, (oid, name, d) in duplicates[:8]:
+                print(f"      {t['id']} {str(t.get('name'))[:40]}  -> looks like {oid} {name} "
+                      f"({int(d * 1000)}m away)")
         if collisions:
             print(f"  !! {path}: {len(collisions)} entries claim an id that belongs to a "
                   f"DIFFERENT live tree.")

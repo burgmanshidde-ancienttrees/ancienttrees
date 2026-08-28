@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Groningen's oldest tree keeps company with cows, not city planners: a lime planted in 1684 still stands before a private farmhouse northeast of the centre, decades before Groningen laid out a single public park. Its younger rivals cluster in the Sterrebos, an 18th-century star-shaped forest whose oaks turned out, after a 2024 storm and a ring count, to be far older than anyone had assumed. One of the park's rarest trees, a sessile oak spared from a paving project in 2025, is still fighting for root space today.",
-  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. Nineteen verified locations, real stories, one under threat.",
+  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. 20 verified locations, real stories, one under threat.",
   "question_answer": "Groningen's oldest tree is a Common Lime at De Rollen, a moated farm on the city's northeastern edge, planted in 1684 and now roughly 340 years old. The Dutch national heritage register calls it plainly the oldest tree in the province, older than anything in the city's own celebrated parks by more than a century.",
-  "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full nineteen.",
+  "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full 20.",
   "question_context": "Groningen's age claims split cleanly into documented and inferred. The Common Lime at De Rollen carries an actual date, 1684, recorded in the Rijksdienst voor het Cultureel Erfgoed's own listing for the farm and repeated in the municipality's 2018 monumental tree policy, which is why it anchors this page as the oldest tree in the city despite standing on private farmland rather than in a park built for visitors. Sterrebos's surviving oaks come close on a technicality: when a storm toppled one of their number in January 2024, a ring count revealed a germination year of around 1758, nearly 130 years earlier than the previous estimate, and heritage officials now assume its still-standing neighbours share that birth year, though none of the survivors have themselves been individually dated. The rest of the list is honestly younger and more provisional: Noorderplantsoen's ginkgo rests on a single municipal source, and Groenestein's plane tree is inferred from the size of its trunk and the age of the estate around it rather than any planting record. None of that uncertainty is unusual for trees planted before anyone thought to write the date down.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Groningen's remarkable trees free to visit?",
-      "a": "All are free. Eighteen of the nineteen stand on public ground; the De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg. Most public trees are open at any time, though the walled Prinsentuin garden and the Oude Hortus keep their own daily opening hours."
+      "a": "All are free. 19 of the 20 stand on public ground; the De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg. Most public trees are open at any time, though the walled Prinsentuin garden and the Oude Hortus keep their own daily opening hours, and the Pepergasthuis courtyard is open roughly 9:00-18:00."
     },
     {
       "q": "What is Groningen's rarest tree?",
@@ -613,6 +613,39 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      }
+    },
+    {
+      "id": "gro_020",
+      "name": "The Pollarded Lindens of the Pepergasthuis",
+      "species": "Lime (Tilia sp.), ensemble of 11 pollarded (leivorm) trees",
+      "age_estimate": "about 190 years",
+      "age_min": 186,
+      "age_max": 196,
+      "girth_cm": null,
+      "location": {
+        "address": "Pepergasthuis (Sint Geertruidsgasthuis), Peperstraat, Groningen",
+        "latitude": 53.217258,
+        "longitude": 6.571846,
+        "neighbourhood": "Binnenstad-Zuid"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (register nr 1680046, Landelijk Register Monumentale Bomen)",
+        "https://www.rtvnoord.nl/nieuws/759799/verkoop-pepergasthuis-van-de-baan-29-woningen-blijven-in-sociale-huur",
+        "https://travelaar.nl/hofjes-groningen-stad/ (daily 9:00-18:00 visiting hours for the hofje)"
+      ],
+      "access": "Free, open courtyard (hofje). The Pepergasthuis is a working almshouse with residents living around the courtyard; visitors are welcome daily roughly 9:00-18:00 but should respect residents' privacy. An earlier pass flagged that a 2019 plan to sell the complex to a private investor had left its future uncertain; RTV Noord (2020) confirms that sale was cancelled and the housing corporation Lefier kept the almshouse in social rent, so the access basis has not changed.",
+      "transport": "Central Groningen, short walk from Grote Markt",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Ten of these eleven lindens are hollow, and they are still standing because somebody bolted them back together in the 1980s. The tie rods and the healed scars of that surgery are still visible on the trunks. The national register dates the planting to a band between 1830 and 1840, which puts the ten originals at around 190 years old; the eleventh is a replacement. That date rests on the register alone, with no second source to corroborate it.\n\nThey fill the courtyard of the Pepergasthuis on Peperstraat, an almshouse founded in 1405 and also called the Sint Geertruidsgasthuis. The trees are centuries younger than the institution around them, and they have been cut into shape for their whole lives, trained in leivorm and pollarded back year after year. That is what a 190-year-old linden looks like when it has never been allowed to grow into a full-sized one.\n\nWhat they have mostly witnessed is the survival of the almshouse itself. In 2019 the complex was lined up for sale to a private investor. After opposition from the city and the residents the sale was called off, the housing corporation kept the 29 dwellings in social rent, and the lindens went on being pruned.\n\nPeople still live around this courtyard. It is open daily, roughly nine until six, and the right way to see it is quietly.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the trained frames and old hollows show"
       }
     }
   ]
