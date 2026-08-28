@@ -1,0 +1,302 @@
+[
+  {
+    "id": "utr_023",
+    "name": "The Maple of the Memorial Beech",
+    "species": "Maple (Acer sp.)",
+    "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
+    "age_min": 136,
+    "age_max": 146,
+    "location": {
+      "address": "Zonnenburg, net ten zuiden van de herdenkingsbeuk, Utrecht",
+      "latitude": 52.086034,
+      "longitude": 5.128765,
+      "neighbourhood": "Zonnenburg"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688710, data/registers/netherlands-lrmb.json"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "verify_notes": "gemeente-owned, visitable ja, visible ja, standing just south of the memorial beech (herdenkingsbeuk) in the same Zonnenburg cluster as three already-published trees on this walk (utr_013/014/015). Species is genus-only (Acer sp.), read from the register's Dutch common name 'gewone esdoorn' (Norway/sycamore maple); ask the reader which."
+  },
+  {
+    "id": "utr_024",
+    "name": "The Elm of the Wilhelminapark West Gate",
+    "species": "Elm (Ulmus sp.)",
+    "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
+    "age_min": 136,
+    "age_max": 146,
+    "location": {
+      "address": "West ingang Wilhelminapark, Utrecht",
+      "latitude": 52.088123,
+      "longitude": 5.138844,
+      "neighbourhood": "Wilhelminapark"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678149, data/registers/netherlands-lrmb.json"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "verify_notes": "gemeente-owned, visitable ja, standing at the west entrance of Wilhelminapark, in the same cluster as three already-published Wilhelminapark trees (utr_010/011/012). Species is genus-only (Ulmus sp., 'Hollandse iep' / Dutch Elm in the register); ask the reader which."
+  },
+  {
+    "id": "utr_025",
+    "name": "The Pagoda Tree of Lepelenburg",
+    "species": "Pagoda Tree (Styphnolobium sp.)",
+    "age_estimate": "roughly 66 to 76 years, from the register's planting band of 1950-1960",
+    "age_min": 66,
+    "age_max": 76,
+    "location": {
+      "address": "Lepelenburg tegenover Swanenberg, Utrecht",
+      "latitude": 52.089505,
+      "longitude": 5.129104,
+      "neighbourhood": "Lepelenburg"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1689877, data/registers/netherlands-lrmb.json"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "verify_notes": "gemeente-owned, visitable ja, in the Lepelenburg cluster. A younger tree, planted 1950-1960 (roughly 66-76 years old), noticeably younger than most of the register's Utrecht candidates; that is a fact worth stating plainly rather than a reason to hold it back. Species is genus-only (Styphnolobium sp., 'Tempelboom' / Pagoda tree, sometimes still catalogued as Sophora japonica); ask the reader which."
+  },
+  {
+    "id": "utr_026",
+    "name": "The Copper Beech of the Servaasbolwerk",
+    "species": "Copper Beech (Fagus sp.)",
+    "age_estimate": "roughly 126 to 136 years, from the register's planting band of 1890-1900",
+    "age_min": 126,
+    "age_max": 136,
+    "location": {
+      "address": "Tegenover Leeuwenberghkerk, Servaasbolwerk, Utrecht",
+      "latitude": 52.087912,
+      "longitude": 5.128047,
+      "neighbourhood": "Servaasbolwerk"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688712, data/registers/netherlands-lrmb.json"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "verify_notes": "gemeente-owned, visitable ja, visible ja, in the Servaasbolwerk cluster, opposite the Leeuwenberghkerk. Same species as an already-published Utrecht copper beech (utr_015) but a distinct specimen under its own register number and a considerably older planting band; do NOT confuse it with two other copper beeches documented nearby under different register numbers (1689875 near Stadsbuitengracht/Zonnenburg, girth 400cm; 1688569 near Wittevrouwenbrug, girth 430cm, damaged by giant polypore fungus) -- neither of those measurements belongs to this tree, register nr 1688712, which carries no independent girth or height data of its own. Species is genus-only (Fagus sp.); ask the reader which beech cultivar, i.e. whether it is a true copper/purple beech."
+  },
+  {
+    "id": "utr_027",
+    "name": "The Horse Chestnut by the Herenstraat Bridge",
+    "species": "Horse Chestnut (Aesculus sp.)",
+    "age_estimate": "roughly 106 to 116 years, from the register's planting band of 1910-1920",
+    "age_min": 106,
+    "age_max": 116,
+    "location": {
+      "address": "Naast brug Herenstraat/Lepelenburg, Utrecht",
+      "latitude": 52.090038,
+      "longitude": 5.127723,
+      "neighbourhood": "Lepelenburg"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688783, data/registers/netherlands-lrmb.json"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "verify_notes": "gemeente-owned, visitable ja, standing right beside an already-published Oriental Plane (utr_016) on the same Herenstraat bridge in Lepelenburg, so it forms a genuine two-tree stop rather than an isolated addition. Species is genus-only (Aesculus sp., 'Witte paardenkastanje' / White Horse Chestnut in the register); ask the reader which."
+  },
+  {
+    "id": "utr_028",
+    "name": "The Lime of the Van Limburg Stirumlaan",
+    "species": "Lime (Tilia sp.)",
+    "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
+    "age_min": 136,
+    "age_max": 146,
+    "location": {
+      "address": "Nabij V.Limburg-Stirumlaan, Wilhelminapark, Utrecht",
+      "latitude": 52.088356,
+      "longitude": 5.139233,
+      "neighbourhood": "Wilhelminapark"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678148, data/registers/netherlands-lrmb.json"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "verify_notes": "gemeente-owned, visitable ja, in the Wilhelminapark cluster near the Van Limburg Stirumlaan. Only park-level context found (the park's own well-documented 19th-century landscaping history), nothing naming this specific tree beyond the register. Species is genus-only (Tilia sp., 'Hollandse linde' / Dutch Lime in the register); ask the reader which."
+  },
+  {
+    "id": "utr_029",
+    "name": "The Silver Maples of the Andrea Monument",
+    "species": "Maple (Acer sp.)",
+    "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880-1890",
+    "age_min": 136,
+    "age_max": 146,
+    "location": {
+      "address": "Ten westen van Burgm.F.Andreamonument, Wilhelminapark, Utrecht",
+      "latitude": 52.087817,
+      "longitude": 5.139382,
+      "neighbourhood": "Wilhelminapark"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678147, data/registers/netherlands-lrmb.json"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "verify_notes": "gemeente-owned, visitable ja, register records this as a PAIR of trees (n_trees: 2) standing together just west of the Burgemeester F. Andrea monument in Wilhelminapark; ship as one entry describing both, per the register-twins rule, since a visitor sees them as one stop. Species is genus-only (Acer sp., 'Zilveresdoorn' / Silver Maple in the register); ask the reader which."
+  },
+  {
+    "id": "utr_030",
+    "name": "The Hornbeam of the Old Observatory Path",
+    "species": "Hornbeam (Carpinus sp.)",
+    "age_estimate": "roughly 186 to 196 years, from the register's planting band of 1830-1840",
+    "age_min": 186,
+    "age_max": 196,
+    "location": {
+      "address": "Aan voetpad noordzijde Sterrenwacht, Servaasbolwerk, Utrecht",
+      "latitude": 52.086086,
+      "longitude": 5.128886,
+      "neighbourhood": "Servaasbolwerk"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688711, data/registers/netherlands-lrmb.json"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "verify_notes": "gemeente-owned, visitable ja, on the footpath along the north side of the old Sterrenwacht (observatory) in the Zonnenburg/Servaasbolwerk cluster, one of the oldest planting bands (1830-1840, roughly 186-196 years) among this batch of candidates. No independent second source found despite a real search this pass (monumentaltrees.com's Zocherpark page 403s automated fetches; two Bomenstichting/Wilhelminapark PDFs use a custom font that defeats text extraction; kanokaartutrecht.nl's 19-stop canal-side route does not include this register number). Species is genus-only (Carpinus sp., 'Gewone haagbeuk' / Common Hornbeam in the register); ask the reader which."
+  },
+  {
+    "id": "utr_031",
+    "name": "The Old Pear of the Geertebolwerk",
+    "species": "Pear (Pyrus sp.)",
+    "age_estimate": "roughly 116 to 126 years, from the register's planting band of 1900-1910",
+    "age_min": 116,
+    "age_max": 126,
+    "location": {
+      "address": "Geertebolwerk t.h.v. Zilverstraat a/h water, Utrecht",
+      "latitude": 52.08586,
+      "longitude": 5.12903,
+      "neighbourhood": "Geertebolwerk"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678119, data/registers/netherlands-lrmb.json",
+      "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "confirmed",
+    "verify_notes": "TWO SOURCES: LRMB register nr 1678119 ('Peer', Common Pear) AND independently confirmed via kanokaartutrecht.nl (canal-side monumental-trees route, stop 16, fetched 2026-08-24), which describes it directly: a small, vital old common pear (Pyrus communis) beside the canal at Geertebolwerk near Zilverstraat, still fruiting and flowering white each spring, height 11m, girth 182cm. Gemeente-owned, visitable ja. A modest, minor specimen rather than a giant, and a genuinely unusual story for this site: a fruit tree old enough to be monumental. Real best_time candidate: white blossom in spring, and fruit later in the year. Species basis is a genus placeholder in the register import but the second source confirms Pyrus communis specifically, so this may ship as the confirmed species rather than genus-only."
+  },
+  {
+    "id": "utr_032",
+    "name": "The Black Walnut of the Tolsteegbrug",
+    "species": "Walnut (Juglans sp.)",
+    "age_estimate": "roughly 136 to 156 years, from the register's planting band of 1870-1890",
+    "age_min": 136,
+    "age_max": 156,
+    "location": {
+      "address": "Sterrenburg/Tolsteegbrug, Utrecht",
+      "latitude": 52.081344,
+      "longitude": 5.123125,
+      "neighbourhood": "Tolsteegbrug"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678122, data/registers/netherlands-lrmb.json",
+      "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "confirmed",
+    "verify_notes": "TWO SOURCES: LRMB register nr 1678122 ('Zwarte walnoot', Black Walnut) AND independently confirmed via kanokaartutrecht.nl (canal-side route, stop 19, the end of the route, fetched 2026-08-24), which describes it directly: a black walnut beside the former Utrechtse School voor Bestuurs- en Organisatiewetenschap building near the Tolsteegbrug, height roughly 19m, girth 332cm. Gemeente-owned, visitable ja, visible ja. Species basis is a genus placeholder in the register import but the second source confirms Juglans nigra specifically."
+  },
+  {
+    "id": "utr_033",
+    "name": "The Field Maple of the Bartholomeibrug",
+    "species": "Field Maple (Acer campestre)",
+    "age_estimate": "roughly 156 to 166 years, from the register's planting band of 1860-1870",
+    "age_min": 156,
+    "age_max": 166,
+    "location": {
+      "address": "Zuidkant van de Bartholomeibrug, aan de waterkant, Pelmolenweg, Utrecht",
+      "latitude": 52.085219,
+      "longitude": 5.119142,
+      "neighbourhood": "Bartholomeibrug"
+    },
+    "verified_sources": [
+      "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688570, data/registers/netherlands-lrmb.json",
+      "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)"
+    ],
+    "access": "Free, public park (gemeente-owned), open during park hours.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "confirmed",
+    "verify_notes": "TWO SOURCES: LRMB register nr 1688570 ('Veldesdoorn / Spaanse Aak', Field Maple) AND independently confirmed via kanokaartutrecht.nl (canal-side route, stop 18, fetched 2026-08-24), which describes it directly: a field maple with an unusual bent, low growth habit hanging out over the water at the south side of the Bartholomeibrug on the Pelmolenweg. Field maple is the only maple genuinely native to the Netherlands, worth stating plainly. Height 13m, girth 160cm, a small tree; the modest numbers are correctly sanity-checked against the species (field maples rarely reach great size). Register planting band 1860-1870 (roughly 156-166 years); a separate gemeente note ties the general area's planting to the 1835 Zocherpark layout but does not specifically date this tree, so do not bridge to the earlier date."
+  }
+]
