@@ -3688,6 +3688,15 @@
     "note": "Write pass on 3 briefed trees; 2 of 3 (hee_010, hil_008) turned out to be exact-coordinate duplicates of already-published hee_003/hil_006 (same LRMB register nr), caught by the writer before prose was written. passcheck.py --pending matches on id only, not coordinates, so it cleared all 3; both stale research files removed and their leads entries marked duplicate so a future pass does not re-serve them. gro_020 merged (Pepergasthuis pollarded lindens); fixed a hard-rule-9 species-name collision the merge introduced (Small-leaved Lime -> canonical Lime for Tilia sp.) and stale count-promise copy in groningen.json (19->20).",
     "wasted": 5000,
     "brief_wrong": true
+   },
+   {
+    "target": "maple species page",
+    "kind": "other",
+    "tokens": 3000,
+    "trees": 0,
+    "note": "pagegaps.py named one gap: Maple (Acer sp.), 3 trees (hrl_010 Haarlemmermeer, utr_023/utr_029 Utrecht), no intro. Wrote data/species/maple.json from those 3 trees own facts (register self-contradiction on hrl_010s planting date, Zonnenburg bastion-park context, silver maple February flowering), Contract F publish gate cleared (3+ trees, hand-written intro). Build/preflight/qa clean.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
