@@ -69,8 +69,24 @@ facts the manifest states, so the two cannot drift:
 | Other User Content (saves, visits, follows, submissions, reports) | Yes | Yes | No | App Functionality |
 | Crash Data | Yes | **No** | No | App Functionality |
 | Performance Data | Yes | **No** | No | App Functionality |
-| Precise or Coarse Location | **No** | | | read on the phone, never sent |
-| Photos of trees | **No** | | | they stay in the app's own storage |
+| Precise Location | Yes | Yes | No | App Functionality |
+
+**The last two rows of this table were wrong until 2026-08-28 and are the
+reason to distrust a table that nobody re-reads.** They said location is never
+sent and that photographs of trees stay on the phone, which stopped being true
+on 08-27 when SightingSync landed: the photograph goes to the sightings bucket
+and the row carries user_id, lat and lng. The same stale sentence was sitting in
+`PrivacyInfo.xcprivacy` and in `Sightings.swift`, in three places at once, and
+this is a form Hidde types answers FROM. He corrected App Store Connect on
+08-28; all four now agree.
+
+What the two live rows actually cover. **Photos** is both the profile picture
+and a photograph of a tree you recorded, and neither is shown to anybody else:
+the sightings bucket is private and no policy anywhere lets one account read
+another's. **Precise Location** is the coordinate saved WITH a tree you record,
+not a stream: one per tree, at the moment you record it, and only once you have
+signed in. The map's own reading of where you are, which opens it on the trees
+near you, is still never sent and is still not declared.
 
 Two answers that are easy to get wrong and both matter: **Tracking is No
 everywhere**, because nothing here is shared with a data broker or joined to
@@ -98,6 +114,28 @@ Each is idempotent and each is his, the same as `saves.sql` was:
 - [x] Export compliance - `ITSAppUsesNonExemptEncryption` is declared NO, so no upload asks again.
 - [ ] **The App Store Connect record itself**, which only Hidde can create: the listing text, the screenshots and the privacy form are all written out in APP_STORE_LISTING.md, including the TestFlight fields.
 - [ ] **Everything in part 2 above**, which needs a real phone and cannot be done here.
+
+### Getting a build into TestFlight, which nothing here does for you
+
+Written 2026-08-28, when Hidde looked for the app in TestFlight and found
+nothing. Nothing was wrong: **no build has ever been uploaded.** `ios.yml`
+builds, tests and photographs the app and it does not archive or distribute,
+which is deliberate (uploading needs his signing identity) and easy to mistake
+for a pipeline that ships. Signing is automatic on team `5EWWC3M8L2`, bundle
+`app.ancienttrees.AncientTrees`.
+
+In Xcode, and it is five steps:
+
+1. Pick **Any iOS Device (arm64)** as the destination. Archive is greyed out while a simulator is selected, which is the step people get stuck on.
+2. **Product > Archive.**
+3. In the Organizer that opens: **Distribute App > TestFlight Internal Only**, then Upload. (App Store Connect > Upload does the same and also allows external testers later.)
+4. Wait. Processing takes five to twenty minutes and the build shows as unavailable until it finishes.
+5. In App Store Connect, **TestFlight > Internal Testing**, add yourself to the group with the Apple ID your TestFlight app is signed in with. A build nobody is a tester of never appears on a phone, and this is the second place people get stuck.
+
+**Every later upload needs a HIGHER build number** than the one before it, or
+App Store Connect refuses it. That is `CURRENT_PROJECT_VERSION` in the project
+file; `MARKETING_VERSION` is the 1.0 a person sees and only changes when you
+want it to.
 
 ## The two open product calls, which are his
 
