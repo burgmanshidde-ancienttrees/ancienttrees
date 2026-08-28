@@ -386,6 +386,7 @@ struct TreeMap: UIViewRepresentable {
             if wantTrees != drawnTreeIDs {
                 drawnTreeIDs = wantTrees
                 MapLayers.setTrees(trees, on: style, clustered: clusters,
+                                   zoom: map.zoomLevel,
                                    collected: parent.collected,
                                    favourites: parent.favourites)
             }
@@ -678,7 +679,21 @@ enum MapLayers {
 
     }
 
+    /// `zoom` is the zoom the map is ACTUALLY at, handed in by the caller,
+    /// which always has the map in scope.
+    ///
+    /// It used to ask a stored reference and fall back to 12 when that was not
+    /// set yet, which is street level. So when the catalogue arrived before the
+    /// map had finished attaching, every tree in the world was grouped into
+    /// cells sized for a street while somebody was looking at a continent, and
+    /// almost every pin fell on top of another and vanished. Hidde saw three
+    /// clusters over Europe above a sheet reading "1,356 trees you can see"
+    /// (2026-08-28), and it healed the moment he dragged the map, because a
+    /// region change recomputes at the real zoom. That is exactly the shape of
+    /// a wrong guess that corrects itself, which is the kind nobody can report
+    /// and everybody sees.
     static func setTrees(_ trees: [Tree], on style: MLNStyle, clustered: Bool,
+                         zoom: Double,
                          collected: Set<String> = [], favourites: Set<String> = []) {
         let month = Calendar.current.component(.month, from: Date())
         var features: [MLNPointFeature] = []
@@ -726,7 +741,7 @@ enum MapLayers {
             features.append(f)
         }
         leaves = features
-        cluster(on: style, zoom: mapRef?.zoomLevel ?? 12, clustered: clustered, force: true)
+        cluster(on: style, zoom: zoom, clustered: clustered, force: true)
     }
 
     /// Hand the style a fresh source built from these points.
@@ -1191,7 +1206,13 @@ enum MapLayers {
     /// what Google Maps does with a contributed image and Strava with a segment
     /// photograph.
     private static func photoPin(_ image: UIImage) -> UIImage {
-        let d: CGFloat = 44
+        // THE SAME 38 AS EVERY OTHER PIN. It was 44, and with a ring drawn
+        // outside its hole and a shadow under it, a tree you had added yourself
+        // sat visibly larger than every tree on the map beside it (Hidde,
+        // 2026-08-28: "het icoon van mijn boom met de foto is groter dan de
+        // rest"). It does not need the size: it is already the only pin that is
+        // a photograph rather than a drawing, which is distinction enough.
+        let d: CGFloat = 38
         return UIGraphicsImageRenderer(size: .init(width: d, height: d)).image { ctx in
             // A white disc under everything, so a photograph with a pale edge
             // still has a rim against a pale map.

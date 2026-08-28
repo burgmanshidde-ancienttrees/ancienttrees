@@ -33,7 +33,7 @@ disagree by two orders of magnitude. OPEN.
 
 ## 4. The country thumbnails are poor
 
-"ik vind de thumnbnail foto van italie nederland portugal neit mooi"
+"ik vind de thumnbnail foto van italie nederland portugal neit mooi", plus Ireland
 
 Which photograph fronts a country is decided by the website and travels in the
 feed, so this is a data question rather than an app one. OPEN.
