@@ -1,0 +1,96 @@
+{
+  "city": "Dresden",
+  "country": "Germany",
+  "city_slug": "dresden",
+  "note": "Candidates found during the 2026-08-28 verification pass (city not yet published) that did not ship as one of the four delivered trees. The official Naturdenkmal register is reproduced in de.wikipedia's 'Liste der Naturdenkmale in Dresden' (fetched as wikitext), which is where most of these were found.",
+  "leads": [
+    {
+      "name": "Seidenakazie Elsasser Strasse 11",
+      "species": "Albizia julibrissin (Persian silk tree)",
+      "lat": 51.054659,
+      "lng": 13.75966,
+      "status": "lead",
+      "why": "ND 123, Johannstadt. Two-stemmed, stem circumferences 70cm and 55cm, crown 10m at 13m height, designated Jan 2015, flower clusters and viable seed set every year since 1990 despite the species not being reliably frost-hardy this far north. Held back only on access: de.wikipedia's own description places it 'to the right of the entrance' of Elsasser Strasse 11 and does not say whether that is a public verge or a private front-garden strip. A quick street-level check (Street View or a reader) would settle it; if it is street-side rather than in the building's own front garden, this is a strong fourth or fifth tree for Dresden."
+    },
+    {
+      "name": "Splitter oak's neighbours: general Grosser Garten register",
+      "species": "various",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Grosser Garten is a large historic public park (not itself individually Naturdenkmal-listed tree by tree beyond the Splittereiche) and is felling roughly 300-425 drought- and disease-weakened trees over the 2025/26 season per 2026 news coverage. Worth a dedicated pass to check whether any of its other old specimens (it has old lindens and oaks along the Hauptallee) are individually documented and undamaged; not pursued this pass to stay within the four-candidate limit."
+    },
+    {
+      "name": "Zerr-Eichen Liststrasse",
+      "species": "Quercus cerris (Turkey oak)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 96, an avenue/group of Turkey oaks on Liststrasse in the Aussere Neustadt (Baumgruppe, Allee). No single tree to stand at; fails the collectible-point test."
+    },
+    {
+      "name": "Rosskastanien-Allee Bluherstrasse",
+      "species": "Aesculus hippocastanum (horse chestnut)",
+      "lat": 51.042243,
+      "lng": 13.746354,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 93, a chestnut avenue, not a single identifiable tree."
+    },
+    {
+      "name": "Fluttering elms of Sachsenplatz",
+      "species": "Ulmus laevis (European white elm)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 94, a Baumgruppe (tree group) rather than one tree or a compact famous ensemble with an obvious single place to stand."
+    },
+    {
+      "name": "Krim-Linden Wallotstrasse",
+      "species": "Tilia (Crimean linden)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 97, a linden avenue/group, same reasoning as the other Baumgruppe/Allee entries above."
+    },
+    {
+      "name": "Rosskastanien Marschnerstrasse",
+      "species": "Aesculus flava, Aesculus pavia",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "ND 103, another chestnut group/avenue."
+    },
+    {
+      "name": "Drei Eiben Blochmannstrasse 2",
+      "species": "Taxus baccata (European yew)",
+      "lat": 51.046633,
+      "lng": 13.754056,
+      "status": "blocked",
+      "blocked_reason": "access unconfirmed",
+      "why": "ND, three yews in front of the south gable of the Ehrlichsches Stift building at Blochmannstrasse 2, designated Jan 2015 after a dispute with a school-campus development. Institutional grounds (a Stift/foundation building, later contested by a school-campus project); no source found confirming the public can walk up to them without business at the institution, so this stays out per the schools/institutional-grounds caution in the house rules until better evidence turns up."
+    },
+    {
+      "name": "Weisse Maulbeere Georgplatz",
+      "species": "Morus alba (white mulberry)",
+      "lat": 51.046013,
+      "lng": 13.741723,
+      "status": "blocked",
+      "blocked_reason": "dead",
+      "why": "NEVER SHIP as this entry. ND 82, once a genuinely remarkable specimen (18m tall, 2.90m girth, ~140 years old, protected since 1999, probably originally on the grounds of the Kreuzgymnasium built 1866), but confirmed felled by a storm in 2020. A replacement tree was planted nearby; not old enough to qualify on its own yet."
+    },
+    {
+      "name": "Eisenholzbaum Mozartstrasse",
+      "species": "Parrotia persica (Persian ironwood)",
+      "lat": 51.034538,
+      "lng": 13.750757,
+      "status": "blocked",
+      "blocked_reason": "private land",
+      "why": "NEVER SHIP as this entry. ND 28, a genuinely rare and large specimen for its species (12m tall, 1.4m girth, protected since the 3 Jan 1985 resolution alongside the Albertplatz plane and Fetscherplatz oak), but multiple sources place it specifically in the front garden (Vorgarten) of the private property at Mozartstrasse 10. Hard rule 10: front gardens of dwellings stay out whatever the register says, however fine the tree."
+    }
+  ]
+}
