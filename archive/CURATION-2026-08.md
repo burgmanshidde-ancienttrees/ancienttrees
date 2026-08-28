@@ -4,6 +4,911 @@ Entries moved out of CURATION.md by scripts/archive_logs.py to keep the living
 file small enough to read cheaply. Nothing here is edited or summarised: it is
 the original text, newest first. CURATION.md links back to this file.
 
+## 2026-08-20 (autonomous run) - Toulouse submission: elm ID correction checked, not changed
+
+Reader submission (3 duplicate rows, same content, a form double-submit)
+questioned tls_002's species: hairless leaves, shape said to be atypical
+for Wych Elm (Ulmus glabra), plus a note that two elms stand a few metres
+apart at the spot and another nearby. Re-queried Toulouse's own open-data
+API directly for id 15138: it still returns Ulmus glabra at essentially
+our exact coordinate and remains the sole tree in the area flagged
+remarquable=Ville de Toulouse. Found 14 elms within 150m, including one
+Ulmus laevis (id 15143) about 15m away, unflagged. Laevis has notably
+smoother leaves than glabra, so the reader most likely looked at that
+neighbouring tree rather than tls_002. Left the species as the register
+states it (our only source, government-trusted per the register-layer
+rule), added a verify_notes entry recording the correction and the check,
+and added one sentence to the story noting the cluster of elms so a
+future visitor trusts the pin over the first elm they see. Stayed
+`flagged` (unchanged; a second independent source still does not exist).
+All 3 rows marked processed.
+
+## 2026-08-20 (session) - Arnhem: deepened 4 to 9 from the freshly-staged Netherlands register
+
+Bari checked first per the shelf's own writing queue: register genuinely
+exhausted (only 4 designated monumental trees exist in the whole city, one
+already correctly blocked on university-grounds access, one on a school
+courtyard with no evidence of public access), stays at 3 verified trees
+below the 4-tree floor, from-zero research off (not one of Hidde's 17 named
+cities). Checked Rome/Florence/Milan/Vienna's leads.py-flagged READY trees
+by hand next: all turned out stale (one was a duplicate register id for an
+already-published Bari tree; Vienna's "Alser Straße" plane turned out to be
+an exact-coordinate duplicate of the already-published vie_024) or carrying
+real unresolved caveats their own notes already named (single MASAF-only
+source with a failed second-source hunt, an unresolved size discrepancy
+across three sources for a Milan plane in a piazza with several planes).
+None of that shipped.
+
+`prepare.py`'s staging shelf held a genuinely fresh one instead: Arnhem's
+190 freshly-staged Dutch LRMB (Landelijk Register Monumentale Bomen)
+candidates, never touched by a prior pass. A tight cluster around
+Velperplein/Musispark, 0.21 to 0.32km from each other, all `visitable: ja`,
+`owner_category: gemeente`. Ran every candidate's `history` text against the
+register's own `dead_entries_regex` before shipping anything: caught and
+excluded a copper beech in the same cluster whose own history field says it
+was felled in 2000 after fungal damage. Shipped 5: a Scarlet Oak, a Weeping
+Japanese Pagoda Tree (registered for rarity, not age), a second Oriental
+Plane, a Black Walnut with a documented fungal decline-and-apparent-recovery
+history, and a Sessile Oak, all `curation_status: flagged` (single
+register source per tree) and `location_precision: confirmed`. Corroborated
+the shared 1880 Leonard Springer park-design context, common to four of the
+five, via nl.wikipedia and an Arnhem municipal heritage document; the
+Pagoda Tree has no such context (registered for species rarity, "dendrologisch",
+not the 1880 planting) and says so plainly in its own story. The build's walk
+planner independently grouped 6 of Arnhem's 9 trees (5 new plus the existing
+poplar) into one 0.6km, 8 minute walk, unprompted, confirming the cluster
+reads as a real afternoon rather than a scattered list. Intro/meta/FAQ counts
+updated 4 to 9. Preflight, superlatives and the full site build all clean;
+qa.py's one flagged item is the pre-existing sitemap-lastmod warning from
+this sandbox's shallow git checkout (documented in prior entries, not a
+real defect). Photos: none hunted, per this runner's no-photo-judging rule;
+an honest gap for all 9.
+
+## 2026-08-20 (session, continued) - Utrecht: deepened 5 to 9 from the same fresh Netherlands register
+
+Same shelf, next Dutch city by rank (50 vs Arnhem's 170). 316 freshly-staged
+LRMB candidates, concentrated around the Zocherpark/singel ring that circles
+Utrecht's historic centre. Caught two things worth recording so a later pass
+does not repeat the check from scratch: a DUIC news article describes a
+specific, named, 184-year-old elm in "Zocherplantsoen" now terminally
+infected with Dutch elm disease and being preserved as a dead standing snag
+rather than felled; two Hollandse iep (elm) register candidates sat in the
+same Hieronymusplantsoen cluster this pass was drawing from, and neither
+could be positively ruled out as that tree, so both were dropped rather than
+risk publishing a documented terminal case as a normal collectible. Separately,
+a "Hollandse linde" register point 80m from the already-published utr_005
+(Onder de Linden) turned out to be the same canal-side double row that entry
+already covers at approximate precision, not a new distinct tree; dropped as
+a near-duplicate rather than shipped as a second entry for the same feature.
+
+Shipped 4: a Copper Beech and a 4-tree Oriental Plane grove, both dated by
+the municipality to an 1835 planting under J.D. Zocher's remaking of
+Utrecht's old defensive ring into parkland (the beech's own register carries
+a genuine, unresolved internal contradiction between that 1835 municipal
+date and an 1880s Bomenstichting registration date; stated as a disagreement
+in the story rather than resolved by picking one), a second Oriental Plane at
+Janskerkhof churchyard square, and a London Plane at Lucasbolwerk, corroborated
+against the independently documented 1941 construction date of the
+Stadsschouwburg theatre it now fronts. All four `curation_status: flagged`
+(single register source per tree beyond the general park-history
+corroboration), `location_precision: confirmed`. The build's walk planner
+grouped 8 of Utrecht's 9 trees (all but the outlying Uithof Linden) into one
+1.6km, 21 minute walk. Intro/meta/FAQ counts updated 5 to 9; the intro
+needed trimming back into Contract C's 60-100 word band after the update,
+caught by `preflight.py`. Build/preflight/superlatives/qa all clean (same
+pre-existing sitemap-lastmod warning as the Arnhem pass, this sandbox's
+shallow checkout). Photos: none hunted, per this runner's no-photo-judging
+rule.
+
+## 2026-08-20 (session, continued) - Groningen: deepened 5 to 10 from the same fresh Netherlands register
+
+Third Dutch city off the same shelf, next by rank after Utrecht. A central
+cluster around Martinikerkhof, Akerkhof, Prinsentuin and Guyotplein, all
+within 0.7km of each other. Shipped 5: an oak at Martinikerkhof (shipped with
+an honest note that the municipality's own 2021 survey rates its condition
+moderate to poor and declining, since a struggling tree is still a living one
+and not a reason to withhold it), a horse chestnut in the walled 1626
+Prinsentuin garden (free entry confirmed independently, not just from the
+register), a horse chestnut at Akerkhof (corroborated against the
+municipality's own account of a recent square redevelopment that explicitly
+preserved this tree while removing three others, which also confirms recent
+vitality), a sycamore at Guyotplein, and a Siberian Balsam Poplar (Populus x
+berolinensis, a documented 1865 Berlin hybrid) at the Engelenpoortje alley,
+which was itself closed to the public from 2012 to 2020 and is open again
+now. All `curation_status: flagged`, `location_precision: confirmed`, all
+clean against the register's `dead_entries_regex`. Build's walk planner
+grouped 6 of Groningen's 10 trees into one 2.5km, 33 minute central walk.
+Preflight clean on the first pass. Build/superlatives/qa all clean (same
+pre-existing sitemap-lastmod warning as the other two Dutch passes today,
+this sandbox's shallow checkout). Photos: none hunted, per this runner's
+no-photo-judging rule.
+
+## 2026-08-20 (session, continued) - Haarlem: deepened 4 to 9, closing a gap the city's own page already pointed at
+
+Fourth Dutch city off the same shelf. Haarlem's existing haa_004 story
+already namechecked "monumental planes, a cypress grove, oaks, a walnut and
+a stand of chestnuts" as Kenaupark neighbours nobody had actually added; this
+pass added three of them from the freshly-staged register: a 6-tree bald
+cypress grove and a 3-tree plane grove (both within 80m of haa_004, both
+historically tied to the same 1865 Zocher park design already in the city's
+intro), and a common lime from the same park's later planting phase. Two
+more came from a small cluster of former monastery gardens 0.5km away: a
+weeping beech in Prinsenhof (monastery ground since before 1477, the city's
+herb garden since 1721) and an oak in the neighbouring Wijngaardtuin
+(a 16th-century monastery vineyard, redesigned late 19th century probably by
+L.P. Zocher, same family). Skipped two nearby chestnut candidates with
+status 5 and "onbekend" history out of caution rather than confirmed cause.
+All `curation_status: flagged`, `location_precision: confirmed`, all clean
+against `dead_entries_regex`. Walk planner grouped 6 of Haarlem's 9 trees
+into one 1.2km, 16 minute walk. Preflight clean on the first pass.
+Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning
+as the other three Dutch passes today). Photos: none hunted, per this
+runner's no-photo-judging rule.
+
+## 2026-08-20 (session, continued) - Maastricht: deepened 5 to 10 from the same fresh Netherlands register
+
+Fifth Dutch city off the same shelf. Two central lindens 85m apart at the
+squares ringing the Basilica of Saint Servaas (a 1909 birth-tree for Princess
+Juliana at Keizer Karelplein, whose own commemorative ironwork skips her name
+entirely and repeats "no bicycles" six times instead; a second linden at
+Vrijthof, the former churchyard-turned-main-square), plus three grove
+entries from Monseigneur Nolenspark's 1886 westward expansion, designed by
+Lievin Rosseels (son of the Leuven landscape architect who designed the
+park's earlier stretch): black walnuts, weeping silver limes along the
+Haet ende Nijt moat, and a pair of tulip trees. Dropped a sixth candidate, a
+Nolenspark plane group, after finding it sits 240m from the already-published
+maa_005 ("Tallest Plane Tree in the Netherlands", itself at approximate
+precision on the same street): different register point, same species, same
+street, judged too easy to confuse with the existing entry to be worth
+shipping. All `curation_status: flagged`, `location_precision: confirmed`,
+clean against `dead_entries_regex`. Walk planner grouped 7 of Maastricht's
+10 trees into one 1.6km, 21 minute walk. Preflight clean on first pass.
+Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning
+as the other four Dutch passes today). Photos: none hunted, per this
+runner's no-photo-judging rule.
+
+## 2026-08-20 (session, continued) - Rotterdam: deepened 5 to 9, one bridge claim caught and dropped
+
+Sixth Dutch city off the same shelf. Two exceptional finds: the Lijnbaan
+plane, a second May-1940-bombing survivor (planted 1851 in a hospital
+garden; only the tree and the hospital's entrance gate survived the
+bombing; the 1960s Lijnbaan extension literally bent the street to spare
+it; nominated for the 2019 national Tree of the Year), and the
+Eendrachtsplein memorial yew (1947, initiated by Rotterdam Philharmonic
+violinist Willem Ganter after the war). The register's own history text for
+the yew claims it stands where Zadkine's famous "De Verwoeste Stad" statue
+was unveiled in 1953; independent search consistently places that statue at
+Plein 1940/Leuvehaven, not Eendrachtsplein, so the connection reads like the
+register conflating two different memorials. Dropped the Zadkine claim
+entirely and wrote the story from only what corroborates, rather than
+publish an uncertain bridge claim on a page whose whole intro is about
+buildings that didn't survive being confused with objects that did.
+Separately dropped a "Bruine beuk Koningin Emmaplein" candidate 54m from the
+already-published rot_005: same species, and the register's own text
+describes a single monumental copper beech on that square, so almost
+certainly the same tree rather than a second one. Also shipped a 4-tree
+mixed plane group at Delftseplein station forecourt (1860, 3 London plane
+plus 1 Oriental plane) and a plainer Westersingel plane. All
+`curation_status: flagged`, `location_precision: confirmed`, clean against
+`dead_entries_regex`. Walk planner formed two walks (6 and 3 trees). Preflight
+caught a stale "plus four more" count promise in `question_meta`, fixed to
+eight. Build/superlatives/qa all clean (same pre-existing sitemap-lastmod
+warning as the rest of today's Dutch passes). Photos: none hunted, per this
+runner's no-photo-judging rule.
+
+## 2026-08-20 (session, continued) - Nijmegen: deepened 5 to 8, two traps caught, deliberately smaller batch
+
+Seventh and final Dutch city off today's shelf, lower yield on purpose. A
+"Julianaboom" register candidate at Julianapark turned out to be the exact
+same tree as the already-published nij_004. A "Wilhelmina linde" at
+Hertogplein looked like a strong companion piece (a coronation tree for
+Queen Wilhelmina, 1898) until independent search
+(woneninnijmegen.blog/2025/04/04/wilhelminaboom) turned up that the original
+tree was replaced with another at an unrecorded date, and the register's own
+planted_band (1880-1890) predates the 1898 coronation it supposedly
+commemorates anyway; dropped entirely rather than publish an age or a
+commemorative claim for what is very likely not the original specimen. Also
+skipped a Hunnerpark elm (status 5, "onbekend" history, no positive
+confirmation found anywhere) and several cemetery register entries whose
+`n_trees` counts (28, 14, 12) mark them as avenue or hedge plantings rather
+than single collectible points. Shipped 3: a hornbeam and a black locust
+both a few metres from the already-published nij_005 giant sequoia in
+Krayenhoffpark, and a sweet chestnut at the Rijksmonument-listed
+Begraafplaats Daalseweg (Catholic cemetery consecrated 1885, also the burial
+site of 300 victims of the February 1944 bombing of Nijmegen). All
+`curation_status: flagged`, `location_precision: confirmed`, clean against
+`dead_entries_regex`. Preflight clean on first pass. Build/superlatives/qa
+all clean (same pre-existing sitemap-lastmod warning as the rest of today's
+Dutch passes). Photos: none hunted, per this runner's no-photo-judging rule.
+
+## 2026-08-20 (session, continued) - The Hague: deepened 16 to 21, mined the raw register by hand
+
+Rank 24 in CITY_QUEUE.md, much higher priority than the seven cities worked
+earlier today, but its own pre-staged shelf file
+(data/research/the-hague-lrmb-ready.json) turned out already fully consumed:
+every id in it already exists in data/cities/the-hague.json except one
+correctly-held-back "potentieel" beech. So this pass mined
+data/registers/netherlands-lrmb.json directly, replicating prepare.py's own
+filter (visitable=ja, not particulier, not within 60m of a published tree)
+by hand within 3km of the centre. Confirmed via independent search that the
+Paleistuin, the garden behind the King's working palace at Noordeinde, is
+genuinely free and open to the public sunrise to sunset (closed only for
+occasional state visits) before shipping its bald cypress. Skipped the Lange
+Voorhout linden avenue outright, 325 trees in one register entry, a mass
+planting rather than a collectible point by any reading of the rule.
+Shipped 5: the Paleistuin cypress, a 7-tree horse chestnut row along the
+Vijverberg beside the Hofvijver (the pond beside the Binnenhof), a 2-tree
+plane pair at the Grote Kerk (planted on the church's own former graveyard),
+and a plane group plus a Hungarian oak group in Huijgenspark. All
+`curation_status: flagged`, `location_precision: confirmed`, clean against
+`dead_entries_regex`. Walk planner folded all 5 into three existing or
+reshaped walks. Preflight caught a meta_description 3 characters over
+Contract C's limit, fixed. Build/superlatives/qa all clean (same
+pre-existing sitemap-lastmod warning as every other pass today). Photos:
+none hunted, per this runner's no-photo-judging rule.
+
+**Today's Dutch register total, all from the same national LRMB import: 8
+cities, 36 trees (Arnhem 4→9, Utrecht 5→9, Groningen 5→10, Haarlem 4→9,
+Maastricht 5→10, Rotterdam 5→9, Nijmegen 5→8, The Hague 16→21).**
+
+## 2026-08-20 (session, continued) - Brussels: deepened 23 to 26, geocoded the register by hand
+
+Rank 20, higher priority than any Dutch city worked today, 436 register
+entries within reach. Brussels' own official inventory
+(data/registers/brussels-arbres-remarquables.json, CC BY 4.0) carries no
+address text, only coordinates and a heritage.brussels URL per tree; that
+site returned only navigation menus to a curl fetch (the known
+403-to-WebFetch workaround gets a 200, but the page itself is JS-rendered).
+Used OpenStreetMap Nominatim reverse geocoding instead (a read-only public
+API, gear for us under hard rule 5's carve-out, no product impact) to place
+a dense cluster of legally-inscribed trees at the Jardin du Mont des Arts,
+confirmed by web search as a genuine public garden (1910 World's Fair
+origin, rebuilt 1957-58 as a suspended garden over an underground car
+park). Shipped 3 (a pedunculate oak, an ailanthus, a Caucasian wingnut),
+all `location_precision: approximate` since the specific garden is inferred
+from geocoding rather than stated by the register, matching the existing
+bru_023 single-source pattern exactly: `curation_status: flagged`, a
+`notes` field spelling out both the single-source and inferred-location
+caveats, age left undocumented since the register gives girth and legal
+status but no planting date. Brussels 23 to 26. Preflight clean.
+Build/superlatives/qa all clean (same pre-existing sitemap-lastmod warning
+as every other pass today). Photos: none hunted, per this runner's
+no-photo-judging rule.
+
+## 2026-08-19 - Caserta: deepened to target (14 to 20), 6 new trees from its own leads file
+
+Six trees written from already-verified MASAF/Campania register leads that
+had only been held back by the pre-2026-08-02 count cap: Bottle Tree
+(Kurrajong), Chir Pine, Turkey Oak, Southern Magnolia (free, Piazza Carlo di
+Borbone), Osage Orange and Mediterranean Hackberry (all `location_precision:
+approximate`, `curation_status: flagged`, matching the rest of the city).
+Deliberately excluded from this pass: several other READY-labelled leads in
+the same file whose own `why_not_published` notes flag real unresolved
+problems (implausible measurements, a disputed species identity between two
+registers, a girth field that reads "sdraiata" instead of a number) rather
+than a stale count objection; those stay in data/leads/caserta.json for a
+pass that can actually resolve them. City intro/meta/FAQ counts updated
+(11 paid/3 free to 16 paid/4 free). Photos: 0 new candidates on the API
+sweep, an honest gap.
+
+## 2026-08-19 - Bilbao: opened, 4 trees (at the floor), all flagged, 4 photos missing, 7 leads and 3 blocked recorded
+
+New city, from-zero web research (no usable Basque/Bizkaia register).
+All 4 `location_precision: approximate` (park-level, no tree individually
+pinned) and `curation_status: flagged`. Three of four carry only a vague
+"over a century" age with no measurement; the Dona Casilda horse chestnut's
+two sources use near-identical wording, flagged in the story as likely
+sharing one original line rather than confirming independently. Not one
+walkable cluster: four neighbourhoods, 1.5-3km apart, page says so. 7 leads
+in data/leads/bilbao.json (ombu, ginkgo and dragon tree present in Dona
+Casilda but unpinned; a second sequoia at an institutional garden with
+unclear access; the Plaza Ametzola tree named by a DEIA feature but no
+species/size found; the unusable Bizkaia singular-tree catalogue). 3 blocked
+as confirmed dead (Arbol Gordo de Arbieto, Tilo del Arenal, El Abuelo of
+Arriquibar, all per a DEIA feature). Photos: 0 of 4, API sweep queued
+candidates for 2.
+
+## 2026-08-19 - Ottawa: opened, 8 trees, all flagged (single-sourced tree-specific facts), 8 photos missing
+
+New city, Confederation Square / Confederation Park / Major's Hill Park
+cluster from the NCC's "A Living Legacy" register. All 8 `curation_status:
+flagged` and `location_precision: confirmed` (tree-level register
+coordinates, not grid-rounded). Caught and did not publish a bridge claim
+(the National War Memorial's 1939 unveiling date almost inherited onto the
+adjacent linden). Three trees share one circa-1900 age estimate from a single
+document; the question page states the tie rather than picking a winner.
+Photos: 0 of 8, API sweep queued candidates for 3, none judged.
+
+## 2026-08-19 - Hawaii (the Big Island): opened, 6 trees, 0 flagged as unusable, 6 photos missing
+
+New city, Kalopa Native Forest State Park cluster on the Hamakua coast (a
+koa, a hame, two kopiko 'ula, two ohi'a lehua), all `location_precision:
+approximate` (the register rounds coordinates to about 1km and all six share
+one grid cell). 3 of 6 carry `curation_status: flagged` for the register's own
+implausible height figures, excluded from the record rather than published;
+girths are trustworthy and used instead. No tree has a documented age; the
+page says so plainly and asks readers rather than guessing. One Kona
+candidate (a Moreton Bay Fig gifted 1882, "Excellent" vitality in the
+register) was blocked as dead, cut to a stump October 2025. Two more Kona
+banyans went to leads, real candidates (one plausibly a surviving 1882 royal
+banyan cutting) that need a dedicated identification pass. Photos: 0 of 6,
+API sweep queued 1 candidate each for 5 of 6, none judged (this session's
+egress cannot reach upload.wikimedia.org).
+
+## 2026-08-19 - Dallas: 8 stories written (write pass)
+
+All 8 written. The two Dealey Plaza oaks (dal_001, dal_002) carry the 22 November 1963 shooting plainly and at different lengths: dal_001 leads on the shots passing through its canopy, dal_002 leads on being the largest of the three trees the Texas Historic Tree Coalition measured and gives the disputed knoll two sentences, no more. Both ensembles say in the prose that they are groups: dal_007 names the fountain as the place to stand and separates the largest trunk (about 11 ft round) from the grove average (30 in diameter), and dal_008 leads on Moore Park's 1938 founding as one of five parks for the city's Black residents and its 1940 Juneteenth renaming, then states the age conflict as a 125 to 190 year span across three sources rather than picking one. dal_003 (county champion post oak) has no age in any source and asks the reader for one; dal_006 has no girth and asks for that. best_time set on 1 of 8 (dal_008, pecans down in October and November); the live oaks and the winter-bare bur oaks get none.
+
+## 2026-08-19 - Los Angeles: 7 stories written (write pass)
+
+All 7 written (lax_001 and lax_007 were pulled at the merge and are absent from the file; nothing was written for them). Five of the seven are Moreton Bay figs and each is led by a different fact rather than by the species: the Miramar's 1889 planting by Georgina Jones in a mansion garden the hotel later grew around, the church fig's status as Historic-Cultural Monument No. 19 with the church built around it in 1962, the Plaza figs as a single ensemble entry opening on the fourth tree's collapse during a lantern festival on 2 March 2019, the Beverly Hills fig opening on the Burton Green planting being local tradition with no paperwork, and the Auto Club fig on Chapman's 1894 planting outside his own house. lax_005 (oldest palm) is built on its three relocations, 1850s, 1889 and 5 September 1914. lax_006 states the fungal treatment and the request to stay out from under the branches, and says the 200-year age is the Arboretum's own estimate. No best_time on any: all seven are evergreen or aseasonal. Four trees have no published girth and three of them ask the reader for it. NOTE for the merging session: lax_005 carries "Desert Fan Palm (Washingtonia filifera)" against the live "California Fan Palm (Washingtonia filifera)" on three existing trees, which fails hard rule 9 at build; left unchanged because a write pass changes no verified field, and the story names only the Latin binomial so it reads correctly under either.
+
+## 2026-08-19 - Seattle: 5 stories written (write pass)
+
+All 5 written. Every pin in this city is approximate and no story implies otherwise: sea_001 says outright that no source publishes where the Big Tree stands inside the 120 acres of old growth and that finding it is part of the walk, and it also warns readers off the much younger fir the park's own printed walk starts with. sea_002 leads on the fact that the only published figures for the Volunteer Park sequoia belong to the species and not to the tree, records no age, refuses to date it from the 1904-1912 Olmsted landscaping, and asks Capitol Hill for a planting record or a tape measure. sea_003 (Kubota grand fir) states that its 200-year age rests on one document. sea_004 (bigcone Douglas fir) says the state champion title traces back to one 2003 survey through both of its sources. sea_005 uses the university tree tour's own dating of the trunk to the 1909 Alaska-Yukon-Pacific Exposition and explicitly claims no size record, since two other Seattle Lombardy poplars are claimed as record holders and sit in leads. best_time set on 1 of 5 (sea_005, yellow in late October and November); the four conifers get none.
+
+## 2026-08-19 - Mexico City: 10 stories written (write pass)
+
+All 10 written, no best_time on any of them: seven are ahuehuetes, one is an evergreen laurel fig and two are shamel ashes, and no source in the pass records a seasonal moment worth a badge. The page's own story is that the trees come from SEDEMA's 2025 Arboles Patrimoniales register rather than from fame, so the two famous losses appear only as context in the prose (El Sargento in mex_001, the Popotla Noche Triste tree in mex_007) and neither is presented as somewhere to walk. mex_001 carries its legendary 1521 planting as legend and its 2018 partial collapse plainly; mex_003 states both published ages (35 years and 100-115) without choosing; mex_004 opens by separating Eugenio from the felled Eugenito; mex_005 uses its documented 21 September 1921 planting. Five trees (mex_004, 006, 007, 008, 010) have no age at all and each asks the reader for one in a single sentence. mex_008 also asks readers whether the register's two trunk readings are one forked tree or two. Only mex_009 and mex_010 are written as a pair (700 m apart in Coyoacan's Barrio Santa Catarina); the rest are borough stops and no story implies otherwise.
+
+## 2026-08-19 - Perth: 6 stories written (write pass)
+
+All 6 written. Gija Jumulu's story states in its first line that the boab did not grow in Kings Park (dug up in the Kimberley in 2008, trucked 3,200 km, replanted 20 July 2008), so no reader can discover the relocation elsewhere and feel misled; per_005 (Old Jarrah, Armadale) carries both its honest caveats in the prose, the approximate cross-street pin and the unconfirmed fencing, so it promises a sighting and not a walk to the trunk. Two trees have no published girth (per_004 Proclamation Tree, per_005 Old Jarrah) and both ask the reader for it. best_time set on 2 of 6: the boab's leafless winter trunk (bare silhouette, Jun-Aug) and the Fraser Avenue red flowering gum's scarlet summer (Jan-Feb). The four figs and the ringbarked jarrah get none.
+
+## 2026-08-19 - Sydney: 6 stories written (write pass)
+
+All 6 written. Two are living replacements and say so in their opening lines rather than trading on the original's fame: syd_002 (Quad Jacaranda) opens with "about nine years old", a 2017 clone of the 1928 tree that fell in October 2016, and syd_006 (Wishing Tree) is the 1930s replacement for the c.1816 pine removed in 1945, led by its own plaque admitting it will never match its predecessor. syd_004 (Vailele fig) rests on Hunter's Hill Council's register alone and the story keeps that visible, including that the c.1900 date is one council's reading of two photographs. No girth exists for any of the 6; syd_001, syd_004 and syd_005 ask the reader for one. best_time set on 1 of 6 (jacaranda flowers, late Oct-Nov); the rest are evergreen. NOTE for the merging session: two species names collide with names already published, and hard rule 9 fails the build on this. syd_001 has "Queensland Kauri Pine (Agathis robusta)" against the live "Queensland Kauri (Agathis robusta)", and syd_002 has "Jacaranda (Jacaranda mimosifolia)" against the live "Blue Jacaranda (Jacaranda mimosifolia)". Left unchanged here because a write pass changes no verified field; the stories use plain language and read correctly under either name.
+
+## 2026-08-19 - Frankfurt: 6 stories written (write pass)
+
+All 6 verified Naturdenkmal trees written and ready to merge; thin spots: frk_005 (eight-stemmed linden, Grüneburgpark) has no age and no established Tilia species, both stated in the prose as open questions for readers; frk_006's "second thickest tree in Frankfurt" claim came from a search summary only and was left out of the story. best_time set on 4 of 6 (lime blossom, dawn redwood and weeping beech autumn colour, copper beech spring flush).
+
+## 2026-08-19 - Las Vegas: 11 stories written (write pass)
+
+All 11 written; the whole page is thin by design and says so: no age is derivable for any of the 11 (each story states it and asks the reader), every pin is approximate at building or park level, lvg_007 and lvg_008 could not be geocoded to a building at all, and the 3 Winchester Park trees share one park-level pin with no confirmation newer than 2016 plus the July 2025 valley windstorm as an open alive-now question, all three carrying that caveat in the prose. best_time set on 1 of 11 (desert willow flowers); everything else is evergreen or has no sourced timing.
+
+## 2026-08-19 — Caserta and Naples pins (answering the 2026-08-18 WARN)
+
+The fresh-eyes review flagged six trees published as `confirmed` without a
+recorded basis. Checked all six against the MASAF register they cite:
+
+- Naples nap_018, nap_019, nap_020 are grounded: 17m, 1m and 2m from their
+  own register sheets (08, 18 and 03 of F839/NA/15), and for the cedar the
+  next entry in the same garden is a different species 41m away, so the
+  identification is unambiguous. The pins stand; each now carries a `notes`
+  sentence saying so, which is what was actually missing.
+- Caserta cas_013 (casuarina) and cas_014 (yew) were 32m and 19m from their
+  cited register points, and each sat nearer the OTHER's point than its own,
+  which reads as a swap rather than as imprecision. No basis for the move was
+  recorded anywhere. Both are back on the coordinate their own source gives.
+  The yew's address also claimed "the flower bed on the Via Alois side"; Via
+  Alois runs east of the square (14.3338) and the register puts the yew on
+  the west side (14.3322), so that description was dropped from the address
+  and the story rather than left contradicting the pin.
+  Open to correction: nobody has stood in that square for us. A reader who
+  has can settle which trunk is which in one message.
+- cas_012 (araucaria) sits exactly on its register point and needed nothing.
+
+## Eindhoven, 2026-08-22
+
+Opened from the Dutch LRMB register (Bomenstichting, attribution-only licence).
+7 trees, 6 flagged, 7 photos missing.
+
+What could not be settled:
+- **Age of De Gevlekte Zuiderling.** The Wereldboom foundation says planted
+  around 1760, the national register gives a band of 1820-1830. Both are on the
+  page; nobody has cored it.
+- **Is it still alive?** It was set on fire on 28 July 2022 and arborists put its
+  survival at 30 percent, with the answer not visible until spring 2024. The
+  register's 2024 edition still carries it and NOS reported thirty shoots grafted
+  into a living scaffold. Published with the question asked on the page.
+- **The Glorieuxpark beech.** The thickest beech in North Brabant stood in this
+  park and was felled after its crown collapsed in September 2013. That was a
+  green beech; ours is a copper beech and the register recorded it eleven years
+  later, so they are almost certainly different trees. Stated plainly on the page
+  with an invitation to correct us.
+- **Photos: none.** Not hunted this pass. Wikimedia has a Groendomein Wasven
+  category worth a viewing pass.
+
+Dropped from the shortlist: the Hungarian oak by the PSV stadium (Quercus
+frainetto, register nr 1697320). Real and visitable, but the register's history
+for it is generic species prose copied from ecotree.green and no second source
+turned up, so there was nothing to write. It stays in
+data/leads/eindhoven-register.json.
+
+## Apeldoorn and Tilburg, 2026-08-22
+
+Both opened from the Dutch LRMB register. Apeldoorn 8 trees, Tilburg 7, all
+flagged, no photos hunted.
+
+**Tilburg: a felled tree found in the register before it shipped.** The register
+carries a Dutch lime on the Heuvel with a planting band of 1600-1700. That tree
+was cut down in 1994 at roughly five hundred years old, after heavy public
+protest, and three descendants were planted on the rebuilt square on 26 March
+2009. It is blocked in data/leads/tilburg-register.json and must never be
+published. The register's own felled-entry regex could not catch it, because
+that regex reads the `history` field and this entry has none.
+
+That produced a rule, now in scripts/nl_candidates.py as `needs_alive_check()`:
+a candidate 200 years or older whose register history is empty or "onbekend"
+gets one web check before publishing. 58 percent of the 1,017 candidates across
+the 25 cities have no history at all, but only 24 of those are 200+ years old,
+so the check is affordable. `python3 scripts/nl_candidates.py <city> --risky`
+lists them and the ordinary brief marks them "<< CHECK ALIVE".
+
+Not settled:
+- **Apeldoorn.** Five of the eight stand inside Paleis Het Loo, which is a paid
+  site: palace and formal gardens on a museum ticket, the surrounding Paleispark
+  on a two euro day ticket. Stated per tree in `access`. Four of them are on the
+  alive-check list and were published on the register alone, on the reasoning
+  that a palace garden is intensively managed and a loss there would be recorded;
+  that reasoning is weaker than a check and is recorded here as such.
+- **The Woldhuis lime, Apeldoorn.** Banded 1600-1700 with no reasoning at all,
+  so it may be the oldest tree in the city or may not. The page asks readers for
+  a girth measurement at 1.30 metres, which is the number that would settle it.
+- **Photos: none for either city.** Not hunted this pass.
+
+### The in-flight.json merge driver, 2026-08-22
+
+data/in-flight.json conflicted on three separate rebases in one session, because
+a session and a night run were each claiming places at the same time. That is
+the normal case for a coordination file and not a disagreement, so it now has a
+git merge driver (scripts/merge_inflight.py) that unions the claims instead.
+
+One caveat worth knowing: the driver is wired in .gitattributes, which is
+committed, but git requires the driver itself to be registered in local config,
+which is not. On a fresh checkout run:
+
+    git config merge.inflight.name "union the in-flight claims"
+    git config merge.inflight.driver "python3 scripts/merge_inflight.py %O %A %B"
+
+Without that, git falls back to an ordinary conflict, which is exactly the old
+behaviour rather than a breakage.
+
+## Amersfoort, Enschede and Leeuwarden, 2026-08-22
+
+Three more from the Dutch LRMB register, 7 trees each, all flagged, no photos.
+
+**Two trees deliberately left out, both on the school rule.** Amersfoort's plane
+on the Sint Jorisschool schoolyard (Schimmelpenninckkade) and Enschede's oak at
+the Kottenpark Lyceum are both real, both old and both recorded as visitable.
+They stay leads, because a page telling adult strangers to walk onto school
+grounds is not something this site should publish, and no source says either
+site is genuinely open.
+
+**A register history that is wrong, caught before it was copied.** The entry for
+Amersfoort's copper beech at the St Franciscus Xavierius church says the church
+is "also known as De Krijtberg" and "plays an important role in Utrecht". The
+Krijtberg is in Amsterdam. The rest of the entry (church built 1881-83, so the
+beech predates it) is consistent with the tree's own band and is what the page
+uses. This is the register's fourth known error class, alongside wrong units,
+corrupt fields, double-counted twins and stale felled entries: **borrowed prose
+about the wrong building.**
+
+**Leeuwarden's oldest tree is dying and the register says so.** The copper beech
+at the Westerkerk had its rooting ground compacted in the 1990s, never recovered,
+and the register states it will in time have to be felled. It is alive now, so it
+is published, with that fact in the story and an argument for going sooner. If it
+comes down, the page needs updating rather than quietly leaving it up.
+
+Not settled:
+- **Photos: none for any of the three.** Leeuwarden's Prinsentuin and Enschede's
+  Ledeboerpark are both likely to have Commons coverage and are worth a sweep.
+- **Enschede's Het Bouwhuis trees** have no street address in the register at all,
+  only coordinates, so both pins are marked approximate.
+
+## Dordrecht, Zwolle and Ede, 2026-08-22
+
+Three more from the Dutch LRMB register, 7 trees each, all flagged, no photos.
+
+**Two real measurements captured, which is rare in this register.** Zwolle's
+plane on the Potgietersingel carries a measured height of 33.6 m and a girth of
+719 cm, both now in the data as `height_m` and `girth_cm` so they feed the
+generated thickest and tallest rankings. Dordrecht's black locust in Park
+Merwestein carries something better than a band: municipal research in September
+2020 dated it at 300 to 325 years, which agrees with the register's own
+1700-1750 band and is the firmest age on any Dutch page here.
+
+**Ede's oldest entry is a coppice stool, not a trunk**, and the page says so
+rather than presenting the band as the age of what you see. The register's
+1750-1800 describes when the stool was established; the stems standing on it are
+decades old. Worth remembering the next time a very old band turns up on sandy
+Veluwe ground, because coppice is the normal explanation there.
+
+Not settled:
+- **Dordrecht's Sorghvliet plane** stands on Landgoed Dordwijk, private ground
+  south of the city. The register records it as visitable and the access line
+  tells readers to check before setting out rather than promising them a walk in.
+- **Ede's Pampel oak** is inside Nationaal Park De Hoge Veluwe, which charges
+  admission. Stated in `access`.
+- **Photos: none for any of the three.**
+
+### A second gap in the felled-tree detection, 2026-08-22
+
+Alkmaar's thickest beech, nearly seven metres round in the Alkmaarderhout and
+originally three shoots planted together, was lost in the Poly storm of summer
+2023; about four metres of trunk still stands. The register says so in plain
+Dutch and its own regex missed it, because the word used is "gesneuveld" and the
+regex only knows geveld, gekapt, gerooid, omgewaaid, omgezaagd and verwijderd.
+It was caught one sentence before it would have shipped as the oldest tree in
+Alkmaar.
+
+EXTRA_FELLED in scripts/nl_candidates.py now covers gesneuveld, omgevallen and
+the phrasings that describe a surviving stump ("staat de stam nog", "stamrest",
+"alleen de stam"). Rescanning the whole register with it found 30 further dead
+entries the original regex missed, in Utrecht, Haarlem, Hilversum, Maastricht,
+Zutphen and elsewhere. None of them is on any published page: that was checked
+by coordinate against every Dutch city file, not by eye.
+
+Two dead trees found in one day, both in the top handful of candidates for their
+city, is the argument for never treating this register as clean.
+
+## Venlo, Deventer and Alkmaar, 2026-08-22
+
+Three more from the Dutch register, 7 trees each, all flagged, no photos.
+
+**A prefix collision caught by the build, not by me.** Venlo was generated with
+the id prefix `ven_`, which belongs to Venice, and two cities sharing a prefix
+overwrite each other's trees. Venlo is now `vnl_`, and `prefix()` in
+scripts/nl_to_research.py reads the published cities and picks a free one
+instead of taking the first three letters and hoping.
+
+**Deventer has the best-argued age on the site.** For the poplar called De Reus
+van De Worp the register dates from a photograph: a 1917 image of the Lange Laan
+in the Ossenwaarde shows the tree small and distant, clearly young, which rules
+out the older datings its girth would suggest. The Worpplantsoen itself is dated
+to a documented 1822 replanting made after the occupying French destroyed the
+old stock, with an earlier 1816 planting redone around 1820 to 1822 because
+drifting ice on the IJssel damaged it.
+
+**Alkmaar's oldest tree changed while the page was being written.** See the note
+above on the Poly storm.
+
+Not settled:
+- **The Steyl sequoia cluster.** The connection this page draws between the
+  missionary orders and three giant sequoias within a kilometre is inference
+  from the addresses, not something the register states. Said so on the page.
+- **Venlo's Vrijbroekweg chestnut** carries an age claim the register attributes
+  to an unnamed elderly passer-by, including a fire in 1870. Passed on as
+  hearsay rather than laundered into a fact; the page tells readers what scar to
+  look for if they want to check it.
+- **Photos: none for any of the three.**
+
+## The remaining eleven, staged rather than written, 2026-08-22
+
+Hidde: "prima zet ze maar klaar". 93 candidates are staged as READY leads and as
+write-pass input, by scripts/nl_stage.py, which generates both files from one
+selection so they cannot drift apart.
+
+**Two were folded into existing cities instead of getting pages.** Voorburg is
+3.6 km from The Hague's centre and Amstelveen 7.4 km from Amsterdam's, both
+inside the day-trip boundary, so their trees are staged as hag_023 onward and
+ams_033 onward. Each entry carries the instruction that the real place goes in
+the location fields and the true travel time in transport, and that the tree is
+never presented as standing in the bigger city. This avoids two thin suburban
+pages and adds seventeen trees to pages that already get impressions.
+
+**One school tree blocked automatically**, in Sittard-Geleen, using the wording
+data/block-reasons.json matches. nl_stage.py does this rather than leaving it to
+a writer to remember, because CLAUDE.md's school rule is about not sending adult
+strangers where children are and no register field can settle it.
+
+**A passcheck bug, found by staging Assen.** `--brief Assen` answered "ALREADY
+PUBLISHED as Apeldoorn". The register fallback in centre_from_registers() used
+bare substring containment, and "assen" is inside "kassen", the greenhouses of
+Paleis Het Loo, so two Apeldoorn entries centred the brief 55 km from Assen. The
+function's docstring already described this failure shape (graz inside Grazie)
+and the containment had been left in anyway. It is now word-bounded, and all
+eleven places are in data/city-coords.json so the verified table answers first.
+Regression checked against Graz, Melbourne, Naples, Apeldoorn and the cities
+opened today.
+
+**Stale research files removed** for eindhoven, apeldoorn and tilburg, published
+earlier the same day. `passcheck --pending` would have offered them to a write
+pass as unwritten work, which is the exact failure BRIEF_WRITING.md documents.
+Two pre-existing items remain and are not from this run: bari-verified.json has
+3 stories written and ready to merge, and nijmegen-verified.json is stale.
+
+## The species cards were choosing their own faces, 2026-08-23
+
+Hidde, on the Horse Chestnut card: he would not use that photo as a thumbnail.
+It was a close-up of a trunk with red survey paint ringing an old wound, which
+at card size reads as crude graffiti and which fails the Cadiz standard outright
+whatever it is used for: the tree is not the subject and the crown is not
+readable. That photo (vie_003, the Prater Hauptallee) is now `held`.
+
+**The cause is the second appearance of a lesson, so it is now a check.** On
+2026-08-21 he said the London Plane and Ginkgo cards were showing the wrong
+pictures, and `face_tree_id` was added to the species schema so a person could
+pin one. It was wired into the homepage shelves BY HAND and nowhere else, so
+/species went on taking the first photograph it happened to find, in whatever
+order the collection returned. That is the same failure CLAUDE.md already
+records for hearts and the sign-in dialog: parity wired by hand does not survive
+the page count.
+
+- `speciesFace()` in site/src/lib/images.ts is now the one helper, the missing
+  twin of `cityFace()`. Pin wins, then enough pixels, then landscape, then
+  widest.
+- `check_species_face_is_chosen()` in scripts/qa.py is the twelfth ratchet
+  check: any page drawing species cards must go through it or read
+  `face_tree_id`. Verified against the pre-fix file, which it refuses.
+- Horse Chestnut is pinned to hag_004, The Hague's Postzegelboom: whole tree,
+  autumn colour, people for scale, centred so it survives the crop.
+
+**How bad is the rest? Unknown, and that is the honest answer.** 79 species show
+a photo and 76 of them are still guessed. Three were sampled and two failed:
+this one, and European Beech, whose face is a woodland footpath with no tree in
+it (edi_009, which is a fine picture for its own entry, "The Tall Trees of the
+Hermitage of Braid", and useless as a species face). That distinction matters: a
+photo can be right for its tree page and wrong as a card, so the fix is pinning,
+not deleting.
+
+`python3 scripts/species_faces.py` lists every face for a viewing pass, the same
+shortlist pattern photo_gaps.py uses, and flags pins that do nothing. One is
+dangling already: Pin Oak points at apd_008, published this morning with no
+photograph.
+
+## Our own map style, and the app parity question, 2026-08-23
+
+Hidde asked which map Polarsteps uses and whether we can have it. They run
+Mapbox, on both web (GL JS) and mobile (Maps SDK), and their CEO's stated reason
+is "design control". The answer for us is that we do not need their supplier for
+that: a style is a JSON file over vector tiles, MapLibre reads the same format
+Mapbox GL JS does, and OpenFreeMap already serves us the tiles. Mapbox is free to
+50,000 web loads and 25,000 mobile MAUs a month and then costs real money at
+exactly the point where we would be succeeding, and it is a service a reader's
+browser talks to, so it is a hard rule 5 decision. Not needed, not taken.
+
+**What shipped: our own style.** scripts/build_map_style.py generates
+site/public/assets/map-style.json from positron. Same tiles, glyphs, sprite and
+attribution, so it is a restyle rather than a dependency. The case for it is
+measurable: positron spends 20 layers on roads and 1 on parks, and side by side
+at the Vondelpark it renders the park in the same grey as the buildings around
+it. For a site about trees standing in parks the basemap was hiding the content.
+Verified rendered at desktop and 375px before and after.
+
+**Also closed a real gap.** Every layer asserted that a map canvas EXISTS and
+none asked whether anything was painted into it, so a broken style or a dark tile
+host would have shown every visitor an empty rectangle with green pins floating
+on it while the whole pipeline stayed green. check_basemap() in smoke_test.py
+fails on our own style being missing, unparseable, layerless, glyphless or
+unattributed, and only WARNS when the tile host is down, because a check that
+turns the deploy red for somebody else's outage is one people learn to ignore.
+
+**The app cannot follow, and that is a decision he has to make.** The iOS app is
+MKMapView. MapKit exposes no control over land, water, park or road colour, so
+the web style cannot be ported to it. What was available was taken:
+`MKStandardMapConfiguration(emphasisStyle: .muted)` desaturates roads and labels,
+which is the same instruction in the only language MapKit speaks, alongside the
+POI filter that was already there. Real parity means moving the app to MapLibre
+Native so both surfaces render the same style file, which is a new dependency in
+the product (hard rule 5, his yes) and rework of the clustering that TreeMap.swift
+chose MKMapView for in the first place. Recorded here rather than decided.
+
+### Correction: offline was NOT "essentially ready", 2026-08-23
+
+DECISIONS.md's 2026-08-18 record of the paywall says of the four promises that
+"Offline is the one that is essentially ready, because the feeds carry
+everything but the pictures". That is true of the DATA and false of the MAP, and
+the promise sold is "Download interactive maps and routes to explore with
+confidence, even deep in the woods or abroad."
+
+Checked today: there are zero lines of tile-caching code in the app, no
+MKTileOverlay and no offline packs, and MapKit offers no API for any of it.
+Apple's tiles cannot be pre-downloaded and their terms do not permit caching
+them. Meanwhile `Feature.offlineDownload` already exists in Entitlement.swift
+with the ask "Keep this city in your pocket", and Profile.swift already sells
+"the whole map offline".
+
+So offline maps are not a MapKit feature we have not got round to. They are the
+one promise that the current renderer makes impossible, which turns MapLibre
+Native from a styling preference into the only route to a feature already
+written into the paywall copy and already surfaced in the app's own UI.
+
+Checked at the same time, because it would have been the blocker: OpenFreeMap
+place no limit on requests, allow commercial use, ask only for attribution, and
+publish weekly planet extracts in MBTiles. Nothing in the way.
+
+## The app's map on MapLibre: SOLVED 2026-08-24, and how
+
+Merged to main. The record below stands as written; what follows is the answer
+to the one thing it could not do.
+
+**MapLibre's own clustering is unusable here and it is not our data.** Six more
+hypotheses were tested on top of the four below: ingesting through a file URL
+(the path MapLibre's own clustering example uses), options stripped to
+`.clustered` alone, then each option removed one at a time, plus a source zoom
+range and a buffer. Every one gave the same single feature. The control that
+settles it: six bare points around Amsterdam with no properties at all, handed
+to a clustered source, rendered NOTHING, while the same six unclustered
+rendered six. No error is logged in any case.
+
+**So we cluster ourselves**, in `MapLayers.cluster`: a grid in world space
+sized to about sixty points on screen, recomputed once per whole zoom level.
+Cells of one emit the tree, cells of more emit a bubble. Panning is free,
+pinching costs one pass, and clusters stay put instead of swimming, which is
+what supercluster does too.
+
+**Three MapLibre behaviours found on the way, each silent, each logging
+nothing.** Any of them alone looks exactly like "the map is broken":
+
+| doing this | what happens |
+|---|---|
+| assigning `source.shape` | draws nothing; the source must be CREATED from a URL |
+| reusing a source identifier | it loads empty, so every rebuild takes a fresh one |
+| rewriting the same file path | MapLibre caches by URL and keeps the old contents |
+| a circle layer plus a text layer for bubbles | never paints, and once any feature matches it the WHOLE source stops rendering, leaves included |
+
+The last one is why the bubbles are symbol layers with the count drawn into the
+image. Symbol layers reading an `icon` attribute are the one thing on this map
+that has always worked.
+
+**And the inset on tree cards moved with it**, from MKMapSnapshotter to
+MLNMapSnapshotter, so no Apple map is left in the app. Two things that needed:
+the snapshotter burns its attribution into the bottom of the image, which on a
+72 point thumbnail is an unreadable clipped word lying across the map, so it
+renders taller and the strip is cropped (FOR HIDDE: attribution for these tiles
+now lives on the map screen only, which is a licence call and therefore his);
+and `zoom(forMeters:)` assumed a 375 point viewport, so a thumbnail opened five
+times too close and showed tarmac instead of a setting.
+
+**What is still open:** MapLibre's own compass (40 by 40) and attribution
+button (26 by 26) sit under Apple's 44, and offline is now possible and not yet
+built.
+
+## The record as it stood, 2026-08-23
+
+The port is on the branch `maplibre-map-wip`, not on main, and this is the
+record so the next attempt starts from what was learned rather than repeating
+it.
+
+**Working, verified on the simulator and photographed:** the app renders the
+website's own `map-style.json`, so both surfaces finally look like one product.
+All 1,406 trees draw with their own species silhouettes in our palette. Camera,
+route line, recentre control and tap-to-select behave.
+
+**Not working: clustering.** With `MLNShapeSourceOptionClustered` set, the source
+yields exactly ONE feature whatever is done to it, so a city shows a single pin.
+Turn clustering off and every pin appears, which is how it was isolated. Four
+hypotheses were tested and all four were wrong:
+
+| tried | result |
+|---|---|
+| a UIColor in feature attributes (invalid GeoJSON) | fixed anyway, no change |
+| `style.image(forName:)` as an existence check | fixed anyway, no change |
+| handing the source `MLNShapeCollectionFeature` rather than real GeoJSON | rewritten, no change |
+| clustering options as Swift Int/Bool rather than NSNumber | no change |
+
+Predicates were tried both ways, `cluster == YES` and `point_count > 0`, and
+neither matches, which fits a source that never produces cluster features at all.
+
+**One real fix worth keeping regardless:** MapLibre's zoom is defined against
+512-point tiles and the first version used the 256 figure from the web slippy
+convention, so every camera opened one level too close and a four kilometre view
+showed two. That looked exactly like broken clustering for an hour and was
+arithmetic.
+
+Clustering is why MKMapView was chosen in the first place, so main stays on
+MapKit rather than shipping a map that hides trees.
+
+**And a hazard that cost real time:** two sessions were editing this one checkout
+at once. Halfway through, `SpotSheet.swift` was staged as deleted and
+`SpotIntro.swift` removed from the working tree by the other session, which broke
+every build here until the work moved into a `git worktree` at HEAD. That is the
+fix for next time: build app changes in a worktree, not in the shared checkout.
+## 2026-08-18 - Caserta: 10 to 14 trees, a new free second walk
+
+Third city this session off `leads.py --ready`'s cheap-end shelf, and the only one worth doing carefully: Caserta's 32 READY-flagged leads turned out mostly NOT safe to ship on sight, unlike Krakow and Brussels. Sampled the whole list before touching anything: many carry real, unresolved problems the classifier's keyword matching cannot see (two registers disagreeing on species, coordinates 200-400m apart between MASAF and the Campania regional card, girth figures that are averages across a pair rather than measurements of either tree, trees below any reasonable size bar). None of those are the invalid "count/taste" reasons CLAUDE.md's ruling overturns; they are genuine unresolved-evidence problems, so they stay leads.
+
+Shipped the two candidates with a clean data trail. The Third Plane of the English Garden (cas_011) was held back only for being a third plane on the page, register-clean otherwise (MASAF and Campania agree exactly on 560cm girth), so ships per the same repetition-is-not-a-reason ruling used on Krakow and Brussels. The Piazza Vanvitelli trio (cas_012-014, a monkey puzzle, a casuarina and a yew, all within 50m in Caserta's own town square) was recorded single-sourced in the leads file; found and confirmed the missing second source this pass (Campania regional register cards scheda_48/49/50, fetched directly rather than trusted from a search summary), which matched MASAF's girth figures for all three exactly. This is a genuinely valuable addition: Caserta's other 11 trees all sit inside the Reggia's paid English Garden, and these three are free, in the town centre, and form their own short walk (0.1km, all three trees essentially adjacent).
+
+Caught a hard-rule-9 species-name collision at build time: Casuarina equisetifolia was already published in Cordoba as "Horsetail Casuarina", not "Casuarina"; fixed before the second build. Updated intro, meta_description and two FAQ answers to describe two clusters instead of one (the old copy said "all in one place, and it is not the town", now false). Build and `qa.py` green (1784 pages, 2082 checked), `superlatives.py` clean (386 claims). Ran `tree_index.py`. Claimed and released `caserta`.
+
+## 2026-08-18 - Brussels: 20 to 23 trees, more of the READY leads shelf
+
+Same rule 1(a) pass as Krakow above, second city. `leads.py --ready` listed 6 Brussels candidates; picked the 3 with the strongest basis and left the rest (a shrub-scale holly, a group with an unclear per-tree girth, and a maple whose register health rating flags "middling defects" needing a check first) as leads rather than force a full sweep. The second Turner's Oak of Parc d'Egmont (register 649) was held back only because "two Turner's oaks four hundred metres apart would read as one entry told twice"; the already-published bru_011 already names it directly ("A second, taller Turner's oak grows a few minutes away on the same lawns"), so this was always known-good, just unwritten. Caught Wood Wide Web's atlas page conflating this tree's measurements with bru_011's own (already flagged in bru_011's own notes); used only the register-sourced figures, not the page's mixed prose. The White Mulberries pair was held back only for duplicating bru_009's species, also an invalid reason; dropped an unverified claim from the leads file about a Belgian silk industry rather than repeat it unchecked (no independent source found this pass). The Turkish Hazel of the Grand Sablon ships single-sourced and flagged, per Step 2's explicit allowance for one source.
+
+Recomputed the walk: the new trees fall inside the existing Egmont cluster's radius (900m), producing one 13-tree, 1.0km walk that also absorbs the Grand Sablon hazel (the two locations are about 400m apart in reality). Left it as one walk rather than forcing a split: CLAUDE.md's "four to eight trees" guidance describes typical shape, not a hard cap, and `walk_planning.py` itself clusters by distance, not tree count. Fixed two count-promise breaks preflight caught (question_meta and one FAQ answer still said "twenty" after the count moved to 23). Build and `qa.py` green (1780 pages, 2078 checked), `superlatives.py` clean. Ran `tree_index.py`. Claimed and released `brussels`.
+
+## 2026-08-18 - Krakow: 10 to 16 trees, writing off the READY leads shelf
+
+Followed the course's rule 1(a) (cheapest supply: write what is already verified) via `scripts/leads.py --ready`, which listed 4 Krakow leads as publishable. Checked each against current doctrine rather than trusting the old verdicts: all four had been held back in an earlier pass for reasons CLAUDE.md's 2026-08-10 ruling now forbids (cut for count, ninth-in-line, a taste judgement about an invasive species being "just a curiosity"). None of those are valid reasons to hold a tree back, so all four ship.
+
+Also found, while reading the leads file directly: two more Krakow leads (Sikorskiego Square Oak, Tarlowska Lime) were misclassified as DONE by `leads.py`'s own resolved-marker regex, a false positive on "shipped as kra_009" / "shipped as kra_007" appearing in a *comparison* sentence about a different, already-published tree, not a self-resolution marker. Confirmed by coordinate check that neither is actually published. Not fixing the regex this pass (fails safe, only hides candidates rather than double-publishing), but noting it here since it is worth a check in `leads.py` if it recurs elsewhere: the DONE marker should not fire on "shipped as <id>" when <id> belongs to a different tree's story, not this entry's own resolution.
+
+Verified all six new trees against a second independent source before writing: the GDOS/CRFOP national register (already licensed, same source as kra_005-010) cross-checked against Polish Wikipedia's reproduction of Krakow's own registry list, which also supplied exact street addresses (ul. Studencka 25, Plac Kossaka 4, ul. Batorego 12 and 14, Plac Sikorskiego, ul. Tarlowska, ul. Swietego Jana 30) that the leads file itself didn't carry. Ages derived by scaling girth against an already-published same-species same-register Krakow tree only where one existed (Studencka Plane against kra_005, Kossaka Ash against kra_006, Tarlowska Lime against kra_007); left empty for the standard-form oak, the ginkgo and the tree of heaven, since no safe same-cultivar/same-species growth factor was available (kra_009 is a columnar cultivar, not a valid proxy for a standard oak) and Ailanthus's growth rate is documented in `data/species/tree-of-heaven.json` as too fast and site-dependent to date off girth at all.
+
+Shipped the Batorego oak and ginkgo (ul. Batorego 14 and 12, ~20m apart) as one entry rather than two, since only one coordinate point was available for the pair; marked `location_precision: approximate` for that reason, `confirmed` for the other five (register GPS points, same source and precision as the already-published trees on this page).
+
+Recomputed the walk directly rather than trusting old copy: two new short walks, 7 trees/1.8km (Stare Miasto south, absorbing the Planty-ring trees plus the three new ones) and 5 trees/1.4km (Stare Miasto north), plus the existing 3-tree botanical garden cluster and the standalone Henryk Oak. Rewrote intro, meta_description and the "one walk" FAQ answer to match; oldest-tree answer (Henryk Oak) unchanged, still correct after checking every new age against it. Build and `qa.py` green (1777 pages, 2075 checked). `preflight.py` clean (133 cities). Ran `tree_index.py` (45,874 trees tracked, 1340 highlighted, up from 1334). Released the `krakow` claim.
+
+## 2026-08-17 - Lisbon: a "worth it" vote on lis_005, no action needed
+
+Submission #6 (Supabase `submissions`, kind `feedback`) was a reader's "worth it" vote (thumbs up, no report chip) on lis_005, the Tipu of Jardim de São Bento, Lisbon. Unlike the Helsinki and Prague feedback rows, this carries no complaint to check against sources, just a positive signal, stored per the vote design (DECISIONS.md 2026-08-14) and shown nowhere until volume makes a count honest. Nothing to verify, nothing changed in `data/cities/lisbon.json`. Marked processed in `data/submissions-processed.json`.
+
+## 2026-08-17 - The photo hunt for the 35 photo-less cities is measured out, and the finding is that the pictures do not exist
+
+Hidde asked for at least one photograph per city. A viewing pass worked the ranked shortlist and the result is worth recording rather than repeating: **of eight candidates judged across two sessions, two shipped.** Brisbane's Bodhi Tree and Alicante's Ficus del Passeig de Canalejas are live; one more is `held`.
+
+**What the six rejections were, because the pattern is the point and only one of them was about picture quality.**
+
+| city | candidate | why it failed |
+|---|---|---|
+| Copenhagen | the Pacifier Tree, CC0, well exposed | **the wrong tree**, in Ostre Anlaeg, three kilometres from ours in Frederiksberg Have; Denmark has several |
+| Cagliari | "Albero secolare, vista frontale" | trunk not visible, and the sweep had attached the same file to two different trees |
+| Catania | the botanical garden's dragon tree | the subject is the garden's entrance; the tree is a dark rim along the top |
+| Perugia | "Giardini del Frontone.JPG" | statues, event chairs and a dog, trees as scenery |
+| Toulouse | the Terre-Cabade hackberry | POOR on `photo_light.py`: flat, almost colourless |
+| Montreal, Groningen | iNaturalist observations, right species, geotagged | **a hand holding a single leaf.** iNaturalist is an identification platform and its photographs are identification photographs |
+
+**The conclusion, and it is a dead end worth writing down rather than re-running.** For these cities Commons and iNaturalist do not hold a photograph OF the individual tree. The filename can be made to score better and it changes nothing, because the picture a tree page needs was never taken. Poznan's "Krzysztof the Oak" matches a photograph of a politician named Krzysztof; Rotterdam's "Wilhelmina Linden" matches an archival portrait of the queen. Those are not tuning problems.
+
+**What remains, in order of cost.** (1) `data/leads/_famous-*.json`: **929 famous trees we do not map, 926 arriving with a photograph already attached.** Adding a tree that brings its own picture is cheaper than hunting a picture for a tree nobody photographed, and it adds a tree people have heard of. Two of Denmark's sit 12 and 13 km from central Copenhagen, inside the day-trip boundary. (2) Reader submissions, which is the standing flywheel. (3) Partner and permission sources.
+
+`scripts/photo_gaps.py` now carries every filter these rejections earned: archival dates, non-tree words, a required plant word in the TITLE rather than in the Commons categories (which include "Trees in X" almost regardless of subject), and iNaturalist demoted from a bonus to a penalty.
+
+## 2026-08-17 - Helsinki: a "not worth it" vote on hel_006, checked and left as is
+
+Submission #5 (Supabase `submissions`, kind `feedback`) was a reader's "not worth it" vote on hel_006, the Meilahti Ancient Pine, no free-text reason and no specific complaint (unlike Prague's earlier "wrong location" chip). Re-checked both cited sources (kirkkojakaupunki.fi, hel.fi) and both still resolve and still support the story as written: a real, ring-dated ~340-year-old pine beside a Bronze Age burial cairn. Nothing factually wrong to fix. The page's own known weaknesses (no photo, `location_precision: approximate`, `curation_status: flagged`) likely explain a "not worth the trip" reaction better than any error would, and are already tracked as an honest gap rather than something this vote newly discovered. Single low-volume signal, not narrated as a trend per the digest rule. Marked processed in `data/submissions-processed.json`, nothing changed in `data/cities/helsinki.json`.
+
+## 2026-08-17 - Graz closes to 10: the Eggenberg lead from this morning's pass pays off
+
+Second Graz verify pass, closing the gap from 8 to 10 using the Eggenberg Schlosspark lead the first pass had already scouted and left in `data/leads/graz.json`. Of ten designated trees at one address inside the UNESCO World Heritage palace park (5 planes, 4 Weymouth pines, 1 copper beech), only two carried individual documentation strong enough to ship: a Weymouth pine with a real 2016 field measurement (girth 370cm) and a copper beech corroborated by a GPS-tagged 2014 Commons photo matching the register point exactly. The other eight share an address and a 1979 protection date but no individuating record, correctly left as one avenue rather than eight near-identical entries, per the collectible-point rule. Both new trees are paid entry (the park charges), the first exception to Graz's otherwise free page, stated honestly in `access` and in the FAQ.
+
+Updated intro, meta_description, question_context and all four FAQ answers for the ten-tree count and the two-cluster structure. Build clean (1704 pages), qa.py clean apart from the pre-existing sitemap warning, superlatives.py clean. Cost: 128,178 tokens verify for 2 trees. Claim released.
+
+## 2026-08-17 - Warsaw's Sowinski's Linden retired: officially delisted as dead since 2012, published anyway on an unchecked listicle
+
+A verify pass dispatched to close Warsaw's gap of 5 (register: Poland's national GDOS list carries almost no metadata, 3259 points near Warsaw, solved with the same Polish-Wikipedia join technique that worked for Krakow on 2026-08-16) surfaced something more important than new supply: the Wikipedia reproduction of Warsaw's own official register states, for the monument named "Lipa Sowinskiego" at Wola/ul. Wolska (the fortification embankment), that it was **blown down by wind in 1986, searched for and not found in a 2004 field survey, and formally delisted in 2012**. That location matches already-published war_003 (Sowinski's Linden, Park Sowinskiego, the Reduta Wolska embankment) closely enough to be the same monument.
+
+**Checked directly rather than left for a later pass, per the standing rule that a tree reported dead gets verified and removed the same day.** Re-fetched both of war_003's own cited sources. warszawawpigulce.pl (a general "oldest trees of Warsaw" listicle) does describe a living ~190-year-old linden by this name, present tense, no mention of any 1986 windfall, exactly what got published. The second cited source, the Polish Wikipedia "Reduta nr 56" article, does not mention the linden at all, so the story's implicit two-source backing was really one source plus an unrelated historical-context article. Against that, the GDOS/Wikipedia register entry is a dated, specific, government record including a documented 2004 field search that failed to relocate the tree. On balance of evidence, war_003 was published from an outdated or simply wrong source, never checked against the official register.
+
+**Retired.** Removed from `data/cities/warsaw.json` (was 5 trees, now 4 remaining plus 3 new = 7). Old URL kept resolving per hard rule 3: added to `REMOVED_TREE_SLUGS` in `site/src/lib/redirect-map.ts` (`warsaw/sowinskis-linden`), redirects to the city page. No replacement tree took its id or its story; the 3 new Warsaw trees below are independent finds, not substitutes.
+
+**The same pass delivered 3 new trees, cleanly sourced.** The Royal Oaks of Lazienki (war_006, two pedunculate oaks in the king's Romantic Garden, register + the palace museum's own "oldest trees" page, girth 450cm each, roughly 200 years). King Jan's Linden (war_007, Wilanow palace park, register + the palace's own monument-tree inventory confirming it alive among 27 of 28 living; the Sobieski-planting legend is named but not bridged into an age for this specific tree). Niemcewicz's Walnut (war_008, Krasinski Palace on the SGGW campus, register + a dedicated Wikipedia article on the palace itself citing Warsaw city hall's register, corroborated by a 2023-dated Commons photo; grounds only reopened to the public in 2025 after nine years of campaigning). All three flagged, all `location_precision: confirmed`, ages left honestly undocumented where no source gave one.
+
+Leads recorded for a future pass: the Szustra Oaks (5-oak cluster, access to the palace-side alley unresolved), the SGGW Oak (register-only, no second source found), the Karol Oak (too far, would start a new cluster), and a Wawer-district 5-tree micro-cluster 7-9km out. One blocked (Cis Starynkiewicza, a working water-filtration station's grounds, ticketed-tour-only access). Build clean (1702 pages, redirect stub count 285 to 286), qa.py clean apart from the pre-existing sitemap warning, superlatives.py clean (371 claims). Cost: 166,992 tokens verify for 3 trees plus the dead-tree find. Claim released.
+
+## 2026-08-17 - Como stays at 9/10, genuinely thin, and the resurfacing bug behind it gets fixed
+
+Como was staged (gap 1) and looked cheap (76 register candidates within 20km), but a verify pass found all 7 unmined-looking candidates near the existing walk were exact-coordinate matches to entries already blocked or held by the 2026-08-15 pass (Villa Saporiti's plane/magnolia/arbutus trio, Villa Erba's plane avenue, Istituto Ugo Foscolo's cedar), correctly not re-researched. 0 new trees; Como's remaining gap is genuinely an access question (Museo Giovio's courtyard still closed for renovation, Via Baserga still leaning private on a 2026 aerial-imagery check), not a supply shortage.
+
+**The resurfacing itself was a real, now-fixed bug, and Como's own leads file had already logged it once before without a fix landing.** `scripts/passcheck.py`'s `mined_points()` only read `lat`/`lng` and `location.latitude/longitude`; three of Como's blocked entries used `coordinates_lat_lng` and `coordinates_lat_lng_sample` instead (one entry covering three physically distinct trees at Villa Saporiti as a list of pairs), invisible to the dedupe. A repo-wide check found 17 more entries across 6 other cities using a third shape, a flat `coordinates: [lat, lng]` pair, including this run's own freshly written Bratislava leads. Fixed (commit 2c1256e): `_extract_coords()` now reads every shape in the corpus, one point or several. A second bug surfaced fixing the first: the same-tree genus safety check took the first word of a species string, which breaks the moment a blocked entry names several species in one combined field (Villa Saporiti's "American Sycamore (Platanus occidentalis), Southern Magnolia..." extracted to genus "american", matching nothing); `_genus()` now returns every genus named in parentheses and the check is set intersection. Verified end to end: Como's brief now correctly shows the Villa Saporiti trio as BLOCKED rather than fresh.
+
+Cost: 90,259 tokens for 0 trees, logged honestly with `brief_wrong: true` since the resurfacing was the root cause. Claim released.
+
+## 2026-08-17 - Alicante closes to 10: a fig at the railway station forecourt, checked against an active construction zone next door
+
+Alicante was staged with a gap of exactly 1 (9/10). Verify pass found the one candidate an earlier pass had flagged promising but unresolved: three Ficus macrophylla registered beside Alicante's main railway station facade. Shipped the largest (register_id 3096, 6.9m girth, 28m tall) as ali_010, cross-checked against three independent sources (the city's own monumental-fig information-panel programme, independent press, and a 2026 redevelopment report) confirming a public station-forecourt location. One real risk caught and resolved rather than ignored: the immediately adjacent Plaza de la Estrella is, per an April 2026 news report, a fenced construction site for the Parque Central project; the register's coordinates for this tree sit on the station forecourt itself, about 28m from that fenced lot, so it shipped with the caveat stated honestly in `access` rather than hidden. Two companion figs from the same trio (7m and 58m away) held as leads to avoid fragmenting one small grove into near-identical entries, matching the existing 300/302 Parque de Canalejas precedent.
+
+Updated intro, meta_description (still said "Nine" after an earlier tree was added, caught and fixed), question_context and the "can I see them all" FAQ answer for the tenth tree and its position relative to the existing three clusters (city centre, Benalua, and now the station forecourt, close enough to Benalua's pair to fold into the same southern outing). Preflight caught the question_context running 20 words over Contract B's ceiling, trimmed. Build clean (1700 pages), qa.py clean apart from the pre-existing sitemap warning, superlatives.py clean. Cost: 116,808 tokens verify for 1 tree. Claim released.
+
+## 2026-08-17 - Graz opens, the first Austrian city, and a real tooling bug fixed along the way
+
+Staged as a new city (rank #82, gap 10, register 87 unmined candidates), but the generated brief centred on Ancona, Italy (43.70,13.90) rather than Graz, Austria (47.07,15.44). Traced the bug before dispatching anything: `scripts/passcheck.py`'s `centre_from_any_name()` did a naive folded-substring search of register place names, and "graz" is a substring of the unrelated Italian place name "Grazie" (as in Madonna delle Grazie), no word boundary. Fixed by preferring the verified `data/city-coords.json` table over the register-substring heuristic (commit 4a2d439); the register search stays as a fallback for places not yet in that table, which is the case it was built for (Melbourne's suburb-filed entries). Re-briefed, correctly centred, 90 candidates from `graz-naturdenkmale.json`.
+
+Verify pass delivered 8 trees, cross-matched against Wikipedia's independently maintained "Liste der Naturdenkmaler in Graz" for each register entry: a maple on the Schlossberg hill, three trees (one oak, two planes) in the Volksgarten park, a field maple in the Augarten with a documented 1956 citation giving it a 70-year age floor, a plane on Schillerplatz corroborated by a dated 2014 Commons photo, and two oaks on Panoramagasse protected the same day in 1979 with real 2015 field-measured girths (2.80m and 4.90m, nearly double).
+
+**Caught a second real error before shipping, this one in the delivered data itself: grz_005's coordinates were a copy-paste of grz_002's (1.9m apart), not the register's actual point for that entry.** Checked the raw register file directly (register_id 38: 47.062255,15.437708, about 1km from the wrong coordinate used) and independently re-fetched Wikipedia's own geocode for the same Naturdenkmal entry (47.062233,15.437672, agreeing within 5m of the TRUE register point), confirming the underlying two-source verification was sound and only the transcription was wrong. Fixed before merging. Also caught at build time: two hard-rule-9 species-name collisions (London Plane's common name against London's existing "London Plane, Baobab Group" entry, and the Latin binomial Platanus x hispanica against the site's established Platanus x acerifolia), both standardised to match.
+
+2 candidates blocked outright (a kindergarten, a state youth-care home, both hard rule 10). 5 leads recorded, the strongest a 9-tree cluster in the Eggenberg Schlosspark (UNESCO World Heritage palace grounds, paid entry, ~3.5km from centre, independently corroborated by monumentaltrees.com) for a follow-up pass. Build clean (1698 pages), qa.py clean apart from the pre-existing shallow-clone sitemap warning, superlatives.py clean (371 claims). Cost: 188,894 tokens verify + 0 session tokens write for 8 trees. Claim released.
+
+## 2026-08-17 - Bratislava opens, the first Slovak city, 5 trees on a 1.7km walk
+
+Staged as a new city with 31 register candidates within 20km, 19 of them inside 1.5km of each other, from Slovakia's state register of protected trees (CC BY 4.0, licence already verified in data/registers/slovakia-chranene-stromy.json). Claimed, dispatched a verify pass. It delivered 5 verified trees, clearing the 4-tree floor: a Japanese pagoda tree on the Danube embankment (register plus an independent Slovak protected-trees resource, age derived from the register's 80-years-at-1996 figure), an ash on Rudnayovo Square in front of St. Martin's Cathedral (register plus a 2026 news roundup, no age found by either source, left honest), an Empress Tree in a volunteer-rebuilt neighbourhood park (genuine age conflict between two sources, 60 vs 150 years, both stated rather than one picked), an Adriatic oak at the edge of the Šulekova public stairway (base sits at a private-plot boundary per the register's own text, access worded honestly: view from the steps), and a small North American paper birch on an ordinary street. All five chain into a walk spanning 1.69km end to end, well within the 2km rule of thumb.
+
+Caught along the way: one register entry (a wild service tree at Devín, S 495) is confirmed dead by a 2020 hiking.sk article the register itself has not caught up with, exactly the register-lag problem CLAUDE.md warns about; recorded blocked rather than shipped. Several more candidates sit in private gardens ("v záhrade") or a hospital's gated grounds and are held as leads with dated notes, not researched further.
+
+Wrote all 5 stories directly in session (a 5-tree new city was not worth spinning up a separate write-stories batch) plus intro, meta description, question page and FAQ. Build caught one real error before it shipped: the Empress Tree entry was drafted as "Princess Tree (Paulownia tomentosa)", a second common name for a species Milan already publishes as "Empress Tree", tripping hard rule 9's one-canonical-name check at build time. Fixed to match Milan's existing name. Preflight, build (1688 pages), qa.py (clean apart from the pre-existing shallow-clone sitemap warning) and superlatives.py (371 claims, no collisions) all clean. Cost: 148,605 tokens verify + 0 session tokens for the write (not metered) across 5 trees. Claim released.
+
+## 2026-08-17 - Lyon closes to 10: a rare street oak in Villeurbanne, register plus an independent 2025 corroboration
+
+Lyon was staged for verify with a gap of exactly 1 (9/10 live) and 425 register candidates within 20km, the cheapest possible move on the queue. Claimed, dispatched a verify pass. It found lyo_011, a pedunculate oak (Quercus robur) at the corner of Rue Viret and Rue Francis de Pressense in Villeurbanne (Gratte-Ciel/Les Poulettes), 1.4km from the existing Tete d'Or cluster. Two independent sources: the Metropole de Lyon's own PLU-H remarkable-tree register (register_id 4183, calling the species genuinely rare for Villeurbanne street planting) and a 2025-08-26 Mediacites investigative piece that independently names this exact tree at this exact corner while mapping the same database, serving as the alive-now evidence 8 years after the register's 2017 survey. No age or girth documented by either source; `age_estimate` left as "not documented" rather than invented, per Step 2. Story written directly in session since it was a single tree, not worth spinning up a full write-stories batch. `location_precision: confirmed`, photo missing (no photo hunting in a verify pass).
+
+Two leads recorded (single-source only, both close to existing trees so worth a second look if corroboration turns up): a hickory/Carya at Jardin des Chartreux (register's own species field is corrupted, "Juglans ovoida" is not a valid taxon) and a red oak at Square Gustave-Auguste Ferrie. Three Cedars of Lebanon blocked outright, all sitting in named private gardens per the register's own condition text (hard rule 10).
+
+Fixed Lyon's FAQ ("All nine stand..." to "All ten are free to see..."), caught by `scripts/preflight.py`. Build clean (1681 pages), `qa.py` clean apart from the pre-existing shallow-clone sitemap-lastmod warning, `superlatives.py` clean (371 claims). Cost: 143,775 tokens for 1 tree, logged to `data/agent-costs.json`. Claim released.
+
 ## 2026-08-16 - Guimaraes verify pass: both flagged camellia leads still fail hard rule 10
 
 Dispatched a verify pass (109k tokens) to close Guimaraes's gap of 4 (6 live, target 10), claimed via passcheck.py first. All 23 "unmined" ICNF register candidates within 20km matched, by coordinate, to trees already published or to the Casa da Penha arboretum already blocked by an earlier pass as a non-collectible inventory (not re-litigated, per "never re-litigate a decision"). That left the two leads an earlier pass had flagged "genuinely remarkable": the Camellias of Casa de Margaride (rare 18th/19th-century cultivars, Portuguese Tree of the Year 2024) and the Camellia of Casa da Covilha (the register's single oldest dated tree in the whole Guimaraes set, 300 years).
