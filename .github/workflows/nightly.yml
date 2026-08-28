@@ -217,6 +217,16 @@ jobs:
           CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Without this the action REFUSES any run a bot started: "Workflow
+          # initiated by non-human actor: github-actions (type: Bot)", exit 1
+          # in 38 seconds. Found 2026-08-28, and it means the mutual watchdog
+          # in data-digest.yml has never once worked: every rescue it dispatched
+          # used GITHUB_TOKEN, so every rescue was refused on arrival. Four of
+          # them failed that way in five minutes the morning this was found. The
+          # only actor allowed is the repo's own Actions bot; a bot cannot reach
+          # this workflow from outside, because dispatching it needs a token for
+          # this repository.
+          allowed_bots: "github-actions[bot]"
           prompt: |
             You are running the autonomous research workflow for the Ancient Trees
             project. Read CLAUDE.md in the repository root and execute "The research
@@ -531,6 +541,7 @@ jobs:
           CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          allowed_bots: "github-actions[bot]"
           claude_args: |
             --allowedTools "${{ env.CLAUDE_ALLOWED }}"
             --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
