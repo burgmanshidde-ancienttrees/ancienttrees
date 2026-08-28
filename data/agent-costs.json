@@ -3706,6 +3706,15 @@
     "note": "Deepen pass found zero new candidates: every near-centre register entry (Ficus Gabriel Miro I-IV, Ulmus minor cluster, Canalejas/Portal de Elche group, station forecourt, etc.) already triaged published/lead/blocked by 3 prior passes (08-15, 08-17, 08-23, 08-26). Remaining 5 unaddressed register rows (12.2-19.9km) are isolated, past the day-trip boundary, or belong to Elche not Alicante (Garrofera del Escondite, register 3561). Alicante is genuinely exhausted at its current radius.",
     "wasted": 18000,
     "brief_wrong": false
+   },
+   {
+    "target": "photo API sweep",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Free Commons/iNaturalist API sweep (scripts/photo_hunt.py --recheck), no viewing/approval done here (this runner cannot reach upload.wikimedia.org). Queue now 1133 trees swept, 607 with at least one open-licence candidate, for a future viewing pass in a session.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
