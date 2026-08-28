@@ -495,6 +495,47 @@ def pages_table(pages):
     return "\n".join(rows)
 
 
+
+def zero_click_queries(pages, pairs):
+    """What the cities that earn impressions and no clicks are shown FOR.
+
+    The depth table names them, and until 2026-08-28 nothing said why. The
+    seen-not-clicked list is per PAGE, and a city's impressions are spread
+    across its tree pages, so a city can carry 214 impressions at zero clicks
+    while no single page of it reaches the list at all. Milan, Vienna and
+    Madrid were named in the weekly analysis and none of the three could be
+    diagnosed from this file.
+
+    Aggregating the same pairs by CITY answers it, and the answer decides what
+    kind of problem it is: local-language queries an English page will never
+    win are a translation job, wrong-intent queries are a targeting job, and
+    right-intent queries at a good position are the only case where rewriting
+    a title is the fix."""
+    if not pairs or not pages:
+        return []
+    by_city = {}
+    for r in pairs:
+        lang, city = split_path(r["keys"][0].replace("https://ancienttrees.app", ""))
+        if lang != "en" or not city or city in ("app", "explore", "cities", "contribute",
+                                                "privacy", "account", "species",
+                                                "collections", "countries", "parks"):
+            continue
+        d = by_city.setdefault(city, {"imp": 0, "clicks": 0, "q": []})
+        d["imp"] += r["impressions"]
+        d["clicks"] += r["clicks"]
+        d["q"].append((r["impressions"], r["keys"][1], r.get("position", 0)))
+    worst = [(c, v) for c, v in by_city.items() if v["clicks"] == 0 and v["imp"] >= 60]
+    if not worst:
+        return []
+    out = ["", "**Cities seen but never clicked** (60+ impressions, zero clicks, with"
+               " what they are actually shown for):", ""]
+    for city, v in sorted(worst, key=lambda t: -t[1]["imp"])[:8]:
+        top = "; ".join("%s (i%d, p%.0f)" % (clean_query(q), i, pos)
+                        for i, q, pos in sorted(v["q"], reverse=True)[:4])
+        out.append("- %s (i%d): %s" % (city, v["imp"], top))
+    return out
+
+
 def gsc_section(gsc):
     if gsc is None:
         return ("Search Console: GSC_* secrets not configured; section skipped.", None)
@@ -587,6 +628,7 @@ def gsc_section(gsc):
         gap_line,
         *demand_lines(pages, pairs),
         *language_lines(pages),
+        *zero_click_queries(pages, pairs),
         *leak_lines,
     ]
     return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
