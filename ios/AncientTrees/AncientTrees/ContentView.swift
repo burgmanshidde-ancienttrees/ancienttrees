@@ -451,20 +451,22 @@ struct ContentView: View {
                     if let new { rootSheet = .signIn(new); nudge.pending = nil }
                 }
                 // WHICH MAPS APP, asked once, from the ROOT. Presented here
-                // rather than from the button for the same reason the sign-in
-                // ask is: Take me there exists on a tree page, on the pushed
-                // map and inside walk mode, and a dialog attached to each would
-                // be three dialogs to keep in step. Anchoring matters too. iOS
-                // 26 draws a confirmationDialog attached to a control as a
-                // popover and silently drops every button carrying
-                // role: .cancel, which is how a destructive confirmation
-                // shipped with no way out (2026-08-27). From the root it is an
-                // ordinary action sheet and Cancel survives.
-                .confirmationDialog(
+                // rather than from the button because Take me there exists on a
+                // tree page, on the pushed map and inside walk mode, and a
+                // dialog attached to each would be three to keep in step.
+                //
+                // AN ALERT, NOT A confirmationDialog, and the first version was
+                // the second one. iOS 26 draws a confirmationDialog as a
+                // floating card and silently drops every button carrying
+                // role: .cancel: the sweep photographed this question with
+                // Apple Maps, Google Maps and no way out, which is the same
+                // fault a destructive confirmation shipped with on 2026-08-27.
+                // Presenting from the root was supposed to avoid it and does
+                // not. An alert renders every button it is given.
+                .alert(
                     "Open directions in",
                     isPresented: Binding(get: { directionsAsk.pending != nil },
-                                         set: { if !$0 { directionsAsk.pending = nil } }),
-                    titleVisibility: .visible
+                                         set: { if !$0 { directionsAsk.pending = nil } })
                 ) {
                     ForEach(Directions.MapsApp.allCases) { app in
                         Button(app.label) { directionsAsk.answer(app) }
