@@ -239,6 +239,28 @@ jobs:
             Reader submissions outrank everything. Something published being wrong
             outranks everything below it.
 
+            YOUR FIRST DISPATCH IS WORK, NOT PREPARATION. Once the ladder has
+            named your rung, the next Task you dispatch must be one that
+            produces trees: a verify pass or a write pass, off the shelf
+            prepare.py just printed. Not a claim, not pagegaps, not a survey of
+            what could be done. Claiming a city is the note you leave BEFORE
+            doing work; a run that ends holding claims and no trees has left a
+            note and gone home, and it also blocks the top of the queue for the
+            next knock.
+
+            This is a runner fact, not advice, and it is measured. Every
+            zero-tree run since 2026-08-15 ended the same way: is_error false,
+            47 to 122 turns, one claim commit, an hour and three quarters of a
+            two-hour window handed back. The 2026-08-28 05:28 run is the clean
+            example: 114 turns, 12.6 minutes, four cities claimed, four verify
+            passes dispatched of them ZERO. Nothing stopped it. It did the
+            paperwork for work it never started.
+
+            So: if you reach turn 30 without having dispatched a verify or write
+            agent, stop whatever you are doing and dispatch one. And when a pass
+            comes back merged, go straight to the next one. The window ends when
+            the clock or the usage limit says so, never when one item is done.
+
             WHAT KIND OF WORK, and this prompt deliberately does not say. Read
             CLAUDE.md's "The course after the fortnight" paragraph in Step 0 and
             follow it; it holds the two rules (supply from the cheap end, depth
@@ -530,15 +552,20 @@ jobs:
                finishes locks that city away from every other run until it
                expires, and that is the single strongest predictor in the data
                of a night that produced nothing.
-            3. Then read CLAUDE.md and execute "The research workflow
-               (autonomous run)" from Step 0, exactly as written.
+            3. `python3 scripts/leads.py --ready`. Anything it lists is a tree
+               that is fully verified and needs only a story: the work is bought
+               and paid for and one write pass finishes it. If the list is not
+               empty, dispatch a write-stories agent on up to 20 of them ACROSS
+               cities per BRIEF_WRITING.md, merge, build, commit. Do that before
+               you consider anything else, and do it again if the clock allows.
+            4. Only if that list is empty, read CLAUDE.md and execute "The
+               research workflow (autonomous run)" from Step 0 as written.
 
             The one thing not to repeat: do not spend this attempt on
             orientation and claiming. Reading state, staging candidates and
             recording a claim are the cheap half; they are not the work, and a
-            window that contains only those has produced nothing. Prefer what is
-            already staged or already verified, because that work is paid for
-            and only needs finishing.
+            window that contains only those has produced nothing. The first
+            attempt already paid the orientation cost; you inherit it.
 
             Keep going until the usage limit stops you or the clock runs out.
             Commit the smallest complete step the moment it exists, push it, and
