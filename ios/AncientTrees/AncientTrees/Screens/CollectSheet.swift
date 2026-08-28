@@ -103,6 +103,9 @@ struct CollectSheet: View {
     @State private var taken: Date?
     /// The crosshair while the .place stage is up.
     @State private var placing: CLLocationCoordinate2D?
+    /// How tall the sheet stands, which is a property of the STEP rather than
+    /// of the flow. See presentationDetents below.
+    @State private var detent: PresentationDetent = .medium
     @State private var shot: UIImage?
     /// Where the shutter actually fell. Held separately from `origin` because
     /// the view can be re-evaluated with a newer fix while the outcome screen
@@ -177,7 +180,23 @@ struct CollectSheet: View {
         .brandGround()
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("spot-sheet")
-        .presentationDetents([.large])
+        // THE SHEET FITS THE STEP, from 2026-08-28. Hidde, looking at an intro
+        // that had shrunk to four lines inside a full-height sheet: "lucht gaan
+        // vullen met nodeloze zinnen lijkt me iig geen goed idee, maken ze dan
+        // de overlay kleiner idk?" They do, and Apple's guidance is the same:
+        // a sheet rests at detents and should fit its content rather than the
+        // content being written to fill it.
+        //
+        // The intro offers both heights rather than only medium, which is
+        // HIG's own progressive disclosure: it opens at the smaller one, and
+        // somebody running large Dynamic Type can still drag it up rather than
+        // meeting clipped text. Every later step is a map, a list or a form,
+        // and those want the whole sheet.
+        .presentationDetents(stage == .intro ? [.medium, .large] : [.large],
+                             selection: $detent)
+        .onChange(of: stage) { _, now in
+            detent = now == .intro ? .medium : .large
+        }
         .presentationDragIndicator(.visible)
         .fullScreenCover(isPresented: $camera) {
             CameraPicker { resolve($0) }.ignoresSafeArea()
