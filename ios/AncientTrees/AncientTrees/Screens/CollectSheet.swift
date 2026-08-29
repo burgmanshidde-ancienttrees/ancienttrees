@@ -114,6 +114,8 @@ struct CollectSheet: View {
     @State private var why = ""
     @State private var sending = false
     @State private var signingIn = false
+    /// Leaving with a photograph in hand asks first. See closeRow.
+    @State private var confirmingDiscard = false
 
     /// Everything close enough to be the tree in front of the lens. 400 metres
     /// is deliberately wide: GPS under a canopy is poor and a short list beats
@@ -208,6 +210,30 @@ struct CollectSheet: View {
             detent = now == .intro ? .height(320) : .large
         }
         .presentationDragIndicator(.visible)
+        // AND A SWIPE CANNOT THROW IT AWAY EITHER (Hidde, 2026-08-29: "als ik
+        // een boom aan het toevoegen ben met een foto moet ik niet zomaar op
+        // vorige knop kunnen klikken en dat je dan alles weg gooit, dan moet
+        // daar in ieder geval een waarschuwing komen").
+        //
+        // Guarding the button alone would leave the bigger hole: this is a
+        // sheet, and a sheet goes away when you drag it down, which is easier
+        // to do by accident than pressing a cross. Disabling the interactive
+        // dismiss while there is a photograph is what iOS gives you for exactly
+        // this, and it routes every exit through the one control that asks.
+        .interactiveDismissDisabled(hasWork)
+        // AN ALERT, NOT A confirmationDialog. iOS 26 draws a
+        // confirmationDialog anchored to its control as a popover and silently
+        // drops every button carrying role: .cancel, which this app has already
+        // shipped once as a destructive question with no way out (2026-08-27).
+        // An alert renders every button it is given.
+        .alert("Discard this tree?", isPresented: $confirmingDiscard) {
+            Button("Cancel", role: .cancel) {}
+            Button("Discard", role: .destructive) { dismiss() }
+        } message: {
+            // Named plainly, because on the camera path the photograph exists
+            // nowhere else: it was never written to the camera roll.
+            Text("You will lose the photograph and what you have filled in.")
+        }
         .fullScreenCover(isPresented: $camera) {
             CameraPicker { resolve($0) }.ignoresSafeArea()
         }
@@ -224,10 +250,22 @@ struct CollectSheet: View {
         }
     }
 
+    /// Whether there is anything here that closing would throw away.
+    ///
+    /// The photograph is the whole of it. Everything else on these screens is a
+    /// choice that can be made again in seconds; a photograph was taken while
+    /// somebody stood under a tree, and on the camera path it exists nowhere
+    /// else, not even in their camera roll.
+    private var hasWork: Bool {
+        if case .intro = stage { return false }
+        if case .ticked = stage { return false }
+        return shot != nil
+    }
+
     private var closeRow: some View {
         HStack {
             Spacer()
-            Button { dismiss() } label: {
+            Button { if hasWork { confirmingDiscard = true } else { dismiss() } } label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 13, weight: .semibold))
                     .foregroundStyle(Brand.inkSoft)

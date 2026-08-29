@@ -155,10 +155,38 @@ final class Sightings {
             }
         }
         for (i, name) in ["The oak on my street", "The lime by the water"].enumerated() {
-            record(treeId: nil, name: name,
-                   lat: lat + 0.004 * Double(i + 1), lng: lng + 0.006 * Double(i + 1),
-                   image: Self.stand_in(i))
+            let made = record(treeId: nil, name: name,
+                              lat: lat + 0.004 * Double(i + 1), lng: lng + 0.006 * Double(i + 1),
+                              image: Self.stand_in(i))
+            // A FIXED id, so -open=mine: can address one. A tree of yours was
+            // the last screen in this app no launch argument could open, which
+            // is the definition this file already uses for a screen that ships
+            // unlooked at.
+            rename(made.id, to: Self.demoIDs[i])
         }
+    }
+
+    /// The two ids `-mine-demo` always creates, so `-open=mine:<id>` can open
+    /// one from a launch argument.
+    static let demoIDs = [
+        UUID(uuidString: "00000000-0000-0000-0000-0000000000a1")!,
+        UUID(uuidString: "00000000-0000-0000-0000-0000000000a2")!,
+    ]
+
+    /// Debug scaffolding only: give a just-recorded sighting a known id.
+    private func rename(_ old: UUID, to new: UUID) {
+        guard let i = all.firstIndex(where: { $0.id == old }) else { return }
+        var row = all[i]
+        // The photograph is filed under the old id, so it moves with the row.
+        let folderOld = folder.appendingPathComponent(old.uuidString + ".jpg")
+        let folderNew = folder.appendingPathComponent(new.uuidString + ".jpg")
+        try? FileManager.default.moveItem(at: folderOld, to: folderNew)
+        row = Sighting(id: new, treeId: row.treeId, name: row.name, note: row.note,
+                       species: row.species, age: row.age, lat: row.lat, lng: row.lng,
+                       date: row.date, photo: row.photo == nil ? nil : new.uuidString + ".jpg",
+                       status: row.status)
+        all[i] = row
+        persist()
     }
 
     /// A stand-in photograph: bands of green over brown, which at pin size
