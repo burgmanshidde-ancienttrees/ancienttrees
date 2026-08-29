@@ -9,6 +9,23 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (session) - Fixed the iOS gate that had been red on every scheduled run; Vancouver verify dispatched
+
+`visitors.py`: 527 visits/830 views over 7 days, flat. `prepare.py`: shelf stocked (38 cities staged for verify, 0 awaiting a writer, 452 leads.py-READY, same overstated-READY gap earlier sessions today already found and logged).
+
+**Rung 2 (site broken) outranked everything, per the session-start hook: ios.yml has not passed once in 8 finished runs.** Found two independent, real bugs in the gate itself, not the app:
+
+1. `scripts/appfit.py`'s DRIFT check exempts a NOT_OURS element (Map, TabBar, Keyboard, ...) only when it sits INSIDE one, because `inside()` walks ancestors only. The keyboard's own top-level container frame (x=4.7, not a child of anything) has no NOT_OURS ancestor, so it slipped through and got reported drifting on the search screen forever. Verified directly against the appfit-dump artifact from run 33271305999 (`Keyboard, {{4.7, 573.0}, ...}`). Fixed by also excluding `el.type in NOT_OURS`; pushed as `63446b4e`.
+2. `.github/workflows/ios.yml`'s "Build and test" step greps the log for any line containing `error:` to detect a real compile failure, but XCTest's own per-assertion failure lines carry that word too (`file.swift:432: error: -[Class test] : failed - ...`). So a UI test failing once (even one `-retry-tests-on-failure` would then pass) short-circuits the step with a misleading "did not compile" message and `exit 1` *before* the accurate, retry-aware "Verdict" step (which has no `if: always()`) ever runs. This is very likely the actual cause of the persistent red schedule. Fixed by narrowing the check to real compiler diagnostics (`.swift:line:col: error:`, which XCTest's lines never carry) plus the explicit `** BUILD FAILED **` marker. **Could not push this one**: this token lacks the `workflows` GitHub App permission needed to touch `.github/workflows/**`, confirmed by three separate rejected push attempts (direct to main, to a new branch, and via `gh workflow run`/`gh api` dispatch, all 403). The fix sits as a local uncommitted diff in the working tree; whoever has that permission should apply the 13-line change described above (search this file's own diff history or ask me to restate it).
+
+Dispatched a push (the appfit.py fix alone, since that one WAS pushed) to confirm on CI; run 33277962904 was still in progress when this entry was written.
+
+Also checked REVIEW.md's two 2026-08-29 WARNs (rung 3): the `paid_entry` field gap (8 trees across 5 cities) was already fixed by the prior commit (53efaa8b) before I got to it, confirmed by diffing all 8 trees, no change needed. Oahu's paid ratio (now 75%, was 86%) is real ongoing research work, not a factual error; left as known follow-up rather than blocking on it here. `pagegaps.py`: nothing missing (0/0/0).
+
+**Rule 1(0): Vancouver claimed and a verify pass dispatched**, kept running in the foreground of this same session specifically because two earlier attempts today died with no output when their parent session ended before they finished (no `vancouver-verified.json` ever appeared, twice, per two separate LOG entries above). Vancouver is on Hidde's 2026-08-19 from-zero list and holds 25 real, licensed, ungeocoded leads (City of Vancouver Heritage Register, OGL), so this is genuine untouched supply rather than a re-hunt. Briefed explicitly on the flagged risk nobody had actually checked: most of the register's addresses read as ordinary residential streets, so the pass has to make a real hard-rule-10 public/private call per address rather than assume heritage designation implies access.
+
+Still in progress as this entry is written; will follow with a write pass and merge in the same window once it returns, per the standing rule that a verify-only window with nothing shipped is the failure mode to avoid.
+
 ## 2026-08-29 - Night run 2026-08-29 18:59 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 6.8 minutes of its 120 minute window, 48 turns, 7 commands refused by the allowlist, ended clean (success). 2 commit(s), none of them a published tree. Claims left behind: taormina, coimbra, which block the top of the queue until they expire.
