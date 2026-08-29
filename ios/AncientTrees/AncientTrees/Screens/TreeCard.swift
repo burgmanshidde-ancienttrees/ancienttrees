@@ -18,6 +18,23 @@ struct TreeCard: View {
     /// lists are independent, so a heart drawn over a tree you photographed
     /// invites somebody to think it controls the thing they are looking at.
     var showHeart: Bool = true
+    /// ONE HEIGHT FOR EVERY CARD IN A ROW, for a card that sits in a
+    /// horizontal shelf.
+    ///
+    /// A name takes one, two or three lines, so in a shelf the cards ended at
+    /// three different heights and the bottoms were ragged: that is most of
+    /// what reads as "de verticale spacing is heel random" on Discover (Hidde,
+    /// 2026-08-29). Netflix, AllTrails and the App Store all clamp a shelf
+    /// card's title to a fixed number of lines for exactly this reason; a
+    /// shelf is scanned sideways and a ragged bottom edge has nothing to line
+    /// up against.
+    ///
+    /// Two lines reserved rather than three, because three would leave an
+    /// empty line under most cards, and a longer name truncates, which is what
+    /// the reference products do. Off by default: in a vertical list nothing
+    /// is beside the card, so reserving space there would only add a blank
+    /// line under every short name.
+    var uniformTitle: Bool = false
     @Environment(Saved.self) private var saved
 
     private let corner: CGFloat = 14
@@ -34,7 +51,8 @@ struct TreeCard: View {
                 if saved.isVisited(tree.id) { ticked }
             }
             VStack(alignment: .leading, spacing: 5) {
-                Text(tree.name).font(.cardTitle).foregroundStyle(Brand.ink).lineLimit(3)
+                Text(tree.name).font(.cardTitle).foregroundStyle(Brand.ink)
+                    .lineLimit(uniformTitle ? 2 : 3, reservesSpace: uniformTitle)
                 meta
             }
             .padding(.horizontal, 12).padding(.vertical, 10)
