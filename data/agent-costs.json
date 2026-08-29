@@ -3921,6 +3921,27 @@
         "tokens": 0,
         "trees": 6,
         "note": "orchestration: found passcheck.py resolve() folding Assisi into Perugia on pure distance (~19km, under the 20km same-city radius), fixed it, then ran verify+write and assembled the new city; fixed a stale Italy country-page count found along the way"
+      },
+      {
+        "target": "cesky-krumlov",
+        "kind": "verify",
+        "tokens": 140000,
+        "trees": 0,
+        "note": "Zlata Koruna monastery cluster (4 trees) + 2 near-town free trees to fix a 75% paid ratio down to 50%; 3 more near-town candidates left as leads on access/girth-conflict/single-source grounds"
+      },
+      {
+        "target": "cesky-krumlov",
+        "kind": "write",
+        "tokens": 46000,
+        "trees": 6,
+        "note": "6 stories; caught and fixed a same-page superlative contradiction (largest vs tallest) between two of its own trees before it shipped"
+      },
+      {
+        "target": "cesky-krumlov",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 6,
+        "note": "orchestration: assembled the city, fixed check_paid_share() to read the paid_entry boolean instead of a fragile access-text substring search (REVIEW.md had already flagged this gap), which surfaced Caserta at 80% paid previously invisible to the check; fixed the newly-stale Czech Republic country count"
       }
     ]
   }
