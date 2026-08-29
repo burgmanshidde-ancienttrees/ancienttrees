@@ -291,6 +291,29 @@ def draw_tracked(draw, x, y, text, f, tracking, fill):
             cx += draw.textlength(c, font=f) + tracking
 
 
+SIZES = {
+    # What App Store Connect accepts, per slot. 6.9 is the one Apple asks for;
+    # 6.5 is the older slot and it refuses anything else, which is what stopped
+    # an upload on 2026-08-29. Either slot on its own is enough, so both get
+    # written and whichever he lands in has files that fit.
+    "6.9-inch": (1320, 2868),
+    "6.5-inch": (1284, 2778),
+}
+
+
+def resized(panel, size):
+    """The same panel at another slot's size.
+
+    Re-rendering at the second size would mean two type scales to keep in
+    step. These two shapes are 0.4603 and 0.4622, so a scale to width and a
+    dozen pixels off the bottom is the whole difference, and the bottom is
+    where the phone already runs off the panel.
+    """
+    w, h = size
+    im = panel.resize((w, round(panel.height * w / panel.width)), Image.LANCZOS)
+    return im.crop((0, 0, w, h)) if im.height >= h else im
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     name_of_ground = sys.argv[1] if len(sys.argv) > 1 else "canopy"
