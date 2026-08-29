@@ -889,13 +889,6 @@
    "trees": 0
   },
   {
-   "city": "Salzburg",
-   "country": "Austria",
-   "slug": "salzburg",
-   "status": "published",
-   "trees": 5
-  },
-  {
    "city": "Nice",
    "country": "France",
    "slug": "nice",
@@ -1188,6 +1181,13 @@
    "status": "published",
    "demand_views_90d": 180145,
    "trees": 4
+  },
+  {
+   "city": "Salzburg",
+   "country": "Austria",
+   "slug": "salzburg",
+   "status": "published",
+   "trees": 5
   },
   {
    "city": "Bari",
