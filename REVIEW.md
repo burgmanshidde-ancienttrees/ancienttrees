@@ -13,6 +13,87 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-29
+
+Reviewed the last 24 hours (back through `90b07ce3`): night-run assembly-line
+work (Bucaco +4/LA +1/Warsaw +1 writes, Salzburg opened at 5, a genus-name
+lexicon widening READY leads, a photo-vendoring pass, Gdansk 4-to-6, walking
+routes regenerated) plus this morning's verify claims (Naples' Magnolia of
+Capodimonte shipped flagged with two conflicting register sizes, Cagliari's
+Blue Eucalyptus of Sinnai, a Barcelona Pedralbes claim that duplicated three
+already-published trees and was correctly untangled into leads/blocked before
+anything shipped twice, and Oahu's Banyans of Thomas Square). Ran
+`python3 scripts/qa.py` (3690 pages, clean), `python3 scripts/superlatives.py`
+(497 claims, no collisions), `python3 scripts/preflight.py` (clean besides the
+two items below) and `python3 scripts/health.py` (rung 2 is a dropped-cron
+knock count, not a broken build; not re-litigated here). Spot-checked
+oahu/naples/cagliari/barcelona's new tree pages plus five random other pages
+(alkmaar, enschede, padua, zurich, and yesterday's Oahu WARN pages) for em
+dashes, banned words and count consistency: all clean, and every stated tree
+count in the built HTML (Oahu "7", Naples "twenty-three", Cagliari "nine")
+matches its own trees array.
+
+**WARN — Oahu's paid-entry ratio is still 86%, and the commit message
+overstates what today's addition did.** Yesterday's WARN here said Oahu was a
+"garden page, not a city page" at 100% paid (6/6) and asked for a free,
+walkable tree. Today's `1c067fcb` added one, the Banyans of Thomas Square
+(free, Honolulu's oldest public park), and its own commit message says this
+brings "the ratio to 86%" without saying what that number means against the
+rule: CLAUDE.md's 2026-08-23 ruling sets the ceiling at "at most about a
+third," reached after Hidde said "ik heb liever 34 goede bereikbare dan 39."
+`scripts/preflight.py` still reports it: `Oahu: 6 of 7 trees are behind paid
+entry (86%)`. One free tree is real progress and the right kind of fix
+(CLAUDE.md: "the answer to a bad ratio is FREE TREES ADDED"), but the page is
+still, by the corpus's own words, the shape it explicitly forbids. Rung-3 work
+for a research pass: at least one or two more free Oahu trees outside Foster
+Garden and Moanalua before this city reads as solved.
+
+**WARN — the `paid_entry` boolean that drives the tree page's "Ticket
+needed" banner is unreliably set, and one of today's own touched trees is a
+live example.** `site/src/pages/[city]/[tree].astro:203` renders `{tree.
+paid_entry && <p class="ticket-note">Ticket needed...}` directly under the
+breadcrumbs, deliberately placed there per Hidde's 2026-08-24 ruling "because
+it changes whether somebody sets off at all." Checked every city file for
+trees whose `access` text unambiguously says paid entry (excluding two
+false-positive phrasings where only a museum inside a free park charges,
+Aarhus's Moesgard trees and NYC's nyc_010) against the `paid_entry` field:
+8 trees across 5 cities have paid access text but no `paid_entry: true`, so
+their pages render no ticket banner at all. Confirmed directly in the built
+site: `oahu/hitachi-tree.html` (hnl_006, $10 Moanalua Gardens admission,
+added yesterday in `a3b7da0b`, untouched by today's Oahu commit) has zero
+occurrences of `ticket-note`, while `oahu/foster-garden-baobab.html` (same
+city, `paid_entry` correctly set) has one. The other seven: `bcn_002`,
+`bcn_003`, `bcn_016` (Park Guell, "no free zone" since 2020), `crt_001`
+(Crete, Olive Tree Museum of Vouves), `sev_042` (Seville, Monasterio de la
+Cartuja/CAAC), `war_012`, `war_013` (Warsaw Botanical Garden). This is a data
+hygiene gap rather than a new bug (`preflight.py`'s own `check_paid_share()`
+reads the `access` string, not the boolean, which is why it never caught
+this), but it means the site is currently promising free entry by omission on
+eight pages where a visitor will in fact be asked to pay. Rung-3 work: set
+`paid_entry: true` on the eight trees named above; a build check comparing
+the two fields would catch a ninth.
+
+**NOTE — yesterday's open app question is resolved.** The 2026-08-28 entry
+here could not confirm whether `signin.png`'s stale data-promise sentence was
+a captured-before-the-fix artifact or a live bug. Today's `signin.png`
+(same screen, fresh sweep) reads "We store your email address and what you
+collect: the trees you save, the ones you photograph, and where they stand.
+No advertising, and you can delete the lot from this app," which matches
+`SignIn.swift:262` exactly. The fix (`8060afd2`) is live.
+
+**APP screenshots (rotation, iPhone SE): place-pin, primer, profile-edit,
+profile, search, signin.** All six looked at, none flagged beyond the note
+above. `place-pin.png` (the pin-correction flow, "Where is it really?") and
+its account-gated submission match the 2026-08-21 feedback ruling. `primer.
+png`'s tree count ("We map 1,941 remarkable old trees") trails the live data
+count (1,950) by 9, which is normal feed lag from today's four new trees plus
+Salzburg's five from yesterday, not a bug worth a build check. `profile-edit.
+png`, `profile.png` (Settings, with "Add a tree" copy matching the
+reader-as-subject fix) and `search.png` are unremarkable and correct.
+
+Nothing else found at BLOCKER level. Not a Monday, so no scheduled corpus-rot
+audit this entry.
+
 ## 2026-08-28
 
 Reviewed the last 24 hours of git history (back through `00547c5e`, roughly
