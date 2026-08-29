@@ -3815,6 +3815,26 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-08-29": [
+   {
+    "target": "buenos aires, dresden",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 8,
+    "note": "Finished a write pass an earlier attempt this window claimed and left mid-flight (both cities already fully verified and written to data/research/*-verified.json). Merged into data/cities/, hand-wrote city-level intro/meta/FAQ/question copy per Contract B/C, built, qa.py and superlatives.py clean. Also fixed a rebuild_list() gap: Dresden had no data/city-list.json row at all.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "brisbane",
+    "kind": "verify",
+    "tokens": 45000,
+    "trees": 0,
+    "note": "Fourth deepen attempt; found and evaluated 3 candidates (Bald Hills Hoop Pines, Toowong Cemetery hoop pine, New Farm Park fig), none cleared the bar (school access unresolved, cemetery location unplaceable, dead end respectively); all recorded to leads with reasons, zero delivered to brisbane-verified.json",
+    "wasted": 0,
+    "brief_wrong": false
+   }
   ]
  }
 }

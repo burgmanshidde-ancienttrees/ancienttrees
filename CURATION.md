@@ -9,6 +9,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 - Brisbane, fourth deepen attempt: zero trees, three candidates evaluated and recorded
+
+Finished the standing verify claim the window's first attempt left behind. Found and checked three new candidates outside the already-exhausted City Botanic Gardens/Newstead/Toowong clusters: the Bald Hills Hoop Pines (Queensland Heritage Register listed, two independent sources, within the day-trip boundary, but stand on a private school's 125-acre campus with no evidence the driveway is publicly accessible, so held on the schools rule); the Toowong Cemetery hoop pine by Ann Hill's grave (gained a directly-read primary source and a partial second-source corroboration, but the grave itself still cannot be placed inside the large cemetery); and New Farm Park's Moreton Bay fig(s) (dead end, no age, no register listing, unclear whether it is one tree or a grove). All three recorded to data/leads/brisbane.json with reasons rather than re-researched blind next time. Claim released.
+
 ## 2026-08-29 - Buenos Aires and Dresden open (4 trees each, all flagged): finishing a write pass an earlier attempt claimed and left mid-flight
 
 Both cities were already claimed and verified by an earlier attempt this window (data/research/buenosaires-verified.json, dresden-verified.json carried finished stories, sourced and pinned); that attempt stopped before merging, building or committing. This session finished the write pass rather than re-researching: merged both into data/cities/, wrote city-level intro/meta/FAQ/question copy by hand per Contract B and C, built, ran qa.py and superlatives.py clean, and released the standing claims.
