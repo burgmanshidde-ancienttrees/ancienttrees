@@ -47,6 +47,9 @@ CANOPY = (0x3A, 0x52, 0x22)
 CREAM = (0xFA, 0xF7, 0xEF)
 INK = (0x26, 0x30, 0x1E)
 GOLD = (0xD9, 0xA1, 0x3F)
+# The hero heading's gold is the site's own #F0C876 (style.css:709), which is
+# lighter than the brand gold because it sits on a photograph.
+GOLD_HERO = (0xF0, 0xC8, 0x76)
 
 # THE GROUND IS A CHOICE, so it is a flag rather than a constant (Hidde,
 # 2026-08-29: "deze groen is veel te aanwezig, probeer een paar varianten").
@@ -198,14 +201,41 @@ def hero(photo_path, line, ground):
         d.line([(0, y), (W, y)], fill=(10, 14, 8, a))
     canvas = Image.alpha_composite(canvas.convert("RGBA"), scrim).convert("RGB")
 
+    # THE WEBSITE'S OWN HEADING, to its own rule (Hidde, 2026-08-29: "kun je
+    # hetzelfde lettertype als op de website gebruiken"). Read off
+    # site/public/assets/style.css:708-709 rather than eyeballed: Gabarito at
+    # weight 800, letter-spacing -0.02em, line-height 1.08, white with the
+    # second half in gold, and a soft shadow under it. The same sentence stands
+    # on ancienttrees.app, so the panel and the homepage are one thing.
     draw = ImageDraw.Draw(canvas)
-    f = font("Gabarito-Bold.ttf", 104)
+    size = 104
+    f = font("Gabarito-ExtraBold.ttf", size)
+    tracking = -size * 0.02
     y = 220
-    for text in line.split("\n"):
-        w = draw.textlength(text, font=f)
-        draw.text(((W - w) / 2, y), text, font=f, fill=CREAM)
-        y += 104 + 20
+    for i, text in enumerate(line.split("\n")):
+        gold = i == 1                       # the site puts the second half in <em>
+        w = tracked_width(draw, text, f, tracking)
+        draw_tracked(draw, (W - w) / 2, y, text, f, tracking,
+                     GOLD_HERO if gold else CREAM)
+        y += int(size * 1.08)
     return canvas
+
+
+def tracked_width(draw, text, f, tracking):
+    return sum(draw.textlength(c, font=f) + tracking for c in text) - tracking
+
+
+def draw_tracked(draw, x, y, text, f, tracking, fill):
+    """Letter-spacing, which PIL has no setting for and the site's h1 has.
+
+    Drawn twice: once in the shadow's colour a little lower, once in the
+    letter's own, which is what text-shadow does on the page.
+    """
+    for dx, dy, colour in ((0, 6, (0, 0, 0, 90)), (0, 0, fill)):
+        cx = x + dx
+        for c in text:
+            draw.text((cx, y + dy), c, font=f, fill=colour)
+            cx += draw.textlength(c, font=f) + tracking
 
 
 def main():
