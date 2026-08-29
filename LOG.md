@@ -21,7 +21,7 @@ Two things Hidde walked into on his own telephone, both fixed and pushed.
 
 **And adding a tree now needs an account**, asked and answered the same afternoon ("nee, inloggen verplicht"). Both buttons into the collect sheet were already gated; the write was not, and its comment still described the no-account route of 2026-08-25. That route is what made the sign-out question hard in the first place, because a tree belonging to nobody cannot be cleared without destroying the only copy of it.
 
-**FOR HIDDE.** Trees already on your phone carry no sync stamp, because the field is new. They clear on the first sign-out AFTER one signed-in launch, which is when the sync marks them. So: install, open once signed in, then sign out, and the map is clean.
+**Then he read it back and was right again:** "als je uitgelogd bent moet je dus ook niks meer zien, geen favoriet, geen boom, geen foto toegevoegd, niks." The exception for unconfirmed sightings had outlived the signed-out route that justified it, and it was exactly why he still saw his own trees after installing, since nothing from before today carries a stamp. Everything clears now. What the account has not confirmed is parked in `pending.json` with its photograph and comes back on the next sign-in, so nothing is destroyed. Checked on a signed-out simulator with two seeded trees and two seeded favourites: 0 trees, 0 species, 0 countries, no personal pins.
 
 ## 2026-08-29 (session, afternoon) - The three database fixes, and five trees that came off while doing them
 

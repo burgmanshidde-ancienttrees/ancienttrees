@@ -671,6 +671,10 @@ struct ContentView: View {
                 // automatisch goed gaat"). Photographs included: the words on
                 // their own would bring back a list of names with no pictures,
                 // which is most of what was lost rather than all of it.
+                // ANYTHING PARKED AT THE LAST SIGN-OUT FIRST, so the merge's
+                // push carries it and the account finally gets the copy it
+                // never had. Signing back in is what these were kept for.
+                sightings.restorePending()
                 await SightingSync.merge(account: account, sightings: sightings)
             }
             // Every later change goes the same way. Set here because this is
