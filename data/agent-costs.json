@@ -3942,6 +3942,15 @@
         "tokens": 0,
         "trees": 6,
         "note": "orchestration: assembled the city, fixed check_paid_share() to read the paid_entry boolean instead of a fragile access-text substring search (REVIEW.md had already flagged this gap), which surfaced Caserta at 80% paid previously invisible to the check; fixed the newly-stale Czech Republic country count"
+      },
+      {
+        "target": "ios.yml / appfit.py",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "Diagnosed and fixed the two bugs causing the iOS gate to fail on every scheduled run: appfit.py's DRIFT check missing el.type-in-NOT_OURS (pushed 63446b4e), and ios.yml's error: grep matching XCTest's own failure lines (fix ready, could not push: this token lacks the workflows GitHub App permission).",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
