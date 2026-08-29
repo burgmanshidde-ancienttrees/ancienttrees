@@ -375,7 +375,26 @@ struct WhenPermissionIsRefused {
 /// under a tree while signed out is the only copy of it in the world.
 @Suite struct SigningOutForgetsTheCollection {
 
-    @Test func aTreeTheAccountHoldsLeavesThePhone() {
+    /// The whole rule in one line (Hidde, 2026-08-29): "als je uitgelogd bent
+    /// moet je dus ook niks meer zien, geen favoriet, geen boom, geen foto
+    /// toegevoegd, niks."
+    @Test func nothingSurvivesOnScreen() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let synced = s.record(treeId: nil, name: "At the account", lat: 52.1, lng: 4.1, image: pixel())
+        s.markSynced(synced.id)
+        _ = s.record(treeId: nil, name: "Never sent", lat: 52.2, lng: 4.2, image: pixel())
+
+        s.forgetLocally()
+
+        #expect(s.all.isEmpty, "a tree stayed visible on a signed-out phone")
+        #expect(s.yoursOnly.isEmpty, "it stayed in the lists the map and Collect read")
+        #expect(Sightings(folder: p.url).all.isEmpty, "it came back on the next launch")
+    }
+
+    /// A tree the account holds goes for good, because signing in brings it
+    /// back from there.
+    @Test func aSyncedTreeTakesItsPhotographWithIt() {
         let p = Patch(); defer { p.clean() }
         let s = Sightings(folder: p.url)
         let made = s.record(treeId: nil, name: "The oak on my street",
@@ -385,40 +404,47 @@ struct WhenPermissionIsRefused {
 
         s.forgetLocally()
 
-        #expect(s.all.isEmpty, "a synced tree stayed on a signed-out phone")
         #expect(!p.files().contains(file), "its photograph stayed behind")
-        #expect(Sightings(folder: p.url).all.isEmpty, "it came back on the next launch")
+        s.restorePending()
+        #expect(s.all.isEmpty, "a synced tree was parked as if nobody had it")
     }
 
-    @Test func aTreeNobodyHasACopyOfStays() {
+    /// One the account has never seen is parked, not destroyed, and comes back
+    /// on the next sign-in with its picture. A photograph somebody took under a
+    /// tree is not recoverable by signing in, so it is never deleted on a maybe.
+    @Test func anUnsentTreeIsParkedAndComesBack() {
         let p = Patch(); defer { p.clean() }
         let s = Sightings(folder: p.url)
-        let made = s.record(treeId: nil, name: "Photographed while signed out",
+        let made = s.record(treeId: nil, name: "Photographed with no signal",
                             lat: 52.37, lng: 4.89, image: pixel())
+        let file = made.photo ?? ""
 
         s.forgetLocally()
+        #expect(s.all.isEmpty, "it was still on screen while signed out")
+        #expect(p.files().contains(file), "its photograph was deleted on a maybe")
 
-        #expect(s.all.count == 1, "the only copy of somebody's tree was deleted")
-        #expect(s.image(s.all[0]) != nil, "the only copy of their photograph was deleted")
-        #expect(made.syncedAt == nil, "a fresh sighting claimed the account had it")
+        s.restorePending()
+        #expect(s.all.map(\.id) == [made.id], "it did not come back on sign-in")
+        #expect(s.image(s.all[0]) != nil, "it came back without its photograph")
     }
 
-    @Test func onlyTheSyncedOneOfTwoGoes() {
+    /// Two sign-outs in a row must not drop the first one's trees.
+    @Test func parkingTwiceKeepsBoth() {
         let p = Patch(); defer { p.clean() }
         let s = Sightings(folder: p.url)
-        let kept = s.record(treeId: nil, name: "Never sent", lat: 52.1, lng: 4.1, image: pixel())
-        let gone = s.record(treeId: nil, name: "At the account", lat: 52.2, lng: 4.2, image: pixel())
-        s.markSynced(gone.id)
-
+        let first = s.record(treeId: nil, name: "One", lat: 52.1, lng: 4.1, image: nil)
         s.forgetLocally()
 
-        #expect(s.all.map(\.id) == [kept.id])
-        #expect(p.files().contains(kept.photo ?? ""), "it took the wrong photograph")
+        let second = s.record(treeId: nil, name: "Two", lat: 52.2, lng: 4.2, image: nil)
+        s.forgetLocally()
+
+        s.restorePending()
+        #expect(Set(s.all.map(\.id)) == Set([first.id, second.id]))
     }
 
-    /// A file written before syncedAt existed still decodes, and decodes to the
-    /// honest answer: we do not know the account has it, so it stays.
-    @Test func anOlderFileDecodesAsUnsynced() {
+    /// A file written before syncedAt existed still decodes, and clears, which
+    /// is the case that made him see his own trees after installing.
+    @Test func anOlderFileClearsToo() {
         let p = Patch(); defer { p.clean() }
         p.write("""
         [{"id":"00000000-0000-0000-0000-0000000000b1","name":"From an older build",
@@ -431,7 +457,9 @@ struct WhenPermissionIsRefused {
         #expect(s.all[0].syncedAt == nil)
 
         s.forgetLocally()
-        #expect(s.all.count == 1, "an older file's tree was dropped on sign-out")
+        #expect(s.all.isEmpty, "a tree from before today stayed on a signed-out phone")
+        s.restorePending()
+        #expect(s.all.count == 1, "and it was not kept anywhere")
     }
 }
 

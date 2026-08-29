@@ -351,37 +351,64 @@ final class Sightings {
         persist()
     }
 
-    /// EVERYTHING THE ACCOUNT ALREADY HOLDS, off this phone.
+    /// EVERYTHING, off this phone, when nobody is signed in.
     ///
-    /// Hidde, 2026-08-29: "als je uitlogt moeten de bomen die je hebt
-    /// toegevoegd niet meer zichtbaar zijn op de kaart en in de lijsten", and
-    /// "ik kan ook een boom removen terwijl ik uitgelogd ben dat lijkt me niet
-    /// de bedoeling". He is right on both, and it is the same rule the hearts
-    /// and the profile already follow: a phone nobody is signed in to wears
-    /// nobody's collection.
+    /// Hidde, 2026-08-29: "je kunt niks toevoegen zonder in te loggen dus als
+    /// je uitgelogd bent moet je dus ook niks meer zien, geen favoriet, geen
+    /// boom, geen foto toegevoegd, niks."
     ///
-    /// WHAT IT KEEPS, and why this is not simply `all = []`. Earlier today the
-    /// photographs were exempted wholesale, on the reasoning that an upload may
-    /// not have reached the server and a picture somebody took under a tree is
-    /// not recoverable by signing back in. That reasoning is right about the
-    /// unsent ones and wrong about the rest, and exempting all of them to
-    /// protect some of them is what put somebody's collection on a signed-out
-    /// phone. So the question is asked per sighting instead: `syncedAt` says
-    /// the account has this one, and only those go.
+    /// The first version of this kept anything the account had not confirmed
+    /// holding, which was the right shape for one hour: adding a tree without
+    /// an account was still possible then, and such a tree existed nowhere
+    /// else. Requiring sign-in to add removed the case, and the exception
+    /// outlived its reason by about twenty minutes. Worse, it was the reason he
+    /// still saw his own trees after installing: nothing on a phone from before
+    /// today carries a stamp, so the exception covered the whole collection.
     ///
-    /// A sighting made while signed out therefore stays, which is the honest
-    /// outcome rather than a loophole: it belongs to nobody, no server has it,
-    /// and deleting it would destroy the only copy that exists.
+    /// NOTHING IS DESTROYED. A sighting the account has confirmed goes for
+    /// good, photograph and all, because signing in brings it back. One it has
+    /// not is moved to `pending.json` and its photograph is left where it is:
+    /// off the map, out of the lists, out of every count, and restored by
+    /// `restorePending()` on the next sign-in. A picture somebody took under a
+    /// tree is not recoverable by signing back in, so it is not deleted on a
+    /// maybe.
     func forgetLocally() {
-        let leaving = all.filter { $0.syncedAt != nil }
-        guard !leaving.isEmpty else { return }
-        for s in leaving {
+        guard !all.isEmpty else { return }
+        let unsent = all.filter { $0.syncedAt == nil }
+        for s in all where s.syncedAt != nil {
             if let f = s.photo {
                 try? FileManager.default.removeItem(at: folder.appendingPathComponent(f))
             }
         }
-        all.removeAll { $0.syncedAt != nil }
+        if !unsent.isEmpty {
+            // Added to whatever is already parked, so two sign-outs in a row
+            // cannot drop the first one's trees.
+            let held = readPending() + unsent.filter { u in !readPending().contains { $0.id == u.id } }
+            if let d = try? JSONEncoder().encode(held) { try? d.write(to: pending) }
+        }
+        all = []
         persist()
+    }
+
+    /// What was parked at the last sign-out, back on the phone.
+    ///
+    /// Called on sign-in before the sync runs, so the push that follows carries
+    /// these too and the account finally gets the copy it never had.
+    func restorePending() {
+        let held = readPending()
+        guard !held.isEmpty else { return }
+        for s in held where !all.contains(where: { $0.id == s.id }) { all.append(s) }
+        all.sort { $0.date > $1.date }
+        persist()
+        try? FileManager.default.removeItem(at: pending)
+    }
+
+    private var pending: URL { folder.appendingPathComponent("pending.json") }
+
+    private func readPending() -> [Sighting] {
+        guard let d = try? Data(contentsOf: pending),
+              let rows = try? JSONDecoder().decode([Sighting].self, from: d) else { return [] }
+        return rows
     }
 
     func remove(_ id: UUID) {
