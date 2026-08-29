@@ -3,11 +3,11 @@
  "country": "Netherlands",
  "status": "needs_curation",
  "intro": "Around 1388 Amersfoort built a second city wall, heaviest on the northeast side because that was the direction Gelre would come from. The wall is mostly gone and what is left of it is a park with old trees growing out of the rampart, including a catalpa that flowers hard enough to stop people. The oldest tree in the city is nowhere near it: an oak at a crossroads called the Hertekop, where a hunting lodge hung with antlers became a pub, then a meeting point, and then a motorway junction. The oak is what is left.",
- "meta_description": "Seven remarkable trees in Amersfoort: a catalpa on a 14th-century rampart, an oak that outlasted a hunting lodge and a motorway, and a grafted lime.",
+ "meta_description": "Eight remarkable trees in Amersfoort: a catalpa on a 14th-century rampart, an oak that outlasted a motorway, and a plane the city built a school around.",
  "question_meta": "Amersfoort's oldest tree is the oak at the Hertekop crossroads, banded 1750 to 1800. Where it stands, and six more worth the walk.",
  "question_answer": "The oldest tree in Amersfoort is the oak at the Hertekop, on the Arnhemseweg where it crosses the Dodeweg beside the A28 slip road, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. The crossroads takes its name from a hunting chalet that once stood there with deer antlers fixed to it. That building became an inn, then a well known meeting place and a starting point for walks and outings, and then it disappeared, when a southern ring road was laid around the city and later joined to a new trunk road from Utrecht. The junction that resulted bears no resemblance to the place the tree was planted in. The oak is the only part of the Hertekop still standing.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for these trees, which is why they are all flagged. One tree that would have been on this page is not: a plane on the schoolyard of the Sint Jorisschool, which is a fine old tree and which we leave out because sending adult strangers onto school grounds is not something a page like this should do. Where the register describes a tree's condition we pass that on, as with the weeping lime in Park Schothorst, whose root flare is walked on constantly and which the register thinks is standing up to it. Pins marked approximate mean we know the place and not the trunk.",
- "hero_tree_id": "ame_001",
+ "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the main source for these trees, which is why they are all flagged. One of them is a special case. The plane on the Schimmelpenninckkade grows inside the playground of the Sint Jorisschool, and an earlier version of this page left it out for that reason. It is here now because the register records it as both visitable and visible, and because you can see the whole crown from the public quay, which is where this page sends you: the yard is a working school and is not somewhere to walk into. Where the register describes a tree's condition we pass that on, as with the weeping lime in Park Schothorst, whose root flare is walked on constantly and which the register thinks is standing up to it. Pins marked approximate mean we know the place and not the trunk.",
+ "hero_tree_id": "ame_008",
  "oldest_tree_id": "ame_002",
  "faq": [
   {
@@ -24,7 +24,7 @@
   },
   {
    "q": "Are they free to visit?",
-   "a": "All seven. The Plantsoen Oost and Park Schothorst are public parks, the Hertekop oak stands at a road junction, and the rest are on streets and squares."
+   "a": "All eight, with one qualification. The Plantsoen Oost and Park Schothorst are public parks, the Hertekop oak stands at a road junction, and most of the rest are on streets and squares. The plane of the Sint Jorisschool is inside a school playground, so you look at it from the Schimmelpenninckkade rather than walking in."
   }
  ],
  "trees": [
@@ -270,6 +270,40 @@
     "kind": "autumn colour",
     "label": "late October, at full colour"
    },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "ame_008",
+   "name": "The Plane of the Sint Jorisschool",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 175 to 185 years, from the register's planting band of 1840 to 1850",
+   "age_min": 176,
+   "age_max": 186,
+   "girth_cm": 608,
+   "height_m": 27.8,
+   "location": {
+    "address": "Schoolyard of the Sint Jorisschool, Schimmelpenninckkade, Amersfoort",
+    "latitude": 52.159702,
+    "longitude": 5.385922,
+    "neighbourhood": "Binnenstad, on the Eem quay"
+   },
+   "story": "When the Sint Jorisschool went up in 1910 this plane was already seventy years old, and the builders left it where it was. It has stood in a schoolyard ever since.\n\nIt was planted between 1840 and 1850, when the site was still a green strip along the quay of the river Eem. The strip was built over in 1910 and the new school opened with four classes on the quay side, with a full grown tree already in front of it. That building came down in 1992 and its replacement went up straight away. The register notes, drily, that the tree was reasonably well protected during the works.\n\nIt is close to two hundred years old now, six metres round at chest height and 27.8 metres tall, with a crown twenty-seven metres across, which is wider than the yard it stands in.\n\nBenches used to ring the base for the pupils. At the end of 2021 the paving came out and the yard was resurfaced in wood chips, some of the benches were taken away, and the children moved onto the roots instead. The register's verdict on that, after everything else this tree has absorbed: it seems to cope well.\n\nYou can see the whole crown from the quay.",
+   "verified_sources": [
+    "https://nl.wikipedia.org/wiki/Plataan_aan_de_Schimmelpenninckstraat",
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free to look at. The tree stands on the Sint Jorisschool playground and the whole crown is in view from the Schimmelpenninckkade, which is a public quay. The register lists it as visitable, but it is a working schoolyard, so stand on the quay rather than walking in.",
+   "transport": "About 15 minutes on foot from Amersfoort Centraal, on the Schimmelpenninckkade beside the Eem.",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/20141029_PlataanSchimmelpenninckstr_02.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "WeeJeeVee, CC BY-SA 4.0, via Wikimedia Commons",
+    "status": "approved",
+    "width": 1956,
+    "height": 2533
+   },
+   "how_to_recognise": "One enormous plane rising alone out of a walled schoolyard set below the level of the quay, its crown far wider than the yard, flaking cream and olive bark on a single straight trunk.",
    "curation_status": "flagged",
    "location_precision": "confirmed"
   }
