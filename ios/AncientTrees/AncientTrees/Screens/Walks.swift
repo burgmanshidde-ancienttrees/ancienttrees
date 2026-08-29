@@ -98,6 +98,8 @@ struct WalkDetail: View {
                         // bubble marked 4, which hides the whole route.
                         spanMeters: frame.meters,
                         clusters: false,
+                        // The stops are the page, so the frame is the stops.
+                        fitsTrees: true,
                         selected: $selected)
                     .frame(maxHeight: .infinity)
                 List {

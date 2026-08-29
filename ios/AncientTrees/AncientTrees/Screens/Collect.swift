@@ -248,6 +248,7 @@ struct CollectView: View {
                     onSelectTree: { navigator.push = .tree($0) },
                     focus: centreOfYours,
                     spanMeters: spanOfYours,
+                    fitsTrees: true,
                     selected: $selectedTree)
         }
     }

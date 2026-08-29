@@ -85,6 +85,21 @@ struct TreeMap: UIViewRepresentable {
     /// is around here" and wrong when the answer is already known: the subject
     /// of the page was disappearing into a bubble marked 11.
     var clusters = true
+
+    /// FIT THESE TREES rather than aim at a point, for a map whose whole job is
+    /// showing a set: a city, a country, a walk, your own collection.
+    ///
+    /// `focus` and `spanMeters` cannot do it and Aarhus is the arithmetic.
+    /// Focus is the MEAN of the trees, which four trees at Moesgard drag south
+    /// of the two in the north, and the span is the widest extent fitted to the
+    /// map's WIDTH, which says nothing about a viewport whose usable height is
+    /// now a 360 point strip above a sheet. Seven trees, four on screen.
+    ///
+    /// A bounding box with padding answers both at once, on both axes, and it
+    /// is the primitive every map has for exactly this question. Off by
+    /// default: the Map tab opens on YOU and a tree's own page opens on the
+    /// tree, and neither wants to be reframed around whatever else is nearby.
+    var fitsTrees = false
     /// What the map is currently looking at, reported back so the list under it
     /// can be a list of what you are looking at.
     var region: Binding<MKCoordinateRegion?>? = nil
@@ -266,6 +281,15 @@ struct TreeMap: UIViewRepresentable {
         // was broken and it was arithmetic.
         let metresPerPointAtZoomZero = (40_075_017.0 / 512.0) * cos(latitude * .pi / 180)
         return max(1, min(20, log2(metresPerPointAtZoomZero * width / max(m, 1))))
+    }
+
+    /// The smallest box holding every one of these, or nil when there are none.
+    static func box(of points: [CLLocationCoordinate2D]) -> MLNCoordinateBounds? {
+        guard !points.isEmpty else { return nil }
+        let lats = points.map(\.latitude), lngs = points.map(\.longitude)
+        return MLNCoordinateBounds(
+            sw: .init(latitude: lats.min()!, longitude: lngs.min()!),
+            ne: .init(latitude: lats.max()!, longitude: lngs.max()!))
     }
 
     static func bounds(_ r: MKCoordinateRegion) -> MLNCoordinateBounds {
@@ -582,7 +606,37 @@ struct TreeMap: UIViewRepresentable {
             // of those came first. Re-aiming until somebody moves the map is
             // also what Apple Maps does with a sheet over it, and it costs
             // nothing: after the first pan or pinch this never runs again.
-            guard !userMoved, let focus = parent.focus else { return }
+            guard !userMoved else { return }
+
+            // The set, when the caller asked for the set. Padding on three
+            // sides for air, and the sheet's own coverage under it so nothing
+            // is fitted into the part nobody can see.
+            if parent.fitsTrees,
+               let box = TreeMap.box(of: parent.trees.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng) }
+                                     + parent.mine.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng) }) {
+                aimed = true
+                // AIR ONLY. MapLibre's own header: "Camera edge insets are
+                // formed as accumulation of map view's content insets and the
+                // edge padding passed to the method." The sheet is already in
+                // contentInset above, so adding it here again asked for 734
+                // points of padding on a 667 point phone and pushed every pin
+                // into a corner. This is the margin round the box and nothing
+                // else; the top is deeper because the back button and the
+                // title sit there.
+                map.setVisibleCoordinateBounds(
+                    box,
+                    edgePadding: UIEdgeInsets(top: 76, left: 44, bottom: 44, right: 44),
+                    animated: false)
+                // A single tree fits to a box with no size, which MapLibre
+                // answers with the deepest zoom it has: a doorstep. Back off to
+                // the same opening shot every other one-tree map takes.
+                if map.zoomLevel > 16.5 {
+                    map.setCenter(map.centerCoordinate, zoomLevel: 15.5, animated: false)
+                }
+                return
+            }
+
+            guard let focus = parent.focus else { return }
             aimed = true
             map.setCenter(focus,
                           zoomLevel: TreeMap.zoom(forMeters: parent.spanMeters),
