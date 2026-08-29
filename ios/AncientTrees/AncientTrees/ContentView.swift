@@ -24,6 +24,10 @@ struct ContentView: View {
         return s
     }()
     @State fileprivate var entitlement = Entitlement()
+    /// The opening frame, on a cold start only. A `@State` on the root is
+    /// exactly that: the root is built once per launch and never again when
+    /// somebody comes back from the home screen.
+    @State private var showingCover = !ProcessInfo.processInfo.arguments.contains("-no-cover")
     /// Reporting and blocking, which the social half cannot ship without.
     @State fileprivate var moderation = Moderation()
     /// What this account has already said about a tree, read from the account
@@ -531,13 +535,39 @@ struct ContentView: View {
                 }
             }
         }
+        // THE OPENING FRAME, and it is his, asked for four times before I
+        // stopped arguing (2026-08-29: "als in elke keer als je de app opent
+        // toon je een andere", and then "hier hebben we toch net een gesprek
+        // over gehad?").
+        //
+        // What I kept answering was about the wrong thing. An iOS LAUNCH
+        // SCREEN is a storyboard rendered before the app runs: static, one
+        // image, no code, so it genuinely cannot rotate. A cover the APP draws
+        // is a different object and can do anything, which is what he was
+        // describing all along.
+        //
+        // Kept short and cheap on purpose, because the objection underneath my
+        // arguing is still true: somebody opening this app may be standing
+        // outside. It goes after 1.4 seconds, any tap takes it away sooner, and
+        // it never appears on a return from the background, only on a cold
+        // start. And it shows the same photograph Discover is wearing this
+        // launch, so the two are one thing rather than two decorations.
         .overlay {
+            if showingCover, let photo = Heroes.image {
+                HeroCover(photo: photo) { withAnimation(.easeOut(duration: 0.35)) { showingCover = false } }
+                    .transition(.opacity)
+                    .zIndex(2)
+            }
             if needsPrimer {
                 LocationPrimer(treeCount: store.catalogue?.trees.count ?? 0,
                                onAllow: { primerAnswered = true; location.request() },
                                onSkip: { primerAnswered = true })
                     .transition(.opacity)
             }
+        }
+        .task {
+            try? await Task.sleep(for: .seconds(1.4))
+            withAnimation(.easeOut(duration: 0.35)) { showingCover = false }
         }
         .animation(.easeInOut(duration: 0.2), value: needsPrimer)
         // SIGNING OUT EMPTIES THIS PHONE (Hidde, 2026-08-29: "de favourites en
