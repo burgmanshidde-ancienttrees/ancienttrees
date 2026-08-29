@@ -2406,6 +2406,38 @@
    ],
    "trees": 3,
    "logged": true
+  },
+  {
+   "started": "2026-08-29T15:54:44+00:00",
+   "date": "2026-08-29",
+   "run_id": "33261512763",
+   "minutes": 114.7,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 407,
+   "denials": 40,
+   "denials_source": "permission_denials: Bash, Bash(Glob), Bash(curl), Bash(for), Bash(gh), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(mv), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 138221419,
+   "claims_held": [],
+   "commits": 28,
+   "cities_touched": 3,
+   "cities": [
+    {
+     "city": "assisi",
+     "trees": 6
+    },
+    {
+     "city": "cesky-krumlov",
+     "trees": 6
+    },
+    {
+     "city": "bamberg",
+     "trees": 4
+    }
+   ],
+   "trees": 16,
+   "logged": true
   }
  ],
  "schedule_changes": [
