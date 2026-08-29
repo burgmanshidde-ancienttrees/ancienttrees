@@ -58,7 +58,7 @@ SHOTS = [
     # Amsterdam, because their trees are photographed and their pages open on
     # pictures rather than on empty cards, and the sheet at card height so two
     # trees are visible under the map instead of a list covering it.
-    ("1-map", ["-tab=0", "-sheet=card", "-at=48.1372,11.5756"], 9),
+    ("1-map", ["-tab=0", "-sheet=card", "-at=41.8967,12.4822"], 9),
     # The Ficus of Alameda Apodaca rather than S'Ozzastru, which he also chose
     # and which is the better photograph: its page carries a ticket notice, and
     # "you need a ticket" is the wrong promise on the second panel of a store
