@@ -121,3 +121,25 @@ All four are now in `scripts/mailcheck.py` (DECLINING WHAT THEY OFFERED,
 ASKING TWICE, PROMISING UNNAMED WORK, FORM LINK IN A LIVE THREAD); ASKING
 TWICE reads
 data/outreach-sent.json so it knows what this address was already asked.
+
+## Ask plainly, and never dress our ask as their benefit (Hidde, 2026-08-29)
+
+A draft to Blarney Castle asked for a link like this: "a lot of people arrive
+at Blarney for the castle and have no idea the yew and the red cedar are there.
+If a mention or a link somewhere on your site would fit, it would help those
+trees get looked at, and I would be glad of it either way." His answer: **"feels
+a bit deceiving, just ask for help."**
+
+He is right and it generalises. The link is for US. Presenting it as a favour to
+the trees, or to their visitors, is a way of not asking while still asking, and
+a reader who spots it trusts the rest of the mail less. The plain version is one
+sentence and says what it wants: "And one ask, plainly: would a link to us fit
+somewhere on your site? It would help a lot in getting the map found."
+
+Note what this does NOT contradict. Batch 006's mention line frames the ask
+around the trees on purpose, and that line is true of the recipients: every one
+of them is a tree society whose own purpose is getting trees noticed. The
+failure here is different, and worth naming precisely: **inventing a benefit to
+them that we do not know they want**, in order to avoid saying we want
+something. When the benefit is real, name it. When the thing is simply an ask,
+ask.
