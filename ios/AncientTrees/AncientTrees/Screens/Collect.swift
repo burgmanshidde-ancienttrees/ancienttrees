@@ -81,11 +81,15 @@ struct CollectView: View {
     /// stay on `allVisited` because a sighting carries a name and a position
     /// and nothing else: counting a tree we cannot name a country for would be
     /// inventing the country.
-    private var collectedCount: Int { allVisited.count + sightings.yoursOnly.count }
+    private var collectedCount: Int {
+        showsYourCollection ? allVisited.count + sightings.yoursOnly.count : 0
+    }
 
-    private var countries: Int { Set(allVisited.map(\.country)).count }
+    private var countries: Int { showsYourCollection ? Set(allVisited.map(\.country)).count : 0 }
     private var cities: Int { Set(allVisited.map(\.citySlug)).count }
-    private var collectedSpecies: Set<String> { Set(allVisited.map(\.commonName)) }
+    private var collectedSpecies: Set<String> {
+        showsYourCollection ? Set(allVisited.map(\.commonName)) : []
+    }
     // restCount went with the line that printed it (2026-08-25).
 
     /// Yours first, then the rest, both in the grid's own order.
@@ -178,20 +182,24 @@ struct CollectView: View {
             .padding(.bottom, 12)
     }
 
-    /// SIGNED OUT, THIS PAGE HOLDS NOTHING OF YOURS (Hidde, 2026-08-29: "er
-    /// staan nog steeds favorieten en my trees bij m'n profiel als ik ben
-    /// uitgelogd").
+    /// SIGNED OUT, THE PAGE KEEPS ITS SHAPE AND LOSES ITS CONTENTS (Hidde,
+    /// 2026-08-29, twice. First: "er staan nog steeds favorieten en my trees
+    /// bij m'n profiel als ik ben uitgelogd". Then, on seeing them gone: "je
+    /// mag wel de twee categorieen your trees en favorieten daar houden, hou
+    /// dat consistent hoe het er uit ziet als je inlogt, alleen zet er beide
+    /// een inlog button onder").
     ///
-    /// Signing out empties the collection on this phone, and it has since this
-    /// morning, so the hearts and the ticks were already gone. What stayed were
-    /// the trees somebody photographed, which are deliberately NOT deleted: a
-    /// picture taken under a tree may not have reached the account yet, and
-    /// losing one is the single thing here that signing back in cannot undo.
+    /// He is right and the first version overshot. Hiding the two lanes made a
+    /// signed-out page a different page, so somebody who signs in meets a
+    /// layout they have never seen; keeping them and emptying them makes the
+    /// same page with the reason it is empty written into it. That is what
+    /// every app with lists behind an account does.
     ///
-    /// So they are kept and not shown. A signed-out page offers the account and
-    /// the camera and says nothing about a collection nobody is signed in to,
-    /// which is what every app with an account does; the photographs come back
-    /// with the person they belong to.
+    /// What is hidden is what is HIS rather than the furniture: the hearts, the
+    /// ticks, the counts, the pins on the map. The trees somebody photographed
+    /// are not deleted with them, deliberately: a picture taken under a tree
+    /// may not have reached the account yet, and it is the one thing here that
+    /// signing back in cannot undo.
     private var showsYourCollection: Bool { account.isSignedIn }
 
     /// Your trees, and the picker that chooses which list.
@@ -201,20 +209,23 @@ struct CollectView: View {
             // way they do on the page this is copied from. They sat in the
             // header, where they were both a wall between the name and the
             // list and a row of tap targets in the drag area.
-            if showsYourCollection { statsRow }
+            statsRow
             actionRow
             // YOUR OWN TREES COUNT AS HAVING STARTED. This asked only about
             // ours, so somebody whose whole collection is trees they
             // photographed themselves was told "your first tree is 1.3 km
             // away" directly under a row saying they have two (seen the moment
             // the map could show an own tree at all, 2026-08-27).
-            if !showsYourCollection || (allVisited.isEmpty && saved.favourites.isEmpty
-                && sightings.yoursOnly.isEmpty) { mission }
-            if showsYourCollection, !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
+            if showsYourCollection, allVisited.isEmpty, saved.favourites.isEmpty,
+               sightings.yoursOnly.isEmpty { mission }
+            if !showsYourCollection || !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
                 lanePicker
                 laneContent
             }
-            if !account.isSignedIn && saved.savedCount > 0 { backupBar }
+            // Not when a lane is already asking. Two sign-in controls one
+            // under the other is the "two buttons" he saw, and the lane's own
+            // is the one with the reason beside it.
+            if !account.isSignedIn && saved.savedCount > 0 && showsYourCollection { backupBar }
             // The floating bar's own room is kept by the sheet now
             // (BottomSheet), so this is air at the end of a list rather than a
             // hole the size of a tab bar.
@@ -455,7 +466,7 @@ struct CollectView: View {
                 // A section header is also the convention: Photos, Files and
                 // the App Store all pin a segmented control rather than let it
                 // scroll away from the list it governs.
-                if showsYourCollection, !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
+                if !showsYourCollection || !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
                     Section {
                         laneContent
                     } header: {
@@ -521,6 +532,9 @@ struct CollectView: View {
     /// longer moves when this rebuild changes the content's height.
     @ViewBuilder private var laneContent: some View {
         VStack(alignment: .leading, spacing: 28) {
+            if !showsYourCollection {
+                signedOutLane
+            } else {
             if lane == .seen, !sightings.yoursOnly.isEmpty {
                 // Yours first, because they are the ones nobody else has. Still
                 // marked as yours on the card, so the distinction survives
@@ -540,9 +554,45 @@ struct CollectView: View {
             } else {
                 ForEach(list) { card($0, heart: lane == .want) }
             }
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .id(lane)
+    }
+
+    /// What each lane says when nobody is signed in: what the lane is FOR, and
+    /// the one control that opens it.
+    ///
+    /// Copy per PRODUCT_COPY.md, which is why neither line is "you must sign in
+    /// to do this" (Hidde asked for a sign-in button "maar dan betere tekst").
+    /// The reader is the subject, the method is joined with "by", and the
+    /// second sentence names who keeps the thing rather than leaving it in the
+    /// passive. What somebody gets comes first; what we need from them second.
+    @ViewBuilder private var signedOutLane: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text(lane == .want
+                 ? "You save a tree for later by tapping its heart. Sign in and we keep the list for you."
+                 : "You collect a tree by photographing it while you stand in front of it. Sign in and we keep them for you.")
+                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            // THE WHITE ONE, not the green (Hidde, 2026-08-29: "doe maar
+            // alleen de witte knop niet de groene"). Green is the primary
+            // action on a screen and this screen already has one, the camera:
+            // two filled buttons in a column read as a choice between equals,
+            // and adding a tree is the thing we actually want somebody to do.
+            // Same shape as the Add a tree button on Settings.
+            Button { signingIn = true } label: {
+                Text("Sign in")
+                    .font(.brand(16, .bold))
+                    .foregroundStyle(Brand.moss)
+                    .frame(maxWidth: .infinity).frame(height: 48)
+                    .background(Brand.surface, in: .capsule)
+                    .overlay { Capsule().strokeBorder(Brand.moss.opacity(0.35), lineWidth: 1.5) }
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("lane-signin")
+        }
+        .padding(.top, 4)
     }
 
     // MARK: - the score

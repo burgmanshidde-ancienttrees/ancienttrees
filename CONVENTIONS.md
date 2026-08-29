@@ -195,3 +195,54 @@ lines in `ios/AncientTrees/AncientTrees/Kit/TreePhoto.swift` are ours.
 Recorded 2026-08-29 from what these libraries are known to do, after Hidde
 reported "plaatjes laden weer niet" for the second time in three days. No source
 URL captured at the time.
+
+---
+
+## How close two pins have to be before they become one
+
+**Reference: MapLibre and Mapbox GL.** Both cluster on a radius given in
+PIXELS, and both default to 50. The `supercluster` library underneath them
+defaults to 40 at a 512 tile size.
+
+**Reference: MapKit.** It takes no number at all. `MKMarkerAnnotationView`
+clusters when two annotation views would OVERLAP, which is the same question
+asked in the honest form: not "are these trees near each other" but "would
+these pins collide on screen".
+
+So the number belongs to the PIN, not to the ground. Ours are 38 points across,
+so the cell is 44: two pins that would touch become one bubble, two that would
+not stay two.
+
+**And the honest half of the answer, which no number fixes.** The case that
+prompted this was Baarn, where a bubble marked 2 covers two trees standing 34
+metres apart. At the zoom he was looking at, 34 metres is about ten points: the
+two pins are on top of each other whatever we do, and the bubble is telling the
+truth. What a smaller cell buys is the cases where the pins were merely near,
+not overlapping.
+
+Read 2026-08-29, after Hidde saw two trees a couple of streets apart in Baarn
+drawn as a bubble marked 2:
+- https://maplibre.org/maplibre-style-spec/sources/
+- https://docs.mapbox.com/style-spec/reference/sources/
+- https://github.com/mapbox/supercluster
+- https://developer.apple.com/documentation/mapkit/mkannotationview/clusteringidentifier
+
+---
+
+## What a sign-in sheet says
+
+**Reference: Google Maps, AllTrails, Airbnb, Apple.** One short line about what
+an account is FOR, and then the buttons. None of them counts what you have, and
+none of them describes the syncing.
+
+Both halves matter and we had got both wrong: "Sign in to keep your 7 trees"
+prints a fact about this moment into a sentence, and "Sign in and they follow
+you to the website and to any phone" is a promise about a mechanism that has to
+stay true through every change to it. Hidde, 2026-08-29: "hou het maar wat
+oppervlakkiger zodat we niet elke keer als we iets wijzigen die tekst niet meer
+klopt."
+
+So the copy says what somebody GETS and never how, and never how much.
+
+Recorded from our own corpus, 2026-08-29. No source URL captured; the wording
+of each app is described from use.

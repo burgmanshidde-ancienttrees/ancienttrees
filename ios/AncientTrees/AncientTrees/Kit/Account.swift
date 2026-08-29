@@ -424,41 +424,46 @@ public enum SignInReason: Equatable, Identifiable {
     case feedback                // votes, reports and tips need the account
                                  // that lets us answer (2026-08-21 ruling)
 
+    /// SHALLOW ON PURPOSE (Hidde, 2026-08-29, reading "Sign in to keep your 7
+    /// trees" over "Sign in and they follow you": "kijk even naar conventies
+    /// wat voor copy je normaal hier zegt, hou het maar wat oppervlakkiger
+    /// zodat we niet elke keer als we iets wijzigen die tekst niet meer
+    /// klopt").
+    ///
+    /// Convention, recorded in CONVENTIONS.md: a sign-in sheet says in one
+    /// short line what an account is for and stops. Google Maps ("Sign in to
+    /// get the most out of Maps"), AllTrails, Airbnb and Apple all do the same
+    /// thing, and none of them counts anything or promises a mechanism.
+    ///
+    /// Two faults in the line he read. It carried a NUMBER, which is a fact
+    /// about this moment printed into a sentence, and PRODUCT_COPY.md already
+    /// bans that anywhere nothing regenerates it. And "they follow you to the
+    /// website and to any phone" describes our sync, which is a promise that
+    /// has to stay true through every change we make to it.
+    ///
+    /// So the copy says what somebody GETS and never how. A line like that
+    /// survives a rewrite of everything underneath it.
     var headline: String {
         switch self {
-        // WHAT AN ACCOUNT IS FOR, in the words Hidde used when he read the
-        // old one (2026-08-29: "sign in zin is nog steeds onzinnig; register
-        // and log in to add and save trees"). It said "Keep your trees" over
-        // "An account carries your collection to the website and to any phone
-        // you sign in on", which describes our plumbing at the exact moment
-        // somebody is deciding whether to bother. This is the general ask, and
-        // the general ask is raised by the two things an account gates: adding
-        // a tree and saving one.
-        case .general: "Sign in to add and save trees"
+        case .general, .keepCollection: "Sign in to add and save trees"
         // Short on purpose. An earlier version put the tree's name in the
         // headline and "Keep The Last Elm of Stationsplein" ran the full width
         // of the phone at title size, which is a layout that only holds for the
-        // short names. The name belongs in the sentence underneath, where it can
-        // wrap without breaking anything.
-        case .keepTree: "That one is yours"
-        case .keepCollection(let n): n == 1 ? "Sign in to keep your tree" : "Sign in to keep your \(n) trees"
-        case .seasonAlerts: "Be told when a tree near you peaks"
+        // short names.
+        case .keepTree: "Sign in to keep this one"
+        case .seasonAlerts: "Sign in for season alerts"
         case .feedback: "Sign in to have your say"
         }
     }
 
     var detail: String {
         switch self {
-        case .general:
-            "You can add a tree and save the ones you like once you have an account. One email address, no password."
-        case .keepTree(let name):
-            "\(name) is yours. Sign in and your collection follows you to the website and to any phone."
-        case .keepCollection:
-            "Sign in and they follow you to the website and to any phone you use."
+        case .general, .keepCollection, .keepTree:
+            "An account keeps what you collect and save."
         case .seasonAlerts:
             "We can only tell you about a tree if we know where to reach you."
         case .feedback:
-            "Every vote, correction and tip gets checked and answered, and the account is how the answer reaches you. One email, no password."
+            "Every vote, correction and tip gets checked and answered, and your account is how the answer reaches you."
         }
     }
 }
