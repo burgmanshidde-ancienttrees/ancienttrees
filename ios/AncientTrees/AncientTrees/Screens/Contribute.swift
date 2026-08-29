@@ -115,7 +115,7 @@ struct ContributeView: View {
                         }
                     } footer: {
                         if !account.isSignedIn {
-                            Text("Sending needs a free account, one email and no password, so we can thank you, ask a question if we need to, and tell you what your tip changed.")
+                            Text("Sending needs a free account, so we can thank you, ask a question if we need to, and tell you what your tip changed.")
                         }
                     }
                 }

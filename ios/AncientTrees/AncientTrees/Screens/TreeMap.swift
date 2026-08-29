@@ -550,6 +550,10 @@ struct TreeMap: UIViewRepresentable {
         /// street zoom, so the list still feels live.
         /// Whether the opening shot has been taken with a real content inset.
         var aimed = false
+        /// The sheet coverage the opening shot was taken with, so a shot taken
+        /// before the sheet had reported its height can be retaken once and
+        /// only once. See settle().
+        var aimedCoverage: CGFloat = -1
         /// Set the moment a finger moves the camera. After that the map belongs
         /// to whoever is holding the phone and nothing here aims it again.
         var userMoved = false
@@ -599,14 +603,21 @@ struct TreeMap: UIViewRepresentable {
 
             // AND NOW AIM, with an inset that is finally real.
             //
-            // UNTIL A FINGER TOUCHES IT, rather than exactly once. The sheet
-            // reports its height through the environment while it is still
-            // settling, so the first layout pass can arrive with `peek` and the
-            // real answer land a frame later; aiming once would take whichever
-            // of those came first. Re-aiming until somebody moves the map is
-            // also what Apple Maps does with a sheet over it, and it costs
-            // nothing: after the first pan or pinch this never runs again.
-            guard !userMoved else { return }
+            // ONCE, and once more only if the first shot was taken before the
+            // sheet had said anything. The sheet reports its height through the
+            // environment while it is still settling, so the first layout pass
+            // can arrive with no coverage at all and the real answer land a
+            // frame later; aiming strictly once would take whichever came
+            // first.
+            //
+            // It is NOT "aim until a finger moves the map", which is what this
+            // said for an hour. Dragging the SHEET is not moving the map, so
+            // every drag re-framed the camera under somebody's thumb, and a map
+            // that jumps while you are reading the list under it is worse than
+            // a map that opened slightly wrong.
+            guard !userMoved, !aimed || abs(coverage - aimedCoverage) > 1 && aimedCoverage <= 0
+            else { return }
+            aimedCoverage = coverage
 
             // The set, when the caller asked for the set. Padding on three
             // sides for air, and the sheet's own coverage under it so nothing
@@ -986,11 +997,29 @@ enum MapLayers {
         try? FileManager.default.removeItem(at: stale)
     }
 
-    /// Past this there is nothing left to pile up, and the subject of a tree
-    /// page should not disappear into a bubble marked 11.
+    /// WHERE THE PILING STOPS, and both numbers are the convention rather than
+    /// a guess (Hidde, 2026-08-29: "de pinnen lijken wat te snel te clusteren,
+    /// het zou in dit geval nicer zijn als ze wel gewoon apart te zien zijn wat
+    /// zijn hier conventies in?"). He was looking at two trees a couple of
+    /// streets apart in Baarn drawn as a bubble marked 2.
+    ///
+    /// What the references do, recorded in CONVENTIONS.md: MapLibre and Mapbox
+    /// cluster on a radius in PIXELS, defaulting to 50; the supercluster
+    /// library underneath them defaults to 40; MapKit does not take a number at
+    /// all and clusters when two annotation views would OVERLAP. All three
+    /// answer the same question, which is whether the pins would collide, not
+    /// whether the trees are near each other.
+    ///
+    /// Ours are 38 points across, so 44 is a pin's width plus a hair: two that
+    /// would touch become one bubble and two that would not stay two. It was
+    /// 60, which is a thumb rather than a pin, and it piled up trees that were
+    /// comfortably far apart on screen.
+    private static let clusterCellPoints = 44.0
+    /// And past this nothing piles up at all. Left at 15 deliberately: raising
+    /// it makes pins cluster for LONGER, which is the opposite of what was
+    /// asked, and lowering it drops a whole city's worth of overlapping pins on
+    /// the map at a zoom where they cannot be told apart.
     private static let clusterMaxZoom = 15.0
-    /// How close two pins have to be, in points, before they become one bubble.
-    private static let clusterCellPoints = 60.0
 
     /// WHICH GRID CELL A POINT FALLS IN, as one number.
     ///

@@ -782,8 +782,20 @@ struct MapTab: View {
                 // place they live). One root, three forms, no "yours" left
                 // anywhere. Hidde asked for "your trees" when the tab still
                 // said Yours; this follows the reason rather than the word.
+                // BOTH OF THESE ARE ABOUT A COLLECTION, so signed out they
+                // ask for the account rather than filtering to nothing (Hidde,
+                // 2026-08-29: "als je uitgelogd op favourites of my trees
+                // filter klikt moet er ook een inlog scherm opkomen"). The
+                // filter is not broken while you are signed out, it is empty,
+                // and a control that quietly empties the map is worse than one
+                // that says what it needs. Same gate as the heart and the
+                // camera, through the same nudge.
                 FilterChip(label: "Favourites", icon: "heart",
                            on: filters.favouritesOnly) {
+                    guard account.isSignedIn else {
+                        nudge.require(.general)
+                        return
+                    }
                     let want = !filters.favouritesOnly
                     filters = MapFilters()
                     filters.favouritesOnly = want
@@ -792,6 +804,10 @@ struct MapTab: View {
                 // what the word means (Hidde, 2026-08-26). One root, one word.
                 FilterChip(label: "My trees", icon: "checkmark.seal",
                            on: filters.collectedOnly) {
+                    guard account.isSignedIn else {
+                        nudge.require(.general)
+                        return
+                    }
                     let want = !filters.collectedOnly
                     filters = MapFilters()
                     filters.collectedOnly = want
