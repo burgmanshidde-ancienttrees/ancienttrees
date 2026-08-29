@@ -105,7 +105,7 @@ struct CollectSheet: View {
     @State private var placing: CLLocationCoordinate2D?
     /// How tall the sheet stands, which is a property of the STEP rather than
     /// of the flow. See presentationDetents below.
-    @State private var detent: PresentationDetent = .medium
+    @State private var detent: PresentationDetent = .height(320)
     @State private var shot: UIImage?
     /// Where the shutter actually fell. Held separately from `origin` because
     /// the view can be re-evaluated with a newer fix while the outcome screen
@@ -192,10 +192,20 @@ struct CollectSheet: View {
         // somebody running large Dynamic Type can still drag it up rather than
         // meeting clipped text. Every later step is a map, a list or a form,
         // and those want the whole sheet.
-        .presentationDetents(stage == .intro ? [.medium, .large] : [.large],
+        // FITTED, not medium. `.medium` is half the phone whatever is on it,
+        // and this step holds a title, a line and two buttons: on a large phone
+        // that left a hand's width of empty white between the sentence and the
+        // buttons, which reads as something that failed to load rather than as
+        // air. Apple's own short action sheets are sized to their content.
+        //
+        // `.large` stays in the set for the same reason it always did: somebody
+        // running large Dynamic Type can drag it up rather than meeting clipped
+        // text. Every later step is a map, a list or a form, and those want the
+        // whole sheet.
+        .presentationDetents(stage == .intro ? [.height(320), .large] : [.large],
                              selection: $detent)
         .onChange(of: stage) { _, now in
-            detent = now == .intro ? .medium : .large
+            detent = now == .intro ? .height(320) : .large
         }
         .presentationDragIndicator(.visible)
         .fullScreenCover(isPresented: $camera) {
