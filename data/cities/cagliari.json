@@ -60,7 +60,8 @@
         "height": 3648
       },
       "height_m": 22.0,
-      "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 1200
     },
     {
       "id": "cag_005",
@@ -92,7 +93,8 @@
         "status": "missing"
       },
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 980
     },
     {
       "id": "cag_001",
@@ -156,7 +158,8 @@
         "status": "missing"
       },
       "height_m": 15.0,
-      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 294
     },
     {
       "id": "cag_003",
@@ -195,7 +198,8 @@
         "status": "missing"
       },
       "height_m": 16.0,
-      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 174
     },
     {
       "id": "cag_007",
@@ -227,7 +231,8 @@
         "status": "missing"
       },
       "height_m": 17.0,
-      "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (1 m away)."
+      "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (1 m away).",
+      "girth_cm": 300
     },
     {
       "id": "cag_006",
@@ -259,7 +264,8 @@
         "status": "missing"
       },
       "height_m": 15.0,
-      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 630
     },
     {
       "id": "cag_008",
@@ -289,7 +295,10 @@
       "curation_status": "flagged",
       "notes": "Day trip entry, 18km/23 min train from Cagliari centre, per the day-trip boundary rule. Two register entries (MASAF sheets 01/D323/CA/20 and 02/D323/CA/20) folded into one entry per the twin/group convention: the larger pine (girth 340cm, height 19.5m) stands in the open Piazza San Pantaleo; the smaller (girth 265cm, height 16.7m) stands inside the cathedral's own sagrato (walled forecourt) a short walk away on Via San Martino. Both are the Comune di Dolianova's own designated 'Bellezza naturale' landmarks, each with its own page explicitly stating public access ('libera e fruibile a tutti'). Age is the municipality's own register estimate, a band under 100 years, deliberately not sharpened.",
       "location_precision": "confirmed",
-      "story": "Two Aleppo pines stand at the doorstep of one of Sardinia's most important Romanesque churches, in the small town of Dolianova, about 23 minutes from Cagliari by regional train. The larger, 3.4 metres round and just under 20 metres tall, grows in the open Piazza San Pantaleo, facing the cathedral's stone facade. The second, a metre smaller round, stands inside the sagrato, the walled forecourt where the cathedral keeps its own patch of ground.\n\nThe Concattedrale di San Pantaleo behind them was built between the early 1100s and 1289, one of the oldest and most complete Romanesque buildings on the island, its sandstone walls carved with the geometric and animal motifs typical of the period. The pines are far younger: Dolianova's own register puts each at under a century old, but they have grown up in the shadow of a building that predates them by 800 years, and the town has designated both as protected natural landmarks in their own right.\n\nBoth stand on open, unticketed ground, which the town's own listing describes in as many words as free and open to everyone. A short detour off any Cagliari itinerary, and a chance to see Italy's national register of monumental trees include something other than a giant."
+      "story": "Two Aleppo pines stand at the doorstep of one of Sardinia's most important Romanesque churches, in the small town of Dolianova, about 23 minutes from Cagliari by regional train. The larger, 3.4 metres round and just under 20 metres tall, grows in the open Piazza San Pantaleo, facing the cathedral's stone facade. The second, a metre smaller round, stands inside the sagrato, the walled forecourt where the cathedral keeps its own patch of ground.\n\nThe Concattedrale di San Pantaleo behind them was built between the early 1100s and 1289, one of the oldest and most complete Romanesque buildings on the island, its sandstone walls carved with the geometric and animal motifs typical of the period. The pines are far younger: Dolianova's own register puts each at under a century old, but they have grown up in the shadow of a building that predates them by 800 years, and the town has designated both as protected natural landmarks in their own right.\n\nBoth stand on open, unticketed ground, which the town's own listing describes in as many words as free and open to everyone. A short detour off any Cagliari itinerary, and a chance to see Italy's national register of monumental trees include something other than a giant.",
+      "girth_cm": 340,
+      "height_m": 19.5,
+      "verify_notes": "Height 19.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "cag_009",

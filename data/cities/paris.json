@@ -63,7 +63,8 @@
         "height": 1024
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 365
     },
     {
       "id": "par_002",
@@ -216,7 +217,8 @@
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Platanus orientalis in Parc Monceau flagged remarquable, circumference 645cm and height 31m, matching the story's figures.",
       "location_precision": "confirmed",
       "height_m": 31.0,
-      "verify_notes": "Height 31.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 31.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 645
     },
     {
       "id": "par_006",
@@ -251,7 +253,8 @@
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Sequoiadendron giganteum in the park flagged remarquable (circumference 553cm, height 33m). Second independent source found, sequoias.eu's national survey of giant sequoias in France, which lists this specimen at 40m/485cm circumference; figures vary by measurement date but confirm the same tree. Photo's own embedded GPS coordinates (48.87968, 2.38057) land about 10m from this pin, an independent confirmation.",
       "location_precision": "confirmed",
       "height_m": 33.0,
-      "verify_notes": "Height 33.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 33.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 553
     },
     {
       "id": "par_007",
@@ -325,7 +328,8 @@
         "kind": "autumn colour"
       },
       "height_m": 27.0,
-      "verify_notes": "Height 27.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 27.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 445
     },
     {
       "id": "par_009",
@@ -358,7 +362,8 @@
       "notes": "Position confirmed via the Ville de Paris open tree registry: of two Platanus x hispanica flagged remarquable in the park, this one's height (30m) matches the story exactly and its circumference (670cm) is close to the six metres reported.",
       "location_precision": "confirmed",
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 670
     },
     {
       "id": "par_010",
@@ -400,7 +405,8 @@
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Styphnolobium japonicum in the park flagged remarquable (circumference 410cm, height 12m), slightly larger than the 375cm/10m widely reported in press coverage, consistent with continued growth since those articles were written.",
       "location_precision": "confirmed",
       "height_m": 12.0,
-      "verify_notes": "Height 12.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 12.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 410
     },
     {
       "id": "par_013",
@@ -440,7 +446,8 @@
         "kind": "autumn colour"
       },
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 267
     },
     {
       "id": "par_014",
@@ -472,7 +479,8 @@
         "status": "missing"
       },
       "height_m": 24.0,
-      "verify_notes": "Height 24.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 24.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 470
     },
     {
       "id": "par_015",
@@ -503,7 +511,8 @@
         "status": "missing"
       },
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 380
     },
     {
       "id": "par_016",
@@ -537,7 +546,8 @@
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "height_m": 3.0,
-      "verify_notes": "Height 3.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 3.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 110
     },
     {
       "id": "par_017",
@@ -571,7 +581,8 @@
         "kind": "flowers"
       },
       "height_m": 11.0,
-      "verify_notes": "Height 11.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 11.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 100
     },
     {
       "id": "par_018",
@@ -597,7 +608,8 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 10.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 145
     },
     {
       "id": "par_019",
@@ -628,7 +640,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 19.0,
-      "verify_notes": "Height 19.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 19.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 360
     },
     {
       "id": "par_020",
@@ -657,7 +670,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 505
     },
     {
       "id": "par_021",
@@ -696,7 +710,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 12.0,
-      "verify_notes": "Height 12.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 12.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 163
     },
     {
       "id": "par_022",
@@ -727,7 +742,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 490
     },
     {
       "id": "par_023",
@@ -759,7 +775,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 16.0,
-      "verify_notes": "Height 16.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 16.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 235
     },
     {
       "id": "par_024",
@@ -799,7 +816,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 265
     },
     {
       "id": "par_025",
@@ -839,7 +857,8 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "height_m": 26.0,
-      "verify_notes": "Height 26.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 26.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 380
     },
     {
       "id": "par_026",
@@ -879,7 +898,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 10.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 155
     },
     {
       "id": "par_027",
@@ -910,7 +930,8 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "height_m": 24.0,
-      "verify_notes": "Height 24.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 24.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
+      "girth_cm": 470
     },
     {
       "id": "par_028",

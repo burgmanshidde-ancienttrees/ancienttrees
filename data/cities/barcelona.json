@@ -57,7 +57,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "A Wikimedia Commons file named similarly (\"Alzina del passeig de Gracia\") turned out on inspection to be a different holm oak, L'alzina de Mossen Cinto, elsewhere on Passeig de Gracia. Not used, to avoid misattributing a photo to the wrong tree. Pin corrected 2026-07-26: OpenStreetMap carries this tree as a mapped node from Barcelona's own \"Arbres d'interes local\" catalogue, tagged protected=yes, species Quercus ilex ssp. ilex, described as \"c. Encarnacio 13\", about 75m from the previous street-level estimate. Confirmed on that official-catalogue sourcing. Photo found and approved 2026-07-28: Commons category \"Jardi de l'Alzina\" (a companion photo in the same series shows graffiti reading \"SALVEM L'ALZINA\", the exact neighbourhood campaign named above). Viewed directly: shows the garden with a wooden-fenced planting bed and a sign explicitly reading \"Aquest corralet protegeix les arrels de l'alzina\" (\"This enclosure protects the oak's roots\"), the oak's own dark evergreen canopy visible overhanging top-right of frame. Not a clean full portrait, the tree is only partially in frame, but the sign gives an explicit textual identification of this exact tree that the photo itself carries, stronger confirmation than most park photos get.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 270
     },
     {
       "id": "bcn_002",
@@ -122,7 +123,8 @@
       "curation_status": "flagged",
       "notes": "Age given is for the current regrown stem only; the original tree's age before it died back or was cut is not recorded in any source found. Story states this honestly rather than implying continuity of age. Photo found 2026-07-26: an iNaturalist observation from the \"Arboles Singulares de Espana\" project, titled \"Garrofer de la Placa de la Natura del Park Guell\", the exact tree by name, 17m from this pin. Viewed directly, shows carob pods on the branches, consistent with the species.",
       "location_precision": "confirmed",
-      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide."
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide.",
+      "girth_cm": 410
     },
     {
       "id": "bcn_004",
@@ -154,7 +156,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-26 from the park's general location to the tree itself: OpenStreetMap carries this tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Parc del Laberint\", species Cedrus deodara, about 400m from the previous general-park estimate and matching the barcelona.cat catalogue page already cited as a source. Access note updated 2026-07-28: a fresh news sweep found the whole park, not just the vegetal maze, is closed to the public March 2025-March 2027 for a EUR1.5m cypress replacement and irrigation renovation (beteve.cat, 3Cat, El Punt Avui, all March 2025; confirmed still under way by an Ajuntament de Barcelona article dated 6 December 2025 on cypresses being planted). The tree itself is not reported damaged, only inaccessible while works continue; worth re-confirming reopening closer to March 2027 before removing this note.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 330
     },
     {
       "id": "bcn_005",
@@ -229,7 +232,8 @@
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Antic Jardi Botanic\", species Fraxinus pennsylvanica, matching both the garden (an alternate name for the Jardi Botanic Historic) and the species. Confirmed on that match.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 320
     },
     {
       "id": "bcn_007",
@@ -305,7 +309,8 @@
           7
         ],
         "label": "July, when its pink silk-thread flowers open"
-      }
+      },
+      "girth_cm": 280
     },
     {
       "id": "bcn_009",
@@ -405,7 +410,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Sourced from the municipal Arbres d'interes local register (register_id 99400455029, catalogued 1994) plus an independent beteve.cat feature on the park's notable trees, which supplies the Australian origin, the not-a-conifer point and the claim that its trunk perimeter is the second largest in Barcelona. That claim is deliberately softened in the story to 'one of the thickest', per hard rule 8, because it is a different metric from the 'biggest tree' claim the city page already makes for the Sot de l'Estany wingnut and the two should not be set against each other. Height and girth differ between the register (27 m, 5.5 m) and bcnsostenible (22.5 m, 5 m); both are given as a range. Pin is the register coordinate alone, about 35 m from the Cascada monument, with no OSM node to cross-check, so precision is approximate rather than confirmed. Photo viewed directly before approval: Wiki Loves Earth Catalonia 2014 upload, full tree in daylight, trunk and crown both readable, tree occupies the centre band and survives a wide card crop.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 550
     },
     {
       "id": "bcn_012",
@@ -482,7 +488,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Municipal register (register_id 99400679805, catalogue number 0039-01-93, catalogued 1993) plus an independent beteve.cat article about the species in Barcelona, which supplies the fruit description, the fact that it is not edible, and the timing: the fruit falls in late autumn with some hanging into winter. That article is the basis for best_time. Dimensions differ between the register (16 m tall, crown 19 m) and bcnsostenible (14 m, crown 13.5 m) and are given as a range. Pin confirmed on three-way agreement: register 41.388569/2.187622, OSM node 6924265087 at 19 m, and iNaturalist observation 330848719 at 12 m, the last of which is a photograph taken in the park. Photo approved 2026-08-08 in a viewing pass: the Commons file by Teresa Grau Ros names the same catalogue number 0039-01-93 and shows the bare winter crown filling the frame in daylight. The iNaturalist observation, a close-up of a split fruit on the ground, was rejected as no portrait of the tree. The megafauna explanation for the fruit is presented as a hypothesis, which is what it is.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 260
     },
     {
       "id": "bcn_014",
@@ -515,7 +522,8 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED for a single-source age. Everything traceable about the 1904 planting year is a rendering of the same municipal record (register_id 99400455018, catalogued 1994): barcelona.cat, guia.barcelona and bcnsostenible are three faces of one catalogue, not three sources. No independent confirmation was found, and the two municipal renderings disagree with each other on the tree's size, 29 m and 3.1 m girth in the register against 26 m and 2.90 m on guia.barcelona. The story states this plainly rather than implying a firm date. Existence and species are not in doubt: the tree is catalogued, mapped, and 70 m from bcn_010. Pin confirmed: register 41.382401/2.167735 and OSM node 6924165385 at 41.382393/2.167705, three metres apart. Casa de la Caritat's identity as the present-day CCCB is from Catalan Wikipedia, independent of the tree register. No open-licence photograph of this tree was found on Commons, iNaturalist or Flickr this pass; an honest gap rather than a substitute of the courtyard.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 310
     },
     {
       "id": "bcn_015",
@@ -548,7 +556,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Municipal register (register_id 99400455080, catalogued 1994) for the tree, plus Catalan Wikipedia and carrers.barcelona for the estate history, which are independent of the tree catalogue and name the catalogued holm oak specifically. Dimensions differ between the register (16 m tall, crown 14 m, girth 2.1 m) and bcnsostenible (over 14 m, crown 8 m); the height is given as a rough figure and the crown is left out of the story rather than picking a side. Pin confirmed: register 41.380174/2.125790 and OSM node 6924087388 at four metres. The April 2026 renovation approval is from metropoliabierta and barnadiario; neither mentions the oak, so the story says only that the redesign was approved and the catalogue protects the tree, which is what the sources support. No open-licence photograph found this pass. 127 m from bcn_007, so Les Corts becomes a two-tree stop rather than a single pin.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 210
     },
     {
       "id": "bcn_016",
@@ -592,7 +601,8 @@
       "curation_status": "flagged",
       "notes": "MERGE BLOCKER, do not publish without a decision. The register's planting year of 1771 (register_id 99400454989, catalogue number 0117-06-96, catalogued 1996) makes this tree 255 years old, older than the 250-year holm oak that barcelona.json's intro, question_answer, question_context and first FAQ all present as the oldest tree in Barcelona. The two claims cannot both stand unqualified on the same site. The distinction the story draws is real and defensible: the oak was ring-dated by dendrochronologists, the olive carries an unsupported register estimate. But merging this tree means either rewording the oldest-tree copy to say 'the oldest tree in Barcelona whose age has actually been measured', or holding the tree back. That is a human call, not a run's. FLAGGED for the age, which is single-sourced and unmeasured; hence the deliberately wide age_min. Species field uses the canonical 'Olive (Olea europaea)' per hard rule 9 so it groups with the other 13 olives on the site; the register records it as Olea europaea var. sylvestris and the story says it is the wild form. Dimensions differ between the register (17 m, girth 2.9 m, crown 21 m) and bcnsostenible (14 m, girth 1.6 m, crown 13 m), a very wide disagreement inside one catalogue, so ranges are used and the girth is left out. Pin confirmed three ways: register 41.414909/2.154906, OSM node 4618688164, and the EXIF GPS of the Commons photograph at 41.414910/2.154910. Photo viewed directly before approval: full olive crown above a Park Guell stone wall, daylight, colour, two people in frame for scale, tree occupies the centre band.",
       "location_precision": "confirmed",
-      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide."
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide.",
+      "girth_cm": 290
     },
     {
       "id": "bcn_017",
@@ -634,7 +644,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Municipal register (catalogue number 0010-03-93, catalogued 1993, planting year 1923) plus catacultural.com, which is independent of the city and places the tree precisely inside the garden ('a l'esquerra de l'amfiteatre, a sota del restaurant') and gives the pica-pica name and the reason for it. Pin confirmed: the register coordinate and OSM node 4492855030, which carries the same catalogue as a surveyed node tagged Lagunaria patersonia, are the same point. Dimensions differ between the two municipal renderings, 18 m tall / girth 2.4 m / crown 20 m in the register against 15 m / 2.02 m / crown 10 m on bcnsostenible; the story uses only the girth, which is the closer of the two pairs. The two renderings also give different addresses for the same tree, Passatge de Martras 26 and Passeig de Santa Madrona 38; both are entrances to the same garden. Species spelling: the register writes patersonia, the corpus canonical name is Lagunaria patersonii, used here per hard rule 9. best_time is June only, deliberately, because the flowering runs into July and the garden is shut from 15 June; a badge that lights up while the gate is locked would be a broken promise. Photo viewed directly before approval: full tree in daylight, colour, trunk and crown both readable, tree fills the frame and holds the centre band, people on a bench at the left edge for scale.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 240
     },
     {
       "id": "bcn_018",
@@ -667,7 +678,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Municipal register (catalogue number 0154-03-11, catalogued 2011, planting year 1920) plus two sources independent of it: catacultural.com, which places the tree inside the garden ('abans d'arribar al mirador'), and iNaturalist observation 282020003 from May 2025, an identified Araucaria bidwillii 12 m from this pin. Pin confirmed three ways: register 41.37038/2.15920, OSM node 4506691425 at 6 m, iNaturalist at 12 m. Dimensions differ between the municipal renderings, 17 m tall and girth 1.4 m in the register against 16 m and 1.14 m on bcnsostenible; the story quotes neither as a precise figure. The Jurassic lineage, the fifty-metre wild height, the edible seeds and the three-to-six-month germination all come from the municipal record's own species note. No photo used: the only image found in place is iNaturalist observation 282020003, which is CC BY-NC and therefore outside the licences this project accepts. Honest gap.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 140
     },
     {
       "id": "bcn_019",
@@ -701,7 +713,8 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED for the species, which is the point of the story rather than a hidden weakness. Three sources give three names: barcelona.cat and bcnsostenible (two renderings of the municipal record, catalogue number 0023-03-93, catalogued 1993) say Erythrina corallodendron; our import of the city's open data file says Erythrina falcata; OSM node 4492857600 says Erythrina lysistemon. The Commons category created for this tree is filed under corallodendron too. The species field follows the municipal record and the Commons category, which is the majority and the only one carrying a descriptive assessment, and the story states the disagreement out loud rather than picking quietly. Existence, position and age are not in doubt. Second source independent of the city: catacultural.com, which describes 'un exemplar de grans dimensions al cami que comunica els Jardins del Teatre Grec amb els Jardins Laribal' and confirms its protected status. Pin approximate: the register gives 41.36928/2.15860, OSM node 4492857600 gives 41.36939/2.15861 (12 m), bcnsostenible gives 41.36953/2.15909 (about 50 m from the register). The OSM node is used because it is the surveyed one, but three municipal-derived positions spread over 50 m is not a confirmed pin. Dimensions differ too: 20 m tall and girth 2.7 m in the register against 15 m and 2.6 m on bcnsostenible. The Forestier attribution is from the municipal assessment text. No best_time set: with the species unresolved, the flowering month cannot be stated honestly. Photo viewed directly before approval: the low wide crown over the path, trunk and main limbs readable, daylight, colour, tree fills the frame and holds the centre band. Slightly backlit but not dark.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "girth_cm": 270
     },
     {
       "id": "bcn_020",
@@ -741,7 +754,8 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED twice. First for the age: everything traceable about the 1925 planting is a rendering of the same municipal record (register_id 99400661117), and no independent source was found. Second for the pin: the two municipal renderings disagree badly. The register and guia.barcelona give Placa de Carles Buigas 8 at 41.37208/2.15334; bcnsostenible gives Passeig de les Cascades 1 at 41.37007/2.15413, about 250 m away up the hill. Both addresses sit on the same terraced slope above Avinguda Maria Cristina and there is no OSM node for this tree to break the tie (Overpass returns only the neighbouring Aesculus of the same square, node 6924151985, which matches its own register coordinate exactly, so the register's geocoding is not systematically wrong here). The register coordinate is used because it matches the register's own address, and the precision is marked approximate. Third oddity worth recording: bcnsostenible describes the tree as 'una de les Tipuana tipu mes grans de la ciutat de Barcelona, malgrat no estar catalogada', not catalogued, while the register carries it with a register_id. The superlative in the story is deliberately hedged and species-limited per hard rule 8, so it does not collide with the girth claim already made for the Ciutadella casuarina (bcn_011). The honeydew is a well documented property of the species in Barcelona and is stated as a species trait, not as a measurement of this tree. No open-licence photograph found on Commons, iNaturalist or Flickr this pass.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 330
     },
     {
       "id": "bcn_021",
@@ -772,7 +786,8 @@
       "curation_status": "flagged",
       "notes": "FLAGGED for having no age at all. The city register's planting-year field is empty and the Generalitat's file gives none either, so no age_min or age_max is set and the age_estimate says so plainly rather than inventing a range from the neighbours (the green ash beside it, bcn_006, is dated 1924). Everything else is unusually well sourced for Barcelona, because two separate authorities cover it: the city register (register_id 99400637941, catalogued 2015, 29 m tall, girth 2.5 m, crown 15 m) and the Generalitat de Catalunya, which registers it as the Freixe de Montjuic, code MA-13.931.02, at 29.0 x 2.5 x 15.4 m and declared it monumental on 2 April 2025. The tallest-in-Catalonia claim and the up-to-four-degrees microclimate figure both come from the Museu de Ciencies Naturals de Barcelona's own account of the declaration, which is the garden's operator and independent of the tree register. Pin approximate, and deliberately so: the city register gives 41.366868/2.152084 and the Generalitat gives 41.366939/2.151886, 18 m apart, and the neighbouring monumental sycamore (bcn_022) stands about 7 m from this point. An 18 m uncertainty cannot tell the two apart on the ground, so the pin gets someone into the right corner of the ravine and the garden's own labels do the rest. Photo: the Generalitat publishes File:Freixe de Montjuic.jpg on Commons under its attribution-gencat licence, but it was viewed directly and rejected. The frame is a dark shaded ravine in which an araucaria takes the foreground and no ash is identifiable, which fails the Cadiz standard on every count. Honest gap.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 250
     },
     {
       "id": "bcn_022",
@@ -811,7 +826,8 @@
       "curation_status": "flagged",
       "notes": "FLAGGED for having no age. The city register's planting year reads 'Per determinar' and the Generalitat's file gives none, so no age_min or age_max is set. Two independent authorities cover the tree: the city register (register_id 99400637939, catalogued 2015, 30 m tall, girth 1.4 m, crown 12 m) and the Generalitat de Catalunya, which registers it as the Platan Fals de Montjuic, code MA-13.931.04, at 30.0 x 1.38 x 12.0 m, declared monumental 2 April 2025. The rarity-in-Barcelona point comes from the Museu de Ciencies Naturals account of the declaration. Pin approximate: city register 41.36677/2.152069 against the Generalitat's 41.366884/2.151851, 22 m apart, and the monumental ash (bcn_021) stands about 7 m away. See the note on bcn_021: the pin puts a visitor in the right corner of the ravine, not on the exact trunk. PHOTO PROBLEM WORTH KEEPING. The Generalitat publishes File:Platan Fals de Montjuic.jpg on Commons under attribution-gencat, sourced from its own monumental-tree file for this tree. It was viewed directly and NOT used, because the tree in the frame has pinnate compound leaves, which is an ash, not a maple; Acer pseudoplatanus has palmate lobed leaves. Either the file is mislabelled or the photographer shot the wrong trunk in a ravine where the ash stands seven metres away. Recording it rather than acting on it: the identification of the tree itself rests on two official registers, not on this photograph.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 140
     },
     {
       "id": "bcn_023",
@@ -841,7 +857,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 350
     },
     {
       "id": "bcn_024",
@@ -870,7 +887,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 340
     },
     {
       "id": "bcn_025",
@@ -900,7 +918,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 120
     },
     {
       "id": "bcn_026",
@@ -929,7 +948,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 360
     },
     {
       "id": "bcn_027",
@@ -958,7 +978,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 290
     },
     {
       "id": "bcn_028",
@@ -987,7 +1008,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 250
     },
     {
       "id": "bcn_029",
@@ -1016,7 +1038,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 350
     },
     {
       "id": "bcn_030",
@@ -1045,7 +1068,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 520
     },
     {
       "id": "bcn_031",
@@ -1082,7 +1106,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 270
     },
     {
       "id": "bcn_032",
@@ -1119,7 +1144,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 230
     },
     {
       "id": "bcn_033",
@@ -1149,7 +1175,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide. Answered by Park Guell on 2026-08-28, in reply to our own question about this specific tree: 'este se encuentra fuera de la zona regulada, por lo que no requiere de acceso con entrada.' So the three inside the fence need a ticket and this one does not. The park's own administration is the authority on where its fence runs; do not flip this back from a map that predates 2020."
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide. Answered by Park Guell on 2026-08-28, in reply to our own question about this specific tree: 'este se encuentra fuera de la zona regulada, por lo que no requiere de acceso con entrada.' So the three inside the fence need a ticket and this one does not. The park's own administration is the authority on where its fence runs; do not flip this back from a map that predates 2020.",
+      "girth_cm": 70
     },
     {
       "id": "bcn_034",
@@ -1894,7 +1921,8 @@
       "notes": "Single source: Barcelona's Catalog of Trees of Local Interest, register_id 99400455031, height ~18m, crown 13m, girth 1.2m, estimated age 80 years. A lower designation (local interest) than its four monumental neighbours in the same ravine, held back from earlier passes purely on count; shipped now per CLAUDE.md's ruling that count alone never blocks a verified tree.",
       "location_precision": "approximate",
       "paid_entry": true,
-      "story": "Common hornbeam barely grows wild anywhere on the Iberian peninsula, which makes the specimen in Barcelona's Jardi Botanic Historic an outlier by definition. It has found the one pocket of the city cool and damp enough to suit it: the Sot de l'Estany, a shaded former quarry hollow that already holds four of Barcelona's officially monumental trees, a wingnut, two kinds of ash and a sycamore maple among them.\n\nAt roughly 80 years old the hornbeam is younger than those neighbours, which is why the city lists it one rank down, as a tree of local interest rather than a monument. It has still reached 18 metres with a crown 13 metres across, respectable for a species this far outside its natural range.\n\nThe garden was Barcelona's original botanical collection, on this same hill, before a newer one opened elsewhere on Montjuic. The ravine has kept its own microclimate ever since: cooler, wetter and stubbornly hospitable to trees with no business surviving this far south. Same ticket as the rest of the garden's veterans."
+      "story": "Common hornbeam barely grows wild anywhere on the Iberian peninsula, which makes the specimen in Barcelona's Jardi Botanic Historic an outlier by definition. It has found the one pocket of the city cool and damp enough to suit it: the Sot de l'Estany, a shaded former quarry hollow that already holds four of Barcelona's officially monumental trees, a wingnut, two kinds of ash and a sycamore maple among them.\n\nAt roughly 80 years old the hornbeam is younger than those neighbours, which is why the city lists it one rank down, as a tree of local interest rather than a monument. It has still reached 18 metres with a crown 13 metres across, respectable for a species this far outside its natural range.\n\nThe garden was Barcelona's original botanical collection, on this same hill, before a newer one opened elsewhere on Montjuic. The ravine has kept its own microclimate ever since: cooler, wetter and stubbornly hospitable to trees with no business surviving this far south. Same ticket as the rest of the garden's veterans.",
+      "girth_cm": 120
     },
     {
       "id": "bcn_059",

@@ -59,7 +59,8 @@
         "status": "missing"
       },
       "height_m": 24.0,
-      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 444
     },
     {
       "id": "fer_002",
@@ -94,7 +95,8 @@
         "height": 6000
       },
       "height_m": 23.0,
-      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 376
     },
     {
       "id": "fer_003",
@@ -133,7 +135,8 @@
         "status": "missing"
       },
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 380
     },
     {
       "id": "fer_004",
@@ -174,7 +177,8 @@
         "status": "missing"
       },
       "height_m": 19.0,
-      "verify_notes": "Height 19.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 19.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 452
     },
     {
       "id": "fer_005",
@@ -206,7 +210,8 @@
         "status": "missing"
       },
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 540
     }
   ]
 }

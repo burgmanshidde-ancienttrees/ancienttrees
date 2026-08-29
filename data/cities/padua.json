@@ -209,7 +209,8 @@
         "status": "approved",
         "width": 3391,
         "height": 4551
-      }
+      },
+      "girth_cm": 440
     },
     {
       "id": "pad_006",
@@ -307,7 +308,8 @@
         "status": "missing"
       },
       "height_m": 9.0,
-      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 155
     },
     {
       "id": "pad_009",

@@ -57,7 +57,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "An ensemble entry that passes the collectible-point test: six trees ringing one stone tank, with a single obvious place to stand. Age is the 2009 assessment carried forward; the register and the parish agree to within six years across every species here.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 241
     },
     {
       "id": "stb_002",
@@ -89,7 +90,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "The register gives 60 years at the 2015 measurement, so about 71 today. The parish records a larger girth than the register (4.06m against 3.38m), which is base against breast height rather than a disagreement.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 338
     },
     {
       "id": "stb_003",
@@ -127,7 +129,8 @@
         "label": "April and May, when the whole crown turns orange",
         "kind": "flowers"
       },
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 250
     },
     {
       "id": "stb_004",
@@ -157,7 +160,8 @@
       },
       "curation_status": "flagged",
       "notes": "The 150-year register figure at the 2016 measurement is the highest in Setubal and is unconfirmed anywhere else; the parish records no age at all for this tree. Published as a register claim with the range left wide rather than repeated as fact.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 212
     },
     {
       "id": "stb_005",
@@ -187,7 +191,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Two registered pines metres apart, separated in the register only by girth (4.15m and 3.20m), so this entry is the pair and the pin is the larger. Age is the 2009 assessment carried forward, matching the parish figure to within six years.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 415
     },
     {
       "id": "stb_006",
@@ -217,7 +222,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Register gives 100 years at the 2009 assessment, so about 117 today. The parish calls the park the Jardim do Bonfim while the register writes Parque do Bonfim; the parish name is used here.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 395
     },
     {
       "id": "stb_007",
@@ -247,7 +253,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Register gives 51 years at the 2015 measurement, so about 62 today. Summer flowering is species knowledge rather than a Setubal-specific source, so no best_time is claimed.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 230
     },
     {
       "id": "stb_008",
@@ -277,7 +284,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Two registered poplars metres apart, distinguished only by girth (3.34m and 3.00m), so this entry is the pair. Register gives 86 years at the 2015 measurement, tracing to the 2009 assessment, so about 97 today.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 334
     },
     {
       "id": "stb_009",
@@ -315,7 +323,8 @@
         "label": "late autumn, when the clusters of pink peppercorns turn red",
         "kind": "fruit"
       },
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 164
     },
     {
       "id": "stb_010",
@@ -353,7 +362,8 @@
         "label": "October and November, when the pink drupes hang in strings",
         "kind": "fruit"
       },
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 212
     }
   ]
 }

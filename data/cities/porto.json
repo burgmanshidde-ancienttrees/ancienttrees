@@ -63,7 +63,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Protection since 1950 and 250+ year age confirmed by both the Porto city council's own parks page and an independent garden-history source. Location upgraded to confirmed: the municipality's own open-data register of classified trees carries a Liriodendron tulipifera record with the exact same legal reference and 1950-09-01 classification date cited above, giving a surveyed point about 170m from the previous whole-garden estimate. A second Liriodendron tulipifera also appears in the open-data set nearby, classified separately in 2021 (a different legal reference and date), matching the story's own note about a second, less formally distinguished tulip tree in the same grounds; the 1950 record was used since it matches this tree's own citation. Photo search 2026-07-29: no openly-licensed photo found. Checked Wikimedia Commons (full-text and category search, including the dedicated 'Liriodendron tulipifera in Portugal' category, which has no Porto entries), iNaturalist (one CC-BY-NC-only observation logged at this exact tree's coordinates, unusable), Openverse and a Flickr CC search. Still missing.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 500
     },
     {
       "id": "por_002",
@@ -101,7 +102,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Girth (over 6 m) confirmed by both the city council's parks page and an independent garden-history source. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim, cross-checked across two independent address results that agree within 40m); at that time the tree wasn't in the municipality's classified-trees open dataset, so it stayed a building-level anchor. Location upgraded to confirmed and classification status corrected, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries a Magnolia grandiflora record at 'Rua de Entre Quintas 219, Casa Tait' (id 531) matching this tree exactly, including a height of 22.5m consistent with the city's own '22 metres' figure elsewhere; gives a surveyed point about 28m from the previous building-level estimate. A news report (noticiasaominuto.com, 21 May 2021) confirms the ICNF classified this magnolia, alongside a second tulip tree in the same grounds, as a tree of public interest that day, so the story's 'currently working through classification' line was stale and has been corrected to say when it happened. Age corrected 2026-08-01, per Hidde's dispatch order: the fuller ICNF WFS export at data/registers/portugal-icnf.json (processo AIP131218102I, same address, 0m from this pin) carries an age_register field of 200 years as of its 2021 survey, which the 2026-07-29 session's live-API check apparently didn't pull in ('No documented planting date; age is an estimate from the tree's size' was wrong, not just stale). Projected to 2026 that's roughly 205; age_estimate updated from '100+ years' to match, previous figure was a guess from girth alone and undersold it by about a century. Photo search 2026-07-29: no openly-licensed photo found despite checking Wikimedia Commons, iNaturalist (multiple observations at this exact tree, all CC-BY-NC only), Openverse and a Flickr CC search. Still missing.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 450
     },
     {
       "id": "por_003",
@@ -274,7 +276,8 @@
       },
       "curation_status": "flagged",
       "notes": "Classification status confirmed by the city council's announcement; general garden context via Wikipedia. No age, planting date or measurement found in either source, so age is left as unknown rather than guessed. Location upgraded to confirmed, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries an Arbutus xalapensis record (id 539) explicitly at 'Jardim Botânico da universidade do Porto', the only one in the whole city dataset, a genuinely distinctive species match; no legal classification reference is filled in yet there, consistent with this story's 'under formal review' status. Gives a surveyed point about 57m from the previous whole-garden estimate. Photo search 2026-07-29: no openly-licensed photo found; the two iNaturalist observations at this tree and a Flickr photo (karlgercens) from the same garden are all-rights-reserved, so none used. Still missing.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 100
     },
     {
       "id": "por_008",
@@ -404,7 +407,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 485
     },
     {
       "id": "por_012",
@@ -433,7 +437,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 425
     },
     {
       "id": "por_013",
@@ -462,7 +467,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 405
     },
     {
       "id": "por_014",
@@ -499,7 +505,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 435
     },
     {
       "id": "por_015",
@@ -528,7 +535,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 640
     },
     {
       "id": "por_016",
@@ -565,7 +573,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 315
     },
     {
       "id": "por_017",
@@ -603,7 +612,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 580
     },
     {
       "id": "por_018",
@@ -643,7 +653,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "Reader tip by email, 2026-08-11; the sender is recorded off-site and is NOT named here or on the page, because a private email is not consent to be published. Confirmed in the ICNF national register as processo KNJ1/451, Ginkgo biloba, Jardim das Virtudes, classified D.R. n.o 6, II Serie de 10/01/2005, 200 years at the 2004 measurement, girth 4.3 m, height 35.5 m, crown 17 m. Register coordinate used directly, hence confirmed. The Dias com Arvores blog calls it by far the largest of its species in the country and possibly in Europe; that superlative is NOT repeated on the page under hard rule 8, since no survey settles it. Its December colour is documented there on 06/12/2004 and 05/12/2005. Photograph added 2026-08-11 with explicit written permission for this one image, from the 'Alerta amarelo' post of 05/12/2005 (the 2004 post's photographs belong to somebody else and were NOT granted). Shot on a Nikon D70s on 2005-12-04, which matches the post and the tree's December peak. Viewed before approving: the ginkgo fills the frame in full golden leaf, crown and trunk both readable, daylight, colour. Small at 319x480, so it will not fill the widest layouts, and it is the only photograph of this tree we have. Credited to the publication rather than the person, per the 2026-08-11 rule against putting a reader's name on the site."
+      "notes": "Reader tip by email, 2026-08-11; the sender is recorded off-site and is NOT named here or on the page, because a private email is not consent to be published. Confirmed in the ICNF national register as processo KNJ1/451, Ginkgo biloba, Jardim das Virtudes, classified D.R. n.o 6, II Serie de 10/01/2005, 200 years at the 2004 measurement, girth 4.3 m, height 35.5 m, crown 17 m. Register coordinate used directly, hence confirmed. The Dias com Arvores blog calls it by far the largest of its species in the country and possibly in Europe; that superlative is NOT repeated on the page under hard rule 8, since no survey settles it. Its December colour is documented there on 06/12/2004 and 05/12/2005. Photograph added 2026-08-11 with explicit written permission for this one image, from the 'Alerta amarelo' post of 05/12/2005 (the 2004 post's photographs belong to somebody else and were NOT granted). Shot on a Nikon D70s on 2005-12-04, which matches the post and the tree's December peak. Viewed before approving: the ginkgo fills the frame in full golden leaf, crown and trunk both readable, daylight, colour. Small at 319x480, so it will not fill the widest layouts, and it is the only photograph of this tree we have. Credited to the publication rather than the person, per the 2026-08-11 rule against putting a reader's name on the site.",
+      "girth_cm": 430
     },
     {
       "id": "por_019",
@@ -716,7 +727,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 524
     },
     {
       "id": "por_021",
@@ -754,7 +766,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 260
     },
     {
       "id": "por_022",
@@ -790,7 +803,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 115
     },
     {
       "id": "por_023",
@@ -828,7 +842,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 315
     },
     {
       "id": "por_024",
@@ -896,7 +911,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 243
     },
     {
       "id": "por_026",
@@ -967,7 +983,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 360
     }
   ],
   "hero_tree_id": "por_008",

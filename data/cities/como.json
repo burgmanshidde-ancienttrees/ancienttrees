@@ -67,7 +67,8 @@
         "kind": "fruit"
       },
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 820
     },
     {
       "id": "com_002",
@@ -102,7 +103,8 @@
         "height": 4160
       },
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 560
     },
     {
       "id": "com_003",
@@ -133,7 +135,8 @@
         "status": "missing"
       },
       "height_m": 33.0,
-      "verify_notes": "Height 33.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 33.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 550
     },
     {
       "id": "com_004",
@@ -171,7 +174,8 @@
         "status": "missing"
       },
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 312
     },
     {
       "id": "com_005",
@@ -213,7 +217,8 @@
         "kind": "fruit"
       },
       "height_m": 36.0,
-      "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 595
     },
     {
       "id": "com_006",
@@ -252,7 +257,8 @@
         "status": "missing"
       },
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 390
     },
     {
       "id": "com_007",
@@ -292,7 +298,8 @@
         "kind": "flowers"
       },
       "height_m": 17.5,
-      "verify_notes": "Height 17.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 17.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 330
     },
     {
       "id": "com_008",
@@ -362,7 +369,8 @@
         "status": "missing"
       },
       "height_m": 15.0,
-      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 335
     }
   ]
 }

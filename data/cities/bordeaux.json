@@ -52,7 +52,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 741
     },
     {
       "id": "bdx_002",
@@ -82,7 +83,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 421
     },
     {
       "id": "bdx_003",
@@ -111,7 +113,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 292
     },
     {
       "id": "bdx_004",
@@ -149,7 +152,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 358
     },
     {
       "id": "bdx_005",
@@ -186,7 +190,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 405
     },
     {
       "id": "bdx_006",
@@ -215,7 +220,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 393
     },
     {
       "id": "bdx_007",
@@ -253,7 +259,8 @@
         ],
         "label": "October to November: the whole crown turns orange-brown, the tree's best-known moment after its shape",
         "kind": "autumn colour"
-      }
+      },
+      "girth_cm": 371
     },
     {
       "id": "bdx_008",
@@ -290,7 +297,8 @@
         ],
         "label": "May to June, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "girth_cm": 412
     },
     {
       "id": "bdx_009",
@@ -320,7 +328,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 597
     },
     {
       "id": "bdx_010",
@@ -350,7 +359,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 534
     }
   ]
 }

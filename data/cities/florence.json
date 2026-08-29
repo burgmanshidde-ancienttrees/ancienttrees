@@ -67,7 +67,8 @@
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 344
     },
     {
       "id": "flo_002",
@@ -100,7 +101,8 @@
       "curation_status": "ai_generated",
       "notes": "Registered on Italy's regional monumental tree list (RAMI ID #6490) with a specific GPS survey point. Planting date and attribution to Targioni Tozzetti corroborated by a second independent source. Photo is an iNaturalist observation (298430984, CC BY, 14m from the pin, tagged \"captive\"/cultivated) in the same San Marco neighbourhood; viewed directly and shows a massive trunk with deep, spongy corky bark matching the story's description, approved.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 457
     },
     {
       "id": "flo_003",
@@ -203,7 +205,8 @@
       },
       "curation_status": "flagged",
       "notes": "No age or planting date documented anywhere found; range estimated from girth and species growth rate alone, stated as a wide honest range rather than a false precise figure.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 403
     },
     {
       "id": "flo_006",
@@ -235,7 +238,8 @@
       "notes": "One of the six trees the Comune di Firenze already owns and recognises as monumental in its own right. No age or planting record found anywhere; age range is a wide estimate only, not a documented figure.",
       "location_precision": "confirmed",
       "height_m": 21.0,
-      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (4 m away)."
+      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (4 m away).",
+      "girth_cm": 525
     },
     {
       "id": "flo_007",
@@ -276,7 +280,8 @@
         "kind": "fruit"
       },
       "height_m": 22.5,
-      "verify_notes": "Height 22.5 m from the italy-masaf register, matched on our own pin (1 m away)."
+      "verify_notes": "Height 22.5 m from the italy-masaf register, matched on our own pin (1 m away).",
+      "girth_cm": 455
     },
     {
       "id": "flo_008",
@@ -420,7 +425,8 @@
       },
       "height_m": 30.0,
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 610
     },
     {
       "id": "flo_012",
@@ -464,7 +470,8 @@
       "location_precision": "confirmed",
       "height_m": 25.0,
       "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 453
     },
     {
       "id": "flo_013",
@@ -500,7 +507,8 @@
       "location_precision": "confirmed",
       "height_m": 33.5,
       "verify_notes": "Height 33.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 382
     },
     {
       "id": "flo_014",
@@ -533,7 +541,8 @@
       "location_precision": "confirmed",
       "height_m": 28.0,
       "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 418
     },
     {
       "id": "flo_015",
@@ -592,7 +601,8 @@
       },
       "transport": "",
       "height_m": 31.5,
-      "verify_notes": "Height 31.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 31.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 412
     },
     {
       "id": "flo_017",
@@ -620,7 +630,8 @@
       },
       "transport": "",
       "height_m": 18.5,
-      "verify_notes": "Height 18.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 18.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 388
     },
     {
       "id": "flo_018",
@@ -648,7 +659,8 @@
       },
       "transport": "",
       "height_m": 21.5,
-      "verify_notes": "Height 21.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 21.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 346
     },
     {
       "id": "flo_019",
@@ -676,7 +688,8 @@
       },
       "transport": "",
       "height_m": 22.5,
-      "verify_notes": "Height 22.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 22.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 323
     },
     {
       "id": "flo_020",
@@ -732,7 +745,8 @@
       },
       "transport": "",
       "height_m": 15.5,
-      "verify_notes": "Height 15.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 15.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 349
     },
     {
       "id": "flo_022",
@@ -760,7 +774,8 @@
       },
       "transport": "",
       "height_m": 23.0,
-      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 580
     },
     {
       "id": "flo_023",

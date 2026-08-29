@@ -56,7 +56,8 @@
       },
       "curation_status": "flagged",
       "notes": "Measurements (12.95m trunk perimeter, 22.70m height, 35m+ canopy) and the 2020 petrol station removal are corroborated across both sources; the 380,000 euro valuation figure comes from valenciabonita.es only. Photo viewed directly: shows a massive, spectacular ficus with huge buttress roots and a wide multi-trunk canopy in a paved plaza. Approved. Pin corrected ~400m via the Generalitat Valenciana's own Catálogo de Árboles Monumentales y Singulares (ArcGIS layer), which lists this exact tree by name, 'Ficus del Parterre' (IPA 512), with a 13.82m trunk measurement matching this entry's own figure almost exactly.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 1382
     },
     {
       "id": "vlc_002",
@@ -95,7 +96,8 @@
         ],
         "label": "September to November: the harvest, when the fruit turns from green to black",
         "kind": "fruit"
-      }
+      },
+      "girth_cm": 400
     },
     {
       "id": "vlc_003",
@@ -133,7 +135,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age given as approximately 170 years by one source, tied to the garden's 1849 founding; no individually documented planting record for this specific tree beyond that estimate. Photo viewed directly: shows a large tree in golden autumn foliage with a garden statue visible in frame, consistent with Jardin de Monforte's neoclassical statuary garden. Approved. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 684, 'Ginkgo de Monfort'), the only Ginkgo biloba recorded citywide, moved about 900m to the catalogue's surveyed point.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 375
     },
     {
       "id": "vlc_004",
@@ -164,7 +167,8 @@
       },
       "curation_status": "flagged",
       "notes": "1891 planting date and the 1968 demolition/survival story are corroborated across both sources. Location and neighbourhood corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.2km from the actual plaza (same latitude, wrong longitude, suggesting an old data-entry slip). Nominatim places Plaza de la Legion Espanola at 39.4779, -0.3658/-0.3660, three independent hits agreeing within 100m; a further web search independently confirms the plaza sits in the Exposicio neighbourhood of El Pla del Real district, not Extramurs as previously stated. Fixed both fields. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (CC BY 4.0) carries exactly one Ficus macrophylla registered at 'Legion Espanola Pl' (idarbol 99100614/2), matching this entry's species and its own 'stands alone' framing; four other Ficus macrophylla in the same neighbourhood are all in the separate Alameda gardens, not this plaza, so no ambiguity. Moved from a plaza-level Nominatim geocode to the tree's own individually registered point.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 1376
     },
     {
       "id": "vlc_005",
@@ -285,7 +289,8 @@
       },
       "curation_status": "flagged",
       "notes": "The relocation story (Plaza Mirasol origin, early 1960s move, mayor's approval, two trucks) is corroborated across both sources with only minor variation in the gardener's recorded surname. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 673), which names this exact tree 'La Palmera de Vicente Peris', an exact match to this entry's own name; moved about 525m to the catalogue's surveyed point.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 130
     },
     {
       "id": "vlc_009",
@@ -315,7 +320,8 @@
       },
       "curation_status": "flagged",
       "notes": "Measurements (41.20m height, 6.1m trunk diameter, 30m crown) and the 80-100 year age come from the city's own official announcement; the regional catalogue source confirms its protected status but is a general registry page rather than an entry specific to this tree. Pin corrected ~790m by querying that same regional catalogue directly (ArcGIS layer): it lists this exact tree by name, 'Eucalipto de Benimámet' (IPA 2375), with a 41.2m height matching this entry's own figure exactly. Tightened by about 50m on 2026-07-30 via an independently bulk-imported OpenStreetMap node carrying the same register reference (reg_ref 2375, name 'Eucaliptus de Benimàmet', 41.2m height), which gives a more precise coordinate than the earlier rounded transcription.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 597
     },
     {
       "id": "vlc_010",
@@ -375,7 +381,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 1370
     },
     {
       "id": "vlc_012",
@@ -405,7 +412,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 1362
     },
     {
       "id": "vlc_013",
@@ -434,7 +442,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 620
     },
     {
       "id": "vlc_014",
@@ -464,7 +473,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 968
     },
     {
       "id": "vlc_015",
@@ -502,7 +512,8 @@
         "label": "September to October: the whole crown turns orange-brown, the tree's best-known moment after its shape",
         "kind": "autumn colour"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 535
     },
     {
       "id": "vlc_016",
