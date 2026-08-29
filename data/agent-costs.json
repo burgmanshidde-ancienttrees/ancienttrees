@@ -3879,6 +3879,27 @@
         "note": "confirmed all flagged near-duplicates already published/blocked; verified 1 new day-trip tree (Sinnai eucalyptus) via idese.cultura.gov.it + MASAF; recorded Sarroch cluster and remaining far candidates as unresolved leads for a future pass",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "bamberg",
+        "kind": "verify",
+        "tokens": 170696,
+        "trees": 0,
+        "note": "Wikipedia-registry-join + OSM reverse-geocode + dated Commons photos verified 4 of 10 nearby Naturdenkmal candidates; 4 blocked as private-garden/courtyard, 2 left as leads"
+      },
+      {
+        "target": "bamberg",
+        "kind": "write",
+        "tokens": 100788,
+        "trees": 4,
+        "note": "4 Bamberg stories, 213-235 words; no age or girth on any tree so each closes with a reader ask; no best_time; Otto legend kept off the trees, Buger Hof access written as unresolved"
+      },
+      {
+        "target": "bamberg",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 4,
+        "note": "orchestration session: picked Bamberg from the shelf, ran verify+write, assembled and merged the new city (intro/FAQ/question copy), fixed a stale Germany country-page tree count found along the way"
       }
     ]
   }

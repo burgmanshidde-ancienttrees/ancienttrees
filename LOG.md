@@ -9,6 +9,20 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (session) - Bamberg opens at the floor (4 trees), a stale Germany country-page count fixed along the way
+
+`visitors.py`: 498 visits/775 views over 7 days, flat (39-94/day). `prepare.py`: shelf already stocked (41 cities staged for verify), 0 awaiting a writer, 452 leads.py-READY. Checked rung 0 (no unprocessed Supabase submissions), rung 2 (health.py clear; the session-start hook's "iOS app hasn't passed in 6 runs" turned out to be a false alarm from a burst of same-minute pushes cancelling each other, confirmed by checking non-cancelled runs directly, last one a push success at 10:08 UTC), rung 3 (two REVIEW.md WARNs about `paid_entry` already fixed by a concurrent run before I got to them).
+
+**A real gap, recorded so the next run doesn't repeat the false start: `leads.py --ready`'s 452 entries are mostly NOT verified trees ready for a write pass**, matching what an earlier run today already found and logged (see the entry below at "Brisbane's third standing claim finished"). Sampled vilnius/barcelona/naples: raw register candidates with genus-only species and explicit "not researched this pass" notes, not stories waiting to be written. Did not dispatch a write pass on them for the same reason logged there. Went to rule 1(0)/1(b) instead: a fresh register-backed verify on an unopened ranked city with real supply.
+
+Checked Rothenburg ob der Tauber and Catania first: Rothenburg's register is the same thin Bavaria Naturdenkmale shape already flagged "not tractable for a quick open" (2026-08-27); Catania's whole nearby register cluster turned out to already be published under existing ids (cat_001-004), nothing left there. Released both without dispatching. Landed on **Bamberg** (rank 294, unopened, 10 fresh register candidates, never mentioned in LOG/CURATION before today): a verify pass joined the register against de.wikipedia's Naturdenkmal list plus OSM/dated Commons photos and delivered 4 of 10 candidates (4 blocked as explicit private-garden land, 2 left as leads). A write pass turned them into stories. Merged into a new `data/cities/bamberg.json`, wrote city intro/meta_description/FAQ/question-page copy by hand, added Bamberg to `data/city-list.json` (LOG's own 2026-08-28 lesson: `city_queue.py`'s rebuild only updates existing rows, never adds one) and reran `city_queue.py` to regenerate the queue/ledger.
+
+None of the four trees has a documented age or girth; each story says so once, plainly, as a reader invitation. Three cluster within about 1.5km on the Wildensorg hillside; the fourth (Buger Hof, riverside) is a separate stop with its exact access left honestly unresolved (view from the towpath confirmed, whether the ground under the crown is open was not).
+
+**Found and fixed while opening it: `data/countries/germany.json` still said "Four cities and 61 trees" against 9 cities and 105 trees actually live**, stale from well before today, same shape as the Netherlands BLOCKER precedent. One-line fix to the intro and meta_description.
+
+Build, preflight (0 problems), qa (clean besides the known shallow-clone sitemap-lastmod warning), superlatives (495 claims, no collisions), tree_index and route_walks all run. Bamberg's own walk (the 3-tree Wildensorg cluster) will route on the next pass once the deployed feed knows about the city; route_walks.py reads the live feed, not the local build. Photos: 0 of 4, not hunted this pass (photo hunting is a session's job with a browser, not a night run's, and this was a verify+write pass). Claim released, committing now.
+
 ## 2026-08-29 (continuation of a window whose first attempt claimed two cities and stopped after 16 minutes) - Alicante released, Sorrento +2, Oahu +1, Vancouver claimed and dispatched
 
 Started per the continuation runbook: `git pull`, then `passcheck.py --claims`

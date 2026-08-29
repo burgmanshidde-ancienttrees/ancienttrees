@@ -1,0 +1,38 @@
+{
+  "leads": [
+    {
+      "register_id": "ND-04404",
+      "name": "Eiche am Wendehammer der Kilianstraße",
+      "note": "Plain designated street oak at a cul-de-sac in Dörfleins, part of Hallstadt (a separate town in Landkreis Bamberg, not the city of Bamberg), about 4.5 km from the centre. Confirmed as a genuine, currently-photographed tree (Commons category 'Eiche am Wendehammer der Kilianstraße (Hallstadt)' has dated images), and it is on a public street, so access is not the problem. What is missing is any evidence it clears the 'genuinely old OR visually spectacular OR historically significant' bar beyond its legal designation: no age, no girth, no story found in the time available. Also outside the four-candidate research budget for this pass. Worth a second look if Hallstadt/Dörfleins is ever researched on its own, or if a future pass finds an age/girth for it.",
+      "coords": [49.93171, 10.88111]
+    },
+    {
+      "register_id": "ND-03704",
+      "name": "Birnbaum südlich des Rothofer Weges (Naturdenkmal 2)",
+      "note": "A pear tree (Pyrus communis) about 75 m south of the Rothofer Weg footpath, in the northern part of a field (Acker) near Gaustadt. Likely visible from the path but standing on private farmland, not a place a visitor is invited to walk up to. Not researched further this pass (over the four-candidate budget); a future pass could check whether the field edge is close enough to the path for an honest 'visible from the footpath' entry.",
+      "coords": [49.89683, 10.84263]
+    }
+  ],
+  "blocked": [
+    {
+      "register_id": "ND-03610",
+      "name": "Eiche im Hof des Aufseßhöflein",
+      "reason": "Stands in the courtyard ('im Hof') of the Aufseßhöflein, a baroque garden pavilion built 1723-1728 for the Aufseß family. It is privately owned and now operated as a cultural event venue / holiday rental ('Urlaub im Denkmal'), not a place with standing public access; the one piece of evidence found of anyone but the owner being there was a foundation board meeting held on site. This is exactly the 'courtyard of a dwelling' pattern the project treats as private land absent evidence otherwise. Blocked for now; would need a source stating the courtyard is open to casual visitors."
+    },
+    {
+      "register_id": "ND-03617",
+      "name": "Eiche am Teufelsgraben, im nördlichen Bereich eines Gartengrundstücks",
+      "reason": "The register's own wording places this oak 'in the northern part of a garden plot' (Gartengrundstück), i.e. someone's private garden, distinct from the neighbouring ND-03742 oak which the same register describes only as standing 'southwest of' the school with no garden/courtyard language. Blocked per hard rule 10 (private land, not a dwelling anyone invited us to)."
+    },
+    {
+      "register_id": "ND-03743",
+      "name": "Eiche im Garten des Anwesens Milchweg 12",
+      "reason": "Explicitly 'in the garden of the property at Milchweg 12', i.e. a private house's garden. Blocked, someone's home."
+    },
+    {
+      "register_id": "ND-03741",
+      "name": "Linde im Hof des Anwesens Bughof 4",
+      "reason": "Explicitly 'in the courtyard of the property at Bughof 4', a private residence's courtyard. Blocked, someone's home."
+    }
+  ]
+}
