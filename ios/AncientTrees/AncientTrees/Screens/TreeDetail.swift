@@ -90,7 +90,7 @@ struct TreeDetail: View {
                     // you to fill about a tree you already stood at.
                     if mine == nil { WorthItView(tree: tree) }
                     story
-                    if mine == nil { accessBlock }
+                    if mine == nil, tree.hasAccessInfo { accessBlock }
                     // The "Nobody has photographed this one" card is gone
                     // (Hidde, 2026-08-26: "die mag helemaal weg"). It was a
                     // paragraph explaining a control that now exists: the
@@ -829,17 +829,34 @@ struct TreeDetail: View {
         }
     }
 
-    private func accessLine(_ text: String, _ symbol: String) -> some View {
-        HStack(alignment: .firstTextBaseline, spacing: 8) {
-            Image(systemName: symbol)
-                .frame(width: 18, alignment: .center)
-            Text(text)
-                .fixedSize(horizontal: false, vertical: true)
-            Spacer(minLength: 0)
+    /// NOTHING TO SAY MEANS NOTHING ON THE PAGE (Hidde, 2026-08-29: "als er
+    /// geen ov info beschikbaar is dan ook geen icon tonen").
+    ///
+    /// The feed leaves `transport` null on 93 trees and `access` on 11, and
+    /// both lines drew anyway: a tram, a fixed 18 point column, and then an
+    /// empty string. An icon with no sentence beside it is not a smaller
+    /// version of the information, it is a promise of information that is not
+    /// there, and it reads as something that failed to load rather than
+    /// something nobody has researched.
+    ///
+    /// It is the same rule the rest of this app already runs on: a tree with no
+    /// photograph shows no photograph, a species with no calendar shows no
+    /// calendar. An honest gap is silent.
+    @ViewBuilder private func accessLine(_ text: String, _ symbol: String) -> some View {
+        if !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                Image(systemName: symbol)
+                    .frame(width: 18, alignment: .center)
+                Text(text)
+                    .fixedSize(horizontal: false, vertical: true)
+                Spacer(minLength: 0)
+            }
         }
     }
 
     private var accessBlock: some View {
+        // A VStack of two empty lines still spends its own spacing, so a tree
+        // with neither would leave a gap in the page where a block used to be.
         VStack(alignment: .leading, spacing: 10) {
             // A FIXED COLUMN FOR THE ICONS, because two SF Symbols are two
             // different widths and a Label puts its text straight after its

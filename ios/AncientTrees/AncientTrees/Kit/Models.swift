@@ -132,6 +132,15 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     public var paidEntry: Bool { paidEntryRaw ?? false }
     let transportRaw: String?
     public var transport: String { transportRaw ?? "" }
+
+    /// Whether there is anything to put in the access block at all. A tree
+    /// with neither line gets no block rather than an empty one holding its
+    /// own spacing (Hidde, 2026-08-29: "als er geen ov info beschikbaar is dan
+    /// ook geen icon tonen").
+    public var hasAccessInfo: Bool {
+        !access.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+            || !transport.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
     public let story: String
     public let url: String
     public let precision: Precision
