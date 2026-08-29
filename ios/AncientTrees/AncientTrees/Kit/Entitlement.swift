@@ -39,16 +39,6 @@ public enum Feature: String, Sendable {
     case badges
     case photoUpload
     case seasonAlerts
-    /// Not a feature: paying because you want this to exist.
-    ///
-    /// Hidde asked for it on 2026-08-25, alongside turning Plus off for the
-    /// MVP: "we could add a button that just says Sponsor this project, and
-    /// that would lead to an in-app purchase of 20 euro a year". The button is
-    /// here and THE PURCHASE IS NOT, and that is hard rule 2 rather than an
-    /// oversight: money is his alone. What it does today is what the rest of
-    /// this screen does, which is count who says yes to a real number, and
-    /// that number is the one worth having before any processor is wired.
-    case sponsor
 
     /// What the upsell says when this one is reached for. It names the thing the
     /// person was doing, never the plan.
@@ -59,7 +49,6 @@ public enum Feature: String, Sendable {
         case .badges: "Earn badges as you collect"
         case .photoUpload: "Add your own photographs"
         case .seasonAlerts: "Be told when a tree near you peaks"
-        case .sponsor: "Keep this project going"
         }
     }
 
@@ -75,8 +64,6 @@ public enum Feature: String, Sendable {
             "Photograph a tree nobody has photographed yet, and offer it for its page."
         case .seasonAlerts:
             "A quiet nudge in the week a tree near you is at its best."
-        case .sponsor:
-            "Around 20 euro a year, from the people who want the trees mapped, whether or not they ever use a paid feature."
         }
     }
 }
