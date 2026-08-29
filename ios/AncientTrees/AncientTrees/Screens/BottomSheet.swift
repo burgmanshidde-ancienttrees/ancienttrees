@@ -32,6 +32,7 @@
 // eventually be wrong.
 
 import SwiftUI
+import UIKit
 
 enum SheetHeight: CaseIterable {
     case peek, card, half, full
@@ -244,10 +245,45 @@ struct BottomSheet<Header: View, Content: View>: View {
     /// (2026-08-25); the fix I shipped an hour earlier had not worked at all.
     private let headerDepth: CGFloat = 90
 
+    /// The home indicator's depth, read from the window rather than from the
+    /// geometry, because a view that IGNORES the bottom safe area is told the
+    /// inset is zero and that is exactly the view which needs the number.
+    ///
+    /// The first attempt asked the GeometryProxy and got 0, so the sheet
+    /// reached the screen edge correctly and lost thirty-four points of visible
+    /// height doing it: the white band went and the heading dropped by the same
+    /// amount. Measured rather than eyeballed, which is the only reason it was
+    /// caught.
+    private static var homeIndicatorDepth: CGFloat {
+        UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap(\.windows)
+            .first { $0.isKeyWindow }?
+            .safeAreaInsets.bottom ?? 0
+    }
+
     var body: some View {
         GeometryReader { geo in
-            let target = height.points(in: geo.size.height)
-            let h = min(max(target - drag, 90), geo.size.height * 0.94)
+            // THE SHEET REACHES THE BOTTOM OF THE SCREEN (Hidde, 2026-08-29:
+            // "de foto van de thumbnail scrollt niet door tot onderaan de
+            // pagina, de onderste 30 pixels zijn wit"). It ended at the top of
+            // the home indicator, and under it you saw the window itself, so
+            // every map screen wore a white band the depth of the bottom safe
+            // area. A sheet anchored to the bottom edge that does not touch the
+            // bottom edge reads as a rendering fault, which is what it is.
+            //
+            // Every tuned number in SheetHeight keeps its meaning: `visible` is
+            // what the old geometry reported, so peek is still 168 points of
+            // sheet you can see, and only the material and the photograph
+            // behind the home indicator are new.
+            let bottom = Self.homeIndicatorDepth
+            // geo.size.height already spans the whole screen, because the
+            // reader ignores the bottom edge, so the visible part is what is
+            // left above the home indicator. Every tuned number in SheetHeight
+            // is measured against THAT and keeps its meaning.
+            let visible = geo.size.height - bottom
+            let target = height.points(in: visible)
+            let h = min(max(target - drag, 90), visible * 0.94)
             VStack(spacing: 0) {
                 // The grabber is the one handle that always works, including
                 // when the content below it is scrolling, because it sits
@@ -316,7 +352,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                     atTop = y <= 1
                 }
             }
-            .frame(height: h)
+            .frame(height: h + bottom)
             .overlay {
                 if height == .peek {
                     Color.clear
@@ -349,7 +385,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                             // BOTH directions, which is what makes a swipe up
                             // raise it the way it does in Apple Maps.
                             drag = value.translation.height
-                        } else if (atTop || value.startLocation.y - (geo.size.height - h) < headerDepth)
+                        } else if (atTop || value.startLocation.y - (geo.size.height - (h + bottom)) < headerDepth)
                                     && value.translation.height > 0 {
                             handingOff = true
                             drag = value.translation.height
@@ -360,13 +396,18 @@ struct BottomSheet<Header: View, Content: View>: View {
                         guard drag != 0 else { return }
                         let settled = target - value.translation.height
                         height = SheetHeight.allCases.min {
-                            abs($0.points(in: geo.size.height) - settled)
-                                < abs($1.points(in: geo.size.height) - settled)
+                            abs($0.points(in: visible) - settled)
+                                < abs($1.points(in: visible) - settled)
                         } ?? .peek
                         withAnimation(.spring(duration: 0.28)) { drag = 0 }
                     }
             )
             .animation(.spring(duration: 0.28), value: height)
         }
+        // Without this the reader stops at the home indicator and reports a
+        // bottom inset of zero, so `bottom` above would be nothing and the band
+        // would still be there. It is what lets the sheet paint the last thirty
+        // points of the screen.
+        .ignoresSafeArea(edges: .bottom)
     }
 }
