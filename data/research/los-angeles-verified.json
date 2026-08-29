@@ -1,0 +1,27 @@
+[
+  {
+    "id": "lax_010",
+    "name": "The Chavez Ravine Arboretum Kauri",
+    "species": "Queensland Kauri (Agathis robusta)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Chavez Ravine Arboretum, Elysian Park, 1025 Elysian Park Dr, Los Angeles, CA 90012",
+      "latitude": 34.083,
+      "longitude": -118.238,
+      "neighbourhood": "Elysian Park"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Chavez_Ravine_Arboretum",
+      "http://bigorangelandmarks.blogspot.com/2007/07/no-48-chavez-ravine-arboretum.html"
+    ],
+    "access": "Free, public park (Elysian Park); the arboretum is unstaffed, open grounds",
+    "transport": "In Elysian Park, just north of Dodger Stadium's parking areas; no dedicated transit stop, nearest is a DASH bus route into Elysian Park",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Chavez Ravine Arboretum was planted in 1893 (one of the oldest planted tree collections in Los Angeles, older than Dodger Stadium which now surrounds part of the ravine) and holds over 100 species across a hillside in Elysian Park; a park-wide entry was rejected as not one collectible point, but this Queensland Kauri (Agathis robusta) is named by both sources as a standout specimen, believed the oldest and largest of its species in the United States. Neither source gives the trunk's own coordinate within the arboretum, only the arboretum's general location, so location_precision is approximate: a future pass should find or take a photo that pins the exact trunk. No girth, height or age documented in either source. Ships flagged per Step 2 (location approximate, age undocumented)."
+  }
+]

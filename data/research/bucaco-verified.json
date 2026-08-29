@@ -1,0 +1,98 @@
+[
+  {
+    "id": "bsc_016",
+    "name": "The Cedro-do-Bucaco of the Passo de Anas",
+    "species": "Mexican Cypress (Cupressus lusitanica)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 368,
+    "height_m": 27,
+    "location": {
+      "address": "Junto ao Passo de Anas, Mata Nacional do Bucaco, 3050-261 Luso",
+      "latitude": 40.37618089,
+      "longitude": -8.368342552,
+      "neighbourhood": "Passo de Anas"
+    },
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class (ICNF national monumental trees register, processo AIP01110431I, girth 3.68m, height 27m, crown 19m, measured 2016)"
+    ],
+    "access": "Free on foot. Cars pay 5 euros at the forest gate",
+    "transport": "On the Via Sacra path at the Passo de Anas station, about 60m from the Cedro-do-Bucaco of the Ermida do Sacramento (bsc_015)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Single official source (ICNF register, processo AIP01110431I, measured 2016): girth 3.68m, height 27m, crown 19m, no age recorded. A fourth Cupressus lusitanica on this page (after bsc_006, bsc_007, bsc_015); each of the four sits at its own named station or ruin along the Via Sacra / forest paths, so the writer should lean on this tree's own setting (the Passo de Anas, one of the barefoot Carmelites' chapel stations) rather than repeating the Philip Miller type-specimen story already told by bsc_006 or the chapel-station story already told by bsc_007, per P3 uniqueness. Held back by an earlier pass only for being undated and single-sourced and smaller than the other cypresses on the page, which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker (a judgement call about whether a tree is good enough never blocks). No second source found; ships flagged per Step 2. Age left blank rather than estimated: no girth-to-age comparison is available for this specific species/site combination without repeating the plaque data already used for bsc_006/007."
+  },
+  {
+    "id": "bsc_017",
+    "name": "The Cedro-do-Bucaco of the Casa de Guarda do Serpa",
+    "species": "Mexican Cypress (Cupressus lusitanica)",
+    "age_estimate": "about 100 years, register figure, exact measurement date not recorded",
+    "age_min": 90,
+    "age_max": 130,
+    "girth_cm": 472,
+    "height_m": 35,
+    "location": {
+      "address": "Cerca de 200m a leste da Casa de Guarda do Serpa, Mata Nacional do Bucaco, 3050-261 Luso",
+      "latitude": 40.37958889,
+      "longitude": -8.369994444,
+      "neighbourhood": "Casa de Guarda do Serpa"
+    },
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class (ICNF national monumental trees register, processo AIP01110495I, girth 4.72m, height 35m, age 100 years at last measurement)"
+    ],
+    "access": "Free on foot. Cars pay 5 euros at the forest gate",
+    "transport": "On a forest track about 200m east of the Casa de Guarda do Serpa gatehouse, at the north edge of the forest's classified-tree cluster",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Single official source (ICNF register, processo AIP01110495I): girth 4.72m (the largest girth of the Bucaco cypresses on this page bar none), height 35m, age given as 100 years but the register does not record the measurement date, unlike its siblings (bsc_006/007/016 all carry a 2016 date), so the age is left as a wide band (90-130) rather than adding a fixed number of years to an unknown baseline. Not part of the forest's 2018 monumental-tree classification decree, unlike the other published cypresses on this page; the register entry itself is the only source and does not explain why. No second source found. Ships flagged per Step 2 and per the 2026-08-10 ruling that a missing corroborating source never blocks publication on its own."
+  },
+  {
+    "id": "bsc_018",
+    "name": "The Mexican White Pine of the Cova da Raposa",
+    "species": "Mexican White Pine (Pinus ayacahuite)",
+    "age_estimate": "about 100 years, register figure, exact measurement date not recorded",
+    "age_min": 90,
+    "age_max": 130,
+    "girth_cm": 255,
+    "height_m": 40,
+    "location": {
+      "address": "Cova da Raposa, Mata Nacional do Bucaco, 3050-261 Luso",
+      "latitude": 40.37938889,
+      "longitude": -8.370058333,
+      "neighbourhood": "Cova da Raposa"
+    },
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class (ICNF national monumental trees register, processo AIP01110494I, girth 2.55m, height 40m, age 100 years at last measurement)"
+    ],
+    "access": "Free on foot. Cars pay 5 euros at the forest gate",
+    "transport": "At the Cova da Raposa, in the forest interior, close to the Cedro-do-Bucaco of the Casa de Guarda do Serpa (bsc_017)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Single official source (ICNF register, processo AIP01110494I): girth 2.55m, height 40m, which is a real outlier on this page, taller than any of the published cypresses despite a modest trunk, a genuine Mexican mountain conifer (Pinus ayacahuite, native to the highlands of Mexico and Central America, the same Carmelite-planted exotic collection as the cypresses). Age given as 100 years with no measurement date recorded, so left as a wide band (90-130) rather than a fixed figure, same caveat as bsc_017. Not part of the 2018 classification decree. No second source found. Ships flagged per Step 2."
+  },
+  {
+    "id": "bsc_019",
+    "name": "The Magenta Cherry at the Forest Nursery",
+    "species": "Magenta Cherry (Syzygium paniculatum)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 315,
+    "height_m": null,
+    "location": {
+      "address": "A entrada do viveiro florestal, Mata Nacional do Bucaco, 3050-261 Luso",
+      "latitude": 40.37668788,
+      "longitude": -8.36566103,
+      "neighbourhood": "Viveiro Florestal"
+    },
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class (ICNF national monumental trees register, processo AIP01110435I, girth 3.15m, crown 9.4m, measured 2016)"
+    ],
+    "access": "Free on foot. Cars pay 5 euros at the forest gate",
+    "transport": "At the entrance to the forest's own tree nursery (viveiro florestal)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Single official source (ICNF register, processo AIP01110435I): girth 3.15m, crown 9.4m, no height and no age recorded. Syzygium paniculatum (magenta cherry / brush cherry) is an Australian rainforest species grown for its edible magenta fruit; no source this pass dates the local fruiting season, so no best_time. Thin on facts compared to its neighbours on this page, which is not a reason to withhold it per the 2026-08-10 ruling (a judgement call about whether a tree is remarkable enough never blocks publication). No second source found. Ships flagged per Step 2."
+  }
+]
