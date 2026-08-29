@@ -73,13 +73,8 @@ struct TreeCard: View {
             Color.clear
                 .frame(height: imageHeight)
                 .overlay {
-                    AsyncImage(url: url) { phase in
-                        switch phase {
-                        case .success(let img):
-                            img.resizable().aspectRatio(contentMode: .fill)
-                        default:
-                            placeholder.overlay(ProgressView().tint(.white))
-                        }
+                    TreePhoto(url: url) {
+                        placeholder.overlay(ProgressView().tint(.white))
                     }
                 }
                 .clipped()

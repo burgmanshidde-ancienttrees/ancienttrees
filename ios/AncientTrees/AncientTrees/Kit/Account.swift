@@ -407,6 +407,14 @@ public final class Account {
 
 /// Why the sheet opened, which decides its headline.
 public enum SignInReason: Equatable, Identifiable {
+    /// The one line every passive sign-in prompt uses: the card on My trees,
+    /// the row on Settings, the name at the top of the collection. Written
+    /// once because it was written three times and they had already drifted
+    /// into two different sentences, both of them about our plumbing rather
+    /// than about what a person gets (Hidde, 2026-08-29).
+    public static let prompt = "Register and sign in to add and save trees."
+
+
     public var id: String { headline }
 
     case general
@@ -418,7 +426,15 @@ public enum SignInReason: Equatable, Identifiable {
 
     var headline: String {
         switch self {
-        case .general: "Keep your trees"
+        // WHAT AN ACCOUNT IS FOR, in the words Hidde used when he read the
+        // old one (2026-08-29: "sign in zin is nog steeds onzinnig; register
+        // and log in to add and save trees"). It said "Keep your trees" over
+        // "An account carries your collection to the website and to any phone
+        // you sign in on", which describes our plumbing at the exact moment
+        // somebody is deciding whether to bother. This is the general ask, and
+        // the general ask is raised by the two things an account gates: adding
+        // a tree and saving one.
+        case .general: "Sign in to add and save trees"
         // Short on purpose. An earlier version put the tree's name in the
         // headline and "Keep The Last Elm of Stationsplein" ran the full width
         // of the phone at title size, which is a layout that only holds for the
@@ -434,7 +450,7 @@ public enum SignInReason: Equatable, Identifiable {
     var detail: String {
         switch self {
         case .general:
-            "An account carries your collection to the website and to any phone you sign in on."
+            "You can add a tree and save the ones you like once you have an account. One email address, no password."
         case .keepTree(let name):
             "\(name) is yours. Sign in and your collection follows you to the website and to any phone."
         case .keepCollection:

@@ -556,10 +556,8 @@ struct CollectView: View {
                 ZStack {
                     Circle().fill(Brand.moss.opacity(0.12))
                     if let url = profiles.me?.avatar_url, let u = URL(string: url) {
-                        AsyncImage(url: u) { img in
-                            img.resizable().aspectRatio(contentMode: .fill)
-                        } placeholder: { Color.clear }
-                        .clipShape(.circle)
+                        TreePhoto(url: u) { Color.clear }
+                            .clipShape(.circle)
                     } else if let e = profiles.me?.display_name ?? account.email, let first = e.first {
                         Text(String(first).uppercased())
                             .font(.brand(24, .black, relativeTo: .title2))
@@ -619,7 +617,7 @@ struct CollectView: View {
                         // which is where reading actually happens.
                         .dynamicTypeSize(...DynamicTypeSize.accessibility1)
                     } else {
-                        Text("Sign in and your collection follows you.")
+                        Text(SignInReason.prompt)
                             .font(.caption).foregroundStyle(Brand.inkSoft)
                     }
                 }
@@ -904,7 +902,7 @@ struct CollectView: View {
                     Text("Sign in")
                         .font(.brand(16, .bold, relativeTo: .subheadline))
                         .foregroundStyle(Brand.ink)
-                    Text("Your collection follows you to the website and to any phone.")
+                    Text(SignInReason.prompt)
                         .font(.caption).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                 }

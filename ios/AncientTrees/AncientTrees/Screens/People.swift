@@ -65,8 +65,7 @@ struct PeopleView: View {
                         ZStack {
                             Circle().fill(Brand.moss.opacity(0.12))
                             if let url = p.avatar_url, let u = URL(string: url) {
-                                AsyncImage(url: u) { $0.resizable().aspectRatio(contentMode: .fill) }
-                                    placeholder: { Color.clear }
+                                TreePhoto(url: u) { Color.clear }
                                     .clipShape(.circle)
                             } else if let first = p.display_name.first {
                                 Text(String(first).uppercased())

@@ -36,8 +36,7 @@ struct ProfileEditor: View {
                                 Image(uiImage: preview).resizable()
                                     .aspectRatio(contentMode: .fill).clipShape(.circle)
                             } else if let url = profiles.me?.avatar_url, let u = URL(string: url) {
-                                AsyncImage(url: u) { $0.resizable().aspectRatio(contentMode: .fill) }
-                                    placeholder: { Color.clear }
+                                TreePhoto(url: u) { Color.clear }
                                     .clipShape(.circle)
                             } else {
                                 Image(systemName: "person.fill")

@@ -515,6 +515,28 @@ struct ContentView: View {
             }
         }
         .animation(.easeInOut(duration: 0.2), value: needsPrimer)
+        // SIGNING OUT EMPTIES THIS PHONE (Hidde, 2026-08-29: "de favourites en
+        // seen moet ook leeg wanneer niet ingelogd", and beside it "profielfoto
+        // moet weg als je uitlogt net als alle hartjes op de thumbnails").
+        //
+        // Saving and collecting have needed an account since 2026-08-25, so a
+        // filled heart on a signed-out phone is a leftover from a session that
+        // has ended, and it is the loudest kind: it appears on every card, on
+        // the pins, and as a name and a picture over the settings page. The app
+        // was still wearing somebody's face after they left.
+        //
+        // Nothing is deleted anywhere but here. The collection lives in the
+        // account and comes back on the next sign-in, which is why both calls
+        // are named forgetLocally rather than clear.
+        //
+        // Your own PHOTOGRAPHS stay. They are the one thing on this phone that
+        // an upload may not have reached yet, and losing a picture somebody
+        // took under a tree is not recoverable by signing back in.
+        .onChange(of: account.isSignedIn) { was, now in
+            guard was, !now else { return }
+            saved.forgetLocally()
+            profiles.forgetLocally()
+        }
         .task {
             store.loadBundled()
             // Ask whether anything changed. A few dozen bytes, and it is the

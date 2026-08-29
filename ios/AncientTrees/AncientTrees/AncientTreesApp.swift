@@ -10,6 +10,15 @@ import UIKit
 
 @main
 struct AncientTreesApp: App {
+    /// Somewhere for photographs to live, set before the first request rather
+    /// than on the first view. It is two object allocations and cannot hang,
+    /// which is the whole reason anything else was moved out of here.
+    ///
+    /// iOS gives a process 512 KB of image cache by default and this app draws
+    /// shelves of photographs, so without this every scroll back down a page
+    /// re-downloads what it drew a second ago. See Kit/TreePhoto.swift.
+    init() { ImageStore.prepareCache() }
+
     /// Registering the brand font and styling the navigation bar used to happen
     /// in init(), which runs before any view exists. Anything that hangs there
     /// gives a white screen with nothing to read: no view, no console output, no

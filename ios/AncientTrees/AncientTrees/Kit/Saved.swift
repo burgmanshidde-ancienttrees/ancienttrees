@@ -165,6 +165,23 @@ public final class Saved {
         onMutate?(id, entries[id])
     }
 
+    /// Everything this phone holds, forgotten, WITHOUT telling the server.
+    ///
+    /// Signing out empties the collection on this phone (Hidde, 2026-08-29:
+    /// "de favourites en seen moet ook leeg wanneer niet ingelogd"). Saving is
+    /// already gated behind an account, so a filled heart on a signed-out phone
+    /// is the leftovers of somebody else's session showing through, and the
+    /// ticks and hearts on every card said the app still knew who you were.
+    ///
+    /// It deliberately does NOT fire `onMutate`. That is the channel that
+    /// deletes a row from the account, and this is not a deletion: the
+    /// collection lives in the account and comes straight back on the next
+    /// sign-in. Emptying a phone must never empty a person's account.
+    public func forgetLocally() {
+        entries = [:]
+        persist()
+    }
+
     private func persist() {
         if let d = try? JSONEncoder().encode(Array(entries.values)) {
             defaults.set(d, forKey: key)

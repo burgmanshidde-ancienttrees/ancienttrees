@@ -171,7 +171,7 @@ struct ProfileView: View {
                     Text("Sign in")
                         .font(.brand(18, .bold, relativeTo: .headline))
                         .foregroundStyle(Brand.ink)
-                    Text("Your collection follows you to the website and to any phone.")
+                    Text(SignInReason.prompt)
                         .font(.footnote).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -274,12 +274,17 @@ struct ProfileView: View {
                 // UserDefaults and SwiftUI has no way to know it changed, so
                 // the row would keep printing the old answer until something
                 // else redrew the screen.
+                // The two apps and nothing else. "Ask again" was a third
+                // option here and it is gone (Hidde, 2026-08-29: "directions
+                // ask again optie is niet nodig"). A default-app setting lists
+                // the apps; putting the question itself in the list of answers
+                // is a control that undoes the choice it exists to make, and
+                // the ask is not something anybody wants back.
                 Menu {
                     Picker("", selection: $directionsApp) {
                         ForEach(Directions.MapsApp.allCases) { a in
                             Text(a.label).tag(a.rawValue)
                         }
-                        Text("Ask again").tag("")
                     }
                 } label: {
                     HStack(spacing: 12) {

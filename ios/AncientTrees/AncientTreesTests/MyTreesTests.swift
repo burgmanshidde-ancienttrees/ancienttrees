@@ -489,4 +489,39 @@ struct WhenPermissionIsRefused {
         #expect(here != MapLayers.cellKey(x: 11 * cell, y: 20 * cell, cell: cell))
         #expect(here != MapLayers.cellKey(x: 10 * cell, y: 21 * cell, cell: cell))
     }
+
+    /// A tree you added yourself is one of the numbers (Hidde, 2026-08-29:
+    /// "zelfgemaakte bomen moeten gewoon mee clusteren met de getallen als je
+    /// uitzoomt"). It used to sit in a source of its own, and a grid can only
+    /// group what it is handed, so a city collapsing to one bubble left your
+    /// own pin hanging beside it at full size.
+    ///
+    /// The point of testing the grouping rather than the map: this is the whole
+    /// decision, and it can be asked without a simulator, a style or a pixel.
+    @Test func yourOwnTreeJoinsThePileBesideIt() {
+        // Zoom 6, a continent on the screen: everything in Amsterdam is one
+        // pile at this range.
+        let cell = 60.0 / (512.0 * pow(2.0, 6.0))
+        let ours = [CLLocationCoordinate2D(latitude: 52.3731, longitude: 4.8922),
+                    CLLocationCoordinate2D(latitude: 52.3600, longitude: 4.9100)]
+        let yours = CLLocationCoordinate2D(latitude: 52.3700, longitude: 4.8800)
+
+        let grouped = MapLayers.groups(of: ours + [yours], cell: cell)
+
+        #expect(grouped.count == 1, "three trees in one city drew more than one bubble")
+        #expect(grouped[0].count == 3, "the pile did not count the tree you added")
+    }
+
+    /// And it comes back out on its own when the map is close enough, or a
+    /// photograph you took would be locked inside a bubble forever.
+    @Test func yourOwnTreeStandsAloneWhenTheMapIsClose() {
+        let cell = 60.0 / (512.0 * pow(2.0, 15.0))
+        let ours = CLLocationCoordinate2D(latitude: 52.3731, longitude: 4.8922)
+        let yours = CLLocationCoordinate2D(latitude: 52.3700, longitude: 4.8800)
+
+        let grouped = MapLayers.groups(of: [ours, yours], cell: cell)
+
+        #expect(grouped.count == 2)
+        #expect(grouped.allSatisfy { $0.count == 1 })
+    }
 }

@@ -272,9 +272,7 @@ struct HomeView: View {
                 .frame(width: 150, height: 100)
                 .overlay {
                     if let t = c.photo, let url = t.photo?.card {
-                        AsyncImage(url: url) { img in
-                            img.resizable().aspectRatio(contentMode: .fill)
-                        } placeholder: { Brand.surfaceMuted }
+                        TreePhoto(url: url) { Brand.surfaceMuted }
                     } else {
                         Brand.surfaceMuted
                     }
@@ -405,9 +403,7 @@ struct HomeView: View {
         return VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .bottomLeading) {
                 if let url = cover?.photo?.card {
-                    AsyncImage(url: url) { img in
-                        img.resizable().aspectRatio(contentMode: .fill)
-                    } placeholder: {
+                    TreePhoto(url: url) {
                         LinearGradient(colors: [Brand.canopy, Brand.moss],
                                        startPoint: .topLeading, endPoint: .bottomTrailing)
                     }
