@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 - Night run 2026-08-29 08:11 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 15.2 minutes of its 120 minute window, 85 turns, 3 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: Los Angeles, warsaw, bucaco, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-29 (session, continued) - Brisbane's third standing claim finished (0 trees, real leads work); a Girona claim released rather than dispatched; two photo sweeps
 
 **Finished the third claim the window's first attempt left standing, brisbane (verify).** Dispatched a verify pass on the fourth deepen attempt; it found and evaluated three candidates outside the already-exhausted clusters and delivered none, correctly: Bald Hills Hoop Pines (heritage-listed, two sources, but a private school campus with no evidence of public access), the Toowong Cemetery hoop pine (better sourced now but still unplaceable inside the cemetery), and New Farm Park's fig (dead end). All recorded to data/leads/brisbane.json with reasons. Claim released.
