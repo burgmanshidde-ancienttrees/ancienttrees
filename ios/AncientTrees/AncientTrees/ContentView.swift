@@ -182,6 +182,14 @@ struct ContentView: View {
         guard !account.isSignedIn else { return }
         saved.forgetLocally()
         profiles.forgetLocally()
+        // AND THE TREES SOMEBODY ADDED THEMSELVES (Hidde, 2026-08-29: "als je
+        // uitlogt moeten de bomen die je hebt toegevoegd niet meer zichtbaar
+        // zijn op de kaart en in de lijsten", and "ik kan ook een boom removen
+        // terwijl ik uitgelogd ben"). They were the loudest leftover of the
+        // three, because they carry a photograph and they sit on the map.
+        // Only the ones the account already holds; Sightings.forgetLocally()
+        // says why.
+        sightings.forgetLocally()
     }
 
     /// The centre button, gated.
@@ -541,9 +549,13 @@ struct ContentView: View {
         // account and comes back on the next sign-in, which is why both calls
         // are named forgetLocally rather than clear.
         //
-        // Your own PHOTOGRAPHS stay. They are the one thing on this phone that
-        // an upload may not have reached yet, and losing a picture somebody
-        // took under a tree is not recoverable by signing back in.
+        // Your own photographs stay ONLY while the account has not got them
+        // yet. That exemption used to be blanket, on the sound half of this
+        // reasoning: a picture somebody took under a tree is not recoverable by
+        // signing back in. The unsound half was applying it to photographs the
+        // server demonstrably holds, which left a signed-out phone showing
+        // somebody's trees on the map and letting anyone delete them. It is
+        // asked per sighting now, and `syncedAt` is the answer.
         .onChange(of: account.isSignedIn) { _, _ in forgetIfSignedOut() }
         .task {
             // AT LAUNCH TOO, not only on the transition (Hidde, 2026-08-29:

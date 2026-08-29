@@ -139,6 +139,7 @@ def screens(sub):
         ("collection",    ["-tab=0", f'-open=collection:{sub["collection"]}'], 5),
         ("walk",          ["-tab=0", f'-open=walk:{sub["walk"]}'], 7),
         ("place-pin",     ["-tab=0", f'-open=tree:{sub["tree"]}', "-placepin"], 8),
+        ("species-pick",  ["-tab=0", f'-open=tree:{sub["tree"]}', "-speciespick"], 8),
         # The which-maps-app question, which is a dialog and still a screen:
         # it is the first thing a person meets after tapping Take me there.
         ("directions",    ["-tab=0", "-directions"], 5),

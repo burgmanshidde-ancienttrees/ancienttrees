@@ -25,6 +25,35 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Naming the species of a tree somebody added
+
+**Reference: iNaturalist's identify screen.** A searchable list of taxa, with
+computer vision suggestions above it, and the tick is always the person's to
+give. Nothing is assigned on their behalf.
+
+**How location is used there, which is the part worth copying exactly.** The
+suggestions come from the PHOTOGRAPH. Location is a second model on top of it
+(their Geomodel) that FILTERS and labels the visually similar candidates as
+"Expected Nearby". So the picture identifies and the place narrows; the place
+never identifies on its own.
+
+We measured what happens if it does, on 2026-08-29, because it is the free
+version and the temptation is obvious. Over 1,945 published trees, the
+commonest species within 500 metres is the right answer 9 percent of the time.
+Tighter is worse, because a curated set avoids repeating a species in one park.
+So our list is ORDERED by what grows nearby and claims nothing, until there is
+a model reading the photograph. See DECISIONS.md 2026-08-29.
+
+**A name not on the list is still typeable**, the ordinary tag-field behaviour,
+and offered only when nothing matches what was typed. Offering it beside a
+matching row invites a second spelling of a name we already have.
+
+Read 2026-08-29:
+- https://help.inaturalist.org/en/support/solutions/articles/151000170368-which-taxa-are-included-in-the-computer-vision-suggestions-
+- https://www.inaturalist.org/blog/84677-introducing-the-inaturalist-geomodel
+
+---
+
 ## Picking a photo from the camera roll, and where it was taken
 
 **Reference: iNaturalist.** The camera roll is the ordinary route, not the

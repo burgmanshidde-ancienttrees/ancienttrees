@@ -307,6 +307,7 @@ struct TreeDetail: View {
             // (CLAUDE.md), so the pin picker gets its argument in the same
             // commit as the picker.
             if ProcessInfo.processInfo.arguments.contains("-placepin") { placing = true }
+            if ProcessInfo.processInfo.arguments.contains("-speciespick") { choosingSpecies = true }
         }
     }
 

@@ -643,7 +643,17 @@ struct ProfileView: View {
             // verdict. A plain button says the same word and survives.
             .confirmationDialog("Sign out?", isPresented: $confirmingSignOut,
                                 titleVisibility: .visible) {
-                Button("Sign out", role: .destructive) { account.signOut() }
+                Button("Sign out", role: .destructive) {
+                    // THE QUEUE GOES UP BEFORE THE DOOR SHUTS. Signing out is
+                    // the last moment a valid token exists, and anything not
+                    // yet at the account is about to become the only copy
+                    // there is. Pushing here is what makes the clearing that
+                    // follows lossless rather than merely tidy.
+                    Task {
+                        await SightingSync.pushAll(account: account, sightings: sightings)
+                        account.signOut()
+                    }
+                }
                 Button("Cancel") { confirmingSignOut = false }
             } message: {
                 Text("Your collection stays in your account. Sign in again on any phone and it comes back.")
