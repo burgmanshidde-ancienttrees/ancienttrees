@@ -6,6 +6,35 @@ import { treeIsRenderable } from "./trees";
 export const SPECIES_MIN_TREES = 3;
 export const COUNTRY_MIN_CITIES = 3;
 
+/** common_name -> slug, for every species that ACTUALLY GETS A PAGE.
+ *
+ * The one rule, in one place, because it was in three and they disagreed.
+ * A species page is built when two things hold: an intro has been written for
+ * it, and at least SPECIES_MIN_TREES renderable trees carry the name. Every
+ * page that links to /species/ was checking only the first, so a species that
+ * fell below the floor kept its inbound links and lost its page.
+ *
+ * That is not hypothetical. On 2026-08-29 a tree was pulled from Malaga on
+ * hard rule 10, Avocado went from three trees to two, its page stopped being
+ * built, and two Barcelona tree pages and the Spain country page went on
+ * linking to it. qa.py caught the dead links and the deploy went red, which is
+ * the system working; this is so it does not have to.
+ */
+export function speciesPageSlugs(
+  renderable: CityEntry[],
+  intros: { data: { common_name: string; slug: string } }[],
+): Map<string, string> {
+  const groups = groupTreesBySpecies(renderable);
+  const out = new Map<string, string>();
+  for (const intro of intros) {
+    const members = groups.get(intro.data.common_name);
+    if (members && members.length >= SPECIES_MIN_TREES) {
+      out.set(intro.data.common_name, intro.data.slug);
+    }
+  }
+  return out;
+}
+
 /** "European Yew (Taxus baccata)" -> "European Yew". */
 export function speciesCommon(tree: Tree): string {
   return (tree.species ?? "").split(" (")[0];

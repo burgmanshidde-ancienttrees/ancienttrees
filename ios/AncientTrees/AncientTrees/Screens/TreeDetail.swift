@@ -26,6 +26,9 @@ struct TreeDetail: View {
     @Environment(Sightings.self) private var sightings
     @Environment(\.dismiss) private var dismiss
     @State private var editing: EditableField?
+    /// Naming the species is a picker rather than a text field, since
+    /// 2026-08-29. A typed string cannot group (hard rule 9).
+    @State private var choosingSpecies = false
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
     @State private var reporting = false
@@ -244,7 +247,7 @@ struct TreeDetail: View {
                         Button { editing = .name } label: {
                             Label("Change the name", systemImage: "pencil")
                         }
-                        Button { editing = .species } label: {
+                        Button { choosingSpecies = true } label: {
                             Label("Change the species", systemImage: "leaf")
                         }
                         Button { editing = .age } label: {
@@ -288,6 +291,14 @@ struct TreeDetail: View {
                 .environment(account)
         }
         .sheet(item: $editing) { editor($0) }
+        .sheet(isPresented: $choosingSpecies) {
+            SpeciesChooser(catalogue: catalogue,
+                           nearby: nearbySpecies,
+                           current: tree.commonName) { picked in
+                guard let m = mine else { return }
+                sightings.update(m.id, species: picked)
+            }
+        }
         .task {
             // Debug scaffolding, same family as -tab, -select and -collected:
             // simctl cannot tap, and a screen that only exists after a tap is a
@@ -572,7 +583,17 @@ struct TreeDetail: View {
                 .font(.brand(30, .bold, relativeTo: .largeTitle))
                 .foregroundStyle(Brand.ink)
             if tree.species.isEmpty, mine != nil {
-                blank("What kind of tree is it?", .species)
+                Button { choosingSpecies = true } label: {
+                    HStack(spacing: 5) {
+                        Image(systemName: "plus.circle")
+                        Text("What kind of tree is it?")
+                    }
+                    .font(.subheadline)
+                    .foregroundStyle(Brand.moss)
+                    .frame(minHeight: 44)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
             } else {
                 // The FULL name, botanical and all, stays here as the caption
                 // it always was; the short common name is the tappable fact
@@ -605,6 +626,17 @@ struct TreeDetail: View {
                     .lineLimit(1)
             }
         }
+    }
+
+    /// What grows around this tree, so the picker opens on the names somebody
+    /// standing here might actually need. Ordering only, never a claim: a
+    /// species is not guessable from a coordinate, and measuring said so
+    /// outright (2026-08-29, the true species is the commonest neighbour
+    /// within 500 metres 9 percent of the time).
+    private var nearbySpecies: [String] {
+        catalogue.trees
+            .filter { $0.distanceKm(from: tree.lat, tree.lng) < 3 && !$0.commonName.isEmpty }
+            .map(\.commonName)
     }
 
     private var place: String {
@@ -644,8 +676,22 @@ struct TreeDetail: View {
             // is belongs with how old it is, because it is the same kind of
             // answer. It stays tappable, so it is still the door to the
             // species page.
-            Button { navigator.push = .species(tree.commonName) } label: {
-                fact(tree.commonName, "Species", chevron: true)
+            Button {
+                // ON YOUR OWN TREE THIS NAMES THE SPECIES, it does not browse
+                // to one (Hidde, 2026-08-29: "als ik op specie klik kom ik
+                // hier, dat moet een scherm zijn waar je tussen soorten kan
+                // kiezen"). The chip pushed the read-only species page whatever
+                // the tree was, so on a tree somebody had just added, with no
+                // species on it yet, it opened a page about nothing: no name,
+                // and "0 on the map, photographed first".
+                if mine != nil {
+                    choosingSpecies = true
+                } else {
+                    navigator.push = .species(tree.commonName)
+                }
+            } label: {
+                fact(mine != nil && tree.species.isEmpty ? "Add it" : tree.commonName,
+                     "Species", chevron: true)
             }
             .buttonStyle(.plain)
             // On the BUTTON, not on its label: the label's own frame does not
@@ -698,7 +744,6 @@ struct TreeDetail: View {
                         guard let m = mine else { return }
                         switch field {
                         case .name: sightings.update(m.id, name: text)
-                        case .species: sightings.update(m.id, species: text)
                         case .age: sightings.update(m.id, age: text)
                         case .story: sightings.update(m.id, note: text)
                         }
@@ -710,7 +755,6 @@ struct TreeDetail: View {
     private func current(_ field: EditableField) -> String {
         switch field {
         case .name: tree.name
-        case .species: tree.species
         case .age: tree.age ?? ""
         case .story: tree.story
         }
@@ -718,13 +762,12 @@ struct TreeDetail: View {
 
     /// A field on your own tree that nobody has filled in yet.
     enum EditableField: String, Identifiable {
-        case name, species, age, story
+        case name, age, story
         var id: String { rawValue }
 
         var prompt: String {
             switch self {
             case .name: "What do you call it?"
-            case .species: "What kind of tree is it?"
             case .age: "How old is it, roughly?"
             case .story: "What makes it worth the walk?"
             }
