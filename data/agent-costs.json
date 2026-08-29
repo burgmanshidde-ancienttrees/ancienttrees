@@ -3870,6 +3870,15 @@
         "note": "Two species intro pages written from pagegaps.py's gap list (Queensland Kauri: Sydney/Hobart/LA; Gray Poplar: Ferrara/Sofia/Warsaw), each from the trees' own facts per P3. Closes the standing species-page gap to 0.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "cagliari",
+        "kind": "verify",
+        "tokens": 65000,
+        "trees": 1,
+        "note": "confirmed all flagged near-duplicates already published/blocked; verified 1 new day-trip tree (Sinnai eucalyptus) via idese.cultura.gov.it + MASAF; recorded Sarroch cluster and remaining far candidates as unresolved leads for a future pass",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
