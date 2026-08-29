@@ -487,9 +487,9 @@ so qa.py fails the deploy when the table and the json disagree.
 | 290 | Regensburg | 1.18 | 51,930 | - | - | - | 2 | 10 | predicted (travel demand) |
 | 291 | Nafplio | 1.24 | 31,193 | - | - | - | - | 10 | predicted (travel demand) |
 | 292 | Evora | 0.78 | 15,345 | - | - | - | - | 10 | predicted (travel demand) |
-| 293 | Assisi | 0.68 | 30,278 | - | - | - | 6 | 10 | predicted (travel demand) |
-| 294 | Bamberg | 0.97 | 28,716 | 4 | - | - | 10 | 10 | predicted (travel demand) |
-| 295 | Stratford-upon-Avon | 1.10 | 68,555 | - | - | - | - | 10 | predicted (travel demand) |
+| 293 | Bamberg | 0.97 | 28,716 | 4 | - | 1 | 10 | 10 | predicted (travel demand) |
+| 294 | Stratford-upon-Avon | 1.10 | 68,555 | - | - | - | - | 10 | predicted (travel demand) |
+| 295 | Assisi | 0.68 | 30,278 | 6 | - | - | 6 | 10 | predicted (travel demand) |
 | 296 | La Palma | 0.70 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 297 | Salzburg | 0.68 | 107,243 | 5 | - | - | 34 | 10 | published, never ranked (may be uncrawled) |
 | 298 | Oaxaca | 0.95 | 72,955 | - | - | - | - | 10 | predicted (travel demand) |
