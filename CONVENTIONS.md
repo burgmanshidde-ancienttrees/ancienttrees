@@ -275,3 +275,25 @@ So the copy says what somebody GETS and never how, and never how much.
 
 Recorded from our own corpus, 2026-08-29. No source URL captured; the wording
 of each app is described from use.
+
+## App Store screenshots (2026-08-29)
+
+**Looked up:** AllTrails (id405075943), komoot (id447374873), PictureThis
+(id1252497129), read off their own App Store pages rather than remembered.
+
+**What all three do, without exception:** a solid brand-coloured ground rather
+than the white of the screenshot; a caption at the TOP, one or two lines, four
+to six words, benefit first; and the screen inset below it, cropped at the
+bottom rather than shrunk to fit, so it reads as a phone in use.
+
+**Where they differ:** AllTrails draws a black device bezel; komoot and
+PictureThis let the screen bleed to the panel's sides. We follow AllTrails,
+because our screens are pale and map-heavy and without a bezel the panel and
+the screenshot melt into each other.
+
+**The pattern worth more than the styling:** the first panel carries a promise
+rather than a screen. AllTrails opens on black with "Discover 500,000+ trails",
+komoot with "Explore 7M+ routes". A gallery gets scrolled; the first frame is
+the only one everybody sees.
+
+Ours: `scripts/appstore_frames.py`, run after `appstore_shots.py`.
