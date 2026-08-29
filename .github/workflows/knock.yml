@@ -1,0 +1,80 @@
+name: Knock watchdog
+
+# GitHub is not delivering the night shift's cron, and the shortfall is the
+# single biggest loss in the machine's day. Measured 2026-08-29: since the
+# twelve-knock cron went live at 11:45 UTC on 08-28, ELEVEN scheduled knocks
+# were due and TWO arrived. data-digest.yml's own watchdog note recorded the
+# same on 08-27 and 08-28, 2 of 12 both days, and it could not fix it: that
+# watchdog runs once a day at 05:15, so it can rescue at most one knock in
+# twenty-four hours.
+#
+# What is actually happening is documented GitHub behaviour rather than a bug
+# here: a scheduled run is delayed under load, and when the delay reaches the
+# next slot the delayed one is DROPPED. The observed arrivals are 1h44 and
+# 34 minutes late, so the delays are already the size of the spacing.
+#
+# A workflow_dispatch is never dropped. So this job runs often, costs about
+# fifteen seconds of a runner, and turns unreliable delivery into reliable
+# dispatch. It does not raise the ceiling: the three guards below hold the
+# same shape the cron asks for, twelve knocks a day, two hours apart, never
+# stacked on a run that is already working.
+#
+# This is a watchdog and not a chain. Self-chaining stays off (nightly.yml,
+# 2026-07-31): a chain re-fires the moment a run ENDS, which is what spent
+# ~940 minutes in one day. This fires only when nothing has started for two
+# hours, which is exactly the gap the cron was supposed to fill.
+
+on:
+  schedule:
+    # Every twenty minutes, and deliberately off the hour boundary. Each firing
+    # is an independent chance; the guards decide whether anything happens.
+    - cron: "7,27,47 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: knock-watchdog
+  cancel-in-progress: true
+
+jobs:
+  knock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Dispatch a night run when the cron dropped one
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          RUNS=$(gh api "repos/${{ github.repository }}/actions/workflows/nightly.yml/runs?per_page=40" 2>/dev/null || echo "")
+          if [ -z "$RUNS" ]; then echo "no nightly history readable; nothing to do"; exit 0; fi
+
+          # Guard 1: never stack on a run that is queued or working. The
+          # concurrency group on nightly.yml does not cancel, so a stacked
+          # dispatch would just sit behind it and GitHub keeps only the newest
+          # pending one, which throws the knock away.
+          INFLIGHT=$(echo "$RUNS" | jq '[.workflow_runs[] | select(.status != "completed")] | length')
+          if [ "$INFLIGHT" -gt 0 ]; then echo "a night run is in flight; nothing to do"; exit 0; fi
+
+          # Guard 2: the knock spacing. Two hours is the floor set in
+          # nightly.yml, because the job cap is 120 minutes.
+          LAST=$(echo "$RUNS" | jq -r '.workflow_runs[0].created_at // empty')
+          if [ -n "$LAST" ]; then
+            AGE=$(( $(date -u +%s) - $(date -u -d "$LAST" +%s) ))
+            echo "last night run started $(( AGE / 60 ))m ago"
+            if [ "$AGE" -lt 7200 ]; then echo "inside the two-hour spacing; nothing to do"; exit 0; fi
+          fi
+
+          # Guard 3: the day's ceiling, so a broken guard above cannot run away.
+          # Twelve is what the cron asks for and this never exceeds it.
+          SINCE=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          FIRED=$(echo "$RUNS" | jq "[.workflow_runs[] | select(.created_at > \"$SINCE\")] | length")
+          echo "$FIRED knocks arrived in the last 24h"
+          if [ "$FIRED" -ge 12 ]; then echo "the day is full; nothing to do"; exit 0; fi
+
+          echo "no knock for over two hours; dispatching one"
+          gh workflow run nightly.yml -R "${{ github.repository }}" \
+            && echo "dispatched" || echo "dispatch failed; the cron remains the fallback"
