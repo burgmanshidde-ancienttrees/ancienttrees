@@ -74,6 +74,15 @@ somebody is deciding whether to bother. Written once now, in
 **Directions loses "Ask again".** The row lists the apps, which is what iOS's own
 Default Apps screen does.
 
+**And an eighth, sent while the first seven were being walked: no transport
+info, no icon.** 93 trees carry no transport line and 11 no access line, and
+both drew anyway, symbol and fixed column and then an empty string. An icon with
+nothing beside it is not a smaller version of the information, it is a promise
+of information that is not there, and it reads as a thing that failed to load.
+Both lines are conditional now, and so is the block, because a VStack of two
+empty lines still spends its own spacing. Rendered on a tree with one line and
+on a tree with neither.
+
 One thing worth knowing rather than fixing: the new `TreePhoto` failed the layout
 gate on first build, on the tree page and the pin picker. A `.fill` image reports
 the size its picture wants rather than the box it is clipped to, so the hero
