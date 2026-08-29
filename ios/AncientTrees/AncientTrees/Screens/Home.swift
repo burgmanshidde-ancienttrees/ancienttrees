@@ -195,7 +195,10 @@ struct HomeView: View {
     /// Picks the nearest tree that is at its best right now AND has a
     /// photograph, because a hero without a picture is a headline.
     private var speciesShelf: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        // 12, like every other section on this page. It was 8 here and 12
+        // everywhere else, so the gap between a heading and what it introduces
+        // changed depending on which heading you were looking at.
+        VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "By species",
                         subtitle: "\(Set(catalogue.trees.map(\.commonName)).count) kinds of tree",
                         more: .index(.species))
@@ -305,7 +308,7 @@ struct HomeView: View {
                     ForEach(trees) { t in
                         NavigationLink(value: Route.tree(t.id)) {
                             VStack(alignment: .leading, spacing: 6) {
-                                TreeCard(tree: t)
+                                TreeCard(tree: t, uniformTitle: true)
                                 if season, let b = t.bestTime {
                                     Text(b.label)
                                         .font(.caption).foregroundStyle(Brand.inkSoft)
