@@ -2,11 +2,11 @@
   "city": "Oahu",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Oahu's most remarkable trees cluster in three places. Foster Botanical Garden in downtown Honolulu holds five: a baobab, a Bodhi tree descended from the one in Bodh Gaya, a kapok older than the garden itself, a cannonball tree, and a soft-wooded quipo, all within a five minute walk behind one modest entrance fee. Moanalua Gardens keeps the Hitachi Tree, the rain tree famous from Japanese television. Thomas Square, Honolulu's oldest public park, keeps its banyans free to walk.",
-  "meta_description": "Oahu's most remarkable trees: a baobab and a Bodhi tree in one Honolulu garden, the Hitachi Tree at Moanalua, and free banyans at Thomas Square.",
-  "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 7.",
+  "intro": "Oahu's most remarkable trees cluster in four places. Foster Botanical Garden in downtown Honolulu holds five: a baobab, a Bodhi tree descended from the one in Bodh Gaya, a kapok older than the garden itself, a cannonball tree, and a soft-wooded quipo, all within a five minute walk behind one modest entrance fee. Moanalua Gardens keeps the Hitachi Tree, the rain tree famous from Japanese television. Thomas Square, Honolulu's oldest public park, keeps its banyans free to walk, and Ala Moana Beach Park keeps a tiered, geometric Black Olive free among its picnic lawns.",
+  "meta_description": "Oahu's most remarkable trees: a baobab and a Bodhi tree in one Honolulu garden, the Hitachi Tree at Moanalua, free banyans and a Black Olive.",
+  "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 8.",
   "question_answer": "Oahu's oldest documented tree is the Hillebrand Kapok in Foster Botanical Garden, planted around 1851 by the garden's founder, William Hillebrand, on what was then his own homestead. That makes it roughly 175 years old, older than the garden itself.",
-  "question_context": "Foster Botanical Garden holds five of the seven trees on this page, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before the property became a public botanical garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, depending on which of two disagreeing sources you read. Two more of the garden's trees carry documented arrival dates: a Bodhi tree grown from a cutting of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s with a trunk already thirteen metres around. A cannonball tree and a quipo round out the five, both flagged for gaps rather than disputes. The other two trees on this page stand elsewhere: the Hitachi Tree, a rain tree famous across Japan as a company emblem, is eight kilometres away at Moanalua Gardens under a ticket of its own, and the Indian banyans of Thomas Square, Honolulu's oldest public park, cost nothing to visit at all.",
+  "question_context": "Foster Botanical Garden holds five of the eight trees on this page, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before the property became a public botanical garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, depending on which of two disagreeing sources you read. Two more of the garden's trees carry documented arrival dates: a Bodhi tree grown from a cutting of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s with a trunk already thirteen metres around. A cannonball tree and a quipo round out the five, both flagged for gaps rather than disputes. The other three trees on this page stand elsewhere, and all cost nothing to visit: the Indian banyans of Thomas Square, Honolulu's oldest public park, and the Geometry Tree of Ala Moana Beach Park, a Black Olive grown into flat, stacked tiers. The Hitachi Tree, a rain tree famous across Japan as a company emblem, is the one paid exception, eight kilometres away at Moanalua Gardens under a ticket of its own.",
   "faq": [
     {
       "q": "What is the oldest tree in Oahu?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Where are Oahu's most remarkable trees?",
-      "a": "Five stand inside Foster Botanical Garden in downtown Honolulu, on the edge of Chinatown, within a five minute walk of each other. The other two stand apart: the Hitachi Tree at Moanalua Gardens, and the banyans of Thomas Square, which are free to visit."
+      "a": "Five stand inside Foster Botanical Garden in downtown Honolulu, on the edge of Chinatown, within a five minute walk of each other. The other three stand apart: the Hitachi Tree at Moanalua Gardens, and the free trees of Thomas Square and Ala Moana Beach Park."
     },
     {
       "q": "Is Foster Botanical Garden free to visit?",
@@ -250,6 +250,39 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "hnl_008",
+      "name": "The Geometry Tree of Ala Moana Beach Park",
+      "species": "Black Olive (Bucida buceras)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 320,
+      "height_m": 14.3,
+      "location": {
+        "address": "Ala Moana Beach Park, 1201 Ala Moana Blvd, Honolulu, HI 96814",
+        "latitude": 21.28873,
+        "longitude": -157.84826,
+        "neighbourhood": "Ala Moana"
+      },
+      "verified_sources": [
+        "https://data.honolulu.gov/Recreation/Exceptional-Trees-On-Oahu/84fd-3fzf",
+        "https://www.yumpu.com/en/document/view/11736142/exceptional-trees-on-oahu-city-and-county-of-honolulu",
+        "https://en.wikipedia.org/wiki/Ala_Moana_Beach_Park"
+      ],
+      "access": "Free, public city beach park, open 4am to 10pm daily, no admission.",
+      "transport": "Ala Moana Beach Park, between Waikiki and downtown Honolulu; TheBus stops along Ala Moana Blvd, and it borders Ala Moana Center, the shopping mall.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "verify_notes": "Species, girth (320cm, checked consistent with the recorded 101.6cm diameter) and height (47ft/14.3m) come from the City and County of Honolulu's Exceptional Trees register (Act 105 of 1975, CC0), cross-checked against the department's own earlier printed survey of the same designation. Both are the same city program rather than fully independent sources, and no age is recorded anywhere, so this stays flagged. The register's coordinates are only grid-rounded to about 1.1km, so the pin marks the park itself (Wikipedia's own coordinate for the park matches the register's rounded point) rather than the tree's exact spot within it.",
+      "story": "Ala Moana Beach Park has roughly forty banyans planted for its 1937 Banyan Garden, and one tree in the park belongs to none of them. Officially it is a Black Olive, Bucida buceras, but it earned its nickname, the Geometry Tree, from the way it grows: branches stack outward in flat, level tiers rather than the tangled shape most trees settle into. Some Black Olives are pruned hard to force that look; this one has done most of the work on its own.\n\nThe species is native to the Caribbean and Central America and arrived in Hawaii as a landscaping ornamental, prized for exactly this tiered habit. The City and County of Honolulu designated it an Exceptional Tree under the state's 1975 tree-protection law, recording a trunk just over three metres round and a crown reaching about fourteen metres, rated in excellent health at its last survey.\n\nAla Moana itself has been public land since the 1930s, built from reclaimed wetland into Honolulu's busiest beach park, free to enter every day between four in the morning and ten at night. No ticket, no gate, and the tree stands among the park's open lawns rather than off any marked path, worth hunting down once you know the odd, stacked shape to look for."
     }
   ]
 }
