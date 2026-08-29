@@ -210,7 +210,9 @@ struct CollectView: View {
             // header, where they were both a wall between the name and the
             // list and a row of tap targets in the drag area.
             statsRow
-            actionRow
+            // Signed out this opened the sign-in sheet, which the lane's own
+            // button already does one screenful lower. See signedOutLane.
+            if showsYourCollection { actionRow }
             // YOUR OWN TREES COUNT AS HAVING STARTED. This asked only about
             // ours, so somebody whose whole collection is trees they
             // photographed themselves was told "your first tree is 1.3 km
@@ -575,19 +577,18 @@ struct CollectView: View {
                  : "You collect a tree by photographing it while you stand in front of it. Sign in and we keep them for you.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
-            // THE WHITE ONE, not the green (Hidde, 2026-08-29: "doe maar
-            // alleen de witte knop niet de groene"). Green is the primary
-            // action on a screen and this screen already has one, the camera:
-            // two filled buttons in a column read as a choice between equals,
-            // and adding a tree is the thing we actually want somebody to do.
-            // Same shape as the Add a tree button on Settings.
+            // THE GREEN ONE, and it is the only one on the page while nobody
+            // is signed in (Hidde, 2026-08-29: "niet de knop wit maken, er
+            // stonden twee knoppen je hebt de verkeerde weggehaald"). Signed
+            // out, Add a tree opens this same sheet, so the two were one
+            // control drawn twice; the one that goes is the one whose label
+            // describes something you cannot do yet.
             Button { signingIn = true } label: {
                 Text("Sign in")
                     .font(.brand(16, .bold))
-                    .foregroundStyle(Brand.moss)
+                    .foregroundStyle(Brand.surface)
                     .frame(maxWidth: .infinity).frame(height: 48)
-                    .background(Brand.surface, in: .capsule)
-                    .overlay { Capsule().strokeBorder(Brand.moss.opacity(0.35), lineWidth: 1.5) }
+                    .background(Brand.moss, in: .capsule)
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("lane-signin")
