@@ -9,6 +9,70 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (continuation of a window whose first attempt claimed two cities and stopped after 16 minutes) - Alicante released, Sorrento +2, Oahu +1, Vancouver claimed and dispatched
+
+Started per the continuation runbook: `git pull`, then `passcheck.py --claims`
+showed two standing claims from the window's first attempt, alicante and
+sorrento, neither with a verify agent actually dispatched (both commits were
+just the claim itself). Checked each brief before acting: Alicante's own
+2026-08-28 log entry already confirmed it exhausted at this radius by three
+prior passes, so released it rather than burning a pass on a known dead end.
+Sorrento's brief showed real unmined register candidates (two more cemetery
+cypresses already flagged as leads, never verified), so dispatched a verify
+pass to finish what the claim promised. It delivered srn_005 and srn_006 (two
+more Mediterranean Cypresses in Piano di Sorrento's municipal cemetery,
+325cm and 270cm girth, both dated to the cemetery's 1876 opening by the same
+oral tradition as the already-published srn_003), wrote their stories myself
+(two trees, below the batch threshold for a full write pass), and updated the
+city's stale "all four" copy throughout (intro, meta, question fields, FAQ)
+to six. Also blocked a hotel-grounds cypress trio and a from-collapse-risk
+pine on the same pass; see data/leads/sorrento.json.
+
+**Rung 0b: two more Baarn test submissions (ids 43, 44)**, same account as
+row 41 already resolved as Hidde's own click-through test of the app's
+collect flow (confirmed via admin API previously). No tree name, no species,
+just a dropped pin and "Test". Set outcome: holds, processed, logged in
+CURATION.md.
+
+**Rung 3: REVIEW.md's Oahu WARN (paid ratio 86%, asked for one or two more
+free trees).** Found real supply in the City and County of Honolulu's
+Exceptional Trees register (Act 105 of 1975, CC0): the Geometry Tree of Ala
+Moana Beach Park, a Black Olive (Bucida buceras) pruned/grown into flat
+tiered branches, in a 100-acre free public beach park. Cross-checked the
+register against the department's own earlier printed survey (different
+document, same program) for existence and species; no independent editorial
+source turned up and no age is recorded, so it ships flagged. Nearly picked
+the wrong tree here: several travel-blog sources claim the banyan at Kuhio
+Beach Park was "planted in 1904", but tracing that claim back shows it
+actually belongs to the Moana Surfrider Hotel's courtyard banyan, a
+different, nearby tree; a textbook bridge claim, caught before it shipped.
+Fixed Oahu's stale "three places"/"seven trees" copy to four/eight.
+
+**Rung 1(0): Vancouver claimed and a verify pass dispatched, still running
+as this is written.** An earlier session today claimed and dispatched a
+Vancouver pass ("still running as this is written") that never left a
+result: no verified.json, no completion log, the claim itself had already
+expired/vanished by the time this attempt started. The underlying supply is
+real and untouched: 25 leads from the City of Vancouver Heritage Register
+(Open Government Licence - Vancouver), never geocoded or checked. Re-claimed
+and re-dispatched, briefed explicitly on the risk an earlier note flagged and
+nobody had actually checked: most addresses read as ordinary residential
+blocks, so this pass has to make a real hard-rule-10 call address by address
+rather than assume a heritage designation implies public access.
+
+Also ran the free `photo_hunt.py --recheck` API sweep (queue now 1208 swept,
+634 with at least one candidate). Every merge ran preflight, build, qa.py and
+superlatives.py; all clean apart from the known shallow-checkout single-
+lastmod sitemap warning (`git rev-parse --is-shallow-repository` confirms
+true here, pre-existing and unrelated).
+
+FOR HIDDE: nothing blocks. Worth knowing: this is the second time in one day
+a dispatched verify agent's output has gone missing because the session that
+started it ended first (Vancouver today, and the Nara/Padova pattern this
+file has recorded before). Background agents dying with their parent session
+is a known limitation; a claim alone is not evidence a pass actually ran, only
+a merged result or a LOG entry is.
+
 ## 2026-08-29 (session, late afternoon) - Naming a species, and what a signed-out phone may still show
 
 Two things Hidde walked into on his own telephone, both fixed and pushed.
