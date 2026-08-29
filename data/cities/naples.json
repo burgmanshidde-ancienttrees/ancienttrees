@@ -2,10 +2,10 @@
   "city": "Naples",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Naples has more catalogued monumental trees than any other Italian city, and keeps them in two places worth a morning each. The Real Bosco di Capodimonte is a former Bourbon hunting estate the court spent two centuries filling with specimens from China, Mexico and Australia, and nine of these trees grow there. The second walk is the Real Orto Botanico, founded by decree in 1807, where six more stand within 150 metres, including the widest trunk on the city's register. The rest are scattered.",
+  "intro": "Naples has more catalogued monumental trees than any other Italian city, and keeps them in two places worth a morning each. The Real Bosco di Capodimonte is a former Bourbon hunting estate the court spent two centuries filling with specimens from China, Mexico and Australia, and ten of these trees grow there. The second walk is the Real Orto Botanico, founded by decree in 1807, where six more stand within 150 metres, including the widest trunk on the city's register. The rest are scattered.",
   "meta_description": "Naples's most remarkable trees, in two walks: the Bourbon estate at Capodimonte with its 220-year-old camphor, and the 1807 botanical garden on Via Foria.",
   "question_answer": "Naples's oldest documented tree is the Canforo del Giardino dei Principi, a camphor tree in the Real Bosco di Capodimonte planted in the early 1800s and roughly 220 years old, brought directly from China during the Bourbon era. It grows in the Garden of the Princes, a free section of the park in the north of the city.",
-  "question_meta": "Naples's oldest tree is a 220-year-old camphor at Capodimonte, brought from China by the Bourbons. Its story, and twenty-one more trees.",
+  "question_meta": "Naples's oldest tree is a 220-year-old camphor at Capodimonte, brought from China by the Bourbons. Its story, and twenty-two more trees.",
   "question_context": "Naples tops Italy's own official register of monumental trees, the national list created under a 2013 law, with more catalogued specimens than any other municipality in the country. Most of that count concentrates in one place, the Real Bosco di Capodimonte, the former Bourbon royal hunting estate whose Garden of the Princes and Royal Orchard the park's own museum has singled out as home to six specifically monumental trees. Among those, the camphor tree of the Garden of the Princes is the one most consistently dated, at roughly 220 years old, brought from China in the early 1800s and now one of the largest camphor trees anywhere in Europe. A second camphor in the nearby Royal Orchard and a Montezuma cypress share the same garden but only carry a broad 19th century estimate, undated precisely by any single source, a gap common to several other trees on this list. The park is free to enter in most sections.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Why does Capodimonte have so many of Naples's oldest trees?",
-      "a": "Because the Bourbon kings spent roughly two centuries turning a royal hunting estate into a working botanical showcase, importing camphor from China, cypress from Mexico and eucalyptus from Australia. Nine of the twenty-two trees on this list, and more than half of Naples's officially catalogued monumental trees citywide, grow within its 134 hectares."
+      "a": "Because the Bourbon kings spent roughly two centuries turning a royal hunting estate into a working botanical showcase, importing camphor from China, cypress from Mexico and eucalyptus from Australia. Ten of the twenty-three trees on this list, and more than half of Naples's officially catalogued monumental trees citywide, grow within its 134 hectares."
     },
     {
       "q": "What happened to the famous Pino di Posillipo?",
@@ -781,6 +781,45 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "nap_023",
+      "name": "The Magnolia of Capodimonte",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Real Bosco di Capodimonte, Napoli",
+        "latitude": 40.87666,
+        "longitude": 14.25056,
+        "neighbourhood": "Capodimonte"
+      },
+      "story": "Two Italian government registers list a magnolia at the same spot in the Real Bosco di Capodimonte, and they do not agree on its size. The national MASAF register puts it at 5.4 metres round and 19 metres tall, which would make it the fourth largest registered tree in the city. Campania's own regional survey, recording what its coordinates say is the same tree, gives 3 metres round, 13.5 metres tall, and an age near 150 years. Neither figure is corrected here in favour of the other. Both are what the state itself has on file, and a visitor with a tape measure could settle it faster than another search.\n\nWhat both agree on is the species and the spot: a Magnolia grandiflora inside the free stretch of the Real Bosco, the former royal hunting estate that wraps the Reggia di Capodimonte. The museum's own list of the garden's monumental specimens does not mention this tree at all, which is one more reason its history is thin.\n\nMagnolia grandiflora came to European gardens from the American south in the eighteenth century, prized for leathery evergreen leaves and flowers the size of dinner plates, cream white, that open a few at a time and last only days each before browning. Come for a week in early summer if you can time it; the rest of the year it is simply a very large, very dark tree in a park built for exactly this kind of specimen.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_248.html"
+      ],
+      "access": "Free, inside the Real Bosco di Capodimonte's outdoor grounds; the museum building itself charges an entry fee but the surrounding park does not",
+      "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
+      "best_time": {
+        "months": [
+          5,
+          6,
+          7
+        ],
+        "label": "late May to July, when the cream flowers open a few at a time",
+        "kind": "flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "MASAF national register (girth 540cm, height 19m, no age) and Campania regional scheda_248 (girth 303cm, height 13.5m, age ~150 years) sit at near-identical coordinates (40.87666,14.25056 vs 40.876667,14.250558) but disagree by 1.78x on girth, the same shape of conflict already blocking a separate Naples plane tree lead. Left unresolved rather than picking a winner, per hard rule 8 and the Step 2 conflict rule; girth_cm/height_m fields left unset here since neither figure is safe to present as the measurement. The capodimonte.cultura.gov.it monumental-trees page does not list this tree at all. The 'first Magnolia grandiflora in Europe' claim sometimes attached to Capodimonte's magnolia is not supported by the regional register's own text and is not used."
     }
   ]
 }
