@@ -131,6 +131,11 @@ struct ContentView: View {
         // unlooked at.
         case "citymap": return .placeMap(.city(value))
         case "countrymap": return .placeMap(.country(value))
+        // A single tree's own map, otherwise reached only by tapping the inset
+        // on its page. Added 2026-08-29 so the recentre test can reach it:
+        // it was the last full map in the app no argument could open, which is
+        // exactly the condition under which a control goes missing unnoticed.
+        case "treemap": return .treeMap(value)
         case "profile": return .profile
         // A tree of YOURS, which was the last screen here no argument could
         // open. Sightings.demoIDs are the two that -mine-demo always creates.

@@ -55,8 +55,25 @@ struct TreeMap: UIViewRepresentable {
     /// the order the trees are visited, which is NOT the path a walker takes.
     var route: [CLLocationCoordinate2D] = []
     var routeIsReal = true
-    /// Off on a walk's map, where the camera belongs to the route.
-    var showsRecentre = false
+    /// The control that puts the map back: you in the middle, north at the top.
+    ///
+    /// ON BY DEFAULT since 2026-08-29, and that is the whole rule (Hidde: "die
+    /// moet overal waar je de kaart gebruikt aanwezig zijn"). It used to be off
+    /// by default and switched on by hand, so it existed on the map tab and the
+    /// walk and on none of the other eight maps in this app: the tree's own map,
+    /// a city's, a country's, My trees, the collection map and the pin picker
+    /// all shipped with no way back to yourself once you had panned away. That
+    /// is the second time this control has gone missing (the first was
+    /// 2026-08-24, "de knop mist waar je naar je locatie gaat"), which is why
+    /// the default is the one that is right nearly everywhere and the exception
+    /// has to be typed out.
+    ///
+    /// Pass false only where the map is a PICTURE rather than a map: the city
+    /// and country page previews take no taps at all and open the real map when
+    /// you tap them, so a control on top of one would be a button inside a
+    /// button. The map tab passes false at full sheet height for the same kind
+    /// of reason, which is that there is no map on screen to recentre.
+    var showsRecentre = true
     /// How tall the sheet in front of this map is, so the recentre control can
     /// sit ABOVE it. It was pinned 120 points off the bottom, which was clear
     /// of the sheet's peek and behind every other stop it has: the button has
@@ -1547,6 +1564,7 @@ final class RecentreButton: UIButton {
         tintColor = UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 1)
         setImage(UIImage(systemName: "location.fill"), for: .normal)
         accessibilityLabel = "Back to my location"
+        accessibilityIdentifier = "map-recentre"
         addTarget(self, action: #selector(recentre), for: .touchUpInside)
     }
 

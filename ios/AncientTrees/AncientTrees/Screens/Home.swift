@@ -519,6 +519,9 @@ struct CityView: View {
                         TreeMap(trees: trees,
                                 focus: .init(latitude: frame.centre.lat,
                                              longitude: frame.centre.lng),
+                                // A picture, so no recentre control: it cannot
+                                // be panned and the whole thing is one link.
+                                showsRecentre: false,
                                 spanMeters: frame.meters,
                                 fitsTrees: true,
                                 selected: .constant(nil))

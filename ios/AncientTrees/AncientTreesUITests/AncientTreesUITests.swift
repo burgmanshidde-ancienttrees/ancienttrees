@@ -45,6 +45,38 @@ final class AncientTreesUITests: XCTestCase {
         return app
     }
 
+    /// Every map you can pan carries the control that puts it back: you in the
+    /// middle, north at the top.
+    ///
+    /// This is a ratchet rather than a nicety. The control has now gone missing
+    /// twice, once by sitting behind the sheet (2026-08-24, "de knop mist waar
+    /// je naar je locatie gaat") and once by defaulting to off, which left it on
+    /// the map tab and the walk mode and on none of the other eight maps here
+    /// (2026-08-29, "die moet overal waar je de kaart gebruikt aanwezig zijn").
+    /// Both times it was invisible to every other gate we have, because a
+    /// missing control breaks no build, fails no layout rule and photographs
+    /// as a perfectly good map.
+    ///
+    /// The two previews left out of this list are left out on purpose: the city
+    /// and country pages draw a map that takes no taps and opens the real one.
+    @MainActor
+    func testEveryPannableMapCarriesTheRecentreControl() throws {
+        let screens: [(String, [String])] = [
+            ("the map tab", ["-tab=0"]),
+            ("a city's map", ["-tab=0", "-open=citymap:aarhus"]),
+            ("a tree's own map", ["-tab=0", "-open=treemap:ath_004"]),
+            ("a walk", ["-tab=0", "-open=walk:aarhus|Moesg\u{00e5}rd / H\u{00f8}jbjerg"]),
+            ("the pin picker", ["-tab=0", "-open=tree:ath_004", "-placepin"]),
+        ]
+        for (what, args) in screens {
+            let app = launch(args)
+            let recentre = app.buttons["map-recentre"]
+            XCTAssertTrue(recentre.waitForExistence(timeout: 20),
+                          "no way back to your own location on \(what)")
+            app.terminate()
+        }
+    }
+
     /// Hiding the map's navigation bar must not hide the pushed page's.
     @MainActor
     func testTreePageFromTheMapHasAWayBack() throws {
