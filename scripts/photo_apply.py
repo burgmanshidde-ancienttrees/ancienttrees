@@ -22,9 +22,11 @@ import json
 import os
 import re
 import sys
+import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE = os.path.join(ROOT, "data", "photo-queue.json")
+UA = "AncientTrees/1.0 (https://ancienttrees.app)"
 
 
 def find_tree(tree_id):
@@ -93,6 +95,66 @@ def write_city(path, city):
         fh.write("\n")
 
 
+def measure(url):
+    """Width and height of the image we are about to record, read off the bytes.
+
+    Not a nicety. /api/trees.json carries photo.width and photo.height and the
+    iOS app decodes them as numbers, so a photo written without them turns the
+    field null for every reader at once and the feed contract check refuses the
+    whole deploy. That is exactly what happened on 2026-08-29: one approval here
+    wrote no dimensions, and the site did not deploy again until somebody read
+    the failure. The header is a few kilobytes, so this costs one request.
+
+    Returns (None, None) rather than raising. A photo with no dimensions still
+    should not ship, so the caller says so out loud instead of writing silence.
+    """
+    import struct
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        raw = urllib.request.urlopen(req, timeout=30).read(400_000)
+    except Exception:
+        return None, None
+    if raw[:8] == b"\x89PNG\r\n\x1a\n":
+        w, h = struct.unpack(">II", raw[16:24])
+        return int(w), int(h)
+    i = 2
+    while i < len(raw) - 9:
+        if raw[i] != 0xFF:
+            i += 1
+            continue
+        marker = raw[i + 1]
+        if marker in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB):
+            h, w = struct.unpack(">HH", raw[i + 5:i + 9])
+            return int(w), int(h)
+        if marker in (0xD8, 0x01) or 0xD0 <= marker <= 0xD7:
+            i += 2
+            continue
+        i += 2 + struct.unpack(">H", raw[i + 2:i + 4])[0]
+    return None, None
+
+
+def photo_block(cand, status, note=None):
+    """The photo dict a city file gets, dimensions included, never without."""
+    url = full_image(cand)
+    w, h = measure(url)
+    block = {
+        "url": url,
+        "license": cand.get("licence"),
+        "attribution": credit(cand),
+        "status": status,
+    }
+    if note is not None:
+        block["note"] = note
+    if w and h:
+        block["width"] = w
+        block["height"] = h
+    else:
+        print(f"  WARNING: could not read the size of {url}. The feed carries "
+              f"photo.width and photo.height as numbers and a null breaks every "
+              f"installed app, so fill them in by hand before pushing.")
+    return block
+
+
 def credit(cand):
     author = clean_author(cand.get("author"))
     if "inaturalist" in (cand.get("source") or ""):
@@ -140,24 +202,13 @@ def main():
         if tree is None:
             print(f"{tree_id}: no such tree in data/cities")
             return 1
-        tree["photo"] = {
-            "url": full_image(cand),
-            "license": cand.get("licence"),
-            "attribution": credit(cand),
-            "status": "approved",
-        }
+        tree["photo"] = photo_block(cand, "approved")
         write_city(path, city)
         print(f"{tree_id}: approved -> {tree['photo']['url']}")
         print(f"          {tree['photo']['license']} / {tree['photo']['attribution']}")
     elif verb == "hold":
         path, city, tree = find_tree(tree_id)
-        tree["photo"] = {
-            "url": full_image(cand),
-            "license": cand.get("licence"),
-            "attribution": credit(cand),
-            "status": "held",
-            "note": reason,
-        }
+        tree["photo"] = photo_block(cand, "held", note=reason)
         write_city(path, city)
         print(f"{tree_id}: held ({reason})")
     else:
