@@ -612,6 +612,45 @@ ANOTHER_PLACE = re.compile(r"not the same ground|whose own|the adjoining|next do
                            r"|rather than the|separate from", re.I)
 
 
+def check_collection_targets():
+    """A collection may not point at a tree that is not published.
+
+    Written 2026-08-29, ten minutes after it happened. Five trees were pulled
+    from live pages on hard rule 10, preflight passed, and the deploy died on
+    /collections/the-oldest-tree-in-every-country-we-map with "Cannot read
+    properties of undefined (reading 'name')", because that collection had
+    named Kyoto's Katanami cedar as Japan's oldest and the id no longer existed.
+
+    Removing a tree is normal work here and it will keep happening: a tree
+    dies, an access line turns out to fail a rule, a duplicate is found. The
+    expensive part is that a hand-curated collection is the one place a tree id
+    is written down away from the city file, so nothing local to the removal
+    ever looks at it. One comparison of two sets costs nothing and turns a red
+    deploy into a line of output."""
+    ids = set()
+    for path in glob.glob("data/cities/*.json"):
+        with open(path, encoding='utf-8') as fh:
+            for t in json.load(fh).get("trees") or []:
+                if t.get("id"):
+                    ids.add(t["id"])
+    out = []
+    for path in sorted(glob.glob("data/collections/*.json")):
+        try:
+            with open(path, encoding='utf-8') as fh:
+                doc = json.load(fh)
+        except (ValueError, OSError):
+            continue
+        for entry in (doc.get("entries") or []):
+            tid = isinstance(entry, dict) and entry.get("tree_id")
+            if tid and tid not in ids:
+                out.append("%s: names %s, which is not published in any city "
+                           "file. Point it at a live tree or drop the entry; "
+                           "the build cannot render a collection whose subject "
+                           "does not exist."
+                           % (os.path.basename(path)[:-5], tid))
+    return out
+
+
 def check_access_permission():
     """No published tree may need somebody's permission to reach.
 
@@ -716,7 +755,8 @@ def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
                 + check_phenology() + check_register_licences()
-                + check_access_permission())
+                + check_access_permission()
+                + check_collection_targets())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
