@@ -80,9 +80,10 @@
     "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-012.jpg",
     "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-014.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "why": "DEAD. Both copper beeches at the entrance to the Schlosspark Pillnitz, planted 1895, have been felled: the first on the Bergpalais side in 2021, the second after an assessment found fungal infection and a high risk of branch failure, its crown taken off for visitor safety. Cuttings taken in 2023, 2024 and 2025 to keep the genetics alive did not root, the shoots being too weak. Never ship."
   },
   {
    "name": "Urbuche",
@@ -871,7 +872,7 @@
     "https://commons.wikimedia.org/wiki/File:20140327225DR_Dresden-Kaditz_Emmauskirchhof_Sommerlinde.jpg",
     "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1890)_b_130.jpg"
    ],
-   "status": "lead",
+   "status": "RESOLVED 2026-08-29, delivered as dre_005",
    "species": "Lime (Tilia sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
