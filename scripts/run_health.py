@@ -416,6 +416,14 @@ PROBE_CAP_MINUTES = 120     # the job's timeout-minutes, the size of one window
 PROBE_MIN_REMAINING = 25    # below this a fresh attempt cannot pay its orientation cost
 PROBE_MIN_TURNS = 5         # below this it never really started: usage limit, not a decision
 WEEK_BUDGET_MINUTES = 1000  # measured ceiling: 1,053 in five days bought a 2.5-day blackout
+# And the week has to be spread, not raced. A weekly budget alone front-loads:
+# the loop would spend all thousand minutes by Wednesday and leave the back half
+# of the week with a machine that starts and dies in seconds, which is the same
+# blackout arriving on a schedule instead of by surprise. A seventh a day keeps
+# it running every day, and a seventh is still one full 120-minute window plus
+# change, which is the shape the numbers want (a tree every 2.4 minutes in a
+# 40-to-70 minute run against every 25 minutes in a run under 20).
+DAY_BUDGET_MINUTES = round(WEEK_BUDGET_MINUTES / 7)
 PROBE_MINUTES = 20          # kept for the older callers that read it
 
 
@@ -451,15 +459,15 @@ def merge_results(first, second):
     return out
 
 
-def week_minutes(path=HEALTH, now=None):
-    """Machine minutes recorded in the last 7 days. Unknown returns None."""
+def spent_minutes(days, path=HEALTH, now=None):
+    """Machine minutes recorded in the last `days` days. Unknown returns None."""
     try:
         with open(path, encoding="utf-8") as fh:
             runs = json.load(fh).get("runs") or []
     except (OSError, ValueError):
         return None
     now = now or datetime.datetime.now(datetime.timezone.utc)
-    cutoff = now - datetime.timedelta(days=7)
+    cutoff = now - datetime.timedelta(days=days)
     total = 0.0
     for r in runs:
         started = r.get("started")
@@ -477,7 +485,15 @@ def week_minutes(path=HEALTH, now=None):
     return round(total)
 
 
-def probe(result, changed, minutes, elapsed=None, spent_week=None):
+def week_minutes(path=HEALTH, now=None):
+    return spent_minutes(7, path, now)
+
+
+def day_minutes(path=HEALTH, now=None):
+    return spent_minutes(1, path, now)
+
+
+def probe(result, changed, minutes, elapsed=None, spent_week=None, spent_day=None):
     """(should_continue, one-line reason). Never raises: unknown means no.
 
     `elapsed` is minutes since the JOB started, which is not the same as the
@@ -502,6 +518,9 @@ def probe(result, changed, minutes, elapsed=None, spent_week=None):
     if spent_week is not None and spent_week >= WEEK_BUDGET_MINUTES:
         return False, (f"the week has spent {spent_week} of {WEEK_BUDGET_MINUTES} "
                        f"budgeted minutes; the cron keeps knocking, this stops extending")
+    if spent_day is not None and spent_day >= DAY_BUDGET_MINUTES:
+        return False, (f"the last 24h spent {spent_day} of {DAY_BUDGET_MINUTES} budgeted "
+                       f"minutes; the rest of the week gets its share")
 
     shipped = (changed or {}).get("trees") or 0
     week = f"; week at {spent_week}/{WEEK_BUDGET_MINUTES} min" if spent_week is not None else ""
@@ -532,12 +551,19 @@ def main():
     args = ap.parse_args()
 
     if args.week:
-        spent = week_minutes()
-        if spent is None:
+        spent, today = week_minutes(), day_minutes()
+        if spent is None or today is None:
             print("no run history readable; assuming there is room")
             return 0
-        print("%d of %d machine minutes in the last 7 days" % (spent, WEEK_BUDGET_MINUTES))
-        return 1 if spent >= WEEK_BUDGET_MINUTES else 0
+        print("week %d/%d min, last 24h %d/%d min"
+              % (spent, WEEK_BUDGET_MINUTES, today, DAY_BUDGET_MINUTES))
+        if spent >= WEEK_BUDGET_MINUTES:
+            print("the week is spent")
+            return 1
+        if today >= DAY_BUDGET_MINUTES:
+            print("the day's share is spent; the rest of the week gets its own")
+            return 1
+        return 0
 
     if args.execution_files and not args.probe:
         result = {}
@@ -593,11 +619,15 @@ def main():
         except (TypeError, ValueError):
             elapsed = None
         spent = week_minutes()
-        if spent is not None and elapsed is not None:
-            spent += round(elapsed)
+        today = day_minutes()
+        if elapsed is not None:
+            if spent is not None:
+                spent += round(elapsed)
+            if today is not None:
+                today += round(elapsed)
         go, why = probe(result, changed,
                         minutes if minutes_basis == "measured" else None,
-                        elapsed=elapsed, spent_week=spent)
+                        elapsed=elapsed, spent_week=spent, spent_day=today)
         print(("continue: %s" % ("yes" if go else "no")) + " (%s)" % why)
         out = os.environ.get("GITHUB_OUTPUT")
         if out:
