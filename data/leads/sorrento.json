@@ -5,12 +5,12 @@
  "note": "Candidates found during the 2026-08-16 verify pass (Italy MASAF national monumental-trees register, 19 candidates within the comune) that did not ship this pass. Kept because the platform's direction is to map every remarkable tree eventually. Never rendered: these are leads, not entries. Four trees shipped to data/research/sorrento-verified.json (Villa Fondi holm oak and stone pine, the cemetery cypress, the Via Maresca plane), all in Piano di Sorrento / Sant'Agnello, which adjoin Sorrento on the peninsula.",
  "leads": [
   {
-   "name": "Second and third cemetery cypresses",
-   "species": "Cupressus sempervirens",
-   "lat": 40.628764,
-   "lng": 14.419186,
+   "name": "Pino domestico of Via Bagnulo",
+   "species": "Pinus pinea",
+   "lat": 40.636703,
+   "lng": 14.410798,
    "status": "lead",
-   "why": "MASAF register lists two more cypresses in the same Cimitero Comunale (Via Gennaro Maresca) as the shipped one: girth 270cm at 40.628764/14.419186 (sheet 06/G568/NA/15) and girth 325cm at 40.629361/14.419611 (sheet 05/G568/NA/15). Only the 266cm cypress (srn_003) turned up a second independent source (Regione Campania scheda_38) in this pass's time budget. These two are register-only (one source), so held as leads rather than shipped; a future pass could search for their own Regione Campania scheda numbers (tried scheda_38-42 directly by number, did not find dedicated cards for these two) or fold all three into one 'cemetery cypresses' entry if that reads better than three near-duplicate single-tree pages."
+   "why": "MASAF sheet 11/G568/NA/15 (via scheda_44 on agricoltura.regione.campania.it, directly fetched and confirmed as a genuine dedicated card, not a search summary): girth 336cm, height 20m, umbrella-shaped stone pine 'ben visibile da piu strade del luogo' (well visible from several streets), a public street tree rather than a private-address one (no house number given, unlike the Cedro dell'Himalaya and other blocked candidate below). Held back purely on the alive-now test, not on access or the collectible-point test, both of which it otherwise passes: Positanonews reported a branch failure on this same street in June 2020 ('un grosso ramo si stacca dal pino'), AND a second, much more serious Positanonews article dated 2026-08-12 ('tragedia sfiorata in Via Bagnulo: albero crolla in strada... sfiorando due ragazze') reports a large tree collapsing onto the road on Via Bagnulo two and a half weeks before this pass, injuring nobody by luck. WebFetch on the second article could not confirm species or exact address ('un grosso albero', no botanical ID), so it is not established whether this is the same registered pine or a different street tree. This needs a fresh, targeted check before shipping: search Positanonews and local Facebook/Instagram groups for photos of the Aug 2026 incident site, or check whether Via Bagnulo's monumental pine (google-mappable via the scheda's embedded map) still stands. Do not ship this tree without resolving that."
   },
   {
    "name": "Homogeneous olive group, Riviera Massa",
@@ -19,17 +19,17 @@
    "lng": 14.387519,
    "status": "lead",
    "why": "MASAF register entry (sheet 01/I862/NA/15) explicitly describes this as a homogeneous GROUP of olives, no girth or height given for an individual tree, no single specimen distinguished. Fails the collectible-point test (one identifiable tree, or a compact famous ensemble with one obvious place to stand) as recorded; a future pass could check whether local sources single out one specific old olive within the group, which would change this from blocked to leads-with-a-candidate. Coordinates sit close to the Grand Hotel Parco dei Principi grounds (see blocked entry below), so access would need the same check regardless."
-  },
-  {
-   "name": "Roverella, Tasso and Tiglio of the Antico Parco del Principe (Colli di San Pietro)",
-   "species": "Quercus pubescens (girth 495cm), Taxus baccata (girth 473cm), Tilia platyphyllos (girth 365cm)",
-   "lat": 40.619211,
-   "lng": 14.431389,
-   "status": "lead",
-   "why": "All three at Via Cermenna 12, Piano di Sorrento, ~4.7km from Sorrento centre (at or past the edge of the 30-minute day-trip boundary and would need checking on foot/bus time). Confirmed via two independent sources each: MASAF register plus dedicated Regione Campania schede (scheda_41 for the lime/tiglio, scheda_42 for the oak/roverella; a scheda for the yew/tasso was not located by number in this pass but is implied by the same 'Gli alberi secolari in Campania' 2008 volume citation). All three are genuinely remarkable: multi-secular, part of the historic Antico Parco del Principe next to the Castello Colonna (a former Benedictine abbey, 1080, later home of Prince Eduardo Colonna). BUT the Regione Campania text for the lime tree explicitly calls it 'situato in una tenuta' (located in an estate) whose park dates to 1700, and describes it as tied architecturally to an adjoining fine building; nothing found in this pass states the grounds are open to the public, and 'tenuta' (estate) plus 'Castello' (castle) reads as a private historic property. This matches the brief's own suspicion ('this one smells like it could be private grounds'). Held as leads/access-unresolved rather than blocked outright, because no source was found stating it is closed either; a future pass should search for the castle/estate's own name and current ownership/visiting status before shipping or blocking definitively."
   }
  ],
  "blocked": [
+  {
+   "name": "Roverella, Tasso and Tiglio of the Antico Parco del Principe (Colli di San Pietro)",
+   "reason": "RESOLVED this pass, moved from leads to blocked. All three at Via Cermenna 12, Piano di Sorrento, ~4.7km from Sorrento centre (already past or at the edge of the 30-minute day-trip boundary on its own). Confirmed via two independent sources each: MASAF register plus dedicated Regione Campania schede (scheda_41 Tilia platyphyllos girth 365cm, scheda_42 Quercus pubescens girth 495cm, both directly fetched; a scheda for the yew/tasso was searched for but not located by number, though scheda_43 'il Tasso del Parco del Principe' was seen in a search result and is presumed to exist). Access is now settled rather than merely suspected: the site trades today as 'Hotel & Resort Antico Parco del Principe', a wedding/event venue and hotel with trekking paths, stables, tennis, two pools and rooms for hire (confirmed via the hotel's own trivago/trip.com/superdossier listings), i.e. a reservation-and-reception-desk property, not a walk-in park. Fails hard rule 10's first test outright. Do not re-research; if a future pass finds evidence of a public path through the grounds or open days, reconsider."
+  },
+  {
+   "name": "Cedro dell'Himalaya, Via Carlo Amalfi 15",
+   "reason": "MASAF sheet 12/G568/NA/15, girth 359cm, height 18m (via scheda_45 on agricoltura.regione.campania.it, directly fetched). The register's own description places it 'nella corte del complesso scolastico ad oggi dismesso, ma oggetto di un prossimo progetto di ristrutturazione' (in the courtyard of a school complex now DISABLED/abandoned and awaiting a future restructuring project). An abandoned school courtyard is not open ground under hard rule 10's school exception, which requires evidence the site is genuinely open (a through-path, weekend hours); an abandoned, fenced building under a future redevelopment plan is the opposite of that. Blocked; reconsider only if the restructuring project reopens the site with public access, or if a future pass finds it is actually viewable/reachable from the public street outside the courtyard wall."
+  },
   {
    "name": "Platano comune, Grand Hotel Parco dei Principi grounds",
    "reason": "Access: the hotel's own botanical garden page states the garden is accessible to hotel guests and to patrons of its restaurants (Gio Ponti, Poggio Siracusa) and the Blu Bar, plus occasional FAI (Fondo Ambiente Italiano) open-day events; it is not a garden with ordinary walk-in or paid-ticket public access. That fails hard rule 10's first test (can a visitor get in without asking anyone's permission, e.g. a reception desk, a reservation, a guard). Girth 405cm, height 31.5m, MASAF sheet 03/I862/NA/15. If future evidence shows genuine unrestricted or simple paid public access (a garden ticket, regular open hours), this and its three companions below should be reconsidered."
