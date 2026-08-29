@@ -9,6 +9,19 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (night run) - Bucaco 14 to 18, Los Angeles 7 to 8, Warsaw 15 to 16, from the standing write queue
+
+Bucaco +4 (bsc_016, bsc_017, bsc_018, bsc_019), all flagged (single-source
+ICNF register entries, two undated and two carrying only a rough register
+age band of 90-130 years). bsc_019 was flagged by the write pass as a
+possible duplicate of the already-published bsc_012 (29m away); confirmed
+it is a distinct tree (different genus, different register processo
+number) and wrote its story. Los Angeles +1 (lax_010, the Chavez Ravine
+Arboretum kauri), flagged, pin marks the arboretum rather than the exact
+trunk (location_precision: approximate) since no source names the precise
+spot; the story asks readers who find it to tell us. Warsaw +1 (war_017),
+flagged, single register source. No photos for any of the five; all are
+honest gaps.
 ## 2026-08-29 - Gdansk 4 to 6: two trees in Sobieski's Kolibki park, and two verified-then-rejected
 
 - **gda_005, Marysienka's Oak** (Gdynia Orlowo, SKM to Gdynia Orlowo then ten minutes on foot; 35 minutes from Gdansk Glowny, 12 from Gdansk Oliwa). Quercus robur, CRFOP 96538, protected 28 June 1966, girth 4.87 m, height 26 m, coordinates 54.4710584/18.5575862. Two fused trunks split in 1988; the broken half lies beside the base and the survivor is propped. Sources: Poland's central register (crfop.gdos.gov.pl) and krajoznawcy.info.pl. The Sobieski and Marysienka story is written as the legend both sources call it, not as fact.

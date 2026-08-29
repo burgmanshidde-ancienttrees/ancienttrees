@@ -2,7 +2,7 @@
   "city": "Bucaco",
   "country": "Portugal",
   "status": "needs_curation",
-  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The fourteen trees on this page stand within about a kilometre of each other, and one of them named a species.",
+  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The eighteen trees on this page stand within about a kilometre of each other, and one of them named a species.",
   "meta_description": "Bucaco's ancient trees: the cedar that named a species, Europe's fourth tallest tree, and two sequoias, all inside one walled forest above Luso.",
   "question_meta": "The Cedro de Sao Jose, a Mexican cypress planted between 1628 and 1650 by the Carmelite friars, is the oldest tree in the Bucaco forest.",
   "question_answer": "The oldest tree in the Mata Nacional do Bucaco is the Cedro de Sao Jose, a Mexican cypress standing in the forecourt of the Ermida de Sao Jose. The forest's own plaque at its foot says it was planted between 1628 and 1650, which makes it roughly 380 years old and the oldest cedar in the forest. It is not really a cedar, and it is not Portuguese: Cupressus lusitanica comes from Mexico and Central America.",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Can you walk between these trees?",
-      "a": "Yes. All fourteen stand inside the walled forest within about a kilometre of each other. Paths are forest paths and the ground is steep in places."
+      "a": "Yes. All eighteen stand inside the walled forest within about a kilometre of each other. Paths are forest paths and the ground is steep in places."
     },
     {
       "q": "Is the tallest tree in Europe here?",
@@ -513,6 +513,126 @@
       "curation_status": "flagged",
       "story": "A third Cedro-do-Bucaco grows here, beside the ruin of the Ermida do Sacramento, 30 metres from the Passo de Anas. Two of the forest's cypresses already have entries on this page, each with its own story; this one has a different kind of neighbour, a chapel that did not survive. Only its walls remain, swallowed by exactly the hillside vegetation the barefoot friars who built it once kept cleared.\n\nThe register measured this specimen in 2016 at 4.2 metres round and 27 metres tall, a genuinely large trunk even set beside the forest's other two published cypresses, one of which is the very tree that gave the species its scientific name. Three centuries and more of protection inside one walled hillside is what let all of them reach this size, whichever one a visitor happens to stop in front of.\n\nNo age is recorded for this tree and no second source names it beyond the register, so it ships flagged.",
       "verify_notes": "Single official source (ICNF register, processo AIP01110413I, measured 2016): girth 4.20m, height 27m, crown 20.2m, no age recorded. Held back by an earlier pass only for being undated and single-sourced, which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker. Deliberately does not repeat the Philip Miller type-specimen story (already told fully by bsc_006) or the Via Sacra chapel-station story (already told by bsc_007), per P3 uniqueness; focuses on this specimen's own setting, the ruined Ermida do Sacramento. No second source found this pass; ships flagged per Step 2.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bsc_016",
+      "name": "The Cedro-do-Bucaco of the Passo de Anas",
+      "species": "Mexican Cypress (Cupressus lusitanica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 368,
+      "height_m": 27,
+      "location": {
+        "address": "Junto ao Passo de Anas, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37618089,
+        "longitude": -8.368342552,
+        "neighbourhood": "Passo de Anas"
+      },
+      "story": "Bucaco keeps two protected cypresses within sixty metres of each other on this path, and this is the smaller one: 3.68 metres round, 27 metres tall, with a crown nineteen metres across on the state's 2016 survey. In most forests that would be the headline tree. Here it is the fourth cypress on the hillside with a file of its own.\n\nIts address is the Passo de Anas, a station on the Via Sacra named for the night Christ was taken before Annas the high priest. Barefoot Carmelite friars set these chapels out across the slope at the end of the seventeenth century and spaced them to match the distances of the walk through Jerusalem. That spacing still decides how people cross this forest. You do not go hunting for the cypress. You come round a bend expecting a shrine and find the tree standing over it.\n\nCupressus lusitanica came from the mountains of Mexico and Guatemala, and it has been planted inside these walls in such numbers, for so long, that most Portuguese take it for a native.\n\nNobody has dated this one and the register does not try. If you know how old it is, tell us.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF national monumental trees register, processo AIP01110431I, girth 3.68m, height 27m, crown 19m, measured 2016)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "On the Via Sacra path at the Passo de Anas station, about 60m from the Cedro-do-Bucaco of the Ermida do Sacramento (bsc_015)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bsc_017",
+      "name": "The Cedro-do-Bucaco of the Casa de Guarda do Serpa",
+      "species": "Mexican Cypress (Cupressus lusitanica)",
+      "age_estimate": "about 100 years, register figure, exact measurement date not recorded",
+      "age_min": 90,
+      "age_max": 130,
+      "girth_cm": 472,
+      "height_m": 35,
+      "location": {
+        "address": "Cerca de 200m a leste da Casa de Guarda do Serpa, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37958889,
+        "longitude": -8.369994444,
+        "neighbourhood": "Casa de Guarda do Serpa"
+      },
+      "story": "This is the thickest cypress in Bucaco's protected collection and, on the register's own figures, much the youngest of them. Four metres seventy-two around the trunk, thirty-five metres tall, and an age recorded as about a hundred years, against the three centuries the same register gives the cypress at the Via Sacra's first-fall station, a tree only half a metre wider.\n\nRead that pairing carefully rather than as a marvel. The register does not say when the hundred years were counted, so the honest span is somewhere between ninety and a hundred and thirty, and a walled hillside laid out to make imported conifers grow fast is exactly where a cypress would put on girth quickly.\n\nIt stands about two hundred metres east of the Casa de Guarda do Serpa, the keeper's house at the northern edge of the forest, on a working track rather than a pilgrim path. This is where Bucaco's classified trees run out: the last entry before the collection gives way to ordinary hillside, and the quietest of the four cypresses on this page by some distance.\n\nOne more oddity worth carrying up there with you. The 2018 decree that classified the forest's other cypresses does not cover this one. It holds its place in the national register on its own paperwork, and nobody has written down why.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF national monumental trees register, processo AIP01110495I, girth 4.72m, height 35m, age 100 years at last measurement)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "On a forest track about 200m east of the Casa de Guarda do Serpa gatehouse, at the north edge of the forest's classified-tree cluster",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bsc_018",
+      "name": "The Mexican White Pine of the Cova da Raposa",
+      "species": "Mexican White Pine (Pinus ayacahuite)",
+      "age_estimate": "about 100 years, register figure, exact measurement date not recorded",
+      "age_min": 90,
+      "age_max": 130,
+      "girth_cm": 255,
+      "height_m": 40,
+      "location": {
+        "address": "Cova da Raposa, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37938889,
+        "longitude": -8.370058333,
+        "neighbourhood": "Cova da Raposa"
+      },
+      "story": "Cova da Raposa means the fox's hollow, and what grows in it is a pine from the highlands of Mexico and Central America, forty metres of it.\n\nPinus ayacahuite has taken the height here and skipped the bulk. Forty metres tall on a trunk 2.55 metres round makes it taller than any of the four protected cypresses on this page and considerably narrower than all of them, a shape you notice from directly underneath: the crown starts a long way up and the trunk goes to it almost without a bend.\n\nIt belongs to the same imported collection as those cypresses, a hillside filled with conifers from four continents behind one wall and kept up since by the state that manages the forest now. A walk of twenty minutes here crosses more of the world's mountain ranges than most botanical gardens manage in a hectare.\n\nThe register gives its age as about a hundred years and records no date for that count, so the honest reading is somewhere between ninety and a hundred and thirty. Like the big cypress standing a short walk away by the Casa de Guarda do Serpa, it falls outside the 2018 decree that classified the forest's better known trees. It holds its protection on its own paperwork instead, which is a thinner kind of fame and no reason to walk past it.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF national monumental trees register, processo AIP01110494I, girth 2.55m, height 40m, age 100 years at last measurement)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "At the Cova da Raposa, in the forest interior, close to the Cedro-do-Bucaco of the Casa de Guarda do Serpa (bsc_017)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bsc_019",
+      "name": "The Magenta Cherry at the Forest Nursery",
+      "species": "Magenta Cherry (Syzygium paniculatum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 315,
+      "height_m": null,
+      "location": {
+        "address": "A entrada do viveiro florestal, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37668788,
+        "longitude": -8.36566103,
+        "neighbourhood": "Viveiro Florestal"
+      },
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class (ICNF national monumental trees register, processo AIP01110435I, girth 3.15m, crown 9.4m, measured 2016)"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "At the entrance to the forest's own tree nursery (viveiro florestal)",
+      "story": "At the entrance to Bucaco's own tree nursery stands a magenta cherry, an Australian rainforest species usually kept as a hedge or a garden specimen rather than left to become a trunk 3.15 metres round. The register measured that girth and a crown almost as wide, 9.4 metres, in 2016, and recorded neither a height nor an age for it, which for Syzygium paniculatum is nearly as unusual as the size itself.\n\nWild magenta cherry fruits a small sharp berry that gives the species its name, eaten straight off the branch or turned into jam in its native range, and it rarely grows this thick there. Two centuries of care for imported trees on this hillside, and a spot right beside the nursery that has propagated Bucaco's collection since the monks first planted it, seem to be what let this one keep going past the size most of its kind ever reach.\n\nIt is a plainer address than the shrines and squares nearby, a working entrance rather than a monument, which fits a tree that is really evidence the nursery's own methods work.\n\nNobody has dated it and the register does not try. If you know how old it is, tell us.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
       "photo": {
         "url": null,
         "license": null,

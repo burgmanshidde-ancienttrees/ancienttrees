@@ -3,7 +3,7 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "lax_005",
-  "intro": "Los Angeles kept its old trees in odd places: a hotel built its driveway around one, a church was built around another, and the city's oldest palm has been dug up and moved three times. Five of the seven here are Moreton Bay figs, which is genuinely what the city's documented tree history is made of rather than a shortage of ideas. They are spread across sixty kilometres, so treat this as three trips: downtown, Santa Monica, and the arboretum out in Arcadia.",
+  "intro": "Los Angeles kept its old trees in odd places: a hotel built its driveway around one, a church was built around another, and the city's oldest palm has been dug up and moved three times. Five of the eight here are Moreton Bay figs, which is genuinely what the city's documented tree history is made of rather than a shortage of ideas. They are spread across sixty kilometres, so treat this as three trips: downtown, Santa Monica, and the arboretum out in Arcadia.",
   "meta_description": "Los Angeles's oldest trees: the Miramar's Moreton Bay fig, the 1875 figs on the founding plaza, and a palm that has been moved three times.",
   "question_answer": "The oldest tree in Los Angeles is the palm in Exposition Park, a California fan palm documented in the city since the 1850s and already mature when it was first transplanted, which makes it at least 170 years old and probably more. It has been moved three times since, which is why a tree that old stands in a park laid out in 1913.",
   "question_meta": "A California fan palm in Exposition Park, in Los Angeles since the 1850s and moved three times, is the city's oldest documented tree.",
@@ -241,6 +241,37 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "story": "Charles C. Chapman planted this fig outside his own house on Figueroa Street in 1894. The house is gone. The tree is not, and when the Automobile Club of Southern California came to build its headquarters on the site it built around the fig instead of felling it, opening the Spanish Colonial Revival building by Sumner Hunt and Silas Burns on 27 January 1923.\n\nA century of undisturbed growth shows. The branches spread over 100 feet, and the aerial roots that Moreton Bay figs drop from their limbs have reached the ground and hardened into buttresses, so that the tree now appears to be standing on several trunks at once.\n\nThe Auto Club has treated it as a member of staff ever since. It threw the fig a hundredth birthday party in 1994, and every December it decorates the tree and holds a public lighting event under it, which is a fine time to come and about the only occasion in Los Angeles when people gather to look at a fig.\n\nYou can see it from the Figueroa Street sidewalk at any hour; the building is a working AAA branch and open to the public during business hours if you want to stand under the canopy. The pin comes from the street address, so aim for the corner of Figueroa and Adams.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lax_010",
+      "name": "The Chavez Ravine Arboretum Kauri",
+      "species": "Queensland Kauri (Agathis robusta)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Chavez Ravine Arboretum, Elysian Park, 1025 Elysian Park Dr, Los Angeles, CA 90012",
+        "latitude": 34.083,
+        "longitude": -118.238,
+        "neighbourhood": "Elysian Park"
+      },
+      "story": "The oldest and largest Queensland kauri in the United States is not in a botanical garden. It stands on an open hillside above Dodger Stadium's parking lots, in a public park with no gate, no staff and no admission.\n\nChavez Ravine Arboretum was planted in 1893, which makes it one of the oldest collections of trees in Los Angeles and older than the stadium that now wraps around part of the ravine. More than a hundred species went into that slope. The kauri is the one both published accounts of the place single out: Agathis robusta, a Queensland rainforest conifer that grows into a smooth grey column, and reckoned the biggest and oldest of its kind in the country. The arboretum around it is Los Angeles Historic-Cultural Monument number 48, which is a formal way of saying the city noticed late that a Victorian planting experiment had turned into a forest.\n\nTwo things to carry with you. Nobody has published a girth, a height or a planting date for this particular tree, so the claim rests on the arboretum's own age rather than on anyone's tape measure. And our pin marks the arboretum, not the trunk, so you will be walking the hill to find it. If you do find it, tell us where it stands and we will fix the map for everyone after you.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Chavez_Ravine_Arboretum",
+        "http://bigorangelandmarks.blogspot.com/2007/07/no-48-chavez-ravine-arboretum.html"
+      ],
+      "access": "Free, public park (Elysian Park); the arboretum is unstaffed, open grounds",
+      "transport": "In Elysian Park, just north of Dodger Stadium's parking areas; no dedicated transit stop, nearest is a DASH bus route into Elysian Park",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
       "photo": {
         "url": null,
         "license": null,
