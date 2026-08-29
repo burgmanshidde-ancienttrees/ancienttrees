@@ -3900,6 +3900,27 @@
         "tokens": 0,
         "trees": 4,
         "note": "orchestration session: picked Bamberg from the shelf, ran verify+write, assembled and merged the new city (intro/FAQ/question copy), fixed a stale Germany country-page tree count found along the way"
+      },
+      {
+        "target": "assisi",
+        "kind": "verify",
+        "tokens": 167275,
+        "trees": 0,
+        "note": "6/6 candidates verified via MASAF register + Italian Wikipedia + montagneaperte.it, clears the 4-tree floor comfortably; also found and fixed a real passcheck.py bug (Assisi was resolving to Perugia on distance alone)"
+      },
+      {
+        "target": "assisi",
+        "kind": "write",
+        "tokens": 115222,
+        "trees": 6,
+        "note": "6 stories; St Francis legend at the Eremo kept attributed to the on-site sign, not stated as fact; hawthorn hike framed honestly (5km, 600m climb)"
+      },
+      {
+        "target": "assisi",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 6,
+        "note": "orchestration: found passcheck.py resolve() folding Assisi into Perugia on pure distance (~19km, under the 20km same-city radius), fixed it, then ran verify+write and assembled the new city; fixed a stale Italy country-page count found along the way"
       }
     ]
   }
