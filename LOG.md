@@ -19,7 +19,9 @@ Two things Hidde walked into on his own telephone, both fixed and pushed.
 
 **Signing out left your own trees on the map, and anyone could delete them.** This morning's clearing covered hearts and the profile and exempted photographs wholesale, on half a sound argument. It is asked per sighting now: `syncedAt`, written only from a push that actually landed with its photograph. Signing out pushes the queue first, while a token still exists, so the clearing is lossless. A tree photographed while signed out stays, because no server has it and deleting it would destroy the only copy.
 
-**FOR HIDDE.** One thing is still open and it is yours. Adding a tree deliberately works with no account ("Yours and nobody else's: no network, no account, no waiting"), so a tree you add while signed out is visible and removable while signed out. Requiring an account to add one would close that completely, and would match the rule you already set on 2026-08-21, that the options are visible to everyone and acting needs sign-in. It costs friction at the moment somebody is standing in front of a tree.
+**And adding a tree now needs an account**, asked and answered the same afternoon ("nee, inloggen verplicht"). Both buttons into the collect sheet were already gated; the write was not, and its comment still described the no-account route of 2026-08-25. That route is what made the sign-out question hard in the first place, because a tree belonging to nobody cannot be cleared without destroying the only copy of it.
+
+**FOR HIDDE.** Trees already on your phone carry no sync stamp, because the field is new. They clear on the first sign-out AFTER one signed-in launch, which is when the sync marks them. So: install, open once signed in, then sign out, and the map is clean.
 
 ## 2026-08-29 (session, afternoon) - The three database fixes, and five trees that came off while doing them
 
