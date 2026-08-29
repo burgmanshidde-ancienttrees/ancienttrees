@@ -9,6 +9,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (session, second attempt in the window) - Finished the standing write claims: Buenos Aires and Dresden open, 4 trees each
+
+The window's first attempt claimed buenosaires and dresden for a write pass, then stopped after 4.3 minutes with 2 commits and no trees. Both had already been fully verified and written (data/research/*-verified.json carried finished stories, sourced and pinned) by the time that attempt stopped; it just never merged, built or committed. This session finished the pass rather than re-orienting: merged both into data/cities/, hand-wrote city-level intro/meta_description/FAQ/question-page copy per Contract B and C, built the site, ran qa.py and superlatives.py clean, released both claims.
+
+**Buenos Aires opens (Argentina, first city in the country, no country page yet).** The Gomero de la Recoleta, a fig by the Recoleta Cemetery gate the city's own register calls the city's oldest tree (roughly 250-300y; both its origin story and its species are disputed between the city and Wikidata, flagged rather than settled). The Magnolias del Protomedicato, a pair on a working school's grounds, marked view-only from the street/church opposite. The Magnolia de Avellaneda, the one tree here with a documented planting date (11 Nov 1875, by the president who opened the park). The Esterculia of Plaza Lavalle, one of only two known specimens of its species in the whole city, no age documented anywhere. Four different neighbourhoods, not one walk.
+
+**Dresden opens.** The Splittereiche in the Grosser Garten, bomb-splinter-scarred in February 1945 and still bearing the wound, assessed 250-300y, oldest of the four and not on the individual Naturdenkmal register (protected via the historic park around it instead, flagged). The Zerr-Eiche of Trinitatisplatz, the newest, designated only in February 2024. The Plane Tree of Albertplatz and the Oak of Fetscherplatz, both protected by the same 3 January 1985 council resolution, the latter with a curved tram shelter built around its trunk in 1949 rather than moving either.
+
+**Hit the same tooling gap CURATION.md already flagged for Leipzig on 2026-08-28, this time for real:** `city_queue.py`'s `rebuild_list()` only updates rows already present in `data/city-list.json`, never adds a new one. Buenos Aires had a placeholder row (it's on Hidde's NAMED_BY_HIDDE list); Dresden had none at all, and was silently absent from `/cities`, the German country page and the first-seen feed until added by hand. Two sessions hitting the same gap in 24 hours is the ratchet's own bar for turning a note into a fix; worth a session giving `rebuild_list()` the ability to add a row rather than only update one.
+
+Photos: 0 of 8. Neither city has been swept by `photo_hunt.py` yet.
+
 ## 2026-08-28 - Night run 2026-08-28 19:45 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 28.1 minutes of its 120 minute window, 173 turns, 24 commands refused by the allowlist, ended clean (success). 8 commit(s), none of them a published tree. Claims left behind: girona, oahu, which block the top of the queue until they expire.

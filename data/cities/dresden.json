@@ -1,0 +1,160 @@
+{
+  "city": "Dresden",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Four of Dresden's protected trees, all old enough to have stood through the bombing of February 1945. A splinter-scarred oak in the Grosser Garten wears its wound as a monument. A plane tree lives on an Albertplatz traffic island. An overcup oak on Fetscherplatz got its own curved, custom-built tram shelter in 1949 rather than being moved for one. A Turkey oak on Trinitatisplatz waited until 2024 for legal protection, a century after the city planted it. Three carry the same 1985 designation; one is the newest natural monument in the city.",
+  "meta_description": "Four protected Dresden trees that lived through 1945: a bomb-scarred oak in the Grosser Garten, a plane on Albertplatz, and two more on their own squares.",
+  "question_answer": "The Splittereiche, a pedunculate oak on the open lawn of Dresden's Grosser Garten, is the oldest of the four trees on this page, assessed at roughly 250 to 300 years old. It carries a visible scar from the nights of 13 and 14 February 1945, when bomb splinters tore open one side of its trunk along some eight metres of height. It survived, and the wound is still there, which is how it came to be called the splinter oak. A memorial plaque went up beside it in 2017, on the anniversary of the war's end in Europe, quoting Mark Twain on time and healing, and the city fitted protective metal sheeting over the damaged flank in 2018 after visitors kept picking at the old injury. It is not on Dresden's individual register of natural monuments, protected instead as part of the historic park around it, so if you know of a formal designation for it specifically, tell us.",
+  "question_meta": "The Splittereiche, scarred by bomb splinters in 1945 and still bearing the wound, is Dresden's oldest tree here: assessed at 250 to 300 years.",
+  "question_context": "Dresden keeps an official register of natural monuments, Naturdenkmale, reproduced as a public Wikipedia table alongside dedicated articles for several individual trees and cross-checked here against Stadtwiki Dresden, an independent community wiki that lists the same trees by their own register numbers. Three of the four trees on this page carry that formal designation; the Splittereiche does not, protected instead as part of the listed historic Grosser Garten around it rather than as an individual entry, and this page says so rather than implying an equivalent status. Two of the three registered trees, the Albertplatz plane and the Fetscherplatz oak, were designated by the same city council resolution of 3 January 1985. The fourth, the Trinitatisplatz oak, is the newest: protected only in February 2024, some 130 years after it was planted. Ages here are mostly derived from a planting date recorded at designation, which is more reliable than a growth-rate guess but still an estimate rather than a ring count, and one measurement, the Trinitatisplatz oak's girth, disagrees by a few centimetres between the register and a dedicated article; both figures are noted rather than silently resolved.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Dresden?",
+      "a": "The Splittereiche in the Grosser Garten, a pedunculate oak assessed at roughly 250 to 300 years old and still bearing a visible scar from bomb splinters that hit it in February 1945."
+    },
+    {
+      "q": "Can I see all four trees in one walk?",
+      "a": "Not comfortably. The Zerr-Eiche and the Fetscherplatz oak both stand in Johannstadt, a short tram ride apart, but Albertplatz and the Grosser Garten are further off in different directions, so this is four stops rather than one route."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes. All four stand on open public squares or in a public park, reachable at any time, no ticket needed."
+    },
+    {
+      "q": "Why are three of these trees protected under the same 1985 date?",
+      "a": "Dresden's city council designated the Albertplatz plane and the Fetscherplatz oak as natural monuments in a single resolution on 3 January 1985. The Trinitatisplatz oak had to wait far longer, gaining the same protection only in February 2024."
+    }
+  ],
+  "hero_tree_id": "dre_004",
+  "oldest_tree_id": "dre_004",
+  "trees": [
+    {
+      "id": "dre_001",
+      "name": "The Zerr-Eiche of Trinitatisplatz",
+      "species": "Turkey Oak (Quercus cerris)",
+      "age_estimate": "roughly 130 years",
+      "age_min": 125,
+      "age_max": 140,
+      "girth_cm": 384,
+      "location": {
+        "address": "Trinitatisplatz, opposite the main portal of the Trinitatiskirche, Johannstadt, Dresden",
+        "latitude": 51.052664,
+        "longitude": 13.770189,
+        "neighbourhood": "Johannstadt"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
+        "https://de.wikipedia.org/wiki/Zerr-Eiche_Trinitatisplatz",
+        "https://dawo-dresden.de/2024/02/28/zerr-eiche-ist-neues-naturdenkmal/"
+      ],
+      "access": "Free, standing on a public square (Trinitatisplatz) opposite the church",
+      "transport": "Tram stop Trinitatisplatz, right on the square (news coverage of a nearby tram diversion names conflicting line numbers across sources, so no specific line is stated here)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Dresden got round to protecting this oak in February 2024, some 130 years after the city planted it. It was raised at the municipal nursery on the Tatzberg and set out on Trinitatisplatz in 1895, facing the main portal of the Trinitatiskirche. Fifty years later the air raids of February 1945 came over Johannstadt, and the oak came through them without serious damage. It then came through the winters that followed, when firewood was scarce enough in Dresden that standing trees disappeared into stoves, and this one was left alone.\n\nIt is a Turkey oak, a southern European species with deeply cut leaves and acorns sitting in shaggy, mossy cups rather than the smooth ones a German oak wears. The case for designating it called it the strongest of its kind in Dresden and the third strongest in Saxony, on grounds of age, rarity, form and genetic value.\n\nThe trunk measures about 3.84 metres round, worked from a recorded stem diameter of 122 centimetres, although the city's own register line says more than four metres. Nobody has reconciled the two figures and neither is worth much fuss.\n\nTwenty metres tall, standing in the open on a public square with a tram stop at its foot, it is about as easy to reach as a protected tree gets.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The oak facing the main portal of the Trinitatiskirche across Trinitatisplatz, with a tram stop at its foot."
+    },
+    {
+      "id": "dre_002",
+      "name": "The Plane Tree of Albertplatz",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 130,
+      "age_max": 150,
+      "girth_cm": 330,
+      "location": {
+        "address": "Albertplatz, on the traffic island toward Bautzner Strasse, Innere Neustadt, Dresden",
+        "latitude": 51.063451,
+        "longitude": 13.747327,
+        "neighbourhood": "Innere Neustadt"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
+        "https://de.wikipedia.org/wiki/Platane_Albertplatz",
+        "https://www.stadtwikidd.de/wiki/Naturdenkmale"
+      ],
+      "access": "Free, standing on a traffic island in the middle of a public square, accessible at any time",
+      "transport": "Albertplatz tram and bus interchange, right on the square",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This plane tree lives on a traffic island. Albertplatz is one of the busiest interchanges in Dresden, a circle of tram and bus routes in the Neustadt, and the tree stands out in the middle of it toward Bautzner Strasse, twenty-five metres tall with a crown roughly as wide as it is high.\n\nIt was planted around 1885, when that ground was open and quiet. Everything else arrived later: the trams, the traffic, the night of 13 February 1945 and the long rebuilding after it, forty years of the GDR, and the Neustadt's more recent turn into the loudest quarter in the city. The tree has stayed put through all of it on its own island, which is the closest thing to a fixed point Albertplatz has. Dresden made it a natural monument on 3 January 1985, by the same council resolution that protected the oak on Fetscherplatz.\n\nA London plane is a hybrid of the American and the Oriental plane, and it was planted across European cities for exactly the qualities on show here. It takes heat, compacted soil and dirty air better than almost anything else with a trunk, and it sheds its bark in pale plates through the summer instead of letting the grime build up.\n\nIts trunk measures 3.30 metres round. Both the register and the city's own record agree on the figure, which is rarer than it sounds.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The plane tree standing alone on the traffic island toward Bautzner Strasse, in the middle of the Albertplatz interchange."
+    },
+    {
+      "id": "dre_003",
+      "name": "The Oak of Fetscherplatz",
+      "species": "Overcup Oak (Quercus lyrata)",
+      "age_estimate": "roughly 125 years",
+      "age_min": 115,
+      "age_max": 135,
+      "girth_cm": 335,
+      "location": {
+        "address": "Fetscherplatz, Johannstadt, Dresden",
+        "latitude": 51.046595,
+        "longitude": 13.771059,
+        "neighbourhood": "Johannstadt"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
+        "https://de.wikipedia.org/wiki/Eiche_Fetscherplatz",
+        "https://www.stadtwikidd.de/wiki/Naturdenkmale"
+      ],
+      "access": "Free, standing on a public square, visible and reachable at all times",
+      "transport": "Tram stop Fetscherplatz, directly beside the tree",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "In 1949 an architect built a tram shelter around this tree rather than move either of them. Herbert Schneider put his waiting kiosk on Fetscherplatz so close to the trunk that the roof had to curve to make room for the oak, four years after the air raids, in a city with more urgent things to be careful about. The two have shared the corner ever since.\n\nThe tree is an overcup oak, a North American species and an unlikely thing to find holding down a square in Johannstadt. It went in around 1900, when the place was still called Fuerstenplatz, and it has since put out a crown about thirty-two metres across, wider than the tree is tall. That crown is effectively the roof of the square. Twenty-five metres up, 3.35 metres round at the trunk, and the only real shade anyone waiting for a tram is going to get.\n\nDresden protected it as a natural monument on 3 January 1985, in the same council resolution that covered the plane tree on Albertplatz.\n\nIf you are there in autumn, look at the acorns on the ground. The cup on this species swallows almost the entire nut, which is where the name comes from and the quickest way to tell it apart from every other oak in the city.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The oak whose crown roofs Fetscherplatz, with a curved 1949 tram shelter built up against its trunk."
+    },
+    {
+      "id": "dre_004",
+      "name": "The Splittereiche",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "250 to 300 years",
+      "age_min": 250,
+      "age_max": 310,
+      "girth_cm": 600,
+      "location": {
+        "address": "Grosser Garten, on the open lawn roughly 40 metres south of the Mosaikbrunnen (Mosaic Fountain), Dresden",
+        "latitude": 51.04021,
+        "longitude": 13.75379,
+        "neighbourhood": "Grosser Garten"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Splittereiche",
+        "https://www.baumkunde.de/baumregister/7340-splittereiche_im_grossen_garten_von_dresden/",
+        "https://treedd.de/allgemein/die-splittereiche-ein-wichtiges-mahnmal-im-grossen-garten"
+      ],
+      "access": "Free, standing in the open on a public lawn inside the Grosser Garten park, open during park hours",
+      "transport": "Enter the Grosser Garten and walk to the Mosaikbrunnen; nearest tram stops are around Strassburger Platz or Lenneplatz, roughly a 10-15 minute walk into the park (approximate, not independently timed)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This oak is named after its wounds. On the nights of 13 and 14 February 1945 the bombing of Dresden reached the Grosser Garten, and splinters tore open one side of the trunk along roughly eight metres of its height. The tree survived. The damage is still there and still obvious, which is how it came to be called the Splittereiche, the splinter oak.\n\nIt was already old when that happened. An assessment made in the 2010s put it at between 250 and 300 years, a range nobody has narrowed since and which is itself a decade out of date by now. It stands twenty-seven metres tall with a trunk over six metres round, out on open lawn a short walk south of the Mosaikbrunnen, so you see the whole shape of it from a distance before you get to the scar.\n\nOn 8 May 2017, the seventy-second anniversary of the end of the war in Europe, a memorial plaque went up beside it carrying a line from Mark Twain: time may heal all wounds, but it is a lousy cosmetician. The year after, the city fitted metal sheeting over the damaged flank, because visitors picking at the old injury were making it worse.\n\nWe have not found it listed individually in Dresden's register of natural monuments. It stands inside a protected historic park instead, and it is the tree people in that park come to find.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The oak on the open lawn south of the Mosaikbrunnen, with a visible bomb-splinter scar running up one side and a 2017 memorial plaque beside it."
+    }
+  ]
+}

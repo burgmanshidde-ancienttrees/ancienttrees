@@ -466,6 +466,13 @@
    "trees": 0
   },
   {
+   "city": "Dresden",
+   "country": "Germany",
+   "slug": "dresden",
+   "status": "published",
+   "trees": 4
+  },
+  {
    "city": "Boston",
    "country": "United States",
    "slug": "boston",
@@ -559,14 +566,6 @@
    "trees": 13
   },
   {
-   "city": "Buenos Aires",
-   "country": "Argentina",
-   "slug": "buenos-aires",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Cork",
    "country": "Ireland",
    "slug": "cork",
@@ -580,6 +579,14 @@
    "slug": "budapest",
    "status": "published",
    "trees": 12
+  },
+  {
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "slug": "buenos-aires",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
   },
   {
    "city": "Quebec City",

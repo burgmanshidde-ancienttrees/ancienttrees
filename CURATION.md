@@ -9,6 +9,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 - Buenos Aires and Dresden open (4 trees each, all flagged): finishing a write pass an earlier attempt claimed and left mid-flight
+
+Both cities were already claimed and verified by an earlier attempt this window (data/research/buenosaires-verified.json, dresden-verified.json carried finished stories, sourced and pinned); that attempt stopped before merging, building or committing. This session finished the write pass rather than re-researching: merged both into data/cities/, wrote city-level intro/meta/FAQ/question copy by hand per Contract B and C, built, ran qa.py and superlatives.py clean, and released the standing claims.
+
+Buenos Aires (Argentina, first city in the country, no country page yet: gate is 3+): the Gomero de la Recoleta, a fig by the Recoleta Cemetery gate the city calls its oldest tree (roughly 250-300y, species and origin disputed between sources); the Magnolias del Protomedicato, a pair on a working school's grounds, view-only from the street/church opposite; the Magnolia de Avellaneda, with a documented 1875 planting date; the Esterculia of Plaza Lavalle, one of only two known specimens of its species in the city, no age documented. All four scattered across different neighbourhoods, not one walk.
+
+Dresden (Germany): the Splittereiche in the Grosser Garten, bomb-splinter-scarred in Feb 1945, assessed 250-300y, not on the individual Naturdenkmal register (protected via the historic park instead, flagged); the Zerr-Eiche of Trinitatisplatz, newly designated Feb 2024; the Plane Tree of Albertplatz and the Oak of Fetscherplatz, both designated by the same 3 Jan 1985 council resolution, the latter with a 1949 tram shelter built around its trunk.
+
+Fixed the same rebuild_list() gap CURATION.md already flagged for Leipzig on 2026-08-28: `python3 scripts/city_queue.py` only updates existing rows in data/city-list.json, never adds a new city's row. Buenos Aires had a placeholder row (Hidde's NAMED_BY_HIDDE list); Dresden had none at all and was silently absent from /cities, country pages and the first-seen feed until added by hand. Worth a real fix in city_queue.py so this stops being a per-city manual step.
+
+Photos missing: 8 of 8. Neither city has been swept by photo_hunt.py yet.
+
 ## 2026-08-28 - Twelve photographs too small to carry a page, and why the fix is a new file
 
 Hidde, looking at the Rothe-Linde in the app: "de foto lijkt pixelig wat gaat fout".
