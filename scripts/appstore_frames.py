@@ -84,14 +84,17 @@ HERO_LINE = "Trees worth the walk,\nwherever you are."
 # written down.
 HERO_SOURCE = "https://images.unsplash.com/photo-1529025635398-c8844675ab65?q=85&w=2400&auto=format&fit=crop"
 
+# HIS ORDER AND HIS WORDS, 2026-08-29. The city comes before the single tree,
+# which is the right way round: a city page shows what we hold, and only then
+# does one tree earn a whole panel.
+#
+# Line one is a verb phrase that stands on its own and line two finishes it,
+# because the two are set in different weights and the bold half has to make
+# sense alone. That is AllTrails' shape, "Vind routes" over "die je inspireren".
 PANELS = [
-    # Line one is a verb phrase that stands on its own and line two finishes
-    # it, because the two are set in different weights and the bold half has to
-    # make sense alone. That is AllTrails' own shape, "Vind routes" over "die
-    # je inspireren", and it is why theirs read calmly.
-    ("1-map", "Find the old trees\nnearest to you"),
-    ("2-tree", "Read what makes it\nworth the walk"),
+    ("1-map", "Find remarkable old trees\nwherever you are"),
     ("3-city", "See every old tree\nin a city"),
+    ("2-tree", "Read what makes it\nworth the walk"),
     ("4-discover", "Browse by city,\ncountry or species"),
     ("5-my-trees", "Collect the trees\nyou have stood in front of"),
     ("6-add", "Add a tree\nnobody has mapped yet"),
@@ -294,12 +297,14 @@ def main():
         print(f"  {'0-hero':12} {out.stat().st_size // 1024} KB  \"{HERO_LINE}\"")
 
     made = 0
-    for name, caption in PANELS:
+    for position, (name, caption) in enumerate(PANELS, start=1):
         raw = RAW / f"{name}.png"
         if not raw.exists():
             print(f"  skip {name}: no raw screenshot yet")
             continue
-        out = out_dir / f"{name}.png"
+        # Numbered by POSITION rather than by source, because the file order
+        # is the order they go up in and his order is not the shooting order.
+        out = out_dir / f"{position}-{name.split('-', 1)[1]}.png"
         panel(raw, caption, ground).save(out)
         print(f"  {name:12} {out.stat().st_size // 1024} KB  \"{caption.replace(chr(10), ' ')}\"")
         made += 1

@@ -478,7 +478,33 @@ struct CityView: View {
     let origin: (lat: Double, lng: Double)
     @Environment(Navigator.self) private var navigator
 
-    private var trees: [Tree] { catalogue.trees.filter { $0.citySlug == slug } }
+    /// PHOTOGRAPHED FIRST (Hidde, 2026-08-29: "moeten we de app niet zo maken
+    /// dat de bomen met fotos boven aan de lijst staan?").
+    ///
+    /// Here yes, because this list had no order at all: it was whatever the
+    /// feed happened to hold, so nobody can be surprised by a different one,
+    /// and a city page that opens on pictures is a city page somebody scrolls.
+    /// Roughly a fifth of our trees carry a photograph, so an unsorted city
+    /// opened on grey more often than not.
+    ///
+    /// NOT on the map's "trees you can see", and that boundary is the whole
+    /// answer to his question. That list is sorted by distance and the
+    /// distance IS the promise: a photographed tree three kilometres away
+    /// climbing above the oak across the street would be the one lie this
+    /// product cannot tell. Same for the season radar and for nearest().
+    ///
+    /// Stable within each half: enumerated() keeps the feed's own order among
+    /// the photographed and among the rest, so this only ever lifts, never
+    /// shuffles.
+    private var trees: [Tree] {
+        catalogue.trees.filter { $0.citySlug == slug }
+            .enumerated()
+            .sorted { a, b in
+                let pa = a.element.photo?.card != nil, pb = b.element.photo?.card != nil
+                return pa == pb ? a.offset < b.offset : pa
+            }
+            .map(\.element)
+    }
 
     /// Where the map opens: the middle of this city's trees, wide enough to
     /// hold them all with a little air.
