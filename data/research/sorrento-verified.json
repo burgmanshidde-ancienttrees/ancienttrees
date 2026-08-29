@@ -1,0 +1,52 @@
+[
+  {
+    "id": "srn_005",
+    "name": "The Second Cemetery Cypress of Piano di Sorrento",
+    "species": "Mediterranean Cypress (Cupressus sempervirens)",
+    "age_estimate": "over 130 years",
+    "age_min": 130,
+    "age_max": 150,
+    "girth_cm": 325,
+    "height_m": 10.0,
+    "location": {
+      "address": "Cimitero Comunale, Via Gennaro Maresca 84, Piano di Sorrento",
+      "latitude": 40.629167,
+      "longitude": 14.419444,
+      "neighbourhood": "Piano di Sorrento (adjoining Sorrento, on the peninsula)"
+    },
+    "verified_sources": [
+      "https://agricoltura.regione.campania.it/foreste/monum/scheda_65.html",
+      "data/registers/italy-masaf.json (sheet 05/G568/NA/15, girth 325 cm, 40.629361/14.419611)"
+    ],
+    "access": "Free, public municipal cemetery, open daily during standard daylight hours set by the Comune di Piano di Sorrento (hours vary seasonally). No permission needed to enter.",
+    "transport": "Circumvesuviana train from Sorrento station to Piano di Sorrento station, then about 15 minutes on foot uphill via Via Gennaro Maresca (same stop and walk as the already-published Cemetery Cypress, srn_003).",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "This is the thickest of three cypresses the national MASAF register lists in this same cemetery ('Cipresso n. 2 del Cimitero comunale'), the other two being the already-published srn_003 (266 cm, 'n. 1') and srn_006 delivered alongside this one (270 cm, 'n. 3'). Regione Campania's own scheda (n. 65, dedicated card, directly fetched and confirmed, not taken from a search summary) gives the same girth (325 cm) and the same planting story as srn_003: 'sulla base di testimonianze verbali risulta piantato nel 1876, anno di apertura del Cimitero Comunale' (planted 1876 by verbal testimony, the year the cemetery opened), so 'over 130 years' at the register's 2020 update, nearer 150 now. Age is oral tradition rather than a document, same caveat as srn_003. The two independent coordinate pairs (MASAF 40.629361/14.419611 vs Regione Campania 40.629167/14.419444) sit about 25-30 m apart within the cemetery grounds, the same kind of register slop srn_003 already flagged for itself (90 m there); hence approximate rather than confirmed. Writer's note: with three near-identical cypresses now on file in one cemetery, consider whether the page reads better naming all three individually (as here) or folding two into one entry that sends the visitor hunting for three trunks; CLAUDE.md's ensemble test cuts either way here, they are not a compact single-glance ensemble, each is independently identifiable by the register's own separate coordinates, so keeping them distinct id-by-id seems the more honest choice, but that is the writer's call. Story should distinguish it from srn_003 (266 cm, 'n. 1') and srn_006 (270 cm, 'n. 3') so a reader is not confused by three nearly-identical trees."
+  },
+  {
+    "id": "srn_006",
+    "name": "The Third Cemetery Cypress of Piano di Sorrento",
+    "species": "Mediterranean Cypress (Cupressus sempervirens)",
+    "age_estimate": "over 130 years",
+    "age_min": 130,
+    "age_max": 150,
+    "girth_cm": 270,
+    "height_m": 10.0,
+    "location": {
+      "address": "Cimitero Comunale, Via Gennaro Maresca 84, Piano di Sorrento",
+      "latitude": 40.628722,
+      "longitude": 14.419191,
+      "neighbourhood": "Piano di Sorrento (adjoining Sorrento, on the peninsula)"
+    },
+    "verified_sources": [
+      "https://agricoltura.regione.campania.it/foreste/monum/scheda_39.html",
+      "data/registers/italy-masaf.json (sheet 06/G568/NA/15, girth 270 cm, 40.628764/14.419186)"
+    ],
+    "access": "Free, public municipal cemetery, open daily during standard daylight hours set by the Comune di Piano di Sorrento (hours vary seasonally). No permission needed to enter.",
+    "transport": "Circumvesuviana train from Sorrento station to Piano di Sorrento station, then about 15 minutes on foot uphill via Via Gennaro Maresca (same stop and walk as the already-published Cemetery Cypress, srn_003).",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Third of the same trio, 'Cipresso n. 3 del Cimitero comunale' per Regione Campania scheda_39 (directly fetched, confirmed), located 'cancello sul viale principale alle spalle della cappella grande' (the gate on the main avenue, behind the large chapel), which is a usable landmark for the writer/pin. Same planting story and same age caveat as srn_003 and srn_005: oral tradition dates it to 1876, cemetery's opening year. The two coordinate pairs (MASAF 40.628764/14.419186 vs Regione Campania 40.628722/14.419191) sit about 5 m apart, tighter agreement than srn_003 or srn_005 got, but still kept approximate for consistency with its two siblings and because cemetery-internal pin precision has not been independently confirmed by satellite or photo. See srn_005's verify_notes for the three-cypress naming question."
+  }
+]
