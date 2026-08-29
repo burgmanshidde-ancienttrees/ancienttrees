@@ -390,13 +390,33 @@ def prepend_log(entry):
 # project stops writing and starts building. Measurement came first and is now
 # in; this is the cure.
 #
-# One continuation, never a loop: there is a single extra step in the workflow,
-# so the worst case is two attempts inside one already-paid-for window. It fires
-# only for the case that is pure waste, an early voluntary stop with no trees.
-# A run that died on the usage limit is left alone, because a second attempt
-# would die in seconds for the same reason.
-PROBE_MINUTES = 20      # under this, with nothing shipped, the window is worth another go
-PROBE_MIN_TURNS = 5     # below this it never really started: usage limit, not a decision
+# Rewritten 2026-08-29, because the rule below was switching the continuation
+# OFF for exactly the runs that were working. It said: continue only if the
+# attempt shipped no trees. So a run that shipped eight trees in 28 minutes was
+# told it was fine and the window ended with 92 of its 120 minutes unspent.
+#
+# Measured over the 66 working runs since 2026-08-15: 6,106 minutes of window
+# handed back, 93 per run against a 120-minute cap. The runs that shipped trees
+# averaged 41 minutes and 1.26 attempts; the runs that shipped nothing averaged
+# 15 minutes and 1.52. Productivity was being punished with an early night.
+#
+# So the question is no longer "did it ship" but "is there time left". A window
+# continues while enough of it remains to be worth a fresh orientation, and it
+# stops for the three reasons that are real: the usage limit killed the attempt,
+# an error was reported, or the clock is nearly out.
+#
+# The fourth stop is the WEEK, and it is the reason this is safe. The night of
+# 2026-08-23 spent 329 minutes, closing a five-day stretch of 1,053, and then
+# every knock for two and a half days died in seconds on the usage limit: three
+# days of no machine at all. Handing every run its full window would roughly
+# triple the weekly spend, so the budget guard below spends the headroom and
+# stops before it buys another blackout. WEEK_BUDGET_MINUTES is the dial; it is
+# Hidde's number, because it is his usage window.
+PROBE_CAP_MINUTES = 120     # the job's timeout-minutes, the size of one window
+PROBE_MIN_REMAINING = 25    # below this a fresh attempt cannot pay its orientation cost
+PROBE_MIN_TURNS = 5         # below this it never really started: usage limit, not a decision
+WEEK_BUDGET_MINUTES = 1000  # measured ceiling: 1,053 in five days bought a 2.5-day blackout
+PROBE_MINUTES = 20          # kept for the older callers that read it
 
 
 def merge_results(first, second):
@@ -427,12 +447,42 @@ def merge_results(first, second):
             out[key] = a + b
         elif key in first and key not in out:
             out[key] = a
-    out["attempts"] = 2
+    out["attempts"] = (first.get("attempts") or 1) + (second.get("attempts") or 1)
     return out
 
 
-def probe(result, changed, minutes):
-    """(should_continue, one-line reason). Never raises: unknown means no."""
+def week_minutes(path=HEALTH, now=None):
+    """Machine minutes recorded in the last 7 days. Unknown returns None."""
+    try:
+        with open(path, encoding="utf-8") as fh:
+            runs = json.load(fh).get("runs") or []
+    except (OSError, ValueError):
+        return None
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    cutoff = now - datetime.timedelta(days=7)
+    total = 0.0
+    for r in runs:
+        started = r.get("started")
+        mins = r.get("minutes")
+        if not started or not isinstance(mins, (int, float)):
+            continue
+        try:
+            when = datetime.datetime.fromisoformat(str(started).replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=datetime.timezone.utc)
+        if when >= cutoff:
+            total += mins
+    return round(total)
+
+
+def probe(result, changed, minutes, elapsed=None, spent_week=None):
+    """(should_continue, one-line reason). Never raises: unknown means no.
+
+    `elapsed` is minutes since the JOB started, which is not the same as the
+    attempt's own duration once a window has had more than one attempt. The
+    window is what has a clock; the attempt only has a decision."""
     if not isinstance(result, dict) or not result:
         return False, "no execution record, so nothing can be judged"
     if result.get("is_error"):
@@ -440,16 +490,23 @@ def probe(result, changed, minutes):
     turns = result.get("num_turns")
     if isinstance(turns, (int, float)) and turns < PROBE_MIN_TURNS:
         return False, f"only {turns} turn(s): the usage limit, not a decision"
-    if minutes is None:
+    if minutes is None and elapsed is None:
         return False, "duration unknown, so the window cannot be judged"
-    if minutes >= PROBE_MINUTES:
-        return False, f"used {minutes} min of its window"
-    if changed is None:
-        return False, "cannot resolve what changed, so assume it worked"
-    if (changed.get("trees") or 0) > 0:
-        return False, f"shipped {changed['trees']} tree(s) in {minutes} min"
-    return True, (f"stopped after {minutes} min with {changed.get('commits', 0)} commit(s) "
-                  f"and no trees; {int(PROBE_MINUTES)}+ min of window left unused")
+
+    used = elapsed if elapsed is not None else minutes
+    left = PROBE_CAP_MINUTES - used
+    if left < PROBE_MIN_REMAINING:
+        return False, (f"{round(left)} min left of the {PROBE_CAP_MINUTES} min window, "
+                       f"too little to pay a fresh orientation")
+
+    if spent_week is not None and spent_week >= WEEK_BUDGET_MINUTES:
+        return False, (f"the week has spent {spent_week} of {WEEK_BUDGET_MINUTES} "
+                       f"budgeted minutes; the cron keeps knocking, this stops extending")
+
+    shipped = (changed or {}).get("trees") or 0
+    week = f"; week at {spent_week}/{WEEK_BUDGET_MINUTES} min" if spent_week is not None else ""
+    return True, (f"stopped after {round(used)} min having shipped {shipped} tree(s); "
+                  f"{round(left)} min of the window still unspent{week}")
 
 
 def main():
@@ -457,19 +514,39 @@ def main():
     ap.add_argument("--execution-file", default=os.environ.get("CLAUDE_EXECUTION_FILE"))
     ap.add_argument("--execution-file-2", default=os.environ.get("CLAUDE_EXECUTION_FILE_2"),
                     help="the continuation attempt's record, when the window got one")
+    ap.add_argument("--execution-files", nargs="*", default=None,
+                    help="every attempt's record, in order. One window can now have "
+                         "four attempts, and reading only the last would understate it "
+                         "by exactly the amount the loop was added to recover.")
     ap.add_argument("--since-sha", default=os.environ.get("RUN_START_SHA"))
     ap.add_argument("--by", default="night-run")
     ap.add_argument("--run-id", default=os.environ.get("GITHUB_RUN_ID"))
     ap.add_argument("--started", default=os.environ.get("RUN_STARTED_AT"))
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--week", action="store_true",
+                    help="print the last 7 days of machine minutes against the budget. "
+                         "Exit 1 when the budget is spent, so a caller can stop knocking.")
     ap.add_argument("--probe", action="store_true",
                     help="judge only: should this window get one more attempt? "
                          "Writes continue=yes|no to GITHUB_OUTPUT, records nothing.")
     args = ap.parse_args()
 
-    result = read_result(args.execution_file)
-    if not args.probe and args.execution_file_2 and args.execution_file_2 != args.execution_file:
-        result = merge_results(result, read_result(args.execution_file_2))
+    if args.week:
+        spent = week_minutes()
+        if spent is None:
+            print("no run history readable; assuming there is room")
+            return 0
+        print("%d of %d machine minutes in the last 7 days" % (spent, WEEK_BUDGET_MINUTES))
+        return 1 if spent >= WEEK_BUDGET_MINUTES else 0
+
+    if args.execution_files and not args.probe:
+        result = {}
+        for path in args.execution_files:
+            result = merge_results(result, read_result(path))
+    else:
+        result = read_result(args.execution_file)
+        if not args.probe and args.execution_file_2 and args.execution_file_2 != args.execution_file:
+            result = merge_results(result, read_result(args.execution_file_2))
     changed = what_changed(args.since_sha)
     now = datetime.datetime.now(datetime.timezone.utc)
 
@@ -501,7 +578,26 @@ def main():
     if args.probe:
         # Judge only. This runs BEFORE the record is written, changes nothing on
         # disk, and releases no claim: the window is not over yet.
-        go, why = probe(result, changed, minutes if minutes_basis == "measured" else None)
+        #
+        # Elapsed is measured from the JOB's start, not the attempt's, because
+        # by the third attempt the attempt's own duration says nothing about how
+        # much window is left. Without a parseable start time it falls back to
+        # the attempt duration, which is right for a first attempt and merely
+        # conservative afterwards.
+        elapsed = None
+        try:
+            began = datetime.datetime.fromisoformat(str(args.started).replace("Z", "+00:00"))
+            if began.tzinfo is None:
+                began = began.replace(tzinfo=datetime.timezone.utc)
+            elapsed = round((now - began).total_seconds() / 60.0, 1)
+        except (TypeError, ValueError):
+            elapsed = None
+        spent = week_minutes()
+        if spent is not None and elapsed is not None:
+            spent += round(elapsed)
+        go, why = probe(result, changed,
+                        minutes if minutes_basis == "measured" else None,
+                        elapsed=elapsed, spent_week=spent)
         print(("continue: %s" % ("yes" if go else "no")) + " (%s)" % why)
         out = os.environ.get("GITHUB_OUTPUT")
         if out:
