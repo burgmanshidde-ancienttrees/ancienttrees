@@ -74,7 +74,13 @@ final class ImageStore {
     }()
 
     private var inFlight: [URL: Task<UIImage?, Never>] = [:]
-    private let gate = ImageGate(limit: 4)
+    /// EIGHT, not four. Four was set while every card image came from
+    /// Wikimedia, which rate-limits a burst into HTTP 429; since 2026-08-27 the
+    /// cards are served from our own domain and the only thing a small number
+    /// buys there is a slower scroll. Eight is still a third of the burst that
+    /// caused the 429s, so the heroes, which are still Wikimedia's, keep their
+    /// protection.
+    private let gate = ImageGate(limit: 8)
 
     private init() {}
 
