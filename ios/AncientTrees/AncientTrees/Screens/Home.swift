@@ -110,6 +110,7 @@ struct HomeView: View {
             LazyVStack(alignment: .leading, spacing: 30) {
                 heroBand
                 shelves
+                growingCard
                 Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
             .padding(.top, 6)
@@ -195,6 +196,50 @@ struct HomeView: View {
     /// hero photo you cannot have on a phone without eating the whole screen.
     /// Picks the nearest tree that is at its best right now AND has a
     /// photograph, because a hero without a picture is a headline.
+    /// THE MAP IS NOT FINISHED, said out loud, at the end of the browsing.
+    ///
+    /// Hidde, 2026-08-29: "ik wil meer mensen duidelijk maken dat we nog aan
+    /// het verbeteren zijn en ze kunnen helpen." It sat on the App Store panel
+    /// for one build and he took it off there, which is right: a store frame
+    /// sells the promise, and this is a different job.
+    ///
+    /// At the END of Discover on purpose. Somebody who has scrolled past the
+    /// cities, the oldest trees, the countries and the species has just seen
+    /// how much there is, which is the moment the gap is worth naming: they
+    /// know what a good entry looks like and they can tell whether their own
+    /// tree belongs. At the top it would be an apology before anybody had seen
+    /// anything.
+    ///
+    /// The wording follows PRODUCT_COPY.md rather than the corpus's own voice:
+    /// the reader acts, no machinery is named, and there is no summary line
+    /// after it.
+    private var growingCard: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("The map is still growing")
+                .font(.brand(19, .bold, relativeTo: .headline))
+                .foregroundStyle(Brand.ink)
+            // NOT "some of the best ones came from readers", which is what this
+            // said for one build. Two trees have been sent in so far and
+            // neither is published, so that sentence was flattery dressed as a
+            // fact, which is the one thing this project does not do to its own
+            // readers. What is left is true: trees go on every week, and the
+            // map has gaps.
+            Text("New trees go on every week, and there are still cities where we have only a handful. You can add one by photographing it and filling in what you know.")
+                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Button {
+                navigator.selectTab = TabBar.collectTag
+            } label: {
+                Label("Add a tree", systemImage: "camera.fill")
+            }
+            .buttonStyle(BrandButtonStyle(prominent: false))
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .brandCard()
+        .padding(.horizontal, 16)
+    }
+
     /// A photograph and the promise, a different one every time the app is
     /// opened (Kit/Heroes.swift). It is the website's own hero moved onto the
     /// phone, so somebody arriving from ancienttrees.app meets the same thing.
