@@ -1,0 +1,176 @@
+{
+  "city": "Salzburg",
+  "country": "Austria",
+  "status": "needs_curation",
+  "oldest_tree_id": "szb_003",
+  "intro": "Salzburg's baroque gardens get the postcards, but its oldest protected trees stand on working ground: a farm oak once used to fatten pigs, a riverside poplar from a vanished floodplain forest, a lime nobody has measured since 1963. The city's Naturdenkmal register lists dozens more; these five, spread from Itzling to Morzg to Maxglan, are the ones that clear the bar this pass, alongside one deliberate import, a Californian sequoia planted in the Mirabellgarten.",
+  "meta_description": "Salzburg's oldest protected trees stand on working farms, not in the baroque gardens. Five trees, from a 1933 Eichelmast oak to a Californian sequoia.",
+  "question_meta": "Salzburg's oldest confirmed tree is the Stephan-Ludwig-Roth Oak in Morzg, over 200 years old, recorded in an 1817 account. Full list of 5.",
+  "question_answer": "Salzburg's oldest documented tree is the Stephan-Ludwig-Roth Oak, a pedunculate oak at a woodland edge in Morzg. A source records the Transylvanian Saxon leader and pedagogue Stephan Ludwig Roth resting under it on 15 September 1817, which means it was already a landmark two centuries ago; a local blog puts its age at over 200 years today.",
+  "question_context": "The oak has real urgency behind it: the same source reports a fungal infection and expects the tree to survive only about twenty more years, which makes it worth seeing sooner rather than later. Salzburg's Naturdenkmal register runs to dozens of entries, and the five here come from four different corners of the city rather than one walkable cluster. The Erentrudishof Oak, the city's longest-protected tree (designated 1933), stands in the yard of a working organic farm in Morzg where pigs once fattened on its acorns. A black poplar on the Josef-Mayburger-Kai promenade is one of the last traces of the riparian forest that used to line the Salzach. A lime on a residential street in Maxglan has not been measured since its 1963 designation, and a giant sequoia stands beside a coast redwood in the formal Mirabellgarten, the only tree here that was deliberately planted rather than found growing wild. None of the five carries a hard planting date; ages come from designation years, a documented sighting, or a visitor's own tape measure, and each page says so plainly.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Salzburg?",
+      "a": "The Stephan-Ludwig-Roth Oak in Morzg, whose recorded age of over 200 years comes from an account of a Transylvanian Saxon leader resting under it in 1817."
+    },
+    {
+      "q": "Where are Salzburg's most remarkable trees?",
+      "a": "Spread across the city rather than one walk: a farm in Morzg, a riverside promenade in Itzling, a residential street in Maxglan, and the formal Mirabellgarten in the centre."
+    },
+    {
+      "q": "Are Salzburg's trees free to visit?",
+      "a": "Yes, all five stand on public ground or a working farm's publicly accessible yard, with no entrance fee."
+    },
+    {
+      "q": "Why don't Salzburg's official register trees carry ages?",
+      "a": "The Land Salzburg Naturdenkmal register records only the year a tree was designated, not when it was planted, so a 1933 or 1963 date is a floor on the tree's age rather than the age itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "szb_001",
+      "name": "The Poplar of Josef-Mayburger-Kai",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "girth_cm": 600,
+      "location": {
+        "address": "Josef-Mayburger-Kai riverside promenade, right bank of the Salzach near the Traklsteg footbridge, Itzling, Salzburg",
+        "latitude": 47.818408,
+        "longitude": 13.036553,
+        "neighbourhood": "Itzling"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://commons.wikimedia.org/wiki/Category:Pappel_am_Josef-Mayburger-Kai"
+      ],
+      "access": "Free, on the public riverside promenade (Salzachuferweg)",
+      "transport": "About 2km along the Salzach riverside path from the old town; reachable by city bus toward Itzling and a short walk to the Traklsteg footbridge.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A whole floodplain wood once ran along this bank of the Salzach. This black poplar is one of the last pieces of it still standing.\n\nThe Land Salzburg register says exactly that in its own entry: a remnant of the Weichholzaue, the softwood riparian forest that used to line this stretch of the river. Softwood there is not a verdict on the timber. It is the word for the willows and poplars that colonise a river's wet edge, the trees that arrive first on new ground and go first when a bank is tidied. That woodland has gone from here. A paved promenade runs in its place, and the poplar stands beside it near the Traklsteg footbridge, about two kilometres downstream from the old town, with the water on one side and Itzling on the other.\n\nThe register cites a trunk circumference of over six metres, which is a figure we are passing on rather than one we measured, and Salzburg listed the tree as a natural monument, NDM00173, in 1979. It has ended up with its own category in the Wikimedia photograph archive, seven pictures of one riverside poplar, which is more attention than most trees on that promenade will ever get.\n\nNobody has dated it. The register carries the year of protection and nothing else, and 1979 is a floor rather than an age. If you know when this poplar went in, or you have put a tape around it yourself, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "szb_002",
+      "name": "The Oak of Erentrudishof",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "location": {
+        "address": "Erentrudishof organic farm, Morzg, Salzburg (Wikipedia's register transcription gives Gneiserstraße 16; Wikimedia Commons gives Morzger Straße 40 for the same farmstead, run by Stift Nonnberg; discrepancy unresolved)",
+        "latitude": 47.77751,
+        "longitude": 13.050974,
+        "neighbourhood": "Morzg"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://commons.wikimedia.org/wiki/Category:Eiche_am_Erentrudishof",
+        "https://www.erentrudishof.at/"
+      ],
+      "access": "Free; stands on the grounds of the Erentrudishof organic farm shop, run by Stift Nonnberg convent. Publicly accessible during farm-shop hours (Mon-Fri 9:00-18:30, Sat 9:00-12:00) with a self-service raw-milk machine open 24/7; the shop was reported closed for renovation with a stated July 2026 reopening at the time this was researched (2026-08-29), confirm it has reopened before sending a reader.",
+      "transport": "Southern edge of Salzburg in Morzg; reachable by city bus toward Morzg/Hellbrunn and a short walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "No tree in Salzburg has been protected for longer than this one. The oak at the Erentrudishof went onto the Land Salzburg register in 1933 as NDM00019, the earliest designation on the city's whole list, with 95 square metres of ground protected around it.\n\nThe register describes a single-stemmed oak once used for Eichelmast: pigs turned out beneath it in autumn to fatten on the acorns it dropped. That is a working relationship rather than an ornamental one, and the setting has stayed working. The Erentrudishof is a farm run by the Stift Nonnberg convent, on the southern edge of the city at Morzg, with an organic shop, weekday opening hours and a self-service raw milk machine that runs around the clock. The oak stands on the yard of a place people still visit to buy milk.\n\nFinding the address takes a moment. The register transcription puts the farm on Gneiserstraße, the photograph archive puts it on Morzger Straße, and both mean the same farmstead. Aim for the Erentrudishof by name and ignore the street. Worth checking before you go: the shop was closed for renovation with a reopening announced for July 2026.\n\nNobody has dated the tree. The 1933 listing says it was already worth protecting then and nothing more, which makes it a floor rather than an age. If you know when it was planted, or you have measured the trunk, tell us.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when the acorns that once fattened the farm pigs come down"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "szb_003",
+      "name": "The Stephan-Ludwig-Roth Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 200 years",
+      "location": {
+        "address": "Woodland edge near the tram stop toward Birkensiedlung, Morzg, Salzburg",
+        "latitude": 47.759879,
+        "longitude": 13.039129,
+        "neighbourhood": "Morzg"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+        "https://www.fraeuleinflora.at/salzburg/10-bemerkenswerte-baeume-in-salzburg/"
+      ],
+      "access": "Free, stands at a woodland edge / roadside in Morzg, publicly accessible",
+      "transport": "Near the tram stop toward Birkensiedlung in Morzg, short walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "On 15 September 1817 a man stopped and rested under this oak, and Salzburg has been naming the tree after him ever since.\n\nHe was Stephan Ludwig Roth, born 1796, died 1849, a teacher and later a leader of the Transylvanian Saxons. The register records the date of that rest, which is the useful part of the story: the oak was already a landmark worth stopping at two centuries ago, or nobody would have written down which tree it was. A Salzburg blog that catalogues the city's notable trees puts the age at over two hundred years, and that is as precise as anyone has been prepared to be, so it is as precise as we will be.\n\nIt became a natural monument in 1969, with 490 square metres of protected ground around it, which is a generous piece of Morzg set aside for a single tree. It stands at a woodland edge on the southern edge of the city, a short walk from the tram, on public ground and free to reach.\n\nGo sooner rather than later. The same blog reports a fungal infection in the tree and cites an expectation that it has roughly twenty years left. It is alive and standing now. That is what the sources say today, and a tree in that condition is worth a second look from anyone who passes it: if you see the crown thinning or the trunk opening up, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "szb_004",
+      "name": "The Linden of Körblleitengasse",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "about 150 years",
+      "location": {
+        "address": "Körblleitengasse, Maxglan, Salzburg (between Kleßheimer Allee and Norbert-Brüll-Straße)",
+        "latitude": 47.808076,
+        "longitude": 13.017799,
+        "neighbourhood": "Maxglan"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg"
+      ],
+      "access": "Free, roadside tree on a public residential street (Körblleitengasse)",
+      "transport": "Maxglan, western Salzburg; reachable by city bus, then a short walk along Körblleitengasse.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register calls this a 150-year-old lime. It has been saying so since 1963, which is the year the tree was protected and, in all likelihood, the last year anybody looked at it properly. Read the figure as an assessment made more than sixty years ago rather than a fact about the tree today.\n\nThat register, kept by Land Salzburg, is the only source we have on it: NDM00069, thirty-eight square metres of protected ground on a residential lane in Maxglan, out on the western side of the city. For a tree the state went to the trouble of protecting, it has left remarkably little trace. The local history record covers the lane itself in detail, down to the terrace slope above the Glanbach that gave the street its name and the 570 metres it runs between Kleßheimer Allee and Norbert-Brüll-Straße. It never once mentions the lime standing on it.\n\nTwo open questions, and a reader on that street could settle both. The register writes the species down only as Linde, with nothing after it, so which lime this is has never actually been recorded. And nobody appears to have taped or dated the trunk since the sixties. If you live on the Körblleitengasse, or you have stood under it and looked at the leaves, tell us what you found.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "szb_005",
+      "name": "The Giant Sequoia of the Mirabellgarten",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "",
+      "girth_cm": 590,
+      "location": {
+        "address": "Mirabellgarten, beside the path just before the turn to the Bastionsgarten (now a children's playground), Salzburg",
+        "latitude": 47.80545,
+        "longitude": 13.04047,
+        "neighbourhood": "Neustadt / Mirabellgarten"
+      },
+      "verified_sources": [
+        "https://www.kraftort.org/Osterreich/Salzburg/Salzburg_Mirabellgarten/salzburg_mirabellgarten.html",
+        "https://www.opencaching.de/viewcache.php?cacheid=171471&log=A"
+      ],
+      "access": "Free, the Mirabellgarten is a public baroque garden, open daily",
+      "transport": "Central Salzburg, Neustadt side of the Salzach; a few minutes' walk from Mirabellplatz and the old town.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The best measurement anyone has of this tree was taken by a geocacher with a tape measure in December 2019: just under six metres around the base. Not a survey, and the only number there is.\n\nIt is a giant sequoia, Sequoiadendron giganteum, a Californian tree standing in an Austrian baroque garden. It is not alone in that. A coast redwood grows beside it, so the pair on the right of the path, just before the turn into the Bastionsgarten, are both imports from the far side of a continent and an ocean. Neither of them arrived by accident. Somebody chose them, planted them and then let them do the one thing a formal garden is not otherwise for, which is grow upward without being cut back.\n\nNobody wrote down when that happened. No planting date and no age has surfaced for either tree, which leaves the sequoia the least documented thing in a garden people cross all day long. If you have found a record of when they went in, send it and it goes on the page.\n\nGetting there is the easy part. The Mirabellgarten is public and open daily, a few minutes from Mirabellplatz, and the turn to the Bastionsgarten is now a children's playground. Our pin comes from the geocache waypoint rather than a survey mark, which in a garden this size still puts you within a few metres of the right trees.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

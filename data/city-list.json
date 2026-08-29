@@ -611,7 +611,7 @@
    "slug": "warsaw",
    "status": "published",
    "demand_views_90d": 197929,
-   "trees": 15
+   "trees": 16
   },
   {
    "city": "Helsinki",
@@ -889,6 +889,13 @@
    "trees": 0
   },
   {
+   "city": "Salzburg",
+   "country": "Austria",
+   "slug": "salzburg",
+   "status": "published",
+   "trees": 5
+  },
+  {
    "city": "Nice",
    "country": "France",
    "slug": "nice",
@@ -913,14 +920,6 @@
    "trees": 10
   },
   {
-   "city": "Los Angeles",
-   "country": "United States",
-   "slug": "los-angeles",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 7
-  },
-  {
    "city": "Kuala Lumpur",
    "country": "Malaysia",
    "slug": "kuala-lumpur",
@@ -942,6 +941,14 @@
    "slug": "oahu",
    "status": "published",
    "trees": 6
+  },
+  {
+   "city": "Los Angeles",
+   "country": "United States",
+   "slug": "los-angeles",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 8
   },
   {
    "city": "Cape Town",
@@ -988,7 +995,7 @@
    "slug": "brno",
    "status": "published",
    "demand_views_90d": 63714,
-   "trees": 7
+   "trees": 8
   },
   {
    "city": "Sao Paulo",
@@ -1067,7 +1074,7 @@
    "country": "Germany",
    "slug": "dresden",
    "status": "published",
-   "trees": 4
+   "trees": 5
   },
   {
    "city": "Genoa",
@@ -1195,7 +1202,7 @@
    "slug": "gdansk",
    "status": "published",
    "demand_views_90d": 4908,
-   "trees": 4
+   "trees": 6
   },
   {
    "city": "Antwerp",
@@ -1241,7 +1248,7 @@
    "country": "Netherlands",
    "slug": "amersfoort",
    "status": "published",
-   "trees": 7
+   "trees": 8
   },
   {
    "city": "Apeldoorn",
@@ -1266,7 +1273,7 @@
    "status": "published",
    "note": "Not a city: the walled Mata Nacional do Bucaco inside the concelho of Mealhada, freguesia of Luso. Named for the place a visitor actually goes and searches for. 29 ICNF-classified trees inside 900 metres, 6 published, the rest in data/leads/bucaco.json.",
    "demand_views_90d": 132,
-   "trees": 14
+   "trees": 18
   },
   {
    "city": "Cairo",

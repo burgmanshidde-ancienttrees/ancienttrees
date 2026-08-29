@@ -3852,6 +3852,24 @@
         "note": "New city, rung 0 (open the unopened, highest-ranked with register supply). Register-assisted dedicated pass after a 2026-08-27 quick scan called it thin; Wikipedia register-list join gave designation years for Salzburg's Naturdenkmal rows. 5 of ~9 chased candidates verified (clears the 4-tree floor), rest recorded as leads/blocked.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "salzburg",
+        "kind": "write",
+        "tokens": 48000,
+        "trees": 5,
+        "note": "5 stories written for the new Salzburg city (szb_001-005), merged into a new data/cities/salzburg.json with hand-written intro/meta/FAQ/question copy per Contract B/C. One species rename (Linden->Lime, Tilia sp.) to match the canonical name already used elsewhere. Build, qa.py, superlatives.py, preflight.py clean.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "queensland-kauri, gray-poplar",
+        "kind": "session",
+        "tokens": 6000,
+        "trees": 0,
+        "note": "Two species intro pages written from pagegaps.py's gap list (Queensland Kauri: Sydney/Hobart/LA; Gray Poplar: Ferrara/Sofia/Warsaw), each from the trees' own facts per P3. Closes the standing species-page gap to 0.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
