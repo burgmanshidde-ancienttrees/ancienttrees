@@ -404,7 +404,7 @@ def check(screen):
         # that a 6 point drift asks for the icon to sit flush against the pill
         # (2026-08-25). This check is about the margins of text and cards, and
         # those are all far wider than a thumb.
-        if (el.type not in INVISIBLE and el.w > 48 and el.h > 4
+        if (el.type not in INVISIBLE and el.type not in NOT_OURS and el.w > 48 and el.h > 4
                 and 0 <= el.x < W / 2 and not in_shelf(el)
                 and el.ident not in FLOATS_OVER_PAGES
                 and not inside(el, NOT_OURS, NOT_OURS_IDS) and not centred(el, W)):
