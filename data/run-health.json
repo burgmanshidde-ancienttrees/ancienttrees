@@ -2252,6 +2252,38 @@
    ],
    "trees": 8,
    "logged": true
+  },
+  {
+   "started": "2026-08-29T08:11:42+00:00",
+   "date": "2026-08-29",
+   "run_id": "33242567602",
+   "minutes": 15.2,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 85,
+   "denials": 3,
+   "denials_source": "permission_denials: Bash(cd), Bash(if), Bash(rm)",
+   "ended": "success",
+   "tokens": 4294370,
+   "claims_held": [
+    "Los Angeles",
+    "warsaw",
+    "bucaco"
+   ],
+   "commits": 7,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "aarhus",
+     "trees": 0
+    },
+    {
+     "city": "dallas",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
