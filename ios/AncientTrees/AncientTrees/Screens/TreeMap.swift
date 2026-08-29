@@ -91,6 +91,11 @@ struct TreeMap: UIViewRepresentable {
     /// point: see SheetLiftKey in BottomSheet.swift.
     var sheetLift: SheetHeight? = nil
     @Environment(\.sheetLift) private var inheritedLift
+    /// The sheet's height THIS FRAME, drag included, which only the recentre
+    /// control uses. The camera keeps to the stop above: re-aiming a map under
+    /// a moving thumb is worse than a map that opened slightly wrong, and that
+    /// is already written down in settle().
+    @Environment(\.sheetPoints) private var livePoints
 
     /// How much of this map the sheet in front of it is covering.
     private var sheetCoverage: SheetHeight? { sheetLift ?? inheritedLift }
@@ -601,6 +606,14 @@ struct TreeMap: UIViewRepresentable {
             // sheet is at. 12 points of air, and never lower than the old 120 so
             // a map with no sheet in front of it looks the same as before.
             if let lift = recentreLift {
+                // THE LIVE HEIGHT, not the stop (Hidde, 2026-08-29: "de spacing
+                // tussen de lijst en het icoontje wisselt af en toe als je
+                // sleept"). The stop only changes when a drag ENDS, so the gap
+                // between the sheet's top edge and this button grew and shrank
+                // under the finger and then jumped on release. Apple Maps and
+                // Google Maps both have this control ride the sheet frame by
+                // frame. The content inset below deliberately stays on the stop.
+                let coverage = parent.livePoints ?? coverage
                 // Never higher than mid-screen. At full height the sheet is 86
                 // percent of the phone, so "just above the sheet" put the
                 // recentre control up among the search field and the filter
