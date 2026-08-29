@@ -3,9 +3,9 @@
   "country": "Spain",
   "status": "needs_curation",
   "intro": "Malaga's most remarkable trees rarely come from the wild. Almost every one on this list arrived as an import, an accident, or a rescue: a fig mistaken for a magnolia, an olive dug up whole from a neighbouring town, an avocado planted a century and a half ago when nobody in Spain yet grew the fruit to sell. The city itself joined a European tagging scheme in 2022 to mark ten of them with small identifying plaques, and this list draws heavily on that official selection, filled out with the botanical garden that has been collecting outsized specimens since 1855.",
-  "meta_description": "Malaga's ten most remarkable trees, from a 400-year-old transplanted olive to a fig beside a Picasso sculpture. Locations, stories, how to reach each one.",
+  "meta_description": "Malaga's nine most remarkable trees, from a 400-year-old transplanted olive to a fig beside a Picasso sculpture. Locations, stories, how to reach each one.",
   "question_answer": "Malaga's oldest documented tree is the olive of the Jardin Botanico-Historico La Concepcion, estimated at around 400 years old and moved there whole from the neighbouring town of Velez-Malaga. It stands in the garden's Mediterranean plant collection, a short bus ride north of the city centre, inside the paid botanical garden.",
-  "question_meta": "Malaga's oldest tree: a 400-year-old olive at La Concepcion garden, moved whole from Velez-Malaga. Its story, location, and nine more remarkable trees.",
+  "question_meta": "Malaga's oldest tree: a 400-year-old olive at La Concepcion garden, moved whole from Velez-Malaga. Its story, location, and eight more remarkable trees.",
   "question_context": "Malaga does not have a single dominant tree register the way some cities do. Its strongest source is a 2022 municipal scheme, run under the European TreeTags project and the international Tree Cities of the World programme, which tagged ten specimens across the city as singular for their size, age or location. Separately, the Jardin Botanico-Historico La Concepcion, a private estate opened to the public and declared a historic garden in 1943, keeps its own record of a dozen outsized trees inherited from more than a century of collecting. Within that combined pool, the Concepcion's olive tree is the one most consistently described as the city's oldest, on the strength of a roughly 400-year age estimate given by the garden itself, though as with most veteran olives, the figure is a general estimate rather than a ring count. The garden sits at the northern edge of the city, a paid site (small entry fee), reachable by bus from the centre.",
   "faq": [
     {
@@ -14,11 +14,11 @@
     },
     {
       "q": "What is Malaga's TreeTags scheme?",
-      "a": "A 2022 municipal programme, part of the European TreeTags project and the international Tree Cities of the World initiative, that placed identifying plaques on ten trees across Malaga chosen for their size, age or location. Six of the ten trees on this list carry one of those tags."
+      "a": "A 2022 municipal programme, part of the European TreeTags project and the international Tree Cities of the World initiative, that placed identifying plaques on ten trees across Malaga chosen for their size, age or location. Five of the trees on this list carry one of those tags."
     },
     {
       "q": "Are Malaga's remarkable trees free to see?",
-      "a": "Most are, standing in free public parks, gardens and streets. Two exceptions: the trees inside the Jardin Botanico-Historico La Concepcion require a small entry fee, and the avocado tree at a Churriana primary school is on working school grounds, visited by prior appointment rather than freely."
+      "a": "Yes, apart from one ticket. Everything here stands in free public parks, gardens and streets except the trees inside the Jardin Botanico-Historico La Concepcion, which charge a small entry fee."
     },
     {
       "q": "Why are so many of Malaga's oldest trees not native to Spain?",
@@ -66,7 +66,8 @@
         "label": "September to November: the harvest, when the fruit turns from green to black",
         "kind": "fruit"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "In the Mediterranean collection rather than in any old grove: an olive dug up whole 40 km along the coast and replanted here."
     },
     {
       "id": "mlg_002",
@@ -98,7 +99,8 @@
       },
       "curation_status": "flagged",
       "notes": "Ensemble entry describing the avenue's tree cover rather than one dated individual specimen, the same bar used for other cities' avenue/grove entries. 1876 planting date and the 2018-19 metro-works root protection are corroborated across both sources. Photo verified directly: shows the Alameda's large ficus canopy over the street, matching the description exactly.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "Not one tree but the avenue itself, 23 of the original mature figs still standing among younger replacements down the middle of the promenade."
     },
     {
       "id": "mlg_003",
@@ -139,7 +141,8 @@
           5
         ],
         "label": "February into May, when the barrel-shaped trunk sits beneath a canopy of cream-white flowers"
-      }
+      },
+      "how_to_recognise": "A trunk so swollen it reads as inflated rather than grown, sharing its small plaza with a set of bright red benches."
     },
     {
       "id": "mlg_004",
@@ -176,7 +179,8 @@
           11
         ],
         "label": "October into November, when it drops its leaves and flowers pink at the same time"
-      }
+      },
+      "how_to_recognise": "Built into the remodelled paving near the cathedral rather than cleared for it, and carrying one of the city's ten singular-tree tags."
     },
     {
       "id": "mlg_005",
@@ -208,7 +212,8 @@
       },
       "curation_status": "flagged",
       "notes": "The 'among the largest in Europe' claim is softened per hard rule 8; sourced to the garden's own promotional description rather than an independent measurement. 25m height and centenarian status corroborated by the TreeTags coverage and the city's own park page. Photo found 2026-07-28 via a Wiki Loves Monuments-style Commons search (a lead never tried before in this project for Spain): the file's own description reads 'Sculpture near remarkable tree in Jardines de Picasso', and the image was viewed directly, showing the bronze interlocking-figures sculpture (matching the story's description of Ortiz Berrocal's 'Siextasis', puzzle-like bronzes separating into interlocking pieces) standing directly beside a large Ficus macrophylla with massive descending aerial roots thickened into secondary trunks, an unambiguous match to this entry and its named sculpture-and-fig pairing. Location confirmed 2026-07-27 via an OpenStreetMap node for the Ortiz Berrocal sculpture 'Siextasis' (installed 30 October 1977, matching independent press coverage of the same installation date), which two independent sources describe as standing between this tree and its twin.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "One of the two big figs older than the garden laid out around them, with Berrocal's Siextasis sculpture standing between the pair."
     },
     {
       "id": "mlg_006",
@@ -239,7 +244,8 @@
       "curation_status": "flagged",
       "notes": "Age (approximately 200 years), height (24m) and perimeter (3.72m) corroborated across the garden's own official page and an independent tree-history blog (arbolesconhistoria.com), both giving matching figures. No usable photo found on Wikimedia Commons or iNaturalist for this specific specimen despite a genuine search. Location confirmed 2026-07-27: an OpenStreetMap tree node (species-tagged Celtis australis) sits about 8m from the garden's own stated location for this tree, 'al lado de la Casita de los Cipreses' (beside the Cypress Cottage building this tree is named for), an independent geocode of that named building landing within the same few metres.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "Beside the cypress cottage in the botanical garden, a plain grey trunk and small dark berries among a collection otherwise made of exotics."
     },
     {
       "id": "mlg_007",
@@ -272,7 +278,8 @@
       "curation_status": "flagged",
       "notes": "'Tallest in the province' claim comes from the garden's own page; a second source (a Malaga tourism/wellness blog) corroborates the height and age but both ultimately draw on the garden's own figures, so treat as closer to single-sourced for the superlative specifically, softened language used ('according to the garden's own record') per hard rule 8. Photo found 2026-07-28 via iNaturalist (observation 3186160, CC-BY-SA), by the same Daniel Capilla/dcapillae already trusted elsewhere in this file (mlg_001, mlg_003); the observer's own field notes independently describe 'araucarias, the tallest trees in this garden, one exceeding 45m, the tallest in Malaga province', matching this entry's own claim almost verbatim. Viewed directly: several tall Araucaria heterophylla with the garden's distinctive tiered branching rising above the surrounding canopy, city visible behind. Honest caveat: the frame shows the garden's araucaria grove, not one tree isolated and confirmed as the specific record-holding trunk, so approved as a representative shot rather than a single-specimen portrait, the same treatment given to other multi-tree candid shots elsewhere on this site. Location tightened 2026-07-27: the garden's own page places this tree 'al lado de la cascada' (beside the waterfall); pinned to the midpoint of La Concepcion's two on-site waterfalls since no tree-tagged node or source distinguishes which one, so this stays approximate rather than confirmed, but is now 370m+ from the other two La Concepcion entries it previously shared a coordinate with.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "Beside the waterfall, its branches in perfectly regular tiers around one straight trunk, and the tallest of its kind in the province."
     },
     {
       "id": "mlg_008",
@@ -302,7 +309,8 @@
       },
       "curation_status": "flagged",
       "notes": "Both sources report the same official TreeTags figures (19m height, 0.9m diameter); treated as two republications of one municipal source. No planting date or age documented; described as mature rather than assigned a specific figure. No usable photo found for this specific specimen.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "The one native tree in a park assembled from five continents: dark evergreen, with small hard leaves."
     },
     {
       "id": "mlg_009",
@@ -332,37 +340,8 @@
       },
       "curation_status": "flagged",
       "notes": "Both sources report the same official TreeTags figures (13m height, 0.5m diameter); treated as two republications of one municipal source rather than fully independent corroboration. No planting date or age documented. No usable photo found for this specific specimen. Location confirmed 2026-07-27: an OpenStreetMap tree node species-tagged Peltophorum dubium (an exact and rare species match) sits inside Parque de Malaga, moving this pin off the shared park-centroid estimate it previously sat on with mlg_008.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "mlg_010",
-      "name": "The Avocado of Ciudad de Jaen School",
-      "species": "Avocado (Persea americana)",
-      "age_estimate": "150+ years",
-      "age_min": 150,
-      "age_max": 175,
-      "location": {
-        "address": "CEIP Ciudad de Jaen, Calle Torremolinos 65, 29140 Malaga",
-        "latitude": 36.6637255,
-        "longitude": -4.5040104,
-        "neighbourhood": "Churriana"
-      },
-      "story": "Malaga and neighbouring Granada now grow nine of every ten avocados sold in Spain, an industry whose roots trace back to Churriana, a district in the city's southwest better known today for hosting the airport than for starting a national crop. Early avocado trees reached this coastline in the mid-19th century, brought back by travellers with ties to Cuba and the Americas and planted first as curiosities on private estates rather than as a business. This tree, growing in the courtyard of a working primary school, is one of the survivors from that early period, tagged by the city in 2022 as one of ten singular trees and described in that designation as among the first avocado specimens brought to Malaga, more than 150 years old and still standing roughly 11 metres tall inside a low protective wall. The school's parents' association has taken its name directly from the tree, calling itself AMPA Aguacate, and generations of Churriana schoolchildren have grown up eating lunch in its shade decades before avocado became the crop that now defines the region's agriculture. It is not freely open to the public: visiting means contacting the school directly and arranging a time, an honest limitation for a tree that otherwise has one of the best stories on this list.",
-      "verified_sources": [
-        "https://www.malagactualidad.es/teletipos/61898-diez-arboles-singulares-de-malaga-forman-parte-de-la-campana-europea-de-divulgacion-tretags",
-        "https://limpiezademalaga.es/beneficios-arboles-malaga/"
-      ],
-      "access": "Restricted: working school grounds, visits by prior appointment only",
-      "transport": "Bus to Churriana, Calle Torremolinos",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "The '150+ years, among the first avocado imports' claim comes from the city's own TreeTags description, repeated identically by two press outlets covering the same municipal campaign, so treated as effectively one primary source rather than fully independent corroboration; presented with that caveat. The general history of 1850s-60s avocado introduction to Churriana via a separate, unconnected estate (San Javier) was found during research but not stated as this specific tree's origin, since no source directly links the two. Access honestly marked as appointment-only rather than implying free public entry, per the mandate's honesty rules. No usable photo found; the tree's only visibility online is through the school's own social media, not an open licence. Location confirmed 2026-07-27 via the school's own OpenStreetMap building footprint, effectively the same point as the existing address-derived pin.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "Thirteen metres on a trunk half a metre through, modest beside the park's giant figs and araucarias, and carrying its own identification label."
     }
   ]
 }

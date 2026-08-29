@@ -5,7 +5,7 @@
   "intro": "Valencia protects more monumental and singular trees than any other region in Spain, over 2,400 across the Comunitat Valenciana under a 2006 law, and the city maps five routes past its own share of them. Several of its most-loved trees share an oddly specific origin story: 19th century gardeners meant to plant a magnolia and grabbed a fig sapling by mistake, or a species imported because it had just become fashionable on the French Riviera. What survives from those errors and fashions includes the widest tree canopy in the city, a 400-year-old olive, and the tallest tree in the province.",
   "meta_description": "Valencia protects more monumental trees than any Spanish region. Meet El Titan, a 174-year-old fig planted by mistake, and a 400-year-old olive.",
   "question_answer": "The oldest tree in Valencia is generally cited as the olive tree of Parque de la Rambleta, in the San Marcelino neighbourhood, estimated at around 400 years old and described by the city's own monumental trees route as the oldest specimen among all five of its walking trails.",
-  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and fifteen more monumental trees across the city.",
+  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and fourteen more monumental trees across the city.",
   "question_context": "Valencia is unusually well documented for this kind of question: the Comunitat Valenciana keeps a legal Catálogo de Árboles Monumentales y Singulares under a 2006 regional law, now covering more than 2,400 protected trees, and the city government separately publishes five named walking and cycling routes past its own monumental specimens, complete with individual profiles. Within that system, the olive of Parque de la Rambleta is the one most consistently named as the oldest, though as with most old olives, its 400-year figure comes from general estimate rather than a ring count or documented planting record. El Titan, the city's giant Ficus macrophylla in the Jardines del Parterre, is younger by comparison at 174 years but has a firmer, more specifically documented planting date, the tradeoff between the two runs through most of this list. The park sits in the San Marcelino neighbourhood on Pio IX street, next to the city's General Cemetery, a short bus ride south of the historic centre.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Valencia's monumental trees free to see?",
-      "a": "Yes. All ten on this list stand in free public parks, gardens and streets, reachable on foot, by bike or by the city's public transport network."
+      "a": "Yes. All fifteen on this list stand in free public parks, gardens and streets, reachable on foot, by bike or by the city's public transport network."
     },
     {
       "q": "How does Valencia protect its monumental trees?",
@@ -383,37 +383,6 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 1370
-    },
-    {
-      "id": "vlc_012",
-      "name": "The Ficus of the Corts Valencianes",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "age_estimate": "sources disagree: called both 'century-old' and dated to the second half of the 19th century",
-      "age_min": 100,
-      "age_max": 175,
-      "location": {
-        "address": "Palau de Benicarlo, Placa de Sant Llorenc 4, 46003 Valencia",
-        "latitude": 39.47808,
-        "longitude": -0.37439,
-        "neighbourhood": "El Carmen, Ciutat Vella"
-      },
-      "story": "One of the largest fig trees in Valencia grows in a garden you can enter twice a week, by appointment, and not at all in August. It stands in the courtyard of the Palau de Benicarlo, also known as the Palau dels Borja, which is the working seat of the Corts Valencianes, the Valencian regional parliament. The only way to stand under it is the free guided tour of the building, offered on Monday and Friday mornings and booked in advance through the parliament itself. The tour runs about an hour and spends most of it on the debating chamber rather than the garden, which is worth knowing before you go.\n\nThe tree is in the same weight class as the city's famous ones. The regional register measures its trunk at 13.6 metres around, within centimetres of El Titan in the Parterre. Its age is disputed. One account calls it simply a century old, 22 metres tall with a crown spreading more than 12 metres. Another dates its origins to the second half of the nineteenth century, which would make it something between 127 and 176. Both figures are in circulation and neither has a planting record behind it.\n\nSo this is the least casual visit on the list, and the only tree here that requires a phone call. It also spends its life inside a security perimeter, tended by a government that lists it as one of the region's monumental trees.",
-      "verified_sources": [
-        "https://www.barcelo.com/guia-turismo/en/spain/valencia/things-to-do/las-corts-valencianes/",
-        "https://arquitectosdevalencia.es/contenido/visita-de-arquitectura-corts-valencianes/",
-        "data/registers/valencia-arboles-monumentales.json (girth 13.6m)"
-      ],
-      "access": "RESTRICTED: this is the working seat of the Valencian regional parliament (Corts Valencianes), inside the Palau de Benicarlo / Palau dels Borja. The garden and ficus are visible only on a free guided tour, offered Mondays and Fridays mornings at 10:00/11:00/12:00/13:00, must be booked in advance by phone or the Corts Valencianes website, and NOT offered in August. This is not a walk-up, casual-visit tree.",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "girth_cm": 1362
     },
     {
       "id": "vlc_013",

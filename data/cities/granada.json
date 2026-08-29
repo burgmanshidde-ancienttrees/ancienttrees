@@ -3,9 +3,9 @@
   "country": "Spain",
   "status": "needs_curation",
   "intro": "Granada plants its trees the way it builds its gardens: behind walls, inside monastery grounds, up palace hillsides, rarely as an afterthought. A mystic poet planted one with his own hands while awaiting canonisation of a very different kind. A tree measured decades before botanists had formally described its own species grows two centuries downhill of that. Between the Alhambra's forest and the private carmenes of the Albaicin, this list draws on the city's own scattered singular-tree research rather than any single register, because Granada, unusually for a city this documented, has never compiled one.",
-  "meta_description": "Granada's ten most remarkable trees, from a 440-year-old cypress planted by a mystic poet to Generalife sequoias older than their own species' discovery.",
+  "meta_description": "Granada's nine most remarkable trees, from a 440-year-old cypress planted by a mystic poet to Generalife sequoias older than their own species' discovery.",
   "question_answer": "Granada's oldest documented tree is the cypress of San Juan de la Cruz at the Carmen de los Martires, planted by the Carmelite mystic and poet between 1582 and 1588 during his time as prior there, making it roughly 440 years old. It grows inside the free public garden on Antequeruela Alta, a short walk from the Alhambra.",
-  "question_meta": "Granada's oldest tree: a 440-year-old cypress at Carmen de los Martires, planted by poet San Juan de la Cruz. Its story and nine more remarkable trees.",
+  "question_meta": "Granada's oldest tree: a 440-year-old cypress at Carmen de los Martires, planted by poet San Juan de la Cruz. Its story and eight more remarkable trees.",
   "question_context": "Granada has no single municipal tree register the way some cities do, so this list draws on scattered research: a magazine-published survey of twelve singular trees across the city, the Alhambra and Generalife's own heritage documentation, and the University of Granada Botanical Garden's records of its own founding-era specimens. Within that combined pool, the cypress of San Juan de la Cruz at Carmen de los Martires is the one most precisely dated, on the strength of a documented six-year residency (1582-1588) by the Carmelite mystic, rather than a vaguer estimate. Some popular sources round the tree's age up to 500 years; this site uses the more conservative, better-documented figure tied to San Juan de la Cruz's own recorded time at the convent, itself older than the Generalife's own sequoias or the botanical garden's ginkgo, both 19th century plantings by comparison. The garden is free and open to the public, a short walk from the Alhambra.",
   "faq": [
     {
@@ -290,36 +290,6 @@
       },
       "curation_status": "flagged",
       "notes": "Both sources are from the same publisher (wastemagazine.es); treated as closer to single-sourced for the age figure specifically, flagged honestly. A separate, independently documented Sophora japonica/Styphnolobium japonicum exists at the University of Granada Botanical Garden (recorded there since 1856); not the same tree, kept distinct rather than conflated. No usable photo found.",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "gra_009",
-      "name": "The Cedars of Carmen de la Victoria",
-      "species": "Atlas Cedar (Cedrus atlantica)",
-      "age_estimate": "centenarian, undated",
-      "age_min": 100,
-      "age_max": 180,
-      "location": {
-        "address": "Cuesta del Chapiz, 18010 Granada",
-        "latitude": 37.1809,
-        "longitude": -3.589,
-        "neighbourhood": "Albaicin"
-      },
-      "story": "Two Atlas cedars rise well above the great white perimeter wall of Carmen de la Victoria, tall enough to be one of the first things a visitor sees climbing the Cuesta del Chapiz toward the Albaicin, long before the garden gate itself comes into view. The carmen, a traditional Granada house-and-garden type built around a walled orchard, dates its oldest section, the cypress walk, to well before the University of Granada bought the property in 1944 to use as a student residence and guest house, one of the few carmenes in the neighbourhood that remained in some form of institutional rather than private ownership. Alongside the cedars grow equally old cypresses left deliberately unpruned, and a Judas tree (arbol del amor) now so aged it needs a support post to keep standing, the whole ensemble reading as a garden that has been allowed to grow rather than one kept formally trimmed. Entry is free, but the university requires visitors to book an appointment in advance, one of the few remaining Albaicin carmenes still open to the public at all.",
-      "verified_sources": [
-        "https://lugaresdegranada.blogspot.com/2020/04/carmen-de-la-victoria-carmenes-del.html",
-        "https://carmendelavictoria.ugr.es/reservas/jardines-exposiciones/reservas/jardines-exposiciones"
-      ],
-      "access": "Free, by prior appointment (University of Granada residence gardens)",
-      "transport": "15 min walk from Plaza Nueva, uphill into the Albaicin",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Existence and description corroborated by an independent Granada gardens blog; the appointment-booking requirement and free entry confirmed directly on the University of Granada's own reservation page. No individual planting date or precise age found for the cedars specifically; presented as a broad centenarian estimate. No usable photo found: the Commons category's garden photos are general views, none confirmed to show the cedars specifically. Pin tightened 2026-07-28 to the Carmen de la Victoria property itself (two independent Nominatim geocodes converging within 15m of each other, corroborated by a separate address listing), moving it about 150-160m from the earlier estimate; still property-level rather than tree-level, so precision stays approximate.",
       "location_precision": "approximate"
     },
     {

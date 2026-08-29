@@ -22,6 +22,23 @@
    "reason": "Not individually evaluated this pass, per steering to prioritise named giants over the dozens of unnamed street/park palms in the register. A register listing as 'protected' is not by itself a reason to include; most of these are ordinary street or park palms rather than collectible destinations. Several sit within 80m of already-published trees (vlc_001, vlc_006/007/008/009 area) and were deliberately skipped rather than risk near-duplicate entries. Worth a pass only if a future city review specifically wants to grow Valencia past its current count and needs fresh candidates.",
    "species": "Fig (Ficus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "The Ficus of the Corts Valencianes",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "lat": 39.47808,
+   "lng": -0.37439,
+   "former_id": "vlc_012",
+   "status": "blocked",
+   "why": "PULLED FROM THE LIVE PAGE 2026-08-29 on hard rule 10. Inside the working seat of the Valencian regional parliament, visible only on a free guided tour that must be booked in advance, is not offered in August, and which the entry itself called not a walk-up, casual-visit tree. Nothing is wrong with the tree and the research is kept here in full; it can go back the day the access changes. Access as published: RESTRICTED: this is the working seat of the Valencian regional parliament (Corts Valencianes), inside the Palau de Benicarlo / Palau dels Borja. The garden and ficus are visible only on a free guided tour, offered Mondays and Fridays mornings at 10:00/11:00/12:00/13:00, must be booked in advance by phone or the Corts Valencianes website, and NOT offered in August. This is not a walk-up, casual-visit tree.",
+   "age_estimate": "sources disagree: called both 'century-old' and dated to the second half of the 19th century",
+   "girth_cm": 1362,
+   "verified_sources": [
+    "https://www.barcelo.com/guia-turismo/en/spain/valencia/things-to-do/las-corts-valencianes/",
+    "https://arquitectosdevalencia.es/contenido/visita-de-arquitectura-corts-valencianes/",
+    "data/registers/valencia-arboles-monumentales.json (girth 13.6m)"
+   ],
+   "story": "One of the largest fig trees in Valencia grows in a garden you can enter twice a week, by appointment, and not at all in August. It stands in the courtyard of the Palau de Benicarlo, also known as the Palau dels Borja, which is the working seat of the Corts Valencianes, the Valencian regional parliament. The only way to stand under it is the free guided tour of the building, offered on Monday and Friday mornings and booked in advance through the parliament itself. The tour runs about an hour and spends most of it on the debating chamber rather than the garden, which is worth knowing before you go.\n\nThe tree is in the same weight class as the city's famous ones. The regional register measures its trunk at 13.6 metres around, within centimetres of El Titan in the Parterre. Its age is disputed. One account calls it simply a century old, 22 metres tall with a crown spreading more than 12 metres. Another dates its origins to the second half of the nineteenth century, which would make it something between 127 and 176. Both figures are in circulation and neither has a planting record behind it.\n\nSo this is the least casual visit on the list, and the only tree here that requires a phone call. It also spends its life inside a security perimeter, tended by a government that lists it as one of the region's monumental trees."
   }
  ],
  "blocked": [

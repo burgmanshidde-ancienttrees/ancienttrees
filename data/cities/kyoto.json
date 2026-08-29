@@ -3,9 +3,9 @@
   "country": "Japan",
   "status": "needs_curation",
   "intro": "Kyoto's remarkable trees rarely stand alone. They grow inside temple gardens and shrine precincts, shaped for centuries by monks, gardeners and shoguns who treated a living pine as seriously as any building. One was a shogun's bonsai before it was a tree. A camphor was planted in 1160 by imperial order and still grows where his workers put it. These are cultivated monuments, not wild survivors. The exception is Kyoto Gyoen, the walled park around the Imperial Palace, where nine grow inside or beside its walls, close enough to walk in two clusters of about a kilometre each.",
-  "meta_description": "Kyoto's oldest trees stand in temple gardens and shrine precincts. A shogun's 600-year bonsai pine, an emperor's 1160 camphor, and sixteen more.",
+  "meta_description": "Kyoto's oldest trees stand in temple gardens and shrine precincts. A shogun's 600-year bonsai pine, an emperor's 1160 camphor, and fifteen more.",
   "question_answer": "Kyoto's oldest tree with a documented planting date is the great camphor of Imakumano Shrine, planted in 1160 on the order of the retired emperor Go-Shirakawa, who had it brought from the Kumano shrines in Wakayama. It is roughly 866 years old and still grows in the shrine's grounds in Higashiyama Ward, a two minute walk from Sennyuji-michi bus stop.",
-  "question_meta": "Kyoto's oldest documented tree is an 866-year-old camphor planted in 1160 by imperial order. Its story, exact location, and 17 more remarkable trees.",
+  "question_meta": "Kyoto's oldest documented tree is an 866-year-old camphor planted in 1160 by imperial order. Its story, exact location, and 16 more remarkable trees.",
   "question_context": "The camphor at Imakumano Shrine has a planting date most ancient trees never get: 1160, the year the retired emperor Go-Shirakawa founded the shrine as a branch of the Kumano sanctuaries in Wakayama, and reportedly had this tree brought north with the transplant. Camphor trees are native to warmer parts of Japan and Kumano's coast fits that range better than inland Kyoto, which makes the tree itself a small piece of evidence for the transplant story, not just a legend attached after the fact. It has grown since into a trunk 6.58 metres around and a canopy spreading 23.5 metres east to west, a size camphors, among Japan's longest lived broadleaf trees, take centuries to reach. A deeper claim exists in the hills northwest of the city: a cedar in the Katanami river headwaters said to be 1,200 years old, tied to the same forests that supplied timber for the original Heian-kyo palace. That tree's age is harder to confirm and needs prior arrangement with the city to visit, which is why the documented camphor answers this question instead. Getting to Imakumano Shrine: Keihan Bus to Sennyuji-michi from Kyoto Station, then a two minute walk.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Kyoto's remarkable trees free to see?",
-      "a": "Most are. Thirteen of the eighteen stand in free precincts: Kyoto Gyoen, Nashinoki Shrine, Goo Shrine, Nishi Honganji, Imakumano Shrine, Kamigamo Shrine and Maruyama Park. Four stand inside temples that charge general admission, not a tree-specific fee. The cedar in the Katanami headwaters needs prior arrangement with the city and a guide."
+      "a": "Most are. Thirteen of the seventeen stand in free precincts: Kyoto Gyoen, Nashinoki Shrine, Goo Shrine, Nishi Honganji, Imakumano Shrine, Kamigamo Shrine and Maruyama Park. The other four stand inside temples that charge general admission, not a tree-specific fee."
     },
     {
       "q": "Did any of Kyoto's remarkable trees start life as a bonsai?",
@@ -313,37 +313,6 @@
         "label": "late March into early April, when its blossoms recreate the display Hideyoshi once staged here"
       },
       "paid_entry": true
-    },
-    {
-      "id": "kyo_009",
-      "name": "The Heian Cedar of Katanami",
-      "species": "Japanese Cedar (Cryptomeria japonica)",
-      "age_estimate": "about 1,200 years",
-      "age_min": 1150,
-      "age_max": 1250,
-      "location": {
-        "address": "Shimokuroda-cho, Keihoku, Ukyo-ku, Kyoto 601-0257",
-        "latitude": 35.2,
-        "longitude": 135.573,
-        "neighbourhood": "Keihoku, Ukyo-ku"
-      },
-      "story": "Deep in the forested headwaters of the Katanami River, in Kyoto's rural northern hills, stands a cedar said to have been alive when the Heian-kyo palace it is named for was first built. This forest was imperial timber land for centuries, called Goshomigoyo, and historical records describe it supplying construction material for both Heian-kyo and the earlier short-lived capital of Nagaoka-kyo, as well as replacement timber whenever the imperial palace burned, which happened more than once. The Heian Cedar and its neighbours in this grove are a distinctive local type called fuseki-dai sugi, layering cedars, a growth habit suited to heavy snow: a trunk pushed down and pinned to the ground by winter snowfall can root at the point of contact and rise again as a new, genetically identical trunk, letting a single tree effectively propagate itself sideways across a hillside over centuries. The site is not casually accessible. Kyoto City restricts entry to protect the grove, and visiting requires prior arrangement with the city and an accompanying nature guide, a real constraint on the goal of walking up to see it, stated here plainly rather than glossed over.",
-      "verified_sources": [
-        "https://totteoki.kyoto.travel/tag/%E7%89%87%E6%B3%A2%E5%B7%9D%E6%BA%90%E6%B5%81%E3%81%AE%E6%9D%89%E3%81%AE%E5%B7%A8%E6%9C%A8/",
-        "https://www.pref.kyoto.jp/modelforest/tenjyounoki/keihoku6.html",
-        "https://withphotograph.com/?p=13304"
-      ],
-      "access": "Restricted, requires prior arrangement with Kyoto City and an accompanying nature guide",
-      "transport": "JR Bus to Shukuzan, then Keihoku community bus toward Haiya; the visitor center is close to the stop",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Coordinates are a rough estimate for the remote Keihoku forest area; no precise surveyed point was found and the terrain (a valley within a restricted forest) makes street-level geocoding unreliable. Access restriction confirmed by a prefectural forestry source; included with this caveat stated honestly rather than presented as freely walkable like the other nine trees.",
-      "location_precision": "approximate"
     },
     {
       "id": "kyo_010",

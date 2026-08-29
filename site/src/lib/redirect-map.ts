@@ -133,7 +133,22 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // 55 percent, and that number is honest rather than solved: the city needs
 // FREE trees added, not more removals, and the national register covers it.
 // Stories and sources kept in data/leads/leiden.json.
+// gra_009, kyo_009, mlg_010, hag_001, vlc_012 (2026-08-29): five live trees
+// that failed hard rule 10's first access test, found by grepping every
+// access field for the words the rule itself names. "Can they get in without
+// asking anyone's permission?" A reception desk, a doorbell, a code, an
+// appointment, a guard who checks: no. All five needed an appointment or a
+// booked guide; Malaga's stood on working school grounds as well, which the
+// schools exception allows only on real evidence the grounds are genuinely
+// open, and there was none. Nothing is wrong with any of the trees. The
+// research, the story and the sources are kept in data/leads/ in full and go
+// back the day the access changes.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["granada", "cedars-of-carmen-de-la-victoria"],
+  ["kyoto", "heian-cedar-of-katanami"],
+  ["malaga", "avocado-of-ciudad-de-jaen-school"],
+  ["the-hague", "juttepeer-of-heilige-geesthofje"],
+  ["valencia", "ficus-of-the-corts-valencianes"],
   ["leiden", "fern-leaved-beech-of-the-nut-field"],
   ["leiden", "grafted-ash-of-the-hortus"],
   ["amsterdam", "persian-ironwood-of-artis"],
