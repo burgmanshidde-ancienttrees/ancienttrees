@@ -1,235 +1,235 @@
 {
- "city": "Sittard-Geleen",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "Sittard-Geleen's registered trees split across the merged municipality's two halves. Geleen holds three American imports planted as the mining and chemical industry grew the town: a red oak by the station, a sycamore on Janskamperstraat, and an oak the register itself is quietly rooting for, four and a half metres round, standing in the path of a housing development. Sittard holds a poet's garden with a copper beech and an ash, and a Stadspark planted with a pin oak and a tulip tree from another continent entirely.",
- "meta_description": "Seven registered trees in Sittard-Geleen: a four-and-a-half-metre oak the register hopes survives redevelopment, and a poet's garden beech.",
- "question_meta": "Sittard-Geleen's oldest tree is a red oak by Geleen-Oost station, from the 1870s. Its story and six more.",
- "question_answer": "The oldest tree in Sittard-Geleen is the Red Oak of Geleen-Oost Station, which the national tree register bands to a planting around 1870, roughly 160 years old, tied with a copper beech and an ash in Sittard's Jardin d'Isabelle.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the single source throughout, so every entry ships flagged rather than confirmed. Geleen's three trees trace the district's industrial growth: a red oak by the station, a sycamore on Janskamperstraat, and an oak on Rijksweg Noord whose trunk runs four and a half metres round, standing in the path of a planned housing development the register's own surveyor hopes will spare it. Sittard holds two clusters: a copper beech and an ash in the Jardin d'Isabelle, a historic town garden where the register says the poet Charles Beltjens once met his beloved, and a pin oak and a tulip tree planted together in the municipal Stadspark. Where a pin is marked approximate, we know the site and not the exact trunk.",
- "hero_tree_id": "sit_005",
- "oldest_tree_id": "sit_001",
- "faq": [
-  {
-   "q": "What is the oldest tree in Sittard-Geleen?",
-   "a": "Three trees tie for oldest, all banded to around 1870: the Red Oak of Geleen-Oost Station, and the copper beech and ash sharing Sittard's Jardin d'Isabelle."
-  },
-  {
-   "q": "Is the oak on Rijksweg Noord under threat?",
-   "a": "There is a housing development planned on the ground immediately east of it, called Middengebied Noord. The national tree register's own note says it looks likely the oak will be spared, and adds that keeping it a good place to stand matters for whatever gets built."
-  },
-  {
-   "q": "What is the Jardin d'Isabelle?",
-   "a": "A historic garden in Sittard, where the tree register records that the poet Charles Beltjens is said to have met his beloved. A copper beech and a European ash from around 1870 both grow there today."
-  },
-  {
-   "q": "Are these trees free to visit?",
-   "a": "Yes. Every tree on this list stands on public land, a park, a garden or a street, free to see at any time."
-  }
- ],
- "trees": [
-  {
-   "id": "sit_001",
-   "name": "The Red Oak of Geleen-Oost Station",
-   "species": "Northern Red Oak (Quercus rubra)",
-   "age_estimate": "roughly 160 years, from a registered planting date around 1870",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "* Bij spoorstation Geleen-Oost, Stationstraat, Geleen",
-    "latitude": 50.967586,
-    "longitude": 5.843349
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, public planting, always open.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This Northern red oak grows by Geleen-Oost railway station, banded by the national register to a planting around 1870, roughly 160 years old. Northern red oak is an American import, brought to Europe from the eastern United States in the seventeenth century for its faster growth and brilliant autumn colour compared with the native pedunculate oak, and it was planted widely across Dutch railway corridors and parks through the nineteenth century.\n\nA station planting from this era usually marked the railway's own arrival in a place, and Geleen-Oost's station has stood on this line since the industrial growth that turned the wider Sittard-Geleen area from farmland into one of Limburg's coal and chemical centres. The oak has outlasted whatever version of the station building stood here when it was planted.\n\nRed oak's leaves are more deeply cut and pointed than the native oak's rounder lobes, and in October the crown turns a deep brick red rather than the duller brown most European oaks manage, one of the more reliable ways to tell it apart from a distance. The register records only species and decade. If you know more, tell us.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the crown turns deep brick red"
-   }
-  },
-  {
-   "id": "sit_002",
-   "name": "The Copper Beech of Jardin d'Isabelle",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 160 years, from a registered planting date around 1870",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "Jardin d'Isabelle, Kerkpad, Sittard",
-    "latitude": 50.998682,
-    "longitude": 5.871686
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, public park, open daily.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This copper beech grows in the Jardin d'Isabelle, a historic town garden in Sittard, banded by the national register to a planting around 1870, roughly 160 years old. The register attaches an actual story to the site rather than leaving it blank: the poet Charles Beltjens is said to have met his beloved here, in what was already, by the tree's own lifetime, an established city garden rather than a new planting.\n\nCopper beech is a colour variant of the ordinary European beech, its leaves running dark purple-red through summer instead of green, a mutation first found wild and then propagated by grafting and cutting ever since it was noticed. Left to grow in a sheltered garden setting for a century and a half, this one has had about as easy a life as a beech can have: little pruning, no root compaction, room to build the wide, low crown the species produces when nothing crowds it.\n\nA European ash the register also lists stands a few steps away in the same garden, so this beech is one half of a small cluster rather than a lone specimen. If you know more of the garden's own history, tell us."
-  },
-  {
-   "id": "sit_003",
-   "name": "The Ash of Jardin d'Isabelle",
-   "species": "European Ash (Fraxinus excelsior)",
-   "age_estimate": "roughly 160 years, from a registered planting date around 1870",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "* Jardin d''Isabelle, Kerkpad, Sittard\n",
-    "latitude": 50.998639,
-    "longitude": 5.871331
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, public park, open daily.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This European ash shares the Jardin d'Isabelle with the copper beech the register also lists nearby, banded to the same decade, a planting around 1870 and roughly 160 years old. Ash dieback, the fungal disease that has killed a large share of the Netherlands' ash population since around 2010, makes every surviving ash this age worth noting: a tree that has stood for a century and a half in a garden setting and made it through more than a decade of a disease that has taken down ash trees far younger.\n\nAsh is among the last trees in a Dutch garden to come into leaf each spring and among the first to drop in autumn, leaving it bare for more than half the year, and its matt black, hoof-shaped buds are one of the easiest ways to identify it through the winter months when nothing else here carries them.\n\nThe register gives no history of the tree itself beyond species and decade, unlike its beech neighbour a few steps away, which carries an actual anecdote attached to the garden. If you know whether this ash shows any sign of dieback, or more of its history, tell us."
-  },
-  {
-   "id": "sit_004",
-   "name": "The Sycamore of Janskamperstraat",
-   "species": "Sycamore (Acer pseudoplatanus)",
-   "age_estimate": "roughly 120 years, from a registered planting date around 1910",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "Janskamperstraat, Geleen",
-    "latitude": 50.97729,
-    "longitude": 5.84119
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, public planting, always open.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This sycamore maple grows on Janskamperstraat in Geleen, banded by the national register to a planting around 1910, roughly 120 years old. Sycamore is one of the faster-growing large maples planted across the Netherlands through the early twentieth century, valued for tolerating wind, salt and poor soil better than most other broadleaf trees, which made it a common choice for streets and windbreaks in industrial and mining towns like Geleen was becoming through this period.\n\nAt 120 years a sycamore has usually reached close to its mature size, with the broad, five-lobed leaves and winged seed pairs, the helicopters children collect every autumn, that the species produces in quantity. Its bark develops a distinctive scaly, plated pattern with age, flaking in irregular patches that can make an old sycamore look almost as textured as a plane tree from a distance.\n\nThe register records nothing about this specific tree's history beyond species and decade, which is ordinary for a street tree whose interest is simply having outlasted whatever else stood on the street around it. If you know more, tell us."
-  },
-  {
-   "id": "sit_005",
-   "name": "The Oak of Middengebied Noord",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 120 years, from a registered planting date around 1910",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "Geleen, Rijksweg Noord (oosten van Rijksweg t.o. huisnummer 239 en ziekenhuis)",
-    "latitude": 50.981484,
-    "longitude": 5.844879
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, on public municipal land.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This oak on the Rijksweg Noord in Geleen carries the register's most detailed physical description on this list: a trunk running four and a half metres around, grown wide and open since it has stood in unenclosed ground since it was planted, roughly around 1910, making it about 120 years old. The register calls the result a strikingly broad crown, the shape a pedunculate oak builds when nothing crowds it from any side.\n\nWhat makes the register's note worth reading in full is the concern it raises about the tree's future: land immediately east of it is under development, a district plan called Middengebied Noord, and the register's surveyor notes it looks likely the oak will be spared, then adds that keeping this monumental oak a good place to stand matters for whatever comes next. That is an unusually direct piece of advocacy for a database that otherwise sticks to measurements and dates.\n\nIt stands visible from Rijksweg Noord, opposite a hospital, free to see at any hour. If the development around it has moved forward, or if you know how the oak has fared, tell us."
-  },
-  {
-   "id": "sit_006",
-   "name": "The Pin Oak of Sittard's Stadspark",
-   "species": "Pin Oak (Quercus palustris)",
-   "age_estimate": "roughly 120 years, from a registered planting date around 1910",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "Stadspark, ter hoogte van Vijverweg 3, Sittard",
-    "latitude": 50.992545,
-    "longitude": 5.86509
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, public park, open daily.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This pin oak grows in Sittard's Stadspark, banded by the national register to a planting around 1910, roughly 120 years old. Pin oak is another North American import, native to wet bottomland from the Great Lakes down through the Mississippi valley, and it was planted across Dutch parks through the early twentieth century for a growth habit unlike almost any native oak: a straight central trunk holding a distinctly layered crown, upper branches reaching up, middle branches running level, and lower branches sweeping down toward the ground, sometimes low enough to brush a visitor's head.\n\nIts leaves are the most deeply cut of any oak commonly planted in Europe, with narrow, bristle-tipped lobes that give the crown a fine, almost feathery texture from a distance, and in autumn they turn a rich bronze-red that holds on the branches, often through much of the winter, longer than most other oaks manage.\n\nA tulip tree the register also lists grows a short walk away in the same park, so this pin oak is one stop on what could be a short walk through Stadspark's older plantings. The register records nothing further about this tree specifically. If you know more, tell us.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the finely cut leaves turn bronze-red and hold through winter"
-   }
-  },
-  {
-   "id": "sit_008",
-   "name": "The Tulip Tree of Sittard's Stadspark",
-   "species": "Tulip Tree (Liriodendron tulipifera)",
-   "age_estimate": "roughly 110 years, from a registered planting date around 1920",
-   "age_min": 106,
-   "age_max": 116,
-   "location": {
-    "address": "Stadspark, ter hoogte van Vijverweg 7, Sittard",
-    "latitude": 50.992007,
-    "longitude": 5.864053
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, public park, open daily.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This tulip tree grows in Sittard's Stadspark, a short walk from the pin oak the register also lists nearby, banded to a planting around 1920, roughly 110 years old. Liriodendron tulipifera comes from the eastern United States, where it grows as one of the tallest broadleaf trees in North America, and the name undersells what it actually produces: cup-shaped flowers, greenish yellow with an orange band inside, closer to a magnolia in shape than a tulip, opening from late spring high in the crown where they are easy to miss from directly underneath.\n\nThe leaves are the more reliable identifying feature, four-lobed with a flat or slightly notched tip as if squared off with scissors, unlike any native European tree, and in autumn they turn a clean, even butter yellow across the whole crown rather than the patchy colour many species manage.\n\nA municipal park stocked with North American specimens like this one and the pin oak nearby reflects an early twentieth century fashion for filling Dutch parks with trees that had no local precedent, chosen for how unlike anything native they looked. The register records only species and decade for this one. If you know more, tell us.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the whole crown turns a clean, even butter yellow"
-   }
-  }
- ]
+  "city": "Sittard-Geleen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Sittard-Geleen's registered trees split across the merged municipality's two halves. Geleen holds three American imports planted as the mining and chemical industry grew the town: a red oak by the station, a sycamore on Janskamperstraat, and an oak the register itself is quietly rooting for, four and a half metres round, standing in the path of a housing development. Sittard holds a poet's garden with a copper beech and an ash, and a Stadspark planted with a pin oak and a tulip tree from another continent entirely.",
+  "meta_description": "Seven registered trees in Sittard-Geleen: a four-and-a-half-metre oak the register hopes survives redevelopment, and a poet's garden beech.",
+  "question_meta": "Sittard-Geleen's oldest tree is a red oak by Geleen-Oost station, from the 1870s. Its story and six more.",
+  "question_answer": "The oldest tree in Sittard-Geleen is the Red Oak of Geleen-Oost Station, which the national tree register bands to a planting around 1870, roughly 160 years old, tied with a copper beech and an ash in Sittard's Jardin d'Isabelle.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the single source throughout, so every entry ships flagged rather than confirmed. Geleen's three trees trace the district's industrial growth: a red oak by the station, a sycamore on Janskamperstraat, and an oak on Rijksweg Noord whose trunk runs four and a half metres round, standing in the path of a planned housing development the register's own surveyor hopes will spare it. Sittard holds two clusters: a copper beech and an ash in the Jardin d'Isabelle, a historic town garden where the register says the poet Charles Beltjens once met his beloved, and a pin oak and a tulip tree planted together in the municipal Stadspark. Where a pin is marked approximate, we know the site and not the exact trunk.",
+  "hero_tree_id": "sit_005",
+  "oldest_tree_id": "sit_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Sittard-Geleen?",
+      "a": "Three trees tie for oldest, all banded to around 1870: the Red Oak of Geleen-Oost Station, and the copper beech and ash sharing Sittard's Jardin d'Isabelle."
+    },
+    {
+      "q": "Is the oak on Rijksweg Noord under threat?",
+      "a": "There is a housing development planned on the ground immediately east of it, called Middengebied Noord. The national tree register's own note says it looks likely the oak will be spared, and adds that keeping it a good place to stand matters for whatever gets built."
+    },
+    {
+      "q": "What is the Jardin d'Isabelle?",
+      "a": "A historic garden in Sittard, where the tree register records that the poet Charles Beltjens is said to have met his beloved. A copper beech and a European ash from around 1870 both grow there today."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes. Every tree on this list stands on public land, a park, a garden or a street, free to see at any time."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sit_001",
+      "name": "The Red Oak of Geleen-Oost Station",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "roughly 160 years, from a registered planting date around 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "* Bij spoorstation Geleen-Oost, Stationstraat, Geleen",
+        "latitude": 50.967586,
+        "longitude": 5.843349
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public planting, always open.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This Northern red oak grows by Geleen-Oost railway station, banded by the national register to a planting around 1870, roughly 160 years old. Northern red oak is an American import, brought to Europe from the eastern United States in the seventeenth century for its faster growth and brilliant autumn colour compared with the native pedunculate oak, and it was planted widely across Dutch railway corridors and parks through the nineteenth century.\n\nA station planting from this era usually marked the railway's own arrival in a place, and Geleen-Oost's station has stood on this line since the industrial growth that turned the wider Sittard-Geleen area from farmland into one of Limburg's coal and chemical centres. The oak has outlasted whatever version of the station building stood here when it was planted.\n\nRed oak's leaves are more deeply cut and pointed than the native oak's rounder lobes, and in October the crown turns a deep brick red rather than the duller brown most European oaks manage, one of the more reliable ways to tell it apart from a distance. The register records only species and decade. If you know more, tell us.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the crown turns deep brick red"
+      }
+    },
+    {
+      "id": "sit_002",
+      "name": "The Copper Beech of Jardin d'Isabelle",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 160 years, from a registered planting date around 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Jardin d'Isabelle, Kerkpad, Sittard",
+        "latitude": 50.998682,
+        "longitude": 5.871686
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This copper beech grows in the Jardin d'Isabelle, a historic town garden in Sittard, banded by the national register to a planting around 1870, roughly 160 years old. The register attaches an actual story to the site rather than leaving it blank: the poet Charles Beltjens is said to have met his beloved here, in what was already, by the tree's own lifetime, an established city garden rather than a new planting.\n\nCopper beech is a colour variant of the ordinary European beech, its leaves running dark purple-red through summer instead of green, a mutation first found wild and then propagated by grafting and cutting ever since it was noticed. Left to grow in a sheltered garden setting for a century and a half, this one has had about as easy a life as a beech can have: little pruning, no root compaction, room to build the wide, low crown the species produces when nothing crowds it.\n\nA European ash the register also lists stands a few steps away in the same garden, so this beech is one half of a small cluster rather than a lone specimen. If you know more of the garden's own history, tell us."
+    },
+    {
+      "id": "sit_003",
+      "name": "The Ash of Jardin d'Isabelle",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "roughly 160 years, from a registered planting date around 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "* Jardin d''Isabelle, Kerkpad, Sittard\n",
+        "latitude": 50.998639,
+        "longitude": 5.871331
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This European ash shares the Jardin d'Isabelle with the copper beech the register also lists nearby, banded to the same decade, a planting around 1870 and roughly 160 years old. Ash dieback, the fungal disease that has killed a large share of the Netherlands' ash population since around 2010, makes every surviving ash this age worth noting: a tree that has stood for a century and a half in a garden setting and made it through more than a decade of a disease that has taken down ash trees far younger.\n\nAsh is among the last trees in a Dutch garden to come into leaf each spring and among the first to drop in autumn, leaving it bare for more than half the year, and its matt black, hoof-shaped buds are one of the easiest ways to identify it through the winter months when nothing else here carries them.\n\nThe register gives no history of the tree itself beyond species and decade, unlike its beech neighbour a few steps away, which carries an actual anecdote attached to the garden. If you know whether this ash shows any sign of dieback, or more of its history, tell us."
+    },
+    {
+      "id": "sit_004",
+      "name": "The Sycamore of Janskamperstraat",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Janskamperstraat, Geleen",
+        "latitude": 50.97729,
+        "longitude": 5.84119
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public planting, always open.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This sycamore maple grows on Janskamperstraat in Geleen, banded by the national register to a planting around 1910, roughly 120 years old. Sycamore is one of the faster-growing large maples planted across the Netherlands through the early twentieth century, valued for tolerating wind, salt and poor soil better than most other broadleaf trees, which made it a common choice for streets and windbreaks in industrial and mining towns like Geleen was becoming through this period.\n\nAt 120 years a sycamore has usually reached close to its mature size, with the broad, five-lobed leaves and winged seed pairs, the helicopters children collect every autumn, that the species produces in quantity. Its bark develops a distinctive scaly, plated pattern with age, flaking in irregular patches that can make an old sycamore look almost as textured as a plane tree from a distance.\n\nThe register records nothing about this specific tree's history beyond species and decade, which is ordinary for a street tree whose interest is simply having outlasted whatever else stood on the street around it. If you know more, tell us."
+    },
+    {
+      "id": "sit_005",
+      "name": "The Oak of Middengebied Noord",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Geleen, Rijksweg Noord (oosten van Rijksweg t.o. huisnummer 239 en ziekenhuis)",
+        "latitude": 50.981484,
+        "longitude": 5.844879
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, on public municipal land.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This oak on the Rijksweg Noord in Geleen carries the register's most detailed physical description on this list: a trunk running four and a half metres around, grown wide and open since it has stood in unenclosed ground since it was planted, roughly around 1910, making it about 120 years old. The register calls the result a strikingly broad crown, the shape a pedunculate oak builds when nothing crowds it from any side.\n\nWhat makes the register's note worth reading in full is the concern it raises about the tree's future: land immediately east of it is under development, a district plan called Middengebied Noord, and the register's surveyor notes it looks likely the oak will be spared, then adds that keeping this monumental oak a good place to stand matters for whatever comes next. That is an unusually direct piece of advocacy for a database that otherwise sticks to measurements and dates.\n\nIt stands visible from Rijksweg Noord, opposite a hospital, free to see at any hour. If the development around it has moved forward, or if you know how the oak has fared, tell us."
+    },
+    {
+      "id": "sit_006",
+      "name": "The Pin Oak of Sittard's Stadspark",
+      "species": "Pin Oak (Quercus palustris)",
+      "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Stadspark, ter hoogte van Vijverweg 3, Sittard",
+        "latitude": 50.992545,
+        "longitude": 5.86509
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This pin oak grows in Sittard's Stadspark, banded by the national register to a planting around 1910, roughly 120 years old. Pin oak is another North American import, native to wet bottomland from the Great Lakes down through the Mississippi valley, and it was planted across Dutch parks through the early twentieth century for a growth habit unlike almost any native oak: a straight central trunk holding a distinctly layered crown, upper branches reaching up, middle branches running level, and lower branches sweeping down toward the ground, sometimes low enough to brush a visitor's head.\n\nIts leaves are the most deeply cut of any oak commonly planted in Europe, with narrow, bristle-tipped lobes that give the crown a fine, almost feathery texture from a distance, and in autumn they turn a rich bronze-red that holds on the branches, often through much of the winter, longer than most other oaks manage.\n\nA tulip tree the register also lists grows a short walk away in the same park, so this pin oak is one stop on what could be a short walk through Stadspark's older plantings. The register records nothing further about this tree specifically. If you know more, tell us.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the finely cut leaves turn bronze-red and hold through winter"
+      }
+    },
+    {
+      "id": "sit_008",
+      "name": "The Tulip Tree of Sittard's Stadspark",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly 110 years, from a registered planting date around 1920",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Stadspark, ter hoogte van Vijverweg 7, Sittard",
+        "latitude": 50.992007,
+        "longitude": 5.864053
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This tulip tree grows in Sittard's Stadspark, a short walk from the pin oak the register also lists nearby, banded to a planting around 1920, roughly 110 years old. Liriodendron tulipifera comes from the eastern United States, where it grows as one of the tallest broadleaf trees in North America, and the name undersells what it actually produces: cup-shaped flowers, greenish yellow with an orange band inside, closer to a magnolia in shape than a tulip, opening from late spring high in the crown where they are easy to miss from directly underneath.\n\nThe leaves are the more reliable identifying feature, four-lobed with a flat or slightly notched tip as if squared off with scissors, unlike any native European tree, and in autumn they turn a clean, even butter yellow across the whole crown rather than the patchy colour many species manage.\n\nA municipal park stocked with North American specimens like this one and the pin oak nearby reflects an early twentieth century fashion for filling Dutch parks with trees that had no local precedent, chosen for how unlike anything native they looked. The register records only species and decade for this one. If you know more, tell us.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the whole crown turns a clean, even butter yellow"
+      }
+    }
+  ]
 }

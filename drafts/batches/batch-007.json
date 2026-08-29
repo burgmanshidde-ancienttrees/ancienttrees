@@ -1,7 +1,7 @@
 {
  "batch": "batch-007",
  "note": "Batch 006's letter, addresses found by scripts/outreach_scout.py rather than by hand. Two directories did most of it: the Bomenstichting's list of local Dutch tree groups and ondalberi.it's regional lists of Italian tree committees. Spain returns after its August closure.",
- "status": "pending_approval",
+ "status": "approved_by_hidde",
  "mails": [
   {
    "to": "bomenridders-leeuwarden@hotmail.com",
@@ -170,5 +170,6 @@
    "body": "Hola,\n\nEm dic Hidde i estic construint ancienttrees.app, una plataforma per a arbres notables. El meu objectiu és engrescar la gent amb els arbres vells i animar-la a anar a veure'ls a fora.\n\nDe Barcelona en publiquem 55, i tenia molta curiositat per saber si hi podríeu fer un cop d'ull per veure si són correctes:\nhttps://ancienttrees.app/barcelona\n\nA més em preguntava: quin arbre trobeu personalment a faltar al web?\n\nQualsevol ajuda seria molt apreciada!\n\nI si us sembla que el web val la pena, una menció a la vostra pàgina ajudaria enormement a donar a conèixer aquests arbres.\n\nM'interessa molt la vostra opinió sobre el projecte.\n\nCordialment,\nHidde",
    "resend_reason": "Sent during the Spanish August closure alongside two associations that answered with out-of-office replies."
   }
- ]
+ ],
+ "approved": "Hidde, in session 2026-08-30: 'prima verstuur maar'."
 }

@@ -1,247 +1,247 @@
 {
- "city": "Heerlen",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "Heerlen's registered trees trace the city's own turn from mining town back to green ground: an oak planted with a 1920s miners' colony, a ginkgo on the drive to a castle mining money once rented, a tulip tree in a park built for the same colony's ponds. The oldest, a three to four hundred year old lime, and the local landmark everyone calls an oak but is actually a plane, stand together on the wooded edge of the Terworm estate, where two more oaks grow in what is now protected woodland.",
- "meta_description": "Eight registered trees in Heerlen: a lime banded to the 1600s, the so-called Oak of Terworm that is actually a plane, and a castle ginkgo.",
- "question_meta": "Heerlen's oldest tree is a lime on Eikendermolenweg, banded to the 1600s and three to four centuries old. Its story and seven more.",
- "question_answer": "The oldest tree in Heerlen is the Lime of Eikendermolenweg, which the national tree register bands to the 1600s, putting it at roughly 330 to 430 years old. It stands on the far side of the road from Kasteel Eyckholt's grounds, across from the plane tree locals call the Oak of Terworm.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the single source throughout, so every entry ships flagged rather than confirmed. Three trees, two oaks and the lime, stand on or near the wooded grounds around Kasteel Eyckholt and Terworm, private country estates whose land is now managed as public woodland; a fourth tree, the plane known locally as the Oak of Terworm, grows at a nearby crossroads and carries the clearest history of any entry here, probably planted in 1749 to mark an heir's birth. The rest stand in the city itself: a street tree named for the 1920s mining colony neighbourhood it grew up in, a park tree from the same era, a ginkgo on the drive to Terworm castle, and a catalpa outside the town hall. Where a pin is marked approximate, we know the site and not the exact trunk.",
- "hero_tree_id": "hee_006",
- "oldest_tree_id": "hee_004",
- "faq": [
-  {
-   "q": "What is the oldest tree in Heerlen?",
-   "a": "The Lime of Eikendermolenweg, banded by the national tree register to the 1600s, roughly 330 to 430 years old. It has no local nickname and no recorded history beyond the register entry itself, unlike the plane tree across the road."
-  },
-  {
-   "q": "Why do people call a plane tree the Oak of Terworm?",
-   "a": "The nickname predates any check of the species. The tree was probably planted in 1749 to mark the birth of an heir to the Terworm estate, and locals have called it an oak ever since, even though it is a plane. An information board at the tree repeats the story."
-  },
-  {
-   "q": "Can I visit the trees near Kasteel Terworm?",
-   "a": "Yes. The estate's woodland belongs to the conservation organisation Natuurmonumenten and stays open to walkers, and the castle itself is now a hotel with its drive, where the registered ginkgo stands, open to view from the grounds."
-  },
-  {
-   "q": "Is Heerlen's Eikenderveld neighbourhood named after its oak?",
-   "a": "The name means oak field, and the registered oak on the little square where Markiesstraat meets Schoutstraat is registered to the 1920s, when the neighbourhood itself was built, so the district was very likely named for trees like this one."
-  }
- ],
- "trees": [
-  {
-   "id": "hee_001",
-   "name": "The Oak of Imstenrade",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 180 to 230 years, from the register's planting band of 1800-1850",
-   "age_min": 176,
-   "age_max": 226,
-   "location": {
-    "address": "Heerlen, Imstenrade 6, ten noorden van AZC",
-    "latitude": 50.857924,
-    "longitude": 5.984537
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, public woodland, open daily.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This oak grows in woodland that a nature conservation body now manages, on the north edge of ground once part of Imstenrade, one of the country estates that ring Heerlen's old core. The national tree register bands its planting to 1800-1850, which makes it somewhere between 180 and 230 years old, wide enough that neither end of the range can be ruled out.\n\nWhat the register does not give is any history of the tree itself, only the place: managed woodland, publicly walkable, no plaque, no story attached. That is common for oaks that grew up inside a private estate's boundary rather than beside a house or a church, where someone was more likely to notice and remember a planting.\n\nA pedunculate oak of this age has usually stopped growing upward and started growing outward, its lower limbs thickening into the wide, layered crown that reads as unmistakably old even to someone who could not guess a year. Two centuries in one spot also means it has outlasted whatever the estate itself was doing during that time, from working farmland to protected woodland today.\n\nThe register is the only source that has looked at this tree. If you know more about it, tell us."
-  },
-  {
-   "id": "hee_002",
-   "name": "The Oak of Nieuw Eyckholt",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 170 years, from a registered planting date around 1860",
-   "age_min": 166,
-   "age_max": 176,
-   "location": {
-    "address": "Heerlen, Nieuw Eyckholt, aan bosrand ten noorden van de weg",
-    "latitude": 50.88562,
-    "longitude": 5.96152
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, public planting, always open.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "A second oak from the same wider stretch of woodland as its neighbour at Imstenrade, this one growing at the edge of the trees on the north side of Nieuw Eyckholt. The register bands its planting to 1850-1860, putting it at roughly 170 years, a generation or two younger than the Imstenrade oak and considerably more precisely dated.\n\nEyckholt takes its name from the ruined medieval castle whose stronghold still stands nearby, first built around 1300 on the wooded slope above the Geleen valley. By the 1850s the ground around it had long since settled into ordinary estate woodland, and an oak planted at a forest edge in that decade would have grown up with room on one side and competition from other trees on the other, a lopsided crown often being the visible result.\n\nNothing beyond the register describes this tree specifically: no plaque, no local story, just a species, a decade and a place. That is not unusual for a woodland-edge planting rather than one that stood beside a house or a road where people were more likely to notice it and remember why it went in.\n\nIf you know more about this oak, tell us."
-  },
-  {
-   "id": "hee_003",
-   "name": "The Oak of the Neighbourhood",
-   "species": "Oak (Quercus, species not established)",
-   "age_estimate": "roughly 100 years, from a registered planting date around 1930",
-   "age_min": 96,
-   "age_max": 106,
-   "location": {
-    "address": "Pleintje Markiesstraat; ook de Schoutstraat, Jonkerstraat en Stadhouderstraat komen hierop uit.\nEikenderveld ligt tussen het spoor en het groengebied van landgoed/kasteel Terworm.",
-    "latitude": 50.890364,
-    "longitude": 5.967684
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, on the public square.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "The register's own name for this tree translates as simply \"the oak of the neighbourhood\", and its own note is almost as plain: almost certainly planted when the neighbourhood itself was built. Eikenderveld, the district it stands in, was laid out in the 1920s between the railway and the green grounds of Terworm, and this oak on the little square where Markiesstraat meets Schoutstraat, Jonkerstraat and Stadhouderstraat is registered to that decade, roughly a century old.\n\nA street tree planted with a new neighbourhood is a different kind of veteran from an estate oak grown up in woodland: it has spent its whole life with pavement and front doors around it rather than other trees, which usually means more light, faster early growth and a more rounded, open crown. A hundred years is young by oak standards, well short of when an oak this size typically starts slowing down, so this is a tree with most of its life still ahead of it.\n\nEikenderveld's own name, meaning oak field, suggests the district was named for trees like this one rather than the other way round. The register is the only source describing it specifically. If you know more, tell us."
-  },
-  {
-   "id": "hee_004",
-   "name": "The Lime of Eikendermolenweg",
-   "species": "Lime (Tilia sp.)",
-   "age_estimate": "roughly 330 to 430 years, from the register's planting band of 1600-1700",
-   "age_min": 326,
-   "age_max": 426,
-   "location": {
-    "address": "Heerlen, Eikendermolenweg 4, aan andere kant van de weg",
-    "latitude": 50.886916,
-    "longitude": 5.957511
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, roadside tree on public land, always visible.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "The register bands this lime to the 1600s, which would make it three to four centuries old, decades older than the plane tree across the road that already carries Heerlen's own claim to the city's oldest tree. Unlike that plane, this lime has no local nickname, no information board and no history recorded anywhere the register could point to: only a species, a rough century and an address on the other side of Eikendermolenweg from Kasteel Eyckholt's grounds.\n\nA lime left standing for three or four hundred years usually shows it in the trunk rather than the crown: a common lime develops burrs and epicormic shoots low down as it ages, sometimes thickening into a skirt of new growth around an old, split or hollowing base, while the crown above can go on looking healthy for centuries past what the trunk alone would suggest. Whether this one shows any of that has not been recorded.\n\nThe register survey this age comes from is recent, and nothing in it suggests the tree is gone, but a lime this old with no other source describing it is exactly the kind of gap a reader can close in one visit. If you have stood at this spot, tell us what you saw."
-  },
-  {
-   "id": "hee_006",
-   "name": "The Plane of Terworm",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "roughly 230 to 280 years, from the register's planting band of 1750-1800",
-   "age_min": 226,
-   "age_max": 276,
-   "location": {
-    "address": "Heerlen, Terworm/Eikendermolenweg",
-    "latitude": 50.886257,
-    "longitude": 5.956162
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, roadside tree on public land, always visible.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "Everyone in Heerlen calls this tree the Eik van Terworm, the Oak of Terworm, and it is not an oak. It is a plane, and the name has stuck regardless, attached to a tree the register bands to 1750-1800 and local sources call the oldest in the city at around 280 years.\n\nThe register's own note gives a specific occasion: probably planted in 1749, to mark the birth of the heir to Terworm, the estate whose grounds still surround the castle a short walk away. An information board at the tree repeats the story. Planting a tree for a birth was ordinary practice on estates like this one, meant to grow alongside the child it marked and to outlast them both, which this one has done by nearly two hundred years already.\n\nIt stands alone at a junction near the Eikendermolenweg, the kind of solitary position that let it build the wide, low crown a plane develops when nothing crowds it. Locals treat it as a boundary marker between what were once separate estates, though nobody has confirmed that was the original intent rather than a story that grew up around an old tree at a crossroads, the way stories do.\n\nGo looking for an oak and you will walk straight past it."
-  },
-  {
-   "id": "hee_007",
-   "name": "The Tulip Tree of Meezenbroek",
-   "species": "Tulip Tree (Liriodendron tulipifera)",
-   "age_estimate": "roughly 90 years, from a registered planting date around 1940",
-   "age_min": 86,
-   "age_max": 96,
-   "location": {
-    "address": "In het park langs de Baron Mackaystraat, Heerlen, iets ten noordwesten van de kruising met de Van Hogendorpstraat.",
-    "latitude": 50.896159,
-    "longitude": 5.984507
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, public park, open daily.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This tulip tree grows in the park built around the Meezenbroek ponds before the Second World War, in a district that started life in the 1920s as De Voorzorg, a colony of housing built for the miners working Heerlen's coal seams. The register bands its planting to 1930-1940, putting it at roughly 90 years, a near contemporary of the park itself.\n\nLiriodendron tulipifera is North American, not European, and its name undersells the spectacle: the flowers it produces from early summer are cup-shaped, greenish yellow with an orange band inside, more like a stylised magnolia than a tulip, and easy to miss from below because they open high in the crown facing upward. The leaves are the more reliable giveaway, four-lobed and squared off at the tip as if cut with scissors, turning a clean butter yellow in autumn.\n\nA former mining colony with a purpose-built park is not the setting most people imagine for an American forest tree, and that mismatch is most of what makes it worth a detour. The register is the only source that has described it. If you know more about when or why it was planted, tell us."
-  },
-  {
-   "id": "hee_008",
-   "name": "The Ginkgo of Terworm",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "roughly 110 years, from a registered planting date around 1920",
-   "age_min": 106,
-   "age_max": 116,
-   "location": {
-    "address": "Terworm 5D, 6411 RV Heerlen",
-    "latitude": 50.889146,
-    "longitude": 5.949978
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, roadside tree on public land, always visible.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This ginkgo grows along the drive to Kasteel Terworm, in good health as of a 2026 survey, standing where anyone walking up to the castle's front door can see it. The register bands its planting to 1910-1920, roughly a century, and offers two guesses rather than one: either it went in during an 1890s renovation under Baron de Loë, or during the few years around 1902 to 1907 when the estate was let to a mining baron named Wenckenbach, whose industry was reshaping the whole Heerlen region at the time.\n\nTerworm's own history runs back to around 1400 and a family named Van der Worm, through at least six rebuildings to the house that stands today, a period as an open-air swimming pool in its lower pond during the 1930s, and a near miss with becoming a theme park that Heerlen's own residents blocked. It is a hotel now, and the wooded estate around it belongs to Natuurmonumenten, a conservation organisation, which is why the grounds stay open to walkers rather than becoming private again.\n\nA ginkgo this size beside an old yew planting makes the drive up to the castle one of the more photogenic approaches in the register. If you know which decade it actually went in, tell us."
-  },
-  {
-   "id": "hee_009",
-   "name": "The Catalpa at the Town Hall",
-   "species": "Southern Catalpa (Catalpa bignonioides)",
-   "age_estimate": "roughly 110 years, from a registered planting date around 1920",
-   "age_min": 106,
-   "age_max": 116,
-   "location": {
-    "address": "Heerlen, Geleenstraat 25, bij gemeentehuis",
-    "latitude": 50.886912,
-    "longitude": 5.977406
-   },
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free, on the public square.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "story": "This catalpa stands outside Heerlen's town hall, built from the local Kunrade limestone in a style locals still call Roman, and the register bands its planting to 1910-1920, putting it at around 110 years, roughly as old as the building's neighbourhood setting. A 2021 note in the register records that the tree has since been given a bench built around its base and steel props holding up a swing hung from one of its limbs, a small piece of civic care that most trees on this list have not had recorded for them.\n\nSouthern catalpa is an American tree, grown for its broad heart-shaped leaves and, in midsummer, loose clusters of white, orchid-like flowers spotted purple and yellow inside each throat. Long bean-like seed pods follow in autumn and can hang on through winter, which is where the tree's other common name, Indian bean, comes from, misleadingly, since it has no connection to India at all.\n\nA public bench built around a tree is usually a sign a town has decided that tree matters to keep. The register is the only source describing this one specifically. If you know its planting story, tell us.",
-   "best_time": {
-    "months": [
-     7
-    ],
-    "kind": "flowers",
-    "label": "July, when the orchid-like flowers open in loose clusters across the crown"
-   }
-  }
- ]
+  "city": "Heerlen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Heerlen's registered trees trace the city's own turn from mining town back to green ground: an oak planted with a 1920s miners' colony, a ginkgo on the drive to a castle mining money once rented, a tulip tree in a park built for the same colony's ponds. The oldest, a three to four hundred year old lime, and the local landmark everyone calls an oak but is actually a plane, stand together on the wooded edge of the Terworm estate, where two more oaks grow in what is now protected woodland.",
+  "meta_description": "Eight registered trees in Heerlen: a lime banded to the 1600s, the so-called Oak of Terworm that is actually a plane, and a castle ginkgo.",
+  "question_meta": "Heerlen's oldest tree is a lime on Eikendermolenweg, banded to the 1600s and three to four centuries old. Its story and seven more.",
+  "question_answer": "The oldest tree in Heerlen is the Lime of Eikendermolenweg, which the national tree register bands to the 1600s, putting it at roughly 330 to 430 years old. It stands on the far side of the road from Kasteel Eyckholt's grounds, across from the plane tree locals call the Oak of Terworm.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the single source throughout, so every entry ships flagged rather than confirmed. Three trees, two oaks and the lime, stand on or near the wooded grounds around Kasteel Eyckholt and Terworm, private country estates whose land is now managed as public woodland; a fourth tree, the plane known locally as the Oak of Terworm, grows at a nearby crossroads and carries the clearest history of any entry here, probably planted in 1749 to mark an heir's birth. The rest stand in the city itself: a street tree named for the 1920s mining colony neighbourhood it grew up in, a park tree from the same era, a ginkgo on the drive to Terworm castle, and a catalpa outside the town hall. Where a pin is marked approximate, we know the site and not the exact trunk.",
+  "hero_tree_id": "hee_006",
+  "oldest_tree_id": "hee_004",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Heerlen?",
+      "a": "The Lime of Eikendermolenweg, banded by the national tree register to the 1600s, roughly 330 to 430 years old. It has no local nickname and no recorded history beyond the register entry itself, unlike the plane tree across the road."
+    },
+    {
+      "q": "Why do people call a plane tree the Oak of Terworm?",
+      "a": "The nickname predates any check of the species. The tree was probably planted in 1749 to mark the birth of an heir to the Terworm estate, and locals have called it an oak ever since, even though it is a plane. An information board at the tree repeats the story."
+    },
+    {
+      "q": "Can I visit the trees near Kasteel Terworm?",
+      "a": "Yes. The estate's woodland belongs to the conservation organisation Natuurmonumenten and stays open to walkers, and the castle itself is now a hotel with its drive, where the registered ginkgo stands, open to view from the grounds."
+    },
+    {
+      "q": "Is Heerlen's Eikenderveld neighbourhood named after its oak?",
+      "a": "The name means oak field, and the registered oak on the little square where Markiesstraat meets Schoutstraat is registered to the 1920s, when the neighbourhood itself was built, so the district was very likely named for trees like this one."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hee_001",
+      "name": "The Oak of Imstenrade",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 180 to 230 years, from the register's planting band of 1800-1850",
+      "age_min": 176,
+      "age_max": 226,
+      "location": {
+        "address": "Heerlen, Imstenrade 6, ten noorden van AZC",
+        "latitude": 50.857924,
+        "longitude": 5.984537
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public woodland, open daily.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This oak grows in woodland that a nature conservation body now manages, on the north edge of ground once part of Imstenrade, one of the country estates that ring Heerlen's old core. The national tree register bands its planting to 1800-1850, which makes it somewhere between 180 and 230 years old, wide enough that neither end of the range can be ruled out.\n\nWhat the register does not give is any history of the tree itself, only the place: managed woodland, publicly walkable, no plaque, no story attached. That is common for oaks that grew up inside a private estate's boundary rather than beside a house or a church, where someone was more likely to notice and remember a planting.\n\nA pedunculate oak of this age has usually stopped growing upward and started growing outward, its lower limbs thickening into the wide, layered crown that reads as unmistakably old even to someone who could not guess a year. Two centuries in one spot also means it has outlasted whatever the estate itself was doing during that time, from working farmland to protected woodland today.\n\nThe register is the only source that has looked at this tree. If you know more about it, tell us."
+    },
+    {
+      "id": "hee_002",
+      "name": "The Oak of Nieuw Eyckholt",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 170 years, from a registered planting date around 1860",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Heerlen, Nieuw Eyckholt, aan bosrand ten noorden van de weg",
+        "latitude": 50.88562,
+        "longitude": 5.96152
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public planting, always open.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "A second oak from the same wider stretch of woodland as its neighbour at Imstenrade, this one growing at the edge of the trees on the north side of Nieuw Eyckholt. The register bands its planting to 1850-1860, putting it at roughly 170 years, a generation or two younger than the Imstenrade oak and considerably more precisely dated.\n\nEyckholt takes its name from the ruined medieval castle whose stronghold still stands nearby, first built around 1300 on the wooded slope above the Geleen valley. By the 1850s the ground around it had long since settled into ordinary estate woodland, and an oak planted at a forest edge in that decade would have grown up with room on one side and competition from other trees on the other, a lopsided crown often being the visible result.\n\nNothing beyond the register describes this tree specifically: no plaque, no local story, just a species, a decade and a place. That is not unusual for a woodland-edge planting rather than one that stood beside a house or a road where people were more likely to notice it and remember why it went in.\n\nIf you know more about this oak, tell us."
+    },
+    {
+      "id": "hee_003",
+      "name": "The Oak of the Neighbourhood",
+      "species": "Oak (Quercus, species not established)",
+      "age_estimate": "roughly 100 years, from a registered planting date around 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Pleintje Markiesstraat; ook de Schoutstraat, Jonkerstraat en Stadhouderstraat komen hierop uit.\nEikenderveld ligt tussen het spoor en het groengebied van landgoed/kasteel Terworm.",
+        "latitude": 50.890364,
+        "longitude": 5.967684
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, on the public square.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "The register's own name for this tree translates as simply \"the oak of the neighbourhood\", and its own note is almost as plain: almost certainly planted when the neighbourhood itself was built. Eikenderveld, the district it stands in, was laid out in the 1920s between the railway and the green grounds of Terworm, and this oak on the little square where Markiesstraat meets Schoutstraat, Jonkerstraat and Stadhouderstraat is registered to that decade, roughly a century old.\n\nA street tree planted with a new neighbourhood is a different kind of veteran from an estate oak grown up in woodland: it has spent its whole life with pavement and front doors around it rather than other trees, which usually means more light, faster early growth and a more rounded, open crown. A hundred years is young by oak standards, well short of when an oak this size typically starts slowing down, so this is a tree with most of its life still ahead of it.\n\nEikenderveld's own name, meaning oak field, suggests the district was named for trees like this one rather than the other way round. The register is the only source describing it specifically. If you know more, tell us."
+    },
+    {
+      "id": "hee_004",
+      "name": "The Lime of Eikendermolenweg",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 330 to 430 years, from the register's planting band of 1600-1700",
+      "age_min": 326,
+      "age_max": 426,
+      "location": {
+        "address": "Heerlen, Eikendermolenweg 4, aan andere kant van de weg",
+        "latitude": 50.886916,
+        "longitude": 5.957511
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, roadside tree on public land, always visible.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "story": "The register bands this lime to the 1600s, which would make it three to four centuries old, decades older than the plane tree across the road that already carries Heerlen's own claim to the city's oldest tree. Unlike that plane, this lime has no local nickname, no information board and no history recorded anywhere the register could point to: only a species, a rough century and an address on the other side of Eikendermolenweg from Kasteel Eyckholt's grounds.\n\nA lime left standing for three or four hundred years usually shows it in the trunk rather than the crown: a common lime develops burrs and epicormic shoots low down as it ages, sometimes thickening into a skirt of new growth around an old, split or hollowing base, while the crown above can go on looking healthy for centuries past what the trunk alone would suggest. Whether this one shows any of that has not been recorded.\n\nThe register survey this age comes from is recent, and nothing in it suggests the tree is gone, but a lime this old with no other source describing it is exactly the kind of gap a reader can close in one visit. If you have stood at this spot, tell us what you saw."
+    },
+    {
+      "id": "hee_006",
+      "name": "The Plane of Terworm",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 230 to 280 years, from the register's planting band of 1750-1800",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Heerlen, Terworm/Eikendermolenweg",
+        "latitude": 50.886257,
+        "longitude": 5.956162
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, roadside tree on public land, always visible.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "Everyone in Heerlen calls this tree the Eik van Terworm, the Oak of Terworm, and it is not an oak. It is a plane, and the name has stuck regardless, attached to a tree the register bands to 1750-1800 and local sources call the oldest in the city at around 280 years.\n\nThe register's own note gives a specific occasion: probably planted in 1749, to mark the birth of the heir to Terworm, the estate whose grounds still surround the castle a short walk away. An information board at the tree repeats the story. Planting a tree for a birth was ordinary practice on estates like this one, meant to grow alongside the child it marked and to outlast them both, which this one has done by nearly two hundred years already.\n\nIt stands alone at a junction near the Eikendermolenweg, the kind of solitary position that let it build the wide, low crown a plane develops when nothing crowds it. Locals treat it as a boundary marker between what were once separate estates, though nobody has confirmed that was the original intent rather than a story that grew up around an old tree at a crossroads, the way stories do.\n\nGo looking for an oak and you will walk straight past it."
+    },
+    {
+      "id": "hee_007",
+      "name": "The Tulip Tree of Meezenbroek",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly 90 years, from a registered planting date around 1940",
+      "age_min": 86,
+      "age_max": 96,
+      "location": {
+        "address": "In het park langs de Baron Mackaystraat, Heerlen, iets ten noordwesten van de kruising met de Van Hogendorpstraat.",
+        "latitude": 50.896159,
+        "longitude": 5.984507
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This tulip tree grows in the park built around the Meezenbroek ponds before the Second World War, in a district that started life in the 1920s as De Voorzorg, a colony of housing built for the miners working Heerlen's coal seams. The register bands its planting to 1930-1940, putting it at roughly 90 years, a near contemporary of the park itself.\n\nLiriodendron tulipifera is North American, not European, and its name undersells the spectacle: the flowers it produces from early summer are cup-shaped, greenish yellow with an orange band inside, more like a stylised magnolia than a tulip, and easy to miss from below because they open high in the crown facing upward. The leaves are the more reliable giveaway, four-lobed and squared off at the tip as if cut with scissors, turning a clean butter yellow in autumn.\n\nA former mining colony with a purpose-built park is not the setting most people imagine for an American forest tree, and that mismatch is most of what makes it worth a detour. The register is the only source that has described it. If you know more about when or why it was planted, tell us."
+    },
+    {
+      "id": "hee_008",
+      "name": "The Ginkgo of Terworm",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 110 years, from a registered planting date around 1920",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Terworm 5D, 6411 RV Heerlen",
+        "latitude": 50.889146,
+        "longitude": 5.949978
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, roadside tree on public land, always visible.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This ginkgo grows along the drive to Kasteel Terworm, in good health as of a 2026 survey, standing where anyone walking up to the castle's front door can see it. The register bands its planting to 1910-1920, roughly a century, and offers two guesses rather than one: either it went in during an 1890s renovation under Baron de Loë, or during the few years around 1902 to 1907 when the estate was let to a mining baron named Wenckenbach, whose industry was reshaping the whole Heerlen region at the time.\n\nTerworm's own history runs back to around 1400 and a family named Van der Worm, through at least six rebuildings to the house that stands today, a period as an open-air swimming pool in its lower pond during the 1930s, and a near miss with becoming a theme park that Heerlen's own residents blocked. It is a hotel now, and the wooded estate around it belongs to Natuurmonumenten, a conservation organisation, which is why the grounds stay open to walkers rather than becoming private again.\n\nA ginkgo this size beside an old yew planting makes the drive up to the castle one of the more photogenic approaches in the register. If you know which decade it actually went in, tell us."
+    },
+    {
+      "id": "hee_009",
+      "name": "The Catalpa at the Town Hall",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "age_estimate": "roughly 110 years, from a registered planting date around 1920",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Heerlen, Geleenstraat 25, bij gemeentehuis",
+        "latitude": 50.886912,
+        "longitude": 5.977406
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, on the public square.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This catalpa stands outside Heerlen's town hall, built from the local Kunrade limestone in a style locals still call Roman, and the register bands its planting to 1910-1920, putting it at around 110 years, roughly as old as the building's neighbourhood setting. A 2021 note in the register records that the tree has since been given a bench built around its base and steel props holding up a swing hung from one of its limbs, a small piece of civic care that most trees on this list have not had recorded for them.\n\nSouthern catalpa is an American tree, grown for its broad heart-shaped leaves and, in midsummer, loose clusters of white, orchid-like flowers spotted purple and yellow inside each throat. Long bean-like seed pods follow in autumn and can hang on through winter, which is where the tree's other common name, Indian bean, comes from, misleadingly, since it has no connection to India at all.\n\nA public bench built around a tree is usually a sign a town has decided that tree matters to keep. The register is the only source describing this one specifically. If you know its planting story, tell us.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the orchid-like flowers open in loose clusters across the crown"
+      }
+    }
+  ]
 }

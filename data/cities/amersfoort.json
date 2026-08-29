@@ -1,311 +1,311 @@
 {
- "city": "Amersfoort",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "Around 1388 Amersfoort built a second city wall, heaviest on the northeast side because that was the direction Gelre would come from. The wall is mostly gone and what is left of it is a park with old trees growing out of the rampart, including a catalpa that flowers hard enough to stop people. The oldest tree in the city is nowhere near it: an oak at a crossroads called the Hertekop, where a hunting lodge hung with antlers became a pub, then a meeting point, and then a motorway junction. The oak is what is left.",
- "meta_description": "Eight remarkable trees in Amersfoort: a catalpa on a 14th-century rampart, an oak that outlasted a motorway, and a plane the city built a school around.",
- "question_meta": "Amersfoort's oldest tree is the oak at the Hertekop crossroads, banded 1750 to 1800. Where it stands, and six more worth the walk.",
- "question_answer": "The oldest tree in Amersfoort is the oak at the Hertekop, on the Arnhemseweg where it crosses the Dodeweg beside the A28 slip road, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. The crossroads takes its name from a hunting chalet that once stood there with deer antlers fixed to it. That building became an inn, then a well known meeting place and a starting point for walks and outings, and then it disappeared, when a southern ring road was laid around the city and later joined to a new trunk road from Utrecht. The junction that resulted bears no resemblance to the place the tree was planted in. The oak is the only part of the Hertekop still standing.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the main source for these trees, which is why they are all flagged. One of them is a special case. The plane on the Schimmelpenninckkade grows inside the playground of the Sint Jorisschool, and an earlier version of this page left it out for that reason. It is here now because the register records it as both visitable and visible, and because you can see the whole crown from the public quay, which is where this page sends you: the yard is a working school and is not somewhere to walk into. Where the register describes a tree's condition we pass that on, as with the weeping lime in Park Schothorst, whose root flare is walked on constantly and which the register thinks is standing up to it. Pins marked approximate mean we know the place and not the trunk.",
- "hero_tree_id": "ame_008",
- "oldest_tree_id": "ame_002",
- "faq": [
-  {
-   "q": "What is the oldest tree in Amersfoort?",
-   "a": "The oak at the Hertekop crossroads on the Arnhemseweg, banded 1750 to 1800 by the national register. It is older than the ring road, the trunk road and the junction that now surround it, and older than the hunting lodge that gave the place its name."
-  },
-  {
-   "q": "Why is there a park on the city wall?",
-   "a": "Because the wall came down and the earth bank did not. Amersfoort's second wall was built around 1388, concentrated on the northeast side against the threat from Gelre. What survives of it in the Plantsoen Oost was laid out as a park, so the old trees there are standing on a fourteenth century rampart."
-  },
-  {
-   "q": "What is a weeping silver lime?",
-   "a": "A grafted cultivar. A weeping form is joined onto an ordinary lime rootstock, so on the tree in Park Schothorst you can find two different leaves: plain ones on shoots coming up from the stock below the graft, and above them the long-stalked leaves of the variety 'Petiolaris' hanging from arching branches."
-  },
-  {
-   "q": "Are they free to visit?",
-   "a": "All eight, with one qualification. The Plantsoen Oost and Park Schothorst are public parks, the Hertekop oak stands at a road junction, and most of the rest are on streets and squares. The plane of the Sint Jorisschool is inside a school playground, so you look at it from the Schimmelpenninckkade rather than walking in."
-  }
- ],
- "trees": [
-  {
-   "id": "ame_001",
-   "name": "The Catalpa on the City Wall",
-   "species": "Southern Catalpa (Catalpa bignonioides)",
-   "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890 to 1900",
-   "age_min": 126,
-   "age_max": 136,
-   "location": {
-    "address": "Stadswal, Plantsoen Oost, behind Binnen de Veste 41",
-    "latitude": 52.15596,
-    "longitude": 5.39605,
-    "neighbourhood": "Binnen de Veste"
-   },
-   "story": "It is growing on a defensive earthwork built to keep the duke of Gelre out.\n\nAround 1388 Amersfoort put up a second city wall, and put most of the effort into the northeast, because that was the side the trouble was expected from. The wall is largely gone. The bank it stood on is not, and the Plantsoen Oost is what the city made of the remains: a narrow park along the old rampart, planted with big trees whose roots are in six centuries of packed defensive earth.\n\nThe catalpa is behind Binnen de Veste 41 and the register singles it out for its flowering, which is fair. Catalpa flowers in late June and early July, weeks after everything else has finished, in upright panicles of white bells with yellow and purple markings inside the throat, and on a mature tree there are hundreds of them at once.\n\nThen it produces the beans. Slender pods up to forty centimetres long hang all winter on the bare tree, which is where the name Indian bean tree comes from, and why this is worth a look in January as well.\n\nHuge heart-shaped leaves, and it comes into leaf later than anything else in the park.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public park on the old rampart, open at any time.",
-   "transport": "About 1 km east of Amersfoort station, on the eastern edge of the old centre.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Very large heart-shaped leaves and long thin hanging pods. Bare when the rest of the park is green in May.",
-   "best_time": {
-    "months": [
-     7
-    ],
-    "kind": "flowers",
-    "label": "early July, when the whole crown is in white bells"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ame_002",
-   "name": "The Oak at the Hertekop",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
-   "age_min": 226,
-   "age_max": 276,
-   "location": {
-    "address": "Beside the A28 slip road at the Arnhemseweg and Dodeweg crossing",
-    "latitude": 52.13432,
-    "longitude": 5.39753,
-    "neighbourhood": "Hertekop"
-   },
-   "story": "Everything at this crossroads has been replaced except the tree.\n\nIt was called the Hertekop after a hunting chalet built here with deer antlers fixed to it. The chalet became an inn. The inn became one of those places everyone in a town knows, where people arranged to meet and where walks and outings started from. Then a southern ring road was laid around Amersfoort, and later joined to a new trunk road running in from Utrecht, and the place changed out of all recognition. The chalet went.\n\nWhat is here now is a slip road off the A28 and a junction of the Arnhemseweg and the Dodeweg. What is also here is an oak the register bands 1750 to 1800, which was already a substantial tree when the chalet was a going concern, and which is the oldest living thing in Amersfoort.\n\nIt is not a beautiful setting and that is exactly the reason to go. Two and a half centuries of a place reorganising itself around a fixed point, and the fixed point is a tree that nobody decided to keep so much as never quite got round to removing.\n\nPark on the Dodeweg rather than trying to stop on the Arnhemseweg.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Stands in the verge at a public road junction.",
-   "transport": "About 3 km south of Amersfoort station, at the Arnhemseweg and Dodeweg crossing.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The single very heavy old oak at the junction, far thicker than the roadside planting around it.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the acorns drop into the verge"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ame_003",
-   "name": "The Copper Beech of the Xaverius Church",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
-   "age_min": 186,
-   "age_max": 196,
-   "location": {
-    "address": "By the St Franciscus Xavierius church, 't Zand 31",
-    "latitude": 52.15872,
-    "longitude": 5.38736,
-    "neighbourhood": "'t Zand"
-   },
-   "story": "The church went up between 1881 and 1883. The beech was already about fifty years old when the first stone was laid.\n\nThat is worth pausing on, because the natural assumption at any church with a big tree beside it is that somebody planted the tree to go with the building. Here the register is explicit that the order runs the other way: banded 1830 to 1840, the beech predates the church by half a century, and whoever chose this plot chose a plot with a mature beech on it.\n\nThe register also gives it a health note, which is the sort of thing worth passing on. It calls the tree reasonably good for its age and for its position in an urban area, which is faint praise and honest. City copper beeches have a hard time of it: shallow feeding roots under paving, salt, and no leaf litter left to rot back into the soil.\n\nCopper beech is not a species. It is a purple-leaved mutation of the common beech that turns up occasionally in the wild and is then propagated by grafting, so almost every one you meet was chosen by somebody.\n\nIn October the purple burns through to copper, and it is the best week to come.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Stands in the church grounds on 't Zand, reachable in daylight.",
-   "transport": "About 900 m east of Amersfoort station, on 't Zand.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The large dark purple-leaved beech beside the church.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the purple turns copper"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ame_004",
-   "name": "The Plane of the Snouckaertlaan",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
-   "age_min": 186,
-   "age_max": 196,
-   "location": {
-    "address": "Snouckaertlaan 11, at the Utrechtseweg",
-    "latitude": 52.15321,
-    "longitude": 5.38328,
-    "neighbourhood": "Bergkwartier"
-   },
-   "story": "A plane of this age on a Dutch street corner is a tree that has survived every plan anyone has had for the ground.\n\nThe register bands it 1830 to 1840, which puts it here before the villa quarter around it, before the Utrechtseweg was the road it is now, and before almost any of the buildings it stands among. It has spent nearly two centuries on the corner of the Snouckaertlaan while the city rearranged itself.\n\nPlanes get this job because they take punishment better than anything else their size. Compacted soil, roots cut for cables, salt, exhaust, and hard pruning: a plane shrugs at all of it and regrows. The species is a hybrid, probably of the oriental plane and the American sycamore, and it first appeared in European gardens in the seventeenth century as an accident of two exotic trees being planted near each other.\n\nThe bark is the giveaway and the reason it works in a city. It sheds in irregular plates, taking whatever has settled on it with it, so the trunk is a camouflage of cream, olive and grey that never blackens.\n\nThe seed balls hang on all winter, on stalks, like small hard fruit.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Street tree on public ground.",
-   "transport": "About 500 m southeast of Amersfoort station, at the top of the Snouckaertlaan.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Flaking cream and olive bark, on the corner where the Snouckaertlaan meets the Utrechtseweg.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ame_005",
-   "name": "The Weeping Silver Lime of Park Schothorst",
-   "species": "Silver Lime (Tilia tomentosa)",
-   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
-   "age_min": 186,
-   "age_max": 196,
-   "location": {
-    "address": "Park Schothorst, at the back of the grounds on the edge of the wood",
-    "latitude": 52.18036,
-    "longitude": 5.38693,
-    "neighbourhood": "Schothorst"
-   },
-   "story": "This tree carries two different kinds of leaf and you can find both from where you stand.\n\nIt is a grafted weeping lime. The weeping form, 'Petiolaris', cannot be grown from seed and is joined onto an ordinary lime rootstock, which means the tree is really two plants sharing a trunk. Above the graft the branches arch out and hang down, carrying leaves on unusually long stalks that let each one swing and show its white felted underside. Below the graft the rootstock keeps sending up its own shoots, and those carry plain lime leaves on short stalks. Look low on the trunk for ordinary foliage and up into the hanging branches for the long-stalked kind.\n\nThe register also notes the root flare, which is unusually pronounced and which people walk over constantly, and adds that the tree seems to be standing up to it. That is an honest way of saying it is being slowly damaged and is winning anyway.\n\nIt is at the back of Park Schothorst on the edge of the wood, banded 1830 to 1840.\n\nCome in July. Silver limes flower late, and the scent of one this size carries a long way through a wood.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public park, open daily.",
-   "transport": "About 3 km north of Amersfoort station, in Park Schothorst.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Arching branches falling to the ground, leaves flashing white underneath, and a heavy exposed root flare at the base.",
-   "best_time": {
-    "months": [
-     7
-    ],
-    "kind": "flowers",
-    "label": "July, when it flowers late and the scent carries through the wood"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "ame_006",
-   "name": "The Copper Beech behind the Amershof",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
-   "age_min": 136,
-   "age_max": 146,
-   "location": {
-    "address": "By the back entrance of the Amershof, Burgemeester De Widtstraat",
-    "latitude": 52.15416,
-    "longitude": 5.3824,
-    "neighbourhood": "Centrum"
-   },
-   "story": "It is at the back entrance of a function venue, which is a demotion, and it is the reason to look.\n\nA copper beech planted between 1880 and 1890 was put in by somebody laying out a garden. Nobody plants a purple beech at a service door. So this tree has been through the usual sequence for a city centre: a private garden, a change of ownership, a building extended over most of the ground, and the tree left standing in the leftover space that the extension did not need, which happened to be by the back door.\n\nIt is a common story and it accounts for a striking share of the big old trees in any Dutch city centre. The ones that survive are rarely the ones that were treasured. They are the ones that were standing somewhere nobody wanted to build.\n\nWhat you get is a full grown copper beech in a small hard space on the Burgemeester De Widtstraat, dark and dense and considerably too large for its surroundings, which is a good look at what the species does when nothing restrains it but paving.\n\nBest in October and, for a different reason, in April, when the new leaves come out a translucent red before they darken.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Visible and reachable from the street at the back of the building.",
-   "transport": "About 700 m east of Amersfoort station, on the Burgemeester De Widtstraat.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A large purple beech crowded into the paved space by the venue's rear entrance.",
-   "best_time": {
-    "months": [
-     4
-    ],
-    "kind": "fresh leaves",
-    "label": "April, when the new leaves open translucent red"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ame_007",
-   "name": "The Copper Beech at the Zonnehof",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
-   "age_min": 136,
-   "age_max": 146,
-   "location": {
-    "address": "Northeast side of Zonnehof 2, behind the building on the Utrechtseweg",
-    "latitude": 52.1523,
-    "longitude": 5.38328,
-    "neighbourhood": "Zonnehof"
-   },
-   "story": "The Zonnehof is a piece of open ground on the edge of the old centre that the twentieth century got hold of, and this beech was standing before any of it.\n\nBanded 1880 to 1890, it belongs to the villa gardens that lined the Utrechtseweg when this was the smart approach to the city rather than a through road. Those gardens have gone. The beech is on the northeast side of Zonnehof 2, behind the building that fronts the Utrechtseweg, which is to say in the gap between two eras of construction.\n\nStanding under a copper beech in a city is a specific experience worth going out of your way for. The leaves are thin and the purple pigment is a filter rather than a coating, so strong light coming through a mature canopy arrives underneath as a deep wine red. Photographs never get it because a camera corrects it away. You have to be under it, and it wants a bright day.\n\nThis one is a short walk from the plane on the Snouckaertlaan and from the beech behind the Amershof, so all three fit into twenty minutes.\n\nThe fourth week of October, if you want it at full colour.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Reachable on foot from the Zonnehof, open at any time.",
-   "transport": "About 500 m southeast of Amersfoort station, at the Zonnehof.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "On the northeast side of the building at Zonnehof 2, a full-sized purple beech in an open paved setting.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "late October, at full colour"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ame_008",
-   "name": "The Plane of the Sint Jorisschool",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "roughly 175 to 185 years, from the register's planting band of 1840 to 1850",
-   "age_min": 176,
-   "age_max": 186,
-   "girth_cm": 608,
-   "height_m": 27.8,
-   "location": {
-    "address": "Schoolyard of the Sint Jorisschool, Schimmelpenninckkade, Amersfoort",
-    "latitude": 52.159702,
-    "longitude": 5.385922,
-    "neighbourhood": "Binnenstad, on the Eem quay"
-   },
-   "story": "When the Sint Jorisschool went up in 1910 this plane was already seventy years old, and the builders left it where it was. It has stood in a schoolyard ever since.\n\nIt was planted between 1840 and 1850, when the site was still a green strip along the quay of the river Eem. The strip was built over in 1910 and the new school opened with four classes on the quay side, with a full grown tree already in front of it. That building came down in 1992 and its replacement went up straight away. The register notes, drily, that the tree was reasonably well protected during the works.\n\nIt is close to two hundred years old now, six metres round at chest height and 27.8 metres tall, with a crown twenty-seven metres across, which is wider than the yard it stands in.\n\nBenches used to ring the base for the pupils. At the end of 2021 the paving came out and the yard was resurfaced in wood chips, some of the benches were taken away, and the children moved onto the roots instead. The register's verdict on that, after everything else this tree has absorbed: it seems to cope well.\n\nYou can see the whole crown from the quay.",
-   "verified_sources": [
-    "https://nl.wikipedia.org/wiki/Plataan_aan_de_Schimmelpenninckstraat",
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free to look at. The tree stands on the Sint Jorisschool playground and the whole crown is in view from the Schimmelpenninckkade, which is a public quay. The register lists it as visitable, but it is a working schoolyard, so stand on the quay rather than walking in.",
-   "transport": "About 15 minutes on foot from Amersfoort Centraal, on the Schimmelpenninckkade beside the Eem.",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/20141029_PlataanSchimmelpenninckstr_02.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "WeeJeeVee, CC BY-SA 4.0, via Wikimedia Commons",
-    "status": "approved",
-    "width": 1956,
-    "height": 2533
-   },
-   "how_to_recognise": "One enormous plane rising alone out of a walled schoolyard set below the level of the quay, its crown far wider than the yard, flaking cream and olive bark on a single straight trunk.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  }
- ]
+  "city": "Amersfoort",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Around 1388 Amersfoort built a second city wall, heaviest on the northeast side because that was the direction Gelre would come from. The wall is mostly gone and what is left of it is a park with old trees growing out of the rampart, including a catalpa that flowers hard enough to stop people. The oldest tree in the city is nowhere near it: an oak at a crossroads called the Hertekop, where a hunting lodge hung with antlers became a pub, then a meeting point, and then a motorway junction. The oak is what is left.",
+  "meta_description": "Eight remarkable trees in Amersfoort: a catalpa on a 14th-century rampart, an oak that outlasted a motorway, and a plane the city built a school around.",
+  "question_meta": "Amersfoort's oldest tree is the oak at the Hertekop crossroads, banded 1750 to 1800. Where it stands, and six more worth the walk.",
+  "question_answer": "The oldest tree in Amersfoort is the oak at the Hertekop, on the Arnhemseweg where it crosses the Dodeweg beside the A28 slip road, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. The crossroads takes its name from a hunting chalet that once stood there with deer antlers fixed to it. That building became an inn, then a well known meeting place and a starting point for walks and outings, and then it disappeared, when a southern ring road was laid around the city and later joined to a new trunk road from Utrecht. The junction that resulted bears no resemblance to the place the tree was planted in. The oak is the only part of the Hertekop still standing.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the main source for these trees, which is why they are all flagged. One of them is a special case. The plane on the Schimmelpenninckkade grows inside the playground of the Sint Jorisschool, and an earlier version of this page left it out for that reason. It is here now because the register records it as both visitable and visible, and because you can see the whole crown from the public quay, which is where this page sends you: the yard is a working school and is not somewhere to walk into. Where the register describes a tree's condition we pass that on, as with the weeping lime in Park Schothorst, whose root flare is walked on constantly and which the register thinks is standing up to it. Pins marked approximate mean we know the place and not the trunk.",
+  "hero_tree_id": "ame_008",
+  "oldest_tree_id": "ame_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Amersfoort?",
+      "a": "The oak at the Hertekop crossroads on the Arnhemseweg, banded 1750 to 1800 by the national register. It is older than the ring road, the trunk road and the junction that now surround it, and older than the hunting lodge that gave the place its name."
+    },
+    {
+      "q": "Why is there a park on the city wall?",
+      "a": "Because the wall came down and the earth bank did not. Amersfoort's second wall was built around 1388, concentrated on the northeast side against the threat from Gelre. What survives of it in the Plantsoen Oost was laid out as a park, so the old trees there are standing on a fourteenth century rampart."
+    },
+    {
+      "q": "What is a weeping silver lime?",
+      "a": "A grafted cultivar. A weeping form is joined onto an ordinary lime rootstock, so on the tree in Park Schothorst you can find two different leaves: plain ones on shoots coming up from the stock below the graft, and above them the long-stalked leaves of the variety 'Petiolaris' hanging from arching branches."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "All eight, with one qualification. The Plantsoen Oost and Park Schothorst are public parks, the Hertekop oak stands at a road junction, and most of the rest are on streets and squares. The plane of the Sint Jorisschool is inside a school playground, so you look at it from the Schimmelpenninckkade rather than walking in."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ame_001",
+      "name": "The Catalpa on the City Wall",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890 to 1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Stadswal, Plantsoen Oost, behind Binnen de Veste 41",
+        "latitude": 52.15596,
+        "longitude": 5.39605,
+        "neighbourhood": "Binnen de Veste"
+      },
+      "story": "It is growing on a defensive earthwork built to keep the duke of Gelre out.\n\nAround 1388 Amersfoort put up a second city wall, and put most of the effort into the northeast, because that was the side the trouble was expected from. The wall is largely gone. The bank it stood on is not, and the Plantsoen Oost is what the city made of the remains: a narrow park along the old rampart, planted with big trees whose roots are in six centuries of packed defensive earth.\n\nThe catalpa is behind Binnen de Veste 41 and the register singles it out for its flowering, which is fair. Catalpa flowers in late June and early July, weeks after everything else has finished, in upright panicles of white bells with yellow and purple markings inside the throat, and on a mature tree there are hundreds of them at once.\n\nThen it produces the beans. Slender pods up to forty centimetres long hang all winter on the bare tree, which is where the name Indian bean tree comes from, and why this is worth a look in January as well.\n\nHuge heart-shaped leaves, and it comes into leaf later than anything else in the park.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park on the old rampart, open at any time.",
+      "transport": "About 1 km east of Amersfoort station, on the eastern edge of the old centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Very large heart-shaped leaves and long thin hanging pods. Bare when the rest of the park is green in May.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "early July, when the whole crown is in white bells"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ame_002",
+      "name": "The Oak at the Hertekop",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Beside the A28 slip road at the Arnhemseweg and Dodeweg crossing",
+        "latitude": 52.13432,
+        "longitude": 5.39753,
+        "neighbourhood": "Hertekop"
+      },
+      "story": "Everything at this crossroads has been replaced except the tree.\n\nIt was called the Hertekop after a hunting chalet built here with deer antlers fixed to it. The chalet became an inn. The inn became one of those places everyone in a town knows, where people arranged to meet and where walks and outings started from. Then a southern ring road was laid around Amersfoort, and later joined to a new trunk road running in from Utrecht, and the place changed out of all recognition. The chalet went.\n\nWhat is here now is a slip road off the A28 and a junction of the Arnhemseweg and the Dodeweg. What is also here is an oak the register bands 1750 to 1800, which was already a substantial tree when the chalet was a going concern, and which is the oldest living thing in Amersfoort.\n\nIt is not a beautiful setting and that is exactly the reason to go. Two and a half centuries of a place reorganising itself around a fixed point, and the fixed point is a tree that nobody decided to keep so much as never quite got round to removing.\n\nPark on the Dodeweg rather than trying to stop on the Arnhemseweg.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Stands in the verge at a public road junction.",
+      "transport": "About 3 km south of Amersfoort station, at the Arnhemseweg and Dodeweg crossing.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The single very heavy old oak at the junction, far thicker than the roadside planting around it.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the acorns drop into the verge"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ame_003",
+      "name": "The Copper Beech of the Xaverius Church",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "By the St Franciscus Xavierius church, 't Zand 31",
+        "latitude": 52.15872,
+        "longitude": 5.38736,
+        "neighbourhood": "'t Zand"
+      },
+      "story": "The church went up between 1881 and 1883. The beech was already about fifty years old when the first stone was laid.\n\nThat is worth pausing on, because the natural assumption at any church with a big tree beside it is that somebody planted the tree to go with the building. Here the register is explicit that the order runs the other way: banded 1830 to 1840, the beech predates the church by half a century, and whoever chose this plot chose a plot with a mature beech on it.\n\nThe register also gives it a health note, which is the sort of thing worth passing on. It calls the tree reasonably good for its age and for its position in an urban area, which is faint praise and honest. City copper beeches have a hard time of it: shallow feeding roots under paving, salt, and no leaf litter left to rot back into the soil.\n\nCopper beech is not a species. It is a purple-leaved mutation of the common beech that turns up occasionally in the wild and is then propagated by grafting, so almost every one you meet was chosen by somebody.\n\nIn October the purple burns through to copper, and it is the best week to come.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Stands in the church grounds on 't Zand, reachable in daylight.",
+      "transport": "About 900 m east of Amersfoort station, on 't Zand.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large dark purple-leaved beech beside the church.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the purple turns copper"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ame_004",
+      "name": "The Plane of the Snouckaertlaan",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Snouckaertlaan 11, at the Utrechtseweg",
+        "latitude": 52.15321,
+        "longitude": 5.38328,
+        "neighbourhood": "Bergkwartier"
+      },
+      "story": "A plane of this age on a Dutch street corner is a tree that has survived every plan anyone has had for the ground.\n\nThe register bands it 1830 to 1840, which puts it here before the villa quarter around it, before the Utrechtseweg was the road it is now, and before almost any of the buildings it stands among. It has spent nearly two centuries on the corner of the Snouckaertlaan while the city rearranged itself.\n\nPlanes get this job because they take punishment better than anything else their size. Compacted soil, roots cut for cables, salt, exhaust, and hard pruning: a plane shrugs at all of it and regrows. The species is a hybrid, probably of the oriental plane and the American sycamore, and it first appeared in European gardens in the seventeenth century as an accident of two exotic trees being planted near each other.\n\nThe bark is the giveaway and the reason it works in a city. It sheds in irregular plates, taking whatever has settled on it with it, so the trunk is a camouflage of cream, olive and grey that never blackens.\n\nThe seed balls hang on all winter, on stalks, like small hard fruit.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Street tree on public ground.",
+      "transport": "About 500 m southeast of Amersfoort station, at the top of the Snouckaertlaan.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Flaking cream and olive bark, on the corner where the Snouckaertlaan meets the Utrechtseweg.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ame_005",
+      "name": "The Weeping Silver Lime of Park Schothorst",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Park Schothorst, at the back of the grounds on the edge of the wood",
+        "latitude": 52.18036,
+        "longitude": 5.38693,
+        "neighbourhood": "Schothorst"
+      },
+      "story": "This tree carries two different kinds of leaf and you can find both from where you stand.\n\nIt is a grafted weeping lime. The weeping form, 'Petiolaris', cannot be grown from seed and is joined onto an ordinary lime rootstock, which means the tree is really two plants sharing a trunk. Above the graft the branches arch out and hang down, carrying leaves on unusually long stalks that let each one swing and show its white felted underside. Below the graft the rootstock keeps sending up its own shoots, and those carry plain lime leaves on short stalks. Look low on the trunk for ordinary foliage and up into the hanging branches for the long-stalked kind.\n\nThe register also notes the root flare, which is unusually pronounced and which people walk over constantly, and adds that the tree seems to be standing up to it. That is an honest way of saying it is being slowly damaged and is winning anyway.\n\nIt is at the back of Park Schothorst on the edge of the wood, banded 1830 to 1840.\n\nCome in July. Silver limes flower late, and the scent of one this size carries a long way through a wood.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park, open daily.",
+      "transport": "About 3 km north of Amersfoort station, in Park Schothorst.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Arching branches falling to the ground, leaves flashing white underneath, and a heavy exposed root flare at the base.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when it flowers late and the scent carries through the wood"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ame_006",
+      "name": "The Copper Beech behind the Amershof",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "By the back entrance of the Amershof, Burgemeester De Widtstraat",
+        "latitude": 52.15416,
+        "longitude": 5.3824,
+        "neighbourhood": "Centrum"
+      },
+      "story": "It is at the back entrance of a function venue, which is a demotion, and it is the reason to look.\n\nA copper beech planted between 1880 and 1890 was put in by somebody laying out a garden. Nobody plants a purple beech at a service door. So this tree has been through the usual sequence for a city centre: a private garden, a change of ownership, a building extended over most of the ground, and the tree left standing in the leftover space that the extension did not need, which happened to be by the back door.\n\nIt is a common story and it accounts for a striking share of the big old trees in any Dutch city centre. The ones that survive are rarely the ones that were treasured. They are the ones that were standing somewhere nobody wanted to build.\n\nWhat you get is a full grown copper beech in a small hard space on the Burgemeester De Widtstraat, dark and dense and considerably too large for its surroundings, which is a good look at what the species does when nothing restrains it but paving.\n\nBest in October and, for a different reason, in April, when the new leaves come out a translucent red before they darken.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Visible and reachable from the street at the back of the building.",
+      "transport": "About 700 m east of Amersfoort station, on the Burgemeester De Widtstraat.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A large purple beech crowded into the paved space by the venue's rear entrance.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "fresh leaves",
+        "label": "April, when the new leaves open translucent red"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ame_007",
+      "name": "The Copper Beech at the Zonnehof",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Northeast side of Zonnehof 2, behind the building on the Utrechtseweg",
+        "latitude": 52.1523,
+        "longitude": 5.38328,
+        "neighbourhood": "Zonnehof"
+      },
+      "story": "The Zonnehof is a piece of open ground on the edge of the old centre that the twentieth century got hold of, and this beech was standing before any of it.\n\nBanded 1880 to 1890, it belongs to the villa gardens that lined the Utrechtseweg when this was the smart approach to the city rather than a through road. Those gardens have gone. The beech is on the northeast side of Zonnehof 2, behind the building that fronts the Utrechtseweg, which is to say in the gap between two eras of construction.\n\nStanding under a copper beech in a city is a specific experience worth going out of your way for. The leaves are thin and the purple pigment is a filter rather than a coating, so strong light coming through a mature canopy arrives underneath as a deep wine red. Photographs never get it because a camera corrects it away. You have to be under it, and it wants a bright day.\n\nThis one is a short walk from the plane on the Snouckaertlaan and from the beech behind the Amershof, so all three fit into twenty minutes.\n\nThe fourth week of October, if you want it at full colour.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Reachable on foot from the Zonnehof, open at any time.",
+      "transport": "About 500 m southeast of Amersfoort station, at the Zonnehof.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "On the northeast side of the building at Zonnehof 2, a full-sized purple beech in an open paved setting.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "late October, at full colour"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ame_008",
+      "name": "The Plane of the Sint Jorisschool",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 175 to 185 years, from the register's planting band of 1840 to 1850",
+      "age_min": 176,
+      "age_max": 186,
+      "girth_cm": 608,
+      "height_m": 27.8,
+      "location": {
+        "address": "Schoolyard of the Sint Jorisschool, Schimmelpenninckkade, Amersfoort",
+        "latitude": 52.159702,
+        "longitude": 5.385922,
+        "neighbourhood": "Binnenstad, on the Eem quay"
+      },
+      "story": "When the Sint Jorisschool went up in 1910 this plane was already seventy years old, and the builders left it where it was. It has stood in a schoolyard ever since.\n\nIt was planted between 1840 and 1850, when the site was still a green strip along the quay of the river Eem. The strip was built over in 1910 and the new school opened with four classes on the quay side, with a full grown tree already in front of it. That building came down in 1992 and its replacement went up straight away. The register notes, drily, that the tree was reasonably well protected during the works.\n\nIt is close to two hundred years old now, six metres round at chest height and 27.8 metres tall, with a crown twenty-seven metres across, which is wider than the yard it stands in.\n\nBenches used to ring the base for the pupils. At the end of 2021 the paving came out and the yard was resurfaced in wood chips, some of the benches were taken away, and the children moved onto the roots instead. The register's verdict on that, after everything else this tree has absorbed: it seems to cope well.\n\nYou can see the whole crown from the quay.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Plataan_aan_de_Schimmelpenninckstraat",
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free to look at. The tree stands on the Sint Jorisschool playground and the whole crown is in view from the Schimmelpenninckkade, which is a public quay. The register lists it as visitable, but it is a working schoolyard, so stand on the quay rather than walking in.",
+      "transport": "About 15 minutes on foot from Amersfoort Centraal, on the Schimmelpenninckkade beside the Eem.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/20141029_PlataanSchimmelpenninckstr_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "WeeJeeVee, CC BY-SA 4.0, via Wikimedia Commons",
+        "status": "approved",
+        "width": 1956,
+        "height": 2533
+      },
+      "how_to_recognise": "One enormous plane rising alone out of a walled schoolyard set below the level of the quay, its crown far wider than the yard, flaking cream and olive bark on a single straight trunk.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
 }

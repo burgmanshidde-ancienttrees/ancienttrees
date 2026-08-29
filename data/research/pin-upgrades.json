@@ -1,0 +1,1013 @@
+{
+ "note": "Pins moved from approximate to confirmed because a named register row sits within 5 m. Written by scripts/pin_upgrade.py. Kept so any of this can be read back or undone.",
+ "upgrades": [
+  {
+   "city": "Alkmaar",
+   "id": "alk_002",
+   "tree": "The Willow of the Veenbos",
+   "register": "netherlands-lrmb",
+   "register_id": 1697048,
+   "register_name": "Schietwilg Veenbos Grootschermer",
+   "metres": 0.6
+  },
+  {
+   "city": "Amersfoort",
+   "id": "ame_005",
+   "tree": "The Weeping Silver Lime of Park Schothorst",
+   "register": "netherlands-lrmb",
+   "register_id": 1677710,
+   "register_name": "Hangende zilverlinde park Schothorst",
+   "metres": 0.2
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_033",
+   "tree": "The White Poplar of Broersepark",
+   "register": "netherlands-lrmb",
+   "register_id": 1690752,
+   "register_name": "Witte abeel Broersepark",
+   "metres": 0.0
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_036",
+   "tree": "The Poplar of the Eleanor Rooseveltlaan",
+   "register": "netherlands-lrmb",
+   "register_id": 1690651,
+   "register_name": "Canadese populier",
+   "metres": 0.0
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_037",
+   "tree": "The Elm of Elsenhoeve",
+   "register": "netherlands-lrmb",
+   "register_id": 1690654,
+   "register_name": "Hollandse iep",
+   "metres": 0.0
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_038",
+   "tree": "The Red Horse Chestnut of Wilhelminaplein",
+   "register": "netherlands-lrmb",
+   "register_id": 1684073,
+   "register_name": "Rode paardenkastanje",
+   "metres": 0.0
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_039",
+   "tree": "The Beatrix Lime",
+   "register": "netherlands-lrmb",
+   "register_id": 1684072,
+   "register_name": "De Beatrix linde",
+   "metres": 0.0
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_040",
+   "tree": "The Catalpa of the Cleopatralaan",
+   "register": "netherlands-lrmb",
+   "register_id": 1690655,
+   "register_name": "Trompetboom",
+   "metres": 0.0
+  },
+  {
+   "city": "Apeldoorn",
+   "id": "apd_006",
+   "tree": "The Red Oak of the Wilhelminapark",
+   "register": "netherlands-lrmb",
+   "register_id": 1695100,
+   "register_name": "Amerikaanse eik Wilhelminapark",
+   "metres": 0.2
+  },
+  {
+   "city": "Apeldoorn",
+   "id": "apd_007",
+   "tree": "The Lime of Het Woldhuis",
+   "register": "netherlands-lrmb",
+   "register_id": 1687639,
+   "register_name": "Hollandse linde Woudhuis 1, Apeldoorn",
+   "metres": 0.2
+  },
+  {
+   "city": "Apeldoorn",
+   "id": "apd_008",
+   "tree": "The Pin Oak of the Oranjepark",
+   "register": "netherlands-lrmb",
+   "register_id": 1687083,
+   "register_name": "Moeraseik Oranjepark, Apeldoorn",
+   "metres": 0.2
+  },
+  {
+   "city": "Assen",
+   "id": "ass_001",
+   "tree": "The Horse Chestnut of Overcingel",
+   "register": "netherlands-lrmb",
+   "register_id": 1689372,
+   "register_name": "Witte paardenkastanje Overcingel",
+   "metres": 0.0
+  },
+  {
+   "city": "Assen",
+   "id": "ass_003",
+   "tree": "The Oak of the Hertenkamp",
+   "register": "netherlands-lrmb",
+   "register_id": 1689364,
+   "register_name": "Zomereik hertenkamp Nassaulaan",
+   "metres": 0.0
+  },
+  {
+   "city": "Assen",
+   "id": "ass_004",
+   "tree": "The Oak of Valkenstijn",
+   "register": "netherlands-lrmb",
+   "register_id": 1695778,
+   "register_name": "Zomereik Valkenstijn",
+   "metres": 0.0
+  },
+  {
+   "city": "Assen",
+   "id": "ass_007",
+   "tree": "The Broken Cypress of Overcingel",
+   "register": "netherlands-lrmb",
+   "register_id": 1689371,
+   "register_name": "Moerascipres Overcingel",
+   "metres": 0.0
+  },
+  {
+   "city": "Assen",
+   "id": "ass_008",
+   "tree": "The Copper Beech of Huges' Garden",
+   "register": "netherlands-lrmb",
+   "register_id": 1693710,
+   "register_name": "Bruine beuk Parkje van Huges",
+   "metres": 0.0
+  },
+  {
+   "city": "Assen",
+   "id": "ass_009",
+   "tree": "The Oak of Port Natal",
+   "register": "netherlands-lrmb",
+   "register_id": 1694885,
+   "register_name": "Zomereiken Port Natal",
+   "metres": 0.0
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_011",
+   "tree": "The Casuarina of the Cascada",
+   "register": "barcelona-ail",
+   "register_id": 99400455029,
+   "register_name": "Casuarina del parc de la Ciutadella",
+   "metres": 0.1
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_020",
+   "tree": "The Tipu Tree of Placa Carles Buigas",
+   "register": "barcelona-ail",
+   "register_id": 99400661117,
+   "register_name": "Tipuana de la plaça Carles Buïgas",
+   "metres": 0.5
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_036",
+   "tree": "The London Plane of the Ciutadella",
+   "register": "barcelona-ail",
+   "register_id": 99400728979,
+   "register_name": "Plàtan del parc de la Ciutadella",
+   "metres": 0.0
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_037",
+   "tree": "The Japanese Cheesewood of the Ciutadella",
+   "register": "barcelona-ail",
+   "register_id": 99400638005,
+   "register_name": "Pitòspor de la Ciutadella",
+   "metres": 0.1
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_039",
+   "tree": "The Oriental Plane of Placa de la Universitat",
+   "register": "barcelona-ail",
+   "register_id": 99400454967,
+   "register_name": "Plàtan oriental de la Universitat",
+   "metres": 0.1
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_040",
+   "tree": "The Avocado of Placa de Can Bruixa",
+   "register": "barcelona-ail",
+   "register_id": 99400455082,
+   "register_name": "Alvocater de la plaça de Can Bruixa",
+   "metres": 0.1
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_042",
+   "tree": "The Osage Orange of Carrer Maria Montessori",
+   "register": "barcelona-ail",
+   "register_id": 99400455061,
+   "register_name": "Taronger de Louisiana del carrer Maria Montessori",
+   "metres": 3.2
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_044",
+   "tree": "The Jujube of the Jardins Joan Maragall",
+   "register": "barcelona-ail",
+   "register_id": 99400455075,
+   "register_name": "Ginjoler dels jardins Joan Maragall",
+   "metres": 4.0
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_045",
+   "tree": "The Ginkgo of the Jardins de Mossen Cinto Verdaguer",
+   "register": "barcelona-ail",
+   "register_id": 99400455074,
+   "register_name": "Ginkgo dels jardins de Mossèn Cinto Verdaguer",
+   "metres": 0.0
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_046",
+   "tree": "The Judas Tree of Placa Joanic",
+   "register": "barcelona-ail",
+   "register_id": 99400455041,
+   "register_name": "Arbres de l'amor de la plaça Joanic",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_024",
+   "tree": "The Pedunculate Oak of Mont des Arts",
+   "register": "brussels-arbres-remarquables",
+   "register_id": "3438",
+   "register_name": "Chêne pédonculé",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_025",
+   "tree": "The Ailanthus of Mont des Arts",
+   "register": "brussels-arbres-remarquables",
+   "register_id": "3440",
+   "register_name": "Ailante glanduleux",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_026",
+   "tree": "The Caucasian Wingnut of Mont des Arts",
+   "register": "brussels-arbres-remarquables",
+   "register_id": "7292",
+   "register_name": "Ptérocaryer à feuilles de frêne",
+   "metres": 0.1
+  },
+  {
+   "city": "Deventer",
+   "id": "dev_007",
+   "tree": "The Oak of Landgoed Frieswijk",
+   "register": "netherlands-lrmb",
+   "register_id": 1696671,
+   "register_name": "Zomereik Frieswijk midden",
+   "metres": 0.5
+  },
+  {
+   "city": "Dordrecht",
+   "id": "dor_005",
+   "tree": "The Plane at Sorghvliet",
+   "register": "netherlands-lrmb",
+   "register_id": 1680268,
+   "register_name": "Gewone plataan",
+   "metres": 0.2
+  },
+  {
+   "city": "Dordrecht",
+   "id": "dor_006",
+   "tree": "The Tree of Heaven of the Botgensstraat",
+   "register": "netherlands-lrmb",
+   "register_id": 1695558,
+   "register_name": "Hemelboom Botgensstraat",
+   "metres": 0.4
+  },
+  {
+   "city": "Dordrecht",
+   "id": "dor_007",
+   "tree": "The Large-Leaved Lime of Louter Bloemen",
+   "register": "netherlands-lrmb",
+   "register_id": 1688216,
+   "register_name": "Zomerlinde",
+   "metres": 0.4
+  },
+  {
+   "city": "Ede",
+   "id": "ede_001",
+   "tree": "The Great Oak Stool",
+   "register": "netherlands-lrmb",
+   "register_id": 1694799,
+   "register_name": "Wintereik stoel",
+   "metres": 0.4
+  },
+  {
+   "city": "Ede",
+   "id": "ede_002",
+   "tree": "The Pampel Oak",
+   "register": "netherlands-lrmb",
+   "register_id": 1687644,
+   "register_name": "Zomereik de Pampel",
+   "metres": 0.5
+  },
+  {
+   "city": "Ede",
+   "id": "ede_005",
+   "tree": "Beuk Marjan",
+   "register": "netherlands-lrmb",
+   "register_id": 1691404,
+   "register_name": "Beuk Marjan",
+   "metres": 0.5
+  },
+  {
+   "city": "Eindhoven",
+   "id": "ein_003",
+   "tree": "The Oak of De Wielewaal",
+   "register": "netherlands-lrmb",
+   "register_id": 1697237,
+   "register_name": "Zomereik Landgoed de Wielewaal",
+   "metres": 0.0
+  },
+  {
+   "city": "Eindhoven",
+   "id": "ein_006",
+   "tree": "The Copper Beech of the Glorieuxpark",
+   "register": "netherlands-lrmb",
+   "register_id": 1680802,
+   "register_name": "Bruine beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "Emmen",
+   "id": "emm_005",
+   "tree": "The Copper Beech of Nieuw-Schoonebeek",
+   "register": "netherlands-lrmb",
+   "register_id": 1682278,
+   "register_name": "Bruine beuk St. Bonifatius ",
+   "metres": 0.5
+  },
+  {
+   "city": "Enschede",
+   "id": "ens_004",
+   "tree": "The Giant Sequoia of Het Bouwhuis",
+   "register": "netherlands-lrmb",
+   "register_id": 1692865,
+   "register_name": "Mammoetboom op het landgoed Het Bouwhuis",
+   "metres": 0.3
+  },
+  {
+   "city": "Enschede",
+   "id": "ens_005",
+   "tree": "The Weeping Beech by the Pond",
+   "register": "netherlands-lrmb",
+   "register_id": 1692864,
+   "register_name": "Treurbeuk op het landgoed Het Bouwhuis, Lonneker",
+   "metres": 0.3
+  },
+  {
+   "city": "Enschede",
+   "id": "ens_006",
+   "tree": "The Sessile Oak of the Blijdensteinpark",
+   "register": "netherlands-lrmb",
+   "register_id": 1692857,
+   "register_name": "Wintereik in het Blijdensteinpark",
+   "metres": 0.3
+  },
+  {
+   "city": "Haarlem",
+   "id": "haa_010",
+   "tree": "The Ginkgo of the Bolwerken",
+   "register": "netherlands-lrmb",
+   "register_id": 1696661,
+   "register_name": "Ginkgo De Bolwerken",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlem",
+   "id": "haa_012",
+   "tree": "The Caucasian Wingnut of Statenbolwerk",
+   "register": "netherlands-lrmb",
+   "register_id": 1686176,
+   "register_name": "Kaukasische vleugelnoot Statenbolwerk",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlem",
+   "id": "haa_017",
+   "tree": "The Silver Lime of Kleverlaan",
+   "register": "netherlands-lrmb",
+   "register_id": 1696657,
+   "register_name": "Zilverlinde Kleverlaan",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlem",
+   "id": "haa_019",
+   "tree": "The Plane of Frederikspark",
+   "register": "netherlands-lrmb",
+   "register_id": 1686319,
+   "register_name": "Gewone plataan Houtplein",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlem",
+   "id": "haa_021",
+   "tree": "The Pin Oak of Frederikspark",
+   "register": "netherlands-lrmb",
+   "register_id": 1696645,
+   "register_name": "Moeraseik Frederikspark",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlemmermeer",
+   "id": "hrl_001",
+   "tree": "The Horse Chestnut of the Waterwolf",
+   "register": "netherlands-lrmb",
+   "register_id": 1688940,
+   "register_name": "Witte paardenkastanje",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlemmermeer",
+   "id": "hrl_003",
+   "tree": "The Surviving Ash of the Hoofdweg",
+   "register": "netherlands-lrmb",
+   "register_id": 1688939,
+   "register_name": "Gewone es",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlemmermeer",
+   "id": "hrl_004",
+   "tree": "The Maple of the Nieuw-Vennep Church",
+   "register": "netherlands-lrmb",
+   "register_id": 1685909,
+   "register_name": "Noorse esdoorn",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlemmermeer",
+   "id": "hrl_006",
+   "tree": "The Wingnut of the Hoofddorp Market",
+   "register": "netherlands-lrmb",
+   "register_id": 1690485,
+   "register_name": "Kaukasische vleugelnoot",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlemmermeer",
+   "id": "hrl_007",
+   "tree": "The Jubilee Lime of Vijfhuizen",
+   "register": "netherlands-lrmb",
+   "register_id": 1685741,
+   "register_name": "Hollandse linde",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlemmermeer",
+   "id": "hrl_008",
+   "tree": "The London Plane of Hoofddorp",
+   "register": "netherlands-lrmb",
+   "register_id": 1688938,
+   "register_name": "Gewone plataan",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlemmermeer",
+   "id": "hrl_009",
+   "tree": "The Weeping Beech of the Ring Road",
+   "register": "netherlands-lrmb",
+   "register_id": 1685730,
+   "register_name": "Treurbeuk",
+   "metres": 0.0
+  },
+  {
+   "city": "Haarlemmermeer",
+   "id": "hrl_010",
+   "tree": "The Roadside Maple of Badhoevedorp",
+   "register": "netherlands-lrmb",
+   "register_id": 1696842,
+   "register_name": "Esdoorn Nieuwemeerdijk Badhoevedorp",
+   "metres": 0.0
+  },
+  {
+   "city": "Heerlen",
+   "id": "hee_001",
+   "tree": "The Oak of Imstenrade",
+   "register": "netherlands-lrmb",
+   "register_id": 1695309,
+   "register_name": "Zomereik Imstenrade",
+   "metres": 0.0
+  },
+  {
+   "city": "Heerlen",
+   "id": "hee_002",
+   "tree": "The Oak of Nieuw Eyckholt",
+   "register": "netherlands-lrmb",
+   "register_id": 1695310,
+   "register_name": "Zomereik Nieuw Eyckholt",
+   "metres": 0.0
+  },
+  {
+   "city": "Heerlen",
+   "id": "hee_003",
+   "tree": "The Oak of the Neighbourhood",
+   "register": "netherlands-lrmb",
+   "register_id": 1696379,
+   "register_name": "Eik van de wijk",
+   "metres": 0.0
+  },
+  {
+   "city": "Heerlen",
+   "id": "hee_006",
+   "tree": "The Plane of Terworm",
+   "register": "netherlands-lrmb",
+   "register_id": 1677500,
+   "register_name": "Gewone plataan",
+   "metres": 0.0
+  },
+  {
+   "city": "Heerlen",
+   "id": "hee_007",
+   "tree": "The Tulip Tree of Meezenbroek",
+   "register": "netherlands-lrmb",
+   "register_id": 1696390,
+   "register_name": "Tulpenboom MSP",
+   "metres": 0.0
+  },
+  {
+   "city": "Heerlen",
+   "id": "hee_008",
+   "tree": "The Ginkgo of Terworm",
+   "register": "netherlands-lrmb",
+   "register_id": 1697332,
+   "register_name": "Ginkgo bij Kasteel Terworm",
+   "metres": 0.0
+  },
+  {
+   "city": "Heerlen",
+   "id": "hee_009",
+   "tree": "The Catalpa at the Town Hall",
+   "register": "netherlands-lrmb",
+   "register_id": 1690650,
+   "register_name": "Trompetboom",
+   "metres": 0.0
+  },
+  {
+   "city": "Helmond",
+   "id": "hlm_004",
+   "tree": "The Beech of the Hunting Wood",
+   "register": "netherlands-lrmb",
+   "register_id": 1695702,
+   "register_name": "bruine beuk",
+   "metres": 0.5
+  },
+  {
+   "city": "Hilversum",
+   "id": "hil_001",
+   "tree": "The Oriental Plane of Landgoed Bantam",
+   "register": "netherlands-lrmb",
+   "register_id": 1694593,
+   "register_name": "Oosterse plataan",
+   "metres": 0.0
+  },
+  {
+   "city": "Hilversum",
+   "id": "hil_002",
+   "tree": "The Coronation Lime of the Spanderslaan",
+   "register": "netherlands-lrmb",
+   "register_id": 1683846,
+   "register_name": "Hollandse linde Wilhelminaboom",
+   "metres": 0.0
+  },
+  {
+   "city": "Hilversum",
+   "id": "hil_006",
+   "tree": "The Cedar of Pinetum Blijdenstein",
+   "register": "netherlands-lrmb",
+   "register_id": 1696924,
+   "register_name": "Reuzenlevensboom pineteum Blijdenstein",
+   "metres": 0.0
+  },
+  {
+   "city": "Hilversum",
+   "id": "hil_007",
+   "tree": "The Atlas Cedar of the Soestdijkerstraatweg",
+   "register": "netherlands-lrmb",
+   "register_id": 1677562,
+   "register_name": "Blauwe Atlasceder",
+   "metres": 0.0
+  },
+  {
+   "city": "Hoorn",
+   "id": "hoo_002",
+   "tree": "The Copper Beech of the Oosterpoortsgracht",
+   "register": "netherlands-lrmb",
+   "register_id": 1690978,
+   "register_name": "Bruine beuk Oosterpoort Hoorn",
+   "metres": 0.0
+  },
+  {
+   "city": "Hoorn",
+   "id": "hoo_003",
+   "tree": "The Plane of the Pakhuisstraat",
+   "register": "netherlands-lrmb",
+   "register_id": 1690970,
+   "register_name": "Gewone plataan Parkhuisstraat",
+   "metres": 0.0
+  },
+  {
+   "city": "Hoorn",
+   "id": "hoo_007",
+   "tree": "The Plane behind the Aviary",
+   "register": "netherlands-lrmb",
+   "register_id": 1690971,
+   "register_name": "Gewone plataan Oosterplantsoen Hoorn",
+   "metres": 0.0
+  },
+  {
+   "city": "Leeuwarden",
+   "id": "lee_004",
+   "tree": "The Plane of the Old City Cemetery",
+   "register": "netherlands-lrmb",
+   "register_id": 1692403,
+   "register_name": "Gewone plataan Oude Stadsbegraafplaats",
+   "metres": 0.5
+  },
+  {
+   "city": "Munich",
+   "id": "muc_019",
+   "tree": "The White Ash of Maximiliansplatz",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-07186",
+   "register_name": "ND: 10/1, 1 Amerikanische Esche Fraxinus americana auf Fl.Nr.: 371/10; Gem. Sektion I; Stadt München",
+   "metres": 2.4
+  },
+  {
+   "city": "Munich",
+   "id": "muc_022",
+   "tree": "The Small-leaved Lime of the Englischer Garten",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-01993",
+   "register_name": "ND: 7/12, 1Winterlinde auf Fl.Nr.: 3115/0; Gmk. Sektion II; Stadt München",
+   "metres": 4.7
+  },
+  {
+   "city": "Munich",
+   "id": "muc_026",
+   "tree": "The Hackberry of the Luitpoldpark",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-07188",
+   "register_name": "ND: 1/4, 1 Zürgelbaum Celtis australis auf Fl.Nr.: 582/0; Gmk. Schwabing; Stadt München",
+   "metres": 4.5
+  },
+  {
+   "city": "Munich",
+   "id": "muc_027",
+   "tree": "The Amur Cork Tree of the Luitpoldpark",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-07189",
+   "register_name": "ND: 2/4, 1 Korkbaum Phellodendron amurense auf Fl.Nr.: 582/0; Gmk. Schwabing; Stadt München",
+   "metres": 0.8
+  },
+  {
+   "city": "Munich",
+   "id": "muc_029",
+   "tree": "The Horse Chestnut of Edlingerstraße",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-01970",
+   "register_name": "ND: 11/5, 1 Rosskastanie auf Fl.Nr.: 12303; Gmk. Sektion VII.; Stadt München",
+   "metres": 4.2
+  },
+  {
+   "city": "Munich",
+   "id": "muc_034",
+   "tree": "The Lime of the Porcelain Manufactory",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-07036",
+   "register_name": "ND: 11/9, 1 Winterlinde auf Fl.Nr.: 243/0 Gmk. Nymphenburg, Stadt München",
+   "metres": 1.7
+  },
+  {
+   "city": "Munich",
+   "id": "muc_035",
+   "tree": "The Sycamore Maple of Theresienstraße",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-01959",
+   "register_name": "ND: 5/3, Bergahorn auf Fl.Nr.: 4775/0; Gmk. Sektion III.; Stadt München",
+   "metres": 0.3
+  },
+  {
+   "city": "Munich",
+   "id": "muc_036",
+   "tree": "The Horse Chestnut of Gollierplatz",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-01976",
+   "register_name": "ND: 2/8, 1 Rosskastanie auf Fl.Nr.: 8427/2; Gmk. Sektion V.; Stadt München",
+   "metres": 3.0
+  },
+  {
+   "city": "Munich",
+   "id": "muc_042",
+   "tree": "The Norway Maple of Mondstraße",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-02000",
+   "register_name": "ND: 1/18, 1 Spitzahorn auf Fl.Nr.: 13356/0; Gmk. Sektion VII.; Stadt München",
+   "metres": 2.4
+  },
+  {
+   "city": "Munich",
+   "id": "muc_044",
+   "tree": "The Lime of the Muttenthaler Pond",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-02008",
+   "register_name": "ND: 5/19, 1Sommerlinde auf Fl.Nr.: 35/2; Gmk. Solln; Stadt München",
+   "metres": 4.9
+  },
+  {
+   "city": "Munich",
+   "id": "muc_046",
+   "tree": "The Lime of Landsberger Straße",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-07050",
+   "register_name": "ND: 2/21, 1 Sommerlinde auf Fl.Nr.: 125/2; Gmk. Pasing; Stadt München",
+   "metres": 1.5
+  },
+  {
+   "city": "Munich",
+   "id": "muc_048",
+   "tree": "The Yew of Laimer Kirchweg",
+   "register": "bayern-naturdenkmale",
+   "register_id": "ND-07059",
+   "register_name": "ND: 2/25, 1 Eibe auf Fl.Nr.: 60/0; Gmk. Laim; Stadt München",
+   "metres": 0.6
+  },
+  {
+   "city": "Oss",
+   "id": "oss_001",
+   "tree": "The Lime of Macharen Church",
+   "register": "netherlands-lrmb",
+   "register_id": 1680016,
+   "register_name": "Hollandse linde Sint-Petrus-Bandenkerk  ",
+   "metres": 0.0
+  },
+  {
+   "city": "Oss",
+   "id": "oss_002",
+   "tree": "The Lime of the Old School",
+   "register": "netherlands-lrmb",
+   "register_id": 1680017,
+   "register_name": "Hollandse linde Basisschool De Linde",
+   "metres": 0.0
+  },
+  {
+   "city": "Oss",
+   "id": "oss_004",
+   "tree": "The Beech of Sint-Lambertuskerk",
+   "register": "netherlands-lrmb",
+   "register_id": 1680015,
+   "register_name": "Beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "Roosendaal",
+   "id": "roo_005",
+   "tree": "The Beech of Vrouwenhof",
+   "register": "netherlands-lrmb",
+   "register_id": 1680973,
+   "register_name": "Beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "Roosendaal",
+   "id": "roo_007",
+   "tree": "The Poplar of the Bloemenmarkt",
+   "register": "netherlands-lrmb",
+   "register_id": 1690544,
+   "register_name": "Canadese populier",
+   "metres": 0.0
+  },
+  {
+   "city": "Sittard-Geleen",
+   "id": "sit_001",
+   "tree": "The Red Oak of Geleen-Oost Station",
+   "register": "netherlands-lrmb",
+   "register_id": 1684952,
+   "register_name": "Amerikaanse eik Spoorstation",
+   "metres": 0.0
+  },
+  {
+   "city": "Sittard-Geleen",
+   "id": "sit_002",
+   "tree": "The Copper Beech of Jardin d'Isabelle",
+   "register": "netherlands-lrmb",
+   "register_id": 1691232,
+   "register_name": "Bruine beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "Sittard-Geleen",
+   "id": "sit_003",
+   "tree": "The Ash of Jardin d'Isabelle",
+   "register": "netherlands-lrmb",
+   "register_id": 1691231,
+   "register_name": "Gewone es",
+   "metres": 0.0
+  },
+  {
+   "city": "Sittard-Geleen",
+   "id": "sit_004",
+   "tree": "The Sycamore of Janskamperstraat",
+   "register": "netherlands-lrmb",
+   "register_id": 1684953,
+   "register_name": "Gewone esdoorn",
+   "metres": 0.0
+  },
+  {
+   "city": "Sittard-Geleen",
+   "id": "sit_005",
+   "tree": "The Oak of Middengebied Noord",
+   "register": "netherlands-lrmb",
+   "register_id": 1697212,
+   "register_name": "Zomereik bij Middengebied Noord in Geleen",
+   "metres": 0.0
+  },
+  {
+   "city": "Sittard-Geleen",
+   "id": "sit_006",
+   "tree": "The Pin Oak of Sittard's Stadspark",
+   "register": "netherlands-lrmb",
+   "register_id": 1691229,
+   "register_name": "Moeraseik",
+   "metres": 0.0
+  },
+  {
+   "city": "Sittard-Geleen",
+   "id": "sit_008",
+   "tree": "The Tulip Tree of Sittard's Stadspark",
+   "register": "netherlands-lrmb",
+   "register_id": 1684947,
+   "register_name": "Tulpenboom",
+   "metres": 0.0
+  },
+  {
+   "city": "The Hague",
+   "id": "hag_023",
+   "tree": "The Plane of Park Hoekenburg",
+   "register": "netherlands-lrmb",
+   "register_id": 1686876,
+   "register_name": "Plataan op Romeins fundament",
+   "metres": 0.0
+  },
+  {
+   "city": "The Hague",
+   "id": "hag_024",
+   "tree": "The Copper Beech East of the Arentsburg Pond",
+   "register": "netherlands-lrmb",
+   "register_id": 1685200,
+   "register_name": "Bruine beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "The Hague",
+   "id": "hag_025",
+   "tree": "The Copper Beech North of the Vreugd en Rust Koepel",
+   "register": "netherlands-lrmb",
+   "register_id": 1685212,
+   "register_name": "Bruine beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "The Hague",
+   "id": "hag_027",
+   "tree": "The Den Burghstraat Beech of Park Arentsburg",
+   "register": "netherlands-lrmb",
+   "register_id": 1686877,
+   "register_name": "Beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "The Hague",
+   "id": "hag_028",
+   "tree": "The Copper Beech West of the Arentsburg Pond",
+   "register": "netherlands-lrmb",
+   "register_id": 1685199,
+   "register_name": "Bruine beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "The Hague",
+   "id": "hag_029",
+   "tree": "The Copper Beech at the Voorburg Cemetery Gate",
+   "register": "netherlands-lrmb",
+   "register_id": 1685205,
+   "register_name": "Bruine beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "The Hague",
+   "id": "hag_030",
+   "tree": "The Chestnut of Park Arentsburg",
+   "register": "netherlands-lrmb",
+   "register_id": 1685201,
+   "register_name": "Witte paardenkastanje",
+   "metres": 0.0
+  },
+  {
+   "city": "The Hague",
+   "id": "hag_031",
+   "tree": "The Stone Bench Beech of Juliana en Bernardpark",
+   "register": "netherlands-lrmb",
+   "register_id": 1685216,
+   "register_name": "Beuk",
+   "metres": 0.0
+  },
+  {
+   "city": "Tilburg",
+   "id": "til_007",
+   "tree": "The Silver Lime of the Villa Garden",
+   "register": "netherlands-lrmb",
+   "register_id": 1689281,
+   "register_name": "Zilverlinde",
+   "metres": 0.4
+  },
+  {
+   "city": "Venlo",
+   "id": "vnl_003",
+   "tree": "The Sequoia of the Toernooiveld",
+   "register": "netherlands-lrmb",
+   "register_id": 1689993,
+   "register_name": "Mammoetboom Toernooiveld",
+   "metres": 0.4
+  },
+  {
+   "city": "Zaanstad",
+   "id": "zaa_003",
+   "tree": "The Plane of the Westzijde",
+   "register": "netherlands-lrmb",
+   "register_id": 1690795,
+   "register_name": "Gewone plataan",
+   "metres": 0.0
+  },
+  {
+   "city": "Zaanstad",
+   "id": "zaa_005",
+   "tree": "The Horse Chestnut of the Kerkbuurt",
+   "register": "netherlands-lrmb",
+   "register_id": 1693432,
+   "register_name": "witte paardenkastanje, Kerkbuurt 48 Wz",
+   "metres": 0.0
+  },
+  {
+   "city": "Zaanstad",
+   "id": "zaa_009",
+   "tree": "The Horse Chestnut of the Dorpsstraat",
+   "register": "netherlands-lrmb",
+   "register_id": 1679699,
+   "register_name": "Witte paardenkastanje",
+   "metres": 0.0
+  },
+  {
+   "city": "Zwolle",
+   "id": "zwo_002",
+   "tree": "The Beech of the Boschwijk Avenue",
+   "register": "netherlands-lrmb",
+   "register_id": 1688448,
+   "register_name": "Beuk",
+   "metres": 0.4
+  },
+  {
+   "city": "Zwolle",
+   "id": "zwo_004",
+   "tree": "The Red Oak of Boschwijk",
+   "register": "netherlands-lrmb",
+   "register_id": 1689574,
+   "register_name": "Amerikaanse eik",
+   "metres": 0.2
+  },
+  {
+   "city": "Zwolle",
+   "id": "zwo_007",
+   "tree": "The Oak of the Kranenburg Cemetery",
+   "register": "netherlands-lrmb",
+   "register_id": 1689607,
+   "register_name": "Zomereik",
+   "metres": 0.1
+  }
+ ]
+}

@@ -1,301 +1,301 @@
 {
- "city": "Apeldoorn",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "William III built a hunting palace here in 1685 and planted avenues of oak in front of it. One of those oaks is still standing, by the statue of Frederick Henry, and the national register dates it to that planting. Four more grew up in the palace gardens over the following two centuries. The best tree in Apeldoorn is nowhere near any of them: a pollarded lime six metres round, tucked behind a fire station in Ugchelen, with a bench the council put there so people would sit and look at it.",
- "meta_description": "Eight remarkable trees in Apeldoorn: an oak planted with the avenues of Paleis Het Loo around 1685, and a six-metre pollarded lime behind a fire station.",
- "question_meta": "Apeldoorn's oldest tree is an oak at Paleis Het Loo, dated by the register to the palace's own planting around 1685. Where it stands, and seven more.",
- "question_answer": "The oldest tree in Apeldoorn is a pedunculate oak standing by the statue of Frederick Henry at Paleis Het Loo. The national register gives it a planting band of 1600 to 1700 and adds its own reasoning: it was probably put in at the same time as the oaks of the Koningslaan in front of the palace, which would date it to shortly after the palace was built, between 1685 and 1690. That would make it about 340 years old. A Dutch lime at Het Woldhuis, east of the town, carries the same 1600 to 1700 band with no such reasoning attached. Neither has been cored, so the oak is the oldest by the register's own dating and the lime is its equal on paper.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. Where the register offers reasoning of its own, as it does for the Het Loo oak and for the Ugchelen lime, the page repeats the reasoning rather than only the number, so you can judge it yourself. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged: it is an official survey and a good one, but one source is one source. The Ugchelen lime is the exception and carries a measured girth. Access is worth reading before you go, because five of these eight stand inside Paleis Het Loo, which is not free. If you find one of these gone, tell us and we will take it down the same day.",
- "hero_tree_id": "apd_002",
- "oldest_tree_id": "apd_001",
- "faq": [
-  {
-   "q": "What is the oldest tree in Apeldoorn?",
-   "a": "An oak by the statue of Frederick Henry at Paleis Het Loo. The register bands it 1600 to 1700 and reasons that it went in with the Koningslaan oaks shortly after the palace was built, between 1685 and 1690, which would make it around 340 years old."
-  },
-  {
-   "q": "Do I have to pay to see the Het Loo trees?",
-   "a": "Yes. The palace, the stables and the formal gardens are covered by a museum ticket, which the Museumkaart also covers. The surrounding Paleispark is a separate two euro day ticket from the machines at its two entrances, with children free. The Ugchelen lime, the Wilhelminapark oak, the Oranjepark oak and Het Woldhuis are all free."
-  },
-  {
-   "q": "Which is the thickest tree in Apeldoorn?",
-   "a": "The pollarded lime behind the fire station in Ugchelen is one of them, at over six metres round measured at 1.30 metres. The register calls it one of the thickest and oldest in Apeldoorn and puts its planting between 1750 and 1800."
-  },
-  {
-   "q": "Why are so many of these in one palace garden?",
-   "a": "Because the palace is the reason Apeldoorn has old trees at all. This was heath. William III laid out avenues in the 1680s, later owners planted the gardens through the nineteenth century, and the ground was never built on or cleared. Everything around it was sand."
-  }
- ],
- "trees": [
-  {
-   "id": "apd_001",
-   "name": "The Oak by the Statue of Frederick Henry",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 340 years, if the register is right that it went in with the palace avenues between 1685 and 1690",
-   "age_min": 326,
-   "age_max": 426,
-   "location": {
-    "address": "Paleis Het Loo, beside the statue of Frederick Henry",
-    "latitude": 52.23249,
-    "longitude": 5.9442,
-    "neighbourhood": "Het Loo"
-   },
-   "story": "William III wanted somewhere to hunt, and in 1685 he built a palace on the sand north of a village nobody had heard of. In front of it he had oaks planted in avenues, the Koningslaan, because that is what you did with an approach.\n\nThe national register believes this is one of them. It gives the tree a planting band of 1600 to 1700 and then says why it leans late: probably planted at the same time as the Koningslaan oaks, which means between 1685 and 1690. That reasoning is the register's own and it is worth repeating rather than hiding, because it is the whole basis for calling this tree roughly 340 years old. Nobody has taken a core.\n\nWhat is certain is that it was standing when William became King of England in 1689 and left for London, when the French occupied the palace in 1795, and when the last royal resident died in 1962.\n\nIt stands beside the statue of Frederick Henry, which is the easiest landmark on the estate. The oak is the heavy one behind it, with the low branching of a tree that grew up in the open rather than in a wood.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/",
-    "https://paleishetloo.nl/bezoek/tickets"
-   ],
-   "access": "Paid. Inside Paleis Het Loo: the palace and formal gardens need a museum ticket, the surrounding Paleispark a two euro day ticket from the machines at its entrances.",
-   "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The big low-branched oak standing directly behind the statue of Frederick Henry.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the acorns come down"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "apd_002",
-   "name": "The Pollarded Lime of Ugchelen",
-   "species": "Common Lime (Tilia x europaea)",
-   "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
-   "age_min": 226,
-   "age_max": 276,
-   "girth_cm": 600,
-   "location": {
-    "address": "Behind the fire station, G. P. Duringlaan, behind number 17, Ugchelen",
-    "latitude": 52.18347,
-    "longitude": 5.93449,
-    "neighbourhood": "Ugchelen"
-   },
-   "story": "Over six metres round, measured at chest height, and it stands behind a fire station.\n\nThat is the whole appeal. Apeldoorn has a royal palace full of documented trees and its thickest and one of its oldest is a lime hidden at an angle behind a municipal building in a village on the southern edge, where you would walk past it for years without knowing.\n\nIt is a leilinde, a lime that was pollarded and trained flat, which is what people did to a tree standing against a house front: you kept it low, you cut it back hard every few years, and it gave shade in summer without taking the light in winter. The register reads it the same way and supposes there was once a cottage or a small farm here, with the lime trained across its facade, planted somewhere between 1750 and 1800.\n\nThe village council thought this was worth doing something about. They put up a sign on the road pointing to it, and the town had already put a bench there years earlier, so you can sit down and look at it properly.\n\nThat is the correct response to a tree like this, and it is rarer than the tree.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public ground behind the fire station, with a bench and a sign from the road.",
-   "transport": "About 5 km southwest of Apeldoorn station, in Ugchelen. Bus to Ugchelen, then a short walk to the G. P. Duringlaan.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "An enormous short-trunked lime with an old pollarded, flat-trained crown, set back at an angle behind the fire station. There is a bench.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "apd_003",
-   "name": "The Copper Beech of the Upper Garden",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
-   "age_min": 206,
-   "age_max": 216,
-   "location": {
-    "address": "At the back of the Boventuin, the upper garden of Paleis Het Loo",
-    "latitude": 52.23581,
-    "longitude": 5.94658,
-    "neighbourhood": "Het Loo"
-   },
-   "story": "Copper beeches were a fashion, and this one arrived at the height of it.\n\nThe purple-leaved form of the common beech is a natural mutation. It turns up on its own now and then in European woods, and from the eighteenth century onward nurseries learned to graft it and sold it hard to anyone laying out a landscape garden. Between 1810 and 1820, when this one went into the back of the upper garden at Het Loo, having one was a statement about being current.\n\nTwo centuries later the fashion has aged into something better. A copper beech at this size is a dark solid mass of a tree, and in a formal garden built on symmetry and pale gravel it does the useful job of being the one heavy dark thing in the composition.\n\nStand under it rather than in front of it. Beech leaves are thin enough that a mature purple canopy lit from above turns the light underneath a deep red, which is the reason people planted them and the reason the photographs never work.\n\nIt is at the far end of the Boventuin, behind the formal planting.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Paid. Inside the formal gardens of Paleis Het Loo, covered by a museum ticket.",
-   "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The large dark purple-leaved beech at the back of the upper garden.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the purple turns to copper"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "apd_004",
-   "name": "The Tulip Tree of the Palace Garden",
-   "species": "Tulip Tree (Liriodendron tulipifera)",
-   "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
-   "age_min": 206,
-   "age_max": 216,
-   "location": {
-    "address": "At the back of the Boventuin, the upper garden of Paleis Het Loo",
-    "latitude": 52.23593,
-    "longitude": 5.94671,
-    "neighbourhood": "Het Loo"
-   },
-   "story": "It flowers in June and almost nobody notices, because the flowers are green and orange and they sit upright at the ends of branches twenty metres up.\n\nThat is the thing worth knowing about a tulip tree. It is not named for its shape. It is named for the flower, which is a real tulip-shaped bloom about six centimetres across, pale green with an orange band at the base, and on a tree this size they are held so high that most people who walk past in flowering season see nothing at all. Bring something to look through, or wait until they drop.\n\nThe leaf is the other giveaway and it works all summer: squared off at the tip, as though somebody cut the point off with scissors. There is no other tree in a Dutch garden with that leaf.\n\nIt is an eastern North American species, in European gardens since the seventeenth century, and it was planted here in the same stretch as the copper beech beside it, between 1810 and 1820.\n\nIn October it turns clear yellow, which on a tree this tall is the version of it most people actually see.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Paid. Inside the formal gardens of Paleis Het Loo, covered by a museum ticket.",
-   "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Tall and straight, with leaves that look cut off square at the tip. Beside the copper beech at the back of the upper garden.",
-   "best_time": {
-    "months": [
-     6
-    ],
-    "kind": "flowers",
-    "label": "June, when the green and orange flowers are up in the crown"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "apd_005",
-   "name": "The Copper Beech by the Pond",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 175 to 185 years, from the register's planting band of 1840 to 1850",
-   "age_min": 176,
-   "age_max": 186,
-   "location": {
-    "address": "At the back of the palace garden, west side of the pond, Paleis Het Loo",
-    "latitude": 52.23637,
-    "longitude": 5.94542,
-    "neighbourhood": "Het Loo"
-   },
-   "story": "A generation younger than the beech at the back of the upper garden, and planted where it would be reflected.\n\nThis is the second copper beech in these gardens and the placing is the point of it. It stands on the west side of the pond, which means the water sits between you and the tree for most of the approach, and a dark purple canopy over still water is a trick that landscape gardeners had worked out long before anyone here was planting.\n\nThe register puts it between 1840 and 1850. By then the copper beech was no longer a novelty and had settled into being a standard part of the vocabulary, the heavy dark accent you put where a composition needs weight.\n\nWhat two centuries add is bulk that no design anticipated. These trees keep thickening long after they stop rising, so a mature one ends up out of scale with everything planted alongside it, and the garden quietly rearranges itself around the biggest thing in it.\n\nGo on a still morning and look at the water rather than the tree.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Paid. Inside the formal gardens of Paleis Het Loo, covered by a museum ticket.",
-   "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The purple beech standing on the western bank of the pond at the back of the garden.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "apd_006",
-   "name": "The Red Oak of the Wilhelminapark",
-   "species": "Northern Red Oak (Quercus rubra)",
-   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "Wilhelminapark, centrally along the northwest side",
-    "latitude": 52.22226,
-    "longitude": 5.96415,
-    "neighbourhood": "Wilhelminapark"
-   },
-   "story": "This park exists to sell building plots.\n\nThe ground was the De Vlijt estate, mostly heath. In 1825 its owner Ameshof built the villa Marialust and dug the large pond that still lies in front of it. Sixty years later the company that had the land wanted to sell it off for villas, and worked out that people pay more for a plot beside a park than a plot beside a field. So in 1885 they laid out the road pattern, and made a walking park around the pond that was already there.\n\nIt worked well enough that in 1889 they offered the roads and the park to the town, which took them. In August 1890 the council asked the king for permission to name it after Princess Wilhelmina on her tenth birthday. He said yes, and from 17 August 1890 it has been the Wilhelminapark.\n\nThe register puts this red oak between 1860 and 1870, which places it before the park and inside the estate that preceded it. Red oak is an American species, planted here for its autumn colour, and in a good year it is the reddest thing in Apeldoorn.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public park, open daily.",
-   "transport": "About 1.5 km northeast of Apeldoorn station, on foot.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A large oak with big bristle-tipped leaves along the northwest side of the park, turning deep red in autumn.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when it goes properly red"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "apd_007",
-   "name": "The Lime of Het Woldhuis",
-   "species": "Common Lime (Tilia x europaea)",
-   "age_estimate": "roughly 325 to 425 years, from the register's planting band of 1600 to 1700",
-   "age_min": 326,
-   "age_max": 426,
-   "location": {
-    "address": "Het Woldhuis 1, east of Apeldoorn",
-    "latitude": 52.20476,
-    "longitude": 6.03569,
-    "neighbourhood": "Woudhuis"
-   },
-   "story": "The register gives this lime the same planting band as the oak at the palace, 1600 to 1700, and unlike the oak it offers no reasoning at all. That is a century of uncertainty stated plainly, and it is the honest position: somebody surveyed a very old lime on an estate east of the town and could not date it more closely than that.\n\nSo it is either the oldest tree in Apeldoorn or roughly the same age as the palace oak, and there is no way to settle it without a core.\n\nWhat a band that wide does tell you is what the tree looks like. Limes of this age are rarely single clean trunks. They tend to have been cut, layered, split by their own weight and regrown, sometimes hollow, often with the ground around the base thrown up by roots that have had three or four hundred years to spread. A lime is also one of the few trees that can produce a new trunk from a fallen limb that touches soil, which is part of why they last.\n\nIf you go and can take a girth measurement at 1.30 metres, send it to us. That is the number that would settle this.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Recorded as visitable in the national register; the tree stands on the estate grounds at Het Woldhuis 1.",
-   "transport": "About 6 km east of Apeldoorn station, on the Woudhuis side.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A very heavy old lime by the estate buildings, likely with multiple stems or an irregular hollowing trunk.",
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "apd_008",
-   "name": "The Pin Oak of the Oranjepark",
-   "species": "Pin Oak (Quercus palustris)",
-   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "West side of the Oranjepark, opposite the P. Krugerstraat",
-    "latitude": 52.21854,
-    "longitude": 5.96018,
-    "neighbourhood": "Oranjepark"
-   },
-   "story": "A pin oak of this age is unusual in the Netherlands, because the species did not become a standard street and park tree here until well into the twentieth century. One planted between 1860 and 1870 was somebody's deliberate choice rather than a default.\n\nIt is easy to identify and hard to confuse with the pedunculate oaks around it. The leaves are cut into narrow, sharply bristled lobes with deep rounded bays between them, nothing like the soft rounded lobes of a native oak. The lower branches sweep downward toward the ground while the upper ones point up, which gives an old one a distinctive drooping-skirted outline you can read from across a lawn.\n\nIts other habit is holding its dead leaves. Pin oaks often keep a rustling brown canopy through most of the winter and only drop it when the new buds push in spring, so this is a tree that looks occupied in January when everything around it is bare.\n\nIt stands on the west side of the Oranjepark, opposite the P. Krugerstraat. In late October it turns a deep scarlet that lasts a fortnight.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public park, open daily.",
-   "transport": "About 1 km northeast of Apeldoorn station, on foot.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Narrow bristle-tipped leaves and lower branches that sweep down toward the grass. In winter it is the oak still holding brown leaves.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "late October, when it turns scarlet"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  }
- ]
+  "city": "Apeldoorn",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "William III built a hunting palace here in 1685 and planted avenues of oak in front of it. One of those oaks is still standing, by the statue of Frederick Henry, and the national register dates it to that planting. Four more grew up in the palace gardens over the following two centuries. The best tree in Apeldoorn is nowhere near any of them: a pollarded lime six metres round, tucked behind a fire station in Ugchelen, with a bench the council put there so people would sit and look at it.",
+  "meta_description": "Eight remarkable trees in Apeldoorn: an oak planted with the avenues of Paleis Het Loo around 1685, and a six-metre pollarded lime behind a fire station.",
+  "question_meta": "Apeldoorn's oldest tree is an oak at Paleis Het Loo, dated by the register to the palace's own planting around 1685. Where it stands, and seven more.",
+  "question_answer": "The oldest tree in Apeldoorn is a pedunculate oak standing by the statue of Frederick Henry at Paleis Het Loo. The national register gives it a planting band of 1600 to 1700 and adds its own reasoning: it was probably put in at the same time as the oaks of the Koningslaan in front of the palace, which would date it to shortly after the palace was built, between 1685 and 1690. That would make it about 340 years old. A Dutch lime at Het Woldhuis, east of the town, carries the same 1600 to 1700 band with no such reasoning attached. Neither has been cored, so the oak is the oldest by the register's own dating and the lime is its equal on paper.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. Where the register offers reasoning of its own, as it does for the Het Loo oak and for the Ugchelen lime, the page repeats the reasoning rather than only the number, so you can judge it yourself. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged: it is an official survey and a good one, but one source is one source. The Ugchelen lime is the exception and carries a measured girth. Access is worth reading before you go, because five of these eight stand inside Paleis Het Loo, which is not free. If you find one of these gone, tell us and we will take it down the same day.",
+  "hero_tree_id": "apd_002",
+  "oldest_tree_id": "apd_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Apeldoorn?",
+      "a": "An oak by the statue of Frederick Henry at Paleis Het Loo. The register bands it 1600 to 1700 and reasons that it went in with the Koningslaan oaks shortly after the palace was built, between 1685 and 1690, which would make it around 340 years old."
+    },
+    {
+      "q": "Do I have to pay to see the Het Loo trees?",
+      "a": "Yes. The palace, the stables and the formal gardens are covered by a museum ticket, which the Museumkaart also covers. The surrounding Paleispark is a separate two euro day ticket from the machines at its two entrances, with children free. The Ugchelen lime, the Wilhelminapark oak, the Oranjepark oak and Het Woldhuis are all free."
+    },
+    {
+      "q": "Which is the thickest tree in Apeldoorn?",
+      "a": "The pollarded lime behind the fire station in Ugchelen is one of them, at over six metres round measured at 1.30 metres. The register calls it one of the thickest and oldest in Apeldoorn and puts its planting between 1750 and 1800."
+    },
+    {
+      "q": "Why are so many of these in one palace garden?",
+      "a": "Because the palace is the reason Apeldoorn has old trees at all. This was heath. William III laid out avenues in the 1680s, later owners planted the gardens through the nineteenth century, and the ground was never built on or cleared. Everything around it was sand."
+    }
+  ],
+  "trees": [
+    {
+      "id": "apd_001",
+      "name": "The Oak by the Statue of Frederick Henry",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 340 years, if the register is right that it went in with the palace avenues between 1685 and 1690",
+      "age_min": 326,
+      "age_max": 426,
+      "location": {
+        "address": "Paleis Het Loo, beside the statue of Frederick Henry",
+        "latitude": 52.23249,
+        "longitude": 5.9442,
+        "neighbourhood": "Het Loo"
+      },
+      "story": "William III wanted somewhere to hunt, and in 1685 he built a palace on the sand north of a village nobody had heard of. In front of it he had oaks planted in avenues, the Koningslaan, because that is what you did with an approach.\n\nThe national register believes this is one of them. It gives the tree a planting band of 1600 to 1700 and then says why it leans late: probably planted at the same time as the Koningslaan oaks, which means between 1685 and 1690. That reasoning is the register's own and it is worth repeating rather than hiding, because it is the whole basis for calling this tree roughly 340 years old. Nobody has taken a core.\n\nWhat is certain is that it was standing when William became King of England in 1689 and left for London, when the French occupied the palace in 1795, and when the last royal resident died in 1962.\n\nIt stands beside the statue of Frederick Henry, which is the easiest landmark on the estate. The oak is the heavy one behind it, with the low branching of a tree that grew up in the open rather than in a wood.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://paleishetloo.nl/bezoek/tickets"
+      ],
+      "access": "Paid. Inside Paleis Het Loo: the palace and formal gardens need a museum ticket, the surrounding Paleispark a two euro day ticket from the machines at its entrances.",
+      "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The big low-branched oak standing directly behind the statue of Frederick Henry.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the acorns come down"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "apd_002",
+      "name": "The Pollarded Lime of Ugchelen",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
+      "age_min": 226,
+      "age_max": 276,
+      "girth_cm": 600,
+      "location": {
+        "address": "Behind the fire station, G. P. Duringlaan, behind number 17, Ugchelen",
+        "latitude": 52.18347,
+        "longitude": 5.93449,
+        "neighbourhood": "Ugchelen"
+      },
+      "story": "Over six metres round, measured at chest height, and it stands behind a fire station.\n\nThat is the whole appeal. Apeldoorn has a royal palace full of documented trees and its thickest and one of its oldest is a lime hidden at an angle behind a municipal building in a village on the southern edge, where you would walk past it for years without knowing.\n\nIt is a leilinde, a lime that was pollarded and trained flat, which is what people did to a tree standing against a house front: you kept it low, you cut it back hard every few years, and it gave shade in summer without taking the light in winter. The register reads it the same way and supposes there was once a cottage or a small farm here, with the lime trained across its facade, planted somewhere between 1750 and 1800.\n\nThe village council thought this was worth doing something about. They put up a sign on the road pointing to it, and the town had already put a bench there years earlier, so you can sit down and look at it properly.\n\nThat is the correct response to a tree like this, and it is rarer than the tree.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public ground behind the fire station, with a bench and a sign from the road.",
+      "transport": "About 5 km southwest of Apeldoorn station, in Ugchelen. Bus to Ugchelen, then a short walk to the G. P. Duringlaan.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "An enormous short-trunked lime with an old pollarded, flat-trained crown, set back at an angle behind the fire station. There is a bench.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "apd_003",
+      "name": "The Copper Beech of the Upper Garden",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
+      "age_min": 206,
+      "age_max": 216,
+      "location": {
+        "address": "At the back of the Boventuin, the upper garden of Paleis Het Loo",
+        "latitude": 52.23581,
+        "longitude": 5.94658,
+        "neighbourhood": "Het Loo"
+      },
+      "story": "Copper beeches were a fashion, and this one arrived at the height of it.\n\nThe purple-leaved form of the common beech is a natural mutation. It turns up on its own now and then in European woods, and from the eighteenth century onward nurseries learned to graft it and sold it hard to anyone laying out a landscape garden. Between 1810 and 1820, when this one went into the back of the upper garden at Het Loo, having one was a statement about being current.\n\nTwo centuries later the fashion has aged into something better. A copper beech at this size is a dark solid mass of a tree, and in a formal garden built on symmetry and pale gravel it does the useful job of being the one heavy dark thing in the composition.\n\nStand under it rather than in front of it. Beech leaves are thin enough that a mature purple canopy lit from above turns the light underneath a deep red, which is the reason people planted them and the reason the photographs never work.\n\nIt is at the far end of the Boventuin, behind the formal planting.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Paid. Inside the formal gardens of Paleis Het Loo, covered by a museum ticket.",
+      "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large dark purple-leaved beech at the back of the upper garden.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the purple turns to copper"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "apd_004",
+      "name": "The Tulip Tree of the Palace Garden",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
+      "age_min": 206,
+      "age_max": 216,
+      "location": {
+        "address": "At the back of the Boventuin, the upper garden of Paleis Het Loo",
+        "latitude": 52.23593,
+        "longitude": 5.94671,
+        "neighbourhood": "Het Loo"
+      },
+      "story": "It flowers in June and almost nobody notices, because the flowers are green and orange and they sit upright at the ends of branches twenty metres up.\n\nThat is the thing worth knowing about a tulip tree. It is not named for its shape. It is named for the flower, which is a real tulip-shaped bloom about six centimetres across, pale green with an orange band at the base, and on a tree this size they are held so high that most people who walk past in flowering season see nothing at all. Bring something to look through, or wait until they drop.\n\nThe leaf is the other giveaway and it works all summer: squared off at the tip, as though somebody cut the point off with scissors. There is no other tree in a Dutch garden with that leaf.\n\nIt is an eastern North American species, in European gardens since the seventeenth century, and it was planted here in the same stretch as the copper beech beside it, between 1810 and 1820.\n\nIn October it turns clear yellow, which on a tree this tall is the version of it most people actually see.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Paid. Inside the formal gardens of Paleis Het Loo, covered by a museum ticket.",
+      "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Tall and straight, with leaves that look cut off square at the tip. Beside the copper beech at the back of the upper garden.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the green and orange flowers are up in the crown"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "apd_005",
+      "name": "The Copper Beech by the Pond",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 175 to 185 years, from the register's planting band of 1840 to 1850",
+      "age_min": 176,
+      "age_max": 186,
+      "location": {
+        "address": "At the back of the palace garden, west side of the pond, Paleis Het Loo",
+        "latitude": 52.23637,
+        "longitude": 5.94542,
+        "neighbourhood": "Het Loo"
+      },
+      "story": "A generation younger than the beech at the back of the upper garden, and planted where it would be reflected.\n\nThis is the second copper beech in these gardens and the placing is the point of it. It stands on the west side of the pond, which means the water sits between you and the tree for most of the approach, and a dark purple canopy over still water is a trick that landscape gardeners had worked out long before anyone here was planting.\n\nThe register puts it between 1840 and 1850. By then the copper beech was no longer a novelty and had settled into being a standard part of the vocabulary, the heavy dark accent you put where a composition needs weight.\n\nWhat two centuries add is bulk that no design anticipated. These trees keep thickening long after they stop rising, so a mature one ends up out of scale with everything planted alongside it, and the garden quietly rearranges itself around the biggest thing in it.\n\nGo on a still morning and look at the water rather than the tree.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Paid. Inside the formal gardens of Paleis Het Loo, covered by a museum ticket.",
+      "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The purple beech standing on the western bank of the pond at the back of the garden.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "apd_006",
+      "name": "The Red Oak of the Wilhelminapark",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Wilhelminapark, centrally along the northwest side",
+        "latitude": 52.22226,
+        "longitude": 5.96415,
+        "neighbourhood": "Wilhelminapark"
+      },
+      "story": "This park exists to sell building plots.\n\nThe ground was the De Vlijt estate, mostly heath. In 1825 its owner Ameshof built the villa Marialust and dug the large pond that still lies in front of it. Sixty years later the company that had the land wanted to sell it off for villas, and worked out that people pay more for a plot beside a park than a plot beside a field. So in 1885 they laid out the road pattern, and made a walking park around the pond that was already there.\n\nIt worked well enough that in 1889 they offered the roads and the park to the town, which took them. In August 1890 the council asked the king for permission to name it after Princess Wilhelmina on her tenth birthday. He said yes, and from 17 August 1890 it has been the Wilhelminapark.\n\nThe register puts this red oak between 1860 and 1870, which places it before the park and inside the estate that preceded it. Red oak is an American species, planted here for its autumn colour, and in a good year it is the reddest thing in Apeldoorn.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park, open daily.",
+      "transport": "About 1.5 km northeast of Apeldoorn station, on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A large oak with big bristle-tipped leaves along the northwest side of the park, turning deep red in autumn.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when it goes properly red"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "apd_007",
+      "name": "The Lime of Het Woldhuis",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 325 to 425 years, from the register's planting band of 1600 to 1700",
+      "age_min": 326,
+      "age_max": 426,
+      "location": {
+        "address": "Het Woldhuis 1, east of Apeldoorn",
+        "latitude": 52.20476,
+        "longitude": 6.03569,
+        "neighbourhood": "Woudhuis"
+      },
+      "story": "The register gives this lime the same planting band as the oak at the palace, 1600 to 1700, and unlike the oak it offers no reasoning at all. That is a century of uncertainty stated plainly, and it is the honest position: somebody surveyed a very old lime on an estate east of the town and could not date it more closely than that.\n\nSo it is either the oldest tree in Apeldoorn or roughly the same age as the palace oak, and there is no way to settle it without a core.\n\nWhat a band that wide does tell you is what the tree looks like. Limes of this age are rarely single clean trunks. They tend to have been cut, layered, split by their own weight and regrown, sometimes hollow, often with the ground around the base thrown up by roots that have had three or four hundred years to spread. A lime is also one of the few trees that can produce a new trunk from a fallen limb that touches soil, which is part of why they last.\n\nIf you go and can take a girth measurement at 1.30 metres, send it to us. That is the number that would settle this.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Recorded as visitable in the national register; the tree stands on the estate grounds at Het Woldhuis 1.",
+      "transport": "About 6 km east of Apeldoorn station, on the Woudhuis side.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A very heavy old lime by the estate buildings, likely with multiple stems or an irregular hollowing trunk.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "apd_008",
+      "name": "The Pin Oak of the Oranjepark",
+      "species": "Pin Oak (Quercus palustris)",
+      "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "West side of the Oranjepark, opposite the P. Krugerstraat",
+        "latitude": 52.21854,
+        "longitude": 5.96018,
+        "neighbourhood": "Oranjepark"
+      },
+      "story": "A pin oak of this age is unusual in the Netherlands, because the species did not become a standard street and park tree here until well into the twentieth century. One planted between 1860 and 1870 was somebody's deliberate choice rather than a default.\n\nIt is easy to identify and hard to confuse with the pedunculate oaks around it. The leaves are cut into narrow, sharply bristled lobes with deep rounded bays between them, nothing like the soft rounded lobes of a native oak. The lower branches sweep downward toward the ground while the upper ones point up, which gives an old one a distinctive drooping-skirted outline you can read from across a lawn.\n\nIts other habit is holding its dead leaves. Pin oaks often keep a rustling brown canopy through most of the winter and only drop it when the new buds push in spring, so this is a tree that looks occupied in January when everything around it is bare.\n\nIt stands on the west side of the Oranjepark, opposite the P. Krugerstraat. In late October it turns a deep scarlet that lasts a fortnight.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park, open daily.",
+      "transport": "About 1 km northeast of Apeldoorn station, on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Narrow bristle-tipped leaves and lower branches that sweep down toward the grass. In winter it is the oak still holding brown leaves.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "late October, when it turns scarlet"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
 }

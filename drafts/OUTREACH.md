@@ -757,3 +757,34 @@ reply invisible. It now also matches the SUBJECT we ourselves sent, which finds
 a reply from any address without opening anything else. Three more were hidden
 the same way: Wolfgang Schurmann from woelfie@gmx.de, Clara Visser from
 clavi@hetnet.nl, and the chairman of the Danish Dendrology Society.
+
+## Batch 007, 2026-08-30: 27 mails, and the first batch nobody hand-scouted
+
+Twenty-seven, not forty, and that is the point rather than a shortfall. What
+remains in the old pool is gardens, parks and municipal inboxes, measured at 0
+of 12 in `scripts/outreach_stats.py`, and padding a batch with addresses that
+do not answer is how a 16 percent reply rate becomes a 10 percent one.
+
+**The addresses came from a script.** `scripts/outreach_scout.py --gaps` named
+the 107 published cities with no contact of their own, and `--find` read the
+addresses off the organisations' own contact pages. Two directories did most of
+the work and both are worth keeping:
+
+- **bomenstichting.nl/bomenorganisaties.html** lists every local Dutch tree
+  group. Five of them are in cities we publish and had nobody: Leeuwarden,
+  Deventer, Zwolle, Tilburg, Eindhoven.
+- **ondalberi.it** publishes the same per Italian region, committee by
+  committee with an address each. That gave Turin, Venice (Mestre), Padua,
+  Verona, Florence and Lucca in one afternoon, and there are regions left.
+
+**Spain came back after its August closure**, with the reason recorded per mail
+in the register: both associations answered batch 005 with an out-of-office
+saying the secretariat was shut from 1 to 31 August, so nobody there ever read
+it. That is what the resend door is for.
+
+**What the finder gets wrong, so nobody trusts it blindly.** It returned a
+Seville town-hall line for femas.es and a waste company for a Turin newspaper,
+because it reads the first plausible address on the page. Every address in this
+batch was looked at before it went in. Six of twelve sites in one round had no
+address at all, only a form, and those are recorded as such so nobody hunts
+them twice.

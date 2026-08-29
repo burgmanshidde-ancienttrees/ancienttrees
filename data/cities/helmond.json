@@ -1,284 +1,284 @@
 {
- "city": "Helmond",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "Kasteel Helmond has stood in the middle of this town for nearly seven hundred years, and until the middle of the last century it sat in a large landscape park. Most of that park went after 1921, when the last private owner sold up. Four trees from it are still standing, which makes the castle grounds the best surviving fragment of the thing. The rest of this page is a beech in a wood that was once hunting ground of the lords of Helmond, an oak beside a tower from about 1400, and an oak somebody wrote a book about.",
- "meta_description": "Seven remarkable trees in Helmond: four survivors of the castle's lost landscape park, an oak by a tower from 1400, and the old oak of farmer Peeters.",
- "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and six more worth the walk.",
- "question_answer": "The oldest tree in Helmond is the one known as de oude eik van boer Peeters, the old oak of farmer Peeters, on the Rijnlaan at Brouwhuis, which the national register places in a planting band of 1820 to 1830, so around two centuries old. Its name is not folklore we have collected: the register itself says the name comes from the book 'Grote en kleine geschiedenissen rond bomen in Helmond en omgeving' by Maria van de Looverbosch, which is a local history of the trees of Helmond and its surroundings. That is worth knowing because it means somebody in this town went to the trouble of writing down what its trees are called, and the national register then read it.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and is the single source throughout, so everything is flagged. Four of the seven stand in the grounds of Kasteel Helmond and share one piece of history: the castle has been here nearly seven hundred years, was surrounded by a large landscape park until the middle of the twentieth century, and lost most of that park after the last private owner sold it in 1921. The trees are what is left, and the three planted between 1880 and 1930 straddle that sale, so the oak belongs to the private park and the lime and the chestnut to the years just after it ended. Where a pin is marked approximate we know the grounds and not the trunk, which in a castle park is a real difference, and if you find one of these gone, tell us and it comes off the same day.",
- "hero_tree_id": "hlm_001",
- "oldest_tree_id": "hlm_002",
- "faq": [
-  {
-   "q": "What happened to the park around Kasteel Helmond?",
-   "a": "It was largely lost. The castle stood in a large landscape park until the middle of the twentieth century, and most of that disappeared after the last private owner sold the castle in 1921. Four of the trees on this page are survivors of it."
-  },
-  {
-   "q": "Who was farmer Peeters?",
-   "a": "We do not know, and that is part of the point. The oak carries his name because it was recorded that way in Maria van de Looverbosch's book on the trees of Helmond and its surroundings, and the national register took the name from there. The man is gone and the tree is still called after him."
-  },
-  {
-   "q": "What is the Oude Toren at Stiphout?",
-   "a": "A church tower dating from about 1400, standing on its own. The oak beside it is a great deal younger, banded 1850 to 1860 by the register, so the tower had already been there for four and a half centuries when the tree went in."
-  },
-  {
-   "q": "Are they free to visit?",
-   "a": "All seven. The castle park is open ground in the centre of town, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis."
-  }
- ],
- "trees": [
-  {
-   "id": "hlm_001",
-   "name": "The Silver Maple of the Castle Park",
-   "species": "Silver Maple (Acer saccharinum)",
-   "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890 to 1900",
-   "age_min": 126,
-   "age_max": 136,
-   "location": {
-    "address": "Castle park, Kasteelplein 1",
-    "latitude": 51.47807,
-    "longitude": 5.65253,
-    "neighbourhood": "Kasteelplein"
-   },
-   "story": "This tree is a fragment of something much larger that no longer exists.\n\nKasteel Helmond has been standing in the middle of this town for nearly seven hundred years, a moated brick castle that is now the town hall and museum. Until the middle of the twentieth century it sat inside a big landscape park, the kind that a private owner maintains and a town cannot. In 1921 the last private owner sold the castle, and most of the park went in the decades that followed, built over or reorganised into something smaller.\n\nThe silver maple, planted between 1890 and 1900, belongs to that vanished park. So do three other trees on this page. Together they are the best physical evidence of what used to be here.\n\nSilver maple is North American and was planted for speed and for its leaf, which is cut into five narrow lobes and is bright silver-white on the underside, so the crown flashes pale whenever there is wind.\n\nIt does one more thing worth timing a visit for. It flowers in March, in small red and yellow tufts directly on the bare twigs, weeks before anything around it moves.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Open castle grounds in the centre of town.",
-   "transport": "In the centre of Helmond, at the Kasteelplein.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Deeply cut leaves showing silver-white underneath, flickering pale in any breeze.",
-   "best_time": {
-    "months": [
-     3
-    ],
-    "kind": "flowers",
-    "label": "March, when it flowers on bare twigs before anything else"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "hlm_002",
-   "name": "The Old Oak of Farmer Peeters",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 195 to 205 years, from the register's planting band of 1820 to 1830",
-   "age_min": 196,
-   "age_max": 206,
-   "location": {
-    "address": "Rijnlaan 125, Brouwhuis",
-    "latitude": 51.46805,
-    "longitude": 5.70131,
-    "neighbourhood": "Brouwhuis"
-   },
-   "story": "Somebody wrote a book about the trees of this town, and because of it we know what this oak is called.\n\nThe national register does not usually explain its own names. Here it does: the tree is listed as de oude eik van boer Peeters, and the register says the name comes from 'Grote en kleine geschiedenissen rond bomen in Helmond en omgeving' by Maria van de Looverbosch, a collection of large and small histories of the trees in and around Helmond.\n\nThat chain is worth appreciating. A local writer went round asking about trees, wrote down what people called them, published it, and a national government survey later read the book and used the name. Farmer Peeters himself has vanished entirely.\n\nThe oak is banded 1820 to 1830, so it is about two centuries old and stands at Brouwhuis on the Rijnlaan, in what is now a housing district on what was farmland when it was planted.\n\nThat is the fate of most old farm oaks that survive: the fields go, the buildings arrive, and the tree ends up in a green strip with a street name around it and a farmer's name attached.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public planting on the Rijnlaan.",
-   "transport": "About 4 km southeast of Helmond centre, at Brouwhuis.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A big old oak standing clear in the green strip at Rijnlaan 125, far heavier than the street planting.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the acorns come down"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "hlm_003",
-   "name": "The Oak at the Old Tower",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 165 to 175 years, from the register's planting band of 1850 to 1860",
-   "age_min": 166,
-   "age_max": 176,
-   "location": {
-    "address": "Oude Toren, Stiphout",
-    "latitude": 51.49165,
-    "longitude": 5.61349,
-    "neighbourhood": "Stiphout"
-   },
-   "story": "The tower dates from about 1400 and the oak from about 1855, which is a gap of four and a half centuries between two things standing side by side.\n\nThe Oude Toren at Stiphout is a church tower without its church, which is a common enough sight in this country and always means the same thing: the nave was replaced or demolished and the tower, being solid and expensive to remove and usually owned separately, stayed. What is left is a tall brick object standing alone with a graveyard around it.\n\nThe oak came far later. It is banded 1850 to 1860 and at roughly 170 years it is at about a third of its likely span, which means that if it is left alone it will eventually catch up on the tower in a way nothing else here will.\n\nThat is the reason to come, and it is worth stating plainly rather than dressing up. Two hundred years from now a visitor will find a tower from 1400 and an oak from 1855, and the difference between them will look far smaller than it does today.\n\nGo in winter, when the bare frame reads against the brick.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Open ground at the tower, reachable in daylight.",
-   "transport": "About 4 km northwest of Helmond centre, at Stiphout.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The large oak standing beside the freestanding medieval tower.",
-   "best_time": {
-    "months": [
-     1
-    ],
-    "kind": "bare silhouette",
-    "label": "January, when the bare frame reads against the brick"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "hlm_004",
-   "name": "The Beech of the Hunting Wood",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870 to 1880",
-   "age_min": 146,
-   "age_max": 156,
-   "location": {
-    "address": "Horst 10, in the park wood",
-    "latitude": 51.49236,
-    "longitude": 5.64159,
-    "neighbourhood": "Horst"
-   },
-   "story": "The wood this beech stands in is a leftover piece of the hunting ground of the lords of Helmont, and the register knows what the farmhands used to eat in it.\n\nThe pool here is called the spekstreuvelvenneke and it has always been there. The name comes from what happened around it: farm workers took their midday meal at this spot, and what they ate was spekstruif, a bacon pancake. That is the level of detail a national tree register does not usually carry, and it survives because somebody local made sure it did.\n\nThe wood shows on a map of 1890. It is a relict, a fragment of a much older hunting landscape that the farming and building around it never quite absorbed.\n\nThe beech, banded 1870 to 1880, is a purple one, which in a fragment of old hunting wood is an incomer: somebody planted it deliberately in a place that had otherwise simply been left.\n\nGo in October, when it turns copper, and find the pool. The pancake is not provided.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public park wood at Horst.",
-   "transport": "About 3 km north of Helmond centre, at Horst.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The purple-leaved beech in the small wood, near the pool.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the purple turns copper"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "hlm_005",
-   "name": "The Oak of the Castle Park",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
-   "age_min": 136,
-   "age_max": 146,
-   "location": {
-    "address": "Castle park, Kasteelplein 1",
-    "latitude": 51.47664,
-    "longitude": 5.65271,
-    "neighbourhood": "Kasteelplein"
-   },
-   "story": "The oldest of the four survivors in the castle grounds, and the one most likely to outlast the rest by centuries.\n\nIt was planted between 1880 and 1890, when Kasteel Helmond was still a private house sitting in a large landscape park, four decades before the sale that led to most of that park disappearing. A native oak in a nineteenth century park was not the fashionable choice; the fashion was for silver maples, copper beeches and conifers from other continents, all of which are also on this page. Oak was the sober option, planted by somebody thinking further ahead than their own lifetime.\n\nThat turned out to be the right call. Pedunculate oak routinely reaches four hundred years in this country. The silver maple beside it will be lucky to see two hundred.\n\nA castle that has stood for nearly seven centuries with an oak that might manage half of that is a decent pairing, and it is the sort of arithmetic that only becomes visible when you know the numbers.\n\nAcorns on long stalks in October, and a great many of them on a tree with this much room.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Open castle grounds in the centre of town.",
-   "transport": "In the centre of Helmond, at the Kasteelplein.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The largest native oak in the castle grounds, with acorns on long stalks.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the acorns come down across the grounds"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "hlm_006",
-   "name": "The Silver Lime of the Castle Park",
-   "species": "Silver Lime (Tilia tomentosa)",
-   "age_estimate": "roughly 95 to 105 years, from the register's planting band of 1920 to 1930",
-   "age_min": 96,
-   "age_max": 106,
-   "location": {
-    "address": "Castle park, Kasteel Helmond",
-    "latitude": 51.47715,
-    "longitude": 5.65491,
-    "neighbourhood": "Kasteelplein"
-   },
-   "story": "This one was planted just after the castle changed hands, which makes it the last generation of the old park rather than a survivor of it.\n\nThe sale came in 1921 and the landscape park largely went in the decades after. A silver lime banded 1920 to 1930 is therefore standing on the hinge: planted around the moment the private estate ended and the public use began, into grounds that were about to stop being anybody's private garden.\n\nSilver lime is the best of the limes to meet in person, for a reason you can see from across the grounds. Every leaf is covered underneath in a fine white felt, so in the slightest wind the crown turns over and flickers between deep green and pale silver. Nothing else this size does it.\n\nIt has a darker habit too. It flowers late, in July, and its nectar is hard on bumblebees, so under a big one in high summer you will sometimes find them on the ground. The reasons are argued over and the current reading is more about a starving late-season insect finding a huge low-value food source than about poison.\n\nJuly, then, for the scent.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Open castle grounds in the centre of town.",
-   "transport": "In the centre of Helmond, at the Kasteelplein.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The lime whose whole crown flashes white in a breeze.",
-   "best_time": {
-    "months": [
-     7
-    ],
-    "kind": "flowers",
-    "label": "July, when the scent fills the castle grounds"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "hlm_007",
-   "name": "The Horse Chestnut of the Castle Park",
-   "species": "Horse Chestnut (Aesculus hippocastanum)",
-   "age_estimate": "roughly 95 to 105 years, from the register's planting band of 1920 to 1930",
-   "age_min": 96,
-   "age_max": 106,
-   "location": {
-    "address": "Castle park, Kasteelplein 1",
-    "latitude": 51.47799,
-    "longitude": 5.65328,
-    "neighbourhood": "Kasteelplein"
-   },
-   "story": "A horse chestnut in a castle park is a tree planted for children, whether or not anyone admitted it at the time.\n\nThe conkers are the point. They ripen in September, the spiny green cases split on the ground, and what falls out is the glossiest object in northern European botany, a deep mahogany brown that fades within days of being picked up. Every generation discovers this independently at about the age of six.\n\nThis one is banded 1920 to 1930, so it went in just after the castle was sold in 1921 and the private landscape park began to break up. Planting a chestnut at that moment, in grounds that were becoming public, reads like somebody thinking about the town rather than about a garden.\n\nThe species is having a hard century. Bleeding canker has killed many mature trees since the 1990s, and the leaf miner moth, here since about 2002, browns the foliage of nearly every horse chestnut in the country from July onward.\n\nSo come in early May for the white candles, before the miner starts, or in September for the conkers. Not August.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Open castle grounds in the centre of town.",
-   "transport": "In the centre of Helmond, at the Kasteelplein.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Large palmate leaves in fans of five to seven leaflets. In September, conkers on the ground beneath it.",
-   "best_time": {
-    "months": [
-     9
-    ],
-    "kind": "fruit",
-    "label": "September, when the conkers split out of their cases"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  }
- ]
+  "city": "Helmond",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Kasteel Helmond has stood in the middle of this town for nearly seven hundred years, and until the middle of the last century it sat in a large landscape park. Most of that park went after 1921, when the last private owner sold up. Four trees from it are still standing, which makes the castle grounds the best surviving fragment of the thing. The rest of this page is a beech in a wood that was once hunting ground of the lords of Helmond, an oak beside a tower from about 1400, and an oak somebody wrote a book about.",
+  "meta_description": "Seven remarkable trees in Helmond: four survivors of the castle's lost landscape park, an oak by a tower from 1400, and the old oak of farmer Peeters.",
+  "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and six more worth the walk.",
+  "question_answer": "The oldest tree in Helmond is the one known as de oude eik van boer Peeters, the old oak of farmer Peeters, on the Rijnlaan at Brouwhuis, which the national register places in a planting band of 1820 to 1830, so around two centuries old. Its name is not folklore we have collected: the register itself says the name comes from the book 'Grote en kleine geschiedenissen rond bomen in Helmond en omgeving' by Maria van de Looverbosch, which is a local history of the trees of Helmond and its surroundings. That is worth knowing because it means somebody in this town went to the trouble of writing down what its trees are called, and the national register then read it.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and is the single source throughout, so everything is flagged. Four of the seven stand in the grounds of Kasteel Helmond and share one piece of history: the castle has been here nearly seven hundred years, was surrounded by a large landscape park until the middle of the twentieth century, and lost most of that park after the last private owner sold it in 1921. The trees are what is left, and the three planted between 1880 and 1930 straddle that sale, so the oak belongs to the private park and the lime and the chestnut to the years just after it ended. Where a pin is marked approximate we know the grounds and not the trunk, which in a castle park is a real difference, and if you find one of these gone, tell us and it comes off the same day.",
+  "hero_tree_id": "hlm_001",
+  "oldest_tree_id": "hlm_002",
+  "faq": [
+    {
+      "q": "What happened to the park around Kasteel Helmond?",
+      "a": "It was largely lost. The castle stood in a large landscape park until the middle of the twentieth century, and most of that disappeared after the last private owner sold the castle in 1921. Four of the trees on this page are survivors of it."
+    },
+    {
+      "q": "Who was farmer Peeters?",
+      "a": "We do not know, and that is part of the point. The oak carries his name because it was recorded that way in Maria van de Looverbosch's book on the trees of Helmond and its surroundings, and the national register took the name from there. The man is gone and the tree is still called after him."
+    },
+    {
+      "q": "What is the Oude Toren at Stiphout?",
+      "a": "A church tower dating from about 1400, standing on its own. The oak beside it is a great deal younger, banded 1850 to 1860 by the register, so the tower had already been there for four and a half centuries when the tree went in."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "All seven. The castle park is open ground in the centre of town, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hlm_001",
+      "name": "The Silver Maple of the Castle Park",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890 to 1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Castle park, Kasteelplein 1",
+        "latitude": 51.47807,
+        "longitude": 5.65253,
+        "neighbourhood": "Kasteelplein"
+      },
+      "story": "This tree is a fragment of something much larger that no longer exists.\n\nKasteel Helmond has been standing in the middle of this town for nearly seven hundred years, a moated brick castle that is now the town hall and museum. Until the middle of the twentieth century it sat inside a big landscape park, the kind that a private owner maintains and a town cannot. In 1921 the last private owner sold the castle, and most of the park went in the decades that followed, built over or reorganised into something smaller.\n\nThe silver maple, planted between 1890 and 1900, belongs to that vanished park. So do three other trees on this page. Together they are the best physical evidence of what used to be here.\n\nSilver maple is North American and was planted for speed and for its leaf, which is cut into five narrow lobes and is bright silver-white on the underside, so the crown flashes pale whenever there is wind.\n\nIt does one more thing worth timing a visit for. It flowers in March, in small red and yellow tufts directly on the bare twigs, weeks before anything around it moves.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Open castle grounds in the centre of town.",
+      "transport": "In the centre of Helmond, at the Kasteelplein.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Deeply cut leaves showing silver-white underneath, flickering pale in any breeze.",
+      "best_time": {
+        "months": [
+          3
+        ],
+        "kind": "flowers",
+        "label": "March, when it flowers on bare twigs before anything else"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hlm_002",
+      "name": "The Old Oak of Farmer Peeters",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 195 to 205 years, from the register's planting band of 1820 to 1830",
+      "age_min": 196,
+      "age_max": 206,
+      "location": {
+        "address": "Rijnlaan 125, Brouwhuis",
+        "latitude": 51.46805,
+        "longitude": 5.70131,
+        "neighbourhood": "Brouwhuis"
+      },
+      "story": "Somebody wrote a book about the trees of this town, and because of it we know what this oak is called.\n\nThe national register does not usually explain its own names. Here it does: the tree is listed as de oude eik van boer Peeters, and the register says the name comes from 'Grote en kleine geschiedenissen rond bomen in Helmond en omgeving' by Maria van de Looverbosch, a collection of large and small histories of the trees in and around Helmond.\n\nThat chain is worth appreciating. A local writer went round asking about trees, wrote down what people called them, published it, and a national government survey later read the book and used the name. Farmer Peeters himself has vanished entirely.\n\nThe oak is banded 1820 to 1830, so it is about two centuries old and stands at Brouwhuis on the Rijnlaan, in what is now a housing district on what was farmland when it was planted.\n\nThat is the fate of most old farm oaks that survive: the fields go, the buildings arrive, and the tree ends up in a green strip with a street name around it and a farmer's name attached.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public planting on the Rijnlaan.",
+      "transport": "About 4 km southeast of Helmond centre, at Brouwhuis.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A big old oak standing clear in the green strip at Rijnlaan 125, far heavier than the street planting.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the acorns come down"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hlm_003",
+      "name": "The Oak at the Old Tower",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 165 to 175 years, from the register's planting band of 1850 to 1860",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Oude Toren, Stiphout",
+        "latitude": 51.49165,
+        "longitude": 5.61349,
+        "neighbourhood": "Stiphout"
+      },
+      "story": "The tower dates from about 1400 and the oak from about 1855, which is a gap of four and a half centuries between two things standing side by side.\n\nThe Oude Toren at Stiphout is a church tower without its church, which is a common enough sight in this country and always means the same thing: the nave was replaced or demolished and the tower, being solid and expensive to remove and usually owned separately, stayed. What is left is a tall brick object standing alone with a graveyard around it.\n\nThe oak came far later. It is banded 1850 to 1860 and at roughly 170 years it is at about a third of its likely span, which means that if it is left alone it will eventually catch up on the tower in a way nothing else here will.\n\nThat is the reason to come, and it is worth stating plainly rather than dressing up. Two hundred years from now a visitor will find a tower from 1400 and an oak from 1855, and the difference between them will look far smaller than it does today.\n\nGo in winter, when the bare frame reads against the brick.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Open ground at the tower, reachable in daylight.",
+      "transport": "About 4 km northwest of Helmond centre, at Stiphout.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large oak standing beside the freestanding medieval tower.",
+      "best_time": {
+        "months": [
+          1
+        ],
+        "kind": "bare silhouette",
+        "label": "January, when the bare frame reads against the brick"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hlm_004",
+      "name": "The Beech of the Hunting Wood",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870 to 1880",
+      "age_min": 146,
+      "age_max": 156,
+      "location": {
+        "address": "Horst 10, in the park wood",
+        "latitude": 51.49236,
+        "longitude": 5.64159,
+        "neighbourhood": "Horst"
+      },
+      "story": "The wood this beech stands in is a leftover piece of the hunting ground of the lords of Helmont, and the register knows what the farmhands used to eat in it.\n\nThe pool here is called the spekstreuvelvenneke and it has always been there. The name comes from what happened around it: farm workers took their midday meal at this spot, and what they ate was spekstruif, a bacon pancake. That is the level of detail a national tree register does not usually carry, and it survives because somebody local made sure it did.\n\nThe wood shows on a map of 1890. It is a relict, a fragment of a much older hunting landscape that the farming and building around it never quite absorbed.\n\nThe beech, banded 1870 to 1880, is a purple one, which in a fragment of old hunting wood is an incomer: somebody planted it deliberately in a place that had otherwise simply been left.\n\nGo in October, when it turns copper, and find the pool. The pancake is not provided.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park wood at Horst.",
+      "transport": "About 3 km north of Helmond centre, at Horst.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The purple-leaved beech in the small wood, near the pool.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the purple turns copper"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hlm_005",
+      "name": "The Oak of the Castle Park",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Castle park, Kasteelplein 1",
+        "latitude": 51.47664,
+        "longitude": 5.65271,
+        "neighbourhood": "Kasteelplein"
+      },
+      "story": "The oldest of the four survivors in the castle grounds, and the one most likely to outlast the rest by centuries.\n\nIt was planted between 1880 and 1890, when Kasteel Helmond was still a private house sitting in a large landscape park, four decades before the sale that led to most of that park disappearing. A native oak in a nineteenth century park was not the fashionable choice; the fashion was for silver maples, copper beeches and conifers from other continents, all of which are also on this page. Oak was the sober option, planted by somebody thinking further ahead than their own lifetime.\n\nThat turned out to be the right call. Pedunculate oak routinely reaches four hundred years in this country. The silver maple beside it will be lucky to see two hundred.\n\nA castle that has stood for nearly seven centuries with an oak that might manage half of that is a decent pairing, and it is the sort of arithmetic that only becomes visible when you know the numbers.\n\nAcorns on long stalks in October, and a great many of them on a tree with this much room.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Open castle grounds in the centre of town.",
+      "transport": "In the centre of Helmond, at the Kasteelplein.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The largest native oak in the castle grounds, with acorns on long stalks.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the acorns come down across the grounds"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hlm_006",
+      "name": "The Silver Lime of the Castle Park",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 95 to 105 years, from the register's planting band of 1920 to 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Castle park, Kasteel Helmond",
+        "latitude": 51.47715,
+        "longitude": 5.65491,
+        "neighbourhood": "Kasteelplein"
+      },
+      "story": "This one was planted just after the castle changed hands, which makes it the last generation of the old park rather than a survivor of it.\n\nThe sale came in 1921 and the landscape park largely went in the decades after. A silver lime banded 1920 to 1930 is therefore standing on the hinge: planted around the moment the private estate ended and the public use began, into grounds that were about to stop being anybody's private garden.\n\nSilver lime is the best of the limes to meet in person, for a reason you can see from across the grounds. Every leaf is covered underneath in a fine white felt, so in the slightest wind the crown turns over and flickers between deep green and pale silver. Nothing else this size does it.\n\nIt has a darker habit too. It flowers late, in July, and its nectar is hard on bumblebees, so under a big one in high summer you will sometimes find them on the ground. The reasons are argued over and the current reading is more about a starving late-season insect finding a huge low-value food source than about poison.\n\nJuly, then, for the scent.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Open castle grounds in the centre of town.",
+      "transport": "In the centre of Helmond, at the Kasteelplein.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The lime whose whole crown flashes white in a breeze.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the scent fills the castle grounds"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hlm_007",
+      "name": "The Horse Chestnut of the Castle Park",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 95 to 105 years, from the register's planting band of 1920 to 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Castle park, Kasteelplein 1",
+        "latitude": 51.47799,
+        "longitude": 5.65328,
+        "neighbourhood": "Kasteelplein"
+      },
+      "story": "A horse chestnut in a castle park is a tree planted for children, whether or not anyone admitted it at the time.\n\nThe conkers are the point. They ripen in September, the spiny green cases split on the ground, and what falls out is the glossiest object in northern European botany, a deep mahogany brown that fades within days of being picked up. Every generation discovers this independently at about the age of six.\n\nThis one is banded 1920 to 1930, so it went in just after the castle was sold in 1921 and the private landscape park began to break up. Planting a chestnut at that moment, in grounds that were becoming public, reads like somebody thinking about the town rather than about a garden.\n\nThe species is having a hard century. Bleeding canker has killed many mature trees since the 1990s, and the leaf miner moth, here since about 2002, browns the foliage of nearly every horse chestnut in the country from July onward.\n\nSo come in early May for the white candles, before the miner starts, or in September for the conkers. Not August.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Open castle grounds in the centre of town.",
+      "transport": "In the centre of Helmond, at the Kasteelplein.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Large palmate leaves in fans of five to seven leaflets. In September, conkers on the ground beneath it.",
+      "best_time": {
+        "months": [
+          9
+        ],
+        "kind": "fruit",
+        "label": "September, when the conkers split out of their cases"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
 }

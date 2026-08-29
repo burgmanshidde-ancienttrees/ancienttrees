@@ -390,7 +390,8 @@
         "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/casuarina-del-parc-de-la-ciutadella-99400455029",
         "https://www.bcnsostenible.cat/es/web/punt/casuarina-cunninghamiana",
         "https://beteve.cat/el-mati-de-barcelona-910fm/arbres-mes-singulars-parc-ciutadella/",
-        "https://commons.wikimedia.org/wiki/File:Casuarina_del_Parc_de_la_Ciutadella3.JPG"
+        "https://commons.wikimedia.org/wiki/File:Casuarina_del_Parc_de_la_Ciutadella3.JPG",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "access": "Free, public park",
       "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 6 min walk",
@@ -404,7 +405,7 @@
       },
       "curation_status": "ai_generated",
       "notes": "Sourced from the municipal Arbres d'interes local register (register_id 99400455029, catalogued 1994) plus an independent beteve.cat feature on the park's notable trees, which supplies the Australian origin, the not-a-conifer point and the claim that its trunk perimeter is the second largest in Barcelona. That claim is deliberately softened in the story to 'one of the thickest', per hard rule 8, because it is a different metric from the 'biggest tree' claim the city page already makes for the Sot de l'Estany wingnut and the two should not be set against each other. Height and girth differ between the register (27 m, 5.5 m) and bcnsostenible (22.5 m, 5 m); both are given as a range. Pin is the register coordinate alone, about 35 m from the Cascada monument, with no OSM node to cross-check, so precision is approximate rather than confirmed. Photo viewed directly before approval: Wiki Loves Earth Catalonia 2014 upload, full tree in daylight, trunk and crown both readable, tree occupies the centre band and survives a wide card crop.",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     },
     {
       "id": "bcn_012",
@@ -727,7 +728,8 @@
       "verified_sources": [
         "https://guia.barcelona.cat/es/detall/tipuana-de-la-placa-carles-buigas_99400661117.html",
         "https://www.bcnsostenible.cat/web/punt/tipuana-tipu-de-la-placa-carles-buigas",
-        "https://ajuntament.barcelona.cat/sants-montjuic/es/detall/tipuana-de-la-placa-carles-buigas_99400661117"
+        "https://ajuntament.barcelona.cat/sants-montjuic/es/detall/tipuana-de-la-placa-carles-buigas_99400661117",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "access": "Free, public square",
       "transport": "Espanya (Metro L1/L3), 8 min walk up Avinguda Maria Cristina",
@@ -739,7 +741,7 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED twice. First for the age: everything traceable about the 1925 planting is a rendering of the same municipal record (register_id 99400661117), and no independent source was found. Second for the pin: the two municipal renderings disagree badly. The register and guia.barcelona give Placa de Carles Buigas 8 at 41.37208/2.15334; bcnsostenible gives Passeig de les Cascades 1 at 41.37007/2.15413, about 250 m away up the hill. Both addresses sit on the same terraced slope above Avinguda Maria Cristina and there is no OSM node for this tree to break the tie (Overpass returns only the neighbouring Aesculus of the same square, node 6924151985, which matches its own register coordinate exactly, so the register's geocoding is not systematically wrong here). The register coordinate is used because it matches the register's own address, and the precision is marked approximate. Third oddity worth recording: bcnsostenible describes the tree as 'una de les Tipuana tipu mes grans de la ciutat de Barcelona, malgrat no estar catalogada', not catalogued, while the register carries it with a register_id. The superlative in the story is deliberately hedged and species-limited per hard rule 8, so it does not collide with the girth claim already made for the Ciutadella casuarina (bcn_011). The honeydew is a well documented property of the species in Barcelona and is stated as a species trait, not as a measurement of this tree. No open-licence photograph found on Commons, iNaturalist or Flickr this pass.",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     },
     {
       "id": "bcn_021",
@@ -1240,12 +1242,13 @@
       },
       "story": "The city register lists 273 plane trees under a single entry for the Rambles. This is one of the few it catalogued on its own. The London plane is the default tree of Barcelona's streets, planted by the hundred and cut back to knuckles every winter, which is exactly what makes an unpruned one worth walking to. This tree stands between the Ciutadella lake and the zoo fence, carrying a 3.6 metre trunk under a crown 24 metres across and 25 metres tall, very nearly as wide as it is high. That shape is simply what a plane does when nobody interferes. Its age is honestly unknown: the register took all the measurements and left the planting year blank, no other source dates it, and it went onto the list in 2021 on size alone. The park around it opened in 1888 for the Universal Exposition and most of the big trees in it date from that work or the decades just after, which puts this one somewhere above a century without proving anything. The species is an accident to begin with, a hybrid of the American and oriental planes that turned up in a seventeenth century garden and proved able to shrug off soot, drought and compacted roots better than either parent.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public park",
       "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 5-8 min walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -1272,12 +1275,13 @@
       },
       "story": "This is a hedge that got away. Pittosporum tobira is the standard clipped shrub of Mediterranean car parks and hotel forecourts, usually held below waist height and almost never allowed a single trunk at all. This one has a trunk 1.55 metres around and a crown six metres wide, which is why the city added it to the register of trees of local interest in 2017, the only one of its species on that list. The register does not even record a height for it, an omission that says something about how unexpected the entry is. It grows in the Parc de la Ciutadella in front of the Glorieta de la Transsexual Sonia, the park's old bandstand, which the city renamed for a woman killed there and which is now one of Barcelona's memorials to violence against trans people. The tree is the quiet part of that corner. In spring it carries small cream flowers that smell of orange blossom strongly enough to reach the path, which is where the plant's other name, mock orange, comes from. Nobody has dated it. Pittosporum thickens slowly enough that a trunk this size suggests decades rather than years, but the register gives no planting year and no second source offers one.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public park",
       "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 5-8 min walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -1336,12 +1340,13 @@
       },
       "story": "Every plane tree on the streets around this one is a hybrid. This is one of the parents. The city register carries eleven separate entries for London planes and exactly one for Platanus orientalis, the eastern species that crossed with the American plane in some seventeenth century garden to produce the tree that now lines most of the Eixample. The difference shows in the leaf, cut far more deeply into narrow lobes, and in the habit, which is lower and looser than the hybrid's. The register dates this one to 1933 and puts it at 18 metres with a two metre trunk under a crown almost as wide as the tree is tall. It was planted during the Second Republic, three years before the war, on the square in front of the university's main building, and it has spent its entire life on one of the busiest crossings in the city: trams first, then traffic, then the demonstrations that a university square inevitably collects. The species is the plane of Greek and Persian writing, the tree Herodotus has Xerxes stopping to decorate with gold on the march west. This one gets exhaust fumes and shade duty, and handles them about as well.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public square",
       "transport": "Universitat (Metro L1/L2), on the square itself",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -1368,12 +1373,13 @@
       },
       "story": "There is an avocado tree 17 metres tall growing in a square in Les Corts. Persea americana is a Central American species that Europe imports by the container and almost never plants, because it wants heat, water and no frost, and because a tree grown from a stone takes a decade or more to fruit and then usually disappoints whoever planted it. This one went into the ground in 1945 and has not moved since, on Placa de Can Bruixa, in a district Barcelona had annexed from its own village only in 1897. Its trunk is slight at 80 centimetres around, and the height is the surprising part: an avocado that nobody prunes for picking simply goes up, which is why commercial groves keep theirs cut low and wide. The city catalogued it as a Tree of Local Interest in 2003. It stands about 500 metres from the magnolia in the old Maternity Gardens, which makes the pair a comfortable half hour on foot through a part of the city that almost no visitor reaches. Whether it sets fruit in a given year depends on the winter it has just had, and when it does the crop is well above head height and staying there.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public square",
       "transport": "Les Corts (Metro L3), 6 min walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -1432,12 +1438,13 @@
       },
       "story": "Before barbed wire, this tree was the fence. Osage orange grows dense, thorny and fast, and through the 1850s American farmers planted it in hedge lines across the prairie states to make a barrier that livestock would not push through: horse high, bull strong and hog tight, as the sales pitch went. Barbed wire arrived in the 1870s and ended the trade within a decade, by which point the species had already been shipped to Europe as a curiosity and largely ignored. Barcelona has two on its register and this is the younger of them, planted in 1948 on Carrer Maria Montessori below Montjuic, with a 1.4 metre trunk, 12 metres of height and a crown 15 metres across that is wider than the tree is tall. Its counterpart down in the Parc de la Ciutadella went into the ground 35 years earlier and is the thicker tree; this one has the better spread. The city catalogued it in 1998. What both share is the fruit, a heavy green sphere the size of a grapefruit with a surface like folded brain, which drops in autumn and is eaten by nothing that currently exists. It stands a few minutes' walk from the pepper tree on Carrer Joaquim Blume.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public street",
       "transport": "Poble Sec (Metro L3), 8 min walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -1503,12 +1510,13 @@
       },
       "story": "This garden opens two days a week, which is most of the reason almost nobody has seen the tree in it. The Jardins Joan Maragall surround the Palauet Albeniz, a small neoclassical pavilion built for the 1929 International Exposition and kept ever since as the residence the Spanish royal family uses when it is in Barcelona. The public is let in at weekends. The jujube standing there was planted in 1958, reaches 10 metres with a 1.6 metre trunk and a crown 12 metres across, and was catalogued as a tree of local interest in 1998. Ziziphus jujuba has been cultivated in China for something like four thousand years, which makes it one of the oldest orchard trees on earth, and it reached the Mediterranean early enough that the Romans were already growing it. The fruit is the size of an olive and turns from green to a deep red brown. Fresh it tastes like a slightly floury apple; dried and wrinkled it tastes like a date, which is where the English name Chinese date came from. It is a thorny, slow, obstinate tree that will grow in poor dry ground, and it is planted here purely as an ornamental. Check the opening days: on a weekday the gate is as close as you get.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, but the gardens open at weekends only. Check the current hours before going.",
       "transport": "Espanya (Metro L1/L3), 15 min walk up Montjuic, or bus 55 to Estadi Olimpic",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -1535,12 +1543,13 @@
       },
       "story": "The ginkgo has no living relatives. Not a rare genus inside a large family: the entire order it belongs to died out except for this one species, and fossil leaves from 200 million years ago are close enough to the modern ones that a botanist can match them by eye. It survived in a handful of Chinese temple groves and was carried out from there first by monks and then by European collectors. Barcelona's is a young example, planted in 1958 in the Jardins de Mossen Cinto Verdaguer on the Montjuic hillside, now 17 metres tall with a crown nearly as wide and a trunk 1.4 metres around. The garden it stands in is the city's bulb garden, terraced and best known for its tulips and narcissi in spring and its water lilies in summer, which leaves the ginkgo the autumn entirely to itself. That is the month worth coming for. The leaves turn from green to a flat butter yellow over about a fortnight, then drop almost all at once, often within a single still day, leaving a gold circle on the ground that is the entire point of the tree. The city catalogued it in 1998. The gardens are free and open daily.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public garden, open daily",
       "transport": "Paral.lel (Metro L2/L3) then the Montjuic funicular, 5 min walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -1574,12 +1583,13 @@
       },
       "story": "This tree is twice as wide as it is tall. Five metres of height, a crown ten metres across and a trunk 1.8 metres around, the proportions of something that decided early to spread rather than climb. It is a Judas tree, and the Catalan name on the city register, arbre de l'amor, is a good deal kinder than the English one. The English name comes from the story that Judas hanged himself from a Cercis and its white flowers turned red with shame; the likelier explanation is that arbre de Judee, tree of Judea, got misheard somewhere along the way, Judea being a place it genuinely grows wild. What the tree does in April accounts for both names. The flowers break straight out of the bark, off the old wood of the branches and the trunk itself, before a single leaf has opened, so the whole frame of the tree turns magenta for a fortnight and then greens over as if nothing happened. This one was planted in 1956 on Placa de Joanic and catalogued in 1996. It stands about 330 metres from the holm oak on Carrer de l'Encarnacio, the oldest measured tree in Barcelona, which makes the two of them a short and unusually good walk through the middle of Gracia.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public square",
       "transport": "Joanic (Metro L4), on the square itself",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,

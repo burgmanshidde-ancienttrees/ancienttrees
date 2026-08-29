@@ -1,270 +1,270 @@
 {
- "city": "Deventer",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "The occupying French cut down the trees in Deventer's park across the river, and in 1822 the city planted it again. Most of the oaks, beeches and planes in the Worpplantsoen today are from that replanting, which makes the whole park a piece of restitution you can walk through. It is one of the oldest city parks in the Netherlands. The oldest tree is elsewhere: a lime at Diepenveen said to date from 1614, used as a lookout by Cossacks fighting the French in 1813.",
- "meta_description": "Seven remarkable trees in Deventer: a lime the Cossacks watched from in 1813, and a park replanted in 1822 after the French felled everything in it.",
- "question_meta": "Deventer's oldest tree is the Kozakkenlinde at Diepenveen, said to date from 1614. Where it stands, and six more worth the walk.",
- "question_answer": "The oldest tree in Deventer is the Kozakkenlinde on the Kozakkenweg at Diepenveen, which the national register places in a planting band of 1600 to 1700 and, more specifically, suggests was planted in 1614 after the death of the Hijligen eik, the holy oak that had stood in the same spot. Its name comes from a later episode: during the French occupation of Deventer in 1813 the tree is said to have been used as a lookout by Cossacks fighting against the French. Both of those are traditions carried by the register rather than facts we can prove, and it cites an article by Wim de Weerd behind them. What is not in doubt is that this is a very old lime standing where an older sacred tree stood before it.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands. Two entries carry better reasoning than that and the pages say so. The register dates the black walnut in the Worpplantsoen to a specific replanting in 1820 to 1822, after the planting of 1816 was damaged by drifting ice on the IJssel. And for the poplar known as De Reus van De Worp it argues from a photograph: an image of the Lange Laan in the Ossenwaarde taken in 1917 shows the tree small and distant, clearly young, which supports a planting between 1900 and 1910 rather than anything earlier. That is a better piece of dating than most trees on this site have. The register is the 2024 edition and is the single source throughout, so everything here is flagged. Where a pin is marked approximate we know the park and not the trunk.",
- "hero_tree_id": "dev_001",
- "oldest_tree_id": "dev_001",
- "faq": [
-  {
-   "q": "What is the oldest tree in Deventer?",
-   "a": "The Kozakkenlinde on the Kozakkenweg at Diepenveen, banded 1600 to 1700 and, by the register's reading, planted in 1614 to replace a holy oak that had died on the same spot."
-  },
-  {
-   "q": "Why was the Worpplantsoen replanted in 1822?",
-   "a": "Because the occupying French destroyed the old tree stock. The park lies in the IJssel floodplain opposite the town and is one of the oldest city parks in the Netherlands; a large number of its oaks, beeches and planes date from the replanting of 1822. A separate planting made in 1816 was damaged by drifting ice and was itself redone around 1820 to 1822."
-  },
-  {
-   "q": "How do you date a tree from a photograph?",
-   "a": "By what it is not. A 1917 photograph of the Lange Laan in the Ossenwaarde shows the poplar now called De Reus van De Worp standing small and distant, clearly a young tree. That rules out an eighteenth or early nineteenth century planting and supports the register's band of 1900 to 1910."
-  },
-  {
-   "q": "Are they free to visit?",
-   "a": "All seven. The Worpplantsoen is an open public park, the Kozakkenlinde stands on a country road at Diepenveen, the cemetery on the Diepenveenseweg is open ground, and the Frieswijk oak is on estate land recorded as visitable."
-  }
- ],
- "trees": [
-  {
-   "id": "dev_001",
-   "name": "De Kozakkenlinde",
-   "species": "Common Lime (Tilia x europaea)",
-   "age_estimate": "roughly 325 to 425 years, and the register suggests a planting in 1614",
-   "age_min": 326,
-   "age_max": 426,
-   "location": {
-    "address": "Kozakkenweg, Diepenveen",
-    "latitude": 52.27876,
-    "longitude": 6.13154,
-    "neighbourhood": "Diepenveen"
-   },
-   "story": "There was a holy oak on this spot and when it died they replaced it with a lime.\n\nThat is the register's reading, planting in 1614, following the death of the Hijligen eik that had stood here. Sacred trees were real fixtures of the Dutch countryside, marking a boundary, a court, a crossing or a spot where something had happened, and when one died the community's instinct was often to put another tree in its place rather than let the place go unmarked. That instinct is why the road is called what it is and why this tree exists.\n\nThe name it carries now comes from two centuries later. In 1813, during the French occupation of Deventer, the lime is said to have served as a lookout tree for Cossacks fighting against the French. Russian irregular cavalry had followed Napoleon's retreat west across Europe and reached the Netherlands that winter, and a big lime on a rise with a view is exactly what a scout wants.\n\nBoth stories are tradition rather than record. The tree is not: it is an enormous old lime on a country road, standing where somebody in 1614 decided a tree should stand.\n\nGo in July, when it flowers and hums.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Stands on a public country road at Diepenveen.",
-   "transport": "About 5 km north of Deventer station, on the Kozakkenweg at Diepenveen.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A very large old lime standing alone at the roadside, far heavier than anything near it.",
-   "best_time": {
-    "months": [
-     7
-    ],
-    "kind": "flowers",
-    "label": "July, when it flowers and the whole tree hums"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "dev_002",
-   "name": "De Reus van De Worp",
-   "species": "Canadian Poplar (Populus x canadensis)",
-   "age_estimate": "roughly 115 to 125 years, supported by a 1917 photograph showing it still small",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "De Worp, edge of the floodplain, Stadsland at De Hoven and Steenenkamer",
-    "latitude": 52.25095,
-    "longitude": 6.15023,
-    "neighbourhood": "De Worp"
-   },
-   "story": "The giant of De Worp is called that because of its size, and its size is what nearly got its age wrong.\n\nA poplar this big looks old. The register says it is not especially, and it makes the argument with a photograph. An image of the Lange Laan in the Ossenwaarde taken in 1917 shows this tree standing small and distant, clearly a young and relatively slight thing. That rules out the older datings the girth would suggest and supports a planting somewhere between 1900 and 1910.\n\nWhich means a bit over a century has produced a tree people call a giant. That is what Canadian poplar does. It is a hybrid grown for speed, capable of several feet a year on wet ground, and this ground is as wet as it gets: the floodplain of the IJssel, flooded regularly, deep silt, and a water table close to the surface.\n\nThe trade-off is that poplars go brittle and are usually removed before they reach this stage.\n\nStand at the base and look up, then remember that everybody who ever posed under it in a photograph is gone and the tree is younger than most of them were.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Open floodplain land across the river from the town.",
-   "transport": "About 1.5 km west of Deventer station, across the IJssel by the foot ferry to De Worp.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "By far the biggest poplar at the edge of the floodplain, with a crown that rattles in light wind.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "dev_003",
-   "name": "The Black Walnut of the Worpplantsoen",
-   "species": "Black Walnut (Juglans nigra)",
-   "age_estimate": "roughly 205 years, from a replanting the register dates to 1820 to 1822",
-   "age_min": 204,
-   "age_max": 206,
-   "location": {
-    "address": "Worpplantsoen, on the campsite ground",
-    "latitude": 52.251,
-    "longitude": 6.14792,
-    "neighbourhood": "De Worp"
-   },
-   "story": "This tree exists because of ice.\n\nThe park across the river was replanted in 1816 and the young trees were damaged by ijsgang, the drifting ice that comes down the IJssel when a frozen river breaks up and shoves plates of ice over the banks. It is a serious force and it does not care about a six-year-old sapling. So the planting was done again in 1820 to 1822, and the register dates this walnut to that second attempt.\n\nBlack walnut is North American and was an unusual choice for a Dutch public park, then and now. It is grown mostly for its timber, which is among the most valuable in the world, and a two-hundred-year-old one standing in a park rather than a sawmill is a piece of luck.\n\nIt is easy to identify once you know where to look. Large compound leaves with fifteen or more leaflets, coming into leaf very late and dropping early. In autumn it produces heavy green fruit the size of tennis balls that fall hard and stain everything they touch a deep brown.\n\nSeptember, then, and mind your head.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public park in the floodplain; the tree stands on the campsite ground.",
-   "transport": "About 1.5 km west of Deventer station, across the IJssel to the Worpplantsoen.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Very long compound leaves with many leaflets, and in autumn heavy green fruits the size of tennis balls under it.",
-   "best_time": {
-    "months": [
-     9
-    ],
-    "kind": "fruit",
-    "label": "September, when the heavy green nuts come down"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "dev_004",
-   "name": "The Oak by the Bandstand",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 205 years, from the park's documented replanting of 1822",
-   "age_min": 200,
-   "age_max": 210,
-   "location": {
-    "address": "Worpplantsoen, just north of the bandstand",
-    "latitude": 52.25008,
-    "longitude": 6.14847,
-    "neighbourhood": "De Worp"
-   },
-   "story": "The French cut down the trees here and the city planted them again.\n\nThe Worpplantsoen lies in the floodplain of the IJssel directly opposite Deventer, and it is one of the oldest city parks in the Netherlands. During the French occupation the existing stock was destroyed, which was not vandalism but supply: an occupying garrison needs fuel and timber and a park across the river is the easiest source there is. In 1822, with the French gone, Deventer replanted, and a large share of the oaks, beeches and planes standing there now are from that year.\n\nSo the park is roughly the age of the peace that followed Napoleon, and it was made as a deliberate act of repair.\n\nThis oak is one of them, just north of the bandstand. At around two centuries it is at half its likely life, and the trees around it are its exact contemporaries, which is unusual: most parks are a mixture of ages, and this one has a cohort.\n\nCome across on the foot ferry rather than driving round. It is the correct approach, the town behind you and the trees ahead.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public park, open daily.",
-   "transport": "About 1.5 km west of Deventer station, across the IJssel by the foot ferry.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A large oak standing a little north of the bandstand, one of a cohort of trees all the same age.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the acorns come down across the park"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "dev_005",
-   "name": "The Copper Beech at the Bandstand",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 205 years, from the park's documented replanting of 1822",
-   "age_min": 200,
-   "age_max": 210,
-   "location": {
-    "address": "Centrally in the Worpplantsoen, near the bandstand",
-    "latitude": 52.24991,
-    "longitude": 6.14885,
-    "neighbourhood": "De Worp"
-   },
-   "story": "A copper beech planted in 1822 was an early one, and in a public park it was very early indeed.\n\nThe purple form of the common beech was still a rarity at that date. It occurs naturally as an occasional mutation and had been propagated by grafting in European nurseries for perhaps sixty years, mostly for private estates and botanic collections. Putting one at the centre of a municipal park in the IJssel floodplain, in a replanting made to repair the damage of an occupation, was a choice with some ambition in it.\n\nIt sits centrally, near the bandstand, which is exactly where a designer would place the darkest tree available: the focal point of the composition, seen from every path.\n\nTwo hundred years on it is doing the job at a scale nobody planned. A mature copper beech is a solid dark mass, and this one anchors the middle of a park that is otherwise green, open and flat.\n\nThe last week of October, when the purple burns through to copper and the whole park briefly reorganises itself around it. Failing that, April, for the translucent red of the new leaves.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public park, open daily.",
-   "transport": "About 1.5 km west of Deventer station, across the IJssel by the foot ferry.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The large dark purple tree at the centre of the park, near the bandstand.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "late October, when the purple burns through to copper"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "dev_006",
-   "name": "The Weeping Beech of the Diepenveenseweg Cemetery",
-   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
-   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
-   "age_min": 186,
-   "age_max": 196,
-   "location": {
-    "address": "Algemene Begraafplaats, Diepenveenseweg",
-    "latitude": 52.26039,
-    "longitude": 6.15866,
-    "neighbourhood": "Diepenveenseweg"
-   },
-   "story": "A weeping beech in a nineteenth century cemetery is not a coincidence, it is a convention.\n\nThe form was fashionable exactly when these grounds were laid out, and the reading was obvious enough that nobody had to explain it: a tree whose branches fall to the ground rather than reaching up. Cemeteries across northern Europe filled with weeping beeches, weeping willows and weeping ashes in the same few decades, and this one, banded 1830 to 1840, is from the beginning of that.\n\nThe register calls this burial ground historically and ecologically very valuable, in the old ring of the city, and it is looked after by a foundation for Deventer's old cemeteries.\n\nWhat makes the tree worth the walk is that a mature weeping beech is hollow. The branches arch out and hang to the grass all round, so you can push through the skirt and stand inside a green room with a trunk in the middle. Doing that in a cemetery feels like trespass and is not.\n\nOne to see in leaf, so any time from May to October. In winter it is a bare cage, which is its own thing but less startling.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public cemetery, open in daylight. Visit quietly.",
-   "transport": "About 2 km north of Deventer station, on the Diepenveenseweg.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A dome of branches hanging to the grass, hollow inside.",
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "dev_007",
-   "name": "The Oak of Landgoed Frieswijk",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
-   "age_min": 206,
-   "age_max": 216,
-   "location": {
-    "address": "Landgoed Frieswijk, about 125 m south of Raalterweg 14, Schalkhaar",
-    "latitude": 52.28933,
-    "longitude": 6.19546,
-    "neighbourhood": "Schalkhaar"
-   },
-   "story": "The register is honest about this one in a way that is worth quoting: the planting history is not known, and the oak was probably put in during the first half of the nineteenth century.\n\nThat is the ordinary state of most old trees. No document, no planting record, nobody who wrote it down, and a dating arrived at by looking at the tree and at what was happening on the estate around it. It is worth seeing that stated plainly, because the confident specific ages attached to famous trees usually rest on no more than this and simply do not admit it.\n\nWhat can be said is that Frieswijk is an estate northeast of Deventer, that the oak stands about 125 metres south of the Raalterweg, and that a pedunculate oak of two centuries in this country is at roughly half its span.\n\nOak on this ground is the default rather than the exception, which is part of why it goes unrecorded. Somebody planted it because you planted oak, and then two hundred years passed.\n\nIt is a walk out of town and the best reason to go is the walk. Come in October for the acorns.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Estate land recorded as visitable in the national register.",
-   "transport": "About 7 km northeast of Deventer station, off the Raalterweg at Schalkhaar.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A heavy old oak standing about 125 metres south of the road, clear of the younger planting.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the acorns are down"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  }
- ]
+  "city": "Deventer",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "The occupying French cut down the trees in Deventer's park across the river, and in 1822 the city planted it again. Most of the oaks, beeches and planes in the Worpplantsoen today are from that replanting, which makes the whole park a piece of restitution you can walk through. It is one of the oldest city parks in the Netherlands. The oldest tree is elsewhere: a lime at Diepenveen said to date from 1614, used as a lookout by Cossacks fighting the French in 1813.",
+  "meta_description": "Seven remarkable trees in Deventer: a lime the Cossacks watched from in 1813, and a park replanted in 1822 after the French felled everything in it.",
+  "question_meta": "Deventer's oldest tree is the Kozakkenlinde at Diepenveen, said to date from 1614. Where it stands, and six more worth the walk.",
+  "question_answer": "The oldest tree in Deventer is the Kozakkenlinde on the Kozakkenweg at Diepenveen, which the national register places in a planting band of 1600 to 1700 and, more specifically, suggests was planted in 1614 after the death of the Hijligen eik, the holy oak that had stood in the same spot. Its name comes from a later episode: during the French occupation of Deventer in 1813 the tree is said to have been used as a lookout by Cossacks fighting against the French. Both of those are traditions carried by the register rather than facts we can prove, and it cites an article by Wim de Weerd behind them. What is not in doubt is that this is a very old lime standing where an older sacred tree stood before it.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands. Two entries carry better reasoning than that and the pages say so. The register dates the black walnut in the Worpplantsoen to a specific replanting in 1820 to 1822, after the planting of 1816 was damaged by drifting ice on the IJssel. And for the poplar known as De Reus van De Worp it argues from a photograph: an image of the Lange Laan in the Ossenwaarde taken in 1917 shows the tree small and distant, clearly young, which supports a planting between 1900 and 1910 rather than anything earlier. That is a better piece of dating than most trees on this site have. The register is the 2024 edition and is the single source throughout, so everything here is flagged. Where a pin is marked approximate we know the park and not the trunk.",
+  "hero_tree_id": "dev_001",
+  "oldest_tree_id": "dev_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Deventer?",
+      "a": "The Kozakkenlinde on the Kozakkenweg at Diepenveen, banded 1600 to 1700 and, by the register's reading, planted in 1614 to replace a holy oak that had died on the same spot."
+    },
+    {
+      "q": "Why was the Worpplantsoen replanted in 1822?",
+      "a": "Because the occupying French destroyed the old tree stock. The park lies in the IJssel floodplain opposite the town and is one of the oldest city parks in the Netherlands; a large number of its oaks, beeches and planes date from the replanting of 1822. A separate planting made in 1816 was damaged by drifting ice and was itself redone around 1820 to 1822."
+    },
+    {
+      "q": "How do you date a tree from a photograph?",
+      "a": "By what it is not. A 1917 photograph of the Lange Laan in the Ossenwaarde shows the poplar now called De Reus van De Worp standing small and distant, clearly a young tree. That rules out an eighteenth or early nineteenth century planting and supports the register's band of 1900 to 1910."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "All seven. The Worpplantsoen is an open public park, the Kozakkenlinde stands on a country road at Diepenveen, the cemetery on the Diepenveenseweg is open ground, and the Frieswijk oak is on estate land recorded as visitable."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dev_001",
+      "name": "De Kozakkenlinde",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 325 to 425 years, and the register suggests a planting in 1614",
+      "age_min": 326,
+      "age_max": 426,
+      "location": {
+        "address": "Kozakkenweg, Diepenveen",
+        "latitude": 52.27876,
+        "longitude": 6.13154,
+        "neighbourhood": "Diepenveen"
+      },
+      "story": "There was a holy oak on this spot and when it died they replaced it with a lime.\n\nThat is the register's reading, planting in 1614, following the death of the Hijligen eik that had stood here. Sacred trees were real fixtures of the Dutch countryside, marking a boundary, a court, a crossing or a spot where something had happened, and when one died the community's instinct was often to put another tree in its place rather than let the place go unmarked. That instinct is why the road is called what it is and why this tree exists.\n\nThe name it carries now comes from two centuries later. In 1813, during the French occupation of Deventer, the lime is said to have served as a lookout tree for Cossacks fighting against the French. Russian irregular cavalry had followed Napoleon's retreat west across Europe and reached the Netherlands that winter, and a big lime on a rise with a view is exactly what a scout wants.\n\nBoth stories are tradition rather than record. The tree is not: it is an enormous old lime on a country road, standing where somebody in 1614 decided a tree should stand.\n\nGo in July, when it flowers and hums.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Stands on a public country road at Diepenveen.",
+      "transport": "About 5 km north of Deventer station, on the Kozakkenweg at Diepenveen.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A very large old lime standing alone at the roadside, far heavier than anything near it.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when it flowers and the whole tree hums"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dev_002",
+      "name": "De Reus van De Worp",
+      "species": "Canadian Poplar (Populus x canadensis)",
+      "age_estimate": "roughly 115 to 125 years, supported by a 1917 photograph showing it still small",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "De Worp, edge of the floodplain, Stadsland at De Hoven and Steenenkamer",
+        "latitude": 52.25095,
+        "longitude": 6.15023,
+        "neighbourhood": "De Worp"
+      },
+      "story": "The giant of De Worp is called that because of its size, and its size is what nearly got its age wrong.\n\nA poplar this big looks old. The register says it is not especially, and it makes the argument with a photograph. An image of the Lange Laan in the Ossenwaarde taken in 1917 shows this tree standing small and distant, clearly a young and relatively slight thing. That rules out the older datings the girth would suggest and supports a planting somewhere between 1900 and 1910.\n\nWhich means a bit over a century has produced a tree people call a giant. That is what Canadian poplar does. It is a hybrid grown for speed, capable of several feet a year on wet ground, and this ground is as wet as it gets: the floodplain of the IJssel, flooded regularly, deep silt, and a water table close to the surface.\n\nThe trade-off is that poplars go brittle and are usually removed before they reach this stage.\n\nStand at the base and look up, then remember that everybody who ever posed under it in a photograph is gone and the tree is younger than most of them were.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Open floodplain land across the river from the town.",
+      "transport": "About 1.5 km west of Deventer station, across the IJssel by the foot ferry to De Worp.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "By far the biggest poplar at the edge of the floodplain, with a crown that rattles in light wind.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dev_003",
+      "name": "The Black Walnut of the Worpplantsoen",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "roughly 205 years, from a replanting the register dates to 1820 to 1822",
+      "age_min": 204,
+      "age_max": 206,
+      "location": {
+        "address": "Worpplantsoen, on the campsite ground",
+        "latitude": 52.251,
+        "longitude": 6.14792,
+        "neighbourhood": "De Worp"
+      },
+      "story": "This tree exists because of ice.\n\nThe park across the river was replanted in 1816 and the young trees were damaged by ijsgang, the drifting ice that comes down the IJssel when a frozen river breaks up and shoves plates of ice over the banks. It is a serious force and it does not care about a six-year-old sapling. So the planting was done again in 1820 to 1822, and the register dates this walnut to that second attempt.\n\nBlack walnut is North American and was an unusual choice for a Dutch public park, then and now. It is grown mostly for its timber, which is among the most valuable in the world, and a two-hundred-year-old one standing in a park rather than a sawmill is a piece of luck.\n\nIt is easy to identify once you know where to look. Large compound leaves with fifteen or more leaflets, coming into leaf very late and dropping early. In autumn it produces heavy green fruit the size of tennis balls that fall hard and stain everything they touch a deep brown.\n\nSeptember, then, and mind your head.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park in the floodplain; the tree stands on the campsite ground.",
+      "transport": "About 1.5 km west of Deventer station, across the IJssel to the Worpplantsoen.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Very long compound leaves with many leaflets, and in autumn heavy green fruits the size of tennis balls under it.",
+      "best_time": {
+        "months": [
+          9
+        ],
+        "kind": "fruit",
+        "label": "September, when the heavy green nuts come down"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dev_004",
+      "name": "The Oak by the Bandstand",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 205 years, from the park's documented replanting of 1822",
+      "age_min": 200,
+      "age_max": 210,
+      "location": {
+        "address": "Worpplantsoen, just north of the bandstand",
+        "latitude": 52.25008,
+        "longitude": 6.14847,
+        "neighbourhood": "De Worp"
+      },
+      "story": "The French cut down the trees here and the city planted them again.\n\nThe Worpplantsoen lies in the floodplain of the IJssel directly opposite Deventer, and it is one of the oldest city parks in the Netherlands. During the French occupation the existing stock was destroyed, which was not vandalism but supply: an occupying garrison needs fuel and timber and a park across the river is the easiest source there is. In 1822, with the French gone, Deventer replanted, and a large share of the oaks, beeches and planes standing there now are from that year.\n\nSo the park is roughly the age of the peace that followed Napoleon, and it was made as a deliberate act of repair.\n\nThis oak is one of them, just north of the bandstand. At around two centuries it is at half its likely life, and the trees around it are its exact contemporaries, which is unusual: most parks are a mixture of ages, and this one has a cohort.\n\nCome across on the foot ferry rather than driving round. It is the correct approach, the town behind you and the trees ahead.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park, open daily.",
+      "transport": "About 1.5 km west of Deventer station, across the IJssel by the foot ferry.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A large oak standing a little north of the bandstand, one of a cohort of trees all the same age.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the acorns come down across the park"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dev_005",
+      "name": "The Copper Beech at the Bandstand",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 205 years, from the park's documented replanting of 1822",
+      "age_min": 200,
+      "age_max": 210,
+      "location": {
+        "address": "Centrally in the Worpplantsoen, near the bandstand",
+        "latitude": 52.24991,
+        "longitude": 6.14885,
+        "neighbourhood": "De Worp"
+      },
+      "story": "A copper beech planted in 1822 was an early one, and in a public park it was very early indeed.\n\nThe purple form of the common beech was still a rarity at that date. It occurs naturally as an occasional mutation and had been propagated by grafting in European nurseries for perhaps sixty years, mostly for private estates and botanic collections. Putting one at the centre of a municipal park in the IJssel floodplain, in a replanting made to repair the damage of an occupation, was a choice with some ambition in it.\n\nIt sits centrally, near the bandstand, which is exactly where a designer would place the darkest tree available: the focal point of the composition, seen from every path.\n\nTwo hundred years on it is doing the job at a scale nobody planned. A mature copper beech is a solid dark mass, and this one anchors the middle of a park that is otherwise green, open and flat.\n\nThe last week of October, when the purple burns through to copper and the whole park briefly reorganises itself around it. Failing that, April, for the translucent red of the new leaves.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park, open daily.",
+      "transport": "About 1.5 km west of Deventer station, across the IJssel by the foot ferry.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large dark purple tree at the centre of the park, near the bandstand.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "late October, when the purple burns through to copper"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dev_006",
+      "name": "The Weeping Beech of the Diepenveenseweg Cemetery",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Algemene Begraafplaats, Diepenveenseweg",
+        "latitude": 52.26039,
+        "longitude": 6.15866,
+        "neighbourhood": "Diepenveenseweg"
+      },
+      "story": "A weeping beech in a nineteenth century cemetery is not a coincidence, it is a convention.\n\nThe form was fashionable exactly when these grounds were laid out, and the reading was obvious enough that nobody had to explain it: a tree whose branches fall to the ground rather than reaching up. Cemeteries across northern Europe filled with weeping beeches, weeping willows and weeping ashes in the same few decades, and this one, banded 1830 to 1840, is from the beginning of that.\n\nThe register calls this burial ground historically and ecologically very valuable, in the old ring of the city, and it is looked after by a foundation for Deventer's old cemeteries.\n\nWhat makes the tree worth the walk is that a mature weeping beech is hollow. The branches arch out and hang to the grass all round, so you can push through the skirt and stand inside a green room with a trunk in the middle. Doing that in a cemetery feels like trespass and is not.\n\nOne to see in leaf, so any time from May to October. In winter it is a bare cage, which is its own thing but less startling.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public cemetery, open in daylight. Visit quietly.",
+      "transport": "About 2 km north of Deventer station, on the Diepenveenseweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A dome of branches hanging to the grass, hollow inside.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "dev_007",
+      "name": "The Oak of Landgoed Frieswijk",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
+      "age_min": 206,
+      "age_max": 216,
+      "location": {
+        "address": "Landgoed Frieswijk, about 125 m south of Raalterweg 14, Schalkhaar",
+        "latitude": 52.28933,
+        "longitude": 6.19546,
+        "neighbourhood": "Schalkhaar"
+      },
+      "story": "The register is honest about this one in a way that is worth quoting: the planting history is not known, and the oak was probably put in during the first half of the nineteenth century.\n\nThat is the ordinary state of most old trees. No document, no planting record, nobody who wrote it down, and a dating arrived at by looking at the tree and at what was happening on the estate around it. It is worth seeing that stated plainly, because the confident specific ages attached to famous trees usually rest on no more than this and simply do not admit it.\n\nWhat can be said is that Frieswijk is an estate northeast of Deventer, that the oak stands about 125 metres south of the Raalterweg, and that a pedunculate oak of two centuries in this country is at roughly half its span.\n\nOak on this ground is the default rather than the exception, which is part of why it goes unrecorded. Somebody planted it because you planted oak, and then two hundred years passed.\n\nIt is a walk out of town and the best reason to go is the walk. Come in October for the acorns.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Estate land recorded as visitable in the national register.",
+      "transport": "About 7 km northeast of Deventer station, off the Raalterweg at Schalkhaar.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A heavy old oak standing about 125 metres south of the road, clear of the younger planting.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the acorns are down"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
 }

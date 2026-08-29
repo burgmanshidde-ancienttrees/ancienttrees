@@ -46,10 +46,12 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "story": "Every copper beech in Europe descends from a handful of freak trees found growing purple in ordinary green forests, most famously in Germany in the seventeenth century. The colour is a mutation that overproduces red pigment, useless to the tree and irresistible to gardeners, and it has been propagated by grafting ever since. This one stands at the water's edge of the Oosterpoortsgracht in Hoorn, beside the Oosterpoort, the fifteenth century gate that is the only one of the town's medieval gates left standing. The national register dates the planting to between 1860 and 1870, roughly 160 years, and lists the tree on the municipal monument list and on the town's own tree route. Through the nineteenth century, as the walls and towers came down, the emptied defences were remade as a walking park, which is the ground this tree grew up in and the reason it has had room. Come in May rather than autumn. New copper beech leaves open translucent, lit red from behind like stained glass, and darken to near black-purple within weeks. By August the crown is a hole in the light. The register is the only source we have found that records this tree individually, so read the age as its estimate rather than a measurement.",
       "best_time": {
-        "months": [5],
+        "months": [
+          5
+        ],
         "kind": "fresh leaves",
         "label": "May, when the new leaves come out translucent red before they darken"
       }
@@ -78,7 +80,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "how_to_recognise": "Stands directly on the Pakhuisstraat path, its base visibly squeezed by the kerb, unlike its better-shaped neighbour behind the aviary.",
       "story": "Four metres of trunk and nowhere to put it. This plane stands on the Pakhuisstraat by the aviary in the Oosterplantsoen, and the register, which otherwise calls it a perfect specimen, notes that the base is being squeezed by the pavement along the street. That is the standard fate of a big plane in a Dutch town: the tree keeps widening at the foot and the kerb does not move. The register dates the planting to between 1860 and 1870, so roughly 160 years, and it is the only source we have found that records this tree on its own. London plane came out of a seventeenth century accident, a cross between the American and the oriental plane that nobody planned and everybody planted afterwards, and it turned out to handle coal smoke, hard soil and heavy pruning better than either parent. Hoorn was a Dutch East India Company town whose walls were coming down through the century this tree went in, and the emptied ground became the walking park it now stands in. Look at the trunk rather than the crown. The bark comes away in irregular plates and leaves a camouflage of cream, olive and grey, and at four metres round there is a lot of it to look at from close up."
     },
@@ -188,7 +190,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "how_to_recognise": "Stands off the path behind the park aviary, with a full, undamaged crown, unlike its older, kerb-squeezed neighbour on the Pakhuisstraat itself.",
       "story": "This plane stands behind the aviary in the Oosterplantsoen, out of the way of the street, and it has grown accordingly: a trunk of over four metres round and, in the register's words, a perfect tree. Its neighbour a couple of hundred metres away on the Pakhuisstraat is the same species and two decades older, and has spent its life fighting the kerb. The difference between the two is simply where somebody put them. The register dates this one to between 1880 and 1890, so roughly 140 years, and it is the only source we have found that records it. Planes are the reason nineteenth century park designers could plan at all. They grow fast, take any soil, survive being moved as large trees and can be cut back to knuckles and come again, which made them the safe bet on new public ground like this, laid out where Hoorn's walls and towers had been. The catch arrives in June, when the undersides of the young leaves shed fine hairs that get into throats, and again in autumn when the seed balls break up and do the same. Neither is a reason to skip it. Stand close to the bole and look up through the mottled bark and horizontal limbs, and give it the time it takes to register how much tree is above you."
     },
@@ -219,7 +221,9 @@
       "location_precision": "approximate",
       "story": "Silver lime is the last of the limes to flower, and in a park full of trees that have already finished it can be the only thing working in July. This one stands near the Veliusbrug in the Oosterplantsoen with a trunk of over four metres round, which the register credits to about 140 years of undisturbed growth: it dates the planting to between 1880 and 1890 and is the only source we have found that records the tree. Tilia tomentosa came from southeastern Europe and Asia Minor and Dutch towns adopted it late, largely because it holds up in dirty air better than the common lime and does not drip the same sticky rain of aphid honeydew onto whatever is parked beneath. The tomentosa in the name means felted. Every leaf is dark green above and white with fine hairs below, so the crown changes colour with the wind and, on a bright day, looks lit from underneath. In leaf it is one of the densest shade trees in this park. It also gets called out for the bumblebees found dead under it in late summer, once blamed on the nectar and now more often put down to the tree flowering when starving bees have nothing else left to visit.",
       "best_time": {
-        "months": [7],
+        "months": [
+          7
+        ],
         "kind": "flowers",
         "label": "July, when it flowers after every other lime has finished"
       }
@@ -251,7 +255,10 @@
       "location_precision": "approximate",
       "story": "The register gives this chestnut an actual planting year, 1901, which is rarer than it sounds: most trees on this list carry a ten year band and nothing better. It stands at the water's edge of the Oosterpoortsgracht opposite number 37, on the municipal monument list and on the town's tree route, and the register describes a full crown that storms have since knocked about without slowing the tree down. Aesculus hippocastanum is a Balkan tree that reached western Europe in the sixteenth century and was planted everywhere on the strength of two weeks in May. The rest of its case is autumn. Late September the spiny green cases start splitting on the path and the conker inside comes out mahogany brown and polished, the single most collectible object a European tree produces, and worthless the moment it dries out. The species name hippocastanum means horse chestnut, from an old belief that the seeds cured coughing in horses; for people they are simply poisonous. The national register is the only source we have found for this tree, so read the date as its record rather than an independent one. Come with a pocket in October and you will not leave with it empty.",
       "best_time": {
-        "months": [9, 10],
+        "months": [
+          9,
+          10
+        ],
         "kind": "fruit",
         "label": "late September and October, when the conkers split open on the path"
       }
