@@ -97,7 +97,31 @@ struct TreeMap: UIViewRepresentable {
     func makeCoordinator() -> Coordinator { Coordinator(self) }
 
     func makeUIView(context: Context) -> MLNMapView {
-        let map = MLNMapView(frame: .zero, styleURL: MapStyle.url)
+        let map = LaidOutMapView(frame: .zero, styleURL: MapStyle.url)
+        // AIM WHEN THE VIEW HAS A SIZE, not when SwiftUI feels like updating.
+        //
+        // This is the whole of the "map is not centred" bug, and it is general
+        // rather than per screen (Hidde, 2026-08-29, on Krakow: "deze view is
+        // ook niet mooi gecentraliseerd kunnen we die kennis overal toepassen
+        // waar een kaart toont?").
+        //
+        // updateUIView held the code that applies the sheet's content inset and
+        // then aims the camera into the strip a person can actually see. On
+        // this screen it ran three times, every one of them with
+        // `map.bounds.height == 0`, so neither ever happened: SwiftUI updates a
+        // representable when its inputs change, and layout comes afterwards.
+        // The Map tab escapes it by accident, because its `region` binding
+        // fires on every camera move and drags a later update along behind it.
+        // Nothing else in the app has one, so every other map has been showing
+        // makeUIView's naive first paint: the trees centred in the whole view,
+        // half of which is behind the sheet.
+        //
+        // A view knows when it has been laid out. Asking it is one override and
+        // it fixes every map at once.
+        map.onLayout = { [weak map] in
+            guard let map else { return }
+            context.coordinator.settle(map)
+        }
         map.delegate = context.coordinator
         map.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         // Only once somebody has ALREADY said yes. MapLibre asks the system for
@@ -124,6 +148,13 @@ struct TreeMap: UIViewRepresentable {
         // or undo it. Rotation buys nothing here either, because every label on
         // it is a place name meant to be read.
         map.allowsRotating = false
+        // OUR INSET, NOT UIKIT'S. MapLibre offers to keep contentInset in step
+        // with whatever bars sit over it, and this map is under a sheet rather
+        // than a bar, so its idea of the covered area is wrong and it overwrites
+        // ours on a layout pass. MapLibre prints a warning about the deprecated
+        // form of this on every launch; turning it off is what the warning asks
+        // for and what settle() needs to be the only writer.
+        map.automaticallyAdjustsContentInset = false
         map.compassView.isHidden = true
         map.compassView.isAccessibilityElement = false
         map.attributionButton.isHidden = true
@@ -196,59 +227,7 @@ struct TreeMap: UIViewRepresentable {
         map.attributionButton.isHidden = true
         map.attributionButton.isAccessibilityElement = false
         map.attributionButton.accessibilityElementsHidden = true
-        // Keep the recentre control just above the sheet, whatever stop the
-        // sheet is at. 12 points of air, and never lower than the old 120 so a
-        // map with no sheet in front of it looks the same as before.
-        if let lift = context.coordinator.recentreLift, map.bounds.height > 0 {
-            let want = -((sheetCoverage?.points(in: map.bounds.height) ?? 0) + 12)
-            // Never higher than mid-screen. At full height the sheet is 86
-            // percent of the phone, so "just above the sheet" put the recentre
-            // control up among the search field and the filter chips, three
-            // controls deep in the same 120 points (seen 2026-08-25, on the
-            // map-full screen the moment it was first photographed).
-            let clamped = max(min(want, -120), -(map.bounds.height * 0.55))
-            if abs(lift.constant - clamped) > 1 { lift.constant = clamped }
-        }
-
-        // AND THE CAMERA HAS TO KNOW ABOUT THE SHEET TOO, which until
-        // 2026-08-25 only the recentre button did. Tapping a tree centred it in
-        // the map VIEW, and the bottom half of that view is behind the sheet, so
-        // the pin you just tapped settled at the sheet's top edge or under it
-        // (Hidde: "als ik op Muntje klik, pakt hij niet goed het midden van
-        // Muntje van de kaart, wat je kan zien"). A content inset is what this
-        // is for: MapLibre then treats the uncovered strip as the map, so every
-        // camera move, the selection, the recentre and a search result all land
-        // in the middle of what a person can actually see.
-        //
-        // Clamped at 55 percent, because at full height the sheet leaves a
-        // sliver and an inset that large gives the camera almost no viewport to
-        // aim into.
-        if map.bounds.height > 0 {
-            let bottom = min(sheetCoverage?.points(in: map.bounds.height) ?? 0,
-                             map.bounds.height * 0.55)
-            if abs(map.contentInset.bottom - bottom) > 1 {
-                map.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottom, right: 0)
-            }
-
-            // AND NOW AIM, once, with an inset that is finally real.
-            //
-            // makeUIView centred the collection while the view still had no
-            // height and therefore no inset, so it landed in the middle of the
-            // whole map rather than the middle of the strip somebody can see.
-            // On My trees, where the sheet is tall, that is most of the error
-            // Hidde reported (2026-08-28: "de map en de boom niet in het midden
-            // uitgelijnt"). Same shape as the clustering bug beside it: a value
-            // read before it exists, and a first frame that is wrong until
-            // something else happens to correct it.
-            //
-            // Once only, and never again: after this the camera belongs to
-            // whoever is holding the phone.
-            if let focus, !context.coordinator.aimed {
-                context.coordinator.aimed = true
-                map.setCenter(focus, zoomLevel: Self.zoom(forMeters: spanMeters),
-                              animated: false)
-            }
-        }
+        context.coordinator.settle(map)
 
         if let move = moveTo, context.coordinator.moved != move.token {
             context.coordinator.moved = move.token
@@ -547,6 +526,81 @@ struct TreeMap: UIViewRepresentable {
         /// street zoom, so the list still feels live.
         /// Whether the opening shot has been taken with a real content inset.
         var aimed = false
+        /// Set the moment a finger moves the camera. After that the map belongs
+        /// to whoever is holding the phone and nothing here aims it again.
+        var userMoved = false
+
+        /// EVERYTHING THAT NEEDS THE VIEW TO HAVE A SIZE, in one place, called
+        /// from layoutSubviews as well as from updateUIView.
+        ///
+        /// It used to live in updateUIView alone, guarded on a non-zero height,
+        /// and on every screen but the Map tab that guard was never once true.
+        /// See the note in makeUIView.
+        @MainActor
+        func settle(_ map: MLNMapView) {
+            guard map.bounds.height > 0 else { return }
+            let coverage = parent.sheetCoverage?.points(in: map.bounds.height) ?? 0
+
+            // Keep the recentre control just above the sheet, whatever stop the
+            // sheet is at. 12 points of air, and never lower than the old 120 so
+            // a map with no sheet in front of it looks the same as before.
+            if let lift = recentreLift {
+                // Never higher than mid-screen. At full height the sheet is 86
+                // percent of the phone, so "just above the sheet" put the
+                // recentre control up among the search field and the filter
+                // chips, three controls deep in the same 120 points (seen
+                // 2026-08-25, on the map-full screen the first time it was
+                // photographed).
+                let clamped = max(min(-(coverage + 12), -120), -(map.bounds.height * 0.55))
+                if abs(lift.constant - clamped) > 1 { lift.constant = clamped }
+            }
+
+            // AND THE CAMERA HAS TO KNOW ABOUT THE SHEET TOO, which until
+            // 2026-08-25 only the recentre button did. Tapping a tree centred it
+            // in the map VIEW, and the bottom half of that view is behind the
+            // sheet, so the pin you just tapped settled at the sheet's top edge
+            // or under it (Hidde: "als ik op Muntje klik, pakt hij niet goed het
+            // midden van Muntje van de kaart"). A content inset is what this is
+            // for: MapLibre then treats the uncovered strip as the map, so every
+            // camera move, the selection, the recentre and a search result all
+            // land in the middle of what a person can actually see.
+            //
+            // Clamped at 55 percent, because at full height the sheet leaves a
+            // sliver and an inset that large gives the camera almost no viewport
+            // to aim into.
+            let bottom = min(coverage, map.bounds.height * 0.55)
+            if abs(map.contentInset.bottom - bottom) > 1 {
+                map.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottom, right: 0)
+            }
+
+            // AND NOW AIM, with an inset that is finally real.
+            //
+            // UNTIL A FINGER TOUCHES IT, rather than exactly once. The sheet
+            // reports its height through the environment while it is still
+            // settling, so the first layout pass can arrive with `peek` and the
+            // real answer land a frame later; aiming once would take whichever
+            // of those came first. Re-aiming until somebody moves the map is
+            // also what Apple Maps does with a sheet over it, and it costs
+            // nothing: after the first pan or pinch this never runs again.
+            guard !userMoved, let focus = parent.focus else { return }
+            aimed = true
+            map.setCenter(focus,
+                          zoomLevel: TreeMap.zoom(forMeters: parent.spanMeters),
+                          animated: false)
+        }
+
+        /// A finger on the map ends the aiming. `reason` tells us it was a
+        /// person rather than one of our own setCenter calls, which is the
+        /// whole distinction: without it the map would stop aiming the instant
+        /// it aimed itself.
+        func mapView(_ map: MLNMapView, regionWillChangeWith reason: MLNCameraChangeReason,
+                     animated: Bool) {
+            let byHand: MLNCameraChangeReason = [
+                .gesturePan, .gesturePinch, .gestureRotate, .gestureZoomIn,
+                .gestureZoomOut, .gestureOneFingerZoom, .gestureTilt,
+            ]
+            if !reason.intersection(byHand).isEmpty { userMoved = true }
+        }
 
         func mapView(_ map: MLNMapView, regionDidChangeAnimated animated: Bool) {
             // Our own clustering regroups on a change of zoom level and does
@@ -576,6 +630,22 @@ struct TreeMap: UIViewRepresentable {
             }
             binding.wrappedValue = now
         }
+    }
+}
+
+/// A map view that says when it has been laid out.
+///
+/// One override, and it is the difference between a camera that aims at the
+/// trees and one that aims at the middle of a view half covered by a sheet. See
+/// the note in makeUIView: a SwiftUI representable is updated when its inputs
+/// change, and on most of these screens nothing changes after the first pass,
+/// so `updateUIView` only ever sees a view with no size yet.
+final class LaidOutMapView: MLNMapView {
+    var onLayout: (() -> Void)?
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        onLayout?()
     }
 }
 

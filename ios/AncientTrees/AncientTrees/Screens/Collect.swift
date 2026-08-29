@@ -178,6 +178,22 @@ struct CollectView: View {
             .padding(.bottom, 12)
     }
 
+    /// SIGNED OUT, THIS PAGE HOLDS NOTHING OF YOURS (Hidde, 2026-08-29: "er
+    /// staan nog steeds favorieten en my trees bij m'n profiel als ik ben
+    /// uitgelogd").
+    ///
+    /// Signing out empties the collection on this phone, and it has since this
+    /// morning, so the hearts and the ticks were already gone. What stayed were
+    /// the trees somebody photographed, which are deliberately NOT deleted: a
+    /// picture taken under a tree may not have reached the account yet, and
+    /// losing one is the single thing here that signing back in cannot undo.
+    ///
+    /// So they are kept and not shown. A signed-out page offers the account and
+    /// the camera and says nothing about a collection nobody is signed in to,
+    /// which is what every app with an account does; the photographs come back
+    /// with the person they belong to.
+    private var showsYourCollection: Bool { account.isSignedIn }
+
     /// Your trees, and the picker that chooses which list.
     @ViewBuilder private var sheetBody: some View {
         VStack(alignment: .leading, spacing: 18) {
@@ -185,16 +201,16 @@ struct CollectView: View {
             // way they do on the page this is copied from. They sat in the
             // header, where they were both a wall between the name and the
             // list and a row of tap targets in the drag area.
-            statsRow
+            if showsYourCollection { statsRow }
             actionRow
             // YOUR OWN TREES COUNT AS HAVING STARTED. This asked only about
             // ours, so somebody whose whole collection is trees they
             // photographed themselves was told "your first tree is 1.3 km
             // away" directly under a row saying they have two (seen the moment
             // the map could show an own tree at all, 2026-08-27).
-            if allVisited.isEmpty && saved.favourites.isEmpty
-                && sightings.yoursOnly.isEmpty { mission }
-            if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
+            if !showsYourCollection || (allVisited.isEmpty && saved.favourites.isEmpty
+                && sightings.yoursOnly.isEmpty) { mission }
+            if showsYourCollection, !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
                 lanePicker
                 laneContent
             }
@@ -212,13 +228,18 @@ struct CollectView: View {
     /// draws, not a snapshot, so panning and zooming work as they do
     /// everywhere else.
     @ViewBuilder private var coverMap: some View {
-        let points = allVisited.map { (lat: $0.lat, lng: $0.lng) }
-            + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
-        if countries > 1 {
+        // Signed out it draws the streets around you and nothing on them. See
+        // showsYourCollection: a page nobody is signed in to does not put
+        // somebody's pins on a map either.
+        let mineShown = showsYourCollection ? sightings.yoursOnly : []
+        let visitedShown = showsYourCollection ? allVisited : []
+        let points = visitedShown.map { (lat: $0.lat, lng: $0.lng) }
+            + mineShown.map { (lat: $0.lat, lng: $0.lng) }
+        if countries > 1, showsYourCollection {
             GlobeMap(points: points)
         } else {
-            TreeMap(trees: allVisited,
-                    mine: sightings.yoursOnly.map {
+            TreeMap(trees: visitedShown,
+                    mine: mineShown.map {
                         (id: $0.id, lat: $0.lat, lng: $0.lng, name: $0.name,
                          photo: sightings.image($0)) },
                     collected: Set(saved.collected.map(\.treeId)),
@@ -233,8 +254,10 @@ struct CollectView: View {
 
     /// The middle of what you have, so the map opens on your collection.
     private var centreOfYours: CLLocationCoordinate2D? {
-        let all = allVisited.map { (lat: $0.lat, lng: $0.lng) }
-            + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
+        let all = showsYourCollection
+            ? allVisited.map { (lat: $0.lat, lng: $0.lng) }
+                + sightings.yoursOnly.map { (lat: $0.lat, lng: $0.lng) }
+            : []
         // WHERE YOU ARE when you have nothing yet. Handing the map no focus
         // opened it on the whole Atlantic, which is a picture of nowhere; the
         // point of this map on an empty page is that it shows the streets your
@@ -248,6 +271,7 @@ struct CollectView: View {
     }
 
     private var spanOfYours: CLLocationDistance {
+        guard showsYourCollection else { return 3000 }
         let lats = allVisited.map(\.lat) + sightings.yoursOnly.map(\.lat)
         let lngs = allVisited.map(\.lng) + sightings.yoursOnly.map(\.lng)
         guard let loLat = lats.min(), let hiLat = lats.max(),
@@ -430,7 +454,7 @@ struct CollectView: View {
                 // A section header is also the convention: Photos, Files and
                 // the App Store all pin a segmented control rather than let it
                 // scroll away from the list it governs.
-                if !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
+                if showsYourCollection, !saved.entries.isEmpty || !sightings.yoursOnly.isEmpty {
                     Section {
                         laneContent
                     } header: {
