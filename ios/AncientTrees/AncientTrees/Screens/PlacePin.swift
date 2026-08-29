@@ -58,6 +58,19 @@ struct PlacePin: View {
                           coordinate: Binding(get: { here }, set: { pin = $0 }))
                 bar
             }
+            // The card at the bottom covers the map, so the recentre control
+            // has to sit above it or it is behind a white rectangle, which is
+            // where it was for the first hour it existed on this screen
+            // (2026-08-29, seen in the sweep rather than reasoned about).
+            //
+            // This moves the BUTTON and nothing else, on purpose. The obvious
+            // knob, sheetLift, also drives the map's content inset, and on this
+            // screen the crosshair is drawn at the view's centre: a content
+            // inset here would put the pin somewhere other than under the
+            // crosshair, which is a wrong coordinate rather than a cosmetic
+            // fault. That exact bug is written up in TreeMap.sheetLift.
+            .onPreferenceChange(SheetVisibleHeightKey.self) { barHeight = $0 }
+            .environment(\.sheetPoints, barHeight > 0 ? barHeight : nil)
             .navigationTitle(sent ? "Thank you" : "Where is it really?")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -70,6 +83,10 @@ struct PlacePin: View {
             }
         }
     }
+
+    /// How tall the card at the bottom is, measured rather than guessed, so it
+    /// stays right when the card grows a line.
+    @State private var barHeight: CGFloat = 0
 
     @ViewBuilder private var bar: some View {
         VStack {
@@ -117,6 +134,12 @@ struct PlacePin: View {
             .background(Brand.surface, in: .rect(cornerRadius: 18))
             .padding(.horizontal, 16)
             .padding(.bottom, 16)
+            // What the map has to stay clear of, measured including both
+            // paddings, because that is what is actually covered.
+            .background(GeometryReader { g in
+                Color.clear.preference(key: SheetVisibleHeightKey.self,
+                                       value: g.size.height + 16)
+            })
         }
     }
 
