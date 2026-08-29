@@ -9,6 +9,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (session, continued) - Brisbane's third standing claim finished (0 trees, real leads work); a Girona claim released rather than dispatched; two photo sweeps
+
+**Finished the third claim the window's first attempt left standing, brisbane (verify).** Dispatched a verify pass on the fourth deepen attempt; it found and evaluated three candidates outside the already-exhausted clusters and delivered none, correctly: Bald Hills Hoop Pines (heritage-listed, two sources, but a private school campus with no evidence of public access), the Toowong Cemetery hoop pine (better sourced now but still unplaceable inside the cemetery), and New Farm Park's fig (dead end). All recorded to data/leads/brisbane.json with reasons. Claim released.
+
+**Claimed then released Girona rather than dispatching a pass.** `city_queue.py --next` listed it top of "OPENABLE TODAY" with 11 Wikidata candidates; a direct radius check of data/research/wikidata-remarkable-trees.json found only 4 within 15km, below the assembly line's own six-candidate floor for a pass, and from-zero web research to pad it out is off for Girona (not on Hidde's named list). Recorded so the next run doesn't re-trust the queue's count without checking it, the same way city_queue.py's rebuild_list() gap was worth recording for the next city, not just fixing quietly.
+
+**Two `photo_hunt.py --recheck` sweeps**, free API work, no tokens: swept 80 more photo-less trees, several with new candidates queued for a future viewing pass.
+
+**A real gap worth flagging: `leads.py --ready`'s 347 entries are NOT verified trees ready for a write pass**, despite the file's own docstring ("only leads with enough data to write") and despite this window's own opening instructions describing them that way. Sampled a dozen across cities (vilnius, barcelona, napoli, warsaw, paris, turin, rome, vienna, zaragoza): every one lacked `verified_sources`, several explicitly say "not researched this pass" or "ran out of time budget". Only 11 leads in the whole corpus carry real sources, and those are mostly already resolved/published. Did not dispatch a write-stories pass on them, since doing so would write stories from unsourced facts, a hard rule 2 violation. Worth a session tightening what `leads.py --ready` actually promises, or renaming the tier, so the next run does not repeat the same false start.
+
 ## 2026-08-29 (session, second attempt in the window) - Finished the standing write claims: Buenos Aires and Dresden open, 4 trees each
 
 The window's first attempt claimed buenosaires and dresden for a write pass, then stopped after 4.3 minutes with 2 commits and no trees. Both had already been fully verified and written (data/research/*-verified.json carried finished stories, sourced and pinned) by the time that attempt stopped; it just never merged, built or committed. This session finished the pass rather than re-orienting: merged both into data/cities/, hand-wrote city-level intro/meta_description/FAQ/question-page copy per Contract B and C, built the site, ran qa.py and superlatives.py clean, released both claims.
