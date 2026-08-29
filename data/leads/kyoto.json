@@ -51,6 +51,23 @@
    },
    "reason": "Register candidate (japan-bunkacho.json) within 80m of already-published kyo_001 'The Reclining Dragon Pine', which is also a National Natural Monument pine at Zenko-ji with the same Japanese name. Almost certainly the same tree already on the site. Not re-verified or re-published; recorded here so a future pass does not re-research it from a register hit alone. Check kyo_001's exact coordinates and sources before assuming this is a genuinely separate specimen. CONFIRMED 2026-08-23: kyo_001 (\"The Reclining Dragon Pine\") stands at 34.93828,135.6449362, about 15-20m from this register point, same species (Japanese White Pine), same story (a nationally designated natural monument pine trained to grow horizontally, named by a 19th-century official). Marked duplicate rather than re-published.",
    "status": "duplicate"
+  },
+  {
+   "name": "The Heian Cedar of Katanami",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "lat": 35.2,
+   "lng": 135.573,
+   "former_id": "kyo_009",
+   "status": "blocked",
+   "why": "PULLED FROM THE LIVE PAGE 2026-08-29 on hard rule 10. Restricted, requiring prior arrangement with Kyoto City and an accompanying nature guide. Hard rule 10's first test: you cannot get in without asking anyone's permission. Nothing is wrong with the tree and the research is kept here in full; it can go back the day the access changes. Access as published: Restricted, requires prior arrangement with Kyoto City and an accompanying nature guide",
+   "age_estimate": "about 1,200 years",
+   "girth_cm": null,
+   "verified_sources": [
+    "https://totteoki.kyoto.travel/tag/%E7%89%87%E6%B3%A2%E5%B7%9D%E6%BA%90%E6%B5%81%E3%81%AE%E6%9D%89%E3%81%AE%E5%B7%A8%E6%9C%A8/",
+    "https://www.pref.kyoto.jp/modelforest/tenjyounoki/keihoku6.html",
+    "https://withphotograph.com/?p=13304"
+   ],
+   "story": "Deep in the forested headwaters of the Katanami River, in Kyoto's rural northern hills, stands a cedar said to have been alive when the Heian-kyo palace it is named for was first built. This forest was imperial timber land for centuries, called Goshomigoyo, and historical records describe it supplying construction material for both Heian-kyo and the earlier short-lived capital of Nagaoka-kyo, as well as replacement timber whenever the imperial palace burned, which happened more than once. The Heian Cedar and its neighbours in this grove are a distinctive local type called fuseki-dai sugi, layering cedars, a growth habit suited to heavy snow: a trunk pushed down and pinned to the ground by winter snowfall can root at the point of contact and rise again as a new, genetically identical trunk, letting a single tree effectively propagate itself sideways across a hillside over centuries. The site is not casually accessible. Kyoto City restricts entry to protect the grove, and visiting requires prior arrangement with the city and an accompanying nature guide, a real constraint on the goal of walking up to see it, stated here plainly rather than glossed over."
   }
  ],
  "blocked": [

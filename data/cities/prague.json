@@ -57,7 +57,8 @@
       "curation_status": "flagged",
       "notes": "Registered as Naturdenkmal-equivalent pamatny strom (registry 104326), protected since 30 July 1998. Age is genuinely disputed across sources: Czech Wikipedia cites a circa-1810 estimate from the national protected-tree register (USOP) alongside a documented 1725-1727 Baroque garden renovation as the more likely planting window; one secondary tourism source claims 290 years, which would push planting closer to 1735. Stated here as a wide, honest range (200-300) rather than a single false-precision number. The Beethoven anecdote is explicitly debunked by both primary sources as implausible given the February timing of his 1796 Prague visit.",
       "location_precision": "confirmed",
-      "girth_cm": 728
+      "girth_cm": 728,
+      "how_to_recognise": "Towering over the Grand Priory Garden wall on the square by the Lennon Wall, 7.28 metres round, the thickest protected trunk in Prague."
     },
     {
       "id": "prg_002",
@@ -90,7 +91,8 @@
       "curation_status": "flagged",
       "notes": "Registered pamatny strom, protected since 7 October 1998. Girth (795 cm, 2004) and height (17 m, 2009) are confirmed by two independent sources. Age is flagged because sources disagree meaningfully: one gives a maximum estimate of 160-170 years, Czech Wikipedia gives approximately 190 years; stated here as the full 160-190 range rather than picking one.",
       "location_precision": "confirmed",
-      "girth_cm": 714
+      "girth_cm": 714,
+      "how_to_recognise": "In the park on the square, 7.14 metres round, with one limb that dips toward the ground before curling back up, which is what the nickname is about."
     },
     {
       "id": "prg_003",
@@ -123,7 +125,8 @@
       "curation_status": "ai_generated",
       "notes": "Registered pamatny strom, protected since 30 July 1998. Girth (546 cm) and height (28 m) confirmed by two independent sources. Age given as an estimated 180-200 year range: one source states an estimated 180 years, while the documented planting window (1825-1836) implies closer to 190-200 by 2026; both are plausible and not a real contradiction, so the wider range is used rather than a single figure.",
       "location_precision": "confirmed",
-      "girth_cm": 580
+      "girth_cm": 580,
+      "how_to_recognise": "In the lower flat part of the garden nearest the Kinskeho namesti entrance, 5.8 metres round, and the largest tree on the whole of Petrin hill."
     },
     {
       "id": "prg_004",
@@ -156,7 +159,8 @@
       "curation_status": "ai_generated",
       "notes": "Registered pamatny strom (registry 104322/11122), protected since 8 October 1998. Planting year (1813) and planter (Barbora Kolowratova-Krakovska) are documented and consistent across both sources, unusually precise for a Prague memorial tree.",
       "location_precision": "confirmed",
-      "girth_cm": 506
+      "girth_cm": 506,
+      "how_to_recognise": "At the northern edge of the park near the Liechtenstein Palace entrance, 5.06 metres round, and the one Prague plane that carries a planting year rather than an estimate."
     },
     {
       "id": "prg_005",
@@ -196,7 +200,8 @@
       "curation_status": "ai_generated",
       "notes": "Registered natural monument (registry 104290), protected since 22 August 2001. Girth (507-508 cm) and height (45 m) confirmed by two independent sources. Age estimates range from 210 to 250 years across two assessments (2016 and 2019); midpoint of roughly 230 used as the headline estimate with the full range preserved in age_min/age_max.",
       "location_precision": "confirmed",
-      "girth_cm": 538
+      "girth_cm": 538,
+      "how_to_recognise": "About 170 metres in from the Brevnov Gate, splitting into two trunks a few feet off the ground, and at 45 metres the tallest tree on this page by a wide margin."
     },
     {
       "id": "prg_006",
@@ -235,7 +240,8 @@
       "curation_status": "flagged",
       "notes": "Registered pamatny strom, formally declared 16 July 2004. Age is flagged because two sources genuinely disagree by roughly 80 years: a circa-1804 planting estimate tied to the original nursery landscaping versus a 2016 assessment of approximately 130 years. Stated as a wide honest range (140-220) rather than a false-precision single figure. Girth (362 cm) and crown width (16 m) are consistent across sources.",
       "location_precision": "confirmed",
-      "girth_cm": 365
+      "girth_cm": 365,
+      "how_to_recognise": "Near the governor's summerhouse, 3.65 metres round, with fan-shaped leaves that turn one uniform gold and drop within days each November."
     },
     {
       "id": "prg_007",
@@ -277,7 +283,8 @@
       "notes": "Registered as Prague's first pamatny dub (memorial oak), protected since 26 October 1994 (registry 104336/11136). Girth (457 cm, 2013 measurement) and the 190-200 year age estimate are consistent across both sources.",
       "location_precision": "confirmed",
       "verify_notes": "Reader feedback (via /contribute, 2026-08-15) flagged the location as wrong, no detail given. Re-checked 2026-08-23: Czech Wikipedia gives an explicit GPS citation, 50.1112953N 14.4137611E, matching our stored pin (50.1113,14.4138) almost exactly; prazskestromy.cz's descriptive location (southern shore path by the canal, under 200m from the Stromovka footbridge) also matches our story text. No error found against either source; outcome recorded as holds.",
-      "girth_cm": 478
+      "girth_cm": 478,
+      "how_to_recognise": "On the island's embankment road, about 200 metres from the footbridge across to Stromovka, 4.78 metres round."
     },
     {
       "id": "prg_008",
@@ -310,7 +317,8 @@
       "curation_status": "ai_generated",
       "notes": "Registered pamatny strom (registry 105072/12762), protected since 13 October 2007. Girth (510-513 cm across 2007 and 2013 measurements) and height (37 m) are consistent across both sources.",
       "location_precision": "confirmed",
-      "girth_cm": 530
+      "girth_cm": 530,
+      "how_to_recognise": "In the Great Strahov Garden, the one part of the monastery grounds left open to the public, 5.3 metres round and 37 metres up above the view over Mala Strana."
     },
     {
       "id": "prg_009",
@@ -343,7 +351,8 @@
       "curation_status": "flagged",
       "notes": "Registered pamatny strom (registry 105426/13166), protected since 19 June 2009. Girth (278-285 cm across 2008 and 2013 measurements), height (24 m) and the 2009 registration date are confirmed on the Czech Wikipedia article; the Wikidata entry corroborates the same registry numbers and species identification, but no independent narrative source was found beyond these two closely linked records, so this is flagged as thinner sourcing than the rest of the list despite the consistent data. Pin upgraded to confirmed 2026-07-27: this entry's own already-cited Wikidata item (Q26790033, specifically about this one tree) carries an individual P625 coordinate claim (50.083939, 14.399024) essentially identical to the stored pin, so the existing position is independently verified rather than a park-level estimate.",
       "location_precision": "confirmed",
-      "girth_cm": 293
+      "girth_cm": 293,
+      "how_to_recognise": "Above the pond below the Petrin terraces, 2.93 metres round: a field maple grown to full tree size instead of staying the scrubby hedge shrub the species usually is."
     },
     {
       "id": "prg_010",
@@ -381,7 +390,8 @@
           4
         ],
         "label": "April, when it fills with white blossom before the leaves are fully out"
-      }
+      },
+      "how_to_recognise": "At a quiet path crossing in the lower orchard section, between the Petrinske Terasy restaurant and Hellichova street, and a fruiting pear rather than anything ornamental."
     },
     {
       "id": "prg_011",
@@ -423,7 +433,8 @@
       "curation_status": "ai_generated",
       "notes": "Registered pamatny strom (registry 104828/12507), protected 17 February 2005. Two independent sources: the USOP-derived record (girth 350 cm in 2004, 375 in 2009, 378 in 2013; height 20 m; crown 23 m; age about 155 years as of 2018) and prazskestromy.cz, the Agentura Koniklec register (girth 378 cm in 2013, age about 160). The 2017 Koniklec printed map gives 393 cm, which is the figure used in the story as the most recent. The botanical-garden claim is the register's own and is stated as such rather than as established fact; the street name V Botanice corroborates that a garden stood here, nothing found dates it. Photo viewed at full size before approval: bright winter daylight, blue sky, the oak fills the frame with trunk and the whole spreading crown readable, and it holds the centre band of a wide card crop. It is leafless, which the Cadiz standard permits (only night shots and black-and-white are excluded) and which suits a tree whose low sideways limbs are the point. This is the same file the Czech Wikipedia article on this tree uses, so the identification is not a guess.",
       "location_precision": "confirmed",
-      "girth_cm": 393
+      "girth_cm": 393,
+      "how_to_recognise": "In the northeastern corner by the street called V Botanice, 3.93 metres round, effectively marooned on a traffic island."
     },
     {
       "id": "prg_012",
@@ -462,7 +473,8 @@
       },
       "curation_status": "flagged",
       "notes": "Not a pamatny strom: this is a vyznamny strom, Prague's second tier, entry number 18, registered 2013, the same tier as prg_010. Girth 350 cm measured 2015 (prazskestromy) and 352 cm in the 2017 Koniklec printed map. Flagged for two reasons. First, the age is a single register estimate of about 125 years with no second assessment found, so the range here is deliberately wide. Second, the pin is approximate: no source publishes coordinates and the tree is not mapped in OpenStreetMap, so the position is triangulated from the register's own wording, the central part of the northern half of the island, which is an area roughly 60 metres across. The city portal's revitalisation page is the independent corroboration for the tree's standing and for the 2013 reopening of the island; it also records that the two largest oaks in the northern part were put forward for heritage status by the project's tree commission. No photo of this specific tree found on Commons, Openverse or iNaturalist in this pass.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "On the lawn in the northern half of the island, directly below Most Legii. The staircase down to it is on the bridge itself."
     },
     {
       "id": "prg_013",
@@ -502,7 +514,8 @@
       },
       "curation_status": "flagged",
       "notes": "Vyznamny strom number 5, registered 2013, not a pamatny strom. Two independent sources: prazskestromy.cz (Agentura Koniklec) gives 340 cm measured at 80 cm above ground in 2015 and an age of about 150, and the Prague 2 district encyclopedia gives 343 cm at 1 m, a height of only 5 m, a planting date of about 1860 to 1870 and an age of 155 to 160 as of 2021. A third figure of about 130 years circulates and is the outlier, hence the range used here. Flagged on the Foglar attribution, which both sources treat as a tradition rather than a documented fact and which the district encyclopedia explicitly offers alongside a rival candidate, the older ginkgo in Riegrovy sady; the story keeps that hedge rather than dropping it. The pin is the OpenStreetMap node named for this individual tree with its cultivar, 'Jinan dvoulalocny Praga', which agrees with the register's description of the position by the greenhouse entrance. Note this is Prague's second ginkgo on the page, the first being prg_006 in Stromovka, 4.5 km north; no size or age comparison between the two is made because neither source ranks them.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "By the greenhouse door, about 3.4 metres round and only five metres tall, spreading and drooping rather than rising, as though a much bigger tree had been cut off short."
     },
     {
       "id": "prg_014",
@@ -533,7 +546,8 @@
       },
       "curation_status": "flagged",
       "notes": "Vyznamny strom number 12, registered 2013. Two independent sources: the Czech Wikipedia article on the Masaryk viewpoint, which draws on the Prague Castle Administration's 1996 Plecnik monograph and describes the lime as over 200 years old standing between the two stone benches, and prazskestromy.cz, which gives about 200 years and a girth of 249 cm measured 2016. The 2017 Koniklec printed map gives 349 cm for the same tree, a 100 cm discrepancy that one of the two has to have got wrong; the story states both rather than choosing. Flagged mainly on access: the viewpoint has been alternately open and closed under successive presidents and is inside the castle security perimeter, so the access field warns rather than promises. Pin is approximate, the Nominatim node for Masarykova vyhlidka; the lime stands on the viewpoint platform, so the error is metres rather than hundreds of metres, but no per-tree coordinate is published. No usable photo of the tree found: the Commons images of this viewpoint are views out over Hradcany with the lime out of frame or backlit.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "On the terrace Plecnik built around it in the Upper Deer Moat, with a bench beneath it and the cathedral lined up below; the moat opens roughly April to October."
     },
     {
       "id": "prg_015",
@@ -564,7 +578,8 @@
       "curation_status": "flagged",
       "notes": "Registered pamatny strom (registry 106429), declared 15 April 2022, one of Prague's most recent. Girth 335 cm and height 23 m measured 2022; age about 190 years; health recorded as stable, excellent to good, with excellent to slightly reduced vitality. Flagged on sourcing: the second source is a Czech popular travel article rather than an independent survey, and it plainly rests on the same register data, so this entry is effectively single-sourced on the numbers even though the tree's existence, species and position are not in doubt. It adds the point about the tree having survived grafioza, which the register record supports by implication rather than by statement. No superlative is claimed here on purpose: the 2020 Koniklec map calls the elm in Michelsky les the only memorial elm in Prague, a claim made two years before this tree was protected, and the two should not be set against each other. Photos on Commons exist under Category:Jilm v Ruzove ulici but all six were viewed and every one is a street view in which the tree is small, partly hidden by buildings and off to one side, so none passes the Cadiz standard.",
       "location_precision": "confirmed",
-      "girth_cm": 335
+      "girth_cm": 335,
+      "how_to_recognise": "On the side street between Wenceslas Square and the main station, 3.35 metres round, with a fence put around its base in 2021."
     },
     {
       "id": "prg_016",
@@ -606,7 +621,8 @@
       "curation_status": "ai_generated",
       "notes": "Registered pamatny strom (registry 104300/11100), protected 24 March 2001. Two independent sources agree: girth 265 cm in 2000, 299 in 2010, 309 in 2013 and 321 in the 2017 Koniklec map; height 19 m with a 16 m crown; age about 165 years as of 2016 with a planting date of about 1850; condition rated excellent in 2010 with no visible damage. The claim that this is the only protected oak in the Old Town is the register's own and is a district-level claim, so it does not collide with the city page's existing claim that the Cisarsky ostrov oak (prg_007) was the first oak in Prague to be protected. Photo viewed at full size before approval: May 2021, sunlit, blue sky, the oak occupies most of the frame with the full crown and the base of the trunk both readable, and the tree holds the centre of the image so a wide card crop keeps it. A parked car sits at the lower left and does not intrude on the centre band.",
       "location_precision": "confirmed",
-      "girth_cm": 321
+      "girth_cm": 321,
+      "how_to_recognise": "On the scrap of a square behind the Convent of Saint Agnes, between the Gothic church of the Holy Saviour and the road authority's offices, 3.21 metres round."
     },
     {
       "id": "prg_017",
@@ -633,7 +649,8 @@
         "status": "missing"
       },
       "transport": "Petrska ctvrt, Nove Mesto; tram 3, 8 or 24 to Prazska trznice or Revolucni, short walk",
-      "girth_cm": 342
+      "girth_cm": 342,
+      "how_to_recognise": "On the street corner opposite the Church of St Clement, 3.42 metres round, its bark shedding in plates of cream, olive and grey."
     }
   ]
 }

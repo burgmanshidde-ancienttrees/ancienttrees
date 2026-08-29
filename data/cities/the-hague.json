@@ -2,19 +2,19 @@
   "city": "The Hague",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "The Hague's oldest tree grows behind a locked gate in an almshouse courtyard, still tended by the women who live there, exactly as it has been since 1638. The rest of the list is far easier to reach. Four minutes north of Den Haag Centraal an 18th century oak stands on the old deer meadow, and nearby a horse chestnut hauled eighty metres across it on steel plates in 1997 rather than felled for a road tunnel. Thirty trees in all, from a royal garden cypress to a row of chestnuts beside the Hofvijver.",
-  "meta_description": "The Hague's oldest tree, a 1638 pear, grows in a locked courtyard. 30 verified trees, from Koekamp oaks to a chestnut moved on steel plates.",
-  "question_answer": "The Hague's oldest tree is the Juttepeer of the Heilige Geesthofje, a pear tree planted in 1638 in the courtyard of a still-functioning almshouse near the Paviljoensgracht. At roughly 388 years old, it is widely considered the oldest pear tree in the Netherlands, and residents still make jelly from its fruit every year.",
-  "question_meta": "A 1638 pear tree in a locked almshouse courtyard, likely the oldest pear tree in the Netherlands, is The Hague's oldest tree. All 30 mapped.",
-  "question_context": "The Hague's oldest tree survives because it never had to compete for space in open, public ground. The Heilige Geesthofje's pear has spent nearly four centuries inside a walled almshouse courtyard that has functioned as a residence since 1616. Its closest rivals took the opposite route. The Koekamp oak, at roughly 300 years, grows on land that was never private at all, protected by a 1576 promise from William of Orange that the Haagse Bos would never be sold or logged, a guarantee that has held with one serious interruption, wartime felling under German occupation. A second oak on the same meadow, and a London Plane out at Leidschendam, are both dated by the national register to somewhere between 1750 and 1800, a fifty year band rather than a date, which puts them between 225 and 275 years old. After those the list drops into the 19th century, onto estate land later built over, into two cemeteries and a painter's garden. What links them is not age but boundary: each one ended up inside something nobody had a reason to cross.",
+  "intro": "Four minutes north of Den Haag Centraal an 18th century oak stands on the old deer meadow, kept there by a promise William of Orange made in 1576 that the Haagse Bos would never be sold or logged. Beside it a horse chestnut was hauled eighty metres across the same meadow on steel plates in 1997 rather than felled for a road tunnel. Twenty-nine trees in all, from a royal garden cypress to a row of chestnuts beside the Hofvijver, and nearly every one of them free and open at any hour.",
+  "meta_description": "The Hague's oldest tree is a 300-year-old oak on the Koekamp deer meadow. 29 verified trees, including a chestnut moved eighty metres on steel plates.",
+  "question_answer": "The Hague's oldest tree is the Koekamp Oak, growing on the old deer meadow four minutes north of Den Haag Centraal, at roughly 300 years. It stands on ground that was never private: William of Orange promised in 1576 that the Haagse Bos would never be sold or logged, and that guarantee has held ever since, with one serious interruption during the wartime felling under German occupation. Its closest rival is the plane in Park Hoekenburg, which the national register bands between 1700 and 1750, so somewhere between 276 and 326 years, a fifty year band rather than a date. On the midpoints the two are within a few years of each other and this page does not pretend to separate them. Older than either was a pear of 1638 in an almshouse courtyard, and it is no longer on this page: it can only be seen on a booked tour, which is not a tree anybody can go and stand in front of.",
+  "question_meta": "The Hague's oldest tree is a roughly 300-year-old oak on the Koekamp, kept by a promise from 1576. Its story, exact location, and 28 more mapped.",
+  "question_context": "Ages here come mostly from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than dates. The Koekamp oak, at roughly 300 years, grows on land that was never private at all, protected by a 1576 promise from William of Orange that the Haagse Bos would never be sold or logged, a guarantee that has held with one serious interruption, the wartime felling under German occupation. A second oak on the same meadow, and a London plane out at Leidschendam, are both banded by the register to somewhere between 1750 and 1800, which puts them between 225 and 275 years old. After those the list drops into the 19th century, onto estate land later built over, into two cemeteries and a painter's garden. One tree that used to head this page has come off it: the 1638 pear of the Heilige Geesthofje, which is genuinely the oldest tree in the city and can only be reached on a booked tour, and this site publishes trees a person can walk up to.",
   "faq": [
     {
       "q": "What is the oldest tree in The Hague?",
-      "a": "The Juttepeer of the Heilige Geesthofje, a pear tree planted in 1638 in a still-functioning almshouse courtyard, likely the oldest pear tree in the Netherlands."
+      "a": "On this page, the Koekamp Oak on the old deer meadow, at roughly 300 years, with the plane in Park Hoekenburg close enough on the register's band to be a genuine rival. Older than either is a pear of 1638 in an almshouse courtyard, which we do not list because it can only be seen on a booked tour."
     },
     {
       "q": "Are The Hague's remarkable trees free to visit?",
-      "a": "Most are free and open at any hour, including everything on the Koekamp, the Malieveld, the Vijverberg and Huijgenspark, the cemetery at Oud Eik en Duin and the estate park at Ockenburgh. Four are not: the Juttepeer's courtyard needs a guided tour, an appointment or Open Monumentendag; the Mesdag garden oak is reached through the museum during opening hours; the oak in the Jewish cemetery on the Scheveningseweg stands behind a wall that is not open every day; and the Paleistuin cypress is closed on the occasional day a state visit requires it."
+      "a": "Nearly all of them, at any hour: everything on the Koekamp, the Malieveld, the Vijverberg and Huijgenspark, the cemetery at Oud Eik en Duin and the estate park at Ockenburgh. A few sit on estate grounds with their own opening hours, and the access line on each tree says which."
     },
     {
       "q": "Which tree in The Hague was moved eighty metres?",
@@ -26,43 +26,6 @@
     }
   ],
   "trees": [
-    {
-      "id": "hag_001",
-      "name": "The Juttepeer of Heilige Geesthofje",
-      "species": "European Pear (Pyrus communis)",
-      "age_estimate": "about 388 years",
-      "age_min": 385,
-      "age_max": 390,
-      "location": {
-        "address": "Heilige Geesthofje courtyard, Paviljoensgracht",
-        "latitude": 52.0735406,
-        "longitude": 4.3133413,
-        "neighbourhood": "Centrum"
-      },
-      "story": "Elderly women living in this almshouse have been making jelly from this pear tree's fruit since at least the 17th century, and the tree they are picking from is very likely the same one their predecessors used four centuries ago. Planted in 1638 in the inner courtyard of the Heilige Geesthofje, founded in 1616 to house women of unblemished character, the tree is widely considered the oldest pear tree in the Netherlands, a juttepeer, a small, hard, old Dutch variety better suited to cooking and preserving than eating straight off the branch. The courtyard itself functioned as a working kitchen garden for residents for most of its history, vegetables and fruit grown for the household rather than for show, and the pear outlasted whatever else was once planted alongside it. It still bears fruit every year, harvested and turned into jelly by the almshouse's current residents in a tradition nobody has needed to formally revive because it never actually stopped. The courtyard is not casually open to passersby; the almshouse still functions as a residence, and visiting means booking a guided tour through the Buitenmuseum, arranging an appointment, or timing a visit to the national Open Monumentendag, a small price for standing beside something planted six years before Rembrandt painted the Night Watch.",
-      "verified_sources": [
-        "https://bomenbieb.nl/bijzondere-bomen/juttepeer-heilige-geesthofje/",
-        "https://nl.wikipedia.org/wiki/Heilige_Geesthofje_(Den_Haag)"
-      ],
-      "access": "Restricted: guided Buitenmuseum tours, by appointment, or during Open Monumentendag. Not open to casual walk-in visitors",
-      "transport": "10-15 minute walk from Den Haag Centraal or Hollands Spoor station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "approximate",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September into October, when the residents pick the pears for jelly",
-        "kind": "fruit"
-      }
-    },
     {
       "id": "hag_002",
       "name": "The Koekamp Oak",
@@ -1027,5 +990,6 @@
       "curation_status": "flagged",
       "location_precision": "confirmed"
     }
-  ]
+  ],
+  "oldest_tree_id": "hag_002"
 }
