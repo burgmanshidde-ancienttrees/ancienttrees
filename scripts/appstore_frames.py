@@ -192,12 +192,17 @@ def hero(photo_path, line, ground):
                          Image.LANCZOS)
     canvas.paste(photo, ((W - photo.width) // 2, (H - photo.height) // 2))
 
-    # A scrim under the words rather than over the whole picture: the top third
-    # darkens, the tree keeps its light.
+    # THE WORDS SIT LOW, at two thirds (Hidde, 2026-08-29: "kun je de tekst op
+    # 2/3 van de pagina zetten ipv boven"). So the scrim moves with them: it
+    # darkens UP from the bottom rather than down from the top, which leaves
+    # the crown of the tree its light and puts the shade where the sentence is.
+    # A scrim that stayed at the top would now be shading nothing.
     scrim = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(scrim)
-    for y in range(int(H * 0.55)):
-        a = int(190 * (1 - y / (H * 0.55)) ** 1.4)
+    reach = int(H * 0.55)
+    for i in range(reach):
+        y = H - 1 - i
+        a = int(200 * (1 - i / reach) ** 1.3)
         d.line([(0, y), (W, y)], fill=(10, 14, 8, a))
     canvas = Image.alpha_composite(canvas.convert("RGBA"), scrim).convert("RGB")
 
@@ -211,8 +216,11 @@ def hero(photo_path, line, ground):
     size = 104
     f = font("Gabarito-ExtraBold.ttf", size)
     tracking = -size * 0.02
-    y = 220
-    for i, text in enumerate(line.split("\n")):
+    # Two thirds down, measured from the block's own height so both lines sit
+    # under the fold rather than the first one landing there.
+    lines = line.split("\n")
+    y = int(H * 0.66) - int(size * 1.08) * (len(lines) - 1)
+    for i, text in enumerate(lines):
         gold = i == 1                       # the site puts the second half in <em>
         w = tracked_width(draw, text, f, tracking)
         draw_tracked(draw, (W - w) / 2, y, text, f, tracking,
