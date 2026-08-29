@@ -172,6 +172,15 @@ struct ContentView: View {
                 })
     }
 
+    /// Nothing of somebody's collection survives on a phone nobody is signed
+    /// in to. The stores keep the data on the SERVER; this only empties the
+    /// copy here, which is why both calls are named forgetLocally.
+    private func forgetIfSignedOut() {
+        guard !account.isSignedIn else { return }
+        saved.forgetLocally()
+        profiles.forgetLocally()
+    }
+
     /// The centre button, gated.
     ///
     /// Collecting writes a sighting, a photograph and, when the tree is one we
@@ -532,12 +541,22 @@ struct ContentView: View {
         // Your own PHOTOGRAPHS stay. They are the one thing on this phone that
         // an upload may not have reached yet, and losing a picture somebody
         // took under a tree is not recoverable by signing back in.
-        .onChange(of: account.isSignedIn) { was, now in
-            guard was, !now else { return }
-            saved.forgetLocally()
-            profiles.forgetLocally()
-        }
+        .onChange(of: account.isSignedIn) { _, _ in forgetIfSignedOut() }
         .task {
+            // AT LAUNCH TOO, not only on the transition (Hidde, 2026-08-29:
+            // "ik zie nog steeds favoriet een vink icoon op de map waar niet
+            // ingelogd", and "ook seen op thumbnails").
+            //
+            // The onChange above fires when somebody signs OUT, and that was
+            // the whole of it, so a phone that had entries on disk and then
+            // launched signed out kept every heart and tick for ever: nothing
+            // ever transitioned. A session can also end without a sign-out at
+            // all, when a refresh token is refused after three weeks away.
+            //
+            // Safe here because Account.restore() reads the Keychain
+            // synchronously in its init, so isSignedIn is already right on the
+            // first frame rather than a moment later.
+            forgetIfSignedOut()
             store.loadBundled()
             // Ask whether anything changed. A few dozen bytes, and it is the
             // difference between an app that follows the database and an app
