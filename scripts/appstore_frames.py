@@ -71,21 +71,11 @@ GROUNDS = {
 # the website's own h1, so the two surfaces say the same thing.
 HERO_LINE = "Trees worth the walk,\nwherever you are."
 
-# A SECOND, SMALLER LINE, from his idea on 2026-08-29: "were constantly working
-# on our tree database, you can help ancient trees grow by adding your
-# favourite remarkable tree of your city."
-#
-# The second half of that belongs on the first frame: a map that grows by hand
-# is the thing no competitor has. The first half does not, and PRODUCT_COPY.md
-# says why in two rules. Never name our machinery, not the feed, not the
-# catalogue, not the DATABASE, say what they get. And the reader is the
-# subject, not us. "We are constantly working on our database" breaks both, and
-# it is the builder-speak the corpus bans in public copy: process is not a
-# selling point.
-#
-# So one sentence, they act, no machinery, true today because trees are added
-# every week.
-HERO_SUB = "You can add the tree your city is missing."
+# THE INVITATION IS NOT ON THIS PANEL, and that is his call (2026-08-29): "deze
+# zin hoeft er niet op voor de app store foto hou die maar clean". It was here
+# for one build. What he wants it to do, telling people the map is still
+# growing and that they can help, it does inside the app instead, at the end of
+# Discover where somebody is already browsing. See Home.swift's growingCard.
 
 # The opener's photograph, changed on 2026-08-29 to one of the four Hidde
 # chose for the app itself ("die eerste afbeelding zou ik nog willen wijzigen
@@ -273,7 +263,7 @@ def hero(photo_path, line, ground):
     # Two thirds down, measured from the block's own height so both lines sit
     # under the fold rather than the first one landing there.
     lines = line.split("\n")
-    y = int(H * 0.62) - int(size * 1.08) * (len(lines) - 1)
+    y = int(H * 0.66) - int(size * 1.08) * (len(lines) - 1)
     for i, text in enumerate(lines):
         gold = i == 1                       # the site puts the second half in <em>
         w = tracked_width(draw, text, f, tracking)
@@ -281,12 +271,6 @@ def hero(photo_path, line, ground):
                      GOLD_HERO if gold else CREAM)
         y += int(size * 1.08)
 
-    # Half the size and quiet, so it reads as the sentence after the promise
-    # rather than as a second promise.
-    sub = font("Gabarito-Medium.ttf", 50)
-    w = draw.textlength(HERO_SUB, font=sub)
-    draw.text(((W - w) / 2, y + 28), HERO_SUB, font=sub, fill=(0, 0, 0))
-    draw.text(((W - w) / 2, y + 22), HERO_SUB, font=sub, fill=CREAM)
     return canvas
 
 
