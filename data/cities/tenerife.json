@@ -57,7 +57,8 @@
       "curation_status": "flagged",
       "notes": "Age is a genuine, unresolved disagreement and is deliberately left unresolved. es.wikipedia cites a current scientific estimate of approximately 700 years with a margin of error of 100-150 years (roughly 550-850); popular and tourist sources claim 800-1,000+, and folklore claims up to 3,000 are unconfirmed and not used as a bound. Dracaena draco has no annual growth rings, so it cannot be dated dendrologically and no girth-based derivation was attempted for this species. Height 18m (es.wikipedia) to 21m (other sources); trunk perimeter about 20m at base (girth_cm 2000, an unusually wide multi-stemmed base typical of the species rather than a single narrow trunk); crown diameter about 20m; over 300 primary branches. Declared a Spanish national monument in 1917. Underwent 'profound sanitation' in 1985 (internal ventilation installed against fungal rot); the road past it was relocated in 1993. No evidence of recent storm damage or a lost branch; status per sources is protected and stable, with a health study run Oct 2023-Mar 2024 per eldiario.es informing conservation work.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "A trunk about twenty metres round at the base splitting into more than three hundred branches, standing alone in the park that was laid out around it in 1996."
     },
     {
       "id": "tfe_002",
@@ -88,7 +89,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Height over 45m (one source: 45.12m); girth cited as 'nearly 10m' and more precisely 9.36m, the thickest native tree in Spain (girth_cm 936). Widely called the most voluminous tree of its kind in Europe. Sits at over 1,400m elevation in the Corona Forestal Natural Park, not the ticketed core of Teide National Park (which only gates the cable car). Featured on Vilaflor's municipal coat of arms. Survived multiple wildfires and storms; bark shows fire scarring. Pin confirmed against an OpenStreetMap natural=tree node named 'Pino Gordo' on the TF-21 in Vilaflor de Chasna matching the description exactly; a separate 'Pino Gordo' bus-stop node sits about 30m away at the parking area. About 150m from Pino de las Dos Pernadas (tfe_003), the two forming one short walkable pair at the same viewpoint.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "The thicker of the two pines at the viewpoint, 9.36 metres round with fire scars up the bark; the taller one stands 150 metres further along the trail."
     },
     {
       "id": "tfe_003",
@@ -118,7 +120,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Called the tallest native tree in Spain: 56m. Girth about 8m (girth_cm 800). The trunk forks into two limbs of similar thickness at around 10m height, which gives the tree its name (dos pernadas, two limbs). Pin confirmed against an OpenStreetMap natural=tree node named 'Pino de las dos Pernadas' on the TF-21, about 130-150m from the Pino Gordo node, consistent with descriptions of the two standing on the same short trail. Same fire and storm context as Pino Gordo (Corona Forestal Natural Park, free public access).",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "The taller and slimmer of the two: at about ten metres up the trunk divides into two limbs of near-identical thickness that carry on skyward side by side."
     },
     {
       "id": "tfe_004",
@@ -150,7 +153,8 @@
       "curation_status": "flagged",
       "notes": "Likely the Lord Howe Island form of the species (f. columnaris / var. columnaris, native to Lord Howe Island rather than mainland Australia); sources differ on how precisely to name the variety, so the species-level canonical name is used and the open question is stated on the page. Documented planting: planted by the garden's Swiss head gardener Hermann Wildpret during his tenure (1860-1893), specifically 'in the 1870s' per two independent secondary sources, which is a real basis for a derived age (a documented planting date for this specimen, not a bridge from the garden's own 1788 founding). One weaker source (getawayguide.co.uk) separately states 'around 200 years old' without giving a planting date; recorded as a conflicting figure rather than resolved. Height approximately 30m; many aerial roots descending from the branches, some thickened into secondary trunks. Spanish Wikipedia confirms the garden's coordinates and its founding by royal order of Carlos III, 17 August 1788, inaugurated 1792, but does not mention the ficus by name, so it is not used as a source for the tree's own age. location_precision approximate: the coordinates are the garden's own (OSM way centroid), not the tree's plot inside the roughly 20,000 sqm grounds; no tree-level coordinate was found this pass.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "Not one trunk but a colonnade about thirty metres high, its aerial roots set into columns you walk in among rather than around."
     }
   ],
   "kind": "island"

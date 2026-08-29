@@ -63,7 +63,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Corroborated across the Bath Natural History Society's January 2025 walk write-up (which identifies the tree by species, cultivar and its position 'just inside park gates on south side of Royal Avenue') and Historic England's Grade II listing description for the park (which independently confirms the original avenue planting, its loss to Dutch Elm disease, and the single Caucasian Elm survivor); parksandgardens.org restates the same facts as a third corroborating page. James Gordon's 18th-century introduction of the cultivar and its status as ancestor to most UK Caucasian Elms is stated consistently across sources. No source gives an exact planting year, only 'planted with the park's original 1830 layout'; age range reflects 2026 minus 1830 as a maximum, with a few years' margin since avenue planting sometimes followed a park's opening by a season or two. Coordinates are the Royal Avenue park entrance, the location all sources describe ('just inside the gates'), not a surveyed point for the trunk itself.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "Just inside the gates on Royal Avenue, standing alone where an avenue used to be, with an irregular densely branched crown quite unlike the elms it replaced."
     },
     {
       "id": "bat_002",
@@ -95,7 +96,8 @@
       },
       "curation_status": "flagged",
       "notes": "The 1793 planting date is widely repeated (travel and heritage sites, tourism copy) but is a local tradition rather than a documented fact. A second, independently reasoned account (map evidence: absent from an 1852 survey, present by 1888) points to a much later planting, roughly 1880s, making the tree 138-146 years old rather than 233. Presented honestly as a range rather than picking one story; the Frankenstein connection is framed as conditional on the earlier date being correct, since the later date would rule it out entirely. The 'Hanging Tree' execution legend is separately sourced local folklore with no primary documentation found; mentioned as the square's own nickname, not stated as fact.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "One giant plane filling nearly the whole of the small paved square, its canopy reaching out over the Georgian facades on every side."
     },
     {
       "id": "bat_003",
@@ -125,7 +127,8 @@
       },
       "curation_status": "flagged",
       "notes": "Presented as a single ensemble entry per CLAUDE.md's collectible-point test: five trees in one compact, famous, self-contained green with one obvious place to stand, the same pattern as the Lomanstraat tunnel and Meiji Jingu Gaien avenue precedents. Planting date ('around 1820') is Wikipedia's figure, citing Bath & North East Somerset Council and Bath Preservation Trust records directly (both primary-ish sources, inaccessible to direct fetch this run but independently corroborated by multiple secondary summaries). No single-tree girth or height figures found; flagged for that reason, not for doubt about the trees' existence or age bracket.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "Five planes on the enclosed green at the centre of the circle, their crowns now higher than the roofline of the terraces around them."
     },
     {
       "id": "bat_004",
@@ -155,7 +158,8 @@
       },
       "curation_status": "flagged",
       "notes": "Dead-tree check done before publishing: a separate 'Giant Redwood' (species not specified in sources, likely Sequoiadendron giganteum/Giant Sequoia, sometimes called 'Wellingtonia' in Britain) planted in Bath's Botanic Gardens in the 1850s died of honey fungus and was replaced in 2001 by a 7m chainsaw sculpture, 'Mankind's Hand in Nature,' near the park's Dovecote (Great British Life; corroborated by a second travel-blog summary of the same council/park history). Confirmed this is a different tree from the one in this entry: monumentaltrees.com's Royal Victoria Park listing (checked for verification only, per hard rule 1, never copied) catalogues a Coast Redwood (Sequoia sempervirens, not Sequoiadendron), specimen ID 19007, girth 5m @1.30m, explicitly noted 'vigorous health', a separate genus and species from the Dovecote sculpture's tree and standing in the Great Dell rather than near the Dovecote. No source gives an exact planting year for this specific tree; the Dell itself was quarried out and first planted in the 1830s-40s with advice from William Beckford (d.1844), but Coast Redwood seed did not reach Britain until the 1840s at the earliest, so this tree is necessarily a slightly later addition to the Dell's original planting scheme, not part of its first phase. Age range is a wide, honest estimate on that basis rather than a sourced figure. Coordinates are the Great Dell's general area within the Botanical Gardens, not a surveyed point for the trunk.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "how_to_recognise": "In the old quarry, the tallest thing in the park, soft fibrous red-brown bark, with the aerial walkway running along at the height of its crown."
     },
     {
       "id": "bat_005",
@@ -195,7 +199,8 @@
       "curation_status": "flagged",
       "notes": "Presented as a single ensemble entry (a compact, named group along one path, the collectible-point test) rather than isolating one unnamed yew among many. Historic England's register entry for Prior Park describes the yews as dating to the 18th-century design phase, contemporary with Pope and Allen's original layout; parksandgardens.org corroborates the same detail. No source gives individual girths or a more precise planting decade than 'C18', so age range is wide and honest (any point in the 1730s-1750s main construction phase). Coordinates are the garden's general area near the Sham Bridge, not a surveyed point for any specific trunk within the group.",
       "location_precision": "approximate",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "A group of dark evergreen yews along the path east of the Sham Bridge, with a second, similar band near the dam between the middle and northern ponds."
     }
   ]
 }
