@@ -480,8 +480,11 @@ jobs:
               on it with further commits. A usage cutoff mid-item must only ever
               cost minutes, never the whole item (lesson of 2026-07-28, when a
               12-minute run died before its first commit and left nothing).
-            - Start no new item after 5 hours. The job is killed at 345 minutes,
-              and work killed mid-flight is work lost.
+            - The job is killed at 120 minutes, not 345. That number sat here
+              from an era when the cap was six hours, and it told every run it
+              had nearly three times the time it has. Pace to two hours: start
+              no new item in the last twenty minutes, and finish and push what
+              is open, because work killed mid-flight is work lost.
             - Usage-limit behaviour depends on the clock. Between 07:00 and
               19:00 UTC (Hidde's waking hours in Amsterdam) the window is his:
               work while it is open, but the moment you hit the limit, finish
