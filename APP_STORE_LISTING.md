@@ -56,8 +56,6 @@ Directions to the trunk. Where a location is rough rather than exact, the page t
 
 Your own collection. Photograph a tree while you stand in front of it and it joins your trees, ours and your own alike. Signed out they stay on your phone; signed in they follow your account to a new phone, and nobody else can see them.
 
-A season calendar per species, so you know whether a tree is at its best in April or in November.
-
 WHERE THE TREES COME FROM
 
 Every tree is verified against at least two independent sources before it goes on the map, and where the sources disagree the page says which and why. Official registers of protected and monumental trees are read directly. Photographs carry their own open licence and credit.
@@ -70,6 +68,14 @@ We will be, and readers are how it gets fixed. Every page has a way to report a 
 
 An account is one email address. Sign in and your collection follows you to a new phone; delete the account and everything goes with it.
 ```
+
+**CORRECTED TWICE ON 2026-08-29.** The season calendar was struck out of the
+description as well: it promised "a season calendar per species, so you know
+whether a tree is at its best in April or in November", and there is no season
+anything in this build. The shelf was cut on 08-21 (Home.swift passes
+`season: false`), the peaking pins are behind `Launch.season` and hidden, and
+the tree page has no calendar at all. Season Radar is a Plus feature for later,
+which is exactly why it must not be sold on the store page now.
 
 **CORRECTED 2026-08-29.** Two sentences here said a photograph of a tree never
 leaves the phone, which stopped being true on 08-27 when the sightings sync
