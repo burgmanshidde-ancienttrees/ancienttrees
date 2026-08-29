@@ -145,6 +145,38 @@ extension EnvironmentValues {
     }
 }
 
+/// HOW HIGH THE SHEET IS RIGHT NOW, in points, mid-drag included.
+///
+/// The stop above is the right answer for the map's content inset: the camera
+/// should not re-aim under a moving thumb, and it does not. It is the wrong
+/// answer for a CONTROL that sits above the sheet, because the eye reads the
+/// gap between the two continuously and the stop only changes on release
+/// (Hidde, 2026-08-29: "de spacing tussen de lijst en het icoontje wisselt af
+/// en toe als je sleept"). Apple Maps and Google Maps both have their location
+/// button ride the sheet frame by frame, which is the convention here.
+///
+/// A preference rather than a callback, because a closure fired from inside a
+/// body is a state change during a view update, which SwiftUI warns about and
+/// is right to.
+struct SheetVisibleHeightKey: PreferenceKey {
+    static let defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        let next = nextValue()
+        if next > 0 { value = next }
+    }
+}
+
+private struct SheetPointsKey: EnvironmentKey {
+    static let defaultValue: CGFloat? = nil
+}
+
+extension EnvironmentValues {
+    var sheetPoints: CGFloat? {
+        get { self[SheetPointsKey.self] }
+        set { self[SheetPointsKey.self] = newValue }
+    }
+}
+
 /// A card inside a sheet, TAPPED rather than pressed.
 ///
 /// Use this instead of NavigationLink for anything that lives in a sheet's
@@ -403,6 +435,9 @@ struct BottomSheet<Header: View, Content: View>: View {
                     }
             )
             .animation(.spring(duration: 0.28), value: height)
+            // What is actually on screen this frame, drag included, for the
+            // controls that have to sit above it. See SheetVisibleHeightKey.
+            .preference(key: SheetVisibleHeightKey.self, value: h)
         }
         // Without this the reader stops at the home indicator and reports a
         // bottom inset of zero, so `bottom` above would be nothing and the band

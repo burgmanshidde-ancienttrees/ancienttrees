@@ -34,6 +34,11 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
     /// gear on My trees. Empty on a screen that has none.
     @ViewBuilder var floating: Floating
 
+    /// The sheet's height this frame, drag included, read back from the sheet
+    /// itself. The stop below it is a different number on purpose: see
+    /// SheetVisibleHeightKey.
+    @State private var livePoints: CGFloat?
+
     var body: some View {
         ZStack(alignment: .top) {
             map
@@ -42,10 +47,15 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
                 // camera aims at the middle of what a person can see rather
                 // than the middle of the view. See SheetLiftKey.
                 .environment(\.sheetLift, height)
+                // And how high it is RIGHT NOW, which is what a control resting
+                // above the sheet follows so the gap between the two holds
+                // still while somebody drags.
+                .environment(\.sheetPoints, livePoints)
             BottomSheet(height: $height, topItem: topItem, header: { header },
                         content: { content })
             floating
         }
+        .onPreferenceChange(SheetVisibleHeightKey.self) { livePoints = $0 }
     }
 }
 
