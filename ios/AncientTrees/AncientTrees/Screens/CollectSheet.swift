@@ -66,6 +66,7 @@ struct CollectSheet: View {
     @Environment(Saved.self) private var saved
     @Environment(Sightings.self) private var sightings
     @Environment(Account.self) private var account
+    @Environment(Nudge.self) private var nudge
     @Environment(Navigator.self) private var navigator
     @Environment(\.dismiss) private var dismiss
 
@@ -604,8 +605,26 @@ struct CollectSheet: View {
         }
     }
 
-    /// Yours and nobody else's: no network, no account, no waiting.
+    /// ADDING A TREE NEEDS AN ACCOUNT (Hidde, 2026-08-29, asked directly:
+    /// "nee, inloggen verplicht"). It is the rule he set for the thumbs on
+    /// 2026-08-21 and for the heart and this camera on 2026-08-25, now true of
+    /// the write as well as of the two buttons in front of it.
+    ///
+    /// This used to read "Yours and nobody else's: no network, no account, no
+    /// waiting", and a tree written that way belonged to nobody: no server had
+    /// it, so signing out could not take it off the phone without destroying
+    /// the only copy in the world, and anybody holding the phone could delete
+    /// it. That is the hole he found. See Sightings.forgetLocally().
+    ///
+    /// The guard is here and not only on the buttons because a third way into
+    /// this sheet is one afternoon away, and a rule enforced at two call sites
+    /// is a rule that leaks at the third. Both current callers check first, so
+    /// in practice this never fires.
     private func keepMine() {
+        guard account.isSignedIn else {
+            nudge.require(.general)
+            return
+        }
         let here = at ?? origin
         let s = sightings.record(treeId: nil,
                                  name: why.isEmpty ? "A tree I found" : String(why.prefix(60)),
@@ -619,10 +638,10 @@ struct CollectSheet: View {
         // toegevoegde boom wil ik eindigen op de diepere boompagina van de boom
         // die ik net heb gemaakt").
         navigator.push = .mine(s.id)
-        // And it reaches us on its own. No account, no waiting: a signed-in
-        // person's tree goes now, and anybody else's goes the moment they sign
-        // in, which is a queue rather than a question.
-        if account.isSignedIn { Task { await transmit(s.id) } }
+        // And it reaches us on its own, with no second step to remember. The
+        // queue-until-sign-in branch that used to be here is gone with the
+        // signed-out route that created it.
+        Task { await transmit(s.id) }
     }
 
     /// Sends the WORDS, and nothing else.
