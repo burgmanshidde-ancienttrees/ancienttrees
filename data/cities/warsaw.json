@@ -5,7 +5,7 @@
   "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left around Janusz Korczak's orphanage. Royal parks add two more: a pair of oaks in the king's own Lazienki garden, and a lime named for the king who built Wilanow.",
   "meta_description": "Warsaw's remarkable trees carry wartime, royal and Enlightenment history: a 600-year oak, a WWII poplar, Korczak's orphanage oak, royal park oaks.",
   "question_answer": "Warsaw's oldest tree is Dab Mieszko I (King Mieszko I's Oak), a pedunculate oak on Nowoursynowska Street in Ursynow, estimated at 600 to 640 years old depending on the survey cited. It stands at the edge of Natolin Forest, one of the last fragments of the wild woodland that covered this ground before the city existed.",
-  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 15, and the history each carries.",
+  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 16, and the history each carries.",
   "question_context": "Warsaw's tree ages are harder to pin down than in cities with continuous records, because the city's own archives and much of its built and natural heritage were destroyed between 1939 and 1945. Dab Mieszko I is the exception precisely because it predates that entire period by centuries: even the more conservative age estimates put its origin well before Poland's partitions, let alone the Second World War, and successive surveys since its 1962 protection have each revised the figure without ever seriously challenging its status as the region's oldest oak. Its main rival for the title of Warsaw's most storied tree is not a contest of age at all. The Poplar of the Defenders, roughly a century old, and Dr Korczak's Oak, undated but standing beside a building that survived the war intact, both carry more concentrated history in fewer decades than the Mieszko oak accumulated in centuries, a reminder that this city's remarkable trees earn their place by two different measures, sometimes separately, occasionally both at once.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Warsaw's remarkable trees free to visit?",
-      "a": "11 of the 15 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
+      "a": "12 of the 16 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
     },
     {
       "q": "Why does Warsaw have so few very old trees?",
@@ -530,6 +530,36 @@
         ],
         "kind": "flowers",
         "label": "late June into July, when the lime flowers and the scent carries across the pond"
+      }
+    },
+    {
+      "id": "war_017",
+      "name": "The Grey Poplar of Madalinskiego",
+      "species": "Gray Poplar (Populus canescens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 358,
+      "height_m": 21,
+      "location": {
+        "address": "Corner of ul. gen. J. A. Madalinskiego and ul. Kazimierzowskiej, Mokotow, Warsaw",
+        "latitude": 52.20427,
+        "longitude": 21.01487,
+        "neighbourhood": "Mokotow"
+      },
+      "story": "Poland protects this tree by name and by number. It holds an entry in the national register of natural monuments, PL.ZIPOP.1393.PP.1465011.3363, granted on 10 October 2012, and it grows on a pavement corner where Madalinskiego meets Kazimierzowska, between parked cars and a pedestrian crossing.\n\nThe designation came with a survey, which is the useful part: 21 metres tall, 3.58 metres round the trunk. Populus canescens is a natural cross between white poplar and aspen, its leaves felted grey underneath and hung so loosely that the whole crown changes shade when a gust comes down the street. It also grows fast, which is why a trunk that size is not the proof of great age it would be on an oak.\n\nNobody has dated this one, and in Mokotow that gap has a particular shape. The obvious question about any big tree in this district is whether it was standing through the 1944 uprising and the demolition that followed, and none of the sources answer it. We are not going to guess. If you know when it went in, tell us.\n\nIt is a walk of five to ten minutes from the oaks of Park Morskie Oko and the old pear on Pulawska, which makes it something to add to a Mokotow afternoon rather than a trip of its own.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (Polish Wikipedia's reproduction of Warsaw's GDOS natural-monument register, entry PL.ZIPOP.1393.PP.1465011.3363, designated 2012-10-10)"
+      ],
+      "access": "Free, on a public street corner",
+      "transport": "0.7km from war_009 and 0.5km from war_005, in the Mokotow cluster",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]

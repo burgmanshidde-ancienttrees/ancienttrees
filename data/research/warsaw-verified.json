@@ -2,7 +2,7 @@
   {
     "id": "war_017",
     "name": "The Grey Poplar of Madalinskiego",
-    "species": "Grey Poplar (Populus x canescens)",
+    "species": "Gray Poplar (Populus canescens)",
     "age_estimate": "",
     "age_min": null,
     "age_max": null,
@@ -14,13 +14,13 @@
       "longitude": 21.01487,
       "neighbourhood": "Mokotow"
     },
+    "story": "Poland protects this tree by name and by number. It holds an entry in the national register of natural monuments, PL.ZIPOP.1393.PP.1465011.3363, granted on 10 October 2012, and it grows on a pavement corner where Madalinskiego meets Kazimierzowska, between parked cars and a pedestrian crossing.\n\nThe designation came with a survey, which is the useful part: 21 metres tall, 3.58 metres round the trunk. Populus canescens is a natural cross between white poplar and aspen, its leaves felted grey underneath and hung so loosely that the whole crown changes shade when a gust comes down the street. It also grows fast, which is why a trunk that size is not the proof of great age it would be on an oak.\n\nNobody has dated this one, and in Mokotow that gap has a particular shape. The obvious question about any big tree in this district is whether it was standing through the 1944 uprising and the demolition that followed, and none of the sources answer it. We are not going to guess. If you know when it went in, tell us.\n\nIt is a walk of five to ten minutes from the oaks of Park Morskie Oko and the old pear on Pulawska, which makes it something to add to a Mokotow afternoon rather than a trip of its own.",
     "verified_sources": [
       "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (Polish Wikipedia's reproduction of Warsaw's GDOS natural-monument register, entry PL.ZIPOP.1393.PP.1465011.3363, designated 2012-10-10)"
     ],
     "access": "Free, on a public street corner",
     "transport": "0.7km from war_009 and 0.5km from war_005, in the Mokotow cluster",
     "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Officially designated natural monument (GDOS register id PL.ZIPOP.1393.PP.1465011.3363, designated 2012-10-10), standing on a public street corner in Mokotow. The Wikipedia reproduction of the register carries an unusually complete 2012 survey measurement directly in its table: height 21m, girth 358cm, which is real dendrological data rather than a guess. No second source independent of that register/Wikipedia-list family was found this pass (no Wikimedia Commons photo, no dedicated writeup beyond the same register-family pages). Ships flagged per Step 2 as single-sourced. Age not documented; do not estimate one without a girth-based growth-rate source for Populus x canescens."
+    "curation_status": "flagged"
   }
 ]

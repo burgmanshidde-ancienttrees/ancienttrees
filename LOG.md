@@ -9,6 +9,49 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (night run) - Bucaco +4, Los Angeles +1, Warsaw +1 from the standing write queue; Salzburg and Oahu claimed for the next verify pass
+
+Rung 0/1(a): health.py showed rung 2 clear apart from nightly-knock delivery
+(5 of 12 in 24h; tried `gh workflow run nightly.yml` by hand per the runbook,
+got a 403, this token cannot dispatch it). No unprocessed reader submissions
+(42 rows, 0 new). `prepare.py` showed 5 trees genuinely awaiting a writer
+(passcheck.py --pending), so per this prompt's own rule that outranks
+everything, that went out first as a write pass.
+
+Merged: bsc_016/017/018 (three more of Bucaco's classified conifers, all
+confirmed pins, one flagged for a thin age band), lax_010 (the Chavez Ravine
+Arboretum kauri, LA's oldest and largest of its kind, pin marks the
+arboretum rather than the trunk and says so), war_017 (a registered gray
+poplar on a Mokotow street corner). The write pass had also flagged bsc_019
+(a Magenta Cherry) as a possible duplicate of the already-published bsc_012
+29m away; checked it by hand, different genus entirely (Syzygium vs
+Fraxinus) and a different register processo number, so it is a real second
+tree rather than a duplicate. Wrote its story myself and merged it too.
+Fixed stale tree-count copy the new arrivals broke (bucaco's intro/FAQ said
+"fourteen", now eighteen; warsaw's said "15", now 16 with the free/paid
+split updated; LA's intro said "five of the seven" are figs, now "of the
+eight"). preflight, build, qa.py and superlatives.py all clean (the one
+qa.py sitemap warning about a single lastmod date is this checkout being
+shallow, not a real regression: `git rev-parse --is-shallow-repository`
+says true here).
+
+Then claimed two verify passes, both still running as this is written.
+**Salzburg**, rank 179, the highest-priority unopened city with register
+supply on the staging shelf (rung 0, "open the unopened"): a quick scan on
+2026-08-27 called its 86 candidates thin and loosely clustered and left it
+for "a dedicated pass with more time," so this is that pass, briefed to
+focus first on the ~20 candidates within 2.5km. **Oahu**, a deepen, is the
+direct fix for REVIEW.md's 2026-08-28 WARN that it is a garden page at 100%
+paid entry: found real free candidates in the same Hawaii exceptional-trees
+register (Thomas Square, a public park with several large banyans; Iolani
+Palace's public grounds) that an earlier pass never reached because it only
+looked at the two gardens already in the city file.
+
+Also ran the free Commons API photo sweep (`photo_hunt.py --recheck`, 40
+trees checked, several new candidates queued for a future viewing session;
+this runner cannot judge photos, egress blocks Wikimedia). `pagegaps.py`:
+nothing owed. Visitors, 7-day: 482 visits, 739 page views (23/27 today,
+partial day).
 ## 2026-08-29 (session) - Seven app fixes: signing out empties the phone, your own trees join the counts, and one image loader
 
 Hidde sent a list this morning. All seven are done, built, and walked on the
