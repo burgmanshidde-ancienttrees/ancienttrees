@@ -285,7 +285,12 @@ final class AncientTreesUITests: XCTestCase {
     /// zeros and a grid of grey ghosts.
     @MainActor
     func testCollectDayZeroShowsMission() throws {
-        let app = launch(["-tab=2"])
+        // SIGNED IN, because that is what day zero means since 2026-08-29:
+        // signed out, this tab is a sign-in wall by design ("Adding a tree
+        // needs an account"). The check itself is unchanged, which is the
+        // point: an empty collection still has to open with a mission naming
+        // one real tree rather than a grid of zeros.
+        let app = launch(["-tab=2", "-signed-in"])
         XCTAssertTrue(app.otherElements["collect-mission"].waitForExistence(timeout: 12),
                       "no mission on the collection's day zero")
         XCTAssertFalse(app.staticTexts["Species collected"].exists,
@@ -534,7 +539,10 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testTheSignInSheetPresents() throws {
         let app = launch(["-tab=2", "-signin"])
-        XCTAssertTrue(app.staticTexts["That one is yours"].waitForExistence(timeout: 10),
+        // The headline -signin actually presents, read off the screen rather
+        // than off the enum: it said "That one is yours" until the copy moved
+        // on 2026-08-29 and the test did not move with it.
+        XCTAssertTrue(app.staticTexts["Sign in to keep this one"].waitForExistence(timeout: 10),
                       "the sign-in sheet did not present")
         XCTAssertTrue(app.buttons["Email me a code"].exists,
                       "the email route is missing from the sign-in sheet")
