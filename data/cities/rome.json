@@ -62,7 +62,8 @@
       },
       "curation_status": "flagged",
       "notes": "Replaces The Quercia del Tasso on 2026-07-27: verified via Italian-language sources (ilgiornale.it's coverage of a 2025 exhibition at the Museo di Roma in Trastevere dedicated to the tree) that the oak on the Gianicolo is now explicitly described as 'secco, morto, corroso' (dry, dead, decayed), propped up inside a small wall, not the living tree the old entry's own sources had left ambiguous ('what remains of a monumental tree'). This is the same violation of Hidde's 'we doen niet aan dode bomen' rule (CLAUDE.md Step 1) as Queen Elizabeth's Oak and Stock im Eisen, found while sweeping Rome's suspects from the same list. Id rom_001 reused; a redirect for the old slug (quercia-del-tasso) is registered in scripts/build_site.py's RENAMED_TREE_SLUGS. This replacement is sourced to Rome's own municipal monumental-tree page and a dedicated registry-style page (alberimonumentali.info, used for verification of size/location only, not copied); the circa-1900s planting date and Wurts/Tower estate history are corroborated by independent general sources (Wikipedia's Villa Sciarra and Henrietta Tower articles, Walks in Rome) but not a single primary planting record, so flagged. No open-licensed photo found; one Flickr photo of this exact tree exists but is marked all-rights-reserved, not usable. Photo found and approved 2026-07-28 via Wikidata's Roma monumental-tree register (item tagged with this exact address, uploaded through Wiki Loves Monuments Italia 2021): viewed directly (fetched full image, not just metadata), shows an unmistakable ginkgo in full golden autumn foliage over a leaf-carpeted clearing with a visitor path and sign, matching this entry's own November best_time description exactly. Upgraded to confirmed 2026-07-28: Italy's official AMI national monumental-trees register lists a 'Ginco' at 'Villa Sciarra - Viale Adolfo Leducq' with circumference 310cm and height 25.0m, matching this story's own already-cited figures (just over three metres around, a 25 metre crown) exactly. Read with a purpose-built binary XLS parser (this session's tools could not parse MASAF's legacy .xls format with any library, so one was hand-written against the OLE2/BIFF8 spec), about 220m from the previous estimate.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "The one tree on the hillside with fan-shaped leaves in two lobes, just over three metres round and reaching 25 metres, taller than the villa's fake ruins around it."
     },
     {
       "id": "rom_002",
@@ -97,7 +98,8 @@
       },
       "curation_status": "flagged",
       "notes": "Coordinates now come from Italy's national monumental tree registry (MASAF), which lists a single individually-catalogued Platanus orientalis at this exact site (Villa Borghese, Valle dei Platani), matching Adonis's description as the grove's one officially registered specimen; moved from a park-wide estimate to this registry point, about 290m away. The registry's own growth-based estimate gives 407 years against the 425 cited elsewhere, the same order of disagreement already carried openly on rom_005 and rom_006, so the age range here is left as is rather than resolved. Photo (2009, Patafisik) downloaded and viewed directly 2026-07-27: shows a large oriental plane with a prominent hollow cavity in its trunk, standing among several similarly aged planes in a grassy grove, an unusually strong match to Adonis's own described hollow trunk and grove setting. The file's own caption does not name Adonis specifically among the grove's nine survivors, so approved as an honest illustration of the tree and its grove rather than a certain single-specimen match, the same standard used elsewhere on this project for ensemble scenes.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "The biggest of the nine planes at the entrance to the Valle dei Platani, hollow-trunked and propped, with a young clone of itself planted nearby."
     },
     {
       "id": "rom_003",
@@ -130,7 +132,8 @@
       "curation_status": "flagged",
       "notes": "Two trees described as one entry, matching how the garden itself presents them (a pair flanking the staircase). Age range is a general foresters' estimate; no source gives an exact planting year for either specimen. Photo viewed directly: shows the monumental staircase at the Fontana degli Undici Zampilli flanked by two large trees with gnarled branches and mottled bark, an unambiguous match to the story's own description.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "Two oriental planes flanking the eleven-fountain staircase, one to each side of the cascade, both older than the garden that owns them."
     },
     {
       "id": "rom_004",
@@ -160,7 +163,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "how_to_recognise": "Near the Orangery, a spongy deeply fissured cork trunk 5.3 metres round that still shows the scars of old bark harvests."
     },
     {
       "id": "rom_005",
@@ -205,7 +209,8 @@
       "location_precision": "confirmed",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 460
+      "girth_cm": 460,
+      "how_to_recognise": "On the belvedere terrace above the Lago del Giglio, a cedar 4.6 metres round, and the only individually registered monumental tree in the whole park."
     },
     {
       "id": "rom_006",
@@ -239,7 +244,8 @@
       "curation_status": "flagged",
       "notes": "Age genuinely disputed: the national registry's measured estimate (176 years) contradicts the traditional account (up to 300 years, tied to the 1784 garden redesign). Presented as a range rather than resolved.",
       "location_precision": "confirmed",
-      "girth_cm": 430
+      "girth_cm": 430,
+      "how_to_recognise": "A holm oak right at the water's edge on Viale del Lago, 4.3 metres round, its dense evergreen crown reflected in the artificial lake."
     },
     {
       "id": "rom_007",
@@ -277,7 +283,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "Between the Acqua Paola fountain and the Garibaldi ossuary, a cedar 5.74 metres round and about 20 metres tall, the oldest living thing on the memorial ground."
     },
     {
       "id": "rom_008",
@@ -321,7 +328,8 @@
       "location_precision": "confirmed",
       "height_m": 28.0,
       "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 440
+      "girth_cm": 440,
+      "how_to_recognise": "On Viale Spellman near the Navicella entrance, the straight dark one of the pair: 4.4 metres round and 28 metres up, with a leaning pine a few metres away."
     },
     {
       "id": "rom_009",
@@ -355,7 +363,8 @@
       "location_precision": "confirmed",
       "height_m": 34.0,
       "verify_notes": "Height 34.0 m from the italy-masaf register, matched on our own pin (4 m away).",
-      "girth_cm": 350
+      "girth_cm": 350,
+      "how_to_recognise": "The leaning one of the pair on Viale Spellman, a twisting wind-shaped canopy 34 metres up on a 3.5-metre trunk, beside the straight cedar."
     },
     {
       "id": "rom_010",
@@ -386,7 +395,8 @@
         "height": 3456
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "At the foot of Michelangelo's Cordonata beside the Aracoeli church, a swollen buttressed trunk that looks sculpted rather than grown."
     },
     {
       "id": "rom_011",
@@ -420,7 +430,8 @@
       "location_precision": "confirmed",
       "height_m": 25.0,
       "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 500
+      "girth_cm": 500,
+      "how_to_recognise": "Beside the main house of the German Studies institute, a deodar listed for the shape of it rather than its size; the two registers give its trunk as five metres and as 3.3."
     },
     {
       "id": "rom_012",
@@ -454,7 +465,8 @@
       "location_precision": "confirmed",
       "height_m": 18.0,
       "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 200
+      "girth_cm": 200,
+      "how_to_recognise": "On Viale Leducq about twenty metres from the ginkgo, two metres round and 18 tall, with narrow willow-like leaves and no cones anywhere on it."
     },
     {
       "id": "rom_013",
@@ -488,7 +500,8 @@
       "location_precision": "confirmed",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 565
+      "girth_cm": 565,
+      "how_to_recognise": "The one standing over the children's play area on the square, 5.65 metres round, which is the thickest plane trunk on Rome's register."
     },
     {
       "id": "rom_014",
@@ -532,7 +545,8 @@
       "location_precision": "confirmed",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 345
+      "girth_cm": 345,
+      "how_to_recognise": "On Via delle Tre Pile, to the right of the Cordonata as you climb, 3.45 metres round; the ombu stands fifty metres away on the other flank of the same stair."
     },
     {
       "id": "rom_015",
@@ -577,7 +591,8 @@
       "location_precision": "confirmed",
       "height_m": 22.0,
       "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 410
+      "girth_cm": 410,
+      "how_to_recognise": "A flat candelabra crown leaning out over the rowing boats, 4.1 metres round and 22 tall, with the monumental holm oak seventy metres along the same bank."
     },
     {
       "id": "rom_016",
@@ -610,7 +625,8 @@
       "location_precision": "confirmed",
       "height_m": 30.0,
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 420
+      "girth_cm": 420,
+      "how_to_recognise": "On Valadier's terrace above Piazza del Popolo, thick rather than tall for its species: 4.2 metres round with 30 metres above it."
     },
     {
       "id": "rom_017",
@@ -648,7 +664,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 290
+      "girth_cm": 290,
+      "how_to_recognise": "On the pavement of Via Corsini outside the palace wall rather than inside the garden, 2.9 metres round with an 18-metre crown over the street."
     },
     {
       "id": "rom_018",
@@ -688,7 +705,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 600
+      "girth_cm": 600,
+      "how_to_recognise": "Beside Valadier's staircase up to the Casino Nobile, six metres round and 28 up, the thickest cedar anywhere on Rome's register."
     },
     {
       "id": "rom_019",
@@ -718,7 +736,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 230
+      "girth_cm": 230,
+      "how_to_recognise": "In the garden inside Piazza Vittorio, 2.3 metres round and evergreen in every month of the year, a few steps from the ruined Trofei di Mario."
     },
     {
       "id": "rom_020",
@@ -749,7 +768,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 290
+      "girth_cm": 290,
+      "how_to_recognise": "Above the Domus Aurea on Colle Oppio, 2.9 metres round, with needles in threes long enough to make the crown hang rather than bristle."
     },
     {
       "id": "rom_021",
@@ -779,7 +799,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "The 'sole survivor of the 1789 planting' claim rests on a single advocacy letter (Amici di Villa Borghese, carteinregola.it, 2024), corroborated only for the general historical fact (18 cypresses planted 1789) by Rome's own municipal history page, not for which specific tree survived. Pin is the piazza's centre, not the individual tree, since no source identifies which cypress along the perimeter is the 1789 survivor."
+      "notes": "The 'sole survivor of the 1789 planting' claim rests on a single advocacy letter (Amici di Villa Borghese, carteinregola.it, 2024), corroborated only for the general historical fact (18 cypresses planted 1789) by Rome's own municipal history page, not for which specific tree survived. Pin is the piazza's centre, not the individual tree, since no source identifies which cypress along the perimeter is the 1789 survivor.",
+      "how_to_recognise": "On the oval perimeter walk of the Piazza di Siena arena, described by the park's conservation group as the last of the eighteen cypresses planted round it in 1789."
     },
     {
       "id": "rom_022",
@@ -810,7 +831,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Two adjacent RAMI register entries (#9251, #9252, both ~430cm girth) folded into one entry as a twinned pair. No coordinates in any source; pin geocoded to the Museo Carlo Bilotti / Aranciera building both sources place the tree near. The 1600s age is the conservation group's own framing, not a scientific dating."
+      "notes": "Two adjacent RAMI register entries (#9251, #9252, both ~430cm girth) folded into one entry as a twinned pair. No coordinates in any source; pin geocoded to the Museo Carlo Bilotti / Aranciera building both sources place the tree near. The 1600s age is the conservation group's own framing, not a scientific dating.",
+      "how_to_recognise": "In the holm oak wood between the Museo Carlo Bilotti and the Muro Torto, two hackberry trunks of about four metres growing side by side. No source pins them, so this one is found by looking rather than by following a pin."
     },
     {
       "id": "rom_023",
@@ -840,7 +862,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "girth_cm": 280
+      "girth_cm": 280,
+      "how_to_recognise": "The climbable holm oak in the middle of the residential square, 2.8 metres round and 18 tall, and the only tree in Piazza Perin del Vaga on any register."
     },
     {
       "id": "rom_024",
@@ -872,7 +895,8 @@
       "location_precision": "confirmed",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 401
+      "girth_cm": 401,
+      "how_to_recognise": "Four metres round and the largest thing growing in the park; a second, slightly stouter hackberry stands about a hundred metres off against the Aurelian wall."
     },
     {
       "id": "rom_025",
@@ -904,7 +928,8 @@
       },
       "height_m": 32.0,
       "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 553
+      "girth_cm": 553,
+      "how_to_recognise": "On Viale Jonio itself, between traffic lights and a bus lane, 5.53 metres round with 32 metres above it, second only to the San Cosimato plane."
     },
     {
       "id": "rom_026",
@@ -937,7 +962,8 @@
       "notes": "Single source for the tree itself: the national register through the Lazio regional list. The Sovrintendenza page is a second source for the site and its access, not for this pine, and its own summary of the park's planting does not mention a pine. Flagged on that. Distinct from rom_020, the Chir Pine of Colle Oppio (sheet 71), roughly 2.7 km west. A claim that the two are twins both planted by Raffaele De Vico circulates in search results but could not be corroborated by any of the pages those results cite, so the story credits De Vico with the 1931 garden and claims nothing about who planted the tree.",
       "height_m": 18.0,
       "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 297
+      "girth_cm": 297,
+      "how_to_recognise": "In the neighbourhood park, 2.97 metres round, with hanging thirty-centimetre needles in threes. The city's own plant list for this park does not mention a pine at all."
     },
     {
       "id": "rom_027",
@@ -970,7 +996,8 @@
       "notes": "Register-only tree: the national and regional registers are one designation rather than two independent sources, hence flagged. No vitality check newer than the Lazio list's November 2025 edition, which is stated in the story rather than hidden. Black poplar is a short lived species, so this entry is a candidate for re-checking before others.",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 405
+      "girth_cm": 405,
+      "how_to_recognise": "At the junction of Via Conca d'Oro and Via Val d'Ala, 4.05 metres round and 20 tall, the only black poplar on Rome's register a visitor is likely to reach."
     },
     {
       "id": "rom_028",
@@ -1003,7 +1030,8 @@
       "notes": "Register-only, hence flagged: a targeted hunt on 2026-08-08 found no source independent of the national and regional registers, and the Parco Regionale dell'Appia Antica's own 'alberi di pregio' catalogue, which corroborates rom_024 at 120 metres away, does not list this tree. Deliberately not folded into rom_024 as a pair, since only one of the two is independently corroborated and folding would overstate what is known about this one.",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 414
+      "girth_cm": 414,
+      "how_to_recognise": "At the corner of Viale delle Mura Latine and Via Latina, hard against the Aurelian wall, 4.14 metres round and a few steps from the Porta Latina."
     },
     {
       "id": "rom_029",
@@ -1036,7 +1064,8 @@
       "notes": "Register-only for the tree itself, hence flagged: repeated hunts (2026-08-05, 2026-08-08) found no source independent of the register naming this individual palm, and general descriptions of Villa Sciarra's palms cannot fix which one is meant. The Roma Capitale page is a source for the park's history and ownership, not for the palm. The story therefore states the Wurts history and explicitly declines to attribute the planting. Completes a four tree walk in Villa Sciarra with rom_001, rom_011 and rom_012.",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 294
+      "girth_cm": 294,
+      "how_to_recognise": "The palm on Viale Leducq with stiff blue-grey fronds that read as metal rather than leaf, twenty metres up, its flower spikes hanging well below the crown."
     },
     {
       "id": "rom_030",
@@ -1067,7 +1096,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "how_to_recognise": "The thickest trunk in the eucalyptus wood around the old fort, 4.9 metres round and 18 tall. The fort's interior stays shut; the wood around it does not."
     }
   ],
   "hero_tree_id": "rom_001"
