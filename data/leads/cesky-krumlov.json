@@ -1,0 +1,40 @@
+{
+  "leads": [
+    {
+      "name_cz": "Javor babyka v Českém Krumlově",
+      "species": "Field Maple (Acer campestre)",
+      "girth_cm": 230,
+      "latitude": 48.81707,
+      "longitude": 14.31385,
+      "km_from_centre": 0.67,
+      "register": "czech-aopk-pamatne-stromy",
+      "reason": "Investigated this follow-up pass, not delivered. Two independent sources (AOPK register code 103041 and Czech Wikipedia's district list) agree it grows 'on an enclosed/fenced plot' (na oploceném pozemku) above třída Míru, and the Wikipedia description calls it 'partially dried out' (částečně proschlá), a health concern rather than a death report. The fenced-plot wording is not enough to confirm either private land or open public access under hard rule 10's test ('can they get in without asking anyone's permission'); nothing found says whether the fence is a protective ring around the trunk (common for památné stromy) or a boundary excluding visitors. Closest candidate to the old town centre (0.67km) and worth a street-view or on-the-ground access check in a future pass rather than shipping on this uncertainty."
+    },
+    {
+      "name_cz": "Dobrkovický dub",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "girth_cm": 311,
+      "latitude": 48.81768,
+      "longitude": 14.29853,
+      "km_from_centre": 1.43,
+      "register": "czech-aopk-pamatne-stromy",
+      "reason": "Investigated this follow-up pass, not delivered. Czech Wikipedia's district list corroborates the tree (code 103060, Nové Dobrkovice, 20m tall) but gives girth as 240cm against the 311cm supplied in the city brief's register extract, a real disagreement between the two sources rather than measurement-year drift (too large a gap). Location is described as 'beyond the railway line near a cottage colony' (za žel. tratí ... u chatové kolonie), which reads as a semi-rural leisure-cottage area rather than a clearly public road or green; access could not be confirmed as open to a passer-by without more specific evidence. Needs the girth conflict resolved and access confirmed before it can ship."
+    },
+    {
+      "name_cz": "Lípa malolistá",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "girth_cm": 360,
+      "latitude": 48.79324,
+      "longitude": 14.32226,
+      "km_from_centre": 2.05,
+      "register": "czech-aopk-pamatne-stromy",
+      "reason": "Investigated this follow-up pass: this specific tree did NOT turn up in the Czech Wikipedia 'Seznam památných stromů v okrese Český Krumlov' district list fetched this pass (which did cover the other four candidates), so no second independent source was found within the time available. Still only a single-source (register) candidate; needs its own targeted search (it may be filed under a different village/hamlet name, or under a neighbouring district's list) before it can be verified or blocked."
+    },
+    {
+      "name_cz": "Lípa stříhanolistá",
+      "species": "Large-leaved Lime grafted on cut-leaved lime (Tilia platyphyllos on T. platyphyllos 'Laciniata')",
+      "reason": "A smaller, historically interesting lime standing in the middle of Zlatá Koruna monastery's main courtyard (per the monastery's own 'Památné stromy' page, klaster-zlatakoruna.cz/cs/o-klastere/pamatne-stromy), probably planted around 1770 or after the monastery's 1785 dissolution when a Schwarzenberg forestry school briefly occupied the site. It does NOT appear in the AOPK national památný strom register extract given for this city and Czech Wikipedia's dedicated article on Zlatá Koruna's memorial lindens explicitly says only two lindens (the village-square Cisterciácká lípa, published here as ckr_001, and the Kapucínka, ckr_002) hold that formal designation. Recorded here as a lead rather than a candidate: it may still be worth a mention as a minor extra on the ckr_002 story, or could be pursued as its own entry later if a formal designation or better coordinate turns up."
+    }
+  ],
+  "blocked": []
+}

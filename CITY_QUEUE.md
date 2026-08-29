@@ -455,7 +455,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 258 | La Gomera | 1.37 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 259 | Leuven | 2.05 | 40,645 | - | - | - | - | 10 | predicted (travel demand) |
 | 260 | Pamplona | 1.35 | 128,065 | - | - | - | 1 | 10 | predicted (travel demand) |
-| 261 | Cesky Krumlov | 1.36 | 28,582 | - | - | - | 11 | 10 | predicted (travel demand) |
+| 261 | Cesky Krumlov | 1.36 | 28,582 | 6 | - | - | 11 | 10 | predicted (travel demand) |
 | 262 | Ischia | 1.32 | - | - | - | - | 2 | 10 | predicted (travel demand) |
 | 263 | Izmir | 1.88 | 69,826 | - | - | - | - | 10 | predicted (travel demand) |
 | 264 | Stockholm | 1.48 | 188,184 | 4 | 3 | - | - | 30 | measured |
@@ -489,7 +489,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 292 | Evora | 0.78 | 15,345 | - | - | - | - | 10 | predicted (travel demand) |
 | 293 | Bamberg | 0.97 | 28,716 | 4 | - | 1 | 10 | 10 | predicted (travel demand) |
 | 294 | Stratford-upon-Avon | 1.10 | 68,555 | - | - | - | - | 10 | predicted (travel demand) |
-| 295 | Assisi | 0.68 | 30,278 | 6 | - | - | 6 | 10 | predicted (travel demand) |
+| 295 | Assisi | 0.68 | 30,278 | 6 | - | 2 | 6 | 10 | predicted (travel demand) |
 | 296 | La Palma | 0.70 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 297 | Salzburg | 0.68 | 107,243 | 5 | - | - | 34 | 10 | published, never ranked (may be uncrawled) |
 | 298 | Oaxaca | 0.95 | 72,955 | - | - | - | - | 10 | predicted (travel demand) |

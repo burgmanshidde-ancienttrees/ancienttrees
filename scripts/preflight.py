@@ -636,22 +636,47 @@ def check_paid_share():
     The one thing it does catch, and the reason it exists: a run that opens a
     city by taking the eight easiest trees out of one ticketed garden, which is
     how both Amsterdam and Leiden ended up over a third without anybody
-    deciding to."""
+    deciding to.
+
+    Reads the `paid_entry` boolean where a tree has one, falling back to the
+    "paid entry" substring in `access` only for trees that don't (older data).
+    REVIEW.md flagged this gap on 2026-08-29: this function used to read only
+    the access STRING, which is why 8 trees across 5 cities had paid_entry
+    correctly set but rendered no ticket banner (the boolean and the string
+    are two different things a writer can get out of sync), and separately
+    would have missed Cesky Krumlov's own three ("paid admission", "paid tour
+    route") the same day for saying it three different honest ways rather
+    than the one exact phrase this used to grep for."""
     out = []
+    mismatches = []
     for path in sorted(glob.glob("data/cities/*.json")):
         with open(path, encoding='utf-8') as fh:
             d = json.load(fh)
         trees = d.get("trees") or []
+        for t in trees:
+            access_text = t.get("access") or ""
+            has_flag = t.get("paid_entry") is True
+            has_text = "aid entry" in access_text
+            # "Free ... (the museum/building itself has paid entry)" is this
+            # site's own idiom for a tree that is free while something next to
+            # it is not (Aarhus's Moesgard trees, NYC's Van Cortlandt oak).
+            # Only a leading "Free" counts as the guard: a stray later "free"
+            # (as in "free to view from the path") is not the same claim.
+            about_this_tree = not re.match(r"^\s*free\b", access_text, re.I)
+            if has_text and not has_flag and about_this_tree:
+                mismatches.append("%s/%s: access text says paid entry but paid_entry is not true"
+                                  % (d.get("city", os.path.basename(path)[:-5]), t.get("id")))
         if len(trees) < 6:
             continue
-        paid = [t for t in trees if "aid entry" in (t.get("access") or "")]
+        paid = [t for t in trees if t.get("paid_entry") is True
+                or (t.get("paid_entry") is None and "aid entry" in (t.get("access") or ""))]
         if len(paid) * 3 > len(trees):
             out.append("%s: %d of %d trees are behind paid entry (%d%%). Add free "
                        "trees rather than removing good ones; check the register "
                        "first." % (d.get("city", os.path.basename(path)[:-5]),
                                    len(paid), len(trees),
                                    round(100 * len(paid) / len(trees))))
-    return out
+    return out + mismatches
 
 
 # The words hard rule 10's first access test names. Deliberately NARROW, and
