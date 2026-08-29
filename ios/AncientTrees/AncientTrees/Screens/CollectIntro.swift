@@ -56,18 +56,25 @@ struct CollectIntro: View {
                 // made the title read as the first line of the text.
                 .padding(.bottom, 8)
 
-            // NO SENTENCE AT ALL, his call of 2026-08-28 between the two
-            // honest options. Two lines that explained our side of the deal
-            // went first (rule 6: not at the moment somebody is deciding to
-            // act), and the one that replaced them repeated "tree collection"
-            // under a title that had just said it, which is what he caught:
-            // "de copy is still quite bad".
+            // ONE LINE, AND IT IS BACK ON PURPOSE (Hidde, 2026-08-29: "ik denk
+            // dat deze toch een onderregel nodig heeft om wat meer uit te
+            // leggen wat je gaat doen").
             //
-            // So the title says what you get, the two buttons say how, and
-            // there is nothing left that can go stale. The previous line could
-            // and did: it promised we would tell you which tree it is, and
-            // that stopped being true for a photograph off the camera roll
-            // within the hour of it being written.
+            // It was removed on 2026-08-28, on his call, and the reason it went
+            // is the reason this one is worded the way it is. The line before it
+            // promised we would tell you WHICH tree it is, and that stopped
+            // being true for a photograph off the camera roll within the hour.
+            // The one before that explained our side of the deal, which rule 6
+            // of PRODUCT_COPY.md forbids at the moment somebody is deciding to
+            // act.
+            //
+            // So this says the one thing that is true of both routes and cannot
+            // stop being true: you take a picture, and it is yours. It is the
+            // file's own worked example, not a new sentence.
+            Text("Every tree you photograph joins your collection.")
+                .font(.brand(16, .regular, relativeTo: .body))
+                .foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
 
             Spacer(minLength: 24)
 
