@@ -3843,6 +3843,15 @@
         "note": "5 stories written (bsc_016/017/018/019, lax_010, war_017), merged into data/cities/, stale tree-count FAQ/intro copy fixed in bucaco/warsaw/los-angeles, preflight and build clean. bsc_019 resolved as a genuine second tree (different genus) rather than the flagged duplicate of bsc_012, so a story was hand-written for it in the main session.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "salzburg",
+        "kind": "verify",
+        "tokens": 130000,
+        "trees": 5,
+        "note": "New city, rung 0 (open the unopened, highest-ranked with register supply). Register-assisted dedicated pass after a 2026-08-27 quick scan called it thin; Wikipedia register-list join gave designation years for Salzburg's Naturdenkmal rows. 5 of ~9 chased candidates verified (clears the 4-tree floor), rest recorded as leads/blocked.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

@@ -1,0 +1,109 @@
+[
+  {
+    "id": "szb_001",
+    "name": "The Poplar of Josef-Mayburger-Kai",
+    "species": "Black Poplar (Populus nigra)",
+    "age_estimate": "",
+    "girth_cm": 600,
+    "location": {
+      "address": "Josef-Mayburger-Kai riverside promenade, right bank of the Salzach near the Traklsteg footbridge, Itzling, Salzburg",
+      "latitude": 47.818408,
+      "longitude": 13.036553,
+      "neighbourhood": "Itzling"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+      "https://commons.wikimedia.org/wiki/Category:Pappel_am_Josef-Mayburger-Kai"
+    ],
+    "access": "Free, on the public riverside promenade (Salzachuferweg)",
+    "transport": "About 2km along the Salzach riverside path from the old town; reachable by city bus toward Itzling and a short walk to the Traklsteg footbridge.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Naturdenkmal NDM00173, Land Salzburg register, designated 1979. The register write-up (transcribed on German Wikipedia's list of Salzburg's natural monuments) describes it as one of the last remnants of the softwood riparian forest (Weichholzaue) that once lined this stretch of the Salzach, and cites a trunk circumference over 6m; that figure is a secondary citation of the register, not our own measurement, hence girth_cm is flagged as approximate. Existence and species (Populus nigra) independently corroborated by 7 photograph files in Wikimedia Commons' Category:Pappel am Josef-Mayburger-Kai. No documented planting date or age; the register only carries the 1979 designation year, which is a floor, not an age."
+  },
+  {
+    "id": "szb_002",
+    "name": "The Oak of Erentrudishof",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "",
+    "location": {
+      "address": "Erentrudishof organic farm, Morzg, Salzburg (Wikipedia's register transcription gives Gneiserstraße 16; Wikimedia Commons gives Morzger Straße 40 for the same farmstead, run by Stift Nonnberg; discrepancy unresolved)",
+      "latitude": 47.77751,
+      "longitude": 13.050974,
+      "neighbourhood": "Morzg"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+      "https://commons.wikimedia.org/wiki/Category:Eiche_am_Erentrudishof",
+      "https://www.erentrudishof.at/"
+    ],
+    "access": "Free; stands on the grounds of the Erentrudishof organic farm shop, run by Stift Nonnberg convent. Publicly accessible during farm-shop hours (Mon-Fri 9:00-18:30, Sat 9:00-12:00) with a self-service raw-milk machine open 24/7; the shop was reported closed for renovation with a stated July 2026 reopening at the time this was researched (2026-08-29), confirm it has reopened before sending a reader.",
+    "transport": "Southern edge of Salzburg in Morzg; reachable by city bus toward Morzg/Hellbrunn and a short walk.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Salzburg's oldest-designated Naturdenkmal on the whole list: NDM00019, protected since 1933, registered area 95 m². Register description (Wikipedia transcription) calls it a single-stemmed oak historically used for Eichelmast (fattening pigs on fallen acorns). Existence and species corroborated by a Wikimedia Commons photograph (Category:Eiche am Erentrudishof), whose caption gives the address as Morzger Straße 40, while the Wikipedia register transcription gives Gneiserstraße 16, Morzg; both clearly point at the same Erentrudishof farmstead so treated as one property rather than two, but the address conflict is flagged rather than silently resolved. No documented age beyond the 1933 designation, which is a floor, not a planting date. The farm's own site (erentrudishof.at) confirms it is a working organic farm with a public shop and published hours."
+  },
+  {
+    "id": "szb_003",
+    "name": "The Stephan-Ludwig-Roth Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "over 200 years",
+    "location": {
+      "address": "Woodland edge near the tram stop toward Birkensiedlung, Morzg, Salzburg",
+      "latitude": 47.759879,
+      "longitude": 13.039129,
+      "neighbourhood": "Morzg"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
+      "https://www.fraeuleinflora.at/salzburg/10-bemerkenswerte-baeume-in-salzburg/"
+    ],
+    "access": "Free, stands at a woodland edge / roadside in Morzg, publicly accessible",
+    "transport": "Near the tram stop toward Birkensiedlung in Morzg, short walk.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Naturdenkmal since 1969 (register area 490 m²). Named for pedagogue and Transylvanian Saxon leader Stephan Ludwig Roth (1796-1849); the register description states Roth rested here on 15 September 1817, which implies the tree was already a notable specimen at that date (209+ years ago from 2026). Independent source, Fräulein Flora (Salzburg-focused blog), gives the age as 'over 200 years', kept exactly as vague as the source states it, and separately reports the tree suffers a fungal infection that its own source expects it to survive only about 20 more years: alive now, per this bar, but under real stress, worth a re-check in a future pass. Age kept as the vague source phrase rather than sharpened to a number."
+  },
+  {
+    "id": "szb_004",
+    "name": "The Linden of Körblleitengasse",
+    "species": "Linden (Tilia sp.)",
+    "age_estimate": "about 150 years",
+    "location": {
+      "address": "Körblleitengasse, Maxglan, Salzburg (between Kleßheimer Allee and Norbert-Brüll-Straße)",
+      "latitude": 47.808076,
+      "longitude": 13.017799,
+      "neighbourhood": "Maxglan"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg"
+    ],
+    "access": "Free, roadside tree on a public residential street (Körblleitengasse)",
+    "transport": "Maxglan, western Salzburg; reachable by city bus, then a short walk along Körblleitengasse.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SINGLE SOURCE ONLY, delivered per the two-source rule's fallback: this rests on the Wikipedia transcription of the Land Salzburg Naturdenkmal register (NDM00069, protected since 1963, registered area 38 m²). No independent second source was found this pass: SalzburgWiki's own Körblleitengasse street article, fetched directly, describes only the street's name origin ('Körbelleite', the terrace slope toward the Glanbach; formerly Irrenanstaltgasse) and length (570m, Kleßheimer Allee to Norbert-Brüll-Straße), with no mention of the tree at all. The register description calls it a '150-year-old linden', which is likely the age at the 1963 assessment rather than today, so treat the figure as approximate and stale rather than current. Species recorded only as 'Linde' with no Tilia species given; the page should ask readers which one it is. Needs a second source (a dated photo, local press, or a site visit) to clear the flag."
+  },
+  {
+    "id": "szb_005",
+    "name": "The Giant Sequoia of the Mirabellgarten",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "",
+    "girth_cm": 590,
+    "location": {
+      "address": "Mirabellgarten, beside the path just before the turn to the Bastionsgarten (now a children's playground), Salzburg",
+      "latitude": 47.80545,
+      "longitude": 13.04047,
+      "neighbourhood": "Neustadt / Mirabellgarten"
+    },
+    "verified_sources": [
+      "https://www.kraftort.org/Osterreich/Salzburg/Salzburg_Mirabellgarten/salzburg_mirabellgarten.html",
+      "https://www.opencaching.de/viewcache.php?cacheid=171471&log=A"
+    ],
+    "access": "Free, the Mirabellgarten is a public baroque garden, open daily",
+    "transport": "Central Salzburg, Neustadt side of the Salzach; a few minutes' walk from Mirabellplatz and the old town.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two large sequoias stand together on the right side of the path just before the turn to the Bastionsgarten (now a children's playground): a coast redwood (Sequoia sempervirens) and this giant sequoia (Sequoiadendron giganteum), per kraftort.org's own walk-through description of the garden, fetched directly. Independently, a geocacher's 'tree safari' log (opencaching.de, logged December 2019) confirms the species and gives a trunk circumference 'just under 6m' at the base from their own tape measurement at the site; girth_cm (590) comes from that figure, an approximate visitor measurement rather than a survey. No planting date or age found anywhere; neither sequoia species is native to Austria so both were deliberately planted, plausibly 19th or early 20th century given the garden's history, but that is unsupported speculation and is deliberately NOT recorded as an estimate. Coordinates are the geocache waypoint (N47 48.327 E013 02.428 = 47.80545, 13.04047), not an official survey point, hence location_precision approximate rather than confirmed, though the garden is small enough that this places a visitor within metres of the right bed of trees."
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "city": "Salzburg",
+  "country": "Austria",
+  "city_slug": "salzburg",
+  "note": "Candidates from the 2026-08-29 dedicated verify pass (data/research/salzburg-verified.json shipped 5 trees) that did not clear the bar this pass. Kept as stock per the standing rule that unverified is a reason not to publish, never a reason to throw away.",
+  "leads": [
+    {
+      "name": "Jubiläums-Eiche (Kaiser Franz Joseph jubilee oak), Volksgarten",
+      "species": "Quercus robur",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Not on the official Naturdenkmal register; known only from a memorial stone and a SalzburgWiki article about that stone (Salzburger Volksgarten, formerly Kaiser-Franz-Josef-Park, Parsch district). Sources conflict on the planting occasion: the memorial stone's own inscription reads '1848-1908' (planted 1908 for the 60th jubilee of Franz Joseph's accession), while a separate blog (Fräulein Flora) states it was planted in 1898 for the 50th jubilee; neither figure has been dropped in favour of the other. No source found confirming the tree still stands today, and no coordinates or exact in-park position found. Needs: a site visit or recent photo to confirm existence, resolution of the 1898-vs-1908 conflict, and a tree-level pin."
+    },
+    {
+      "name": "Eiben an der Ernest-Thun-Straße 7 (Naturdenkmal NDM00249, three yews)",
+      "species": "Taxus baccata",
+      "lat": 47.808359,
+      "lng": 13.038839,
+      "status": "lead",
+      "why": "Access is genuinely ambiguous under hard rule 10's three tests: the trees stand on private property between a parking area and railway tracks, reachable only 'über die Zufahrt des Hauses Nr. 9' (via house no. 9's own driveway), which reads as a private access way rather than a gate that stands open to the public. A claimed Georg Trakl connection (surfaced by an earlier automated search summary) found no supporting source at all this pass and should NOT be repeated without one. Needs: a source confirming genuine public viewing access, e.g. visible from Ernest-Thun-Straße itself without using the driveway, before this can ship."
+    },
+    {
+      "name": "Fichte bei der Hellbrunner Allee (single spruce, Naturdenkmal)",
+      "species": "Picea abies",
+      "lat": 47.76761,
+      "lng": 13.064357,
+      "status": "lead",
+      "why": "Register entry (protected since 1972, area 754 m², described as a shade-tree cultural relic near the Hellbrunner Allee, Morzg) found in the Wikipedia register transcription but not individually chased this pass for lack of time. Unlike the avenue itself this IS a single collectible point and looked promising; worth checking first in a follow-up pass."
+    },
+    {
+      "name": "Maler-Fischbach-Eichen and Eichen am Ludwig-Zeller-Weg (painter Johann Fischbach's 1851 garden oaks, Aigen)",
+      "species": "Quercus robur",
+      "lat": 47.795374,
+      "lng": 13.071024,
+      "status": "lead",
+      "why": "Two separate register entries (three oaks each) both tied to the 1851 garden of painter Johann Fischbach in Aigen, a good shared story. Not individually verified this pass. Aigen is a residential district; needs an access check (public street trees vs. private garden remnants) before shipping."
+    },
+    {
+      "name": "Rosskastanie an der Bachstraße (horse chestnut, Gnigl)",
+      "species": "Aesculus hippocastanum",
+      "lat": 47.82246,
+      "lng": 13.065895,
+      "status": "lead",
+      "why": "Register entry, planted around 1900 in a villa garden per the Wikipedia register transcription, splits at 150cm. Not individually verified this pass; needs an access check since it originates as a private villa-garden tree."
+    },
+    {
+      "name": "Birnbaum beim Hofstetter am Gaisberg (pear tree, Gaisberg)",
+      "species": "Pyrus communis",
+      "lat": 47.786038,
+      "lng": 13.100494,
+      "status": "lead",
+      "why": "Register entry, over 180 years old per the register transcription itself (a real documented age, not derived), last remnant of an orchard on the Gaisberg. Not individually verified this pass for lack of time; a promising candidate for a follow-up, though the Gaisberg is a c.5km hill outside the tight walkable cluster."
+    },
+    {
+      "name": "Linden in Freisaal (four lindens, planted c.1810)",
+      "species": "Tilia sp.",
+      "lat": 47.78888,
+      "lng": 13.055419,
+      "status": "lead",
+      "why": "Register entry for an ensemble of four separately registered lindens planted around 1810. Not verified this pass. Needs a judgement call on whether the four read as one compact collectible point (like a folded twin) or should be treated as an ensemble that fails the collectible-point test; check on site or via photo before shipping."
+    },
+    {
+      "name": "Hellbrunner Allee (the c.1615 avenue itself, ~621 trees over 2.5km)",
+      "species": "mixed: Quercus, Fagus, Populus",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "NEVER SHIP AS ONE ENTRY. An avenue of ~621 trees over 2.5km from Hellbrunn Palace's east portal to Schloss Freisaal, the oldest preserved seigneurial avenue in Central Europe (laid out 1615 for Prince-Archbishop Markus Sittikus), with some oaks reputedly dating to the original planting. Fails the collectible-point test exactly as a long avenue does: no single trunk to stand at. See the Fichte bei der Hellbrunner Allee lead above for a single tree from this same avenue that IS collectible."
+    }
+  ],
+  "unmined_register_candidates_note": "Roughly 80 of the 87 register rows within 20km listed in the passcheck brief (data/research/salzburg-register-candidates.json and the fuller candidate set behind it) were not individually chased this pass. This pass worked the tightest ~2.5km cluster plus named parks and sacred sites per the brief, verified 5 trees to a two-source-or-honestly-flagged standard, recorded the most promising unchased candidates as leads above, and stopped inside its time box. The remaining rows carry only a German descriptive name and a coordinate from the register import (no age, no girth, no independent second source attached), so each still needs the same per-tree work done here: cross-reference against the Wikipedia register-list transcription (https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg, which usefully carries designation year and registered area in m² for every entry), then a genuinely independent second source (SalzburgWiki, Wikimedia Commons category, a local blog, or a site visit)."
+}
