@@ -41,8 +41,6 @@ struct ProfileView: View {
     @State private var deleteFailed = false
     @State private var showingAccount = false
     @State private var showingLegal = false
-    @State private var sponsoring = false
-    @State private var showingSponsor = ProcessInfo.processInfo.arguments.contains("-sponsor")
     /// The maps app Take me there opens, empty while nobody has answered. Same
     /// key Directions reads; @AppStorage so the row redraws when it changes.
     @AppStorage("directions.app") private var directionsApp: String = ""
@@ -93,10 +91,8 @@ struct ProfileView: View {
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $givingFeedback) { ContributeView(feedbackMode: true) }
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
-        .sheet(isPresented: $showingSponsor) { SponsorSheet() }
         // The paywall still opens, from the locked rows themselves; it no
         // longer has a row of its own (2026-08-25).
-        .sheet(isPresented: $sponsoring) { SponsorSheet() }
         .sheet(isPresented: $showingAccount) { accountSheet }
         .sheet(isPresented: $showingLegal) { legalSheet }
         .sheet(isPresented: $signingIn) {
@@ -342,14 +338,14 @@ struct ProfileView: View {
                 // exist yet, one tap from two rows that say the same in three
                 // words each.
                 Divider().padding(.leading, 48)
-                // HIS ASK, and the one thing on this screen I did not build in
-                // full (2026-08-25): "we could add a button that just says
-                // sponsor this project, and that would lead to an in-app
-                // purchase of 20 euro a year". The purchase is his under hard
-                // rule 2, so the row measures instead: it asks who would pay
-                // for the project itself rather than for a feature, which is a
-                // different and more interesting question than any of the rows
-                // above it.
+                // The Sponsor row is GONE, and so is the in-app purchase
+                // behind it (Hidde, 2026-08-29: "haal er maar uit tenzij we
+                // naar de website mogen verwijzen om het daar te doen"). We
+                // may not: guideline 3.1.1 does not let an app link out to
+                // ko-fi for a tip, the registered-nonprofit exception is not
+                // ours, and the places where linking out IS allowed are one
+                // storefront (US) and one paid entitlement (EU), which is not
+                // one button shipped worldwide. The website keeps /sponsor.
                 // HIS ASK, 2026-08-26: a general feedback button, and under
                 // it specifically the features people would want. The open
                 // answers are the material the Plus line gets designed from,
@@ -391,22 +387,10 @@ struct ProfileView: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("profile-feedback")
-                Divider().padding(.leading, 48)
-                Button { sponsoring = true } label: {
-                    HStack(spacing: 12) {
-                        Image(systemName: "heart.fill").frame(width: 20)
-                            .foregroundStyle(Brand.moss)
-                        Text("Sponsor this project").font(.callout)
-                            .foregroundStyle(Brand.ink)
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
-                    }
-                    .padding(.horizontal, 16).frame(height: 48)
-                    .contentShape(.rect)
+                // BEHIND THE LAUNCH FLAG, like Plus and the walks
+                // (Kit/Launch.swift). 1.0 asks for no money anywhere.
+                if Launch.sponsor {
                 }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("profile-sponsor")
             }
             .brandCard()
         }
