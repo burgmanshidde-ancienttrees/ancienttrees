@@ -21,6 +21,23 @@ public enum Launch {
     public static let season = ProcessInfo.processInfo.arguments.contains("-show-season")
     /// Every Plus-labelled row and chip.
     public static let plus = ProcessInfo.processInfo.arguments.contains("-show-plus")
+    /// The sponsor row in Settings, and with it the only place in the app that
+    /// asks for money.
+    ///
+    /// HIDDEN for 1.0 on Hidde's call (2026-08-29), and the reason is Apple
+    /// rather than the sheet, which is finished and honest. An in-app purchase
+    /// makes him a trader under the DSA, which publishes his address on the
+    /// product page; linking out to the Ko-fi page instead is anti-steering
+    /// under 3.1.1, which has been opened up in the US and under the DMA but
+    /// only with an entitlement and paperwork that a first submission should
+    /// not be carrying. The website keeps its /sponsor page, where none of this
+    /// applies and nobody takes a cut, and that is also where the question the
+    /// button was built to answer gets measured.
+    ///
+    /// The sheet itself stays in the build and -sponsor still opens it, so the
+    /// screenshot sweep and the layout gate keep seeing it. One line here is
+    /// the whole of putting it back.
+    public static let sponsor = ProcessInfo.processInfo.arguments.contains("-show-sponsor")
 
     /// The collect flow's "where does it stand" step. It is otherwise reached
     /// only by choosing a photograph that carries no location of its own, and
