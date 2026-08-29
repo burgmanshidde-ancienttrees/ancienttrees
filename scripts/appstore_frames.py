@@ -67,8 +67,22 @@ GROUNDS = {
 # The caption is the reader's, not ours: they are the subject, and there is no
 # summary line after it (PRODUCT_COPY.md). Four to six words, like the
 # references. The opener is a promise rather than a screen.
-# HIS WORDS, 2026-08-29, and they are the whole pitch in six.
+# HIS WORDS, 2026-08-29, and they are the whole pitch in six. They are also
+# the website's own h1, so the two surfaces say the same thing.
 HERO_LINE = "Trees worth the walk,\nwherever you are."
+
+# The opener's photograph, chosen by Hidde on 2026-08-29 out of three he was
+# shown. Free Unsplash License, so no visible credit is owed and the name is
+# recorded here instead, which is what hard rule 4 asks and what the website's
+# own hero lost when build_site.py was deleted.
+#
+#   Photo: Josh Carter, Unsplash (unsplash.com/@midwestiscool)
+#   https://unsplash.com/photos/green-leaf-covering-tree-branch-lD2Ah5thV2U
+#
+# Put the file at out/appstore/0-hero.jpg. It is not committed: out/ is
+# ignored, and a 5 MB photograph in the history buys nothing when the URL is
+# written down.
+HERO_SOURCE = "https://images.unsplash.com/photo-1529025635398-c8844675ab65?q=85&w=2400&auto=format&fit=crop"
 
 PANELS = [
     ("1-map", "The remarkable old trees\nnearest to you"),
