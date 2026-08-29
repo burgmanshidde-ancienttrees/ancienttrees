@@ -1,472 +1,480 @@
 {
- "_note": "Spanish overlay for Barcelona, hand-written 2026-08-22. The English page is the best-performing Spanish-market page we have (46 trees, 200 impressions in ten days), so the title and meta description are written around 'arboles singulares' and 'arboles monumentales', the categories Spain and Catalonia actually use, never a literal rendering of 'ancient trees'. Place names stay Catalan, the way a resident reads them on the sign. Text only: every coordinate, photo, licence and pin stays in data/cities/barcelona.json.",
- "city": "Barcelona",
- "title": "Árboles singulares de Barcelona: 46, de Gràcia a Montjuïc",
- "meta_description": "Barcelona ordena sus árboles en dos listas: más de 200 de interés local y solo cuatro monumentales. La encina de 250 años y otros 51 árboles.",
- "intro": "Barcelona guarda sus árboles en dos listas. El catálogo municipal de árboles de interés local reúne más de 200 ejemplares, pero la declaración de árbol monumental de la Generalitat solo alcanza a cuatro, y los cuatro crecen en la misma hondonada del antiguo jardín botánico de Montjuïc. El árbol más viejo es anterior a la trama de calles de la ciudad: una encina de 250 años en un jardín que el vecindario peleó tres años por salvar. Otros dos ya crecían en el Park Güell antes de que Gaudí construyera a su alrededor. Los tres se ven gratis.",
- "question_title": "¿Cuál es el árbol más antiguo de Barcelona? (250 años)",
- "question_meta": "El árbol más antiguo medido de Barcelona es una encina de 250 años en Gràcia. Su historia, dónde está exactamente y otros 51 árboles notables.",
- "question_answer": "El árbol más antiguo de Barcelona cuya edad se ha medido de verdad es una encina del carrer de l'Encarnació, en Vila de Gràcia, datada por dendrocronología en unos 250 años. Ya aparece en los planos municipales de 1845, cuando Gràcia todavía era campo, y crece en un pequeño jardín abierto al público en 2021 tras una campaña de tres años para evitar que se derribara el conjunto. Puede que haya uno más viejo: el registro municipal fecha un olivo del Park Güell en 1771, pero esa cifra es una estimación que nadie ha contrastado con la madera.",
- "question_context": "La encina del carrer de l'Encarnació es anterior al barrio que creció a su alrededor. Gràcia era un puñado de masías dispersas cuando el árbol era joven, y aparece en los planos de 1845 de la ciudad sobre suelo rural conocido como el Pla del Bonpà, ligado a una masía llamada Can Vidalet. Los dendrocronólogos, especialistas en leer los anillos de la madera, la dataron después en unos 250 años, lo que la convierte en el árbol más viejo de Barcelona cuya edad ha medido alguien de verdad. Estuvo cerca de no llegar a esa datación: un plan urbanístico sobre las históricas Casetes de l'Encarnació que la rodean desencadenó una campaña vecinal de tres años, y en 2019 la ciudad catalogó el árbol como Árbol de Interés Local precisamente para frenar las excavadoras. El jardín que la rodea abrió al público en abril de 2021, aunque de las casas originales solo pudieron salvarse las fachadas. Si lo que busca es tamaño y no papeleo, el árbol más voluminoso de Barcelona es otra historia: una pterocaria de Rehder en el Sot de l'Estany del jardín botánico, que alcanza unos 40 metros en un hoyo por el que casi nadie baja. Cómo llegar a la encina: estación de Fontana, línea L3, y ocho minutos a pie hacia Vila de Gràcia.",
- "faq": [
-  {
-   "q": "¿Cuál es el árbol más antiguo de Barcelona?",
-   "a": "Una encina del carrer de l'Encarnació, en Gràcia, datada por dendrocronología en unos 250 años. Aparece en los planos municipales de 1845 y sobrevivió a un plan de derribo tan reciente como el de 2019. El registro municipal fecha un olivo del Park Güell en 1771, que sería más viejo, pero esa fecha nunca se ha contrastado con la madera."
-  },
-  {
-   "q": "¿Dónde se ven mejor los árboles viejos de Barcelona?",
-   "a": "En el Jardí Botànic Històric de Montjuïc, donde crecen juntos los cuatro árboles oficialmente monumentales de la ciudad, todos en la misma hondonada, el Sot de l'Estany."
-  },
-  {
-   "q": "¿Se pueden ver gratis los árboles singulares de Barcelona?",
-   "a": "Casi todos, porque están en parques, plazas y calles públicas. Dos excepciones cobran entrada general, no una entrada por el árbol: el Jardí Botànic Històric y el Parc del Laberint d'Horta, ambos gratuitos ciertos días de la semana."
-  },
-  {
-   "q": "¿Había árboles en el Park Güell antes de que Gaudí lo construyera?",
-   "a": "Sí. Dos algarrobos del recinto son más viejos que el propio parque de Gaudí, y su diseño los rodeó en lugar de arrasarlos: uno sigue enraizado bajo las columnas de piedra de un viaducto."
+  "_note": "Spanish overlay for Barcelona, hand-written 2026-08-22. The English page is the best-performing Spanish-market page we have (46 trees, 200 impressions in ten days), so the title and meta description are written around 'arboles singulares' and 'arboles monumentales', the categories Spain and Catalonia actually use, never a literal rendering of 'ancient trees'. Place names stay Catalan, the way a resident reads them on the sign. Text only: every coordinate, photo, licence and pin stays in data/cities/barcelona.json.",
+  "city": "Barcelona",
+  "title": "Árboles singulares de Barcelona: 46, de Gràcia a Montjuïc",
+  "meta_description": "Barcelona ordena sus árboles en dos listas: más de 200 de interés local y solo cuatro monumentales. La encina de 250 años y otros 51 árboles.",
+  "intro": "Barcelona guarda sus árboles en dos listas. El catálogo municipal de árboles de interés local reúne más de 200 ejemplares, pero la declaración de árbol monumental de la Generalitat solo alcanza a cuatro, y los cuatro crecen en la misma hondonada del antiguo jardín botánico de Montjuïc. El árbol más viejo es anterior a la trama de calles de la ciudad: una encina de 250 años en un jardín que el vecindario peleó tres años por salvar. Otros dos ya crecían en el Park Güell antes de que Gaudí construyera a su alrededor. Los tres se ven gratis.",
+  "question_title": "¿Cuál es el árbol más antiguo de Barcelona? (250 años)",
+  "question_meta": "El árbol más antiguo medido de Barcelona es una encina de 250 años en Gràcia. Su historia, dónde está exactamente y otros 51 árboles notables.",
+  "question_answer": "El árbol más antiguo de Barcelona cuya edad se ha medido de verdad es una encina del carrer de l'Encarnació, en Vila de Gràcia, datada por dendrocronología en unos 250 años. Ya aparece en los planos municipales de 1845, cuando Gràcia todavía era campo, y crece en un pequeño jardín abierto al público en 2021 tras una campaña de tres años para evitar que se derribara el conjunto. Puede que haya uno más viejo: el registro municipal fecha un olivo del Park Güell en 1771, pero esa cifra es una estimación que nadie ha contrastado con la madera.",
+  "question_context": "La encina del carrer de l'Encarnació es anterior al barrio que creció a su alrededor. Gràcia era un puñado de masías dispersas cuando el árbol era joven, y aparece en los planos de 1845 de la ciudad sobre suelo rural conocido como el Pla del Bonpà, ligado a una masía llamada Can Vidalet. Los dendrocronólogos, especialistas en leer los anillos de la madera, la dataron después en unos 250 años, lo que la convierte en el árbol más viejo de Barcelona cuya edad ha medido alguien de verdad. Estuvo cerca de no llegar a esa datación: un plan urbanístico sobre las históricas Casetes de l'Encarnació que la rodean desencadenó una campaña vecinal de tres años, y en 2019 la ciudad catalogó el árbol como Árbol de Interés Local precisamente para frenar las excavadoras. El jardín que la rodea abrió al público en abril de 2021, aunque de las casas originales solo pudieron salvarse las fachadas. Si lo que busca es tamaño y no papeleo, el árbol más voluminoso de Barcelona es otra historia: una pterocaria de Rehder en el Sot de l'Estany del jardín botánico, que alcanza unos 40 metros en un hoyo por el que casi nadie baja. Cómo llegar a la encina: estación de Fontana, línea L3, y ocho minutos a pie hacia Vila de Gràcia.",
+  "faq": [
+    {
+      "q": "¿Cuál es el árbol más antiguo de Barcelona?",
+      "a": "Una encina del carrer de l'Encarnació, en Gràcia, datada por dendrocronología en unos 250 años. Aparece en los planos municipales de 1845 y sobrevivió a un plan de derribo tan reciente como el de 2019. El registro municipal fecha un olivo del Park Güell en 1771, que sería más viejo, pero esa fecha nunca se ha contrastado con la madera."
+    },
+    {
+      "q": "¿Dónde se ven mejor los árboles viejos de Barcelona?",
+      "a": "En el Jardí Botànic Històric de Montjuïc, donde crecen juntos los cuatro árboles oficialmente monumentales de la ciudad, todos en la misma hondonada, el Sot de l'Estany."
+    },
+    {
+      "q": "¿Se pueden ver gratis los árboles singulares de Barcelona?",
+      "a": "Casi todos, porque están en parques, plazas y calles públicas. Dos excepciones cobran entrada general, no una entrada por el árbol: el Jardí Botànic Històric y el Parc del Laberint d'Horta, ambos gratuitos ciertos días de la semana."
+    },
+    {
+      "q": "¿Había árboles en el Park Güell antes de que Gaudí lo construyera?",
+      "a": "Sí. Dos algarrobos del recinto son más viejos que el propio parque de Gaudí, y su diseño los rodeó en lugar de arrasarlos: uno sigue enraizado bajo las columnas de piedra de un viaducto."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Catalan place names are kept as written on the sign.",
+  "trees": {
+    "bcn_001": {
+      "name": "La encina del carrer de l'Encarnació",
+      "species": "Encina (Quercus ilex)",
+      "age_estimate": "unos 250 años",
+      "access": "Gratuito, jardín público.",
+      "transport": "Fontana (Metro L3), 8 min a pie.",
+      "story": "El árbol más viejo de Barcelona estuvo a punto de caer por una promoción de pisos. Esta encina ya crecía en el Pla del Bonpà, terreno rural ligado a una masía llamada Can Vidalet, cuando Gràcia era todavía campo abierto y no un barrio. Aparece en los planos municipales de 1845, y los dendrocronólogos, que leen la edad de un árbol en sus anillos, la dataron después en unos 250 años. Hacia la década de 2010 la encina quedaba en el patio de las Casetes de l'Encarnació, un conjunto de casitas del siglo XIX que iban a derribarse para levantar pisos nuevos. El vecindario peleó tres años contra el plan bajo el lema Salvem l'Alzina, salvemos la encina, y en 2019 la ciudad catalogó el árbol como Árbol de Interés Local precisamente para parar las máquinas. Funcionó a medias: las casas no pudieron restaurarse enteras y solo se salvaron las fachadas, pero el jardín que rodea la encina abrió al público en abril de 2021. El árbol mide hoy 22 metros de alto y tiene una copa igual de ancha, más que la de cualquier otra encina medida en la ciudad."
+    },
+    "bcn_002": {
+      "name": "El algarrobo del viaducto",
+      "species": "Algarrobo (Ceratonia siliqua)",
+      "age_estimate": "unos 130 años",
+      "access": "Gratuito; la zona monumental del Park Güell cobra entrada general, pero los viaductos quedan dentro del área boscosa de acceso libre.",
+      "transport": "Lesseps (Metro L3), 15 min a pie cuesta arriba.",
+      "story": "Gaudí llenó el Park Güell de columnas de piedra con forma de tronco y dejó este tronco de verdad en medio de ellas. El algarrobo ya estaba enraizado en la ladera, nacido hacia 1893, cuando Eusebi Güell encargó a Gaudí convertir la finca en ciudad jardín, en 1900. En lugar de talarlo para levantar el viaducto que estaba diseñando, Gaudí hizo pasar las columnas inclinadas de piedra alrededor del tronco vivo, de modo que un árbol real crece dentro de una columnata construida para parecer un bosque de árboles. Una fotografía de 1904 del fotógrafo barcelonés Josep Maria Armengol muestra el conjunto apenas un año después de terminadas las obras, con el algarrobo todavía delgado entre la piedra nueva. Los algarrobos son mediterráneos y se sacuden la sequía y los suelos pobres, exactamente el terreno que ofrecía la finca de Güell antes de que llegara Gaudí. Más de un siglo después, el árbol ha engordado hasta tocar las columnas que lo rodean, una colaboración no prevista entre un modernista catalán del siglo XIX y una especie que ya crecía en esa ladera mucho antes de que él naciera."
+    },
+    "bcn_003": {
+      "name": "El algarrobo rebrotado de la Plaça de la Natura",
+      "species": "Algarrobo (Ceratonia siliqua)",
+      "age_estimate": "unos 120 años el tronco actual; el árbol original del que brotó no está datado",
+      "access": "Gratuito, dentro del área boscosa de acceso libre del Park Güell.",
+      "transport": "Lesseps (Metro L3), 15 min a pie cuesta arriba.",
+      "story": "Este árbol es, técnicamente, el segundo acto de un tocón. Aquí hubo un algarrobo con un tronco de más de cuatro metros de perímetro, de los mayores de su especie en todo el parque. En algún momento murió o lo cortaron y, en vez de desaparecer, echó un brote nuevo desde la base, como hacen los algarrobos y muchos árboles mediterráneos después de un incendio o un daño. Ese brote, catalogado como surgido hacia 1907, es el árbol que hoy se ve: unos modestos 90 centímetros de perímetro, rodeado por los restos retorcidos y curtidos del gigante al que sustituyó. El efecto parece casi diseñado a propósito, un tronco joven enmarcado por la ruina escultórica de su antecesor, en un parque donde la piedra de Gaudí hace eso mismo, pero queriendo, unos cientos de metros más allá. Nadie planifica un rebrote así. La madera muerta del viejo algarrobo simplemente se curvó igual que se curvan las columnas de piedra de Gaudí, lo que o es casualidad o es la prueba de que esta ladera concreta solo sabe crecer de una manera."
+    },
+    "bcn_004": {
+      "name": "El cedro del Himalaya del Laberint",
+      "species": "Cedro del Himalaya (Cedrus deodara)",
+      "age_estimate": "unos 115 años",
+      "access": "Cerrado. El Parc del Laberint d'Horta está cerrado al público por obras de restauración de los setos de ciprés y del riego desde marzo de 2025, prorrogadas un año más para que arraigue la plantación nueva; reapertura prevista en marzo de 2027. Consulte ajuntament.barcelona.cat antes de ir.",
+      "transport": "Mundet (Metro L3), 10 min a pie.",
+      "story": "Este cedro crece en el jardín histórico más antiguo que se conserva en Barcelona, una finca neoclásica encargada en 1791 a la que después se añadió un ala romántica, laberinto de cipreses incluido. El propio cedro del Himalaya llega tarde a esa historia: se plantó hacia 1910 en lo que la finca llama su jardín doméstico, junto a un tilo plateado con el que todavía comparte parcela. Los cedros del Himalaya vienen de las montañas que van de Afganistán a Nepal, donde su madera se apreciaba para construir barcos y templos; este lleva más de un siglo adaptándose en cambio a los veranos mediterráneos. Una tormenta le partió en algún momento la guía principal, el brote de arriba que dirige normalmente el ascenso de una conífera, y el árbol ha seguido creciendo desde entonces con la silueta algo cambiada y una copa que hoy mide 22 metros de diámetro. Todo el parque cerró en marzo de 2025 para una renovación de dos años del laberinto histórico de cipreses y del sistema de riego, así que este cedro queda fuera del alcance hasta que los jardines vuelvan a abrir, previsiblemente en 2027."
+    },
+    "bcn_005": {
+      "name": "La pterocaria del Sot de l'Estany",
+      "species": "Pterocaria de Rehder (Pterocarya x rehderiana)",
+      "age_estimate": "unos 100 años",
+      "access": "Entrada de pago al Jardí Botànic Històric.",
+      "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
+      "story": "El árbol más grande de Barcelona crece en un agujero por el que nadie baja. El Sot de l'Estany es una antigua cantera dentro del jardín botánico histórico de la ciudad, lo bastante honda y húmeda como para funcionar de invernadero, y esta pterocaria ha aprovechado ese abrigo para llegar a unos 40 metros, una altura que el propio catálogo municipal reconoce haber tenido problemas para medir con equipo estándar, porque las paredes de alrededor cortan la visual del láser. El árbol es una pterocaria de Rehder, un híbrido deliberado entre una especie caucásica y otra china que cruzó por primera vez en 1908 Alfred Rehder, horticultor del Arnold Arboretum de Boston, de modo que este ejemplar es apenas una o dos décadas más joven que el híbrido mismo. Es el único de su clase registrado en Barcelona, y probablemente en bastantes kilómetros a la redonda. En abril de 2025 la Generalitat lo declaró uno de los cuatro únicos árboles monumentales de toda la ciudad, y los cuatro comparten esta misma hondonada. Quien visita el jardín botánico rara vez baja al Sot: el árbol que gana en tamaño a todos los demás de Barcelona está en el rincón por el que casi todo el mundo pasa de largo."
+    },
+    "bcn_006": {
+      "name": "El fresno americano del Sot de l'Estany",
+      "species": "Fresno americano (Fraxinus pennsylvanica)",
+      "age_estimate": "unos 100 años",
+      "access": "Entrada de pago al Jardí Botànic Històric.",
+      "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
+      "story": "Este fresno viene de las vegas inundables del este de Norteamérica, una especie hecha para tener las raíces bajo el agua durante semanas seguidas, y es tan raro en Barcelona que el catálogo municipal de arbolado lo menciona por su nombre. Plantado en 1924 en la misma hondonada resguardada, el Sot de l'Estany, que ampara la pterocaria gigante del jardín botánico, ha pasado de los 24 metros de altura gracias a la humedad que la vieja cantera retiene en el fondo de Montjuïc. El fresno americano casi nunca se planta como ornamental en la Europa mediterránea, donde su hábitat pantanoso de origen no tiene equivalente local, y esa es parte de la razón por la que la Generalitat le concedió la condición de árbol monumental junto a tres vecinos en abril de 2025: no es el árbol más grande del jardín, pero sí de los más inesperados. Un botánico que baje al rincón más profundo del jardín puede encontrar, en unos pocos metros cuadrados, un híbrido chino-caucásico, un árbol de pantano americano, un fresno ibérico autóctono y un pariente europeo del arce creciendo uno al lado del otro, un arboreto no planeado dentro de otro arboreto."
+    },
+    "bcn_007": {
+      "name": "La magnolia de los Jardins de la Maternitat",
+      "species": "Magnolia (Magnolia grandiflora)",
+      "age_estimate": "más de 100 años",
+      "access": "Gratuito, jardín público.",
+      "transport": "Les Corts (Metro L3), 6 min a pie.",
+      "story": "Esta magnolia es probablemente la mayor de su especie en Barcelona, y crece en un jardín levantado para una maternidad donde ya no nace nadie. Los Jardins de la Maternitat ocupan la antigua finca de Can Cavaller, transformada a partir de 1889 en un complejo hospitalario modernista por el arquitecto Camil Oliveres, y el recinto conservó su plantación original mucho después de que las salas cambiaran de uso. La magnolia no tiene fecha de plantación registrada, solo una descripción en los archivos municipales de arbolado como centenaria, más de cien años, lo que sitúa su origen en algún punto de las primeras décadas del hospital. Desde entonces ha pasado de los 12 metros de alto y los 15 de ancho, una copa capaz de dar sombra ella sola a una plaza pequeña, entre la cuarentena de especies de árbol catalogadas en los jardines. Las magnolias de flor grande florecen a principios de verano con flores que pueden alcanzar los 30 centímetros de diámetro, un argumento de una sola especie para explicar por qué valía la pena conservar intacto el jardín de un hospital cuando el hospital se mudó."
+    },
+    "bcn_008": {
+      "name": "La acacia de Constantinopla de la Ciutadella",
+      "species": "Acacia de Constantinopla (Albizia julibrissin)",
+      "age_estimate": "130 años",
+      "access": "Gratuito, parque público.",
+      "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 min a pie.",
+      "story": "Una acacia de Constantinopla en clima templado no está hecha para pasar mucho de los cuarenta años. La del Parc de la Ciutadella lleva floreciendo cada julio desde alrededor de 1896, bastante más de un siglo por encima de la fecha de caducidad habitual de su especie. Albizia julibrissin se hace valer deprisa: hojas de helecho que se cierran como una mano al anochecer y flores rosas de hilos finos con forma de borla, pensadas para unas pocas décadas de lucimiento antes de que el árbol se rinda. A este nadie le pasó el aviso. Infecciones repetidas le han vaciado el tronco central con los años, un dato que el propio registro municipal de arbolado dice sin rodeos en lugar de esconderlo, y la copa de encima sigue floreciendo cada verano igualmente. Se plantó por los años en que la Sociedad de Ciencias Naturales de Barcelona guardaba sus colecciones en los museos de al lado, cuando el parque hacía además de escaparate al aire libre de curiosidades botánicas traídas de medio mundo. Hoy crecen unos 1.100 ejemplares de la misma especie por las calles y jardines de Barcelona, plantados casi todos como ornamentales de vida corta que se esperaba sustituir en una generación. El de la Ciutadella, catalogado como Árbol de Interés Local en 1996, lleva treinta años dejando ese papeleo en ridículo."
+    },
+    "bcn_009": {
+      "name": "El ombú de la Plaça Prim",
+      "species": "Ombú (Phytolacca dioica)",
+      "age_estimate": "unos 100 años",
+      "access": "Gratuito, plaza pública.",
+      "transport": "Poblenou (Metro L4), 5 min a pie.",
+      "story": "Este árbol parece hecho de músculo y no de madera, y no anda lejos de la verdad. El ombú es originario de la pampa de Argentina, Uruguay y el sur de Brasil, y su tronco crece blando y fibroso en lugar de duro, hinchándose en pliegues ondulados parecidos a raíces que almacenan agua para las sequías a las que su tierra sudamericana es propensa. Plantado en la Plaça Prim hacia 1924, uno de los tres ombús que dan carácter a esta plaza pequeña del Poblenou, ha llegado a 9,5 metros de alto, con un tronco de dos metros y medio de perímetro a la altura del pecho y una copa de siete metros y medio de ancho, todo ello sin producir madera lo bastante densa como para servir de material, que es la razón por la que los ombús casi nunca se plantan para otra cosa que sombra y espectáculo. La especie llegó a España como importación ornamental a principios del siglo XX, popular exactamente por eso: nada más en una plaza europea se parece a esto. El Poblenou era todavía un barrio industrial de fábricas textiles cuando este ejemplar se plantó; hoy esas fábricas son casi todas lofts y oficinas tecnológicas, y el ombú ha sobrevivido a la primera identidad entera del barrio."
+    },
+    "bcn_010": {
+      "name": "Las palmeras de la Casa de la Misericòrdia",
+      "species": "Washingtonia de California (Washingtonia filifera)",
+      "age_estimate": "unos 120 años",
+      "access": "Gratuito entrar al patio desde el carrer d'Elisabets o a través de la librería La Central; la cafetería sí se paga.",
+      "transport": "Catalunya (Metro L1/L3), 6 min a pie.",
+      "story": "Cuatro palmeras llevan más de un siglo en el patio de un antiguo orfanato, plantadas hacia 1904, cuando el edificio funcionaba todavía como Casa de la Misericòrdia, una institución benéfica fundada en 1583 que crio a niñas abandonadas hasta bien entrado el siglo XX. Las washingtonias de California son propias de los oasis desérticos del suroeste de Estados Unidos y el norte de México, un emparejamiento raro sobre el papel con un patio neogótico del Raval, pero la especie aguanta los suelos pobres y las sequías largas lo suficiente como para haberse vuelto un clásico de la jardinería urbana mediterránea. Durante décadas el patio estuvo cerrado al público, parte de un edificio institucional escondido detrás del carrer d'Elisabets por delante del cual pasaba medio Raval sin ver nunca lo que había dentro. Eso cambió hace poco, cuando abrió una cafetería en el jardín y devolvió a la vista de cualquiera que pida un café cuatro palmeras que habían crecido un siglo a puerta cerrada. El edificio sigue albergando una escuela; las palmeras, y tiene mérito, han sobrevivido a varios cambios de uso institucional por encima de sus cabezas."
+    },
+    "bcn_011": {
+      "name": "La casuarina de la Cascada",
+      "species": "Casuarina (Casuarina cunninghamiana)",
+      "age_estimate": "unos 130 años",
+      "access": "Gratuito, parque público.",
+      "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 6 min a pie.",
+      "story": "Todo en este árbol dice pino, y nada de eso es verdad. Lo que parecen acículas colgantes de color verde grisáceo son ramillas verdes articuladas haciendo el trabajo de las hojas, y las hojas de verdad son escamas microscópicas dispuestas en anillos en cada nudo, visibles solo si se separa una hebra. Sus parientes son los robles y los abedules, sin una sola conífera entre ellos. La casuarina se plantó junto a la Cascada hacia 1894, seis años después de que la Exposición Universal convirtiera una fortaleza derribada en el primer parque público de Barcelona, y ha engordado en dos troncos fundidos en la base que se separan a unos 90 centímetros del suelo. El perímetro conjunto pasa de cinco metros, uno de los troncos más gruesos de la ciudad, bajo una copa de unos 20 metros de diámetro; los propios registros municipales sitúan la altura entre 22 y 27 metros y no se ponen de acuerdo. Las casuarinas vienen de las riberas del este de Australia, donde sujetan los taludes de arena durante la temporada de crecidas, y por esa misma dureza se plantaron por todo el Mediterráneo. Póngase debajo una tarde de viento y el oído cierra lo que empezó la botánica: el follaje colgante silba igual que un pino, en un árbol que no lo es en absoluto."
+    },
+    "bcn_012": {
+      "name": "El roble mexicano de la Ciutadella",
+      "species": "Roble blanco mexicano (Quercus polymorpha)",
+      "age_estimate": "unos 140 años",
+      "access": "Gratuito, parque público.",
+      "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 min a pie.",
+      "story": "Un roble sin lóbulos en las hojas, y el único vivo en Cataluña. Quercus polymorpha crece de forma silvestre desde Texas, bajando por México hasta Guatemala y Honduras, conserva casi todo el año unas hojas coriáceas de borde liso y casi nadie lo planta en Europa. El único ejemplar de Barcelona lleva inclinándose sobre la arena del Parc de la Ciutadella desde alrededor de 1887, el año en que se rehacía el parque para la Exposición Universal que abrió al lado la primavera siguiente. No es un árbol grande al lado de sus vecinos, unos ocho metros de alto y un tronco de dos metros y medio de perímetro, pero lanza de lado una copa de 11 metros desde un fuste que renunció a la vertical hace décadas y hoy se extiende lo bastante bajo como para poder tocarlo con la mano. El nombre de la especie significa de muchas formas, y se lo pusieron porque las hojas varían tanto de un árbol a otro que los botánicos llegaron a describir el mismo roble dos veces con nombres distintos. Eso es lo que hay que comprobar cuando se encuentra. Coja una hoja, busque la forma que se supone que tiene todo roble que usted conoce y vea cómo el parecido de familia se deshace en silencio en su mano."
+    },
+    "bcn_013": {
+      "name": "El naranjo de los osages de la Ciutadella",
+      "species": "Naranjo de los osages (Maclura pomifera)",
+      "age_estimate": "unos 113 años",
+      "access": "Gratuito, parque público.",
+      "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 min a pie.",
+      "story": "A finales de otoño este árbol deja caer sobre el camino algo parecido a cerebros verdes. El fruto del naranjo de los osages es del tamaño de un pomelo, verde amarillento y casi fluorescente cuando está fresco, con la superficie hecha un amasijo de pliegues y surcos, y es incomestible para prácticamente todo lo que vive hoy. La explicación habitual es que alimentaba a animales que ya no existen, perezosos gigantes y mamuts que se tragaban el fruto entero y se llevaban lejos la semilla, lo que deja al árbol sirviendo platos que nadie pide desde hace diez mil años. Procede de un área pequeña entre Texas, Arkansas y Luisiana, donde su madera daba los mejores arcos de Norteamérica y le dio a la nación osage su comercio y a este árbol su nombre. Europa lo importó a principios del siglo XIX y nunca acabó de adoptarlo. El ejemplar de Barcelona se plantó en el Parc de la Ciutadella hacia 1913 y hoy tiene un tronco de unos dos metros y medio de perímetro bajo una copa que la ciudad mide entre 13 y 19 metros. Es de hoja caduca, así que las fechas importan: venga a finales de octubre o en noviembre y encontrará el fruto tirado debajo, con alguno aguantando colgado ya en invierno, cuando las hojas se han ido."
+    },
+    "bcn_014": {
+      "name": "El eucalipto rojo de la Plaça de les Caramelles",
+      "species": "Eucalipto rojo (Eucalyptus camaldulensis)",
+      "age_estimate": "más de 100 años; el registro municipal dice unos 120",
+      "access": "Gratuito. El árbol está dentro del recinto de la Casa de la Caritat y se ve desde la Plaça de les Caramelles, una plaza pública abierta a la calle junto al CCCB.",
+      "transport": "Universitat (Metro L1/L2), 5 min a pie.",
+      "story": "Cerca de 30 metros de árbol australiano se levantan en el Raval, el barrio más apretado de Barcelona y de los últimos sitios con espacio para algo de este tamaño. El eucalipto rojo creció dentro del recinto amurallado de la Casa de la Caritat, la casa de beneficencia que acogió a los expósitos y los indigentes de la ciudad durante siglo y medio, que es la única razón por la que aquí quedaba suelo libre. Desde la Plaça de les Caramelles se ve entero: un tronco pálido y recto de unos tres metros de perímetro, desnudo un buen trecho antes de que empiece la copa. Eucalyptus camaldulensis sigue los ríos estacionales del interior de Australia por casi todo el continente y sobrevive a la sequía soltando ramas enteras y rebrotando desde la base, que es también la razón por la que nadie con dos dedos de frente aparca debajo de uno. Los edificios de alrededor reabrieron en 1994 como el centro de arte CCCB, el mismo año en que la ciudad incorporó el árbol a su catálogo. La edad es la parte floja del expediente. La ciudad da 1904, ninguna fuente independiente lo confirma, y las dos versiones publicadas por el propio ayuntamiento de la misma ficha difieren en tres metros de altura y 20 centímetros de perímetro. Lea la fecha como la mejor conjetura del registro."
+    },
+    "bcn_015": {
+      "name": "La encina de los Jardins de Bacardí",
+      "species": "Encina (Quercus ilex)",
+      "age_estimate": "unos 120 años",
+      "access": "Gratuito, jardín público. La ciudad aprobó en abril de 2026 una reforma de los jardines y su entorno, así que puede haber partes valladas por obras; el árbol está catalogado y no se puede retirar. Consulte ajuntament.barcelona.cat antes de hacer el viaje.",
+      "transport": "Collblanc (Metro L5/L9), 5 min a pie, o Les Corts (Metro L3), 9 min a pie.",
+      "story": "Esta encina es la única parte del jardín de un hombre rico que nunca se vendió, se derribó ni se edificó. El terreno era una masía llamada Can Ermengol hasta que la familia Bacardí la compró a finales del siglo XIX y levantó una casa señorial para Baltasar de Bacardí i Janer, con unos jardines trazados puramente para su recreo. La encina se plantó hacia 1904. Cuando su nieta Anna Bacardí i Ribas murió en 1958, sus tres hijos empezaron a trocear la finca y a venderla; la casa cayó para ensanchar la Travessera de les Corts, y en 1963 la ciudad expropió lo que quedaba del jardín y lo abrió a toda la gente a la que nunca se había dejado entrar. La encina mide hoy unos 16 metros, con un tronco de algo más de dos metros de perímetro, entre palmeras y plátanos que quedan de aquella misma plantación privada, a cinco minutos del gentío del Camp Nou. Las encinas conservan todo el año sus hojas pequeñas y duras y crecen tan despacio que un siglo las deja con aire de no tener ninguna prisa. Barcelona catalogó esta en 1994, lo que significa que no puede retirarse por ningún motivo, y ese papel resultó útil: en abril de 2026 la ciudad aprobó una reforma de todo el recinto que la rodea."
+    },
+    "bcn_016": {
+      "name": "El acebuche del Park Güell",
+      "species": "Olivo (Olea europaea)",
+      "age_estimate": "el registro municipal dice 1771, unos 255 años; sin datación independiente",
+      "access": "Gratuito, dentro del área boscosa de acceso libre del Park Güell, fuera de la Zona Monumental de pago.",
+      "transport": "Lesseps (Metro L3), 15 min a pie cuesta arriba, o bus 24 hasta la Carretera del Carmel.",
+      "story": "El propio registro municipal fecha este acebuche en 1771, lo que lo haría más viejo que el árbol al que Barcelona llama el suyo más antiguo. Ese título es de la encina de Gràcia, de unos 250 años, y la encina tiene algo que a este acebuche le falta: un recuento de anillos hecho por un dendrocronólogo. El acebuche lleva un año de nacimiento aproximado tecleado en un catálogo municipal sin nada publicado detrás. Así que la posición honesta es que Barcelona quizá tenga un árbol más viejo que el que anuncia, y nadie ha hecho el trabajo de zanjarlo. Lo que no está en duda es el árbol mismo. Es un ullastre, la forma silvestre del olivo que crece por todo el Mediterráneo como una mata baja de muchos pies a la que nadie mira dos veces, y este se levantó en cambio como un árbol en condiciones, entre 14 y 17 metros, con una copa que pasa de los 13 metros de diámetro por encima de un muro de contención del Park Güell. Por eso se catalogó en 1996: no por su edad, sino porque una especie que cualquier catalán sabe nombrar nunca se había visto comportarse así. Ya estaba en la ladera más de un siglo antes de que Eusebi Güell comprara el terreno."
+    },
+    "bcn_017": {
+      "name": "El árbol pica-pica del Teatre Grec",
+      "species": "Lagunaria (Lagunaria patersonii)",
+      "age_estimate": "unos 103 años",
+      "access": "Gratuito, jardín público. Abierto de 08.00 a 21.00 del 1 de abril al 31 de octubre y de 08.00 a 19.00 del 1 de noviembre al 31 de marzo. Cerrado por completo al público del 15 de junio al 7 de agosto por el festival Grec.",
+      "transport": "Poble Sec (Metro L3), 10 min a pie cuesta arriba, o Espanya (Metro L1/L3) y las escaleras mecánicas de Montjuïc.",
+      "story": "Barcelona plantó este árbol por sus flores y se llevó de propina polvos pica-pica. La lagunaria se conoce en toda Cataluña como el pica-pica porque el interior de sus cápsulas de semillas va lleno de pelillos finos que se parten dentro de la piel y se quedan ahí. Las flores son la razón por la que se le perdona. Una vez al año la copa entera se llena de miles de flores rosas con forma de malva, que es una cosa rara de encontrar a quince metros de altura, porque unas flores así suelen pertenecer a las malas hierbas de una cuneta. La valoración del propio ayuntamiento dice que ninguna otra lagunaria de Barcelona, y aquí no se han plantado ni media docena, ha llegado a una forma parecida a esta. Se plantó en 1923, mientras toda la ladera se rehacía de canteras a jardines para la Exposición Internacional de 1929, y hoy está a la izquierda del anfiteatro, bajo la terraza del restaurante, con un tronco de 2,4 metros de perímetro. La especie viene de la isla de Norfolk y de la isla de Lord Howe, en el Pacífico, donde crece en acantilados marinos. Calcule bien la visita: los jardines cierran al público del 15 de junio al 7 de agosto por el festival que llena el teatro."
+    },
+    "bcn_018": {
+      "name": "La araucaria bunya del Teatre Grec",
+      "species": "Araucaria bunya (Araucaria bidwillii)",
+      "age_estimate": "unos 106 años",
+      "access": "Gratuito, jardín público. Abierto de 08.00 a 21.00 del 1 de abril al 31 de octubre y de 08.00 a 19.00 del 1 de noviembre al 31 de marzo. Cerrado por completo al público del 15 de junio al 7 de agosto por el festival Grec.",
+      "transport": "Poble Sec (Metro L3), 10 min a pie cuesta arriba, o Espanya (Metro L1/L3) y las escaleras mecánicas de Montjuïc.",
+      "story": "Una araucaria bunya deja caer piñas del tamaño de un balón de fútbol que pueden pesar diez kilos, desde diecisiete metros de altura. En Queensland, de donde es originaria la especie, los guardas acordonan en temporada el suelo que hay debajo y ponen avisos. El ejemplar de Barcelona lleva haciendo esto discretamente en los jardines del Teatre Grec desde alrededor de 1920, en el camino justo antes del mirador, y la ciudad lo catalogó en 2011 como probablemente uno de los poquísimos que hay en todo el término municipal. Araucaria bidwillii es la última especie que queda en su propia sección del género, superviviente de un linaje que ya era antiguo cuando acabó el Jurásico, y está construida como ninguna otra cosa de esta ladera: una columna recta con las ramas dispuestas en verticilos planos y simétricos, cada una forrada de hojas triangulares rígidas y lo bastante afiladas como para sacar sangre. En su tierra llega a los cincuenta metros. Las semillas de dentro de esas piñas son comestibles y feculentas, y no tienen ninguna prisa: pasan de tres a seis meses bajo tierra antes de que asome nada por encima. Mire hacia arriba y no a lo ancho. La copa mide solo unos ocho metros de diámetro, y es la silueta contra el cielo, todo ángulos rectos donde cualquier otro árbol de aquí tiene curvas, lo que hace que la gente se pare en el camino."
+    },
+    "bcn_019": {
+      "name": "El árbol del coral del camino de Laribal",
+      "species": "Árbol del coral (Erythrina corallodendron)",
+      "age_estimate": "unos 103 años",
+      "access": "Gratuito. El árbol está en el camino público que une los jardines del Teatre Grec con los Jardins Laribal. Los jardines del Teatre Grec cierran del 15 de junio al 7 de agosto por el festival; el lado de Laribal sigue abierto.",
+      "transport": "Poble Sec (Metro L3), 12 min a pie cuesta arriba, o Espanya (Metro L1/L3) y las escaleras mecánicas de Montjuïc.",
+      "story": "Barcelona no se aclara sobre qué es este árbol. Las páginas municipales de arbolado lo llaman Erythrina corallodendron y dicen que es el único de su especie en cualquier jardín de la ciudad. El fichero de datos abiertos del ayuntamiento lo llama Erythrina falcata. Quien lo cartografió para OpenStreetMap anotó Erythrina lysistemon. Tres nombres para un tronco, y los tres son árboles del coral, un género que florece en espigas de un rojo encendido y que lleva dos siglos haciendo discutir a los botánicos. Lo que nadie discute es el árbol. Está en el camino que corre entre los jardines del Teatre Grec y los Jardins Laribal, plantado hacia 1923, y ha lanzado una copa de veinte metros de ancho sobre un paseo de apenas tres, de modo que el camino pasa por debajo en lugar de rodearlo. El tronco mide 2,6 metros de perímetro y se inclina sobre la pendiente. La ciudad atribuye la ubicación a Jean-Claude Nicolas Forestier, el ingeniero paisajista francés que aterrazó este lado de Montjuïc para la Exposición de 1929, y señala que al árbol le tocó un sitio ideal y que supo aprovecharlo. Sea lo que sea al final, aquí solo hay uno."
+    },
+    "bcn_020": {
+      "name": "La tipuana de la Plaça Carles Buïgas",
+      "species": "Tipuana (Tipuana tipu)",
+      "age_estimate": "unos 101 años",
+      "access": "Gratuito, plaza pública.",
+      "transport": "Espanya (Metro L1/L3), 8 min a pie subiendo por la Avinguda Maria Cristina.",
+      "story": "La tipuana es uno de los árboles más comunes de las calles de Barcelona, y este es el que la ciudad usa para medir a los demás. Su propia ficha lo llama posiblemente el mayor por perímetro de tronco de todas las tipuanas que conoce en la ciudad, con 3,3 metros, y lo fecha en 1925, lo que lo mete en la primera oleada de plantaciones que trajo la especie desde Bolivia y el norte de Argentina. El experimento salió bien. Las tipuanas resultaron aguantar el calor, la sequía y el pavimento de Barcelona mejor que casi cualquier otra cosa disponible, y la ciudad siguió plantándolas hasta volverlas corrientes. Cualquiera que aparque bajo una en verano conoce la otra mitad de aquella decisión: las tipuanas alojan insectos chupadores de savia que llueven una niebla fina y pegajosa sobre lo que haya debajo. Esta está al pie de Montjuïc, a unos pasos de la Font Màgica, echando una copa de 23 metros sobre una plaza que la mayoría de los visitantes cruza camino de otro sitio sin levantar la vista ni una vez. A finales de mayo y en junio se pone de un amarillo anaranjado con flores en forma de guisante, luego las suelta, y durante una semana el pavimento tiene el mismo color que el árbol."
+    },
+    "bcn_021": {
+      "name": "El fresno del Sot de l'Estany",
+      "species": "Fresno de hoja estrecha (Fraxinus angustifolia)",
+      "age_estimate": "fecha de plantación nunca registrada",
+      "access": "Entrada de pago al Jardí Botànic Històric.",
+      "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
+      "story": "Tres de los cuatro árboles que la Generalitat declara monumentales en Barcelona son rarezas extranjeras. Este es un fresno de hoja estrecha, un árbol que crece a la orilla de la mitad de los ríos de España, y les ha ganado a todos en altura. Con 29 metros es el más alto de su especie medido en toda Cataluña según el propio expediente del gobierno catalán, y llegó ahí creciendo dentro de un agujero. El Sot de l'Estany es una cantera abandonada dentro del jardín botánico histórico, excavada en el flanco de Montjuïc, y sus paredes retienen aire fresco y húmedo lo bastante bien como para quedarse hasta cuatro grados por debajo de la temperatura de fuera. Cualquier cosa plantada en el fondo se comporta como si estuviera en un sitio mucho más húmedo y bastante más al norte. Este fresno cogió ese microclima y tiró recto hacia arriba, y ha acabado con un tronco de 2,5 metros bajo una copa de solo 15 metros de diámetro, proporciones de árbol de bosque y no de parque. La Generalitat lo declaró monumental el 2 de abril de 2025 junto a tres vecinos, los cuatro a unos treinta metros unos de otros en el fondo del mismo hoyo. Nadie anotó cuándo se plantó, y nadie le ha contado los anillos."
+    },
+    "bcn_022": {
+      "name": "El arce sicómoro del Sot de l'Estany",
+      "species": "Arce sicómoro (Acer pseudoplatanus)",
+      "age_estimate": "fecha de plantación nunca registrada",
+      "access": "Entrada de pago al Jardí Botànic Històric.",
+      "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
+      "story": "Treinta metros de árbol sobre un tronco de 1,38 metros de perímetro. Esa es la forma de algo que ha pasado la vida entera trepando hacia un trozo de cielo, y es la razón por la que este arce desentona entre los cuatro árboles monumentales de Barcelona. Acer pseudoplatanus es el arce de faena del norte y el centro de Europa, el árbol que alinea las calles de Viena y coloniza cualquier hueco en Gran Bretaña. En Barcelona apenas se sostiene. Los veranos son demasiado largos y demasiado secos, y aquí es tan raro que la Generalitat declaró este ejemplar monumental el 2 de abril de 2025 en parte por ser corriente en otro sitio. Vive en el Sot de l'Estany, una cantera dentro del jardín botánico histórico que conserva el aire fresco como lo hace una bodega, varios grados por debajo de la ladera de encima. Esa es toda la explicación. Coja un árbol del norte, métalo en el único agujero frío y húmedo de una montaña mediterránea, y crece hasta una altura de la que estaría satisfecho en Baviera, sobre un tronco que se quedó delgado porque nunca tuvo motivo para extenderse a lo ancho. Nadie dejó anotado cuándo se plantó."
+    },
+    "bcn_023": {
+      "name": "El pino piñonero de los Jardins del Palau de Pedralbes",
+      "species": "Pino piñonero (Pinus pinea)",
+      "age_estimate": "unos 133 años",
+      "access": "Gratuito, jardín público, abierto a diario en el horario publicado.",
+      "transport": "Palau Reial (Metro L3), unos 3 a 5 min a pie.",
+      "story": "El árbol llegó antes. Este pino piñonero se plantó en 1893 en las tierras de labor de Can Feliu, que más tarde serían la finca Güell, y ya tenía treinta años cuando la propiedad pasó a la ciudad en los años veinte y la casa se convirtió en la residencia barcelonesa de Alfonso XIII. Cuando Nicolau M. Rubió i Tudurí rediseñó los jardines entre 1925 y 1927, montó su plan alrededor del pino y no al revés: está solo en la pradera junto al palacio, al lado de una figura femenina esculpida, sosteniendo él solo el espacio abierto. Mide 24 metros sobre un tronco de tres metros y medio de perímetro, y Barcelona lo catalogó como Árbol de Interés Local en 1993. Lo que ha visto desde ese único punto: una granja convertida en finca, una finca convertida en residencia real, un rey que se marchó en 1931 con la llegada de la Segunda República y no volvió, y un palacio que ha pasado las décadas siguientes como museo. Los pinos piñoneros son los pinos de sombrilla de la costa mediterránea, hechos para estar al descubierto con todo el peso repartido en una copa aplanada, y este ha tenido sitio para hacerlo bien durante 133 años. La mayoría de los árboles de esta ciudad se pasa la vida disputándole la luz a un edificio."
+    },
+    "bcn_024": {
+      "name": "Los cedros del Himalaya del Palau de Pedralbes",
+      "species": "Cedro del Himalaya (Cedrus deodara)",
+      "age_estimate": "unos 123 años",
+      "access": "Gratuito, jardín público, abierto a diario en el horario publicado.",
+      "transport": "Palau Reial (Metro L3), unos 3 a 5 min a pie.",
+      "story": "El registro de arbolado de Barcelona anota esto como un elemento protegido y 23 árboles. Los cedros del Himalaya de los jardines del Palau de Pedralbes se plantaron hacia 1903, y cuando Nicolau M. Rubió i Tudurí rehizo los jardines en los años veinte trabajó rodeándolos: las crónicas de la reforma dicen que respetó un grupo importante de cedros que ya crecía allí, y por eso un jardín proyectado en el siglo XX tiene una masa de coníferas más viejas plantada en medio. El registro le da al grupo una sola coordenada, un solo año de plantación y una cifra de tronco representativa de 3,4 metros, con el más alto llegando a unos 25 metros. Dicho claramente: no hay medición de cuánto se extienden esos 23 árboles. Una fuente sitúa los ejemplares grandes cerca de la entrada del jardín y ahí conviene empezar, pero esto es un grupo y no un tronco único ante el que plantarse, y la distancia entre el primero y el último puede ser mayor de lo que sugiere la palabra bosquete. Cedrus deodara viene del Himalaya occidental, donde crece por encima de los 1.500 metros y se cortó durante siglos para la madera de los templos. Barcelona no le da un invierno digno de ese nombre y crece en consecuencia: guías colgantes, ramas barriendo casi hasta la hierba y suficientes juntos como para que el aire bajo la copa sea claramente más fresco en agosto."
+    },
+    "bcn_025": {
+      "name": "El ciprés de Cartagena de los Jardins del Palau de Pedralbes",
+      "species": "Ciprés de Cartagena (Tetraclinis articulata)",
+      "age_estimate": "unos 103 años",
+      "access": "Gratuito, jardín público, abierto a diario en el horario publicado.",
+      "transport": "Palau Reial (Metro L3), unos 3 a 5 min a pie.",
+      "story": "No hay más que un puñado de estos en los jardines europeos. Tetraclinis articulata, el ciprés de Cartagena o araar, crece de forma silvestre en Marruecos, Túnez, Malta y un reducto relicto del sureste español, y en su tierra es una conífera amenazada, lo que convierte a un ejemplar centenario en un parque de Barcelona en una rareza de verdad y no en una elección ornamental. Se plantó aquí hacia 1923 y se catalogó como Árbol de Interés Local en 1993. Sus medidas dependen de quién las tomó y cuándo. El registro municipal da 14 metros de altura sobre un tronco de 1,2 metros de perímetro; un estudio de flora barcelonesa dedicado a este árbol concreto da 10 metros y una copa más estrecha. Las dos fuentes coinciden en la especie, el año de plantación y la protección, así que la respuesta honesta es que está en algún punto entre ambas cifras y que, en cualquier caso, es más bajo que casi todo lo que lo rodea. De cerca no parece una conífera en absoluto. El follaje es articulado y escamoso, aplanado en ramillas pequeñas, y las piñas son leñosas y de cuatro valvas, más cerca de una pieza de ferretería que de una piña de pino. La resina que suelta la especie es la sandáraca, el barniz estándar de muebles e instrumentos durante siglos. Es el árbol menos llamativo de estos jardines y el primero al que iría un botánico."
+    },
+    "bcn_026": {
+      "name": "Los pinos piñoneros de los Jardins de Torre Girona",
+      "species": "Pino piñonero (Pinus pinea)",
+      "age_estimate": "unos 122 años",
+      "access": "Gratuito, parque urbano público (la gestión pasó de la universidad UPC al Ayuntamiento de Barcelona por un acuerdo de abril de 2019); horario estacional publicado, con verja cerrada de noche.",
+      "transport": "Palau Reial (Metro L3), unos 10 min a pie.",
+      "story": "Un superordenador vive en la capilla junto a la que crecieron estos pinos. Torre Girona se levantó en 1860 como finca de verano de Manuel Girona i Agrafel, banquero y después alcalde de Barcelona; la universidad técnica se quedó con los terrenos un siglo más tarde, construyó a su alrededor el campus norte e instaló la máquina MareNostrum dentro de la capilla desacralizada de la finca, donde está metida en una caja de cristal bajo las bóvedas. Los dos pinos piñoneros son anteriores a todo eso. Se plantaron hacia 1904, la ciudad los cataloga juntos como un solo elemento protegido y miden 21 metros de alto sobre troncos de 3,6 metros de perímetro. Una revista catalana de jardines que recorrió este jardín los llama colosales y les atribuye haber visto más de cien años de historia de la finca, lo que por una vez no es una exageración: estuvieron ahí para el jardín privado, para la universidad, para las obras y para la máquina. Conviene leer con atención el acceso. Esto fue suelo universitario privado hasta que un acuerdo de abril de 2019 traspasó su gestión a la ciudad, y hoy es un parque público. Lo que no está confirmado es el horario exacto de hoy: está publicado, es estacional y las verjas se cierran de noche, así que compruébelo antes de hacer un viaje especial a última hora."
+    },
+    "bcn_027": {
+      "name": "El pino carrasco de los Jardins de Torre Girona",
+      "species": "Pino carrasco (Pinus halepensis)",
+      "age_estimate": "unos 122 años",
+      "access": "Gratuito, parque urbano público (de gestión municipal desde el acuerdo UPC-Ayuntamiento de abril de 2019); horario estacional publicado, con verja cerrada de noche.",
+      "transport": "Palau Reial (Metro L3), unos 10 min a pie.",
+      "story": "Los pinos carrascos son los árboles que vuelven después del fuego, con las piñas abiertas por el calor, colonizando las laderas mediterráneas quemadas más rápido que cualquier otra cosa que crezca en ellas. Este lleva 122 años haciendo lo contrario: estar junto a un estanque ornamental de Pedralbes con agua, sitio y nada con lo que competir, hasta llegar a 23 metros, lo que lo convierte en el más alto de los tres árboles protegidos de los Jardins de Torre Girona. Se plantó hacia 1904 en la finca que el banquero Manuel Girona levantó en 1860, y la ciudad lo catalogó en 1994 con un tronco de 2,9 metros de perímetro. Una revista catalana de jardines describe aquí un Pinus halepensis subiendo la pendiente junto al mirador del estanque, que es exactamente donde lo sitúa la coordenada del registro. La especie es el pino por defecto de esta costa, el de todos los cerros secos entre Barcelona y Provenza, y eso es justo lo que hace que uno viejo merezca la caminata. En monte, un pino carrasco rara vez llega a crecer con su forma completa, porque el fuego, el suelo pobre y la competencia suelen llevárselo antes. La misma advertencia que con sus vecinos: el jardín es público y de gestión municipal desde 2019, pero el horario está publicado, es estacional y las verjas cierran de noche."
+    },
+    "bcn_028": {
+      "name": "El árbol botella de los Jardins de Torre Girona",
+      "species": "Árbol botella (Brachychiton populneus)",
+      "age_estimate": "unos 122 años",
+      "access": "Gratuito, parque urbano público (de gestión municipal desde el acuerdo UPC-Ayuntamiento de abril de 2019); horario estacional publicado, con verja cerrada de noche.",
+      "transport": "Palau Reial (Metro L3), unos 10 min a pie.",
+      "story": "El árbol más raro de estos jardines es el que hay que ir a buscar. Una revista catalana de jardines que recorrió los terrenos de Torre Girona encontró el Brachychiton populneus a medio camino dentro de la parte boscosa, fuera de la ruta evidente, que es una descripción bastante justa de cómo acaba un árbol botella australiano en un parque de Barcelona. Se plantó hacia 1904, mide 22 metros de alto y 2,5 de perímetro, y la ciudad lo catalogó en 1994. El nombre es lo que importa: el tronco se hincha en la base como una botella y almacena agua contra la sequía de una manera que a un ojo europeo le parece ligeramente equivocada, como un árbol dibujado de memoria. En su este de Australia natal la especie es forraje de emergencia, y se tala para el ganado cuando fallan los pastos. Aquí no ha tenido que demostrarlo ni una vez. La finca de alrededor fue la casa de verano de un banquero desde 1860, antes de que la universidad técnica construyera un campus en los terrenos, y por eso el paseo hasta este árbol pasa por delante de edificios de ingeniería. El jardín es de gestión municipal desde un acuerdo de abril de 2019 y está de verdad abierto al público, pero el horario está publicado, es estacional y cierra con verja al anochecer, y el calendario actual no está confirmado, así que una visita tardía es una apuesta."
+    },
+    "bcn_029": {
+      "name": "El plátano de los Jardins de la Vil·la Amèlia",
+      "species": "Plátano de sombra (Platanus x acerifolia)",
+      "age_estimate": "unos 106 años",
+      "access": "Gratuito, jardín público, accesible en silla de ruedas.",
+      "transport": "Reina Elisenda (FGC), unos 8 a 10 min a pie.",
+      "story": "Veintiséis metros de alto y veintiséis de ancho, que es el aspecto que tiene un plátano cuando nunca ha tenido que competir por nada. Se plantó en 1920 en lo que entonces eran los terrenos privados de la Quinta Amèlia, la finca que el banquero Ignasi Girona construyó y bautizó por su mujer, Amèlia de Vilanova, y desde entonces ha tenido césped abierto a su alrededor. Un apunte sobre su edad, porque las descripciones del jardín se equivocan en esto. Varias siguen llamándolo un plátano de casi 90 años, una cifra copiada hacia delante desde el momento en que se escribió por primera vez. El año de plantación del registro municipal le da 106. El jardín cambió mucho más que el árbol. Barcelona se quedó la finca y la casa señorial cayó; las fuentes no coinciden en el año, unas dan 1930 y otras 1969, y cuál es la correcta no está resuelto. El trazado por el que se pasea hoy es de una reforma de 1970 de Joaquim Casamor, director de parques y jardines de la ciudad, que conservó los árboles maduros y levantó un jardín público alrededor de ellos. Una dríade de bronce, una ninfa de los árboles, obra de Ricard Sala, está en el estanque central, lo que o es casualidad o es la broma discreta de alguien sobre para qué sirve realmente el jardín."
+    },
+    "bcn_030": {
+      "name": "El eucalipto blanco de los Jardins de la Vil·la Amèlia",
+      "species": "Eucalipto blanco (Eucalyptus globulus)",
+      "age_estimate": "unos 122 años",
+      "access": "Gratuito, jardín público, accesible en silla de ruedas.",
+      "transport": "Reina Elisenda (FGC), unos 8 a 10 min a pie.",
+      "story": "Un tronco de 5,2 metros de perímetro en un árbol plantado en 1904 dice lo que hace un eucalipto blanco cuando nada lo frena. Eucalyptus globulus es originario de Tasmania y de una franja del sur de Victoria, y se plantó por todo el Mediterráneo a partir del siglo XIX por una razón: la velocidad. Nada más daba madera y sombra tan deprisa. A casi todos los cortaron mucho antes de que envejecieran. A este lo dejaron en paz, y 122 años después tiene el tronco más grueso de los árboles protegidos de los Jardins de la Vil·la Amèlia con solo 18 metros de altura, ancho antes que alto. La corteza es lo que hay que mirar. Los eucaliptos blancos se desprenden en cintas largas durante el verano y dejan debajo una superficie gris blanquecina y lisa que parece pulida, y las tiras cuelgan del tronco semanas antes de caer. Estruje una hoja caída y huele a jarabe para la tos, lo que no es casualidad: este es el eucalipto que da nombre al aceite. Lleva aquí desde que el jardín era la Quinta Amèlia privada, y ha pasado por la expropiación de la finca, el derribo de la casa señorial y la reforma de 1970 que convirtió los terrenos en parque público. Barcelona lo catalogó en 1994, y es de los pocos árboles de la ciudad llegados del otro extremo del mundo que han superado en tamaño a los de casa."
+    },
+    "bcn_031": {
+      "name": "El pimentero del Perú de los Jardins de la Vil·la Amèlia",
+      "species": "Pimentero del Perú (Schinus molle)",
+      "age_estimate": "unos 103 años",
+      "access": "Gratuito, jardín público, accesible en silla de ruedas.",
+      "transport": "Reina Elisenda (FGC), unos 8 a 10 min a pie.",
+      "story": "Las bayas rosas de un molinillo de pimienta caro no son pimienta, y este es el árbol del que salen. Schinus molle está en la familia del anacardo, no tiene parentesco con la pimienta negra, y sus racimos colgantes de bayas rosas fueron el sustituto que acabó llevando el nombre del original. Este se plantó hacia 1923 y Barcelona lo catalogó en 1993; mide 12 metros de alto con un tronco de 2,7 metros de perímetro. Conviene ser claro con lo que aquí está seguro. El catálogo municipal y una descripción publicada del jardín confirman los dos la especie y el árbol, pero el año de plantación se apoya solo en el registro, sin nada independiente con lo que contrastarlo, así que esos 103 años son la cifra del registro y no un dato corroborado. Es el árbol más blando de los Jardins de la Vil·la Amèlia. El pimentero del Perú cuelga el follaje en ramillas finas y lloronas que se mueven con cualquier soplo de aire, una física completamente distinta de la de los plátanos y los pinos de alrededor, y los racimos de bayas se ponen de un rosa polvoriento en otoño y aguantan hasta el invierno. La especie llegó a España desde los Andes con el comercio colonial en el siglo XVI, lo que la convierte en un forastero más en un jardín que un banquero construyó para su mujer y que la ciudad abrió después a todo el mundo."
+    },
+    "bcn_032": {
+      "name": "Las palmeras canarias de los Jardins de la Vil·la Amèlia",
+      "species": "Palmera canaria (Phoenix canariensis)",
+      "age_estimate": "unos 132 años",
+      "access": "Gratuito, jardín público, accesible en silla de ruedas.",
+      "transport": "Reina Elisenda (FGC), unos 8 a 10 min a pie.",
+      "story": "El registro municipal cuenta catorce. El cronista del propio jardín cuenta quince. O se ha perdido una palmera desde que se escribió el catálogo, o un árbol de la fila es otra cosa, y cuál de las dos cifras vale no está resuelto. Lo que no está en discusión: una doble hilera de palmeras canarias, plantadas hacia 1894, flanqueando la avenida principal de los Jardins de la Vil·la Amèlia como una columnata con un camino por el medio. Miden 19 metros de alto, unos 2,3 metros de perímetro de tronco, y Barcelona las catalogó juntas como un solo elemento protegido en 1994. Ponerse en un extremo y mirar avenida abajo es toda la gracia que tienen: una Phoenix canariensis es una palmera, pero catorce de 130 años son arquitectura. La especie viene de las islas Canarias y ha tenido un siglo duro en la península, donde el picudo rojo ha matado palmeras datileras en gran número desde que llegó, lo que hace que una avenida intacta de ejemplares centenarios sea menos corriente de lo que parece. Estas se plantaron cuando el jardín era todavía la Quinta Amèlia privada. Sobrevivieron a la expropiación de la finca y al derribo de su casa señorial, y hoy bordean un camino por el que puede pasear cualquiera gratis."
+    },
+    "bcn_033": {
+      "name": "El lentisco del Hort de l'Avi",
+      "species": "Lentisco (Pistacia lentiscus)",
+      "age_estimate": "sin documentar; el registro no da año de plantación",
+      "access": "Gratuito. Está justo en un camino público de acceso a la franja boscosa de entrada libre del Park Güell (la entrada trasera por el carrer de la Farigola y el carrer del Torrent del Remei), aparte tanto de la Zona Monumental de pago como del propio huerto del Hort de l'Avi, que es un huerto comunitario vallado para vecinos mayores de 65 años y no es donde está el árbol.",
+      "transport": "Vallcarca o Lesseps (Metro L3), unos 15 a 20 min a pie cuesta arriba por el carrer de la Farigola.",
+      "story": "Un lentisco debería quedarse en mata. Pistacia lentiscus crece bajo y matorral por todo el Mediterráneo, de esas plantas a las que nadie mira dos veces, y a este nadie le pasó el aviso. Dos de sus ramas principales salen casi horizontales, más gruesas que una muñeca, una sosteniéndose en el aire y la otra apoyada sin más en el suelo, y entre las dos extienden una copa de 20 a 25 metros cuadrados desde una base que no es más ancha que una puerta. Eso es el porte de un arbusto a escala de árbol, que es presumiblemente por lo que Barcelona lo catalogó en 2013 como árbol de interés local y no como jardinería. Está en la entrada trasera de la ladera boscosa gratuita del Park Güell, en el camino que entra desde el carrer de la Farigola, justo al lado del Hort de l'Avi. Ese huerto abrió en 1986, después de que un grupo de vecinos mayores de Gràcia pidiera a la ciudad los terrenos de la antigua casa del guarda del parque, y todavía hoy lo trabajan vecinos de más de 65 años por sorteo. El lentisco crece en el camino de acceso compartido, no dentro de las parcelas valladas, así que se llega sin permiso. Nadie lo ha datado: ninguna fuente registra un año de plantación y ningún dendrocronólogo lo ha medido. Está a unos 500 metros del acebuche del Park Güell."
+    },
+    "bcn_034": {
+      "name": "El alcanforero del Jardí Botànic Històric",
+      "species": "Alcanforero (Cinnamomum camphora)",
+      "age_estimate": "unos 93 años",
+      "access": "Entrada de pago al Jardí Botànic Històric, gratuito ciertos días de la semana.",
+      "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
+      "story": "Este alcanforero es casi el doble de ancho que de alto. El registro municipal le da una copa de 27 metros de diámetro y una altura de solo 15, las proporciones de un árbol que nunca tuvo que competir por la luz y se extendió a lo ancho, con un tronco de 4,4 metros de perímetro. El alcanfor es a lo que huele su madera al cortarla, y durante casi todo el siglo XX fue de lo que estaban hechas las bolas de naftalina y las pomadas para el pecho, destilado de virutas de Cinnamomum camphora embarcadas desde Taiwán y Japón hasta que los químicos aprendieron a fabricarlo de forma sintética. El árbol de Barcelona se plantó en 1933 en el Sector de la Masia del viejo jardín botánico de Montjuïc, una colección trazada sobre un terreno rehecho para la Exposición Internacional de 1929. Desde ahí ha pasado por la guerra que estalló tres años después, por las décadas siguientes en las que el jardín se dejó medio asilvestrar y por la apertura del nuevo jardín botánico, más arriba en la ladera, en 1999, que es lo que convirtió a este en el jardín histórico y no simplemente en el jardín. La ciudad lo catalogó como Árbol de Interés Local en 1993. El suelo pertenece al museo de ciencias y no al ayuntamiento, cuestión de papeleo y no de una verja cerrada."
+    },
+    "bcn_035": {
+      "name": "La falsa acacia de la Ciutadella",
+      "species": "Falsa acacia (Robinia pseudoacacia)",
+      "age_estimate": "sin datar; la columna de edad del registro pone '100 anys' en lugar de un año",
+      "access": "Gratuito, parque público.",
+      "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 a 8 min a pie.",
+      "story": "Un tronco de 4,3 metros en un árbol de solo 12 de alto convierte a esta en la falsa acacia más recia de Barcelona y la única que la ciudad ha puesto nunca en su registro. Las falsas acacias suelen subir finas y rápidas y luego caerse. Esta tiró a lo ancho y se quedó, y crece en el parterre entre el Passeig de Joaquim Renart y la Cascada, la fuente monumental en la que trabajó un Gaudí joven como ayudante de estudiante. Qué edad tiene no lo ha establecido nadie. La columna de edad del registro guarda las palabras '100 anys' donde debería haber un año de plantación, que es la estimación de alguien escrita en la casilla equivocada y no una fecha comprobada, y el árbol solo se catalogó en 2024. Lo que sí es seguro es el suelo que pisa. El parque es obra de 1888, trazado para la Exposición Universal sobre el solar despejado de la ciudadela borbónica que Barcelona pasó 150 años detestando y acabó derribando. La especie fue uno de los primeros árboles americanos en llegar a Europa, plantado en París hacia 1601 por Jean Robin, el jardinero real que le da nombre. A finales de primavera la copa se llena de flores blancas de guisante, lo bastante pesadas para colgar y lo bastante fuertes para olerlas antes de haber encontrado el árbol."
+    },
+    "bcn_036": {
+      "name": "El plátano de la Ciutadella",
+      "species": "Plátano de sombra (Platanus x acerifolia)",
+      "age_estimate": "fecha de plantación nunca registrada",
+      "access": "Gratuito, parque público.",
+      "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 a 8 min a pie.",
+      "story": "El registro municipal mete 273 plátanos bajo una sola ficha para las Rambles. Este es uno de los pocos que catalogó por separado. El plátano es el árbol por defecto de las calles de Barcelona, plantado a cientos y podado a nudillos cada invierno, que es exactamente lo que hace que merezca la pena caminar hasta uno sin podar. Este está entre el lago de la Ciutadella y la valla del zoo, con un tronco de 3,6 metros bajo una copa de 24 metros de diámetro y 25 de altura, casi tan ancho como alto. Esa forma es sencillamente lo que hace un plátano cuando nadie interviene. Su edad es honestamente desconocida: el registro tomó todas las medidas y dejó en blanco el año de plantación, ninguna otra fuente lo fecha, y entró en la lista en 2021 solo por su tamaño. El parque de alrededor abrió en 1888 para la Exposición Universal y la mayoría de sus árboles grandes son de aquellas obras o de las décadas inmediatas, lo que sitúa a este por encima del siglo sin demostrar nada. La especie es un accidente de partida, un híbrido del plátano americano y el oriental que apareció en un jardín del siglo XVII y demostró aguantar el hollín, la sequía y las raíces compactadas mejor que cualquiera de sus dos padres."
+    },
+    "bcn_037": {
+      "name": "El pitosporo de la Ciutadella",
+      "species": "Pitosporo (Pittosporum tobira)",
+      "age_estimate": "sin documentar; el registro no da año de plantación",
+      "access": "Gratuito, parque público.",
+      "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 a 8 min a pie.",
+      "story": "Esto es un seto que se escapó. Pittosporum tobira es el arbusto recortado de rigor en los aparcamientos y las entradas de hotel del Mediterráneo, mantenido casi siempre por debajo de la cintura y al que casi nunca se le deja un tronco único. Este tiene un tronco de 1,55 metros de perímetro y una copa de seis metros de ancho, y por eso la ciudad lo añadió en 2017 al registro de árboles de interés local, el único de su especie en esa lista. El registro ni siquiera le anota una altura, una omisión que dice bastante de lo inesperada que es la ficha. Crece en el Parc de la Ciutadella, delante de la Glorieta de la Transsexual Sonia, el viejo templete de música del parque, que la ciudad rebautizó por una mujer asesinada allí y que hoy es uno de los memoriales de Barcelona contra la violencia hacia las personas trans. El árbol es la parte callada de ese rincón. En primavera lleva flores pequeñas de color crema que huelen a azahar con fuerza suficiente para llegar al camino, de donde viene el otro nombre de la planta, falso naranjo. Nadie lo ha datado. El pitosporo engorda tan despacio que un tronco de este tamaño sugiere décadas antes que años, pero el registro no da año de plantación y ninguna segunda fuente lo aporta."
+    },
+    "bcn_038": {
+      "name": "La araucaria de Norfolk de la Casa de la Misericòrdia",
+      "species": "Araucaria de Norfolk (Araucaria heterophylla)",
+      "age_estimate": "fecha de plantación nunca registrada",
+      "access": "Gratuito entrar al patio desde el carrer d'Elisabets o a través de la librería La Central; la cafetería sí se paga.",
+      "transport": "Catalunya (Metro L1/L3), 6 min a pie.",
+      "story": "Un árbol de una isla del Pacífico de ocho kilómetros de largo se levanta 27 metros sobre uno de los barrios más densamente construidos de Europa. La araucaria de Norfolk del patio de la Casa de la Misericòrdia es lo más alto de esta parte del Raval, visible por encima de los tejados mucho antes de encontrar la puerta del carrer d'Elisabets. Su tronco es de unos modestos 1,5 metros de perímetro, porque la especie crece como un mástil y no como un barril, sacando verticilos de ramas en pisos ordenados y tirando recta hacia arriba. Eso era precisamente el atractivo cuando Cook llegó a la isla de Norfolk en 1774 y describió aquellos árboles como una reserva de mástiles para la Marina británica. La madera resultó demasiado quebradiza y el plan quedó en nada, que es más o menos como la especie acabó de ornamental, plantada en ciudades costeras cálidas desde Sídney hasta aquí. El patio en el que está fue casa de expósitos y orfanato, y las cuatro palmeras de al lado se plantaron hacia 1904. La araucaria no tiene ninguna fecha de plantación registrada y entró en el registro municipal en 2016 por su tamaño. El patio es hoy un paso público con una librería y una cafetería dentro, lo que convierte a este en uno de los árboles grandes más fáciles de visitar de Barcelona."
+    },
+    "bcn_039": {
+      "name": "El plátano oriental de la Plaça de la Universitat",
+      "species": "Plátano oriental (Platanus orientalis)",
+      "age_estimate": "unos 93 años",
+      "access": "Gratuito, plaza pública.",
+      "transport": "Universitat (Metro L1/L2), en la propia plaza.",
+      "story": "Todos los plátanos de las calles de alrededor son híbridos. Este es uno de los padres. El registro municipal lleva once fichas distintas de plátanos de sombra y exactamente una de Platanus orientalis, la especie oriental que se cruzó con el plátano americano en algún jardín del siglo XVII para dar el árbol que hoy alinea casi todo el Eixample. La diferencia se ve en la hoja, cortada mucho más profundamente en lóbulos estrechos, y en el porte, más bajo y más suelto que el del híbrido. El registro lo fecha en 1933 y lo sitúa en 18 metros con un tronco de dos, bajo una copa casi tan ancha como alto es el árbol. Se plantó durante la Segunda República, tres años antes de la guerra, en la plaza que hay delante del edificio principal de la universidad, y ha pasado la vida entera en uno de los cruces más transitados de la ciudad: primero tranvías, luego tráfico, luego las manifestaciones que una plaza universitaria acaba reuniendo inevitablemente. La especie es el plátano de la literatura griega y persa, el árbol que Heródoto hace que Jerjes se detenga a adornar con oro camino de occidente. A este le tocan gases de escape y turno de sombra, y los lleva más o menos igual de bien."
+    },
+    "bcn_040": {
+      "name": "El aguacate de la Plaça de Can Bruixa",
+      "species": "Aguacate (Persea americana)",
+      "age_estimate": "unos 81 años",
+      "access": "Gratuito, plaza pública.",
+      "transport": "Les Corts (Metro L3), 6 min a pie.",
+      "story": "Hay un aguacate de 17 metros creciendo en una plaza de Les Corts. Persea americana es una especie centroamericana que Europa importa por contenedores y casi nunca planta, porque quiere calor, agua y nada de heladas, y porque un árbol nacido de un hueso tarda una década o más en dar fruto y luego suele decepcionar a quien lo plantó. Este se plantó en 1945 y no se ha movido desde entonces, en la Plaça de Can Bruixa, en un distrito que Barcelona había anexionado de su propio pueblo apenas en 1897. El tronco es escaso, 80 centímetros de perímetro, y la altura es la parte sorprendente: un aguacate al que nadie poda para recolectar sencillamente sube, que es la razón por la que las plantaciones comerciales mantienen los suyos bajos y anchos. La ciudad lo catalogó como Árbol de Interés Local en 2003. Está a unos 500 metros de la magnolia de los antiguos Jardins de la Maternitat, lo que convierte la pareja en una media hora cómoda a pie por una parte de la ciudad a la que casi ningún visitante llega. Que cuaje fruto un año determinado depende del invierno que acabe de pasar, y cuando lo hace la cosecha queda muy por encima de la cabeza y ahí se queda."
+    },
+    "bcn_041": {
+      "name": "El pimentero del carrer Joaquim Blume",
+      "species": "Pimentero de hoja larga (Schinus longifolia)",
+      "age_estimate": "unos 110 años",
+      "access": "Gratuito, calle pública.",
+      "transport": "Poble Sec (Metro L3), 7 min a pie.",
+      "story": "Nadie acaba de ponerse de acuerdo sobre qué es este árbol. El registro municipal lo archiva como Schinus longifolia, una especie argentina y uruguaya. Quienes lo cartografiaron en OpenStreetMap lo apuntan como Schinus polygama, el huingán chileno, y el nombre catalán que el propio registro usa para el árbol, huingan, pertenece a este segundo. Los dos son parientes cercanos de la familia del anacardo, ambos árboles sudamericanos pequeños, duros y resistentes a la sequía, y separarlos exige mirar las hojas y las espinas, no la etiqueta. Así que aquí la especie sigue siendo una pregunta abierta. La fecha no. Se plantó en 1916, lo que lo hace más viejo que casi toda la calle que lo rodea y uno de los árboles más antiguos del Poble-sec, y la ciudad lo catalogó en 1996. Es una cosa pequeña para lo que se estila en esta lista: ocho metros de alto, un tronco de 1,6 metros y una copa más o menos tan ancha como alto es el árbol, al pie de Montjuïc. La montaña de encima se levantó y se rehízo dos veces durante su vida, para la Exposición Internacional de 1929 y otra vez para los Juegos de 1992, y la calle conservó su árbol en las dos. El género es el que da las bayas rosas de pimienta, aunque esta no es la especie del molinillo."
+    },
+    "bcn_042": {
+      "name": "El naranjo de los osages del carrer Maria Montessori",
+      "species": "Naranjo de los osages (Maclura pomifera)",
+      "age_estimate": "unos 78 años",
+      "access": "Gratuito, calle pública.",
+      "transport": "Poble Sec (Metro L3), 8 min a pie.",
+      "story": "Antes del alambre de espino, este árbol era la valla. El naranjo de los osages crece denso, espinoso y rápido, y durante la década de 1850 los granjeros americanos lo plantaron en setos por los estados de la pradera para levantar una barrera que el ganado no atravesara: alta como un caballo, fuerte como un toro y cerrada como para un cerdo, según decía el reclamo de venta. El alambre de espino llegó en los años setenta del siglo XIX y liquidó el negocio en una década, momento en el que la especie ya había viajado a Europa como curiosidad y había sido ignorada en general. Barcelona tiene dos en su registro y este es el más joven, plantado en 1948 en el carrer Maria Montessori, bajo Montjuïc, con un tronco de 1,4 metros, 12 metros de altura y una copa de 15 metros de diámetro, más ancha que alto es el árbol. Su homólogo del Parc de la Ciutadella se plantó 35 años antes y es el más grueso; este tiene mejor extensión. La ciudad lo catalogó en 1998. Lo que comparten los dos es el fruto, una esfera verde y pesada del tamaño de un pomelo con la superficie como un cerebro plegado, que cae en otoño y no se lo come nada de lo que existe hoy. Está a unos minutos a pie del pimentero del carrer Joaquim Blume."
+    },
+    "bcn_043": {
+      "name": "El castaño de Indias de la Plaça Carles Buïgas",
+      "species": "Castaño de Indias (Aesculus hippocastanum)",
+      "age_estimate": "unos 89 años",
+      "access": "Gratuito, plaza pública.",
+      "transport": "Espanya (Metro L1/L3), 8 min a pie subiendo por la Avinguda Maria Cristina.",
+      "story": "El registro de árboles de interés local de Barcelona pasa de las doscientas fichas y contiene exactamente un castaño de Indias. Es este, y la fecha que lleva es 1937, que no era un buen año para plantar nada en esta ciudad. Los bombardeos aéreos sobre Barcelona se sucedieron aquel año y el siguiente, y la montaña justo encima de la plaza tenía posiciones antiaéreas. El árbol se plantó igualmente y hoy mide 20 metros de alto con un tronco de 1,9 metros de perímetro, un tamaño decente para una especie que en realidad no pinta nada en esta latitud. Aesculus hippocastanum viene de unos pocos valles de montaña de los Balcanes, quiere veranos frescos y húmedos y tiende a enfurruñarse en las ciudades mediterráneas, con las hojas pardas por los bordes en agosto si el año viene duro. Este lleva 89 temporadas aguantándolo. Comparte la Plaça de Carles Buïgas con una tipuana que también está en el registro, así que los dos son una parada y no dos, en la subida desde Espanya hacia los jardines de Montjuïc. Las castañas son la razón por la que el árbol viajó tan lejos de su área natural y por la que generaciones de niños lo conocían por su nombre: brillantes, inútiles y, durante un rato, el objeto más valioso de un patio de colegio."
+    },
+    "bcn_044": {
+      "name": "El azufaifo de los Jardins Joan Maragall",
+      "species": "Azufaifo (Ziziphus jujuba)",
+      "age_estimate": "unos 68 años",
+      "access": "Gratuito, pero los jardines solo abren los fines de semana. Consulte el horario actual antes de ir.",
+      "transport": "Espanya (Metro L1/L3), 15 min a pie subiendo por Montjuïc, o bus 55 hasta el Estadi Olímpic.",
+      "story": "Este jardín abre dos días por semana, que es casi toda la razón por la que casi nadie ha visto el árbol que hay dentro. Los Jardins Joan Maragall rodean el Palauet Albéniz, un pequeño pabellón neoclásico construido para la Exposición Internacional de 1929 y conservado desde entonces como la residencia que la familia real española usa cuando está en Barcelona. Al público se le deja entrar los fines de semana. El azufaifo que hay allí se plantó en 1958, llega a 10 metros con un tronco de 1,6 y una copa de 12 metros de diámetro, y se catalogó como árbol de interés local en 1998. Ziziphus jujuba lleva unos cuatro mil años cultivándose en China, lo que lo convierte en uno de los frutales más antiguos de la tierra, y llegó al Mediterráneo lo bastante pronto como para que los romanos ya lo cultivaran. El fruto es del tamaño de una aceituna y pasa del verde a un rojo pardo oscuro. Fresco sabe a manzana algo harinosa; seco y arrugado sabe a dátil, de donde salió su nombre inglés de dátil chino. Es un árbol espinoso, lento y obstinado que crece en suelo pobre y seco, y aquí está plantado como puro ornamento. Compruebe los días de apertura: entre semana la verja es lo más cerca que se llega."
+    },
+    "bcn_045": {
+      "name": "El ginkgo de los Jardins de Mossèn Cinto Verdaguer",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "unos 68 años",
+      "access": "Gratuito, jardín público, abierto a diario.",
+      "transport": "Paral·lel (Metro L2/L3) y después el funicular de Montjuïc, 5 min a pie.",
+      "story": "El ginkgo no tiene parientes vivos. No es un género raro dentro de una familia grande: el orden entero al que pertenece se extinguió salvo por esta única especie, y las hojas fósiles de hace 200 millones de años se parecen tanto a las actuales que un botánico las empareja a ojo. Sobrevivió en un puñado de arboledas de templos chinos y de allí lo sacaron primero los monjes y después los coleccionistas europeos. El de Barcelona es un ejemplar joven, plantado en 1958 en los Jardins de Mossèn Cinto Verdaguer, en la ladera de Montjuïc, y hoy mide 17 metros de alto con una copa casi igual de ancha y un tronco de 1,4 metros de perímetro. El jardín en el que está es el jardín de bulbos de la ciudad, aterrazado y conocido sobre todo por sus tulipanes y narcisos en primavera y sus nenúfares en verano, lo que le deja al ginkgo el otoño entero para él solo. Ese es el mes por el que merece la pena venir. Las hojas pasan del verde a un amarillo mantequilla plano en unas dos semanas y luego caen casi todas de golpe, a menudo en un solo día sin viento, dejando en el suelo un círculo dorado que es la gracia entera del árbol. La ciudad lo catalogó en 1998."
+    },
+    "bcn_046": {
+      "name": "El árbol del amor de la Plaça Joanic",
+      "species": "Árbol del amor (Cercis siliquastrum)",
+      "age_estimate": "unos 70 años",
+      "access": "Gratuito, plaza pública.",
+      "transport": "Joanic (Metro L4), en la propia plaza.",
+      "story": "Este árbol es el doble de ancho que de alto. Cinco metros de altura, una copa de diez metros de diámetro y un tronco de 1,8 metros de perímetro, las proporciones de algo que decidió pronto extenderse en lugar de trepar. Es un Cercis siliquastrum, y el nombre que lleva en el registro municipal, arbre de l'amor, árbol del amor, es bastante más amable que el otro que arrastra la especie, árbol de Judas. Ese segundo nombre viene de la historia de que Judas se ahorcó de un Cercis y sus flores blancas se volvieron rojas de vergüenza; la explicación más probable es que árbol de Judea se oyera mal en algún punto del camino, siendo Judea un sitio donde crece de verdad en estado silvestre. Lo que el árbol hace en abril justifica los dos nombres. Las flores salen directamente de la corteza, de la madera vieja de las ramas y del propio tronco, antes de que se haya abierto una sola hoja, así que el esqueleto entero se pone magenta durante quince días y después verdea como si no hubiera pasado nada. Este se plantó en 1956 en la Plaça de Joanic y se catalogó en 1996. Está a unos 330 metros de la encina del carrer de l'Encarnació, el árbol medido más antiguo de Barcelona, lo que convierte a los dos en un paseo corto y poco común de bueno por el centro de Gràcia."
+    },
+    "bcn_047": {
+      "name": "El roble australiano de Drets Humans",
+      "species": "Roble australiano (Grevillea robusta)",
+      "age_estimate": "",
+      "access": "Gratuito, jardín público, sin verja.",
+      "transport": "Zona Franca (Metro L2), unos 10 min a pie.",
+      "story": "Donde hoy crece este roble australiano había antes una fábrica de Philips, y el jardín que lo rodea conserva la huella de esa historia: parterres para los trabajadores trazados en los años 60, rediseñados décadas después como un parque público dedicado a los derechos humanos, con 30 paneles iluminados que citan la Declaración Universal artículo por artículo.\n\nEl árbol es anterior a todo eso. Barcelona lo catalogó como Árbol de Interés Local en 2011, y el registro municipal le da un perímetro de 4,1 metros y una altura de 32, entre los robles sedosos más grandes registrados fuera de Australia. Una medición independiente de 2017 encontró un tronco bastante más estrecho, 2,4 metros, lo que o bien son seis años de crecimiento inusualmente vigoroso, o dos formas distintas de medir el mismo árbol. Aquí se recogen las dos cifras en vez de elegir una.\n\nGrevillea robusta es originario de las selvas subtropicales del este de Australia, cultivado en todo el mundo como ornamental y, más prosaicamente, como árbol nodriza en plantaciones de café. Este no cuida de nada. Está solo, en un jardín público construido sobre un terreno que una fábrica usó antes para otra cosa completamente distinta."
+    },
+    "bcn_048": {
+      "name": "El almez de los Jardins dels Drets Humans",
+      "species": "Almez (Celtis australis)",
+      "age_estimate": "",
+      "access": "Gratuito, jardín público, sin verja.",
+      "transport": "Zona Franca (Metro L2), unos 10 min a pie.",
+      "story": "Barcelona protegió doce árboles de la ciudad de una sola vez en mayo de 2024, y este almez de los Jardins dels Drets Humans fue uno de ellos, catalogado por su tamaño más que por su edad: 2,9 metros de perímetro y una copa de 20 metros, lo bastante ancha como para dar sombra a un buen tramo del jardín.\n\nComparte el jardín con un vecino mucho más grande, un roble australiano a unos 130 metros, y entre los dos dan al jardín de los Derechos Humanos dos árboles catalogados donde la mayoría de parques de Barcelona no tiene ninguno. El jardín en sí es más joven de lo que aparenta cualquiera de los dos árboles: abrió al público solo en 2007, en un terreno que había pertenecido a la fábrica de Philips desde los años 60, cuando una paisajista de la propia empresa trazó los jardines para que los trabajadores pudieran salir en los descansos.\n\nCeltis australis es uno de los árboles de calle más comunes del Mediterráneo, resistente a los veranos calurosos y secos de Barcelona, y apreciado desde antiguo por una madera que se dobla sin partirse, usada tradicionalmente para bastones y mangos de herramientas. De este no se conserva fecha de plantación. Si la sabe, en los registros del jardín no consta."
+    },
+    "bcn_049": {
+      "name": "El árbol del coral costero de Montjuïc",
+      "species": "Árbol del coral costero (Erythrina caffra)",
+      "age_estimate": "",
+      "access": "Gratuito, jardín público, sin verja, abierto a diario.",
+      "transport": "Teleférico de Montjuïc (estación Miramar), unos 5 min a pie; o autobús hasta Avinguda Miramar.",
+      "story": "El mayor jardín de cactus de Barcelona tiene un árbol que no es ningún cactus: un árbol del coral del sur de África, de 3 metros de perímetro y una copa que se abre 20 metros, ancha como para dar sombra ella sola a un buen tramo de las seis hectáreas del jardín.\n\nErythrina caffra florece antes de echar hoja, ramas desnudas que estallan en espigas gruesas de color naranja rojizo, un espectáculo por el que se planta en jardines de todo el mundo. Barcelona incorporó este ejemplar a su catálogo de árboles de interés local de una sola vez con otros once, en mayo de 2024, protegido por su tamaño y no por ninguna edad conocida. Nadie lo ha datado.\n\nEl jardín que lo rodea abrió en 1970 en la ladera de Montjuïc que mira al mar, dedicado al poeta mallorquín Miquel Costa i Llobera y construido específicamente para mostrar cactus y plantas suculentas de las regiones áridas del mundo, más de 800 especies en terrazas que bajan escalonadas hacia el puerto. El árbol del coral destaca precisamente porque no encaja en ese tema, una importación africana de hoja ancha en un jardín por lo demás dedicado a las espinas. Entrada gratuita, sin verja, con una de las mejores vistas sobre el puerto de Barcelona de propina."
+    },
+    "bcn_050": {
+      "name": "La yuca de los Jardins de Mossèn Costa i Llobera",
+      "species": "Yuca (Yucca filifera)",
+      "age_estimate": "",
+      "access": "Gratuito, jardín público, sin verja, abierto a diario.",
+      "transport": "Teleférico de Montjuïc (estación Miramar), unos 5 min a pie; o autobús hasta Avinguda Miramar.",
+      "story": "La mayoría de quien cultiva una yuca en su jardín tiene, como mucho, algo de un par de metros de alto. La yuca de Barcelona, en el camino junto al mar, bajo las escaleras que suben a Miramar en Montjuïc, mide 12 metros de altura con un tronco de 1,6 metros de perímetro, un ejemplar de verdad arbóreo de una planta que casi todo el mundo imagina del tamaño de un arbusto.\n\nYucca filifera procede de las altiplanicies desérticas del centro de México, donde los ejemplares silvestres se ramifican con la edad en formas de candelabro y pueden sobrevivir muchas veces más que sus primas de jardín. Barcelona catalogó este ejemplar como árbol de interés local solo en 2024, sin fecha de plantación registrada y sin más historia que sus propias medidas.\n\nCrece a poca distancia de un vecino igual de infrecuente, un árbol del coral africano en los jardines de cactus de más arriba, en un tramo de camino construido justamente para mostrar plantas que no tendrían por qué sobrevivir cómodamente en una ladera mediterránea. Nadie ha confirmado la edad real de este ejemplar, ni cuándo se plantó. Si la sabe, el catálogo municipal no la recoge."
+    },
+    "bcn_051": {
+      "name": "El aguacate del Teatre Lliure",
+      "species": "Aguacate (Persea americana)",
+      "age_estimate": "unos 80 años",
+      "access": "Gratuito, plaza pública frente al teatro, sin verja.",
+      "transport": "Poble Sec (Metro L3), unos 8 min a pie cuesta arriba.",
+      "story": "Un aguacate no suele figurar en ninguna lista de árboles urbanos destacables, pero Barcelona catalogó este en 1996, y con unos 80 años y 13 metros de altura ha sobrevivido a todos los usos que ha tenido el edificio de al lado. Ese edificio abrió como Palau de l'Agricultura para la Exposición Internacional de 1929, pasó después décadas como mercado central de flores, quedó vacío durante años, y reabrió en 2001 como el Teatre Lliure. El árbol, plantado hacia 1946 en algún punto de ese hueco entre pabellón de exposición y mercado de flores, es 55 años más viejo que el teatro.\n\nPersea americana es originario del centro de México y se cultiva normalmente por su fruto, no por su sombra, lo que hace inusual un ejemplar de este tamaño en una ciudad europea: 1,6 metros de perímetro con una copa de 15 metros, mucho más de lo que la mayoría imagina al oír aguacate. Está en la Plaça Margarida Xirgu, frente a la entrada del teatro, y se puede pasar por delante sin pagar entrada, haya función esa noche o no.\n\nNadie ha registrado si todavía da fruto."
+    },
+    "bcn_052": {
+      "name": "El árbol de las pagodas de Poble-sec",
+      "species": "Árbol de las pagodas (Styphnolobium japonicum)",
+      "age_estimate": "",
+      "access": "Gratuito, calle pública, sin verja.",
+      "transport": "Poble Sec (Metro L3), unos 10 min a pie.",
+      "story": "El árbol de las pagodas japonés no es japonés. Styphnolobium japonicum es originario de China, donde se ha plantado durante siglos junto a templos budistas y taoístas, y llegó a Europa con un nombre que se quedó mucho después de que los botánicos corrigieran el error. El ejemplar de Barcelona en la Carrer de la Guàrdia Urbana, a poca distancia del Teatre Grec de Montjuïc, mide 2,3 metros de perímetro y 20 de altura, incorporado al catálogo municipal de árboles de interés local en 2024.\n\nSu edad figura oficialmente como en estudio, lo cual es sincero y no evasivo: la especie puede vivir siglos en las condiciones adecuadas, pero nadie ha datado este ejemplar en concreto, ni por anillos ni por ningún otro método. Lo único registrado es el tamaño, suficiente por sí solo para ganarse la protección.\n\nEl árbol florece a finales de verano, racimos blanco crema que son uno de los pocos estallidos de color de verdad en las calles de Barcelona en agosto, cuando la mayoría de los árboles floridos de la ciudad ya han terminado. Está en una calle residencial corriente de Poble-sec, sin jardín, sin verja, sin nada que lo señale más que el propio árbol."
+    },
+    "bcn_053": {
+      "name": "El castanyer bord de la plaça de Carles Buïgas",
+      "species": "Castaño de indias (Aesculus hippocastanum)",
+      "age_estimate": "unos 89 años",
+      "access": "Gratuito, plaza pública.",
+      "transport": "Espanya (Metro L1/L3), unos 5 min a pie.",
+      "story": "Este castaño de indias se plantó hacia 1937, en plena Guerra Civil, en una ciudad todavía en manos de la República. Barcelona lo llama castanyer bord, castaño bastardo, el nombre antiguo para el Aesculus hippocastanum: se parece al castaño dulce que da la castaña catalana de otoño, pero sus frutos son amargos e incomibles.\n\nCatalogado como Árbol de Interés Local en 1997, ha alcanzado 15,5 metros de altura, un tronco de 1,84 metros de perímetro y una copa de 11 metros, notable sin ser récord, que es justo la razón de que la ciudad mantenga un catálogo de árboles de interés local: no todo árbol que merece conservarse es el más grande de la ciudad.\n\nLa plaza toma su nombre de Carles Buïgas, el ingeniero que construyó la Font Màgica, la fuente musical de Montjuïc, justo donde se alza este árbol. Quien viene a ver el espectáculo nocturno puede quedarse bajo un árbol casi tan viejo como la propia fuente.\n\nNo hemos encontrado ningún registro sobre lo generosa que es su floración cada abril comparada con otros castaños de indias de la ciudad; si lo sabes, cuéntanoslo."
+    },
+    "bcn_054": {
+      "name": "Els arbres de l'amor de la plaça Joanic",
+      "species": "Árbol del amor (Cercis siliquastrum)",
+      "age_estimate": "unos 70 años, plantados en 1956",
+      "access": "Gratuito, plaza pública.",
+      "transport": "Joanic (Metro L4), junto a la plaza.",
+      "story": "Barcelona llama a este pequeño grupo de la plaça Joanic 'els arbres de l'amor', y cada abril lo demuestran ellos solos: toda la copa estalla en flores magenta que brotan directamente de la corteza, tronco y ramas por igual, antes de que asome una sola hoja. Es una floración tan llamativa que la televisión de la ciudad suele dedicarle un reportaje cada primavera para decir dónde encontrarla ese año.\n\nLos tres troncos de aquí, plantados en 1956 en lo que hoy es Vila de Gràcia, son lo bastante viejos y grandes como para que Barcelona los catalogara como Árbol de Interés Local en 1996, algo inusual para una especie que rara vez alcanza este tamaño en la ciudad. Sus copas llegan a los 10 metros, y el tronco más ancho mide 1,65 metros de perímetro.\n\nEl arbre de l'amor toma su nombre castellano de una leyenda según la cual Judas Iscariote se ahorcó en uno; en el Mediterráneo se le conoce mejor como el árbol que tiñe de púrpura una esquina entera en primavera. Este cumple su cita cada año, en la segunda quincena de abril, cuando la pequeña plaza de Gràcia hace exactamente eso."
+    },
+    "bcn_055": {
+      "name": "El carpe del Sot de l'Estany",
+      "species": "Carpe (Carpinus betulus)",
+      "age_estimate": "unos 80 años",
+      "access": "Entrada de pago al Jardí Botànic Històric.",
+      "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
+      "story": "El carpe apenas crece de forma silvestre en la península ibérica, lo que convierte al ejemplar del Jardí Botànic Històric de Barcelona en una rareza por definición. Ha encontrado el único rincón de la ciudad lo bastante fresco y húmedo para su gusto: el Sot de l'Estany, una antigua cantera hoy hondonada que ya alberga cuatro de los árboles monumentales de Barcelona, una pterocaria, dos especies de fresno y un arce entre ellos.\n\nCon unos 80 años, el carpe es más joven que esos vecinos, por lo que la ciudad lo clasifica un escalón por debajo, como Árbol de Interés Local en lugar de monumental. Aun así ha alcanzado 18 metros de altura y una copa de 13 metros, notable para una especie tan lejos de su área natural.\n\nEste jardín fue la primera colección botánica de Barcelona, en la misma colina, antes de que se abriera uno nuevo en otro punto de Montjuïc. La hondonada ha conservado su propio microclima desde entonces: más fresco, más húmedo y tercamente hospitalario con árboles que no deberían sobrevivir tan al sur. Misma entrada que el resto de veteranos del jardín."
+    },
+    "bcn_059": {
+      "name": "Los Naranjos de Luisiana de los Jardines de Torre Girona",
+      "species": "Naranjo de Luisiana (Maclura pomifera)",
+      "age_estimate": "",
+      "access": "Gratuito, parque publico urbano (la gestion paso de la Universidad Politecnica de Cataluna al Ayuntamiento de Barcelona en un acuerdo de abril de 2019, igual que en bcn_026/027/028 del mismo jardin); horario estacional publicado, se cierra por la noche.",
+      "transport": "Palau Reial (Metro L3), unos 10 min a pie.",
+      "story": "El ayuntamiento catalogo catorce arboles como uno solo. Los naranjos de Luisiana crecen en una doble hilera escondida en la parte boscosa de Torre Girona, plantados hace tanto tiempo y tan integrados en la vegetacion que el registro los agrupa bajo un unico numero patrimonial en vez de catorce entradas, el mismo trato que reciben los pinos pinoneros del propio jardin, a poca distancia. El registro llama a la especie poco usada hoy, con muy pocos ejemplares en la ciudad, lo que convierte esta hilera vieja y desatendida en algo que vale la pena buscar.\n\nMaclura pomifera procede del centro-sur de Estados Unidos, la region de Arkansas y Luisiana que dio origen al nombre catalan, tarongers de Louisiana, por el fruto grande, arrugado e incomestible de los ejemplares hembra. Los arqueros del pueblo osage preferian su madera por su elasticidad, de donde viene el nombre ingles del arbol, Osage orange. Aqui se ha pasado la vida de pie sin mas, en un terreno que paso de finca privada de un banquero a campus universitario con un superordenador en su antigua capilla, y que es parque municipal desde abril de 2019.\n\nNadie sabe cuando se plantaron. El registro deja en blanco el ano, 'por determinar', sin resolver tras un siglo de catalogacion. Si lo sabes, esta pagina agradece la correccion."
+    }
   }
- ],
- "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Catalan place names are kept as written on the sign.",
- "trees": {
-  "bcn_001": {
-   "name": "La encina del carrer de l'Encarnació",
-   "species": "Encina (Quercus ilex)",
-   "age_estimate": "unos 250 años",
-   "access": "Gratuito, jardín público.",
-   "transport": "Fontana (Metro L3), 8 min a pie.",
-   "story": "El árbol más viejo de Barcelona estuvo a punto de caer por una promoción de pisos. Esta encina ya crecía en el Pla del Bonpà, terreno rural ligado a una masía llamada Can Vidalet, cuando Gràcia era todavía campo abierto y no un barrio. Aparece en los planos municipales de 1845, y los dendrocronólogos, que leen la edad de un árbol en sus anillos, la dataron después en unos 250 años. Hacia la década de 2010 la encina quedaba en el patio de las Casetes de l'Encarnació, un conjunto de casitas del siglo XIX que iban a derribarse para levantar pisos nuevos. El vecindario peleó tres años contra el plan bajo el lema Salvem l'Alzina, salvemos la encina, y en 2019 la ciudad catalogó el árbol como Árbol de Interés Local precisamente para parar las máquinas. Funcionó a medias: las casas no pudieron restaurarse enteras y solo se salvaron las fachadas, pero el jardín que rodea la encina abrió al público en abril de 2021. El árbol mide hoy 22 metros de alto y tiene una copa igual de ancha, más que la de cualquier otra encina medida en la ciudad."
-  },
-  "bcn_002": {
-   "name": "El algarrobo del viaducto",
-   "species": "Algarrobo (Ceratonia siliqua)",
-   "age_estimate": "unos 130 años",
-   "access": "Gratuito; la zona monumental del Park Güell cobra entrada general, pero los viaductos quedan dentro del área boscosa de acceso libre.",
-   "transport": "Lesseps (Metro L3), 15 min a pie cuesta arriba.",
-   "story": "Gaudí llenó el Park Güell de columnas de piedra con forma de tronco y dejó este tronco de verdad en medio de ellas. El algarrobo ya estaba enraizado en la ladera, nacido hacia 1893, cuando Eusebi Güell encargó a Gaudí convertir la finca en ciudad jardín, en 1900. En lugar de talarlo para levantar el viaducto que estaba diseñando, Gaudí hizo pasar las columnas inclinadas de piedra alrededor del tronco vivo, de modo que un árbol real crece dentro de una columnata construida para parecer un bosque de árboles. Una fotografía de 1904 del fotógrafo barcelonés Josep Maria Armengol muestra el conjunto apenas un año después de terminadas las obras, con el algarrobo todavía delgado entre la piedra nueva. Los algarrobos son mediterráneos y se sacuden la sequía y los suelos pobres, exactamente el terreno que ofrecía la finca de Güell antes de que llegara Gaudí. Más de un siglo después, el árbol ha engordado hasta tocar las columnas que lo rodean, una colaboración no prevista entre un modernista catalán del siglo XIX y una especie que ya crecía en esa ladera mucho antes de que él naciera."
-  },
-  "bcn_003": {
-   "name": "El algarrobo rebrotado de la Plaça de la Natura",
-   "species": "Algarrobo (Ceratonia siliqua)",
-   "age_estimate": "unos 120 años el tronco actual; el árbol original del que brotó no está datado",
-   "access": "Gratuito, dentro del área boscosa de acceso libre del Park Güell.",
-   "transport": "Lesseps (Metro L3), 15 min a pie cuesta arriba.",
-   "story": "Este árbol es, técnicamente, el segundo acto de un tocón. Aquí hubo un algarrobo con un tronco de más de cuatro metros de perímetro, de los mayores de su especie en todo el parque. En algún momento murió o lo cortaron y, en vez de desaparecer, echó un brote nuevo desde la base, como hacen los algarrobos y muchos árboles mediterráneos después de un incendio o un daño. Ese brote, catalogado como surgido hacia 1907, es el árbol que hoy se ve: unos modestos 90 centímetros de perímetro, rodeado por los restos retorcidos y curtidos del gigante al que sustituyó. El efecto parece casi diseñado a propósito, un tronco joven enmarcado por la ruina escultórica de su antecesor, en un parque donde la piedra de Gaudí hace eso mismo, pero queriendo, unos cientos de metros más allá. Nadie planifica un rebrote así. La madera muerta del viejo algarrobo simplemente se curvó igual que se curvan las columnas de piedra de Gaudí, lo que o es casualidad o es la prueba de que esta ladera concreta solo sabe crecer de una manera."
-  },
-  "bcn_004": {
-   "name": "El cedro del Himalaya del Laberint",
-   "species": "Cedro del Himalaya (Cedrus deodara)",
-   "age_estimate": "unos 115 años",
-   "access": "Cerrado. El Parc del Laberint d'Horta está cerrado al público por obras de restauración de los setos de ciprés y del riego desde marzo de 2025, prorrogadas un año más para que arraigue la plantación nueva; reapertura prevista en marzo de 2027. Consulte ajuntament.barcelona.cat antes de ir.",
-   "transport": "Mundet (Metro L3), 10 min a pie.",
-   "story": "Este cedro crece en el jardín histórico más antiguo que se conserva en Barcelona, una finca neoclásica encargada en 1791 a la que después se añadió un ala romántica, laberinto de cipreses incluido. El propio cedro del Himalaya llega tarde a esa historia: se plantó hacia 1910 en lo que la finca llama su jardín doméstico, junto a un tilo plateado con el que todavía comparte parcela. Los cedros del Himalaya vienen de las montañas que van de Afganistán a Nepal, donde su madera se apreciaba para construir barcos y templos; este lleva más de un siglo adaptándose en cambio a los veranos mediterráneos. Una tormenta le partió en algún momento la guía principal, el brote de arriba que dirige normalmente el ascenso de una conífera, y el árbol ha seguido creciendo desde entonces con la silueta algo cambiada y una copa que hoy mide 22 metros de diámetro. Todo el parque cerró en marzo de 2025 para una renovación de dos años del laberinto histórico de cipreses y del sistema de riego, así que este cedro queda fuera del alcance hasta que los jardines vuelvan a abrir, previsiblemente en 2027."
-  },
-  "bcn_005": {
-   "name": "La pterocaria del Sot de l'Estany",
-   "species": "Pterocaria de Rehder (Pterocarya x rehderiana)",
-   "age_estimate": "unos 100 años",
-   "access": "Entrada de pago al Jardí Botànic Històric.",
-   "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
-   "story": "El árbol más grande de Barcelona crece en un agujero por el que nadie baja. El Sot de l'Estany es una antigua cantera dentro del jardín botánico histórico de la ciudad, lo bastante honda y húmeda como para funcionar de invernadero, y esta pterocaria ha aprovechado ese abrigo para llegar a unos 40 metros, una altura que el propio catálogo municipal reconoce haber tenido problemas para medir con equipo estándar, porque las paredes de alrededor cortan la visual del láser. El árbol es una pterocaria de Rehder, un híbrido deliberado entre una especie caucásica y otra china que cruzó por primera vez en 1908 Alfred Rehder, horticultor del Arnold Arboretum de Boston, de modo que este ejemplar es apenas una o dos décadas más joven que el híbrido mismo. Es el único de su clase registrado en Barcelona, y probablemente en bastantes kilómetros a la redonda. En abril de 2025 la Generalitat lo declaró uno de los cuatro únicos árboles monumentales de toda la ciudad, y los cuatro comparten esta misma hondonada. Quien visita el jardín botánico rara vez baja al Sot: el árbol que gana en tamaño a todos los demás de Barcelona está en el rincón por el que casi todo el mundo pasa de largo."
-  },
-  "bcn_006": {
-   "name": "El fresno americano del Sot de l'Estany",
-   "species": "Fresno americano (Fraxinus pennsylvanica)",
-   "age_estimate": "unos 100 años",
-   "access": "Entrada de pago al Jardí Botànic Històric.",
-   "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
-   "story": "Este fresno viene de las vegas inundables del este de Norteamérica, una especie hecha para tener las raíces bajo el agua durante semanas seguidas, y es tan raro en Barcelona que el catálogo municipal de arbolado lo menciona por su nombre. Plantado en 1924 en la misma hondonada resguardada, el Sot de l'Estany, que ampara la pterocaria gigante del jardín botánico, ha pasado de los 24 metros de altura gracias a la humedad que la vieja cantera retiene en el fondo de Montjuïc. El fresno americano casi nunca se planta como ornamental en la Europa mediterránea, donde su hábitat pantanoso de origen no tiene equivalente local, y esa es parte de la razón por la que la Generalitat le concedió la condición de árbol monumental junto a tres vecinos en abril de 2025: no es el árbol más grande del jardín, pero sí de los más inesperados. Un botánico que baje al rincón más profundo del jardín puede encontrar, en unos pocos metros cuadrados, un híbrido chino-caucásico, un árbol de pantano americano, un fresno ibérico autóctono y un pariente europeo del arce creciendo uno al lado del otro, un arboreto no planeado dentro de otro arboreto."
-  },
-  "bcn_007": {
-   "name": "La magnolia de los Jardins de la Maternitat",
-   "species": "Magnolia (Magnolia grandiflora)",
-   "age_estimate": "más de 100 años",
-   "access": "Gratuito, jardín público.",
-   "transport": "Les Corts (Metro L3), 6 min a pie.",
-   "story": "Esta magnolia es probablemente la mayor de su especie en Barcelona, y crece en un jardín levantado para una maternidad donde ya no nace nadie. Los Jardins de la Maternitat ocupan la antigua finca de Can Cavaller, transformada a partir de 1889 en un complejo hospitalario modernista por el arquitecto Camil Oliveres, y el recinto conservó su plantación original mucho después de que las salas cambiaran de uso. La magnolia no tiene fecha de plantación registrada, solo una descripción en los archivos municipales de arbolado como centenaria, más de cien años, lo que sitúa su origen en algún punto de las primeras décadas del hospital. Desde entonces ha pasado de los 12 metros de alto y los 15 de ancho, una copa capaz de dar sombra ella sola a una plaza pequeña, entre la cuarentena de especies de árbol catalogadas en los jardines. Las magnolias de flor grande florecen a principios de verano con flores que pueden alcanzar los 30 centímetros de diámetro, un argumento de una sola especie para explicar por qué valía la pena conservar intacto el jardín de un hospital cuando el hospital se mudó."
-  },
-  "bcn_008": {
-   "name": "La acacia de Constantinopla de la Ciutadella",
-   "species": "Acacia de Constantinopla (Albizia julibrissin)",
-   "age_estimate": "130 años",
-   "access": "Gratuito, parque público.",
-   "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 min a pie.",
-   "story": "Una acacia de Constantinopla en clima templado no está hecha para pasar mucho de los cuarenta años. La del Parc de la Ciutadella lleva floreciendo cada julio desde alrededor de 1896, bastante más de un siglo por encima de la fecha de caducidad habitual de su especie. Albizia julibrissin se hace valer deprisa: hojas de helecho que se cierran como una mano al anochecer y flores rosas de hilos finos con forma de borla, pensadas para unas pocas décadas de lucimiento antes de que el árbol se rinda. A este nadie le pasó el aviso. Infecciones repetidas le han vaciado el tronco central con los años, un dato que el propio registro municipal de arbolado dice sin rodeos en lugar de esconderlo, y la copa de encima sigue floreciendo cada verano igualmente. Se plantó por los años en que la Sociedad de Ciencias Naturales de Barcelona guardaba sus colecciones en los museos de al lado, cuando el parque hacía además de escaparate al aire libre de curiosidades botánicas traídas de medio mundo. Hoy crecen unos 1.100 ejemplares de la misma especie por las calles y jardines de Barcelona, plantados casi todos como ornamentales de vida corta que se esperaba sustituir en una generación. El de la Ciutadella, catalogado como Árbol de Interés Local en 1996, lleva treinta años dejando ese papeleo en ridículo."
-  },
-  "bcn_009": {
-   "name": "El ombú de la Plaça Prim",
-   "species": "Ombú (Phytolacca dioica)",
-   "age_estimate": "unos 100 años",
-   "access": "Gratuito, plaza pública.",
-   "transport": "Poblenou (Metro L4), 5 min a pie.",
-   "story": "Este árbol parece hecho de músculo y no de madera, y no anda lejos de la verdad. El ombú es originario de la pampa de Argentina, Uruguay y el sur de Brasil, y su tronco crece blando y fibroso en lugar de duro, hinchándose en pliegues ondulados parecidos a raíces que almacenan agua para las sequías a las que su tierra sudamericana es propensa. Plantado en la Plaça Prim hacia 1924, uno de los tres ombús que dan carácter a esta plaza pequeña del Poblenou, ha llegado a 9,5 metros de alto, con un tronco de dos metros y medio de perímetro a la altura del pecho y una copa de siete metros y medio de ancho, todo ello sin producir madera lo bastante densa como para servir de material, que es la razón por la que los ombús casi nunca se plantan para otra cosa que sombra y espectáculo. La especie llegó a España como importación ornamental a principios del siglo XX, popular exactamente por eso: nada más en una plaza europea se parece a esto. El Poblenou era todavía un barrio industrial de fábricas textiles cuando este ejemplar se plantó; hoy esas fábricas son casi todas lofts y oficinas tecnológicas, y el ombú ha sobrevivido a la primera identidad entera del barrio."
-  },
-  "bcn_010": {
-   "name": "Las palmeras de la Casa de la Misericòrdia",
-   "species": "Washingtonia de California (Washingtonia filifera)",
-   "age_estimate": "unos 120 años",
-   "access": "Gratuito entrar al patio desde el carrer d'Elisabets o a través de la librería La Central; la cafetería sí se paga.",
-   "transport": "Catalunya (Metro L1/L3), 6 min a pie.",
-   "story": "Cuatro palmeras llevan más de un siglo en el patio de un antiguo orfanato, plantadas hacia 1904, cuando el edificio funcionaba todavía como Casa de la Misericòrdia, una institución benéfica fundada en 1583 que crio a niñas abandonadas hasta bien entrado el siglo XX. Las washingtonias de California son propias de los oasis desérticos del suroeste de Estados Unidos y el norte de México, un emparejamiento raro sobre el papel con un patio neogótico del Raval, pero la especie aguanta los suelos pobres y las sequías largas lo suficiente como para haberse vuelto un clásico de la jardinería urbana mediterránea. Durante décadas el patio estuvo cerrado al público, parte de un edificio institucional escondido detrás del carrer d'Elisabets por delante del cual pasaba medio Raval sin ver nunca lo que había dentro. Eso cambió hace poco, cuando abrió una cafetería en el jardín y devolvió a la vista de cualquiera que pida un café cuatro palmeras que habían crecido un siglo a puerta cerrada. El edificio sigue albergando una escuela; las palmeras, y tiene mérito, han sobrevivido a varios cambios de uso institucional por encima de sus cabezas."
-  },
-  "bcn_011": {
-   "name": "La casuarina de la Cascada",
-   "species": "Casuarina (Casuarina cunninghamiana)",
-   "age_estimate": "unos 130 años",
-   "access": "Gratuito, parque público.",
-   "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 6 min a pie.",
-   "story": "Todo en este árbol dice pino, y nada de eso es verdad. Lo que parecen acículas colgantes de color verde grisáceo son ramillas verdes articuladas haciendo el trabajo de las hojas, y las hojas de verdad son escamas microscópicas dispuestas en anillos en cada nudo, visibles solo si se separa una hebra. Sus parientes son los robles y los abedules, sin una sola conífera entre ellos. La casuarina se plantó junto a la Cascada hacia 1894, seis años después de que la Exposición Universal convirtiera una fortaleza derribada en el primer parque público de Barcelona, y ha engordado en dos troncos fundidos en la base que se separan a unos 90 centímetros del suelo. El perímetro conjunto pasa de cinco metros, uno de los troncos más gruesos de la ciudad, bajo una copa de unos 20 metros de diámetro; los propios registros municipales sitúan la altura entre 22 y 27 metros y no se ponen de acuerdo. Las casuarinas vienen de las riberas del este de Australia, donde sujetan los taludes de arena durante la temporada de crecidas, y por esa misma dureza se plantaron por todo el Mediterráneo. Póngase debajo una tarde de viento y el oído cierra lo que empezó la botánica: el follaje colgante silba igual que un pino, en un árbol que no lo es en absoluto."
-  },
-  "bcn_012": {
-   "name": "El roble mexicano de la Ciutadella",
-   "species": "Roble blanco mexicano (Quercus polymorpha)",
-   "age_estimate": "unos 140 años",
-   "access": "Gratuito, parque público.",
-   "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 min a pie.",
-   "story": "Un roble sin lóbulos en las hojas, y el único vivo en Cataluña. Quercus polymorpha crece de forma silvestre desde Texas, bajando por México hasta Guatemala y Honduras, conserva casi todo el año unas hojas coriáceas de borde liso y casi nadie lo planta en Europa. El único ejemplar de Barcelona lleva inclinándose sobre la arena del Parc de la Ciutadella desde alrededor de 1887, el año en que se rehacía el parque para la Exposición Universal que abrió al lado la primavera siguiente. No es un árbol grande al lado de sus vecinos, unos ocho metros de alto y un tronco de dos metros y medio de perímetro, pero lanza de lado una copa de 11 metros desde un fuste que renunció a la vertical hace décadas y hoy se extiende lo bastante bajo como para poder tocarlo con la mano. El nombre de la especie significa de muchas formas, y se lo pusieron porque las hojas varían tanto de un árbol a otro que los botánicos llegaron a describir el mismo roble dos veces con nombres distintos. Eso es lo que hay que comprobar cuando se encuentra. Coja una hoja, busque la forma que se supone que tiene todo roble que usted conoce y vea cómo el parecido de familia se deshace en silencio en su mano."
-  },
-  "bcn_013": {
-   "name": "El naranjo de los osages de la Ciutadella",
-   "species": "Naranjo de los osages (Maclura pomifera)",
-   "age_estimate": "unos 113 años",
-   "access": "Gratuito, parque público.",
-   "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 min a pie.",
-   "story": "A finales de otoño este árbol deja caer sobre el camino algo parecido a cerebros verdes. El fruto del naranjo de los osages es del tamaño de un pomelo, verde amarillento y casi fluorescente cuando está fresco, con la superficie hecha un amasijo de pliegues y surcos, y es incomestible para prácticamente todo lo que vive hoy. La explicación habitual es que alimentaba a animales que ya no existen, perezosos gigantes y mamuts que se tragaban el fruto entero y se llevaban lejos la semilla, lo que deja al árbol sirviendo platos que nadie pide desde hace diez mil años. Procede de un área pequeña entre Texas, Arkansas y Luisiana, donde su madera daba los mejores arcos de Norteamérica y le dio a la nación osage su comercio y a este árbol su nombre. Europa lo importó a principios del siglo XIX y nunca acabó de adoptarlo. El ejemplar de Barcelona se plantó en el Parc de la Ciutadella hacia 1913 y hoy tiene un tronco de unos dos metros y medio de perímetro bajo una copa que la ciudad mide entre 13 y 19 metros. Es de hoja caduca, así que las fechas importan: venga a finales de octubre o en noviembre y encontrará el fruto tirado debajo, con alguno aguantando colgado ya en invierno, cuando las hojas se han ido."
-  },
-  "bcn_014": {
-   "name": "El eucalipto rojo de la Plaça de les Caramelles",
-   "species": "Eucalipto rojo (Eucalyptus camaldulensis)",
-   "age_estimate": "más de 100 años; el registro municipal dice unos 120",
-   "access": "Gratuito. El árbol está dentro del recinto de la Casa de la Caritat y se ve desde la Plaça de les Caramelles, una plaza pública abierta a la calle junto al CCCB.",
-   "transport": "Universitat (Metro L1/L2), 5 min a pie.",
-   "story": "Cerca de 30 metros de árbol australiano se levantan en el Raval, el barrio más apretado de Barcelona y de los últimos sitios con espacio para algo de este tamaño. El eucalipto rojo creció dentro del recinto amurallado de la Casa de la Caritat, la casa de beneficencia que acogió a los expósitos y los indigentes de la ciudad durante siglo y medio, que es la única razón por la que aquí quedaba suelo libre. Desde la Plaça de les Caramelles se ve entero: un tronco pálido y recto de unos tres metros de perímetro, desnudo un buen trecho antes de que empiece la copa. Eucalyptus camaldulensis sigue los ríos estacionales del interior de Australia por casi todo el continente y sobrevive a la sequía soltando ramas enteras y rebrotando desde la base, que es también la razón por la que nadie con dos dedos de frente aparca debajo de uno. Los edificios de alrededor reabrieron en 1994 como el centro de arte CCCB, el mismo año en que la ciudad incorporó el árbol a su catálogo. La edad es la parte floja del expediente. La ciudad da 1904, ninguna fuente independiente lo confirma, y las dos versiones publicadas por el propio ayuntamiento de la misma ficha difieren en tres metros de altura y 20 centímetros de perímetro. Lea la fecha como la mejor conjetura del registro."
-  },
-  "bcn_015": {
-   "name": "La encina de los Jardins de Bacardí",
-   "species": "Encina (Quercus ilex)",
-   "age_estimate": "unos 120 años",
-   "access": "Gratuito, jardín público. La ciudad aprobó en abril de 2026 una reforma de los jardines y su entorno, así que puede haber partes valladas por obras; el árbol está catalogado y no se puede retirar. Consulte ajuntament.barcelona.cat antes de hacer el viaje.",
-   "transport": "Collblanc (Metro L5/L9), 5 min a pie, o Les Corts (Metro L3), 9 min a pie.",
-   "story": "Esta encina es la única parte del jardín de un hombre rico que nunca se vendió, se derribó ni se edificó. El terreno era una masía llamada Can Ermengol hasta que la familia Bacardí la compró a finales del siglo XIX y levantó una casa señorial para Baltasar de Bacardí i Janer, con unos jardines trazados puramente para su recreo. La encina se plantó hacia 1904. Cuando su nieta Anna Bacardí i Ribas murió en 1958, sus tres hijos empezaron a trocear la finca y a venderla; la casa cayó para ensanchar la Travessera de les Corts, y en 1963 la ciudad expropió lo que quedaba del jardín y lo abrió a toda la gente a la que nunca se había dejado entrar. La encina mide hoy unos 16 metros, con un tronco de algo más de dos metros de perímetro, entre palmeras y plátanos que quedan de aquella misma plantación privada, a cinco minutos del gentío del Camp Nou. Las encinas conservan todo el año sus hojas pequeñas y duras y crecen tan despacio que un siglo las deja con aire de no tener ninguna prisa. Barcelona catalogó esta en 1994, lo que significa que no puede retirarse por ningún motivo, y ese papel resultó útil: en abril de 2026 la ciudad aprobó una reforma de todo el recinto que la rodea."
-  },
-  "bcn_016": {
-   "name": "El acebuche del Park Güell",
-   "species": "Olivo (Olea europaea)",
-   "age_estimate": "el registro municipal dice 1771, unos 255 años; sin datación independiente",
-   "access": "Gratuito, dentro del área boscosa de acceso libre del Park Güell, fuera de la Zona Monumental de pago.",
-   "transport": "Lesseps (Metro L3), 15 min a pie cuesta arriba, o bus 24 hasta la Carretera del Carmel.",
-   "story": "El propio registro municipal fecha este acebuche en 1771, lo que lo haría más viejo que el árbol al que Barcelona llama el suyo más antiguo. Ese título es de la encina de Gràcia, de unos 250 años, y la encina tiene algo que a este acebuche le falta: un recuento de anillos hecho por un dendrocronólogo. El acebuche lleva un año de nacimiento aproximado tecleado en un catálogo municipal sin nada publicado detrás. Así que la posición honesta es que Barcelona quizá tenga un árbol más viejo que el que anuncia, y nadie ha hecho el trabajo de zanjarlo. Lo que no está en duda es el árbol mismo. Es un ullastre, la forma silvestre del olivo que crece por todo el Mediterráneo como una mata baja de muchos pies a la que nadie mira dos veces, y este se levantó en cambio como un árbol en condiciones, entre 14 y 17 metros, con una copa que pasa de los 13 metros de diámetro por encima de un muro de contención del Park Güell. Por eso se catalogó en 1996: no por su edad, sino porque una especie que cualquier catalán sabe nombrar nunca se había visto comportarse así. Ya estaba en la ladera más de un siglo antes de que Eusebi Güell comprara el terreno."
-  },
-  "bcn_017": {
-   "name": "El árbol pica-pica del Teatre Grec",
-   "species": "Lagunaria (Lagunaria patersonii)",
-   "age_estimate": "unos 103 años",
-   "access": "Gratuito, jardín público. Abierto de 08.00 a 21.00 del 1 de abril al 31 de octubre y de 08.00 a 19.00 del 1 de noviembre al 31 de marzo. Cerrado por completo al público del 15 de junio al 7 de agosto por el festival Grec.",
-   "transport": "Poble Sec (Metro L3), 10 min a pie cuesta arriba, o Espanya (Metro L1/L3) y las escaleras mecánicas de Montjuïc.",
-   "story": "Barcelona plantó este árbol por sus flores y se llevó de propina polvos pica-pica. La lagunaria se conoce en toda Cataluña como el pica-pica porque el interior de sus cápsulas de semillas va lleno de pelillos finos que se parten dentro de la piel y se quedan ahí. Las flores son la razón por la que se le perdona. Una vez al año la copa entera se llena de miles de flores rosas con forma de malva, que es una cosa rara de encontrar a quince metros de altura, porque unas flores así suelen pertenecer a las malas hierbas de una cuneta. La valoración del propio ayuntamiento dice que ninguna otra lagunaria de Barcelona, y aquí no se han plantado ni media docena, ha llegado a una forma parecida a esta. Se plantó en 1923, mientras toda la ladera se rehacía de canteras a jardines para la Exposición Internacional de 1929, y hoy está a la izquierda del anfiteatro, bajo la terraza del restaurante, con un tronco de 2,4 metros de perímetro. La especie viene de la isla de Norfolk y de la isla de Lord Howe, en el Pacífico, donde crece en acantilados marinos. Calcule bien la visita: los jardines cierran al público del 15 de junio al 7 de agosto por el festival que llena el teatro."
-  },
-  "bcn_018": {
-   "name": "La araucaria bunya del Teatre Grec",
-   "species": "Araucaria bunya (Araucaria bidwillii)",
-   "age_estimate": "unos 106 años",
-   "access": "Gratuito, jardín público. Abierto de 08.00 a 21.00 del 1 de abril al 31 de octubre y de 08.00 a 19.00 del 1 de noviembre al 31 de marzo. Cerrado por completo al público del 15 de junio al 7 de agosto por el festival Grec.",
-   "transport": "Poble Sec (Metro L3), 10 min a pie cuesta arriba, o Espanya (Metro L1/L3) y las escaleras mecánicas de Montjuïc.",
-   "story": "Una araucaria bunya deja caer piñas del tamaño de un balón de fútbol que pueden pesar diez kilos, desde diecisiete metros de altura. En Queensland, de donde es originaria la especie, los guardas acordonan en temporada el suelo que hay debajo y ponen avisos. El ejemplar de Barcelona lleva haciendo esto discretamente en los jardines del Teatre Grec desde alrededor de 1920, en el camino justo antes del mirador, y la ciudad lo catalogó en 2011 como probablemente uno de los poquísimos que hay en todo el término municipal. Araucaria bidwillii es la última especie que queda en su propia sección del género, superviviente de un linaje que ya era antiguo cuando acabó el Jurásico, y está construida como ninguna otra cosa de esta ladera: una columna recta con las ramas dispuestas en verticilos planos y simétricos, cada una forrada de hojas triangulares rígidas y lo bastante afiladas como para sacar sangre. En su tierra llega a los cincuenta metros. Las semillas de dentro de esas piñas son comestibles y feculentas, y no tienen ninguna prisa: pasan de tres a seis meses bajo tierra antes de que asome nada por encima. Mire hacia arriba y no a lo ancho. La copa mide solo unos ocho metros de diámetro, y es la silueta contra el cielo, todo ángulos rectos donde cualquier otro árbol de aquí tiene curvas, lo que hace que la gente se pare en el camino."
-  },
-  "bcn_019": {
-   "name": "El árbol del coral del camino de Laribal",
-   "species": "Árbol del coral (Erythrina corallodendron)",
-   "age_estimate": "unos 103 años",
-   "access": "Gratuito. El árbol está en el camino público que une los jardines del Teatre Grec con los Jardins Laribal. Los jardines del Teatre Grec cierran del 15 de junio al 7 de agosto por el festival; el lado de Laribal sigue abierto.",
-   "transport": "Poble Sec (Metro L3), 12 min a pie cuesta arriba, o Espanya (Metro L1/L3) y las escaleras mecánicas de Montjuïc.",
-   "story": "Barcelona no se aclara sobre qué es este árbol. Las páginas municipales de arbolado lo llaman Erythrina corallodendron y dicen que es el único de su especie en cualquier jardín de la ciudad. El fichero de datos abiertos del ayuntamiento lo llama Erythrina falcata. Quien lo cartografió para OpenStreetMap anotó Erythrina lysistemon. Tres nombres para un tronco, y los tres son árboles del coral, un género que florece en espigas de un rojo encendido y que lleva dos siglos haciendo discutir a los botánicos. Lo que nadie discute es el árbol. Está en el camino que corre entre los jardines del Teatre Grec y los Jardins Laribal, plantado hacia 1923, y ha lanzado una copa de veinte metros de ancho sobre un paseo de apenas tres, de modo que el camino pasa por debajo en lugar de rodearlo. El tronco mide 2,6 metros de perímetro y se inclina sobre la pendiente. La ciudad atribuye la ubicación a Jean-Claude Nicolas Forestier, el ingeniero paisajista francés que aterrazó este lado de Montjuïc para la Exposición de 1929, y señala que al árbol le tocó un sitio ideal y que supo aprovecharlo. Sea lo que sea al final, aquí solo hay uno."
-  },
-  "bcn_020": {
-   "name": "La tipuana de la Plaça Carles Buïgas",
-   "species": "Tipuana (Tipuana tipu)",
-   "age_estimate": "unos 101 años",
-   "access": "Gratuito, plaza pública.",
-   "transport": "Espanya (Metro L1/L3), 8 min a pie subiendo por la Avinguda Maria Cristina.",
-   "story": "La tipuana es uno de los árboles más comunes de las calles de Barcelona, y este es el que la ciudad usa para medir a los demás. Su propia ficha lo llama posiblemente el mayor por perímetro de tronco de todas las tipuanas que conoce en la ciudad, con 3,3 metros, y lo fecha en 1925, lo que lo mete en la primera oleada de plantaciones que trajo la especie desde Bolivia y el norte de Argentina. El experimento salió bien. Las tipuanas resultaron aguantar el calor, la sequía y el pavimento de Barcelona mejor que casi cualquier otra cosa disponible, y la ciudad siguió plantándolas hasta volverlas corrientes. Cualquiera que aparque bajo una en verano conoce la otra mitad de aquella decisión: las tipuanas alojan insectos chupadores de savia que llueven una niebla fina y pegajosa sobre lo que haya debajo. Esta está al pie de Montjuïc, a unos pasos de la Font Màgica, echando una copa de 23 metros sobre una plaza que la mayoría de los visitantes cruza camino de otro sitio sin levantar la vista ni una vez. A finales de mayo y en junio se pone de un amarillo anaranjado con flores en forma de guisante, luego las suelta, y durante una semana el pavimento tiene el mismo color que el árbol."
-  },
-  "bcn_021": {
-   "name": "El fresno del Sot de l'Estany",
-   "species": "Fresno de hoja estrecha (Fraxinus angustifolia)",
-   "age_estimate": "fecha de plantación nunca registrada",
-   "access": "Entrada de pago al Jardí Botànic Històric.",
-   "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
-   "story": "Tres de los cuatro árboles que la Generalitat declara monumentales en Barcelona son rarezas extranjeras. Este es un fresno de hoja estrecha, un árbol que crece a la orilla de la mitad de los ríos de España, y les ha ganado a todos en altura. Con 29 metros es el más alto de su especie medido en toda Cataluña según el propio expediente del gobierno catalán, y llegó ahí creciendo dentro de un agujero. El Sot de l'Estany es una cantera abandonada dentro del jardín botánico histórico, excavada en el flanco de Montjuïc, y sus paredes retienen aire fresco y húmedo lo bastante bien como para quedarse hasta cuatro grados por debajo de la temperatura de fuera. Cualquier cosa plantada en el fondo se comporta como si estuviera en un sitio mucho más húmedo y bastante más al norte. Este fresno cogió ese microclima y tiró recto hacia arriba, y ha acabado con un tronco de 2,5 metros bajo una copa de solo 15 metros de diámetro, proporciones de árbol de bosque y no de parque. La Generalitat lo declaró monumental el 2 de abril de 2025 junto a tres vecinos, los cuatro a unos treinta metros unos de otros en el fondo del mismo hoyo. Nadie anotó cuándo se plantó, y nadie le ha contado los anillos."
-  },
-  "bcn_022": {
-   "name": "El arce sicómoro del Sot de l'Estany",
-   "species": "Arce sicómoro (Acer pseudoplatanus)",
-   "age_estimate": "fecha de plantación nunca registrada",
-   "access": "Entrada de pago al Jardí Botànic Històric.",
-   "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
-   "story": "Treinta metros de árbol sobre un tronco de 1,38 metros de perímetro. Esa es la forma de algo que ha pasado la vida entera trepando hacia un trozo de cielo, y es la razón por la que este arce desentona entre los cuatro árboles monumentales de Barcelona. Acer pseudoplatanus es el arce de faena del norte y el centro de Europa, el árbol que alinea las calles de Viena y coloniza cualquier hueco en Gran Bretaña. En Barcelona apenas se sostiene. Los veranos son demasiado largos y demasiado secos, y aquí es tan raro que la Generalitat declaró este ejemplar monumental el 2 de abril de 2025 en parte por ser corriente en otro sitio. Vive en el Sot de l'Estany, una cantera dentro del jardín botánico histórico que conserva el aire fresco como lo hace una bodega, varios grados por debajo de la ladera de encima. Esa es toda la explicación. Coja un árbol del norte, métalo en el único agujero frío y húmedo de una montaña mediterránea, y crece hasta una altura de la que estaría satisfecho en Baviera, sobre un tronco que se quedó delgado porque nunca tuvo motivo para extenderse a lo ancho. Nadie dejó anotado cuándo se plantó."
-  },
-  "bcn_023": {
-   "name": "El pino piñonero de los Jardins del Palau de Pedralbes",
-   "species": "Pino piñonero (Pinus pinea)",
-   "age_estimate": "unos 133 años",
-   "access": "Gratuito, jardín público, abierto a diario en el horario publicado.",
-   "transport": "Palau Reial (Metro L3), unos 3 a 5 min a pie.",
-   "story": "El árbol llegó antes. Este pino piñonero se plantó en 1893 en las tierras de labor de Can Feliu, que más tarde serían la finca Güell, y ya tenía treinta años cuando la propiedad pasó a la ciudad en los años veinte y la casa se convirtió en la residencia barcelonesa de Alfonso XIII. Cuando Nicolau M. Rubió i Tudurí rediseñó los jardines entre 1925 y 1927, montó su plan alrededor del pino y no al revés: está solo en la pradera junto al palacio, al lado de una figura femenina esculpida, sosteniendo él solo el espacio abierto. Mide 24 metros sobre un tronco de tres metros y medio de perímetro, y Barcelona lo catalogó como Árbol de Interés Local en 1993. Lo que ha visto desde ese único punto: una granja convertida en finca, una finca convertida en residencia real, un rey que se marchó en 1931 con la llegada de la Segunda República y no volvió, y un palacio que ha pasado las décadas siguientes como museo. Los pinos piñoneros son los pinos de sombrilla de la costa mediterránea, hechos para estar al descubierto con todo el peso repartido en una copa aplanada, y este ha tenido sitio para hacerlo bien durante 133 años. La mayoría de los árboles de esta ciudad se pasa la vida disputándole la luz a un edificio."
-  },
-  "bcn_024": {
-   "name": "Los cedros del Himalaya del Palau de Pedralbes",
-   "species": "Cedro del Himalaya (Cedrus deodara)",
-   "age_estimate": "unos 123 años",
-   "access": "Gratuito, jardín público, abierto a diario en el horario publicado.",
-   "transport": "Palau Reial (Metro L3), unos 3 a 5 min a pie.",
-   "story": "El registro de arbolado de Barcelona anota esto como un elemento protegido y 23 árboles. Los cedros del Himalaya de los jardines del Palau de Pedralbes se plantaron hacia 1903, y cuando Nicolau M. Rubió i Tudurí rehizo los jardines en los años veinte trabajó rodeándolos: las crónicas de la reforma dicen que respetó un grupo importante de cedros que ya crecía allí, y por eso un jardín proyectado en el siglo XX tiene una masa de coníferas más viejas plantada en medio. El registro le da al grupo una sola coordenada, un solo año de plantación y una cifra de tronco representativa de 3,4 metros, con el más alto llegando a unos 25 metros. Dicho claramente: no hay medición de cuánto se extienden esos 23 árboles. Una fuente sitúa los ejemplares grandes cerca de la entrada del jardín y ahí conviene empezar, pero esto es un grupo y no un tronco único ante el que plantarse, y la distancia entre el primero y el último puede ser mayor de lo que sugiere la palabra bosquete. Cedrus deodara viene del Himalaya occidental, donde crece por encima de los 1.500 metros y se cortó durante siglos para la madera de los templos. Barcelona no le da un invierno digno de ese nombre y crece en consecuencia: guías colgantes, ramas barriendo casi hasta la hierba y suficientes juntos como para que el aire bajo la copa sea claramente más fresco en agosto."
-  },
-  "bcn_025": {
-   "name": "El ciprés de Cartagena de los Jardins del Palau de Pedralbes",
-   "species": "Ciprés de Cartagena (Tetraclinis articulata)",
-   "age_estimate": "unos 103 años",
-   "access": "Gratuito, jardín público, abierto a diario en el horario publicado.",
-   "transport": "Palau Reial (Metro L3), unos 3 a 5 min a pie.",
-   "story": "No hay más que un puñado de estos en los jardines europeos. Tetraclinis articulata, el ciprés de Cartagena o araar, crece de forma silvestre en Marruecos, Túnez, Malta y un reducto relicto del sureste español, y en su tierra es una conífera amenazada, lo que convierte a un ejemplar centenario en un parque de Barcelona en una rareza de verdad y no en una elección ornamental. Se plantó aquí hacia 1923 y se catalogó como Árbol de Interés Local en 1993. Sus medidas dependen de quién las tomó y cuándo. El registro municipal da 14 metros de altura sobre un tronco de 1,2 metros de perímetro; un estudio de flora barcelonesa dedicado a este árbol concreto da 10 metros y una copa más estrecha. Las dos fuentes coinciden en la especie, el año de plantación y la protección, así que la respuesta honesta es que está en algún punto entre ambas cifras y que, en cualquier caso, es más bajo que casi todo lo que lo rodea. De cerca no parece una conífera en absoluto. El follaje es articulado y escamoso, aplanado en ramillas pequeñas, y las piñas son leñosas y de cuatro valvas, más cerca de una pieza de ferretería que de una piña de pino. La resina que suelta la especie es la sandáraca, el barniz estándar de muebles e instrumentos durante siglos. Es el árbol menos llamativo de estos jardines y el primero al que iría un botánico."
-  },
-  "bcn_026": {
-   "name": "Los pinos piñoneros de los Jardins de Torre Girona",
-   "species": "Pino piñonero (Pinus pinea)",
-   "age_estimate": "unos 122 años",
-   "access": "Gratuito, parque urbano público (la gestión pasó de la universidad UPC al Ayuntamiento de Barcelona por un acuerdo de abril de 2019); horario estacional publicado, con verja cerrada de noche.",
-   "transport": "Palau Reial (Metro L3), unos 10 min a pie.",
-   "story": "Un superordenador vive en la capilla junto a la que crecieron estos pinos. Torre Girona se levantó en 1860 como finca de verano de Manuel Girona i Agrafel, banquero y después alcalde de Barcelona; la universidad técnica se quedó con los terrenos un siglo más tarde, construyó a su alrededor el campus norte e instaló la máquina MareNostrum dentro de la capilla desacralizada de la finca, donde está metida en una caja de cristal bajo las bóvedas. Los dos pinos piñoneros son anteriores a todo eso. Se plantaron hacia 1904, la ciudad los cataloga juntos como un solo elemento protegido y miden 21 metros de alto sobre troncos de 3,6 metros de perímetro. Una revista catalana de jardines que recorrió este jardín los llama colosales y les atribuye haber visto más de cien años de historia de la finca, lo que por una vez no es una exageración: estuvieron ahí para el jardín privado, para la universidad, para las obras y para la máquina. Conviene leer con atención el acceso. Esto fue suelo universitario privado hasta que un acuerdo de abril de 2019 traspasó su gestión a la ciudad, y hoy es un parque público. Lo que no está confirmado es el horario exacto de hoy: está publicado, es estacional y las verjas se cierran de noche, así que compruébelo antes de hacer un viaje especial a última hora."
-  },
-  "bcn_027": {
-   "name": "El pino carrasco de los Jardins de Torre Girona",
-   "species": "Pino carrasco (Pinus halepensis)",
-   "age_estimate": "unos 122 años",
-   "access": "Gratuito, parque urbano público (de gestión municipal desde el acuerdo UPC-Ayuntamiento de abril de 2019); horario estacional publicado, con verja cerrada de noche.",
-   "transport": "Palau Reial (Metro L3), unos 10 min a pie.",
-   "story": "Los pinos carrascos son los árboles que vuelven después del fuego, con las piñas abiertas por el calor, colonizando las laderas mediterráneas quemadas más rápido que cualquier otra cosa que crezca en ellas. Este lleva 122 años haciendo lo contrario: estar junto a un estanque ornamental de Pedralbes con agua, sitio y nada con lo que competir, hasta llegar a 23 metros, lo que lo convierte en el más alto de los tres árboles protegidos de los Jardins de Torre Girona. Se plantó hacia 1904 en la finca que el banquero Manuel Girona levantó en 1860, y la ciudad lo catalogó en 1994 con un tronco de 2,9 metros de perímetro. Una revista catalana de jardines describe aquí un Pinus halepensis subiendo la pendiente junto al mirador del estanque, que es exactamente donde lo sitúa la coordenada del registro. La especie es el pino por defecto de esta costa, el de todos los cerros secos entre Barcelona y Provenza, y eso es justo lo que hace que uno viejo merezca la caminata. En monte, un pino carrasco rara vez llega a crecer con su forma completa, porque el fuego, el suelo pobre y la competencia suelen llevárselo antes. La misma advertencia que con sus vecinos: el jardín es público y de gestión municipal desde 2019, pero el horario está publicado, es estacional y las verjas cierran de noche."
-  },
-  "bcn_028": {
-   "name": "El árbol botella de los Jardins de Torre Girona",
-   "species": "Árbol botella (Brachychiton populneus)",
-   "age_estimate": "unos 122 años",
-   "access": "Gratuito, parque urbano público (de gestión municipal desde el acuerdo UPC-Ayuntamiento de abril de 2019); horario estacional publicado, con verja cerrada de noche.",
-   "transport": "Palau Reial (Metro L3), unos 10 min a pie.",
-   "story": "El árbol más raro de estos jardines es el que hay que ir a buscar. Una revista catalana de jardines que recorrió los terrenos de Torre Girona encontró el Brachychiton populneus a medio camino dentro de la parte boscosa, fuera de la ruta evidente, que es una descripción bastante justa de cómo acaba un árbol botella australiano en un parque de Barcelona. Se plantó hacia 1904, mide 22 metros de alto y 2,5 de perímetro, y la ciudad lo catalogó en 1994. El nombre es lo que importa: el tronco se hincha en la base como una botella y almacena agua contra la sequía de una manera que a un ojo europeo le parece ligeramente equivocada, como un árbol dibujado de memoria. En su este de Australia natal la especie es forraje de emergencia, y se tala para el ganado cuando fallan los pastos. Aquí no ha tenido que demostrarlo ni una vez. La finca de alrededor fue la casa de verano de un banquero desde 1860, antes de que la universidad técnica construyera un campus en los terrenos, y por eso el paseo hasta este árbol pasa por delante de edificios de ingeniería. El jardín es de gestión municipal desde un acuerdo de abril de 2019 y está de verdad abierto al público, pero el horario está publicado, es estacional y cierra con verja al anochecer, y el calendario actual no está confirmado, así que una visita tardía es una apuesta."
-  },
-  "bcn_029": {
-   "name": "El plátano de los Jardins de la Vil·la Amèlia",
-   "species": "Plátano de sombra (Platanus x acerifolia)",
-   "age_estimate": "unos 106 años",
-   "access": "Gratuito, jardín público, accesible en silla de ruedas.",
-   "transport": "Reina Elisenda (FGC), unos 8 a 10 min a pie.",
-   "story": "Veintiséis metros de alto y veintiséis de ancho, que es el aspecto que tiene un plátano cuando nunca ha tenido que competir por nada. Se plantó en 1920 en lo que entonces eran los terrenos privados de la Quinta Amèlia, la finca que el banquero Ignasi Girona construyó y bautizó por su mujer, Amèlia de Vilanova, y desde entonces ha tenido césped abierto a su alrededor. Un apunte sobre su edad, porque las descripciones del jardín se equivocan en esto. Varias siguen llamándolo un plátano de casi 90 años, una cifra copiada hacia delante desde el momento en que se escribió por primera vez. El año de plantación del registro municipal le da 106. El jardín cambió mucho más que el árbol. Barcelona se quedó la finca y la casa señorial cayó; las fuentes no coinciden en el año, unas dan 1930 y otras 1969, y cuál es la correcta no está resuelto. El trazado por el que se pasea hoy es de una reforma de 1970 de Joaquim Casamor, director de parques y jardines de la ciudad, que conservó los árboles maduros y levantó un jardín público alrededor de ellos. Una dríade de bronce, una ninfa de los árboles, obra de Ricard Sala, está en el estanque central, lo que o es casualidad o es la broma discreta de alguien sobre para qué sirve realmente el jardín."
-  },
-  "bcn_030": {
-   "name": "El eucalipto blanco de los Jardins de la Vil·la Amèlia",
-   "species": "Eucalipto blanco (Eucalyptus globulus)",
-   "age_estimate": "unos 122 años",
-   "access": "Gratuito, jardín público, accesible en silla de ruedas.",
-   "transport": "Reina Elisenda (FGC), unos 8 a 10 min a pie.",
-   "story": "Un tronco de 5,2 metros de perímetro en un árbol plantado en 1904 dice lo que hace un eucalipto blanco cuando nada lo frena. Eucalyptus globulus es originario de Tasmania y de una franja del sur de Victoria, y se plantó por todo el Mediterráneo a partir del siglo XIX por una razón: la velocidad. Nada más daba madera y sombra tan deprisa. A casi todos los cortaron mucho antes de que envejecieran. A este lo dejaron en paz, y 122 años después tiene el tronco más grueso de los árboles protegidos de los Jardins de la Vil·la Amèlia con solo 18 metros de altura, ancho antes que alto. La corteza es lo que hay que mirar. Los eucaliptos blancos se desprenden en cintas largas durante el verano y dejan debajo una superficie gris blanquecina y lisa que parece pulida, y las tiras cuelgan del tronco semanas antes de caer. Estruje una hoja caída y huele a jarabe para la tos, lo que no es casualidad: este es el eucalipto que da nombre al aceite. Lleva aquí desde que el jardín era la Quinta Amèlia privada, y ha pasado por la expropiación de la finca, el derribo de la casa señorial y la reforma de 1970 que convirtió los terrenos en parque público. Barcelona lo catalogó en 1994, y es de los pocos árboles de la ciudad llegados del otro extremo del mundo que han superado en tamaño a los de casa."
-  },
-  "bcn_031": {
-   "name": "El pimentero del Perú de los Jardins de la Vil·la Amèlia",
-   "species": "Pimentero del Perú (Schinus molle)",
-   "age_estimate": "unos 103 años",
-   "access": "Gratuito, jardín público, accesible en silla de ruedas.",
-   "transport": "Reina Elisenda (FGC), unos 8 a 10 min a pie.",
-   "story": "Las bayas rosas de un molinillo de pimienta caro no son pimienta, y este es el árbol del que salen. Schinus molle está en la familia del anacardo, no tiene parentesco con la pimienta negra, y sus racimos colgantes de bayas rosas fueron el sustituto que acabó llevando el nombre del original. Este se plantó hacia 1923 y Barcelona lo catalogó en 1993; mide 12 metros de alto con un tronco de 2,7 metros de perímetro. Conviene ser claro con lo que aquí está seguro. El catálogo municipal y una descripción publicada del jardín confirman los dos la especie y el árbol, pero el año de plantación se apoya solo en el registro, sin nada independiente con lo que contrastarlo, así que esos 103 años son la cifra del registro y no un dato corroborado. Es el árbol más blando de los Jardins de la Vil·la Amèlia. El pimentero del Perú cuelga el follaje en ramillas finas y lloronas que se mueven con cualquier soplo de aire, una física completamente distinta de la de los plátanos y los pinos de alrededor, y los racimos de bayas se ponen de un rosa polvoriento en otoño y aguantan hasta el invierno. La especie llegó a España desde los Andes con el comercio colonial en el siglo XVI, lo que la convierte en un forastero más en un jardín que un banquero construyó para su mujer y que la ciudad abrió después a todo el mundo."
-  },
-  "bcn_032": {
-   "name": "Las palmeras canarias de los Jardins de la Vil·la Amèlia",
-   "species": "Palmera canaria (Phoenix canariensis)",
-   "age_estimate": "unos 132 años",
-   "access": "Gratuito, jardín público, accesible en silla de ruedas.",
-   "transport": "Reina Elisenda (FGC), unos 8 a 10 min a pie.",
-   "story": "El registro municipal cuenta catorce. El cronista del propio jardín cuenta quince. O se ha perdido una palmera desde que se escribió el catálogo, o un árbol de la fila es otra cosa, y cuál de las dos cifras vale no está resuelto. Lo que no está en discusión: una doble hilera de palmeras canarias, plantadas hacia 1894, flanqueando la avenida principal de los Jardins de la Vil·la Amèlia como una columnata con un camino por el medio. Miden 19 metros de alto, unos 2,3 metros de perímetro de tronco, y Barcelona las catalogó juntas como un solo elemento protegido en 1994. Ponerse en un extremo y mirar avenida abajo es toda la gracia que tienen: una Phoenix canariensis es una palmera, pero catorce de 130 años son arquitectura. La especie viene de las islas Canarias y ha tenido un siglo duro en la península, donde el picudo rojo ha matado palmeras datileras en gran número desde que llegó, lo que hace que una avenida intacta de ejemplares centenarios sea menos corriente de lo que parece. Estas se plantaron cuando el jardín era todavía la Quinta Amèlia privada. Sobrevivieron a la expropiación de la finca y al derribo de su casa señorial, y hoy bordean un camino por el que puede pasear cualquiera gratis."
-  },
-  "bcn_033": {
-   "name": "El lentisco del Hort de l'Avi",
-   "species": "Lentisco (Pistacia lentiscus)",
-   "age_estimate": "sin documentar; el registro no da año de plantación",
-   "access": "Gratuito. Está justo en un camino público de acceso a la franja boscosa de entrada libre del Park Güell (la entrada trasera por el carrer de la Farigola y el carrer del Torrent del Remei), aparte tanto de la Zona Monumental de pago como del propio huerto del Hort de l'Avi, que es un huerto comunitario vallado para vecinos mayores de 65 años y no es donde está el árbol.",
-   "transport": "Vallcarca o Lesseps (Metro L3), unos 15 a 20 min a pie cuesta arriba por el carrer de la Farigola.",
-   "story": "Un lentisco debería quedarse en mata. Pistacia lentiscus crece bajo y matorral por todo el Mediterráneo, de esas plantas a las que nadie mira dos veces, y a este nadie le pasó el aviso. Dos de sus ramas principales salen casi horizontales, más gruesas que una muñeca, una sosteniéndose en el aire y la otra apoyada sin más en el suelo, y entre las dos extienden una copa de 20 a 25 metros cuadrados desde una base que no es más ancha que una puerta. Eso es el porte de un arbusto a escala de árbol, que es presumiblemente por lo que Barcelona lo catalogó en 2013 como árbol de interés local y no como jardinería. Está en la entrada trasera de la ladera boscosa gratuita del Park Güell, en el camino que entra desde el carrer de la Farigola, justo al lado del Hort de l'Avi. Ese huerto abrió en 1986, después de que un grupo de vecinos mayores de Gràcia pidiera a la ciudad los terrenos de la antigua casa del guarda del parque, y todavía hoy lo trabajan vecinos de más de 65 años por sorteo. El lentisco crece en el camino de acceso compartido, no dentro de las parcelas valladas, así que se llega sin permiso. Nadie lo ha datado: ninguna fuente registra un año de plantación y ningún dendrocronólogo lo ha medido. Está a unos 500 metros del acebuche del Park Güell."
-  },
-  "bcn_034": {
-   "name": "El alcanforero del Jardí Botànic Històric",
-   "species": "Alcanforero (Cinnamomum camphora)",
-   "age_estimate": "unos 93 años",
-   "access": "Entrada de pago al Jardí Botànic Històric, gratuito ciertos días de la semana.",
-   "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
-   "story": "Este alcanforero es casi el doble de ancho que de alto. El registro municipal le da una copa de 27 metros de diámetro y una altura de solo 15, las proporciones de un árbol que nunca tuvo que competir por la luz y se extendió a lo ancho, con un tronco de 4,4 metros de perímetro. El alcanfor es a lo que huele su madera al cortarla, y durante casi todo el siglo XX fue de lo que estaban hechas las bolas de naftalina y las pomadas para el pecho, destilado de virutas de Cinnamomum camphora embarcadas desde Taiwán y Japón hasta que los químicos aprendieron a fabricarlo de forma sintética. El árbol de Barcelona se plantó en 1933 en el Sector de la Masia del viejo jardín botánico de Montjuïc, una colección trazada sobre un terreno rehecho para la Exposición Internacional de 1929. Desde ahí ha pasado por la guerra que estalló tres años después, por las décadas siguientes en las que el jardín se dejó medio asilvestrar y por la apertura del nuevo jardín botánico, más arriba en la ladera, en 1999, que es lo que convirtió a este en el jardín histórico y no simplemente en el jardín. La ciudad lo catalogó como Árbol de Interés Local en 1993. El suelo pertenece al museo de ciencias y no al ayuntamiento, cuestión de papeleo y no de una verja cerrada."
-  },
-  "bcn_035": {
-   "name": "La falsa acacia de la Ciutadella",
-   "species": "Falsa acacia (Robinia pseudoacacia)",
-   "age_estimate": "sin datar; la columna de edad del registro pone '100 anys' en lugar de un año",
-   "access": "Gratuito, parque público.",
-   "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 a 8 min a pie.",
-   "story": "Un tronco de 4,3 metros en un árbol de solo 12 de alto convierte a esta en la falsa acacia más recia de Barcelona y la única que la ciudad ha puesto nunca en su registro. Las falsas acacias suelen subir finas y rápidas y luego caerse. Esta tiró a lo ancho y se quedó, y crece en el parterre entre el Passeig de Joaquim Renart y la Cascada, la fuente monumental en la que trabajó un Gaudí joven como ayudante de estudiante. Qué edad tiene no lo ha establecido nadie. La columna de edad del registro guarda las palabras '100 anys' donde debería haber un año de plantación, que es la estimación de alguien escrita en la casilla equivocada y no una fecha comprobada, y el árbol solo se catalogó en 2024. Lo que sí es seguro es el suelo que pisa. El parque es obra de 1888, trazado para la Exposición Universal sobre el solar despejado de la ciudadela borbónica que Barcelona pasó 150 años detestando y acabó derribando. La especie fue uno de los primeros árboles americanos en llegar a Europa, plantado en París hacia 1601 por Jean Robin, el jardinero real que le da nombre. A finales de primavera la copa se llena de flores blancas de guisante, lo bastante pesadas para colgar y lo bastante fuertes para olerlas antes de haber encontrado el árbol."
-  },
-  "bcn_036": {
-   "name": "El plátano de la Ciutadella",
-   "species": "Plátano de sombra (Platanus x acerifolia)",
-   "age_estimate": "fecha de plantación nunca registrada",
-   "access": "Gratuito, parque público.",
-   "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 a 8 min a pie.",
-   "story": "El registro municipal mete 273 plátanos bajo una sola ficha para las Rambles. Este es uno de los pocos que catalogó por separado. El plátano es el árbol por defecto de las calles de Barcelona, plantado a cientos y podado a nudillos cada invierno, que es exactamente lo que hace que merezca la pena caminar hasta uno sin podar. Este está entre el lago de la Ciutadella y la valla del zoo, con un tronco de 3,6 metros bajo una copa de 24 metros de diámetro y 25 de altura, casi tan ancho como alto. Esa forma es sencillamente lo que hace un plátano cuando nadie interviene. Su edad es honestamente desconocida: el registro tomó todas las medidas y dejó en blanco el año de plantación, ninguna otra fuente lo fecha, y entró en la lista en 2021 solo por su tamaño. El parque de alrededor abrió en 1888 para la Exposición Universal y la mayoría de sus árboles grandes son de aquellas obras o de las décadas inmediatas, lo que sitúa a este por encima del siglo sin demostrar nada. La especie es un accidente de partida, un híbrido del plátano americano y el oriental que apareció en un jardín del siglo XVII y demostró aguantar el hollín, la sequía y las raíces compactadas mejor que cualquiera de sus dos padres."
-  },
-  "bcn_037": {
-   "name": "El pitosporo de la Ciutadella",
-   "species": "Pitosporo (Pittosporum tobira)",
-   "age_estimate": "sin documentar; el registro no da año de plantación",
-   "access": "Gratuito, parque público.",
-   "transport": "Arc de Triomf (Metro L1) o Ciutadella-Vila Olímpica (Metro L4), 5 a 8 min a pie.",
-   "story": "Esto es un seto que se escapó. Pittosporum tobira es el arbusto recortado de rigor en los aparcamientos y las entradas de hotel del Mediterráneo, mantenido casi siempre por debajo de la cintura y al que casi nunca se le deja un tronco único. Este tiene un tronco de 1,55 metros de perímetro y una copa de seis metros de ancho, y por eso la ciudad lo añadió en 2017 al registro de árboles de interés local, el único de su especie en esa lista. El registro ni siquiera le anota una altura, una omisión que dice bastante de lo inesperada que es la ficha. Crece en el Parc de la Ciutadella, delante de la Glorieta de la Transsexual Sonia, el viejo templete de música del parque, que la ciudad rebautizó por una mujer asesinada allí y que hoy es uno de los memoriales de Barcelona contra la violencia hacia las personas trans. El árbol es la parte callada de ese rincón. En primavera lleva flores pequeñas de color crema que huelen a azahar con fuerza suficiente para llegar al camino, de donde viene el otro nombre de la planta, falso naranjo. Nadie lo ha datado. El pitosporo engorda tan despacio que un tronco de este tamaño sugiere décadas antes que años, pero el registro no da año de plantación y ninguna segunda fuente lo aporta."
-  },
-  "bcn_038": {
-   "name": "La araucaria de Norfolk de la Casa de la Misericòrdia",
-   "species": "Araucaria de Norfolk (Araucaria heterophylla)",
-   "age_estimate": "fecha de plantación nunca registrada",
-   "access": "Gratuito entrar al patio desde el carrer d'Elisabets o a través de la librería La Central; la cafetería sí se paga.",
-   "transport": "Catalunya (Metro L1/L3), 6 min a pie.",
-   "story": "Un árbol de una isla del Pacífico de ocho kilómetros de largo se levanta 27 metros sobre uno de los barrios más densamente construidos de Europa. La araucaria de Norfolk del patio de la Casa de la Misericòrdia es lo más alto de esta parte del Raval, visible por encima de los tejados mucho antes de encontrar la puerta del carrer d'Elisabets. Su tronco es de unos modestos 1,5 metros de perímetro, porque la especie crece como un mástil y no como un barril, sacando verticilos de ramas en pisos ordenados y tirando recta hacia arriba. Eso era precisamente el atractivo cuando Cook llegó a la isla de Norfolk en 1774 y describió aquellos árboles como una reserva de mástiles para la Marina británica. La madera resultó demasiado quebradiza y el plan quedó en nada, que es más o menos como la especie acabó de ornamental, plantada en ciudades costeras cálidas desde Sídney hasta aquí. El patio en el que está fue casa de expósitos y orfanato, y las cuatro palmeras de al lado se plantaron hacia 1904. La araucaria no tiene ninguna fecha de plantación registrada y entró en el registro municipal en 2016 por su tamaño. El patio es hoy un paso público con una librería y una cafetería dentro, lo que convierte a este en uno de los árboles grandes más fáciles de visitar de Barcelona."
-  },
-  "bcn_039": {
-   "name": "El plátano oriental de la Plaça de la Universitat",
-   "species": "Plátano oriental (Platanus orientalis)",
-   "age_estimate": "unos 93 años",
-   "access": "Gratuito, plaza pública.",
-   "transport": "Universitat (Metro L1/L2), en la propia plaza.",
-   "story": "Todos los plátanos de las calles de alrededor son híbridos. Este es uno de los padres. El registro municipal lleva once fichas distintas de plátanos de sombra y exactamente una de Platanus orientalis, la especie oriental que se cruzó con el plátano americano en algún jardín del siglo XVII para dar el árbol que hoy alinea casi todo el Eixample. La diferencia se ve en la hoja, cortada mucho más profundamente en lóbulos estrechos, y en el porte, más bajo y más suelto que el del híbrido. El registro lo fecha en 1933 y lo sitúa en 18 metros con un tronco de dos, bajo una copa casi tan ancha como alto es el árbol. Se plantó durante la Segunda República, tres años antes de la guerra, en la plaza que hay delante del edificio principal de la universidad, y ha pasado la vida entera en uno de los cruces más transitados de la ciudad: primero tranvías, luego tráfico, luego las manifestaciones que una plaza universitaria acaba reuniendo inevitablemente. La especie es el plátano de la literatura griega y persa, el árbol que Heródoto hace que Jerjes se detenga a adornar con oro camino de occidente. A este le tocan gases de escape y turno de sombra, y los lleva más o menos igual de bien."
-  },
-  "bcn_040": {
-   "name": "El aguacate de la Plaça de Can Bruixa",
-   "species": "Aguacate (Persea americana)",
-   "age_estimate": "unos 81 años",
-   "access": "Gratuito, plaza pública.",
-   "transport": "Les Corts (Metro L3), 6 min a pie.",
-   "story": "Hay un aguacate de 17 metros creciendo en una plaza de Les Corts. Persea americana es una especie centroamericana que Europa importa por contenedores y casi nunca planta, porque quiere calor, agua y nada de heladas, y porque un árbol nacido de un hueso tarda una década o más en dar fruto y luego suele decepcionar a quien lo plantó. Este se plantó en 1945 y no se ha movido desde entonces, en la Plaça de Can Bruixa, en un distrito que Barcelona había anexionado de su propio pueblo apenas en 1897. El tronco es escaso, 80 centímetros de perímetro, y la altura es la parte sorprendente: un aguacate al que nadie poda para recolectar sencillamente sube, que es la razón por la que las plantaciones comerciales mantienen los suyos bajos y anchos. La ciudad lo catalogó como Árbol de Interés Local en 2003. Está a unos 500 metros de la magnolia de los antiguos Jardins de la Maternitat, lo que convierte la pareja en una media hora cómoda a pie por una parte de la ciudad a la que casi ningún visitante llega. Que cuaje fruto un año determinado depende del invierno que acabe de pasar, y cuando lo hace la cosecha queda muy por encima de la cabeza y ahí se queda."
-  },
-  "bcn_041": {
-   "name": "El pimentero del carrer Joaquim Blume",
-   "species": "Pimentero de hoja larga (Schinus longifolia)",
-   "age_estimate": "unos 110 años",
-   "access": "Gratuito, calle pública.",
-   "transport": "Poble Sec (Metro L3), 7 min a pie.",
-   "story": "Nadie acaba de ponerse de acuerdo sobre qué es este árbol. El registro municipal lo archiva como Schinus longifolia, una especie argentina y uruguaya. Quienes lo cartografiaron en OpenStreetMap lo apuntan como Schinus polygama, el huingán chileno, y el nombre catalán que el propio registro usa para el árbol, huingan, pertenece a este segundo. Los dos son parientes cercanos de la familia del anacardo, ambos árboles sudamericanos pequeños, duros y resistentes a la sequía, y separarlos exige mirar las hojas y las espinas, no la etiqueta. Así que aquí la especie sigue siendo una pregunta abierta. La fecha no. Se plantó en 1916, lo que lo hace más viejo que casi toda la calle que lo rodea y uno de los árboles más antiguos del Poble-sec, y la ciudad lo catalogó en 1996. Es una cosa pequeña para lo que se estila en esta lista: ocho metros de alto, un tronco de 1,6 metros y una copa más o menos tan ancha como alto es el árbol, al pie de Montjuïc. La montaña de encima se levantó y se rehízo dos veces durante su vida, para la Exposición Internacional de 1929 y otra vez para los Juegos de 1992, y la calle conservó su árbol en las dos. El género es el que da las bayas rosas de pimienta, aunque esta no es la especie del molinillo."
-  },
-  "bcn_042": {
-   "name": "El naranjo de los osages del carrer Maria Montessori",
-   "species": "Naranjo de los osages (Maclura pomifera)",
-   "age_estimate": "unos 78 años",
-   "access": "Gratuito, calle pública.",
-   "transport": "Poble Sec (Metro L3), 8 min a pie.",
-   "story": "Antes del alambre de espino, este árbol era la valla. El naranjo de los osages crece denso, espinoso y rápido, y durante la década de 1850 los granjeros americanos lo plantaron en setos por los estados de la pradera para levantar una barrera que el ganado no atravesara: alta como un caballo, fuerte como un toro y cerrada como para un cerdo, según decía el reclamo de venta. El alambre de espino llegó en los años setenta del siglo XIX y liquidó el negocio en una década, momento en el que la especie ya había viajado a Europa como curiosidad y había sido ignorada en general. Barcelona tiene dos en su registro y este es el más joven, plantado en 1948 en el carrer Maria Montessori, bajo Montjuïc, con un tronco de 1,4 metros, 12 metros de altura y una copa de 15 metros de diámetro, más ancha que alto es el árbol. Su homólogo del Parc de la Ciutadella se plantó 35 años antes y es el más grueso; este tiene mejor extensión. La ciudad lo catalogó en 1998. Lo que comparten los dos es el fruto, una esfera verde y pesada del tamaño de un pomelo con la superficie como un cerebro plegado, que cae en otoño y no se lo come nada de lo que existe hoy. Está a unos minutos a pie del pimentero del carrer Joaquim Blume."
-  },
-  "bcn_043": {
-   "name": "El castaño de Indias de la Plaça Carles Buïgas",
-   "species": "Castaño de Indias (Aesculus hippocastanum)",
-   "age_estimate": "unos 89 años",
-   "access": "Gratuito, plaza pública.",
-   "transport": "Espanya (Metro L1/L3), 8 min a pie subiendo por la Avinguda Maria Cristina.",
-   "story": "El registro de árboles de interés local de Barcelona pasa de las doscientas fichas y contiene exactamente un castaño de Indias. Es este, y la fecha que lleva es 1937, que no era un buen año para plantar nada en esta ciudad. Los bombardeos aéreos sobre Barcelona se sucedieron aquel año y el siguiente, y la montaña justo encima de la plaza tenía posiciones antiaéreas. El árbol se plantó igualmente y hoy mide 20 metros de alto con un tronco de 1,9 metros de perímetro, un tamaño decente para una especie que en realidad no pinta nada en esta latitud. Aesculus hippocastanum viene de unos pocos valles de montaña de los Balcanes, quiere veranos frescos y húmedos y tiende a enfurruñarse en las ciudades mediterráneas, con las hojas pardas por los bordes en agosto si el año viene duro. Este lleva 89 temporadas aguantándolo. Comparte la Plaça de Carles Buïgas con una tipuana que también está en el registro, así que los dos son una parada y no dos, en la subida desde Espanya hacia los jardines de Montjuïc. Las castañas son la razón por la que el árbol viajó tan lejos de su área natural y por la que generaciones de niños lo conocían por su nombre: brillantes, inútiles y, durante un rato, el objeto más valioso de un patio de colegio."
-  },
-  "bcn_044": {
-   "name": "El azufaifo de los Jardins Joan Maragall",
-   "species": "Azufaifo (Ziziphus jujuba)",
-   "age_estimate": "unos 68 años",
-   "access": "Gratuito, pero los jardines solo abren los fines de semana. Consulte el horario actual antes de ir.",
-   "transport": "Espanya (Metro L1/L3), 15 min a pie subiendo por Montjuïc, o bus 55 hasta el Estadi Olímpic.",
-   "story": "Este jardín abre dos días por semana, que es casi toda la razón por la que casi nadie ha visto el árbol que hay dentro. Los Jardins Joan Maragall rodean el Palauet Albéniz, un pequeño pabellón neoclásico construido para la Exposición Internacional de 1929 y conservado desde entonces como la residencia que la familia real española usa cuando está en Barcelona. Al público se le deja entrar los fines de semana. El azufaifo que hay allí se plantó en 1958, llega a 10 metros con un tronco de 1,6 y una copa de 12 metros de diámetro, y se catalogó como árbol de interés local en 1998. Ziziphus jujuba lleva unos cuatro mil años cultivándose en China, lo que lo convierte en uno de los frutales más antiguos de la tierra, y llegó al Mediterráneo lo bastante pronto como para que los romanos ya lo cultivaran. El fruto es del tamaño de una aceituna y pasa del verde a un rojo pardo oscuro. Fresco sabe a manzana algo harinosa; seco y arrugado sabe a dátil, de donde salió su nombre inglés de dátil chino. Es un árbol espinoso, lento y obstinado que crece en suelo pobre y seco, y aquí está plantado como puro ornamento. Compruebe los días de apertura: entre semana la verja es lo más cerca que se llega."
-  },
-  "bcn_045": {
-   "name": "El ginkgo de los Jardins de Mossèn Cinto Verdaguer",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "unos 68 años",
-   "access": "Gratuito, jardín público, abierto a diario.",
-   "transport": "Paral·lel (Metro L2/L3) y después el funicular de Montjuïc, 5 min a pie.",
-   "story": "El ginkgo no tiene parientes vivos. No es un género raro dentro de una familia grande: el orden entero al que pertenece se extinguió salvo por esta única especie, y las hojas fósiles de hace 200 millones de años se parecen tanto a las actuales que un botánico las empareja a ojo. Sobrevivió en un puñado de arboledas de templos chinos y de allí lo sacaron primero los monjes y después los coleccionistas europeos. El de Barcelona es un ejemplar joven, plantado en 1958 en los Jardins de Mossèn Cinto Verdaguer, en la ladera de Montjuïc, y hoy mide 17 metros de alto con una copa casi igual de ancha y un tronco de 1,4 metros de perímetro. El jardín en el que está es el jardín de bulbos de la ciudad, aterrazado y conocido sobre todo por sus tulipanes y narcisos en primavera y sus nenúfares en verano, lo que le deja al ginkgo el otoño entero para él solo. Ese es el mes por el que merece la pena venir. Las hojas pasan del verde a un amarillo mantequilla plano en unas dos semanas y luego caen casi todas de golpe, a menudo en un solo día sin viento, dejando en el suelo un círculo dorado que es la gracia entera del árbol. La ciudad lo catalogó en 1998."
-  },
-  "bcn_046": {
-   "name": "El árbol del amor de la Plaça Joanic",
-   "species": "Árbol del amor (Cercis siliquastrum)",
-   "age_estimate": "unos 70 años",
-   "access": "Gratuito, plaza pública.",
-   "transport": "Joanic (Metro L4), en la propia plaza.",
-   "story": "Este árbol es el doble de ancho que de alto. Cinco metros de altura, una copa de diez metros de diámetro y un tronco de 1,8 metros de perímetro, las proporciones de algo que decidió pronto extenderse en lugar de trepar. Es un Cercis siliquastrum, y el nombre que lleva en el registro municipal, arbre de l'amor, árbol del amor, es bastante más amable que el otro que arrastra la especie, árbol de Judas. Ese segundo nombre viene de la historia de que Judas se ahorcó de un Cercis y sus flores blancas se volvieron rojas de vergüenza; la explicación más probable es que árbol de Judea se oyera mal en algún punto del camino, siendo Judea un sitio donde crece de verdad en estado silvestre. Lo que el árbol hace en abril justifica los dos nombres. Las flores salen directamente de la corteza, de la madera vieja de las ramas y del propio tronco, antes de que se haya abierto una sola hoja, así que el esqueleto entero se pone magenta durante quince días y después verdea como si no hubiera pasado nada. Este se plantó en 1956 en la Plaça de Joanic y se catalogó en 1996. Está a unos 330 metros de la encina del carrer de l'Encarnació, el árbol medido más antiguo de Barcelona, lo que convierte a los dos en un paseo corto y poco común de bueno por el centro de Gràcia."
-  },
-  "bcn_047": {
-   "name": "El roble australiano de Drets Humans",
-   "species": "Roble australiano (Grevillea robusta)",
-   "age_estimate": "",
-   "access": "Gratuito, jardín público, sin verja.",
-   "transport": "Zona Franca (Metro L2), unos 10 min a pie.",
-   "story": "Donde hoy crece este roble australiano había antes una fábrica de Philips, y el jardín que lo rodea conserva la huella de esa historia: parterres para los trabajadores trazados en los años 60, rediseñados décadas después como un parque público dedicado a los derechos humanos, con 30 paneles iluminados que citan la Declaración Universal artículo por artículo.\n\nEl árbol es anterior a todo eso. Barcelona lo catalogó como Árbol de Interés Local en 2011, y el registro municipal le da un perímetro de 4,1 metros y una altura de 32, entre los robles sedosos más grandes registrados fuera de Australia. Una medición independiente de 2017 encontró un tronco bastante más estrecho, 2,4 metros, lo que o bien son seis años de crecimiento inusualmente vigoroso, o dos formas distintas de medir el mismo árbol. Aquí se recogen las dos cifras en vez de elegir una.\n\nGrevillea robusta es originario de las selvas subtropicales del este de Australia, cultivado en todo el mundo como ornamental y, más prosaicamente, como árbol nodriza en plantaciones de café. Este no cuida de nada. Está solo, en un jardín público construido sobre un terreno que una fábrica usó antes para otra cosa completamente distinta."
-  },
-  "bcn_048": {
-   "name": "El almez de los Jardins dels Drets Humans",
-   "species": "Almez (Celtis australis)",
-   "age_estimate": "",
-   "access": "Gratuito, jardín público, sin verja.",
-   "transport": "Zona Franca (Metro L2), unos 10 min a pie.",
-   "story": "Barcelona protegió doce árboles de la ciudad de una sola vez en mayo de 2024, y este almez de los Jardins dels Drets Humans fue uno de ellos, catalogado por su tamaño más que por su edad: 2,9 metros de perímetro y una copa de 20 metros, lo bastante ancha como para dar sombra a un buen tramo del jardín.\n\nComparte el jardín con un vecino mucho más grande, un roble australiano a unos 130 metros, y entre los dos dan al jardín de los Derechos Humanos dos árboles catalogados donde la mayoría de parques de Barcelona no tiene ninguno. El jardín en sí es más joven de lo que aparenta cualquiera de los dos árboles: abrió al público solo en 2007, en un terreno que había pertenecido a la fábrica de Philips desde los años 60, cuando una paisajista de la propia empresa trazó los jardines para que los trabajadores pudieran salir en los descansos.\n\nCeltis australis es uno de los árboles de calle más comunes del Mediterráneo, resistente a los veranos calurosos y secos de Barcelona, y apreciado desde antiguo por una madera que se dobla sin partirse, usada tradicionalmente para bastones y mangos de herramientas. De este no se conserva fecha de plantación. Si la sabe, en los registros del jardín no consta."
-  },
-  "bcn_049": {
-   "name": "El árbol del coral costero de Montjuïc",
-   "species": "Árbol del coral costero (Erythrina caffra)",
-   "age_estimate": "",
-   "access": "Gratuito, jardín público, sin verja, abierto a diario.",
-   "transport": "Teleférico de Montjuïc (estación Miramar), unos 5 min a pie; o autobús hasta Avinguda Miramar.",
-   "story": "El mayor jardín de cactus de Barcelona tiene un árbol que no es ningún cactus: un árbol del coral del sur de África, de 3 metros de perímetro y una copa que se abre 20 metros, ancha como para dar sombra ella sola a un buen tramo de las seis hectáreas del jardín.\n\nErythrina caffra florece antes de echar hoja, ramas desnudas que estallan en espigas gruesas de color naranja rojizo, un espectáculo por el que se planta en jardines de todo el mundo. Barcelona incorporó este ejemplar a su catálogo de árboles de interés local de una sola vez con otros once, en mayo de 2024, protegido por su tamaño y no por ninguna edad conocida. Nadie lo ha datado.\n\nEl jardín que lo rodea abrió en 1970 en la ladera de Montjuïc que mira al mar, dedicado al poeta mallorquín Miquel Costa i Llobera y construido específicamente para mostrar cactus y plantas suculentas de las regiones áridas del mundo, más de 800 especies en terrazas que bajan escalonadas hacia el puerto. El árbol del coral destaca precisamente porque no encaja en ese tema, una importación africana de hoja ancha en un jardín por lo demás dedicado a las espinas. Entrada gratuita, sin verja, con una de las mejores vistas sobre el puerto de Barcelona de propina."
-  },
-  "bcn_050": {
-   "name": "La yuca de los Jardins de Mossèn Costa i Llobera",
-   "species": "Yuca (Yucca filifera)",
-   "age_estimate": "",
-   "access": "Gratuito, jardín público, sin verja, abierto a diario.",
-   "transport": "Teleférico de Montjuïc (estación Miramar), unos 5 min a pie; o autobús hasta Avinguda Miramar.",
-   "story": "La mayoría de quien cultiva una yuca en su jardín tiene, como mucho, algo de un par de metros de alto. La yuca de Barcelona, en el camino junto al mar, bajo las escaleras que suben a Miramar en Montjuïc, mide 12 metros de altura con un tronco de 1,6 metros de perímetro, un ejemplar de verdad arbóreo de una planta que casi todo el mundo imagina del tamaño de un arbusto.\n\nYucca filifera procede de las altiplanicies desérticas del centro de México, donde los ejemplares silvestres se ramifican con la edad en formas de candelabro y pueden sobrevivir muchas veces más que sus primas de jardín. Barcelona catalogó este ejemplar como árbol de interés local solo en 2024, sin fecha de plantación registrada y sin más historia que sus propias medidas.\n\nCrece a poca distancia de un vecino igual de infrecuente, un árbol del coral africano en los jardines de cactus de más arriba, en un tramo de camino construido justamente para mostrar plantas que no tendrían por qué sobrevivir cómodamente en una ladera mediterránea. Nadie ha confirmado la edad real de este ejemplar, ni cuándo se plantó. Si la sabe, el catálogo municipal no la recoge."
-  },
-  "bcn_051": {
-   "name": "El aguacate del Teatre Lliure",
-   "species": "Aguacate (Persea americana)",
-   "age_estimate": "unos 80 años",
-   "access": "Gratuito, plaza pública frente al teatro, sin verja.",
-   "transport": "Poble Sec (Metro L3), unos 8 min a pie cuesta arriba.",
-   "story": "Un aguacate no suele figurar en ninguna lista de árboles urbanos destacables, pero Barcelona catalogó este en 1996, y con unos 80 años y 13 metros de altura ha sobrevivido a todos los usos que ha tenido el edificio de al lado. Ese edificio abrió como Palau de l'Agricultura para la Exposición Internacional de 1929, pasó después décadas como mercado central de flores, quedó vacío durante años, y reabrió en 2001 como el Teatre Lliure. El árbol, plantado hacia 1946 en algún punto de ese hueco entre pabellón de exposición y mercado de flores, es 55 años más viejo que el teatro.\n\nPersea americana es originario del centro de México y se cultiva normalmente por su fruto, no por su sombra, lo que hace inusual un ejemplar de este tamaño en una ciudad europea: 1,6 metros de perímetro con una copa de 15 metros, mucho más de lo que la mayoría imagina al oír aguacate. Está en la Plaça Margarida Xirgu, frente a la entrada del teatro, y se puede pasar por delante sin pagar entrada, haya función esa noche o no.\n\nNadie ha registrado si todavía da fruto."
-  },
-  "bcn_052": {
-   "name": "El árbol de las pagodas de Poble-sec",
-   "species": "Árbol de las pagodas (Styphnolobium japonicum)",
-   "age_estimate": "",
-   "access": "Gratuito, calle pública, sin verja.",
-   "transport": "Poble Sec (Metro L3), unos 10 min a pie.",
-   "story": "El árbol de las pagodas japonés no es japonés. Styphnolobium japonicum es originario de China, donde se ha plantado durante siglos junto a templos budistas y taoístas, y llegó a Europa con un nombre que se quedó mucho después de que los botánicos corrigieran el error. El ejemplar de Barcelona en la Carrer de la Guàrdia Urbana, a poca distancia del Teatre Grec de Montjuïc, mide 2,3 metros de perímetro y 20 de altura, incorporado al catálogo municipal de árboles de interés local en 2024.\n\nSu edad figura oficialmente como en estudio, lo cual es sincero y no evasivo: la especie puede vivir siglos en las condiciones adecuadas, pero nadie ha datado este ejemplar en concreto, ni por anillos ni por ningún otro método. Lo único registrado es el tamaño, suficiente por sí solo para ganarse la protección.\n\nEl árbol florece a finales de verano, racimos blanco crema que son uno de los pocos estallidos de color de verdad en las calles de Barcelona en agosto, cuando la mayoría de los árboles floridos de la ciudad ya han terminado. Está en una calle residencial corriente de Poble-sec, sin jardín, sin verja, sin nada que lo señale más que el propio árbol."
-  },
-  "bcn_053": {
-   "name": "El castanyer bord de la plaça de Carles Buïgas",
-   "species": "Castaño de indias (Aesculus hippocastanum)",
-   "age_estimate": "unos 89 años",
-   "access": "Gratuito, plaza pública.",
-   "transport": "Espanya (Metro L1/L3), unos 5 min a pie.",
-   "story": "Este castaño de indias se plantó hacia 1937, en plena Guerra Civil, en una ciudad todavía en manos de la República. Barcelona lo llama castanyer bord, castaño bastardo, el nombre antiguo para el Aesculus hippocastanum: se parece al castaño dulce que da la castaña catalana de otoño, pero sus frutos son amargos e incomibles.\n\nCatalogado como Árbol de Interés Local en 1997, ha alcanzado 15,5 metros de altura, un tronco de 1,84 metros de perímetro y una copa de 11 metros, notable sin ser récord, que es justo la razón de que la ciudad mantenga un catálogo de árboles de interés local: no todo árbol que merece conservarse es el más grande de la ciudad.\n\nLa plaza toma su nombre de Carles Buïgas, el ingeniero que construyó la Font Màgica, la fuente musical de Montjuïc, justo donde se alza este árbol. Quien viene a ver el espectáculo nocturno puede quedarse bajo un árbol casi tan viejo como la propia fuente.\n\nNo hemos encontrado ningún registro sobre lo generosa que es su floración cada abril comparada con otros castaños de indias de la ciudad; si lo sabes, cuéntanoslo."
-  },
-  "bcn_054": {
-   "name": "Els arbres de l'amor de la plaça Joanic",
-   "species": "Árbol del amor (Cercis siliquastrum)",
-   "age_estimate": "unos 70 años, plantados en 1956",
-   "access": "Gratuito, plaza pública.",
-   "transport": "Joanic (Metro L4), junto a la plaza.",
-   "story": "Barcelona llama a este pequeño grupo de la plaça Joanic 'els arbres de l'amor', y cada abril lo demuestran ellos solos: toda la copa estalla en flores magenta que brotan directamente de la corteza, tronco y ramas por igual, antes de que asome una sola hoja. Es una floración tan llamativa que la televisión de la ciudad suele dedicarle un reportaje cada primavera para decir dónde encontrarla ese año.\n\nLos tres troncos de aquí, plantados en 1956 en lo que hoy es Vila de Gràcia, son lo bastante viejos y grandes como para que Barcelona los catalogara como Árbol de Interés Local en 1996, algo inusual para una especie que rara vez alcanza este tamaño en la ciudad. Sus copas llegan a los 10 metros, y el tronco más ancho mide 1,65 metros de perímetro.\n\nEl arbre de l'amor toma su nombre castellano de una leyenda según la cual Judas Iscariote se ahorcó en uno; en el Mediterráneo se le conoce mejor como el árbol que tiñe de púrpura una esquina entera en primavera. Este cumple su cita cada año, en la segunda quincena de abril, cuando la pequeña plaza de Gràcia hace exactamente eso."
-  },
-  "bcn_055": {
-   "name": "El carpe del Sot de l'Estany",
-   "species": "Carpe (Carpinus betulus)",
-   "age_estimate": "unos 80 años",
-   "access": "Entrada de pago al Jardí Botànic Històric.",
-   "transport": "Poble Sec (Metro L3) o autobús hasta el Estadi Olímpic, 12 min a pie.",
-   "story": "El carpe apenas crece de forma silvestre en la península ibérica, lo que convierte al ejemplar del Jardí Botànic Històric de Barcelona en una rareza por definición. Ha encontrado el único rincón de la ciudad lo bastante fresco y húmedo para su gusto: el Sot de l'Estany, una antigua cantera hoy hondonada que ya alberga cuatro de los árboles monumentales de Barcelona, una pterocaria, dos especies de fresno y un arce entre ellos.\n\nCon unos 80 años, el carpe es más joven que esos vecinos, por lo que la ciudad lo clasifica un escalón por debajo, como Árbol de Interés Local en lugar de monumental. Aun así ha alcanzado 18 metros de altura y una copa de 13 metros, notable para una especie tan lejos de su área natural.\n\nEste jardín fue la primera colección botánica de Barcelona, en la misma colina, antes de que se abriera uno nuevo en otro punto de Montjuïc. La hondonada ha conservado su propio microclima desde entonces: más fresco, más húmedo y tercamente hospitalario con árboles que no deberían sobrevivir tan al sur. Misma entrada que el resto de veteranos del jardín."
-  }
- }
 }
