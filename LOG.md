@@ -9,6 +9,88 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (continuation of a window whose first attempt shipped 1 tree and stopped early) - Untangled a stale barcelona verify claim, fixed Oahu's 100%-paid WARN, Cagliari +1, Vancouver claimed and dispatched
+
+Started per the continuation runbook: `git pull`, then `passcheck.py --claims`
+showed two standing claims from the window's first attempt, barcelona and
+perugia, neither with a merged result. An untracked `data/research/barcelona-
+verified.json` held the barcelona claim's actual output: 4 trees, but
+`passcheck.py --pending` flagged 4 as sitting within 50m of already-published
+trees under different ids. Checked by hand rather than trusting the distance
+flag alone (per the genus-must-agree lesson): 3 were confirmed exact
+duplicates of bcn_023/024/025 (same register ids, same coordinates, a verify
+pass that skipped its own passcheck step), folded into `data/leads/
+barcelona.json` as `duplicate`. The 4th, the Osage Oranges of Torre Girona
+(different species, a distinct 2021 catalogue entry), was real: wrote its
+story myself rather than dispatching a whole pass for one tree, added the
+Spanish translation Contract J requires, merged as bcn_056. Perugia's claim
+had no work product at all (a decade-old parked file, nothing new); released
+both claims.
+
+Then `leads.py --ready`'s ~450-entry pool: hand-checked perugia (4), barcelona
+(6 more), napoli (5) and zaragoza (11), and found the same pattern this file
+has now recorded four times, every single one still carries a real
+unaddressed objection (unconfirmed access, single-sourced, girth conflicts,
+"not researched this pass") invisible to the classifier. Shipped nothing from
+it and did not re-check further cities; the pool is not where this window's
+time should go.
+
+**Rung 2: dispatched the nightly-knock watchdog by hand** (`gh workflow run
+nightly.yml`), got the same 403 an earlier attempt already logged: this
+session's token cannot dispatch workflows. Left for the knock.yml watchdog,
+which should self-heal within 2 hours regardless.
+
+**Cleared REVIEW.md's one real WARN** (its "2 WARN" count includes a false
+match on the sentence "Nothing else found at BLOCKER or WARN"): Oahu was
+100% paid entry (6 of 6), which is the exact "garden page, not a city page"
+failure Hidde's 2026-08-23 ratio ruling names. Researched a free alternative
+rather than removing anything, per the ruling's own fix: the Banyans of
+Thomas Square, Honolulu's oldest public park (free since 1850), four Ficus
+benghalensis planted 1882-1887 by Archibald Cleghorn (Princess Kaiulani's
+father), species confirmed by a University of Hawaii extension publication
+that names this exact grove as the state's reference specimen. Shipped as
+hnl_007, ratio now 86%. Fixed the city's intro/meta/question/FAQ copy, which
+was already stale from an earlier addition (still said "all in one Honolulu
+garden" with a fifth tree already living at Moanalua Gardens).
+
+**Dispatched a register verify pass on Cagliari** (rank 50, 8/20 trees, real
+remaining register supply), since it was the top of `scout_next.py
+--target`. Most flagged candidates within 3.5km turned out to be exact
+duplicates of already-published trees (checked by coordinate, correctly
+skipped); one genuine find survived, the Blue Eucalyptus of Campu Omu, a
+Tasmanian blue gum on Italy's national monumental-trees register at the edge
+of the Foresta dei Sette Fratelli near Sinnai, car-only access (~25-30 min,
+no bus route), the same honestly-labeled pattern Madeira already uses for
+its car-only trees. Shipped as cag_009. Fixed both cities' stale tree-count
+copy (intro/question_context/question_meta/FAQ) that the additions broke;
+`preflight.py` catches the numeral mismatches but not every promise, so some
+fixes were by hand-reading rather than the checker alone.
+
+**Then followed CLAUDE.md's rule 1(0) (open the unopened before deepening
+further):** `city_queue.py --next`'s top "OPENABLE TODAY" entry, Girona, was
+already checked and correctly released by an earlier attempt today (only 4
+Wikidata candidates within 15km, below the six-candidate floor, from-zero
+research off). Salamanca had only 1 register candidate, same problem, and
+is not on Hidde's from-zero list. Funchal's queue row is a naming mismatch,
+that supply is really Madeira, already published. Vancouver, however, is
+both on Hidde's 2026-08-19 from-zero list AND already holds 25 real
+register leads (`data/leads/vancouver.json`, City of Vancouver Heritage
+Register, Open Government Licence, scouted 2026-08-23 but never worked): a
+genuinely unopened city with real supply sitting untouched. Claimed and
+dispatched a verify pass, still running as this is written; the brief
+flags the real risk up front (most addresses look residential, needs an
+honest public-visible-from-the-street judgement per hard rule 10) and asks
+for a walkable cluster rather than 25 scattered singletons.
+
+Build, `qa.py` (clean apart from the known shallow-checkout single-lastmod
+false positive), `preflight.py` (177 cities, 0 problems) and
+`superlatives.py` (497 claims, no collisions) all pass.
+
+FOR HIDDE: nothing blocks. Worth knowing: `leads.py --ready`'s pool is
+mostly noise at this point (see above); a session narrowing what it promises,
+per LOG.md's own repeated note, would save every future run this same
+40-minute detour.
+
 ## 2026-08-29 (night run) - Bucaco +4, Los Angeles +1, Warsaw +1 from the standing write queue; Salzburg and Oahu claimed for the next verify pass
 
 Rung 0/1(a): health.py showed rung 2 clear apart from nightly-knock delivery
