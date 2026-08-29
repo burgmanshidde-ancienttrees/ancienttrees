@@ -378,11 +378,7 @@ struct TreeDetail: View {
                 Color.clear
                     .frame(height: 300)
                     .overlay {
-                        AsyncImage(url: url) { img in
-                            img.resizable().aspectRatio(contentMode: .fill)
-                        } placeholder: {
-                            heroFallback
-                        }
+                        TreePhoto(url: url) { heroFallback }
                     }
                     .clipped()
                     // The way to the map, in the corner a card already trained
@@ -871,9 +867,7 @@ struct TreeDetail: View {
             if let m = mine, let shot = sightings.image(m) {
                 Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
             } else if let p = tree.photo, let url = p.card {
-                AsyncImage(url: url) { img in
-                    img.resizable().aspectRatio(contentMode: .fill)
-                } placeholder: { Brand.surfaceMuted }
+                TreePhoto(url: url) { Brand.surfaceMuted }
             } else {
                 ZStack {
                     Brand.surfaceMuted

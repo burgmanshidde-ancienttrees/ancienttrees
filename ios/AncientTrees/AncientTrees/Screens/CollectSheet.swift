@@ -431,11 +431,7 @@ struct CollectSheet: View {
 
     @ViewBuilder private func thumb(_ t: Tree) -> some View {
         if let p = t.photo, let url = p.card {
-            AsyncImage(url: url) { img in
-                img.resizable().aspectRatio(contentMode: .fill)
-            } placeholder: {
-                Brand.surfaceMuted
-            }
+            TreePhoto(url: url) { Brand.surfaceMuted }
             .frame(width: 56, height: 56)
             .clipShape(.rect(cornerRadius: 11))
         } else {

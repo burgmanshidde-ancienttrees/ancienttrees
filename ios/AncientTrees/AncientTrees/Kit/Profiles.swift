@@ -97,6 +97,17 @@ public final class Profiles {
         }
     }
 
+    /// Who you were, forgotten on this phone. Called on sign-out, so the
+    /// picture and the name go with the session rather than sitting over a
+    /// signed-out settings page (Hidde, 2026-08-29: "profielfoto moet weg als
+    /// je uitlogt"). Nothing is deleted anywhere else: this row is the
+    /// account's and it comes back with the next sign-in.
+    public func forgetLocally() {
+        me = nil
+        followers = 0
+        following = 0
+    }
+
     /// Set or change what people see. The name is the only thing required; an
     /// avatar is optional and stays optional.
     public func save(name: String, avatarURL: String?, userId: String, token: String) async -> Bool {

@@ -415,7 +415,7 @@ struct TreeMap: UIViewRepresentable {
             }
             if wantMine != drawnMineIDs {
                 drawnMineIDs = wantMine
-                MapLayers.setMine(mine, on: style)
+                MapLayers.setMine(mine, on: style, clustered: clusters, zoom: map.zoomLevel)
             }
             if route.count != drawnRoute {
                 drawnRoute = route.count
@@ -433,7 +433,7 @@ struct TreeMap: UIViewRepresentable {
         /// fires on the main thread, so this states what was already true.
         @MainActor
         @objc func handleTap(_ g: UITapGestureRecognizer) {
-            guard let map = g.view as? MLNMapView else { return }
+            guard let map = g.view as? MLNMapView, let style = map.style else { return }
             let point = g.location(in: map)
             // A finger is wider than a pixel. Ask over a small square so a tap
             // near a pin counts as a tap on it, which is what every map does.
@@ -459,7 +459,7 @@ struct TreeMap: UIViewRepresentable {
                 // fits their spread on screen. That guarantees separation: a
                 // spread filling the viewport puts its members hundreds of
                 // points apart, against the sixty that makes them one bubble.
-                let members = MapLayers.clusterMembers(at: cluster.coordinate)
+                let members = MapLayers.clusterMembers(at: cluster.coordinate, on: style)
                 map.setCenter(Coordinator.centre(of: members) ?? cluster.coordinate,
                               zoomLevel: Coordinator.zoomToSplit(members, in: map),
                               animated: true)
@@ -592,7 +592,6 @@ enum MapStyle {
 @MainActor
 enum MapLayers {
     static let treeSource = "at-trees"
-    static let mineSource = "at-mine"
     static let routeSource = "at-route"
     static let treeLayer = "at-trees-pin"
     static let peakLayer = "at-trees-peak"
@@ -624,43 +623,67 @@ enum MapLayers {
     /// colour on this map is spoken for: moss is ours, white is the ring every
     /// pin wears, blue is a ticket and gold is Plus. See photoPin.
     private static let ink = UIColor(red: 0.15, green: 0.19, blue: 0.12, alpha: 1)
-    /// Which pin images each style already carries. See setTrees for why this
-    /// is not a question asked of MLNStyle.
+    /// EVERYTHING THIS FILE REMEMBERS IS PER STYLE, and that is a correctness
+    /// fix rather than tidiness. This app has several map views alive at once:
+    /// the Map tab, My trees, a tree page's map, the pin picker.
     ///
-    /// PER STYLE since 2026-08-28, and that is a correctness fix rather than
-    /// tidiness. It was ONE shared set, and this app has several map views
-    /// alive at once: the Map tab, My trees, a tree page's map, the pin
-    /// picker. Two ways that went wrong, both of them silent.
+    /// The image register learned this on 2026-08-28 and the rest of the state
+    /// did not, so the same class of bug stayed live in five other statics
+    /// until 2026-08-29 (Hidde, both days: "de kaart verliest nog steeds z'n
+    /// pin als ik uitzoom"). Two ways it went wrong, both silent.
     ///
-    /// One: whichever map loaded last called install(), which cleared the set
-    /// for all of them, and cluster() then wrote its bubble images to
-    /// `mapRef?.style`, the style of whichever map loaded LAST rather than the
-    /// one being drawn.
+    /// `leaves` held "the trees", so opening a tree page, whose map draws one
+    /// tree, replaced it for every map in the app. Going back and zooming out
+    /// re-clustered the Map tab from that single tree, and the map emptied.
+    /// Nothing redraws it, because the coordinator thinks it has already drawn
+    /// what it was asked for.
     ///
-    /// Two, and this one needs no clearing at all: the Map tab registers a
-    /// pin image, the shared set now says that name is done, and My trees asks
-    /// the same question about ITS style, is told yes, and never sets the
-    /// image. Its icon name then points at nothing.
+    /// `writeCount` numbered the GeoJSON files, and each write deletes the one
+    /// before it. Two maps sharing the counter therefore delete each other's
+    /// file while the other's source is still reading it.
     ///
-    /// Either way MapLibre draws nothing and logs nothing, which is this
-    /// file's oldest and most expensive failure mode. Keyed by the style
-    /// object, two maps cannot poison each other's register.
-    private static var registeredByStyle: [ObjectIdentifier: Set<String>] = [:]
+    /// A weak-keyed table rather than a dictionary of ObjectIdentifier: a
+    /// dealloced style's key can be reused by a new object, and inheriting a
+    /// dead map's cluster state is the same bug pointing the other way.
+    final class StyleState {
+        var registered: Set<String> = []
+        /// Every tree of OURS as a point feature, kept so clustering can be
+        /// recomputed on a zoom change without rebuilding any of this.
+        var leaves: [MLNPointFeature] = []
+        /// And every tree the person added themselves. Kept apart only so a
+        /// change to one does not mean rebuilding the other; they cluster
+        /// together, which is the whole point.
+        var mine: [MLNPointFeature] = []
+        var lastBucket: Int = .min
+        /// The zoom the pins were last built for. See the hysteresis in cluster().
+        var lastClusterZoom: Double = -99
+        var lastClustered = true
+        /// The identifier the live tree source currently carries. See apply().
+        var liveSourceID = treeSource
+        var writeCount = 0
+        /// This style's own slot in the temporary directory.
+        let seq: Int
+        init(seq: Int) { self.seq = seq }
+    }
+
+    private static let states = NSMapTable<MLNStyle, StyleState>.weakToStrongObjects()
+    private static var seq = 0
+
+    private static func state(for style: MLNStyle) -> StyleState {
+        if let s = states.object(forKey: style) { return s }
+        seq += 1
+        let s = StyleState(seq: seq)
+        states.setObject(s, forKey: style)
+        return s
+    }
 
     private static func hasImage(_ name: String, on style: MLNStyle) -> Bool {
-        registeredByStyle[ObjectIdentifier(style), default: []].contains(name)
+        state(for: style).registered.contains(name)
     }
 
     private static func noteImage(_ name: String, on style: MLNStyle) {
-        registeredByStyle[ObjectIdentifier(style), default: []].insert(name)
+        state(for: style).registered.insert(name)
     }
-    /// Clustering options, set by install() and used by setTrees when it builds
-    /// the source. They cannot be applied later: a source is clustered or not
-    /// from birth.
-    private static var treeOptions: [MLNShapeSourceOption: Any] = [:]
-    private static var writeCount = 0
-    /// The identifier the live tree source currently carries. See apply().
-    private static var liveSourceID = treeSource
     // There was a `mapRef` here, one shared weak pointer to "the map", and it
     // was removed on 2026-08-28 with the last thing that read it. A single
     // static naming one of four live map views is a bug waiting to be written
@@ -669,35 +692,29 @@ enum MapLayers {
     // is drawing.
 
     static func install(on style: MLNStyle, clustered: Bool) {
-        // This style only. Clearing every style's register is what let one map
-        // blind another.
-        registeredByStyle[ObjectIdentifier(style)] = []
+        // A FRESH state for this style. A style loads once per map view, so
+        // this is where a map starts remembering, and starting clean is what
+        // keeps one map from inheriting another's.
+        seq += 1
+        states.setObject(StyleState(seq: seq), forKey: style)
         style.setImage(pin(colour: moss, glyph: nil), forName: "at-pin-default")
         style.setImage(minePin(), forName: "at-pin-mine")
 
-        var options: [MLNShapeSourceOption: Any] = [:]
-        if clustered {
-            // NSNumber, explicitly. These cross into Objective-C and a Swift Int
-            // or Bool does not always arrive as the number the clusterer expects;
-            // a mis-read radius is indistinguishable from "everything is one
-            // cluster", which is exactly what the map was showing.
-            options[.clustered] = NSNumber(value: true)
-            options[.clusterRadius] = NSNumber(value: 44)
-            // Past this the pile has to open, or the subject of a tree page
-            // disappears into a bubble marked 11.
-            options[.maximumZoomLevelForClustering] = NSNumber(value: 15)
-        }
         // The source is NEVER given MapLibre's own clustering options. They do
         // not work: see the note on cluster() below. We cluster ourselves and
         // hand this source the result, so from its point of view it is a plain
         // collection of points.
-        // No tree source here. apply() is the only place one is ever made,
-        // because a source that has already existed under this identifier does
-        // not load: see the note there.
-        _ = options
-        liveSourceID = treeSource
-        let mine = MLNShapeSource(identifier: mineSource, shape: nil, options: nil)
-        style.addSource(mine)
+        //
+        // No tree source here, and since 2026-08-29 no separate source for the
+        // trees somebody added themselves either. They are features in the same
+        // source now, so they land in the same grid and join the same counts
+        // (Hidde: "zelfgemaakte bomen moeten gewoon mee clusteren met de
+        // getallen als je uitzoomt"). A second source could never do that: a
+        // clusterer only ever sees the points it was handed.
+        //
+        // apply() is the only place a source is ever made, because a source
+        // that has already existed under this identifier does not load: see the
+        // note there.
         let route = MLNShapeSource(identifier: routeSource, shape: nil, options: nil)
         style.addSource(route)
 
@@ -721,18 +738,6 @@ enum MapLayers {
         guessed.lineDashPattern = NSExpression(forConstantValue: [0.5, 2.5])
         guessed.predicate = NSPredicate(format: "real == NO")
         style.addLayer(guessed)
-
-        let minePins = MLNSymbolStyleLayer(identifier: mineLayer, source: mine)
-        // PER FEATURE, not one image for all of them: a tree you added
-        // wears YOUR photograph (Hidde, 2026-08-27: "kunnen we my trees de
-        // foto in het icoontje geven aangezien je m alleen kan toevoegen door
-        // een foto, met een gouden randje ofzo"). He is right that the
-        // photograph is the thing: it is the only way a tree gets in there, so
-        // it is also the only pin on this map that can be a picture of the
-        // actual tree rather than a drawing of its species.
-        minePins.iconImageName = NSExpression(forKeyPath: "icon")
-        minePins.iconAllowsOverlap = NSExpression(forConstantValue: true)
-        style.addLayer(minePins)
 
     }
 
@@ -797,7 +802,7 @@ enum MapLayers {
                             countKey: 1, kindKey: "tree", "at_label": ""]
             features.append(f)
         }
-        leaves = features
+        state(for: style).leaves = features
         cluster(on: style, zoom: zoom, clustered: clustered, force: true)
     }
 
@@ -818,6 +823,7 @@ enum MapLayers {
     /// The file name is new every time because MapLibre caches a source's URL:
     /// rewriting the same path leaves the previous contents in place.
     private static func apply(_ features: [MLNPointFeature], on style: MLNStyle, clustered: Bool) {
+        let st = state(for: style)
         var out: [[String: Any]] = []
         out.reserveCapacity(features.count)
         for f in features {
@@ -828,12 +834,16 @@ enum MapLayers {
         }
         let doc: [String: Any] = ["type": "FeatureCollection", "features": out]
         guard let data = try? JSONSerialization.data(withJSONObject: doc) else { return }
-        writeCount += 1
+        st.writeCount += 1
+        // NAMED AFTER THIS STYLE. The counter used to be shared, so two live
+        // maps numbered their files from one sequence and each deleted the
+        // other's the moment it wrote its own, while the other's source was
+        // still reading it.
         let file = FileManager.default.temporaryDirectory
-            .appendingPathComponent("at-trees-\(writeCount).geojson")
+            .appendingPathComponent("at-trees-\(st.seq)-\(st.writeCount).geojson")
         guard (try? data.write(to: file)) != nil else { return }
 
-        for id in [clusterCount, clusterLayer, peakLayer, haloLayer, treeLayer] {
+        for id in [clusterCount, clusterLayer, peakLayer, haloLayer, treeLayer, mineLayer] {
             if let layer = style.layer(withIdentifier: id) { style.removeLayer(layer) }
         }
         // A NEW identifier as well as a new file. Re-adding a source under an
@@ -841,24 +851,16 @@ enum MapLayers {
         // file is read, no error is raised, and `features(matching:)` returns
         // zero. Measured, 2026-08-24. The layer identifiers stay fixed, which
         // is what the tap handler reads, so nothing downstream notices.
-        if let old = style.source(withIdentifier: liveSourceID) { style.removeSource(old) }
-        liveSourceID = "\(treeSource)-\(writeCount)"
-        let source = MLNShapeSource(identifier: liveSourceID, url: file, options: [:])
+        if let old = style.source(withIdentifier: st.liveSourceID) { style.removeSource(old) }
+        st.liveSourceID = "\(treeSource)-\(st.seq)-\(st.writeCount)"
+        let source = MLNShapeSource(identifier: st.liveSourceID, url: file, options: [:])
         style.addSource(source)
         addTreeLayers(on: style, source: source, clustered: clustered)
         // Yesterday's file is no longer read once the new source is in.
         let stale = FileManager.default.temporaryDirectory
-            .appendingPathComponent("at-trees-\(writeCount - 1).geojson")
+            .appendingPathComponent("at-trees-\(st.seq)-\(st.writeCount - 1).geojson")
         try? FileManager.default.removeItem(at: stale)
     }
-
-    /// Every tree as a point feature, kept so clustering can be recomputed on a
-    /// zoom change without rebuilding any of this.
-    private static var leaves: [MLNPointFeature] = []
-    private static var lastBucket: Int = .min
-    /// The zoom the pins were last built for. See the hysteresis in cluster().
-    private static var lastClusterZoom: Double = -99
-    private static var lastClustered = true
 
     /// Past this there is nothing left to pile up, and the subject of a tree
     /// page should not disappear into a bubble marked 11.
@@ -886,6 +888,24 @@ enum MapLayers {
         (Int64(floor(x / cell)) << 32) | Int64(floor(y / cell))
     }
 
+    /// WHICH POINTS FALL TOGETHER, as groups of indices into what was handed in.
+    ///
+    /// Pure and nonisolated on purpose: it is the whole of the clustering
+    /// decision, so a test can ask the question that cannot be asked of a map
+    /// (does a tree somebody added themselves join the pile beside it) without
+    /// a simulator, a style or a single pixel.
+    nonisolated static func groups(of coords: [CLLocationCoordinate2D],
+                                   cell: Double) -> [[Int]] {
+        var cells: [Int64: [Int]] = [:]
+        for (i, c) in coords.enumerated() {
+            let x = (c.longitude + 180.0) / 360.0
+            let lat = min(max(c.latitude, -85.05), 85.05) * .pi / 180.0
+            let y = (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0
+            cells[cellKey(x: x, y: y, cell: cell), default: []].append(i)
+        }
+        return Array(cells.values)
+    }
+
     /// OUR OWN CLUSTERING, 2026-08-24, because MapLibre's does not work here.
     ///
     /// Ten hypotheses were tested across two days. With
@@ -911,8 +931,17 @@ enum MapLayers {
     /// that does this behaves. Recomputed once per whole zoom level, so a pan
     /// costs nothing and a pinch costs one pass over the trees.
     static func cluster(on style: MLNStyle, zoom: Double, clustered: Bool, force: Bool = false) {
+        let st = state(for: style)
+        // OURS AND YOURS IN ONE PASS (Hidde, 2026-08-29: "zelfgemaakte bomen
+        // moeten gewoon mee clusteren met de getallen als je uitzoomt"). They
+        // used to live in a source of their own, which cannot cluster with
+        // anything: a grid only sees the points it is handed. So a city of
+        // forty trees collapsed to one bubble marked 40 with your own pin
+        // hanging beside it at full size, saying nothing except that it had
+        // been left out of the arithmetic.
+        let all = st.leaves + st.mine
         let bucket = clustered && zoom < clusterMaxZoom ? Int(floor(zoom)) : 99
-        if !force && bucket == lastBucket && clustered == lastClustered { return }
+        if !force && bucket == st.lastBucket && clustered == st.lastClustered { return }
         // HYSTERESIS, or the pins blink out while you pan (Hidde, 2026-08-24:
         // "de iconen verdwijnen als ik over de map scroll"). A pan wobbles the
         // zoom by hundredths, and a wobble across a whole-number boundary used
@@ -920,13 +949,13 @@ enum MapLayers {
         // layers, writing a file and letting MapLibre load it, and for that
         // moment there are no pins at all. A real zoom change moves far more
         // than this; a pan never does.
-        if !force && bucket != 99 && abs(zoom - lastClusterZoom) < 0.45 { return }
-        lastBucket = bucket
-        lastClustered = clustered
-        lastClusterZoom = zoom
+        if !force && bucket != 99 && abs(zoom - st.lastClusterZoom) < 0.45 { return }
+        st.lastBucket = bucket
+        st.lastClustered = clustered
+        st.lastClusterZoom = zoom
 
         if bucket == 99 {
-            apply(leaves, on: style, clustered: clustered)
+            apply(all, on: style, clustered: clustered)
             return
         }
 
@@ -934,17 +963,9 @@ enum MapLayers {
         // fraction of the world and no trigonometry is needed per tree.
         let worldPoints = 512.0 * pow(2.0, zoom)
         let cell = clusterCellPoints / worldPoints
-        var cells: [Int64: [MLNPointFeature]] = [:]
-        for f in leaves {
-            let x = (f.coordinate.longitude + 180.0) / 360.0
-            let lat = min(max(f.coordinate.latitude, -85.05), 85.05) * .pi / 180.0
-            let y = (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0
-            cells[cellKey(x: x, y: y, cell: cell), default: []].append(f)
-        }
-
         var out: [MLNPointFeature] = []
-        out.reserveCapacity(cells.count)
-        for (_, group) in cells {
+        for indices in groups(of: all.map(\.coordinate), cell: cell) {
+            let group = indices.map { all[$0] }
             if group.count == 1 {
                 out.append(group[0])
                 continue
@@ -988,25 +1009,21 @@ enum MapLayers {
     /// empty, 974 features in and zero out with no error (see cluster()). So
     /// four bounding-box keys on a bubble would mean four dead keys on all
     /// 1,800 leaves. Regrouping costs one pass over the trees, on a tap.
-    static func clusterMembers(at coordinate: CLLocationCoordinate2D) -> [CLLocationCoordinate2D] {
-        guard lastBucket != 99 else { return [] }
-        let worldPoints = 512.0 * pow(2.0, lastClusterZoom)
+    static func clusterMembers(at coordinate: CLLocationCoordinate2D,
+                               on style: MLNStyle) -> [CLLocationCoordinate2D] {
+        let st = state(for: style)
+        guard st.lastBucket != 99 else { return [] }
+        let worldPoints = 512.0 * pow(2.0, st.lastClusterZoom)
         let cell = clusterCellPoints / worldPoints
-        var cells: [Int64: [CLLocationCoordinate2D]] = [:]
-        for f in leaves {
-            let c = f.coordinate
-            let x = (c.longitude + 180.0) / 360.0
-            let lat = min(max(c.latitude, -85.05), 85.05) * .pi / 180.0
-            let y = (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0
-            cells[cellKey(x: x, y: y, cell: cell), default: []].append(c)
-        }
+        let coords = (st.leaves + st.mine).map(\.coordinate)
         // A bubble is drawn at its group's mean, so the nearest mean is it.
         // Matching on the cell the tap fell in would be wrong at low zoom: we
         // average LATITUDE while the grid divides MERCATOR y, and those two
         // part company as cells get tall.
         var best: [CLLocationCoordinate2D] = []
         var bestDistance = Double.greatestFiniteMagnitude
-        for (_, group) in cells where group.count > 1 {
+        for indices in groups(of: coords, cell: cell) where indices.count > 1 {
+            let group = indices.map { coords[$0] }
             var lat = 0.0, lon = 0.0
             for c in group { lat += c.latitude; lon += c.longitude }
             let dLat = lat / Double(group.count) - coordinate.latitude
@@ -1027,7 +1044,7 @@ enum MapLayers {
         pins.iconAllowsOverlap = NSExpression(forConstantValue: true)
         pins.iconAnchor = NSExpression(forConstantValue: "center")
         pins.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking != YES")
-        insertUnderMine(pins, on: style)
+        style.addLayer(pins)
 
         // The halo goes UNDER the peaking pin and is the thing that breathes.
         // Its colour follows the moment, same as the pin: a ginkgo's gold, a
@@ -1040,14 +1057,14 @@ enum MapLayers {
         halo.circleOpacity = NSExpression(forConstantValue: 0.38)
         halo.circleRadiusTransition = MLNTransition(duration: 1.1, delay: 0)
         halo.circleOpacityTransition = MLNTransition(duration: 1.1, delay: 0)
-        insertUnderMine(halo, on: style)
+        style.addLayer(halo)
 
         let peak = MLNSymbolStyleLayer(identifier: peakLayer, source: trees)
         peak.iconImageName = NSExpression(forKeyPath: "icon")
         peak.iconAllowsOverlap = NSExpression(forConstantValue: true)
         peak.iconAnchor = NSExpression(forConstantValue: "center")
         peak.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking == YES")
-        insertUnderMine(peak, on: style)
+        style.addLayer(peak)
         if clustered {
             // A SYMBOL layer with a rendered image, not a circle layer plus a
             // text layer. Two days went into the circle-and-text pair and it
@@ -1063,21 +1080,27 @@ enum MapLayers {
             bubble.iconAnchor = NSExpression(forConstantValue: "center")
             style.addLayer(bubble)
         }
-    }
 
-    /// Tree pins belong under a person's own pins, which is where they sat
-    /// before the source started being rebuilt.
-    private static func insertUnderMine(_ layer: MLNStyleLayer, on style: MLNStyle) {
-        if let mine = style.layer(withIdentifier: mineLayer) {
-            style.insertLayer(layer, below: mine)
-        } else {
-            style.addLayer(layer)
-        }
+        // YOURS, LAST, so a tree you added sits on top of ours where they
+        // overlap. It reads the same `icon` key as everything else on this
+        // source: PER FEATURE, not one image for all of them, because a tree
+        // you added wears YOUR photograph (Hidde, 2026-08-27: "kunnen we my
+        // trees de foto in het icoontje geven aangezien je m alleen kan
+        // toevoegen door een foto"). It is the only pin on this map that can
+        // be a picture of the actual tree rather than a drawing of its species.
+        //
+        // A feature only reaches this layer when the clusterer left it
+        // standing alone; inside a pile it is one of the numbers instead.
+        let minePins = MLNSymbolStyleLayer(identifier: mineLayer, source: trees)
+        minePins.predicate = NSPredicate(format: "at_kind == 'mine'")
+        minePins.iconImageName = NSExpression(forKeyPath: "icon")
+        minePins.iconAllowsOverlap = NSExpression(forConstantValue: true)
+        minePins.iconAnchor = NSExpression(forConstantValue: "center")
+        style.addLayer(minePins)
     }
 
     static func setMine(_ mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)],
-                        on style: MLNStyle) {
-        guard let source = style.source(withIdentifier: mineSource) as? MLNShapeSource else { return }
+                        on style: MLNStyle, clustered: Bool, zoom: Double) {
         let features = mine.map { m -> MLNPointFeature in
             let f = MLNPointFeature()
             f.coordinate = .init(latitude: m.lat, longitude: m.lng)
@@ -1093,10 +1116,20 @@ enum MapLayers {
                     style.setImage(photoPin(photo), forName: icon)
                 }
             }
-            f.attributes = [idKey: m.id.uuidString, "icon": icon]
+            // EXACTLY THE SAME KEYS AS EVERY OTHER FEATURE ON THIS SOURCE.
+            // Not a style rule: a feature carrying a subset of the others'
+            // properties makes the whole source load as empty, 974 features in
+            // and zero out with no error anywhere (see cluster()). That is why
+            // a tree of yours carries `peaking` and `at_count` it has no use
+            // for, and it is why moving these into the shared source was a
+            // one-line change away from emptying the entire map.
+            f.attributes = [idKey: m.id.uuidString, "icon": icon,
+                            "peaking": false, countKey: 1,
+                            kindKey: "mine", "at_label": ""]
             return f
         }
-        source.shape = MLNShapeCollectionFeature(shapes: features)
+        state(for: style).mine = features
+        cluster(on: style, zoom: zoom, clustered: clustered, force: true)
     }
 
     static func setRoute(_ pts: [CLLocationCoordinate2D], real: Bool, on style: MLNStyle) {
@@ -1284,32 +1317,40 @@ enum MapLayers {
     /// what Google Maps does with a contributed image and Strava with a segment
     /// photograph.
     private static func photoPin(_ image: UIImage) -> UIImage {
-        // THE SAME 38 AS EVERY OTHER PIN. It was 44, and with a ring drawn
-        // outside its hole and a shadow under it, a tree you had added yourself
-        // sat visibly larger than every tree on the map beside it (Hidde,
-        // 2026-08-28: "het icoon van mijn boom met de foto is groter dan de
-        // rest"). It does not need the size: it is already the only pin that is
-        // a photograph rather than a drawing, which is distinction enough.
+        // THE SAME GEOMETRY AS pin(), rectangle for rectangle, and that is
+        // the third time this has been asked for (Hidde, 2026-08-28: "het icoon
+        // van mijn boom met de foto is groter dan de rest", and again on
+        // 08-29). The first answer only matched the CANVAS: both images are
+        // 38 points, and inside them ours drew a 34 point disc while this one
+        // filled the whole 38, so on screen a tree of yours still stood a
+        // couple of points wider than every tree beside it. A canvas nobody can
+        // see is not the size anybody was talking about.
+        //
+        // So the numbers below are pin()'s numbers and nothing else: the same
+        // (2, 2, 34, 34) body, the same ring stroked at (2.5, 2.5, 33, 33) with
+        // the same width, which puts the outer edge of both at exactly the same
+        // radius. Change one and change the other.
         let d: CGFloat = 38
+        let body = CGRect(x: 2, y: 2, width: d - 4, height: d - 4)
         return UIGraphicsImageRenderer(size: .init(width: d, height: d)).image { ctx in
-            // A white disc under everything, so a photograph with a pale edge
-            // still has a rim against a pale map.
+            // A white disc under the photograph, so one with a pale edge still
+            // has a rim against a pale map.
             UIColor.white.setFill()
-            UIBezierPath(ovalIn: .init(x: 0, y: 0, width: d, height: d)).fill()
+            UIBezierPath(ovalIn: body).fill()
 
-            let inset: CGFloat = 4
-            let hole = CGRect(x: inset, y: inset, width: d - inset * 2, height: d - inset * 2)
             ctx.cgContext.saveGState()
-            UIBezierPath(ovalIn: hole).addClip()
+            UIBezierPath(ovalIn: body).addClip()
             // ASPECT FILL, so a portrait photograph is not squeezed into a
             // circle: scale by the SHORT side and centre what is left over.
-            let scale = max(hole.width / image.size.width, hole.height / image.size.height)
+            let scale = max(body.width / image.size.width, body.height / image.size.height)
             let w = image.size.width * scale, h = image.size.height * scale
-            image.draw(in: CGRect(x: hole.midX - w / 2, y: hole.midY - h / 2, width: w, height: h))
+            image.draw(in: CGRect(x: body.midX - w / 2, y: body.midY - h / 2, width: w, height: h))
             ctx.cgContext.restoreGState()
 
+            // Ink where ours is white, which is the whole of how you tell them
+            // apart now that they are the same size.
             ink.setStroke()
-            let ring = UIBezierPath(ovalIn: hole.insetBy(dx: -1.5, dy: -1.5))
+            let ring = UIBezierPath(ovalIn: .init(x: 2.5, y: 2.5, width: d - 5, height: d - 5))
             ring.lineWidth = 3
             ring.stroke()
         }
