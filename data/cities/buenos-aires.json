@@ -1,0 +1,167 @@
+{
+  "city": "Buenos Aires",
+  "country": "Argentina",
+  "status": "needs_curation",
+  "intro": "Buenos Aires's oldest trees do not share a park. A fig by the Recoleta Cemetery gate that the city calls its oldest, a pair of magnolias flanking a school built over the Viceroyalty's first medical tribunal, another magnolia planted by a president's own hand in 1875, and a tropical outsider with no age at all, one of only two of its kind in the city. Four stops in four different neighbourhoods, each worth crossing town for on its own, none of them close enough to combine into a single walk.",
+  "meta_description": "Four trees scattered across Buenos Aires, from a fig the city calls its oldest by Recoleta Cemetery to a rare tropical outsider in Plaza Lavalle.",
+  "question_answer": "Buenos Aires's own Arbopedia register names the Gomero de la Recoleta as the city's oldest tree, a wide fig standing a few metres from the gate of the Recoleta Cemetery and estimated at roughly 250 to 300 years old. Nobody agrees on how it got there: one account has Recoleto friars planting it around 1718, another credits the agronomist Martin Jose de Altolaguirre's exotic orchard of around 1781, and either date puts it in the ground before Argentina existed as a country. Even its species is disputed. The city calls it a Moreton Bay fig, Wikidata files the same tree as a rubber tree, and this page has flagged the disagreement rather than settled it. What is not disputed is the branch: one limb reaches thirty metres from the trunk, propped since 2014 by a car-parts sculpture of Atlas that appears to take its weight. If you can date the tree more precisely, or settle which species it actually is, tell us.",
+  "question_meta": "The Gomero de la Recoleta, a fig by the cemetery gate, is Buenos Aires's oldest tree: roughly 250 to 300 years, though its origin and species are disputed.",
+  "question_context": "Every tree on this page comes from ordinary web research rather than a single register, because Buenos Aires publishes its notable trees one page at a time on the city government's own Arbopedia site instead of as a downloadable dataset. The four trees here were found and checked one by one, through the city's own pages, national government pages, and local press, rather than pulled from one authoritative list. Two disagreements run through the set. The Gomero's species and planting story both split across sources, and this page carries both readings rather than picking a winner. The Protomedicato magnolias carry a second kind of disagreement: the city's own register text says they were planted in the late nineteenth century, while the same page and every other source calls them more than two hundred years old, a gap that reads like a typo between two centuries rather than a real dispute. Only one tree here, the magnolia planted by President Avellaneda in 1875, carries a documented planting date rather than an estimate. Location pins are street-level or plaza-level throughout, and one entry, the Protomedicato pair, stands on working school grounds and is marked as visible from the street rather than approachable.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Buenos Aires?",
+      "a": "The Gomero de la Recoleta, a wide fig standing by the gate of the Recoleta Cemetery, estimated at roughly 250 to 300 years old by the city's own register. Its planting story and even its species are disputed, so this page carries the range rather than a single confident number."
+    },
+    {
+      "q": "Can I see all four trees in one walk?",
+      "a": "No. These four stand in four different Buenos Aires neighbourhoods, Recoleta, San Telmo, Palermo and San Nicolas, several kilometres apart. Each is its own stop rather than part of one route."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes, all four cost nothing. Three stand in open public parks and plazas; the fourth, the Protomedicato magnolias, are viewed from the street or the church opposite rather than entered, because they grow inside a working school's garden."
+    },
+    {
+      "q": "Why don't these trees have measured ages?",
+      "a": "Buenos Aires has no downloadable tree register, so every entry here comes from the city's own Arbopedia pages, national government pages and local press, which describe rather than measure. Only the magnolia planted by President Avellaneda in 1875 carries a documented planting date; the rest carry ranges or, for the Esterculia, no age at all."
+    }
+  ],
+  "hero_tree_id": "bai_001",
+  "oldest_tree_id": "bai_001",
+  "trees": [
+    {
+      "id": "bai_001",
+      "name": "The Gomero de la Recoleta",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 250 to 300 years",
+      "age_min": 245,
+      "age_max": 310,
+      "girth_cm": 2199,
+      "location": {
+        "address": "Av. Pres. Manuel Quintana 596, Plazoleta Juan XXIII, Recoleta",
+        "latitude": -34.5876,
+        "longitude": -58.3913,
+        "neighbourhood": "Recoleta"
+      },
+      "verified_sources": [
+        "https://buenosaires.gob.ar/gcaba_historico/espaciopublicoehigieneurbana/gestion-comunal/arbopedia/gomero-de-la-recoleta",
+        "https://www.eldestapeweb.com/sociedad/gomero-recoleta-tiene-200-anos-arbol-longevo-ciudad-existen-varias-versiones-plantacion-2026523212238",
+        "https://www.wikidata.org/wiki/Q56303696"
+      ],
+      "access": "Free, standing in a public plazoleta a few metres from the Recoleta Cemetery gate, open at all hours",
+      "transport": "About 10-15 minutes' walk from Subte Line D, Callao station; several bus lines (17, 60, 92, 130, 152) stop nearby",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "One branch of this fig reaches thirty metres out from the trunk and is over a metre thick where it leaves it. Since 2014 a sculpture of Atlas, welded from car parts by the Uruguayan artist Joaquin Arbiza Brianza, has stood underneath it appearing to take the weight. The city government calls this the oldest tree in Buenos Aires, and nobody agrees on how it got here. One account has the Recoleto friars planting it around 1718. Another credits the agronomist Martin Jose de Altolaguirre, who kept an orchard of exotic species on this ground around 1781. Either version puts it here before Argentina was a country, a few metres from the gate of the Recoleta cemetery, watching two centuries of the city arrive to bury its dead.\n\nThe species is disputed as well. Porteños call it a gomero, a loose word attached to several big figs in Argentina. The city's own register describes Ficus macrophylla, the Moreton Bay fig, and its account of the leaves and fruit fits that; Wikidata files the same tree as Ficus elastica, the rubber tree. We have gone with the register and flagged the disagreement rather than settling it.\n\nThe measurements need reading carefully too. The seven metres quoted across its trunk is the buttressed, fused mass a strangler fig builds over time, not a single round stem, so the girth figure here is far larger than any ordinary waistline.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The huge fig with a car-parts sculpture of Atlas appearing to hold up one long branch, a few metres from the Recoleta Cemetery gate."
+    },
+    {
+      "id": "bai_002",
+      "name": "The Magnolias del Protomedicato",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 250,
+      "girth_cm": null,
+      "location": {
+        "address": "Humberto Primo 343, San Telmo (viewed from the street/church entrance opposite; the trees stand in the entrance garden of Escuela Guillermo Rawson)",
+        "latitude": -34.620472,
+        "longitude": -58.370806,
+        "neighbourhood": "San Telmo"
+      },
+      "verified_sources": [
+        "https://buenosaires.gob.ar/gcaba_historico/gobierno/gestion-comunal/arbopedia/magnolias-del-protomedicato",
+        "https://www.infobae.com/historias/2024/11/16/magnolias-del-protomedicato-los-arboles-portenos-mas-antiguos-donde-estan-y-los-secretos-de-la-mujer-que-los-cuida/",
+        "https://www.argentina.gob.ar/magnolias-del-protomedicato"
+      ],
+      "access": "View-only. Visible from Humberto Primo street and from the entrance of the Parroquia San Pedro Gonzalez Telmo church opposite (Humberto Primo 340); the two magnolias themselves stand inside the entrance garden of a working school, Escuela Dr. Guillermo Rawson, whose grounds are not open to the public",
+      "transport": "Half a block from Plaza Dorrego, San Telmo; about 10 minutes' walk from Subte Line C, Independencia or San Juan stations",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "These two magnolias are the oldest living thing on the block where Buenos Aires first taught medicine. They flank the entrance of a primary school built over the site of the Protomedicato, the Viceroyalty's medical tribunal founded by Miguel O'Gorman, which also held the city's first Hospital de Hombres and its first school of medicine. Argentina declared the pair Historic Trees by national decree in August 1969, and the city has looked after them since.\n\nHow old they are is an open argument, and the city's own register runs both ways on a single page. Its text says the Bethlemite order planted them at the end of the 19th century, which would make them around 140. The same page, and every other source that mentions them, says more than 200 years and ties them to the Bethlemites' 18th-century work on this ground. The likeliest reading is a slip between XVIII and XIX, so we carry the older claim with the doubt attached rather than picking a winner.\n\nYou look at these two rather than walk up to them. The school is in daily use and its grounds are closed to visitors, so the place to stand is Humberto Primo itself, or the doorway of the San Pedro Gonzalez Telmo church opposite, which is where the photographs get taken from. It is half a block from Plaza Dorrego, so the detour costs nothing.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Two magnolias flanking the entrance of a school on Humberto Primo; best picked out from the church doorway opposite."
+    },
+    {
+      "id": "bai_003",
+      "name": "The Magnolia de Avellaneda",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "about 150 years",
+      "age_min": 148,
+      "age_max": 153,
+      "girth_cm": null,
+      "location": {
+        "address": "Av. Adolfo Berro 241, near Av. Casares, beside the Jardin Japones, Parque Tres de Febrero (Palermo Woods)",
+        "latitude": -34.574639,
+        "longitude": -58.408444,
+        "neighbourhood": "Palermo"
+      },
+      "verified_sources": [
+        "https://buenosaires.gob.ar/gcaba_historico/gobierno/gestion-comunal/arbopedia/magnolia-de-avellaneda",
+        "https://www.argentina.gob.ar/magnolia-en-el-parque-3-de-febrero",
+        "https://www.lanacion.com.ar/revista-jardin/del-retono-del-arbol-de-san-lorenzo-al-gomero-de-la-recoleta-diez-arboles-historicos-de-la-argentina-nid03052026/"
+      ],
+      "access": "Free, standing in the open public parkland of Parque Tres de Febrero (Palermo Woods), open daily",
+      "transport": "About 10-15 minutes' walk from Plaza Italia (Subte Line D) through the park, or several bus lines along Av. Sarmiento/Av. Figueroa Alcorta",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Most old trees carry an estimated age. This one carries a date. On 11 November 1875 President Nicolas Avellaneda put a magnolia into the ground with his own hands to inaugurate Parque Tres de Febrero, and the tree he planted is still standing where he left it. The arithmetic is therefore unusually honest: 151 years this November, with no growth rate and no guesswork in it.\n\nA plaque placed in 1916 quotes the line from his inaugural speech that the choice of tree came from, la magnolia americana del bosque primitivo, con su flor blanca silvestre, the American magnolia of the primeval forest with its wild white flower. In June 1946 a national decree made it an Arbol Historico, putting it on the short list of trees the Argentine state protects for what happened around them rather than for their measurements.\n\nSince then the park has closed in and become the Bosques de Palermo, the green lung the whole neighbourhood is named for. The Jardin Japones went up alongside, so the tree that opened the park now stands against a garden wall on Avenida Berro, passed by joggers who have no idea it is the reason any of this is here.\n\nCome in the southern spring, when the heavy white flowers open. That is roughly the same few weeks each year as the anniversary of the day it went in.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "flowers",
+        "label": "October and November, when the big white flowers open, close to the anniversary of its planting"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A single magnolia against the wall of the Jardin Japones on Avenida Berro, inside Parque Tres de Febrero."
+    },
+    {
+      "id": "bai_004",
+      "name": "The Esterculia of Plaza Lavalle",
+      "species": "Scarlet Sterculia (Sterculia coccinea)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Plaza Lavalle, near Av. Cordoba and Talcahuano",
+        "latitude": -34.6021,
+        "longitude": -58.3846,
+        "neighbourhood": "San Nicolas (Tribunales)"
+      },
+      "verified_sources": [
+        "https://buenosaires.gob.ar/gcaba_historico/esterculia-de-plaza-lavalle",
+        "https://www.lanacion.com.ar/lifestyle/conoce-arboles-ciudad-fueron-testigos-historia-del-nid2250624/"
+      ],
+      "access": "Free, standing in the open public Plaza Lavalle, in front of the Teatro Colon and the Palacio de Justicia, open at all hours",
+      "transport": "A few minutes' walk from Subte Line D, Tribunales station, or Subte Line B, Uruguay station",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Two trees of this species are known in the whole of Buenos Aires, and this is the one with an address. Sterculia coccinea is a tropical species from Southeast Asia, and the city's register lists it among the notable trees of Buenos Aires on rarity alone rather than for size or age: about eight metres tall, heavily branched, with a crown that spreads wider than the tree stands high. Its flowers come yellow green flushed with red in spring, and later in the year the capsules split open to show a bright red lining.\n\nThe address is the point as much as the tree is. Plaza Lavalle sits between the Teatro Colon and the Palacio de Justicia, so this quiet tropical outsider has spent its life between the country's opera house and its supreme court, with the crowds that both of those attract passing underneath it.\n\nNobody has dated it. No register, plaque or article we could find gives an age or a trunk measurement, and an empty field is better than an invented number. If you know when it went in, tell us and we will put it on the page.\n\nThe pin marks the plaza rather than the trunk, so give yourself a minute to pick it out from the trees around it: look for the wide, low, many-branched crown near the Cordoba and Talcahuano corner.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A low, wide, many-branched crown near the Cordoba and Talcahuano corner of Plaza Lavalle, unlike the plazas' other trees."
+    }
+  ]
+}
