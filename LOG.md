@@ -9,6 +9,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (session, continued) - A ~40-minute git/gh credential outage mid-session, and 12 stale country-page counts fixed while waiting it out
+
+`git push` and every `gh` call started failing with "Invalid username or token" / "Bad credentials" right after the Assisi commit, and stayed broken for roughly 40 minutes despite retries spaced well apart (not a tight loop). `GH_TOKEN`/`GITHUB_TOKEN` were both the same expired installation token; `DEFAULT_WORKFLOW_TOKEN` (a different env var, present but unused by git's default remote URL) turned out still valid and fixed `git push` once the remote URL was pointed at it. `gh` itself is still on the old token as of this entry and still 401s; nothing in this session depends on it beyond convenience, so it was left alone rather than chased further.
+
+Used the wait productively rather than idling or risking a claim collision (couldn't push a claim file for other runs to see): cross-checked every one of the 21 country pages' own "N cities, M trees" closing sentence against the real data. **Twelve were stale**, one badly (the Netherlands said "14 mapped cities" against 37 actually live). Fixed: Germany, Italy, Austria, Belgium, Czech Republic, Denmark, France, Greece, Ireland, Poland, Portugal, Spain, Switzerland, Netherlands. Two of those (Austria's Graz/Salzburg, Denmark's Aarhus, Czech's Brno) had a whole SECOND city sitting completely unmentioned in hand-written prose that was still describing the country as if only the original city existed; gave each a real sentence from its own data rather than just patching the number. Greece's Crete was the same shape but worse: its two ancient olives (2,000-4,000 years and 3,000-3,400 years) are the oldest trees on the whole page and were entirely absent from an intro built around "the two Greek cities."
+
+**Also wrote a preflight check for this** (`check_country_counts()` in `scripts/preflight.py`), the country-page equivalent of the city-level `count-promises.ts` hard build check, which had no country-page counterpart until now. NOTE severity for its first run rather than a build-failing FAIL, since no Astro-side authority exists yet to mirror; tested against a deliberately-stale string to confirm it actually fires, then confirmed clean against the now-fixed corpus. Twelve instances of one bug class in one sweep is well past this project's own ratchet bar for turning a note into a check.
+
+All pushed once the token issue resolved (commits 80d2fe02 through 48de0df9).
+
 ## 2026-08-29 (session, continued) - Assisi opens (6 trees), after catching and fixing a passcheck.py bug that would have merged it into Perugia
 
 Continued straight from the Bamberg merge above. Checked rung 0/2/3 again (still clear), then went back to rule 1(0): another unopened ranked city with real register supply, Assisi (rank 293), never mentioned in LOG/CURATION before today. Its MASAF register candidates looked excellent, species/girth/height already given, three near the walled centre within about 1.3km of each other.
