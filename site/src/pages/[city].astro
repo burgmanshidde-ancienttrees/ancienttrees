@@ -8,7 +8,7 @@ import { checkCountPromises } from "../lib/count-promises";
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, type CityEntry } from "../lib/trees";
-import { speciesCommon } from "../lib/species";
+import { speciesCommon, speciesPageSlugs } from "../lib/species";
 import { usablePhoto, metaImageUrls, ogImageUrl } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { peakFor } from "../lib/phenology";
@@ -48,7 +48,7 @@ export async function getStaticPaths() {
   for (const intro of intros) {
     if ((byCountryCount.get(intro.data.country) ?? 0) >= 3) countryPages.set(intro.data.country, intro.data.slug);
   }
-  const speciesPages = new Map(speciesIntros.map((i) => [i.data.common_name, i.data.slug]));
+  const speciesPages = speciesPageSlugs(allCities, speciesIntros);
 
   return allCities.map((city) => {
     const canonical = `${BASE_URL}/${city.id}`;
