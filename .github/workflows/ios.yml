@@ -74,17 +74,33 @@ concurrency:
 jobs:
   test:
     runs-on: macos-15
-    # Measured 2026-08-21: build and test 17 minutes when green, 29 when four
-    # tests fail and retry, plus five for the layout step. 30 cut off every
-    # failing run before its verdict, so the log that could have said WHY the
-    # tests failed was never written.
-    # 75 since 2026-08-25, when the layout step went from one phone to two and
-    # gained a screenshot pass. Build and test is 15 to 30 of it; each phone's
-    # frame dump is another 5 to 10 on a runner, where everything is slower than
-    # on a Mac with a warm cache. Minutes are free on a public repo and a run cut
-    # off before its verdict is worth nothing, which is the lesson the 30 minute
-    # version already taught.
-    timeout-minutes: 75
+    # Measured on the green run of 2026-08-29, step by step, because the old
+    # figures here were a year of screens out of date and were the reason the
+    # scheduled runs kept dying:
+    #
+    #   build and test          15.5 min
+    #   RefusedWalk              7   min
+    #   appfit, both phones     24   min   <- the biggest step, and it grows
+    #   appsweep screenshots     7.5 min
+    #   ---------------------------------
+    #   whole job              ~55   min on a fast runner
+    #
+    # The ceiling was 75, so there was twenty minutes of headroom on a job
+    # whose runner speed varies by more than that. That is the whole bug: a
+    # hand-started run lands on a warm fast runner and goes green, the 05:00
+    # and 17:00 ones sometimes land on a slow one and get killed at 75, which
+    # GitHub reports as "cancelled" rather than as a timeout. Nothing was
+    # actually broken in the app, and reading the alarm literally sent two
+    # sessions looking for a fault that was not there.
+    #
+    # 110 gives an hour of slack instead of twenty minutes. It costs nothing:
+    # this repository is public, so Actions minutes are free.
+    #
+    # What this does NOT fix, and is the real growth item: appfit walks 38
+    # screens across two phones and takes longer than the build. When it
+    # passes 40 minutes the answer is to split the job in two, build-and-test
+    # and look-at-it, rather than to raise this number again.
+    timeout-minutes: 110
 
     steps:
       - uses: actions/checkout@v4
