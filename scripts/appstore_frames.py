@@ -93,11 +93,16 @@ PANELS = [
     ("6-add", "Add a tree\nnobody has mapped"),
 ]
 
-CAPTION_TOP = 150          # where the first line sits
-CAPTION_SIZE = 92
-LINE_GAP = 18
-DEVICE_TOP = 620           # below the caption, with air
-DEVICE_WIDTH = 1080        # 82 percent, so the ground frames it
+# Quieter than the first version, measured against AllTrails' own panels: the
+# words are smaller, the phone is narrower, and there is more ground around
+# both. The canvas itself cannot change, since 1320x2868 is what App Store
+# Connect accepts for a 6.9 inch phone and nothing else, so everything that
+# makes a panel feel less like a long strip has to happen inside it.
+CAPTION_TOP = 170          # where the first line sits
+CAPTION_SIZE = 76
+LINE_GAP = 14
+DEVICE_TOP = 560           # below the caption, with air
+DEVICE_WIDTH = 980         # 74 percent, so the ground frames it properly
 BEZEL = 20                 # the black between the rail and the screen
 RAIL = 10                  # the titanium edge outside it
 CORNER = 78
@@ -125,9 +130,17 @@ def panel(raw_path, caption, ground):
     canvas = Image.new("RGB", (W, H), ground[0])
     draw = ImageDraw.Draw(canvas)
 
-    f = font("Gabarito-Bold.ttf", CAPTION_SIZE)
+    # TWO WEIGHTS, not one (Hidde, 2026-08-29, holding AllTrails' own panels up
+    # beside ours: "deze voelt rustiger kun je het meer hierop laten lijken").
+    # Theirs read "Vind routes" bold over "die je inspireren" light, and that
+    # contrast is most of the calm: one line is the claim and the other is the
+    # sentence finishing it, so the eye is given an order to read them in.
+    # Ours were both at the same weight, which makes two shouts.
+    lines = caption.split("\n")
     y = CAPTION_TOP
-    for line in caption.split("\n"):
+    for i, line in enumerate(lines):
+        f = font("Gabarito-ExtraBold.ttf" if i == 0 else "Gabarito-Regular.ttf",
+                 CAPTION_SIZE)
         w = draw.textlength(line, font=f)
         draw.text(((W - w) / 2, y), line, font=f, fill=ground[1])
         y += CAPTION_SIZE + LINE_GAP
