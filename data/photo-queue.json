@@ -4760,22 +4760,22 @@
   "cor_003": {
    "city": "Cork",
    "name": "The Boole Library Redwoods",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-29",
+   "sweep": 5,
    "candidates": []
   },
   "cor_004": {
    "city": "Cork",
    "name": "The Monterey Pine at the Gates",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-29",
+   "sweep": 5,
    "candidates": []
   },
   "cor_005": {
    "city": "Cork",
    "name": "The 1870 Magnolia of Fota",
-   "checked": "2026-08-16",
-   "sweep": 4,
+   "checked": "2026-08-29",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Bank of Trees on the Edge of Lough Mahon - geograph.org.uk - 5829381.jpg",
@@ -35282,26 +35282,19 @@
   "crt_002": {
    "city": "Crete",
    "name": "The Olive Tree of Azoria (Kavousi)",
+   "checked": "2026-08-29",
+   "sweep": 5,
    "candidates": [
     {
-     "title": "File:Kavousi Olivenbaum 01.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Kavousi_Olivenbaum_01.jpg/960px-Kavousi_Olivenbaum_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Kavousi_Olivenbaum_01.jpg",
-     "licence": "CC BY 3.0",
-     "author": "Olaf Tausch",
-     "lat": 35.11519444,
-     "lng": 25.86069444,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Kavousi Olivenbaum 02.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Kavousi_Olivenbaum_02.jpg/960px-Kavousi_Olivenbaum_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Kavousi_Olivenbaum_02.jpg",
-     "licence": "CC BY 3.0",
-     "author": "Olaf Tausch",
-     "lat": 35.11519444,
-     "lng": 25.86069444,
-     "source": "commons/famous"
+     "title": "File:Olive tree (Kavousi - Azorias), Crete 03(js).jpg (Wikidata Q105501045)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Olive_tree_%28Kavousi_-_Azorias%29%2C_Crete_03%28js%29.jpg/960px-Olive_tree_%28Kavousi_-_Azorias%29%2C_Crete_03%28js%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Olive_tree_(Kavousi_-_Azorias),_Crete_03(js).jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jerzy Strzelecki",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work",
+     "source": "wikidata/Q105501045"
     },
     {
      "title": "File:Monumental Olive tree near Kavousi (Crete) 01.jpg",
@@ -35311,7 +35304,7 @@
      "author": "Unukorno",
      "lat": 35.115232,
      "lng": 25.86078,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work"
     },
     {
      "title": "File:Monumental Olive tree near Kavousi (Crete) 02.jpg",
@@ -35321,7 +35314,7 @@
      "author": "Unukorno",
      "lat": 35.115137,
      "lng": 25.860785,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work"
     },
     {
      "title": "File:Monumental Olive tree near Kavousi (Crete) 03.jpg",
@@ -35331,7 +35324,17 @@
      "author": "Unukorno",
      "lat": 35.115168,
      "lng": 25.860838,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Old Olive Tree near Kavousi.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Old_Olive_Tree_near_Kavousi.jpg/960px-Old_Olive_Tree_near_Kavousi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Old_Olive_Tree_near_Kavousi.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Unukorno",
+     "lat": 35.115387,
+     "lng": 25.860765,
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Kavousi Category:Olive trees in Crete Category:Self-published work"
     },
     {
      "title": "File:Olive tree (Kavousi - Azorias), Crete 01(js).jpg",
@@ -35341,7 +35344,7 @@
      "author": "Jerzy Strzelecki",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work"
     },
     {
      "title": "File:Olive tree (Kavousi - Azorias), Crete 02(js).jpg",
@@ -35351,7 +35354,7 @@
      "author": "Jerzy Strzelecki",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work"
     },
     {
      "title": "File:Olive tree (Kavousi - Azorias), Crete 03(js).jpg",
@@ -35361,7 +35364,7 @@
      "author": "Jerzy Strzelecki",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work"
     },
     {
      "title": "File:Olive tree (Kavousi - Azorias), Crete 04(js).jpg",
@@ -35371,7 +35374,7 @@
      "author": "Jerzy Strzelecki",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work"
     },
     {
      "title": "File:Olive tree (Kavousi - Azorias), Crete 05(js).jpg",
@@ -35381,7 +35384,7 @@
      "author": "Jerzy Strzelecki",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work"
     },
     {
      "title": "File:Olive tree (Kavousi - Azorias), Crete 06(js).jpg",
@@ -35391,7 +35394,7 @@
      "author": "Jerzy Strzelecki",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work"
     },
     {
      "title": "File:Olive tree (Kavousi - Azorias), Crete 07(js).jpg",
@@ -35401,14 +35404,43 @@
      "author": "Jerzy Strzelecki",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work"
+    },
+    {
+     "title": "File:Olive tree (Kavousi - Azorias), Crete 08(js).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Olive_tree_%28Kavousi_-_Azorias%29%2C_Crete_08%28js%29.jpg/960px-Olive_tree_%28Kavousi_-_Azorias%29%2C_Crete_08%28js%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Olive_tree_(Kavousi_-_Azorias),_Crete_08(js).jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jerzy Strzelecki",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 291531017 (Olea europaea)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/524526532/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/291531017",
+     "licence": "CC BY",
+     "author": "(c) fmunoz, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "35.115279,25.860617"
+    },
+    {
+     "title": "iNat obs 291531017 (Olea europaea)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/524526964/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/291531017",
+     "licence": "CC BY",
+     "author": "(c) fmunoz, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "35.115279,25.860617"
     }
-   ],
-   "checked": "2026-08-21"
+   ]
   },
   "crt_001": {
    "city": "Crete",
    "name": "The Olive Tree of Vouves",
+   "checked": "2026-08-29",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:Ancient olive tree of Vouves closeup.jpg",
@@ -35418,7 +35450,17 @@
      "author": "Avsa",
      "lat": 35.486808,
      "lng": 23.786886,
-     "source": "commons/famous"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Vouves olive tree"
+    },
+    {
+     "title": "File:Olive Tree Museum of Vouves 2021-10-16.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Olive_Tree_Museum_of_Vouves_2021-10-16.jpg/960px-Olive_Tree_Museum_of_Vouves_2021-10-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Olive_Tree_Museum_of_Vouves_2021-10-16.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Alexey Komarov",
+     "lat": 35.48707,
+     "lng": 23.78665,
+     "cats": "Category:2021 in Crete Category:CC-BY-SA-4.0 Category:Chania Regional Unit Category:Crete by user:Alexkom000 Category:Files with coordinates missing SDC location of creation Category:Greece photographs taken on 2021-10-16 Category:Museums by user:Alexkom000 Category:Museums in Chania Category:Museums in Greece photographed in 2021 Category:October 2021 by user:Alexkom000 Category:Self-published work Category:Taken on missing SDC inception Category:Taken with Sony ILCE-7S and Sony FE 28-70mm F3.5-5.6 OSS by user:Alexkom000"
     },
     {
      "title": "File:Olive tree of Vouves.jpg",
@@ -35428,7 +35470,7 @@
      "author": "Eric Nagle",
      "lat": 35.486839,
      "lng": 23.7868,
-     "source": "commons/famous"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Items with VRTS permission confirmed Category:Vouves olive tree"
     },
     {
      "title": "File:Olive tree of Vouves 2021-10-16.jpg",
@@ -35438,40 +35480,18 @@
      "author": "Alexey Komarov",
      "lat": 35.486855,
      "lng": 23.786795,
-     "source": "commons/famous"
+     "cats": "Category:2021 in Crete Category:CC-BY-SA-4.0 Category:Crete by user:Alexkom000 Category:Files with coordinates missing SDC location of creation Category:Greece photographs taken on 2021-10-16 Category:October 2021 by user:Alexkom000 Category:Oleaceae in the Northern Hemisphere in October 2021 Category:Self-published work Category:Taken on missing SDC inception Category:Taken with Sony ILCE-7S and Sony FE 28-70mm F3.5-5.6 OSS by user:Alexkom000 Category:Trees by user:Alexkom000 Category:Vouves olive tree"
     },
     {
-     "title": "File:Olive tree old.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Olive_tree_old.jpg/960px-Olive_tree_old.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Olive_tree_old.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Davric",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Olive tree old 2.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Olive_tree_old_2.jpg/960px-Olive_tree_old_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Olive_tree_old_2.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Davric",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
-    },
-    {
-     "title": "File:Olive tree old 3.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Olive_tree_old_3.jpg/960px-Olive_tree_old_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Olive_tree_old_3.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "Davric",
-     "lat": null,
-     "lng": null,
-     "source": "commons/famous"
+     "title": "iNat obs 41697700 (Olea europaea)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/66148174/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/41697700",
+     "licence": "CC BY",
+     "author": "(c) William Stephens, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "35.4868731333,23.7867788667"
     }
-   ],
-   "checked": "2026-08-21"
+   ]
   },
   "arn_006": {
    "city": "Arnhem",
@@ -38202,6 +38222,898 @@
      "lat": -27.47399,
      "lng": 153.029058,
      "cats": "Category:Australia photographs taken on 2008-09-02 Category:CC-BY-SA-3.0 Category:City Botanic Gardens, Brisbane Category:Ficus microcarpa, City Botanic Gardens, Brisbane Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 4660485"
+    }
+   ]
+  },
+  "bne_013": {
+   "city": "Brisbane",
+   "name": "The Hoop Pine",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Memorial Bamboo Tree (15873581480).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Memorial_Bamboo_Tree_%2815873581480%29.jpg/960px-Memorial_Bamboo_Tree_%2815873581480%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Memorial_Bamboo_Tree_(15873581480).jpg",
+     "licence": "CC BY 2.0",
+     "author": "Lenny K Photography from Sydney, Australia",
+     "lat": -27.475762,
+     "lng": 153.030038,
+     "cats": "Category:Brisbane Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2"
+    },
+    {
+     "title": "iNat obs 145034969 (Araucaria bidwillii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/249061506/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/145034969",
+     "licence": "CC BY",
+     "author": "(c) Jenny Saito, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.47589496,153.02815846"
+    },
+    {
+     "title": "iNat obs 145034969 (Araucaria bidwillii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/249061521/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/145034969",
+     "licence": "CC BY",
+     "author": "(c) Jenny Saito, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.47589496,153.02815846"
+    },
+    {
+     "title": "iNat obs 263547446 (Araucaria cunninghamii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/473475981/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/263547446",
+     "licence": "CC BY",
+     "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.4760583333,153.0289916667"
+    },
+    {
+     "title": "iNat obs 263547446 (Araucaria cunninghamii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/473476034/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/263547446",
+     "licence": "CC BY",
+     "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.4760583333,153.0289916667"
+    }
+   ]
+  },
+  "bne_014": {
+   "city": "Brisbane",
+   "name": "The Big-leaf Mahogany",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Tree Botanic Garden - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tree_Botanic_Garden_-_panoramio.jpg/960px-Tree_Botanic_Garden_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Tree_Botanic_Garden_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Korkut Tas",
+     "lat": -27.47399,
+     "lng": 153.029058,
+     "cats": "Category:Australia photographs taken on 2008-09-02 Category:CC-BY-SA-3.0 Category:City Botanic Gardens, Brisbane Category:Ficus microcarpa, City Botanic Gardens, Brisbane Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 4660485"
+    }
+   ]
+  },
+  "bne_015": {
+   "city": "Brisbane",
+   "name": "The Black Bean",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Litoria fallax, Eastern Dwarf Tree Frog, Brisbane.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Litoria_fallax%2C_Eastern_Dwarf_Tree_Frog%2C_Brisbane.jpg/960px-Litoria_fallax%2C_Eastern_Dwarf_Tree_Frog%2C_Brisbane.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Litoria_fallax,_Eastern_Dwarf_Tree_Frog,_Brisbane.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Stu's Images",
+     "lat": -27.478455,
+     "lng": 153.030989,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Litoria fallax Category:Self-published work"
+    },
+    {
+     "title": "iNat obs 145043506 (Castanospermum australe)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/249076711/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/145043506",
+     "licence": "CC BY",
+     "author": "(c) Jenny Saito, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.47724322,153.03081315"
+    },
+    {
+     "title": "iNat obs 145043506 (Castanospermum australe)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/249076720/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/145043506",
+     "licence": "CC BY",
+     "author": "(c) Jenny Saito, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-27.47724322,153.03081315"
+    }
+   ]
+  },
+  "bne_016": {
+   "city": "Brisbane",
+   "name": "The Talking Tree of Newstead House",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bne_017": {
+   "city": "Brisbane",
+   "name": "The Crow's Ash of Newstead Park",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Australian–American Memorial, Newstead, Brisbane, 2025, 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Australian%E2%80%93American_Memorial%2C_Newstead%2C_Brisbane%2C_2025%2C_01.jpg/960px-Australian%E2%80%93American_Memorial%2C_Newstead%2C_Brisbane%2C_2025%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Australian%E2%80%93American_Memorial,_Newstead,_Brisbane,_2025,_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chris Olszewski",
+     "lat": -27.442164,
+     "lng": 153.047058,
+     "cats": "Category:Australia photographs taken on 2025-01-06 Category:Australian–American Memorial, Newstead, Brisbane Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:January 2025 in Brisbane Category:Photographs of Brisbane by Kgbo in 2025 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone 15 Pro Max (main camera)"
+    },
+    {
+     "title": "File:Australian–American Memorial, Newstead, Brisbane, 2025, 03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Australian%E2%80%93American_Memorial%2C_Newstead%2C_Brisbane%2C_2025%2C_03.jpg/960px-Australian%E2%80%93American_Memorial%2C_Newstead%2C_Brisbane%2C_2025%2C_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Australian%E2%80%93American_Memorial,_Newstead,_Brisbane,_2025,_03.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chris Olszewski",
+     "lat": -27.442239,
+     "lng": 153.046981,
+     "cats": "Category:Australia photographs taken on 2025-01-06 Category:Australian–American Memorial, Newstead, Brisbane Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:January 2025 in Brisbane Category:Photographs of Brisbane by Kgbo in 2025 Category:Photos by User:Kgbo Category:Self-published work Category:Taken with iPhone 15 Pro Max (main camera)"
+    },
+    {
+     "title": "File:Australian–American Memorial 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Australian%E2%80%93American_Memorial_01.jpg/960px-Australian%E2%80%93American_Memorial_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Australian%E2%80%93American_Memorial_01.jpg",
+     "licence": "CC0",
+     "author": "Birkett83",
+     "lat": -27.442292,
+     "lng": 153.047136,
+     "cats": "Category:Australia photographs taken on 2024-09-04 Category:Australian–American Memorial, Newstead, Brisbane Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:September 2024 in Brisbane"
+    },
+    {
+     "title": "File:Australian–American Memorial 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Australian%E2%80%93American_Memorial_02.jpg/960px-Australian%E2%80%93American_Memorial_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Australian%E2%80%93American_Memorial_02.jpg",
+     "licence": "CC0",
+     "author": "Birkett83",
+     "lat": -27.442292,
+     "lng": 153.047136,
+     "cats": "Category:Australia photographs taken on 2024-09-04 Category:Australian–American Memorial, Newstead, Brisbane Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:September 2024 in Brisbane"
+    },
+    {
+     "title": "File:Royal Australian Navy Corvette Memorial, Newstead Park, 2025, 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Royal_Australian_Navy_Corvette_Memorial%2C_Newstead_Park%2C_2025%2C_01.jpg/960px-Royal_Australian_Navy_Corvette_Memorial%2C_Newstead_Park%2C_2025%2C_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Royal_Australian_Navy_Corvette_Memorial,_Newstead_Park,_2025,_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Chris Olszewski",
+     "lat": -27.442153,
+     "lng": 153.047028,
+     "cats": "Category:Australia photographs taken on 2025-01-06 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:January 2025 in Brisbane Category:Photographs by Kgbo taken in 2025 Category:Photos by User:Kgbo Category:Royal Australian Navy Corvette Memorial Category:Self-published work Category:Taken with iPhone 15 Pro Max (main camera)"
+    }
+   ]
+  },
+  "bne_018": {
+   "city": "Brisbane",
+   "name": "The White Rabbit Tree of Newstead Park",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bne_019": {
+   "city": "Brisbane",
+   "name": "The Memorial Crows Ash of Toowong",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bne_020": {
+   "city": "Brisbane",
+   "name": "The Fig Tree of Haig Road",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bsc_011": {
+   "city": "Bucaco",
+   "name": "The Redwood of the Porta das Lapas",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bsc_012": {
+   "city": "Bucaco",
+   "name": "The American Ash of the Largo do Mosteiro",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 243187266 (Fraxinus ornus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/433604799/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/243187266",
+     "licence": "CC BY",
+     "author": "(c) Rafael Medina, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.37609019,-8.3659210001"
+    }
+   ]
+  },
+  "bsc_013": {
+   "city": "Bucaco",
+   "name": "The Sycamore Maple of the Lago da Fonte",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "iNat obs 61186880 (Acer pseudoplatanus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/97883273/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/61186880",
+     "licence": "CC BY",
+     "author": "(c) Duarte Frade, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.3781683333,-8.3682966667"
+    }
+   ]
+  },
+  "bsc_014": {
+   "city": "Bucaco",
+   "name": "The Til of the Lago Grande",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bsc_015": {
+   "city": "Bucaco",
+   "name": "The Cedro-do-Bucaco of the Ermida do Sacramento",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bai_001": {
+   "city": "Buenos Aires",
+   "name": "The Gomero de la Recoleta",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Rubber Tree in Recoleta.jpg (Wikidata Q56303696)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rubber_Tree_in_Recoleta.jpg/960px-Rubber_Tree_in_Recoleta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Rubber_Tree_in_Recoleta.jpg",
+     "licence": "CC BY 2.0",
+     "author": "Beatrice Murch",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Argentina photographs taken on 2006-12-24 Category:CC-BY-2.0 Category:Calle Quintana, Buenos Aires Category:December 2006 in Buenos Aires Category:Files supported by Wikimedia Argentina Category:Flickr images uploaded by Flickr upload bot Category:FoP-Argentina Category:Gomero de la Recoleta Category:Photographs by Beatrice Murch Category:Plaza Intendente Alvear Category:Taken with Konica Minolta Dimage X50",
+     "source": "wikidata/Q56303696"
+    },
+    {
+     "title": "File:A tree near Necropolis (Recoleta).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/A_tree_near_Necropolis_%28Recoleta%29.jpg/960px-A_tree_near_Necropolis_%28Recoleta%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:A_tree_near_Necropolis_(Recoleta).jpg",
+     "licence": "CC BY 3.0",
+     "author": "Anastasiya Lvova",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-3.0 Category:Gomero de la Recoleta Category:Photographs taken by Anastasiya Lvova in 2012 Category:Squares in Recoleta, Buenos Aires Category:Taken with Canon EOS 350D"
+    },
+    {
+     "title": "File:Buenos Aires - Recoleta - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Buenos_Aires_-_Recoleta_-_panoramio.jpg/960px-Buenos_Aires_-_Recoleta_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Buenos_Aires_-_Recoleta_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "Marek_Grzywa",
+     "lat": -34.587852,
+     "lng": -58.391551,
+     "cats": "Category:Argentina photographs taken on 2008-10-11 Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Gomero de la Recoleta Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 570267 Category:Squares in Recoleta, Buenos Aires Category:Trees in Buenos Aires"
+    },
+    {
+     "title": "File:Hojas del Gomero de la Recoleta.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Hojas_del_Gomero_de_la_Recoleta.JPG/960px-Hojas_del_Gomero_de_la_Recoleta.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Hojas_del_Gomero_de_la_Recoleta.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Mateus S. Figueiredo",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Ficus elastica (leaves) Category:Flora of Buenos Aires Province Category:Gomero de la Recoleta Category:Green leaves Category:Self-published work Category:Squares in Recoleta, Buenos Aires Category:Yellow leaves"
+    },
+    {
+     "title": "File:Kaŭĉukarbo de la Recoleta (Bonaero).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ka%C5%AD%C4%89ukarbo_de_la_Recoleta_%28Bonaero%29.jpg/960px-Ka%C5%AD%C4%89ukarbo_de_la_Recoleta_%28Bonaero%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ka%C5%AD%C4%89ukarbo_de_la_Recoleta_(Bonaero).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "RG72",
+     "lat": -34.58765,
+     "lng": -58.390964,
+     "cats": "Category:Argentina photographs taken on 2014-07-31 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gomero de la Recoleta Category:July 2014 in Buenos Aires Category:Self-published work"
+    },
+    {
+     "title": "File:Kaŭĉukarbo de la Recoleta (Bonaero) 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Ka%C5%AD%C4%89ukarbo_de_la_Recoleta_%28Bonaero%29_02.jpg/960px-Ka%C5%AD%C4%89ukarbo_de_la_Recoleta_%28Bonaero%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ka%C5%AD%C4%89ukarbo_de_la_Recoleta_(Bonaero)_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "RG72",
+     "lat": -34.586819,
+     "lng": -58.390206,
+     "cats": "Category:Argentina photographs taken on 2014-08-01 Category:August 2014 in Buenos Aires Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gomero de la Recoleta Category:Self-published work"
+    },
+    {
+     "title": "File:Kaŭĉukarbo de la Recoleta (Bonaero) 03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Ka%C5%AD%C4%89ukarbo_de_la_Recoleta_%28Bonaero%29_03.jpg/960px-Ka%C5%AD%C4%89ukarbo_de_la_Recoleta_%28Bonaero%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ka%C5%AD%C4%89ukarbo_de_la_Recoleta_(Bonaero)_03.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "RG72",
+     "lat": -34.595742,
+     "lng": -58.375856,
+     "cats": "Category:Argentina photographs taken on 2014-08-01 Category:August 2014 in Buenos Aires Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Gomero de la Recoleta Category:Self-published work"
+    },
+    {
+     "title": "File:Rubber Tree in Recoleta.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rubber_Tree_in_Recoleta.jpg/960px-Rubber_Tree_in_Recoleta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Rubber_Tree_in_Recoleta.jpg",
+     "licence": "CC BY 2.0",
+     "author": "Beatrice Murch",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Argentina photographs taken on 2006-12-24 Category:CC-BY-2.0 Category:Calle Quintana, Buenos Aires Category:December 2006 in Buenos Aires Category:Files supported by Wikimedia Argentina Category:Flickr images uploaded by Flickr upload bot Category:FoP-Argentina Category:Gomero de la Recoleta Category:Photographs by Beatrice Murch Category:Plaza Intendente Alvear Category:Taken with Konica Minolta Dimage X50"
+    },
+    {
+     "title": "iNat obs 20254671 (Ficus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/31263869/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/20254671",
+     "licence": "CC BY-SA",
+     "author": "(c) Javier Solís, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "-34.5873616667,-58.3911033333"
+    },
+    {
+     "title": "iNat obs 20254671 (Ficus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/31263790/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/20254671",
+     "licence": "CC BY-SA",
+     "author": "(c) Javier Solís, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "-34.5873616667,-58.3911033333"
+    },
+    {
+     "title": "iNat obs 201402943 (Ficus elastica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/355521666/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/201402943",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "-34.58783,-58.3914666667"
+    },
+    {
+     "title": "iNat obs 201402943 (Ficus elastica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/355521740/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/201402943",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "-34.58783,-58.3914666667"
+    },
+    {
+     "title": "iNat obs 263366339 (Ficus macrophylla)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/473176253/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/263366339",
+     "licence": "CC BY-SA",
+     "author": "(c) lejones417, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "-34.5877633333,-58.3914116667"
+    },
+    {
+     "title": "iNat obs 263366339 (Ficus macrophylla)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/473121922/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/263366339",
+     "licence": "CC BY-SA",
+     "author": "(c) lejones417, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "-34.5877633333,-58.3914116667"
+    }
+   ]
+  },
+  "bai_002": {
+   "city": "Buenos Aires",
+   "name": "The Magnolias del Protomedicato",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "bai_003": {
+   "city": "Buenos Aires",
+   "name": "The Magnolia de Avellaneda",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:ID 353 Magnolia histórica 5451.jpg (Wikidata Q55808098)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/ID_353_Magnolia_hist%C3%B3rica_5451.jpg/960px-ID_353_Magnolia_hist%C3%B3rica_5451.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:ID_353_Magnolia_hist%C3%B3rica_5451.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Carlos Zito",
+     "lat": -34.574716,
+     "lng": -58.408482,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Taken with Nikon D3100 Category:Unidentified Magnolia Category:Uploaded via Campaign:wlm-ar",
+     "source": "wikidata/Q55808098"
+    },
+    {
+     "title": "File:Avellaneda centro.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Avellaneda_centro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Avellaneda_centro.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Lucas",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2012 in Avellaneda Partido Category:Buildings in Avellaneda, Buenos Aires Category:CC-BY-SA-3.0 Category:Christmas 2012 in Argentina Category:Christmas trees in Argentina Category:FoP-Argentina Category:Night in Argentina Category:Self-published work Category:Squares in Buenos Aires Province"
+    },
+    {
+     "title": "File:ID 353 Magnolia histórica 0860.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/ID_353_Magnolia_hist%C3%B3rica_0860.jpg/960px-ID_353_Magnolia_hist%C3%B3rica_0860.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:ID_353_Magnolia_hist%C3%B3rica_0860.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Carlos Zito",
+     "lat": -34.574716,
+     "lng": -58.408482,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ25 Category:Unidentified Magnolia Category:Uploaded via Campaign:wlm-ar"
+    },
+    {
+     "title": "File:Magnolia histórica.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Magnolia_hist%C3%B3rica.JPG/960px-Magnolia_hist%C3%B3rica.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_hist%C3%B3rica.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mister Roboto",
+     "lat": -34.574716,
+     "lng": -58.408482,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Uploaded via Campaign:wlm-ar"
+    },
+    {
+     "title": "File:Magnolia histórica 1060348.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Magnolia_hist%C3%B3rica_1060348.JPG/960px-Magnolia_hist%C3%B3rica_1060348.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_hist%C3%B3rica_1060348.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Ciudadano Girafo",
+     "lat": -34.574716,
+     "lng": -58.408482,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ27 Category:Uploaded via Campaign:wlm-ar"
+    },
+    {
+     "title": "File:Magnolia histórica 1060349.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Magnolia_hist%C3%B3rica_1060349.JPG/960px-Magnolia_hist%C3%B3rica_1060349.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_hist%C3%B3rica_1060349.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Ciudadano Girafo",
+     "lat": -34.574716,
+     "lng": -58.408482,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ27 Category:Uploaded via Campaign:wlm-ar"
+    },
+    {
+     "title": "File:Magnolia histórica 2.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Magnolia_hist%C3%B3rica_2.JPG/960px-Magnolia_hist%C3%B3rica_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_hist%C3%B3rica_2.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mister Roboto",
+     "lat": -34.574716,
+     "lng": -58.408482,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Uploaded via Campaign:wlm-ar"
+    },
+    {
+     "title": "File:Magnolia histórica 4.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Magnolia_hist%C3%B3rica_4.JPG/960px-Magnolia_hist%C3%B3rica_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_hist%C3%B3rica_4.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mister Roboto",
+     "lat": -34.574716,
+     "lng": -58.408482,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Uploaded via Campaign:wlm-ar"
+    },
+    {
+     "title": "File:Magnolia histórica 9.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Magnolia_hist%C3%B3rica_9.JPG/960px-Magnolia_hist%C3%B3rica_9.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_hist%C3%B3rica_9.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mister Roboto",
+     "lat": -34.574716,
+     "lng": -58.408482,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Uploaded via Campaign:wlm-ar"
+    },
+    {
+     "title": "File:Monumento Nicolas Avellaneda.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/41/Monumento_Nicolas_Avellaneda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Monumento_Nicolas_Avellaneda.JPG",
+     "licence": "Public domain",
+     "author": "Adrianiks",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Avellaneda, Buenos Aires Category:FoP-Argentina Category:Monuments and memorials to Nicolás Avellaneda Category:PD-self Category:Self-published work Category:Taken with Fujifilm FinePix F420"
+    },
+    {
+     "title": "iNat obs 270060578 (Magnolia grandiflora)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/485633831/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/270060578",
+     "licence": "CC BY",
+     "author": "(c) Patrice Dupont, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-34.5744166667,-58.4091116667"
+    },
+    {
+     "title": "iNat obs 270060578 (Magnolia grandiflora)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/485633816/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/270060578",
+     "licence": "CC BY",
+     "author": "(c) Patrice Dupont, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-34.5744166667,-58.4091116667"
+    },
+    {
+     "title": "iNat obs 143750032 (Magnoliopsida)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/246587966/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/143750032",
+     "licence": "CC BY",
+     "author": "(c) Sol Quipildor, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "-34.5746869,-58.4091261"
+    }
+   ]
+  },
+  "bai_004": {
+   "city": "Buenos Aires",
+   "name": "The Esterculia of Plaza Lavalle",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "cag_008": {
+   "city": "Cagliari",
+   "name": "The Aleppo Pines of San Pantaleo",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kol_001": {
+   "city": "Cologne",
+   "name": "The Fourteen-Trunked Caucasian Wingnut",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kol_002": {
+   "city": "Cologne",
+   "name": "The Great Plane of Hohenlind Park",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kol_003": {
+   "city": "Cologne",
+   "name": "The Hohenlind Oak",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kol_004": {
+   "city": "Cologne",
+   "name": "The Turkey Oak of the Volksgarten",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kol_005": {
+   "city": "Cologne",
+   "name": "The Moltke Lime of the Kahnweiher",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "cdb_018": {
+   "city": "Cordoba",
+   "name": "The Stone Pine of Santa Maria de Trassierra",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "cor_006": {
+   "city": "Cork",
+   "name": "The Cappadocian Maple of Blarney",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Arbre dans le parc du château de Blarney - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Arbre_dans_le_parc_du_ch%C3%A2teau_de_Blarney_-_panoramio.jpg/960px-Arbre_dans_le_parc_du_ch%C3%A2teau_de_Blarney_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arbre_dans_le_parc_du_ch%C3%A2teau_de_Blarney_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mith angers",
+     "lat": 51.928125,
+     "lng": -8.570639,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Gardens of Blarney Castle Category:Media needing category review as of 10 December 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Republic of Ireland photographs taken on 2011-08-20"
+    },
+    {
+     "title": "File:Arbre dans le parc du château de Blarney - panoramio (1).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Arbre_dans_le_parc_du_ch%C3%A2teau_de_Blarney_-_panoramio_%281%29.jpg/960px-Arbre_dans_le_parc_du_ch%C3%A2teau_de_Blarney_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arbre_dans_le_parc_du_ch%C3%A2teau_de_Blarney_-_panoramio_(1).jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mith angers",
+     "lat": 51.927986,
+     "lng": -8.570645,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Gardens of Blarney Castle Category:Media needing category review as of 10 December 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Republic of Ireland photographs taken on 2011-08-20"
+    },
+    {
+     "title": "File:Blarney Castle - An Atlas Cedar tree in the gardens - geograph.org.uk - 8226012.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Blarney_Castle_-_An_Atlas_Cedar_tree_in_the_gardens_-_geograph.org.uk_-_8226012.jpg/960px-Blarney_Castle_-_An_Atlas_Cedar_tree_in_the_gardens_-_geograph.org.uk_-_8226012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Blarney_Castle_-_An_Atlas_Cedar_tree_in_the_gardens_-_geograph.org.uk_-_8226012.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Chris Gorringe",
+     "lat": 51.92802957,
+     "lng": -8.56939685,
+     "cats": "Category:Blarney Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland"
+    },
+    {
+     "title": "iNat obs 312494356 (Acer pensylvanicum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/564211258/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/312494356",
+     "licence": "CC BY",
+     "author": "(c) froggymum, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "51.9273925,-8.5709786"
+    },
+    {
+     "title": "iNat obs 312494356 (Acer pensylvanicum)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/564211227/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/312494356",
+     "licence": "CC BY",
+     "author": "(c) froggymum, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "51.9273925,-8.5709786"
+    }
+   ]
+  },
+  "cor_007": {
+   "city": "Cork",
+   "name": "The Beech of Blarney",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Arbre dans le parc du château de Blarney - panoramio (1).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Arbre_dans_le_parc_du_ch%C3%A2teau_de_Blarney_-_panoramio_%281%29.jpg/960px-Arbre_dans_le_parc_du_ch%C3%A2teau_de_Blarney_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Arbre_dans_le_parc_du_ch%C3%A2teau_de_Blarney_-_panoramio_(1).jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Mith angers",
+     "lat": 51.927986,
+     "lng": -8.570645,
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Gardens of Blarney Castle Category:Media needing category review as of 10 December 2016 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Republic of Ireland photographs taken on 2011-08-20"
+    },
+    {
+     "title": "File:Blarney Castle - An Atlas Cedar tree in the gardens - geograph.org.uk - 8226012.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Blarney_Castle_-_An_Atlas_Cedar_tree_in_the_gardens_-_geograph.org.uk_-_8226012.jpg/960px-Blarney_Castle_-_An_Atlas_Cedar_tree_in_the_gardens_-_geograph.org.uk_-_8226012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Blarney_Castle_-_An_Atlas_Cedar_tree_in_the_gardens_-_geograph.org.uk_-_8226012.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Chris Gorringe",
+     "lat": 51.92802957,
+     "lng": -8.56939685,
+     "cats": "Category:Blarney Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland"
+    }
+   ]
+  },
+  "cor_008": {
+   "city": "Cork",
+   "name": "The Camphor Tree of Fota",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "cor_009": {
+   "city": "Cork",
+   "name": "The Spiral Cedar of Fota",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "cor_010": {
+   "city": "Cork",
+   "name": "The Canary Palm of Fota",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Foaty Island - geograph.org.uk - 4662057.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Foaty_Island_-_geograph.org.uk_-_4662057.jpg/960px-Foaty_Island_-_geograph.org.uk_-_4662057.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Foaty_Island_-_geograph.org.uk_-_4662057.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Robert Ashby",
+     "lat": 51.89591757,
+     "lng": -8.30229711,
+     "cats": "Category:CC-BY-SA-2.0 Category:County Cork Category:Images from Geograph Britain and Ireland"
+    }
+   ]
+  },
+  "cor_011": {
+   "city": "Cork",
+   "name": "The Celery Pine of Fota",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "cor_012": {
+   "city": "Cork",
+   "name": "The Holm Oak of Fota",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "cor_013": {
+   "city": "Cork",
+   "name": "The Coast Redwood of Fota",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": []
+  },
+  "crt_003": {
+   "city": "Crete",
+   "name": "The Plane Tree of Krasi",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Krassi huge Platanus 13 01 53 501000.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Krassi_huge_Platanus_13_01_53_501000.jpeg/960px-Krassi_huge_Platanus_13_01_53_501000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Krassi_huge_Platanus_13_01_53_501000.jpeg",
+     "licence": "CC0",
+     "author": "Characea",
+     "lat": 35.23365,
+     "lng": 25.469119,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+    },
+    {
+     "title": "File:Krassi huge Platanus 13 02 04 962000.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Krassi_huge_Platanus_13_02_04_962000.jpeg/960px-Krassi_huge_Platanus_13_02_04_962000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Krassi_huge_Platanus_13_02_04_962000.jpeg",
+     "licence": "CC0",
+     "author": "Characea",
+     "lat": 35.233561,
+     "lng": 25.469142,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+    },
+    {
+     "title": "File:Krassi huge Platanus 13 02 12 539000.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Krassi_huge_Platanus_13_02_12_539000.jpeg/960px-Krassi_huge_Platanus_13_02_12_539000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Krassi_huge_Platanus_13_02_12_539000.jpeg",
+     "licence": "CC0",
+     "author": "Characea",
+     "lat": 35.23355,
+     "lng": 25.469186,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+    },
+    {
+     "title": "File:Krassi huge Platanus 13 02 18 069000.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Krassi_huge_Platanus_13_02_18_069000.jpeg/960px-Krassi_huge_Platanus_13_02_18_069000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Krassi_huge_Platanus_13_02_18_069000.jpeg",
+     "licence": "CC0",
+     "author": "Characea",
+     "lat": 35.233453,
+     "lng": 25.469169,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+    },
+    {
+     "title": "File:Krassi huge Platanus 13 02 42 752000.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Krassi_huge_Platanus_13_02_42_752000.jpeg/960px-Krassi_huge_Platanus_13_02_42_752000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Krassi_huge_Platanus_13_02_42_752000.jpeg",
+     "licence": "CC0",
+     "author": "Characea",
+     "lat": 35.233456,
+     "lng": 25.468997,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+    },
+    {
+     "title": "File:Krassi huge Platanus 13 02 50 019000.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Krassi_huge_Platanus_13_02_50_019000.jpeg/960px-Krassi_huge_Platanus_13_02_50_019000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Krassi_huge_Platanus_13_02_50_019000.jpeg",
+     "licence": "CC0",
+     "author": "Characea",
+     "lat": 35.233275,
+     "lng": 25.468661,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+    },
+    {
+     "title": "File:Krassi huge Platanus 13 03 33 737000.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Krassi_huge_Platanus_13_03_33_737000.jpeg/960px-Krassi_huge_Platanus_13_03_33_737000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Krassi_huge_Platanus_13_03_33_737000.jpeg",
+     "licence": "CC0",
+     "author": "Characea",
+     "lat": 35.233261,
+     "lng": 25.468608,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+    },
+    {
+     "title": "File:Krassi huge Platanus 13 03 37 840000.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Krassi_huge_Platanus_13_03_37_840000.jpeg/960px-Krassi_huge_Platanus_13_03_37_840000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Krassi_huge_Platanus_13_03_37_840000.jpeg",
+     "licence": "CC0",
+     "author": "Characea",
+     "lat": 35.233272,
+     "lng": 25.468578,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+    }
+   ]
+  },
+  "crt_004": {
+   "city": "Crete",
+   "name": "The Evergreen Plane of Gortyn",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Gortys Evergreen Platanus 20230607 105402.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Gortys_Evergreen_Platanus_20230607_105402.jpg/960px-Gortys_Evergreen_Platanus_20230607_105402.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gortys_Evergreen_Platanus_20230607_105402.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Rigorius",
+     "lat": 35.063333,
+     "lng": 24.946667,
+     "cats": "Category:2023 in Gortyna Category:CC-BY-SA-4.0 Category:Evergreen Platanus (Gortyn) Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Gortys Evergreen Platanus 20230607 105504.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Gortys_Evergreen_Platanus_20230607_105504.jpg/960px-Gortys_Evergreen_Platanus_20230607_105504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gortys_Evergreen_Platanus_20230607_105504.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Rigorius",
+     "lat": 35.063611,
+     "lng": 24.946667,
+     "cats": "Category:2023 in Gortyna Category:CC-BY-SA-4.0 Category:Evergreen Platanus (Gortyn) Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Gortys Evergreen Platanus 20230607 105557.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Gortys_Evergreen_Platanus_20230607_105557.jpg/960px-Gortys_Evergreen_Platanus_20230607_105557.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gortys_Evergreen_Platanus_20230607_105557.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Rigorius",
+     "lat": 35.063333,
+     "lng": 24.946667,
+     "cats": "Category:2023 in Gortyna Category:CC-BY-SA-4.0 Category:Evergreen Platanus (Gortyn) Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    }
+   ]
+  },
+  "cyp_001": {
+   "city": "Cyprus",
+   "name": "The Sacred Oak of Theoskepasti",
+   "checked": "2026-08-29",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Ceiling above the entrance of Panagia Theoskepasti (Paphos), Cyprus.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Ceiling_above_the_entrance_of_Panagia_Theoskepasti_%28Paphos%29%2C_Cyprus.jpg/960px-Ceiling_above_the_entrance_of_Panagia_Theoskepasti_%28Paphos%29%2C_Cyprus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Ceiling_above_the_entrance_of_Panagia_Theoskepasti_(Paphos),_Cyprus.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michal Klajban",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cyprus photographs taken on 2019-02-10 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images by User:Podzemnik (supported by Wikimedia Germany) Category:Images of Cyprus by User:Podzemnik Category:Panagia Theoskepasti (Paphos) Category:Quality images Category:Quality images by User:Podzemnik Category:Quality images missing SDC depicts Category:Quality images of Cyprus by User:Podzemnik Category:Quality images of Paphos Category:Quality images of architecture in Cyprus Category:Self-published work Category:Supported by Wikimedia Deutschland"
+    },
+    {
+     "title": "File:Panagia Theoskepasti, Paphos, Cyprus.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Panagia_Theoskepasti%2C_Paphos%2C_Cyprus.jpg/960px-Panagia_Theoskepasti%2C_Paphos%2C_Cyprus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Panagia_Theoskepasti,_Paphos,_Cyprus.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michal Klajban",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Churches in Cyprus photographed in 2019 Category:Cyprus photographs taken on 2019-02-05 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images by User:Podzemnik (supported by Wikimedia Germany) Category:Images of Cyprus by User:Podzemnik Category:Panagia Theoskepasti (Paphos) Category:Quality images Category:Quality images by User:Podzemnik Category:Quality images missing SDC depicts Category:Quality images of Cyprus by User:Podzemnik Category:Quality images of churches in Cyprus Category:Self-published work Category:Supported by Wikimedia Deutschland"
+    },
+    {
+     "title": "File:Stairs to Panagia Theoskepasti, Paphos, Cyprus.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Stairs_to_Panagia_Theoskepasti%2C_Paphos%2C_Cyprus.jpg/960px-Stairs_to_Panagia_Theoskepasti%2C_Paphos%2C_Cyprus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Stairs_to_Panagia_Theoskepasti,_Paphos,_Cyprus.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michal Klajban",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Cyprus photographs taken on 2019-02-10 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images by User:Podzemnik (supported by Wikimedia Germany) Category:Images of Cyprus by User:Podzemnik Category:Panagia Theoskepasti (Paphos) Category:Quality images Category:Quality images by User:Podzemnik Category:Quality images missing SDC depicts Category:Quality images of Cyprus by User:Podzemnik Category:Quality images of Paphos Category:Quality images of architecture in Cyprus Category:Quatrefoils Category:Self-published work Category:Supported by Wikimedia Deutschland"
     }
    ]
   }

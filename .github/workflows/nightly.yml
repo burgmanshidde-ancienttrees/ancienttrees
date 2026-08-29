@@ -12,6 +12,43 @@ name: City research
 env:
   CLAUDE_ALLOWED: "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Bash(touch:*),Bash(printf:*),Task,Monitor,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
   CLAUDE_DISALLOWED: "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete)"
+  # The continuation prompt, hoisted here 2026-08-29 when the window went from
+  # two attempts to four. This file's own rule: a list copied into two places is
+  # a list that will differ. One prompt, every continuation.
+  CONTINUE_PROMPT: |
+    An earlier attempt in this same window stopped early. Most of the window is
+    still unspent, and nothing is wrong: the usage limit did not stop it and no
+    error was reported. It decided it was done, and the clock disagreed.
+
+    Start here, in this order:
+
+    1. `git pull --rebase --autostash -q`, because an earlier attempt may
+       have pushed a claim you are about to trip over.
+    2. `python3 scripts/passcheck.py --claims`. Anything an earlier attempt
+       claimed and did not finish is yours: either FINISH it now, or
+       `--release` it before doing anything else. A claim nobody finishes
+       locks that city away from every other run until it expires, and that
+       is the single strongest predictor in the data of a night that
+       produced nothing.
+    3. `python3 scripts/leads.py --ready`. Anything it lists is a tree that
+       is fully verified and needs only a story: the work is bought and paid
+       for and one write pass finishes it. If the list is not empty, dispatch
+       a write-stories agent on up to 20 of them ACROSS cities per
+       BRIEF_WRITING.md, merge, build, commit. Do that before you consider
+       anything else, and do it again if the clock allows.
+    4. Only if that list is empty, read CLAUDE.md and execute "The research
+       workflow (autonomous run)" from Step 0 as written.
+
+    The one thing not to repeat: do not spend this attempt on orientation and
+    claiming. Reading state, staging candidates and recording a claim are the
+    cheap half; they are not the work, and a window that contains only those
+    has produced nothing. The earlier attempts already paid the orientation
+    cost; you inherit it.
+
+    Keep going until the usage limit stops you or the clock runs out. Commit
+    the smallest complete step the moment it exists, push it, and write your
+    LOG.md entry even if you ship nothing, so the next run knows what you
+    found.
 
 on:
   schedule:
@@ -562,42 +599,117 @@ jobs:
             --allowedTools "${{ env.CLAUDE_ALLOWED }}"
             --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
           prompt: |
-            An attempt in this same window stopped early and shipped nothing:
             ${{ steps.probe.outputs.reason }}
 
-            You are that window's second and last attempt. Most of it is still
-            unspent, and nothing is wrong: the usage limit did not stop the
-            first attempt and no error was reported. It decided it was done.
+            ${{ env.CONTINUE_PROMPT }}
 
-            Start here, in this order:
+      # Attempts three and four, added 2026-08-29. Until then the window had
+      # exactly two, and the probe that decided the second one asked the wrong
+      # question: it continued only when the attempt had shipped NOTHING. So a
+      # run that shipped eight trees in 28 minutes was told it was fine and the
+      # window closed with 92 of its 120 minutes unspent.
+      #
+      # Measured over the 66 working runs since 2026-08-15: 6,106 minutes handed
+      # back, 93 per run. And the shape of the loss is not evenly spread. Runs
+      # under 20 minutes spent 324 minutes and produced 13 trees, one every 25
+      # minutes; runs of 40 to 70 minutes produced one every 2.4. A third of the
+      # machine's week was going into short runs that orient, claim and go home.
+      #
+      # So the probe now asks how much of the WINDOW is left, and the window
+      # gets up to four attempts at spending it. What stops it is unchanged and
+      # still honest: an error, a usage-limit death (under five turns), under 25
+      # minutes remaining, or the week's budget being spent.
+      - name: Is there still window left after the second attempt
+        id: probe2
+        if: steps.probe.outputs.continue == 'yes'
+        continue-on-error: true
+        env:
+          RUN_START_SHA: ${{ steps.start.outputs.sha }}
+          RUN_STARTED_AT: ${{ steps.start.outputs.at }}
+          CLAUDE_EXECUTION_FILE: ${{ steps.claude2.outputs.execution_file }}
+        run: |
+          set +e
+          if [ -z "$CLAUDE_EXECUTION_FILE" ] || [ ! -f "$CLAUDE_EXECUTION_FILE" ]; then
+            CLAUDE_EXECUTION_FILE="${RUNNER_TEMP:-/home/runner/work/_temp}/claude-execution-output.json"
+          fi
+          cp "$CLAUDE_EXECUTION_FILE" "${RUNNER_TEMP:-/home/runner/work/_temp}/attempt-2.json" 2>/dev/null
+          python3 scripts/run_health.py --probe \
+            --execution-file "$CLAUDE_EXECUTION_FILE" \
+            --since-sha "$RUN_START_SHA" \
+            --started "$RUN_STARTED_AT"
 
-            1. `git pull --rebase --autostash -q`, because the first attempt may
-               have pushed a claim you are about to trip over.
-            2. `python3 scripts/passcheck.py --claims`. Anything the first
-               attempt claimed and did not finish is yours: either FINISH it now,
-               or `--release` it before doing anything else. A claim nobody
-               finishes locks that city away from every other run until it
-               expires, and that is the single strongest predictor in the data
-               of a night that produced nothing.
-            3. `python3 scripts/leads.py --ready`. Anything it lists is a tree
-               that is fully verified and needs only a story: the work is bought
-               and paid for and one write pass finishes it. If the list is not
-               empty, dispatch a write-stories agent on up to 20 of them ACROSS
-               cities per BRIEF_WRITING.md, merge, build, commit. Do that before
-               you consider anything else, and do it again if the clock allows.
-            4. Only if that list is empty, read CLAUDE.md and execute "The
-               research workflow (autonomous run)" from Step 0 as written.
+      - name: Third attempt
+        id: claude3
+        if: steps.probe2.outputs.continue == 'yes'
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        env:
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          allowed_bots: "github-actions[bot]"
+          claude_args: |
+            --allowedTools "${{ env.CLAUDE_ALLOWED }}"
+            --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
+          prompt: |
+            ${{ steps.probe2.outputs.reason }}
 
-            The one thing not to repeat: do not spend this attempt on
-            orientation and claiming. Reading state, staging candidates and
-            recording a claim are the cheap half; they are not the work, and a
-            window that contains only those has produced nothing. The first
-            attempt already paid the orientation cost; you inherit it.
+            ${{ env.CONTINUE_PROMPT }}
 
-            Keep going until the usage limit stops you or the clock runs out.
-            Commit the smallest complete step the moment it exists, push it, and
-            write your LOG.md entry even if you ship nothing, so the next run
-            knows what you found.
+      - name: Is there still window left after the third attempt
+        id: probe3
+        if: steps.probe2.outputs.continue == 'yes'
+        continue-on-error: true
+        env:
+          RUN_START_SHA: ${{ steps.start.outputs.sha }}
+          RUN_STARTED_AT: ${{ steps.start.outputs.at }}
+          CLAUDE_EXECUTION_FILE: ${{ steps.claude3.outputs.execution_file }}
+        run: |
+          set +e
+          if [ -z "$CLAUDE_EXECUTION_FILE" ] || [ ! -f "$CLAUDE_EXECUTION_FILE" ]; then
+            CLAUDE_EXECUTION_FILE="${RUNNER_TEMP:-/home/runner/work/_temp}/claude-execution-output.json"
+          fi
+          cp "$CLAUDE_EXECUTION_FILE" "${RUNNER_TEMP:-/home/runner/work/_temp}/attempt-3.json" 2>/dev/null
+          python3 scripts/run_health.py --probe \
+            --execution-file "$CLAUDE_EXECUTION_FILE" \
+            --since-sha "$RUN_START_SHA" \
+            --started "$RUN_STARTED_AT"
+
+      - name: Fourth and last attempt
+        id: claude4
+        if: steps.probe3.outputs.continue == 'yes'
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        env:
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          allowed_bots: "github-actions[bot]"
+          claude_args: |
+            --allowedTools "${{ env.CLAUDE_ALLOWED }}"
+            --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
+          prompt: |
+            ${{ steps.probe3.outputs.reason }}
+
+            ${{ env.CONTINUE_PROMPT }}
+
+      # The last attempt has nobody after it to keep its record aside, and the
+      # meter reads the window rather than its last half.
+      - name: Keep the last attempt's record
+        if: steps.probe3.outputs.continue == 'yes'
+        continue-on-error: true
+        env:
+          CLAUDE_EXECUTION_FILE: ${{ steps.claude4.outputs.execution_file }}
+        run: |
+          set +e
+          if [ -z "$CLAUDE_EXECUTION_FILE" ] || [ ! -f "$CLAUDE_EXECUTION_FILE" ]; then
+            CLAUDE_EXECUTION_FILE="${RUNNER_TEMP:-/home/runner/work/_temp}/claude-execution-output.json"
+          fi
+          cp "$CLAUDE_EXECUTION_FILE" "${RUNNER_TEMP:-/home/runner/work/_temp}/attempt-4.json" 2>/dev/null
 
       # Inert without the secret: no SELF_DISPATCH_TOKEN means this exits quietly
       # and the */20 cron remains the only trigger, so adding the step breaks
@@ -683,14 +795,20 @@ jobs:
           if [ -z "$CLAUDE_EXECUTION_FILE" ] || [ ! -f "$CLAUDE_EXECUTION_FILE" ]; then
             CLAUDE_EXECUTION_FILE="${RUNNER_TEMP:-/home/runner/work/_temp}/claude-execution-output.json"
           fi
-          # Two attempts are one window. The probe kept attempt 1 aside before
-          # the continuation overwrote the shared path; passing both makes the
-          # meter report the window rather than only its last half.
-          ATTEMPT_1="${RUNNER_TEMP:-/home/runner/work/_temp}/attempt-1.json"
-          if [ -f "$ATTEMPT_1" ] && [ "${{ steps.probe.outputs.continue }}" = "yes" ]; then
+          # Up to four attempts are one window. Every attempt but the first
+          # overwrites the shared path, so each probe copied the record it had
+          # just read aside as attempt-N.json before the next agent started.
+          # Passing all of them makes the meter report the WINDOW rather than
+          # only its last fraction, which is the number every schedule decision
+          # in this file has been made from.
+          T="${RUNNER_TEMP:-/home/runner/work/_temp}"
+          FILES=""
+          for n in 1 2 3 4; do
+            [ -f "$T/attempt-$n.json" ] && FILES="$FILES $T/attempt-$n.json"
+          done
+          if [ -n "$FILES" ]; then
             python3 scripts/run_health.py \
-              --execution-file "$ATTEMPT_1" \
-              --execution-file-2 "$CLAUDE_EXECUTION_FILE" \
+              --execution-files $FILES \
               --since-sha "$RUN_START_SHA" \
               --started "$RUN_STARTED_AT"
           else

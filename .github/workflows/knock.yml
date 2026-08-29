@@ -44,7 +44,26 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v4
+
+      # Guard 0, and it is the one that keeps this from repeating 2026-07-31.
+      # The knocks are free; the WINDOWS are not. Measured 2026-08-29 from the
+      # rolling seven-day total in data/run-health.json: it crossed 1,000
+      # minutes on 08-23 and every knock for the next two and a half days died
+      # in seconds on the usage limit. Three days of no machine at all, bought
+      # by one good night. So this watchdog stops rescuing knocks once the week
+      # is spent, and the cron alone decides what still gets through.
+      - name: Is there any week left
+        id: week
+        run: |
+          if python3 scripts/run_health.py --week; then
+            echo "room=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "room=no" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Dispatch a night run when the cron dropped one
+        if: steps.week.outputs.room == 'yes'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
