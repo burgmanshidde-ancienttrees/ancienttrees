@@ -81,7 +81,8 @@ CAPTION_SIZE = 92
 LINE_GAP = 18
 DEVICE_TOP = 620           # below the caption, with air
 DEVICE_WIDTH = 1080        # 82 percent, so the ground frames it
-BEZEL = 14
+BEZEL = 20                 # the black between the rail and the screen
+RAIL = 10                  # the titanium edge outside it
 CORNER = 78
 
 
@@ -126,12 +127,50 @@ def panel(raw_path, caption, ground):
         shot = shot.crop((0, 0, shot.width, keep))
 
     x = (W - DEVICE_WIDTH) // 2
-    frame = Image.new("RGB", (shot.width + BEZEL * 2, shot.height + BEZEL * 2),
-                      (0x14, 0x18, 0x0F))
-    frame.paste(shot, (BEZEL, BEZEL))
-    canvas.paste(rounded(frame, CORNER), (x - BEZEL, DEVICE_TOP - BEZEL),
-                 rounded(frame, CORNER))
+    device = iphone(shot)
+    canvas.paste(device, (x - BEZEL - RAIL, DEVICE_TOP - BEZEL - RAIL), device)
     return canvas
+
+
+def iphone(shot):
+    """The screen inside a phone somebody would recognise.
+
+    Hidde, 2026-08-29: "zou je m wel eens zoals alltrails in een iphone willen
+    zetten." Their panels put the screen in a real device rather than in a
+    rounded rectangle, and the difference is not decoration: a plain dark
+    border reads as a border, and a phone reads as a phone in somebody's hand.
+
+    Three things do that work and nothing else is needed. A rail around the
+    bezel, one shade lighter, which is the titanium edge catching light. Corner
+    radii that GROW outward, so the rail and the bezel stay concentric the way
+    real ones do rather than looking stacked. And the buttons, volume and the
+    action button on the left, the side button on the right, because they are
+    what the eye actually reads as a telephone.
+    """
+    w = shot.width + (BEZEL + RAIL) * 2
+    h = shot.height + (BEZEL + RAIL) * 2
+    body = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(body)
+
+    # The titanium rail, then the black bezel inside it.
+    d.rounded_rectangle([0, 0, w, h], radius=CORNER + BEZEL + RAIL,
+                        fill=(0x8A, 0x8F, 0x84))
+    d.rounded_rectangle([RAIL, RAIL, w - RAIL, h - RAIL], radius=CORNER + BEZEL,
+                        fill=(0x0B, 0x0D, 0x09))
+    body.paste(shot, (RAIL + BEZEL, RAIL + BEZEL), rounded(shot, CORNER))
+
+    # The buttons, on the rail itself. Sizes off a real iPhone at this scale:
+    # the side button is about twice the length of one volume button.
+    btn = (0x6F, 0x74, 0x6A)
+    unit = shot.width // 18
+    for top, length in ((int(h * 0.16), unit), (int(h * 0.24), unit * 2),
+                        (int(h * 0.24) + unit * 2 + unit // 2, unit * 2)):
+        d.rounded_rectangle([0, top, RAIL - 1, top + length], radius=RAIL // 2,
+                            fill=btn)
+    side_top = int(h * 0.22)
+    d.rounded_rectangle([w - RAIL + 1, side_top, w, side_top + unit * 3],
+                        radius=RAIL // 2, fill=btn)
+    return body
 
 
 def hero(photo_path, line, ground):
