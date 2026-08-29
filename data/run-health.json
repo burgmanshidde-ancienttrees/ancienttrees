@@ -2438,6 +2438,28 @@
    ],
    "trees": 16,
    "logged": true
+  },
+  {
+   "started": "2026-08-29T18:59:22+00:00",
+   "date": "2026-08-29",
+   "run_id": "33269685808",
+   "minutes": 6.8,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 48,
+   "denials": 7,
+   "denials_source": "permission_denials: Bash, Bash(curl), Bash(for), Bash(python3)",
+   "ended": "success",
+   "tokens": 4930277,
+   "claims_held": [
+    "taormina",
+    "coimbra"
+   ],
+   "commits": 2,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [

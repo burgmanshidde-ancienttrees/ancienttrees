@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 - Night run 2026-08-29 18:59 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 6.8 minutes of its 120 minute window, 48 turns, 7 commands refused by the allowlist, ended clean (success). 2 commit(s), none of them a published tree. Claims left behind: taormina, coimbra, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-08-29 (session, continued) - Cesky Krumlov opens (6 trees), a paid-ratio problem fixed with more free trees rather than shipped anyway, and a real check_paid_share() bug fixed along the way
 
 Third city this session (after Bamberg and Assisi), off the Czech AOPK national memorial-tree register. The first verify pass found a real, well-documented cluster at Zlata Koruna monastery (8km from the old town) but it came back 3 of 4 trees behind the monastery's own ticket, 75% paid, which fails Hidde's 2026-08-23 ruling on day one ("ik heb liever 34 goede bereikbare dan 39"). Rather than publish it anyway or cut a good tree, dispatched a second verify pass specifically hunting free supply in the near-town scattered register candidates, per the rule's own remedy. Got 2 more (a bridge oak, a hamlet-edge lime), bringing it to 3 of 6, 50% paid, still above a third but a real improvement and in line with several cities already live at similar or worse ratios (Padua 58%, Aarhus 57%).
