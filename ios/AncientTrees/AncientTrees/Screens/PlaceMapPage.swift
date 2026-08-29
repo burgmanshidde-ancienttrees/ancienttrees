@@ -73,6 +73,9 @@ struct PlaceMapPage: View {
                     onSelectTree: { navigator.push = .tree($0) },
                     focus: centre,
                     spanMeters: span,
+                    // The whole point of this page is these trees, so it frames
+                    // them rather than a point near them. See fitsTrees.
+                    fitsTrees: true,
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
         } header: {

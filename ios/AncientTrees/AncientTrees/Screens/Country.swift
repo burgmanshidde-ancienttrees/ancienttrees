@@ -64,6 +64,7 @@ struct CountryView: View {
                         TreeMap(trees: trees,
                                 focus: centre,
                                 spanMeters: span,
+                                fitsTrees: true,
                                 selected: .constant(nil))
                             .allowsHitTesting(false)
                         Label("Expand map",

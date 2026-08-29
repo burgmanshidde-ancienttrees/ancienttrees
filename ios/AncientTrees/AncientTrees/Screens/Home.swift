@@ -520,6 +520,7 @@ struct CityView: View {
                                 focus: .init(latitude: frame.centre.lat,
                                              longitude: frame.centre.lng),
                                 spanMeters: frame.meters,
+                                fitsTrees: true,
                                 selected: .constant(nil))
                             .allowsHitTesting(false)
                         // A solid capsule, not a material one: over a pale map

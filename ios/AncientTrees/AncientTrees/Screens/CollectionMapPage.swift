@@ -56,6 +56,7 @@ struct CollectionMapPage: View {
                 onSelectTree: { navigator.push = .tree($0) },
                 focus: centre,
                 spanMeters: span,
+                fitsTrees: true,
                 selected: $selected)
             .ignoresSafeArea(edges: .bottom)
             .navigationTitle("My trees")
