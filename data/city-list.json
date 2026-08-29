@@ -39,7 +39,7 @@
    "country": "Spain",
    "slug": "barcelona",
    "status": "published",
-   "trees": 55
+   "trees": 56
   },
   {
    "city": "Singapore",
@@ -84,7 +84,7 @@
    "slug": "naples",
    "status": "published",
    "demand_views_90d": 198913,
-   "trees": 22
+   "trees": 23
   },
   {
    "city": "Vienna",
@@ -99,7 +99,7 @@
    "slug": "malaga",
    "status": "published",
    "demand_views_90d": 117780,
-   "trees": 10
+   "trees": 9
   },
   {
    "city": "Copenhagen",
@@ -174,7 +174,7 @@
    "slug": "valencia",
    "status": "published",
    "demand_views_90d": 162209,
-   "trees": 16
+   "trees": 15
   },
   {
    "city": "Nijmegen",
@@ -238,7 +238,7 @@
    "slug": "the-hague",
    "status": "published",
    "demand_views_90d": 236723,
-   "trees": 30
+   "trees": 29
   },
   {
    "city": "Toronto",
@@ -316,7 +316,7 @@
    "slug": "kyoto",
    "status": "published",
    "demand_views_90d": 142353,
-   "trees": 18,
+   "trees": 17,
    "promoted": "Promoted from 51 to the top of the 'next' block by Hidde on 2026-08-10, on Search Console evidence rather than on the demand proxy: /kyoto is the site's best-performing page by clicks (3 clicks on 34 impressions in the 10-day window, ahead of Lisbon's 2 on 48 and the homepage's 2 on 19). Demand ranking had it at 51 on 142,353 Wikipedia views; measured clicks beat the proxy whenever we have them.",
    "caveat": "What improving Kyoto can and cannot be. Its 10 trees span 35.5 km and NOT ONE has another within 2 km, the worst spread of any city on the site (CLAUDE.md's cluster doctrine names it as the counter-example to Cadiz). So Kyoto will never be an afternoon's walk, and adding trees to the existing ten would not change that. The work that pays is a genuine walkable cluster inside one district, Higashiyama or Arashiyama, which means researching a district rather than a city and accepting that the current ten stay a scattered list beside it. Photos are nearly done already: 8 of 10, missing only the Heian Cedar of Katanami and the Emperor's Gift Cherry of Kamigamo."
   },
@@ -334,7 +334,7 @@
    "slug": "cagliari",
    "status": "published",
    "demand_views_90d": 51351,
-   "trees": 8
+   "trees": 9
   },
   {
    "city": "Vilnius",
@@ -447,7 +447,7 @@
    "slug": "sorrento",
    "status": "published",
    "demand_views_90d": null,
-   "trees": 4
+   "trees": 6
   },
   {
    "city": "Vancouver",
@@ -933,7 +933,7 @@
    "country": "United States",
    "slug": "oahu",
    "status": "published",
-   "trees": 6
+   "trees": 8
   },
   {
    "city": "Los Angeles",
@@ -1132,7 +1132,7 @@
    "slug": "granada",
    "status": "published",
    "demand_views_90d": 86361,
-   "trees": 10
+   "trees": 9
   },
   {
    "city": "Bangkok",
@@ -1180,6 +1180,13 @@
    "slug": "thessaloniki",
    "status": "published",
    "demand_views_90d": 180145,
+   "trees": 4
+  },
+  {
+   "city": "Bamberg",
+   "country": "Germany",
+   "slug": "bamberg",
+   "status": "published",
    "trees": 4
   },
   {

@@ -8,6 +8,16 @@
 - [2026-07](archive/CURATION-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+## 2026-08-29 (session) - Bamberg opens, 4 trees, exactly at the floor
+
+New German city, rank 294, register=10 (Bavaria's Naturdenkmale, id+generic-name+coordinates only, no girth/height/age). A sister city on the same register, Rothenburg ob der Tauber, was checked and found "thin and scattered, none tractable for a quick open" (2026-08-27 entry below) so this one got a full verify pass rather than a quick look: joined the register against de.wikipedia's "Liste der Naturdenkmäler in Bamberg" for real descriptions/addresses, then OSM reverse-geocoding plus dated geotagged Commons photos (2017-2023) as the second independent source and the alive-now evidence. 4 of the closest 10 candidates verified, 4 blocked as explicit private garden/courtyard land (register's own wording), 2 left as leads (a plain street oak with no story found, a pear tree on private farmland only glimpsable from a footpath).
+
+No age or girth survives for any of the four; each story says so plainly once, near the end, as a reader invitation, per the standing rule. Three (the Ottobrunnen lindens, the Teufelsgraben oak, the Rothof lime) cluster within about 1-1.5km on the Wildensorg hillside; the fourth (the Buger Hof lime) is a separate stop by the Regnitz, with its access to the tree itself (versus the view from the towpath) left honestly unresolved. Wrote city intro/meta_description/FAQ/question-page copy by hand (Contract B/C); question_answer/oldest_tree_id name the Rothof lime as the best circumstantial (not measured) case, since none is dated.
+
+Also found and fixed along the way: `data/countries/germany.json` said "Four cities and 61 trees" while 9 cities (105 trees) were actually live, stale since well before today's own additions. One-line fix to the intro and meta_description, same as the Netherlands BLOCKER precedent.
+
+0 photos, 0 flagged besides the universal age gap. `city_names.py` run (no English exonym, as expected). Build, preflight, qa, superlatives all clean; the walk for the 3-tree Wildensorg cluster will route on the next pass once the live feed knows about Bamberg (route_walks.py reads the published feed, not the local build).
+
 <!-- archive-index -->
 ## 2026-08-29 (session, continuation) - Two more Baarn test submissions, same account as row 41
 
