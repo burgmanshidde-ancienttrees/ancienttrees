@@ -132,6 +132,9 @@ struct ContentView: View {
         case "citymap": return .placeMap(.city(value))
         case "countrymap": return .placeMap(.country(value))
         case "profile": return .profile
+        // A tree of YOURS, which was the last screen here no argument could
+        // open. Sightings.demoIDs are the two that -mine-demo always creates.
+        case "mine": return UUID(uuidString: value).map { Route.mine($0) }
         case "walk":
             let parts = value.split(separator: "|", maxSplits: 1).map(String.init)
             guard parts.count == 2 else { return nil }

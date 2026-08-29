@@ -967,11 +967,44 @@ struct TreeDetail: View {
             // button stands beside it: three controls at 375 points wrapped
             // the label onto two lines, which reads as a layout fault rather
             // than as a short word (seen on the sweep, 2026-08-26).
-            Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
-                Label("Take me there", systemImage: "arrow.turn.up.right")
-                    .lineLimit(1)
+            // ON YOUR OWN TREE THE BIG BUTTON IS THE CAMERA (Hidde,
+            // 2026-08-29: "de take me there knop is ook raar, de logische knop
+            // is add tree ofzo").
+            //
+            // He is right and it reads as an oversight rather than a decision.
+            // A tree of yours is one you photographed while standing under it,
+            // so the loudest control on the page offers to walk you to a place
+            // you were just at. Meanwhile the camera, which this file calls the
+            // main act on every tree page, is the one control hidden here.
+            //
+            // So they trade places. Directions stay, as a circle beside the
+            // heart, because a month later you may well want to find it again;
+            // what changes is which of the two is shouting.
+            if mine != nil {
+                Button { navigator.collectNearby = true } label: {
+                    Label("Add a tree", systemImage: "camera")
+                        .lineLimit(1)
+                }
+                .buttonStyle(BrandButtonStyle())
+                .accessibilityIdentifier("mine-add-tree")
+
+                Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
+                    Image(systemName: "arrow.turn.up.right")
+                        .font(.title3)
+                        .foregroundStyle(Brand.moss)
+                        .frame(width: 52, height: 52)
+                        .background(Brand.surface, in: .circle)
+                        .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Take me there")
+            } else {
+                Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
+                    Label("Take me there", systemImage: "arrow.turn.up.right")
+                        .lineLimit(1)
+                }
+                .buttonStyle(BrandButtonStyle())
             }
-            .buttonStyle(BrandButtonStyle())
 
             // NO photo button here. It lived beside "Take me there" for an
             // hour and only on trees without a picture, and Hidde was right
