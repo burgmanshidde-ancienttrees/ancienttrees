@@ -108,6 +108,7 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
+                heroBand
                 shelves
                 Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
@@ -194,6 +195,49 @@ struct HomeView: View {
     /// hero photo you cannot have on a phone without eating the whole screen.
     /// Picks the nearest tree that is at its best right now AND has a
     /// photograph, because a hero without a picture is a headline.
+    /// A photograph and the promise, a different one every time the app is
+    /// opened (Kit/Heroes.swift). It is the website's own hero moved onto the
+    /// phone, so somebody arriving from ancienttrees.app meets the same thing.
+    ///
+    /// It scrolls AWAY rather than pinning, which is the whole reason it is
+    /// allowed to be this big: the search field above it is pinned and stays,
+    /// so a picture at the top costs a scroll and never a control.
+    ///
+    /// No tree name on it, deliberately. These are stock photographs and a
+    /// name beside one would say we hold that tree, which we do not.
+    @ViewBuilder private var heroBand: some View {
+        // No photograph, no band. A gradient with a slogan on it is worse than
+        // nothing, and that is exactly what shipped for one build: Image("name")
+        // asks the asset catalogue, these files are loose in the bundle, and a
+        // missing image is not a build error. See Kit/Heroes.swift.
+        if let photo = Heroes.image {
+        ZStack(alignment: .bottomLeading) {
+            Image(uiImage: photo)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 260)
+                .clipped()
+            LinearGradient(colors: [.clear, .black.opacity(0.62)],
+                           startPoint: .center, endPoint: .bottom)
+                .frame(height: 260)
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Trees worth the walk,")
+                    .foregroundStyle(.white)
+                Text("wherever you are.")
+                    .foregroundStyle(Brand.gold)
+            }
+            .font(.brand(26, .bold, relativeTo: .title2))
+            .shadow(color: .black.opacity(0.35), radius: 8, y: 2)
+            .padding(16)
+        }
+        .frame(height: 260)
+        .clipShape(.rect(cornerRadius: 16))
+        .padding(.horizontal, 16)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Trees worth the walk, wherever you are")
+        }
+    }
+
     private var speciesShelf: some View {
         // 12, like every other section on this page. It was 8 here and 12
         // everywhere else, so the gap between a heading and what it introduces
