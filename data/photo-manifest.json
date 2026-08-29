@@ -1,8 +1,20 @@
 {
  "_note": "Original photo URL -> the vendored copy under site/public/photos. Written by scripts/vendor_photos.py --manifest from the files actually on disk. thumbUrl() reads it so the website and the app feed both point at our own domain instead of at Wikimedia, which rate-limits a card grid into HTTP 429.",
  "photos": {
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/235074125/large.jpg": {
+   "base": "aar_001-the-wild-service-tree-of-moesg-rd",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/2/2d/Arbre_d%27alicante_-_panoramio.jpg": {
    "base": "ali_005-ficus-del-passeig-de-canalejas",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ec/20141029_PlataanSchimmelpenninckstr_02.jpg": {
+   "base": "ame_008-the-plane-of-the-sint-jorisschool",
    "widths": [
     500
    ]
@@ -373,6 +385,12 @@
     500
    ]
   },
+  "https://upload.wikimedia.org/wikipedia/commons/4/42/Brno-Bystrc%2C_n%C3%A1m%C4%9Bst%C3%AD_28._dubna%2C_Bystrck%C3%A1_l%C3%ADpa_2025-08-16_%2815.22.22%29.jpg": {
+   "base": "brq_008-the-bystrc-lime",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/f/f7/Dilbeek_Kasterlindenstraat_Grensboom_%281%29_-_235489_-_onroerenderfgoed.jpg": {
    "base": "bru_002-the-kasterlinde",
    "widths": [
@@ -501,6 +519,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/6/6c/Weichselboom_%283000295248%29.jpg": {
    "base": "dbo_001-the-weichselboom-of-parklaan",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c8/Kaditzer_Linde_Hauptstamm.JPG": {
+   "base": "dre_005-the-kaditzer-linde",
    "widths": [
     500
    ]
@@ -879,6 +903,48 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/2/22/Leiden-Groenesteeg-11.jpg": {
    "base": "lei_006-the-groenesteeg-beech",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3f/30_weiblicher_Ginkgo%2C_Karl-Heine-Str._1.JPG": {
+   "base": "lpz_001-the-ginkgo-of-karl-heine-strasse",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d8/124_Flatterulme%2C_Karl-Heine-Str._2.JPG": {
+   "base": "lpz_002-the-european-white-elm-of-karl-heine-strasse",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/87/123_Sumpfzypresse%2C_Karl-Heine-Str._2.JPG": {
+   "base": "lpz_003-the-bald-cypress-of-karl-heine-strasse",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/07/125_Blutbuche%2C_Karl-Heine-Str.24.JPG": {
+   "base": "lpz_004-the-copper-beech-of-karl-heine-strasse",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/36/126_Japanischer_Schnurbaum%2C_K.-Heine-Str._24_b.JPG": {
+   "base": "lpz_005-the-pagoda-tree-of-karl-heine-strasse",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cf/Leipzig_Naturdenkmal_Schlitzbl%C3%A4ttrige_Rotbuche_Karl-Tauchnitz-Str_25_Nr_52.JPG": {
+   "base": "lpz_006-the-fern-leaved-beech-of-karl-tauchnitz-strasse",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/91/Leipzig_Naturdenkmal_Stieleiche_K-Kollwitz-Str_62_Nr_67.JPG": {
+   "base": "lpz_007-the-oak-of-kaethe-kollwitz-strasse",
    "widths": [
     500
    ]

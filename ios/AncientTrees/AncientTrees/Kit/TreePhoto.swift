@@ -191,6 +191,18 @@ struct TreePhoto<Placeholder: View>: View {
                     Image(uiImage: image).resizable().aspectRatio(contentMode: contentMode)
                 }
                 .clipped()
+                // DECORATIVE, which is both true and what keeps the layout gate
+                // honest. A photograph with no words in it tells VoiceOver
+                // nothing it cannot get from the name and the story beside it,
+                // so hiding it removes a stop that announced "Image" and no
+                // more. TreeCard's own card image was marked this way on the
+                // same reasoning and for the same second effect: a `.fill`
+                // image reports the size its picture wants rather than the box
+                // it is clipped to, and appfit reads frames, so the tree page's
+                // hero measured 468 points on a 375 point screen while looking
+                // exactly right. A shelf is exempt from that check for the same
+                // reason: overflow nobody can see is not a fault.
+                .accessibilityHidden(true)
             } else {
                 placeholder()
             }

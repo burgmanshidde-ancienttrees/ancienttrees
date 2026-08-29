@@ -9,6 +9,78 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (session) - Seven app fixes: signing out empties the phone, your own trees join the counts, and one image loader
+
+Hidde sent a list this morning. All seven are done, built, and walked on the
+simulator; the layout gate is clean on 27 screens.
+
+**Signing out empties this phone.** Saving and collecting have needed an account
+since 2026-08-25, so a filled heart on a signed-out phone was a leftover from a
+session that had ended, and it showed on every card, on the pins, and as a name
+and a picture over the settings page. Both stores gain `forgetLocally()`, named
+that way because nothing is deleted anywhere else: the collection lives in the
+account and comes back on the next sign-in. Your own PHOTOGRAPHS stay, and that
+is the one deliberate exception: an upload may not have reached them yet, and a
+picture somebody took under a tree is not recoverable by signing back in.
+
+**Your own trees cluster with the numbers.** They lived in a map source of their
+own, and a grid can only group what it is handed, so a city collapsing to one
+bubble left your pin hanging beside it at full size. One source now. The
+grouping came out as a pure function so two tests can ask the question without a
+simulator: that yours joins the pile, and that it comes back out when the map is
+close.
+
+**And the map stops losing its pins on a zoom out, which was the third report.**
+The cause was not in the pins. Five statics in MapLayers were shared by every map
+view in the app while only the image register had been made per style, and this
+file had already recorded that exact lesson on 2026-08-28 without applying it to
+the rest. `leaves` held "the trees", so opening a tree page, whose map draws one
+tree, replaced it everywhere: going back and zooming out re-clustered the Map tab
+from that single tree and the map emptied, with nothing to redraw it.
+`writeCount` numbered the GeoJSON files and each write deletes the one before
+it, so two live maps deleted each other's file while the other's source was still
+reading it. All of it is per style now, in a weak-keyed table so a dead map
+cannot leave its state behind for a new one.
+
+**The photo pin is the size of every other pin, third asking.** The first answer
+matched the CANVAS, and both images were already 38 points: inside them ours drew
+a 34 point disc while yours filled the whole 38. It is `pin()`'s own rectangles
+now, and the comment says to change them together.
+
+**"Plaatjes laden weer niet", so there is one image loader and no AsyncImage
+left.** Serving the cards off our own domain on 2026-08-27 removed the CAUSE of
+the burst and could not fix the rest: AsyncImage has no retry at all, so one 429
+or one dropped connection leaves a placeholder until the view is rebuilt, and it
+caches nothing a scroll can use. Retry three times honouring Retry-After,
+decoded images kept in memory, four requests at a time, one request per url
+however many views ask. URLCache goes from the system's 512 KB to 16 MB and
+256 MB on disk. No library added.
+
+**And the vendoring had rotted, which is the other half of the same complaint.**
+Eleven photographs approved since 08-27 were back on Wikimedia, because
+`vendor_photos.py` runs once by hand. Fetched, and two mechanisms so it cannot
+rot the same way: the script now rewrites the manifest itself (fetching without
+it changed nothing anybody could see, which is exactly what had happened), and
+`brief.py` says at the top of every session how many are waiting. It has to be a
+session rather than a workflow because the Actions egress proxy blocks
+upload.wikimedia.org.
+
+**The sign-in sentence, in his words: "register and sign in to add and save
+trees".** It said "Keep your trees" over "An account carries your collection to
+the website and to any phone you sign in on", which is our plumbing at the moment
+somebody is deciding whether to bother. Written once now, in
+`SignInReason.prompt`, because it was written three times and two had drifted.
+
+**Directions loses "Ask again".** The row lists the apps, which is what iOS's own
+Default Apps screen does.
+
+One thing worth knowing rather than fixing: the new `TreePhoto` failed the layout
+gate on first build, on the tree page and the pin picker. A `.fill` image reports
+the size its picture wants rather than the box it is clipped to, so the hero
+measured 468 points on a 375 point screen while looking exactly right. It is
+marked decorative now, which is what TreeCard's own card image already did for
+the same reason.
+
 ## 2026-08-29 (session) - Three trees live with photographs, 118 more leads made writable, and the deploy unstuck
 
 **The deploy had been red since my own photo commit and nothing had said so.** feedshape.py refused the build because `trees[].photo.width` and `photo.height` had gone null where they had always been numbers, which stops every installed app updating silently rather than loudly. The cause was one approval of mine: `photo_apply.py` writes url, licence, attribution and status and has never written dimensions; every earlier approval got them from somewhere else. Fixed both ways. The two photos carry dimensions now and moved from iNaturalist's medium variant to large (768x1024 rather than 375x500, matching the other iNaturalist photos here), and photo_apply reads the size off the image header before writing anything, for approve and hold alike, warning rather than writing silence when it cannot. Tested against three known files, exact match.

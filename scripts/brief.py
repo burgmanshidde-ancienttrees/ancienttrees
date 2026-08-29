@@ -6,6 +6,7 @@ This prints the state of the project so it lands in context before he types.
 """
 
 import json
+import re
 import subprocess
 from pathlib import Path
 
@@ -147,10 +148,42 @@ def broken_gates(out):
             "then gh run view <id> --log-failed", ""]
 
 
+def photos_still_off_domain(out):
+    """Card photographs still served by somebody else, which a session must fix.
+
+    Wikimedia rate-limits a grid: a burst of 24 thumbnails came back 13 x HTTP
+    429 on 2026-08-27, and the answer was to copy the card images onto our own
+    domain (scripts/vendor_photos.py). That script runs ONCE, by hand, so every
+    photograph approved after it drifts straight back off-domain: eleven had by
+    2026-08-29, and Hidde reported the same thing again ("plaatjes laden weer
+    niet").
+
+    It cannot be automated where the rest of this is automated. The GitHub
+    Actions egress proxy blocks upload.wikimedia.org, measured 2026-08-07, so a
+    workflow step would fetch nothing and say so to nobody. A session reaches it
+    normally, which is why the reminder is here, at the top of one.
+
+    It asks the script rather than counting off-domain urls itself, and that is
+    the difference between a line worth reading and one nobody believes: a
+    handful of photographs can never be vendored at all (all rights reserved,
+    hosts the script does not cover), so a count of "not on our domain" is
+    permanently non-zero and permanently ignored. --dry-run reads files and
+    touches no network.
+    """
+    r = sh("python3", str(ROOT / "scripts" / "vendor_photos.py"), "--dry-run")
+    m = re.search(r"(\d+) to fetch", r or "")
+    if m and int(m.group(1)):
+        out += [f"{m.group(1)} photograph(s) are not on our own domain yet, which is "
+                f"how the app's images start failing.",
+                "  python3 scripts/vendor_photos.py   (local only: CI cannot reach Wikimedia)",
+                ""]
+
+
 def main():
     out = ["ANCIENT TREES — state at session start", ""]
     since_last_visit(out)
     broken_gates(out)
+    photos_still_off_domain(out)
 
     # Cities and trees
     try:

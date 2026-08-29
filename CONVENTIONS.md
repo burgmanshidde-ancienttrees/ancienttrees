@@ -139,3 +139,59 @@ Waze publishes no https link, only `waze://`, so it is not offered.
 
 Recorded 2026-08-28, the day Take me there turned out to open Apple Maps on
 every phone because the Google branch under it was unreachable.
+
+---
+
+## What signing out takes with it
+
+**Reference: Strava, AllTrails, Google Maps.** Signing out of an account app
+leaves the device showing the signed-out app: the saved lists, the ticks, the
+name and the avatar all go, and they come back on the next sign-in because they
+live in the account rather than on the phone. Nothing any of them do treats a
+sign-out as a request to delete anything from the account.
+
+The one thing that is NOT cleared anywhere is media the person created on that
+device and may not have uploaded yet. Photographs are the case where "it is
+safely in the account" can be false, and losing one is not recoverable by
+signing back in.
+
+Recorded from our own corpus, 2026-08-29 (Hidde: "de favourites en seen moet
+ook leeg wanneer niet ingelogd... profielfoto moet weg als je uitlogt net als
+alle hartjes op de thumbnails"). No source URL captured; the behaviour is
+described from use rather than from documentation, so re-check before leaning
+on it for anything larger.
+
+---
+
+## A default-app setting, and whether it offers to ask again
+
+**Reference: WhatsApp, and iOS's own Default Apps screen.** An app that opens
+directions and cannot read the system default asks the person once and remembers,
+with a settings row to change it afterwards. The row lists THE APPS. iOS's own
+Default Apps screen does the same: it names the apps and has no "ask me each
+time" entry.
+
+So the settings row here lists Apple Maps and Google Maps and nothing else
+(Hidde, 2026-08-29: "directions ask again optie is niet nodig"). It still SHOWS
+"Ask each time" while nobody has answered, because that is what is true then.
+
+Extends the entry above on which maps app to open, recorded 2026-08-28.
+
+---
+
+## Loading a photograph over the network, reliably
+
+**Reference: SDWebImage and Kingfisher**, the two libraries almost every iOS app
+uses for this, and what they do rather than what they are. Four properties, and
+SwiftUI's own `AsyncImage` has none of them: retry on a failed or rate-limited
+request, a memory cache of DECODED images so a scroll back costs nothing, a cap
+on how many requests run at once, and one request per url however many views ask
+for it at the same moment.
+
+Neither library is used here, because a dependency inside the product needs
+Hidde's yes (hard rule 5). The four properties are the convention; the eighty
+lines in `ios/AncientTrees/AncientTrees/Kit/TreePhoto.swift` are ours.
+
+Recorded 2026-08-29 from what these libraries are known to do, after Hidde
+reported "plaatjes laden weer niet" for the second time in three days. No source
+URL captured at the time.
