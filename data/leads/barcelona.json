@@ -3,7 +3,7 @@
   "country": "Spain",
   "city_slug": "barcelona",
   "updated": "2026-08-08",
-  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019. Extended 2026-08-06 by the Barcelona deepen verification pass: the Pedralbes/Torre Girona and Vil.la Amelia clusters (bcn_023 to bcn_032) verified and delivered to data/research/barcelona-verified.json, none blocked. One incidental find (Tarongers de Louisiana, Torre Girona) added to leads, undated and unjudged for collectibility. Extended 2026-08-08 by a verification pass on the five undated Gracia/Park Guell-adjacent candidates: the Llentiscle de l'Hort de l'Avi verified and delivered to data/research/barcelona-verified.json as bcn_033 (public access path into Park Guell's free wooded perimeter, second source bcnsostenible.cat). The combined four-tree lead entry below is superseded by the three entries that follow it, split out with what this pass found. Two of the remaining three moved to blocked (Ficus de Mysore, Xiprer del carrer Betlem); two stay leads with access now the open question rather than the date (Garrofer and Pebrer bord del carrer Maignon).",
+  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019. Extended 2026-08-06 by the Barcelona deepen verification pass: the Pedralbes/Torre Girona and Vil.la Amelia clusters (bcn_023 to bcn_032) verified and delivered to data/research/barcelona-verified.json, none blocked. One incidental find (Tarongers de Louisiana, Torre Girona) added to leads, undated and unjudged for collectibility. Extended 2026-08-08 by a verification pass on the five undated Gracia/Park Guell-adjacent candidates: the Llentiscle de l'Hort de l'Avi verified and delivered to data/research/barcelona-verified.json as bcn_033 (public access path into Park Guell's free wooded perimeter, second source bcnsostenible.cat). The combined four-tree lead entry below is superseded by the three entries that follow it, split out with what this pass found. Two of the remaining three moved to blocked (Ficus de Mysore, Xiprer del carrer Betlem); two stay leads with access now the open question rather than the date (Garrofer and Pebrer bord del carrer Maignon). Extended 2026-08-29: a verify claim on the Pedralbes/Sarria cluster re-verified bcn_023/024/025 under new ids (bcn_056/057/058) without checking passcheck.py first; folded into blocked as duplicates. One genuine new find survived from the same pass, the Osage Oranges of the Torre Girona Gardens (bcn_059), a distinct catalogued item (register_id 99400680106) in the same garden as the already-published bcn_026/027/028, different species, not a duplicate.",
   "leads": [
     {
       "name": "Freixe de fulla estreta del Jardi Botanic Historic",
@@ -618,6 +618,33 @@
       "lng": 2.153940001097059,
       "status": "blocked",
       "why": "Private land, not open to visitors. Register (99400680099) plus beteve.cat's 2021 press piece confirm existence and species (2.1m girth, 24m tall, catalogued 2021), but a Guia Barcelona description found in search places it explicitly 'in the front courtyard of a private four-story building' at Carrer de Betlem 55-59, alongside a plane and a tipuana. No sign this is a street tree or on any publicly accessible plot. Hard rule 10 territory: leave it out."
+    },
+    {
+      "name": "The Stone Pine of the Palau de Pedralbes (re-verified as bcn_056)",
+      "species": "Pinus pinea",
+      "lat": 41.38824447722184,
+      "lng": 2.1159920622717814,
+      "status": "duplicate",
+      "why": "DUPLICATE, found 2026-08-29: a verify pass re-researched this tree from the register (register_id 99400454972) without checking passcheck.py first. Already published as bcn_023, The Stone Pine of the Palau de Pedralbes Gardens, same coordinates, same register id, same sources. Removed from data/research/barcelona-verified.json before the write pass; does not ship a second time.",
+      "register_id": 99400454972
+    },
+    {
+      "name": "The Deodar Cedar of the Palau de Pedralbes (re-verified as bcn_057)",
+      "species": "Cedrus deodara",
+      "lat": 41.38807040491239,
+      "lng": 2.117851080597635,
+      "status": "duplicate",
+      "why": "DUPLICATE, found 2026-08-29: a verify pass re-researched this tree from the register (register_id 99400455027) without checking passcheck.py first. Already published as bcn_024, The Himalayan Cedars of the Palau de Pedralbes Gardens, same coordinates, same register id, same sources. Removed from data/research/barcelona-verified.json before the write pass; does not ship a second time.",
+      "register_id": 99400455027
+    },
+    {
+      "name": "The Sandarac Tree of the Palau de Pedralbes (re-verified as bcn_058)",
+      "species": "Tetraclinis articulata",
+      "lat": 41.38696748025517,
+      "lng": 2.1182930640459015,
+      "status": "duplicate",
+      "why": "DUPLICATE, found 2026-08-29: a verify pass re-researched this tree from the register (register_id 99400454990) without checking passcheck.py first. Already published as bcn_025, The Barbary Thuja of the Palau de Pedralbes Gardens, same coordinates, same register id, same sources. Removed from data/research/barcelona-verified.json before the write pass; does not ship a second time.",
+      "register_id": 99400454990
     }
   ]
 }
