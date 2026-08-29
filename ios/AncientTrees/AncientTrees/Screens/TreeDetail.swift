@@ -321,6 +321,26 @@ struct TreeDetail: View {
                     MapInset(lat: tree.lat, lng: tree.lng, side: nil, height: 240)
                 }
                 .clipped()
+                // THE WHOLE PICTURE IS THE WAY TO THE REAL MAP (Hidde,
+                // 2026-08-29: "als je op een detailpagina bent van een boom en
+                // je klikt op het kaartje kan daarna de hele afbeelding wel als
+                // knop functioneren om de map groter te openen").
+                //
+                // Same move he asked for on the city page, for the same reason:
+                // once the hero IS a map, a 44 point icon in the corner is a
+                // small target for a large obvious thing. The icon stays as the
+                // sign that it expands, which is what the city preview does with
+                // its Expand map label; it is no longer the only way in.
+                //
+                // A tap gesture rather than a Button around the box. A Button's
+                // reported frame is the union of everything inside it, and this
+                // one holds a UIKit map view whose layer sits on a half point,
+                // so it measured 403.3 on a 402 point screen and kept the layout
+                // gate red. The overlays below sit on top and keep their own
+                // taps.
+                .contentShape(.rect)
+                .onTapGesture { navigator.push = .treeMap(tree.id) }
+                .accessibilityElement(children: .contain)
                 .overlay(alignment: .bottomTrailing) {
                     // THE SAME CONTROL, POINTING THE OTHER WAY (Hidde,
                     // 2026-08-26: "dan wil je die actie om terug te gaan naar
