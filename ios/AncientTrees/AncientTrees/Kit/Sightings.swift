@@ -76,6 +76,16 @@ final class Sightings {
         var photo: String?
         var status: Status = .mine
 
+        /// When the account last took a copy of this, photograph and all.
+        ///
+        /// It exists to answer one question and only that one: may this be
+        /// dropped from the phone when nobody is signed in. A sighting the
+        /// server has can always come back; one it has never seen cannot come
+        /// back from anywhere. Optional so a file written before 2026-08-29
+        /// still decodes, and nil means the honest thing, which is that we do
+        /// not know it arrived.
+        var syncedAt: Date?
+
         /// The id this sighting wears wherever the app talks about TREES: the
         /// heart on its page saves under it, so anything asking whether you
         /// hearted your own tree has to ask with this exact string. Written
@@ -328,6 +338,50 @@ final class Sightings {
         all[i].status = status
         persist()
         Self.syncOne?(all[i])
+    }
+
+    /// The account has this one now, photograph and all.
+    ///
+    /// Written from the sync, never guessed. It is not persisted through
+    /// `Self.syncOne` on purpose: telling the server that we know it has the
+    /// row would be a second write for nothing.
+    func markSynced(_ id: UUID, at when: Date = Date()) {
+        guard let i = all.firstIndex(where: { $0.id == id }) else { return }
+        all[i].syncedAt = when
+        persist()
+    }
+
+    /// EVERYTHING THE ACCOUNT ALREADY HOLDS, off this phone.
+    ///
+    /// Hidde, 2026-08-29: "als je uitlogt moeten de bomen die je hebt
+    /// toegevoegd niet meer zichtbaar zijn op de kaart en in de lijsten", and
+    /// "ik kan ook een boom removen terwijl ik uitgelogd ben dat lijkt me niet
+    /// de bedoeling". He is right on both, and it is the same rule the hearts
+    /// and the profile already follow: a phone nobody is signed in to wears
+    /// nobody's collection.
+    ///
+    /// WHAT IT KEEPS, and why this is not simply `all = []`. Earlier today the
+    /// photographs were exempted wholesale, on the reasoning that an upload may
+    /// not have reached the server and a picture somebody took under a tree is
+    /// not recoverable by signing back in. That reasoning is right about the
+    /// unsent ones and wrong about the rest, and exempting all of them to
+    /// protect some of them is what put somebody's collection on a signed-out
+    /// phone. So the question is asked per sighting instead: `syncedAt` says
+    /// the account has this one, and only those go.
+    ///
+    /// A sighting made while signed out therefore stays, which is the honest
+    /// outcome rather than a loophole: it belongs to nobody, no server has it,
+    /// and deleting it would destroy the only copy that exists.
+    func forgetLocally() {
+        let leaving = all.filter { $0.syncedAt != nil }
+        guard !leaving.isEmpty else { return }
+        for s in leaving {
+            if let f = s.photo {
+                try? FileManager.default.removeItem(at: folder.appendingPathComponent(f))
+            }
+        }
+        all.removeAll { $0.syncedAt != nil }
+        persist()
     }
 
     func remove(_ id: UUID) {

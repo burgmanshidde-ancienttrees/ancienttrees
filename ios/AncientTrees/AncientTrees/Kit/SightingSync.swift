@@ -48,6 +48,11 @@ enum SightingSync {
                                           lat: lat, lng: lng)
             if let t = row["taken_at"] as? String,
                let d = ISO8601DateFormatter().date(from: t) { made.date = d }
+            // It came FROM the account, so the account has it. Without this the
+            // first sign-out after a fresh sign-in would keep every pulled
+            // tree on the phone, waiting for a push to tell us what we already
+            // know.
+            made.syncedAt = Date()
             if let st = row["status"] as? String,
                let k = Sightings.Status(rawValue: st) { made.status = k }
 
@@ -105,7 +110,15 @@ enum SightingSync {
         row["species"] = sighting.species
         row["age"] = sighting.age
         row["photo"] = stored
-        await post("/rest/v1/sightings?on_conflict=user_id,id", token: s.accessToken, body: [row])
+        let landed = await post("/rest/v1/sightings?on_conflict=user_id,id",
+                                token: s.accessToken, body: [row])
+        // ONLY when the photograph went too, where there is one. A row without
+        // its picture is not a copy of this sighting, and treating it as one
+        // is how somebody signs out and loses the photograph while keeping the
+        // pin.
+        if landed, stored != nil || sightings.image(sighting) == nil {
+            await MainActor.run { sightings.markSynced(sighting.id) }
+        }
     }
 
     /// One sighting deleted here, deleted there. The file goes first for the
@@ -139,10 +152,16 @@ enum SightingSync {
         return j
     }
 
-    private static func post(_ path: String, token: String, body: [[String: Any]]) async {
+    /// Whether the row actually landed, which nothing asked until 2026-08-29.
+    /// Forgetting a sighting on sign-out turns on this exact answer: dropping
+    /// one we only HOPED had arrived would lose it for good.
+    @discardableResult
+    private static func post(_ path: String, token: String, body: [[String: Any]]) async -> Bool {
         let r = Supa.request(path, token: token, body: body,
                              prefer: "resolution=merge-duplicates,return=minimal")
-        _ = try? await Net.data(for: r)
+        guard let (_, resp) = try? await Net.data(for: r),
+              let http = resp as? HTTPURLResponse else { return false }
+        return (200..<300).contains(http.statusCode)
     }
 
     private static func delete(_ path: String, token: String) async {

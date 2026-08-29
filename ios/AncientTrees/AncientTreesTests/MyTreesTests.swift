@@ -363,6 +363,78 @@ struct WhenPermissionIsRefused {
 /// lands are pure functions, on the same principle the camera source decision
 /// was pulled out for: when the situation cannot be reproduced on the machine
 /// that tests it, make the DECISION testable instead of the situation.
+/// SIGNING OUT, which is the state this app spent its first weeks never being in.
+///
+/// Hidde, 2026-08-29: "als je uitlogt moeten de bomen die je hebt toegevoegd
+/// niet meer zichtbaar zijn op de kaart en in de lijsten", and "ik kan ook een
+/// boom removen terwijl ik uitgelogd ben dat lijkt me niet de bedoeling".
+///
+/// The rule has two halves and only testing the first is how the bug it fixes
+/// gets replaced by a worse one: everything the account holds goes, and
+/// everything the account has never seen stays. A file somebody photographed
+/// under a tree while signed out is the only copy of it in the world.
+@Suite struct SigningOutForgetsTheCollection {
+
+    @Test func aTreeTheAccountHoldsLeavesThePhone() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let made = s.record(treeId: nil, name: "The oak on my street",
+                            lat: 52.37, lng: 4.89, image: pixel())
+        let file = made.photo ?? ""
+        s.markSynced(made.id)
+
+        s.forgetLocally()
+
+        #expect(s.all.isEmpty, "a synced tree stayed on a signed-out phone")
+        #expect(!p.files().contains(file), "its photograph stayed behind")
+        #expect(Sightings(folder: p.url).all.isEmpty, "it came back on the next launch")
+    }
+
+    @Test func aTreeNobodyHasACopyOfStays() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let made = s.record(treeId: nil, name: "Photographed while signed out",
+                            lat: 52.37, lng: 4.89, image: pixel())
+
+        s.forgetLocally()
+
+        #expect(s.all.count == 1, "the only copy of somebody's tree was deleted")
+        #expect(s.image(s.all[0]) != nil, "the only copy of their photograph was deleted")
+        #expect(made.syncedAt == nil, "a fresh sighting claimed the account had it")
+    }
+
+    @Test func onlyTheSyncedOneOfTwoGoes() {
+        let p = Patch(); defer { p.clean() }
+        let s = Sightings(folder: p.url)
+        let kept = s.record(treeId: nil, name: "Never sent", lat: 52.1, lng: 4.1, image: pixel())
+        let gone = s.record(treeId: nil, name: "At the account", lat: 52.2, lng: 4.2, image: pixel())
+        s.markSynced(gone.id)
+
+        s.forgetLocally()
+
+        #expect(s.all.map(\.id) == [kept.id])
+        #expect(p.files().contains(kept.photo ?? ""), "it took the wrong photograph")
+    }
+
+    /// A file written before syncedAt existed still decodes, and decodes to the
+    /// honest answer: we do not know the account has it, so it stays.
+    @Test func anOlderFileDecodesAsUnsynced() {
+        let p = Patch(); defer { p.clean() }
+        p.write("""
+        [{"id":"00000000-0000-0000-0000-0000000000b1","name":"From an older build",
+          "note":"","lat":52.37,"lng":4.89,
+          "date":770000000,"status":"mine"}]
+        """)
+
+        let s = Sightings(folder: p.url)
+        #expect(s.all.count == 1, "an older file stopped decoding")
+        #expect(s.all[0].syncedAt == nil)
+
+        s.forgetLocally()
+        #expect(s.all.count == 1, "an older file's tree was dropped on sign-out")
+    }
+}
+
 @Suite struct CameraRollTests {
 
     @Test func theLibrarysOwnRecordBeatsTheFilesMetadata() {
