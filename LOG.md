@@ -83,6 +83,45 @@ Both lines are conditional now, and so is the block, because a VStack of two
 empty lines still spends its own spacing. Rendered on a tree with one line and
 on a tree with neither.
 
+**Later the same morning, four more he sent while these were being walked.**
+
+**The disappearing pins, REPRODUCED at last.** He said it had always been that
+way for him and that I had never reproduced it, and he was right on both counts:
+this morning's fix went in on reasoning about shared state, not on a repro. The
+steps are: open any city page, tap back, and the Map tab has no pins at all
+while the sheet still says "24 trees you can see". No zoom needed. A city page
+carries a live map of that city's trees, which overwrote the one static holding
+"the trees", and the Map tab's next redraw used Krakow's or Florence's set.
+Verified on a build of the commit before the fix and on the one after.
+
+**Every map now aims at its trees, and that was two faults.** The camera never
+aimed at all: the code that applies the sheet's content inset and then centres
+into the visible strip sat in `updateUIView` behind `bounds.height > 0`, and on
+the Krakow city map that guard is false on all three calls, measured by writing
+every one to a file. SwiftUI updates a representable when its inputs change and
+layout happens afterwards; only the Map tab escapes it, because its `region`
+binding drags a later update along. It is a `layoutSubviews` override now, so
+every map is fixed at once. And the frame was wrong even once aimed: `focus` is
+the MEAN of the trees and the span is fitted to the map's WIDTH, so Aarhus put
+four of its seven on screen. Maps that show a SET fit a bounding box now.
+
+**Signed out, My trees holds nothing of yours.** The hearts and ticks went with
+this morning's change; the trees somebody photographed, the stat row counting
+them and their pins on the cover map did not. They are kept and not shown, and
+that distinction is deliberate: a photograph may not have reached the account
+yet, and it is the one thing here that signing back in cannot undo.
+
+**Vienna, Utrecht and Austria wear a tree.** All three were one problem: two bare
+winter photographs where you cannot tell which trunk is the tree, and Austria's
+card is its biggest city's face. Pinned by hand, because the ranking weighs
+pixels and orientation and cannot tell a leafless tangle from a tree in leaf.
+
+**FOR HIDDE, one thing I did not fix.** The layout gate is blind to the user
+location dot. It is MapLibre's own annotation, it reports as a 30 by 30 button
+hanging off the left edge, and it only exists once location is granted, which
+the CI simulator never does and every real person does. Whether to hide it from
+VoiceOver or teach appfit to ignore it is a real choice and it is yours.
+
 One thing worth knowing rather than fixing: the new `TreePhoto` failed the layout
 gate on first build, on the tree page and the pin picker. A `.fill` image reports
 the size its picture wants rather than the box it is clipped to, so the hero
