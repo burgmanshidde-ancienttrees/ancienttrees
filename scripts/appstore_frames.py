@@ -85,12 +85,16 @@ HERO_LINE = "Trees worth the walk,\nwherever you are."
 HERO_SOURCE = "https://images.unsplash.com/photo-1529025635398-c8844675ab65?q=85&w=2400&auto=format&fit=crop"
 
 PANELS = [
-    ("1-map", "The remarkable old trees\nnearest to you"),
-    ("2-tree", "Why this one is\nworth the walk"),
-    ("5-city", "Every old tree\nin a city"),
+    # Line one is a verb phrase that stands on its own and line two finishes
+    # it, because the two are set in different weights and the bold half has to
+    # make sense alone. That is AllTrails' own shape, "Vind routes" over "die
+    # je inspireren", and it is why theirs read calmly.
+    ("1-map", "Find the old trees\nnearest to you"),
+    ("2-tree", "Read what makes it\nworth the walk"),
+    ("3-city", "See every old tree\nin a city"),
     ("4-discover", "Browse by city,\ncountry or species"),
-    ("3-my-trees", "Collect the ones you\nhave stood in front of"),
-    ("6-add", "Add a tree\nnobody has mapped"),
+    ("5-my-trees", "Collect the trees\nyou have stood in front of"),
+    ("6-add", "Add a tree\nnobody has mapped yet"),
 ]
 
 # Quieter than the first version, measured against AllTrails' own panels: the
