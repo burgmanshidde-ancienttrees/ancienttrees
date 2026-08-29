@@ -54,7 +54,7 @@ A story for every tree, written to be read rather than skimmed, and honest about
 
 Directions to the trunk. Where a location is rough rather than exact, the page tells you before you set off, because sending you to the wrong spot is the one mistake worth avoiding.
 
-Your own collection. Photograph a tree while you stand in front of it and it joins your trees, ours and your own alike. Your photographs stay on your phone.
+Your own collection. Photograph a tree while you stand in front of it and it joins your trees, ours and your own alike. Signed out they stay on your phone; signed in they follow your account to a new phone, and nobody else can see them.
 
 A season calendar per species, so you know whether a tree is at its best in April or in November.
 
@@ -70,6 +70,15 @@ We will be, and readers are how it gets fixed. Every page has a way to report a 
 
 An account is one email address. Sign in and your collection follows you to a new phone; delete the account and everything goes with it.
 ```
+
+**CORRECTED 2026-08-29.** Two sentences here said a photograph of a tree never
+leaves the phone, which stopped being true on 08-27 when the sightings sync
+landed: signed in, the picture goes to a private bucket and the row carries the
+account id, the position and the time. The same stale sentence was found and
+fixed in PrivacyInfo.xcprivacy, in Sightings.swift and in RELEASE_CHECKLIST.md
+on 08-28, and this file was missed. It matters more here than anywhere else,
+because these two paragraphs are a statement to Apple in Hidde's name and one
+of them sits in the Review Notes box.
 
 ## What's New (version 1.0)
 
@@ -99,7 +108,7 @@ SIGNING IN is by email link, Apple or Google. Nothing in the app requires an acc
 
 USER CONTENT: people may set a display name and a profile picture that others can see when searching for somebody to follow. Reporting and blocking are on the three dots beside any person in Find People (My trees, the person icon beside your name). A blocked person is hidden everywhere except your own search for them, where they appear last with an Unblock button, so a block can always be lifted. Reports reach us directly and we act on them. Our terms state there is no tolerance for offensive or impersonating profiles: https://ancienttrees.app/terms
 
-PHOTOGRAPHS people take of trees stay on their own device and are not uploaded or shown to anybody else.
+PHOTOGRAPHS people take of trees stay on the device while signed out. Once signed in they sync to that person's own account so a new phone does not lose them: the storage bucket is private and no policy anywhere lets one account read another's, so they are never shown to anybody else.
 
 LOCATION is used only to centre the map on the trees nearest you and is never sent anywhere.
 
