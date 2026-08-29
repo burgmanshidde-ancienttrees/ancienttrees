@@ -9,6 +9,49 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 - Hard rule 10 sweep: five trees off the live pages, one rewritten as view-only
+
+Found by accident, which is worth recording as much as the finding. Writing a recognition line for Malaga's avocado put its access field in front of me: "Restricted: working school grounds, visits by prior appointment only", on a published tree. Grepping every access field in the database for the words the rule itself names turned up four more.
+
+| id | city | why it failed |
+|---|---|---|
+| gra_009 | Granada | Cedars of the Carmen de la Victoria, by prior appointment inside a University of Granada residence |
+| kyo_009 | Kyoto | Heian cedar of Katanami, prior arrangement with Kyoto City plus an accompanying nature guide |
+| mlg_010 | Malaga | Avocado of the Ciudad de Jaen school, appointment only AND working school grounds with no evidence they are open |
+| hag_001 | The Hague | The 1638 Juttepeer, guided tours by appointment or one open-monuments day a year; its own line said not open to casual walk-in visitors |
+| vlc_012 | Valencia | Ficus inside the Corts Valencianes, booked guided tour, not offered in August, described in its own entry as not a walk-up tree |
+
+All five research files are kept in `data/leads/<city>.json` with the story, the sources and the reason, marked blocked. Each goes back the day its access changes. Slugs are in `REMOVED_TREE_SLUGS`.
+
+**spl_001, Split's Hajdukova Murva, was NOT pulled.** It stands inside a rugby club's ground and is in clear view from the public pavement on Zrinsko-Frankopanska, which is the view-only case Hidde opened on 2026-08-13. Its access line was rewritten to lead with the view and to say plainly that you do not walk up to the trunk. Split has exactly four trees, so pulling it would have cost the city its page for a tree that qualifies.
+
+**Two knock-on repairs.** The Hague's whole page was built around the pear, down to `oldest_tree_id`; the Koekamp Oak takes over and the question page now states outright that the city's genuinely oldest tree is not listed, and why. And `/collections/the-oldest-tree-in-every-country-we-map` named kyo_009 as Japan's oldest, which killed the deploy; Japan's entry is now the Ayasugi of Kashii Shrine in Fukuoka, the oldest Japanese tree we actually publish.
+
+**Two checks, so neither class can ship again.** `check_access_permission()` in preflight.py fails a tree whose access needs an appointment, an arrangement, a booking, a doorbell or a reception desk, with three escapes: visible from public ground, the field saying outright that no permission is needed (Crete's olive at Vouves), and the sentence being about a different place (Seville's lagunaria, whose field distinguishes itself from the palace gardens next door). Zero false positives across 1,945 trees. `check_collection_targets()` fails a collection naming a tree no city file publishes.
+
+**The first draft of the access check was too loose and that is the lesson worth keeping.** It also matched "closed to the public", "guided tour only" and "no public access", and produced eight hits of which one was real: a Barcelona park shut for a year of restoration works, two gardens with closing times, a ranger station closed beside an open lawn, and a daily ticketed tour you walk up and join. None of those is a permission. The rule names a person you have to ask, not an inconvenience, and a check that cannot tell the difference would have had somebody deleting good trees.
+
+## 2026-08-29 - 112 pins upgraded, 413 girths and 11 heights filled, all from registers already on disk
+
+**Pins.** Of 713 approximate pins, 230 sat within five metres of an imported register row; 112 were upgraded to confirmed, each citing the register's catalogue url in `verified_sources` so `check_pin_upgrades()` can see the evidence, each logged in `data/research/pin-upgrades.json` with the row id and the distance. 87 netherlands-lrmb, 12 bayern, 10 barcelona-ail, 3 brussels. Refused: 406 with no register row within 120 m, 76 whose row does not name the tree (which is what excludes italy-masaf, unnamed on all 46 of its matches and recorded here as coarse), 31 with two or more rows within 25 m, 8 whose row covers more than one tree.
+
+**Two species conflicts, and they are pin errors of ours rather than matching failures.** bcn_043 calls itself the horse chestnut of the placa Carles Buigas and sits on the register's araucaria on avinguda Francesc Ferrer i Guardia, 250 metres from the tipuana that actually stands on that square. par_027, our Amur cork tree, sits on the register's Platanes d'Orient. Neither was upgraded. Both need a person, and both are the one kind of error this project treats as urgent.
+
+**Girths.** 413 trees, taking `girth_cm` from 263 to 685, via `scripts/girths.py`. Read from girth_cm (257), girth_m (81), girth (28), trunk_girth (27) and circumference_ft (20). Melbourne's `girth_m` column is published by nobody: median 91, maximum 235, which as metres is a 29-metre trunk and is almost certainly a diameter in centimetres. The diameter columns are refused outright; across the whole database they yielded one match a girth column had not already covered and it was wrong, giving Hilo's banyan a 92 cm trunk. Results: median 400 cm, top the Moreton Bay figs of Palermo and Valencia, bottom a Paris chestnut at a metre which is the sapling grown from Anne Frank's tree.
+
+**Heights.** 11 more via the existing `heights.py`, all italy-masaf. Its 5 m / 30 m-plus-genus rule is strict and stays strict.
+
+## 2026-08-29 - 141 recognition lines written, and what the field is actually for
+
+`how_to_recognise` was on 14 percent of published trees and 9 percent of the trees in cities with search impressions. Three of the first four real reader reports through the contribute form were "could not tell which tree", so this is the field readers have asked for by name.
+
+Written this pass, worst-first by impressions: Rome 30, Amsterdam 34, Milan 21, Prague 17, Copenhagen 16, Malaga 10, Madeira 6, Bath 5, Tenerife 4, Crete 4. Coverage 14 to 22 percent. **1,509 trees still have none, and 1,033 have neither a line nor a photograph.**
+
+**The rule for writing them, learned across the ten cities.** Every word is RE-STATED from what the entry already holds: species, girth, height, setting, access, and what the story already says. Nothing is added. A line about bark colour nobody recorded reads as description rather than as a claim, which makes it more dangerous than an ordinary invention and not less.
+
+And the line answers which of the trees in front of me is it, not what is impressive about this tree. Milan was the test of that, because eleven of its twenty-one entries are London planes and half of them are on streets: what separates them is a street number, a girth and a specific fixture, so that is what the lines carry. Where a tree is genuinely hard to find the line says so rather than pretending, which is how Rome's Aranciera hackberries and Madeira's Witch Tree read.
+
+`scripts/recognise.py` does the retrieval, ranked by demand, with a per-city brief and an apply step. It deliberately does not write the line: generating one would be templating, which P3 forbids, and it would be written from a pattern rather than from the tree.
 ## 2026-08-29 (session) - Salzburg opens at 5 trees, two species-page gaps closed
 
 **Salzburg published, new city, 5 trees, all flagged.** Finished a verify-then-write
