@@ -9,6 +9,17 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (session, continuation) - Two more Baarn test submissions, same account as row 41
+
+Rows 43 and 44 (`kind: tree`, city "Baarn", GPS 52.21395,5.29700, `why` empty
+and "Test") share `user_id` `0bf81cd8-f952-4f81-8596-299e2270de4c` with row 41,
+already resolved 2026-08-27 as Hidde's own click-through test of the app's
+`app:collect` submission flow (confirmed via the admin API as his account, not
+a reader report). No tree name, no species, nothing beyond a dropped pin. Not
+treated as a lead, and Baarn stays off from-zero research per CLAUDE.md rule
+1(d) regardless. Both set `outcome: holds` via the service key and appended to
+`data/submissions-processed.json`.
+
 ## 2026-08-29 - Hard rule 10 sweep: five trees off the live pages, one rewritten as view-only
 
 Found by accident, which is worth recording as much as the finding. Writing a recognition line for Malaga's avocado put its access field in front of me: "Restricted: working school grounds, visits by prior appointment only", on a published tree. Grepping every access field in the database for the words the rule itself names turned up four more.
