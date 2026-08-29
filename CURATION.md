@@ -9,6 +9,44 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (session) - Salzburg opens at 5 trees, two species-page gaps closed
+
+**Salzburg published, new city, 5 trees, all flagged.** Finished a verify-then-write
+pass an earlier attempt in this window had left checkpointed (5 trees verified,
+stories not yet written). szb_001 (Poplar of Josef-Mayburger-Kai) and szb_002
+(Oak of Erentrudishof) carry no age at all, honest gaps invited as questions.
+szb_003 (Stephan-Ludwig-Roth Oak) carries a documented "over 200 years" estimate
+from an 1817 account, and is named the page's oldest tree; a source reports a
+fungal infection with roughly 20 years of expected life left, worth a re-check
+in a future pass. szb_004 (Linden of Körblleitengasse) is single-sourced, the
+register's own 150-year figure dates to 1963 and is stated as stale rather than
+current; species renamed Linden->Lime (Tilia sp.) to match this project's
+existing canonical name. szb_005 (Giant Sequoia of the Mirabellgarten) has an
+approximate pin from a geocache waypoint rather than a survey. No photos for any
+of the five. Cleared the four-tree floor comfortably; register supply for a
+second pass exists (`data/leads/salzburg.json`, 8 more candidates, mostly held
+on access or single-sourcing).
+
+**Two species-page gaps closed** (`pagegaps.py`): Queensland Kauri (Sydney,
+Hobart, Los Angeles) and Gray Poplar (Ferrara, Sofia, Warsaw), both written from
+the three trees' own facts.
+
+**Also mid-flight this session, verify passes dispatched and returned, write
+pass in progress:** Nuremberg (+3 candidates: two Cramer-Klett-Park beeches
+resolved as alive after a false block, one park mistakenly flagged them dead
+when the register text actually named two OTHER, different, delisted trees as
+the fungal-infection deaths; plus the Bäreneiche of Platnersberg, a named
+300-350-year oak). Oahu (+4 candidates, all in free public parks: Ala Moana
+Beach Park, Kapiolani Park, Thomas Square, deliberately outside the two paid
+gardens that made up 100% of the city's existing 6 trees, per the 2026-08-28
+Fresh-eyes WARN on Oahu's paid-entry ratio).
+
+**GitHub Actions permission gap found:** `gh workflow run nightly.yml` (the
+documented fix for health.py's "nightly knocks under-delivered" rung-2 finding)
+returned HTTP 403, resource not accessible by this session's token. Recorded
+here since it blocks the documented remedy; needs a token/permissions check
+outside a run's reach.
+
 ## 2026-08-29 (night run) - Bucaco 14 to 18, Los Angeles 7 to 8, Warsaw 15 to 16, from the standing write queue
 
 Bucaco +4 (bsc_016, bsc_017, bsc_018, bsc_019), all flagged (single-source
