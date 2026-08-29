@@ -82,6 +82,10 @@ def sh(*args, check=True):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-build", action="store_true")
+    # One panel at a time, because changing one screen should not cost six
+    # simulator launches. Learned on 2026-08-29, when the hero band changed
+    # Discover and the only way to retake it was to retake everything.
+    ap.add_argument("--only", default=None, help="one screenshot name")
     ap.add_argument("--out", default=str(ROOT / "out" / "appstore"))
     args = ap.parse_args()
 
@@ -113,7 +117,10 @@ def main():
     out = pathlib.Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     bad = []
-    for name, extra, wait in SHOTS:
+    shots = [s for s in SHOTS if args.only in (None, s[0])]
+    if not shots:
+        sys.exit(f"no shot called {args.only}; have: " + ", ".join(s[0] for s in SHOTS))
+    for name, extra, wait in shots:
         sh("xcrun", "simctl", "terminate", udid, BUNDLE, check=False)
         # THE FIRST -at WINS, not the last, which cost a whole set of
         # screenshots on 2026-08-29: the map panel was supposed to open on
@@ -133,7 +140,7 @@ def main():
         if not ok:
             bad.append(name)
 
-    print(f"\n{len(SHOTS)} screenshots in {out}")
+    print(f"\n{len(shots)} screenshots in {out}")
     if bad:
         sys.exit(f"wrong size: {', '.join(bad)}. Apple wants {WANT[0]}x{WANT[1]} for 6.9 inch.")
     print("Every one is 1320x2868, which is what App Store Connect asks for.")
