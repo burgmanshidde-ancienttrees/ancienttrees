@@ -9,6 +9,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 (session, late afternoon) - Naming a species, and what a signed-out phone may still show
+
+Two things Hidde walked into on his own telephone, both fixed and pushed.
+
+**Tapping Species on a tree you added yourself opened a page about nothing.** The chip in the facts row pushed the read-only species page whatever the tree was, so with no species on it yet you got no name and "0 on the map". Underneath, species was a free text field, which cannot group: hard rule 9 wants one canonical common name per species. It is a picker now, iNaturalist's identify screen, with a typed name still allowed for a tree we do not map. New launch argument `-speciespick`, registered in both screen lists, and the screen has been photographed.
+
+**He asked how hard automatic species suggestion would be, and the measurement answered it.** Guessing from the pin does not work: over all 1,945 published trees the true species is the commonest neighbour within 500 metres 9 percent of the time, and tighter is worse, because a curated set avoids repeating a species in one park. So the list is ordered by what grows nearby and claims nothing. The photograph-based routes were priced (Pl@ntNet free to 500 a day but EUR 1,000 a year once we charge; a vision model on our server with no floor; a model in the app at a week-plus) and he ruled **not yet, only the picker**. On asking for a second close-up of a leaf: "optioneel is niet gek", for when identification arrives. DECISIONS.md 2026-08-29, CONVENTIONS.md gained the entry.
+
+**Signing out left your own trees on the map, and anyone could delete them.** This morning's clearing covered hearts and the profile and exempted photographs wholesale, on half a sound argument. It is asked per sighting now: `syncedAt`, written only from a push that actually landed with its photograph. Signing out pushes the queue first, while a token still exists, so the clearing is lossless. A tree photographed while signed out stays, because no server has it and deleting it would destroy the only copy.
+
+**FOR HIDDE.** One thing is still open and it is yours. Adding a tree deliberately works with no account ("Yours and nobody else's: no network, no account, no waiting"), so a tree you add while signed out is visible and removable while signed out. Requiring an account to add one would close that completely, and would match the rule you already set on 2026-08-21, that the options are visible to everyone and acting needs sign-in. It costs friction at the moment somebody is standing in front of a tree.
+
 ## 2026-08-29 (session, afternoon) - The three database fixes, and five trees that came off while doing them
 
 Hidde asked which improvements to the tree database were worth making, then asked for all three of the answers. Two were scripts and are finished; the third is a job no single session can finish and a substantial chunk of it is done.
