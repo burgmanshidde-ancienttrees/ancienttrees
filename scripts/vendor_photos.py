@@ -229,6 +229,12 @@ def main():
             done += 1
             print("  %-9s %s (%d/%d widths)" % (tid, base, got, len(WIDTHS)), flush=True)
     print("\nvendored %d photographs into site/public/photos" % done)
+    # AND THE MANIFEST, ALWAYS. Fetching without rewriting it changes nothing
+    # anybody can see: thumbUrl() looks a photograph up by its original url in
+    # data/photo-manifest.json, so eleven files landed on disk on 2026-08-29 and
+    # the feed went on pointing every one of them at Wikimedia. A two-step job
+    # where the second step is optional is a job that gets half done.
+    write_manifest()
     return 0
 
 
