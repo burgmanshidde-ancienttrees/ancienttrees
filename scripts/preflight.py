@@ -538,6 +538,83 @@ def check_search_names():
             % (len(missing), ", ".join(missing[:8]))]
 
 
+_NUMBER_WORDS = {w: n for n, w in enumerate((
+    "zero one two three four five six seven eight nine ten eleven twelve "
+    "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty "
+    "twenty-one twenty-two twenty-three twenty-four twenty-five twenty-six "
+    "twenty-seven twenty-eight twenty-nine thirty thirty-one thirty-two "
+    "thirty-three thirty-four thirty-five thirty-six thirty-seven"
+).split())}
+_NUM_RX = "|".join(sorted((["\\d+"] + list(_NUMBER_WORDS)), key=len, reverse=True))
+
+
+def _num(word):
+    return int(word) if word.isdigit() else _NUMBER_WORDS.get(word.lower())
+
+
+def check_country_counts():
+    """A country page's own "N cities, M trees" closer must match reality.
+
+    Found 2026-08-29 while opening Bamberg and Assisi: eleven of twenty-one
+    country pages' meta_description carried a stale city and/or tree count,
+    some (Poland: 23 against 63 real, the Netherlands: 14 mapped cities
+    against 37 real) off by a wide margin. The city-level equivalent of this
+    check (count-promises.ts) is a hard build failure; this one is a NOTE
+    rather than a FAIL on its first day; per this file's own docstring it is
+    "a mirror, never the authority", and no country-page authority exists
+    yet to mirror. Widen to FAIL once an Astro-side check exists and this has
+    run clean for a while, same as the ratchet everywhere else in this
+    project: ship the check, promote it once trusted.
+
+    Deliberately narrow, anchored patterns only (a country intro is full of
+    OTHER numbers, ages, years, girths, that this must never trip on):
+    a trailing "N cities/places [mapped], M trees" sentence at the very end
+    of meta_description, or a "across N mapped cities" mid-sentence claim.
+    Both are the exact phrasings already in use; a country whose copy uses
+    neither pattern is silently skipped rather than guessed at.
+    """
+    real = {}
+    for f in sorted(glob.glob("data/cities/*.json")):
+        with open(f, encoding="utf-8") as fh:
+            d = json.load(fh)
+        country = d.get("country")
+        if not country:
+            continue
+        n_cities, n_trees = real.get(country, (0, 0))
+        real[country] = (n_cities + 1, n_trees + len(d.get("trees") or []))
+
+    patterns = [
+        re.compile(r"(?P<cities>%s)\s+(?:cities|places)(?:\s+mapped)?,\s*(?P<trees>%s)\s+trees\.?\s*$" % (_NUM_RX, _NUM_RX), re.I),
+        re.compile(r"(?P<trees>%s)\s+trees\s+mapped\.?\s*$" % _NUM_RX, re.I),
+        re.compile(r"across\s+(?P<cities>%s)\s+mapped\s+cities\b" % _NUM_RX, re.I),
+    ]
+
+    out = []
+    for f in sorted(glob.glob("data/countries/*.json")):
+        with open(f, encoding="utf-8") as fh:
+            d = json.load(fh)
+        country = d.get("country")
+        meta = d.get("meta_description") or ""
+        if country not in real:
+            continue
+        real_cities, real_trees = real[country]
+        for pat in patterns:
+            m = pat.search(meta)
+            if not m:
+                continue
+            gd = m.groupdict()
+            claimed_trees = _num(gd["trees"]) if gd.get("trees") else None
+            claimed_cities = _num(gd["cities"]) if gd.get("cities") else None
+            if claimed_trees is not None and claimed_trees != real_trees:
+                out.append("%s: meta_description says %d trees, data has %d (%s)"
+                           % (country, claimed_trees, real_trees, os.path.basename(f)))
+            if claimed_cities is not None and claimed_cities != real_cities:
+                out.append("%s: meta_description says %d cities, data has %d (%s)"
+                           % (country, claimed_cities, real_cities, os.path.basename(f)))
+            break
+    return out
+
+
 def check_paid_share():
     """A city page should be walkable without buying tickets all day.
 
@@ -766,7 +843,7 @@ def main():
             problems += check_contract_b(os.path.basename(p)[:-5], json.load(fh2))
     for line in problems:
         print("FAIL " + line)
-    for line in check_stacked_pins() + check_search_names() + check_paid_share():
+    for line in check_stacked_pins() + check_search_names() + check_paid_share() + check_country_counts():
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0
