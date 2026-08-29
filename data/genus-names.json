@@ -36,7 +36,13 @@
     "farnia",
     "cerro",
     "kermes",
-    "carrasca"
+    "carrasca",
+    "duby",
+    "dubu",
+    "eich",
+    "roverella",
+    "artea",
+    "kungseken"
    ]
   },
   "Tilia": {
@@ -55,7 +61,32 @@
     "lipe",
     "niinipuu",
     "teglia",
-    "tilia"
+    "lípa",
+    "lipy",
+    "liepa",
+    "lipová",
+    "líp",
+    "tanzlinde",
+    "tanzlinden",
+    "gerichtslinde",
+    "gerichtslinden",
+    "dorflinde",
+    "dorflinden",
+    "einheitslinde",
+    "einheitslinden",
+    "friedenslinde",
+    "friedenslinden",
+    "sommerlinde",
+    "winterlinde",
+    "kaiserlinde",
+    "königslinde",
+    "koenigslinde",
+    "riesenlinde",
+    "schillerlinde",
+    "dorpslinde",
+    "etagelinde",
+    "zilverlinde",
+    "lindenbaum"
    ]
   },
   "Fagus": {
@@ -72,7 +103,12 @@
     "faia",
     "buk",
     "bok",
-    "faggio"
+    "faggio",
+    "blutbuche",
+    "rotbuche",
+    "bukas",
+    "hängebuche",
+    "haengebuche"
    ]
   },
   "Castanea": {
@@ -98,7 +134,8 @@
     "rosskastanie",
     "marronnier",
     "aesculus",
-    "ippocastano"
+    "ippocastano",
+    "marronniers"
    ]
   },
   "Platanus": {
@@ -110,7 +147,8 @@
     "platane",
     "platano",
     "plátano",
-    "platan"
+    "platan",
+    "platanes"
    ]
   },
   "Taxus": {
@@ -123,7 +161,10 @@
     "teixo",
     "tis",
     "tasso",
-    "venijnboom"
+    "venijnboom",
+    "cis",
+    "cisy",
+    "yews"
    ]
   },
   "Olea": {
@@ -155,7 +196,10 @@
     "weisskiefer",
     "weißkiefer",
     "zirbe",
-    "fura"
+    "fura",
+    "borovica",
+    "borové",
+    "borovina"
    ]
   },
   "Picea": {
@@ -237,7 +281,8 @@
     "arce",
     "javor",
     "klon",
-    "bergahorn"
+    "bergahorn",
+    "hananoki"
    ]
   },
   "Salix": {
@@ -332,7 +377,9 @@
     "noce",
     "orzech",
     "notenboom",
-    "nogueira"
+    "nogueira",
+    "orech",
+    "ořech"
    ]
   },
   "Ficus": {
@@ -347,7 +394,8 @@
     "fico",
     "gomero",
     "banyan",
-    "moreton"
+    "moreton",
+    "balete"
    ]
   },
   "Cryptomeria": {
@@ -355,7 +403,9 @@
    "words": [
     "sugi",
     "cryptomeria",
-    "yakusugi"
+    "yakusugi",
+    "osugi",
+    "ōsugi"
    ]
   },
   "Camphora": {
@@ -363,7 +413,8 @@
    "words": [
     "kusunoki",
     "camphor",
-    "kusu"
+    "kusu",
+    "okusu"
    ]
   },
   "Malus": {
@@ -460,7 +511,8 @@
     "micocoulier",
     "bagolaro",
     "almez",
-    "lodoeiro"
+    "lodoeiro",
+    "enoki"
    ]
   },
   "Styphnolobium": {
@@ -469,7 +521,9 @@
     "sophora",
     "styphnolobium",
     "pagoda",
-    "honingboom"
+    "honingboom",
+    "schnurbaum",
+    "schnurbäume"
    ]
   },
   "Morus": {
@@ -514,7 +568,8 @@
     "lijsterbes",
     "eberesche",
     "sorbier",
-    "serbal"
+    "serbal",
+    "sorb"
    ]
   },
   "Prunus": {
@@ -531,7 +586,9 @@
     "ciliegio",
     "cerejeira",
     "almond",
-    "almendro"
+    "almendro",
+    "zakura",
+    "shidarezakura"
    ]
   },
   "Larix": {
@@ -617,7 +674,9 @@
     "wacholder",
     "genevrier",
     "enebro",
-    "zimbro"
+    "zimbro",
+    "byakushin",
+    "ibuki"
    ]
   },
   "Sequoia": {
@@ -673,7 +732,8 @@
    "common": "Zelkova",
    "words": [
     "zelkova",
-    "keyaki"
+    "keyaki",
+    "okeyaki"
    ]
   },
   "Cercis": {
@@ -713,6 +773,64 @@
     "madroño",
     "medronheiro",
     "corbezzolo"
+   ]
+  },
+  "Cercidiphyllum": {
+   "common": "Katsura",
+   "words": [
+    "katsura",
+    "okatsura"
+   ]
+  },
+  "Wisteria": {
+   "common": "Wisteria",
+   "words": [
+    "wisteria",
+    "fuji",
+    "glicine"
+   ]
+  },
+  "Cycas": {
+   "common": "Sago Palm",
+   "words": [
+    "sotetsu"
+   ]
+  },
+  "Torreya": {
+   "common": "Japanese Torreya",
+   "words": [
+    "kaya",
+    "okaya",
+    "kayanoki",
+    "okayanoki"
+   ]
+  },
+  "Osmanthus": {
+   "common": "Osmanthus",
+   "words": [
+    "kinmokusei"
+   ]
+  },
+  "Agathis": {
+   "common": "Kauri",
+   "words": [
+    "kauri"
+   ]
+  },
+  "Camellia": {
+   "common": "Camellia",
+   "words": [
+    "camellia",
+    "camélia",
+    "camelia",
+    "japoneira",
+    "tsubaki"
+   ]
+  },
+  "Ceiba": {
+   "common": "Ceiba",
+   "words": [
+    "ceiba"
    ]
   }
  }
