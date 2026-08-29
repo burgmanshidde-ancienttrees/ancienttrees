@@ -1,6 +1,18 @@
 {
   "leads": [
     {
+      "name": "Sarroch register cluster: Ginepro coccolone, Pino domestico, Eucalipto rosso",
+      "species": "multiple (Juniperus oxycedrus subsp. macrocarpa, Pinus pinea, Eucalyptus camaldulensis)",
+      "status": "unresolved",
+      "why": "2026-08-29 verify pass: passcheck brief flagged a Ginepro coccolone (girth 3.5m, 39.17140,8.95830) and a Pino domestico (girth 5.0m, 39.19996,8.93706) ~16.5-16.9km SW of Cagliari centre, both italy-masaf/sardinia-alberi-monumentali. RAMI (ilregistrodeglialberi.it/italia/sardegna/cagliari/sarroch) confirms Sarroch has 6 registered monumental trees (2x Ginepro coccolone, 3x Pino domestico, 1x Eucalipto rosso), all marked 'Accessibile', but individual RAMI pages checked (IDs 13544, 13546) give different localities ('Canale Bidda Mores - Mareddus'; 'Villa d'Orri', coords 39.112095,9.010225) and different girths (1.79m, 3.45m) than our register candidates, so these do NOT cleanly coordinate-match to the MASAF sheet entries in the brief -- likely different specimens among Sarroch's 6. 'Villa d'Orri' in particular is a historic manor and needs an access check before shipping (could be grounds-restricted despite the 'Accessibile' tag). Not verified to our bar in this pass: no independent source seen beyond the register/RAMI pairing, no confirmed match between the two. A future pass should fetch each of the 6 RAMI ids (13544, 13545, 13546, 13547, 13548, 13549) for exact coordinates, cross-match to the MASAF sheet numbers, and check Villa d'Orri's access status before treating any as a Cagliari day-trip entry. ~20km from Cagliari centre, car required."
+    },
+    {
+      "name": "Other far register candidates, 15-17km from Cagliari centre, unexplored",
+      "species": "various",
+      "status": "unresolved",
+      "why": "2026-08-29 verify pass: passcheck brief listed several more italy-masaf/sardinia-alberi-monumentali candidates 15-17km out that this pass did not reach within its ~40 minute window: a Tiglio comune/Tilia x europaea (girth 2.6m, 39.30889-92,9.27944-54, ~15.1km, direction unclear -- not yet located to a named place), a second Eucalitto rostrato/Eucalyptus camaldulensis (girth 5.0m, 39.24777,8.94254, ~15.8km -- distinct from the already-BLOCKED Su Loy/Capoterra eucalyptus at 39.139133,9.012361) and a Pino d'Aleppo (girth 2.6m, 39.38164,9.17315-19, ~16.0km, likely near Sinnai/Foresta dei Sette Fratelli given the latitude, possibly part of the same forest cluster as the verified cag_009 Eucalipto Blu di Campu Omu). Plus 'and 4 more' beyond 16.9km that passcheck's brief did not print in full. None of these were fetched or cross-checked against an independent source this pass; record here rather than guess. A future pass: re-run passcheck.py --brief cagliari with a tighter radius, then work these depth-first, starting with the Sinnai-area ones since cag_009 already established that forest has genuine public access."
+    },
+    {
       "name": "Pino d'Aleppo, Piazza San Pantaleo / Via San Martino, Dolianova",
       "species": "Aleppo Pine (Pinus halepensis)",
       "status": "resolved",

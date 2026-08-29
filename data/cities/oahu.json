@@ -2,11 +2,11 @@
   "city": "Oahu",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Oahu's most remarkable trees are not scattered across the island but concentrated on fourteen acres in downtown Honolulu: Foster Botanical Garden, a 19th century private collection the city took over and kept growing. A baobab, a Bodhi tree descended from the one in Bodh Gaya, a kapok older than the garden itself, a cannonball tree that drops its fruit from the trunk, and a quipo with a trunk soft enough to cut with a knife all stand within a five minute walk of each other, behind one modest entrance fee.",
-  "meta_description": "Oahu's most remarkable trees, all in one Honolulu garden: a baobab, a Bodhi tree from Bodh Gaya, and a kapok planted before the garden existed.",
-  "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 5.",
+  "intro": "Oahu's most remarkable trees cluster in three places. Foster Botanical Garden in downtown Honolulu holds five: a baobab, a Bodhi tree descended from the one in Bodh Gaya, a kapok older than the garden itself, a cannonball tree, and a soft-wooded quipo, all within a five minute walk behind one modest entrance fee. Moanalua Gardens keeps the Hitachi Tree, the rain tree famous from Japanese television. Thomas Square, Honolulu's oldest public park, keeps its banyans free to walk.",
+  "meta_description": "Oahu's most remarkable trees: a baobab and a Bodhi tree in one Honolulu garden, the Hitachi Tree at Moanalua, and free banyans at Thomas Square.",
+  "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 7.",
   "question_answer": "Oahu's oldest documented tree is the Hillebrand Kapok in Foster Botanical Garden, planted around 1851 by the garden's founder, William Hillebrand, on what was then his own homestead. That makes it roughly 175 years old, older than the garden itself.",
-  "question_context": "Foster Botanical Garden holds five of the six trees on this page, and the sixth stands eight kilometres away under a ticket of its own, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before the property became a public botanical garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, depending on which of two disagreeing sources you read. Two more of the garden's trees carry documented arrival dates: a Bodhi tree grown from a cutting of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s that has already grown a trunk thirteen metres around. A cannonball tree and a quipo, the softest-wooded tree in the garden, round out the five, both flagged for gaps rather than disputes: nobody has recorded when the cannonball tree was planted, and the quipo's height comes from a single source. Those five stand within easy walking distance of each other inside the garden's fourteen acres, along with roughly twenty other city-designated Exceptional Trees this page does not yet cover.",
+  "question_context": "Foster Botanical Garden holds five of the seven trees on this page, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before the property became a public botanical garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, depending on which of two disagreeing sources you read. Two more of the garden's trees carry documented arrival dates: a Bodhi tree grown from a cutting of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s with a trunk already thirteen metres around. A cannonball tree and a quipo round out the five, both flagged for gaps rather than disputes. The other two trees on this page stand elsewhere: the Hitachi Tree, a rain tree famous across Japan as a company emblem, is eight kilometres away at Moanalua Gardens under a ticket of its own, and the Indian banyans of Thomas Square, Honolulu's oldest public park, cost nothing to visit at all.",
   "faq": [
     {
       "q": "What is the oldest tree in Oahu?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Where are Oahu's most remarkable trees?",
-      "a": "All five on this list stand inside Foster Botanical Garden in downtown Honolulu, on the edge of Chinatown, within a five minute walk of each other."
+      "a": "Five stand inside Foster Botanical Garden in downtown Honolulu, on the edge of Chinatown, within a five minute walk of each other. The other two stand apart: the Hitachi Tree at Moanalua Gardens, and the banyans of Thomas Square, which are free to visit."
     },
     {
       "q": "Is Foster Botanical Garden free to visit?",
@@ -218,6 +218,37 @@
         "status": "missing"
       },
       "story": "This rain tree is on Japanese television most weeks, and almost nobody watching knows it is in Honolulu. Hitachi has used it as the company emblem since 1973, with a jingle that begins \"this tree, what tree\", and it is famous enough in Japan that visitors arrive at Moanalua Gardens asking for it by the company's name rather than the tree's.\n\nWhat brought the advertising people here is obvious from the lawn. A rain tree grows outward rather than upward, and this one has spent about 130 years doing it: roughly 25 metres tall and a crown wide enough to shade some three thousand square feet of grass, held up on limbs that reach almost horizontally before turning. Stand under the middle and the canopy closes overhead like a roof.\n\nThe leaves do something worth timing your visit for. The leaflets fold shut in the late afternoon and before rain, which is where the name comes from, and the light through the canopy changes completely when they do. Hawaii knows the species as the monkeypod, and that is the name on the sign.\n\nThe gardens are privately owned and charge admission, which is unusual for a tree on this site and worth knowing before you drive out. The lawn around the trunk is open, so you can walk right up to it."
+    },
+    {
+      "id": "hnl_007",
+      "name": "The Banyans of Thomas Square",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "roughly 140 years (planted 1882 to 1887)",
+      "age_min": 139,
+      "age_max": 144,
+      "location": {
+        "address": "Thomas Square, 925 S Beretania St, Honolulu, HI 96814",
+        "latitude": 21.3025,
+        "longitude": -157.84889,
+        "neighbourhood": "Downtown Honolulu"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Thomas_Square",
+        "https://www3.ctahr.hawaii.edu/oc/freepubs/pdf/OF-34.pdf",
+        "https://www.staradvertiser.com/2018/08/31/hawaii-news/thomas-square-survives-over-100-years-of-ideas-for-change/",
+        "https://imagesofoldhawaii.com/thomas-square/"
+      ],
+      "access": "Free, public city park (Honolulu's oldest, dedicated 1850), open daylight into early evening, no admission.",
+      "transport": "Downtown Honolulu, at Beretania and Victoria Streets, across from the Honolulu Museum of Art; walkable from Waikiki or reachable by TheBus.",
+      "story": "Honolulu's oldest public park did not always have shade. Thomas Square was set aside as parkland in 1850, but the banyans came decades later, when the Scottish merchant Archibald Scott Cleghorn took over as steward in 1882 and brought cuttings from Ainahau, his own Waikiki estate, to plant here. The overhauled park reopened to a brass-band crowd on 7 April 1887, and by the 1930s four banyans ringed the new central fountain, where they still stand.\n\nThey are Indian banyans, Ficus benghalensis, named in a University of Hawaii extension guide that singles out this exact grove as the reference specimen for the species in the islands, adding dryly that Disneyland's own banyan nearby is artificial. Cleghorn is better known today as the father of Princess Kaiulani and, later, Governor of Oahu; Ainahau, the estate these cuttings came from, held its own famous banyan, the one under which Robert Louis Stevenson used to read poetry to his young daughter.\n\nThomas Square has been public land since 1850, protected as a city park since 1925, and free to walk every day, no ticket and no gate, with King Street traffic on one side and the Honolulu Museum of Art across Beretania. Come toward evening and the fig-eating mynahs that roost here nightly make the banyans' size obvious from the noise alone.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
