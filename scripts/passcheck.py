@@ -602,6 +602,36 @@ def print_pending():
                   f"delete it once the rest is merged")
 
 
+def _ranked_city_names():
+    """Every distinct city name/slug the queue ranks on its own, folded.
+
+    Loaded once, used only to stop the distance fallback below from folding a
+    separately-ranked town into a nearby published one just because the two
+    happen to sit under SAME_CITY_KM apart. Assisi is the case that found this:
+    its own centroid sits about 19 km from Perugia's, under the 20 km bar, so
+    --brief assisi resolved to "ALREADY PUBLISHED as Perugia" and would have
+    delivered a hermitage and two city gates that are landmarks of Assisi, not
+    Perugia, into perugia-verified.json. CITY_QUEUE.md ranks them as two
+    different cities with two different slugs for a reason a pure radius
+    cannot see: a reader searching one would never accept the other as an
+    answer. Returns a dict fold(name-or-slug) -> real name, so a caller can
+    tell that a match belongs to a DIFFERENT ranked city than the one nearby.
+    """
+    try:
+        doc = json.load(open(os.path.join(ROOT, "data", "city-queue.json")))
+    except Exception:
+        return {}
+    out = {}
+    for c in doc.get("cities", []):
+        name = c.get("city")
+        if not name:
+            continue
+        out[fold(name)] = name
+        if c.get("slug"):
+            out[fold(c["slug"])] = name
+    return out
+
+
 def resolve(arg, live):
     """Returns (match_or_None, coord_or_None). Distance is the real test."""
     coord = None
@@ -627,6 +657,14 @@ def resolve(arg, live):
         if coord:
             near = min(live, key=lambda c: km(coord, (c["lat"], c["lng"])), default=None)
             if near and km(coord, (near["lat"], near["lng"])) <= SAME_CITY_KM:
+                # Refuse the fold when the queried name is itself a ranked
+                # city distinct from `near` (the Assisi/Perugia case): being
+                # within SAME_CITY_KM is evidence of a shared register pull
+                # radius, not evidence they are the same place.
+                ranked = _ranked_city_names()
+                queried_ranked = ranked.get(key)
+                if queried_ranked and fold(queried_ranked) != fold(near["city"]):
+                    return None, coord
                 match = near
     return match, coord
 
