@@ -2460,6 +2460,28 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-29T22:06:20+00:00",
+   "date": "2026-08-29",
+   "run_id": "33277732770",
+   "minutes": 14.6,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 128,
+   "denials": 14,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(gh), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 21823166,
+   "claims_held": [
+    "vancouver",
+    "geneva"
+   ],
+   "commits": 5,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
