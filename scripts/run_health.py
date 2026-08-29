@@ -415,7 +415,14 @@ def prepend_log(entry):
 PROBE_CAP_MINUTES = 120     # the job's timeout-minutes, the size of one window
 PROBE_MIN_REMAINING = 25    # below this a fresh attempt cannot pay its orientation cost
 PROBE_MIN_TURNS = 5         # below this it never really started: usage limit, not a decision
-WEEK_BUDGET_MINUTES = 1000  # measured ceiling: 1,053 in five days bought a 2.5-day blackout
+# Raised from 1000 to 1400 on 2026-08-29 (Hidde: "ik verbruik zelf minder tokens
+# dus is er meer over voor runs"). He is right and the 1000 was my guess, not a
+# measurement: it came from the ONE week the machine hit the wall, and how much
+# room there is depends on how much of the subscription he is using himself,
+# which changes week to week. So the fixed number stops being the brake and
+# becomes a runaway backstop. What actually governs is the limit itself, felt
+# rather than predicted: see recent_limit_deaths below.
+WEEK_BUDGET_MINUTES = 1400  # backstop only; the death brake is the real governor
 # And the week has to be spread, not raced. A weekly budget alone front-loads:
 # the loop would spend all thousand minutes by Wednesday and leave the back half
 # of the week with a machine that starts and dies in seconds, which is the same
@@ -423,7 +430,9 @@ WEEK_BUDGET_MINUTES = 1000  # measured ceiling: 1,053 in five days bought a 2.5-
 # it running every day, and a seventh is still one full 120-minute window plus
 # change, which is the shape the numbers want (a tree every 2.4 minutes in a
 # 40-to-70 minute run against every 25 minutes in a run under 20).
-DAY_BUDGET_MINUTES = round(WEEK_BUDGET_MINUTES / 7)
+DAY_BUDGET_MINUTES = 200
+LIMIT_DEATH_WINDOW_HOURS = 6   # how far back to look for "the window is shut right now"
+LIMIT_DEATHS_TO_BACK_OFF = 2   # one can be a blip; two in six hours is the wall
 PROBE_MINUTES = 20          # kept for the older callers that read it
 
 
@@ -485,6 +494,39 @@ def spent_minutes(days, path=HEALTH, now=None):
     return round(total)
 
 
+def recent_limit_deaths(hours=LIMIT_DEATH_WINDOW_HOURS, path=HEALTH, now=None):
+    """Attempts the usage limit killed on arrival, in the last `hours`.
+
+    The fingerprint is exact and worth writing down, because two different
+    things both look like a dead run. A USAGE-LIMIT death has a result record
+    saying turns 1, minutes 0.0, subtype success: the agent started, asked, was
+    refused and stopped. A run killed for any other reason (the bot-actor
+    refusal of 2026-08-28, a cancelled job) has NO result record at all, so its
+    turns are null. Only the first kind means the window is shut, and only the
+    first kind should make anything back off."""
+    try:
+        with open(path, encoding="utf-8") as fh:
+            runs = json.load(fh).get("runs") or []
+    except (OSError, ValueError):
+        return None
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    cutoff = now - datetime.timedelta(hours=hours)
+    deaths = 0
+    for r in runs:
+        turns = r.get("turns")
+        if not isinstance(turns, (int, float)) or turns >= PROBE_MIN_TURNS:
+            continue
+        try:
+            when = datetime.datetime.fromisoformat(str(r.get("started")).replace("Z", "+00:00"))
+        except (TypeError, ValueError):
+            continue
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=datetime.timezone.utc)
+        if cutoff <= when <= now:
+            deaths += 1
+    return deaths
+
+
 def week_minutes(path=HEALTH, now=None):
     return spent_minutes(7, path, now)
 
@@ -493,7 +535,8 @@ def day_minutes(path=HEALTH, now=None):
     return spent_minutes(1, path, now)
 
 
-def probe(result, changed, minutes, elapsed=None, spent_week=None, spent_day=None):
+def probe(result, changed, minutes, elapsed=None, spent_week=None, spent_day=None,
+          deaths=None):
     """(should_continue, one-line reason). Never raises: unknown means no.
 
     `elapsed` is minutes since the JOB started, which is not the same as the
@@ -515,6 +558,15 @@ def probe(result, changed, minutes, elapsed=None, spent_week=None, spent_day=Non
         return False, (f"{round(left)} min left of the {PROBE_CAP_MINUTES} min window, "
                        f"too little to pay a fresh orientation")
 
+    # The governor, and the reason the two budgets below are backstops rather
+    # than predictions. How much room the machine has depends on how much of the
+    # subscription Hidde is using himself that week, which no number here can
+    # know. The limit can be FELT instead: attempts it kills leave a record, so
+    # two of them in six hours means the window is shut and extending a run into
+    # it buys nothing. When he is quiet there are none and the machine runs long.
+    if deaths is not None and deaths >= LIMIT_DEATHS_TO_BACK_OFF:
+        return False, (f"{deaths} attempts died on the usage limit in the last "
+                       f"{LIMIT_DEATH_WINDOW_HOURS}h; the window is shut, not idle")
     if spent_week is not None and spent_week >= WEEK_BUDGET_MINUTES:
         return False, (f"the week has spent {spent_week} of {WEEK_BUDGET_MINUTES} "
                        f"budgeted minutes; the cron keeps knocking, this stops extending")
@@ -555,8 +607,13 @@ def main():
         if spent is None or today is None:
             print("no run history readable; assuming there is room")
             return 0
-        print("week %d/%d min, last 24h %d/%d min"
-              % (spent, WEEK_BUDGET_MINUTES, today, DAY_BUDGET_MINUTES))
+        deaths = recent_limit_deaths()
+        print("week %d/%d min, last 24h %d/%d min, %s limit deaths in %dh"
+              % (spent, WEEK_BUDGET_MINUTES, today, DAY_BUDGET_MINUTES,
+                 "?" if deaths is None else deaths, LIMIT_DEATH_WINDOW_HOURS))
+        if deaths is not None and deaths >= LIMIT_DEATHS_TO_BACK_OFF:
+            print("the usage window is shut right now")
+            return 1
         if spent >= WEEK_BUDGET_MINUTES:
             print("the week is spent")
             return 1
@@ -627,7 +684,8 @@ def main():
                 today += round(elapsed)
         go, why = probe(result, changed,
                         minutes if minutes_basis == "measured" else None,
-                        elapsed=elapsed, spent_week=spent, spent_day=today)
+                        elapsed=elapsed, spent_week=spent, spent_day=today,
+                        deaths=recent_limit_deaths())
         print(("continue: %s" % ("yes" if go else "no")) + " (%s)" % why)
         out = os.environ.get("GITHUB_OUTPUT")
         if out:
