@@ -577,6 +577,96 @@ def check_paid_share():
     return out
 
 
+# The words hard rule 10's first access test names. Deliberately NARROW, and
+# the first draft was not: it also matched "closed to the public", "guided tour
+# only" and "no public access", and produced eight hits of which one was real.
+# A park shut for a year of restoration works, a garden with closing times, a
+# ranger station closed beside an open lawn, and a daily ticketed tour you walk
+# up and join are none of them a permission. What the rule actually names is a
+# person you have to ask: an appointment, an arrangement, a booking, a doorbell,
+# a reception desk. So that is all this matches, and it still catches every one
+# of the five trees that failed on 2026-08-29.
+NEEDS_PERMISSION = re.compile(
+    r"\bby (?:prior )?appointment\b|\bprior arrangement\b|\bby arrangement\b"
+    r"|\bop afspraak\b|\bprevia cita\b|\bsur rendez-vous\b|nach Vereinbarung"
+    r"|must be booked|booked in advance|by prior request|on prior request"
+    r"|not open to casual|ring the (?:door)?bell|ask at the reception",
+    re.I)
+# A tree you can SEE from ground the public may stand on is publishable and
+# says so, which is the exception Hidde opened on 2026-08-13. Split's mulberry
+# inside a rugby club's ground is the worked example.
+VIEW_ONLY = re.compile(r"view-only|visible from|in (?:clear |full )?view from|from the "
+                       r"(?:public )?(?:pavement|street|road|quay)", re.I)
+# The field says outright that nobody has to be asked. Crete's olive at Vouves
+# is the case: it takes appointments only through the winter off-season, is
+# open daily the rest of the year, and ends "Signposted, and no permission is
+# needed."
+NO_PERMISSION = re.compile(r"no permission is needed|no permission needed|"
+                           r"without an appointment|no appointment (?:is )?needed", re.I)
+# The sentence is about a DIFFERENT place. Seville's lagunaria is the reason:
+# its access field distinguishes the free city garden the tree stands in from
+# the palace gardens next door, and it is the neighbours that need the
+# appointment. A check that reads an access field as one undifferentiated blob
+# calls that a failure.
+ANOTHER_PLACE = re.compile(r"not the same ground|whose own|the adjoining|next door"
+                           r"|rather than the|separate from", re.I)
+
+
+def check_access_permission():
+    """No published tree may need somebody's permission to reach.
+
+    Hard rule 10's first test is one question, and it is not about how
+    inconvenient a visit is: "Can they get in without asking anyone's
+    permission? A reception desk to talk past, a doorbell, a code, an
+    appointment, a guard who checks: no."
+
+    Written 2026-08-29, after five live trees failed it. They were found by
+    accident, while writing recognition lines for Malaga, whose avocado sat on
+    a page with an access field reading "working school grounds, visits by
+    prior appointment only". Grepping the rest of the database turned up four
+    more: a Kyoto cedar needing a city permit and a guide, a Granada pair
+    inside a university residence, The Hague's 1638 pear on a booked tour, and
+    the ficus inside Valencia's regional parliament. Every one of them stated
+    its own disqualification in its own access field, in plain English, and
+    had done for months.
+
+    That is the argument for a check rather than a rule. This one is a FAIL
+    and not a NOTE, because unlike the paid-entry ratio there is nothing to
+    weigh: the rule does not bend, and a page that sends somebody to a gate
+    they cannot pass is a broken promise whatever the tree is like.
+
+    The escape hatch is the real one Hidde opened on 2026-08-13: a tree you can
+    SEE from ground the public may stand on ships, with the pin on the viewing
+    place and the access line saying plainly what you can and cannot do. So an
+    access field that says where to stand and look passes, and one that only
+    says how to book does not."""
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding='utf-8') as fh:
+            d = json.load(fh)
+        for t in d.get("trees") or []:
+            access = t.get("access") or ""
+            if VIEW_ONLY.search(access) or NO_PERMISSION.search(access):
+                continue
+            # Sentence by sentence, because an access field routinely describes
+            # more than one place and the gate is often on the other one.
+            hit = None
+            for sentence in re.split(r"(?<=[.;]) +", access):
+                if NEEDS_PERMISSION.search(sentence) and not ANOTHER_PLACE.search(sentence):
+                    hit = sentence
+                    break
+            if hit is None:
+                continue
+            out.append("%s: %s needs somebody's permission to reach (%r). Hard "
+                       "rule 10's first test: an appointment, a booked tour, a "
+                       "doorbell or a reception desk is a no. Either it is "
+                       "genuinely visible from public ground, in which case say "
+                       "where to stand, or it comes off the page and goes to "
+                       "data/leads/ with the reason."
+                       % (os.path.basename(path)[:-5], t.get("id"), hit[:110]))
+    return out
+
+
 def check_register_licences():
     """No register file without a recorded licence.
 
@@ -625,7 +715,8 @@ def check_register_licences():
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
-                + check_phenology() + check_register_licences())
+                + check_phenology() + check_register_licences()
+                + check_access_permission())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
