@@ -1,263 +1,263 @@
 {
- "city": "Venlo",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "There is a street in Steyl called Sequoiahof, named after what is standing on it. Steyl is a monastery village on the Maas south of Venlo, founded by missionary orders in the nineteenth century, and the religious communities planted giant sequoias until the species became the local signature. Three of the seven trees here are sequoias within a kilometre of each other. The rest are chestnuts on old farmyards near the border, which once ran between the duchies of Gelre and Gulik and now runs between the Netherlands and Germany.",
- "meta_description": "Seven remarkable trees around Venlo: three giant sequoias in the monastery village of Steyl, and sweet chestnuts on the old Gelre and Gulik border.",
- "question_meta": "Venlo's oldest tree is a sweet chestnut at the Gasthuishof farm in Tegelen, banded 1810 to 1820. Where it stands, and six more.",
- "question_answer": "The oldest tree in Venlo is a sweet chestnut on the yard of the Gasthuishof, an old farm on the Ulingshofweg in Tegelen, which the national register places in a planting band of 1810 to 1820, so between about 205 and 215 years old. The farm itself is far older than the tree: it stands near what used to be the border between the duchy of Gelre and the duchy of Gulik, now the boundary between Venlo and Kaldenkirchen in Germany, and the original wooden building was replaced by a stone one in 1654. A second chestnut, on the Vrijbroekweg in Venlo itself, may be older. The register records a passer-by's claim that it predates 1870 and was damaged on one side by a fire in that year, from which it recovered quickly.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and is the single source throughout, so everything is flagged. One entry is flagged for a different reason: the chestnut on the Vrijbroekweg carries an age claim the register itself attributes to an old passer-by, which is hearsay recorded honestly, and the page passes it on the same way rather than laundering it into a fact. The concentration of giant sequoias at Steyl is not a coincidence but it is also not documented in the register beyond the trees themselves, so the connection this page draws between the monasteries and the planting is inference from the addresses. The sequoia at Kasteel Arcen is the one entry here whose pin is approximate: the register places it on the Toernooiveld rather than at a surveyed point, and the castle grounds are large. Everywhere else the register's own coordinate is what the pin uses, which for a street tree on the Sequoiahof or a chestnut on a farmyard is as good as it gets without standing there.",
- "hero_tree_id": "vnl_004",
- "oldest_tree_id": "vnl_001",
- "faq": [
-  {
-   "q": "Why are there so many giant sequoias in Steyl?",
-   "a": "Steyl is a monastery village on the Maas, established by missionary orders from 1875 onward, and the communities laid out substantial grounds. Giant sequoia was the statement tree of exactly that period. Three of them stand within a kilometre here, and one of the streets is called Sequoiahof after them."
-  },
-  {
-   "q": "What is the oldest tree in Venlo?",
-   "a": "A sweet chestnut on the yard of the Gasthuishof farm on the Ulingshofweg in Tegelen, banded 1810 to 1820 by the national register."
-  },
-  {
-   "q": "Which border is this?",
-   "a": "An old one. The Gasthuishof stands near the former boundary between the duchy of Gelre and the duchy of Gulik, which today is the line between Venlo and Kaldenkirchen in Germany. The farm was rebuilt in stone in 1654, when that border still meant two separate states."
-  },
-  {
-   "q": "Are they free to visit?",
-   "a": "Most of them. The Steyl monastery park and the Sequoiahof are open, and the Hagerhof children's farm is free. The two chestnuts stand on farmyards recorded as visitable in the register, and the sequoia at Kasteel Arcen is on castle grounds where the gardens charge admission, so check before you set out."
-  }
- ],
- "trees": [
-  {
-   "id": "vnl_001",
-   "name": "The Chestnut of the Gasthuishof",
-   "species": "Sweet Chestnut (Castanea sativa)",
-   "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
-   "age_min": 206,
-   "age_max": 216,
-   "location": {
-    "address": "On the yard of the Gasthuishof, Ulingshofweg 28, Tegelen",
-    "latitude": 51.33743,
-    "longitude": 6.18537,
-    "neighbourhood": "Tegelen"
-   },
-   "story": "The farm is nearly four centuries old and the tree is only two, which is the correct order for once.\n\nThe Gasthuishof stands close to what was the border between the duchy of Gelre and the duchy of Gulik, two of the patchwork states that made up this part of Europe before anyone drew a Netherlands or a Germany. That line is now the boundary between Venlo and Kaldenkirchen. The original farm here was timber; it was replaced by a stone building in 1654, which is when the place stopped being provisional.\n\nThe chestnut went in around 1810 to 1820, on the yard.\n\nSweet chestnut is a Roman import to northern Europe, brought for the nuts, and it is a farmyard tree for practical reasons rather than decorative ones. It produces heavily, the nuts store, and a mature tree will feed a household through a winter. Old ones develop a spiral in the bark, the ridges twisting slowly round the trunk as it grows, which is the easiest way to spot one at distance.\n\nOctober is the month. The spiny husks split on the ground and you can pick them out with your boot.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Farmyard on the Ulingshofweg, recorded as visitable in the national register.",
-   "transport": "About 6 km south of Venlo station, at Tegelen near the German border.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Bark ridges twisting in a slow spiral round the trunk, and long saw-toothed leaves. On the farmyard.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the spiny husks split open on the ground"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "vnl_002",
-   "name": "The Chestnut of the Vrijbroekweg",
-   "species": "Sweet Chestnut (Castanea sativa)",
-   "age_estimate": "roughly 165 to 175 years by the register, and possibly more: a passer-by's account puts it before 1870",
-   "age_min": 156,
-   "age_max": 200,
-   "location": {
-    "address": "Vrijbroekweg 20",
-    "latitude": 51.34847,
-    "longitude": 6.15809,
-    "neighbourhood": "Vrijbroek"
-   },
-   "story": "The national register of monumental trees contains, for this tree, the testimony of an old man who walked past.\n\nIt is written down as exactly that: according to an elderly passer-by, the tree is older than 1870, and in that year it was damaged on one side by a fire, from which it recovered quickly enough. No document, no source, no name. Somebody stopped, told the surveyor a story, and the surveyor thought it worth recording rather than discarding.\n\nThat is the right call and it is worth defending, because oral memory is often the only evidence a tree has. A fire that scorched one flank in 1870 is the kind of thing a family repeats for a century and no archive ever notices. It also happens to be checkable in principle: fire damage on a chestnut leaves a permanent scar down one side where the cambium died, with the bark rolling in over the edges of the wound for decades afterwards.\n\nSo look at the trunk all the way round. If one side carries an old healed scar, an anonymous man was right and the register is better than its sources.\n\nOctober for the nuts.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Recorded as visitable in the national register; the tree stands at Vrijbroekweg 20.",
-   "transport": "About 3 km southwest of Venlo station, on the Vrijbroekweg.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A big sweet chestnut with spiralling bark. Look for an old healed scar running down one side of the trunk.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the nuts drop"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "vnl_003",
-   "name": "The Sequoia of the Toernooiveld",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "Toernooiveld, Kasteel Arcen, Lingsforterweg 26, Arcen",
-    "latitude": 51.47054,
-    "longitude": 6.18677,
-    "neighbourhood": "Arcen"
-   },
-   "story": "Planted on a field named after jousting, which is a collision of two ideas about display separated by five centuries.\n\nThe Toernooiveld belongs to Kasteel Arcen, north of Venlo on the Maas. The sequoia went in between 1860 and 1870, which puts it within about fifteen years of the species arriving in Europe at all. Seed reached Britain in 1853 and the tree was an immediate sensation: enormous, foreign, from a part of California nobody had seen, and expensive. Owners of country places across Europe bought them the way they bought anything else that announced reach.\n\nThis is one of the earliest in the Netherlands, and it is now more than a century and a half into a lifespan that runs to three thousand years.\n\nThe bark is the reason to go rather than the height. It is thick, soft and fibrous, and you can push a fist into it. That is fire adaptation: in a Sierra Nevada forest the outer layer chars and insulates while the living tissue survives, which is how these trees outlast dozens of fires.\n\nThe castle gardens charge admission, so check before making the trip.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Grounds of Kasteel Arcen, recorded as visitable in the national register. The castle gardens charge admission, so check before setting out.",
-   "transport": "About 12 km north of Venlo, at Arcen on the Lingsforterweg.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A single huge conifer on the open field, with thick spongy red-brown bark.",
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "vnl_004",
-   "name": "The Catalpa of the Waterloo Monastery Park",
-   "species": "Southern Catalpa (Catalpa bignonioides)",
-   "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890 to 1900",
-   "age_min": 126,
-   "age_max": 136,
-   "location": {
-    "address": "Waterloo monastery park, next to the giant sequoia, Waterloostraat 28, Steyl",
-    "latitude": 51.32948,
-    "longitude": 6.12154,
-    "neighbourhood": "Steyl"
-   },
-   "story": "It stands directly beside a giant sequoia, and the pairing tells you what the monastery gardeners were doing.\n\nSteyl is a village on the Maas that became a centre of Catholic missionary orders from 1875, and the communities that settled here laid out grounds on a scale a village would never otherwise see. What they planted was not native. It was a collection: species from the Americas and Asia, arranged so that a walk through the park was also an argument about the size of the world.\n\nA catalpa and a sequoia side by side is that idea in two trees. One from the southeastern United States, one from the Sierra Nevada, planted within a decade or so of each other by people whose whole purpose was to send members abroad.\n\nThe catalpa is the more surprising of the two. It comes into leaf later than anything else, holds enormous heart-shaped leaves, then flowers in late June and early July in upright spikes of white bells marked yellow and purple in the throat. After that it hangs slender beans up to forty centimetres long, which stay on all winter.\n\nGo in the first week of July.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Monastery park at Steyl, recorded as visitable in the national register.",
-   "transport": "About 5 km south of Venlo station, in Steyl on the Waterloostraat.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Enormous heart-shaped leaves and long hanging pods, standing right beside the sequoia.",
-   "best_time": {
-    "months": [
-     7
-    ],
-    "kind": "flowers",
-    "label": "early July, when it hangs with white bells"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "vnl_005",
-   "name": "The Sequoia of the Waterloo Monastery Park",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "Waterloo monastery park, Waterloostraat 28, Steyl",
-    "latitude": 51.32951,
-    "longitude": 6.12141,
-    "neighbourhood": "Steyl"
-   },
-   "story": "The second of the three sequoias at Steyl, and the one standing in the monastery park itself.\n\nBy the time this one was planted, between 1900 and 1910, the species had been in Europe for half a century and the novelty had worn off, which makes the choice more interesting rather than less. Somebody here wanted another one specifically, next to the catalpa, in a park that a religious community was still actively building.\n\nWhat a hundred and twenty years produces is a tree that has finished being a curiosity and started being infrastructure. A sequoia at this age is a fixed vertical in the landscape, visible from outside the grounds, and the sort of thing local people give directions by.\n\nIt is also, in the strictest sense, only just beginning. Giant sequoias run past three thousand years and the largest ones alive were already old when Rome was founded. This tree is at about four percent of that.\n\nThe cones are worth looking for on the ground. They are surprisingly small for the tree, about the size of a hen's egg, and they can stay closed and viable on the branch for twenty years, waiting for fire.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Monastery park at Steyl, recorded as visitable in the national register.",
-   "transport": "About 5 km south of Venlo station, in Steyl on the Waterloostraat.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The tall conical conifer in the monastery park with thick fibrous red-brown bark. Small egg-sized cones underneath.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "vnl_006",
-   "name": "The Sequoia of the Sequoiahof",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "In front of Sequoiahof 2, Steyl",
-    "latitude": 51.33299,
-    "longitude": 6.11921,
-    "neighbourhood": "Steyl"
-   },
-   "story": "The street is named after the tree. That is rare enough to be the whole reason to come.\n\nStreets get named after landowners, saints, battles, queens and, in the twentieth century, after whatever the developer's theme was. Getting a street named after a species because a specimen of it is standing there requires the tree to have been the most notable thing on the site at the moment somebody had to fill in a form, and it means the tree was there first.\n\nSo the Sequoiahof at Steyl is a piece of evidence. Whoever laid out this housing worked around a giant sequoia planted between 1900 and 1910 by the religious communities that shaped this village, decided it was the defining feature, and wrote that down permanently.\n\nThat also makes it the least protected of the three sequoias here. The other two are in institutional grounds. This one is in front of a house, on a residential street, with everything that implies about roots under paving and branches near gutters.\n\nStand back on the far pavement to see the shape. Then go and push the bark, which is the same soft fibrous stuff as on the others and never stops being surprising.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Street tree on a residential street, reachable at any time.",
-   "transport": "About 4 km south of Venlo station, on the Sequoiahof at Steyl.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The one enormous conifer on the street, in front of number 2. It is the reason the street is called what it is.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "vnl_007",
-   "name": "The Red Oak of the Hagerhof",
-   "species": "Northern Red Oak (Quercus rubra)",
-   "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "Behind the animal paddock, Kinderboerderij Hagerhof, Hagerlei 1",
-    "latitude": 51.35471,
-    "longitude": 6.16414,
-    "neighbourhood": "Hagerhof"
-   },
-   "story": "It is behind the animal paddock at a children's farm, which is the least dignified address of any tree on this page and probably the best one.\n\nThe Hagerhof was an estate before it was a kinderboerderij, and this oak is from that earlier life, planted somewhere between 1900 and 1910. Red oak was the standard choice for a country place at that date: American, fast, and reliably the reddest thing in the grounds for two weeks in late October, which native oaks never manage.\n\nThe leaves are the easy way to tell it apart. Big, with pointed lobes ending in tiny bristles, nothing like the small soft rounded lobes of a Dutch oak. The acorns are squat and broad in a shallow saucer, and they take two years to ripen rather than one.\n\nWhat makes this worth including is the traffic. Most of the trees on this site are visited by adults who came deliberately. This one has small children running past it all day, none of whom are there for the tree, some of whom will remember it anyway.\n\nLate October, when it turns.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public children's farm, open in daylight.",
-   "transport": "About 2 km southwest of Venlo station, at the Hagerhof on the Hagerlei.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Large bristle-tipped leaves, standing behind the animal paddock. In autumn it is the red one.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "late October, when it goes scarlet"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  }
- ]
+  "city": "Venlo",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "There is a street in Steyl called Sequoiahof, named after what is standing on it. Steyl is a monastery village on the Maas south of Venlo, founded by missionary orders in the nineteenth century, and the religious communities planted giant sequoias until the species became the local signature. Three of the seven trees here are sequoias within a kilometre of each other. The rest are chestnuts on old farmyards near the border, which once ran between the duchies of Gelre and Gulik and now runs between the Netherlands and Germany.",
+  "meta_description": "Seven remarkable trees around Venlo: three giant sequoias in the monastery village of Steyl, and sweet chestnuts on the old Gelre and Gulik border.",
+  "question_meta": "Venlo's oldest tree is a sweet chestnut at the Gasthuishof farm in Tegelen, banded 1810 to 1820. Where it stands, and six more.",
+  "question_answer": "The oldest tree in Venlo is a sweet chestnut on the yard of the Gasthuishof, an old farm on the Ulingshofweg in Tegelen, which the national register places in a planting band of 1810 to 1820, so between about 205 and 215 years old. The farm itself is far older than the tree: it stands near what used to be the border between the duchy of Gelre and the duchy of Gulik, now the boundary between Venlo and Kaldenkirchen in Germany, and the original wooden building was replaced by a stone one in 1654. A second chestnut, on the Vrijbroekweg in Venlo itself, may be older. The register records a passer-by's claim that it predates 1870 and was damaged on one side by a fire in that year, from which it recovered quickly.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and is the single source throughout, so everything is flagged. One entry is flagged for a different reason: the chestnut on the Vrijbroekweg carries an age claim the register itself attributes to an old passer-by, which is hearsay recorded honestly, and the page passes it on the same way rather than laundering it into a fact. The concentration of giant sequoias at Steyl is not a coincidence but it is also not documented in the register beyond the trees themselves, so the connection this page draws between the monasteries and the planting is inference from the addresses. The sequoia at Kasteel Arcen is the one entry here whose pin is approximate: the register places it on the Toernooiveld rather than at a surveyed point, and the castle grounds are large. Everywhere else the register's own coordinate is what the pin uses, which for a street tree on the Sequoiahof or a chestnut on a farmyard is as good as it gets without standing there.",
+  "hero_tree_id": "vnl_004",
+  "oldest_tree_id": "vnl_001",
+  "faq": [
+    {
+      "q": "Why are there so many giant sequoias in Steyl?",
+      "a": "Steyl is a monastery village on the Maas, established by missionary orders from 1875 onward, and the communities laid out substantial grounds. Giant sequoia was the statement tree of exactly that period. Three of them stand within a kilometre here, and one of the streets is called Sequoiahof after them."
+    },
+    {
+      "q": "What is the oldest tree in Venlo?",
+      "a": "A sweet chestnut on the yard of the Gasthuishof farm on the Ulingshofweg in Tegelen, banded 1810 to 1820 by the national register."
+    },
+    {
+      "q": "Which border is this?",
+      "a": "An old one. The Gasthuishof stands near the former boundary between the duchy of Gelre and the duchy of Gulik, which today is the line between Venlo and Kaldenkirchen in Germany. The farm was rebuilt in stone in 1654, when that border still meant two separate states."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Most of them. The Steyl monastery park and the Sequoiahof are open, and the Hagerhof children's farm is free. The two chestnuts stand on farmyards recorded as visitable in the register, and the sequoia at Kasteel Arcen is on castle grounds where the gardens charge admission, so check before you set out."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vnl_001",
+      "name": "The Chestnut of the Gasthuishof",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
+      "age_min": 206,
+      "age_max": 216,
+      "location": {
+        "address": "On the yard of the Gasthuishof, Ulingshofweg 28, Tegelen",
+        "latitude": 51.33743,
+        "longitude": 6.18537,
+        "neighbourhood": "Tegelen"
+      },
+      "story": "The farm is nearly four centuries old and the tree is only two, which is the correct order for once.\n\nThe Gasthuishof stands close to what was the border between the duchy of Gelre and the duchy of Gulik, two of the patchwork states that made up this part of Europe before anyone drew a Netherlands or a Germany. That line is now the boundary between Venlo and Kaldenkirchen. The original farm here was timber; it was replaced by a stone building in 1654, which is when the place stopped being provisional.\n\nThe chestnut went in around 1810 to 1820, on the yard.\n\nSweet chestnut is a Roman import to northern Europe, brought for the nuts, and it is a farmyard tree for practical reasons rather than decorative ones. It produces heavily, the nuts store, and a mature tree will feed a household through a winter. Old ones develop a spiral in the bark, the ridges twisting slowly round the trunk as it grows, which is the easiest way to spot one at distance.\n\nOctober is the month. The spiny husks split on the ground and you can pick them out with your boot.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Farmyard on the Ulingshofweg, recorded as visitable in the national register.",
+      "transport": "About 6 km south of Venlo station, at Tegelen near the German border.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Bark ridges twisting in a slow spiral round the trunk, and long saw-toothed leaves. On the farmyard.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the spiny husks split open on the ground"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vnl_002",
+      "name": "The Chestnut of the Vrijbroekweg",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "roughly 165 to 175 years by the register, and possibly more: a passer-by's account puts it before 1870",
+      "age_min": 156,
+      "age_max": 200,
+      "location": {
+        "address": "Vrijbroekweg 20",
+        "latitude": 51.34847,
+        "longitude": 6.15809,
+        "neighbourhood": "Vrijbroek"
+      },
+      "story": "The national register of monumental trees contains, for this tree, the testimony of an old man who walked past.\n\nIt is written down as exactly that: according to an elderly passer-by, the tree is older than 1870, and in that year it was damaged on one side by a fire, from which it recovered quickly enough. No document, no source, no name. Somebody stopped, told the surveyor a story, and the surveyor thought it worth recording rather than discarding.\n\nThat is the right call and it is worth defending, because oral memory is often the only evidence a tree has. A fire that scorched one flank in 1870 is the kind of thing a family repeats for a century and no archive ever notices. It also happens to be checkable in principle: fire damage on a chestnut leaves a permanent scar down one side where the cambium died, with the bark rolling in over the edges of the wound for decades afterwards.\n\nSo look at the trunk all the way round. If one side carries an old healed scar, an anonymous man was right and the register is better than its sources.\n\nOctober for the nuts.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Recorded as visitable in the national register; the tree stands at Vrijbroekweg 20.",
+      "transport": "About 3 km southwest of Venlo station, on the Vrijbroekweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A big sweet chestnut with spiralling bark. Look for an old healed scar running down one side of the trunk.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the nuts drop"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vnl_003",
+      "name": "The Sequoia of the Toernooiveld",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Toernooiveld, Kasteel Arcen, Lingsforterweg 26, Arcen",
+        "latitude": 51.47054,
+        "longitude": 6.18677,
+        "neighbourhood": "Arcen"
+      },
+      "story": "Planted on a field named after jousting, which is a collision of two ideas about display separated by five centuries.\n\nThe Toernooiveld belongs to Kasteel Arcen, north of Venlo on the Maas. The sequoia went in between 1860 and 1870, which puts it within about fifteen years of the species arriving in Europe at all. Seed reached Britain in 1853 and the tree was an immediate sensation: enormous, foreign, from a part of California nobody had seen, and expensive. Owners of country places across Europe bought them the way they bought anything else that announced reach.\n\nThis is one of the earliest in the Netherlands, and it is now more than a century and a half into a lifespan that runs to three thousand years.\n\nThe bark is the reason to go rather than the height. It is thick, soft and fibrous, and you can push a fist into it. That is fire adaptation: in a Sierra Nevada forest the outer layer chars and insulates while the living tissue survives, which is how these trees outlast dozens of fires.\n\nThe castle gardens charge admission, so check before making the trip.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Grounds of Kasteel Arcen, recorded as visitable in the national register. The castle gardens charge admission, so check before setting out.",
+      "transport": "About 12 km north of Venlo, at Arcen on the Lingsforterweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A single huge conifer on the open field, with thick spongy red-brown bark.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vnl_004",
+      "name": "The Catalpa of the Waterloo Monastery Park",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "age_estimate": "roughly 125 to 135 years, from the register's planting band of 1890 to 1900",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Waterloo monastery park, next to the giant sequoia, Waterloostraat 28, Steyl",
+        "latitude": 51.32948,
+        "longitude": 6.12154,
+        "neighbourhood": "Steyl"
+      },
+      "story": "It stands directly beside a giant sequoia, and the pairing tells you what the monastery gardeners were doing.\n\nSteyl is a village on the Maas that became a centre of Catholic missionary orders from 1875, and the communities that settled here laid out grounds on a scale a village would never otherwise see. What they planted was not native. It was a collection: species from the Americas and Asia, arranged so that a walk through the park was also an argument about the size of the world.\n\nA catalpa and a sequoia side by side is that idea in two trees. One from the southeastern United States, one from the Sierra Nevada, planted within a decade or so of each other by people whose whole purpose was to send members abroad.\n\nThe catalpa is the more surprising of the two. It comes into leaf later than anything else, holds enormous heart-shaped leaves, then flowers in late June and early July in upright spikes of white bells marked yellow and purple in the throat. After that it hangs slender beans up to forty centimetres long, which stay on all winter.\n\nGo in the first week of July.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Monastery park at Steyl, recorded as visitable in the national register.",
+      "transport": "About 5 km south of Venlo station, in Steyl on the Waterloostraat.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Enormous heart-shaped leaves and long hanging pods, standing right beside the sequoia.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "early July, when it hangs with white bells"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vnl_005",
+      "name": "The Sequoia of the Waterloo Monastery Park",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Waterloo monastery park, Waterloostraat 28, Steyl",
+        "latitude": 51.32951,
+        "longitude": 6.12141,
+        "neighbourhood": "Steyl"
+      },
+      "story": "The second of the three sequoias at Steyl, and the one standing in the monastery park itself.\n\nBy the time this one was planted, between 1900 and 1910, the species had been in Europe for half a century and the novelty had worn off, which makes the choice more interesting rather than less. Somebody here wanted another one specifically, next to the catalpa, in a park that a religious community was still actively building.\n\nWhat a hundred and twenty years produces is a tree that has finished being a curiosity and started being infrastructure. A sequoia at this age is a fixed vertical in the landscape, visible from outside the grounds, and the sort of thing local people give directions by.\n\nIt is also, in the strictest sense, only just beginning. Giant sequoias run past three thousand years and the largest ones alive were already old when Rome was founded. This tree is at about four percent of that.\n\nThe cones are worth looking for on the ground. They are surprisingly small for the tree, about the size of a hen's egg, and they can stay closed and viable on the branch for twenty years, waiting for fire.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Monastery park at Steyl, recorded as visitable in the national register.",
+      "transport": "About 5 km south of Venlo station, in Steyl on the Waterloostraat.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The tall conical conifer in the monastery park with thick fibrous red-brown bark. Small egg-sized cones underneath.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vnl_006",
+      "name": "The Sequoia of the Sequoiahof",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "In front of Sequoiahof 2, Steyl",
+        "latitude": 51.33299,
+        "longitude": 6.11921,
+        "neighbourhood": "Steyl"
+      },
+      "story": "The street is named after the tree. That is rare enough to be the whole reason to come.\n\nStreets get named after landowners, saints, battles, queens and, in the twentieth century, after whatever the developer's theme was. Getting a street named after a species because a specimen of it is standing there requires the tree to have been the most notable thing on the site at the moment somebody had to fill in a form, and it means the tree was there first.\n\nSo the Sequoiahof at Steyl is a piece of evidence. Whoever laid out this housing worked around a giant sequoia planted between 1900 and 1910 by the religious communities that shaped this village, decided it was the defining feature, and wrote that down permanently.\n\nThat also makes it the least protected of the three sequoias here. The other two are in institutional grounds. This one is in front of a house, on a residential street, with everything that implies about roots under paving and branches near gutters.\n\nStand back on the far pavement to see the shape. Then go and push the bark, which is the same soft fibrous stuff as on the others and never stops being surprising.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Street tree on a residential street, reachable at any time.",
+      "transport": "About 4 km south of Venlo station, on the Sequoiahof at Steyl.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The one enormous conifer on the street, in front of number 2. It is the reason the street is called what it is.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vnl_007",
+      "name": "The Red Oak of the Hagerhof",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Behind the animal paddock, Kinderboerderij Hagerhof, Hagerlei 1",
+        "latitude": 51.35471,
+        "longitude": 6.16414,
+        "neighbourhood": "Hagerhof"
+      },
+      "story": "It is behind the animal paddock at a children's farm, which is the least dignified address of any tree on this page and probably the best one.\n\nThe Hagerhof was an estate before it was a kinderboerderij, and this oak is from that earlier life, planted somewhere between 1900 and 1910. Red oak was the standard choice for a country place at that date: American, fast, and reliably the reddest thing in the grounds for two weeks in late October, which native oaks never manage.\n\nThe leaves are the easy way to tell it apart. Big, with pointed lobes ending in tiny bristles, nothing like the small soft rounded lobes of a Dutch oak. The acorns are squat and broad in a shallow saucer, and they take two years to ripen rather than one.\n\nWhat makes this worth including is the traffic. Most of the trees on this site are visited by adults who came deliberately. This one has small children running past it all day, none of whom are there for the tree, some of whom will remember it anyway.\n\nLate October, when it turns.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public children's farm, open in daylight.",
+      "transport": "About 2 km southwest of Venlo station, at the Hagerhof on the Hagerlei.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Large bristle-tipped leaves, standing behind the animal paddock. In autumn it is the red one.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "late October, when it goes scarlet"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
 }

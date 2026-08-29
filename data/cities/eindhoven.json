@@ -1,265 +1,265 @@
 {
- "city": "Eindhoven",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "Eindhoven's old trees are mostly Philips trees. A horse chestnut planted in 1909 because the company believed staff worked better with something green to look at, now at gate 11 of the stadium. An oak in twenty five hectares Anton Philips gave to the city in 1920. A sequoia in the pinetum on the estate his son lived on until 2005, shut for a century and opened in September 2025. The two that owe Philips nothing are the oldest and the best loved: a beech from before the industrial town, and an oak the neighbours light every December.",
- "meta_description": "Seven remarkable trees in Eindhoven: the 1909 Philips chestnut at the stadium, a plane set on fire and grafted back to life, and an estate opened in 2025.",
- "question_meta": "Eindhoven's oldest tree is a copper beech in the Glorieuxpark, from a planting band of 1700 to 1750. Where it stands, and six more worth the walk.",
- "question_answer": "The oldest tree in Eindhoven is a copper beech in the Glorieuxpark on the Geldropseweg, which the national register of monumental trees places in a planting band of 1700 to 1750, so somewhere between about 275 and 325 years old. It stands on ground that was the Eikenburg estate long before the Brothers of Charity bought it in 1894 and built a boys' boarding school there. The claim has a rival: the Wereldboom foundation puts the plane tree at Groendomein Wasven at around 1760, while the same national register gives that tree a band of 1820 to 1830. Both cannot be right, and neither tree has been cored, so the honest answer is that the beech is the oldest by the register and the plane may be older by its foundation.",
- "question_context": "Every age on this page comes from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so ages here are bands and are not narrowed to look precise. That register is the 2024 edition and is a single source for most of these trees, which is why several are flagged. Where a second source exists it is named in the story, and the two trees with the most reporting behind them are the Philips chestnut at the stadium and the plane at Wasven. That plane is the one to watch: it was set on fire in July 2022 and arborists gave it a thirty percent chance of pulling through, so if you walk out there and find it has not made it, tell us and we will take it down the same day. Pins marked approximate mean the park is known and the trunk is not, which matters most at De Wielewaal, where the estate runs to 144 hectares and the oak avenues all look alike.",
- "hero_tree_id": "ein_001",
- "oldest_tree_id": "ein_006",
- "faq": [
-  {
-   "q": "What is the oldest tree in Eindhoven?",
-   "a": "A copper beech in the Glorieuxpark, which the national register places in a planting band of 1700 to 1750. The plane tree at Wasven is given around 1760 by the foundation that named it and 1820 to 1830 by the same register, so the two claims overlap and neither tree has been cored."
-  },
-  {
-   "q": "Can you visit Landgoed De Wielewaal?",
-   "a": "Yes, and only since 27 September 2025. It was Frits Philips's private estate and stayed closed for a century. The city bought it in 2022 for 29 million euro and opened it free of charge, 144 hectares with three entrances at Elburglaan 2, Elburglaan 12 and Oirschotsedijk 3. Mountain bikes and motor vehicles are not allowed."
-  },
-  {
-   "q": "Why are so many of these Philips trees?",
-   "a": "Because Philips built most of the green in this city. Anton Philips bought the Wielewaal estate in 1912 and 25 hectares of pine wood the same year, gave the second to the people of Eindhoven in 1920, and planted trees in the workers' housing on the theory that staff performed better in green surroundings. The company laid out the parks, so the old trees are standing in them."
-  },
-  {
-   "q": "Are they free to visit?",
-   "a": "All seven. The Wielewaal, the Philips de Jongh park and Groendomein Wasven are open public parks with no charge, the Philips chestnut stands on the square outside the stadium, and the Lichtjesboom is a street tree. The Glorieuxpark is owned by a religious order and the register records it as visitable."
-  }
- ],
- "trees": [
-  {
-   "id": "ein_001",
-   "name": "The Philips Tree",
-   "species": "Horse Chestnut (Aesculus hippocastanum)",
-   "age_estimate": "about 117 years, from a documented planting in 1909",
-   "age_min": 110,
-   "age_max": 120,
-   "location": {
-    "address": "Frederiklaan 10a, on the square at gate 11 of the Philips Stadium",
-    "latitude": 51.44055,
-    "longitude": 5.46761,
-    "neighbourhood": "Philipsdorp"
-   },
-   "story": "It has 470 square metres of ground reserved for its roots, in a city centre, next to a football stadium. That is the detail worth knowing: somebody drew a line on a map and decided nothing would ever be built inside it.\n\nAnton Philips had the chestnut planted in 1909 in Philipsdorp, the neighbourhood his company was about to build for its workers. The reasoning was not sentimental. Philips believed staff performed better with something green around them, and the tree went in a year before the first houses did.\n\nSo it is older than the district, older than the stadium beside it, and older than the club that plays there, which the company founded in 1913. The houses went up around it, the ground was cleared for the ground, the stands grew, and the chestnut kept its square.\n\nOn a match day forty thousand people walk past it and most of them do not look up. Gate 11 is the one to aim for. It is the tree standing in its own patch of open ground while everything else is paving.\n\nHorse chestnuts flower in candles in May and drop conkers in September, which in this spot means several thousand people kicking them across a car park.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/",
-    "https://www.trefpuntgroeneindhoven.nl/advies/advies-kunstwerk-psv-stadion",
-    "https://nl.wikipedia.org/wiki/Philipsdorp_(Eindhoven)"
-   ],
-   "access": "Free. Public square outside the stadium, reachable at any time.",
-   "transport": "Eindhoven Centraal, then about 15 minutes on foot west, or bus to Philips Stadion.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The only large chestnut on the stadium square, standing in a marked open bed of its own rather than in paving.",
-   "best_time": {
-    "months": [
-     5
-    ],
-    "kind": "flowers",
-    "label": "May, when the candles are up"
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ein_002",
-   "name": "De Gevlekte Zuiderling",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "roughly 200 years by the national register, closer to 265 by the foundation that named it",
-   "age_min": 195,
-   "age_max": 270,
-   "location": {
-    "address": "Groendomein Wasven, Celebeslaan 30, in the old castle park behind the scouting hut",
-    "latitude": 51.4485,
-    "longitude": 5.51254,
-    "neighbourhood": "Tongelre"
-   },
-   "story": "On the night of 28 July 2022 three teenagers set this tree on fire. The brigade put it out, the bark and the base of the trunk were charred through, and arborists put its chances of surviving at thirty percent. What they could not tell was whether the heat had cooked the sap flow, and the answer would not be visible until the spring of 2024.\n\nIt came back. Thirty strong shoots pushed up from the ground around the trunk, and rather than clear them a specialist began weaving them together, using an American technique, into a living scaffold that will hold the old trunk up as it rots over the next thirty years. A crowdfunder raised eleven thousand euro. The burnt platform around the base was cut away by hand so the roots were not disturbed.\n\nIt stands 28 metres tall with a trunk eight metres round at the base, in the park of a castle that was demolished in 1872. In October 2009 it became the first Wereldboom in the Netherlands.\n\nIts age is disputed. The foundation that named it says planted around 1760; the national register says the 1820s. Nobody has cored it.\n\nGo and look at the black trunk and the young growth climbing it.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/",
-    "https://nos.nl/artikel/2444661",
-    "https://www.boomzorg.nl/article/40233/30-kans-dat-gevandaliseerde-wereldboom-uit-eindhoven-het-overleeft",
-    "https://wereldboom.org/wereldboom/gevlekte-zuiderling/"
-   ],
-   "access": "Free. Public park at Groendomein Wasven, open daily.",
-   "transport": "About 4 km east of Eindhoven Centraal. Bus to Tongelre, then a short walk into the Wasven grounds.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Unmistakable: a huge plane with a blackened, hollowing trunk base and a ring of young shoots trained up around it.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ein_003",
-   "name": "The Oak of De Wielewaal",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 170 to 180 years, from the register's planting band of 1850 to 1860",
-   "age_min": 166,
-   "age_max": 176,
-   "location": {
-    "address": "Landgoed De Wielewaal, entrances at Elburglaan 2, Elburglaan 12 and Oirschotsedijk 3",
-    "latitude": 51.454662,
-    "longitude": 5.433059,
-    "neighbourhood": "Strijp"
-   },
-   "story": "For a hundred years you could not come here. This was the private estate of Frits Philips, who built the house in 1934 and lived in it until he died in 2005, on land his father Anton had bought in 1912 when it was a farm called Het Zwarte Huis. The city bought the whole thing in 2022 for twenty nine million euro and opened it to the public on 27 September 2025.\n\nIt is 144 hectares, three times the size of the Vondelpark, and entry is free.\n\nThis oak was already standing when Anton Philips arrived. In 1850 the ground here was open heath; it was planted up over the second half of the century, and by 1897 the map showed pine wood cut through by avenues of oak. This is one of those avenue trees, which is why it is a good deal older than most of what surrounds it.\n\nThe estate is large enough that the pin marks the surveyed position rather than a spot you can stand on and be certain. Come in from Oirschotsedijk and follow the old avenue lines; they are still legible in the way the wood is laid out, and the oaks along them are the thick ones.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/",
-    "https://www.omroepbrabant.nl/nieuws/4755377/3-keer-zo-groot-als-vondelpark-philips-priveparadijs-nu-open-voor-iedereen",
-    "https://www.thisiseindhoven.com/en/locations/landgoed-de-wielewaal"
-   ],
-   "access": "Free. Public since 27 September 2025. No mountain bikes or motor vehicles.",
-   "transport": "About 5 km northwest of Eindhoven Centraal. Entrances at Elburglaan 2 and 12 and Oirschotsedijk 3.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A heavy old oak standing in a line with others, along one of the straight avenues cut through the pine wood.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the acorns come down along the avenue"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "ein_004",
-   "name": "The Giant Sequoia of the Wielewaal Pinetum",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "roughly 105 to 115 years, from the register's planting band of 1910 to 1920",
-   "age_min": 106,
-   "age_max": 116,
-   "location": {
-    "address": "Landgoed De Wielewaal, in the pinetum, entrances at Elburglaan 2, Elburglaan 12 and Oirschotsedijk 3",
-    "latitude": 51.454102,
-    "longitude": 5.434357,
-    "neighbourhood": "Strijp"
-   },
-   "story": "In 1912 Anton Philips bought a farm on the heath and immediately started collecting conifers. He laid out a pinetum, a star wood with paths radiating from a single point, a maze and a rockery, which tells you what kind of man he was about land: it was to be arranged.\n\nThis is one of the trees from that planting, a giant sequoia, a species from the western slopes of the Sierra Nevada that had been in European gardens for about sixty years when it went in here. In California they are the largest living things on earth. In a Brabant pinetum a hundred-year-old one is a tall, red-brown column with bark you can push your fist into, soft and fibrous and thick enough to have evolved against forest fire.\n\nIt has a long way to go. Sequoias run to three thousand years and this one is barely out of its first century, which is the pleasant thing about standing under it: on its own timescale, the entire Philips story happened this morning.\n\nThe pinetum is signposted from the Oirschotsedijk entrance. Look for the conifer that is obviously wider than everything around it.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/",
-    "https://www.omroepbrabant.nl/nieuws/4755377/3-keer-zo-groot-als-vondelpark-philips-priveparadijs-nu-open-voor-iedereen"
-   ],
-   "access": "Free. Public since 27 September 2025.",
-   "transport": "About 5 km northwest of Eindhoven Centraal. Nearest entrance Oirschotsedijk 3.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The thickest conifer in the pinetum, with deeply furrowed red-brown bark that gives under a push.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ein_005",
-   "name": "The Oak by the Wilhelmina Monument",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 170 to 180 years, from the register's planting band of 1850 to 1860",
-   "age_min": 166,
-   "age_max": 176,
-   "location": {
-    "address": "Philips de Jonghpark, Bezuidenhoutseweg, left of the path to the Wilhelmina monument",
-    "latitude": 51.454372,
-    "longitude": 5.445661,
-    "neighbourhood": "Strijp"
-   },
-   "story": "In 1920 Anton Philips and his wife Anna de Jongh gave twenty five hectares of wood to the people of Eindhoven. They had bought it as pine plantation in 1912, turned it into something you could walk in, and handed it over after the neighbouring municipality of Strijp was absorbed into the city. The garden architect D. F. Tersteeg laid it out in the English landscape manner, grass opening into stands of trees, and it opened as a park in 1924.\n\nThis oak was there before any of that. The register puts it in the 1850s, which makes it sixty years older than the purchase and a survivor of whatever stood here when the ground was still being planted up from heath.\n\nThat is worth holding in mind while you look at it. The park is a designed thing, made by a company for its workers and then given away. The oak is not part of the design. It was simply already standing where somebody later decided to put a path.\n\nIt stands to the left of the path running to the Wilhelmina monument. The park was fully renovated in 2009, so the surroundings are tidier than the tree.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public city park, open daily.",
-   "transport": "About 4 km northwest of Eindhoven Centraal, off the Bezuidenhoutseweg.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A broad old oak on the left of the path leading to the Wilhelmina monument, heavier in the trunk than the trees planted around it.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ein_006",
-   "name": "The Copper Beech of the Glorieuxpark",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 275 to 325 years, from the register's planting band of 1700 to 1750",
-   "age_min": 276,
-   "age_max": 326,
-   "location": {
-    "address": "Glorieuxpark De Burgh, Geldropseweg 170",
-    "latitude": 51.431327,
-    "longitude": 5.498516,
-    "neighbourhood": "Stratum"
-   },
-   "story": "This is the oldest thing standing in Eindhoven, by a wide margin and by the register's own dating: a planting band of 1700 to 1750, so somewhere between about 275 and 325 years. Everything else on this page is a Philips tree. This one was full grown before the family arrived.\n\nThe ground has changed hands and purpose repeatedly around it. It was the Eikenburg estate; in 1894 the Brothers of Charity bought it and opened a boys' boarding school, adding pavilions over the decades; the boarding school closed in 1996 for lack of pupils, and care and education organisations moved into the buildings. The main house, the old school, the chapel and a mounted statue of Saint George are all listed national monuments. A religious order still owns the park, and the register records it as visitable.\n\nOne honest note. This park also held the thickest beech in the whole of North Brabant, and it is gone: a large part of its crown came down on its own in September 2013 and the remaining trunk was taken out. That was a different tree, a green beech, and the register recorded this one eleven years afterwards. If you go and find this one has followed it, tell us.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/",
-    "https://www.bhic.nl/ontdekken/verhalen/kloosters-in-het-glorieuxpark-in-eindhoven"
-   ],
-   "access": "Free. Park owned by a religious order, recorded as visitable in the national register.",
-   "transport": "About 2.5 km southeast of Eindhoven Centraal, on the Geldropseweg.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A very heavy beech with dark purple leaves, in the park around the old boarding school buildings.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the purple burns through to copper"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "ein_007",
-   "name": "De Lichtjesboom",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 100 to 110 years, from the register's planting band of 1920 to 1930",
-   "age_min": 96,
-   "age_max": 106,
-   "location": {
-    "address": "Diepmeerven 30 to 32, in the planting strip along the street",
-    "latitude": 51.422903,
-    "longitude": 5.510936,
-    "neighbourhood": "Gijzenrooi"
-   },
-   "story": "Every December the neighbourhood covers this oak in fairy lights, and keeps them on through January. It is not a municipal display and nobody is paid to do it. That is why the street knows it as the lichtjesboom, the little lights tree, rather than by anything the register calls it.\n\nThe rest of the year it is a good ordinary oak of about a century, standing clear of the houses in the strip of planting along the Diepmeerven, well enough placed that you see the whole shape of it from the pavement. The street name probably points at the Diepe Meerven, a small heath pool a way off toward Heeze, which is what this whole district was before it was a district.\n\nIt is the smallest tree on this page and the only one on it because of what people do with it. Eindhoven is a city that thinks about light more than most, having spent a century making it, and the version that matters here is a hundred bulbs strung through an oak by people who live on the street.\n\nGo in December. In August you will see an oak.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Street tree in a public planting strip.",
-   "transport": "About 5 km southeast of Eindhoven Centraal, in the Gijzenrooi district.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The one free-standing oak in the green strip along the Diepmeerven, opposite numbers 30 to 32. In winter it is the one with the lights.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  }
- ]
+  "city": "Eindhoven",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Eindhoven's old trees are mostly Philips trees. A horse chestnut planted in 1909 because the company believed staff worked better with something green to look at, now at gate 11 of the stadium. An oak in twenty five hectares Anton Philips gave to the city in 1920. A sequoia in the pinetum on the estate his son lived on until 2005, shut for a century and opened in September 2025. The two that owe Philips nothing are the oldest and the best loved: a beech from before the industrial town, and an oak the neighbours light every December.",
+  "meta_description": "Seven remarkable trees in Eindhoven: the 1909 Philips chestnut at the stadium, a plane set on fire and grafted back to life, and an estate opened in 2025.",
+  "question_meta": "Eindhoven's oldest tree is a copper beech in the Glorieuxpark, from a planting band of 1700 to 1750. Where it stands, and six more worth the walk.",
+  "question_answer": "The oldest tree in Eindhoven is a copper beech in the Glorieuxpark on the Geldropseweg, which the national register of monumental trees places in a planting band of 1700 to 1750, so somewhere between about 275 and 325 years old. It stands on ground that was the Eikenburg estate long before the Brothers of Charity bought it in 1894 and built a boys' boarding school there. The claim has a rival: the Wereldboom foundation puts the plane tree at Groendomein Wasven at around 1760, while the same national register gives that tree a band of 1820 to 1830. Both cannot be right, and neither tree has been cored, so the honest answer is that the beech is the oldest by the register and the plane may be older by its foundation.",
+  "question_context": "Every age on this page comes from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so ages here are bands and are not narrowed to look precise. That register is the 2024 edition and is a single source for most of these trees, which is why several are flagged. Where a second source exists it is named in the story, and the two trees with the most reporting behind them are the Philips chestnut at the stadium and the plane at Wasven. That plane is the one to watch: it was set on fire in July 2022 and arborists gave it a thirty percent chance of pulling through, so if you walk out there and find it has not made it, tell us and we will take it down the same day. Pins marked approximate mean the park is known and the trunk is not, which matters most at De Wielewaal, where the estate runs to 144 hectares and the oak avenues all look alike.",
+  "hero_tree_id": "ein_001",
+  "oldest_tree_id": "ein_006",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Eindhoven?",
+      "a": "A copper beech in the Glorieuxpark, which the national register places in a planting band of 1700 to 1750. The plane tree at Wasven is given around 1760 by the foundation that named it and 1820 to 1830 by the same register, so the two claims overlap and neither tree has been cored."
+    },
+    {
+      "q": "Can you visit Landgoed De Wielewaal?",
+      "a": "Yes, and only since 27 September 2025. It was Frits Philips's private estate and stayed closed for a century. The city bought it in 2022 for 29 million euro and opened it free of charge, 144 hectares with three entrances at Elburglaan 2, Elburglaan 12 and Oirschotsedijk 3. Mountain bikes and motor vehicles are not allowed."
+    },
+    {
+      "q": "Why are so many of these Philips trees?",
+      "a": "Because Philips built most of the green in this city. Anton Philips bought the Wielewaal estate in 1912 and 25 hectares of pine wood the same year, gave the second to the people of Eindhoven in 1920, and planted trees in the workers' housing on the theory that staff performed better in green surroundings. The company laid out the parks, so the old trees are standing in them."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "All seven. The Wielewaal, the Philips de Jongh park and Groendomein Wasven are open public parks with no charge, the Philips chestnut stands on the square outside the stadium, and the Lichtjesboom is a street tree. The Glorieuxpark is owned by a religious order and the register records it as visitable."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ein_001",
+      "name": "The Philips Tree",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "about 117 years, from a documented planting in 1909",
+      "age_min": 110,
+      "age_max": 120,
+      "location": {
+        "address": "Frederiklaan 10a, on the square at gate 11 of the Philips Stadium",
+        "latitude": 51.44055,
+        "longitude": 5.46761,
+        "neighbourhood": "Philipsdorp"
+      },
+      "story": "It has 470 square metres of ground reserved for its roots, in a city centre, next to a football stadium. That is the detail worth knowing: somebody drew a line on a map and decided nothing would ever be built inside it.\n\nAnton Philips had the chestnut planted in 1909 in Philipsdorp, the neighbourhood his company was about to build for its workers. The reasoning was not sentimental. Philips believed staff performed better with something green around them, and the tree went in a year before the first houses did.\n\nSo it is older than the district, older than the stadium beside it, and older than the club that plays there, which the company founded in 1913. The houses went up around it, the ground was cleared for the ground, the stands grew, and the chestnut kept its square.\n\nOn a match day forty thousand people walk past it and most of them do not look up. Gate 11 is the one to aim for. It is the tree standing in its own patch of open ground while everything else is paving.\n\nHorse chestnuts flower in candles in May and drop conkers in September, which in this spot means several thousand people kicking them across a car park.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://www.trefpuntgroeneindhoven.nl/advies/advies-kunstwerk-psv-stadion",
+        "https://nl.wikipedia.org/wiki/Philipsdorp_(Eindhoven)"
+      ],
+      "access": "Free. Public square outside the stadium, reachable at any time.",
+      "transport": "Eindhoven Centraal, then about 15 minutes on foot west, or bus to Philips Stadion.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The only large chestnut on the stadium square, standing in a marked open bed of its own rather than in paving.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the candles are up"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ein_002",
+      "name": "De Gevlekte Zuiderling",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 200 years by the national register, closer to 265 by the foundation that named it",
+      "age_min": 195,
+      "age_max": 270,
+      "location": {
+        "address": "Groendomein Wasven, Celebeslaan 30, in the old castle park behind the scouting hut",
+        "latitude": 51.4485,
+        "longitude": 5.51254,
+        "neighbourhood": "Tongelre"
+      },
+      "story": "On the night of 28 July 2022 three teenagers set this tree on fire. The brigade put it out, the bark and the base of the trunk were charred through, and arborists put its chances of surviving at thirty percent. What they could not tell was whether the heat had cooked the sap flow, and the answer would not be visible until the spring of 2024.\n\nIt came back. Thirty strong shoots pushed up from the ground around the trunk, and rather than clear them a specialist began weaving them together, using an American technique, into a living scaffold that will hold the old trunk up as it rots over the next thirty years. A crowdfunder raised eleven thousand euro. The burnt platform around the base was cut away by hand so the roots were not disturbed.\n\nIt stands 28 metres tall with a trunk eight metres round at the base, in the park of a castle that was demolished in 1872. In October 2009 it became the first Wereldboom in the Netherlands.\n\nIts age is disputed. The foundation that named it says planted around 1760; the national register says the 1820s. Nobody has cored it.\n\nGo and look at the black trunk and the young growth climbing it.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://nos.nl/artikel/2444661",
+        "https://www.boomzorg.nl/article/40233/30-kans-dat-gevandaliseerde-wereldboom-uit-eindhoven-het-overleeft",
+        "https://wereldboom.org/wereldboom/gevlekte-zuiderling/"
+      ],
+      "access": "Free. Public park at Groendomein Wasven, open daily.",
+      "transport": "About 4 km east of Eindhoven Centraal. Bus to Tongelre, then a short walk into the Wasven grounds.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Unmistakable: a huge plane with a blackened, hollowing trunk base and a ring of young shoots trained up around it.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ein_003",
+      "name": "The Oak of De Wielewaal",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 170 to 180 years, from the register's planting band of 1850 to 1860",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Landgoed De Wielewaal, entrances at Elburglaan 2, Elburglaan 12 and Oirschotsedijk 3",
+        "latitude": 51.454662,
+        "longitude": 5.433059,
+        "neighbourhood": "Strijp"
+      },
+      "story": "For a hundred years you could not come here. This was the private estate of Frits Philips, who built the house in 1934 and lived in it until he died in 2005, on land his father Anton had bought in 1912 when it was a farm called Het Zwarte Huis. The city bought the whole thing in 2022 for twenty nine million euro and opened it to the public on 27 September 2025.\n\nIt is 144 hectares, three times the size of the Vondelpark, and entry is free.\n\nThis oak was already standing when Anton Philips arrived. In 1850 the ground here was open heath; it was planted up over the second half of the century, and by 1897 the map showed pine wood cut through by avenues of oak. This is one of those avenue trees, which is why it is a good deal older than most of what surrounds it.\n\nThe estate is large enough that the pin marks the surveyed position rather than a spot you can stand on and be certain. Come in from Oirschotsedijk and follow the old avenue lines; they are still legible in the way the wood is laid out, and the oaks along them are the thick ones.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://www.omroepbrabant.nl/nieuws/4755377/3-keer-zo-groot-als-vondelpark-philips-priveparadijs-nu-open-voor-iedereen",
+        "https://www.thisiseindhoven.com/en/locations/landgoed-de-wielewaal"
+      ],
+      "access": "Free. Public since 27 September 2025. No mountain bikes or motor vehicles.",
+      "transport": "About 5 km northwest of Eindhoven Centraal. Entrances at Elburglaan 2 and 12 and Oirschotsedijk 3.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A heavy old oak standing in a line with others, along one of the straight avenues cut through the pine wood.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the acorns come down along the avenue"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ein_004",
+      "name": "The Giant Sequoia of the Wielewaal Pinetum",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 105 to 115 years, from the register's planting band of 1910 to 1920",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Landgoed De Wielewaal, in the pinetum, entrances at Elburglaan 2, Elburglaan 12 and Oirschotsedijk 3",
+        "latitude": 51.454102,
+        "longitude": 5.434357,
+        "neighbourhood": "Strijp"
+      },
+      "story": "In 1912 Anton Philips bought a farm on the heath and immediately started collecting conifers. He laid out a pinetum, a star wood with paths radiating from a single point, a maze and a rockery, which tells you what kind of man he was about land: it was to be arranged.\n\nThis is one of the trees from that planting, a giant sequoia, a species from the western slopes of the Sierra Nevada that had been in European gardens for about sixty years when it went in here. In California they are the largest living things on earth. In a Brabant pinetum a hundred-year-old one is a tall, red-brown column with bark you can push your fist into, soft and fibrous and thick enough to have evolved against forest fire.\n\nIt has a long way to go. Sequoias run to three thousand years and this one is barely out of its first century, which is the pleasant thing about standing under it: on its own timescale, the entire Philips story happened this morning.\n\nThe pinetum is signposted from the Oirschotsedijk entrance. Look for the conifer that is obviously wider than everything around it.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://www.omroepbrabant.nl/nieuws/4755377/3-keer-zo-groot-als-vondelpark-philips-priveparadijs-nu-open-voor-iedereen"
+      ],
+      "access": "Free. Public since 27 September 2025.",
+      "transport": "About 5 km northwest of Eindhoven Centraal. Nearest entrance Oirschotsedijk 3.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The thickest conifer in the pinetum, with deeply furrowed red-brown bark that gives under a push.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ein_005",
+      "name": "The Oak by the Wilhelmina Monument",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 170 to 180 years, from the register's planting band of 1850 to 1860",
+      "age_min": 166,
+      "age_max": 176,
+      "location": {
+        "address": "Philips de Jonghpark, Bezuidenhoutseweg, left of the path to the Wilhelmina monument",
+        "latitude": 51.454372,
+        "longitude": 5.445661,
+        "neighbourhood": "Strijp"
+      },
+      "story": "In 1920 Anton Philips and his wife Anna de Jongh gave twenty five hectares of wood to the people of Eindhoven. They had bought it as pine plantation in 1912, turned it into something you could walk in, and handed it over after the neighbouring municipality of Strijp was absorbed into the city. The garden architect D. F. Tersteeg laid it out in the English landscape manner, grass opening into stands of trees, and it opened as a park in 1924.\n\nThis oak was there before any of that. The register puts it in the 1850s, which makes it sixty years older than the purchase and a survivor of whatever stood here when the ground was still being planted up from heath.\n\nThat is worth holding in mind while you look at it. The park is a designed thing, made by a company for its workers and then given away. The oak is not part of the design. It was simply already standing where somebody later decided to put a path.\n\nIt stands to the left of the path running to the Wilhelmina monument. The park was fully renovated in 2009, so the surroundings are tidier than the tree.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public city park, open daily.",
+      "transport": "About 4 km northwest of Eindhoven Centraal, off the Bezuidenhoutseweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A broad old oak on the left of the path leading to the Wilhelmina monument, heavier in the trunk than the trees planted around it.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ein_006",
+      "name": "The Copper Beech of the Glorieuxpark",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 275 to 325 years, from the register's planting band of 1700 to 1750",
+      "age_min": 276,
+      "age_max": 326,
+      "location": {
+        "address": "Glorieuxpark De Burgh, Geldropseweg 170",
+        "latitude": 51.431327,
+        "longitude": 5.498516,
+        "neighbourhood": "Stratum"
+      },
+      "story": "This is the oldest thing standing in Eindhoven, by a wide margin and by the register's own dating: a planting band of 1700 to 1750, so somewhere between about 275 and 325 years. Everything else on this page is a Philips tree. This one was full grown before the family arrived.\n\nThe ground has changed hands and purpose repeatedly around it. It was the Eikenburg estate; in 1894 the Brothers of Charity bought it and opened a boys' boarding school, adding pavilions over the decades; the boarding school closed in 1996 for lack of pupils, and care and education organisations moved into the buildings. The main house, the old school, the chapel and a mounted statue of Saint George are all listed national monuments. A religious order still owns the park, and the register records it as visitable.\n\nOne honest note. This park also held the thickest beech in the whole of North Brabant, and it is gone: a large part of its crown came down on its own in September 2013 and the remaining trunk was taken out. That was a different tree, a green beech, and the register recorded this one eleven years afterwards. If you go and find this one has followed it, tell us.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://www.bhic.nl/ontdekken/verhalen/kloosters-in-het-glorieuxpark-in-eindhoven"
+      ],
+      "access": "Free. Park owned by a religious order, recorded as visitable in the national register.",
+      "transport": "About 2.5 km southeast of Eindhoven Centraal, on the Geldropseweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A very heavy beech with dark purple leaves, in the park around the old boarding school buildings.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the purple burns through to copper"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ein_007",
+      "name": "De Lichtjesboom",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 100 to 110 years, from the register's planting band of 1920 to 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Diepmeerven 30 to 32, in the planting strip along the street",
+        "latitude": 51.422903,
+        "longitude": 5.510936,
+        "neighbourhood": "Gijzenrooi"
+      },
+      "story": "Every December the neighbourhood covers this oak in fairy lights, and keeps them on through January. It is not a municipal display and nobody is paid to do it. That is why the street knows it as the lichtjesboom, the little lights tree, rather than by anything the register calls it.\n\nThe rest of the year it is a good ordinary oak of about a century, standing clear of the houses in the strip of planting along the Diepmeerven, well enough placed that you see the whole shape of it from the pavement. The street name probably points at the Diepe Meerven, a small heath pool a way off toward Heeze, which is what this whole district was before it was a district.\n\nIt is the smallest tree on this page and the only one on it because of what people do with it. Eindhoven is a city that thinks about light more than most, having spent a century making it, and the version that matters here is a hundred bulbs strung through an oak by people who live on the street.\n\nGo in December. In August you will see an oak.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Street tree in a public planting strip.",
+      "transport": "About 5 km southeast of Eindhoven Centraal, in the Gijzenrooi district.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The one free-standing oak in the green strip along the Diepmeerven, opposite numbers 30 to 32. In winter it is the one with the lights.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
 }

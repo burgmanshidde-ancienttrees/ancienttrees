@@ -1,195 +1,251 @@
 {
- "city": "Enschede",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "Enschede's old trees were bought by textile money. Van Heek, Blijdenstein, Ledeboer: the families who ran the mills built estates on the edge of town, hired the best garden architects in the country and planted them, and the city later absorbed the results as public parks. One invoice survives. In 1865 D. Wattez billed H. J. van Heek for a Wellingtonia as part of the planting around 't Wageler, and the two men wrote to each other about the price. That giant sequoia is still standing in the Ledeboerpark, which is the closest thing this page has to a receipt.",
- "meta_description": "Seven remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
- "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and six more worth the walk.",
- "question_answer": "The oldest tree in Enschede is the oak on 't Zeggelt, in the Lasonder-Zeggelt district, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It has a name of its own in the city, De Eik op 't Zeggelt, and it stands in public planting rather than on any estate, which is unusual here: almost every other old tree in Enschede is a survivor of a nineteenth century textile family's grounds. The register gives it a coordinate to six decimal places, which is the sort of precision that means somebody stood at the trunk with a receiver rather than pointing at an address.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for these trees, which is why they are all flagged. The giant sequoia in the Ledeboerpark is the exception worth naming: the register cites a document in the archive of the Twente textile families recording correspondence in 1866 between H. J. van Heek and the garden architect D. Wattez about the price of a Wellingtonia, on an invoice for planting around 't Wageler in 1865. That is a documented purchase rather than an estimate, and it is why this page can be more confident about that tree than about any other on it. Where a pin is marked approximate we know the grounds and not the trunk.",
- "hero_tree_id": "ens_001",
- "oldest_tree_id": "ens_002",
- "faq": [
-  {
-   "q": "What is the oldest tree in Enschede?",
-   "a": "De Eik op 't Zeggelt, in the Lasonder-Zeggelt district, banded 1750 to 1800 by the national register."
-  },
-  {
-   "q": "Is there really an invoice for one of these trees?",
-   "a": "The register cites one. A document in the archive of the Twente textile families records that in 1866 H. J. van Heek and the garden architect D. Wattez corresponded about the price of a Wellingtonia on an invoice for planting around 't Wageler in 1865. Wellingtonia is the old trade name for the giant sequoia, and one from that period still stands in the Ledeboerpark, which grew out of that estate."
-  },
-  {
-   "q": "Can you get onto Landgoed Het Bouwhuis?",
-   "a": "Yes. The register records the grounds as open to the public and notes that a good many striking trees stand there. Het Bouwhuis and the neighbouring Het Amelink appear in writing as early as 1536, when Jan van Borne, steward of the chapter of St Peter in Utrecht, reported on both farms in the hamlet of Lonneker."
-  },
-  {
-   "q": "Are they free to visit?",
-   "a": "All seven. The Ledeboerpark, the Blijdensteinpark and Het Bouwhuis are open, and the oak, the plane and the Wageler beech stand on public ground."
-  }
- ],
- "trees": [
-  {
-   "id": "ens_001",
-   "name": "The Wellingtonia of the Ledeboerpark",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "roughly 155 to 165 years, and the register cites an 1865 invoice for a Wellingtonia planted here",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "Ledeboerpark, Hengelosestraat",
-    "latitude": 52.23463,
-    "longitude": 6.8692,
-    "neighbourhood": "Ledeboerpark"
-   },
-   "story": "Somebody wrote down what this tree cost.\n\nThe register cites a document in the archive of the Twente textile families: in 1866 the mill owner H. J. van Heek and the garden architect D. Wattez corresponded about the price of a Wellingtonia, itemised on an invoice for the planting around 't Wageler in 1865. Wellingtonia was the trade name the British gave the giant sequoia after the Duke of Wellington, and in the 1860s it was the most fashionable and most expensive thing you could put in a garden in Europe. The species had only been introduced to Britain in 1853. Buying one was a way of saying what you were worth.\n\nThe park is what became of that estate. Wattez laid it out in the second half of the nineteenth century, the city absorbed it, and the Ledeboerpark on the Hengelosestraat is now open to anyone.\n\nSo you can go and stand under an object of Victorian conspicuous consumption that has quietly outlived the mills, the family's fortune and the argument about the price.\n\nIt is unmistakable: the thick red-brown trunk with soft fibrous bark, and a straight conical top."
-   ,
-   "verified_sources": ["https://www.monumentalebomen.nl/", "https://archieftwentsetextielfamilies.nl"],
-   "access": "Free. Open public park.",
-   "transport": "About 2 km northwest of Enschede station, on the Hengelosestraat.",
-   "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
-   "how_to_recognise": "The single huge conifer with spongy red-brown bark and a conical crown.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ens_002",
-   "name": "De Eik op 't Zeggelt",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
-   "age_min": 226,
-   "age_max": 276,
-   "location": {
-    "address": "Lasonder-Zeggelt district, in public planting",
-    "latitude": 52.226349,
-    "longitude": 6.898275,
-    "neighbourhood": "Lasonder-Zeggelt"
-   },
-   "story": "The oldest tree in Enschede is not on anybody's estate. It stands in ordinary public planting in a residential district and it has a name anyway, which is usually a sign that people have been walking past it long enough to need one.\n\nThe register bands it 1750 to 1800, which makes it two to two and a half centuries and puts its first decades in a Twente of farms and hand looms, before the mills, before the railway, and long before the town around it. Enschede burned almost entirely to the ground in 1862, when a fire took the whole centre in a few hours. This oak was standing well outside it and is one of the few living things in the city that predates that day.\n\nThe register gives its position to six decimal places, which is the tell that somebody stood at the trunk with a satellite receiver rather than pointing at a street. That is unusual in this dataset and it means the pin is as good as pins get.\n\nPedunculate oak, so acorns on long stalks and leaves that sit almost directly on the twig. In October there will be a great many of them underfoot."
-   ,
-   "verified_sources": ["https://www.monumentalebomen.nl/", "https://nl.wikipedia.org/wiki/Het_Zeggelt"],
-   "access": "Free. Public planting in a residential district, reachable at any time.",
-   "transport": "About 1.5 km north of Enschede station, in the Lasonder-Zeggelt district.",
-   "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
-   "how_to_recognise": "A single very heavy old oak standing clear in the green of the district, far thicker than anything near it.",
-   "best_time": {"months": [10], "kind": "fruit", "label": "October, when the acorns are down"},
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "ens_003",
-   "name": "The Beech of Landgoed Wageler",
-   "species": "European Beech (Fagus sylvatica)",
-   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
-   "age_min": 186,
-   "age_max": 196,
-   "location": {
-    "address": "Langs de Es, Landgoed Wageler",
-    "latitude": 52.23312,
-    "longitude": 6.87143,
-    "neighbourhood": "Wageler"
-   },
-   "story": "This beech was on the estate before the estate was designed.\n\n't Wageler is the ground that Wattez planted for the Van Heeks in the 1860s and that partly became the Ledeboerpark. The register bands this tree 1830 to 1840, thirty years earlier, which means it was a mature tree of some size when the landscape architect arrived with his plans and his invoices.\n\nThat is the ordinary way a Dutch estate garden was actually made. You did not clear ground and start over. You looked at what was standing, kept whatever was good, and arranged the new planting to make the most of it, which is why the oldest tree in a nineteenth century park is so often older than the park.\n\nIt stands along the Es, the old open arable field that these Twente farms were organised around. An es is a very specific thing here: a slightly raised field built up over centuries by carting in sods and manure, so the soil under it can be a metre deeper than the heath beside it. Good ground, and part of why a beech here grew as it did.\n\nSmooth grey bark, deep shade, bare litter beneath."
-   ,
-   "verified_sources": ["https://www.monumentalebomen.nl/"],
-   "access": "Free. On the estate grounds, recorded as visitable in the national register.",
-   "transport": "About 2.5 km northwest of Enschede station, near the Ledeboerpark.",
-   "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
-   "how_to_recognise": "A heavy smooth-barked beech standing along the edge of the old open field.",
-   "best_time": {"months": [10], "kind": "autumn colour", "label": "October, when the whole crown goes copper"},
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "ens_004",
-   "name": "The Giant Sequoia of Het Bouwhuis",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "Landgoed Het Bouwhuis, Lonneker",
-    "latitude": 52.243,
-    "longitude": 6.91573,
-    "neighbourhood": "Lonneker"
-   },
-   "story": "The farm this tree stands on was first written down in 1536.\n\nIn that year Jan van Borne, steward of the chapter of St Peter in Utrecht, reported on two holdings in the hamlet of Lonneker: Het Bouwhuis and Het Amelink. The Amelink then belonged to the Jonker van Steinfurt, which is to say the count of Bentheim. So the ground has an unbroken paper trail running back close to five centuries, into a landscape of church chapters and minor German nobility, which is roughly four hundred years before anyone here had heard of a sequoia.\n\nThe tree is the newcomer, planted somewhere between 1900 and 1910, when a giant sequoia had gone from a spectacular novelty to the standard way of announcing that a country house had grounds.\n\nThe register notes that Het Bouwhuis is open to the public and that a good many striking trees stand there, which makes this one of the easier estates on this page to simply walk into.\n\nA hundred and twenty years is nothing for the species. In California this would be a sapling among trees three thousand years old. Here it is already the biggest thing in the field."
-   ,
-   "verified_sources": ["https://www.monumentalebomen.nl/"],
-   "access": "Free. The register records the grounds as open to the public.",
-   "transport": "About 5 km northeast of Enschede station, at Lonneker.",
-   "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
-   "how_to_recognise": "The tall conical conifer with thick spongy red-brown bark, well clear of the other trees.",
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "ens_005",
-   "name": "The Weeping Beech by the Pond",
-   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
-   "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "Landgoed Het Bouwhuis, northeast side of the pond, Lonneker",
-    "latitude": 52.24341,
-    "longitude": 6.91498,
-    "neighbourhood": "Lonneker"
-   },
-   "story": "Go inside it. That is the point of a weeping beech and almost nobody does it.\n\nThe branches of a mature one arch out and then fall straight to the ground all the way round, so what you have is a green tent perhaps fifteen metres across with a bare floor and a trunk in the middle. Children work this out immediately. Adults walk past.\n\nWeeping beech is a cultivar, not a species: a mutant form propagated by grafting, so every one is a clone of an original found in Europe in the eighteenth century. The graft union is usually visible as a swelling low on the trunk. It grows the same way a normal beech does except that it cannot hold its branches up, and left alone it will layer, meaning a branch resting on soil roots and becomes a new trunk, so an old one can slowly walk outward across a lawn.\n\nThis one stands on the northeast side of the pond at Het Bouwhuis, planted between 1900 and 1910, on ground documented since 1536.\n\nDuck under the skirt on the pond side and look back out at the water through the leaves."
-   ,
-   "verified_sources": ["https://www.monumentalebomen.nl/"],
-   "access": "Free. The register records the grounds as open to the public.",
-   "transport": "About 5 km northeast of Enschede station, at Lonneker.",
-   "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
-   "how_to_recognise": "A dome of branches falling to the grass beside the pond, hollow inside.",
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "ens_006",
-   "name": "The Sessile Oak of the Blijdensteinpark",
-   "species": "Sessile Oak (Quercus petraea)",
-   "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
-   "age_min": 116,
-   "age_max": 126,
-   "location": {
-    "address": "Blijdensteinpark, east side by the filling station",
-    "latitude": 52.21593,
-    "longitude": 6.90838,
-    "neighbourhood": "Blijdensteinpark"
-   },
-   "story": "A dual carriageway runs through this park, and the tree is by a filling station. Both facts are worth stating first, because they are what this place is now.\n\nIt began as an estate. In 1855 H. G. Blijdenstein and his wife Ebeling built a villa on the Helweg, the road that later became the Gronausestraat, and laid out grounds around it. Their daughter Johanna Ida Beltman-Blijdenstein was the last person to live there. The Blijdensteins were one of the Twente textile dynasties, and like the Van Heeks and the Ledeboers what they left the city was ground with trees on it.\n\nWhat happened afterwards is what happens to green space near a growing city. The Boulevard 1945 was driven straight through the park, cutting it in two, and the eastern edge now holds a petrol station.\n\nThe oak has been there since around 1900 to 1910 and has watched the arrangement change around it. It is a sessile oak, so the acorns sit tight against the twig and the leaves have a clear stalk, the reverse of the commoner pedunculate oak.\n\nGo on a Sunday, when the road is quiet."
-   ,
-   "verified_sources": ["https://www.monumentalebomen.nl/"],
-   "access": "Free. Public park, open daily.",
-   "transport": "About 2 km east of Enschede station, on the Boulevard 1945.",
-   "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
-   "how_to_recognise": "On the east side of the park near the filling station, with acorns sitting tight to the twig.",
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "ens_007",
-   "name": "The Plane of 't Zwik",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "Cort van der Lindelaan, near the Tubantiasingel",
-    "latitude": 52.22596,
-    "longitude": 6.87903,
-    "neighbourhood": "Cort van der Lindelaan"
-   },
-   "story": "There was a country house here called 't Zwik and there is a street pattern instead.\n\nThe city bought the place in 1917 to expand into, and built over it through the 1920s and 1930s, which was the ordinary fate of the smaller estates on the edge of a town whose population was climbing with every new mill. The house went. What survived is planting: this plane, and, sixty to a hundred metres to the west, an oak and a beech that the register also identifies as remnants of the same grounds.\n\nThat is a useful thing to know while standing here. Three trees at three points along a street are not a coincidence, they are the last legible trace of a garden, and if you draw a line between them you are walking somebody's approach.\n\nThe plane is the easiest of the three to spot: flaking bark in cream, olive and grey, big maple-shaped leaves, and the bristly round seed balls that hang on through the winter.\n\nPlanes are the great survivors of city building. They tolerate compacted soil, root disturbance, pollution and hard pruning better than anything else of their size, which is exactly why this one is still here and the house is not."
-   ,
-   "verified_sources": ["https://www.monumentalebomen.nl/"],
-   "access": "Free. Street tree on public ground.",
-   "transport": "About 1.5 km west of Enschede station, on the Cort van der Lindelaan.",
-   "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
-   "how_to_recognise": "Camouflage-patterned flaking bark, near the Tubantiasingel end of the street.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  }
- ]
+  "city": "Enschede",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Enschede's old trees were bought by textile money. Van Heek, Blijdenstein, Ledeboer: the families who ran the mills built estates on the edge of town, hired the best garden architects in the country and planted them, and the city later absorbed the results as public parks. One invoice survives. In 1865 D. Wattez billed H. J. van Heek for a Wellingtonia as part of the planting around 't Wageler, and the two men wrote to each other about the price. That giant sequoia is still standing in the Ledeboerpark, which is the closest thing this page has to a receipt.",
+  "meta_description": "Seven remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
+  "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and six more worth the walk.",
+  "question_answer": "The oldest tree in Enschede is the oak on 't Zeggelt, in the Lasonder-Zeggelt district, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It has a name of its own in the city, De Eik op 't Zeggelt, and it stands in public planting rather than on any estate, which is unusual here: almost every other old tree in Enschede is a survivor of a nineteenth century textile family's grounds. The register gives it a coordinate to six decimal places, which is the sort of precision that means somebody stood at the trunk with a receiver rather than pointing at an address.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for these trees, which is why they are all flagged. The giant sequoia in the Ledeboerpark is the exception worth naming: the register cites a document in the archive of the Twente textile families recording correspondence in 1866 between H. J. van Heek and the garden architect D. Wattez about the price of a Wellingtonia, on an invoice for planting around 't Wageler in 1865. That is a documented purchase rather than an estimate, and it is why this page can be more confident about that tree than about any other on it. Where a pin is marked approximate we know the grounds and not the trunk.",
+  "hero_tree_id": "ens_001",
+  "oldest_tree_id": "ens_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Enschede?",
+      "a": "De Eik op 't Zeggelt, in the Lasonder-Zeggelt district, banded 1750 to 1800 by the national register."
+    },
+    {
+      "q": "Is there really an invoice for one of these trees?",
+      "a": "The register cites one. A document in the archive of the Twente textile families records that in 1866 H. J. van Heek and the garden architect D. Wattez corresponded about the price of a Wellingtonia on an invoice for planting around 't Wageler in 1865. Wellingtonia is the old trade name for the giant sequoia, and one from that period still stands in the Ledeboerpark, which grew out of that estate."
+    },
+    {
+      "q": "Can you get onto Landgoed Het Bouwhuis?",
+      "a": "Yes. The register records the grounds as open to the public and notes that a good many striking trees stand there. Het Bouwhuis and the neighbouring Het Amelink appear in writing as early as 1536, when Jan van Borne, steward of the chapter of St Peter in Utrecht, reported on both farms in the hamlet of Lonneker."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "All seven. The Ledeboerpark, the Blijdensteinpark and Het Bouwhuis are open, and the oak, the plane and the Wageler beech stand on public ground."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ens_001",
+      "name": "The Wellingtonia of the Ledeboerpark",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 155 to 165 years, and the register cites an 1865 invoice for a Wellingtonia planted here",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Ledeboerpark, Hengelosestraat",
+        "latitude": 52.23463,
+        "longitude": 6.8692,
+        "neighbourhood": "Ledeboerpark"
+      },
+      "story": "Somebody wrote down what this tree cost.\n\nThe register cites a document in the archive of the Twente textile families: in 1866 the mill owner H. J. van Heek and the garden architect D. Wattez corresponded about the price of a Wellingtonia, itemised on an invoice for the planting around 't Wageler in 1865. Wellingtonia was the trade name the British gave the giant sequoia after the Duke of Wellington, and in the 1860s it was the most fashionable and most expensive thing you could put in a garden in Europe. The species had only been introduced to Britain in 1853. Buying one was a way of saying what you were worth.\n\nThe park is what became of that estate. Wattez laid it out in the second half of the nineteenth century, the city absorbed it, and the Ledeboerpark on the Hengelosestraat is now open to anyone.\n\nSo you can go and stand under an object of Victorian conspicuous consumption that has quietly outlived the mills, the family's fortune and the argument about the price.\n\nIt is unmistakable: the thick red-brown trunk with soft fibrous bark, and a straight conical top.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://archieftwentsetextielfamilies.nl"
+      ],
+      "access": "Free. Open public park.",
+      "transport": "About 2 km northwest of Enschede station, on the Hengelosestraat.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The single huge conifer with spongy red-brown bark and a conical crown.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ens_002",
+      "name": "De Eik op 't Zeggelt",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Lasonder-Zeggelt district, in public planting",
+        "latitude": 52.226349,
+        "longitude": 6.898275,
+        "neighbourhood": "Lasonder-Zeggelt"
+      },
+      "story": "The oldest tree in Enschede is not on anybody's estate. It stands in ordinary public planting in a residential district and it has a name anyway, which is usually a sign that people have been walking past it long enough to need one.\n\nThe register bands it 1750 to 1800, which makes it two to two and a half centuries and puts its first decades in a Twente of farms and hand looms, before the mills, before the railway, and long before the town around it. Enschede burned almost entirely to the ground in 1862, when a fire took the whole centre in a few hours. This oak was standing well outside it and is one of the few living things in the city that predates that day.\n\nThe register gives its position to six decimal places, which is the tell that somebody stood at the trunk with a satellite receiver rather than pointing at a street. That is unusual in this dataset and it means the pin is as good as pins get.\n\nPedunculate oak, so acorns on long stalks and leaves that sit almost directly on the twig. In October there will be a great many of them underfoot.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://nl.wikipedia.org/wiki/Het_Zeggelt"
+      ],
+      "access": "Free. Public planting in a residential district, reachable at any time.",
+      "transport": "About 1.5 km north of Enschede station, in the Lasonder-Zeggelt district.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A single very heavy old oak standing clear in the green of the district, far thicker than anything near it.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the acorns are down"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ens_003",
+      "name": "The Beech of Landgoed Wageler",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Langs de Es, Landgoed Wageler",
+        "latitude": 52.23312,
+        "longitude": 6.87143,
+        "neighbourhood": "Wageler"
+      },
+      "story": "This beech was on the estate before the estate was designed.\n\n't Wageler is the ground that Wattez planted for the Van Heeks in the 1860s and that partly became the Ledeboerpark. The register bands this tree 1830 to 1840, thirty years earlier, which means it was a mature tree of some size when the landscape architect arrived with his plans and his invoices.\n\nThat is the ordinary way a Dutch estate garden was actually made. You did not clear ground and start over. You looked at what was standing, kept whatever was good, and arranged the new planting to make the most of it, which is why the oldest tree in a nineteenth century park is so often older than the park.\n\nIt stands along the Es, the old open arable field that these Twente farms were organised around. An es is a very specific thing here: a slightly raised field built up over centuries by carting in sods and manure, so the soil under it can be a metre deeper than the heath beside it. Good ground, and part of why a beech here grew as it did.\n\nSmooth grey bark, deep shade, bare litter beneath.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. On the estate grounds, recorded as visitable in the national register.",
+      "transport": "About 2.5 km northwest of Enschede station, near the Ledeboerpark.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A heavy smooth-barked beech standing along the edge of the old open field.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the whole crown goes copper"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ens_004",
+      "name": "The Giant Sequoia of Het Bouwhuis",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Landgoed Het Bouwhuis, Lonneker",
+        "latitude": 52.243,
+        "longitude": 6.91573,
+        "neighbourhood": "Lonneker"
+      },
+      "story": "The farm this tree stands on was first written down in 1536.\n\nIn that year Jan van Borne, steward of the chapter of St Peter in Utrecht, reported on two holdings in the hamlet of Lonneker: Het Bouwhuis and Het Amelink. The Amelink then belonged to the Jonker van Steinfurt, which is to say the count of Bentheim. So the ground has an unbroken paper trail running back close to five centuries, into a landscape of church chapters and minor German nobility, which is roughly four hundred years before anyone here had heard of a sequoia.\n\nThe tree is the newcomer, planted somewhere between 1900 and 1910, when a giant sequoia had gone from a spectacular novelty to the standard way of announcing that a country house had grounds.\n\nThe register notes that Het Bouwhuis is open to the public and that a good many striking trees stand there, which makes this one of the easier estates on this page to simply walk into.\n\nA hundred and twenty years is nothing for the species. In California this would be a sapling among trees three thousand years old. Here it is already the biggest thing in the field.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. The register records the grounds as open to the public.",
+      "transport": "About 5 km northeast of Enschede station, at Lonneker.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The tall conical conifer with thick spongy red-brown bark, well clear of the other trees.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ens_005",
+      "name": "The Weeping Beech by the Pond",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Landgoed Het Bouwhuis, northeast side of the pond, Lonneker",
+        "latitude": 52.24341,
+        "longitude": 6.91498,
+        "neighbourhood": "Lonneker"
+      },
+      "story": "Go inside it. That is the point of a weeping beech and almost nobody does it.\n\nThe branches of a mature one arch out and then fall straight to the ground all the way round, so what you have is a green tent perhaps fifteen metres across with a bare floor and a trunk in the middle. Children work this out immediately. Adults walk past.\n\nWeeping beech is a cultivar, not a species: a mutant form propagated by grafting, so every one is a clone of an original found in Europe in the eighteenth century. The graft union is usually visible as a swelling low on the trunk. It grows the same way a normal beech does except that it cannot hold its branches up, and left alone it will layer, meaning a branch resting on soil roots and becomes a new trunk, so an old one can slowly walk outward across a lawn.\n\nThis one stands on the northeast side of the pond at Het Bouwhuis, planted between 1900 and 1910, on ground documented since 1536.\n\nDuck under the skirt on the pond side and look back out at the water through the leaves.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. The register records the grounds as open to the public.",
+      "transport": "About 5 km northeast of Enschede station, at Lonneker.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A dome of branches falling to the grass beside the pond, hollow inside.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ens_006",
+      "name": "The Sessile Oak of the Blijdensteinpark",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 115 to 125 years, from the register's planting band of 1900 to 1910",
+      "age_min": 116,
+      "age_max": 126,
+      "location": {
+        "address": "Blijdensteinpark, east side by the filling station",
+        "latitude": 52.21593,
+        "longitude": 6.90838,
+        "neighbourhood": "Blijdensteinpark"
+      },
+      "story": "A dual carriageway runs through this park, and the tree is by a filling station. Both facts are worth stating first, because they are what this place is now.\n\nIt began as an estate. In 1855 H. G. Blijdenstein and his wife Ebeling built a villa on the Helweg, the road that later became the Gronausestraat, and laid out grounds around it. Their daughter Johanna Ida Beltman-Blijdenstein was the last person to live there. The Blijdensteins were one of the Twente textile dynasties, and like the Van Heeks and the Ledeboers what they left the city was ground with trees on it.\n\nWhat happened afterwards is what happens to green space near a growing city. The Boulevard 1945 was driven straight through the park, cutting it in two, and the eastern edge now holds a petrol station.\n\nThe oak has been there since around 1900 to 1910 and has watched the arrangement change around it. It is a sessile oak, so the acorns sit tight against the twig and the leaves have a clear stalk, the reverse of the commoner pedunculate oak.\n\nGo on a Sunday, when the road is quiet.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park, open daily.",
+      "transport": "About 2 km east of Enschede station, on the Boulevard 1945.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "On the east side of the park near the filling station, with acorns sitting tight to the twig.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ens_007",
+      "name": "The Plane of 't Zwik",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Cort van der Lindelaan, near the Tubantiasingel",
+        "latitude": 52.22596,
+        "longitude": 6.87903,
+        "neighbourhood": "Cort van der Lindelaan"
+      },
+      "story": "There was a country house here called 't Zwik and there is a street pattern instead.\n\nThe city bought the place in 1917 to expand into, and built over it through the 1920s and 1930s, which was the ordinary fate of the smaller estates on the edge of a town whose population was climbing with every new mill. The house went. What survived is planting: this plane, and, sixty to a hundred metres to the west, an oak and a beech that the register also identifies as remnants of the same grounds.\n\nThat is a useful thing to know while standing here. Three trees at three points along a street are not a coincidence, they are the last legible trace of a garden, and if you draw a line between them you are walking somebody's approach.\n\nThe plane is the easiest of the three to spot: flaking bark in cream, olive and grey, big maple-shaped leaves, and the bristly round seed balls that hang on through the winter.\n\nPlanes are the great survivors of city building. They tolerate compacted soil, root disturbance, pollution and hard pruning better than anything else of their size, which is exactly why this one is still here and the house is not.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Street tree on public ground.",
+      "transport": "About 1.5 km west of Enschede station, on the Cort van der Lindelaan.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Camouflage-patterned flaking bark, near the Tubantiasingel end of the street.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
 }

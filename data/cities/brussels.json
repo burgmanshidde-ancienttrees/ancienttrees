@@ -851,7 +851,8 @@
         "label": "September and October, when the acorns drop and a good mast year buries the ground in them"
       },
       "verified_sources": [
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables"
+        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
+        "https://opendata.brussels.be/explore/dataset/bruxelles_arbres_remarquables/"
       ],
       "access": "Free, public garden, open at all hours",
       "transport": "Mont des Arts, central Brussels; short walk from Gare Centrale",
@@ -863,7 +864,7 @@
       },
       "curation_status": "flagged",
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3438) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates (which carry no address text of their own) rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     },
     {
       "id": "bru_025",
@@ -880,7 +881,8 @@
       },
       "story": "Most cities that have a Tree of Heaven at all have one nobody planted, since Ailanthus altissima spreads through cracked pavement and vacant lots so readily that it is treated as a weed across much of Europe and North America. This one is different: girthed at 321 centimetres, one of the widest trunks on this whole list, and formally inscribed on the region's legal register of remarkable trees, a species usually pulled out on sight given a rare pass because of its size and standing.\n\nIt grows near the Mont des Arts, the raised garden terrace between Brussels' upper and lower town, built over an underground car park in the 1950s on a site that has carried some form of ornamental greenery since the 1910 World's Fair. Ailanthus was imported to Europe from China in the 18th century as an ornamental curiosity and a potential silk-moth host before anyone anticipated how aggressively it would naturalise; a specimen this large and this old getting protected status rather than removed is the exception rather than the rule. It stands free, in the open, a short walk from the garden's oak and its Caucasian wingnut.",
       "verified_sources": [
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables"
+        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
+        "https://opendata.brussels.be/explore/dataset/bruxelles_arbres_remarquables/"
       ],
       "access": "Free, public area, open at all hours",
       "transport": "Mont des Arts, central Brussels; short walk from Gare Centrale",
@@ -892,7 +894,7 @@
       },
       "curation_status": "flagged",
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3440) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     },
     {
       "id": "bru_026",
@@ -918,7 +920,8 @@
         "label": "high summer, when long strings of winged fruit hang from every branch"
       },
       "verified_sources": [
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables"
+        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
+        "https://opendata.brussels.be/explore/dataset/bruxelles_arbres_remarquables/"
       ],
       "access": "Free, public area, open at all hours",
       "transport": "Mont des Arts, central Brussels; short walk from Gare Centrale",
@@ -930,7 +933,7 @@
       },
       "curation_status": "flagged",
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 7292) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     },
     {
       "id": "bru_027",

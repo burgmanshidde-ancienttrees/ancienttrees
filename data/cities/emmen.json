@@ -1,263 +1,263 @@
 {
- "city": "Emmen",
- "country": "Netherlands",
- "status": "needs_curation",
- "intro": "Two of the oaks here are growing at megalithic tombs, and one of them is growing inside one. The Hondsrug ridge that Emmen sits on carries the greatest concentration of hunebedden in the Netherlands, stone chambers built about five thousand years ago and covered with earth, and where the mounds were never ploughed out the trees came instead. Hunebed D43 is the only long grave in the country, 52 stones round a forty metre mound with two chambers in it. D42 has an enormous oak standing in the middle of the stones.",
- "meta_description": "Seven remarkable trees around Emmen: two oaks at five-thousand-year-old megalithic tombs, one growing inside the stones, and a lime from about 1790.",
- "question_meta": "Emmen's oldest tree is a lime at the Noordeind, banded 1750 to 1800 and possibly planted in 1790. Where it stands, and six more.",
- "question_answer": "The oldest tree in Emmen is a Dutch lime at the Noordeind, opposite number 9, which the national register places in a planting band of 1750 to 1800 and suggests may have gone in around 1790. The Noordeind is the oldest part of Emmen, which began as an esdorp, a village organised around a shared arable field, on the southeastern shoulder of the Hondsrug. The characteristic Drenthe farmhouses that stood along it are largely gone. A lime at the heart of an old Drenthe village is not decoration: a village lime was a meeting place, a shade tree and often the point at which local business was done, which is why so many of them outlived the buildings around them.",
- "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and is the single source throughout, so everything is flagged. Two of these trees are dated far more loosely than they look, because their interest is not their age: the oaks at the hunebedden are recent by comparison with what they stand on, which is neolithic. Nothing on this page is anywhere near as old as the stones, and the pages say so rather than borrowing the tomb's age for the tree. That is the bridge claim this site is most careful about: two true facts standing next to each other do not make a third. Access is worth reading: several of these trees stand in front gardens and parish grounds that the register records as visitable but which are not public parks, so behave accordingly, and where a pin is marked approximate we know the site and not the trunk.",
- "hero_tree_id": "emm_002",
- "oldest_tree_id": "emm_001",
- "faq": [
-  {
-   "q": "What is a hunebed?",
-   "a": "A megalithic chamber tomb, built in the Netherlands roughly five thousand years ago by the people of the Funnel Beaker culture. Huge glacial boulders were arranged into a chamber and covered with an earth mound. Most of the surviving ones are in Drenthe, along the Hondsrug ridge that Emmen sits on."
-  },
-  {
-   "q": "There is really an oak growing inside a tomb?",
-   "a": "At hunebed D42 on the Schietbaanweg, yes. The register describes an enormous oak standing in the middle of the hunebed, which it calls a striking sight, and it dates the tree to between 1880 and 1890. D42 is one of the larger hunebedden in Drenthe and one of the less visited."
-  },
-  {
-   "q": "What is special about hunebed D43?",
-   "a": "It is a langgraf, a long grave, and the only one in the Netherlands. Inside a nearly complete restored ring of 52 stones lie two burial chambers, set into a covering mound forty metres long."
-  },
-  {
-   "q": "Are they free to visit?",
-   "a": "The hunebedden and the Noordeind lime are open ground. The Rensenpark is a public park in the centre of Emmen. The trees at the Bonifatius parish centre in Nieuw-Schoonebeek and the two in village front gardens are recorded as visitable, but they are not parks; look from where you are welcome to stand."
-  }
- ],
- "trees": [
-  {
-   "id": "emm_001",
-   "name": "The Lime of the Noordeind",
-   "species": "Common Lime (Tilia x europaea)",
-   "age_estimate": "roughly 225 to 275 years, and the register suggests a planting around 1790",
-   "age_min": 226,
-   "age_max": 276,
-   "location": {
-    "address": "Noordeind, opposite number 9",
-    "latitude": 52.7911,
-    "longitude": 6.89081,
-    "neighbourhood": "Noordeind"
-   },
-   "story": "The oldest part of Emmen is a street, and this is the tree on it.\n\nEmmen began as an esdorp on the southeastern shoulder of the Hondsrug, the long sand ridge that runs across Drenthe. An esdorp is a village organised around a shared arable field, the es, built up over centuries with sods and manure until the soil was deep enough to farm on ground that was otherwise heath. The Noordeind was where it started, lined with the characteristic Drenthe farmhouses, most of which have gone.\n\nThe lime stayed, planted, the register suggests, around 1790.\n\nA village lime in this part of the country was never ornamental. It was the meeting point: shade in summer, a place to stand and settle things, sometimes the spot where local justice was spoken, and always the thing you gave directions by. That is why so many of them are older than the houses. Nobody removes the tree everyone arranges to meet at.\n\nGo in July, when it flowers. Lime blossom on a still evening is heavy and sweet and carries the length of a village street, and it is one of the few sensory experiences here that has not changed since 1790.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Stands on the public street opposite number 9.",
-   "transport": "About 1.5 km north of Emmen centre, on the Noordeind.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A very heavy old lime standing alone on the street, opposite number 9.",
-   "best_time": {
-    "months": [
-     7
-    ],
-    "kind": "flowers",
-    "label": "July, when the blossom carries down the whole street"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "emm_002",
-   "name": "The Oak in Hunebed D42",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
-   "age_min": 136,
-   "age_max": 146,
-   "location": {
-    "address": "Hunebed D42, Schietbaanweg",
-    "latitude": 52.79588,
-    "longitude": 6.87049,
-    "neighbourhood": "Emmerdennen"
-   },
-   "story": "The oak is standing in the middle of the tomb.\n\nHunebed D42 is one of the larger megalithic chambers in Drenthe and one of the less visited, which is part of why this happened. Five thousand years ago people here dragged glacial boulders into a chamber and covered it with earth. Somewhere around 1880 an acorn got into the middle of it and nobody took the seedling out.\n\nThe register describes the result plainly: an enormous oak in the middle of the hunebed, which it calls a striking sight, and says the whole picture makes it worth a visit. That is unusually enthusiastic for an official survey and it is right.\n\nWhat you get is two kinds of permanence in one frame. The stones have been there since before writing, before the wheel reached this part of Europe, before bronze. The oak has been there for a century and a half and is, in tree terms, not old. Standing between them rearranges your sense of both.\n\nAn oak's roots in a chamber tomb are not neutral, and that tension is part of what you are looking at.\n\nIt is off the Schietbaanweg, northwest of Emmen.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Open ground at the hunebed, reachable at any time.",
-   "transport": "About 3 km northwest of Emmen centre, off the Schietbaanweg.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The single large oak growing up out of the middle of the megalithic chamber. There is nothing else like it.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when acorns collect between the stones"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "emm_003",
-   "name": "The Oak at the Long Grave",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "Beside hunebed D43, Emmeres and Odoornerstraat",
-    "latitude": 52.79315,
-    "longitude": 6.88703,
-    "neighbourhood": "Emmerhout"
-   },
-   "story": "There is only one long grave in the Netherlands and this oak is standing next to it.\n\nHunebed D43 is a langgraf: instead of a single chamber under a round mound, it has a covering mound forty metres long with two separate burial chambers set into it, the whole thing ringed by a kerb of stones. Fifty two of them survive, and the ring has been restored so that it reads almost completely. Nothing else of this form exists in the country.\n\nThe oak went in some four and a half thousand years later, between 1860 and 1870.\n\nWhat makes this pair better than the tomb alone is scale. A forty metre mound is hard to see as a shape; from a distance it is a rise in the ground. A big oak beside it gives you something to measure against, and the length of the thing suddenly registers.\n\nOaks and burial sites go together across northern Europe, and not by chance: burial mounds were left unploughed for centuries, so they became the one place in a farmed landscape where a tree could reach two hundred years.\n\nWalk the full length of the kerb. It takes longer than you expect.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Open ground at the hunebed, reachable at any time.",
-   "transport": "About 2 km northeast of Emmen centre, along the Odoornerstraat.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The large oak standing alongside the ring of 52 kerb stones.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "emm_004",
-   "name": "The Tiger Oak of the Rensenpark",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
-   "age_min": 206,
-   "age_max": 216,
-   "location": {
-    "address": "Rensenpark, Hoofdstraat 18",
-    "latitude": 52.78655,
-    "longitude": 6.89685,
-    "neighbourhood": "Centrum"
-   },
-   "story": "The register calls this one the tijgereik, the tiger oak, which is a nickname earned by geography rather than by anything about the tree.\n\nThe Rensenpark is a park in the middle of Emmen and it is built on the site of the old Dierenpark Emmen, the zoo that stood here for most of the twentieth century before moving to a new site. The animals are gone and the park is public, but the layout remembers them, and so does this oak, which spent decades standing beside an enclosure.\n\nIt was planted between 1810 and 1820, so it is a good deal older than the zoo and predates the town centre growing out to reach it.\n\nA two hundred year old oak in a former zoo is a peculiar object to stand in front of. The ground around it was, within living memory, a place people came to look at animals from other continents, and now it is grass. The tree is the only exhibit still in position.\n\nAcorns on long stalks, leaves seated almost directly on the twig. In October there will be a great many of them, and no tigers.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Free. Public park in the centre of Emmen.",
-   "transport": "In the centre of Emmen, on the Hoofdstraat.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A heavy old oak in the park on the site of the former zoo, thicker than anything planted since.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "fruit",
-    "label": "October, when the acorns come down"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "emm_005",
-   "name": "The Copper Beech of Nieuw-Schoonebeek",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
-   "age_min": 226,
-   "age_max": 276,
-   "location": {
-    "address": "Behind the parish centre, Europaweg 141 to 143, Nieuw-Schoonebeek",
-    "latitude": 52.64675,
-    "longitude": 6.98756,
-    "neighbourhood": "Nieuw-Schoonebeek"
-   },
-   "story": "The church is gone and only the tower is left. The presbytery has been rebuilt out of recognition. The park is still there, and so is this beech.\n\nA fine park was laid out at the old presbytery of the Catholic church of St Bonifatius in Nieuw-Schoonebeek at the beginning of the twentieth century. The beech, banded 1750 to 1800, is far older than that and was standing long before anyone laid out anything, which is the same pattern as almost every other church tree in this country: the ground was already planted and the institution arrived to join it.\n\nIf the band is right, this is as old as the lime at the Noordeind and one of the oldest trees in the municipality.\n\nA copper beech at two and a half centuries in a Drenthe village is also slightly improbable. The purple form was a scarce nursery product in the eighteenth century, largely confined to estates and botanic collections, so somebody with money and connections put it here.\n\nOctober, when it burns through to copper against a medieval tower stump.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Grounds of the parish centre, recorded as visitable in the national register. Not a public park, so look from where you are welcome to stand.",
-   "transport": "About 20 km south of Emmen, at Nieuw-Schoonebeek on the Europaweg.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "The large purple-leaved beech in the small park behind the parish centre.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the purple turns copper"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "emm_006",
-   "name": "The Plane of the Bonifatius Park",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
-   "age_min": 156,
-   "age_max": 166,
-   "location": {
-    "address": "In the small park at the parish centre, Europaweg 141 to 143, Nieuw-Schoonebeek",
-    "latitude": 52.64657,
-    "longitude": 6.9879,
-    "neighbourhood": "Nieuw-Schoonebeek"
-   },
-   "story": "A London plane in a Drenthe village is a stranger, and that is the interesting part.\n\nThe species is the definitive city tree of northern Europe, planted by the hundred thousand along boulevards from London to Vienna because it survives paving, pollution, root damage and hard pruning better than anything of its size. What it is not is a village tree. Out here, in a small park behind a parish centre on the German border, there is nothing for it to tolerate.\n\nSo it has simply grown, in good soil, unpruned, with room. That produces a shape most people never see on a plane: broad rather than columnar, low branching, and far wider than a street specimen of the same age.\n\nIt is banded 1860 to 1870, and it stands with the copper beech in the park laid out at the old presbytery, of whose church only the tower survives.\n\nThe bark is the giveaway from any distance, flaking away in irregular plates to leave a mottle of cream, olive and grey. On an unpolluted country tree the pale patches stay paler, so it is a brighter thing here than in any city.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Grounds of the parish centre, recorded as visitable in the national register. Not a public park.",
-   "transport": "About 20 km south of Emmen, at Nieuw-Schoonebeek on the Europaweg.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "Flaking cream and olive bark, broader and lower-branched than a street plane.",
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "emm_007",
-   "name": "The Oak of Erica",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870 to 1880",
-   "age_min": 146,
-   "age_max": 156,
-   "location": {
-    "address": "Front garden, Verlengde Vaart Zuidzijde 69, Erica",
-    "latitude": 52.70971,
-    "longitude": 6.92356,
-    "neighbourhood": "Erica"
-   },
-   "story": "This village was made by digging peat, and the oak is about as old as the village.\n\nErica began around 1863 as a buckwheat colony on the higher sandy ground, the kind of marginal settlement people started where nothing better was available. It became a proper peat colony when the Hoogeveense Vaart, the canal, was completed in the same period, and the centre of the place shifted to sit on the water. The address of this tree still says it: Verlengde Vaart Zuidzijde, the south side of the extended canal.\n\nPeat colonies were built to strip the ground. Men cut the bog, dried it, and sent it out by barge, and when the peat was gone what was left was thin sand and a grid of canals. Almost nothing planted in that first generation survived, because there was no reason to keep it.\n\nThis oak was planted between 1870 and 1880 in a front garden, which is exactly why it did. A tree in somebody's own garden had a defender.\n\nIt is a private front garden on a canal bank. Look from the road.",
-   "verified_sources": [
-    "https://www.monumentalebomen.nl/"
-   ],
-   "access": "Stands in a front garden on the canal side, recorded as visitable in the national register. Look from the public road.",
-   "transport": "About 10 km southwest of Emmen, at Erica on the Verlengde Vaart Zuidzijde.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "how_to_recognise": "A large oak in a front garden on the south bank of the canal, at number 69.",
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  }
- ]
+  "city": "Emmen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Two of the oaks here are growing at megalithic tombs, and one of them is growing inside one. The Hondsrug ridge that Emmen sits on carries the greatest concentration of hunebedden in the Netherlands, stone chambers built about five thousand years ago and covered with earth, and where the mounds were never ploughed out the trees came instead. Hunebed D43 is the only long grave in the country, 52 stones round a forty metre mound with two chambers in it. D42 has an enormous oak standing in the middle of the stones.",
+  "meta_description": "Seven remarkable trees around Emmen: two oaks at five-thousand-year-old megalithic tombs, one growing inside the stones, and a lime from about 1790.",
+  "question_meta": "Emmen's oldest tree is a lime at the Noordeind, banded 1750 to 1800 and possibly planted in 1790. Where it stands, and six more.",
+  "question_answer": "The oldest tree in Emmen is a Dutch lime at the Noordeind, opposite number 9, which the national register places in a planting band of 1750 to 1800 and suggests may have gone in around 1790. The Noordeind is the oldest part of Emmen, which began as an esdorp, a village organised around a shared arable field, on the southeastern shoulder of the Hondsrug. The characteristic Drenthe farmhouses that stood along it are largely gone. A lime at the heart of an old Drenthe village is not decoration: a village lime was a meeting place, a shade tree and often the point at which local business was done, which is why so many of them outlived the buildings around them.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and is the single source throughout, so everything is flagged. Two of these trees are dated far more loosely than they look, because their interest is not their age: the oaks at the hunebedden are recent by comparison with what they stand on, which is neolithic. Nothing on this page is anywhere near as old as the stones, and the pages say so rather than borrowing the tomb's age for the tree. That is the bridge claim this site is most careful about: two true facts standing next to each other do not make a third. Access is worth reading: several of these trees stand in front gardens and parish grounds that the register records as visitable but which are not public parks, so behave accordingly, and where a pin is marked approximate we know the site and not the trunk.",
+  "hero_tree_id": "emm_002",
+  "oldest_tree_id": "emm_001",
+  "faq": [
+    {
+      "q": "What is a hunebed?",
+      "a": "A megalithic chamber tomb, built in the Netherlands roughly five thousand years ago by the people of the Funnel Beaker culture. Huge glacial boulders were arranged into a chamber and covered with an earth mound. Most of the surviving ones are in Drenthe, along the Hondsrug ridge that Emmen sits on."
+    },
+    {
+      "q": "There is really an oak growing inside a tomb?",
+      "a": "At hunebed D42 on the Schietbaanweg, yes. The register describes an enormous oak standing in the middle of the hunebed, which it calls a striking sight, and it dates the tree to between 1880 and 1890. D42 is one of the larger hunebedden in Drenthe and one of the less visited."
+    },
+    {
+      "q": "What is special about hunebed D43?",
+      "a": "It is a langgraf, a long grave, and the only one in the Netherlands. Inside a nearly complete restored ring of 52 stones lie two burial chambers, set into a covering mound forty metres long."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "The hunebedden and the Noordeind lime are open ground. The Rensenpark is a public park in the centre of Emmen. The trees at the Bonifatius parish centre in Nieuw-Schoonebeek and the two in village front gardens are recorded as visitable, but they are not parks; look from where you are welcome to stand."
+    }
+  ],
+  "trees": [
+    {
+      "id": "emm_001",
+      "name": "The Lime of the Noordeind",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 225 to 275 years, and the register suggests a planting around 1790",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Noordeind, opposite number 9",
+        "latitude": 52.7911,
+        "longitude": 6.89081,
+        "neighbourhood": "Noordeind"
+      },
+      "story": "The oldest part of Emmen is a street, and this is the tree on it.\n\nEmmen began as an esdorp on the southeastern shoulder of the Hondsrug, the long sand ridge that runs across Drenthe. An esdorp is a village organised around a shared arable field, the es, built up over centuries with sods and manure until the soil was deep enough to farm on ground that was otherwise heath. The Noordeind was where it started, lined with the characteristic Drenthe farmhouses, most of which have gone.\n\nThe lime stayed, planted, the register suggests, around 1790.\n\nA village lime in this part of the country was never ornamental. It was the meeting point: shade in summer, a place to stand and settle things, sometimes the spot where local justice was spoken, and always the thing you gave directions by. That is why so many of them are older than the houses. Nobody removes the tree everyone arranges to meet at.\n\nGo in July, when it flowers. Lime blossom on a still evening is heavy and sweet and carries the length of a village street, and it is one of the few sensory experiences here that has not changed since 1790.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Stands on the public street opposite number 9.",
+      "transport": "About 1.5 km north of Emmen centre, on the Noordeind.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A very heavy old lime standing alone on the street, opposite number 9.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the blossom carries down the whole street"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "emm_002",
+      "name": "The Oak in Hunebed D42",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Hunebed D42, Schietbaanweg",
+        "latitude": 52.79588,
+        "longitude": 6.87049,
+        "neighbourhood": "Emmerdennen"
+      },
+      "story": "The oak is standing in the middle of the tomb.\n\nHunebed D42 is one of the larger megalithic chambers in Drenthe and one of the less visited, which is part of why this happened. Five thousand years ago people here dragged glacial boulders into a chamber and covered it with earth. Somewhere around 1880 an acorn got into the middle of it and nobody took the seedling out.\n\nThe register describes the result plainly: an enormous oak in the middle of the hunebed, which it calls a striking sight, and says the whole picture makes it worth a visit. That is unusually enthusiastic for an official survey and it is right.\n\nWhat you get is two kinds of permanence in one frame. The stones have been there since before writing, before the wheel reached this part of Europe, before bronze. The oak has been there for a century and a half and is, in tree terms, not old. Standing between them rearranges your sense of both.\n\nAn oak's roots in a chamber tomb are not neutral, and that tension is part of what you are looking at.\n\nIt is off the Schietbaanweg, northwest of Emmen.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Open ground at the hunebed, reachable at any time.",
+      "transport": "About 3 km northwest of Emmen centre, off the Schietbaanweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The single large oak growing up out of the middle of the megalithic chamber. There is nothing else like it.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when acorns collect between the stones"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "emm_003",
+      "name": "The Oak at the Long Grave",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Beside hunebed D43, Emmeres and Odoornerstraat",
+        "latitude": 52.79315,
+        "longitude": 6.88703,
+        "neighbourhood": "Emmerhout"
+      },
+      "story": "There is only one long grave in the Netherlands and this oak is standing next to it.\n\nHunebed D43 is a langgraf: instead of a single chamber under a round mound, it has a covering mound forty metres long with two separate burial chambers set into it, the whole thing ringed by a kerb of stones. Fifty two of them survive, and the ring has been restored so that it reads almost completely. Nothing else of this form exists in the country.\n\nThe oak went in some four and a half thousand years later, between 1860 and 1870.\n\nWhat makes this pair better than the tomb alone is scale. A forty metre mound is hard to see as a shape; from a distance it is a rise in the ground. A big oak beside it gives you something to measure against, and the length of the thing suddenly registers.\n\nOaks and burial sites go together across northern Europe, and not by chance: burial mounds were left unploughed for centuries, so they became the one place in a farmed landscape where a tree could reach two hundred years.\n\nWalk the full length of the kerb. It takes longer than you expect.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Open ground at the hunebed, reachable at any time.",
+      "transport": "About 2 km northeast of Emmen centre, along the Odoornerstraat.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large oak standing alongside the ring of 52 kerb stones.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "emm_004",
+      "name": "The Tiger Oak of the Rensenpark",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
+      "age_min": 206,
+      "age_max": 216,
+      "location": {
+        "address": "Rensenpark, Hoofdstraat 18",
+        "latitude": 52.78655,
+        "longitude": 6.89685,
+        "neighbourhood": "Centrum"
+      },
+      "story": "The register calls this one the tijgereik, the tiger oak, which is a nickname earned by geography rather than by anything about the tree.\n\nThe Rensenpark is a park in the middle of Emmen and it is built on the site of the old Dierenpark Emmen, the zoo that stood here for most of the twentieth century before moving to a new site. The animals are gone and the park is public, but the layout remembers them, and so does this oak, which spent decades standing beside an enclosure.\n\nIt was planted between 1810 and 1820, so it is a good deal older than the zoo and predates the town centre growing out to reach it.\n\nA two hundred year old oak in a former zoo is a peculiar object to stand in front of. The ground around it was, within living memory, a place people came to look at animals from other continents, and now it is grass. The tree is the only exhibit still in position.\n\nAcorns on long stalks, leaves seated almost directly on the twig. In October there will be a great many of them, and no tigers.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free. Public park in the centre of Emmen.",
+      "transport": "In the centre of Emmen, on the Hoofdstraat.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A heavy old oak in the park on the site of the former zoo, thicker than anything planted since.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the acorns come down"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "emm_005",
+      "name": "The Copper Beech of Nieuw-Schoonebeek",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 225 to 275 years, from the register's planting band of 1750 to 1800",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Behind the parish centre, Europaweg 141 to 143, Nieuw-Schoonebeek",
+        "latitude": 52.64675,
+        "longitude": 6.98756,
+        "neighbourhood": "Nieuw-Schoonebeek"
+      },
+      "story": "The church is gone and only the tower is left. The presbytery has been rebuilt out of recognition. The park is still there, and so is this beech.\n\nA fine park was laid out at the old presbytery of the Catholic church of St Bonifatius in Nieuw-Schoonebeek at the beginning of the twentieth century. The beech, banded 1750 to 1800, is far older than that and was standing long before anyone laid out anything, which is the same pattern as almost every other church tree in this country: the ground was already planted and the institution arrived to join it.\n\nIf the band is right, this is as old as the lime at the Noordeind and one of the oldest trees in the municipality.\n\nA copper beech at two and a half centuries in a Drenthe village is also slightly improbable. The purple form was a scarce nursery product in the eighteenth century, largely confined to estates and botanic collections, so somebody with money and connections put it here.\n\nOctober, when it burns through to copper against a medieval tower stump.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Grounds of the parish centre, recorded as visitable in the national register. Not a public park, so look from where you are welcome to stand.",
+      "transport": "About 20 km south of Emmen, at Nieuw-Schoonebeek on the Europaweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The large purple-leaved beech in the small park behind the parish centre.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the purple turns copper"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "emm_006",
+      "name": "The Plane of the Bonifatius Park",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "In the small park at the parish centre, Europaweg 141 to 143, Nieuw-Schoonebeek",
+        "latitude": 52.64657,
+        "longitude": 6.9879,
+        "neighbourhood": "Nieuw-Schoonebeek"
+      },
+      "story": "A London plane in a Drenthe village is a stranger, and that is the interesting part.\n\nThe species is the definitive city tree of northern Europe, planted by the hundred thousand along boulevards from London to Vienna because it survives paving, pollution, root damage and hard pruning better than anything of its size. What it is not is a village tree. Out here, in a small park behind a parish centre on the German border, there is nothing for it to tolerate.\n\nSo it has simply grown, in good soil, unpruned, with room. That produces a shape most people never see on a plane: broad rather than columnar, low branching, and far wider than a street specimen of the same age.\n\nIt is banded 1860 to 1870, and it stands with the copper beech in the park laid out at the old presbytery, of whose church only the tower survives.\n\nThe bark is the giveaway from any distance, flaking away in irregular plates to leave a mottle of cream, olive and grey. On an unpolluted country tree the pale patches stay paler, so it is a brighter thing here than in any city.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Grounds of the parish centre, recorded as visitable in the national register. Not a public park.",
+      "transport": "About 20 km south of Emmen, at Nieuw-Schoonebeek on the Europaweg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Flaking cream and olive bark, broader and lower-branched than a street plane.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "emm_007",
+      "name": "The Oak of Erica",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870 to 1880",
+      "age_min": 146,
+      "age_max": 156,
+      "location": {
+        "address": "Front garden, Verlengde Vaart Zuidzijde 69, Erica",
+        "latitude": 52.70971,
+        "longitude": 6.92356,
+        "neighbourhood": "Erica"
+      },
+      "story": "This village was made by digging peat, and the oak is about as old as the village.\n\nErica began around 1863 as a buckwheat colony on the higher sandy ground, the kind of marginal settlement people started where nothing better was available. It became a proper peat colony when the Hoogeveense Vaart, the canal, was completed in the same period, and the centre of the place shifted to sit on the water. The address of this tree still says it: Verlengde Vaart Zuidzijde, the south side of the extended canal.\n\nPeat colonies were built to strip the ground. Men cut the bog, dried it, and sent it out by barge, and when the peat was gone what was left was thin sand and a grid of canals. Almost nothing planted in that first generation survived, because there was no reason to keep it.\n\nThis oak was planted between 1870 and 1880 in a front garden, which is exactly why it did. A tree in somebody's own garden had a defender.\n\nIt is a private front garden on a canal bank. Look from the road.",
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Stands in a front garden on the canal side, recorded as visitable in the national register. Look from the public road.",
+      "transport": "About 10 km southwest of Emmen, at Erica on the Verlengde Vaart Zuidzijde.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A large oak in a front garden on the south bank of the canal, at number 69.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
 }
