@@ -58,7 +58,7 @@ SHOTS = [
     # Amsterdam, because their trees are photographed and their pages open on
     # pictures rather than on empty cards, and the sheet at card height so two
     # trees are visible under the map instead of a list covering it.
-    ("1-map", ["-tab=0", "-sheet=card", "-at=36.5366,-6.3010"], 9),
+    ("1-map", ["-tab=0", "-sheet=card", "-at=48.1372,11.5756"], 9),
     # The Ficus of Alameda Apodaca rather than S'Ozzastru, which he also chose
     # and which is the better photograph: its page carries a ticket notice, and
     # "you need a ticket" is the wrong promise on the second panel of a store
@@ -115,7 +115,13 @@ def main():
     bad = []
     for name, extra, wait in SHOTS:
         sh("xcrun", "simctl", "terminate", udid, BUNDLE, check=False)
-        sh("xcrun", "simctl", "launch", udid, BUNDLE, ORIGIN, "-reset-blocks", *extra)
+        # THE FIRST -at WINS, not the last, which cost a whole set of
+        # screenshots on 2026-08-29: the map panel was supposed to open on
+        # Cadiz and opened on Amsterdam, because the shot's own origin was
+        # appended after the default and never read. A shot that names a place
+        # gets that place and no default at all.
+        origin = [] if any(a.startswith("-at=") for a in extra) else [ORIGIN]
+        sh("xcrun", "simctl", "launch", udid, BUNDLE, *origin, "-reset-blocks", *extra)
         time.sleep(wait)
         f = out / f"{name}.png"
         sh("xcrun", "simctl", "io", udid, "screenshot", str(f))
