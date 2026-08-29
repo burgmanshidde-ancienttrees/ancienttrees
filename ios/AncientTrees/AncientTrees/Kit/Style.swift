@@ -81,7 +81,16 @@ public enum BrandFont {
     /// Registered at launch rather than declared in Info.plist, because the
     /// project generates its plist from build settings and UIAppFonts has no
     /// build setting. Registering from the bundle is the ordinary way out.
+    private static var registered = false
+
+    /// Idempotent, because this is now called from two places: the app's init,
+    /// which is where it has to happen for the FIRST frame to be set in the
+    /// brand face, and configureAppearance, which is where it used to live
+    /// alone. Registering the same file twice logs an error and does nothing
+    /// useful, so it is asked once.
     public static func register() {
+        guard !registered else { return }
+        registered = true
         for name in ["Gabarito-Regular", "Gabarito-Medium", "Gabarito-Bold",
                      "Gabarito-ExtraBold", "Gabarito-Black"] {
             guard let url = Bundle.main.url(forResource: name, withExtension: "ttf") else { continue }

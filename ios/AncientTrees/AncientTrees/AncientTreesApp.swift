@@ -17,7 +17,25 @@ struct AncientTreesApp: App {
     /// iOS gives a process 512 KB of image cache by default and this app draws
     /// shelves of photographs, so without this every scroll back down a page
     /// re-downloads what it drew a second ago. See Kit/TreePhoto.swift.
-    init() { ImageStore.prepareCache() }
+    /// THE FONT IS REGISTERED HERE, before any view exists, and the appearance
+    /// work stays where it was moved to.
+    ///
+    /// Those two used to travel together and the reason they were moved out of
+    /// init was sound: anything that hangs before a view exists gives a white
+    /// screen with nothing to read. But that risk belongs to the UIKit
+    /// appearance proxies, not to this: registering five files that ship inside
+    /// the bundle touches no network and no disk we do not control.
+    ///
+    /// Leaving it out cost the opening cover its typeface (Hidde, 2026-08-29:
+    /// "waarom is het lettertype opeens lelijk"). The cover IS the first frame,
+    /// so it asked for Gabarito before Gabarito existed, and SwiftUI's
+    /// Font.custom falls back to the system face without a word. Every screen
+    /// after it looked right, which is why it read as a mystery rather than a
+    /// missing font.
+    init() {
+        ImageStore.prepareCache()
+        BrandFont.register()
+    }
 
     /// Registering the brand font and styling the navigation bar used to happen
     /// in init(), which runs before any view exists. Anything that hangs there
