@@ -69,7 +69,6 @@ final class SweepFrames: XCTestCase {
         ("primer",       ["-tab=0", "-primer"], "primer"),
         ("contribute",   ["-tab=2", "-settings", "-contribute"], "contribute-sheet"),
         ("feedback",     ["-tab=2", "-settings", "-feedback"], "contribute-sheet"),
-        ("sponsor",      ["-tab=2", "-settings", "-sponsor"], "sponsor-sheet"),
         ("profile-edit", ["-tab=2", "-profile-edit"], nil),
         ("people",       ["-tab=2", "-signed-in", "-people", "-people-demo"], "people-sheet"),
     ]

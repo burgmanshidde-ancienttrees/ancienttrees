@@ -387,10 +387,6 @@ struct ProfileView: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("profile-feedback")
-                // BEHIND THE LAUNCH FLAG, like Plus and the walks
-                // (Kit/Launch.swift). 1.0 asks for no money anywhere.
-                if Launch.sponsor {
-                }
             }
             .brandCard()
         }
