@@ -7,7 +7,7 @@ import Base from "../layouts/Base.astro";
 import TreeCard from "../components/TreeCard.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
-import { COUNTRY_MIN_CITIES, GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific } from "../lib/species";
+import { COUNTRY_MIN_CITIES, GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific, speciesPageSlugs } from "../lib/species";
 import { usablePhoto, imgSrcset, cityFace, NO_PHOTO_SVG } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
@@ -124,7 +124,11 @@ const rows = ranked.map((c, i) => {
 // where one exists (Contract F needs a written intro), which is also where the
 // internal links this page owes actually come from.
 const speciesIntros = await getCollection("species");
-const speciesPageBy = new Map(speciesIntros.map((i) => [i.data.common_name, i.data.slug]));
+// Every renderable city, not just this country's: a species page exists on
+// the site-wide tree count, so asking the question with a country-sized
+// sample would link to pages that are not built and refuse ones that are.
+const speciesPageBy = speciesPageSlugs(
+  (await getCollection("cities")).filter(cityIsRenderable), speciesIntros);
 const speciesCount = new Map<string, { count: number; sci: string }>();
 for (const stat of cityStats) {
   for (const t of renderableTrees(stat.city)) {

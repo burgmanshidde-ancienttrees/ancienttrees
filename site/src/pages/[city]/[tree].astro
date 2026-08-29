@@ -20,7 +20,7 @@ import { haversineKm } from "../../lib/walks";
 // the walks page itself uses, so the two cannot disagree, and it says nothing
 // when a city has no walk.
 import { pageWalksFor, hasWalksPage } from "../../lib/city-walks";
-import { speciesCommon } from "../../lib/species";
+import { speciesCommon, speciesPageSlugs } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
 import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditName, metaImageUrls, ogImageUrl } from "../../lib/images";
 import { speciesIcon } from "../../lib/species-icons";
@@ -54,7 +54,7 @@ export async function getStaticPaths() {
   for (const intro of intros) {
     if ((byCountryCount.get(intro.data.country) ?? 0) >= 3) countryPages.set(intro.data.country, intro.data.slug);
   }
-  const speciesPages = new Map(speciesIntros.map((i) => [i.data.common_name, i.data.slug]));
+  const speciesPages = speciesPageSlugs(allCities, speciesIntros);
   // Park pages existed for 20 parks and no tree page linked to one, so a
   // visitor standing on a tree in the Hortus could not reach the page about
   // the Hortus (Hidde, 2026-08-18: "dat je ook makkelijk kan doorklikken naar
