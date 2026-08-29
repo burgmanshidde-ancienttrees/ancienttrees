@@ -2,19 +2,19 @@
   "city": "Gdansk",
   "country": "Poland",
   "status": "needs_curation",
-  "intro": "Gdansk protects 157 individual trees by official designation, more than almost any city this project has covered, and its oldest survivors turn up in unlikely company: a willow that survived an arson attack seven months ago, an ash older than the royal rifle factory built around it, an oak that predates the battle its own hill is named for, and a beech that has outlasted six changes of ownership on the same patch of ground. All are free to visit, scattered across ordinary neighbourhoods rather than concentrated in one grand park.",
-  "meta_description": "Gdansk's oldest tree is a ~280-year-old ash inside a former royal rifle factory. Four verified trees, real stories, how to reach each one.",
-  "question_answer": "Gdansk's oldest tree is very likely the Ash of the Royal Rifle Factory, growing in a courtyard on Lakowa street, estimated at around 280 years old, decades older than the 19th-century weapons factory built up around it. It stands 26 metres tall with a trunk 523 centimetres around.",
+  "intro": "Gdansk protects 157 individual trees by official designation, more than almost any city this project has covered, and its oldest survivors turn up in unlikely company: a willow that survived an arson attack, an ash older than the royal rifle factory built around it, an oak that predates the battle its own hill is named for, and a beech that has outlasted six owners on the same ground. Two more are half an hour up the coast in Gdynia, in the manor park that belonged to Jan III Sobieski, and both are older than anything in the city. All free.",
+  "meta_description": "Gdansk's oldest tree is a ~280-year-old ash in a former royal rifle factory, and two older ones stand in Sobieski's park up the coast. Six trees.",
+  "question_answer": "Gdansk's oldest tree is very likely the Ash of the Royal Rifle Factory, growing in a courtyard on Lakowa street, estimated at around 280 years old, decades older than the 19th-century weapons factory built up around it. It stands 26 metres tall with a trunk 523 centimetres around. Two older trees appear on this page and neither is in Gdansk: Marysienka's Oak, put at 350 to 400 years, and the Ash of King Jan at about 320, both in the Kolibki manor park in Gdynia, half an hour up the coast by commuter train and twelve minutes from Gdansk Oliwa. They are here because they are an easy afternoon from the city, and this page says where they actually stand rather than counting them as Gdansk's. Every age on this page is an estimate: the register carries girths, not birthdays.",
   "question_meta": "A ~280-year-old ash inside a former royal rifle factory is likely Gdansk's oldest tree. Where to find it, and the city's other three.",
-  "question_context": "Gdansk maintains an unusually large official register of protected trees, 157 individual specimens as of 2026, but only a handful carry a documented age rather than a girth-based estimate. The Ash of the Royal Rifle Factory is the strongest candidate for oldest: at approximately 280 years, it predates the Konigliche Gewehr-Fabrik, the Prussian state weapons factory built on the same Lakowa street site from 1839, by more than a century, meaning the tree was already mature when the ground around it was still a sugar refinery. Its closest competitor is the pedunculate oak at the foot of Wzgorze Luizy in Lostowice, estimated at around 250 years old and protected since the late 1980s, already standing when Prussian and Napoleonic forces clashed on the hill above it in 1813. The gap between the two, roughly thirty years, is well inside the margin of error either age estimate carries, so neither claim is treated as settled beyond reasonable doubt. Both easily outdate Gdansk's other two entries on this list, whose ages are inferred from girth rather than documented.",
+  "question_context": "Gdansk maintains an unusually large official register of protected trees, 157 individual specimens as of 2026, but only a handful carry a documented age rather than a girth-based estimate. The Ash of the Royal Rifle Factory is the strongest candidate for the city's oldest: at approximately 280 years it predates the Konigliche Gewehr-Fabrik, the Prussian state weapons factory built on the same Lakowa street site from 1839, by more than a century. Its closest competitor inside the city is the pedunculate oak at the foot of Wzgorze Luizy in Lostowice, around 250 years old. The two trees in the Kolibki park belong to Gdynia's register rather than Gdansk's, and their figures come from Poland's central register of protected forms: the oak entered on 28 June 1966 at 4.87 metres round, the ash on 5 May 2012 at 6.1 metres. Both were photographed in August 2026, which is the most recent proof of life on this page. The willow's fire damage is the opposite case, a condition that changes by the season, so it is described as it was last checked.",
   "faq": [
     {
       "q": "What is the oldest tree in Gdansk?",
-      "a": "Very likely the Ash of the Royal Rifle Factory on Lakowa street, estimated at around 280 years old, though a ~250-year-old oak at Wzgorze Luizy is a close second."
+      "a": "Very likely the Ash of the Royal Rifle Factory on Lakowa street, estimated at around 280 years old, with a ~250-year-old oak at Wzgorze Luizy a close second. Two older trees on this page, Marysienka's Oak and the Ash of King Jan, stand in Gdynia rather than in Gdansk."
     },
     {
-      "q": "Are Gdansk's ancient trees free to visit?",
-      "a": "Yes, all four stand on public streets, parks or courtyards with free access."
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all six. Four stand on public streets, parks or courtyards in Gdansk. The other two are in the Kolibki manor park in Gdynia, which is a public park, about 35 minutes from Gdansk Glowny by SKM train."
     },
     {
       "q": "What happened to the willow of Kupaly-Subislawa?",
@@ -170,6 +170,73 @@
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
       }
+    },
+    {
+      "id": "gda_005",
+      "name": "Marysienka's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 350 to 400 years; sources give both figures and neither is a ring count",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": 487,
+      "height_m": 26,
+      "location": {
+        "address": "Park Kolibki, in the wooded upper part of the manor grounds, Gdynia Orlowo",
+        "latitude": 54.4710584,
+        "longitude": 18.5575862,
+        "neighbourhood": "Kolibki, Gdynia Orlowo"
+      },
+      "story": "In 1685 the estate around this oak became the property of Jan III Sobieski, the king who had broken the Ottoman siege of Vienna two years earlier. The story attached to the tree is about his wife. Marysienka is said to have rested under it, and in the grotto a little further on, which looks out over the sea.\n\nThat is a legend and the sources say so. What is on record is drier and nearly as good: the oak went into the Gdynia register of natural monuments on 28 June 1966, one of the first entries, and it is the oldest protected tree in the city. Girth 4.87 metres, height 26.\n\nIt used to be a twin. Two trunks had fused into one and in 1988 they came apart. The broken half is still lying near the base, and the surviving trunk has been propped and reinforced ever since, which is what you see first: pale timber struts running up under the lower limbs like scaffolding somebody forgot to take down.\n\nThe estimates run from 350 to 400 years and nobody has counted the rings, so the tree either predates Sobieski's purchase or arrived shortly after it. Both would make the legend possible, which is presumably why it has lasted.",
+      "verified_sources": [
+        "https://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.2262011.7239",
+        "https://www.krajoznawcy.info.pl/gdynia-pomniki-przyrody-37422"
+      ],
+      "access": "Free. The Kolibki manor park is public, open in daylight, and the oak stands in the wooded upper part.",
+      "transport": "SKM train to Gdynia Orlowo, about 35 minutes from Gdansk Glowny and 12 from Gdansk Oliwa, then roughly ten minutes on foot to the park.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/D%C4%85b_Marysie%C5%84ki%2C_Gdyn%C4%9B_-_Or%C5%82owo%2C_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD%2C_Ka%C5%A1ubsko%2C_Polsko_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Fry72 (Karel Frydrýšek), CC BY-SA 4.0, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2448,
+        "height": 3264
+      },
+      "how_to_recognise": "Pale wooden props leaning in under the lower limbs, a heavy single trunk where two used to be fused, and the broken half of the tree still lying on the ground beside it.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gda_006",
+      "name": "The Ash of King Jan",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "about 320 years",
+      "age_min": 310,
+      "age_max": 330,
+      "girth_cm": 610,
+      "location": {
+        "address": "Park Kolibki, deeper into the park beyond the manor, Gdynia Orlowo",
+        "latitude": 54.4719494,
+        "longitude": 18.5583081,
+        "neighbourhood": "Kolibki, Gdynia Orlowo"
+      },
+      "story": "Six metres and ten centimetres round. For an ash that is close to the limit of what the species does, and it is the thickest tree in this park by a wide margin, wider than the famous oak two hundred metres downhill that everybody comes to see.\n\nAsh is not a tree people expect to find ancient. It grows fast, it dies at two hundred years in most places, and across Europe it is currently being killed in enormous numbers by a fungus that arrived from Asia. This one is about 320 years old and standing, in the park that belonged to Jan III Sobieski and that carries his name on the tree.\n\nWhat you see at the base is two trunks growing hard against each other, fused along the seam, with the bark ridged into the diamond pattern old ash makes. The register plaque is screwed to the fork. Poland entered it as a natural monument on 5 May 2012, which is late: the oak in the same park had been protected since 1966. Nobody seems to have measured this one until much later.\n\nIt stands back from the main path, in the trees, which is why it is easy to walk past.",
+      "verified_sources": [
+        "https://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.2262011.7305",
+        "https://www.krajoznawcy.info.pl/gdynia-pomniki-przyrody-37422"
+      ],
+      "access": "Free. Public park, open in daylight. The ash stands off the main path among other trees, so look for the plaque on the fork.",
+      "transport": "SKM train to Gdynia Orlowo, about 35 minutes from Gdansk Glowny and 12 from Gdansk Oliwa, then roughly twelve minutes on foot into the park.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Jesion_Kr%C3%B3la_Jana%2C_Gdynia_-_Or%C5%82owo%2C_Pomo%C5%99sk%C3%A9_vojvodstv%C3%AD%2C_Polsko_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Fry72 (Karel Frydrýšek), CC BY-SA 4.0, via Wikimedia Commons",
+        "status": "approved",
+        "width": 9000,
+        "height": 12000
+      },
+      "how_to_recognise": "Two trunks fused into one at head height, deeply ridged grey bark in a diamond net, a small metal register plaque screwed into the fork, standing back from the path in the trees.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
