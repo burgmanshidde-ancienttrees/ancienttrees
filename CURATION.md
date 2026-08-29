@@ -9,6 +9,19 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-29 - Gdansk 4 to 6: two trees in Sobieski's Kolibki park, and two verified-then-rejected
+
+- **gda_005, Marysienka's Oak** (Gdynia Orlowo, SKM to Gdynia Orlowo then ten minutes on foot; 35 minutes from Gdansk Glowny, 12 from Gdansk Oliwa). Quercus robur, CRFOP 96538, protected 28 June 1966, girth 4.87 m, height 26 m, coordinates 54.4710584/18.5575862. Two fused trunks split in 1988; the broken half lies beside the base and the survivor is propped. Sources: Poland's central register (crfop.gdos.gov.pl) and krajoznawcy.info.pl. The Sobieski and Marysienka story is written as the legend both sources call it, not as fact.
+- **gda_006, the Ash of King Jan** (same park, deeper in). Fraxinus excelsior, CRFOP 96595, protected 5 May 2012, girth 6.1 m, coordinates 54.4719494/18.5583081, about 320 years. Same two sources.
+
+**Both were photographed on 13 August 2026 by Fry72 (Karel Frydrysek), CC BY-SA 4.0**, which is a dated confirmation of life sixteen days old, better than anything else on the Gdansk page. The register data came from CRFOP by way of OpenStreetMap, which carries `ref:CRFOP`, the inscription date, girth, height and species per node; a single Overpass query over the park returned both trees plus fifteen more protected trees in Orlowo, which is a lane worth remembering for Polish cities.
+
+**They are in Gdynia, not Gdansk, and the page is explicit about it.** The day-trip rule allows them (Coole Park counts for Galway at a similar distance) and the intro, the question answer and the FAQ all name Gdynia rather than letting the count imply the city's own.
+
+**Verified and deliberately NOT shipped, with the reasons on the leads:**
+
+- **Messikommer Eiche** (Robenhausen, Seegraeben/Wetzikon). Over 500 years, girth over 6 m, protected by the Seegraeben council in 1914, named for the pile-dwelling archaeologist Jakob Messikommer in 1927, struck by lightning in 2005, and a tomography reported in the Zuercher Oberlaender on 4 August 2011 concluded it could stand for years yet with retesting every two or three years. Sources: wetzipedia.ch and zo-online.ch. Rejected for Zurich on the day-trip boundary only: roughly 50 minutes by S-Bahn plus a walk, against CLAUDE.md's roughly-30-minutes test. Species not established either. Ship it when Wetzikon gets a page.
+- **Wallace Yew** (Elderslie, Renfrewshire). Alive as of a 2021 photograph and fenced, beside the Wallace monument. Set on fire in 1978; a storm on 12 January 2005 tore away the better-growing half and split the trunk almost to the ground. Age genuinely disputed rather than merely unknown: about 300 years by expert estimate against a 700-year tradition tying it to William Wallace, with 18th-century parish records already calling it ancient. Source: scotlands-yew-trees.org. Held on whether anybody would cross town for what is left, which is a judgement rather than a rule, so it is recorded as a judgement and can be reversed by one recent photograph.
 ## 2026-08-29 - Kaditz, Bystrc and the Sint Jorisschool plane: three famous-tree leads verified and shipped, one killed
 
 Worked `famous_trees.py`'s unmapped pile rather than a register, on the grounds that its entries arrive with photographs and so close two gaps at once. Thirty of them stand within 25 km of a published city; these are the three closest that verified.
