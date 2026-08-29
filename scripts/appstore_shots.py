@@ -51,21 +51,27 @@ ORIGIN = "-at=52.3731,4.8922"
 # So every subject here is now chosen and the reason is written down, because
 # the data moves under it: a tree can lose its photograph, a city can gain one.
 SHOTS = [
-    # PEEK, not half (Hidde, 2026-08-29, on AllTrails' own panels: "de schermen
-    # zijn rustig gekozen met relatief weinig content erin"). At half the sheet
-    # covers the map with a list, so the panel that is supposed to say "the
-    # trees around you" mostly says "a list". At peek you see the map, the pins
-    # and one card, which is the same amount of content their screens carry.
-    ("1-map", ["-tab=0", "-sheet=peek"], 9),
-    # Photographed, free, and outdoors: the promise is an afternoon outside.
-    ("2-tree", ["-tab=0", "-open=tree:ams_010"], 7),
-    # A name rather than "test", and two collected trees that carry a picture.
-    ("3-my-trees", ["-tab=2", "-signed-in", "-as=Hidde",
-                    "-collected=ams_002,ams_010"], 6),
+    # HIS OWN CHOICES, 2026-08-29. He photographed the app on his real phone
+    # and sent seven frames back with "deze fotos heb ik gemaakt lijken me
+    # beter", and he was right about every one of them. What made them better
+    # was not the phone: it was the subjects. Cadiz and Lisbon instead of
+    # Amsterdam, because their trees are photographed and their pages open on
+    # pictures rather than on empty cards, and the sheet at card height so two
+    # trees are visible under the map instead of a list covering it.
+    ("1-map", ["-tab=0", "-sheet=card", "-at=36.5366,-6.3010"], 9),
+    # The Ficus of Alameda Apodaca rather than S'Ozzastru, which he also chose
+    # and which is the better photograph: its page carries a ticket notice, and
+    # "you need a ticket" is the wrong promise on the second panel of a store
+    # listing. This one is free, outdoors, and the sea is behind it.
+    ("2-tree", ["-tab=0", "-open=tree:cad_001", "-at=36.5366,-6.3010"], 7),
+    ("3-city", ["-tab=0", "-open=city:lisbon"], 8),
     ("4-discover", ["-tab=1"], 6),
-    # Munich rather than Amsterdam: 45 trees and the first four all
-    # photographed, so the page opens on trees instead of on empty cards.
-    ("5-city", ["-tab=0", "-open=city:munich"], 8),
+    ("5-my-trees", ["-tab=2", "-signed-in", "-as=Hidde",
+                    "-collected=cad_001,cad_002,cad_003",
+                    "-at=36.5366,-6.3010"], 7),
+    # The one panel that shows what a person DOES rather than what we hold, and
+    # the only one he had that I could not make: it was not in the list.
+    ("6-add", ["-tab=1", "-collect"], 6),
 ]
 
 
