@@ -177,7 +177,20 @@ struct TreePhoto<Placeholder: View>: View {
     var body: some View {
         Group {
             if let image, shown == url {
-                Image(uiImage: image).resizable().aspectRatio(contentMode: contentMode)
+                // AN EMPTY BOX WITH THE PICTURE LAID OVER IT, which is what
+                // AsyncImage did for us and a plain Image does not.
+                //
+                // A `.fill` image proposes the width its own picture wants, so
+                // a 4:3 photograph in a 375 point row measures 468 and hangs 46
+                // points off each edge. It LOOKS right, because whatever is
+                // around it clips; the layout gate reads the frame and calls it
+                // clipped, which it is. Caught by appfit on the tree page and
+                // the pin picker the first time this view was built, and it is
+                // the same fault TreeCard's own comment records.
+                Color.clear.overlay {
+                    Image(uiImage: image).resizable().aspectRatio(contentMode: contentMode)
+                }
+                .clipped()
             } else {
                 placeholder()
             }
