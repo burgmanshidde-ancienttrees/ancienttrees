@@ -63,6 +63,8 @@ struct CountryView: View {
                     ZStack(alignment: .bottomTrailing) {
                         TreeMap(trees: trees,
                                 focus: centre,
+                                // Same as the city page: a picture, not a map.
+                                showsRecentre: false,
                                 spanMeters: span,
                                 fitsTrees: true,
                                 selected: .constant(nil))
