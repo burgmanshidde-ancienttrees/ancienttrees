@@ -21,6 +21,7 @@ Three columns of work, and only one of them is mine.
 | `copycheck.py` | forbidden phrasing, forever-promises, hardcoded counts | runs |
 | `appsweep --check-lists` | a screen the layout gate cannot see | runs |
 | `appdata.py` | the bundled catalogue drifting behind the site | run before every release |
+| the recentre test | a map with no way back to your own location | added 2026-08-29 |
 
 BURIED is the new one and it is the lesson: every other rule asks a question
 about geometry, and a screen can pass all of them and still be unusable.
@@ -112,7 +113,30 @@ Each is idempotent and each is his, the same as `saves.sql` was:
 - [x] Nothing in the build that promises what it cannot do - a UI test asserts no screen in the app says "Plus", and it was proven to fail when Plus is on.
 - [x] The app icon - it carried an alpha channel, which refuses the upload outright. Flattened, and `scripts/icon_check.py` runs on every push.
 - [x] Export compliance - `ITSAppUsesNonExemptEncryption` is declared NO, so no upload asks again.
+- [x] **1.0 asks for no money anywhere, decided 2026-08-29.** The sponsor row in
+  Settings is behind `Launch.sponsor` and hidden, beside Plus and the walks.
+  Hidde: "haal er maar uit tenzij we naar de website mogen verwijzen om het daar
+  te doen." We may not, in the form worth having: 3.1.1 anti-steering does not
+  let an app send somebody out to pay or to tip, the clean exception is a
+  registered nonprofit, and the US injunction and the DMA routes both need an
+  entitlement a first submission should not carry. Nothing is deleted:
+  SponsorSheet, Tips and Tips.storekit stay in the build and `-sponsor` still
+  opens the sheet, so the sweep and the layout gate keep seeing it.
+- [x] **The DSA trader question, answered by the same decision.** Accepting the
+  Paid Applications agreement asks whether you are a trader, and a trader's
+  address, phone and email are published on the App Store product page and
+  verified by Apple. With no in-app purchase in 1.0, non-trader is the honest
+  answer and no address is published. Changing it later starts a new
+  verification, so it is a decision rather than a checkbox: taking money in the
+  EU means trader, and the address has to be chosen before that day, not on it.
+  The website keeps /sponsor and its Ko-fi page, where none of this applies and
+  nobody takes a cut, and that is also where we can find out whether anybody
+  ever pays.
 - [ ] **The App Store Connect record itself**, which only Hidde can create: the listing text, the screenshots and the privacy form are all written out in APP_STORE_LISTING.md, including the TestFlight fields.
+- [ ] **Google sign-in on a real phone.** `ancienttrees://auth-callback` has to be
+  in Supabase's redirect allow-list or Supabase quietly redirects to the website
+  instead, which looks like a button that does nothing. Apple's and the magic
+  link are unaffected. It cannot be seen in the simulator or in CI.
 - [ ] **Everything in part 2 above**, which needs a real phone and cannot be done here.
 
 ### Getting a build into TestFlight, which nothing here does for you
