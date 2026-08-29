@@ -58,7 +58,8 @@
         "label": "late October into November, when the cut leaves go copper against the stone"
       },
       "height_m": 21.0,
-      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 230
     },
     {
       "id": "gnv_002",
@@ -84,7 +85,8 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "height_m": 15.0,
-      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 257
     },
     {
       "id": "gnv_003",
@@ -108,7 +110,8 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "height_m": 12.0,
-      "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 305
     },
     {
       "id": "gnv_004",
@@ -132,7 +135,8 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "height_m": 24.0,
-      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 734
     },
     {
       "id": "gnv_005",
@@ -157,7 +161,8 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "height_m": 38.5,
-      "verify_notes": "Height 38.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 38.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 526
     },
     {
       "id": "gnv_006",
@@ -182,7 +187,8 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "height_m": 41.0,
-      "verify_notes": "Height 41.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 41.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 378
     },
     {
       "id": "gnv_007",
@@ -215,7 +221,8 @@
         "label": "late summer, when the pale hop-like fruit clusters hang all over the crown"
       },
       "height_m": 32.0,
-      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 256
     },
     {
       "id": "gnv_008",
@@ -248,7 +255,8 @@
         "kind": "fruit"
       },
       "height_m": 39.5,
-      "verify_notes": "Height 39.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 39.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 296
     },
     {
       "id": "gnv_009",
@@ -282,7 +290,8 @@
       },
       "height_m": 36.0,
       "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 538
     },
     {
       "id": "gnv_010",
@@ -316,7 +325,8 @@
         "kind": "fruit"
       },
       "height_m": 36.0,
-      "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 538
     },
     {
       "id": "gnv_011",
@@ -342,13 +352,14 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "A register once mislabelled this tree's girth as its diameter, which would have made the trunk over six metres wide rather than six metres round, a mistake plausible enough that nobody caught it until an independent citizen-science registry went out and measured the tree itself. Corrected, it still measures 6.36 metres around, among the largest bunya pines recorded in Europe.\n\nAraucaria bidwillii comes from the subtropical rainforests of Queensland, where its cones grow to five or seven kilograms and drop hard enough that parks close the ground beneath fruiting trees during the season. This one has stood in the formal gardens of Villa Groppallo, part of Genoa's seafront Parchi di Nervi, long enough that nobody agrees on exactly how long: the official monumental register gives a floor of 75 years from its original designation, while the citizen-science count that corrected the girth estimates closer to 115. Both figures come from the same kind of measurement read differently, so the honest range spans both.\n\nThe Parchi di Nervi are Genoa's largest public park, free and open year round, though the villas converted to galleries inside it charge their own admission. The bunya pine needs no ticket, just a walk into the gardens from Nervi's own railway station.",
-      "verify_notes": "Italy's national monumental-tree register (MASAF sheet 04/D969/GE/07, reproduced by Regione Liguria's agriligurianet.it) designates this Araucaria bidwillii (locally 'Pino del Queensland') at Villa Groppallo/Gropallo in the Parchi di Nervi: '+75 anni', 28m height, and a field labelled 'Diametro del fusto: 608 cm'. That 608cm figure is almost certainly girth/circumference mislabelled as diameter (a 608cm-diameter trunk is not physically plausible for this species and age), confirmed by RAMI - Registro degli Alberi (ilregistrodeglialberi.it, id 730, an independent citizen-science/dendrology register with its own field measurements), which recorded circumference 6.08m on 2021-10-14 and 6.36m on 2023-06-03. Used the more recent RAMI circumference (636cm) as girth_cm. Coordinates cross-checked: the official register's own DMS coordinates (44 22'57.46\"N 9 02'36.57\"E) convert to 44.382628, 9.043436; RAMI independently gives 44.382944, 9.043418, about 35m apart, clearly the same lone specimen in a small formal garden, so location_precision is confirmed. AGE DISAGREEMENT, not silently resolved: the official register's '+75 anni' reads as a minimum/floor figure from the original designation criteria (a genova24.it news piece from 2018 simply repeats the same 75/28m/608cm figures without independent dating). RAMI separately computes an estimated age of about 115 years, 'calculated from a registered birth year', but does not show its working or cite a planting record we can independently confirm, so 115 is not treated as a confident derived age either. Set a broad age_min/age_max (75-150) spanning both figures rather than picking a winner; flagged for this reason. Species is a strong match: the tree is repeatedly and consistently identified as Araucaria bidwillii across all three sources, is described as among the largest specimens of the species in Europe (cones up to 5-7kg), and it is a distinctive, individually registered giant conifer, not a stand or grove, so it is a single collectible point. No news or dated-photo confirmation newer than RAMI's 2023-06-03 field visit found this pass; RAMI's own health field ('Stato di salute: Buona', good) as of its last update (14/10/2025) is the freshest alive-now evidence, so treated as confirmed alive with reasonable confidence rather than thin. Access: Parchi di Nervi is a well known, heavily visited free public park (hosted Euroflora 2018 per the genova24 piece); no gate, ticket or restriction applies to the garden grounds themselves.",
+      "verify_notes": "Italy's national monumental-tree register (MASAF sheet 04/D969/GE/07, reproduced by Regione Liguria's agriligurianet.it) designates this Araucaria bidwillii (locally 'Pino del Queensland') at Villa Groppallo/Gropallo in the Parchi di Nervi: '+75 anni', 28m height, and a field labelled 'Diametro del fusto: 608 cm'. That 608cm figure is almost certainly girth/circumference mislabelled as diameter (a 608cm-diameter trunk is not physically plausible for this species and age), confirmed by RAMI - Registro degli Alberi (ilregistrodeglialberi.it, id 730, an independent citizen-science/dendrology register with its own field measurements), which recorded circumference 6.08m on 2021-10-14 and 6.36m on 2023-06-03. Used the more recent RAMI circumference (636cm) as girth_cm. Coordinates cross-checked: the official register's own DMS coordinates (44 22'57.46\"N 9 02'36.57\"E) convert to 44.382628, 9.043436; RAMI independently gives 44.382944, 9.043418, about 35m apart, clearly the same lone specimen in a small formal garden, so location_precision is confirmed. AGE DISAGREEMENT, not silently resolved: the official register's '+75 anni' reads as a minimum/floor figure from the original designation criteria (a genova24.it news piece from 2018 simply repeats the same 75/28m/608cm figures without independent dating). RAMI separately computes an estimated age of about 115 years, 'calculated from a registered birth year', but does not show its working or cite a planting record we can independently confirm, so 115 is not treated as a confident derived age either. Set a broad age_min/age_max (75-150) spanning both figures rather than picking a winner; flagged for this reason. Species is a strong match: the tree is repeatedly and consistently identified as Araucaria bidwillii across all three sources, is described as among the largest specimens of the species in Europe (cones up to 5-7kg), and it is a distinctive, individually registered giant conifer, not a stand or grove, so it is a single collectible point. No news or dated-photo confirmation newer than RAMI's 2023-06-03 field visit found this pass; RAMI's own health field ('Stato di salute: Buona', good) as of its last update (14/10/2025) is the freshest alive-now evidence, so treated as confirmed alive with reasonable confidence rather than thin. Access: Parchi di Nervi is a well known, heavily visited free public park (hosted Euroflora 2018 per the genova24 piece); no gate, ticket or restriction applies to the garden grounds themselves. Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 28.0
     },
     {
       "id": "gnv_012",
@@ -372,13 +383,14 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Genoa's monumental tree register does not give ages, only measurements, so this cedar of Lebanon comes with a girth, four metres sixty one round, and nothing else: no planting date, no story attached to who put it here or when. It stands in the open square in front of the Santuario di Nostra Signora dell'Acquasanta, a working church in Acquasanta, a hillside hamlet inside Genoa's Voltri district.\n\nCedrus libani takes its name from the mountains of Lebanon, where centuries of shipbuilding and temple construction stripped most of the ancient forests that once covered them; the species survives in Europe mainly because 18th and 19th century estates and church grounds planted it as an ornamental long before conservation became a reason to care. This one shares its piazza with a second, taller monumental tree the same register protects nearby, a coast redwood, though that one has not yet been individually verified for this page.\n\nAcquasanta sits a genuine 40 to 50 minutes from central Genoa door to door, by train to Voltri and then a bus that runs roughly hourly. The piazza itself is open and free, no gate or ticket, the cedar visible from the church steps.",
-      "verify_notes": "Single source only this pass: Italy's national monumental-tree register (MASAF sheet 16/D969/GE/07), already imported into this project's data/registers/italy-masaf.json with licence verified, gives 'Cedrus libani A.Richard' at 'Piazza Chiesa Acquasanta Presso Civico 107', girth 461cm, height 25m, altitude 189m, tree-level coordinates 44.457933,8.770197 (not an area centroid; the sheet is keyed to this one specimen at this one civic address, so location_precision is confirmed). Tried two searches and one WebFetch (it.wikipedia's Santuario di Nostra Signora dell'Acquasanta article, and a genovatoday.it monumental-trees survey piece) looking for a second independent source or an age figure; neither mentioned this specific cedar, and the RAMI citizen-science registry (ilregistrodeglialberi.it) that corroborated the Bunya Pine above has no page for this specimen. Per the two-attempts rule, moving on rather than continuing the hunt: shipping on the single register source, flagged. No age field exists in the national MASAF register for Italy (a known gap, see BRIEF_RESEARCH.md register pitfalls); no growth-rate or planting-date source was found this pass to derive one, so age_estimate is left empty rather than guessed, per the 'no basis at all' rule. Alive-now evidence is the register import itself rather than anything dated more recently; no news or photo confirmation newer than that found this pass, so this is genuinely thin on the alive-now bar and is named as such. NOT the same tree as gnv_010 (The Cedar of Lebanon of Villa Durazzo Pallavicini, sheet 14/D969/GE/07, 13km away in Pegli): confirmed by comparing coordinates and sheet ids directly, so no duplicate risk. Worth flagging for whoever composes the city page: roughly 55m from this cedar, at 44.457792,8.769658 (Via Acquasanta Presso Civico 275), the same national register lists a second, larger monumental tree at the same piazza: sheet 18/D969/GE/07, a Sequoia sempervirens with girth 435cm and height 40m. Not researched or verified this pass (out of scope, only the cedar was the READY lead), but if it also verifies, these two would form a small two-tree cluster right at the Acquasanta piazza rather than the cedar standing alone; recorded here so a future pass does not have to rediscover it from the register.",
+      "verify_notes": "Single source only this pass: Italy's national monumental-tree register (MASAF sheet 16/D969/GE/07), already imported into this project's data/registers/italy-masaf.json with licence verified, gives 'Cedrus libani A.Richard' at 'Piazza Chiesa Acquasanta Presso Civico 107', girth 461cm, height 25m, altitude 189m, tree-level coordinates 44.457933,8.770197 (not an area centroid; the sheet is keyed to this one specimen at this one civic address, so location_precision is confirmed). Tried two searches and one WebFetch (it.wikipedia's Santuario di Nostra Signora dell'Acquasanta article, and a genovatoday.it monumental-trees survey piece) looking for a second independent source or an age figure; neither mentioned this specific cedar, and the RAMI citizen-science registry (ilregistrodeglialberi.it) that corroborated the Bunya Pine above has no page for this specimen. Per the two-attempts rule, moving on rather than continuing the hunt: shipping on the single register source, flagged. No age field exists in the national MASAF register for Italy (a known gap, see BRIEF_RESEARCH.md register pitfalls); no growth-rate or planting-date source was found this pass to derive one, so age_estimate is left empty rather than guessed, per the 'no basis at all' rule. Alive-now evidence is the register import itself rather than anything dated more recently; no news or photo confirmation newer than that found this pass, so this is genuinely thin on the alive-now bar and is named as such. NOT the same tree as gnv_010 (The Cedar of Lebanon of Villa Durazzo Pallavicini, sheet 14/D969/GE/07, 13km away in Pegli): confirmed by comparing coordinates and sheet ids directly, so no duplicate risk. Worth flagging for whoever composes the city page: roughly 55m from this cedar, at 44.457792,8.769658 (Via Acquasanta Presso Civico 275), the same national register lists a second, larger monumental tree at the same piazza: sheet 18/D969/GE/07, a Sequoia sempervirens with girth 435cm and height 40m. Not researched or verified this pass (out of scope, only the cedar was the READY lead), but if it also verifies, these two would form a small two-tree cluster right at the Acquasanta piazza rather than the cedar standing alone; recorded here so a future pass does not have to rediscover it from the register. Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 25.0
     }
   ]
 }

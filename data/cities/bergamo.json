@@ -54,7 +54,8 @@
         "status": "missing"
       },
       "height_m": 32.0,
-      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 455
     },
     {
       "id": "bgm_002",
@@ -85,7 +86,8 @@
         "status": "missing"
       },
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 405
     },
     {
       "id": "bgm_003",
@@ -116,7 +118,8 @@
         "status": "missing"
       },
       "height_m": 16.0,
-      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 355
     },
     {
       "id": "bgm_004",
@@ -187,7 +190,8 @@
         "height": 2000
       },
       "height_m": 32.0,
-      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 683
     },
     {
       "id": "bgm_006",
@@ -219,7 +223,8 @@
         "status": "missing"
       },
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 465
     },
     {
       "id": "bgm_007",
@@ -295,7 +300,8 @@
         "label": "May, when it flowers",
         "kind": "flowers"
       },
-      "height_m": 27.0
+      "height_m": 27.0,
+      "girth_cm": 391
     }
   ]
 }

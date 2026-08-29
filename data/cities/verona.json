@@ -168,7 +168,8 @@
       "notes": "Dimensions (309cm circumference, 28m height) and 'landscape value' listing criterion from the official AMI national register, corroborated by the independent RAMI tree-registry aggregator covering the same three Verona entries. No individual age or planting date documented. No usable photo found. Coordinates now taken directly from the AMI register's own GIS record (record 03/L781/VR/05, 'Via Nino Bixio 2', species 'Cedro dell'Himalaya'), read with a purpose-built binary XLS parser rather than the lossy text extraction that left this entry unresolved on earlier passes: two independent fetches of the source spreadsheet returned byte-identical coordinates. About 175m from the previous street-wide estimate.",
       "location_precision": "confirmed",
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 309
     },
     {
       "id": "ver_005",

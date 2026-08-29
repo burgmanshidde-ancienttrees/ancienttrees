@@ -204,7 +204,8 @@
       "notes": "Age disputed between two sources by up to 170 years (17th-century planting theory vs. a 150-year registry estimate); the expropriation year (1965) is given by secondary sources and should be checked against a primary record. Pin corrected 2026-07-26, a real correction of about 1.2km, not just imprecision: two Wiki Loves Monuments Italia photos independently titled \"Cedro del Libano\" at Villa Doria Pamphilj (by different photographers, 2021 and a companion shot from the lake canal) carry identical embedded GPS at 41.882956, 12.444775, which also matches Italy's national monumental tree registry (MASAF, AMI code 27/H501/RM/12, locality \"Villa Pamphili - Belvedere del Lago del Giglio\") to the hundredth of an arcsecond, byte-identical across two separate spreadsheet fetches. The previous pin was roughly 1.2km away, closer to the Via Aurelia Antica entrance than to the Belvedere itself. Photo downloaded and viewed directly 2026-07-27: close-up of blue-green needle clusters and upright barrel cones unmistakably Cedrus libani, consistent with the file's own title and the confirmed GPS. Approved.",
       "location_precision": "confirmed",
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 460
     },
     {
       "id": "rom_006",
@@ -237,7 +238,8 @@
       },
       "curation_status": "flagged",
       "notes": "Age genuinely disputed: the national registry's measured estimate (176 years) contradicts the traditional account (up to 300 years, tied to the 1784 garden redesign). Presented as a range rather than resolved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 430
     },
     {
       "id": "rom_007",
@@ -318,7 +320,8 @@
       "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Pin corrected 2026-07-26: the already-approved photo's own embedded GPS (41.885192, 12.494350) places this named, identified cedar precisely; a second independent Commons photo of the same named tree by a different photographer (Albarubescens, 2019) carries an almost identical GPS reading, and a third (Piroetta, 2021) lands about 26m away, consistent with the same tree. Also cross-checked against the neighbouring Aleppo pine's (rom_009) MASAF registry point, about 20-25m away, matching this story's \"a few meters apart\" framing.",
       "location_precision": "confirmed",
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 440
     },
     {
       "id": "rom_009",
@@ -351,7 +354,8 @@
       "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Coordinates now come from Italy's national monumental tree registry (MASAF), the only Pinus halepensis entry at this Viale Cardinale Spellman site, about 210m from the previous general estimate.",
       "location_precision": "confirmed",
       "height_m": 34.0,
-      "verify_notes": "Height 34.0 m from the italy-masaf register, matched on our own pin (4 m away)."
+      "verify_notes": "Height 34.0 m from the italy-masaf register, matched on our own pin (4 m away).",
+      "girth_cm": 350
     },
     {
       "id": "rom_010",
@@ -415,7 +419,8 @@
       "notes": "Sheet 10/H501/RM/12. Existence, species and location confirmed by three sources (Lazio regional register, Roma Capitale's own monumental-tree page, abitarearoma.it). No source anywhere gives an age or planting date, so the range here is a conservative placeholder tied to the Wurts era (1902-1928), not a sourced estimate, exactly as on rom_008 and rom_009. Girth genuinely disputed between the two registers: MASAF national 500cm, Lazio regional 330cm, same sheet number and same coordinates. Height agrees at 20m. The story states the disagreement rather than picking one. Coordinates are the register's own GPS, identical in both lists; converted from the regional list's DMS (41 deg 53' 00,19\", 12 deg 27' 53,03\") they match the national decimal figure. 130m from rom_001.",
       "location_precision": "confirmed",
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 500
     },
     {
       "id": "rom_012",
@@ -448,7 +453,8 @@
       "notes": "Sheet 09/H501/RM/12, 200cm girth, 18m, both registers agreeing. Sole monumentality criterion in the Lazio list is 'd) rarita botanica', which is the story's opening claim and is quoted from the register itself. No age or planting date exists in any source; range is a placeholder tied to the Wurts era, not an estimate. abitarearoma.it independently describes it as 'un raro esemplare di Podocarpo (il pino con cui i buddisti ornavano i loro templi)' and Roma Capitale's page as a 'splendid and enormous' specimen. Common name: no other city file uses Podocarpus, so 'Willowleaf Podocarp' is chosen as the nationality-neutral name per hard rule 9; if a later Podocarpus ships elsewhere it must match this. 20m from rom_001.",
       "location_precision": "confirmed",
       "height_m": 18.0,
-      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 200
     },
     {
       "id": "rom_013",
@@ -481,7 +487,8 @@
       "notes": "Sheet 57/H501/RM/12, 565cm, 20m, locality given as 'Piazza San Cosimato area ludica' (the play area), which is what fixes the pin to one obvious tree in a small square. Second source is Il Messaggero's report on the neighbourhood's adoption of the tree and the stability tomography, independent of the register; archidiap's architectural study of the piazza corroborates the play area under a 'platano secolare' and the 1880s reshaping of the square. No age published anywhere. Superlative checked (hard rule 8): 565cm is the largest single plane girth among the 65 Roma register entries, ahead of Viale Jonio at 553cm; the Valle dei Platani and Fontane Oscure figures are group maxima for a different species, Platanus orientalis, so the claim is limited to plane trunks on the register and states its bounds. Bridges the Villa Sciarra walk to the Orto Botanico walk: 700m from rom_001, 600m from rom_003.",
       "location_precision": "confirmed",
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 565
     },
     {
       "id": "rom_014",
@@ -524,7 +531,8 @@
       "notes": "Sheet 01/H501/RM/12, 345cm, 20m, criteria a) age/size and f) landscape value. Roma Capitale's own monumental-tree page names it independently and places it on the right of the Cordonata on via delle Tre Pile, which is the second source for existence and location. No age published; range is a placeholder, not an estimate. Pin: the register's DMS (41 deg 53' 36,25\", 12 deg 28' 55,88\") converts to the national list's decimal figure exactly, and two Wiki Loves Monuments Italia photographs by different contributors carry embedded GPS identical to it, so the position is independently confirmed rather than register-only. Photo downloaded at 960px and viewed directly 2026-08-05: a big horse chestnut in full green leaf against blue sky, daylight, in colour, filling the left two thirds of the frame with the Capitoline balustrade behind and a cypress at the right edge; the centre band of the image is canopy, so it survives the wide card crop. Trunk is not visible (the shot looks up from the ramp), which is the one departure from the Cadiz standard; approved anyway as the best of eight candidates, the alternatives being more distant views with the Vittoriano dominating. Only Aesculus on Rome's register. best_time set to fruit rather than the April flower candles deliberately: September is one of the two thinnest months on the season shelf and the conkers on a public stair are the more useful reason to go.",
       "location_precision": "confirmed",
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 345
     },
     {
       "id": "rom_015",
@@ -568,7 +576,8 @@
       "notes": "Sheet 22/H501/RM/12, 410cm, 22m. Roma Capitale's monumental-tree page names it independently and explicitly pairs it with the monumental holm oak, which is our rom_006, 70m away; that pairing is the second source and also the reason this entry exists, since it thickens an existing walk rather than adding a lonely point. No age published anywhere. The 120-200 range is a placeholder consistent with the growth-based figures the national registry calculates for comparable Roman cedars (146 years at 574cm on rom_007, about 150 at 460cm on rom_005), and the story does not state a number. Pin independently confirmed: three Commons photographs by the same Wiki Loves Monuments contributor, taken 2018, 2020 and 2022, all carry embedded GPS identical to the register coordinate to six decimals. Photo (2022) downloaded at 960px and viewed directly 2026-08-05: the whole tree in summer daylight, in colour, filling the frame above the lake basin and its iron railing, trunk and candelabra crown both readable, centre band all tree. A clean Cadiz-standard match. The 2020 file by the same author was rejected: it is a close-up of trunk and branches only. Temple of Aesculapius date (1786) and the Asprucci attribution come from the villa's standard history, not from the register.",
       "location_precision": "confirmed",
       "height_m": 22.0,
-      "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 410
     },
     {
       "id": "rom_016",
@@ -600,7 +609,8 @@
       "notes": "Sheet 68/H501/RM/12, 420cm, 30m. SINGLE SOURCE, and the story says so in its last three sentences rather than hiding it: the Lazio regional register and the MASAF national register are the same designation published twice, and no municipal, press or garden-history source names this individual tree. Roma Capitale's own monumental-tree walk predates the sheets numbered above 57 and does not cover it. Published under the flagged rule because the register is an official source and the uncertainty is stated on the page; drop it if a reader disputes the tree. Superlative checked (hard rule 8): NOT the tallest on the register. Rome's register tops out at 34m (the Aleppo pine at Villa Celimontana, our rom_009), then 32m twice, then 31m, then this at 30m, so the claim is written as among the five tallest and is arithmetically true of the 65 comune entries. Precision is approximate, not confirmed: the Pincio terrace is large, the coordinate has no independent corroboration (no Commons photograph of this tree exists, geosearch and text search both empty), and the Caserta lesson says a register point with nothing to check it against is not a confirmed pin. 470m from rom_006, so it extends the Villa Borghese walk toward Piazza del Popolo rather than starting a new one.",
       "location_precision": "confirmed",
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 420
     },
     {
       "id": "rom_017",
@@ -637,7 +647,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 290
     },
     {
       "id": "rom_018",
@@ -676,7 +687,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 600
     },
     {
       "id": "rom_019",
@@ -705,7 +717,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 230
     },
     {
       "id": "rom_020",
@@ -735,7 +748,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 290
     },
     {
       "id": "rom_021",
@@ -825,7 +839,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 280
     },
     {
       "id": "rom_024",
@@ -856,7 +871,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 401
     },
     {
       "id": "rom_025",
@@ -887,7 +903,8 @@
         "status": "missing"
       },
       "height_m": 32.0,
-      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 553
     },
     {
       "id": "rom_026",
@@ -919,7 +936,8 @@
       "location_precision": "confirmed",
       "notes": "Single source for the tree itself: the national register through the Lazio regional list. The Sovrintendenza page is a second source for the site and its access, not for this pine, and its own summary of the park's planting does not mention a pine. Flagged on that. Distinct from rom_020, the Chir Pine of Colle Oppio (sheet 71), roughly 2.7 km west. A claim that the two are twins both planted by Raffaele De Vico circulates in search results but could not be corroborated by any of the pages those results cite, so the story credits De Vico with the 1931 garden and claims nothing about who planted the tree.",
       "height_m": 18.0,
-      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 297
     },
     {
       "id": "rom_027",
@@ -951,7 +969,8 @@
       "location_precision": "confirmed",
       "notes": "Register-only tree: the national and regional registers are one designation rather than two independent sources, hence flagged. No vitality check newer than the Lazio list's November 2025 edition, which is stated in the story rather than hidden. Black poplar is a short lived species, so this entry is a candidate for re-checking before others.",
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 405
     },
     {
       "id": "rom_028",
@@ -983,7 +1002,8 @@
       "location_precision": "confirmed",
       "notes": "Register-only, hence flagged: a targeted hunt on 2026-08-08 found no source independent of the national and regional registers, and the Parco Regionale dell'Appia Antica's own 'alberi di pregio' catalogue, which corroborates rom_024 at 120 metres away, does not list this tree. Deliberately not folded into rom_024 as a pair, since only one of the two is independently corroborated and folding would overstate what is known about this one.",
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 414
     },
     {
       "id": "rom_029",
@@ -1015,7 +1035,8 @@
       "location_precision": "confirmed",
       "notes": "Register-only for the tree itself, hence flagged: repeated hunts (2026-08-05, 2026-08-08) found no source independent of the register naming this individual palm, and general descriptions of Villa Sciarra's palms cannot fix which one is meant. The Roma Capitale page is a source for the park's history and ownership, not for the palm. The story therefore states the Wurts history and explicitly declines to attribute the planting. Completes a four tree walk in Villa Sciarra with rom_001, rom_011 and rom_012.",
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 294
     },
     {
       "id": "rom_030",

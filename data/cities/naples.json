@@ -56,7 +56,8 @@
       "notes": "Age (early 1800s planting, ~220 years) and dimensions (670cm circumference, ~400 sqm canopy) corroborated across the park's own official museum page and an independent press article. No usable photo found on Commons or iNaturalist for this specific tree. Pin corrected 2026-07-28, about 640m: Italy's volunteer-run national tree registry (ilregistrodeglialberi.it, RAMI) lists a 'Canforo di Capodimonte' in the Giardino dei Principi with a surveyed circumference of 6.70m, an exact match to this entry's own already-sourced 670cm figure, a strong sign it is the same specific tree rather than just a same-species neighbour. An independent iNaturalist Cinnamomum camphora observation sits about 62m from RAMI's coordinate, corroborating it. RAMI's photos are all-rights-reserved so no photo gain. Upgraded to confirmed.",
       "location_precision": "confirmed",
       "height_m": 15.0,
-      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (3 m away)."
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (3 m away).",
+      "girth_cm": 830
     },
     {
       "id": "nap_002",
@@ -88,7 +89,8 @@
       "notes": "Dimensions (730cm circumference, 20m height, 450 sqm canopy) from the park's own official page; a second, independent press article corroborates the Giardino Torre's Bourbon-era orchard history and citrus programme without repeating the exact camphor measurements. No individual planting year documented beyond '1800s'. Pin corrected 2026-07-26 against Campania's regional monumental-tree register (agricoltura.regione.campania.it, scheda 197, \"La Canfora n. 2 - Giardino Torre\"), which gives 40.880139, 14.261415 and an identical 730cm circumference, a strong identity match. The previous pin was a park-wide estimate roughly 900m off. No usable photo found.",
       "location_precision": "confirmed",
       "height_m": 18.0,
-      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 730
     },
     {
       "id": "nap_003",
@@ -122,7 +124,8 @@
       "notes": "Dimensions (30m height, 330cm diameter) and 'largest exotic tree in the park' designation from the park's own official page, corroborated by an independent park-guide article describing the same 19th century eucalyptus specimens generally. No individual planting year documented. A real correction, not just imprecision: Campania's regional monumental-tree register (scheda 200) gives an identical 330cm circumference and 30m height but places it in the Giardino dei Principi, not near Porta Grande as this entry previously said; treated the register plus exact measurement match as authoritative and corrected the location and story text. No usable photo found.",
       "location_precision": "confirmed",
       "height_m": 35.0,
-      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 330
     },
     {
       "id": "nap_004",
@@ -163,7 +166,8 @@
         "kind": "fruit"
       },
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 250
     },
     {
       "id": "nap_005",
@@ -195,7 +199,8 @@
       "notes": "Dimensions (18m height, 3m circumference) and Tenore identification from the park's own official page, corroborated by an independent park-guide article noting the species' rarity in Italian cultivation generally. No individual planting year documented. Pin corrected 2026-07-26 against Campania's regional monumental-tree register (scheda 198, \"Cipresso di Montezuma\"), which gives 40.868700, 14.252583 and an identical 300cm circumference; its own height figure (15m) is a bit lower than the 18m cited here, a minor discrepancy left open rather than resolved, since the circumference match and the rarity of this exact species at this exact garden leave little doubt it is the same tree. No usable photo found.",
       "location_precision": "confirmed",
       "height_m": 15.0,
-      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 300
     },
     {
       "id": "nap_006",
@@ -267,7 +272,8 @@
       "notes": "1959 felling (8.45m circumference at removal) and root regrowth corroborated across two independent sources. The Saint Benedict planting legend is presented explicitly as legend, not fact, per the project's standard for unverifiable founding stories; current tree's age calculated from the 1959 regrowth date, not from the legendary original planting. Pin corrected 2026-07-26 against Campania's regional monumental-tree register (agricoltura.regione.campania.it, scheda 280, \"Platano dell'Archivio di Stato\"), which gives 40.848275, 14.258456 directly at the cloister, matching this entry's own age range (registry: 63 years) almost exactly; the previous pin was already very close (within a few metres). Photo found the same pass: the Italian Wikipedia article's own caption identifies this specific Commons file as showing \"the historic plane tree\" at the centre of the cloister, not just the building.",
       "location_precision": "confirmed",
       "height_m": 16.0,
-      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 255
     },
     {
       "id": "nap_008",
@@ -332,7 +338,8 @@
       "notes": "Dimensions (18m height, 428cm diameter) and location from the Campania region's own official monumental-trees register page; the garden's early 19th century Bonapartist-era planting history corroborated by Wikipedia's sourced article. Pin tightened 2026-07-26 to the registry's own GPS (40.833138, 14.237944, 'adiacente alla Fontana dei leoni'), about 40m from the previous estimate. Two Wikimedia Commons photos near this entrance (Piazza Vittoria) were checked but neither's description confirms a plane tree is actually in frame, so no photo approved this pass. Photo found and approved 2026-07-28: Wikidata item Q55741295 records this exact tree (address, height and girth all matching the registry figures above almost exactly) with a linked CC BY-SA 3.0 Commons photo, 'Platano orientale.jpg' by Sordelli. Viewed directly (fetched full image, not just metadata): a tall plane tree with the mottled, peeling bark characteristic of Platanus orientalis, in a park clearing with apartment blocks and a statue behind it, consistent with the Villa Comunale/Riviera di Chiaia setting. A clean, confident match.",
       "location_precision": "confirmed",
       "height_m": 18.0,
-      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 412
     },
     {
       "id": "nap_010",
@@ -364,7 +371,8 @@
       "notes": "24m height and general cloister setting corroborated across two independent sources; the Murat-planted camphor detail is mentioned for context but that is a different tree, not this entry. No individual age or planting date documented for the oak itself; presented as a broad mature estimate. Pin corrected 2026-07-27, about 45m: Campania's regional monumental-tree register carries two other specimens sharing this exact cloister (scheda 223, the Washingtonia palms; scheda 224, the camphor mentioned in this story), both giving identical coordinates (40.852566, 14.252485) for the cloister itself. The register has no separate entry for the holm oak specifically, so this isn't a direct match on this tree, but two independent official records placing its named companions in the same small courtyard is strong enough corroboration for the cloister location to confirm. No usable photo found.",
       "location_precision": "confirmed",
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 500
     },
     {
       "id": "nap_011",
@@ -394,7 +402,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Two registers, national and regional, agree exactly on 380 cm girth and 16 m height and their coordinates fall 25 m apart. The age of 100 years is the age at the regional record's last update (December 2019 to January 2020), not today, hence about 105. The colonial-souvenir origin and the branched trunk are the regional register's own wording.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 380
     },
     {
       "id": "nap_012",
@@ -426,7 +435,8 @@
       "notes": "Age is the museum's 'mid-nineteenth century' carried to today. Pin marked approximate deliberately: at 75 cm girth and 9 m this is a small tree in a planted garden and a visitor will have to look, unlike the camphor 120 m west. Girth 75 cm is the smallest in the Naples register, which is a units sanity check that passes: it is a genuinely slender tree, listed for rarity.",
       "location_precision": "approximate",
       "height_m": 9.0,
-      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (1 m away)."
+      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (1 m away).",
+      "girth_cm": 75
     },
     {
       "id": "nap_013",
@@ -469,7 +479,8 @@
       "notes": "Two registers agree on species, height (25 m) and position to sub-metre (MASAF sheet 34/F839/NA/15 at 40.861200, 14.262192; Campania scheda 165 at 40.861200, 14.262193). They differ on girth, 880 cm against 800 cm, and the story states both rather than picking one. Age is Campania's '>100 anni'; MASAF carries no age field for any Italian tree, so there is no second opinion on age and none is invented. The garden's own arboretum page independently names Ceiba speciosa among its majestic specimens, which is the third source for existence. October-November flowering is the species' documented Mediterranean flowering window. The 1947 'total ruin' report and the wartime use of the garden come from the garden's own history page. Photo: iNaturalist observation 320623421, viewed at full size before approving. Note the licence subtlety, checked against the API rather than assumed: the OBSERVATION is CC BY-NC, the individual photo is CC BY, and the photo licence is the one that governs reuse. Identity is strong: the observation carries GPS 40.861190, 14.262114 with 6 m stated accuracy, seven metres from the register point, and the frame shows fallen pink Ceiba petals on the grass and a garden plant label at the foot of the trunk. The photo also CORRECTED the story: this specimen is multi-stemmed with a fused base and smooth mature bark, not the single spined bottle trunk the species is known for, and the first draft of the story described the textbook tree rather than this one. Also confirms it was alive and flowering when photographed, which is the liveness check the registers cannot do.",
       "location_precision": "confirmed",
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 880
     },
     {
       "id": "nap_014",
@@ -509,7 +520,8 @@
       "notes": "MASAF sheet 36/F839/NA/15 and Campania scheda 167 agree on 300 cm girth, 16 m height and position to sub-metre (40.861414, 14.263156 / 14.263155). Age is Campania's '>100 anni' only. The garden's own species page is the third source and supplies the living-fossil framing and the two-pockets-of-eastern-China range; its visiting page names 'the golden leaves of the Ginkgo biloba' as a reason to visit in winter, which is what the best_time rests on rather than a generic species assumption. Naples sits at 40.86N so the phenology renderer applies no latitude shift.",
       "location_precision": "confirmed",
       "height_m": 16.0,
-      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 300
     },
     {
       "id": "nap_015",
@@ -541,7 +553,8 @@
       "notes": "MASAF sheet 35/F839/NA/15 and Campania scheda 166 agree on 440 cm girth, 18 m height and position to sub-metre (40.861181, 14.262758 / 14.262757). Flagged for the naming disagreement, which the story states openly rather than resolving: MASAF says Quercus crenata Lam., Campania says Quercus hispanica. These are two names for the same Quercus cerris x Quercus suber hybrid complex rather than two different trees, so existence and identity are not in doubt. Quercus crenata is used as the canonical binomial because it is the national register's, it is the accepted name for the wild-origin hybrid, and no other city in the corpus carries either name yet. Age is Campania's '>100 anni' only. No best_time: the semi-evergreen leaf hold is a curiosity, not a peak worth crossing town for.",
       "location_precision": "confirmed",
       "height_m": 18.0,
-      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 440
     },
     {
       "id": "nap_016",
@@ -573,7 +586,8 @@
       "notes": "MASAF sheet 37/F839/NA/15 and Campania scheda 168 agree on 440 cm girth, 30 m height and position to sub-metre (40.861142, 14.262447 / 40.861141, 14.262446). Age is Campania's '>100 anni' only. 'Tallest tree the registers record inside the garden' is scoped deliberately to the nine registered specimens and checked against them: the next tallest is the false kapok at 25 m. A different species from nap_003, which is Eucalyptus robusta at Capodimonte, and the story is written on the malaria-drainage history and the juvenile-versus-adult foliage so the two do not repeat each other.",
       "location_precision": "confirmed",
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 440
     },
     {
       "id": "nap_017",
@@ -606,7 +620,8 @@
       "notes": "MASAF sheet 31/F839/NA/15 and Campania scheda 162 agree on 250 cm girth, 4 m height and position to sub-metre (40.860608, 14.262300 / 40.860607, 14.262299). The garden's own palmeto page is the third source and calls it a 'splendido esemplare di Jubaea chilensis'. Deliberately marked approximate rather than confirmed, unlike the other four: the same page says the palm grove holds both mature and young specimens of this species, so a visitor arriving at the registered point still has to work out which trunk is the registered one, and at four metres it does not announce itself over the collection. Age is Campania's '>100 anni' only. No best_time: it fruits, but nothing about the moment is worth planning a visit around.",
       "location_precision": "approximate",
       "height_m": 4.0,
-      "verify_notes": "Height 4.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 4.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 250
     },
     {
       "id": "nap_018",
@@ -742,13 +757,14 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "An ombu on a Posillipo street corner has one of the widest trunks of any tree in Naples, 6.27 metres round, and almost none of that girth is wood. Phytolacca dioica is technically an oversized herb rather than a tree, its base swollen with water storing tissue instead of true timber, which is why it can reach this circumference while standing only 10 metres tall.\n\nThe species comes from the Argentine and Uruguayan pampas, imported across the Mediterranean in the 19th century as a curiosity that thrives wherever winters stay above freezing. This one has stood on Via Manzoni long enough to be nominated repeatedly to FAI's Places of the Heart campaign, in years spanning 2006 to 2022, an unusually long streak of local affection for a tree most guidebooks skip entirely.\n\nNo growth rings exist to date it by, since the wood is too soft and spongy to hold them, so the register's own estimate, over a century, is as precise as anyone can get. It stands directly on the public street, no gate and no ticket, one entry on a five kilometre road that is otherwise mostly known for its views over the bay.",
-      "verify_notes": "Register (italy-masaf.json, Naples entry): girth 627cm, height 10m. Independently corroborated by FAI's fondoambiente.it page, matching girth exactly (627cm) and confirming public-street location (Via Alessandro Manzoni 246). Reverse-geocoded (Nominatim, 2026-08-27) to Via Alessandro Manzoni, a tertiary public road. Two-sourced. Earlier pass held this back only for being single-sourced and standing alone with nothing else nearby, both reasons CLAUDE.md's 2026-08-10 ruling forbids as publish blockers (isolation is not a collectibility failure); the FAI source resolves the single-source concern regardless.",
+      "verify_notes": "Register (italy-masaf.json, Naples entry): girth 627cm, height 10m. Independently corroborated by FAI's fondoambiente.it page, matching girth exactly (627cm) and confirming public-street location (Via Alessandro Manzoni 246). Reverse-geocoded (Nominatim, 2026-08-27) to Via Alessandro Manzoni, a tertiary public road. Two-sourced. Earlier pass held this back only for being single-sourced and standing alone with nothing else nearby, both reasons CLAUDE.md's 2026-08-10 ruling forbids as publish blockers (isolation is not a collectibility failure); the FAI source resolves the single-source concern regardless. Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 10.0
     },
     {
       "id": "nap_022",
@@ -819,7 +835,10 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "MASAF national register (girth 540cm, height 19m, no age) and Campania regional scheda_248 (girth 303cm, height 13.5m, age ~150 years) sit at near-identical coordinates (40.87666,14.25056 vs 40.876667,14.250558) but disagree by 1.78x on girth, the same shape of conflict already blocking a separate Naples plane tree lead. Left unresolved rather than picking a winner, per hard rule 8 and the Step 2 conflict rule; girth_cm/height_m fields left unset here since neither figure is safe to present as the measurement. The capodimonte.cultura.gov.it monumental-trees page does not list this tree at all. The 'first Magnolia grandiflora in Europe' claim sometimes attached to Capodimonte's magnolia is not supported by the regional register's own text and is not used."
+      "notes": "MASAF national register (girth 540cm, height 19m, no age) and Campania regional scheda_248 (girth 303cm, height 13.5m, age ~150 years) sit at near-identical coordinates (40.87666,14.25056 vs 40.876667,14.250558) but disagree by 1.78x on girth, the same shape of conflict already blocking a separate Naples plane tree lead. Left unresolved rather than picking a winner, per hard rule 8 and the Step 2 conflict rule; girth_cm/height_m fields left unset here since neither figure is safe to present as the measurement. The capodimonte.cultura.gov.it monumental-trees page does not list this tree at all. The 'first Magnolia grandiflora in Europe' claim sometimes attached to Capodimonte's magnolia is not supported by the regional register's own text and is not used.",
+      "girth_cm": 540,
+      "height_m": 19.0,
+      "verify_notes": "Height 19.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }

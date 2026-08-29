@@ -72,7 +72,8 @@
       },
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 655
     },
     {
       "id": "luc_002",
@@ -108,7 +109,8 @@
       "location_precision": "confirmed",
       "height_m": 35.0,
       "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 576
     },
     {
       "id": "luc_003",
@@ -182,7 +184,8 @@
       "notes": "Register 09/E715/LU/09, 355 cm girth, 28 m. Flagged on age only: no source dates this tree. The city's own walls itinerary credits the North American cypress by the bastion to Cesare Bicchi, botanical garden director from 1860, which is where the rough range comes from, so it is given as a range and not as a figure.",
       "location_precision": "confirmed",
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 355
     },
     {
       "id": "luc_005",
@@ -251,7 +254,8 @@
       "notes": "Register 08/E715/LU/09, 700 cm girth, 30 m, the largest girth of the 36 register entries in the comune of Lucca. Flagged on age: no source dates it, and the 1840s ceiling is the species introduction date rather than a measurement of this tree. Species and location double-sourced by the register and by La Nazione's report of the 2021 dedication.",
       "location_precision": "confirmed",
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 700
     },
     {
       "id": "luc_007",
@@ -283,7 +287,8 @@
       },
       "height_m": 30.5,
       "verify_notes": "Height 30.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 282
     },
     {
       "id": "luc_008",
@@ -321,7 +326,8 @@
         "status": "missing"
       },
       "height_m": 24.0,
-      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 323
     },
     {
       "id": "luc_009",
@@ -351,7 +357,8 @@
         "status": "missing"
       },
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 360
     },
     {
       "id": "luc_010",
@@ -381,7 +388,8 @@
         "status": "missing"
       },
       "height_m": 24.0,
-      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 384
     },
     {
       "id": "luc_011",
@@ -421,7 +429,7 @@
       "age_min": null,
       "age_max": null,
       "girth_cm": 315,
-      "height_m": null,
+      "height_m": 20.5,
       "location": {
         "address": "Orto Botanico di Lucca, Via del Giardino Botanico 14, 55100 Lucca",
         "latitude": 43.841464,
@@ -450,7 +458,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "verify_notes": "Height 20.5 m from the italy-masaf register, matched on our own pin (0 m away)."
     },
     {
       "id": "luc_013",
@@ -491,7 +500,7 @@
       "age_min": 115,
       "age_max": 135,
       "girth_cm": 360,
-      "height_m": null,
+      "height_m": 14.0,
       "location": {
         "address": "Orto Botanico di Lucca, Via del Giardino Botanico 14, 55100 Lucca",
         "latitude": 43.841717,
@@ -512,7 +521,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "verify_notes": "Height 14.0 m from the italy-masaf register, matched on our own pin (0 m away)."
     }
   ]
 }

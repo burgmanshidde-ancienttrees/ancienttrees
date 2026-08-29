@@ -68,7 +68,8 @@
       },
       "height_m": 16.0,
       "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 775
     },
     {
       "id": "cas_002",
@@ -109,7 +110,8 @@
       "location_precision": "approximate",
       "height_m": 16.0,
       "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 775
     },
     {
       "id": "cas_003",
@@ -152,7 +154,8 @@
       },
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 392
     },
     {
       "id": "cas_004",
@@ -185,7 +188,8 @@
       "location_precision": "approximate",
       "height_m": 40.0,
       "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 580
     },
     {
       "id": "cas_005",
@@ -226,7 +230,8 @@
       "location_precision": "approximate",
       "height_m": 10.0,
       "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 650
     },
     {
       "id": "cas_006",
@@ -259,7 +264,8 @@
       "location_precision": "approximate",
       "height_m": 38.0,
       "verify_notes": "Height 38.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 370
     },
     {
       "id": "cas_007",
@@ -292,7 +298,8 @@
       "location_precision": "approximate",
       "height_m": 28.0,
       "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 420
     },
     {
       "id": "cas_008",
@@ -325,7 +332,8 @@
       "location_precision": "approximate",
       "height_m": 16.0,
       "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 775
     },
     {
       "id": "cas_009",
@@ -358,7 +366,8 @@
       "location_precision": "approximate",
       "height_m": 40.0,
       "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 310
     },
     {
       "id": "cas_010",
@@ -391,7 +400,8 @@
       "location_precision": "approximate",
       "height_m": 25.0,
       "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 720
     },
     {
       "id": "cas_011",
@@ -424,7 +434,8 @@
       "location_precision": "approximate",
       "height_m": 30.0,
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 560
     },
     {
       "id": "cas_012",
@@ -456,7 +467,8 @@
       "notes": "Girth 330cm and height 25m confirmed identically by MASAF (07/B963/CE/15) and Campania scheda 48. Age is the source's own inference ('la monumentalita e legata all'eta, riconducibile al momento della realizzazione della piazza, agli inizi dell'800'), not this project's bridge: the regional register itself ties the tree's age to the square's construction date, stated here as their claim, not sharpened beyond 'over 200 years'.",
       "location_precision": "confirmed",
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 330
     },
     {
       "id": "cas_013",

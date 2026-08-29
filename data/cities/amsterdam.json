@@ -64,7 +64,8 @@
       "curation_status": "flagged",
       "notes": "Pin corrected from the park's general location to the tree's own position: OpenStreetMap carries a contributor-mapped node named \"Heimanseik\" tagged natural=tree, species Quercus robur, start_date 1775, matching this specimen closely enough (a distinctive name unlikely to apply to any other tree) to treat as confirmed.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 390
     },
     {
       "id": "ams_002",
@@ -96,7 +97,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
-      "notes": "PIN CORRECTED 2026-08-09: the previous pin (52.3628, 4.8823) sat about 93m from the pair's actual position. Amsterdam's municipal register (data/registers/amsterdam-bijzondere-bomen.json) carries both trunks individually, register ids 504491 (52.3623964, 4.8810688, girth 714cm, planted 1863) and 510594 (52.3626145, 4.8809702, girth 715cm, planted 1863), 25m apart, matching this entry's story (moved 1925, 7m+ girth each) exactly. New pin is the midpoint of the two register coordinates. Marked approximate rather than confirmed because a single pin cannot exactly mark two trunks 25m apart, even though each trunk's own coordinate is precise."
+      "notes": "PIN CORRECTED 2026-08-09: the previous pin (52.3628, 4.8823) sat about 93m from the pair's actual position. Amsterdam's municipal register (data/registers/amsterdam-bijzondere-bomen.json) carries both trunks individually, register ids 504491 (52.3623964, 4.8810688, girth 714cm, planted 1863) and 510594 (52.3626145, 4.8809702, girth 715cm, planted 1863), 25m apart, matching this entry's story (moved 1925, 7m+ girth each) exactly. New pin is the midpoint of the two register coordinates. Marked approximate rather than confirmed because a single pin cannot exactly mark two trunks 25m apart, even though each trunk's own coordinate is precise.",
+      "girth_cm": 715
     },
     {
       "id": "ams_003",
@@ -126,7 +128,8 @@
       },
       "curation_status": "flagged",
       "notes": "Sources disagree on planting date (park-establishment era around 1870 vs a specific 1885 date); age range widened to cover both. Coordinates now geocoded precisely to Van Eeghenlaan 27 (Nominatim/OpenStreetMap), the address the tree stands directly opposite on the park side; multiple sources independently describe it that way (bomeninfo.nl: \"opposite house number 27\"; inhetvondelpark.nl: \"on the slope between the raised Van Eeghenlaan and the sunken Vondelpark\"). Not a surveyed trunk position, but a specific, walkable spot rather than a general park area. Cross-checked 2026-07-26 against Amsterdam's municipal tree registry (stamgegevens WFS): exactly two Populus canadensis 'Serotina' trees are marked 'Monumentale boom' in this stretch of the park, ids 989556 (planted 1862) and 989580 (planted 1892), about 30m apart and both within the existing pin's radius. Neither planting year lines up cleanly with the 140-156 age range already carried here, and there is no way from this dataset alone to tell which of the two is the specific record-holder the sources describe, so the address-based pin stands rather than moving to either registry point on a guess. No photo found for either candidate.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 642
     },
     {
       "id": "ams_004",
@@ -165,7 +168,8 @@
         ],
         "label": "midsummer, when the long green catkins hang down",
         "kind": "catkins"
-      }
+      },
+      "girth_cm": 257
     },
     {
       "id": "ams_005",
@@ -198,7 +202,8 @@
       "curation_status": "flagged",
       "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates corrected 2026-07-26 from a general Hortus street geocode to the Palmenkas (Palm House) building itself, located via OpenStreetMap building data (52.3663, 4.9081); this is the specific greenhouse the story places the cycad in, though the Palm House holds more than one Encephalartos specimen so the pin cannot distinguish which one inside the glasshouse. Photo downloaded and viewed directly 2026-07-27: shows two large barrel-potted cycads facing each other inside a Victorian-style glasshouse, one with an interpretive placard, matching the story's own detail that the 300-year male cycad and a roughly 200-year female cycad grow opposite each other in this exact Palm House. Cannot distinguish which specimen in frame is which, but the paired composition itself corroborates the described planting, so approved as an illustration of the pair rather than a single confirmed specimen.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 251
     },
     {
       "id": "ams_006",
@@ -231,7 +236,8 @@
       "curation_status": "flagged",
       "notes": "Sources give a planting date range of 1900-1915 rather than a single year. Coordinates now taken from the approved photo's own GPS EXIF data (52.366153, 4.934188), which matches bomenbieb.nl's independent description of the tree standing \"on the grassy corner by the bridge to Panamalaan.\" Photo dated 2013, before the 2015 truck-damage repair, so shows an earlier state of the same tree, but the position itself is unchanged.",
       "location_precision": "confirmed",
-      "verify_notes": "The lorry is OUT, twice over. bomenstichting.nl says 'enkele jaren geleden heeft een vrachtwagen de slurftak aangereden', and our story first turned that into a truck tearing off part of the TRUNK in 2015, which was wrong in three ways at once. Corrected on 2026-08-17 to what that source says. Then Hanna Hirsch of Bomenstichting Amsterdam wrote on 2026-08-22: 'Ook al staat het op de website van de Bomenstichting, de iep is niet aangereden door een vrachtwagen.' She is the local branch of the organisation whose own national page carries the claim, so the collision is gone entirely rather than hedged. What survives is what anyone standing there can see: the low heavy branch and the support under it. Do not put the lorry back from that source."
+      "verify_notes": "The lorry is OUT, twice over. bomenstichting.nl says 'enkele jaren geleden heeft een vrachtwagen de slurftak aangereden', and our story first turned that into a truck tearing off part of the TRUNK in 2015, which was wrong in three ways at once. Corrected on 2026-08-17 to what that source says. Then Hanna Hirsch of Bomenstichting Amsterdam wrote on 2026-08-22: 'Ook al staat het op de website van de Bomenstichting, de iep is niet aangereden door een vrachtwagen.' She is the local branch of the organisation whose own national page carries the claim, so the collision is gone entirely rather than hedged. What survives is what anyone standing there can see: the low heavy branch and the support under it. Do not put the lorry back from that source.",
+      "girth_cm": 625
     },
     {
       "id": "ams_007",
@@ -263,7 +269,8 @@
       },
       "curation_status": "flagged",
       "notes": "Species is the regionally typical London plane but not explicitly confirmed in sources found. Exact planting date is not documented; estimated from the Plan Zuid development timeline (council approval 1917). The wartime survival story is explicitly unverified local lore, not a sourced fact. Photo viewed directly 2026-07-26 and confirmed: it shows a narrow Plan-Zuid street with tall plane trees interlocking overhead into exactly the tunnel effect the story describes, matching the Commons 'Lomanstraat, Amsterdam' category. Approved.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 259
     },
     {
       "id": "ams_008",
@@ -301,7 +308,8 @@
           6
         ],
         "label": "May and June, when the small yellow flowers scent the whole street"
-      }
+      },
+      "girth_cm": 175
     },
     {
       "id": "ams_009",
@@ -342,7 +350,8 @@
         ],
         "label": "midsummer, when the wingnuts trail their catkins",
         "kind": "catkins"
-      }
+      },
+      "girth_cm": 229
     },
     {
       "id": "ams_010",
@@ -382,7 +391,8 @@
         ],
         "label": "midsummer, for the hanging catkins",
         "kind": "catkins"
-      }
+      },
+      "girth_cm": 466
     },
     {
       "id": "ams_011",
@@ -414,7 +424,8 @@
       "curation_status": "flagged",
       "notes": "Planting date (1795) and girth (300cm) both trace to a single source lineage: Bomenstichting content that the national monumental-trees register entry (monumentalebomen.nl, id 1686149) appears to reuse, rather than two fully independent measurements. Species and presence in this garden are independently corroborated by NVBT (the Dutch botanical gardens association) and monumentaltrees.com. No exact in-garden coordinate found, only the Hortus street address, so pinned at the garden entrance rather than the specific specimen; location_precision is approximate for that reason. Do not present as the city's oldest tree without a citywide comparison; several other Amsterdam trees on this list are older by planting date.",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 308
     },
     {
       "id": "ams_016",
@@ -445,7 +456,8 @@
       "curation_status": "flagged",
       "curation_status_note": "flagged for the age discrepancy above; species/location/existence are solid (two sources agree).",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 263
     },
     {
       "id": "ams_018",
@@ -474,7 +486,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 500
     },
     {
       "id": "ams_019",
@@ -503,7 +516,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 442
     },
     {
       "id": "ams_020",
@@ -540,7 +554,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 262
     },
     {
       "id": "ams_021",
@@ -569,7 +584,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 472
     },
     {
       "id": "ams_022",
@@ -598,7 +614,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 251
     },
     {
       "id": "ams_023",
@@ -628,7 +645,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 366
     },
     {
       "id": "ams_024",
@@ -657,7 +675,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 502
     },
     {
       "id": "ams_025",
@@ -686,7 +705,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 357
     },
     {
       "id": "ams_026",
@@ -722,7 +742,8 @@
         ],
         "kind": "autumn colour",
         "label": "mid November, when the fans turn gold and drop within days"
-      }
+      },
+      "girth_cm": 391
     },
     {
       "id": "ams_027",
@@ -751,7 +772,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 555
     },
     {
       "id": "ams_028",
@@ -780,7 +802,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 397
     },
     {
       "id": "ams_030",
@@ -816,7 +839,8 @@
         ],
         "kind": "flowers",
         "label": "August, when the wide crown fills with white flowers"
-      }
+      },
+      "girth_cm": 383
     },
     {
       "id": "ams_031",
@@ -853,7 +877,8 @@
         ],
         "label": "September to October: winged seeds that spin down in pairs",
         "kind": "fruit"
-      }
+      },
+      "girth_cm": 336
     },
     {
       "id": "ams_032",
@@ -946,7 +971,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "girth_cm": 412
     },
     {
       "id": "ams_035",
@@ -981,7 +1007,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "girth_cm": 550
     },
     {
       "id": "ams_036",

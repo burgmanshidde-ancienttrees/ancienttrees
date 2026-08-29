@@ -64,7 +64,8 @@
         ],
         "label": "September to October: clear yellow, one of the most reliable autumn trees",
         "kind": "autumn colour"
-      }
+      },
+      "girth_cm": 650
     },
     {
       "id": "brg_002",
@@ -97,7 +98,8 @@
         "status": "approved",
         "width": 4000,
         "height": 3000
-      }
+      },
+      "girth_cm": 350
     },
     {
       "id": "brg_003",
@@ -135,7 +137,8 @@
         ],
         "label": "August to September: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "girth_cm": 270
     },
     {
       "id": "brg_006",
@@ -165,7 +168,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 370
     }
   ]
 }

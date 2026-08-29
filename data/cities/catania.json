@@ -56,7 +56,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 1400
     },
     {
       "id": "cat_002",
@@ -90,7 +91,8 @@
         "height": 2749
       },
       "height_m": 45.0,
-      "verify_notes": "Height 45.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 45.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 300
     },
     {
       "id": "cat_003",
@@ -124,7 +126,8 @@
         "height": 4000
       },
       "height_m": 40.0,
-      "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 340
     },
     {
       "id": "cat_004",
@@ -160,7 +163,8 @@
       },
       "height_m": 7.0,
       "verify_notes": "Height 7.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "girth_cm": 200
     }
   ]
 }

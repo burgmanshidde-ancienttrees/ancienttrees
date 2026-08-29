@@ -1,0 +1,3722 @@
+{
+ "note": "girth_cm copied onto published trees from an imported register, by scripts/girths.py. Kept so the provenance of a measurement is not lost the moment it is written.",
+ "filled": [
+  {
+   "city": "Alicante",
+   "id": "ali_001",
+   "tree": "Ficus Gabriel Miró II",
+   "girth_cm": 1065,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Alicante",
+   "id": "ali_002",
+   "tree": "Ficus Gabriel Miró IV",
+   "girth_cm": 1032,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Alicante",
+   "id": "ali_003",
+   "tree": "Ficus Gabriel Miró I",
+   "girth_cm": 760,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Alicante",
+   "id": "ali_004",
+   "tree": "Ficus Gabriel Miró III",
+   "girth_cm": 640,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Alicante",
+   "id": "ali_005",
+   "tree": "Ficus del Passeig de Canalejas",
+   "girth_cm": 1159,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Alicante",
+   "id": "ali_006",
+   "tree": "Ficus of Parque de Canalejas",
+   "girth_cm": 705,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Alicante",
+   "id": "ali_007",
+   "tree": "Ficus of Parque de Canalejas (west)",
+   "girth_cm": 635,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Alicante",
+   "id": "ali_008",
+   "tree": "The Ficus de Benalúa",
+   "girth_cm": 1469,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Alicante",
+   "id": "ali_009",
+   "tree": "The Fig of Plaza de Navarro Rodrigo",
+   "girth_cm": 291,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_001",
+   "tree": "The Heimanseik",
+   "girth_cm": 390,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 11.2
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_002",
+   "tree": "The Leidsebosje Planes",
+   "girth_cm": 715,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 12.6
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_003",
+   "tree": "The Vondelpark Poplar",
+   "girth_cm": 642,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 17.8
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_004",
+   "tree": "The Wertheimpark Wingnut",
+   "girth_cm": 257,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 7.0
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_005",
+   "tree": "The Cycad of the Hortus",
+   "girth_cm": 251,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 9.8
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_006",
+   "tree": "The Olifantsiep",
+   "girth_cm": 625,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 17.5
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_007",
+   "tree": "The Lomanstraat Cathedral of Trees",
+   "girth_cm": 259,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 7.3
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_008",
+   "tree": "The Amstelkade Olive Willow",
+   "girth_cm": 175,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 1.6
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_009",
+   "tree": "The Wingnuts of Amstelveld",
+   "girth_cm": 229,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 1.1
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_010",
+   "tree": "The Rijksmuseum Wingnut",
+   "girth_cm": 466,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 14.4
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_011",
+   "tree": "The Turkish Hazel of the Hortus",
+   "girth_cm": 308,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_016",
+   "tree": "The Turner's Oak of the Hortus",
+   "girth_cm": 263,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 19.5
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_018",
+   "tree": "The Westkant Plane of Wertheimpark",
+   "girth_cm": 500,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_019",
+   "tree": "The Oriental Plane of Wertheimpark",
+   "girth_cm": 442,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_020",
+   "tree": "The Leopold Maple of Wertheimpark",
+   "girth_cm": 262,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_021",
+   "tree": "The Oudemanhuispoort Elm",
+   "girth_cm": 472,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 5.1
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_022",
+   "tree": "The Wilhelminalinde",
+   "girth_cm": 251,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 1.0
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_023",
+   "tree": "The Van Loon Copper Beech",
+   "girth_cm": 366,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 1.7
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_024",
+   "tree": "The Rijksmuseum Poplar",
+   "girth_cm": 502,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 3.5
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_025",
+   "tree": "The Weteringplantsoen Wych Elm",
+   "girth_cm": 357,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 20.7
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_026",
+   "tree": "The Weteringplantsoen Ginkgo",
+   "girth_cm": 391,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 25.1
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_027",
+   "tree": "The Leaning Poplar of the Weteringschans",
+   "girth_cm": 555,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 11.9
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_028",
+   "tree": "The Weteringplantsoen Plane",
+   "girth_cm": 397,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 21.1
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_030",
+   "tree": "The Falckplantsoen Pagoda Tree",
+   "girth_cm": 383,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 4.4
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_031",
+   "tree": "The Wertheimpark Sycamore",
+   "girth_cm": 336,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 17.9
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_034",
+   "tree": "The Jakoba Mulder Tulip Tree",
+   "girth_cm": 412,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 7.2
+  },
+  {
+   "city": "Amsterdam",
+   "id": "ams_035",
+   "tree": "The Old Lady of the Forest",
+   "girth_cm": 550,
+   "column": "trunk_girth",
+   "register": "amsterdam-bijzondere-bomen.json",
+   "metres": 3.5
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_001",
+   "tree": "The Holm Oak of Carrer de l'Encarnacio",
+   "girth_cm": 270,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 28.5
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_003",
+   "tree": "The Regrown Carob of Placa de la Natura",
+   "girth_cm": 410,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 3.7
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_004",
+   "tree": "The Himalayan Cedar of the Labyrinth",
+   "girth_cm": 330,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 16.2
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_006",
+   "tree": "The Green Ash of the Sot de l'Estany",
+   "girth_cm": 320,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 15.0
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_008",
+   "tree": "The Silk Tree of the Ciutadella",
+   "girth_cm": 280,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 7.5
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_011",
+   "tree": "The Casuarina of the Cascada",
+   "girth_cm": 550,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_013",
+   "tree": "The Osage Orange of the Ciutadella",
+   "girth_cm": 260,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 19.9
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_014",
+   "tree": "The Red Gum of the Placa de les Caramelles",
+   "girth_cm": 310,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 2.6
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_015",
+   "tree": "The Holm Oak of the Bacardi Gardens",
+   "girth_cm": 210,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 3.9
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_016",
+   "tree": "The Wild Olive of Park Guell",
+   "girth_cm": 290,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_017",
+   "tree": "The Pica-Pica Tree of the Teatre Grec",
+   "girth_cm": 240,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.3
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_018",
+   "tree": "The Bunya Pine of the Teatre Grec",
+   "girth_cm": 140,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 6.0
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_019",
+   "tree": "The Coral Tree of the Laribal Path",
+   "girth_cm": 270,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 12.3
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_020",
+   "tree": "The Tipu Tree of Placa Carles Buigas",
+   "girth_cm": 330,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_021",
+   "tree": "The Ash of the Sot de l'Estany",
+   "girth_cm": 250,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 18.3
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_022",
+   "tree": "The Sycamore of the Sot de l'Estany",
+   "girth_cm": 140,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 22.1
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_023",
+   "tree": "The Stone Pine of the Palau de Pedralbes Gardens",
+   "girth_cm": 350,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_024",
+   "tree": "The Himalayan Cedars of the Palau de Pedralbes Gardens",
+   "girth_cm": 340,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_025",
+   "tree": "The Barbary Thuja of the Palau de Pedralbes Gardens",
+   "girth_cm": 120,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_026",
+   "tree": "The Stone Pines of the Torre Girona Gardens",
+   "girth_cm": 360,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_027",
+   "tree": "The Aleppo Pine of the Torre Girona Gardens",
+   "girth_cm": 290,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_028",
+   "tree": "The Bottle Tree of the Torre Girona Gardens",
+   "girth_cm": 250,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_029",
+   "tree": "The London Plane of the Vil.la Amelia Gardens",
+   "girth_cm": 350,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.6
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_030",
+   "tree": "The White Eucalyptus of the Vil.la Amelia Gardens",
+   "girth_cm": 520,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_031",
+   "tree": "The Peruvian Pepper Tree of the Vil.la Amelia Gardens",
+   "girth_cm": 270,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_032",
+   "tree": "The Canary Island Palms of the Vil.la Amelia Gardens",
+   "girth_cm": 230,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.6
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_033",
+   "tree": "The Mastic of Hort de l'Avi",
+   "girth_cm": 70,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Barcelona",
+   "id": "bcn_055",
+   "tree": "The Hornbeam of the Sot de l'Estany",
+   "girth_cm": 120,
+   "column": "girth",
+   "register": "barcelona-ail.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Bergamo",
+   "id": "bgm_001",
+   "tree": "The Bald Cypresses of Parco Marenzi",
+   "girth_cm": 455,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bergamo",
+   "id": "bgm_002",
+   "tree": "The Atlas Cedar of Parco Caprotti",
+   "girth_cm": 405,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bergamo",
+   "id": "bgm_003",
+   "tree": "The Strawberry Tree of Via alla Rocca",
+   "girth_cm": 355,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bergamo",
+   "id": "bgm_005",
+   "tree": "The Giant Cedar of Pedrengo",
+   "girth_cm": 683,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bergamo",
+   "id": "bgm_006",
+   "tree": "The Himalayan Cedar of Villa Piccinelli",
+   "girth_cm": 465,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bergamo",
+   "id": "bgm_008",
+   "tree": "The Horse Chestnut of Viale delle Rimembranze",
+   "girth_cm": 391,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bologna",
+   "id": "bol_002",
+   "tree": "The Sequoia of the Giardini Margherita",
+   "girth_cm": 520,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Bologna",
+   "id": "bol_003",
+   "tree": "The Plane Tree of Piazza Minghetti",
+   "girth_cm": 455,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bologna",
+   "id": "bol_004",
+   "tree": "The Oriental Plane of Piazza Malpighi",
+   "girth_cm": 520,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 4.2
+  },
+  {
+   "city": "Bologna",
+   "id": "bol_006",
+   "tree": "The Ginkgo of Piazza Cavour",
+   "girth_cm": 338,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 6.0
+  },
+  {
+   "city": "Bologna",
+   "id": "bol_011",
+   "tree": "The Grey Walnut of the Botanical Garden",
+   "girth_cm": 420,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bologna",
+   "id": "bol_012",
+   "tree": "The Atlas Cedar of Villa delle Rose",
+   "girth_cm": 545,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_001",
+   "tree": "The Black Poplar of Chante-Grillon",
+   "girth_cm": 741,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_002",
+   "tree": "The Pecan of the Jardin Public",
+   "girth_cm": 421,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_003",
+   "tree": "The Kentucky Coffeetree of Parc Bordelais",
+   "girth_cm": 292,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_004",
+   "tree": "The Magnolia of Place Gambetta",
+   "girth_cm": 358,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_005",
+   "tree": "The Ginkgo of the Jardin Public",
+   "girth_cm": 405,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_006",
+   "tree": "The Redwood Twins of Chante-Grillon",
+   "girth_cm": 393,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_007",
+   "tree": "The Caucasian Elm of Parc Bordelais",
+   "girth_cm": 371,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_008",
+   "tree": "The Black Locust of Parc Bordelais",
+   "girth_cm": 412,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_009",
+   "tree": "The Giant Sequoia of Parc de Bourran",
+   "girth_cm": 597,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Bordeaux",
+   "id": "bdx_010",
+   "tree": "The Himalayan Cedar of Parc de Bourran",
+   "girth_cm": 534,
+   "column": "girth_cm",
+   "register": "bordeaux-metropole-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Braga",
+   "id": "brg_001",
+   "tree": "The Tulip Tree of Biscainhos",
+   "girth_cm": 650,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Braga",
+   "id": "brg_002",
+   "tree": "The Cork Oak of Santa Tecla",
+   "girth_cm": 350,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Braga",
+   "id": "brg_003",
+   "tree": "The Three Oaks of Santa Tecla",
+   "girth_cm": 270,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Braga",
+   "id": "brg_006",
+   "tree": "The Trees of the Embrace",
+   "girth_cm": 370,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 8.3
+  },
+  {
+   "city": "Brno",
+   "id": "brq_001",
+   "tree": "The Moravian Square Oak",
+   "girth_cm": 440,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Brno",
+   "id": "brq_002",
+   "tree": "The Old Town Gate Oak",
+   "girth_cm": 480,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Brno",
+   "id": "brq_003",
+   "tree": "The Horse Chestnut of Rooseveltova",
+   "girth_cm": 326,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Brno",
+   "id": "brq_004",
+   "tree": "The Plane Tree Below Petrov",
+   "girth_cm": 400,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Brno",
+   "id": "brq_005",
+   "tree": "The Plane Tree of St Anne's",
+   "girth_cm": 575,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Brno",
+   "id": "brq_006",
+   "tree": "The Plane Tree of Benešova",
+   "girth_cm": 368,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Brno",
+   "id": "brq_007",
+   "tree": "Professor Chudoba's Plane",
+   "girth_cm": 475,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_003",
+   "tree": "The Oriental Plane of Parc Leopold",
+   "girth_cm": 648,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_011",
+   "tree": "The Turner's Oak of Parc d'Egmont",
+   "girth_cm": 290,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_012",
+   "tree": "The Ginkgo of Parc d'Egmont",
+   "girth_cm": 327,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_013",
+   "tree": "The Tulip Tree of Parc d'Egmont",
+   "girth_cm": 306,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_014",
+   "tree": "The Great Sycamore of Parc d'Egmont",
+   "girth_cm": 397,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_015",
+   "tree": "The Cedar of Lebanon of Parc d'Egmont",
+   "girth_cm": 298,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_016",
+   "tree": "The Red Oak of Parc d'Egmont",
+   "girth_cm": 342,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_017",
+   "tree": "The London Plane of Parc d'Egmont",
+   "girth_cm": 367,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_018",
+   "tree": "The Horse Chestnut of Parc d'Egmont",
+   "girth_cm": 308,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_019",
+   "tree": "The Oriental Plane of Parc d'Egmont",
+   "girth_cm": 272,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_020",
+   "tree": "The Kentucky Coffeetree of Parc d'Egmont",
+   "girth_cm": 73,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_024",
+   "tree": "The Pedunculate Oak of Mont des Arts",
+   "girth_cm": 166,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_025",
+   "tree": "The Ailanthus of Mont des Arts",
+   "girth_cm": 321,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_026",
+   "tree": "The Caucasian Wingnut of Mont des Arts",
+   "girth_cm": 173,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Brussels",
+   "id": "bru_027",
+   "tree": "The Pyramidal Holly of Parc d'Egmont",
+   "girth_cm": 140,
+   "column": "girth_cm",
+   "register": "brussels-arbres-remarquables.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Cagliari",
+   "id": "cag_004",
+   "tree": "The Ficus of Piazza Matteotti",
+   "girth_cm": 1200,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Cagliari",
+   "id": "cag_005",
+   "tree": "The Ficus of Piazza Ingrao",
+   "girth_cm": 980,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Cagliari",
+   "id": "cag_002",
+   "tree": "The Spino di Giuda of Giardini Pubblici",
+   "girth_cm": 294,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Cagliari",
+   "id": "cag_003",
+   "tree": "The Jacaranda of Giardini Pubblici",
+   "girth_cm": 174,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Cagliari",
+   "id": "cag_007",
+   "tree": "The Tintitaco",
+   "girth_cm": 300,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.6
+  },
+  {
+   "city": "Cagliari",
+   "id": "cag_006",
+   "tree": "The Cypress of Pirri Cemetery",
+   "girth_cm": 630,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Cagliari",
+   "id": "cag_008",
+   "tree": "The Aleppo Pines of San Pantaleo",
+   "girth_cm": 340,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_001",
+   "tree": "The Cedar of the Palco",
+   "girth_cm": 775,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_002",
+   "tree": "The Plane That Grew Sideways",
+   "girth_cm": 775,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_003",
+   "tree": "The Yew of the Bath of Venus",
+   "girth_cm": 392,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_004",
+   "tree": "The Douglas Fir of the English Garden",
+   "girth_cm": 580,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_005",
+   "tree": "The Sweet Osmanthus of the Winding Path",
+   "girth_cm": 650,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.3
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_006",
+   "tree": "The Camphor Tree of the Palco",
+   "girth_cm": 370,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_007",
+   "tree": "The Cork Oak of the Palco",
+   "girth_cm": 420,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_008",
+   "tree": "The Coast Redwood of the English Garden",
+   "girth_cm": 775,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_009",
+   "tree": "The Chilgoza Pine of the English Garden",
+   "girth_cm": 310,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_010",
+   "tree": "The Second Plane of the English Garden",
+   "girth_cm": 720,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_011",
+   "tree": "The Third Plane of the English Garden",
+   "girth_cm": 560,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Caserta",
+   "id": "cas_012",
+   "tree": "The Araucaria of Piazza Vanvitelli",
+   "girth_cm": 330,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Catania",
+   "id": "cat_001",
+   "tree": "The Moreton Bay Fig of Villa Bellini",
+   "girth_cm": 1400,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 14.0
+  },
+  {
+   "city": "Catania",
+   "id": "cat_002",
+   "tree": "The Larger Bunya Pine of Villa Bellini",
+   "girth_cm": 300,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Catania",
+   "id": "cat_003",
+   "tree": "The Smaller Bunya Pine of Villa Bellini",
+   "girth_cm": 340,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Catania",
+   "id": "cat_004",
+   "tree": "The Dragon Tree of the Orto Botanico",
+   "girth_cm": 200,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Como",
+   "id": "com_001",
+   "tree": "The Cedar of Villa Olmo",
+   "girth_cm": 820,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Como",
+   "id": "com_002",
+   "tree": "The Himalayan Cedar of Villa Geno",
+   "girth_cm": 560,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Como",
+   "id": "com_003",
+   "tree": "The Sycamore of Villa Geno",
+   "girth_cm": 550,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Como",
+   "id": "com_004",
+   "tree": "The Ginkgo of Villa Geno",
+   "girth_cm": 312,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Como",
+   "id": "com_005",
+   "tree": "The Cedar of Villa del Grumello",
+   "girth_cm": 595,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Como",
+   "id": "com_006",
+   "tree": "The Ginkgo of Villa del Grumello",
+   "girth_cm": 390,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Como",
+   "id": "com_007",
+   "tree": "The Magnolia of Villa del Grumello",
+   "girth_cm": 330,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Como",
+   "id": "com_009",
+   "tree": "The Horse Chestnut of Quarcino",
+   "girth_cm": 335,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Ferrara",
+   "id": "fer_001",
+   "tree": "The Gray Poplar of Palazzo dei Diamanti",
+   "girth_cm": 444,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Ferrara",
+   "id": "fer_002",
+   "tree": "The Bagolaro of Parco Massari",
+   "girth_cm": 376,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Ferrara",
+   "id": "fer_003",
+   "tree": "The Ginkgo of Parco Massari",
+   "girth_cm": 380,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Ferrara",
+   "id": "fer_004",
+   "tree": "The Ginkgo of the Biblioteca Ariostea",
+   "girth_cm": 452,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Ferrara",
+   "id": "fer_005",
+   "tree": "The Plane of Viale Po",
+   "girth_cm": 540,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_001",
+   "tree": "The Micheli Yew",
+   "girth_cm": 344,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 8.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_002",
+   "tree": "The Cork Oak of the Giardino dei Semplici",
+   "girth_cm": 457,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 8.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_005",
+   "tree": "The Leccio of the Cascine",
+   "girth_cm": 403,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 7.7
+  },
+  {
+   "city": "Florence",
+   "id": "flo_006",
+   "tree": "The Honey Locust of Salviatino",
+   "girth_cm": 525,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 4.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_007",
+   "tree": "The Cedar of the Bobolino",
+   "girth_cm": 455,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Florence",
+   "id": "flo_011",
+   "tree": "The Caucasian Elm That Was Cut Back to Save It",
+   "girth_cm": 610,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_012",
+   "tree": "The Zelkova Somebody Keeps Measuring",
+   "girth_cm": 453,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_013",
+   "tree": "The Flag-Crowned Pine",
+   "girth_cm": 382,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_014",
+   "tree": "The Himalayan Cedar of the Semplici",
+   "girth_cm": 418,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_016",
+   "tree": "The Stone Pine of the Bobolino",
+   "girth_cm": 412,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_017",
+   "tree": "The Monterey Cypress of the Giardino Simone Weil",
+   "girth_cm": 388,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_018",
+   "tree": "The Cypress of the Monte alle Croci Steps",
+   "girth_cm": 346,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_019",
+   "tree": "The Aleppo Pine of Via Giramondino",
+   "girth_cm": 323,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_021",
+   "tree": "The Chilean Wine Palm of Villa di Rusciano",
+   "girth_cm": 349,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Florence",
+   "id": "flo_022",
+   "tree": "The Cypress of Villa della Petraia",
+   "girth_cm": 580,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_001",
+   "tree": "The Fernleaf Beech of Palazzo Doria-Tursi",
+   "girth_cm": 230,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_002",
+   "tree": "The Poet's Holm Oak of Montesignano",
+   "girth_cm": 257,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_003",
+   "tree": "The Holm Oak of San Pantaleo",
+   "girth_cm": 305,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_004",
+   "tree": "The Great Camphor Tree of Via Romolo Gessi",
+   "girth_cm": 734,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_005",
+   "tree": "The Coast Redwood of Villa Serra",
+   "girth_cm": 526,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_006",
+   "tree": "The Turkey Oak of Villa Serra",
+   "girth_cm": 378,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_007",
+   "tree": "The European Hop-hornbeam of Villa Serra",
+   "girth_cm": 256,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_008",
+   "tree": "The Pedunculate Oak of Villa Serra",
+   "girth_cm": 296,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_009",
+   "tree": "The Camphor Tree of Villa Durazzo Pallavicini",
+   "girth_cm": 538,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Genoa",
+   "id": "gnv_010",
+   "tree": "The Cedar of Lebanon of Villa Durazzo Pallavicini",
+   "girth_cm": 538,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Guimaraes",
+   "id": "gui_001",
+   "tree": "The Plane Trees of the Paco dos Duques",
+   "girth_cm": 452,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Guimaraes",
+   "id": "gui_002",
+   "tree": "The Olive Tree of Nossa Senhora da Oliveira",
+   "girth_cm": 290,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Guimaraes",
+   "id": "gui_003",
+   "tree": "The Camellias of Palacio Vila Flor",
+   "girth_cm": 187,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Guimaraes",
+   "id": "gui_004",
+   "tree": "The Himalayan Cedars of Atouguia Cemetery",
+   "girth_cm": 417,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Guimaraes",
+   "id": "gui_006",
+   "tree": "The Stone Pine of Silvares",
+   "girth_cm": 380,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Hilo",
+   "id": "hbi_005",
+   "tree": "The Loulu Palm of Kalakaua Park",
+   "girth_cm": 329,
+   "column": "girth_cm",
+   "register": "hawaii-exceptional-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_003",
+   "tree": "The Cypress of Príncipe Real",
+   "girth_cm": 390,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 23.8
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_004",
+   "tree": "The Ombú of Largo do Limoeiro",
+   "girth_cm": 1050,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 5.5
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_005",
+   "tree": "The Tipu of Jardim de São Bento",
+   "girth_cm": 420,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_007",
+   "tree": "The Nettle Tree of Avenida de Berlim",
+   "girth_cm": 400,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_013",
+   "tree": "The Strangler Fig of Príncipe Real",
+   "girth_cm": 605,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_014",
+   "tree": "The Yew of Campo Santana",
+   "girth_cm": 380,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_015",
+   "tree": "The Weeping Fig of Campo Santana",
+   "girth_cm": 500,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_016",
+   "tree": "The Taxodium of the Jardim da Parada",
+   "girth_cm": 660,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_017",
+   "tree": "The Pohutukawa of the Jardim da Parada",
+   "girth_cm": 455,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 4.2
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_018",
+   "tree": "The Tipuana of the Ninth of April Garden",
+   "girth_cm": 320,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_019",
+   "tree": "The Date Palm of the Ninth of April Garden",
+   "girth_cm": 162,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_020",
+   "tree": "The Tipuana of Jardim Roque Gameiro",
+   "girth_cm": 298,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_021",
+   "tree": "The Tipuana of Praça São João Bosco",
+   "girth_cm": 342,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_022",
+   "tree": "The Holm Oak of Parque Bensaúde",
+   "girth_cm": 312,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_023",
+   "tree": "The Second Holm Oak of Parque Bensaúde",
+   "girth_cm": 172,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_024",
+   "tree": "The Red-Flowering Eucalyptus of Parque Bensaúde",
+   "girth_cm": 145,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_025",
+   "tree": "The Field Maple of Parque Bensaúde",
+   "girth_cm": 350,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_026",
+   "tree": "The Paperbark of Jardim Constantino",
+   "girth_cm": 158,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_027",
+   "tree": "The Moreton Bay Fig of Jardim Constantino",
+   "girth_cm": 233,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_028",
+   "tree": "The Belas-Sombras of Jardim António Feijó",
+   "girth_cm": 1045,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_029",
+   "tree": "The Bela-Sombra of Praça António Sardinha",
+   "girth_cm": 1090,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_030",
+   "tree": "The Dragon Tree of Quinta Conde dos Arcos",
+   "girth_cm": 475,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_031",
+   "tree": "The Plane Tree of Hospital Pulido Valente",
+   "girth_cm": 585,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_032",
+   "tree": "The Plane Tree of Travessa do Arco da Torre",
+   "girth_cm": 375,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lisbon",
+   "id": "lis_033",
+   "tree": "The Monterey Cypress of Parque do Caramão da Ajuda",
+   "girth_cm": 390,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lucca",
+   "id": "luc_001",
+   "tree": "The Cedar of Lebanon of the Orto Botanico",
+   "girth_cm": 655,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lucca",
+   "id": "luc_002",
+   "tree": "The Redwood of the Orto Botanico",
+   "girth_cm": 576,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lucca",
+   "id": "luc_004",
+   "tree": "The Monterey Cypress on the San Regolo Bastion",
+   "girth_cm": 355,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lucca",
+   "id": "luc_006",
+   "tree": "The Cedar of the Righteous at Villa Bottini",
+   "girth_cm": 700,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lucca",
+   "id": "luc_007",
+   "tree": "The Corsican Pine of the Orto Botanico",
+   "girth_cm": 282,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lucca",
+   "id": "luc_008",
+   "tree": "The Magnolia of Via dell'Orto Botanico",
+   "girth_cm": 323,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lucca",
+   "id": "luc_009",
+   "tree": "The Plane of Via del Fosso",
+   "girth_cm": 360,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Lucca",
+   "id": "luc_010",
+   "tree": "The Nepal Camphor of Via Barsanti e Matteucci",
+   "girth_cm": 384,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Milan",
+   "id": "mil_003",
+   "tree": "Bagolaro dei Giardini Montanelli",
+   "girth_cm": 424,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 12.6
+  },
+  {
+   "city": "Milan",
+   "id": "mil_006",
+   "tree": "La Quercia Rossa di Piazza XXIV Maggio",
+   "girth_cm": 465,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 2.8
+  },
+  {
+   "city": "Milan",
+   "id": "mil_009",
+   "tree": "La Pianta di Affori",
+   "girth_cm": 644,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 4.8
+  },
+  {
+   "city": "Milan",
+   "id": "mil_010",
+   "tree": "Il Noce del Caucaso di Parco Sempione",
+   "girth_cm": 435,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Milan",
+   "id": "mil_011",
+   "tree": "Il Noce del Caucaso dell'Orto Botanico di Brera",
+   "girth_cm": 470,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Milan",
+   "id": "mil_012",
+   "tree": "Il Platano della Biodiversita",
+   "girth_cm": 483,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Milan",
+   "id": "mil_013",
+   "tree": "Il Noce del Caucaso dei Giardini Montanelli",
+   "girth_cm": 550,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Milan",
+   "id": "mil_016",
+   "tree": "Il Platano di Piazza Sant'Ambrogio",
+   "girth_cm": 420,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Milan",
+   "id": "mil_017",
+   "tree": "Il Platano di Viale Cervantes",
+   "girth_cm": 390,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Milan",
+   "id": "mil_018",
+   "tree": "Il Platano dei 34 Metri ai Giardini Montanelli",
+   "girth_cm": 475,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Milan",
+   "id": "mil_020",
+   "tree": "Il Platano di Viale Montesanto",
+   "girth_cm": 525,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Milan",
+   "id": "mil_021",
+   "tree": "Il Platano di Piazzale Libia",
+   "girth_cm": 400,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Naples",
+   "id": "nap_001",
+   "tree": "The Camphor of the Garden of the Princes",
+   "girth_cm": 830,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 3.4
+  },
+  {
+   "city": "Naples",
+   "id": "nap_002",
+   "tree": "The Camphor of the Royal Orchard",
+   "girth_cm": 730,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Naples",
+   "id": "nap_003",
+   "tree": "The Robust Eucalyptus of Capodimonte",
+   "girth_cm": 330,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Naples",
+   "id": "nap_004",
+   "tree": "The Yew of the Garden of the Princes",
+   "girth_cm": 250,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Naples",
+   "id": "nap_005",
+   "tree": "The Montezuma Cypress of the Garden of the Princes",
+   "girth_cm": 300,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Naples",
+   "id": "nap_007",
+   "tree": "The Platano of San Severino",
+   "girth_cm": 255,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Naples",
+   "id": "nap_009",
+   "tree": "The Plane Tree of the Villa Comunale",
+   "girth_cm": 412,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Naples",
+   "id": "nap_010",
+   "tree": "The Holm Oak of Sant'Andrea delle Dame",
+   "girth_cm": 500,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Naples",
+   "id": "nap_011",
+   "tree": "The Cretan Palm That Came Back From a War",
+   "girth_cm": 380,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 18.7
+  },
+  {
+   "city": "Naples",
+   "id": "nap_012",
+   "tree": "The Paperbark of the Garden of the Princes",
+   "girth_cm": 75,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Naples",
+   "id": "nap_013",
+   "tree": "The False Kapok of the Botanical Garden",
+   "girth_cm": 880,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Naples",
+   "id": "nap_014",
+   "tree": "The Ginkgo of the Botanical Garden",
+   "girth_cm": 300,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Naples",
+   "id": "nap_015",
+   "tree": "The Crenate Oak of the Botanical Garden",
+   "girth_cm": 440,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Naples",
+   "id": "nap_016",
+   "tree": "The Blue Gum of the Botanical Garden",
+   "girth_cm": 440,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Naples",
+   "id": "nap_017",
+   "tree": "The Chilean Wine Palm of the Botanical Garden",
+   "girth_cm": 250,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Naples",
+   "id": "nap_023",
+   "tree": "The Magnolia of Capodimonte",
+   "girth_cm": 540,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.3
+  },
+  {
+   "city": "Padua",
+   "id": "pad_005",
+   "tree": "The Magnolia of the Saint",
+   "girth_cm": 440,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 9.9
+  },
+  {
+   "city": "Padua",
+   "id": "pad_008",
+   "tree": "The Leaning Hackberry of Parco Treves",
+   "girth_cm": 155,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Palermo",
+   "id": "pal_001",
+   "tree": "The Ficus of Piazza Marina",
+   "girth_cm": 3600,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Palermo",
+   "id": "pal_002",
+   "tree": "The Falcone Tree",
+   "girth_cm": 291,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Palermo",
+   "id": "pal_003",
+   "tree": "The Ficus of the Orto Botanico",
+   "girth_cm": 2400,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Palermo",
+   "id": "pal_004",
+   "tree": "The Dragon Tree of Villa Malfitano",
+   "girth_cm": 590,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Palermo",
+   "id": "pal_005",
+   "tree": "The Dragon Tree of the Palazzina Cinese",
+   "girth_cm": 600,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Palermo",
+   "id": "pal_006",
+   "tree": "The Ficus of Villa Trabia",
+   "girth_cm": 480,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Palermo",
+   "id": "pal_009",
+   "tree": "The Fig of Villa Malfitano",
+   "girth_cm": 2100,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Palermo",
+   "id": "pal_010",
+   "tree": "The Fig of Villa Tasca",
+   "girth_cm": 2730,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_001",
+   "tree": "The Robinier of Square Rene-Viviani",
+   "girth_cm": 365,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 22.6
+  },
+  {
+   "city": "Paris",
+   "id": "par_005",
+   "tree": "The Great Plane of Parc Monceau",
+   "girth_cm": 645,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_006",
+   "tree": "The Sequoia of Buttes-Chaumont",
+   "girth_cm": 553,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_008",
+   "tree": "The Caucasian Elm of Avenue Foch",
+   "girth_cm": 445,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_009",
+   "tree": "The Plane of Parc Montsouris",
+   "girth_cm": 670,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_010",
+   "tree": "The Sophora by the Lake",
+   "girth_cm": 410,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_013",
+   "tree": "The Caucasian Elm of Square Samuel Paty",
+   "girth_cm": 267,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Paris",
+   "id": "par_014",
+   "tree": "The Oriental Planes of Square Michel-Foucault",
+   "girth_cm": 470,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Paris",
+   "id": "par_015",
+   "tree": "The Plane of Quai Saint-Bernard",
+   "girth_cm": 380,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Paris",
+   "id": "par_016",
+   "tree": "The Twisted Beech of Square des Arenes de Lutece",
+   "girth_cm": 110,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_017",
+   "tree": "The Anne Frank Chestnut",
+   "girth_cm": 100,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_018",
+   "tree": "The Fig Tree of Square Georges Cain",
+   "girth_cm": 145,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_019",
+   "tree": "The Sequoia of the Champs-Élysées Gardens",
+   "girth_cm": 360,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_020",
+   "tree": "The Twin Planes of Avenue Winston Churchill",
+   "girth_cm": 505,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 5.7
+  },
+  {
+   "city": "Paris",
+   "id": "par_021",
+   "tree": "The Magnolia of Square d'Ajaccio",
+   "girth_cm": 163,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_022",
+   "tree": "The Plane of Square d'Ajaccio",
+   "girth_cm": 490,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_023",
+   "tree": "The Turkish Hazel of Square du Temple",
+   "girth_cm": 235,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_024",
+   "tree": "The Old Hazel of Square Maurice-Gardette",
+   "girth_cm": 265,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_025",
+   "tree": "The Caucasian Wingnut of Square d'Estienne d'Orves",
+   "girth_cm": 380,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_026",
+   "tree": "The Chinaberry of Square Boucicaut",
+   "girth_cm": 155,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Paris",
+   "id": "par_027",
+   "tree": "The Amur Cork Tree of Square Michel-Foucault",
+   "girth_cm": 470,
+   "column": "girth_cm",
+   "register": "paris-arbres-remarquables.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Parma",
+   "id": "prm_001",
+   "tree": "The Great Plane of Palazzo Ducale",
+   "girth_cm": 655,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Parma",
+   "id": "prm_002",
+   "tree": "The Cedar of Lebanon of Piazza della Pace",
+   "girth_cm": 464,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Parma",
+   "id": "prm_003",
+   "tree": "The Field Elm of Parco Ducale",
+   "girth_cm": 382,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Parma",
+   "id": "prm_004",
+   "tree": "The Horse Chestnut of Parco Ducale",
+   "girth_cm": 370,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Parma",
+   "id": "prm_005",
+   "tree": "The Pedunculate Oak of Palazzo Ducale",
+   "girth_cm": 420,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Perugia",
+   "id": "pgi_001",
+   "tree": "The Palazzo Murena Cedar",
+   "girth_cm": 485,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Perugia",
+   "id": "pgi_002",
+   "tree": "The Atlas Cedar of Piazza Italia",
+   "girth_cm": 390,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Perugia",
+   "id": "pgi_003",
+   "tree": "The Cedar of Lebanon at Porta Pesa",
+   "girth_cm": 410,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Perugia",
+   "id": "pgi_005",
+   "tree": "The Hackberry of Via Fiume",
+   "girth_cm": 445,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Perugia",
+   "id": "pgi_006",
+   "tree": "The Holm Oaks of Giardini del Frontone",
+   "girth_cm": 350,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Perugia",
+   "id": "pgi_007",
+   "tree": "The Himalayan Cedar of the Cimitero Monumentale",
+   "girth_cm": 496,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Perugia",
+   "id": "pgi_008",
+   "tree": "The Cypress of Parco della Cuparella",
+   "girth_cm": 293,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Perugia",
+   "id": "pgi_009",
+   "tree": "The North Oak of Strada del Gioco",
+   "girth_cm": 430,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Perugia",
+   "id": "pgi_010",
+   "tree": "The South Oak of Strada del Gioco",
+   "girth_cm": 422,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_001",
+   "tree": "The Watson Beech",
+   "girth_cm": 572,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_002",
+   "tree": "The Farrell Planetree",
+   "girth_cm": 436,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_003",
+   "tree": "The Eliot Hawthorns",
+   "girth_cm": 180,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_004",
+   "tree": "The Kamm Walnut",
+   "girth_cm": 424,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_005",
+   "tree": "The Miller Pine",
+   "girth_cm": 323,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_006",
+   "tree": "The Rockey Elm",
+   "girth_cm": 460,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_007",
+   "tree": "The Storm Elm",
+   "girth_cm": 430,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_008",
+   "tree": "The Patton Road Sequoia",
+   "girth_cm": 707,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_009",
+   "tree": "The Balch Creek Fir",
+   "girth_cm": 558,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_010",
+   "tree": "The Hoyt Dawn Redwood",
+   "girth_cm": 329,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_011",
+   "tree": "The Mount Tabor Sequoia",
+   "girth_cm": 783,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_012",
+   "tree": "The Powell Butte Poplar",
+   "girth_cm": 975,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_013",
+   "tree": "The Parkrose Beech",
+   "girth_cm": 704,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.3
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_014",
+   "tree": "The Knott Street Wingnuts",
+   "girth_cm": 232,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 1.0
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_015",
+   "tree": "The Eighteenth Avenue Planes",
+   "girth_cm": 482,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_016",
+   "tree": "The Irvington Elm",
+   "girth_cm": 454,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_017",
+   "tree": "The Thompson Street Horsechestnut",
+   "girth_cm": 436,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_018",
+   "tree": "The Twenty-Fourth Avenue Catalpas",
+   "girth_cm": 411,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_019",
+   "tree": "The Overlook Planes",
+   "girth_cm": 536,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Portland",
+   "id": "ptl_020",
+   "tree": "The Irvington Sycamore",
+   "girth_cm": 393,
+   "column": "circumference_ft",
+   "register": "portland-heritage-trees.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Porto",
+   "id": "por_001",
+   "tree": "The Tulip Tree of Casa Tait",
+   "girth_cm": 500,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 4.2
+  },
+  {
+   "city": "Porto",
+   "id": "por_002",
+   "tree": "The Magnolia of Casa Tait",
+   "girth_cm": 450,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_007",
+   "tree": "The Texas Madrone of the Botanical Garden",
+   "girth_cm": 100,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_011",
+   "tree": "The Copper Beech of FAUP",
+   "girth_cm": 485,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_012",
+   "tree": "The Camphor Tree of Via Panorâmica",
+   "girth_cm": 425,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_013",
+   "tree": "The Atlas Cedar of Quinta Primo Madeira",
+   "girth_cm": 405,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_014",
+   "tree": "The Tulip Tree of Quinta Primo Madeira",
+   "girth_cm": 435,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_015",
+   "tree": "The London Plane of Quinta Primo Madeira",
+   "girth_cm": 640,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_016",
+   "tree": "The Horse Chestnut of Palacete Burmester",
+   "girth_cm": 315,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_017",
+   "tree": "The Yew of Palacete Burmester",
+   "girth_cm": 580,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_018",
+   "tree": "The Ginkgo of the Jardim das Virtudes",
+   "girth_cm": 430,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_020",
+   "tree": "The Tulip Tree of Casa Allen",
+   "girth_cm": 524,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_021",
+   "tree": "The Magnolia Ring of Jardim de São Lázaro",
+   "girth_cm": 260,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_022",
+   "tree": "The Camellias of Largo da Igreja de Paranhos",
+   "girth_cm": 115,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_023",
+   "tree": "The Metrosideros of Passeio Alegre",
+   "girth_cm": 315,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 5.6
+  },
+  {
+   "city": "Porto",
+   "id": "por_025",
+   "tree": "The Magnolias of Jardim de Arca d'Água",
+   "girth_cm": 243,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Porto",
+   "id": "por_027",
+   "tree": "The Tulip Trees of Praça Pedro Nunes",
+   "girth_cm": 360,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Prague",
+   "id": "prg_001",
+   "tree": "The Beethoven Plane",
+   "girth_cm": 728,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 4.1
+  },
+  {
+   "city": "Prague",
+   "id": "prg_002",
+   "tree": "The Plane of Karlovo namesti",
+   "girth_cm": 714,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 3.7
+  },
+  {
+   "city": "Prague",
+   "id": "prg_003",
+   "tree": "The Plane of Kinsky Garden",
+   "girth_cm": 580,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 9.4
+  },
+  {
+   "city": "Prague",
+   "id": "prg_004",
+   "tree": "The Plane of Kampa",
+   "girth_cm": 506,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 8.3
+  },
+  {
+   "city": "Prague",
+   "id": "prg_005",
+   "tree": "The Twin Beech of Hvezda",
+   "girth_cm": 538,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 27.9
+  },
+  {
+   "city": "Prague",
+   "id": "prg_006",
+   "tree": "The Ginkgo of Stromovka",
+   "girth_cm": 365,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 6.2
+  },
+  {
+   "city": "Prague",
+   "id": "prg_007",
+   "tree": "The Oak of Cisarsky ostrov",
+   "girth_cm": 478,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 2.1
+  },
+  {
+   "city": "Prague",
+   "id": "prg_008",
+   "tree": "The Ash of Strahov Garden",
+   "girth_cm": 530,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 3.5
+  },
+  {
+   "city": "Prague",
+   "id": "prg_009",
+   "tree": "The Field Maple of the Seminary Garden",
+   "girth_cm": 293,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Prague",
+   "id": "prg_011",
+   "tree": "The Oak of Dienzenhofer Gardens",
+   "girth_cm": 393,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 0.3
+  },
+  {
+   "city": "Prague",
+   "id": "prg_015",
+   "tree": "The Elm of Ruzova Street",
+   "girth_cm": 335,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 28.8
+  },
+  {
+   "city": "Prague",
+   "id": "prg_016",
+   "tree": "The Old Town's Only Oak",
+   "girth_cm": 321,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 1.9
+  },
+  {
+   "city": "Prague",
+   "id": "prg_017",
+   "tree": "The Plane of Nove Mlyny",
+   "girth_cm": 342,
+   "column": "girth_cm",
+   "register": "czech-aopk-pamatne-stromy.json",
+   "metres": 2.1
+  },
+  {
+   "city": "Rome",
+   "id": "rom_005",
+   "tree": "The Cedar of the Belvedere",
+   "girth_cm": 460,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_006",
+   "tree": "The Leccio of the Lake",
+   "girth_cm": 430,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 8.6
+  },
+  {
+   "city": "Rome",
+   "id": "rom_008",
+   "tree": "The Cedar of Celimontana",
+   "girth_cm": 440,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_009",
+   "tree": "The Aleppo Pine of Celimontana",
+   "girth_cm": 350,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 4.1
+  },
+  {
+   "city": "Rome",
+   "id": "rom_011",
+   "tree": "The Himalayan Cedar of the German Institute",
+   "girth_cm": 500,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_012",
+   "tree": "The Podocarp of Villa Sciarra",
+   "girth_cm": 200,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_013",
+   "tree": "The Plane of Piazza San Cosimato",
+   "girth_cm": 565,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_014",
+   "tree": "The Horse Chestnut of the Cordonata",
+   "girth_cm": 345,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_015",
+   "tree": "The Cedar Above the Lake",
+   "girth_cm": 410,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_016",
+   "tree": "The Redwood of the Pincio",
+   "girth_cm": 420,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_017",
+   "tree": "The Magnolia of Via Corsini",
+   "girth_cm": 290,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 8.5
+  },
+  {
+   "city": "Rome",
+   "id": "rom_018",
+   "tree": "The Cedar of Lebanon of Villa Torlonia",
+   "girth_cm": 600,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 18.6
+  },
+  {
+   "city": "Rome",
+   "id": "rom_019",
+   "tree": "The Podocarp of Piazza Vittorio",
+   "girth_cm": 230,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 13.9
+  },
+  {
+   "city": "Rome",
+   "id": "rom_020",
+   "tree": "The Chir Pine of Colle Oppio",
+   "girth_cm": 290,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 11.4
+  },
+  {
+   "city": "Rome",
+   "id": "rom_023",
+   "tree": "The Holm Oak of Piazza Perin del Vaga",
+   "girth_cm": 280,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 6.1
+  },
+  {
+   "city": "Rome",
+   "id": "rom_024",
+   "tree": "The Hackberry of the Parco degli Scipioni",
+   "girth_cm": 401,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_025",
+   "tree": "The Plane of Viale Jonio",
+   "girth_cm": 553,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Rome",
+   "id": "rom_026",
+   "tree": "The Chir Pine of Villa Fiorelli",
+   "girth_cm": 297,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_027",
+   "tree": "The Black Poplar of Via Conca d'Oro",
+   "girth_cm": 405,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_028",
+   "tree": "The Hackberry of the Mura Latine",
+   "girth_cm": 414,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Rome",
+   "id": "rom_029",
+   "tree": "The Mexican Blue Palm of Villa Sciarra",
+   "girth_cm": 294,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_001",
+   "tree": "The Six Araucarias of Largo Jose Afonso",
+   "girth_cm": 241,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_002",
+   "tree": "The Plane of Largo Doutor Francisco Soveral",
+   "girth_cm": 338,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_003",
+   "tree": "The Silky Oaks of Largo Marques de Pombal",
+   "girth_cm": 250,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.3
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_004",
+   "tree": "The Melaleuca That Grows Sideways",
+   "girth_cm": 212,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_005",
+   "tree": "The Stone Pines of Rua Henri Perron",
+   "girth_cm": 415,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_006",
+   "tree": "The Box Elder of the Jardim do Bonfim",
+   "girth_cm": 395,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_007",
+   "tree": "The Norfolk Island Hibiscus of Montalvao",
+   "girth_cm": 230,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.2
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_008",
+   "tree": "The Poplars by Bocage's School",
+   "girth_cm": 334,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_009",
+   "tree": "The Pepper Tree That Mended Nets",
+   "girth_cm": 164,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.6
+  },
+  {
+   "city": "Setubal",
+   "id": "stb_010",
+   "tree": "The Peruvian Pepper of the Jardim de Palhais",
+   "girth_cm": 212,
+   "column": "girth_m",
+   "register": "portugal-icnf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Sorrento",
+   "id": "srn_001",
+   "tree": "The Holm Oak of Villa Fondi",
+   "girth_cm": 318,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Sorrento",
+   "id": "srn_002",
+   "tree": "The Stone Pine of Villa Fondi",
+   "girth_cm": 418,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Sorrento",
+   "id": "srn_003",
+   "tree": "The Cemetery Cypress of Piano di Sorrento",
+   "girth_cm": 266,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Sorrento",
+   "id": "srn_004",
+   "tree": "The Plane Tree of Via Maresca",
+   "girth_cm": 295,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_001",
+   "tree": "The Plane Tree of Via Santa Croce",
+   "girth_cm": 590,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_002",
+   "tree": "The Black Poplar of Largo Pigarelli",
+   "girth_cm": 570,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_003",
+   "tree": "The Plane Tree of Via Vannetti",
+   "girth_cm": 565,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_004",
+   "tree": "The Elm of Piazza Dante",
+   "girth_cm": 500,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_005",
+   "tree": "The Elm of Maso Ginocchio",
+   "girth_cm": 393,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_006",
+   "tree": "The Cedar of Parco Gocciadoro",
+   "girth_cm": 525,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_007",
+   "tree": "The Chestnut of Sardagna",
+   "girth_cm": 550,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_008",
+   "tree": "The Hackberry of Cortesano",
+   "girth_cm": 410,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_009",
+   "tree": "The Beech of Malga Brigolina",
+   "girth_cm": 465,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trento",
+   "id": "tre_010",
+   "tree": "The Wild Cherry of Passo del Cimirlo",
+   "girth_cm": 359,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_001",
+   "tree": "The Redwood of Miramare",
+   "girth_cm": 425,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_002",
+   "tree": "The Monterey Cypress of Miramare",
+   "girth_cm": 410,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_003",
+   "tree": "The Ghost Pine of Miramare",
+   "girth_cm": 250,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_004",
+   "tree": "The Greek Strawberry Tree of Miramare",
+   "girth_cm": 204,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_005",
+   "tree": "The Great Plane of the Giardino Pubblico",
+   "girth_cm": 542,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_006",
+   "tree": "The Twin Horse Chestnuts of the Giardino Pubblico",
+   "girth_cm": 335,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_007",
+   "tree": "The Valonia Oak of the Giardino Pubblico",
+   "girth_cm": 179,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_008",
+   "tree": "The Plane of the Boschetto Roundabout",
+   "girth_cm": 510,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_009",
+   "tree": "The Bagolaro of Piazza Hortis",
+   "girth_cm": 396,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Trieste",
+   "id": "tri_010",
+   "tree": "The Siberian Elm of Piazzale Rosmini",
+   "girth_cm": 358,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_001",
+   "tree": "The Caucasian Wingnut of the Giardino Sambuy",
+   "girth_cm": 605,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_002",
+   "tree": "The Plane of the Giardini Cavour",
+   "girth_cm": 550,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_003",
+   "tree": "The Ginkgo of the Giardini Cavour",
+   "girth_cm": 370,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_004",
+   "tree": "The Hackberry of the Valentino",
+   "girth_cm": 475,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_005",
+   "tree": "The Oak behind the Castello del Valentino",
+   "girth_cm": 400,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_006",
+   "tree": "The Plane by the Eridano",
+   "girth_cm": 600,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_007",
+   "tree": "The Plane at the Borgo Medievale",
+   "girth_cm": 510,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_008",
+   "tree": "The Plane of the Fontana dei Dodici Mesi",
+   "girth_cm": 550,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_009",
+   "tree": "The Grandfather Plane of Parco della Tesoriera",
+   "girth_cm": 665,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Turin",
+   "id": "tor_010",
+   "tree": "The Caucasian Elm of the Giardini Reali",
+   "girth_cm": 350,
+   "column": "girth_cm",
+   "register": "piemonte-alberi-monumentali.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_001",
+   "tree": "El Titan, the Ficus of the Parterre",
+   "girth_cm": 1382,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 4.9
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_002",
+   "tree": "The Olive Tree of La Rambleta",
+   "girth_cm": 400,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_003",
+   "tree": "The Ginkgo of Jardín de Monforte",
+   "girth_cm": 375,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_004",
+   "tree": "The Ficus of the Countess of Ripalda",
+   "girth_cm": 1376,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 3.4
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_008",
+   "tree": "The Palm of Vicente Peris",
+   "girth_cm": 130,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_009",
+   "tree": "The Eucalyptus of Benimamet",
+   "girth_cm": 597,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_011",
+   "tree": "The Ficus of Plaza Centenar de la Ploma",
+   "girth_cm": 1370,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_012",
+   "tree": "The Ficus of the Corts Valencianes",
+   "girth_cm": 1362,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.4
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_013",
+   "tree": "The Ficus of the Alameditas de Serranos",
+   "girth_cm": 620,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.1
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_014",
+   "tree": "The First Ficus of the Glorieta",
+   "girth_cm": 968,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.3
+  },
+  {
+   "city": "Valencia",
+   "id": "vlc_015",
+   "tree": "The Caucasian Elm of the Botanic Garden",
+   "girth_cm": 535,
+   "column": "girth_m",
+   "register": "valencia-arboles-monumentales.json",
+   "metres": 0.5
+  },
+  {
+   "city": "Venice",
+   "id": "ven_011",
+   "tree": "The Palm of San Servolo",
+   "girth_cm": 188,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  },
+  {
+   "city": "Verona",
+   "id": "ver_004",
+   "tree": "The Himalayan Cedar of Via Nino Bixio",
+   "girth_cm": 309,
+   "column": "girth_cm",
+   "register": "italy-masaf.json",
+   "metres": 0.0
+  }
+ ]
+}

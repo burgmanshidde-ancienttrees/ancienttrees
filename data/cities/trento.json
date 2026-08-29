@@ -55,7 +55,8 @@
         "status": "missing"
       },
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 590
     },
     {
       "id": "tre_002",
@@ -87,7 +88,8 @@
         "status": "missing"
       },
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 570
     },
     {
       "id": "tre_003",
@@ -120,7 +122,8 @@
         "height": 4080
       },
       "height_m": 23.0,
-      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 565
     },
     {
       "id": "tre_004",
@@ -151,7 +154,8 @@
         "status": "missing"
       },
       "height_m": 30.5,
-      "verify_notes": "Height 30.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 500
     },
     {
       "id": "tre_005",
@@ -182,7 +186,8 @@
         "status": "missing"
       },
       "height_m": 26.0,
-      "verify_notes": "Height 26.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 26.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 393
     },
     {
       "id": "tre_006",
@@ -213,7 +218,8 @@
         "status": "missing"
       },
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 525
     },
     {
       "id": "tre_007",
@@ -252,7 +258,8 @@
         "status": "missing"
       },
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 550
     },
     {
       "id": "tre_008",
@@ -284,7 +291,8 @@
       },
       "notes": "Age deliberately empty: no source publishes one, and Italy's national register has no age field. Flagged because only one press source (Il T Quotidiano) places the tree precisely, at the church of Sant'Antonio, and no second physical description or photograph was found.",
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 410
     },
     {
       "id": "tre_009",
@@ -324,7 +332,8 @@
       },
       "notes": "Pin is the register coordinate, roughly 330 m north-east of the malga building, so it is the meadow rather than the trunk: location_precision approximate. Age deliberately empty, Italy's national register has no age column and no source publishes one. Flagged because the girth comes from the register alone and the tourism sources describe the tree only as secolare. Access verdict 2026-08-14: open alpine pasture on Monte Bondone, nobody's home and no permission needed, so the tree clears hard rule 10; what held it back until now was a transport line, and bus B202 plus the Giro della Selva path supplies one.",
       "height_m": 17.0,
-      "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 465
     },
     {
       "id": "tre_010",
@@ -364,7 +373,8 @@
       },
       "notes": "Age deliberately empty: the comune's register has no age column and no source found gives one. Flagged because girth/height come from a single register entry with press corroborating only the tree's existence and monumental status, not its measurements. This is the tenth tree noted as a research question in review_2026_08_14b; researched fresh 2026-08-15 from the comune's own open dataset rather than the villa-access leads, which remain held.",
       "height_m": 26.5,
-      "verify_notes": "Height 26.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 26.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 359
     }
   ]
 }

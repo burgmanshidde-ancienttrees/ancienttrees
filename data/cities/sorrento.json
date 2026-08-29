@@ -57,7 +57,8 @@
         "status": "missing"
       },
       "height_m": 11.0,
-      "verify_notes": "Height 11.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 11.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 318
     },
     {
       "id": "srn_002",
@@ -89,7 +90,8 @@
         "status": "missing"
       },
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 418
     },
     {
       "id": "srn_003",
@@ -120,7 +122,8 @@
         "status": "missing"
       },
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 266
     },
     {
       "id": "srn_004",
@@ -151,7 +154,8 @@
         "status": "missing"
       },
       "height_m": 9.0,
-      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 295
     }
   ]
 }

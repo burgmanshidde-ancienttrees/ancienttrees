@@ -66,7 +66,8 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "girth_cm": 440
     },
     {
       "id": "brq_002",
@@ -106,7 +107,8 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "girth_cm": 480
     },
     {
       "id": "brq_003",
@@ -144,7 +146,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "Register kod 105037, isop_id 53643. Girth 326cm in the register against 320cm from turistika-derived figures. Park renamed Park Danuse Muzikarove in 2019. Wikimedia Commons carries photographs of this tree uploaded April 2026."
+      "notes": "Register kod 105037, isop_id 53643. Girth 326cm in the register against 320cm from turistika-derived figures. Park renamed Park Danuse Muzikarove in 2019. Wikimedia Commons carries photographs of this tree uploaded April 2026.",
+      "girth_cm": 326
     },
     {
       "id": "brq_004",
@@ -177,7 +180,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "Register kod 101080, isop_id 44660, also called Platan pod Petrovem. Girth 415cm per turistika.cz against 400cm in the register. Wikimedia Commons holds photographs of this tree uploaded February 2026."
+      "notes": "Register kod 101080, isop_id 44660, also called Platan pod Petrovem. Girth 415cm per turistika.cz against 400cm in the register. Wikimedia Commons holds photographs of this tree uploaded February 2026.",
+      "girth_cm": 400
     },
     {
       "id": "brq_005",
@@ -209,7 +213,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Register kod 101082, isop_id 44662. Species recorded in the source as Platanus x hispanica, normalised to the site's canonical Platanus x acerifolia (same hybrid, hard rule 9). Girth 565cm per turistika.cz against 575cm in the register. Canopy reached almost 40m before the crown was trimmed, measured 2004. Flagged because this is hospital-campus land rather than a park, stated plainly in the access line and in the story."
+      "notes": "Register kod 101082, isop_id 44662. Species recorded in the source as Platanus x hispanica, normalised to the site's canonical Platanus x acerifolia (same hybrid, hard rule 9). Girth 565cm per turistika.cz against 575cm in the register. Canopy reached almost 40m before the crown was trimmed, measured 2004. Flagged because this is hospital-campus land rather than a park, stated plainly in the access line and in the story.",
+      "girth_cm": 575
     },
     {
       "id": "brq_006",
@@ -240,7 +245,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Register kod 101081, isop_id 44661, also labelled na Divadelni on Wikimedia Commons. Girth 368cm in the AOPK register against 310cm in the Czech Wikipedia list at the same coordinates, an older measurement. No age published in any source found; age_estimate deliberately left empty."
+      "notes": "Register kod 101081, isop_id 44661, also labelled na Divadelni on Wikimedia Commons. Girth 368cm in the AOPK register against 310cm in the Czech Wikipedia list at the same coordinates, an older measurement. No age published in any source found; age_estimate deliberately left empty.",
+      "girth_cm": 368
     },
     {
       "id": "brq_007",
@@ -271,7 +277,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Register kod 101066, coordinates 49.202,16.600 per turistika.cz matching the AOPK register within rounding. An earlier pass held this back over an apparent identity conflict between two web sources; resolved this pass with three converging sources (turistika.cz matching the register's 475cm and declaration year exactly, botany.cz's independent 383cm figure at the same corner and declaration date, and Masaryk University's own 2022 renaming-ceremony account naming the same intersection): this is one tree, not two, with a genuine unresolved girth disagreement rather than a case of mistaken identity. Named Platan profesora Chudoby since 2021-12-15 (city environmental department decision), formally renamed at a ceremony 2022-04-29."
+      "notes": "Register kod 101066, coordinates 49.202,16.600 per turistika.cz matching the AOPK register within rounding. An earlier pass held this back over an apparent identity conflict between two web sources; resolved this pass with three converging sources (turistika.cz matching the register's 475cm and declaration year exactly, botany.cz's independent 383cm figure at the same corner and declaration date, and Masaryk University's own 2022 renaming-ceremony account naming the same intersection): this is one tree, not two, with a genuine unresolved girth disagreement rather than a case of mistaken identity. Named Platan profesora Chudoby since 2021-12-15 (city environmental department decision), formally renamed at a ceremony 2022-04-29.",
+      "girth_cm": 475
     },
     {
       "id": "brq_008",

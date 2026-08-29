@@ -133,7 +133,8 @@
       },
       "curation_status": "flagged",
       "notes": "Portuguese press and heritage sources converge on approximately 150 years, tied to its 1940 classification. monumentaltrees.com states it was planted around 1740, implying roughly 285 years. The discrepancy is unresolved; the more heavily corroborated 150 year figure is used as the primary estimate, per monumentaltrees being used for verification only.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 390
     },
     {
       "id": "lis_004",
@@ -166,7 +167,8 @@
       },
       "curation_status": "flagged",
       "notes": "Most sources cite 100 years; a local history blog notes the tree already appears as a mature adult in Lisbon Municipal Archive photographs from 1910, which would put its real age closer to 115 years.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 1050
     },
     {
       "id": "lis_005",
@@ -206,7 +208,8 @@
         ],
         "label": "late winter into spring, when the garden turns a startling shade of orange"
       },
-      "notes": "Photo removed 2026-08-02: the approved file (Chaimite no Jardim da Praca da Constituicao de 1976) is a photograph of an armoured car parked in the garden, not of the tipu tree. Caught by Hidde on the live site. Any replacement must show the tree itself, per the Cadiz standard. Pin corrected 2026-08-06: the stored coordinate was an address-level geocode of the garden, 244m from ICNF's own surveyed point for the same species, age and classification at Praca de S.Bento (processo KNJ1/347); no second Tipuana tipu found anywhere else in the register near Sao Bento, so treated as the same tree and the register's coordinate adopted, upgrading the pin from approximate to confirmed. Found while verifying an unrelated Lisbon cluster; flagged for a session decision rather than acted on blind, then adopted because the register point is the only tree-level GPS either source has ever given this entry."
+      "notes": "Photo removed 2026-08-02: the approved file (Chaimite no Jardim da Praca da Constituicao de 1976) is a photograph of an armoured car parked in the garden, not of the tipu tree. Caught by Hidde on the live site. Any replacement must show the tree itself, per the Cadiz standard. Pin corrected 2026-08-06: the stored coordinate was an address-level geocode of the garden, 244m from ICNF's own surveyed point for the same species, age and classification at Praca de S.Bento (processo KNJ1/347); no second Tipuana tipu found anywhere else in the register near Sao Bento, so treated as the same tree and the register's coordinate adopted, upgrading the pin from approximate to confirmed. Found while verifying an unrelated Lisbon cluster; flagged for a session decision rather than acted on blind, then adopted because the register point is the only tree-level GPS either source has ever given this entry.",
+      "girth_cm": 420
     },
     {
       "id": "lis_006",
@@ -274,7 +277,8 @@
       },
       "curation_status": "flagged",
       "notes": "Pin and age corrected 2026-07-26: matched to Portugal's national registry of classified trees of public interest (ICNF, si.icnf.pt/sigservices.icnf.pt), feature id 283, processo KNJ1/405, a lodao-bastardo (Celtis australis) named at exactly this junction (\"Av. Berlim (cruzamento com Av Dr. Francisco Luis Gomes)\"), height 15.7m matching this story's \"sixteen metres\" closely, last measured 2015 at age 75 (roughly 86 today). The stored pin was about 900m off (a geocode of the general avenue, not the junction); the registry point is now used instead. The registry's age (75 in 2015) conflicts with the two original tourism-site sources' \"100 years\" claim; treated the government measurement as authoritative and corrected the story and age fields rather than flag the conflict, since one source is a direct physical survey and the others are undated blog estimates.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 400
     },
     {
       "id": "lis_008",
@@ -477,7 +481,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "ICNF processo AIP11066144I, 'figueira-da-baía-de-moreton (n.º 2)', classified D.R. n.º 11, II Série, 14/01/2004. Register figures: girth 6.05 m, height 21 m, age 145 at the 2015 survey, so about 156 in 2026. Independent second source florestas.pt, which describes three classified Australian figs in this garden of roughly the same age as the columnar araucaria, about 140 years, 'que se destacam pelas suas dimensões e raízes aéreas'. The two age figures (145 at 2015 versus about 140 at publication) do not reconcile exactly, hence the 140-160 range and the flag. Pin is approximate on purpose: the register surveys n.º 1 (AIP11066142I, girth 4.80 m) and n.º 3 (AIP11066145I, girth 4.70 m) at 49 m and 26 m from this point, all three are Ficus macrophylla in the same square, and no source on the ground tells a visitor which numbered tree is which. Stand at the largest. The other two processos are recorded as leads. Not to be confused with lis_003, the Cupressus lusitanica 24 m away in the same square."
+      "notes": "ICNF processo AIP11066144I, 'figueira-da-baía-de-moreton (n.º 2)', classified D.R. n.º 11, II Série, 14/01/2004. Register figures: girth 6.05 m, height 21 m, age 145 at the 2015 survey, so about 156 in 2026. Independent second source florestas.pt, which describes three classified Australian figs in this garden of roughly the same age as the columnar araucaria, about 140 years, 'que se destacam pelas suas dimensões e raízes aéreas'. The two age figures (145 at 2015 versus about 140 at publication) do not reconcile exactly, hence the 140-160 range and the flag. Pin is approximate on purpose: the register surveys n.º 1 (AIP11066142I, girth 4.80 m) and n.º 3 (AIP11066145I, girth 4.70 m) at 49 m and 26 m from this point, all three are Ficus macrophylla in the same square, and no source on the ground tells a visitor which numbered tree is which. Stand at the largest. The other two processos are recorded as leads. Not to be confused with lis_003, the Cupressus lusitanica 24 m away in the same square.",
+      "girth_cm": 605
     },
     {
       "id": "lis_014",
@@ -517,7 +522,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "ICNF processo AIP11065607I, 'teixo', classified D.G. n.º 121, II Série, 21/05/1968 and re-published D.R. n.º 115, II Série, 18/06/2018. Register figures: girth 3.80 m, height 14 m, age 123 at the 2016 survey, so about 133 in 2026. Second source: Wikipedia PT 'Jardim Braamcamp Freire' independently lists Taxus baccata L. among the garden's árvores de interesse público under the same 1968 diploma. One unresolved point recorded rather than published: a search snippet claims two classified yews here, one from 1968 and one from 2000, but the register holds only this one teixo and the Wikipedia list names only one, so the story does not claim a pair. Pin is the register's own surveyed point and this is the only classified yew in the garden, hence confirmed."
+      "notes": "ICNF processo AIP11065607I, 'teixo', classified D.G. n.º 121, II Série, 21/05/1968 and re-published D.R. n.º 115, II Série, 18/06/2018. Register figures: girth 3.80 m, height 14 m, age 123 at the 2016 survey, so about 133 in 2026. Second source: Wikipedia PT 'Jardim Braamcamp Freire' independently lists Taxus baccata L. among the garden's árvores de interesse público under the same 1968 diploma. One unresolved point recorded rather than published: a search snippet claims two classified yews here, one from 1968 and one from 2000, but the register holds only this one teixo and the Wikipedia list names only one, so the story does not claim a pair. Pin is the register's own surveyed point and this is the only classified yew in the garden, hence confirmed.",
+      "girth_cm": 380
     },
     {
       "id": "lis_015",
@@ -548,7 +554,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "ICNF processo AIP11065608I, 'figueira-benjamin; matapalo', classified D.G. n.º 121, II Série, 21/05/1968 and re-published D.R. n.º 115, II Série, 18/06/2018. Register figures: girth 5.00 m, height 20 m, age 123 at the 2016 survey, so about 133 in 2026. Second source: Wikipedia PT 'Jardim Braamcamp Freire' lists 'Ficus benjamina L. (dois exemplares)' under the same 1968 diploma. Flagged and pinned approximate precisely because of that count: the register surveys one tree, the encyclopedia and the garden's own description say two classified specimens, and no source distinguishes them, so a visitor may find a pair within a few dozen metres of this point. Canonical common name chosen as 'Weeping Fig' because no other city file in the corpus yet uses Ficus benjamina and Weeping Fig is the nationality-neutral standard name; the corpus already uses Moreton Bay Fig, Indian Laurel Fig, Rubber Fig and Bodhi Tree for its other Ficus species."
+      "notes": "ICNF processo AIP11065608I, 'figueira-benjamin; matapalo', classified D.G. n.º 121, II Série, 21/05/1968 and re-published D.R. n.º 115, II Série, 18/06/2018. Register figures: girth 5.00 m, height 20 m, age 123 at the 2016 survey, so about 133 in 2026. Second source: Wikipedia PT 'Jardim Braamcamp Freire' lists 'Ficus benjamina L. (dois exemplares)' under the same 1968 diploma. Flagged and pinned approximate precisely because of that count: the register surveys one tree, the encyclopedia and the garden's own description say two classified specimens, and no source distinguishes them, so a visitor may find a pair within a few dozen metres of this point. Canonical common name chosen as 'Weeping Fig' because no other city file in the corpus yet uses Ficus benjamina and Weeping Fig is the nationality-neutral standard name; the corpus already uses Moreton Bay Fig, Indian Laurel Fig, Rubber Fig and Bodhi Tree for its other Ficus species.",
+      "girth_cm": 500
     },
     {
       "id": "lis_016",
@@ -582,7 +589,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "ICNF processo AIP11065946I, 'taxódio ou cipreste-mexicano', classified Despacho (extrato) n.º 8497/2018, D.R. 2.ª série n.º 169, 3 September 2018. Register figures: girth 6.60 m, height 26 m, last measured 2009. SPECIES CONFLICT, unresolved and therefore flagged: ICNF records Taxodium mucronatum, while Wikipedia PT and the Junta de Freguesia de Campo de Ourique both say Taxodium distichum. The register is the classifying authority so its name is used; note that T. mucronatum is treated by some authorities as a Mexican variety of T. distichum, so the two may not be a real disagreement. AGE: the register leaves the age field empty for all three classified trees in this garden and no other source supplies one, so the 80-150 range is a wide bound from trunk size and the neighbourhood's own build-out, not a measurement. COUNT CORRECTION, worth keeping: Wikipedia PT and the parish both describe four classified trees here including a Sequoia sempervirens, but the national register holds exactly three processos, and the metro's own environmental documents refer to 'as três árvores classificadas' and '3 exemplares arbóreos classificados'. Never write four. ALIVE: photographed standing in this garden by two different Commons contributors, most recently 14 June 2024; the metro's felling list names six unclassified Celtis australis, not this tree. Photo viewed at full size before approval: the tree fills the frame in daylight, trunk and crown both readable, bandstand to the right, centre band holds the trunk so the card crop survives."
+      "notes": "ICNF processo AIP11065946I, 'taxódio ou cipreste-mexicano', classified Despacho (extrato) n.º 8497/2018, D.R. 2.ª série n.º 169, 3 September 2018. Register figures: girth 6.60 m, height 26 m, last measured 2009. SPECIES CONFLICT, unresolved and therefore flagged: ICNF records Taxodium mucronatum, while Wikipedia PT and the Junta de Freguesia de Campo de Ourique both say Taxodium distichum. The register is the classifying authority so its name is used; note that T. mucronatum is treated by some authorities as a Mexican variety of T. distichum, so the two may not be a real disagreement. AGE: the register leaves the age field empty for all three classified trees in this garden and no other source supplies one, so the 80-150 range is a wide bound from trunk size and the neighbourhood's own build-out, not a measurement. COUNT CORRECTION, worth keeping: Wikipedia PT and the parish both describe four classified trees here including a Sequoia sempervirens, but the national register holds exactly three processos, and the metro's own environmental documents refer to 'as três árvores classificadas' and '3 exemplares arbóreos classificados'. Never write four. ALIVE: photographed standing in this garden by two different Commons contributors, most recently 14 June 2024; the metro's felling list names six unclassified Celtis australis, not this tree. Photo viewed at full size before approval: the tree fills the frame in daylight, trunk and crown both readable, bandstand to the right, centre band holds the trunk so the card crop survives.",
+      "girth_cm": 660
     },
     {
       "id": "lis_017",
@@ -623,7 +631,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "FOLDED TWINS. Two ICNF processos, AIP11065947I (38.71779,-9.16539, girth 4.55 m, height 18.7 m) and AIP11065948I (38.71787,-9.16541, girth 4.90 m, height 15 m), both classified Despacho (extrato) n.º 8497/2018, D.R. 2.ª série n.º 169, 3 September 2018, standing about 10 m apart. Shipped as one entry per the register-twin rule; AIP11065948I is recorded as a lead. The pin is the midpoint of the two surveyed points and is therefore approximate by construction, no more than 10 m from either trunk. Second source: Wikipedia PT lists 'dois Metrosideros excelsa' among this garden's classified trees, and the Junta de Freguesia's own heritage page counts 'dois Metrosídero'. AGE: the register's age field is empty for all three classified trees here and no other source gives one, so the range is a wide bound from trunk size, not a measurement. Bloom timing May to June matches the corpus's two other Iberian pohutukawas (Cadiz, two-source confirmed; Porto), which is why best_time is set. ALIVE: photographed in this garden 14 February and 14 June 2024 by a Commons contributor. Photo viewed at full size before approval: huge multi-limbed tree filling the frame in daylight, aerial roots readable, second specimen visible behind it, trunk sits in the centre band so the card crop survives."
+      "notes": "FOLDED TWINS. Two ICNF processos, AIP11065947I (38.71779,-9.16539, girth 4.55 m, height 18.7 m) and AIP11065948I (38.71787,-9.16541, girth 4.90 m, height 15 m), both classified Despacho (extrato) n.º 8497/2018, D.R. 2.ª série n.º 169, 3 September 2018, standing about 10 m apart. Shipped as one entry per the register-twin rule; AIP11065948I is recorded as a lead. The pin is the midpoint of the two surveyed points and is therefore approximate by construction, no more than 10 m from either trunk. Second source: Wikipedia PT lists 'dois Metrosideros excelsa' among this garden's classified trees, and the Junta de Freguesia's own heritage page counts 'dois Metrosídero'. AGE: the register's age field is empty for all three classified trees here and no other source gives one, so the range is a wide bound from trunk size, not a measurement. Bloom timing May to June matches the corpus's two other Iberian pohutukawas (Cadiz, two-source confirmed; Porto), which is why best_time is set. ALIVE: photographed in this garden 14 February and 14 June 2024 by a Commons contributor. Photo viewed at full size before approval: huge multi-limbed tree filling the frame in daylight, aerial roots readable, second specimen visible behind it, trunk sits in the centre band so the card crop survives.",
+      "girth_cm": 455
     },
     {
       "id": "lis_018",
@@ -654,7 +663,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "ICNF processo KNJ1/400, 'tipuana', classified Aviso n.º 15 612/2001, D.R. 2.ª série. Register figures: girth 3.20 m, height 22.2 m, age 133 at the 2015 survey, so about 144 in 2026. Second source: Portal do Jardim's page on the garden names 'Tipuana tipu, Brachychiton e Phoenix dactylifera' as the garden's árvores classificadas de interesse público, an independent confirmation of species and place. Garden verified in an earlier pass as a municipal garden with permanent public access ('jardim de acesso público permanente', Wikipedia PT), distinct from the Jardim do Museu Nacional de Arte Antiga immediately next door, which is bound to museum hours and currently under renovation. Sources conflate the two constantly; the register's lugar for all three trees is Jardim 9 de Abril. Area 3,402 m2, of which 2,373 m2 green space. Named for 9 April 1918, the Battle of La Lys. Second tipuana in the Lisbon file after lis_005, a different classified tree 1.0 km away."
+      "notes": "ICNF processo KNJ1/400, 'tipuana', classified Aviso n.º 15 612/2001, D.R. 2.ª série. Register figures: girth 3.20 m, height 22.2 m, age 133 at the 2015 survey, so about 144 in 2026. Second source: Portal do Jardim's page on the garden names 'Tipuana tipu, Brachychiton e Phoenix dactylifera' as the garden's árvores classificadas de interesse público, an independent confirmation of species and place. Garden verified in an earlier pass as a municipal garden with permanent public access ('jardim de acesso público permanente', Wikipedia PT), distinct from the Jardim do Museu Nacional de Arte Antiga immediately next door, which is bound to museum hours and currently under renovation. Sources conflate the two constantly; the register's lugar for all three trees is Jardim 9 de Abril. Area 3,402 m2, of which 2,373 m2 green space. Named for 9 April 1918, the Battle of La Lys. Second tipuana in the Lisbon file after lis_005, a different classified tree 1.0 km away.",
+      "girth_cm": 320
     },
     {
       "id": "lis_019",
@@ -685,7 +695,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "ICNF processo KNJ1/402, 'tamareira', classified Aviso n.º 15 612/2001, D.R. 2.ª série. Register figures: girth 1.62 m, height 26.7 m, age 133 at the 2015 survey, so about 144 in 2026. Second source: Correio da Manhã's data feature on Lisbon's trees, which cites the Câmara Municipal de Lisboa calling this the tallest tree in the city at 38 m, taller than the 34 m Arco da Rua Augusta; Portal do Jardim independently confirms Phoenix dactylifera as one of the garden's three classified trees. HEIGHT CONFLICT, flagged and stated in the story rather than resolved: 38 m (municipality) versus 26.7 m (national register, 2015). Both are published claims, no source reconciles them, and the entry does not pick a winner. The 'tallest tree in Lisbon' claim is presented as the municipality's, not as our own, per hard rule 8. Neither claim is repeated as a superlative anywhere else in the corpus."
+      "notes": "ICNF processo KNJ1/402, 'tamareira', classified Aviso n.º 15 612/2001, D.R. 2.ª série. Register figures: girth 1.62 m, height 26.7 m, age 133 at the 2015 survey, so about 144 in 2026. Second source: Correio da Manhã's data feature on Lisbon's trees, which cites the Câmara Municipal de Lisboa calling this the tallest tree in the city at 38 m, taller than the 34 m Arco da Rua Augusta; Portal do Jardim independently confirms Phoenix dactylifera as one of the garden's three classified trees. HEIGHT CONFLICT, flagged and stated in the story rather than resolved: 38 m (municipality) versus 26.7 m (national register, 2015). Both are published claims, no source reconciles them, and the entry does not pick a winner. The 'tallest tree in Lisbon' claim is presented as the municipality's, not as our own, per hard rule 8. Neither claim is repeated as a superlative anywhere else in the corpus.",
+      "girth_cm": 162
     },
     {
       "id": "lis_020",
@@ -726,7 +737,8 @@
         "status": "approved",
         "width": 4032,
         "height": 1908
-      }
+      },
+      "girth_cm": 298
     },
     {
       "id": "lis_021",
@@ -756,7 +768,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "notes": "ICNF processo AIP11066049I, Tipuana tipu, Praça São João Bosco / Jardim da Parada dos Prazeres, classified Despacho (extrato) n.º 782/2019, Diário da República 2.ª série n.º 13, 18 January 2019. Register figures: girth 3.42 m, height 23.5 m, crown 34 m, last measured 2010 at age 100 (register-only figure; AGE FLAGGED, no independent age source found). Second source for existence, species and status: Junta de Freguesia da Estrela's own news article on a March 2018 structural pruning of this exact tree, carried out with ICNF oversight. THIS IS A DIFFERENT GARDEN from lis_016/lis_017's 'Jardim da Parada' (Jardim Teofilo Braga, the Campo de Ourique barracks parade ground, roughly 500 m north): this one is Jardim da Parada dos Prazeres, a 7,000 sqm roundabout garden around the Sao Joao Bosco statue (inaugurated 1988), facing the Prazeres Cemetery, straddling Campo de Ourique and Estrela parishes (register lists freguesia as Estrela). Confirmed as a separate location by web search before naming, given the corpus already flags this exact 'two gardens share a nickname' risk on lis_016. Distance to the nearest existing published tree (lis_017, the Pohutukawa) is about 500 m, inside the walk radius: joins the Estrela cluster (lis_005, lis_011, lis_012, lis_016, lis_017) as its sixth tree."
+      "notes": "ICNF processo AIP11066049I, Tipuana tipu, Praça São João Bosco / Jardim da Parada dos Prazeres, classified Despacho (extrato) n.º 782/2019, Diário da República 2.ª série n.º 13, 18 January 2019. Register figures: girth 3.42 m, height 23.5 m, crown 34 m, last measured 2010 at age 100 (register-only figure; AGE FLAGGED, no independent age source found). Second source for existence, species and status: Junta de Freguesia da Estrela's own news article on a March 2018 structural pruning of this exact tree, carried out with ICNF oversight. THIS IS A DIFFERENT GARDEN from lis_016/lis_017's 'Jardim da Parada' (Jardim Teofilo Braga, the Campo de Ourique barracks parade ground, roughly 500 m north): this one is Jardim da Parada dos Prazeres, a 7,000 sqm roundabout garden around the Sao Joao Bosco statue (inaugurated 1988), facing the Prazeres Cemetery, straddling Campo de Ourique and Estrela parishes (register lists freguesia as Estrela). Confirmed as a separate location by web search before naming, given the corpus already flags this exact 'two gardens share a nickname' risk on lis_016. Distance to the nearest existing published tree (lis_017, the Pohutukawa) is about 500 m, inside the walk radius: joins the Estrela cluster (lis_005, lis_011, lis_012, lis_016, lis_017) as its sixth tree.",
+      "girth_cm": 342
     },
     {
       "id": "lis_022",
@@ -786,7 +799,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 312
     },
     {
       "id": "lis_023",
@@ -816,7 +830,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 172
     },
     {
       "id": "lis_024",
@@ -853,7 +868,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 145
     },
     {
       "id": "lis_025",
@@ -882,7 +898,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 350
     },
     {
       "id": "lis_026",
@@ -911,7 +928,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 158
     },
     {
       "id": "lis_027",
@@ -940,7 +958,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 233
     },
     {
       "id": "lis_028",
@@ -970,7 +989,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 1045
     },
     {
       "id": "lis_029",
@@ -999,7 +1019,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 1090
     },
     {
       "id": "lis_030",
@@ -1029,7 +1050,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 475
     },
     {
       "id": "lis_031",
@@ -1058,7 +1080,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 585
     },
     {
       "id": "lis_032",
@@ -1087,7 +1110,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 375
     },
     {
       "id": "lis_033",
@@ -1115,7 +1139,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 390
     }
   ],
   "hero_tree_id": "lis_017"

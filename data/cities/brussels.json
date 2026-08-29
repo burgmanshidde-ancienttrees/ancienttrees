@@ -133,7 +133,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Circumference and 2024 legal inventory listing corroborated by the official heritage inventory; monumentaltrees.com used for cross-check only, per hard rule 1, not copied. Photo verified on Commons, captioned in French as this exact tree: 'notable tree, bicentennial oriental plane, Parc Leopold, Brussels'.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 648
     },
     {
       "id": "bru_004",
@@ -410,7 +411,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Girth 290cm measured 2019, height 10m, crown 17m, health recorded as 'Sain', and the ranking as second thickest of its species in the region all come from the region's own per-tree record (heritage.brussels tree 648, legally inventoried 19 August 2024). The 1999 first-entry fact and the Galoppin 1901 planting attribution come from Wood Wide Web, Brussels Environment's published tree atlas, which gives a GPS reading of 50.8381, 4.3577 for this tree, matching the register coordinate exactly. Wood Wide Web's own card mixes this tree's data with the park's second Turner's oak (register 649, 264cm, 23m tall), so only the figures confirmed by the register are used here. Age is inferred from the 1901 park remaking rather than a planting record, hence the range. Wood Wide Web dates the hybrid's creation to the late 19th century, which conflicts with the standard account of an 18th century Essex origin, so the story names the nursery and the parentage but claims no date. No open licensed photograph of this individual tree found: heritage.brussels publishes photographs of it but states no licence beyond a blanket site copyright, and Wikimedia Commons has park views only, none identifiable as this tree.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 290
     },
     {
       "id": "bru_012",
@@ -447,7 +449,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Girth 327cm measured 2019, height 20m, crown 18m and the health rating 'Legers defauts' come from the region's per-tree record (heritage.brussels tree 637, legally inventoried 19 August 2024). The soil compaction diagnosis and the paired autumn colour with the walnut opposite come from Wood Wide Web (atlas 3698), Brussels Environment's published tree atlas, whose GPS reading of 50.8383, 4.3567 lands within about 5 metres of the register coordinate. The two sources disagree by one place on the regional size ranking, sixth on Wood Wide Web against seventh on the register; the register's own figure is used. No planting record exists, so the age follows the park's 1901 remaking under Edmond Galoppin. No open licensed photograph of this individual tree found.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 327
     },
     {
       "id": "bru_013",
@@ -484,7 +487,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Girth 306cm measured 2019, height 27m, crown 20m, health 'Sain' and the ranking of nineteenth thickest of its species in the region come from heritage.brussels tree 642, legally inventoried 19 August 2024. The ISELP sponsorship during the exhibition A Forest, 21 September to 15 December 2018, and the eighteenth century seed trade are recorded on Wood Wide Web (atlas 154), Brussels Environment's published tree atlas, whose GPS reading of 50.8381, 4.3567 lands within about 5 metres of the register coordinate. Wood Wide Web files this tree under the address Boulevard de Waterloo 31, which is the park's street entrance rather than a separate location. No planting record exists, so the age follows the park's 1901 remaking under Edmond Galoppin. No open licensed photograph of this individual tree found.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 306
     },
     {
       "id": "bru_014",
@@ -522,7 +526,8 @@
       },
       "curation_status": "flagged",
       "notes": "Girth 397cm measured in 2026, height 32m, crown 20m, bole 6m, health 'Legers defauts' and the ranking of third thickest of its species in the region come from heritage.brussels tree 6357, legally inventoried 19 August 2024. This is the freshest measurement of any tree in the cluster. Flagged on age: no source dates this tree, and its girth is large enough that it may predate the 1901 Galoppin remaking and belong to Tilman-Francois Suys' 1830 layout instead, so the range is deliberately wide. Deliberately claims no height record: brussels.json already credits the Douglas Fir of the Hippodrome as the tallest tree in the city at 33m, and this one is a metre short of that, so only the species-level girth ranking is claimed. Wood Wide Web (atlas 3700) confirms the tree's existence, species and presence on Brussels Environment's own Egmont walk, but places it about 38 metres from the register coordinate; the register's position is used because it carries a surveyed Lambert grid reference per tree while the atlas coordinates are hand placed along a walking route.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 397
     },
     {
       "id": "bru_015",
@@ -562,7 +567,8 @@
       },
       "curation_status": "flagged",
       "notes": "Girth 298cm measured 2019, crown 17m, bole 6m and health 'Legers defauts' come from heritage.brussels tree 629, legally inventoried 19 August 2024; the register records no height for this tree. The two-limbed form, the false broadleaf silhouette and the needle and cone description come from Wood Wide Web (atlas 36), Brussels Environment's published tree atlas, whose GPS reading of 50.8371, 4.3556 lands within about 5 metres of the register coordinate; French Wikipedia's Parc d'Egmont article independently lists a cedar of Lebanon among the park's notable trees, as does the park's own on-site information panel. Flagged on age: no source dates this individual, so the range is inferred from the park's 1830 and 1901 redesigns. The 1892 fire that destroyed part of the Egmont Palace is documented on Wikimedia Commons' record of the surviving columns now standing in the park, and is context for the tree rather than a claim about it.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 298
     },
     {
       "id": "bru_016",
@@ -599,7 +605,8 @@
       },
       "curation_status": "ai_generated",
       "notes": "Girth 342cm measured 2019, height 24m, crown 18m, health 'Legers defauts' and the ranking of twenty sixth thickest of its species in the region come from heritage.brussels tree 647, legally inventoried 19 August 2024. Wood Wide Web (atlas 3699) confirms species and location and carries the line about autumn colour announcing the tree before its label does; its GPS reading of 50.8383, 4.3565 lands within about 10 metres of the register coordinate. The park's own trilingual information panel at the Boulevard de Waterloo entrance lists a Northern Red oak among the remarkable trees it signposts. No planting record exists, so the age follows the park's 1901 remaking under Edmond Galoppin. No open licensed photograph of this individual tree found.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 342
     },
     {
       "id": "bru_017",
@@ -629,7 +636,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "Girth 367 cm, crown 20 m and the coordinate come from the region's own CC BY export of its legal inventory; the ranking of 98th of its species in the region and the absence of a height figure were read from the per-tree page during the 2026-08-05 pass. That page returned a database error when re-fetched on 2026-08-14, so nothing new was taken from it. The register carries no age, and none is inferred here. No open licensed photograph of this individual tree found: heritage.brussels publishes images under a blanket site copyright with no reusable licence."
+      "notes": "Girth 367 cm, crown 20 m and the coordinate come from the region's own CC BY export of its legal inventory; the ranking of 98th of its species in the region and the absence of a height figure were read from the per-tree page during the 2026-08-05 pass. That page returned a database error when re-fetched on 2026-08-14, so nothing new was taken from it. The register carries no age, and none is inferred here. No open licensed photograph of this individual tree found: heritage.brussels publishes images under a blanket site copyright with no reusable licence.",
+      "girth_cm": 367
     },
     {
       "id": "bru_018",
@@ -666,7 +674,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Flagged on attribution rather than on the tree: this is the one entry in the Egmont cluster whose per-tree page failed to render its site block when the 2026-08-05 pass fetched it, so the placing of the tree inside Parc d'Egmont rests on the open dataset's coordinate alone rather than on the region's own site statement. A re-fetch on 2026-08-14 returned a database error. Girth, crown and coordinate are from the CC BY export; the regional ranking was read from the per-tree page. No age recorded and none inferred. The species' threatened status in the wild is IUCN's, its distribution and introduction history standard botany, neither a claim about this individual."
+      "notes": "Flagged on attribution rather than on the tree: this is the one entry in the Egmont cluster whose per-tree page failed to render its site block when the 2026-08-05 pass fetched it, so the placing of the tree inside Parc d'Egmont rests on the open dataset's coordinate alone rather than on the region's own site statement. A re-fetch on 2026-08-14 returned a database error. Girth, crown and coordinate are from the CC BY export; the regional ranking was read from the per-tree page. No age recorded and none inferred. The species' threatened status in the wild is IUCN's, its distribution and introduction history standard botany, neither a claim about this individual.",
+      "girth_cm": 308
     },
     {
       "id": "bru_019",
@@ -696,7 +705,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "Girth, crown and coordinate from the region's CC BY export; height, regional ranking and the information-panel mention were read from the per-tree page during the 2026-08-05 pass, which returned a database error when re-fetched on 2026-08-14. The 70 metre figure is the distance between the two register coordinates, entries 645 and 646. No crown is claimed for this tree: bru_003, the Parc Leopold oriental plane, holds the regional record and the story points at it rather than competing with it. The Hippocrates and Xerxes stories are given as tradition, which is what they are."
+      "notes": "Girth, crown and coordinate from the region's CC BY export; height, regional ranking and the information-panel mention were read from the per-tree page during the 2026-08-05 pass, which returned a database error when re-fetched on 2026-08-14. The 70 metre figure is the distance between the two register coordinates, entries 645 and 646. No crown is claimed for this tree: bru_003, the Parc Leopold oriental plane, holds the regional record and the story points at it rather than competing with it. The Hippocrates and Xerxes stories are given as tradition, which is what they are.",
+      "girth_cm": 272
     },
     {
       "id": "bru_020",
@@ -726,7 +736,8 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "The Dutch name doodsbeenderenboom is the register's own name_nl for this entry. Girth 73 cm, crown 6 m and the coordinate come from the CC BY export; the ranking of fourth largest in the region was read from the per-tree page during the 2026-08-05 pass, and that page returned a database error when re-fetched on 2026-08-14. Published deliberately as a small tree and described as one in the story: the ranking measures how rare the species is in Brussels, not how big this specimen is. No age recorded; the entry belongs to the batch of Egmont trees surveyed in July 2019, which is a survey date rather than a planting date, so no age is inferred from it. No best_time: the bare winter frame is the species' character, but the 'bare silhouette' peak is for veterans with real architecture, not a young tree."
+      "notes": "The Dutch name doodsbeenderenboom is the register's own name_nl for this entry. Girth 73 cm, crown 6 m and the coordinate come from the CC BY export; the ranking of fourth largest in the region was read from the per-tree page during the 2026-08-05 pass, and that page returned a database error when re-fetched on 2026-08-14. Published deliberately as a small tree and described as one in the story: the ranking measures how rare the species is in Brussels, not how big this specimen is. No age recorded; the entry belongs to the batch of Egmont trees surveyed in July 2019, which is a survey date rather than a planting date, so no age is inferred from it. No best_time: the bare winter frame is the species' character, but the 'bare silhouette' peak is for veterans with real architecture, not a young tree.",
+      "girth_cm": 73
     },
     {
       "id": "bru_021",
@@ -864,7 +875,8 @@
       },
       "curation_status": "flagged",
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3438) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates (which carry no address text of their own) rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 166
     },
     {
       "id": "bru_025",
@@ -894,7 +906,8 @@
       },
       "curation_status": "flagged",
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3440) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 321
     },
     {
       "id": "bru_026",
@@ -933,7 +946,8 @@
       },
       "curation_status": "flagged",
       "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 7292) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 173
     },
     {
       "id": "bru_027",
@@ -963,7 +977,8 @@
       },
       "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 638), which gives the girth of 140 cm, the ranking as second largest of its cultivar in the Brussels-Capital Region, and the fact that the park's interpretive panel names it. That is a government register, which the register-layer rule accepts as the source for a tree of this kind, but no independent second source names this specific holly, so the entry is flagged. Coordinates are the register's, hence confirmed precision. No age: the inventory records size and rank and carries no planting date, and no growth-rate basis was available, so none was derived. The sycamore girth of 397 cm quoted in the story is our own bru_014, sourced to the same inventory.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 140
     },
     {
       "id": "bru_028",
