@@ -128,8 +128,9 @@ struct TreeMap: UIViewRepresentable {
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
 
-    func makeUIView(context: Context) -> MLNMapView {
-        let map = LaidOutMapView(frame: .zero, styleURL: MapStyle.url)
+    func makeUIView(context: Context) -> MapWithControls {
+        let container = MapWithControls()
+        let map = container.map
         // AIM WHEN THE VIEW HAS A SIZE, not when SwiftUI feels like updating.
         //
         // This is the whole of the "map is not centred" bug, and it is general
@@ -198,14 +199,23 @@ struct TreeMap: UIViewRepresentable {
         // OpenStreetMap data and ask to be named. It is named once, in About on
         // the Profile tab, where there is room to read it and where iOS apps
         // conventionally keep this.
+        // BESIDE THE MAP, NOT INSIDE IT, and that is an accessibility fix
+        // rather than a tidy-up (2026-08-29). As a subview of the map view this
+        // button drew perfectly and could not be reached by VoiceOver or by any
+        // UI test: MLNMapView is an accessibility CONTAINER that publishes its
+        // own list of elements (itself, the visible annotations, its compass and
+        // its attribution button), and a view we add is not on that list. So the
+        // one control that puts the map back was invisible to everybody using
+        // the app without looking at it, and untestable besides, which is how it
+        // went missing on eight screens without a single gate noticing.
         if showsRecentre {
             let recentre = RecentreButton(map: map)
             recentre.translatesAutoresizingMaskIntoConstraints = false
-            map.addSubview(recentre)
-            let lift = recentre.bottomAnchor.constraint(equalTo: map.bottomAnchor, constant: -120)
+            container.addSubview(recentre)
+            let lift = recentre.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -120)
             context.coordinator.recentreLift = lift
             NSLayoutConstraint.activate([
-                recentre.trailingAnchor.constraint(equalTo: map.safeAreaLayoutGuide.trailingAnchor, constant: -12),
+                recentre.trailingAnchor.constraint(equalTo: container.safeAreaLayoutGuide.trailingAnchor, constant: -12),
                 lift,
                 recentre.widthAnchor.constraint(equalToConstant: 44),
                 recentre.heightAnchor.constraint(equalToConstant: 44),
@@ -243,10 +253,11 @@ struct TreeMap: UIViewRepresentable {
         if let focus {
             map.setCenter(focus, zoomLevel: Self.zoom(forMeters: spanMeters), animated: false)
         }
-        return map
+        return container
     }
 
-    func updateUIView(_ map: MLNMapView, context: Context) {
+    func updateUIView(_ container: MapWithControls, context: Context) {
+        let map = container.map
         context.coordinator.parent = self
         // Asserted on every update, not once at creation: MapLibre brings its
         // own compass and info button back after a style or a layout pass, so
@@ -722,6 +733,24 @@ struct TreeMap: UIViewRepresentable {
 /// the note in makeUIView: a SwiftUI representable is updated when its inputs
 /// change, and on most of these screens nothing changes after the first pass,
 /// so `updateUIView` only ever sees a view with no size yet.
+/// The map and the controls that sit over it, as siblings.
+///
+/// It exists for one reason: a subview of an MLNMapView is invisible to
+/// VoiceOver and to XCUITest, because the map view publishes its own list of
+/// accessibility elements and anything we add is not on it. See makeUIView.
+final class MapWithControls: UIView {
+    let map = LaidOutMapView(frame: .zero, styleURL: MapStyle.url)
+
+    init() {
+        super.init(frame: .zero)
+        map.frame = bounds
+        map.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        addSubview(map)
+    }
+
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+}
+
 final class LaidOutMapView: MLNMapView {
     var onLayout: (() -> Void)?
 
