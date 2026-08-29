@@ -71,6 +71,22 @@ GROUNDS = {
 # the website's own h1, so the two surfaces say the same thing.
 HERO_LINE = "Trees worth the walk,\nwherever you are."
 
+# A SECOND, SMALLER LINE, from his idea on 2026-08-29: "were constantly working
+# on our tree database, you can help ancient trees grow by adding your
+# favourite remarkable tree of your city."
+#
+# The second half of that belongs on the first frame: a map that grows by hand
+# is the thing no competitor has. The first half does not, and PRODUCT_COPY.md
+# says why in two rules. Never name our machinery, not the feed, not the
+# catalogue, not the DATABASE, say what they get. And the reader is the
+# subject, not us. "We are constantly working on our database" breaks both, and
+# it is the builder-speak the corpus bans in public copy: process is not a
+# selling point.
+#
+# So one sentence, they act, no machinery, true today because trees are added
+# every week.
+HERO_SUB = "You can add the tree your city is missing."
+
 # The opener's photograph, changed on 2026-08-29 to one of the four Hidde
 # chose for the app itself ("die eerste afbeelding zou ik nog willen wijzigen
 # naar een van de nieuwe achtergronden die we kozen"). It is hero-3 in
@@ -80,13 +96,13 @@ HERO_LINE = "Trees worth the walk,\nwherever you are."
 # Free Unsplash License, so no visible credit is owed and the name is recorded
 # here instead, which is what hard rule 4 asks.
 #
-#   Photo: Kaijun Zhu, Unsplash
-#   https://unsplash.com/photos/massive-ancient-tree-with-sprawling-branches-against-blue-sky-GBbLT1HU_IA
+#   Photo: Colin Lloyd, Unsplash
+#   https://unsplash.com/photos/a-very-tall-tree-with-lots-of-green-leaves-U5pP4ugOhFo
 #
 # Put the file at out/appstore/0-hero.jpg. It is not committed: out/ is
 # ignored, and a photograph in the history buys nothing when the URL is
 # written down.
-HERO_SOURCE = "https://images.unsplash.com/photo-1777308611257-f6ee3b59e92d?q=85&w=2400&auto=format&fit=crop"
+HERO_SOURCE = "https://images.unsplash.com/photo-1689706085462-93ccce26c411?q=85&w=2400&auto=format&fit=crop"
 
 # HIS ORDER AND HIS WORDS, 2026-08-29. The city comes before the single tree,
 # which is the right way round: a city page shows what we hold, and only then
@@ -257,13 +273,20 @@ def hero(photo_path, line, ground):
     # Two thirds down, measured from the block's own height so both lines sit
     # under the fold rather than the first one landing there.
     lines = line.split("\n")
-    y = int(H * 0.66) - int(size * 1.08) * (len(lines) - 1)
+    y = int(H * 0.62) - int(size * 1.08) * (len(lines) - 1)
     for i, text in enumerate(lines):
         gold = i == 1                       # the site puts the second half in <em>
         w = tracked_width(draw, text, f, tracking)
         draw_tracked(draw, (W - w) / 2, y, text, f, tracking,
                      GOLD_HERO if gold else CREAM)
         y += int(size * 1.08)
+
+    # Half the size and quiet, so it reads as the sentence after the promise
+    # rather than as a second promise.
+    sub = font("Gabarito-Medium.ttf", 50)
+    w = draw.textlength(HERO_SUB, font=sub)
+    draw.text(((W - w) / 2, y + 28), HERO_SUB, font=sub, fill=(0, 0, 0))
+    draw.text(((W - w) / 2, y + 22), HERO_SUB, font=sub, fill=CREAM)
     return canvas
 
 
