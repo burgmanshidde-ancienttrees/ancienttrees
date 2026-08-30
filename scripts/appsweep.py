@@ -307,11 +307,18 @@ def build(dd):
     from worktree_guard import guard
     guard("building the app")
     print("building")
-    r = subprocess.run(
-        ["xcodebuild", "-scheme", "AncientTrees",
-         "-destination", "platform=iOS Simulator,name=iPhone 17 Pro",
-         "-derivedDataPath", str(dd), "build"],
-        cwd=APP_DIR, capture_output=True, text=True)
+    # A hard timeout, added 2026-08-30 alongside the identical fix in
+    # appfit.py's run_test(): an unguarded xcodebuild call there ran a
+    # 110-minute CI job to its own timeout instead of failing in the few
+    # minutes a build normally takes. Same shape here, same fix.
+    try:
+        r = subprocess.run(
+            ["xcodebuild", "-scheme", "AncientTrees",
+             "-destination", "platform=iOS Simulator,name=iPhone 17 Pro",
+             "-derivedDataPath", str(dd), "build"],
+            cwd=APP_DIR, capture_output=True, text=True, timeout=1200)
+    except subprocess.TimeoutExpired:
+        sys.exit("xcodebuild build hung past 20 minutes and was killed")
     if r.returncode != 0:
         # The interesting lines are the errors, not the 3000 lines of compile.
         for line in r.stdout.splitlines():

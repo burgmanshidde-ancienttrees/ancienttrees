@@ -449,22 +449,36 @@ def run_test(device, scratch):
     from worktree_guard import guard
     guard("running the app's UI test")
     print(f"running SweepFrames on {device}, this takes a few minutes")
-    r = subprocess.run(
-        ["xcodebuild", "test",
-         "-scheme", "AncientTrees",
-         "-destination", f"platform=iOS Simulator,id={udid}",
-         "-derivedDataPath", str(pathlib.Path(scratch) / "dd"),
-         "-only-testing:AncientTreesUITests/SweepFrames",
-         # WITHOUT THIS THERE IS NOTHING TO READ. Xcode runs UI tests on a
-         # throwaway CLONE of the simulator and deletes it when the run ends,
-         # taking the file with it. The test passed three times and left
-         # nothing behind before this line existed.
-         "-parallel-testing-enabled", "NO",
-         # The CI runner has no signing identity and does not need one to run a
-         # simulator test.
-         "CODE_SIGNING_ALLOWED=NO", "CODE_SIGNING_REQUIRED=NO",
-         "CODE_SIGN_IDENTITY="],
-        cwd=APP_DIR, capture_output=True, text=True)
+    # A HARD TIMEOUT, found missing 2026-08-30 the expensive way: a hang here
+    # ran the whole 110-minute CI job to its own timeout rather than failing
+    # in the "few minutes" the comment above promises, and a job-level kill
+    # leaves no error message at all, just a run stuck "in progress" for an
+    # hour and forty minutes. 20 minutes is generous against the normal run
+    # and still small next to the job budget, so a real hang costs a chunk of
+    # the window instead of the whole thing.
+    try:
+        r = subprocess.run(
+            ["xcodebuild", "test",
+             "-scheme", "AncientTrees",
+             "-destination", f"platform=iOS Simulator,id={udid}",
+             "-derivedDataPath", str(pathlib.Path(scratch) / "dd"),
+             "-only-testing:AncientTreesUITests/SweepFrames",
+             # WITHOUT THIS THERE IS NOTHING TO READ. Xcode runs UI tests on a
+             # throwaway CLONE of the simulator and deletes it when the run ends,
+             # taking the file with it. The test passed three times and left
+             # nothing behind before this line existed.
+             "-parallel-testing-enabled", "NO",
+             # The CI runner has no signing identity and does not need one to run a
+             # simulator test.
+             "CODE_SIGNING_ALLOWED=NO", "CODE_SIGNING_REQUIRED=NO",
+             "CODE_SIGN_IDENTITY="],
+            cwd=APP_DIR, capture_output=True, text=True, timeout=1200)
+    except subprocess.TimeoutExpired:
+        subprocess.run(["xcrun", "simctl", "shutdown", udid],
+                       capture_output=True, text=True)
+        sys.exit("xcodebuild test hung past 20 minutes and was killed; "
+                 "this used to run the whole CI job to its 110-minute "
+                 "timeout instead of failing here")
 
     # ONE SIMULATOR BOOTED AT A TIME. xcodebuild boots the destination and
     # leaves it booted, so walking two phones meant the second one started
