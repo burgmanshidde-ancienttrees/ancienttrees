@@ -155,7 +155,10 @@ struct PermissionRecovery: View {
         .padding(.horizontal, 24)
         .padding(.top, 28)
         .padding(.bottom, 12)
-        .frame(maxWidth: .infinity, alignment: .leading)
+        // maxHeight as well as maxWidth. Without it the ground is only as tall
+        // as the words, and the detent's remaining height showed as a pale band
+        // under the last button: one sheet wearing two backgrounds.
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .brandGround()
         .accessibilityIdentifier(permission.identifier)
         .presentationDetents([.height(340)])
