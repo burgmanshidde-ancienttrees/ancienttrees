@@ -44,7 +44,7 @@
         "HT 2013-218 Temak (Anthoshorea roxburghii), Lawn B",
         "HT 2013-219 Snake Tree (Stereospermum fimbriatum), Lawn B",
         "HT 2013-214 / HT 2013-215 Monkey Pot Tree (Lecythis pisonis) pair, Lawn H, ~20m apart from each other; page for 2013-215 fetched this pass but NOT shipped because the 1928 Kew planting date in its text is ambiguous about whether it belongs to this pair or to the separate Lawn E specimen (HT 2011-185) -- a bridge-claim risk, needs a cleaner source or a plain non-dated entry before it ships",
-        "HT 2016-280 / HT 2012-196 / HT 2012-193 Kempas and Mengkulang and Kapur, all clustered at Lawn O near a shipped Kapok, ~200-300m from the Lawn E/H core",
+        "HT 2012-193 Kapur, clustered at Lawn O near a shipped Kapok, ~200-300m from the Lawn E/H core",
         "HT 2013-212 Senegal Mahogany (Khaya senegalensis), Lawn B",
         "HT 2014-231 West Indian Locust Tree (Hymenaea courbaril), Corner House Lawn",
         "HT 2012-189 Putat Laut (Barringtonia asiatica), Healing Garden"
@@ -59,6 +59,16 @@
         "A second Pulau Ubin tree beyond the already-published Mangrove Apples (sgp_007) would need a boat-transport line written honestly, per the brief; none checked this pass"
       ],
       "reason": "Time-boxed out. The Botanic Gardens spine was the higher-value target per the brief's own framing and absorbed the whole window."
+    },
+    {
+      "note": "2026-08-30 deepen pass (verify): shipped 4 trees to data/research/singapore-verified.json, sgp_019-sgp_022 (African Butter Tree/Healing Garden, Teak/Botany Centre, Nemesu and Mengkulang/Rainforest edge), all extending the same Botanic Gardens cluster inward from the Lawn O / rainforest-edge candidates this file already flagged. All four use heritagetrees.nparks.gov.sg as one source plus a genuinely separate independent source (PROSEA for the African Butter Tree, Wikipedia's Tectona grandis for the Teak, sbg.nparks.gov.sg's own visitor list for the Nemesu, and a 2022 NUS/Kew peer-reviewed paper on Singapore type localities for the Mengkulang, which is the strongest single source found this pass: the Mengkulang is the actual type specimen from which Heritiera elata was described to science in 1908). Stopped at 4 per this pass's time-box, not because candidates ran out."
+    },
+    {
+      "cluster": "Kempas, considered and set aside this pass",
+      "candidates": [
+        "HT 2016-280 Kempas (Koompassia malaccensis), near the Fernery / Lawn O, Singapore Botanic Gardens (1.310508, 103.817405)"
+      ],
+      "reason": "Fetched and read (heritagetrees.nparks.gov.sg profile: girth 3m @1.3m, height 36.6m, endangered emergent species, buttresses to 6m). Register location_text says 'Lawn O' while the NParks profile page itself says 'near the Fernery' for the same ht_id, a minor internal inconsistency worth a glance on the ground. Set aside this pass only because no genuinely independent second source (beyond the NParks profile and a generic Wikipedia species page for Koompassia malaccensis) turned up in the time available, not because of any evidence problem; a future pass should try iNaturalist observations or a Singapore nature blog before shipping it."
     }
   ],
   "blocked": []
