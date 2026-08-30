@@ -9,6 +9,27 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-30 (session, with Hidde) - What the app does when somebody says no
+
+Hidde asked whether we need conventional flows for a refused camera or location. We do, and the answer was not the one I gave first.
+
+**The first answer was researched wrong and he caught it.** I looked up Apple's written rule and a code pattern and called that a convention check. He asked whether I had looked at other apps, and I had not. So I revoked location for Apple Maps on a simulator, tapped "Don't Allow", and walked it. That is a different and much better answer: a permanent pill on the map, a SHEET before Settings that names the features rather than the permission, a second button reading "Keep Location Services Off" instead of Cancel, and every location control raising that same sheet. He then sent AllTrails' own dialog from his phone, which is the same shape and does not say where the setting is, and asked for that half. `CONVENTIONS.md` carries all of it with screenshots in `docs/conventions/`.
+
+**And a measurement that changed the design.** `openSettingsURLString` is supposed to land on our own page in Settings. Tested with the real path, somebody tapping Don't Allow and then our chip, it landed on the ROOT of Settings. The toggle sits four steps away at Settings > Apps > Ancient Trees > Location, under an "Apps" row most of a screen down. So the sheet prints the path, one line, which is exactly what Hidde asked for before I knew there was evidence for it.
+
+**Shipped: `PermissionRecovery`, one sheet for all three permissions, wired to four places.**
+
+- The map chip stopped throwing people straight into Settings with no word.
+- **The recentre button stopped being a dead control.** With location refused it answered a tap with nothing at all: the same shape as the dead check-in button that once shipped on 345 tree pages. It now raises the sheet, which is what Apple Maps does from that exact control.
+- **The camera stopped falling silently through to the photo gallery** (Hidde: "zo'n zelfde melding wil je maken als iemand op de camera optie klikt"). Its second button is the route on rather than a refusal, so the task still finishes.
+- "Your photograph does not say where it was taken" no longer blames the photograph when the real reason is a library we were not allowed to read.
+
+Both sweep lists carry the screen so it cannot ship unlooked at, appfit is clean on 28 screens, and the branches a simulator cannot reach (no camera to deny, no library worth refusing) are unit tests instead.
+
+**Looking at it caught two more that the source did not show:** the sheet wore two backgrounds, because its ground was only as tall as its words and the detent's leftover height showed as a pale band; and `-refused` opened it over the primer, which is not the screen anybody meets.
+
+**FOR HIDDE, one open question.** With location refused, Discover, My trees and Collect still sort by distance from a coordinate we do not have, so somebody in Berlin sees metre distances from Amsterdam. Apple Maps zooms out and admits it. Ours quietly guesses, and only the Map tab says so. Fixing it means deciding what those three screens show with no location at all, which is a design call rather than a bug fix, so it is not in this branch.
+
 ## 2026-08-30 (session, continuation of a window whose first attempt stopped after 7 minutes) - Vancouver opens, the i18n staleness BLOCKER fixed, and the "broken" iOS app turned out to be fixed already
 
 Picked up an earlier attempt that stopped after 7 minutes with 113 of 120 minutes still unspent. First cleaned up its mess, then did four real things.
