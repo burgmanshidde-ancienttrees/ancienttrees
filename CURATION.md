@@ -8,6 +8,16 @@
 - [2026-07](archive/CURATION-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+## 2026-08-30 - Krakow +8 (26 to 34), Nuremberg +1 (10 to 11), Singapore +4 (18 to 22), all register-backed deepen passes
+
+Krakow: 8 trees from the Polish GDOS pomniki przyrody register, cross-sourced against pl.wikipedia. 0 flagged for age (band derived only for the lime and plane against same-species/same-register calibration already in Krakow's data; the two elms, oak, ginkgo-garden oak, palm and cycad left with no age, stated plainly). 0 photos added; still 3 of 34 photographed.
+
+Nuremberg: 1 tree (nbg_011, a beech on the city's own 2020 Naturdenkmal ordinance) recovered from an abandoned session-window attempt's leftover verified file rather than lost. No age or girth documented, flagged. 0 photos; still 1 of 11 photographed.
+
+Singapore: 4 trees from the NParks Heritage Tree register, all extending the existing Botanic Gardens rainforest-edge cluster. 2 of 4 carry a derived/sourced age (Butter Tree ~130y from an 1897 introduction date, Teak ~140y from NParks' 1884 date), 2 have none (Nemesu, Mengkulang) and say so. 0 photos added; still 3 of 22 photographed.
+
+Full detail in LOG.md's entry of the same date. QA, preflight and superlatives clean after each merge.
+
 ## 2026-08-29 (session, continued) - Cesky Krumlov opens, 6 trees, and a real check_paid_share() gap fixed along the way
 
 Third new city this session, off the Czech AOPK national memorial-tree register (species, girth, no age field). First verify pass found only the Zlata Koruna monastery cluster (8km from the old town): 4 trees, 3 of them behind the monastery's own paid tour route, 75% paid, which fails Hidde's "at most about a third" rule (2026-08-23) on day one. Rather than ship it anyway or drop good trees, dispatched a second targeted verify pass on the near-town scattered register candidates specifically hunting free supply, per the rule's own remedy ("free trees added"). Landed 2 more, both roadside and free, bringing the ratio to 3 of 6 (50%), still above a third but in line with several already-published cities (Padua 58%, Aarhus 57%) and a real improvement over the alternative of not shipping.
