@@ -386,8 +386,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 189 | Taormina | 2.35 | 33,169 | - | - | - | 5 | 10 | predicted (travel demand) |
 | 190 | Niagara Falls | 3.68 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 191 | Kuala Lumpur | 3.80 | 191,800 | - | - | - | - | 10 | predicted (travel demand) |
-| 192 | Los Angeles | 3.60 | 665,559 | 8 | 2 | - | - | 10 | published, never ranked (may be uncrawled) |
-| 193 | Rothenburg ob der Tauber | 3.08 | 39,879 | - | - | - | 8 | 10 | predicted (travel demand) |
+| 192 | Rothenburg ob der Tauber | 3.08 | 39,879 | 4 | - | - | 8 | 10 | predicted (travel demand) |
+| 193 | Los Angeles | 3.60 | 665,559 | 8 | 2 | - | - | 10 | published, never ranked (may be uncrawled) |
 | 194 | Verona | 2.16 | 77,646 | 8 | 4 | 1 | 3 | 20 | measured |
 | 195 | Wellington | 3.60 | 132,267 | - | - | - | - | 10 | predicted (travel demand) |
 | 196 | Austin | 3.66 | 226,631 | 5 | - | - | - | 20 | measured |
@@ -416,10 +416,10 @@ so qa.py fails the deploy when the table and the json disagree.
 | 219 | Corsica | 3.00 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 220 | Mechelen | 2.93 | 20,707 | - | - | - | - | 10 | predicted (travel demand) |
 | 221 | Hobart | 1.94 | 81,734 | 10 | - | 2 | 455 | 20 | measured |
-| 222 | Genoa | 1.51 | 145,206 | 12 | 1 | 1 | 11 | 20 | measured |
-| 223 | Ibiza | 1.85 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 224 | Kamakura | 1.74 | 33,492 | - | - | - | - | 10 | predicted (travel demand) |
-| 225 | Coimbra | 1.44 | 34,962 | - | - | - | 5 | 10 | predicted (travel demand) |
+| 222 | Coimbra | 1.44 | 34,962 | 4 | - | - | 5 | 10 | predicted (travel demand) |
+| 223 | Genoa | 1.51 | 145,206 | 12 | 1 | 1 | 11 | 20 | measured |
+| 224 | Ibiza | 1.85 | - | - | - | - | - | 10 | predicted (travel demand) |
+| 225 | Kamakura | 1.74 | 33,492 | - | - | - | - | 10 | predicted (travel demand) |
 | 226 | Inverness | 2.76 | 92,195 | - | - | - | - | 10 | predicted (travel demand) |
 | 227 | Bled | 2.72 | 13,126 | - | - | - | - | 10 | predicted (travel demand) |
 | 228 | Osaka | 1.72 | 163,112 | 4 | 1 | - | - | 30 | measured |

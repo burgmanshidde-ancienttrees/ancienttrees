@@ -1,0 +1,134 @@
+{
+  "city": "Coimbra",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Coimbra keeps its oldest trees the way it keeps its university, on the record. A forest three kilometres from the centre holds the tallest tree in Europe, a Western Australian karri planted around 1873, with a bunya pine from the same continent shading the same path. Inside the botanical garden, entered through the arches of a Roman aqueduct, a second bunya has spent a century and a half growing wider rather than taller. A camphor tree on a college campus, planted in 1860, made Portugal's ten finalists for Tree of the Year 2026.",
+  "meta_description": "Coimbra's trees: the tallest tree in Europe, two bunya pines by a Roman aqueduct, and a camphor tree up for Portugal's Tree of the Year.",
+  "oldest_tree_id": "cbr_001",
+  "question_meta": "Coimbra's oldest tree is the Bunya Pine of the Arcos do Jardim, estimated at around 165 years old, growing in the University of Coimbra's Botanical Garden.",
+  "question_answer": "Coimbra's oldest tree is the Bunya Pine of the Arcos do Jardim, estimated at around 165 years old, growing in the University of Coimbra's Botanical Garden just inside the Arcos do Jardim aqueduct gate. Portugal's register of trees of public interest classified it in December 2010, recording an age of 150 years at that measurement, which puts it near 165 now.",
+  "question_context": "Two other Coimbra trees run it close. The camphor tree on the ESAC agricultural college campus, planted in 1860 by the school's own record, works out to almost exactly the same age, and nothing settles which is genuinely older: one figure comes from a 2010 classification measurement, the other from an institutional planting record, and neither is a ring count.\n\nThe garden's bunya grows on the upper terrace behind the aqueduct arches, part of a nineteenth-century collection that also holds thirty species of eucalyptus and a Moreton Bay fig grand enough to make Thomas Pakenham's Remarkable Trees of the World. Three kilometres away, in the Mata Nacional de Vale de Canas, two younger arrivals of the same era do the height and headlines instead: a 73-to-75-metre karri that is the tallest tree measured anywhere in Europe, and a bunya of the same age that is the tallest of its species in Portugal. All four went into the ground within a few decades of each other, in the second half of the nineteenth century, when Coimbra's institutions were filling their grounds with trees shipped from the far side of the world.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Coimbra?",
+      "a": "The Bunya Pine of the Arcos do Jardim, in the University of Coimbra's Botanical Garden, estimated at around 165 years old. The camphor tree on the ESAC campus, planted in 1860, works out to almost the same age, close enough to call it a tie."
+    },
+    {
+      "q": "Is the tallest tree in Europe really in Coimbra?",
+      "a": "Yes. The Karri Knight, a Western Australian karri in the Mata Nacional de Vale de Canas forest, has reached somewhere between 73 and 75 metres depending on the survey, and every measurement agrees it is the tallest tree recorded anywhere in Europe."
+    },
+    {
+      "q": "Are Coimbra's remarkable trees free to visit?",
+      "a": "Two are. The Karri Knight and the Bunya Knight stand in the free, public Mata Nacional de Vale de Canas forest. The bunya pine in the University Botanical Garden needs a paid garden ticket, and the camphor tree at ESAC stands on a college campus whose general walk-in access was not independently confirmed; ask the school first."
+    },
+    {
+      "q": "Why does a Portuguese city grow so many Australian trees?",
+      "a": "Coimbra's institutions filled their grounds with imported conifers and eucalypts in the second half of the nineteenth century, the same decades the university's botanical garden and the Vale de Canas plantings both date from. Three of Coimbra's four remarkable trees are Australian species planted within a few decades of each other."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cbr_001",
+      "name": "The Bunya Pine of the Arcos do Jardim",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "age_estimate": "around 165 years",
+      "age_min": 155,
+      "age_max": 175,
+      "girth_cm": 630,
+      "location": {
+        "address": "Jardim Botanico da Universidade de Coimbra, entered beside the Arcos do Jardim (Aqueduto de Sao Sebastiao), Calcada Martim de Freitas, Coimbra",
+        "latitude": 40.20639999,
+        "longitude": -8.420199989,
+        "neighbourhood": "Almedina, within the University Botanical Garden"
+      },
+      "story": "The University of Coimbra's botanical garden grows seven different species of araucaria. This is the one that stops people on the path. A bunya pine from southeast Queensland, it has a trunk 6.3 metres round and a crown 16.6 metres across, carried on only 19 metres of height: a tree built outward rather than upward.\n\nIts address is half the story. You reach it through the Arcos do Jardim, the arches of the Sao Sebastiao aqueduct, then climb to the upper terrace where the garden keeps its oldest exotics. That collection dates to the nineteenth century and it is not a modest one: thirty species of eucalyptus, seven araucarias, and a Moreton Bay fig that Thomas Pakenham thought worth putting in Remarkable Trees of the World. A Portuguese newspaper surveying the garden's treasures in 2018 described this terrace plainly as the part where the big trees are, some of them a century and a half old.\n\nPortugal's register of trees of public interest classified the bunya in December 2010 and recorded its age as 150 years at that measurement, which puts it around 165 now. The species is Australian and this tree has never seen its own continent. Everything else about the setting, from the aqueduct arches to the terrace walls, is Coimbra.",
+      "verified_sources": [
+        "ICNF Arvoredo de Interesse Publico register (si.icnf.pt/wfs/arv_class, CC BY 4.0), processo KNJ1/571, classified Aviso n.o 25 de 29/12/2010",
+        "https://www.publico.pt/2018/09/22/fugas/noticia/os-tesouros-do-botanico-cobrem-uma-encosta-1844381 (fetched via web.archive.org/web/20241114105459)"
+      ],
+      "access": "Paid entry, University of Coimbra Botanical Garden ticket; reached through the Arcos do Jardim gate under the aqueduct arches.",
+      "transport": "5-10 minute walk from Praca da Republica / central Coimbra.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "paid_entry": true
+    },
+    {
+      "id": "cbr_002",
+      "name": "The Karri Knight",
+      "species": "Karri (Eucalyptus diversicolor)",
+      "age_estimate": "roughly 145 to 150 years",
+      "age_min": 140,
+      "age_max": 155,
+      "girth_cm": 578,
+      "location": {
+        "address": "Mata Nacional de Vale de Canas, Torres do Mondego, Coimbra",
+        "latitude": 40.2109657,
+        "longitude": -8.372817575,
+        "neighbourhood": "Torres do Mondego"
+      },
+      "story": "The tallest tree in Europe is an Australian, and it grows in a small forest a quarter of an hour's walk from a car park outside Coimbra. Eucalyptus diversicolor, the karri, comes from the far southwest corner of Western Australia. This one has reached somewhere between 73 and 75 metres, depending on who measured it and when. Portugal's register recorded 72.9 metres in 2015. The Giant Trees Foundation put a laser on it in 2017 and got 73. An independent measuring project reports just over 75. The trunk is disputed in the same modest way, 5.78 metres round by the register against 6.03 by the other count, and the honest version is a range rather than a number.\n\nWhat nobody disputes is the shape: a straight grey column with its first branch far above your head.\n\nIt is also not old. A visitor's account from 2021 repeats a local story that the Mondego hydraulic service planted it in 1873, though it reports that rather than records it. The register worked from 140 years at its 2015 measurement, which puts the tree at roughly 145 to 150 now. Either way it went up the height of a twenty-storey building in about a century and a half. Portugal classified it as a tree of public interest in 2002, and the marked path in from the parking area takes about fifteen minutes.",
+      "verified_sources": [
+        "ICNF Arvoredo de Interesse Publico register, processo KNJ1/415, classified D.R. n.o 188, II Serie de 16/08/2002",
+        "https://www.monumentaltrees.com/en/prt/centro/coimbra/4104_valledecanas/ (fetched via web.archive.org/web/20251203102458)",
+        "https://luamarte.wordpress.com/2021/10/15/fui-ver-a-arvore-mais-alta-de-portugal/"
+      ],
+      "access": "Free; inside the Mata Nacional de Vale de Canas, a small enclosed national forest with a marked path from a small parking area.",
+      "transport": "About 3.6 km from central Coimbra (car or taxi), then roughly a 15-minute walk from the parking area.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "cbr_003",
+      "name": "The Bunya Knight",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "age_estimate": "roughly 140 to 155 years",
+      "age_min": 140,
+      "age_max": 160,
+      "girth_cm": 370,
+      "location": {
+        "address": "Mata Nacional de Vale de Canas, Torres do Mondego, Coimbra, close to the Karri Knight",
+        "latitude": 40.21115383,
+        "longitude": -8.372867968,
+        "neighbourhood": "Torres do Mondego"
+      },
+      "story": "A few dozen metres from the tallest tree in Europe stands the tallest bunya pine in Portugal, on the same path in the same small forest. Araucaria bidwillii is a Queensland conifer with stiff, spined foliage and a trunk that goes up like a mast. This one carries 3.7 metres of girth under 54 metres of height, and the tree-measuring project that surveyed Vale de Canas rates it the biggest of its species in the country.\n\nNot everyone agrees on the number. A visitor writing in 2021 gave the height as 49 metres against the register's 54, which is the sort of gap that opens up when a crown has to be measured from the ground through other trees.\n\nThe species carries more history than its Portuguese address suggests. That same 2021 account notes what the register does not, that Araucaria bidwillii is a sacred tree to Aboriginal peoples in its native southeast Queensland. Here it is one specimen among imported conifers and eucalypts. The register put both this tree and the karri beside it at 140 years when it measured them in 2015, which makes it somewhere around 145 to 155 now, and Portugal classified the pair together in August 2002.\n\nIt is the quieter half of a two-tree walk that leaves your neck at an angle.",
+      "verified_sources": [
+        "ICNF Arvoredo de Interesse Publico register, processo KNJ1/416, classified D.R. n.o 188, II Serie de 16/08/2002",
+        "https://www.monumentaltrees.com/en/prt/centro/coimbra/4104_valledecanas/ (fetched via web.archive.org/web/20251203102458)",
+        "https://luamarte.wordpress.com/2021/10/15/fui-ver-a-arvore-mais-alta-de-portugal/"
+      ],
+      "access": "Free; same Mata Nacional de Vale de Canas forest as the Karri Knight, a few dozen metres away on the same path.",
+      "transport": "Same as the Karri Knight: about 3.6 km from central Coimbra, then a roughly 15-minute walk from the parking area.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "cbr_004",
+      "name": "The Camphor Tree of ESAC",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "around 165 years",
+      "age_min": 160,
+      "age_max": 175,
+      "girth_cm": 850,
+      "location": {
+        "address": "ESAC - Escola Superior Agraria de Coimbra campus, Bencanta, Sao Martinho do Bispo, Coimbra (behind the Bencanta railway station)",
+        "latitude": 40.21499999,
+        "longitude": -8.454599989,
+        "neighbourhood": "Bencanta"
+      },
+      "story": "Its crown is wider than the tree is tall: 34.5 metres across against 28 metres of height. The camphor tree on the agricultural college's campus at Bencanta has had a century and a half to spread and nothing in its way.\n\nCinnamomum camphora comes from East Asia. This one went in in 1860, according to the school, which makes it about 165 years old, and Portugal classified it as a tree of public interest back in July 1969. The trunk has not stopped since: the national register measured 8.5 metres round in 2015 and the school reported more than 9 metres in December 2025.\n\nThat December was a busy month for it. The tree was named one of ten finalists in the public vote for Portugal's Tree of the Year 2026, and in the same announcement the school pointed out that the route planned for a future high-speed railway passes close enough to put it at risk. It has stood through 165 years of whatever the campus did around it, and the thing that could finally move it is a line that does not exist yet.\n\nOne practical note, because the walk out here is 3.7 kilometres. The tree stands on the grounds of a public college and is visible from the campus paths, but the school handles visits through its external relations office rather than leaving the gates open by default. Ask first.",
+      "verified_sources": [
+        "ICNF Arvoredo de Interesse Publico register, processo KNJ1/170, classified D.G. n.o 173, II Serie de 25/07/1969",
+        "https://www.esac.pt/index.php/2025/12/04/canforeira-da-esac-e-candidata-a-arvore-do-ano-2026/"
+      ],
+      "access": "On the campus of ESAC, a public agricultural college in Bencanta; visible from campus paths. General public walk-in access was not independently confirmed this pass; the school directs formal visit requests through its external relations office (gac@esac.pt), so it is worth confirming before a special trip.",
+      "transport": "Near the Bencanta railway station (Linha do Norte, Coimbra suburban services), about 3.7 km from central Coimbra.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}

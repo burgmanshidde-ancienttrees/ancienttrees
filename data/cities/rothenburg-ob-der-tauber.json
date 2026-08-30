@@ -1,0 +1,139 @@
+{
+  "city": "Rothenburg ob der Tauber",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Rothenburg ob der Tauber's old lindens do not stand in the walled town everyone photographs. They grow in the valley below it, along the river paths the town wall looks down on. One carries its own planting date, cut into the wall beside it: 1587. Two more, each on record with a Bavarian register number and nothing else, stand roadside by working mills two kilometres downstream. A protected pair of spruces over a small waterfall completes the set, on a waymarked trail signposted out of the Altstadt.",
+  "meta_description": "Rothenburg ob der Tauber's oldest trees: a 440-year-old linden with its planting date carved in stone, and three more along the Tauber valley trails.",
+  "oldest_tree_id": "rob_001",
+  "question_meta": "Rothenburg's oldest tree is the Great Linden of the Muhlacker, a lime dated by its own carved inscription to 1587, about 440 years old.",
+  "question_answer": "Rothenburg ob der Tauber's oldest tree is the Great Linden of the Muhlacker, a large-leaved lime growing beside the town wall near the Rossmuhle youth hostel below the Spitalbastei. A stone inscription in the wall beside it reads that the linden was planted here in 1587, which puts it at about 440 years old, one of the few trees in this project with its own planting date carved in stone.",
+  "question_context": "The inscription is unusually direct evidence. Most trees this old are dated by growth models or a source that estimates rather than states; this one has the words carved into the stone beside it, A. 1587 IST DIE LINDEN GESEGZET, the linden was set here. It was already fifty years old when Tilly's army took the town in 1631, the siege the Meistertrunk legend grew out of, and it has kept the same spot on the wall since.\n\nThe tree has also been drawn. In 1869 the Frankfurt painter Carl Theodor Reiffenstein sat below the Spitalbastei and sketched it; the sheet survives in the Staedel Museum in Frankfurt, so a notable linden has been recorded on this exact ground for over 150 years.\n\nOne thing about it is still open. German sources call it a Sommer-Linde, the large-leaved lime, though the name gets used loosely for the small-leaved species too, and nobody here has checked the leaves closely enough to settle it. The three other trees on this page carry no age at all, register entries with a species word and nothing more, which makes the Muhlacker linden's carved date the exception rather than the rule.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Rothenburg ob der Tauber?",
+      "a": "The Great Linden of the Muhlacker, below the Spitalbastei near the Rossmuhle youth hostel. A stone inscription in the town wall beside it dates its planting to 1587, which makes it about 440 years old."
+    },
+    {
+      "q": "Are Rothenburg's remarkable trees inside the walled old town?",
+      "a": "No, none of them. All four grow in the Tauber valley below the walls, reached on foot along the river paths and waymarked trails that lead out from the Altstadt rather than inside it."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all four stand on public paths: the town wall path, the Taubertalweg cycle and walking route past the old mills, and the W8 Postbotenweg waymarked trail through the Vorbachtal."
+    },
+    {
+      "q": "Why do two of Rothenburg's protected trees have no recorded age?",
+      "a": "Bavaria's natural monument register protects a tree by species and location, not by history. The Fuchsmuhle and Langenmuhle lindens are both on that register with no age or girth ever published; if you know either tree well enough to help, tell us."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rob_001",
+      "name": "The Great Linden of the Muhlacker",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "about 440 years",
+      "age_min": 400,
+      "age_max": 480,
+      "girth_cm": 600,
+      "location": {
+        "address": "Am Muhlacker, beside the town wall near the Rossmuhle youth hostel, Rothenburg ob der Tauber",
+        "latitude": 49.372735,
+        "longitude": 10.179418,
+        "neighbourhood": "Muhlacker, below the Spitalbastei"
+      },
+      "story": "The town wall beside this linden records the year it was planted. A stone inscription reads \"A. 1587 IST DIE LINDEN GESEGZET\", the linden was set here, in 1587, which is documentation most trees this age never get. That puts it at about 440 years, and it wears them: a six-metre trunk broken into surviving fragments, an old veteran rather than a whole one, still leafing out every spring.\n\nIt was already standing when Tilly's army took Rothenburg in 1631. It has kept the same spot ever since, below the Spitalbastei where the wall runs down to the Muhlacker and the mill ponds.\n\nSomebody was drawing it long before anyone photographed it. On 16 July 1869 the Frankfurt painter Carl Theodor Reiffenstein sat here and worked it up in pencil, titling the sheet \"Grosse Linde am Muehlacker in Rothenburg ob der Tauber\". That drawing is in the Staedel Museum in Frankfurt, which means a large, notable linden has been recorded on this exact patch of ground for over 150 years.\n\nOne thing is unsettled. German sources call it a Sommer-Linde, which is Tilia platyphyllos, the large-leaved lime, though the name is used loosely in some regions for Tilia cordata as well. The leaves would settle it in a second for anyone who knows the difference. If that is you, tell us.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/4448-linde_in_rothenburg_od_tauber/",
+        "https://sammlung.staedelmuseum.de/de/werk/grosse-linde-am-muehlacker-in-rothenburg-ob-der-tauber-3"
+      ],
+      "access": "Free, on a public path along the town wall near the youth hostel",
+      "transport": "About 10 minutes on foot south of the Marktplatz, near the Rossmuhle youth hostel below the Spitalbastei",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "best_time": {
+        "months": [1, 2],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the broken frame of the old trunk shows"
+      }
+    },
+    {
+      "id": "rob_002",
+      "name": "The Fuchsmuhle Linden",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Beside the Fuchsmuhle guesthouse on the Taubertalweg, Rothenburg ob der Tauber",
+        "latitude": 49.37672632,
+        "longitude": 10.16887206,
+        "neighbourhood": "Fuchsmuhle, Tauber valley"
+      },
+      "story": "The tree listed just before this one in the same Bavarian register is gone. The Detwang linden, natural monument number 44, lost its crown in a storm on the night of 1 March 2020 and was taken down. Number 45 still stands, where the Tauber path passes the Fuchsmuhle two kilometres downstream of the town walls.\n\nWhat the register holds on it is a point on a map, a species word and a protection order. Linde, natural monument, and after that nothing: no age, no girth, not even which lime it is. Bavaria has protected it, so somebody with authority judged it worth keeping, and the record of the hamlet itself still describes a linden standing there, designated a natural monument, in the present tense. The file ends there.\n\nWhich makes it a good tree to go and look at rather than read about. The walk out is level, along the cycle and footpath that follows the river past the old mills, and the Fuchsmuhle is a working guesthouse with the tree beside the road rather than in its yard. Small-leaved and large-leaved limes separate on the underside of the leaf and the tufts of hair in the vein angles, so anyone standing under it in summer can settle in a minute what the register never wrote down. If you do, or if you get a tape around the trunk, tell us.",
+      "verified_sources": [
+        "Bayerisches Landesamt fuer Umwelt Naturdenkmal register (CC BY 4.0), register id ND-04850, 'ND Nr. 45 Linde'",
+        "https://de.wikipedia.org/wiki/Fuchsm%C3%BChle_(Rothenburg_ob_der_Tauber)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber"
+      ],
+      "access": "Free; the tree stands roadside on the public Taubertalweg cycle and walking path beside the Fuchsmuhle guesthouse, not inside the guesthouse grounds.",
+      "transport": "About 2 km downstream along the Taubertalweg from Rothenburg's old town; a level 25-30 minute walk or a short ride on the cycle path",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "rob_003",
+      "name": "The Langenmuhle Linden",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Beside the Langenmuhle mill on the Taubertalweg, Rothenburg ob der Tauber",
+        "latitude": 49.3915339,
+        "longitude": 10.16551611,
+        "neighbourhood": "Langenmuhle, Tauber valley"
+      },
+      "story": "The house beside this linden was built in the fifteenth century. Which of the two came first, nobody has written down.\n\nThe Langenmuhle is one of the water mills strung along the Tauber below Rothenburg, its main building late medieval, its stone barn dated 1875, and it marks the northern edge of the old town's protected ensemble. The lime beside it is listed separately and on its own account, number 46 on the Bavarian natural monuments register, which records it as a linden at the Langenmuhle and stops there. No age. No girth. Not even which of the limes it is. The record of the place itself still describes a designated linden standing there, in the present tense, and that is the whole file.\n\nTake it as part of the valley rather than as a destination in itself. The Langenmuhle sits 2.3 kilometres downstream of the walls on the Taubertalweg, about half an hour on the flat, on the same path that passes the Fuchsmuhle and its own protected linden. The mill is a private house and farm and the register places the tree by it rather than inside it, so this is one to see from the road.\n\nIf you walk out there, two things are worth sending back: whether the tree is genuinely visible from the public road, and anything anyone locally knows about its age.",
+      "verified_sources": [
+        "Bayerisches Landesamt fuer Umwelt Naturdenkmal register (CC BY 4.0), register id ND-04851, 'ND Nr. 46 Linde'",
+        "https://de.wikipedia.org/wiki/Langenm%C3%BChle_(Rothenburg_ob_der_Tauber)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber"
+      ],
+      "access": "Free; register location text places it by the mill on the roadside, the same wording pattern as the Fuchsmuhle entry. The Langenmuhle itself is a private residence and farm, but the tree stands by the valley road rather than inside its grounds.",
+      "transport": "About 2.3 km downstream along the Taubertalweg from Rothenburg's old town, roughly a 30 minute level walk",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "rob_004",
+      "name": "The Vorbachtal Spruces",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "In the Vorbach valley, about 300 m southeast of Durrenhof, near the hamlet of Vorbach, Rothenburg ob der Tauber",
+        "latitude": 49.37912944,
+        "longitude": 10.15780696,
+        "neighbourhood": "Vorbachtal"
+      },
+      "story": "Germany has a great many Norway spruces. Two of them, standing over a small waterfall west of Rothenburg, are a listed natural monument, and Bavaria registers them as one thing rather than two: zwei Fichten am Wasserfall im Vorbachtal, number 47 on the town's list.\n\nSet your expectations for the waterfall honestly. The Vorbachtal is a narrow wooded valley with a stream running through it and disused limestone quarries along its sides, not a cataract. What the pair have is a setting, water at their feet and a gorge around them, and whoever drew up the designation evidently thought the combination worth keeping. The record of the hamlet of Vorbach still describes the two spruces standing east of it, designated, in the present tense.\n\nNobody has published an age or a girth for either. Spruce does not reach the ages the limes in this town do, so what is on offer here is the pairing and the place rather than a claim to great antiquity. If somebody local knows when they went in, we would like to hear it.\n\nGetting there is half of it. The W8 Postbotenweg, one of Rothenburg's waymarked walks, heads west out of the town through the Vorbachtal and past Durrenhof, about 2.5 kilometres and forty minutes from the Marktplatz. This one is a walk rather than a stop.",
+      "verified_sources": [
+        "Bayerisches Landesamt fuer Umwelt Naturdenkmal register (CC BY 4.0), register id ND-04852, 'ND Nr. 47 2 Fichten am Wasserfall im Vorbachtal'",
+        "https://de.wikipedia.org/wiki/Vorbach_(Rothenburg_ob_der_Tauber)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber"
+      ],
+      "access": "Free; the valley is reached by a public Gemeindeverbindungsstrasse (local connecting road) and lies on the W8 'Postbotenweg' waymarked hiking trail out of Rothenburg, which passes directly through the Vorbachtal and the neighbouring hamlet of Vorbach.",
+      "transport": "About 2.5 km west of Rothenburg's Marktplatz via the W8 Postbotenweg trail through the Vorbachtal; roughly 35-40 minutes on foot",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}
