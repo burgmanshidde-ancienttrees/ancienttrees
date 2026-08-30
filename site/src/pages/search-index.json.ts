@@ -31,14 +31,24 @@ export async function GET() {
   const searchNames = citySearchNames();
 
   const c: { city: string; country: string; n: number; u: string; a?: string[] }[] = [];
-  const t: { n: string; c: string; u: string }[] = [];
+  // `i` is the tree's own id, carried since 2026-08-30 so anything holding an
+  // id can resolve it to a name and a url without a second request.
+  //
+  // /account needs it. The app writes a save to Supabase as user_id plus
+  // tree_id and nothing else, and the saved list read `name` and `url` off that
+  // row, so every tree saved in the app rendered as a card called "null"
+  // linking to /null (Hidde, 2026-08-30: "ik zie allemaal rare dingen staan").
+  // Sending the id is the fix that also repairs the rows already written,
+  // because the name of a tree is an ANSWER the website already knows and not
+  // something a second surface should be storing its own copy of.
+  const t: { n: string; c: string; u: string; i: string }[] = [];
   for (const entry of allCities) {
     const d = entry.data;
     const alt = searchNames[entry.id];
     c.push({ city: d.city, country: d.country, n: d.trees.length, u: entry.id,
              ...(alt && alt.length ? { a: alt } : {}) });
     for (const tree of d.trees) {
-      t.push({ n: tree.name, c: d.city, u: `${entry.id}/${slugify(tree.name)}` });
+      t.push({ n: tree.name, c: d.city, u: `${entry.id}/${slugify(tree.name)}`, i: tree.id });
     }
   }
 
