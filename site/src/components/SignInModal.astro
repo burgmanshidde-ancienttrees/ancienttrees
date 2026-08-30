@@ -20,10 +20,13 @@
 // app stays, as a plain link rather than a second primary button, because it
 // is a different decision and it should not compete with this one.
 //
-// And the subtitle names the tree when there is one to name. A save that just
-// happened is the reason the dialog is open, and "The Wertheimpark Wingnut is
-// saved on this device only" is a sentence about the visitor. The generic line
-// is a sentence about us.
+// And the subtitle names the tree when there is one to name, because the tree
+// somebody just reached for is the reason the dialog is open. It used to report
+// a save that had already happened ("... is saved on this device only"); since
+// 2026-08-30 saving needs an account (Hidde: "bewaren moet niet werken als je
+// uitgelogd bent"), so nothing has been saved yet and the line asks rather than
+// reports. Saying a tree was saved when it was not is the one thing this
+// sentence must never do.
 // `lang` widened this from a Spanish boolean on 2026-08-22. Modal copy is
 // chrome, which Contract J lets stay English until a language earns a
 // rollout, so an unlisted language gets the English modal rather than a
@@ -34,7 +37,7 @@ const es = esProp || lang === "es";
 const T = es ? {
   title: "Tus árboles en todos tus dispositivos",
   sub: "Una cuenta gratuita, un email, sin contraseña. Tus árboles guardados te siguen a cualquier dispositivo.",
-  subNamed: "%s está guardado solo en este dispositivo. Una cuenta gratuita, un email, sin contraseña, y tus árboles te siguen a todas partes.",
+  subNamed: "Inicia sesión para guardar %s. Una cuenta gratuita, un email, sin contraseña, y tus árboles te siguen a todas partes.",
   titleFeedback: "Inicia sesión para opinar",
   subFeedback: "Cada voto, corrección y sugerencia se comprueba y se responde, y tu cuenta es como te llega la respuesta. Un email, sin contraseña.",
   placeholder: "tu@ejemplo.com",
@@ -49,7 +52,7 @@ const T = es ? {
 } : {
   title: "Keep your trees on every device",
   sub: "An account keeps what you collect and save.",
-  subNamed: "%s is saved on this device only. An account keeps what you collect and save.",
+  subNamed: "Sign in to save %s. An account keeps what you collect, on every device you use.",
   titleFeedback: "Sign in to have your say",
   subFeedback: "Every vote, correction and tip gets checked and answered, and your account is how the answer reaches you.",
   placeholder: "you@example.com",

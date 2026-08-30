@@ -20,7 +20,31 @@ export const SAVED_LIST_JS = `
   var list = document.getElementById('saved-list');
   var empty = document.getElementById('saved-empty');
   function localMap() {
-    try { return JSON.parse(localStorage.getItem('at_saved_v1') || '{}'); } catch (e) { return {}; }
+    var raw;
+    try { raw = JSON.parse(localStorage.getItem('at_saved_v1') || '{}'); } catch (e) { return {}; }
+    // REPAIR ON READ, because the damage is already on the device. Before
+    // 2026-08-30 a save pulled from the account was stored with whatever the
+    // row held, and an app-made save holds no name and no url, so browsers that
+    // opened this page already have entries reading null. Naming them from the
+    // index fixes them in place; the ones nothing can name are dropped rather
+    // than drawn.
+    var out = {}, changed = false;
+    for (var id in raw) {
+      var it = raw[id] || {};
+      if (!it.n || !it.u) {
+        var known = BYID[id];
+        if (known) { out[id] = { n: known.n, u: known.u, p: it.p || '', m: it.m || '' }; changed = true; }
+        else { changed = true; }
+        continue;
+      }
+      out[id] = it;
+    }
+    // Only WRITE once the index has had its say. Before that a broken entry is
+    // merely left out of this render, and the next one repairs it properly.
+    if (changed && indexLoaded) {
+      try { localStorage.setItem('at_saved_v1', JSON.stringify(out)); } catch (e) {}
+    }
+    return out;
   }
   // The same card the rest of the site shows (Hidde, 2026-08-18: one component,
   // one way of showing a tree). This page cannot use TreeCard.astro because it
@@ -31,6 +55,13 @@ export const SAVED_LIST_JS = `
   // with invented content. The city name comes from the search index, which is
   // a static file the search box already fetches.
   var CITY = {};
+  // id -> { n, u }, from the search index. The app writes a save as a tree_id
+  // and nothing else, so this is the only way the page can name those trees.
+  var BYID = {};
+  // The index arrives after the first paint, and until it does BYID cannot name
+  // anything. Repairing before then would DELETE every entry it could have
+  // fixed a moment later, so the first pass only hides them.
+  var indexLoaded = false;
   function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
   function card(id, it) {
     var city = CITY[it.u] || '';
@@ -89,9 +120,15 @@ export const SAVED_LIST_JS = `
   render(localMap());
   // Fill in the city names once, then repaint. A failure here costs a line of
   // context on each card and nothing else.
-  fetch('/search-index.json').then(function(r) { return r.json(); }).then(function(j) {
-    (j.t || []).forEach(function(row) { CITY['/' + row.u] = row.c; });
-    render(lastMap);
+  var indexReady = fetch('/search-index.json').then(function(r) { return r.json(); }).then(function(j) {
+    (j.t || []).forEach(function(row) {
+      CITY['/' + row.u] = row.c;
+      if (row.i) BYID[row.i] = { n: row.n, u: '/' + row.u };
+    });
+    indexLoaded = true;
+    // From localStorage again rather than from lastMap, because the first pass
+    // dropped what it could not name and this one can name it.
+    render(localMap());
   }).catch(function() {});
   // Signed in: the list is the union of this device and the account.
   var s = null;
@@ -102,11 +139,28 @@ export const SAVED_LIST_JS = `
     .then(function(r) { return r.ok ? r.json() : null; })
     .then(function(rows) {
       if (!rows) return;
+      return indexReady.then(function() {
       var map = localMap();
-      rows.forEach(function(r) { if (!map[r.tree_id]) map[r.tree_id] = { n: r.name, u: r.url, p: '', m: '' }; });
+      rows.forEach(function(r) {
+        if (map[r.tree_id]) return;
+        // NAME AND URL COME FROM THE INDEX WHEN THE ROW HAS NONE. A save made
+        // in the app carries only user_id and tree_id, so r.name and r.url are
+        // null and this used to store them as-is: a card titled "null" linking
+        // to "/null". The website already knows what that id is called, so it
+        // answers the question rather than repeating the gap.
+        var known = BYID[r.tree_id];
+        var n = r.name || (known && known.n);
+        var u = r.url || (known && known.u);
+        // Still nothing: a tree we no longer publish, or an id from a newer
+        // build than this page. Skipping it is the honest answer; printing
+        // "null" is not.
+        if (!n || !u) return;
+        map[r.tree_id] = { n: n, u: u, p: '', m: '' };
+      });
       try { localStorage.setItem('at_saved_v1', JSON.stringify(map)); } catch (e) {}
       render(map);
       document.getElementById('saved-sub').textContent = 'Signed in: these follow your account to any device.';
+      });
     })
     .catch(function() {});
 })();
