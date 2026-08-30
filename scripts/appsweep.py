@@ -144,6 +144,10 @@ def screens(sub):
         # it is the first thing a person meets after tapping Take me there.
         ("directions",    ["-tab=0", "-directions"], 5),
         ("signin",        ["-tab=0", "-signin"], 5),
+        # The typed email route, hidden for 1.0 behind Launch.emailSignIn. Swept
+        # anyway, because a screen that stays in the build and is never looked at
+        # rots, and this one comes back the day custom SMTP exists.
+        ("signin-email",  ["-tab=0", "-signin", "-show-email"], 5),
         ("paywall",       ["-tab=0", "-paywall"], 5),
         ("primer",        ["-tab=0", "-primer"], 5),
         # The way back after a refusal. It cannot be reached any other way here,
