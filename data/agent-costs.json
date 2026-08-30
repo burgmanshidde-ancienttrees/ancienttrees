@@ -4003,6 +4003,20 @@
     "trees": 0,
     "photos_approved": 6,
     "note": "42 candidates viewed against the Cadiz standard; 6 approved (asi_001, bam_002, bam_003, bam_004, ckr_001, ckr_003), 36 rejected. Confirmed the Ottobrunnen risk (all 7 candidates were the fountain/statue, no linden pictured, gap kept). Caught two wrong-tree traps: bam_002 candidates 0-4 matched a different, already-blocked private-garden oak (ND-03617) 250m from ours; bam_004 candidate 1 was a half-dead orchard tree, not the lime."
+   },
+   {
+    "target": "coimbra",
+    "kind": "verify",
+    "tokens": 45000,
+    "trees": 4,
+    "note": "register-led (ICNF), close-in cluster only (<4km); 4 verified with 2-3 independent sources each, 11 leads recorded incl. one access-blocked candidate and 10 unresearched far-out register rows"
+   },
+   {
+    "target": "rothenburg-ob-der-tauber",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 4,
+    "note": "register cluster (Detwang/Fuchsmuhle/Langenmuhle/Vorbachtal walk) plus one baumkunde.de find; caught one dead register tree and one private-courtyard block via the wikipedia-join technique"
    }
   ]
  }

@@ -1,0 +1,97 @@
+{
+  "city": "Coimbra",
+  "country": "Portugal",
+  "city_slug": "coimbra",
+  "note": "Candidates from the 2026-08-30 verify pass on the 43 ICNF register trees within 20km of Coimbra centre (data/research/coimbra-register-candidates.json and the fuller list in the brief). 4 trees verified to data/research/coimbra-verified.json (cbr_001-cbr_004): the botanical garden's bunya pine, the Karri Knight and Bunya Knight of Vale de Canas, and the ESAC camphor tree. Time-boxed to the close-in cluster (under 4km); everything past that, and one close candidate blocked on an access question, is here.",
+  "leads": [
+    {
+      "name": "Choupo-negro de Requeixadas",
+      "species": "Black Poplar (Populus nigra)",
+      "lat": 40.23739999,
+      "lng": -8.464299989,
+      "status": "lead",
+      "why": "ICNF register (processo KNJ1/216): girth 6.2m, height 20m, crown 15m, age_register 104 as measured in 2006 (so roughly 124 by 2026). Independently, a 2009 compilation blog (venerablesarboles.blogspot.com, 'Arvores Monumentais de Coimbra, Portugal') lists a Choupo/Populus nigra at Sao Martinho do Bispo with circumference 5m, height 22m, age 90, which is a plausible earlier-vintage snapshot of the same tree (growth trajectory is consistent) rather than a fresh independent measurement, so treat the two-source bar as thin here. NOT SHIPPED THIS PASS on access: the register's 'lugar' is 'Quinta das Requeixadas', and a search found only 'Casa do Bispo / Quinta de Sao Martinho do Bispo', which is the historic estate now occupied by the ESAC campus, in the same freguesia. Whether 'Quinta das Requeixadas' is public ESAC ground, a separate private quinta, or something else could not be confirmed this pass. Resolve that before verifying further; do not assume it is open."
+    },
+    {
+      "name": "Cedro-do-atlas (ICNF, 8.4km out)",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "lat": 40.26570,
+      "lng": -8.46770,
+      "status": "lead",
+      "why": "Register only (portugal-icnf.json): girth 3.7m, age_register 108. Not researched this pass (time-boxed to the sub-4km cluster). Needs a second source and an access/location check before it can verify."
+    },
+    {
+      "name": "Sobreiro (ICNF, 10.3km out)",
+      "species": "Cork Oak (Quercus suber)",
+      "lat": 40.25830,
+      "lng": -8.51040,
+      "status": "lead",
+      "why": "Register only: girth 4.6m, age_register 308, one of the oldest-dated candidates in the whole set. Not researched this pass. Worth prioritising next time given the age."
+    },
+    {
+      "name": "Tulipeiro-da-virginia (ICNF, 11.8km out)",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": 40.11710,
+      "lng": -8.49640,
+      "status": "lead",
+      "why": "Register only: girth 4.3m, age_register 115. South of the city, on the far side of the close-in cluster; not researched this pass."
+    },
+    {
+      "name": "Sobreiro (ICNF, 12.1km out)",
+      "species": "Cork Oak (Quercus suber)",
+      "lat": 40.27490,
+      "lng": -8.52090,
+      "status": "lead",
+      "why": "Register only: girth 5.4m, age_register 306. Not researched this pass."
+    },
+    {
+      "name": "Eucalipto (ICNF, 12.2km out)",
+      "species": "Eucalyptus obliqua",
+      "lat": 40.27700,
+      "lng": -8.30830,
+      "status": "lead",
+      "why": "Register only: girth 4.4m, age_register 87. Not researched this pass; on the opposite side of the city from the 10.3-12.1km cork oaks, so it does not join that pair into a cluster."
+    },
+    {
+      "name": "Sequoia (ICNF, 13.3km out)",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "lat": 40.26950,
+      "lng": -8.28410,
+      "status": "lead",
+      "why": "Register only: girth 4.2m, age_register 158. Close to the two glicinias and the Eucalyptus obliqua candidate above (within about 1km), possibly a small cluster worth a dedicated pass."
+    },
+    {
+      "name": "Glicinia n.2 (ICNF, 13.5km out)",
+      "species": "Chinese Wisteria (Wisteria sinensis)",
+      "lat": 40.26990,
+      "lng": -8.28100,
+      "status": "lead",
+      "why": "Register only: girth 0.1m, age_register 11. Very young; likely not remarkable on its own, but sits beside glicinia n.1 and the sequoia above."
+    },
+    {
+      "name": "Glicinia n.1 (ICNF, 13.6km out)",
+      "species": "Chinese Wisteria (Wisteria sinensis)",
+      "lat": 40.27010,
+      "lng": -8.28070,
+      "status": "lead",
+      "why": "Register only: girth 2.3m, age_register 97. Not researched this pass."
+    },
+    {
+      "name": "Platano (ICNF, 13.6km out)",
+      "species": "London Plane (Platanus x hispanica)",
+      "lat": 40.22730,
+      "lng": -8.57060,
+      "status": "lead",
+      "why": "Register only ('Platanus hybrida Brot.' in the source, standardise to London Plane per house style): girth 5.0m, age_register 100. West of the close-in cluster; not researched this pass."
+    },
+    {
+      "name": "Falsa-arvore-do-incenso (ICNF, 18.3km out)",
+      "species": "Sweet Pittosporum (Pittosporum undulatum)",
+      "lat": 40.10945,
+      "lng": -8.23704,
+      "status": "lead",
+      "why": "Register only: girth 2.4m, age_register 108. Furthest of the non-Bucaco candidates from the centre; a day-trip-boundary check is needed before this could ever ship as part of a Coimbra page."
+    }
+  ],
+  "blocked": []
+}
