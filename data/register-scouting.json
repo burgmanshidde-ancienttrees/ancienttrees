@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Malaga",
+      "country": "Spain",
+      "status": "blocked",
+      "note": "SCOUTED 2026-08-30 (session), on scout_next.py --target naming Malaga (#14) as no supply/no verdict. Andalusia's REDIAM register (data/registers/andalucia-rediam.json, 749 entries, already imported for the whole region) does hold Malaga-province rows, but they do not help Malaga the CITY: the 20 entries within 30 km are individual rural specimens on farmsteads (cortijos, olive groves, cerros) 8 to 28 km out, none within walking distance of another, none near the city centre or its published cluster (mlg_001-009), and several sit on named private farms with no stated public access, which is a hard rule 10 question the register itself does not answer. This is not a walkable cluster by any reading of the clustering doctrine and none of the 20 is worth a standalone day-trip entry on its own merits (mostly plain olives and carobs judged only by size, no exceptional story). Do not re-query REDIAM for Malaga city supply; it is a dead end there specifically, though the register remains valid for other Andalusian cities. No cheaper route found this pass; a from-zero deepening of Malaga (it is not on Hidde's 2026-08-19 from-zero list) would need Hidde to name it."
+    },
+    {
       "place": "Kansas City",
       "country": "United States",
       "status": "blocked",
