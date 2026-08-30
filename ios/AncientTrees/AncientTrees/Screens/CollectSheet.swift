@@ -97,6 +97,8 @@ struct CollectSheet: View {
     }
 
     @State private var stage: Stage = .intro
+    /// Whether `origin` is a fix or a fallback. See LocationOff.swift.
+    @Environment(\.locationState) private var location
     @State private var camera = false
     @State private var library = false
     /// Which permission the recovery sheet is explaining, nil when it is shut.
@@ -364,6 +366,14 @@ struct CollectSheet: View {
     /// notDetermined is deliberately in that second group because presenting is
     /// what triggers the system prompt, and that prompt is the right place to
     /// ask somebody who has just tapped photograph a tree.
+    /// A candidate in the "which of these is it" list. Pure, because the state
+    /// that matters (no photo coordinate AND no fix) cannot be produced on a
+    /// simulator, which always has one or the other.
+    static func candidateLabel(species: String, metres: Int?) -> String {
+        guard let metres else { return species }
+        return "\(species) · \(metres) m"
+    }
+
     /// Why we are asking where the tree stands. Pure, so both branches are
     /// testable on a machine with no photo library to refuse.
     static func placeReason(libraryRefused: Bool) -> String {
@@ -499,7 +509,15 @@ struct CollectSheet: View {
                     .font(.brand(16, .bold))
                     .foregroundStyle(Brand.ink)
                     .multilineTextAlignment(.leading)
-                Text("\(t.commonName) · \(Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000)) m")
+                // The metres are real when `at` is real: a photograph's own
+                // coordinate survives a refused location perfectly well, and
+                // the shutter's fix does too. They are invented only when both
+                // are missing and `origin` has fallen back to Dam square, and
+                // then the species alone is the honest label.
+                Text(Self.candidateLabel(species: t.commonName,
+                                         metres: (at != nil || location.known)
+                                             ? Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000)
+                                             : nil))
                     .font(.footnote)
                     .foregroundStyle(Brand.inkSoft)
             }

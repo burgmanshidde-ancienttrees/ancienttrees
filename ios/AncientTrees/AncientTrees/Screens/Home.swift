@@ -42,6 +42,8 @@ import CoreLocation
 struct HomeView: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
+    /// Whether `origin` is a fix or a fallback. See LocationOff.swift.
+    @Environment(\.locationState) private var location
     @Environment(CatalogueStore.self) private var store
     @Environment(Navigator.self) private var navigator
     @State private var searching = false
@@ -325,7 +327,12 @@ struct HomeView: View {
     /// countries, because both are ways of showing the same database that a
     /// map cannot.
     @ViewBuilder private var shelves: some View {
-        if Launch.walks, !walksNear.isEmpty { walkShelf }
+        // NOT "near you" when we do not know where you are. Apple Maps' own
+        // sheet drops its proximity content entirely with location refused and
+        // shows Places, Home, Work and Your Guides, none of which claims to be
+        // near anything. Ours was ranking every walk by its distance from Dam
+        // square and titling the result "Walks near you".
+        if Launch.walks, !walksNear.isEmpty, location.known { walkShelf }
 
         cityShelf
 

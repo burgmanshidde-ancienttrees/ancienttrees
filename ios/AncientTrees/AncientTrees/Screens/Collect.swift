@@ -31,6 +31,8 @@ import CoreLocation
 struct CollectView: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
+    /// Whether `origin` is a fix or a fallback. See LocationOff.swift.
+    @Environment(\.locationState) private var location
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Sightings.self) private var sightings
@@ -995,11 +997,22 @@ struct CollectView: View {
 
     /// The nearest tree worth walking to: your nearest heart if you have one,
     /// the best suggestion nearby if you do not.
+    ///
+    /// NEAREST ONLY WHEN WE KNOW WHERE YOU ARE. `origin` falls back to the last
+    /// fix and then to Dam square, so with location refused this ranked every
+    /// tree by its distance from a square in Amsterdam and called the winner
+    /// yours. A heart you saved is still the right thing to put first; its
+    /// ORDER just stops pretending to be about proximity.
     private var missionTree: Tree? {
-        wishlist.min { $0.distanceKm(from: origin.lat, origin.lng)
-                     < $1.distanceKm(from: origin.lat, origin.lng) }
-        ?? Editorial.suggestions(catalogue: catalogue, origin: origin,
-                                 excluding: Set(saved.entries.keys), limit: 1).first
+        if location.known {
+            return wishlist.min { $0.distanceKm(from: origin.lat, origin.lng)
+                                < $1.distanceKm(from: origin.lat, origin.lng) }
+                ?? Editorial.suggestions(catalogue: catalogue, origin: origin,
+                                         excluding: Set(saved.entries.keys), limit: 1).first
+        }
+        return wishlist.first
+            ?? Editorial.suggestions(catalogue: catalogue, origin: origin,
+                                     excluding: Set(saved.entries.keys), limit: 1).first
     }
 
     private func distanceLabel(_ t: Tree) -> String {
@@ -1007,10 +1020,24 @@ struct CollectView: View {
         return km < 1 ? "\(Int(km * 1000)) m" : String(format: "%.1f km", km)
     }
 
+    /// The headline, which used to state a number it could not know.
+    ///
+    /// Pure so both branches are testable without a simulator that can refuse
+    /// anything. The known one is unchanged; the unknown one drops the distance
+    /// rather than softening it, because a hedge is still a claim.
+    static func missionTitle(locationKnown: Bool, distance: String) -> String {
+        locationKnown ? "Your first tree is \(distance) away"
+                      : "Start with this tree"
+    }
+
     @ViewBuilder private var mission: some View {
         if let t = missionTree {
             VStack(alignment: .leading, spacing: 12) {
-                Text("Your first tree is \(distanceLabel(t)) away")
+                if !location.known {
+                    LocationOffChip().padding(.bottom, 2)
+                }
+                Text(Self.missionTitle(locationKnown: location.known,
+                                       distance: distanceLabel(t)))
                     .font(.brand(24, .bold, relativeTo: .title))
                     .foregroundStyle(Brand.ink)
                 Text("You can collect it by photographing it while you stand there. Trees, species and places fill your collection, and the years they have seen add up.")
