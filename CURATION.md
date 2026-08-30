@@ -8,6 +8,11 @@
 - [2026-07](archive/CURATION-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-08-30 - Submissions #45-53: vote-toggle bookkeeping on Rome rom_002, no action
+
+Nine rows, all the same user_id, all within a 3-second span, on Rome's rom_002 (Adonis): "worth it" / "vote undone: worth it" / "not worth it" / "vote undone: not worth it" repeating. Same shape as the Amsterdam #40, Sardinia #39 and Utrecht #38 precedents already in this file: a plain vote toggle carries no free-text complaint and nothing to check against sources. Marked processed in `data/submissions-processed.json`, no reply sent, nothing changed in `data/cities/rome.json`.
+
 ## 2026-08-30 - Krakow +8 (26 to 34), Nuremberg +1 (10 to 11), Singapore +4 (18 to 22), all register-backed deepen passes
 
 Krakow: 8 trees from the Polish GDOS pomniki przyrody register, cross-sourced against pl.wikipedia. 0 flagged for age (band derived only for the lime and plane against same-species/same-register calibration already in Krakow's data; the two elms, oak, ginkgo-garden oak, palm and cycad left with no age, stated plainly). 0 photos added; still 3 of 34 photographed.
