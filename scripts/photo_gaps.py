@@ -207,6 +207,17 @@ def shortlist(limit):
             continue
         best = None
         for cand in (entry.get("candidates") or []):
+            # SKIP ANYTHING ALREADY JUDGED. Found 2026-08-30: this loop scored
+            # every candidate by filename match alone and never read `judged`,
+            # so a candidate rejected weeks ago (with a verdict already on
+            # file, e.g. "an oil painting, not a photograph") kept winning the
+            # per-tree pick forever if its filename simply matched best. Ten
+            # of ten candidates on one shortlist run turned out to be exactly
+            # this: already viewed, already rejected, resurfaced as "what to
+            # view next". Re-viewing an exhausted verdict is the single most
+            # repeated waste this project's own corpus names.
+            if cand.get("judged"):
+                continue
             title = str(cand.get("title") or cand.get("file") or "")
             s = names_match(entry, cand)
             if s and (best is None or s > best[0]):
