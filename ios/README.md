@@ -2,63 +2,65 @@
 
 Started 2026-08-19, when Hidde said to build it and that the website waits.
 
-## State
+## Where the app is
 
-**AncientTreesKit is written and verified. No app exists yet, and cannot yet.**
-This Mac has the Command Line Tools but not Xcode, so there is no iOS SDK, no
-simulator and no `xcodebuild`. Xcode is downloading; when it lands, the fix that
-needs Hidde's password is:
+`ios/AncientTrees/` is the Xcode project and is the whole app. Three targets:
+`AncientTrees` (the app), `AncientTreesTests` (Swift Testing, unit) and
+`AncientTreesUITests` (XCTest, the walks and the sweep).
 
-    sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+    Kit/        the engine: catalogue, sync, account, saves, sightings, photos
+    Screens/    the views
+    Data/       the catalogue that ships inside the app, the floor it falls back to
 
-Everything in `AncientTreesKit/Sources` compiles and runs today with the Swift
-toolchain that is already here, which is why it was built first: it is the half
-of the app that does not need a simulator to be proven right.
-
-## What it stands on
-
-The website already serves what an app needs, which was the pleasant surprise:
-
-| feed | what it carries |
-|---|---|
-| `/api/trees.json` | 1377 trees, 2.5 MB, with story, coordinates, access, transport, best_time, precision |
-| `/api/walks.json` | 175 walks, tree ids in order, km and minutes |
-| `/api/species.json` | 34 species with phenology, enough for the Season Radar |
-| `/api/version.json` | a hash and counts, so checking for changes costs a few dozen bytes |
-
-2.5 MB is small enough to hold whole in memory rather than page out of a
-database, and that is what makes the app work with no signal. Offline is
-effectively solved except for photographs, which is what the paywall promises.
+The one door out to the network is `Kit/Net.swift`, the one door to Supabase is
+`Supa` in `Kit/Account.swift`, and `scripts/netcheck.py` keeps both doors one.
 
 ## Verify it
 
-    cd ios/AncientTreesKit
-    curl -s https://ancienttrees.app/api/trees.json -o /tmp/trees.json
-    curl -s https://ancienttrees.app/api/walks.json -o /tmp/walks.json
-    swiftc -O Sources/*.swift Checks/main.swift -o /tmp/atkit && /tmp/atkit /tmp
+    xcodebuild test -project ios/AncientTrees/AncientTrees.xcodeproj \
+      -scheme AncientTrees -destination 'platform=iOS Simulator,name=iPhone 17' \
+      -parallel-testing-enabled NO
 
-17 checks, all against the live feed rather than a fixture, because a model that
-compiles proves nothing and a model that decodes 1377 real trees proves the
-shape. They assert the counts that were measured on the day (3 trees with no
-age, 353 with a photo, 546 with a best_time, 458 approximate pins), so a feed
-change that breaks an assumption shows up as a failure rather than as a bug
-later.
+`.github/workflows/ios.yml` runs the same thing on every push and twice a day on
+a schedule, plus the layout gate and the screen sweep. `scripts/health.py` says
+whether it is currently red.
 
-## Two product rules are in the code rather than in a comment
+## Looking at it
 
-**An unknown `precision` decodes to `.approximate`, never `.confirmed`.** A wrong
-pin is the one error a reader cannot forgive, because they are already standing
-in the wrong place before any correction reaches them, so an unrecognised value
-has to fall on the side of admitting we are unsure.
+    python3 scripts/appsweep.py     # photograph every screen, then LOOK at them
+    python3 scripts/appfit.py       # measure them: CLIPPED, SMALL, DRIFT
+    python3 scripts/appwalk.py      # walk the flows, assert there is always a way back
+    python3 scripts/refused.py      # run it with location and photos denied
 
-**`nearest` takes a radius and is allowed to return nothing.** Most of the world
-has no tree of ours within an hour, and showing somebody the twelfth nearest at
-400 km is worse than saying there is nothing here yet.
+Build app changes in a `git worktree`, not in this checkout;
+`scripts/worktree_guard.py` refuses when another session is live and says why.
 
-## Next, once Xcode is here
+## What it stands on
 
-The teardown at `ALLTRAILS_TEARDOWN.md` decides the screens. In short: the map is
-Google Maps' model rather than AllTrails', because a tree is a point and a route
-is a line; the walk sheet is AllTrails', because `Begin` pinned to the bottom of
-the phone is the fix for `directions` never having fired once on the website; and
-the collection is lists before badges.
+The website serves everything the app reads, which is why the app is a reader
+rather than a second database:
+
+| feed | what it carries |
+|---|---|
+| `/api/trees.json` | every tree, with story, coordinates, access, transport, best_time, precision |
+| `/api/walks.json` | the walks, tree ids in order, km and minutes |
+| `/api/species.json` | the species with phenology, which the Season Radar runs on |
+| `/api/browse.json` | the collections, and the face each city, country and species wears |
+| `/api/version.json` | a hash and counts, so checking for changes costs a few dozen bytes |
+
+Small enough to hold whole in memory rather than page out of a database, and
+that is what makes the app work with no signal. The copy in `Data/` is the
+floor: a fresh install on a plane still has every tree. Refresh it with
+`python3 scripts/appdata.py`.
+
+An ANSWER travels in the feed; a RULE stays on the server. See CLAUDE.md, "the
+both-surfaces rule": everything the app re-decided for itself has drifted.
+
+---
+
+**Deleted 2026-08-30: `ios/AncientTreesKit/`.** It was the half of the app that
+could be proven before Xcode arrived, written on 2026-08-19 and made redundant
+by the real project a few days later. Nothing referenced it, nothing built it,
+and its copy of the models had already fallen behind the app's (no `thumb`, no
+`hero`, no `credit_required`), so it read as live code and was a second answer
+waiting to be believed. It is in the history if it is ever wanted.

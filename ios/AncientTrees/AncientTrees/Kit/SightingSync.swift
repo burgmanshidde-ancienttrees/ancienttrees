@@ -130,17 +130,6 @@ enum SightingSync {
         await Supa.delete("/rest/v1/sightings?id=eq.\(id.uuidString)", token: s.accessToken)
     }
 
-    /// Every photograph this account has in the bucket, removed. Called when
-    /// somebody deletes their account: the rows cascade off auth.users and the
-    /// files cannot, exactly like the avatar.
-    static func removeAllPhotos(account: Account) async {
-        guard let s = account.session else { return }
-        let listed = await list(prefix: "\(s.userId)/", token: s.accessToken)
-        for name in listed {
-            await deleteObject("\(s.userId)/\(name)", token: s.accessToken)
-        }
-    }
-
     // MARK: - plumbing
 
     private static let bucket = "sightings"
