@@ -1,1 +1,103 @@
-[]
+[
+ {
+  "id": "men_001",
+  "name": "Pi Ver del Doctor Camps",
+  "species": "Stone Pine (Pinus pinea)",
+  "age_estimate": "roughly 150 years",
+  "age_min": 140,
+  "age_max": 165,
+  "girth_cm": 400,
+  "height_m": 20,
+  "location": {
+   "address": "Roadside of the Me-20, Ferreries to Es Migjorn Gran road, Sa Mola, Ferreries, Menorca",
+   "latitude": 39.972601,
+   "longitude": 4.031857,
+   "neighbourhood": "Sa Mola, Ferreries"
+  },
+  "verified_sources": [
+   "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI554069&id=554069",
+   "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/"
+  ],
+  "access": "Free, visible from the roadside verge of a public road (the Me-20); no need to enter any property",
+  "transport": "By car from Mao via Ferreries, roughly 25-30 minutes; no direct public transport, though the TIB line 54 bus (Es Migjorn Gran-Ferreries) runs along the same road",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "CAIB official register fitxa (arbre singular, register id 660/663): a pair of stone pines planted about 120 years before the 1992 cataloguing (so roughly the 1870s) by Dr Francesc Camps, known by his pen name Marques d'Albranca, a Menorcan folklorist and the town doctor of Es Migjorn Gran (real historical figure: Francesc Camps i Mercadal, 1852-1929). A third tree of the original group died and was felled by 1992; of the remaining pair, the register's own vitality count says only 1 now remains (specimens_dead 1 of 2). The CAIB fitxa itself flags that in 2003 the remaining tree was found seriously affected by an insect pest, likely to prove fatal eventually; no source newer than the register (undated, likely mid-2000s revision) confirms current condition, hence flagged rather than confirmed alive. Height 20m, canopy diameter 18m, trunk perimeter at 1.3m = 4.0m (girth_cm 400), base perimeter 3.9m. Independent source SDL Medioambiente (2016, citing CAIB) corroborates the same location (roadside, Ferreries to Es Migjorn Gran road) and the planting story (about 120 years, planted by the Marques d'Albranca). That second source is corroborating but ultimately traces back to the same CAIB register information, so treat the two-source bar here as thinly met. A reader confirming the tree still stands would be valuable; ask on the page."
+ },
+ {
+  "id": "men_002",
+  "name": "Pi de Cala Galdana",
+  "species": "Aleppo Pine (Pinus halepensis)",
+  "age_estimate": "roughly 100-150 years",
+  "age_min": 100,
+  "age_max": 150,
+  "girth_cm": 390,
+  "height_m": 16,
+  "location": {
+   "address": "Roundabout at the entrance to the Cala Galdana urbanisation, Hort de Binissaid, Ferreries, Menorca",
+   "latitude": 39.939375,
+   "longitude": 3.965906,
+   "neighbourhood": "Cala Galdana, Ferreries"
+  },
+  "verified_sources": [
+   "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI551209&id=551209",
+   "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/"
+  ],
+  "access": "Free, stands beside a public roundabout at the resort entrance, visible and reachable from the road/pavement",
+  "transport": "By car from Mao, roughly 30 minutes via Ferreries; the summer TIB bus line to Cala Galdana stops at the same roundabout",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "CAIB official register fitxa (catalogued 17/01/2001, register id 651): grew without competitors, giving it unusual size; trunk diameter 1.24m, crown held up on 4 primary branches starting about 2m up, height 16m, canopy diameter 25m (projected canopy area 350 sq m). Owned by the Ajuntament de Ferreries (public). The fitxa itself has a typo listing the municipality as 'Ferreries (Mallorca)', an evident slip since Ferreries is in Menorca and every other field (register island field, staged coordinates) places it there. Long known locally as the tree that has greeted travellers heading to the cove to spend the summer. Independent source SDL Medioambiente (2016) confirms it as the 'white pine' beside the roundabout at the urbanisation entrance, matching the register. No age narrower than the register's own 100-150 year estimate found; girth (perimeter at 1.3m) recorded as 3.9m = 390cm."
+ },
+ {
+  "id": "men_003",
+  "name": "Alzina d'Alfuri de Dalt",
+  "species": "Holm Oak (Quercus ilex)",
+  "age_estimate": "roughly 400-500 years",
+  "age_min": 400,
+  "age_max": 500,
+  "girth_cm": 390,
+  "height_m": 10,
+  "location": {
+   "address": "In the holm oak wood beside the Cala del Pilar car park, Alfuri de Dalt, Ciutadella, Menorca",
+   "latitude": 40.036601,
+   "longitude": 3.972996,
+   "neighbourhood": "Alfuri de Dalt, Ciutadella"
+  },
+  "verified_sources": [
+   "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI550217&id=550217",
+   "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/"
+  ],
+  "access": "Free, standing in a holm oak wood right beside the public car park for Cala del Pilar beach, reached on foot from the parking area or along the Cami de Cavalls coastal path",
+  "transport": "By car from Ciutadella, roughly 20-25 minutes to the Cala del Pilar car park, then a short walk into the adjoining wood; no public transport reaches this car park",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "CAIB official register fitxa (catalogued 17/02/2003, register id 400/02): stands in a holm oak wood right by the crossing of the tracks to Cala Rilau and Son Felip, next to the Cala del Pilar car park, on land expropriated in 1999 by Costas and now held by the state's national parks authority (public). Part of a grove of centuries-old holm oaks grown on sandy soil over a fossil dune. Has some structural damage and low vitality, with the apical crown in decline. Height 10m, base perimeter 4.10m, perimeter at 1.3m 3.90m (girth_cm 390), canopy projection 176 sq m. Age given directly by the register as 400-500 years old, an unusually old and specific estimate for a Balearic holm oak. Independent source SDL Medioambiente (2016) states the same figure plainly ('tiene 400 anos') and the same location beside the Cala del Pilar car park, confirming the register's identification and age claim from a second angle. Low vitality and crown dieback noted by the register itself; no more recent condition check found, so treat 'alive now' as reasonably but not freshly confirmed."
+ },
+ {
+  "id": "men_004",
+  "name": "Platers de l'Ermita de Sant Joan des Verger",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "roughly 100-150 years",
+  "age_min": 100,
+  "age_max": 150,
+  "girth_cm": 410,
+  "height_m": 35,
+  "location": {
+   "address": "Beside the Ermita de Sant Joan des Verger, near the mouth of the port of Mao, Menorca",
+   "latitude": 39.895154,
+   "longitude": 4.246477,
+   "neighbourhood": "Sant Joan, Mao"
+  },
+  "verified_sources": [
+   "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI554073&id=554073",
+   "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/",
+   "https://www.menorca.es/en/Hermitage_Sant_Joan_dels_Vergers/9970"
+  ],
+  "access": "Free, open ground around a small rural hermitage and washhouse, reached on foot along public tracks near Mao harbour (a known walking destination, e.g. via the Cami de sa Font de Sant Simon)",
+  "transport": "On foot or by car from central Mao, roughly 20-25 minutes; no direct public transport to the hermitage itself",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "CAIB official register fitxa (catalogued 12/07/2010, register id 673/68, the most recent addition to the Menorca catalogue): a group of 4 plane trees beside the Ermita de Sant Joan des Verger, next to a large stone washtub (safareig) at a crossing of old paths, roots visibly running into an old paved area. Trunk perimeters range 2.3-4.1m at 1.3m (used the top of that range, girth_cm 410, for the most substantial specimen), base perimeters 2.9-6.9m, heights 31-37m (used 35m as a representative figure), canopy 300-400 sq m. Owned by the Ajuntament de Mao (public). Local tradition, per the register and independently per menorca.es and a 2026 Menorca Info piece on a guided port-history walk stopping here, holds that King Alfons III had mass said here in 1287 after landing to reconquer Menorca from the Moors; the fertile market gardens nearby ('vergers') give the place its name. No trace is thought to remain of the original medieval hermitage building itself, only the later chapel, washhouse and these trees. Independent sources (SDL Medioambiente and menorca.es) corroborate the location, the species, the 2010 cataloguing and the historical association, and confirm the site is an established, signposted walking destination rather than private ground."
+ }
+]

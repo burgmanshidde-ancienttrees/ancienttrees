@@ -1,0 +1,395 @@
+{
+  "city": "Rouen",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "",
+  "meta_description": "",
+  "question_answer": "",
+  "question_meta": "",
+  "question_context": "",
+  "faq": [],
+  "trees": [
+    {
+      "id": "rou_005",
+      "name": "The Gadeau de Kerville Oak",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 120 to 150 years",
+      "age_min": 120,
+      "age_max": 150,
+      "girth_cm": 327,
+      "location": {
+        "address": "Carrefour du Petit Charme, parcelle 206, Foret domaniale de Roumare, near Quevillon",
+        "latitude": 49.4045496,
+        "longitude": 0.9795436,
+        "neighbourhood": "Foret de Roumare, near the Parc animalier / arboretum du Petit Charme, Quevillon"
+      },
+      "story": "The oak that made this name famous is not the oak you will meet at the crossroads. The original, several centuries old, was uprooted in the storm that tore through Normandy in December 1999 and left the Foret de Roumare badly knocked about. The name outlived the tree. It passed to a younger sessile oak standing at the same carrefour du Petit Charme, which joined the Rouen metropole's remarkable-tree register in 2019: roughly 120 to 150 years old on the register's own estimate, 26 metres tall, the trunk a little over a metre through at the base.\n\nSo the panel beside it commemorates a man rather than the wood in front of you. Henri Gadeau de Kerville was a Rouen naturalist who spent four decades from the 1890s onward walking Normandy and writing down its remarkable trees, 113 of them, published through the city's own natural sciences society at a time when nobody catalogued individual trees at all. His oak is gone and his idea is the reason this one is signposted.\n\nIt stands on the path that circles the mare Epinay, a few minutes' walk from the Petit Charme arboretum car park, on flat ground and free to reach.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/ROUMARE/ch_gdekerville.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html",
+        "https://fr.wikipedia.org/wiki/For%C3%AAt_de_Roumare",
+        "https://en.wikipedia.org/wiki/Henri_Gadeau_de_Kerville"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of the official 'arbres remarquables' trail (interpretive panel on site).",
+      "transport": "No public transport reaches the forest. By car: park at either the Parc animalier car parks or the arboretum du Petit Charme car park; the oak stands on the path circling the mare Epinay, at the start of the single forest road, at the carrefour du Petit Charme.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The original Gadeau de Kerville oak, several centuries old, was uprooted in the storm of December 1999 (fr.wikipedia, Foret de Roumare). The tree registered under the name today is a younger successor at the same crossroads. Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rou_004",
+      "name": "The Ladder Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 75 to 90 years",
+      "age_min": 75,
+      "age_max": 90,
+      "girth_cm": 295,
+      "location": {
+        "address": "Junction of two forest roads near the 'carrefour du rossignol', parcelle 242, Foret domaniale de Roumare",
+        "latitude": 49.4012549,
+        "longitude": 0.9949439,
+        "neighbourhood": "Foret de Roumare, between Canteleu and Sahurs"
+      },
+      "story": "Two of this beech's branches have grown into each other and welded shut, which is how it got its name. Foresters call the effect anastomosis: where two limbs press together for long enough, the bark between them wears away, the living tissue underneath meets, and the two pieces of wood carry on as one. Beeches do it more readily than most trees, and on this one the result reads as rungs across a gap, so the register lists it as the hetre echelle, the ladder beech.\n\nEverything else about it is ordinary, which is rather the point. It is 75 to 90 years old, not old for a beech, and just under three metres round measured at the foot of the trunk. It stands where two forest roads meet near the carrefour du rossignol, in the middle of Roumare, and it was already half a century old when the December 1999 storm went through this forest and took some of its bigger neighbours with it.\n\nPark before the barrier on the Etienne forest road and walk in. There is a panel on the trail, and no gate, ticket or opening hours anywhere in this forest.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/ROUMARE/hetre_echelle.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of the official 'arbres remarquables' trail.",
+      "transport": "No public transport reaches the forest. By car: on the D351 between Canteleu and Sahurs, at the 'carrefour Etienne' take the Etienne forest road (between parcelles 233 and 247) and park before the forest barrier, then walk on to the 'carrefour du rossignol'; the tree stands at the point between two forest roads.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rou_010",
+      "name": "The Calabrian Pine of the Jardin des Plantes",
+      "species": "Turkish Pine (Pinus brutia)",
+      "age_estimate": "over 120 years",
+      "age_min": 120,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Jardin des Plantes de Rouen, 7 rue de Trianon, 76100 Rouen",
+        "latitude": 49.4221,
+        "longitude": 1.0771,
+        "neighbourhood": "Jardin des Plantes, Rive Gauche, Rouen"
+      },
+      "story": "In June 2021 the city of Rouen put a pine tree on crutches. Its gardeners built a support structure under the crown because the tree was at risk of coming down, and the announcement explained why it was worth the trouble: a Pinus brutia over 120 years old, a species from Asia Minor and the Black Sea coast that the city describes as unique in the region because it does not normally grow this far north. Rouen calls it the pin de Calabre. In English the same tree is usually the Turkish pine, and the two names have been arguing about its origins for a couple of centuries.\n\nThat age comes from the city's own statement and we have found no second source confirming it, which is worth saying plainly rather than dressing up.\n\nIt is also the only tree on this list you can reach without a car: the Jardin des Plantes is a free municipal botanical garden on the left bank, open daily, a short walk from the tram. The garden covers eight hectares and we cannot yet say which path the pine stands on, so expect to hunt a little. If you find it, tell us where.",
+      "verified_sources": [
+        "http://web.archive.org/web/20210610223320/https://rouen.fr/breve/2021/06/sauvetage-dun-arbre-remarquable-au-jardin-plantes",
+        "https://en.wikipedia.org/wiki/Jardin_des_Plantes_de_Rouen"
+      ],
+      "access": "Free, open daily; municipal botanical garden.",
+      "transport": "Inside Rouen itself, reachable on foot or by tram/bus from the city centre (Jardin des Plantes tram stop on line T2/T3 is a short walk away); no forest drive needed, unlike the rest of this batch.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single-sourced to the City of Rouen's own June 2021 press release; a second independent source for the age and identification is still wanted. Pin is the garden, not the tree.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "rou_012",
+      "name": "The Beeches of Roche Fouet",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 40 to 60 years",
+      "age_min": 40,
+      "age_max": 60,
+      "girth_cm": 126,
+      "location": {
+        "address": "On the waymarked 'Les Troglodytes' circuit, within the ruins of the Roche Fouet castle site, parcelle 458, Foret domaniale de La Londe-Rouvray",
+        "latitude": 49.3221794,
+        "longitude": 1.0111609,
+        "neighbourhood": "Foret de La Londe-Rouvray, near Orival / Les Essarts, overlooking the Seine"
+      },
+      "story": "Several beech trunks have come up inside the walls of a ruined castle, and the walls are losing. The forest register describes them as imbriques, interwoven, with the remains of the chateau de la Roche Fouet on the hillside above the Seine near Orival, which is the whole reason to walk up here. What the stone was before it fell we cannot yet tell you: the ruins are named by the register and nothing more, and the local archaeology deserves a better source than we have found.\n\nThe trees themselves are young. Forty to sixty years, by the register's estimate, which makes them the youngest on this page by a wide margin, and slender with it: 22 metres of height on trunks around 40 centimetres through, the shape a beech takes when it grows up crowded and races everything around it for the light. This is not a veteran to stand under in awe. It is a group of ordinary young beeches in a genuinely strange place, which is a different pleasure.\n\nThe Troglodytes circuit runs past it, waymarked, free, through the Orival hillside above the river. The path climbs and drops; wear proper shoes.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/LLR/h_roche_fouet.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of both the official 'arbres remarquables' trail and the local 'Les Troglodytes' walking circuit through the Orival hillside.",
+      "transport": "No public transport reaches the tree directly. By car: park at the entrance to the forest on the Les Essarts side (parcelle 150) and follow the waymarked 'Les Troglodytes' path; sturdy footwear needed, the path climbs and descends. Sits above the Seine near the Orival oppidum site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Several stems, with one representative figure from the register rather than one per stem. The castle ruins themselves have not been checked against a local-history or archaeology source. Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rou_007",
+      "name": "The Leaning Hornbeams of the Boscs",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "roughly 75 to 90 years",
+      "age_min": 75,
+      "age_max": 90,
+      "girth_cm": 176,
+      "location": {
+        "address": "Mare des Boscs, parcelle 330, Foret domaniale de Roumare",
+        "latitude": 49.3846822,
+        "longitude": 0.9667983,
+        "neighbourhood": "Foret de Roumare, Mare des Boscs, between Canteleu and Sahurs"
+      },
+      "story": "These two made an official remarkable-tree register on the strength of a pose. They are 8 to 10 metres tall, 75 to 90 years old, with trunks somewhere between 44 and 68 centimetres through at the base, which in a forest full of beeches twice their height is nothing at all. What they do is lean. Both hornbeams grew out over the Mare des Boscs and hold themselves at an angle above the water, and the register says so in plain words: le lieu et la forme des troncs en font un endroit superbe, the place and the shape of the trunks make this a superb spot.\n\nHornbeam is the hardest timber in these woods, dense enough that it was the traditional choice for mill cogs and butchers' blocks, and it takes a lean like this without snapping. The pond sits inside a wider wetland the region lists for its nature value, so the walk in is quiet and wet underfoot in places.\n\nIt is the longest approach of the Roumare trees on this page. Park at the rond-point de la Martel, follow the a la Biche forest road, then a small dirt path on the left opens into the meadow and the pond.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/ROUMARE/charmes_boscs.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of the official 'arbres remarquables' trail.",
+      "transport": "No public transport reaches the forest. By car: on the D351 between Canteleu and Sahurs, park at the 'rond-point de la Martel', walk the forest road 'a la Biche' between parcelles 297 and 322, take the second path on the left at parcelle 330; this small dirt path leads to a meadow and the Mare des Boscs.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Girth is the midpoint of the register's 44-68cm base-diameter range across the two trees, not one precise measurement. Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rou_006",
+      "name": "The Trees of the Alliance",
+      "species": "European Beech and Sessile Oak (Fagus sylvatica, Quercus petraea)",
+      "age_estimate": "roughly 90 to 120 years",
+      "age_min": 90,
+      "age_max": 120,
+      "girth_cm": 283,
+      "location": {
+        "address": "Path around the Mare Epinay, near the Arboretum du Petit Charme, parcelle 225, Foret domaniale de Roumare",
+        "latitude": 49.4044445,
+        "longitude": 0.986275,
+        "neighbourhood": "Foret de Roumare, Arboretum du Petit Charme, near the Parc animalier"
+      },
+      "story": "A beech and an oak are not supposed to manage this. Beech is the shade specialist of European forests: it can germinate under a closed canopy, sit in the gloom for years, then close the canopy itself and starve out anything that needs light. Sessile oak needs light. The two also keep different clocks, oaks generally outliving beeches by a long way. So a full-sized beech and a full-sized sessile oak growing directly against each other is odd enough that the forest register singles it out, calling it rare to find two large trees with such different demands for light and such different lifespans standing this close.\n\nBoth are around 90 to 120 years old and roughly 30 metres tall. Which of those figures belongs to which trunk we cannot say: the register measured the pair as one entry and published one set of numbers, so treat them as describing the couple rather than either tree.\n\nThey stand on the path that circles the Mare Epinay, near the Petit Charme arboretum, which also puts them a few minutes from the Gadeau de Kerville oak. Park at the pond, walk the loop, and you have two of Roumare's registered trees in one flat kilometre.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/ROUMARE/arbres_alliance.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of the official 'arbres remarquables' trail.",
+      "transport": "No public transport reaches the forest. By car: park at the Mare Epinay car park, or at the Parc animalier car parks heading towards the Mare Epinay; the pair stands on the path that circles the pond.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The register gives one set of figures (90cm base diameter, 30m, 90-120 years) for the pair rather than one per tree, so no measurement is attributed to either individual. Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rou_002",
+      "name": "The Majestic Beech of Roumare",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 120 to 150 years",
+      "age_min": 120,
+      "age_max": 150,
+      "girth_cm": 402,
+      "location": {
+        "address": "Edge of parcelle 182, beside the D351 between Canteleu and Sahurs, Forêt domaniale de Roumare",
+        "latitude": 49.4177548,
+        "longitude": 0.9981719,
+        "neighbourhood": "Forêt de Roumare, D351 between Canteleu and Sahurs"
+      },
+      "story": "One of the biggest beeches in the Foret de Roumare is also one of the easiest to reach: it stands at the forest edge beside the D351, a few steps off the tarmac rather than a kilometre into the trees. The register calls it un des plus gros de la foret and measures it at 128 centimetres across the foot of the trunk, which is a little over four metres round down there, on an estimated 120 to 150 years.\n\nEdge trees grow differently from forest trees. A beech in the middle of a stand is drawn straight up by its neighbours and holds its branches high; one with open sky on one side puts weight low and sideways, so its crown is lopsided and its lower limbs are heavy. That is what you get here, and it is why the tree reads as large from the road when taller beeches inside the wood do not.\n\nBeech bark stays smooth and thin its whole life, which is why every old beech near a path collects carved initials and why they matter more than they look: each cut is a hole in the tree's only defence. Please leave this one unsigned.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/ROUMARE/h_majestueux.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of the official 'arbres remarquables' trail.",
+      "transport": "No public transport reaches the forest. By car: park at the 'carrefour des treize chenes' and take the first forest path on the right ('Allee charmante'), then a short cut-through path to the right brings you to the tree at the edge of parcelle 182, close to the road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rou_011",
+      "name": "The Oak of Madame",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": null,
+      "girth_cm": 330,
+      "location": {
+        "address": "On the waymarked 'Le Petit-Essart' circuit, parcelle 604, Foret domaniale de La Londe-Rouvray, near Oissel",
+        "latitude": 49.3406361,
+        "longitude": 1.057819,
+        "neighbourhood": "Foret de La Londe-Rouvray, near Oissel / Les Essarts"
+      },
+      "story": "This oak's story exists in exactly one place, and it is bolted to a post beside the trunk. The forest register mentions it in a single line, ce chene a une histoire locale a decouvrir sur le pupitre, this oak has a local history to be discovered on the panel, and then declines to repeat it. Which Madame the tree is named for, and what she did here, we cannot tell you. If you walk out and read the panel, photograph it and send it in, and this paragraph gets better.\n\nThe measurable part: a pedunculate oak of more than 150 years, 105 centimetres across the foot of the trunk, which is around three and a third metres round down there. On the ages we have, that makes it the oldest tree on this page, in a city whose registered trees are mostly a century or so old.\n\nIt stands on the Petit-Essart circuit in the Foret de La Londe-Rouvray, a waymarked loop rather than a forest track, about 11 kilometres south of the city. Park at the Jean Coiffier centre in Les Essarts, or walk up from Oissel through the Vallee du Catelier. The path climbs and drops, so take real shoes.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/LLR/chene_a_madame.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of both the official 'arbres remarquables' trail and the local 'Le Petit-Essart' walking circuit (interpretive panel on site telling a local history).",
+      "transport": "No public transport reaches the tree directly, though it sits on a signed walking circuit reachable on foot from Oissel via the Vallee du Catelier. By car: park at the Jean Coiffier leisure centre in Les Essarts and follow the waymarked 'Le Petit-Essart' circuit; sturdy footwear needed, the path climbs and descends.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The register says the oak carries a local history told on the interpretive panel on site but does not say what it is; the panel could not be read remotely. Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rou_009",
+      "name": "The Five Brothers",
+      "species": "Grand Fir (Abies grandis)",
+      "age_estimate": "about 50 years",
+      "age_min": 45,
+      "age_max": 55,
+      "girth_cm": 346,
+      "location": {
+        "address": "Parcelle 73, off the D121 between Mont-Saint-Aignan and Houppeville, Foret domaniale Verte",
+        "latitude": 49.492624,
+        "longitude": 1.0932513,
+        "neighbourhood": "Foret Verte, near Bois-Guillaume/Houppeville"
+      },
+      "story": "Thirty-nine metres in about fifty years. That is the whole case for these firs, and it is a good one: they are among the youngest trees on this page, roughly the age of a mid-career adult, and they are already taller than almost everything around them. Work it out and the crown has gone up something like three quarters of a metre a year, every year, without a pause.\n\nAbies grandis is not a French tree. It comes from the Pacific Northwest, from Oregon and British Columbia, where it grows in high rainfall and grows fast, and European foresters have planted it since the 19th century for exactly the behaviour on display here. The trunk is 110 centimetres through at the base.\n\nLes cinq freres, the five brothers, is the local name, and the register does not actually say how many stems there are or whether they are fused at the foot or simply five trees that came up together. Nobody in this pass has stood underneath to check. If you get there first, tell us what you see.\n\nThey stand a short way inside parcelle 73, among broadleaf trees, which is what makes the height obvious.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/VERTE/cinq_freres.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of the official 'arbres remarquables' trail.",
+      "transport": "No public transport reaches the forest. By car: from the D121 (between Mont-Saint-Aignan and Houppeville) park at the parcelle 69 car park (former V1 site); at the back of the car park take the path on the right at the start of the Grand Canton forest road, and where it bends 90 degrees continue straight on the footpath. The 'bouquet' stands not far inside parcelle 73, among broadleaf trees.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The register calls it a bouquet of trees without stating the number of stems or whether they are fused; the name implies five. A photo pass should confirm the arrangement. Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rou_008",
+      "name": "The Beeches of the Bretèque",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 120 to 150 years",
+      "age_min": 120,
+      "age_max": 150,
+      "girth_cm": 346,
+      "location": {
+        "address": "Parking du Grand Canton, parcelle 46, Foret domaniale Verte, near Bois-Guillaume",
+        "latitude": 49.4898735,
+        "longitude": 1.1059829,
+        "neighbourhood": "Foret Verte, near Bois-Guillaume"
+      },
+      "story": "Trees usually turn colour at their own speed. This lot does it together, because the register describes them as beeches of the same age standing as one bouquet, and a same-age stand is a forester's signature: one patch of ground that regenerated in a single go, so the whole group leafs out, turns and drops in step. In late October the effect is a block of copper against a mixed forest that is still arguing about it.\n\nThey are 120 to 150 years old and around 110 centimetres across the foot of the trunk, roughly three and a half metres of circumference down there. Underneath them is the other beech signature: almost nothing. A closed beech canopy is the deepest shade any European tree casts, so the floor is leaf litter and smooth ground rather than brambles, which is why beech woods are the ones that feel like rooms.\n\nThis is the least effort of the Foret Verte trees. Park at the Grand Canton car park at the exit of la Breteque, cross the D3, take the footpath directly opposite into parcelle 46, and the group stands a little further on the right near the forest edge. Free, no gate, no hours.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/VERTE/h_breteque.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of the official 'arbres remarquables' trail.",
+      "transport": "No public transport reaches the forest. By car: at the exit of la Breteque, park at the Grand Canton car park on the left, cross the D3, take the footpath opposite the car park into parcelle 46; the beeches stand a little further on the right, near the forest edge.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the whole group turns copper in the same fortnight"
+      }
+    },
+    {
+      "id": "rou_003",
+      "name": "The Beech of the Cotrets",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 120 to 150 years",
+      "age_min": 120,
+      "age_max": 150,
+      "girth_cm": 327,
+      "location": {
+        "address": "Near the forest entrance off the D90, parcelle 19, Foret domaniale Verte, Houppeville",
+        "latitude": 49.5141767,
+        "longitude": 1.094225,
+        "neighbourhood": "Foret Verte, near Houppeville"
+      },
+      "story": "The register praises this beech for being straight, which sounds like faint praise and is not. Foresters grade beech on precisely that: how true the bole runs, how thick it is, and how much clean trunk there is before the first branch. Le plus droit et gros de l'ensemble is the register's verdict, the straightest and thickest of the group it stands in, and those same qualities are what put it on a remarkable-tree list rather than in a timber tally.\n\nStraightness like this is made by competition. A beech that grows up shoulder to shoulder with others gets no side light, so it spends everything on height and none of it on sideways branches, and the trunk comes out like a column. This one is 104 centimetres across the foot, about three and a quarter metres round down there, on an estimated 120 to 150 years, and the beeches around it are much the same age; only this individual is registered and pinned.\n\nIt is also barely a walk. Park just inside the forest entrance off the D90 from Houppeville, take the footpath at the back, and the tree is roughly 50 metres in.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/VERTE/h_de_cotrets.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of the official 'arbres remarquables' trail.",
+      "transport": "No public transport reaches the forest. By car: from Houppeville take the D90 towards Quincampoix, park at the small car park just inside the forest entrance on the right, then walk the footpath at the back about 50m; the tree stands at the start of another path on the left.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rou_001",
+      "name": "The Pine of the Arsène Crossroads",
+      "species": "Scots Pine (Pinus sylvestris)",
+      "age_estimate": "roughly 110 to 120 years",
+      "age_min": 110,
+      "age_max": 120,
+      "girth_cm": 236,
+      "location": {
+        "address": "Route forestière, parcelle 98, Forêt domaniale de Roumare, near Montigny/Canteleu",
+        "latitude": 49.4617796,
+        "longitude": 1.0197548,
+        "neighbourhood": "Forêt de Roumare, near Canteleu"
+      },
+      "story": "In a forest of beech and oak, one conifer marks the junction. That is the job the register gives this Scots pine at the carrefour Arsene: it marks the crossroads, it stands out from the broadleaf trees around it, and it is and will remain a witness to the pine stands still present in the forest. Foresters have used single trees as waymarks for as long as there have been forest roads, and in Roumare, where every ride looks like every other ride, it earns its keep.\n\nScots pine is easy to identify once you know where to look, and it is not the needles. The upper trunk and the big limbs go a warm orange-red that no other tree here comes close to, and in low sun the top half of this one lights up while the beeches stay grey.\n\nIt is 110 to 120 years old and 75 centimetres across the foot of the trunk, about two and a third metres round down there.\n\nTake the D86 out of Montigny, park about 750 metres along at the first forest-road junction, beside the barrier rather than across it, and walk 150 metres in.",
+      "verified_sources": [
+        "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/ROUMARE/p_arsene.pdf",
+        "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
+      ],
+      "access": "Free, public ONF-managed forest, no restrictions. Waymarked as part of the official 'arbres remarquables' trail (interpretive panel on site).",
+      "transport": "No public transport reaches the forest. By car: from Montigny take the D86 towards Deville-les-Rouen, park about 750m along at the first forest-road junction (near the barrier, not in front of it), then walk about 150m on the closed forest road between parcelles 96 and 90 to the crossroads.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Girth is derived from the register's 'diametre au pied', a base measurement rather than the usual 1.3m breast height, so it is not directly comparable to breast-height girths elsewhere on this site.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
