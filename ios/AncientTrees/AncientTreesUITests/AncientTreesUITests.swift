@@ -40,7 +40,7 @@ final class AncientTreesUITests: XCTestCase {
         // makes the list deterministic: Amsterdam always has trees near it.
         // And a clean collection, because serial testing shares one simulator
         // across every test and a tick left by one would greet the next.
-        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks"] + args
+        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks", "-no-cover"] + args
         app.launch()
         return app
     }
@@ -271,7 +271,7 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testCollectAsksForAPhotographRatherThanAChoice() throws {
         let app = XCUIApplication()
-        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-collect"]
+        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-collect", "-no-cover"]
         app.launch()
         XCTAssertTrue(app.staticTexts["Build your tree collection"].waitForExistence(timeout: 12),
                       "the centre button does not open on the collect intro")
@@ -342,7 +342,7 @@ final class AncientTreesUITests: XCTestCase {
         // without an account opens that sheet instead.
         // ams_018 is the Plantage walk's first stop, seeded as collected so the
         // counter has something true to say.
-        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-no-nudge",
+        app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-no-nudge", "-no-cover",
                                "-signed-in", "-collected=ams_018",
                                "-begin=amsterdam|Plantage"]
         app.launch()

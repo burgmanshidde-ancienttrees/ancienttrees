@@ -85,7 +85,7 @@ final class SweepFrames: XCTestCase {
         var dump = ""
         for (name, extra, root) in Self.screens {
             let app = XCUIApplication()
-            app.launchArguments = [Self.origin, Self.clean, Self.unblocked] + extra
+            app.launchArguments = [Self.origin, Self.clean, Self.unblocked, "-no-cover"] + extra
             app.launch()
 
             // The catalogue is 2.5 MB of JSON, so nothing exists for a moment

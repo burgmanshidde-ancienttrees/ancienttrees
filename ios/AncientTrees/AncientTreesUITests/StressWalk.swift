@@ -53,7 +53,7 @@ final class StressWalk: XCTestCase {
     @MainActor
     func testNinetyRandomActionsDoNotKillTheApp() throws {
         let app = XCUIApplication()
-        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection",
+        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-no-cover",
                                "-reset-blocks", "-signed-in", "-no-nudge"]
         app.launch()
         XCTAssertTrue(app.buttons["tab-map"].waitForExistence(timeout: 20),
