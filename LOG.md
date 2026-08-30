@@ -9,6 +9,26 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-30 (session, alongside the night run) - Two cities open from zero, a whole country's register imported, and the "openable" list turns out to have been lying
+
+Hidde asked for another run at the zero-tree cities and then asked whether this session could do some too. Both. The queued night run is dispatched; this session opened two cities in parallel with it, on cities the night run had not claimed.
+
+**Kauai opens, 6 trees.** From the Hawaii Exceptional Trees register (CC0). The Tree Tunnel on Maluhia Road as one ensemble entry, over 500 eucalyptus stripped bare by Hurricane Iniki in 1992 and grown back; two banyans in Lihue planted in the 1880s and 1890s, one of them close to twenty metres round; a baobab behind a church in Koloa; and two monkeypods, one behind a shopkeeper's store and one filling the front yard of the oldest house on the island.
+
+**Luxembourg City opens, 9 trees, and it is the first city in the country.** Eight of the nine are one walk of about twenty minutes through the Petrusse and Alzette valley parks and the Parc Pescatore, which is the best thing about the page: a real afternoon on foot, in a capital.
+
+**The bigger find is Luxembourg's national register, and it is worth more than the page.** The Administration de la nature et des forets publishes every tree classified by grand-ducal regulation as open data at data.public.lu: **238 trees, tree-level coordinates, 83 communes, CC0**, licence read live from the dataset's own API record rather than from a portal page. Imported to `data/registers/luxembourg-anf.json`, written up in OPEN_DATA_SURVEY.md, and it clusters into 13 walkable groups of four or more covering 72 trees. It carries a `interet` field saying WHY each tree was designated, which almost no register has. It carries no age, no girth and no vitality, so the Luxembourgish Wikipedia mirror is the working pair for it, and that pair is exactly what caught the two dead trees above.
+
+**FOR THE NEXT RUN, and this is the part worth reading: `city_queue.py --next`'s "OPENABLE TODAY" list counts trees that are not the city's.** It cost three windows in a single day. Girona was listed with 11 and hand-checked twice at 4, because the count uses a bounding box where the check used a radius. Mechelen was listed with 214, every one of them in the Brussels register and most in Brussels itself, which has had its own page since July. Pisa's 32 are Lucca's. Bruges' 56 are Dutch trees over the border.
+
+`python3 scripts/openable.py` asks the stricter question: a candidate counts only if this city is the nearest published-or-ranked place to it, it is not already on our map, and it is in the same country. **19 of 143 zero-tree ranked cities are genuinely openable today**, not the 64 the queue advertises. `--city <name>` prints everything held for one city plus the nearest published city and its distance, which is the question to answer before opening anything.
+
+**One judgement for Hidde, no hurry.** Funchal sits in the queue as a zero city with 12 unmapped trees, all within 5 km of the centre. Madeira is already published 6 km away with 6 trees, 4 of them in Funchal. That is Madeira to deepen, not a Funchal page to open, but it is a naming decision rather than a data one and I left it alone.
+
+Costs logged to `data/agent-costs.json`: two verify passes at roughly 95k and 100k, one write pass at 100k for 15 trees, about 6.7k per tree against the 15k target.
+
+**One collision worth recording, because it will happen again.** While this session's verify agents were still writing, the night run's `git add -A` swept up their half-finished output and committed it: it published a LOG entry saying Kauai had 3 verified trees and Luxembourg City 4, when the agents were mid-write and finished at 6 and 9. Nothing was lost, the complete versions won the rebase, but the night run's own entry above is wrong about both counts for that reason. The claim system did its job (both cities were claimed and pushed before dispatch, and the night run correctly stayed off them); what it cannot do is stop a blanket `git add -A` in a shared checkout from committing files that belong to somebody else's pass in flight.
+
 ## 2026-08-30 (continuation) - Coimbra and Rothenburg ob der Tauber published; iOS CI fixed; Luxembourg City verified
 
 Rung 2 first: `health.py` flagged the iOS app workflow red since 08-30. The failure was real but not a bug: Hidde's own commit 6658e94a hid the sign-in sheet's typed email route behind a `-show-email` launch flag (Supabase's magic-link mail can't carry a code without custom SMTP he declined), and two UI tests that drive that route directly were never updated. Added `-show-email` to both (`testTheSignInSheetPresents`, `FaultWalk.testABrokenServerDoesNotLeaveTheSignInFormSpinning`); netcheck/conventioncheck/screen-list checks all pass locally, pushed for CI to confirm (this runner has no Xcode to build/test itself).

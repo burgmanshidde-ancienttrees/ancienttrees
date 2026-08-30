@@ -9,6 +9,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-08-30 - Kauai opens (6 trees) and Luxembourg City opens (9), plus Luxembourg's national register
+
+**Kauai, United States, 6 trees, 3 flagged, 6 photos missing.** Opened from the Hawaii Exceptional Trees register (CC0), 24 Kauai rows staged. Two clusters: Old Koloa Town and Lihue/Nawiliwili, plus the Gulick-Rowell monkeypod at Waimea. What did NOT ship and why, all recorded in `data/leads/kauai.json` (10 leads, 9 blocked): active school campuses with no public-access evidence (Kilauea Elementary, Koloa Early School), named private estates (Gay Estate at Waimea Valley, Mary N. Lucas Trust Estate), a private ranch driveway, and a coconut grove spanning a highway, which is not one collectible point. The Earpod on Poipu Road and King Kalakaua's Durian at Grove Farm both looked good and never cleared two sources; the next pass should try a Koloa Heritage Trail plaque check and the Grove Farm Museum directly. Three Old Koloa Town monkeypods sit unresolved because one register locality straddles a Buddhist mission (open) and an active preschool (not) on the same parcel.
+
+**Two age claims killed rather than repeated.** The Gulick-Rowell monkeypod's local tradition (200 years, a gift from an Indian prince) fails against monkeypod reaching Hawaii around 1847; it ships as folklore, plainly labelled, with `age_estimate` empty and the page asking who planted it. The Yamamoto monkeypod's "130 years / Hitachi logo" claim traces to a mix-up with the actual Hitachi tree at Moanalua Gardens on Oahu, and was not used.
+
+**Luxembourg City, Luxembourg, 9 trees, 5 flagged, 9 photos missing.** First city in the country. Eight of the nine are one walk through the Petrusse and Alzette valley parks and the Parc Pescatore.
+
+**Two dead trees caught before they shipped**, both still listed in the official register, both found through the Luxembourgish Wikipedia's mirror of that register: a copper beech in the Letzebuerg City Museum courtyard removed in 2022, and one of the two Parc Amelie giant sequoias felled on 28 February 2026 with root rot. Only the surviving sequoia ships, pin `approximate` because no source says which of the two register coordinates was the survivor. Held as leads: two trees on the Konviktsgaart grounds (now senior living, no evidence of open access), a chestnut on a private farm lane at Scheedhaff, and Chene Krombach and the "Prince Charles tree", both of which have Wikidata entries and are absent from the current official register table.
+
+**Species strings unified rather than left to split a species page** (hard rule 9, and species pages key on the common name): Kauai's two monkeypods ship as `Rain Tree (Samanea saman)`, matching Singapore and Oahu, with Monkeypod kept as the local name in the trees' own names and prose. Also `Indian Laurel Fig (Ficus microcarpa)` and `Sycamore (Acer pseudoplatanus)` to match live usage.
+
 ## 2026-08-30 - Submissions #45-53: vote-toggle bookkeeping on Rome rom_002, no action
 
 Nine rows, all the same user_id, all within a 3-second span, on Rome's rom_002 (Adonis): "worth it" / "vote undone: worth it" / "not worth it" / "vote undone: not worth it" repeating. Same shape as the Amsterdam #40, Sardinia #39 and Utrecht #38 precedents already in this file: a plain vote toggle carries no free-text complaint and nothing to check against sources. Marked processed in `data/submissions-processed.json`, no reply sent, nothing changed in `data/cities/rome.json`.

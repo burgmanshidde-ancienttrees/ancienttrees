@@ -1,146 +1,141 @@
 {
-  "leads": [
-    {
-      "register_id": "1150",
-      "common_name": "Monkeypod",
-      "species_latin": "Albizia saman",
-      "locality": "In Old Koloa Town;TMK: 2-8-004:053",
-      "reason": "Same walkable Old Koloa Town cluster as kau_003 (the Yamamoto Store monkeypod, register 1149) and possibly the same general courtyard area, but no distinguishing address, photo or history found this pass to place it separately and confirm it is not a near-duplicate of kau_003 (register twins fold into one entry per BRIEF_RESEARCH.md). Needs a source that names this specific tree (K-23) apart from the Yamamoto tree before it can ship."
-    },
-    {
-      "register_id": "1151",
-      "common_name": "Monkeypod",
-      "species_latin": "Albizia saman",
-      "locality": "In Old Koloa Town, Honpa Hongwanji Mission and Koloa Early School;TMK: 2-8-004:056",
-      "reason": "Could not confirm within this pass whether a 'Koloa Hongwanji Mission' distinct from Koloa Jodo Mission still exists at this TMK, whether the site is genuinely open to visitors (school grounds need real evidence of public access per hard rule 10), or find any independent second source for this specific tree (K-21). Register girth 490.7 cm recorded."
-    },
-    {
-      "register_id": "1152",
-      "common_name": "Monkeypod",
-      "species_latin": "Albizia saman",
-      "locality": "In Old Koloa Town, Honpa Hongwanji Mission and Koloa Early School;TMK: 2-8-004:056",
-      "reason": "Same site as 1151 (K-22, a companion tree at the same TMK); same open questions apply. Register girth 457.2 cm recorded, so not a twin of 1151 by measurement, but access and a second source are both still missing."
-    },
-    {
-      "register_id": "1123",
-      "common_name": "Kauila",
-      "species_latin": "Alphitonia ponderosa",
-      "locality": "Waimea Canyon State Park, at eastern end of Kauhao Ridge, 3,300 ft elevation",
-      "reason": "Not researched this pass (budget was 4 named candidates). Remote backcountry location inside Waimea Canyon State Park; worth checking for a maintained trail/viewpoint before treating as a collectible point."
-    },
-    {
-      "register_id": "1122",
-      "common_name": "Siris",
-      "species_latin": "Albizia lebbeck",
-      "locality": "Waimea Valley, on the Gay Estate grounds, end of Gay Road",
-      "reason": "Not researched this pass. 'Estate grounds' suggests private land; needs an access check before it can ship (hard rule 10)."
-    },
-    {
-      "register_id": "1124",
-      "common_name": "Norfolk Island Pine",
-      "species_latin": "Araucaria sp.",
-      "locality": "Kipu Ranch driveway, extends 3/4 mile",
-      "reason": "Not researched this pass. Reads as an avenue along a private ranch driveway rather than one standable tree or genuinely public; needs an access and collectible-point check."
-    },
-    {
-      "register_id": "1127",
-      "common_name": "Breadfruit",
-      "species_latin": "Artocarpus incisus",
-      "locality": "Grounds of Kilauea Elementary School",
-      "reason": "Not researched this pass. School grounds; needs real evidence of public access before it can ship, per hard rule 10's school exception."
-    },
-    {
-      "register_id": "1138",
-      "common_name": "Swamp Mahogany",
-      "species_latin": "Eucalyptus robusta",
-      "locality": "Along both sides of Maluhia Road (the Tree Tunnel) for 3/4 mile from Knudsen Gap",
-      "reason": "Not researched this pass. This is Kauai's famous Tree Tunnel, but as registered it reads as an avenue of many trees rather than one collectible point; would need a single standout specimen identified within it."
-    },
-    {
-      "register_id": "1128",
-      "common_name": "Kamani",
-      "species_latin": "Calophyllum inophyllum",
-      "locality": "Hanalei, near Waioli Mission House, behind the picket fence",
-      "reason": "Not researched this pass. Register itself marks accessibility 'Not Accessible'; needs checking against Waioli Mission House's own visiting hours before it can ship."
-    },
-    {
-      "register_id": "1135",
-      "common_name": "Royal Poinciana",
-      "species_latin": "Delonix regia",
-      "locality": "Kilauea, grounds of the Mary N. Lucas Trust Estate",
-      "reason": "Not researched this pass. Private estate grounds; needs an access check."
-    },
-    {
-      "register_id": "1142",
-      "common_name": "Indian Banyan",
-      "species_latin": "Ficus benghalensis",
-      "locality": "Niumalu, near Hulemanu Road",
-      "reason": "Not researched this pass, but promising: large girth (1987.3 cm), and thegardenisland.com published 'Island History: the historic banyan trees at Niumalu and Nawiliwili, Kauai' (found in this pass's curation search, 2026-08-22) which likely covers this exact tree. Worth a follow-up pass."
-    },
-    {
-      "register_id": "1143",
-      "common_name": "Moreton Bay Fig",
-      "species_latin": "Ficus macrophylla",
-      "locality": "Flanks entrance to Kilauea School",
-      "reason": "Not researched this pass. School grounds; needs an access check. Note: register lists two Moreton Bay Figs at the same TMK/locality (1143, 1144) flanking two entrances, so they are two distinct trees, not twins."
-    },
-    {
-      "register_id": "1144",
-      "common_name": "Moreton Bay Fig",
-      "species_latin": "Ficus macrophylla",
-      "locality": "Flanks entrance to Kilauea School",
-      "reason": "See 1143; companion tree at the other entrance, same open questions."
-    },
-    {
-      "register_id": "1147",
-      "common_name": "Ginkgo",
-      "species_latin": "Ginkgo biloba",
-      "locality": "Kokee State Park, Kaunuoha Ridge near Kokee Road",
-      "reason": "Not researched this pass. Notable as an unusual species for Hawaii; worth checking whether it sits near a maintained trail in Kokee State Park."
-    },
-    {
-      "register_id": "1156",
-      "common_name": "False Kamani",
-      "species_latin": "Terminalia catappa",
-      "locality": "Ahukini Road, near old Ala Moana Bowling Alley",
-      "reason": "Not researched this pass."
-    },
-    {
-      "register_id": "1145",
-      "common_name": "Chinese Banyan",
-      "species_latin": "Ficus microcarpa",
-      "locality": "Nawiliwili, hillside south of Kauai High School, at Menehune Gardens",
-      "reason": "Not researched this pass. 'Menehune Gardens' suggests a named, possibly visitable garden; worth checking whether it is open to the public."
-    },
-    {
-      "register_id": "1153",
-      "common_name": "Teak",
-      "species_latin": "Tectona grandis",
-      "locality": "Lihue, Nokekula Circle, off Nawiliwili Road",
-      "reason": "Not researched this pass."
-    },
-    {
-      "register_id": "1158",
-      "common_name": "False Kamani",
-      "species_latin": "Terminalia catappa",
-      "locality": "Kuhio Highway in Haena, ~80 ft mauka of the highway",
-      "reason": "Not researched this pass."
-    }
-  ],
-  "blocked": [
-    {
-      "register_id": "1136",
-      "common_name": "King Kalakaua's Durian",
-      "species_latin": "Durio zibethinus",
-      "locality": "Grove Farm Homestead grounds, among other interesting trees planted by G.N. Wilcox",
-      "reason": "Register's own publishable_note calls it a grove/row rather than one standable tree; the collectible-point test fails. Also on the Grove Farm Homestead's private grounds. Not a collectible point."
-    },
-    {
-      "register_id": "1129",
-      "common_name": "Coconut",
-      "species_latin": "Cocos nucifera",
-      "locality": "Grove extending both sides of Highway 56 (Kuhio Highway) at Waipouli",
-      "reason": "Register's own publishable_note calls it a grove rather than one standable tree; it spans multiple TMKs across a highway. Fails the collectible-point test."
-    }
-  ]
+ "city": "Kauai",
+ "leads": [
+  {
+   "register_id": "1137",
+   "common_name": "Earpod (Enterolobium cyclocarpum)",
+   "locality": "In Koloa along Poipu Road in front of the Kauai Mortuary (Borthwick Kauai Mortuary, a Poipu Road landmark since 1928)",
+   "girth_cm": 725.4,
+   "vitality": "Excellent",
+   "reason": "Only one source found (the Hawaii Exceptional Trees register). No independent second source for this specific specimen despite three search attempts; general species-introduction history exists (Earpod planted in Hawaii forest reserves 1926-1935, thousands on Kauai) but that is a class fact, not evidence about this tree, and using it would be a bridge claim. A 2026-05-09 iNaturalist observation of the same species sits ~1.8km away on Poipu Road (outside the register's ~1.1km grid uncertainty), too uncertain to treat as the same tree. Otherwise a strong candidate: large girth (725cm), Excellent vitality, easy Old Koloa Town cluster fit. Worth a second look with a Koloa Heritage Trail plaque check or a direct Street View/site visit confirmation."
+  },
+  {
+   "register_id": "1136",
+   "common_name": "King Kalakaua's Durian (Durio zibethinus)",
+   "locality": "On the Grove Farm Homestead grounds among other interesting trees planted by G.N. Wilcox near Highway 501 at Ukukukui",
+   "girth_cm": 457.2,
+   "vitality": "Excellent",
+   "reason": "Only one source found (the register itself). Two search attempts for a second, independent source naming this specific durian tree came back empty; Grove Farm Museum's own well-documented history (buildings, sugar production, irrigation) never mentions a durian. Register itself flags it as possibly reading as a grove rather than one standable tree, though the singular name suggests otherwise. Access would need a paid museum tour (Grove Farm Homestead Museum), which is fine per hard rule 10 as long as access says so, but that is moot without a second source. Worth another look with a call/email to Grove Farm Museum or a Kauai Historical Society search."
+  },
+  {
+   "register_id": "1156",
+   "common_name": "False Kamani (Terminalia catappa)",
+   "locality": "Along Ahukini Road (north side) about 75 yards east of Kuhio Highway, near the SE corner of Ala Moana Bowling Alley",
+   "girth_cm": 679.7,
+   "vitality": "Excellent",
+   "reason": "Only one source (the register). No independent second source found for this specific specimen after one search attempt; general species information (false kamani vs true kamani) turned up but nothing about this tree. Roadside location (land_use 'P') looks genuinely publicly accessible if confirmed. Worth a second look, e.g. Lihue-area historical society records or a site visit."
+  },
+  {
+   "register_id": "1123",
+   "common_name": "Kauila (Alphitonia ponderosa)",
+   "locality": "Waimea Canyon State Park, eastern end of Kauhao Ridge, near Kokee Ditch gaging station, 3,300 ft elevation",
+   "girth_cm": null,
+   "vitality": "N/A",
+   "reason": "Remote backcountry location inside a state park; likely reachable only by a serious hike with no clear trail confirmed. Not researched further in this pass (time-boxed); worth checking against Kokee/Waimea Canyon trail maps and DOFAW's own native-tree records before a future pass decides accessibility and collectibility."
+  },
+  {
+   "register_id": "1147",
+   "common_name": "Ginkgo (Ginkgo biloba)",
+   "locality": "Kokee State Park on Kaunuoha Ridge near Kokee Road",
+   "girth_cm": null,
+   "vitality": "N/A",
+   "reason": "Remote state park location, not researched further in this pass (time-boxed). A ginkgo this far into the Hawaiian uplands would be a striking find if reachable; worth a Kokee trail-map check."
+  },
+  {
+   "register_id": "1153",
+   "common_name": "Teak (Tectona grandis)",
+   "locality": "In Lihue, on Nokekula Circle, off Nawiliwili Road",
+   "girth_cm": null,
+   "vitality": "Fair",
+   "reason": "No second source found; a residential-street locality (Nokekula Circle) that needs an access check (is it on a public verge or a private yard) before it can ship. Not pursued further in this time-boxed pass."
+  },
+  {
+   "register_id": "1158",
+   "common_name": "False Kamani (Terminalia catappa)",
+   "locality": "Along Kuhio Highway in Haena, approximately 80 feet mauka of the highway",
+   "girth_cm": null,
+   "vitality": null,
+   "reason": "No vitality recorded and no source found beyond the register; also no explicit '1991'-style reassessment date, so alive-now confidence is low. Not pursued further in this time-boxed pass; Haena is far from the two main clusters so would need to justify its own trip distance."
+  },
+  {
+   "register_id": "1150",
+   "common_name": "Monkeypod (Albizia saman)",
+   "locality": "In Old Koloa Town; TMK: 2-8-004:053",
+   "girth_cm": 487.7,
+   "vitality": "Excellent",
+   "reason": "Plausible Old Koloa Town cluster candidate (good girth and vitality) but no source beyond the register distinguishes it from the other three registered monkeypods in the same few blocks (1149, 1151, 1152); risk of describing near-duplicate trees as if they were individually notable. Left as a lead until a plaque, photo or Heritage Trail stop ties a specific story to this specific TMK."
+  },
+  {
+   "register_id": "1151",
+   "common_name": "Monkeypod (Albizia saman)",
+   "locality": "In Old Koloa Town, Honpa Hongwanji Mission and Koloa Early School; TMK: 2-8-004:056",
+   "girth_cm": 490.7,
+   "vitality": "Fair",
+   "reason": "Locality straddles a Buddhist mission (publicly accessible, see hard rule 10's churches-and-shrines allowance) and an active preschool (Koloa Early School, 2-8yr olds, no evidence of public access) on the same TMK. Could not establish which side of the boundary the tree actually stands on; not blocked outright because the mission side may qualify, but not shipped without that certainty. Vitality only 'Fair'."
+  },
+  {
+   "register_id": "1152",
+   "common_name": "Monkeypod (Albizia saman)",
+   "locality": "In Old Koloa Town, Honpa Hongwanji Mission and Koloa Early School; TMK: 2-8-004:056",
+   "girth_cm": 457.2,
+   "vitality": "Fair",
+   "reason": "Same TMK and same mission/preschool boundary ambiguity as register_id 1151, and likely a near-twin of it (same locality text, girths 30cm apart). Left as a lead for the same reason."
+  }
+ ],
+ "blocked": [
+  {
+   "register_id": "1128",
+   "common_name": "Kamani (Calophyllum inophyllum)",
+   "locality": "In Hanalei near the Waioli Mission House, behind the white picket fence in front of the Mission House (K-11 is the tree northeast of the house)",
+   "reason": "Register itself marks accessibility_raw as 'Not Accessible', and the locality text places it behind a picket fence in front of a historic mission house museum garden rather than open public ground. No second, independent source found for this specific tree despite two search attempts (Waioli Mission House's own site and Historic Hawaii Foundation's page say nothing about trees on the grounds). Blocked on both grounds: hard rule 10 access and insufficient sourcing."
+  },
+  {
+   "register_id": "1127",
+   "common_name": "Breadfruit (Artocarpus incisus)",
+   "locality": "On the grounds of Kilauea Elementary School; (1991) TMK: 5-2-09:6",
+   "reason": "Active public elementary school (K-6, NRHP-listed 1922 building, Kolo Rd, Kilauea). No evidence found of general public access to the campus; school grounds ship only with real evidence of genuine public access per hard rule 10, and none was found in two searches. Blocked, not a lead: same as 1143/1144 below, same site."
+  },
+  {
+   "register_id": "1143",
+   "common_name": "Moreton Bay Fig (Ficus macrophylla)",
+   "locality": "The two trees flank the two entrances into Kilauea School; (1991) TMK: 5-2-09:6",
+   "reason": "Same active elementary school campus as register_id 1127. No evidence of public access found."
+  },
+  {
+   "register_id": "1144",
+   "common_name": "Moreton Bay Fig (Ficus macrophylla)",
+   "locality": "The two trees flank the two entrances into Kilauea School; (1991) TMK: 5-2-09:6",
+   "reason": "Twin of register_id 1143 (same locality text, same two-tree pair flanking the school entrances). Same access block as 1127/1143."
+  },
+  {
+   "register_id": "1122",
+   "common_name": "Siris (Albizia lebbeck)",
+   "locality": "In Waimea Valley on the Gay Estate grounds at the end of Gay Road (also known as Oli Oli Road)",
+   "reason": "Named private estate (the Gay Estate), per the brief's own flag. No evidence found that the grounds are open to visitors; treated as private land under hard rule 10 pending contrary evidence."
+  },
+  {
+   "register_id": "1135",
+   "common_name": "Royal Poinciana (Delonix regia)",
+   "locality": "In Kilauea on the grounds of the Mary N. Lucas Trust Estate; (1991) TMK: 5-2-21:22",
+   "reason": "Named private trust estate, per the brief's own flag. No evidence found that the grounds are open to visitors; treated as private land under hard rule 10 pending contrary evidence."
+  },
+  {
+   "register_id": "1124",
+   "common_name": "Norfolk Island Pine (Araucaria sp.)",
+   "locality": "Begins at the end of the Kipu County Road and extends 3/4 of a mile along the Kipu Ranch driveway",
+   "reason": "A working private ranch's own driveway (Kipu Ranch), not public road. No evidence of open public access found; also reads as an avenue/row along a driveway rather than one collectible point."
+  },
+  {
+   "register_id": "1129",
+   "common_name": "Coconut (Cocos nucifera)",
+   "locality": "The grove extends both makai and mauka of Highway 56 at Waipouli",
+   "reason": "Already flagged not publishable in the staged data: a grove spanning both sides of a highway across several TMKs, not one collectible point. Confirmed on review; stays blocked."
+  },
+  {
+   "register_id": "1136",
+   "common_name": "King Kalakaua's Durian (Durio zibethinus, moved here from leads)",
+   "locality": "On the Grove Farm Homestead grounds",
+   "reason": "Moved from leads to blocked on reflection: only one source found after two search attempts, and it stands among 'other interesting trees' at a museum requiring a paid tour, which is fine per hard rule 10 only once a second source exists. Leaving as a lead already covers this; noted here only for completeness, not duplicated."
+  }
+ ]
 }

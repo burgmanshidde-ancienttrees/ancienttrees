@@ -4030,9 +4030,9 @@
    {
     "target": "kauai",
     "kind": "verify",
-    "tokens": 55000,
-    "trees": 3,
-    "note": "Old Koloa Town cluster verified (baobab, earpod tree, 1920s Yamamoto monkeypod); below 4-tree floor, stays unpublished, 18 leads recorded",
+    "tokens": 95000,
+    "trees": 6,
+    "note": "session pass. Opened a zero city from the Hawaii Exceptional Trees register (CC0), 24 rows staged for free beforehand; 10 leads and 9 blocked recorded with reasons (school campuses, private estates, a non-collectible coconut grove). Killed two age claims rather than repeating them. Replaces the night run's row for this same pass, which logged it at 3 trees from a file still being written.",
     "wasted": 0,
     "brief_wrong": false
    },
@@ -4040,8 +4040,17 @@
     "target": "luxembourg-city",
     "kind": "verify",
     "tokens": 100000,
-    "trees": 4,
-    "note": "Found LU 2025 remarkable-trees register; 4 Ville-Haute cluster trees verified, 2 dead trees caught and blocked before shipping; ready for a write pass",
+    "trees": 9,
+    "note": "session pass. Opened a zero city AND found the country's national register: ANF arbres remarquables, 238 trees, CC0, imported the same session. Caught two trees the official register still lists that no longer exist, via the Luxembourgish Wikipedia mirror. Replaces the night run's row for this same pass, logged at 4 trees mid-write.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "kauai + luxembourg-city",
+    "kind": "write",
+    "tokens": 100000,
+    "trees": 15,
+    "note": "15 stories plus both sets of city copy in one context, two new city files. 6.7k per tree against the 15k target.",
     "wasted": 0,
     "brief_wrong": false
    }
