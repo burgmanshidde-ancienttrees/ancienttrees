@@ -81,7 +81,10 @@ final class FaultWalk: XCTestCase {
     /// nothing to do, and no way to know it failed.
     @MainActor
     func testABrokenServerDoesNotLeaveTheSignInFormSpinning() throws {
-        let app = launch(["-fault=server", "-tab=0", "-signin"])
+        // -show-email: this test drives the typed email route on purpose, and
+        // that route is hidden by default since 2026-08-30 (Launch.emailSignIn,
+        // commit 6658e94a).
+        let app = launch(["-fault=server", "-tab=0", "-signin", "-show-email"])
 
         XCTAssertTrue(app.otherElements["signin-sheet"].waitForExistence(timeout: 10)
                       || app.staticTexts["Keep your trees"].waitForExistence(timeout: 5),

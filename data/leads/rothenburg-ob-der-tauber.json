@@ -1,31 +1,33 @@
 {
-  "leads": [
-    {
-      "register_id": "ND-04853",
-      "name": "ND Nr. 48 Birnbaum",
-      "latitude": 49.37617784,
-      "longitude": 10.15031728,
-      "km_from_centre": 2.52,
-      "reason": "Not researched this pass; only 4 named candidates were worked to completion (rule of at most four per verification pass). A wild pear (Birnbaum) 200 m north of Ziegelhuette, per the Landkreis Ansbach Naturdenkmal Wikipedia list. Untouched, worth a future pass."
-    },
-    {
-      "note": "A further 20 Bavarian Naturdenkmal register candidates lie 7.5-19.2 km from Rothenburg's centre; see data/research/rothenburg-ob-der-tauber-register-candidates.json for the full list. None were reviewed this pass, which focused on the close-in cluster (walking/cycling distance along the Tauber and Vorbach valleys)."
-    }
-  ],
-  "blocked": [
-    {
-      "register_id": "ND-04848",
-      "name": "ND Nr. 43 Linde im Hof Gut Burgstall",
-      "latitude": 49.35302988,
-      "longitude": 10.14394663,
-      "reason": "Private land: register and Wikipedia both describe it as standing 'im Hof Gut Burgstall' (in the courtyard of the Gut Burgstall estate/farmhouse), and baumkunde.de records access explicitly as 'Privatgelaende geduldet' (private grounds, access tolerated). Per hard rule 10, a courtyard of a dwelling/estate stays out whatever the register says and however fine the tree, regardless of toleration. The tree itself (a Sommer-Linde, 600-800 years old, 8.7 m girth, Nationalerbe-Baum Nr. 58) is genuinely remarkable, one of the oldest lindens in the area, so this is recorded as a firm block rather than a lead: it does not become publishable later without the estate itself opening the courtyard to the public. Sources: https://www.baumkunde.de/baumregister/2542-hoflinde_in_burgstall_bei_rothenburg/, https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber"
-    },
-    {
-      "register_id": "ND-04849",
-      "name": "ND Nr. 44 Linde (Detwang)",
-      "latitude": 49.38664,
-      "longitude": 10.1678,
-      "reason": "Dead. Register location text: 'am Gasthaus in Detwang'; the town's own de.wikipedia article (https://de.wikipedia.org/wiki/Detwang) states in the past tense that the tree stood in Detwang until 2020, when its crown broke off in strong wind gusts on the night of 1-2 March 2020 and the tree was subsequently removed ('Im Ort stand bis 2020 eine als Naturdenkmal ausgezeichnete Linde, deren Baumkrone ... abbrach und deswegen beseitigt wurde'). Likely the same tree described in the 2018 Verkehrsverein W8 hiking leaflet as the 'grosse Dorflinde' by Detwang's Marktplatz, predating its death. Never to ship as a living entry; the story may mention it as context for the village if a replacement planting is ever documented."
-    }
-  ]
+ "leads": [
+  {
+   "register_id": "ND-04853",
+   "name": "ND Nr. 48 Birnbaum",
+   "latitude": 49.37617784,
+   "longitude": 10.15031728,
+   "km_from_centre": 2.52,
+   "reason": "Not researched this pass; only 4 named candidates were worked to completion (rule of at most four per verification pass). A wild pear (Birnbaum) 200 m north of Ziegelhuette, per the Landkreis Ansbach Naturdenkmal Wikipedia list. Untouched, worth a future pass.",
+   "species": "Pear (Pyrus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "note": "A further 20 Bavarian Naturdenkmal register candidates lie 7.5-19.2 km from Rothenburg's centre; see data/research/rothenburg-ob-der-tauber-register-candidates.json for the full list. None were reviewed this pass, which focused on the close-in cluster (walking/cycling distance along the Tauber and Vorbach valleys)."
+  }
+ ],
+ "blocked": [
+  {
+   "register_id": "ND-04848",
+   "name": "ND Nr. 43 Linde im Hof Gut Burgstall",
+   "latitude": 49.35302988,
+   "longitude": 10.14394663,
+   "reason": "Private land: register and Wikipedia both describe it as standing 'im Hof Gut Burgstall' (in the courtyard of the Gut Burgstall estate/farmhouse), and baumkunde.de records access explicitly as 'Privatgelaende geduldet' (private grounds, access tolerated). Per hard rule 10, a courtyard of a dwelling/estate stays out whatever the register says and however fine the tree, regardless of toleration. The tree itself (a Sommer-Linde, 600-800 years old, 8.7 m girth, Nationalerbe-Baum Nr. 58) is genuinely remarkable, one of the oldest lindens in the area, so this is recorded as a firm block rather than a lead: it does not become publishable later without the estate itself opening the courtyard to the public. Sources: https://www.baumkunde.de/baumregister/2542-hoflinde_in_burgstall_bei_rothenburg/, https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber"
+  },
+  {
+   "register_id": "ND-04849",
+   "name": "ND Nr. 44 Linde (Detwang)",
+   "latitude": 49.38664,
+   "longitude": 10.1678,
+   "reason": "Dead. Register location text: 'am Gasthaus in Detwang'; the town's own de.wikipedia article (https://de.wikipedia.org/wiki/Detwang) states in the past tense that the tree stood in Detwang until 2020, when its crown broke off in strong wind gusts on the night of 1-2 March 2020 and the tree was subsequently removed ('Im Ort stand bis 2020 eine als Naturdenkmal ausgezeichnete Linde, deren Baumkrone ... abbrach und deswegen beseitigt wurde'). Likely the same tree described in the 2018 Verkehrsverein W8 hiking leaflet as the 'grosse Dorflinde' by Detwang's Marktplatz, predating its death. Never to ship as a living entry; the story may mention it as context for the village if a replacement planting is ever documented."
+  }
+ ]
 }
