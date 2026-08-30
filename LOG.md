@@ -9,6 +9,70 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-30 (session, second batch) - Rouen, Modena and Menorca open; Taormina correctly does not
+
+Hidde asked for a few more zero cities and then left. Four were attempted, three
+published, and the fourth produced the more useful answer.
+
+**Rouen opens, 12 trees, the biggest new page of the night.** Eleven stand in
+the three state forests ringing the city, Roumare, the Foret Verte and La
+Londe-Rouvray, all free, all panelled on the 2019 metropole/ONF/A.R.B.R.E.S.
+remarkable-trees trail, so access is as clean as it gets. The page says outright
+that this is a city whose trees need a bus or a car, and names the one exception,
+a Turkish pine in the Jardin des Plantes you can walk to from the station. The
+Gadeau de Kerville Oak needed care and got it: the original was uprooted in the
+December 1999 storm and the name passed to a younger oak at the same crossroads,
+which the story states in its first three sentences. Two of the twelve are young,
+about 50 years and 40 to 60, and their stories say so in plain words rather than
+dressing them up.
+
+**Modena opens, 5 trees, and the register was the smaller half of it.** Half the
+staged candidates failed hard rule 10 on access, including the best-measured tree
+in the province: the Cedar of Lebanon at Villa Montecuccoli, 36 metres and 530 cm
+round, whose own regional record says it has been closed to the public for over a
+decade. The two best trees on the page came from naming the places and reading
+the local paper instead: the oak in the Giardino Ducale Estense, planted between
+1840 and 1854, now lightning-damaged and cabled and still standing, and the
+city's oldest plane tree, marooned in a flowerbed in the middle of the bus
+station square and unmeasured since 1986.
+
+**Menorca opens, 4 trees, exactly on the floor, after two were cut.** The
+Balearic register is the best-built one we hold: it names the OWNER of every tree
+and carries a vitality count, so the nine privately held ones were skipped before
+any tokens went on them and no dead specimen ever reached a page. The dragon tree
+and the Pi Felip on the Illa del Llatzaret both verified cleanly, the dragon tree
+with a documented 1928 planting, and both are reachable only on a booked
+two-and-a-half-hour boat tour. Hard rule 10 allows paid entry and does not allow
+an appointment, and a booking is an appointment, so they are blocked with their
+sources intact. If Hidde rules that a booked tour counts, both ship as they stand
+with no further research. FOR HIDDE: that is the one judgement call of the night
+worth overruling if you disagree.
+
+**Taormina does not publish, and that is the right outcome rather than a
+failure.** All five of its in-town register trees stand on the private grounds of
+the Hotel Excelsior Palace, described by the hotel itself as a guest amenity. The
+three that verified are 18 to 19 km away on Etna's eastern slope in Sant'Alfio and
+Mascali, well past the day-trip boundary, so they would have been the entire page
+of a city none of them is in. Saved whole to `data/leads/santalfio-etna.json`,
+including the Castagno dei Cento Cavalli, roughly 2,200 years old on a 2022 CREA
+study, free, and confirmed alive by the comune's own page in March 2026. **A
+collection cannot rescue it**: collection entries are {city_slug, tree_id} pairs
+pointing at an already-published tree, so a collection can never give a tree its
+first home. That was checked rather than assumed, because the first version of
+that note recommended exactly that route.
+
+**Two build guards caught things worth knowing.** Rouen's oldest-tree page
+disagreed with its own answer, because the Oak of Madame is "over 150 years" with
+no upper bound and the build sorts on age_max, so trees capped at 150 outranked
+it. Modena would have failed identically on the next deploy: the build ranked the
+Cortile del Leccio holm oak on an age_max of 250, which is the top of a
+disagreement our own notes record rather than a measurement. Both got an explicit
+`oldest_tree_id` instead of an invented age_max.
+
+Three deploys, the middle one red and fixed, all pages looked at rendered. Costs
+in `data/agent-costs.json`: four verify passes and one write pass covering all
+three cities in a single context, 10.8k per tree against the 15k target.
+
 ## 2026-08-30 (session, alongside the night run) - Two cities open from zero, a whole country's register imported, and the "openable" list turns out to have been lying
 
 Hidde asked for another run at the zero-tree cities and then asked whether this session could do some too. Both. The queued night run is dispatched; this session opened two cities in parallel with it, on cities the night run had not claimed.

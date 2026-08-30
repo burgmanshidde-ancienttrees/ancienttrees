@@ -4053,6 +4053,51 @@
     "note": "15 stories plus both sets of city copy in one context, two new city files. 6.7k per tree against the 15k target.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "taormina",
+    "kind": "verify",
+    "tokens": 70000,
+    "trees": 0,
+    "note": "session pass. Correctly produced NO page: all five in-town register trees sit on the private grounds of the Hotel Excelsior Palace, and the three that verified stand 18-19 km away on Etna. Saved intact to data/leads/santalfio-etna.json. Not wasted, the answer was a real one.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "rouen",
+    "kind": "verify",
+    "tokens": 195000,
+    "trees": 12,
+    "note": "session pass, register-led (Metropole Rouen Normandie / ONF remarkable-tree trail). Agent self-reported dispatching a sub-agent against BRIEF_RESEARCH.md's do-it-yourself rule, caught it, and redid every fact directly; none of that output was used.",
+    "wasted": 140552,
+    "brief_wrong": false
+   },
+   {
+    "target": "modena",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 5,
+    "note": "session pass. Half the register candidates failed hard rule 10 on access, including the best-measured one (Villa Montecuccoli's cedar, closed to the public for over a decade). The two best trees came from naming the places and reading the local paper, not from the register.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "menorca",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 4,
+    "note": "session pass. Balearic register carries ownership AND a vitality count, so the private nine were skipped by the brief and the dead specimens never reached a page. Two verified island trees blocked on hard rule 10 (booked boat tour = appointment).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "rouen + modena + menorca",
+    "kind": "write",
+    "tokens": 227000,
+    "trees": 21,
+    "note": "three new city pages in ONE context, Menorca added to the same agent afterwards so its calibration was already paid for. 10.8k per tree against the 15k target.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
