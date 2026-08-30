@@ -3687,6 +3687,30 @@
   },
   {
    "rank": 160,
+   "city": "Menorca",
+   "country": "Spain",
+   "slug": "menorca",
+   "score": 2.93,
+   "demand": null,
+   "basis": "predicted (travel demand)",
+   "status": "published",
+   "trees": 4,
+   "photos": 0,
+   "walks": 0,
+   "register": 4,
+   "ready": 4,
+   "supply": 8,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.66,
+   "work_score": 4.86,
+   "travel": 2933,
+   "why_pooled": "The Balears register is already imported at data/registers/balears-arbres-singulars.json, so supply may be in hand already rather than needing a scout.",
+   "wikidata": 0
+  },
+  {
+   "rank": 161,
    "city": "Christchurch",
    "country": "New Zealand",
    "slug": "christchurch",
@@ -3709,7 +3733,7 @@
    "wikidata": 0
   },
   {
-   "rank": 161,
+   "rank": 162,
    "city": "Oxford",
    "country": "United Kingdom",
    "slug": "oxford",
@@ -3732,7 +3756,7 @@
    "wikidata": 1
   },
   {
-   "rank": 162,
+   "rank": 163,
    "city": "Catania",
    "country": "Italy",
    "slug": "catania",
@@ -3755,7 +3779,7 @@
    "wikidata": 5
   },
   {
-   "rank": 163,
+   "rank": 164,
    "city": "Delft",
    "country": "Netherlands",
    "slug": "delft",
@@ -3778,7 +3802,7 @@
    "wikidata": 2
   },
   {
-   "rank": 164,
+   "rank": 165,
    "city": "Haarlem",
    "country": "Netherlands",
    "slug": "haarlem",
@@ -3801,7 +3825,7 @@
    "wikidata": 4
   },
   {
-   "rank": 165,
+   "rank": 166,
    "city": "Lucca",
    "country": "Italy",
    "slug": "lucca",
@@ -3824,7 +3848,7 @@
    "wikidata": 3
   },
   {
-   "rank": 166,
+   "rank": 167,
    "city": "Miami",
    "country": "United States",
    "slug": "miami",
@@ -3847,7 +3871,7 @@
    "wikidata": 0
   },
   {
-   "rank": 167,
+   "rank": 168,
    "city": "Rotterdam",
    "country": "Netherlands",
    "slug": "rotterdam",
@@ -3870,7 +3894,7 @@
    "wikidata": 0
   },
   {
-   "rank": 168,
+   "rank": 169,
    "city": "Zurich",
    "country": "Switzerland",
    "slug": "zurich",
@@ -3893,7 +3917,7 @@
    "wikidata": 2
   },
   {
-   "rank": 169,
+   "rank": 170,
    "city": "Basel",
    "country": "Switzerland",
    "slug": "basel",
@@ -3916,7 +3940,7 @@
    "wikidata": 0
   },
   {
-   "rank": 170,
+   "rank": 171,
    "city": "Stuttgart",
    "country": "Germany",
    "slug": "stuttgart",
@@ -3937,30 +3961,6 @@
    "clicks_10d": 0,
    "travel": 4085,
    "wikidata": 6
-  },
-  {
-   "rank": 171,
-   "city": "Menorca",
-   "country": "Spain",
-   "slug": "menorca",
-   "score": 2.93,
-   "demand": null,
-   "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 2,
-   "ready": 0,
-   "supply": 2,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.54,
-   "work_score": 4.51,
-   "travel": 2933,
-   "why_pooled": "The Balears register is already imported at data/registers/balears-arbres-singulars.json, so supply may be in hand already rather than needing a scout.",
-   "wikidata": 0
   },
   {
    "rank": 172,
@@ -4552,7 +4552,7 @@
    "status": "published",
    "trees": 9,
    "photos": 0,
-   "walks": 0,
+   "walks": 1,
    "register": 19,
    "ready": 0,
    "supply": 120,
@@ -5029,29 +5029,6 @@
   },
   {
    "rank": 218,
-   "city": "Modena",
-   "country": "Italy",
-   "slug": "modena",
-   "score": 1.77,
-   "demand": 51698,
-   "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 3,
-   "ready": 0,
-   "supply": 10,
-   "target": 10,
-   "ease": 1.7,
-   "work_score": 3.01,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 1768,
-   "wikidata": 7
-  },
-  {
-   "rank": 219,
    "city": "Corsica",
    "country": "France",
    "slug": "corsica",
@@ -5075,7 +5052,7 @@
    "wikidata": 0
   },
   {
-   "rank": 220,
+   "rank": 219,
    "city": "Mechelen",
    "country": "Belgium",
    "slug": "mechelen",
@@ -5096,6 +5073,29 @@
    "clicks_10d": 0,
    "travel": 2931,
    "wikidata": 1
+  },
+  {
+   "rank": 220,
+   "city": "Modena",
+   "country": "Italy",
+   "slug": "modena",
+   "score": 1.77,
+   "demand": 51698,
+   "basis": "predicted (travel demand)",
+   "status": "published",
+   "trees": 5,
+   "photos": 0,
+   "walks": 1,
+   "register": 3,
+   "ready": 0,
+   "supply": 8,
+   "target": 10,
+   "ease": 1.66,
+   "work_score": 2.94,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 1768,
+   "wikidata": 5
   },
   {
    "rank": 221,
@@ -5538,6 +5538,29 @@
   },
   {
    "rank": 240,
+   "city": "Rouen",
+   "country": "France",
+   "slug": "rouen",
+   "score": 2.17,
+   "demand": 72334,
+   "basis": "predicted (travel demand)",
+   "status": "published",
+   "trees": 12,
+   "photos": 0,
+   "walks": 1,
+   "register": 6,
+   "ready": 2,
+   "supply": 8,
+   "target": 10,
+   "ease": 1.16,
+   "work_score": 2.52,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 2166,
+   "wikidata": 0
+  },
+  {
+   "rank": 241,
    "city": "Bern",
    "country": "Switzerland",
    "slug": "bern",
@@ -5560,7 +5583,7 @@
    "wikidata": 0
   },
   {
-   "rank": 241,
+   "rank": 242,
    "city": "Maui",
    "country": "United States",
    "slug": "maui",
@@ -5584,7 +5607,7 @@
    "wikidata": 0
   },
   {
-   "rank": 242,
+   "rank": 243,
    "city": "Valletta",
    "country": "Malta",
    "slug": "valletta",
@@ -5607,7 +5630,7 @@
    "wikidata": 0
   },
   {
-   "rank": 243,
+   "rank": 244,
    "city": "Faro",
    "country": "Portugal",
    "slug": "faro",
@@ -5630,7 +5653,7 @@
    "wikidata": 0
   },
   {
-   "rank": 244,
+   "rank": 245,
    "city": "Capri",
    "country": "Italy",
    "slug": "capri",
@@ -5654,7 +5677,7 @@
    "wikidata": 0
   },
   {
-   "rank": 245,
+   "rank": 246,
    "city": "Dresden",
    "country": "Germany",
    "slug": "dresden",
@@ -5677,7 +5700,7 @@
    "wikidata": 203
   },
   {
-   "rank": 246,
+   "rank": 247,
    "city": "Tarragona",
    "country": "Spain",
    "slug": "tarragona",
@@ -5700,7 +5723,7 @@
    "wikidata": 7
   },
   {
-   "rank": 247,
+   "rank": 248,
    "city": "Kilkenny",
    "country": "Ireland",
    "slug": "kilkenny",
@@ -5723,7 +5746,7 @@
    "wikidata": 1
   },
   {
-   "rank": 248,
+   "rank": 249,
    "city": "Cusco",
    "country": "Peru",
    "slug": "cusco",
@@ -5746,7 +5769,7 @@
    "wikidata": 0
   },
   {
-   "rank": 249,
+   "rank": 250,
    "city": "Limerick",
    "country": "Ireland",
    "slug": "limerick",
@@ -5769,7 +5792,7 @@
    "wikidata": 0
   },
   {
-   "rank": 250,
+   "rank": 251,
    "city": "Hallstatt",
    "country": "Austria",
    "slug": "hallstatt",
@@ -5792,7 +5815,7 @@
    "wikidata": 8
   },
   {
-   "rank": 251,
+   "rank": 252,
    "city": "Aix-en-Provence",
    "country": "France",
    "slug": "aix-en-provence",
@@ -5815,7 +5838,7 @@
    "wikidata": 0
   },
   {
-   "rank": 252,
+   "rank": 253,
    "city": "Charleston",
    "country": "United States",
    "slug": "charleston",
@@ -5837,29 +5860,6 @@
    "clicks_10d": 0,
    "travel": 2206,
    "wikidata": 1
-  },
-  {
-   "rank": 253,
-   "city": "Rouen",
-   "country": "France",
-   "slug": "rouen",
-   "score": 2.17,
-   "demand": 72334,
-   "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 1,
-   "ready": 0,
-   "supply": 1,
-   "target": 10,
-   "ease": 1.02,
-   "work_score": 2.21,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 2166,
-   "wikidata": 0
   },
   {
    "rank": 254,
