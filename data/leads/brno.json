@@ -1,30 +1,30 @@
 {
- "city": "Brno",
- "country": "Czech Republic",
- "city_slug": "brno",
- "note": "Candidates found during the 2026-08-15 verification pass that did not ship this round. The walkable core cluster around Moravske namesti / Denisovy sady / Stare Brno shipped six trees, brq_001 to brq_006, delivered and published in data/cities/brno.json on 2026-08-15. The Platan profesora Chudoby lead below was resolved and shipped the same day as brq_007: three converging sources (turistika.cz matching the register's 475cm and 2003 declaration year, botany.cz's independent 383cm at the same corner, Masaryk University's own 2022 renaming-ceremony account) confirmed one tree, not two, with a genuine girth disagreement rather than mistaken identity. The remaining two are real register entries within the same 3-5km radius that failed on access or evidence, not on being 'good enough'.",
- "leads": [
-  {
-   "name": "Platan javorolistý na Hybešově (the largest-girth plane tree in Brno, register kod 101084)",
-   "species": "Platanus x acerifolia",
-   "lat": 49.18885,
-   "lng": 16.60115,
-   "status": "lead",
-   "why": "Real, well documented and remarkable on paper: 697cm girth measured 2004, 763cm in the current AOPK register, the largest-girth plane tree in the city, in a small park behind what used to be a dental clinic off Hybešova/Leitnerova. But a Brnensky denik piece (16 June 2026, 'Pustou cast Brna se stoletym platanem zastavi') reports the whole plot is an active residential construction site (Rezidence Leitnerova) as of mid-2026, with the developer's own marketing promising a new public city park built around the tree once construction finishes. Right now access is unconfirmed and the site is very likely fenced. Revisit once the development completes and the promised park opens; do not publish on the current access picture."
-  },
-  {
-   "name": "Mendeluv jinan (Mendel's Ginkgo), register kod 101083",
-   "species": "Ginkgo biloba",
-   "lat": 49.19092,
-   "lng": 16.5942,
-   "status": "lead",
-   "why": "The best story of the whole cluster and deliberately not shipped on it: grows in the garden of the Augustinian Abbey of St Thomas in Old Brno, right by the greenhouse where Gregor Mendel bred his peas, age estimated 170-200 years, girth 420cm, reportedly the largest ginkgo in Brno. But access runs through the Mendel Museum (Muzeum starobrnenskeho opatstvi), which required advance phone booking even under normal operation and is reported closed as of August 2026 in the same search pass. That fails the 'can they get in without asking anyone's permission' test on both counts (booking requirement, current closure). Revisit if the museum reopens with normal walk-in hours, or if a source confirms the tree is visible from public ground outside the paid/booked area (the wiki description 'to the right of the entrance' hints this might be possible but was not confirmed this pass)."
-  }
- ],
- "blocked": [
-  {
-   "candidate": "Lipa na Jaselske (Silver Lime, register kod 105704), Jaselska 15/01",
-   "reason": "The city's own heritage encyclopedia (encyklopedie.brna.cz) places it explicitly 've dvornim traktu domu', i.e. in the courtyard wing of a private house. That is a dwelling's private grounds under hard rule 10, not a park or public square, whatever the register says about its protected status. Do not republish this as a leads candidate either unless a source shows public access to that courtyard."
-  }
- ]
+  "city": "Brno",
+  "country": "Czech Republic",
+  "city_slug": "brno",
+  "note": "Candidates found during the 2026-08-15 verification pass that did not ship this round. The walkable core cluster around Moravske namesti / Denisovy sady / Stare Brno shipped six trees, brq_001 to brq_006, delivered and published in data/cities/brno.json on 2026-08-15. The Platan profesora Chudoby lead below was resolved and shipped the same day as brq_007: three converging sources (turistika.cz matching the register's 475cm and 2003 declaration year, botany.cz's independent 383cm at the same corner, Masaryk University's own 2022 renaming-ceremony account) confirmed one tree, not two, with a genuine girth disagreement rather than mistaken identity. The remaining two are real register entries within the same 3-5km radius that failed on access or evidence, not on being 'good enough'.",
+  "leads": [
+    {
+      "name": "Platan javorolistý na Hybešově (the largest-girth plane tree in Brno, register kod 101084)",
+      "species": "Platanus x acerifolia",
+      "lat": 49.18885,
+      "lng": 16.60115,
+      "status": "held",
+      "why": "Real, well documented and remarkable on paper: 697cm girth measured 2004, 763cm in the current AOPK register, the largest-girth plane tree in the city, in a small park behind what used to be a dental clinic off Hybešova/Leitnerova. But a Brnensky denik piece (16 June 2026, 'Pustou cast Brna se stoletym platanem zastavi') reports the whole plot is an active residential construction site (Rezidence Leitnerova) as of mid-2026, with the developer's own marketing promising a new public city park built around the tree once construction finishes. Right now access is unconfirmed and the site is very likely fenced. Revisit once the development completes and the promised park opens; do not publish on the current access picture."
+    },
+    {
+      "name": "Mendeluv jinan (Mendel's Ginkgo), register kod 101083",
+      "species": "Ginkgo biloba",
+      "lat": 49.19092,
+      "lng": 16.5942,
+      "status": "held",
+      "why": "The best story of the whole cluster and deliberately not shipped on it: grows in the garden of the Augustinian Abbey of St Thomas in Old Brno, right by the greenhouse where Gregor Mendel bred his peas, age estimated 170-200 years, girth 420cm, reportedly the largest ginkgo in Brno. But access runs through the Mendel Museum (Muzeum starobrnenskeho opatstvi), which required advance phone booking even under normal operation and is reported closed as of August 2026 in the same search pass. That fails the 'can they get in without asking anyone's permission' test on both counts (booking requirement, current closure). Revisit if the museum reopens with normal walk-in hours, or if a source confirms the tree is visible from public ground outside the paid/booked area (the wiki description 'to the right of the entrance' hints this might be possible but was not confirmed this pass)."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Lipa na Jaselske (Silver Lime, register kod 105704), Jaselska 15/01",
+      "reason": "The city's own heritage encyclopedia (encyklopedie.brna.cz) places it explicitly 've dvornim traktu domu', i.e. in the courtyard wing of a private house. That is a dwelling's private grounds under hard rule 10, not a park or public square, whatever the register says about its protected status. Do not republish this as a leads candidate either unless a source shows public access to that courtyard."
+    }
+  ]
 }
