@@ -165,8 +165,13 @@ public struct Catalogue: Sendable {
                             withinKm: Double = 50) -> [Tree] {
         let hits = trees.filter { $0.bestTime?.isNow(month) == true }
         guard let lat, let lng else { return hits }
-        return hits.filter { $0.distanceKm(from: lat, lng) <= withinKm }
-                   .sorted { $0.distanceKm(from: lat, lng) < $1.distanceKm(from: lat, lng) }
+        // Measure once per tree, not twice per comparison. The comparator
+        // version ran the haversine some thousands of times to sort a few
+        // hundred trees; nearest(to:) above has always done it this way.
+        return hits.map { (tree: $0, km: $0.distanceKm(from: lat, lng)) }
+                   .filter { $0.km <= withinKm }
+                   .sorted { $0.km < $1.km }
+                   .map(\.tree)
     }
 
     public var citySlugs: [String] { byCity.keys.sorted() }

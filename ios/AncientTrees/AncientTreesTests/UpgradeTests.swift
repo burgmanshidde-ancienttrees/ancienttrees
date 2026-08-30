@@ -42,13 +42,13 @@ struct WhenTheAppUpdatesUnderneathYou {
     /// file no longer decodes, the app used to end up with no catalogue at all:
     /// an empty map, an empty Discover, and no way out but delete and reinstall.
     /// The bundled copy was sitting right there the whole time.
-    @Test func aDownloadFromAnOlderAppFallsBackToTheBundledCopy() {
+    @Test func aDownloadFromAnOlderAppFallsBackToTheBundledCopy() async {
         let d = Downloads(); defer { d.clean() }
         // What a model gaining a required field looks like from here.
         d.put("trees", #"{"version":"old","count":1,"trees":[{"nonsense":true}]}"#)
 
         let store = CatalogueStore(downloads: d.url)
-        store.loadBundled()
+        await store.loadBundled()
 
         #expect(store.catalogue != nil,
                 "a stale download emptied the whole app: \(store.loadError ?? "no error given")")
@@ -61,12 +61,12 @@ struct WhenTheAppUpdatesUnderneathYou {
     /// on every single launch, because refresh() asks whether the VERSION
     /// changed and it has not: the phone believes it is up to date with a file
     /// it can no longer read.
-    @Test func theStaleDownloadIsNotKeptForever() {
+    @Test func theStaleDownloadIsNotKeptForever() async {
         let d = Downloads(); defer { d.clean() }
         d.put("trees", "not json at all")
 
         let store = CatalogueStore(downloads: d.url)
-        store.loadBundled()
+        await store.loadBundled()
 
         #expect(store.catalogue != nil)
         #expect(!d.exists, "the unreadable download was kept, so every launch pays for it again")
@@ -76,12 +76,12 @@ struct WhenTheAppUpdatesUnderneathYou {
     /// added in a later release and never fetched. Falling back per file is
     /// what makes a new feed work on an old download the first time it is
     /// asked for, and it must keep working.
-    @Test func aDownloadMissingANewerFeedStillWorks() {
+    @Test func aDownloadMissingANewerFeedStillWorks() async {
         let d = Downloads(); defer { d.clean() }
         // Nothing at all in the download directory: every file comes from the
         // bundle, which is a fresh install and also the oldest possible upgrade.
         let store = CatalogueStore(downloads: d.url)
-        store.loadBundled()
+        await store.loadBundled()
 
         #expect(store.catalogue != nil)
         #expect((store.catalogue?.collections.count ?? 0) >= 5,

@@ -16,9 +16,9 @@ struct EditorialSuggestions {
 
     /// The day-zero suggestion picker behind Saved and Collect: photographs
     /// first, nearest first, never a tree the person already has, capped.
-    @Test func suggestionsPreferPhotosExcludeOwnedAndStayOrdered() throws {
+    @Test func suggestionsPreferPhotosExcludeOwnedAndStayOrdered() async throws {
         let store = CatalogueStore()
-        store.loadBundled()
+        await store.loadBundled()
         let cat = try #require(store.catalogue, "the bundled catalogue did not load")
         let origin = (lat: 52.3731, lng: 4.8922)   // Dam square
 
@@ -46,9 +46,9 @@ struct SpotSplit {
     /// The sheet's one decision: what is close enough to be the tree the
     /// person is standing before. At the Wertheimpark gate the wingnut leads;
     /// in a town we do not map, nothing is near and the add-path is the story.
-    @Test func nearbyLeadsWithTheNearestAndFarFindsNothing() throws {
+    @Test func nearbyLeadsWithTheNearestAndFarFindsNothing() async throws {
         let store = CatalogueStore()
-        store.loadBundled()
+        await store.loadBundled()
         let cat = try #require(store.catalogue, "the bundled catalogue did not load")
 
         let atWertheimpark = (lat: 52.3667, lng: 4.9086)
@@ -78,9 +78,9 @@ struct CatalogueDecoding {
     /// The collections point at tree ids, and a shelf only draws when at least
     /// three of them resolve. If the bundled trees and the bundled browse feed
     /// were built from different days this is where it shows.
-    @Test func collectionsResolveAgainstTheBundledTrees() throws {
+    @Test func collectionsResolveAgainstTheBundledTrees() async throws {
         let store = CatalogueStore()
-        store.loadBundled()
+        await store.loadBundled()
         let cat = try #require(store.catalogue, "the bundled catalogue did not load")
         #expect(cat.collections.count >= 10)
         for c in cat.collections {
@@ -106,14 +106,14 @@ struct CatalogueDecoding {
 @MainActor
 struct TheIndexesMatchTheScan {
 
-    private func bundled() throws -> Catalogue {
+    private func bundled() async throws -> Catalogue {
         let store = CatalogueStore()
-        store.loadBundled()
+        await store.loadBundled()
         return try #require(store.catalogue, "the bundled catalogue did not load")
     }
 
-    @Test func everyCityHoldsWhatFilteringWouldHaveFound() throws {
-        let cat = try bundled()
+    @Test func everyCityHoldsWhatFilteringWouldHaveFound() async throws {
+        let cat = try await bundled()
         let cities = Set(cat.trees.map(\.citySlug))
         #expect(cities.count > 100, "the bundled catalogue looks wrong, not the index")
         for slug in cities {
@@ -125,8 +125,8 @@ struct TheIndexesMatchTheScan {
                 "an unknown city returned something")
     }
 
-    @Test func everyCountryAndSpeciesDoTheSame() throws {
-        let cat = try bundled()
+    @Test func everyCountryAndSpeciesDoTheSame() async throws {
+        let cat = try await bundled()
         for name in Set(cat.trees.map(\.country)) {
             #expect(cat.trees(inCountry: name).map(\.id)
                     == cat.trees.filter { $0.country == name }.map(\.id),
@@ -142,8 +142,8 @@ struct TheIndexesMatchTheScan {
     /// The search field built this per keystroke. It must still be every common
     /// name, once each, in the same order, and it must not offer an empty row
     /// for a tree whose species nobody has established yet.
-    @Test func theSpeciesListIsTheSameListSortedTheSameWay() throws {
-        let cat = try bundled()
+    @Test func theSpeciesListIsTheSameListSortedTheSameWay() async throws {
+        let cat = try await bundled()
         let scanned = Array(Set(cat.trees.map(\.commonName))).sorted().filter { !$0.isEmpty }
         #expect(cat.speciesNames == scanned)
         #expect(!cat.speciesNames.contains(""))
@@ -151,8 +151,8 @@ struct TheIndexesMatchTheScan {
 
     /// citySlugs used to build a Set and sort it. Same answer, or the index
     /// pages come out in a different order than they always have.
-    @Test func theCitySlugsAreUnchanged() throws {
-        let cat = try bundled()
+    @Test func theCitySlugsAreUnchanged() async throws {
+        let cat = try await bundled()
         #expect(cat.citySlugs == Array(Set(cat.trees.map(\.citySlug))).sorted())
     }
 }

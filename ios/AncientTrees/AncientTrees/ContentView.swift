@@ -625,7 +625,7 @@ struct ContentView: View {
             // synchronously in its init, so isSignedIn is already right on the
             // first frame rather than a moment later.
             forgetIfSignedOut()
-            store.loadBundled()
+            await store.loadBundled()
             // Ask whether anything changed. A few dozen bytes, and it is the
             // difference between an app that follows the database and an app
             // frozen at whatever shipped.
