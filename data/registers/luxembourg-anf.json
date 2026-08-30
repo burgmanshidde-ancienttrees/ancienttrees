@@ -1,0 +1,2158 @@
+{
+ "source": "Administration de la nature et des forets (ANF), Luxembourg: Arbres remarquables. Trees classified as remarkable by grand-ducal regulation.",
+ "endpoint": "https://data.public.lu/api/1/datasets/arbres-remarquables/",
+ "download": "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+ "licence": "Creative Commons Zero (CC0 1.0 Public Domain Dedication)",
+ "licence_proof": "Read live from the dataset's own API record at https://data.public.lu/api/1/datasets/arbres-remarquables/ on 2026-08-30: license = 'cc-zero', organization = 'Administration de la nature et des forets'. Read directly from the metadata endpoint rather than from a search summary or a portal page.",
+ "designation": "Arbre remarquable, classified by grand-ducal regulation (current list per the regulation of 31 January 2025). The designation attaches to the individual specimen.",
+ "country": "Luxembourg",
+ "attribution": "Administration de la nature et des forets, Luxembourg",
+ "fetched": "2026-08-30",
+ "scope": "238 classified trees across the whole Grand Duchy, tree-level coordinates in WGS84.",
+ "caveat": "Four things a run must know. (1) NO AGE FIELD and NO GIRTH FIELD. This register says protected and why, never how old or how thick, so every age here has to come from a second source or stay empty. (2) `essence` is often a GENUS, 'Tilia sp.' and 'Quercus sp.' both appear; ship the genus honestly and let the page ask the reader which one, never guess the species. (3) `interet` is the reason for designation (dendrologique, historique, paysager, ecologique and combinations) and it is the single most useful field here: it is the register itself saying why this tree was worth protecting, which is the closest thing to a story hook a register ever gives. (4) NO VITALITY FIELD, so whether a tree still stands is a per-tree check the register cannot do for us. The Luxembourgish Wikipedia mirrors this list ('Lescht vun de bemierkenswaerte Beem zu Letzebuerg') with individual articles citing the printed ANF monograph, and that mirror is where two removed trees were caught during the 2026-08-30 Luxembourg City pass: a copper beech in the City Museum courtyard removed in 2022, and one of the Parc Amelie sequoias felled 28 February 2026.",
+ "count": 238,
+ "trees": [
+  {
+   "register_id": 1,
+   "species": "Tilia sp.",
+   "designation_reason": "dendrologique / historique",
+   "locality": "B de Kosselt",
+   "commune": "Beaufort",
+   "longitude": 6.2861899,
+   "latitude": 49.8441209
+  },
+  {
+   "register_id": 2,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager",
+   "locality": "C de Beaufort",
+   "commune": "Beaufort",
+   "longitude": 6.279667,
+   "latitude": 49.831073
+  },
+  {
+   "register_id": 3,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "D de Rippig",
+   "commune": "Bech",
+   "longitude": 6.3118014,
+   "latitude": 49.7376327
+  },
+  {
+   "register_id": 4,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "E de Hersberg et Altrier",
+   "commune": "Bech",
+   "longitude": 6.3277074,
+   "latitude": 49.7527432
+  },
+  {
+   "register_id": 5,
+   "species": "Ilex aquifolium",
+   "designation_reason": "paysager / biologique",
+   "locality": "F de Marscherwald",
+   "commune": "Bech",
+   "longitude": 6.2734499,
+   "latitude": 49.7465751
+  },
+  {
+   "register_id": 6,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "C d'Elvange et Hovelange",
+   "commune": "Beckerich",
+   "longitude": 5.9104554,
+   "latitude": 49.7226035
+  },
+  {
+   "register_id": 7,
+   "species": "Tilia sp.",
+   "designation_reason": "dendrologique / historique",
+   "locality": "E de Beckerich",
+   "commune": "Beckerich",
+   "longitude": 5.8869894,
+   "latitude": 49.7276199
+  },
+  {
+   "register_id": 8,
+   "species": "Sorbus domestica",
+   "designation_reason": "biologique",
+   "locality": "F d'Oberpallen",
+   "commune": "Beckerich",
+   "longitude": 5.8383764,
+   "latitude": 49.7317538
+  },
+  {
+   "register_id": 9,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "F d'Oberpallen",
+   "commune": "Beckerich",
+   "longitude": 5.8382675,
+   "latitude": 49.7314478
+  },
+  {
+   "register_id": 10,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "B de Berdorf",
+   "commune": "Berdorf",
+   "longitude": 6.3299966,
+   "latitude": 49.8230565
+  },
+  {
+   "register_id": 11,
+   "species": "Quercus robur L.",
+   "designation_reason": "dendrologique",
+   "locality": "C des Bois et Fermes",
+   "commune": "Berdorf",
+   "longitude": 6.3800782,
+   "latitude": 49.8129867
+  },
+  {
+   "register_id": 12,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique / historique / commémoratif",
+   "locality": "C de Lorentzscheuer",
+   "commune": "Bertrange",
+   "longitude": 6.0594867,
+   "latitude": 49.5887652
+  },
+  {
+   "register_id": 13,
+   "species": "Pyrus communis",
+   "designation_reason": "paysager / biologique",
+   "locality": "A de Bettembourg",
+   "commune": "Bettembourg",
+   "longitude": 6.1108864,
+   "latitude": 49.5105791
+  },
+  {
+   "register_id": 14,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "B d'Abweiler",
+   "commune": "Bettembourg",
+   "longitude": 6.0666421,
+   "latitude": 49.5391319
+  },
+  {
+   "register_id": 15,
+   "species": "Fagus sylvatica 'Purpurea'",
+   "designation_reason": "biologique / dendrologique",
+   "locality": "A de Bettendorf",
+   "commune": "Bettendorf",
+   "longitude": 6.2206999,
+   "latitude": 49.8749355
+  },
+  {
+   "register_id": 16,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager",
+   "locality": "E de Mensdorf",
+   "commune": "Betzdorf",
+   "longitude": 6.2991045,
+   "latitude": 49.6543564
+  },
+  {
+   "register_id": 17,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / historique",
+   "locality": "A de Bissen-Nord",
+   "commune": "Bissen",
+   "longitude": 6.0597843,
+   "latitude": 49.7930112
+  },
+  {
+   "register_id": 18,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / historique",
+   "locality": "A de Bissen-Nord",
+   "commune": "Bissen",
+   "longitude": 6.0598536,
+   "latitude": 49.7930832
+  },
+  {
+   "register_id": 19,
+   "species": "Quercus robur",
+   "designation_reason": "paysager",
+   "locality": "F de Weydig",
+   "commune": "Biwer",
+   "longitude": 6.3311075,
+   "latitude": 49.7157862
+  },
+  {
+   "register_id": 20,
+   "species": "Fagus sylvatica",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Baschleiden",
+   "commune": "Boulaide",
+   "longitude": 5.8431763,
+   "latitude": 49.8981223
+  },
+  {
+   "register_id": 21,
+   "species": "Fagus sylvatica",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Baschleiden",
+   "commune": "Boulaide",
+   "longitude": 5.8431759,
+   "latitude": 49.8981943
+  },
+  {
+   "register_id": 22,
+   "species": "Ulmus glabra 'Pendula'",
+   "designation_reason": "paysager / biologique / historique",
+   "locality": "B de Baschleiden",
+   "commune": "Boulaide",
+   "longitude": 5.8187654,
+   "latitude": 49.8978628
+  },
+  {
+   "register_id": 23,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / historique",
+   "locality": "A de Schlindermanderscheid",
+   "commune": "Bourscheid",
+   "longitude": 6.0622734,
+   "latitude": 49.9328265
+  },
+  {
+   "register_id": 24,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / commémoratif",
+   "locality": "C de Bourscheid",
+   "commune": "Bourscheid",
+   "longitude": 6.0527018,
+   "latitude": 49.9105209
+  },
+  {
+   "register_id": 25,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / historique",
+   "locality": "D de Welscheid",
+   "commune": "Bourscheid",
+   "longitude": 6.0647307,
+   "latitude": 49.8709018
+  },
+  {
+   "register_id": 26,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / historique",
+   "locality": "E de Kehmen et Scheidel",
+   "commune": "Bourscheid",
+   "longitude": 6.0429385,
+   "latitude": 49.8958203
+  },
+  {
+   "register_id": 27,
+   "species": "Quercus robur L.",
+   "designation_reason": "dendrologique",
+   "locality": "BA de Bous",
+   "commune": "Bous-Waldbredimus",
+   "longitude": 6.3269188,
+   "latitude": 49.5672615
+  },
+  {
+   "register_id": 28,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "BB de Rolling et Assel",
+   "commune": "Bous-Waldbredimus",
+   "longitude": 6.3159739,
+   "latitude": 49.5730663
+  },
+  {
+   "register_id": 29,
+   "species": "Fraxinus excelsior",
+   "designation_reason": "dendrologique",
+   "locality": "CA de Clervaux",
+   "commune": "Clervaux",
+   "longitude": 6.0308616,
+   "latitude": 50.0524202
+  },
+  {
+   "register_id": 30,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "CB d'Eselborn",
+   "commune": "Clervaux",
+   "longitude": 6.0051754,
+   "latitude": 50.05904
+  },
+  {
+   "register_id": 31,
+   "species": "Fagus sylvatica 'Purpurea'",
+   "designation_reason": "biologique / dendrologique",
+   "locality": "CB d'Eselborn",
+   "commune": "Clervaux",
+   "longitude": 6.0033769,
+   "latitude": 50.0581834
+  },
+  {
+   "register_id": 32,
+   "species": "Fagus sylvatica",
+   "designation_reason": "dendrologique",
+   "locality": "CB d'Eselborn",
+   "commune": "Clervaux",
+   "longitude": 6.0023433,
+   "latitude": 50.0582448
+  },
+  {
+   "register_id": 33,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "CB d'Eselborn",
+   "commune": "Clervaux",
+   "longitude": 6.0026085,
+   "latitude": 50.0582632
+  },
+  {
+   "register_id": 34,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "CB d'Eselborn",
+   "commune": "Clervaux",
+   "longitude": 6.0029148,
+   "latitude": 50.0585603
+  },
+  {
+   "register_id": 35,
+   "species": "Ulmus minor",
+   "designation_reason": "biologique / dendrologique / historique",
+   "locality": "CE d'Urspelt",
+   "commune": "Clervaux",
+   "longitude": 6.0453932,
+   "latitude": 50.0759639
+  },
+  {
+   "register_id": 36,
+   "species": "Fraxinus excelsior",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "MB de Munshausen",
+   "commune": "Clervaux",
+   "longitude": 6.0389162,
+   "latitude": 50.0321921
+  },
+  {
+   "register_id": 37,
+   "species": "Pyrus sp.",
+   "designation_reason": "paysager",
+   "locality": "B de Berg",
+   "commune": "Colmar-Berg",
+   "longitude": 6.0599423,
+   "latitude": 49.8221053
+  },
+  {
+   "register_id": 38,
+   "species": "Abies alba",
+   "designation_reason": "dendrologique",
+   "locality": "B de Berg",
+   "commune": "Colmar-Berg",
+   "longitude": 6.0643796,
+   "latitude": 49.806924
+  },
+  {
+   "register_id": 39,
+   "species": "Tilia cordata",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Berg",
+   "commune": "Colmar-Berg",
+   "longitude": 6.0909335,
+   "latitude": 49.8119793
+  },
+  {
+   "register_id": 40,
+   "species": "Pseudotsuga menziesii",
+   "designation_reason": "dendrologique",
+   "locality": "A de Consdorf-Ouest",
+   "commune": "Consdorf",
+   "longitude": 6.3148564,
+   "latitude": 49.7797776
+  },
+  {
+   "register_id": 41,
+   "species": "Castanea sativa",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Moutfort et Medingen",
+   "commune": "Contern",
+   "longitude": 6.2815787,
+   "latitude": 49.5921305
+  },
+  {
+   "register_id": 42,
+   "species": "Quercus robur L.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Moutfort et Medingen",
+   "commune": "Contern",
+   "longitude": 6.2791877,
+   "latitude": 49.592897
+  },
+  {
+   "register_id": 43,
+   "species": "Sorbus domestica",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Moutfort et Medingen",
+   "commune": "Contern",
+   "longitude": 6.2813018,
+   "latitude": 49.5920228
+  },
+  {
+   "register_id": 44,
+   "species": "Quercus robur L.",
+   "designation_reason": "dendrologique",
+   "locality": "B de Moutfort et Medingen",
+   "commune": "Contern",
+   "longitude": 6.265208,
+   "latitude": 49.5879017
+  },
+  {
+   "register_id": 45,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Moutfort et Medingen",
+   "commune": "Contern",
+   "longitude": 6.2469557,
+   "latitude": 49.5812893
+  },
+  {
+   "register_id": 46,
+   "species": "Carpinus betulus",
+   "designation_reason": "dendrologique",
+   "locality": "C de Contern",
+   "commune": "Contern",
+   "longitude": 6.2344495,
+   "latitude": 49.5872763
+  },
+  {
+   "register_id": 47,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "C de Contern",
+   "commune": "Contern",
+   "longitude": 6.2234694,
+   "latitude": 49.5878666
+  },
+  {
+   "register_id": 48,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "dendrologique / historique",
+   "locality": "B de Dalheim",
+   "commune": "Dalheim",
+   "longitude": 6.2562418,
+   "latitude": 49.5398067
+  },
+  {
+   "register_id": 49,
+   "species": "Fagus sylvatica sp.",
+   "designation_reason": "paysager",
+   "locality": "A de Diekirch",
+   "commune": "Diekirch",
+   "longitude": 6.1554426,
+   "latitude": 49.8653094
+  },
+  {
+   "register_id": 50,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "A de Niedercorn",
+   "commune": "Differdange",
+   "longitude": 5.8585292,
+   "latitude": 49.5282622
+  },
+  {
+   "register_id": 51,
+   "species": "Cedrus deodara",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Differdange",
+   "commune": "Differdange",
+   "longitude": 5.8847712,
+   "latitude": 49.5215589
+  },
+  {
+   "register_id": 52,
+   "species": "Fraxinus excelsior",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "C d'Obercorn",
+   "commune": "Differdange",
+   "longitude": 5.9022199,
+   "latitude": 49.5103792
+  },
+  {
+   "register_id": 53,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "B de Bettange-sur-Mess",
+   "commune": "Dippach",
+   "longitude": 5.9913734,
+   "latitude": 49.5810484
+  },
+  {
+   "register_id": 58,
+   "species": "Sequoia giganteum",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Burange",
+   "commune": "Dudelange",
+   "longitude": 6.0841439,
+   "latitude": 49.4839491
+  },
+  {
+   "register_id": 59,
+   "species": "Fraxinus excelsior",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "C de Dudelange",
+   "commune": "Dudelange",
+   "longitude": 6.0855125,
+   "latitude": 49.4825294
+  },
+  {
+   "register_id": 60,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / historique",
+   "locality": "B d'Echternach",
+   "commune": "Echternach",
+   "longitude": 6.4227709,
+   "latitude": 49.812352
+  },
+  {
+   "register_id": 61,
+   "species": "Fagus sylvatica 'Purpurea'",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "D de Colpach-Bas",
+   "commune": "Ell",
+   "longitude": 5.8266129,
+   "latitude": 49.7596543
+  },
+  {
+   "register_id": 62,
+   "species": "Salix alba",
+   "designation_reason": "dendrologique",
+   "locality": "A d'Esch-Nord",
+   "commune": "Esch-sur-Alzette",
+   "longitude": 5.9733131,
+   "latitude": 49.5044782
+  },
+  {
+   "register_id": 63,
+   "species": "Quercus sp.",
+   "designation_reason": "historique / commémoratif",
+   "locality": "C d'Esch-Sud",
+   "commune": "Esch-sur-Alzette",
+   "longitude": 5.9912125,
+   "latitude": 49.4757619
+  },
+  {
+   "register_id": 64,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "EA d'Esch-sur-Sûre",
+   "commune": "Esch-sur-Sûre",
+   "longitude": 5.9355112,
+   "latitude": 49.9067498
+  },
+  {
+   "register_id": 65,
+   "species": "Fraxinus excelsior",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "EA d'Esch-sur-Sûre",
+   "commune": "Esch-sur-Sûre",
+   "longitude": 5.9317452,
+   "latitude": 49.9025436
+  },
+  {
+   "register_id": 66,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / morphologique",
+   "locality": "NC d'Insenborn",
+   "commune": "Esch-sur-Sûre",
+   "longitude": 5.8868587,
+   "latitude": 49.9066154
+  },
+  {
+   "register_id": 67,
+   "species": "Crataegus monogyna",
+   "designation_reason": "morphologique / dendrologique / historique",
+   "locality": "NC d'Insenborn",
+   "commune": "Esch-sur-Sûre",
+   "longitude": 5.8613883,
+   "latitude": 49.8904489
+  },
+  {
+   "register_id": 68,
+   "species": "Quercus robur L.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "D de Grentzingen",
+   "commune": "Ettelbruck",
+   "longitude": 6.0896186,
+   "latitude": 49.8349406
+  },
+  {
+   "register_id": 69,
+   "species": "Pyrus communis",
+   "designation_reason": "paysager / biologique / dendrologique",
+   "locality": "D de Grentzingen",
+   "commune": "Ettelbruck",
+   "longitude": 6.0771561,
+   "latitude": 49.8391842
+  },
+  {
+   "register_id": 70,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "B d'Oberfeulen",
+   "commune": "Feulen",
+   "longitude": 6.0411991,
+   "latitude": 49.8475839
+  },
+  {
+   "register_id": 71,
+   "species": "Tilia sp.",
+   "designation_reason": "historique",
+   "locality": "A de Fischbach",
+   "commune": "Fischbach",
+   "longitude": 6.1883694,
+   "latitude": 49.7479795
+  },
+  {
+   "register_id": 72,
+   "species": "Acer",
+   "designation_reason": "biologique",
+   "locality": "A de Fischbach",
+   "commune": "Fischbach",
+   "longitude": 6.2086708,
+   "latitude": 49.7500688
+  },
+  {
+   "register_id": 73,
+   "species": "Salix alba",
+   "designation_reason": "dendrologique",
+   "locality": "B de Koedingen",
+   "commune": "Fischbach",
+   "longitude": 6.2090187,
+   "latitude": 49.7350721
+  },
+  {
+   "register_id": 74,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "E d'Oberdonven",
+   "commune": "Flaxweiler",
+   "longitude": 6.3983948,
+   "latitude": 49.6503886
+  },
+  {
+   "register_id": 75,
+   "species": "Sequioadendron giganteum",
+   "designation_reason": "paysager / morphologique",
+   "locality": "F de Buchholz",
+   "commune": "Flaxweiler",
+   "longitude": 6.3569522,
+   "latitude": 49.6619094
+  },
+  {
+   "register_id": 76,
+   "species": "Quercus robur",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "F de Buchholz",
+   "commune": "Flaxweiler",
+   "longitude": 6.3679269,
+   "latitude": 49.6597151
+  },
+  {
+   "register_id": 77,
+   "species": "Quercus robur L.",
+   "designation_reason": "dendrologique",
+   "locality": "A de Kahler",
+   "commune": "Garnich",
+   "longitude": 5.9416735,
+   "latitude": 49.6295317
+  },
+  {
+   "register_id": 78,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager",
+   "locality": "D de Masseler et Harderbach",
+   "commune": "Goesdorf",
+   "longitude": 6.0352036,
+   "latitude": 49.9303174
+  },
+  {
+   "register_id": 79,
+   "species": "Fraxinus excelsior",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "D de Masseler et Harderbach",
+   "commune": "Goesdorf",
+   "longitude": 6.0349252,
+   "latitude": 49.9302452
+  },
+  {
+   "register_id": 80,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "F de Goesdorf",
+   "commune": "Goesdorf",
+   "longitude": 5.9656728,
+   "latitude": 49.9279698
+  },
+  {
+   "register_id": 81,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / historique",
+   "locality": "GA de Grosbous",
+   "commune": "Groussbus-Wal",
+   "longitude": 5.9647226,
+   "latitude": 49.8255833
+  },
+  {
+   "register_id": 82,
+   "species": "Acer pseudoplatanus",
+   "designation_reason": "dendrologique / historique",
+   "locality": "SC de Septfontaines",
+   "commune": "Habscht",
+   "longitude": 5.9863077,
+   "latitude": 49.6944436
+  },
+  {
+   "register_id": 83,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "BB de Buschdorf",
+   "commune": "Helperknapp",
+   "longitude": 5.9966691,
+   "latitude": 49.755507
+  },
+  {
+   "register_id": 84,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "BB de Buschdorf",
+   "commune": "Helperknapp",
+   "longitude": 5.9979791,
+   "latitude": 49.7579185
+  },
+  {
+   "register_id": 85,
+   "species": "Salix alba 'tristis'",
+   "designation_reason": "paysager / biologique",
+   "locality": "BB de Buschdorf",
+   "commune": "Helperknapp",
+   "longitude": 6.0327917,
+   "latitude": 49.7506726
+  },
+  {
+   "register_id": 86,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "TA de Tuntange",
+   "commune": "Helperknapp",
+   "longitude": 6.0089842,
+   "latitude": 49.7196062
+  },
+  {
+   "register_id": 87,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / historique",
+   "locality": "TB de Hollenfels",
+   "commune": "Helperknapp",
+   "longitude": 6.0483571,
+   "latitude": 49.7123797
+  },
+  {
+   "register_id": 88,
+   "species": "Platanus acerfolia",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "TC d'Ansembourg",
+   "commune": "Helperknapp",
+   "longitude": 6.0489796,
+   "latitude": 49.7015554
+  },
+  {
+   "register_id": 89,
+   "species": "Carpinus betulus",
+   "designation_reason": "paysager / morphologique",
+   "locality": "TC d'Ansembourg",
+   "commune": "Helperknapp",
+   "longitude": 6.0482329,
+   "latitude": 49.7008084
+  },
+  {
+   "register_id": 90,
+   "species": "Fagus sylvatica",
+   "designation_reason": "morphologique / dendrologique",
+   "locality": "A de Hesperange",
+   "commune": "Hesperange",
+   "longitude": 6.1465514,
+   "latitude": 49.5791931
+  },
+  {
+   "register_id": 91,
+   "species": "Fagus sylvatica",
+   "designation_reason": "paysager",
+   "locality": "D de Fentange",
+   "commune": "Hesperange",
+   "longitude": 6.1324823,
+   "latitude": 49.5689399
+  },
+  {
+   "register_id": 92,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / morphologique / dendrologique",
+   "locality": "JA de Godbrange",
+   "commune": "Junglinster",
+   "longitude": 6.2313247,
+   "latitude": 49.7353676
+  },
+  {
+   "register_id": 93,
+   "species": "Juglans regia",
+   "designation_reason": "dendrologique",
+   "locality": "JB de Junglinster",
+   "commune": "Junglinster",
+   "longitude": 6.2487982,
+   "latitude": 49.7158824
+  },
+  {
+   "register_id": 94,
+   "species": "Sequoiadendron giganteum",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "JD de Bourglinster",
+   "commune": "Junglinster",
+   "longitude": 6.2218538,
+   "latitude": 49.701423
+  },
+  {
+   "register_id": 95,
+   "species": "Sequoiadendron giganteum",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "JD de Bourglinster",
+   "commune": "Junglinster",
+   "longitude": 6.2225334,
+   "latitude": 49.7017194
+  },
+  {
+   "register_id": 96,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "RA de Rodenbourg",
+   "commune": "Junglinster",
+   "longitude": 6.2836884,
+   "latitude": 49.6880888
+  },
+  {
+   "register_id": 97,
+   "species": "Pyrus sp.",
+   "designation_reason": "paysager / biologique / dendrologique",
+   "locality": "RA de Rodenbourg",
+   "commune": "Junglinster",
+   "longitude": 6.2874067,
+   "latitude": 49.6954486
+  },
+  {
+   "register_id": 98,
+   "species": "Quercus robur",
+   "designation_reason": "paysager",
+   "locality": "RC d'Eschweiler",
+   "commune": "Junglinster",
+   "longitude": 6.3113868,
+   "latitude": 49.7147515
+  },
+  {
+   "register_id": 99,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / biologique",
+   "locality": "BB de Hautcharage",
+   "commune": "Käerjeng",
+   "longitude": 5.9090156,
+   "latitude": 49.5781427
+  },
+  {
+   "register_id": 100,
+   "species": "Crataegus monogyna",
+   "designation_reason": "dendrologique",
+   "locality": "BB de Hautcharage",
+   "commune": "Käerjeng",
+   "longitude": 5.9091131,
+   "latitude": 49.578008
+  },
+  {
+   "register_id": 101,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "CA de Clemency",
+   "commune": "Käerjeng",
+   "longitude": 5.8792701,
+   "latitude": 49.6045601
+  },
+  {
+   "register_id": 102,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "A de Kayl",
+   "commune": "Kayl",
+   "longitude": 6.0569483,
+   "latitude": 49.4877206
+  },
+  {
+   "register_id": 103,
+   "species": "Fagus sylvatica",
+   "designation_reason": "morphologique / dendrologique / historique",
+   "locality": "A de Kayl",
+   "commune": "Kayl",
+   "longitude": 6.0207724,
+   "latitude": 49.4790759
+  },
+  {
+   "register_id": 104,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "A de Kehlen",
+   "commune": "Kehlen",
+   "longitude": 6.0439823,
+   "latitude": 49.6714217
+  },
+  {
+   "register_id": 105,
+   "species": "Fraxinus excelsior",
+   "designation_reason": "paysager",
+   "locality": "C de Nospelt",
+   "commune": "Kehlen",
+   "longitude": 6.0105694,
+   "latitude": 49.6751485
+  },
+  {
+   "register_id": 106,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "C de Nospelt",
+   "commune": "Kehlen",
+   "longitude": 6.008707,
+   "latitude": 49.6769442
+  },
+  {
+   "register_id": 107,
+   "species": "Salix alba 'tristis'",
+   "designation_reason": "historique",
+   "locality": "E de Keispelt et Meispelt",
+   "commune": "Kehlen",
+   "longitude": 6.056826,
+   "latitude": 49.6891198
+  },
+  {
+   "register_id": 108,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "A de Kopstal",
+   "commune": "Kopstal",
+   "longitude": 6.0825825,
+   "latitude": 49.660964
+  },
+  {
+   "register_id": 109,
+   "species": "Prunus avium",
+   "designation_reason": "deperir",
+   "locality": "A de Kopstal",
+   "commune": "Kopstal",
+   "longitude": 6.0688013,
+   "latitude": 49.6609351
+  },
+  {
+   "register_id": 110,
+   "species": "Pinus sylvestris",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Bridel",
+   "commune": "Kopstal",
+   "longitude": 6.0796775,
+   "latitude": 49.6512516
+  },
+  {
+   "register_id": 111,
+   "species": "Quercus petraea",
+   "designation_reason": "paysager",
+   "locality": "HC de Harlange",
+   "commune": "Lac de la Haute-Sûre",
+   "longitude": 5.8098461,
+   "latitude": 49.9239262
+  },
+  {
+   "register_id": 112,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager",
+   "locality": "MA de Kaundorf",
+   "commune": "Lac de la Haute-Sûre",
+   "longitude": 5.9171016,
+   "latitude": 49.9321817
+  },
+  {
+   "register_id": 113,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager",
+   "locality": "A de Larochette",
+   "commune": "Larochette",
+   "longitude": 6.2197104,
+   "latitude": 49.7834201
+  },
+  {
+   "register_id": 114,
+   "species": "Taxus",
+   "designation_reason": "biologique",
+   "locality": "A de Larochette",
+   "commune": "Larochette",
+   "longitude": 6.2210726,
+   "latitude": 49.7847321
+  },
+  {
+   "register_id": 115,
+   "species": "Fagus sylvatica",
+   "designation_reason": "paysager / morphologique / dendrologique",
+   "locality": "C de Meysembourg",
+   "commune": "Larochette",
+   "longitude": 6.1979722,
+   "latitude": 49.771632
+  },
+  {
+   "register_id": 116,
+   "species": "Sorbus domestica",
+   "designation_reason": "dendrologique",
+   "locality": "D de Weydert",
+   "commune": "Larochette",
+   "longitude": 6.1979233,
+   "latitude": 49.7821512
+  },
+  {
+   "register_id": 117,
+   "species": "Sorbus domestica",
+   "designation_reason": "dendrologique",
+   "locality": "D de Weydert",
+   "commune": "Larochette",
+   "longitude": 6.1976873,
+   "latitude": 49.7821782
+  },
+  {
+   "register_id": 118,
+   "species": "Tilia sp.",
+   "designation_reason": "dendrologique / historique",
+   "locality": "E de Leidenbach",
+   "commune": "Larochette",
+   "longitude": 6.230885,
+   "latitude": 49.791614
+  },
+  {
+   "register_id": 119,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "C de Branebësch",
+   "commune": "Lenningen",
+   "longitude": 6.352855,
+   "latitude": 49.5933778
+  },
+  {
+   "register_id": 120,
+   "species": "Castanea sativa",
+   "designation_reason": "dendrologique",
+   "locality": "F des Fermes",
+   "commune": "Lenningen",
+   "longitude": 6.3147847,
+   "latitude": 49.5913287
+  },
+  {
+   "register_id": 121,
+   "species": "Prunus avium",
+   "designation_reason": "paysager",
+   "locality": "F des Fermes",
+   "commune": "Lenningen",
+   "longitude": 6.3174447,
+   "latitude": 49.5928087
+  },
+  {
+   "register_id": 122,
+   "species": "Quercus sp.",
+   "designation_reason": "biologique / morphologique",
+   "locality": "A de Leudelange",
+   "commune": "Leudelange",
+   "longitude": 6.0462681,
+   "latitude": 49.5819729
+  },
+  {
+   "register_id": 123,
+   "species": "Fagus sylvatica",
+   "designation_reason": "historique / commémoratif",
+   "locality": "A de Leudelange",
+   "commune": "Leudelange",
+   "longitude": 6.0840056,
+   "latitude": 49.5736445
+  },
+  {
+   "register_id": 124,
+   "species": "Gingko biloba",
+   "designation_reason": "dendrologique / historique",
+   "locality": "EE d'Eich",
+   "commune": "Luxembourg",
+   "longitude": 6.1305585,
+   "latitude": 49.627336
+  },
+  {
+   "register_id": 125,
+   "species": "Castanea sativa",
+   "designation_reason": "dendrologique",
+   "locality": "HaA de Hamm",
+   "commune": "Luxembourg",
+   "longitude": 6.1969437,
+   "latitude": 49.6104888
+  },
+  {
+   "register_id": 126,
+   "species": "Acer pseudoplatanus",
+   "designation_reason": "paysager / biologique",
+   "locality": "HoA de Hollerich",
+   "commune": "Luxembourg",
+   "longitude": 6.1221635,
+   "latitude": 49.6052781
+  },
+  {
+   "register_id": 127,
+   "species": "Acer pseudoplatanus",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "LB de Pfaffenthal",
+   "commune": "Luxembourg",
+   "longitude": 6.1349701,
+   "latitude": 49.6118458
+  },
+  {
+   "register_id": 128,
+   "species": "Fagus sylvatica",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "LF de la Ville Haute",
+   "commune": "Luxembourg",
+   "longitude": 6.1277496,
+   "latitude": 49.6091283
+  },
+  {
+   "register_id": 129,
+   "species": "Fagus sylvatica",
+   "designation_reason": "paysager",
+   "locality": "LF de la Ville Haute",
+   "commune": "Luxembourg",
+   "longitude": 6.12881,
+   "latitude": 49.6154403
+  },
+  {
+   "register_id": 130,
+   "species": "Sequoiadendron giganteum",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "LF de la Ville Haute",
+   "commune": "Luxembourg",
+   "longitude": 6.124494,
+   "latitude": 49.6138924
+  },
+  {
+   "register_id": 131,
+   "species": "Sequoiadendron giganteum",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "LF de la Ville Haute",
+   "commune": "Luxembourg",
+   "longitude": 6.1246461,
+   "latitude": 49.6140363
+  },
+  {
+   "register_id": 132,
+   "species": "Juglans regia",
+   "designation_reason": "paysager/dendrologique/historique",
+   "locality": "LF de la Ville Haute",
+   "commune": "Luxembourg",
+   "longitude": 6.121498,
+   "latitude": 49.6067883
+  },
+  {
+   "register_id": 133,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager/dendrologique/historique",
+   "locality": "LF de la Ville Haute",
+   "commune": "Luxembourg",
+   "longitude": 6.1213597,
+   "latitude": 49.6066714
+  },
+  {
+   "register_id": 134,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "LF de la Ville Haute",
+   "commune": "Luxembourg",
+   "longitude": 6.131524,
+   "latitude": 49.6129867
+  },
+  {
+   "register_id": 135,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager",
+   "locality": "LF de la Ville Haute",
+   "commune": "Luxembourg",
+   "longitude": 6.1280632,
+   "latitude": 49.6148557
+  },
+  {
+   "register_id": 136,
+   "species": "Quercus robur",
+   "designation_reason": "morphologique",
+   "locality": "RA de Rollingergrund",
+   "commune": "Luxembourg",
+   "longitude": 6.1044304,
+   "latitude": 49.6351019
+  },
+  {
+   "register_id": 137,
+   "species": "Quercus robur",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Mamer-Sud",
+   "commune": "Mamer",
+   "longitude": 6.0032883,
+   "latitude": 49.6196283
+  },
+  {
+   "register_id": 138,
+   "species": "Acer pseudoplatanus",
+   "designation_reason": "dendrologique",
+   "locality": "B de Manternach",
+   "commune": "Manternach",
+   "longitude": 6.4378145,
+   "latitude": 49.7095173
+  },
+  {
+   "register_id": 139,
+   "species": "Aesculus carnea",
+   "designation_reason": "paysager / biologique / historique",
+   "locality": "B de Manternach",
+   "commune": "Manternach",
+   "longitude": 6.4236369,
+   "latitude": 49.7079671
+  },
+  {
+   "register_id": 140,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / morphologique",
+   "locality": "D de Beringen",
+   "commune": "Mersch",
+   "longitude": 6.1292773,
+   "latitude": 49.7619918
+  },
+  {
+   "register_id": 141,
+   "species": "Fagus sylvatica",
+   "designation_reason": "dendrologique",
+   "locality": "E de Rollingen",
+   "commune": "Mersch",
+   "longitude": 6.1418466,
+   "latitude": 49.745695
+  },
+  {
+   "register_id": 142,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager",
+   "locality": "G de Mersch",
+   "commune": "Mersch",
+   "longitude": 6.1063486,
+   "latitude": 49.7509234
+  },
+  {
+   "register_id": 143,
+   "species": "Fagus sylvatica 'purpurea'",
+   "designation_reason": "paysager / historique",
+   "locality": "G de Mersch",
+   "commune": "Mersch",
+   "longitude": 6.1080273,
+   "latitude": 49.751167
+  },
+  {
+   "register_id": 144,
+   "species": "Fagus sylvatica Purpurea",
+   "designation_reason": "paysager",
+   "locality": "B de Wasserbillig",
+   "commune": "Mertert",
+   "longitude": 6.5001926,
+   "latitude": 49.717941
+  },
+  {
+   "register_id": 145,
+   "species": "Taxus baccata",
+   "designation_reason": "dendrologique",
+   "locality": "C de Mertert",
+   "commune": "Mertert",
+   "longitude": 6.476495,
+   "latitude": 49.7006004
+  },
+  {
+   "register_id": 146,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / historique",
+   "locality": "A de Mertzig",
+   "commune": "Mertzig",
+   "longitude": 6.0035143,
+   "latitude": 49.8327292
+  },
+  {
+   "register_id": 147,
+   "species": "Acer pseudoplatanus",
+   "designation_reason": "paysager / historique",
+   "locality": "B de Mondorf-les-Bains",
+   "commune": "Mondorf-les-Bains",
+   "longitude": 6.2810232,
+   "latitude": 49.5019413
+  },
+  {
+   "register_id": 148,
+   "species": "Ginkgo biloba",
+   "designation_reason": "paysager / biologique",
+   "locality": "B de Mondorf-les-Bains",
+   "commune": "Mondorf-les-Bains",
+   "longitude": 6.2809264,
+   "latitude": 49.5018694
+  },
+  {
+   "register_id": 149,
+   "species": "Quercus robur",
+   "designation_reason": "paysager",
+   "locality": "B de Mondorf-les-Bains",
+   "commune": "Mondorf-les-Bains",
+   "longitude": 6.2780706,
+   "latitude": 49.5088493
+  },
+  {
+   "register_id": 150,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / historique",
+   "locality": "B de Senningen",
+   "commune": "Niederanven",
+   "longitude": 6.236732,
+   "latitude": 49.6460221
+  },
+  {
+   "register_id": 151,
+   "species": "Calocedrus decurrens",
+   "designation_reason": "historique",
+   "locality": "B de Senningen",
+   "commune": "Niederanven",
+   "longitude": 6.23633,
+   "latitude": 49.6457077
+  },
+  {
+   "register_id": 152,
+   "species": "Sequoiadendron giganteum",
+   "designation_reason": "biologique / historique",
+   "locality": "B de Senningen",
+   "commune": "Niederanven",
+   "longitude": 6.2343789,
+   "latitude": 49.6465809
+  },
+  {
+   "register_id": 153,
+   "species": "Sequoia sempervirens",
+   "designation_reason": "biologique / historique",
+   "locality": "B de Senningen",
+   "commune": "Niederanven",
+   "longitude": 6.2360114,
+   "latitude": 49.6456179
+  },
+  {
+   "register_id": 154,
+   "species": "Tilia platyphyllus",
+   "designation_reason": "historique",
+   "locality": "B de Senningen",
+   "commune": "Niederanven",
+   "longitude": 6.2372871,
+   "latitude": 49.6468939
+  },
+  {
+   "register_id": 155,
+   "species": "Cedrus atlantica",
+   "designation_reason": "biologique / historique",
+   "locality": "B de Senningen",
+   "commune": "Niederanven",
+   "longitude": 6.2364687,
+   "latitude": 49.6458964
+  },
+  {
+   "register_id": 156,
+   "species": "Tilia platyphyllos",
+   "designation_reason": "paysager",
+   "locality": "C d'Oberanven",
+   "commune": "Niederanven",
+   "longitude": 6.2319711,
+   "latitude": 49.6581626
+  },
+  {
+   "register_id": 157,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "D d'Ernster",
+   "commune": "Niederanven",
+   "longitude": 6.2581909,
+   "latitude": 49.6741758
+  },
+  {
+   "register_id": 158,
+   "species": "Quercus robur",
+   "designation_reason": "paysager",
+   "locality": "D de Cruchten",
+   "commune": "Nommern",
+   "longitude": 6.1235248,
+   "latitude": 49.8000565
+  },
+  {
+   "register_id": 159,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "E de Niederglabach",
+   "commune": "Nommern",
+   "longitude": 6.1544346,
+   "latitude": 49.7844202
+  },
+  {
+   "register_id": 160,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / historique",
+   "locality": "HdA de Hoscheid",
+   "commune": "Parc Hosingen",
+   "longitude": 6.0792982,
+   "latitude": 49.945751
+  },
+  {
+   "register_id": 161,
+   "species": "Tilia platyphyllos",
+   "designation_reason": "paysager",
+   "locality": "HnB d'Obereisenbach",
+   "commune": "Parc Hosingen",
+   "longitude": 6.142113,
+   "latitude": 50.0086426
+  },
+  {
+   "register_id": 162,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "HnF de Bockholtz",
+   "commune": "Parc Hosingen",
+   "longitude": 6.0441295,
+   "latitude": 50.0074922
+  },
+  {
+   "register_id": 163,
+   "species": "Tilia sp",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Putscheid",
+   "commune": "Putscheid",
+   "longitude": 6.1416232,
+   "latitude": 49.9590783
+  },
+  {
+   "register_id": 164,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "E de Nachtmanderscheid",
+   "commune": "Putscheid",
+   "longitude": 6.1276409,
+   "latitude": 49.9476385
+  },
+  {
+   "register_id": 165,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "AA d'Arsdorf",
+   "commune": "Rambrouch",
+   "longitude": 5.8606603,
+   "latitude": 49.8625761
+  },
+  {
+   "register_id": 166,
+   "species": "Tilia sp.",
+   "designation_reason": "historique",
+   "locality": "BA de Bigonville",
+   "commune": "Rambrouch",
+   "longitude": 5.7876272,
+   "latitude": 49.855644
+  },
+  {
+   "register_id": 167,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "BA de Bigonville",
+   "commune": "Rambrouch",
+   "longitude": 5.7922987,
+   "latitude": 49.8485835
+  },
+  {
+   "register_id": 168,
+   "species": "Acer pseudoplatanus",
+   "designation_reason": "paysager",
+   "locality": "PB de Perlé",
+   "commune": "Rambrouch",
+   "longitude": 5.7676455,
+   "latitude": 49.8082229
+  },
+  {
+   "register_id": 169,
+   "species": "Fagus sylvatica",
+   "designation_reason": "paysager / historique",
+   "locality": "PC de Wolwelange",
+   "commune": "Rambrouch",
+   "longitude": 5.7790592,
+   "latitude": 49.8315566
+  },
+  {
+   "register_id": 170,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager",
+   "locality": "C d'Ospern",
+   "commune": "Redange/Attert",
+   "longitude": 5.9014959,
+   "latitude": 49.7836847
+  },
+  {
+   "register_id": 171,
+   "species": "Tilia cordata",
+   "designation_reason": "paysager / historique",
+   "locality": "D de Redange",
+   "commune": "Redange/Attert",
+   "longitude": 5.8880292,
+   "latitude": 49.7639633
+  },
+  {
+   "register_id": 172,
+   "species": "Juglans regia",
+   "designation_reason": "paysager",
+   "locality": "E de Crauthem",
+   "commune": "Roeser",
+   "longitude": 6.1448291,
+   "latitude": 49.5354241
+  },
+  {
+   "register_id": 173,
+   "species": "Salix sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "A de Bivange",
+   "commune": "Roeser",
+   "longitude": 6.1446837,
+   "latitude": 49.5512305
+  },
+  {
+   "register_id": 174,
+   "species": "Tilia cordata",
+   "designation_reason": "paysager / historique",
+   "locality": "RC de Hinkel",
+   "commune": "Rosport-Mompach",
+   "longitude": 6.4979527,
+   "latitude": 49.7842007
+  },
+  {
+   "register_id": 175,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "RF d'Osweiler-Est",
+   "commune": "Rosport-Mompach",
+   "longitude": 6.4422393,
+   "latitude": 49.7884101
+  },
+  {
+   "register_id": 176,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "RF d'Osweiler-Est",
+   "commune": "Rosport-Mompach",
+   "longitude": 6.4423643,
+   "latitude": 49.7884098
+  },
+  {
+   "register_id": 177,
+   "species": "Abies pinsapo",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "A de Rumelange",
+   "commune": "Rumelange",
+   "longitude": 6.0346194,
+   "latitude": 49.4613529
+  },
+  {
+   "register_id": 178,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "A de Rumelange",
+   "commune": "Rumelange",
+   "longitude": 6.0247532,
+   "latitude": 49.4625101
+  },
+  {
+   "register_id": 179,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "C de Saeul",
+   "commune": "Saeul",
+   "longitude": 5.9817383,
+   "latitude": 49.7333218
+  },
+  {
+   "register_id": 180,
+   "species": "Prunus avium",
+   "designation_reason": "paysager / biologique",
+   "locality": "C de Saeul",
+   "commune": "Saeul",
+   "longitude": 5.9825553,
+   "latitude": 49.7300324
+  },
+  {
+   "register_id": 181,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "D de Calmus",
+   "commune": "Saeul",
+   "longitude": 5.9667506,
+   "latitude": 49.7248814
+  },
+  {
+   "register_id": 182,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "D de Calmus",
+   "commune": "Saeul",
+   "longitude": 5.9611876,
+   "latitude": 49.7252582
+  },
+  {
+   "register_id": 183,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "A de Sanem",
+   "commune": "Sanem",
+   "longitude": 5.9263731,
+   "latitude": 49.5435284
+  },
+  {
+   "register_id": 184,
+   "species": "Salix sp.",
+   "designation_reason": "paysager",
+   "locality": "A de Sanem",
+   "commune": "Sanem",
+   "longitude": 5.9593418,
+   "latitude": 49.5434035
+  },
+  {
+   "register_id": 185,
+   "species": "Fagus sylvatica x pendula",
+   "designation_reason": "paysager / biologique / historique",
+   "locality": "A de Sanem",
+   "commune": "Sanem",
+   "longitude": 5.9263342,
+   "latitude": 49.5429979
+  },
+  {
+   "register_id": 186,
+   "species": "Salix caprea",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Soleuvre",
+   "commune": "Sanem",
+   "longitude": 5.9275369,
+   "latitude": 49.5259352
+  },
+  {
+   "register_id": 187,
+   "species": "Salix alba 'sericea'",
+   "designation_reason": "paysager / biologique / dendrologique",
+   "locality": "B de Soleuvre",
+   "commune": "Sanem",
+   "longitude": 5.9224808,
+   "latitude": 49.5177876
+  },
+  {
+   "register_id": 188,
+   "species": "Quercus robur L.",
+   "designation_reason": "morphologique / dendrologique",
+   "locality": "B de Soleuvre",
+   "commune": "Sanem",
+   "longitude": 5.9288264,
+   "latitude": 49.5249129
+  },
+  {
+   "register_id": 189,
+   "species": "Quercus robur",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Soleuvre",
+   "commune": "Sanem",
+   "longitude": 5.9178502,
+   "latitude": 49.5186049
+  },
+  {
+   "register_id": 190,
+   "species": "Quercus petraea",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "BB de Burmerange",
+   "commune": "Schengen",
+   "longitude": 6.3249268,
+   "latitude": 49.485292
+  },
+  {
+   "register_id": 191,
+   "species": "Populus nigra L.",
+   "designation_reason": "paysager / biologique",
+   "locality": "BB de Burmerange",
+   "commune": "Schengen",
+   "longitude": 6.3120976,
+   "latitude": 49.4871969
+  },
+  {
+   "register_id": 192,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "dendrologique / historique",
+   "locality": "RD de Schengen",
+   "commune": "Schengen",
+   "longitude": 6.3660769,
+   "latitude": 49.4705639
+  },
+  {
+   "register_id": 193,
+   "species": "Salix caprea",
+   "designation_reason": "paysager / biologique / dendrologique",
+   "locality": "A de Schifflange",
+   "commune": "Schifflange",
+   "longitude": 6.0104667,
+   "latitude": 49.5085805
+  },
+  {
+   "register_id": 194,
+   "species": "Fagus sylvatica Purpurea",
+   "designation_reason": "paysager / historique",
+   "locality": "B de Munsbach",
+   "commune": "Schuttrange",
+   "longitude": 6.2601467,
+   "latitude": 49.631773
+  },
+  {
+   "register_id": 195,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "B de Greiveldange",
+   "commune": "Stadtbredimus",
+   "longitude": 6.3164267,
+   "latitude": 49.5900768
+  },
+  {
+   "register_id": 196,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "C de Kleinbettingen",
+   "commune": "Steinfort",
+   "longitude": 5.9145241,
+   "latitude": 49.6467113
+  },
+  {
+   "register_id": 197,
+   "species": "Quercus sp.",
+   "designation_reason": "commémoratif",
+   "locality": "C de Heisdorf",
+   "commune": "Steinsel",
+   "longitude": 6.1645221,
+   "latitude": 49.6690687
+  },
+  {
+   "register_id": 198,
+   "species": "Quercus sp.",
+   "designation_reason": "commémoratif",
+   "locality": "C de Heisdorf",
+   "commune": "Steinsel",
+   "longitude": 6.1645775,
+   "latitude": 49.6691406
+  },
+  {
+   "register_id": 199,
+   "species": "Quercus sp.",
+   "designation_reason": "commémoratif",
+   "locality": "C de Heisdorf",
+   "commune": "Steinsel",
+   "longitude": 6.1646467,
+   "latitude": 49.6691856
+  },
+  {
+   "register_id": 200,
+   "species": "Quercus sp.",
+   "designation_reason": "commémoratif",
+   "locality": "C de Heisdorf",
+   "commune": "Steinsel",
+   "longitude": 6.1647021,
+   "latitude": 49.6692305
+  },
+  {
+   "register_id": 201,
+   "species": "Quercus sp.",
+   "designation_reason": "commémoratif",
+   "locality": "C de Heisdorf",
+   "commune": "Steinsel",
+   "longitude": 6.1647714,
+   "latitude": 49.6692845
+  },
+  {
+   "register_id": 202,
+   "species": "Quercus sp.",
+   "designation_reason": "commémoratif",
+   "locality": "C de Heisdorf",
+   "commune": "Steinsel",
+   "longitude": 6.1645082,
+   "latitude": 49.6690237
+  },
+  {
+   "register_id": 203,
+   "species": "Pinus nigra",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "C de Heisdorf",
+   "commune": "Steinsel",
+   "longitude": 6.1355665,
+   "latitude": 49.6737846
+  },
+  {
+   "register_id": 204,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "C de Heisdorf",
+   "commune": "Steinsel",
+   "longitude": 6.1836795,
+   "latitude": 49.6658938
+  },
+  {
+   "register_id": 205,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / historique",
+   "locality": "BA de Landscheid",
+   "commune": "Tandel",
+   "longitude": 6.1284403,
+   "latitude": 49.9237691
+  },
+  {
+   "register_id": 206,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / historique",
+   "locality": "BA de Landscheid",
+   "commune": "Tandel",
+   "longitude": 6.1284681,
+   "latitude": 49.92385
+  },
+  {
+   "register_id": 207,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / commémoratif",
+   "locality": "BD de Bastendorf",
+   "commune": "Tandel",
+   "longitude": 6.1517282,
+   "latitude": 49.911017
+  },
+  {
+   "register_id": 208,
+   "species": "Tilia cordatta",
+   "designation_reason": "paysager",
+   "locality": "BD de Bastendorf",
+   "commune": "Tandel",
+   "longitude": 6.1641897,
+   "latitude": 49.8903577
+  },
+  {
+   "register_id": 209,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "FD de Bettel",
+   "commune": "Tandel",
+   "longitude": 6.2224898,
+   "latitude": 49.9195728
+  },
+  {
+   "register_id": 210,
+   "species": "Fagus sylvatica",
+   "designation_reason": "paysager",
+   "locality": "B de Huldange",
+   "commune": "Troisvierges",
+   "longitude": 6.0106816,
+   "latitude": 50.160727
+  },
+  {
+   "register_id": 211,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "B de Huldange",
+   "commune": "Troisvierges",
+   "longitude": 6.0176675,
+   "latitude": 50.1643772
+  },
+  {
+   "register_id": 212,
+   "species": "Populus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "C de Goedange",
+   "commune": "Troisvierges",
+   "longitude": 6.0157868,
+   "latitude": 50.1438862
+  },
+  {
+   "register_id": 213,
+   "species": "Pyrus communis",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "A de Schandel",
+   "commune": "Useldange",
+   "longitude": 5.9634764,
+   "latitude": 49.7914074
+  },
+  {
+   "register_id": 214,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager",
+   "locality": "A de Schandel",
+   "commune": "Useldange",
+   "longitude": 5.962977,
+   "latitude": 49.7912627
+  },
+  {
+   "register_id": 215,
+   "species": "Quercus robur",
+   "designation_reason": "dendrologique",
+   "locality": "EA de Stegen",
+   "commune": "Vallée de l'Ernz",
+   "longitude": 6.1904624,
+   "latitude": 49.8305229
+  },
+  {
+   "register_id": 216,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager",
+   "locality": "EB de Folkendange",
+   "commune": "Vallée de l'Ernz",
+   "longitude": 6.1979318,
+   "latitude": 49.8394488
+  },
+  {
+   "register_id": 217,
+   "species": "Cormus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "EB de Folkendange",
+   "commune": "Vallée de l'Ernz",
+   "longitude": 6.198196,
+   "latitude": 49.8395297
+  },
+  {
+   "register_id": 218,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "MC de Savelborn",
+   "commune": "Vallée de l'Ernz",
+   "longitude": 6.2566692,
+   "latitude": 49.8112776
+  },
+  {
+   "register_id": 219,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager",
+   "locality": "MD de Pletschette",
+   "commune": "Vallée de l'Ernz",
+   "longitude": 6.2468268,
+   "latitude": 49.8161488
+  },
+  {
+   "register_id": 220,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager / historique",
+   "locality": "B de Vianden",
+   "commune": "Vianden",
+   "longitude": 6.2004721,
+   "latitude": 49.9353236
+  },
+  {
+   "register_id": 221,
+   "species": "Pseudotsuga menziesii",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "B de Vianden",
+   "commune": "Vianden",
+   "longitude": 6.205874,
+   "latitude": 49.9321932
+  },
+  {
+   "register_id": 222,
+   "species": "Salix sp.",
+   "designation_reason": "paysager",
+   "locality": "B de Vichten",
+   "commune": "Vichten",
+   "longitude": 5.9927388,
+   "latitude": 49.8066135
+  },
+  {
+   "register_id": 223,
+   "species": "Fraxinus excelsior",
+   "designation_reason": "paysager / biologique",
+   "locality": "WE de Buschrodt",
+   "commune": "Groussbus-Wal",
+   "longitude": 5.9318106,
+   "latitude": 49.8318685
+  },
+  {
+   "register_id": 224,
+   "species": "Crataegus sp.",
+   "designation_reason": "morphologique / dendrologique",
+   "locality": "B de Waldbillig",
+   "commune": "Waldbillig",
+   "longitude": 6.2946817,
+   "latitude": 49.7901319
+  },
+  {
+   "register_id": 225,
+   "species": "Carpinus betulus",
+   "designation_reason": "dendrologique",
+   "locality": "B de Walferdange",
+   "commune": "Walferdange",
+   "longitude": 6.1394447,
+   "latitude": 49.6511375
+  },
+  {
+   "register_id": 226,
+   "species": "Quercus robur L.",
+   "designation_reason": "paysager / dendrologique / historique",
+   "locality": "A de Syren",
+   "commune": "Weiler-la-Tour",
+   "longitude": 6.2226946,
+   "latitude": 49.5631236
+  },
+  {
+   "register_id": 227,
+   "species": "Fagus sylvatica sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "C de Weiswampach",
+   "commune": "Weiswampach",
+   "longitude": 6.053646,
+   "latitude": 50.1483166
+  },
+  {
+   "register_id": 228,
+   "species": "Pyrus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "D de Breidfeld",
+   "commune": "Weiswampach",
+   "longitude": 6.0622761,
+   "latitude": 50.1237635
+  },
+  {
+   "register_id": 229,
+   "species": "Pyrus sp.",
+   "designation_reason": "biologique / morphologique / dendrologique / historique",
+   "locality": "E de Holler",
+   "commune": "Weiswampach",
+   "longitude": 6.0465301,
+   "latitude": 50.1239011
+  },
+  {
+   "register_id": 230,
+   "species": "Castanea sativa",
+   "designation_reason": "biologique / dendrologique",
+   "locality": "WA de Wiltz",
+   "commune": "Wiltz",
+   "longitude": 5.9376876,
+   "latitude": 49.9673411
+  },
+  {
+   "register_id": 231,
+   "species": "Tilia platyphyllos",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "BB de Crendal",
+   "commune": "Wincrange",
+   "longitude": 5.8958587,
+   "latitude": 50.0565344
+  },
+  {
+   "register_id": 233,
+   "species": "Tilia sp.",
+   "designation_reason": "dendrologique / historique / commémoratif",
+   "locality": "BG de Wincrange",
+   "commune": "Wincrange",
+   "longitude": 5.9188248,
+   "latitude": 50.0520816
+  },
+  {
+   "register_id": 234,
+   "species": "Quercus sp.",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "HC de Hoffelt",
+   "commune": "Wincrange",
+   "longitude": 5.9143593,
+   "latitude": 50.0967268
+  },
+  {
+   "register_id": 235,
+   "species": "Fraxinus excelsior",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "OA d'Allerborn",
+   "commune": "Wincrange",
+   "longitude": 5.861725,
+   "latitude": 50.0331825
+  },
+  {
+   "register_id": 236,
+   "species": "Quercus robur",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "OB de Brachtenbach",
+   "commune": "Wincrange",
+   "longitude": 5.9079645,
+   "latitude": 50.0178496
+  },
+  {
+   "register_id": 237,
+   "species": "Fagus sylvatica Purpurea",
+   "designation_reason": "biologique / historique",
+   "locality": "OE de Niederwampach",
+   "commune": "Wincrange",
+   "longitude": 5.8489707,
+   "latitude": 50.0095305
+  },
+  {
+   "register_id": 238,
+   "species": "Tilia platyphyllos",
+   "designation_reason": "paysager",
+   "locality": "OE de Niederwampach",
+   "commune": "Wincrange",
+   "longitude": 5.840851,
+   "latitude": 50.0096069
+  },
+  {
+   "register_id": 239,
+   "species": "Quercus sp.",
+   "designation_reason": "dendrologique",
+   "locality": "E de Doncols et Sonlez",
+   "commune": "Winseler",
+   "longitude": 5.833653,
+   "latitude": 49.9772748
+  },
+  {
+   "register_id": 240,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager",
+   "locality": "C de Wormeldange",
+   "commune": "Wormeldange",
+   "longitude": 6.4082873,
+   "latitude": 49.6121927
+  },
+  {
+   "register_id": 241,
+   "species": "Aesculus hippocastanum",
+   "designation_reason": "paysager / dendrologique",
+   "locality": "D d'Ehnen",
+   "commune": "Wormeldange",
+   "longitude": 6.3856122,
+   "latitude": 49.6005674
+  },
+  {
+   "register_id": 242,
+   "species": "Populus balsamifera",
+   "designation_reason": "biologique / dendrologique",
+   "locality": "A de Steinfort",
+   "commune": "Steinfort",
+   "longitude": 5.90412,
+   "latitude": 49.665686
+  },
+  {
+   "register_id": 232,
+   "species": "Tilia sp.",
+   "designation_reason": "paysager",
+   "locality": "BD de Doennange et Deiffelt",
+   "commune": "Wincrange",
+   "longitude": 5.9533421,
+   "latitude": 50.058093
+  }
+ ]
+}
