@@ -4017,6 +4017,33 @@
     "tokens": 95000,
     "trees": 4,
     "note": "register cluster (Detwang/Fuchsmuhle/Langenmuhle/Vorbachtal walk) plus one baumkunde.de find; caught one dead register tree and one private-courtyard block via the wikipedia-join technique"
+   },
+   {
+    "target": "coimbra + rothenburg-ob-der-tauber",
+    "kind": "write",
+    "tokens": 74000,
+    "trees": 8,
+    "note": "8 stories, 2 cities, 1 best_time (rob_001 bare silhouette); merged into new city files",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "kauai",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 3,
+    "note": "Old Koloa Town cluster verified (baobab, earpod tree, 1920s Yamamoto monkeypod); below 4-tree floor, stays unpublished, 18 leads recorded",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "luxembourg-city",
+    "kind": "verify",
+    "tokens": 100000,
+    "trees": 4,
+    "note": "Found LU 2025 remarkable-trees register; 4 Ville-Haute cluster trees verified, 2 dead trees caught and blocked before shipping; ready for a write pass",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

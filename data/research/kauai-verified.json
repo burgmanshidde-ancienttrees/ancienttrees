@@ -1,0 +1,74 @@
+[
+  {
+    "id": "kau_001",
+    "name": "The Koloa Baobab",
+    "species": "African Baobab (Adansonia digitata)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Behind Koloa Missionary Church, 3370 Poipu Rd, Koloa, HI 96756 (near the southeast corner of the church yard)",
+      "latitude": 21.9014617,
+      "longitude": -159.4663095,
+      "neighbourhood": "Koloa, Kauai"
+    },
+    "verified_sources": [
+      "https://www.kauaioutdoorcircle.org/kauai-exceptional-tree-list.html",
+      "data/registers/hawaii-exceptional-trees.json (register_id 1121, City and County of Honolulu Exceptional Tree register, CC0)"
+    ],
+    "access": "Free. Stands in the yard of a working church; visible/reachable from the church grounds, which are open.",
+    "transport": "In the town of Koloa; walkable from Old Koloa Town, no dedicated transport needed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register (K-5) lists species as 'Adasonia sp.' (typo for Adansonia); the Kauai Arborist Advisory Committee's Oct 2008 Exceptional Tree list (via Kauai Outdoor Circle) independently corroborates it as Adansonia digitata, same locality text ('Behind the Koloa Missionary Church yard near the Southeast corner', TMK 2-8-10-1). No age or girth recorded in either source. The Outdoor Circle also ran it as a 'My Favorite Tree' feature (Dec 2016) with a photo, the most recent confirmation of life found (about 10 years old, so flagged rather than fresh). Coordinates given are the church building itself (geocoded via Nominatim), not the tree; register only says 'behind the yard, near the SE corner', so precision stays approximate. Baobabs are a rare, striking sight on Kauai (African species, not native), which is what makes this remarkable rather than its age."
+  },
+  {
+    "id": "kau_002",
+    "name": "The Koloa Earpod Tree",
+    "species": "Earpod Tree (Enterolobium cyclocarpum)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 725.4,
+    "location": {
+      "address": "In front of Borthwick Kauai Mortuary, 3168 Poipu Rd, Koloa, HI 96756",
+      "latitude": 21.8975557,
+      "longitude": -159.4658551,
+      "neighbourhood": "Koloa, Kauai"
+    },
+    "verified_sources": [
+      "https://www.kauaioutdoorcircle.org/kauai-exceptional-tree-list.html",
+      "data/registers/hawaii-exceptional-trees.json (register_id 1137, City and County of Honolulu Exceptional Tree register, CC0)"
+    ],
+    "access": "Free, visible from the public road in front of the mortuary grounds.",
+    "transport": "In the town of Koloa; walkable from Old Koloa Town, no dedicated transport needed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register (K-8, id 1137) and the Kauai Outdoor Circle's Oct 2008 Exceptional Tree list independently agree: Enterolobium cyclocarpum ('Earpod', also called elephant-ear or monkey-ear tree), '3168 Poipu Road in front of the Kauai Mortuary, Inc.' (register) / 'in front of the Kauai Mortuary' (Outdoor Circle, TMK 2-8-10-45). Register girth 725.4 cm, diameter 231.1 cm (checks out: 725.4/pi = 230.9, consistent), height 54 ft (~16.5 m), vitality 'Excellent' at last assessment; no assessment date given. No age recorded by either source; the species was introduced to Hawaii by Dr. William Hillebrand in the 1850s, which dates the SPECIES' arrival in the islands, not this specific tree, so no age is derived from it (would be a bridge claim). Geocoded the mortuary address via Nominatim; OSM returned two building footprints ~230m apart sharing the same street number, so the pin is the more central of the two and precision stays approximate rather than confirmed. No dated post-2008 sighting found in this pass; flagged for that reason, otherwise a strong, large, genuinely remarkable specimen right on a public road."
+  },
+  {
+    "id": "kau_003",
+    "name": "The Yamamoto Store Monkeypod",
+    "species": "Monkeypod (Albizia saman / Samanea saman)",
+    "age_estimate": "about a century, planted in the 1920s",
+    "age_min": 95,
+    "age_max": 106,
+    "girth_cm": 691.9,
+    "location": {
+      "address": "Old Koloa Town Courtyard, behind the historic Yamamoto Store, beside Waikomo Stream, Koloa, HI 96756",
+      "latitude": 21.9037455,
+      "longitude": -159.4659508,
+      "neighbourhood": "Old Koloa Town, Koloa, Kauai"
+    },
+    "verified_sources": [
+      "https://www.oldkoloa.com/history/the-yamamoto-store/",
+      "data/registers/hawaii-exceptional-trees.json (register_id 1149, City and County of Honolulu Exceptional Tree register, CC0)"
+    ],
+    "access": "Free. Stands in the Old Koloa Town Courtyard, an open-air shopping and dining courtyard on public-facing commercial land.",
+    "transport": "In the centre of Old Koloa Town; walkable, no dedicated transport needed.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register (K-20, id 1149): 'In Koloa behind old Yamamoto Store next to river' (TMK 2-8-07-16), girth 691.9 cm, diameter 220.5 cm (checks: 691.9/pi=220.2, consistent), height 44 ft (~13.4 m), vitality 'Good'. Old Koloa Town's own history page (oldkoloa.com) independently names this exact tree: 'Howard Yamamoto planted the Monkeypod Tree on the Waikomo Stream side [of the store], previously named Koloa Stream' during the early 1920s, when the Yamamoto family ran the general store built in 1898. This is a documented planting date for THIS specimen (not a bridge claim from the district's general history), so age is derived: early-to-mid 1920s planting to 2026 gives roughly 95-106 years, stated broadly as 'about a century'. A separate search result also called it 'the huge Monkeypod tree planted in 1925' as the centrepiece the Old Koloa Town shops now cluster around, consistent with the same tree (the courtyard building is nicknamed the 'Monkeypod Store'). Pin is the Old Koloa Town Courtyard's own named point in OSM/Nominatim, which is the pedestrian plaza around the tree; not a trunk-level fix, so precision stays approximate. This is one of Kauai's best-known individual trees, an actual local landmark people already visit and photograph."
+  }
+]

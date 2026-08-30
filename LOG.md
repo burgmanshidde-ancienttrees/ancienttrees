@@ -9,6 +9,26 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-30 (continuation) - Coimbra and Rothenburg ob der Tauber published; iOS CI fixed; Luxembourg City verified
+
+Rung 2 first: `health.py` flagged the iOS app workflow red since 08-30. The failure was real but not a bug: Hidde's own commit 6658e94a hid the sign-in sheet's typed email route behind a `-show-email` launch flag (Supabase's magic-link mail can't carry a code without custom SMTP he declined), and two UI tests that drive that route directly were never updated. Added `-show-email` to both (`testTheSignInSheetPresents`, `FaultWalk.testABrokenServerDoesNotLeaveTheSignInFormSpinning`); netcheck/conventioncheck/screen-list checks all pass locally, pushed for CI to confirm (this runner has no Xcode to build/test itself).
+
+**Wrote and merged the two verify passes a previous window had left staged.** Dispatched a `write-stories` pass on the already-verified Coimbra and Rothenburg ob der Tauber trees (8 stories, ~9.3k tokens/tree), then hand-assembled both as new city files since there is no city-assembler script.
+
+**Coimbra published, 0 -> 4 trees.** Two Australian imports each near 165 years old (a bunya pine behind the botanical garden's aqueduct arches, a camphor tree on the ESAC college campus and a Tree of the Year 2026 finalist), plus the tallest tree in Europe (a 73-75m karri, Mata Nacional de Vale de Canas) and Portugal's tallest bunya pine beside it. Held cbr_004's access line to an honest hedge rather than a flat claim: the verify pass could not confirm general walk-in access to ESAC's campus (visits are routed through an external-relations office), a quick websearch didn't resolve it either way, so the access field says so plainly and the story says "ask first" rather than asserting free entry.
+
+**Rothenburg ob der Tauber published, 0 -> 4 trees.** All four stand in the Tauber valley below the walled Altstadt, not inside it: a linden with its own 1587 planting date carved into the town wall (rob_001, ~440 years, the site's most directly documented age), two undated Bavarian Naturdenkmal lindens by working mills on the Taubertalweg, and a protected pair of spruces over a waterfall on the W8 waymarked trail. Fixed a species-naming mismatch the writer flagged (rob_002/003 shipped as "Linden (Tilia sp.)", not the canonical "Lime" used everywhere else in the corpus) before merging.
+
+Both cities: `preflight.py` caught a `question_meta` over 155 chars (Rothenburg) and a missing `paid_entry: true` flag (Coimbra's botanical-garden tree) plus stale Germany/Portugal country-page trees-and-cities counts in their meta_description; fixed all four, then build/preflight/qa/superlatives/tree_index clean (qa's sitemap-lastmod NOTE is the standing shallow-clone false positive, confirmed via `git rev-parse --is-shallow-repository`). route_walks.py found nothing new to route for either city yet, since it reads the live feed rather than the local build.
+
+**Kauai verify pass: 3 trees, below the 4-tree floor, stays unpublished.** Old Koloa Town cluster (a baobab, an earpod tree, a documented-1920s monkeypod) from Hawaii's Exceptional Trees register; 18 further leads and 2 blocked (grove/row entries) recorded for a follow-up pass.
+
+**Luxembourg City verify pass: 4 trees, right at the floor, ready for a write pass next.** Found Luxembourg's own 2025 remarkable-trees register (13 communal entries, tree-level coordinates) and matched it against the staged Wikidata candidates; the pass also caught and blocked two dead trees before they could ship (a sequoia felled in March 2026, a hornbeam dead since 2016) that the raw Wikidata list would have passed through as live.
+
+Submissions: none new (53 processed, 0 new, SUPABASE_SERVICE_KEY present). `pagegaps.py`: nothing owed. Logged all four passes to `data/agent-costs.json`. Claims released for coimbra, rothenburg-ob-der-tauber, kauai, luxembourg-city.
+
+FOR HIDDE: nothing blocks. The iOS fix is unverified end-to-end since this runner has no Mac/Xcode; watch the next `ios.yml` run to confirm it goes green. Coimbra's camphor-tree access line is a judgement call under genuine ambiguity (worth a second look if anyone visits ESAC's campus and can report back).
+
 ## 2026-08-30 (night run, continuation) - Finished the standing Coimbra/Rothenburg claims properly; fixed leads.py's READY count
 
 The window's first attempt claimed coimbra and rothenburg-ob-der-tauber for verify passes and quit after 7 minutes without doing the verify work, leaving both claims standing with the register-candidate briefs already staged. This attempt dispatched a proper `verify` pass on each (Coimbra: a compact ICNF cluster under 6km, mostly araucarias and an old camphor tree; Rothenburg: Bavarian Naturdenkmal lindens within 2km of the Altstadt), both still running as this is written.
