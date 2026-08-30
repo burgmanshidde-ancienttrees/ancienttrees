@@ -349,6 +349,53 @@ struct WhenPermissionIsRefused {
         #expect(CameraPicker.source(cameraAvailable: true, authorization: .notDetermined) == .camera)
     }
 
+    /// The camera is THERE and we may not use it, which is the only state that
+    /// earns an explanation. Hidde, 2026-08-30: the camera button must raise the
+    /// message rather than dropping somebody into the gallery without a word.
+    @Test func aRefusedCameraIsWorthExplaining() {
+        #expect(CameraPicker.isRefused(cameraAvailable: true, authorization: .denied))
+        #expect(CameraPicker.isRefused(cameraAvailable: true, authorization: .restricted))
+    }
+
+    /// And the three states that are not a refusal must never raise it. A
+    /// simulator is the loud one: it has no camera, so a sheet saying we are
+    /// not allowed to use it would be a lie on every machine we test on.
+    @Test func nothingElseRaisesTheExplanation() {
+        #expect(!CameraPicker.isRefused(cameraAvailable: true, authorization: .authorized))
+        #expect(!CameraPicker.isRefused(cameraAvailable: true, authorization: .notDetermined))
+        for answer in [AVAuthorizationStatus.authorized, .denied, .notDetermined, .restricted] {
+            #expect(!CameraPicker.isRefused(cameraAvailable: false, authorization: answer),
+                    "a machine with no camera claimed the camera was refused")
+        }
+    }
+
+    /// A permission REFUSED and a fact MISSING are different states and must not
+    /// share a sentence. A screenshot genuinely carries no location; a refused
+    /// library means we were not allowed to read the one it has, and only the
+    /// second person can do anything about it.
+    @Test func theTwoReasonsForAskingWhereItStandsAreDifferentSentences() {
+        let refused = CollectSheet.placeReason(libraryRefused: true)
+        let missing = CollectSheet.placeReason(libraryRefused: false)
+        #expect(refused != missing)
+        #expect(!missing.contains("Allowing photos"),
+                "a photograph with no location was told to change a setting that would not help")
+        #expect(refused.contains("Allowing photos"),
+                "a refused library was not told the one thing that would fix it")
+    }
+
+    /// Every permission the sheet can explain names where the toggle is, because
+    /// openSettingsURLString was measured landing on the ROOT of Settings rather
+    /// than our own page (2026-08-30). Somebody who lands at the top of Settings
+    /// with no path is four steps from the switch and knows none of them.
+    @Test func everyExplanationSaysWhereTheSettingIs() {
+        for which in [Permission.location, .camera, .photos] {
+            #expect(which.path.hasPrefix("Settings"))
+            #expect(which.path.contains("Ancient Trees"))
+            #expect(!which.title.localizedCaseInsensitiveContains("denied"),
+                    "the title blamed the person instead of naming what the app cannot do")
+        }
+    }
+
     /// Every simulator, and any iPad without a rear camera.
     @Test func noCameraAtAllIsTheLibraryWhateverTheAnswerWas() {
         for answer in [AVAuthorizationStatus.authorized, .denied, .notDetermined, .restricted] {
