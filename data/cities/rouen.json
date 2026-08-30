@@ -2,12 +2,29 @@
   "city": "Rouen",
   "country": "France",
   "status": "needs_curation",
-  "intro": "",
-  "meta_description": "",
-  "question_answer": "",
-  "question_meta": "",
-  "question_context": "",
-  "faq": [],
+  "intro": "Rouen keeps its best trees outside the city. Three state forests ring it, Roumare, the Foret Verte and La Londe-Rouvray, and in 2019 the metropole, the forestry office and the A.R.B.R.E.S. association picked thirteen trees and groups out of them and gave each a panel. Eleven of the twelve here come from that trail: a beech whose branches have fused into rungs, hornbeams leaning over a pond, young beeches growing through castle ruins above the Seine. All are free, and all but one, a pine in the botanical garden, need a car.",
+  "meta_description": "Rouen's remarkable trees stand in the free state forests around the city, signposted. Start with the oak whose name outlived the tree that earned it.",
+  "question_answer": "The oldest tree we have mapped around Rouen is the Oak of Madame, a pedunculate oak of more than 150 years standing on the waymarked Petit-Essart circuit in the Foret de La Londe-Rouvray, about 11 kilometres south of the city near Les Essarts. It is free to reach, on a signed walking loop from the Jean Coiffier centre, and the forest register says a local history goes with it, told on a panel beside the trunk.",
+  "question_meta": "The Oak of Madame, over 150 years old, is the oldest tree mapped around Rouen. Where it stands, and eleven more on the city's forest trail.",
+  "question_context": "Rouen is not a city of thousand-year veterans, or at least we have not found one. The trees on the metropole's remarkable-trees trail are mostly between 75 and 150 years old, and the register publishes those ages as bands rather than dates, so several of them overlap and the ranking at the top is closer than it looks. The Oak of Madame carries the highest figure, more than 150 years. Behind it sit a group of beeches at 120 to 150: the Majestic Beech beside the D351 in Roumare, the Beech of the Cotrets in the Foret Verte, the Beeches of the Breteque, and the sessile oak that now carries the name Gadeau de Kerville. That last name is a reminder of what the city lost. The oak that originally held it was several centuries old and was uprooted in the storm that went through Normandy in December 1999, and the tree standing at the crossroads today is a younger successor. If you know an older tree in or around Rouen, tell us and it goes on the list.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Rouen?",
+      "a": "The Oak of Madame, a pedunculate oak of more than 150 years on the Petit-Essart circuit in the Foret de La Londe-Rouvray. Rouen's registered trees are mostly a century to a century and a half old rather than ancient."
+    },
+    {
+      "q": "Are Rouen's remarkable trees free to visit?",
+      "a": "All twelve. The forest trees stand in state forests managed by the ONF, open at all times with no ticket, and the Turkish pine is in the Jardin des Plantes, a free municipal botanical garden."
+    },
+    {
+      "q": "Can you reach them without a car?",
+      "a": "One of them easily: the pine in the Jardin des Plantes is a walk or a short tram ride from the centre. The Oak of Madame can be walked to from Oissel through the Vallee du Catelier. For the other ten, no bus goes near the forest and you will want a car."
+    },
+    {
+      "q": "What is the arbres remarquables trail?",
+      "a": "A set of thirteen trees and groups across the three forests around Rouen, designated in 2019 by Metropole Rouen Normandie, the ONF and the A.R.B.R.E.S. association. Each one has an interpretive panel on site and directions from a named car park."
+    }
+  ],
   "trees": [
     {
       "id": "rou_005",
@@ -87,7 +104,7 @@
         "longitude": 1.0771,
         "neighbourhood": "Jardin des Plantes, Rive Gauche, Rouen"
       },
-      "story": "In June 2021 the city of Rouen put a pine tree on crutches. Its gardeners built a support structure under the crown because the tree was at risk of coming down, and the announcement explained why it was worth the trouble: a Pinus brutia over 120 years old, a species from Asia Minor and the Black Sea coast that the city describes as unique in the region because it does not normally grow this far north. Rouen calls it the pin de Calabre. In English the same tree is usually the Turkish pine, and the two names have been arguing about its origins for a couple of centuries.\n\nThat age comes from the city's own statement and we have found no second source confirming it, which is worth saying plainly rather than dressing up.\n\nIt is also the only tree on this list you can reach without a car: the Jardin des Plantes is a free municipal botanical garden on the left bank, open daily, a short walk from the tram. The garden covers eight hectares and we cannot yet say which path the pine stands on, so expect to hunt a little. If you find it, tell us where.",
+      "story": "In June 2021 the city of Rouen put a pine tree on crutches. Its gardeners built a support structure under the crown because the tree was at risk of coming down, and the announcement explained why it was worth the trouble: a Pinus brutia over 120 years old, a species from Asia Minor and the Black Sea coast that the city describes as unique in the region because it does not normally grow this far north. Rouen calls it the pin de Calabre. In English the same species is usually called the Turkish pine.\n\nThat age comes from the city's own statement and we have found no second source confirming it, which is worth saying plainly rather than dressing up.\n\nIt is also the only tree on this list you can reach without a car: the Jardin des Plantes is a free municipal botanical garden on the left bank, open daily, a short walk from the tram. The garden covers eight hectares and we cannot yet say which path the pine stands on, so expect to hunt a little. If you find it, tell us where.",
       "verified_sources": [
         "http://web.archive.org/web/20210610223320/https://rouen.fr/breve/2021/06/sauvetage-dun-arbre-remarquable-au-jardin-plantes",
         "https://en.wikipedia.org/wiki/Jardin_des_Plantes_de_Rouen"
@@ -118,7 +135,7 @@
         "longitude": 1.0111609,
         "neighbourhood": "Foret de La Londe-Rouvray, near Orival / Les Essarts, overlooking the Seine"
       },
-      "story": "Several beech trunks have come up inside the walls of a ruined castle, and the walls are losing. The forest register describes them as imbriques, interwoven, with the remains of the chateau de la Roche Fouet on the hillside above the Seine near Orival, which is the whole reason to walk up here. What the stone was before it fell we cannot yet tell you: the ruins are named by the register and nothing more, and the local archaeology deserves a better source than we have found.\n\nThe trees themselves are young. Forty to sixty years, by the register's estimate, which makes them the youngest on this page by a wide margin, and slender with it: 22 metres of height on trunks around 40 centimetres through, the shape a beech takes when it grows up crowded and races everything around it for the light. This is not a veteran to stand under in awe. It is a group of ordinary young beeches in a genuinely strange place, which is a different pleasure.\n\nThe Troglodytes circuit runs past it, waymarked, free, through the Orival hillside above the river. The path climbs and drops; wear proper shoes.",
+      "story": "Several beech trunks have come up inside the walls of a ruined castle, and the walls are losing. The forest register describes them as imbriques, interwoven, with the remains of the chateau de la Roche Fouet on the hillside above the Seine near Orival, which is the whole reason to walk up here. What the stone was before it fell we cannot yet tell you: the ruins are named by the register and nothing more, and the local archaeology deserves a better source than we have found.\n\nThe trees themselves are young. Forty to sixty years, by the register's estimate, which puts them level with the Five Brothers as the youngest trees on this page, and slender with it: 22 metres of height on trunks around 40 centimetres through, the shape a beech takes when it grows up crowded and races everything around it for the light. This is not a veteran to stand under in awe. It is a group of ordinary young beeches in a genuinely strange place, which is a different pleasure.\n\nThe Troglodytes circuit runs past it, waymarked, free, through the Orival hillside above the river. The path climbs and drops; wear proper shoes.",
       "verified_sources": [
         "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/LLR/h_roche_fouet.pdf",
         "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
@@ -242,7 +259,7 @@
         "longitude": 1.057819,
         "neighbourhood": "Foret de La Londe-Rouvray, near Oissel / Les Essarts"
       },
-      "story": "This oak's story exists in exactly one place, and it is bolted to a post beside the trunk. The forest register mentions it in a single line, ce chene a une histoire locale a decouvrir sur le pupitre, this oak has a local history to be discovered on the panel, and then declines to repeat it. Which Madame the tree is named for, and what she did here, we cannot tell you. If you walk out and read the panel, photograph it and send it in, and this paragraph gets better.\n\nThe measurable part: a pedunculate oak of more than 150 years, 105 centimetres across the foot of the trunk, which is around three and a third metres round down there. On the ages we have, that makes it the oldest tree on this page, in a city whose registered trees are mostly a century or so old.\n\nIt stands on the Petit-Essart circuit in the Foret de La Londe-Rouvray, a waymarked loop rather than a forest track, about 11 kilometres south of the city. Park at the Jean Coiffier centre in Les Essarts, or walk up from Oissel through the Vallee du Catelier. The path climbs and drops, so take real shoes.",
+      "story": "This oak's story exists in exactly one place, and it is bolted to a post beside the trunk. The forest register mentions it in a single line, ce chene a une histoire locale a decouvrir sur le pupitre, this oak has a local history to be discovered on the panel, and then declines to repeat it. Which Madame the tree is named for, and what she did here, we cannot tell you. If you walk out and read the panel, photograph it and send it in, and this paragraph gets better.\n\nThe measurable part: a pedunculate oak of more than 150 years, 105 centimetres across the foot of the trunk, which is around three and a third metres round down there. On the ages we have, that makes it the oldest tree we have mapped around Rouen, in a city whose registered trees are mostly a century or so old.\n\nIt stands on the Petit-Essart circuit in the Foret de La Londe-Rouvray, a waymarked loop rather than a forest track, about 11 kilometres south of the city. Park at the Jean Coiffier centre in Les Essarts, or walk up from Oissel through the Vallee du Catelier. The path climbs and drops, so take real shoes.",
       "verified_sources": [
         "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/LLR/chene_a_madame.pdf",
         "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
@@ -273,7 +290,7 @@
         "longitude": 1.0932513,
         "neighbourhood": "Foret Verte, near Bois-Guillaume/Houppeville"
       },
-      "story": "Thirty-nine metres in about fifty years. That is the whole case for these firs, and it is a good one: they are among the youngest trees on this page, roughly the age of a mid-career adult, and they are already taller than almost everything around them. Work it out and the crown has gone up something like three quarters of a metre a year, every year, without a pause.\n\nAbies grandis is not a French tree. It comes from the Pacific Northwest, from Oregon and British Columbia, where it grows in high rainfall and grows fast, and European foresters have planted it since the 19th century for exactly the behaviour on display here. The trunk is 110 centimetres through at the base.\n\nLes cinq freres, the five brothers, is the local name, and the register does not actually say how many stems there are or whether they are fused at the foot or simply five trees that came up together. Nobody in this pass has stood underneath to check. If you get there first, tell us what you see.\n\nThey stand a short way inside parcelle 73, among broadleaf trees, which is what makes the height obvious.",
+      "story": "Thirty-nine metres in about fifty years. That is the whole case for these firs, and it is a good one: they are among the youngest trees on this page, about fifty years old, and they are already taller than almost everything around them. Work it out and the crown has gone up something like three quarters of a metre a year, every year, without a pause.\n\nAbies grandis is not a French tree. It comes from the Pacific Northwest, from Oregon and British Columbia, where it grows in high rainfall and grows fast, and European foresters have planted it since the 19th century for exactly the behaviour on display here. The trunk is 110 centimetres through at the base.\n\nLes cinq freres, the five brothers, is the local name, and the register does not actually say how many stems there are or whether they are fused at the foot or simply five trees that came up together. Nobody in this pass has stood underneath to check. If you get there first, tell us what you see.\n\nThey stand a short way inside parcelle 73, among broadleaf trees, which is what makes the height obvious.",
       "verified_sources": [
         "https://sigapp.metropole-rouen-normandie.fr/files/s/arbres/descriptifs/VERTE/cinq_freres.pdf",
         "https://www.onf.fr/vivre-la-foret/activites-et-loisirs-en-foret/+/1292::arbres-remarquables-en-forets-domaniales-de-la-londe-rouvray-roumare-et-verte.html"
