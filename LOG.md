@@ -69,6 +69,17 @@ Cortile del Leccio holm oak on an age_max of 250, which is the top of a
 disagreement our own notes record rather than a measurement. Both got an explicit
 `oldest_tree_id` instead of an invented age_max.
 
+**FOR HIDDE, one thing I did not touch: the iOS gate has been red since 17:51
+today and it is not the tree work.** Nothing under `ios/` was changed tonight.
+Four consecutive failures including the scheduled 19:38 run, and the failure is
+always the same and always in the same place: `appfit.py`'s `xcodebuild test`
+hangs past twenty minutes running SweepFrames on the iPhone SE and gets killed.
+That is the timeout the workflow added on purpose so a hang fails fast instead
+of eating the 110-minute job, so the guard is working and the thing it is
+guarding is stuck. The last green run was 17:51. This needs a session at a Mac
+with the simulator and a worktree, per the app rules, so it is left for one
+rather than guessed at from here.
+
 Three deploys, the middle one red and fixed, all pages looked at rendered. Costs
 in `data/agent-costs.json`: four verify passes and one write pass covering all
 three cities in a single context, 10.8k per tree against the 15k target.
