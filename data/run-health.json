@@ -2678,6 +2678,32 @@
    ],
    "trees": 8,
    "logged": true
+  },
+  {
+   "started": "2026-08-30T22:13:04+00:00",
+   "date": "2026-08-30",
+   "run_id": "33338532177",
+   "minutes": 14.8,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 114,
+   "denials": 13,
+   "denials_source": "permission_denials: Bash(curl), Bash(echo), Bash(for), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(set), Bash(wc)",
+   "ended": "success",
+   "tokens": 19835958,
+   "claims_held": [
+    "lima"
+   ],
+   "commits": 2,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "prague",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
