@@ -1,0 +1,159 @@
+{
+  "city": "Menorca",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Menorca is an island and this is not a walk. Four registered trees spread across it, a car and most of a day between them. The one to plan around is a holm oak of four to five hundred years in its own wood beside the car park for Cala del Pilar, where the Cami de Cavalls comes past. The other three: a pine half again as wide as it is tall at the entrance to Cala Galdana, four plane trees at a hermitage above the port of Mao, and the last of three roadside pines near Ferreries. All free.",
+  "meta_description": "Menorca's four registered trees: a holm oak of 400 to 500 years by the Cala del Pilar car park, and three more across the island. All free.",
+  "question_answer": "The oldest tree on Menorca is the Alzina d'Alfuri de Dalt, a holm oak of roughly 400 to 500 years standing in a wood of old holm oaks beside the car park for Cala del Pilar beach, on the north coast in the municipality of Ciutadella. It is free: park at the beach car park, walk into the adjoining wood, and the Cami de Cavalls coastal path passes the same spot.",
+  "question_meta": "The Alzina d'Alfuri de Dalt, roughly 400 to 500 years old, is Menorca's oldest tree. Where it stands, and three more across the island.",
+  "question_context": "That age comes from the Balearic government's own catalogue of singular trees, which states 400 to 500 years directly rather than calling the tree old and leaving it there, and a second survey of the island's catalogued trees repeats the figure. It is a striking claim for a holm oak in the Balearics, and the tree does not look it: ten metres tall, 3.9 metres round at chest height, wide and low rather than tall. It grows on sandy soil over a fossil dune, in a wood of other centuries-old holm oaks, on land the state expropriated in 1999. Nothing else on the island comes close on age. The other three catalogued trees here are all in the 100 to 150 year range, so the oak leads by three centuries. Go with your eyes open: the register records structural damage, low vitality and dieback in the top of the crown, and no fresher condition check has been published. If you find it in better or worse shape than that, tell us.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Menorca?",
+      "a": "The Alzina d'Alfuri de Dalt, a holm oak of roughly 400 to 500 years beside the car park for Cala del Pilar. The other three trees on this list are between 100 and 150 years old."
+    },
+    {
+      "q": "Are Menorca's remarkable trees free to visit?",
+      "a": "All four. Two stand on public roadside ground, one in a state-owned wood beside a beach car park, and the plane trees belong to the town of Mao. No ticket, no gate and no appointment anywhere on this list."
+    },
+    {
+      "q": "Can you see them without a car?",
+      "a": "Partly. The plane trees at the Ermita de Sant Joan des Verger are a 20 minute walk from central Mao, the summer bus to Cala Galdana stops at the roundabout where the Aleppo pine stands, and the TIB line 54 runs along the road where the stone pine near Ferreries is. Cala del Pilar, and so the oldest tree, has no public transport at all."
+    },
+    {
+      "q": "How long does it take to see all four?",
+      "a": "A day with a car. Cala del Pilar is on the north coast, Cala Galdana on the south, Ferreries in the middle and the hermitage out at the mouth of Mao harbour, which is most of the width of the island."
+    }
+  ],
+  "trees": [
+    {
+      "id": "men_003",
+      "name": "Alzina d'Alfuri de Dalt",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 400-500 years",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": 390,
+      "height_m": 10,
+      "location": {
+        "address": "In the holm oak wood beside the Cala del Pilar car park, Alfuri de Dalt, Ciutadella, Menorca",
+        "latitude": 40.036601,
+        "longitude": 3.972996,
+        "neighbourhood": "Alfuri de Dalt, Ciutadella"
+      },
+      "story": "The oldest tree on Menorca is ten metres tall and stands beside a beach car park. The Balearic catalogue of singular trees puts this holm oak at 400 to 500 years, which is an unusually old and unusually specific figure for a holm oak anywhere in the Balearics, and it has spent those centuries thickening rather than climbing: 3.9 metres round at chest height, 4.1 metres at the foot, and a crown covering about 176 square metres over a trunk you would need three people to reach around.\n\nIt was already a mature tree when the British took Menorca in 1708 and began a century of the island changing hands. It is not alone either. It stands in a wood of centuries-old holm oaks growing on sandy soil over a fossil dune, which is a strange bed for an oak and part of why the land around it was expropriated in 1999 and now belongs to the state.\n\nBe honest with yourself before you go: the register records structural damage, low vitality and a crown that is dying back at the top, and nobody has published a condition check since. Park at Cala del Pilar, walk into the wood beside the car park. The Cami de Cavalls passes the same point.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI550217&id=550217",
+        "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/"
+      ],
+      "access": "Free, standing in a holm oak wood right beside the public car park for Cala del Pilar beach, reached on foot from the parking area or along the Cami de Cavalls coastal path",
+      "transport": "By car from Ciutadella, roughly 20-25 minutes to the Cala del Pilar car park, then a short walk into the adjoining wood; no public transport reaches this car park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Register notes structural damage, low vitality and a declining apical crown; no more recent condition check was found, so 'alive now' is reasonably rather than freshly confirmed.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "men_004",
+      "name": "Platers de l'Ermita de Sant Joan des Verger",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 100-150 years",
+      "age_min": 100,
+      "age_max": 150,
+      "girth_cm": 410,
+      "height_m": 35,
+      "location": {
+        "address": "Beside the Ermita de Sant Joan des Verger, near the mouth of the port of Mao, Menorca",
+        "latitude": 39.895154,
+        "longitude": 4.246477,
+        "neighbourhood": "Sant Joan, Mao"
+      },
+      "story": "Tradition says a king heard mass on this spot in 1287. These trees were not there. Alfons III landed near Mao that year to take Menorca, and local tradition, repeated by the island's own tourist authority and by the tree register, holds that mass was said at the hermitage of Sant Joan des Verger to mark it. Nothing is thought to survive of that medieval building. What stands now is a later chapel, a big stone washtub, a crossing of old field paths, and four plane trees that are 100 to 150 years old, which makes them the newcomers by about six centuries.\n\nAt 31 to 37 metres they also tower over everything else on this page. The register measured them in 2010, with trunks between 2.3 and 4.1 metres round and canopies covering 300 to 400 square metres between them, and noted the roots running visibly out across an old paved area. Verger means market garden, and the fertile plots around here are what gave the place its name.\n\nThe town of Mao owns the site, it is free and open ground, and the walk out from the centre takes about 20 minutes on public tracks near the harbour.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI554073&id=554073",
+        "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/",
+        "https://www.menorca.es/en/Hermitage_Sant_Joan_dels_Vergers/9970"
+      ],
+      "access": "Free, open ground around a small rural hermitage and washhouse, reached on foot along public tracks near Mao harbour (a known walking destination, e.g. via the Cami de sa Font de Sant Simon)",
+      "transport": "On foot or by car from central Mao, roughly 20-25 minutes; no direct public transport to the hermitage itself",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Four trees measured as one group: girth 410cm and height 35m are representative figures from ranges of 2.3-4.1m and 31-37m. The 1287 association is local tradition recorded by the register and menorca.es about the SITE, not a claim about these trees, which are 100 to 150 years old.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "men_002",
+      "name": "Pi de Cala Galdana",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "roughly 100-150 years",
+      "age_min": 100,
+      "age_max": 150,
+      "girth_cm": 390,
+      "height_m": 16,
+      "location": {
+        "address": "Roundabout at the entrance to the Cala Galdana urbanisation, Hort de Binissaid, Ferreries, Menorca",
+        "latitude": 39.939375,
+        "longitude": 3.965906,
+        "neighbourhood": "Cala Galdana, Ferreries"
+      },
+      "story": "This pine's canopy is 25 metres across and the tree itself is only 16 metres tall, so it is half again as wide as it is high. The register explains the shape in one line: it grew without competitors. An Aleppo pine in a wood spends its life racing its neighbours upward. This one had nothing to race, so it went sideways instead, throwing four primary branches out from about two metres up and roofing over some 350 square metres of ground.\n\nIt also has the least likely address on this page. It stands beside the roundabout at the entrance to Cala Galdana, where the road drops down to the cove, and generations of people arriving for the summer have passed it on the way in. The town of Ferreries owns it, and the Balearic government catalogued it in January 2001, measuring the trunk at 3.9 metres round.\n\nThat address makes it the easiest tree on this page to see. You do not have to walk anywhere, the pavement runs past it, and in summer the bus to Cala Galdana stops at the same roundabout. Whether you stop and look up is a different question, which is rather the point of this list.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI551209&id=551209",
+        "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/"
+      ],
+      "access": "Free, stands beside a public roundabout at the resort entrance, visible and reachable from the road/pavement",
+      "transport": "By car from Mao, roughly 30 minutes via Ferreries; the summer TIB bus line to Cala Galdana stops at the same roundabout",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "The register fitxa lists the municipality as 'Ferreries (Mallorca)', an evident slip; every other field places it on Menorca.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "men_001",
+      "name": "Pi Ver del Doctor Camps",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 140,
+      "age_max": 165,
+      "girth_cm": 400,
+      "height_m": 20,
+      "location": {
+        "address": "Roadside of the Me-20, Ferreries to Es Migjorn Gran road, Sa Mola, Ferreries, Menorca",
+        "latitude": 39.972601,
+        "longitude": 4.031857,
+        "neighbourhood": "Sa Mola, Ferreries"
+      },
+      "story": "Three pines were planted here. One is left, and we cannot tell you whether it is still standing. The Balearic register catalogued the group in 1992 and recorded that they had gone in about 120 years earlier, planted by Francesc Camps i Mercadal, the town doctor of Es Migjorn Gran, a folklorist who wrote under the name Marques d'Albranca and died in 1929. One of the three had already died and been felled by the time of that survey. The register's own vitality count then lists one of the remaining pair as dead too, which leaves this one.\n\nIn 2003 it was found seriously affected by an insect pest, and the register says plainly that the infestation was likely to prove fatal eventually. No source since has said what happened. That is why this tree sits at the bottom of the list rather than off it: what was recorded is a stone pine 20 metres tall, four metres round at chest height, with a canopy 18 metres across, on the verge of the Me-20 between Ferreries and Es Migjorn Gran.\n\nIf you drive that road, look at the verge and tell us what is there. A photograph would settle it, and this page would change the same week.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI554069&id=554069",
+        "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/"
+      ],
+      "access": "Free, visible from the roadside verge of a public road (the Me-20); no need to enter any property",
+      "transport": "By car from Mao via Ferreries, roughly 25-30 minutes; no direct public transport, though the TIB line 54 bus (Es Migjorn Gran-Ferreries) runs along the same road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The register records a serious insect infestation in 2003 that it expected to prove fatal, and its own vitality count already lists one of the two surviving specimens as dead. Nothing since confirms the state of the remaining tree. Both sources ultimately trace back to the CAIB register, so the two-source bar is thinly met.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
