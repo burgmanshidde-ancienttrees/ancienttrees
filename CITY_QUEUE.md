@@ -386,7 +386,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 189 | Taormina | 2.35 | 33,169 | - | - | - | 5 | 10 | predicted (travel demand) |
 | 190 | Niagara Falls | 3.68 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 191 | Kuala Lumpur | 3.80 | 191,800 | - | - | - | - | 10 | predicted (travel demand) |
-| 192 | Rothenburg ob der Tauber | 3.08 | 39,879 | 4 | - | - | 8 | 10 | predicted (travel demand) |
+| 192 | Rothenburg ob der Tauber | 3.08 | 39,879 | 4 | - | 1 | 8 | 10 | predicted (travel demand) |
 | 193 | Los Angeles | 3.60 | 665,559 | 8 | 2 | - | - | 10 | published, never ranked (may be uncrawled) |
 | 194 | Verona | 2.16 | 77,646 | 8 | 4 | 1 | 3 | 20 | measured |
 | 195 | Wellington | 3.60 | 132,267 | - | - | - | - | 10 | predicted (travel demand) |
