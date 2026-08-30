@@ -27,6 +27,11 @@
 import Foundation
 import Observation
 
+/// Main-actor isolated, like every store the root holds. See Account.swift for
+/// why: SwiftUI already reads these from the main actor, so the annotation
+/// costs nothing at runtime and makes a background write a compiler error
+/// instead of a data race nobody can reproduce.
+@MainActor
 @Observable
 public final class CatalogueStore {
     public private(set) var catalogue: Catalogue?
@@ -149,7 +154,7 @@ public final class CatalogueStore {
 
     // MARK: - disk
 
-    static var defaultDownloadDirectory: URL? {
+    nonisolated static var defaultDownloadDirectory: URL? {
         guard let base = try? FileManager.default.url(for: .applicationSupportDirectory,
                                                       in: .userDomainMask,
                                                       appropriateFor: nil, create: true)
@@ -157,7 +162,7 @@ public final class CatalogueStore {
         return base.appending(path: "catalogue", directoryHint: .isDirectory)
     }
 
-    private static var bundleURLs: (trees: URL, walks: URL, species: URL?, browse: URL?)? {
+    nonisolated private static var bundleURLs: (trees: URL, walks: URL, species: URL?, browse: URL?)? {
         guard let t = Bundle.main.url(forResource: "trees", withExtension: "json"),
               let w = Bundle.main.url(forResource: "walks", withExtension: "json") else { return nil }
         return (t, w,

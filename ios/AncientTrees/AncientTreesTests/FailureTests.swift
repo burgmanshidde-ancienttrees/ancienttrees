@@ -14,6 +14,9 @@ import Testing
 import Foundation
 @testable import AncientTrees
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 /// ONE serialized suite around both, and the nesting is the point rather than
 /// tidiness. They were two top-level suites for an afternoon, each marked
 /// serialized, and Swift Testing still ran the two of them side by side: the
@@ -24,6 +27,9 @@ import Foundation
 @Suite(.serialized)
 struct WithTheNetworkTakenAway {
 
+    // Nested types do not inherit the enclosing suite's actor, so this says
+    // it again: Account and Saved are main-actor isolated.
+    @MainActor
     struct WhenTheNetworkFails {
 
         private func session(freshness: TimeInterval) -> Session {
@@ -92,6 +98,31 @@ struct WithTheNetworkTakenAway {
             #expect(account.isSignedIn, "a 500 from the server signed the person out")
         }
 
+        /// TWO ASKS AT ONCE MUST BE ONE REQUEST, and the reason is not thrift.
+        ///
+        /// Launch asks three times over: refreshIfNeeded() directly, and
+        /// freshToken() from the profiles load and the moderation load. All
+        /// three used to see the same stale session and post the SAME refresh
+        /// token, and Supabase rotates it. Its reuse window covers a fast
+        /// network and nothing else, so on a slow one the second answer is a
+        /// refusal, and a refusal here is a real sign-out that empties the
+        /// Keychain. A perfectly good session thrown away because the app asked
+        /// politely twice, which is the shape of every "ik was ineens
+        /// uitgelogd" that nobody can reproduce.
+        @Test func twoRefreshesAtOnceOnlyAskOnce() async {
+            Faults.reset(); defer { Faults.reset() }
+            Faults.mode = .server                   // answers, and is not a sign-out
+
+            let account = Account(restoring: session(freshness: 60))
+            async let first = account.refreshIfNeeded()
+            async let second = account.refreshIfNeeded()
+            _ = await (first, second)
+
+            #expect(Faults.sent(to: "grant_type=refresh_token").count == 1,
+                    "two callers spent the same refresh token twice")
+            #expect(account.isSignedIn, "the second ask signed the person out")
+        }
+
         /// A token good for another hour must not cost a request. This is on every
         /// launch, so getting it wrong is a round trip before the first frame.
         @Test func aFreshSessionAsksNobody() async {
@@ -121,6 +152,7 @@ struct WithTheNetworkTakenAway {
         }
     }
 
+    @MainActor
     @Suite(.serialized)
     struct WhenSigningInOnAPhoneThatAlreadyHasTrees {
 

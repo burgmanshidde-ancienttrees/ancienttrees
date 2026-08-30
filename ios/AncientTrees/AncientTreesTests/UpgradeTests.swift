@@ -17,6 +17,9 @@ import Testing
 import Foundation
 @testable import AncientTrees
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 @Suite(.serialized)
 struct WhenTheAppUpdatesUnderneathYou {
 
@@ -93,6 +96,9 @@ struct WhenTheAppUpdatesUnderneathYou {
 ///
 /// These are deliberately literal. If one of them has to change, this test is
 /// where somebody is told to write a migration first.
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 @Suite(.serialized)
 struct TheNamesOnDiskDoNotMove {
 

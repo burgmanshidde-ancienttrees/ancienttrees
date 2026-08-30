@@ -12,6 +12,9 @@ import Testing
 import Foundation
 @testable import AncientTrees
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 struct YourOwnTreesObeyTheFilters {
 
     /// A sighting with whatever the test cares about and nothing else.

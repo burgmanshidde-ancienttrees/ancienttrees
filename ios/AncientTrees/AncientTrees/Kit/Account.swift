@@ -105,6 +105,15 @@ public struct Session: Codable, Sendable, Equatable {
     var isFresh: Bool { expiresAt.timeIntervalSinceNow > 300 }
 }
 
+/// MAIN-ACTOR ISOLATED, like every store the app keeps in the root.
+///
+/// It was not, and it is the one where that hurt: `session` is written by
+/// restore(), by three sign-in routes and by refreshIfNeeded(), and the last of
+/// those runs from whatever background task happened to ask. Two of them at
+/// once is a data race on a class property, which Swift 5 mode compiles without
+/// a word. Isolating it costs an await at three call sites and turns the whole
+/// class of "I was suddenly signed out" into something the compiler can see.
+@MainActor
 @Observable
 public final class Account {
     public enum State: Equatable {
@@ -169,13 +178,6 @@ public final class Account {
         if let d = try? JSONEncoder().encode(s) { TokenStore.save(d) }
     }
 
-    /// Keep the hour-long access token alive off the refresh token.
-    ///
-    /// The website shipped without this and it broke exactly as you would
-    /// expect: an hour after signing in, saves silently stopped reaching the
-    /// account and nothing said so. Doing it here on every launch means the app
-    /// never reaches that state.
-    @discardableResult
     /// A token that will still be accepted, or nil.
     ///
     /// Every write on somebody's behalf goes through here, because reading
@@ -190,12 +192,59 @@ public final class Account {
         return session?.accessToken
     }
 
+    /// The whole session, refreshed first. The two-step version of this
+    /// (`guard await refreshIfNeeded(), let s = session`) is what CloudSync and
+    /// SightingSync each wrote four times, and it reads the property back in a
+    /// second statement, which is a gap another task can change the session in.
+    public func freshSession() async -> Session? {
+        guard await refreshIfNeeded() else { return nil }
+        return session
+    }
+
+    /// The refresh in flight, so there is never more than one.
+    ///
+    /// THE REASON IT MATTERS IS THAT A SECOND ONE CAN SIGN SOMEBODY OUT. Launch
+    /// asks three times at once: this method directly, and freshToken() from
+    /// the profiles load and from the moderation load. All three saw a stale
+    /// token, all three posted the SAME refresh token, and Supabase rotates it.
+    /// Its reuse window covers a fast network and nothing else: past that the
+    /// second answer is a refusal, and a refusal here is read as a real
+    /// sign-out and empties the Keychain. So a perfectly good session could be
+    /// thrown away by the app asking politely twice, on a slow connection,
+    /// which is the shape of every "ik was ineens uitgelogd" that never
+    /// reproduces.
+    ///
+    /// The waiters share one answer instead. Nothing about the outcome changes:
+    /// a refusal is still a sign-out, no signal is still not one.
+    @ObservationIgnored private var refreshTask: Task<Bool, Never>?
+
+    /// Keep the hour-long access token alive off the refresh token.
+    ///
+    /// The website shipped without this and it broke exactly as you would
+    /// expect: an hour after signing in, saves silently stopped reaching the
+    /// account and nothing said so. Doing it here on every launch means the app
+    /// never reaches that state.
+    @discardableResult
     public func refreshIfNeeded() async -> Bool {
         guard let s = session else { return false }
         if s.isFresh { return true }
-        let r = Supa.request("/auth/v1/token?grant_type=refresh_token",
-                             body: ["refresh_token": s.refreshToken])
-        switch await Self.refresh(r) {
+        if let running = refreshTask { return await running.value }
+        let task = Task { @MainActor [refreshToken = s.refreshToken] in
+            // Cleared by the task itself rather than by a waiter: a waiter that
+            // clears it can be the slow one, and by then a later caller may
+            // already have put a new task in.
+            defer { self.refreshTask = nil }
+            let r = Supa.request("/auth/v1/token?grant_type=refresh_token",
+                                 body: ["refresh_token": refreshToken])
+            return self.apply(await Self.refresh(r))
+        }
+        refreshTask = task
+        return await task.value
+    }
+
+    /// The verdict, in one place, so the three outcomes cannot drift apart.
+    private func apply(_ outcome: Refreshed) -> Bool {
+        switch outcome {
         case .ok(let parsed):
             store(parsed)
             return true

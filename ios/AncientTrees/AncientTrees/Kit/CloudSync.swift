@@ -28,7 +28,7 @@ public enum CloudSync {
     /// into what this phone holds, then push the union back.
     @discardableResult
     public static func merge(account: Account, saved: Saved) async -> Int {
-        guard await account.refreshIfNeeded(), let s = account.session else { return 0 }
+        guard let s = await account.freshSession() else { return 0 }
 
         let remoteSaves = await rows("/rest/v1/saves?select=tree_id,created_at", token: s.accessToken)
         let remoteVisited = await rows("/rest/v1/visited?select=tree_id,visited_at", token: s.accessToken)
@@ -59,7 +59,7 @@ public enum CloudSync {
     /// Upsert every local entry. Cheap at these sizes and it is the one call
     /// that makes a phone's existing collection survive a first sign-in.
     public static func pushAll(account: Account, saved: Saved) async {
-        guard await account.refreshIfNeeded(), let s = account.session else { return }
+        guard let s = await account.freshSession() else { return }
         let entries = Array(saved.entries.values)
         guard !entries.isEmpty else { return }
 
@@ -79,7 +79,7 @@ public enum CloudSync {
     /// pushAll rather than shown to anybody, because the local copy is already
     /// correct and the person is standing under a tree.
     public static func push(account: Account, entry: Saved.Entry?, treeId: String) async {
-        guard await account.refreshIfNeeded(), let s = account.session else { return }
+        guard let s = await account.freshSession() else { return }
         guard let entry else {
             await delete("/rest/v1/saves?tree_id=eq.\(treeId)", token: s.accessToken)
             await delete("/rest/v1/visited?tree_id=eq.\(treeId)", token: s.accessToken)

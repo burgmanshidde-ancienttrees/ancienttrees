@@ -21,6 +21,9 @@ private struct Scratch {
     func clean() { UserDefaults.standard.removePersistentDomain(forName: name) }
 }
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 struct TheTwoLists {
 
     /// Hidde, 2026-08-26: "je kunt niet bomen uit je collected halen door ze te
@@ -100,6 +103,9 @@ struct TheTwoLists {
     }
 }
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 struct TheCollectionSurvives {
 
     /// Day thirty, and the second launch. UserDefaults is the whole reason the
