@@ -75,8 +75,22 @@ enum SightingSync {
     /// collection made before signing in survive the first sign-in.
     static func pushAll(account: Account, sightings: Sightings) async {
         guard let s = await account.freshSession() else { return }
+        await pushAll(session: s, sightings: sightings)
+    }
+
+    /// The same, with the session already in hand.
+    ///
+    /// Signing out needs this. It used to await the account-taking version above
+    /// and only then close the door, which meant the button did nothing visible
+    /// while every photograph on the phone went up one at a time, and Hidde
+    /// pressed it twice (2026-08-30: "sign out lijkt soms wel een lag te hebben
+    /// ik druk soms 2 keer voor die t doet"). Taking the session as a value lets
+    /// the sign-out clear its state first and let the upload finish behind it:
+    /// a token stays valid for its own lifetime whether or not we still hold a
+    /// copy in the Keychain.
+    static func pushAll(session s: Session, sightings: Sightings) async {
         for sighting in sightings.all {
-            await push(account: account, sightings: sightings, sighting: sighting)
+            await push(session: s, sightings: sightings, sighting: sighting)
         }
     }
 
@@ -84,6 +98,11 @@ enum SightingSync {
     static func push(account: Account, sightings: Sightings,
                             sighting: Sightings.Sighting) async {
         guard let s = await account.freshSession() else { return }
+        await push(session: s, sightings: sightings, sighting: sighting)
+    }
+
+    static func push(session s: Session, sightings: Sightings,
+                     sighting: Sightings.Sighting) async {
 
         // The photograph first, so a row never points at a file that is not
         // there yet. Uploaded once: the name is the sighting's own id, and a
