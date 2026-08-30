@@ -110,7 +110,7 @@ predictably raises, and gives them a way in that does not need a real email:
 ```
 Ancient Trees is a map of verified remarkable old trees, free to use. There is no paid content and no in-app purchase in this version.
 
-SIGNING IN is by email link, Apple or Google. Nothing in the app requires an account except keeping a collection and sending a correction; the map, every tree and every story work signed out.
+SIGNING IN is with Apple or Google, so you can sign in with your own Apple ID and need no demo account from us. Nothing in the app requires an account except keeping a collection and sending a correction; the map, every tree and every story work signed out.
 
 USER CONTENT: people may set a display name and a profile picture that others can see when searching for somebody to follow. Reporting and blocking are on the three dots beside any person in Find People (My trees, the person icon beside your name). A blocked person is hidden everywhere except your own search for them, where they appear last with an Unblock button, so a block can always be lifted. Reports reach us directly and we act on them. Our terms state there is no tolerance for offensive or impersonating profiles: https://ancienttrees.app/terms
 
