@@ -64,10 +64,53 @@ public final class CatalogueStore {
     /// whether the version changed and the version had not: the phone was up to
     /// date with a file it had never heard of. Falling back per file means a new
     /// feed works on the old download the first time it is asked for.
-    public func loadBundled() {
+    /// OFF THE MAIN THREAD, and the reason is the second caller rather than this
+    /// one.
+    ///
+    /// Reading and decoding a few megabytes of JSON is a hundred milliseconds
+    /// or two on an older phone. At launch that hides behind the opening cover
+    /// and nobody sees it. But refresh() below decodes the same feeds while
+    /// somebody is looking at a live map and may be dragging it, and that one
+    /// is a stutter in the one interaction this app is made of. Both go through
+    /// the same nonisolated worker now, so neither can block a frame.
+    ///
+    /// Everything that TOUCHES this object still happens on the main actor. The
+    /// worker is a pure function of two file locations: it reads, it decodes,
+    /// it hands back an answer, and this method is the only thing that assigns.
+    public func loadBundled() async {
         let dir = downloads
         let bundle = Self.bundleURLs
+        switch await Task.detached(priority: .userInitiated, operation: {
+            Self.readAndDecode(dir: dir, bundle: bundle)
+        }).value {
+        case .ok(let fresh):
+            catalogue = fresh
+            loadError = nil
+        case .fellBackToTheBundle(let fresh):
+            catalogue = fresh
+            loadError = nil
+            // Throw the stale download away. It is a cache of public data,
+            // rebuilt by the next refresh, and leaving it means paying this
+            // failure on every launch: refresh() asks whether the VERSION
+            // changed, and it has not, so nothing would ever replace it.
+            if let dir { try? FileManager.default.removeItem(at: dir) }
+        case .failed(let why):
+            loadError = why
+        }
+    }
 
+    private enum Loaded {
+        case ok(Catalogue)
+        case fellBackToTheBundle(Catalogue)
+        case failed(String)
+    }
+
+    /// The reading and the decoding, with nothing of this object in it, so it
+    /// can run anywhere. The rules it keeps are unchanged and are the three at
+    /// the top of this file.
+    nonisolated private static func readAndDecode(
+        dir: URL?, bundle: (trees: URL, walks: URL, species: URL?, browse: URL?)?
+    ) -> Loaded {
         func read(_ name: String, _ bundled: URL?) -> Data? {
             if let dir, let d = try? Data(contentsOf: dir.appending(path: "\(name).json")) { return d }
             return bundled.flatMap { try? Data(contentsOf: $0) }
@@ -75,16 +118,13 @@ public final class CatalogueStore {
 
         guard let trees = read("trees", bundle?.trees),
               let walks = read("walks", bundle?.walks) else {
-            loadError = "the bundled catalogue is missing from the app"
-            return
+            return .failed("the bundled catalogue is missing from the app")
         }
         do {
-            catalogue = try decode(trees: trees,
-                                   walks: walks,
-                                   species: read("species", bundle?.species),
-                                   browse: read("browse", bundle?.browse))
-            loadError = nil
-            return
+            return .ok(try decode(trees: trees,
+                                  walks: walks,
+                                  species: read("species", bundle?.species),
+                                  browse: read("browse", bundle?.browse)))
         } catch {
             // FALL BACK TO THE BUNDLE, which rule 3 at the top of this file has
             // promised since it was written and did not actually do.
@@ -104,16 +144,9 @@ public final class CatalogueStore {
                                           species: bundle.species.flatMap { try? Data(contentsOf: $0) },
                                           browse: bundle.browse.flatMap { try? Data(contentsOf: $0) })
             else {
-                loadError = "the catalogue would not decode: \(error)"
-                return
+                return .failed("the catalogue would not decode: \(error)")
             }
-            catalogue = fresh
-            loadError = nil
-            // And throw the stale download away. It is a cache of public data,
-            // rebuilt by the next refresh, and leaving it means paying this
-            // failure on every launch: refresh() asks whether the VERSION
-            // changed, and it has not, so nothing would ever replace it.
-            if let dir { try? FileManager.default.removeItem(at: dir) }
+            return .fellBackToTheBundle(fresh)
         }
     }
 
@@ -136,8 +169,12 @@ public final class CatalogueStore {
         let browseData = await fetch(Feed.browse)
         guard let treeData = await fetch(Feed.trees),
               let walkData = await fetch(Feed.walks),
-              let fresh = try? decode(trees: treeData, walks: walkData,
-                                      species: speciesData, browse: browseData)
+              // Decoded off the main thread. This runs while somebody is
+              // looking at the map and possibly dragging it.
+              let fresh = await Task.detached(priority: .utility, operation: {
+                  try? Self.decode(trees: treeData, walks: walkData,
+                                   species: speciesData, browse: browseData)
+              }).value
         else { return }
 
         let before = catalogue?.trees.count ?? 0
@@ -170,7 +207,7 @@ public final class CatalogueStore {
                 Bundle.main.url(forResource: "browse", withExtension: "json"))
     }
 
-    private func decode(trees: Data, walks: Data, species: Data?, browse: Data?) throws -> Catalogue {
+    nonisolated private static func decode(trees: Data, walks: Data, species: Data?, browse: Data?) throws -> Catalogue {
         let dec = JSONDecoder()
         let tf = try dec.decode(TreeFeed.self, from: trees)
         let wf = try dec.decode(WalkFeed.self, from: walks)
