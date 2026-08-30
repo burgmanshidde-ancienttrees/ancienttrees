@@ -396,6 +396,30 @@ struct WhenPermissionIsRefused {
         }
     }
 
+    /// The headline that used to state a number it could not know. With
+    /// location refused, origin falls back to Dam square, so "your first tree is
+    /// 350 m away" was measured from a city this person may never have visited.
+    @Test func theMissionHeadlineDropsTheDistanceRatherThanHedgingIt() {
+        let known = CollectView.missionTitle(locationKnown: true, distance: "350 m")
+        let unknown = CollectView.missionTitle(locationKnown: false, distance: "350 m")
+        #expect(known.contains("350 m"))
+        #expect(!unknown.contains("350 m"),
+                "the headline printed a distance measured from a fallback coordinate")
+        #expect(!unknown.contains("away"),
+                "the headline still implied proximity without a location")
+    }
+
+    /// A photograph's own coordinate survives a refused location perfectly well,
+    /// so the metres are real whenever there is one. They are invented only when
+    /// there is neither a photo coordinate nor a fix.
+    @Test func aCandidateOnlyClaimsMetresItCanActuallyMeasure() {
+        #expect(CollectSheet.candidateLabel(species: "Ginkgo", metres: 80)
+                == "Ginkgo · 80 m")
+        #expect(CollectSheet.candidateLabel(species: "Ginkgo", metres: nil)
+                == "Ginkgo",
+                "a candidate printed a distance from a coordinate we did not have")
+    }
+
     /// Every simulator, and any iPad without a rear camera.
     @Test func noCameraAtAllIsTheLibraryWhateverTheAnswerWas() {
         for answer in [AVAuthorizationStatus.authorized, .denied, .notDetermined, .restricted] {

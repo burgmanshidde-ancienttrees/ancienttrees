@@ -359,6 +359,15 @@ struct ContentView: View {
                     stack(2, cat) { CollectView(catalogue: cat, origin: origin) }
                         .tag(2)
                 }
+                // Whether `origin` is a fix or a fallback, published once for
+                // every screen under here. See LocationOff.swift: origin always
+                // has a value, and printing a distance measured from Dam square
+                // is the one error this product cannot afford.
+                .environment(\.locationState,
+                             LocationState(known: location.coordinate != nil || debugOrigin != nil,
+                                           denied: location.status == .denied
+                                                || location.status == .restricted,
+                                           ask: { location.request() }))
                 // Outline icons that stay outline when selected, colour doing
                 // the selecting (Careem is Hidde's reference; Airbnb does the
                 // same). The .none variant sits on each Label because iOS
