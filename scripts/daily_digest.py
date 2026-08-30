@@ -1155,9 +1155,31 @@ def product_section(today):
                      "worthit-worth it", "worthit-not worth it",
                      "signin-link-sent", "app-cta", "waitlist-submit"):
             last.setdefault(name, None)
-        for name in sorted(last, key=lambda k: (-counts.get(k, 0), k)):
-            out.append("- %-12s %d yesterday, last %s" % (
-                name + ":", counts.get(name, 0), _ago(_days_since(last[name], today))))
+        # A TABLE WITH THE TOTALS, not a list of yesterdays. Hidde, 2026-08-29,
+        # on being told the events table held 102 rows while only 14 were typed
+        # searches: "wat waren 102 events". The list said what happened
+        # yesterday and how long since each, and could not answer what the
+        # thing is MADE of, so a number on the page had no composition behind
+        # it. Three windows side by side answer it at a glance, and the total
+        # is the one that says which actions the product actually consists of.
+        fortnight = (today - datetime.timedelta(days=14)).isoformat()
+        c14, total = {}, {}
+        for r in rows:
+            n = r.get("name") or "?"
+            total[n] = total.get(n, 0) + 1
+            if str(r.get("created_at"))[:10] >= fortnight:
+                c14[n] = c14.get(n, 0) + 1
+        out += ["", "| Action | Yesterday | 14 days | Ever | Last |",
+                "|---|---:|---:|---:|---|"]
+        for name in sorted(last, key=lambda k: (-total.get(k, 0), -counts.get(k, 0), k)):
+            out.append("| %s | %d | %d | %d | %s |" % (
+                name, counts.get(name, 0), c14.get(name, 0), total.get(name, 0),
+                _ago(_days_since(last[name], today))))
+        out.append("| **all** | **%d** | **%d** | **%d** | |" % (
+            sum(counts.values()), sum(c14.values()), sum(total.values())))
+        out.append("- 'Ever' counts every row in the events table, which begins "
+                   "2026-08-01 when the funnel was repaired. Anything named here "
+                   "with a zero has never fired at all.")
         out += searched_for(rows)
 
     # Sign-ups over time, not just a running total. Hidde, 2026-08-10: he wants
