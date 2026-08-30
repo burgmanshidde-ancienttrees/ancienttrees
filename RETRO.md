@@ -7,6 +7,42 @@ has already produced four of them (count promises, species names, register licen
 blocks, flat phenology curves).
 
 
+
+## 2026-08-29 - the opening costs 19 minutes, and that is what kills the short runs
+
+Hidde asked whether a run could at least bank half-finished work ("kunnen we
+iets aan de runs zelf doen dat ze iig half gedaan werk opslaan"). BRIEF_RESEARCH
+has said append-after-every-tree since Crete, with worked examples, and it holds:
+the passes that died at two and at three trees kept all of them.
+
+So the loss is not half-done work. It is the run that dies before there IS any.
+
+**TIME TO FIRST OUTPUT, measured across 20 runs since 26 August**, as the gap
+between a run starting and its first commit touching data/cities or
+data/research:
+
+| | minutes to first output |
+|---|---|
+| fastest | 6 |
+| median | ~19 |
+| slowest | 35 |
+
+And the four runs that produced nothing lived 7, 15, 12 and 20 minutes. Three of
+them were dead before the median run has anything on disk. Nothing was lost in
+those runs because nothing existed yet.
+
+**So the lever is the opening, not the ending.** Roughly a third of a
+40-minute run is spent before it banks anything, and every knock we add
+multiplies that fixed cost rather than the productive part. This is the same
+fixed cost the 2026-08-05 retro found from the other side (150k to 200k tokens
+per pass regardless of yield, one agent reading 86KB of corpus before starting);
+this is what it looks like on the clock.
+
+Not yet measured, and the obvious next question: WHAT the nineteen minutes go
+on. Orientation, passcheck, the claim, and the dispatch are all in there and
+nobody has split them.
+
+
 ## 2026-08-09
 
 Published trees 829 to 893 (+64), 122 commits.
