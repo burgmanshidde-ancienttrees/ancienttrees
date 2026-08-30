@@ -96,11 +96,23 @@ jobs:
     # 110 gives an hour of slack instead of twenty minutes. It costs nothing:
     # this repository is public, so Actions minutes are free.
     #
-    # What this does NOT fix, and is the real growth item: appfit walks 38
-    # screens across two phones and takes longer than the build. When it
-    # passes 40 minutes the answer is to split the job in two, build-and-test
-    # and look-at-it, rather than to raise this number again.
-    timeout-minutes: 110
+    # AND THAT GROWTH ITEM ARRIVED, so the job is split rather than the number
+    # raised again (2026-08-30). The sentence that used to end this comment
+    # said: when appfit passes 40 minutes, split the job in two. A run then
+    # took 1h45m and was killed at 110 with Build and test, Verdict and the
+    # refused walk all GREEN and only the looking half unfinished, which is the
+    # worst possible shape: everything that judges the app had passed and the
+    # gate still reported red.
+    #
+    # So there are two jobs now, running side by side on their own runners.
+    # `test` answers "does the app work" in about an hour. `look` answers "does
+    # it line up, and what do the screens look like" in about the same. Wall
+    # clock is the slower of the two rather than the sum, and each gets a
+    # timeout it can actually finish inside. Free, because this repository is
+    # public. `look` builds the app again, which is the price of running them
+    # in parallel and is worth it: a green verdict on the app no longer waits
+    # on a screenshot sweep.
+    timeout-minutes: 75
 
     steps:
       - uses: actions/checkout@v4
@@ -288,6 +300,27 @@ jobs:
       - name: What happens when somebody says no
         if: always()
         run: python3 scripts/refused.py --udid "${{ steps.sim.outputs.udid }}"
+
+  # THE LOOKING HALF, on its own runner beside the one above.
+  #
+  # Split out on 2026-08-30 because together they outgrew the job timeout. It
+  # needs no `needs:` on the test job: a layout finding is worth having even
+  # when a test failed, which is why these steps carried `if: always()` when
+  # they lived there. Running in parallel keeps that property and stops the
+  # slow half deciding whether the fast half gets to report.
+  look:
+    runs-on: macos-15
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Which Xcode
+        run: |
+          NEWEST=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$NEWEST" ]; then
+            sudo xcode-select -s "$NEWEST/Contents/Developer" || true
+          fi
+          echo "Using: $(xcode-select -p)"
 
       # The app MEASURED its own layout since 2026-08-20 and judged none of it:
       # SweepFrames printed the frames, the grep above threw them away, and the
