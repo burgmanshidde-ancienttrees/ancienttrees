@@ -13,6 +13,88 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-30
+
+Reviewed the last 24 hours (back through `95369942`, ~137 commits): the
+hard-rule-10 access sweep (`da226ec1`, five trees pulled for needing
+somebody's permission, plus the `check_access_permission()` ratchet in
+`570eab4f`), the account-write gate closing (`e3191efe`, "adding a tree needs
+an account, at the write and not only at the buttons"), a pin-precision
+upgrade pass (`0596b369`, 112 pins), a dead-code sweep (`c40e673f`), Batch 007
+outreach mail (Hidde-approved, `f66491a2`), and heavy night-run assembly-line
+work (Vancouver/Cagliari/Barcelona/Naples/Perugia verify claims, register
+girth/height backfill on 413 trees). Ran `python3 scripts/qa.py` (3723 pages,
+clean), `python3 scripts/superlatives.py` (497 claims, no collisions) and
+`python3 scripts/preflight.py` (180 cities, 0 problems besides the paid-entry
+NOTEs already tracked from prior days, not re-litigated here). Spot-checked
+the Hague's rebuilt oldest-tree question page and Malaga's post-removal city
+page directly in the built HTML: both correctly answer from their own reduced
+tree lists in English. Sampled `/species/downy-oak`, `/parks`, `/press`
+clean of banned words and em dashes.
+
+**BLOCKER — yesterday's hard-rule-10 removal (`da226ec1`) updated the
+canonical city files but not their translation overlays, so three published
+pages still promote a tree that was pulled specifically for failing hard
+rule 10, or a stale count, or both.** Hard rule 10 and its new ratchet
+(`570eab4f`) are unambiguous: a tree needing somebody's permission does not
+ship. The English pages for The Hague, Malaga and Kyoto were fixed correctly
+(29, 9 and 17 trees respectively, with The Hague's English question page
+explicitly explaining that its true oldest tree, the 1638 Juttepeer, is not
+on the list "because it needs a booked tour"). Their translation overlays in
+`data/i18n/` were never touched:
+
+- `data/i18n/nl/the-hague.json` still lists 30 trees (`title`: "de 30
+  mooiste") against the canonical 29, and its FAQ answer to "Wat is de oudste
+  boom van Den Haag?" (built into `site/dist/nl/the-hague.html`) states flatly
+  that the oldest tree is "De juttepeer van het Heilige Geesthofje... waarschijnlijk
+  de oudste perenboom van Nederland", with no caveat in that answer that it
+  needs an appointment. This directly contradicts its own English twin one
+  click away, which names the Koekamp Oak as oldest and explains why the
+  pear is not counted.
+- `data/i18n/es/malaga.json` still lists 10 trees against the canonical 9;
+  the built `site/dist/es/malaga.html` title tag reads "10 ejemplares
+  singulares" and its FAQ says "Seis de los diez árboles de esta lista llevan
+  una de esas placas", both stale by one. A second FAQ answer still describes
+  "el aguacate del colegio de Churriana" (mlg_010, the removed appointment-only
+  school tree) as one of "los árboles singulares de Málaga", as if it were
+  still part of the collection rather than pulled from it.
+- `data/i18n/ja/kyoto.json` still lists 18 trees against the canonical 17;
+  the built `site/dist/ja/kyoto.html` title tag reads "京都の巨木と名木18選"
+  (18 selections).
+
+This is the same failure class CLAUDE.md's own ratchet already names ("copy
+promising a tree count the city does not have"), reaching a surface the
+existing checks do not cover: `check_country_counts()` in preflight.py
+guards country pages, `check_tree_count_claims()` in qa.py guards only the
+one sitewide "N trees worth the walk" line, and neither reads a per-city
+page's own title or FAQ, hand-written per language under Contract J. The
+Hague's case is the more serious of the three: it is not just a stale
+number, it is a live page telling a Dutch-speaking visitor the wrong tree is
+the city's oldest and omitting the access warning its own English page
+carries.
+
+**WARN, APP — a tree with no photograph, viewed by someone who has not
+collected it, shows two identical-purpose "add a photo" buttons at once.**
+`tree-nophoto.png` (Caucasian Wingnut and Weeping Silver Lime, Maastricht):
+a camera icon sits in the top-left corner of the placeholder image AND a
+second camera icon sits in the bottom action bar, both wired to the same
+`navigator.collectNearby = true` action
+(`ios/AncientTrees/AncientTrees/Screens/TreeDetail.swift:971-990` and
+`:1070-1082`). The code's own comment on the overlay button says it exists
+"ONLY WHERE THERE IS NO PHOTOGRAPH" and was added specifically to stop a
+"second camera two centimetres from the one in the bar" on trees that DO
+have a photo, but the bar's camera renders unconditionally whenever the tree
+is not the visitor's own (`if mine == nil`), so the exact duplication the
+comment says was fixed for the has-photo case still happens for the
+no-photo case, which is the more common one (1,077 of 1,435 trees per the
+same file's own comment). A person looking at this screen sees two controls
+with no visible difference in purpose.
+
+Nothing else found at BLOCKER level. Not a Monday, so no scheduled
+corpus-rot audit this entry.
+
+## 2026-08-29
+
 ## 2026-08-29
 
 Reviewed the last 24 hours (back through `90b07ce3`): night-run assembly-line
