@@ -29,7 +29,7 @@ final class AncientTreesUITestsLaunchTests: XCTestCase {
         let app = XCUIApplication()
         // The same fixed origin as every other test, so the launch never
         // raises the location dialog on the shared simulator.
-        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection"]
+        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-no-cover"]
         app.launch()
 
         // Insert steps here to perform after app launch but before taking a screenshot,

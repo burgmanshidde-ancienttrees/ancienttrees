@@ -27,7 +27,7 @@ final class RefusedWalk: XCTestCase {
 
     private func launch(_ args: [String] = []) -> XCUIApplication {
         let app = XCUIApplication()
-        app.launchArguments = ["-reset-collection", "-reset-blocks", "-no-nudge"] + args
+        app.launchArguments = ["-reset-collection", "-reset-blocks", "-no-nudge", "-no-cover"] + args
         app.launch()
         return app
     }
