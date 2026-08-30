@@ -146,6 +146,10 @@ def screens(sub):
         ("signin",        ["-tab=0", "-signin"], 5),
         ("paywall",       ["-tab=0", "-paywall"], 5),
         ("primer",        ["-tab=0", "-primer"], 5),
+        # The way back after a refusal. It cannot be reached any other way here,
+        # because a simulator will not deny a permission on request from inside
+        # a sweep, so without this argument the screen ships unlooked at.
+        ("refused",       ["-tab=0", "-refused"], 5),
         # WITH -settings, because these three sheets are owned by the Settings
         # screen and Settings stopped being the tab: it is pushed from the gear
         # on My trees now. Without it the argument lands on a screen that never
