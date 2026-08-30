@@ -572,7 +572,11 @@ final class AncientTreesUITests: XCTestCase {
     /// argument rather than a tap so that failure would be invisible.
     @MainActor
     func testTheSignInSheetPresents() throws {
-        let app = launch(["-tab=2", "-signin"])
+        // -show-email: the typed email route is hidden by default since
+        // 2026-08-30 (Launch.emailSignIn, commit 6658e94a), because the mail
+        // Supabase sends without custom SMTP carries a link rather than a
+        // code. This test is specifically about that route, so it asks for it.
+        let app = launch(["-tab=2", "-signin", "-show-email"])
         // The headline -signin actually presents, read off the screen rather
         // than off the enum: it said "That one is yours" until the copy moved
         // on 2026-08-29 and the test did not move with it.
