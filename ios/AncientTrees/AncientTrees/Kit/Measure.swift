@@ -43,12 +43,21 @@ public enum Measure {
 
     /// Only the real app measures, the same rule the website runs on: its
     /// beacon checks the hostname so the smoke test's headless Chrome is not
-    /// counted as a visitor. Here the equivalent is the build. Every screenshot
-    /// sweep, UI test and CI run is Debug, so none of them reach the network,
-    /// and `-measure` turns it on for a development build that wants to prove
-    /// this works.
+    /// counted as a visitor.
+    ///
+    /// THE LINE IS THE SIMULATOR, NOT THE BUILD, and the first version of this
+    /// file got that wrong within the hour. It gated on DEBUG, which is right
+    /// about CI and wrong about the one phone that matters: Xcode installs a
+    /// Debug build on a real device, so Hidde walking around with the app in
+    /// his hand would have sent nothing at all and it would have looked like a
+    /// broken integration rather than a rule working as written.
+    ///
+    /// What actually needs excluding is the machine: every screenshot sweep, UI
+    /// test and CI run happens on a simulator, and no real person is ever on
+    /// one. So a simulator stays silent unless `-measure` says otherwise, and a
+    /// real device measures whatever way it was built.
     private static var enabled: Bool {
-        #if DEBUG
+        #if targetEnvironment(simulator)
         return ProcessInfo.processInfo.arguments.contains("-measure")
         #else
         return true
