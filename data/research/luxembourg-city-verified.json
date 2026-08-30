@@ -1,200 +1,26 @@
 [
- {
-  "id": "lux_001",
-  "name": "The Square Robert-Brasseur Horse Chestnut",
-  "species": "Horse Chestnut (Aesculus hippocastanum)",
-  "age_estimate": "not documented",
-  "girth_cm": 137,
-  "location": {
-   "address": "Square Robert-Brasseur, opposite the Grand Théâtre, Ville Haute",
-   "latitude": 49.612987,
-   "longitude": 6.131524,
-   "neighbourhood": "Ville Haute"
-  },
-  "verified_sources": [
-   "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-   "https://lb.wikipedia.org/wiki/K%C3%A4schtebam_um_Square_Robert-Brasseur_zu_L%C3%ABtzebuerg"
-  ],
-  "access": "Free, in a public square in the city centre",
-  "transport": "Théâtre tram/bus stop, 2 min walk; Luxembourg train station, ~20 min walk",
-  "location_precision": "confirmed",
-  "curation_status": "ai_generated",
-  "verify_notes": "Register ID 124-136 series, Luxembourg City's official 'arbre remarquable' list (Groussherzogleche Reglement, 31 Jan 2025), nr_id 134, species Aesculus hippocastanum, section 'LF de la Ville Haute'. Corroborated by Luxembourgish Wikipedia's dedicated article (citing Sinner et al. 2002 and the ANF/natur&emwelt book 'Les arbres remarquables du Grand-Duche de Luxembourg', 2023, ISBN 978-2-9199474-3-0, p.174-175) and by an OSM node (id 1258417195, heritage:operator=anf, denotation=natural_monument) carrying the same coordinates. First added to the official list in 2002. Crown ~15m diameter; trunk forks candelaberform into 10 strong branches at about 3m height. Circumference at breast height measured ~1.30m around 2000, 1.37m in 2022 (OSM 'circumference' tag and the Wikipedia text agree numerically; note the Luxembourgish text calls this figure 'Duerchmiesser', which literally means diameter, but the OSM structured tag and the plausible physical scale both indicate this is actually trunk circumference/girth, not diameter -- flagging the unit-label discrepancy per register pitfalls). Height 23m (2000) to 23.5m (2022). Healthy: benefits from standing free of street de-icing salt, to which the species is sensitive. Age not documented anywhere; the trunk's girth suggests it was among the first of its species planted in Luxembourg, but no specific planting date is given, so no age estimate is derived. Alive as of the 2022 remeasurement cited in the Wikipedia article."
- },
- {
-  "id": "lux_002",
-  "name": "The Ginkgo of Place Dargent",
-  "species": "Ginkgo (Ginkgo biloba)",
-  "age_estimate": "not documented",
-  "girth_cm": 459,
-  "location": {
-   "address": "Place Dargent (Eecher Plaz), in the park of the former Villa Weber, Eich",
-   "latitude": 49.627336,
-   "longitude": 6.130558,
-   "neighbourhood": "Eich"
-  },
-  "verified_sources": [
-   "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-   "https://lb.wikipedia.org/wiki/Ginkgo_op_der_Eecher_Plaz"
-  ],
-  "access": "Free, in a public park at Place Dargent",
-  "transport": "Eich, Rue de Trèves bus stops, ~5 min walk",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "Official register nr_id 124, species Ginkgo biloba, section 'EE de Eich' (Groussherzogleche Reglement, 31 Jan 2025). Corroborated by a dedicated Luxembourgish Wikipedia article (citing Sinner et al. 2002, p.202-203, and the ANF/natur&emwelt 2023 book p.162-163). Described as the most imposing ginkgo of its kind in the country and standing in the park of the former villa of notary Fritz Weber, at Place Dargent (locally 'Eecher Plaz'). Girth at breast height 3.67m (~2000), 4.59m (2023); height 24m (2000), 23.1m (2023) -- the height figure DECREASING between measurements is noted as-is from the source rather than smoothed. Age not known per the source ('Den Alter vum Bam ass net bekannt'). First added to the official list in 2002. Flagged only because the park is described as a former private villa's grounds rather than an unambiguous public square; 'Place Dargent' / 'Eecher Plaz' functions as a public square in Eich in general references, but no source was fetched confirming opening hours or that the surrounding park itself (as opposed to the square) is unrestricted public access -- worth a quick on-the-ground confirmation."
- },
- {
-  "id": "lux_003",
-  "name": "The Beech of Bastion Beck",
-  "species": "European Beech (Fagus sylvatica)",
-  "age_estimate": "over a century",
-  "girth_cm": 131,
-  "location": {
-   "address": "Petrusse valley path, below Bastion Beck, roughly midway between the Pont Adolphe and Place de la Constitution",
-   "latitude": 49.609128,
-   "longitude": 6.12775,
-   "neighbourhood": "Petrusse valley / Ville Haute"
-  },
-  "verified_sources": [
-   "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-   "https://lb.wikipedia.org/wiki/Buch_am_P%C3%A9itrussdall,_Bastioun_Beck"
-  ],
-  "access": "Free, on the public valley walking path through the Petrusse park",
-  "transport": "Place de la Constitution / Pont Adolphe, ~10 min walk down into the valley",
-  "location_precision": "confirmed",
-  "curation_status": "ai_generated",
-  "verify_notes": "Official register nr_id 128, species Fagus sylvatica, section 'LF de la Ville Haute' (Groussherzogleche Reglement, 31 Jan 2025). Corroborated by a dedicated Luxembourgish Wikipedia article (citing Sinner et al. 2002 p.82-83) and an OSM node (id 6630173075, heritage:operator=anf, named 'Buch am Peitrussdall, Bastioun Beck') at 5m from the register coordinate. Standing on the valley path below Bastion Beck, reached from Avenue Marie-Therese down into the Petrusse valley, past the Neier Bruck (Pont Adolphe), to an old transformer building; the tree is on the right of the path. Crown grown unevenly: full and wide toward the valley, constrained on the fortress-wall side. Source states age is not documented but 'surely exceeds 100 years' -- repeated here as given, not sharpened. Girth at breast height 1.30m (~2000), 1.31m (2023, called 'Duerchmiesser' i.e. diameter in the Luxembourgish text, but treated here as girth per the register-pitfalls unit check, consistent with the scale of the other register trees' figures); height 22m (2000), 22.7m (2023). Branches were professionally braced/secured some years before 2023 per the source."
- },
- {
-  "id": "lux_004",
-  "name": "The Copper Beech of Parc Pescatore",
-  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-  "age_estimate": "not documented",
-  "location": {
-   "address": "Parc Pescatore, off Avenue Marie-Therese",
-   "latitude": 49.61544,
-   "longitude": 6.12881,
-   "neighbourhood": "Ville Haute"
-  },
-  "verified_sources": [
-   "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-   "https://www.wikidata.org/wiki/Q132663935"
-  ],
-  "access": "Free, in the public Parc Pescatore",
-  "transport": "Royal-Hamilius tram stop, ~7 min walk",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "Official register nr_id 129, listed on Luxembourgish Wikipedia's registry table as 'Routbuch am Pescatore-Park' (copper beech in Pescatore Park), section 'LF de la Ville Haute' (Groussherzogleche Reglement, 31 Jan 2025). The registry table row exists but this tree has no dedicated Wikipedia article yet (unlike its park neighbours the Prince Jean chestnut and the Amelia Park sequoia), so the second source here is the Wikidata item (Q132663935, description 'fait partie des arbres remarquables au Luxembourg') plus the same official Wikipedia list table -- thinner corroboration than the named trees in this batch, flagged for that reason rather than for any doubt about the tree's existence or designation. Parc Pescatore is a well-known public park in the city centre, home to several other named remarkable trees (the Prince Jean chestnut, two giant sequoias) and public sculptures. No age or measurement data found; age left undocumented rather than guessed."
- },
- {
-  "id": "lux_005",
-  "name": "The Giant Sequoia of Parc Amelie",
-  "species": "Giant Sequoia (Sequoiadendron giganteum)",
-  "age_estimate": "roughly 150 years",
-  "age_min": 145,
-  "age_max": 160,
-  "girth_cm": 458,
-  "location": {
-   "address": "Parc Amelie, beside the monument to Amalia of Saxe-Weimar-Eisenach",
-   "latitude": 49.613892,
-   "longitude": 6.124494,
-   "neighbourhood": "Ville Haute"
-  },
-  "verified_sources": [
-   "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-   "https://lb.wikipedia.org/wiki/Sequoiaen_am_Amaliepark"
-  ],
-  "access": "Free, in the public Parc Amelie",
-  "transport": "Royal-Hamilius tram stop, ~8 min walk",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "IMPORTANT DEATH-IN-SOURCE FINDING: this register entry (nr_id 130 and 131, 'Sequoiaen am Amaliepark', both mapped to the same Wikidata item Q13105015) originally covered a PAIR of giant sequoias 14.6m apart, planted together, both dated to roughly 140 years old as of 2018 by the dedicated Luxembourgish Wikipedia article (which cites Sinner et al. 2002 p.194-195). That article's own text states the RIGHT-hand tree (taller, thicker: height 32m, girth 6.15m in ~2000) was found diseased with Armillaria (honey fungus) root rot by 2025 and was FELLED on 28 February 2026; its wood was to be made into park benches and a new sapling 'twin' planted in its place. Per hard rule against dead entries, only the LEFT-hand, surviving tree (height 27m, girth 4.58m in ~2000) is delivered here, as 'roughly 150 years' (140 years as of 2018, plus ~8 years). location_precision is set to approximate rather than confirmed because the register's two coordinates (130 and 131, 14.6m apart) were never individually distinguished as left/right in any source found, so pinning the exact register point risks marking the stump/new sapling as the living giant; the pin instead marks the shared Wikidata/Commons coordinate for the pair, in Parc Amelie beside the Amalia monument, where the survivor is visually unmistakable as the large sequoia (the felled one is a stump plus a young replacement sapling). A reader on site can immediately tell which is which by size. Likely planted under the guidance of landscape architect Edouard Andre (1840-1911), who also designed the wider Ville Haute park network, though no source states a specific planting date for these two individually -- not treated as a confirmed planting date for that reason. First added to the official list in 2002."
- },
- {
-  "id": "lux_006",
-  "name": "The Prince Jean Chestnut",
-  "species": "Horse Chestnut (Aesculus hippocastanum)",
-  "age_estimate": "105 years",
-  "age_min": 105,
-  "age_max": 105,
-  "girth_cm": 364,
-  "location": {
-   "address": "Parc Pescatore, off Avenue Marie-Therese",
-   "latitude": 49.614856,
-   "longitude": 6.128063,
-   "neighbourhood": "Ville Haute"
-  },
-  "verified_sources": [
-   "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-   "https://lb.wikipedia.org/wiki/Bam_vum_Pr%C3%ABnz_Jean"
-  ],
-  "access": "Free, in the public Parc Pescatore",
-  "transport": "Royal-Hamilius tram stop, ~7 min walk",
-  "location_precision": "confirmed",
-  "curation_status": "ai_generated",
-  "verify_notes": "Official register nr_id 135, species Aesculus hippocastanum, section 'LF de la Ville Haute' (Groussherzogleche Reglement, 31 Jan 2025). Corroborated by a dedicated Luxembourgish Wikipedia article and an OSM node (id 1379054590, heritage:operator=anf, named 'Bam vum Prenz Jean') at the same coordinates. DOCUMENTED PLANTING DATE FOR THIS SPECIFIC TREE (the strongest kind of age evidence, not a bridge claim from the park's own history): planted in 1921 to mark the birth of Prince Jean (born 5 January 1921), later Grand Duke Jean, and named for him from then on. Age = 2026 minus 1921 = 105 years, stated as an exact figure because the planting date itself is documented, not derived from growth rate. Girth at breast height 3.64m and height 23m measured around 2000. A metal cage was placed around the trunk in 2008 to protect it, carrying a plaque reading 'Arbre du Prince Jean'; before that the tree stood free with the plaque fixed to the trunk itself (per a 2002 photograph cited in the article). First added to the official list in 2002. In 1989, for his 25th throne anniversary, Grand Duke Jean gave every commune in the country a young lime tree -- noted as context, not a fact about this tree."
- },
- {
-  "id": "lux_007",
-  "name": "The Oak of Bambesch",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "not documented",
-  "location": {
-   "address": "Bambesch forest, Rollingergrund",
-   "latitude": 49.635102,
-   "longitude": 6.10443,
-   "neighbourhood": "Rollingergrund"
-  },
-  "verified_sources": [
-   "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-   "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg"
-  ],
-  "access": "Free, in the public Bambesch forest recreation area",
-  "transport": "Bus to Rollingergrund/Bambesch, then a forest path walk; roughly 20-25 min from the city centre by bus and on foot",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Official register nr_id 136, species Quercus robur, section 'RA de Rollingergrund' (Groussherzogleche Reglement, 31 Jan 2025), qualifying on morphological interest only (no landscape/biological/dendrological/historical/commemorative flags ticked in the registry table). No dedicated Wikipedia article and no photo exists yet (the registry table row itself shows a placeholder 'no image' entry), so the second source here is the compiled Wikipedia registry list table itself (a distinct compilation from the raw open-data file, cross-checked against the same 31 Jan 2025 Grand Ducal regulation) rather than an independent narrative piece -- flagged for thin sourcing. location_precision set to approximate because Bambesch is a large forest and no source pins the tree more precisely than the register's own point coordinate, which for a forest interior tree without a photo is treated as forest-level rather than confirmed tree-level knowledge. No age, girth or height recorded anywhere found."
- },
- {
-  "id": "lux_008",
-  "name": "The Sycamore of Hollerich",
-  "species": "Sycamore Maple (Acer pseudoplatanus)",
-  "age_estimate": "not documented",
-  "location": {
-   "address": "Petrusse valley path, Hollerich section",
-   "latitude": 49.605278,
-   "longitude": 6.122163,
-   "neighbourhood": "Hollerich"
-  },
-  "verified_sources": [
-   "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-   "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg"
-  ],
-  "access": "Free, on the public Petrusse valley walking path",
-  "transport": "Hollerich, Rue de Bouillon bus stops, ~10 min walk into the valley",
-  "location_precision": "confirmed",
-  "curation_status": "flagged",
-  "verify_notes": "Official register nr_id 126, species Acer pseudoplatanus, section 'HoA de Hollerich', qualifying on landscape and biological interest (Groussherzogleche Reglement, 31 Jan 2025). No dedicated Wikipedia article exists for this individual tree (unlike several of its park neighbours), so the second source is the compiled Wikipedia registry list table plus a Wikimedia Commons category and photograph ('Remarkable sycamore in Hollerich') matched to the same coordinate within 0.3m -- flagged for thinner sourcing than the named trees in this batch, not for any doubt about the designation itself. On the Petrusse valley's public walking corridor. No age, girth or height data found in any source checked."
- },
- {
-  "id": "lux_009",
-  "name": "The Sycamore of Pfaffenthal",
-  "species": "Sycamore Maple (Acer pseudoplatanus)",
-  "age_estimate": "not documented",
-  "location": {
-   "address": "Pfaffenthal, lower Alzette valley",
-   "latitude": 49.611846,
-   "longitude": 6.13497,
-   "neighbourhood": "Pfaffenthal"
-  },
-  "verified_sources": [
-   "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-   "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg"
-  ],
-  "access": "Free. It stands on the Pfaffenthal valley paths below the old town, which are public. We have not confirmed which path passes closest to the trunk, so expect to look around a little once you are down there.",
-  "transport": "Pfaffenthal-Kirchberg funicular/lift station, then a short walk",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Official register nr_id 127, species Acer pseudoplatanus, section 'LB de Pafendall', qualifying on landscape and dendrological interest (Groussherzogleche Reglement, 31 Jan 2025). No dedicated Wikipedia article; second source is the compiled Wikipedia registry list table plus a matching Wikimedia Commons category and photograph ('Remarkable sycamore in Pfaffenthal') at the same coordinate within 1m, and an OSM node (id 6630180014, heritage:operator=anf) also at 1m. Flagged for thinner narrative sourcing than the named trees in this batch. Pfaffenthal is a public lower-town district along the Alzette threaded with public paths, but this pass did not independently confirm which specific path or square this tree stands beside, so 'access' states the general public character of the area rather than a specific confirmed route -- worth a follow-up check before writing the story. No age, girth or height data found."
- }
+  {
+    "id": "lux_010",
+    "name": "The Krombach Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Parc Louvigny, Ville-Haute, Luxembourg City",
+      "latitude": 49.610313,
+      "longitude": 6.122665,
+      "neighbourhood": "Ville-Haute"
+    },
+    "verified_sources": [
+      "https://commons.wikimedia.org/wiki/File:Luxembourg,_ch%C3%AAne_Krombach,_parc_Louvigny_(101).jpg (independent field photograph by Commons contributor GilPe, dated 3 January 2020, caption: 'le chene Krombach plante en memoire du botaniste Jean-Henri-Guillaume Krombach (1791-1881)', geotagged in Parc Louvigny)",
+      "https://www.wikidata.org/wiki/Q13103645 (structured record: species Quercus robur, named after Jean-Henri-Guillaume Krombach (Q3460050), a point-in-time value of 1875 whose exact meaning is not confirmed, see note)"
+    ],
+    "access": "Free, in Parc Louvigny, a public city park in Ville-Haute; open at all times, no restriction found.",
+    "transport": "Central Luxembourg City, Ville-Haute, near Villa Louvigny; walkable from the city centre, about 0.5km from the Giant Sequoia of Parc Amelie (lux_005) and the Sycamore of Hollerich (lux_008).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "NOT found in the 31 January 2025 official register CSV (no INSPIRE point within several hundred metres, and the Wikidata record carries no register-id property), so this rests on two independent non-register sources: a geotagged Commons field photograph (GilPe, 2020) and Wikidata's structured record. Both agree it is an oak (chene) in Parc Louvigny planted or dedicated in memory of Jean-Henri-Guillaume Krombach, a Luxembourg pharmacist and botanist (1791-1881). Wikidata carries a 'point in time' value of 1875, which would make the tree about 150 years old if it is a planting date, but the property used (P585) does not clearly mean 'planted' rather than some other event date (e.g. when the memorial naming happened), and no source seen states 'planted in 1875' outright. Treating that date as an age would be a bridge claim, so age_estimate is left empty and the date is flagged here for the writer/reader instead. Species confirmed as Quercus robur via Wikidata taxon claim; visually an oak in both photographs. Girth and height not found. id reassigned from lux_004 to lux_010 (2026-08-30 session): the live city already runs lux_001-009, and this was the only one of four candidates in the original pass (filed under the mismatched-name data/research/luxembourgcity-verified.json) that was not already published under a different name: lux_001 duplicated live lux_001 (Robert-Brasseur Chestnut), lux_002 duplicated live lux_003 (Beech of Bastion Beck, identical coordinates), lux_003 duplicated live lux_009 (Sycamore of Pfaffenthal, identical coordinates)."
+  }
 ]
