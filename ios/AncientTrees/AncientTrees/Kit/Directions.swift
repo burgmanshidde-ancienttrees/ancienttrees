@@ -89,6 +89,9 @@ enum Directions {
     /// in one place cannot drift out of step with the other two.
     @MainActor
     static func walk(lat: Double, lng: Double, name: String? = nil) {
+        // Measured at the fork rather than in each button, for the same reason
+        // the dialog lives at the root: three call sites, one truth.
+        Measure.event("directions")
         if let chosen = preferred {
             open(chosen, lat: lat, lng: lng)
         } else {

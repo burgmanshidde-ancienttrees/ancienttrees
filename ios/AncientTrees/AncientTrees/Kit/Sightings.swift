@@ -331,6 +331,10 @@ final class Sightings {
         }
         all.append(s)
         persist()
+        // The NAME, NOTE and COORDINATES of somebody's own tree are deliberately
+        // not sent. They are theirs, and the question here is only whether this
+        // happens at all.
+        Measure.event("sighting_recorded", ["known_tree": treeId == nil ? "no" : "yes"])
         // TO THE ACCOUNT AS WELL, if there is one. Hidde, 2026-08-27: "niemand
         // wil een backup my trees knop, je wilt gewoon dat dit automatisch goed
         // gaat." Signed out this does nothing and the app behaves as it did.

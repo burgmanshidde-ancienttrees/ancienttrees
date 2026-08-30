@@ -300,6 +300,7 @@ struct TreeDetail: View {
             }
         }
         .task {
+            Measure.event("tree_opened", ["tree": mine == nil ? tree.id : "own"])
             // Debug scaffolding, same family as -tab, -select and -collected:
             // simctl cannot tap, and a screen that only exists after a tap is a
             // screen that ships unlooked at.

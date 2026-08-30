@@ -142,6 +142,8 @@ public final class Saved {
                                 favourite: true)
         }
         persist()
+        // ON only. Taking a heart off again is a correction, not a verb.
+        if entries[id]?.favourite == true { Measure.event("tree_saved", ["tree": id]) }
         onMutate?(id, entries[id])
     }
 
@@ -167,6 +169,7 @@ public final class Saved {
                                 savedAt: existing?.savedAt ?? Date(), favourite: fav)
         }
         persist()
+        if entries[id]?.visitedAt != nil { Measure.event("tree_visited", ["tree": id]) }
         onMutate?(id, entries[id])
     }
 
