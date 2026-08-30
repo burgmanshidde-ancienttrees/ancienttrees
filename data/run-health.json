@@ -2626,6 +2626,28 @@
    ],
    "trees": 5,
    "logged": true
+  },
+  {
+   "started": "2026-08-30T18:55:01+00:00",
+   "date": "2026-08-30",
+   "run_id": "33329400171",
+   "minutes": 24.3,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 168,
+   "denials": 19,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(if), Bash(mkdir), Bash(python3)",
+   "ended": "success",
+   "tokens": 18925957,
+   "claims_held": [
+    "coimbra",
+    "rothenburg-ob-der-tauber"
+   ],
+   "commits": 11,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
