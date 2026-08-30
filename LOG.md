@@ -9,6 +9,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-30 (night run, continuation) - Finished the standing Coimbra/Rothenburg claims properly; fixed leads.py's READY count
+
+The window's first attempt claimed coimbra and rothenburg-ob-der-tauber for verify passes and quit after 7 minutes without doing the verify work, leaving both claims standing with the register-candidate briefs already staged. This attempt dispatched a proper `verify` pass on each (Coimbra: a compact ICNF cluster under 6km, mostly araucarias and an old camphor tree; Rothenburg: Bavarian Naturdenkmal lindens within 2km of the Altstadt), both still running as this is written.
+
+**Fixed a real gap while waiting on those: `leads.py --ready` was reporting 446 leads as "publishable now, needs only a story", and 401 of them were bare `famous_trees.py` scrapes** (mostly the Japanese and Baltic giant-tree lists), a name, a coordinate and a genus guessed from the name, never looked at by any pass. LOG.md flagged this exact gap twice on 2026-08-29 ("Only 11 leads in the whole corpus carry real sources... worth a session tightening what leads.py --ready actually promises") and it was still there today, ready to cost a fourth run the same 40-minute detour or, worse, get written up as fact by a write-stories pass that trusts the bucket name. `readiness()` now also requires a `register_id`/`register_notes` or a `why`/`reason` field, i.e. some sign a pass actually considered the tree; unsourced leads move to NEARLY under "no source". READY drops to 45, all genuinely evidenced. `prepare.py`'s low-pile hint now names the dominant gap instead of always pointing at `genus-names.json`, which cannot fix a sourcing problem.
+
+Submissions: none new (53 processed, 0 new). Health: clear (smoke, deploy, fresh-eyes review all green; REVIEW.md's one BLOCKER already answered).
+
+FOR HIDDE: nothing blocks. Worth knowing: the 45 genuinely-ready leads are a much smaller pile than the write-pass pipeline assumed all week; the next write pass should use `leads.py --ready`'s new, honest count rather than the pipeline note in CLAUDE.md's rule 1(a), which still describes the old (correct-in-spirit, wrong-in-practice-until-today) promise.
+
 ## 2026-08-30 (session, with Hidde) - The app measures nothing, and now it measures six things
 
 He asked whether the app has analytics at all. It did not. Crashes were covered by MetricKit since 08-27 and behaviour was not, so nothing here could say whether anybody opens the map, taps Take me there, or comes back on day seven. The website has had its own `events` table since July; the app had no equivalent, and its feed downloads are invisible to the Cloudflare beacon, so we could not even count opens.
