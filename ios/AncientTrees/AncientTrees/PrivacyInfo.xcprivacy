@@ -164,6 +164,39 @@
 				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
 			</array>
 		</dict>
+		<dict>
+			<!-- Which screens get opened and which of the four verbs get used,
+			     added 2026-08-30 on Hidde's yes to a measurement tool. Six
+			     events, listed in Kit/Measure.swift, sent to our own PostHog
+			     project on their EU cloud.
+
+			     NOT LINKED, and as with the crash data that is a property of
+			     what is sent rather than a claim about our intentions: the row
+			     carries an event name, the app version, the major OS version,
+			     and an id that is a random UUID this phone made for itself. No
+			     email, no account id, no coordinates, and no advertising
+			     identifier. Signing in changes none of it.
+
+			     NOT TRACKING, because none of it is joined to data from another
+			     company or used to target advertising, which is what Apple's
+			     word means here. That is also why this needs no ATT prompt.
+
+			     The PURPOSE is Analytics rather than App Functionality, which
+			     the entries above use. Nothing in the app works better because
+			     of this; it exists so we can tell whether any of it is used.
+			     Declaring it as functionality would be the flattering answer
+			     and the false one. -->
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeProductInteraction</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
+			</array>
+		</dict>
 	</array>
 	<key>NSPrivacyAccessedAPITypes</key>
 	<array>

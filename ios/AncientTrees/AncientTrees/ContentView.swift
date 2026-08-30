@@ -185,6 +185,8 @@ struct ContentView: View {
                     // and deep links still land somewhere sensible.
                     if new == TabBar.collectTag { openCollect(); return }
                     if new == tab { clearPath(new) }
+                    Measure.event("tab", ["tab": TabBar.items.indices.contains(new)
+                        ? TabBar.items[new].title : String(new)])
                     tab = new
                 })
     }
@@ -640,6 +642,11 @@ struct ContentView: View {
             // the app's part: the system hands over what it gathered the next
             // time the app opens, and only on a real device.
             Diagnostics.shared.start()
+            // What people do, to our own PostHog project (Kit/Measure.swift).
+            // The queue goes first so anything stranded by a wood with no
+            // signal is filed before today adds to it.
+            Measure.flush()
+            Measure.event("app_open")
             // The thumbs' figures, once per launch and never per card: the
             // whole table is a few thousand short rows and a request inside a
             // scrolling list is a stutter.
