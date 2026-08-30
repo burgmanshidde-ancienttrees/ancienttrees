@@ -133,7 +133,9 @@ Each is idempotent and each is his, the same as `saves.sql` was:
   nobody takes a cut, and that is also where we can find out whether anybody
   ever pays.
 - [ ] **The App Store Connect record itself**, which only Hidde can create: the listing text, the screenshots and the privacy form are all written out in APP_STORE_LISTING.md, including the TestFlight fields.
-- [ ] **BLOCKER: Sign in with Apple is switched off in Supabase.** Found
+- [x] **WAS A BLOCKER, server side fixed the same evening: Sign in with Apple is switched on.** Hidde enabled the provider with the bundle id under Client IDs at once. Confirmed from outside on the route the app actually uses, `/auth/v1/token?grant_type=id_token`, which now answers "Unable to detect issuer in ID token for Apple provider" (a token error, so the provider is accepted) where a disabled provider answers "provider is not enabled". The web route still answers 400 and that is correct and permanent: it needs the OAuth secret we deliberately left empty, and the website has no Apple button. **Still owed one tap on a TestFlight build**, because only a real id token proves the whole path. The original finding follows.
+
+- [ ] ~~BLOCKER~~ (resolved above). Found
   2026-08-30 on Hidde's own device: the app reports "Apple sign-in is not
   switched on yet", which is our own honest message for a provider that refuses.
   Our side is correct and was checked, so this is one dashboard setting:
