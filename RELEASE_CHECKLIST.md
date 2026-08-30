@@ -133,6 +133,35 @@ Each is idempotent and each is his, the same as `saves.sql` was:
   nobody takes a cut, and that is also where we can find out whether anybody
   ever pays.
 - [ ] **The App Store Connect record itself**, which only Hidde can create: the listing text, the screenshots and the privacy form are all written out in APP_STORE_LISTING.md, including the TestFlight fields.
+- [ ] **BLOCKER: Sign in with Apple is switched off in Supabase.** Found
+  2026-08-30 on Hidde's own device: the app reports "Apple sign-in is not
+  switched on yet", which is our own honest message for a provider that refuses.
+  Our side is correct and was checked, so this is one dashboard setting:
+  `codesign -d --entitlements` on the uploaded archive shows
+  `com.apple.developer.applesignin`, and Supabase answers 400 on
+  `/auth/v1/authorize?provider=apple` while Google answers 302.
+
+  **It is a rejection under guideline 4.8, not merely a broken door.** An app
+  offering third-party sign-in (Google works, confirmed the same evening) must
+  offer an equivalent privacy-preserving option, and Sign in with Apple is it.
+  Shipping the button in a state where it fails is worse than not offering
+  Google at all. It also matters more since 2026-08-30 than it would have that
+  morning, because the typed email route left the app the same day, so Apple and
+  Google are the only two doors.
+
+  The fix is Authentication > Providers > Apple, enabled, with the bundle id
+  `app.ancienttrees.AncientTrees` under Client IDs, which is what the app's
+  native id-token route uses. A Services ID and .p8 are for the web flow, and
+  the website has no Apple button.
+
+  **Test it on a TestFlight or archive build, never on a Debug run.**
+  CODE_SIGN_ENTITLEMENTS sits on the Release configuration only, so a Debug
+  build from Xcode carries no Apple sign-in entitlement and cannot work however
+  well Supabase is configured.
+
+- [x] **Google sign-in on a real phone** (Hidde, 2026-08-30: "google werkt"), so
+  `ancienttrees://auth-callback` is on Supabase's redirect list after all.
+
 - [ ] **Google sign-in on a real phone.** `ancienttrees://auth-callback` has to be
   in Supabase's redirect allow-list or Supabase quietly redirects to the website
   instead, which looks like a button that does nothing. Apple's and the magic
