@@ -394,12 +394,35 @@ final class AncientTreesUITests: XCTestCase {
     /// was told to centre on.
     @MainActor
     func testTappingAPinOpensItsTree() throws {
-        let app = launch(["-map", "-select=ams_002"])
+        // SIGNED IN, and that is the fix for the red this test was, not a
+        // detail. Diagnosed 2026-08-30 from the runner's own result bundle.
+        //
+        // The sweep below is blind, and a stray tap raised the sign-in sheet.
+        // The sheet's two buttons land on this grid almost exactly: "Continue
+        // with Apple" at dy 0.33 and "Continue with Google" at dy 0.43, which
+        // are rows 6 and 9 of 10. So the test tapped Google, iOS opened a real
+        // ASWebAuthenticationSession, and the runner sat on accounts.google.com
+        // while the remaining taps went into somebody else's web view. It could
+        // never recover, and it was starting a live OAuth session against
+        // Google on every CI run.
+        //
+        // -signed-in is exactly the scaffolding for this and its own comment
+        // says so: a local session with no tokens, so nothing can ask anybody
+        // to sign in while a test is measuring something else.
+        let app = launch(["-map", "-select=ams_002", "-signed-in"])
         let map = app.otherElements["tree-map"]
         XCTAssertTrue(map.waitForExistence(timeout: 14), "no map")
         // Let the tiles and the pins arrive. Where the camera ends up does not
         // matter to this test any more; that it has drawn pins does.
         Thread.sleep(forTimeInterval: 5)
+
+        // ONLY THE PART OF THE MAP YOU CAN SEE. The tree-map element is the
+        // whole screen, list included, so a normalised offset is measured
+        // against 667 points of which the bottom half is the card shelf. The
+        // count label sits on the seam.
+        let visibleBottom = app.staticTexts["map-count"].exists
+            ? app.staticTexts["map-count"].frame.minY
+            : map.frame.maxY
 
         // A GRID, not a column, and the reason is worth writing down because
         // the column version cost an hour on 2026-08-27.
@@ -416,11 +439,22 @@ final class AncientTreesUITests: XCTestCase {
         // a control, not that the camera framed one particular trunk. A tap on
         // a cluster zooms in instead, which only makes the next rows likelier
         // to land.
+        let top = map.frame.minY + 80          // clear of the compass and the notch
         for row in 0...10 {
             for dx in [0.5, 0.28, 0.72] {
-                let dy = 0.16 + Double(row) * 0.03
-                map.coordinate(withNormalizedOffset: CGVector(dx: dx, dy: dy)).tap()
+                let y = top + (visibleBottom - 40 - top) * Double(row) / 10
+                map.coordinate(withNormalizedOffset: .zero)
+                   .withOffset(CGVector(dx: map.frame.width * dx, dy: y - map.frame.minY))
+                   .tap()
                 if app.buttons["Take me there"].waitForExistence(timeout: 0.5) {
+                    return
+                }
+                // AND STOP IF WE HAVE LEFT THE APP. Belt as well as braces:
+                // -signed-in should mean no sheet can appear, and if one ever
+                // does, saying so beats tapping blindly through it and
+                // reporting that the map has no pins.
+                if app.webViews.firstMatch.exists || app.buttons["Continue with Google"].exists {
+                    XCTFail("a tap left the map: the sign-in sheet or a web view is up")
                     return
                 }
             }
