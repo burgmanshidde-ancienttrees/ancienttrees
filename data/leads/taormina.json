@@ -1,11 +1,71 @@
 {
  "city": "Taormina",
- "leads": [],
- "blocked": [],
+ "leads": [
+  {
+   "sheet_id": "04/I216/CT/19",
+   "name_it": "Castagno di Tramazzi",
+   "locality": "Tramazzi, Sant'Alfio",
+   "latitude": 37.762394,
+   "longitude": 15.105119,
+   "girth_cm": 860,
+   "why_not_shipped": "Register-listed (multi-stem chestnut, combined girth ~8.6m, alt ~1015m, along an inter-plot path). Direct fetch of its etnanatura.it detail page (paginadettaglio.php?nome=Castagno_di_Tramazzi) failed twice with HTTP 500, so only a search-engine snippet was available, which the search-summary-is-a-lead rule does not allow to stand as a source. Needs: one directly-fetched second source (existence/species/age) and an access statement, before it can ship. Coordinates match the MASAF register exactly via the snippet, so identity is not in doubt, only sourcing."
+  },
+  {
+   "sheet_id": "01/H325/CT/19",
+   "name_it": "Fico magnolioide di Villa Puglisi",
+   "locality": "Villa Puglisi, Riposto",
+   "latitude": 37.728036,
+   "longitude": 15.198322,
+   "girth_cm": 1100,
+   "height_m": 18,
+   "why_not_shipped": "Villa Puglisi appears in Sicily's own architectural-heritage records as 'Casa Padronale Proprieta Puglisi' (a manor house), suggesting private property rather than a public garden. No evidence of public/institutional access found this pass (not a comune-run villa like Riposto's actual public garden, Villa Comunale Edoardo Pantano, which is a different site). Needs confirmation of current use and public access before this 11m-girth fig can be verified."
+  }
+ ],
+ "blocked": [
+  {
+   "sheet_id": "01/L042/ME/19",
+   "name_it": "Albero del drago",
+   "species": "Dracaena draco",
+   "locality": "Hotel Excelsior Palace, Taormina",
+   "reason": "Stands on the private grounds of the Excelsior Palace hotel, described consistently across the hotel's own site and independent listings as an exclusive guest amenity ('guests have access to the largest Mediterranean park in the city'; used for weddings/private dinners). No evidence anywhere of non-guest access. Confirmed NOT the same site as the public Villa Comunale (Parco Duca di Cesaro): the Villa Comunale's own address (Via Bagnoli Croci 73, ~37.8511, 15.2900) sits about 0.8km northeast of this register cluster (~37.848-37.850, 15.281). Fails hard rule 10 test 1."
+  },
+  {
+   "sheet_id": "02/L042/ME/19",
+   "name_it": "Fico magnolioide (insieme omogeneo)",
+   "species": "Ficus macrophylla group",
+   "locality": "Excelsior Palace, Taormina",
+   "reason": "Same Excelsior Palace private grounds as the dragon tree, see above; additionally a registered GROUP ('insieme omogeneo') rather than a single collectible tree, which would need re-evaluating as an ensemble even if access were solved."
+  },
+  {
+   "sheet_id": "03/L042/ME/19",
+   "name_it": "Carrubo",
+   "species": "Ceratonia siliqua",
+   "locality": "Hotel Excelsior Palace, Taormina",
+   "reason": "Same Excelsior Palace private grounds, see the dragon tree entry above."
+  },
+  {
+   "sheet_id": "04/L042/ME/19",
+   "name_it": "Cipresso comune",
+   "species": "Cupressus sempervirens",
+   "locality": "Hotel Excelsior Palace, Taormina",
+   "reason": "Same Excelsior Palace private grounds, see the dragon tree entry above."
+  },
+  {
+   "sheet_id": "05/L042/ME/19",
+   "name_it": "Cipresso comune",
+   "species": "Cupressus sempervirens",
+   "locality": "Excelsior Palace, Taormina",
+   "reason": "Same Excelsior Palace private grounds, see the dragon tree entry above. This and 04/L042/ME/19 sit at the same distance band and may be a register-recorded pair; moot while both are blocked on access."
+  }
+ ],
  "notes": [
   {
    "date": "2026-08-27 (night run)",
    "finding": "All 8 register candidates within 20km checked via passcheck.py --brief. The 5 closest (within 1.02km, a genuinely tight cluster: Dracaena draco, a Ficus macrophylla group, two Cupressus sempervirens, and an 8m-girth Ceratonia siliqua) all stand on the grounds of the Hotel Excelsior Palace per italy-masaf.json's own locality field. Checked hotel access via web search: its own marketing copy says 'guests have access to the largest Mediterranean park in the city', no evidence found of public/non-guest access to the gardens. Fails hard rule 10 test 1. The remaining 3 candidates sit 16-19km out (Ficus macrophylla 11m girth, two Castagno, a Betula aetnensis), well past any reasonable day-trip boundary and unchecked this pass. Taormina stays unopened; would need either confirmed hotel-garden access (a scheduled open day, a public path through the grounds) or an entirely different source to proceed."
+  },
+  {
+   "date": "2026-08-30 (verification pass)",
+   "finding": "Independently re-confirmed the 2026-08-27 finding on the Excelsior Palace cluster (now recorded in `blocked` above with reasons per tree) and pinpointed why the dispatch brief's Villa Comunale assumption was wrong: the register cluster's coordinates sit about 0.8km from the Villa Comunale's real address, so they were never the same place. Went past the original 9-row supply and verified 3 trees from the outlier zone around Sant'Alfio/Mascali on Etna's eastern slope, delivered to data/research/taormina-verified.json: the famous Castagno dei Cento Cavalli (confirmed, free, extremely well documented, ~2,200 years per a 2022 CREA study), a second nearby giant, the Castagno della Nave (flagged: on private land but visible from the road/path, girth unconfirmed), and the individually-registered Betulla di Magazzeni, an Etna-endemic birch (flagged: second source is a snippet of a regional PDF that 404'd on direct fetch, and access could not be independently confirmed). Also found the staged 'Tramazzi' chestnut (04/I216/CT/19) is a DIFFERENT tree from the famous Castagno della Nave despite both being nearby giant chestnuts in Sant'Alfio -- moved it to `leads` above pending a working second source (its own detail page 500'd twice). The Riposto fig at 'Villa Puglisi' moved to `leads`: Sicily's own heritage records call the site a private manor house ('Casa Padronale Proprieta Puglisi'), not the town's actual public garden. Net: 3 verified, 5 blocked (Excelsior Palace cluster, unchanged access verdict), 2 leads (Tramazzi chestnut, Riposto fig) needing a source or an access answer. Below the usual 4-tree floor for a page on the verified set alone; a future pass chasing the Tramazzi chestnut's second source or the Riposto fig's access status could tip this city over the line."
   }
  ]
 }
