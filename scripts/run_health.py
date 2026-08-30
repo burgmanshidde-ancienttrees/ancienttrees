@@ -422,7 +422,19 @@ PROBE_MIN_TURNS = 5         # below this it never really started: usage limit, n
 # which changes week to week. So the fixed number stops being the brake and
 # becomes a runaway backstop. What actually governs is the limit itself, felt
 # rather than predicted: see recent_limit_deaths below.
-WEEK_BUDGET_MINUTES = 1400  # backstop only; the death brake is the real governor
+# Raised again, 1400 to 1800, on 2026-08-29 (Hidde: "ik zit op 57% van de week
+# qua tokens"). The minutes said 74 percent spent while he measured 57, so the
+# proxy was braking a third early: three runs that evening ran 7, 15 and 12
+# minutes and produced nothing between them. 1040 minutes being 57 percent puts
+# the week at about 1800, which is where this now sits.
+#
+# THE CAVEAT, because the arithmetic hides it: his 57 percent is the whole
+# subscription, his own sessions included, and the minutes here only ever count
+# the runs. So this number can only ever be approximately right, which is the
+# same reason the paragraph above says a fixed number cannot know. It is a
+# backstop against a runaway, not a measurement, and the real governor is still
+# the limit felt in recent_limit_deaths.
+WEEK_BUDGET_MINUTES = 1800  # backstop only; the death brake is the real governor
 # And the week has to be spread, not raced. A weekly budget alone front-loads:
 # the loop would spend all thousand minutes by Wednesday and leave the back half
 # of the week with a machine that starts and dies in seconds, which is the same
@@ -430,7 +442,7 @@ WEEK_BUDGET_MINUTES = 1400  # backstop only; the death brake is the real governo
 # it running every day, and a seventh is still one full 120-minute window plus
 # change, which is the shape the numbers want (a tree every 2.4 minutes in a
 # 40-to-70 minute run against every 25 minutes in a run under 20).
-DAY_BUDGET_MINUTES = 200
+DAY_BUDGET_MINUTES = 260   # a seventh of the week, moved with it
 LIMIT_DEATH_WINDOW_HOURS = 6   # how far back to look for "the window is shut right now"
 LIMIT_DEATHS_TO_BACK_OFF = 2   # one can be a blip; two in six hours is the wall
 PROBE_MINUTES = 20          # kept for the older callers that read it
