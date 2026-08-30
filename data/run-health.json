@@ -2526,6 +2526,34 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-30T11:49:08+00:00",
+   "date": "2026-08-30",
+   "run_id": "33309863922",
+   "minutes": 63.6,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 341,
+   "denials": 31,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(file), Bash(for), Bash(mkdir), Bash(python3), Bash(rm), Bash(set), Bash(tail)",
+   "ended": "success",
+   "tokens": 104833611,
+   "claims_held": [],
+   "commits": 16,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "vancouver",
+     "trees": 4
+    },
+    {
+     "city": "malaga",
+     "trees": 0
+    }
+   ],
+   "trees": 4,
+   "logged": true
   }
  ],
  "schedule_changes": [
