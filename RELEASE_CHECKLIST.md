@@ -35,7 +35,7 @@ of them can be automated here, and none of them may be skipped.
 - [ ] Magic-link sign-in arrives and works
 - [ ] Save a tree, see it on My trees, see it on the website signed in as the same person
 - [ ] Photograph a tree, see it in My trees
-- [ ] Set a display name and a picture, see them on My trees
+- [x] Set a display name and a picture, see them on My trees (Hidde, 2026-08-30)
 - [ ] Follow somebody, watch both counts move
 - [ ] Send a tree and a piece of feedback, find both rows in Supabase
 - [x] **Delete the account and confirm everything is gone** (2026-08-27, proven; see below): saves, visits, profile, avatar file, follows in both directions. This is the promise the whole account track was opened on, and Apple requires a working deletion path. **This one is now a command rather than a checklist item**: `SUPABASE_SERVICE_KEY=... python3 scripts/account_delete_test.py` makes a throwaway account, gives it one of everything, signs in as it, calls `delete_user()` the way the button does, and prints what is left. It needs the service key, which is Hidde's to hand over or to run himself.
