@@ -1,0 +1,79 @@
+{
+  "leads": [
+    {
+      "candidate": "Bald oak (Roverella) sub-status/undated details",
+      "note": "not a separate lead; see blocked list"
+    },
+    {
+      "candidate": "Populus nigra, Torrazzuolo Ecological Rebalancing Area, Via Imperiale, Nonantola",
+      "species": "Populus nigra (Black poplar)",
+      "location_hint": {
+        "latitude": 44.690314,
+        "longitude": 11.104858
+      },
+      "reason": "Access uncertain rather than confirmed private or confirmed public. The Torrazzuolo reserve has marked trails and bird-watching hides open to visitors, but the tree itself grows on land of the Partecipanza Agraria di Nonantola, a historic agricultural collective, at 'an important hydraulic junction' inside the reserve; no source states whether that specific spot sits on the public trail or on bordering farmland, and FAI runs the site as a guided-visit event ('Alla scoperta dell'Oasi Naturale del Torrazzuolo'), which suggests normal access may be by guided visit rather than freely open. A phone call to the Partecipanza Agraria (059 549 046) or the comune's environment office (059 896 687) would settle it in one message. Register: MASAF sheet 01/F930/MO/08, girth 505cm, height 36m; regional PatER record gives crown diameter >28m but no age.",
+      "sources_checked": [
+        "https://ambiente.regione.emilia-romagna.it/it/parchi-natura2000/aree-protette/are/aremo07",
+        "http://bbcc.regione.emilia-romagna.it/redirect_detail?s_id=254683",
+        "https://www.informafamiglie.it/unione-sorbara/ambiente-solidarieta-consumo/progetti-educazione-ambientale/il-torrazzuolo-area-di-riequilibrio-ecologico"
+      ]
+    },
+    {
+      "candidate": "Oak (Quercia), Via del Luzzo, Modena",
+      "species": "Quercus sp.",
+      "reason": "Named in the comune's 2015 monumental-tree census ('the oak of Via del Luzzo', noted for its shape) but only one source found in this pass, no address number, no size or age, and 'Via del Luzzo' also turns up as a private villa development ('Vill. Zeta - Urban Villas'), which raises an unresolved access question. Needs a second source and a precise location before it can be verified.",
+      "sources_checked": [
+        "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio"
+      ]
+    },
+    {
+      "candidate": "Yew (Tasso), private residence, Via Celestino Cavedoni 25, Castelvetro di Modena",
+      "species": "Taxus baccata",
+      "location_hint": {
+        "latitude": 44.487617,
+        "longitude": 10.908156
+      },
+      "reason": "Not researched this pass (17.8km out, time-boxed). Register address (a specific residential street number) reads as a private home rather than public ground; treat as likely blocked until a source confirms otherwise.",
+      "sources_checked": []
+    },
+    {
+      "candidate": "Two trees in Correggio (Reggio Emilia province): Tasso at Via Borgovecchio 39, and Platanus acerifolia at Via Mandriolo Superiore",
+      "reason": "Not researched this pass: 17.9-18.2km out and in a different province, plus a different city's page. Left for a Correggio/Reggio pass rather than folded into Modena.",
+      "sources_checked": []
+    },
+    {
+      "candidate": "Populus nigra, Ronchi, Via Argini Nord, Crevalcore (Bologna province)",
+      "reason": "Not researched this pass: 20km out, in Bologna province, a different city's page.",
+      "sources_checked": []
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Cedar of Lebanon (Cedrus libani), Villa Montecuccoli park, Baggiovara, Modena",
+      "species": "Cedrus libani",
+      "reason": "Access restricted. The regional PatER record itself states the villa has been 'closed to the public for over 10 years' and is currently being planned for conversion into a hospice; not confirmed visible from any public road. This is Modena's most spectacular candidate by measurement (over 200 years old, 36m tall, 530cm girth, called 'the dean of Modena's monumental trees' by the comune's own 2015 press release) and should be revisited the moment the villa reopens or a source confirms the tree is visible from Via Jacopo da Poerto Sud.",
+      "sources_checked": [
+        "http://bbcc.regione.emilia-romagna.it/redirect_detail?s_id=267723",
+        "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio",
+        "https://www.hospicemodena.it/lhospice/villa-montecuccoli/"
+      ]
+    },
+    {
+      "candidate": "Roverella (Quercus pubescens), Azienda agricola Seghezza, Via Pioppe 177, San Cesario sul Panaro",
+      "species": "Quercus pubescens",
+      "reason": "Private agricultural land ('all'interno dell'azienda agricola Seghezza', surrounded by cultivated fields). No source indicates public access.",
+      "sources_checked": [
+        "http://bbcc.regione.emilia-romagna.it/redirect_detail?s_id=254672"
+      ]
+    },
+    {
+      "candidate": "Cork oak (Quercus suber), park of Villa Vigarani Guastalla ('Villa Clotilde' in the register), Via Dante Alighieri, Fiorano Modenese",
+      "species": "Quercus suber",
+      "reason": "Privately owned villa, now housing a corporate ceramics collection (Emilceramica); visits are by guided tour, not open ground. The register's 'Villa Clotilde' address matches Villa Vigarani Guastalla's address exactly (Via Dante Alighieri), and a rare/unique cork oak is described at both, so treated as the same tree under two names.",
+      "sources_checked": [
+        "https://www.fioranoturismo.it/en/villas-and-monuments/villas-of-fiorano/villa-vigarani-guastalla",
+        "https://www.fioranoturismo.it/en/nature/parks"
+      ]
+    }
+  ]
+}
