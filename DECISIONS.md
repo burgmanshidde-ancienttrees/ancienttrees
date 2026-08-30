@@ -1,5 +1,34 @@
 # Decisions
 
+## 2026-08-30 - Saving and collecting need an account, on both surfaces
+
+Hidde, in one thread: "bewaren moet niet werken als je uitgelogd bent", then "al
+die functies moeten mensen naar inloggen pushen", then, asked specifically about
+the camera, "een boom moet onder een account vallen dus ja."
+
+**What changed.** The website's save heart wrote to localStorage and asked once a
+visit without ever blocking. It now opens the sign-in dialog and stores nothing,
+and asks every time, because a gate that gives up is not a gate. The account is
+the source of truth; `at_saved_v1` survives only as a per-device cache written by
+somebody signed in.
+
+**What did not have to change.** The app already required an account for both the
+heart and the camera. The two surfaces agree again rather than one being brought
+to the other.
+
+**The argument against it, made and overruled.** All our traffic is cold search
+visitors, and a sign-in wall on the first heart loses most of them. Hidde heard
+that and ruled anyway. The reasoning on his side is stronger than the funnel
+one: two stores merged as a union is where the drift lives, and it produced a
+real fault the same morning (saved trees rendering as cards called "null" on
+/account), and browser storage loses a collection to seven days of Safari
+inactivity, which is exactly the trip this product is for.
+
+**What this does NOT gate.** Reading. Every tree, story, photograph and location
+stays free and open with no account, which is the paywall line he set on
+2026-08-18 and is untouched by this.
+
+
 One dated entry per decision that shapes the product, newest first: what was decided, by whom, and why. This file exists because the 2026-07-27 assumption audit showed decisions scattered across five documents and chat, which is how observations silently harden into rules. New decisions land here the day they are made; older ones migrate when a document touching them is edited anyway. The standard here is the lightweight ADR (Architecture Decision Record) practice, ours-sized.
 
 - **2026-08-30 - Hidde (session): the app measures what people do in it, through PostHog EU, and it gets its own table in the digest.** Asked whether the app had any analytics at all, the honest answer was none: crashes were covered by MetricKit since 08-27 and behaviour was not, so nothing could say whether anybody opens the map, taps Take me there, or comes back. His yes to a tool came with "het is wat het is" about the dependency; shown the benchmark teardowns he chose PostHog on their EU cloud, and asked whether the numbers should join the site's table in the digest he said **"eigen tabel"**.

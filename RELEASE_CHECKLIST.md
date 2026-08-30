@@ -164,4 +164,10 @@ want it to.
 ## The two open product calls, which are his
 
 - Whether following shows a follower anything. Today it counts and nothing else.
-- Whether the camera stays behind a sign-in wall for a signed-out person.
+- ~~Whether the camera stays behind a sign-in wall for a signed-out person.~~
+  **Answered 2026-08-30: it stays.** Hidde: "een boom moet onder een account
+  vallen dus ja", said while ruling that saving must not work signed out either.
+  Nothing had to be built: every real route into the collect sheet already goes
+  through `openCollect()`, which requires an account. The launch-argument routes
+  stay open on purpose so the sweep can photograph those screens on a simulator
+  that has never signed in.
