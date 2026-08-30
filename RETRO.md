@@ -38,9 +38,34 @@ fixed cost the 2026-08-05 retro found from the other side (150k to 200k tokens
 per pass regardless of yield, one agent reading 86KB of corpus before starting);
 this is what it looks like on the clock.
 
-Not yet measured, and the obvious next question: WHAT the nineteen minutes go
-on. Orientation, passcheck, the claim, and the dispatch are all in there and
-nobody has split them.
+**Split the same day, using the claim commit as the divider**, because a claim
+is the moment a run stops deciding and starts working:
+
+| phase | median |
+|---|---|
+| start to claim: read state, pick the work, passcheck, claim | **6 min** |
+| claim to first data on disk: the pass actually researching | **15 min** |
+
+So the overhead is six minutes and the rest is the work. The first framing above
+("a third of a run is spent starting up") was too easy on itself: verifying a
+tree costs what it costs, and there is no fat in the opening to cut.
+
+**Which moves the finding.** Every one of the six runs that produced nothing had
+ALREADY CLAIMED, between three and twelve minutes in. They did not fail to
+start; they were killed mid-pass. That is the usage limit, not the structure,
+and the dial for it is WEEK_BUDGET_MINUTES, raised the same day from 1400 to
+1800 after Hidde said he was at 57 percent of the week while the minutes claimed
+74.
+
+**Two mechanisms checked and found already sound**, so nobody rebuilds them:
+append-after-every-tree holds (BRIEF_RESEARCH, since Crete), and a night-run
+claim expires at the workflow's own timeout plus half an hour, derived from
+nightly.yml rather than remembered, so a dead run cannot lock a city.
+
+**What is still not answerable from this data:** why the first tree takes
+fifteen minutes. Whether that is inherent (two independent sources, alive check,
+pin) or a pass drifting breadth-first against its own depth-first rule cannot be
+told from commit timestamps. It needs a transcript, not a measurement.
 
 
 ## 2026-08-09
