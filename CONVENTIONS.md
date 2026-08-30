@@ -322,3 +322,95 @@ seconds of reading at an ordinary pace, and that clock starts only once the eye
 has found them. Ours ran 1.4 seconds and was gone before it could be read. It
 is 2.4 now, with a tap taking it away sooner and no appearance at all when the
 app comes back from the background.
+
+---
+
+## A permission somebody refused (2026-08-30)
+
+**Reference: Apple Maps, driven directly rather than read about.** Location was
+revoked for com.apple.Maps on a simulator and the app was walked with "Don't
+Allow" tapped, which is the only way to be sure what it does. Screenshots in
+docs/conventions/. Apple's own map app is the strongest reference we have for
+this, because it is the same product shape as ours and it is written by the
+people who wrote the permission system.
+
+**What it does, in the order you meet it:**
+
+1. **The map works completely.** Every control, search, the sheet, all of it.
+   Nothing is blocked and nothing is greyed out.
+2. **It does NOT pretend to know where you are.** It zooms out to a regional
+   view instead of centring on a guess. There is no fake blue dot and no
+   distance to anything.
+3. **A pill sits at the top of the map, permanently: "Location Services is Off
+   >".** In the app's accent colour, with a chevron, always visible while the
+   state lasts. Not a banner that dismisses, not a toast, not a modal on
+   launch. It is a piece of the map's furniture for as long as the state is
+   true.
+4. **Tapping it does NOT jump to Settings.** It opens a sheet first:
+
+   > **Maps works best with Location Services turned on.**
+   > You'll get turn-by-turn directions, estimated travel times and improved
+   > search results when you turn on Location Services for Maps.
+   > [ Turn On in Settings ]  [ Keep Location Services Off ]
+
+   Three things in that sheet are worth copying exactly. The title says what
+   the app CANNOT DO WELL, not that you refused something. The body lists
+   named features rather than naming the permission. And the second button is
+   "Keep Location Services Off" rather than "Cancel", so declining a second
+   time is a decision somebody makes rather than a dialog they escape.
+5. **Every control that needs location leads to the same sheet.** The recentre
+   arrow raises it too, verified separately. Not one of them is a dead button
+   that silently does nothing, which is the failure this rule mostly exists to
+   prevent.
+
+**Apple's written rule agrees and adds the constraint.** Rather than reporting
+an error when somebody reaches a feature whose permission is denied, explain
+why it cannot be used and provide a link to where they can toggle it on. The
+system dialog fires once per permission ever, so after a refusal there is no
+second prompt at any price: `UIApplication.openSettingsURLString` opens our own
+page in Settings and is the only route back. There is no supported way to
+deep-link a single toggle, which is why handing somebody the page beats writing
+out a tap-by-tap path.
+
+**Reference: AllTrails, from Hidde's own phone (2026-08-30).** A plain system
+alert, not a designed screen: "AllTrails heeft toegang nodig tot je exacte
+locatie tijdens het navigeren", one sentence of body saying the same thing, and
+[Oke] / [Annuleren]. Two things it confirms and one it gets wrong. It confirms
+that a plain alert is enough, no illustration and no custom sheet, and that the
+title should name THE FEATURE ("tijdens het navigeren") rather than the
+permission. What it does not do is say where the setting is, which is the half
+Hidde asked for and the half our own measurement says is necessary.
+
+**MEASURED, and it changes the recommendation: `openSettingsURLString` did NOT
+land on our app's page.** Tested 2026-08-30 on iOS 26.5 with the real path,
+somebody tapping "Don't Allow" on the system dialog and then our chip. It
+opened the ROOT of Settings. The AncientTrees pane exists and is reachable, but
+it lives at Settings > Apps > AncientTrees > Location, which is four steps from
+where the button drops you, and iOS 26 moved apps under an "Apps" row that is
+most of a screen down from the top. Nothing on screen says any of that.
+
+Caveat kept honestly: this was a Debug build on a simulator, and a real App
+Store install may land on the pane. But the conclusion is the same either way,
+because we cannot tell which one a given phone will do, and the cost of naming
+the path when the button happened to work is one line of small type.
+
+**So the sheet names the path.** One line, in the app's own words, under the
+buttons: Settings > Apps > Ancient Trees > Location. Not a numbered tutorial
+and not an illustration, which is the overbuilt version of this and ages badly
+every time Apple moves a screen. One line, so somebody who lands at the top of
+Settings knows what they are looking for.
+
+**Degrade before you explain.** Where the task can still be finished another
+way, do it that way and say why it changed. A refused camera opens the library;
+a refused photo library still shows the picker and asks where the tree stands.
+Explaining a dead end is worth less than not having one.
+
+**And a permission REFUSED is not a fact MISSING.** They must never share a
+sentence. "Your photograph does not say where it was taken" is true of a
+screenshot and false of somebody who refused the library, and the second person
+cannot act on the first sentence.
+
+Read and driven 2026-08-30:
+- Apple Maps on iOS 26.5, location revoked via `simctl privacy revoke`
+- https://developers.apple.com/design/human-interface-guidelines/patterns/accessing-private-data/
+- https://useyourloaf.com/blog/open-settings-url/
