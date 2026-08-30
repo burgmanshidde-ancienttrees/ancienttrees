@@ -1,0 +1,177 @@
+{
+  "city": "Modena",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "",
+  "meta_description": "",
+  "question_answer": "",
+  "question_meta": "",
+  "question_context": "",
+  "faq": [],
+  "trees": [
+    {
+      "id": "mod_003",
+      "name": "The Oak of the Giardino Ducale",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 175 years, planted 1840-1854",
+      "age_min": 170,
+      "age_max": 186,
+      "girth_cm": 540,
+      "height_m": 25,
+      "location": {
+        "address": "Giardino Ducale Estense, near the Corso Canalgrande / Corso Cavour entrance, Modena",
+        "latitude": 44.6488,
+        "longitude": 10.9325,
+        "neighbourhood": "Centro storico, Modena"
+      },
+      "story": "",
+      "verified_sources": [
+        "https://www.officinadellambiente.com/it/articolo.php?idl1=0&idl2=0&id=4399",
+        "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2022/3/ai-giardini-ducali-intervento-di-potatura-in-201ctree-climbing201d",
+        "https://www.lapressa.it/articoli/parola_d_autore/la-quercia-secolare-patriarca-del-giardino-pubblico-bisognoso-di-cure",
+        "register (regional PatER, Emilia-Romagna, Parchi e Giardini record id 196738): describes the same oak at the Corso Canalgrande entrance, trunk diameter 172cm (matches the ~540cm circumference reported elsewhere)"
+      ],
+      "access": "Free. Giardino Ducale Estense is Modena's main public garden, open daily (roughly 6:30-23:30 in summer, 7:00-20:30 in winter), no ticket or appointment.",
+      "transport": "In the historic centre, an easy 10-minute walk from Piazza Grande / the Duomo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Veteran and actively managed: lightning damage, a dynamic cable-consolidation system, and wood decay reported in 2019. Pruned by certified arborists in March 2022 per the comune. Pin marks the Corso Canalgrande side of the garden, not the trunk.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mod_004",
+      "name": "The Plane Tree of the Autostazione",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented; the oldest plane tree in the city",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 425,
+      "height_m": null,
+      "location": {
+        "address": "Piazzale of the Autostazione (coach/bus station), Via Benedetto Bacchini, Modena",
+        "latitude": 44.65059,
+        "longitude": 10.91933,
+        "neighbourhood": "Cittanova, Modena, near the railway station"
+      },
+      "story": "",
+      "verified_sources": [
+        "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio",
+        "https://ilregistrodeglialberi.it/5196-platano-comune-modena-mo-emilia-romagna"
+      ],
+      "access": "Free. Stands in a flowerbed roughly at the centre of the public square in front of Modena's Autostazione (coach station) on Via Benedetto Bacchini, open ground, no gate or appointment.",
+      "transport": "About 5 minutes' walk from Modena's main railway station (Modena centrale); the coach station itself is a public transport hub.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth 425cm dates to Capodarca's 1986 survey and the citizen registry notes the trunk has grown since, so treat it as a floor. Last confirmed present October 2021; worth reconfirming with a current photo.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mod_001",
+      "name": "The Holm Oak of the Cortile del Leccio",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "about a century old (disputed, see notes)",
+      "age_min": 100,
+      "age_max": 250,
+      "girth_cm": 270,
+      "height_m": 15,
+      "location": {
+        "address": "Cortile del Leccio, Complesso San Paolo, Via Francesco Selmi 67, Modena",
+        "latitude": 44.643022,
+        "longitude": 10.924992,
+        "neighbourhood": "Historic centre, Modena"
+      },
+      "story": "",
+      "verified_sources": [
+        "https://fondoambiente.it/luoghi/cortile-del-leccio",
+        "https://www.theaboutmagazine.it/cortile-del-leccio-modena",
+        "register: MASAF national monumental trees, sheet 04/F257/MO/08 (Complesso di San Paolo, Via Selmi 67, Quercus ilex, girth 270cm, height 15m)"
+      ],
+      "access": "Free. Reached via a corridor from Via Francesco Selmi into the courtyard of the former San Paolo monastery complex, now home to the university law faculty library, a EU documentation centre, and a cafe/coworking space; the courtyard itself is open to the public without an appointment.",
+      "transport": "In Modena's historic centre, roughly 10-12 minutes' walk from Piazza Grande / the Duomo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Sources disagree on the age: theaboutmagazine.it gives 120 years, the FAI listing calls the tree 'secolare' without a figure.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mod_002",
+      "name": "The Bald Cypresses of Villa Ombrosa",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 430,
+      "height_m": 30,
+      "location": {
+        "address": "Parco Villa Ombrosa, Strada Vaciglio Nord, Modena",
+        "latitude": 44.631111,
+        "longitude": 10.938158,
+        "neighbourhood": "Villaggio Giardino / Vaciglio, Modena"
+      },
+      "story": "",
+      "verified_sources": [
+        "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio",
+        "https://ilregistrodeglialberi.it/5199-cipresso-calvo-modena-mo-emilia-romagna",
+        "register: MASAF national monumental trees, sheet 07/F257/MO/08 (Villa Ombrosa, Strada Vaciglio Nord 4, 'Insieme omogeneo di Taxodium distichum', urban)"
+      ],
+      "access": "Free. Parco Villa Ombrosa is a public municipal park (now also home to Modena's Casa delle Donne), with entrances from Strada Vaciglio Nord, Via Vignolese, Via San Remo and Via Levanto. No gate or appointment needed.",
+      "transport": "About 2 km from Piazza Grande; served by city bus lines 2, 3, 731, 740, 760, 820.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "One ensemble entry for the group of five. Girth and height are from a 2021 citizen-registry measurement of the largest specimen, not an average.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mod_005",
+      "name": "The Bald Cypress of Via del Pozzo",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Via del Pozzo, near the Policlinico (Largo del Pozzo 71), Modena",
+        "latitude": 44.6369,
+        "longitude": 10.9417,
+        "neighbourhood": "Buon Pastore-Sant'Agnese-San Damaso, Modena"
+      },
+      "story": "",
+      "verified_sources": [
+        "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio",
+        "https://www.lapressa.it/articoli/che_cultura/piante-in-citt-a-modena"
+      ],
+      "access": "Free. Stands along Via del Pozzo near the Policlinico hospital, on what both sources describe as public green space rather than hospital grounds; a street/public-area tree, no gate or appointment.",
+      "transport": "In the Buon Pastore-Sant'Agnese-San Damaso area, roughly 2.5km east of Piazza Grande; reachable by city bus to the Policlinico.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No girth, height or age recorded by either source, and no street number; the pin is Via del Pozzo near the Policlinico rather than the trunk.",
+      "location_precision": "approximate"
+    }
+  ]
+}
