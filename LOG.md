@@ -9,6 +9,35 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-30 (session) - An architecture review of the iOS app, and the six things it found, fixed
+
+Hidde asked for a read of the whole app as a lead iOS developer would do it, with improvements that do not change the experience, then said to carry on and left. 103 Swift files, ~22k lines. Nothing below changes a single pixel; the sweep and the layout gate confirm it.
+
+**What is genuinely good, said first because it is the unusual part.** The offline shape is right (the bundled catalogue is the floor, the network only ever replaces it, and the stale-download bug that would have emptied everybody's app on an update has been found and fixed). One network door with a fault layer behind it. And the comments, which record which bug caused which line, are worth more than the code they sit above.
+
+**Two real bugs, both silent, both fixed.**
+
+1. **A vote or a wrong-location report went out with an hour-old token and vanished.** WorthIt read `account.session?.accessToken` straight. There was nothing to see, because the control does not wait for the answer: the thumb went green and the row never arrived. Worse than sending nothing, since a submission is accepted on the publishable key and `nil` would have worked, while an expired bearer makes PostgREST refuse the whole call. Third copy of this bug after the profile picture and the profile itself, so it is a check now rather than a lesson: `netcheck.py` has a second door and refuses the shape. Verified by putting the bug back and watching it fail.
+2. **Three token refreshes fired at once on every launch and could sign somebody out.** Directly, and through the profiles and moderation loads. All three saw the same stale session and posted the SAME refresh token; Supabase rotates it, and past its reuse window the second answer is a refusal, which this code reads as a real sign-out and empties the Keychain. A good session thrown away because the app asked politely twice, which is the shape of an "ineens uitgelogd" that never reproduces. One refresh in flight now, shared by its waiters. The test posts two at once and counts requests: **2 before, 1 after**, so it was really happening.
+
+**Four things that were structurally wrong.**
+
+3. **Nine of thirteen stores were not main-actor isolated**, and they are exactly the ones written from background tasks. Swift 5 mode compiles that silently. That is why bug 2 was invisible rather than merely wrong.
+4. **The catalogue had no indexes**, so seven screens each worked out "the trees of this city" by scanning all 1,948 inside a computed property, which on a View re-runs every body pass; MapSearch rebuilt three of them per keystroke. Grouped once at load now. A test walks every city, country and species and asserts the index returns identical ids in identical order.
+5. **Seven files built their own Supabase request**, four by walking up from the submissions table with the number of `deletingLastPathComponent` calls load-bearing in a comment. Two had already shipped broken that way. Only the shared builder sets a timeout, so five ran on the system default of **sixty seconds**, in an app for standing under trees with poor signal. Hand-built requests 8 to 1, copies of the publishable key 3 to 1, and a test locks every endpoint's absolute URL to what the old code produced.
+6. **Decoding the catalogue ran on the main thread**, in both places. At launch that hides behind the opening cover; on pull-to-refresh it does not, and that one runs while somebody is dragging the map.
+
+**Dead code that read as live**, which is the entry a cold session actually gets hurt by: `ios/AncientTreesKit/` (four files, zero references anywhere, models already drifted behind the app's) is deleted, and `ios/README.md`, whose first bold line still said **"No app exists yet, and cannot yet"**, is rewritten to describe what is in `ios/` now.
+
+**Two gates were lying, and both are fixed.**
+
+- **The CI called every failed test a build that never happened.** This is the bug the 2026-08-29 session diagnosed correctly and could not push, because its token lacked the `workflows` permission; it asked whoever has it to apply the change. **Pushed now** (`4ff8a5e2`), found independently and landed with the same reasoning: a compiler names file, line and column, XCTest names file and line, so the column tells them apart. Checked against three real logs. A failed test still fails the job and now says which test.
+- **appsweep accepted a device name that does not exist**, built the whole app, photographed nothing, printed "0 screenshots" and exited 0 with "Now LOOK at them" underneath. A name matching nothing is a typo now, `--only` included, and a sweep that shot nothing fails.
+
+**Verified:** 89 unit tests, 26 UI tests, appfit 0 findings on 54 screens across two phones, 27 screens photographed and looked at, netcheck clean. `testTappingAPinOpensItsTree`, red in CI two runs running, **passes locally in 30 seconds**, so that failure is the runner and not the app: it sweeps a MapLibre map on a machine with no GPU. Worth watching rather than chasing.
+
+**FOR HIDDE, nothing blocking.** Two judgement calls I made alone because they are reversible: deleting `AncientTreesKit` (in the history if you want it back) and rewriting `ios/README.md`. And one thing I did not do: `TreeMap.swift` is 1,666 lines doing five jobs, and `TreeDetail` and `Collect` are over a thousand each. Splitting them is mechanical and safe, but it is a big diff for no behaviour, so it waits for you to say whether it is worth the churn.
+
 ## 2026-08-30 - Night run 2026-08-30 02:16 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 12.4 minutes of its 120 minute window, 91 turns, 19 commands refused by the allowlist, ended clean (success). 2 commit(s), none of them a published tree. Claims left behind: krakow, maastricht, warsaw, which block the top of the queue until they expire.
