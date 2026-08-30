@@ -218,8 +218,26 @@ jobs:
           # this log as one compiler error. Strict concurrency is the usual
           # culprit, because a permissive local Debug build waves through what
           # this job refuses (see SpeciesGlyph and handleTap in TreeMap.swift).
-          if grep -q "error:" /tmp/xcodebuild.log; then
+          #
+          # AND IT ANSWERED "DID NOT COMPILE" TO EVERYTHING, which is the same
+          # mistake pointing the other way. The test above was `grep -q
+          # "error:"`, and XCTest writes a failed assertion as
+          # `AncientTreesUITests.swift:432: error: -[...] : failed - ...`. So
+          # every ordinary test failure was announced as a build that never
+          # happened, and on 2026-08-30 a red pin test sent a session looking
+          # for a compiler error that did not exist (2026-08-30).
+          #
+          # The two are told apart by the COLUMN. A compiler names file, line
+          # and column; XCTest names file and line only. Linker and driver
+          # errors carry no file at all, hence the second alternative.
+          COMPILE_ERR=':[0-9]+:[0-9]+: error:|^(ld|clang)(\+\+)?: error:|^error:'
+          if grep -qE "$COMPILE_ERR" /tmp/xcodebuild.log; then
             echo "::error::The app did not compile, so no test could run. The compiler errors are above."
+            exit 1
+          fi
+          if grep -q "error:" /tmp/xcodebuild.log; then
+            echo "::error::The app built. Tests FAILED, named below. This is not a build problem."
+            grep -E ": error: -\[" /tmp/xcodebuild.log | sed 's/^.*: error: //' | sort -u
             exit 1
           fi
           # grep swallows the exit code, so ask xcodebuild again for the verdict.

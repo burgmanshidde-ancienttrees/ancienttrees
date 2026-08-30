@@ -355,6 +355,21 @@ def main():
     plan = [s for s in screens(sub) if not args.only or s[0] == args.only]
     devices = [d for d in DEVICES if not args.device or d[0] == args.device]
 
+    # A NAME THAT MATCHES NOTHING IS A TYPO, NOT AN EMPTY SWEEP.
+    #
+    # Both filters used to fall through silently, so `--device "iPhone SE"`
+    # (the list says "iPhone SE (sweep)") built the whole app, photographed
+    # nothing, printed "0 screenshots" and exited 0, with "Now LOOK at them"
+    # underneath. In a command whose entire reason to exist is that somebody
+    # looks at the output, nought is the loudest possible answer and it was
+    # being reported as the quietest.
+    if not devices:
+        sys.exit("no device called %r. The list is: %s"
+                 % (args.device, ", ".join(d[0] for d in DEVICES)))
+    if not plan:
+        sys.exit("no screen called %r. The list is: %s"
+                 % (args.only, ", ".join(s[0] for s in screens(sub))))
+
     manifest = {"subjects": sub, "shots": []}
     for name, devicetype in devices:
         udid = udid_for(name, devicetype)
@@ -388,6 +403,8 @@ def main():
                                       "args": extra, "path": str(path)})
 
     (out / "manifest.json").write_text(json.dumps(manifest, indent=1))
+    if not manifest["shots"]:
+        sys.exit("the sweep photographed nothing at all, so there is nothing to look at")
     print(f"\n{len(manifest['shots'])} screenshots in {out}")
     print("Now LOOK at them. That is the point of the command.")
 
