@@ -2,7 +2,7 @@
  "city": "Vancouver",
  "country": "Canada",
  "city_slug": "vancouver",
- "note": "Scouted 2026-08-23 (night run) from the City of Vancouver Heritage Register (opendata.vancouver.ca, dataset 'heritage-sites', category 'LANDSCAPE RESOURCES Trees'). 51 tree entries total, 25 carry a real street address and a named species (these leads); 26 are streetscape rows with no address and no single tree to point at (blocked). Licence: Open Government Licence - Vancouver (based on OGL-BC 2.0), free for any lawful use including commercial, attribution required. Next step: geocode each lead's address, then run the normal verify pass (2 sources, alive, exact spot). Vancouver is one of Hidde's 17 named cities (2026-08-19), so from-zero web research is allowed here if this shelf runs out.",
+ "note": "Scouted 2026-08-23 (night run) from the City of Vancouver Heritage Register (opendata.vancouver.ca, dataset 'heritage-sites', category 'LANDSCAPE RESOURCES Trees'). 51 tree entries total, 25 carry a real street address and a named species (these leads); 26 are streetscape rows with no address and no single tree to point at (blocked). Licence: Open Government Licence - Vancouver (based on OGL-BC 2.0), free for any lawful use including commercial, attribution required. Vancouver is one of Hidde's 17 named cities (2026-08-19), so from-zero web research is allowed here if this shelf runs out. VERIFY PASS 2026-08-30 (foreground, after three prior background attempts died with no output): 4 of the 25 leads promoted to data/research/vancouver-verified.json (501 W 12th, 453 W 12th, 2020 Comox, 1100 Chestnut pair), clearing the 4-tree floor. Useful discovery for future passes: opendata.vancouver.ca's 'public-trees' dataset (the City's street-tree inventory, separate from 'heritage-sites') carries real tree-level coordinates and trunk diameter for many street trees and can upgrade an address-only lead straight to location_precision confirmed when the tree shows up there by address+genus; it does NOT cover park or private-yard trees, so absence from it is not proof of anything. The remaining 21 unresolved leads (mostly wide address ranges like '2200-4400 BOUNDARY RD' or '1201-1399 BARCLAY ST', hard to place at tree level) were not attempted this pass; two (5872 Wales St, both entries) were newly blocked as private land, one (7128 Adera St) flagged as an inconclusive semi-gated-development access question.",
  "leads": [
   {
    "name": "Giant Sequoia",
@@ -33,16 +33,16 @@
    "address": "501 W 12TH AV",
    "heritage_register_id": "2522",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:43:00+00:00."
+   "status": "promoted",
+   "why": "PROMOTED 2026-08-30 (verify pass) to data/research/vancouver-verified.json as van_002 'The Normal School Red Oak'. Site is now City Square Shopping Centre, built around the preserved 1908-09 Provincial Normal School; public mall grounds. Shipped FLAGGED: only one source found (the register itself), no independent confirmation of the tree's existence/size/age. Approximate location (mall footprint, no tree-level coordinates found)."
   },
   {
    "name": "English Oak",
    "address": "453 W 12TH AV",
    "heritage_register_id": "2523",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "status": "promoted",
+   "why": "PROMOTED 2026-08-30 (verify pass) to data/research/vancouver-verified.json as van_001 'The City Hall Oak'. On the public grounds of Vancouver City Hall, southwest corner. Two sources (register + Nature Vancouver's City Hall grounds writeup), which DISAGREE on the planting story: Nature Vancouver ties it to the building's 1936 opening; Vancouver Heritage Foundation's site finder claims King George presented it on a 1945 visit, which is historically doubtful (no BC royal visit that year). Used 1936 as the age basis, flagged the discrepancy in verify_notes, did not silently pick a winner. Approximate location (SW corner of the building's grounds, not a taped tree point)."
   },
   {
    "name": "Cappadocian Maple",
@@ -81,8 +81,8 @@
    "address": "5872 WALES ST",
    "heritage_register_id": "2553",
    "municipal_designation": "Yes",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "status": "blocked",
+   "why": "CHECKED 2026-08-30 (verify pass), BLOCKED under hard rule 10: private residential land. This address is the Cooper House, a 1919 heritage residence on a corner lot (Wales St / E 44th Ave), given a Heritage Revitalization Agreement in 2003 (Vancouver council report 20031120/ph4). Heritage Vancouver Society's own 2006 newsletter ('Out on a Limb for Heritage') describes these very trees as standing 'on the property adjacent to the corner of Wales Street and East 44th Avenue', i.e. on the private residential lot, not on the street/boulevard. No source found states the trees are visible from or reachable from public ground, so the hard-rule-10 view-only carve-out (which requires a SOURCE saying visible, not our guess) does not apply. Real data recovered anyway, for whenever a future pass finds public-visibility evidence: girths 50 cm and 90 cm trunk diameter per the same newsletter."
   },
   {
    "name": "Tree of Heaven",
@@ -105,8 +105,8 @@
    "address": "1100 CHESTNUT ST",
    "heritage_register_id": "2540",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "status": "promoted",
+   "why": "PROMOTED 2026-08-30 (verify pass) to data/research/vancouver-verified.json as van_004 'The Planetarium Magnolias'. This single register line is actually a PAIR (register twins rule): two Soulange Magnolias planted 1912 outside the old Court House (now the VAG), rescued from destruction in 1966, replanted 1968 by the Vancouver Park Board flanking the ramp entrances to the H.R. MacMillan Planetarium/Space Centre in Vanier Park, per Heritage Vancouver Society's 2006 newsletter. Public museum-forecourt grounds. Approximate location (building footprint, not tree-level)."
   },
   {
    "name": "Japanese Maple (Variety Unknown)",
@@ -130,7 +130,7 @@
    "heritage_register_id": "2530",
    "municipal_designation": "Yes",
    "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00. CHECKED 2026-08-30 (verify pass), left as an unresolved lead rather than shipped or blocked: this address is now 'Shannon Wall Centre Kerrisdale', a ~10-acre redevelopment of a former private estate (Mansion, Coach House, Gate House retained; Adera House and Hudson House added as new condo buildings), marketed as a 'semi-gated' community. Could not confirm within the pass's time budget whether the copper beeches (presumably retained landscape trees from the original estate) stand on ground the public may freely enter, or behind the gating. Do not guess; a future pass should check the development's own landscape/heritage-tree preservation plan or a site visit/street-level image before deciding either way."
   },
   {
    "name": "Pin Oak",
@@ -177,8 +177,8 @@
    "address": "2020 COMOX ST",
    "heritage_register_id": "2541",
    "municipal_designation": "No",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "status": "promoted",
+   "why": "PROMOTED 2026-08-30 (verify pass) to data/research/vancouver-verified.json as van_003 'The Comox Street Wingnut'. Confirmed public street tree via the City's separate public-trees open dataset (asset_id 69572), which gave exact coordinates and a 116.8 cm trunk diameter, the largest of 43 wingnuts (both Caucasian and Chinese) in that dataset citywide. Also independently listed in Heritage Vancouver Society's 2006 newsletter as a 'must see' heritage tree. Shipped with location_precision CONFIRMED, the only one of this pass's four to reach that bar."
   },
   {
    "name": "Garry Oak",
@@ -201,8 +201,8 @@
    "address": "5872 WALES ST",
    "heritage_register_id": "2552",
    "municipal_designation": "Yes",
-   "status": "lead",
-   "why": "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', Open Government Licence - Vancouver (attribution required, commercial use allowed), fetched via opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/heritage-sites/exports/json 2026-08-23. NO COORDINATES in the source: this register carries street address only (often a number range), so every entry needs geocoding and the normal two-source verify pass before it can ship. dateoflastupdate: 2020-10-14T23:33:57+00:00."
+   "status": "blocked",
+   "why": "CHECKED 2026-08-30 (verify pass), BLOCKED under hard rule 10: private residential land, same reasoning and same source as register id 2553 (Douglas Firs) at this address, see that entry. Girth per Heritage Vancouver Society's 2006 newsletter: 80 cm trunk diameter."
   }
  ],
  "blocked": [
