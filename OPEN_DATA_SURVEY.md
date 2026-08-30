@@ -4,6 +4,22 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## Luxembourg: the ANF arbres remarquables register, imported 2026-08-30 (VERDICT: usable, CC0)
+
+**USABLE, and it is the whole country in one file.** The Administration de la nature et des forets publishes every tree classified as remarkable by grand-ducal regulation as open data at data.public.lu, currently the list under the regulation of 31 January 2025. **238 trees, tree-level WGS84 coordinates, 83 communes.** Imported to `data/registers/luxembourg-anf.json`.
+
+**Licence proven, read live at the source:** `https://data.public.lu/api/1/datasets/arbres-remarquables/` returns `license: cc-zero`, organization `Administration de la nature et des forets`, last update 2026-08-12. Read from the metadata endpoint rather than from a portal page or a search summary, which is the rule that keeps a verdict from outliving the fact.
+
+GeoJSON: `download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson`
+
+**What it gives, and what it does not.** Per tree: species, commune, cadastral section, coordinates, and `interet`, the reason the tree was designated (dendrologique, historique, paysager, ecologique, and combinations). That reason field is the most useful thing in it and almost no register has one: it is the state saying why this particular tree was worth protecting, which is the closest a register ever comes to handing you a story hook. What it lacks is the usual three: **no age, no girth, no vitality.** So every age here comes from a second source or stays empty, and whether a tree still stands is a per-tree check.
+
+**95 of the 238 give a genus rather than a species** ("Tilia sp.", "Quercus sp."). That is the publish-and-ask case, not a blocker.
+
+**Density: 13 walkable clusters of four or more within 2 km, covering 72 trees.** The best is Luxembourg City itself, 11 trees inside 2.5 km, which is two walks through the Petrusse and Alzette valley parks. Clervaux, Niederanven, Steinsel and Wincrange hold 8 each.
+
+**The second source is already mapped for you.** The Luxembourgish Wikipedia mirrors this register as "Lescht vun de bemierkenswaerte Beem zu Letzebuerg", with individual articles for the named trees citing the printed ANF and natur&emwelt monograph by page number. That is the same registry-join technique that carried Krakow, Warsaw and Vilnius, and here it earns its keep twice over: it is where the 2026-08-30 Luxembourg City pass caught **two dead trees the register still lists**, a copper beech in the City Museum courtyard removed in 2022 and one of the two Parc Amelie giant sequoias felled on 28 February 2026 with root rot. A register with no vitality field plus a wiki that records removals is a working pair.
+
 ## South Korea (Seoul #33): a promising national GIS API, licence unconfirmed, stalled here (scouted 2026-08-20)
 
 Found while `scout_next.py --target` pointed at Seoul (#33, no supply, no
