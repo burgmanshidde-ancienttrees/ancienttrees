@@ -185,8 +185,15 @@ struct ContentView: View {
                     // and deep links still land somewhere sensible.
                     if new == TabBar.collectTag { openCollect(); return }
                     if new == tab { clearPath(new) }
-                    Measure.event("tab", ["tab": TabBar.items.indices.contains(new)
-                        ? TabBar.items[new].title : String(new)])
+                    // ONLY A REAL SWITCH. Tapping the tab you are already on
+                    // empties that tab's stack, which is a different action
+                    // wearing the same gesture, and counting it as a visit made
+                    // Hidde's first session read as two Discovers a second
+                    // apart (2026-08-30, the first data this app ever produced).
+                    if new != tab {
+                        Measure.event("tab", ["tab": TabBar.items.indices.contains(new)
+                            ? TabBar.items[new].title : String(new)])
+                    }
                     tab = new
                 })
     }
