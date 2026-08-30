@@ -24,6 +24,10 @@
     "2026-08-23": {
       "note": "Fixed The Hague's stale intro count (21 to 30) and widened count-promises.ts to catch the 'N trees in all' phrasing shape, verified against the exact bug and the rest of the corpus (commit 9a957fdc).",
       "at": "2026-08-23T07:08:26+00:00"
+    },
+    "2026-08-30": {
+      "note": "Fixed the i18n staleness BLOCKER: rewrote the Dutch The Hague, Spanish Malaga and Japanese Kyoto overlays to match their English twins' post-hard-rule-10-removal counts and answers (29/9/17), removed the three stale tree entries, and fixed a same-class stale count inside malaga.json's own English story text. Commit pushed.",
+      "at": "2026-08-30T12:32:01+00:00"
     }
   }
 }
