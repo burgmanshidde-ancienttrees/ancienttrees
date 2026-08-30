@@ -414,3 +414,52 @@ Read and driven 2026-08-30:
 - Apple Maps on iOS 26.5, location revoked via `simctl privacy revoke`
 - https://developers.apple.com/design/human-interface-guidelines/patterns/accessing-private-data/
 - https://useyourloaf.com/blog/open-settings-url/
+
+---
+
+## Measuring what people do in the app (2026-08-30)
+
+**Reference: every benchmark app measures, and all of them do it in two or
+three separate layers.** Read off the Exodus Privacy teardowns of the shipping
+Android builds, which list the SDKs actually compiled into the binary rather
+than what a privacy policy claims. AllTrails was version 26.8.30, current on
+the day this was read.
+
+| App | Crash | Product analytics | Ad attribution |
+|---|---|---|---|
+| AllTrails | Crashlytics | Amplitude, Firebase Analytics | AppsFlyer, Branch, Facebook, AdMob |
+| Strava | Sentry | Firebase Analytics | Branch, Facebook |
+| Polarsteps | Crashlytics | Mixpanel, Firebase Analytics | AppsFlyer |
+| Komoot | Crashlytics | Firebase Analytics | Facebook |
+| PictureThis | Crashlytics | Firebase Analytics | Adjust |
+| iNaturalist | Crashlytics | none | none |
+
+**The three layers are separate decisions and get taken separately.** Crash is
+"did it break", and we have it already without a third party (MetricKit,
+Kit/Diagnostics.swift). Product analytics is "what did they do", which nobody
+here has. Attribution is "which advert sold this subscription", which is
+marketing-spend infrastructure and is the layer that drags in the ATT prompt
+and the consent question; it is worth nothing to a product that buys no ads.
+
+**iNaturalist is the proof that the middle layer is a choice rather than a
+requirement**, and it is the closest thing to us in posture: a naturalist app,
+a nonprofit, no advertising, crash reporting only. What it does not have is a
+paywall, and a trial that has to convert is precisely the question Amplitude
+exists to answer for AllTrails.
+
+**The convention is first-party events, not the SDK.** Amplitude and Mixpanel
+are hosted event tables with a dashboard on top; what they receive is a stream
+of named events with properties. Our website already sends exactly that shape
+to our own `events` table (`track()` in site/src/layouts/Base.astro), so the
+app copying that pattern IS the convention, minus a vendor. It also keeps hard
+rule 5 shut, needs no ATT prompt (first-party, no advertising identifier, not
+shared across companies) and adds nothing to the privacy label that would be
+linked to a person.
+
+Read 2026-08-30:
+- https://reports.exodus-privacy.eu.org/en/reports/com.alltrails.alltrails/latest/
+- https://reports.exodus-privacy.eu.org/en/reports/com.polarsteps/latest/
+- https://reports.exodus-privacy.eu.org/en/reports/de.komoot.android/latest/
+- https://reports.exodus-privacy.eu.org/en/reports/org.inaturalist.android/latest/
+- https://reports.exodus-privacy.eu.org/en/reports/cn.danatech.xingseus/latest/
+- https://reports.exodus-privacy.eu.org/en/reports/com.strava/latest/
