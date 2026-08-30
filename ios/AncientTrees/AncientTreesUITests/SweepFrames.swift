@@ -67,6 +67,7 @@ final class SweepFrames: XCTestCase {
         ("signin",       ["-tab=0", "-signin"], "signin-sheet"),
         ("paywall",      ["-tab=0", "-paywall"], "paywall-sheet"),
         ("primer",       ["-tab=0", "-primer"], "primer"),
+        ("refused",      ["-tab=0", "-refused"], "permission-recovery-location"),
         ("contribute",   ["-tab=2", "-settings", "-contribute"], "contribute-sheet"),
         ("feedback",     ["-tab=2", "-settings", "-feedback"], "contribute-sheet"),
         ("profile-edit", ["-tab=2", "-profile-edit"], nil),

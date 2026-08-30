@@ -35,6 +35,13 @@ struct TreeMap: UIViewRepresentable {
     /// rather than only in a list (Hidde, 2026-08-27: "kun je de bomen die je
     /// gefavoriet hebt een hartje icoon geven zoals de ticket op de map").
     var favourites: Set<String> = []
+    /// Somebody pressed the recentre button and we are not allowed to know
+    /// where they are. It used to `return` here, so the button was there, it was
+    /// tappable, and it did nothing at all: the same shape as the dead check-in
+    /// button that once shipped on 345 tree pages. Apple Maps raises its
+    /// recovery sheet from this exact control, verified 2026-08-30.
+    var onLocationRefused: (() -> Void)? = nil
+
     /// Tapping a tree of your own opens its page, the same as one of ours.
     /// A callback because this view knows nothing about navigation.
     var onSelectMine: ((UUID) -> Void)? = nil
@@ -214,7 +221,7 @@ struct TreeMap: UIViewRepresentable {
         // the app without looking at it, and untestable besides, which is how it
         // went missing on eight screens without a single gate noticing.
         if showsRecentre {
-            let recentre = RecentreButton(map: map)
+            let recentre = RecentreButton(map: map, onRefused: onLocationRefused)
             recentre.translatesAutoresizingMaskIntoConstraints = false
             container.addSubview(recentre)
             let lift = recentre.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -120)
@@ -1593,9 +1600,11 @@ enum MapLayers {
 /// is the one control you cannot leave out.
 final class RecentreButton: UIButton {
     private weak var map: MLNMapView?
+    private let onRefused: (() -> Void)?
 
-    init(map: MLNMapView) {
+    init(map: MLNMapView, onRefused: (() -> Void)? = nil) {
         self.map = map
+        self.onRefused = onRefused
         super.init(frame: .zero)
         backgroundColor = UIColor.systemBackground.withAlphaComponent(0.92)
         layer.cornerRadius = 10
@@ -1621,7 +1630,13 @@ final class RecentreButton: UIButton {
     @objc private func recentre() {
         guard let map else { return }
         let status = CLLocationManager().authorizationStatus
-        guard status == .authorizedWhenInUse || status == .authorizedAlways else { return }
+        guard status == .authorizedWhenInUse || status == .authorizedAlways else {
+            // Never silence. A control that answers a tap with nothing is worse
+            // than one that is not there, because the person tries it twice and
+            // concludes the app is broken.
+            onRefused?()
+            return
+        }
         map.showsUserLocation = true
         map.setUserTrackingMode(.follow, animated: true)
         if map.direction != 0 { map.setDirection(0, animated: true) }

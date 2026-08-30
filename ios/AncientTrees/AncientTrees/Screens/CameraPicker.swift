@@ -57,6 +57,26 @@ struct CameraPicker: UIViewControllerRepresentable {
         }
     }
 
+    /// THE CAMERA IS THERE AND WE MAY NOT USE IT, which is the only state that
+    /// earns an explanation. Distinct from a simulator or an iPod, where there
+    /// is no camera to talk about and the library is simply the right answer.
+    ///
+    /// Hidde, 2026-08-30: "zo'n zelfde melding wil je maken als iemand op de
+    /// camera optie klikt - ipv dat je direct door gaat naar de fotogalerij."
+    /// The silent fall-through below is still correct once somebody has been
+    /// told; what was wrong was doing it without a word, so a person who tapped
+    /// a button that says photograph a tree landed in Photos with no idea why.
+    static var isRefused: Bool {
+        isRefused(cameraAvailable: UIImagePickerController.isSourceTypeAvailable(.camera),
+                  authorization: AVCaptureDevice.authorizationStatus(for: .video))
+    }
+
+    static func isRefused(cameraAvailable: Bool,
+                          authorization: AVAuthorizationStatus) -> Bool {
+        guard cameraAvailable else { return false }
+        return authorization == .denied || authorization == .restricted
+    }
+
     func updateUIViewController(_ c: UIImagePickerController, context: Context) {}
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
