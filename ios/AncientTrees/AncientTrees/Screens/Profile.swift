@@ -38,6 +38,8 @@ struct ProfileView: View {
     @State private var signingIn = false
     @State private var confirmingDelete = false
     @State private var confirmingSignOut = false
+    /// A second tap used to start a second upload of everything. See below.
+    @State private var signingOut = false
     @State private var deleteFailed = false
     @State private var showingAccount = false
     @State private var showingLegal = false
@@ -624,14 +626,30 @@ struct ProfileView: View {
             .confirmationDialog("Sign out?", isPresented: $confirmingSignOut,
                                 titleVisibility: .visible) {
                 Button("Sign out", role: .destructive) {
-                    // THE QUEUE GOES UP BEFORE THE DOOR SHUTS. Signing out is
-                    // the last moment a valid token exists, and anything not
-                    // yet at the account is about to become the only copy
-                    // there is. Pushing here is what makes the clearing that
-                    // follows lossless rather than merely tidy.
+                    // THE QUEUE STILL GOES UP, IT JUST NO LONGER MAKES YOU
+                    // WAIT FOR IT. Signing out is the last moment a valid token
+                    // exists and anything not yet at the account is about to
+                    // become the only copy there is, so the push has to happen.
+                    // It used to happen IN FRONT of the sign-out: the dialog
+                    // closed, every photograph on the phone went up one at a
+                    // time, and nothing on screen changed until the last one
+                    // landed. Hidde pressed the button twice (2026-08-30:
+                    // "sign out lijkt soms wel een lag te hebben").
+                    //
+                    // The token is what the upload needs, not our copy of it,
+                    // and it stays valid for its own lifetime after we clear
+                    // the Keychain. So: take the session, shut the door, and
+                    // let the upload finish behind it. Nothing is lost that was
+                    // not already at risk of a force-quit.
+                    guard !signingOut else { return }
+                    signingOut = true
                     Task {
-                        await SightingSync.pushAll(account: account, sightings: sightings)
+                        let session = await account.freshSession()
                         account.signOut()
+                        if let session {
+                            await SightingSync.pushAll(session: session, sightings: sightings)
+                        }
+                        signingOut = false
                     }
                 }
                 Button("Cancel") { confirmingSignOut = false }
