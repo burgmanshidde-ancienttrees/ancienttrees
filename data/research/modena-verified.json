@@ -102,5 +102,30 @@
     "location_precision": "approximate",
     "curation_status": "flagged",
     "verify_notes": "Named by the comune's own 2015 census of 30 monumental trees (archiviostampa.comune.modena.it) as the oldest plane tree in the city, standing at the coach station. First documented in the 1980s by Dr Valido Capodarca and included in the 1986 book 'Emilia-Romagna: ottanta alberi da salvare' (Vallecchi, Florence) among notable trees of Modena province -- a genuinely old written record, cited as a second, independent source via ilregistrodeglialberi.it, a citizen tree registry that re-registered the specimen in October 2021. Girth: 425cm, but that figure dates to the 1986 survey; the registry itself notes the trunk has 'sensibly increased' since then with no updated measurement taken, so treat 425cm as a floor rather than the current girth. No age or height given by either source; leave both empty rather than guess. No news of removal or decline found; the October 2021 re-registration is the most recent confirmation of the tree's continued presence, which is a few years old rather than very fresh, so this is flagged for a next pass to reconfirm with a current photo or observation. Location is the flowerbed near the centre of the coach-station square (Piazzale Natale Bruni area, Via Bacchini); exact tree-level coordinates not found, so pin is approximate at the station's own coordinates (OSM node 'Bacchini autostazione')."
+  },
+  {
+    "id": "mod_005",
+    "name": "The Bald Cypress of Via del Pozzo",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Via del Pozzo, near the Policlinico (Largo del Pozzo 71), Modena",
+      "latitude": 44.6369,
+      "longitude": 10.9417,
+      "neighbourhood": "Buon Pastore-Sant'Agnese-San Damaso, Modena"
+    },
+    "verified_sources": [
+      "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio",
+      "https://www.lapressa.it/articoli/che_cultura/piante-in-citt-a-modena"
+    ],
+    "access": "Free. Stands along Via del Pozzo near the Policlinico hospital, on what both sources describe as public green space rather than hospital grounds; a street/public-area tree, no gate or appointment.",
+    "transport": "In the Buon Pastore-Sant'Agnese-San Damaso area, roughly 2.5km east of Piazza Grande; reachable by city bus to the Policlinico.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Included by name in the comune's own 2015 census of 30 monumental trees (archiviostampa.comune.modena.it) as the 'taxodium of via del Pozzo', one of the 30 specimens in public green areas. A second source, a lapressa.it feature on Modena's notable trees, independently describes the same tree: a 'solitary elderly bald cypress' (vegliardo solitario) on Via del Pozzo whose roots reach into water and grow pneumatophores (woody knee-like breathing roots) up to 2m tall, a visually striking and unusual feature for this climate. Neither source gives a girth, height or age, and neither gives a precise street number; the pin here is placed at Via del Pozzo near Largo del Pozzo 71 (the Policlinico's own address, the only fixed point either source ties the tree to), not at the exact trunk. A future pass should get an exact address or photo to sharpen the pin and take fresh measurements; no evidence of removal or decline was found in this pass."
   }
 ]
