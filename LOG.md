@@ -9,6 +9,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-30 (continuation of a window whose first attempt shipped 0 trees and stopped after 27 minutes with 93 unspent) - Riga published, madeira/menorca verify claims re-dispatched
+
+Picked up three standing claims (riga, madeira, menorca) the earlier attempt in this window left behind without shipping a tree.
+
+**Riga published, 0 -> 5 trees.** Found `data/research/riga-verified.json` sitting uncommitted with a finished write pass: an even earlier attempt had verified 5 trees (the Lucavsala Linden, the Ēbeļmuiža Oak, the Kaltiņi Oak, the Zasulauks Maple, and an unnamed canal-park oak) and written all 5 stories, but never assembled `data/cities/riga.json` or committed. Built the city file (intro, FAQ, oldest-tree question-page fields naming the Kaltiņi Oak per its highest age_max), ran `city_queue.py` and `city_names.py`, built the site and ran qa.py/superlatives.py/preflight.py clean, then deleted the now-stale research file and released the claim.
+
+**Madeira and menorca verify claims were staked but no verify work had happened** (0 trees, no research file for either). Madeira's claim referenced "12 fresh Wikidata candidates" from an ad hoc query that was never saved to disk, a small instance of the standing rule about writing findings as you find them; re-ran `wikidata_harvest.py madeira` to regenerate the same class of candidates properly into the standing feed (12 candidates, 9 with images) so future briefs see them too. Menorca's claim was solid: 12 unmined Balears register candidates within 20km already sat in `data/registers/balears-arbres-singulars.json`. Dispatched both as `verify` subagents in the background with full briefs (register/Wikidata candidates, blocked leads, host list); results pending, to be folded into a follow-up entry or the next run.
+
+Step 0/rung 2 (`health.py`) checked at the start of the window: clear, nothing broken, no open BLOCKER (the SessionStart hook's "broken" flags for the smoke test and deploy were stale/cancelled runs, not real failures).
+
 ## 2026-08-30 (continuation of a window whose first attempt shipped 0 trees and stopped after 18 minutes with 102 unspent) - Krakow +8, Nuremberg +1, Singapore +4
 
 Picked up a krakow verify claim the first attempt had left standing (15 minutes old, register candidates already fetched to disk) and finished it rather than re-orienting, then kept going with two more register-backed deepen passes since the window and the week's budget both still had room (week at 999/1800 min, no recent usage-limit deaths).
