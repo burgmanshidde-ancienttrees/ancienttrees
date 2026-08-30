@@ -71,7 +71,12 @@ struct SignInSheet: View {
             .accessibilityLabel("Close")
         }
         .scrollBounceBehavior(.basedOnSize)
-        .presentationDetents([.height(660), .large])
+        // 660 was measured against a sheet carrying the typed email route as
+        // well. With that hidden for 1.0 (Launch.emailSignIn) the same height
+        // left nearly half the sheet empty under the two buttons, which reads
+        // as a screen that failed to load rather than a short one. The height
+        // follows what is actually on it.
+        .presentationDetents([.height(Launch.emailSignIn ? 660 : 470), .large])
         .presentationDragIndicator(.visible)
         // One container with a name, so the layout sweep can measure the
         // sheet on its own rather than together with the screen behind it.
@@ -115,6 +120,7 @@ struct SignInSheet: View {
             }
             .disabled(account.state == .working)
 
+            if Launch.emailSignIn {
             HStack(spacing: 12) {
                 Rectangle().fill(.quaternary).frame(height: 1)
                 Text("or").font(.footnote).foregroundStyle(.secondary)
@@ -146,6 +152,7 @@ struct SignInSheet: View {
             .tint(brand)
             .clipShape(.capsule)
             .disabled(account.state == .working)
+            }
 
             problemLine
             footer

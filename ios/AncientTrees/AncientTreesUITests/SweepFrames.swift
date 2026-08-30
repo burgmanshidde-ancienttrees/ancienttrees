@@ -65,6 +65,7 @@ final class SweepFrames: XCTestCase {
         ("species-pick",  ["-tab=0", "-open=tree:ath_004", "-speciespick"], nil),
         ("directions",   ["-tab=0", "-directions"], nil),
         ("signin",       ["-tab=0", "-signin"], "signin-sheet"),
+        ("signin-email", ["-tab=0", "-signin", "-show-email"], "signin-sheet"),
         ("paywall",      ["-tab=0", "-paywall"], "paywall-sheet"),
         ("primer",       ["-tab=0", "-primer"], "primer"),
         ("refused",      ["-tab=0", "-refused"], "permission-recovery-location"),
