@@ -1,0 +1,166 @@
+{
+  "city": "Vancouver",
+  "country": "Canada",
+  "status": "needs_curation",
+  "intro": "Vancouver's own heritage register tracks its remarkable trees by street address, not by park, and what turns up is a run of civic survivors rather than old-growth giants: an oak that has held one corner of City Hall's lawn since the building opened, a magnolia pair the city rescued from a bulldozer and kept on a contractor's land for two years, the widest Caucasian wingnut on Vancouver's own street-tree books. None carries a confirmed planting date older than about a century, and the register says so honestly rather than guessing.",
+  "meta_description": "Vancouver's most remarkable trees: a City Hall oak, the city's widest Caucasian wingnut, and two magnolias rescued from a 1966 bulldozer.",
+  "question_meta": "Vancouver's most specifically dated tree is a pair of 1912 magnolias in Vanier Park; an undated wingnut on Comox Street may be older. Full list of 4.",
+  "question_answer": "Vancouver's most specifically dated remarkable tree is the pair of saucer magnolias at the H.R. MacMillan Space Centre in Vanier Park, planted in 1912 and about 114 years old. The Comox Street Caucasian wingnut, the widest of its kind on the city's own tree inventory, may be older still, but no record gives it an exact planting year.",
+  "question_context": "Vancouver's heritage tree register is built from street addresses rather than a forest survey, so what it turns up are civic and institutional survivors: trees that outlasted the buildings or events around them rather than trees left standing in old growth. The magnolias at the Space Centre have the clearest paper trail of the four, a documented 1912 planting outside the old Vancouver Court House, a rescue from destruction in 1966, and a 1968 replanting in Vanier Park by the Park Board. The Comox Street wingnut carries no planting date at all, only a trunk thick enough, at 116.8 centimetres across, to be the widest of 43 wingnuts on the city's own street-tree inventory, which argues for real age without proving it. City Hall's oak has two competing origin stories that disagree by nine years and do not both hold up, and the Normal School Red Oak outside City Square Mall has no story at all beyond its species and address. All four are free to see.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Vancouver?",
+      "a": "No exact planting record survives for most of Vancouver's remarkable trees. The most specific date on record belongs to the pair of saucer magnolias in Vanier Park, planted in 1912. The Comox Street Caucasian wingnut, the widest of its kind on the city's own inventory, may be older, but nothing dates it precisely."
+    },
+    {
+      "q": "Why aren't these old-growth rainforest trees?",
+      "a": "Vancouver's heritage tree register tracks remarkable trees by street address in the built city, not a survey of surviving old-growth forest. What it turns up is oaks on civic lawns, a mall courtyard and a street corner, not giants in a park reserve."
+    },
+    {
+      "q": "Did King George really give City Hall its oak tree?",
+      "a": "Two sources disagree. One says a small oak was planted in 1936, the year City Hall opened. Another says King George presented it on a visit in 1945, but George VI's only trip to British Columbia was in 1939, and he never returned to Canada after the war. Nobody has settled which account is right."
+    },
+    {
+      "q": "Are Vancouver's remarkable trees free to see?",
+      "a": "Yes. All four stand on public grounds or a public street: City Hall's lawn, the plaza of a shopping centre built around a former school, a West End street corner, and the open forecourt of a museum whose building charges admission but whose grounds do not."
+    }
+  ],
+  "trees": [
+    {
+      "id": "van_001",
+      "name": "The City Hall Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 90 years",
+      "age_min": 85,
+      "age_max": 95,
+      "location": {
+        "address": "453 West 12th Avenue, Vancouver, BC",
+        "latitude": 49.26072,
+        "longitude": -123.11449,
+        "neighbourhood": "Mount Pleasant (Vancouver City Hall grounds, southwest corner)"
+      },
+      "story": "Vancouver's heritage register lists this oak the way it lists buildings, and two accounts explain how it got there. They cannot both be right. Nature Vancouver's survey of the City Hall grounds says a small oak was planted in 1936, the year the building opened during the city's golden jubilee, and that it now fully occupies the southwest corner of the lawn. The Vancouver Heritage Foundation's page for the address says something else: that King George presented an oak on a visit in 1945. That version trips over its own date. George VI came to British Columbia once, on the royal tour of May 1939, and he did not travel to Canada again after the war. We have taken the 1936 planting as the likelier of the two, which puts the tree at about ninety, and anyone holding the paperwork that settles it should tell us.\n\nThe corner, at least, is not in dispute. City Hall went up in the depths of the Depression and opened in 1936 for the city's fiftieth birthday, and the oak has been filling its southwest corner through every argument the building has hosted since. Nobody has put a tape around the trunk. If you do, tell us what it reads.",
+      "verified_sources": [
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/ (record id 2523, heritage_register_id 2523, category LANDSCAPE RESOURCES Trees, English Oak, 453 W 12TH AV, municipaldesignationm=No)",
+        "https://naturevancouver.ca/looking-at-statues-plaques-and-trees-on-vancouver-city-halls-grounds/",
+        "https://www.heritagesitefinder.ca/location/453-w-12th-ave-vancouver-bc"
+      ],
+      "access": "Free. Stands on the public grounds of Vancouver City Hall; open daylight hours, no entry restriction.",
+      "transport": "Broadway-City Hall SkyTrain (Canada Line/Millennium Line), about 8 minute walk east along W 12th Ave.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "heritage_register_id": "2523"
+    },
+    {
+      "id": "van_002",
+      "name": "The Normal School Red Oak",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "555 West 12th Avenue, Vancouver, BC (City Square Shopping Centre, at the former Provincial Normal School building; register address given as 501 W 12th Ave)",
+        "latitude": 49.2609,
+        "longitude": -123.11649,
+        "neighbourhood": "Fairview"
+      },
+      "story": "The city's heritage register carries one line about this tree: Northern Red Oak, 501 West 12th Avenue. No age, no girth, no account of who put it there, and nothing else written about it anywhere we have looked, which is unusual for a tree on a register at all. So take what follows as the address talking rather than the tree.\n\nThat address is the Provincial Normal School, built in 1908 and 1909, a normal school being a teacher training college; British Columbia sent its future schoolteachers here. The building was given municipal heritage protection in 1986, and in 1989 Paul Merrick Architects put a shopping centre around it rather than over it, which is why the school's brick front still faces West 12th from inside a mall called City Square. The oak stands out on the grounds, a minute from the Broadway-City Hall SkyTrain entrance and a short walk along the same street from City Hall's own listed oak, which makes the two of them one easy stop.\n\nQuercus rubra is an eastern North American tree and did not reach this coast on its own, so somebody planted it on purpose. When, nobody appears to have recorded, and the school's dates are not an answer for the tree. If you know, tell us.",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "autumn colour",
+        "label": "late October into November, when a red oak turns the deep red it is named for"
+      },
+      "verified_sources": [
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/ (record id 2522, heritage_register_id 2522, category LANDSCAPE RESOURCES Trees, Northern Red Oak, 501 W 12TH AV, municipaldesignationm=No)"
+      ],
+      "access": "Free. On the public plaza/grounds of City Square Shopping Centre, built around the preserved 1908-09 Provincial Normal School building. Open to the public as a commercial mall precinct.",
+      "transport": "Broadway-City Hall SkyTrain station is directly adjacent (City Square Mall sits on top of/beside it).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "heritage_register_id": "2522"
+    },
+    {
+      "id": "van_003",
+      "name": "The Comox Street Wingnut",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 140,
+      "girth_cm": 367,
+      "location": {
+        "address": "2020 Comox Street, Vancouver, BC (at Chilco Street, West End)",
+        "latitude": 49.290714,
+        "longitude": -123.142956,
+        "neighbourhood": "West End"
+      },
+      "story": "Vancouver's street tree inventory has 43 wingnuts on its books, and this one, on a residential corner in the West End, is the largest Caucasian wingnut among them. The city measured the trunk at 116.8 centimetres across, which is about 367 centimetres around, under a crown 13.7 metres up. The runner-up, out on Yew Street, is five centimetres narrower.\n\nPterocarya fraxinifolia is a walnut relative from the Caucasus and the forests along the Caspian in northern Iran, and it has one unmistakable trick. Through July and August it hangs chains of winged nutlets from the branch tips, green strings half a metre long, and on a street tree like this one they hang low enough to take in a hand. Out of season, look for the deeply furrowed trunk and the long compound leaves; from a distance a wingnut is easy to walk past as a big ash.\n\nThe Heritage Vancouver Society put it in a 2006 newsletter round-up of the city's heritage trees worth the walk, with its own photograph. Nobody has dated it. The trunk points to a century or more, but this genus puts on girth quickly, so a thick wingnut is not automatically an old one and the number should be held loosely. If the century is right, it kept this corner while the West End around it went from houses to apartment towers.",
+      "best_time": {
+        "months": [7, 8],
+        "kind": "catkins",
+        "label": "July and August, when half-metre chains of winged nutlets hang from every branch tip"
+      },
+      "verified_sources": [
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/ (record id 2541, heritage_register_id 2541, category LANDSCAPE RESOURCES Trees, Caucasian Wing-Nut, 2020 COMOX ST, municipaldesignationm=No)",
+        "https://opendata.vancouver.ca/explore/dataset/public-trees/ (asset_id 69572, address '2020 COMOX ST', common_name CAUCASIAN WING NUT, genus PTEROCARYA species FRAXINIFOLIA, diameter_cm 116.8, height_m 13.7, geo_point_2d lat 49.29071399913094 lon -123.14295600005953)",
+        "Heritage Vancouver Society Newsletter, Volume 15 Number 2, April/May 2006, 'Out on a Limb for Heritage' by Emma Hall and Clint Robertson, https://www.heritagevancouver.org/pdf_newsletter/hvs-news-2006-02-screen.pdf"
+      ],
+      "access": "Free. Public street tree, City of Vancouver right-of-way at the Comox/Chilco corner in the West End.",
+      "transport": "About a 10 minute walk from Burrard/Robson downtown, or the #5 or #6 bus along Denman/Davie to the West End.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "heritage_register_id": "2541"
+    },
+    {
+      "id": "van_004",
+      "name": "The Planetarium Magnolias",
+      "species": "Saucer Magnolia (Magnolia x soulangeana)",
+      "age_estimate": "about 114 years, planted 1912",
+      "age_min": 108,
+      "age_max": 118,
+      "location": {
+        "address": "H.R. MacMillan Space Centre, 1100 Chestnut Street, Vanier Park, Vancouver, BC",
+        "latitude": 49.27635,
+        "longitude": -123.14498,
+        "neighbourhood": "Kitsilano (Vanier Park)"
+      },
+      "story": "These two magnolias spent two years parked in a landscape contractor's garden because he would not destroy them. In 1966 the province wanted the ground they stood on, outside the old Vancouver Court House downtown, for a new government fountain, and the pair was scheduled for disposal. The public objected loudly enough that the contractor hired to clear the site, K. Johnsen, moved the trees to his own property instead. In 1968 the Vancouver Park Board acquired them and replanted them in Vanier Park, flanking the two ramp entrances of what was then the H.R. MacMillan Planetarium and is now the Space Centre. The courthouse they were dug out of is today the Vancouver Art Gallery.\n\nThey went in as young trees in 1912, which puts them a little past a century; that figure comes from the recorded planting date rather than from anything measured on the trunk. A saucer magnolia is a hybrid raised outside Paris in the 1820s and named for the man who made it, Soulange-Bodin, and it flowers the way that reputation suggests: in late March and April, before a leaf appears, both trees fill with pink and white goblets on bare grey wood.\n\nThe rescue is set down in a 2006 Heritage Vancouver Society newsletter, the one detailed account of these trees we have found. The city register still lists them as a single line, and there are two of them, one at each ramp.",
+      "best_time": {
+        "months": [3, 4],
+        "kind": "flowers",
+        "label": "late March and April, when both trees flower pink and white on bare wood before the leaves"
+      },
+      "verified_sources": [
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/ (record id 2540, heritage_register_id 2540, category LANDSCAPE RESOURCES Trees, Saucer Magnolia, 1100 CHESTNUT ST, municipaldesignationm=No)",
+        "Heritage Vancouver Society Newsletter, Volume 15 Number 2, April/May 2006, 'Out on a Limb for Heritage', https://www.heritagevancouver.org/pdf_newsletter/hvs-news-2006-02-screen.pdf"
+      ],
+      "access": "Free to view from outside (grounds of the Museum of Vancouver / H.R. MacMillan Space Centre in Vanier Park, a public park); the Space Centre building itself charges admission but the ramp and its flanking trees are on open museum-forecourt grounds.",
+      "transport": "Vanier Park, about a 15 minute walk from Granville Island or across the Burrard Bridge from downtown; bus #2 or #22 to Cornwall/Cypress.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate",
+      "heritage_register_id": "2540"
+    }
+  ]
+}
