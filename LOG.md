@@ -9,6 +9,24 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-30 (session, with Hidde) - The app measures nothing, and now it measures six things
+
+He asked whether the app has analytics at all. It did not. Crashes were covered by MetricKit since 08-27 and behaviour was not, so nothing here could say whether anybody opens the map, taps Take me there, or comes back on day seven. The website has had its own `events` table since July; the app had no equivalent, and its feed downloads are invisible to the Cloudflare beacon, so we could not even count opens.
+
+**What the benchmarks actually do, read off the shipping binaries rather than the privacy policies** (Exodus Privacy teardowns, in `CONVENTIONS.md`). Everybody measures, in three separate layers. AllTrails runs Amplitude plus Firebase plus four attribution SDKs; Strava, Komoot, Polarsteps and PictureThis all run Firebase and one more. iNaturalist is the single exception with crash reporting and nothing else, and it is also the only one with no paywall.
+
+**His call: PostHog, EU cloud.** Free to 1M events a month, which is roughly 33,000 active users at our shape, and the free tiers were the right thing to be sceptical about: Mixpanel's fell from 100M to 1M and TelemetryDeck halved theirs in July. PostHog is the only one of them that can be self-hosted when that happens, so the escape hatch decided it.
+
+**NO SDK, and that is the part worth keeping.** PostHog publishes a Swift package and `Kit/Measure.swift` does not use it, because the package brings its own networking and would go round `Net.swift`, which `netcheck.py` exists to enforce. That would put the fault injection out of reach of the code path most likely to misbehave in a wood with no signal. What is left is one HTTP POST, which is what an analytics SDK is underneath. It also means no session replay and no feature flags, and we wanted neither today.
+
+Six events: `app_open`, `tab`, `tree_opened`, `directions`, `tree_saved`, `tree_visited`, `sighting_recorded`. Unlinked: an event name, the app version, the major OS version, and a random UUID the phone made for itself. No email, no account id, no coordinates, no advertising identifier, so no ATT prompt and nothing Apple would call tracking. The manifest declares it as Analytics rather than App Functionality, because nothing in the app works better for it.
+
+**The queue is not tidiness.** This app is used outdoors, so the moment somebody taps Take me there is the moment they are least likely to have signal. Dropping those would not make the data thinner, it would make it wrong, biased towards people standing in city centres with four bars.
+
+**Verified end to end**, without needing the dashboard: the endpoint accepts our exact payload shape (HTTP 200), the app builds, `netcheck.py` passes, and a real launch of the real binary left `measure.install.v1` in UserDefaults with NO `measure.queue.v1` beside it, which is the app saying the event went out and was accepted. Not verified: the other five events firing from taps, because input injection to the simulator was being held by another session's test runner. They are wired and compiled, and he will fire them by using the app.
+
+FOR HIDDE: two things wait on you. The website half is a separate decision because PostHog wants a cookie and we set none today, which changes what /privacy says. And putting these numbers in the daily digest needs a personal API key as a GitHub secret, which is worth doing once there is a month to read.
+
 ## 2026-08-30 (session, with Hidde) - What the app does when somebody says no
 
 Hidde asked whether we need conventional flows for a refused camera or location. We do, and the answer was not the one I gave first.
