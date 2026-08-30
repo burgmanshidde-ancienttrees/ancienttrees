@@ -643,10 +643,24 @@ struct ProfileView: View {
                     // not already at risk of a force-quit.
                     guard !signingOut else { return }
                     signingOut = true
+                    // NOTHING IS AWAITED BEFORE THE DOOR SHUTS. The first fix
+                    // moved the upload behind the sign-out and still awaited
+                    // freshSession() in front of it, which is a token refresh
+                    // and therefore a network round trip: Hidde still felt it
+                    // (2026-08-30, "sign out heeft wel nog steeds een kleine lag
+                    // maar niet heel erg"). The session we already hold is the
+                    // right one to use, and whether it is fresh is a question
+                    // for the upload rather than for the person leaving.
+                    let session = account.session
+                    account.signOut()
                     Task {
-                        let session = await account.freshSession()
-                        account.signOut()
-                        if let session {
+                        // A token good for another five minutes uploads now. One
+                        // that is not simply does not: those sightings stay on
+                        // the phone with syncedAt nil and go up on the next
+                        // sign-in, which is what that field is for. Refreshing a
+                        // token for an account we have just left is the wrong
+                        // trade against making somebody wait to leave.
+                        if let session, session.isFresh {
                             await SightingSync.pushAll(session: session, sightings: sightings)
                         }
                         signingOut = false

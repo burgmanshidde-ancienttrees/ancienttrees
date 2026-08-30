@@ -156,7 +156,11 @@ public struct Session: Codable, Sendable, Equatable {
     public var userId: String
     public var email: String?
 
-    var isFresh: Bool { expiresAt.timeIntervalSinceNow > 300 }
+    /// Internal until 2026-08-30, when signing out needed to ask it: the
+    /// sign-out uploads with the token already in hand rather than refreshing
+    /// one first, because a refresh is a network round trip standing between a
+    /// person and the door.
+    public var isFresh: Bool { expiresAt.timeIntervalSinceNow > 300 }
 }
 
 /// MAIN-ACTOR ISOLATED, like every store the app keeps in the root.
