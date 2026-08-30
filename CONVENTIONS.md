@@ -297,3 +297,28 @@ komoot with "Explore 7M+ routes". A gallery gets scrolled; the first frame is
 the only one everybody sees.
 
 Ours: `scripts/appstore_frames.py`, run after `appstore_shots.py`.
+
+## The splash screen, and how long it stays (2026-08-30)
+
+**Looked up:** Apple's Human Interface Guidelines, "Launching", and Android's
+"Splash screens" developer guide, both read on the day.
+
+**Apple allows this, and names it.** "If you need a splash screen, consider
+displaying it at the beginning of your onboarding flow... If you don't provide
+an onboarding experience, you might display your splash screen as soon as
+launching completes." What it refuses is a dressed-up LAUNCH SCREEN, which
+"isn't part of an onboarding experience or a splash screen, and it isn't an
+opportunity for artistic expression". Those are two different objects and
+conflating them is what made me tell Hidde four times that his idea was not
+possible.
+
+**Neither platform publishes a duration for a branded cover.** Android's
+"we recommend not exceeding 1,000 milliseconds" is the cap on its system
+splash's ICON ANIMATION, and its own advice for a slower start is a looping
+animation rather than a longer wait.
+
+**So the number comes from the sentence on it.** Seven words is roughly 1.7
+seconds of reading at an ordinary pace, and that clock starts only once the eye
+has found them. Ours ran 1.4 seconds and was gone before it could be read. It
+is 2.4 now, with a tap taking it away sooner and no appearance at all when the
+app comes back from the background.

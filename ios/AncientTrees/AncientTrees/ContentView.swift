@@ -565,9 +565,27 @@ struct ContentView: View {
                     .transition(.opacity)
             }
         }
+        // 2.4 SECONDS, and the number comes from reading rather than from a
+        // convention, because neither platform publishes one for this.
+        //
+        // Looked up 2026-08-30 (Hidde: "die toont te kort - kun je even
+        // benchmarken wat een normale lengte is"). Apple's Launching guidance
+        // names this exact object and allows it: "If you need a splash screen,
+        // consider displaying it at the beginning of your onboarding flow. If
+        // you don't provide an onboarding experience, you might display your
+        // splash screen as soon as launching completes." What it forbids is
+        // dressing up the LAUNCH SCREEN, which "isn't an opportunity for
+        // artistic expression". Android publishes 1,000 ms, but that is the cap
+        // on its system splash's icon animation, not on a branded cover.
+        //
+        // So the honest constraint is the sentence. "Trees worth the walk,
+        // wherever you are." is seven words, which is about 1.7 seconds of
+        // reading at an ordinary pace, and that clock only starts once the eye
+        // has found the words. At 1.4 it was gone before it could be read,
+        // which is exactly what he saw.
         .task {
-            try? await Task.sleep(for: .seconds(1.4))
-            withAnimation(.easeOut(duration: 0.35)) { showingCover = false }
+            try? await Task.sleep(for: .seconds(2.4))
+            withAnimation(.easeOut(duration: 0.4)) { showingCover = false }
         }
         .animation(.easeInOut(duration: 0.2), value: needsPrimer)
         // SIGNING OUT EMPTIES THIS PHONE (Hidde, 2026-08-29: "de favourites en
