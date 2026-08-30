@@ -201,12 +201,31 @@ def pipeline_status():
 
     try:
         import leads as _leads
-        ready = len(_leads.buckets()["ready"])
+        b = _leads.buckets()
+        ready = len(b["ready"])
         print(f"  ready to write    : {ready} lead(s)  (leads.py --ready lists them)")
         if ready < READY_FLOOR:
-            print(f"  *** the writable pile is under {READY_FLOOR}. Widening "
-                  f"data/genus-names.json is the cheap way to refill it: every word "
-                  f"added there turns leads into writable trees for nothing. ***")
+            # Which gap actually dominates decides which fix is cheap. Before
+            # 2026-08-30 readiness() never checked sourcing, so this pile was
+            # always "missing species" and genus-names.json was always the
+            # right advice. Now that a lead needs real evidence to count as
+            # READY (see leads.has_source_evidence), the dominant gap is
+            # usually "no source", which genus-names.json cannot fix at all:
+            # that needs an actual verify pass, not a word list.
+            miss_counts = {}
+            for _, _, miss in b["needs"]:
+                for m in miss:
+                    miss_counts[m] = miss_counts.get(m, 0) + 1
+            top = max(miss_counts, key=miss_counts.get) if miss_counts else None
+            if top and top.startswith("species"):
+                print(f"  *** the writable pile is under {READY_FLOOR}. Widening "
+                      f"data/genus-names.json is the cheap way to refill it: every word "
+                      f"added there turns leads into writable trees for nothing. ***")
+            elif top and top.startswith("source"):
+                print(f"  *** the writable pile is under {READY_FLOOR}, and the dominant "
+                      f"gap is unsourced leads ({miss_counts[top]} of them): a scrape, never "
+                      f"looked at by a pass. No script fills that; it needs an actual verify "
+                      f"pass (rung 4/5), not a refill. ***")
     except Exception as exc:
         print(f"  ready to write    : unknown ({exc.__class__.__name__})")
 

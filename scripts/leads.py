@@ -18,7 +18,13 @@ not as blocked. Fail open toward shipping.
 
     python3 scripts/leads.py                  the whole corpus, summarised
     python3 scripts/leads.py --city kyoto     one city, listed
-    python3 scripts/leads.py --ready          only leads with enough data to write
+    python3 scripts/leads.py --ready          only leads a pass has actually
+                                               sourced and that need just a story
+
+READY means a pass looked at this tree and left evidence (a register entry or
+a why/reason note), not merely that a name and a coordinate exist. A lead with
+neither is filed under NEARLY, missing "source", because it has never been
+verified and writing from it would be inventing facts to fit a template.
 """
 import argparse
 import glob
@@ -271,12 +277,46 @@ def classify(entry, blocking):
     return None
 
 
+def has_source_evidence(entry):
+    """Was this lead ever looked at by a pass, or is it a bare scrape?
+
+    A register entry (register_id/register_notes) or a why/reason field left
+    by a pass that actually considered the tree both count, per Step 2's
+    "one official register counts as one source" and the ship-rough doctrine
+    that a single source is fine to publish flagged. What does not count is
+    silence: a name, a coordinate and maybe photos, with nothing else.
+
+    That silence is exactly the shape of famous_trees.py's output. CLAUDE.md
+    is explicit about that file: "Treat that file as a research list, never
+    an import: its name matching is deliberately loose and has produced
+    nonsense." Its entries carry no register, no verify_notes and no why,
+    because no pass has ever confirmed them; the genus in `species` is a
+    guess read off the tree's own name, not a finding.
+    """
+    return bool(entry.get("register_id") or entry.get("register_notes")
+                or entry.get("why") or entry.get("why_not_published")
+                or entry.get("reason"))
+
+
 def readiness(entry):
     """Can a story be written from what we already hold, with no new research?
 
-    Needs a name to call it, a species to describe it, and a position to send
-    someone to. Anything else (age, girth, photo, second source) is optional by
-    ruling, so it is not checked here.
+    Needs a name to call it, a species to describe it, a position to send
+    someone to, and SOME evidence a pass actually looked at it. Age, girth,
+    photo and a second source are optional by ruling and not checked here;
+    a total absence of sourcing is not the same gap and is checked below.
+
+    Added 2026-08-30, the third time this file's own READY count was found to
+    include unresearched leads: LOG.md records it twice on 2026-08-29 (a
+    session that sampled a dozen READY leads across nine cities and found
+    only 11 carried real sources, and a second entry naming the same gap by
+    name) and the fix was left for "a session tightening what leads.py
+    --ready actually promises". Measured the day this was written: 401 of
+    446 READY leads were _famous-* entries with no register, no why, nothing
+    beyond a name and a guessed genus, mostly Japanese and Baltic giant-tree
+    lists with photos already attached. Writing a story from those would be
+    inventing facts to fill a template, which hard rule 2 forbids regardless
+    of how the gap arrived.
     """
     loc = entry.get("location") if isinstance(entry.get("location"), dict) else entry
     missing = []
@@ -287,6 +327,8 @@ def readiness(entry):
     if (loc.get("latitude", loc.get("lat")) is None
             or loc.get("longitude", loc.get("lng")) is None):
         missing.append("position")
+    if not has_source_evidence(entry):
+        missing.append("source (never looked at by a pass, only scraped)")
     return missing
 
 
