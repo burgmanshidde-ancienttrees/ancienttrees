@@ -2648,6 +2648,36 @@
    "cities": [],
    "trees": 0,
    "logged": true
+  },
+  {
+   "started": "2026-08-30T19:20:19+00:00",
+   "date": "2026-08-30",
+   "run_id": "33330077885",
+   "minutes": 20.9,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 162,
+   "denials": 29,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(nohup), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 29267503,
+   "claims_held": [
+    "taormina"
+   ],
+   "commits": 13,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "coimbra",
+     "trees": 4
+    },
+    {
+     "city": "rothenburg-ob-der-tauber",
+     "trees": 4
+    }
+   ],
+   "trees": 8,
+   "logged": true
   }
  ],
  "schedule_changes": [
