@@ -1064,6 +1064,46 @@ def _ago(n):
     return "%d days ago" % n
 
 
+
+def searched_for(rows, days=14):
+    """WHAT PEOPLE TYPED INTO OUR OWN SEARCH, which nothing has ever reported.
+
+    Hidde, 2026-08-29: "meten we eigenlijk wat mensen intoetsen op zoeken". We
+    do, and we have since the search box was built: search-form.ts sends the
+    typed text as the event's `detail` and it has been sitting in the events
+    table ever since. The digest selected `name` and never `detail`, so every
+    one of those rows was written and never read.
+
+    It is worth more per row than anything else on this page. Search Console
+    says what people typed into GOOGLE and never arrived from; this says what
+    somebody standing on our own site went looking for, which includes
+    everything we do not have. A term with no result is a request.
+    """
+    terms = {}
+    cutoff = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
+    for r in rows or []:
+        if not str(r.get("name", "")).startswith("search-"):
+            continue
+        if str(r.get("created_at"))[:10] < cutoff:
+            continue
+        t = (r.get("detail") or "").strip().lower()
+        if not t:
+            continue
+        terms[t] = terms.get(t, 0) + 1
+    if not terms:
+        return ["", "**What people typed into our search** (%d days)" % days, "",
+                "- nothing recorded. Either nobody searched, or the detail is "
+                "not arriving: check one row in the events table before "
+                "concluding the first."]
+    ranked = sorted(terms.items(), key=lambda kv: (-kv[1], kv[0]))[:20]
+    out = ["", "**What people typed into our search** (%d days, %d searches, "
+           "%d different terms)" % (days, sum(terms.values()), len(terms)), "",
+           "| Typed | Times |", "|---|---:|"]
+    for t, n in ranked:
+        out.append("| %s | %d |" % (t.replace("|", "/")[:48], n))
+    return out
+
+
 def product_section(today):
     """Block 1, and the only block that answers goal 1.
 
@@ -1083,7 +1123,7 @@ def product_section(today):
     # Every action we record, with yesterday's count and how long since the
     # last one of each kind. 800 rows covers months at current volume.
     try:
-        rows, _ = _supa("/rest/v1/events?select=name,created_at"
+        rows, _ = _supa("/rest/v1/events?select=name,detail,created_at"
                         "&order=created_at.desc&limit=800", key)
     except Exception as e:
         rows = None
@@ -1118,6 +1158,7 @@ def product_section(today):
         for name in sorted(last, key=lambda k: (-counts.get(k, 0), k)):
             out.append("- %-12s %d yesterday, last %s" % (
                 name + ":", counts.get(name, 0), _ago(_days_since(last[name], today))))
+        out += searched_for(rows)
 
     # Sign-ups over time, not just a running total. Hidde, 2026-08-10: he wants
     # the registrations in the numbers he reads. A total answers "how many" and
@@ -1536,11 +1577,18 @@ def night_shift(today):
         runs = doc.get("runs", []) if isinstance(doc, dict) else list(doc)
     except Exception:
         return None
-    yday = (today - datetime.timedelta(days=1)).isoformat()
-    # A night belongs to the day it ENDS on, so take everything from 18:00 the
-    # previous day onward: a run starting 23:16 and one starting 05:20 are the
-    # same night's work and reading them into different days hides that.
-    since = yday + "T18"
+    # THE LAST 24 HOURS FROM NOW, not "the night" (Hidde, 2026-08-29: "kun je
+    # niet de nachturns doen van de nacht maar van de afgelopen 24uur vanaf nu
+    # altijd bij digest").
+    #
+    # It used to take everything from 18:00 the previous day, which made sense
+    # while the machine only worked at night. Since 2026-08-28 the knocks are
+    # twelve a day, every two hours round the clock, so a window that starts at
+    # 18:00 yesterday drops every run between this morning and now, and those
+    # are the ones he has not seen yet. A rolling day shows the same number of
+    # runs whenever the digest happens to be read.
+    since = (datetime.datetime.now(datetime.timezone.utc)
+             - datetime.timedelta(hours=24)).strftime("%Y-%m-%dT%H")
     rows = [r for r in runs if str(r.get("started", "")) >= since]
     if not rows:
         return None
@@ -1548,7 +1596,7 @@ def night_shift(today):
     trees = sum(r.get("trees") or 0 for r in rows)
     commits = sum(r.get("commits") or 0 for r in rows)
     idle = sum(1 for r in rows if not (r.get("trees") or 0))
-    out = ["", "**What the night shift did**", "",
+    out = ["", "**What the machine did, the last 24 hours**", "",
            "| Started | Minutes | Trees | Commits | Refused | Cities |",
            "|---|---:|---:|---:|---:|---|"]
     for r in rows:
