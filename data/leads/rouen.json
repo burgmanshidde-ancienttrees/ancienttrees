@@ -1,0 +1,55 @@
+{
+  "city": "Rouen",
+  "country": "France",
+  "city_slug": "rouen",
+  "note": "From the 2026-08-30 verify pass. 12 trees shipped to data/research/rouen-verified.json from the 13-row Metropole Rouen Normandie / ONF remarkable-tree register (Foret Verte, Foret de Roumare, Foret de La Londe-Rouvray) plus one in-city find. Leads failed only the evidence bar, the distance/access bar, or need a photo pass; blocked can never ship as they stand.",
+  "leads": [
+    {
+      "name": "Le hetre a oreilles (the Beech with Ears)",
+      "species": "Fagus sylvatica",
+      "lat": 49.3231821,
+      "lng": 0.8873650,
+      "status": "lead",
+      "why": "One of the 13 officially designated trees (register + ONF page both confirm it), a beech named for a distinctive shape ('with ears'), 113cm base diameter, 35m tall, register age estimate 120-150 years, in parcelle 440, Foret domaniale de La Londe-Rouvray. Held back this pass on distance and access quality rather than evidence: about 19.7km from central Rouen with only generic forest-road driving directions given (no named waymarked circuit like the Petit-Essart or Troglodytes trails that got chene_a_madame and h_roche_fouet included), and no description found of what the 'ears' actually look like. A future pass should look for a photo of the shape and check whether it sits on any marked circuit before adding it."
+    },
+    {
+      "name": "Les pionniers (the Pioneers, Douglas firs)",
+      "species": "Pseudotsuga menziesii",
+      "lat": 49.3218840,
+      "lng": 0.8851463,
+      "status": "lead",
+      "why": "One of the 13 officially designated trees/groups, a stand of Douglas firs (62-94cm base diameter, 35-38m tall, register age estimate 120-150 years) in parcelle 451, Foret domaniale de La Londe-Rouvray, right next to the hetre a oreilles above (same car park, same access route). Held back for the same reasons: about 19.9km out, generic forest-road access only, no distinct visual story beyond 'first-generation planted conifers'. If h_oreilles is added later this one is essentially free (same trip)."
+    },
+    {
+      "name": "Le charme fastigie du square Verdrel",
+      "species": "Carpinus betulus 'Fastigiata'",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "A genuinely promising IN-CITY candidate (opposite the Musee des Beaux-Arts, central Rouen): tendanceouest.com (2012), drawing on Prof. Bernard Boullard's book 'Plantes et arbres remarquables des rues, squares et jardins de Rouen' (2006), calls it a favourite of his, 'decouvert vers 1850 a Bois-Guillaume'. That phrasing is ambiguous and needs resolving before writing: it could mean this specific fastigiate hornbeam specimen was found growing wild near Bois-Guillaume around 1850 (which would make it a genuinely historic origin specimen of a rare columnar cultivar), or simply that fastigiate hornbeams as a form were first noted in the area then. Writing the stronger claim without pinning down which would be a bridge claim. No exact coordinates found for the tree within the square this pass, and no second independent source beyond the one newspaper piece. Worth a follow-up: search for the Boullard book itself or a square Verdrel plan, and note the separate 'hetre pourpre' (purple beech, 100-115 years) also reported in the same square by lestetardsarboricoles.fr, a different tree from the hornbeam."
+    },
+    {
+      "name": "Les chenes hybrides du Comte Ambrozy",
+      "species": "Quercus x (crenata/cerris x suber hybrid)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Two named hybrid oaks (evergreen, cross of Turkey oak and cork oak) in the courtyard of the CROUS building, rue d'Herbouville, Rouen, per the same tendanceouest.com/Boullard source. Not pursued this pass because 'cour du CROUS' reads as an institutional courtyard (student housing/dining administration) rather than obviously open public ground; hard rule 10 needs real evidence the courtyard is walk-in accessible before this can ship, which a quick search this pass did not turn up either way."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Le murier blanc, 36 rue de Bihorel",
+      "species": "Morus alba",
+      "lat": null,
+      "lng": null,
+      "reason": "Private garden. Source (tendanceouest.com/Boullard) itself says it is only visible from the street when the homeowner happens to open the gate. Fails hard rule 10 outright (private residence, not open to visitors); never publishable as it stands."
+    }
+  ],
+  "open_questions": [
+    "The original, historic Chene Gadeau de Kerville (280+ years, named 1937) was uprooted in the December 1999 storm per French Wikipedia's Foret de Roumare article. The tree now carrying that name on the register (added to the designated list by 2019) is a different, younger oak near the same crossroads. This is recorded in rou_005's verify_notes so the story does not claim continuity with Gadeau de Kerville's own 1890s survey, but it would be worth finding a source that explains explicitly when/why the name was transferred to the new tree, if one exists.",
+    "None of the 12 shipped trees have an on-the-ground dated photo or recent (2024-2026) news mention confirming they are still standing; confidence rests on the register being an active, currently-promoted trail (the 'Foret Monumentale' art trail runs in Foret de Roumare June 2024 to September 2026, which at least confirms the forest and its trail network are in active current use) rather than a specific recent sighting of each tree. A future pass with photo-hunting could look for recent Commons/iNaturalist images per tree.",
+    "Both La Londe-Rouvray entries (chene_a_madame, h_roche_fouet) mention a 'histoire locale' or historical ruins detail that exists only on the physical forest interpretive panel; neither could be read remotely this pass. Worth revisiting if a photo of either panel surfaces.",
+    "'Les arbres de l'alliance' register PDF gives one diameter/height/age figure apparently covering both the beech and the oak rather than one per tree; not resolved this pass whether that is an average, a shared measurement, or the two trees happen to be similarly sized."
+  ]
+}

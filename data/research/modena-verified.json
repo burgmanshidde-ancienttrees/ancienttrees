@@ -1,0 +1,106 @@
+[
+  {
+    "id": "mod_001",
+    "name": "The Holm Oak of the Cortile del Leccio",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "about a century old (disputed, see notes)",
+    "age_min": 100,
+    "age_max": 250,
+    "girth_cm": 270,
+    "height_m": 15,
+    "location": {
+      "address": "Cortile del Leccio, Complesso San Paolo, Via Francesco Selmi 67, Modena",
+      "latitude": 44.643022,
+      "longitude": 10.924992,
+      "neighbourhood": "Historic centre, Modena"
+    },
+    "verified_sources": [
+      "https://fondoambiente.it/luoghi/cortile-del-leccio",
+      "https://www.theaboutmagazine.it/cortile-del-leccio-modena",
+      "register: MASAF national monumental trees, sheet 04/F257/MO/08 (Complesso di San Paolo, Via Selmi 67, Quercus ilex, girth 270cm, height 15m)"
+    ],
+    "access": "Free. Reached via a corridor from Via Francesco Selmi into the courtyard of the former San Paolo monastery complex, now home to the university law faculty library, a EU documentation centre, and a cafe/coworking space; the courtyard itself is open to the public without an appointment.",
+    "transport": "In Modena's historic centre, roughly 10-12 minutes' walk from Piazza Grande / the Duomo.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (MASAF, sheet 04/F257/MO/08): Quercus ilex, girth 270cm, height 15m, in the grounds of the Complesso di San Paolo, Via Selmi 67, Modena; coordinates 44.643022, 10.924992. Second source, fondoambiente.it (FAI 'Luogo FAI' listing): same height (~15m) and canopy spread (~30m), calls the tree 'secolare' (age-old/centuries-old) but gives no specific age. Third source, theaboutmagazine.it, states the tree is a 'secular holm oak of 120 years' -- a specific but unsourced figure. The two descriptive sources disagree on how old 'secolare' actually means here (120 years vs implied several centuries); flagged rather than picking a winner. Courtyard restored 2010-2015 (comune.modena.it), now a mixed-use cultural space: library, EU research centre, cafe (Major Tom), restaurant/coworking (Roots). Known locally as one of Modena's most beautiful courtyards; the courtyard takes its name (Cortile del Leccio) from this tree. No vitality concerns found; multiple recent photos (Tripadvisor, magazine pieces) show it standing and in leaf."
+  },
+  {
+    "id": "mod_002",
+    "name": "The Bald Cypresses of Villa Ombrosa",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 430,
+    "height_m": 30,
+    "location": {
+      "address": "Parco Villa Ombrosa, Strada Vaciglio Nord, Modena",
+      "latitude": 44.631111,
+      "longitude": 10.938158,
+      "neighbourhood": "Villaggio Giardino / Vaciglio, Modena"
+    },
+    "verified_sources": [
+      "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio",
+      "https://ilregistrodeglialberi.it/5199-cipresso-calvo-modena-mo-emilia-romagna",
+      "register: MASAF national monumental trees, sheet 07/F257/MO/08 (Villa Ombrosa, Strada Vaciglio Nord 4, 'Insieme omogeneo di Taxodium distichum', urban)"
+    ],
+    "access": "Free. Parco Villa Ombrosa is a public municipal park (now also home to Modena's Casa delle Donne), with entrances from Strada Vaciglio Nord, Via Vignolese, Via San Remo and Via Levanto. No gate or appointment needed.",
+    "transport": "About 2 km from Piazza Grande; served by city bus lines 2, 3, 731, 740, 760, 820.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "This is a GROUP entry, not a single tree, and is treated as such deliberately: the comune's own 2015 monumental-tree census (archiviostampa.comune.modena.it) describes 'il gruppo di cinque taxodium del parco di villa Ombrosa, che raggiungono i trenta metri di altezza' (a group of five bald cypresses reaching 30 metres), and the MASAF national register lists the same location as an 'insieme omogeneo' (homogeneous group) rather than an individual specimen. Ships as one ensemble entry because the grove is compact (all five stand together in one small public park) and there is one obvious place to stand and see it, per the collectible-point rule for ensembles. A citizen tree registry (ilregistrodeglialberi.it) separately measured what appears to be the largest/most accessible specimen of the group at 30m height and 4.30m (430cm) girth in 2021, no age given ('Non disponibile'); recorded girth/height here refer to that largest measured specimen, not an average. No age documented anywhere; the park's own description calls its old trees 'secolari' (age-old) in general but gives no figure for the cypresses specifically. Villa Ombrosa itself was the country house of the 18th-century historian Ludovico Antonio Muratori (1672-1750), later a medical facility, now the park and Casa delle Donne (women's centre), reopened 2019 after restoration. Location precision is approximate: coordinates mark the register's point for the park/villa rather than a single trunk, since this is a stand of five trees rather than one pin-pointable specimen."
+  },
+  {
+    "id": "mod_003",
+    "name": "The Oak of the Giardino Ducale",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 175 years, planted 1840-1854",
+    "age_min": 170,
+    "age_max": 186,
+    "girth_cm": 540,
+    "height_m": 25,
+    "location": {
+      "address": "Giardino Ducale Estense, near the Corso Canalgrande / Corso Cavour entrance, Modena",
+      "latitude": 44.6488,
+      "longitude": 10.9325,
+      "neighbourhood": "Centro storico, Modena"
+    },
+    "verified_sources": [
+      "https://www.officinadellambiente.com/it/articolo.php?idl1=0&idl2=0&id=4399",
+      "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2022/3/ai-giardini-ducali-intervento-di-potatura-in-201ctree-climbing201d",
+      "https://www.lapressa.it/articoli/parola_d_autore/la-quercia-secolare-patriarca-del-giardino-pubblico-bisognoso-di-cure",
+      "register (regional PatER, Emilia-Romagna, Parchi e Giardini record id 196738): describes the same oak at the Corso Canalgrande entrance, trunk diameter 172cm (matches the ~540cm circumference reported elsewhere)"
+    ],
+    "access": "Free. Giardino Ducale Estense is Modena's main public garden, open daily (roughly 6:30-23:30 in summer, 7:00-20:30 in winter), no ticket or appointment.",
+    "transport": "In the historic centre, an easy 10-minute walk from Piazza Grande / the Duomo.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A documented planting date for this specimen: officinadellambiente.com says it was 'messa a dimora al centro del parco nel 1854' (planted at the centre of the park in 1854, during Duke Francesco V's time). The comune's own 2022 press release gives a slightly different range, 'planted between 1840 and 1850'. Both agree it dates to the mid-19th century park redesign, so age_min/max spans that range from 2026 (172-186 years); this is a documented planting date, not a growth-rate estimate. Girth 540cm and height 25m agree exactly across officinadellambiente.com and lapressa.it (2019); the regional PatER record independently gives trunk diameter 172cm, which converts to ~540cm circumference (172 x pi), a match. Alive and recently tended: the comune's official March 2022 press release describes a 'tree climbing' pruning intervention by certified arborists (company Taia) removing deadwood, coordinated by municipal urban-maintenance technicians, so this is public-authority evidence of recent, active care rather than an old photo. VITALITY FLAG: the tree was previously struck by lightning (per the comune release), lost significant canopy, and now carries a dynamic cable-consolidation system; a 2019 opinion piece (lapressa.it) also describes wood decay, fungal fruiting bodies and beetle activity and calls for urgent treatment. None of this says the tree has died; it is a genuinely veteran, actively managed oak rather than a healthy young one, and that condition is worth stating honestly on the page rather than hiding. Exact tree-level GPS not found in any source; coordinates here mark the Corso Canalgrande/Corso Cavour side of the park (per PatER and the comune release both placing the tree near that entrance), park polygon confirmed via OpenStreetMap/Nominatim (centroid ~44.6500,10.9328, bounding box 44.6483-44.6516 lat / 10.9312-10.9344 lon)."
+  },
+  {
+    "id": "mod_004",
+    "name": "The Plane Tree of the Autostazione",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented; the oldest plane tree in the city",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 425,
+    "height_m": null,
+    "location": {
+      "address": "Piazzale of the Autostazione (coach/bus station), Via Benedetto Bacchini, Modena",
+      "latitude": 44.65059,
+      "longitude": 10.91933,
+      "neighbourhood": "Cittanova, Modena, near the railway station"
+    },
+    "verified_sources": [
+      "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio",
+      "https://ilregistrodeglialberi.it/5196-platano-comune-modena-mo-emilia-romagna"
+    ],
+    "access": "Free. Stands in a flowerbed roughly at the centre of the public square in front of Modena's Autostazione (coach station) on Via Benedetto Bacchini, open ground, no gate or appointment.",
+    "transport": "About 5 minutes' walk from Modena's main railway station (Modena centrale); the coach station itself is a public transport hub.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Named by the comune's own 2015 census of 30 monumental trees (archiviostampa.comune.modena.it) as the oldest plane tree in the city, standing at the coach station. First documented in the 1980s by Dr Valido Capodarca and included in the 1986 book 'Emilia-Romagna: ottanta alberi da salvare' (Vallecchi, Florence) among notable trees of Modena province -- a genuinely old written record, cited as a second, independent source via ilregistrodeglialberi.it, a citizen tree registry that re-registered the specimen in October 2021. Girth: 425cm, but that figure dates to the 1986 survey; the registry itself notes the trunk has 'sensibly increased' since then with no updated measurement taken, so treat 425cm as a floor rather than the current girth. No age or height given by either source; leave both empty rather than guess. No news of removal or decline found; the October 2021 re-registration is the most recent confirmation of the tree's continued presence, which is a few years old rather than very fresh, so this is flagged for a next pass to reconfirm with a current photo or observation. Location is the flowerbed near the centre of the coach-station square (Piazzale Natale Bruni area, Via Bacchini); exact tree-level coordinates not found, so pin is approximate at the station's own coordinates (OSM node 'Bacchini autostazione')."
+  }
+]
