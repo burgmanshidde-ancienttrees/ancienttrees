@@ -51,6 +51,9 @@ private func pixel() -> UIImage {
     }
 }
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 @Suite(.serialized)
 struct WhenTheIndexIsBroken {
 
@@ -192,6 +195,9 @@ struct WhenTheIndexIsBroken {
     }
 }
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 @Suite(.serialized)
 struct RecordingATreeOfYourOwn {
 
@@ -354,6 +360,9 @@ struct WhenPermissionIsRefused {
 
 // MARK: - A photograph you already had
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 /// Collecting from the camera roll, added 2026-08-28 (Hidde: "wat als ik een
 /// mooie foto op mn fotorol heb staan").
 ///
@@ -463,6 +472,9 @@ struct WhenPermissionIsRefused {
     }
 }
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 @Suite struct CameraRollTests {
 
     @Test func theLibrarysOwnRecordBeatsTheFilesMetadata() {

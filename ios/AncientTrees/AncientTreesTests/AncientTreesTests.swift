@@ -9,6 +9,9 @@ import Testing
 import Foundation
 @testable import AncientTrees
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 struct EditorialSuggestions {
 
     /// The day-zero suggestion picker behind Saved and Collect: photographs
@@ -35,6 +38,9 @@ struct EditorialSuggestions {
     }
 }
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 struct SpotSplit {
 
     /// The sheet's one decision: what is close enough to be the tree the
@@ -56,6 +62,9 @@ struct SpotSplit {
     }
 }
 
+// The stores are main-actor isolated (see Account.swift), so a suite that
+// builds one asks on the main actor.
+@MainActor
 struct CatalogueDecoding {
 
     @Test func theBundledBrowseFeedCarriesTheCollections() throws {

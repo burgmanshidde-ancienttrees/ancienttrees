@@ -30,7 +30,7 @@ enum SightingSync {
     /// Pull what the account holds, fold it into this phone, push the union
     /// back. Called once when a session appears, next to CloudSync.merge.
     static func merge(account: Account, sightings: Sightings) async {
-        guard await account.refreshIfNeeded(), let s = account.session else { return }
+        guard let s = await account.freshSession() else { return }
 
         let remote = await rows("/rest/v1/sightings?select=*", token: s.accessToken)
         for row in remote {
@@ -74,7 +74,7 @@ enum SightingSync {
     /// Everything this phone holds, upserted. The one call that makes a
     /// collection made before signing in survive the first sign-in.
     static func pushAll(account: Account, sightings: Sightings) async {
-        guard await account.refreshIfNeeded(), let s = account.session else { return }
+        guard let s = await account.freshSession() else { return }
         for sighting in sightings.all {
             await push(account: account, sightings: sightings, sighting: sighting)
         }
@@ -83,7 +83,7 @@ enum SightingSync {
     /// One sighting changed. Fire and forget.
     static func push(account: Account, sightings: Sightings,
                             sighting: Sightings.Sighting) async {
-        guard await account.refreshIfNeeded(), let s = account.session else { return }
+        guard let s = await account.freshSession() else { return }
 
         // The photograph first, so a row never points at a file that is not
         // there yet. Uploaded once: the name is the sighting's own id, and a
@@ -125,7 +125,7 @@ enum SightingSync {
     /// same reason it is uploaded first: never leave a row pointing at nothing,
     /// and never leave a file nothing points at.
     static func remove(account: Account, id: UUID) async {
-        guard await account.refreshIfNeeded(), let s = account.session else { return }
+        guard let s = await account.freshSession() else { return }
         await deleteObject("\(s.userId)/\(id.uuidString).jpg", token: s.accessToken)
         await delete("/rest/v1/sightings?id=eq.\(id.uuidString)", token: s.accessToken)
     }

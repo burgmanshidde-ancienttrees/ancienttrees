@@ -33,6 +33,11 @@ import Foundation
 import Observation
 import UIKit
 
+/// Main-actor isolated, like every store the root holds. See Account.swift for
+/// why: SwiftUI already reads these from the main actor, so the annotation
+/// costs nothing at runtime and makes a background write a compiler error
+/// instead of a data race nobody can reproduce.
+@MainActor
 @Observable
 final class Sightings {
 
@@ -112,7 +117,7 @@ final class Sightings {
     /// directory instead, because these tests are ABOUT losing trees and two of
     /// them sharing a folder would read each other's collection, or worse,
     /// the collection of whoever is using the simulator.
-    static var defaultFolder: URL {
+    nonisolated static var defaultFolder: URL {
         let d = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("sightings", isDirectory: true)
         try? FileManager.default.createDirectory(at: d, withIntermediateDirectories: true)
@@ -122,7 +127,7 @@ final class Sightings {
     private let folder: URL
     private var index: URL { folder.appendingPathComponent("index.json") }
 
-    private static func ensure(_ d: URL) {
+    nonisolated private static func ensure(_ d: URL) {
         try? FileManager.default.createDirectory(at: d, withIntermediateDirectories: true)
     }
 
@@ -428,7 +433,7 @@ final class Sightings {
     /// photograph worth keeping and a file worth uploading on the day that
     /// question is opened. A phone camera's original is ten times that and
     /// nothing on this screen is better for it.
-    static func downsized(_ image: UIImage, max: CGFloat = 1600) -> Data? {
+    nonisolated static func downsized(_ image: UIImage, max: CGFloat = 1600) -> Data? {
         let side = Swift.max(image.size.width, image.size.height)
         guard side > max else { return image.jpegData(compressionQuality: 0.8) }
         let scale = max / side
@@ -544,7 +549,7 @@ final class Sightings {
     /// anything missing rather than throwing the row away. A sighting without a
     /// name or a position cannot be placed on a map and is the only kind
     /// dropped here.
-    private static func salvage(_ data: Data) -> [Sighting] {
+    nonisolated private static func salvage(_ data: Data) -> [Sighting] {
         guard let rows = (try? JSONSerialization.jsonObject(with: data)) as? [[String: Any]] else {
             return []
         }

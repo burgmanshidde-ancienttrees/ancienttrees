@@ -23,6 +23,11 @@ import Foundation
 import Observation
 import CoreLocation
 
+/// Main-actor isolated, like every store the root holds. See Account.swift for
+/// why: SwiftUI already reads these from the main actor, so the annotation
+/// costs nothing at runtime and makes a background write a compiler error
+/// instead of a data race nobody can reproduce.
+@MainActor
 @Observable
 final class MyWalks {
 
@@ -59,7 +64,7 @@ final class MyWalks {
 
     private(set) var all: [Walk] = []
 
-    private static var file: URL {
+    nonisolated private static var file: URL {
         let d = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         return d.appendingPathComponent("my-walks.json")
     }
@@ -101,7 +106,7 @@ extension MyWalks {
     /// Kilometres along the stops in the order they are in. Used while
     /// building, where it has to answer instantly and be honest that it is the
     /// crow's distance rather than the walk's.
-    static func straightKm(_ stops: [Stop]) -> Double {
+    nonisolated static func straightKm(_ stops: [Stop]) -> Double {
         guard stops.count > 1 else { return 0 }
         var total = 0.0
         for (a, b) in zip(stops, stops.dropFirst()) {
@@ -115,5 +120,5 @@ extension MyWalks {
     /// A rough walking time from a distance. 4.5 km/h, the same figure
     /// scripts/route_walks.py falls back to, so an estimate here and one on the
     /// website do not disagree about the same walk.
-    static func minutes(forKm km: Double) -> Int { Int((km / 4.5) * 60) }
+    nonisolated static func minutes(forKm km: Double) -> Int { Int((km / 4.5) * 60) }
 }

@@ -195,14 +195,27 @@ struct WorthItView: View {
         .buttonStyle(.bordered).controlSize(.small)
     }
 
+    /// A TOKEN THAT IS STILL GOOD, asked for inside the Task rather than read
+    /// out of the session here.
+    ///
+    /// This read `session?.accessToken` straight, and those live an hour, so
+    /// every vote and every report from anybody signed in longer than that came
+    /// back 401 and vanished. The control still filled in, because it does not
+    /// wait for the answer, so there was nothing to see: the thumb went green
+    /// and the row never arrived. That is the same bug ProfileEditor had with
+    /// the profile picture and the launch task had with the profile itself, and
+    /// this was the third copy of it.
+    ///
+    /// Worse than sending nothing, which is why it is not merely untidy: a
+    /// submission is accepted on the publishable key, so `nil` would have
+    /// worked. An EXPIRED bearer makes PostgREST refuse the whole call.
     private func send(_ verdict: String, _ reason: String?) {
         let why = reason.map { "\(verdict): \($0)" } ?? verdict
-        let token = account.session?.accessToken
         Task {
             _ = await Submission.sendFeedback(city: tree.city,
                                               tree: "\(tree.id) (\(tree.name))",
                                               why: why,
-                                              token: token)
+                                              token: await account.freshToken())
         }
     }
 }
