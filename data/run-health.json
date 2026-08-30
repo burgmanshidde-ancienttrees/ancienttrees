@@ -2505,6 +2505,27 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-30T09:33:13+00:00",
+   "date": "2026-08-30",
+   "run_id": "33304334602",
+   "minutes": 7.8,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 48,
+   "denials": 8,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(for), Bash(python3)",
+   "ended": "success",
+   "tokens": 5539350,
+   "claims_held": [
+    "coimbra"
+   ],
+   "commits": 1,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [
