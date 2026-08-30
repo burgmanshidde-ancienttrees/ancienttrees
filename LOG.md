@@ -62,7 +62,15 @@ Fixed three ways, smallest first: the test launches with `-signed-in` (scaffoldi
 
 **Verified:** 89 unit tests, 26 UI tests (18 of them the map suite, pin test included), appfit 0 findings on 54 screens across two phones, 27 screens photographed and looked at, netcheck clean.
 
-**FOR HIDDE, nothing blocking.** Two judgement calls I made alone because they are reversible: deleting `AncientTreesKit` (in the history if you want it back) and rewriting `ios/README.md`. And one thing I did not do: `TreeMap.swift` is 1,666 lines doing five jobs, and `TreeDetail` and `Collect` are over a thousand each. Splitting them is mechanical and safe, but it is a big diff for no behaviour, so it waits for you to say whether it is worth the churn.
+**The gate then failed with everything green, which needed one more fix.** The run carrying the pin-test fix reached 1h45m and was killed at its 110 minute timeout with Build and test, Verdict and the refused walk ALL GREEN and only the looking half unfinished. Worst possible shape: everything that judges the app had passed and the run still said no. The workflow had predicted this and named the fix in its own comment ("when appfit passes 40 minutes, split the job in two"), so it is split: `test` answers does the app work, `look` answers does it line up, side by side on two runners, 75 minutes each. Wall clock becomes the slower of the two rather than the sum.
+
+**And the CI message fix is proved in production, not just against saved logs.** The 10:24 scheduled run, which ran on code from before the pin fix, failed and said: `The app built. Tests FAILED, named below. This is not a build problem.` followed by the test's name. That is the bug the 2026-08-29 session found and could not push.
+
+**FOR HIDDE, nothing blocking.** Two judgement calls I made alone because they are reversible: deleting `AncientTreesKit` (in the history if you want it back) and rewriting `ios/README.md`. And two things I did not do, both deliberately. `TreeMap.swift` is 1,666 lines doing five jobs, and `TreeDetail` and `Collect` are over a thousand each; splitting them is mechanical and safe and a big diff for no behaviour. And Swift 6 language mode, which would make the compiler enforce the isolation I set by hand rather than trusting the next session not to undo it.
+
+**Measured before recommending, so this is a number rather than a feeling: with `SWIFT_STRICT_CONCURRENCY=complete` the app builds with 67 warnings, and NONE of them is a real bug.** 32 are MapLibre not being marked Sendable (one `@preconcurrency import` in MapInset), 10 are in Faults.swift which is DEBUG-only and never reaches Apple, 3 are a Timer that only ever fires on the main thread, and the rest is the same annotation noise. So the migration is tidiness, not risk.
+
+**My recommendation is to stop here on the app.** By your own two-phase rule this is phase 1: people, data, traction. The app has no users, so every further hour improves something nobody touches. This hour earned itself because two silent bugs were in there and the gate had never once passed; the next hour would not.
 
 ## 2026-08-30 - Night run 2026-08-30 02:16 UTC ended without saying anything
 
