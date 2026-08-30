@@ -2598,6 +2598,34 @@
    ],
    "trees": 13,
    "logged": true
+  },
+  {
+   "started": "2026-08-30T16:36:06+00:00",
+   "date": "2026-08-30",
+   "run_id": "33322902676",
+   "minutes": 49.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 396,
+   "denials": 46,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 8276810,
+   "claims_held": [
+    "madeira",
+    "menorca",
+    "barcelona"
+   ],
+   "commits": 19,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "riga",
+     "trees": 5
+    }
+   ],
+   "trees": 5,
+   "logged": true
   }
  ],
  "schedule_changes": [
