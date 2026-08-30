@@ -39206,9 +39206,14 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:Famous trees in Umbria Category:GFDL Category:License migration redundant Category:Nature of Assisi Category:Self-published work",
-     "source": "wikidata/Q107138057"
+     "source": "wikidata/Q107138057",
+     "judged": "2026-08-30",
+     "verdict": "approved",
+     "reason": "Viewed. The named yew (Wikidata Q107138057) seen from Via Borgo Aretino over its terrace wall: crown fills the upper frame, in leaf, daylight, colour, well exposed (brightness 132, colour 0.27). Trunk is behind the retaining wall, which is how the tree is actually seen from public ground. Only candidate; approved."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "approved"
   },
   "asi_002": {
    "city": "Assisi",
@@ -39238,9 +39243,15 @@
      "author": "Didier Descouens",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Frari (Venice) - Artworks Category:Frari (Venice) nave left Category:Images by Archaeodontosaurus Venice Church Category:Italy photographs taken on 2016-05-30 Category:May 2016 in Venice Category:Paintings without Wikidata item Category:Pietro Negri Category:Self-published work Category:Valued Images by Archaeodontosaurus Category:Valued Images by Archaeodontosaurus Venice Category:Valued images missing SDC depicts Category:Valued images of Venice Category:Valued images of church interiors Category:Valued images of paintings in Italy Category:Valued images promoted 2016-10 Category:Valued images sorted by promotion date"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Frari (Venice) - Artworks Category:Frari (Venice) nave left Category:Images by Archaeodontosaurus Venice Church Category:Italy photographs taken on 2016-05-30 Category:May 2016 in Venice Category:Paintings without Wikidata item Category:Pietro Negri Category:Self-published work Category:Valued Images by Archaeodontosaurus Category:Valued Images by Archaeodontosaurus Venice Category:Valued images missing SDC depicts Category:Valued images of Venice Category:Valued images of church interiors Category:Valued images of paintings in Italy Category:Valued images promoted 2016-10 Category:Valued images sorted by promotion date",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Not a tree at all: a 1670 oil painting by Pietro Negri of the Franciscan genealogical tree, hanging in the Frari in Venice. Wrong subject and wrong country."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "rejected",
+   "outcome_note": "All candidates viewed and rejected on 2026-08-30; honest gap kept."
   },
   "asi_005": {
    "city": "Assisi",
@@ -39255,9 +39266,15 @@
      "licence": "CC BY",
      "author": "(c) Alessandro Marostica, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.063069121,12.6510452572"
+     "obs_location": "43.063069121,12.6510452572",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. iNaturalist observation of Quercus ilex foliage: a close-up of a leaf spray, no trunk, no crown, and nothing tying it to this individual on Monte Subasio."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "rejected",
+   "outcome_note": "All candidates viewed and rejected on 2026-08-30; honest gap kept."
   },
   "asi_006": {
    "city": "Assisi",
@@ -39280,7 +39297,10 @@
      "author": "Tilman2007",
      "lat": null,
      "lng": null,
-     "cats": "Category:Artworks without Wikidata item Category:Brunnen Ottobrunnen (Bamberg) Category:CC-BY-SA-4.0 Category:FoP-Germany Category:GFDL Category:License migration redundant Category:Uploaded with pattypan"
+     "cats": "Category:Artworks without Wikidata item Category:Brunnen Ottobrunnen (Bamberg) Category:CC-BY-SA-4.0 Category:FoP-Germany Category:GFDL Category:License migration redundant Category:Uploaded with pattypan",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. The Ottobrunnen well house under snow. The lindens are not the subject; no tree readable."
     },
     {
      "title": "File:Bamberg, Ottobrunnen, Ottobrunnen-20170102-002.jpg",
@@ -39290,7 +39310,10 @@
      "author": "Tilman2007",
      "lat": null,
      "lng": null,
-     "cats": "Category:Artworks without Wikidata item Category:Brunnen Ottobrunnen (Bamberg) Category:CC-BY-SA-4.0 Category:FoP-Germany Category:GFDL Category:License migration redundant Category:Uploaded with pattypan"
+     "cats": "Category:Artworks without Wikidata item Category:Brunnen Ottobrunnen (Bamberg) Category:CC-BY-SA-4.0 Category:FoP-Germany Category:GFDL Category:License migration redundant Category:Uploaded with pattypan",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Same well house from the other side, snow, no linden as subject."
     },
     {
      "title": "File:Bamberg, Ottobrunnen, Ottobrunnen-20170102-003.jpg",
@@ -39300,7 +39323,10 @@
      "author": "Tilman2007",
      "lat": null,
      "lng": null,
-     "cats": "Category:Artworks without Wikidata item Category:Brunnen Ottobrunnen (Bamberg) Category:CC-BY-SA-4.0 Category:FoP-Germany Category:GFDL Category:License migration redundant Category:Uploaded with pattypan"
+     "cats": "Category:Artworks without Wikidata item Category:Brunnen Ottobrunnen (Bamberg) Category:CC-BY-SA-4.0 Category:FoP-Germany Category:GFDL Category:License migration redundant Category:Uploaded with pattypan",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Interior niche of the well house with the statue of Bishop Otto. No tree in frame."
     },
     {
      "title": "File:Bamberg, Ottobrunnen 1, Bauscheune, v W, 1.jpeg",
@@ -39310,7 +39336,10 @@
      "author": "Renardo la vulpo",
      "lat": 49.894,
      "lng": 10.87419444,
-     "cats": "Category:CC-Zero Category:Cultural heritage monuments in Bavaria with known IDs Category:Ottobrunnen 1 (Bamberg) Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Cultural heritage monuments in Bavaria with known IDs Category:Ottobrunnen 1 (Bamberg) Category:Self-published work",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. The listed barn at the street address Ottobrunnen 1, not the trees. Name match only."
     },
     {
      "title": "File:Bamberg, Ottobrunnen 1, von Südosten, 20150918-001.jpg",
@@ -39320,7 +39349,10 @@
      "author": "Tilman2007",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Images from Wiki Loves Monuments 2015 Category:Images from Wiki Loves Monuments 2015, DE-BY Category:Images from Wiki Loves Monuments 2015 in Germany Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:License migration redundant Category:Ottobrunnen 1 (Bamberg) Category:Self-published work Category:Uploaded with VicuñaUploader"
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Images from Wiki Loves Monuments 2015 Category:Images from Wiki Loves Monuments 2015, DE-BY Category:Images from Wiki Loves Monuments 2015 in Germany Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:License migration redundant Category:Ottobrunnen 1 (Bamberg) Category:Self-published work Category:Uploaded with VicuñaUploader",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Same barn at Ottobrunnen 1 from the southeast. No linden as subject."
     },
     {
      "title": "File:Bamberg, Ottobrunnen 1, von Südosten, 20150918-002.jpg",
@@ -39330,7 +39362,10 @@
      "author": "Tilman2007",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Images from Wiki Loves Monuments 2015 Category:Images from Wiki Loves Monuments 2015, DE-BY Category:Images from Wiki Loves Monuments 2015 in Germany Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:License migration redundant Category:Ottobrunnen 1 (Bamberg) Category:Self-published work Category:Uploaded with VicuñaUploader"
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:Images from Wiki Loves Monuments 2015 Category:Images from Wiki Loves Monuments 2015, DE-BY Category:Images from Wiki Loves Monuments 2015 in Germany Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:License migration redundant Category:Ottobrunnen 1 (Bamberg) Category:Self-published work Category:Uploaded with VicuñaUploader",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Same barn again, closer. No linden as subject."
     },
     {
      "title": "File:Bamberg, Ottobrunnen 1-20170102-001.jpg",
@@ -39340,9 +39375,15 @@
      "author": "Tilman2007",
      "lat": null,
      "lng": null,
-     "cats": "Category:Artworks without Wikidata item Category:CC-BY-SA-4.0 Category:FoP-Germany Category:GFDL Category:License migration redundant Category:Ottobrunnen 1 (Bamberg) Category:Uploaded with pattypan"
+     "cats": "Category:Artworks without Wikidata item Category:CC-BY-SA-4.0 Category:FoP-Germany Category:GFDL Category:License migration redundant Category:Ottobrunnen 1 (Bamberg) Category:Uploaded with pattypan",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Same barn in snow. No linden as subject."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "rejected",
+   "outcome_note": "All candidates viewed and rejected on 2026-08-30; honest gap kept."
   },
   "bam_002": {
    "city": "Bamberg",
@@ -39358,7 +39399,10 @@
      "author": "Stephan van Helden",
      "lat": 49.8865,
      "lng": 10.871958,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Wrong tree: the 'Eiche im Teufelsgraben' series sits 250m west of our pin on a wooded lane and matches blocked register entry ND-03617 (the oak inside a garden plot), not ND-03742. Also a bare trunk beside a track, crown not readable."
     },
     {
      "title": "File:Eiche im Teufelsgraben (Bamberg) 3.jpg",
@@ -39368,7 +39412,10 @@
      "author": "Stephan van Helden",
      "lat": 49.886502,
      "lng": 10.871958,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Same wrong tree (ND-03617 series, woodland lane); trunk lost among surrounding woodland."
     },
     {
      "title": "File:Eiche im Teufelsgraben (Bamberg) 4.jpg",
@@ -39378,7 +39425,10 @@
      "author": "Stephan van Helden",
      "lat": 49.886503,
      "lng": 10.871963,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Same wrong tree; upward canopy study, no trunk, no ground."
     },
     {
      "title": "File:Eiche im Teufelsgraben (Bamberg) 5.jpg",
@@ -39388,7 +39438,10 @@
      "author": "Stephan van Helden",
      "lat": 49.886515,
      "lng": 10.871977,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Same wrong tree; bark and plaque close-up."
     },
     {
      "title": "File:Eiche im Teufelsgraben (Bamberg) 6.jpg",
@@ -39398,7 +39451,10 @@
      "author": "Stephan van Helden",
      "lat": 49.88656,
      "lng": 10.872032,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche im Teufelsgraben (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Same wrong tree; close-up of the trunk base only."
     },
     {
      "title": "File:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg).jpg",
@@ -39408,7 +39464,10 @@
      "author": "Stephan van Helden",
      "lat": 49.887187,
      "lng": 10.875487,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Right tree (matches the pin and the tree's own verified source), in leaf and daylight, but the trunk is largely veiled by scrub and candidate 7 shows the same tree better."
     },
     {
      "title": "File:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) 2.jpg",
@@ -39418,7 +39477,10 @@
      "author": "Stephan van Helden",
      "lat": 49.887117,
      "lng": 10.875357,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Right tree, but a bark close-up: no crown."
     },
     {
      "title": "File:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) 3.jpg",
@@ -39428,7 +39490,10 @@
      "author": "Stephan van Helden",
      "lat": 49.887088,
      "lng": 10.875225,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Right tree, but the frame is filled with surrounding scrub and the crown is not readable."
     },
     {
      "title": "File:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) 4.jpg",
@@ -39438,7 +39503,10 @@
      "author": "Stephan van Helden",
      "lat": 49.887055,
      "lng": 10.87524,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Right tree, but a straight-up canopy study: no trunk, no ground, no sense of standing in front of it."
     },
     {
      "title": "File:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) 5.jpg",
@@ -39448,7 +39516,10 @@
      "author": "Stephan van Helden",
      "lat": 49.886377,
      "lng": 10.875715,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Right tree, but a distant landscape view: the oak has to be picked out of a hedge line."
     },
     {
      "title": "File:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) 6.jpg",
@@ -39458,7 +39529,10 @@
      "author": "Stephan van Helden",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:On OSM Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:On OSM Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Right tree, good crown filling the frame, but the trunk is entirely hidden behind the hedge line; candidate 11 shows crown and trunk both."
     },
     {
      "title": "File:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) 7.jpg",
@@ -39468,9 +39542,14 @@
      "author": "Stephan van Helden",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Bamberg) Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "approved",
+     "reason": "Viewed. The hedgerow oak southwest of the Kaiser-Heinrich-Gymnasium (ND-03742, our pin): trunk readable from the base up with the crown spreading above it, in full leaf, daylight, colour, well exposed (brightness 122, colour 0.53). The best of the correct series; the tree has no clean open-field portrait because it stands in a hedgerow."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "approved"
   },
   "bam_003": {
    "city": "Bamberg",
@@ -39486,7 +39565,10 @@
      "author": "Stephan van Helden",
      "lat": 49.86764,
      "lng": 10.907473,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct tree (geotag 40m from the pin, Buger Hof buildings behind) and a good photograph, but more road and sky than candidate 3, which frames the same tree better."
     },
     {
      "title": "File:Linde am Regnitzufer (Bamberg) 2.jpg",
@@ -39496,7 +39578,10 @@
      "author": "Stephan van Helden",
      "lat": 49.86743,
      "lng": 10.907507,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct tree, and the Naturdenkmal plaque on the trunk confirms the identification, but the crown is cut off: too close."
     },
     {
      "title": "File:Linde am Regnitzufer (Bamberg) 3.jpg",
@@ -39506,7 +39591,10 @@
      "author": "Stephan van Helden",
      "lat": 49.867345,
      "lng": 10.90778,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:On OSM Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:On OSM Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct tree, clean full portrait, very nearly approved; candidate 3 has the same framing with better light."
     },
     {
      "title": "File:Linde am Regnitzufer (Bamberg) 4.jpg",
@@ -39516,7 +39604,10 @@
      "author": "Stephan van Helden",
      "lat": 49.867335,
      "lng": 10.907785,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "approved",
+     "reason": "Viewed. The lime at the Buger Hof: whole tree, crown and trunk both readable, in full leaf against blue sky, daylight, colour, well exposed (brightness 152, colour 0.40). Geotagged 40m from our pin with the Buger Hof buildings in frame."
     },
     {
      "title": "File:Linde am Regnitzufer (Bamberg) 5.jpg",
@@ -39526,9 +39617,14 @@
      "author": "Stephan van Helden",
      "lat": 49.86733,
      "lng": 10.907777,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am Regnitzufer (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct tree, also good, but the lime sits smaller in the frame than in candidate 3."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "approved"
   },
   "bam_004": {
    "city": "Bamberg",
@@ -39544,7 +39640,10 @@
      "author": "Reinhold Möller Ermell",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bavaria photographs taken on 2017-05-17 Category:CC-BY-SA-4.0 Category:FFH-Gebiet Wiesen um die Altenburg bei Bamberg Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images by User:Ermell taken in 2017 Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024, DE-BY Category:Images from Wiki Loves Earth 2024, DE landscape Category:Images from Wiki Loves Earth 2024 by Ermell Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth missing SDC creator Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photographs by Ermell Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images by Ermell Category:Quality images from Wiki Loves Earth 2024 in Germany Category:Quality images missing SDC creator Category:Quality images of Bamberg Category:Quality images of nature by Ermell Category:Schutz der Landschaftsräume Altenburg - Rothof im Gebiet der Stadt Bamberg LSG-00279.01 Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-40mm f/2.8 PRO Category:Uploaded with LrMediaWiki"
+     "cats": "Category:Bavaria photographs taken on 2017-05-17 Category:CC-BY-SA-4.0 Category:FFH-Gebiet Wiesen um die Altenburg bei Bamberg Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images by User:Ermell taken in 2017 Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024, DE-BY Category:Images from Wiki Loves Earth 2024, DE landscape Category:Images from Wiki Loves Earth 2024 by Ermell Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth missing SDC creator Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photographs by Ermell Category:Protected areas with known WDPA-ID Category:Quality images Category:Quality images by Ermell Category:Quality images from Wiki Loves Earth 2024 in Germany Category:Quality images missing SDC creator Category:Quality images of Bamberg Category:Quality images of nature by Ermell Category:Schutz der Landschaftsräume Altenburg - Rothof im Gebiet der Stadt Bamberg LSG-00279.01 Category:Taken with Olympus E-M1 Mark II Category:Taken with Olympus M.Zuiko Digital ED 12-40mm f/2.8 PRO Category:Uploaded with LrMediaWiki",
+     "judged": "2026-08-30",
+     "verdict": "approved",
+     "reason": "Viewed. The Rothof lime: whole tree in full leaf against blue sky, crown and trunk both readable, meadow at its foot, daylight, colour, well exposed (brightness 128, colour 0.48). The Commons description names the register entry outright, 'Naturdenkmal 6 / ND-03728 1 lime tree at the former Rothof', and its coordinate sits 25m from our pin."
     },
     {
      "title": "File:Baum am ehemaligen Rothof (Bamberg).jpg",
@@ -39554,7 +39653,10 @@
      "author": "Stephan van Helden",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:FFH-Gebiet Wiesen um die Altenburg bei Bamberg Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of protected areas by Stephan van Helden Category:Schutz der Landschaftsräume Altenburg - Rothof im Gebiet der Stadt Bamberg LSG-00279.01 Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:FFH-Gebiet Wiesen um die Altenburg bei Bamberg Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Photos by Stephan van Helden Category:Photos of protected areas by Stephan van Helden Category:Schutz der Landschaftsräume Altenburg - Rothof im Gebiet der Stadt Bamberg LSG-00279.01 Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Wrong tree: a gnarled, half-dead orchard tree elsewhere on the former Rothof ground, not the protected lime. 'Baum am ehemaligen Rothof' matched on name only."
     },
     {
      "title": "File:Linde am Rothof (Bamberg).jpg",
@@ -39564,7 +39666,10 @@
      "author": "Stephan van Helden",
      "lat": 49.88554,
      "lng": 10.863243,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime, lone in the meadow with the water reservoir behind, very good, but candidate 0 has better light and a fuller crown."
     },
     {
      "title": "File:Linde am Rothof (Bamberg) 10.jpg",
@@ -39574,7 +39679,10 @@
      "author": "Stephan van Helden",
      "lat": 49.885672,
      "lng": 10.862958,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime and the Naturdenkmal plaque confirms it, but the crown is cut off: too close."
     },
     {
      "title": "File:Linde am Rothof (Bamberg) 11.jpg",
@@ -39584,7 +39692,10 @@
      "author": "Stephan van Helden",
      "lat": 49.885678,
      "lng": 10.862938,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime, trunk study with the plaque; crown cut off."
     },
     {
      "title": "File:Linde am Rothof (Bamberg) 12.jpg",
@@ -39594,7 +39705,10 @@
      "author": "Stephan van Helden",
      "lat": 49.885688,
      "lng": 10.862947,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime, attractive view from under the crown with the bench, but the top of the tree is out of frame."
     },
     {
      "title": "File:Linde am Rothof (Bamberg) 2.jpg",
@@ -39604,7 +39718,10 @@
      "author": "Stephan van Helden",
      "lat": 49.885533,
      "lng": 10.863223,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:On OSM Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:On OSM Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime, full portrait, but the sky is flat and hazy against candidate 0's light."
     },
     {
      "title": "File:Linde am Rothof (Bamberg) 4.jpg",
@@ -39614,7 +39731,10 @@
      "author": "Stephan van Helden",
      "lat": 49.88545,
      "lng": 10.86311,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime, another good full portrait; candidate 0 is better exposed and better framed."
     },
     {
      "title": "File:Linde am Rothof (Bamberg) 6.jpg",
@@ -39624,7 +39744,10 @@
      "author": "Stephan van Helden",
      "lat": 49.885595,
      "lng": 10.862798,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime, trunk study; crown cut off."
     },
     {
      "title": "File:Linde am Rothof (Bamberg) 7.jpg",
@@ -39634,7 +39757,10 @@
      "author": "Stephan van Helden",
      "lat": 49.8856,
      "lng": 10.8628,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Quality images Category:Quality images by Stephan van Helden Category:Quality images from Wiki Loves Earth 2023 in Germany Category:Quality images missing SDC depicts Category:Quality images of Bamberg Category:Self-published work Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime, trunk and lower crown only; the top of the tree is out of frame."
     },
     {
      "title": "File:Linde am Rothof (Bamberg) 8.jpg",
@@ -39644,7 +39770,10 @@
      "author": "Stephan van Helden",
      "lat": 49.88565,
      "lng": 10.862815,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC inception Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime, close study of the stems inside the crown; not a portrait of the tree."
     },
     {
      "title": "File:Linde am Rothof (Bamberg) 9.jpg",
@@ -39654,9 +39783,14 @@
      "author": "Stephan van Helden",
      "lat": 49.885635,
      "lng": 10.86287,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (49° N, 10° E) Category:Images from Wiki Loves Earth 2023 Category:Images from Wiki Loves Earth 2023, DE landscape Category:Images from Wiki Loves Earth 2023 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Linde am ehemaligen Rothof (Bamberg) Category:Photos by Stephan van Helden Category:Photos of natural monuments by Stephan van Helden Category:Self-published work Category:Taken with Ricoh GR III Category:Uploaded via Campaign:wle-de",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Correct lime, close-up of a burr on a limb; bark-and-branch study."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "approved"
   },
   "bcn_059": {
    "city": "Barcelona",
@@ -39715,9 +39849,14 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Cisterciácká lípa (Zlatá Koruna) Category:GFDL Category:License migration redundant Category:Self-published work",
-     "source": "wikidata/Q8547921"
+     "source": "wikidata/Q8547921",
+     "judged": "2026-08-30",
+     "verdict": "approved",
+     "reason": "Viewed. The Cistercian lime on the village square: whole tree, the masonry-packed hollow trunk clearly visible (which is what the story turns on), daylight, colour, well exposed (brightness 83, colour 0.56). Bare in winter, which is a tiebreaker only and this is the sole candidate. Wikidata Q8547921 puts the tree 8m from our pin and names this exact file as its image."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "approved"
   },
   "ckr_002": {
    "city": "Cesky Krumlov",
@@ -39733,9 +39872,15 @@
      "author": "Anaj7",
      "lat": 48.858508,
      "lng": 14.353614,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files by Anaj7 Category:Files with coordinates missing SDC location of creation Category:Information boards in Český Krumlov District Category:Lípa Kapucínka Category:Memorable tree signs in the Czech Republic Category:Pictures taken during a photowalk to Zlatá Koruna Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by Anaj7 Category:Files with coordinates missing SDC location of creation Category:Information boards in Český Krumlov District Category:Lípa Kapucínka Category:Memorable tree signs in the Czech Republic Category:Pictures taken during a photowalk to Zlatá Koruna Category:Self-published work",
+     "judged": "2026-08-30",
+     "verdict": "rejected",
+     "reason": "Viewed. Not the tree: a photograph of the interpretive sign about the Kapucinka lime. Useful confirmation of the facts, nothing to look at."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "rejected",
+   "outcome_note": "All candidates viewed and rejected on 2026-08-30; honest gap kept."
   },
   "ckr_003": {
    "city": "Cesky Krumlov",
@@ -39752,9 +39897,14 @@
      "lat": 48.852425,
      "lng": 14.361086,
      "cats": "Category:CC-BY-SA-4.0 Category:Dřín v klášteře Zlatá Koruna Category:Files by Anaj7 Category:Files with coordinates missing SDC location of creation Category:Mikrosoutěž Focení mobilem Category:Self-published work",
-     "source": "wikidata/Q73602073"
+     "source": "wikidata/Q73602073",
+     "judged": "2026-08-30",
+     "verdict": "approved",
+     "reason": "Viewed. The cornelian cherry in the monastery garden in full yellow flower: whole tree, crown and trunk both readable, filling the frame with the abbey wall behind, daylight, colour, well exposed (brightness 122, colour 0.37). Wikidata Q73602073 carries our exact pin coordinate and names this file as its image, so the queue's stray geotag is a sweep artefact rather than a different tree."
     }
-   ]
+   ],
+   "judged": "2026-08-30",
+   "outcome": "approved"
   },
   "ckr_004": {
    "city": "Cesky Krumlov",
