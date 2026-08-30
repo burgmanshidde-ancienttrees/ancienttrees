@@ -162,6 +162,11 @@ struct ContentView: View {
     /// Shown once, and only when iOS has genuinely not been asked yet.
     private var needsPrimer: Bool {
         guard debugOrigin == nil || ProcessInfo.processInfo.arguments.contains("-primer") else { return false }
+        // -refused judges the recovery sheet, which belongs over the MAP. The
+        // primer answers the same question one step earlier and would sit
+        // behind it in every sweep frame, which is not the screen anybody
+        // meets: by the time this sheet exists, iOS has been asked and refused.
+        if ProcessInfo.processInfo.arguments.contains("-refused") { return false }
         if primerAnswered { return false }
         return location.status == .notDetermined
     }

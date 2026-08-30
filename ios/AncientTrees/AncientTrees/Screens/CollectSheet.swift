@@ -53,6 +53,7 @@
 // goes live, exactly as Step 0b runs it for the site.
 
 import CoreLocation
+import Photos
 import SwiftUI
 
 struct CollectSheet: View {
@@ -98,6 +99,8 @@ struct CollectSheet: View {
     @State private var stage: Stage = .intro
     @State private var camera = false
     @State private var library = false
+    /// Which permission the recovery sheet is explaining, nil when it is shut.
+    @State private var refused: Permission?
     @State private var fix: Fix = .device
     /// When the photograph was taken, when the photograph says. Nil for the
     /// camera path, where it is now by definition.
@@ -157,7 +160,7 @@ struct CollectSheet: View {
                 // thumb already is, which is what Airbnb does with any sheet
                 // that asks for something. Everything after it is a list or a
                 // form, so those scroll.
-                CollectIntro(onStart: { camera = true },
+                CollectIntro(onStart: { openCamera() },
                              onLibrary: { openLibrary() })
                     .padding(.horizontal, 20)
                     .padding(.bottom, 24)
@@ -237,6 +240,12 @@ struct CollectSheet: View {
         }
         .fullScreenCover(isPresented: $camera) {
             CameraPicker { resolve($0) }.ignoresSafeArea()
+        }
+        .sheet(item: $refused) { which in
+            // The camera's second button is the route on rather than a refusal,
+            // so declining here opens the library and the task still finishes.
+            PermissionRecovery(permission: which,
+                               onDecline: which == .camera ? { openLibrary() } : nil)
         }
         .fullScreenCover(isPresented: $library) {
             LibraryPicker { picked($0) }.ignoresSafeArea()
@@ -349,6 +358,24 @@ struct CollectSheet: View {
     /// you.
     static func mayClaimWithoutAsking(_ source: Fix) -> Bool { source == .device }
 
+    /// The camera button, which no longer decides in silence.
+    ///
+    /// Refused raises the explanation; anything else presents the picker, and
+    /// notDetermined is deliberately in that second group because presenting is
+    /// what triggers the system prompt, and that prompt is the right place to
+    /// ask somebody who has just tapped photograph a tree.
+    /// Why we are asking where the tree stands. Pure, so both branches are
+    /// testable on a machine with no photo library to refuse.
+    static func placeReason(libraryRefused: Bool) -> String {
+        libraryRefused
+            ? "We cannot read where your photograph was taken, so drag the map until the pin sits on the tree. Allowing photos would place it for you."
+            : "Your photograph does not say where it was taken, so drag the map until the pin sits on the tree."
+    }
+
+    private func openCamera() {
+        if CameraPicker.isRefused { refused = .camera } else { camera = true }
+    }
+
     private func openLibrary() {
         Task {
             // The prompt belongs to the tap, so it is asked here rather than
@@ -381,7 +408,14 @@ struct CollectSheet: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text("Where does it stand?")
                     .font(.brand(24, .heavy)).foregroundStyle(Brand.ink)
-                Text("Your photograph does not say where it was taken, so drag the map until the pin sits on the tree.")
+                // TWO DIFFERENT REASONS, and they must not share a sentence.
+                // A screenshot genuinely carries no location; a refused library
+                // means we were not allowed to read the one it has. The second
+                // person can act on that and the first cannot, so telling them
+                // both the same thing wastes the only fixable case.
+                Text(Self.placeReason(libraryRefused:
+                        PHPhotoLibrary.authorizationStatus(for: .readWrite) == .denied
+                        || PHPhotoLibrary.authorizationStatus(for: .readWrite) == .restricted))
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -550,7 +584,7 @@ struct CollectSheet: View {
                     .frame(height: 170).frame(maxWidth: .infinity)
                     .clipShape(.rect(cornerRadius: 14))
                     .overlay(alignment: .bottomTrailing) {
-                        Button("Retake") { camera = true }
+                        Button("Retake") { openCamera() }
                             .font(.caption.weight(.semibold))
                             .foregroundStyle(.white)
                             .padding(.horizontal, 10).padding(.vertical, 6)

@@ -23,6 +23,13 @@ struct MapTab: View {
     var locationDenied: Bool = false
     var onUseMyLocation: () -> Void = {}
 
+    /// The recovery sheet, nil when shut. See PermissionRecovery.
+    @State private var refused: Permission?
+    /// Debug scaffolding, same family as -spot: the sheet only exists after a
+    /// refusal the simulator cannot produce on demand, so appsweep can open it.
+    @State private var debugRefused =
+        ProcessInfo.processInfo.arguments.contains("-refused")
+
     @State private var selected: Tree?
     /// Debug only, same family as -tab and -at: selecting a pin needs a tap and
     /// simctl cannot tap, so the one screen that only exists after a tap could
@@ -295,6 +302,7 @@ struct MapTab: View {
                                            photo: sightings.image($0)) },
                     collected: collectedIds,
                     favourites: favouriteIds,
+                    onLocationRefused: { refused = .location },
                     onSelectMine: { navigator.push = .mine($0) },
                     onSelectTree: { navigator.push = .tree($0) },
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
@@ -430,6 +438,8 @@ struct MapTab: View {
         .sheet(isPresented: $askingPlus) {
             PaywallView(feature: .walkBeyondFirst)
         }
+        .sheet(item: $refused) { PermissionRecovery(permission: $0) }
+        .onAppear { if debugRefused { debugRefused = false; refused = .location } }
         .sheet(isPresented: $pickingSpecies) {
             SpeciesPicker(catalogue: catalogue,
                           nearby: Array(Set(mapTrees.map(\.commonName))),
@@ -728,10 +738,12 @@ struct MapTab: View {
             EmptyView()
         } else {
             Button {
+                // Not straight to Settings any more. Apple Maps puts a sheet
+                // in between, and that sheet is the one chance to say what you
+                // are missing to somebody who has already said no once. See
+                // PermissionRecovery and CONVENTIONS.md.
                 if locationDenied {
-                    if let u = URL(string: UIApplication.openSettingsURLString) {
-                        UIApplication.shared.open(u)
-                    }
+                    refused = .location
                 } else {
                     onUseMyLocation()
                 }
