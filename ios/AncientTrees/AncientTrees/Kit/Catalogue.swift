@@ -1,7 +1,10 @@
-// Everything the app knows, held in memory. 1377 trees is 2.5 MB of JSON, which
-// is small enough to keep whole rather than to page out of a database, and that
-// is what makes the app work with no signal: there is no query that needs the
-// network once this is loaded.
+// Everything the app knows, held in memory. Getting on for two thousand trees
+// is a few megabytes of JSON, which is small enough to keep whole rather than
+// to page out of a database, and that is what makes the app work with no
+// signal: there is no query that needs the network once this is loaded.
+//
+// The struct is built once per load and is where the app's derived lookups
+// live, so nothing downstream has to scan the list. See the indexes below.
 
 import Foundation
 
@@ -19,6 +22,29 @@ public struct Catalogue: Sendable {
     private let byId: [String: Tree]
     private let walksByCity: [String: [Walk]]
 
+    // GROUPED ONCE HERE RATHER THAN IN EVERY SCREEN.
+    //
+    // byId and walksByCity have been built here since the start; the three
+    // below had not, so `Dictionary(grouping: trees, by: \.citySlug)` and its
+    // siblings were written out again in Home, MapSearch, IndexPages, Collect,
+    // SpeciesChooser and SpeciesPicker, and `trees.filter { $0.country == x }`
+    // in three more. A computed property on a View re-runs on every body pass,
+    // so MapSearch rebuilt three of these on every keystroke while somebody was
+    // typing. It is milliseconds rather than a freeze, and the real cost was
+    // the copies: six places deciding separately what "the trees of a city"
+    // means is six places to keep in step.
+    //
+    // This is the cheapest possible moment to pay for it. A Catalogue is built
+    // when the app loads one and never again, so the work happens once per
+    // launch instead of once per frame.
+    private let byCity: [String: [Tree]]
+    private let byCountry: [String: [Tree]]
+    private let bySpecies: [String: [Tree]]
+
+    /// Every common name we carry, once each, sorted. The search field asked
+    /// for this by building a Set and sorting it, per keystroke.
+    public let speciesNames: [String]
+
     public init(trees: [Tree], walks: [Walk], species: [Species],
                 collections: [TreeCollection] = [],
                 facets: BrowseFacets = .empty, version: String) {
@@ -30,9 +56,29 @@ public struct Catalogue: Sendable {
         self.version = version
         self.byId = Dictionary(trees.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
         self.walksByCity = Dictionary(grouping: walks, by: { $0.citySlug })
+        self.byCity = Dictionary(grouping: trees, by: { $0.citySlug })
+        self.byCountry = Dictionary(grouping: trees, by: { $0.country })
+        let bySpecies = Dictionary(grouping: trees, by: { $0.commonName })
+        self.bySpecies = bySpecies
+        // Sorted here so it is stable everywhere it is shown. An empty common
+        // name is a tree whose species nobody has established yet, which is a
+        // real state on this site (the publish-and-ask rule) and not a species.
+        self.speciesNames = bySpecies.keys.filter { !$0.isEmpty }.sorted()
     }
 
     public func tree(_ id: String) -> Tree? { byId[id] }
+
+    /// The trees of one city, country or species. Order is the catalogue's own,
+    /// which is what every caller filtering the whole list used to get.
+    public func trees(inCity slug: String) -> [Tree] { byCity[slug] ?? [] }
+    public func trees(inCountry name: String) -> [Tree] { byCountry[name] ?? [] }
+    public func trees(ofSpecies commonName: String) -> [Tree] { bySpecies[commonName] ?? [] }
+
+    /// Every city, country and species with its trees, for the pages that show
+    /// all of them. A view of the index rather than a fresh grouping.
+    public var citiesWithTrees: [String: [Tree]] { byCity }
+    public var countriesWithTrees: [String: [Tree]] { byCountry }
+    public var speciesWithTrees: [String: [Tree]] { bySpecies }
 
     // MARK: - card faces
     //
@@ -51,20 +97,17 @@ public struct Catalogue: Sendable {
 
     /// The tree whose photograph fronts this city.
     public func face(city slug: String) -> Tree? {
-        facets.face(city: slug).flatMap { byId[$0] }
-            ?? bestFace(trees.filter { $0.citySlug == slug })
+        facets.face(city: slug).flatMap { byId[$0] } ?? bestFace(trees(inCity: slug))
     }
 
     /// The tree whose photograph fronts this country.
     public func face(country name: String) -> Tree? {
-        facets.face(country: name).flatMap { byId[$0] }
-            ?? bestFace(trees.filter { $0.country == name })
+        facets.face(country: name).flatMap { byId[$0] } ?? bestFace(trees(inCountry: name))
     }
 
     /// The tree whose photograph fronts this species.
     public func face(species commonName: String) -> Tree? {
-        facets.face(species: commonName).flatMap { byId[$0] }
-            ?? bestFace(trees.filter { $0.commonName == commonName })
+        facets.face(species: commonName).flatMap { byId[$0] } ?? bestFace(trees(ofSpecies: commonName))
     }
 
     /// The website's introduction to a species, where it wrote one.
@@ -126,5 +169,5 @@ public struct Catalogue: Sendable {
                    .sorted { $0.distanceKm(from: lat, lng) < $1.distanceKm(from: lat, lng) }
     }
 
-    public var citySlugs: [String] { Array(Set(trees.map(\.citySlug))).sorted() }
+    public var citySlugs: [String] { byCity.keys.sorted() }
 }

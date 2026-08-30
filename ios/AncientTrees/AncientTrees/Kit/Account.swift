@@ -50,8 +50,62 @@ public enum Supa {
         r.setValue("application/json", forHTTPHeaderField: "Content-Type")
         r.setValue("Bearer " + (token ?? key), forHTTPHeaderField: "Authorization")
         if let prefer { r.setValue(prefer, forHTTPHeaderField: "Prefer") }
-        if let body { r.httpBody = try? JSONSerialization.data(withJSONObject: body) }
+        // Data passes straight through: Profiles and Moderation encode their
+        // rows with JSONEncoder before they get here, and that was the whole
+        // reason they had a request builder of their own.
+        if let raw = body as? Data { r.httpBody = raw }
+        else if let body { r.httpBody = try? JSONSerialization.data(withJSONObject: body) }
         return r
+    }
+
+    // MARK: - the four things anybody does with it
+    //
+    // These lived twice, character for character, as private helpers in
+    // CloudSync and SightingSync, and six more files built their own URLRequest
+    // rather than calling request() above. That was not merely untidy. Only
+    // request() sets a timeout, so Submissions, VoteCounts, Profiles,
+    // Moderation and Diagnostics all ran on the system default of sixty
+    // seconds: a minute of somebody standing under a tree watching nothing
+    // happen, in an app whose whole point is being outside with poor signal.
+    //
+    // And the copies are where the bugs were. Profiles and ProfileEditor built
+    // their URL with appendingPathComponent, which percent-encodes the "?" in
+    // "profiles?on_conflict=user_id" into a table name with a question mark in
+    // it, so saving a name or a picture had never once worked. request() has
+    // always concatenated, which is exactly why saves, visited and sightings
+    // were fine all along. One builder means one answer.
+
+    /// A GET returning rows, or an empty list. Nothing here ever throws at the
+    /// caller: a failed read of somebody's saves is a non-event, same rule as
+    /// the catalogue's failed refresh.
+    static func rows(_ path: String, token: String? = nil) async -> [[String: Any]] {
+        let r = request(path, method: "GET", token: token)
+        guard let (data, _) = try? await Net.data(for: r),
+              let j = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
+        else { return [] }
+        return j
+    }
+
+    /// An upsert. Returns whether the row actually landed, which matters
+    /// wherever we then forget the local copy: dropping something we only HOPED
+    /// had arrived loses it for good.
+    @discardableResult
+    static func post(_ path: String, token: String? = nil, body: Any,
+                     prefer: String = "resolution=merge-duplicates,return=minimal") async -> Bool {
+        await ok(request(path, token: token, body: body, prefer: prefer))
+    }
+
+    @discardableResult
+    static func delete(_ path: String, token: String? = nil) async -> Bool {
+        await ok(request(path, method: "DELETE", token: token, prefer: "return=minimal"))
+    }
+
+    /// Did the server say yes. One reading of a status code, so "did it work"
+    /// cannot come to two answers in two files.
+    static func ok(_ r: URLRequest) async -> Bool {
+        guard let (_, resp) = try? await Net.data(for: r),
+              let http = resp as? HTTPURLResponse else { return false }
+        return (200..<300).contains(http.statusCode)
     }
 }
 

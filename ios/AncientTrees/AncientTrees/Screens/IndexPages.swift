@@ -39,7 +39,7 @@ struct IndexView: View {
     // MARK: - the four kinds of row
 
     private var cities: some View {
-        let all = Dictionary(grouping: catalogue.trees, by: \.citySlug)
+        let all = catalogue.citiesWithTrees
             .map { (slug: $0.key, name: $0.value[0].city,
                     country: $0.value[0].country, count: $0.value.count) }
             .filter { matches($0.name) || matches($0.country) }
@@ -53,7 +53,7 @@ struct IndexView: View {
     }
 
     private var countries: some View {
-        let all = Dictionary(grouping: catalogue.trees, by: \.country)
+        let all = catalogue.countriesWithTrees
             .map { (name: $0.key, count: $0.value.count,
                     cities: Set($0.value.map(\.citySlug)).count) }
             .filter { matches($0.name) }
@@ -70,7 +70,7 @@ struct IndexView: View {
     /// of tiny labels you had to scroll to read (Hidde, 2026-08-21: "het
     /// voelt eigenlijk alsof je ze meer onder elkaar kunt zetten").
     private var species: some View {
-        let all = Dictionary(grouping: catalogue.trees, by: \.commonName)
+        let all = catalogue.speciesWithTrees
             .map { (name: $0.key, count: $0.value.count) }
             .filter { matches($0.name) }
             .sorted { $0.count > $1.count }

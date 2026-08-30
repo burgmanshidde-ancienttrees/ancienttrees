@@ -123,7 +123,7 @@ struct CollectView: View {
         // the type checker try a great many overloads, and how many it gets
         // through depends on the machine, which is the worst kind of red: green
         // on the desk that wrote it, red on the gate.
-        let byName: [String: [Tree]] = Dictionary(grouping: catalogue.trees, by: \.commonName)
+        let byName: [String: [Tree]] = catalogue.speciesWithTrees
         let ranked: [(key: String, value: [Tree])] = byName.sorted { a, b in
             if a.value.count != b.value.count { return a.value.count > b.value.count }
             return a.key < b.key

@@ -28,8 +28,8 @@ public enum Submission {
         }
     }
 
-    static let url = URL(string: "https://caimvxiyrtifilimlkqw.supabase.co/rest/v1/submissions")!
-    static let key = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb"
+    /// The project and the key live on Supa; this is just the table.
+    static let path = "/rest/v1/submissions"
 
     public struct Draft: Sendable {
         public var kind: Kind = .correction
@@ -70,15 +70,8 @@ public enum Submission {
     }
 
     private static func post(_ body: [String: Any], token: String?) async -> Bool {
-        var r = URLRequest(url: url)
-        r.httpMethod = "POST"
-        r.setValue(key, forHTTPHeaderField: "apikey")
-        if let token { r.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization") }
-        r.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        r.setValue("return=minimal", forHTTPHeaderField: "Prefer")
-        r.httpBody = try? JSONSerialization.data(withJSONObject: body)
-        guard let (_, resp) = try? await Net.data(for: r),
-              let http = resp as? HTTPURLResponse else { return false }
-        return (200..<300).contains(http.statusCode)
+        // No token is not an error here: a submission is accepted on the
+        // publishable key, and Supa.request falls back to it.
+        await Supa.post(path, token: token, body: body, prefer: "return=minimal")
     }
 }

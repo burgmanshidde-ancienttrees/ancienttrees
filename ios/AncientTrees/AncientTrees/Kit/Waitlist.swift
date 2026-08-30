@@ -7,8 +7,11 @@
 import Foundation
 
 public enum Waitlist {
-    static let url = URL(string: "https://caimvxiyrtifilimlkqw.supabase.co/rest/v1/waitlist")!
-    static let key = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb"
+    /// The project and the key live on Supa. They were written out here as
+    /// well, and in Submissions, so the same publishable key sat in three
+    /// files: three places to edit the day it rotates, and two of them easy to
+    /// miss.
+    static let path = "/rest/v1/waitlist"
 
     /// The email address is the whole point and it was missing until 2026-08-20.
     ///
@@ -21,23 +24,13 @@ public enum Waitlist {
     /// one.
     @discardableResult
     public static func join(reason: String, email: String) async -> Bool {
-        var r = URLRequest(url: url)
-        r.httpMethod = "POST"
-        r.timeoutInterval = 20
-        r.setValue(key, forHTTPHeaderField: "apikey")
-        r.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        r.setValue("return=minimal", forHTTPHeaderField: "Prefer")
         // Only the columns the table actually has. It was posting a "note"
         // field, waitlist has no such column, and PostgREST rejects the whole
         // row with a 400. So the paywall button had never written a single row
         // in its life while telling everyone who pressed it that we would be in
         // touch. The reason rides along in source instead.
-        r.httpBody = try? JSONSerialization.data(withJSONObject: [
-            "source": "ios-app:" + reason,
-            "email": email,
-        ])
-        guard let (_, resp) = try? await Net.data(for: r),
-              let http = resp as? HTTPURLResponse else { return false }
-        return (200..<300).contains(http.statusCode)
+        return await Supa.post(path, body: ["source": "ios-app:" + reason,
+                                            "email": email],
+                               prefer: "return=minimal")
     }
 }
