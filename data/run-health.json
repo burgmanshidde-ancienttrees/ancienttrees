@@ -2526,6 +2526,106 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-08-30T11:49:08+00:00",
+   "date": "2026-08-30",
+   "run_id": "33309863922",
+   "minutes": 63.6,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 341,
+   "denials": 31,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(file), Bash(for), Bash(mkdir), Bash(python3), Bash(rm), Bash(set), Bash(tail)",
+   "ended": "success",
+   "tokens": 104833611,
+   "claims_held": [],
+   "commits": 16,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "vancouver",
+     "trees": 4
+    },
+    {
+     "city": "malaga",
+     "trees": 0
+    }
+   ],
+   "trees": 4,
+   "logged": true
+  },
+  {
+   "started": "2026-08-30T14:33:45+00:00",
+   "date": "2026-08-30",
+   "run_id": "33317187641",
+   "minutes": 98.5,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 322,
+   "denials": 53,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(tail), Bash(test), Bash(which)",
+   "ended": "success",
+   "tokens": 40840954,
+   "claims_held": [],
+   "commits": 12,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "krakow",
+     "trees": 8
+    },
+    {
+     "city": "singapore",
+     "trees": 4
+    },
+    {
+     "city": "nuremberg",
+     "trees": 1
+    },
+    {
+     "city": "assisi",
+     "trees": 0
+    },
+    {
+     "city": "bamberg",
+     "trees": 0
+    },
+    {
+     "city": "cesky-krumlov",
+     "trees": 0
+    }
+   ],
+   "trees": 13,
+   "logged": true
+  },
+  {
+   "started": "2026-08-30T16:36:06+00:00",
+   "date": "2026-08-30",
+   "run_id": "33322902676",
+   "minutes": 49.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 396,
+   "denials": 46,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 8276810,
+   "claims_held": [
+    "madeira",
+    "menorca",
+    "barcelona"
+   ],
+   "commits": 19,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "riga",
+     "trees": 5
+    }
+   ],
+   "trees": 5,
+   "logged": true
   }
  ],
  "schedule_changes": [

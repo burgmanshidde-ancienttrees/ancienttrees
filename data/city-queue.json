@@ -23,8 +23,8 @@
    "photos": 9,
    "walks": 2,
    "register": 32,
-   "ready": 3,
-   "supply": 40,
+   "ready": 0,
+   "supply": 37,
    "target": 30,
    "impressions_10d": 419,
    "clicks_10d": 4,
@@ -181,7 +181,7 @@
    "demand": 967821,
    "basis": "measured",
    "status": "published",
-   "trees": 18,
+   "trees": 22,
    "photos": 3,
    "walks": 2,
    "register": 165,
@@ -578,8 +578,8 @@
    "photos": 4,
    "walks": 1,
    "register": 436,
-   "ready": 4,
-   "supply": 551,
+   "ready": 3,
+   "supply": 550,
    "target": 30,
    "impressions_10d": 92,
    "clicks_10d": 2,
@@ -852,12 +852,12 @@
    "demand": 140824,
    "basis": "measured",
    "status": "published",
-   "trees": 26,
+   "trees": 34,
    "photos": 3,
    "walks": 3,
-   "register": 200,
+   "register": 198,
    "ready": 0,
-   "supply": 200,
+   "supply": 198,
    "target": 30,
    "impressions_10d": 56,
    "clicks_10d": 2,
@@ -1705,8 +1705,8 @@
    "score": 9.47,
    "demand": 351552,
    "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
+   "status": "published",
+   "trees": 4,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2724,12 +2724,12 @@
    "demand": 161614,
    "basis": "measured",
    "status": "published",
-   "trees": 10,
+   "trees": 11,
    "photos": 1,
    "walks": 1,
    "register": 39,
-   "ready": 1,
-   "supply": 53,
+   "ready": 0,
+   "supply": 52,
    "target": 20,
    "ease": 1.5,
    "work_score": 6.46,
@@ -2832,29 +2832,6 @@
   },
   {
    "rank": 123,
-   "city": "Aarhus",
-   "country": "Denmark",
-   "slug": "aarhus",
-   "score": 6.03,
-   "demand": 52722,
-   "basis": "measured",
-   "status": "published",
-   "trees": 7,
-   "photos": 1,
-   "walks": 1,
-   "register": 0,
-   "ready": 1,
-   "supply": 2,
-   "target": 30,
-   "ease": 1.04,
-   "work_score": 6.27,
-   "impressions_10d": 28,
-   "clicks_10d": 1,
-   "travel": 20920,
-   "wikidata": 1
-  },
-  {
-   "rank": 124,
    "city": "Detroit",
    "country": "United States",
    "slug": "detroit",
@@ -2875,6 +2852,29 @@
    "work_score": 6.26,
    "travel": 6264,
    "wikidata": 0
+  },
+  {
+   "rank": 124,
+   "city": "Aarhus",
+   "country": "Denmark",
+   "slug": "aarhus",
+   "score": 6.03,
+   "demand": 52722,
+   "basis": "measured",
+   "status": "published",
+   "trees": 7,
+   "photos": 1,
+   "walks": 1,
+   "register": 0,
+   "ready": 0,
+   "supply": 1,
+   "target": 30,
+   "ease": 1.02,
+   "work_score": 6.15,
+   "impressions_10d": 28,
+   "clicks_10d": 1,
+   "travel": 20920,
+   "wikidata": 1
   },
   {
    "rank": 125,
@@ -3202,29 +3202,6 @@
   },
   {
    "rank": 139,
-   "city": "Riga",
-   "country": "Latvia",
-   "slug": "riga",
-   "score": 4.9,
-   "demand": 108918,
-   "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 6,
-   "target": 10,
-   "ease": 1.12,
-   "work_score": 5.49,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "travel": 4904,
-   "wikidata": 6
-  },
-  {
-   "rank": 140,
    "city": "Toulouse",
    "country": "France",
    "slug": "toulouse",
@@ -3247,7 +3224,7 @@
    "wikidata": 0
   },
   {
-   "rank": 141,
+   "rank": 140,
    "city": "Glasgow",
    "country": "United Kingdom",
    "slug": "glasgow",
@@ -3270,7 +3247,7 @@
    "wikidata": 3
   },
   {
-   "rank": 142,
+   "rank": 141,
    "city": "Mexico City",
    "country": "Mexico",
    "slug": "mexico-city",
@@ -3293,7 +3270,7 @@
    "wikidata": 3
   },
   {
-   "rank": 143,
+   "rank": 142,
    "city": "Galway",
    "country": "Ireland",
    "slug": "galway",
@@ -3316,7 +3293,7 @@
    "wikidata": 0
   },
   {
-   "rank": 144,
+   "rank": 143,
    "city": "Phuket",
    "country": "Thailand",
    "slug": "phuket",
@@ -3339,7 +3316,7 @@
    "wikidata": 0
   },
   {
-   "rank": 145,
+   "rank": 144,
    "city": "Rovaniemi",
    "country": "Finland",
    "slug": "rovaniemi",
@@ -3362,7 +3339,7 @@
    "wikidata": 0
   },
   {
-   "rank": 146,
+   "rank": 145,
    "city": "Lagos",
    "country": "Portugal",
    "slug": "lagos",
@@ -3386,7 +3363,7 @@
    "wikidata": 2
   },
   {
-   "rank": 147,
+   "rank": 146,
    "city": "Sapporo",
    "country": "Japan",
    "slug": "sapporo",
@@ -3409,7 +3386,7 @@
    "wikidata": 0
   },
   {
-   "rank": 148,
+   "rank": 147,
    "city": "Cardiff",
    "country": "United Kingdom",
    "slug": "cardiff",
@@ -3432,7 +3409,7 @@
    "wikidata": 1
   },
   {
-   "rank": 149,
+   "rank": 148,
    "city": "Graz",
    "country": "Austria",
    "slug": "graz",
@@ -3455,7 +3432,7 @@
    "wikidata": 0
   },
   {
-   "rank": 150,
+   "rank": 149,
    "city": "Melbourne",
    "country": "Australia",
    "slug": "melbourne",
@@ -3478,7 +3455,7 @@
    "wikidata": 3
   },
   {
-   "rank": 151,
+   "rank": 150,
    "city": "Salt Lake City",
    "country": "United States",
    "slug": "salt-lake-city",
@@ -3501,7 +3478,7 @@
    "wikidata": 0
   },
   {
-   "rank": 152,
+   "rank": 151,
    "city": "Lund",
    "country": "Sweden",
    "slug": "lund",
@@ -3524,7 +3501,7 @@
    "wikidata": 0
   },
   {
-   "rank": 153,
+   "rank": 152,
    "city": "Kobe",
    "country": "Japan",
    "slug": "kobe",
@@ -3547,7 +3524,7 @@
    "wikidata": 0
   },
   {
-   "rank": 154,
+   "rank": 153,
    "city": "Auckland",
    "country": "New Zealand",
    "slug": "auckland",
@@ -3570,7 +3547,7 @@
    "wikidata": 4
   },
   {
-   "rank": 155,
+   "rank": 154,
    "city": "Lausanne",
    "country": "Switzerland",
    "slug": "lausanne",
@@ -3590,6 +3567,29 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 4900,
+   "wikidata": 1
+  },
+  {
+   "rank": 155,
+   "city": "Riga",
+   "country": "Latvia",
+   "slug": "riga",
+   "score": 4.9,
+   "demand": 108918,
+   "basis": "predicted (travel demand)",
+   "status": "published",
+   "trees": 5,
+   "photos": 0,
+   "walks": 0,
+   "register": 0,
+   "ready": 0,
+   "supply": 1,
+   "target": 10,
+   "ease": 1.02,
+   "work_score": 5.0,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "travel": 4904,
    "wikidata": 1
   },
   {
@@ -4577,8 +4577,8 @@
    "photos": 2,
    "walks": 2,
    "register": 34,
-   "ready": 2,
-   "supply": 126,
+   "ready": 0,
+   "supply": 124,
    "target": 20,
    "ease": 1.5,
    "work_score": 3.56,
@@ -6865,7 +6865,7 @@
    "basis": "published, never ranked (may be uncrawled)",
    "status": "published",
    "trees": 6,
-   "photos": 0,
+   "photos": 2,
    "walks": 0,
    "register": 11,
    "ready": 0,
@@ -6980,7 +6980,7 @@
    "basis": "published, never ranked (may be uncrawled)",
    "status": "published",
    "trees": 4,
-   "photos": 0,
+   "photos": 3,
    "walks": 1,
    "register": 10,
    "ready": 0,
@@ -7003,7 +7003,7 @@
    "basis": "published, never ranked (may be uncrawled)",
    "status": "published",
    "trees": 6,
-   "photos": 0,
+   "photos": 1,
    "walks": 2,
    "register": 6,
    "ready": 0,

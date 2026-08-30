@@ -1,0 +1,23 @@
+{
+  "leads": [
+    {
+      "id": "rig_lead_barona_ozols",
+      "name": "Krišjāņa Barona ozols (Krišjānis Barons Oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "wikidata": "Q20402455",
+      "location": {
+        "address": "Ziemeļblāzmas iela 38, Vecmīlgrāvis, Rīga",
+        "latitude": 57.0378,
+        "longitude": 24.0981,
+        "neighbourhood": "Vecmīlgrāvis"
+      },
+      "reason": "Historically strong candidate (planted personally in 1909 by Krišjānis Barons, the 'father of the Dainas' and a major Latvian cultural figure, in the garden of what was then Augusts Dombrovskis's Burtnieku nams) with two sources that agree: lv.wikipedia.org/wiki/Krišjāņa_Barona_ozols (citing Guntis Eniņš's 2008 book, giving 17.5m height, 2.15m girth, documented 1909 planting date) and citariga.lv (a Vecmilgrāvis local-history site, https://www.citariga.lv/lat/vecmilgravis/iedzivotaji/krisjanis-barons/ and /kultura/burtnieku-nams/, confirming the tree 'is still preserved there today'). Held back on ACCESS rather than evidence: Burtnieku nams is today a music school (Augusta Dombrovska mūzikas skola, since 1990/renamed 2008) and the tree stands in its garden ('nama dārzā'). Per CLAUDE.md hard rule 10, a tree on school grounds ships only with positive evidence the grounds are genuinely open (a public path crossing them, a bordering public park, confirmed weekend access); no such evidence was found this pass, only that the tree exists and the school is real. It may in fact be visible from Ziemeļblāzmas iela without entering the schoolyard, but that was not confirmed either. Worth a follow-up pass specifically checking street-level visibility (satellite/street-view imagery or a site visit report) before this ships or is dropped.",
+      "verified_sources": [
+        "https://lv.wikipedia.org/wiki/Krišjāņa_Barona_ozols",
+        "https://www.citariga.lv/lat/vecmilgravis/iedzivotaji/krisjanis-barons/",
+        "https://www.citariga.lv/lat/vecmilgravis/kultura/burtnieku-nams/"
+      ]
+    }
+  ],
+  "blocked": []
+}

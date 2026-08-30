@@ -1,0 +1,156 @@
+{
+  "city": "Riga",
+  "country": "Latvia",
+  "status": "needs_curation",
+  "intro": "Riga's biggest trees are not clustered in any single park; they stand scattered across manor grounds, a river island and a lakeside suburb, each one a designated dižkoks, Latvia's own heritage-tree status. What ties them together is measurement: Latvian dendrologists have taped the same oaks, a linden and a maple's girth every few decades since the 1970s, so several of these entries come with a documented growth record rather than a single guess. One grows metres from the Freedom Monument; another has outlived two arson attacks and a construction crew that nearly took its roots.",
+  "meta_description": "Riga's largest verified trees: a linden that gained a metre and a half of girth in 34 years, a fire-scarred oak, and one still unnamed by the canal.",
+  "oldest_tree_id": "rig_003",
+  "question_meta": "Riga's oldest tree is the Kaltiņi Oak, estimated at roughly 330 years, growing by Mašēnu Lake on the city's eastern edge.",
+  "question_answer": "Riga's oldest tree is the Kaltiņi Oak, estimated at roughly 330 years old, growing beside Mašēnu Lake on the city's eastern edge. Two independent 2008 and 2009 surveys agree closely on its six-metre-plus girth, though neither dates it more precisely than that soft estimate.",
+  "question_context": "The Kaltiņi Oak has survived more than its age suggests. In 1967 someone set fire to its trunk cavity three times; the wound was sealed the following year and the tree kept growing. State protection followed in 1977, and in 1981 the dendrologist Guntis Eniņš intervened to move a sewage plant that was being built hard against its roots. Vides Vēstis measured it at 6.80 metres round in 2009; Eniņš's own book gives 6.85, a five-centimetre gap that is either a year of growth or the honest margin of a tape measure on a trunk this shape. Its age, about 330 years, comes from that same 2008 survey and has never been tightened since.\n\nTwo other Riga trees run it close. The Ēbeļmuiža Oak in Pārdaugava is put at roughly 300 years, and the Lucavsala Linden at about 200, both from the same 2008 survey. All three are honest estimates rather than ring counts, kept loose rather than sharpened to look more certain than the evidence allows.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Riga?",
+      "a": "The Kaltiņi Oak, estimated at roughly 330 years old, growing beside Mašēnu Lake on the city's eastern edge. The nearby Ēbeļmuiža Oak, at an estimated 300 years, runs it close."
+    },
+    {
+      "q": "Are Riga's remarkable trees free to visit?",
+      "a": "Yes, all five stand in public parks, forest land or open streetside ground, with no entry fee and no gate to pass."
+    },
+    {
+      "q": "Why do so many of these trees have decades of measurements?",
+      "a": "Latvia keeps an official register of dižkoki, heritage trees of state or local significance, and dendrologists including Atis Baiža and Guntis Eniņš have re-measured the same specimens since the 1970s, which is why several entries here can show exactly how much a trunk has grown over thirty or forty years."
+    },
+    {
+      "q": "Which of these trees is the least documented?",
+      "a": "The Kanālmalas Oak, a pedunculate oak in the central canal park a few minutes from the Freedom Monument. It carries a precise GPS location from a 2018 photo survey but no name, age or girth in any published source. If you know more about it, tell us."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rig_001",
+      "name": "The Lucavsala Linden",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "girth_cm": 682,
+      "location": {
+        "address": "Lucavsala island, near the monument to Russian soldiers fallen in the Great Northern War",
+        "latitude": 56.9253,
+        "longitude": 24.1261,
+        "neighbourhood": "Lucavsala"
+      },
+      "story": "A rowan grows out of this linden, rooted in the fork where the trunk divides. It is the thickest linden in Riga and among the two or three most voluminous trees of any species in the city, protected as a heritage tree of state significance. Its trunk is also one of the best documented in Latvia. The dendrologist Atis Baiža measured it at 5.34 metres round in 1975. By 2009 the figure was 6.82 metres at 1.2 metres up, a metre and a half added across thirty-four years, which is a tree still working rather than a name on a register. It stands 26 metres tall over a crown covering some 350 square metres.\n\nThe age is the softest number here. Guntis Eniņš's 2008 survey of Latvia's greatest trees gives approximately 200 years and nobody has tightened it since, so take that loosely.\n\nThe linden grows on Lucavsala, a Daugava island now held as public forest and crossed by walking trails, and it stands near the monument to the Russian soldiers who fell there in the Great Northern War in 1701. That is roughly a century before this tree existed. It arrived late to its own setting, and has outgrown everything in it since.",
+      "verified_sources": [
+        "https://lv.wikipedia.org/wiki/Lucavsalas_liepa",
+        "https://georiga.eu/en/atvertie-dati/database-of-rigas-heritage-trees/"
+      ],
+      "access": "Free, public island park with walking trails (Rigas Meži recreation area); reachable on foot",
+      "transport": "Bus/tram to Kipsala or Torņakalns then walk across the Lucavsala footbridge, approx 15-20 min walk from nearest stop",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "rig_002",
+      "name": "The Ēbeļmuiža Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 560,
+      "location": {
+        "address": "Ēbeļmuižas parks, on the grounds of the former Ēbeļmuiža manor, Ziepniekkalns",
+        "latitude": 56.9053,
+        "longitude": 24.0987,
+        "neighbourhood": "Ziepniekkalns, Pārdaugava"
+      },
+      "story": "Riga has spent decades patching this oak with metal sheets and plates, and it is still green. It is the thickest tree in Pārdaugava, the half of the city on the left bank of the Daugava: 5.60 metres around, 20 metres tall, with a crown covering some 250 square metres. Two independent surveys, Guntis Eniņš's 2008 book on Latvia's greatest trees and the environmental magazine Vides Vēstis a year later, report exactly the same girth, which is rarer than it sounds. Eniņš puts the age at about 300 years, a loose figure nobody has narrowed since.\n\nThe repairs are the real story. The trunk has been worked over again and again, sealed and plated where it gave way, and in 2000 it was given props and a tidied surround. The same 2009 survey that catalogued all that ironmongery also recorded the tree still leafing out and thriving. Nothing appears to have been published on it since, so that remains the last word.\n\nIt grows in the park of the former Ēbeļmuiža manor in Ziepniekkalns. At roughly three centuries it predates the Latvian republic by two hundred years, and it has stood through the empire, two wars and the Soviet decades on ground that went from private estate to public park around it. Sources give the site two different street addresses, so aim for the park rather than a house number.",
+      "verified_sources": [
+        "https://lv.wikipedia.org/wiki/Ēbeļmuižas_ozols",
+        "https://videsvestis.lv/desmit-dizakie-koki-riga-2009/"
+      ],
+      "access": "Free, stands in a public park (former manor grounds); no restriction noted",
+      "transport": "Ziepniekkalns district, Pārdaugava; nearest stop not independently verified this pass",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "rig_003",
+      "name": "The Kaltiņi Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 330 years",
+      "age_min": 280,
+      "age_max": 380,
+      "girth_cm": 685,
+      "location": {
+        "address": "Berģu iela 160, by Mašēnu Lake, near Riga's eastern city boundary",
+        "latitude": 56.9764,
+        "longitude": 24.3131,
+        "neighbourhood": "Berģi, eastern Riga"
+      },
+      "story": "Somebody set fire to the inside of this oak three times in 1967. The cavity was sealed the following year and the tree carried on. It has been under state protection since 1977, and in 1981 it survived a second threat, this one accidental: a sewage treatment plant for the care home next door was going up hard against it, until the dendrologist and journalist Guntis Eniņš intervened and the works were moved.\n\nBy most accounts it is the thickest tree in Riga. Vides Vēstis measured 6.80 metres around in its 2009 survey of the city's greatest trees; Eniņš's book gives 6.85. Five centimetres apart, which is either a year of growth or the honest margin of getting a tape around something this shape. It stands 22 metres tall under a crown of roughly 190 square metres, and its age is put at about 330 years, a soft figure from the same survey.\n\nA hollow in the trunk shelters zeltpore, Hapalopilus croceus, a bracket fungus rare enough to be protected across the European Union. The oak first reached print in 1964 and was written about steadily for decades, but nothing recent has appeared, so the last full account of it is more than ten years old.\n\nIt grows beside Mašēnu Lake on the eastern edge of the city, about 13 kilometres out from the centre and still inside Riga's own boundary.",
+      "verified_sources": [
+        "https://lv.wikipedia.org/wiki/Kaltiņu_ozols",
+        "https://videsvestis.lv/desmit-dizakie-koki-riga-2009/"
+      ],
+      "access": "Free, stands beside a former/current social care centre ('Ezerkrasti') by the lake; publicly reachable, no gate or entry fee noted in sources",
+      "transport": "Eastern edge of Riga administrative territory (roughly 13km from the city centre by straight line); address is within Riga city limits, but nearest stop/route not independently verified this pass",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "rig_004",
+      "name": "The Zasulauks Maple",
+      "species": "Norway Maple (Acer platanoides)",
+      "age_estimate": "roughly 140 years",
+      "age_min": 120,
+      "age_max": 160,
+      "girth_cm": 534,
+      "location": {
+        "address": "Kuldīgas iela 31/33 (the same building is also addressed as Kalnciema iela 31/33), Zasulauks",
+        "latitude": 56.9486,
+        "longitude": 24.0608,
+        "neighbourhood": "Zasulauks / Kalnciema Quarter"
+      },
+      "story": "In 1975 this maple measured four metres round. By 2009 it was 5.34, a third of its own waistline added inside thirty-four years.\n\nIt is the thickest and widest spreading maple in Riga, and one of the largest in Latvia, though the Latvian tree databases cannot agree how large: one ranks it second in the country, another fourth. It rises 26 metres, forks into two stems at about two and a half metres up, and carries a crown over roughly 450 square metres, which is a great deal of shade for a species most people walk past without looking. Its age is given as about 140 years, a round figure from a survey rather than a count of rings.\n\nThat ordinariness is the point. The Norway maple is the standard street tree of northern Europe, planted by the thousand and noticed by almost nobody, and this is what one looks like when it is left alone to reach full size.\n\nIt grows beside a wooden tenement house on the former grounds of Zasumuiža manor, in what is now the Kalnciema Quarter, a district of restored timber buildings with a regular market. The address is written two ways, Kuldīgas iela 31/33 and Kalnciema iela 31/33, almost certainly the same corner building counted from two streets. The last published measurement is that 2009 one; nobody has put a tape around it since.",
+      "verified_sources": [
+        "https://lv.wikipedia.org/wiki/Zasulauka_kļava",
+        "https://videsvestis.lv/desmit-dizakie-koki-riga-2009/"
+      ],
+      "access": "Free, grows beside a historic wooden tenement building in the Kalnciema Quarter (Kalnciema kvartāls), a public heritage and market district; visible from the street",
+      "transport": "Zasulauks neighbourhood, close to Riga centre; nearest stop not independently verified this pass",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "rig_005",
+      "name": "The Kanālmalas Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "possibly around 140 years",
+      "age_min": 100,
+      "age_max": 180,
+      "girth_cm": null,
+      "location": {
+        "address": "Kanālmalas apstādījumi (City Canal gardens), central Riga, near the Freedom Monument and the Laima Clock",
+        "latitude": 56.950294,
+        "longitude": 24.113493,
+        "neighbourhood": "Centrs"
+      },
+      "story": "The easiest old tree to reach in Riga is also the one nobody has named. It grows in the Kanālmalas apstādījumi, the ribbon of park that follows the old city canal, a few minutes from the Freedom Monument and the Laima Clock. It is a pedunculate oak, it sits on Latvia's register of protected natural objects, and that is close to the sum of what is written down. A photographer logged it in May 2018 for Wiki Loves Earth, the campaign that documents the country's protected trees, and left a GPS reading taken standing underneath it. That is why the pin here is exact while almost nothing else about the tree is.\n\nThe setting does the historical work. This canal park is the ceremonial centre of Riga, the ground around the Freedom Monument where the city gathers, and the oak has stood through the whole of it while attracting no attention.\n\nIts age is honestly unknown. Latvian public broadcaster LSM once ran a history of these gardens in which the city forestry service mentioned two old oaks that might go back to the time of Georgs Kūfalts, the gardener who laid the park out in the 1880s, which would put them near 140 years. The article names neither tree, so whether this is one of them is a fair guess and no more. Nobody has dated it, taped its girth or published a line about it. If you know which oak this is, or how old, tell us.",
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/File:Koks_Kan%C4%81lmalas_apst%C4%81d%C4%ABjumos.jpg",
+        "https://www.lsm.lv/raksts/dzive--stils/pilsetvide/ka-veidojas-kanalmalas-apstadijumi-kuros-goda-vieta-ir-ari-ginks.a404155/"
+      ],
+      "access": "Free, stands in Riga's central public canal-park (Kanālmalas apstādījumi), open at all times, no restriction",
+      "transport": "In the very centre of Riga, a few minutes' walk from the Freedom Monument; any central bus/tram/trolleybus stop serves it",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
+    }
+  ]
+}

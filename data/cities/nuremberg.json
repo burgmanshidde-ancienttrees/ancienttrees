@@ -339,6 +339,36 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "nbg_011",
+      "name": "ND Nr. 29 Rotbuche im Kramer Klett Park",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Cramer-Klett-Park, Gärten bei Wöhrd",
+        "latitude": 49.45495662,
+        "longitude": 11.08978906,
+        "neighbourhood": "Gärten bei Wöhrd / Wöhrd"
+      },
+      "story": "Eighty metres from this beech stands another one just like it, and Nuremberg's own register keeps them as two separate legal entities: Naturdenkmal Nr. 28 and Nr. 29, each with its own designation rather than a shared one for the pair. This is Nr. 29, a European beech in what used to be the Cramer-Klett family's private garden before the city bought the land in 1929 and opened it to the public two years later. The garden was badly damaged in the Second World War and was renovated as recently as 2019, one of the older green spaces in Woehrd to have outlasted both the family that laid it out and the war that came close to erasing it. The city's own list of protected trees names exactly two Naturdenkmaeler lost to fungal disease: a beech near the Laufer Schlagturm and a copper beech elsewhere in this same park. Nr. 29 is not one of them, and neither is its neighbour eighty metres away. Nobody has published a girth or an age for this tree, unusual for a specimen important enough to carry its own municipal registration number. If you have stood under it with a tape measure, or just an eye for how old these things get, tell us what you found.",
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+        "https://de.wikipedia.org/wiki/Cramer-Klett-Park"
+      ],
+      "access": "Free, public city park (Cramer-Klett-Park, Wöhrd district; city-owned since 1929, opened to the public in 1931, renovated 2019)",
+      "transport": "Short walk from the Wöhrd district, roughly 15-20 min from Nuremberg Hauptbahnhof/Altstadt",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
