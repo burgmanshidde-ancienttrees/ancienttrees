@@ -73,7 +73,7 @@ struct HomeView: View {
     /// the map has moved somewhere far enough to change what is near.
     private func buildShelves() {
         var s = Shelves()
-        s.cities = Dictionary(grouping: catalogue.trees, by: \.citySlug)
+        s.cities = catalogue.citiesWithTrees
             .map { (slug: $0.key, name: $0.value[0].city,
                     country: $0.value[0].country, count: $0.value.count) }
             .sorted { $0.count > $1.count }
@@ -90,7 +90,7 @@ struct HomeView: View {
             .filter { $0.photo != nil && ($0.ageMin ?? 0) > 0 }
             .sorted { ($0.ageMin ?? 0) > ($1.ageMin ?? 0) }
             .prefix(12).map { $0 }
-        s.countries = Dictionary(grouping: catalogue.trees, by: \.country)
+        s.countries = catalogue.countriesWithTrees
             .map { (name: $0.key,
                     count: $0.value.count,
                     cities: Set($0.value.map(\.citySlug)).count,
@@ -98,7 +98,7 @@ struct HomeView: View {
                     // tree that happened to have a picture.
                     photo: catalogue.face(country: $0.key)) }
             .sorted { $0.count > $1.count }
-        s.species = Dictionary(grouping: catalogue.trees, by: \.commonName)
+        s.species = catalogue.speciesWithTrees
             .map { (name: $0.key, count: $0.value.count) }
             .sorted { $0.count > $1.count }
             .prefix(18).map { $0 }
@@ -289,7 +289,7 @@ struct HomeView: View {
         // changed depending on which heading you were looking at.
         VStack(alignment: .leading, spacing: 12) {
             ShelfHeader(title: "By species",
-                        subtitle: "\(Set(catalogue.trees.map(\.commonName)).count) kinds of tree",
+                        subtitle: "\(catalogue.speciesNames.count) kinds of tree",
                         more: .index(.species))
             ForEach(topSpeciesHere.prefix(6), id: \.name) { sp in
                 NavigationLink(value: Route.species(sp.name)) {
@@ -586,7 +586,7 @@ struct CityView: View {
     /// the photographed and among the rest, so this only ever lifts, never
     /// shuffles.
     private var trees: [Tree] {
-        catalogue.trees.filter { $0.citySlug == slug }
+        catalogue.trees(inCity: slug)
             .enumerated()
             .sorted { a, b in
                 let pa = a.element.photo?.card != nil, pb = b.element.photo?.card != nil

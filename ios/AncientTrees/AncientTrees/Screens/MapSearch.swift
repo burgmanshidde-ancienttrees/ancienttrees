@@ -303,7 +303,7 @@ struct MapSearch: View {
     }
 
     private func speciesSub(_ s: String) -> String {
-        let n = catalogue.trees.filter { $0.commonName == s }.count
+        let n = catalogue.trees(ofSpecies: s).count
         return "\(n) \(n == 1 ? "tree" : "trees")"
     }
 
@@ -331,7 +331,7 @@ struct MapSearch: View {
 
     private var biggestCities: [CityRow] {
         var out: [CityRow] = []
-        for (slug, ts) in Dictionary(grouping: catalogue.trees, by: \.citySlug) {
+        for (slug, ts) in catalogue.citiesWithTrees {
             let n = Double(ts.count)
             var la = 0.0, ln = 0.0
             for t in ts { la += t.lat; ln += t.lng }
@@ -342,13 +342,11 @@ struct MapSearch: View {
     }
 
     private var countries: [(name: String, count: Int, cities: Int)] {
-        Dictionary(grouping: catalogue.trees, by: \.country).map {
+        catalogue.countriesWithTrees.map {
             (name: $0.key, count: $0.value.count, cities: Set($0.value.map(\.citySlug)).count)
         }
         .sorted { $0.count > $1.count }
     }
 
-    private var allSpecies: [String] {
-        Array(Set(catalogue.trees.map(\.commonName))).sorted()
-    }
+    private var allSpecies: [String] { catalogue.speciesNames }
 }

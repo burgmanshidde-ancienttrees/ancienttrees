@@ -13,7 +13,7 @@ struct CountryView: View {
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
 
-    private var trees: [Tree] { catalogue.trees.filter { $0.country == country } }
+    private var trees: [Tree] { catalogue.trees(inCountry: country) }
 
     /// Where the preview opens: the middle of the country's own trees, which is
     /// not the middle of the country and is the more useful of the two.

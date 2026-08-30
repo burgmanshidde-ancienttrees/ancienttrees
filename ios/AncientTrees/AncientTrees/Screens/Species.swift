@@ -22,7 +22,7 @@ struct SpeciesView: View {
     /// Distance still decides inside each group, so the nearest photographed
     /// tree leads and the list stays useful where you are standing.
     private var trees: [Tree] {
-        catalogue.trees.filter { $0.commonName == commonName }
+        catalogue.trees(ofSpecies: commonName)
             .sorted {
                 let a = $0.photo != nil, b = $1.photo != nil
                 if a != b { return a }

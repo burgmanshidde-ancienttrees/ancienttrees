@@ -58,14 +58,7 @@ public final class Diagnostics: NSObject {
             // so a payload Apple changes the shape of cannot fail the insert.
             "payload": String(data: json, encoding: .utf8) ?? "",
         ]
-        var r = URLRequest(url: Submission.url.deletingLastPathComponent()
-            .appendingPathComponent("diagnostics"))
-        r.httpMethod = "POST"
-        r.setValue(Submission.key, forHTTPHeaderField: "apikey")
-        r.setValue("Bearer \(Submission.key)", forHTTPHeaderField: "Authorization")
-        r.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        r.setValue("return=minimal", forHTTPHeaderField: "Prefer")
-        r.httpBody = try? JSONSerialization.data(withJSONObject: body)
+        let r = Supa.request("/rest/v1/diagnostics", body: body, prefer: "return=minimal")
         // Fire and forget. A diagnostic that fails to send is not worth a retry
         // queue, a backoff or a line of state: the next payload comes tomorrow.
         Net.dataTask(with: r).resume()

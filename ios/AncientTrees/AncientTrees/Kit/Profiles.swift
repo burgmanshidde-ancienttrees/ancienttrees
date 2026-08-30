@@ -32,8 +32,6 @@ public final class Profiles {
     public private(set) var followers = 0
     public private(set) var following = 0
 
-    private var base: URL { Submission.url.deletingLastPathComponent() }
-
     public init() {
         // Debug scaffolding, the same family as -collected=, -mine-demo and
         // -signed-in: give the signed-in demo account a name.
@@ -53,29 +51,21 @@ public final class Profiles {
         }
     }
 
+    /// SUPA.REQUEST, not a builder of our own.
+    ///
+    /// This was one, and the comment it carried is worth keeping because it
+    /// names the bug: appendingPathComponent percent-encodes a "?" into %3F, so
+    /// "profiles?on_conflict=user_id" became a TABLE NAME with a question mark
+    /// in it and PostgREST refused the lot. Saving a name or a picture had
+    /// never once worked, follower counts were always zero, and a report or a
+    /// block only ever happened on the phone. Nothing said so: the refusal was
+    /// swallowed. Supa.request has always concatenated, which is exactly why
+    /// saves, visited and sightings were fine all along, and is the argument
+    /// for there being one builder rather than seven.
     private func request(_ path: String, _ method: String, token: String?,
                          body: Data? = nil, prefer: String? = nil) -> URLRequest {
-        // STRING CONCATENATION, never appendingPathComponent.
-        //
-        // appendingPathComponent percent-encodes a "?" into %3F, so
-        // "profiles?on_conflict=user_id" becomes a TABLE NAME with a question
-        // mark in it and PostgREST refuses the lot. Saving a name or a picture
-        // had therefore never once worked, follower counts were always zero,
-        // and a report or a block only ever happened on the phone. Nothing said
-        // so: the calls returned a refusal that was swallowed.
-        //
-        // Found 2026-08-27 by reproducing the exact request against the real
-        // database, where it succeeded, and then comparing the URL the app
-        // actually builds. Supa.request has always concatenated, which is why
-        // saves, visited and sightings were fine all along.
-        var r = URLRequest(url: URL(string: base.absoluteString + path)!)
-        r.httpMethod = method
-        r.setValue(Submission.key, forHTTPHeaderField: "apikey")
-        r.setValue("Bearer \(token ?? Submission.key)", forHTTPHeaderField: "Authorization")
-        r.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        if let prefer { r.setValue(prefer, forHTTPHeaderField: "Prefer") }
-        r.httpBody = body
-        return r
+        Supa.request("/rest/v1/" + path, method: method, token: token,
+                     body: body, prefer: prefer)
     }
 
     /// Your own row, and the two counts beside it.

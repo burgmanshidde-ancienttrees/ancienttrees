@@ -34,8 +34,8 @@ struct PlaceMapPage: View {
 
     private var trees: [Tree] {
         switch place {
-        case .city(let slug): catalogue.trees.filter { $0.citySlug == slug }
-        case .country(let name): catalogue.trees.filter { $0.country == name }
+        case .city(let slug): catalogue.trees(inCity: slug)
+        case .country(let name): catalogue.trees(inCountry: name)
         }
     }
 

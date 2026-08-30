@@ -38,14 +38,7 @@ public final class VoteCounts {
     public func loadOnce() async {
         guard !loaded else { return }
         loaded = true
-        var req = URLRequest(url: Submission.url
-            .deletingLastPathComponent()
-            .appendingPathComponent("rpc/tree_vote_counts"))
-        req.httpMethod = "POST"
-        req.setValue(Submission.key, forHTTPHeaderField: "apikey")
-        req.setValue("Bearer \(Submission.key)", forHTTPHeaderField: "Authorization")
-        req.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        req.httpBody = Data("{}".utf8)
+        let req = Supa.request("/rest/v1/rpc/tree_vote_counts", body: [String: Any]())
         struct Row: Decodable { let tree_id: String; let up: Int; let down: Int }
         do {
             let (data, response) = try await Net.data(for: req)

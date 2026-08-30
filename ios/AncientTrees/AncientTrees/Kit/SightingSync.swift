@@ -32,7 +32,7 @@ enum SightingSync {
     static func merge(account: Account, sightings: Sightings) async {
         guard let s = await account.freshSession() else { return }
 
-        let remote = await rows("/rest/v1/sightings?select=*", token: s.accessToken)
+        let remote = await Supa.rows("/rest/v1/sightings?select=*", token: s.accessToken)
         for row in remote {
             guard let idText = row["id"] as? String, let id = UUID(uuidString: idText),
                   let lat = row["lat"] as? Double, let lng = row["lng"] as? Double
@@ -110,7 +110,7 @@ enum SightingSync {
         row["species"] = sighting.species
         row["age"] = sighting.age
         row["photo"] = stored
-        let landed = await post("/rest/v1/sightings?on_conflict=user_id,id",
+        let landed = await Supa.post("/rest/v1/sightings?on_conflict=user_id,id",
                                 token: s.accessToken, body: [row])
         // ONLY when the photograph went too, where there is one. A row without
         // its picture is not a copy of this sighting, and treating it as one
@@ -127,7 +127,7 @@ enum SightingSync {
     static func remove(account: Account, id: UUID) async {
         guard let s = await account.freshSession() else { return }
         await deleteObject("\(s.userId)/\(id.uuidString).jpg", token: s.accessToken)
-        await delete("/rest/v1/sightings?id=eq.\(id.uuidString)", token: s.accessToken)
+        await Supa.delete("/rest/v1/sightings?id=eq.\(id.uuidString)", token: s.accessToken)
     }
 
     /// Every photograph this account has in the bucket, removed. Called when
@@ -145,29 +145,9 @@ enum SightingSync {
 
     private static let bucket = "sightings"
 
-    private static func rows(_ path: String, token: String) async -> [[String: Any]] {
-        let r = Supa.request(path, method: "GET", token: token)
-        guard let (data, _) = try? await Net.data(for: r),
-              let j = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]] else { return [] }
-        return j
-    }
-
-    /// Whether the row actually landed, which nothing asked until 2026-08-29.
-    /// Forgetting a sighting on sign-out turns on this exact answer: dropping
-    /// one we only HOPED had arrived would lose it for good.
-    @discardableResult
-    private static func post(_ path: String, token: String, body: [[String: Any]]) async -> Bool {
-        let r = Supa.request(path, token: token, body: body,
-                             prefer: "resolution=merge-duplicates,return=minimal")
-        guard let (_, resp) = try? await Net.data(for: r),
-              let http = resp as? HTTPURLResponse else { return false }
-        return (200..<300).contains(http.statusCode)
-    }
-
-    private static func delete(_ path: String, token: String) async {
-        let r = Supa.request(path, method: "DELETE", token: token, prefer: "return=minimal")
-        _ = try? await Net.data(for: r)
-    }
+    // rows / post / delete live on Supa now. post still answers whether the row
+    // LANDED, which is what forgetting a sighting on sign-out turns on: dropping
+    // one we only HOPED had arrived would lose it for good.
 
     private static func upload(_ path: String, data: Data, token: String) async -> Bool {
         var r = Supa.request("/storage/v1/object/\(bucket)/\(path)", token: token)

@@ -30,8 +30,8 @@ public enum CloudSync {
     public static func merge(account: Account, saved: Saved) async -> Int {
         guard let s = await account.freshSession() else { return 0 }
 
-        let remoteSaves = await rows("/rest/v1/saves?select=tree_id,created_at", token: s.accessToken)
-        let remoteVisited = await rows("/rest/v1/visited?select=tree_id,visited_at", token: s.accessToken)
+        let remoteSaves = await Supa.rows("/rest/v1/saves?select=tree_id,created_at", token: s.accessToken)
+        let remoteVisited = await Supa.rows("/rest/v1/visited?select=tree_id,visited_at", token: s.accessToken)
 
         var pulled = 0
         for row in remoteSaves {
@@ -64,14 +64,14 @@ public enum CloudSync {
         guard !entries.isEmpty else { return }
 
         let saveRows = entries.map { ["user_id": s.userId, "tree_id": $0.treeId] }
-        await post("/rest/v1/saves?on_conflict=user_id,tree_id", token: s.accessToken, body: saveRows)
+        await Supa.post("/rest/v1/saves?on_conflict=user_id,tree_id", token: s.accessToken, body: saveRows)
 
         let visitRows = entries.compactMap { e -> [String: Any]? in
             guard let v = e.visitedAt else { return nil }
             return ["user_id": s.userId, "tree_id": e.treeId, "visited_at": day(v)]
         }
         if !visitRows.isEmpty {
-            await post("/rest/v1/visited?on_conflict=user_id,tree_id", token: s.accessToken, body: visitRows)
+            await Supa.post("/rest/v1/visited?on_conflict=user_id,tree_id", token: s.accessToken, body: visitRows)
         }
     }
 
@@ -81,39 +81,25 @@ public enum CloudSync {
     public static func push(account: Account, entry: Saved.Entry?, treeId: String) async {
         guard let s = await account.freshSession() else { return }
         guard let entry else {
-            await delete("/rest/v1/saves?tree_id=eq.\(treeId)", token: s.accessToken)
-            await delete("/rest/v1/visited?tree_id=eq.\(treeId)", token: s.accessToken)
+            await Supa.delete("/rest/v1/saves?tree_id=eq.\(treeId)", token: s.accessToken)
+            await Supa.delete("/rest/v1/visited?tree_id=eq.\(treeId)", token: s.accessToken)
             return
         }
-        await post("/rest/v1/saves?on_conflict=user_id,tree_id", token: s.accessToken,
+        await Supa.post("/rest/v1/saves?on_conflict=user_id,tree_id", token: s.accessToken,
                    body: [["user_id": s.userId, "tree_id": treeId]])
         if let v = entry.visitedAt {
-            await post("/rest/v1/visited?on_conflict=user_id,tree_id", token: s.accessToken,
+            await Supa.post("/rest/v1/visited?on_conflict=user_id,tree_id", token: s.accessToken,
                        body: [["user_id": s.userId, "tree_id": treeId, "visited_at": day(v)]])
         } else {
-            await delete("/rest/v1/visited?tree_id=eq.\(treeId)", token: s.accessToken)
+            await Supa.delete("/rest/v1/visited?tree_id=eq.\(treeId)", token: s.accessToken)
         }
     }
 
     // MARK: - plumbing
 
-    private static func rows(_ path: String, token: String) async -> [[String: Any]] {
-        let r = Supa.request(path, method: "GET", token: token)
-        guard let (data, _) = try? await Net.data(for: r),
-              let j = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]] else { return [] }
-        return j
-    }
-
-    private static func post(_ path: String, token: String, body: [[String: Any]]) async {
-        let r = Supa.request(path, token: token, body: body,
-                             prefer: "resolution=merge-duplicates,return=minimal")
-        _ = try? await Net.data(for: r)
-    }
-
-    private static func delete(_ path: String, token: String) async {
-        let r = Supa.request(path, method: "DELETE", token: token, prefer: "return=minimal")
-        _ = try? await Net.data(for: r)
-    }
+    // rows / post / delete live on Supa: they were identical here and in
+    // SightingSync, and a second copy of "did it work" is a second answer
+    // waiting to happen.
 
     private static let dayFormatter: DateFormatter = {
         let f = DateFormatter()

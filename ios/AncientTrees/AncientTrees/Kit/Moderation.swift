@@ -92,12 +92,8 @@ public final class Moderation {
     public func load(me: String?, token: String?) async {
         guard let me, let token else { return }
         struct Row: Decodable { let blocked: String }
-        // See Profiles.request: appending a path component encodes the "?" and
-        // the whole query becomes part of the table name.
-        var r = URLRequest(url: URL(string: Submission.url.deletingLastPathComponent()
-            .absoluteString + "blocks?select=blocked&blocker=eq.\(me)")!)
-        r.setValue(Submission.key, forHTTPHeaderField: "apikey")
-        r.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        let r = Supa.request("/rest/v1/blocks?select=blocked&blocker=eq.\(me)",
+                             method: "GET", token: token)
         guard let (data, resp) = try? await Net.data(for: r),
               let http = resp as? HTTPURLResponse, (200..<300).contains(http.statusCode),
               let rows = try? JSONDecoder().decode([Row].self, from: data) else { return }
@@ -113,17 +109,8 @@ public final class Moderation {
 
     private func post(_ path: String, body: Data?, token: String,
                       method: String = "POST", prefer: String? = nil) async -> Bool {
-        var r = URLRequest(url: URL(string: Submission.url.deletingLastPathComponent()
-            .absoluteString + path)!)
-        r.httpMethod = method
-        r.setValue(Submission.key, forHTTPHeaderField: "apikey")
-        r.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-        r.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        r.setValue(prefer ?? "return=minimal", forHTTPHeaderField: "Prefer")
-        r.httpBody = body
-        guard let (_, resp) = try? await Net.data(for: r),
-              let http = resp as? HTTPURLResponse else { return false }
-        return (200..<300).contains(http.statusCode)
+        await Supa.ok(Supa.request("/rest/v1/" + path, method: method, token: token,
+                                   body: body, prefer: prefer ?? "return=minimal"))
     }
 
     /// The reasons somebody picks from. Short, concrete and in the order a

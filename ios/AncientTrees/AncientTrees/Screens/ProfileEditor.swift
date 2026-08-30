@@ -147,19 +147,13 @@ enum Avatars {
     static var lastFailure: String?
 
     static func upload(_ jpeg: Data, userId: String, token: String) async -> String? {
-        let base = Submission.url.deletingLastPathComponent()
-            .deletingLastPathComponent()   // .../rest/v1/submissions -> .../rest
-            .deletingLastPathComponent()   // -> project root
-        let path = "storage/v1/object/avatars/\(userId)/avatar.jpg"
-        // A plain path with no query, so appending is safe here, but built the
-        // same way as everything else for one less thing to reason about.
-        var r = URLRequest(url: URL(string: base.absoluteString + path)!)
-        r.httpMethod = "POST"
-        r.setValue(Submission.key, forHTTPHeaderField: "apikey")
-        r.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        // Three deletingLastPathComponent calls used to walk this back up from
+        // the submissions table to the project root, with the count of them
+        // load-bearing and commented. Supa knows where the project is.
+        var r = Supa.request("/storage/v1/object/avatars/\(userId)/avatar.jpg",
+                             token: token, body: jpeg)
         r.setValue("image/jpeg", forHTTPHeaderField: "Content-Type")
         r.setValue("true", forHTTPHeaderField: "x-upsert")
-        r.httpBody = jpeg
         guard let (body, response) = try? await Net.upload(for: r, from: jpeg),
               (200..<300).contains((response as? HTTPURLResponse)?.statusCode ?? 0) else {
             // WHY, not just no. A failure that says nothing is a failure nobody
@@ -169,7 +163,6 @@ enum Avatars {
             return nil
         }
         _ = body
-        return base.appendingPathComponent(
-            "storage/v1/object/public/avatars/\(userId)/avatar.jpg").absoluteString
+        return Supa.url + "/storage/v1/object/public/avatars/\(userId)/avatar.jpg"
     }
 }
