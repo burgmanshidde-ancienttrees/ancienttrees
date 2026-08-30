@@ -1,0 +1,326 @@
+{
+  "city": "Luxembourg City",
+  "country": "Luxembourg",
+  "status": "needs_curation",
+  "intro": "Almost all of these stand within a twenty-minute walk of each other, which is not usual for a capital. The old town sits on a rock with two river valleys cut around it, and the protected trees are down in those valleys and in the ring of parks along the rim: a beech braced against a bastion wall, a chestnut planted in 1921 for the birth of a prince, a ginkgo that has grown thicker and shorter between two measurements. The state lists them all by regulation. Most of them it has never measured.",
+  "meta_description": "Luxembourg City's protected trees make one walk through two river valleys: a chestnut planted for a prince in 1921, and a sequoia that lost its twin.",
+  "question_answer": "The oldest tree in Luxembourg City, on the only evidence anybody has published, is the giant sequoia in Parc Amelie, at roughly 150 years: it was reckoned at about 140 in 2018. It stands beside the monument to Grand Duchess Amalia, seven or eight minutes on foot from the Royal-Hamilius tram stop, and until 28 February 2026 it had a twin fourteen metres away, felled that day with honey fungus in its roots.",
+  "question_meta": "The giant sequoia in Parc Amelie is Luxembourg City's oldest tree at roughly 150 years. Where it stands, and what happened to the twin beside it.",
+  "question_context": "The answer comes with a caveat, because the city protects its remarkable trees by regulation without dating them. Most of the trees on this list carry no recorded age at all: the register gives a number, a species and a location and stops. The beech below Bastion Beck comes with a source willing to say only that its age surely exceeds a hundred years. The ginkgo at Place Dargent has a source that states outright that its age is not known. So the sequoia takes the title on the strength of a single published estimate, about 140 years as of 2018, and any of the undated trees could in principle be older. One tree here does have a date, and it is the firmest kind there is. The horse chestnut in Parc Pescatore was planted in 1921 to mark the birth of Prince Jean, later Grand Duke, and has carried his name since, which makes it exactly 105. The sequoia's felled twin, meanwhile, has left a stump in Parc Amelie. If anybody has counted the rings on it, we would like to know.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Luxembourg City?",
+      "a": "The giant sequoia in Parc Amelie, at roughly 150 years. That is an estimate rather than a record: most of the city's protected trees have never been dated at all."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "All but the Bambesch oak, which is out in the forest above Rollingergrund. The rest sit on the Petrusse and Alzette valley paths and in the parks off Avenue Marie-Therese, within about twenty minutes of each other on foot. The Pfaffenthal sycamore is reached by the lift down from the plateau."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes. Every tree here stands in a public park, on a public valley path or in a public forest. No tickets and no gates."
+    },
+    {
+      "q": "What happened to the second sequoia in Parc Amelie?",
+      "a": "It was felled on 28 February 2026 after honey fungus was found in its roots. Its wood is going into benches for the park, and a young sequoia has been planted where it stood."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lux_001",
+      "name": "The Square Robert-Brasseur Horse Chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Square Robert-Brasseur, opposite the Grand Théâtre, Ville Haute",
+        "latitude": 49.612987,
+        "longitude": 6.131524,
+        "neighbourhood": "Ville Haute"
+      },
+      "story": "This chestnut forks at about three metres into ten strong branches and goes up from there like a candelabra, throwing a crown some fifteen metres across over a small square opposite the Grand Theatre. It is 23.5 metres tall. Its health is put down in part to where it happens to stand: horse chestnuts are sensitive to the salt thrown at roads in winter, and this one is set back far enough that the run-off does not reach it.\n\nIt also grows very slowly. The register measured the trunk at 1.30 metres around the year 2000 and 1.37 in 2022, which is seven centimetres in twenty-two years. Read that as a rate rather than an absolute: the sources are inconsistent about whether the figure is the trunk's girth or its diameter, which is the difference between a slim tree and a heavy one.\n\nNobody has dated it. The Grand Ducal regulation that protects Luxembourg's remarkable trees lists it by number, species and section, and the reference books that describe it give measurements without a planting year. It went onto the official list in 2002. If a record of when it was put in exists somewhere, we would like to see it.",
+      "verified_sources": [
+        "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+        "https://lb.wikipedia.org/wiki/K%C3%A4schtebam_um_Square_Robert-Brasseur_zu_L%C3%ABtzebuerg"
+      ],
+      "access": "Free, in a public square in the city centre",
+      "transport": "Théâtre tram/bus stop, 2 min walk; Luxembourg train station, ~20 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "girth_cm": 137,
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white candles stand up across the whole crown"
+      }
+    },
+    {
+      "id": "lux_002",
+      "name": "The Ginkgo of Place Dargent",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Place Dargent (Eecher Plaz), in the park of the former Villa Weber, Eich",
+        "latitude": 49.627336,
+        "longitude": 6.130558,
+        "neighbourhood": "Eich"
+      },
+      "story": "Between two measurements this ginkgo got most of a metre thicker and most of a metre shorter. The trunk went from 3.67 metres round about the year 2000 to 4.59 in 2023. The height went from 24 metres to 23.1 across the same span. The second figure is recorded as it stands, with no explanation offered anywhere, and we are passing it on the same way.\n\nIt grows in the park of the villa that belonged to the notary Fritz Weber, on Place Dargent in Eich, which people here call the Eecher Plaz. Luxembourg's own literature on its remarkable trees calls this the most imposing ginkgo of its kind in the country, and it has been on the official list since 2002.\n\nIts age is not known, and the source says so in as many words rather than reaching for a number. That is worth noting, because a ginkgo of this size invites a guess and the species is slow enough to make any guess wrong by decades.\n\nIt earns the walk in November. Ginkgo leaves turn a flat butter gold and then come off nearly together, so the tree spends a few days gold and a few more standing in a gold circle of its own making.",
+      "verified_sources": [
+        "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+        "https://lb.wikipedia.org/wiki/Ginkgo_op_der_Eecher_Plaz"
+      ],
+      "access": "Free, in a public park at Place Dargent",
+      "transport": "Eich, Rue de Trèves bus stops, ~5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 459,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns gold and then drops it in a matter of days"
+      }
+    },
+    {
+      "id": "lux_003",
+      "name": "The Beech of Bastion Beck",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "over a century",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Petrusse valley path, below Bastion Beck, roughly midway between the Pont Adolphe and Place de la Constitution",
+        "latitude": 49.609128,
+        "longitude": 6.12775,
+        "neighbourhood": "Petrusse valley / Ville Haute"
+      },
+      "story": "In twenty-three years this beech added one centimetre to its trunk. The register has it at 1.30 metres around the year 2000 and 1.31 in 2023. Height it did manage, going from 22 metres to 22.7, and the crown has grown in one direction only: full and wide out over the Petrusse valley, cramped and short on the side where the fortress wall stands. A tree that has spent its life leaning away from masonry ends up shaped like the gap it was given.\n\nIts branches were braced by arborists some years before the last survey, which is what happens to a tree the state has decided to keep.\n\nYou reach it on foot from Avenue Marie-Therese, down into the valley, past the Pont Adolphe and along the path to an old transformer building. The beech is on the right. The whole descent takes about ten minutes from Place de la Constitution and the path is public the entire way.\n\nNobody has dated it. The source that describes it in most detail will go no further than saying its age surely exceeds a hundred years, and we have left that as it is rather than sharpening it into a number that would look better and mean less.",
+      "verified_sources": [
+        "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+        "https://lb.wikipedia.org/wiki/Buch_am_P%C3%A9itrussdall,_Bastioun_Beck"
+      ],
+      "access": "Free, on the public valley walking path through the Petrusse park",
+      "transport": "Place de la Constitution / Pont Adolphe, ~10 min walk down into the valley",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "girth_cm": 131
+    },
+    {
+      "id": "lux_004",
+      "name": "The Copper Beech of Parc Pescatore",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc Pescatore, off Avenue Marie-Therese",
+        "latitude": 49.61544,
+        "longitude": 6.12881,
+        "neighbourhood": "Ville Haute"
+      },
+      "story": "The state put this tree under protection and then wrote nothing else about it. It appears in the Grand Ducal regulation of 31 January 2025 as entry 129, a copper beech in Parc Pescatore, and that is the whole of the public record: no age, no girth, no height, no photograph. Its neighbours in the same park have done considerably better. The horse chestnut a short walk away has a planting year, a name, a plaque and a cage.\n\nWhat is actually there is a copper beech, the purple-leaved form of the common beech, in a city-centre park off Avenue Marie-Therese that also holds sculpture and several other listed trees. In late April and May it does the thing the form is planted for, opening its new leaves a translucent red before they darken down for the summer. By August it reads almost black against everything around it.\n\nIf you go, the two useful things to come back with are a tape measure round the trunk at chest height and a photograph. Either one would tell us more about this particular tree than the register manages, and the register is currently the only thing that knows it exists.",
+      "verified_sources": [
+        "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+        "https://www.wikidata.org/wiki/Q132663935"
+      ],
+      "access": "Free, in the public Parc Pescatore",
+      "transport": "Royal-Hamilius tram stop, ~7 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "late April and May, when the new leaves open translucent red before darkening"
+      }
+    },
+    {
+      "id": "lux_005",
+      "name": "The Giant Sequoia of Parc Amelie",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 145,
+      "age_max": 160,
+      "location": {
+        "address": "Parc Amelie, beside the monument to Amalia of Saxe-Weimar-Eisenach",
+        "latitude": 49.613892,
+        "longitude": 6.124494,
+        "neighbourhood": "Ville Haute"
+      },
+      "story": "Until February this year there were two. A pair of giant sequoias stood 14.6 metres apart in Parc Amelie beside the monument to Grand Duchess Amalia, planted together and grown together for about a century and a half. On 28 February 2026 the larger came down. Honey fungus had worked into its roots and there was no keeping it. Its timber is to be made into benches for the park it grew in, and a young sequoia has gone into the ground where it stood.\n\nThe survivor is the smaller of the two, 27 metres tall with a trunk of 4.58 metres at the last survey, against the 32 metres and 6.15 of the one that was felled. It was reckoned at about 140 years old in 2018, which puts it close to 150 now. The pair are generally credited to the landscape architect Edouard Andre, who shaped this run of parks along the plateau, though no record names the year they went in.\n\nOne honest note about the pin. The register holds two coordinates 14.6 metres apart and never said which tree was which, so we have marked the pair rather than guess. On the ground you cannot get it wrong: one is a full-grown sequoia, the other a stump with a sapling next to it.",
+      "verified_sources": [
+        "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+        "https://lb.wikipedia.org/wiki/Sequoiaen_am_Amaliepark"
+      ],
+      "access": "Free, in the public Parc Amelie",
+      "transport": "Royal-Hamilius tram stop, ~8 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "girth_cm": 458
+    },
+    {
+      "id": "lux_006",
+      "name": "The Prince Jean Chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "105 years",
+      "age_min": 105,
+      "age_max": 105,
+      "location": {
+        "address": "Parc Pescatore, off Avenue Marie-Therese",
+        "latitude": 49.614856,
+        "longitude": 6.128063,
+        "neighbourhood": "Ville Haute"
+      },
+      "story": "This is the one tree on this list whose age nobody has to estimate. It was planted in 1921 to mark the birth of Prince Jean on 5 January that year, and it has been called after him ever since. He went on to become Grand Duke. The tree is 105.\n\nIt stands in Parc Pescatore, a horse chestnut measuring 3.64 metres round and 23 metres tall at the last survey around the year 2000. Being named has cost it some freedom. The plaque reading Arbre du Prince Jean was once fixed to the trunk itself, which a photograph from 2002 still shows; in 2008 a metal cage went up around the trunk to protect it and the plaque moved onto the cage.\n\nThe man it commemorates kept the habit up. In 1989, for the twenty-fifth anniversary of his accession, Grand Duke Jean gave every commune in the country a young lime, so there is a whole generation of Luxembourgish limes that are the same age for the same reason.\n\nSeptember and October are when this one is worth a detour with children. Horse chestnuts drop conkers, and a mature tree over a park path drops a great many of them.",
+      "verified_sources": [
+        "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+        "https://lb.wikipedia.org/wiki/Bam_vum_Pr%C3%ABnz_Jean"
+      ],
+      "access": "Free, in the public Parc Pescatore",
+      "transport": "Royal-Hamilius tram stop, ~7 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "girth_cm": 364,
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when the conkers come down across the park path"
+      }
+    },
+    {
+      "id": "lux_007",
+      "name": "The Oak of Bambesch",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Bambesch forest, Rollingergrund",
+        "latitude": 49.635102,
+        "longitude": 6.10443,
+        "neighbourhood": "Rollingergrund"
+      },
+      "story": "Luxembourg's register offers half a dozen grounds for protecting a tree, and this oak was listed on exactly one of them: its shape. Not its place in the landscape, not its biology, not its dendrology, not history and not commemoration. Somebody stood in front of it, decided the form of the thing was worth keeping, and wrote down a number.\n\nThe number is 136 in the Grand Ducal regulation of 31 January 2025, and it is close to everything the public record holds. No age, no girth, no height, and no photograph anywhere we have looked, which is as thin as it gets here and arguably makes this the most interesting entry on the list. Nobody has told you what to expect.\n\nIt is also the only tree here that is properly out of town. The Bambesch is a public forest above Rollingergrund, twenty to twenty-five minutes from the centre by bus and then on foot, and it is a large wood. Our pin is the register's own point, which is forest-level rather than trunk-level, so plan on hunting for it.\n\nIf you find it, photograph it. As far as we can tell, that would be the first picture of this tree anywhere.",
+      "verified_sources": [
+        "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg"
+      ],
+      "access": "Free, in the public Bambesch forest recreation area",
+      "transport": "Bus to Rollingergrund/Bambesch, then a forest path walk; roughly 20-25 min from the city centre by bus and on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lux_008",
+      "name": "The Sycamore of Hollerich",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Petrusse valley path, Hollerich section",
+        "latitude": 49.605278,
+        "longitude": 6.122163,
+        "neighbourhood": "Hollerich"
+      },
+      "story": "Somebody has photographed this sycamore and nobody has measured it. The photograph is on Wikimedia Commons, matched to the register's coordinate to within a third of a metre, and beyond that there is one line in a regulation. No age, no girth, no height.\n\nThe regulation does give its reasons for keeping the tree, and it names two rather than one: how it sits in the landscape, and its biological interest. What that biological interest consists of is not spelled out in any source we found, which is a shame, because on a mature tree it is usually the more interesting half of the answer.\n\nIt stands on the Hollerich stretch of the Petrusse valley path, the far end of the same walk that passes the braced beech under Bastion Beck. The valley runs on westward out of the fortress rock and through Hollerich, and the path stays public the whole way. From the bus stops on Rue de Bouillon it is about ten minutes down.\n\nNeither this sycamore nor the one down in Pfaffenthal has ever been dated. If you know anything about either of them, including who put them in and roughly when, we would take it.",
+      "verified_sources": [
+        "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg"
+      ],
+      "access": "Free, on the public Petrusse valley walking path",
+      "transport": "Hollerich, Rue de Bouillon bus stops, ~10 min walk into the valley",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lux_009",
+      "name": "The Sycamore of Pfaffenthal",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Pfaffenthal, lower Alzette valley",
+        "latitude": 49.611846,
+        "longitude": 6.13497,
+        "neighbourhood": "Pfaffenthal"
+      },
+      "story": "This is the only tree here you get to by lift. The Pfaffenthal-Kirchberg station drops you off the plateau into the lower town on the Alzette, and the sycamore is somewhere on the valley paths below the old fortress town, a short walk from the door.\n\nSomewhere is the honest word. The register gives a point, a Commons photograph and an OpenStreetMap node agree with that point to within a metre, and not one source describes how a person actually walks up to the tree. The paths down there are public and Pfaffenthal is not a big district, so you will get to it, but expect to look around. We would rather say that than send anyone down with false confidence.\n\nThe regulation lists it under two headings, landscape interest and dendrological interest, meaning it is considered worth seeing as a specimen and not only for where it stands. Age, girth and height are all blank, and no measurement of this tree appears to have been published anywhere.\n\nWhat the walk gives you regardless is the view from underneath: the lower town on the river, the plateau standing over it, and a large maple in the middle of the whole arrangement.",
+      "verified_sources": [
+        "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
+        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg"
+      ],
+      "access": "Free. It stands on the Pfaffenthal valley paths below the old town, which are public. We have not confirmed which path passes closest to the trunk, so expect to look around a little once you are down there.",
+      "transport": "Pfaffenthal-Kirchberg funicular/lift station, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

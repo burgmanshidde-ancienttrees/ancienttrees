@@ -2071,6 +2071,30 @@
   },
   {
    "rank": 90,
+   "city": "Kauai",
+   "country": "United States",
+   "slug": "kauai",
+   "score": 7.33,
+   "demand": null,
+   "basis": "predicted (travel demand)",
+   "status": "published",
+   "trees": 6,
+   "photos": 0,
+   "walks": 0,
+   "register": 8,
+   "ready": 0,
+   "supply": 8,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.16,
+   "work_score": 8.5,
+   "travel": 7335,
+   "kind": "island",
+   "wikidata": 0
+  },
+  {
+   "rank": 91,
    "city": "Hiroshima",
    "country": "Japan",
    "slug": "hiroshima",
@@ -2093,7 +2117,7 @@
    "wikidata": 1
   },
   {
-   "rank": 91,
+   "rank": 92,
    "city": "Quebec City",
    "country": "Canada",
    "slug": "quebec-city",
@@ -2116,7 +2140,7 @@
    "wikidata": 0
   },
   {
-   "rank": 92,
+   "rank": 93,
    "city": "Taipei",
    "country": "Taiwan",
    "slug": "taipei",
@@ -2139,7 +2163,7 @@
    "wikidata": 0
   },
   {
-   "rank": 93,
+   "rank": 94,
    "city": "Salamanca",
    "country": "Spain",
    "slug": "salamanca",
@@ -2162,7 +2186,7 @@
    "wikidata": 0
   },
   {
-   "rank": 94,
+   "rank": 95,
    "city": "Adelaide",
    "country": "Australia",
    "slug": "adelaide",
@@ -2185,7 +2209,7 @@
    "wikidata": 1
   },
   {
-   "rank": 95,
+   "rank": 96,
    "city": "San Francisco",
    "country": "United States",
    "slug": "san-francisco",
@@ -2208,7 +2232,7 @@
    "wikidata": 1
   },
   {
-   "rank": 96,
+   "rank": 97,
    "city": "Maastricht",
    "country": "Netherlands",
    "slug": "maastricht",
@@ -2231,7 +2255,7 @@
    "wikidata": 8
   },
   {
-   "rank": 97,
+   "rank": 98,
    "city": "Potsdam",
    "country": "Germany",
    "slug": "potsdam",
@@ -2254,7 +2278,7 @@
    "wikidata": 190
   },
   {
-   "rank": 98,
+   "rank": 99,
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
@@ -2278,7 +2302,7 @@
    "wikidata": 0
   },
   {
-   "rank": 99,
+   "rank": 100,
    "city": "Washington DC",
    "country": "United States",
    "slug": "washington-dc",
@@ -2301,7 +2325,7 @@
    "wikidata": 5
   },
   {
-   "rank": 100,
+   "rank": 101,
    "city": "Dubrovnik",
    "country": "Croatia",
    "slug": "dubrovnik",
@@ -2324,7 +2348,7 @@
    "wikidata": 1
   },
   {
-   "rank": 101,
+   "rank": 102,
    "city": "Warsaw",
    "country": "Poland",
    "slug": "warsaw",
@@ -2347,7 +2371,7 @@
    "wikidata": 45
   },
   {
-   "rank": 102,
+   "rank": 103,
    "city": "Budapest",
    "country": "Hungary",
    "slug": "budapest",
@@ -2370,7 +2394,7 @@
    "wikidata": 2
   },
   {
-   "rank": 103,
+   "rank": 104,
    "city": "Luang Prabang",
    "country": "Laos",
    "slug": "luang-prabang",
@@ -2393,7 +2417,7 @@
    "wikidata": 0
   },
   {
-   "rank": 104,
+   "rank": 105,
    "city": "Bristol",
    "country": "United Kingdom",
    "slug": "bristol",
@@ -2416,7 +2440,7 @@
    "wikidata": 1
   },
   {
-   "rank": 105,
+   "rank": 106,
    "city": "Cork",
    "country": "Ireland",
    "slug": "cork",
@@ -2436,30 +2460,6 @@
    "ease": 1.5,
    "work_score": 7.44,
    "travel": 3880,
-   "wikidata": 0
-  },
-  {
-   "rank": 106,
-   "city": "Kauai",
-   "country": "United States",
-   "slug": "kauai",
-   "score": 7.33,
-   "demand": null,
-   "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.0,
-   "work_score": 7.33,
-   "travel": 7335,
-   "kind": "island",
    "wikidata": 0
   },
   {
@@ -4549,20 +4549,20 @@
    "score": 2.39,
    "demand": 64851,
    "basis": "predicted (travel demand)",
-   "status": "pending",
-   "trees": 0,
+   "status": "published",
+   "trees": 9,
    "photos": 0,
    "walks": 0,
-   "register": 0,
+   "register": 19,
    "ready": 0,
-   "supply": 108,
+   "supply": 120,
    "target": 10,
    "ease": 1.5,
    "work_score": 3.58,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 2392,
-   "wikidata": 108
+   "wikidata": 101
   },
   {
    "rank": 198,
