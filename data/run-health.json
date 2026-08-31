@@ -2770,6 +2770,84 @@
    ],
    "trees": 3,
    "logged": false
+  },
+  {
+   "started": "2026-08-31T18:23:22+00:00",
+   "date": "2026-08-31",
+   "run_id": "33424707234",
+   "minutes": 101.4,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 710,
+   "denials": 42,
+   "denials_source": "permission_denials: Bash(bash), Bash(cd), Bash(comm), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(if), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(until), Bash(wc)",
+   "ended": "success",
+   "tokens": 50709947,
+   "claims_held": [
+    "regensburg"
+   ],
+   "commits": 39,
+   "cities_touched": 14,
+   "cities": [
+    {
+     "city": "girona",
+     "trees": 7
+    },
+    {
+     "city": "kamakura",
+     "trees": 6
+    },
+    {
+     "city": "nagoya",
+     "trees": 6
+    },
+    {
+     "city": "naha",
+     "trees": 6
+    },
+    {
+     "city": "pamplona",
+     "trees": 6
+    },
+    {
+     "city": "ronda",
+     "trees": 6
+    },
+    {
+     "city": "sapporo",
+     "trees": 6
+    },
+    {
+     "city": "segovia",
+     "trees": 6
+    },
+    {
+     "city": "tarragona",
+     "trees": 4
+    },
+    {
+     "city": "vilnius",
+     "trees": 3
+    },
+    {
+     "city": "perugia",
+     "trees": 2
+    },
+    {
+     "city": "vienna",
+     "trees": 2
+    },
+    {
+     "city": "cagliari",
+     "trees": 1
+    },
+    {
+     "city": "porto",
+     "trees": 0
+    }
+   ],
+   "trees": 61,
+   "logged": true
   }
  ],
  "schedule_changes": [
