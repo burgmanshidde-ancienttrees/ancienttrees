@@ -1,0 +1,363 @@
+{
+  "city": "Kagoshima",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kagoshima keeps its own list. Since 1974 the city has designated preserved trees one at a time, measured each at 1.5 metres and put a signboard at its foot, so the ages here come from a municipal register rather than from folklore. Number one is a camphor at Kagoshima Shrine. Number eight is a subtropical fig on the flank of an active volcano that the sign dates at a thousand years. Above the harbour, Shiroyama was fenced off for most of the Edo period and never cleared. An hour north stands the largest tree in Japan.",
+  "meta_description": "Kagoshima's ancient trees: a thousand-year fig on Sakurajima, the cycad that gave botany its first plant sperm, and Japan's largest tree an hour north.",
+  "question_answer": "The oldest tree in Kagoshima is the Akou of Yuno, a subtropical fig on the eastern flank of Sakurajima, which the city's own preserved-tree signboard dates at about 1,000 years. It stands in the hamlet of Yuno in Higashi-Sakurajima, reached by the 15-minute ferry from central Kagoshima and a local bus.",
+  "question_meta": "The Akou of Yuno on Sakurajima, about 1,000 years old, is Kagoshima's oldest tree. Where it stands, how the age is dated, and 9 more remarkable trees.",
+  "question_context": "Kagoshima's ages come from an unusually concrete place. Under a 1974 ordinance the city designates individual preserved trees, records trunk circumference at 1.5 metres, height and an estimated age for each, and posts that estimate on a board at the tree. The Akou of Yuno is preserved tree number 8, and its board gives about 1,000 years, roughly three times the next oldest figure on the list. Nothing behind that number is a ring count and the city does not publish its method, so treat it as an official estimate. The Environment Ministry measured the same tree at 6.5 metres around against the city's 7.4, most likely because it recorded only the thicker of two stems that fuse a metre above the ground. If a day trip counts, an older tree stands an hour north in Aira: the Great Camphor of Kamo was already worshipped as sacred when the shrine beside it was founded in 1123. Getting to Yuno: the Sakurajima ferry runs around the clock and takes 15 minutes, then a local bus toward Higashi-Sakurajima.",
+  "oldest_tree_id": "kag_009",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kagoshima?",
+      "a": "The Akou of Yuno on Sakurajima, dated at about 1,000 years by the city's preserved-tree signboard. That is an official estimate rather than a measured age. The Great Camphor of Kamo, an hour north in Aira, is older still and is documented as a sacred tree in 1123."
+    },
+    {
+      "q": "Where is the largest tree in Japan?",
+      "a": "At Kamo Hachiman Shrine in Aira, about 25 km north of Kagoshima. The Great Camphor of Kamo measures 24.22 metres around the trunk and 33.57 metres around the roots, and the Environment Agency's 1988 national survey ranked it first in the country. It is a Special Natural Monument and free to visit."
+    },
+    {
+      "q": "Are Kagoshima's ancient trees free to visit?",
+      "a": "Yes, all ten. Seven stand in public parks or on shrine grounds in the city, one is on a lane through a Sakurajima hamlet, and the two out-of-town trees are on open shrine ground. None charges entry."
+    },
+    {
+      "q": "What is an akou tree?",
+      "a": "Akou is Ficus superba, a subtropical strangler fig that reaches its northern limit around Kagoshima. It often germinates in a crevice or on another tree and sends roots down over the host, which is why old ones sit on a mat of fused root over rock or stonework. Four of the city's 38 preserved trees are akou."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Most of them. Four sit within a kilometre of Terukuni Park and Shiroyama in the city centre. Four more make a second walk of about two kilometres along the northern waterfront, from Nanshu Shrine down through Tagayama Park to the stone bridges at Gionnosu. Sakurajima and Kamo are separate trips."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kag_001",
+      "name": "The Camphor of Shiroyama",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "at least 300 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 1290,
+      "height_m": 23,
+      "location": {
+        "address": "Shiroyama Park walking trail, Shiroyama-cho, Kagoshima 892-0853",
+        "latitude": 31.5975,
+        "longitude": 130.55167,
+        "neighbourhood": "Shiroyama"
+      },
+      "story": "There is old forest 300 metres from Kagoshima's city hall because a lord gave up on a castle. A local clan built a fortress on this hill in the medieval period, which is where the name Shiroyama, castle hill, comes from. When the Shimazu took Kagoshima they built the flat, tower-less Tsurumaru castle at its northeastern foot instead, abandoned the hill fort within a generation, and closed the slope. Two and a half centuries of nobody going in produced what a 1974 academic survey counted as more than 510 species of higher plant on a hill 107 metres high, several of them recorded in Japan here for the first time. The biggest camphor anyone has measured in that forest stands beside the walking path. The Environment Agency's giant-tree survey gives it 12.9 metres around and 23 metres tall, at 300 years or more. Treat the girth carefully: it was taken at 1.3 metres, which on this tree is still root, and the trunk proper is a good deal narrower. Shiroyama is also where the Satsuma Rebellion ended. Saigo Takamori and a few dozen surviving men held caves on this hillside and came down into the government guns on the morning of 24 September 1877. The whole hill was made a National Natural Monument and a National Historic Site on the same day in 1931.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/shiroyama-kusu.html",
+        "https://www.pref.kagoshima.jp/bc05/hakubutsukan/tennen/index.html"
+      ],
+      "access": "Free, public hillside park, walking trails open at all times",
+      "transport": "Kagoshima City View bus to Shiroyama, or about 20 minutes uphill on foot from Tenmonkan",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Measurements are the Environment Agency's giant-tree survey as reproduced by the Hitozato Kyoboku database, which notes the 12.9 m girth was taken at 1.3 m over root buttress and overstates the trunk. The same source warns its own coordinate for this tree may be well off, so the pin marks the hillside rather than the trunk. The National Natural Monument designation covers the whole of Shiroyama and its vegetation, not this individual tree."
+    },
+    {
+      "id": "kag_002",
+      "name": "The Cycad Where Sperm Was First Discovered",
+      "species": "Sago Palm (Cycas revoluta)",
+      "age_estimate": "about 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "height_m": 5.9,
+      "location": {
+        "address": "Terukuni Park, beside the Kagoshima Prefectural Museum, Shiroyama-cho 1, Kagoshima 892-0853",
+        "latitude": 31.594389,
+        "longitude": 130.552194,
+        "neighbourhood": "Shiroyama-cho"
+      },
+      "story": "In 1896 a botanist in Tokyo looked into a cycad ovule and saw something swim. Until that afternoon, motile sperm belonged to ferns and mosses; seed plants were supposed to have given them up. Ikeno Seiichiro's finding put a swimming sperm cell inside a gymnosperm and moved the line between the two groups, and a few weeks earlier at the same university Hirase Sakugoro had found the same thing in a ginkgo. The plant Ikeno worked from is this one, according to the signboard the Kagoshima Prefectural Museum has set beside it, and an offshoot was later sent to Tokyo and planted at the Koishikawa Botanical Garden. It is not much like a tree. Cycas revoluta is a cycad, a lineage older than any flowering plant, and this one is a low thicket of stiff ferny crowns on a knot of trunks about 5.9 metres tall, put at roughly 400 years old. Kagoshima Prefecture designated it a Natural Monument in 2008 under its full formal title, the cycad in which sperm was discovered for the first time in the world, which is long even by the standards of Japanese heritage names. It sits in the open in Terukuni Park, a two-minute walk from the shrine, with nothing to mark it out but the board.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/shiroyama-sotetsu.htm",
+        "https://www.pref.kagoshima.jp/bc05/hakubutsukan/tennen/index.html"
+      ],
+      "access": "Free, open park beside the prefectural museum",
+      "transport": "Tram to Tenmonkan-dori or Shiyakusho-mae, then about 8 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Height and age are the prefecture's own figures for the designated monument. The claim that this specific plant supplied Ikeno's 1896 material comes from the Kagoshima Prefectural Museum's signboard at the tree; standard accounts of the discovery place the work itself in Tokyo. Girth is not recorded: the plant is a cluster of trunks and it is not clear from outside whether it is one individual or several."
+    },
+    {
+      "id": "kag_003",
+      "name": "The Kurogane Holly of Terukuni Park",
+      "species": "Kurogane Holly (Ilex rotunda)",
+      "age_estimate": "about 180 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 485,
+      "height_m": 13.5,
+      "location": {
+        "address": "Terukuni Park, Shiroyama-cho 1, Kagoshima 892-0853",
+        "latitude": 31.594,
+        "longitude": 130.552389,
+        "neighbourhood": "Shiroyama-cho"
+      },
+      "story": "Four national highways die at the crossroads this tree stands over. Route 3 comes down the west coast of Kyushu, Route 10 comes down the east coast, and both of them, with Routes 225 and 226, end at the intersection south of Terukuni Shrine. The holly is at the park's southern corner, the closest tree to that junction. Kurogane holly grows all over southern Japan as a street and garden tree and very rarely gets to this size: 4.85 metres around at 1.5 metres, 13.5 metres tall, about 180 years old by the city's estimate. It is multi-stemmed rather than single-trunked, so the girth is the whole cluster, but the crown it carries is broad and even and reads as one tree from any distance. Kagoshima made it preserved tree number 6 on 20 March 1974, in the first batch the city ever designated. The park is effectively the front garden of the Kagoshima Prefectural Museum, and the shrine beside it enshrines Shimazu Nariakira, the lord who put a reverberatory furnace and a glassworks into Satsuma in the 1850s and sat for the oldest surviving photograph taken by a Japanese photographer, then died at 49 with the works half built. Female hollies of this species carry dense red fruit through the winter, which is most of why anyone plants them.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/terukunikouen-kuroganemochi.htm",
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html"
+      ],
+      "access": "Free, open park",
+      "transport": "Tram to Tenmonkan-dori or Shiyakusho-mae, then about 8 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "notes": "Girth, height and age are Kagoshima City's preserved-tree register (number 6). The Hitozato Kyoboku database gives 4.9 m and 14 m from the same register and adds that the 180-year figure comes from the signboard at the tree."
+    },
+    {
+      "id": "kag_004",
+      "name": "The Camphor of Kagoshima Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 600 years by the city's estimate, at least 300 by the Environment Agency's",
+      "age_min": 300,
+      "age_max": 600,
+      "girth_cm": 730,
+      "height_m": 24.5,
+      "location": {
+        "address": "Kagoshima Shrine, Somuta 2-58-3, Kagoshima 890-0013",
+        "latitude": 31.609583,
+        "longitude": 130.539583,
+        "neighbourhood": "Somuta"
+      },
+      "story": "Kagoshima's preserved-tree register opens with this camphor. On 20 March 1974 the city designated its first trees under a new ordinance, and number 1 went to the one standing in the middle of the courtyard at Kagoshima Shrine in Somuta. The register gives 7.30 metres around at 1.5 metres, 24.5 metres tall and about 600 years. The Environment Agency measured the same tree at 6.8 metres and 26 metres and put it at 300 years or more, so the older figure is the city's estimate rather than a settled date, and the gap between the two is the honest width of what anyone knows. The shrine carries a second name, Ujise, and a third that only locals use, Uttesa, which is Ujise-sama said in Satsuma dialect. Ujise is thought to describe swirling water, either the eddies at Kanze out in Kinko Bay where the shrine is said to have stood before, or the fast shallows of the Kotsuki River that once ran below this ground. Neither reading is settled. The camphor stands alone at the centre of the grounds, with vines climbing well up the trunk and no sign that it minds. If you know how old it actually is, or anyone has cored it, tell us.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/kagoshimajinja-kusu.html",
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "City bus to Somuta, or about 25 minutes on foot from Kagoshima-Chuo Station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Two sources disagree on both size and age: Kagoshima City's preserved-tree register (number 1) gives 7.30 m girth, 24.5 m and about 600 years; the Environment Agency's giant-tree survey gives 6.8 m, 26 m and 300 years or more. Both figures are stated on the page."
+    },
+    {
+      "id": "kag_005",
+      "name": "The Ogatama of Nanshu Shrine",
+      "species": "Ogatama Magnolia (Magnolia compressa)",
+      "age_estimate": "about 130 years",
+      "age_min": 110,
+      "age_max": 150,
+      "girth_cm": 382,
+      "height_m": 13.5,
+      "location": {
+        "address": "Nanshu Shrine, Kamitatsuo-cho 2-1, Kagoshima 892-0801",
+        "latitude": 31.60645,
+        "longitude": 130.558877,
+        "neighbourhood": "Kamitatsuo-cho"
+      },
+      "story": "The tree whose name means spirit-summoning stands beside two thousand graves. Nanshu Cemetery holds the dead of the Satsuma Rebellion, Saigo Takamori among them, buried on this slope after the fighting ended in September 1877, and the shrine that enshrines him was built next to it later. The ogatama in its grounds is preserved tree number 2, from the city's first designation in March 1974: 3.82 metres around, 13.5 metres tall, about 130 years old. Ogatamanoki is one of the trees Shinto actually uses. Its branches are offered at altars, and the name is usually read as a worn-down form of ogitama, to call a spirit down. It is an evergreen magnolia, dark and dense and completely unremarkable for most of the year. Then in late winter it opens hundreds of small cream flowers whose scent almost everyone identifies, correctly and unhelpfully, as banana. The graves below it run in ranks by battle and by home village. From the top of them you look straight across the bay at Sakurajima, which has been dropping ash on this hillside for the whole 130 years and considerably longer.",
+      "best_time": {
+        "months": [
+          2,
+          3
+        ],
+        "label": "late February and March, when the small cream flowers smell of banana",
+        "kind": "flowers"
+      },
+      "verified_sources": [
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html",
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju.html"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "Kagoshima City View bus to Nanshu Shrine, or about 20 minutes on foot from JR Kagoshima Station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single-sourced: only Kagoshima City's preserved-tree register (number 2) carries this tree, so girth, height and age all come from one document. The pin is the shrine, not the trunk. The flowering months are the species' habit in a warm-temperate climate rather than a record of this individual."
+    },
+    {
+      "id": "kag_006",
+      "name": "The Camphor of Kasuga Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 180 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 418,
+      "height_m": 25.5,
+      "location": {
+        "address": "Kasuga Shrine, Kasuga-cho 4-39, Kagoshima 892-0806",
+        "latitude": 31.606163,
+        "longitude": 130.566135,
+        "neighbourhood": "Kasuga-cho"
+      },
+      "story": "Of the 38 trees Kagoshima protects, only two are taller than this one. The camphor in the grounds of Kasuga Shrine runs to 25.5 metres, which puts it third on the city's register behind a ginkgo out at Koyamada and a sweetgum in a school yard at Kiire. It is not especially thick for a camphor, 4.18 metres around, and that combination is the whole character of the tree: it has gone up rather than out, a tall column of trunk in a small walled shrine a few streets back from the harbour, with the crown starting well above the roofs around it. The city made it preserved tree number 24 in March 1976 and estimates it at about 180 years, which would put its start somewhere in the last decades of Satsuma rule. Camphor dominates the city's register, eleven of the 38 trees, and almost all of those eleven stand in a shrine courtyard or a school yard. That is not a fact about camphors. It is a fact about which ground in a port town that burned in 1945 was never cleared for something else.",
+      "verified_sources": [
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html",
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju.html"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "About 12 minutes on foot from JR Kagoshima Station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single-sourced: Kagoshima City's preserved-tree register (number 24) is the only document carrying this tree. The height ranking is computed from that same register, in which only preserved trees 15 (30.0 m) and 41 (27.0 m) stand taller. The pin is the shrine, not the trunk. The eleven-camphor count and the shrine and school pattern are read off the same register."
+    },
+    {
+      "id": "kag_007",
+      "name": "The Akou of Tagayama Park",
+      "species": "Sea Fig (Ficus superba)",
+      "age_estimate": "about 180 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 490,
+      "height_m": 15.5,
+      "location": {
+        "address": "Tagayama Park, Shimizu-cho 32, Kagoshima 892-0816",
+        "latitude": 31.607057,
+        "longitude": 130.570195,
+        "neighbourhood": "Shimizu-cho"
+      },
+      "story": "Kagoshima is about as far north as this tree can live. Akou, Ficus superba, is a subtropical strangler fig whose range runs up from Taiwan and the Ryukyus and stops around here, which is why four of the city's 38 preserved trees are akou and why almost nobody north of Kyushu has heard of one. It behaves like a fig from further south: it germinates in a crack or on another tree, sends roots down over whatever it started on, and ends up sitting on a fused mat of its own root rather than a trunk. This one is 4.90 metres around, 15.5 metres tall and about 180 years old, preserved tree number 7 from the city's first designation in 1974. It stands in Tagayama Park, on the bluff at the northern end of the harbour, looking straight out across the ferry lane to Sakurajima. Akou drops all of its leaves at once, briefly, usually in spring, and then refoliates within a few weeks, so there is a short window each year when this tree looks dead and is not.",
+      "verified_sources": [
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html",
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju.html"
+      ],
+      "access": "Free, open hilltop park",
+      "transport": "About 15 minutes on foot, uphill, from JR Kagoshima Station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single-sourced: Kagoshima City's preserved-tree register (number 7). The pin is the park, not the trunk; the park is small but the tree's exact position within it is not published. The count of four akou among the city's preserved trees is read off the same register (numbers 7, 8, 34 and 44)."
+    },
+    {
+      "id": "kag_008",
+      "name": "The Kurogane Holly of Gionnosu Park",
+      "species": "Kurogane Holly (Ilex rotunda)",
+      "age_estimate": "about 130 years",
+      "age_min": 110,
+      "age_max": 150,
+      "girth_cm": 240,
+      "height_m": 15,
+      "location": {
+        "address": "Gionnosu Park, Shimizu-cho 26, Kagoshima 892-0816",
+        "latitude": 31.603989,
+        "longitude": 130.571789,
+        "neighbourhood": "Gionnosu"
+      },
+      "story": "This holly is 15 metres tall on a trunk 2.4 metres round, which for the species is close to the limit, and it stands on ground that was under water when it started. Gionnosu is reclaimed land at the mouth of the Inari River. The city made the tree preserved number 35 in March 1981 and puts it at about 130 years. What sits beside it now is Kagoshima's collection of stone bridges. Five arched stone bridges were thrown across the Kotsuki River about 150 years ago by Iwanaga Sangoro, a master mason brought in from Higo, as part of rebuilding the castle town after the domain got its finances in order. The flood of 1993 destroyed two of them. The surviving three were taken apart and re-erected here at Gionnosu, where Iwanaga himself had worked, the prefecture moving Nishida bridge into a memorial park that opened in April 2000 and the city moving Korai and Tamae bridges into this one. So a holly that has stood here since roughly the 1890s now has three nineteenth century stone arches for neighbours, all of them younger residents than it is, and none of them crossing anything.",
+      "verified_sources": [
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html",
+        "https://www.city.kagoshima.lg.jp/kensetu/kensetukanri/kouenryokuka/shisetsu/kanko/40014.html",
+        "http://www.pref.kagoshima.jp/ah10/infra/toshi/toshikoen/kenritu/sub38.html"
+      ],
+      "access": "Free, open waterfront park",
+      "transport": "About 18 minutes on foot from JR Kagoshima Station, next to Ishibashi Memorial Park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "The tree itself is single-sourced from Kagoshima City's preserved-tree register (number 35), which gives the address as Shimizu-cho 26 while the city's park page gives the park's address as Gionnosu-cho 1; the two adjoin. The pin is the park, not the trunk. Bridge history is from the prefecture's own Ishibashi Memorial Park page and the city's Gionnosu Park page."
+    },
+    {
+      "id": "kag_009",
+      "name": "The Akou of Yuno",
+      "species": "Sea Fig (Ficus superba)",
+      "age_estimate": "about 1,000 years by the signboard at the tree",
+      "age_min": 500,
+      "age_max": 1000,
+      "girth_cm": 740,
+      "height_m": 13.5,
+      "location": {
+        "address": "Yuno, Higashi-Sakurajima-cho 403, Kagoshima 891-1544",
+        "latitude": 31.554583,
+        "longitude": 130.632306,
+        "neighbourhood": "Yuno, Sakurajima"
+      },
+      "story": "The oldest tree in Kagoshima grows on the side of a volcano that has erupted continuously for most of the last century. The signboard beneath it, put there by the city, gives about 1,000 years, which is roughly three times the next oldest figure on the municipal register and rests on nothing anyone has published a method for. Take it as an official estimate. What is measured is the size: 7.40 metres around by the city's reckoning, 6.5 by the Environment Ministry's, the difference almost certainly because two stems fuse about a metre above the ground and the ministry recorded only the thicker one. From any distance it is one tree with one crown. It stands on a lane one street below Route 224, in the hamlet of Yuno on the southern coast of Sakurajima, on a stone revetment above the little port of Yunomotsuki, and a footpath runs down from it to the water. If the age is anywhere near right, this fig was already standing through the Bunmei eruption of the 1470s, the An'ei eruption of 1779, and the Taisho eruption of 1914, which poured enough lava into the strait on the far side of the island to weld Sakurajima to the mainland for good.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/yuno-akou.htm",
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html"
+      ],
+      "access": "Free, standing on a public lane through the hamlet",
+      "transport": "Sakurajima ferry from central Kagoshima, 15 minutes and running around the clock, then a local bus toward Higashi-Sakurajima, about 25 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "The 1,000-year age is Kagoshima City's preserved-tree signboard (tree number 8) and is not a measured date; age_min is set well below it deliberately. Girth differs between sources: 7.40 m in the city register, 6.5 m in the Environment Ministry's 2000 giant-tree follow-up survey, which appears to have measured only the thicker of two fused stems. Coordinates from the Hitozato Kyoboku database."
+    },
+    {
+      "id": "kag_010",
+      "name": "The Great Camphor of Kamo",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "at least 900 years on documentary evidence, about 1,600 by the shrine's own reckoning",
+      "age_min": 900,
+      "age_max": 1600,
+      "girth_cm": 2422,
+      "height_m": 30,
+      "location": {
+        "address": "Kamo Hachiman Shrine, Kamocho Kamikyutoku, Aira 899-5302",
+        "latitude": 31.765757,
+        "longitude": 130.569538,
+        "neighbourhood": "Kamo, Aira"
+      },
+      "story": "This is the largest tree in Japan, and it was already being worshipped when the shrine beside it was founded in 1123. That founding record is the hard part of its age: the lord of Kamo brought the Hachiman deity here from Usa and set up the shrine, and the camphor is written down as a sacred tree at the time, which makes it at least 900 years old without anyone having to guess. The shrine's own figure is about 1,600. The measurements are not in dispute. The trunk is 24.22 metres around at chest height and 33.57 metres around at the roots, the tree is 30 metres tall, and the Environment Agency's 1988 national survey of giant trees ranked it first in the country, ahead of the camphor at Kinomiya Shrine in Atami by 32 centimetres. Inside, the trunk is hollow for about 4.5 metres across, roughly the floor of an eight-mat room. It was made a Special Natural Monument in 1952, the highest grade Japan awards, held by only seven things in this prefecture including Yakushima's cedar forest. Legend gives it a different origin: Wake no Kiyomaro, exiled to Osumi in the eighth century, is said to have pushed his staff into the ground here.",
+      "verified_sources": [
+        "https://www.pref.kagoshima.jp/bc05/hakubutsukan/tennen/kuni_tokubetu/03kamo-kusu.html",
+        "http://www.kamou80000.com/okusu.html"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "From Kagoshima-Chuo, about 25 minutes by JR to Aira and then a bus or taxi to Kamo, or about 40 minutes by car. Roughly 25 km north of the city centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "notes": "Day trip, not a Kagoshima city tree: it stands in Aira, about 25 km north, and the page says so. Designated a Special Natural Monument on 29 March 1952. Measurements agree across the prefecture's own page and the shrine's, both citing the Environment Agency's 1988 survey."
+    }
+  ]
+}
