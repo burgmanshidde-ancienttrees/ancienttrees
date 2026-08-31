@@ -9,6 +9,58 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-31 - Maui opens; America turns out to be structurally expensive, and California is one email away
+
+Hidde asked for more zero cities, especially American ones. Maui opened. The
+more useful answer is why the rest did not.
+
+**Maui opens, 4 trees, and the Lahaina banyan survived.** Planted 24 April 1873,
+sixteen trunks, a canopy over two thirds of an acre. It came through the fire of
+8 August 2023 scorched, and a Honolulu Civil Beat piece from February 2026
+confirms it alive with an arborist saying plainly that nobody knows what is under
+the skin. The park is still fenced and you look at it from Front Street, across
+the ground where the courthouse stood. The page says exactly that and never
+implies the park is open or promises it will reopen. The other six Lahaina-area
+register trees went to LEADS rather than blocked, because no post-fire source says
+either way and unconfirmed is not known-dead. The other three trees are in Wailuku
+and on the west coast, outside the burn zone.
+
+**Thirteen of the fourteen ranked US cities at zero have no supply at all, and a
+scouting round explains why in one sentence: American cities mostly do not curate
+tree registers.** Philadelphia and Charleston designate by a size threshold applied
+automatically city-wide, 24 inches diameter, which is a zoning rule and not a list
+anyone maintains. Savannah's SAGIS and San Diego's webmaps publish the full
+municipal inventory, 36,553 rows in Savannah's case, which is the same shape that
+already disqualified Seattle and San Francisco. San Diego has a correctly shaped
+nomination programme that never published a list. Five written verdicts are in
+OPEN_DATA_SURVEY.md and `data/register-scouting.json` so nobody spends another
+window rediscovering them.
+
+**The one American source worth having is California, and it is now one email
+away.** The California Registry of Big Trees at Cal Poly was recorded on 2026-08-13
+as a React app whose data API could not be resolved. It is resolved: the bundle
+names its own endpoint, `selectree.calpoly.edu/api/bigtrees/getAllBt`, no key and
+no login, **266 champion trees with tree-level coordinates, species, height, girth,
+a measurement date and a DEAD flag**, 229 of them live, unhidden and located. Los
+Angeles 54, Santa Barbara 24, Sacramento 14, Santa Clara 12, San Diego 8, and
+Sacramento and San Diego are both ranked cities we have nothing in. It is a
+champion register by nomination, so it passes the semantic filter that killed the
+others.
+
+**FOR HIDDE: it stalls on one thing only, and it is yours.** No terms of use for
+the data exist on any of the three Cal Poly sites; there is an accuracy disclaimer,
+which is not a licence. No licence stated is a stall, not a yes, so nothing was
+imported. A draft asking permission is in `drafts/OUTREACH.md`, addressed to
+mritter@calpoly.edu, the contact the registry publishes itself. It passes
+`mailcheck.py`. Sending it is yours under hard rule 4. That one reply would open
+California.
+
+**The transferable lesson, and OPEN_DATA_SURVEY.md had already predicted it:** a
+scout with a browser reads a site's own network calls and its bundle in minutes,
+where a scout with curl guesses hostnames and burns its window. This took about
+12k tokens after a full agent pass had failed on the same target. When the next
+open-data portal turns out to be a JavaScript app, open it rather than guessing at it.
+
 ## 2026-08-31 - Nijmegen +2, Luxembourg City +1, Valencia +8, Singapore +6, and the iOS hang is not the email fix
 
 **Rung 2 first.** `health.py` still flagged the iOS app red. The `-show-email` fix from earlier today (commit c8f90f7a's predecessor) is real and works: the two named test failures are gone. What's failing now is different and new: `appfit.py`'s SweepFrames run hangs and gets killed at its own 20-minute `subprocess` timeout, consistently, across both the 19:23 push run and the 19:38 scheduled run. Traced it as far as this runner (no Xcode, Linux) can: the last GREEN ios.yml run was 17:51 UTC on 2026-08-30, and the first HUNG one was 18:26 UTC, on the `app-permission-recovery` branch, before the email fix even landed, so the two are unrelated. That branch's recent work is about location/photo permission recovery flows, which is the kind of change that can trigger a real system permission dialog during automated UI testing (a known XCUITest failure shape) rather than a rendering bug, but this could not be confirmed without a Mac. Left as a clean finding for a session with Xcode; did not attempt a blind fix.
