@@ -24,6 +24,26 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
+   "name": "Alzina de Mexic del Botanic (Quercus polymorpha)",
+   "species_register": "Quercus polymorpha",
+   "latitude": 39.476414,
+   "longitude": -0.38677,
+   "girth_m": 3.44,
+   "height_m": 26.5,
+   "crown_m": 25.2,
+   "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found within two search attempts and a direct-fetch attempt at the garden's own virtual species catalogue (jardibotanic.org); WebSearch's own AI summary claimed a jardibotanic.org catalogue page existed for this species, but per the search-summary-is-a-lead-never-a-source rule that summary was not trusted, and three different jardibotanic.org URLs fetched directly (pid 2294, 2297, and a live cadbusc= search for 'Quercus polymorpha') did not return this species. Register-only for now; worth a retry with a different jardibotanic.org pid or a Wikipedia/Wikispecies cross-check."
+  },
+  {
+   "name": "Nouer americà del Botanic I (Carya illinoinensis)",
+   "species_register": "Carya illinoinensis",
+   "latitude": 39.476621,
+   "longitude": -0.387157,
+   "girth_m": 3.88,
+   "height_m": 32.9,
+   "crown_m": 16.1,
+   "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found: WebSearch's AI summary said this pecan is listed in the garden's Bosque and Escola Botanica collections, but per the search-summary-is-a-lead-never-a-source rule that was not trusted without a direct fetch, and the jardibotanic.org pid guessed from a related search result (2850) turned out to be Viburnum tinus, a different plant entirely. Register-only for now; worth a retry with the garden's own site search or a Wikipedia cross-check."
+  },
+  {
    "name": "The Ficus of the Corts Valencianes",
    "species": "Moreton Bay Fig (Ficus macrophylla)",
    "lat": 39.47808,
