@@ -416,6 +416,37 @@
       "height_m": 24.0,
       "verify_notes": "Height 24.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",
       "girth_cm": 350
+    },
+    {
+      "id": "tor_011",
+      "name": "The Downy Oak of the Colle della Maddalena",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "over a century old",
+      "age_min": 100,
+      "age_max": 200,
+      "girth_cm": 415,
+      "height_m": 18,
+      "location": {
+        "address": "Parco della Rimembranza, Colle della Maddalena, reached from the Strada Comunale San Vito Revigliasco side entrances",
+        "latitude": 45.03042,
+        "longitude": 7.72147,
+        "neighbourhood": "Colle della Maddalena (Circoscrizione 8, Torino hill)"
+      },
+      "story": "Turin counts sixteen monumental trees within its borders, and this oak might not quite be one of them. The regional register that protects it lists ownership as part public, part private, unlike every other Torino entry on the same list, and its coordinate falls on a road administratively inside Revigliasco, a district of the neighbouring comune of Moncalieri rather than Torino itself. That is presumably why some local counts put the city's total at fifteen rather than sixteen.\n\nNone of that changes what a visitor finds. The oak stands inside the Parco della Rimembranza, more than ninety hectares of hillside above the city that the Comune di Torino manages and keeps open daily, reached by bus 70 or 73 to the Maddalena stop and then a walk into the trees from one of the park's entrances off Strada Comunale San Vito Revigliasco. A regional survey published in 2025 calls it a centenary oak that has watched a century of the city's history; the register gives it a girth of 4.15 metres, a crown spreading 22 metres, and an age band of one to two centuries, which is as close as anyone has come to dating it.\n\nDowny oak, Quercus pubescens, is the everyday oak of these hills, drought-tolerant and unremarkable in youth. This one has had at least a century to stop being unremarkable.",
+      "verified_sources": [
+        "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+        "https://torinocronaca.it/news/torino/545499/dal-valentino-ai-giardini-reali-dove-trovare-i-16-alberi-monumentali-d-torino.html"
+      ],
+      "access": "Free, in the public Parco della Rimembranza (Comune di Torino, open daily). GTT bus lines 70/73 stop at \"Maddalena\"; the tree sits on the Revigliasco (southeast) side, reached via a park entrance off Strada Comunale San Vito Revigliasco rather than the main Faro entrance.",
+      "transport": "Bus 70 or 73 to the Maddalena stop, then roughly 10-15 minutes on foot into the park depending on entrance used",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ]
 }

@@ -18,6 +18,19 @@
       "reason": "The widest trunk and the tree most often called Turin's oldest, nicknamed the grandfather, but it stands 3.6 km west of this walk in its own park and forms a cluster of one. It is the obvious ninth entry if Turin ever grows past this walk, and it is what the page's oldest-tree question has to name honestly."
     },
     {
+      "name": "The Populus nigra of via Don Lorenzo Milani",
+      "species": "Black Poplar (Populus nigra)",
+      "register_id": "002/C860/TO/01",
+      "latitude": 45.09128,
+      "longitude": 7.608835,
+      "girth_cm": 540,
+      "height_m": 30,
+      "crown_m": null,
+      "age_band": "< 100",
+      "ownership": "Pubblica",
+      "reason": "New find, 2026-08-31 pass, not previously recorded. 6.7 km from centre, girth 5.4 m despite an age band under 100 years, so a fast-growing giant rather than an ancient tree; potentially visually spectacular on size alone. Reverse-geocodes to via Don Lorenzo Milani, Ricovero, Collegno, a separate comune west of Torino, not the city itself. One targeted search (\"pioppo nero monumentale Collegno\") found the Comune di Collegno's own municipal tree census page exists but returned no specific hit for this tree, and no press coverage. No second source, no place name, no confirmed park/access context, and it would need its own day-trip justification (transit time from Torino centre) rather than joining this walk. Worth a look next pass with a direct fetch of Collegno's tree census, not chased further this pass."
+    },
+    {
       "name": "The Caucasian Elm of the Giardini Reali Inferiori",
       "species": "Caucasian Elm (Zelkova carpinifolia)",
       "register_id": "005/L219/TO/01",
@@ -55,20 +68,7 @@
       "crown_m": 16,
       "age_band": ">200",
       "ownership": "Pubblica",
-      "reason": "Second widest trunk in the city at 6.4 m and yet only 14 m tall, which almost certainly means a pollarded or topped tree. Neither the tourist route nor either press list names it, so it has no place name at all yet and no second source. Worth a look because of the girth, but the height ratio needs explaining before it could be written. CHECKED 2026-08-23: this is NOT the press-documented 'plane of Corso Novara by the Cimitero Monumentale' (see that separate, already-blocked lead below); this point sits about 1.8km further southeast, on the Sassi hillside. A reverse geocode of the coordinate returns 'Villa Rey' as the nearest named OSM feature, roughly 250m off, which may just be sparse tagging on that hillside rather than evidence the tree stands on Villa Rey's own grounds (Villa Rey's registered plane, reg_id 009, is a separate point 1.8km away and is itself blocked on access, see above). Still no name, no second source and no confirmed access status. Do not ship without a real site identification; worth a look at Google Street View or a Sassi/Madonna del Pilone neighbourhood association page next pass."
-    },
-    {
-      "name": "The Downy Oak of the Colle della Maddalena",
-      "species": "Downy Oak (Quercus pubescens)",
-      "register_id": "001/F335/TO/01",
-      "latitude": 45.03042,
-      "longitude": 7.72147,
-      "girth_cm": 415,
-      "height_m": 18,
-      "crown_m": null,
-      "age_band": "100-200",
-      "ownership": "Sia pubblica che privata",
-      "reason": "Mole24 counts this as Turin's sixteenth monumental tree and gives it about 100 years, but the register files it under a neighbouring comune, which is the whole explanation for why the city's count is quoted as 15 or 16 depending on who is counting. 4.8 km from the centre, up at the Parco della Rimembranza. Ownership is mixed public and private, so access needs checking before it could ever ship."
+      "reason": "Second widest trunk in the city at 6.4 m and yet only 14 m tall, which almost certainly means a pollarded or topped tree. Neither the tourist route nor either press list names it, so it has no place name at all yet and no second source. Worth a look because of the girth, but the height ratio needs explaining before it could be written. CHECKED 2026-08-23: this is NOT the press-documented 'plane of Corso Novara by the Cimitero Monumentale' (see that separate, already-blocked lead below); this point sits about 1.8km further southeast, on the Sassi hillside. A reverse geocode of the coordinate returns 'Villa Rey' as the nearest named OSM feature, roughly 250m off, which may just be sparse tagging on that hillside rather than evidence the tree stands on Villa Rey's own grounds (Villa Rey's registered plane, reg_id 009, is a separate point 1.8km away and is itself blocked on access, see above). Still no name, no second source and no confirmed access status. Do not ship without a real site identification; worth a look at Google Street View or a Sassi/Madonna del Pilone neighbourhood association page next pass. CHECKED AGAIN 2026-08-31: Nominatim reverse geocode places the exact point at 92 int. 119, Corso Quintino Sella, Madonna del Pilone, within Torino proper (Circoscrizione 7, Sassi). Three separate searches this pass (platano + Madonna del Pilone/Sassi/Corso Quintino Sella; platano + Sassi/collina Po/censimento; platano + Villa Rey/Borgata Sassi) and one attempted fetch of the torinocronaca.it 16-monumental-trees survey and the 5wagora.com monumental-trees article (both loaded fine and list all 16 named register trees by park) found this tree in neither: it genuinely has no press coverage and no place name anywhere found, confirming the 2026-08-23 finding rather than overturning it. Register remains the sole source. Still a lead, not shippable without a second source under BRIEF_RESEARCH.md's two-source bar."
     },
     {
       "name": "The three oaks of the Borgo Medievale, if they are ever split",
