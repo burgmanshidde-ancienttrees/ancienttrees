@@ -2,11 +2,11 @@
   "city": "Perugia",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Seven of the ten trees on this page sit within a kilometre of Perugia's centre, which makes it one of the tighter walks on this site. Six are cedars and cedar relatives, planted through the nineteenth century as the city laid out its public gardens, and each has a reason to exist: one hosted a concert twelve metres up in its crown, one grows where a fortress was torn down out of spite, one is so thick for its height that it needs bracing. The last two are country trees, enormous oaks on a lane at Prepo.",
-  "meta_description": "Ten monumental trees in Perugia, most within a kilometre: cedars on the old fortress site, holm oaks that watched 1859, and two giant oaks at Prepo.",
-  "question_meta": "Perugia's oldest documented tree is the Palazzo Murena cedar, planted around 1861 in the university's cloister. Where it stands, plus nine more.",
+  "intro": "Seven of the twelve trees on this page sit within a kilometre of Perugia's centre, which makes it one of the tighter walks on this site. Six are cedars and cedar relatives, planted through the nineteenth century as the city laid out its public gardens. The rest stand well outside that walk, on their own: two country oaks at Prepo, a downy oak up a hillside road, and a cypress in Ponte Felcino with the thickest trunk on this page.",
+  "meta_description": "Twelve monumental trees in Perugia, most within a kilometre: cedars on the old fortress site, holm oaks that watched 1859, and Prepo's giant oaks.",
+  "question_meta": "Perugia's oldest documented tree is the Palazzo Murena cedar, planted around 1861 in the university's cloister. Where it stands, plus eleven more.",
   "question_answer": "The oldest tree in Perugia that carries a date is the Cedar of Lebanon in the cloister of Palazzo Murena, planted around 1861 and so roughly 165 years old. It is free to walk in and see, in the courtyard of the university's rectorate in the historic centre. The holm oaks of the Giardini del Frontone are almost certainly older, since the gardens were laid out from 1707 and a local history piece describes them as already grown when papal troops sacked the city in 1859, but no source puts a number on them.",
-  "question_context": "Perugia's trees are unusually well recorded for Italy, and the reason is that most of them stand on ground the city or the university has managed for over a century. Italy's national register gives girth, height and position and no age at all, so every date here comes from university records, the comune's own pages or local history writing, and where none of those has an answer the page leaves the age blank rather than estimating it. Six of the ten are cedars or their close relatives, planted as Perugia laid out the public gardens that replaced the papal fortress, which is why the species repeats and the stories do not. The Frontone entry covers two registered holm oaks about seventy metres apart in the same gardens, so its pin is marked approximate: one point cannot honestly stand for both. The two downy oaks at Prepo are the only trees here that the register alone carries, with no second source and no age. One further register tree is missing on purpose, a holm oak in the cloister of Santa Giuliana, now the Italian Army's language school and not normally open to visitors.",
+  "question_context": "Perugia's trees are unusually well recorded for Italy, and the reason is that most of them stand on ground the city or the university has managed for over a century. Italy's national register gives girth, height and position and no age at all, so every date here comes from university records, the comune's own pages or local history writing, and where none of those has an answer the page leaves the age blank rather than estimating it. Six of the twelve are cedars or their close relatives, planted as Perugia laid out the public gardens that replaced the papal fortress, which is why the species repeats and the stories do not. The Frontone entry covers two registered holm oaks about seventy metres apart in the same gardens, so its pin is marked approximate: one point cannot honestly stand for both. Four trees here, the two Prepo oaks, the Strada dei Conservoni oak and the Ponte Felcino cypress, are register-only, with no second source and no age. One further register tree is missing on purpose, a holm oak in the cloister of Santa Giuliana, now the Italian Army's language school and not normally open to visitors.",
   "faq": [
     {
       "q": "What is the oldest tree in Perugia?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Are Perugia's monumental trees free to visit?",
-      "a": "Yes, all of them. Seven stand on public squares, streets and gardens in the centre, the eighth is in the monumental cemetery, which opens at seven every morning and charges nothing, and the two oaks at Prepo stand on an open lane."
+      "a": "Yes, all of them. Seven stand on public squares, streets and gardens in the centre, the eighth is in the monumental cemetery, which opens at seven every morning and charges nothing, and the two oaks at Prepo and the downy oak and cypress added since all stand on open roads with no gate."
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Seven of the ten sit within about a kilometre in the historic centre. The cemetery cedar is a short bus ride out, and the two Prepo oaks are three kilometres southwest, best treated as their own short outing."
+      "a": "Seven of the twelve sit within about a kilometre in the historic centre. The cemetery cedar is a short bus ride out, the two Prepo oaks are three kilometres southwest, and the downy oak and the cypress stand alone about four kilometres out in opposite directions; treat each as its own short trip rather than part of the main walk."
     }
   ],
   "hero_tree_id": "pgi_001",
@@ -364,6 +364,70 @@
       "height_m": 22.0,
       "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 422
+    },
+    {
+      "id": "pgi_011",
+      "name": "The Downy Oak of Strada dei Conservoni",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Strada dei Conservoni, Perugia",
+        "latitude": 43.143972,
+        "longitude": 12.364894,
+        "neighbourhood": ""
+      },
+      "story": "Four hundred and twenty seven centimetres round is a serious trunk for a species that usually stays modest. Quercus pubescens, downy oak, takes the dry limestone slopes better oaks refuse and grows into a gnarled, workaday tree of field edges rather than a giant, which is exactly why Italy's national register singles this one out.\n\nIt stands alone on Strada dei Conservoni, a hillside road climbing to 450 metres, four kilometres from Perugia's walled centre and with no other registered tree anywhere near it. Perugia's other monumental trees mostly belong to a nineteenth century story, cedars planted when the city laid gardens over the ground where the papal fortress once stood. This oak is older news than that. Umbrian hillsides were oak country long before anyone planted an ornamental cedar, and a tree this size on a working lane is the landscape showing through the gardens rather than a garden itself.\n\nDowny oak earns a second look in winter. It is marcescent, holding its dead leaves through the cold months instead of dropping them, so the crown keeps a dry, rust brown rustle on the hillside long after its neighbours have gone bare.\n\nItaly's register is the only document that names this tree. It gives a girth, a height and a point on the map and nothing else, so there is no age here and the pin is marked approximate.",
+      "verified_sources": [
+        "MASAF national monumental trees register, sheet 13/G478/PG/10 (Quercus pubescens Willd., locality 'Strada dei Conservoni', girth 427cm, height 20.5m, altitude 450m)"
+      ],
+      "access": "Free, roadside on Strada dei Conservoni; no gate and no hours.",
+      "transport": "About 4 km from the centro storico, on a hillside road; a bus or a long uphill walk.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Promoted from data/leads/perugia.json on 2026-08-31. Single-sourced: the national register is the only document that names it, hence flagged and hence no age. Isolated, 4km from the nearest other Perugia register candidate. Pin is the register coordinate, unverified on the ground, so approximate.",
+      "height_m": 20.5,
+      "verify_notes": "Girth and height from the italy-masaf register (sheet 13/G478/PG/10), matched on our own pin (0 m away). No independent second source found for this specific tree.",
+      "girth_cm": 427
+    },
+    {
+      "id": "pgi_012",
+      "name": "The Cypress of Ponte Felcino",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Via Giacomo Puccini, Ponte Felcino, Perugia",
+        "latitude": 43.128908,
+        "longitude": 12.434706,
+        "neighbourhood": "Ponte Felcino"
+      },
+      "story": "Five metres and forty seven centimetres round is the largest trunk in Perugia's entire national tree register, and it belongs not to one of the city's celebrated garden cedars but to a cypress on a suburban street.\n\nThe tree stands on Via Giacomo Puccini in Ponte Felcino, a district that grew up around a Tiber crossing and a railway junction rather than around a palace or a papal fortress, about four kilometres northeast of the historic centre and 200 metres above sea level, low ground for a Perugia register tree. Mediterranean cypress, Cupressus sempervirens, is the tall dark spire of Tuscan and Umbrian cemetery avenues and villa driveways, usually planted in disciplined rows for its shape rather than grown singly to a record size, which makes a single specimen this thick unusual rather than typical of the species.\n\nNothing in the register says who planted it or when, and no second source names this particular tree, so it carries no age and stands flagged on the strength of one document. What the register does record is a girth that beats every cedar, oak and plane elsewhere on Perugia's list, by a wide margin. Whatever else is unknown about this cypress, its size on the page is not in question.",
+      "verified_sources": [
+        "MASAF national monumental trees register, sheet 09/G478/PG/10 (Cupressus sempervirens L., locality 'Ponte Felcino - Via Giacomo Puccini', girth 547cm, height 30.5m, altitude 200m)"
+      ],
+      "access": "Free, roadside on Via Giacomo Puccini; no gate and no hours.",
+      "transport": "Ponte Felcino, about 4 km northeast of the centro storico; a bus or train from the centre (Ponte Felcino has its own station on the Foligno line).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Promoted from data/leads/perugia.json on 2026-08-31. Single-sourced: the national register is the only document that names it, hence flagged and hence no age. The thickest trunk of any Perugia register tree (547cm, checked against all 38 comune entries and all published pgi_ trees). Isolated, 4km from the nearest other Perugia register candidate. Pin is the register coordinate, unverified on the ground, so approximate.",
+      "height_m": 30.5,
+      "verify_notes": "Girth and height from the italy-masaf register (sheet 09/G478/PG/10), matched on our own pin (0 m away). No independent second source found for this specific tree.",
+      "girth_cm": 547
     }
   ]
 }
