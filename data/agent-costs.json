@@ -4114,6 +4114,20 @@
         "tokens": 105175,
         "trees": 3,
         "note": "3 stories written and merged: lux_010 (Krombach Oak, already-staged verified tree), nij_021, nij_022; below the 15-20 batch ideal because only 3 trees were genuinely write-ready this window"
+      },
+      {
+        "target": "valencia",
+        "kind": "verify",
+        "tokens": 158510,
+        "trees": 8,
+        "note": "8 new trees in two existing clusters (Jardi Botanic, 6; Glorieta ficus, 2), from the valencia-arboles-monumentales register, espores.org and the garden's own catalogue as second sources; 2 candidates dropped to leads for lack of an independent source"
+      },
+      {
+        "target": "valencia",
+        "kind": "write",
+        "tokens": 123290,
+        "trees": 8,
+        "note": "8 stories written and merged (vlc_017-024); fixed 3 false-positive duplicate flags against the register, dropped 2 superlatives contradicted by register measurements, fixed a species-name mismatch (Platanus hispanica -> Platanus x acerifolia) and internal-id leakage in access text before merge; also wrote the Turkish Pine species page and the Jardi Botanic park page pagegaps.py flagged as newly earned"
       }
     ]
   }
