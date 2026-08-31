@@ -9,6 +9,47 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-31 - Kagoshima opens on 10 trees, off a municipal register nobody had looked at
+
+Hidde sent a photograph from Kagoshima and asked for the city. It was not in the
+ranked queue and had never been researched. It has a register: Kagoshima City
+designates preserved trees one at a time under a 1974 ordinance and publishes all
+38 with species, trunk circumference at 1.5 metres, height, estimated age and
+address, last updated 25 November 2025. The 2026-07-30 scouting closed Kagoshima
+as a dead end, and that verdict was about the REGISTER LAYER (no openly licensed
+coordinate-bearing dataset for map dots), which says nothing about whether the
+city has trees worth curating. It does.
+
+Second source for six of the ten: hitozato-kyoboku.com, an independent giant-tree
+database carrying the Environment Ministry's own separate measurements and a
+per-tree coordinate. Where the two disagree, the page prints both, which is most
+of the value: the city puts its first preserved tree at 600 years, the ministry at
+300 or more, and the honest answer is the gap.
+
+What shipped: four trees around Terukuni Park and Shiroyama, four along the
+northern waterfront from Nanshu Shrine through Tagayama Park down to the relocated
+Kotsuki River stone bridges at Gionnosu, the Akou of Yuno on Sakurajima (the
+city's own signboard says a thousand years, and that is an estimate with no
+published method), and the Great Camphor of Kamo in Aira, 24.22 metres round and
+the largest tree in Japan. The last one is an hour out and the page says so.
+
+Three photographs approved after looking at the pixels. Two of them, the cycad and
+the Terukuni holly, were taken in September 2025 and filed on Commons under the
+tree's own preserved-tree number, so they double as a dated proof of life.
+
+FOR HIDDE: the pine in your photograph is not published. It is not on the city's
+register, no Japanese source mentions a notable pine at that park, and Ishibashi
+Memorial Park itself only opened in April 2000, on reclaimed ground where the three
+surviving stone bridges were re-erected. A mature ornamental pine on its lawn is
+most likely part of that landscaping. It sits in data/leads/kagoshima.json with the
+park office's telephone number against it. If you or whoever took the picture can
+read the signboard, that settles it in one photograph.
+
+Also parked as leads: eleven more register trees needing coordinates or an access
+check, including a 350-year camphor at Hie Shrine and a 300-year plum at the
+Komatsu Tatewaki residence. Eight of the register's 38 stand inside school grounds
+and are blocked under hard rule 10.
+
 ## 2026-08-31 - Night run 2026-08-31 10:14 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 26.8 minutes of its 120 minute window, 199 turns, 24 commands refused by the allowlist, ended clean (success). 3 tree(s) reached data/cities across 2 city file(s), and the run still wrote no log entry of its own. Claims left behind: prague, which block the top of the queue until they expire.
