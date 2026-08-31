@@ -1,0 +1,298 @@
+{
+  "city": "Miyazaki",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Miyazaki holds four trees the Japanese state has designated National Natural Monuments. They are not in the centre. The city swallowed three neighbouring towns in 2006 and 2010, so its boundary now runs 40 kilometres from a ginkgo on the old Satsuma highway to a fig on the Nichinan coast, and the trees are spread across all of it. What holds them together is the ground they stand on: every one is in a shrine precinct, several of them founded more than a thousand years ago and never cleared since.",
+  "meta_description": "Miyazaki's ancient trees: four National Natural Monuments, a 900 year old camphor used as an air raid shelter, and the largest bald cypress in Japan.",
+  "question_answer": "The oldest tree in Miyazaki is the Great Camphor of Kiyotake, put at about 900 years by the signboard at its foot. The figure comes from the founding of Funabiki Shrine in 1087, on the assumption the tree was planted then, so treat it as an inference rather than a measurement.",
+  "question_meta": "The Great Camphor of Kiyotake, about 900 years old, is Miyazaki's oldest tree. How that age was arrived at, and 7 more remarkable trees in the city.",
+  "question_context": "Both of Miyazaki's oldest figures are inferences from a date, and it is worth knowing which date. The Great Camphor of Kiyotake stands beside Funabiki Shrine, which its own signboard dates to 1087, and the 900-year age is that founding carried across to the tree. The Sarukawa Ginkgo is given 800 years from a tradition that Shimazu Tadahisa, who died in 1227, planted it himself; the giant-tree database that records the tree notes in plain terms that it looks younger than that. Neither number rests on a ring count or a core. What is measured is size, and there the camphor is not in doubt: 13.2 metres round the trunk and 35 metres tall by the Environment Agency's survey, with a hollow inside big enough that people sheltered in it during the war. Both trees are National Natural Monuments, the camphor since 1951 and the ginkgo since 1935. Getting to Kiyotake: JR Nippo line to Kiyotake, then about 1.6 km on foot northwest to Funabiki Shrine.",
+  "oldest_tree_id": "myz_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Miyazaki?",
+      "a": "The Great Camphor of Kiyotake, at about 900 years by its signboard. That figure comes from the 1087 founding of the shrine beside it rather than from any measurement of the tree, which is why the page says so."
+    },
+    {
+      "q": "Why does Miyazaki have four National Natural Monuments?",
+      "a": "Partly because the shrines here are old and their precincts were never cleared, and partly because the city is large: Miyazaki absorbed Takaoka, Kiyotake and Sadowara in 2006 and 2010, so trees that were once in three different towns now share one city boundary."
+    },
+    {
+      "q": "Is the whole grove at Nojima Shrine a National Natural Monument?",
+      "a": "No, and this is the most common mistake made about it. The shrine is full of akou figs and only one of them, the tree to the right of the main hall, carries the national designation. The explanatory diagram posted in the precinct gets it right."
+    },
+    {
+      "q": "Are Miyazaki's ancient trees free to visit?",
+      "a": "Yes, all eight. Every one stands in a shrine precinct that is open and free, and at Uryuno Hachiman you can put a hand on a National Natural Monument, which is unusual."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Not as one walk. Miyazaki Shrine, Eda Shrine and Sumiyoshi Hachiman make a northern group you could do in an afternoon with a bus. Kiyotake, Ikime, Uryuno, Sarukawa and Uchiumi are each their own trip, and Sarukawa and Uchiumi are 25 and 20 kilometres out."
+    }
+  ],
+  "trees": [
+    {
+      "id": "myz_001",
+      "name": "The Sarukawa Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 800 years by the signboard, and probably less",
+      "age_min": 300,
+      "age_max": 800,
+      "girth_cm": 1120,
+      "height_m": 30,
+      "location": {
+        "address": "Uchiyama, Sarukawa, Takaoka-cho, Miyazaki 880-2222",
+        "latitude": 31.913972,
+        "longitude": 131.225833,
+        "neighbourhood": "Sarukawa, Takaoka"
+      },
+      "story": "The Satsuma lords passed this tree on their way to Edo. The old Takaoka road ran close by it, a good way east of the modern route, and it was the road the Shimazu used for the sankin-kotai, the enforced march to the shogun's capital and back that every daimyo made. Sarukawa was the checkpoint on it, the gate between Satsuma and the outside. The ginkgo stands 400 metres off the present highway at the foot of a hill, in the loop of an old meander of the Oyodo river, and because nothing tall grows near it you see the crown long before you arrive. It is 11.2 metres round and 30 metres tall by the Environment Agency's survey, and it has been a National Natural Monument since December 1935. The signboard says 800 years and attributes the planting to Shimazu Tadahisa, the clan's founder, who died in 1227. That is where the number comes from: it is the legend converted into arithmetic, not a measurement, and the giant-tree database that records the tree says in plain words that it looks younger. It is a female tree, straight-trunked with few heavy limbs, and it goes gold in the last week of November.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, when the whole crown turns gold",
+        "kind": "autumn colour"
+      },
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/sarukawa-ichou.htm",
+        "https://www.city.miyazaki.miyazaki.jp/miyazaki-shokudo/activity/ooichou.html"
+      ],
+      "access": "Free, open ground at the foot of the hill",
+      "transport": "About 25 km west of central Miyazaki on Route 10 toward Miyakonojo, roughly 40 minutes by car; no convenient train",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "The 800-year age is the on-site signboard's and is derived from the Shimazu Tadahisa planting legend rather than from any measurement; the Hitozato Kyoboku database, which supplies the coordinate, states outright that the tree looks younger, which is why age_min is set at 300. Girth and height are the Environment Agency's Kyushu and Okinawa giant-tree volume. National Natural Monument, designated 1935-12-24."
+    },
+    {
+      "id": "myz_002",
+      "name": "The Great Camphor of Kiyotake",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 900 years by the signboard, inferred from the shrine's 1087 founding",
+      "age_min": 400,
+      "age_max": 900,
+      "girth_cm": 1320,
+      "height_m": 35,
+      "location": {
+        "address": "Funabiki Shrine, Funabiki, Kiyotake-cho, Miyazaki 889-1611",
+        "latitude": 31.867639,
+        "longitude": 131.379444,
+        "neighbourhood": "Kiyotake"
+      },
+      "story": "People sheltered inside this tree during the war. The trunk has a mouth in it, and behind the opening the hollow runs to something like the floor of a seven or eight mat room; Kodansha's survey of Japan's natural monuments records that it was used as a makeshift air-raid shelter, and whether that would have helped against strafing or a bomb was never tested, because the attack did not come. The camphor stands at the foot of the hill beside Funabiki Shrine, which its signboard dates to 1087, and the 900-year age given for the tree is that founding date carried across on the assumption the two began together. It is a large assumption and it is the only basis there is. What is measured is the size, and it is not in dispute: 13.2 metres round and 35 metres tall in the Environment Agency's survey, which puts it among the largest camphors in the country. The shrine enshrines Emperor Chuai, Empress Jingu and their son Ojin, the Hachiman deities, and the tree is known locally as the Hachiman camphor because of it. It has been a National Natural Monument since June 1951. Epiphytes have thickened on it noticeably over the last few decades.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/kiyotake-kusu.htm",
+        "https://www.pref.miyazaki.lg.jp/kankyoshinrin/shigoto/ringyo/miyazaki100sen.html"
+      ],
+      "access": "Free, shrine precinct open daily",
+      "transport": "JR Nippo line to Kiyotake, then about 1.6 km northwest on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "The 900-year age is the on-site signboard's and is inferred from Funabiki Shrine's stated 1087 founding, not measured; age_min is set well below it. Girth and height from the Environment Agency's Kyushu and Okinawa giant-tree volume. The air-raid shelter account is attributed to Kodansha's Natural Monuments of Japan via the Hitozato Kyoboku database. National Natural Monument, designated 1951-06-09."
+    },
+    {
+      "id": "myz_003",
+      "name": "The Camphors of Uryuno Hachiman",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 960,
+      "height_m": 25,
+      "location": {
+        "address": "Hachiman Shrine, Hiramatsu, Ose-cho, Miyazaki 880-0121",
+        "latitude": 31.979556,
+        "longitude": 131.390194,
+        "neighbourhood": "Ose-cho"
+      },
+      "story": "Japan designated sixteen trees here at once. The camphors in the precinct of the Hachiman shrine at Uryuno were made a National Natural Monument as a group in June 1951, not one specimen but the whole stand, and three of the sixteen are outstanding. The largest is set at an angle behind the main hall, 9.6 metres round and 25 metres tall, and it is the one fewest people reach, because the gate on that side is usually shut and in high summer the grass comes up. The second stands to the right of the second torii and is worth the visit for its roots alone, a spreading platform of them you look up at from below. The third is on the left at the entrance and throws its heavy limbs out in every direction without much discipline. Nobody has published an age for any of them. The shrine's signboard says the Hachiman deity was invited here in 737, which would make the precinct nearly thirteen centuries old, and the plain reading is that the shrine is older than its trees rather than the reverse. What is unusual, for a national monument, is that you can put your hand on them. Nothing is fenced.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/uryuuno-hachiman.htm",
+        "https://miyazaki-archive.jp/d-museum/mch/bunka/ichiran02_02_06.html"
+      ],
+      "access": "Free, shrine precinct open daily and the trees are not fenced",
+      "transport": "About 10 km north of central Miyazaki, bus or car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "One entry for the group the state designated as one: sixteen camphors in the precinct, National Natural Monument since 1951-06-09. Girth and height are the largest individual's, from the Environment Agency's survey; the coordinate is that same tree. No age is published for any of the sixteen and the page says so rather than deriving one from the shrine's 737 founding date, which would be a bridge from one fact to another neither source makes."
+    },
+    {
+      "id": "myz_004",
+      "name": "The Akou of Uchiumi",
+      "species": "Sea Fig (Ficus superba)",
+      "age_estimate": "200 to 300 years",
+      "age_min": 200,
+      "age_max": 300,
+      "girth_cm": 690,
+      "height_m": 15,
+      "location": {
+        "address": "Nojima Shrine, Uchiumi, Miyazaki 889-2162",
+        "latitude": 31.738667,
+        "longitude": 131.468278,
+        "neighbourhood": "Uchiumi"
+      },
+      "story": "Only one tree in this precinct is the national monument, and almost everybody gets it wrong. Nojima Shrine sits on the Nichinan coast road with akou figs all through it, roots poured over the walls and the rock, and the effect on arriving is unlike any other shrine grove in Japan, which is exactly why visitors assume the whole stand is protected. It is not. The designation, made in October 1941, covers the single tree standing to the right of the main hall: 6.9 metres round, 15 metres tall, put at 200 to 300 years by the Environment Agency. The explanatory diagram posted in the precinct says so correctly. Akou is a subtropical strangler fig at the northern edge of its range here, and Japan has only five national designations of the species, of which three protect a site rather than a tree; this is one of the two individuals. It is worth saying that the other figs around it are not filler. Standing in that precinct without them would be a much smaller experience, and the designated tree looks the wildest of a wild group rather than a specimen apart from them.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/uchiumi-akou.htm",
+        "https://miyazaki-archive.jp/d-museum/mch/bunka/ichiran02_02_06.html"
+      ],
+      "access": "Free, shrine precinct open daily, on the coast road",
+      "transport": "JR Nichinan line to Ko-Uchiumi, then about 200 m east",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "National Natural Monument, designated 1941-10-03, covering one individual only. Girth, height and the 200 to 300 year range are the Environment Agency's Kyushu and Okinawa giant-tree volume. The count of five national akou designations is as of 2012 in the source and may have changed."
+    },
+    {
+      "id": "myz_005",
+      "name": "The Bald Cypress of Miyazaki Shrine",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "about 130 years, carried forward from a 1992 signboard",
+      "age_min": 110,
+      "age_max": 150,
+      "girth_cm": 500,
+      "height_m": 24,
+      "location": {
+        "address": "Miyazaki Shrine, Jingu 2-chome, Miyazaki 880-0053",
+        "latitude": 31.935361,
+        "longitude": 131.423972,
+        "neighbourhood": "Jingu"
+      },
+      "story": "This is the largest bald cypress in Japan, and it is a stranger here. Taxodium distichum grows wild in the swamps of the American southeast and did not exist in this country until somebody carried it in, so every one in Japan was planted by a person, and the Environment Ministry's giant-tree database holds 27 of them under two different Japanese names. This one is number 1. It stands 24 metres tall with a trunk 5 metres round, near the entrance to the main approach at Miyazaki Shrine, on the left as you go in. It is a conifer that drops its needles, which is unusual enough in Japan to confuse people, and in its native swamps it grows knees, woody knobs that come up out of the ground around the trunk. The age is soft and the page will not pretend otherwise: a signboard from the prefecture's hundred-giant-trees project put it at 100 when it went up in 1992, which carried forward makes it about 130 now. The shrine it stands in is dedicated to Emperor Jimmu, who by the chronicles set out from this province to found the state, and it is a large quiet wood in the middle of a city.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/miyazakijingu-numasugi.htm",
+        "https://www.pref.miyazaki.lg.jp/kankyoshinrin/shigoto/ringyo/miyazaki100sen.html"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "JR Miyazaki Jingu station, about 5 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Largest of its species in the Environment Ministry's giant-tree database as of the source's 2012 reading, under both the Rakusho and Numasugi names. Girth and height from the Ministry's 2000 follow-up survey. The age is a 1992 signboard figure of 100 years carried forward, which is why the band is wide and the story states the basis."
+    },
+    {
+      "id": "myz_006",
+      "name": "The Camphor of Ikime Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 870,
+      "height_m": 24,
+      "location": {
+        "address": "Ikime Shrine, Ikime, Miyazaki 880-0121",
+        "latitude": 31.918333,
+        "longitude": 131.376944,
+        "neighbourhood": "Ikime"
+      },
+      "story": "In 1870 the government ordered this tree cut down and the parishioners bought it back with rice. The new Meiji administration's Miyazaki office sent down an order that the camphor at Ikime Shrine was to be felled, presumably for timber, and the people who used the shrine petitioned against it on the grounds that they were afraid of what the god would make of it. The felling was waived in exchange for three koku and eight to of brown rice, something over five hundred kilograms. Then they cut the whole episode into a stone and set it under the tree, where it still stands, which suggests they wanted the transaction remembered rather than the tree simply saved. It is 8.7 metres round and 24 metres tall, to the right of the hall as you face it, with a ginkgo in front and an ogatama on the left; the camphor and the ogatama are both Miyazaki City Natural Monuments, designated in March 1973. Ikime was once written with characters meaning living eye, and the shrine has long been petitioned for eye complaints. No age has been published for the tree. If you know one, tell us.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/ikimejinja-kusu.htm",
+        "https://www.city.miyazaki.miyazaki.jp/"
+      ],
+      "access": "Free, shrine precinct open daily",
+      "transport": "About 8 km west of central Miyazaki, bus or car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Miyazaki City Natural Monument, designated 1973-03-12 per the city's own list; the marker post at the site gives 12 August instead, and the source notes the discrepancy. Girth and height are the city's figures. No age published anywhere, and the page asks rather than estimating. The 1870 felling order and the rice payment are recorded on the stone monument under the tree, as related by the Hitozato Kyoboku database."
+    },
+    {
+      "id": "myz_007",
+      "name": "The Camphor of Sumiyoshi Hachiman",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 820,
+      "height_m": 20,
+      "location": {
+        "address": "Hachiman Shrine, Shimanouchi, Miyazaki 880-0121",
+        "latitude": 31.989,
+        "longitude": 131.451056,
+        "neighbourhood": "Shimanouchi"
+      },
+      "story": "The address says Shimanouchi and everything else here says Sumiyoshi. The district was called that once, and the name survives in the station, the schools, the post office and the bank, so the shrine is universally the Sumiyoshi Hachiman even though the ward it sits in has been renamed around it. Two big camphors stand in the precinct. The one near the torii is the smaller, 5.8 metres round in the Environment Ministry's database. The other, 8.2 metres, is to the left of the worship hall on a low mound, and it divides into two trunks at about 1.8 metres, which means the girth figure flatters it slightly; the mass below the fork is the impressive part rather than the number. Branches on the hall side have been taken off, so the crown is longer and narrower than it wants to be, and the rest of the heavy limbs are still there, which is more than most camphors this size in a working precinct keep. Nobody has recorded an age for it. The tree looks in good health, which is worth saying about an eight-metre camphor standing between a middle school and a nursery.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/shimanouchi-hachiman.htm",
+        "https://www.pref.miyazaki.lg.jp/kankyoshinrin/shigoto/ringyo/miyazaki100sen.html"
+      ],
+      "access": "Free, shrine precinct open daily",
+      "transport": "About 15 minutes on foot from JR Sumiyoshi station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth and height from the Environment Ministry's 2000 giant-tree follow-up survey. No age published and no designation. The trunk forks at about 1.8 m, above the 1.3 m measuring height, so the 8.2 m is a true trunk figure rather than a fork artefact, but the story states the shape honestly."
+    },
+    {
+      "id": "myz_008",
+      "name": "The Camphor of Eda Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "100 to 200 years",
+      "age_min": 100,
+      "age_max": 200,
+      "girth_cm": 530,
+      "height_m": 15,
+      "location": {
+        "address": "Eda Shrine, Awakigahara-cho, Miyazaki 880-0122",
+        "latitude": 31.959722,
+        "longitude": 131.464444,
+        "neighbourhood": "Awakigahara"
+      },
+      "story": "By the chronicles, three of the most important gods in Japan were born a few hundred metres from this tree. Eda Shrine enshrines Izanagi and Izanami, and the ground it stands on is one of the places identified as Awakigahara, where Izanagi washed himself clean after fleeing the land of the dead. The story goes that when he washed his left eye Amaterasu came out of it, from his right eye Tsukuyomi, and from his nose Susanoo. There is still a purification pond in the woods behind the hall. The camphor is on the main approach, on the right as you face the worship hall, 5.3 metres round and 15 metres tall, and the Environment Agency puts it at 100 to 200 years, which for a camphor is young. Soil has washed away from its base and left the top of the roots exposed, and one of them carries a rounded knob that has been rubbed smooth and shiny by hands over the years. There is no signboard explaining why people touch it. Trees are petitioned for breast milk in Japan and the shrine's old local name means honoured mother, so a guess is available, and it stays a guess.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/edajinja-kusu.htm",
+        "https://www.pref.miyazaki.lg.jp/kankyoshinrin/shigoto/ringyo/miyazaki100sen.html"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "On prefectural route 11 west of Seagaia, bus from central Miyazaki",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth, height and the 100 to 200 year range from the Environment Agency's Kyushu and Okinawa giant-tree volume. No designation. The rubbed root knob is described in the source, which explicitly says there is no signboard and that the breast-milk-prayer explanation is the author's own guess; the story keeps it as a guess."
+    }
+  ]
+}
