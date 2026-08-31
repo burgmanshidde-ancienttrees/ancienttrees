@@ -13,6 +13,105 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-31
+
+Reviewed the last 24 hours (134 commits, back through `323b35f4`): heavy
+night-run assembly-line work (Riga opens, Girona/Madeira/Cagliari/Barcelona/
+Singapore/Krakow/Nuremberg verify+write passes, a US register-scouting sweep
+that found no importable register for five cities), the day's product ruling
+("a place may publish below four trees when one tree is itself the
+destination", `cbb2662f`) applied to Charleston, Savannah, Philadelphia,
+Sant'Alfio and Maui, an account-page rebuild (`bac7be40`, name field + settings
+shape), an app permission/location rework (LocationPrimer deleted, delete-account
+row restored), and iOS CI now walking every installed runtime (`3d5c5e84`). Ran
+`python3 scripts/qa.py` (3912 pages, clean), `python3 scripts/superlatives.py`
+(525 claims, no collisions) and `python3 scripts/preflight.py` (195 cities, 0
+problems besides already-tracked paid-entry NOTEs, Oahu improved from 86% to
+75% today and is not re-litigated here). Confirmed yesterday's i18n BLOCKER
+(stale tree counts and a wrong-oldest-tree claim on the-hague/malaga/kyoto
+translation overlays) is fixed in the current build: all three now show the
+corrected counts (29/9/17) and the-hague's Dutch FAQ now carries the same
+appointment-only caveat as its English twin.
+
+**BLOCKER — the map's "Walking routes, in the app" pill is false on every one
+of the 93 city pages that has its own walks page, because the same page links
+to that walks page two paragraphs later.** `site/src/pages/[city].astro`
+(rendered e.g. in `site/dist/kagoshima.html`): the map toolbar carries a pill
+reading "Walking routes" / "in the app", `data-ev="walks-app"`, exactly per
+PRODUCT_IA.md's 2026-08-18 ruling ("the web city page no longer offers
+walks... one small pill on the map... linking to /app"). Lower on the SAME
+page, the panel footer says "Walk them. The trees of Kagoshima fall into
+routes you can do on foot in an afternoon:" and links to `/kagoshima/walks`,
+which is a fully built page (Contract K, SEO_GEO_BLUEPRINT.md v1.14,
+2026-08-24) naming two real named walks with tree counts, distances and
+minutes on foot. Checked programmatically: of 195 published places, 93 have
+their own `/[city]/walks` page, and all 93 render the app-only pill on the
+same page that links to it. This is not a hypothetical reader confusion, it
+is the literal sequence a visitor meets: told routes need the app, then
+handed a page of routes on the web. TONE_OF_VOICE.md: "Never claim more than
+is true." This is the same self-contradicting-page failure class the
+2026-07-29 QA walk was written to catch, on a surface no build check reads
+(`qa.py` passed clean; nothing checks pill copy against the presence of the
+page it would contradict). Root cause for a session to judge, not decided
+here: Contract K (2026-08-24) reintroduced walks on the web six days after
+the 2026-08-18 ruling took them off it, and nobody reconciled the pill's
+wording with the page it now sits beside.
+
+**WARN — the newest page type (a place publishing below four trees because
+one tree is the destination, ruled today in `cbb2662f`) breaks Contract A's
+"Trees nearby" block on both trees that use it.** `site/dist/santalfio/
+hundred-horse-chestnut.html` and `site/dist/philadelphia/bartrams-ginkgo.html`
+both render `<h2>Trees nearby</h2><div class="near-cards"></div>`, an empty
+div under a heading that promises something, because each place has exactly
+one tree and nothing else to put there. Charleston, Savannah and Maui (2, 2
+and 4 trees respectively, published from the same ruling today) all populate
+this block correctly, so the break is specific to the single-tree case the
+ruling introduced. PRINCIPLES.md #3: "Empty states teach... every zero state
+is an instruction, not a dead end"; this one teaches nothing, it is a gap.
+The page recovers below it with a CTA to the city and question pages, so
+nothing is broken end to end, but the heading-over-nothing is visible on the
+built page and will recur on every future single-tree place until the
+template accounts for the case (hide the heading, or drop straight to the
+CTA line). The same CTA line also reads "all 1 remarkable ancient trees in
+Philadelphia", a singular/plural templating slip worth a look in the same
+pass.
+
+**NOTE, Monday corpus check — PRODUCT_IA.md's walks section is stale against
+a later blueprint decision, and is the direct cause of the BLOCKER above.**
+The "Walks are an APP feature" section (dated 2026-08-18) states as settled
+fact that "the web city page no longer offers walks" and that walks live
+only behind the app pill. SEO_GEO_BLUEPRINT.md's Contract K (v1.14,
+2026-08-24, six days later) added a full `/[city]/walks` page back onto the
+web, with its own publish gate and content rules, and PRODUCT_IA.md was never
+updated to note the supersession or reconcile the pill copy with it. Suggest:
+add a line to PRODUCT_IA.md's walks section pointing at Contract K the way
+the document already does for its other superseded rulings, and settle
+whether the pill should say "more, in the app" or similar once the wording
+is decided.
+
+**WARN, APP — the map's expanded-sheet frame shows a floating "Map" pill
+rendered on top of a tree card in the nearby-trees carousel, not above it.**
+`map-full.png` (iPhone SE): "The Rijksmuseum Wingnut" card is followed by a
+second card whose photo area is replaced by a white cloud-shaped glyph and a
+dark "Map" pill sitting centred over it, with only a sliver of the tree's own
+name ("...ch Elm") visible beneath the tab bar at the very bottom edge. Read
+cold, this is a control with no stated purpose sitting inside a scrolling
+list of tree cards rather than fixed over the map itself (the AllTrails-style
+floating list/map toggle PRODUCT_IA.md describes), and it obscures the one
+thing the card exists to show, the tree. Not a mechanical CLIPPED/SMALL/DRIFT
+fault appfit.py would catch, since nothing is off-screen or misspaced by a
+few points; it is a stacking/placement question for a session with Xcode
+to look at directly, per CLAUDE.md's rule that runs do no visual-taste work
+on the app.
+
+Nothing else found at BLOCKER level in the web or app diffs. The account
+page rebuild (`bac7be40`) reads consistent with the both-surfaces rule and
+PRINCIPLES.md #10 (no personal data beyond what is already stored, no name
+shown anywhere but the account's own settings row); its own commit message
+flags it as not visually verified, and the built `site/dist/account.html`
+does contain all the ids its script references, so nothing is structurally
+missing.
+
 ## 2026-08-30
 
 Reviewed the last 24 hours (back through `95369942`, ~137 commits): the
