@@ -9,6 +9,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-31 (continuation of a window whose first attempt shipped 23 trees and stopped early) - Vilnius +2, Cagliari +1, Regensburg opening; a reader submission answered
+
+Followed the harness's own order. **Claims first:** the earlier attempt in this window had left Vilnius claimed but unstarted (empty `vilnius-verified.json`); finished it with a verify pass rather than releasing it. Also picked up Cagliari, which `scout_next.py --target` named as having real unmined register supply. **Vilnius 11 to 13:** the Lazdynai Linden (a small-leaved lime standing wild in the Bukciai forest inside the Lenin-Prize-winning Lazdynai housing estate) and the Dvarcionys Oak (genus only). **Cagliari 9 to 10:** the Common Lime of Corongiu, at a historic 1867 dam site above Sinnai, flagged because the pass could not confirm whether the tree sits on the open public trail or past a fenced section of the waterworks. Both write passes done directly in session (2 and 1 tree, too small for a write-stories dispatch).
+
+**Reader submission 56 answered** (Baarn, GPS-only, no name/species): the coordinate sits ~200m from both the castle and an already-documented, already-dead-ended oak-avenue lead, too far from either to say which was meant. Recorded as a new data point rather than re-running exhausted web research; replied on the row, though the mail could not actually go out, the submission's `user_id` has no matching account in Supabase auth.
+
+**Picked up two build breaks from concurrent sessions along the way.** A hard-rule-9 species collision (my new genus-only Vilnius oak collided with Austin's "Live Oak (Quercus sp.)" on the exact Latin placeholder; used the existing "Oak (Quercus, species not established)" convention instead, and unified "Small-leaved Linden" to the sitewide "Small-leaved Lime"). And Tarragona's oldest-tree page, opened by a concurrent session, whose `question_answer` never named the tree it pointed at; a second concurrent session fixed it more completely while I was mid-rebase, so I took their version over mine.
+
+**Then dispatched a verify pass to open Regensburg from zero**, the best remaining `openable.py` candidate not already claimed by the other concurrent session (Sapporo, Matera): Bavaria's Naturdenkmal register mixes trees with rocks, caves and ruins, and of 25 candidates within 20km only about 6 are actually trees in range, closest 1.4km. Result not in yet at the time of this entry.
+
+Built, QA'd (clean bar the sandbox's shallow-clone sitemap-lastmod NOTE), preflighted (0 problems) and superlatives-checked (no collisions) after each merge.
+
 ## 2026-08-31 (session) - leads.py --ready was mostly declined leads in disguise; Perugia +2, Vienna +2
 
 Continuing a window a previous attempt stopped early with 77 minutes still on the clock. Followed the harness's own order: no claims standing (Sapporo/Segovia/Taormina are held by a separate concurrent session, still active, left alone), then `leads.py --ready` before anything else.
