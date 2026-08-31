@@ -1,0 +1,21 @@
+{
+  "city": "Tarragona", "country": "Spain", "city_slug": "tarragona",
+  "note": "From the 2026-08-31 pass that opened Tarragona off Catalonia's monumental-tree register. Everything here is a live, declared monumental tree that was NOT published because it stands on a private mas. Kept so the hunt is not repeated, and so they can be published the day access is established.",
+  "leads": [
+    {"name": "Alzina del Mas de Borbo", "species": "Holm Oak (Quercus ilex subsp. ilex)", "lat": 41.02, "lng": 1.05, "status": "lead",
+     "why": "11.0 m tall, trunk 6.45 m round, crown 24.5 m, condition normal, declared 1988. The thickest tree within reach of Tarragona and by some way the best one missing from the page. The register's location field is simply Mas de Borbo at L'Aleixar, a private farm, with no track or path named, so hard rule 10 blocks it. A line from the owner or a signposted route would change that. Coordinates here are rounded and must be re-read from the register before use."},
+    {"name": "Cedre Borni de Casa Malla", "species": "Cedar (Cedrus sp.)", "lat": null, "lng": null, "status": "lead",
+     "why": "21.0 m tall, trunk 3.93 m, crown 22.6 m, condition normal, declaration pending. At Casa Malla in Vinyols i els Arcs, a private house."},
+    {"name": "Plàtans del Mas de Cavaller", "species": "London Plane (Platanus x acerifolia)", "lat": null, "lng": null, "status": "lead",
+     "why": "Two planes at a private farm in Constanti, declared 2005, only 9 km from Tarragona. The register publishes no dimensions for them."},
+    {"name": "Pi Gros de Mestres", "species": "Stone Pine (Pinus pinea)", "lat": 41.20678, "lng": 1.21266, "status": "lead",
+     "why": "Declared 1997, at Mas de Mestres in Vilallonga del Camp, 10 km out. Private farm and the register publishes no dimensions."},
+    {"name": "Alzina del Mas de la Barba", "species": "Holm Oak (Quercus ilex)", "lat": null, "lng": null, "status": "lead",
+     "why": "12.0 m tall, trunk 3.27 m, crown 21.8 m, declared 1997, at Siurana in Cornudella de Montsant, 29 km. Private farm."}
+  ],
+  "blocked": [
+    {"name": "Pi del Baro, Vilallonga del Camp", "why": "The register records it as dead in 2008 with the trunk still standing. CLAUDE.md: a dead tree never ships as an entry."},
+    {"name": "Pi del Boter, Riudoms", "why": "Register records it dead in 2001 and the trunk gone."},
+    {"name": "Pi de les Planes, L'Aleixar", "why": "Register records it dead with the trunk still standing."}
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "city": "Girona",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "None of these trees is in Girona. The city's own great planting is the Devesa, an avenue of some two thousand five hundred plane trees that are among the tallest in Catalonia, and because they are a grove rather than individuals none of them is on the regional register. What is on it stands in the hills within half an hour's drive: a sessile oak of 38 metres, a chestnut nine metres round behind a hermitage, and two Mediterranean shrubs, a mastic and a strawberry tree, that have been left alone so long they have turned into trees.",
+  "meta_description": "The monumental trees around Girona: a 38 metre oak, a chestnut nine metres round behind a hermitage, and a mastic shrub that grew into a tree.",
+  "question_answer": "Nobody publishes ages for Catalonia's monumental trees, so the oldest around Girona cannot be named. The biggest by trunk is the sweet chestnut at the Pla de Sant Nicolau, 9.70 metres round, and the tallest is the sessile oak at Ca n'Iglesies in Osor, at 38.5 metres.",
+  "question_meta": "Catalonia does not record tree ages, so Girona's oldest is unknown. What the register does measure, and 7 monumental trees within half an hour.",
+  "question_context": "Catalonia's register measures everything except age. Each declared monumental tree gets a species, a condition, a total height, a trunk perimeter at 1.3 metres, a mean crown diameter, a location to five decimal places and an official record page, and there is no age column anywhere in it. So the ranking has to be by size, and around Girona the two ends of it are clear. The sweet chestnut behind the hermitage at the Pla de Sant Nicolau has a trunk 9.70 metres round, more than twice anything else here, and the register marks its condition as declining, which is worth knowing before travelling. The sessile oak at Ca n'Iglesies in Osor is 38.5 metres tall, which is remarkable for the species this far south, and it stands inside a designated natural area in the Guilleries. Both are protected under the 1987 law that makes felling a declared tree illegal. What the register does record and most do not is whether each tree is alive: a good number of entries near Girona are marked dead and kept on the list, and none of those is on this page. Getting to Osor: about 21 km southwest of Girona by mountain road.",
+  "oldest_tree_id": "gir_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Girona?",
+      "a": "Unknown. Catalonia's register of monumental trees records species, condition and measurements and carries no age column at all, so the honest ranking here is by size: the chestnut at the Pla de Sant Nicolau is the thickest at 9.70 metres round, and the oak at Ca n'Iglesies is the tallest at 38.5 metres."
+    },
+    {
+      "q": "Are Girona's own Devesa plane trees on this page?",
+      "a": "No. The Devesa is roughly 2,500 planes planted as an avenue and among the tallest in Catalonia, and the regional register declares individual trees rather than groves, so none of them is listed. They are worth the walk regardless, and they are in the middle of the city."
+    },
+    {
+      "q": "What does monumental tree mean in Catalonia?",
+      "a": "A legal protection in force since 1987: a declared tree cannot be felled or uprooted, wholly or in part. There are 299 declared across the region, with 24 added in 2025 after nearly a decade with no new declarations."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all seven. Four stand inside designated natural areas in the Guilleries and Rocacorba hills, one is beside a road junction, one beside a track, and one behind a hermitage. None charges anything."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Two of them, yes: the oak and the pine at Ca n'Iglesies in Osor are about 480 metres apart in the same valley. The rest are separate stops between 16 and 25 kilometres from Girona in four different directions."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gir_001",
+      "name": "The Great Oak of Ca n'Iglesies",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 475,
+      "height_m": 38.5,
+      "location": {
+        "address": "Santa Creu d'Horta, Osor 17161, Girona",
+        "latitude": 41.91387,
+        "longitude": 2.58425,
+        "neighbourhood": "Osor"
+      },
+      "story": "Thirty-eight and a half metres is an extraordinary height for a sessile oak anywhere, and this one is doing it in Catalonia. Quercus petraea is a tree of cool northern hillsides that reaches its southern limit in these mountains, and it gets there by growing in the wet shaded valleys of the Guilleries where the Mediterranean stops and something closer to Atlantic forest begins. This one carries a crown 26.5 metres across on a trunk 4.75 metres round, in the valley at Santa Creu d'Horta above Osor. Catalonia declared it a monumental tree in 1990 and it also sits inside the Guilleries designated natural area, so it has two layers of protection on it. Some 480 metres away stands a Spanish black pine of 29 metres that was declared on the same day, which makes this the only stop around Girona where two protected trees are within a short walk of each other. The register lists both as being in normal condition. Neither has a published age, because Catalonia does not record them.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/selva-17/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, in the Guilleries designated natural area",
+      "transport": "Osor, about 21 km southwest of Girona by mountain road, then on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 1990, also inside the EIN les Guilleries. Height 38.5 m, trunk perimeter at 1.3 m of 4.75 m, mean crown 26.5 m, condition normal, all from the register. No age published. A Commons photograph exists under the tree's own name and has not yet been checked."
+    },
+    {
+      "id": "gir_002",
+      "name": "The Chestnut of the Pla de Sant Nicolau",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 970,
+      "height_m": 18,
+      "location": {
+        "address": "Pla de Sant Nicolau, behind the hermitage, Sant Miquel de Campmajor 17853, Girona",
+        "latitude": 42.08706,
+        "longitude": 2.68494,
+        "neighbourhood": "Sant Miquel de Campmajor"
+      },
+      "story": "Nine metres and seventy centimetres round, standing behind a hermitage on a plateau in the Rocacorba hills. This is the thickest tree anywhere near Girona by a wide margin, more than twice the trunk of anything else on this page, on a tree only 18 metres tall with a crown 16 metres across; sweet chestnuts do that, going out rather than up and finally hollowing while the shell keeps growing. Catalonia declared it a monumental tree in 1991 and it also lies inside the Muntanyes de Rocacorba designated natural area. The register records its condition as declining, which is the one thing on this page worth knowing before you drive out: a chestnut of that girth in decline may look magnificent or may look like a wreck depending on the year, and the entry was made some time ago. Sweet chestnut is not native to Catalonia in the strict sense. The Romans spread it across the western Mediterranean for the nuts, which fed whole mountain districts through winters when the grain ran out, and the old orchards left behind are where almost every giant chestnut in Europe now stands.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October and November, when the nuts drop and the leaves go",
+        "kind": "fruit"
+      },
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/pla-de-lestany-4/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, behind the hermitage on the Pla de Sant Nicolau, inside a designated natural area",
+      "transport": "Sant Miquel de Campmajor, about 16 km northwest of Girona, then on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 1991, also inside the EIN Muntanyes de Rocacorba. Height 18 m, trunk perimeter 9.70 m, mean crown 16.1 m from the register, which records the condition as en decandiment, in decline; the story states that plainly. No age published. A Commons photograph exists under the tree's own name and has not been checked."
+    },
+    {
+      "id": "gir_003",
+      "name": "The Ash of L'Aulet",
+      "species": "Narrow-Leaved Ash (Fraxinus angustifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 590,
+      "height_m": 21,
+      "location": {
+        "address": "L'Aulet, Vidreres 17411, Girona",
+        "latitude": 41.79829,
+        "longitude": 2.82396,
+        "neighbourhood": "Vidreres"
+      },
+      "story": "A trunk 5.90 metres round is a great deal of ash. Fraxinus angustifolia is the ash of southern Europe, a riverside tree that follows watercourses through country too dry for the northern species, and it was pollarded for centuries across Catalonia because the leafy branches make good fodder and the wood is springy enough for tool handles. Cutting a tree back like that repeatedly is what produces this shape: a short massive trunk carrying a crown that is all regrowth, in this case 23 metres across on a tree 21 metres tall. Catalonia declared it a monumental tree in 2000, one of the later additions. It stands at L'Aulet in the municipality of Vidreres, at the foot of the Selva plain where the water sits close to the surface, which is the only ground an ash of this size could have got to. The register lists it as being in normal condition and gives it no age, as it gives none to any of the 299 trees it protects. If you know when it was last pollarded, that would date it better than anything else could.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/selva-17/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, in open country at L'Aulet",
+      "transport": "Vidreres, about 20 km south of Girona",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 2000. Height 21 m, trunk perimeter 5.90 m, mean crown 23.0 m, condition normal, from the register. No age published. The pollarding reading is general practice for the species in Catalonia and is not a documented history of this tree; the story asks the reader rather than asserting it."
+    },
+    {
+      "id": "gir_004",
+      "name": "The Great Pine of Romanya",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 381,
+      "height_m": 30.5,
+      "location": {
+        "address": "330 metres south of Romanya de la Selva, Santa Cristina d'Aro 17246, Girona",
+        "latitude": 41.85018,
+        "longitude": 2.98288,
+        "neighbourhood": "Romanya de la Selva"
+      },
+      "story": "Thirty and a half metres is very tall for a stone pine, which usually spends its effort going sideways into the flat-topped umbrella everybody recognises. This one went up instead, on a trunk 3.81 metres round with a crown only 18.8 metres across, which is narrow for the height. It stands 330 metres south of Romanya de la Selva, a hamlet on a ridge above the Costa Brava that is best known for what is next to it: the Cova d'en Daina, a megalithic passage grave with a stone circle around it, built somewhere around 3000 BC and one of the best preserved in Catalonia. Whatever this pine's age, the ground it stands on has been a place people go to for five thousand years. Catalonia declared it a monumental tree in 1991 under two names, the Pi Gros d'en Cama and the Pi de Romanya, which is normal for these trees: the register keeps the farm name and the village name side by side because both are in local use. Its condition is recorded as normal and no age is published.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/baix-emporda-4/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, in open country south of the hamlet",
+      "transport": "Romanya de la Selva, about 20 km southeast of Girona",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 1991. Height 30.5 m, trunk perimeter 3.81 m, mean crown 18.8 m, condition normal, from the register, which also gives the location as 330 m south of Romanya de la Selva. No age published. The Cova d'en Daina is a separate monument beside the hamlet and the story does not connect the two beyond geography."
+    },
+    {
+      "id": "gir_005",
+      "name": "The Mastic of Torrent",
+      "species": "Mastic Tree (Pistacia lentiscus)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 190,
+      "height_m": 5.5,
+      "location": {
+        "address": "Near the C-255 and GI-652 junction, Torrent 17123, Girona",
+        "latitude": 41.94586,
+        "longitude": 3.12345,
+        "neighbourhood": "Torrent"
+      },
+      "story": "This is a shrub, and Catalonia has protected it by law. Mastic grows all over the dry Mediterranean as waist-high scrub, the stuff you push through on a coastal path, and it is normally counted in bushes rather than trunks. This one is 5.5 metres tall with a trunk 1.90 metres round and a crown 8 metres across, which for the species is off the scale, and it happens beside the junction of the C-255 and the GI-652 outside Torrent, where anybody can stop and look at it. Catalonia declared it a monumental tree in 1991. Mastic is the plant that gives mastic gum, the resin tapped on Chios and chewed for three thousand years, which is where the English word masticate comes from; the Catalan trade never mattered much, so nothing was ever taken from this one. What it took to get here is simply time and nobody clearing the ground. The register records its condition as normal and, as always, no age. A mastic this size is the best argument on this site for the idea that any species becomes remarkable if left alone long enough.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/baix-emporda-4/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, beside a public road junction",
+      "transport": "Torrent, about 25 km east of Girona toward Palafrugell",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 1991. Height 5.5 m, trunk perimeter 1.90 m, mean crown 8.0 m, condition normal, from the register, which also places it near the C-255 and GI-652 junction. No age published. A Commons photograph exists under the tree's own name and has not been checked."
+    },
+    {
+      "id": "gir_006",
+      "name": "The Strawberry Tree of Can Genoer",
+      "species": "Strawberry Tree (Arbutus unedo)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 238,
+      "height_m": 8.5,
+      "location": {
+        "address": "Near Can Genoer, on the right of the track, Cruilles, Monells i Sant Sadurni de l'Heura 17116, Girona",
+        "latitude": 41.899,
+        "longitude": 2.98791,
+        "neighbourhood": "Cruilles"
+      },
+      "story": "The same thing has happened here as at Torrent, to a different shrub. Arbutus unedo is a coastal Mediterranean plant that most people meet as scrub two or three metres high, and this one is 8.5 metres tall on a trunk 2.38 metres round, which is about as large as the species is known to get. It stands beside the track near Can Genoer, in the hill country of the Baix Emporda, and Catalonia declared it a monumental tree in 2000. The strawberry tree does something almost no other European tree does: it carries flowers and ripe fruit at the same time, in late autumn, so from October to December the crown has white bells hanging on it alongside round red fruit from the previous year's flowering. The fruit is edible and not very good, which is what the species name says outright, since unedo is usually read as a contraction of unum edo, I eat one. The bark is the other thing to look at, a smooth cinnamon red that peels in strips. The register lists its condition as normal and gives no age.",
+      "best_time": {
+        "months": [
+          11,
+          12
+        ],
+        "label": "November and December, when it carries white flowers and last year's red fruit together",
+        "kind": "fruit"
+      },
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/baix-emporda-4/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, on the right of a public track near Can Genoer",
+      "transport": "Cruilles, about 16 km east of Girona",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 2000. Height 8.5 m, trunk perimeter 2.38 m, mean crown 8.2 m, condition normal, from the register, which places it beside the track near Can Genoer. No age published and no Commons photograph listed for this entry."
+    },
+    {
+      "id": "gir_007",
+      "name": "The Great Pine of L'Espinau",
+      "species": "Spanish Black Pine (Pinus nigra subsp. salzmannii)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 316,
+      "height_m": 29,
+      "location": {
+        "address": "L'Espinau, Osor 17161, Girona",
+        "latitude": 41.909536,
+        "longitude": 2.584271,
+        "neighbourhood": "Osor"
+      },
+      "story": "Some 480 metres from the great oak stands a pine that was protected on the same day. The two trees at Ca n'Iglesies in Osor were both declared monumental in 1990 and both sit inside the Guilleries designated natural area, and together they are the only pair of protected trees within walking distance of each other anywhere near Girona. This one is 29 metres tall with a trunk 3.16 metres round and a crown 16.5 metres across. It is a Spanish black pine, the salzmannii subspecies, which is the mountain pine of inland Iberia and grows on limestone and poor ground where almost nothing else will make timber; its wood was used for ship masts and beams because it grows straight and its resin content makes it slow to rot. Seeing one at 29 metres in the wet valleys of the Guilleries is a little unexpected, since the subspecies is more at home on dry limestone further west. The register lists it as being in normal condition. No age is published, and the pairing with the oak is the reason to make this the stop it is.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/selva-17/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, in the Guilleries designated natural area, about 480 m from the great oak",
+      "transport": "Osor, about 21 km southwest of Girona by mountain road, then on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 1990, also inside the EIN les Guilleries. Height 29 m, trunk perimeter 3.16 m, mean crown 16.5 m, condition normal, from the register. No age published. The 482 m separation from gir_001 is computed from the two register coordinates. A Commons photograph exists under the tree's own name and has not been checked."
+    }
+  ]
+}
