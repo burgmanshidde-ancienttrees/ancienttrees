@@ -14,6 +14,80 @@ roughly double the real number, and do not compare one across that date.
 because those point at /app and the listener matched the href. Every other
 event on the list is unaffected.
 
+## Weekly analysis 2026-08-31
+
+Sixth weekly analysis, comparing the 10-day Search Console window ending
+2026-08-30 against the one ending 2026-08-23 (both read from the daily
+entries directly, so both are apples-to-apples "last 10 days Google will
+give us" snapshots one week apart), plus the beacon's own 8-day windows for
+the same two boundaries.
+
+**Scorecard**
+
+| Week ending | Impressions | Clicks | CTR | Avg position | Visits (beacon, 8d) | Pageviews (beacon, 8d) | Directions (14d) | App-CTA (14d) | Waitlist total | Submissions total |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-23 | 7,666 | 165 | 2.2% | 16.4 | 530 | 840 | n/a (table format didn't exist yet) | n/a | 10 | 20 |
+| 2026-08-30 | 9,870 (still settling) | 212 (still settling) | 2.1% | 17.9 | 530 | 950 | 24 | 44 | 15 | 33 |
+
+**What moved:**
+1. Impressions rose 7,666 to 9,870 week over week (+29%, and the newest
+   day is still backfilling upward the way 08-22 and 08-24 did before it),
+   clicks rose 165 to 212 (+28%). CTR held essentially flat, 2.2% to 2.1%.
+   Today is GO_TO_MARKET.md's own "review at the end of August 2026"
+   checkpoint, and its stated healthy bar is exactly this: impressions and
+   clicks growing week over week into the tens.
+2. Beacon visits held EXACTLY flat at 530 across both 8-day windows
+   (08-16 to 08-23 and 08-23 to 08-30) while pageviews rose 840 to 950
+   (+13%, pages/visit 1.58 to 1.79). Search impressions climbing 29% did
+   not turn into more visits this window, only into more pages seen per
+   visit that did arrive.
+3. Milan (0%, 199 impressions) and Madrid (0%, 94 impressions) are still
+   stuck at 0% CTR, the third straight weekly analysis naming both. Vienna,
+   flagged alongside them on 08-28, recovered to 2.1% CTR (146 to 142
+   impressions) on its own; nothing in LOG.md shows the title/meta
+   diagnostic that fixed Rome and Malaga was ever actually run against
+   Milan or Madrid.
+4. Porto's 'alameda dos platanos' content gap, flagged in three straight
+   prior windows, is gone from this week's leads list: the 08-26 merge of
+   its two duplicate plane-avenue pages (por_026/por_028) took, just slower
+   than expected.
+5. Reader-submitted trees rose from 0 to 5 this week (waitlist, accounts
+   and saves all held exactly flat at 4/1/6 both weeks); feedback fell 19
+   to 8, but last week's 19 included the d4e6 test-account voting spike
+   already flagged as internal testing, so 8 is closer to the real reader
+   rate.
+
+**Suggestions, ranked:**
+1. **[FOR HIDDE]** GO_TO_MARKET.md's Phase 0 checkpoint is dated today. By
+   its own written bar (impressions and clicks growing week over week into
+   the tens), this week clears it cleanly: +29% impressions, +28% clicks,
+   both up from a smaller base the week before too. This is the second
+   weekly analysis to surface this exact date (the first was 08-28, before
+   the checkpoint had technically arrived); worth a conscious decision
+   today per the document's own reasoning, rather than the date passing
+   unremarked a second time.
+2. **[run]** Milan and Madrid have now sat at 0% CTR through three weekly
+   analyses running, both with real impressions (94-199) at rankable
+   positions (8.5, 16.0). The Rome/Malaga fix (check P2 answer-first
+   wording and the title/meta against the actual query) was suggested for
+   both on 08-28 and neither shows any sign of having been touched since.
+3. **[sessie]** Beacon visits flat at 530 for two consecutive 8-day windows
+   despite impressions up 29% is worth a direct look: either it is
+   dilution from pages that rank but don't convert (consistent with the
+   Milan/Madrid finding above), or something in the beacon pipeline itself
+   has plateaued independent of traffic. Worth knowing which before reading
+   more into either number.
+4. **[run]** Tenerife's city page still converts at 0.9% (228 impressions,
+   biggest query 'drago milenario' at position 11) and its own tree page
+   /el-drago-milenario, flagged 08-28 as newly-ranking-but-0%-CTR, has not
+   moved. It carries the bulk of Tenerife's search volume, so a title/meta
+   look there specifically is worth more than one at the city level.
+
+**Watch next week:** whether Milan and Madrid's CTR responds to an actual
+title/meta pass this time, whether the 530-visit beacon plateau breaks now
+that pageviews have started moving, and what Hidde decides at the
+Phase 0 checkpoint.
+
 ## 2026-08-30 (previous UTC day)
 
 **Today: a waitlist arrived today (15 total); 1 tree submission and 5 feedback reports arrived yesterday (33 total); an account was opened yesterday (5 total).**
