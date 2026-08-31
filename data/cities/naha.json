@@ -1,0 +1,227 @@
+{
+  "city": "Naha",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Almost every old tree on Okinawa died in three months of 1945. The Battle of Okinawa burned Shuri and most of what grew on it, and the prefecture's own note on its most famous grove says so plainly: before the war there were many great akagi around the castle, and now there are a handful. So these trees are not simply old, they are the ones that were not hit. Every one is on the prefectural register of a hundred notable trees, and several are looked after by the neighbourhood association rather than by anybody official.",
+  "meta_description": "Naha's surviving trees: a grove of bishop wood that came through the Battle of Okinawa, and a strangler fig on limestone measuring 19 metres round.",
+  "question_answer": "The oldest tree near Naha is the great akagi of Uchima in Urasoe, which Okinawa's register of notable trees puts at about 400 years. It is 18 metres tall with a trunk 4.25 metres round, it stood over the village well, and it is one of the few large trees in the area that came through the Battle of Okinawa.",
+  "question_meta": "The 400 year old akagi of Uchima is the oldest tree near Naha. What survived 1945 and what did not, and 5 more on the prefectural register.",
+  "question_context": "Okinawa's register answers this better than most, because it publishes an estimated age alongside the height and girth for each of its hundred notable trees. The oldest near Naha is the akagi at Uchima in Urasoe at about 400 years, ahead of the Shuri Kinjo grove at over 200 and the banyan at Takara at 150. But the more useful thing the register records is what happened in 1945. The Battle of Okinawa destroyed Shuri and its castle almost completely, and the prefecture's note on the Shuri Kinjo akagi says that before the war many trees of that size grew around the castle and that nearly all of them burned, leaving only a few. The Uchima entry says the same thing about that tree in one line: it is one of those that survived the ravages of the war. So an old tree in Naha is a survivor first and an old tree second, and the honest reading of the age column here is that it counts the years a tree lived through rather than the years it simply grew. Getting to Uchima: about 8 km north of central Naha in Urasoe.",
+  "oldest_tree_id": "nah_005",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Naha?",
+      "a": "The great akagi of Uchima in Urasoe, at about 400 years by Okinawa's register of notable trees. Inside Naha itself the oldest is the Shuri Kinjo grove, put at over 200 years."
+    },
+    {
+      "q": "What is an akagi?",
+      "a": "Bischofia javanica, called bishop wood in English and akagi in Japanese, a tree of the Ryukyus, tropical Asia, Polynesia and Australia. Its timber was sent to the imperial court as tribute in the Heian period for sword hilts, combs and the legs of zithers, and later used for windbreaks, oil presses and sugar mill carriages."
+    },
+    {
+      "q": "Did any of Naha's old trees survive the war?",
+      "a": "These did, and that is why they are here. The Battle of Okinawa destroyed Shuri almost completely and the prefecture records that nearly all the great akagi around the castle burned. The grove at Shuri Kinjo and the akagi at Uchima are both described in the official record as survivors."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes, all six. Two stand in public parks, one is a street tree the city owns, and three are in sacred precincts or village ground looked after by neighbourhood associations, all open."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Not really. The four in Naha are spread across the city from Shuri in the east to Amaku on the north shore and Takara in the south, each a bus or tram ride apart. Uchima is 8 kilometres north in Urasoe and Tomari 14 kilometres east in Nakagusuku."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nah_001",
+      "name": "The Great Akagi of Shuri Kinjo",
+      "species": "Bishop Wood (Bischofia javanica)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 300,
+      "girth_cm": 520,
+      "height_m": 13,
+      "location": {
+        "address": "Uchikanagusuku-utaki, Shuri Kinjo-cho, Naha 903-0815",
+        "latitude": 26.215887,
+        "longitude": 127.716012,
+        "neighbourhood": "Shuri Kinjo"
+      },
+      "story": "Japan designated this grove a National Natural Monument on 15 May 1972, the day Okinawa was returned to Japan. There were six trees then and there are five now, one having gone down in a typhoon. They stand in the precinct of Uchikanagusuku-utaki, a sacred grove in a residential street just south of Shuri Castle, and the prefecture's own note is blunt about why they matter: before the war many akagi of this size grew around the castle, and almost all of them were burned, so that only a few are left anywhere. The largest here is 5.2 metres round. What makes them worth standing under is not size but what is living on them. The trunks carry ferns and climbers as epiphytes, bird's nest fern and hare's foot fern and a native fig among them, so what you are looking at is not a tree so much as a vertical habitat. The neighbourhood association still holds its new year prayers and its muchi festival here, and cleans the precinct. Uchikanagusuku-utaki is where the origin of the muchi rice cake festival is told.",
+      "verified_sources": [
+        "https://www.midorihana-okinawa.jp/?page_id=6910",
+        "https://www.okinawastory.jp/spot/30000022"
+      ],
+      "access": "Free, in a sacred precinct in a residential street, open",
+      "transport": "Yui Rail to Shuri, about 15 minutes on foot down through the Kinjo stone-paved road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "National Natural Monument, designated 1972-05-15; the precinct is separately a Naha City tangible folk cultural property, designated 1978-11-14, and the trees are number 91 on Okinawa's hundred notable trees, certified 2007. Girth 5.2 m and height 13 m are the largest individual's; the grove's trunk height is given as about 20 m elsewhere in the same source, which is a different measurement. Six trees at designation, five now after a typhoon; the prefecture's page records that loss and this entry repeats it."
+    },
+    {
+      "id": "nah_002",
+      "name": "The Akou of Amaku",
+      "species": "Sea Fig (Ficus superba)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 1953,
+      "height_m": 10,
+      "location": {
+        "address": "Amaku 1169, in the Amaku green space, Naha 900-0005",
+        "latitude": 26.232375,
+        "longitude": 127.683091,
+        "neighbourhood": "Amaku"
+      },
+      "story": "Nineteen and a half metres round, on a tree ten metres tall. That ratio is the giveaway: this is not a trunk in the ordinary sense but a strangler fig that seeded itself on Ryukyu limestone and has poured itself over the rock ever since, splitting into twelve separate stems and pulling everything within reach into the mass. Okinawa calls this kind of tree an usuku gajumaru, the banyan that grows on a stone wall, because akou will take hold on rock and masonry where nothing else will, and it can kill whatever it germinates on. All sorts of other plants now live on it in turn. It stands in the Amaku green space on Naha's north side, next to a sacred utaki and the Hiranaka spring, both looked after by the Amaku assets preservation association, which is also the tree's registered owner. Naha city entered it into the Environment Ministry's national giant tree database in 2009 and the prefecture certified it in 2015. Nobody has published an age for it, and given how an akou grows, a ring count would not mean much anyway.",
+      "verified_sources": [
+        "https://www.midorihana-okinawa.jp/?page_id=6300",
+        "https://www.midorihana-okinawa.jp/"
+      ],
+      "access": "Free, in a public green space beside a sacred spring",
+      "transport": "Bus to Amaku, on the north side of Naha near Shintoshin",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Number 130 on Okinawa's hundred notable trees, certified 2015. Height 10 m and girth 19.53 m from the prefectural register; the girth is a fused strangler mass of twelve stems rather than a single trunk, which the story states rather than letting the figure imply a normal trunk. Age recorded as unknown in the register. Registered by Naha city in the Environment Ministry's giant-tree database in 2009."
+    },
+    {
+      "id": "nah_003",
+      "name": "The Banyan of Jogaku",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "about 100 years",
+      "age_min": 80,
+      "age_max": 120,
+      "girth_cm": 550,
+      "height_m": 17.6,
+      "location": {
+        "address": "Sobe 1-13, Naha 902-0068",
+        "latitude": 26.2063543,
+        "longitude": 127.684513,
+        "neighbourhood": "Sobe"
+      },
+      "story": "They moved the road rather than cut this one down. The banyan on the street beside Jogaku primary school stood in a private garden before the war, and when the road came to be widened it was in the way; the city changed the alignment of the road instead, and the tree is now formally a street tree owned by Naha. It is 17.6 metres tall with a trunk 5.5 metres round, going up almost straight before spreading, which is unusual for a gajumaru and gives it a genuinely good canopy. What the place used to be is worth knowing. This stretch was called Kohagura Baba, a horse ground where races were run once a month, and there is a monument of a horse and an explanatory board about the course. Now the tree stands in a tight grid of houses and schools, which is exactly what makes it visible: it is the only large thing for streets in any direction. The prefecture puts it at about a hundred years old, which would date it to somewhere around the 1920s, before the war that took nearly everything else here.",
+      "verified_sources": [
+        "https://www.midorihana-okinawa.jp/?page_id=1156",
+        "https://www.midorihana-okinawa.jp/"
+      ],
+      "access": "Free, on a public street",
+      "transport": "Yui Rail to Tsubogawa or Asahibashi, about 10 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Number 92 on Okinawa's hundred notable trees, certified 2007. Height 17.6 m, girth 5.5 m and the roughly 100 year age from the prefectural register. Owned by Naha city and protected as a street tree. The road realignment, the pre-war private garden and the Kohagura Baba horse ground are all from that register entry."
+    },
+    {
+      "id": "nah_004",
+      "name": "The Banyan of Takara Park",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "about 150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "girth_cm": 390,
+      "height_m": 8.9,
+      "location": {
+        "address": "Takara 1-chome, Takara Park, Naha 901-0155",
+        "latitude": 26.1864992,
+        "longitude": 127.660603,
+        "neighbourhood": "Takara"
+      },
+      "story": "The whole village turned out to carry this tree to where it now stands. Before the war it grew at the Uebaru settlement, and it was moved to the Takara utaki, the sacred site now inside Takara Park, by the people of Takara working together; the account the prefecture keeps says it took everyone. It sits in the forecourt of the prayer place, 8.9 metres tall with a trunk 3.9 metres round that divides from the base into several stems and opens into a rounded, almost conical crown. It has unusually few of the hanging aerial roots that gajumaru are known for, which makes it look less like the archetype and more like an ordinary spreading tree. The prefecture puts it at about 150 years, which means it was already a mature tree when it was dug up and carried. It is a children's playground now, in the plainest sense: this is where the local children climb. The park is public and Naha city owns the tree.",
+      "verified_sources": [
+        "https://www.midorihana-okinawa.jp/?page_id=1166",
+        "https://www.midorihana-okinawa.jp/"
+      ],
+      "access": "Free, in a public park",
+      "transport": "Bus to Takara, in southern Naha near the Naha Airport road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Number 93 on Okinawa's hundred notable trees, certified 2007. Height 8.9 m, girth 3.9 m and the roughly 150 year age from the prefectural register, which also records the pre-war transplant from Uebaru and the scarcity of aerial roots. Owned by Naha city."
+    },
+    {
+      "id": "nah_005",
+      "name": "The Great Akagi of Uchima",
+      "species": "Bishop Wood (Bischofia javanica)",
+      "age_estimate": "about 400 years",
+      "age_min": 300,
+      "age_max": 450,
+      "girth_cm": 425,
+      "height_m": 18,
+      "location": {
+        "address": "Uchima 79, Urasoe 901-2114",
+        "latitude": 26.2366434,
+        "longitude": 127.70243,
+        "neighbourhood": "Uchima, Urasoe"
+      },
+      "story": "The village well was underneath it, which is why it became a god tree. The akagi at Uchima is about 400 years old by Okinawa's reckoning, 18 metres tall with a trunk 4.25 metres round, and the community has treated it as sacred for as long as anyone records because of the water at its foot. Before the war, village festivals here included demonstrations of kumibo, staff fighting, performed in front of it. Akagi timber has a long history of its own: in the Heian period it went to the imperial court as tribute and was worked into sword hilts, combs, the legs of zithers and the spindles of rank diplomas, and in more recent centuries it was used for windbreaks, for presses that crushed oil seeds, and for the carriages of sugar mills. The official entry ends with one flat sentence that is the reason this tree is on the page at all: it is one of those old trees which survived the ravages of the Second World War, and should be preserved and cared for. Urasoe was on the line of the American advance toward Shuri. Very little else here did survive.",
+      "verified_sources": [
+        "https://www.midorihana-okinawa.jp/?page_id=919",
+        "https://www.midorihana-okinawa.jp/"
+      ],
+      "access": "Free, on village ground looked after by the Uchima community association",
+      "transport": "About 8 km north of central Naha in Urasoe, by bus",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Urasoe City Natural Monument, designated 1981-03-02, and number 79 on Okinawa's hundred notable trees, certified 2006. Height 18 m, girth 4.25 m and the roughly 400 year age from the prefectural register, which also carries the well, the god-tree status, the kumibo demonstrations, the timber history and the sentence about surviving the war. Owner recorded as the Uchima community association."
+    },
+    {
+      "id": "nah_006",
+      "name": "The Great Kuwadisa of Tomari",
+      "species": "False Kamani (Terminalia catappa)",
+      "age_estimate": "about 200 years",
+      "age_min": 170,
+      "age_max": 230,
+      "girth_cm": 370,
+      "height_m": 11.5,
+      "location": {
+        "address": "Aza Tomari 132, Nakagusuku 901-2422",
+        "latitude": 26.2774332,
+        "longitude": 127.806379,
+        "neighbourhood": "Tomari, Nakagusuku"
+      },
+      "story": "Officials planted it because they were sorry to leave. The tradition recorded on this tree is specific: around two hundred years ago, men sent out from the Ryukyu government at Shuri to run the district office at Nakagusuku came to the end of their posting, and planted this tree at their parting from the villagers of Tomari they had become friendly with. It stands on the national highway where nobody can miss it, and the branches go out in a flat fan that throws a very wide, very low shade, which is what the species does and what it is planted for across the Pacific. Okinawan calls it kuwadisa; Japanese calls it kobateishi or momotamana; English usually calls it tropical almond or, in Hawaii, false kamani, which is the name this site uses for the species throughout. It is 11.5 metres tall with a trunk 3.7 metres round and the prefecture puts it at about 200 years, which matches the story it carries rather than proving it. Nakagusuku made it a village Natural Monument in March 1997, under exactly the name the village uses for it.",
+      "verified_sources": [
+        "https://www.midorihana-okinawa.jp/?page_id=617",
+        "https://www.midorihana-okinawa.jp/"
+      ],
+      "access": "Free, on the roadside beside the national highway",
+      "transport": "About 14 km east of Naha at Nakagusuku, by bus or car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Nakagusuku Village Natural Monument, designated 1997-03-07, and number 45 on Okinawa's hundred notable trees, certified 2003. Height 11.5 m, girth 3.7 m and the roughly 200 year age from the prefectural register, which also carries the parting-gift tradition; the age matches the tradition and does not independently confirm it, which the story says. Owner recorded as the Aza Tomari community association. Note this Tomari is in Nakagusuku village, not the Tomari district of Naha."
+    }
+  ]
+}
