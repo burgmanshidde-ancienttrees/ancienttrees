@@ -1,16 +1,28 @@
 {
   "leads": [
     {
-      "name": "Sarroch register cluster: Ginepro coccolone, Pino domestico, Eucalipto rosso",
-      "species": "multiple (Juniperus oxycedrus subsp. macrocarpa, Pinus pinea, Eucalyptus camaldulensis)",
+      "name": "Ginepro coccolone, Baccu Tinghinu, Capoterra",
+      "species": "Prickly Juniper (Juniperus oxycedrus)",
       "status": "unresolved",
-      "why": "2026-08-29 verify pass: passcheck brief flagged a Ginepro coccolone (girth 3.5m, 39.17140,8.95830) and a Pino domestico (girth 5.0m, 39.19996,8.93706) ~16.5-16.9km SW of Cagliari centre, both italy-masaf/sardinia-alberi-monumentali. RAMI (ilregistrodeglialberi.it/italia/sardegna/cagliari/sarroch) confirms Sarroch has 6 registered monumental trees (2x Ginepro coccolone, 3x Pino domestico, 1x Eucalipto rosso), all marked 'Accessibile', but individual RAMI pages checked (IDs 13544, 13546) give different localities ('Canale Bidda Mores - Mareddus'; 'Villa d'Orri', coords 39.112095,9.010225) and different girths (1.79m, 3.45m) than our register candidates, so these do NOT cleanly coordinate-match to the MASAF sheet entries in the brief -- likely different specimens among Sarroch's 6. 'Villa d'Orri' in particular is a historic manor and needs an access check before shipping (could be grounds-restricted despite the 'Accessibile' tag). Not verified to our bar in this pass: no independent source seen beyond the register/RAMI pairing, no confirmed match between the two. A future pass should fetch each of the 6 RAMI ids (13544, 13545, 13546, 13547, 13548, 13549) for exact coordinates, cross-match to the MASAF sheet numbers, and check Villa d'Orri's access status before treating any as a Cagliari day-trip entry. ~20km from Cagliari centre, car required."
+      "why": "2026-08-31 verify pass: register sheet (italy-masaf.json sheet_id / sardinia-alberi-monumentali.json register_id, both 02/B675/CA/20) places this at comune CAPOTERRA, locality Baccu Tinghinu, girth 350cm, height 11.0m, 39.171298/8.958174 -- corrects the 2026-08-29 pass's guess that this belonged to Sarroch; it does not, it is a different comune entirely. Independently corroborated on it.wikipedia.org/wiki/Alberi_monumentali_della_Sardegna (same girth/height, comune Capoterra, locality Baccu Tinghinu), so species/existence/measurements clear the two-source bar. What is NOT cleared is access: WebSearch's own AI summary claimed 'a red juniper tree was protected around the villa... perhaps the most notable specimen in all of southern Sardinia' near a 'Villa of Baccu Tinghinu' built by Leone Gouin in the 1860s, but fetching the actual source page (nuraghi.net/nuraghe-baccu-tinghinu-o-monti-arrubiu) directly contains NO mention of a villa, a juniper, or ownership at all -- a fabricated search summary per the search-summary-is-a-lead-never-a-source rule, discarded rather than used. No independent confirmation found either way of whether the tree stands on open ground or a private estate; Capoterra already has one BLOCKED tree on private land nearby (Su Loy eucalyptus, ~13km away), so the risk is real rather than hypothetical. Leave out until a future pass finds a genuine source on the ground's ownership/access; do not reuse the villa/Gouin claim above, it is unverified."
     },
     {
-      "name": "Other far register candidates, 15-17km from Cagliari centre, unexplored",
-      "species": "various",
+      "name": "Pino domestico, Tanca su Para, Uta",
+      "species": "Stone Pine (Pinus pinea)",
       "status": "unresolved",
-      "why": "2026-08-29 verify pass: passcheck brief listed several more italy-masaf/sardinia-alberi-monumentali candidates 15-17km out that this pass did not reach within its ~40 minute window: a Tiglio comune/Tilia x europaea (girth 2.6m, 39.30889-92,9.27944-54, ~15.1km, direction unclear -- not yet located to a named place), a second Eucalitto rostrato/Eucalyptus camaldulensis (girth 5.0m, 39.24777,8.94254, ~15.8km -- distinct from the already-BLOCKED Su Loy/Capoterra eucalyptus at 39.139133,9.012361) and a Pino d'Aleppo (girth 2.6m, 39.38164,9.17315-19, ~16.0km, likely near Sinnai/Foresta dei Sette Fratelli given the latitude, possibly part of the same forest cluster as the verified cag_009 Eucalipto Blu di Campu Omu). Plus 'and 4 more' beyond 16.9km that passcheck's brief did not print in full. None of these were fetched or cross-checked against an independent source this pass; record here rather than guess. A future pass: re-run passcheck.py --brief cagliari with a tighter radius, then work these depth-first, starting with the Sinnai-area ones since cag_009 already established that forest has genuine public access."
+      "why": "2026-08-31 verify pass: register sheet italy-masaf.json 03/L521/CA/20, comune UTA, locality Tanca su Para, girth 495cm, height 13.0m, 39.199958/8.937058. No second independent source found this pass (not on the Wikipedia monumental-trees list, no local press or municipal page found); Uta borders the WWF Oasi di Monte Arcosu but 'Tanca su Para' was not confirmed as being inside the reserve's public trail network versus adjoining farmland. Two attempts made (direct place-name search, Monte Arcosu trail search), neither resolved it; moving on per the two-attempts rule. A future pass: try the Sardegna Ambiente PDF register directly for a locality map, or search Uta's own municipal site for 'Tanca su Para'."
+    },
+    {
+      "name": "Eucalitto rostrato, Mitzisceddas, Uta",
+      "species": "Red River Gum (Eucalyptus camaldulensis)",
+      "status": "unresolved",
+      "why": "2026-08-31 verify pass: register sheet italy-masaf.json 04/L521/CA/20, comune UTA, locality Mitzisceddas, girth 500cm, height 26.0m, 39.247767/8.942544 -- distinct from the already-BLOCKED Su Loy/Capoterra eucalyptus (39.139133,9.012361) and from the published cag_009 Blue Eucalyptus at Campu Omu (39.35556,9.21999, different comune/forest). No second source or access information found this pass for the same reasons as the Tanca su Para pine above (same comune, likely same general area); worth researching together in a future pass."
+    },
+    {
+      "name": "Pino d'Aleppo, 39.38164/9.17315-19, ~16km NE of Cagliari",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "status": "resolved",
+      "why": "2026-08-31 verify pass: this is NOT a new candidate. Register sheet_id/register_id 01/D323/CA/20 (39.381603,9.173967, girth 340cm) and 02/D323/CA/20 (39.381641,9.173154, girth 265cm) are the exact same two pines already delivered as cag_008 (The Aleppo Pines of San Pantaleo, Dolianova). The 2026-08-29 pass's guess that this might be near Sinnai/Sette Fratelli was wrong; corrected here so a future pass does not re-research it."
     },
     {
       "name": "Pino d'Aleppo, Piazza San Pantaleo / Via San Martino, Dolianova",

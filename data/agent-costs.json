@@ -4290,6 +4290,34 @@
         "tokens": 0,
         "trees": 4,
         "note": "leads.py --ready read directly rather than dispatched: 66 candidates across 10 cities, most already declined by an earlier pass in words the classifier missed (fixed in scripts/leads.py and data/block-reasons.json, READY 66->49). Wrote and merged the 4 that were genuinely clean (pgi_011/012, vie_032/033), all single-register-sourced; wrote the German overlay for the two Vienna trees; fixed count promises on both cities plus the Austria/Italy country pages"
+      },
+      {
+        "target": "vilnius",
+        "kind": "verify",
+        "tokens": 55000,
+        "trees": 2,
+        "note": "Deepen pass on the earlier attempt's standing claim: 2 shipped (vln_012/013), 2 left as leads on unverified day-trip transit time, 2 non-tree register rows blocked"
+      },
+      {
+        "target": "vilnius",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 2,
+        "note": "2 stories written and merged in session (vln_012/013 did not justify a write-stories dispatch); fixed 6 stale intro/meta/question/FAQ count promises (11->13) and a Quercus sp./Tilia cordata hard-rule-9 species-name collision"
+      },
+      {
+        "target": "cagliari",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 1,
+        "note": "1 tree delivered (cag_010, Corongiu lime); corrected a mis-clustered duplicate (Pino d'Aleppo = cag_008) and a mis-attributed Sarroch cluster (actually Capoterra/Uta); 3 candidates left as leads on access/second-source grounds"
+      },
+      {
+        "target": "cagliari",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 1,
+        "note": "1 story written and merged in session; fixed intro/question/FAQ count promises (9->10) and the Italy country-page meta_description (317->318)"
       }
     ]
   }
