@@ -1,34 +1,16 @@
 {
  "leads": [
   {
-   "name": "Weiße Villa Platane, Schanzelgasse 33",
-   "species": "London Plane (Platanus x hispanica)",
-   "location_hint": "register_id 18, object_id 4, ND992, Schanzelgasse 33, Geidorf, 47.078757,15.460335. Girth 4.90m measured 2015 per Wikipedia's 'Liste der Naturdenkmäler in Graz'.",
-   "why_not_shipped": "Owner recorded as oeffentlich (public) in the Stadt Graz register, but the address is the former Villa Kleinoscheg (1853), now a renovated apartment building known as the 'Weiße Villa' sitting in its own park on a rise. Could not confirm this pass whether the surrounding grounds are genuinely open to the public or now effectively private residential grounds despite the public ownership flag. A large, well-documented tree with a real girth measurement, worth a proper access check before shipping."
-  },
-  {
    "name": "Eggenberger Allee 90 cluster (Schlosspark Eggenberg) - remaining 8 of 10",
    "species": "Platane (Platanus x acerifolia) x5 (ND 977-981), Weymouthskiefer (Pinus strobus) x3 (ND 982-984)",
    "location_hint": "City register NUMMER 2-9 (excl. 11), all at Eggenberger Allee 90, Algersdorf, within about 60m of each other around 47.0748,15.3910 to 47.0729,15.3915. Matches Wikipedia ND 977-985 (excl. 986).",
    "why_not_shipped": "Verification pass 2026-08-17 shipped the two genuinely individual, documented specimens from this cluster as grz_009 (Weymouth pine ND986/register NUMMER 11, measured 3.70m girth) and grz_010 (Blutbuche ND1506). These remaining 5 planes and 3 pines share the same address, protection date (11.07.1979) and no individuating measurement or record in any source checked; as a group they read as an avenue/grove planting rather than separate collectible points, per the hard rule that an avenue is blocked while a single named tree is not. Not re-researched deeper this pass (time cutoff); a future pass could still check each individually against a fresh source (e.g. a dated Commons photo or a distinctive girth) before shipping any as its own entry, but absent that they stay here as a group rather than as ten redundant near-duplicate pages of one planting."
   },
   {
-   "name": "Elisabethstraße 48 Plane",
-   "species": "Platane (Platanus x hispanica)",
-   "location_hint": "register_id 27, object_id 69, ND1000, Elisabethstraße 48, St. Leonhard, 47.075646,15.454619, protected 11.07.1979.",
-   "why_not_shipped": "Not reached this pass (time cutoff at 8 verified trees). 1.33km from centre, inside the same walkable radius as the shipped cluster. Register + Wikipedia already cross-match within 4m; just needs an access/context check (street tree vs. building forecourt) before writing."
-  },
-  {
-   "name": "Hilmteichstraße 104 pair (Hemlocktanne + Blutbuche)",
-   "species": "Hemlocktanne (Tsuga sp.) and Blutbuche (Fagus sylvatica 'Purpurea')",
-   "location_hint": "register_ids 80/91 and 78/124, ND1131 and ND1129, both Hilmteichstraße 104, Wenisbuch, ~47.083,15.463, about 2.3km from centre.",
-   "why_not_shipped": "Not reached this pass. Owner recorded oeffentlich in the register but the specific site at this address was not identified (could be a school, institution or park; Hilmteich itself, the well-known lake park, is nearby but this address was not confirmed to be inside it). Needs an access check."
-  },
-  {
-   "name": "Annaplatz 2 Oak",
-   "species": "Eiche (oak, species unspecified beyond genus in the register)",
-   "location_hint": "register_id 87, object_id 93, ND1136, Annaplatz 2, Algersdorf, 47.079944,15.395974, protected 12.09.1990.",
-   "why_not_shipped": "Not reached this pass; 3.38km from centre, outside the tight cluster chosen this time. Register species field only says 'Eiche' without a Latin binomial, so species would need pinning down to genus/species level before writing."
+   "name": "Grabenstraße 90c Copper Beech (Villa Washington)",
+   "species": "Copper Beech (Fagus sylvatica 'Purpurea')",
+   "location_hint": "register_id 97, object_id 44, ND1146, Grabenstraße 90c, Geidorf, 47.088276,15.435508 (register/Wikipedia agree within 4m), protected 01.08.1991. Register owner field: oeffentlich (public), publishable.",
+   "why_not_shipped": "2026-08-31 pass: the address is 'Villa Washington', a former mayoral residence now home to several businesses (an architecture firm, a tax consultancy, hotel-consulting and real-estate-management offices) on a hillside site. Nearest OSM feature is a public parking amenity on Grabenstraße, and the register marks the owner as public, but no source found this pass confirms the driveway or grounds are open to a passer-by rather than only to visiting clients/tenants. Worth a proper access check (does a public path cross the grounds, or is it gated) before shipping; the tree itself, species and protection date are otherwise solidly two-sourced."
   }
  ],
  "blocked": [
@@ -42,7 +24,19 @@
    "name": "Körblergasse 106 Mammutbaum and Eibe",
    "species": "Mammutbaum (Sequoiadendron giganteum) and Eibe (Taxus baccata)",
    "location_hint": "register_ids 99/46 and 98/45, ND1148 and ND1147, both Körblergasse 106, Geidorf, ~47.089,15.4415. Both carry real 2015 girth measurements from Wikipedia (Mammutbaum 5.50m, Eibe 2.70m) which is a shame to leave on the table.",
-   "reason": "Address is the Landesjugendheim Rosenhof, a state-run children's and youth care home with attached academies (midwifery, social work, chemistry). Not open to the public; sending strangers onto the grounds of a youth care institution is exactly the harm hard rule 10 exists to prevent. Blocked outright, not just parked as a lead."
+   "reason": "Address is the Landesjugendheim Rosenhof, a state-run children's and youth care home with attached academies (midwifery, social work, chemistry). Not open to the public; sending strangers onto the grounds of a youth care institution is exactly the harm hard rule 10 exists to prevent. Blocked outright, not just parked as a lead. NOTE 2026-08-31: this project's own registers-within-20km candidate list surfaces these same two rows again as 'Mammutbaum' (1.8km) and 'Eibe' (1.9km) near 47.0893,15.4413-15.4417; confirmed by register_id match (99/46 and 98/45) that they are this exact already-blocked pair, not new candidates. A future brief generator could filter already-blocked register_ids out of the candidate list."
+  },
+  {
+   "name": "Schanzelgasse 33 Plane, 'Weiße Villa' (formerly Villa Kleinoscheg)",
+   "species": "London Plane (Platanus x hispanica / x acerifolia)",
+   "location_hint": "register_id 18, object_id 4, ND992, Schanzelgasse 33, Geidorf, 47.078757,15.460335. Girth 4.90m measured 2015 per Wikipedia's 'Liste der Naturdenkmäler in Graz'. Register owner field: oeffentlich (public), publishable.",
+   "reason": "2026-08-31 pass: confirmed via baugeschichte.at and a 2024 property listing that the historic Villa Kleinoscheg (1853) was redeveloped by 2019 into 'Die Weiße Villa', a private apartment complex; the grounds toward Schanzelgasse were concreted over for garages, and a 2024 sale listing describes it as 'a representative residential complex with only a few residential units' surrounded by 'a beautiful park'. No source found confirms any part of that park is open to non-residents, despite the register's public-ownership flag (which appears to record land title rather than public access). Blocked rather than left as an open lead: this is now residential grounds, the exact case hard rule 10 exists to keep strangers out of, not merely an inconvenient gate. A future pass could re-check if the situation changes (e.g. if the register updates the address or a public easement is documented)."
+  },
+  {
+   "name": "Hilmteichstraße 104 pair (Blutbuche ND1129 + Hemlocktanne ND1131)",
+   "species": "Blutbuche (Fagus sylvatica 'Purpurea') and Hemlocktanne (Tsuga sp.)",
+   "location_hint": "register_ids 78/124 and 80/91, ND1129 and ND1131, both Hilmteichstraße 104, Wenisbuch, ~47.083,15.463, about 2.3km from centre. Register owner field: oeffentlich (public), publishable for both.",
+   "reason": "2026-08-31 pass: the address is the Leechwald-Villa (also called Villa Attems, built 1869), now operated as a TU Graz guesthouse for university guests and visiting researchers, per TU Graz's own guesthouse page and grazwiki/baugeschichte.at. No source found confirms the grounds are open to a passer-by rather than only to booked guests, even though the villa sits beside the public Leechwald forest and Hilmteich lake park. Blocked rather than shipped as a lead, consistent with the schools/institutions caution in hard rule 10: a guesthouse is closer to a hotel with a reception desk than to open parkland. Could be revisited if a future pass finds evidence the specific trees stand on the public forest side of the boundary rather than the guesthouse's own garden."
   }
  ]
 }
