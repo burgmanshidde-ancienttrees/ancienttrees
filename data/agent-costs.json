@@ -4283,6 +4283,13 @@
         "tokens": 90000,
         "trees": 5,
         "note": "5 stories written and merged (seg_001-005); assembled the new city file (intro, meta, question block, FAQ) in session since there is no city-assembler script; fixed paid_entry booleans the heuristic script left ambiguous and 2 stale Spain/Japan country meta_description counts"
+      },
+      {
+        "target": "perugia+vienna",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 4,
+        "note": "leads.py --ready read directly rather than dispatched: 66 candidates across 10 cities, most already declined by an earlier pass in words the classifier missed (fixed in scripts/leads.py and data/block-reasons.json, READY 66->49). Wrote and merged the 4 that were genuinely clean (pgi_011/012, vie_032/033), all single-register-sourced; wrote the German overlay for the two Vienna trees; fixed count promises on both cities plus the Austria/Italy country pages"
       }
     ]
   }
