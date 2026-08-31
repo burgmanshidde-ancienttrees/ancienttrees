@@ -1500,6 +1500,22 @@
       "status": "published",
       "trees": 6,
       "note": "Opened 2026-08-31 from Andalusia's singular-tree register, which publishes a one-page measured sheet per tree carrying height, girth at 1.30 m, girth at the base, crown diameter AND an ownership field. That ownership field is what made this city publishable: it answers hard rule 10 from the data. Three trees are on public land in the Sierra de las Nieves, two are private land beside a public track, one is view-only from a pass and says so."
+    },
+    {
+      "city": "Tarragona",
+      "country": "Spain",
+      "slug": "tarragona",
+      "status": "published",
+      "trees": 4,
+      "note": "Opened 2026-08-31 from Catalonia's monumental-tree register via its structured Catalan Wikipedia mirror, which carries species, condition, height, girth at 1.3 m, crown, coordinates and the official gencat record per tree. Only four of the nine live trees within 30 km stand on ground the public may walk on; the rest are on private mas and are recorded as blocked."
+    },
+    {
+      "city": "Girona",
+      "country": "Spain",
+      "slug": "girona",
+      "status": "published",
+      "trees": 7,
+      "note": "Opened 2026-08-31 from the same Catalan register. None is in Girona itself: the city's own Devesa is a grove of ~2,500 planes and the register declares individuals only. Four of the seven are inside designated natural areas. The register records vitality, so the dead entries near Girona were excluded from the data rather than by guess."
     }
   ]
 }

@@ -1,0 +1,161 @@
+{
+  "city": "Tarragona",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Catalonia has protected individual trees by law since 1987, and cutting one is simply forbidden. There are 299 declared monumental trees in the region and four of them stand within reach of Tarragona on ground anybody can walk onto: a plane filling a village square, a stone pine on the airport road, a pair of cypresses in a town hall courtyard beside a Cistercian monastery, and a wild pear on a track in the Prades mountains. The rest of the trees on the register near here stand on private farms, which is why this page is short.",
+  "meta_description": "Tarragona's monumental trees: a plane that fills a village square, cypresses in a monastery courtyard, and a wild pear declared a monument in 1991.",
+  "question_answer": "Nobody publishes ages for Catalonia's monumental trees, so Tarragona's oldest cannot be named. The register records species, condition, height, trunk girth and crown width, and the largest of the four here is the stone pine at Reus, 20.5 metres tall with a trunk 4.28 metres round, declared a monumental tree in 1991.",
+  "question_meta": "Catalonia's register does not record tree ages, so Tarragona's oldest is unknown. What the register does measure, and 4 trees worth the drive.",
+  "question_context": "The Catalan register is precise about everything except age. For each declared tree it publishes the species, the condition, the total height, the trunk perimeter at 1.3 metres and the average crown diameter, along with a location to five decimal places and an official record page, and it carries no age column at all. That is a deliberate choice rather than an oversight: dating a living tree without coring it is guesswork, and the register was built to protect trees rather than to date them. What it does record is that these four are alive and in normal condition, which matters more than it sounds, because the same register marks a good number of trees in this province as dead while keeping them listed. So the honest answer for Tarragona is a size rather than an age: the Pi de Bofarull on the Reus airport road is 20.5 metres tall with a trunk 4.28 metres round and a crown 21.4 metres across, and it has been protected since 1991. Getting there: about 15 minutes by car from Tarragona toward Reus.",
+  "oldest_tree_id": "tgn_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Tarragona?",
+      "a": "Unknown, and the register that protects these trees does not try to answer it. Catalonia records species, condition, height, trunk girth and crown width for each monumental tree and has no age column."
+    },
+    {
+      "q": "What does monumental tree mean in Catalonia?",
+      "a": "A legal status. Since 1987 individual trees can be declared arbre monumental, after which felling or uprooting them, wholly or partly, is prohibited. There are 299 declared, and 24 more were added in 2025 after nearly a decade with none."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all four. One stands in a village square, one on a public road, two in the courtyard of a town hall beside the Santes Creus monastery, and one on a track in the Prades mountains."
+    },
+    {
+      "q": "Why are there only four?",
+      "a": "Because most of the monumental trees near Tarragona stand on private farms, the mas and the masia, and this site does not send people onto private land. Several fine ones are excluded for that reason, including a holm oak at Mas de Borbo with a trunk 6.45 metres round."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "No. They are four separate stops spread over 30 kilometres, between 9 and 29 kilometres from Tarragona, and each is a short drive."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tgn_001",
+      "name": "The Plane of the Riera de Gaia Square",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Placa de la Vila, La Riera de Gaia 43762, Tarragona",
+        "latitude": 41.16486,
+        "longitude": 1.36169,
+        "neighbourhood": "La Riera de Gaia"
+      },
+      "story": "This tree is the square. La Riera de Gaia is a small town inland from the coast north of Tarragona, and the plane standing in its Placa de la Vila takes up most of it, which is the way these things went in Catalan villages: a plane was put in the square because it grows fast, casts dense shade by June and can be pollarded hard every few years without complaint, and then it outlived the reason and became the thing the square is named for. Catalonia declared it a monumental tree in 1992, which makes cutting it illegal. It is one of the trees selected for the book Arboles singulares de Espana, where it takes a two-page spread. The register lists it as being in normal condition and, unusually for that source, publishes no dimensions for it at all, so this page cannot tell you how thick it is, only that Catalonia thought it worth protecting and that a national survey of Spain's singular trees agreed. If you have measured it, tell us.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/tarragones-4/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, in the public square in the middle of the village",
+      "transport": "About 11 km northeast of Tarragona, roughly 15 minutes by car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 1992, code MA-36.126.01, condition recorded as normal. The register publishes no height, girth or crown figure for this entry, which the story says outright. Also carried in Arboles singulares de Espana (Mundi-Prensa, 2nd ed. 2004, pp. 242 to 243). No age published anywhere."
+    },
+    {
+      "id": "tgn_002",
+      "name": "The Pine of Bofarull",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 428,
+      "height_m": 20.5,
+      "location": {
+        "address": "Carretera de l'aeroport, Reus 43206, Tarragona",
+        "latitude": 41.14451,
+        "longitude": 1.14447,
+        "neighbourhood": "Reus"
+      },
+      "story": "A protected tree on the road to an airport is a strange combination and this one has held its ground. The Pi de Bofarull stands beside the airport road at Reus, 20.5 metres tall with a trunk 4.28 metres round and a crown 21.4 metres across, and Catalonia declared it a monumental tree in 1991, which means it cannot legally be felled however inconvenient the road becomes. Stone pine is the umbrella pine of the Mediterranean, the one with the flat top that everybody draws, and it is grown across Spain as much for the nuts as for the shade: the cones take three years to ripen and the kernels inside them are pinones, the most expensive nut in the country. A stone pine that reaches 20 metres has usually been left alone for a long time, because the species is normally kept low and wide. The register lists it as being in normal condition and, like every Catalan entry, gives it no age. This is the largest of the four trees on this page, which is the only ranking the data supports.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/baix-camp-7/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, beside a public road",
+      "transport": "About 9 km west of Tarragona on the Reus airport road, roughly 15 minutes by car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 1991, code MA-08.123.01, condition normal. Height 20.5 m, trunk perimeter at 1.3 m of 4.28 m and mean crown diameter 21.4 m, all from the register. No age published."
+    },
+    {
+      "id": "tgn_003",
+      "name": "The Cypresses of the Abbot's Palace at Santes Creus",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 337,
+      "height_m": 18,
+      "location": {
+        "address": "Pati de l'Ajuntament, Santes Creus, Aiguamurcia 43815, Tarragona",
+        "latitude": 41.34613,
+        "longitude": 1.36276,
+        "neighbourhood": "Santes Creus"
+      },
+      "story": "Two cypresses in a courtyard at a Cistercian monastery, and the courtyard now belongs to the town hall. Santes Creus was founded in the twelfth century and is one of the three great Cistercian houses of Catalonia, with the kings of Aragon buried in its church; the abbot's palace beside it passed into secular hands after the monasteries were dissolved in 1835, and the local council occupies part of it. The two cypresses stand in its patio, 18 metres tall on trunks 3.37 metres round with crowns only 9.1 metres across, which is the shape of the species: Cupressus sempervirens grows as a dark green column and almost nothing else, which is why it has been planted at monasteries and cemeteries around the Mediterranean for two thousand years. Catalonia has them on its monumental tree register as a pair. The status listed is that the declaration is pending rather than complete, so they are on the list and protection is still working its way through. Nobody has published an age.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/alt-camp-2/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, in the town hall courtyard at Santes Creus, beside the monastery",
+      "transport": "About 27 km north of Tarragona, roughly 35 minutes by car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "One entry for the pair, as the register lists them. Code MA-01.001.01. Height 18 m, trunk perimeter 3.37 m and crown 9.1 m are the register's, given for the first tree catalogued. Status is recorded as AM previst, declaration foreseen rather than completed, which the story states. No age published."
+    },
+    {
+      "id": "tgn_004",
+      "name": "The Wild Pear of El Cisterer",
+      "species": "Almond-leaved Pear (Pyrus spinosa)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 197,
+      "height_m": 10.5,
+      "location": {
+        "address": "Cap del Plans, Prades 43364, Tarragona",
+        "latitude": 41.29665,
+        "longitude": 0.98828,
+        "neighbourhood": "Prades"
+      },
+      "story": "Catalonia protects 299 trees and one of them is a wild pear, which tells you something about how the list was made. Pyrus spinosa is a thorny scrubby thing of dry Mediterranean hillsides, usually a bush and rarely worth a second look, and this one is 10.5 metres tall with a trunk just under two metres round and a crown 16 metres across, which for the species is enormous. It stands at Cap del Plans above Prades, on the right of the track, in the Prades mountains where the ground is red sandstone and the villages sit above 900 metres. It was declared a monumental tree in 1991. The register puts its condition as normal. What makes it worth the drive is not size in absolute terms, since almost every other tree on this site is bigger, but the fact that this is the species performing at the top of its range: a hedgerow shrub that got left alone long enough to become a tree. No age is published, as with every Catalan entry.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/baix-camp-7/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, on the right of a public track above the village",
+      "transport": "About 29 km northwest of Tarragona in the Prades mountains, roughly 40 minutes by car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Declared a Catalan monumental tree in 1991, condition normal. Height 10.5 m, trunk perimeter 1.97 m, crown 16.0 m from the register. No age published. The coordinate is the register's own; the location description places it beside a track at Cap del Plans, which is why precision is marked approximate rather than confirmed."
+    }
+  ]
+}
