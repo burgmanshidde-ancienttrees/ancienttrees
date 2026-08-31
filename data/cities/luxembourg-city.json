@@ -321,6 +321,36 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "lux_010",
+      "name": "The Krombach Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Parc Louvigny, Ville-Haute, Luxembourg City",
+        "latitude": 49.610313,
+        "longitude": 6.122665,
+        "neighbourhood": "Ville-Haute"
+      },
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/File:Luxembourg,_ch%C3%AAne_Krombach,_parc_Louvigny_(101).jpg (independent field photograph by Commons contributor GilPe, dated 3 January 2020, caption: 'le chene Krombach plante en memoire du botaniste Jean-Henri-Guillaume Krombach (1791-1881)', geotagged in Parc Louvigny)",
+        "https://www.wikidata.org/wiki/Q13103645 (structured record: species Quercus robur, named after Jean-Henri-Guillaume Krombach (Q3460050), a point-in-time value of 1875 whose exact meaning is not confirmed, see note)"
+      ],
+      "access": "Free, in Parc Louvigny, a public city park in Ville-Haute; open at all times, no restriction found.",
+      "transport": "Central Luxembourg City, Ville-Haute, near Villa Louvigny; walkable from the city centre, about 0.5km from the Giant Sequoia of Parc Amelie (lux_005) and the Sycamore of Hollerich (lux_008).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Somebody planted this oak for a botanist and then forgot to write down when.\n\nThe Krombach Oak stands in Parc Louvigny, in the upper town of Luxembourg City, and carries the name of Jean-Henri-Guillaume Krombach, a pharmacist and botanist who lived from 1791 to 1881. The record attached to the tree gives the year 1875 without saying what happened in 1875. If that is the planting, then Krombach was in his eighties and alive to see the thing named after him go into the ground. If it marks the dedication instead, the oak could be older or younger than the date makes it look. Nobody has settled which, so the age here is an open question rather than a number, and anyone who has put a tape around the trunk can close most of it in one message.\n\nWhat is not in question is the rest of it. This is a pedunculate oak in a public park with no gate and no opening hours, half a kilometre from the giant sequoia in Parc Amelie and the sycamore at Hollerich, which puts three of the city's better trees inside a twenty minute walk of each other.\n\nThe man it commemorates spent his life on plants and got a plant. Whoever made that choice picked the slowest monument available, and the one most likely to outlast the people who remember why it is there.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

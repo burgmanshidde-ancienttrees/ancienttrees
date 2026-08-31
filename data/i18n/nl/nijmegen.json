@@ -1,192 +1,208 @@
 {
- "_note": "Dutch overlay for Nijmegen, hand-written 2026-08-22. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/nijmegen.json. The search term is 'monumentale bomen', which is what Dutch readers type and what the Bomenstichting itself uses; 'oude bomen' is a translation, not a query. Nothing here is researched: every fact, age, hedge and dispute comes from the English file and is rendered, never sharpened.",
- "city": "Nijmegen",
- "title": "Monumentale bomen in Nijmegen: de 20 mooiste",
- "meta_description": "De oudste boom van Nijmegen is waarschijnlijk de Kabouterboom bij Beek, een holle tamme kastanje en de dikste boom van Nederland. Plus negentien andere.",
- "intro": "Nijmegen noemt zichzelf de oudste stad van Nederland, en de bomen doen daar in geest aan mee, al niet in jaren: geen is ouder dan de Romeinen, bijna allemaal staan ze op grond die dat wel is. Een esdoorn die op een burchtheuvel tot boom van het jaar werd gekozen, een ginkgo die per ongeluk een tuincentrumras opleverde, de beukenkring van een achttiende-eeuws sterrenbos, een kastanje geplant voor een koningin. Drie staan ten oosten van de stad, op de stuwwal waar de oudste exemplaren staan: lindes op een Romeins uitzichtpunt, een kerkhoftaxus en de dikste boom van het land.",
- "question_title": "Wat is de oudste boom van Nijmegen? (300 tot 450 jaar)",
- "question_meta": "De oudste is vrijwel zeker de Kabouterboom bij Beek, een holle tamme kastanje van 300 tot 450 jaar. Waar hij staat, en negentien andere bomen.",
- "question_answer": "De oudste boom van Nijmegen is vrijwel zeker de Kabouterboom, een holle tamme kastanje in het Kastanjedal bij Beek, ongeveer viereneenhalve kilometer ten oosten van het centrum. De schattingen lopen uiteen van driehonderd tot vierhonderdvijftig jaar, en verder komt niemand, want de stam is hol en er valt geen kern meer te tellen. Wat wel te meten valt is de omtrek: minstens achteneenhalve meter, en daarmee is het de dikste boom van Nederland. Binnen de stad zelf is de beukenkring van het Sterrenbos in Park Brakkenstein de oudste, geplant als onderdeel van een achttiende-eeuws sterrenbos en geschat op 250 tot 300 jaar, met de lindes op het Kops Plateau daar vlak achter met 225 tot 275.",
- "question_context": "Het Sterrenbos, het stervormige patroon van boslanen midden in Park Brakkenstein, werd in de achttiende eeuw aangelegd als onderdeel van het particuliere landgoed Brakkenstein, dat voor het eerst in 1654 wordt genoemd, al kwam de sterbeplanting zelf later. Een kring beuken uit dat plan staat er nog altijd, en lokale historici die het Nijmeegse bomenbestand onderzochten wijzen die kring aan als de oudste levende bomengroep binnen de stadsgrenzen, geschat op 250 tot 300 jaar. Die schatting is noodgedwongen een marge: geen enkele boom in de ring is afzonderlijk gedateerd door jaarringen te tellen, en een deel van de oorspronkelijke beuken is in die drie eeuwen van ouderdom bezweken, waardoor er zichtbare gaten vallen in wat ooit een sluitende cirkel was. Wat er staat is opmerkelijk genoeg blijven staan: drie eeuwen op grond die toen nog particulier landgoed was, en ruim een eeuw voordat Nijmegen zijn oudste stadsparken kreeg, het Kronenburgerpark en het Valkhofpark. Het park is gratis en open, in het zuiden van de stad tussen de campus van de Radboud Universiteit en een spoorlijn, en er is geen kaartje of ontheffing nodig om te zien wat er van de ster over is.",
- "faq": [
-  {
-   "q": "Wat is de oudste boom van Nijmegen?",
-   "a": "De Kabouterboom, een holle tamme kastanje in het Kastanjedal bij Beek, geschat op 300 tot 450 jaar en met ruim achteneenhalve meter stamomtrek de dikste boom van Nederland. Binnen de stad is de beukenkring van het Sterrenbos de oudste, 250 tot 300 jaar, geplant als deel van een achttiende-eeuws sterrenbos."
-  },
-  {
-   "q": "Zijn de monumentale bomen van Nijmegen gratis te bezoeken?",
-   "a": "Ja, alle twintig zijn gratis. De meeste staan in openbare parken, op pleinen of bij kerken die op elk moment open zijn; een paar staan op landgoedbos of -grond die open is voor wandelaars."
-  },
-  {
-   "q": "Welke Nijmeegse boom leverde een tuincentrumras op?",
-   "a": "Een ginkgo in het Kronenburgerpark, waarvan een heksenbezem in een tak werd geënt en in 1995 werd geregistreerd als de dwergcultivar Ginkgo biloba 'Mariken'."
-  },
-  {
-   "q": "Waarom werd er op 4 september 1948 een kastanje geplant in het Julianapark?",
-   "a": "Om de dag te markeren waarop prinses Juliana koningin van Nederland werd, na de troonsafstand van haar moeder Wilhelmina."
+  "_note": "Dutch overlay for Nijmegen, hand-written 2026-08-22. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/nijmegen.json. The search term is 'monumentale bomen', which is what Dutch readers type and what the Bomenstichting itself uses; 'oude bomen' is a translation, not a query. Nothing here is researched: every fact, age, hedge and dispute comes from the English file and is rendered, never sharpened.",
+  "city": "Nijmegen",
+  "title": "Monumentale bomen in Nijmegen: de 20 mooiste",
+  "meta_description": "De oudste boom van Nijmegen is waarschijnlijk de Kabouterboom bij Beek, een holle tamme kastanje en de dikste boom van Nederland. Plus eenentwintig andere.",
+  "intro": "Nijmegen noemt zichzelf de oudste stad van Nederland, en de bomen doen daar in geest aan mee, al niet in jaren: geen is ouder dan de Romeinen, bijna allemaal staan ze op grond die dat wel is. Een esdoorn die op een burchtheuvel tot boom van het jaar werd gekozen, een ginkgo die per ongeluk een tuincentrumras opleverde, de beukenkring van een achttiende-eeuws sterrenbos, een kastanje geplant voor een koningin. Drie staan ten oosten van de stad, op de stuwwal waar de oudste exemplaren staan: lindes op een Romeins uitzichtpunt, een kerkhoftaxus en de dikste boom van het land.",
+  "question_title": "Wat is de oudste boom van Nijmegen? (300 tot 450 jaar)",
+  "question_meta": "De oudste is vrijwel zeker de Kabouterboom bij Beek, een holle tamme kastanje van 300 tot 450 jaar. Waar hij staat, en eenentwintig andere bomen.",
+  "question_answer": "De oudste boom van Nijmegen is vrijwel zeker de Kabouterboom, een holle tamme kastanje in het Kastanjedal bij Beek, ongeveer viereneenhalve kilometer ten oosten van het centrum. De schattingen lopen uiteen van driehonderd tot vierhonderdvijftig jaar, en verder komt niemand, want de stam is hol en er valt geen kern meer te tellen. Wat wel te meten valt is de omtrek: minstens achteneenhalve meter, en daarmee is het de dikste boom van Nederland. Binnen de stad zelf is de beukenkring van het Sterrenbos in Park Brakkenstein de oudste, geplant als onderdeel van een achttiende-eeuws sterrenbos en geschat op 250 tot 300 jaar, met de lindes op het Kops Plateau daar vlak achter met 225 tot 275.",
+  "question_context": "Het Sterrenbos, het stervormige patroon van boslanen midden in Park Brakkenstein, werd in de achttiende eeuw aangelegd als onderdeel van het particuliere landgoed Brakkenstein, dat voor het eerst in 1654 wordt genoemd, al kwam de sterbeplanting zelf later. Een kring beuken uit dat plan staat er nog altijd, en lokale historici die het Nijmeegse bomenbestand onderzochten wijzen die kring aan als de oudste levende bomengroep binnen de stadsgrenzen, geschat op 250 tot 300 jaar. Die schatting is noodgedwongen een marge: geen enkele boom in de ring is afzonderlijk gedateerd door jaarringen te tellen, en een deel van de oorspronkelijke beuken is in die drie eeuwen van ouderdom bezweken, waardoor er zichtbare gaten vallen in wat ooit een sluitende cirkel was. Wat er staat is opmerkelijk genoeg blijven staan: drie eeuwen op grond die toen nog particulier landgoed was, en ruim een eeuw voordat Nijmegen zijn oudste stadsparken kreeg, het Kronenburgerpark en het Valkhofpark. Het park is gratis en open, in het zuiden van de stad tussen de campus van de Radboud Universiteit en een spoorlijn, en er is geen kaartje of ontheffing nodig om te zien wat er van de ster over is.",
+  "faq": [
+    {
+      "q": "Wat is de oudste boom van Nijmegen?",
+      "a": "De Kabouterboom, een holle tamme kastanje in het Kastanjedal bij Beek, geschat op 300 tot 450 jaar en met ruim achteneenhalve meter stamomtrek de dikste boom van Nederland. Binnen de stad is de beukenkring van het Sterrenbos de oudste, 250 tot 300 jaar, geplant als deel van een achttiende-eeuws sterrenbos."
+    },
+    {
+      "q": "Zijn de monumentale bomen van Nijmegen gratis te bezoeken?",
+      "a": "Ja, alle tweeentwintig zijn gratis. De meeste staan in openbare parken, op pleinen of bij kerken die op elk moment open zijn; een paar staan op landgoedbos of -grond die open is voor wandelaars."
+    },
+    {
+      "q": "Welke Nijmeegse boom leverde een tuincentrumras op?",
+      "a": "Een ginkgo in het Kronenburgerpark, waarvan een heksenbezem in een tak werd geënt en in 1995 werd geregistreerd als de dwergcultivar Ginkgo biloba 'Mariken'."
+    },
+    {
+      "q": "Waarom werd er op 4 september 1948 een kastanje geplant in het Julianapark?",
+      "a": "Om de dag te markeren waarop prinses Juliana koningin van Nederland werd, na de troonsafstand van haar moeder Wilhelmina."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (Dutch common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+  "trees": {
+    "nij_001": {
+      "name": "De esdoorn van het Valkhofpark",
+      "species": "Gewone esdoorn (Acer pseudoplatanus)",
+      "age_estimate": "145 jaar",
+      "access": "Gratis, openbaar park, dagelijks open",
+      "transport": "Centrum van Nijmegen, op de Valkhofheuvel; 10 minuten lopen vanaf station Nijmegen",
+      "story": "De meest recente boom van het jaar van Nijmegen groeit op grond waarover sinds de Romeinen is gevochten. Het Valkhofpark ligt op de Valkhofheuvel, waar een Romeins legerkamp lag en later het keizerlijk paleis van Karel de Grote, en in 2021 kozen buurtbewoners deze gewone esdoorn, rond 1880 geplant, tot boom van het jaar. Hij is ongeveer 23 meter hoog en heeft een stamomtrek van net geen vier meter: netjes, geen record, in een park waarvan de ruïnes tweeduizend jaar teruggaan. Wat hem tot gekozen boom maakt is niet zijn ouderdom, want het Romeinse kamp eronder is ouder dan alles wat er boven de grond leeft, maar zijn aanwezigheid. Dit is de esdoorn die bezoekers werkelijk opvalt, tussen jongere aanplant en veel oudere stenen. Zulke buurtstemmingen worden in Nederland elk jaar gehouden, meestal voor bomen die veel bijzonderder klinken dan een gewone esdoorn. Het Valkhofpark zelf is rijksmonument, een van de langst achtereen gebruikte verdedigings- en woonplekken van het land, en de twee middeleeuwse bouwwerken die er nog staan, de Barbarossaruïne en de Sint-Nicolaaskapel, zijn ruwweg zeven eeuwen ouder dan de boom. Gratis en midden in de stad, en daarmee wordt een Romeinse heuveltop een doodgewone plek om onder een boom te gaan zitten."
+    },
+    "nij_002": {
+      "name": "De moederginkgo van het Kronenburgerpark",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "95 jaar",
+      "access": "Gratis, openbaar park, dagelijks open",
+      "transport": "Centrum van Nijmegen; 10 minuten lopen vanaf station Nijmegen",
+      "story": "Eén ginkgo in een Nijmeegs park heeft in alle stilte een plantenras opgeleverd dat nu in heel Europa verkocht wordt. Ergens rond 1930 wortelde hij in het Kronenburgerpark, in 1881 en 1882 aangelegd net buiten de oude stadsmuur, en decennia later viel een kweker een tak op die vreemd, compact en verward groeide, een heksenbezem die niet op de rest van de boom leek. Geënt, vermeerderd en in 1995 geregistreerd werd die mutatie Ginkgo biloba 'Mariken', een dwergcultivar die inmiddels ver buiten Nederland bij kwekers in de handel is en later de Award of Garden Merit van de Royal Horticultural Society kreeg. De naam komt van Mariken van Nieumeghen, het zestiende-eeuwse mirakelspel over een Nijmeegse vrouw die een pact sluit met de duivel. De boom die het allemaal voortbracht staat er nog, ongeveer 95 jaar oud en zo'n 2,85 meter in omtrek, zelf van gewone vorm terwijl zijn genetische toevalstreffer terechtkwam in tuinen die hij nooit zal zien. Ginkgo is een levend fossiel, een geslacht dat de bloemplanten tientallen miljoenen jaren voorgaat en vrijwel onveranderd bleef, wat de bijdrage van dit park bijna komisch maakt: niet de ouderdom van de boom, maar één afwijkende tak die een tuincentrumproduct werd. Het Kronenburgerpark is gratis, centraal en zelf rijksmonument, aangelegd op de net gesloopte vestingwerken van de stad."
+    },
+    "nij_003": {
+      "name": "De beukenkring van het Sterrenbos",
+      "species": "Beuk (Fagus sylvatica)",
+      "age_estimate": "275 jaar",
+      "access": "Gratis, openbaar park, dagelijks open",
+      "transport": "Nijmegen-Zuid, Brakkenstein; bij de Radboud Universiteit en het Radboudumc, bereikbaar met de bus over de Heyendaalseweg",
+      "story": "De oudste boom van Nijmegen staat niet op een slagveld en niet naast een museum. Hij staat in een ster. Het Sterrenbos, een stervormig patroon van uitwaaierende boslanen dat in de achttiende eeuw op landgoed Brakkenstein werd aangelegd, ligt nog altijd in wat nu Park Brakkenstein heet, en een kring beuken uit datzelfde plan is volgens lokale historici het oudste levende bomenbestand binnen de stadsgrenzen, geschat op 250 tot 300 jaar. Niet elke oorspronkelijke beuk heeft het gehaald. Een deel van de ring is in die drie eeuwen van ouderdom bezweken, en tussen de overgebleven stammen vallen nu zichtbare gaten, wat bij het verhaal hoort: dit is een restant van een beplantingsplan, geen compleet gerestaureerde set. De lanen eromheen zijn ouder dan het park als openbare ruimte, ruwweg twee eeuwen ouder, aangelegd toen Brakkenstein nog een particulier landgoed was dat voor het eerst in 1654 wordt genoemd. Niemand heeft een boom uit de ring afzonderlijk op jaarringen gedateerd, dus de leeftijd blijft een marge en geen meting. Wat er staat is gratis en vrij toegankelijk, in een park dat in het zuiden van de stad ingeklemd ligt tussen de campus van de Radboud Universiteit en een spoorlijn. Het is het dichtste wat deze stad heeft bij een boom die zijn eigen park om zich heen zag ontstaan."
+    },
+    "nij_004": {
+      "name": "De Julianaboom",
+      "species": "Witte paardenkastanje (Aesculus hippocastanum)",
+      "age_estimate": "78 jaar",
+      "access": "Gratis, openbaar park, dagelijks open",
+      "transport": "Nijmegen-Oost, wijk Altrade; 20 minuten lopen of een korte busrit vanaf het centrum",
+      "story": "Deze kastanje heeft een geboortedatum op papier: 4 september 1948, de dag dat Juliana koningin van Nederland werd na de troonsafstand van haar moeder Wilhelmina. Nijmegen markeerde die dag met een witte paardenkastanje in wat nu het Julianapark heet, een voormalig begraafplaatsterrein in de wijk Altrade dat park werd en naar de nieuwe koningin werd genoemd. Een doodgewone soort die uitgroeide tot een ongewoon goed gedocumenteerd exemplaar: zijn plantdatum hangt aan een gebeurtenis en niet aan jaarringen of aan het stichtingsjaar van een park, de precisie die de meeste bomen op deze lijst missen. Paardenkastanjes horen hier niet van nature thuis. Ze kwamen in de zestiende eeuw vanaf de Balkan naar het westen en werden zo grondig opgenomen in Nederlandse parken en straten dat de meeste bewoners aannemen dat ze er altijd al stonden. Deze heeft de koningin voor wie hij geplant werd inmiddels ruim twee decennia overleefd, en het land eromheen wisselde sindsdien twee keer van vorst. Het Julianapark zelf is klein, gratis en vooral een buurtpark, een rustig stuk groen ten oosten van het centrum, zonder het Romeinse gewicht van het Valkhofpark of de vestinggeschiedenis van het Kronenburgerpark. Eén gedateerde boom die doet wat een geplante gedenkboom hoort te doen: een dag vastleggen en er daarna gewoon voorbij groeien."
+    },
+    "nij_005": {
+      "name": "De mammoetboom van het Krayenhoffpark",
+      "species": "Mammoetboom (Sequoiadendron giganteum)",
+      "age_estimate": "100 jaar",
+      "access": "Gratis, openbaar park, dagelijks open",
+      "transport": "Wijk Biezen, Nijmegen; korte wandeling vanaf station Nijmegen via de Voorstadslaan",
+      "story": "In een van de kleinste parken van Nijmegen groeit een Californische reus, in een buurt die gebouwd is voor spoorwegpersoneel. Het Krayenhoffpark, in de Biezen vlak bij het rangeerterrein, heeft een mammoetboom die in september 2020 werd gemeten op net geen vier meter stamomtrek en ongeveer 25 meter hoogte. Waarschijnlijk is hij ergens in de jaren twintig geplant, maar dat is afgeleid uit zijn maat: geen enkele bron geeft een plantdatum. Als iemand die wel heeft, horen we het graag. Mammoetbomen bereikten Europa vanuit de Sierra Nevada in de jaren vijftig van de negentiende eeuw en werden daarna driekwart eeuw lang een echte plantmode, eerst bij landgoedeigenaren en uiteindelijk ook bij gemeentelijke plantsoenendiensten, die daarmee een boom die ouder dan tweeduizend jaar kan worden in tuinen zetten die voor decennia waren bedacht. In zijn eigen leefgebied zou dit exemplaar amper de puberteit hebben bereikt. In een klein Nederlands park tussen woningen uit het begin van de twintigste eeuw is hij nu al het hoogste levende wezen dat de meeste bewoners tegenkomen op weg naar de winkel. Gratis, klein en oninteressant naar de maatstaven van de grotere Nijmeegse parken, maar hij beloont iedereen die daadwerkelijk omhoogkijkt."
+    },
+    "nij_006": {
+      "name": "De haagbeuk van het Krayenhoffpark",
+      "species": "Gewone haagbeuk (Carpinus betulus)",
+      "age_estimate": "ongeveer 120 jaar",
+      "access": "Gratis, openbaar park, dagelijks open",
+      "transport": "Wijk Biezen, Nijmegen; korte wandeling vanaf station Nijmegen via de Voorstadslaan",
+      "story": "Deze haagbeuk staat zo dicht bij de mammoetboom van het Krayenhoffpark dat je hem zou aanzien voor een latere aanplant in de schaduw van de beroemde buurman, maar hij is ongeveer even oud en hoort bij een soort die hier om een heel andere reden werd geplant. Waar de mammoetboom een geïmporteerde curiositeit was, is de haagbeuk een inheemse werkboom, die in de Lage Landen eeuwenlang tot hagen en lanen werd geknipt omdat hij zware snoei verdraagt en zijn dode bruine blad de hele winter vasthoudt, zodat een kale haag ook in de koudste maanden nog iets afschermt.\n\nHet register dateert deze op ergens tussen 1900 en 1910, geplant terwijl de Biezen eromheen nog werd opgetrokken voor arbeiders van het nabijgelegen spoor. Vrij uitgegroeid in plaats van geknipt, zoals hier is gebeurd, krijgt een haagbeuk een bescheiden, breed uitwaaierende kroon die meer op een beuk lijkt dan op de strakke haag die de meeste mensen voor zich zien. Hij staat een paar meter van de mammoetboom, gratis, in hetzelfde kleine stuk groen dat een verder onopvallende spoorwijk zijn enige plek schaduw geeft die ouder is dan de huizen eromheen."
+    },
+    "nij_007": {
+      "name": "De valse christusdoorn van het Krayenhoffpark",
+      "species": "Valse christusdoorn (Robinia pseudoacacia)",
+      "age_estimate": "ongeveer 140 jaar",
+      "access": "Gratis, openbaar park, dagelijks open",
+      "transport": "Wijk Biezen, Nijmegen; korte wandeling vanaf station Nijmegen via de Voorstadslaan",
+      "story": "De naam van deze boom verwijst naar de doornenkroon, en dat is opmerkelijk voor een soort die tot de zeventiende eeuw in Europa nog nooit iemand had gezien. De valse christusdoorn komt uit Noord-Amerika, maar de scherpe doorns die per paar op zijn jonge takken staan waren scherp genoeg om de Europese folklore er alsnog het bijbelse verhaal aan te laten hangen. Dit exemplaar, door het register gedateerd op ongeveer 1880 tot 1890, is ouder dan zijn eigen park: het Krayenhoffpark en de spoorwegwoningen eromheen kwamen er pas in het begin van de twintigste eeuw, decennia nadat deze boom in wat toen open grond aan de stadsrand was de grond in ging.\n\nDe valse christusdoorn bindt stikstof uit de lucht via bacteriën op zijn wortels, hetzelfde trucje als klaver en bonen, en dat is een deel van de verklaring waarom hij op arme Europese gronden zo massaal is aangeplant, lang voordat iemand de scheikunde erachter begreep en kon uitleggen waarom hij gedijde waar andere bomen het lieten afweten. Hij staat een paar passen van de haagbeuk en de bekendere mammoetboom van het park, gratis toegankelijk, en is van de drie de oudste terwijl hij het minst opvalt."
+    },
+    "nij_008": {
+      "name": "De tamme kastanje van de begraafplaats Daalseweg",
+      "species": "Tamme kastanje (Castanea sativa)",
+      "age_estimate": "ongeveer 140 jaar",
+      "access": "Gratis, openbare begraafplaats, overdag open",
+      "transport": "Wijk Altrade, Nijmegen; ongeveer 20 minuten lopen vanaf station Nijmegen",
+      "story": "In 1884 vroegen vier katholieke parochies de Nijmeegse gemeenteraad toestemming voor een gezamenlijke begraafplaats aan de Daalseweg, en de bisschop van 's-Hertogenbosch wijdde het terrein in juni van het jaar daarop. Stadsarchitect Jan Jacob Weve ontwierp de aanleg rond twee brede paden die elkaar haaks kruisen, omzoomd met rode beuken waartussen hij zelf begraven ligt, en deze tamme kastanje aan de westkant stamt ongeveer uit datzelfde stichtingsdecennium. In 1948 sloot de begraafplaats voor nieuwe begravingen toen elders een opvolger openging, en veel graven werden later geruimd voor woningbouw, maar het terrein bleef intact genoeg om in 2002 rijksmonument te worden.\n\nDe geschiedenis hier is zwaarder dan op de meeste begraafplaatsen: 300 slachtoffers van het bombardement op Nijmegen in februari 1944, een aanval die op één middag ongeveer 800 mensen het leven kostte, liggen hier begraven. De tamme kastanje hoort hier van nature niet zo ver noordelijk thuis; de Romeinen brachten hem mee om de eetbare vruchten. Deze heeft het hele werkzame leven van de begraafplaats meegemaakt en alle decennia daarna, waarin het terrein beschermd erfgoed werd in plaats van een plek waar nog begraven wordt. Hij staat in de open ruimte, gratis te bezoeken tijdens de gewone openingstijden, op korte loopafstand van de gedenkkastanje van het Julianapark."
+    },
+    "nij_009": {
+      "name": "De Kabouterboom",
+      "species": "Tamme kastanje (Castanea sativa)",
+      "age_estimate": "300 tot 400 jaar, en volgens sommige bronnen 450",
+      "access": "Gratis. Bos op landgoed Heerlijkheid Beek, open voor wandelaars.",
+      "transport": "Ongeveer 4,5 km ten oosten van het centrum van Nijmegen. Bus 5 of 8 richting Beek, daarna lopend het Kastanjedal in.",
+      "story": "Kinderen in Beek krijgen al generaties te horen dat er kabouters in deze boom wonen, en zo kwam een tamme kastanje aan de naam Kabouterboom. Het is een makkelijk verhaal om te geloven. De stam is hol, minstens achteneenhalve meter in omtrek, en de openingen erin hebben het formaat van deuren.\n\nMet die omtrek is hij de dikste boom van Nederland, en juist door die holte kan niemand zeggen hoe oud hij is: er valt geen kern meer te tellen. De schattingen lopen van driehonderd tot vierhonderdvijftig jaar. Het register dat hem vermeldt zet de aanplant tussen 1600 en 1700 en tekent daarbij aan dat er rond Nijmegen waarschijnlijk al tamme kastanjes stonden sinds de Romeinen, die het gewas graag hadden en deze stuwwal graag zagen.\n\nIn januari 2005 staken kinderen hem in brand. Hij brandde van binnen uit, wat een holle boom nu eenmaal gemakkelijk doet, en iedereen ging ervan uit dat vier eeuwen daarmee ten einde waren. Dat voorjaar liep hij gewoon weer uit, en dat doet hij sindsdien elk jaar.\n\nHij staat in het Kastanjedal, een dal met oude kastanjes op landgoed Heerlijkheid Beek, dat Het Geldersch Landschap opengesteld houdt voor wandelaars."
+    },
+    "nij_010": {
+      "name": "De lindes van de Kopse Hof",
+      "species": "Hollandse linde (Tilia x europaea)",
+      "age_estimate": "225 tot 275 jaar",
+      "access": "Gratis. Openbaar terrein op het Kops Plateau, bereikbaar via de lindelaan.",
+      "transport": "Ongeveer 2,6 km ten oosten van het centrum, een half uur lopen over de Berg en Dalseweg.",
+      "story": "De Romeinen kozen deze plek rond 12 voor Christus en bouwden er een fort, want vanaf vierenzestig meter hoogte zie je de Waal, de Ooijpolder, de Betuwe en zo ongeveer tot Arnhem. Achttien eeuwen later plantte iemand er lindes om precies datzelfde uitzicht.\n\nDe groep staat op de heuveltop aan het eind van een lindelaan, en die twee zijn vrijwel zeker tegelijk geplant, met de laan als de weg naar boven. Het register dateert beide tussen 1750 en 1800 en laat zien waarop het dat baseert: de heuvel staat op de kaart van Tranchot uit 1803, en zowel de laan als de heuvel zijn ingetekend op de kadastrale kaart van 1811.\n\nDe groep op de top staat er onder een categorie die niets met formaat te maken heeft. Ze zijn geregistreerd als kruisboom, wat in het Nederlandse register een boom is die met een religieus doel is geplant. De toelichting zegt alleen dat ze dat doel mogelijk hebben gediend, en dat is de eerlijke versie: niemand weet nu nog wat hier de bedoeling was.\n\nHet register telt er drie bij het uitzichtpunt. In de buurt heten ze de vier apostelen, wat suggereert dat het er ooit vier waren, en dat is het soort rekensom dat oude bomen meestal verliezen."
+    },
+    "nij_011": {
+      "name": "De taxus van het Bartholomeuskerkje",
+      "species": "Taxus (Taxus baccata)",
+      "age_estimate": "onbekend",
+      "access": "Gratis. Open kerkhof.",
+      "transport": "Ongeveer 4,7 km ten oosten van het centrum van Nijmegen, aan de Rijksstraatweg in Beek. Bus 5 of 8.",
+      "story": "Een oorkonde uit 1286 is de eerste vermelding van het kerkje waar deze boom naast staat, en het kerkhof eromheen is sindsdien onafgebroken in gebruik. De negentiende eeuw was hard voor het gebouw: vanaf 1796 gedeeld door katholieken en protestanten, door beide verwaarloosd, in 1824 gesloten omdat het onveilig was, en pas gered toen koning Willem I geld voor het herstel gaf.\n\nDe taxus stond er die hele tijd al. Het register wijst op een schilderij van Barend Cornelis Koekkoek uit ongeveer 1830 waarop het kerkje met deze boom ernaast te zien is, toen al met het voorkomen van een boom die er lang stond, en concludeert dat hij waarschijnlijk ouder is dan tweehonderd jaar. Dat is één bron die zorgvuldig redeneert en niet iemand die heeft gemeten, dus behandel de leeftijd ook als een redenering.\n\nWat wel vaststaat is wat een taxus met tijd doet. Hij groeit langzaam, wordt vroeg hol en gaat daarna eeuwenlang door op het punt waar elke andere boom klaar zou zijn geweest, en dat is de reden dat taxussen en kerkhoven in Noord-Europa al duizend jaar gezelschap van elkaar houden.\n\nHet kerkhof is open, klein en stil, en de stichting die het beheert noemt het parkachtig. Dat is niet overdreven."
+    },
+    "nij_012": {
+      "name": "De Wilhelminaboom op het Hertogplein",
+      "species": "Linde (Tilia sp.)",
+      "age_estimate": "onbekend",
+      "access": "Gratis, een openbaar plein in het centrum, altijd toegankelijk",
+      "transport": "Ongeveer 15 minuten lopen vanaf station Nijmegen Centraal",
+      "story": "Nijmegen kroonde een koningin met een boom. Op 1 september 1898, vijf dagen voor de inhuldiging van Wilhelmina, plantte de stad een linde op het Hertogplein en zette er een smeedijzeren hek omheen met kroontjes erop, ontworpen door architect Derk Semmelink. Het hek overleefde de Duitse bezetting. De kroontjes niet: soldaten sloopten ze eraf, en het hek stond kaal tot 24 juli 1948, toen leerlingen van de Nijmeegse ambachtsschool nieuwe kroontjes smeedden en de stad ze bij een openbare plechtigheid liet terugplaatsen.\n\nOf de boom zelf het zo lang heeft volgehouden is minder zeker. De Nederlandse Wikipedia schrijft over dit plein dat de oorspronkelijke linde inmiddels voor een andere heeft plaatsgemaakt, zonder te zeggen wanneer. Een lokaalhistorisch stuk uit 2025 beschrijft de boom die er nu staat en noemt een vervanging helemaal niet. Het landelijke bomenregister dateert deze plek op de jaren tachtig van de negentiende eeuw, een decennium voor de inhuldigingsplanting die de twee andere bronnen beschrijven. Niemand heeft die drie met elkaar in overeenstemming gebracht, en deze pagina doet ook niet alsof: wat er op het Hertogplein staat is een linde, omringd door een hek dat voor een andere boom is gemaakt, en zijn werkelijke leeftijd is onbekend.\n\nHet hek staat in elk geval vast. Dat heeft al minstens één boom overleefd."
+    },
+    "nij_013": {
+      "name": "De beverboom van Park Leeuwenstein",
+      "species": "Magnolia (Magnolia sp., soort niet vastgesteld)",
+      "age_estimate": "ongeveer 140 jaar",
+      "access": "Gratis, openbaar gemeentepark, altijd toegankelijk",
+      "transport": "Ongeveer 2,9 km vanaf het centrum van Nijmegen, in Nijmegen-West",
+      "story": "Park Leeuwenstein is wat er over is van de tuin van een gesloopt landhuis, en deze magnolia is wat er over is van de bijzondere bomen daarin. Villa Leeuwenstein verrees rond het midden van de negentiende eeuw en ging in 1958 tegen de vlakte, te vervallen om te redden, maar de bomen die de eigenaren eromheen hadden geplant groeiden door toen het huis dat niet meer deed. Een storm op 18 januari 2018 nam in één nacht de mammoetboom van het park en een moerascipres mee, waarmee deze boom, de beverboom, het oudste overgebleven exemplaar werd.\n\nBeverboom is een oude Nederlandse naam voor magnolia, en dan specifiek voor Magnolia virginiana, al is niet vastgesteld welke soort hier precies groeit. Een lokale inventarisatie van het park uit 2023 noemde bij de bijzondere bomen nog een augurkmagnolia, Magnolia acuminata, en dat kan dezelfde boom zijn die het landelijke register hier op coördinaat en niet op naam vastlegt. Acuminata bloeit groengeel nadat het blad is uitgelopen, laat in het voorjaar; virginiana bloeit roomwit en geurend in de vroege zomer. Eén foto in bloei zou de zaak beslechten.\n\nWelke van de twee het ook is, het register dateert de aanplant op de jaren tachtig van de negentiende eeuw, ongeveer 140 jaar, een bijzondere boom die het huis waarnaast hij geplant werd en twee van zijn eigen buren heeft overleefd."
+    },
+    "nij_014": {
+      "name": "De pastoriekastanje van Lent",
+      "species": "Witte paardenkastanje (Aesculus hippocastanum)",
+      "age_estimate": "ongeveer 130 jaar",
+      "access": "Gratis, op het openbare plein voor de parochiekerk, altijd toegankelijk",
+      "transport": "Ongeveer 8 minuten lopen vanaf station Nijmegen Lent",
+      "story": "Een dorpsplein in Lent doet dienst als de voortuin van een kastanje. De kerk Onze Lieve Vrouw Geboorte werd tussen 1877 en 1879 gebouwd naar ontwerp van architect G. te Riele Wzn, en het register dateert de kastanje op het voorplein een kleine twintig jaar later, uit de tijd dat de pastorie ernaast verrees. De omschrijving in het rijksmonumentenregister noemt hem nog altijd: een oude kastanjeboom op het plein voor de kerk, met de pastorie aan de noordkant.\n\nLent zelf is sindsdien harder veranderd dan de boom. Het was een dorp op de noordoever van de Waal tot Nijmegen het in 1998 annexeerde, en sinds 2016 hebben een kunstmatig eiland en een nieuwe brug van de uiterwaarden de nieuwste stadswijk gemaakt. Het plein met de kastanje ligt een paar straten van dat alles vandaan, aan de weg naar wat voorlopig nog een dorpskern met een eigen parochie is en geen buitenwijk van iets anders.\n\nDe boom is ongeveer 130 jaar oud en staat in de open lucht, gratis te zien op elk uur van de dag, op een paar minuten lopen van het station van Lent."
+    },
+    "nij_015": {
+      "name": "De treurbeuk van Begraafplaats Daalseweg",
+      "species": "Treurbeuk (Fagus sylvatica 'Pendula')",
+      "age_estimate": "ruwweg 125 tot 135 jaar, op basis van de plantband 1890-1900 uit het register",
+      "access": "Gratis, openbaar begraafplaatsterrein, overdag open. Wees respectvol, het is een werkende begraafplaats.",
+      "transport": "Ongeveer 1,5 km ten noordwesten van station Nijmegen, ruwweg 20 minuten lopen of een korte busrit.",
+      "story": "Een treurbeuk hangt met opzet. Elke gewone beuk reikt omhoog naar zijn deel van het licht; deze draagt een mutatie die de takken juist naar beneden trekt, zodat de kroon eerder naar de grond stroomt dan naar de hemel spreidt. Hij staat rechts van de toegangspoort van Begraafplaats Daalseweg, de eerste boom die een bezoeker tegenkomt.\n\nDe begraafplaats zelf is een beschermd rijksmonument, niet vanwege een enkele boom maar vanwege het hele ontwerp: twee paden doorkruisen het terrein, beide beplant met beuken, die samenkomen bij een kruisbeeld in het midden. De treurbeuk bij de poort doorbreekt dat geplande ritme met opzet, een sierlijke uitzondering tussen de discipline van de rijen erachter.\n\nHet Landelijk Register Monumentale Bomen dateert de aanplant tussen 1890 en 1900, wat de boom op ruwweg 125 tot 135 jaar zet, en noemt hem het eigen beschermde exemplaar van de begraafplaats. Het register is de enige bron die voor deze specifieke boom is gevonden: lokale geschiedschrijving over de begraafplaats beschrijft de beukenlanen en het kruisbeeld uitvoerig, maar noemt deze boom niet apart, dus de leeftijd komt alleen uit het register.\n\nHet terrein hoort bij een werkende katholieke begraafplaats en is overdag vrij toegankelijk. Loop er stil."
+    },
+    "nij_016": {
+      "name": "De plataan van de Petruskerk",
+      "species": "Gewone plataan (Platanus x acerifolia)",
+      "age_estimate": "ruwweg 145 tot 155 jaar, op basis van de plantband 1870-1880 uit het register",
+      "access": "Gratis, openbaar kerkplein, altijd open.",
+      "transport": "Ongeveer 3,5 km ten westen van station Nijmegen, bereikbaar met de bus richting Hees, ruwweg 10 minuten lopen vanaf de dichtstbijzijnde halte.",
+      "story": "Platanen laten hun schors los in plaats van er rustig nieuwe jaarringen onder te leggen, en stoten het hele jaar door plekken schors af zodat er lichter hout onder zichtbaar wordt, wat verklaart waarom een oude plataan er gevlekt en half gestroopt uitziet in plaats van gewoon verweerd. Deze staat op het kleine plein naast de Petruskerk in Hees, een Nijmeegse wijk die ooit een eigen dorp was voordat de stad ernaartoe groeide.\n\nHet Landelijk Register Monumentale Bomen dateert de aanplant tussen 1870 en 1880, wat de boom op ruwweg 145 tot 155 jaar zet, en noemt hem beschermd. Dat register is de enige bron die voor deze specifieke boom is gevonden: geschiedschrijving over het plein en de kerk beschrijft de omgeving uitvoerig, maar noemt deze plataan niet apart, dus de leeftijd steunt alleen op het woord van het register.\n\nHet plein hoort bij het kerkterrein en oogt als gewone openbare ruimte, een klein plein voor een werkende parochie in plaats van een afgesloten binnenplaats, en het register zelf noteert het als bezoekbaar. Verder is er nog niets over deze specifieke boom naar boven gekomen. Weet je meer, laat het ons weten."
+    },
+    "nij_017": {
+      "name": "De rode beuk van de Antonius Abtkerk",
+      "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+      "age_estimate": "ruwweg 225 tot 275 jaar, op basis van de plantband 1750-1800 uit het register",
+      "access": "Gratis, kerkterrein zichtbaar en open voor bezoekers.",
+      "transport": "Ongeveer 4 km ten westen van station Nijmegen, bereikbaar met de bus richting Hees.",
+      "story": "Deze rode beuk is ouder dan de kerk ernaast. De huidige Antonius Abtkerk aan de Dennenstraat, een rode bakstenen gebouw van architect Pierre Cuypers, verrees in 1879 en 1880. Het landelijk register plaatst de beuk op de grens van de kerk en de pastorie ergens tussen 1750 en 1800, ruwweg een eeuw ouder dan de stenen ernaast.\n\nDat is minder vreemd dan het klinkt. De parochie zelf gaat eeuwen verder terug dan Cuypers: er stond al een oudere kerk op deze grond voor de zijne, een kerkschuur werd hier in 1826 herbouwd, en de parochiegeschiedenis voert terug tot een zestiende-eeuwse voorganger. Een beuk geplant in de late achttiende eeuw zou zijn opgegroeid naast wat hier toen ook stond, en heeft dat simpelweg overleefd, zoals oude bomen op kerkgrond vaak doen.\n\nRode beuken dragen een mutatie die hun bladeren met rood pigment overspoelt, waardoor deze van een afstand bijna zwart oogt tegen het metselwerk. Het Landelijk Register Monumentale Bomen is de enige bron die voor deze specifieke boom is gevonden, ruwweg 225 tot 275 jaar op basis van de plantschatting; lokale parochie- en erfgoedgeschiedenis bevestigt het lange religieuze gebruik van de plek, maar noemt de beuk zelf niet, dus de leeftijd steunt alleen op het register.\n\nHet terrein staat geregistreerd als bezoekbaar en zichtbaar vanaf de straat, gewone kerkgrond in de wijk Hees in plaats van een afgesloten privétuin."
+    },
+    "nij_018": {
+      "name": "De zilveresdoorn van het Sumatraplein",
+      "species": "Zilveresdoorn (Acer saccharinum)",
+      "age_estimate": "ruwweg 100 tot 125 jaar, bronnen verschillen",
+      "access": "Gratis, openbare straatboom aan de gemeentelijke berm, altijd te bezichtigen",
+      "transport": "Nijmegen-Oost, ongeveer 20 minuten lopen vanaf station Nijmegen",
+      "story": "De meeste beschermde bomen van Nijmegen hebben de volledige monumentale status van het register. Deze heeft een lagere status, 'potentieel', een kandidaat in plaats van een bevestigd monument, wat niets verandert aan hoe het is om ervoor te staan: een zilveresdoorn aan een woonstraat in Nijmegen-Oost, ergens voorbij zijn eerste eeuw.\n\nAcer saccharinum groeit snel en splijt makkelijk, waardoor Amerikaanse steden er tientallen jaren eerder dan Europese mee stopten als straatboom; de bomen die een vroege plantgolf overleefden zijn meestal de exemplaren die niemand ooit heeft vervangen. Deze heeft dat volgehouden op een gemeentelijke berm, eigendom van en onderhouden door de stad in plaats van een prive tuin, wat ook de reden is dat hij een openbare registervermelding kan dragen.\n\nTwee gemeentelijke bronnen verschillen over de plantdatum: het landelijk register houdt het op 1900 tot 1910, de eigen bomendataset van de gemeente noemt 1930. Geen van beide is een meting, en er is ook geen omtrek geregistreerd, dus behandel elk los getal als een schatting. Hij staat in het open veld aan het Sumatraplein, gratis te zien op elk moment, ongeveer twintig minuten lopen vanaf het station."
+    },
+    "nij_019": {
+      "name": "De paardenkastanje van Landhuis Brakkenstein",
+      "species": "Paardenkastanje (Aesculus hippocastanum)",
+      "age_estimate": "onzeker, twee bronnen verschillen",
+      "access": "Gratis. Park Brakkenstein is een openbaar stadspark in het zuiden van Nijmegen; geen hek, geen kaartje.",
+      "transport": "Zuid-Nijmegen, wijk Heijendaal, nabij de Radboud Universiteit en het Radboudumc.",
+      "story": "Het eigen bomenregister van de gemeente Nijmegen en het landelijk register van monumentale bomen zijn het over bijna niets eens wat deze paardenkastanje betreft, behalve de plek. Het ene zegt dat hij rond 1830 werd geplant, bijna twee eeuwen geleden. Het andere houdt het op 1920, nog maar net voorbij zijn eerste eeuw. Geen van beide cijfers is een meting, allebei zijn het schattingen op apart papier, en tachtig jaar verschil is te veel om zomaar te middelen.\n\nWaar beide bronnen het wel over eens zijn is de plek: een stam van ruim twee en driekwart meter omtrek, bij het landhuis van Landgoed Brakkenstein, een stervormige achttiende-eeuwse parkaanleg in Heijendaal. De lanen van het landgoed werden vooral met beuken beplant, op één westelijke laan na die met paardenkastanjes staat, wat de eerlijke mogelijkheid openhoudt dat deze boom bij die laan hoorde in plaats van een op zichzelf staand exemplaar voor het landhuis.\n\nDe neoclassicistische villa uit 1865 waar hij naast staat is nu een evenementen- en restaurantlocatie, maar het park eromheen is gewoon open, zoals een stadspark open is: geen hek, geen kaartje, gewoon een wandeling door Heijendaal langs de Radboud Universiteit. Twee registers, twee leeftijden, een eerlijke boom, en een vraag die niemand heeft beantwoord: geplant voor het huis, of stond hij er al?"
+    },
+    "nij_020": {
+      "name": "De beuk van Landhuis Brakkenstein",
+      "species": "Beuk (Fagus sylvatica)",
+      "age_estimate": "onzeker, twee bronnen verschillen",
+      "access": "Gratis. Hetzelfde openbare stadspark als nij_019, zo'n vijftien meter van die paardenkastanje.",
+      "transport": "Zuid-Nijmegen, wijk Heijendaal, nabij de Radboud Universiteit en het Radboudumc. Dezelfde locatie als nij_019.",
+      "story": "Vijftien meter van die paardenkastanje staat een beuk met een stam van ruim vier meter omtrek, dik genoeg dat de eigen dataset van de gemeente een stamdiameterklasse noteert die normaal bij bomen hoort die tientallen jaren ouder zijn dan de geregistreerde plantdatum. Dat verschil is precies het interessante: de gemeentelijke registratie zegt 1880, ongeveer 146 jaar geleden, terwijl het landelijk register van monumentale bomen 1830 tot 1840 aanhoudt, dichter bij de 190. Een stam van dit formaat past beter bij het oudere getal, al heeft niemand het verschil opgelost en is geen van beide cijfers een meting.\n\nHij staat op Landgoed Brakkenstein, het achttiende-eeuwse sterrenbos in Heijendaal, naast de villa uit 1865 die zowel deze boom als zijn buurman de kastanje hun adres geeft. De lanen van het park werden vooral met beuken beplant, dus dit kan een individuele aanwijzing zijn in plaats van een laanboom: zijn diameterklasse ligt ruim boven die van de beuken langs de laan verderop, wat een van de redenen is dat hij een eigen plek in het register kreeg in plaats van bij de laan te worden ondergebracht.\n\nGratis te zien, in een gewoon openbaar park bij de Radboud Universiteit, geen hek en geen kaartje. Twee registraties, twee leeftijden, en een stam die lijkt te pleiten voor de oudere."
+    },
+    "nij_021": {
+      "name": "De Boom van Lücker",
+      "species": "Tamme kastanje (Castanea sativa)",
+      "age_estimate": "ongeveer 25 jaar (geplant in 2000)",
+      "access": "Gratis, aan een openbare straat (Ubbergseveldweg), Nijmegen-Oost",
+      "transport": "Nijmegen-Oost ligt op ongeveer 20 tot 25 minuten lopen, of een korte busrit, van station Nijmegen Centraal",
+      "story": "In 1924 kocht een tekenleraar een kastanjeboom met het geld van een eigen linosnede van diezelfde boom.\n\nDe boom die hier nu staat is niet die boom, en dat verschil is het hele verhaal. Eugene Luckers kastanje was hier ergens tussen 1770 en 1794 ontkiemd, bronnen verschillen, en in de jaren twintig kwamen arbeiders hem omhakken. Lucker en jonkheer Van der Goes van Naters, later SDAP-fractievoorzitter, hielden hen tegen, haalden honderd gulden op met de verkoop van Luckers eigen linosnede, en kochten hem vrij. Dezelfde dag richtten ze de Nijmeegsche Vereeniging voor Natuurschoon op, en daar begint de georganiseerde natuurbescherming in Nijmegen.\n\nDie kastanje werd ziek en viel in 1996, veertien meter hoog en drie meter in omtrek. De vereniging hield hetzelfde jaar op te bestaan en verkocht de grond voor een gulden aan de gemeente. De gemeente hield zich aan de belofte die daarbij hoorde: in 2000 plantte kunstenaar Diane Dyckhoff schuin aan de overkant van de straat een jonge tamme kastanje, binnen een cirkel van stalen ringen en blauw grind, die ringen staan voor de groeiringen die deze boom nog moet vormen.\n\nJe loopt dus naar een boom van ongeveer vijfentwintig jaar, op een adres dat sinds de achttiende eeuw een kastanje heeft gedragen, op vier jaar na. Een rond plaquette in de stoep markeert de plek van de oude boom. De jonge staat zo'n tien meter verderop, voorbij de kruising met de Broerweg, aan de rechterkant als je de stad uit loopt."
+    },
+    "nij_022": {
+      "name": "De Mariaboom van Marienbosch",
+      "species": "Linde (Tilia sp.)",
+      "age_estimate": "meer dan 200 jaar (boorkernmonster)",
+      "access": "Gratis, in het Marienbosch (openbaar toegankelijk bos/park); de boom staat buiten de hoofdpaden op een lage heuvel en is niet vanaf een voor de hand liggende plek meteen te zien",
+      "transport": "Marienbosch ligt aan de Heyendaalseweg-kant van Nijmegen, ongeveer 30 tot 35 minuten lopen vanaf station Nijmegen Centraal, of een korte bus- of fietsrit richting de Radboud Universiteit",
+      "story": "Een kaart uit 1570 noemt deze plek al het Maria en boomken.\n\nEen boorkern uit de linde die hier nu staat wees op een leeftijd van ruim tweehonderd jaar, wat de stam behoorlijk wat jonger maakt dan de naam doet vermoeden. De Bomenstichting, die deze meting deed, vermoedt dat de boom op de schouders staat van een veel ouder wortelstelsel, al komt dat vermoeden uit de continuiteit van de plek en niet uit iets dat in het hout is gemeten.\n\nWat de heuvel vooral heeft gezien, is een lange gewoonte om naar een boom te lopen. Tot in het begin van de twintigste eeuw stond er een theekoepel naast de linde, waar dames uit de betere kringen in de schaduw thee dronken. Na de bouw van klooster en kostschool Marienbosch in 1924 vertrok jaarlijks een processie vanuit Nijmegen, werd onder de takken een Marialied gezongen en een Mariabeeld opgehangen. Er was een kapel gepland die er nooit kwam. Een stenen zuil met een Mariabeeld stond hier en is sindsdien verdwenen.\n\nDe boom staat op een lage verhoging buiten de hoofdpaden van het Marienbosch en valt niet meteen op, dus dit is er een om gericht naar op zoek te gaan in plaats van toevallig tegen te komen. Ook welke linde het precies is, is niet vastgesteld: de bron die de leeftijd vaststelde noemt hem gewoon een linde. Kun je aan het blad een winterlinde van een zomerlinde onderscheiden? Laat ons weten welke er op de Mariaheuvel staat."
+    }
   }
- ],
- "strings_note": "Per-tree fields: name, species (Dutch common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
- "trees": {
-  "nij_001": {
-   "name": "De esdoorn van het Valkhofpark",
-   "species": "Gewone esdoorn (Acer pseudoplatanus)",
-   "age_estimate": "145 jaar",
-   "access": "Gratis, openbaar park, dagelijks open",
-   "transport": "Centrum van Nijmegen, op de Valkhofheuvel; 10 minuten lopen vanaf station Nijmegen",
-   "story": "De meest recente boom van het jaar van Nijmegen groeit op grond waarover sinds de Romeinen is gevochten. Het Valkhofpark ligt op de Valkhofheuvel, waar een Romeins legerkamp lag en later het keizerlijk paleis van Karel de Grote, en in 2021 kozen buurtbewoners deze gewone esdoorn, rond 1880 geplant, tot boom van het jaar. Hij is ongeveer 23 meter hoog en heeft een stamomtrek van net geen vier meter: netjes, geen record, in een park waarvan de ruïnes tweeduizend jaar teruggaan. Wat hem tot gekozen boom maakt is niet zijn ouderdom, want het Romeinse kamp eronder is ouder dan alles wat er boven de grond leeft, maar zijn aanwezigheid. Dit is de esdoorn die bezoekers werkelijk opvalt, tussen jongere aanplant en veel oudere stenen. Zulke buurtstemmingen worden in Nederland elk jaar gehouden, meestal voor bomen die veel bijzonderder klinken dan een gewone esdoorn. Het Valkhofpark zelf is rijksmonument, een van de langst achtereen gebruikte verdedigings- en woonplekken van het land, en de twee middeleeuwse bouwwerken die er nog staan, de Barbarossaruïne en de Sint-Nicolaaskapel, zijn ruwweg zeven eeuwen ouder dan de boom. Gratis en midden in de stad, en daarmee wordt een Romeinse heuveltop een doodgewone plek om onder een boom te gaan zitten."
-  },
-  "nij_002": {
-   "name": "De moederginkgo van het Kronenburgerpark",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "95 jaar",
-   "access": "Gratis, openbaar park, dagelijks open",
-   "transport": "Centrum van Nijmegen; 10 minuten lopen vanaf station Nijmegen",
-   "story": "Eén ginkgo in een Nijmeegs park heeft in alle stilte een plantenras opgeleverd dat nu in heel Europa verkocht wordt. Ergens rond 1930 wortelde hij in het Kronenburgerpark, in 1881 en 1882 aangelegd net buiten de oude stadsmuur, en decennia later viel een kweker een tak op die vreemd, compact en verward groeide, een heksenbezem die niet op de rest van de boom leek. Geënt, vermeerderd en in 1995 geregistreerd werd die mutatie Ginkgo biloba 'Mariken', een dwergcultivar die inmiddels ver buiten Nederland bij kwekers in de handel is en later de Award of Garden Merit van de Royal Horticultural Society kreeg. De naam komt van Mariken van Nieumeghen, het zestiende-eeuwse mirakelspel over een Nijmeegse vrouw die een pact sluit met de duivel. De boom die het allemaal voortbracht staat er nog, ongeveer 95 jaar oud en zo'n 2,85 meter in omtrek, zelf van gewone vorm terwijl zijn genetische toevalstreffer terechtkwam in tuinen die hij nooit zal zien. Ginkgo is een levend fossiel, een geslacht dat de bloemplanten tientallen miljoenen jaren voorgaat en vrijwel onveranderd bleef, wat de bijdrage van dit park bijna komisch maakt: niet de ouderdom van de boom, maar één afwijkende tak die een tuincentrumproduct werd. Het Kronenburgerpark is gratis, centraal en zelf rijksmonument, aangelegd op de net gesloopte vestingwerken van de stad."
-  },
-  "nij_003": {
-   "name": "De beukenkring van het Sterrenbos",
-   "species": "Beuk (Fagus sylvatica)",
-   "age_estimate": "275 jaar",
-   "access": "Gratis, openbaar park, dagelijks open",
-   "transport": "Nijmegen-Zuid, Brakkenstein; bij de Radboud Universiteit en het Radboudumc, bereikbaar met de bus over de Heyendaalseweg",
-   "story": "De oudste boom van Nijmegen staat niet op een slagveld en niet naast een museum. Hij staat in een ster. Het Sterrenbos, een stervormig patroon van uitwaaierende boslanen dat in de achttiende eeuw op landgoed Brakkenstein werd aangelegd, ligt nog altijd in wat nu Park Brakkenstein heet, en een kring beuken uit datzelfde plan is volgens lokale historici het oudste levende bomenbestand binnen de stadsgrenzen, geschat op 250 tot 300 jaar. Niet elke oorspronkelijke beuk heeft het gehaald. Een deel van de ring is in die drie eeuwen van ouderdom bezweken, en tussen de overgebleven stammen vallen nu zichtbare gaten, wat bij het verhaal hoort: dit is een restant van een beplantingsplan, geen compleet gerestaureerde set. De lanen eromheen zijn ouder dan het park als openbare ruimte, ruwweg twee eeuwen ouder, aangelegd toen Brakkenstein nog een particulier landgoed was dat voor het eerst in 1654 wordt genoemd. Niemand heeft een boom uit de ring afzonderlijk op jaarringen gedateerd, dus de leeftijd blijft een marge en geen meting. Wat er staat is gratis en vrij toegankelijk, in een park dat in het zuiden van de stad ingeklemd ligt tussen de campus van de Radboud Universiteit en een spoorlijn. Het is het dichtste wat deze stad heeft bij een boom die zijn eigen park om zich heen zag ontstaan."
-  },
-  "nij_004": {
-   "name": "De Julianaboom",
-   "species": "Witte paardenkastanje (Aesculus hippocastanum)",
-   "age_estimate": "78 jaar",
-   "access": "Gratis, openbaar park, dagelijks open",
-   "transport": "Nijmegen-Oost, wijk Altrade; 20 minuten lopen of een korte busrit vanaf het centrum",
-   "story": "Deze kastanje heeft een geboortedatum op papier: 4 september 1948, de dag dat Juliana koningin van Nederland werd na de troonsafstand van haar moeder Wilhelmina. Nijmegen markeerde die dag met een witte paardenkastanje in wat nu het Julianapark heet, een voormalig begraafplaatsterrein in de wijk Altrade dat park werd en naar de nieuwe koningin werd genoemd. Een doodgewone soort die uitgroeide tot een ongewoon goed gedocumenteerd exemplaar: zijn plantdatum hangt aan een gebeurtenis en niet aan jaarringen of aan het stichtingsjaar van een park, de precisie die de meeste bomen op deze lijst missen. Paardenkastanjes horen hier niet van nature thuis. Ze kwamen in de zestiende eeuw vanaf de Balkan naar het westen en werden zo grondig opgenomen in Nederlandse parken en straten dat de meeste bewoners aannemen dat ze er altijd al stonden. Deze heeft de koningin voor wie hij geplant werd inmiddels ruim twee decennia overleefd, en het land eromheen wisselde sindsdien twee keer van vorst. Het Julianapark zelf is klein, gratis en vooral een buurtpark, een rustig stuk groen ten oosten van het centrum, zonder het Romeinse gewicht van het Valkhofpark of de vestinggeschiedenis van het Kronenburgerpark. Eén gedateerde boom die doet wat een geplante gedenkboom hoort te doen: een dag vastleggen en er daarna gewoon voorbij groeien."
-  },
-  "nij_005": {
-   "name": "De mammoetboom van het Krayenhoffpark",
-   "species": "Mammoetboom (Sequoiadendron giganteum)",
-   "age_estimate": "100 jaar",
-   "access": "Gratis, openbaar park, dagelijks open",
-   "transport": "Wijk Biezen, Nijmegen; korte wandeling vanaf station Nijmegen via de Voorstadslaan",
-   "story": "In een van de kleinste parken van Nijmegen groeit een Californische reus, in een buurt die gebouwd is voor spoorwegpersoneel. Het Krayenhoffpark, in de Biezen vlak bij het rangeerterrein, heeft een mammoetboom die in september 2020 werd gemeten op net geen vier meter stamomtrek en ongeveer 25 meter hoogte. Waarschijnlijk is hij ergens in de jaren twintig geplant, maar dat is afgeleid uit zijn maat: geen enkele bron geeft een plantdatum. Als iemand die wel heeft, horen we het graag. Mammoetbomen bereikten Europa vanuit de Sierra Nevada in de jaren vijftig van de negentiende eeuw en werden daarna driekwart eeuw lang een echte plantmode, eerst bij landgoedeigenaren en uiteindelijk ook bij gemeentelijke plantsoenendiensten, die daarmee een boom die ouder dan tweeduizend jaar kan worden in tuinen zetten die voor decennia waren bedacht. In zijn eigen leefgebied zou dit exemplaar amper de puberteit hebben bereikt. In een klein Nederlands park tussen woningen uit het begin van de twintigste eeuw is hij nu al het hoogste levende wezen dat de meeste bewoners tegenkomen op weg naar de winkel. Gratis, klein en oninteressant naar de maatstaven van de grotere Nijmeegse parken, maar hij beloont iedereen die daadwerkelijk omhoogkijkt."
-  },
-  "nij_006": {
-   "name": "De haagbeuk van het Krayenhoffpark",
-   "species": "Gewone haagbeuk (Carpinus betulus)",
-   "age_estimate": "ongeveer 120 jaar",
-   "access": "Gratis, openbaar park, dagelijks open",
-   "transport": "Wijk Biezen, Nijmegen; korte wandeling vanaf station Nijmegen via de Voorstadslaan",
-   "story": "Deze haagbeuk staat zo dicht bij de mammoetboom van het Krayenhoffpark dat je hem zou aanzien voor een latere aanplant in de schaduw van de beroemde buurman, maar hij is ongeveer even oud en hoort bij een soort die hier om een heel andere reden werd geplant. Waar de mammoetboom een geïmporteerde curiositeit was, is de haagbeuk een inheemse werkboom, die in de Lage Landen eeuwenlang tot hagen en lanen werd geknipt omdat hij zware snoei verdraagt en zijn dode bruine blad de hele winter vasthoudt, zodat een kale haag ook in de koudste maanden nog iets afschermt.\n\nHet register dateert deze op ergens tussen 1900 en 1910, geplant terwijl de Biezen eromheen nog werd opgetrokken voor arbeiders van het nabijgelegen spoor. Vrij uitgegroeid in plaats van geknipt, zoals hier is gebeurd, krijgt een haagbeuk een bescheiden, breed uitwaaierende kroon die meer op een beuk lijkt dan op de strakke haag die de meeste mensen voor zich zien. Hij staat een paar meter van de mammoetboom, gratis, in hetzelfde kleine stuk groen dat een verder onopvallende spoorwijk zijn enige plek schaduw geeft die ouder is dan de huizen eromheen."
-  },
-  "nij_007": {
-   "name": "De valse christusdoorn van het Krayenhoffpark",
-   "species": "Valse christusdoorn (Robinia pseudoacacia)",
-   "age_estimate": "ongeveer 140 jaar",
-   "access": "Gratis, openbaar park, dagelijks open",
-   "transport": "Wijk Biezen, Nijmegen; korte wandeling vanaf station Nijmegen via de Voorstadslaan",
-   "story": "De naam van deze boom verwijst naar de doornenkroon, en dat is opmerkelijk voor een soort die tot de zeventiende eeuw in Europa nog nooit iemand had gezien. De valse christusdoorn komt uit Noord-Amerika, maar de scherpe doorns die per paar op zijn jonge takken staan waren scherp genoeg om de Europese folklore er alsnog het bijbelse verhaal aan te laten hangen. Dit exemplaar, door het register gedateerd op ongeveer 1880 tot 1890, is ouder dan zijn eigen park: het Krayenhoffpark en de spoorwegwoningen eromheen kwamen er pas in het begin van de twintigste eeuw, decennia nadat deze boom in wat toen open grond aan de stadsrand was de grond in ging.\n\nDe valse christusdoorn bindt stikstof uit de lucht via bacteriën op zijn wortels, hetzelfde trucje als klaver en bonen, en dat is een deel van de verklaring waarom hij op arme Europese gronden zo massaal is aangeplant, lang voordat iemand de scheikunde erachter begreep en kon uitleggen waarom hij gedijde waar andere bomen het lieten afweten. Hij staat een paar passen van de haagbeuk en de bekendere mammoetboom van het park, gratis toegankelijk, en is van de drie de oudste terwijl hij het minst opvalt."
-  },
-  "nij_008": {
-   "name": "De tamme kastanje van de begraafplaats Daalseweg",
-   "species": "Tamme kastanje (Castanea sativa)",
-   "age_estimate": "ongeveer 140 jaar",
-   "access": "Gratis, openbare begraafplaats, overdag open",
-   "transport": "Wijk Altrade, Nijmegen; ongeveer 20 minuten lopen vanaf station Nijmegen",
-   "story": "In 1884 vroegen vier katholieke parochies de Nijmeegse gemeenteraad toestemming voor een gezamenlijke begraafplaats aan de Daalseweg, en de bisschop van 's-Hertogenbosch wijdde het terrein in juni van het jaar daarop. Stadsarchitect Jan Jacob Weve ontwierp de aanleg rond twee brede paden die elkaar haaks kruisen, omzoomd met rode beuken waartussen hij zelf begraven ligt, en deze tamme kastanje aan de westkant stamt ongeveer uit datzelfde stichtingsdecennium. In 1948 sloot de begraafplaats voor nieuwe begravingen toen elders een opvolger openging, en veel graven werden later geruimd voor woningbouw, maar het terrein bleef intact genoeg om in 2002 rijksmonument te worden.\n\nDe geschiedenis hier is zwaarder dan op de meeste begraafplaatsen: 300 slachtoffers van het bombardement op Nijmegen in februari 1944, een aanval die op één middag ongeveer 800 mensen het leven kostte, liggen hier begraven. De tamme kastanje hoort hier van nature niet zo ver noordelijk thuis; de Romeinen brachten hem mee om de eetbare vruchten. Deze heeft het hele werkzame leven van de begraafplaats meegemaakt en alle decennia daarna, waarin het terrein beschermd erfgoed werd in plaats van een plek waar nog begraven wordt. Hij staat in de open ruimte, gratis te bezoeken tijdens de gewone openingstijden, op korte loopafstand van de gedenkkastanje van het Julianapark."
-  },
-  "nij_009": {
-   "name": "De Kabouterboom",
-   "species": "Tamme kastanje (Castanea sativa)",
-   "age_estimate": "300 tot 400 jaar, en volgens sommige bronnen 450",
-   "access": "Gratis. Bos op landgoed Heerlijkheid Beek, open voor wandelaars.",
-   "transport": "Ongeveer 4,5 km ten oosten van het centrum van Nijmegen. Bus 5 of 8 richting Beek, daarna lopend het Kastanjedal in.",
-   "story": "Kinderen in Beek krijgen al generaties te horen dat er kabouters in deze boom wonen, en zo kwam een tamme kastanje aan de naam Kabouterboom. Het is een makkelijk verhaal om te geloven. De stam is hol, minstens achteneenhalve meter in omtrek, en de openingen erin hebben het formaat van deuren.\n\nMet die omtrek is hij de dikste boom van Nederland, en juist door die holte kan niemand zeggen hoe oud hij is: er valt geen kern meer te tellen. De schattingen lopen van driehonderd tot vierhonderdvijftig jaar. Het register dat hem vermeldt zet de aanplant tussen 1600 en 1700 en tekent daarbij aan dat er rond Nijmegen waarschijnlijk al tamme kastanjes stonden sinds de Romeinen, die het gewas graag hadden en deze stuwwal graag zagen.\n\nIn januari 2005 staken kinderen hem in brand. Hij brandde van binnen uit, wat een holle boom nu eenmaal gemakkelijk doet, en iedereen ging ervan uit dat vier eeuwen daarmee ten einde waren. Dat voorjaar liep hij gewoon weer uit, en dat doet hij sindsdien elk jaar.\n\nHij staat in het Kastanjedal, een dal met oude kastanjes op landgoed Heerlijkheid Beek, dat Het Geldersch Landschap opengesteld houdt voor wandelaars."
-  },
-  "nij_010": {
-   "name": "De lindes van de Kopse Hof",
-   "species": "Hollandse linde (Tilia x europaea)",
-   "age_estimate": "225 tot 275 jaar",
-   "access": "Gratis. Openbaar terrein op het Kops Plateau, bereikbaar via de lindelaan.",
-   "transport": "Ongeveer 2,6 km ten oosten van het centrum, een half uur lopen over de Berg en Dalseweg.",
-   "story": "De Romeinen kozen deze plek rond 12 voor Christus en bouwden er een fort, want vanaf vierenzestig meter hoogte zie je de Waal, de Ooijpolder, de Betuwe en zo ongeveer tot Arnhem. Achttien eeuwen later plantte iemand er lindes om precies datzelfde uitzicht.\n\nDe groep staat op de heuveltop aan het eind van een lindelaan, en die twee zijn vrijwel zeker tegelijk geplant, met de laan als de weg naar boven. Het register dateert beide tussen 1750 en 1800 en laat zien waarop het dat baseert: de heuvel staat op de kaart van Tranchot uit 1803, en zowel de laan als de heuvel zijn ingetekend op de kadastrale kaart van 1811.\n\nDe groep op de top staat er onder een categorie die niets met formaat te maken heeft. Ze zijn geregistreerd als kruisboom, wat in het Nederlandse register een boom is die met een religieus doel is geplant. De toelichting zegt alleen dat ze dat doel mogelijk hebben gediend, en dat is de eerlijke versie: niemand weet nu nog wat hier de bedoeling was.\n\nHet register telt er drie bij het uitzichtpunt. In de buurt heten ze de vier apostelen, wat suggereert dat het er ooit vier waren, en dat is het soort rekensom dat oude bomen meestal verliezen."
-  },
-  "nij_011": {
-   "name": "De taxus van het Bartholomeuskerkje",
-   "species": "Taxus (Taxus baccata)",
-   "age_estimate": "onbekend",
-   "access": "Gratis. Open kerkhof.",
-   "transport": "Ongeveer 4,7 km ten oosten van het centrum van Nijmegen, aan de Rijksstraatweg in Beek. Bus 5 of 8.",
-   "story": "Een oorkonde uit 1286 is de eerste vermelding van het kerkje waar deze boom naast staat, en het kerkhof eromheen is sindsdien onafgebroken in gebruik. De negentiende eeuw was hard voor het gebouw: vanaf 1796 gedeeld door katholieken en protestanten, door beide verwaarloosd, in 1824 gesloten omdat het onveilig was, en pas gered toen koning Willem I geld voor het herstel gaf.\n\nDe taxus stond er die hele tijd al. Het register wijst op een schilderij van Barend Cornelis Koekkoek uit ongeveer 1830 waarop het kerkje met deze boom ernaast te zien is, toen al met het voorkomen van een boom die er lang stond, en concludeert dat hij waarschijnlijk ouder is dan tweehonderd jaar. Dat is één bron die zorgvuldig redeneert en niet iemand die heeft gemeten, dus behandel de leeftijd ook als een redenering.\n\nWat wel vaststaat is wat een taxus met tijd doet. Hij groeit langzaam, wordt vroeg hol en gaat daarna eeuwenlang door op het punt waar elke andere boom klaar zou zijn geweest, en dat is de reden dat taxussen en kerkhoven in Noord-Europa al duizend jaar gezelschap van elkaar houden.\n\nHet kerkhof is open, klein en stil, en de stichting die het beheert noemt het parkachtig. Dat is niet overdreven."
-  },
-  "nij_012": {
-   "name": "De Wilhelminaboom op het Hertogplein",
-   "species": "Linde (Tilia sp.)",
-   "age_estimate": "onbekend",
-   "access": "Gratis, een openbaar plein in het centrum, altijd toegankelijk",
-   "transport": "Ongeveer 15 minuten lopen vanaf station Nijmegen Centraal",
-   "story": "Nijmegen kroonde een koningin met een boom. Op 1 september 1898, vijf dagen voor de inhuldiging van Wilhelmina, plantte de stad een linde op het Hertogplein en zette er een smeedijzeren hek omheen met kroontjes erop, ontworpen door architect Derk Semmelink. Het hek overleefde de Duitse bezetting. De kroontjes niet: soldaten sloopten ze eraf, en het hek stond kaal tot 24 juli 1948, toen leerlingen van de Nijmeegse ambachtsschool nieuwe kroontjes smeedden en de stad ze bij een openbare plechtigheid liet terugplaatsen.\n\nOf de boom zelf het zo lang heeft volgehouden is minder zeker. De Nederlandse Wikipedia schrijft over dit plein dat de oorspronkelijke linde inmiddels voor een andere heeft plaatsgemaakt, zonder te zeggen wanneer. Een lokaalhistorisch stuk uit 2025 beschrijft de boom die er nu staat en noemt een vervanging helemaal niet. Het landelijke bomenregister dateert deze plek op de jaren tachtig van de negentiende eeuw, een decennium voor de inhuldigingsplanting die de twee andere bronnen beschrijven. Niemand heeft die drie met elkaar in overeenstemming gebracht, en deze pagina doet ook niet alsof: wat er op het Hertogplein staat is een linde, omringd door een hek dat voor een andere boom is gemaakt, en zijn werkelijke leeftijd is onbekend.\n\nHet hek staat in elk geval vast. Dat heeft al minstens één boom overleefd."
-  },
-  "nij_013": {
-   "name": "De beverboom van Park Leeuwenstein",
-   "species": "Magnolia (Magnolia sp., soort niet vastgesteld)",
-   "age_estimate": "ongeveer 140 jaar",
-   "access": "Gratis, openbaar gemeentepark, altijd toegankelijk",
-   "transport": "Ongeveer 2,9 km vanaf het centrum van Nijmegen, in Nijmegen-West",
-   "story": "Park Leeuwenstein is wat er over is van de tuin van een gesloopt landhuis, en deze magnolia is wat er over is van de bijzondere bomen daarin. Villa Leeuwenstein verrees rond het midden van de negentiende eeuw en ging in 1958 tegen de vlakte, te vervallen om te redden, maar de bomen die de eigenaren eromheen hadden geplant groeiden door toen het huis dat niet meer deed. Een storm op 18 januari 2018 nam in één nacht de mammoetboom van het park en een moerascipres mee, waarmee deze boom, de beverboom, het oudste overgebleven exemplaar werd.\n\nBeverboom is een oude Nederlandse naam voor magnolia, en dan specifiek voor Magnolia virginiana, al is niet vastgesteld welke soort hier precies groeit. Een lokale inventarisatie van het park uit 2023 noemde bij de bijzondere bomen nog een augurkmagnolia, Magnolia acuminata, en dat kan dezelfde boom zijn die het landelijke register hier op coördinaat en niet op naam vastlegt. Acuminata bloeit groengeel nadat het blad is uitgelopen, laat in het voorjaar; virginiana bloeit roomwit en geurend in de vroege zomer. Eén foto in bloei zou de zaak beslechten.\n\nWelke van de twee het ook is, het register dateert de aanplant op de jaren tachtig van de negentiende eeuw, ongeveer 140 jaar, een bijzondere boom die het huis waarnaast hij geplant werd en twee van zijn eigen buren heeft overleefd."
-  },
-  "nij_014": {
-   "name": "De pastoriekastanje van Lent",
-   "species": "Witte paardenkastanje (Aesculus hippocastanum)",
-   "age_estimate": "ongeveer 130 jaar",
-   "access": "Gratis, op het openbare plein voor de parochiekerk, altijd toegankelijk",
-   "transport": "Ongeveer 8 minuten lopen vanaf station Nijmegen Lent",
-   "story": "Een dorpsplein in Lent doet dienst als de voortuin van een kastanje. De kerk Onze Lieve Vrouw Geboorte werd tussen 1877 en 1879 gebouwd naar ontwerp van architect G. te Riele Wzn, en het register dateert de kastanje op het voorplein een kleine twintig jaar later, uit de tijd dat de pastorie ernaast verrees. De omschrijving in het rijksmonumentenregister noemt hem nog altijd: een oude kastanjeboom op het plein voor de kerk, met de pastorie aan de noordkant.\n\nLent zelf is sindsdien harder veranderd dan de boom. Het was een dorp op de noordoever van de Waal tot Nijmegen het in 1998 annexeerde, en sinds 2016 hebben een kunstmatig eiland en een nieuwe brug van de uiterwaarden de nieuwste stadswijk gemaakt. Het plein met de kastanje ligt een paar straten van dat alles vandaan, aan de weg naar wat voorlopig nog een dorpskern met een eigen parochie is en geen buitenwijk van iets anders.\n\nDe boom is ongeveer 130 jaar oud en staat in de open lucht, gratis te zien op elk uur van de dag, op een paar minuten lopen van het station van Lent."
-  },
-  "nij_015": {
-   "name": "De treurbeuk van Begraafplaats Daalseweg",
-   "species": "Treurbeuk (Fagus sylvatica 'Pendula')",
-   "age_estimate": "ruwweg 125 tot 135 jaar, op basis van de plantband 1890-1900 uit het register",
-   "access": "Gratis, openbaar begraafplaatsterrein, overdag open. Wees respectvol, het is een werkende begraafplaats.",
-   "transport": "Ongeveer 1,5 km ten noordwesten van station Nijmegen, ruwweg 20 minuten lopen of een korte busrit.",
-   "story": "Een treurbeuk hangt met opzet. Elke gewone beuk reikt omhoog naar zijn deel van het licht; deze draagt een mutatie die de takken juist naar beneden trekt, zodat de kroon eerder naar de grond stroomt dan naar de hemel spreidt. Hij staat rechts van de toegangspoort van Begraafplaats Daalseweg, de eerste boom die een bezoeker tegenkomt.\n\nDe begraafplaats zelf is een beschermd rijksmonument, niet vanwege een enkele boom maar vanwege het hele ontwerp: twee paden doorkruisen het terrein, beide beplant met beuken, die samenkomen bij een kruisbeeld in het midden. De treurbeuk bij de poort doorbreekt dat geplande ritme met opzet, een sierlijke uitzondering tussen de discipline van de rijen erachter.\n\nHet Landelijk Register Monumentale Bomen dateert de aanplant tussen 1890 en 1900, wat de boom op ruwweg 125 tot 135 jaar zet, en noemt hem het eigen beschermde exemplaar van de begraafplaats. Het register is de enige bron die voor deze specifieke boom is gevonden: lokale geschiedschrijving over de begraafplaats beschrijft de beukenlanen en het kruisbeeld uitvoerig, maar noemt deze boom niet apart, dus de leeftijd komt alleen uit het register.\n\nHet terrein hoort bij een werkende katholieke begraafplaats en is overdag vrij toegankelijk. Loop er stil."
-  },
-  "nij_016": {
-   "name": "De plataan van de Petruskerk",
-   "species": "Gewone plataan (Platanus x acerifolia)",
-   "age_estimate": "ruwweg 145 tot 155 jaar, op basis van de plantband 1870-1880 uit het register",
-   "access": "Gratis, openbaar kerkplein, altijd open.",
-   "transport": "Ongeveer 3,5 km ten westen van station Nijmegen, bereikbaar met de bus richting Hees, ruwweg 10 minuten lopen vanaf de dichtstbijzijnde halte.",
-   "story": "Platanen laten hun schors los in plaats van er rustig nieuwe jaarringen onder te leggen, en stoten het hele jaar door plekken schors af zodat er lichter hout onder zichtbaar wordt, wat verklaart waarom een oude plataan er gevlekt en half gestroopt uitziet in plaats van gewoon verweerd. Deze staat op het kleine plein naast de Petruskerk in Hees, een Nijmeegse wijk die ooit een eigen dorp was voordat de stad ernaartoe groeide.\n\nHet Landelijk Register Monumentale Bomen dateert de aanplant tussen 1870 en 1880, wat de boom op ruwweg 145 tot 155 jaar zet, en noemt hem beschermd. Dat register is de enige bron die voor deze specifieke boom is gevonden: geschiedschrijving over het plein en de kerk beschrijft de omgeving uitvoerig, maar noemt deze plataan niet apart, dus de leeftijd steunt alleen op het woord van het register.\n\nHet plein hoort bij het kerkterrein en oogt als gewone openbare ruimte, een klein plein voor een werkende parochie in plaats van een afgesloten binnenplaats, en het register zelf noteert het als bezoekbaar. Verder is er nog niets over deze specifieke boom naar boven gekomen. Weet je meer, laat het ons weten."
-  },
-  "nij_017": {
-   "name": "De rode beuk van de Antonius Abtkerk",
-   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
-   "age_estimate": "ruwweg 225 tot 275 jaar, op basis van de plantband 1750-1800 uit het register",
-   "access": "Gratis, kerkterrein zichtbaar en open voor bezoekers.",
-   "transport": "Ongeveer 4 km ten westen van station Nijmegen, bereikbaar met de bus richting Hees.",
-   "story": "Deze rode beuk is ouder dan de kerk ernaast. De huidige Antonius Abtkerk aan de Dennenstraat, een rode bakstenen gebouw van architect Pierre Cuypers, verrees in 1879 en 1880. Het landelijk register plaatst de beuk op de grens van de kerk en de pastorie ergens tussen 1750 en 1800, ruwweg een eeuw ouder dan de stenen ernaast.\n\nDat is minder vreemd dan het klinkt. De parochie zelf gaat eeuwen verder terug dan Cuypers: er stond al een oudere kerk op deze grond voor de zijne, een kerkschuur werd hier in 1826 herbouwd, en de parochiegeschiedenis voert terug tot een zestiende-eeuwse voorganger. Een beuk geplant in de late achttiende eeuw zou zijn opgegroeid naast wat hier toen ook stond, en heeft dat simpelweg overleefd, zoals oude bomen op kerkgrond vaak doen.\n\nRode beuken dragen een mutatie die hun bladeren met rood pigment overspoelt, waardoor deze van een afstand bijna zwart oogt tegen het metselwerk. Het Landelijk Register Monumentale Bomen is de enige bron die voor deze specifieke boom is gevonden, ruwweg 225 tot 275 jaar op basis van de plantschatting; lokale parochie- en erfgoedgeschiedenis bevestigt het lange religieuze gebruik van de plek, maar noemt de beuk zelf niet, dus de leeftijd steunt alleen op het register.\n\nHet terrein staat geregistreerd als bezoekbaar en zichtbaar vanaf de straat, gewone kerkgrond in de wijk Hees in plaats van een afgesloten privétuin."
-  },
-  "nij_018": {
-   "name": "De zilveresdoorn van het Sumatraplein",
-   "species": "Zilveresdoorn (Acer saccharinum)",
-   "age_estimate": "ruwweg 100 tot 125 jaar, bronnen verschillen",
-   "access": "Gratis, openbare straatboom aan de gemeentelijke berm, altijd te bezichtigen",
-   "transport": "Nijmegen-Oost, ongeveer 20 minuten lopen vanaf station Nijmegen",
-   "story": "De meeste beschermde bomen van Nijmegen hebben de volledige monumentale status van het register. Deze heeft een lagere status, 'potentieel', een kandidaat in plaats van een bevestigd monument, wat niets verandert aan hoe het is om ervoor te staan: een zilveresdoorn aan een woonstraat in Nijmegen-Oost, ergens voorbij zijn eerste eeuw.\n\nAcer saccharinum groeit snel en splijt makkelijk, waardoor Amerikaanse steden er tientallen jaren eerder dan Europese mee stopten als straatboom; de bomen die een vroege plantgolf overleefden zijn meestal de exemplaren die niemand ooit heeft vervangen. Deze heeft dat volgehouden op een gemeentelijke berm, eigendom van en onderhouden door de stad in plaats van een prive tuin, wat ook de reden is dat hij een openbare registervermelding kan dragen.\n\nTwee gemeentelijke bronnen verschillen over de plantdatum: het landelijk register houdt het op 1900 tot 1910, de eigen bomendataset van de gemeente noemt 1930. Geen van beide is een meting, en er is ook geen omtrek geregistreerd, dus behandel elk los getal als een schatting. Hij staat in het open veld aan het Sumatraplein, gratis te zien op elk moment, ongeveer twintig minuten lopen vanaf het station."
-  },
-  "nij_019": {
-   "name": "De paardenkastanje van Landhuis Brakkenstein",
-   "species": "Paardenkastanje (Aesculus hippocastanum)",
-   "age_estimate": "onzeker, twee bronnen verschillen",
-   "access": "Gratis. Park Brakkenstein is een openbaar stadspark in het zuiden van Nijmegen; geen hek, geen kaartje.",
-   "transport": "Zuid-Nijmegen, wijk Heijendaal, nabij de Radboud Universiteit en het Radboudumc.",
-   "story": "Het eigen bomenregister van de gemeente Nijmegen en het landelijk register van monumentale bomen zijn het over bijna niets eens wat deze paardenkastanje betreft, behalve de plek. Het ene zegt dat hij rond 1830 werd geplant, bijna twee eeuwen geleden. Het andere houdt het op 1920, nog maar net voorbij zijn eerste eeuw. Geen van beide cijfers is een meting, allebei zijn het schattingen op apart papier, en tachtig jaar verschil is te veel om zomaar te middelen.\n\nWaar beide bronnen het wel over eens zijn is de plek: een stam van ruim twee en driekwart meter omtrek, bij het landhuis van Landgoed Brakkenstein, een stervormige achttiende-eeuwse parkaanleg in Heijendaal. De lanen van het landgoed werden vooral met beuken beplant, op één westelijke laan na die met paardenkastanjes staat, wat de eerlijke mogelijkheid openhoudt dat deze boom bij die laan hoorde in plaats van een op zichzelf staand exemplaar voor het landhuis.\n\nDe neoclassicistische villa uit 1865 waar hij naast staat is nu een evenementen- en restaurantlocatie, maar het park eromheen is gewoon open, zoals een stadspark open is: geen hek, geen kaartje, gewoon een wandeling door Heijendaal langs de Radboud Universiteit. Twee registers, twee leeftijden, een eerlijke boom, en een vraag die niemand heeft beantwoord: geplant voor het huis, of stond hij er al?"
-  },
-  "nij_020": {
-   "name": "De beuk van Landhuis Brakkenstein",
-   "species": "Beuk (Fagus sylvatica)",
-   "age_estimate": "onzeker, twee bronnen verschillen",
-   "access": "Gratis. Hetzelfde openbare stadspark als nij_019, zo'n vijftien meter van die paardenkastanje.",
-   "transport": "Zuid-Nijmegen, wijk Heijendaal, nabij de Radboud Universiteit en het Radboudumc. Dezelfde locatie als nij_019.",
-   "story": "Vijftien meter van die paardenkastanje staat een beuk met een stam van ruim vier meter omtrek, dik genoeg dat de eigen dataset van de gemeente een stamdiameterklasse noteert die normaal bij bomen hoort die tientallen jaren ouder zijn dan de geregistreerde plantdatum. Dat verschil is precies het interessante: de gemeentelijke registratie zegt 1880, ongeveer 146 jaar geleden, terwijl het landelijk register van monumentale bomen 1830 tot 1840 aanhoudt, dichter bij de 190. Een stam van dit formaat past beter bij het oudere getal, al heeft niemand het verschil opgelost en is geen van beide cijfers een meting.\n\nHij staat op Landgoed Brakkenstein, het achttiende-eeuwse sterrenbos in Heijendaal, naast de villa uit 1865 die zowel deze boom als zijn buurman de kastanje hun adres geeft. De lanen van het park werden vooral met beuken beplant, dus dit kan een individuele aanwijzing zijn in plaats van een laanboom: zijn diameterklasse ligt ruim boven die van de beuken langs de laan verderop, wat een van de redenen is dat hij een eigen plek in het register kreeg in plaats van bij de laan te worden ondergebracht.\n\nGratis te zien, in een gewoon openbaar park bij de Radboud Universiteit, geen hek en geen kaartje. Twee registraties, twee leeftijden, en een stam die lijkt te pleiten voor de oudere."
-  }
- }
 }

@@ -4,7 +4,11 @@
    "register_nr": 1687753,
    "name": "Treurbeuk (Begraafplaats Daalseweg, right of the entrance)",
    "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
-   "location": {"latitude": 51.839319, "longitude": 5.873587, "address": "Right of the entrance gate, Begraafplaats Daalseweg, Nijmegen"},
+   "location": {
+    "latitude": 51.839319,
+    "longitude": 5.873587,
+    "address": "Right of the entrance gate, Begraafplaats Daalseweg, Nijmegen"
+   },
    "planted_band": "1890-1900",
    "why_a_lead": "ALREADY PUBLISHED as nij_015 (curation_status flagged, single-source LRMB only) as of this 2026-08-27 pass; not a candidate for new delivery, note kept here only so a future pass does not re-research it from zero looking for a second source. This pass tried again for a second source and still found none: fetched www.gld.nl/lokaal/7550696 (2026 article on sick/dead trees felled at this cemetery) directly and it names conifers and 'oude beuken' generically, felled for giant-fungus infection, but never names or locates the weeping beech at the gate specifically, so it neither confirms nor threatens this tree. Also checked the Gemeente Nijmegen municipal Bomen open-data register (BOR_Groen/GRN_BOMEN, CC-BY, resolved access per data/fetch-blocklist.json 2026-08-26 note) with a tight bbox around this coordinate: zero results, because the cemetery is religious-institution land outside gemeente tree management, confirming the blocklist note's prediction. rijksmonumenten.nl/monument/522938 remains unfetchable (hangs, on the blocklist)."
   },
@@ -12,24 +16,185 @@
    "register_nr": 1680527,
    "name": "Bruine beuk (kerkplein, Petruskerk, Hees)",
    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "location": {"latitude": 51.840609, "longitude": 5.829239, "address": "Schependomlaan/Korte Bredestraat, Hees (Nijmegen)"},
+   "location": {
+    "latitude": 51.840609,
+    "longitude": 5.829239,
+    "address": "Schependomlaan/Korte Bredestraat, Hees (Nijmegen)"
+   },
    "planted_band": "1860-1870",
    "why_a_lead": "Fails only the two-source bar. LRMB register (nr 1680527, status 5, reason monumentaal, n_trees=1, tree-level coordinates, owner_category religieuze instantie, visitable=ja, visible=onbekend) names a single copper beech on the small square at Schependomlaan/Korte Bredestraat in Hees, where Nijmegen's old village church, the Petruskerk, stands (directly fetched: woneninnijmegen.blog/2026/05/02/schependomlaan and nijmeegsglorie.nl/index.php/schependomlaan both confirm the church sits 'aan een pleintje', a small square, at exactly this corner; the tower is on Korte Bredestraat, the church and consistory on Schependomlaan, matching the register's own two-street address). Note the church itself is a former Dutch Reformed (Protestant) building, sold to a private owner in 2020 per the same blog (rented since to Bethel Tempel); this does not by itself disqualify the SQUARE it stands on, which reads as an open village plein rather than an enclosed churchyard, but it is worth flagging since the register's owner_category 'religieuze instantie' may predate that 2020 sale. STATUS ANOMALY, recorded rather than acted on: this entry carries status=5, while its immediate neighbour nr 1680526 (15m away, same square, ALREADY PUBLISHED as nij_016) carries status=3, though both share reason='monumentaal'; checked the register's own status distribution (data/registers/netherlands-lrmb.json) and status 3 and 5 both pair with 'monumentaal' in the large majority of entries nationwide (7,966 and 3,375 respectively), so this looks like a batch or source-provenance code rather than a quality signal, but no schema documentation was found to confirm what the codes mean. No independent source naming THIS beech specifically was found: a monumentaltrees.com page exists for this exact square (title 'Gewone platanen bij de Petruskerk in Nijmegen', URL monumentaltrees.com/nl/nld/gelderland/nijmegen/32428_petruskerk/) but 403'd again on this 2026-08-27 pass, both via WebFetch and via curl -A '<browser UA>' -m 20 (now four failed attempts total across two passes; matches the domain-wide Cloudflare block recorded in data/fetch-blocklist.json, workaround needs a real browser session, not curl/WebFetch). Also tried and hung again this pass: services.nijmegen.nl/geoservices/extern_OpenData/ows (the monumental-tree-specific WFS layer, distinct from the working extern_BOR_Groen bulk-inventory layer); and confirmed the working extern_BOR_Groen municipal layer returns NO trees at all in a tight bbox around this coordinate, because church/religious-institution land sits outside gemeente tree management (same finding as the other two Hees/cemetery leads). Remains unconfirmed by a second source; the sibling plane tree 15m away (nr 1680526) is already published under the same single-source standard, so publishing this one at the same evidence level would be consistent, but that call belongs to whoever merges this file, not to a verification pass that found no new source."
+  },
+  {
+   "register_nr": 1681249,
+   "name": "Hollandse iep (elm pair, Hunnerpark)",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "location": {
+    "latitude": 51.846368,
+    "longitude": 5.872712,
+    "address": "Tegen de stadsmuur, Hunnerpark, Nijmegen-Centrum"
+   },
+   "planted_band": "1880-1890",
+   "why_a_lead": "2026-08-31 verify pass. LRMB register (nr 1681249, n_trees=2, gemeente, visitable=ja, visible=onbekend, status 5): a pair of elms against the old city wall in Hunnerpark, a genuinely public gemeente park about 1 km from the centre; the park itself is rich in named old trees (a Rijksmonument city-wall remnant, per nl.wikipedia.org/wiki/Hunnerpark and woneninnijmegen.blog/2023/10/23/hunnerpark, both fetched directly). Cross-checked against the municipality's own street-tree open-data register (services.nijmegen.nl/geoservices/extern_BOR_Groen, CC-BY, downloaded as CSV this pass, converted from RD/EPSG:28992 to WGS84 with the standard Dutch approximation formula): Hunnerpark carries 71 individually IND_MONUMENTAAL='Ja' trees (a mixed 1890-1950 avenue of horse chestnuts, limes, planes and oaks, plus at least one large weeping beech planted 1890 with a >1m trunk diameter), but no elm pair turned up in that dataset near these coordinates, only a single young Ulmus glabra (planted 1995) about 150m away. That is not a contradiction (the municipal monumentaal flag and the national LRMB register use different designation criteria and different survey dates) but it means the municipal data neither confirms nor denies this specific pair, so it does not supply the second source. No web search turned up any article naming elms specifically at Hunnerpark's city wall. Fails only the two-source bar; worth a future pass with a street-view or on-the-ground check, since the park and its public access are not in question."
+  },
+  {
+   "register_nr": 1681251,
+   "name": "Tamme kastanje - Boom van Lucker (Ubbergseveldweg) -- SEE nij_021 in nijmegen-verified.json",
+   "species": "Sweet Chestnut (Castanea sativa)",
+   "location": {
+    "latitude": 51.838935,
+    "longitude": 5.887577,
+    "address": "Ubbergseveldweg, Nijmegen"
+   },
+   "planted_band": "1860-1870 (STALE: this is the felled original's band; the register's own history field says it died in 1996)",
+   "why_a_lead": "2026-08-31 verify pass. NOT delivered under this register nr, because it names the dead original tree. Delivered instead as nij_021 in data/research/nijmegen-verified.json, describing the living chestnut planted in 2000 that stands diagonally across the street, per the same register entry's own history text plus nijmegen-oost.nl/uitgelicht/extreem-oost-de-beroemdste-boom (fetched directly). Kept here as a pointer so a future pass does not re-research the dead original from zero and does not accidentally publish planted_band 1860-1870 as if it described a living tree."
+  },
+  {
+   "register_nr": 1680528,
+   "name": "Witte paardenkastanje (Prinsenlaan/Emmalaan)",
+   "species": "White Horse Chestnut (Aesculus hippocastanum)",
+   "location": {
+    "latitude": 51.842762,
+    "longitude": 5.839228,
+    "address": "Prinsenlaan/Emmalaan, Nijmegen-West"
+   },
+   "planted_band": "1910-1920",
+   "why_a_lead": "2026-08-31 verify pass. LRMB register (nr 1680528, n_trees=1, gemeente, reason='potentieel' i.e. candidate for future monument status not yet fully designated, visitable=ja, visible=onbekend, status 2). Cross-checked against the municipal BOR_Groen street-tree CSV (converted RD to WGS84 this pass): Prinsenlaan and Emmalaan together carry 6 IND_MONUMENTAAL='Ja' horse chestnuts planted 1920-1940, roughly matching this entry's band and species, which is corroborating but not fully independent evidence of ONE distinguishable specimen: it reads as one tree among a small avenue/row of similarly-aged chestnuts along the same two streets rather than a singled-out individual, closer to the Beukenlaan avenue problem than to a clean second source. No news or heritage-site article found naming a specific chestnut at this corner. Left as a lead rather than blocked, because the register entry itself IS a single n_trees=1 designation (not an explicit avenue-listing like the cemetery entries below) and a future pass with a street-view check could find it is in fact visually distinct."
+  },
+  {
+   "register_nr": 1689530,
+   "name": "Zwarte moerbei (Bemmelsedijk 7, Lent)",
+   "species": "Black Mulberry (Morus nigra)",
+   "location": {
+    "latitude": 51.859601,
+    "longitude": 5.874907,
+    "address": "* Bemmelsedijk 7, Lent (address prefixed '*' in the register, its own convention for an imprecise or approximate address)"
+   },
+   "planted_band": "1820-1830",
+   "why_a_lead": "2026-08-31 verify pass. LRMB register (nr 1689530, n_trees=1, gemeente, visitable=ja, visible=onbekend, status 5) names a roughly 200-year-old black mulberry near Fort Lent (Fort Boven-Lent / Sprokkelenburg, a 19th-century Rijksmonument fortification at Bemmelsedijk 4, now an event venue), but nothing was found naming the mulberry itself: no heritage-site page for the fort mentions it, no local-history piece does either. Gemeente ownership and the fort's own public/event use suggest the area may be accessible, but that is an inference, not a source. Fails the two-source bar entirely (register only); a promising re-search target given the age (one of the oldest candidates in this batch) but needs a source naming the tree specifically before it can verify."
+  },
+  {
+   "register_nr": 1691206,
+   "name": "Venijnboom (yew, Rijksstraatweg 8, Ubbergen)",
+   "species": "European Yew (Taxus baccata)",
+   "location": {
+    "latitude": 51.83993,
+    "longitude": 5.894204,
+    "address": "Voor de woning, Rijksstraatweg 8, Ubbergen"
+   },
+   "planted_band": "1870-1880",
+   "why_a_lead": "2026-08-31 verify pass. LRMB register (nr 1691206, n_trees=1, particulier, visitable=ja, visible=ja, status 3): a yew explicitly 'voor de woning' (in front of the house), which under hard rule 10's three tests could plausibly ship as a view-from-the-road entry (visible=ja, visitable=ja both asserted by the register). No second source found naming this specific tree; register only. A future pass should look for street-view confirmation of the yew's visibility from the public road (Rijksstraatweg) before this can verify, since a private front garden needs that visibility confirmed by more than the register's own field."
+  },
+  {
+   "register_nr": 1695030,
+   "name": "Japanse notenboom / Ginkgo (Ubbergseveldweg 52)",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "location": {
+    "latitude": 51.84057,
+    "longitude": 5.883841,
+    "address": "Ubbergseveldweg 52, Nijmegen"
+   },
+   "planted_band": "1920-1930",
+   "why_a_lead": "2026-08-31 verify pass. LRMB register (nr 1695030, n_trees=1, particulier, visitable=ja, visible=ja, status 3, reason='dendrologisch'). Despite the Dutch common name meaning 'Japanese walnut tree', the register's own history field confirms the species is Ginkgo biloba ('De Ginkgo staat op de oost/west as van voormalig groot Romeins legerkamp'), a nice hook: the tree stands on the east-west axis of the former Roman legionary camp that once covered the Ubbergseveld (2000 years ago the largest Roman camp in the area). No second source found corroborating this specific tree; private garden, visible=ja per the register but unconfirmed independently. Worth another pass given the story."
+  },
+  {
+   "register_nr": 1688809,
+   "name": "Witte paardenkastanje (Waldeck Pyrmontsingel 81)",
+   "species": "White Horse Chestnut (Aesculus hippocastanum)",
+   "location": {
+    "latitude": 51.839927,
+    "longitude": 5.865632,
+    "address": "Waldeck Pyrmontsingel 81, Nijmegen"
+   },
+   "planted_band": "1890-1900",
+   "why_a_lead": "2026-08-31 verify pass. LRMB register only (nr 1688809, n_trees=1, particulier, visitable=onbekend, visible=onbekend, status 3). No independent source found; access genuinely unknown from the register itself, unlike the yew and ginkgo leads above which at least assert visible=ja. Needs a street-view check before it is even worth a second source search."
   }
  ],
  "blocked": [
   {
    "register_nr": 1681243,
    "name": "Beuk (Beukenlaan, Landgoed Brakkestein)",
-   "location": {"latitude": 51.820303, "longitude": 5.872431},
+   "location": {
+    "latitude": 51.820303,
+    "longitude": 5.872431
+   },
    "reason": "Not a collectible point. Register place field itself reads \"Beukenlaan nabij restaurant, Landg. Brakkestein\": this stands on one of the beech-lined avenues of Brakkestein's 18th-century sterrenbos (star forest) layout. The Rijksmonument description of Park Brakkenstein (monumenten.nl/monument/522933, fetched directly) states the lanes are largely planted with beech trees ('De lanen zijn grotendeels beplant met beukenbomen'), names a specific beech avenue connecting the two far points of the diamond-shaped grounds, and gives no individual tree special recognition; a separate circle of old beeches exists in the park's northwest corner (a different feature, not this register entry). Independent sources (Digitale Huis 'Sterrenbossen in en om Nijmegen', via WebSearch summary only, page itself 403'd) corroborate that the beeches along the lanes are collectively ~250-300 years old from the original planting, i.e. this register entry is one of a run of similar-aged, similar-looking beeches along a lane rather than a distinguishable individual, the same avenue/whole-wood exclusion BRIEF_RESEARCH.md names explicitly. Planted_band 1700-1750 would make it (if it were a valid standalone entry) the oldest candidate in this batch, so it is recorded here rather than discarded in case a future pass finds it is in fact visually distinct from its neighbours (a girthier trunk, a plaque) that would let it re-qualify."
   },
   {
    "register_nr": 1680531,
    "name": "Mammoetboom Park Leeuwenstein, Nijmegen",
    "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "location": {"latitude": 51.844531, "longitude": 5.839659, "address": "Park Leeuwenstein, Nijmegen-West"},
+   "location": {
+    "latitude": 51.844531,
+    "longitude": 5.839659,
+    "address": "Park Leeuwenstein, Nijmegen-West"
+   },
    "reason": "DEAD. This tree fell in the storm of 18 January 2018. Two independent sources, both fetched directly (not summaries): dewester.info/ideeen-gezocht-voor-gesneuvelde-mammoetboom (a 2018 local-news piece titled 'Ideas sought for the fallen mammoth tree', stating 'De storm op 18 januari 2018 joeg ook over de Wolfskuil. In park Leeuwenstein op de grens met het Waterkwartier, ging een hele oude boom, een sequoia, omver', i.e. a very old sequoia in Park Leeuwenstein fell over in that storm, on the Wolfskuil/Waterkwartier border, matching this tree's location); and woneninnijmegen.blog/2023/08/16/park-leeuwenstein (fetched directly, an Aug 2023 post listing the park's trees, stating plainly 'Helaas zijn de 2 grootste bomen afgelopen jaren verloren gegaan: De 24 meter hoge mammoetboom', i.e. the park's 24-metre mammoth tree is one of its 2 largest trees lost in recent years; the same post separately notes a 25.6m swamp cypress/moerascipres also fell in the January 2018 storm, so the park lost two large exotic conifers, not one, and this register entry (n_trees=1, the only mammoetboom the register lists for this park) is the mammoth tree specifically, not the cypress). No source suggests a replacement has been planted at this coordinate. Per hard rule ('we doen niet aan dode bomen') and BRIEF_RESEARCH.md's bar 1, a tree known to be dead is never delivered as a live entry."
+  },
+  {
+   "register_nr": 1696068,
+   "name": "Mammoetboom Berg en Dalseweg",
+   "species": "Giant Sequoia (Sequoiadendron giganteum)",
+   "location": {
+    "latitude": 51.843396,
+    "longitude": 5.870145,
+    "address": "Berg en Dalseweg, Nijmegen"
+   },
+   "reason": "2026-08-31 verify pass. Location deliberately withheld by the source: the register's own place field reads 'Berg en Dalseweg, Nijmegen. Exacte locatie niet vrijgegeven i.v.m. privacy van de eigenaar' (exact location not released for the owner's privacy). Hard rule 10 is absolute here: never publish a location its source deliberately withholds, whatever else is true of the tree."
+  },
+  {
+   "register_nr": 1681259,
+   "name": "Dwergcypres (achterop begraafplaats, Daalseweg)",
+   "species": "Dwarf/Lawson Cypress",
+   "location": {
+    "latitude": 51.837892,
+    "longitude": 5.873083,
+    "address": "Achterop begraafplaats, Daalseweg, Nijmegen"
+   },
+   "reason": "2026-08-31 verify pass. Not a collectible point: register n_trees=14, form '2 Stammig', at the back of the Daalseweg cemetery. A planting of 14 is a grove/hedge feature, not one identifiable specimen, the same avenue/whole-planting exclusion already applied to the Beukenlaan beech. visible=nee in the register as well."
+  },
+  {
+   "register_nr": 1681780,
+   "name": "Bruine beuk (langs hoofdpad, Begraafplaats Daalseweg)",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "location": {
+    "latitude": 51.838423,
+    "longitude": 5.873373,
+    "address": "Langs hoofdpad, Begraafplaats, Daalseweg, Nijmegen"
+   },
+   "reason": "2026-08-31 verify pass. Not a collectible point: register n_trees=28, a run of copper beeches along the cemetery's main path. Same avenue exclusion as the Beukenlaan and Dwergcypres entries above; nothing distinguishes one from its 27 neighbours."
+  },
+  {
+   "register_nr": 1687752,
+   "name": "Hollandse linde (oostkant begraafplaats, Daalseweg)",
+   "species": "Dutch Lime (Tilia x europaea)",
+   "location": {
+    "latitude": 51.838131,
+    "longitude": 5.874236,
+    "address": "Oostkant begraafplaats, Daalseweg, Nijmegen"
+   },
+   "reason": "2026-08-31 verify pass. Not a collectible point: register n_trees=12, a row of limes along the cemetery's east side. Same avenue exclusion."
+  },
+  {
+   "register_nr": 1695245,
+   "name": "witte paarden kastanje (kastanjelaan, Valkhofpark)",
+   "species": "White Horse Chestnut (Aesculus hippocastanum)",
+   "location": {
+    "latitude": 51.846606,
+    "longitude": 5.871898,
+    "address": "Kastanjelaan naast museum Het Valkhof, Valkhofpark, Nijmegen"
+   },
+   "reason": "2026-08-31 verify pass. Not a collectible point: register n_trees=30, an entire chestnut lane beside the Valkhof museum. Same avenue exclusion; also close to but not the same tree as the already-published nij_001 (Sycamore of Valkhofpark)."
+  },
+  {
+   "register_nr": 1694867,
+   "name": "Rode Beuk (achtertuin, St. Annastraat 279)",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "location": {
+    "latitude": 51.829177,
+    "longitude": 5.858454,
+    "address": "Achtertuin St. Annastraat 279, Nijmegen"
+   },
+   "reason": "2026-08-31 verify pass. The register's own place field says 'Achtertuin' (back garden) and its own history text describes the owners' pride in their private, deliberately unmanaged garden. This is somebody's home; hard rule 10's private-garden exclusion does not bend for this case regardless of the register's visitable='ja' field, which most likely means 'visitable by arrangement with the owner' rather than open to the public."
   }
  ]
 }
