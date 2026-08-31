@@ -2982,3 +2982,249 @@ needs a specific access check before it can ship: its own record places it
 same case-by-case judgement CLAUDE.md applies to company grounds, not an
 automatic yes or no.
 
+
+---
+
+## United States register scouting, round two: Philadelphia, Savannah, Charleston, San Diego, Denver (2026-08-31)
+
+Dispatched because 13 of 14 ranked US cities standing at zero have no supply at
+all, and Hidde asked for more American cities. Targets and order set by the
+brief: Philadelphia, Savannah, Charleston, San Diego, then Denver if time
+allowed. Every one of the five named targets in the 2026-08-13 English-
+speaking-block scan's "named but not reached" list is covered here except
+Asheville, which already carries a written `empty` verdict (2026-08-23,
+Buncombe/GreenWorks Treasured Trees, no public dataset) and was correctly not
+re-scouted. Method unchanged: licence-led, quote the licence sentence
+verbatim from the source's own page, semantic filter first (a full municipal
+tree inventory is never supply here, however large). **No register proved
+importable this pass.** Recorded in full because a written NO on five cities
+is real progress against the "not reached" backlog, and the next scout should
+not re-walk any of this ground.
+
+### Philadelphia: EMPTY
+
+**OpenDataPhilly's "Philadelphia Tree Inventory"** (the only tree dataset the
+city publishes) is a comprehensive inventory of every tree within city
+limits, updated yearly, exactly the bulk shape the semantic filter forbids
+regardless of licence. Its licence is also a clean disqualifier on its own
+terms, quoted verbatim from the dataset's own OpenDataPhilly page: "The City
+of Philadelphia reserves all rights in the database and any data contained
+therein, and the end user's use of the data does not constitute a transfer
+of, nor does the end user receive, any title or interest in the database or
+any other City data." Both grounds fail independently.
+
+**Philadelphia's "Heritage Tree" designation is not a curated list at all.**
+Read directly from the zoning code excerpt at
+`phila.gov/media/20171115163236/Heritage_Trees.pdf`: Section 14-705 protects
+any tree of a listed species (29 species named, common ones like red maple,
+white oak, tuliptree, American beech) that equals or exceeds 24 inches DBH on
+a lot over 5,000 sq ft, city-wide. This is a size-and-species threshold
+applied automatically to any qualifying tree on any qualifying lot, the same
+shape as a UK Tree Preservation Order, not an individually designated
+register. There is no dataset of which trees actually hold the designation,
+because the designation is a rule rather than a list.
+
+**phillytrees.blogspot.com's "Notable Trees List"** is real and well written
+(named trees with cross streets, best-season notes, by neighbourhood) but it
+is one enthusiast's personal blog with no coordinates, no stated licence
+(Blogger default, no CC declaration found), and no public-body designation
+behind it. Same status as monumentaltrees.com under hard rule 1: usable to
+find and cross-check candidate trees by hand, never to import or copy.
+
+**Verdict: empty.** No importable register. If Hidde names Philadelphia for
+from-zero research, the blog list above is the fastest lead source to start
+from.
+
+### Savannah: EMPTY for import, one real lead source found (state-level, not Savannah-specific)
+
+**Savannah Area GIS (SAGIS), `pub.sagis.org/arcgis/rest/services/Savannah/Trees`**,
+is exactly the ArcGIS Hub pattern the brief expected, and it fails the
+semantic filter cleanly: two layers, "Trees" (36,553 features) and "Other"
+(2,723 features), described in the service's own metadata as "City of
+Savannah owned trees in parks, City properties, and right of ways...
+contractor provided several neighborhoods to import, City staff adding trees
+with mobile GIS application." That is a municipal maintenance inventory, the
+same shape that killed Seattle and San Francisco, not a designated register.
+No `licenseInfo` is set on the service either, so it would fail on licence
+even if the semantic filter did not disqualify it outright.
+
+**The Georgia Landmark and Historic Tree Register** (run by the Georgia Tree
+Council, `gatreecouncil.org/what-we-do/programs/landmark-historic-tree-register.html`,
+formerly under the Georgia Urban Forest Council name that led the search
+here) is the real thing: a genuine statewide semantic register going back to
+1994, two categories (Landmark: integral to community heritage, 75+ years;
+Historic: tied to a specific historic person/event/place, 50+ years), each
+entry reviewed and voted on by a committee. The full list is published
+directly in the page's own HTML as plain text (name, place, year designated),
+not as a downloadable dataset, has no coordinates, and inconsistently gives
+species. No licence or copyright statement of any kind was found anywhere on
+the site. **That is a stall, not a yes**: found, reachable, real content,
+disqualified for import on the missing-licence ground alone, same pattern as
+American Forests' champion tree PDF and the Live Oak Society roster already
+on file. It names two Savannah entries directly: "The Candler Oak, 2001,
+Savannah" (already independently documented, Wikipedia has its own page,
+strong candidate for from-zero research regardless of this register) and
+"Live Oak Trees of Bonaventure Cemetery, 2004, Bonaventure Cemetery,
+Savannah." The list also covers dozens of other Georgia towns, so it is worth
+keeping in mind for any future Georgia city, not just Savannah.
+
+**Worth a permission ask, same shape as the American Forests and Live Oak
+Society asks already on file**: the Georgia Tree Council is a small 501(c)(3)
+nonprofit (contact `melanie@gatreecouncil.org` per its own site), the
+Landmark/Historic register is exactly the semantically-filtered content this
+project wants, and a nonprofit with an educational mission is a plausible
+yes. Not drafted this pass (Hidde's to send, hard rule 4), flagged for him if
+he wants it.
+
+**Verdict: empty for import.** Recorded in `data/register-scouting.json` as
+`stalled` rather than `empty`, since a live licence-ask path exists.
+
+### Charleston: EMPTY
+
+**Charleston's "Grand Tree" ordinance** (City of Charleston and Charleston
+County both run versions) protects any tree 24 inches DBH or greater except
+pines and sweetgums, city/county-wide, on single-family residential
+properties without further individual designation. Confirmed from the city's
+own Tree Removal Information page and cross-checked against
+charlestontreeexperts.com's summaries of both the city and county ordinance
+text. This is the same size-threshold shape as Philadelphia's Heritage Tree
+rule and UK TPOs: a legal protection class, not a curated list of individual
+trees, so there is nothing to import even before a licence question arises.
+
+**The City of Charleston's own open-data portal** (`data-charleston-sc.opendata.arcgis.com`,
+owner account `python_chs`) was searched directly via the ArcGIS sharing API
+for every dataset that account publishes with "tree" in the name: five
+results, all tree-canopy coverage or land-cover layers (`Tree Canopy
+Landcover`, `Subdivisions with Percent Tree Canopy`, `Percent Tree Canopy by
+Street Segment`, `Potential Planting Areas`, `Land Cover`). None is a point
+layer of individual trees, designated or otherwise; these measure canopy
+extent, not trees you could stand in front of.
+
+**The Live Oak Society roster already on file** (OPEN_DATA_SURVEY.md,
+2026-08-15 North America pass, "written-permission-required" verdict) names
+Charleston 34 times in one sampled 265-page file. That verdict stands
+unchanged and was not re-scouted here; it remains the single best Charleston
+lead if Hidde ever asks the Louisiana Garden Club Federation for permission.
+
+**Verdict: empty.** No importable register found or expected without a
+permission grant on the Live Oak Society roster.
+
+### San Diego: EMPTY, but the right-shaped program is now on record
+
+**Council Policy 900-19, "Public Tree Protection"** (`docs.sandiego.gov/councilpolicies/cpd_900-19.pdf`)
+defines exactly the individually-designated model this project wants: four
+categories, Landmark Tree ("unusual size... special and intact aesthetic
+form... a species of tree that rarely occurs in the City... the intent of
+this category is to recognize unusual trees... and not to apply this
+category to a broad number of trees"), Heritage Tree, Parkway Resource Tree
+and Preservation Grove. Confirmed on the city's own preservation page
+(`sandiego.gov/trees/preservation`): a tree is nominated, inspected by the
+Right of Way Management Division, then forwarded to the Community Forest
+Advisory Board for evaluation and possible protected status.
+
+**But there is no public list, map, dataset or export of which trees actually
+hold any of the four designations.** The preservation page links only to a
+nomination form (`sandiego.gov/sites/default/files/legacy/street-div/pdf/nomform.pdf`),
+never to a register of results. A direct ArcGIS sharing-API search for
+"landmark tree San Diego" returned zero results. This is the identical dead
+end already on file for Ontario's Heritage Tree Program and Buncombe
+County/Asheville's Treasured Trees: the right shape of program, nomination-
+and-plaque only, nothing structured to import.
+
+**A different San Diego "Heritage Tree Preservation Program" (County Parks,
+`sdparks.org`) is not the same thing and does not help.** Read directly: it
+is a drought-response tree-health and replacement program for County Parks
+land generally ("evaluate the health of existing trees... ensure no net loss
+of trees... diversify tree species"), not a register of individually
+significant trees. Noted so nobody chases this name again expecting a
+designated-tree list.
+
+**`webmaps.sandiego.gov` hangs**: `curl -m 20` on
+`webmaps.sandiego.gov/arcgis/rest/services/DSD/Environment/MapServer/layers?f=json`
+returned no response at all, twice, full 20-second timeout each time. Added
+to `data/fetch-blocklist.json`.
+
+**Verdict: empty.** If Hidde names San Diego for from-zero research, Balboa
+Park (27 monumental trees per the San Diego History Center's own 2018
+survey, `sandiegohistory.org/journal/v56-3/v56-3carter.pdf`, including a
+Moreton Bay Fig in the California Registry of Big Trees) is the standing
+cluster to start from, not the Landmark Tree program.
+
+### Denver: STALLED, a genuine statewide champion-tree list exists, no licence stated
+
+**Colorado Tree Coalition's Champion Tree Program** (`coloradotrees.org/colorado-champion-trees`)
+publishes two real, structured spreadsheets, found as direct download links
+on the page itself: `2026-Website-Champ-Trees.xlsx` (846 rows, the top
+national-style ranked list per species statewide) and
+`2026-Website-County-champ-list.xlsx` (891 rows, a county-organised champion
+list). Both carry genuine field measurements: common/genus/species/variety,
+DBH, circumference, height, crown spread, National Points (the standard
+champion-tree scoring formula), rank/position, and a `General Location`
+column. This is a real semantic designation (largest of species, field-
+measured, ranked), not a bulk inventory, matching the shape of the
+Massachusetts DCR and Texas Big Tree registers already on file.
+
+**307 of the 846 state-list rows carry "Denver" as their General Location.**
+That is a substantial lead pile if it ever becomes usable. **But location is
+city-name only, no address and no coordinates**, a step below even
+Massachusetts' address-or-landmark text, so this is a from-zero-geocoding
+lead list at best, the same tier as the American Forests national PDF.
+
+**No licence statement of any kind was found anywhere on coloradotrees.org**,
+checked directly on the champion-tree pages and searched specifically for a
+terms-of-use or copyright page; none surfaced. Per this project's standing
+rule, an absence of a licence is a stall, not a yes, the same verdict already
+recorded for American Forests' national PDF and (in this same pass) the
+Georgia Landmark and Historic Tree Register. **Do not import.**
+
+**Worth a permission ask, same shape as the other small-nonprofit asks on
+file**: Colorado Tree Coalition is exactly the kind of educational nonprofit
+likely to say yes if asked directly, and getting a yes would unlock 307
+Denver-tagged rows plus the rest of the state at once. Not drafted (Hidde's
+to send).
+
+**A second, unrelated find worth flagging for whoever scouts California
+cities next: the California Registry of Big Trees** (Cal Poly's Urban
+Forest Ecosystems Institute, `californiabigtrees.calpoly.edu`, ~245 trees
+per its own about text, referenced by name in the same search that found
+Balboa Park's Moreton Bay Fig). Not scanned to a verdict this pass: the site
+is a React single-page app, the rendered HTML carries no data, and the
+compiled JS bundle references `selectree.calpoly.edu/api` without the exact
+route resolving to real tree data in the time available. **Unscanned, not a
+verdict.** A session with a real browser (network tab) would resolve this in
+minutes; worth doing before any from-zero California city pass, since a
+usable version of this would help San Diego and every other CA city at once.
+
+**Also surfaced by search, not one of this pass's targets and not chased:
+`gisdata-csj.opendata.arcgis.com` publishes an item literally named "Heritage
+Tree"** (item id `382c588177f5482dbe326360e92b9507`, layer 511). CSJ reads as
+City of San Jose, not Denver or any city in this pass's list; it surfaced
+because of generic boilerplate wording shared across several California
+ArcGIS heritage-tree items. Left entirely unscanned, flagged only so a future
+San Jose or Bay Area scout does not have to rediscover it by accident the way
+this pass did.
+
+**Verdict: stalled.** Recorded in `data/register-scouting.json` accordingly.
+
+### Fetch blocklist addition
+
+`webmaps.sandiego.gov`: hangs on the ArcGIS REST path
+(`/arcgis/rest/services/DSD/Environment/MapServer/layers?f=json`), `curl -m
+20` returns nothing twice, confirmed 2026-08-31.
+
+### Summary for the merge
+
+| Target | Verdict | What exists | Licence | Coordinates |
+|---|---|---|---|---|
+| Philadelphia | empty | Heritage Tree = species+size zoning threshold, no curated list; OpenDataPhilly tree inventory is bulk, all-rights-reserved | Explicit all-rights-reserved on the only dataset | No |
+| Savannah | empty (stalled on GA register) | SAGIS Trees layer is bulk (36,553+2,723); Georgia Landmark & Historic Tree Register is real but page-text only, 2 Savannah entries | No licence stated on the GA register | No |
+| Charleston | empty | Grand Tree ordinance is a size threshold, not a list; Charleston's own ArcGIS account has only canopy/land-cover layers | n/a, no dataset exists | No |
+| San Diego | empty | Council Policy 900-19 defines 4 real designation categories, nomination-only, no published list ever produced | n/a, no dataset exists | No |
+| Denver | stalled | Colorado Tree Coalition Champion Tree Program, 846 state + 891 county rows, 307 tagged Denver | No licence stated anywhere on the site | No, city-name only |
+
+**Not reached, still on the "unscanned" list from 2026-08-13**: Los Angeles,
+Austin, New Orleans, Chicago, Liverpool, Belfast, Manchester, Brighton,
+Inverness, Canterbury, Stratford-upon-Avon, Stirling, Windsor, Glasgow. This
+pass narrowed the US side of that list by five (four now `empty`, one
+`stalled`) plus confirmed Asheville's existing `empty` verdict did not need
+re-checking.

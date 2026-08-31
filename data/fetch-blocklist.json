@@ -253,6 +253,12 @@
       "seen": "2026-08-31",
       "cost": "cheap per call (fast response, ~14KB challenge page) but wasted about 5 calls before being recognised, since the page looks like a plain no-results page unless you grep for the anomaly.js form",
       "workaround": "unknown for curl; en.wikipedia.org/w/api.php search+extracts worked fine throughout and covered most needs; Bing HTML search (www.bing.com/search) returned real b_algo results for some queries but ignored quoted/compound queries and returned generic unrelated hits for others (a Maui Old Hana School query returned results for the film Old), so treat Bing snippets as unreliable for anything but the simplest single-topic queries"
+    },
+    "webmaps.sandiego.gov": {
+      "behaviour": "hangs, no response at all (curl -m 20 exit 28) on the ArcGIS REST path /arcgis/rest/services/DSD/Environment/MapServer/layers?f=json",
+      "seen": "2026-08-31",
+      "cost": "burned two 20s timeouts during a US register scouting pass (San Diego target)",
+      "workaround": "unknown; San Diego's designated-tree programme (Council Policy 900-19) has no published dataset anyway, so this host was not chased further"
     }
   }
 }
