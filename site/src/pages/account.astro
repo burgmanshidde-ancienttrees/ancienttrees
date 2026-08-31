@@ -35,7 +35,7 @@ const canonical = `${BASE_URL}/account`;
       <input type="email" id="acct-email" placeholder="you@example.com" aria-label="Email address" required>
       <button type="submit" class="go-btn">Email me a sign-in link</button>
     </form>
-    <p class="acct-fine">We store your email address and what you collect: the trees you save and the ones you photograph. You can delete your account at any time. <a href="/privacy">Privacy</a></p>
+    <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. You can delete all of it at any time. <a href="/privacy">Privacy</a></p>
   </section>
 
   <section id="st-sent" class="acct-card" hidden>
@@ -53,22 +53,87 @@ const canonical = `${BASE_URL}/account`;
     <p class="acct-actions"><button type="button" id="re-expired" class="go-btn">Send a new link</button></p>
   </section>
 
+  <!-- BUILT LIKE THE APP'S SETTINGS SCREEN, 2026-08-31, on Hidde's ask. It was
+       one flat card with Sign out and Delete my account sitting side by side on
+       it, a mis-click apart. The app puts deletion a layer in, under Account,
+       which is what he ruled on 2026-08-21 ("most of the time they put the
+       click further down") and what every reference does: Strava is Settings,
+       My Account, Delete Account; AllTrails the same; GitHub keeps destructive
+       actions in a marked area at the foot of the account page. CONVENTIONS.md
+       carries the full lookup.
+
+       A <details> rather than a second page: on the web a disclosure is the
+       honest equivalent of a pushed screen, it needs no routing, and it keeps
+       the one thing that matters, which is that deletion is not on the surface
+       somebody lands on. -->
   <section id="st-in" class="acct-card" hidden>
     <p class="hero-kicker">Signed in</p>
     <h1>Your <em>trees</em>.</h1>
-    <p class="acct-sub"><strong id="in-email"></strong></p>
-    <!-- Said plainly because Google and Apple hand out different addresses, and
-         Apple's is a private relay by default. Somebody who signs in with Apple
-         on the phone and Google here would otherwise see an empty collection and
-         conclude we lost it. Naming the address makes that understandable. -->
-    <p class="acct-fine">Your trees are kept under this address. Signing in with a different one starts a separate collection.</p>
-    <div class="stat-row">
-      <div class="stat"><b id="n-trees">0</b><span>saved trees</span></div>
-      <div class="stat alt"><b id="n-cities">0</b><span>cities</span></div>
+
+    <div class="acct-identity">
+      <strong id="in-email"></strong>
+      <div class="stat-row">
+        <div class="stat"><b id="n-trees">0</b><span>saved trees</span></div>
+        <div class="stat alt"><b id="n-cities">0</b><span>cities</span></div>
+      </div>
     </div>
     <p class="acct-sub" id="in-note">Your saved trees follow this account to any device. The trees you have stood in front of live in the app, and it brings those too.</p>
+    <!-- Said plainly because Google and Apple hand out different addresses, and
+         Apple's is a private relay by default. Somebody who signs in with Apple
+         on the phone and Google here would otherwise see an empty collection
+         and conclude we lost it. -->
+    <p class="acct-fine">Your trees are kept under this address. Signing in with a different one starts a separate collection. To use a different address, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a> and we will move your collection across.</p>
+
+    <p class="acct-group">Settings</p>
+    <div class="acct-rows">
+      <!-- THE NAME OTHER PEOPLE SEE. The app has had a profile editor since the
+           social half shipped and this page had nothing, so an account made
+           here could never be found by anybody: the finder searches
+           display_name, and a profile row only comes into being when a name is
+           set. Name only, no picture: uploading needs the avatars bucket and
+           its policies, and the name is the whole of what makes an account
+           findable. -->
+      <div class="acct-row">
+        <label for="in-name">The name people see</label>
+        <div class="acct-name-row">
+          <input id="in-name" type="text" maxlength="40" autocomplete="nickname"
+                 placeholder="Nobody sees this until you set it" />
+          <button type="button" id="save-name" class="go-btn">Save</button>
+        </div>
+        <p class="acct-fine" id="name-note">Set a name and people can find you in the app to follow your trees. Leave it empty and nobody can.</p>
+      </div>
+
+    </div>
+
+    <p class="acct-group">About</p>
+    <div class="acct-rows">
+      <a class="acct-row acct-linkrow" href="/privacy">Privacy</a>
+      <a class="acct-row acct-linkrow" href="/terms">Terms</a>
+      <a class="acct-row acct-linkrow" href="/support">Support</a>
+    </div>
+
     <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
-    <p class="acct-actions"><button type="button" id="del-acct" class="acct-link danger">Delete my account</button></p>
+
+    <!-- DELETION AT THE FOOT, IN A MARKED AREA, OPENING A SCREEN OF ITS OWN.
+         Moved here 2026-08-31 after Hidde read the first attempt and said it
+         stood oddly, which it did. I had copied the app, where deletion lives
+         inside a pushed Account screen, into a disclosure sitting among the
+         settings rows. On the web that is nobody's pattern: GitHub puts a
+         Danger Zone at the foot of the account page with a named button that
+         opens a dialog, Strava a Delete Your Account link at the foot of My
+         Account, Airbnb and Google the same shape.
+
+         The both-surfaces rule is what I got wrong. It asks that the BEHAVIOUR
+         match, not the design: deletion costs a second, deliberate step on
+         both. A pushed screen does that on a phone; a named button at the foot
+         opening an explanation does it here. -->
+    <details class="acct-danger" id="del-panel">
+      <summary>Delete account</summary>
+      <div class="acct-danger-body">
+        <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. Deleting your account removes all of it, and it cannot be undone.</p>
+        <button type="button" id="del-acct" class="acct-link danger">Delete my account</button>
+      </div>
+    </details>
   </section>
 
   <section class="acct-saved" id="saved">
@@ -115,16 +180,34 @@ const canonical = `${BASE_URL}/account`;
   // they count the saved trees this page lists, not the check-in log, which
   // is app-only on a phone and therefore permanently zero here.
   function localStats() {}
+  // Who is signed in, kept so the name can be written against the right row.
+  var myId = null;
   function signedIn(session) {
     try { localStorage.setItem("ancienttrees_session", JSON.stringify(session)); } catch (e) {}
     fetch(SB + "/auth/v1/user", { headers: { "apikey": KEY, "Authorization": "Bearer " + session.access_token } })
       .then(function(r) { return r.ok ? r.json() : null; })
       .then(function(u) {
         if (u && u.email) document.getElementById("in-email").textContent = u.email;
+        if (u && u.id) { myId = u.id; loadName(session.access_token, u.id); }
       })
       .catch(function() {});
     localStats();
     show("st-in");
+  }
+
+  // The name they already chose, wherever they chose it. An empty box on a
+  // page that already knows the answer reads as data lost, and somebody who
+  // set their name in the app would be looking at exactly that.
+  function loadName(token, id) {
+    fetch(SB + "/rest/v1/profiles?select=display_name&user_id=eq." + encodeURIComponent(id),
+          { headers: { "apikey": KEY, "Authorization": "Bearer " + token } })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(rows) {
+        if (rows && rows[0] && rows[0].display_name) {
+          document.getElementById("in-name").value = rows[0].display_name;
+        }
+      })
+      .catch(function() {});
   }
   function parseHash() {
     var h = {};
@@ -176,6 +259,45 @@ const canonical = `${BASE_URL}/account`;
     if (lastEmail) { sendLink(lastEmail, function() {}); document.getElementById("sent-to").textContent = mask(lastEmail); }
     show(lastEmail ? "st-sent" : "st-signin"); if (lastEmail) startCooldown();
   });
+  // Saving it. The SAME upsert the app makes (profiles?on_conflict=user_id
+  // with resolution=merge-duplicates), so setting a name here and setting one
+  // in the app are one operation against one row rather than two paths that
+  // can disagree. CLAUDE.md's both-surfaces rule: the decision travels, the
+  // design does not have to.
+  var nameBtn = document.getElementById("save-name");
+  nameBtn.addEventListener("click", function() {
+    var box = document.getElementById("in-name");
+    var note = document.getElementById("name-note");
+    var v = box.value.trim();
+    var s = null;
+    try { s = JSON.parse(localStorage.getItem("ancienttrees_session")); } catch (e) {}
+    if (!s || !myId) { note.textContent = "Sign in again and try once more."; return; }
+    if (v.length < 1 || v.length > 40) {
+      note.textContent = "A name is between 1 and 40 characters.";
+      return;
+    }
+    nameBtn.disabled = true;
+    note.textContent = "Saving.";
+    fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
+      method: "POST",
+      headers: {
+        "apikey": KEY,
+        "Authorization": "Bearer " + s.access_token,
+        "Content-Type": "application/json",
+        "Prefer": "resolution=merge-duplicates"
+      },
+      body: JSON.stringify([{ user_id: myId, display_name: v }])
+    }).then(function(r) {
+      nameBtn.disabled = false;
+      note.textContent = r.ok
+        ? "Saved. People can find you as " + v + " in the app."
+        : "That did not save. Try again, or write to info@ancienttrees.app.";
+    }).catch(function() {
+      nameBtn.disabled = false;
+      note.textContent = "That did not save. Try again in a moment.";
+    });
+  });
+
   document.getElementById("signout").addEventListener("click", function() {
     try {
       var s = JSON.parse(localStorage.getItem("ancienttrees_session"));
