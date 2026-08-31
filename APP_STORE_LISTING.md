@@ -29,7 +29,7 @@ subject, per PRODUCT_COPY.md.
 the right place for anything seasonal):
 
 ```
-Every tree on the map is checked against two independent sources, and every one of them is free to find, read and walk to.
+Every tree on the map is checked against two independent sources, and every one of them is free to find, read and visit.
 ```
 
 **Keywords** (comma separated, no spaces, they are matched as well as the name
@@ -44,7 +44,7 @@ trees,tree,nature,walk,walking,hiking,map,park,forest,outdoors,botany,oak,histor
 ```
 Ancient Trees maps the remarkable old trees of the world's cities, and shows you the ones near you.
 
-Open it anywhere and the map fills with the trees around you: a yew that was old when the church beside it was built, a plane whose trunk takes four people to reach around, an oak that has stood through everything that happened on the street it shades. Each one has a page telling you what it is, roughly how old, and why it is worth the walk.
+Open it anywhere and the map fills with the trees around you: a yew that was old when the church beside it was built, a plane whose trunk takes four people to reach around, an oak that has stood through everything that happened on the street it shades. Each one has a page telling you what it is, roughly how old, and why it is worth seeing.
 
 WHAT YOU GET
 
