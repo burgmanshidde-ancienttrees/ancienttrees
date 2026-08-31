@@ -31,7 +31,9 @@
    "girth_m": 3.44,
    "height_m": 26.5,
    "crown_m": 25.2,
-   "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found within two search attempts and a direct-fetch attempt at the garden's own virtual species catalogue (jardibotanic.org); WebSearch's own AI summary claimed a jardibotanic.org catalogue page existed for this species, but per the search-summary-is-a-lead-never-a-source rule that summary was not trusted, and three different jardibotanic.org URLs fetched directly (pid 2294, 2297, and a live cadbusc= search for 'Quercus polymorpha') did not return this species. Register-only for now; worth a retry with a different jardibotanic.org pid or a Wikipedia/Wikispecies cross-check."
+   "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found within two search attempts and a direct-fetch attempt at the garden's own virtual species catalogue (jardibotanic.org); WebSearch's own AI summary claimed a jardibotanic.org catalogue page existed for this species, but per the search-summary-is-a-lead-never-a-source rule that summary was not trusted, and three different jardibotanic.org URLs fetched directly (pid 2294, 2297, and a live cadbusc= search for 'Quercus polymorpha') did not return this species. Register-only for now; worth a retry with a different jardibotanic.org pid or a Wikipedia/Wikispecies cross-check.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Nouer americà del Botanic I (Carya illinoinensis)",

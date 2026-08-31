@@ -1033,7 +1033,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -4212,6 +4212,15 @@
     "tokens": 140000,
     "trees": 5,
     "note": "three sub-four-tree pages under the same-day one-destination-tree ruling. 28k per tree, above target, which is what five trees across three separate pages costs when each needs its own intro, question answer, context and FAQ.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "philadelphia",
+    "kind": "write",
+    "tokens": 12000,
+    "trees": 1,
+    "note": "wrote in-session rather than dispatching (only 1 verified tree waiting, the Bartram's Ginkgo single-famous-tree exception case); city opened below the floor, published, preflight/build clean",
     "wasted": 0,
     "brief_wrong": false
    }
