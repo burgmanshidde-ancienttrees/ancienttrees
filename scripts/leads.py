@@ -111,8 +111,29 @@ HELD_MARKER = re.compile(
 # not_ready_marker() below checks the whole entry for a count word, not just
 # a short lookahead window, so a count-based justification anywhere in the
 # text keeps the lead in READY rather than mis-filing it.
+#
+# Widened 2026-08-31: a leads.py --ready dispatch found 9 of 10 cities'
+# "READY" trees were leads an earlier pass had explicitly declined in its own
+# words, just not in one of the three phrasings above. Menorca's four were
+# private land with no access evidence (a real hard-rule-10 case, "privada"
+# never matched the English-only "private" pattern below); Vienna's ginkgo,
+# Perugia's cedar, Paris's mulberry, Napoli's plane, Zaragoza's lime and
+# Kagoshima's camphor were each held on access, identity, a register
+# conflict, survival doubt or a delisted register number, each in different
+# words. Every phrase below was checked against the FULL leads corpus before
+# being added (not just the flagged cities) for both count: each is a small,
+# specific hit list, and content: every hit is a genuine hold, never a lead
+# that should still ship. "would need a" and "likely/almost certainly
+# beyond" target the day-trip-boundary case specifically (an unverified or
+# doubtful transit claim), which is a location-honesty question and not the
+# same thing as CLAUDE.md's protected "nobody got round to researching it
+# further" (bare distance or lack of a second source, which stays READY).
 NOT_READY_MARKER = re.compile(
-    r"\[SKIPPED\b[^\]]*\]|\b(?:not pursued|left unverified|left undelivered)\b",
+    r"\[SKIPPED\b[^\]]*\]|\b(?:not pursued|left unverified|left undelivered|"
+    r"ship once|not delivered on|removed from protection|"
+    r"survival is a genuine question|identity unresolved|unresolved conflict|"
+    r"could be a genuine second|almost certainly beyond|likely beyond|"
+    r"would need a)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
