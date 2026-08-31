@@ -1,0 +1,216 @@
+{
+  "city": "Pamplona",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Navarra protects 47 trees by name, declaring each one a Natural Monument in its own right, and six of them stand within half an hour of Pamplona. Five are oaks in the valleys north and south of the city, most of them pollarded for centuries by the villages that own the ground, which is why they have short thick trunks under enormous crowns. The sixth is in Pamplona itself, a giant sequoia in the garden of the regional government's palace, which is about as far from a Navarrese hill oak as a tree can get.",
+  "meta_description": "Navarra declares individual trees Natural Monuments, and six stand near Pamplona: pollarded valley oaks, and a giant sequoia at the government palace.",
+  "question_answer": "The oldest tree near Pamplona is most likely the Roble de Orkin in the Ultzama valley, a pedunculate oak whose size has led to it being called millenary, though Navarra publishes no age for it or for any of its 47 declared Natural Monument trees.",
+  "question_meta": "The Roble de Orkin in Ultzama is probably the oldest tree near Pamplona. Why Navarra publishes no ages at all, and 5 more Natural Monuments.",
+  "question_context": "Navarra's register is the shortest on this site and the most absolute. It names 47 trees, declares each an individual Natural Monument, and records for each one the species, the place, the year of declaration and a coordinate, and nothing else: no height, no girth, no age and no note on whether the tree is still alive. The catalogue in its present form was approved at the end of 2009, with a first tranche declared in 1991. That leaves the age question to sources outside the register, and there the ground is soft. The oak at Orkin in the Ultzama valley is widely called millenary on the strength of its size, which is a common way of dating a big oak and not a measurement. The oak at Eltzaburu is better documented: reported at over 26 metres tall with a base close to two metres across, it survived both felling and a lightning strike that took out one of its main limbs, and it was declared a Natural Monument in 1991. Getting to Eltzaburu: about 25 km north of Pamplona in the Ultzama valley, with a marked walking route to the tree.",
+  "oldest_tree_id": "pam_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Pamplona?",
+      "a": "Probably the Roble de Orkin in the Ultzama valley, which is often called millenary because of its size. Navarra publishes no ages for any of its declared trees, so that is a reputation rather than a figure."
+    },
+    {
+      "q": "What does Natural Monument mean in Navarra?",
+      "a": "An individual legal declaration. Navarra has named 47 of them, most trees, each protected in its own right; the catalogue as it stands was approved at the end of 2009, extending a first group declared in 1991."
+    },
+    {
+      "q": "Why are so many of them oaks?",
+      "a": "Because the wet valleys north of Pamplona are Atlantic rather than Mediterranean country and grow oak, and because the villages pollarded them for centuries for firewood and charcoal, cutting the crown back repeatedly. That produces a short, hugely thick trunk under a wide crown, which is the shape that later gets declared a monument."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "The five oaks are, standing on village common land and woodland with tracks to them; Eltzaburu has a marked walking route. The sequoia is in the enclosed garden of the Palacio de Navarra in the city, so it is normally a view from the street rather than a visit."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Only the two at Jauntsarats, which are about 570 metres apart. The rest are separate valleys, between 13 and 25 kilometres from Pamplona in different directions."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pam_001",
+      "name": "The Sequoia of the Palacio de Navarra",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Garden of the Palacio de Navarra, Avenida Carlos III, 31002 Pamplona",
+        "latitude": 42.81549,
+        "longitude": -1.642982,
+        "neighbourhood": "Centre"
+      },
+      "story": "There is a Californian redwood in the middle of Pamplona and it belongs to the government. The Palacio de Navarra on Avenida Carlos III is the seat of the regional administration, and the walled garden behind its facade holds a giant sequoia that Navarra declared a Natural Monument in 1991, one of the first tranche. It is the only one of the region's 47 declared trees inside a city. Sequoiadendron giganteum reached Europe as seed in 1853 and inside a decade it was the tree every institution and estate in the west wanted, so a nineteenth century administrative palace with a redwood in its garden is not an eccentricity, it is exactly what the fashion produced. What Navarra does not publish is any measurement of it at all, or an age. The register carries the species, the place, the year of declaration and a coordinate and stops there. The garden is enclosed, which makes this a tree you generally see over a wall from the avenue rather than stand under, and it is tall enough for that to work.",
+      "verified_sources": [
+        "https://idena.navarra.es/",
+        "https://es.wikipedia.org/wiki/Anexo:Monumento_Natural_de_Navarra"
+      ],
+      "access": "Free to see from the street; the garden of the Palacio de Navarra is enclosed and not normally open, so this is a view rather than a visit",
+      "transport": "On Avenida Carlos III in the middle of Pamplona, a few minutes on foot from the Plaza del Castillo",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Natural Monument of Navarra in 1991. Single-sourced from the Gobierno de Navarra SITNA register, which publishes species, place, declaration year and coordinate and no measurements, no age and no vitality field. Published as a view-only tree because the palace garden is enclosed; if it is open on some days, we would like to know."
+    },
+    {
+      "id": "pam_002",
+      "name": "The Oak of Orkin",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "often called millenary on the strength of its size, with no published figure",
+      "age_min": 300,
+      "age_max": 1000,
+      "location": {
+        "address": "Arraitz-Orkin, Ultzama valley, 31797 Navarra",
+        "latitude": 42.983562,
+        "longitude": -1.639285,
+        "neighbourhood": "Ultzama"
+      },
+      "story": "This is the tree people in Navarra mean when they say the big oak. It stands at Orkin, in the Ultzama valley north of Pamplona, and it is habitually described as millenary, which is a reputation built on its size rather than any measurement: Navarra's register gives it a species, a place, a declaration year and a coordinate and nothing else, so nobody has published a girth, a height or an age for it. What is described consistently is the shape. It has been pollarded, cut back repeatedly over generations in the way Basque and Navarrese villages managed their oaks for firewood and charcoal, and the result is a broad rounded crown on a trunk that flares at the base into a mass of roots big enough that animals den in the gaps under them. Ultzama is wet Atlantic country, beech and oak and pasture rather than anything Mediterranean, 20 kilometres and a different climate from Pamplona. Navarra declared it a Natural Monument in 2009. If anybody has put a tape round it, we would like the number.",
+      "verified_sources": [
+        "https://idena.navarra.es/",
+        "https://es.wikipedia.org/wiki/Anexo:Monumento_Natural_de_Navarra"
+      ],
+      "access": "Free, on village common ground in the Ultzama valley",
+      "transport": "Arraitz-Orkin, about 19 km north of Pamplona, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Natural Monument of Navarra in 2009. The register publishes no height, girth or age, and the millenary description comes from popular and local accounts rather than a measurement, which is why the band here is very wide and the story says so. The pollarding and root-buttress description is from those same local accounts."
+    },
+    {
+      "id": "pam_003",
+      "name": "The Oak of Eltzaburu",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "height_m": 26,
+      "location": {
+        "address": "Eltzaburu, Ultzama valley, 31797 Navarra",
+        "latitude": 43.008808,
+        "longitude": -1.716913,
+        "neighbourhood": "Ultzama"
+      },
+      "story": "Lightning took one of its main limbs and it is still standing. The oak at Eltzaburu is reported at over 26 metres tall with a base close to two metres across, and it carries the marks of two separate attempts on its life: it escaped being felled, at some point nobody has dated, and it lost a major branch to a strike years ago. Navarra declared it a Natural Monument in 1991, in the first group, and it is number 10 on the list. It is the most reachable of the oaks on this page, because there is a marked walking route to it from the beech wood at Sastrain, which means somebody has decided people should come and look, and has put up signs. The Ultzama valley is the wet green half of Navarra, where the Atlantic weather gets over the watershed and beech and oak grow the way they do in the Basque country rather than the way they do on the Ebro. No age is published for it, as none is published for any of Navarra's 47 declared trees.",
+      "verified_sources": [
+        "https://idena.navarra.es/",
+        "https://es.wikipedia.org/wiki/Anexo:Monumento_Natural_de_Navarra"
+      ],
+      "access": "Free, reached by a marked walking route from the beech wood at Sastrain",
+      "transport": "Eltzaburu, about 23 km north of Pamplona in the Ultzama valley",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Natural Monument of Navarra in 1991, listed as number 10. The register publishes species, place, declaration year and coordinate only. The over 26 metres, the near two metre base, the lightning strike and the escape from felling come from Navarrese walking and heritage accounts rather than from the register, so height is carried and girth is not. No age published anywhere."
+    },
+    {
+      "id": "pam_004",
+      "name": "The Oaks of Jauntsarats",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Jauntsarats, Basaburua valley, 31866 Navarra",
+        "latitude": 43.002732,
+        "longitude": -1.797562,
+        "neighbourhood": "Basaburua"
+      },
+      "story": "Two of them, declared separately, about 570 metres apart in the same wood. Navarra listed the oaks of Jauntsarats as Roble de Jauntsarats I and Roble de Jauntsarats II in 1991, giving each its own Natural Monument declaration rather than treating them as a pair, which is how this register works: it protects individuals and it does not group. They stand in the Basaburua valley in the wet northern country, in woodland rather than in the open, which is unusual for a Navarrese monumental oak; most of the declared ones are in pasture or on village common ground where they were kept as isolated trees for shade and fodder. Two giants inside a beech and oak wood are a different experience, because you come on them rather than see them from a distance. Navarra publishes no measurement and no age for either. This entry covers the first of the two and the second is 570 metres south; both are on the same walk, which makes Jauntsarats the only place near Pamplona where two declared Natural Monument trees can be seen in one outing.",
+      "verified_sources": [
+        "https://idena.navarra.es/",
+        "https://es.wikipedia.org/wiki/Anexo:Monumento_Natural_de_Navarra"
+      ],
+      "access": "Free, in woodland on village ground in the Basaburua valley",
+      "transport": "Jauntsarats, about 25 km north of Pamplona",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Two separate Natural Monument declarations of 1991, Roble de Jauntsarats I and II, 585 m apart by the register's own coordinates; this entry is the first, and the story says the second stands nearby. No measurements, no age and no vitality field in the register."
+    },
+    {
+      "id": "pam_005",
+      "name": "The Oak of Azanza",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Azanza, Goni valley, 31839 Navarra",
+        "latitude": 42.824021,
+        "longitude": -1.844074,
+        "neighbourhood": "Goni"
+      },
+      "story": "This one is a different oak from the others, and the difference is the whole reason it is worth a separate stop. Quercus pubescens, the downy oak, is the dry-country oak of southern Europe: smaller leaves with felted undersides, tolerant of thin limestone soils and long summers, and it takes over from pedunculate oak as you come south and west out of the Atlantic valleys. Azanza sits in the Goni valley on that boundary, in the hills below the Sierra de Andia, and the change in the trees over 20 kilometres of road from Ultzama is the clearest lesson in Navarrese geography anybody could ask for. Navarra declared this tree a Natural Monument in 2009 and, as with all 47, published a species, a place, a year and a coordinate and no measurements at all. That is the honest state of it: an officially protected oak of a species the north of Navarra does not grow, standing where two climates meet, and nobody has said how big or how old it is. If you have measured it, tell us.",
+      "verified_sources": [
+        "https://idena.navarra.es/",
+        "https://es.wikipedia.org/wiki/Anexo:Monumento_Natural_de_Navarra"
+      ],
+      "access": "Free, on village ground in the Goni valley",
+      "transport": "Azanza, about 16 km northwest of Pamplona",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Natural Monument of Navarra in 2009. Single-sourced from the SITNA register, which gives the species as Quercus humilis Mill., a synonym of Quercus pubescens, and publishes no height, girth or age. The climate-boundary reading is general biogeography of the species, not a claim about this individual."
+    },
+    {
+      "id": "pam_006",
+      "name": "The Quejigo of Garinoain",
+      "species": "Portuguese Oak (Quercus faginea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Garinoain, Valdorba, 31395 Navarra",
+        "latitude": 42.592328,
+        "longitude": -1.685294,
+        "neighbourhood": "Valdorba"
+      },
+      "story": "Go south from Pamplona instead of north and the oaks change again. The quejigo, Quercus faginea, is the Iberian oak of the middle ground between the wet north and the dry Ebro plain: it holds its dead leaves through winter and drops them only when the new ones push, so a quejigo in February is a brown tree in a bare landscape, which is how you find one. This is the declared Natural Monument of the Valdorba, a district of small villages and Romanesque churches in the hills south of Pamplona that almost nobody visits, and Navarra listed it in 2009. Like every tree on this page it comes with a species, a place, a year and a coordinate and no measurements whatsoever. The Valdorba is worth the drive on its own account, and going out to look at a protected oak is as good a reason as any to end up in it. If you know its girth, or anyone has dated it, tell us and we will put the number on this page.",
+      "verified_sources": [
+        "https://idena.navarra.es/",
+        "https://es.wikipedia.org/wiki/Anexo:Monumento_Natural_de_Navarra"
+      ],
+      "access": "Free, in open country in the Valdorba",
+      "transport": "Garinoain, about 25 km south of Pamplona",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Natural Monument of Navarra in 2009. Single-sourced from the SITNA register: species, place, year and coordinate only, no measurements, no age, no vitality field. The winter marcescence described is standard for the species."
+    }
+  ]
+}

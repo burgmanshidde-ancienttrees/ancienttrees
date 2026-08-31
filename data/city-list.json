@@ -1516,6 +1516,14 @@
       "status": "published",
       "trees": 7,
       "note": "Opened 2026-08-31 from the same Catalan register. None is in Girona itself: the city's own Devesa is a grove of ~2,500 planes and the register declares individuals only. Four of the seven are inside designated natural areas. The register records vitality, so the dead entries near Girona were excluded from the data rather than by guess."
+    },
+    {
+      "city": "Pamplona",
+      "country": "Spain",
+      "slug": "pamplona",
+      "status": "published",
+      "trees": 6,
+      "note": "Opened 2026-08-31 from Navarra's SITNA register of declared Natural Monuments (CC BY 4.0). The thinnest register on the site: species, place, declaration year and coordinate, with no height, girth, age or vitality field anywhere, so no tree here carries a measurement it does not have and every page says so."
     }
   ]
 }
