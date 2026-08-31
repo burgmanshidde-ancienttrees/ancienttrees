@@ -18,6 +18,14 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-31 - Vilnius +2, Cagliari +1: deepen passes on standing claims
+
+Finished the two claims an earlier attempt in this window left standing rather than dispatching anything new. **Vilnius (11 to 13):** the Lazdynai Linden (vln_012, a small-leaved lime standing wild in the Bukciai forest at the edge of the Lenin-Prize-winning Lazdynai housing estate) and the Dvarcionys Oak (vln_013, genus only, register + an independent natural-heritage catalogue). Both thin (no age, no exact address, register coordinates only), both flagged and marked approximate. **Cagliari (9 to 10):** the Common Lime of Corongiu (cag_010, 260cm girth, 18m tall, at a historic 1867 dam site above Sinnai), flagged because the pass could not confirm whether the tree sits on the open public trail or past a fenced section of the waterworks; access line states that honestly. Both write passes done directly in session (2 and 1 tree, neither justified a write-stories dispatch).
+
+Fixed two build breaks surfaced by adding these: a hard-rule-9 species collision (Vilnius's new genus-only oak collided with Austin's "Live Oak (Quercus sp.)" on the exact same Latin placeholder; renamed to the existing "Oak (Quercus, species not established)" convention used elsewhere, and unified "Small-leaved Linden" to the sitewide "Small-leaved Lime" for Tilia cordata), and a stale count-promise sweep on both cities' intro/meta/question/FAQ text plus the Italy country page (317->318 trees). Also picked up and fixed, in passing, an unrelated pre-existing build break from a concurrent session's Tarragona opening (oldest-tree question_answer never named "Bofarull") and a duplicate Ronda species-name fix that had already landed upstream (discarded my redundant local copy after a pull).
+
+Built, QA'd (clean bar the sandbox's shallow-clone sitemap-lastmod NOTE), preflighted (205 cities, 0 problems) and superlatives-checked (539 claims, no collisions) before pushing.
+
 ## 2026-08-31 - Segovia opens: 5 trees, 5 flagged, 5 photos missing
 
 Opened from zero via the Castilla y Leon "arboles notables" register. 1 tree

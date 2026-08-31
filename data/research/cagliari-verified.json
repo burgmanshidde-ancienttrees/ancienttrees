@@ -1,0 +1,27 @@
+[
+  {
+    "id": "cag_010",
+    "name": "The Common Lime of Corongiu",
+    "species": "Common Lime (Tilia x europaea)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 260,
+    "height_m": 18.0,
+    "location": {
+      "address": "Corongiu, near the historic Corongiu dams, Sinnai, Sardinia",
+      "latitude": 39.308889,
+      "longitude": 9.27944,
+      "neighbourhood": "Corongiu, Sinnai"
+    },
+    "verified_sources": [
+      "https://www.sardegnaforeste.it/sites/default/files/Elenco%20degli%20alberi%20monumentali%20della%20Sardegna.pdf (regional register, sheet 05/I752/CA/20, girth 260cm, height 18m, locality Corongiu, comune Sinnai)",
+      "https://it.wikipedia.org/wiki/Alberi_monumentali_della_Sardegna (independently reproduces the same tree: tiglio intermedio, Sinnai, Corongiu, 260/18)"
+    ],
+    "access": "Free, no ticket; the tree stands in the Corongiu area, a historic 1866-67 dam and reservoir site above Sinnai reached by a public hiking trail (also used for organised Abbanoa/Legambiente educational visits and CAI excursions, but the trail itself is publicly walkable, per Wikiloc and local press). Not independently confirmed whether the exact tree sits inside a fenced facility perimeter or on the open trail; state this honestly rather than guess.",
+    "transport": "Car only, roughly 15-18km / 25-30 min drive northeast of Cagliari centre via Sinnai, into the hills above town; no public transport reaches Corongiu itself",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two register sheets for the same tree (italy-masaf.json sheet_id 05/I752/CA/20 and sardinia-alberi-monumentali.json register_id 05/I752/CA/20 -- same sheet number, one national one regional copy of the same designation, counted as one source) plus an independent Wikipedia reproduction (it.wikipedia.org/wiki/Alberi_monumentali_della_Sardegna) matching girth 260cm and height 18m exactly. Comune Sinnai, locality Corongiu, altitude 125m. No age field in either register; no documented planting date found, so age_estimate left empty rather than derived from girth alone (no local growth-rate source checked this pass). Corongiu is a historic three-dam site (first inaugurated 1867, supplying Cagliari's water) with a nuraghe nearby; local press (L'Unione Sarda, CAI Cagliari, Convitto Nazionale di Cagliari) describes guided Abbanoa/Legambiente visits and a public hiking trail (Wikiloc: 'Sinnai: Laghi di Corongiu Trail'), but no source explicitly confirms unguided public access to the exact tree's spot versus a fenced facility perimeter. Flagged for that reason: a future pass or reader should confirm whether a visitor can reach the tree without joining an organised visit. Alive: no explicit recent photo/observation found this pass beyond the register listing itself (Oct 2025 update, IX aggiornamento) and the current Wikipedia mirror; no report of removal or damage found either."
+  }
+]

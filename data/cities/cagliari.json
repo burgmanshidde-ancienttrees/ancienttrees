@@ -2,11 +2,11 @@
   "city": "Cagliari",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Cagliari's biggest tree stands on the square outside the central railway station: a Moreton Bay fig with a trunk twelve metres round, fenced at the base and closely watched. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest park, adds twinned figs, a honey locust and a jacaranda. Further out, a cypress in Pirri older than its cemetery, a day trip to Dolianova for two pines, and a blue gum in the forest above Sinnai. Six of nine stand within a kilometre and a half.",
+  "intro": "Cagliari's biggest tree stands on the square outside the central railway station: a Moreton Bay fig with a trunk twelve metres round, fenced at the base and closely watched. A second fig, 9.8 metres round, holds the corner where Via Roma meets the waterfront. The Giardini Pubblici, Sardinia's oldest park, adds twinned figs, a honey locust and a jacaranda. Further out, a cypress in Pirri, two pines in Dolianova, and a blue gum and a lime in the hills above Sinnai. Six of ten stand within a kilometre and a half.",
   "meta_description": "Cagliari's monumental trees: a fig twelve metres round outside the station, another on the Via Roma waterfront, and three in Sardinia's oldest park.",
-  "question_meta": "Cagliari's oldest tree is the cypress in the Pirri cemetery, over two hundred years old and older than the graveyard. Where it stands, plus seven more.",
+  "question_meta": "Cagliari's oldest tree is the cypress in the Pirri cemetery, over two hundred years old and older than the graveyard. Where it stands, plus nine more.",
   "question_answer": "The oldest tree in Cagliari is the cypress in the Pirri cemetery, which Sardinian press covering its 2025 protection puts at more than two hundred years old: it was already standing when the burial ground was consecrated in November 1913. The only tree here that comes close is the Tintitaco in the Parco della Rimembranza, and its own record disagrees with itself, roughly 166 years on the Italian tree registry against about 200 in local reporting. The figs are younger than both. The two on the city squares are given 140 to 150 years, and the pair in the Giardini Pubblici anywhere between 140 and 195, a range nobody has narrowed.",
-  "question_context": "Ages are the soft part of the record in Cagliari. Italy's national register of monumental trees, which covers every tree on this page, measures girth and height and carries no age field. Every year given here comes from somewhere else: local and regional newspapers, the council's own designation notices, or the independent Italian tree registry, the only source that has dated the Tintitaco. Where two of those disagree, this page gives both figures rather than choosing. Access is simpler. All nine trees stand on free public ground, six within a kilometre and a half of each other in the centre, the seventh four kilometres out in Pirri on a bus route, the eighth eighteen kilometres out in Dolianova on the regional train, and the ninth fifteen kilometres out in the Foresta dei Sette Fratelli near Sinnai, reachable only by car. Two qualifications: a precautionary fence rings the station fig, so you can stand beside it and not under it, and the Pirri cypress is in a working cemetery with visiting hours. Two further register trees were checked and left off, a Norfolk Island pine and a coral tree, both on private ground.",
+  "question_context": "Ages are the soft part of the record in Cagliari. Italy's national register of monumental trees, which covers every tree on this page, measures girth and height and carries no age field. Every year given here comes from somewhere else: local and regional newspapers, the council's own designation notices, or the independent Italian tree registry, the only source that has dated the Tintitaco. Where two of those disagree, this page gives both figures rather than choosing. Access is simpler. All ten trees stand on free public ground, six within a kilometre and a half of each other in the centre, the seventh four kilometres out in Pirri on a bus route, the eighth in Dolianova on the regional train, and the last two reachable only by car, into the hills above Sinnai. Two qualifications: a precautionary fence rings the station fig, and the Pirri cypress is in a working cemetery with visiting hours. Two further register trees were checked and left off, a Norfolk Island pine and a coral tree, both on private ground.",
   "faq": [
     {
       "q": "What is the oldest tree in Cagliari?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Six of the nine, yes. The station fig, the Via Roma fig, the Tintitaco and the three Giardini Pubblici trees sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus. Dolianova's two pines are further still, an 18km train ride, and the blue gum near Sinnai is a car-only trip into the Foresta dei Sette Fratelli; both make their own separate day out."
+      "a": "Six of the ten, yes. The station fig, the Via Roma fig, the Tintitaco and the three Giardini Pubblici trees sit within about a kilometre and a half of each other. The Pirri cypress is four kilometres out and needs a bus. Dolianova's two pines are further still, an 18km train ride, and both the blue gum near Sinnai and the lime at Corongiu are car-only trips into the hills above town; each makes its own separate day out."
     }
   ],
   "hero_tree_id": "cag_004",
@@ -324,6 +324,37 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Sardinia has almost no native eucalyptus, and that is the point of this one. Eucalyptus globulus, the Tasmanian blue gum, arrived on the island as a reforestation and windbreak species, planted along roads and forest edges rather than admired for its own sake. This one, standing at the edge of the Foresta dei Sette Fratelli near Sinnai, ended up on Italy's national register of monumental trees anyway, one of relatively few eucalyptus to make that list in a country where the species is functionally an immigrant.\n\nThe numbers disagree by about six percent, which for a tree this size is not much of an argument: the regional heritage portal measures the trunk at 4.9 metres round, the national register at 5.2, and both put the height at close to 30 metres. Age is recorded only loosely, as over a hundred years, which given how fast blue gums grow in the right climate could mean either a genuinely old specimen or one that simply had good conditions early.\n\nThe forest around it is real, a reserve for the Sardinian deer and for mouflon reintroduced here from the 1980s, and the tree stands a fifty metre walk from a car park with full public access and no entrance fee. There is no bus route out here. The road is the only way in, about half an hour from central Cagliari."
+    },
+    {
+      "id": "cag_010",
+      "name": "The Common Lime of Corongiu",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 260,
+      "height_m": 18.0,
+      "location": {
+        "address": "Corongiu, near the historic Corongiu dams, Sinnai, Sardinia",
+        "latitude": 39.308889,
+        "longitude": 9.27944,
+        "neighbourhood": "Corongiu, Sinnai"
+      },
+      "story": "Corongiu is three dams stacked up a valley above Sinnai, built between 1867 and 1922 to give Cagliari its first real water supply, and this lime tree has stood at the site for long enough that nobody now can say whether it predates the dams or came after them. At 2.6 metres round and 18 metres tall, it is the kind of specimen that only grows where a valley holds water and shelter both, which is exactly what an engineer would have looked for in 1867 too.\n\nThe reservoirs still work, still supply Cagliari, and the paths around them are now a public walking trail through the hills, popular enough that Legambiente and the water utility Abbanoa run organised visits explaining the site's history. Sardinia's own monumental tree register lists the lime by its measurements alone, no age, no planting story, just the girth and the height and the place name.\n\nWhat that leaves unsettled is worth saying plainly: reach it on the open trail through the Corongiu valley, and whether that trail runs right up to the tree or past a fenced section of the works has not been confirmed. Anyone who has walked it can tell us, and settle the last honest gap in an otherwise well measured tree.",
+      "verified_sources": [
+        "https://www.sardegnaforeste.it/sites/default/files/Elenco%20degli%20alberi%20monumentali%20della%20Sardegna.pdf (regional register, sheet 05/I752/CA/20, girth 260cm, height 18m, locality Corongiu, comune Sinnai)",
+        "https://it.wikipedia.org/wiki/Alberi_monumentali_della_Sardegna"
+      ],
+      "access": "Free, no ticket; reached via the public walking trail through the historic Corongiu dam site above Sinnai (also used for organised Abbanoa/Legambiente visits). Whether the trail runs directly to the tree or past a fenced section of the waterworks was not confirmed; treat this as a walk to the site rather than a guaranteed close approach until a reader tells us more.",
+      "transport": "Car only, roughly 15-18km / 25-30 min drive northeast of Cagliari centre via Sinnai; no public transport reaches Corongiu",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
     }
   ]
 }
