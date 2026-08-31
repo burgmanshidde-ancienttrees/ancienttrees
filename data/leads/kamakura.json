@@ -1,0 +1,15 @@
+{
+  "city": "Kamakura", "country": "Japan", "city_slug": "kamakura",
+  "note": "From the 2026-08-31 pass that opened Kamakura off Kanagawa prefecture's hundred notable trees. The published page runs 4 of 6 trees behind a small temple fee, over the one-third line, and the fix per CLAUDE.md is free trees ADDED rather than good ones removed. These are the candidates for that.",
+  "leads": [
+    {"name": "Kaido of Myohonji", "species": "Hall's Crabapple (Malus halliana)", "lat": null, "lng": null, "status": "lead",
+     "why": "One of Kamakura's three great crabapples alongside Kosokuji's and Anyoin's, and Myohonji has no entrance fee, which is exactly what the paid ratio needs. Not on Kanagawa's hundred-notable-trees list, so it needs its own two sources and a coordinate."},
+    {"name": "Kaido of Anyoin", "species": "Hall's Crabapple (Malus halliana)", "lat": null, "lng": null, "status": "lead",
+     "why": "The third of the three great crabapples. Anyoin charges a small fee, so it does not help the ratio, but it completes the set."},
+    {"name": "Camphor of Joraku-ji", "species": "Camphor Tree (Cinnamomum camphora)", "lat": null, "lng": null, "status": "lead",
+     "why": "Joraku-ji at Ofuna is free and holds old trees. Unverified: needs measurements and a second source."},
+    {"name": "Byakushin of Engakuji", "species": "Chinese Juniper (Juniperus chinensis)", "lat": null, "lng": null, "status": "lead",
+     "why": "Engakuji, the second of the five great Zen temples, has old junipers of the same tradition as Kenchoji's. Charges a fee. Needs measurements."}
+  ],
+  "blocked": []
+}

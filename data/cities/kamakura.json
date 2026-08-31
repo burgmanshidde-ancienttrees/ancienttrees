@@ -1,0 +1,238 @@
+{
+  "city": "Kamakura",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Six of Kanagawa's hundred notable trees stand in Kamakura, and every one is inside a temple or a shrine. That is not a coincidence. Kamakura was the seat of government for a century and a half from 1180 and filled with religious houses; the town then shrank back to a village for six hundred years while the precincts stayed exactly where they were, unfarmed and unbuilt. The best known of the six is a ginkgo that blew over in a gale in 2010 and grew back from its own roots.",
+  "meta_description": "Kamakura's six notable trees, all on temple or shrine ground: a ginkgo that regrew after falling in 2010, junipers from Song China, and a crabapple.",
+  "question_answer": "The oldest trees in Kamakura are the junipers at Kenchoji, reckoned at about 750 years because temple tradition says the founder planted them from seed he carried from Song China when the temple was built in 1253. The great ginkgo at Tsurugaoka Hachimangu is traditionally given a thousand years, but that figure does not survive checking.",
+  "question_meta": "Kenchoji's junipers, about 750 years, are Kamakura's oldest trees. Why the famous thousand-year ginkgo is not, and 5 more worth the walk.",
+  "question_context": "Kamakura's two age claims pull in opposite directions and only one holds. Kenchoji was founded in 1253 by the regent Hojo Tokiyori, who brought the Chinese monk Rankei Doryu from Song to open it, and the temple's tradition is that Rankei planted the junipers from seed he carried. Nothing measured supports that and nothing contradicts it; 750 years is the temple's age applied to its trees. The thousand years attached to the great ginkgo at Tsurugaoka Hachimangu is a different case. It comes from the story that Kugyo hid behind the tree before killing his uncle, the third shogun Sanetomo, on the shrine steps in January 1219, and the trouble is that ginkgo is widely held not to have reached Japan by then. The tree was also never the size a thousand years implies. It came down in a gale in March 2010 and what stands there now is regrowth from the original root, about fifteen years old above ground. Getting to Kenchoji: about 15 minutes on foot from Kita-Kamakura station.",
+  "oldest_tree_id": "kmk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kamakura?",
+      "a": "The junipers at Kenchoji, at about 750 years. That figure is the temple's own founding date of 1253 applied to trees its tradition says the founder planted from Chinese seed, so it is a tradition rather than a measurement."
+    },
+    {
+      "q": "Is the great ginkgo at Tsurugaoka Hachimangu still there?",
+      "a": "Yes, but not as it was. The original blew over at about four in the morning on 10 March 2010, uprooted in a gale. Shoots came from the remaining root and what you see beside the steps now is that regrowth, which is why this page describes a young tree in an old place."
+    },
+    {
+      "q": "Why are all Kamakura's notable trees in temples?",
+      "a": "Because the ground was never disturbed. Kamakura was the seat of the shogunate from 1180 and filled with temples, then shrank back to a village for six centuries while the precincts stayed put. Nothing was ploughed or built over, which is the condition an old tree needs."
+    },
+    {
+      "q": "Do you have to pay to see them?",
+      "a": "Mostly a small amount, yes. Tsurugaoka Hachimangu and the Goryo Shrine at Sakanoshita are free. Kosokuji, Jochiji, Kenchoji and Kakuonji each charge an entrance fee in the range of about 100 to 500 yen, which is the normal arrangement at Kamakura temples."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "In two halves. Kenchoji and Jochiji are minutes apart on the Kita-Kamakura side, with Tsurugaoka Hachimangu and Kakuonji reachable from there on foot. Kosokuji and the Goryo Shrine are together in Hase, a short train ride southwest on the Enoden line."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kmk_001",
+      "name": "The Junipers of Kenchoji",
+      "species": "Chinese Juniper (Juniperus chinensis)",
+      "age_estimate": "about 750 years, reckoned from the temple's founding in 1253",
+      "age_min": 300,
+      "age_max": 750,
+      "girth_cm": 650,
+      "height_m": 13,
+      "location": {
+        "address": "Kenchoji, Yamanouchi 8, Kamakura 247-8525",
+        "latitude": 35.331167,
+        "longitude": 139.554361,
+        "neighbourhood": "Yamanouchi"
+      },
+      "story": "Before the temple there was an execution ground here, and the valley was called Hell Valley. Hojo Tokiyori, who governed Japan as regent and wanted to do it through Buddhism, put a great temple on the site in 1253 and brought the monk Rankei Doryu from Song China to open it; by 1386 Kenchoji was ranked first of Kamakura's five great Zen temples. It has the Zen layout, outer gate and mountain gate and buddha hall and dharma hall in one straight line, and along the path between the gate and the buddha hall a row of old junipers stands on both sides. Temple tradition says Rankei brought the seed with him from China and planted them. The thickest is the middle one of three on the left, 6.5 metres round and 13 metres tall, throwing limbs out sideways. What makes the tradition worth repeating is what happened to everything around them: the halls burned down repeatedly over the centuries and the junipers did not, and the buddha hall standing there now is not even originally Kamakura's. It was the mausoleum of the second Tokugawa shogun's wife, moved here from Shiba in Edo in 1647.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/kentyouji.html",
+        "https://izakamakura.jp/?page_id=1857"
+      ],
+      "access": "Temple entrance fee, a small amount, open daily",
+      "paid_entry": true,
+      "transport": "About 15 minutes on foot from Kita-Kamakura station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Kamakura City Natural Monument, designated 1998-11-09. Girth 6.5 m and height 13 m from the Kanagawa prefecture signboard for its hundred notable trees. The 750-year age is the temple's 1253 founding applied to the trees, which is a tradition and not a measurement, so age_min is set far below it. One entry for the row: the register and the signboard treat them together and the figures are the thickest individual's."
+    },
+    {
+      "id": "kmk_002",
+      "name": "The Great Ginkgo of Tsurugaoka Hachimangu",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "the standing tree is regrowth from 2010; the original was traditionally called a thousand years and was not",
+      "age_min": 15,
+      "age_max": 15,
+      "location": {
+        "address": "Tsurugaoka Hachimangu, Yukinoshita 2-1-31, Kamakura 248-8588",
+        "latitude": 35.325778,
+        "longitude": 139.556111,
+        "neighbourhood": "Yukinoshita"
+      },
+      "story": "At about four in the morning on 10 March 2010, in a gale, it came out of the ground. The great ginkgo beside the stone steps at Tsurugaoka Hachimangu had been a prefectural Natural Monument since 1955 and was 30 metres tall and 6.7 metres round, and it fell at the one hour of the day when nobody was standing under it. What is there now is not a replacement planted in its place. Shoots came from the root stock that stayed in the ground, and the tree beside the steps is that regrowth, fifteen years old above ground and rooted in something much older. The tradition attached to the original is the reason anyone knows it. On the night of 27 January 1219 the third Kamakura shogun, Minamoto no Sanetomo, was cut down on these steps by his nephew Kugyo, who by the story had been hiding behind this tree, and the line of shoguns that Yoritomo founded ended after three men and twenty-seven years. Hence the name, Kugyo's hiding ginkgo, and hence the thousand years people gave it. The thousand years is the weak part: ginkgo is widely held not to have reached Japan by 1219, and the tree was never the size that age implies.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/tsurugaokahachiman-ichou.htm",
+        "https://izakamakura.jp/?page_id=1857"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "About 10 minutes on foot from Kamakura station, at the top of the main approach",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "The original tree fell on 2010-03-10 and this entry describes the living regrowth from its root stock, per the rule that a fallen original honestly succeeded by living growth may be published as the living tree. Age is stated as the regrowth's, roughly 15 years above ground. The 30 m and 6.7 m figures belong to the fallen original, from the Environment Agency's Kanto giant-tree volume. Kanagawa prefectural Natural Monument since 1955-08-30. The thousand-year tradition is reported and doubted on the page, on the ginkgo-introduction grounds the source gives."
+    },
+    {
+      "id": "kmk_003",
+      "name": "The Tabunoki of the Goryo Shrine at Sakanoshita",
+      "species": "Japanese Bay Tree (Machilus thunbergii)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "height_m": 20,
+      "location": {
+        "address": "Goryo Shrine, Sakanoshita 3-17, Kamakura 248-0021",
+        "latitude": 35.311033,
+        "longitude": 139.533027,
+        "neighbourhood": "Sakanoshita"
+      },
+      "story": "The Enoden train runs across this shrine's approach. Goryo Shrine at Sakanoshita sits behind Hase, and the level crossing at its torii is one of the most photographed spots in Kamakura, because the little green and cream train passes within a couple of metres of the shrine steps. Most people are there for the train. The tabunoki behind it is 20 metres tall, a Kamakura City Natural Monument and one of the six Kamakura trees on Kanagawa's list of a hundred notable trees. Tabunoki is an evergreen of the laurel family that grows along warm coasts, and this is close to the sea; its new leaves come out bronze in spring before turning, which on a tree this size is a fortnight of the whole crown looking rusty. The shrine is dedicated to Kamakura Gongoro Kagemasa, a warrior who by the tale of the Later Three Year War took an arrow in the eye at sixteen, had it pulled out by a comrade who braced a foot on his face, and objected to the foot rather than the arrow. His festival in September involves masks and is one of the odder things in the Kamakura calendar. No age is published for the tree.",
+      "verified_sources": [
+        "https://izakamakura.jp/?page_id=1857",
+        "https://www.city.kamakura.kanagawa.jp/"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "Enoden line to Hase, about 5 minutes on foot; the shrine approach crosses the railway",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Kamakura City Natural Monument and one of Kanagawa's hundred notable trees; height 20 m from that list. No age or girth published. The pin is the shrine, not the trunk. The Kagemasa story is the shrine's own tradition."
+    },
+    {
+      "id": "kmk_004",
+      "name": "The Crabapple of Kosokuji",
+      "species": "Hall's Crabapple (Malus halliana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kosokuji, Hase 3-9-7, Kamakura 248-0016",
+        "latitude": 35.313007,
+        "longitude": 139.534701,
+        "neighbourhood": "Hase"
+      },
+      "story": "Kamakura counts three great crabapples and this is the one people queue for. Kaido, Malus halliana, is a Chinese crabapple grown for about ten days a year: in early April it opens deep pink buds on long thin stalks that hang the flowers downward, so the whole tree looks like it is dripping. The one in the small courtyard at Kosokuji is a Kamakura City Natural Monument and is on Kanagawa's list of a hundred notable trees, and the courtyard is small enough that in season there is not much room to stand. The temple behind it is worth the entrance on its own account. Kosokuji was the house of Yadoya Mitsunori, an official of the shogunate, and in 1271 he was holding his own lord's teacher, the monk Nichiren, in a cave in the garden after Nichiren had told the government that its policies were bringing catastrophe on Japan. The cave is still there behind the hall. Mitsunori later converted and turned the house into this temple. Nobody has published an age for the crabapple.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "label": "early April, when the pink flowers hang for about ten days",
+        "kind": "flowers"
+      },
+      "verified_sources": [
+        "https://izakamakura.jp/?page_id=1857",
+        "https://www.city.kamakura.kanagawa.jp/"
+      ],
+      "access": "Temple entrance fee, a small amount, open daily",
+      "paid_entry": true,
+      "transport": "Enoden line to Hase, about 8 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Kamakura City Natural Monument and one of Kanagawa's hundred notable trees; that list publishes no height for this entry and no age or girth is published anywhere. The pin is the temple, not the tree. Flowering timing is the species' habit in Kamakura's climate."
+    },
+    {
+      "id": "kmk_005",
+      "name": "The Weeping Cherry of Jochiji",
+      "species": "Weeping Higan Cherry (Prunus subhirtella)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "height_m": 20,
+      "location": {
+        "address": "Jochiji, Yamanouchi 1402, Kamakura 247-0062",
+        "latitude": 35.333398,
+        "longitude": 139.546245,
+        "neighbourhood": "Yamanouchi"
+      },
+      "story": "Jochiji flowers before the rest of Kamakura does. The tachihigan, the upright form of the higan cherry, opens a good week or more ahead of the somei-yoshino that everyone else waits for, and the one here is 20 metres tall, a Kamakura City Natural Monument and on Kanagawa's list of a hundred notable trees. Higan cherries are the long-lived ones. Almost every famous old cherry in Japan is this species or a form of it, because somei-yoshino is a nineteenth century clone that rarely passes a century, while a higan can run to several. Jochiji sits in a narrow valley off the Kita-Kamakura road, entered by a stone bridge and a flight of worn steps beside a well that is one of Kamakura's ten. It was founded in 1281 for a Hojo who died at 29, and it was ranked fourth of the five great Zen temples, though what stands now is mostly twentieth century: the Kanto earthquake of 1923 flattened the buildings here. The cherry has no published age, which is a pity for a species where age is the point. If you know one, tell us.",
+      "best_time": {
+        "months": [
+          3
+        ],
+        "label": "the second half of March, a week or more before the ordinary cherries",
+        "kind": "flowers"
+      },
+      "verified_sources": [
+        "https://izakamakura.jp/?page_id=1857",
+        "https://www.city.kamakura.kanagawa.jp/"
+      ],
+      "access": "Temple entrance fee, a small amount, open daily",
+      "paid_entry": true,
+      "transport": "About 8 minutes on foot from Kita-Kamakura station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Kamakura City Natural Monument and one of Kanagawa's hundred notable trees, height 20 m from that list. No age or girth published. The pin is the temple, not the tree. The flowering window is the species' habit, not a record of this individual."
+    },
+    {
+      "id": "kmk_006",
+      "name": "The Inumaki of Kakuonji",
+      "species": "Buddhist Pine (Podocarpus macrophyllus)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "height_m": 18,
+      "location": {
+        "address": "Kakuonji, Nikaido 421, Kamakura 248-0002",
+        "latitude": 35.331138,
+        "longitude": 139.564109,
+        "neighbourhood": "Nikaido"
+      },
+      "story": "This is the quietest place on this page and the hardest to get into. Kakuonji sits at the closed end of a valley in Nikaido, past where the tourist route gives up, and for most of the year the inner precinct is seen on a guided round at set times rather than wandered through. The inumaki in it is 18 metres tall, a Kamakura City Natural Monument and one of Kanagawa's hundred notable trees. Inumaki, Podocarpus macrophyllus, is a conifer that does not look like one: long flat strap-shaped leaves, dark and dense, and a fruit that is a green nut sitting on a swollen red stalk which is edible while the nut is not. It is the standard tree of a temple hedge in warm Japan and it takes clipping forever, so a free-grown one at 18 metres is a different object from the ones people know. The temple was founded in 1218 by the regent Hojo Yoshitoki after, the story goes, a dream, and it holds a hall of the twelve heavenly generals and a hillside of cave tombs cut into the valley walls. No age has been published for the tree.",
+      "verified_sources": [
+        "https://izakamakura.jp/?page_id=1857",
+        "https://www.city.kamakura.kanagawa.jp/"
+      ],
+      "access": "Temple entrance fee, a small amount; much of the precinct is seen on a guided round at set times, so check before going",
+      "paid_entry": true,
+      "transport": "About 30 minutes on foot east from Kamakura station, or bus toward Daitonomiya",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Kamakura City Natural Monument and one of Kanagawa's hundred notable trees, height 18 m from that list. No age or girth published. The pin is the temple, not the tree. Access is unusual for this site: the inner precinct is normally seen on a timed guided round, and the access line says so."
+    }
+  ]
+}
