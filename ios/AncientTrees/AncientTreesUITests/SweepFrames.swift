@@ -54,6 +54,9 @@ final class SweepFrames: XCTestCase {
         // never photographed at all.
         ("collection-tab", ["-tab=2"], nil),
         ("profile",      ["-tab=2", "-settings"], nil),
+        // Signed in, which is a different screen: see appsweep.py for what it
+        // cost to photograph only the signed-out half of it.
+        ("profile-signed-in", ["-tab=2", "-settings", "-signed-in"], nil),
         ("tree",         ["-tab=0", "-open=tree:ath_004"], nil),
         ("tree-nophoto", ["-tab=0", "-open=tree:vln_010"], nil),
         ("city",         ["-tab=0", "-open=city:aarhus"], nil),
@@ -67,7 +70,6 @@ final class SweepFrames: XCTestCase {
         ("signin",       ["-tab=0", "-signin"], "signin-sheet"),
         ("signin-email", ["-tab=0", "-signin", "-show-email"], "signin-sheet"),
         ("paywall",      ["-tab=0", "-paywall"], "paywall-sheet"),
-        ("primer",       ["-tab=0", "-primer"], "primer"),
         ("refused",      ["-tab=0", "-refused"], "permission-recovery-location"),
         ("contribute",   ["-tab=2", "-settings", "-contribute"], "contribute-sheet"),
         ("feedback",     ["-tab=2", "-settings", "-feedback"], "contribute-sheet"),

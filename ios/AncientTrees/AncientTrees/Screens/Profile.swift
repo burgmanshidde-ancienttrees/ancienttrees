@@ -77,6 +77,7 @@ struct ProfileView: View {
                 aboutCard
                 version
                 signOutRow
+                deleteAccountRow
                 Color.clear.frame(height: 80)
             }
             .padding(.horizontal, 16).padding(.top, 6)
@@ -542,7 +543,7 @@ struct ProfileView: View {
     private var accountSheet: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 16) {
-                Text("Signed in as")
+                Text("You are signed in as")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                 Text(account.email ?? "Signed in")
                     .font(.brand(20, .bold)).foregroundStyle(Brand.ink)
@@ -574,7 +575,11 @@ struct ProfileView: View {
             .padding(20)
             .frame(maxWidth: .infinity, alignment: .leading)
             .brandGround()
-            .navigationTitle("Account")
+            // NAMED FOR WHAT IT IS. It was "Account" while the row into it
+            // was called Account too; the row is now "Delete account", and a
+            // screen whose title disagrees with the control that opened it is
+            // the "title twice" fault this file already fixed once elsewhere.
+            .navigationTitle("Delete account")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -590,6 +595,45 @@ struct ProfileView: View {
     /// should be able to do by mis-tapping the bottom of a profile page, so it
     /// moved one layer in, under Account (Hidde, 2026-08-21: "most of the time
     /// they put the click further down").
+    /// DELETE ACCOUNT, UNDER SIGN OUT, OPENING THE SCREEN THAT EXPLAINS.
+    ///
+    /// Hidde, 2026-08-31, having read the morning's fix: "ik denk nog steeds
+    /// dat het logischer is dat delete account een knop is onder logout met
+    /// delete account als titel en dan dit scherm openen, want hij staat nu
+    /// vreemd." He is right that it stood oddly. The row I had put back was
+    /// called Account and held two things, an email address and a way to
+    /// delete, which is not a settings row so much as a drawer with one item
+    /// in it.
+    ///
+    /// This keeps the property that matters and that CONVENTIONS.md records:
+    /// deleting costs a second, deliberate step, and the first step is not a
+    /// button that deletes. It is named for what it does, it sits away from
+    /// everything else at the foot of the page, and what it opens explains
+    /// before it asks.
+    @ViewBuilder private var deleteAccountRow: some View {
+        if account.isSignedIn {
+            Button { showingAccount = true } label: {
+                HStack {
+                    Text("Delete account").font(.callout).foregroundStyle(.red)
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                        .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
+                }
+                .padding(.horizontal, 16).frame(height: 48)
+                .contentShape(.rect)
+            }
+            // THE SAME CARD SIGN OUT SITS IN, and it was missing (Hidde,
+            // 2026-08-31: "de spacing die je hebt aangehouden voor delete
+            // account is een beetje weird"). He was right and the cause was
+            // one modifier: every other row on this page is wrapped in a
+            // brandCard, so a bare button sat flat against the margin with the
+            // stack's 18 points of air around it, aligned with nothing. A
+            // destructive control should look deliberate, not left over.
+            .brandCard()
+            .accessibilityIdentifier("settings-account")
+        }
+    }
+
     @ViewBuilder private var signOutRow: some View {
         if account.isSignedIn {
             Button { confirmingSignOut = true } label: {

@@ -55,7 +55,7 @@ enum Permission: String, Identifiable {
     var body: String {
         switch self {
         case .location:
-            return "You will see the old trees nearest you, the walk time to each, and the map will open where you are standing."
+            return "You will see the old trees nearest you, how far each one is, and the map will open where you are standing."
         case .camera:
             return "You can photograph the tree in front of you and add it to your collection. You can still pick a photograph you already took."
         case .photos:

@@ -771,7 +771,7 @@ struct TreeDetail: View {
             switch self {
             case .name: "What do you call it?"
             case .age: "How old is it, roughly?"
-            case .story: "What makes it worth the walk?"
+            case .story: "What makes this tree special?"
             }
         }
 
@@ -859,7 +859,7 @@ struct TreeDetail: View {
     private var story: some View {
         Group {
             if tree.story.isEmpty, mine != nil {
-                blank("What makes it worth the walk?", .story)
+                blank("What makes this tree special?", .story)
             } else {
                 Text(tree.story)
                     .fixedSize(horizontal: false, vertical: true)

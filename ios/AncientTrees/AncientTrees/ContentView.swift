@@ -45,7 +45,6 @@ struct ContentView: View {
     /// Who you are and who you follow, opened on his 2026-08-26 yes.
     @State fileprivate var profiles = Profiles()
     @State private var rootSheet: RootSheet?
-    @State private var primerAnswered = false
     @State private var slowStart = false
     /// One path per tab, so tapping the tab you are already on can empty it.
     ///
@@ -159,17 +158,6 @@ struct ContentView: View {
             ?? (lat: 52.3731, lng: 4.8922)   // Dam square
     }
 
-    /// Shown once, and only when iOS has genuinely not been asked yet.
-    private var needsPrimer: Bool {
-        guard debugOrigin == nil || ProcessInfo.processInfo.arguments.contains("-primer") else { return false }
-        // -refused judges the recovery sheet, which belongs over the MAP. The
-        // primer answers the same question one step earlier and would sit
-        // behind it in every sweep frame, which is not the screen anybody
-        // meets: by the time this sheet exists, iOS has been asked and refused.
-        if ProcessInfo.processInfo.arguments.contains("-refused") { return false }
-        if primerAnswered { return false }
-        return location.status == .notDetermined
-    }
 
     /// Tapping the tab you are already on empties that tab's stack, which is
     /// what every iOS app with tabs has done since tabs existed and what this
@@ -581,12 +569,6 @@ struct ContentView: View {
                     .transition(.opacity)
                     .zIndex(2)
             }
-            if needsPrimer {
-                LocationPrimer(treeCount: store.catalogue?.trees.count ?? 0,
-                               onAllow: { primerAnswered = true; location.request() },
-                               onSkip: { primerAnswered = true })
-                    .transition(.opacity)
-            }
         }
         // 2.4 SECONDS, and the number comes from reading rather than from a
         // convention, because neither platform publishes one for this.
@@ -610,7 +592,6 @@ struct ContentView: View {
             try? await Task.sleep(for: .seconds(2.4))
             withAnimation(.easeOut(duration: 0.4)) { showingCover = false }
         }
-        .animation(.easeInOut(duration: 0.2), value: needsPrimer)
         // SIGNING OUT EMPTIES THIS PHONE (Hidde, 2026-08-29: "de favourites en
         // seen moet ook leeg wanneer niet ingelogd", and beside it "profielfoto
         // moet weg als je uitlogt net als alle hartjes op de thumbnails").
@@ -842,7 +823,7 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
         manager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         // Deliberately does NOT ask here. The system dialog is a single shot,
         // and asking it before anybody has been told why is how a refusal
-        // becomes permanent. LocationPrimer asks, and calls request().
+        // becomes permanent. The map's own "Location off" chip asks.
         if status == .authorizedWhenInUse || status == .authorizedAlways {
             manager.startUpdatingLocation()
         }
