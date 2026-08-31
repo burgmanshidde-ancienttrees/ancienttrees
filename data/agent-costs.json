@@ -4318,6 +4318,33 @@
         "tokens": 0,
         "trees": 1,
         "note": "1 story written and merged in session; fixed intro/question/FAQ count promises (9->10) and the Italy country-page meta_description (317->318)"
+      },
+      {
+        "target": "Turin",
+        "kind": "verify",
+        "tokens": 165000,
+        "trees": 1,
+        "note": "1 verified (Downy Oak, 2 sources); wide plane stays lead (no 2nd source found after 3 more searches); caught 3 already-blocked register duplicates in the brief's unmined list",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Warsaw",
+        "kind": "verify",
+        "tokens": 75000,
+        "trees": 1,
+        "note": "4 named candidates: 1 shipped flagged/single-source (war_018), 1 already live as war_017 (no action, caught a duplicate), 2 left as leads on unresolved access",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "iOS CI verdict fix + 4 species intros",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "no token introspection available this session; fixed a false-positive iOS CI failure (boringssl SSL log line tripping a grep-for-error check) and wrote 4 species intros (spanish-fir, katsura, buddhist-pine, bishop-wood) closing the species page-gap rung",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
