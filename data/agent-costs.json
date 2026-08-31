@@ -4223,6 +4223,24 @@
     "note": "wrote in-session rather than dispatching (only 1 verified tree waiting, the Bartram's Ginkgo single-famous-tree exception case); city opened below the floor, published, preflight/build clean",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "graz",
+    "kind": "verify",
+    "tokens": 150000,
+    "trees": 2,
+    "note": "2 shipped (Elisabethstrasse Plane, Annaplatz Oak); most other nearby register rows were privately owned or on ambiguous institutional grounds (villa-turned-apartments, TU Graz guesthouse), recorded as blocked with reasons",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "graz",
+    "kind": "write",
+    "tokens": 9000,
+    "trees": 2,
+    "note": "wrote both stories in-session (small batch, 2 trees), merged, updated city intro/FAQ/context for the new 10->12 count, fixed a Quercus-sp. common-name collision with Austin by matching heerlen.json's 'species not established' convention, fixed two stale country-page counts (Austria, United States) surfaced by preflight along the way",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
