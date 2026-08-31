@@ -1,0 +1,307 @@
+{
+  "city": "Hiroshima",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Hiroshima keeps a register of trees that were standing on 6 August 1945. There are 160 of them, all within about two kilometres of the hypocentre, and the city records each one with its species, its address and its distance from the point the bomb went off. The closest is a weeping willow 370 metres away. Almost all of them were burned back to the trunk, and almost all put out shoots the following spring, which is the thing people came to look at. Eight of them are here, and they make one walk through the middle of the city.",
+  "meta_description": "Hiroshima's registered A-bombed trees: a willow 370 metres from the hypocentre, camphors at a shrine, and a ginkgo growing through a temple gate roof.",
+  "question_answer": "Nobody can say for certain, because Hiroshima's tree register records distance from the hypocentre rather than age. The strongest candidates are the three camphors in the courtyard of Shirakami Shrine, 490 metres from the hypocentre on Peace Boulevard, and the trees inside Shukkeien, a garden laid out in 1620.",
+  "question_meta": "Hiroshima does not publish ages for its A-bombed trees. Why, which trees are probably oldest, and 7 more that were standing on 6 August 1945.",
+  "question_context": "Hiroshima's tree list was not built to answer this question. The city began registering trees in 1996 on one criterion, that they were within roughly two kilometres of the hypocentre and survived the bomb, and what it records for each is species, address, owner and distance in metres. There is no age column and no girth column, so an honest answer has to come from somewhere else. Two places are worth trusting. Shirakami Shrine has stood on its rock outcrop in the middle of the city since long before the modern street plan, and the three camphors in its courtyard were mature trees in 1945. Shukkeien was laid out in 1620 for the Asano lords of Hiroshima and its ginkgo, muku and black pine were all standing when the bomb went off 1,370 metres away. What every tree on this page does have is a floor nobody can argue with: it was alive on 6 August 1945, which makes it at least 81 years old. If you know of a measured age for any of them, tell us.",
+  "oldest_tree_id": "hir_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Hiroshima?",
+      "a": "Unknown, and the city's own register cannot answer it: the list of A-bombed trees records distance from the hypocentre, not age. The likeliest candidates are the camphors at Shirakami Shrine and the trees inside Shukkeien, a garden laid out in 1620."
+    },
+    {
+      "q": "What is a hibakujumoku?",
+      "a": "A tree that survived the atomic bombing. Hiroshima has registered them since 1996, on the criterion that the tree stood within roughly two kilometres of the hypocentre and lived. There are 160 on the list, across 31 species. Nagasaki keeps a similar record."
+    },
+    {
+      "q": "How did any tree survive at 370 metres?",
+      "a": "Most did not survive above ground. The trees on the register were generally burned or blasted back to the trunk or the roots, and what makes them survivors is that they sprouted again, most of them in the spring of 1946, when the expectation in the city was that nothing would grow for decades."
+    },
+    {
+      "q": "Are Hiroshima's A-bombed trees free to visit?",
+      "a": "Seven of the eight here are, standing in public parks, on temple and shrine grounds or on the street. Shukkeien garden charges a small entry fee. Many other registered trees stand inside school grounds and are not included here for that reason."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Yes, and it is the point of this page. Six of the eight lie within a two kilometre stretch of central Hiroshima, from Peace Memorial Park north past Shirakami Shrine and the castle to the temple street at Teramachi. Shukkeien is a further kilometre east, and Anrakuji about two kilometres north of that."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hir_001",
+      "name": "The Willow Nearest the Hypocentre",
+      "species": "Weeping Willow (Salix babylonica)",
+      "age_estimate": "at least 81 years, since it was a grown tree on 6 August 1945",
+      "age_min": 81,
+      "age_max": null,
+      "location": {
+        "address": "Motomachi 14, west of the Hiroshima Youth Centre, Naka-ku, Hiroshima 730-0011",
+        "latitude": 34.3979,
+        "longitude": 132.4534,
+        "neighbourhood": "Motomachi"
+      },
+      "story": "Three hundred and seventy metres. That is the whole of what makes this willow remarkable, and it is enough: no registered survivor in Hiroshima stood closer to the point the bomb went off. It is the first entry on the city's list, N03a1-01, and the code itself carries the facts. N for north of the hypocentre, 03 for the three hundred metre band, a for never transplanted. It is standing where it stood. A weeping willow is not a strong tree. It is fast, soft-wooded and short-lived, the sort of thing a city plants along a river because it grows quickly and looks well over water, and at this distance the heat and the blast took everything above ground. What survived was underground. The willow came back from its own roots, which is how most of the trees on this register survived, and the trunk you stand in front of grew after 1945 from a root system that did not. Nobody has published its age. The register does not carry one, because the register was built to record a distance rather than a life. It stands in the Chuo Park green space west of the Youth Centre, on ground that is now grass and paths and was, for a while after 1945, expected to grow nothing at all.",
+      "verified_sources": [
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+      ],
+      "access": "Free, public park green space",
+      "transport": "About 12 minutes on foot from Hiroshima Peace Memorial Park, or Kamiyacho-nishi tram stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Age, girth and height are not recorded: Hiroshima's A-bombed tree register carries species, address, owner and distance from the hypocentre only. The 370 m and the identification code N03a1-01 are the city's own. The pin is the west side of the Youth Centre as the register describes it, not a surveyed position for the trunk. The regrowth-from-the-roots account is the general pattern the city and its sources describe for trees at this distance rather than a statement sourced about this individual, and the story says so."
+    },
+    {
+      "id": "hir_002",
+      "name": "The Camphors of Shirakami Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "at least 81 years, and mature trees on 6 August 1945",
+      "age_min": 81,
+      "age_max": null,
+      "location": {
+        "address": "Shirakami Shrine, Nakamachi 7-24, Naka-ku, Hiroshima 730-0037",
+        "latitude": 34.39033,
+        "longitude": 132.456348,
+        "neighbourhood": "Nakamachi"
+      },
+      "story": "Shirakami Shrine sits on a rock. Before Hiroshima was built out across its delta the sea came up to this point, and the outcrop the shrine stands on was a landmark for boats, which is why there is a shrine here at all and why the ground was never levelled. Three camphors grow in the courtyard, 490 metres from the hypocentre, and the city registers all three as A-bombed trees under one code, S04a4-01 to 03. The a in that code matters: none of them has been moved. They are the closest camphors on the register, and camphor is the tree that does best on this list, with more entries than almost any other species, because a mature camphor carries an enormous root system and a thick corky bark that a flash of heat scorches rather than kills. The shrine itself burned. The trees held. Stand in the courtyard now and the odd thing is how ordinary it looks: a small shrine wedged between office blocks a few minutes from Peace Boulevard, with three big trees in it and traffic on both sides. No age is recorded for any of the three. They were grown trees in 1945, which puts a floor under them and nothing more.",
+      "verified_sources": [
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+      ],
+      "access": "Free, shrine courtyard open daily",
+      "transport": "Tram to Fukuromachi or Chuden-mae, about 3 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "One entry covering the three camphors the register groups as S04a4-01 to 03, all at the same shrine and none transplanted. No age or girth is published for any of them. The pin is the shrine, which is small. The account of why camphors survive better at short range is general species behaviour, not a sourced statement about these three."
+    },
+    {
+      "id": "hir_003",
+      "name": "The Persimmon on Peace Boulevard",
+      "species": "Japanese Persimmon (Diospyros kaki)",
+      "age_estimate": "at least 81 years",
+      "age_min": 81,
+      "age_max": null,
+      "location": {
+        "address": "Komachi 3, Peace Boulevard in front of Shirakami Shrine, Naka-ku, Hiroshima 730-0041",
+        "latitude": 34.38975,
+        "longitude": 132.4562,
+        "neighbourhood": "Komachi"
+      },
+      "story": "There is a persimmon tree on Peace Boulevard that was 530 metres from the bomb and still fruits. It stands in the strip of planting outside Shirakami Shrine, one tree among a group the city registers together at that distance: two hackberries, two muku trees, five kurogane hollies, a bead tree and this persimmon, S05a6-11. A persimmon is an orchard tree, not a monument. It was somebody's fruit tree in a garden in a neighbourhood that no longer exists, and the boulevard it now stands on was cut through the burnt ground afterwards as a firebreak a hundred metres wide. Persimmons ripen hard and orange in late autumn and hang on the bare branches into December, and the fruit of this one is edible in the ordinary way, which is a strange thing to know while standing half a kilometre from the hypocentre. The city does not record its age and nothing about it is signposted as spectacular. It is on the list because it was here, and because it went on doing the only thing a fruit tree does.",
+      "best_time": {
+        "months": [
+          11,
+          12
+        ],
+        "label": "November and December, when the fruit hangs on after the leaves have gone",
+        "kind": "fruit"
+      },
+      "verified_sources": [
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+      ],
+      "access": "Free, public street planting",
+      "transport": "Tram to Chuden-mae, about 2 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Registered as S05a6-11 in a group of trees at 530 m in front of Shirakami Shrine; not transplanted. No age, girth or height published. The pin is the planting strip described in the register, not a surveyed position. Fruiting months are the species' habit in a warm-temperate climate."
+    },
+    {
+      "id": "hir_004",
+      "name": "The Eucalyptus of Hiroshima Castle",
+      "species": "Eucalyptus (Eucalyptus globulus subsp. bicostata)",
+      "age_estimate": "at least 81 years",
+      "age_min": 81,
+      "age_max": null,
+      "location": {
+        "address": "Ninomaru, Hiroshima Castle grounds, Motomachi 21, Naka-ku, Hiroshima 730-0011",
+        "latitude": 34.399998,
+        "longitude": 132.45945,
+        "neighbourhood": "Motomachi"
+      },
+      "story": "An Australian tree survived the bomb in the grounds of a Japanese castle. The eucalyptus in the ninomaru at Hiroshima Castle stood 740 metres from the hypocentre and is registered as N07a7-01, never moved. Everything around it went. Hiroshima Castle had stood since the 1590s and was one of the few original keeps left in Japan; it came down in the blast and what stands there now was rebuilt in concrete in 1958. The castle grounds were not a park in 1945. They held the headquarters of the Second General Army, which is part of why the city was a target, and the ninomaru where this tree grows was inside a working military compound. Beside it on the same register entry is a giant pussy willow at the same distance. How a eucalyptus came to be planted here is not recorded on the city's list, though the species was widely brought into Japan from the late nineteenth century for its speed. It has a habit that suits this ground: eucalypts carry dormant buds under the bark along the whole trunk, which is exactly the equipment a tree needs to come back after fire.",
+      "verified_sources": [
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+      ],
+      "access": "Free, open castle grounds",
+      "transport": "About 15 minutes on foot from Hiroshima Station, or tram to Kamiyacho-kita",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Registered as N07a7-01 at 740 m, not transplanted. No age, girth or height published. The pin is the ninomaru compound, which is small; the register locates the tree there and no closer. The epicormic-bud point is general eucalypt biology, not a sourced statement about this tree's regrowth."
+    },
+    {
+      "id": "hir_005",
+      "name": "The Aogiri of Peace Memorial Park",
+      "species": "Chinese Parasol Tree (Firmiana simplex)",
+      "age_estimate": "at least 81 years",
+      "age_min": 81,
+      "age_max": null,
+      "location": {
+        "address": "North side of the Peace Memorial Museum East Building, Peace Memorial Park, Nakajima-cho 1, Naka-ku, Hiroshima 730-0811",
+        "latitude": 34.3918,
+        "longitude": 132.4531,
+        "neighbourhood": "Nakajima-cho"
+      },
+      "story": "Four of these grew in the courtyard of the Hiroshima Telecommunications Bureau, 1,300 metres east of the hypocentre, and nothing stood between them and the flash. One burned. Three did not, and the following spring they put out buds, in a city where the working assumption was that nothing would grow for seventy years. That fact travelled further than the trees did. In 1973, when the postal bureau rebuilt, the survivors were lifted and moved into Peace Memorial Park, where two of them stand now on the north side of the museum's east building, trunks hollowed out on the side that faced the blast and closed over with new growth on the other. The third died in 1996, and one of the remaining two was blown over by a typhoon in 2004 and put back up by the city. Seeds off them are sent all over the world as second-generation aogiri; one is growing in the garden of the Truman Presidential Library, planted by Harry Truman's grandson. In 2001 a nine year old girl from a Hiroshima primary school wrote a song about the tree that won the city's millennium competition, and Hiroshima put it into the public domain so anyone could sing it. They flower yellow in June and July.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June and July, when the yellow flowers open",
+        "kind": "flowers"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E8%A2%AB%E7%88%86%E3%82%A2%E3%82%AA%E3%82%AE%E3%83%AA",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html"
+      ],
+      "access": "Free, open public park",
+      "transport": "Tram to Genbaku Dome-mae or Chuden-mae, in Peace Memorial Park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Registered as E13b23-01 and 02; the b means transplanted, so the 1,300 m is where the trees stood on 6 August 1945, at the Hiroshima Telecommunications Bureau, not where they stand now. Moved to Peace Memorial Park in 1973. No age is published: the date of the original planting is recorded as unknown. Two trees, described as one entry because they stand together and are treated as one memorial."
+    },
+    {
+      "id": "hir_006",
+      "name": "The Ginkgo of Hosenbo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "at least 81 years",
+      "age_min": 81,
+      "age_max": null,
+      "location": {
+        "address": "Hosenbo temple, Teramachi 3-3, Naka-ku, Hiroshima 730-0801",
+        "latitude": 34.403673,
+        "longitude": 132.449426,
+        "neighbourhood": "Teramachi"
+      },
+      "story": "Teramachi means temple town, and it is a single street of them, laid out when the Asano lords moved Hiroshima's temples together in the seventeenth century so they would form a defensive line along the river. On 6 August 1945 that put a dozen temples in a row 1,100 metres from the hypocentre. The ginkgo at Hosenbo is the one that is still there, registered as N11a19-01 and never moved. Ginkgo is the species most associated with surviving the bomb, and the reason is not sentimental. It carries an enormous amount of water in a thick, spongy bark, it sprouts readily from the base and from dormant buds on old wood, and it is fire-resistant enough that Japanese temples have planted it against fire for centuries, which is why so many of the trees standing near the hypocentre in 1945 were ginkgoes in the first place. The temples along this street burned. Walk it now and it is quiet, narrow, entirely rebuilt, with old trees in the gaps between new buildings. No age is recorded for this one.",
+      "verified_sources": [
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+      ],
+      "access": "Free, temple grounds open in daylight",
+      "transport": "Tram to Teramachi, about 3 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Registered as N11a19-01 at 1,120 m, not transplanted. No age, girth or height published. The pin is the temple. The ginkgo fire-resistance point is general species behaviour and a known reason for temple planting in Japan, not a sourced claim about this tree."
+    },
+    {
+      "id": "hir_007",
+      "name": "The Ginkgo of Shukkeien",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "at least 81 years, in a garden laid out in 1620",
+      "age_min": 81,
+      "age_max": null,
+      "location": {
+        "address": "Shukkeien Garden, Kaminobori-cho 2-11, Naka-ku, Hiroshima 730-0014",
+        "latitude": 34.400406,
+        "longitude": 132.467707,
+        "neighbourhood": "Kaminobori-cho"
+      },
+      "story": "Shukkeien was made in 1620, the year after Asano Nagaakira came to Hiroshima, as the lord's garden beside his castle. It is a shrunk-down landscape, which is what the name means, with a pond standing in for a famous Chinese lake and a bridge over it, and it was designed by a tea master rather than a gardener. On 6 August 1945 it was 1,370 metres from the hypocentre. The garden burned and its buildings went, and people who had run from the city centre came here and died in the grounds; the garden was closed for six years and reopened in 1951. Three of its trees are on the city's register and have never been moved: this ginkgo, a muku and a black pine, all under the code E13a25. They are the oldest things on this page in all likelihood, because they were mature garden trees in a garden already three centuries old, though nobody has published a number for any of them. The ginkgo goes yellow in the second half of November, at the same time as the maples the garden is visited for.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, when it turns yellow with the garden's maples",
+        "kind": "autumn colour"
+      },
+      "verified_sources": [
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
+        "https://shukkeien.jp/"
+      ],
+      "access": "Paid entry to the garden, a small fee, open daily",
+      "transport": "About 10 minutes on foot from Hiroshima Station, or tram to Shukkeien-mae",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Registered as E13a25-01 at 1,370 m, not transplanted. No age, girth or height published for the tree; the 1620 date is the garden's, not the tree's, and the story keeps the two apart. The pin is the garden, which is large, so expect to look. The only paid-entry tree on this page."
+    },
+    {
+      "id": "hir_008",
+      "name": "The Ginkgo Growing Through the Gate at Anrakuji",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "at least 81 years",
+      "age_min": 81,
+      "age_max": null,
+      "girth_cm": 455,
+      "height_m": 20,
+      "location": {
+        "address": "Anrakuji, Ushita-honmachi 1-5-29, Higashi-ku, Hiroshima 732-0068",
+        "latitude": 34.409327,
+        "longitude": 132.470669,
+        "neighbourhood": "Ushita"
+      },
+      "story": "In 1990 this temple built a new gate and cut a hole in the roof so the tree could carry on through it. The ginkgo at Anrakuji was 2,160 metres from the hypocentre, the farthest tree on this page, and distance did not spare it: it burned down to the trunk and put out shoots from a branch the following year. The temple's main hall came through the fire as a skeleton, and the accounts credit the neighbours who fought the fire and the big ginkgo in the grounds with slowing it. When the temple came to rebuild its gate beside the tree, the decision recorded is blunt and not sentimental: the tree would not be cut. So the roof was designed with an opening and the ginkgo grows up through it. The gate was repaired in 1994 and still leans north, which is the direction the blast came from, and it is on the city's register of A-bombed buildings in its own right. The tree is 20 metres tall with a trunk 4.55 metres round, the only one on this page for which anybody has published a measurement.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, when the whole crown turns and drops through the gate roof",
+        "kind": "autumn colour"
+      },
+      "verified_sources": [
+        "https://www.hiroshima-navi.or.jp/post/005851.html",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html"
+      ],
+      "access": "Free, temple grounds open in daylight",
+      "transport": "Bus or about 25 minutes on foot north from Hiroshima Station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Registered as N21a53-01 at 2,160 m, not transplanted. Girth 4.55 m and height 20 m from Hiroshima's tourism authority page for this tree, which is the only measurement published for any tree on this page; no age anywhere. The gate with the hole in its roof was built in 1990 and repaired in 1994 and is separately registered as an A-bombed building. The pin is the temple."
+    }
+  ]
+}
