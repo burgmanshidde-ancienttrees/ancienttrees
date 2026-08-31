@@ -1,0 +1,228 @@
+{
+  "city": "Nagoya",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Nagoya's biggest trees are camphors and they are not in Nagoya. The three largest in reach stand 16 to 18 kilometres out, in Tokai and Yatomi, on ground that was coastline when they started: one has a tradition that Oda Nobunaga's men tied their boats to it, back when the sea came that far inland. In the city itself there are two, and the better is not a camphor. It is a kaya in the grounds of Nagoya Castle whose nuts the Owari lords ate every New Year, and which survived the night the castle burned.",
+  "meta_description": "Nagoya's ancient trees: a nut tree the Owari lords ate from every New Year, and three giant camphors on ground that used to be the coast.",
+  "question_answer": "The oldest tree around Nagoya is the great camphor of Ota in Tokai, given a thousand years by tradition on its signboard, with a trunk 9.5 metres round. Inside Nagoya itself the oldest is the kaya in the grounds of Nagoya Castle, put at about 600 years and a National Natural Monument since 1932.",
+  "question_meta": "The great camphor of Ota, a thousand years by tradition, is the oldest tree near Nagoya. What that rests on, and 5 more worth the trip.",
+  "question_context": "Nagoya's two age answers rest on very different things. The kaya at Nagoya Castle has 600 years on its signboard, and the number is at least anchored to a documented event: the first Owari lord, Tokugawa Yoshinao, is recorded as having eaten its nuts before marching on Osaka in 1615, so the tree was already worth eating from four hundred years ago. The thousand years given to the camphor at Ota is a tradition and nothing more, posted by Tokai's board of education with no method attached, and thousand-year claims on Japanese camphors are among the least reliable numbers in this whole register: the same figure is attached to the camphor at Atsuta Shrine, which people who have looked at it closely put nearer three hundred. What is measured is size, and the Ota tree is not in doubt at 9.5 metres round with a crown spreading 32 metres against a height of only 12. Getting there: Meitetsu to Otagawa, then about 500 metres west of the Tokai city offices.",
+  "oldest_tree_id": "ngy_004",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Nagoya?",
+      "a": "Inside the city, the kaya in the grounds of Nagoya Castle, at about 600 years. Its signboard records that the first Owari lord ate its nuts in 1615, which puts a documented floor under it. Larger and older by tradition is the camphor at Ota in Tokai, 16 kilometres south."
+    },
+    {
+      "q": "Why are the big trees outside the city?",
+      "a": "Nagoya's centre burned in the air raids of 1945, and what stands in it now is largely postwar. The camphors at Tokai and Yatomi were in villages on what was then coastline, outside the target, and their shrine and temple ground was never redeveloped."
+    },
+    {
+      "q": "What is a kaya?",
+      "a": "Torreya nucifera, a slow conifer of the yew family that produces an oily edible nut. It was planted at castles and temples for the nuts, which were pressed for oil and eaten roasted, and the wood is the traditional material for go boards. The one at Nagoya Castle is a National Natural Monument."
+    },
+    {
+      "q": "Are Nagoya's ancient trees free to visit?",
+      "a": "Five of the six are, on temple and shrine ground or in a public park. Nagoya Castle charges admission to its grounds, which is where the kaya stands."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "No, and the page does not pretend otherwise. These are four separate trips: the castle, Atsuta Shrine, two trees in Tokai that are a few kilometres apart, and two in Yatomi about two kilometres apart. Every stop is inside 20 kilometres of central Nagoya and reachable by train."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ngy_001",
+      "name": "The Kaya of Nagoya Castle",
+      "species": "Japanese Nutmeg-yew (Torreya nucifera)",
+      "age_estimate": "about 600 years",
+      "age_min": 400,
+      "age_max": 600,
+      "girth_cm": 810,
+      "height_m": 15,
+      "location": {
+        "address": "Honmaru, Nagoya Castle, Naka-ku, Nagoya 460-0031",
+        "latitude": 35.184083,
+        "longitude": 136.897722,
+        "neighbourhood": "Honmaru"
+      },
+      "story": "In 1615 the lord of Owari ate this tree's nuts before going to war, and his successors kept eating them every New Year for two and a half centuries. The signboard records it plainly: Tokugawa Yoshinao, first lord of the Owari branch, took the nuts of this kaya before setting out for Osaka, and the summer campaign that followed finished the Toyotomi and settled the Tokugawa on Japan for good. After that the Owari lords ate its nuts each January to open the year. The tree has been a National Natural Monument since July 1932. It splits into several trunks from the base, the form Japanese calls a broom kaya or a thousand-stem kaya, and it is held up now by a crowd of props with wire on some of the limbs; the thin lower branches would be better off cut, and cannot be, because it is a national monument. What makes the New Year story land is what came next. Nagoya Castle and its honmaru palace burned in the air raid of 1945, and the kaya took the fire and did not die.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/nagoya-castle-kaya.htm",
+        "https://www.nagoyajo.city.nagoya.jp/"
+      ],
+      "access": "Admission charged to the castle grounds, open daily",
+      "paid_entry": true,
+      "transport": "Subway to Shiyakusho, about 5 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "National Natural Monument, designated 1932-07-25. Girth 8.1 m and height 15 m from the Environment Ministry's 2000 giant-tree follow-up survey. The 600-year age and both the 1615 and the New Year traditions are the on-site signboard's; the 1615 event is documented history, the age derived alongside it, so age_min is set below. The source visited on a day when security fencing restricted the viewing angles, which is not a normal condition."
+    },
+    {
+      "id": "ngy_002",
+      "name": "The Camphor of Atsuta Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "over a thousand years by tradition, and very likely much less",
+      "age_min": 300,
+      "age_max": 1000,
+      "girth_cm": 770,
+      "height_m": 21,
+      "location": {
+        "address": "Atsuta Shrine, Jingu 1-chome, Atsuta-ku, Nagoya 456-8585",
+        "latitude": 35.125278,
+        "longitude": 136.908611,
+        "neighbourhood": "Jingu"
+      },
+      "story": "Atsuta is one of the great shrines of Japan and it now sits in the middle of a busy city, with a wood inside the fence and traffic outside it. The camphor is on the approach past the second torii, on the left as you face the worship hall, 7.7 metres round and 21 metres tall, and it is the third thickest of the camphors in the precinct rather than the famous one; Atsuta's seven camphors are locally known as a set and only three of them are on ground visitors can reach. Low down near the roots this one carries a large burl that has gone green under moss, and there are old repair scars on the trunk, and it looks in good health regardless. The signboard tradition for Atsuta's camphors is a thousand years and more, sometimes attached to Kukai planting them. Take that carefully. People who have looked closely at the trunk of the shrine's most famous camphor put its real age nearer three hundred, and this page says so rather than repeating a number because a board carries it. Nobody has cored any of them.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/atsutajingu-kusu.html",
+        "https://www.atsutajingu.or.jp/"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "Meitetsu Jingu-mae or subway Jingu-nishi, about 5 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth 7.7 m and height 21 m from the Environment Agency's Tokai giant-tree volume. The thousand-year figure is the on-site signboard's tradition; the roughly 300-year counter-reading applies to the shrine's most famous camphor rather than to this individual, and the story attributes it that way. Not a designated natural monument. Third thickest camphor in the precinct per the source."
+    },
+    {
+      "id": "ngy_003",
+      "name": "The Great Camphor of Kannonji",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 700 years by tradition",
+      "age_min": 300,
+      "age_max": 700,
+      "girth_cm": 960,
+      "height_m": 23,
+      "location": {
+        "address": "Kannonji, Bukuden, Arao-cho, Tokai 476-0001",
+        "latitude": 35.037361,
+        "longitude": 136.90275,
+        "neighbourhood": "Arao, Tokai"
+      },
+      "story": "From the terrace this tree stands on you look out over a steelworks. Kannonji, the eleventh station of the Owari thirty-three Kannon pilgrimage, sits on high ground at Arao, and everything below it toward the water is heavy industry built on reclaimed shallows, while the old houses keep to the land that was always land. The camphor is at the top of the stone steps up to the Kannon hall, on the left. The Environment Agency records it at 9.6 metres round and 23 metres tall, which makes it the largest tree on this page, though the source that photographed it notes honestly that it did not look that thick from either above or below, since the slope and the scrub at its foot make the base hard to see. Tokai city made it a Natural Monument in December 1968 under the bare name Great Camphor, which identifies nothing, so it goes by the temple's. The tradition is 700 years. What is not in doubt is the view: this tree has stood on the same ledge watching a bay turn into a factory floor.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/toukai-kannonji-kusu.html",
+        "https://www.city.tokai.aichi.jp/"
+      ],
+      "access": "Free, temple grounds open in daylight",
+      "transport": "Meitetsu Tokoname line to Shin-Nittetsu-mae, about 500 m northeast",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Tokai City Natural Monument, designated 1968-12-12. Girth 9.6 m and height 23 m from the Environment Agency's Tokai giant-tree volume; the source states it doubted the girth figure on the ground, and the page carries that doubt. The 700-year age is a tradition reported by the same volume, so age_min is set well below it."
+    },
+    {
+      "id": "ngy_004",
+      "name": "The Great Camphor of Ota",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "a thousand years by tradition",
+      "age_min": 300,
+      "age_max": 1000,
+      "girth_cm": 950,
+      "height_m": 12,
+      "location": {
+        "address": "Omiya Shrine, Kamihamada, Ota-cho, Tokai 477-0031",
+        "latitude": 35.024,
+        "longitude": 136.896,
+        "neighbourhood": "Ota, Tokai"
+      },
+      "story": "Twelve metres tall and thirty-two metres across. That ratio is the whole tree: the great camphor of Ota went sideways instead of up, and the crown it carries is nearly three times as wide as the trunk is high. It stands just inside the stone torii of Omiya Shrine, on the right bank of the Ota river, a few hundred metres west of the Tokai city offices. The centre of the trunk has gone, and what holds the thing up is the ring of stems rising round the gap, which between them measure 9.5 metres. It is in good health. The shrine ground is also a public park, and the board there says the park was made as a green place for townspeople to rest in, which is a polite way of saying the park exists because the tree does. Tokai made it a Natural Monument in June 1968. The thousand years posted on the board is a tradition, without a method attached, and thousand-year claims on Japanese camphors do not usually survive a close look at the trunk. What survives inspection here is the shape.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/oota-kusu.html",
+        "https://www.city.tokai.aichi.jp/"
+      ],
+      "access": "Free, shrine ground which is also a public park",
+      "transport": "Meitetsu to Otagawa, then about 500 m west of the Tokai city offices",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Tokai City Natural Monument, designated 1968-06-30. Girth 9.5 m, height 12 m and the 32 m crown spread from the Environment Agency's Tokai giant-tree volume and the on-site board. The thousand-year age is a tradition on the board with no stated basis, so age_min is set at 300. Coordinate rounded from the source's degrees-minutes-seconds reading, hence approximate."
+    },
+    {
+      "id": "ngy_005",
+      "name": "The Great Camphor of Yakushiji",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "over 600 years by the signboard",
+      "age_min": 300,
+      "age_max": 600,
+      "girth_cm": 830,
+      "height_m": 18,
+      "location": {
+        "address": "Yakushiji, Kamiroku, Uguiura-cho, Yatomi 498-0031",
+        "latitude": 35.118389,
+        "longitude": 136.725361,
+        "neighbourhood": "Uguiura, Yatomi"
+      },
+      "story": "The tradition here is that Nobunaga's men tied their boats to this tree. Where Yakushiji stands there was a fort, Uguiura, thrown up by Oda Nobunaga to attack the Hattori faction of the Ikko sect who held this stretch of the delta, and the sea came up close to it in the 1570s. Nobunaga's younger brother Nobuoki was made its commander and was killed at Kogie castle in 1570; Nobunaga sent an army and burned the whole area out in 1574. The temple grew from the hall in the fort that housed Nobuoki's personal Yakushi image. All of that is on the board in the precinct. Whether the camphor was standing then is the interesting question, and the boat-mooring story is a claim about exactly that, which is why the page tells it as a story rather than as a fact. The tree is 18 metres tall, and the two available trunk figures disagree: the Environment Agency says 9.4 metres round and the temple's own board says 8.3, with the person who measured both by eye judging the board closer. Yatomi made it a city Natural Monument in December 1976.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/uguiura-yakushiji-kusu.htm",
+        "https://www.city.yatomi.lg.jp/"
+      ],
+      "access": "Free, temple grounds open in daylight",
+      "transport": "JR Kansai line to Yatomi, then about 500 m north",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Yatomi City Natural Monument, designated 1976-12-10. Two conflicting girth figures are both stated: 9.4 m from the Environment Agency's Tokai volume, 8.3 m from the temple signboard, which the source judged closer on the ground; girth_cm carries the signboard's. The 600-year age and the Nobunaga boat-mooring tradition are both from that signboard, and the story frames the mooring as a tradition."
+    },
+    {
+      "id": "ngy_006",
+      "name": "The Omiyoshi Pine",
+      "species": "Japanese Black Pine (Pinus thunbergii)",
+      "age_estimate": "about 350 years, if it dates from the 1646 reclamation as tradition says",
+      "age_min": 200,
+      "age_max": 380,
+      "girth_cm": 540,
+      "height_m": 25,
+      "location": {
+        "address": "Nishi-shinden, Hirashima-cho, Yatomi 498-0021",
+        "latitude": 35.104472,
+        "longitude": 136.735722,
+        "neighbourhood": "Hirashima, Yatomi"
+      },
+      "story": "It is named after a raft of reeds that floated down four rivers and washed up beside it. Tsushima Shrine, upstream, ends its Tenno festival by putting a miyoshi, reeds bound into a raft, into the water; one of them came down the Tenno river into the Saya, into the Kiso and finally into the Ikada, and grounded here. The tree became the Omiyoshi pine. The board dates it to the reclamation of Hirashima new fields in 1646, which if right makes it about 350 years old and puts it on the bank of the Ikada river from the year the field behind it stopped being water. In 1957 the town built a junior high school here, filled in part of the river for the grounds, and the pine ended up inside the school yard, where a couple of generations of pupils grew up with it. The school moved out in January 2008 and only sports grounds remain, which means anybody can walk up to it now. It is thinner than it was, with a hollow at the base that is charred inside, and in an age when pine wilt disease is taking the big black pines all over Japan, a 25 metre one is worth going to see.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/omiyoshimatsu.htm",
+        "https://www.city.yatomi.lg.jp/"
+      ],
+      "access": "Free, open sports ground on the site of a former school, which moved away in 2008",
+      "transport": "JR Kansai line to Yatomi, then about 2 km south",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Yatomi City Natural Monument, designated 1976-12-10. Height 25 m and the original 4.6 m girth from the Environment Agency's Tokai volume, corrected to 5.4 m in the Ministry's 2000 follow-up survey, which is the figure carried here. The 350-year age is derived from the on-site board's tradition that the tree dates to the 1646 reclamation, and the story states that basis. The former school moved out in January 2008, so the site is open ground rather than school grounds, which the source states explicitly."
+    }
+  ]
+}
