@@ -9,6 +9,47 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-31 - Three ranked zeros open in one afternoon, because Japan publishes tree registers
+
+Hidde: "doe ook maar miyazaki en nog wat andere steden met 0 starten." Miyazaki,
+Hiroshima and Kanazawa are live, 23 trees between them, and the reason it was
+possible in one session is worth more than the three cities.
+
+**Japanese municipalities publish tree registers, and nobody here had noticed.**
+A 1962 national law lets a city designate preserved trees, and the ones that do
+publish species, trunk circumference at 1.5 m, height, estimated age and address
+per tree. Kagoshima's carried 38 this morning. On top of that sits
+hitozato-kyoboku.com, an independent giant-tree database with a page per
+prefecture and a page per tree carrying the Environment Ministry's own
+measurements AND a coordinate to the tenth of a second. That second source is
+what turns a Japanese city from a from-zero web hunt into an afternoon. It
+covers the whole country.
+
+**Hiroshima is the one to look at.** The city has registered A-bombed trees
+since 1996: 160 of them within about two kilometres of the hypocentre, each with
+species, address, owner and exact distance, updated April 2025. The
+identification code is data in itself, since the letter a or b says whether the
+tree was transplanted, which is why the Aogiri entry states its 1,300 m as where
+those trees stood in 1945 rather than where they stand now. Nothing on that
+register has an age, so no Hiroshima tree here carries one; each states the
+floor instead, that it was alive on 6 August 1945, and the question page says
+outright that the city's own list cannot answer which tree is oldest.
+
+Miyazaki has four National Natural Monuments inside one city boundary. Kanazawa
+was never bombed, which is the whole reason its temple quarter still has trees.
+
+| City | Rank | Demand | Trees | Paid | Photos |
+|---|---|---|---|---|---|
+| Hiroshima | 90 | 129,791 | 8 | 1 | 0 |
+| Miyazaki | unranked | n/a | 8 | 0 | 0 |
+| Kanazawa | 182 | 25,778 | 7 | 2 | 0 |
+
+Every tree on school grounds was left out under hard rule 10, which in
+Hiroshima's case is a large part of the register.
+
+FOR HIDDE: none of the 23 has a photograph. That is the next cheap pass and it
+needs a session, because judging an image cannot be done by a night run.
+
 ## 2026-08-31 - Both Gionnosu pines go live, on a map survey and an open question
 
 Hidde said put them live, so kag_011 and kag_012 are published with no age at

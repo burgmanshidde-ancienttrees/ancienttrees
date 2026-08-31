@@ -1,0 +1,283 @@
+{
+  "city": "Kanazawa",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Every year on 1 November, workers in Kenrokuen put a pole up beside one particular pine and run ropes from its tip down to the branches, then do the same at eight hundred more places before the snow comes. That is the tree most people come for. The two the state protects are elsewhere and free: a pair of chinquapins flanking the door of the old prefectural office, and a mountain cherry that samurai lowered their spears to pass under. Kanazawa was never bombed, which is why its old wood is still standing.",
+  "meta_description": "Kanazawa's ancient trees: the pine the snow ropes go up on first each November, a cherry samurai lowered their spears to, and two protected chinquapins.",
+  "question_answer": "The oldest tree in Kanazawa is the great zelkova at Shinmeigu shrine in Nomachi, which the signboard at its foot puts at about 1,000 years. It is 33 metres tall with a trunk 7.8 metres round, which makes it the thickest zelkova in Ishikawa prefecture alongside one at Nanao.",
+  "question_meta": "The great zelkova at Shinmeigu, put at about 1,000 years, is Kanazawa's oldest tree. What that figure rests on, and 6 more remarkable trees in the city.",
+  "question_context": "The thousand years given for the Shinmeigu zelkova comes from the shrine's own signboard rather than from any measurement of the tree, and the shrine and the tree are not the same thing, so read it as the shrine's claim about its own antiquity. The measurement behind it is solid: 7.8 metres round and 33 metres tall, recorded on the board that marks it as a Kanazawa preserved tree, and it is the thickest zelkova in Ishikawa alongside one at Iikawa Shrine in Nanao. Oddly it is absent from the Environment Ministry's national giant-tree database, which is where most figures on this site come from. None of Kanazawa's other big trees carries a published age at all: neither of the two National Natural Monuments has one, nor does the tabunoki in the graveyard at Hongakuji. The one age that is documented rather than claimed belongs to a young tree, the raised-root pine in Kenrokuen, which tradition says the thirteenth lord planted himself, putting it around 150 years. Getting to Shinmeigu: cross the Saigawa bridge from Korinbo and it is a few minutes on foot.",
+  "oldest_tree_id": "kan_005",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kanazawa?",
+      "a": "The great zelkova at Shinmeigu shrine in Nomachi, at about 1,000 years by the shrine's signboard. That is the shrine's own figure and not a measured age. Its size is not in doubt: 7.8 metres round and 33 metres tall."
+    },
+    {
+      "q": "When are the snow ropes up in Kenrokuen?",
+      "a": "Work starts on 1 November every year and the Karasaki pine is always the first tree done. It carries on to about mid-December across more than 800 places in the garden, and the ropes come down in March. The method is called ringo-tsuri, apple hanging: a pole at the centre of the tree with ropes fanning out from the top to the branches."
+    },
+    {
+      "q": "Why does Kanazawa still have old trees when other Japanese cities do not?",
+      "a": "It was not bombed. Kanazawa is one of the larger Japanese cities to come through the war without an air raid, so its temple quarters, shrine precincts and the Maeda garden were never burned, and the trees in them were never replanted."
+    },
+    {
+      "q": "Are Kanazawa's ancient trees free to visit?",
+      "a": "Five of the seven are, standing in shrine precincts, temple grounds or on the street. The two pines are inside Kenrokuen, which charges a small entry fee and is open daily."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "In two walks. Kenrokuen and the chinquapins at Hirosaka are next to each other in the centre. Cross the Saigawa and the zelkova at Shinmeigu, the cherry at Shogetsuji and the tabunoki at Hongakuji make a second walk of about a kilometre and a half through the temple quarter."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kan_001",
+      "name": "The Chinquapins of Dogata",
+      "species": "Japanese Chinquapin (Castanopsis sieboldii)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 740,
+      "height_m": 12,
+      "location": {
+        "address": "Shiinoki Cultural Complex, Hirosaka 1-chome, Kanazawa 920-0962",
+        "latitude": 36.562222,
+        "longitude": 136.657778,
+        "neighbourhood": "Hirosaka"
+      },
+      "story": "Two of them stand either side of a doorway, and they do not so much stand as sit. These are broad, low, heavily built chinquapins flanking the front entrance of the old Ishikawa prefectural office below the castle, and the state made the pair a National Natural Monument in August 1943. The signboard gives the right-hand tree 7.4 metres round and 12 metres tall and the left one 5.2 metres and 13, though anyone looking at the two of them would put them closer to equal. Both carry dead wood in the crown and neither has a hole in its shape. The name Dogata is older than the building. In the Maeda period there was an archery range on this spot built in imitation of the toshiya at Kyoto's Sanjusangendo, where archers shot the length of a long veranda, and it was known as the Dogata. The range went, rice warehouses replaced it, and the name stayed on the ground while everything on it changed twice. Nobody has published an age for either tree. If you know of one, tell us: the state protected them in wartime without recording how old they were.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/dougata-shii.htm",
+        "https://bunka.nii.ac.jp/"
+      ],
+      "access": "Free, on the street in front of the building",
+      "transport": "Bus to Korinbo, about 5 minutes on foot, just west of Kenrokuen",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "National Natural Monument, designated 1943-08-24, covering the pair. Girth and height are the on-site signboard's, and the source notes that the two trees look more equal on the ground than the recorded figures suggest. No age published for either. One entry for the pair because the designation and the setting treat them as one thing."
+    },
+    {
+      "id": "kan_002",
+      "name": "The Cherry of Shogetsuji",
+      "species": "Japanese Mountain Cherry (Prunus jamasakura)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 350,
+      "height_m": 15,
+      "location": {
+        "address": "Shogetsuji, Teramachi 5-chome, Kanazawa 921-8033",
+        "latitude": 36.554528,
+        "longitude": 136.651583,
+        "neighbourhood": "Teramachi"
+      },
+      "story": "Samurai lowered their spears to pass under this tree. The cherry grew inside Komatsu Castle, where Maeda Toshitsune had retired, and he gave it to the abbot of Shogetsuji; through the Tokugawa period a spear carried upright had to be dropped level as its bearer went beneath the branches, as a mark of respect to a tree that had come from a lord. It still leans out over the temple's earth wall into the street, which is where the custom would have applied. Very little of what you see is old. The trunk is the only ancient part, so weathered that it is hard to tell rock from bark, and almost every branch above it is new growth. It is a mountain cherry rather than one of the garden hybrids, and Kodansha's survey notes it as a form with unusually large flowers, four to five centimetres across, white washed with red, on a tree whose young leaves come out red as well. The state made it a National Natural Monument in August 1943, the same day as the chinquapins at Hirosaka. The Environment Agency once recorded its girth as 7.81 metres, which is not possible for this trunk; the figure to trust is 3.5.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "label": "early April, when the large white and red flowers open over the temple wall",
+        "kind": "flowers"
+      },
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/shougetsuji-sakura.html",
+        "https://bunka.nii.ac.jp/"
+      ],
+      "access": "Free, at the edge of the temple precinct beside the street",
+      "transport": "Bus to Nomachi-hirobakuchi, about 8 minutes on foot into the temple quarter",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "National Natural Monument, designated 1943-08-24. Girth 3.5 m and height 15 m from Kodansha's Natural Monuments of Japan (1995); the Environment Agency's 7.81 m figure is rejected by the source as impossible for this trunk and both numbers are stated on the page. No age published. Flowering month is the species' habit on this coast, not a record of this tree."
+    },
+    {
+      "id": "kan_003",
+      "name": "The Karasaki Pine",
+      "species": "Japanese Black Pine (Pinus thunbergii)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kasumigaike, Kenrokuen, Kenrokumachi 1, Kanazawa 920-0936",
+        "latitude": 36.5622,
+        "longitude": 136.6629,
+        "neighbourhood": "Kenrokumachi"
+      },
+      "story": "On the first of November every year, this is the tree they do first. Kanazawa gets heavy wet snow off the Sea of Japan and it breaks pine branches, so the garden's answer is the yukitsuri: a pole set upright at the centre of the tree and ropes fanned out from its tip down to every major limb, holding them up from above. The method is called ringo-tsuri, apple hanging. Kenrokuen puts it up at more than eight hundred places between 1 November and the middle of December and takes it down in March, and the Karasaki pine is always the opening job, which means the picture of Kanazawa in winter that everybody has seen is usually this tree. It is a black pine grown from seed, and the seed was fetched. The thirteenth Maeda lord, Nariyasu, sent for it from the famous pine at Karasaki on the shore of Lake Biwa, one of the eight classic views of Omi, and raised this one from it on the edge of Kasumigaike pond, where the branches now run out low and wide over the water. Kenrokuen was closed to ordinary people until 1874.",
+      "best_time": {
+        "months": [
+          11,
+          12,
+          1,
+          2
+        ],
+        "label": "November to February, when the snow ropes are up and the pine is the first tree they go on",
+        "kind": "bare silhouette"
+      },
+      "verified_sources": [
+        "https://www.kanazawa-kankoukyoukai.or.jp/event/detail_50425.html",
+        "https://kenrokuen.org/highlight/karasakinomatsu/"
+      ],
+      "access": "Paid entry to Kenrokuen, a small fee, open daily",
+      "transport": "Bus to Kenrokuen-shita, then into the garden; the tree is on the shore of Kasumigaike",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "No age or girth published for this tree; it is famous for its shape and its snow ropes rather than its size, and the page does not estimate. The pin is Kasumigaike pond rather than a surveyed trunk position: the tree stands on the pond's shore and is the most conspicuous thing there. The yukitsuri dates and the ringo-tsuri method are the Kanazawa tourism association's own; the Lake Biwa seed origin is the garden's.",
+      "paid_entry": true
+    },
+    {
+      "id": "kan_004",
+      "name": "The Raised-Root Pine",
+      "species": "Japanese Black Pine (Pinus thunbergii)",
+      "age_estimate": "around 150 years, if the planting tradition holds",
+      "age_min": 120,
+      "age_max": 180,
+      "girth_cm": 390,
+      "height_m": 10,
+      "location": {
+        "address": "Kenrokuen, Kenrokumachi 1, Kanazawa 920-0936",
+        "latitude": 36.561667,
+        "longitude": 136.663333,
+        "neighbourhood": "Kenrokumachi"
+      },
+      "story": "Forty-odd roots stand two metres clear of the ground before they meet the trunk. The story told about it is that the thirteenth Maeda lord, Nariyasu, planted a young pine on a heaped mound of earth with his own hands and then had the soil taken away a little at a time over years, leaving the root system exposed in the air as the tree grew into it. If that is right, the tree dates from his lifetime, 1822 to 1866, which puts it at somewhere around 150 years and makes it the youngest tree on this page by centuries. Above the roots the trunk gathers into one, then splits into three, and the crown it carries is unhurried and wide. It stands where the Tatsumi canal, which brings water into the garden from an intake 8.5 kilometres up the Saigawa, swings through a deep bend. Kenrokuen has an area of about 11.5 hectares and its name was chosen for it: the twelfth lord asked Matsudaira Sadanobu to name the garden and he took it from a Song dynasty account of the famous gardens of Luoyang, meaning a garden that combines six qualities at once, spaciousness and seclusion, artifice and antiquity, water and a view. The whole garden was made a Special Place of Scenic Beauty in March 1985.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/neagari-no-matsu.htm",
+        "https://kenrokuen.org/"
+      ],
+      "access": "Paid entry to Kenrokuen, a small fee, open daily",
+      "transport": "Bus to Kenrokuen-shita, then into the garden",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth 3.9 m and height 10 m from the Environment Agency's Koshinetsu and Hokuriku giant-tree volume. The age is derived from the tradition that Maeda Nariyasu (1822 to 1866) planted it himself, which is why the story states the basis and the band is wide; there is no measured age. The garden, not the tree, is the Special Place of Scenic Beauty, designated 1985-03-20.",
+      "paid_entry": true
+    },
+    {
+      "id": "kan_005",
+      "name": "The Great Zelkova of Shinmeigu",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "about 1,000 years by the shrine's signboard",
+      "age_min": 300,
+      "age_max": 1000,
+      "girth_cm": 780,
+      "height_m": 33,
+      "location": {
+        "address": "Shinmeigu, Nomachi 2-chome, Kanazawa 921-8031",
+        "latitude": 36.557889,
+        "longitude": 136.649167,
+        "neighbourhood": "Nomachi"
+      },
+      "story": "A poem about a circus came out of this shrine yard. Nakahara Chuya spent part of his childhood in Kanazawa, and the acrobats he watched in the precinct here are said to be behind Sakasu, one of the best known poems in modern Japanese; Muro Saisei played on the same ground. The shrine was important to the Maeda lords and ordinary people called it Oshinme-san. The zelkova in the yard is 33 metres tall on a trunk 7.8 metres round, which makes it the thickest of its species in Ishikawa alongside one at Nanao, and it is somehow missing from the Environment Ministry's national database of giant trees altogether. It looks in places like two trees fused, though nobody has established whether it is. The thousand years on the board belongs to the shrine's account of itself rather than to any measurement of the tree, and the honest position is that the tree is very large and undated. Zelkova is the wood Japanese temples are built from, straight-grained and hard, which is one reason so few of this size survived anywhere. This one is a few minutes over the Saigawa bridge from the busiest crossing in the city.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when a zelkova this size turns and drops in about a fortnight",
+        "kind": "autumn colour"
+      },
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/kanazawa-shinmei-keyaki.html",
+        "https://www.kanazawa-kankoukyoukai.or.jp/"
+      ],
+      "access": "Free, shrine precinct open daily",
+      "transport": "Cross the Saigawa bridge from Korinbo, about 8 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth 7.8 m and height 33 m from the Kanazawa preserved-tree signboard at the site; the 1,000-year figure is from the shrine's own signboard about the shrine, not a measured tree age, which is why age_min is set far below it. The tree is absent from the Environment Ministry's giant-tree database. The Nakahara Chuya and Muro Saisei connections are from the shrine's signboard as reported by the source."
+    },
+    {
+      "id": "kan_006",
+      "name": "The Tabunoki of Hongakuji",
+      "species": "Japanese Bay Tree (Machilus thunbergii)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 840,
+      "height_m": 21,
+      "location": {
+        "address": "Hongakuji, Nomachi 3-chome, Kanazawa 921-8031",
+        "latitude": 36.551639,
+        "longitude": 136.648444,
+        "neighbourhood": "Nomachi"
+      },
+      "story": "It is in the graveyard, behind the hall, and it is 8.4 metres round. The tabunoki at Hongakuji is the biggest tree in this quarter of Kanazawa and one of the least visited, because nothing about the approach suggests there is anything back there. It divides into several trunks partway up and gathers again at the base, and the largest single stem is 6.18 metres on its own by the Environment Ministry's measurement. Standing next to it, the fact that this is the middle of a city stops being obvious. Tabunoki is an evergreen of the laurel family and a coastal tree, common along the warm shores of western Japan and nothing like this size inland; its bark was ground to make the binder in incense sticks. The temple was founded to hold a portion of the ashes and the mortuary tablet of Maeda Toshinaga, the second lord of Kaga, and it shared duty as a sect head temple with Honchoji in rotation. Nobody has published an age for the tree, and it carries no national or prefectural designation; the temple's whole grove is a Kanazawa protected woodland.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/hongakuji-tabu.htm",
+        "https://www.kanazawa-kankoukyoukai.or.jp/"
+      ],
+      "access": "Free, temple grounds and graveyard open in daylight",
+      "transport": "Bus to Nomachi, about 8 minutes on foot; southeast of Izumi primary school",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth 8.4 m, largest single stem 6.18 m and height 21 m from the Environment Ministry's 2000 giant-tree follow-up survey. No age published and no natural monument designation; the grove is a Kanazawa preserved woodland. The temple's founding for Maeda Toshinaga's ashes is from the Kanazawa tourism association's site as cited by the source."
+    },
+    {
+      "id": "kan_007",
+      "name": "The Zelkova of Yasue Sumiyoshi",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 500,
+      "height_m": 16,
+      "location": {
+        "address": "Yasue Sumiyoshi Shrine, Kita-Yasue, Kanazawa 920-0022",
+        "latitude": 36.586333,
+        "longitude": 136.648944,
+        "neighbourhood": "Kita-Yasue"
+      },
+      "story": "This shrine was once called the shrine of the great tree, and the great tree is gone. A stone in the precinct dates the founding to 727, and the shrine appears in the tenth century Engishiki register under a different name, Michi; two old mirrors bearing that name are still kept here. Ishikawa's own shrine authority records that until the Kan'ei years, some time before 1644, a huge zelkova stood in the grounds and people called the place Taiboku no Miya, the shrine of the big tree. Nobody knows what happened to it. Zelkovas have been growing here ever since, which may be deliberate and may just be what grows on this ground, and the largest of them is the sacred tree, on the left once you are through the entrance torii. It is 5 metres round and 16 metres tall, leaning hard, with hollows where heavy limbs were taken off, and by every visible sign it is in good health and still going. It has no designation and no recorded age. The whole grove is a protected woodland of Kanazawa city. Give it two or three more centuries and the old name might fit again.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/yasue-sumiyoshi-keyaki.htm",
+        "https://www.kanazawa-kankoukyoukai.or.jp/"
+      ],
+      "access": "Free, shrine precinct open daily",
+      "transport": "Hokuriku Railroad Asanogawa line, between Kamimoroe and Nanatsuya, about 5 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth 5.0 m and height 16 m from the Environment Ministry's 2000 giant-tree follow-up survey. No age published and no designation; the grove is a Kanazawa preserved woodland. The 727 founding is from the origin stone in the precinct and the Taiboku no Miya name from the Ishikawa Shrine Agency's page, both via the source."
+    }
+  ]
+}
