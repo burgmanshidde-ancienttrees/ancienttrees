@@ -40,6 +40,26 @@ No photos found or hunted this pass. The La Granja trip is reported honestly as
 sitting at or just past CLAUDE.md's ~30-minute day-trip boundary (Linecar bus,
 roughly every 45 minutes, 20-35 minute journey) rather than rounded down.
 
+## 2026-08-31 - Reader submission 56 (Baarn, GPS-only): no tree found, open question sent
+
+Submission 56 (app "collect" flow, no name/species/why, just GPS
+52.21964,5.25718 "standing at the tree") sits ~50m from Kasteel Groeneveld's
+own parking/entrance node, roughly equidistant (~200-210m) from the castle
+building and from the already-documented "Zomereik in front of Kasteel
+Groeneveld" avenue lead in `data/leads/baarn.json`, too far from either to
+say which one, if any, was meant. Did not re-run the web research this
+coordinate would otherwise justify: that leads file already documents this
+exact estate as a structural dead end across three prior passes (RCE will
+not name individual specimens for a designed-landscape monument;
+monumentaltrees.com blocked; no per-tree Staatsbosbeheer/IVN page found).
+Row patched: outcome open_question, reply_text asks which tree specifically,
+with a photo if possible. Could not actually send: the submission's user_id
+does not resolve to any account in Supabase auth (5 real users on file,
+this id is not one of them), so the reply sits on the row for a future
+run/session with a resolvable address rather than reaching anyone yet. Row
+56 appended to `data/submissions-processed.json`; note also added to
+`data/leads/baarn.json`.
+
 ## 2026-08-31 - Reader submission 55 (Amsterdam, GPS-only): no tree found, open question sent
 
 Submission 55 (app "collect" flow, no name/species/why, just GPS 52.39741,4.87394)
