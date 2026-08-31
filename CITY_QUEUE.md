@@ -402,10 +402,10 @@ so qa.py fails the deploy when the table and the json disagree.
 | 205 | Sarajevo | 3.15 | 205,074 | - | - | - | - | 10 | predicted (travel demand) |
 | 206 | Sao Paulo | 2.96 | 911 | - | - | - | - | 10 | predicted (travel demand) |
 | 207 | Granada | 1.97 | 86,361 | 9 | 3 | 2 | 4 | 20 | measured |
-| 208 | Savannah | 3.05 | 128,162 | - | - | - | - | 10 | predicted (travel demand) |
-| 209 | Lucerne | 3.10 | 66,356 | - | - | - | - | 10 | predicted (travel demand) |
-| 210 | Malmo | 3.07 | 103,940 | - | - | - | - | 10 | predicted (travel demand) |
-| 211 | Lille | 3.06 | 73,435 | - | - | - | - | 10 | predicted (travel demand) |
+| 208 | Lucerne | 3.10 | 66,356 | - | - | - | - | 10 | predicted (travel demand) |
+| 209 | Malmo | 3.07 | 103,940 | - | - | - | - | 10 | predicted (travel demand) |
+| 210 | Lille | 3.06 | 73,435 | - | - | - | - | 10 | predicted (travel demand) |
+| 211 | Savannah | 3.05 | 128,162 | 2 | - | - | - | 10 | predicted (travel demand) |
 | 212 | Heidelberg | 2.69 | 75,837 | - | - | - | - | 10 | predicted (travel demand) |
 | 213 | Corsica | 3.00 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 214 | Mechelen | 2.93 | 20,707 | - | - | - | - | 10 | predicted (travel demand) |
@@ -443,7 +443,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 246 | Zurich | 2.21 | 140,788 | 4 | - | - | - | 20 | measured |
 | 247 | Setubal | 1.23 | 22,582 | 10 | 1 | 2 | 13 | 20 | measured |
 | 248 | Aix-en-Provence | 2.26 | 64,524 | - | - | - | - | 10 | predicted (travel demand) |
-| 249 | Charleston | 2.21 | 155,987 | - | - | - | - | 10 | predicted (travel demand) |
+| 249 | Charleston | 2.21 | 155,987 | 2 | - | - | - | 10 | predicted (travel demand) |
 | 250 | Kauai | 1.83 | - | 6 | - | - | 8 | 10 | published, never ranked (may be uncrawled) |
 | 251 | La Gomera | 1.37 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 252 | Leuven | 2.05 | 40,645 | - | - | - | - | 10 | predicted (travel demand) |

@@ -1,0 +1,68 @@
+{
+  "city": "Sant'Alfio",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "One tree, and people cross Sicily for it. The Hundred-Horse Chestnut stands on the eastern slope of Etna above Sant'Alfio, put at roughly 2,200 years by a dendrological study in 2022, its original trunk long since split into three stems that measure 10.5, 23 and 23.6 metres round and grow from one root system. Italy made it a national monument in 1965 and UNESCO called it a Monument Messenger of Peace in 2006. It is free, open all year, and worth the drive up from Catania on its own.",
+  "meta_description": "The Hundred-Horse Chestnut above Sant'Alfio is around 2,200 years old and grows from one root system as three vast stems. Free, open all year.",
+  "question_meta": "Sant'Alfio's oldest tree is the Hundred-Horse Chestnut on Etna, dated to about 2,200 years in 2022. Where it stands and how to reach it.",
+  "question_answer": "The oldest tree in Sant'Alfio is the Hundred-Horse Chestnut, the Castagno dei Cento Cavalli, a sweet chestnut on the eastern slope of Mount Etna at Via Castagno 100 Cavalli, about 30 kilometres north of Catania. A dendrological study by CREA in 2022 put it at roughly 2,200 years old, and both the Italian Wikipedia entry and the comune of Sant'Alfio's own page cite that figure. Older estimates drawn from folklore and earlier botanical work ran from 2,000 to 4,000 years. It is free to visit and open all year.",
+  "question_context": "The 2,200 year figure comes from a dendrological study carried out by CREA, Italy's agricultural research council, in 2022. Both Wikipedia and the comune's own page repeat it, which is two citations of one study rather than two independent measurements, and worth knowing before treating the number as final. Older estimates, part folklore and part early botany, ranged from 2,000 to 4,000 years, and this page keeps that as the outer band rather than discarding it. Dating is complicated by what the tree has become. The original trunk split long ago into three stems growing from a single root system, measured at 10.5, 23 and 23.6 metres round, so there is no one trunk to work from and no intact core to read. A survey in 1780 ran a tape around the whole thing and came back with 57.9 metres, but that reading took in the branches. The register today records 22 metres of girth and 22 metres of height. Getting there means a car: it is about an hour from Taormina and half that from Catania, on mountain roads, and there is no useful bus.",
+  "hero_tree_id": "sal_001",
+  "oldest_tree_id": "sal_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Sant'Alfio?",
+      "a": "The Hundred-Horse Chestnut, the Castagno dei Cento Cavalli, dated to roughly 2,200 years by a CREA study in 2022. Older estimates run as high as 4,000 years."
+    },
+    {
+      "q": "Is it one tree or three?",
+      "a": "One. The original trunk split long ago and the three huge stems that remain, 10.5, 23 and 23.6 metres round, all grow from the same root system. Standing in front of it, the instinct is to count three trees."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, there is no entry charge and the site is open all year. There are some steps at the entrance, which may not suit wheelchair users."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car. It is about 30 kilometres from Catania and 19 from Taormina, roughly 45 minutes to an hour on the SP59 and the mountain roads above Sant'Alfio. There is no practical public transport, so a car or a taxi is the realistic way to arrive."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sal_001",
+      "name": "The Hundred-Horse Chestnut",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "roughly 2,200 years",
+      "age_min": 2000,
+      "age_max": 4000,
+      "girth_cm": 2200,
+      "height_m": 22,
+      "location": {
+        "address": "Via Castagno 100 Cavalli, 5, 95010 Sant'Alfio (CT)",
+        "latitude": 37.750183,
+        "longitude": 15.130367,
+        "neighbourhood": "Sant'Alfio, eastern slope of Mount Etna"
+      },
+      "story": "What looks like three enormous chestnuts on the slope above Sant'Alfio is one tree. The original trunk split long ago, and the three stems left standing, 10.5, 23 and 23.6 metres round, all grow from a single root system. A study by CREA, Italy's agricultural research council, put the whole thing at roughly 2,200 years old in 2022. Earlier estimates, part folklore and part botany, ran as high as 4,000.\n\nThe name comes from a story. A queen was caught in a storm on Etna with a hundred mounted knights, and the entire company is said to have sheltered under this one canopy. In 1780 someone arrived with a tape and reported 57.9 metres around, though that measurement took in the branches. The register today gives the trunk 22 metres and the tree 22 metres of height.\n\nIt has not had a quiet two millennia. Etna is directly above it, a fire took part of it in 1923, and it is still standing. Italy made it a national monument in 1965. In 1982 the State Forestry Corps worked through 22,000 trees and picked out 150 of exceptional value, this among them. UNESCO named it a Monument Messenger of Peace in 2006, and Italy voted it Tree of the Year in 2021.\n\nFree, open all year, a few steps at the entrance.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Castagno_dei_Cento_Cavalli",
+        "https://www.comune.santalfio.ct.it/vivere_il_comune/luoghi/luogo_5.html"
+      ],
+      "access": "Free, no entry cost, open all year (comune.santalfio.ct.it, last updated 2026-03-26). Some steps at the entrance may not suit wheelchair users.",
+      "transport": "On Etna's eastern slope above Sant'Alfio, about 30km from Catania and 19km from Taormina. Roughly 45 minutes to an hour by car via the SP59/mountain roads; no practical public transport connection, so a car or taxi is the realistic way to reach it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [10],
+        "kind": "fruit",
+        "label": "October, when the spiny burrs split and the chestnuts come down"
+      }
+    }
+  ]
+}

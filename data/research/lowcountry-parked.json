@@ -1,0 +1,154 @@
+{
+  "city": "The Lowcountry",
+  "country": "United States",
+  "kind": "region",
+  "status": "needs_curation",
+  "intro": "Four live oaks across two cities and about 130 kilometres of coast, which makes this a day with a car rather than an afternoon on foot. Two stand in Charleston: the Cistern Yard at the college downtown, and the Angel Oak out on Johns Island. Two are in and around Savannah: the Candler Oak beside Forsyth Park, described as the first tree in the United States to be given a conservation easement of its own, and the oak avenue at Wormsloe, which is Victorian rather than colonial whatever the photographs suggest.",
+  "meta_description": "Four Lowcountry live oaks, from Charleston's Angel Oak to the Wormsloe avenue. A day with a car between two cities, about 130 kilometres apart.",
+  "question_meta": "The oldest tree in the Lowcountry is the Angel Oak on Johns Island, roughly 300 to 500 years. Why the 1,500 year figure does not hold up.",
+  "oldest_tree_id": "low_002",
+  "question_answer": "The oldest tree in the Lowcountry is the Angel Oak, a southern live oak standing in a free city-owned park at 3688 Angel Oak Road on Johns Island, about 20 minutes by car from downtown Charleston. Its defensible age is somewhere between 300 and 500 years: the City of Charleston, which has owned the park since 1991, says 300 to 400, and an academic estimate cited by Wikipedia says 400 to 500. The 1,500 year figure that circulates has no method behind it, and neither does the claim that this is the oldest living thing east of the Mississippi, since bald cypresses in North Carolina have been ring dated past 1,600 years.",
+  "question_context": "Live oaks are close to undateable, which is why every age on this page is a range and why the Angel Oak's is argued over by a factor of five. The species grows fast and hollows out early, and a hollow trunk gives a corer nothing to count, so there is no ring sequence for any tree here. What is left is judgement, and judgement about famous trees drifts upward. The city's own figure for the Angel Oak is 300 to 400 years, the higher published estimate is 400 to 500, and the number on the merchandise is 1,500. The Savannah Tree Foundation, which has managed the Candler Oak for 45 years, says that tree is over 300 years old, other accounts run to 450, and nobody has derived a figure from its 17 foot girth. The Cistern Yard oaks at the College of Charleston carry no age at all, since Hurricane Hugo took some of them in 1989 and the stand now mixes survivors with replacements. Wormsloe is the one date nobody has to estimate: the avenue went in during the 1890s, which makes it roughly 130 years old and regularly mistaken for colonial.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in the Lowcountry?",
+      "a": "The Angel Oak on Johns Island, outside Charleston, at somewhere between 300 and 500 years. The City of Charleston puts it at 300 to 400 and an academic estimate cited by Wikipedia at 400 to 500. The 1,500 years often quoted for it has nothing behind it: live oaks hollow out early and cannot be cored, so no one has counted a ring on this tree."
+    },
+    {
+      "q": "Does the Lowcountry include Savannah?",
+      "a": "Depends who you ask. Strictly the Lowcountry is the southernmost corner of South Carolina and stops at the Savannah River, which leaves Savannah on the Georgia bank and outside it. The broader use runs the name down the coastal strip through Georgia, and Savannah's own tourism office calls the city the heartbeat of the Lowcountry. We are using the broad sense here, because it matches the way people actually travel this coast."
+    },
+    {
+      "q": "Do you need a car, and how far apart are these trees?",
+      "a": "A car, and about 130 kilometres from the first tree to the last. The Cistern Yard is in downtown Charleston and the Angel Oak is 20 to 25 minutes further out on Johns Island. Savannah is a long drive south of both, and Wormsloe is another 15 to 20 minutes beyond the city on the Isle of Hope. Once you are in either city centre, the downtown tree is a walk."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Three of the four. The Angel Oak park is free and city-owned, the Cistern Yard is an open campus green, and the Candler Oak is viewed from the public pavement on Drayton Street, since its root zone is fenced to keep feet and cars off it. Wormsloe charges for entry, twelve dollars for adults and less for seniors and children, and is open daily until 4.45pm."
+    }
+  ],
+  "trees": [
+    {
+      "id": "low_001",
+      "name": "The Cistern Yard Oaks",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "66 George Street, Charleston, SC 29424 (College of Charleston campus)",
+        "latitude": 32.784013,
+        "longitude": -79.937465,
+        "neighbourhood": "Downtown Charleston / College of Charleston campus"
+      },
+      "story": "Hurricane Hugo took several of these oaks in September 1989, which is why the yard everybody photographs is part survivor and part replanting. The Cistern Yard is a small iron-fenced green at the heart of the College of Charleston, enclosed on four sides by live oaks hung with Spanish moss and built around the cistern sunk in 1857 to hold water for the buildings on it. Randolph Hall stands behind, put up between 1828 and 1830 and now a National Historic Landmark, and the college still graduates its students outdoors here, under the trees. The ground is older than any of that. A colonial military barracks occupied the site until 1785, when it passed to the college. What none of it gives you is an age. No source dates a single trunk in this yard, and since Hugo the stand has mixed old survivors with younger trees, so a number for the group would be a guess wearing the clothes of a fact. Come for the enclosure rather than for a specimen: four walls of oak, moss filtering the light down onto the brick, and a cistern in the middle. It is the one stop the campus's own self-guided tour sends everybody to. If you know the age of any tree in the yard, tell us.",
+      "verified_sources": [
+        "https://discovering.charleston.edu/items/show/7",
+        "https://spoletousa.org/blog/hidden-secrets-of-the-cistern-yard/"
+      ],
+      "access": "Free, open college campus green, self-guided visits welcome during daylight hours; occasionally closed off for commencement, Spoleto Festival performances or other campus events.",
+      "transport": "Downtown Charleston, walkable from the historic district; no dedicated transit stop needed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "low_002",
+      "name": "The Angel Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 777,
+      "location": {
+        "address": "3688 Angel Oak Road, Johns Island, Charleston, SC 29402",
+        "latitude": 32.71709,
+        "longitude": -80.08043,
+        "neighbourhood": "Johns Island"
+      },
+      "story": "The number on the postcards is 1,500 years. The defensible one is somewhere between 300 and 500. Live oaks put on girth fast, hollow out early and cannot be cored, so the one method that would settle the question does not work on this species, and the space it leaves fills with guesswork that only ever drifts upward. The City of Charleston, which has owned the park since 1991, gives 300 to 400 years. Wikipedia, citing an academic estimate, gives 400 to 500. The same inflation produced the other line attached to this tree, that it is the oldest living thing east of the Mississippi, when bald cypresses in North Carolina have been ring dated past 1,600 years. What is measured rather than estimated is the size, and that is what roughly 400,000 people a year drive out to Johns Island for: 25 and a half feet around, some 65 feet tall, a canopy shading 17,000 square feet of ground, and a longest limb running 187 feet. Even the name is a misreading. It belongs to Justus Angel and Martha Waight Tucker Angel, who owned the land, rather than to anything winged, though local folklore has long told of the ghosts of formerly enslaved people appearing around the tree as angels. Hurricane Hugo battered it in 1989 and it recovered.",
+      "verified_sources": [
+        "https://www.charleston-sc.gov/153/Angel-Oak",
+        "https://en.wikipedia.org/wiki/Angel_Oak"
+      ],
+      "access": "Free, city-owned park, open 7 days a week (Mon-Sat 9am-5pm, Sun 1pm-5pm), closed holidays. No blankets, drinks, food, props or tripods allowed near the tree; donations welcomed.",
+      "transport": "On Johns Island, roughly 20-25 minutes by car from downtown Charleston; no direct transit, parking on site",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "low_003",
+      "name": "The Candler Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 300 to 450 years (estimates vary)",
+      "age_min": 300,
+      "age_max": 450,
+      "girth_cm": 518,
+      "height_m": 16.5,
+      "location": {
+        "address": "516 Drayton Street, Savannah, GA (adjacent to Forsyth Park, on the former Candler Hospital / Savannah Law School site, now SCAD property)",
+        "latitude": 32.0675,
+        "longitude": -81.096389,
+        "neighbourhood": "Historic District, beside Forsyth Park"
+      },
+      "story": "This is described as the first tree in the United States to be given a conservation easement of its own, the legal instrument normally used to stop a piece of land being built on. The Savannah Tree Foundation secured it in 1984, or in 1985, depending which record you read, and the two accounts disagree about its size as well: one puts the easement at 6,804 linear feet, the other at 6,804 square feet, the same number attached to two different things. What nobody disputes is the state the oak was in. Asphalt from the hospital car park ran up to the trunk, cars stood over the root plate, and arborists gave it about twenty years. The Foundation lifted the asphalt, pruned the crown and fenced the roots, and 45 years on it reports the tree thriving. The trunk measures about 17 feet round. The age is inherited rather than worked out: the Foundation, which has looked after this tree longer than anyone, says over 300 years, other accounts stretch to 450, and nobody has derived a figure from the girth. It stands on Drayton Street beside Forsyth Park, on ground that has been a hospital, a law school and now an art college. The fence has stayed, so you look at it from the pavement rather than walk up to it.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Candler_Oak_Tree",
+        "https://www.savannahtree.org/what-we-do"
+      ],
+      "access": "Free. Viewable from the public sidewalk on Drayton Street; the tree's root zone is fenced off by the Savannah Tree Foundation to protect it from foot traffic and parking, so visitors view the tree from just outside the fence rather than approach the trunk itself.",
+      "transport": "In Savannah's downtown Historic District, directly beside Forsyth Park; a walkable 15-20 minute stroll from the riverfront/City Market area, no dedicated parking at the site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "low_004",
+      "name": "The Wormsloe Oak Avenue",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 130 years (the avenue itself, not the estate)",
+      "age_min": 125,
+      "age_max": 140,
+      "location": {
+        "address": "Wormsloe Historic Site, 7601 Skidaway Road, Savannah, GA 31406",
+        "latitude": 31.96472,
+        "longitude": -81.070556,
+        "neighbourhood": "Isle of Hope"
+      },
+      "story": "The avenue looks like 1730 and dates from about 1890. Wormsloe was founded in the 1730s by Noble Jones, who came to Georgia with Oglethorpe, and the tabby ruin at the far end of the site is the oldest standing structure in the Savannah area. The oaks belong to a different century. Wymberley Jones De Renne, a descendant, planted them in the 1890s, by one account to mark the birth of a sixth-generation Jones, which makes the trees roughly 130 years old rather than colonial. Knowing that does not spoil the drive. More than 400 live oaks line a mile and a half of dirt road and have grown into each other overhead, which is the tunnel the place is famous for, with Spanish moss hanging the length of it. The avenue starts at the gate and runs down to the visitor centre, the ruin and the marsh at the end, and walking it is the point of the visit rather than a way of reaching something else. Georgia has run Wormsloe as a state historic site since 1979 and charges to get in, twelve dollars for adults and less for children and seniors, daily until quarter to five. Descendants of Noble Jones still hold about fifty acres around the family house nearby, which is not open to visitors.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Wormsloe_Historic_Site",
+        "https://www.storiesbysoumya.com/wormsloe-historic-site-savannah-georgia/",
+        "https://gastateparks.org/Wormsloe"
+      ],
+      "access": "Paid entry: $12 adults, $9 seniors (62+), $5.75 youth (6-17), $3.25 children under 6, plus tax. Open daily 9:00am to 4:45pm, closed Thanksgiving and Christmas Day. Managed by Georgia Department of Natural Resources as a State Historic Site.",
+      "paid_entry": true,
+      "transport": "By car only, about 15-20 minutes southeast of downtown Savannah on the Isle of Hope; no meaningful public transit to the site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

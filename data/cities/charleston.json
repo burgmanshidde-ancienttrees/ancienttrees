@@ -1,0 +1,92 @@
+{
+  "city": "Charleston",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Two entries, and one of them is why anyone drives out to Johns Island. The Angel Oak is a live oak wide enough to shade a quarter of an acre, standing in a free city park twenty five minutes from downtown, and the age printed on the souvenirs is roughly four times the age in the records. The other is in town: the fenced yard of oaks around an 1857 cistern at the College of Charleston, the view that college puts on everything it prints.",
+  "meta_description": "Charleston's Angel Oak shades a quarter of an acre in a free city park on Johns Island. Where it stands, and how old it actually is.",
+  "question_meta": "Charleston's oldest tree is the Angel Oak on Johns Island, put at 300 to 500 years. Where it stands, and why 1,500 is the wrong number.",
+  "question_answer": "The oldest tree in Charleston is the Angel Oak, a southern live oak standing in a free city-owned park at 3688 Angel Oak Road on Johns Island, about twenty five minutes by car from downtown. The City of Charleston, which has owned the park since 1991, puts it at 300 to 400 years; an academic estimate cited by Wikipedia runs to 500. This page carries the union of the two, 300 to 500 years. The 1,500 year figure that appears on signs, postcards and merchandise around the city has no measurement behind it.",
+  "question_context": "Nobody has counted the rings of the Angel Oak and nobody is going to. Live oak grows fast when young, slows at no reliable rate afterwards and hollows out from the centre while the tree is still healthy, so there is no continuous core to pull and no ring sequence to read. Every published age for it is an estimate built from size, which is how the city arrives at 300 to 400 years and an academic estimate reaches 500. The popular claim that goes with the 1,500 year figure, that this is the oldest living thing east of the Mississippi, does not survive checking either: bald cypress in the Carolinas have been dated by ring count well past a thousand years, one of them beyond 1,600. What is firm is everything that was actually measured. The trunk is 25 and a half feet round by the city's figure and 28 feet by another, the crown shades about 17,000 square feet, and the longest limb reaches 187 feet. The Cistern Yard stand downtown carries no age, because part of it was replanted after Hurricane Hugo.",
+  "hero_tree_id": "chs_001",
+  "oldest_tree_id": "chs_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Charleston?",
+      "a": "The Angel Oak on Johns Island, put at 300 to 400 years by the City of Charleston and up to 500 by an academic estimate. Nobody has cored it, and live oak cannot be dated by ring count once it hollows, so the range is the honest answer."
+    },
+    {
+      "q": "Is the Angel Oak really 1,500 years old?",
+      "a": "No. That number circulates locally and on merchandise, and no measurement supports it. Every estimate that starts from the tree itself lands between 300 and 500 years."
+    },
+    {
+      "q": "Is the Angel Oak free to visit?",
+      "a": "Yes. It is a city park, open Monday to Saturday 9am to 5pm and Sunday 1pm to 5pm, closed on holidays. Donations are welcomed. Blankets, food, drinks, props and tripods are not allowed near the tree, which is worth knowing before you arrive with a camera bag."
+    },
+    {
+      "q": "Can I walk into the Cistern Yard at the College of Charleston?",
+      "a": "Yes, it is an open campus green and self-guided visits are welcome in daylight. It is occasionally roped off for commencement or for Spoleto Festival performances staged in the yard."
+    }
+  ],
+  "trees": [
+    {
+      "id": "chs_001",
+      "name": "The Angel Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": 777,
+      "location": {
+        "address": "3688 Angel Oak Road, Johns Island, Charleston, SC 29402",
+        "latitude": 32.71709,
+        "longitude": -80.08043,
+        "neighbourhood": "Johns Island"
+      },
+      "story": "The souvenirs say 1,500 years. The city that owns the tree says 300 to 400, and an academic estimate stretches it to 500. That gap is not carelessness, it is live oak. The species grows fast when young, slows unpredictably and rots out from the middle while the crown is still healthy, so there is no core to pull and nothing to count. What can be measured is girth, and every estimate that starts from the tree itself lands in the hundreds of years rather than the thousands.\n\nNone of the size is in dispute. The trunk runs 25 and a half feet round by the city's figure, 28 by another. The crown shades around 17,000 square feet, a quarter of an acre under one tree, and the longest limb travels 187 feet before it stops. Live oak does not race upward; it spreads until the branches come back down and rest on the ground, which is why most of this tree is at eye level.\n\nThe name is prosaic. Justus Angel and Martha Waight Tucker Angel owned the estate, and the tree took their surname. The local stories about the spirits of enslaved people appearing among the branches came afterwards.\n\nHurricane Hugo went over it in 1989 and it recovered. The city bought the land in 1991 and now runs it as a free park taking around 400,000 visitors a year.",
+      "verified_sources": [
+        "https://www.charleston-sc.gov/153/Angel-Oak",
+        "https://en.wikipedia.org/wiki/Angel_Oak"
+      ],
+      "access": "Free, city-owned park, open 7 days a week (Mon-Sat 9am-5pm, Sun 1pm-5pm), closed holidays. No blankets, drinks, food, props or tripods allowed near the tree; donations welcomed.",
+      "transport": "On Johns Island, roughly 20-25 minutes by car from downtown Charleston; no direct transit, parking on site",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "chs_002",
+      "name": "The Cistern Yard Oaks",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "66 George Street, Charleston, SC 29424 (College of Charleston campus)",
+        "latitude": 32.784013,
+        "longitude": -79.937465,
+        "neighbourhood": "Downtown Charleston / College of Charleston campus"
+      },
+      "story": "Nobody has published an age for a single tree in this yard, and the honest reason is that they are not all the same age. Hurricane Hugo came through Charleston in 1989 and took some of these oaks with it, so what stands now is a mix of the survivors and what went in afterwards. It reads as one thing regardless, which is the whole point of the place: a compact, iron-fenced yard of live oaks hung with Spanish moss, closed at the end by the portico of Randolph Hall.\n\nThat building went up between 1828 and 1830 and is a National Historic Landmark. The cistern the yard is named for came later, in 1857, a sunken brick reservoir that once held the campus water supply and now works as the low stage everyone ends up sitting on. Before the College took the ground over in 1785 it was a colonial military barracks.\n\nIt is still a working space rather than a lawn to look at. Commencement happens here, and the Spoleto Festival puts performances under the trees, so it is occasionally roped off.\n\nCome in from George Street and stand at the cistern. If anyone has ever dated the older oaks, the College's own records would settle it, and we would like to know.",
+      "verified_sources": [
+        "https://discovering.charleston.edu/items/show/7",
+        "https://spoletousa.org/blog/hidden-secrets-of-the-cistern-yard/"
+      ],
+      "access": "Free, open college campus green, self-guided visits welcome during daylight hours; occasionally closed off for commencement, Spoleto Festival performances or other campus events.",
+      "transport": "Downtown Charleston, walkable from the historic district; no dedicated transit stop needed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
