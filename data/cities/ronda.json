@@ -1,0 +1,235 @@
+{
+  "city": "Ronda",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "The mountains behind Ronda hold a fir that grows nowhere else on earth. Abies pinsapo survives in three small patches of the Serrania de Ronda and Grazalema, a relic left behind when the ice went and the climate dried, and Andalusia's register of singular trees names half a dozen individual pinsapos in these hills, each with its own measured sheet. Alongside them are sweet chestnuts of a size that stops walkers on the track, and a yew whose girth puts it at five centuries. Most of it lies inside the Sierra de las Nieves.",
+  "meta_description": "Ronda's singular trees: pinsapo firs that grow nowhere else on earth, a chestnut 14 metres round that troops heard mass under, and a five-century yew.",
+  "question_answer": "The oldest tree near Ronda is the Castano Santo at Istan, a sweet chestnut whose official register sheet puts it at possibly around 800 years. Its trunk measures 14.65 metres round at chest height and 21.5 metres at the base, and it is named for a mass Christian troops heard at its foot in the sixteenth century.",
+  "question_meta": "The Castano Santo, possibly 800 years old, is the oldest tree near Ronda. What its measurements actually show, and 5 more in the Sierra de las Nieves.",
+  "question_context": "Andalusia's singular-tree register publishes a measured sheet for each tree, so the ages here can be read against something. The Castano Santo's sheet gives 24.5 metres of height, 14.65 metres of girth at 1.30 metres and 21.5 at the base, and says the age possibly runs to around 800 years; the word possibly is the register's and this page keeps it. The Tejo de Froncaile is the more interesting case, because its sheet shows its working. It reasons from published dendrological studies that a yew of five metres girth is generally 500 to 600 years old, notes that this one measures 4.50 and grows in poor conditions that slow it further, and concludes its presence may go back five centuries. That is an estimate with a stated basis rather than a number on a board, and it is the kind this site repeats. The pinsapos are dated more loosely: the Escaleretas fir is put at 350 to 550 years. Getting to the Castano Santo: a few metres off a bridle path above Istan, about 40 minutes from Ronda by car.",
+  "oldest_tree_id": "rnd_004",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Ronda?",
+      "a": "The Castano Santo at Istan, a sweet chestnut that its official register sheet says is possibly around 800 years old. The register uses the word possibly and so does this page."
+    },
+    {
+      "q": "What is a pinsapo?",
+      "a": "Abies pinsapo, the Spanish fir, a relic fir that survives wild only in three small areas of the mountains behind Ronda and Grazalema. Its needles stand out all round the shoot rather than combing to the sides, which no other European fir does, and its cones stand upright and fall apart on the tree."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, none charges anything. Three of the six stand on public land inside the Sierra de las Nieves. The other three are on private hillside, two of them a few metres from a public track or bridle path, and one on a crag with no path to its foot, which its entry says plainly."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "No. These are six separate points spread across 25 kilometres of mountain in four different municipalities, reached by mountain road and then on foot. Treat them as a set of days out from Ronda rather than a walk."
+    },
+    {
+      "q": "How reliable are the measurements?",
+      "a": "They are the best on this site. Andalusia publishes a one-page sheet for each singular tree giving total height, clear trunk height, girth at 1.30 metres, girth at the base, crown diameter in two directions and crown area, plus a note on ownership and surroundings. Every figure on this page comes from those sheets."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rnd_001",
+      "name": "The Pinsapo of Las Escaleretas",
+      "species": "Spanish Fir (Abies pinsapo)",
+      "age_estimate": "350 to 550 years",
+      "age_min": 350,
+      "age_max": 550,
+      "girth_cm": 510,
+      "height_m": 26,
+      "location": {
+        "address": "Cuesta de la Laja, Parauta 29452, Malaga, in the Sierra de las Nieves",
+        "latitude": 36.66632,
+        "longitude": -5.033722,
+        "neighbourhood": "Parauta"
+      },
+      "story": "This tree has a natural monument to itself. Andalusia protects whole landscapes as natural monuments and it has declared one for a single fir, the Monumento Natural Pinsapo de las Escaleretas, inside the Sierra de las Nieves. It is 26 metres tall, 5.10 metres round at chest height and 9 at the base, where roots near the trunk come up out of the ground, and the register puts it between 350 and 550 years old. Closed scars where limbs were cut make it look older than that. The place is named for the way the flat stones of the path lie like steps, and the fir grows at the bottom of a bank beside streams, so from the access track all you see is the top of the crown; you have to go down to it. The view from where it stands takes in the Torrecilla peak and the Alcazaba hill. There is a story that it grew on the grave of a woman known for helping travellers and mountain people, whom she treated with plant remedies. The land is public.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_931.pdf",
+        "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/content/arboles-y-arboledas-singulares"
+      ],
+      "access": "Free, public land inside the Sierra de las Nieves; the tree sits below the access track and you have to walk down to it",
+      "transport": "Parauta, about 20 km east of Ronda by mountain road, then on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "All measurements from the Junta de Andalucia's singular-tree sheet Arb_931: 26 m total height, 3.50 m clear trunk, 5.10 m girth at 1.30 m, 9.00 m at the base, crown 24.0 by 22.5 m. Ownership recorded as public. Its own Natural Monument declaration plus the Sierra de las Nieves natural park. The 350 to 550 year band and the grave story are the sheet's."
+    },
+    {
+      "id": "rnd_002",
+      "name": "The Pinsapo of La Perra",
+      "species": "Spanish Fir (Abies pinsapo)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 510,
+      "height_m": 22,
+      "location": {
+        "address": "Puerto de La Perra, Tolox 29109, Malaga, in the Sierra de las Nieves",
+        "latitude": 36.701829,
+        "longitude": -4.978974,
+        "neighbourhood": "Tolox"
+      },
+      "story": "It grows like a candelabrum, which a fir is not supposed to do. The trunk of this pinsapo is only 60 centimetres long before it forks in two, and one of those two then splits again into three, so what stands on the hillside above the Puerto de La Perra is a twisted branching thing rather than the single straight spire the species normally makes. The register measures 5.10 metres round below the fork and nearly 8 at the base, on a tree 22 metres high. Firs are pruned into that shape by damage, wind or snow load or a lost leader, and the result is a specimen worth the walk precisely because it is wrong. It stands near a path and a mountain stream cutting the northeast slope of the Chaparral hill, with other pinsapos around it and, in the understorey, quejigos of Quercus alpestris, an oak endemic to this range and nowhere else. The land is public and inside the natural park. Nobody has published an age for it, which for a tree of this shape is a real gap: if you know one, tell us.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_875.pdf",
+        "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/content/arboles-y-arboledas-singulares"
+      ],
+      "access": "Free, public land inside the Sierra de las Nieves, near a footpath and a stream",
+      "transport": "Tolox, about 40 km east of Ronda, then on foot toward the Puerto de La Perra",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Measurements from sheet Arb_875: 22 m height, 0.60 m clear trunk, 5.10 m girth at 0.50 m rather than the usual 1.30 because the fork is below chest height, 7.90 m at the base, crown 16.7 by 16.7 m. Ownership public. No age published on the sheet, so none is stated here."
+    },
+    {
+      "id": "rnd_003",
+      "name": "The Yew of Froncaile",
+      "species": "Common Yew (Taxus baccata)",
+      "age_estimate": "possibly around five centuries, derived from girth and published yew growth rates",
+      "age_min": 300,
+      "age_max": 600,
+      "girth_cm": 450,
+      "height_m": 19,
+      "location": {
+        "address": "Froncaile, Tolox 29109, Malaga, in the Sierra de las Nieves",
+        "latitude": 36.689479,
+        "longitude": -4.983123,
+        "neighbourhood": "Tolox"
+      },
+      "story": "This is the one tree on this page whose age comes with its arithmetic attached. The register's sheet does not simply assert a number: it says that dendrological work on yews puts a five-metre girth at somewhere between 500 and 600 years, notes that this tree measures 4.50 metres and grows in conditions poor enough to slow it further, and concludes that it may go back five centuries. That is an estimate with a method, which is rarer than it should be. The yew is 19 metres tall, on a broken northeast-facing slope so steep and so thin-soiled that almost no shrub layer grows, which is ideal ground for the Spanish ibex and hard on everything else. It is hidden among pinsapos and bare rock and takes finding. On a clear day you can see the Sierra Nevada from where it stands, 150 kilometres east. Yew is the slowest thing on this mountain and it gets slower with age, which is the whole reason the arithmetic works.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1011.pdf",
+        "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/content/arboles-y-arboledas-singulares"
+      ],
+      "access": "Free, public land inside the Sierra de las Nieves; steep ground, and the tree is hidden among firs",
+      "transport": "Tolox, about 40 km east of Ronda, then a walk into the Froncaile area",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Measurements and the age reasoning both from sheet Arb_1011: 19 m height, 1.70 m clear trunk, 4.50 m girth at 1.30 m, 5.40 m at the base, crown 16.0 by 12.7 m. Ownership public. The age is derived by the register itself from published yew growth rates and stated as a possibility, which is why the band here is wide."
+    },
+    {
+      "id": "rnd_004",
+      "name": "The Castano Santo",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "possibly around 800 years",
+      "age_min": 400,
+      "age_max": 800,
+      "girth_cm": 1465,
+      "height_m": 24.5,
+      "location": {
+        "address": "Hoyo del Bote, Istan 29611, Malaga",
+        "latitude": 36.613307,
+        "longitude": -5.016718,
+        "neighbourhood": "Istan"
+      },
+      "story": "Christian troops heard mass at the foot of this chestnut before going to fight, and that is where the name comes from: the holy chestnut. The mass was said in the sixteenth century, before a battle with the Moriscos, the Muslims of these mountains who had been forced to convert and who rose against Spain twice. The tree is the largest on this page by a wide margin. Its trunk measures 14.65 metres round at chest height and 21.5 metres at the base, it stands 24.5 metres tall, and the two enormous main limbs carry a crown covering 510 square metres. The register puts the age at possibly around 800 years and has proposed the tree as a Natural Monument of Andalusia. It sits on a ledge on an east-facing slope in dense woodland of cork oaks and Algerian oaks with other chestnuts scattered through it, on land where pigs are still run out to feed on acorns, and somebody has built a low stone wall behind it to stop erosion undercutting the roots. The land is private, but the tree stands a few metres from a public bridle path.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_995.pdf",
+        "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/content/arboles-y-arboledas-singulares"
+      ],
+      "access": "Free, a few metres from a public bridle path; the surrounding land is private grazing, so keep to the path",
+      "transport": "Istan, about 45 km southeast of Ronda by road, then on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Measurements from sheet Arb_995: 24.5 m height, 2.50 m clear trunk, 14.65 m girth at 1.30 m, 21.50 m at the base, crown 27.4 by 23.7 m, crown area 510 m2. Ownership recorded as private, with the sheet noting the tree stands a few metres from a bridle path; the access line says so. Age is the sheet's own possibly around 800 years. Proposed for Natural Monument status, not yet declared at the time of the sheet."
+    },
+    {
+      "id": "rnd_005",
+      "name": "The Castano Arena",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 720,
+      "height_m": 17,
+      "location": {
+        "address": "Camino del Molino Real, Cartajima 29452, Malaga",
+        "latitude": 36.645147,
+        "longitude": -5.150335,
+        "neighbourhood": "Cartajima"
+      },
+      "story": "Nobody walking the Camino del Molino Real gets past this one without stopping. The Castano Arena stands at the side of the track that runs down toward the valley of the river Genal, right where a medium slope begins to fall away toward one of the streams that feed it, and the register's own sheet says as much: it does not go unnoticed by the walker. The trunk is 7.20 metres round at chest height and 10.20 at the base, on a tree 17 metres tall, and the register attributes that thickness plainly to advanced age without putting a number on it. It stands out from everything around it, and what is around it is the point. The Genal valley is one continuous chestnut wood, tens of thousands of trees running across the whole basin and on into Pujerra and Igualeja, and in late October the entire valley turns copper at once. It is the reason people drive this road in autumn. The land is private and the track is public. No age has been published: if you know one, tell us.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October and November, when the whole Genal valley turns copper",
+        "kind": "autumn colour"
+      },
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_871.pdf",
+        "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/content/arboles-y-arboledas-singulares"
+      ],
+      "access": "Free, at the side of a public track; the land around it is private",
+      "transport": "Cartajima, about 20 km south of Ronda, on the Camino del Molino Real",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Measurements from sheet Arb_871: 17 m height, 3.00 m clear trunk, 7.20 m girth at 1.30 m, 10.20 m at the base, crown 15.1 by 16.0 m. Ownership private, and the sheet places the tree at the side of the Camino del Molino Real, which is what the access line reports. Not inside a protected natural space. No age published, and the sheet only says the thickness is the fruit of advanced age."
+    },
+    {
+      "id": "rnd_006",
+      "name": "The Solitary Pinsapo",
+      "species": "Spanish Fir (Abies pinsapo)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 350,
+      "height_m": 17,
+      "location": {
+        "address": "Puerto del Pinsapo, Ronda 29400, Malaga, in the Sierra de las Nieves",
+        "latitude": 36.745424,
+        "longitude": -5.02035,
+        "neighbourhood": "Ronda"
+      },
+      "story": "It is the only tree in sight, which is the entire point of it. The Solitary Pinsapo grows on a crag of bare rock near the Puerto del Pinsapo in a stretch of mountain with no woodland at all, so it reads at a distance as a single dark shape on grey stone. It is 17 metres tall and 3.50 metres round at chest height, and the base measures double that, 7 metres, because the trunk has spread sideways to get over and around the rocks it emerged on, some of which it is slowly swallowing. The register calls it a silent witness to the distribution the species once had, which is the honest way to put it: pinsapo forest covered far more of these mountains before the climate dried and people cut and grazed the rest, and an isolated fir on a bare crag is what is left of a wood. The only plants near it are what those soils allow, terebinth, kermes oak and hawthorn. The land is private and there is no path to the foot of it, so this is a tree to look at from the pass rather than to stand under.",
+      "verified_sources": [
+        "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_984.pdf",
+        "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/content/arboles-y-arboledas-singulares"
+      ],
+      "access": "Free to see from the Puerto del Pinsapo; the land is private and there is no path to the tree itself, so it is a view rather than a visit",
+      "transport": "Off the road east of Ronda toward the Sierra de las Nieves, about 15 km",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Measurements from sheet Arb_984: 17 m height, 1.75 m clear trunk, 3.50 m girth at 1.30 m, 7.00 m at the base, crown 16.0 by 12.8 m. Ownership private, inside the Sierra de las Nieves natural park; the sheet describes it growing on a crag with no path mentioned, so this is published as a view-only tree and the access line says exactly that. No age published. The only tree on this page inside Ronda's own municipality."
+    }
+  ]
+}
