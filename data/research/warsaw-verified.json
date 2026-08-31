@@ -1,0 +1,25 @@
+[
+  {
+    "id": "war_018",
+    "name": "The Chestnut of Puławska and Merliniego",
+    "species": "Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Corner of ul. Puławska 107 and ul. Merliniego, Mokotów, Warsaw",
+      "latitude": 52.19534,
+      "longitude": 21.02458,
+      "neighbourhood": "Mokotów"
+    },
+    "verified_sources": [
+      "GDOS national register of natural monuments (poland-gdos-pomniki-przyrody.json), kodinspire PL.ZIPOP.1393.PP.1465011.3271, gid 177754, designated 1988-12-28, reproduced with the same address at https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+    ],
+    "access": "Free, genuinely public street corner (Mokotów, corner of ul. Puławska 107 and ul. Merliniego), confirmed by reverse geocode",
+    "transport": "Mokotów cluster; roughly 0.5-0.7km from war_005, war_009 and war_017",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Only one source family found despite three attempts across two passes (this one plus two earlier): the GDOS national register entry and pl.wikipedia's Pomniki przyrody w Warszawie list both derive from the same official designation (1988-12-28), so they do not count as independent per the two-source rule. This pass tried two more routes for an independent second source and both failed: architektura.um.warszawa.pl/documents/.../Zal_Nr_II.9.pdf (Warsaw district tree-designation attachment) returned an HTML error page rather than the PDF to both curl with a browser UA and WebFetch (403); crfop.gdos.gov.pl's own detail page for this kodinspire code is blocked by an Incapsula bot challenge to curl. General web search returned only real-estate listings for the office building on the same corner and the same register-family pages; no Wikimedia Commons or iNaturalist photo found. No age or girth documented anywhere found. Access is not in question: genuinely public pavement corner. Delivered with one source per the flag-rather-than-drop instruction rather than dropped, since access, species and designation are all solid; a reader photo or a Mokotów district consultation document would close this."
+  }
+]
