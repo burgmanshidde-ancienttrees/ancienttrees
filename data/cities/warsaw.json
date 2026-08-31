@@ -5,7 +5,7 @@
   "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left around Janusz Korczak's orphanage. Royal parks add two more: a pair of oaks in the king's own Lazienki garden, and a lime named for the king who built Wilanow.",
   "meta_description": "Warsaw's remarkable trees carry wartime, royal and Enlightenment history: a 600-year oak, a WWII poplar, Korczak's orphanage oak, royal park oaks.",
   "question_answer": "Warsaw's oldest tree is Dab Mieszko I (King Mieszko I's Oak), a pedunculate oak on Nowoursynowska Street in Ursynow, estimated at 600 to 640 years old depending on the survey cited. It stands at the edge of Natolin Forest, one of the last fragments of the wild woodland that covered this ground before the city existed.",
-  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 16, and the history each carries.",
+  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 17, and the history each carries.",
   "question_context": "Warsaw's tree ages are harder to pin down than in cities with continuous records, because the city's own archives and much of its built and natural heritage were destroyed between 1939 and 1945. Dab Mieszko I is the exception precisely because it predates that entire period by centuries: even the more conservative age estimates put its origin well before Poland's partitions, let alone the Second World War, and successive surveys since its 1962 protection have each revised the figure without ever seriously challenging its status as the region's oldest oak. Its main rival for the title of Warsaw's most storied tree is not a contest of age at all. The Poplar of the Defenders, roughly a century old, and Dr Korczak's Oak, undated but standing beside a building that survived the war intact, both carry more concentrated history in fewer decades than the Mieszko oak accumulated in centuries, a reminder that this city's remarkable trees earn their place by two different measures, sometimes separately, occasionally both at once.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Warsaw's remarkable trees free to visit?",
-      "a": "12 of the 16 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
+      "a": "13 of the 17 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
     },
     {
       "q": "Why does Warsaw have so few very old trees?",
@@ -563,6 +563,42 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "war_018",
+      "name": "The Chestnut of Pulawska and Merliniego",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Corner of ul. Pulawska 107 and ul. Merliniego, Mokotow, Warsaw",
+        "latitude": 52.19534,
+        "longitude": 21.02458,
+        "neighbourhood": "Mokotow"
+      },
+      "story": "This chestnut has outlasted the government that protected it. Poland listed it as a natural monument on 28 December 1988, ten months before the Round Table talks that ended communist rule, and it has stood through everything since on an ordinary pavement corner where ulica Pulawska meets ulica Merliniego in Mokotow.\n\nAesculus hippocastanum is not native to Poland. It came from the mountains of the Balkans by way of Vienna's gardens in the sixteenth century and spread across Central Europe as a street and park tree, valued for shade rather than for age, which makes a chestnut still standing at a road junction after decades of protection worth noticing. In May its whole crown lights up with upright white flower spikes, candles rising above the leaves, visible from the traffic waiting at the corner.\n\nThe register that protects it gives no age and no girth, only the date it was designated and the coordinates of the corner. Two more searches this year turned up nothing beyond the same official listing. If you know how old this tree really is, or have ever measured its trunk, tell us; right now the record only says it has stood, protected, since before Poland's own transition away from communist rule.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white candle-flowers cover the crown"
+      },
+      "verified_sources": [
+        "GDOS national register of natural monuments (poland-gdos-pomniki-przyrody.json), kodinspire PL.ZIPOP.1393.PP.1465011.3271, gid 177754, designated 1988-12-28, reproduced with the same address at https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+      ],
+      "access": "Free, genuinely public street corner (Mokotow, corner of ul. Pulawska 107 and ul. Merliniego)",
+      "transport": "Mokotow cluster; roughly 0.5-0.7km from war_005, war_009 and war_017",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
