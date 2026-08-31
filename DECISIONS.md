@@ -1,5 +1,54 @@
 # Decisions
 
+## 2026-08-31 - A place may publish below four trees when one tree is itself the destination
+
+Hidde, after asking whether trees would be better handled loose from pages at
+all, and hearing why they would not: "is goed."
+
+**What changed.** The four-verified-trees floor stands as the default and gains
+one narrow exception: a place publishes below four when a single tree is the
+reason somebody makes the trip. The test is one question, chosen because it is
+hard to argue yourself past: would somebody travel specifically for THIS ONE
+TREE? Angel Oak yes, Castagno dei Cento Cavalli yes, a fine oak in a village no.
+It is a test of fame, not of quality; a tree being good does not pass it.
+
+**What did not change.** The bar per tree, the hard rules, the ban on padding a
+list to a number, and the container. 34 of 190 published places sit exactly at
+four, so the floor is a real constraint and stays one.
+
+**Why, and it is the opposite failure from the one the floor was built for.**
+The floor stops a list being padded upward. What it was also doing, unnoticed,
+was blocking a solitary world-famous tree. Three cases hit that wall in one day:
+the Castagno dei Cento Cavalli on Etna, roughly 2,200 years old, free, confirmed
+alive by its own comune in March 2026, which had no home at all; Bartram's
+Ginkgo, the oldest ginkgo in America, alone in Philadelphia; and the 60 famous
+American trees already on hand in `data/leads/_famous-united-states.json`, every
+one carrying a photograph and most of them standing by themselves.
+
+**The alternative was considered and rejected, and the reasoning is the useful
+part.** Hidde's own proposal was to put famous trees on the map with no city at
+all. Three separate questions were hiding in it. Decoupling the DATA from the
+page is right and is what goal 3 already asked for, but it changes nothing a
+reader sees, so it is housekeeping. Decoupling the URL from the city is a loss:
+city pages take most of the traffic (Lisbon 179 impressions, Seville 141, Prague
+139 in the ten-day window) and the city word in `/charleston/angel-oak` is what
+matches "trees in Charleston". And publishing a tree with no page at all makes
+the tree worse: it appears on the map and nowhere else, with no story, no reason
+it is special and no way to collect it, which kills three of the four verbs.
+
+So trees stay inside places. What changed is how few trees a place may hold, and
+the standing reminder that a place is not necessarily a city: Kauai, Menorca,
+Madeira, Crete and Sardinia are already places, and Sardinia spans 128 km.
+
+**The case that triggered it, and the one it killed.** Charleston and Savannah
+were both researched from zero and produced exactly two named trees each, because
+American sources describe live oaks collectively and almost never name one. A
+"Lowcountry" region page holding all four was drafted and then stopped before
+shipping, for three reasons worth keeping: it spans 134 km so it breaks the walk
+that Cadiz is calibrated on, nobody searches the word "Lowcountry", and it would
+have put `/lowcountry/angel-oak` in place of `/charleston/angel-oak`. The draft
+is parked at `data/research/lowcountry-parked.json` rather than deleted.
+
 ## 2026-08-30 - Saving and collecting need an account, on both surfaces
 
 Hidde, in one thread: "bewaren moet niet werken als je uitgelogd bent", then "al
