@@ -1,0 +1,13 @@
+{
+  "leads": [],
+  "blocked": [
+    {
+      "site": "Forsyth Park",
+      "reason": "No individually named or tree-level-sourced old live oak found for Forsyth Park itself. treestoseesavannah.com and gosouthsavannah.com describe the park's live oaks only collectively (\"a canopy of live oaks\" along the walks), never naming or dating one specimen. The one individually documented, sourced tree inside the park is a different species: an American sycamore in the NE quadrant, reported by treestoseesavannah.com as 130 years old and the tallest tree in the city, alongside an unremarkable ginkgo. Not pursued here because the brief asked specifically for an old live oak. Worth a future pass if a city page wants a non-oak entry: would need a second independent source before it could ship (single-sourced so far)."
+    },
+    {
+      "site": "Bonaventure Cemetery",
+      "reason": "No individually named or tree-level-sourced old live oak found. Every source (Wikipedia, Bonaventure Historical Society summary via search, treestoseesavannah.com, Telfair Museums) describes the cemetery's oaks only as a collective avenue/canopy planted by Col. John Mullryne, 15 feet apart; the \"oldest oaks, said to be over 250 years old\" near the American Legion field are named as a group, not as one specimen. This is the avenue problem the brief warned about: a general drive/walk through the cemetery is not a collectible point, and no single named tree exists to ship instead. bonaventurehistorical.org (the most likely source for an individual name) 403-blocked automated fetches twice; a session with a real browser could try again."
+    }
+  ]
+}

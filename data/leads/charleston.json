@@ -1,0 +1,21 @@
+{
+  "leads": [],
+  "blocked": [
+    {
+      "site": "St Philip's Church graveyard, Church Street",
+      "reason": "No individually named or sourced tree found. Two searches plus a fetch of the detailed Adventures in Cemetery Hopping blog post on this exact churchyard found generic 'towering trees' language only; the sole claim of 'the oldest oak tree in Charleston' traces to an unverified TripAdvisor visitor review, not a source that names or locates a specific trunk. Does not meet the two-source bar for an individual tree, and the yard is not established anywhere as a named, compact tree ensemble in its own right (it is known for its graves, not its trees). Leave as a lead for a future pass with photo/on-site verification rather than shipping."
+    },
+    {
+      "site": "Circular Congregational Church graveyard, Meeting Street",
+      "reason": "Confirmed as the city's oldest burial ground (monuments from 1695) with 'ancient live oaks draped in Spanish moss' per discoversouthcarolina.com and other sources, but no source names or individually distinguishes a specific tree, and none treats the oaks themselves (rather than the graves) as the destination. Does not clear the collectible-point bar as either a single tree or a named ensemble. Leave as a lead."
+    },
+    {
+      "site": "White Point Garden, the Battery",
+      "reason": "Described repeatedly as 'filled with live oaks' and 'enormous live oaks... draped in Spanish moss' along the promenade, but no source names an individual oldest/largest/notable specimen tree, and the park is a 6-acre waterfront promenade rather than a compact single-standing-point ensemble. Fails the collectible-point test as written (closer to an avenue/park backdrop than one obvious place to stand)."
+    },
+    {
+      "site": "Hampton Park",
+      "reason": "Charleston's largest park (from the 1901 Inter-State and West Indian Exposition grounds), with 'several awesome live oak trees' with Angel-Oak-like branching near the small lake, per adventuresinthecarolinas.com. A WebSearch AI summary claimed locals call one tree the 'mini angel oak', but fetching the actual source page directly found no such phrase anywhere in the text: a fabricated-by-summary figure per the BRIEF_RESEARCH.md warning, discarded rather than recorded. No source individually names or locates a specific tree, and the park is large and spread out, not a compact ensemble. Leave as a lead."
+    }
+  ]
+}
