@@ -1,0 +1,67 @@
+{
+  "city": "Philadelphia",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "One tree, and it is the oldest ginkgo in America. Bartram's Ginkgo grows at Bartram's Garden on the Schuylkill, from a sapling William Hamilton shipped over from London in 1785 and gave to his friend William Bartram. Hamilton kept two more for his own estate; both were felled in the 1980s. This one, standing on the ground Bartram himself planted, has now outlived them by four decades. It is free, open every day, dawn to dusk.",
+  "meta_description": "Bartram's Ginkgo, planted in 1785, is the oldest ginkgo tree in America. Free to visit at Bartram's Garden in Philadelphia, dawn to dusk.",
+  "question_answer": "The oldest tree in Philadelphia is Bartram's Ginkgo, growing east of the Bartram Barn at Bartram's Garden in Southwest Philadelphia, believed to be around 240 years old. It grew from a sapling William Hamilton shipped from London in 1785 and gave to his friend William Bartram, and it is thought to be the oldest ginkgo in North America. The garden is free and open every day, dawn to dusk.",
+  "question_meta": "Bartram's Ginkgo, planted 1785, roughly 240 years old, is Philadelphia's oldest tree and America's oldest ginkgo. Where it stands.",
+  "question_context": "The date rests on a specific claim rather than a general one. In 1785, William Hamilton of The Woodlands shipped three ginkgo saplings from London, the first of their kind to reach North America. He kept two at his own estate and gave the third to his friend William Bartram, whose garden on the Schuylkill was already the oldest botanic garden on the continent. Both of Hamilton's trees at The Woodlands were cut down in the 1980s, leaving Bartram's as the only survivor and the oldest ginkgo known in the country. Wikipedia and the garden's own history agree closely on this, though both likely draw on the same record rather than two independent counts, which is why the entry carries a flag. It is a male tree, sparing the garden a problem: ginkgoes are dioecious, and only females produce the foul-smelling seed the species is known for. No tree-level coordinates exist, so the pin marks the general area east of the Bartram Barn. The garden is free and open every day, dawn to dusk; the Woodland Avenue trolley (route 34) stops within a 10 minute walk, and SEPTA buses 12 and 64 also serve the area.",
+  "hero_tree_id": "phl_001",
+  "oldest_tree_id": "phl_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Philadelphia?",
+      "a": "Bartram's Ginkgo at Bartram's Garden, believed to be around 240 years old and the oldest ginkgo tree in North America."
+    },
+    {
+      "q": "Why is it the oldest ginkgo in America?",
+      "a": "It is one of three saplings William Hamilton shipped from London in 1785. He kept two for his own estate, The Woodlands, and gave the third to his friend William Bartram. Hamilton's two were cut down in the 1980s; this is the only one left."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. Bartram's Garden is a city-owned public garden and National Historic Landmark, free and open every day, dawn to dusk."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "The Woodland Avenue trolley (route 34) stops about a 10 minute walk from the garden, and SEPTA bus routes 12 and 64 also serve Lindbergh Boulevard near the entrance."
+    }
+  ],
+  "trees": [
+    {
+      "id": "phl_001",
+      "name": "Bartram's Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 240 years",
+      "age_min": 235,
+      "age_max": 245,
+      "girth_cm": null,
+      "location": {
+        "address": "Bartram's Garden, 5400 Lindbergh Blvd, Philadelphia, PA 19143 (east of the Bartram Barn)",
+        "latitude": 39.93291,
+        "longitude": -75.21218,
+        "neighbourhood": "Southwest Philadelphia (Kingsessing)"
+      },
+      "story": "In 1785, William Hamilton shipped three ginkgo saplings from London, the first of their kind to reach North America. He planted two at his own estate, The Woodlands, and gave the third to his friend William Bartram, whose garden a few miles up the Schuylkill was already the oldest botanic garden on the continent. Hamilton's two are gone, felled in the 1980s. Bartram's is the one that made it.\n\nThat leaves this tree, standing east of the old barn on the same ground Bartram himself planted, as the oldest ginkgo known in America at roughly 240 years old. It is male, which spares the garden a problem: ginkgoes are dioecious, and only the females drop the soft, foul-smelling seed that gives the species its reputation at street level. Whoever decided which sapling went where left Bartram with the tidier tree.\n\nThe 1785 date is well attested. Wikipedia and the garden's own institutional history agree closely on it, though both likely trace back to the same original record rather than two truly independent counts, worth knowing before treating the figure as beyond question. No exact coordinates for the trunk have ever been published, so the pin here marks the general area rather than the base of the tree itself.\n\nBartram's Garden is free, city owned, and open every day from dawn to dusk.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Bartram%27s_Garden",
+        "https://bartramsgarden.org/botanic-garden"
+      ],
+      "access": "Free, open to visitors every day, grounds open dawn to dusk (Welcome Center Thu-Mon 9:30am-4:30pm). Bartram's Garden is a city-owned public garden and National Historic Landmark; no ticket needed.",
+      "transport": "Woodland Ave trolley (route 34) to 54th St, then about a 10 minute walk; SEPTA bus routes 12/64 also serve Lindbergh Blvd near the garden entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [11],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns gold and can drop within a day or two"
+      }
+    }
+  ]
+}
