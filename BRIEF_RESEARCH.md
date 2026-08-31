@@ -232,6 +232,25 @@ these rules are about EXPOSURE rather than about timeouts.
    all three survived. Everything recovered from those three failures was
    recovered because the file was already on disk.
 
+**Confirmed again on 2026-08-31, and this time the rule was broken by the brief
+rather than missing from it.** Three from-zero US passes were dispatched in one
+afternoon, on Charleston, Savannah and Philadelphia, and all three died with the
+same "no progress for 600s", each one mid-reach: "Now the churchyards", "Let's
+fetch that and botanic-garden", "start researching the top candidate". Every
+register-led pass dispatched the same day finished normally. The difference was
+not the country and not the subject: the three briefs named nine to twelve
+candidate sites each plus an invitation to look for more, against the four this
+rule allows, and rule 1 is written for exactly that. Savannah was then
+re-dispatched with the same over-long list and died a second time, which is as
+close to a controlled experiment as this project gets.
+
+Rule 4 paid for itself again in the same afternoon. The passes that died with a
+long list still banked what they had reached: Charleston's Angel Oak and Cistern
+Yard oaks, Philadelphia's Bartram ginkgo. Savannah, which died before its first
+tree, left nothing twice over. **So the exposure rule and the append rule are
+not alternatives.** The first decides whether a pass finishes; the second decides
+what survives when it does not.
+
 **And one framing rule for whoever writes the brief.** Crete's second pass spent
 its opening turns arguing with itself about whether it was the researcher or a
 dispatcher, and died before doing anything. A brief must say plainly: you are
