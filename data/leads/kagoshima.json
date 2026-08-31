@@ -2,24 +2,8 @@
   "city": "Kagoshima",
   "country": "Japan",
   "city_slug": "kagoshima",
-  "note": "Candidates from the 2026-08-31 pass that opened Kagoshima. Source unless stated: Kagoshima City's preserved-tree register (38 designated trees, updated 2025-11-25) at https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html . Never rendered: these are leads, not entries.",
+  "note": "Candidates from the 2026-08-31 pass that opened Kagoshima. Source unless stated: Kagoshima City's preserved-tree register (38 designated trees, updated 2025-11-25) at https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html . Never rendered: these are leads, not entries. Both landmark pines found on OpenStreetMap were published on 2026-08-31 (kag_011, kag_012) and are no longer listed here.",
   "leads": [
-    {
-      "name": "The propped black pine of Ishibashi Memorial Park",
-      "species": "Japanese Black Pine (Pinus thunbergii)",
-      "lat": 31.6052311,
-      "lng": 130.5703606,
-      "status": "lead",
-      "why": "Sent by Hidde on 2026-08-31 as a photograph from Ishibashi Memorial Park: a wide low pine with horizontal limbs carried on a dozen wooden props, on a lawn with a stone bridge parapet behind it. CONFIRMED TO EXIST AND TO BE REGARDED AS A LANDMARK: OpenStreetMap node 12814173957, surveyed 2025-06-20, carries natural=tree, species=Pinus thunbergii and denotation=landmark at 31.6052311 / 130.5703606, about 300 m east of the memorial hall. Every other tree mapped in that park is denotation=avenue, so exactly one tree there is marked as notable and it is a black pine. What is still missing is an AGE and a source: it is not among Kagoshima City's 38 preserved trees (no black pine is on that list at all) and no Japanese page names a notable pine at 石橋記念公園 or 祇園之洲公園. Note the ground is older than the park: ja.wikipedia says the park was laid out on the Gionnosu battery built by order of Shimazu Nariakira, so this is an Edo-period embankment rather than land made in 1999, and a coastal black pine on it may well predate the park's opening in April 2000. Next step is the signboard, the park office (Ishibashi Memorial Hall, 099-248-6661) or the city's parks and greening section (099-216-1366)."
-    },
-    {
-      "name": "The pine that marked the way for Ryukyu ships",
-      "species": "Ryukyu Pine (Pinus luchuensis)",
-      "lat": 31.6087113,
-      "lng": 130.5744349,
-      "status": "lead",
-      "why": "OpenStreetMap node 12843461914, surveyed 2025-06-20, name 琉球船の目印松, natural=tree, species=Pinus luchuensis, denotation=landmark, on the shore about 700 m northeast of Ishibashi Memorial Park. The name means the pine that Ryukyu ships steered by, which if it holds up is one of the better stories on this coast: Satsuma ran the Ryukyu trade for two and a half centuries and its ships came into this bay. A Ryukyu pine this far north is also unusual in itself. Found while checking Hidde's photograph and not yet corroborated: the name appears nowhere on the searchable Japanese web, so OSM is currently the only source and one source is not enough. Needs the signboard, a local history page, or the city's parks section."
-    },
     {
       "name": "Ogatama and ginkgo of Nanshu Shrine (the ginkgo)",
       "species": "Ginkgo (Ginkgo biloba)",
