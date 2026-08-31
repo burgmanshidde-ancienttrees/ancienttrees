@@ -1,0 +1,192 @@
+{
+  "city": "Segovia",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "One tree stands in Segovia's own old town, an Atlas cedar in a small plaza garden built over a demolished convent. The other four are a bus ride out at La Granja de San Ildefonso, the royal summer palace whose nineteenth century gardeners filled the grounds with exotic conifers from three continents: a lightning struck giant sequoia, a Spanish fir hundreds of kilometres from its wild range, a Douglas fir towering over a baroque fountain, and a cedar of Lebanon that outlived the sequoia twin felled beside it in 2020.",
+  "meta_description": "Five remarkable trees in Segovia: an old-town Atlas cedar, and four royal-garden giants at La Granja, including a lightning-struck giant sequoia.",
+  "question_meta": "Segovia's oldest tree is La Reina, a giant sequoia at La Granja roughly 150 to 170 years old. Where she stands, and four more nearby.",
+  "question_answer": "The oldest tree mapped in Segovia is La Reina, a giant sequoia in the royal gardens of La Granja de San Ildefonso, a bus ride from the city centre. The Castilla y Leon register puts her waistline at 13.7 metres and her height at 42.5 metres, though Patrimonio Nacional and the Segovia press both give 46 metres instead, a disagreement nobody has resolved. She is reckoned at roughly 150 to 170 years old, tracing to the mid-1850s seed William Lobb shipped from California's Calaveras Grove, the shipment that introduced the species to Europe; no source dates this specific tree more precisely than that. Lightning took her crown off in 1991, and she still carries the lightning rod. She stands beside her companion, El Rey, in a corner of the gardens that charges paid entry. A second candidate for oldest, the lone Atlas cedar in Segovia's own Plaza de la Merced, is put at over 150 years by the city's tourism office with no further detail, so the two may be close in age; La Reina's is the better documented figure. Four more trees share her garden at La Granja.",
+  "question_context": "The Junta de Castilla y Leon's register of notable trees gives every tree here its designation date, girth and height, but not always an age: only two of the five carry a source's estimate, and both are broad bands rather than a documented year. Where the register is silent, the page says so rather than guessing. Segovia's own tourism office supplies the Plaza de la Merced cedar's age; the mid-nineteenth-century planting history of La Granja's gardens, corroborated by Patrimonio Nacional and the local press, supplies the two La Granja bands. Two trees, the Spanish fir and the Douglas fir, carry no age from any source, and their pages ask readers who know to tell us. Heights disagree between sources for La Reina, and both figures are kept rather than one chosen. One further honesty note: a sixth tree in the same register cluster, a second giant sequoia in the Parterre de Andromeda, was not published, because a 2020 news report describes Patrimonio Nacional felling a sequoia in that exact spot for root rot, and the naming match was too close to risk. See the full list of five on the Segovia page.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Segovia?",
+      "a": "La Reina, a giant sequoia in the royal gardens of La Granja de San Ildefonso, reckoned at roughly 150 to 170 years old and standing 42.5 to 46 metres depending on the source. She lost her crown to lightning in 1991 and still carries the rod."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Not in one. One tree, the Atlas cedar, stands in Segovia's own old town near the Plaza Mayor. The other four stand together in the gardens of La Granja de San Ildefonso, a separate town reached by a Linecar bus that runs roughly every 45 minutes and takes 20 to 35 minutes."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "The old-town cedar is, in a public municipal garden open all day. The four at La Granja stand inside the palace gardens, which charge a paid entrance, roughly five euros at last check."
+    },
+    {
+      "q": "Why don't some of them have an age?",
+      "a": "Because nobody has measured them. The regional tree register gives every one of these five a girth and a height, but an age for only two, and both of those are broad estimates tied to the wider planting history of the gardens rather than a specific tree's own record. The rest ask readers who know to tell us."
+    }
+  ],
+  "hero_tree_id": "seg_002",
+  "oldest_tree_id": "seg_002",
+  "trees": [
+    {
+      "id": "seg_001",
+      "name": "The Cedar of the Plaza de la Merced",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": null,
+      "girth_cm": 408,
+      "location": {
+        "address": "Jardin de la Plaza de la Merced, Segovia",
+        "latitude": 40.951001,
+        "longitude": -4.127577,
+        "neighbourhood": "Centro / San Millan"
+      },
+      "verified_sources": [
+        "https://medioambiente.jcyl.es/web/es/medio-natural/arboles-notables.html",
+        "https://www.turismodesegovia.com/es/turismo-de-naturaleza/patrimonio-natural/jardines/jardin-de-la-plaza-de-la-merced"
+      ],
+      "access": "Free, public municipal garden, open all day",
+      "transport": "In the old town, easy walk from Segovia city centre / Plaza Mayor",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Santa Maria de la Merced stood on this ground until 1837. The convent came down, the site went to the city, and what fills the small garden now is one Atlas Cedar with a trunk four metres round.\n\nThe regional register of notable trees in Castilla y Leon took its measure in 2006: 4.08 metres of girth and 25.5 metres of height, in a square barely wider than the tree's own shade. Segovia's tourism office calls it over 150 years old. Neither source goes further than that, and no planting date has ever been recorded, so the figure stays as loose as the evidence for it.\n\nAtlas Cedars are mountain trees out of Morocco, and this one has grown the flat, tiered crown the species takes on with age, the branch layers stacking outward like shelves. In a city where storks claim every bell tower and every arch of the aqueduct, Segovians report them using this cedar too, which makes it one of the few living things in the old town tall enough to count as architecture.\n\nFree, open all day, a few minutes on foot from the Plaza Mayor. Almost everyone crossing the plaza is on their way to something else.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "One cedar in a small plaza garden a few minutes from Plaza Mayor; nothing else in the square comes close to its size."
+    },
+    {
+      "id": "seg_002",
+      "name": "La Reina",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 150-170 years",
+      "age_min": 150,
+      "age_max": 170,
+      "girth_cm": 1370,
+      "location": {
+        "address": "Jardines del Palacio Real de La Granja, Alameda del Medio Ponto, Real Sitio de San Ildefonso",
+        "latitude": 40.898052,
+        "longitude": -4.005774,
+        "neighbourhood": "La Granja de San Ildefonso (day trip from Segovia)"
+      },
+      "verified_sources": [
+        "https://medioambiente.jcyl.es/web/es/medio-natural/arboles-notables.html",
+        "https://www.patrimonionacional.es/actualidad/noticias/la-reina-la-secuoya-gigante-de-los-jardines-del-palacio-de-la-granja",
+        "https://www.tribunasegovia.com/noticias/413552/la-reina-la-emblematica-secuoya-gigante-que-custodia-castilla-y-leon-y-que-protagoniza-el-cupon-de-la-once"
+      ],
+      "access": "Paid entrance to the historic Jardines de la Granja where this tree stands, roughly 5 EUR at last check; open daily, hours vary by season",
+      "paid_entry": true,
+      "transport": "Linecar bus from Segovia to La Granja de San Ildefonso, roughly every 45 minutes on weekdays, journey about 20-35 minutes, fare around 1.50 EUR",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Lightning took the top off this sequoia in 1991. It wears a lightning rod now, and it is still among the tallest trees standing in the royal gardens at La Granja.\n\nLa Reina has a waistline of 13.7 metres, the figure the Castilla y Leon register recorded when it designated the tree in 2006. On height the sources do not agree. The same register says 42.5 metres; Patrimonio Nacional, which runs the royal site, and the Segovia press both say 46. Nobody has reconciled the two, and they were plausibly taken years apart by different methods.\n\nShe does not stand alone. Her companion is El Rey, and the pair are believed to have come from the seed William Lobb shipped out of the Calaveras Grove in California in 1853, the consignment that introduced the giant sequoia to Europe and made it briefly the tree every ambitious estate had to own. That would place the planting in the mid-1850s and the tree at roughly 150 to 170 years old. What is documented is the planting wave, not a date for this particular trunk, so the band stays wide.\n\nIn 2026 she appeared on a national lottery coupon, which is the Spanish way of confirming that a tree has become a monument. Reaching her means a bus out of Segovia and about five euros at the garden gate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The tallest, thickest conifer in the gardens, with a lightning rod at its blunted top and a matching sequoia, El Rey, standing beside it."
+    },
+    {
+      "id": "seg_003",
+      "name": "El Pinsapo del Potosi",
+      "species": "Spanish Fir (Abies pinsapo)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 454,
+      "location": {
+        "address": "Parterre del Potosi, Jardines del Palacio Real de La Granja, Real Sitio de San Ildefonso",
+        "latitude": 40.900265,
+        "longitude": -4.001889,
+        "neighbourhood": "La Granja de San Ildefonso (day trip from Segovia)"
+      },
+      "verified_sources": [
+        "https://medioambiente.jcyl.es/web/es/medio-natural/arboles-notables.html",
+        "https://porunasegoviamasverde.wordpress.com/2018/12/19/jardines-de-san-ildefonso-el-plantel/"
+      ],
+      "access": "Paid entrance to the Jardines de la Granja (roughly 5 EUR); the El Potosi section where this tree stands is one of the areas visitors can walk once inside",
+      "paid_entry": true,
+      "transport": "Linecar bus from Segovia to La Granja de San Ildefonso, roughly every 45 minutes on weekdays, journey about 20-35 minutes, fare around 1.50 EUR",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Spanish Fir grows wild in a handful of mountain ranges in Andalusia and northern Morocco and nowhere else on earth. This one stands several hundred kilometres north of all of them, inside a walled compartment of the royal gardens at La Granja called El Potosi, with 4.54 metres of trunk and 32 metres of height above it. The Castilla y Leon register measured it and designated it in 2006.\n\nIt is a relict, a fir left behind in the southern Spanish mountains when the cold retreated, and it was still a botanical rarity when nineteenth-century Spanish gardeners began planting it for show. The needles give the species away: short, stiff and set radially all the way round the twig, so a branch looks bottle-brushed rather than flat. Up close it is the least subtle conifer in the garden.\n\nThis is not the only large pinsapo in the compartment. A Segovia garden history records two others in the same walled complex, thicker still at 5.8 and 6.8 metres round, so the walk is worth doing slowly.\n\nWhat nobody has recorded is how old any of them are. No planting date survives for this tree. If you know when the pinsapos went into El Potosi, tell us.\n\nEl Potosi is one of the sections visitors can walk freely once inside. The bus from Segovia runs about every three quarters of an hour and takes twenty to thirty-five minutes, then roughly five euros at the gate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "In the walled El Potosi compartment; two other pinsapos stand nearby and are thicker, so check the register plate rather than guessing by size alone."
+    },
+    {
+      "id": "seg_004",
+      "name": "La Pseudotsuga del Dragon",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 419,
+      "location": {
+        "address": "Fuente de los Dragones, Jardines del Palacio Real de La Granja, Real Sitio de San Ildefonso",
+        "latitude": 40.894199,
+        "longitude": -4.006499,
+        "neighbourhood": "La Granja de San Ildefonso (day trip from Segovia)"
+      },
+      "verified_sources": [
+        "https://medioambiente.jcyl.es/web/es/medio-natural/arboles-notables.html",
+        "https://porunasegoviamasverde.wordpress.com/2018/12/19/jardines-de-san-ildefonso-el-plantel/"
+      ],
+      "access": "Paid entrance to the Jardines de la Granja (roughly 5 EUR), open daily, hours vary by season",
+      "paid_entry": true,
+      "transport": "Linecar bus from Segovia to La Granja de San Ildefonso, roughly every 45 minutes on weekdays, journey about 20-35 minutes, fare around 1.50 EUR",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "At 36.5 metres this Douglas Fir is tall for one grown in Europe and unremarkable where it comes from. In the coastal forests of Oregon and Washington the same species gets past ninety.\n\nIt stands over the Fuente de los Dragones, one of the baroque waterworks Philip V built here in an attempt to give Spain its own Versailles. The fountain throws its dragons and its water; the fir simply outreaches the lot of them. The Castilla y Leon register is the document that names this individual tree, logging the trunk at 4.19 metres round and designating it in 2006.\n\nDouglas Firs reached European gardens after David Douglas sent seed home from the Pacific Northwest in the 1820s, and within a generation every estate with ambitions wanted one. Most of those plantings never came to much, because the tree wants a cool, wet, mountain climate and most of Spain declines to provide it. La Granja is the exception, sitting high on the north flank of the Sierra de Guadarrama with snowmelt running through it, which is roughly the deal this tree was struck for.\n\nIts age is not on record anywhere we have been able to find. If you know when it went in, tell us.\n\nEntry to the gardens is about five euros, and the bus out from Segovia takes twenty to thirty-five minutes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Rising directly over the Fuente de los Dragones, the fountain of dragon statues; look up rather than around."
+    },
+    {
+      "id": "seg_005",
+      "name": "The Cedar of Lebanon of the Parterre de Andromeda",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "roughly 150-170 years",
+      "age_min": 150,
+      "age_max": 170,
+      "girth_cm": 597,
+      "location": {
+        "address": "Parterre de Andromeda, Jardines del Palacio Real de La Granja, Real Sitio de San Ildefonso",
+        "latitude": 40.89521,
+        "longitude": -4.001065,
+        "neighbourhood": "La Granja de San Ildefonso (day trip from Segovia)"
+      },
+      "verified_sources": [
+        "https://medioambiente.jcyl.es/web/es/medio-natural/arboles-notables.html",
+        "https://www.acueducto2.com/patrimonio-tala-una-secuoya-enferma-en-los-jardines-de-la-granja/104790"
+      ],
+      "access": "Paid entrance to the Jardines de la Granja (roughly 5 EUR), open daily, hours vary by season",
+      "paid_entry": true,
+      "transport": "Linecar bus from Segovia to La Granja de San Ildefonso, roughly every 45 minutes on weekdays, journey about 20-35 minutes, fare around 1.50 EUR",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In 2020 the keepers of La Granja cut down one of the giant sequoias of the Parterre de Andromeda. Honey fungus had taken its roots, and it was about 160 years old when it came down. This cedar was part of the same planting and is still standing.\n\nThe parterre was laid out as a matched set: two giant sequoias and two cedars of Lebanon, an arrangement in the exact taste of the mid-nineteenth century, when a European garden demonstrated its seriousness by growing trees from the far side of the world. The Castilla y Leon register measured this one at 5.97 metres round and 32.5 metres tall and designated it in 2006 without troubling to give it a name.\n\nIts age comes from the ensemble rather than from any record of this trunk. The planting is reported as mid-nineteenth century, which puts the cedar somewhere around 150 to 170 years old. Nobody has dated this particular tree, and a broad band is the honest version of that number.\n\nCedars of Lebanon built Solomon's temple and the Phoenician fleets, and the species is now scarce in its own mountains and comfortable in the gardens of Europe, which is a strange career for a tree. This one carries the flat, layered crown the species grows into once it gives up on height. Paid entry, roughly five euros, plus the bus from Segovia.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "In the Parterre de Andromeda, paired historically with a giant sequoia that was felled in 2020; the cedar is the survivor of that planting."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "city": "Segovia",
+  "country": "Spain",
+  "city_slug": "segovia",
+  "note": "From the 2026-08-31 register-first verify pass (Castilla y Leon Arboles Notables). Opened from zero. Confirmed hypothesis: five of the six candidates named in the brief cluster in the historic gardens of the Palacio Real de La Granja de San Ildefonso, a royal palace/garden roughly 11km from Segovia's centre, reachable by a frequent Linecar bus (every ~45 min weekdays, ~20-35 min journey, ~1.50 EUR), which sits at or just past CLAUDE.md's ~30-minute day-trip boundary depending on traffic; reported plainly rather than rounded down. Gardens charge a paid entrance (~5 EUR) separate from the palace. Five trees verified to data/research/segovia-verified.json: the in-town Cedar of Plaza de la Merced (seg_001) plus four La Granja specimens (seg_002 La Reina sequoia, seg_003 Pinsapo del Potosi, seg_004 Pseudotsuga del Dragon, seg_005 the Parterre de Andromeda cedar of Lebanon). One candidate (Sequoia de Andromeda) is blocked below on a strong death signal. Time-boxed at roughly 40 minutes per BRIEF_RESEARCH.md; general search beyond the register cluster was light, per the brief.",
+  "leads": [
+    {
+      "name": "El Rey (the sequoia paired with La Reina)",
+      "species": "Sequoiadendron giganteum",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Multiple sources on La Reina (Patrimonio Nacional press coverage, carlosdeiracheta.com) describe a second, similarly famous giant sequoia named El Rey standing with La Reina in front of the Collegiate Church at La Granja, also over 40m tall. Not in the register rows the brief handed off (only La Reina, AS-SG-07, was named there), and no register id was found for it this pass; a future pass should search the JCyL register file directly for a second Plaza de Espana sequoia entry, or treat it as an unregistered but clearly documented specimen and verify it directly the way La Reina was verified here. Would pair naturally with La Reina as a two-tree highlight of the same spot.",
+      "source_hint": "https://www.carlosdeiracheta.com/secuoyas-gigantes-en-la-granja-de-san-ildefonso ; https://www.patrimonionacional.es/actualidad/noticias/la-reina-la-secuoya-gigante-de-los-jardines-del-palacio-de-la-granja"
+    },
+    {
+      "name": "The pinsapos of the Caja de las Flores",
+      "species": "Abies pinsapo",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "A Segovia garden-history blog (porunasegoviamasverde.wordpress.com, 2018-12-19) describes two exceptionally large Spanish firs in the Caja de las Flores compartment of these same gardens, girths given as 5.8m and 6.8m, both larger than the register's Pinsapo del Potosi (girth ~4.5m, delivered as seg_003). These may be unregistered or registered under different site names not matched this pass. Worth a dedicated look: a 6.8m girth Abies pinsapo this far from its native range would be a genuinely strong candidate, possibly stronger than seg_003.",
+      "source_hint": "https://porunasegoviamasverde.wordpress.com/2018/12/19/jardines-de-san-ildefonso-el-plantel/"
+    },
+    {
+      "name": "The gardens of the Episcopal Palace (Palacio Episcopal)",
+      "species": null,
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "A dedicated blog post exists on this specific Segovia garden (porunasegoviamasverde.wordpress.com), found in a light general search per Step 1's search order (name the places, then search them). Not opened this pass; worth reading directly for named trees, since this same blog's other posts proved reliable and detailed for La Granja.",
+      "source_hint": "https://porunasegoviamasverde.wordpress.com/2018/09/16/el-jardin-del-palacio-episcopal/"
+    },
+    {
+      "name": "Parral monastery gardens, Casa de la Moneda gardens, cathedral cloister gardens",
+      "species": null,
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "A general search names these as Segovia's other historic garden sites (alongside the Palacio Episcopal) in the city's own gardening tradition. None searched individually this pass; the brief flagged them as worth checking (Alcazar grounds, cathedral cloister, Casa de la Moneda) but the register cluster was the time-boxed pass's main job. Good starting point for a future in-town Segovia pass to grow past the single Plaza de la Merced cedar.",
+      "source_hint": "general search, not yet fetched"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Sequoia de Andromeda",
+      "species": "Sequoiadendron giganteum",
+      "register_id": "AS-SG-09",
+      "reason": "dead",
+      "why": "Register AS-SG-09 (last revised 2018), site Parterre de Andromeda, diameter 368.3cm, height 37.5m. A 2020 news report (Acueducto2, corroborated by other search results) states Patrimonio Nacional felled 'the Andromeda sequoia' (la secuoya de Andromeda), one of a pair of giant sequoias planted alongside two cedars of Lebanon in that same Parterre de Andromeda, after Armillaria root rot had destroyed over half the root system; the felled tree was about 160 years old, 35m tall, and reduced to a stump over three days in September 2020. The register's own designation predates the felling (revised 2018) and carries no vitality field, exactly the gap BRIEF_RESEARCH.md warns about. The naming match (register's proper name 'Sequoia de Andromeda' against news reports repeatedly calling the felled tree 'la secuoya de Andromeda') and the close height figures (35m felled vs 37.5m registered, plausibly the same tree measured a few years apart) make it too likely this is the same specimen to publish as alive. Not delivered. A future pass could try to settle this definitively (a direct call to Patrimonio Nacional's press office, or a dated recent photo/inventory of the parterre showing one or two standing sequoias) and un-block it if the surviving tree in the pair turns out to be this named one rather than its twin."
+    }
+  ]
+}

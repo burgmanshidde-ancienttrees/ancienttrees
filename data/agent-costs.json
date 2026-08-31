@@ -4269,6 +4269,20 @@
         "tokens": 0,
         "trees": 1,
         "note": "Wrote and merged vln_011 (The Philologists' Birch of Sarbievijaus Courtyard) directly in session rather than dispatching a full write-stories pass for a single tree; fixed 'ten'/'eight' count promises across intro, meta_description, question_meta/answer/context and 3 FAQ answers to eleven/nine/eight"
+      },
+      {
+        "target": "segovia",
+        "kind": "verify",
+        "tokens": 65000,
+        "trees": 0,
+        "note": "New city opened from zero via openable.py (city_queue.py's naive supply count is known-unreliable, LOG.md 2026-08-30). Register cluster confirmed as La Granja de San Ildefonso royal gardens; 5 of 6 candidates verified, 1 blocked as likely felled 2020 (naming/height match to a news report), 4 leads recorded"
+      },
+      {
+        "target": "segovia",
+        "kind": "write",
+        "tokens": 90000,
+        "trees": 5,
+        "note": "5 stories written and merged (seg_001-005); assembled the new city file (intro, meta, question block, FAQ) in session since there is no city-assembler script; fixed paid_entry booleans the heuristic script left ambiguous and 2 stale Spain/Japan country meta_description counts"
       }
     ]
   }
