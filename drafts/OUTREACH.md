@@ -788,3 +788,45 @@ because it reads the first plausible address on the page. Every address in this
 batch was looked at before it went in. Six of twelve sites in one round had no
 address at all, only a form, and those are recorded as such so nobody hunts
 them twice.
+
+## Cal Poly UFEI, the California Registry of Big Trees, drafted 2026-08-31 (NOT SENT)
+
+**Why this one is worth sending.** The registry is 266 champion trees with
+tree-level coordinates, species, measurements, a measurement date and a DEAD
+flag, all behind one open endpoint that needs no key. 229 are live, unhidden and
+located. It is a nomination-based champion register rather than a municipal
+inventory, so it is the right shape, and it is the only usable-looking US source
+found across two scouting rounds: Philadelphia and Charleston designate by
+zoning threshold, Seattle, San Francisco, Savannah and San Diego publish only
+their full street-tree inventories. It covers Los Angeles (54), Santa Barbara
+(24), Sacramento (14), Santa Clara (12), Orange (11) and San Diego (8), and
+Sacramento and San Diego are both ranked cities we have nothing in.
+
+**The only thing missing is a licence.** No terms of use for the data exist on
+californiabigtrees.calpoly.edu, selectree.calpoly.edu or ufei.calpoly.edu; the
+site carries an accuracy disclaimer, which is not a licence. So this is a
+permission ask, not an import.
+
+**To:** mritter@calpoly.edu (published as the registry's own contact on its home
+page). Matt Ritter runs UFEI at Cal Poly.
+
+**Draft, for Hidde to send or rewrite:**
+
+> Hi Matt,
+>
+> I run ancienttrees.app, a map of remarkable old trees you can go and visit. It's live with about 2,000 trees across 190 cities, and I'm working on an iOS app alongside it.
+>
+> I've been bringing together official tree registers from around the world, and the California Registry of Big Trees is the best one I've found in the US by a distance. Most American cities either publish their whole street-tree inventory or designate by trunk size, so there's no curated list to work from. Yours is an actual register, with coordinates and measurements and a date on them.
+>
+> I couldn't find any terms of use for the data, so I'd rather ask than assume. Would you be happy for me to use the registry on the map, crediting UFEI and Cal Poly on every tree that comes from it? Happy to link back wherever you'd like.
+>
+> One other thing either way: if you have personal tips for the best trees to stand in front of around Sacramento or San Diego, I'd love to hear them.
+>
+> Thanks,
+> Hidde
+
+**Notes for whoever sends it.** Do not send it as anything but Hidde. Run
+`python3 scripts/mailcheck.py` over it first. The tree count is checked against
+`scripts/stats.py` on 2026-08-31 (2,030 trees, 189 cities, so "about 2,000" and
+"190" are honest roundings, not claims). The mail makes no claim about what the
+site will or will not cost, which is the standing rule.

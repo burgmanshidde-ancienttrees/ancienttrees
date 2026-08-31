@@ -202,7 +202,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 5 | Barcelona | 43.27 | 346,477 | 56 | 12 | 7 | 180 | 30 | measured |
 | 6 | Tenerife | 56.06 | - | 4 | - | - | - | 20 | measured |
 | 7 | Brisbane | 45.98 | 162,602 | 19 | 1 | 2 | 189 | 30 | measured |
-| 8 | Singapore | 44.01 | 967,821 | 28 | 3 | 2 | 165 | 30 | measured |
+| 8 | Singapore | 44.01 | 967,821 | 28 | 3 | 3 | 165 | 30 | measured |
 | 9 | Seville | 42.54 | 170,545 | 43 | 6 | 2 | - | 20 | measured |
 | 10 | Florence | 29.75 | 184,099 | 23 | 7 | 1 | 27 | 30 | measured |
 | 11 | Prague | 37.87 | 303,350 | 17 | 13 | 3 | 29 | 30 | measured |
@@ -426,7 +426,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 229 | Innsbruck | 2.52 | 58,742 | - | - | - | - | 10 | predicted (travel demand) |
 | 230 | Bern | 2.51 | 90,627 | - | - | - | - | 10 | predicted (travel demand) |
 | 231 | Ljubljana | 2.46 | 125,046 | 4 | - | 1 | - | 30 | measured |
-| 232 | Maui | 2.33 | - | - | - | - | 3 | 10 | predicted (travel demand) |
+| 232 | Maui | 2.33 | - | 4 | - | - | 3 | 10 | predicted (travel demand) |
 | 233 | Den Bosch | 1.23 | 39,682 | 11 | 1 | 1 | 119 | 20 | measured |
 | 234 | Split | 2.46 | 132,399 | 4 | - | 1 | - | 20 | measured |
 | 235 | Valletta | 2.45 | 84,342 | - | - | - | - | 10 | predicted (travel demand) |

@@ -1,0 +1,153 @@
+{
+  "city": "Maui",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Maui's most famous tree is currently behind a fence. The Lahaina banyan, planted in 1873 and grown into sixteen trunks, came through the August 2023 fire that destroyed the town around it, and the park it stands in has been closed ever since, so you look at it from Front Street. The other three are elsewhere on the island and open to anyone: a monkeypod in a Wailuku churchyard, a fig on the lawn of a county building that used to be the police station, and a kiawe on the coast road to Olowalu.",
+  "meta_description": "Maui's Lahaina banyan survived the 2023 fire and is still fenced off, seen from Front Street. Three more, in Wailuku and on the coast road, are open.",
+  "question_answer": "The oldest tree on this list is the Lahaina Banyan, planted on 24 April 1873 and so 153 years old, in Lahaina Banyan Court Park at the corner of Front Street and Canal Street. It is also the only one of the four anybody has dated, so read it as the oldest we can prove rather than the oldest tree on Maui.\n\nOne thing to know before driving there: the park has been closed since the August 2023 wildfire and a perimeter fence keeps visitors back from the tree and from the burned-out Old Lahaina Courthouse beside it. The tree is visible from the fence line and from Front Street. As of February 2026 a full arborist assessment was still pending and county officials hoped to reopen the park before the end of the year if it proved safe.",
+  "question_meta": "The Lahaina Banyan, planted 24 April 1873, is Maui's oldest dated tree. What survived the fire, what is fenced off, and three trees you can walk to.",
+  "question_context": "The banyan can be dated because its planting was an occasion. Sheriff William Owen Smith put it in on 24 April 1873, a seedling sent by missionaries in India, to mark fifty years since the first American Protestant mission in Lahaina, and somebody wrote the date down. Nothing like that exists for the other three trees on this page.\n\nThe record behind those three explains why. Hawaii protects individual trees under Act 105 of 1975, and the exceptional trees register that results carries species, girth, height, condition and owner. It has no age field at all. Where a newspaper or a local history has published a planting date there is an age to give; for these three nobody has, and a girth figure on a fig or a monkeypod will not stand in for one.\n\nSo three of the four trees here carry no recorded age, and one of them, a kiawe on the West Maui coast road, rests on the register alone. If you know when any of them went in, tell us and we will add it.\n\nSee all four on the Maui page.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Maui?",
+      "a": "The Lahaina Banyan, planted on 24 April 1873, which makes it 153 years old. It is the only tree on this list with a documented planting date; the other three carry no recorded age at all."
+    },
+    {
+      "q": "Can you visit the Lahaina banyan?",
+      "a": "Not up close, not at the moment. The park has been closed since the August 2023 wildfire and is fenced, with signs against trespassing. You can see the tree from the fence line and from Front Street. County officials hoped to reopen the park before the end of 2026 if a full health assessment cleared it."
+    },
+    {
+      "q": "Did the Lahaina banyan survive the fire?",
+      "a": "Yes, and it is still standing. The fire destroyed the courthouse beside it and, in the county arborist's words, skipped over the park itself. About 40 percent of the canopy had to be removed afterwards, and in February 2026 arborists found fungus in a branch that snapped, so its long-term health is genuinely uncertain rather than settled."
+    },
+    {
+      "q": "Which trees on Maui can I walk right up to?",
+      "a": "Three of the four. The monkeypod at Ka'ahumanu Church and the fig at the Kalana Pakui Building are both on South High Street in Wailuku, a few minutes apart, and both are free. The kiawe stands beside Honoapi'ilani Highway near mile marker 11, on state land, and the register records it as visible from the street and reachable."
+    }
+  ],
+  "oldest_tree_id": "mau_001",
+  "trees": [
+    {
+      "id": "mau_001",
+      "name": "The Lahaina Banyan Tree",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "153 years (planted 1873)",
+      "age_min": 152,
+      "age_max": 153,
+      "girth_cm": 1200.9,
+      "location": {
+        "address": "Lahaina Banyan Court Park, corner of Front Street and Canal Street, Lahaina",
+        "latitude": 20.87167,
+        "longitude": -156.6775,
+        "neighbourhood": "Lahaina"
+      },
+      "story": "The fire that destroyed Lahaina on 8 August 2023 burned the courthouse beside this tree and went over the park it stands in. Maui County's arborist used that word himself: it skipped. The banyan was scorched rather than killed, and roughly 40 percent of its canopy came off afterwards, branches dried out by the superheated air along Front and Hotel Streets.\n\nIt went in on 24 April 1873, a seedling sent by missionaries in India and planted by sheriff William Owen Smith to mark fifty years since the first American Protestant mission in Lahaina. Banyans do not stay one tree. Aerial roots come down off the limbs, thicken and turn into trunks, and by 2005 there were sixteen of them under a crown covering two thirds of an acre, a quarter of a mile around its edge. That canopy, rather than any trunk, is what makes it the largest banyan in Hawaii.\n\nWhere it goes from here is genuinely unsettled. A branch snapped in February 2026 and arborists found fungus inside it. A full assessment, tension tests and cambium checks, was being organised rather than scheduled, and the chair of the county's arborist committee put the position plainly: nobody knows what is under the skin.\n\nThe park is still fenced and closed. You look at it from Front Street, across the ground where the courthouse stood.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Lahaina_Banyan_Court_Park",
+        "https://www.civilbeat.org/2026/02/lahainas-famed-banyan-tree-still-in-the-icu/"
+      ],
+      "access": "The park has been closed to the public since the August 2023 wildfire; a perimeter fence keeps visitors back from the tree and the burned-out Old Lahaina Courthouse beside it, with signs warning against trespassing. As of the Feb 2026 source, the tree and benches are visible from the fence line and from Front Street; a full arborist health assessment was pending, and county officials hoped to reopen the park before the end of 2026 if it proved safe.",
+      "transport": "In central Lahaina, on Front Street opposite the small boat harbor",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mau_002",
+      "name": "The Ka'ahumanu Church Monkeypod",
+      "species": "Rain Tree (Samanea saman)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 835.2,
+      "location": {
+        "address": "Ka'ahumanu Church, 103 South High Street, Wailuku",
+        "latitude": 20.89694,
+        "longitude": -156.50028,
+        "neighbourhood": "Wailuku"
+      },
+      "story": "Eight and a third metres round, and nobody has written down when it was planted. Hawaii's exceptional trees register lists this monkeypod at Ka'ahumanu Church with 8.35 metres of trunk, 11 metres of height and its condition rated excellent, and it gives no age, because the register has no age field. Nobody else has published one either.\n\nWhat it does have is an address with a long memory. The church behind it is the fourth building on this site since 1832 and the oldest stone church still in use on Maui, finished in 1875. The congregation's own description of its grounds names the trees before it names anything else: the monkeypod, the kukui, the mango and the kou. This is the monkeypod, singular, and it is the one Wailuku means when it talks about looking after the tree at the church.\n\nMonkeypod is the Hawaiian name for the rain tree, Samanea saman, a species that spends its growth going sideways rather than up. Eleven metres tall is nothing much; the limbs are the point, reaching out low and near-horizontal until the crown shades most of the churchyard. It stands on South High Street in Wailuku, well outside the ground the Lahaina fire took.\n\nThe register records the church rather than the tree, so our pin marks the lot and not the trunk. If you know when this one went in, tell us.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Kaahumanu_Church",
+        "https://www.kaahumanuchurch.org/"
+      ],
+      "access": "Free. On the grounds of a working historic church (the oldest continuously used stone church on Maui, fourth building on the site, built 1875), open during daylight hours; the tree stands in the churchyard along High Street.",
+      "transport": "In central Wailuku, on South High Street",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "In the churchyard on the High Street side of Ka'ahumanu Church, the 1875 stone church with the tall white steeple. The monkeypod is the wide, low, flat-topped one; the kukui, mango and kou on the same grounds are all smaller."
+    },
+    {
+      "id": "mau_003",
+      "name": "The Kalana Pakui Banyan",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 1094.2,
+      "location": {
+        "address": "Kalana Pakui Building (former police station), 250 South High Street, Wailuku",
+        "latitude": 20.8903,
+        "longitude": -156.5072,
+        "neighbourhood": "Wailuku Civic Center Historic District"
+      },
+      "story": "Wailuku's police station moved out and left the fig. The Kalana Pakui Building went up in 1925 to a design by William D'Esmond, served the town as its police station, and now holds county offices at 250 South High Street in the Wailuku Civic Center Historic District. On its lawn stands an Indian laurel fig that is nearly eleven metres round.\n\nThe exceptional trees register gives the numbers: Ficus microcarpa, 10.94 metres of trunk, 16 metres tall, condition good, owner Maui County. That last field is the useful one for a visitor. The tree belongs to the county, it stands on the lawn of a public building, and getting to it involves no gate, no ticket and nobody to ask.\n\nFicus microcarpa is the small-leaved cousin of the banyan over in Lahaina and it thickens the same way, dropping roots off its limbs that reach the ground and fuse into the trunk mass, so eleven metres is a measure of accumulated tree rather than of one stem.\n\nTwo gaps worth naming. The register is the only source we found that records this particular tree, so the building is well documented and the tree rests on a single line in a database. And nobody has published an age for it. Anyone standing in front of it with a tape measure or a local memory can help us close both.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Wailuku_Civic_Center_Historic_District",
+        "Hawaii Exceptional Trees register, row 988 (State of Hawaii DLNR Division of Forestry and Wildlife, CC0)"
+      ],
+      "access": "Free. On the grounds of a public county government building (built 1925 as the police station, now county offices) in the Wailuku Civic Center Historic District; visible and reachable from the street and the building's public lawn.",
+      "transport": "In central Wailuku, on South High Street",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "On the lawn of the Kalana Pakui Building at 250 South High Street, the 1925 county building that used to be the police station. Smaller leaves and a heavier, fused trunk mass than the monkeypod up the street at the church."
+    },
+    {
+      "id": "mau_004",
+      "name": "The Honoapi'ilani Highway Kiawe",
+      "species": "Kiawe (Prosopis pallida)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 810.8,
+      "location": {
+        "address": "Honoapi'ilani Highway, oceanside near mile marker 11, between Ma'alaea and Olowalu",
+        "latitude": 20.79,
+        "longitude": -156.57,
+        "neighbourhood": "Olowalu / Ukumehame coast"
+      },
+      "story": "Kiawe only reached Hawaii in 1828, carried over from Peru, so whatever this tree's age turns out to be, it has a ceiling of about two centuries. It is still one of the largest of its kind recorded on Maui: 8.1 metres round, 9 metres tall, condition good, on the register the state keeps of its exceptional trees.\n\nIt grows on the ocean side of Honoapi'ilani Highway near mile marker 11, on the stretch between Ma'alaea and Olowalu. The land belongs to the state transport department, which is why the register can enter it as visible from the street and reachable, and why the visit costs nothing and involves nobody: you pull over and walk to it. Kiawe is a mesquite, a genus that makes its living in dry country, which is the short explanation for how a tree this size comes to be standing on a hot leeward coast where little else gets tall.\n\nThis is the thinnest entry on the page. The register is the only source we found for it, and the pin is a mile marker plus a grid reference rather than a fix on the trunk, so treat the map as pointing at the right kilometre of road. If you have stopped at it, tell us where exactly it stands and we will move the pin.",
+      "verified_sources": [
+        "Hawaii Exceptional Trees register, row 1119 (State of Hawaii DLNR Division of Forestry and Wildlife, CC0)"
+      ],
+      "access": "Free, on state Department of Transportation land beside a public highway; the register itself records it as 'Visible from Street/Accessible'. Only the register's grid coordinates and the mile-marker description are available, so the pin is approximate; a later pass should confirm the exact roadside spot.",
+      "transport": "By car on Honoapi'ilani Highway (State Route 30), West Maui coast",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "Oceanside of Honoapi'ilani Highway near mile marker 11, on the Ma'alaea to Olowalu stretch. The one big kiawe in a run of low scrub."
+    }
+  ]
+}
