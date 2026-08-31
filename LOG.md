@@ -9,6 +9,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-31 (session) - Fixed the walks-pill BLOCKER, closed the page-gap rung, Vilnius +1
+
+**Rung 2 first.** `health.py` flagged a fresh BLOCKER: the map's "Walking routes / in the app" pill claimed walks were app-only on all 93 city pages that also link a real `/[city]/walks` page two paragraphs below it. Verified live in the source (`site/src/pages/[city].astro`), fixed by pointing the pill at the real walks page when one exists rather than the app modal, built and QA'd clean, answered in `health.py`'s ledger. The other rung-2 item, nightly.yml under-delivering (6 of 12 knocks), could not be dispatched by hand: `gh workflow run` returned 403, this session's token lacks workflow-dispatch permission. Needs Hidde or the automated watchdog CLAUDE.md describes.
+
+**Went looking for a write pass first, as instructed, and found the pipeline empty** (`passcheck.py --pending`: nothing verified and unwritten). Tried three verify targets before finding real supply: Coimbra's near-in register candidates were already published and its remaining leads 8-18km out; Brisbane's "significant landscape trees" register is a bulk unnamed inventory already exhausted by three to four prior passes (documented in LOG.md/CURATION.md, zero trees each time); Alicante's register was confirmed exhausted at its current radius on 2026-08-28. Settled on Vilnius, whose university-courtyard cluster had real unresearched leads left. Dispatched a `verify` pass; it shipped one tree (vln_011, The Philologists' Birch of Sarbievijaus Courtyard, two sources: the STVK register and VU's own page for the courtyard) and, more valuably, caught two register rows my own hand-summarised brief had mislabelled as fresh candidates when they were exact-coordinate duplicates of already-published vln_008/vln_009, plus found a real decline signal for a previously-open lead (now blocked).
+
+Wrote and merged vln_011 directly in session (one tree does not justify a full write-stories dispatch) and fixed the city's stale "ten"/"eight" count promises across the intro, meta_description, question block and three FAQ answers to eleven/nine/eight, per the count-promise rule.
+
+**Also this session:** wrote the two remaining species intros `pagegaps.py` had flagged (Japanese Black Pine, 5 trees/4 cities; Sea Fig, 3 trees/2 cities), closing that rung to zero. Vendored the 3 photographs the session-start check flagged as not yet on our own domain (`vendor_photos.py`, local-only). All changes built, QA'd, preflighted and pushed individually as they completed.
+
+Costs logged to `data/agent-costs.json` under today's date (verify/write/session entries, tokens where known).
+
 ## 2026-08-31 - Three ranked zeros open in one afternoon, because Japan publishes tree registers
 
 Hidde: "doe ook maar miyazaki en nog wat andere steden met 0 starten." Miyazaki,
