@@ -9,6 +9,57 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-31 - Nine more zero cities open, and the thing that decides whether a city can open is not supply
+
+Hidde asked for ten more cities standing at zero. Nine are live: Sapporo,
+Segovia, Kamakura, Nagoya, Ronda, Tarragona, Girona, Pamplona and Naha, 54
+trees between them. Matera is scouted and refused, and the reason it was
+refused is the finding of the day.
+
+**Access, not supply, is what decides.** Every one of these cities had register
+trees on hand. What separated the ones that opened from the ones that did not is
+whether the register says WHO OWNS THE TREE.
+
+- Andalusia publishes a one-page measured sheet per singular tree with a
+  PROPIEDAD field. Ronda opened in an afternoon: three trees on public land in
+  the Sierra de las Nieves, two on private hillside beside a public bridle path
+  and labelled that way, one with no path to its foot published as a view from
+  the pass.
+- Okinawa publishes an owner per tree, so Naha opened, and its biggest tree did
+  not: Yonagusuku's banyan is 23.5 m round, the largest in Okinawa, and the
+  register names the owner as a private household.
+- Catalonia publishes a location field precise enough to read (Placa de la Vila,
+  Carretera de l'aeroport, Mas de Borbo), so Tarragona opened at exactly four:
+  nine live declared trees within 30 km and only four on ground the public may
+  walk on.
+- Italy's MASAF publishes neither, which is why Taormina and Matera are both
+  refused. Every Taormina tree in the register stands in one private hotel's
+  grounds. Eleven of Matera's seventeen nearest stand on a masseria.
+
+Everything refused is in data/leads/ with its measurements, so the day an owner
+or a council confirms access, those pages exist already.
+
+**Two build checks caught me, both correctly.** I introduced a second common name
+for Taxus baccata, and I pointed Tarragona's oldest_tree_id at a tree its own
+answer never named. Both refused the deploy. That ratchet works.
+
+| City | Rank | Demand | Trees | Register |
+|---|---|---|---|---|
+| Girona | 55 | 51,072 | 7 | Catalonia monumental trees |
+| Sapporo | 146 | 88,633 | 6 | Hitozato Kyoboku / Env Ministry |
+| Nagoya | 160 | 83,437 | 6 | Hitozato Kyoboku / Env Agency |
+| Naha | 169 | 24,466 | 6 | Okinawa's hundred notable trees |
+| Segovia | 200 | 30,968 | 6 | Castilla y Leon notable trees |
+| Kamakura | 217 | 33,492 | 6 | Kanagawa's hundred notable trees |
+| Ronda | 221 | 51,510 | 6 | Andalusia singular trees |
+| Tarragona | 238 | 32,396 | 4 | Catalonia monumental trees |
+| Pamplona | 249 | 128,065 | 6 | Navarra Natural Monuments |
+
+FOR HIDDE: none of the 54 has a photograph, and 99 cities now carry none at all.
+Several of the Catalan entries name a Commons file that already exists and has
+not been looked at, which is the cheapest photo pass available and needs a
+session rather than a night run.
+
 ## 2026-08-31 (continuation of a window whose first attempt shipped 23 trees and stopped early) - Vilnius +2, Cagliari +1, Regensburg opening; a reader submission answered
 
 Followed the harness's own order. **Claims first:** the earlier attempt in this window had left Vilnius claimed but unstarted (empty `vilnius-verified.json`); finished it with a verify pass rather than releasing it. Also picked up Cagliari, which `scout_next.py --target` named as having real unmined register supply. **Vilnius 11 to 13:** the Lazdynai Linden (a small-leaved lime standing wild in the Bukciai forest inside the Lenin-Prize-winning Lazdynai housing estate) and the Dvarcionys Oak (genus only). **Cagliari 9 to 10:** the Common Lime of Corongiu, at a historic 1867 dam site above Sinnai, flagged because the pass could not confirm whether the tree sits on the open public trail or past a fenced section of the waterworks. Both write passes done directly in session (2 and 1 tree, too small for a write-stories dispatch).
@@ -20,6 +71,7 @@ Followed the harness's own order. **Claims first:** the earlier attempt in this 
 **Then dispatched a verify pass to open Regensburg from zero**, the best remaining `openable.py` candidate not already claimed by the other concurrent session (Sapporo, Matera): Bavaria's Naturdenkmal register mixes trees with rocks, caves and ruins, and of 25 candidates within 20km only about 6 are actually trees in range, closest 1.4km. Result not in yet at the time of this entry.
 
 Built, QA'd (clean bar the sandbox's shallow-clone sitemap-lastmod NOTE), preflighted (0 problems) and superlatives-checked (no collisions) after each merge.
+
 
 ## 2026-08-31 (session) - leads.py --ready was mostly declined leads in disguise; Perugia +2, Vienna +2
 

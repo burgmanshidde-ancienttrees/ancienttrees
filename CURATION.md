@@ -10,6 +10,45 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-08-31 - Nine zero cities opened, Matera and Taormina refused on access
+
+Registers used, and what each one does or does not answer:
+
+| Register | Measurements | Age | Vitality | Ownership |
+|---|---|---|---|---|
+| Okinawa hundred notable trees | yes | yes | revoked-certification flag | yes |
+| Andalusia singular trees | yes, full sheet | sometimes, with method | no | yes |
+| Catalonia monumental trees | yes | no | yes | no, but location is specific |
+| Kagoshima / Kanagawa / Miyazaki / Aichi via Hitozato Kyoboku | yes | signboard traditions | no | no |
+| Castilla y Leon notable trees | height yes, trunk column ambiguous | no | no | no |
+| Navarra Natural Monuments | no | no | no | no |
+| Italy MASAF | yes | no | no | no |
+
+Could not verify, kept as leads:
+
+- Matera. 44 register trees within 25 km and no way to answer access: eleven of
+  the seventeen nearest are on a masseria and MASAF has no ownership field. Would
+  open on a Basilicata regional sheet or the Murgia park's own trail list.
+- Taormina. All five trees the register holds inside the comune are in the
+  grounds of the Hotel Excelsior Palace.
+- Yonagusuku's banyan near Naha, 23.5 m round and the largest tree in Okinawa.
+  Owner recorded as a private household.
+- Five Tarragona trees on private mas, including a holm oak 6.45 m round.
+- Most of the trees around Girona: the Catalan register's location field names a
+  mas or a can for the majority, and only seven read as public.
+
+Register pitfalls hit this pass:
+
+- Castilla y Leon's trunk column is labelled diameter and read that way makes
+  AS-SG-07 at La Granja the thickest sequoia in Europe. The column is not quoted
+  anywhere on the Segovia page and the story says why.
+- The Catalan register keeps DEAD trees listed with a vitality note. Several near
+  Girona and Tarragona are marked Mort, with a year, and none is published.
+- Okinawa's register marks certifications that have been REVOKED, which is a
+  different thing again and worth reading before using an entry.
+- Kanazawa's Shogetsuji cherry has two girth figures, 3.5 m from Kodansha and
+  7.81 m from the Environment Agency, and the source that measured both says the
+  larger is impossible for that trunk. Both are printed on the page.
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 

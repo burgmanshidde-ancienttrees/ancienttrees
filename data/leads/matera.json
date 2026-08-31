@@ -1,0 +1,19 @@
+{
+  "city": "Matera", "country": "Italy", "city_slug": "matera",
+  "note": "Scouted 2026-08-31 as one of ten ranked zero cities and NOT published. Matera is #258 with 67,033 demand and the national MASAF register holds 44 monumental trees within 25 km, which is ample supply. It failed on ACCESS, not on trees: eleven of the seventeen nearest sit on a masseria, the fortified private farm that is the standard rural unit here, and MASAF publishes no ownership or access field, so there is no way to answer hard rule 10 from the data the way Andalusia's and Okinawa's registers allow. Three or four candidates look public and none of them could be confirmed. Publishing this city needs one of: a Basilicata regional sheet per tree, the Parco della Murgia Materana's own list of what its trails pass, or a reader who has walked it.",
+  "leads": [
+    {"name": "Pino domestico of Viale Aldo Moro", "species": "Stone Pine (Pinus pinea)", "lat": null, "lng": null, "status": "lead",
+     "why": "MASAF: 290 cm girth, 22 m tall, on Viale Aldo Moro in Matera itself and flagged urban, so it is almost certainly a street tree and publishable. Needs its coordinate read off the register and one confirmation."},
+    {"name": "Pioppo nero of Colle Timmari", "species": "Black Poplar (Populus nigra)", "lat": null, "lng": null, "status": "lead",
+     "why": "MASAF: 420 cm girth, 22 m tall, at Colle Timmari by the Fontana della Madonna, 9.8 km out. Timmari is an archaeological site with a spring, which reads public. Unconfirmed."},
+    {"name": "Gelso bianco of Altamura", "species": "White Mulberry (Morus alba)", "lat": null, "lng": null, "status": "lead",
+     "why": "MASAF: 290 cm girth, 7 m tall, Via Madonna della Croce 117, flagged urban. A street address, so probably reachable, but Altamura is a separate city 19 km away and would belong to its own page rather than Matera's."},
+    {"name": "Pino bruzio of the Oliveto dei Monaci", "species": "Calabrian Pine (Pinus halepensis var. brutia)", "lat": null, "lng": null, "status": "lead",
+     "why": "MASAF: 410 cm girth, 20 m tall, at Montescaglioso, 18.5 km. The name means the monks' olive grove and the abbey of San Michele Arcangelo is beside it, so this may be open ground. Unconfirmed."},
+    {"name": "Olivi of the Fosso di Carpatiello, Ferrandina", "species": "Olive (Olea europaea)", "lat": null, "lng": null, "status": "lead",
+     "why": "Two monumental olives at 550 and 750 cm girth, 23 km southwest. Ferrandina is olive country and these are large even for it. A fosso is a gully; whether there is public access along it is unknown."}
+  ],
+  "blocked": [
+    {"name": "Eleven masseria trees within 25 km", "why": "Ginepro coccolone at Masseria Passarelli (two), Ginepro coccolone at Masseria Selva Teresa, Salice bianco at Masseria Monte Grosso, Roverella at Masseria Lo Russo (496 cm, the thickest oak near Matera), Fragno at Masseria Malvezzi, Cerro at Masseria Malerba, Roverella at Masseria del Pulo, Leccio at the Stabilimento De Laurentis, Quercia castagnara at the Jazzo delle Conche. A masseria is a private working farm and a jazzo a private sheepfold. Hard rule 10 blocks all of them without an owner's invitation."}
+  ]
+}
