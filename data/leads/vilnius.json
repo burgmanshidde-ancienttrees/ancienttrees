@@ -2,19 +2,8 @@
  "city": "Vilnius",
  "country": "Lithuania",
  "city_slug": "vilnius",
- "note": "From the 2026-08-16 register-first verify pass (STVK gpo_bot_t layer). 7 trees verified and delivered to data/research/vilnius-verified.json. Leads failed only the evidence bar, the count, or ran out of the pass's time window; blocked can never ship as they stand. Register source for all: data/registers/lithuania-stvk-gpo.json. Extended 2026-08-17 (verification pass, session-435fb395): 3 trees shipped to data/research/vilnius-verified.json (vln_008 Sapiegos Park Linden, vln_009 Kalnai Park Pine, vln_010 Amur Cork/Crimean Linden group of Bernardinai Garden). Four candidates newly BLOCKED (2 likely-dead register entries, 2 locked-company-grounds trees in Zverynas). Presidential Palace oaks and the Castle Park chestnut circle researched but left as leads on judgement calls (security screening; ensemble-vs-grove read) rather than shipped or blocked.",
+ "note": "From the 2026-08-16 register-first verify pass (STVK gpo_bot_t layer). 7 trees verified and delivered to data/research/vilnius-verified.json. Leads failed only the evidence bar, the count, or ran out of the pass's time window; blocked can never ship as they stand. Register source for all: data/registers/lithuania-stvk-gpo.json. Extended 2026-08-17 (verification pass, session-435fb395): 3 trees shipped to data/research/vilnius-verified.json (vln_008 Sapiegos Park Linden, vln_009 Kalnai Park Pine, vln_010 Amur Cork/Crimean Linden group of Bernardinai Garden). Four candidates newly BLOCKED (2 likely-dead register entries, 2 locked-company-grounds trees in Zverynas). Presidential Palace oaks and the Castle Park chestnut circle researched but left as leads on judgement calls (security screening; ensemble-vs-grove read) rather than shipped or blocked. Extended 2026-08-31 (verify pass): 1 tree shipped (vln_011, Philologists' Birch of Sarbievijaus Courtyard, second source found on flf.vu.lt). CORRECTION: 'The oldest linden' / 'Seniausia liepa' (register 0310505050028, 54.698341/25.30911) is NOT a new tree, it is a duplicate of the already-published vln_008 (Sapiegos Park Linden, 54.698333/25.309083, same tree per its own Lithuanian Wikipedia page 'Sapiegų parko liepa') -- removed from this list rather than left to mislead a future pass. Two Žvėrynas candidates checked: Žvėryno liepa moved to blocked (delisted 2016, deteriorated); Žvėryno pušis stays a lead (no second source found in two search attempts). A passcheck brief this pass also flagged two other 'unmined' register rows that turned out to be exact-coordinate duplicates of already-published trees: the Sereikiškės nine-trunked willow entry (= vln_005) and a second 'Kalnai park pine' register row (= vln_009). Worth checking whether the register-diff logic behind passcheck's brief is comparing rounded coordinates; both were flagged unmined despite being live.",
  "leads": [
-  {
-   "name": "The oldest linden",
-   "name_lt": "Seniausia liepa",
-   "register_id": "0310505050028",
-   "lat": 54.69834,
-   "lng": 25.30911,
-   "status": "lead",
-   "why": "Named exactly like the oldest oak (vln_001) and 2.2km away, so a promising individually-named old tree. Not researched this pass: ran out of time budget before reaching it. Worth a dedicated search next pass (same Lithuanian-Wikipedia-stub pattern that worked for the university courtyard trees is likely to exist).",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
   {
    "name": "Maple circle in the P.Vileisis palace courtyard",
    "name_lt": "P. Vileišio rūmų kiemo Klevų ratas",
@@ -34,24 +23,24 @@
    "why": "Sits about 30m from vln_007 (the three-trunked ash already shipped). Could be the same tree double-registered, a genuine second ash, or the tree that Wikipedia's generic \"Sereikiškių parko uosis\" entry refers to. Register-pitfall twins should fold into one entry; needs a ground check or a clearer source before deciding whether this is a separate tree worth its own page."
   },
   {
-   "name": "Birch of philologists",
-   "name_lt": "Filologų beržas",
-   "register_id": "0310505240003",
-   "lat": 54.68304,
-   "lng": 25.28744,
-   "status": "lead",
-   "why": "In the same Old Town university courtyard cluster as the three shipped trees (vln_002-004), same register pattern (protected since 1996). Only one source found this pass (the register itself); a focused search did not surface a second independent source or a dedicated Wikipedia stub, unlike its neighbours. Worth another search pass, ideally in Lithuanian directly on a university or heritage site rather than general web search.",
-   "species": "Birch (Betula sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kalnai park pine",
+   "name": "Kalnai park pine (register row 0310505020044) -- RESOLVED, duplicate",
    "name_lt": "Kalnų parko pušis",
    "register_id": "0310505020044",
    "lat": 54.6881,
    "lng": 25.29967,
+   "status": "resolved_duplicate",
+   "why": "This register row's coordinates (54.6881, 25.29967) are identical to the already-published vln_009 (The Pine of Kalnai Park, shipped 2026-08-17), so this is that same tree's register row, not a new candidate. Kept in the file rather than deleted so a future pass does not re-open it; passcheck's brief this pass still listed it as 'unmined' despite the exact-coordinate match, which is worth fixing upstream.",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Žvėryno pušis (Žvėrynas pine)",
+   "name_lt": "Žvėryno pušis",
+   "register_id": "0310505020043",
+   "lat": 54.692463,
+   "lng": 25.244651,
    "status": "lead",
-   "why": "Individual named pine, 1.3km from centre in Kalnai (Hill) Park, which has views over the Old Town. Not researched this pass.",
+   "why": "Researched this pass: register-only, one source. Two search attempts (general web search, then a saugomasmedis.lt/register-id-targeted search) found no independent second source naming this specific pine; results kept surfacing the neighbouring Žvėrynas lindens and oak instead (Sėlių/T.Narbuto streets cluster, ~700m-1km north). No address, condition or accessibility information found either. Stays a lead until a second source or a Lithuanian-language heritage/municipal page turns up.",
    "species": "Pine (Pinus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
@@ -240,6 +229,14 @@
    "lat": 54.69879,
    "lng": 25.2422,
    "reason": "Same address as the blocked Žvėrynas six-trunked linden above (Sėlių g. 66, GIS-Centras grounds); no separate access information found this pass, and given the shared address it is presumed to carry the same locked-company-grounds restriction until a source says otherwise. Distinctive clustered-branch ('glaustašakis') crown form, 100+ years old per one web summary, would otherwise be a strong candidate."
+  },
+  {
+   "name": "Žvėryno liepa (Žvėrynas linden, T. Narbuto g. 20)",
+   "name_lt": "Žvėryno liepa",
+   "register_id": "0310505050030",
+   "lat": 54.699754,
+   "lng": 25.244565,
+   "reason": "Likely dead/declined: its own Lithuanian Wikipedia page states it was 'išbraukta iš saugomų medžių sąrašo kaip prastos būklės, sunykusi' (removed from the protected trees list as being in poor condition, deteriorated) per 2016 state cadastre records, and as of July 2014 the site carried no informational sign. Also a private-property edge case even if alive: it stands on the boundary of a residential plot at T. Narbuto g. 20, described as leaning against the plot's fence, though visible from public streets (Gervių, Paribio). The health finding alone is enough to block per the dead-tree pattern already applied to Vilnius's other delisted entries (Šiltadaržio chestnut, Rose Alley ash); do not re-research without evidence of a living, re-listed tree."
   }
  ]
 }

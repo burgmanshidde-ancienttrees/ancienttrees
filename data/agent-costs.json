@@ -4255,6 +4255,20 @@
         "tokens": 0,
         "trees": 0,
         "note": "Wrote the two remaining species intros pagegaps.py flagged (5 and 3 trees), closing the page-gap rung to zero; logged as tokens 0, session work not an agent pass"
+      },
+      {
+        "target": "vilnius",
+        "kind": "verify",
+        "tokens": 45000,
+        "trees": 0,
+        "note": "1 tree shipped (vln_011), 2 register-duplicate/brief errors caught and corrected in leads.json, 1 tree newly blocked (delisted), 1 stays a lead (no second source)"
+      },
+      {
+        "target": "vilnius",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 1,
+        "note": "Wrote and merged vln_011 (The Philologists' Birch of Sarbievijaus Courtyard) directly in session rather than dispatching a full write-stories pass for a single tree; fixed 'ten'/'eight' count promises across intro, meta_description, question_meta/answer/context and 3 FAQ answers to eleven/nine/eight"
       }
     ]
   }
