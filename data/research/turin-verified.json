@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tor_011",
+    "name": "The Downy Oak of the Colle della Maddalena",
+    "species": "Downy Oak (Quercus pubescens)",
+    "age_estimate": "over a century old",
+    "age_min": 100,
+    "age_max": 200,
+    "girth_cm": 415,
+    "location": {
+      "address": "Parco della Rimembranza, Colle della Maddalena, reached from the Strada Comunale San Vito Revigliasco side entrances",
+      "latitude": 45.03042,
+      "longitude": 7.72147,
+      "neighbourhood": "Colle della Maddalena (Circoscrizione 8, Torino hill)"
+    },
+    "verified_sources": [
+      "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+      "https://torinocronaca.it/news/torino/545499/dal-valentino-ai-giardini-reali-dove-trovare-i-16-alberi-monumentali-d-torino.html"
+    ],
+    "access": "Free, in the public Parco della Rimembranza (Comune di Torino, open daily). GTT bus lines 70/73 stop at \"Maddalena\", about a 2 minute walk from the Faro della Vittoria at the top of the park; the tree itself sits on the Revigliasco (southeast) side, reached via one of the park entrances off Strada Comunale San Vito Revigliasco rather than the main Faro entrance.",
+    "transport": "Bus 70 or 73 to the Maddalena stop, then roughly 10-15 minutes on foot into the park depending on entrance used",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register: Regione Piemonte Alberi Monumentali del Piemonte (CC BY 4.0), register_id 001/F335/TO/01, species Quercus pubescens Willd., girth 415cm, height 18m, crown 22m, age_band 100-200, ownership listed as \"Sia pubblica che privata\" (mixed public/private) rather than purely Pubblica like the other Turin register entries. Second, independent source: torinocronaca.it (15 Aug 2025), an Italian local-news survey of Torino's 16 regionally-recognised monumental trees, names this exact tree as \"la Quercia roverella del Parco della Rimembranza sul Colle della Maddalena, quest'ultima un centenario che racconta un secolo di storia cittadina\" (a centenary/century-old oak). Mole24 (mole24.it) independently counts it as Torino's monumental tree #16 per an earlier lead note, but mole24.it is bot-gated (redirects to a captcha challenge page, could not fetch this pass; record as a host that blocks). The register's own coordinate reverse-geocodes (Nominatim) to a road called \"Strada esterna della Vetta della Maddalena\" administratively inside Revigliasco, comune of Moncalieri, NOT Torino, which is presumably why the mixed ownership flag exists and why some counts put Torino at 15 rather than 16 monumental trees. However Parco della Rimembranza itself is confirmed (it.wikipedia.org) as a public park \"of Turin's hill\", over 90 hectares, managed by Comune di Torino, open daily, with 9 public access points including several off Strada Comunale di San Vito Revigliasco, which is the same road the register point sits near. Given the mixed-ownership flag and the administrative-boundary ambiguity at the exact coordinate, set location_precision to approximate rather than confirmed: the visitor should expect to be in the right corner of the park/hillside rather than guaranteed to be standing at the exact trunk. No age beyond \"centenary\"/the register's 100-200 band is available from any source found; do not sharpen further. Alive: torinocronaca piece is dated Aug 2025, about a year old, no death/removal reports found."
+  }
+]
