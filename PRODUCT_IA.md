@@ -99,6 +99,8 @@ The cost: walking is one of the four verbs, and the web now delivers three of th
 
 **Nothing is deleted.** Hidde, same day: "de functie hebben we later dus wel nog nodig voor app dus gooi de info niet weg." `site/src/lib/walks.ts`, `data/walk-routes.json`, `scripts/route_walks.py` and `scripts/walk_planning.py` all stay, with a note at the top of walks.ts saying why, so no future tidy-up reads them as dead code.
 
+**Partially superseded six days later: SEO_GEO_BLUEPRINT.md's Contract K (v1.14, 2026-08-24) put walks back on the web as their own page, `/[city]/walks`.** That page exists for SEO reach (walk-shaped queries a city page cannot answer alone) rather than reopening the in-page walk picker this section retired; the map pill and the "web reads, app walks" reasoning above are otherwise unchanged. What was not reconciled at the time: 93 city pages carried both the app-only pill and a link to their own `/[city]/walks` two paragraphs below it, telling a reader in one breath that routes need the app and handing them a page of routes on the web. Fixed 2026-08-31 (REVIEW.md BLOCKER, same date): the pill now links to the real walks page when one exists, and only falls back to the app for a city that has none.
+
 ## The superseded ruling: walks live INSIDE the city page. Hidde, 2026-08-06
 
 Kept because its two constraints still bind whenever walks come back, on any surface: no walk URLs, and no walk may hide a tree from a crawler.
