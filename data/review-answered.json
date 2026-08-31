@@ -28,6 +28,10 @@
     "2026-08-30": {
       "note": "Fixed the i18n staleness BLOCKER: rewrote the Dutch The Hague, Spanish Malaga and Japanese Kyoto overlays to match their English twins' post-hard-rule-10-removal counts and answers (29/9/17), removed the three stale tree entries, and fixed a same-class stale count inside malaga.json's own English story text. Commit pushed.",
       "at": "2026-08-30T12:32:01+00:00"
+    },
+    "2026-08-31": {
+      "note": "Fixed the walks pill BLOCKER: [city].astro's map pill now links to /[city]/walks instead of claiming 'in the app' whenever that page exists (commit b299c341).",
+      "at": "2026-08-31T18:28:22+00:00"
     }
   }
 }
