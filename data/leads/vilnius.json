@@ -155,7 +155,9 @@
    "lat": 54.703003,
    "lng": 25.491929,
    "status": "lead",
-   "why": "Researched this pass: existence corroborated by a second independent source (vietoves.lt's own Vilniaus rajono savivaldybė natural-heritage catalogue, fetched directly, lists it by name under Medžiai/Vilniaus rajono savivaldybė), but that source gives no age, girth, address or condition, matching the register's own bare entry. Mickūnai is a town in Vilnius DISTRICT municipality (not city), roughly 4km beyond the city boundary and ~12.8km from the register point to the city centre; it has its own railway station on the Vilnius-Ignalina-Turmantas line, so a day trip is plausible, but two attempts (a schedule search and a Moovit fetch that returned no content) could not confirm the door-to-door public transport time against the ~30 minute boundary. Left as a lead rather than shipped or blocked: worth a transit-time check before it could be presented honestly as reachable from Vilnius."
+   "why": "Researched this pass: existence corroborated by a second independent source (vietoves.lt's own Vilniaus rajono savivaldybė natural-heritage catalogue, fetched directly, lists it by name under Medžiai/Vilniaus rajono savivaldybė), but that source gives no age, girth, address or condition, matching the register's own bare entry. Mickūnai is a town in Vilnius DISTRICT municipality (not city), roughly 4km beyond the city boundary and ~12.8km from the register point to the city centre; it has its own railway station on the Vilnius-Ignalina-Turmantas line, so a day trip is plausible, but two attempts (a schedule search and a Moovit fetch that returned no content) could not confirm the door-to-door public transport time against the ~30 minute boundary. Left as a lead rather than shipped or blocked: worth a transit-time check before it could be presented honestly as reachable from Vilnius.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Žudiškių ąžuolas (Zudiskes oak)",
