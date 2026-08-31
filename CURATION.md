@@ -9,6 +9,21 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-08-31 - Reader submission 55 (Amsterdam, GPS-only): no tree found, open question sent
+
+Submission 55 (app "collect" flow, no name/species/why, just GPS 52.39741,4.87394)
+reverse-geocodes to Koivistokade, Minervahaven, Amsterdam-West, a working harbour
+area redeveloped into housing/offices from around 2018. Checked our own LRMB
+import (nearest entries 1.1km away in Westerpark), Amsterdam's own tree WFS (18
+oaks within 200m, none flagged protected, consistent with new street planting),
+OSM Overpass (~85 untagged natural=tree nodes, same pattern), and web search
+(nothing tying a notable tree to this address; the only local hit, Minervahaven's
+"Bomencamping" relocation nursery, is a temporary holding site for trees
+displaced elsewhere, not a fixed specimen at this spot). Nothing verifies, so
+nothing published. Row patched: outcome open_question, reply_text asks for a
+photo or species/size since the location alone did not resolve to a tree. Row
+55 appended to `data/submissions-processed.json`.
+
 ## 2026-08-31 - Maui opens (4 trees); five US register verdicts; California cracked but unlicensed
 
 **Maui, Hawaii, 4 trees, 4 flagged, 4 photos missing.** Opened from the Hawaii Exceptional Trees register (CC0). The Lahaina banyan (1873, sixteen trunks) verified alive on a Honolulu Civil Beat piece of 2026-02-20 and ships with its park still fenced and closed since the August 2023 fire; the pin is the viewing place on Front Street and `access` says so. **Six Lahaina-area register trees are LEADS, not blocked**, in `data/leads/maui.json`: Baldwin House x2, Hale Paahao x4 and the Lahainaluna entrance row. No post-2023 source confirms survival OR death for any of them; the Baldwin Home Museum building is confirmed destroyed, which says nothing about its trees. Do not treat their absence as a verdict. Blocked (9): Wailuku Elementary School grounds, the D.T. Fleming Arboretum grove (private, access unconfirmed, 6 trees, held as leads), a 6.7-mile avenue of rainbow showers which is not one collectible point, the Waikamoi Preserve ohia (restricted), and four bare private street addresses.
