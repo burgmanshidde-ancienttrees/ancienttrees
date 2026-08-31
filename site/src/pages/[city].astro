@@ -311,10 +311,17 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div id="map" class="map"></div>
       <div class="walks" id="walk">
         <div class="map-tools">
-          <a class="map-cta" href="/app" data-app-modal data-ev="walks-app">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="map-cta-ic"><path d="M5 19c0-2.2 1.8-4 4-4h6c2.2 0 4-1.8 4-4s-1.8-4-4-4H9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="5" cy="19" r="2.2" fill="currentColor"/><circle cx="19" cy="5" r="2.2" fill="currentColor"/></svg>
-            <span class="map-cta-text">Walking routes<span class="map-cta-sub">in the app</span></span>
-          </a>
+          {showWalks ? (
+            <a class="map-cta" href={`/${cslug}/walks`} data-ev="walks-app">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="map-cta-ic"><path d="M5 19c0-2.2 1.8-4 4-4h6c2.2 0 4-1.8 4-4s-1.8-4-4-4H9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="5" cy="19" r="2.2" fill="currentColor"/><circle cx="19" cy="5" r="2.2" fill="currentColor"/></svg>
+              <span class="map-cta-text">Walking routes<span class="map-cta-sub">see the routes</span></span>
+            </a>
+          ) : (
+            <a class="map-cta" href="/app" data-app-modal data-ev="walks-app">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="map-cta-ic"><path d="M5 19c0-2.2 1.8-4 4-4h6c2.2 0 4-1.8 4-4s-1.8-4-4-4H9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="5" cy="19" r="2.2" fill="currentColor"/><circle cx="19" cy="5" r="2.2" fill="currentColor"/></svg>
+              <span class="map-cta-text">Walking routes<span class="map-cta-sub">in the app</span></span>
+            </a>
+          )}
           <button type="button" class="map-gps" id="gps-btn" aria-pressed="false" aria-label="Where am I">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="gps-ic"><circle cx="12" cy="12" r="3.2" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
           </button>
