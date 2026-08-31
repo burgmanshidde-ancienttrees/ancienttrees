@@ -1,0 +1,19 @@
+{
+  "city": "Naha", "country": "Japan", "city_slug": "naha",
+  "note": "From the 2026-08-31 pass that opened Naha off Okinawa prefecture's hundred notable trees. That register is the best-documented used this session: species, height, girth, estimated age, owner, coordinate and designation history per tree, and it marks certifications that have been revoked.",
+  "leads": [
+    {"name": "Aza Kadena Ugan no Oo-gajumaru", "species": "Indian Laurel Fig (Ficus microcarpa)", "lat": null, "lng": null, "status": "lead",
+     "why": "Entry 1120 on the prefectural register, at a place of worship in Kadena. Roughly 25 km north of Naha, at the edge of the day-trip boundary. Needs its measurements and owner read off the register page."},
+    {"name": "Uchima Udun no Sawafuji and Fukugi", "species": "Barringtonia racemosa and Garcinia subelliptica", "lat": null, "lng": null, "status": "lead",
+     "why": "Entries 468 and 480, both at Uchima Udun in Urasoe, the same village as nah_005 and about the same distance from Naha. Two more trees at one stop, which would turn Uchima into a walk instead of a single tree. Sawafuji flowers at night and drops the flowers by morning, which is a real season entry if it verifies."},
+    {"name": "Ashibina no Akou and Ashibina no Gajumaru", "species": "Sea Fig (Ficus superba) and Indian Laurel Fig (Ficus microcarpa)", "lat": null, "lng": null, "status": "lead",
+     "why": "Entries 5175 and 294. Two trees at one ashibina, a village dancing ground. Location not yet read off the register."},
+    {"name": "Tome no Gajumaru", "species": "Indian Laurel Fig (Ficus microcarpa)", "lat": null, "lng": null, "status": "lead",
+     "why": "Entry 632, in Yaese, within the day-trip boundary. Needs measurements and an owner check."},
+    {"name": "Gushikami no Fukugi namiki", "species": "Common Garcinia (Garcinia subelliptica)", "lat": null, "lng": null, "status": "lead",
+     "why": "Entry 753, an avenue of fukugi windbreak trees at Gushikami in Yaese. An avenue would have to pass the collectible-point test before it could ship."}
+  ],
+  "blocked": [
+    {"name": "Yonagusuku no Gajumaru", "why": "The largest tree in Okinawa: 23.5 m round, 10.3 m tall, about 250 years, a Yaese town Natural Monument since 1992-04-02, and equal third in Japan for trunk circumference in the Environment Ministry's 2000 survey, though banyans are left out of the official ranking because of the shape of the trunk. The prefectural register records the owner as a private household, so hard rule 10 blocks it: a private home does not bend. Would ship the day the town or the owner confirms public access. Coordinates 26.1413307 / 127.716343, entry 642."}
+  ]
+}
