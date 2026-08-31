@@ -18,6 +18,28 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-31 - Segovia opens: 5 trees, 5 flagged, 5 photos missing
+
+Opened from zero via the Castilla y Leon "arboles notables" register. 1 tree
+in Segovia's own old town (the Cedar of the Plaza de la Merced); 4 in the
+historic gardens of the Palacio Real de La Granja de San Ildefonso, a bus ride
+out (La Reina, a giant sequoia; a Spanish fir; a Douglas fir; a cedar of
+Lebanon). A sixth register candidate, a second sequoia in the same parterre as
+the cedar of Lebanon, was not published: a 2020 news report describes
+Patrimonio Nacional felling a sequoia in that exact spot for root rot, and the
+naming and height match were too close to risk. Recorded in
+`data/leads/segovia.json` as blocked, along with 4 leads for a future pass
+(El Rey, La Reina's paired sequoia; two larger unregistered pinsapos in the
+same gardens; three other Segovia garden sites worth an in-town pass).
+
+All 5 trees flagged: two carry no age at all (the Spanish fir and Douglas fir),
+two carry a broad estimate derived from the gardens' documented mid-19th-century
+planting wave rather than an individual planting date, and La Reina's height is
+reported both ways where the register and the press disagree (42.5m vs 46m).
+No photos found or hunted this pass. The La Granja trip is reported honestly as
+sitting at or just past CLAUDE.md's ~30-minute day-trip boundary (Linecar bus,
+roughly every 45 minutes, 20-35 minute journey) rather than rounded down.
+
 ## 2026-08-31 - Reader submission 55 (Amsterdam, GPS-only): no tree found, open question sent
 
 Submission 55 (app "collect" flow, no name/species/why, just GPS 52.39741,4.87394)
