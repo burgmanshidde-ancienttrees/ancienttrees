@@ -1,6 +1,9 @@
 {
   "leads": [
     {
+      "note": "2026-08-31 deepen pass (verify): shipped 6 trees to data/research/singapore-verified.json, sgp_023-sgp_028 (Temak and Snake Tree from Lawn B/Main Gate Road, West Indian Locust Tree and Chengal Pasir from the Corner House/Cluny Park Way lawn, Kempas from behind Corner House, Johor Fig from the rainforest boardwalk), all extending the existing Botanic Gardens cluster (all within roughly 600m of the core). Two more candidates from the same shortlist, the Ordeal Tree (HT 2019-301) and Hazel Sterculia (HT 2019-307), were checked and BLOCKED: both stand in the National Orchid Garden Nursery, which NParks' own citation states is not accessible to the public. Stopped at 6 per this pass's time-box (~30 min), not because candidates ran out; remaining unmined Lawn B/H/E rows from the earlier leads note (Marsh Pulai HT 2010-183, Jamuju HT 2012-191, Mountain Teak HT 2012-201, Monkey Pot pair HT 2013-214/215) are still open for a future pass."
+    },
+    {
       "note": "Singapore reached its target of 10 total trees this pass (7 already published + 3 shipped: sgp_008 Bodhi Tree of Pearl's Hill, sgp_009 Banyan of Tiong Bahru Park, sgp_010 Earpod Tree of Fort Canning). The remaining ~147 unique register candidates (of 163 within 5km, after removing 13 rows that matched already-published trees by coordinate) were not individually verified this pass, per the brief's 'no more than 10 total' instruction. Listed below are the strongest-looking clusters for a future deepening pass, not individually fetched/verified."
     },
     {
@@ -71,5 +74,26 @@
       "reason": "Fetched and read (heritagetrees.nparks.gov.sg profile: girth 3m @1.3m, height 36.6m, endangered emergent species, buttresses to 6m). Register location_text says 'Lawn O' while the NParks profile page itself says 'near the Fernery' for the same ht_id, a minor internal inconsistency worth a glance on the ground. Set aside this pass only because no genuinely independent second source (beyond the NParks profile and a generic Wikipedia species page for Koompassia malaccensis) turned up in the time available, not because of any evidence problem; a future pass should try iNaturalist observations or a Singapore nature blog before shipping it."
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "ht_id": "HT 2019-301",
+      "name": "Ordeal Tree (Erythrophleum suaveolens)",
+      "location": "Singapore Botanic Gardens, National Orchid Garden Nursery",
+      "coords": [
+        1.31367,
+        103.81393
+      ],
+      "reason": "NParks own citation page states plainly: this Heritage Tree is not accessible to the public (it stands in the working nursery area of the National Orchid Garden, not the visitor garden). Blocked under hard rule 10 (access), not an evidence problem: girth 5.6m, height 28m, more than 100 years old, transplanted from the former Economic Garden before 1920 ahead of the Raffles College development -- all well documented if the access situation ever changes."
+    },
+    {
+      "ht_id": "HT 2019-307",
+      "name": "Hazel Sterculia (Sterculia foetida)",
+      "location": "Singapore Botanic Gardens, National Orchid Garden Nursery",
+      "coords": [
+        1.31315,
+        103.81364
+      ],
+      "reason": "Same nursery as HT 2019-301 (Ordeal Tree), same restriction: NParks states plainly this tree is not accessible to the public. Blocked under hard rule 10. Girth 6.5m, height 33.8m, more than 100 years old, also transplanted from the former Economic Garden before 1920."
+    }
+  ]
 }

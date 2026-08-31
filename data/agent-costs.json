@@ -4128,6 +4128,20 @@
         "tokens": 123290,
         "trees": 8,
         "note": "8 stories written and merged (vlc_017-024); fixed 3 false-positive duplicate flags against the register, dropped 2 superlatives contradicted by register measurements, fixed a species-name mismatch (Platanus hispanica -> Platanus x acerifolia) and internal-id leakage in access text before merge; also wrote the Turkish Pine species page and the Jardi Botanic park page pagegaps.py flagged as newly earned"
+      },
+      {
+        "target": "singapore",
+        "kind": "verify",
+        "tokens": 168511,
+        "trees": 6,
+        "note": "Botanic Gardens Main Gate Road/Corner House/rainforest cluster deepen from the NParks Heritage Tree register; 2 candidates blocked as nursery-restricted (hard rule 10); Wikipedia/PROSEA/NUS academic sources as independent second sources"
+      },
+      {
+        "target": "singapore",
+        "kind": "write",
+        "tokens": 105762,
+        "trees": 6,
+        "note": "6 stories merged (sgp_023-028); fixed a species-name mismatch (Chengal Pasir -> Thai Ironwood, matching Bangkok, hard rule 9); double-checked a flagged NLB 'felling' source before merge and confirmed it describes an unrelated tree (different species, felled 2002 near Changi), not this specimen"
       }
     ]
   }
