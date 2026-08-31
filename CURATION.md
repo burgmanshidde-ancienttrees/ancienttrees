@@ -101,6 +101,46 @@ Also found and fixed along the way: `data/countries/germany.json` said "Four cit
 0 photos, 0 flagged besides the universal age gap. `city_names.py` run (no English exonym, as expected). Build, preflight, qa, superlatives all clean; the walk for the 3-tree Wildensorg cluster will route on the next pass once the live feed knows about Bamberg (route_walks.py reads the published feed, not the local build).
 
 <!-- archive-index -->
+## 2026-08-31 - Kagoshima: 10 trees published, 8 flagged, 7 photos missing
+
+Opened from Kagoshima City's preserved-tree register (38 trees, species, girth at
+1.5 m, height, estimated age, updated 2025-11-25), cross-checked against the
+Hitozato Kyoboku giant-tree database.
+
+Could not verify, kept as leads in data/leads/kagoshima.json:
+
+- The propped black pine Hidde photographed at Ishibashi Memorial Park. Not on the
+  register (no black pine is), no Japanese source names a notable pine at that park
+  or at Gionnosu, and the park opened in April 2000 on reclaimed ground, so the tree
+  was probably planted or transplanted then. Needs the signboard or the park office
+  (Ishibashi Memorial Hall, 099-248-6661).
+- Coordinates for seven register trees. The city publishes street addresses only,
+  and Hitozato Kyoboku carries a coordinate for six Kagoshima trees, not for the
+  rest. Six of the ten published trees are pinned to a shrine or park rather than a
+  trunk and say so.
+- Ages. Six of the ten rest on the city's signboard estimate alone, with no
+  published method behind any of them. The Akou of Yuno's thousand years is the one
+  that matters most and is the least supported; age_min is set at 500 deliberately.
+
+Register pitfalls hit on this pass, for the next person:
+
+- The city lists eight designation numbers (9, 12, 13, 14, 20, 29, 39, 46) as
+  revoked. Number 14, the Ishiki Suwa camphor, is still written up as live on an
+  outside database with a 2018 photograph, so a revoked number is a question rather
+  than a death certificate. Do not write one without checking.
+- The Environment Ministry and the city disagree on girth for both trees where both
+  measured. On the Akou of Yuno the gap (7.40 vs 6.5 m) is explained: two stems fuse
+  a metre up and the ministry recorded only the thicker.
+- data/leads/_famous-japan.json attaches three Commons photographs of Katsushika
+  Hachimangu in Tokyo to Senbon Icho in Tarumizu. The name matching in that file is
+  loose, as its own header warns; treat it as a research list only.
+
+Photo pass: 7 candidates found, 3 approved after viewing (Kamo, the cycad, the
+Terukuni holly), 1 rejected on exposure (Kamo no Kusu 03, underexposed by
+photo_light.py and confirmed by eye). Seven trees have no photograph. Commons has
+nothing at all under the Japanese names of the Yuno akou, the Shiroyama camphor or
+the Kagoshima Shrine camphor, which is a genuine gap rather than an unfinished hunt.
+
 ## 2026-08-29 (session, continuation) - Two more Baarn test submissions, same account as row 41
 
 Rows 43 and 44 (`kind: tree`, city "Baarn", GPS 52.21395,5.29700, `why` empty
