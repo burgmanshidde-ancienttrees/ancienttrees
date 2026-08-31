@@ -4178,6 +4178,42 @@
     "note": "new city file; the banyan written as survival-in-progress behind a fence rather than a recovery story, with the copy agreeing with the access field on all four surfaces.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "charleston",
+    "kind": "verify",
+    "tokens": 110000,
+    "trees": 2,
+    "note": "from-zero US research, Hidde authorised the cost explicitly. Two named trees; the first attempt stalled on a hanging fetch after banking both. Four further sites checked and all four hold only collectively-described oaks, which is how American sources write about trees.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "savannah",
+    "kind": "verify",
+    "tokens": 110000,
+    "trees": 2,
+    "note": "from-zero US research. TWO attempts stalled and banked nothing before a four-candidate brief worked in 55k. Caught the Wormsloe bridge claim: the plantation is 1730s, the famous avenue was planted c.1890-95.",
+    "wasted": 110000,
+    "brief_wrong": true
+   },
+   {
+    "target": "philadelphia",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 1,
+    "note": "from-zero US research, two stalls. One tree banked (Bartram's Ginkgo, oldest ginkgo in America) and still unpublished. Established that the Woodlands' original ginkgo was felled in the 1980s by a caretaker, which kills a candidate and confirms Bartram's significance.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Charleston + Savannah + Sant'Alfio",
+    "kind": "write",
+    "tokens": 140000,
+    "trees": 5,
+    "note": "three sub-four-tree pages under the same-day one-destination-tree ruling. 28k per tree, above target, which is what five trees across three separate pages costs when each needs its own intro, question answer, context and FAQ.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

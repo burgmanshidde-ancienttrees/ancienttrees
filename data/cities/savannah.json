@@ -1,0 +1,94 @@
+{
+  "city": "Savannah",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Two live oaks, and both of them changed what a tree could be here. The Candler Oak, on Drayton Street beside Forsyth Park, was the first single tree in the United States to be given a conservation easement, at a point when cars were parking over its roots. The Wormsloe avenue, fifteen minutes southeast on the Isle of Hope, is four hundred oaks along a mile and a half of dirt road, and it is a good deal younger than the estate it leads to.",
+  "meta_description": "Savannah's Candler Oak was the first tree in the US with its own conservation easement. That, and the four hundred oaks of the Wormsloe avenue.",
+  "question_meta": "Savannah's oldest tree is the Candler Oak beside Forsyth Park, estimated at 300 to 450 years. Where it stands, and how solid that number is.",
+  "question_answer": "The oldest tree in Savannah is the Candler Oak, a southern live oak at 516 Drayton Street in the Historic District, directly beside Forsyth Park, estimated at somewhere between 300 and 450 years. It is free to see from the public sidewalk; the Savannah Tree Foundation fences its root zone, so you look at it from outside the fence rather than walking up to the trunk. The other tree on this page is younger by centuries: the Wormsloe oak avenue was planted in the 1890s, not in the 1730s when the estate behind it was founded.",
+  "question_context": "The Candler Oak's age is the softest fact on this page and worth saying so plainly. Wikipedia gives 350 to 450 years in one place and describes the tree as growing since the 1700s in another, while the Savannah Tree Foundation, which has managed it for forty five years, says it is thought to be over 300. Neither figure comes from a core sample or from a girth-and-growth-rate calculation. They are estimates that have been repeated rather than derived, and live oak ages are overstated more often than not, so treat the top of the range with more caution than the bottom. What has been measured holds up better: the trunk is 17 feet round and the tree stands about 16 and a half metres, and the two published figures for circumference and diameter agree with each other to within rounding. The Wormsloe avenue is the opposite case, an age nobody needs to estimate. Two sources put its planting in the 1890s, by a Jones descendant rather than by the family that founded the plantation in the 1730s, which makes those oaks about 130 years old.",
+  "hero_tree_id": "sav_001",
+  "oldest_tree_id": "sav_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Savannah?",
+      "a": "The Candler Oak on Drayton Street beside Forsyth Park, estimated at 300 to 450 years. The estimates are inherited rather than measured, and no core sample has ever been published, so the range is wide on purpose."
+    },
+    {
+      "q": "Are the Wormsloe oaks from the 1730s?",
+      "a": "No, and this is the most common mistake made about the site. Noble Jones founded Wormsloe in the 1730s and the tabby ruin there is the oldest standing structure in the Savannah area, but the oak avenue was planted in the 1890s by a descendant. The trees are roughly 130 years old."
+    },
+    {
+      "q": "How much does it cost to visit?",
+      "a": "The Candler Oak is free and stands on a public street. Wormsloe is a Georgia state historic site with paid entry: 12 dollars for adults, 9 for seniors, 5.75 for youth and 3.25 for under sixes, plus tax, open daily 9am to 4:45pm."
+    },
+    {
+      "q": "Why is the Candler Oak fenced?",
+      "a": "To keep feet and cars off its root plate. When the Savannah Tree Foundation took the tree on, asphalt from the adjacent hospital lot ran right up to the trunk and cars parked over the roots. Removing the asphalt and fencing the root zone is what saved it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sav_001",
+      "name": "The Candler Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 300 to 450 years (estimates vary)",
+      "age_min": 300,
+      "age_max": 450,
+      "girth_cm": 518,
+      "height_m": 16.5,
+      "location": {
+        "address": "516 Drayton Street, Savannah, GA (adjacent to Forsyth Park, on the former Candler Hospital / Savannah Law School site, now SCAD property)",
+        "latitude": 32.0675,
+        "longitude": -81.096389,
+        "neighbourhood": "Historic District, beside Forsyth Park"
+      },
+      "story": "The first conservation easement granted to a single tree in the United States went to an oak that cars were parking on. Asphalt from the hospital lot next door ran right up around the trunk, vehicles stood over the root plate, and arborists gave the tree about twenty years. The Savannah Tree Foundation lifted the asphalt, pruned it, fenced off the root zone and has looked after it since. Forty five years on it reports the tree thriving.\n\nThe paperwork is oddly slippery for something this well known. One account dates the easement to 1984, the Foundation's own page says 1985, and its size appears as 6,804 linear feet in one source and 6,804 square feet in the other. Same number, different units, nobody has reconciled it.\n\nThe age is softer still. Estimates run from over 300 years to 450 and none of them comes from a core sample; they are figures repeated rather than derived, and live oak ages are habitually overstated. What was measured is the trunk, 17 feet round, and the height, about 16 and a half metres.\n\nIt has stood through the site's whole run of owners: Candler Hospital, then a law school that added cameras and a fence of its own before it closed, and now SCAD. You look at it from the Drayton Street sidewalk, which is what the fence is for.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Candler_Oak_Tree",
+        "https://www.savannahtree.org/what-we-do"
+      ],
+      "access": "Free. Viewable from the public sidewalk on Drayton Street; the tree's root zone is fenced off by the Savannah Tree Foundation to protect it from foot traffic and parking, so visitors view the tree from just outside the fence rather than approach the trunk itself.",
+      "transport": "In Savannah's downtown Historic District, directly beside Forsyth Park; a walkable 15-20 minute stroll from the riverfront/City Market area, no dedicated parking at the site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sav_002",
+      "name": "The Wormsloe Oak Avenue",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 130 years (the avenue itself, not the estate)",
+      "age_min": 125,
+      "age_max": 140,
+      "location": {
+        "address": "Wormsloe Historic Site, 7601 Skidaway Road, Savannah, GA 31406",
+        "latitude": 31.96472,
+        "longitude": -81.070556,
+        "neighbourhood": "Isle of Hope"
+      },
+      "story": "The most photographed thing at Wormsloe is the youngest thing at Wormsloe. Noble Jones took this land in the 1730s alongside Oglethorpe, and the tabby ruin at the far end of the site is the oldest standing structure in the Savannah area. The avenue has nothing to do with that. Two independent sources put its planting in the 1890s, by Wymberley Jones De Renne, a descendant, and one of them says it marked the birth of a sixth-generation Jones. That makes the oaks about 130 years old, which is young for a live oak and long enough for the crowns to have closed overhead completely.\n\nMore than four hundred of them line a mile and a half of dirt road. Planted in two ranks and planted close, so the drive works as a tunnel: the branches meet, the Spanish moss hangs down into the gap, and the light arrives already green. It is the single image most people carry of coastal Georgia, and it was made deliberately, by a Victorian with a plan and a nursery order.\n\nEntry is through the visitor centre and is paid, this being a Georgia state historic site. The avenue starts at the gate, and nothing obliges you to drive it. Walking is the better way to see how carefully it was set out.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Wormsloe_Historic_Site",
+        "https://www.storiesbysoumya.com/wormsloe-historic-site-savannah-georgia/",
+        "https://gastateparks.org/Wormsloe"
+      ],
+      "access": "Paid entry: $12 adults, $9 seniors (62+), $5.75 youth (6-17), $3.25 children under 6, plus tax. Open daily 9:00am to 4:45pm, closed Thanksgiving and Christmas Day. Managed by Georgia Department of Natural Resources as a State Historic Site.",
+      "paid_entry": true,
+      "transport": "By car only, about 15-20 minutes southeast of downtown Savannah on the Isle of Hope; no meaningful public transit to the site.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
