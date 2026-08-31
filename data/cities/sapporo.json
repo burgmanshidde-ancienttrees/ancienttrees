@@ -1,0 +1,235 @@
+{
+  "city": "Sapporo",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Sapporo was laid out on open plain in 1869, so almost nothing here is old by Japanese standards and the trees split into two kinds. There is what was already growing: a hill on the western edge never cleared and now a National Natural Monument, and a willow in a park that stood before the city did. And there is what the settlers brought, planted along new streets or shipped in for a botanical garden. No shrine here is older than the town. Every old tree in Sapporo is a survivor of the plain or an immigrant.",
+  "meta_description": "Sapporo's oldest trees: a 12 metre katsura in a primeval forest inside the city, a willow older than Sapporo itself, and a red oak sent from Harvard.",
+  "question_answer": "The oldest tree in Sapporo is most likely the katsura at Koganeyu, on the road to Jozankei, which a Hokkaido signboard puts at 750 years by tradition. Within the city proper the oldest known is the Ezo willow in Nakajima Park, dated at 200 to 300 years by the Environment Ministry, which means it was standing before Sapporo existed.",
+  "question_meta": "The katsura at Koganeyu, 750 years by tradition, is Sapporo's oldest tree. Why so few trees here are old, and 5 more worth the walk.",
+  "question_context": "Sapporo is a young city and the question has a young answer. The Meiji government began laying the town out on the Ishikari plain in 1869, and until then there was no settlement here to plant anything, which is why Sapporo has none of the ancient shrine trees that carry the answer in most Japanese cities. Two things survived that beginning. Maruyama, a 225 metre hill on the western edge, was never logged and was made a National Natural Monument as primeval forest in 1921; its katsura run to 12 metres round and nobody has dated them. And a willow in Nakajima Park carries an Environment Ministry estimate of 200 to 300 years, which if right means it was mature when the surveyors arrived. The 750 years given for the katsura at Koganeyu is a tradition on a prefectural signboard rather than a measurement. Getting to Nakajima Park: subway to Nakajima Koen, then south to the Minami 14-jo bridge.",
+  "oldest_tree_id": "spr_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Sapporo?",
+      "a": "By tradition the katsura at Koganeyu, given 750 years on a Hokkaido signboard. That is a tradition, not a measurement. The oldest inside the city with a dated estimate is the willow in Nakajima Park, at 200 to 300 years, which puts it here before Sapporo was founded in 1869."
+    },
+    {
+      "q": "Why does Sapporo have so few old trees?",
+      "a": "Because the city is younger than most of the trees on this site. Sapporo was laid out from 1869 on open plain with no prior town, so there are no centuries-old temple or shrine precincts here. What old wood exists is either forest that was never cleared, on Maruyama, or trees the settlers planted and imported."
+    },
+    {
+      "q": "What is a katsura?",
+      "a": "Cercidiphyllum japonicum, a tree with round leaves that turn butter yellow and give off a smell of burnt sugar as they fall. It is the species that grows biggest in Hokkaido's remaining old forest, and the two largest trees on this page are both katsura."
+    },
+    {
+      "q": "Are Sapporo's oldest trees free to visit?",
+      "a": "Five of the six are: Maruyama's forest trails, Hokkaido Shrine's grounds, Nakajima Park, the street beside Gokoku Shrine and the forecourt at Koganeyu are all open and free. The Hokkaido University Botanic Garden charges a small entry fee and is closed out of season."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Three of them, yes. Maruyama and Hokkaido Shrine are next to each other at the west end of the subway line, and Nakajima Park's willow and the poplar by Gokoku Shrine are a few minutes apart. The botanic garden is in the centre and Koganeyu is 25 kilometres out toward Jozankei."
+    }
+  ],
+  "trees": [
+    {
+      "id": "spr_001",
+      "name": "The Katsura of Maruyama",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 1220,
+      "height_m": 27,
+      "location": {
+        "address": "Maruyama, Chuo-ku, Sapporo 064-0959, on the path up the Maruyama river from the Daishido",
+        "latitude": 43.052583,
+        "longitude": 141.310306,
+        "neighbourhood": "Maruyama"
+      },
+      "story": "There is uncut forest 3.7 kilometres from Sapporo station. Maruyama is a 225 metre cone standing on its own at the western edge of the grid, and while everyone knows the park and the zoo at its foot, the hill itself is covered in natural woodland that Japan designated a National Natural Monument in March 1921 under the name Maruyama Primeval Forest. Katsura is the species that gets big in it, particularly on the north side, and this one is 12.2 metres round and 27 metres tall. Follow the path from the Daishido, the gate to the eighty-eight station pilgrimage circuit, up beside what looks like an irrigation channel and is the Maruyama river, and the tree is on the bank; the way the roots gather into the trunk is the thing to look at. Two honest caveats come with it. The Environment Ministry's database lists several katsura here at 12.0, 11.5, 9.5 and 8.4 metres, all of them clusters of stems rather than single trunks, and which record belongs to which tree is not resolvable from the data. The ministry also files this one under a different address and owner, which if correct would put it just outside the protected forest. It is a magnificent tree standing on a boundary in two senses.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/maruyama-katsura.htm",
+        "https://www.city.sapporo.jp/"
+      ],
+      "access": "Free, forest path, open at all times",
+      "transport": "Subway to Maruyama Koen, then about 15 minutes on foot into the forest",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Girth and height from the Environment Ministry's 2007 giant-tree survey, but the source states plainly that it cannot match its individual to a specific ministry record because several katsura of similar size stand nearby and all are multi-stemmed clusters. It also notes the ministry files the tree under a different address and owner, which would place it outside the designated forest. No age published. Both caveats are on the page."
+    },
+    {
+      "id": "spr_002",
+      "name": "The Katsura Fudo of Koganeyu",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "750 years by tradition",
+      "age_min": 200,
+      "age_max": 750,
+      "girth_cm": 1140,
+      "height_m": 20,
+      "location": {
+        "address": "Koganeyu Onsen, Minami-ku, Sapporo 061-2274",
+        "latitude": 42.968222,
+        "longitude": 141.2195,
+        "neighbourhood": "Koganeyu"
+      },
+      "story": "The hot spring came up under this tree, and the tree became the god. Koganeyu sits on the right bank of the Toyohira river on the road up to Jozankei, and its own account says the spring welled out from beneath the katsura. The name given to the tree is not Fudo's katsura but Katsura Fudo, the katsura as Fudo Myoo rather than a tree belonging to him, which is a distinction somebody thought about. There is a torii in front of it and a straw rope round the trunk. It is 11.4 metres round and 20 metres tall, with heavy surface roots, and Hokkaido has listed it as a commemorative protected tree. The 750 years on the board is a tradition and should be read as one. Even the discovery of the spring is disputed: the signboard reads as though the wandering ascetic Jozan found it, as he found Jozankei in 1866, while the hot spring's own website says settlers from Kumamoto came across it around 1883. It is worth noting that the people with the commercial interest tell the duller and more plausible story. The tree stands in the car park by the entrance.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/koganeyu-katsura.htm",
+        "https://www.jozankei.jp/"
+      ],
+      "access": "Free, on the forecourt of the hot spring, visible from the car park",
+      "transport": "About 25 km southwest of central Sapporo on Route 230 toward Jozankei, bus or car",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth, height and the 750-year tradition are from Imada Hideki's 150 Giant and Notable Trees of Hokkaido (2018) and the Hokkaido prefectural signboard at the tree; the age is explicitly a tradition and age_min is set far below it. Listed by Hokkaido as a commemorative protected tree, no natural monument designation. The two conflicting accounts of who found the spring are both reported."
+    },
+    {
+      "id": "spr_003",
+      "name": "The Willow of Nakajima Park",
+      "species": "Ezo Willow (Salix rorida)",
+      "age_estimate": "200 to 300 years",
+      "age_min": 200,
+      "age_max": 300,
+      "girth_cm": 440,
+      "height_m": 15,
+      "location": {
+        "address": "Nakajima Park, Minami 14-jo Nishi 4, Chuo-ku, Sapporo 064-0914",
+        "latitude": 43.04175,
+        "longitude": 141.3545,
+        "neighbourhood": "Nakajima"
+      },
+      "story": "If the estimate is right, this willow was here before Sapporo was. The Environment Ministry puts it at 200 to 300 years, and the city was laid out from 1869, so on the low end it was already a mature tree on open plain when the surveyors ran their first lines. It stands near the Minami 14-jo bridge over the Kamokamo river at the southern end of Nakajima Park, close enough to the road that the source warns drivers not to stare. It has lost its top, so it is shorter than it was, and it is still the biggest tree in a park of 24 hectares. The two authorities disagree about what it is. The park office calls it an Ezo willow, Salix rorida; the Environment Ministry's database files it as a white willow, Salix jessoensis. Nobody has settled it and the page will not pretend to. Nakajima Park is next to Susukino, Sapporo's drinking quarter, and holds a tea house designed by Kobori Enshu and the Hoheikan, the western-style hotel the Meiji colonisation office built, both national Important Cultural Properties. The willow predates them and stands beside a road full of exhaust, in good health.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/nakajima-park-yanagi.htm",
+        "https://www.sapporo-park.or.jp/nakajima/"
+      ],
+      "access": "Free, public park, open at all times",
+      "transport": "Subway Nakajima Koen, then about 8 minutes on foot to the south end",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth, height and the 200 to 300 year range from the Environment Ministry's 2007 giant-tree survey. Species is disputed: Nakajima Park's own management office says Ezo willow (Salix rorida), the Environment Ministry database says white willow (Salix jessoensis). Both are stated on the page and the species field carries the park's own reading, which is the closer authority."
+    },
+    {
+      "id": "spr_004",
+      "name": "The Daimyo Oak of Hokkaido Shrine",
+      "species": "Daimyo Oak (Quercus dentata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 420,
+      "height_m": 24,
+      "location": {
+        "address": "Hokkaido Shrine, Miyagaoka, Chuo-ku, Sapporo 064-8505",
+        "latitude": 43.054583,
+        "longitude": 141.310389,
+        "neighbourhood": "Miyagaoka"
+      },
+      "story": "This shrine was founded before it had a place to stand. In 1869 the Meiji government renamed Ezo as Hokkaido, in order to make it unambiguously part of Japan, and held a ceremony in Tokyo enshrining three deities for the opening of the north. The kami were then carried from Tokyo to Hakodate and on to Sapporo, and it took some moving about before they settled here on the slope facing Maruyama. Emperor Meiji was added as a fourth in 1964. The grounds run to 18 hectares of woodland, and what is striking to anyone arriving from the rest of Japan is that the big trees are kashiwa, the daimyo oak, rather than camphor or cedar. Kashiwa is a northern tree with enormous leaves that go brown and hang on all winter instead of falling, which is why it stands for continuity and why the leaf is used to wrap rice cakes at boys' festival. This one is 4.2 metres round and 24 metres tall, on the path between the third torii and the worship hall, and it is probably the largest here, though the source notes that big kashiwa are scattered all over these grounds and it may have missed one.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/hokkaidojingu-kashiwa.htm",
+        "http://www.hokkaidojingu.or.jp/"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "Subway to Maruyama Koen, about 10 minutes on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth and height from the Environment Ministry's 2007 giant-tree survey. No age published. The source states it identified this as the largest kashiwa in the grounds but cannot be certain, since many stand scattered there, and the page repeats that caveat."
+    },
+    {
+      "id": "spr_005",
+      "name": "The Poplar by Gokoku Shrine",
+      "species": "Lombardy Poplar (Populus nigra 'Italica')",
+      "age_estimate": "100 to 200 years",
+      "age_min": 100,
+      "age_max": 200,
+      "girth_cm": 540,
+      "height_m": 27,
+      "location": {
+        "address": "Minami 14-jo Nishi 5, Chuo-ku, Sapporo 064-0914, on the road beside Sapporo Gokoku Shrine",
+        "latitude": 43.041417,
+        "longitude": 141.354778,
+        "neighbourhood": "Nakajima"
+      },
+      "story": "Sapporo chose a European street tree for a European-looking town. This poplar stands between the carriageway and the pavement along the edge of Gokoku Shrine, and although it is named after the shrine it belongs to the city, which planted it. It is 5.4 metres round and 27 metres tall, with an Environment Ministry estimate of 100 to 200 years, which would put it among the earliest street planting the colonisation office did. Several more of the same size stand along the same stretch. The choice makes sense in context: the Hoheikan a few hundred metres away in Nakajima Park was built by the same office as a western-style hotel, and a Lombardy poplar is about as western as a tree can look, a narrow green exclamation mark of a thing used all over Europe to line roads. Then the motor car arrived and low branches became an obstruction, so everything reaching toward the road was cut back and the long limbs shortened, and what is left is a tree with a strange, pruned outline. It looks perfectly healthy on it. Lombardy poplars are all male clones, propagated from cuttings since the eighteenth century, so this tree has no seedlings anywhere.",
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/sapporo-gokoku-poplar.htm",
+        "https://www.city.sapporo.jp/"
+      ],
+      "access": "Free, on the public street",
+      "transport": "Subway Nakajima Koen, about 10 minutes on foot, next to the Nakajima Park willow",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth, height and the 100 to 200 year range from the Environment Ministry's 2007 giant-tree survey. Named for the shrine it stands beside but owned by Sapporo city, which the source states. The early-street-planting reading is the source's inference, not a documented planting record, and the story frames it as such."
+    },
+    {
+      "id": "spr_006",
+      "name": "The Red Oak of the Botanic Garden",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "about 125 years",
+      "age_min": 110,
+      "age_max": 140,
+      "girth_cm": 450,
+      "height_m": 32,
+      "location": {
+        "address": "Hokkaido University Botanic Garden, Kita 3-jo Nishi 8, Chuo-ku, Sapporo 060-0003",
+        "latitude": 43.063472,
+        "longitude": 141.342389,
+        "neighbourhood": "Kita 3-jo Nishi"
+      },
+      "story": "This tree was posted from Massachusetts. The Hokkaido University Botanic Garden, set up on William Clark's recommendation, took delivery of a northern red oak from Harvard's Arnold Arboretum in the middle Meiji period, roughly 130 years ago, and it is now 32 metres tall on a trunk 4.5 metres round and is very probably the largest of its species in Japan. Red oak is North American, so every one in this country arrived the same way, in somebody's luggage or a crate. What makes the garden worth the entry fee is not really the individual trees. It sits 700 metres from Sapporo station in the middle of a city laid out on a grid, and going through the gate is an abrupt change: outside is a wide ordinary street and inside is bright, closed woodland on the original ground, so completely unlike its surroundings that the source describes it as feeling like a jump through space. The oak goes deep red in autumn, which is what the garden's own board points out about it, and it is used here as the garden's representative tree. There is no visitor car park, and the garden shuts out of season.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the leaves turn deep red",
+        "kind": "autumn colour"
+      },
+      "verified_sources": [
+        "http://www.hitozato-kyoboku.com/hokudai-bg-akanara.htm",
+        "https://www.hokudai.ac.jp/fsc/bg/"
+      ],
+      "access": "Paid entry to the botanic garden, a small fee; closed outside the open season and no visitor parking",
+      "paid_entry": true,
+      "transport": "About 10 minutes on foot southwest from JR Sapporo station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Girth, height and the 125-year age from Imada Hideki's 150 Giant and Notable Trees of Hokkaido (2018). The Arnold Arboretum origin and the North American range are from the garden's own signboard as reported by the source. The pin is the garden entrance, not the tree, which stands inside grounds of some size. Largest-in-Japan is the source's judgement, not a measured national ranking."
+    }
+  ]
+}
