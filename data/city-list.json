@@ -741,14 +741,6 @@
    "trees": 6
   },
   {
-   "city": "Philadelphia",
-   "country": "United States",
-   "slug": "philadelphia",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
    "city": "Bilbao",
    "country": "Spain",
    "slug": "bilbao",
@@ -1125,6 +1117,14 @@
    "status": "published",
    "demand_views_90d": 180145,
    "trees": 4
+  },
+  {
+   "city": "Philadelphia",
+   "country": "United States",
+   "slug": "philadelphia",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
   },
   {
    "city": "Ferrara",
