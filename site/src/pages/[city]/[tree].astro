@@ -276,17 +276,25 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <dt>Access</dt><dd>{tree.access ?? ""}</dd>
       <dt>Getting there</dt><dd>{tree.transport ?? ""}</dd>
     </dl>
-    <h2>Trees nearby</h2>
-    <div class="near-cards">
-      {nearby.map((t) => (
-        <a class="near-card" href={`/${cslug}/${tslugs[t.id]}`}>
-          <b>{t.name}</b>
-          <span>{t.age_estimate ?? ""} · {distLabel({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! })} away</span>
-        </a>
-      ))}
-    </div>
+    {nearby.length > 0 && (
+      <Fragment>
+        <h2>Trees nearby</h2>
+        <div class="near-cards">
+          {nearby.map((t) => (
+            <a class="near-card" href={`/${cslug}/${tslugs[t.id]}`}>
+              <b>{t.name}</b>
+              <span>{t.age_estimate ?? ""} · {distLabel({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! })} away</span>
+            </a>
+          ))}
+        </div>
+      </Fragment>
+    )}
     <div class="cta">
-      Curious what else is standing in {cityName}? See <a href={`/${cslug}`}>all {allTrees.length} remarkable ancient trees in {cityName}</a> or find out <a href={`/${cslug}/oldest-tree`}>what the oldest tree in {cityName} is</a>.
+      {allTrees.length > 1 ? (
+        <Fragment>Curious what else is standing in {cityName}? See <a href={`/${cslug}`}>all {allTrees.length} remarkable ancient trees in {cityName}</a> or find out <a href={`/${cslug}/oldest-tree`}>what the oldest tree in {cityName} is</a>.</Fragment>
+      ) : (
+        <Fragment>This is the one entry on the map for {cityName} so far. See it on <a href={`/${cslug}`}>the {cityName} page</a>.</Fragment>
+      )}
       {spSlug && <Fragment> It is a {spCommon}; see <a href={`/species/${spSlug}`}>every {spCommon.toLowerCase()} on the site</a>.</Fragment>}
       {parkPage && <Fragment> It stands in <a href={`/parks/${parkPage.slug}`}>{parkPage.name || parkPage.park}</a>, which has more.</Fragment>}
     </div>
