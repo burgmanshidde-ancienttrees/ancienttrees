@@ -9,6 +9,34 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-31 - Both Gionnosu pines go live, on a map survey and an open question
+
+Hidde said put them live, so kag_011 and kag_012 are published with no age at
+all. That is the 2026-08-13 publish-and-ask rule applied to the field it was
+written for: neither tree has a girth anywhere, so nothing can be derived, and
+the pages say plainly that nobody has dated them and ask the reader. Kagoshima
+is 12 trees.
+
+The evidence for both is a single OpenStreetMap survey from 20 June 2025, which
+is thin and is labelled as thin. What makes it worth something is the contrast
+rather than the tag: of 113 trees mapped along that shore, 111 are avenue trees
+and exactly two are denotation=landmark. Both are pines. One is Hidde's, a
+propped Japanese black pine on the Gionnosu lawn beside the relocated stone
+bridges, corroborated by his own photograph. The other is 700 m up the Iso road
+and carries a name, Ryukyusen no mejirushi matsu, the pine the Ryukyu ships
+steered by, on a Pinus luchuensis whose range starts several hundred kilometres
+south. That name is on no Japanese page, in no register and in no history we can
+find, so the story says so in as many words.
+
+Correction to yesterday's reasoning against the black pine, which was wrong on
+its facts: Ishibashi Memorial Park opened in April 2000, but ja.wikipedia says it
+was laid out on the Gionnosu battery built under Shimazu Nariakira. The ground is
+an Edo-period embankment, not land made in 1999, so "probably planted with the
+park" was a guess resting on a false premise.
+
+FOR HIDDE: one photograph of either signboard closes both of these. The pin, the
+species and the setting are all we have; an age and a name are one board away.
+
 ## 2026-08-31 - Kagoshima opens on 10 trees, off a municipal register nobody had looked at
 
 Hidde sent a photograph from Kagoshima and asked for the city. It was not in the

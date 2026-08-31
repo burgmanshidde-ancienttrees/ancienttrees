@@ -5,7 +5,7 @@
   "intro": "Kagoshima keeps its own list. Since 1974 the city has designated preserved trees one at a time, measured each at 1.5 metres and put a signboard at its foot, so the ages here come from a municipal register rather than from folklore. Number one is a camphor at Kagoshima Shrine. Number eight is a subtropical fig on the flank of an active volcano that the sign dates at a thousand years. Above the harbour, Shiroyama was fenced off for most of the Edo period and never cleared. An hour north stands the largest tree in Japan.",
   "meta_description": "Kagoshima's ancient trees: a thousand-year fig on Sakurajima, the cycad that gave botany its first plant sperm, and Japan's largest tree an hour north.",
   "question_answer": "The oldest tree in Kagoshima is the Akou of Yuno, a subtropical fig on the eastern flank of Sakurajima, which the city's own preserved-tree signboard dates at about 1,000 years. It stands in the hamlet of Yuno in Higashi-Sakurajima, reached by the 15-minute ferry from central Kagoshima and a local bus.",
-  "question_meta": "The Akou of Yuno on Sakurajima, about 1,000 years old, is Kagoshima's oldest tree. Where it stands, how the age is dated, and 9 more remarkable trees.",
+  "question_meta": "The Akou of Yuno on Sakurajima, about 1,000 years old, is Kagoshima's oldest tree. Where it stands, how the age is dated, and 11 more remarkable trees.",
   "question_context": "Kagoshima's ages come from an unusually concrete place. Under a 1974 ordinance the city designates individual preserved trees, records trunk circumference at 1.5 metres, height and an estimated age for each, and posts that estimate on a board at the tree. The Akou of Yuno is preserved tree number 8, and its board gives about 1,000 years, roughly three times the next oldest figure on the list. Nothing behind that number is a ring count and the city does not publish its method, so treat it as an official estimate. The Environment Ministry measured the same tree at 6.5 metres around against the city's 7.4, most likely because it recorded only the thicker of two stems that fuse a metre above the ground. If a day trip counts, an older tree stands an hour north in Aira: the Great Camphor of Kamo was already worshipped as sacred when the shrine beside it was founded in 1123. Getting to Yuno: the Sakurajima ferry runs around the clock and takes 15 minutes, then a local bus toward Higashi-Sakurajima.",
   "oldest_tree_id": "kag_009",
   "faq": [
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Kagoshima's ancient trees free to visit?",
-      "a": "Yes, all ten. Seven stand in public parks or on shrine grounds in the city, one is on a lane through a Sakurajima hamlet, and the two out-of-town trees are on open shrine ground. None charges entry."
+      "a": "Yes, all twelve. Nine stand in public parks, on shrine grounds or beside a public road in the city, one is on a lane through a Sakurajima hamlet, and the two out-of-town trees are on open shrine ground. None charges entry."
     },
     {
       "q": "What is an akou tree?",
@@ -27,7 +27,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "Most of them. Four sit within a kilometre of Terukuni Park and Shiroyama in the city centre. Four more make a second walk of about two kilometres along the northern waterfront, from Nanshu Shrine down through Tagayama Park to the stone bridges at Gionnosu. Sakurajima and Kamo are separate trips."
+      "a": "Most of them. Four sit within a kilometre of Terukuni Park and Shiroyama in the city centre. Six more make a second walk of about two and a half kilometres along the northern waterfront, from Nanshu Shrine down through Tagayama Park to the stone bridges at Gionnosu and on up the Iso coast road. Sakurajima and Kamo are separate trips."
     }
   ],
   "trees": [
@@ -364,6 +364,65 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "notes": "Day trip, not a Kagoshima city tree: it stands in Aira, about 25 km north, and the page says so. Designated a Special Natural Monument on 29 March 1952. Measurements agree across the prefecture's own page and the shrine's, both citing the Environment Agency's 1988 survey."
+    },
+    {
+      "id": "kag_011",
+      "name": "The Propped Pine of Gionnosu",
+      "species": "Japanese Black Pine (Pinus thunbergii)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Gionnosu, Shimizu-cho, Kagoshima 892-0816, on the lawn beside Ishibashi Memorial Park",
+        "latitude": 31.6052311,
+        "longitude": 130.5703606,
+        "neighbourhood": "Gionnosu"
+      },
+      "story": "Kagoshima protects 38 trees by name and not one of them is a pine. That is strange in a port city on a volcanic bay, where the black pine is the tree the whole coast is planted with. This one stands on the lawn at Gionnosu, on the old battery embankment beside the relocated stone bridges, and it is held up. A dozen wooden props carry limbs that run almost horizontally out from a short trunk, in the shape a garden pine only takes after decades of being trained into it. Somebody thought it was worth the trouble. When a surveyor mapped the trees of this park in June 2025, every other one went down as an avenue tree and this one alone was marked a landmark. Past that there is nothing. It is on no register, no Japanese page names it, and we have found no age, no girth and no planting date. The ground under it is older than the lawn suggests: the park opened in April 2000, but it was laid out on the Gionnosu battery built under Shimazu Nariakira, so a coastal pine standing here could be considerably older than the park around it. If you have stood in front of it, tell us what the board says.",
+      "verified_sources": [
+        "https://www.openstreetmap.org/node/12814173957",
+        "https://ja.wikipedia.org/wiki/%E7%9F%B3%E6%A9%8B%E8%A8%98%E5%BF%B5%E5%85%AC%E5%9C%92"
+      ],
+      "access": "Free, open park lawn",
+      "transport": "About 18 minutes on foot from JR Kagoshima Station, in the Gionnosu park strip next to Ishibashi Memorial Park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "No age, girth or height is recorded anywhere we can find, and the page says so rather than estimating: there is no girth measurement to derive one from. Species and position come from OpenStreetMap node 12814173957, surveyed 2025-06-20, tagged natural=tree, species=Pinus thunbergii, denotation=landmark. It is the only tree in that park not tagged as an avenue tree. Corroborated as a real, propped, wide-crowned pine on that lawn by a photograph sent to us on 2026-08-31. Not among Kagoshima City's 38 preserved trees; no black pine is."
+    },
+    {
+      "id": "kag_012",
+      "name": "The Pine the Ryukyu Ships Steered By",
+      "species": "Ryukyu Pine (Pinus luchuensis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Beside the Kamihonmachi-Iso coast road, Yoshino-cho, Kagoshima 892-0871",
+        "latitude": 31.6087113,
+        "longitude": 130.5744349,
+        "neighbourhood": "Yoshino-cho"
+      },
+      "story": "Its name says it was the mark the Ryukyu ships steered by. Ryukyusen no mejirushi matsu stands on the coast road north of Gionnosu, facing out across Kinko Bay, and the name is a claim about four centuries of shipping. Satsuma took the Ryukyu kingdom in 1609 and ran its trade with China through this bay for the next two and a half centuries, so ships coming up from Okinawa made their landfall along this shore, and a conspicuous tree at the water's edge is exactly what a pilot steers on. The species is the strange part. It is recorded as Pinus luchuensis, the Ryukyu pine, whose natural range is Okinawa and the Amami islands, several hundred kilometres south of here. Whether that is coincidence, or whether somebody put a southern pine here on purpose as a mark for southern ships, we cannot tell you. Everything beyond the species and the position comes from the name itself. It appears on no Japanese page we can find, in no register, and in no history we have read: the only record of it is a survey note left on the map in June 2025. Nobody has dated it either. If you know the story behind the name, or there is a board at the foot of it, we would like to hear.",
+      "verified_sources": [
+        "https://www.openstreetmap.org/node/12843461914"
+      ],
+      "access": "Free, standing beside a public road on the seafront green strip",
+      "transport": "On the Kamihonmachi-Iso coast road toward Sengan-en, about 25 minutes on foot from JR Kagoshima Station, or any bus along the Iso road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single-sourced, and the source is a volunteer map survey: OpenStreetMap node 12843461914, surveyed 2025-06-20, tagged natural=tree, name 琉球船の目印松, species=Pinus luchuensis, denotation=landmark. Nothing corroborates the name, the species or the position, which is why the pin is marked approximate; it puts you on the right 50 metres of coast road, where there is one conspicuous pine. No age, girth or height is recorded anywhere, and the page asks rather than estimates. Published under the publish-and-ask rule: an unverified name is a question for a reader, not a reason to withhold a real tree."
     }
   ]
 }
