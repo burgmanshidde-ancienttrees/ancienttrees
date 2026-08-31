@@ -169,13 +169,16 @@ struct TreeMap: UIViewRepresentable {
         }
         map.delegate = context.coordinator
         map.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        // Only once somebody has ALREADY said yes. MapLibre asks the system for
+        // Only once somebody has ALREADY said yes, and this line matters more
+        // since 2026-08-31 rather than less. MapLibre asks the system for
         // authorisation the moment this is set, which put the location dialog
-        // over the map on first launch and took the ask away from
-        // LocationPrimer, whose whole job is to explain why before the system
-        // asks. MapKit happened not to prompt here, so this is a difference the
-        // port introduced rather than inherited, found by looking at the
-        // screenshot (2026-08-23).
+        // over the map on first launch; MapKit happened not to, so the port
+        // introduced it rather than inherited it (found in a screenshot,
+        // 2026-08-23). The screen that used to explain why beforehand is gone,
+        // and the ask now belongs to the "Location off" chip on the map, which
+        // somebody taps on purpose. Without this guard the system would get in
+        // first, on launch, with no reason given, which is the one outcome
+        // both designs were built to avoid.
         let status = CLLocationManager().authorizationStatus
         map.showsUserLocation = (status == .authorizedWhenInUse || status == .authorizedAlways)
         map.logoView.isHidden = true          // our own attribution sits in the sheet

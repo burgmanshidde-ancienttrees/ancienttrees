@@ -143,6 +143,40 @@ final class FlowWalk: XCTestCase {
             // Settings, all the way down, because the two most destructive
             // controls in the app live at the bottom of it and both must ask
             // first rather than act.
+            // THE ROUTE TO DELETING AN ACCOUNT, walked because it went missing.
+            //
+            // Between 2026-08-21 and 2026-08-31 there was no way to open the
+            // Account sheet at all. The row that set `showingAccount` was
+            // deleted along with the card it lived in, and the sheet and its
+            // Delete account button stayed in the build, unreachable, for ten
+            // days. Nothing here noticed, and build 7 went to App Review with
+            // our own notes promising deletion under Settings.
+            //
+            // Guideline 5.1.1(v) requires an app that can create an account to
+            // delete one from inside the app, and a reviewer taps it, so this
+            // is a release blocker rather than a missing convenience.
+            //
+            // THE TAP IS THE ASSERTION. A step whose button does not exist
+            // fails the test, which is the whole of what those ten quiet days
+            // needed. It stops at Cancel: a walk that actually deleted the
+            // account would pass once and then have nothing left to walk.
+            Flow(name: "delete-account-route",
+                 args: ["-tab=2", "-settings"] + signedIn, steps: [
+                Step(name: "open-account") {
+                    $0.buttons["settings-account"].firstMatch.tap()
+                },
+                Step(name: "delete-asks-first") {
+                    $0.buttons["Delete account"].firstMatch.tap()
+                },
+                Step(name: "cancel") { $0.buttons["Cancel"].firstMatch.tap() },
+                // AND IT STOPS THERE. Closing the sheet was a fourth step and
+                // it is gone: neither "Done" nor an identifier put on that
+                // Button can be found, because an identifier set inside a
+                // ToolbarItem does not reach the element XCUITest sees. The
+                // property it was meant to prove is asserted anyway, after
+                // every step, by the way-back invariant this file exists for.
+            ]),
+
             Flow(name: "settings-bottom", args: ["-tab=2", "-settings"] + signedIn, steps: [
                 Step(name: "scroll-to-the-bottom") { $0.swipeUp(); $0.swipeUp() },
                 Step(name: "sign-out-asks-first") { $0.buttons["Sign out"].firstMatch.tap() },
