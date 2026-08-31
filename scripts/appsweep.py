@@ -29,7 +29,7 @@ row of chips runs off the edge. A layout that survives the SE survives anything.
 It is created on demand: the simulator list on this Mac has no SE by default.
 
 WHY LAUNCH ARGUMENTS RATHER THAN TAPS. simctl cannot tap. Every screen in this
-app is reachable with -tab, -open, -signin, -paywall, -primer and -contribute,
+app is reachable with -tab, -open, -signin, -paywall and -contribute,
 which is debug scaffolding that exists for exactly this reason. A screen that
 cannot be opened by an argument is a screen that ships unseen, so when you add
 one, add its argument too.
@@ -56,6 +56,142 @@ DEVICES = [
     ("iPhone SE (sweep)", "com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation"),
     ("iPhone 17 Pro", "com.apple.CoreSimulator.SimDeviceType.iPhone-17-Pro"),
 ]
+
+# THE BIG PHONE IS NOT THE SAME PHONE ON EVERY RUNTIME, and simctl says no
+# rather than approximating: creating an iPhone 17 Pro on iOS 18.6 exits 147,
+# because that phone did not exist when that OS shipped. Found the first time
+# the layout gate was pointed at the floor (2026-08-31).
+#
+# So the wide end is an INTENT with a preference order rather than one model.
+# The first entry is today's baseline and is kept first deliberately: changing
+# which phone the newest runtime measures would move every DRIFT threshold in
+# layout_rules.py for a reason that has nothing to do with the app.
+#
+# The narrow end needs no list. The SE 3rd generation is 375 points, is the
+# width the website's own fit check uses, and exists on every runtime this app
+# supports.
+WIDE_PREFERENCE = [
+    "iPhone 17 Pro",
+    "iPhone 17 Pro Max",
+    "iPhone 16 Pro Max",
+    "iPhone 16 Plus",
+    "iPhone 15 Pro Max",
+]
+NARROW = "iPhone SE (3rd generation)"
+
+# THE OLDEST iOS WE PROMISE TO RUN ON.
+#
+# IPHONEOS_DEPLOYMENT_TARGET is 18.0, so the App Store tells people this app
+# works on everything from iOS 18 upward. Until 2026-08-31 it had only ever
+# been run on whatever runtime this Mac happened to have, which was 26.5, and
+# CI was worse: ios.yml asks for the NEWEST platform every time. Two majors of
+# surface nobody had looked at once.
+#
+# What lives in that gap is not missing APIs. The compiler already checks those
+# against the floor, and it fails the build rather than surprising anybody. It
+# is BEHAVIOUR, and this project has already been bitten by exactly one: iOS 26
+# draws a control-anchored confirmationDialog as a popover and silently drops
+# every button carrying role .cancel, where iOS 18 draws an action sheet and
+# keeps it. Same code, different phone, a destructive dialog with no way out.
+# That class of fault is invisible to every other check here.
+#
+# Testing the floor and the newest is the ordinary practice and it is enough: a
+# fault that survives both ends rarely hides in the middle. Install it with
+# `xcodebuild -downloadPlatform iOS -buildVersion 18.6` (about 9 GB).
+FLOOR = "18"
+
+
+def runtimes():
+    """Installed iOS runtimes, newest first, as (version, id, {name: type id}).
+
+    The third element is what that runtime can actually make, which has to be
+    asked rather than assumed: a runtime refuses a phone newer than itself.
+    """
+    out = sh("xcrun", "simctl", "list", "runtimes", "-j").stdout
+    found = []
+    for r in json.loads(out).get("runtimes", []):
+        if not r.get("isAvailable"):
+            continue
+        if not r.get("identifier", "").startswith(
+                "com.apple.CoreSimulator.SimRuntime.iOS-"):
+            continue
+        types = {t["name"]: t["identifier"]
+                 for t in r.get("supportedDeviceTypes", [])}
+        found.append((r["version"], r["identifier"], types))
+    found.sort(key=lambda v: [int(x) for x in v[0].split(".")], reverse=True)
+    return found
+
+
+def phones_for(types):
+    """The narrow phone and the wide one this runtime can actually create.
+
+    Returns [(label, devicetype id)]. The label names the phone that will be
+    made, never the one that was asked for: a log line reporting a device it
+    did not use is the exact fault just fixed in refused.py.
+    """
+    out = []
+    if NARROW in types:
+        out.append(("iPhone SE (sweep)", types[NARROW]))
+    for name in WIDE_PREFERENCE:
+        if name in types:
+            out.append((name, types[name]))
+            break
+    return out
+
+
+def sweep_devices(os_filter=None):
+    """Every phone the sweep walks, as (name, devicetype, runtime id).
+
+    The name carries the OS version, because the same model on two runtimes is
+    two different phones and their screenshots have to land in two different
+    files. Without that the second run silently overwrites the first and the
+    sweep halves itself while still printing a full count.
+
+    The default is EVERY installed runtime rather than the newest, which is the
+    whole point: a check somebody has to remember to ask for is a check that
+    gets skipped on a short window. `--os 26` narrows it when the doubled wall
+    clock is not worth it.
+    """
+    rts = runtimes()
+    if not rts:
+        raise SystemExit("appsweep: no iOS simulator runtime is installed")
+    if os_filter == "newest":
+        # For the jobs that run on every push. A GitHub runner image can carry
+        # an older runtime from an older Xcode, and with no filter this list
+        # would silently double there, on a step whose per-test timeout is
+        # already the thing that turns the gate red. The floor is covered by a
+        # job of its own; these two ask for one end on purpose.
+        rts = rts[:1]
+    elif os_filter:
+        want = os_filter.split(".")[0]
+        rts = [r for r in rts if r[0].split(".")[0] == want]
+        if not rts:
+            raise SystemExit(
+                "appsweep: no iOS %s runtime installed. Installed: %s"
+                % (os_filter, ", ".join(r[0] for r in runtimes())))
+    out = []
+    for version, ident, types in rts:
+        for name, devicetype in phones_for(types):
+            out.append((f"{name} iOS {version}", devicetype, ident))
+    return out
+
+
+def floor_note(os_filter=None):
+    """Say out loud when the floor is not being tested.
+
+    Silence here would be the same failure the OS gap already was: a sweep that
+    walks only the newest runtime and reports a clean result reads as "the app
+    is fine", when what it means is "the app is fine on one of the two ends we
+    promise".
+    """
+    if os_filter and os_filter != "newest" and os_filter.split(".")[0] != FLOOR:
+        return
+    if any(r[0].split(".")[0] == FLOOR for r in runtimes()):
+        return
+    print(f"  NOTE: no iOS {FLOOR} runtime installed, so the oldest OS this app "
+          f"claims to support is NOT being tested.")
+    print(f"  Install it with: xcodebuild -downloadPlatform iOS "
+          f"-buildVersion {FLOOR}.6")
 
 # Amsterdam. A fixed origin keeps the sweep off the location dialog (which
 # simctl cannot dismiss, and which would then sit over every later screenshot)
@@ -131,6 +267,20 @@ def screens(sub):
         # argument can open, and the check below now refuses it.
         ("collection-tab", ["-tab=2"], 4),
         ("profile",       ["-tab=2", "-settings"], 5),
+        # THE SAME SCREEN SIGNED IN, and it is a different screen.
+        #
+        # Added 2026-08-31. "profile" above opens Settings SIGNED OUT, so every
+        # row that only exists for somebody with an account had never been
+        # photographed once: the identity card, sign out, and the Account row
+        # that is the only route to deleting an account. That row was removed
+        # on 2026-08-21 and nobody saw it go, through ten nights of sweeps and
+        # a nightly reviewer, because it was never in the picture to begin with.
+        #
+        # A screen no argument can open ships unseen, which this file already
+        # says. A screen whose SIGNED-IN HALF no argument can open ships half
+        # unseen, and the half nobody looks at is the half with the account in
+        # it.
+        ("profile-signed-in", ["-tab=2", "-settings", "-signed-in"], 6),
         ("tree",          ["-tab=0", f'-open=tree:{sub["tree"]}'], 6),
         ("tree-nophoto",  ["-tab=0", f'-open=tree:{sub["tree_nophoto"]}'], 5),
         ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 5),
@@ -149,7 +299,6 @@ def screens(sub):
         # rots, and this one comes back the day custom SMTP exists.
         ("signin-email",  ["-tab=0", "-signin", "-show-email"], 5),
         ("paywall",       ["-tab=0", "-paywall"], 5),
-        ("primer",        ["-tab=0", "-primer"], 5),
         # The way back after a refusal. It cannot be reached any other way here,
         # because a simulator will not deny a permission on request from inside
         # a sweep, so without this argument the screen ships unlooked at.
@@ -178,14 +327,23 @@ def screens(sub):
     return plan
 
 
-def udid_for(name, devicetype):
+def udid_for(name, devicetype, runtime=None):
+    """The simulator called `name`, made on `runtime` if it is not there yet.
+
+    Matching stays on the name alone, which is safe because sweep_devices()
+    puts the OS version in the name: two runtimes cannot collide on one name
+    the way "iPhone SE (sweep)" on 18.6 and on 26.5 would have.
+    """
     out = sh("xcrun", "simctl", "list", "devices", "-j").stdout
-    for runtime, devices in json.loads(out)["devices"].items():
+    for _runtime, devices in json.loads(out)["devices"].items():
         for d in devices:
             if d["name"] == name and d.get("isAvailable"):
                 return d["udid"]
     print(f"  creating {name}")
-    return sh("xcrun", "simctl", "create", name, devicetype).stdout.strip()
+    args = ["xcrun", "simctl", "create", name, devicetype]
+    if runtime:
+        args.append(runtime)
+    return sh(*args).stdout.strip()
 
 
 def booted(udid):
@@ -342,6 +500,9 @@ def main():
     ap.add_argument("--no-build", action="store_true")
     ap.add_argument("--only", default=None, help="one screen name")
     ap.add_argument("--device", default=None, help="one device name")
+    ap.add_argument("--os", default=None, dest="os_filter",
+                    help="one iOS major version, e.g. 18. Omit it and every "
+                         "installed runtime is walked, floor included.")
     ap.add_argument("--check-lists", action="store_true",
                     help="only check that appsweep and SweepFrames agree")
     args = ap.parse_args()
@@ -368,7 +529,11 @@ def main():
 
     sub = pick_subjects()
     plan = [s for s in screens(sub) if not args.only or s[0] == args.only]
-    devices = [d for d in DEVICES if not args.device or d[0] == args.device]
+    all_devices = sweep_devices(args.os_filter)
+    floor_note(args.os_filter)
+    devices = [d for d in all_devices
+               if not args.device or d[0] == args.device
+               or d[0].rsplit(" iOS ", 1)[0] == args.device]
 
     # A NAME THAT MATCHES NOTHING IS A TYPO, NOT AN EMPTY SWEEP.
     #
@@ -380,14 +545,14 @@ def main():
     # being reported as the quietest.
     if not devices:
         sys.exit("no device called %r. The list is: %s"
-                 % (args.device, ", ".join(d[0] for d in DEVICES)))
+                 % (args.device, ", ".join(d[0] for d in all_devices)))
     if not plan:
         sys.exit("no screen called %r. The list is: %s"
                  % (args.only, ", ".join(s[0] for s in screens(sub))))
 
     manifest = {"subjects": sub, "shots": []}
-    for name, devicetype in devices:
-        udid = udid_for(name, devicetype)
+    for name, devicetype, runtime in devices:
+        udid = udid_for(name, devicetype, runtime)
         slug = name.replace(" ", "-").replace("(", "").replace(")", "")
         print(f"\n{name}")
         boot(udid)

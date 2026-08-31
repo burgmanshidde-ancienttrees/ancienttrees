@@ -188,7 +188,7 @@ def parse(dump):
             continue
         if line.startswith("SWEEP>>>"):
             if current:
-                screens.append(under_root(link(current)))
+                screens.append(drop_scaled_background(under_root(link(current))))
             current = None
             continue
         if current is None:
@@ -197,6 +197,60 @@ def parse(dump):
         if m:
             current["els"].append(El(m))
     return screens
+
+
+def drop_scaled_background(screen):
+    """Throw away the page sitting SHRUNK behind a presented sheet.
+
+    Found 2026-08-31, the first time this gate was pointed at iOS 18. It
+    reported thirteen faults there against nought on iOS 26, and every one of
+    them was this: iOS 18 scales the presenting view down behind a card sheet,
+    so a 44 point button measures 40.2 and a control at x=32 reads at x=45.3.
+    Both are the SAME factor, and the arithmetic settles it rather than any
+    judgement: 101.5/111.0 and 40.2/44.0 are both 0.914, and scaling x about
+    the middle of a 375 point screen predicts 45.3 against 45.3 measured.
+
+    The button is 44. We were measuring it through a lens.
+
+    Left alone, this is the worst kind of finding: it names real controls, it
+    is reproducible, and acting on it would mean growing good layout to satisfy
+    an artefact. The screen tells you plainly once you look at the tree, which
+    is where the container is: `Other {{16.0, 30.0}, {343.0, 610.1}}` in a 375
+    wide window, inset by the same amount on both sides.
+
+    So: a near-full-screen element, high in the tree, inset evenly on left and
+    right and scaled to between 0.88 and 0.97 of the window, is the presenting
+    view rather than content. Its whole subtree goes. On a runtime that does
+    not do this, nothing matches and nothing is dropped.
+    """
+    els = screen["els"]
+    W, H = screen["w"], screen["h"]
+    if not els or W <= 0 or H <= 0:
+        return screen
+    for el in els:
+        if el.depth > 12:
+            continue
+        wr, hr = el.w / W, el.h / H
+        if not (0.88 <= wr <= 0.97 and 0.88 <= hr <= 0.97):
+            continue
+        # Evenly inset left and right is what makes it a SCALED view rather
+        # than a card that happens to be wide.
+        if abs(el.x - (W - el.right)) > 2.0:
+            continue
+        doomed = {id(el)}
+        for other in els:
+            p = other.parent
+            while p is not None:
+                if id(p) in doomed:
+                    doomed.add(id(other))
+                    break
+                p = p.parent
+        kept = [e for e in els if id(e) not in doomed]
+        if kept:
+            screen["els"] = kept
+            screen["scaled_background"] = round(wr, 4)
+        return screen
+    return screen
 
 
 def under_root(screen):
@@ -440,8 +494,18 @@ def run_test(device, scratch):
     sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     import appsweep
 
-    udid = device if "-" in device and len(device) == 36 else \
-        appsweep.udid_for(device, dict(appsweep.DEVICES).get(device, ""))
+    if "-" in device and len(device) == 36:
+        udid = device
+    else:
+        # sweep_devices() carries the OS version in the name, so a phone is
+        # looked up in that list rather than in DEVICES: the same model on two
+        # runtimes is two phones and only the full name tells them apart.
+        match = [d for d in appsweep.sweep_devices() if d[0] == device]
+        if match:
+            udid = appsweep.udid_for(*match[0])
+        else:
+            udid = appsweep.udid_for(
+                device, dict(appsweep.DEVICES).get(device, ""))
     device_dir = pathlib.Path.home() / "Library/Developer/CoreSimulator/Devices" / udid
     for stale in device_dir.rglob(DUMP_NAME):
         stale.unlink()
@@ -560,6 +624,11 @@ def main():
                          "until 2026-08-25, and the big one was carrying four "
                          "findings nobody had ever seen, one of them a button "
                          "a point under Apple's floor")
+    ap.add_argument("--os", default=None, dest="os_filter",
+                    help="one iOS major version, e.g. 18. Omit it and every "
+                         "installed runtime is measured, floor included: the "
+                         "app promises iOS 18 upward and was only ever "
+                         "measured on the newest until 2026-08-31.")
     ap.add_argument("--dump", default=None, help="a saved test output to judge")
     ap.add_argument("--json", action="store_true", help="findings as JSON")
     args = ap.parse_args()
@@ -586,7 +655,9 @@ def main():
         if drift:
             sys.exit("the sweep and the layout gate disagree about which "
                      "screens exist")
-        names = [args.device] if args.device else [d[0] for d in appsweep.DEVICES]
+        appsweep.floor_note(args.os_filter)
+        names = ([args.device] if args.device
+                 else [d[0] for d in appsweep.sweep_devices(args.os_filter)])
         runs = []
         for name in names:
             runs.append((name, run_test(name, scratch)))

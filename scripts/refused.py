@@ -40,6 +40,23 @@ def udid_for(name):
     return None
 
 
+def device_label(udid):
+    """"iPhone SE (sweep) iOS 18.6", read back from simctl for this udid."""
+    data = json.loads(sh("xcrun", "simctl", "list", "devices", "-j").stdout)
+    for runtime, devices in data.get("devices", {}).items():
+        for d in devices:
+            if d["udid"] == udid:
+                os_name = runtime.rsplit(".", 1)[-1].replace("iOS-", "iOS ")
+                os_name = os_name.replace("-", ".")
+                # appsweep's own devices already carry the version in the name,
+                # so saying it twice reads as a bug in the reader rather than
+                # tidiness in the writer.
+                if os_name in d["name"]:
+                    return d["name"]
+                return f"{d['name']} ({os_name})"
+    return None
+
+
 def privacy(udid, action, service):
     r = sh("xcrun", "simctl", "privacy", udid, action, service, BUNDLE)
     if r.returncode != 0:
@@ -63,7 +80,11 @@ def main():
 
     sh("xcrun", "simctl", "boot", udid)
 
-    print(f"refusing location and photos on {args.device}")
+    # The NAME OF THE DEVICE ACTUALLY USED, not the default that --udid
+    # overrode. It printed "iPhone 17" while running on an iOS 18.6 SE on
+    # 2026-08-31, which is the worst kind of log line in a repository full of
+    # checks: one that reports a different thing from the one it measured.
+    print(f"refusing location and photos on {device_label(udid) or udid}")
     privacy(udid, "revoke", "location")
     privacy(udid, "revoke", "photos")
 
