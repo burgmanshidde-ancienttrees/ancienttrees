@@ -463,3 +463,87 @@ Read 2026-08-30:
 - https://reports.exodus-privacy.eu.org/en/reports/org.inaturalist.android/latest/
 - https://reports.exodus-privacy.eu.org/en/reports/cn.danatech.xingseus/latest/
 - https://reports.exodus-privacy.eu.org/en/reports/com.strava/latest/
+
+---
+
+## How a settings page is built, and where deleting an account sits (2026-08-31)
+
+**Looked up because Hidde asked twice on one afternoon**: first whether Delete
+account could sit under Sign out on the main list, then how a settings page is
+built at all. Described from use rather than from documentation, like the
+sign-out entry above, so re-check before leaning on it for anything larger.
+
+**Reference, on a phone: Strava, AllTrails, Komoot, and Apple's own Settings.**
+All four are built the same way, top to bottom:
+
+1. An identity card first: picture, name, and a chevron into the account.
+2. Grouped sections under small uppercase headers, never one long list.
+3. Rows of one shape: leading icon, label, then either a value or a chevron.
+4. **Sign out at the BOTTOM of the main list**, on its own, away from everything.
+5. The version number last.
+
+**Where deletion sits, and it is unanimous:** inside the Account screen, one
+layer in. Strava is Settings, My Account, Delete Account. AllTrails is Settings,
+Account, Delete account. Google, reached from Maps, buries it four layers down
+under Data and privacy. Instagram puts it under Accounts Centre, Personal
+details, Account ownership and control.
+
+Not one of them puts it on the main settings list beside Sign out. What they all
+DO is ask more than once: Strava confirms and then mails you, Google makes you
+sign in again.
+
+**So the two halves of the same instinct point in opposite directions.** Making
+it harder to trigger is exactly right and is what everybody does. Moving it up
+next to Sign out would make it easier to trigger, and nobody does that. The
+answer that satisfies both is the one already in the app: keep the Account row,
+keep deletion inside it, and add the second confirmation.
+
+**Reference, on the web: GitHub, Airbnb, Strava, Google.** Different shape,
+same logic. Settings is its own page, sections are cards or a side navigation,
+and Account is a section that opens its own page. Destructive actions sit in a
+marked area at the bottom of that page; GitHub calls it the Danger Zone in so
+many words. **Sign out is not on the settings page at all on the web**: it is in
+the user menu at the top right, which is where somebody looks for it.
+
+**What that means for us.** The app already follows this and needs no change
+beyond the second confirmation. The website does not: /account is one flat card
+with sign out and delete side by side on it, where a mis-click is one pixel
+away from the other.
+
+
+---
+
+## When the location question is asked (2026-08-31)
+
+**Settled where it started, after going round the houses in one afternoon.** The
+entry of 2026-08-30 has Apple Maps raising its location sheet only from a control
+that NEEDS location, with a permanent "Location Services is Off" pill as map
+furniture in the meantime. That is what we do.
+
+The detour is worth recording, because the argument against it was good and it
+still lost. Told the convention, Hidde first overruled it: "dit gebeurd te weinig
+dus ik zou map interactie doen ... gewoon scrollen ofzo." The reasoning is sound
+on its face. Apple Maps can afford to wait for that button because it is already
+the map you opened on purpose; ours is a discovery app whose promise is the trees
+around you, and somebody who never taps the arrow never gets asked.
+
+So it was built: the map first, and a card over the blurred map on the first pan
+or pinch. Then he walked it and dropped it: "ik vind eigenlijk dat je het heel
+goed hebt opgelost met een no location [chip] op de map en dat je die kan
+inklikken, wat mij betreft vergeten we het hele overlay scherm."
+
+**What the detour actually proved, and it is the useful part.** The worry behind
+"dit gebeurd te weinig" was that nobody would ever be asked. That worry was
+unfounded here, and only checking the code showed it: our chip is not the Apple
+one. It appears whenever we have no location AT ALL, including a fresh install
+where nothing has ever been asked, and tapping it goes straight to the system
+prompt. Apple's appears only after a refusal. So the ask is already in front of
+everybody, permanently, on the main map, and an interstitial would have been a
+second ask in front of a first one.
+
+**The rule, then:** no screen in front of the system prompt. The map opens, it
+says plainly that location is off, and the person taps it when they want it. One
+line in TreeMap carries the weight of this: `showsUserLocation` stays false until
+somebody has already said yes, because MapLibre asks the system the moment it is
+set, and without that guard iOS would get in first, on launch, with no reason
+given.

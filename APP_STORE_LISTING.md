@@ -104,6 +104,23 @@ contests) is None. The expected rating is 4+.
 
 ## App Review notes
 
+**Superseded 2026-08-31. The version below was in the first submission and it
+was not enough**: Apple rejected under Guideline 2.1 (Information Needed) on
+2026-08-30 asking for seven things, and this block answered two of them. The
+full seven-point reply, and the shot list for the screen recording Apple wants
+made on a physical iPhone, are in `drafts/app-review-2.1-reply.md`. Paste that
+one, here and in the reply message, and keep it in the Notes field for every
+later submission, which is what Apple asked for in so many words.
+
+What the old block was missing, so the lesson is recorded rather than only
+fixed: the devices it was tested on, what the app is for and who for, the
+external services it calls, whether anything differs by region, and the licences
+behind the photographs, the register data and the map tiles. None of that was
+untrue or unknown. It simply was not written where the reviewer looks.
+
+The old block, kept because its wording on sign-in, user content and deletion
+is good and survives inside the new one:
+
 Paste this in the Review Notes box. It answers the two questions this app
 predictably raises, and gives them a way in that does not need a real email:
 

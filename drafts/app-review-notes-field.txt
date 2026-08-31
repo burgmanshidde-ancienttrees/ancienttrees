@@ -1,0 +1,22 @@
+Ancient Trees is a map of remarkable old trees in the world's cities. A screen recording made on a physical iPhone is attached.
+
+1. RECORDING: attached. It starts at the home screen and shows the location prompt, the map of nearby trees, a tree page, walking directions, photographing a tree into a collection (camera and photo prompts), signing in with Apple, reporting and blocking a person, and deleting the account. There is no purchase flow in this version.
+
+2. TESTED ON: [FILL IN]. iPhone only, portrait only, iOS 18.0 or later.
+
+3. WHAT IT DOES AND FOR WHOM: it shows the remarkable old trees near you, what each one is, roughly how old, why it is worth walking to, and directions to the trunk. You can photograph the trees you have stood in front of and keep them as your own collection. These trees are otherwise documented only in official registers, unusable outdoors on a phone. The audience is people who like being outdoors and like trees: walkers, gardeners, families and visitors. General audience, no age-restricted content.
+
+4. ACCESS: no login is needed. The map, every tree, every story and the walking directions work fully signed out. No demo account is needed either, because sign-in is with Apple or Google, so you can use your own Apple ID. An account is only required to keep a collection across devices and to send us a correction.
+Map: first tab, opens on your location, searchable by place, species or name; tap a pin, then Take me there. Camera button: photographs a tree into My trees. Find People: the person icon beside your name in My trees. Reporting and blocking: the three dots beside any person there. Account deletion: Settings, then Delete account.
+
+5. EXTERNAL SERVICES: Supabase (sign-in, database, private storage of users' photographs). Sign in with Apple and Google Sign-In via ASWebAuthenticationSession, no third-party SDK. PostHog on their EU cloud for anonymous analytics: app version, major OS version and a random device identifier, with no email, account id or coordinates. OpenFreeMap tiles drawn with MapLibre. ancienttrees.app, our own website, serving the tree content as JSON. Wikimedia Commons, iNaturalist and Flickr host some of the photographs. Apple Maps and Google Maps, opened externally. MetricKit for crash reports. There is no advertising SDK, no use of the advertising identifier and no tracking, so no App Tracking Transparency prompt is shown. No AI service is called by the app; all content is researched and published ahead of time.
+
+6. REGIONAL DIFFERENCES: none. One English interface and the same content everywhere, every feature identical in every region. Nothing is region-locked, and there is no regional pricing because there is nothing to buy.
+
+7. REGULATED INDUSTRY AND THIRD-PARTY MATERIAL: no regulated industry, and no medical, financial, legal or safety advice. Photographs are used only under a verified open licence (CC0, CC BY, CC BY-SA or Unsplash), with licence and photographer recorded and credited wherever the licence obliges. Tree data comes from official open-data registers of protected trees plus our own cited research. Map tiles come from OpenFreeMap, on OpenStreetMap data, credited on every map. Photographs taken by users stay private to their own account.
+
+USER CONTENT: people may set a display name and picture visible to others in Find People. A blocked person is hidden everywhere except your own search for them, where they appear with an Unblock button. Reports reach us and we act on them. Our terms state there is no tolerance for offensive or impersonating profiles: https://ancienttrees.app/terms Contact: info@ancienttrees.app
+
+PURCHASES: none. No in-app purchase, no subscription and no request for money anywhere.
+
+LOCATION centres the map on trees near you; a position is sent only when somebody records a tree of their own. ACCOUNT DELETION under Settings removes the email address, collection, photographs, display name, picture, every follow and the account.
