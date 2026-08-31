@@ -348,7 +348,7 @@ jobs:
           # ever seen, one of them a button a point under Apple's floor. With no
           # --device it walks appsweep's own list and creates what the runner
           # does not have.
-          python3 scripts/appfit.py
+          python3 scripts/appfit.py --os newest
 
       # THE EYES LAYER, as far as a runner can carry it (2026-08-25, on Hidde
       # asking whether the app can have the website's QA). It cannot judge
@@ -363,7 +363,7 @@ jobs:
         # they exist in CI is the nightly reviewer, which reads the SE set and
         # only ever six of them. appfit still measures BOTH phones, because that
         # half is mechanical and needs no eyes. A session sweeps both.
-        run: python3 scripts/appsweep.py --no-build --device "iPhone SE (sweep)" || true
+        run: python3 scripts/appsweep.py --no-build --os newest --device "iPhone SE (sweep)" || true
 
       - name: Keep the screenshots
         if: always()
@@ -383,5 +383,155 @@ jobs:
         with:
           name: appfit-dump-${{ github.run_id }}
           path: /tmp/appfit-dump.txt
+          retention-days: 7
+          if-no-files-found: ignore
+
+  # THE FLOOR, meaning the oldest iOS this app promises to run on.
+  #
+  # Added 2026-08-31, after Hidde asked whether we test on older versions and
+  # the honest answer turned out to be no, on any machine. The project declares
+  # IPHONEOS_DEPLOYMENT_TARGET 18.0 and every check above asks the runner for
+  # the NEWEST platform, so the App Store was being told the app supports iOS
+  # 18 upward on the strength of it having run on 26.5 and nothing else.
+  #
+  # The gap is not missing APIs. The compiler checks those against the floor
+  # and fails the build rather than surprising anybody. It is BEHAVIOUR, and
+  # this project has already lost a day to exactly one: iOS 26 draws a
+  # control-anchored confirmationDialog as a popover and silently drops every
+  # button with role .cancel, where iOS 18 draws an action sheet and keeps it.
+  # A destructive dialog with no way out, invisible to every other layer here.
+  #
+  # SCHEDULE AND DISPATCH ONLY, deliberately. The runtime is a 9 GB download
+  # and the job is another 40 minutes, and paying that on every push would
+  # double the cost of an afternoon's app work to catch a class of fault that
+  # appears when the SDK or the OS changes, not when a view is edited. Twice a
+  # day is the right frequency for it, which is the same reasoning that gave
+  # the job above its own unkillable scheduled group.
+  floor:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: macos-15
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Which Xcode
+        run: |
+          NEWEST=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$NEWEST" ]; then
+            sudo xcode-select -s "$NEWEST/Contents/Developer" || true
+          fi
+          echo "Using: $(xcode-select -p)"
+
+      # Runners often already carry an older runtime from an older Xcode, and
+      # they are shared across Xcodes on one machine, so ASK BEFORE FETCHING.
+      # The download is 9 GB and takes minutes; the check takes a second.
+      - name: An iOS 18 runtime, fetched only if the runner lacks one
+        id: floor
+        run: |
+          has_18() {
+            xcrun simctl list runtimes available \
+              | grep -oE "iOS 18\.[0-9]+" | tail -1
+          }
+          V=$(has_18)
+          if [ -z "$V" ]; then
+            echo "No iOS 18 runtime here. Fetching, slow but once per runner."
+            xcodebuild -downloadPlatform iOS -buildVersion 18.6 || true
+            V=$(has_18)
+          fi
+          if [ -z "$V" ]; then
+            echo "Apple no longer offers an iOS 18 simulator runtime to this Xcode."
+            echo "Everything this runner has:"
+            xcrun simctl list runtimes
+            echo "floor=" >> "$GITHUB_OUTPUT"
+            exit 1
+          fi
+          echo "Testing the floor on $V"
+          echo "floor=$V" >> "$GITHUB_OUTPUT"
+
+      # The same suite the newest runtime runs, on the oldest one. Serial for
+      # the same reason as above: two apps launching at once on this runner
+      # measures the runner rather than the app.
+      - name: Build and test on the floor
+        run: |
+          set -o pipefail
+          UDID=$(python3 -c "
+          import sys; sys.path.insert(0, 'scripts')
+          import appsweep
+          d = [x for x in appsweep.sweep_devices('18') if x[0].startswith('iPhone SE')][0]
+          print(appsweep.udid_for(*d))
+          ")
+          echo "udid=$UDID"
+          xcodebuild test \
+            -project ios/AncientTrees/AncientTrees.xcodeproj \
+            -scheme AncientTrees \
+            -destination "id=$UDID" \
+            -derivedDataPath /tmp/dd \
+            -parallel-testing-enabled NO \
+            -skip-testing:AncientTreesUITests/SweepFrames \
+            -skip-testing:AncientTreesUITests/RefusedWalk \
+            > /tmp/floor.log 2>&1 || true
+          grep -E "Test case|error:|\*\* (TEST|BUILD)" /tmp/floor.log | tail -40 || true
+
+      - name: Verdict
+        run: |
+          R=$(ls -td /tmp/dd/Logs/Test/*.xcresult 2>/dev/null | head -1)
+          if [ -z "$R" ]; then
+            echo "no test results were produced on the floor"
+            tail -60 /tmp/floor.log || true
+            exit 1
+          fi
+          xcrun xcresulttool get test-results summary --path "$R" > /tmp/floor-summary.json
+          python3 - <<'PY'
+          import json
+          d = json.load(open("/tmp/floor-summary.json"))
+          passed, failed = d.get("passedTests", 0), d.get("failedTests", 0)
+          print(f"iOS 18: {passed} passed, {failed} failed")
+          for f in d.get("testFailures", []):
+              print("FAILED:", f.get("testName"), "-", f.get("failureText", "")[:200])
+          raise SystemExit(1 if failed or passed == 0 else 0)
+          PY
+
+      # Layout on the floor. A screen that fits on 26 can clip on 18: the
+      # safe-area insets, the navigation bar metrics and the system font all
+      # moved between them, and this is measured rather than assumed.
+      # RefusedWalk is skipped above and run here for the same reason the job on
+      # the newest runtime does it this way: it revokes location and photos on
+      # the device and puts them back, so it cannot share a run with tests that
+      # expect a working location. Running it inside the suite is exactly the
+      # mistake that produced a false "iOS 18 is broken" on 2026-08-31.
+      - name: What happens when somebody says no, on iOS 18
+        if: always()
+        run: |
+          UDID=$(python3 -c "
+          import sys; sys.path.insert(0, 'scripts')
+          import appsweep
+          d = [x for x in appsweep.sweep_devices('18') if x[0].startswith('iPhone SE')][0]
+          print(appsweep.udid_for(*d))
+          ")
+          python3 scripts/refused.py --udid "$UDID"
+
+      - name: Does it line up on iOS 18
+        if: always()
+        run: python3 scripts/appfit.py --os 18
+
+      - name: Photograph every screen on iOS 18
+        if: always()
+        run: python3 scripts/appsweep.py --no-build --os 18 --device "iPhone SE (sweep)" || true
+
+      - name: Keep the floor's screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: appsweep-ios18-${{ github.run_id }}
+          path: /tmp/appsweep/**/*.png
+          retention-days: 14
+          if-no-files-found: warn
+
+      - name: Keep the floor's result bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcresult-ios18-${{ github.run_id }}
+          path: /tmp/dd/Logs/Test/*.xcresult
           retention-days: 7
           if-no-files-found: ignore
