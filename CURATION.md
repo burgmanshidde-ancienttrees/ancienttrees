@@ -10,6 +10,19 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-01 - Reader submission 57 (Baarn, GPS-only): another Hidde test click, not a reader report
+
+Row 57 (`kind: tree`, city "Baarn", `app:collect`, no tree name, no species, `why`
+empty, GPS 52.21401,5.29697 "standing at the tree") resolves via the admin API to
+`burgmans.hidde@gmail.com` on a freshly created account (signed in minutes before
+the row was written). The GPS sits about 7 metres from rows 43 and 44
+(52.21395,5.29700), already identified 2026-08-29 as his own click-through test of
+the same submission flow from a different account. Same pattern: an empty pin, no
+content, from him rather than a reader. Not treated as a lead, per the 43/44
+precedent; Baarn stays off from-zero research per CLAUDE.md rule 1(d) regardless.
+Set `outcome: holds` via the service key and appended to
+`data/submissions-processed.json`.
+
 ## 2026-09-01 - Reader submission 54 (Prague, the Plane of Nove Mlyny): what she actually said, and a name in a public repo
 
 The first genuine tree submission this project has had from a stranger, and it
