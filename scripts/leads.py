@@ -144,6 +144,22 @@ HELD_MARKER = re.compile(
 # collide with a count-doctrine word, and both collisions are the protected
 # case itself (Poznan's oak, "held back only to avoid overshooting... target"),
 # which COUNT_DOCTRINE_WORDS already exempts below.
+#
+# Widened a fourth time 2026-09-01 (same day as the widening above, a
+# different session claiming barcelona/coimbra/napoli for a write pass and
+# reading all ten of their READY leads individually before dispatching
+# anything): none of the ten held up. Barcelona's Pedralbes cluster and its
+# Figuera de la Facultat de Dret read "Not evaluated in this pass" (the
+# existing pattern only matched "not evaluated this pass", no "in"); its
+# Melaleuca is explicitly "a broad low shrub rather than a tree", not a
+# not-a-collectible-point phrasing this file had a pattern for; Napoli's
+# three camphors read "cloister access... is unconfirmed" (word order the
+# existing "access unconfirmed" pattern missed); Coimbra's Glicinia n.2 reads
+# "likely not remarkable on its own"; its Falsa-arvore-do-incenso reads "a
+# day-trip-boundary check is needed", a phrasing the existing day-trip
+# patterns ("would need a", "likely/almost certainly beyond") did not cover.
+# Checked against the full leads corpus per this file's own methodology: 8
+# hits, 0 count-doctrine collisions.
 NOT_READY_MARKER = re.compile(
     r"\[SKIPPED\b[^\]]*\]|\b(?:not pursued|left unverified|left undelivered|"
     r"ship once|not delivered on|removed from protection|"
@@ -151,13 +167,17 @@ NOT_READY_MARKER = re.compile(
     r"could be a genuine second|almost certainly beyond|likely beyond|"
     r"would need a|"
     r"not researched this pass|not individually researched|"
-    r"not evaluated this pass|not verified this pass|not confirmed this pass|"
+    r"not evaluated (?:in )?this pass|not verified this pass|not confirmed this pass|"
     r"not verified tree by tree|access unverified|access unconfirmed|"
+    r"access.{0,40}is unconfirmed|unconfirmed (?:public )?access|"
+    r"liveness doubt|would make the page repetitive|"
     r"access does not clear|not for public access|stays a lead|"
     r"held back this pass|not shipped this pass|blocked from shipping|"
     r"not chased further|worth a future pass|worth a later pass|"
     r"worth a look next pass|time.?boxed out|time.?boxed to|"
-    r"needs a survival check|shut for construction|closed until)\b",
+    r"needs a survival check|shut for construction|closed until|"
+    r"rather than a tree|likely not remarkable|"
+    r"day-trip-boundary check is needed)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
