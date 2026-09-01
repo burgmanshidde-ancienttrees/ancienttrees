@@ -1,154 +1,79 @@
 [
-  {
-    "id": "fuk_014",
-    "city": "Fukuoka",
-    "name": "Seicho-zakura",
-    "species": "Cherry (Prunus sp.)",
-    "age_estimate": "not documented",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": null,
-    "location": {
-      "address": "In front of Nishitetsu-Kashii Station, Higashi-ku, Fukuoka",
-      "latitude": 33.659564,
-      "longitude": 130.441467,
-      "neighbourhood": "Kashii, Higashi-ku"
-    },
-    "verified_sources": [
-      "https://wood.jp/8-jumoku/web-jumoku/web/web-tree-2735.html",
-      "https://wood.jp/8-jumoku/web-jumoku/web/web-tree-1630.html"
-    ],
-    "access": "Free, public station forecourt, always visible",
-    "transport": "At Nishitetsu-Kashii Station (Nishitetsu Kaizuka Line), 0 min walk",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Alive: yes, photographed 2018 and still standing (station forecourt tree, actively maintained). Two independent sources (wood.jp tree-preservation news articles, corroborated by a third search result giving the exact date) agree: this cherry stood on the grounds of the OLD Nishitetsu-Kashii station building, the setting referenced in Matsumoto Seicho's classic 1958 detective novel \"Ten to Sen\" (Points and Lines) -- the novel is set around Kashii and the old station area, though the tree itself is not literally named in the text. When the station was rebuilt as an elevated line (line elevated 2006), a fan society (Matsumoto Seicho no Kai, an NPO of readers) campaigned to save the tree rather than let it be felled, and petitioned Fukuoka City and Nishitetsu railway. It was transplanted whole (root ball, by crane) on 21 January 2008, moved roughly 30-35m (sources give both figures) to its current spot in front of the new station, beside a stone monument to the novel. At time of transplant it was 8m tall and the root ball weighed about 3.5 tons; the attending arborist estimated it could keep flowering for another 20-30 years with care (so roughly through the 2030s-40s). No numeric age (jurei) is documented anywhere found; sources call it simply an \"old tree\" (roboku). Species is cherry (sakura), variety/cultivar not stated in any source found -- kept as genus-only per lead file convention, page should ask the reader which cultivar. Remarkability rests on the preservation story (a reader campaign that saved a tree from redevelopment specifically because of its literary association) rather than on size or age; judged as clearing the bar on historical significance. Girth not given by any source. Located inside Fukuoka city proper (Higashi-ku), not a day-trip case."
+ {
+  "id": "fuk_014",
+  "city": "Fukuoka",
+  "name": "Seicho-zakura",
+  "species": "Cherry (Prunus sp.)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "In front of Nishitetsu-Kashii Station, Higashi-ku, Fukuoka",
+   "latitude": 33.659564,
+   "longitude": 130.441467,
+   "neighbourhood": "Kashii, Higashi-ku"
   },
-  {
-    "id": "fuk_015",
-    "city": "Fukuoka",
-    "name": "Shimo-ose no Okatsura",
-    "species": "Katsura (Cercidiphyllum japonicum)",
-    "age_estimate": "roughly 1,000 years (official estimate)",
-    "age_min": 900,
-    "age_max": 1100,
-    "girth_cm": null,
-    "location": {
-      "address": "Shimo-ose, Fuji-cho, Saga City, Saga Prefecture (200m west of Kitayama Kiln, Fuji-cho Shimo-ose 564-1)",
-      "latitude": 33.44334,
-      "longitude": 130.26053,
-      "neighbourhood": "Fuji-cho, Saga City"
-    },
-    "verified_sources": [
-      "https://www.city.saga.lg.jp/main/875.html",
-      "https://www.pref.saga.lg.jp/kiji0031653/index.html",
-      "https://www.nikkei.com/article/DGXZQOJC173NW0X11C23A1000000/"
-    ],
-    "access": "Free, self-guided, open year round, no fee. No car park at the tree itself (roadside pull-off). Reached only by car; no public bus service found to the site.",
-    "transport": "No train or bus. By car: about 30 min from Saga-Yamato IC, or roughly 5-10 min from the Mitsuse Tunnel tollgate if coming from Fukuoka city (via the Mitsuse Toll Road/Route 263, then Pref. Route 299 through Fuji-cho). Not walkable from any station.",
-    "location_precision": "confirmed",
-    "curation_status": "ai_generated",
-    "verify_notes": "Alive: yes, recently and repeatedly documented, including a Nikkei feature (Nov 2023) on its autumn colour, so it is an active, visited, maintained site. Three independent sources agree closely: Saga City's own page, Saga Prefecture's designated-natural-monuments page, and the Nikkei 2023 feature. Designated a national Natural Monument (kuni shitei tennen kinenbutsu) in May 1962 (Showa 37), one of the earliest and most solid designations available. Officially cited as the second-largest katsura (Cercidiphyllum japonicum) in Japan. Measurements per the prefecture page: horizontal root-base circumference 13.8m, height 34m, crown spread circumference 37m. Important caveat for whoever writes girth: this is NOT a single trunk figure. The tree is a multi-stemmed clump: the original central stem is gone and dozens of root suckers (hikobae) have grown up around the old base, over twenty of them individually more than 1m in girth, the largest single sucker trunk about 3m round. So girth_cm is left empty rather than using the 13.8m root-circumference figure, which would read as a single trunk and mislead. Estimated age about 1000 years is the figure both government sources use; treated as their derived/traditional estimate rather than ours, kept broad. The tree stands within the precinct of a mountain-god shrine (yama-no-kami no yashiro) and is believed to have been venerated as a sacred tree (shinboku) historically, per the prefecture description. Located in a rural mountain valley in Fuji-cho, Saga City; genuinely worth the detour for the multi-stem katsura form alone, but this is a car trip through the Mitsuse mountain road, not a city walk, and the page must say so honestly rather than implying it is reachable on foot or by transit from Fukuoka."
+  "verified_sources": [
+   "https://wood.jp/8-jumoku/web-jumoku/web/web-tree-2735.html",
+   "https://wood.jp/8-jumoku/web-jumoku/web/web-tree-1630.html"
+  ],
+  "access": "Free, public station forecourt, always visible",
+  "transport": "At Nishitetsu-Kashii Station (Nishitetsu Kaizuka Line), 0 min walk",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Alive: yes, photographed 2018 and still standing (station forecourt tree, actively maintained). Two independent sources (wood.jp tree-preservation news articles, corroborated by a third search result giving the exact date) agree: this cherry stood on the grounds of the OLD Nishitetsu-Kashii station building, the setting referenced in Matsumoto Seicho's classic 1958 detective novel \"Ten to Sen\" (Points and Lines) -- the novel is set around Kashii and the old station area, though the tree itself is not literally named in the text. When the station was rebuilt as an elevated line (line elevated 2006), a fan society (Matsumoto Seicho no Kai, an NPO of readers) campaigned to save the tree rather than let it be felled, and petitioned Fukuoka City and Nishitetsu railway. It was transplanted whole (root ball, by crane) on 21 January 2008, moved roughly 30-35m (sources give both figures) to its current spot in front of the new station, beside a stone monument to the novel. At time of transplant it was 8m tall and the root ball weighed about 3.5 tons; the attending arborist estimated it could keep flowering for another 20-30 years with care (so roughly through the 2030s-40s). No numeric age (jurei) is documented anywhere found; sources call it simply an \"old tree\" (roboku). Species is cherry (sakura), variety/cultivar not stated in any source found -- kept as genus-only per lead file convention, page should ask the reader which cultivar. Remarkability rests on the preservation story (a reader campaign that saved a tree from redevelopment specifically because of its literary association) rather than on size or age; judged as clearing the bar on historical significance. Girth not given by any source. Located inside Fukuoka city proper (Higashi-ku), not a day-trip case."
+ },
+ {
+  "id": "fuk_015",
+  "city": "Fukuoka",
+  "name": "Shimo-ose no Okatsura",
+  "species": "Katsura (Cercidiphyllum japonicum)",
+  "age_estimate": "roughly 1,000 years (official estimate)",
+  "age_min": 900,
+  "age_max": 1100,
+  "girth_cm": null,
+  "location": {
+   "address": "Shimo-ose, Fuji-cho, Saga City, Saga Prefecture (200m west of Kitayama Kiln, Fuji-cho Shimo-ose 564-1)",
+   "latitude": 33.44334,
+   "longitude": 130.26053,
+   "neighbourhood": "Fuji-cho, Saga City"
   },
-  {
-    "id": "ngy_007",
-    "city": "Nagoya",
-    "name": "Nagoya Castle Kaya",
-    "species": "Japanese Nutmeg-yew (Torreya nucifera)",
-    "age_estimate": "roughly 600 years",
-    "age_min": 500,
-    "age_max": 700,
-    "girth_cm": 700,
-    "location": {
-      "address": "Nishinomaru (western citadel), Nagoya Castle, Naka-ku, Nagoya",
-      "latitude": 35.1838,
-      "longitude": 136.8979,
-      "neighbourhood": "Naka-ku (Nagoya Castle grounds)"
-    },
-    "verified_sources": [
-      "https://www.city.nagoya.jp/shisei/gaiyou/1014073/1014081.html",
-      "https://online.bunka.go.jp/index.php/heritages/detail/138707"
-    ],
-    "access": "Paid entry to Nagoya Castle grounds required: adults 500 yen, free for middle-school age and under. Open 09:00-16:30 (last entry to the honmaru palace and treasure hall 16:00).",
-    "transport": "Nagoya Municipal Subway Meijo Line, Nagoyajo station, exit 7, 5 min walk. (Alt: Tsurumai Line, Sengencho station, exit 1, 12 min walk.)",
-    "location_precision": "confirmed",
-    "curation_status": "ai_generated",
-    "verify_notes": "Alive: yes, official Nagoya City page (current, undated but live page) describes it as watching over the castle town and central to the castle's ongoing wooden-restoration project (referenced in a 2021 commemorative song), and the Agency for Cultural Affairs database describes its condition as jusei ousei, vigorous growth. Two independent official sources agree closely: the City of Nagoya's own page and the national Agency for Cultural Affairs heritage database (online.bunka.go.jp). Designated a national Natural Monument on 25 July 1932 (Showa 7), the only national Natural Monument within Nagoya city. Estimated age about 600 years (source figure, both sources use this number), which if accurate means it predates Nagoya Castle itself (built from 1610); a local tradition holds that Tokugawa Ieyasu personally directed the castle's construction works while standing beneath this tree in 1610 (found via general search summary, not yet independently confirmed on a fetched page -- record as tradition/legend, not fact, and flag it as such for the writer). Confirmed on a fetched page: the tree was half-burned by incendiary bombs during the Nagoya Great Air Raid of 14 May 1945, which destroyed the castle's original wooden donjon, but the kaya did not die and its vigour recovered -- this survival is documented, unlike the Ieyasu story, and is the stronger anecdote to lead with. Trunk circumference (breast height) about 7m (700cm) per the Agency for Cultural Affairs record. Species is Japanese Nutmeg-yew, Torreya nucifera (kaya), the same common-name string already used for Nagoya's existing ngy_001, so no species-name conflict. Located inside the paid castle grounds in Nishinomaru, near the Nishinomaru Exhibition Hall (Nishinomaru Gozokoku Hokan / treasure hall), which the Commons photos also show it standing beside."
+  "verified_sources": [
+   "https://www.city.saga.lg.jp/main/875.html",
+   "https://www.pref.saga.lg.jp/kiji0031653/index.html",
+   "https://www.nikkei.com/article/DGXZQOJC173NW0X11C23A1000000/"
+  ],
+  "access": "Free, self-guided, open year round, no fee. No car park at the tree itself (roadside pull-off). Reached only by car; no public bus service found to the site.",
+  "transport": "No train or bus. By car: about 30 min from Saga-Yamato IC, or roughly 5-10 min from the Mitsuse Tunnel tollgate if coming from Fukuoka city (via the Mitsuse Toll Road/Route 263, then Pref. Route 299 through Fuji-cho). Not walkable from any station.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Alive: yes, recently and repeatedly documented, including a Nikkei feature (Nov 2023) on its autumn colour, so it is an active, visited, maintained site. Three independent sources agree closely: Saga City's own page, Saga Prefecture's designated-natural-monuments page, and the Nikkei 2023 feature. Designated a national Natural Monument (kuni shitei tennen kinenbutsu) in May 1962 (Showa 37), one of the earliest and most solid designations available. Officially cited as the second-largest katsura (Cercidiphyllum japonicum) in Japan. Measurements per the prefecture page: horizontal root-base circumference 13.8m, height 34m, crown spread circumference 37m. Important caveat for whoever writes girth: this is NOT a single trunk figure. The tree is a multi-stemmed clump: the original central stem is gone and dozens of root suckers (hikobae) have grown up around the old base, over twenty of them individually more than 1m in girth, the largest single sucker trunk about 3m round. So girth_cm is left empty rather than using the 13.8m root-circumference figure, which would read as a single trunk and mislead. Estimated age about 1000 years is the figure both government sources use; treated as their derived/traditional estimate rather than ours, kept broad. The tree stands within the precinct of a mountain-god shrine (yama-no-kami no yashiro) and is believed to have been venerated as a sacred tree (shinboku) historically, per the prefecture description. Located in a rural mountain valley in Fuji-cho, Saga City; genuinely worth the detour for the multi-stem katsura form alone, but this is a car trip through the Mitsuse mountain road, not a city walk, and the page must say so honestly rather than implying it is reachable on foot or by transit from Fukuoka."
+ },
+ {
+  "id": "yak_001",
+  "city": "Yakushima",
+  "name": "Jomon Sugi",
+  "species": "Japanese Cedar (Cryptomeria japonica)",
+  "age_estimate": "estimated 2,600+ years (official Ministry of Environment figure; disputed, see notes)",
+  "age_min": 2000,
+  "age_max": 3600,
+  "girth_cm": 1640,
+  "location": {
+   "address": "Viewing deck, Yakushima Wilderness area (Yaku-shima National Park), Arakawa trail, Yakushima-cho, Kumage-gun, Kagoshima",
+   "latitude": 30.360863,
+   "longitude": 130.529192,
+   "neighbourhood": "Yakushima wilderness / Arakawa trail"
   },
-  {
-    "id": "kan_008",
-    "city": "Kanazawa",
-    "name": "Dogata no Shiinoki",
-    "species": "Japanese Chinquapin (Castanopsis sieboldii)",
-    "age_estimate": "roughly 300 to 400 years",
-    "age_min": 300,
-    "age_max": 400,
-    "girth_cm": 740,
-    "location": {
-      "address": "In front of the Shiinoki Geihinkan (former Ishikawa Prefectural Government building), 2-1-1 Hirosaka, Kanazawa",
-      "latitude": 36.56208,
-      "longitude": 136.65793,
-      "neighbourhood": "Hirosaka (Hirosaka Ryokuchi green space, beside Kenrokuen and the 21st Century Museum)"
-    },
-    "verified_sources": [
-      "https://www.pref.ishikawa.lg.jp/kyoiku/bunkazai/siseki/3-4.html",
-      "https://ja.wikipedia.org/wiki/%E5%A0%82%E5%BD%A2%E3%81%AE%E3%82%B7%E3%82%A4%E3%83%8E%E3%82%AD"
-    ],
-    "access": "Free, outdoor public plaza in front of the Shiinoki Geihinkan (a public reception hall/cultural facility open 09:00-22:00, itself free to view from outside; the trees stand in the open forecourt and are visible/reachable at any time).",
-    "transport": "From JR Kanazawa Station east exit bus terminal: Kanazawa Loop Bus (Johmachi Kanazawa Shuraku Bus) to 'Hirosaka (Ishiura Jinja-mae)', about 20 min, alight right there; or any Hokutetsu route bus to 'Korinbo (Atorio-mae)', about 10 min, then 5 min walk; or 'Hirosaka / 21st Century Art Museum' stop, 1 min walk.",
-    "location_precision": "confirmed",
-    "curation_status": "ai_generated",
-    "verify_notes": "Alive: yes, both specimens standing and maintained at a public government-heritage building, actively described on current tourism and government pages. Two independent sources agree closely: Ishikawa Prefecture's Board of Education page and Wikipedia (itself citing the same prefecture data). This is a PAIR of Sudajii chinquapins, planted/growing symmetrically left and right of the main entrance of the former Ishikawa Prefectural Government building (now Shiinoki Geihinkan), designated together as ONE national Natural Monument on 24 August 1943 (Showa 18) -- so this is deliberately entered as a single ensemble entry per the compact-famous-pair rule, not two entries. Right tree (facing the building): root-base circumference 7.4m, height 12m. Left tree: root-base circumference reported as 12m, height 13m in the prefecture's current figures (older botanical records give slightly different numbers, 12.2m/13m for the right tree and 12m/12.2m for the left, so there is some historical disagreement about which side is bigger -- flagged, not resolved). girth_cm above is set to the right tree's more consistently-cited 740cm; the left tree's much larger reported root girth (1200cm) is unusual for the same estimated age and is recorded here as a caveat rather than silently averaged. Age estimated at 300 to 400 years by the prefecture (a real range from an official source, kept as given). The site takes its name 'Dogata' from a Sanjusangendo-style archery range (matoba) that Maeda Toshiie, first lord of Kaga domain, had built here in 1592; the trees are popularly associated with that era but the prefecture's own page states plainly that no documentary evidence confirms when they were actually planted (several origin theories exist, none proven) -- so the Maeda Toshiie connection is local tradition, not a documented planting date, and must not be written as if it dates the trees. Located immediately next to Kenrokuen and the Kanazawa Castle area, an easy joint stop with Neagarinomatsu in the same cluster."
-  },
-  {
-    "id": "kan_009",
-    "city": "Kanazawa",
-    "name": "Neagarinomatsu (Root-Exposed Pine), Kenrokuen",
-    "species": "Japanese Black Pine (Pinus thunbergii)",
-    "age_estimate": "roughly 200 years",
-    "age_min": 170,
-    "age_max": 230,
-    "girth_cm": null,
-    "location": {
-      "address": "Kenrokuen garden, Kenroku-machi 1, Kanazawa",
-      "latitude": 36.56214,
-      "longitude": 136.6625,
-      "neighbourhood": "Kenrokuen / Kenrokumachi"
-    },
-    "verified_sources": [
-      "https://www.woodtec.co.jp/lab/wood/praise-of-wood/020/",
-      "https://www.hot-ishikawa.jp/blog/detail_165.html"
-    ],
-    "access": "Paid entry to Kenrokuen garden: adults 320 yen, children 6-18 100 yen, under 5 free; free entry on certain dates (cherry-blossom viewing period, the Hyakumangoku Festival, 14-16 Aug, 3 Nov, 31 Dec-3 Jan); free for 65+ with ID and for disabled visitors with their certificate. Open 07:00-18:00 (1 Mar-15 Oct) or 08:00-17:00 (16 Oct-end Feb), last entry 30 min before close.",
-    "transport": "Kanazawa Loop Bus (right-hand/clockwise route) to 'Kenrokuen-shita, Kanazawa Castle (Ishikawa-mon mukai)' stop, alight near the Katsurazaka entrance gate.",
-    "location_precision": "confirmed",
-    "curation_status": "ai_generated",
-    "verify_notes": "Alive: yes, one of Kenrokuen's signature named trees, actively maintained and featured on current official and tourism pages, photographed regularly. Two independent sources agree closely on the core facts: a wood-industry feature article and an Ishikawa prefecture tourism blog. Species is Japanese black pine (kuromatsu, Pinus thunbergii), matching the existing common-name string already used for Kanazawa's kan_003 and kan_004. Estimated age about 200 years (both sources give this figure as a round estimate, kept broad rather than sharpened). Height about 15m. The tree's defining feature: 40-plus large and small roots rise above the ground to about 2m height, a deliberately engineered spectacle rather than a natural formation -- both sources agree the 13th lord of the Kaga domain (Maeda family; rendered Narinaga in one source and Nariasu in the other, likely a reading variant of the same historical figure, this is 前田斉泰 who ruled 1822-1866) had soil mounded up and a young pine planted on top; once established, the soil was removed, leaving the root system exposed as it grew. This is documented garden technique/tradition (bonsai-scale root-exposure technique applied at full size), not a legend about the tree's age -- the ~200 year age estimate is consistent with a mid-Edo-period planting under this lord. Girth not given by either source (root-exposed form makes a single trunk girth figure less meaningful/not reported); left empty rather than guessed. Located inside Kenrokuen, one of Japan's three great gardens (a Special Place of Scenic Beauty), directly adjacent to Dogata no Shiinoki (kan_008) and Kanazawa Castle, so easily walked as one cluster."
-  },
-  {
-    "id": "yak_001",
-    "city": "Yakushima",
-    "name": "Jomon Sugi",
-    "species": "Japanese Cedar (Cryptomeria japonica)",
-    "age_estimate": "estimated 2,600+ years (official Ministry of Environment figure; disputed, see notes)",
-    "age_min": 2000,
-    "age_max": 3600,
-    "girth_cm": 1640,
-    "location": {
-      "address": "Viewing deck, Yakushima Wilderness area (Yaku-shima National Park), Arakawa trail, Yakushima-cho, Kumage-gun, Kagoshima",
-      "latitude": 30.360863,
-      "longitude": 130.529192,
-      "neighbourhood": "Yakushima wilderness / Arakawa trail"
-    },
-    "verified_sources": [
-      "https://www.env.go.jp/nature/isan/worldheritage/yakushima/area/a07.html",
-      "https://www.rinya.maff.go.jp/kyusyu/yakusima_hozen_c/tozansyanominasamahe.html",
-      "https://ja.wikipedia.org/wiki/%E7%B8%84%E6%96%87%E6%9D%89"
-    ],
-    "access": "Free to view (no entry ticket to the forest itself), but a voluntary mountain-area conservation cooperation fee is strongly requested on this route: 1,000 yen for a day visit, 2,000 yen if overnighting in the mountains, for middle-school age and up. The tree itself is fenced off for protection: visitors view it from a wooden deck roughly 10m from the trunk, mainly from three sides, and may not approach the base or roots (root-plate trampling damage is the reason). This is a serious mountain hike, not a park walk: round trip from the Arakawa trailhead is roughly 9-10 hours, largely along an old logging-tramway bed (torokko-michi, about 8km) followed by a mountain trail. From 1 March to 30 November, the access road to the Arakawa trailhead is closed to private cars; visitors must buy a seat in advance on the Arakawa Tozan shuttle bus, which runs from the Yakusugi Museum bus stop. From 1 December to end of February, private cars may drive to the trailhead directly. Sturdy hiking gear, an early start (buses run pre-dawn) and a full day are required; this is explicitly the kind of trip that must be described honestly as a serious hike, never as a stroll.",
-    "transport": "No public transport reaches the trailhead directly; the Arakawa Tozan shuttle bus (pre-booked ticket, purchased in advance at Miyanoura or Anbo tourist information counters) runs between the Yakusugi Museum and the Arakawa trailhead during the March-November restricted season. From the trailhead it is roughly 9-10 hours round trip on foot to the viewing deck.",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Alive: yes, unambiguously -- this is the single most documented and visited ancient tree in Japan, part of the Yakushima UNESCO World Heritage core zone, monitored and maintained by the Kyushu Forest Management Bureau, with current official pages. Species is Yakusugi, the local ecotype of Cryptomeria japonica (Japanese cedar) that grows only on Yakushima above about 500m and is defined as sugi over 1000 years old; genus and species both well established, no ambiguity, so given as the full binomial rather than sp. Girth (at 1.3m) 16.4m/1640cm, height 25.3m, per the Ministry of Environment official page -- the largest known Yakusugi. AGE IS GENUINELY DISPUTED and this must not be flattened to one number: the Ministry of Environment states \"estimated 2,600+ years\" and this is used as the headline figure since it is the most authoritative single source; however other commonly cited figures range from about 1,300 years (low end of one ring-count-adjacent estimate) up to 7,200 years (an older, now largely discredited popular claim from early core-sampling attempts that could not reach true heartwood because the tree is hollow/rotted at the centre), with 2,400 cited elsewhere as a median. Because Yakusugi rot from the centre outward, no core sample has ever reached the true pith, so EVERY age figure for this tree is an extrapolation and none should be stated as fact -- the age_min/age_max band (2000-3600) is set around the official estimate rather than the full disputed range, and verify_notes flags the dispute explicitly for the writer rather than picking a winner silently. Discovered/named in 1966 by a postal worker; the name Jomon (referring to Japan's Jomon prehistoric period, roughly 14000-300 BCE) reflects its supposed antiquity rather than a proven date. Designated part of a Special Natural Monument (tokubetsu tennen kinenbutsu) covering the surrounding old-growth cedar forest. Access is a genuine full-day mountain hike, not a park visit; the page must say so plainly per the brief's Jomon Sugi worked example, and the pin marks the viewing deck, not the trunk, since visitors cannot approach the tree itself."
-  }
+  "verified_sources": [
+   "https://www.env.go.jp/nature/isan/worldheritage/yakushima/area/a07.html",
+   "https://www.rinya.maff.go.jp/kyusyu/yakusima_hozen_c/tozansyanominasamahe.html",
+   "https://ja.wikipedia.org/wiki/%E7%B8%84%E6%96%87%E6%9D%89"
+  ],
+  "access": "Free to view (no entry ticket to the forest itself), but a voluntary mountain-area conservation cooperation fee is strongly requested on this route: 1,000 yen for a day visit, 2,000 yen if overnighting in the mountains, for middle-school age and up. The tree itself is fenced off for protection: visitors view it from a wooden deck roughly 10m from the trunk, mainly from three sides, and may not approach the base or roots (root-plate trampling damage is the reason). This is a serious mountain hike, not a park walk: round trip from the Arakawa trailhead is roughly 9-10 hours, largely along an old logging-tramway bed (torokko-michi, about 8km) followed by a mountain trail. From 1 March to 30 November, the access road to the Arakawa trailhead is closed to private cars; visitors must buy a seat in advance on the Arakawa Tozan shuttle bus, which runs from the Yakusugi Museum bus stop. From 1 December to end of February, private cars may drive to the trailhead directly. Sturdy hiking gear, an early start (buses run pre-dawn) and a full day are required; this is explicitly the kind of trip that must be described honestly as a serious hike, never as a stroll.",
+  "transport": "No public transport reaches the trailhead directly; the Arakawa Tozan shuttle bus (pre-booked ticket, purchased in advance at Miyanoura or Anbo tourist information counters) runs between the Yakusugi Museum and the Arakawa trailhead during the March-November restricted season. From the trailhead it is roughly 9-10 hours round trip on foot to the viewing deck.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Alive: yes, unambiguously -- this is the single most documented and visited ancient tree in Japan, part of the Yakushima UNESCO World Heritage core zone, monitored and maintained by the Kyushu Forest Management Bureau, with current official pages. Species is Yakusugi, the local ecotype of Cryptomeria japonica (Japanese cedar) that grows only on Yakushima above about 500m and is defined as sugi over 1000 years old; genus and species both well established, no ambiguity, so given as the full binomial rather than sp. Girth (at 1.3m) 16.4m/1640cm, height 25.3m, per the Ministry of Environment official page -- the largest known Yakusugi. AGE IS GENUINELY DISPUTED and this must not be flattened to one number: the Ministry of Environment states \"estimated 2,600+ years\" and this is used as the headline figure since it is the most authoritative single source; however other commonly cited figures range from about 1,300 years (low end of one ring-count-adjacent estimate) up to 7,200 years (an older, now largely discredited popular claim from early core-sampling attempts that could not reach true heartwood because the tree is hollow/rotted at the centre), with 2,400 cited elsewhere as a median. Because Yakusugi rot from the centre outward, no core sample has ever reached the true pith, so EVERY age figure for this tree is an extrapolation and none should be stated as fact -- the age_min/age_max band (2000-3600) is set around the official estimate rather than the full disputed range, and verify_notes flags the dispute explicitly for the writer rather than picking a winner silently. Discovered/named in 1966 by a postal worker; the name Jomon (referring to Japan's Jomon prehistoric period, roughly 14000-300 BCE) reflects its supposed antiquity rather than a proven date. Designated part of a Special Natural Monument (tokubetsu tennen kinenbutsu) covering the surrounding old-growth cedar forest. Access is a genuine full-day mountain hike, not a park visit; the page must say so plainly per the brief's Jomon Sugi worked example, and the pin marks the viewing deck, not the trunk, since visitors cannot approach the tree itself."
+ }
 ]
