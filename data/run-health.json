@@ -3028,6 +3028,36 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-01T18:42:10+00:00",
+   "date": "2026-09-01",
+   "run_id": null,
+   "minutes": 0.0,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [],
+   "logged": null
+  },
+  {
+   "started": "2026-09-01T18:42:32+00:00",
+   "date": "2026-09-01",
+   "run_id": null,
+   "minutes": 0.0,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [],
+   "logged": null
   }
  ],
  "schedule_changes": [

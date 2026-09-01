@@ -1,0 +1,88 @@
+{
+  "_note": "Deutsches Overlay für München, von Hand geschrieben 2026-09-01. Nur Text: Koordinaten, Fotos, Lizenzen, best_time und Spaziergänge bleiben in data/cities/munich.json. Suchbegriffe folgen dem, was in München tatsächlich gesucht wird: 'alte Bäume München', 'Naturdenkmal München', dazu die amtliche Kategorie der Stadt, das Naturdenkmal.",
+  "city": "München",
+  "title": "Alte Bäume in München: 45 bemerkenswerte Exemplare",
+  "meta_description": "München schützt 200 Bäume per Verordnung als Naturdenkmal. Eine Eiche von rund 600 Jahren, eine hohle Linde mit eigenem Maler, acht Zürgelbäume am Ring.",
+  "intro": "München führt über seine bemerkenswerten Bäume Buch, mit Paragraf und Nummer: Eine Verordnung von 2021 verzeichnet 117 Naturdenkmäler, die 200 Bäume umfassen, jeder rechtlich geschützt wie ein denkmalgeschütztes Haus. Diese behördliche Genauigkeit passt schlecht zur Herkunft der Bäume: gepflanzt im Landschaftsgarten eines Reichsgrafen, verwildert in einem Klosterobstgarten, von zwölftausend Schulkindern zum Ende eines Krieges in die Erde gesetzt. Zwei der Bäume auf dieser Seite tragen konkurrierende Ansprüche darauf, der älteste Baum der Stadt zu sein, und keiner der beiden ist geklärt. München hat auch nicht versucht, die Sache zu entscheiden.",
+  "question_title": "Was ist der älteste Baum Münchens? Zwei Ansprüche",
+  "question_meta": "München hat zwei konkurrierende Ansprüche auf den ältesten Baum: eine Eiche von rund 600 Jahren und eine Linde von 300 bis 350. Beide erklärt.",
+  "question_answer": "München hat keinen einzelnen anerkannt ältesten Baum: Zwei verschiedene Bäume tragen den Anspruch, aus verschiedenen Quellen. Die Krüner Eiche, eine Stieleiche in Sendling-Westpark, wird von einer Bürgerversammlung des Stadtbezirks auf rund 600 Jahre datiert, was sie in die 1420er Jahre setzen würde. Die Röth-Linde in Moosach, eine Winterlinde, wird davon unabhängig in der Lokalpresse mit 300 bis 350 Jahren als ältester Baum der Stadt beschrieben. Die beiden Ansprüche sind nie gegeneinander abgeglichen worden.",
+  "question_context": "Münchens eigene Zählung ist der genaueste Ausgangspunkt, den eine Stadt auf dieser Liste bisher geliefert hat: Eine Verordnung von 2021 benennt 117 geschützte Naturdenkmäler, die 200 einzelne Bäume über das ganze Stadtgebiet umfassen, jedes mit einer Begründung aus Seltenheit, Größe, Schönheit oder historischem Bezug. Beim Alter sieht es anders aus. Ringe zählen heißt fällen, deshalb stammt hier jedes Alter aus Wachstumsmodellen, historischer Zuordnung oder schlicht örtlichem Ruf und nicht aus einer geprüften Zählung. Die Angabe von rund 600 Jahren für die Krüner Eiche stammt aus einem Papier der Bürgerversammlung Sendling-Westpark von 2017, das für den Erhalt der Eiche warb; die Angabe von 300 bis 350 Jahren für die Röth-Linde und ihre Rolle als ältester Baum Münchens stammt aus einem eigenen Bericht der Lokalpresse und aus dem deutschen Wikipedia-Artikel des Baums. Beide stehen hier als das, was sie sind, ehrliche und belegte Ansprüche, und werden nicht zu einem Sieger verrechnet. Die Krüner Eiche steht am Krüner Platz in Sendling-Westpark, acht Gehminuten vom U-Bahnhof Harras entfernt.",
+  "faq": [
+    {
+      "q": "Was ist der älteste Baum Münchens?",
+      "a": "Zwei Bäume beanspruchen den Titel, aus verschiedenen Quellen: die rund 600 Jahre alte Krüner Eiche in Sendling-Westpark und die 300 bis 350 Jahre alte Röth-Linde in Moosach, die in der Lokalpresse eigenständig als ältester Baum der Stadt bezeichnet wird. Keiner der beiden Ansprüche ist am anderen geprüft worden."
+    },
+    {
+      "q": "Wie schützt München seine alten und bemerkenswerten Bäume?",
+      "a": "Per Verordnung. Eine Neufassung der Naturdenkmalverordnung von 2021 führt 117 einzeln geschützte Naturdenkmäler auf, die 200 Bäume im ganzen Stadtgebiet umfassen, jeder rechtlich geschützt wegen seines Alters, seiner Seltenheit, seiner Größe oder seines historischen Bezugs."
+    },
+    {
+      "q": "Wo sieht man geschützte Bäume in München am besten?",
+      "a": "Im Englischen Garten stehen drei Bäume dieser Liste in kurzer Entfernung voneinander: die ältesten bekannten Ulmen der Stadt, eine über 300 Jahre alte Buche und eine seltene farnblättrige Buchenform, alle in der südlichen Hälfte des Parks nahe dem Chinesischen Turm."
+    },
+    {
+      "q": "Sind Münchens bemerkenswerte Bäume kostenlos zu sehen?",
+      "a": "Ja. Sie stehen alle in öffentlichen Parks, auf Plätzen und an Straßen ohne Eintritt, auch wenn im Schlosspark Nymphenburg, wo einer von ihnen wächst, das Schlossinnere selbst Eintritt kostet."
+    }
+  ],
+  "strings_note": "Felder pro Baum: name, species (deutscher Artname, gleiche lateinische Bezeichnung), age_estimate, access, transport, story. Stories 150-250 Wörter, gleiche Messlatte wie im Englischen, keine Gedankenstriche.",
+  "trees": {
+    "muc_001": {
+      "name": "Die Röth-Linde",
+      "species": "Winterlinde (Tilia cordata)",
+      "age_estimate": "300 bis 350 Jahre",
+      "access": "Kostenlos, öffentlicher Grund, von außerhalb von Gut Nederling einsehbar",
+      "transport": "10 Gehminuten von der Bushaltestelle Nederlinger Straße oder vom S-Bahnhof Moosach",
+      "story": "Ein Maler hat diesen Baum berühmt gemacht, indem er sich unter ihn setzte, und seither kämpft der Baum um sein Leben. Die örtliche Überlieferung will, dass die Linde nach dem Ende des Dreißigjährigen Krieges 1648 als Friedensbaum gepflanzt wurde, was die Pflanzung in die Mitte des 17. Jahrhunderts legen würde, auch wenn ihr genaues Alter wie bei den meisten Bäumen dieser Liste auf einer Schätzung beruht und nicht auf einem dokumentierten Pflanznachweis. Als der Landschaftsmaler Philipp Röth um die Wende zum 20. Jahrhundert in ihrem Schatten arbeitete, galt der Baum bereits als etwa 200 Jahre alt, und heute trägt er dessen Namen und eine Gedenktafel. Dieses lange Leben hat seinen Preis. Eine missglückte Pilzbehandlung in den 1980er Jahren hinterließ den Stamm hohl, und der Baum steht heute an acht Kronensicherungen aus Metall und einer Aststütze, wird gewässert und geschnitten, von einem lokalen Bericht als Intensivpatient beschrieben. Winterlinden können unter guten Bedingungen tausend Jahre alt werden. Das macht den heutigen Zustand der Röth-Linde, die mit 23 Metern Höhe und einem Stamm von über sechs Metern Umfang noch jedes Frühjahr austreibt, ebenso sehr zu einer Geschichte über Baumpflege wie über Alter."
+    },
+    "muc_002": {
+      "name": "Die Krüner Eiche",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "etwa 600 Jahre",
+      "access": "Kostenlos, öffentliche Grünanlage",
+      "transport": "8 Gehminuten vom U-Bahnhof Harras (U3, U6)",
+      "story": "Diese Eiche hat das Dorf überdauert, vor dem sie einst stand, das bayerische Herzogtum, das hier einmal regierte, und die meisten ihrer eigenen starken Äste. Eine Empfehlung der Bürgerversammlung des Stadtbezirks Sendling-Westpark von 2017, die für den Schutz und die weitere Pflege des Baums warb, datiert ihn auf rund 600 Jahre, was seine Anfänge in die 1420er Jahre legen würde, eine Zeit, in der München noch unmittelbar von Wittelsbacher Herzögen regiert wurde und in der Herzog Albrecht III. 1436 in der Stadt heiratete. Keine Quelle verbindet die Pflanzung des Baums mit diesem oder irgendeinem anderen bestimmten Ereignis, deshalb bleibt eine solche Verbindung hier unbehauptet. Belegt ist der jüngere Schaden. Drei starke Äste wurden im Lauf der Jahre entfernt, ein vierter brach von selbst ab, und das dünnte eine Krone aus, die sich einst weit ausbreitete, mit dem schlangenhaft gedrehten Astwerk sehr alter Stieleichen. Im Juli 2022 kam ein neuer Schutzzaun um den Stamm, damit der verdichtete Boden über den Wurzeln nicht weiter leidet. Der Baum steht noch immer an der Ostecke der kleinen Grünanlage, die seinen Namen trägt, ein Überlebender aus sechs Jahrhunderten, heute abgezäunt von den Joggern und Hundehaltern, die täglich an ihm vorbeikommen."
+    },
+    "muc_003": {
+      "name": "Die Reichs- und Friedenseiche",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "155 Jahre",
+      "access": "Kostenlos, öffentliche Grünanlage",
+      "transport": "10 Gehminuten von der Tram- und Bushaltestelle Brudermühlbrücke",
+      "story": "Zwölftausend Schulkinder haben diese Eiche an einem Nachmittag gepflanzt, oder zumindest zugesehen, wie eine Handvoll ihrer Mitschüler es tat. Am 1. Juli 1871, wenige Wochen nach der Unterzeichnung des Friedensvertrags in Frankfurt, der den Deutsch-Französischen Krieg beendete, veranstaltete München auf den Flaucherwiesen an der Isar ein Friedensfest: Ein Zug aus Kindern, Stadträten und Gästen versammelte sich, während ausgesuchte Buben und Mädchen einen jungen Eichensetzling in den Boden setzten. Eine Tafel am Ort trägt bis heute die Inschrift Reichs- und Friedens-Eiche, gepflanzt von der Jugend der Stadt München am 1. Juli 1871, womit dieser Baum zu den wenigen dieser Liste gehört, die ein genaues, unbestrittenes Pflanzdatum haben statt einer Schätzung. Ähnliche Friedenseichen kamen in jenem Jahr in vielen deutschen Städten in die Erde, jede ein kleines Stück Bürgertheater, das die Gründung des Deutschen Kaiserreichs unter Kaiser Wilhelm I. mindestens ebenso feierte wie den Frieden. Dieser hier hatte seither anderthalb Jahrhunderte Zeit, zu einer gewöhnlichen, unauffällig aussehenden Eiche in einem Park an der Isar heranzuwachsen. Ihre eigentliche Besonderheit liegt ganz im Datum und nicht im Stamm."
+    },
+    "muc_004": {
+      "name": "Die Buche im Englischen Garten",
+      "species": "Rotbuche (Fagus sylvatica)",
+      "age_estimate": "über 300 Jahre",
+      "access": "Kostenlos, öffentlicher Park",
+      "transport": "15 Gehminuten vom U-Bahnhof Universität oder mit dem Bus bis Nationalmuseum/Haus der Kunst",
+      "story": "Diese Buche war schon alt, als der Park um sie herum neu war. Der Englische Garten wurde ab 1789 auf Anordnung von Kurfürst Karl Theodor angelegt, entworfen vom in Amerika geborenen Benjamin Thompson, Reichsgraf von Rumford, als einer der ersten öffentlichen Parks auf dem europäischen Festland, offen für alle statt einem Hof vorbehalten. Das meiste, was heute im Park wächst, stammt aus diesem Entwurf und seiner Erweiterung im 19. Jahrhundert. Diese Buche aber, zwischen Forstweg und Friedrich-Ludwig-von-Sckell-Weg nahe dem zweiten Reitweg des Parks, ist älter als das ganze Vorhaben. Münchens eigenes Naturdenkmalregister beschreibt sie als über 300 Jahre alt und als herausragenden Baum ihrer unmittelbaren Umgebung. Das würde ihre Anfänge in das frühe 18. Jahrhundert oder davor legen, Jahrzehnte vor Rumfords Gartenkolonnen, und hieße: Entweder haben die Gestalter des Parks um einen vorhandenen Baum herum geplant, oder die Buche hat schlicht überdauert, was vor ihnen daneben stand. Eine eigene Messung oder ein an Jahresringen abgezähltes Alter gibt es für sie nicht, deshalb steht die Angabe von drei Jahrhunderten hier als das, was sie ist, als eingetragene Schätzung und nicht als gesicherte Tatsache."
+    },
+    "muc_005": {
+      "name": "Die beiden Ulmen im Englischen Garten",
+      "species": "Flatterulme (Ulmus laevis)",
+      "age_estimate": "undatiert, beschrieben als die ältesten Ulmen der Stadt",
+      "access": "Kostenlos, öffentlicher Park",
+      "transport": "10 Gehminuten von der Bushaltestelle Chinesischer Turm oder vom U-Bahnhof Universität",
+      "story": "Münchens eigenes Naturdenkmalregister macht über diese beiden Bäume eine konkrete, überprüfbare Aussage: Ältere Ulmen sind nirgends in der Stadt bekannt. Nordwestlich des Monopteros und südwestlich des Chinesischen Turms, im belebtesten Teil des Englischen Gartens, stehen die zwei Flatterulmen, eine Art, die dem Ulmensterben besser standgehalten hat als die meisten ihrer europäischen Verwandten und die dennoch in keiner deutschen Stadt häufig in dieser Größe zu finden ist, seit die Epidemie im Lauf des 20. Jahrhunderts durchgezogen ist. Keiner der beiden Bäume trägt ein einzeln gemessenes Alter, die Aussage beruht also auf einem Vergleich und nicht auf einer Zahl. Sie ist aber konkret und amtlich statt ein vager Reiseführer-Superlativ, aufgestellt von derselben städtischen Verordnung, die 200 Bäume in München namentlich schützt. Jede Woche gehen Tausende Besucher auf dem Weg zum Biergarten am Chinesischen Turm wenige Meter an den beiden Ulmen vorbei, die meisten ohne zu wissen, dass sie an den ältesten Ulmen entlanglaufen, auf die die Stadt zeigen kann."
+    },
+    "muc_006": {
+      "name": "Die Farnblättrige Buche",
+      "species": "Farnblättrige Buche (Fagus sylvatica f. asplenifolia)",
+      "age_estimate": "undatiert",
+      "access": "Kostenlos, öffentlicher Park",
+      "transport": "10 Gehminuten von der Bushaltestelle Chinesischer Turm",
+      "story": "Die alten Bäume des Englischen Gartens haben nicht durch Glück überlebt. Der Park wird seit mehr als zweihundert Jahren von der bayerischen Schlösserverwaltung gepflegt und ist als Gartendenkmal und als Landschaftsschutzgebiet geschützt, was die wachsende Stadt davon abgehalten hat, ihn zu bebauen. Diese Buche steht aus einem anderen Grund im Register: Es gibt sie in München sonst kaum. Die Farnblättrige Buche ist eine natürlich auftretende Form der gewöhnlichen Rotbuche, bei der die Blätter schmal, tief eingeschnitten und fast wie Spitze wachsen statt breit und oval, eine genetische Laune, die gelegentlich in Buchenwäldern auftaucht und dann bewusst vermehrt wird, wenn jemand sie bemerkt. Münchens Exemplar steht westlich des Verwaltungsgebäudes nahe dem Chinesischen Turm am Ufer des Schwabinger Bachs, hat einen Stamm von 3,67 Metern Umfang und ist von der Stadt ausdrücklich wegen der Seltenheit dieser Form innerhalb Münchens eingetragen, nicht wegen Größe oder belegtem Alter, anders als die meisten Naturdenkmäler dieser Liste. Aus einiger Entfernung kann sie in vollem Laub fast federartig wirken neben einer gewöhnlichen Buche daneben, eine kleine, absichtlich erhaltene Abweichung in einer der ruhigeren Ecken des Parks statt an seinen Hauptwegen."
+    },
+    "muc_007": {
+      "name": "Die Eiche am Dörfchen, Nymphenburg",
+      "species": "Stieleiche (Quercus robur)",
+      "age_estimate": "undatiert, als einzigartig in der Größe für die Stadt bezeichnet",
+      "access": "Kostenlos, öffentlicher Park (Schlossinneres und Botanischer Garten kosten getrennt Eintritt)",
+      "transport": "5 Gehminuten von der Tramhaltestelle Schloss Nymphenburg (Linie 17)",
+      "story": "Diese Eiche wächst in dem einen Teil eines königlichen Schlossgartens, der so gebaut wurde, als wäre er gar nicht gestaltet. Das Dörfchen ist eine Gruppe ländlich gehaltener Wirtschaftsgebäude im Schlosspark Nymphenburg, ab 1803 errichtet als malerischer Gegensatz zum barocken und später englischen Landschaftsteil ringsum, mit arbeitender Meierei und einer Kapelle, die einem Publikum, das nie so leben musste, das gewöhnliche Landleben vor Augen führen sollte. Die Eiche steht nahe dem Brunnhaus, auf dem Weg Richtung Badenburg und Großer See, und Münchens eigenes Naturdenkmalregister hebt sie als einzigartig in ihrer Größe innerhalb der Stadt hervor, eine Aussage über Maß und nicht über Alter, denn keine Quelle nennt für den Baum ein Pflanzdatum oder ein genaues Alter. Sicher ist, dass sie groß genug geworden ist, auf einem Gelände, das seit dem 17. Jahrhundert ununterbrochen von der bayerischen Königsfamilie und ihren Nachfolgern gepflegt wird, um in einem Park voller jahrhundertealter förmlicher Alleen einen eigenen rechtlichen Schutz zu bekommen."
+    }
+  }
+}
