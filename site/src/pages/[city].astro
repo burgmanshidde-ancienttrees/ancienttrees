@@ -105,13 +105,19 @@ const oldestHere = oldestTree(trees, city.data);
 const oldestAge = oldestHere ? ageToken(oldestHere) : null;
 const oldestYears = oldestAge ? parseInt(oldestAge.replace(/,/g, ""), 10) : 0;
 const ageHook = oldestYears >= 200 ? oldestAge : null;
+// A title is title-cased, so the count is spelled out at one: "1 tree Worth
+// Visiting" is what nTrees() gives here and it reads like a bug rather than a
+// sentence. Everywhere else on the page the digit is right.
+const one = trees.length === 1;
+const seeN = one ? "One Tree to See" : `${trees.length} to See`;
+const treesN = one ? "One Tree" : `${trees.length} Trees`;
 const title = fitTitle([
   ...(ageHook ? [
-    `Ancient Trees in ${cityName}: ${trees.length} to See, Oldest ${ageHook} Years`,
-    `Ancient Trees in ${cityName}: ${nTrees(trees.length)}, Oldest ${ageHook} Years`,
+    `Ancient Trees in ${cityName}: ${seeN}, Oldest ${ageHook} Years`,
+    `Ancient Trees in ${cityName}: ${treesN}, Oldest ${ageHook} Years`,
   ] : []),
-  `Ancient Trees in ${cityName}: ${trees.length === 1 ? "One Remarkable Tree" : `${trees.length} Remarkable Trees`} Worth Visiting`,
-  `Ancient Trees in ${cityName}: ${nTrees(trees.length)} Worth Visiting`,
+  `Ancient Trees in ${cityName}: ${one ? "One Remarkable Tree" : `${trees.length} Remarkable Trees`} Worth Visiting`,
+  `Ancient Trees in ${cityName}: ${treesN} Worth Visiting`,
   `Ancient Trees in ${cityName}`,
 ]);
 const description =
