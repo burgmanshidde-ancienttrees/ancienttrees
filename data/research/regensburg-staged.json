@@ -1,0 +1,291 @@
+{
+ "note": "Staged for a verify pass. Register rows and Wikidata entities may describe the SAME tree; treat matching species at matching coordinates as one tree with two records.",
+ "register": [
+  {
+   "register_id": "ND-03369",
+   "name": "Naturdenkmal Kastanien am Gries, St. Regensburg",
+   "status": "aktuell",
+   "latitude": 49.02375999,
+   "longitude": 12.09964369,
+   "group": false,
+   "point_count": 1,
+   "_km": 1.4
+  },
+  {
+   "register_id": "ND-02808",
+   "name": "Naturdenkmal Felsenpartie",
+   "status": "aktuell",
+   "latitude": 49.03150316,
+   "longitude": 12.07096224,
+   "group": false,
+   "point_count": 1,
+   "_km": 1.9
+  },
+  {
+   "register_id": "ND-02804",
+   "name": "Naturdenkmal Linde",
+   "status": "aktuell",
+   "latitude": 49.01898685,
+   "longitude": 12.00772818,
+   "group": false,
+   "point_count": 1,
+   "_km": 5.5
+  },
+  {
+   "register_id": "ND-02806",
+   "name": "Naturdenkmal Allee (13 Bäume entlang B 15 alt)",
+   "status": "aktuell",
+   "latitude": 49.06636559,
+   "longitude": 12.09926435,
+   "group": false,
+   "point_count": 1,
+   "_km": 5.6
+  },
+  {
+   "register_id": "ND-02809",
+   "name": "Naturdankmal Große Doline",
+   "status": "aktuell",
+   "latitude": 49.03886755,
+   "longitude": 12.15238917,
+   "group": false,
+   "point_count": 1,
+   "_km": 5.6
+  },
+  {
+   "register_id": "ND-02811",
+   "name": "Naturdenkmal Eiche",
+   "status": "aktuell",
+   "latitude": 48.95573204,
+   "longitude": 12.07933178,
+   "group": false,
+   "point_count": 1,
+   "_km": 6.8
+  },
+  {
+   "register_id": "ND-02810",
+   "name": "Naturdenkmal Eiche (sog. Bildeiche am Frauenreis)",
+   "status": "aktuell",
+   "latitude": 48.94769907,
+   "longitude": 12.10607131,
+   "group": false,
+   "point_count": 1,
+   "_km": 7.8
+  },
+  {
+   "register_id": "ND-03353",
+   "name": "Naturdenkmal Dorflinde in Eilsbrunn, Gde. Sinzing",
+   "status": "aktuell",
+   "latitude": 49.00447247,
+   "longitude": 11.97501083,
+   "group": false,
+   "point_count": 1,
+   "_km": 8.0
+  },
+  {
+   "register_id": "ND-02883",
+   "name": "Naturdenkmal Felsblock Die Hohe Wand",
+   "status": "aktuell",
+   "latitude": 48.98802918,
+   "longitude": 11.98075641,
+   "group": false,
+   "point_count": 1,
+   "_km": 8.1
+  },
+  {
+   "register_id": "ND-02876",
+   "name": "Naturdenkmal Stifterfelsen",
+   "status": "aktuell",
+   "latitude": 48.99933797,
+   "longitude": 11.97008466,
+   "group": false,
+   "point_count": 1,
+   "_km": 8.5
+  },
+  {
+   "register_id": "ND-02877",
+   "name": "Naturdenkmal Felsgruppe Maihöhle bei Schönhofen",
+   "status": "aktuell",
+   "latitude": 48.99933131,
+   "longitude": 11.9636531,
+   "group": false,
+   "point_count": 1,
+   "_km": 8.9
+  },
+  {
+   "register_id": "ND-03351",
+   "name": "Naturdenkmal 2 Linden in Pollenried, Gde. Nittendorf",
+   "status": "aktuell",
+   "latitude": 49.03288554,
+   "longitude": 11.93918611,
+   "group": false,
+   "point_count": 1,
+   "_km": 10.7
+  },
+  {
+   "register_id": "ND-02080",
+   "name": "ND Felsgruppe mit Marmortafel an der B16 westlich von Bad Abbach",
+   "status": "aktuell",
+   "latitude": 48.92706278,
+   "longitude": 12.02134923,
+   "group": false,
+   "point_count": 1,
+   "_km": 10.9
+  },
+  {
+   "register_id": "ND-02666",
+   "name": "Naturdenkmal Galgenberg",
+   "status": "aktuell",
+   "latitude": 49.11065551,
+   "longitude": 12.12917831,
+   "group": false,
+   "point_count": 1,
+   "_km": 11.0
+  },
+  {
+   "register_id": "ND-02816",
+   "name": "Naturdenkmal Burgruine Wolfsegg mit Tropfsteinhöhle",
+   "status": "aktuell",
+   "latitude": 49.10683723,
+   "longitude": 11.97657568,
+   "group": false,
+   "point_count": 1,
+   "_km": 12.7
+  },
+  {
+   "register_id": "ND-02079",
+   "name": "ND Teufelsfelsen bei Alkofen",
+   "status": "aktuell",
+   "latitude": 48.91338778,
+   "longitude": 11.97198728,
+   "group": false,
+   "point_count": 1,
+   "_km": 14.1
+  },
+  {
+   "register_id": "ND-02670",
+   "name": "Naturdenkmal Schloßberg Alteglofsheim",
+   "status": "aktuell",
+   "latitude": 48.91868491,
+   "longitude": 12.20652879,
+   "group": false,
+   "point_count": 1,
+   "_km": 14.1
+  },
+  {
+   "register_id": "ND-03336",
+   "name": "Naturdenkmal 2 Lindenalleen in Kürn, Gde. Bernhardswald",
+   "status": "aktuell",
+   "latitude": 49.11499414,
+   "longitude": 12.21181612,
+   "group": true,
+   "point_count": 2,
+   "_km": 14.4
+  },
+  {
+   "register_id": "ND-02671",
+   "name": "Naturdenkmal Wolfgangseiche bei Neueglofsheim",
+   "status": "aktuell",
+   "latitude": 48.90225304,
+   "longitude": 12.18271646,
+   "group": false,
+   "point_count": 1,
+   "_km": 14.6
+  },
+  {
+   "register_id": "ND-02077",
+   "name": "ND Linde bei Herrnsaal",
+   "status": "aktuell",
+   "latitude": 48.91302146,
+   "longitude": 11.94633632,
+   "group": false,
+   "point_count": 1,
+   "_km": 15.3
+  },
+  {
+   "register_id": "ND-03335",
+   "name": "Naturdenkmal 2 Eichen in Karlstein, Mkt.Regenstauf",
+   "status": "aktuell",
+   "latitude": 49.15226871,
+   "longitude": 12.17124754,
+   "group": true,
+   "point_count": 2,
+   "_km": 16.4
+  },
+  {
+   "register_id": "ND-02678",
+   "name": "Naturdenkmal Linde in Holzheim am Forst",
+   "status": "aktuell",
+   "latitude": 49.15497852,
+   "longitude": 11.9887789,
+   "group": false,
+   "point_count": 1,
+   "_km": 16.9
+  },
+  {
+   "register_id": "ND-02664",
+   "name": "Naturdenkmal Riesensprung (Felsformation)",
+   "status": "aktuell",
+   "latitude": 49.16723642,
+   "longitude": 12.17756364,
+   "group": false,
+   "point_count": 1,
+   "_km": 18.1
+  },
+  {
+   "register_id": "ND-03325",
+   "name": "Naturdenkmal 2 Linden bei kleiner Kapelle in Kallmünz, Mkt. Kallmünz",
+   "status": "aktuell",
+   "latitude": 49.15959156,
+   "longitude": 11.96078687,
+   "group": false,
+   "point_count": 1,
+   "_km": 18.2
+  },
+  {
+   "register_id": "ND-02148",
+   "name": "ND 2 Linden in Paring",
+   "status": "aktuell",
+   "latitude": 48.85096848,
+   "longitude": 12.09440548,
+   "group": false,
+   "point_count": 1,
+   "_km": 18.4
+  },
+  {
+   "register_id": "ND-03332",
+   "name": "Naturdenkmal Linde in Leonberg , St. Maxhütte- Haidhof",
+   "status": "aktuell",
+   "latitude": 49.19021772,
+   "longitude": 12.10977198,
+   "group": false,
+   "point_count": 1,
+   "_km": 19.4
+  },
+  {
+   "register_id": "ND-03323",
+   "name": "Naturdenkmal Linde in Dallackenried vor der Kapelle, Mkt. Kallmünz",
+   "status": "aktuell",
+   "latitude": 49.15289992,
+   "longitude": 11.91567092,
+   "group": false,
+   "point_count": 1,
+   "_km": 19.5
+  }
+ ],
+ "wikidata": [
+  {
+   "qid": "Q2222131",
+   "name": "Wolfgangseiche",
+   "latitude": 48.9019,
+   "longitude": 12.1827,
+   "country": "Germany",
+   "species": null,
+   "admin": "Thalmassing",
+   "planted_year": null,
+   "commons_image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sankt-Wolfgangs-Eiche.jpg",
+   "designation": null,
+   "source": "https://www.wikidata.org/wiki/Q2222131",
+   "_km": 14.7
+  }
+ ]
+}
