@@ -1,212 +1,160 @@
 [
-  {
-    "id": "tok_011",
-    "city": "Tokyo",
-    "name": "Kyu-Hosokawa-tei no Shii",
-    "species": "Japanese Chinquapin (Castanopsis sieboldii)",
-    "age_estimate": "roughly 400 years",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 813,
-    "height_m": 10.8,
-    "location": {
-      "address": "Takanawa 1-16-25, Minato-ku, Tokyo (inside Takanawa Community Plaza)",
-      "latitude": 35.64167,
-      "longitude": 139.73461,
-      "neighbourhood": "Takanawa, Minato-ku"
-    },
-    "verified_sources": [
-      "https://ja.wikipedia.org/wiki/%E6%97%A7%E7%B4%B0%E5%B7%9D%E9%82%B8%E3%81%AE%E3%82%B7%E3%82%A4",
-      "http://www.tree-flower.jp/13/kyu_hosokawatei_527/kyu_hosokawatei_shii_.html",
-      "https://www.tv-tokyo.co.jp/adomachi/backnumber/20250510/145947.html"
-    ],
-    "access": "Free. Stands on the grounds of Takanawa Community Plaza (a Minato-ku public facility), open during the plaza's public hours.",
-    "transport": "Shirokanetakanawa Station (Toei Mita Line / Tokyo Metro Namboku Line), about 1-2 minute walk; the plaza sits almost directly above the station",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Tokyo-designated Natural Monument. A sudajii (Castanopsis sieboldii) that stood in the grounds of the former Kumamoto-han Hosokawa family lower residence (shimo-yashiki) in Takanawa, and remains in the same spot today, now inside Takanawa Community Plaza. Girth 8.13m and height 10.8m per the Tokyo Board of Education plaque, confirmed identically on both Japanese Wikipedia and tree-flower.jp (independent direct fetch, iconv Shift-JIS decode). A WebSearch AI summary separately produced 7.4m girth / 17m height for this tree; that figure appears on no fetched page and was discarded per the search-summary-is-a-lead rule. Historical anecdote worth leading with: this was the Hosokawa lower residence where, after the 1701 Ako Incident, Oishi Kuranosuke Yoshio and 16 other Ako retainers were held in shogunate custody until their forced seppuku; a nearby monument still marks the site. No source states the tree itself dates from that event, only that it grew on that residence's grounds; do not bridge those two facts into a specific planting date. Age: no register or measured age exists. TV Tokyo's own documentary segment (aired 2025-05-10, fetched directly) states plainly the age is said to be roughly 400 years or more (樹齢は約400年以上といわれ); other tourism pages found via search echo a similar 300-400+ year range but were not independently fetched and are not counted as sources here. Kept exactly as vague as the source states; do not sharpen to a numeric band. Alive and current: TV Tokyo segment is from May 2025. Tree stands in a public community facility actively described and photographed by recent tourism sources."
+ {
+  "id": "tok_011",
+  "city": "Tokyo",
+  "name": "Kyu-Hosokawa-tei no Shii",
+  "species": "Japanese Chinquapin (Castanopsis sieboldii)",
+  "age_estimate": "roughly 400 years",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 813,
+  "height_m": 10.8,
+  "location": {
+   "address": "Takanawa 1-16-25, Minato-ku, Tokyo (inside Takanawa Community Plaza)",
+   "latitude": 35.64167,
+   "longitude": 139.73461,
+   "neighbourhood": "Takanawa, Minato-ku"
   },
-  {
-    "id": "tok_012",
-    "city": "Tokyo",
-    "name": "The Himalayan Cedar of Yanaka",
-    "species": "Himalayan Cedar (Cedrus deodara)",
-    "age_estimate": "around 100 years",
-    "age_min": 90,
-    "age_max": 110,
-    "girth_cm": 400,
-    "height_m": 20,
-    "location": {
-      "address": "Yanaka 1-6-15, Taito-ku, Tokyo",
-      "latitude": 35.72167,
-      "longitude": 139.76733,
-      "neighbourhood": "Yanaka, Taito-ku"
-    },
-    "verified_sources": [
-      "https://t-navi.city.taito.lg.jp/spot/1122",
-      "https://journeytotrees.com/2020/02/23/kyoju007/",
-      "https://tms-media.jp/posts/20647/"
-    ],
-    "access": "Free, no gate at all: the tree stands on public land at a small triangular street junction in Yanaka, beside what was a bakery, and is visible and reachable at any hour.",
-    "transport": "Nippori Station (JR Yamanote Line / Keisei Line), roughly a 10 minute walk through the Yanaka Ginza area",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Not a native or planted-forest tree: a genuinely unusual sight, a Himalayan cedar filling a street corner in old Tokyo. Origin, per journeytotrees.com's giant-tree blog (direct fetch): planted around 1926 by the grandfather of the bread shop 'Mikado' that still stands at its base, starting as a potted seedling watered with rice-rinsing water until it outgrew the pot and was put in the ground. Taito Ward designated it a protected tree (hogo-jumoku) in 2006; its own tourism page (t-navi.city.taito.lg.jp, direct fetch) calls it a symbol of Yanaka and one of 'Japan's 100 Best Historical Landscapes' (utsukushii Nihon no rekishiteki fudo 100-sen). Age: the ward page's own text says 90 years (likely written closer to 2016, i.e. consistent with an original 1926 planting); journeytotrees.com's own 2020 measurement entry states 'age (actual): 100 years' and separately quotes a Tokyo Shimbun headline from October 2019 giving the same figure ('Himalayan cedar, part of trunk broken, symbol of Yanaka, age 100 years'). Kept as a broad band rather than a single number because the sources themselves disagree by roughly a decade; do not sharpen. Measurements from journeytotrees.com's own 2020 visit: height 20m, trunk girth at breast height (mune-dori) 4.0m (400cm). A WebSearch AI summary separately produced a 1.5m diameter figure (roughly consistent with 400cm circumference via pi, so probably not fabricated, but it was not seen on any fetched page and is not used as the recorded figure). Health history, all from directly fetched sources: a major typhoon in October 2019 broke off roughly a third of the crown, closing the road for several days; Taito Ward pruned the tree in November 2020 for safety; journeytotrees.com's own 2023 addendum notes further pruning and hopes for recovery; a WebSearch result (not independently fetched, so treated as a lead rather than a source) describes the tree as recovered and braced for further typhoon protection in September 2024. Combined, this is recent-enough evidence of continued life, though nothing newer than 2024 was found in the time available."
+  "verified_sources": [
+   "https://ja.wikipedia.org/wiki/%E6%97%A7%E7%B4%B0%E5%B7%9D%E9%82%B8%E3%81%AE%E3%82%B7%E3%82%A4",
+   "http://www.tree-flower.jp/13/kyu_hosokawatei_527/kyu_hosokawatei_shii_.html",
+   "https://www.tv-tokyo.co.jp/adomachi/backnumber/20250510/145947.html"
+  ],
+  "access": "Free. Stands on the grounds of Takanawa Community Plaza (a Minato-ku public facility), open during the plaza's public hours.",
+  "transport": "Shirokanetakanawa Station (Toei Mita Line / Tokyo Metro Namboku Line), about 1-2 minute walk; the plaza sits almost directly above the station",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Tokyo-designated Natural Monument. A sudajii (Castanopsis sieboldii) that stood in the grounds of the former Kumamoto-han Hosokawa family lower residence (shimo-yashiki) in Takanawa, and remains in the same spot today, now inside Takanawa Community Plaza. Girth 8.13m and height 10.8m per the Tokyo Board of Education plaque, confirmed identically on both Japanese Wikipedia and tree-flower.jp (independent direct fetch, iconv Shift-JIS decode). A WebSearch AI summary separately produced 7.4m girth / 17m height for this tree; that figure appears on no fetched page and was discarded per the search-summary-is-a-lead rule. Historical anecdote worth leading with: this was the Hosokawa lower residence where, after the 1701 Ako Incident, Oishi Kuranosuke Yoshio and 16 other Ako retainers were held in shogunate custody until their forced seppuku; a nearby monument still marks the site. No source states the tree itself dates from that event, only that it grew on that residence's grounds; do not bridge those two facts into a specific planting date. Age: no register or measured age exists. TV Tokyo's own documentary segment (aired 2025-05-10, fetched directly) states plainly the age is said to be roughly 400 years or more (樹齢は約400年以上といわれ); other tourism pages found via search echo a similar 300-400+ year range but were not independently fetched and are not counted as sources here. Kept exactly as vague as the source states; do not sharpen to a numeric band. Alive and current: TV Tokyo segment is from May 2025. Tree stands in a public community facility actively described and photographed by recent tourism sources."
+ },
+ {
+  "id": "tok_012",
+  "city": "Tokyo",
+  "name": "The Himalayan Cedar of Yanaka",
+  "species": "Himalayan Cedar (Cedrus deodara)",
+  "age_estimate": "around 100 years",
+  "age_min": 90,
+  "age_max": 110,
+  "girth_cm": 400,
+  "height_m": 20,
+  "location": {
+   "address": "Yanaka 1-6-15, Taito-ku, Tokyo",
+   "latitude": 35.72167,
+   "longitude": 139.76733,
+   "neighbourhood": "Yanaka, Taito-ku"
   },
-  {
-    "id": "tok_013",
-    "city": "Tokyo",
-    "name": "Akiba no Kuromatsu",
-    "species": "Japanese Black Pine (Pinus thunbergii)",
-    "age_estimate": "about 300 years",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 400,
-    "height_m": 17,
-    "location": {
-      "address": "Denenchofu 5-chome 3-19, Ota-ku, Tokyo, beside the Umazaka slope east of Shozenji Temple",
-      "latitude": 35.595395,
-      "longitude": 139.65885,
-      "neighbourhood": "Denenchofu, Ota-ku"
-    },
-    "verified_sources": [
-      "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%84",
-      "https://nature-spot-visitor-club.blog.jp/archives/44935135.html"
-    ],
-    "access": "Free. Stands beside the public road up the Umazaka slope on the east side of Shozenji Temple, on land that historically belonged to the temple; visible and reachable directly from the street, no gate to pass.",
-    "transport": "Denenchofu Station (Tokyu Toyoko Line / Meguro Line), roughly 10-20 minute walk uphill",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Tokyo-designated Natural Monument since 19 March 1963, per Japanese Wikipedia's well-cited article (draws on Tokyo Metropolitan Board of Education's own 1992 cultural-properties survey and published giant-tree literature). Estimated age about 300 years, kept exactly that vague, no source gives a tighter figure. Height about 17m, trunk girth about 4m (400cm); main trunk grows straight up and fans out into an umbrella shape about 7m off the ground. Named for a small Akiba Shrine stone shrine at its base (Akiba being Shozenji Temple's guardian deity), hence 'Akiba no Matsu' / 'Akiba no Kuromatsu'. Grows on ground that was part of Shozenji Temple (founded 1639, Jodo-shu sect) but sits beside the public slope path (Umazaka), not behind a temple gate. Notable context from the same Wikipedia article: Tokyo's second-largest pine after Edogawa's nationally designated Yokou no Matsu (a separate candidate in this same batch), and as of 2015 the only one of Tokyo's own designated pine natural monuments still standing; named in the 'Japan's 100 Great Pines' list alongside Yokou no Matsu and the Imperial Palace's black pine. A 1986 Tokyo survey found it vigorous with strong branch growth reaching over a nearby building; branches were trimmed for wind-break risk, then further trimmed after snow broke some of what remained. Alive and current: a Japanese hiking/temple-visiting blog (nature-spot-visitor-club.blog.jp, active with posts through 2026) photographed and described this exact tree, same '~300 years' figure and the Akiba Shrine stone shrine at its base, on a walk dated September 2025, independent of and consistent with the Wikipedia description."
+  "verified_sources": [
+   "https://t-navi.city.taito.lg.jp/spot/1122",
+   "https://journeytotrees.com/2020/02/23/kyoju007/",
+   "https://tms-media.jp/posts/20647/"
+  ],
+  "access": "Free, no gate at all: the tree stands on public land at a small triangular street junction in Yanaka, beside what was a bakery, and is visible and reachable at any hour.",
+  "transport": "Nippori Station (JR Yamanote Line / Keisei Line), roughly a 10 minute walk through the Yanaka Ginza area",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Not a native or planted-forest tree: a genuinely unusual sight, a Himalayan cedar filling a street corner in old Tokyo. Origin, per journeytotrees.com's giant-tree blog (direct fetch): planted around 1926 by the grandfather of the bread shop 'Mikado' that still stands at its base, starting as a potted seedling watered with rice-rinsing water until it outgrew the pot and was put in the ground. Taito Ward designated it a protected tree (hogo-jumoku) in 2006; its own tourism page (t-navi.city.taito.lg.jp, direct fetch) calls it a symbol of Yanaka and one of 'Japan's 100 Best Historical Landscapes' (utsukushii Nihon no rekishiteki fudo 100-sen). Age: the ward page's own text says 90 years (likely written closer to 2016, i.e. consistent with an original 1926 planting); journeytotrees.com's own 2020 measurement entry states 'age (actual): 100 years' and separately quotes a Tokyo Shimbun headline from October 2019 giving the same figure ('Himalayan cedar, part of trunk broken, symbol of Yanaka, age 100 years'). Kept as a broad band rather than a single number because the sources themselves disagree by roughly a decade; do not sharpen. Measurements from journeytotrees.com's own 2020 visit: height 20m, trunk girth at breast height (mune-dori) 4.0m (400cm). A WebSearch AI summary separately produced a 1.5m diameter figure (roughly consistent with 400cm circumference via pi, so probably not fabricated, but it was not seen on any fetched page and is not used as the recorded figure). Health history, all from directly fetched sources: a major typhoon in October 2019 broke off roughly a third of the crown, closing the road for several days; Taito Ward pruned the tree in November 2020 for safety; journeytotrees.com's own 2023 addendum notes further pruning and hopes for recovery; a WebSearch result (not independently fetched, so treated as a lead rather than a source) describes the tree as recovered and braced for further typhoon protection in September 2024. Combined, this is recent-enough evidence of continued life, though nothing newer than 2024 was found in the time available."
+ },
+ {
+  "id": "tok_013",
+  "city": "Tokyo",
+  "name": "Akiba no Kuromatsu",
+  "species": "Japanese Black Pine (Pinus thunbergii)",
+  "age_estimate": "about 300 years",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 400,
+  "height_m": 17,
+  "location": {
+   "address": "Denenchofu 5-chome 3-19, Ota-ku, Tokyo, beside the Umazaka slope east of Shozenji Temple",
+   "latitude": 35.595395,
+   "longitude": 139.65885,
+   "neighbourhood": "Denenchofu, Ota-ku"
   },
-  {
-    "id": "tok_014",
-    "city": "Tokyo",
-    "name": "Yogo no Matsu",
-    "species": "Japanese Black Pine (Pinus thunbergii)",
-    "age_estimate": "over 600 years",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 450,
-    "height_m": 8,
-    "location": {
-      "address": "Higashi-Koiwa 2-24-2, Edogawa-ku, Tokyo, in the grounds of Zenyoji Temple (Koiwa Fudoson)",
-      "latitude": 35.72767,
-      "longitude": 139.8935,
-      "neighbourhood": "Higashi-Koiwa, Edogawa-ku"
-    },
-    "verified_sources": [
-      "https://ja.wikipedia.org/wiki/%E5%BD%B1%E5%90%91%E3%81%AE%E3%83%9E%E3%83%84",
-      "https://secchin.exblog.jp/38765295"
-    ],
-    "access": "Free. Zenyoji Temple (also known locally as Koiwa Fudoson) is open to the public; the pine stands prominently in the temple precinct, its huge crown held up on 82 wooden props.",
-    "transport": "JR Sobu Line to Koiwa Station, then a bus toward Kasai/Mizue to the Edogawa Hospital Mae stop, then about a 200 metre walk",
-    "location_precision": "confirmed",
-    "curation_status": "ai_generated",
-    "verify_notes": "One of Japan's most celebrated pines and a National Natural Monument (designated 21 September 2011, under the formal name Zenyoji Yogo no Matsu; Tokyo had already designated it in April 1926). A Japanese black pine said to be over 600 years old, growing in Zenyoji Temple's grounds, older than the temple itself (traditionally founded around 1500). A 1745 manuscript, Hoshizumi-san Hoshi-shoja-riki, already describes an 'old pine' at the temple, consistent with real age. The name Yogo means a deity appearing briefly in worldly form; nobody knows who named the tree. Reputed to have Japan's largest canopy spread of any pine: only about 8m tall but its low branches (splitting about 2m off the ground) fan out roughly 28m east-west and 31m north-south, over 800 square metres, held up by 82 wooden supports; trunk girth about 4.5m (450cm). Good anecdote: a decades-long, good-natured 'Japan's number one pine' rivalry with Okano Matsu in Kagawa (which died in 1993) was settled in 1980 when a sumo chief referee, asked to arbitrate after an argument at the temple, ruled both trees joint yokozuna; a commemorative plaque from that ruling still hangs under the tree. The tree itself nearly died: vigour declined from the 1970s after a nearby pond was filled in and choked its roots, and a decade-long, professionally overseen soil and drainage restoration finished in July 2011, just before the national designation. Alive and current: a firsthand visitor blog post dated 8 August 2026, describing a visit on 1 August 2026, confirms the tree standing, describes its trunk thickness directly, and repeats the 600-year age and national-monument status, independent of and consistent with the Wikipedia account."
+  "verified_sources": [
+   "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%84",
+   "https://nature-spot-visitor-club.blog.jp/archives/44935135.html"
+  ],
+  "access": "Free. Stands beside the public road up the Umazaka slope on the east side of Shozenji Temple, on land that historically belonged to the temple; visible and reachable directly from the street, no gate to pass.",
+  "transport": "Denenchofu Station (Tokyu Toyoko Line / Meguro Line), roughly 10-20 minute walk uphill",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Tokyo-designated Natural Monument since 19 March 1963, per Japanese Wikipedia's well-cited article (draws on Tokyo Metropolitan Board of Education's own 1992 cultural-properties survey and published giant-tree literature). Estimated age about 300 years, kept exactly that vague, no source gives a tighter figure. Height about 17m, trunk girth about 4m (400cm); main trunk grows straight up and fans out into an umbrella shape about 7m off the ground. Named for a small Akiba Shrine stone shrine at its base (Akiba being Shozenji Temple's guardian deity), hence 'Akiba no Matsu' / 'Akiba no Kuromatsu'. Grows on ground that was part of Shozenji Temple (founded 1639, Jodo-shu sect) but sits beside the public slope path (Umazaka), not behind a temple gate. Notable context from the same Wikipedia article: Tokyo's second-largest pine after Edogawa's nationally designated Yokou no Matsu (a separate candidate in this same batch), and as of 2015 the only one of Tokyo's own designated pine natural monuments still standing; named in the 'Japan's 100 Great Pines' list alongside Yokou no Matsu and the Imperial Palace's black pine. A 1986 Tokyo survey found it vigorous with strong branch growth reaching over a nearby building; branches were trimmed for wind-break risk, then further trimmed after snow broke some of what remained. Alive and current: a Japanese hiking/temple-visiting blog (nature-spot-visitor-club.blog.jp, active with posts through 2026) photographed and described this exact tree, same '~300 years' figure and the Akiba Shrine stone shrine at its base, on a walk dated September 2025, independent of and consistent with the Wikipedia description."
+ },
+ {
+  "id": "tok_014",
+  "city": "Tokyo",
+  "name": "Yogo no Matsu",
+  "species": "Japanese Black Pine (Pinus thunbergii)",
+  "age_estimate": "over 600 years",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 450,
+  "height_m": 8,
+  "location": {
+   "address": "Higashi-Koiwa 2-24-2, Edogawa-ku, Tokyo, in the grounds of Zenyoji Temple (Koiwa Fudoson)",
+   "latitude": 35.72767,
+   "longitude": 139.8935,
+   "neighbourhood": "Higashi-Koiwa, Edogawa-ku"
   },
-  {
-    "id": "tok_015",
-    "city": "Tokyo",
-    "name": "Yono no Okaya",
-    "species": "Japanese Nutmeg-yew (Torreya nucifera)",
-    "age_estimate": "traditionally said to be close to 1,000 years",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 700,
-    "height_m": 21.5,
-    "location": {
-      "address": "Suzuya 4-1083-1, Chuo-ku, Saitama City, Saitama Prefecture, in the Konpira-do precinct of Myogyoji Temple",
-      "latitude": 35.871998,
-      "longitude": 139.627065,
-      "neighbourhood": "Suzuya, Chuo-ku, Saitama City (roughly 30-40 minutes from central Tokyo by train, not within Tokyo itself)"
-    },
-    "verified_sources": [
-      "https://www.city.saitama.lg.jp/004/005/006/001/005/002/001/p000148.html",
-      "https://online.bunka.go.jp/heritages/detail/137954"
-    ],
-    "access": "Free. Stands in the Konpira-do (Konpira shrine hall) precinct on the south side of Myogyoji Temple, on ground open to visitors; owned by the temple (religious corporation Myogyoji).",
-    "transport": "Minami-Yono Station (JR Saikyo Line), a short walk through a residential neighbourhood; exact minutes not independently confirmed",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Not in Tokyo itself: this is Saitama City, roughly 21km from central Tokyo, well inside the day-trip boundary but must be labeled honestly as Saitama, not Tokyo. A Japanese nutmeg-yew (kaya), designated a National Natural Monument on 25 July 1932, confirmed on two independent official government pages: Saitama City's own cultural-properties page (city.saitama.lg.jp, direct fetch, page last updated 2021-12-16) and the Agency for Cultural Affairs' national designated-properties database (online.bunka.go.jp, direct fetch). Saitama City gives height 21.5m, trunk girth 7.28m and root-girth 13.5m, measured as of Showa 63 (1988); the Agency for Cultural Affairs' older listing gives girth as 'about 7 metres', consistent within rounding, and notes the trunk forks into two limbs about 1.7m above ground. Both describe the tree as vigorous (樹勢旺盛). Recorded girth_cm (700) is the more conservative of the two figures. Age is the striking part and is explicitly LEGEND, not a measured or derived figure: Myogyoji Temple's own temple history (engi), as reported on Saitama City's official page, holds that it was planted in the Chogen era of the mid-Heian period (1028-1037), and that by the Muromachi-era Oei years (1394-1428) it was already known as the largest tree in the Kanto region and a landmark for travellers. That would put it at roughly 990 years old today; kept here as the source states it, a tradition rather than a fact, and the age chip should read that way rather than as a number. Kamakura-period tradition also holds that the tree was enshrined as the sacred tree (shinboku) of the deity Konpira-ten, which is why a Konpira hall stands beside it and the tree/site is worshipped locally as Kayagi Konpira. No news of felling, death or storm damage was found in the time available, and both government source pages remain live and current, but no independently fetched firsthand account from the last few years was found either; flagged for that reason rather than for any doubt about the designation itself."
+  "verified_sources": [
+   "https://ja.wikipedia.org/wiki/%E5%BD%B1%E5%90%91%E3%81%AE%E3%83%9E%E3%83%84",
+   "https://secchin.exblog.jp/38765295"
+  ],
+  "access": "Free. Zenyoji Temple (also known locally as Koiwa Fudoson) is open to the public; the pine stands prominently in the temple precinct, its huge crown held up on 82 wooden props.",
+  "transport": "JR Sobu Line to Koiwa Station, then a bus toward Kasai/Mizue to the Edogawa Hospital Mae stop, then about a 200 metre walk",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "One of Japan's most celebrated pines and a National Natural Monument (designated 21 September 2011, under the formal name Zenyoji Yogo no Matsu; Tokyo had already designated it in April 1926). A Japanese black pine said to be over 600 years old, growing in Zenyoji Temple's grounds, older than the temple itself (traditionally founded around 1500). A 1745 manuscript, Hoshizumi-san Hoshi-shoja-riki, already describes an 'old pine' at the temple, consistent with real age. The name Yogo means a deity appearing briefly in worldly form; nobody knows who named the tree. Reputed to have Japan's largest canopy spread of any pine: only about 8m tall but its low branches (splitting about 2m off the ground) fan out roughly 28m east-west and 31m north-south, over 800 square metres, held up by 82 wooden supports; trunk girth about 4.5m (450cm). Good anecdote: a decades-long, good-natured 'Japan's number one pine' rivalry with Okano Matsu in Kagawa (which died in 1993) was settled in 1980 when a sumo chief referee, asked to arbitrate after an argument at the temple, ruled both trees joint yokozuna; a commemorative plaque from that ruling still hangs under the tree. The tree itself nearly died: vigour declined from the 1970s after a nearby pond was filled in and choked its roots, and a decade-long, professionally overseen soil and drainage restoration finished in July 2011, just before the national designation. Alive and current: a firsthand visitor blog post dated 8 August 2026, describing a visit on 1 August 2026, confirms the tree standing, describes its trunk thickness directly, and repeats the 600-year age and national-monument status, independent of and consistent with the Wikipedia account."
+ },
+ {
+  "id": "tok_015",
+  "city": "Tokyo",
+  "name": "Yono no Okaya",
+  "species": "Japanese Nutmeg-yew (Torreya nucifera)",
+  "age_estimate": "traditionally said to be close to 1,000 years",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 700,
+  "height_m": 21.5,
+  "location": {
+   "address": "Suzuya 4-1083-1, Chuo-ku, Saitama City, Saitama Prefecture, in the Konpira-do precinct of Myogyoji Temple",
+   "latitude": 35.871998,
+   "longitude": 139.627065,
+   "neighbourhood": "Suzuya, Chuo-ku, Saitama City (roughly 30-40 minutes from central Tokyo by train, not within Tokyo itself)"
   },
-  {
-    "id": "kmk_007",
-    "city": "Kamakura",
-    "name": "The Tsurugaoka Hachimangu Ginkgo",
-    "species": "Ginkgo (Ginkgo biloba)",
-    "age_estimate": "young regrowth, sprouted 2012",
-    "age_min": 13,
-    "age_max": 15,
-    "girth_cm": null,
-    "height_m": 8,
-    "location": {
-      "address": "Tsurugaoka Hachimangu Shrine, beside the great stone stairway (Oishidan), 2-1-31 Yukinoshita, Kamakura",
-      "latitude": 35.32569,
-      "longitude": 139.55597,
-      "neighbourhood": "Yukinoshita, Kamakura"
-    },
-    "verified_sources": [
-      "https://ja.wikipedia.org/wiki/%E9%B6%B4%E5%B2%A1%E5%85%AB%E5%B9%A1%E5%AE%AE",
-      "https://www.tokyo-np.co.jp/article/389898"
-    ],
-    "access": "Free. Stands within the open grounds of Tsurugaoka Hachimangu Shrine, one of Kamakura's most visited sites, open to visitors during shrine hours (roughly dawn to early evening).",
-    "transport": "Kamakura Station (JR/Enoden), about a 10 minute walk up Wakamiya-oji avenue",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "IMPORTANT: this is not the famous ancient ginkgo. That tree, said to be around 1,000 years old, girth about 7m and height about 30m, a Kanagawa-designated Natural Monument, fell at its base at 4:40am on 10 March 2010 in a snowy strong wind (confirmed on the shrine's own Japanese Wikipedia article, direct fetch, and matches this file's own leads note). It is not a collectible entry; do not present the original tree's age or measurements as belonging to what stands there now. What ships here is the SUCCESSOR: the shrine tried three regeneration routes after the fall (the original stump left in place, a 4m root-stock section transplanted a few metres away, and cuttings). Most attempts died: young shoots appeared on both the stump and the transplant in spring 2010 but had all withered by autumn, and further growth from the stump was poor. In February 2012, while clearing dead shoots and rot, staff found one healthy shoot, about 10cm, growing directly from the old stump; a supervising former Tokyo University of Agriculture professor called it 'a miracle that just one survived.' Per Tokyo Shimbun's 15-years-later feature, dated 6 March 2025 (direct fetch): that single surviving sucker has since grown into a young tree over 8 metres tall, described as still growing and a symbol of resilience to local residents, and is the only one of the many sprouted shoots that made it. So the tree recorded here is genuinely young, roughly 13-15 years old counting from the 2012 sprout, standing near the shrine's great stone stairway alongside the preserved stump and transplanted root-stock, which remain visible beside it as a memorial to the original. Historical colour for the story, clearly about the old tree and its site rather than this sapling: local legend holds that Minamoto no Sanetomo's assassin hid behind the great ginkgo's trunk in 1219, though the tree's actual age even before falling makes it very unlikely the original specimen was old enough in 1219 to have hidden anyone; treat this as a well-known local legend to be flagged as such, never as fact."
+  "verified_sources": [
+   "https://www.city.saitama.lg.jp/004/005/006/001/005/002/001/p000148.html",
+   "https://online.bunka.go.jp/heritages/detail/137954"
+  ],
+  "access": "Free. Stands in the Konpira-do (Konpira shrine hall) precinct on the south side of Myogyoji Temple, on ground open to visitors; owned by the temple (religious corporation Myogyoji).",
+  "transport": "Minami-Yono Station (JR Saikyo Line), a short walk through a residential neighbourhood; exact minutes not independently confirmed",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Not in Tokyo itself: this is Saitama City, roughly 21km from central Tokyo, well inside the day-trip boundary but must be labeled honestly as Saitama, not Tokyo. A Japanese nutmeg-yew (kaya), designated a National Natural Monument on 25 July 1932, confirmed on two independent official government pages: Saitama City's own cultural-properties page (city.saitama.lg.jp, direct fetch, page last updated 2021-12-16) and the Agency for Cultural Affairs' national designated-properties database (online.bunka.go.jp, direct fetch). Saitama City gives height 21.5m, trunk girth 7.28m and root-girth 13.5m, measured as of Showa 63 (1988); the Agency for Cultural Affairs' older listing gives girth as 'about 7 metres', consistent within rounding, and notes the trunk forks into two limbs about 1.7m above ground. Both describe the tree as vigorous (樹勢旺盛). Recorded girth_cm (700) is the more conservative of the two figures. Age is the striking part and is explicitly LEGEND, not a measured or derived figure: Myogyoji Temple's own temple history (engi), as reported on Saitama City's official page, holds that it was planted in the Chogen era of the mid-Heian period (1028-1037), and that by the Muromachi-era Oei years (1394-1428) it was already known as the largest tree in the Kanto region and a landmark for travellers. That would put it at roughly 990 years old today; kept here as the source states it, a tradition rather than a fact, and the age chip should read that way rather than as a number. Kamakura-period tradition also holds that the tree was enshrined as the sacred tree (shinboku) of the deity Konpira-ten, which is why a Konpira hall stands beside it and the tree/site is worshipped locally as Kayagi Konpira. No news of felling, death or storm damage was found in the time available, and both government source pages remain live and current, but no independently fetched firsthand account from the last few years was found either; flagged for that reason rather than for any doubt about the designation itself."
+ },
+ {
+  "id": "osa_005",
+  "city": "Osaka",
+  "name": "Noma no Okeyaki",
+  "species": "Saw-leaf Zelkova (Zelkova serrata)",
+  "age_estimate": "over 1,000 years",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 1301,
+  "height_m": 27.37,
+  "location": {
+   "address": "Noma-Inaji 251-1, Nose-cho, Toyono-gun, Osaka Prefecture, beside the Noma-Inaji intersection on National Route 477",
+   "latitude": 34.946052,
+   "longitude": 135.45068,
+   "neighbourhood": "Nose-cho, Toyono-gun, Osaka Prefecture (a rural mountain town roughly 28km from central Osaka, not Osaka City itself)"
   },
-  {
-    "id": "kmk_008",
-    "city": "Kamakura",
-    "name": "The Byakushin of Kencho-ji",
-    "species": "Chinese Juniper (Juniperus chinensis)",
-    "age_estimate": "roughly 750 years",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 659,
-    "height_m": 13,
-    "location": {
-      "address": "Kencho-ji Temple, Yamanouchi 8, Kamakura, in front of the Butsuden (Buddha Hall)",
-      "latitude": 35.33117,
-      "longitude": 139.5545,
-      "neighbourhood": "Yamanouchi, Kamakura"
-    },
-    "verified_sources": [
-      "https://ja.wikipedia.org/wiki/%E5%BB%BA%E9%95%B7%E5%AF%BA",
-      "https://wood.co.jp/8-jumoku/kyoju/kanagawa/ibuki-kenchoji.html"
-    ],
-    "access": "Paid entry to Kencho-ji Temple grounds (a working Zen monastery and one of Kamakura's five great temples); the juniper stands in the open temple precinct in front of the Buddha Hall, reachable on the normal visitor route.",
-    "transport": "Kita-Kamakura Station (JR Yokosuka Line), roughly 15 minute walk toward Kamakura Station",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Kamakura City-designated Natural Monument (9 November 1994). Temple tradition (jiden) holds that Kencho-ji's founding abbot Rankei Doryu (Lanxi Daolong), the Chinese Zen monk who established the temple in 1253, personally planted it from seed brought over from Song-dynasty China; kept here as tradition rather than a documented planting record. Kencho-ji's own Wikipedia article (direct fetch) describes SEVEN old byakushin (Chinese juniper, Japanese common name ibuki) standing in front of the Buddha Hall, all said to be Rankei Doryu's own planting and all given the same roughly 750-year age. wood.co.jp's dedicated giant-tree catalogue (direct fetch, established reference site since 1996) singles out the largest/most notable of these as its own designated entry: height 13m, trunk girth 6.59m (659cm), the same 750-year age and founder legend, and notes about eight more junipers stand elsewhere in the grounds. Recorded girth/height here are for that one measured, individually protected specimen; the entry describes it as the one to stand in front of, with the row of its sibling trees as the setting around it. Selected for Kanagawa Prefecture's own 'Meiboku 100' (100 great named trees) list. No news of death, felling or storm damage was found; Kencho-ji is one of Kamakura's most visited and carefully maintained temples (rivalled locally only by Engaku-ji), which is soft evidence of ongoing upkeep, but no independently fetched firsthand sighting from the last few years was found in the time available, hence flagged."
-  },
-  {
-    "id": "osa_005",
-    "city": "Osaka",
-    "name": "Noma no Okeyaki",
-    "species": "Saw-leaf Zelkova (Zelkova serrata)",
-    "age_estimate": "over 1,000 years",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 1301,
-    "height_m": 27.37,
-    "location": {
-      "address": "Noma-Inaji 251-1, Nose-cho, Toyono-gun, Osaka Prefecture, beside the Noma-Inaji intersection on National Route 477",
-      "latitude": 34.946052,
-      "longitude": 135.45068,
-      "neighbourhood": "Nose-cho, Toyono-gun, Osaka Prefecture (a rural mountain town roughly 28km from central Osaka, not Osaka City itself)"
-    },
-    "verified_sources": [
-      "https://ja.wikipedia.org/wiki/%E9%87%8E%E9%96%93%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD",
-      "http://www.town.nose.osaka.jp/soshiki/syougaigakusyuuka/shogaikyoiku/shisetsu/912.html"
-    ],
-    "access": "Free, no gate. Stands right beside National Route 477 at the Noma-Inaji intersection; the town's free Keyaki Museum stands just east of it (open 10:00-17:00 Mar-Oct, 10:00-16:00 Nov-Feb, closed Tuesdays and Wednesdays). Public transport is now limited: the bus that once served it was replaced in FY2024 with a ride-share taxi restricted to town residents, commuters and students, so visitors without a car face a walk of 5km or more from the nearest station.",
-    "transport": "Nosedentetsu Myoken-guchi Station is the nearest station but is over 5km away with no general-public bus connection since 2024; reaching the tree in practice means a car or taxi",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "National Natural Monument, designated 14 January 1948 after a 1946 survey by botanist Honda Masaji. The largest zelkova in Osaka Prefecture and said to be the largest in western Japan, age estimated at over 1,000 years (no measured basis given, kept as vague as the sources state it). Two official measurement sets disagree slightly and both are recorded here rather than picked between: an on-site interpretive sign installed by Nose Town's board of education in 1998 gives height 30m, girth (mune-dori) 14m, crown spread 38m north-south by 42m east-west; the town's own currently-maintained Keyaki Museum page (direct fetch, updated 2025-02-26) gives height 27.37m, girth 13.01m, maximum crown spread 39.3m by 36.2m. Recorded figures here use the museum's, as the more current official source; the writer should feel free to cite either or note the range. The trunk splits into seven main limbs. Stood in the precinct of a shrine called Arinashi-gu (founded, by tradition, in 1220), as that shrine's sacred tree (goshinboku); the shrine itself was merged into nearby Noma Shrine in 1912, but the old precinct and the great zelkova have been maintained ever since by a local community association descended from the shrine's old parish group. Local folk tradition used the vigour of the tree's spring budding to predict whether the year's harvest would be good or bad. Health history: vigour declined at one point, and from 1994 tree doctors treated it, removing a heavy mistletoe infestation, after which it recovered. Ecologically notable and a strong seasonal hook: its huge canopy is a favoured nesting site for brown hawk-owls (aobazuku), which arrive every early summer and draw birdwatchers and photographers; the town's own page repeats this as an annual event and asks visitors to be considerate of nearby residents while photographing. Alive and current: the Nose Town government page describing the tree and its museum was itself updated 26 February 2025, and describes ongoing visitor access, opening hours and the yearly owl nesting as present-tense, ordinary facts, not history."
-  }
+  "verified_sources": [
+   "https://ja.wikipedia.org/wiki/%E9%87%8E%E9%96%93%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD",
+   "http://www.town.nose.osaka.jp/soshiki/syougaigakusyuuka/shogaikyoiku/shisetsu/912.html"
+  ],
+  "access": "Free, no gate. Stands right beside National Route 477 at the Noma-Inaji intersection; the town's free Keyaki Museum stands just east of it (open 10:00-17:00 Mar-Oct, 10:00-16:00 Nov-Feb, closed Tuesdays and Wednesdays). Public transport is now limited: the bus that once served it was replaced in FY2024 with a ride-share taxi restricted to town residents, commuters and students, so visitors without a car face a walk of 5km or more from the nearest station.",
+  "transport": "Nosedentetsu Myoken-guchi Station is the nearest station but is over 5km away with no general-public bus connection since 2024; reaching the tree in practice means a car or taxi",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "National Natural Monument, designated 14 January 1948 after a 1946 survey by botanist Honda Masaji. The largest zelkova in Osaka Prefecture and said to be the largest in western Japan, age estimated at over 1,000 years (no measured basis given, kept as vague as the sources state it). Two official measurement sets disagree slightly and both are recorded here rather than picked between: an on-site interpretive sign installed by Nose Town's board of education in 1998 gives height 30m, girth (mune-dori) 14m, crown spread 38m north-south by 42m east-west; the town's own currently-maintained Keyaki Museum page (direct fetch, updated 2025-02-26) gives height 27.37m, girth 13.01m, maximum crown spread 39.3m by 36.2m. Recorded figures here use the museum's, as the more current official source; the writer should feel free to cite either or note the range. The trunk splits into seven main limbs. Stood in the precinct of a shrine called Arinashi-gu (founded, by tradition, in 1220), as that shrine's sacred tree (goshinboku); the shrine itself was merged into nearby Noma Shrine in 1912, but the old precinct and the great zelkova have been maintained ever since by a local community association descended from the shrine's old parish group. Local folk tradition used the vigour of the tree's spring budding to predict whether the year's harvest would be good or bad. Health history: vigour declined at one point, and from 1994 tree doctors treated it, removing a heavy mistletoe infestation, after which it recovered. Ecologically notable and a strong seasonal hook: its huge canopy is a favoured nesting site for brown hawk-owls (aobazuku), which arrive every early summer and draw birdwatchers and photographers; the town's own page repeats this as an annual event and asks visitors to be considerate of nearby residents while photographing. Alive and current: the Nose Town government page describing the tree and its museum was itself updated 26 February 2025, and describes ongoing visitor access, opening hours and the yearly owl nesting as present-tense, ordinary facts, not history."
+ }
 ]
