@@ -898,12 +898,19 @@ def check_vendored_photos_are_served():
                     f"photo-manifest names {name}, which is not in the build: "
                     "every reader gets a 404 where a tree should be"
                 )
+    # A photograph somebody GAVE us is stored here directly and its tree points
+    # at it by url, so it never appears in the manifest, which only maps an
+    # external original to a local copy. Until 2026-09-01 four such files were
+    # exempted by hardcoded filename, which broke the deploy the first time a
+    # fifth arrived: the Orto botanico di Firenze sent a photograph of their
+    # Himalayan cedar and qa called it dead weight. Read the tree data instead,
+    # so the next gift needs no edit here.
+    for path in sorted((ROOT / "data" / "cities").glob("*.json")):
+        for t in json.loads(path.read_text(encoding="utf-8")).get("trees", []):
+            u = ((t.get("photo") or {}).get("url") or "")
+            if "/photos/" in u:
+                pointed_at.add(u.rsplit("/", 1)[-1])
     orphans = on_disk - pointed_at
-    # The four hand-placed files predate the manifest and are referenced from
-    # the tree data directly, so they are named rather than counted as rot.
-    orphans = {o for o in orphans if not o.endswith((
-        "wellingtons-olive.jpg", "bunya-pine-palace-hotel.jpg",
-        "redwood-fonte-santa-teresa.jpg", "pekingtuin-oak.jpg"))}
     for o in sorted(orphans)[:10]:
         failures.append(f"site/public/photos/{o} is in the build but nothing points at it")
 
