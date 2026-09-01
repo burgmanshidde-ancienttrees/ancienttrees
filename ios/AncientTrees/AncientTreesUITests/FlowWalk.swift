@@ -190,8 +190,19 @@ final class FlowWalk: XCTestCase {
                 Step(name: "open-account") {
                     Self.tap($0, "settings-account")
                 },
+                // THE SECOND ASK, and the walk has to make it too. That
+                // button is disabled until the word is in the field, so a flow
+                // that only taps is a flow testing the design we replaced. It
+                // types for real rather than reaching past the gate, which is
+                // the point: rip the gate out and this test goes red.
+                Step(name: "type-the-word") {
+                    let field = $0.textFields["delete-confirm-field"].firstMatch
+                    _ = field.waitForExistence(timeout: 10)
+                    field.tap()
+                    field.typeText("DELETE\n")
+                },
                 Step(name: "delete-asks-first") {
-                    Self.tap($0, "Delete account")
+                    Self.tap($0, "delete-confirm-button")
                 },
                 Step(name: "cancel") { Self.tap($0, "Cancel") },
                 // AND IT STOPS THERE. Closing the sheet was a fourth step and
