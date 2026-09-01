@@ -1,64 +1,84 @@
 {
-  "leads": [
-    {
-      "name": "The Abbey Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "location": "Broad Sanctuary / Dean's Yard, Westminster Abbey precinct, Westminster; Wikipedia's Great Trees of London gives tree-level coordinates 51.498972, -0.128977 for 'Broad Sanctuary'",
-      "reason": "Verify pass 2 (2026-08-08) narrowed but did not resolve the identity question flagged by pass 1. Wikipedia's Great Trees of London table (sourced to Paul Wood's 'Great Trees of London Map', Blue Crow Media, 2020) names it 'The Abbey Plane', location 'Broad Sanctuary, Westminster Abbey', species London plane, coordinates 51.498972,-0.128977, 'Accessible from 8am to 5pm', no age given. monumentaltrees.com independently describes 'London Plane close to the entrance of Westminster abbey' with girth 3.98m and height 25.4m measured 12 June 2013, verification-only per hard rule but the 'close to the entrance' description sits well with the Broad Sanctuary coordinate. HOWEVER the Wikimedia Commons file for the Wikipedia photo itself ('Abbey_Plane_(6).jpg', taken 2 July 2023, so decent alive-evidence) geolocates the shot to 'Dean's Yard' rather than Broad Sanctuary, an adjacent but distinct part of the Abbey precinct, and Westminster Abbey's own website separately describes 'two large London Plane trees' in the walled College Garden 'planted in the 1850s' with restricted public opening (regularly open to the public since 1966, not full daily street access). So three candidate locations (Broad Sanctuary streetside, Dean's Yard, walled College Garden) remain incompletely distinguished, and NO source anywhere gives a planting date or age estimate for the streetside/Dean's Yard tree specifically (the 1850s date belongs only to the walled College Garden pair, a different, less publicly accessible pair of trees). Never fabricate: do not assign this tree an age without a source. Worth a dedicated visit-based or Historic England/London Gardens Trust follow-up to pin down which physical tree is which and whether the College Garden's restricted hours count as 'genuinely open to visitors' under hard rule 10."
-    },
-    {
-      "name": "The Berkeley Plane (Wikipedia's individually-named specimen)",
-      "species": "London Plane (Platanus x acerifolia)",
-      "location": "Berkeley Square, Mayfair, coordinates 51.509465, -0.145276 per Wikipedia's Great Trees of London table",
-      "reason": "Spotted while researching lon_013-015 (verify pass 2, 2026-08-08), not chased further this pass. Wikipedia's Great Trees of London list carries a separate individually-named entry, 'The Berkeley Plane', added in the 2008 tranche, coordinates 51.509465,-0.145276, roughly 60-70m from the already-published lon_004 (The Berkeley Square Plane, 51.5102/-0.1449). lon_004 deliberately covers the square's 30+ planes as one ensemble entry ('this entry marks the square itself rather than a single trunk'). Before publishing 'The Berkeley Plane' as a distinct lon_0xx entry, a future pass needs to establish whether Wikipedia/Paul Wood's map is naming one specific, individually identifiable specimen within the square (which could stand as its own collectible point per the ensemble rule) or just duplicating the same general square that lon_004 already represents. Do not publish without resolving that distinction, to avoid two near-identical entries for the same place."
-    },
-    {
-      "name": "Amwell Fig, exact planting year",
-      "species": "Common Fig (Ficus carica)",
-      "location": "See lon_012 in the delivery file",
-      "reason": "Delivered flagged in this pass (see data/research/london-verified.json, lon_012); noted here so a later pass knows a second, non-paywalled independent source for its age (beyond thestreettree.substack.com, which cuts off at a paywall) would upgrade it from flagged to confirmed. The Amwell Society's own history page (amwell.org.uk/history) does not mention the fig at all despite covering the school's construction, which is itself odd and worth a direct follow-up."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "The Hardy Tree, St Pancras Old Church",
-      "reason": "Verify pass 3 (2026-08-09), CHECK ALIVE requested by the brief before any research: the ash tree collapsed in the early hours of 27 December 2022 after a long fungal infection, and Camden Council felled it for safety. Widely reported (BBC, ianvisits.co.uk, Londonist). The ring of gravestones stacked at its base survives and a new tree has been planted nearby, but the tree itself is dead. Never ships as an entry per the living-trees rule; never re-research."
-    },
-    {
-      "name": "Bunhill Fields Burial Ground plane trees (the avenues, distinct from the Quaker Gardens lead above)",
-      "reason": "Verify pass 3 (2026-08-09). Two independent sources (bowleswyer.co.uk, gardenvisit.com/Historic England summary) agree the burial ground's roughly 130 plane trees were planted as avenues across the whole site from the 1870s, after it became public land in 1867, so the age (roughly 150 years) is not in question. Blocked instead on the collectible-point rule: the trees line the paths as scattered avenue planting over the entire multi-acre burial ground (alongside Blake, Bunyan and Defoe's graves), not a compact cluster with one obvious place to stand, the same failure as the already-blocked Lincoln's Inn Fields entry. If a future pass can identify one specific named or individually distinguished plane within the site (e.g. one directly over the Blake or Bunyan memorial), that would pass the test where the avenue as a whole does not."
-    },
-    {
-      "name": "Gray's Inn Catalpa (the 'Bacon tree')",
-      "reason": "The specimen popularly linked to Francis Bacon and Walter Raleigh (legend: planted circa 1608, brought from Bermuda) was 'crushed beneath an up-rooted plane tree in the hurricane of 1987' according to Parks & Gardens UK, leaving only 'a single twisted trunk' of the original; that same source is skeptical of the Bacon legend itself and notes the Walks actually hold two 18th-century catalpas rather than one 400-year-old original. A fan/enthusiast site (sirbacon.org) repeats the uncritical 400-year legend with no horticultural sourcing. Blocked because it is unclear whether a living, recognisable single tree survives the 1987 storm damage at all (the never-a-carcass rule) or whether any surviving catalpa there is the 18th-century pair rather than the legendary original, and because Gray's Inn's own official page on the Walks returned HTTP 403 to every fetch attempt in this pass, so no primary confirmation of current condition or public access hours was possible."
-    },
-    {
-      "name": "Lincoln's Inn Fields plane trees",
-      "reason": "Multiple sources repeat the vague claim that Lincoln's Inn Fields holds 'some of the first London planes planted in Britain', but none names or locates an individual tree, gives a planting date, or distinguishes an old survivor from later replacements. Not a collectible point: no obvious single tree to stand at. Blocked for lack of specificity, not for access (the Fields are a genuine public park)."
-    },
-    {
-      "name": "Postman's Park mature trees",
-      "reason": "The City of London's own official page for the park (fetched directly) describes only generic planting and the Watts memorial, with no tree named, dated or otherwise singled out. Other sources mention plane, fig, chestnut and lime trees present but not any specific individual worth a page. Blocked for lack of a documented individual specimen, not for access."
-    },
-    {
-      "name": "Guildhall Yard tree",
-      "reason": "No source found describes any specific old or notable tree at Guildhall Yard; searches returned only the Roman amphitheatre and general Guildhall history. Blocked for lack of any candidate at all."
-    },
-    {
-      "name": "Christchurch Greyfriars Church Garden trees",
-      "reason": "The garden itself was only established in 1989 and replanted in 2011; whatever grows there today cannot be more than about 37 years old. Blocked as too young for this project."
-    },
-    {
-      "name": "St Dunstan-in-the-East garden fig and vines",
-      "reason": "The famous ruin garden was only opened to the public in 1970 after the City decided in 1967 to plant the bombed-out nave; nothing growing there can be more than about 56 years old. Blocked as too young, however photogenic the ruin itself is."
-    },
-    {
-      "name": "Charterhouse Square plane trees",
-      "reason": "British History Online notes the square's current planting arrangement dates to an 1853 replanting, which could put some trees at roughly 170 years, but no source names or locates one individual tree distinctly from the rest of the square's planting. Blocked for lack of a single identifiable specimen; worth another look if a future pass can get past the generic square-history sources to an arboricultural survey."
-    },
-    {
-      "name": "Girdlers' Company garden mulberry and vine",
-      "reason": "One search snippet mentions the Girdlers' Company 'had a fine walled garden with a mulberry and a vine', past tense and unsourced beyond a fragment. City livery company gardens are generally private, members-only spaces even when the Barbican-area Barber-Surgeons' and Salters' gardens are occasionally opened for events. Blocked pending confirmation the garden and tree still exist and that public access is genuine, neither of which this pass could establish."
-    }
-  ]
+ "leads": [
+  {
+   "name": "The Abbey Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "location": "Broad Sanctuary / Dean's Yard, Westminster Abbey precinct, Westminster; Wikipedia's Great Trees of London gives tree-level coordinates 51.498972, -0.128977 for 'Broad Sanctuary'",
+   "reason": "Verify pass 2 (2026-08-08) narrowed but did not resolve the identity question flagged by pass 1. Wikipedia's Great Trees of London table (sourced to Paul Wood's 'Great Trees of London Map', Blue Crow Media, 2020) names it 'The Abbey Plane', location 'Broad Sanctuary, Westminster Abbey', species London plane, coordinates 51.498972,-0.128977, 'Accessible from 8am to 5pm', no age given. monumentaltrees.com independently describes 'London Plane close to the entrance of Westminster abbey' with girth 3.98m and height 25.4m measured 12 June 2013, verification-only per hard rule but the 'close to the entrance' description sits well with the Broad Sanctuary coordinate. HOWEVER the Wikimedia Commons file for the Wikipedia photo itself ('Abbey_Plane_(6).jpg', taken 2 July 2023, so decent alive-evidence) geolocates the shot to 'Dean's Yard' rather than Broad Sanctuary, an adjacent but distinct part of the Abbey precinct, and Westminster Abbey's own website separately describes 'two large London Plane trees' in the walled College Garden 'planted in the 1850s' with restricted public opening (regularly open to the public since 1966, not full daily street access). So three candidate locations (Broad Sanctuary streetside, Dean's Yard, walled College Garden) remain incompletely distinguished, and NO source anywhere gives a planting date or age estimate for the streetside/Dean's Yard tree specifically (the 1850s date belongs only to the walled College Garden pair, a different, less publicly accessible pair of trees). Never fabricate: do not assign this tree an age without a source. Worth a dedicated visit-based or Historic England/London Gardens Trust follow-up to pin down which physical tree is which and whether the College Garden's restricted hours count as 'genuinely open to visitors' under hard rule 10."
+  },
+  {
+   "name": "The Berkeley Plane (Wikipedia's individually-named specimen)",
+   "species": "London Plane (Platanus x acerifolia)",
+   "location": "Berkeley Square, Mayfair, coordinates 51.509465, -0.145276 per Wikipedia's Great Trees of London table",
+   "reason": "Spotted while researching lon_013-015 (verify pass 2, 2026-08-08), not chased further this pass. Wikipedia's Great Trees of London list carries a separate individually-named entry, 'The Berkeley Plane', added in the 2008 tranche, coordinates 51.509465,-0.145276, roughly 60-70m from the already-published lon_004 (The Berkeley Square Plane, 51.5102/-0.1449). lon_004 deliberately covers the square's 30+ planes as one ensemble entry ('this entry marks the square itself rather than a single trunk'). Before publishing 'The Berkeley Plane' as a distinct lon_0xx entry, a future pass needs to establish whether Wikipedia/Paul Wood's map is naming one specific, individually identifiable specimen within the square (which could stand as its own collectible point per the ensemble rule) or just duplicating the same general square that lon_004 already represents. Do not publish without resolving that distinction, to avoid two near-identical entries for the same place."
+  },
+  {
+   "name": "Amwell Fig, exact planting year",
+   "species": "Common Fig (Ficus carica)",
+   "location": "See lon_012 in the delivery file",
+   "reason": "Delivered flagged in this pass (see data/research/london-verified.json, lon_012); noted here so a later pass knows a second, non-paywalled independent source for its age (beyond thestreettree.substack.com, which cuts off at a paywall) would upgrade it from flagged to confirmed. The Amwell Society's own history page (amwell.org.uk/history) does not mention the fig at all despite covering the school's construction, which is itself odd and worth a direct follow-up."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "The Hardy Tree, St Pancras Old Church",
+   "reason": "Verify pass 3 (2026-08-09), CHECK ALIVE requested by the brief before any research: the ash tree collapsed in the early hours of 27 December 2022 after a long fungal infection, and Camden Council felled it for safety. Widely reported (BBC, ianvisits.co.uk, Londonist). The ring of gravestones stacked at its base survives and a new tree has been planted nearby, but the tree itself is dead. Never ships as an entry per the living-trees rule; never re-research."
+  },
+  {
+   "name": "Bunhill Fields Burial Ground plane trees (the avenues, distinct from the Quaker Gardens lead above)",
+   "reason": "Verify pass 3 (2026-08-09). Two independent sources (bowleswyer.co.uk, gardenvisit.com/Historic England summary) agree the burial ground's roughly 130 plane trees were planted as avenues across the whole site from the 1870s, after it became public land in 1867, so the age (roughly 150 years) is not in question. Blocked instead on the collectible-point rule: the trees line the paths as scattered avenue planting over the entire multi-acre burial ground (alongside Blake, Bunyan and Defoe's graves), not a compact cluster with one obvious place to stand, the same failure as the already-blocked Lincoln's Inn Fields entry. If a future pass can identify one specific named or individually distinguished plane within the site (e.g. one directly over the Blake or Bunyan memorial), that would pass the test where the avenue as a whole does not."
+  },
+  {
+   "name": "Gray's Inn Catalpa (the 'Bacon tree')",
+   "reason": "The specimen popularly linked to Francis Bacon and Walter Raleigh (legend: planted circa 1608, brought from Bermuda) was 'crushed beneath an up-rooted plane tree in the hurricane of 1987' according to Parks & Gardens UK, leaving only 'a single twisted trunk' of the original; that same source is skeptical of the Bacon legend itself and notes the Walks actually hold two 18th-century catalpas rather than one 400-year-old original. A fan/enthusiast site (sirbacon.org) repeats the uncritical 400-year legend with no horticultural sourcing. Blocked because it is unclear whether a living, recognisable single tree survives the 1987 storm damage at all (the never-a-carcass rule) or whether any surviving catalpa there is the 18th-century pair rather than the legendary original, and because Gray's Inn's own official page on the Walks returned HTTP 403 to every fetch attempt in this pass, so no primary confirmation of current condition or public access hours was possible."
+  },
+  {
+   "name": "Lincoln's Inn Fields plane trees",
+   "reason": "Multiple sources repeat the vague claim that Lincoln's Inn Fields holds 'some of the first London planes planted in Britain', but none names or locates an individual tree, gives a planting date, or distinguishes an old survivor from later replacements. Not a collectible point: no obvious single tree to stand at. Blocked for lack of specificity, not for access (the Fields are a genuine public park)."
+  },
+  {
+   "name": "Postman's Park mature trees",
+   "reason": "The City of London's own official page for the park (fetched directly) describes only generic planting and the Watts memorial, with no tree named, dated or otherwise singled out. Other sources mention plane, fig, chestnut and lime trees present but not any specific individual worth a page. Blocked for lack of a documented individual specimen, not for access."
+  },
+  {
+   "name": "Guildhall Yard tree",
+   "reason": "No source found describes any specific old or notable tree at Guildhall Yard; searches returned only the Roman amphitheatre and general Guildhall history. Blocked for lack of any candidate at all."
+  },
+  {
+   "name": "Christchurch Greyfriars Church Garden trees",
+   "reason": "The garden itself was only established in 1989 and replanted in 2011; whatever grows there today cannot be more than about 37 years old. Blocked as too young for this project."
+  },
+  {
+   "name": "St Dunstan-in-the-East garden fig and vines",
+   "reason": "The famous ruin garden was only opened to the public in 1970 after the City decided in 1967 to plant the bombed-out nave; nothing growing there can be more than about 56 years old. Blocked as too young, however photogenic the ruin itself is."
+  },
+  {
+   "name": "Charterhouse Square plane trees",
+   "reason": "British History Online notes the square's current planting arrangement dates to an 1853 replanting, which could put some trees at roughly 170 years, but no source names or locates one individual tree distinctly from the rest of the square's planting. Blocked for lack of a single identifiable specimen; worth another look if a future pass can get past the generic square-history sources to an arboricultural survey."
+  },
+  {
+   "name": "Girdlers' Company garden mulberry and vine",
+   "reason": "One search snippet mentions the Girdlers' Company 'had a fine walled garden with a mulberry and a vine', past tense and unsourced beyond a fragment. City livery company gardens are generally private, members-only spaces even when the Barbican-area Barber-Surgeons' and Salters' gardens are occasionally opened for events. Blocked pending confirmation the garden and tree still exist and that public access is genuine, neither of which this pass could establish."
+  },
+  {
+   "name": "The Gilwell Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "lat": 51.650317,
+   "lng": 0.001064,
+   "girth_cm": 480,
+   "age_estimate": "roughly 450-550 years",
+   "reason": "Verified and written on 2026-09-01, then pulled before publishing on hard rule 10's first test. Scout Adventures' own current page says the grounds are open seven days a week with no booking, and asks day visitors to check in at the Scout Adventures Reception on arrival. A reception desk to talk past is named in the rule as a no, separately from paid entry, which is a yes. An older Epping Forest District Council document says appointment only. Everything else about this tree is good: 450 to 550 years, 480 cm round, five sources, the oak Baden-Powell's movement grew up around and fifth in Europe's Tree of the Year in 2017. The story is written and kept below. If the reception check-in turns out to be a sign-in sheet rather than a permission gate, this ships as it stands.",
+   "story": "In 2017 the British public voted an oak in Chingford England's Tree of the Year, and the next spring it came fifth in Europe on nearly 13,000 votes. It grows at Gilwell Park, the estate handed to Robert Baden-Powell in 1919 by the Scout Commissioner William de Bois Maclaren, at the edge of the ground where the first Wood Badge leader courses ran that September. Baden-Powell explained his movement's growth from a camp of boys on Brownsea Island in 1907 with the moral of the acorn and the oak. The annual Gilwell Reunion still gathers at it.\n\nIts measurements come from a 1998 guidebook to the park: 4.8 metres round at chest height, at least 14 metres tall. The age is contested. The park's own head gardener put it at 450 to 500 years in 2018 and the Tree of the Year entry says 450 to 550, while one online tertiary source claims 350 from a 2017 health survey with nothing traceable behind the number, so read the older band as the one with names attached.\n\nIn 2018 the gardener nominated it as a bit worse for wear and won it free treatment: biochar, and the compacted soil over its roots broken open. Wikipedia repeats a story that Dick Turpin hid in it, reputed and nothing more. Scout Adventures now asks day visitors to sign in at reception rather than book ahead, as an older council note had it.",
+   "access": "Free to explore for the day, no advance booking needed for a casual heritage visit: Scout Adventures' own current visiting page (archived 4 March 2026) says the grounds are open 7 days a week except a Christmas closure and days with large events, and asks day visitors only to check in at the Scout Adventures Reception in the Syd Kesseler Centre on arrival. FLAGGED CAVEAT: an Epping Forest District Council document (sourced to a 1998 guidebook, itself citing a 2008 survey) instead states 'access to the tree is by appointment only, as this site is a training complex for the Scouting Movement.' The two disagree; treated the operator's own current page as controlling since it is newer and site-specific, but note this before publishing in case the reception check-in is stricter than a drop-in visit in practice.",
+   "transport": "Chingford railway station (London Overground, London Liverpool Street line), then about a 30 minute walk to Gilwell Park along a busy road with only a partial footpath, or a taxi from the station.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gilwell_Oak",
+    "https://www.treeoftheyear.org/Previous-Years/2018/Gilwellsky-dub",
+    "https://www.eppingforestguardian.co.uk/news/17726039.ancient-english-oak-tree-gilwell-park-wins-free-tree-rescue-revitalisation-treatment/",
+    "https://www.eppingforestdc.gov.uk/app/uploads/2024/02/EB702-Favourite-Trees-EFDC-2008.pdf",
+    "http://web.archive.org/web/20260304072809/https://www.scoutadventures.org.uk/gilwell-park-heritage"
+   ],
+   "status": "blocked"
+  }
+ ]
 }

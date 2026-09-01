@@ -1,809 +1,809 @@
 {
-  "city": "London",
-  "country": "United Kingdom",
-  "status": "needs_curation",
-  "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These twenty-three range from a churchyard yew older than Londinium itself to a plane once valued at three quarters of a million pounds. All but Kew are free, though two Temple trees keep lawyers' hours.",
-  "meta_description": "London's ancient trees hide in royal parks and churchyards. Start with the Totteridge Yew, alive since before the Romans built Londinium.",
-  "question_answer": "The oldest tree in London is the Totteridge Yew, a European yew in St Andrew's churchyard in Totteridge, North London, estimated at between 1,000 and 2,000 years old. It is the oldest living thing in the city, and it stands a 15 minute walk from Totteridge and Whetstone station on the Northern Line.",
-  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and twenty-two more of the city's ancient trees.",
-  "question_context": "Ring counting does not work on ancient yews because their heartwood rots away, so estimates for the Totteridge Yew run from 1,000 to 2,000 years. Even the cautious low end makes it older than any building in London, and the high end means it was already a substantial tree when the Romans founded Londinium. It stands in the churchyard of St Andrew's in Totteridge, a village long since swallowed by North London, and the 13th century church beside it is the newcomer on the plot: the tree predates it by centuries at minimum. The district's Hundred Court once met in its shade, which tells you how long it has been the local landmark. London's runners-up are oaks rather than yews: Richmond Park and Greenwich Park hold hollow pollards in the 700 to 900 year range, survivors of the royal hunting grounds. But for sheer age, nothing in the capital touches the yew. Getting there is simple: Totteridge and Whetstone station on the Northern Line, then a 15 minute walk through the old village.",
-  "faq": [
-    {
-      "q": "What is the oldest tree in London?",
-      "a": "The Totteridge Yew in St Andrew's churchyard, Totteridge, estimated at between 1,000 and 2,000 years old. Even the cautious low estimate makes it older than any building in the city."
-    },
-    {
-      "q": "Are London's ancient trees free to visit?",
-      "a": "Fourteen of the twenty-three trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
-    },
-    {
-      "q": "Why does London have so many ancient trees?",
-      "a": "Royal hunting parks. Kings walled off Richmond and Greenwich centuries ago, and the oaks inside were spared the clearing that transformed the surrounding countryside."
-    },
-    {
-      "q": "What is a London plane?",
-      "a": "A hybrid plane tree that thrives on soot and hard pruning. London planted it everywhere from the 1700s on, and the tree took the city's name with it."
-    }
-  ],
-  "trees": [
-    {
-      "id": "lon_001",
-      "name": "The Totteridge Yew",
-      "species": "European Yew (Taxus baccata)",
-      "age_estimate": "2000 years",
-      "age_min": 1000,
-      "age_max": 2000,
-      "location": {
-        "address": "St Andrew's Churchyard, Totteridge Village, London N20 8PR",
-        "latitude": 51.6323,
-        "longitude": -0.2002,
-        "neighbourhood": "Totteridge, North London"
-      },
-      "story": "The oldest living thing in London stands in a churchyard most people drive straight past. This yew was already ancient when the Romans built Londinium two thousand years ago, and the church beside it is the newcomer: St Andrew's dates only to the 13th century, a good thousand years younger than the tree growing at its edge. A 2008 survey by the Conservation Foundation, the Ancient Yew Group and Barnet Council named it possibly the oldest tree in the city, though ring counting is useless here. Yew heartwood rots away long before it can be counted, which is why the estimate spans a thousand years, 1,000 to 2,000, rather than a single number. What survives is a hollow, propped trunk with a girth of nearly eight metres, kept alive the way most ancient yews are kept alive: repeated pollarding, cutting the tree back hard and often enough to reset its own clock rather than let it grow toward collapse. Totteridge was a village long before London reached it, and its Hundred Court, the local medieval assembly that settled disputes and collected dues, once met in the yew's shade, using the tree as a landmark centuries before anyone thought to measure its age.",
-      "verified_sources": [
-        "https://exploring-london.com/tag/totteridge-yew/",
-        "https://www.monumentaltrees.com/en/gbr/england/greaterlondon/19632_standrewschurch/"
-      ],
-      "access": "Free, open access, churchyard",
-      "transport": "15 min walk from Totteridge & Whetstone station (Northern Line)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Totteridge_Yew%2C_St_Andrew%27s_church%2C_Totteridge.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Philafrenzy, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3723,
-        "height": 3438
-      },
-      "curation_status": "ai_generated",
-      "notes": "Was single-sourced to monumentaltrees.com, which CLAUDE.md's own research workflow says to use for verification only, not as a citable source; London's single most prominent claim (\"the oldest living thing in London\") stood on one non-citable link. Added exploring-london.com as a genuine independent second source, checked directly: it corroborates the age range (1,000-2,000 years), the girth (25ft, matching this entry's \"nearly eight metres\"), the tree's Great Trees of London listing, and the 2008 Conservation Foundation/Ancient Yew Group/Barnet Council survey that named it possibly London's oldest tree.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          9,
-          10,
-          11
-        ],
-        "label": "September to November: red arils on female trees, the only part that is not poisonous",
-        "kind": "fruit"
-      }
-    },
-    {
-      "id": "lon_002",
-      "name": "The Royal Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "750 years",
-      "age_min": 700,
-      "age_max": 800,
-      "location": {
-        "address": "Near Pen Ponds, Richmond Park, Richmond, London",
-        "latitude": 51.44455,
-        "longitude": -0.283495,
-        "neighbourhood": "Richmond Park"
-      },
-      "story": "The wall came second: this oak was already centuries old when Charles I enclosed Richmond Park around it in 1637, walling off common land for his own deer rather than planting anything new. It has lived behind royal fences ever since. The tree is a massive hollow pollard now, its trunk split and gnarled into a shape wide enough to shelter a small football team, kept alive by the same repeated cutting-back that saves most ancient oaks from their own weight. Richmond Park holds one of the largest collections of ancient oaks in Europe, and the Royal Oak is treated as its figurehead: Sir David Attenborough chose it as the symbol of a conservation campaign for the park's veteran trees, and it carries its own entry in the Woodland Trust's national Ancient Tree Inventory, a formally surveyed and registered specimen rather than a folk legend. Fallow deer, descendants of the herd Charles I first enclosed the park to hunt, still graze in its shadow, close enough on a quiet afternoon that the oak and the animals read as one scene rather than two separate facts.",
-      "verified_sources": [
-        "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=40404",
-        "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/london-the-south-east/the-royal-oak-richmond-park/"
-      ],
-      "access": "Free, open access, national park",
-      "transport": "Bus or car to Richmond Park, then on foot near Pen Ponds",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Richmond_Park%2C_The_Royal_Oak_%281%29.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "AndyScott, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3000,
-        "height": 1999
-      },
-      "curation_status": "ai_generated",
-      "notes": "Coordinates taken from the tree's own Woodland Trust Ancient Tree Inventory entry (ID 40404), grid reference TQ1938873126, converted from OSGB36 to WGS84. The ATI page carries no language obscuring or rounding this location (unlike some sensitive ATI entries), and the tree is a well-known, publicly signposted landmark, so the precise grid reference is used directly rather than the previous general \"near Pen Ponds\" estimate.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-        "kind": "fruit"
-      }
-    },
-    {
-      "id": "lon_003",
-      "name": "The Cheapside Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "250+ years",
-      "age_min": 200,
-      "age_max": 300,
-      "location": {
-        "address": "Corner of Wood Street and Cheapside, City of London, EC2V 8AA",
-        "latitude": 51.5155,
-        "longitude": -0.0934,
-        "neighbourhood": "City of London"
-      },
-      "story": "The only Great Tree of London still standing inside the Square Mile grows out of a churchyard that no longer has a church. St Peter Cheap burned down in the Great Fire of 1666 and was never rebuilt, and the plane tree that replaced its congregation is old enough that nobody can say exactly when it was planted. By 1853 a cab company was advertising its rank simply as 'Under the tree, Cheapside,' proof the tree was already a fixed point on the map before street numbering caught up with London's growth. In 1901 the press went further and called it the most valuable tree in the world, a claim about the land beneath it as much as the tree itself. It has survived since through the Blitz, through the City's total postwar rebuilding, and through a peculiarity of property law: the leases on the buildings flanking it forbid construction above two storeys on that side, an accident of contract law that has kept its canopy open to the sky for longer than most buildings nearby have existed. William Wordsworth is thought to have had this exact tree in mind writing his 1800 poem Poor Susan, in which a countrywoman hears a thrush singing from a tree on Cheapside and briefly mistakes the City for home.",
-      "verified_sources": [
-        "https://www.atlasobscura.com/places/cheapside-plane-tree",
-        "https://lookup.london/wood-street-tree/"
-      ],
-      "access": "Free, public square, City of London",
-      "transport": "2 min walk from St Paul's tube station",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Cheapside_Plane_%281%29.jpg",
-        "license": "CC0 1.0",
-        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3024,
-        "height": 4032
-      },
-      "curation_status": "ai_generated",
-      "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Look Up London both independently corroborate the St Peter Cheap site, the 1853 cab-company advert, the 1901 'most valuable tree' claim and the Wordsworth connection.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_004",
-      "name": "The Berkeley Square Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "235 years",
-      "age_min": 230,
-      "age_max": 240,
-      "location": {
-        "address": "Berkeley Square, Mayfair, London W1J 6EJ",
-        "latitude": 51.5102,
-        "longitude": -0.1449,
-        "neighbourhood": "Mayfair"
-      },
-      "story": "In 2008 a valuer put a price on one of the plane trees in Berkeley Square: 750,000 pounds, briefly the most valuable tree in Britain, a number that says more about Mayfair real estate than about the tree itself. The square's planes went into the ground in 1789, planted by the MP Edward Bouverie, who lived at number 13, and they now rank among the oldest London planes anywhere in the city. There are more than thirty of them, planted as a single scheme rather than one famous specimen, which is why this entry marks the square itself rather than a single trunk. The nightingale of the song 'A Nightingale Sang in Berkeley Square' almost certainly never existed as a literal bird here, nightingales do not really sing over central London traffic, but if one had, these are the branches it would have used. The planes were named among the original 41 Great Trees of London, and the Grade II listed garden they shade has kept the same rectangular shape since the square was laid out, a fixed green rectangle while Mayfair rebuilt itself around it for over two centuries.",
-      "verified_sources": [
-        "https://exploring-london.com/2024/07/03/10-significant-and-historic-london-trees10-berkeley-square-plane-tree/",
-        "https://lapadalondon.com/the-plane-facts-about-berkeley-square/"
-      ],
-      "access": "Free, public garden",
-      "transport": "2 min walk from Green Park or Bond Street tube",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Berkeley_Plane_%281%29.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3024,
-        "height": 4032
-      },
-      "curation_status": "ai_generated",
-      "notes": "Two independent sources now back the planting date, Bouverie attribution, 2008 valuation and Great Trees of London designation. This entry describes the square's plane trees collectively (30+ specimens, one individually named and valued); coordinates mark the square itself rather than one specific trunk among many, so location_precision stays approximate honestly.",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "lon_005",
-      "name": "The Sweet Chestnut of Greenwich Park",
-      "species": "Sweet Chestnut (Castanea sativa)",
-      "age_estimate": "365 years",
-      "age_min": 355,
-      "age_max": 375,
-      "location": {
-        "address": "Greenwich Park, London SE10",
-        "latitude": 51.476757,
-        "longitude": 0.006761,
-        "neighbourhood": "Greenwich"
-      },
-      "story": "Charles II wanted Versailles and settled for Greenwich instead. After taking the throne in 1660, he ordered grand formal avenues cut through the old royal hunting park, hundreds of sweet chestnuts marched up the hill toward the future Royal Observatory in straight French rows. Most of that planting is gone, lost to storms, disease and three and a half centuries of ordinary attrition. This chestnut is one of roughly fifty survivors, and the one the Great Trees of London list points to in the Flower Garden. Its trunk has thickened into something closer to architecture than plant, and it has been pollarded more than once, a pruning technique that resets a tree's internal clock and is a large part of why it is still standing while so many of its neighbours from the same planting are not. Its slowly rotting heartwood, hollow in places, now shelters beetles and fungi that need old deadwood and nowhere else. Every October it drops a carpet of spiny green cases across the grass, food for the park's squirrels and for anyone willing to peel one open. It has stood through the Restoration, two world wars and the digging of anti-aircraft gun pits nearby. Unlike the oak that once stood a short walk from here, it has never stopped growing.",
-      "verified_sources": [
-        "https://www.royalparks.org.uk/get-in-touch/media-centre/news-press-releases/vote-greenwich-parks-shortlisted-tree-year-2023",
-        "https://www.friendsofgreenwichpark.org.uk/Wildlife/Trees/",
-        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-        "https://opendata-woodlandtrust.hub.arcgis.com/datasets/9d2d13b04d654ceb9ba6e0697c1e0c29_0"
-      ],
-      "access": "Free, open parkland, Greenwich Park",
-      "transport": "10 min walk from Maze Hill station, into Greenwich Park",
-      "best_time": {
-        "months": [
-          10
-        ],
-        "label": "October, when its spiny nut cases carpet the ground beneath it"
-      },
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Greenwich_Park_Sweet_Chestnut_%281%29.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
-        "status": "approved",
-        "width": 4032,
-        "height": 3024
-      },
-      "curation_status": "ai_generated",
-      "notes": "Replaces the dead/fallen Queen Elizabeth's Oak on 2026-07-27 per Hidde's living-trees rule. Coordinates upgraded 2026-07-28 to Woodland Trust ATI open-data record Id 2919 (girth 7.26m, Ancient, alive, verified 2021), the only ancient chestnut in that corner of the Flower Garden and ~30m from the approved photo's EXIF point, so precision is confirmed. Great-Tree identification is convergent (Wikipedia lists the Great Tree chestnut in the Flower Garden; this is the garden's largest ancient chestnut) and phrased as attributed. Deliberately NOT claiming Tree of the Year 2023: that shortlisted chestnut stands in the avenue near the Roman Temple, ~350m away. Age derives from the documented 1660-64 planting, not a ring count.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_006",
-      "name": "The Mulberry of Charlton House",
-      "species": "Black Mulberry (Morus nigra)",
-      "age_estimate": "400 years",
-      "age_min": 380,
-      "age_max": 420,
-      "best_time": {
-        "months": [
-          8
-        ],
-        "label": "August, when it still fruits every summer despite four centuries of leaning"
-      },
-      "location": {
-        "address": "Charlton House, Charlton Road, London SE7 7TH",
-        "latitude": 51.4807,
-        "longitude": 0.0371,
-        "neighbourhood": "Charlton, South East London"
-      },
-      "story": "James I wanted Britain to grow its own silk, and in 1608 he ordered mulberry trees planted across the country to feed the silkworms that would spin it. The plan collapsed almost immediately over a basic mistake: silkworms eat white mulberry leaves and mostly refuse black ones, and the trees planted nationwide, including this one, were black mulberries. Charlton House got one of them, and unlike England's silk industry, the tree itself survived the error by four hundred years and counting. It now leans so far from vertical that its lower branches nearly touch the ground, propped up by a scaffold of wooden supports rather than left to collapse under its own spread, and it still fruits every August, small dark berries falling onto grass that has replaced whatever formal garden once surrounded it. The tree predates the surrounding community centre by roughly three centuries. Charlton House itself, a Jacobean mansion finished the same decade this mulberry went into the ground, has changed use many times since, while the tree in its garden has simply kept growing, propped a little more with each passing century.",
-      "verified_sources": [
-        "https://www.moruslondinium.org/research/charlton-house-heritage-mulberry",
-        "https://www.londonremembers.com/memorials/charlton-house-mulberry-tree-3"
-      ],
-      "access": "Free, open grounds of Charlton House community centre",
-      "transport": "Charlton rail station, 5 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Charlton_House_Mulberry_Tree_%2801%29.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Ethan Doyle White, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3448,
-        "height": 4592
-      },
-      "curation_status": "ai_generated",
-      "notes": "Source URLs backfilled 2026-07-28: Morus Londinium (a Woodland Trust/academic mulberry-mapping project) and London Remembers both corroborate the 1608 planting and James I connection independently. Location corrected the same pass: a systematic geocode audit flagged the stored coordinate as 1055m from Charlton House; Nominatim's own geocode of Charlton House, Charlton Road places it at 51.4807, 0.0371 (postcode SE7 7TH, not the stored SE7 8RE), matching this entry's own 'Charlton, South East London' neighbourhood. Fixed.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_007",
-      "name": "The Fulham Palace Oak",
-      "species": "Holm Oak (Quercus ilex)",
-      "age_estimate": "500+ years",
-      "age_min": 450,
-      "age_max": 550,
-      "location": {
-        "address": "Fulham Palace Gardens, Bishop's Avenue, London SW6 6EA",
-        "latitude": 51.4704,
-        "longitude": -0.2153,
-        "neighbourhood": "Fulham"
-      },
-      "story": "This oak survived five centuries partly because people kept attacking it. It was coppiced long ago, cut back hard to its base, a brutal-looking practice that paradoxically resets a tree's age clock and can add centuries to its life rather than shorten it. What grew back is a Holm Oak, an evergreen Mediterranean species that has no business thriving this far north, and quite possibly the oldest specimen of its kind anywhere in Britain. It grows in the grounds of Fulham Palace, for centuries the working home of the Bishop of London rather than a royal estate, and the two bishops most often credited with planting it, Edmund Grindal and John Aylmer, both lived here in the second half of the 16th century, among the first people in England to try growing the species at all. The oak was named among the original 41 trees given Great Tree status in 1988, and a later record corrected an old misidentification of the tree as a common Pedunculate Oak rather than the rarer Mediterranean evergreen it actually is. Fulham Palace Gardens are free to enter daily, which means reaching London's likely oldest holm oak costs nothing but the walk from Putney Bridge station.",
-      "verified_sources": [
-        "https://www.fulhampalace.org/news/the-fulham-palace-ancient-holm-oak/",
-        "https://www.alamy.com/stock-photo-the-holm-oak-quercus-ilex-is-over-450-years-old-at-fulham-palace-gardens-86541999.html"
-      ],
-      "access": "Free, Fulham Palace Gardens open daily",
-      "transport": "Putney Bridge tube, 10 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fulham_Palace_Oak_%282%29.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3024,
-        "height": 4032
-      },
-      "curation_status": "ai_generated",
-      "notes": "Species corrected 2026-07-22: original data said Pedunculate Oak (Quercus robur), but Fulham Palace's own site and independent photo captions identify it as Holm Oak (Quercus ilex), possibly the oldest in Britain. Photo now found. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1km from Fulham Palace itself; Nominatim's own geocode agrees on two separate queries (51.4704-51.4705, -0.2152 to -0.2154), one of them matching this entry's own postcode (SW6 6EA) exactly. Moved onto the palace grounds; still confirmed since the palace itself, not just a neighbourhood, is now correctly pinpointed.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_009",
-      "name": "The Old Lions of Kew",
-      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
-      "age_estimate": "250+ years",
-      "age_min": 250,
-      "age_max": 270,
-      "location": {
-        "address": "Royal Botanic Gardens Kew, Richmond, London TW9 3AE",
-        "latitude": 51.4787,
-        "longitude": -0.2956,
-        "neighbourhood": "Kew, South West London"
-      },
-      "story": "John Smith, Kew Gardens' first curator, gave five of its oldest trees a nickname that stuck: the Old Lions, veterans that have outlasted every curator, director and fashion in planting since the garden began. The group spans the site rather than clustering in one corner: an oriental plane near the Orangery, an elm, a locust, and the most storied of the five, a Japanese pagoda tree planted in 1762 that ranks among the oldest of its species growing anywhere in Europe outside its native range. All five predate Kew's formal existence as a public institution. They were already growing when Princess Augusta laid out the first pleasure garden here in the 1750s, decades before Kew merged with the neighbouring Richmond estate and grew into the botanic garden it is today. Seeing all five in one visit means crossing a meaningful stretch of the grounds, since Smith grouped them by age and survival rather than by location, but each carries its own small marker naming it as one of the Lions. Entry to Kew requires a paid ticket, unlike most of London's ancient trees, but the garden built its reputation partly on outliving its own founders, and these five are the proof of it.",
-      "verified_sources": [
-        "https://www.kew.org/read-and-watch/kews-old-lions",
-        "https://exploring-london.com/2024/06/19/10-significant-and-historic-london-trees8-the-old-lions/"
-      ],
-      "access": "Paid entry to Kew Gardens",
-      "transport": "Kew Gardens tube station (District Line), 5 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Kew_Gardens_Pagoda_Tree_P1170594.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Deror avi, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3000,
-        "height": 4000
-      },
-      "curation_status": "ai_generated",
-      "notes": "Both named sources place the five trees at distinct spots across Kew (the pagoda tree by the Hive, the oriental plane by the Orangery, the elm and locust each their own specimen), so a single coordinate for the group is a garden-level estimate rather than a pin on any one trunk; location_precision stays approximate honestly rather than picking one tree's spot to represent all five.",
-      "location_precision": "approximate",
-      "best_time": {
-        "months": [
-          8,
-          9
-        ],
-        "label": "August to September, when it flowers",
-        "kind": "flowers"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "lon_010",
-      "name": "The Evelyn Mulberry",
-      "species": "Black Mulberry (Morus nigra)",
-      "age_estimate": "300+ years",
-      "age_min": 300,
-      "age_max": 350,
-      "best_time": {
-        "months": [
-          8
-        ],
-        "label": "August, when the fruit ripens, one of the few parts of Sayes Court's story that still repeats every year"
-      },
-      "location": {
-        "address": "Sayes Court Park, Sayes Court Street, Deptford, London SE8 5RA",
-        "latitude": 51.484,
-        "longitude": -0.0311,
-        "neighbourhood": "Deptford, East London"
-      },
-      "story": "John Evelyn's garden at Sayes Court was one of the most celebrated in 17th century England, laid out by a writer and diarist who helped define English ideas about forestry and planting, and it lasted less than four decades before a tenant wrecked it for sport. Tsar Peter the Great of Russia rented the house in 1698 while studying shipbuilding nearby, and legend holds that he spent his evenings being wheeled through Evelyn's prized holly hedges in a wheelbarrow, flattening years of careful topiary for entertainment. Historians doubt Peter planted anything here himself, and this mulberry's own age is uncertain enough that the honest claim is only that it may have survived the same visit that ruined everything around it, not that it predates the destruction with certainty. What remains today is a fenced, propped tree standing in an unremarkable public park where almost nothing else of Evelyn's garden survives, plus a stone marker at its base that tells visitors the wheelbarrow story rather than leaving them to wonder why one old mulberry gets special treatment. It still fruits every August, one of the few parts of Sayes Court's story that still repeats on schedule rather than existing only in an old diary.",
-      "verified_sources": [
-        "https://www.atlasobscura.com/places/evelyn-s-mulberry",
-        "https://www.moruslondinium.org/research/john-evelyns-mulberry"
-      ],
-      "access": "Free, public park",
-      "transport": "Deptford or Deptford Bridge station, 5 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Mulberry_tree%2C_Sayes_Court_Park_-_geograph.org.uk_-_6124238.jpg",
-        "license": "CC BY-SA 2.0",
-        "attribution": "Robin Webster, via Geograph Britain and Ireland / Wikimedia Commons",
-        "status": "approved",
-        "width": 1024,
-        "height": 768
-      },
-      "curation_status": "ai_generated",
-      "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Morus Londinium (a Woodland Trust/academic mulberry-mapping project) both corroborate the Evelyn garden, the tree's age and the Peter the Great story; both also independently note historians doubt Peter himself planted it, consistent with this entry's own careful phrasing ('may have survived even that') rather than crediting him with planting it. Location corrected the same pass: the stored coordinate was about 700m from Sayes Court Street itself, whose Nominatim geocode (51.484, -0.031) agrees closely with the independently found Sayes Court Park coordinate from a parks-data source (51.4848, -0.0310). Moved onto the actual street/park cluster.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_008",
-      "name": "Barney the Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "300+ years",
-      "age_min": 300,
-      "age_max": 350,
-      "location": {
-        "address": "Barn Elms, Rocks Lane, Barnes, London SW13",
-        "latitude": 51.474345,
-        "longitude": -0.230953,
-        "neighbourhood": "Barnes, South West London"
-      },
-      "story": "The biggest London plane in the city is a tree most Londoners have never heard of. Nicknamed Barney, it stands at Barn Elms in the riverside suburb of Barnes, tucked at the edge of the land next to the London Wetland Centre, and it is old enough, over 300 years, that it is treated locally as potentially the single oldest London plane anywhere in the capital. The species is the city's signature tree for a reason: it tolerates soot, survives brutal pruning, and outlives almost everything planted around it, and Barney is the patriarch of them all in Barnes. Its own Great Trees of London plaque states the claim plainly, calling it simply the oldest in London, though the tree's coordinates only firmed up in 2026, when a photographer's geotagged shot of Barney was checked against the plaque's own recorded position and the two turned out to sit within nine metres of each other, close enough to count as the same tree rather than two separate estimates. Most visitors to Barn Elms come for the birdwatching at the Wetland Centre next door and walk straight past the small plaque without noticing it, which is itself part of Barney's story: London's biggest plane tree stands anonymously beside one of the city's most visited nature reserves.",
-      "verified_sources": [
-        "https://commons.wikimedia.org/wiki/File:Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg",
-        "https://openplaques.org/plaques/54213"
-      ],
-      "access": "Public access, Barnes area",
-      "transport": "Barnes station or bus",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg",
-        "license": "CC BY 4.0",
-        "attribution": "Matt Brown, via Wikimedia Commons",
-        "status": "approved",
-        "width": 4032,
-        "height": 3024
-      },
-      "curation_status": "flagged",
-      "notes": "Coordinates updated 2026-07-22 from the EXIF geotag on a CC BY 4.0 photo captioned 'Barney of Barn Elms' (Matt Brown, May 2026). A second independent source found 2026-07-26: Open Plaques records a Great Trees of London commemorative plaque for this exact tree ('the oldest in London... platanus x hispanica') at 51.47441, -0.23106, about 9 metres from the EXIF position, close enough to be the same tree. Location precision upgraded on that agreement. Story rewritten 2026-07-28 to reach the standard word count, grounded entirely in facts already established above, no new claims added.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_011",
-      "name": "The St Paul's Churchyard Planes",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "roughly 260 years",
-      "age_min": 230,
-      "age_max": 280,
-      "location": {
-        "address": "North Churchyard, St Paul's Cathedral, City of London EC4M 8AD",
-        "latitude": 51.5145,
-        "longitude": -0.098,
-        "neighbourhood": "City of London"
-      },
-      "story": "Four planes stood on the north side of St Paul's churchyard until the Great Storm of 1987 took one of them down. The three that remain are, according to one detailed local history of the cathedral, over 250 years old, which would put their planting in the middle of the 18th century, when Wren's dome was still the newest thing on the skyline and the ground beneath them was a working burial place. That age comes from a single account. The London Parks and Gardens Trust inventory for the churchyard agrees only that these are among the oldest plane trees in the City, without giving a number or a date, so read 250 years as the best figure anyone has published rather than a measured one.\n\nWhat they lived through is less disputed. On the night of 29 December 1940 incendiary bombs set the streets around the cathedral alight and burned out much of the City. The dome held, and so did the planes. Londoners later planted this species everywhere precisely because it shrugs off soot and smoke; these three were in the ground a century before that fashion started.\n\nThis is an ensemble rather than one specimen: three unnamed trees, none of them individually catalogued or given coordinates by any source. Stand on the paved path along the north side and all three are in one view. The pin marks that garden, not a particular trunk.",
-      "verified_sources": [
-        "https://oxbowdbbc.wordpress.com/2016/09/19/st-pauls-cathedral-hidden-history-half-truths/",
-        "https://londongardenstrust.org/inventory/site-record?ID=COL096"
-      ],
-      "access": "Free, open access, public churchyard garden on the north side of St Paul's Cathedral (no ticket needed for the garden, only for the cathedral interior)",
-      "transport": "2 min walk from St Paul's station (Central Line)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "lon_012",
-      "name": "The Amwell Street Fig",
-      "species": "Common Fig (Ficus carica)",
-      "age_estimate": "roughly 195 years",
-      "age_min": 180,
-      "age_max": 200,
-      "location": {
-        "address": "Amwell Street, outside the former Clerkenwell Parochial Schools building, EC1R",
-        "latitude": 51.53,
-        "longitude": -0.1099,
-        "neighbourhood": "Clerkenwell, Islington"
-      },
-      "story": "This fig may have been planted as a teaching aid. It sprawls across the front of the former Clerkenwell Parochial Schools on Amwell Street, several stems rising from one rootstock and propped where the limbs have outgrown their own strength. Paul Wood, who has spent years cataloguing London's street trees, reckons it has stood here since the schools opened, put in deliberately at the front of the building and perhaps partly so that Bible lessons had something living to point at. Figs run all through scripture, and a fig outside the classroom window is an illustration nobody can lose.\n\nThe dates want care. The Amwell Society dates the school building to 1830, while other accounts say 1827. And the planting claim rests on that one specialist reading rather than on two independent records, so roughly 195 years is a careful estimate, not a birth certificate.\n\nClerkenwell changed around it more than most of London did: watchmakers, radical printers, the New River head a few streets north still delivering water into the city, charity schoolchildren giving way to board schools and then to flats. The building stopped being a school. The fig stayed, and Islington still counts it among the borough's notable street trees.\n\nIt is a working fruit tree on a public pavement in central London, which is the part that stops people. Come in late summer and the figs are there, at eye level, on the street.",
-      "best_time": {
-        "months": [
-          8,
-          9
-        ],
-        "kind": "fruit",
-        "label": "late summer, when the figs ripen against the old school wall"
-      },
-      "verified_sources": [
-        "https://thestreettree.substack.com/p/188-teaching-aid-fig",
-        "https://www.monumentaltrees.com/en/gbr/england/greaterlondon/4533_amwellstreetec1/"
-      ],
-      "access": "Free, open access, standing against a street frontage on public pavement",
-      "transport": "8 min walk from Angel station (Northern Line) or Farringdon station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "lon_013",
-      "name": "The Dorchester Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "roughly 95 years",
-      "age_min": 93,
-      "age_max": 100,
-      "location": {
-        "address": "Forecourt of The Dorchester Hotel, 53 Park Lane, Mayfair, London W1K 1QA",
-        "latitude": 51.506828,
-        "longitude": -0.152099,
-        "neighbourhood": "Mayfair"
-      },
-      "story": "One of the Great Trees of London stands at the front door of a hotel where a night costs more than most people's monthly rent, and you can walk up to it for nothing. The London Tree Forum and the Countryside Commission put this plane on their 1997 list of the capital's great trees, which was generous of them: the Great Trees map dates its planting to the early 1930s, making it younger than almost every other tree on this page by a century or more.\n\nThe arithmetic is suggestive rather than proven. The Dorchester opened in 1931, and a plane put into a brand new Park Lane forecourt in the early 1930s fits that opening neatly, but no source actually joins the two facts, and the planting date itself comes from that one specialist record.\n\nWhat the tree unquestionably has is roots. Its root plate has risen clear of the ground and spread across the forecourt in ridges, the sort of thing a city normally paves over and here has been designed around instead: the hotel's recent refit tucked its garden underneath the tree rather than the other way round.\n\nIt has stood through the Blitz, when the hotel's reinforced concrete frame earned a reputation for being bomb-proof and politicians and generals moved in for the duration, and through ninety years of Park Lane traffic since. You see it from the pavement. No need to go inside.",
-      "verified_sources": [
-        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-        "https://exploring-london.com/tag/35-park-lane/",
-        "https://knowyourlondon.wordpress.com/2019/03/11/dorchester-hotel/"
-      ],
-      "access": "Free, stands in The Dorchester Hotel's open forecourt directly on Park Lane, clearly visible and reachable from the public pavement without entering the hotel",
-      "transport": "8 min walk from Hyde Park Corner station (Piccadilly Line)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_014",
-      "name": "The Marylebone Elm",
-      "species": "Huntingdon Elm (Ulmus x hollandica 'Vegeta')",
-      "age_estimate": "roughly 160 years",
-      "age_min": 145,
-      "age_max": 175,
-      "location": {
-        "address": "Pavement outside the Memorial Garden of Rest, 65 Marylebone High Street, Westminster, London W1U",
-        "latitude": 51.521886,
-        "longitude": -0.151724,
-        "neighbourhood": "Marylebone"
-      },
-      "story": "Dutch elm disease killed around 25 million British elms from the 1960s on, roughly three quarters of the country's population. This one was missed. It stands on the pavement of Marylebone High Street, more than 100 feet of it by the Great Trees of London map, the last elm of its kind in Westminster to have escaped the beetle that carried the fungus through every hedgerow around it.\n\nSpecialist tree writers identify it as a Huntingdon Elm, a hybrid of wych and field elm. A recent account of the street calls it simply a wych elm, so the exact cultivar is not universally agreed. Nor is the age: writers through the 2010s consistently put it at about 150 years, which makes it roughly 160 now, a figure carried forward rather than measured.\n\nIt has outlived a church. The small garden beside it, the Memorial Garden of Rest, was laid out in 1951 on the site of the old St Marylebone parish church, which was bombed in the war and then demolished. The building is gone. The tree that grew outside it is still there, leaning out over the pavement as though it means to cross the road.\n\nA naturalist photographed it in bud and healthy in 2017, and someone walking the High Street described it still standing there in April 2026.",
-      "verified_sources": [
-        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-        "https://londontreesblog.wordpress.com/2014/12/17/the-marylebone-elm/",
-        "https://bugwomanlondon.com/2017/03/04/bugwoman-on-location-the-survivor/"
-      ],
-      "access": "Free, stands on the open public pavement directly outside the small Garden of Rest, no restriction",
-      "transport": "6 min walk from Baker Street station (Bakerloo, Circle, District, Hammersmith & City, Jubilee, Metropolitan Lines)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_015",
-      "name": "The Embankment Plane",
-      "species": "Oriental Plane (Platanus orientalis)",
-      "age_estimate": "roughly 156 years",
-      "age_min": 145,
-      "age_max": 160,
-      "location": {
-        "address": "North side of Horse Guards Avenue at the junction with Victoria Embankment, Westminster, London SW1A",
-        "latitude": 51.504796,
-        "longitude": -0.123285,
-        "neighbourhood": "Westminster"
-      },
-      "story": "The tree that helped make London a city of planes is not a London Plane. It is an Oriental Plane, one of the two species crossed to produce the hybrid now growing down half the streets in the capital, and it stands where Horse Guards Avenue meets the Victoria Embankment, on ground that was river water until Bazalgette's engineers pushed the Thames back in the 1860s.\n\nThe Great Trees of London map dates it to 1870 and gives the species. Both of those rest on that one specialist record. General histories of the Embankment agree that planes went in along the new road from about 1870, the first scheme in the city to plant a thoroughfare with trees systematically, but none of them names this individual tree. So it is a survivor of that first planting on the evidence available, rather than a documented one.\n\nIt has had a good view. Cleopatra's Needle was raised a few hundred metres along the same Embankment in 1878, trams came and went, the Ministry of Defence rose behind it in the 1950s, and Whitehall traffic has run past its trunk for a century and a half.\n\nIt gets called one of the tallest planes in Britain, a claim nobody appears to have checked. Easier to say what it plainly is: a very large tree on one of the busiest corners in Westminster that almost nobody stops for.",
-      "verified_sources": [
-        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-        "https://www.southbankcentre.co.uk/blog/articles/city-and-tree-story-london-planes",
-        "https://www.treesforcities.org/index.php?p=stories/the-mysterious-story-of-the-london-plane-tree"
-      ],
-      "access": "Free, stands on the public pavement/verge at the Horse Guards Avenue and Victoria Embankment junction, fully open access, no restriction",
-      "transport": "7 min walk from Westminster station (Circle, District, Jubilee Lines)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_016",
-      "name": "The Great Plane of Brunswick Square",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "roughly 230 years",
-      "age_min": 220,
-      "age_max": 240,
-      "location": {
-        "address": "Brunswick Square Gardens, Bloomsbury, London WC1N 1AF",
-        "latitude": 51.5242,
-        "longitude": -0.1219,
-        "neighbourhood": "Bloomsbury"
-      },
-      "story": "This plane was planted for orphans. Brunswick Square Gardens was laid out in 1796 as green space for the children of the Foundling Hospital, and this tree is reckoned to date from that laying out, which makes it around 230 years old. Only the planes of Berkeley Square, put in seven years earlier, are commonly held to be older among the planes of central London. It has stood through everything Bloomsbury became: the Hospital selling up and moving out of London in the 1920s, its buildings coming down, the square rebuilt around the gap, the Blitz, and the concrete decks of the Brunswick Centre arriving to the west in the 1970s. The institution it was planted to shade is gone. The tree is not. In 2008 it was named one of the ten Great Trees of London, and it has since been given its own information board in the square, which is a quiet way of saying the neighbourhood knows what it has. Photographs taken in spring 2026 show it in full health. Neither source that agrees on the 1796 planting records a girth or a height, so there are no measurements to quote here, only the thing itself: a very large plane in a small square five minutes from Russell Square station, free and open, with the Foundling Museum on the far side telling the rest of the story.",
-      "verified_sources": [
-        "https://bloomsburysquares.com/2020/12/01/the-great-plane-brunswick-square/",
-        "https://www.andrewwhitehead.net/blog/the-great-plane-of-bloomsbury",
-        "https://en.wikipedia.org/wiki/Great_Trees_of_London"
-      ],
-      "access": "Free, open public garden square",
-      "transport": "5 min walk from Russell Square station (Piccadilly Line)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_017",
-      "name": "The Valence Park Holm Oak",
-      "species": "Holm Oak (Quercus ilex)",
-      "age_estimate": "disputed, roughly 150 to 350 years",
-      "age_min": 150,
-      "age_max": 350,
-      "location": {
-        "address": "Valence Park, next to the moat at Valence House, Becontree, Dagenham, London RM8 3HT",
-        "latitude": 51.5581,
-        "longitude": 0.135,
-        "neighbourhood": "Becontree, Barking and Dagenham"
-      },
-      "story": "The October 1987 storm brought down some 15 million trees across southern England and left this one untouched. Its low, heavily buttressed frame is credited for that: a holm oak that grows outward rather than upward gives the wind nothing to lean on. Roughly ten years later it was added to the Great Trees of London list. How old it is depends on which source you take, and the two do not agree. The Barking and Dagenham Post, quoting the borough's own heritage education officer, credits the Mertinn family, German immigrants who had made their money in jewellery and bought the estate in the early 1700s, with planting it to make their grounds look grander. That would put it close to 350 years. The London Gardens Trust's survey record for the site is more clinical and dates the grounds' holm oak and yew only to the nineteenth century, which would make it under 225. Both agree on what stands there: one of the most impressive holm oaks in London, beside the moat of Valence House, a medieval manor that is now the borough's museum. One practical note. The moat enclosure immediately beside the tree was closed for restoration work due to finish in spring 2026, so whether you can currently get right up to the trunk is unconfirmed. The park around it stays open, and the pin here is park level rather than surveyed.",
-      "verified_sources": [
-        "https://www.barkinganddagenhampost.co.uk/lifestyle/20941529.not-even-great-storm-87-move-old-oak/",
-        "https://londongardenstrust.org/conservation/inventory/site-record/?ID=BAD024",
-        "https://en.wikipedia.org/wiki/Great_Trees_of_London"
-      ],
-      "access": "Free, public park; the moat enclosure immediately beside the oak was closed for restoration works stated (2026) to complete by spring 2026, so current accessibility right up to the trunk is unconfirmed as of, though the wider park stays open",
-      "transport": "Becontree station (District Line) then bus 62 to Becontree Avenue/Valence Avenue, or Chadwell Heath rail station, roughly 20-25 min walk or a short bus ride either way",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "lon_018",
-      "name": "The Ravenscourt Park Baobab Plane",
-      "species": "London Plane, Baobab Group (Platanus x hispanica)",
-      "age_estimate": "roughly 100 to 200 years, exact age unknown",
-      "age_min": 100,
-      "age_max": 225,
-      "location": {
-        "address": "South of the lower grassy area, near the elm avenue, Ravenscourt Park, Hammersmith, London W6",
-        "latitude": 51.4967,
-        "longitude": -0.2386,
-        "neighbourhood": "Hammersmith"
-      },
-      "story": "A virus is the best explanation anyone has for the shape of this tree. It carries a swollen, knobbled trunk under a crown far too small for it, the signature of the rare Baobab group of London plane, a form believed to come from viral infection rather than ordinary growth. Few are known; the closest comparable specimens grow in Canterbury. Nobody can say how old it is, and the sources sit far apart. A specialist plane blog puts its planting somewhere in the nineteenth century, so 150 to 225 years. A local tree firm reckons closer to 100, while allowing it might date to 1812, when the park was the private estate of George Scott. The same firm repeats a story that a wartime bomb damaged the tree and that the regrowth explains its shape; no other source carries it, so treat that as local legend until one does. What is documented is stranger. The arborist Richard Moore took cuttings from this exact tree. Two of six rooted and now grow at a sculpture park in Dorset, still far too young to show whether the swelling travels with the cutting or belongs only to the parent. It is one of two Great Trees of London inside Ravenscourt Park, standing south of the lower grassy area near the elm avenue, five minutes from the District Line station, and it is unmistakable once you are in front of it.",
-      "verified_sources": [
-        "http://elmparadise.blogspot.com/2017/05/the-baobab-planes-of-canterbury.html",
-        "https://www.graftingardeners.co.uk/ravenscourt-park-trees/",
-        "https://www.treesandshrubsonline.org/articles/platanus/platanus-x-hispanica/",
-        "https://en.wikipedia.org/wiki/Great_Trees_of_London"
-      ],
-      "access": "Free, open public park",
-      "transport": "5 min walk from Ravenscourt Park station (District Line)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "lon_019",
-      "name": "The Fountain Court Mulberries",
-      "species": "Black Mulberry (Morus nigra)",
-      "age_estimate": "roughly 130 to 140 years",
-      "age_min": 129,
-      "age_max": 139,
-      "location": {
-        "address": "Fountain Court, Middle Temple, London EC4Y 9DH",
-        "latitude": 51.5121,
-        "longitude": -0.1109,
-        "neighbourhood": "Temple, City of London / Westminster border"
-      },
-      "story": "Two black mulberries lean on wooden crutches either side of a fountain that has been running since 1681. They were planted for a queen's jubilee and the sources cannot agree which one. Middle Temple's own archive dates them to 1897 and Victoria's Diamond Jubilee. An independent mulberry history gives 20 June 1887, her Golden Jubilee, and adds that the planting was marked with a dinner in Middle Temple Hall. Ten years apart, both plausible, neither picked here: call the trees roughly 130 to 140 years old. Four went in together and only these two are left, the other pair removed in the 1970s. Black mulberry ages like this, going crooked and heavy limbed early, propping itself on whatever it is given, and fruiting hard regardless. Fountain Court is a small enclosed square between Middle Temple Hall and the gardens that run down toward the river, a working courtyard of the legal quarter rather than a park, and one of the quietest corners in the City. Access is real but narrow. The court and garden open to the public on weekdays, roughly 12:30 to 3pm, not on bank holidays, entered through the Garden Room off Middle Temple Lane, and they close in high winds or for private functions. Turn up inside that window and both trees are there, one on each side of the water.",
-      "best_time": {
-        "months": [
-          8
-        ],
-        "kind": "fruit",
-        "label": "August, when the black mulberries ripen and drop"
-      },
-      "verified_sources": [
-        "https://www.middletemple.org.uk/archive/archive-month/january-2022-muse-poets-and-resort-birds-%E2%80%93-many-faces-middle-temple-fountain",
-        "https://sandrasgardenblog.wordpress.com/2019/03/29/mulberries-for-a-queen/"
-      ],
-      "access": "Genuinely public but restricted hours: Middle Temple's garden and Fountain Court are open to the public on weekdays roughly 12:30-3pm, excluding bank holidays, entered via the Garden Room off Middle Temple Lane; occasionally closed for high winds or private functions",
-      "transport": "5 min walk from Temple station (Circle, District Lines)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "lon_020",
-      "name": "The Inner Temple Mulberry",
-      "species": "Black Mulberry (Morus nigra)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Benchers' Walk, Inner Temple Garden, by the railings outside Paper Buildings, City of London EC4Y",
-        "latitude": 51.5112,
-        "longitude": -0.1086,
-        "neighbourhood": "Temple, City of London"
-      },
-      "story": "The Inner Temple's garden opens to the public for two and a half hours on weekday afternoons, and this tree is a fair reason to time the visit. A black mulberry stands by the railings of Benchers' Walk, outside Paper Buildings, its trunk about a metre and a half around and ten metres of crown above it. The Inner Temple's own history of the garden names it as one of the survivors of an old orchard, alongside a large-fruiting walnut and a quince, which is the institution itself calling this inherited planting rather than decoration. What no source will say is how old it is. There is no planting date anywhere, and black mulberries are among the hardest trees to age: they rot hollow early, lean until they need propping, and root wherever a low branch touches soil, so the trunk stops being a record of anything. This entry carries no age for that reason rather than a guess. The ground is famous for a scene that never happened here. Shakespeare set the plucking of the red and white roses, and with it the start of the Wars of the Roses, in the Temple garden; the tree is centuries younger than the fiction. Two hundred and fifty metres across the lane, Middle Temple's mulberries at Fountain Court at least have a disputed planting date to argue over. This one does not even have that.",
-      "best_time": {
-        "months": [
-          8
-        ],
-        "kind": "fruit",
-        "label": "August, when the mulberries ripen and stain whatever is underneath them"
-      },
-      "verified_sources": [
-        "https://www.moruslondinium.org/map/inner-temple-garden",
-        "https://www.innertemple.org.uk/estate-garden/the-inner-temple-garden/the-garden/history-of-the-garden/"
-      ],
-      "access": "Public, open weekdays 12:30pm-3:00pm only (not full daily access)",
-      "transport": "Temple station, 4 minute walk",
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "lon_021",
-      "name": "The Finsbury Circus Pagoda Tree",
-      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
-      "age_estimate": "roughly 200 years",
-      "age_min": 180,
-      "age_max": 220,
-      "location": {
-        "address": "Finsbury Circus Gardens, City of London EC2M",
-        "latitude": 51.5179,
-        "longitude": -0.0864,
-        "neighbourhood": "City of London"
-      },
-      "story": "This is the only Japanese pagoda tree in the City of London, on the City of London's own account of its gardens, and a City business paper's tour of Finsbury Circus says the same. The species comes from China and flowers cream in August, when almost nothing else does, which is a useful habit in a garden ringed by offices where lunch happens outdoors. Both sources tie the tree to the garden's original 1815 layout by George Dance the Younger, and neither produces a planting record, so the age here is circumstantial: roughly two centuries, inferred from the design rather than read off a document. Treat it as a range rather than a birthday. It has come through the most disruptive stretch of its life. Finsbury Circus lost most of its surface to Crossrail works for over a decade, then closed in 2023 for the first full renovation of the gardens in more than a hundred years and reopened in May 2025. The gardens are small, 2.2 hectares, so finding it takes a minute. Half a kilometre south, the Cheapside Plane is the only Great Tree of London still standing inside the Square Mile, and Kew's Old Lions include pagoda trees of roughly the same generation in a botanical collection. This one has spent its two hundred years in the middle of the banking district instead.",
-      "best_time": {
-        "months": [
-          8
-        ],
-        "kind": "flowers",
-        "label": "August, when it flowers cream-white and almost nothing else in London does"
-      },
-      "verified_sources": [
-        "https://www.cityoflondon.gov.uk/things-to-do/city-gardens/find-a-garden/finsbury-circus-gardens",
-        "https://www.cityam.com/inside-finsbury-circus-gardens-the-citys-biggest-green-space/"
-      ],
-      "access": "Free, public garden, standard park hours",
-      "transport": "Moorgate station, 3 minute walk; Liverpool Street station, 6 minute walk",
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "lon_022",
-      "name": "The Quaker Garden Planes",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "roughly 145 years",
-      "age_min": 140,
-      "age_max": 150,
-      "location": {
-        "address": "Quaker Gardens, between Banner Street and Chequer Street, Islington EC1Y",
-        "latitude": 51.5265,
-        "longitude": -0.0912,
-        "neighbourhood": "Bunhill, Islington"
-      },
-      "story": "George Fox, who founded the Quakers, was buried on this ground in 1691, and the plane trees standing over it are nowhere near old enough to have seen it. The burial ground took Quaker dead from 1661 until 1855, and the space became a public recreation ground in 1965, laid out inside the Banner Street estate with the trees left in place. Their age is genuinely disputed. Bunhill Fields Quaker Meeting's own account of the garden says the mature London planes here were planted about 1880, which makes them roughly 145 years old. A local record drawing on the London Gardens Trust inventory describes three notable planes, two of which may date from the 18th century, which would make them a century older and among the oldest planes in London. The two claims have not been reconciled, and this page follows the Meeting's own figure because it is the institution's own history, while saying plainly that the bigger claim is out there. It is worth not confusing this with the celebrated burial ground next door. Bunhill Fields holds Blake, Defoe and Bunyan and gets the visitors; the Quaker ground is a separate, quieter square of grass and trees between Banner Street and Chequer Street, six minutes from Old Street. The Amwell Street Fig is about 1.4 kilometres west if you want to make an afternoon of it.",
-      "verified_sources": [
-        "https://bunhillquakers.org.uk/garden/",
-        "https://squaremilehealthwalks.wordpress.com/2017/07/18/quaker-gardens/"
-      ],
-      "access": "Free, public recreation ground (laid out 1965 within the GLC Banner Street estate), entered from Banner Street or Chequer Street",
-      "transport": "Old Street station, 6 minute walk",
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "lon_023",
-      "name": "The Ravenscourt Park Tree of Heaven",
-      "species": "Tree of Heaven (Ailanthus altissima)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Near the sports area and children's playground, Ravenscourt Park, Hammersmith W6",
-        "latitude": 51.49633,
-        "longitude": -0.237089,
-        "neighbourhood": "Hammersmith"
-      },
-      "story": "Tree of heaven is the species councils spend money removing. This one has a plaque. The circular green plaque at its foot calls it one of the largest examples of the species in the country and one of the Great Trees of London, and the Tree Register's champion database carries it too, with at least one account calling it the tallest of its kind in Britain. Nobody gives it an age, and that absence is the interesting part. Ailanthus altissima arrived in Britain from China in the 18th century, spreads by seed and suckers, and is usually treated as short-lived, rarely making it much past fifty years. Something this size therefore breaks the pattern for its own species, and since no source anywhere offers a planting date, this entry gives no age rather than inventing one. It qualifies on size and status, not on years. It is also the cheapest addition to a walk on this whole list. The Ravenscourt Park Baobab Plane, with its swollen virus-knobbled trunk, stands about 150 metres away in the same park, which means Hammersmith now offers two Great Trees of London within a two minute walk of each other, near the sports area and the playground, five minutes from Ravenscourt Park station. The coordinates here come from the Great Trees map and are tree-level, so the pin lands on the trunk.",
-      "verified_sources": [
-        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-        "https://londontreesblog.wordpress.com/2014/12/21/tree-of-heaven/"
-      ],
-      "access": "Free, open public park",
-      "transport": "5 min walk from Ravenscourt Park station (District Line)",
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    }
-  ]
+ "city": "London",
+ "country": "United Kingdom",
+ "status": "needs_curation",
+ "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These twenty-three range from a churchyard yew older than Londinium itself to a plane once valued at three quarters of a million pounds. All but Kew are free, though two Temple trees keep lawyers' hours.",
+ "meta_description": "London's ancient trees hide in royal parks and churchyards. Start with the Totteridge Yew, alive since before the Romans built Londinium.",
+ "question_answer": "The oldest tree in London is the Totteridge Yew, a European yew in St Andrew's churchyard in Totteridge, North London, estimated at between 1,000 and 2,000 years old. It is the oldest living thing in the city, and it stands a 15 minute walk from Totteridge and Whetstone station on the Northern Line.",
+ "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and twenty-two more of the city's ancient trees.",
+ "question_context": "Ring counting does not work on ancient yews because their heartwood rots away, so estimates for the Totteridge Yew run from 1,000 to 2,000 years. Even the cautious low end makes it older than any building in London, and the high end means it was already a substantial tree when the Romans founded Londinium. It stands in the churchyard of St Andrew's in Totteridge, a village long since swallowed by North London, and the 13th century church beside it is the newcomer on the plot: the tree predates it by centuries at minimum. The district's Hundred Court once met in its shade, which tells you how long it has been the local landmark. London's runners-up are oaks rather than yews: Richmond Park and Greenwich Park hold hollow pollards in the 700 to 900 year range, survivors of the royal hunting grounds. But for sheer age, nothing in the capital touches the yew. Getting there is simple: Totteridge and Whetstone station on the Northern Line, then a 15 minute walk through the old village.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in London?",
+   "a": "The Totteridge Yew in St Andrew's churchyard, Totteridge, estimated at between 1,000 and 2,000 years old. Even the cautious low estimate makes it older than any building in the city."
+  },
+  {
+   "q": "Are London's ancient trees free to visit?",
+   "a": "Fourteen of the twenty-three trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
+  },
+  {
+   "q": "Why does London have so many ancient trees?",
+   "a": "Royal hunting parks. Kings walled off Richmond and Greenwich centuries ago, and the oaks inside were spared the clearing that transformed the surrounding countryside."
+  },
+  {
+   "q": "What is a London plane?",
+   "a": "A hybrid plane tree that thrives on soot and hard pruning. London planted it everywhere from the 1700s on, and the tree took the city's name with it."
+  }
+ ],
+ "trees": [
+  {
+   "id": "lon_001",
+   "name": "The Totteridge Yew",
+   "species": "European Yew (Taxus baccata)",
+   "age_estimate": "2000 years",
+   "age_min": 1000,
+   "age_max": 2000,
+   "location": {
+    "address": "St Andrew's Churchyard, Totteridge Village, London N20 8PR",
+    "latitude": 51.6323,
+    "longitude": -0.2002,
+    "neighbourhood": "Totteridge, North London"
+   },
+   "story": "The oldest living thing in London stands in a churchyard most people drive straight past. This yew was already ancient when the Romans built Londinium two thousand years ago, and the church beside it is the newcomer: St Andrew's dates only to the 13th century, a good thousand years younger than the tree growing at its edge. A 2008 survey by the Conservation Foundation, the Ancient Yew Group and Barnet Council named it possibly the oldest tree in the city, though ring counting is useless here. Yew heartwood rots away long before it can be counted, which is why the estimate spans a thousand years, 1,000 to 2,000, rather than a single number. What survives is a hollow, propped trunk with a girth of nearly eight metres, kept alive the way most ancient yews are kept alive: repeated pollarding, cutting the tree back hard and often enough to reset its own clock rather than let it grow toward collapse. Totteridge was a village long before London reached it, and its Hundred Court, the local medieval assembly that settled disputes and collected dues, once met in the yew's shade, using the tree as a landmark centuries before anyone thought to measure its age.",
+   "verified_sources": [
+    "https://exploring-london.com/tag/totteridge-yew/",
+    "https://www.monumentaltrees.com/en/gbr/england/greaterlondon/19632_standrewschurch/"
+   ],
+   "access": "Free, open access, churchyard",
+   "transport": "15 min walk from Totteridge & Whetstone station (Northern Line)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Totteridge_Yew%2C_St_Andrew%27s_church%2C_Totteridge.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Philafrenzy, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3723,
+    "height": 3438
+   },
+   "curation_status": "ai_generated",
+   "notes": "Was single-sourced to monumentaltrees.com, which CLAUDE.md's own research workflow says to use for verification only, not as a citable source; London's single most prominent claim (\"the oldest living thing in London\") stood on one non-citable link. Added exploring-london.com as a genuine independent second source, checked directly: it corroborates the age range (1,000-2,000 years), the girth (25ft, matching this entry's \"nearly eight metres\"), the tree's Great Trees of London listing, and the 2008 Conservation Foundation/Ancient Yew Group/Barnet Council survey that named it possibly London's oldest tree.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10,
+     11
+    ],
+    "label": "September to November: red arils on female trees, the only part that is not poisonous",
+    "kind": "fruit"
+   }
+  },
+  {
+   "id": "lon_002",
+   "name": "The Royal Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "750 years",
+   "age_min": 700,
+   "age_max": 800,
+   "location": {
+    "address": "Near Pen Ponds, Richmond Park, Richmond, London",
+    "latitude": 51.44455,
+    "longitude": -0.283495,
+    "neighbourhood": "Richmond Park"
+   },
+   "story": "The wall came second: this oak was already centuries old when Charles I enclosed Richmond Park around it in 1637, walling off common land for his own deer rather than planting anything new. It has lived behind royal fences ever since. The tree is a massive hollow pollard now, its trunk split and gnarled into a shape wide enough to shelter a small football team, kept alive by the same repeated cutting-back that saves most ancient oaks from their own weight. Richmond Park holds one of the largest collections of ancient oaks in Europe, and the Royal Oak is treated as its figurehead: Sir David Attenborough chose it as the symbol of a conservation campaign for the park's veteran trees, and it carries its own entry in the Woodland Trust's national Ancient Tree Inventory, a formally surveyed and registered specimen rather than a folk legend. Fallow deer, descendants of the herd Charles I first enclosed the park to hunt, still graze in its shadow, close enough on a quiet afternoon that the oak and the animals read as one scene rather than two separate facts.",
+   "verified_sources": [
+    "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=40404",
+    "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/london-the-south-east/the-royal-oak-richmond-park/"
+   ],
+   "access": "Free, open access, national park",
+   "transport": "Bus or car to Richmond Park, then on foot near Pen Ponds",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Richmond_Park%2C_The_Royal_Oak_%281%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "AndyScott, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3000,
+    "height": 1999
+   },
+   "curation_status": "ai_generated",
+   "notes": "Coordinates taken from the tree's own Woodland Trust Ancient Tree Inventory entry (ID 40404), grid reference TQ1938873126, converted from OSGB36 to WGS84. The ATI page carries no language obscuring or rounding this location (unlike some sensitive ATI entries), and the tree is a well-known, publicly signposted landmark, so the precise grid reference is used directly rather than the previous general \"near Pen Ponds\" estimate.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+    "kind": "fruit"
+   }
+  },
+  {
+   "id": "lon_003",
+   "name": "The Cheapside Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "250+ years",
+   "age_min": 200,
+   "age_max": 300,
+   "location": {
+    "address": "Corner of Wood Street and Cheapside, City of London, EC2V 8AA",
+    "latitude": 51.5155,
+    "longitude": -0.0934,
+    "neighbourhood": "City of London"
+   },
+   "story": "The only Great Tree of London still standing inside the Square Mile grows out of a churchyard that no longer has a church. St Peter Cheap burned down in the Great Fire of 1666 and was never rebuilt, and the plane tree that replaced its congregation is old enough that nobody can say exactly when it was planted. By 1853 a cab company was advertising its rank simply as 'Under the tree, Cheapside,' proof the tree was already a fixed point on the map before street numbering caught up with London's growth. In 1901 the press went further and called it the most valuable tree in the world, a claim about the land beneath it as much as the tree itself. It has survived since through the Blitz, through the City's total postwar rebuilding, and through a peculiarity of property law: the leases on the buildings flanking it forbid construction above two storeys on that side, an accident of contract law that has kept its canopy open to the sky for longer than most buildings nearby have existed. William Wordsworth is thought to have had this exact tree in mind writing his 1800 poem Poor Susan, in which a countrywoman hears a thrush singing from a tree on Cheapside and briefly mistakes the City for home.",
+   "verified_sources": [
+    "https://www.atlasobscura.com/places/cheapside-plane-tree",
+    "https://lookup.london/wood-street-tree/"
+   ],
+   "access": "Free, public square, City of London",
+   "transport": "2 min walk from St Paul's tube station",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Cheapside_Plane_%281%29.jpg",
+    "license": "CC0 1.0",
+    "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3024,
+    "height": 4032
+   },
+   "curation_status": "ai_generated",
+   "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Look Up London both independently corroborate the St Peter Cheap site, the 1853 cab-company advert, the 1901 'most valuable tree' claim and the Wordsworth connection.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_004",
+   "name": "The Berkeley Square Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "235 years",
+   "age_min": 230,
+   "age_max": 240,
+   "location": {
+    "address": "Berkeley Square, Mayfair, London W1J 6EJ",
+    "latitude": 51.5102,
+    "longitude": -0.1449,
+    "neighbourhood": "Mayfair"
+   },
+   "story": "In 2008 a valuer put a price on one of the plane trees in Berkeley Square: 750,000 pounds, briefly the most valuable tree in Britain, a number that says more about Mayfair real estate than about the tree itself. The square's planes went into the ground in 1789, planted by the MP Edward Bouverie, who lived at number 13, and they now rank among the oldest London planes anywhere in the city. There are more than thirty of them, planted as a single scheme rather than one famous specimen, which is why this entry marks the square itself rather than a single trunk. The nightingale of the song 'A Nightingale Sang in Berkeley Square' almost certainly never existed as a literal bird here, nightingales do not really sing over central London traffic, but if one had, these are the branches it would have used. The planes were named among the original 41 Great Trees of London, and the Grade II listed garden they shade has kept the same rectangular shape since the square was laid out, a fixed green rectangle while Mayfair rebuilt itself around it for over two centuries.",
+   "verified_sources": [
+    "https://exploring-london.com/2024/07/03/10-significant-and-historic-london-trees10-berkeley-square-plane-tree/",
+    "https://lapadalondon.com/the-plane-facts-about-berkeley-square/"
+   ],
+   "access": "Free, public garden",
+   "transport": "2 min walk from Green Park or Bond Street tube",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Berkeley_Plane_%281%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3024,
+    "height": 4032
+   },
+   "curation_status": "ai_generated",
+   "notes": "Two independent sources now back the planting date, Bouverie attribution, 2008 valuation and Great Trees of London designation. This entry describes the square's plane trees collectively (30+ specimens, one individually named and valued); coordinates mark the square itself rather than one specific trunk among many, so location_precision stays approximate honestly.",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "lon_005",
+   "name": "The Sweet Chestnut of Greenwich Park",
+   "species": "Sweet Chestnut (Castanea sativa)",
+   "age_estimate": "365 years",
+   "age_min": 355,
+   "age_max": 375,
+   "location": {
+    "address": "Greenwich Park, London SE10",
+    "latitude": 51.476757,
+    "longitude": 0.006761,
+    "neighbourhood": "Greenwich"
+   },
+   "story": "Charles II wanted Versailles and settled for Greenwich instead. After taking the throne in 1660, he ordered grand formal avenues cut through the old royal hunting park, hundreds of sweet chestnuts marched up the hill toward the future Royal Observatory in straight French rows. Most of that planting is gone, lost to storms, disease and three and a half centuries of ordinary attrition. This chestnut is one of roughly fifty survivors, and the one the Great Trees of London list points to in the Flower Garden. Its trunk has thickened into something closer to architecture than plant, and it has been pollarded more than once, a pruning technique that resets a tree's internal clock and is a large part of why it is still standing while so many of its neighbours from the same planting are not. Its slowly rotting heartwood, hollow in places, now shelters beetles and fungi that need old deadwood and nowhere else. Every October it drops a carpet of spiny green cases across the grass, food for the park's squirrels and for anyone willing to peel one open. It has stood through the Restoration, two world wars and the digging of anti-aircraft gun pits nearby. Unlike the oak that once stood a short walk from here, it has never stopped growing.",
+   "verified_sources": [
+    "https://www.royalparks.org.uk/get-in-touch/media-centre/news-press-releases/vote-greenwich-parks-shortlisted-tree-year-2023",
+    "https://www.friendsofgreenwichpark.org.uk/Wildlife/Trees/",
+    "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+    "https://opendata-woodlandtrust.hub.arcgis.com/datasets/9d2d13b04d654ceb9ba6e0697c1e0c29_0"
+   ],
+   "access": "Free, open parkland, Greenwich Park",
+   "transport": "10 min walk from Maze Hill station, into Greenwich Park",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "label": "October, when its spiny nut cases carpet the ground beneath it"
+   },
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Greenwich_Park_Sweet_Chestnut_%281%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+    "status": "approved",
+    "width": 4032,
+    "height": 3024
+   },
+   "curation_status": "ai_generated",
+   "notes": "Replaces the dead/fallen Queen Elizabeth's Oak on 2026-07-27 per Hidde's living-trees rule. Coordinates upgraded 2026-07-28 to Woodland Trust ATI open-data record Id 2919 (girth 7.26m, Ancient, alive, verified 2021), the only ancient chestnut in that corner of the Flower Garden and ~30m from the approved photo's EXIF point, so precision is confirmed. Great-Tree identification is convergent (Wikipedia lists the Great Tree chestnut in the Flower Garden; this is the garden's largest ancient chestnut) and phrased as attributed. Deliberately NOT claiming Tree of the Year 2023: that shortlisted chestnut stands in the avenue near the Roman Temple, ~350m away. Age derives from the documented 1660-64 planting, not a ring count.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_006",
+   "name": "The Mulberry of Charlton House",
+   "species": "Black Mulberry (Morus nigra)",
+   "age_estimate": "400 years",
+   "age_min": 380,
+   "age_max": 420,
+   "best_time": {
+    "months": [
+     8
+    ],
+    "label": "August, when it still fruits every summer despite four centuries of leaning"
+   },
+   "location": {
+    "address": "Charlton House, Charlton Road, London SE7 7TH",
+    "latitude": 51.4807,
+    "longitude": 0.0371,
+    "neighbourhood": "Charlton, South East London"
+   },
+   "story": "James I wanted Britain to grow its own silk, and in 1608 he ordered mulberry trees planted across the country to feed the silkworms that would spin it. The plan collapsed almost immediately over a basic mistake: silkworms eat white mulberry leaves and mostly refuse black ones, and the trees planted nationwide, including this one, were black mulberries. Charlton House got one of them, and unlike England's silk industry, the tree itself survived the error by four hundred years and counting. It now leans so far from vertical that its lower branches nearly touch the ground, propped up by a scaffold of wooden supports rather than left to collapse under its own spread, and it still fruits every August, small dark berries falling onto grass that has replaced whatever formal garden once surrounded it. The tree predates the surrounding community centre by roughly three centuries. Charlton House itself, a Jacobean mansion finished the same decade this mulberry went into the ground, has changed use many times since, while the tree in its garden has simply kept growing, propped a little more with each passing century.",
+   "verified_sources": [
+    "https://www.moruslondinium.org/research/charlton-house-heritage-mulberry",
+    "https://www.londonremembers.com/memorials/charlton-house-mulberry-tree-3"
+   ],
+   "access": "Free, open grounds of Charlton House community centre",
+   "transport": "Charlton rail station, 5 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Charlton_House_Mulberry_Tree_%2801%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Ethan Doyle White, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3448,
+    "height": 4592
+   },
+   "curation_status": "ai_generated",
+   "notes": "Source URLs backfilled 2026-07-28: Morus Londinium (a Woodland Trust/academic mulberry-mapping project) and London Remembers both corroborate the 1608 planting and James I connection independently. Location corrected the same pass: a systematic geocode audit flagged the stored coordinate as 1055m from Charlton House; Nominatim's own geocode of Charlton House, Charlton Road places it at 51.4807, 0.0371 (postcode SE7 7TH, not the stored SE7 8RE), matching this entry's own 'Charlton, South East London' neighbourhood. Fixed.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_007",
+   "name": "The Fulham Palace Oak",
+   "species": "Holm Oak (Quercus ilex)",
+   "age_estimate": "500+ years",
+   "age_min": 450,
+   "age_max": 550,
+   "location": {
+    "address": "Fulham Palace Gardens, Bishop's Avenue, London SW6 6EA",
+    "latitude": 51.4704,
+    "longitude": -0.2153,
+    "neighbourhood": "Fulham"
+   },
+   "story": "This oak survived five centuries partly because people kept attacking it. It was coppiced long ago, cut back hard to its base, a brutal-looking practice that paradoxically resets a tree's age clock and can add centuries to its life rather than shorten it. What grew back is a Holm Oak, an evergreen Mediterranean species that has no business thriving this far north, and quite possibly the oldest specimen of its kind anywhere in Britain. It grows in the grounds of Fulham Palace, for centuries the working home of the Bishop of London rather than a royal estate, and the two bishops most often credited with planting it, Edmund Grindal and John Aylmer, both lived here in the second half of the 16th century, among the first people in England to try growing the species at all. The oak was named among the original 41 trees given Great Tree status in 1988, and a later record corrected an old misidentification of the tree as a common Pedunculate Oak rather than the rarer Mediterranean evergreen it actually is. Fulham Palace Gardens are free to enter daily, which means reaching London's likely oldest holm oak costs nothing but the walk from Putney Bridge station.",
+   "verified_sources": [
+    "https://www.fulhampalace.org/news/the-fulham-palace-ancient-holm-oak/",
+    "https://www.alamy.com/stock-photo-the-holm-oak-quercus-ilex-is-over-450-years-old-at-fulham-palace-gardens-86541999.html"
+   ],
+   "access": "Free, Fulham Palace Gardens open daily",
+   "transport": "Putney Bridge tube, 10 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fulham_Palace_Oak_%282%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3024,
+    "height": 4032
+   },
+   "curation_status": "ai_generated",
+   "notes": "Species corrected 2026-07-22: original data said Pedunculate Oak (Quercus robur), but Fulham Palace's own site and independent photo captions identify it as Holm Oak (Quercus ilex), possibly the oldest in Britain. Photo now found. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1km from Fulham Palace itself; Nominatim's own geocode agrees on two separate queries (51.4704-51.4705, -0.2152 to -0.2154), one of them matching this entry's own postcode (SW6 6EA) exactly. Moved onto the palace grounds; still confirmed since the palace itself, not just a neighbourhood, is now correctly pinpointed.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_009",
+   "name": "The Old Lions of Kew",
+   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+   "age_estimate": "250+ years",
+   "age_min": 250,
+   "age_max": 270,
+   "location": {
+    "address": "Royal Botanic Gardens Kew, Richmond, London TW9 3AE",
+    "latitude": 51.4787,
+    "longitude": -0.2956,
+    "neighbourhood": "Kew, South West London"
+   },
+   "story": "John Smith, Kew Gardens' first curator, gave five of its oldest trees a nickname that stuck: the Old Lions, veterans that have outlasted every curator, director and fashion in planting since the garden began. The group spans the site rather than clustering in one corner: an oriental plane near the Orangery, an elm, a locust, and the most storied of the five, a Japanese pagoda tree planted in 1762 that ranks among the oldest of its species growing anywhere in Europe outside its native range. All five predate Kew's formal existence as a public institution. They were already growing when Princess Augusta laid out the first pleasure garden here in the 1750s, decades before Kew merged with the neighbouring Richmond estate and grew into the botanic garden it is today. Seeing all five in one visit means crossing a meaningful stretch of the grounds, since Smith grouped them by age and survival rather than by location, but each carries its own small marker naming it as one of the Lions. Entry to Kew requires a paid ticket, unlike most of London's ancient trees, but the garden built its reputation partly on outliving its own founders, and these five are the proof of it.",
+   "verified_sources": [
+    "https://www.kew.org/read-and-watch/kews-old-lions",
+    "https://exploring-london.com/2024/06/19/10-significant-and-historic-london-trees8-the-old-lions/"
+   ],
+   "access": "Paid entry to Kew Gardens",
+   "transport": "Kew Gardens tube station (District Line), 5 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Kew_Gardens_Pagoda_Tree_P1170594.JPG",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Deror avi, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3000,
+    "height": 4000
+   },
+   "curation_status": "ai_generated",
+   "notes": "Both named sources place the five trees at distinct spots across Kew (the pagoda tree by the Hive, the oriental plane by the Orangery, the elm and locust each their own specimen), so a single coordinate for the group is a garden-level estimate rather than a pin on any one trunk; location_precision stays approximate honestly rather than picking one tree's spot to represent all five.",
+   "location_precision": "approximate",
+   "best_time": {
+    "months": [
+     8,
+     9
+    ],
+    "label": "August to September, when it flowers",
+    "kind": "flowers"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "lon_010",
+   "name": "The Evelyn Mulberry",
+   "species": "Black Mulberry (Morus nigra)",
+   "age_estimate": "300+ years",
+   "age_min": 300,
+   "age_max": 350,
+   "best_time": {
+    "months": [
+     8
+    ],
+    "label": "August, when the fruit ripens, one of the few parts of Sayes Court's story that still repeats every year"
+   },
+   "location": {
+    "address": "Sayes Court Park, Sayes Court Street, Deptford, London SE8 5RA",
+    "latitude": 51.484,
+    "longitude": -0.0311,
+    "neighbourhood": "Deptford, East London"
+   },
+   "story": "John Evelyn's garden at Sayes Court was one of the most celebrated in 17th century England, laid out by a writer and diarist who helped define English ideas about forestry and planting, and it lasted less than four decades before a tenant wrecked it for sport. Tsar Peter the Great of Russia rented the house in 1698 while studying shipbuilding nearby, and legend holds that he spent his evenings being wheeled through Evelyn's prized holly hedges in a wheelbarrow, flattening years of careful topiary for entertainment. Historians doubt Peter planted anything here himself, and this mulberry's own age is uncertain enough that the honest claim is only that it may have survived the same visit that ruined everything around it, not that it predates the destruction with certainty. What remains today is a fenced, propped tree standing in an unremarkable public park where almost nothing else of Evelyn's garden survives, plus a stone marker at its base that tells visitors the wheelbarrow story rather than leaving them to wonder why one old mulberry gets special treatment. It still fruits every August, one of the few parts of Sayes Court's story that still repeats on schedule rather than existing only in an old diary.",
+   "verified_sources": [
+    "https://www.atlasobscura.com/places/evelyn-s-mulberry",
+    "https://www.moruslondinium.org/research/john-evelyns-mulberry"
+   ],
+   "access": "Free, public park",
+   "transport": "Deptford or Deptford Bridge station, 5 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Mulberry_tree%2C_Sayes_Court_Park_-_geograph.org.uk_-_6124238.jpg",
+    "license": "CC BY-SA 2.0",
+    "attribution": "Robin Webster, via Geograph Britain and Ireland / Wikimedia Commons",
+    "status": "approved",
+    "width": 1024,
+    "height": 768
+   },
+   "curation_status": "ai_generated",
+   "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Morus Londinium (a Woodland Trust/academic mulberry-mapping project) both corroborate the Evelyn garden, the tree's age and the Peter the Great story; both also independently note historians doubt Peter himself planted it, consistent with this entry's own careful phrasing ('may have survived even that') rather than crediting him with planting it. Location corrected the same pass: the stored coordinate was about 700m from Sayes Court Street itself, whose Nominatim geocode (51.484, -0.031) agrees closely with the independently found Sayes Court Park coordinate from a parks-data source (51.4848, -0.0310). Moved onto the actual street/park cluster.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_008",
+   "name": "Barney the Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "300+ years",
+   "age_min": 300,
+   "age_max": 350,
+   "location": {
+    "address": "Barn Elms, Rocks Lane, Barnes, London SW13",
+    "latitude": 51.474345,
+    "longitude": -0.230953,
+    "neighbourhood": "Barnes, South West London"
+   },
+   "story": "The biggest London plane in the city is a tree most Londoners have never heard of. Nicknamed Barney, it stands at Barn Elms in the riverside suburb of Barnes, tucked at the edge of the land next to the London Wetland Centre, and it is old enough, over 300 years, that it is treated locally as potentially the single oldest London plane anywhere in the capital. The species is the city's signature tree for a reason: it tolerates soot, survives brutal pruning, and outlives almost everything planted around it, and Barney is the patriarch of them all in Barnes. Its own Great Trees of London plaque states the claim plainly, calling it simply the oldest in London, though the tree's coordinates only firmed up in 2026, when a photographer's geotagged shot of Barney was checked against the plaque's own recorded position and the two turned out to sit within nine metres of each other, close enough to count as the same tree rather than two separate estimates. Most visitors to Barn Elms come for the birdwatching at the Wetland Centre next door and walk straight past the small plaque without noticing it, which is itself part of Barney's story: London's biggest plane tree stands anonymously beside one of the city's most visited nature reserves.",
+   "verified_sources": [
+    "https://commons.wikimedia.org/wiki/File:Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg",
+    "https://openplaques.org/plaques/54213"
+   ],
+   "access": "Public access, Barnes area",
+   "transport": "Barnes station or bus",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg",
+    "license": "CC BY 4.0",
+    "attribution": "Matt Brown, via Wikimedia Commons",
+    "status": "approved",
+    "width": 4032,
+    "height": 3024
+   },
+   "curation_status": "flagged",
+   "notes": "Coordinates updated 2026-07-22 from the EXIF geotag on a CC BY 4.0 photo captioned 'Barney of Barn Elms' (Matt Brown, May 2026). A second independent source found 2026-07-26: Open Plaques records a Great Trees of London commemorative plaque for this exact tree ('the oldest in London... platanus x hispanica') at 51.47441, -0.23106, about 9 metres from the EXIF position, close enough to be the same tree. Location precision upgraded on that agreement. Story rewritten 2026-07-28 to reach the standard word count, grounded entirely in facts already established above, no new claims added.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_011",
+   "name": "The St Paul's Churchyard Planes",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 260 years",
+   "age_min": 230,
+   "age_max": 280,
+   "location": {
+    "address": "North Churchyard, St Paul's Cathedral, City of London EC4M 8AD",
+    "latitude": 51.5145,
+    "longitude": -0.098,
+    "neighbourhood": "City of London"
+   },
+   "story": "Four planes stood on the north side of St Paul's churchyard until the Great Storm of 1987 took one of them down. The three that remain are, according to one detailed local history of the cathedral, over 250 years old, which would put their planting in the middle of the 18th century, when Wren's dome was still the newest thing on the skyline and the ground beneath them was a working burial place. That age comes from a single account. The London Parks and Gardens Trust inventory for the churchyard agrees only that these are among the oldest plane trees in the City, without giving a number or a date, so read 250 years as the best figure anyone has published rather than a measured one.\n\nWhat they lived through is less disputed. On the night of 29 December 1940 incendiary bombs set the streets around the cathedral alight and burned out much of the City. The dome held, and so did the planes. Londoners later planted this species everywhere precisely because it shrugs off soot and smoke; these three were in the ground a century before that fashion started.\n\nThis is an ensemble rather than one specimen: three unnamed trees, none of them individually catalogued or given coordinates by any source. Stand on the paved path along the north side and all three are in one view. The pin marks that garden, not a particular trunk.",
+   "verified_sources": [
+    "https://oxbowdbbc.wordpress.com/2016/09/19/st-pauls-cathedral-hidden-history-half-truths/",
+    "https://londongardenstrust.org/inventory/site-record?ID=COL096"
+   ],
+   "access": "Free, open access, public churchyard garden on the north side of St Paul's Cathedral (no ticket needed for the garden, only for the cathedral interior)",
+   "transport": "2 min walk from St Paul's station (Central Line)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "lon_012",
+   "name": "The Amwell Street Fig",
+   "species": "Common Fig (Ficus carica)",
+   "age_estimate": "roughly 195 years",
+   "age_min": 180,
+   "age_max": 200,
+   "location": {
+    "address": "Amwell Street, outside the former Clerkenwell Parochial Schools building, EC1R",
+    "latitude": 51.53,
+    "longitude": -0.1099,
+    "neighbourhood": "Clerkenwell, Islington"
+   },
+   "story": "This fig may have been planted as a teaching aid. It sprawls across the front of the former Clerkenwell Parochial Schools on Amwell Street, several stems rising from one rootstock and propped where the limbs have outgrown their own strength. Paul Wood, who has spent years cataloguing London's street trees, reckons it has stood here since the schools opened, put in deliberately at the front of the building and perhaps partly so that Bible lessons had something living to point at. Figs run all through scripture, and a fig outside the classroom window is an illustration nobody can lose.\n\nThe dates want care. The Amwell Society dates the school building to 1830, while other accounts say 1827. And the planting claim rests on that one specialist reading rather than on two independent records, so roughly 195 years is a careful estimate, not a birth certificate.\n\nClerkenwell changed around it more than most of London did: watchmakers, radical printers, the New River head a few streets north still delivering water into the city, charity schoolchildren giving way to board schools and then to flats. The building stopped being a school. The fig stayed, and Islington still counts it among the borough's notable street trees.\n\nIt is a working fruit tree on a public pavement in central London, which is the part that stops people. Come in late summer and the figs are there, at eye level, on the street.",
+   "best_time": {
+    "months": [
+     8,
+     9
+    ],
+    "kind": "fruit",
+    "label": "late summer, when the figs ripen against the old school wall"
+   },
+   "verified_sources": [
+    "https://thestreettree.substack.com/p/188-teaching-aid-fig",
+    "https://www.monumentaltrees.com/en/gbr/england/greaterlondon/4533_amwellstreetec1/"
+   ],
+   "access": "Free, open access, standing against a street frontage on public pavement",
+   "transport": "8 min walk from Angel station (Northern Line) or Farringdon station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "lon_013",
+   "name": "The Dorchester Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 95 years",
+   "age_min": 93,
+   "age_max": 100,
+   "location": {
+    "address": "Forecourt of The Dorchester Hotel, 53 Park Lane, Mayfair, London W1K 1QA",
+    "latitude": 51.506828,
+    "longitude": -0.152099,
+    "neighbourhood": "Mayfair"
+   },
+   "story": "One of the Great Trees of London stands at the front door of a hotel where a night costs more than most people's monthly rent, and you can walk up to it for nothing. The London Tree Forum and the Countryside Commission put this plane on their 1997 list of the capital's great trees, which was generous of them: the Great Trees map dates its planting to the early 1930s, making it younger than almost every other tree on this page by a century or more.\n\nThe arithmetic is suggestive rather than proven. The Dorchester opened in 1931, and a plane put into a brand new Park Lane forecourt in the early 1930s fits that opening neatly, but no source actually joins the two facts, and the planting date itself comes from that one specialist record.\n\nWhat the tree unquestionably has is roots. Its root plate has risen clear of the ground and spread across the forecourt in ridges, the sort of thing a city normally paves over and here has been designed around instead: the hotel's recent refit tucked its garden underneath the tree rather than the other way round.\n\nIt has stood through the Blitz, when the hotel's reinforced concrete frame earned a reputation for being bomb-proof and politicians and generals moved in for the duration, and through ninety years of Park Lane traffic since. You see it from the pavement. No need to go inside.",
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+    "https://exploring-london.com/tag/35-park-lane/",
+    "https://knowyourlondon.wordpress.com/2019/03/11/dorchester-hotel/"
+   ],
+   "access": "Free, stands in The Dorchester Hotel's open forecourt directly on Park Lane, clearly visible and reachable from the public pavement without entering the hotel",
+   "transport": "8 min walk from Hyde Park Corner station (Piccadilly Line)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_014",
+   "name": "The Marylebone Elm",
+   "species": "Huntingdon Elm (Ulmus x hollandica 'Vegeta')",
+   "age_estimate": "roughly 160 years",
+   "age_min": 145,
+   "age_max": 175,
+   "location": {
+    "address": "Pavement outside the Memorial Garden of Rest, 65 Marylebone High Street, Westminster, London W1U",
+    "latitude": 51.521886,
+    "longitude": -0.151724,
+    "neighbourhood": "Marylebone"
+   },
+   "story": "Dutch elm disease killed around 25 million British elms from the 1960s on, roughly three quarters of the country's population. This one was missed. It stands on the pavement of Marylebone High Street, more than 100 feet of it by the Great Trees of London map, the last elm of its kind in Westminster to have escaped the beetle that carried the fungus through every hedgerow around it.\n\nSpecialist tree writers identify it as a Huntingdon Elm, a hybrid of wych and field elm. A recent account of the street calls it simply a wych elm, so the exact cultivar is not universally agreed. Nor is the age: writers through the 2010s consistently put it at about 150 years, which makes it roughly 160 now, a figure carried forward rather than measured.\n\nIt has outlived a church. The small garden beside it, the Memorial Garden of Rest, was laid out in 1951 on the site of the old St Marylebone parish church, which was bombed in the war and then demolished. The building is gone. The tree that grew outside it is still there, leaning out over the pavement as though it means to cross the road.\n\nA naturalist photographed it in bud and healthy in 2017, and someone walking the High Street described it still standing there in April 2026.",
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+    "https://londontreesblog.wordpress.com/2014/12/17/the-marylebone-elm/",
+    "https://bugwomanlondon.com/2017/03/04/bugwoman-on-location-the-survivor/"
+   ],
+   "access": "Free, stands on the open public pavement directly outside the small Garden of Rest, no restriction",
+   "transport": "6 min walk from Baker Street station (Bakerloo, Circle, District, Hammersmith & City, Jubilee, Metropolitan Lines)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_015",
+   "name": "The Embankment Plane",
+   "species": "Oriental Plane (Platanus orientalis)",
+   "age_estimate": "roughly 156 years",
+   "age_min": 145,
+   "age_max": 160,
+   "location": {
+    "address": "North side of Horse Guards Avenue at the junction with Victoria Embankment, Westminster, London SW1A",
+    "latitude": 51.504796,
+    "longitude": -0.123285,
+    "neighbourhood": "Westminster"
+   },
+   "story": "The tree that helped make London a city of planes is not a London Plane. It is an Oriental Plane, one of the two species crossed to produce the hybrid now growing down half the streets in the capital, and it stands where Horse Guards Avenue meets the Victoria Embankment, on ground that was river water until Bazalgette's engineers pushed the Thames back in the 1860s.\n\nThe Great Trees of London map dates it to 1870 and gives the species. Both of those rest on that one specialist record. General histories of the Embankment agree that planes went in along the new road from about 1870, the first scheme in the city to plant a thoroughfare with trees systematically, but none of them names this individual tree. So it is a survivor of that first planting on the evidence available, rather than a documented one.\n\nIt has had a good view. Cleopatra's Needle was raised a few hundred metres along the same Embankment in 1878, trams came and went, the Ministry of Defence rose behind it in the 1950s, and Whitehall traffic has run past its trunk for a century and a half.\n\nIt gets called one of the tallest planes in Britain, a claim nobody appears to have checked. Easier to say what it plainly is: a very large tree on one of the busiest corners in Westminster that almost nobody stops for.",
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+    "https://www.southbankcentre.co.uk/blog/articles/city-and-tree-story-london-planes",
+    "https://www.treesforcities.org/index.php?p=stories/the-mysterious-story-of-the-london-plane-tree"
+   ],
+   "access": "Free, stands on the public pavement/verge at the Horse Guards Avenue and Victoria Embankment junction, fully open access, no restriction",
+   "transport": "7 min walk from Westminster station (Circle, District, Jubilee Lines)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_016",
+   "name": "The Great Plane of Brunswick Square",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 230 years",
+   "age_min": 220,
+   "age_max": 240,
+   "location": {
+    "address": "Brunswick Square Gardens, Bloomsbury, London WC1N 1AF",
+    "latitude": 51.5242,
+    "longitude": -0.1219,
+    "neighbourhood": "Bloomsbury"
+   },
+   "story": "This plane was planted for orphans. Brunswick Square Gardens was laid out in 1796 as green space for the children of the Foundling Hospital, and this tree is reckoned to date from that laying out, which makes it around 230 years old. Only the planes of Berkeley Square, put in seven years earlier, are commonly held to be older among the planes of central London. It has stood through everything Bloomsbury became: the Hospital selling up and moving out of London in the 1920s, its buildings coming down, the square rebuilt around the gap, the Blitz, and the concrete decks of the Brunswick Centre arriving to the west in the 1970s. The institution it was planted to shade is gone. The tree is not. In 2008 it was named one of the ten Great Trees of London, and it has since been given its own information board in the square, which is a quiet way of saying the neighbourhood knows what it has. Photographs taken in spring 2026 show it in full health. Neither source that agrees on the 1796 planting records a girth or a height, so there are no measurements to quote here, only the thing itself: a very large plane in a small square five minutes from Russell Square station, free and open, with the Foundling Museum on the far side telling the rest of the story.",
+   "verified_sources": [
+    "https://bloomsburysquares.com/2020/12/01/the-great-plane-brunswick-square/",
+    "https://www.andrewwhitehead.net/blog/the-great-plane-of-bloomsbury",
+    "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+   ],
+   "access": "Free, open public garden square",
+   "transport": "5 min walk from Russell Square station (Piccadilly Line)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_017",
+   "name": "The Valence Park Holm Oak",
+   "species": "Holm Oak (Quercus ilex)",
+   "age_estimate": "disputed, roughly 150 to 350 years",
+   "age_min": 150,
+   "age_max": 350,
+   "location": {
+    "address": "Valence Park, next to the moat at Valence House, Becontree, Dagenham, London RM8 3HT",
+    "latitude": 51.5581,
+    "longitude": 0.135,
+    "neighbourhood": "Becontree, Barking and Dagenham"
+   },
+   "story": "The October 1987 storm brought down some 15 million trees across southern England and left this one untouched. Its low, heavily buttressed frame is credited for that: a holm oak that grows outward rather than upward gives the wind nothing to lean on. Roughly ten years later it was added to the Great Trees of London list. How old it is depends on which source you take, and the two do not agree. The Barking and Dagenham Post, quoting the borough's own heritage education officer, credits the Mertinn family, German immigrants who had made their money in jewellery and bought the estate in the early 1700s, with planting it to make their grounds look grander. That would put it close to 350 years. The London Gardens Trust's survey record for the site is more clinical and dates the grounds' holm oak and yew only to the nineteenth century, which would make it under 225. Both agree on what stands there: one of the most impressive holm oaks in London, beside the moat of Valence House, a medieval manor that is now the borough's museum. One practical note. The moat enclosure immediately beside the tree was closed for restoration work due to finish in spring 2026, so whether you can currently get right up to the trunk is unconfirmed. The park around it stays open, and the pin here is park level rather than surveyed.",
+   "verified_sources": [
+    "https://www.barkinganddagenhampost.co.uk/lifestyle/20941529.not-even-great-storm-87-move-old-oak/",
+    "https://londongardenstrust.org/conservation/inventory/site-record/?ID=BAD024",
+    "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+   ],
+   "access": "Free, public park; the moat enclosure immediately beside the oak was closed for restoration works stated (2026) to complete by spring 2026, so current accessibility right up to the trunk is unconfirmed as of, though the wider park stays open",
+   "transport": "Becontree station (District Line) then bus 62 to Becontree Avenue/Valence Avenue, or Chadwell Heath rail station, roughly 20-25 min walk or a short bus ride either way",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "lon_018",
+   "name": "The Ravenscourt Park Baobab Plane",
+   "species": "London Plane, Baobab Group (Platanus x hispanica)",
+   "age_estimate": "roughly 100 to 200 years, exact age unknown",
+   "age_min": 100,
+   "age_max": 225,
+   "location": {
+    "address": "South of the lower grassy area, near the elm avenue, Ravenscourt Park, Hammersmith, London W6",
+    "latitude": 51.4967,
+    "longitude": -0.2386,
+    "neighbourhood": "Hammersmith"
+   },
+   "story": "A virus is the best explanation anyone has for the shape of this tree. It carries a swollen, knobbled trunk under a crown far too small for it, the signature of the rare Baobab group of London plane, a form believed to come from viral infection rather than ordinary growth. Few are known; the closest comparable specimens grow in Canterbury. Nobody can say how old it is, and the sources sit far apart. A specialist plane blog puts its planting somewhere in the nineteenth century, so 150 to 225 years. A local tree firm reckons closer to 100, while allowing it might date to 1812, when the park was the private estate of George Scott. The same firm repeats a story that a wartime bomb damaged the tree and that the regrowth explains its shape; no other source carries it, so treat that as local legend until one does. What is documented is stranger. The arborist Richard Moore took cuttings from this exact tree. Two of six rooted and now grow at a sculpture park in Dorset, still far too young to show whether the swelling travels with the cutting or belongs only to the parent. It is one of two Great Trees of London inside Ravenscourt Park, standing south of the lower grassy area near the elm avenue, five minutes from the District Line station, and it is unmistakable once you are in front of it.",
+   "verified_sources": [
+    "http://elmparadise.blogspot.com/2017/05/the-baobab-planes-of-canterbury.html",
+    "https://www.graftingardeners.co.uk/ravenscourt-park-trees/",
+    "https://www.treesandshrubsonline.org/articles/platanus/platanus-x-hispanica/",
+    "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+   ],
+   "access": "Free, open public park",
+   "transport": "5 min walk from Ravenscourt Park station (District Line)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "lon_019",
+   "name": "The Fountain Court Mulberries",
+   "species": "Black Mulberry (Morus nigra)",
+   "age_estimate": "roughly 130 to 140 years",
+   "age_min": 129,
+   "age_max": 139,
+   "location": {
+    "address": "Fountain Court, Middle Temple, London EC4Y 9DH",
+    "latitude": 51.5121,
+    "longitude": -0.1109,
+    "neighbourhood": "Temple, City of London / Westminster border"
+   },
+   "story": "Two black mulberries lean on wooden crutches either side of a fountain that has been running since 1681. They were planted for a queen's jubilee and the sources cannot agree which one. Middle Temple's own archive dates them to 1897 and Victoria's Diamond Jubilee. An independent mulberry history gives 20 June 1887, her Golden Jubilee, and adds that the planting was marked with a dinner in Middle Temple Hall. Ten years apart, both plausible, neither picked here: call the trees roughly 130 to 140 years old. Four went in together and only these two are left, the other pair removed in the 1970s. Black mulberry ages like this, going crooked and heavy limbed early, propping itself on whatever it is given, and fruiting hard regardless. Fountain Court is a small enclosed square between Middle Temple Hall and the gardens that run down toward the river, a working courtyard of the legal quarter rather than a park, and one of the quietest corners in the City. Access is real but narrow. The court and garden open to the public on weekdays, roughly 12:30 to 3pm, not on bank holidays, entered through the Garden Room off Middle Temple Lane, and they close in high winds or for private functions. Turn up inside that window and both trees are there, one on each side of the water.",
+   "best_time": {
+    "months": [
+     8
+    ],
+    "kind": "fruit",
+    "label": "August, when the black mulberries ripen and drop"
+   },
+   "verified_sources": [
+    "https://www.middletemple.org.uk/archive/archive-month/january-2022-muse-poets-and-resort-birds-%E2%80%93-many-faces-middle-temple-fountain",
+    "https://sandrasgardenblog.wordpress.com/2019/03/29/mulberries-for-a-queen/"
+   ],
+   "access": "Genuinely public but restricted hours: Middle Temple's garden and Fountain Court are open to the public on weekdays roughly 12:30-3pm, excluding bank holidays, entered via the Garden Room off Middle Temple Lane; occasionally closed for high winds or private functions",
+   "transport": "5 min walk from Temple station (Circle, District Lines)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "lon_020",
+   "name": "The Inner Temple Mulberry",
+   "species": "Black Mulberry (Morus nigra)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Benchers' Walk, Inner Temple Garden, by the railings outside Paper Buildings, City of London EC4Y",
+    "latitude": 51.5112,
+    "longitude": -0.1086,
+    "neighbourhood": "Temple, City of London"
+   },
+   "story": "The Inner Temple's garden opens to the public for two and a half hours on weekday afternoons, and this tree is a fair reason to time the visit. A black mulberry stands by the railings of Benchers' Walk, outside Paper Buildings, its trunk about a metre and a half around and ten metres of crown above it. The Inner Temple's own history of the garden names it as one of the survivors of an old orchard, alongside a large-fruiting walnut and a quince, which is the institution itself calling this inherited planting rather than decoration. What no source will say is how old it is. There is no planting date anywhere, and black mulberries are among the hardest trees to age: they rot hollow early, lean until they need propping, and root wherever a low branch touches soil, so the trunk stops being a record of anything. This entry carries no age for that reason rather than a guess. The ground is famous for a scene that never happened here. Shakespeare set the plucking of the red and white roses, and with it the start of the Wars of the Roses, in the Temple garden; the tree is centuries younger than the fiction. Two hundred and fifty metres across the lane, Middle Temple's mulberries at Fountain Court at least have a disputed planting date to argue over. This one does not even have that.",
+   "best_time": {
+    "months": [
+     8
+    ],
+    "kind": "fruit",
+    "label": "August, when the mulberries ripen and stain whatever is underneath them"
+   },
+   "verified_sources": [
+    "https://www.moruslondinium.org/map/inner-temple-garden",
+    "https://www.innertemple.org.uk/estate-garden/the-inner-temple-garden/the-garden/history-of-the-garden/"
+   ],
+   "access": "Public, open weekdays 12:30pm-3:00pm only (not full daily access)",
+   "transport": "Temple station, 4 minute walk",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "lon_021",
+   "name": "The Finsbury Circus Pagoda Tree",
+   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+   "age_estimate": "roughly 200 years",
+   "age_min": 180,
+   "age_max": 220,
+   "location": {
+    "address": "Finsbury Circus Gardens, City of London EC2M",
+    "latitude": 51.5179,
+    "longitude": -0.0864,
+    "neighbourhood": "City of London"
+   },
+   "story": "This is the only Japanese pagoda tree in the City of London, on the City of London's own account of its gardens, and a City business paper's tour of Finsbury Circus says the same. The species comes from China and flowers cream in August, when almost nothing else does, which is a useful habit in a garden ringed by offices where lunch happens outdoors. Both sources tie the tree to the garden's original 1815 layout by George Dance the Younger, and neither produces a planting record, so the age here is circumstantial: roughly two centuries, inferred from the design rather than read off a document. Treat it as a range rather than a birthday. It has come through the most disruptive stretch of its life. Finsbury Circus lost most of its surface to Crossrail works for over a decade, then closed in 2023 for the first full renovation of the gardens in more than a hundred years and reopened in May 2025. The gardens are small, 2.2 hectares, so finding it takes a minute. Half a kilometre south, the Cheapside Plane is the only Great Tree of London still standing inside the Square Mile, and Kew's Old Lions include pagoda trees of roughly the same generation in a botanical collection. This one has spent its two hundred years in the middle of the banking district instead.",
+   "best_time": {
+    "months": [
+     8
+    ],
+    "kind": "flowers",
+    "label": "August, when it flowers cream-white and almost nothing else in London does"
+   },
+   "verified_sources": [
+    "https://www.cityoflondon.gov.uk/things-to-do/city-gardens/find-a-garden/finsbury-circus-gardens",
+    "https://www.cityam.com/inside-finsbury-circus-gardens-the-citys-biggest-green-space/"
+   ],
+   "access": "Free, public garden, standard park hours",
+   "transport": "Moorgate station, 3 minute walk; Liverpool Street station, 6 minute walk",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "lon_022",
+   "name": "The Quaker Garden Planes",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 145 years",
+   "age_min": 140,
+   "age_max": 150,
+   "location": {
+    "address": "Quaker Gardens, between Banner Street and Chequer Street, Islington EC1Y",
+    "latitude": 51.5265,
+    "longitude": -0.0912,
+    "neighbourhood": "Bunhill, Islington"
+   },
+   "story": "George Fox, who founded the Quakers, was buried on this ground in 1691, and the plane trees standing over it are nowhere near old enough to have seen it. The burial ground took Quaker dead from 1661 until 1855, and the space became a public recreation ground in 1965, laid out inside the Banner Street estate with the trees left in place. Their age is genuinely disputed. Bunhill Fields Quaker Meeting's own account of the garden says the mature London planes here were planted about 1880, which makes them roughly 145 years old. A local record drawing on the London Gardens Trust inventory describes three notable planes, two of which may date from the 18th century, which would make them a century older and among the oldest planes in London. The two claims have not been reconciled, and this page follows the Meeting's own figure because it is the institution's own history, while saying plainly that the bigger claim is out there. It is worth not confusing this with the celebrated burial ground next door. Bunhill Fields holds Blake, Defoe and Bunyan and gets the visitors; the Quaker ground is a separate, quieter square of grass and trees between Banner Street and Chequer Street, six minutes from Old Street. The Amwell Street Fig is about 1.4 kilometres west if you want to make an afternoon of it.",
+   "verified_sources": [
+    "https://bunhillquakers.org.uk/garden/",
+    "https://squaremilehealthwalks.wordpress.com/2017/07/18/quaker-gardens/"
+   ],
+   "access": "Free, public recreation ground (laid out 1965 within the GLC Banner Street estate), entered from Banner Street or Chequer Street",
+   "transport": "Old Street station, 6 minute walk",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "lon_023",
+   "name": "The Ravenscourt Park Tree of Heaven",
+   "species": "Tree of Heaven (Ailanthus altissima)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Near the sports area and children's playground, Ravenscourt Park, Hammersmith W6",
+    "latitude": 51.49633,
+    "longitude": -0.237089,
+    "neighbourhood": "Hammersmith"
+   },
+   "story": "Tree of heaven is the species councils spend money removing. This one has a plaque. The circular green plaque at its foot calls it one of the largest examples of the species in the country and one of the Great Trees of London, and the Tree Register's champion database carries it too, with at least one account calling it the tallest of its kind in Britain. Nobody gives it an age, and that absence is the interesting part. Ailanthus altissima arrived in Britain from China in the 18th century, spreads by seed and suckers, and is usually treated as short-lived, rarely making it much past fifty years. Something this size therefore breaks the pattern for its own species, and since no source anywhere offers a planting date, this entry gives no age rather than inventing one. It qualifies on size and status, not on years. It is also the cheapest addition to a walk on this whole list. The Ravenscourt Park Baobab Plane, with its swollen virus-knobbled trunk, stands about 150 metres away in the same park, which means Hammersmith now offers two Great Trees of London within a two minute walk of each other, near the sports area and the playground, five minutes from Ravenscourt Park station. The coordinates here come from the Great Trees map and are tree-level, so the pin lands on the trunk.",
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+    "https://londontreesblog.wordpress.com/2014/12/21/tree-of-heaven/"
+   ],
+   "access": "Free, open public park",
+   "transport": "5 min walk from Ravenscourt Park station (District Line)",
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
 }
