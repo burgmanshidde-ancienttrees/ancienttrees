@@ -1,0 +1,376 @@
+{
+ "_note": "Spanish overlay for Seville, hand-written 2026-09-01 under Contract J. Chosen because /seville was the highest-impression untranslated page on the site (181 impressions, 9 clicks, 5 percent CTR in the ten-day window) and Spanish already delivers more impressions in absolute terms than any other translated language. 43 trees, full set: city page, question page and 43 tree pages under /es/. European Spanish, no em dashes, faithful to the English facts, never machine-patched (the accent disaster of 2026-08-09 is the standing warning). One deliberate departure from the English: the canonical file's own copy still carries the pre-growth counts (its FAQ says 'twenty-seven of the thirty-seven trees' are free and 'ten' are ticketed, and its question_meta says 'thirty-six more'), while the file now holds 43 trees, 31 free and 12 behind a ticket. The Spanish copy states the counts the file actually has. The English city copy needs the same correction.",
+ "city": "Sevilla",
+ "title": "Árboles singulares de Sevilla: 43, del Alcázar a Triana",
+ "meta_description": "Los 43 árboles más notables de Sevilla, de un ombú de 500 años ligado al hijo de Colón al eucalipto de 50 metros que casi nadie mira.",
+ "intro": "Los árboles más imponentes de Sevilla casi nunca son antiguos. Salen de dos impulsos concretos: siglos de naranjos plantados por el olor y no por la fruta, en jardines andalusíes y cristianos por igual, y una oleada de experimentación botánica en torno a la Exposición Iberoamericana de 1929 que llenó el Parque de María Luisa de ficus australianos, eucaliptos americanos y ginkgos asiáticos que nunca fueron de esta tierra. Unos pocos son anteriores a todo eso. La mayoría se ve gratis, y los que no, están dentro de sitios que valen la entrada de todos modos.",
+ "question_title": "¿Cuál es el árbol más antiguo de Sevilla? (500 años)",
+ "question_meta": "El árbol más antiguo de Sevilla es un ombú de unos 500 años en un antiguo monasterio, ligado al hijo de Colón. Dónde está, y otros 42 árboles notables.",
+ "question_answer": "El árbol documentado más antiguo de Sevilla es el ombú del Monasterio de la Cartuja, de unos 500 años, del que se dice que creció de semillas sudamericanas que Hernando Colón, hijo de Cristóbal Colón, trajo hacia 1529. Está en los terrenos de lo que hoy es el museo de arte contemporáneo CAAC, en la Isla de la Cartuja, y se llega en tranvía desde el centro.",
+ "question_context": "El ombú del Monasterio de la Cartuja tiene una reclamación de antigüedad más sólida que cualquier otra cosa documentada en Sevilla: la tradición local sostiene que Hernando Colón, hijo de Cristóbal Colón, lo plantó hacia 1529 con semillas recogidas en Sudamérica, en su propio arboreto privado, y que el árbol o su semilla pasó a los cartujos vecinos tras su muerte. Si la fecha se sostiene, puede ser el primer ombú cultivado en Europa. El árbol estuvo a punto de morir a principios de los años noventa, cuando una restauración mal planteada selló las cavidades del tronco con espuma de poliuretano y atrapó la humedad que alimentaba al hongo que ya dañaba la madera; los técnicos de la Expo 92 retiraron la espuma justo a tiempo, aunque la propia retirada causó daños, y desde entonces se ha dejado en paz. Crece en los terrenos del antiguo monasterio, que hoy alberga el Centro Andaluz de Arte Contemporáneo (CAAC), en la Isla de la Cartuja, al otro lado del río. La mayoría de los demás candidatos a árbol más antiguo de Sevilla resultan ser llegadas del siglo XX: los famosos ficus y eucaliptos de la ciudad son casi todos de los años diez y veinte, y los naranjos del Patio de los Naranjos de la catedral se replantaron en tiempos que muchos recuerdan.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Sevilla?",
+   "a": "El ombú del Monasterio de la Cartuja, de unos 500 años según la tradición, del que se dice que creció de semillas que Hernando Colón, hijo de Cristóbal Colón, trajo de Sudamérica hacia 1529."
+  },
+  {
+   "q": "¿Se pueden ver gratis los árboles singulares de Sevilla?",
+   "a": "Treinta y uno de los 43 árboles de esta lista están en parques, calles y plazas públicas gratuitas. Doce están dentro de recintos de pago: el Real Alcázar, el Monasterio de la Cartuja (CAAC) y el Patio de los Naranjos de la Catedral de Sevilla, monumentos protegidos que merecen la entrada al margen de los árboles."
+  },
+  {
+   "q": "¿Por qué tantos de los árboles más grandes de Sevilla son importaciones australianas o americanas y no especies españolas?",
+   "a": "Buena parte del arbolado de Sevilla viene de una oleada deliberada de experimentación botánica en torno a la Exposición Iberoamericana de 1929, cuando los paisajistas llenaron el Parque de María Luisa y las plazas cercanas de especies exóticas de crecimiento rápido, sobre todo ficus de Moreton Bay y eucaliptos australianos, junto a la tradición andalusí más antigua de plantar cítricos y palmeras por el olor y la sombra antes que por la madera."
+  },
+  {
+   "q": "¿Por qué hay tantos naranjos en Sevilla si la naranja amarga no se puede comer?",
+   "a": "Los naranjos amargos (Citrus aurantium) se plantaron bajo dominio almohade desde el siglo XII por el azahar y la sombra perenne, no por la fruta, una tradición que la Sevilla cristiana mantuvo tras la conquista de 1248 y que la ciudad sigue aplicando hoy en sus plantaciones nuevas."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+ "trees": {
+  "sev_001": {
+   "name": "Los ginkgos del Real Alcázar",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "116 años",
+   "access": "Entrada de pago (se necesita la entrada del Real Alcázar)",
+   "transport": "10 min a pie desde la parada de tranvía Puerta de Jerez (T1), dentro del recinto del Real Alcázar",
+   "story": "Diez de estos ginkgos son los supervivientes sevillanos de un envío de veinticinco. Llegaron al Real Alcázar en el otoño y el invierno de 1910, dentro de una remesa procedente del Real Sitio de La Granja de San Ildefonso, cerca de Segovia, mandada al sur para plantar el nuevo Jardín Inglés del palacio, un contrapunto más fresco y umbrío a los patios andalusíes del resto del recinto. Quince no aguantaron más de un siglo de calor seco sevillano, un clima que el ginkgo tolera mal comparado con los jardines templados de los que venía. Los diez que sí lo hicieron están hoy entre los ginkgos más viejos de Andalucía, y cada diciembre y enero hacen algo que no hace nada más en el jardín: todas las hojas se vuelven del mismo amarillo intenso con pocos días de diferencia, un dorado uniforme que destaca con fuerza contra las palmeras, los cipreses y los cítricos perennes de alrededor. La especie solo sobrevivió en estado silvestre en unos pocos reductos de China, mantenida durante siglos como árbol sagrado en jardines de templos chinos y japoneses antes de que los botánicos europeos empezaran a exportarla en el siglo XVIII. Su antiguo nombre chino significa pata de pato, por la hoja en forma de abanico que llevó a Goethe a dedicarle un poema entero. Los ginkgos del Alcázar llegaron casi un siglo después de que lo escribiera, trasplantes extranjeros en un jardín que ya tenía siglos cuando aparecieron."
+  },
+  "sev_002": {
+   "name": "El ombú de La Cartuja",
+   "species": "Ombú (Phytolacca dioica)",
+   "age_estimate": "500 años",
+   "access": "Entrada de pago (entrada del museo CAAC, 3,01 euros; gratis de martes a viernes de 19:00 a 21:00 y sábados de 11:00 a 21:00)",
+   "transport": "5 min a pie desde la parada de tranvía Cartuja (T1), o autobús C1/C2",
+   "story": "Este ombú, un pariente de la espinaca de madera blanda que crece hasta el tamaño de un roble, procede según se cuenta de unas semillas que Hernando Colón, hijo de Cristóbal Colón, trajo de Sudamérica y plantó en su propio arboreto privado hacia 1529. A su muerte, las semillas, o el plantón mismo, pasaron a los cartujos vecinos, y el árbol lleva desde entonces en el Monasterio de la Cartuja, posiblemente el primer ombú cultivado en Europa. Estuvo cerca de no pasar del siglo XX. A comienzos de los noventa, unos restauradores intentaron sellar las cavidades de su tronco blando con espuma de poliuretano, una técnica pensada para maderas más duras que en realidad atrapó humedad y alimentó al hongo que ya se comía el árbol por dentro. Los técnicos de la Expo 92 retiraron la espuma antes de que rematara la faena, pero la extracción causó más daños, y desde entonces se ha dejado deliberadamente en paz. Su madera es célebre por lo blanda, más cerca de una verdura hinchada que de un tronco, y por eso los arboristas recomiendan hoy una valla y un perímetro sin pisadas antes que cualquier otra intervención. El monasterio alberga el museo de arte contemporáneo de Andalucía, así que un árbol que pudo cruzar el Atlántico en el equipaje del hijo de un conquistador comparte ahora patio con exposiciones rotativas de escultura moderna."
+  },
+  "sev_003": {
+   "name": "Los ficus de la Plaza del Cristo de Burgos",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "100 años",
+   "access": "Gratuito, plaza pública",
+   "transport": "5 min a pie desde la Plaza de la Encarnación o la Alameda de Hércules",
+   "story": "Cuatro de los ficus más grandes de Sevilla no empezaron en esta plaza. Los jardineros municipales trasladaron estos ficus de Moreton Bay desde el Parque de María Luisa hacia 1925, un trasplante insólitamente atrevido para árboles de ese tamaño, y arraigaron lo bastante bien como para que el mayor mida hoy 7,2 metros de perímetro y 28 de altura. La especie, propia de los bosques costeros del este de Australia, es conocida por las raíces contrafuerte, casi arquitectónicas, que desarrolla para sostener una copa tan pesada, y por las raíces aéreas que bajan de las ramas y engordan con los años hasta convertirse en troncos secundarios. Los cuatro se podan a fondo cada primavera, y no por salud del árbol sino por la Semana Santa: las procesiones pasan justo por esta plaza y los pasos con cirios necesitan las ramas fuera del camino. La plaza ha cambiado de nombre más veces que los árboles de dirección; se llamó Plaza de Argüelles, Plaza Virgen del Pilar y Plaza de San Pedro antes de quedarse con el actual, y durante años el vecindario la llamó Plaza de las Magnolias aunque hoy quienes dominan el espacio son los ficus. Los cuatro están protegidos individualmente en el catálogo municipal de árboles singulares, un caso raro de grupo entero trasplantado que entra junto en vez de un solo ejemplar."
+  },
+  "sev_004": {
+   "name": "El ciprés de la Glorieta de Bécquer",
+   "species": "Ciprés calvo (Taxodium distichum)",
+   "age_estimate": "160 años",
+   "access": "Gratuito, parque público",
+   "transport": "10 min a pie desde el intercambiador de autobús y tranvía Prado de San Sebastián, dentro del Parque de María Luisa",
+   "story": "Sevilla levantó un monumento a su poeta romántico más famoso alrededor de un árbol que no tenía nada que ver con él. El ciprés calvo del centro de la Glorieta de Bécquer ya estaba allí, plantado entre 1850 y 1870, cuando la ciudad encargó al escultor Lorenzo Coullaut Valera rodearlo de mármol blanco y figuras de bronce que representan tres estados del amor, un monumento inaugurado en 1911, décadas antes de que la poesía de Gustavo Adolfo Bécquer convirtiera este rincón del Parque de María Luisa en lugar de peregrinación literaria. El árbol, propio de las marismas de la cuenca del Misisipi, es una elección curiosa para una ciudad mediterránea: no necesita inundaciones para prosperar, pero sí pierde las acículas cada invierno como un árbol de hoja ancha, algo que casi ninguna conífera hace. Con unos 150 a 175 años, un tronco de 5,82 metros de perímetro y una copa que llega a 33 metros, enmarca hoy la restauración que le toque al monumento del poeta, que ha necesitado más de una. Los fotógrafos hacen cola para la misma foto desde el mismo banco casi todos los días del año. Casi ninguno viene por el árbol."
+  },
+  "sev_005": {
+   "name": "El Gran Capitán",
+   "species": "Eucalipto rojo (Eucalyptus camaldulensis)",
+   "age_estimate": "100 años",
+   "access": "Gratuito, jardín público",
+   "transport": "5 min a pie desde la parada de tranvía Puerta de Jerez (T1)",
+   "story": "El árbol más alto de Sevilla es también uno de los menos visitados, y está en pleno centro histórico. Este eucalipto rojo, conocido aquí como El Gran Capitán, se alza más de 50 metros sobre el Paseo de Catalina de Ribera, en el borde de los Jardines de Murillo, a cinco minutos a pie de la muralla del propio Real Alcázar, y aun así no aparece en casi ninguna guía ni ruta turística. Su tronco ronda ya los cinco metros de perímetro, y en 2025 la ciudad hizo una poda de precisión para reducir el riesgo de desprendimiento de ramas, tratando un árbol de este tamaño con la misma cautela que una reparación estructural. Eucalyptus camaldulensis es de las riberas australianas, no de los jardines andaluces, y debe su presencia aquí a la misma oleada de experimentación botánica que llenó de ficus australianos el vecino Parque de María Luisa: jardineros de principios del siglo XX probando qué importaciones aguantaban el calor seco de Sevilla. Este aguantó casi demasiado bien, superando de largo a cualquier otro árbol de la ciudad sin dejar de ser anónimo. Los vecinos pasan por debajo a diario sin levantar la vista. Los visitantes que van a los jardines más famosos de uno y otro lado, el Alcázar y la catedral, pasan justo por debajo y casi nunca se dan cuenta."
+  },
+  "sev_006": {
+   "name": "Los almeces centenarios de María Luisa",
+   "species": "Almez (Celtis australis)",
+   "age_estimate": "más de 100 años",
+   "access": "Gratuito, parque público",
+   "transport": "10 min a pie desde el intercambiador de autobús y tranvía Prado de San Sebastián, dentro del Parque de María Luisa",
+   "story": "No todos los árboles de esta lista necesitaron mecenazgo real ni pedigrí extranjero para ganarse el sitio. Los almeces repartidos por el Parque de María Luisa, más agrupados junto a la Glorieta Rafael de León, la Choza de los Carneros y el Paseo de los Rosales, son una especie ibérica autóctona que creció en este suelo durante generaciones antes de que nadie ajardinara nada a su alrededor. Varios ejemplares están reconocidos como centenarios en el propio inventario municipal de árboles singulares, valorados menos por un récord concreto que por la sombra profunda y densa que sus copas lentas dan sobre los paseos más viejos del parque. La especie es dura y longeva, tolerante con la sequía, el suelo pobre y la poda severa, que es justo por lo que los jardineros de Sevilla dejaron en pie a tantos mientras la atención se la llevaban importaciones más rápidas y vistosas como los ficus australianos y los eucaliptos del parque. El propio Parque de María Luisa era el jardín privado del Palacio de San Telmo antes de que la infanta María Luisa Fernanda cediera parte a la ciudad en 1893, décadas antes de que el paisajista Jean-Claude Nicolas Forestier lo rediseñara para la Exposición Iberoamericana de 1929. Estos almeces son anteriores a esa transformación. Ya eran viejos cuando se levantaron a su alrededor las glorietas, las fuentes y los pabellones."
+  },
+  "sev_007": {
+   "name": "Los árboles de la Alameda de Hércules",
+   "species": "Plátano de sombra (Platanus x acerifolia)",
+   "age_estimate": "100 años",
+   "access": "Gratuito, plaza pública",
+   "transport": "5 min a pie desde las paradas de autobús Feria o Alameda de Hércules; 10 min a pie desde la Plaza de la Encarnación",
+   "story": "El paseo público más antiguo de Sevilla se construyó sobre una marisma, y toma su nombre de los árboles plantados para secarla. La Alameda de Hércules, trazada en 1574 en terreno pantanoso justo al norte de la antigua muralla, se llama así por los álamos blancos plantados para ayudar a secar y estabilizar el suelo ganado, árboles usados como infraestructura y no como adorno. Los álamos siguen alineando el paseo central, aunque los de ahora solo se remontan a una gran replantación de 1764 que añadió más de 1.600 árboles, no a la plantación original del siglo XVI. En los dos extremos hay masas densas de plátanos de sombra, ellos mismos de casi un siglo, que han sobrevivido a todas las reformas de la plaza desde entonces, incluidos un largo declive en el siglo XX y su reciente resurgir como una de las calles de ocio nocturno más populares de Sevilla. Dos columnas romanas, rescatadas de un templo derribado, siguen en pie en la entrada sur del paseo, anteriores a cualquier árbol de aquí en más de un milenio, y dan a la Alameda su nombre de Hércules por una estatua del siglo XVII que se montó encima de una de ellas. Los bares y las terrazas ocupan ahora el mismo suelo que los álamos vinieron a drenar, cuatro siglos y medio después de la marisma que sustituyeron."
+  },
+  "sev_008": {
+   "name": "Los naranjos del Patio de los Naranjos",
+   "species": "Naranjo amargo (Citrus aurantium)",
+   "age_estimate": "100 años o menos",
+   "access": "Entrada de pago (se necesita la entrada de la Catedral de Sevilla desde 1992)",
+   "transport": "Dentro de la Catedral de Sevilla, junto a la Giralda",
+   "story": "Los naranjos que dan nombre al patio más famoso de la catedral de Sevilla no son ni de lejos tan viejos como el patio. El Patio de los Naranjos, un rectángulo de 43 por 81 metros, se construyó entre 1172 y 1186 como patio de abluciones de la mezquita almohade que ocupaba este solar, el lugar donde los fieles se lavaban antes de rezar. La mezquita cayó tras la conquista cristiana de 1248 y la catedral gótica se levantó sobre casi la misma planta, pero los naranjos que hoy fotografían los visitantes son de una restauración del siglo XX dirigida por el arquitecto Félix Hernández, que sustituyó lo que hubiera antes en vez de sobrevivir de ello. Lo que sí ha llegado intacto es más notable que cualquier árbol: el alminar de la mezquita, que se libró entero del derribo, sigue junto al patio como campanario de la catedral, hoy la Giralda, y una taza de fuente en el centro del patio, quizá romana o visigoda, sigue en el mismo sitio que ocupó la fuente de las abluciones. Durante casi ocho siglos entrar aquí no costó nada. Eso cambió en 1992, cuando la catedral lo integró en su recorrido turístico de pago y acabó con un acceso libre más largo que la existencia de casi cualquier país europeo. Los naranjos son nuevos. Lo que se ha perdido es la costumbre de pasar entre ellos gratis."
+  },
+  "sev_009": {
+   "name": "El ficus de la Glorieta de Goya",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "100 años",
+   "access": "Gratuito, parque público",
+   "transport": "5 min a pie desde la Plaza de España, dentro del Parque de María Luisa",
+   "story": "Dos columnas de mármol son el único rastro físico que queda del pabellón dentro del cual crece hoy este ficus. La Glorieta de Goya, un claro circular del Parque de María Luisa junto a la Plaza de España, albergó en su día una réplica a tamaño real de la Quinta del Sordo, la casa de Francisco de Goya a las afueras de Madrid, construida para la Exposición Iberoamericana de 1929 y desmontada al cerrar la muestra. Del pabellón solo sobrevivieron dos columnas dóricas de cuatro metros de su entrada, que hoy enmarcan un ficus de Moreton Bay plantado en aquellos mismos años, introducido en Sevilla a principios del siglo XX y naturalizado lo bastante bien en el clima local como para que Ficus macrophylla aparezca ahora por parques y plazas de toda la ciudad. El árbol ha crecido dentro del papel de las columnas tanto como alrededor de ellas, y su copa es hoy el elemento dominante de un claro diseñado para lucir la casa de un pintor y no un ficus. Los rediseños de la segunda mitad del siglo XX cambiaron más de una vez los caminos y las plantaciones de la glorieta, pero las columnas y el árbol sobrevivieron a todas las versiones. Quien recorre el eje central del parque entre la Plaza de España y los jardines de la fuente pasa justo por debajo, muchas veces sin caer en que la sombra que pisa fue la reconstrucción del jardín de alguien."
+  },
+  "sev_010": {
+   "name": "El alcanforero de la Glorieta de Doña Sol",
+   "species": "Alcanforero (Cinnamomum camphora)",
+   "age_estimate": "desconocida",
+   "access": "Gratuito, parque público",
+   "transport": "10 min a pie desde el intercambiador de autobús y tranvía Prado de San Sebastián, dentro del Parque de María Luisa",
+   "story": "Hasta donde alcanza un registro local muy dedicado, este alcanforero no tiene rival en toda Sevilla. Está en la Glorieta de Doña Sol, un claro tranquilo del Parque de María Luisa, y se describe como el único Cinnamomum camphora confirmado de la ciudad, una especie que se asocia más bien a los patios de templos de Japón y del sur de China, donde se conocen ejemplares que pasan holgadamente de los mil años. No ha aparecido ningún registro de plantación para este árbol concreto, y todavía no existe una estimación formal de su edad, porque solo se propuso para el catálogo de árboles singulares de Sevilla en 2016. Lo que lo distingue es puramente botánico y no histórico: los alcanforeros producen un aceite aromático en la corteza y las hojas, destilado en su día para el mismo compuesto de las bolas de naftalina y de los linimentos, y estrujar una hoja suelta un olor medicinal y punzante que no se parece a nada de lo que crece al lado. La glorieta ganó en 2023 un pequeño rincón propio, el Rincón de Pepe Elías, dedicado a un historiador local de jardines, tan cerca del alcanforero que quien lee la placa está a su sombra sin saber necesariamente cuál es el árbol raro. Ser el único ejemplar de algo es una fama modesta, y este árbol la lleva años sosteniendo sin que nadie arme ruido."
+  },
+  "sev_011": {
+   "name": "El ficus de la Pila del Pato",
+   "species": "Laurel de Indias (Ficus microcarpa)",
+   "age_estimate": "unos 80 años",
+   "access": "Gratuito, plaza pública",
+   "transport": "12 min a pie hacia el este desde la parada de tranvía Plaza Nueva (T1); autobuses por la calle Recaredo",
+   "story": "A una asociación de vecinos le gustó tanto este árbol que se lo puso en el membrete. El laurel de Indias de la Plaza de San Leandro, conocido por la fuente del pato junto a la que crece, se plantó probablemente hacia 1945, a juzgar por fotografías de la época. Sobrevivió a la reforma de la plaza de 1966, cuando aquel suelo de tierra se cubrió de adoquín y canto rodado, y el pavimento estuvo a punto de acabar con él: las raíces dejaron de recibir aire, las ramas empezaron a secarse desde las puntas y el árbol entró en declive visible. El servicio de parques perforó un anillo de pozos alrededor del cuello de la raíz para devolver oxígeno y nutrientes al subsuelo, y se recuperó rápido. Un banco construido demasiado cerca se retiró después por lo mismo. En 2019 la Asociación de Vecinos Casco Antiguo, junto al Ayuntamiento, amplió el alcorque y puso plantación nueva alrededor, y la asociación adoptó el árbol como logotipo. Mide hoy 4,77 metros de perímetro con una copa de 21 metros de ancho, y con los años ha ido reduciendo por su cuenta esa copa en respuesta al daño en las raíces, un árbol que se edita a sí mismo hasta lo que puede sostener. En octubre de 2025 la ciudad seguía trabajando su suelo."
+  },
+  "sev_012": {
+   "name": "La magnolia de la Catedral",
+   "species": "Magnolia (Magnolia grandiflora)",
+   "age_estimate": "unos 85 años",
+   "access": "Gratuito, calle pública",
+   "transport": "La parada de tranvía Archivo de Indias (T1) está a 100 m; el metro de Puerta de Jerez a 5 min a pie",
+   "story": "La mejor prueba de la edad de este árbol son las fotografías en las que no sale. Las tomadas desde el Teatro Coliseo en 1931 y desde la esquina de la catedral en 1934 muestran el sitio vacío, lo que sitúa la plantación a principios de los años cuarenta y hace a esta magnolia mucho más joven que el muro gótico contra el que crece, empezado en 1401. En 1965 ya estaba bien crecida. Luego la ciudad estuvo a punto de matarla ordenando el entorno. La peatonalización de la avenida de la Constitución en 2007 y las obras del tranvía posteriores redujeron su alcorque y colocaron losas sobre las raíces que seguían haciendo el trabajo, y fue uno de los tres únicos árboles notables de la avenida que salieron vivos de aquellas obras. Se deterioró de forma tan visible que se alarmaron tanto el servicio de parques como los viandantes. En junio de 2021 la ciudad gastó 18.500 euros en levantar de nuevo el pavimento, ampliar y drenar el alcorque, tratar un suelo que se había vuelto demasiado calizo e instalar riego y un seto bajo de granados para mantener los pies fuera de las raíces. El inventario municipal la califica ahora de estresada pero en recuperación. El diagnóstico es rotundo sobre la causa: no fue el clima ni una enfermedad, fue el pavimento."
+  },
+  "sev_013": {
+   "name": "El guayabo de la Plaza de Santa Cruz",
+   "species": "Guayabo del Brasil (Acca sellowiana)",
+   "age_estimate": "unos 105 años",
+   "access": "Gratuito, plaza pública",
+   "transport": "6 min a pie hacia el este desde la catedral de Sevilla, por el barrio de Santa Cruz; parada de tranvía Archivo de Indias (T1) a 8 min",
+   "story": "Los niños de esta plaza saben desde hace un siglo que la fruta verde de este árbol sabe a piña. El guayabo del Brasil se suele quedar en arbusto de cuatro o cinco metros. Este llegó a seis, y lo hizo porque lo han dejado en paz desde 1921 aproximadamente, cuando el arquitecto Juan Talavera trazó la Plaza de Santa Cruz sobre el solar que dejó el derribo de una iglesia y plantó el jardín que todavía la enmarca. En el centro colocó la Cruz de la Cerrajería, una cruz de forja de 1692 hecha por Sebastián Conde, herrero de Almonte, que ya se había mudado dos veces, de la esquina de las calles Sierpes y Rioja al Museo de Bellas Artes y por fin aquí. El guayabo entró con el resto de la plantación y ha durado más que casi toda ella. Sus flores son el espectáculo que nadie espera de un arbusto frutal: pétalos blancos vueltos hacia atrás alrededor de una corona de estambres rojos rematados en polen amarillo intenso, sostenidos en la rama durante semanas. La fruta necesita el polen de un segundo árbol para cuajar, sale algo mayor que un níspero, y es lo que el barrio recuerda de él."
+  },
+  "sev_014": {
+   "name": "La pacana del Real Alcázar",
+   "species": "Pacana (Carya illinoinensis)",
+   "age_estimate": "unos 110 años",
+   "access": "Entrada de pago (se necesita la entrada del Real Alcázar)",
+   "transport": "10 min a pie desde la parada de tranvía Puerta de Jerez (T1), dentro del recinto del Real Alcázar",
+   "story": "El árbol más alto de los jardines del Alcázar es un nogal del valle del Misisipi, y casi nadie levanta la vista hacia él. La pacana mide 37 metros y está en el Jardín del Marqués de la Vega Inclán, el jardín que José Gómez Millán trazó entre 1913 y 1917 sobre lo que había sido la Huerta del Retiro, el huerto de labor del palacio. Se plantó con el jardín, junto a los demás frutales que Gómez Millán repartió por su diseño, así que tiene aproximadamente la edad del trazado que la rodea. Otra pacana más vieja crecía cerca del Pabellón de Carlos V y se retiró cuando quedó decrépita, lo que deja a esta sosteniendo la especie casi sola en la ciudad. Está en un estado poco común de bueno. De los cincuenta y seis árboles individuales del inventario de singulares de Sevilla, es uno de los pocos calificados de óptimos en las tres cosas que mide la ciudad: estado fisiológico, estado fitosanitario y estructura biomecánica. El inventario lo atribuye a una poda cuidadosa a lo largo de toda su vida y a una orla plantada que mantiene a los visitantes fuera del suelo bajo su copa. Su tronco mide 2,8 metros de perímetro y su copa 24 de ancho, y fructifica hasta el otoño, aunque los frutos no son para llevárselos."
+  },
+  "sev_015": {
+   "name": "El ficus del foso de la Universidad",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "56 años",
+   "access": "Gratuito, calle pública",
+   "transport": "4 min a pie desde el metro y la parada de tranvía Puerta de Jerez (T1); Prado de San Sebastián a 8 min",
+   "story": "Un sevillano preguntó al servicio de parques en 1970 si podía plantar un árbol para celebrar el nacimiento de su hijo. Le dijeron que sí, llevaron un ficus de Moreton Bay a un alcorque de la calle Palos de la Frontera y le dejaron echar las primeras paladas de tierra. Ese hijo cumple cincuenta y seis años este año. El árbol también, y le ha sacado bastante más partido al acuerdo: su tronco mide ya 6,12 metros de perímetro, más grueso que el de cualquiera de los ficus mucho más viejos del inventario municipal, y su copa se extiende 28 metros, asomándose de lado sobre el foso seco de la antigua Real Fábrica de Tabacos, el edificio del siglo XVIII que alberga la Universidad de Sevilla desde los años cincuenta. En noviembre de 2025 la ciudad trajo un Air Spade, una herramienta que deshace el suelo compactado con aire comprimido sin desgarrar raíces, y abrió zanjas radiales a su alrededor para que la tierra volviera a respirar. El delegado que ordenó la obra dijo que ficus como este forman parte de la identidad de Sevilla. Cincuenta y seis años no son nada para un árbol. Este no se ha dado por enterado."
+  },
+  "sev_016": {
+   "name": "El ficus del Altozano",
+   "species": "Gomero (Ficus elastica)",
+   "age_estimate": "54 años",
+   "access": "Gratuito, plaza pública",
+   "transport": "10 min a pie desde la parada de tranvía Plaza Nueva (T1) cruzando el Puente de Isabel II; autobuses hasta la Plaza del Altozano",
+   "story": "El árbol emblema de Triana empezó siendo una planta de maceta. La ciudad guardaba ejemplares grandes en contenedor para vestir calles y plazas en las celebraciones, y en 1972, cuando se inauguró en la Plaza del Altozano el monumento al torero Juan Belmonte, una de aquellas plantas se pasó al suelo y allí se quedó. Es un gomero, y en concreto la variedad que estuvo de moda como planta de interior en esa misma década, la que ocupó un rincón de mil salones españoles. La racha de inviernos suaves de Sevilla dejó que este siguiera creciendo a la intemperie. Cincuenta y cuatro años después tiene un tronco de 5,86 metros de perímetro y una copa de 31 metros de ancho, y es la única sombra de la plaza, que cubre entera por sus dos mitades: la entrada del Puente de Isabel II, sucesor del viejo puente de barcas, y la boca de la calle Betis que baja junto al río. El inventario municipal reconoce sin rodeos que el árbol no es especialmente viejo y dice que su valor aquí es simbólico. Ese estatus lo ha pagado. Cada año la Velá de Triana monta sus casetas alrededor del tronco, y algunos años los cocineros ponen fogones debajo, con la mala suerte de quemar la corteza."
+  },
+  "sev_017": {
+   "name": "La magnolia del Real Alcázar",
+   "species": "Magnolia (Magnolia grandiflora)",
+   "age_estimate": "sin documentar",
+   "access": "Entrada de pago (se necesita la entrada del Real Alcázar)",
+   "transport": "10 min a pie desde la parada de tranvía Puerta de Jerez (T1), dentro del recinto del Real Alcázar",
+   "story": "Cuatro metros setenta de perímetro es muchísima magnolia. Esta es una especie que la mayoría conoce como un árbol de jardín bien educado y de hoja lustrosa, y esta tiene un tronco de seis metros diez en la base, que se estrecha hasta 4,70 a la altura del pecho, sosteniendo veinte metros de copa sobre los Baños de Doña María de Padilla, el aljibe abovedado que hay bajo el Patio del Crucero del Alcázar.\n\nNo es de aquí. Magnolia grandiflora viene de los bosques húmedos del sureste de Estados Unidos y llegó a los jardines europeos en el siglo XVIII como una novedad lenta y cara para quien podía permitirse esperar. Sevilla resultó convenirle mejor que casi cualquier otro sitio.\n\nEl censo municipal de árboles singulares de 2022 anota su fisiología como normal, su estructura como normal y su estado general como bueno, y después, en la casilla de agentes biológicos, nombra a Agrocybe aegerita, un hongo de pudrición que fructifica en grupos apretados sobre frondosas vivas. Por eso su estado fitosanitario figura como regular y no como limpio. Un árbol de este tamaño con un hongo de pudrición no es ni raro ni una sentencia de muerte, pero sí es de esas cosas que una ciudad anota y revisa.\n\nLas flores abren en mayo y junio, color crema y del tamaño de una mano abierta, y se huelen antes de encontrarlas."
+  },
+  "sev_018": {
+   "name": "El árbol del amor del Real Alcázar",
+   "species": "Árbol del amor (Cercis siliquastrum)",
+   "age_estimate": "sin documentar",
+   "access": "Entrada de pago (se necesita la entrada del Real Alcázar)",
+   "transport": "10 min a pie desde la parada de tranvía Puerta de Jerez (T1), dentro del recinto del Real Alcázar",
+   "story": "Un árbol del amor que ha llegado a dieciséis metros ha hecho algo que la especie normalmente no se molesta en hacer. Cercis siliquastrum es un árbol pequeño, que en un patio suele quedarse en ocho o diez metros, y este del Jardín Inglés del Alcázar mide el doble que los que se plantan a propósito, con un tronco de 2,20 metros de perímetro y una copa de doce metros de ancho.\n\nSu truco es la floración. En marzo, antes de que asome una sola hoja, las flores magenta de guisante abren directamente sobre la corteza, tanto en la madera vieja y las ramas desnudas como en los ramillos, de modo que el esqueleto entero del árbol se vuelve rosa durante quince días. Los botánicos lo llaman caulifloria, y casi nada más lo hace en un jardín europeo.\n\nEn español la especie es el árbol del amor. El inglés se quedó con la otra tradición, la de que Judas se ahorcó de uno. Mismo árbol, peor historia.\n\nEl jardín que lo rodea se plantó a partir de 1910, cuando el Alcázar trazó un contrapunto inglés más fresco y umbrío a sus patios andalusíes. Nada data a este ejemplar concreto. Lo que sí anotaron los técnicos municipales al medirlo en julio de 2022 es un árbol en estado fisiológico óptimo y sin ninguna anomalía fitosanitaria, algo que no escribieron de muchos de sus vecinos."
+  },
+  "sev_019": {
+   "name": "El naranjo de Pedro el Cruel",
+   "species": "Naranjo amargo (Citrus aurantium)",
+   "age_estimate": "sin documentar",
+   "access": "Entrada de pago (se necesita la entrada del Real Alcázar)",
+   "transport": "10 min a pie desde la parada de tranvía Puerta de Jerez (T1), dentro del recinto del Real Alcázar",
+   "story": "Las medidas de este árbol cuentan una historia distinta de la de su nombre. Dos metros de perímetro en la base, treinta y seis centímetros a la altura del pecho, tres metros de alto: una cepa vieja y ancha con un tronco joven y fino saliendo de ella, que es el aspecto que tiene un cítrico después de que lo hayan cortado, se le haya helado o secado la parte aérea y haya rebrotado más de una vez.\n\nEl catálogo de árboles singulares de Sevilla lo llama El Naranjo de Pedro el Cruel, por Pedro I de Castilla, llamado tanto el Cruel como el Justiciero, que construyó entre 1364 y 1366 el palacio mudéjar que sigue en pie a un paso de aquí. El catálogo no dice por qué el árbol lleva su nombre y no lo data. Un naranjo amargo que viviera seis siglos sería extraordinario, y nada de lo que hay aquí demuestra que este lo haya hecho. Si sabes cuándo se plantó, o de dónde viene el nombre, dínoslo y va a la página.\n\nEn esta ciudad se plantan naranjos amargos desde el dominio almohade por el olor del azahar y no por la fruta, demasiado ácida para comerla directamente y que acaba en la mermelada británica. Este está entre el Pabellón de Carlos V y el Cenador del León, y el censo de 2022 lo registra como fisiológicamente estresado pero en buen estado general."
+  },
+  "sev_020": {
+   "name": "El plátano de la muralla de la Macarena",
+   "species": "Plátano de sombra (Platanus x acerifolia)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, calle pública",
+   "transport": "Junto a la Puerta de la Macarena y la basílica, a unos 20 minutos a pie hacia el norte desde la Plaza de la Encarnación",
+   "story": "El tramo conservado más largo de la muralla sevillana del siglo XII tiene un plátano creciendo contra él. Veintisiete metros de altura, 4,20 metros de perímetro a la altura del pecho y 5,90 en la base, con una copa de dieciocho metros y medio, en la calle Muñoz León, donde la muralla almohade corre de la Puerta de la Macarena hacia la basílica.\n\nEl plátano de sombra es un híbrido que nadie se propuso crear. Un plátano oriental y uno americano se cruzaron en un jardín europeo del siglo XVII y dieron algo más duro que cualquiera de sus padres, que acabó alineando media Europa: aguanta el suelo compactado, la sequía y el aire sucio, y suelta la corteza en placas que se llevan la suciedad con ellas. Su nombre español, plátano de sombra, es una descripción honesta del oficio.\n\nHay una curiosidad administrativa en el expediente. El censo municipal de 2022 registra el suelo como municipal pero lo marca sin recepcionar, así que un plátano monumental crece en el hueco entre dos departamentos. Su fisiología, su estructura y su estado fitosanitario constaban entonces como normales o limpios.\n\nLa muralla que tiene detrás se levantó cuando Sevilla era capital de un imperio que llegaba a Marrakech."
+  },
+  "sev_021": {
+   "name": "La araucaria de la Torre Norte",
+   "species": "Araucaria de Norfolk (Araucaria heterophylla)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, parque público",
+   "transport": "10 min a pie desde el intercambiador de autobús y tranvía Prado de San Sebastián, dentro del Parque de María Luisa",
+   "story": "Con 44 metros, este es el segundo árbol más alto del censo municipal de singulares de Sevilla, una conífera de una sola isla pequeña del Pacífico que se alza por encima de casi todo lo que la ciudad ha medido. La isla Norfolk está entre Australia y Nueva Zelanda, y la especie salió de ella hacia los jardines europeos y mediterráneos en el siglo XVIII, apreciada por una copa simétrica y escalonada de aspecto casi arquitectónico, con las ramas en verticilos regulares sobre un tronco perfectamente recto.\n\nEl censo de 2022 encontró a esta limpia en todo: fisiología normal, ninguna anomalía fitosanitaria, estructura sana, 3,10 metros de perímetro a la altura del pecho que se ensanchan hasta 3,70 en la base. Está junto a la Torre Norte, una de las dos torres gemelas que Aníbal González levantó para enmarcar la Plaza de España, unos cientos de metros más allá, así que un árbol del otro extremo del mundo crece a la sombra del monumento que Sevilla se dedicó a sí misma en los años veinte.\n\nLa chincheta sigue la coordenada del propio catálogo y no una posición confirmada de forma independiente, en un parque donde hay más de un árbol muy cerca."
+  },
+  "sev_022": {
+   "name": "El plátano de Juanita Reina",
+   "species": "Plátano de sombra (Platanus x acerifolia)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, parque público",
+   "transport": "10 min a pie desde el intercambiador de autobús y tranvía Prado de San Sebastián, dentro del Parque de María Luisa",
+   "story": "El perímetro de este plátano llega a 4,42 metros a la altura del pecho y a 5,02 en la base, más ancho que el plátano más famoso que esta página ya recoge en la muralla de la Macarena, aunque más bajo que aquel: 25 metros frente a 27. El censo municipal de 2022 lo encontró normal en estructura y fisiología, sin enfermedad, pero señaló dos agentes biológicos viviendo en él: Kalotermes flavicollis, un termes de madera seca que coloniza la madera muerta y debilitada dentro de un tronco por lo demás sano, y Synanthedon codeti, una polilla cuyas larvas perforan la corteza del plátano. Ninguno de los dos bajó su estado general de bueno.\n\nEstá en la Glorieta de Juanita Reina, uno de los muchos claros circulares con nombre que estructuran el Parque de María Luisa, un jardín que la ciudad construyó para la Exposición Iberoamericana de 1929 sobre lo que habían sido los terrenos privados del Palacio de San Telmo. El propio plátano es un híbrido que nadie se propuso crear, cruzado a partir de una especie oriental y otra americana en un jardín europeo del siglo XVII y plantado después en todas partes por lo bien que tolera justo las condiciones a las que lo somete un parque público.\n\nLa coordenada es la del propio catálogo, sin verificar con otra fuente."
+  },
+  "sev_023": {
+   "name": "El pino piñonero del Monte Gurugú",
+   "species": "Pino piñonero (Pinus pinea)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, parque público",
+   "transport": "10 min a pie desde el intercambiador de autobús y tranvía Prado de San Sebastián, dentro del Parque de María Luisa",
+   "story": "El censo municipal de 2022 califica el estado de este pino piñonero de óptimo en todo lo que mide: fisiología, estructura y sanidad limpias, sin ningún agente biológico registrado. Su copa se extiende 21,5 metros, de las más anchas del catálogo, con el dosel plano y aparasolado que da nombre a la especie en español, el pino que da piñones.\n\nEstá en el Monte Gurugú, una colina artificial dentro del Parque de María Luisa bautizada, como varios elementos del parque, con el nombre de un lugar real, en este caso un monte cercano a Melilla, en el norte de África español, parte de la geografía superpuesta y vagamente exótica que los diseñadores del parque del siglo XIX metieron en sus caprichos y montículos. El pino piñonero es autóctono de todo el Mediterráneo y se cultiva por su semilla comestible desde época romana, uno de los frutos secos de recolección continua más antiguos de Europa.\n\nLa coordenada es la del propio catálogo. Otros dos pinos piñoneros ya publicados en esta página, en los Jardines de Cristina y en otro punto de la ciudad, comparten especie; a este lo distinguen su posición en el Gurugú y una copa insólitamente ancha."
+  },
+  "sev_024": {
+   "name": "El ciprés calvo de la Isla de los Patos",
+   "species": "Ciprés calvo (Taxodium distichum)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, parque público",
+   "transport": "10 min a pie desde el intercambiador de autobús y tranvía Prado de San Sebastián, dentro del Parque de María Luisa",
+   "story": "Este ciprés calvo mide 35,7 metros, la conífera de hoja caduca más alta del censo municipal de árboles singulares de Sevilla, con una copa de 23,3 metros sobre la Isla de los Patos, la isla que hay en uno de los estanques del Parque de María Luisa. El ciprés calvo es un árbol de humedales del sur de Estados Unidos y, a diferencia de casi cualquier otra conífera, pierde las acículas cada otoño y pasa el invierno completamente desnudo antes de brotar en primavera, una costumbre que despista con regularidad a quien espera que una conífera se quede verde.\n\nEl censo lo registró limpio en todos los apartados: fisiología, estructura y sanidad normales, ningún agente biológico anotado, un perímetro de 5,40 metros a la altura del pecho que se ensancha hasta 6,70 en la base. Crecer junto al agua le va especialmente bien a la especie; en su área de origen, un ciprés calvo metido en una marisma desarrolla unos abultamientos radiculares llamados rodillas que asoman por encima del agua, aunque el catálogo no dice nada sobre si este los tiene.\n\nOtro Taxodium distichum figura ya en esta lista sevillana; este, más grande y sobre una isla en vez de en terreno abierto, es un árbol distinto con su propia historia."
+  },
+  "sev_025": {
+   "name": "El plátano de la Avenida de Bécquer",
+   "species": "Plátano de sombra (Platanus x acerifolia)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, parque público",
+   "transport": "10 min a pie desde el intercambiador de autobús y tranvía Prado de San Sebastián, dentro del Parque de María Luisa",
+   "story": "Con 4,70 metros de perímetro, este es el plátano más ancho del censo municipal de árboles singulares de Sevilla, más que el de la muralla de la Macarena y más que el de la Glorieta de Juanita Reina, ambos ya publicados aquí, aunque con 23 metros no es el más alto. Su perímetro estimado en la base ronda los 6 metros, y los mismos dos insectos registrados en su vecino de Juanita Reina aparecen también en este, Kalotermes flavicollis y Synanthedon codeti, sin arrastrar su estado general por debajo de bueno; el censo sí marcó su estructura como comprometida, algo que conviene mirar si vas.\n\nEstá en la Avenida de Bécquer, un paseo del Parque de María Luisa que lleva el nombre de Gustavo Adolfo Bécquer, el poeta romántico sevillano cuyo monumento está cerca, en el mismo parque. Las avenidas de plátanos con nombre son uno de los recursos estructurales habituales de Jean-Claude Nicolas Forestier cuando rediseñó los terrenos del parque para la exposición de 1929, y este es un ejemplar de lo que en su día fue una hilera plantada.\n\nLa coordenada es la del propio catálogo, no reverificada de forma independiente."
+  },
+  "sev_026": {
+   "name": "La palmera excelsa de la muralla interior",
+   "species": "Palmera excelsa (Trachycarpus fortunei)",
+   "age_estimate": "sin documentar",
+   "access": "Entrada de pago (se necesita la entrada del Real Alcázar)",
+   "transport": "10 min a pie desde la parada de tranvía Puerta de Jerez (T1), dentro del recinto del Real Alcázar",
+   "story": "Quince metros es mucho para una palmera excelsa, una especie que en cultivo suele quedarse muy por debajo. Esta crece en una esquina de la muralla interior del Alcázar, con el tronco envuelto en la densa capa fibrosa que la especie nunca suelta, la misma que le dio suficiente tolerancia al frío para ser una de las pocas palmeras que sobrevive al aire libre tan al norte como las islas británicas.\n\nEl censo municipal de 2022 la calificó de óptima en todo lo que registra: fisiología, estructura y sanidad limpias, sin ningún agente biológico anotado. Trachycarpus fortunei viene de los bosques de montaña del centro de China, bastante más frescos y húmedos que Sevilla, y llegó a los jardines europeos en el siglo XIX como una de las primeras palmeras lo bastante rústicas para un clima templado y no solo mediterráneo, lo que convierte su presencia dentro del jardín de un palacio mudéjar construido siglos antes de su llegada en un pequeño pliegue de historia hortícola posterior metido en un muro viejo.\n\nLa coordenada es la del propio catálogo; dentro del recinto amurallado y de pago del Alcázar, el nombre de la esquina hace más trabajo que la chincheta."
+  },
+  "sev_027": {
+   "name": "La buganvilla de la Puerta de Marchena",
+   "species": "Buganvilla (Bougainvillea spectabilis)",
+   "age_estimate": "sin documentar",
+   "access": "Entrada de pago (se necesita la entrada del Real Alcázar)",
+   "transport": "10 min a pie desde la parada de tranvía Puerta de Jerez (T1), dentro del recinto del Real Alcázar",
+   "story": "La buganvilla es una trepadora en todas partes, que se vende en los centros de jardinería para cubrir una celosía o desbordarse por un muro. Guiada y dejada crecer el tiempo suficiente, puede hacer algo más parecido a lo que ha hecho esta en la Puerta de Marchena del Alcázar: formar dos troncos leñosos, de 91 y 54 centímetros de perímetro en la base, y subir 13 metros, lo bastante como para que el censo municipal de árboles singulares la contara entre ellos en vez de descartarla por trepadora.\n\nLa evaluación municipal de 2022 la encontró en estado óptimo en todo, fisiología, estructura y sanidad limpias. La especie es sudamericana, y lo que parece una sola flor magenta espectacular son en realidad tres flores diminutas envueltas en tres brácteas de papel, que son las que llevan el color mientras las flores de verdad se quedan pequeñas y pálidas en el centro.\n\nLa Puerta de Marchena es una de las varias puertas de las murallas interiores del Alcázar, y a una planta que suele cultivarse para el color de un solo verano le han dado aquí más de un siglo de muro con el que trabajar."
+  },
+  "sev_028": {
+   "name": "El palmito del Cenador del León",
+   "species": "Palmito (Chamaerops humilis)",
+   "age_estimate": "sin documentar",
+   "access": "Entrada de pago (se necesita la entrada del Real Alcázar)",
+   "transport": "10 min a pie desde la parada de tranvía Puerta de Jerez (T1), dentro del recinto del Real Alcázar",
+   "story": "La única palmera autóctona de Europa suele crecer como una mata baja de varios pies, por debajo de los dos o tres metros, más arbusto que árbol. Este, en el jardín que rodea el Cenador del León del Alcázar, ha llegado a 7,2 metros, lo bastante alto y lo bastante viejo como para que el censo de árboles singulares de Sevilla le diera un sitio en la lista, un honor poco común para una especie que se pasa casi toda su vida como matorral en las laderas mediterráneas.\n\nLa evaluación municipal de 2022 lo registró en estado óptimo en todo, fisiología, estructura y sanidad limpias. Chamaerops humilis crece de verdad en estado silvestre por el sur de España, Portugal y el norte de África, tolerante con la sequía y el suelo pobre de un modo que la mayoría de las palmeras ornamentales no son, y eso explica en buena parte que un ejemplar con una larga temporada sin molestias en el jardín de un palacio haya crecido mucho más que sus parientes de cuneta y de monte bajo.\n\nEl Cenador del León, un pabellón mirador con cúpula, da nombre al jardín que lo rodea, donde crecen dentro del mismo recinto amurallado este palmito y un segundo árbol catalogado."
+  },
+  "sev_029": {
+   "name": "La cica del Jardín de las Damas",
+   "species": "Cica (Cycas revoluta)",
+   "age_estimate": "sin documentar",
+   "access": "Entrada de pago (se necesita la entrada del Real Alcázar)",
+   "transport": "10 min a pie desde la parada de tranvía Puerta de Jerez (T1), dentro del recinto del Real Alcázar",
+   "story": "Esto no es una palmera, diga lo que diga su nombre común. Cycas revoluta es una cícada, miembro de un linaje vegetal anterior a las plantas con flor y a casi todas las coníferas, prácticamente sin cambios desde antes de los dinosaurios, y un ejemplar de 5,5 metros representa una acumulación de crecimiento muy larga y muy lenta: las cícadas ganan altura a una fracción del ritmo de casi cualquier árbol, a veces solo uno o dos centímetros al año.\n\nEl censo sevillano de 2022 la calificó de óptima en todo, fisiología, estructura y sanidad limpias. Crece en el Jardín de las Damas, uno de los recintos formales renacentistas del Alcázar, donde su corona rígida de frondas oscuras y plumosas resulta casi prehistórica junto a los setos recortados y las fuentes de alrededor.\n\nLa especie es originaria del sur de Japón, y todas sus partes son tóxicas si se comen, un dato que no ha impedido que sea una de las cícadas ornamentales más plantadas en jardines cálidos de todo el mundo, valorada justo por esa permanencia lenta y arquitectónica que demuestra un ejemplar de este tamaño."
+  },
+  "sev_030": {
+   "name": "El ciprés del cementerio de San Fernando",
+   "species": "Ciprés mediterráneo (Cupressus sempervirens)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, recinto público del cementerio, abierto de día.",
+   "transport": "En la Avenida Doctor Fedriani, al norte del centro histórico, en autobús urbano.",
+   "story": "Un ciprés de cementerio es el árbol menos sorprendente de esta lista y uno de los más sanos: el censo sevillano de 2022 anotó su fisiología, su estructura y su sanidad como normales o limpias, con 23 metros de altura y un tronco de 2,79 metros de perímetro. El ciprés mediterráneo lleva tantos siglos marcando cementerios, de los jardines persas a las laderas italianas y a los camposantos españoles, que su silueta estrecha y en forma de llama se lee casi automáticamente como una señal de los muertos, una asociación tan antigua que los autores romanos ya describían la costumbre.\n\nEl Cementerio de San Fernando, abierto en 1852 fuera de lo que entonces era el borde de la ciudad, guarda a los muertos de Sevilla de más de siglo y medio, toreros y cantaores junto a sevillanos corrientes, y sus sectores más antiguos tienen exactamente el arbolado maduro que un cementerio en activo de esta edad acumula sin que nadie se propusiera hacer un jardín.\n\nLa coordenada es la del propio catálogo; el cementerio es grande, y este ciprés es un ejemplar entre sus plantaciones más viejas."
+  },
+  "sev_031": {
+   "name": "El eucalipto de Pedro Salinas",
+   "species": "Eucalipto rojo (Eucalyptus camaldulensis)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, calle pública",
+   "transport": "En el distrito de Nervión, en tranvía o autobús urbano.",
+   "story": "Con 42 metros, este árbol de calle es el tercero más alto del censo municipal de árboles singulares de Sevilla, un eucalipto australiano creciendo sobre una calle residencial corriente que lleva el nombre del poeta Pedro Salinas. Su perímetro es de 5,30 metros a la altura del pecho y se ensancha hasta 7,70 en la base, tanto que el árbol queda descompensado respecto a los edificios de alrededor.\n\nLa evaluación municipal de 2022 no encontró problemas estructurales ni fisiológicos, pero registró anomalías fitosanitarias leves y nombró dos agentes biológicos trabajando en él: Glycaspis brimblecombei, un psílido chupador que llegó a Europa desde Australia a principios de los años dos mil y desde entonces se ha extendido por las plantaciones de eucalipto, y Laetiporus sulphureus, el políporo azufrado, un hongo que se alimenta del duramen de los árboles maduros. Ninguno de los dos ha bajado su estado general de bueno, pero conviene conocer a ambos antes de plantarse debajo esperando un ejemplar impecable.\n\nEl eucalipto rojo bordea los cursos de agua del interior de Australia, y se plantó por todo el mundo durante los siglos XIX y XX por lo rápido que crece, que es casi toda la explicación de cómo un árbol de calle llega a 42 metros en lo que dura una vida humana."
+  },
+  "sev_032": {
+   "name": "El ficus de los Jardines de Chapina",
+   "species": "Laurel de Indias (Ficus microcarpa)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, jardín público",
+   "transport": "En Triana, a poca distancia a pie del Puente de Chapina.",
+   "story": "Este ficus levanta dos troncos de un mismo sistema de raíces, de 2,10 y 1,97 metros de perímetro, y el censo sevillano de 2022 calificó su estado de óptimo en todas las medidas que tomó: fisiología, estructura y sanidad limpias, la mejor nota que puede sacar un árbol de esta lista. Está en los Jardines de Chapina, una franja ajardinada junto al cauce histórico del Guadalquivir en el lado trianero del río, a unos 500 metros de un segundo Ficus microcarpa que esta página ya publica en El Altozano.\n\nEl laurel de Indias es originario de un arco amplio que va de la India al norte de Australia, y es uno de los árboles de calle y de parque más plantados en las ciudades cálidas del mundo precisamente porque tolera la poda, la contaminación y la competencia de raíces mejor que casi nada, desarrollando la copa densa y lustrosa y las raíces aéreas pálidas que hacen que los ejemplares viejos parezcan mucho mayores de lo que sugeriría un solo tronco.\n\nDos Ficus microcarpa a un paseo corto el uno del otro, en los dos extremos del mismo barrio ribereño, hacen un pequeño recorrido trianero que merece la pena hacer seguido si vas a ver uno."
+  },
+  "sev_033": {
+   "name": "La morera del cortijo del Alamillo",
+   "species": "Morera blanca (Morus alba)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, parque público",
+   "transport": "En el Parque del Alamillo, en autobús o en bicicleta desde el centro cruzando el Puente del Alamillo.",
+   "story": "El tronco de esta morera mide 4 metros de perímetro, un grosor inusual en una especie que se suele mantener pequeña y muy podada por la hoja antes que dejarla crecer hasta árbol entero. El censo sevillano de 2022 la encontró fisiológicamente estresada y con la estructura comprometida, aunque sostenida y en pie, y calificó su estado general de bueno pese a las dos señales.\n\nCrece junto al Cortijo, una vieja construcción agrícola conservada dentro del Parque del Alamillo, el gran parque público levantado en la Isla de la Cartuja para la Expo 92 sobre lo que había sido el coto privado de caza del duque de Alba. La morera blanca se plantó por toda España durante siglos para alimentar al gusano de seda, una industria en la que la propia Sevilla tuvo parte, y un cortijo como este muy plausiblemente habría mantenido moreras exactamente como esta a modo de cultivo de trabajo y no de ornamento.\n\nCada junio el árbol suelta una fruta pálida y dulce que mancha el pavimento o la hierba que tenga debajo, la misma fruta por la que mereció la pena plantar la especie, mucho antes de que a nadie le interesara por la sombra."
+  },
+  "sev_034": {
+   "name": "La palmera del Senegal de los Jardines de las Delicias",
+   "species": "Palmera del Senegal (Phoenix reclinata)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, jardín público",
+   "transport": "10 min a pie desde el intercambiador de autobús y tranvía Prado de San Sebastián.",
+   "story": "Casi todas las palmeras levantan un tronco de una raíz. Phoenix reclinata levanta varios, rebrotando desde la base en una mata de tallos curvos e inclinados que con el tiempo puede extenderse más de lo que mide de alto, una costumbre que le da a la especie su nombre y una silueta muy distinta de los troncos rectos y solitarios de casi todas las palmeras cultivadas. La base de este ejemplar mide 9,70 metros de perímetro, y el censo sevillano de 2022 lo calificó de óptimo en todo: fisiología, estructura y sanidad limpias.\n\nCrece en los Jardines de las Delicias, un jardín junto al antiguo Paseo de las Delicias que es anterior al Parque de María Luisa vecino, trazado en el siglo XIX como uno de los primeros paseos de moda de la ciudad. La palmera del Senegal es propia del África tropical y subtropical, y llegó a los jardines españoles dentro del mismo entusiasmo por la plantación exótica del siglo XIX y principios del XX que llenó los parques de Sevilla de árboles de todos los climas cálidos del planeta.\n\nLa coordenada es la del propio catálogo, no reverificada de forma independiente."
+  },
+  "sev_035": {
+   "name": "El pino canario de la Escuela de Ingeniería",
+   "species": "Pino canario (Pinus canariensis)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, en el campus universitario, de acceso abierto a visitantes.",
+   "transport": "En el distrito universitario de Reina Mercedes, en autobús urbano.",
+   "story": "El censo sevillano de 2022 califica a este pino de óptimo en todas las medidas que registra, fisiología, estructura y sanidad limpias, con 26 metros de altura en el campus de la escuela de ingeniería informática de la universidad. El pino canario es endémico de las islas Canarias, un archipiélago cuyo aislamiento lo ha convertido en uno de los lugares botánicamente más singulares de España, y la especie está notablemente adaptada al fuego incluso para lo que es un pino: un Pinus canariensis maduro puede rebrotar acículas nuevas directamente de un tronco gravemente chamuscado, algo que casi ningún otro pino del mundo hace.\n\nUn campus universitario es un sitio poco habitual, aunque no inaudito, para un árbol singular catalogado, el mismo patrón que esta página ya ha documentado en el arboreto del campus del University College de Cork; los terrenos abiertos de una universidad pública ponen un árbol así al alcance de cualquiera que pase por allí y no solo de su alumnado y su personal.\n\nLa coordenada es la del propio catálogo. Si sabes algo más sobre cuándo se plantó este pino o por qué, dínoslo."
+  },
+  "sev_036": {
+   "name": "La tipuana del Parque de los Príncipes",
+   "species": "Tipuana (Tipuana tipu)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, parque público",
+   "transport": "En Los Remedios, en la orilla oeste del Guadalquivir, en autobús o cruzando a pie el Puente de San Telmo.",
+   "story": "Con 32 metros, esta tipuana es más alta que casi cualquier otro árbol plantado en Sevilla por sus flores, una especie sudamericana de Bolivia y Argentina que se ha convertido en uno de los árboles ornamentales más plantados del sur de España por el espectáculo que monta a principios del verano: ramilletes sueltos de flores amarillo anaranjadas cubriendo la copa entera, seguidos de una alfombra de pétalos caídos lo bastante espesa como para teñir el pavimento de debajo.\n\nEl censo sevillano de 2022 la encontró en estado fisiológico óptimo, con estructura normal y sin problemas fitosanitarios, con 3,24 metros de perímetro a la altura del pecho que se ensanchan hasta 4,80 en la base. Crece en el Parque de los Príncipes, un parque del barrio de Los Remedios en la orilla oeste del Guadalquivir, sin ningún otro árbol singular catalogado cerca, un ejemplar aislado y no parte de un grupo.\n\nTipuana tipu se introdujo en España en el siglo XIX y se adaptó tan bien a los veranos calurosos y secos del país que hoy se resiembra sola en algunas regiones, un árbol inmigrante que se ha instalado del todo."
+  },
+  "sev_037": {
+   "name": "El viscote del Paseo de Colón",
+   "species": "Viscote (Parasenegalia visco)",
+   "age_estimate": "sin documentar",
+   "access": "Gratuito, calle pública",
+   "transport": "En el paseo fluvial del Paseo de Colón, frente a la Real Maestranza.",
+   "story": "Casi nadie de los que recorren el Paseo de Colón hacia la Maestranza ha oído hablar de la especie de este árbol, y eso es buena parte de la razón por la que entró en la lista de árboles singulares de Sevilla. Parasenegalia visco, que algunas fuentes siguen archivando bajo su nombre antiguo de Acacia visco, es sudamericana, propia de los bosques secos de Argentina, Bolivia y Paraguay, y rara vez se planta en Europa fuera de un puñado de colecciones de ejemplares.\n\nLa evaluación municipal de 2022 la encontró limpia en lo fisiológico y en lo biológico, con una estructura calificada de comprometida pero todavía en pie, estado general bueno, 1,75 metros de perímetro a la altura del pecho y una copa de 13,4 metros de ancho, mucha copa para un árbol de solo 12,3 metros de alto. La especie lleva hojas finas y plumosas, bipinnadas, y racimos de florecillas pálidas, más cercana en aspecto a sus parientes acacias conocidas de lo que sugiere su nombre desconocido.\n\nEstá en el paseo del río justo enfrente de la Real Maestranza, una de las plazas de toros más famosas de España, un árbol raro a la vista de uno de los edificios más conocidos de la ciudad."
+  },
+  "sev_038": {
+   "name": "La higuera del Huerto del Rey Moro",
+   "species": "Higuera (Ficus carica)",
+   "age_estimate": "más de 300 años",
+   "access": "Gratuito, abierto a diario como huerto vecinal autogestionado; entrada por la calle Enladrillada 36.",
+   "transport": "En el Casco Antiguo, cerca de la muralla de la Macarena, a unos 10 minutos a pie de la Puerta de la Macarena, con líneas de autobús de TUSSAM como la C4.",
+   "story": "El huerto que rodea a esta higuera se lo quedó la gente que vive en la calle. En 2004 los vecinos de San Julián ocuparon el solar tapiado de la calle Enladrillada en vez de verlo edificado, y desde entonces lo llevan ellos. Su propia versión del sitio le atribuye a la higuera más de 300 años, y la cifra no se afina más, porque nadie la ha datado más allá de eso.\n\nEl censo municipal de árboles singulares de 2022 midió lo que se puede medir. El árbol tiene 9,4 metros de alto con una copa de aproximadamente la misma anchura, y el tronco mide 1,47 metros de perímetro a la altura del pecho, engrosándose hasta tres metros donde entra en el suelo. El mismo censo lo marca estresado y con la estructura comprometida, y su conservación general solo regular.\n\nEl suelo de debajo lleva mucho tiempo trabajándose. El solar era la huerta doméstica de la Casa del Rey Moro, una casa de finales del siglo XV o principios del XVI, y es hoy el mayor espacio abierto público del casco antiguo de Sevilla en el que no hay nada que comprar.\n\nLa entrada es una cancela en el número 36, abierta a diario y gratis. Lo que hay detrás es un huerto vecinal en funcionamiento con una higuera vieja en medio, sostenida por los vecinos y no por un servicio de parques."
+  },
+  "sev_039": {
+   "name": "El pino piñonero de los Jardines de Cristina",
+   "species": "Pino piñonero (Pinus pinea)",
+   "age_estimate": "unos 195 años",
+   "access": "Gratuito, jardín público abierto a todas horas; entre la Puerta de Jerez y el río.",
+   "transport": "En la Puerta de Jerez, a unos 2 minutos a pie de la parada del Metrocentro Puerta de Jerez (línea T1).",
+   "story": "La reina María Cristina tuvo un jardín abierto en su nombre el 24 de julio de 1830, y una asociación local de jardines señala a este pino, en el arriate 15, como un árbol de aquel momento fundacional. Esa es una fuente que apunta a este ejemplar y no solo a la fecha del jardín, lo que lo sitúa entre los 180 y los 210 años. Nadie le ha contado los anillos, así que la horquilla se queda ancha.\n\nHa crecido hasta el tamaño que corresponde a esos años. Veinticinco metros de alto, un tronco de 2,80 metros de perímetro a la altura del pecho y 3,11 en la base, con la copa aparasolada del pino piñonero extendiéndose 12,5 metros sobre el paseo. El censo municipal de 2022 encuentra su fisiología y su sanidad limpias y su estructura comprometida, algo común en un árbol que sostiene tanta copa sobre un único fuste largo y desnudo.\n\nLos Jardines de Cristina son 8.100 metros cuadrados de suelo público entre la Puerta de Jerez y el Guadalquivir, y este pino ha estado en pie toda su vida pública, incluida la Exposición Iberoamericana de 1929 que reconstruyó este extremo de Sevilla a su alrededor y la línea de tranvía que hoy pasa por la verja.\n\nEl pino piñonero se cultiva en el Mediterráneo por su semilla comestible desde época romana. Este es un árbol de ciudad, a dos minutos de un tranvía, y pasar por debajo es gratis a cualquier hora."
+  },
+  "sev_040": {
+   "name": "La palmera multicaule del Conde de Colombi",
+   "species": "Palmera datilera (Phoenix dactylifera)",
+   "age_estimate": "",
+   "access": "Gratuito, dentro del Parque de María Luisa, público y abierto a diario.",
+   "transport": "Dentro del Parque de María Luisa, cerca de la Plaza de España, a unos 10 minutos a pie del intercambiador de autobús y tranvía Prado de San Sebastián.",
+   "story": "Una palmera datilera debería ser un tronco y una corona. Esta es un ramillete de troncos, y esa es toda la razón por la que la ciudad la metió en su censo de árboles singulares de 2022: la ficha la describe como multicaule, que no es como se presenta normalmente la especie.\n\nLa hoja de medidas enseña la consecuencia. No hay perímetro a la altura del pecho para este árbol, porque la medición estándar a 1,30 metros no tiene nada único alrededor de lo que tomarse; los técnicos anotaron en su lugar 8,75 metros en la base, una cifra que abarca el haz entero de tallos y no un tronco concreto. La palmera llega a 15,8 metros, con una copa de 11,5 metros de media. Fisiología, sanidad y estructura están calificadas de normales, algo que en un árbol de esta forma ya merece anotarse.\n\nEstá en la Avenida del Conde de Colombi, dentro del Parque de María Luisa, el parque que Sevilla trazó sobre la finca de los Montpensier y llenó de exóticas para la exposición de 1929, y comparte ese suelo con otros nueve árboles de este mapa. Está a diez minutos a pie del intercambiador del Prado de San Sebastián, pasada la Plaza de España, y ponerse debajo no cuesta nada.\n\nNadie le ha puesto edad, y el censo no lo intenta. Si sabes cuándo se plantó, dínoslo."
+  },
+  "sev_041": {
+   "name": "El eucalipto arpa del Guadalquivir",
+   "species": "Eucalipto rojo (Eucalyptus camaldulensis)",
+   "age_estimate": "",
+   "access": "Gratuito, en el camino y carril bici de ribera del Anillo Verde, abierto a todas horas.",
+   "transport": "En el camino de ribera del Guadalquivir, en Tablada; la parada útil más cercana está por la Avda. Maestranza Aérea, a unos 15 o 20 minutos a pie de la orilla, o se llega en bici por el carril segregado que recorre todo el Guadalquivir.",
+   "story": "Dos organismos trabajan a la vez sobre los grandes eucaliptos de Sevilla, y este de la orilla del Guadalquivir lleva los dos. Glycaspis brimblecombei es un psílido chupador que siguió al eucalipto fuera de Australia y llegó a Europa a principios de los años dos mil. Laetiporus sulphureus es el políporo azufrado, el hongo de repisa que en otros sitios se vende como pollo del bosque, y se alimenta del duramen. La misma pareja está registrada en El Gran Capitán, en los Jardines de Murillo, y en el eucalipto rojo de la calle Pedro Salinas, así que es presión de plagas sobre la especie en toda la ciudad, no un árbol con mala suerte.\n\nNinguno de los dos ha acabado con él. El censo municipal de 2022 califica su fisiología y su sanidad de limpias, su estructura de comprometida, y lo sitúa en 18 metros. El tronco mide tres metros de perímetro, pero conviene leer bien la cifra: los técnicos la tomaron a tres metros de altura y no a la habitual del pecho, así que no compara de igual a igual con los demás perímetros del catálogo.\n\nEstá en Tablada, en la orilla oeste al sur del centro, en el camino del Anillo Verde junto al río. Es un paseo largo o una salida en bici, no un rodeo desde la catedral, y la recompensa es un árbol muy grande en ribera abierta, sin cancela ninguna.\n\nNo hay ninguna edad registrada. Si la sabes, dínosla."
+  },
+  "sev_042": {
+   "name": "El pomelo del Monasterio de la Cartuja",
+   "species": "Pomelo (Citrus x paradisi)",
+   "age_estimate": "",
+   "access": "Entrada de pago: dentro del Monasterio de la Cartuja, hoy Centro Andaluz de Arte Contemporáneo (CAAC), un museo público. Se venden entrada al monumento y entrada combinada de monumento más exposiciones, ambas por unos pocos euros; la entrada es gratuita de martes a viernes de 19:00 a 21:00 y los sábados. Abierto de martes a sábado de 11:00 a 21:00, domingos y festivos de 10:00 a 15:30, cerrado los lunes. El recorrido libre por el monasterio termina en las antiguas huertas, la Huerta Vieja y la Huerta Grande, así que cualquier visitante que compre entrada en horario de apertura llega al árbol.",
+   "transport": "En la Isla de la Cartuja; las líneas C1 y C2 de TUSSAM paran cerca (López Pintado/Caixa Forum, a unos 2 minutos a pie, o Américo Vespucio/Monasterio de la Cartuja, a unos 4 minutos a pie). También se llega a pie desde Triana por la Pasarela de la Cartuja.",
+   "story": "El pomelo es una fruta joven. El híbrido se registró por primera vez en Barbados en el siglo XVIII, así que ningún pomelo del mundo puede ser realmente antiguo, por grande que llegue a ser. Este llega a ser grande. Mide 14 metros con una copa de 13, y su tronco tiene 2,20 metros de perímetro, medido a 0,85 metros en vez de a la altura del pecho, y 2,50 en la base. Para un cítrico, eso raya en el absurdo.\n\nVive en la Huerta Grande, una de las dos huertas antiguas del monasterio de la Cartuja. Los monjes cartujos cultivaron este suelo desde el siglo XV, y las huertas sobrevivieron a ellos, a la fábrica de loza inglesa que ocupó los edificios en el siglo XIX y a la Expo de 1992 que reconstruyó la isla alrededor de las tapias. El monasterio es hoy el Centro Andaluz de Arte Contemporáneo, y el recorrido de visita termina en esas huertas, así que el árbol está en el camino normal y no tras una puerta de servicio.\n\nLa entrada cuesta unos pocos euros, es gratis todo el sábado y a partir de las siete de la tarde de martes a viernes, y el recinto cierra los lunes. El censo de 2022 califica el árbol de normal en fisiología, sanidad y estructura, y no le da edad. Nadie parece haber registrado cuándo se plantó. Si un documento del monasterio o de la fábrica dice otra cosa, dínoslo y lo añadimos."
+  },
+  "sev_043": {
+   "name": "La lagunaria de los Jardines de la Madrina",
+   "species": "Lagunaria (Lagunaria patersonii)",
+   "age_estimate": "",
+   "access": "Gratuito, en los Jardines de la Madrina, un pequeño jardín municipal junto al Casino de la Exposición. Es una franja aparte y de acceso público de la antigua finca de San Telmo, no el mismo suelo que el vecino Palacio de San Telmo, cuyos jardines principales siguen cerrados al público y solo se visitan con cita previa.",
+   "transport": "Cerca de la Plaza de España y del intercambiador de autobús y tranvía del Prado de San Sebastián, a unos 10 minutos a pie.",
+   "story": "En Australia a esta especie la llaman el árbol de la bomba de picor, porque sus cápsulas se abren y sueltan pelos fibrosos que irritan la piel que los toca. Mirar, no recoger. Por lo demás la lagunaria es un árbol generoso, que abre flores rosa pálido de forma inconfundible de hibisco en la primera mitad del verano, y este es grande: 22 metros de alto, un tronco de 2,75 metros de perímetro a la altura del pecho y 4,33 en la base, y una copa de 10,3 metros de media. El censo municipal de 2022 la califica de óptima en fisiología y buena en conservación, limpia en todo lo que mide.\n\nDónde está pide una frase de cuidado. Los Jardines de la Madrina son un pequeño jardín municipal junto al Casino de la Exposición, un resto de la antigua finca de San Telmo que el Ayuntamiento recuperó y reabrió al público entre 2013 y 2015. No son los jardines del Palacio de San Telmo de al lado, sede de la presidencia andaluza, que solo se visitan con cita previa. En este se entra andando, gratis, desde la calle.\n\nSu edad es una pregunta abierta y la dejamos abierta. El catálogo municipal la trata como ejemplar viejo y notable, mientras que una asociación sevillana de jardines sitúa las lagunarias más viejas de la ciudad en los Jardines de Cristina y el Real Alcázar. Nadie ha publicado una fecha para este tronco. Si alguien la tiene, nos gustaría saberla."
+  }
+ }
+}

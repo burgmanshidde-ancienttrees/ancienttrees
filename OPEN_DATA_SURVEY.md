@@ -4,6 +4,16 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## Funchal, Madeira: the monumental-tree table lives inside the municipal plan (found 2026-09-01)
+
+**A register hiding in a planning document, and the finding corrects this file's own earlier note.** The 2026-08-17 Madeira entry below records IFCN's ASMAC survey as the island's register, and it is real but narrow: twelve sites island-wide, already fully mined for the six trees Madeira first published. It does NOT cover Funchal's own monumental trees.
+
+What does is **the Funchal PDM's `Relatorio de Fundamentacao`, Volume II, March 2018, `Quadro 5`**, a monumental-tree table inside the municipality's master planning document, which itself cites the regional government's 2008 publication *Arvores Monumentais e Emblematicas*. It was found by fetching the PDF directly and grepping it, not by any portal search, and it is the register behind all thirteen Wikidata candidates around Funchal.
+
+**The transferable lesson, which is why this is written up rather than just used:** a municipality that publishes no open dataset may still have published the list, inside a planning report, an ordinance annexe or a heritage inventory. Those documents are long PDFs nobody indexes as data, so they do not surface in an open-data search, and the way in is to fetch the plan and grep it. This is the third shape of the same lesson now: Italy's regional cards beat the national file, Germany's municipal ordinance beats the state register, and here the municipal PLAN beats the regional survey. The pattern is that the tier which actually manages the trees is the one that lists them.
+
+**Caveat carried from the pass:** the coordinates around it are park-level rather than tree-level. Two different species sat at an identical lat/long inside the Jardim Municipal, which is the tell, so everything from this source ships `approximate` unless a second source pins the trunk.
+
 ## Germany: the STATE Naturdenkmal register misses the CITY's own designations (found on Regensburg, 2026-09-01)
 
 **A transferable finding rather than a new source, and it applies to every German city in the queue.** A Regensburg pass was staged with 27 rows from `data/registers/bayern-naturdenkmale.json`, the Bavarian LfU state dataset, filtered to 20 km. Of Regensburg's roughly fifteen individually designated Naturdenkmal TREES, that state dataset carried **one**. All five trees the pass shipped came from somewhere else.
