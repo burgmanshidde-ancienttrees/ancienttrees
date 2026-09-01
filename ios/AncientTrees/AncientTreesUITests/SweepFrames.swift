@@ -65,6 +65,13 @@ final class SweepFrames: XCTestCase {
         ("collection",   ["-tab=0", "-open=collection:ancient-oaks-of-europe"], nil),
         ("walk",         ["-tab=0", "-open=walk:aarhus|Moesgård / Højbjerg"], nil),
         ("place-pin",    ["-tab=0", "-open=tree:ath_004", "-placepin"], nil),
+        // A TREE YOU ADDED YOURSELF, which no list here had (2026-09-01).
+        // It is the same page as the one above with a different half of it
+        // drawn: your own status card at the top, the empty fields you can
+        // fill, and an action bar with no primary button in it. The screen
+        // where the flow ends had never been measured or photographed once.
+        ("own-tree",     ["-tab=0", "-signed-in", "-mine-demo",
+                          "-open=mine:00000000-0000-0000-0000-0000000000a1"], nil),
         ("species-pick",  ["-tab=0", "-open=tree:ath_004", "-speciespick"], nil),
         ("directions",   ["-tab=0", "-directions"], nil),
         ("signin",       ["-tab=0", "-signin"], "signin-sheet"),
