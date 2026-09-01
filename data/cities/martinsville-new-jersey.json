@@ -1,0 +1,62 @@
+{
+  "city": "Martinsville, New Jersey",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "One oak stands alone in an open field off Mountain Road, and New Jersey has been telling stories about it for decades. The Devil's Tree is the state's best known haunted landmark: cars that will not start, a trunk said to stay warm, scratches nobody gave. What is verifiably true is harder than the folklore. People have attacked it with axes and chainsaws for years and failed, and the scars are still on the trunk, which is now ringed by a fence.",
+  "meta_description": "New Jersey's Devil's Tree stands alone in a Martinsville field, scarred by decades of axes and chainsaws and fenced off after the vandalism.",
+  "question_meta": "Martinsville's Devil's Tree is an oak of at least 200 years, alone in a public field off Mountain Road, fenced and free to visit by day.",
+  "question_answer": "The oldest tree in Martinsville is the Devil's Tree, an oak of at least 200 years standing by itself in an open field off Mountain Road, in the Martinsville section of Bernards Township. No botanical survey has established which oak it is, so it is listed here as Quercus, and 200 years is a floor rather than a measurement. The field is public open space and free to enter, but a chain-link fence around the trunk keeps visitors at a few paces.",
+  "question_context": "Martinsville is part of Bernards Township in Somerset County, and there is no public transport to the tree. It is a car trip, off Mountain Road, and the field it stands in is undeveloped land the township designated as public open space. A sign posted in 2007 gives the hours, closing about half an hour after sunset, which is aimed squarely at the night visits that made the fence necessary.\n\nExpect one tree in an empty field, and expect to look at it rather than touch it. The chain-link ring went up after years of vandalism, including attempts to burn and to fell it, and the axe and chainsaw scars are visible from outside the fence.\n\nOne thing to get straight before you drive: this is not the Basking Ridge oak. That was a different tree, a 600 year old white oak a few miles away, which died in 2016 and was removed the following year. It is regularly confused with this one. The Devil's Tree is alive.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Martinsville?",
+      "a": "The Devil's Tree, an oak of at least 200 years standing alone in a field off Mountain Road. Nobody has dated it precisely and no survey has established which species of oak it is, so both figures are open questions."
+    },
+    {
+      "q": "Can you get close to the Devil's Tree?",
+      "a": "Close, but not up to it. The field is public open space you can walk into freely; the trunk itself is enclosed by a chain-link fence installed after years of vandalism, so it is a look rather than a touch."
+    },
+    {
+      "q": "Is the Devil's Tree really haunted?",
+      "a": "The stories are genuine folklore and widely retold: a car that refuses to start, a trunk warm in cold weather, scratches appearing on visitors. None of it has ever been demonstrated. The scarring on the trunk, from decades of people trying to cut and burn the tree down, is the part that is documented."
+    },
+    {
+      "q": "Is this the Basking Ridge oak?",
+      "a": "No, and the two get mixed up constantly. The Basking Ridge white oak was about 600 years old, stood a few miles away, died in 2016 and was taken down in 2017. The Devil's Tree is a different tree and is still standing."
+    }
+  ],
+  "oldest_tree_id": "mtv_001",
+  "trees": [
+    {
+      "id": "mtv_001",
+      "name": "The Devil's Tree",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "estimated at least 200 years",
+      "age_min": 200,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Mountain Road, Martinsville section of Bernards Township, Somerset County, NJ",
+        "latitude": 40.63,
+        "longitude": -74.5831,
+        "neighbourhood": "Martinsville, Bernards Township"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/The_Devil%27s_Tree",
+        "https://weirdnj.com/stories/devils-tree/"
+      ],
+      "access": "Stands alone in an undeveloped field the township has designated as a public open space with posted opening hours (closes about half an hour after sunset per an on-site sign, since 2007). The field itself may be entered without asking anyone's permission, but the tree's own trunk is ringed by a chain-link fence, installed after repeated vandalism and midnight visits, so it is view-only rather than touchable up close.",
+      "transport": "No public transit found; car access off Mountain Road, Martinsville, NJ. Not close to any of our published US cities (nearest large city is Newark/NYC area, well over an hour); treat as its own place (Bernards Township / Martinsville, NJ).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "People have tried to cut this oak down with axes and with chainsaws, and it is still standing, carrying the marks. That is the part of the Devil's Tree that is not folklore.\n\nThe rest is. New Jersey tells a set of stories about it: that a car parked nearby will not start again, that the trunk stays warm in cold weather, that visitors go home with scratches nobody gave them. One local outlet has called it the most haunted place in the state. The stories are widely told, long-standing and unverified, and they are why most people come.\n\nWhat they find is a single oak alone in an open field off Mountain Road, ringed by a chain-link fence the township put up after years of vandalism and night-time visits. The field is public open space and a sign gives the hours, closing about half an hour after sunset, which is presumably aimed at the visitors who made the fence necessary.\n\nIt is at least two hundred years old. No botanical survey has recorded which oak it is, so the species on this page reads simply as Quercus. If you know the answer from the leaves or the bark, we would like to hear it.\n\nOne clarification, because the two are confused constantly: this is not the Basking Ridge oak, the 600 year old white oak a few miles away that died in 2016 and was taken down the next year. This one is alive.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

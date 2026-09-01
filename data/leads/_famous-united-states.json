@@ -11,9 +11,10 @@
     "https://commons.wikimedia.org/wiki/File:Bachelor_and_Three_Graces_Trees,_Mariposa_Grove,_Yosemite_National_Park_-_June_2022.jpg",
     "https://commons.wikimedia.org/wiki/File:Black_Mountain_Sequoia_Grove_The_Four_Horsemen.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Giant Sequoia (Sequoiadendron sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Commons category, not a single tree; treat as a research list of individuals, never as an entry (checked 2026-09-01)"
   },
   {
    "name": "Ceiba de Ponce",
@@ -24,9 +25,10 @@
     "https://commons.wikimedia.org/wiki/File:Francisco_Oller_-_La_ceiba_de_Ponce.jpg",
     "https://commons.wikimedia.org/wiki/File:Historic_Ceiba_Tree,_Ponce.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Ceiba (Ceiba sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: declared dead 2021, last limb fell 2025/26 (checked 2026-09-01)"
   },
   {
    "name": "Charter Oak",
@@ -37,9 +39,10 @@
     "https://commons.wikimedia.org/wiki/File:3c_Connecticut_Tercentenary,The_Charter_Oak_single,_1935_issue.jpg",
     "https://commons.wikimedia.org/wiki/File:Andros_in_Connecticut.png"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: fell 1856 (checked 2026-09-01)"
   },
   {
    "name": "Colonel Armstrong",
@@ -50,7 +53,8 @@
     "https://commons.wikimedia.org/wiki/File:Colonel_Armstrong_-_January_2023_-_Sarah_Stierch.jpg",
     "https://commons.wikimedia.org/wiki/File:Colonel_Armstrong_at_Armstrong_Woods_-_Sarah_Stierch.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "gue_001"
   },
   {
    "name": "Davie Poplars",
@@ -61,7 +65,8 @@
     "https://commons.wikimedia.org/wiki/File:Davie_Poplar_III.jpg",
     "https://commons.wikimedia.org/wiki/File:Davie_Poplar_Tree_on_UNC_Campus.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "cph_001"
   },
   {
    "name": "Doerner fir",
@@ -72,9 +77,10 @@
     "https://commons.wikimedia.org/wiki/File:Doerner_Fir_Trail.jpg",
     "https://commons.wikimedia.org/wiki/File:Pseudotsuga_menziesii_Dorner_BLM.jpg"
    ],
-   "status": "lead",
+   "status": "published",
    "species": "Fir (Abies sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "tree_id": "coo_001"
   },
   {
    "name": "General Sherman Tree",
@@ -85,7 +91,8 @@
     "https://commons.wikimedia.org/wiki/File:2009-08-27_General_Sherman_Tree_wide.jpg",
     "https://commons.wikimedia.org/wiki/File:2013-09-20_10_57_41_General_Sherman_Tree.JPG"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "seq_001"
   },
   {
    "name": "Great Elm (Boston)",
@@ -96,9 +103,10 @@
     "https://commons.wikimedia.org/wiki/File:Massachusetts_flag_submission_58.svg",
     "https://commons.wikimedia.org/wiki/File:Old_elm_tree,_Boston_Common,_from_Robert_N._Dennis_collection_of_stereoscopic_views_3.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Elm (Ulmus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: fell 1876 (checked 2026-09-01)"
   },
   {
    "name": "Hitachi Tree",
@@ -121,7 +129,8 @@
     "https://commons.wikimedia.org/wiki/File:Big_Cedar_panorama_3444.jpg",
     "https://commons.wikimedia.org/wiki/File:Big_Thuja_plicata_-_Olympic_National_Park.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "oly_001"
   },
   {
    "name": "Lahaina Banyan Tree",
@@ -132,9 +141,10 @@
     "https://commons.wikimedia.org/wiki/File:2012-02-10_02-19_Maui,_Hawaii_023_Lahaina,_Banyan_Tree_(6929895869).jpg",
     "https://commons.wikimedia.org/wiki/File:2012-02-10_02-19_Maui,_Hawaii_563_Lahaina,_Banyan_Tree_(6791143276).jpg"
    ],
-   "status": "lead",
+   "status": "published",
    "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "tree_id": "mau_001"
   },
   {
    "name": "Lover's Oak",
@@ -145,9 +155,10 @@
     "https://commons.wikimedia.org/wiki/File:GA_Brunswick_Old_Town_HD_Lovers_Oak02.jpg",
     "https://commons.wikimedia.org/wiki/File:GA_Brunswick_Old_Town_HD_Lovers_Oak_plaque01.jpg"
    ],
-   "status": "lead",
+   "status": "published",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "tree_id": "bwk_001"
   },
   {
    "name": "Man in Tree sequoia",
@@ -170,9 +181,10 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Methuselah_Tree.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "the US Forest Service deliberately withholds the location (checked 2026-09-01)"
   },
   {
    "name": "Newton's Apple Tree, Brown University",
@@ -210,7 +222,8 @@
     "https://commons.wikimedia.org/wiki/File:Cape_Meares_(8238585974).jpg",
     "https://commons.wikimedia.org/wiki/File:Cape_Meares_Octopus_or_Candelabra_Tree_Oct_2024.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "tlk_001"
   },
   {
    "name": "Old Apple Tree",
@@ -234,7 +247,8 @@
     "https://commons.wikimedia.org/wiki/File:Korbel_CA_OldArrowTree.jpg",
     "https://commons.wikimedia.org/wiki/File:Korbel_CA_OldArrowTreePlaque.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "private timberland, no confirmed public access (checked 2026-09-01)"
   },
   {
    "name": "El Palo Alto",
@@ -245,7 +259,8 @@
     "https://commons.wikimedia.org/wiki/File:El_Palo_Alto_2006-2.jpg",
     "https://commons.wikimedia.org/wiki/File:El_Palo_Alto_2006.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "pla_001"
   },
   {
    "name": "Pando (tree)",
@@ -256,7 +271,8 @@
     "https://commons.wikimedia.org/wiki/File:121003-FS-Fishlake-JZ-002_(30469976897).jpg",
     "https://commons.wikimedia.org/wiki/File:20191007-FS-Fishlake-JZ-006_(48875693961).jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "fsh_001"
   },
   {
    "name": "Parson Jones Tree",
@@ -266,7 +282,8 @@
     "https://commons.wikimedia.org/wiki/File:Parson_Jones_Tree_-_January_2023_-_Sarah_Stierch_01.jpg",
     "https://commons.wikimedia.org/wiki/File:Parson_Jones_Tree_-_January_2023_-_Sarah_Stierch_02.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "gue_002"
   },
   {
    "name": "Senator (tree)",
@@ -277,7 +294,8 @@
     "https://commons.wikimedia.org/wiki/File:Former_President_Calvin_Coolidge_and_Mrs._Coolidge_dedicating_the_%22Senator%22_tree_during_a_Florida_visit.jpg",
     "https://commons.wikimedia.org/wiki/File:Longwood_Senator_Park_Big.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "dead: burned by arson 2012 (checked 2026-09-01)"
   },
   {
    "name": "Sylvia (tree)",
@@ -300,7 +318,8 @@
     "https://commons.wikimedia.org/wiki/File:1,000-mile_Tree,_Weber_Canyon,_Utah,_by_Watkins,_Carleton_E.,_1829-1916.png",
     "https://commons.wikimedia.org/wiki/File:1,000-mile_Tree,_Weber_Canyon,_Utah._U.P.R.R,_by_Watkins,_Carleton_E.,_1829-1916.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "dead: original long gone; 1982 replacement sits on an active rail right-of-way with no lawful public access (checked 2026-09-01)"
   },
   {
    "name": "Witch Tree in Grand Portage",
@@ -310,7 +329,8 @@
     "https://commons.wikimedia.org/wiki/File:The_Witch_Tree-_Little_Spirit_Tree_-_panoramio.jpg",
     "https://commons.wikimedia.org/wiki/File:Witch_Tree,_Grand_Portage,_Minnesota.jpg"
    ],
-   "status": "lead"
+   "status": "held",
+   "reason": "see data/leads/_us-famous-held.json"
   },
   {
    "name": "Wizard Tree, Intervale, NH",
@@ -320,7 +340,8 @@
     "https://commons.wikimedia.org/wiki/File:The_Wizard_tree,_Cathedral_Woods,_Intervale,_N.H-LCCN2008679604.jpg",
     "https://commons.wikimedia.org/wiki/File:The_Wizard_tree,_Cathedral_Woods,_Intervale,_N.H-LCCN2008679604.tif"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "dead: gone since about 1948 (checked 2026-09-01)"
   },
   {
    "name": "Drive-through trees",
@@ -329,7 +350,8 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Automobile_underneath_arch_cut_in_tree,_Arlington,_ca_1927_(TRANSPORT_15).jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "Commons category, not a single tree; treat as a research list of individuals, never as an entry (checked 2026-09-01)"
   },
   {
    "name": "Brandywine Sycamore Tree",
@@ -340,7 +362,8 @@
     "https://commons.wikimedia.org/wiki/File:Bicentennial_tree_marker.jpg",
     "https://commons.wikimedia.org/wiki/File:Historic_American_Buildings_Survey,_DRAWN_BY_C.P._THOLEY._-_Joseph_Gilpin_House,_U.S._Route_1_(Birmingham_Township),_Chadds_Ford,_Delaware_County,_PA_HABS_PA,23-CHAF.V,1-11.tif"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "cdf_001"
   },
   {
    "name": "Pinchot Sycamore",
@@ -351,7 +374,8 @@
     "https://commons.wikimedia.org/wiki/File:Pinchot_Sycamore,_December_16,_2006.jpg",
     "https://commons.wikimedia.org/wiki/File:Pinchot_Sycamore_Lighting_Project_dedication,_April_29,_2008.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "sim_001"
   },
   {
    "name": "Sunderland Buttonball (tree)",
@@ -362,7 +386,8 @@
     "https://commons.wikimedia.org/wiki/File:Buttonball_Sycamore_in_Sunderland,_MA_(March_2019).jpg",
     "https://commons.wikimedia.org/wiki/File:North_Main_Sunderland_MA.JPG"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "snd_001"
   },
   {
    "name": "Webster Sycamore",
@@ -371,7 +396,8 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Webster_Sycamore_Webster_Springs_WV_1920.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "dead: felled after 2007 arson (checked 2026-09-01)"
   },
   {
    "name": "Symbolic oaks in the United States",
@@ -382,9 +408,10 @@
     "https://commons.wikimedia.org/wiki/File:Constitution_Oak_Plaque;_Old_Huntington_Town_Green_HD.JPG",
     "https://commons.wikimedia.org/wiki/File:Fort_Lincoln_Cemetery,_Brentwood,_Maryland_005.JPG"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Commons category, not a single tree; treat as a research list of individuals, never as an entry (checked 2026-09-01)"
   },
   {
    "name": "Vizcaíno-Serra Oak",
@@ -395,9 +422,10 @@
     "https://commons.wikimedia.org/wiki/File:Father_Serra_Celebrates_Mass_at_Monterey_by_L%C3%A9on_Trousset.jpg",
     "https://commons.wikimedia.org/wiki/File:Father_Serra_Serving_Mass,_June_3,_1770_by.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: cut down 1905 (checked 2026-09-01)"
   },
   {
    "name": "Arbutus Oak",
@@ -408,9 +436,10 @@
     "https://commons.wikimedia.org/wiki/File:Arbutus_Oak_Sign_Closeup.jpg",
     "https://commons.wikimedia.org/wiki/File:Arbutus_Oak_square_view.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Strawberry Tree (Arbutus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: fell 2019; it was a White Oak, not an Arbutus (checked 2026-09-01)"
   },
   {
    "name": "Charter Oak",
@@ -421,9 +450,10 @@
     "https://commons.wikimedia.org/wiki/File:3c_Connecticut_Tercentenary,The_Charter_Oak_single,_1935_issue.jpg",
     "https://commons.wikimedia.org/wiki/File:Andros_in_Connecticut.png"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: fell 1856 (checked 2026-09-01)"
   },
   {
    "name": "The Devil's Tree",
@@ -433,7 +463,8 @@
     "https://commons.wikimedia.org/wiki/File:Devil%27s_Tree_protection.jpg",
     "https://commons.wikimedia.org/wiki/File:The_Devil%27s_Tree.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "mtv_001"
   },
   {
    "name": "Door Tree",
@@ -443,7 +474,8 @@
     "https://commons.wikimedia.org/wiki/File:Door_Tree_1898.png",
     "https://commons.wikimedia.org/wiki/File:Mt._Carmel_-_Door_Tree_-_Hartley_-_1936.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "dead: cut down about 2019 (checked 2026-09-01)"
   },
   {
    "name": "Dueling Oaks, New Orleans",
@@ -454,9 +486,11 @@
     "https://commons.wikimedia.org/wiki/File:Detroit_Photographic_Company_(0355)_-_Dueling_Ground_in_City_Park,_New_Orleans.jpg",
     "https://commons.wikimedia.org/wiki/File:Deuling_Oaks_New_Orleans_Former_Days.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "tree_id": null,
+   "reason": "already published as nol_003 in New Orleans (checked 2026-09-01); the surviving oak of the pair, same facts"
   },
   {
    "name": "Emancipation Oak",
@@ -467,9 +501,10 @@
     "https://commons.wikimedia.org/wiki/File:Emancipation_Oak_Canopy.jpg",
     "https://commons.wikimedia.org/wiki/File:HAMPTON_UNIVERSITY_Emancipation_Oak.jpg"
    ],
-   "status": "lead",
+   "status": "published",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "tree_id": "hmp_001"
   },
   {
    "name": "Hanging Tree of Peekskill",
@@ -478,7 +513,8 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Gallows_Oak_where_Daniel_Strang_was_hanged_in_1777.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "dead: felled after a 2006 lightning strike (checked 2026-09-01)"
   },
   {
    "name": "Hooker Oak",
@@ -489,9 +525,10 @@
     "https://commons.wikimedia.org/wiki/File:HookerOakTree.jpg",
     "https://commons.wikimedia.org/wiki/File:Hooker_Oak.png"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: fell 1977 (checked 2026-09-01)"
   },
   {
    "name": "Logan Oak",
@@ -502,9 +539,10 @@
     "https://commons.wikimedia.org/wiki/File:Great_White_Oak_(47535147851).jpg",
     "https://commons.wikimedia.org/wiki/File:Great_White_Oak_of_Logan_(49830999606).jpg"
    ],
-   "status": "lead",
+   "status": "published",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "tree_id": "log_001"
   },
   {
    "name": "McDonogh Oak, City Park, New Orleans",
@@ -515,9 +553,10 @@
     "https://commons.wikimedia.org/wiki/File:City_Park_New_Orleans_11_March_2018_26.jpg",
     "https://commons.wikimedia.org/wiki/File:City_Park_New_Orleans_11_March_2018_47.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "already published as nol_001 (checked 2026-09-01)"
   },
   {
    "name": "Mercer Oak",
@@ -527,9 +566,10 @@
     "https://commons.wikimedia.org/wiki/File:Mercer_Oak,_Princeton_Battlefield_State_Park_in_2024.jpg",
     "https://commons.wikimedia.org/wiki/File:Mercer_Oak_and_sign,_Princeton_Battlefield_State_Park.jpg"
    ],
-   "status": "lead",
+   "status": "held",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "see data/leads/_us-famous-held.json"
   },
   {
    "name": "Mingo Oak",
@@ -539,9 +579,10 @@
     "https://commons.wikimedia.org/wiki/File:MingoOak1.jpg",
     "https://commons.wikimedia.org/wiki/File:MingoOak2-closeup_of_growth_rings.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: died 1938 (checked 2026-09-01)"
   },
   {
    "name": "Peter Lebeck Oak",
@@ -552,9 +593,10 @@
     "https://commons.wikimedia.org/wiki/File:Grave_of_Peter_Lebec_in_a_copse_of_gnarled_trees_at_Fort_Tejon.jpg",
     "https://commons.wikimedia.org/wiki/File:Lebeck_exhumed.png"
    ],
-   "status": "lead",
+   "status": "published",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "tree_id": "leb_001"
   },
   {
    "name": "Pow-Wow Oak Tree",
@@ -565,9 +607,10 @@
     "https://commons.wikimedia.org/wiki/File:ChiefOnkweTaseAtPowWowOak.jpg",
     "https://commons.wikimedia.org/wiki/File:CityOfLowellPermitForPowWowOakMonumentAt274ClarkRoad.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: cut down 2013, in Lowell not Cambridge (checked 2026-09-01)"
   },
   {
    "name": "Sacred Oak",
@@ -578,9 +621,10 @@
     "https://commons.wikimedia.org/wiki/File:Flickr_-_Nicholas_T_-_Sacred_Oak.jpg",
     "https://commons.wikimedia.org/wiki/File:Sacred_Oak,_Oley_Township,_Pennsylvania_(May_2014).jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "private land, typically off limits (checked 2026-09-01)"
   },
   {
    "name": "Sam Houston Oak",
@@ -591,9 +635,10 @@
     "https://commons.wikimedia.org/wiki/File:Marker_near_Sam_Houston_Oak_-_panoramio.jpg",
     "https://commons.wikimedia.org/wiki/File:Sam-houston-oak(gonzales-tx)2016-1.jpg"
    ],
-   "status": "lead",
+   "status": "held",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "see data/leads/_us-famous-held.json"
   },
   {
    "name": "The Big Tree, Missouri",
@@ -604,7 +649,8 @@
     "https://commons.wikimedia.org/wiki/File:Big_Tree_with_spring_picnic.jpg",
     "https://commons.wikimedia.org/wiki/File:Burr_Oak_(28087793503).jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "clm_001"
   },
   {
    "name": "Three Mile Oak",
@@ -615,9 +661,10 @@
     "https://commons.wikimedia.org/wiki/File:Original_Block_for_Three_Mile_Oak.JPG",
     "https://commons.wikimedia.org/wiki/File:Three-Mile-Oak-Original-Marker.png"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: dead 1909, no confirmed living successor (checked 2026-09-01)"
   },
   {
    "name": "Tree That Owns Itself",
@@ -628,7 +675,8 @@
     "https://commons.wikimedia.org/wiki/File:American_Forestry_Assn._Tree_that_owns_itself_LCCN2016852002.tif",
     "https://commons.wikimedia.org/wiki/File:Chicago_Tribune_Jun_11_1916_(page_93).jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "atg_001"
   },
   {
    "name": "Wye Oak",
@@ -639,9 +687,10 @@
     "https://commons.wikimedia.org/wiki/File:Wye_Oak.jpg",
     "https://commons.wikimedia.org/wiki/File:Wye_Oak_-_the_original_Oak...jpg"
    ],
-   "status": "lead",
+   "status": "held",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "see data/leads/_us-famous-held.json"
   },
   {
    "name": "Great Elm (Boston)",
@@ -652,9 +701,10 @@
     "https://commons.wikimedia.org/wiki/File:Massachusetts_flag_submission_58.svg",
     "https://commons.wikimedia.org/wiki/File:Old_elm_tree,_Boston_Common,_from_Robert_N._Dennis_collection_of_stereoscopic_views_3.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Elm (Ulmus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: fell 1876 (checked 2026-09-01)"
   },
   {
    "name": "Liberty Tree (Boston)",
@@ -665,7 +715,8 @@
     "https://commons.wikimedia.org/wiki/File:A_View_of_the_Year_1765_-_detail.jpg",
     "https://commons.wikimedia.org/wiki/File:A_view_of_the_obelisk_erected_under_Liberty-Tree_in_Boston_on_the_rejoicings_for_the_repeal_of_the_Stamp_Act_-_19495221702.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "dead: felled 1775 (checked 2026-09-01)"
   },
   {
    "name": "Old Treaty Elm Historical Marker",
@@ -676,9 +727,10 @@
     "https://commons.wikimedia.org/wiki/File:Old_Treaty_Elm_Historical_Marker_Chicago_Illinois_2018-0838.jpg",
     "https://commons.wikimedia.org/wiki/File:Old_Treaty_Elm_Historical_Marker_Chicago_Illinois_2018-0839.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Elm (Ulmus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: tree dead 1934; only a marker stands (checked 2026-09-01)"
   },
   {
    "name": "Survivor Tree (Oklahoma City)",
@@ -689,7 +741,8 @@
     "https://commons.wikimedia.org/wiki/File:Okc_tree_of_life.jpg",
     "https://commons.wikimedia.org/wiki/File:Oklahoma_City_Bombing.jpg"
    ],
-   "status": "lead"
+   "status": "published",
+   "tree_id": "okc_001"
   },
   {
    "name": "Tiadaghton Elm",
@@ -699,9 +752,10 @@
     "https://commons.wikimedia.org/wiki/File:Tiadaghton_Elm_(2)_(8217048597).jpg",
     "https://commons.wikimedia.org/wiki/File:Tiadaghton_Elm_(3)_(8217042203).jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Elm (Ulmus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "dead: dead 1975, no genuine successor (checked 2026-09-01)"
   },
   {
    "name": "Ulmus Americana (Utah County complex)",
@@ -712,9 +766,10 @@
     "https://commons.wikimedia.org/wiki/File:Northwest_at_the_Ulmus_Americana_at_Utah_County_complex,_Jul_15.jpg",
     "https://commons.wikimedia.org/wiki/File:Ulmus_Americana_plaque_at_Utah_County_complex,_Jul_15.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Elm (Ulmus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Commons category, not a single tree; treat as a research list of individuals, never as an entry (checked 2026-09-01)"
   }
  ],
  "blocked": [

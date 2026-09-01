@@ -1,0 +1,70 @@
+{
+  "city": "Logan, Ohio",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Logan sits in the Hocking Hills, and the oldest thing in the town grows on the northeast corner of its old cemetery. The Great White Oak has stood there for roughly six centuries, its limbs leaving the trunk sideways rather than upward. The town has organised itself around keeping it going: the Tree Commission gathers the acorns, raises them into saplings and sells them as a fundraiser, so there are young oaks all over Hocking County with this one as the parent.",
+  "meta_description": "Logan's great white oak has stood in the old cemetery for about 600 years, and the town raises seedlings from its acorns.",
+  "question_meta": "The Great White Oak in Old Logan Cemetery is Logan's oldest tree, roughly 600 years old and free to visit on public ground.",
+  "question_answer": "The oldest tree in Logan is the Great White Oak, a white oak of roughly 600 years on the northeast corner of Old Logan Cemetery, near the junction of Keynes Drive and North Mulberry Street. The Ohio Department of Natural Resources checked its age about thirty years ago, but the method was never recorded, so the honest range is 500 to 650 years. It is free, on public cemetery ground, and easy to pick out: it is the largest thing standing there by a wide margin.",
+  "question_context": "Logan is in Hocking County, about an hour southeast of Columbus, and no public transport reaches the tree. You drive, and you park at Old Logan Cemetery on the north side of town. The oak is on the northeast corner, near where Keynes Drive meets North Mulberry Street. The cemetery is public ground with no gate and no charge, and visitors who behave as one behaves in a cemetery are welcome.\n\nWhat is there is one white oak, not a collection. An Ohio naturalist spent an hour photographing it in 2019 and called it easily the largest and most ornate white oak he had seen, which is the fair description: huge gnarled limbs going out sideways, the frame an oak only builds with room and several centuries.\n\nAutumn is the moment to plan for. The acorns drop in September and October and the Tree Commission collects them, grows them on and sells the saplings. Nobody appears to have put a tape around the trunk. If you have, we would like the number.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Logan?",
+      "a": "The Great White Oak on the northeast corner of Old Logan Cemetery, put at roughly 600 years. The state's natural resources department checked the age about thirty years ago without recording the method, so 500 to 650 years is the range worth quoting."
+    },
+    {
+      "q": "Is the Logan Oak free to visit?",
+      "a": "Yes. It stands on the grounds of Old Logan Cemetery, which is public, has no gate and charges nothing. It is a cemetery, so the usual quiet applies."
+    },
+    {
+      "q": "How do I get to the Logan Oak?",
+      "a": "By car. Logan is about an hour southeast of Columbus in Hocking County, and there is no public transport to the tree. Head for Old Logan Cemetery and the junction of Keynes Drive and North Mulberry Street; the oak is on the northeast corner."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "September and October, when the acorns drop. The Logan Tree Commission collects them, raises the seedlings and sells them to fund more planting, so autumn is also when the tree is visibly doing something for the town."
+    }
+  ],
+  "oldest_tree_id": "log_001",
+  "trees": [
+    {
+      "id": "log_001",
+      "name": "The Great White Oak of Logan (Logan Oak)",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "roughly 600 years",
+      "age_min": 500,
+      "age_max": 650,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Old Logan Cemetery, northeast corner, near the junction of Keynes Drive and North Mulberry Street, Logan, OH",
+        "latitude": 39.546,
+        "longitude": -82.406,
+        "neighbourhood": "North side of Logan, Hocking County"
+      },
+      "verified_sources": [
+        "http://jimmccormac.blogspot.com/2019/09/the-logan-oak.html",
+        "https://www.ohiocoopliving.com/logans-trees"
+      ],
+      "access": "Free, on the grounds of a public cemetery (Old Logan Cemetery); described by a visiting naturalist as easy to find, with respectful visitors welcome.",
+      "transport": "No public transit found; car access in Logan, OH (Hocking County). Not close to any of our published US cities; treat as its own place (Logan, OH), roughly an hour southeast of Columbus.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Logan sells this tree's children. The town's Tree Commission gathers acorns from underneath it, raises them into saplings and sells them as a fundraiser, which is a fairly literal way of keeping a tree going.\n\nThe parent is a white oak on the northeast corner of Old Logan Cemetery, put at roughly six hundred years, with a defensible range of five hundred to six hundred and fifty. Ohio's Department of Natural Resources checked the age about thirty years ago and nobody wrote down how, so treat that figure as a good estimate rather than a count of rings. Either way, it was standing here well before any European reached the Ohio valley.\n\nWhat people come for is the shape. An Ohio naturalist spent an hour photographing it from every angle in 2019 and called it easily the largest and most ornate white oak he had seen: huge gnarled limbs leaving the trunk sideways rather than upward, the frame an oak only builds when it has room and several centuries. Its least likely honour came in 2022, when it turned up as an answer on College Jeopardy.\n\nNobody appears to have put a tape around it. If you have, tell us.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when the acorns drop and the town collects them"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

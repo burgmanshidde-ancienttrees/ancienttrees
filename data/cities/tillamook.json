@@ -1,0 +1,62 @@
+{
+  "city": "Tillamook",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Twenty minutes west of Tillamook, on the headland at Cape Meares, stands a Sitka spruce with no trunk. Six heavy limbs leave a base about fifteen metres wide, run out sideways as far as five metres and only then turn and climb. It is called the Octopus Tree, and also the Candelabra Tree, the Council Tree and, by someone less taken with it, the Monstrosity Tree. Local tradition says Native people shaped it deliberately. That account is disputed.",
+  "meta_description": "The Octopus Tree at Cape Meares has no trunk: six limbs run sideways from a 15-metre base before turning up. Free, minutes from Tillamook.",
+  "question_meta": "The Octopus Tree, a 250 to 300 year old Sitka spruce with no trunk, stands free at Cape Meares, 20 minutes west of Tillamook.",
+  "question_answer": "The oldest tree at Tillamook is the Octopus Tree, a Sitka spruce of roughly 250 to 300 years at the Cape Meares State Scenic Viewpoint, a few minutes' walk from the lighthouse parking area about 20 minutes west of the town. It has no central trunk: six large limbs splay horizontally from a base roughly fifteen metres wide before turning vertical, and the base measures over fourteen metres round. Oregon lists it as a Heritage Tree, and it is free to visit.",
+  "question_context": "Cape Meares State Scenic Viewpoint is on the headland about 20 to 25 minutes' drive west of Tillamook, and there is no public transport to it. Park at the Cape Meares Lighthouse parking area; the tree is a short, easy, well-marked walk from there, and none of it costs anything.\n\nThe form is the reason to come. There is no central trunk. Six large limbs leave a base roughly fifteen metres across, run out horizontally for as much as five metres and then turn upward, which is how the tree collected its four names. The circumference at the base is over fourteen metres and the age is put at roughly 250 to 300 years.\n\nHow it grew this way is unsettled. Local tradition holds that Native people trained the young spruce, and one version of that story says the limbs were meant to cradle canoes in burial rites. The account is debated and has never been confirmed. Oregon lists the tree as a Heritage Tree, which is a designation rather than an explanation.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Tillamook?",
+      "a": "The Octopus Tree at Cape Meares, a Sitka spruce of roughly 250 to 300 years, about 20 minutes' drive west of the town."
+    },
+    {
+      "q": "Why does the Octopus Tree have no trunk?",
+      "a": "Nobody has settled it. Local tradition says Native people trained the young spruce into shape, in one version to cradle canoes in burial rites, and that account is disputed and unconfirmed. What is certain is the result: six limbs running horizontally from a base about fifteen metres wide before turning vertical."
+    },
+    {
+      "q": "Is it free, and how do I get there?",
+      "a": "Free. It is in the Cape Meares State Scenic Viewpoint, a short and easy signed walk from the lighthouse parking area. There is no public transport, so it is a 20 to 25 minute drive west from Tillamook."
+    },
+    {
+      "q": "What else is the tree called?",
+      "a": "The Candelabra Tree, the Council Tree and the Monstrosity Tree, all for the same reason. It is also a designated Oregon Heritage Tree."
+    }
+  ],
+  "oldest_tree_id": "tlk_001",
+  "trees": [
+    {
+      "id": "tlk_001",
+      "name": "Octopus Tree",
+      "species": "Sitka Spruce (Picea sitchensis)",
+      "age_estimate": "roughly 250 to 300 years",
+      "age_min": 250,
+      "age_max": 300,
+      "girth_cm": 1400,
+      "height_m": 30,
+      "location": {
+        "address": "Cape Meares State Scenic Viewpoint, near Cape Meares Lighthouse, Tillamook County, Oregon",
+        "latitude": 45.4863,
+        "longitude": -123.978,
+        "neighbourhood": "a short walk from the Cape Meares Lighthouse parking area"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Octopus_Tree_(Oregon)",
+        "https://www.obbg.org/blog/2023/04/octopus-tree-an-oregon-heritage-tree/"
+      ],
+      "access": "Free, Oregon State Parks scenic viewpoint; short, easy, well-marked walk from the lighthouse parking area.",
+      "transport": "No public transit; nearest town is Tillamook, OR, about a 20 to 25 minute drive.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This spruce has no trunk. Six heavy limbs leave a base roughly fifteen metres wide, run out sideways for as much as five metres, and only then turn and climb, so the tree reads as six trees that agreed on a starting point.\n\nHow it got that way is an open argument. Local tradition holds that Native people shaped the young tree deliberately, and one version of the story says the limbs were meant to cradle canoes in burial rites. That account is disputed and has never been confirmed. The tree is worth the walk under either explanation.\n\nIt is roughly two hundred and fifty to three hundred years old and over fourteen metres round the base, and it has collected names in proportion: the Octopus Tree, the Candelabra Tree, the Council Tree and, from someone less taken with it, the Monstrosity Tree. Oregon lists it as a Heritage Tree.\n\nIt stands a few minutes' walk from the Cape Meares Lighthouse parking area at the Cape Meares State Scenic Viewpoint, out on the headland about twenty minutes west of Tillamook. The path is short, easy and signed, and none of it costs anything.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

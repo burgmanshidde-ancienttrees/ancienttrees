@@ -1,0 +1,62 @@
+{
+  "city": "Olympic National Park",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Olympic National Park runs to nearly a million acres, and this is one tree inside it, a few hundred feet off Highway 101 between Ruby Beach and Kalaloch. The Kalaloch cedar was once counted among the largest western red cedars anywhere. In March 2014 a coastal storm split it down its length and roughly half of it came down. The other half is still standing and still alive, which makes it a stranger and more interesting stop than the record-holder was.",
+  "meta_description": "A storm split the Kalaloch cedar in two in 2014. Half of this thousand-year-old western red cedar still stands, a few feet off Highway 101.",
+  "question_meta": "The Kalaloch cedar, roughly 1,000 years old, is the named old tree of Olympic National Park's coast strip. Free, just off Highway 101.",
+  "question_answer": "Olympic National Park holds trees nobody has ever dated, but the oldest one with a name, a trail and a sign is the Kalaloch cedar, a western red cedar of roughly a thousand years, off Highway 101 between Ruby Beach and Kalaloch. Estimates for it run from 800 to 1,200 years. Half of it came down in a storm in March 2014; the standing half is alive, in slow decline, and reached by a flat trail of a few hundred feet from a signed roadside pull-off.",
+  "question_context": "Olympic National Park comes in three parts: mountains, rainforest and a long coastal strip. This tree is on the coastal strip, on Highway 101 between Ruby Beach and Kalaloch, and reaching it costs nothing. The Big Cedar trail leaves a signed roadside pull-off and runs a few hundred feet, flat, to the tree. The access road has potholes and is passable in any car. The nearest services are at Kalaloch Lodge a few miles south, and there is no public transport on this coast.\n\nGo knowing what is there. The dimensions this cedar is famous for, close to six metres through and about fifty three metres tall, date from before March 2014, when a coastal storm split the trunk and brought down roughly half of it. Nobody has published a remeasurement since. What stands now is a great damaged column, alive but declining, with the fallen half beside it. The signs at the tree cover the damage and where it is sensible to stand, and they are current guidance rather than history.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Olympic National Park?",
+      "a": "Plenty of trees in the park have never been dated, so the honest answer is the oldest one that is named and signed: the Kalaloch cedar, a western red cedar estimated at 800 to 1,200 years, on the coast strip off Highway 101."
+    },
+    {
+      "q": "Do I need to pay to see the Kalaloch cedar?",
+      "a": "No. The Big Cedar trail runs a few hundred feet off a roadside pull-off on Highway 101, with no entrance station between the road and the tree."
+    },
+    {
+      "q": "Is the tree still alive after the 2014 storm?",
+      "a": "Yes. The March 2014 storm split it and took down roughly half the trunk and crown. The remaining half is alive and has been described since as in slow decline. Trip reports treat it as a standing, visitable tree."
+    },
+    {
+      "q": "How long is the walk?",
+      "a": "A few hundred feet, flat and well marked, from the signed parking pull-off. It is one of the shortest walks to a tree of this age anywhere on the Washington coast."
+    }
+  ],
+  "oldest_tree_id": "oly_001",
+  "trees": [
+    {
+      "id": "oly_001",
+      "name": "The Kalaloch Redcedar",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 1859,
+      "height_m": 53,
+      "location": {
+        "address": "Olympic National Park, off US Highway 101 between Ruby Beach and Kalaloch, Washington",
+        "latitude": 47.675,
+        "longitude": -124.397,
+        "neighbourhood": "Kalaloch Big Cedar Nature Trail, a short flat walk from a signed roadside parking area"
+      },
+      "verified_sources": [
+        "https://www.wta.org/go-hiking/hikes/big-cedar-tree-kalaloch",
+        "https://www.knkx.org/environment/2014-03-12/storm-splits-olympic-national-parks-centuries-old-kalaloch-cedar-tree-in-two"
+      ],
+      "access": "Free (within Olympic National Park); short, flat, well-marked trail a few hundred feet from a roadside parking pull-off on Highway 101. The access road has potholes but is passable by any vehicle.",
+      "transport": "No public transit; nearest services are at Kalaloch Lodge, a few miles south.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Half of this tree is lying on the ground. On 8 March 2014 a storm off the Pacific split the Kalaloch cedar down its length and roughly half the trunk and crown came down. The other half is still standing, and still alive.\n\nThat changes what to expect. The figures this tree is famous for, close to six metres through and about fifty three metres tall, are pre-2014 numbers from when it ranked among the largest western red cedars anywhere. Nobody has published a remeasurement since. What you walk up to now is a ruined column of a tree, somewhere between eight hundred and twelve hundred years old, described by everyone who has looked at it as alive but in slow decline.\n\nIt is worth the stop anyway, and arguably it is a better stop than it was. A cedar this size takes a millennium to build and one night of weather to halve, and here you can see both facts at the same time: the intact side going up, the wreckage of the other side where it fell.\n\nThe Big Cedar trail leaves a signed pull-off on Highway 101 between Ruby Beach and Kalaloch. It is a few hundred feet, flat, and free with the park. Read the signs when you get there. The 2014 damage is the reason they exist.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

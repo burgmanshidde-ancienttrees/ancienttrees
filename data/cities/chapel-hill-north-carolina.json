@@ -1,0 +1,70 @@
+{
+  "city": "Chapel Hill, North Carolina",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The oldest quad at the University of North Carolina has a tulip tree at the middle of it, and campus legend holds that the university sits where it does because General William R. Davie fell asleep under that tree in 1792. The Davie Poplar is over 100 feet tall, over 16 feet round, and 300 to 375 years old on the university's own estimate, which puts it here before the university whichever end of the range you take. Two propagated descendants grow beside it. McCorkle Place is open ground, free, and busy all day.",
+  "meta_description": "Campus legend says UNC stands where it does because a man napped under this tulip tree in 1792. The Davie Poplar, 300 to 375 years old.",
+  "question_meta": "The Davie Poplar, a tulip tree of 300 to 375 years, stands on McCorkle Place at UNC in Chapel Hill. Open ground, free, minutes from Franklin Street.",
+  "question_answer": "The oldest tree in Chapel Hill is the Davie Poplar, a tulip tree of 300 to 375 years standing on McCorkle Place, the oldest quad of the University of North Carolina, a two-minute walk from Franklin Street. It is more than 100 feet tall and more than 16 feet around, and the university's age estimate has no ring count behind it, so take the band rather than a single figure. Even at the low end it predates the university. Campus legend says General William R. Davie napped beneath it in 1792 and chose the site for the university on the strength of it, which is a story rather than a record. Two younger propagations, Davie Poplar Jr. and Davie Poplar III, grow nearby and are often mistaken for it. The quad is free and open.",
+  "question_context": "McCorkle Place is the northern quad of the University of North Carolina at Chapel Hill, bounded by Franklin Street at one end, so the tree is a two-minute walk from the middle of town. It is open ground crossed by paths, free and unfenced, busy from morning to evening, and nobody stops anyone walking in. The poplar stands near the centre with the Old Well and Old East close by, which makes this a short walk with a lot on it. Davie Poplar Jr., rooted from the original, and Davie Poplar III, propagated later, grow nearby and get mistaken for the parent regularly, so look for the largest of the three. The university estimates the age at 300 to 375 years without a ring count behind it, which is honest of them and worth repeating rather than rounding. Seeds from the tree were handed out to students in 2005, and the campus paper was still writing about that giveaway twenty years later. Autumn is the moment: tulip trees turn a clear yellow, usually in the second half of October here.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Chapel Hill?",
+      "a": "The Davie Poplar, a tulip tree on McCorkle Place at UNC, estimated at 300 to 375 years by the university. No ring count supports the figure, so it is a broad estimate rather than a measurement."
+    },
+    {
+      "q": "Which one is the original?",
+      "a": "The largest of the three. Davie Poplar Jr. was rooted from the original and Davie Poplar III was propagated later; both stand nearby and both get photographed by mistake."
+    },
+    {
+      "q": "Can I walk onto the quad, and does it cost anything?",
+      "a": "Yes and no. McCorkle Place is open campus green with paths across it, free, unfenced, and used all day by students and everyone else."
+    },
+    {
+      "q": "When does it look its best?",
+      "a": "Late October, when the crown turns clear yellow. Tulip trees also flower in May and June, green and orange, but the flowers sit high in the crown and are easy to miss from below."
+    }
+  ],
+  "oldest_tree_id": "cph_001",
+  "trees": [
+    {
+      "id": "cph_001",
+      "name": "Davie Poplar",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly 300 to 375 years",
+      "age_min": 300,
+      "age_max": 375,
+      "girth_cm": 488,
+      "height_m": 30.5,
+      "location": {
+        "address": "McCorkle Place, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina",
+        "latitude": 35.913226,
+        "longitude": -79.051743,
+        "neighbourhood": "McCorkle Place, the university's oldest quad, on public campus grounds"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Davie_Poplar",
+        "https://blogs.lib.unc.edu/hill/2013/10/11/legends-of-the-popular-poplar-of-mccorkle-place/"
+      ],
+      "access": "Free, open campus green space, no restrictions on approach.",
+      "transport": "No public transit needed; on UNC's central Chapel Hill campus, walkable from downtown Chapel Hill.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The University of North Carolina stands where it does, campus legend says, because General William R. Davie fell asleep under this poplar in 1792 and decided the spot would do. That is a good story rather than a documented one, which is roughly the status of most things said about this tree. What can be measured: over 100 feet tall, over 16 feet around, and somewhere between 300 and 375 years old on the university's own estimate, which no ring count supports. Even at the low end of that band it is older than the university, and that is the only part of the legend that has to be true for the rest to be plausible. It stands on McCorkle Place, the oldest quad on campus, and UNC has spent a long time preparing for the day it goes. Davie Poplar Jr. was rooted from the original and grows a few steps away; Davie Poplar III came later. Both are separate trees, and the one people come for is the big one. Seeds from it were handed out to students in 2005, and the anniversary of that giveaway was still being written up in the campus paper twenty years later, which tells you how much weight a university can put on one tulip tree. The quad is open ground, free, crossed all day. In late October the crown turns clear yellow.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October, when the crown turns clear yellow over the quad"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "city": "Columbia, Missouri",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "A short drive southwest of Columbia, in the Missouri River bottoms near McBaine, one bur oak stands alone in a field: 7.3 metres around, a crown forty metres across, tied as national champion of its species. It was already about two hundred years old when Lewis and Clark came up the river in 1804, and it has taken lightning and the floods of 1993 and 1995 since. Bur Oak Road runs past it and the Katy Trail passes within yards, which is how most people arrive. Free, no gate, visible from the road.",
+  "meta_description": "The Big Tree near Columbia was already 200 years old when Lewis and Clark passed. A champion bur oak, 7.3m round, free, right beside the Katy Trail.",
+  "question_meta": "The Big Tree, a 350 to 400 year old champion bur oak, stands on Bur Oak Road near McBaine, a short drive from Columbia, Missouri. Free.",
+  "question_answer": "The oldest tree near Columbia is The Big Tree, officially the Williamson Bur Oak, standing on Bur Oak Road in the Missouri River bottoms near McBaine, a short drive southwest of the city. It is between 350 and 400 years old, sprouted some time in the 1600s, and measures 287 inches around, about 90 feet tall, with a crown 130 feet across, which has it tied as national champion bur oak and holding Missouri's state title since 1987. It has survived lightning strikes and the floods of 1993 and 1995, and an arborist keeps it under care; a May 2026 report described it as about as healthy as a nearly four-century-old tree can be. It stands on Williamson family land beside a public road, free to visit, with no gate.",
+  "question_context": "The Big Tree stands on Bur Oak Road in the Missouri River bottoms near McBaine, southwest of Columbia. There is no admission, no gate and no visitor centre: it is a tree in a field beside a public road, on land the Williamson family has farmed for six generations. The Katy Trail State Park rail-trail passes within yards, so a good share of the people who see it arrive by bicycle, and the flat gravel of the trail is the pleasant way to do it. Boone County made it an official historic site in August 2021, the only tree in the county with that designation, and it has been Missouri's state champion bur oak since 1987 as well as a tied national champion. What that means in front of you is a trunk 7.3 metres around and a crown forty metres wide with nothing else near it, which is why you pick it out from the road well before you arrive. The bottomland here is soft after heavy rain. Autumn is when the acorns drop, and a bur oak's are the size that stops people.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Columbia?",
+      "a": "The Big Tree, a bur oak of 350 to 400 years on Bur Oak Road near McBaine, a short drive southwest of the city. It is tied as national champion of its species and has been Missouri's state champion since 1987."
+    },
+    {
+      "q": "Is it free, and is it on private land?",
+      "a": "Free, with no gate. The tree grows on the Williamson family's farmland, which they have held for six generations, but it stands right beside the public Bur Oak Road and people have been stopping for it for decades."
+    },
+    {
+      "q": "Can I get there on the Katy Trail?",
+      "a": "Yes. The Katy Trail passes within yards of the tree, which is how many visitors arrive. By car it is a short drive southwest of Columbia to Bur Oak Road near McBaine."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "September and October, when the big fringed acorns drop into the field. In winter the shape of a 40-metre crown with nothing beside it is easier to read, and after heavy rain the bottomland is soft underfoot."
+    }
+  ],
+  "oldest_tree_id": "clm_001",
+  "trees": [
+    {
+      "id": "clm_001",
+      "name": "The Big Tree (Williamson Bur Oak)",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "350 to 400 years",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": 729,
+      "height_m": 27,
+      "location": {
+        "address": "Bur Oak Road, near McBaine, Boone County, Missouri",
+        "latitude": 38.899311,
+        "longitude": -92.464603,
+        "neighbourhood": "Missouri River bottoms, near McBaine"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/The_Big_Tree",
+        "https://comomag.com/2026/05/01/the-big-bur-oak-still-standing/"
+      ],
+      "access": "Free. Stands on privately owned farmland (the Williamson family, six generations) but is publicly accessible right beside Bur Oak Road, and the Katy Trail State Park rail-trail runs just yards away, making it a well known stop for cyclists. No fee found.",
+      "transport": "Near McBaine, Boone County, Missouri, a few km from Columbia, MO. Not within 30 minutes of any city we currently publish; stands alone.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "When Lewis and Clark came up the Missouri in 1804, this bur oak was already about two hundred years old. It is still standing in the river bottoms near McBaine: 7.3 metres around, 27 metres tall, a crown 40 metres across, tied as national champion of its species and Missouri's state champion since 1987. Sources put its start somewhere in the 1600s and its age between 350 and 400 years, with no ring count behind either figure. It has taken lightning strikes and sat through the floods of 1993 and 1995 that drowned much of this floodplain, and a professional arborist keeps an eye on it. In May 2026 COMO Magazine described it as about as healthy as a nearly four-century-old tree can be. The land belongs to the Williamson family and has for six generations, which means six generations have left it standing in the middle of good bottomland rather than in a fencerow. Boone County made it an official historic site in August 2021, the only tree in the county with that status. Bur Oak Road runs past it and the Katy Trail passes within yards, so cyclists have been stopping here for years without anyone organising it. Free, no gate, and you see it from the road before you reach it, because there is nothing else of that size in the field.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when the big fringed acorns drop into the field"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

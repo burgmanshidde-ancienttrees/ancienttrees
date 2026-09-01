@@ -1,0 +1,63 @@
+{
+  "city": "Sequoia National Park",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "General Sherman is not the tallest tree, and it is probably not the oldest in its own grove. It is the largest known living single-stem tree on Earth by volume, about 1,487 cubic metres of trunk, and it stands on the Main Trail in the Giant Forest, half a mile from the parking lot that carries its name. In September 2021, with the KNP Complex Fire burning into the grove, park staff wrapped its base in aluminium foil. It worked.",
+  "meta_description": "General Sherman holds 1,487 cubic metres of trunk, the largest living tree on Earth. Staff wrapped its base in foil to save it from fire in 2021.",
+  "question_meta": "General Sherman, 2,300 to 2,700 years old, stands in the Giant Forest in Sequoia National Park, half a mile from the parking lot.",
+  "question_answer": "General Sherman is the giant sequoia at the centre of the Giant Forest in Sequoia National Park, most often dated at 2,300 to 2,700 years, with older estimates running as high as 3,200. It is the largest living single-stem tree on Earth by volume rather than the oldest: other sequoias in the same grove may well be older, and none has been cored to settle it. It is a half-mile walk from the Sherman Tree parking lot, downhill on the way in.",
+  "question_context": "Sequoia National Park is large, and General Sherman is the reason most first-time visitors drive into this part of it. The tree stands in the Giant Forest, on the Main Trail, about half a mile from the Sherman Tree parking lot. The walk in is downhill and partly paved, which makes the walk out the uphill one. A seasonal shuttle runs for anyone who would rather not do it twice.\n\nThe park charges an entrance fee at the gate. Once you are through, the tree costs nothing. There is no public transport into the park, and the nearest town is Three Rivers, about 45 minutes' drive from the entrance.\n\nThe thing worth knowing before you arrive is that the fame is about bulk, not height. At 83.6 metres it is an ordinary tall sequoia. At about 31 metres round the base it is not, and the roughly 1,487 cubic metres of trunk is what makes it the largest living single-stem tree on the planet.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Sequoia National Park?",
+      "a": "Nobody knows, and General Sherman is not a safe answer to that question. It is dated at 2,300 to 2,700 years, with older estimates as high as 3,200, but other sequoias in the Giant Forest may be older and none of them has been cored. What General Sherman holds is the volume record."
+    },
+    {
+      "q": "How much does it cost to see General Sherman?",
+      "a": "Sequoia National Park charges an entrance fee per vehicle at the gate. Beyond that there is nothing to pay: the trail to the tree is open and free once you are inside the park."
+    },
+    {
+      "q": "How long is the walk to General Sherman?",
+      "a": "About half a mile each way from the Sherman Tree parking lot, partly paved. It goes downhill on the way in and uphill on the way back, and a seasonal shuttle covers the route for anyone who wants to skip the climb."
+    },
+    {
+      "q": "Did General Sherman survive the wildfires?",
+      "a": "Yes. The KNP Complex Fire reached the Giant Forest in September 2021 and park staff wrapped the base of the tree in protective aluminium foil. The tree came through unharmed and was remeasured in 2024."
+    }
+  ],
+  "oldest_tree_id": "seq_001",
+  "trees": [
+    {
+      "id": "seq_001",
+      "name": "General Sherman Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 2,300 to 2,700 years",
+      "age_min": 2200,
+      "age_max": 3200,
+      "girth_cm": 3129,
+      "height_m": 83.6,
+      "location": {
+        "address": "Giant Forest, Sequoia National Park, Tulare County, California",
+        "latitude": 36.582101,
+        "longitude": -118.750924,
+        "neighbourhood": "Giant Forest, on the Main Trail, about 0.5 miles from the Wolverton/Sherman Tree parking lot"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/General_Sherman_Tree",
+        "https://home.nps.gov/seki/learn/nature/sherman.htm"
+      ],
+      "access": "Paid entry (Sequoia National Park entrance fee); a short, partly paved, downhill walk from the main parking lot (uphill on the return, or use the seasonal shuttle).",
+      "transport": "No public transit; the nearest town is Three Rivers, CA, about 45 minutes' drive from the park entrance.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In September 2021, with the KNP Complex Fire burning into the Giant Forest, park staff wrapped the base of this tree in aluminium foil. It worked. The fire came through the grove and the tree was unharmed.\n\nThat is roughly the class of trouble a sequoia is built for. This one holds about 1,487 cubic metres of trunk, which makes it the largest known living single-stem tree on Earth, and the number doing the work is girth rather than height. At 83.6 metres it is a fairly ordinary tall sequoia. At about 31 metres round the base it is not.\n\nIts age is genuinely unsettled. Most estimates land between 2,300 and 2,700 years, older ones ran as high as 3,200, and nobody is going to core it to settle the argument, so both figures stay on this page.\n\nIt stands on the Main Trail in the Giant Forest, about half a mile from the Sherman Tree parking lot. The walk down is short and part paved; the walk back is the uphill half, and a seasonal shuttle runs for anyone who would rather not. Sequoia National Park charges at the gate. Once you are through it, the most famous tree in the country costs nothing to stand in front of.",
+      "paid_entry": true,
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

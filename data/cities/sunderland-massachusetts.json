@@ -1,0 +1,70 @@
+{
+  "city": "Sunderland, Massachusetts",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Sunderland's buttonball tree was already large when the United States Constitution was signed, and the plaque at its foot dates it that way. It stands on the verge of North Main Street in the middle of the village: 782 centimetres round, over thirty four metres tall, with a crown spreading about forty three metres, and it is widely called the largest tree in Massachusetts. Tradition puts its seeding before 1665, which makes it well over three hundred and fifty years old.",
+  "meta_description": "Sunderland's Buttonball Tree was already large when the Constitution was signed in 1787. It stands free on North Main Street, roadside.",
+  "question_meta": "Sunderland's Buttonball Tree, an American sycamore of over 350 years, stands free on North Main Street and is called Massachusetts' largest tree.",
+  "question_answer": "The oldest tree in Sunderland is the Buttonball Tree, an American sycamore on North Main Street in the town centre. Tradition holds that it seeded before 1665, which puts it well over 350 years old and by some accounts close to 400. It measured 782 centimetres round at chest height in 2019, over 34 metres tall, with a crown spreading about 43 metres, and it is widely called the largest tree in Massachusetts. It stands on a public verge, free, with a plaque installed beside it in 1987.",
+  "question_context": "Sunderland is in the Connecticut River valley in western Massachusetts, roughly 25 minutes north of Amherst by road, and there is no public transport to the tree. It stands on the verge of North Main Street in the middle of the village, so there is no park to enter and no gate: you park, walk over and put a hand on the bark. A commemorative plaque went in beside it in 1987.\n\nThe measurements date from November 2019: 782 centimetres round at chest height, over 34 metres tall, an average spread of 43 metres. An arbor column revisited the tree in April 2026 and readers reported the girth has grown since, which is a good sign rather than a figure to quote.\n\nThe age is tradition rather than a count of rings. The town holds that the tree seeded before 1665, and the stone plaque makes the point by dating it against the signing of the Constitution in 1787, by which time it was already large. The local claim goes further, that it is the widest tree this side of the Mississippi.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Sunderland?",
+      "a": "The Buttonball Tree on North Main Street. Tradition dates its seeding to before 1665, making it well over 350 years old and by some accounts close to 400. Nobody has cored it, so that is tradition rather than a measurement."
+    },
+    {
+      "q": "Is the Buttonball Tree the largest tree in Massachusetts?",
+      "a": "It is widely described as such, on a girth of 782 centimetres measured in 2019 and a crown spread of about 43 metres. The stronger local claim, that it is the widest tree this side of the Mississippi, is a saying rather than a survey."
+    },
+    {
+      "q": "Is it free to visit, and where exactly is it?",
+      "a": "Free, and there is nothing to enter. It stands roadside on the verge of North Main Street in Sunderland town centre, with the 1987 plaque in front of it. You will need a car; there is no public transport."
+    },
+    {
+      "q": "Why is it called a buttonball tree?",
+      "a": "Buttonball is the New England name for the American sycamore, after the round seed balls that hang on the bare limbs through winter before breaking apart in spring. December and January are when they are most visible."
+    }
+  ],
+  "oldest_tree_id": "snd_001",
+  "trees": [
+    {
+      "id": "snd_001",
+      "name": "The Sunderland Buttonball Tree",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "well over 350 years, possibly closer to 400",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": 782,
+      "height_m": 34.4,
+      "location": {
+        "address": "North Main Street, Sunderland, MA",
+        "latitude": 42.468852,
+        "longitude": -72.578366,
+        "neighbourhood": "Sunderland town center"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Buttonball_Tree",
+        "https://www.amherstindy.org/2026/04/03/amherst-arbor-spotlight-american-sycamore/"
+      ],
+      "access": "Free, stands on a public street (North Main Street) in the town center; a commemorative plaque was installed in front of it in 1987.",
+      "transport": "No public transit found; roadside in Sunderland town center, car access. Roughly 15 km / 25 minutes by road north of Amherst; not close to any city on our published US list (nearest are Boston/New York, both 2+ hours). Treat as its own place (Sunderland, MA).",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The plaque at its foot dates the tree against the US Constitution. It was already standing, and already large, when the document was signed in 1787.\n\nTradition has it seeded before 1665, which puts it well over three hundred and fifty years old and by some accounts near four hundred. That is tradition rather than a count of rings, and it is worth saying so, but the measurements are consistent with an old tree: 782 centimetres round at chest height when it was last measured in 2019, over thirty four metres tall, with a crown spreading forty three metres. It is widely called the largest tree in Massachusetts. The local line goes further and calls it the widest tree this side of the Mississippi, which is a saying rather than a survey.\n\nButtonball is the New England name for the American sycamore, and it comes from the seed balls that hang on the bare limbs through the winter before breaking apart in spring.\n\nThere is no gate, no ticket and no path to find. It stands on the verge of North Main Street in the middle of the village, so you park, walk over and put a hand on the bark. The commemorative plaque went in beside it in 1987, roughly three hundred and twenty years into the tree's life.",
+      "best_time": {
+        "months": [
+          12,
+          1
+        ],
+        "kind": "fruit",
+        "label": "December and January, when the seed balls that give it its name hang on bare limbs"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

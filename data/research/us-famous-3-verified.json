@@ -122,5 +122,54 @@
     "location_precision": "approximate",
     "curation_status": "flagged",
     "verify_notes": "American elm that stood in a parking lot across the street from the Alfred P. Murrah Federal Building and survived the 19 April 1995 bombing, though the blast stripped most of its branches and embedded glass and debris in the trunk; officials nearly cut it down afterward to recover evidence. About a year later it began blooming again and was preserved as the centrepiece of the Oklahoma City National Memorial's Outdoor Symbolic Memorial, on the north side of the site. Photos from the 1920s (when the site was a family home's back yard) indicate the tree is roughly 100 years old (memorialmuseum.com). ALIVE CHECK: a 2024/2025-dated local news piece (News9.com, headline references 'nearly 30 years' since the 1995 bombing, i.e. written around 2024-25) describes the tree as thriving today; the memorial's own current site describes it in the present tense as an actively maintained, protected feature with an ongoing seed-collection and gifting program (elm seedlings from this tree are distributed to visitors and grown at partner sites). No girth or precise height found in this pass; height/spread commonly cited around 40 feet. The Rescuers' Orchard (redbuds, maples, pistache, elms) is planted around it. PIN is the memorial park's centroid (approximate); the site is small (roughly 150 x 220 metres) so this is a tight approximation, not a park-level guess across a large area, but should be upgraded to the tree's exact position by a future pass with a mapped photo or the memorial's own site plan."
+  },
+  {
+    "id": "gon_001",
+    "name": "The Sam Houston Oak",
+    "species": "Live Oak (Quercus virginiana)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Beside the Braches House, off CR 361, about 8 miles east of Gonzales, Texas",
+      "latitude": 29.471304,
+      "longitude": -97.308161,
+      "neighbourhood": "Rural Gonzales County"
+    },
+    "verified_sources": [
+      "https://texastimetravel.com/directory/sam-houston-oak/",
+      "https://texastimetravel.com/blog/history-in-the-trees/"
+    ],
+    "access": "View-only from a public dirt road. The Braches House and the land the oak stands on are private property; visitors cannot enter, but the tree and house are visible from CR 361, a public dirt road, from a respectful distance outside the gates and fences. A 1936 Texas state historical marker stands at the roadside turn (Alternate US 90 / CR 361).",
+    "transport": "Rural Gonzales County, Texas, about 8 miles / 13 km east of the town of Gonzales on Hwy 90A then north on CR 361. Not within 30 minutes of any city we currently publish (Houston and San Antonio are both roughly 90+ minutes away); stands alone as a Gonzales-area entry.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "VIEW-ONLY entry, per the Hobart precedent: genuinely visible from a public road, not enterable. A large live oak beside the 1842 Braches House (Greek Revival plantation-era house) where General Sam Houston and up to ~400 Texans camped on the night of 13 March 1836, at the start of the 'Runaway Scrape' retreat after burning Gonzales following news of the Alamo's fall; also called the Runaway Scrape Oak. One source (texasescapes.com via WebSearch summary) states Santa Anna's forces reportedly camped under the same tree about three weeks later, though this could not be independently confirmed by directly fetching a page in this pass (texasescapes.com timed out twice, treated as a hanging host and not retried further -- flag for data/fetch-blocklist.json). A 1936 Texas state historical marker commemorates the site at the Alt US 90 / CR 361 junction. ALIVE CHECK: texastimetravel.com's own current directory and blog entry (both live, current pages) describe the tree in the present tense as 'a lonely but grand live oak' still standing beside the house; no death or removal reported anywhere. PIN: the coordinate is a geotagged 2010s-era Panoramio photo of the historical marker itself (confirmed via Commons API, matches the lead batch's supplied coordinate exactly), which sits at the roadside viewing point near the tree, not the trunk itself -- appropriate for a view-only entry per the Hobart rule. No age or girth figure found in this pass; the tree was already large enough to shade several hundred men camping under it in 1836, so it was already mature 190 years ago, but no source gives a number and none should be invented. Species is live oak per two sources (not genus-only)."
+  },
+  {
+    "id": "mcb_001",
+    "name": "The Big Tree (Williamson Bur Oak)",
+    "species": "Bur Oak (Quercus macrocarpa)",
+    "age_estimate": "350 to 400 years",
+    "age_min": 350,
+    "age_max": 400,
+    "girth_cm": 729,
+    "height_m": 27,
+    "location": {
+      "address": "Bur Oak Road, near McBaine, Boone County, Missouri",
+      "latitude": 38.899311,
+      "longitude": -92.464603,
+      "neighbourhood": "Missouri River bottoms, near McBaine"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/The_Big_Tree",
+      "https://comomag.com/2026/05/01/the-big-bur-oak-still-standing/"
+    ],
+    "access": "Free. Stands on privately owned farmland (the Williamson family, six generations) but is publicly accessible right beside Bur Oak Road, and the Katy Trail State Park rail-trail runs just yards away, making it a well known stop for cyclists. No fee found.",
+    "transport": "Near McBaine, Boone County, Missouri, a few km from Columbia, MO. Not within 30 minutes of any city we currently publish; stands alone.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "A bur oak in the Missouri River floodplain near McBaine, officially named the Williamson Bur Oak Tree, tied for National Champion of its species in the United States, and Missouri's state champion bur oak since 1987. Girth 287 inches circumference = ~729cm (converted from the source figure directly, not estimated); height 89-90ft (27m); crown spread 130ft (40m); trunk diameter 7.5ft (2.3m). Age given as 'nearly 400 years old' by comomag.com (May 2026, the most current source found) and as 350-400 years, sprouted in the 1600s, by Wikipedia -- both sources agree closely, used the wider range. It was already roughly 200 years old when the Lewis and Clark Expedition passed nearby (1804). Became an official Boone County Historic Site in August 2021, the only tree in the county with that designation. ALIVE CHECK: strongest possible evidence, a dedicated article titled 'The Big Bur Oak Still Standing' published by COMO Magazine in May 2026 (this year), describing it as 'as healthy as a nearly four-century old tree can be' and noting it receives regular professional arborist care despite having survived lightning strikes and major floods in 1993 and 1995. Owned by the John Sam Williamson family for six generations; reachable via the public Bur Oak Road, right beside the popular Katy Trail State Park rail-trail. No dispute found between sources on any material fact."
   }
 ]
