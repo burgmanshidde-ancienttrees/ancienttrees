@@ -68,6 +68,21 @@ struct TreeDetail: View {
                     hero
                     VStack(alignment: .leading, spacing: 28) {
                     header
+                    // THE CONFIRMATION, WHERE YOU LAND (Hidde, 2026-09-01: "ook
+                    // krijg je geen bevestiging dat iets is opgeslagen"). It
+                    // sat under the story, which is below the fold on every
+                    // phone, so the one moment it was written for was the one
+                    // moment nobody saw it.
+                    //
+                    // The convention it follows is in CONVENTIONS.md, "Landing
+                    // after you have added something": Google Maps thanks you
+                    // as you submit and then keeps the state on the item until
+                    // the review is over, and Apple's HIG puts status feedback
+                    // beside the thing it describes rather than in an alert.
+                    // A toast alone would not do: it leaves no trace, and
+                    // somebody opening this page an hour later has no way to
+                    // ask what happened to their tree.
+                    if mine != nil { mineStatus }
                     facts
                     // A TICKET IS THE FIRST THING TO KNOW (Hidde, 2026-08-26:
                     // "dat betaald is dermate belangrijk dat die informatie
@@ -100,7 +115,6 @@ struct TreeDetail: View {
                     // camera in the photograph's corner says the same thing by
                     // being a camera, on every tree, whether or not there is
                     // already a picture.
-                    if mine != nil { mineFooter }
                     // "Report a problem" used to sit here and open the generic
                     // contribute form, which greeted somebody who wanted to
                     // report a wrong pin with a picker whose first row reads "A
@@ -867,30 +881,74 @@ struct TreeDetail: View {
         }
     }
 
-    /// What happens to a tree you added, said plainly on its own page.
+    /// That the tree was saved, and what happens to it next, at the top of the
+    /// page somebody lands on the moment they add one.
     ///
-    /// There is no CHOICE about it any more (Hidde, 2026-08-24: "hij komt
-    /// uberhaupt automatisch bij ons terecht of ze het willen of niet en dan
-    /// kiezen wij of die het waard is"), so the honest thing is to say so here
-    /// rather than to ask twice.
-    @ViewBuilder private var mineFooter: some View {
+    /// There is no CHOICE about the second half any more (Hidde, 2026-08-24:
+    /// "hij komt uberhaupt automatisch bij ons terecht of ze het willen of
+    /// niet en dan kiezen wij of die het waard is"), so the honest thing is to
+    /// say so here rather than to ask twice.
+    ///
+    /// It is drawn as the page's other notes are drawn, a tinted card with an
+    /// icon, because it is the same kind of thing: a fact about this tree that
+    /// stays true until it stops being true. The alternative considered and
+    /// rejected was a toast at the moment of saving, which every benchmark
+    /// pairs with a lasting state rather than using instead of one.
+    @ViewBuilder private var mineStatus: some View {
         if let m = mine {
             HStack(alignment: .top, spacing: 8) {
-                Image(systemName: m.status == .published ? "checkmark.seal" : "leaf")
+                Image(systemName: icon(for: m.status))
                     .foregroundStyle(Brand.moss)
-                Text(m.status == .published
-                     ? "This one made the map everybody sees."
-                     // His own sentence, verbatim (2026-08-25). What it
-                     // replaced said "This tree is yours. We have it too",
-                     // which reads as a boast about our own database at the
-                     // moment somebody has just given us something, and it
-                     // never said what happens next. The reader is the subject
-                     // here and the next step is named.
-                     : "You've added this tree. We're taking a look at it, and once it's verified, we will add it to our map.")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(headline(for: m.status))
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Brand.ink)
+                    Text(sentence(for: m.status))
+                        .font(.footnote).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer(minLength: 0)
             }
-            .padding(.top, 2)
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Brand.moss.opacity(0.12), in: .rect(cornerRadius: 10))
+            .accessibilityIdentifier("mine-status")
+            .accessibilityElement(children: .combine)
+        }
+    }
+
+    private func icon(for status: Sightings.Status) -> String {
+        switch status {
+        case .published: "checkmark.seal"
+        case .declined: "leaf"
+        default: "checkmark.circle"
+        }
+    }
+
+    private func headline(for status: Sightings.Status) -> String {
+        switch status {
+        case .published: "On the map"
+        case .declined: "Yours only"
+        default: "Added to your trees"
+        }
+    }
+
+    private func sentence(for status: Sightings.Status) -> String {
+        switch status {
+        case .published:
+            "This one made the map everybody sees."
+        case .declined:
+            // Honest, and it never was before: a declined tree carried the
+            // sentence about us still looking at it, which is a promise we had
+            // already broken by the time it was drawn.
+            "We could not add this one to our own map. It stays here, in your trees."
+        default:
+            // His own sentence, verbatim (2026-08-25). What it replaced said
+            // "This tree is yours. We have it too", which reads as a boast
+            // about our own database at the moment somebody has just given us
+            // something, and it never said what happens next. The reader is the
+            // subject here and the next step is named.
+            "You've added this tree. We're taking a look at it, and once it's verified, we will add it to our map."
         }
     }
 
@@ -990,6 +1048,24 @@ struct TreeDetail: View {
         }
     }
 
+    /// One action in the bar, drawn as a circle. Same 52 points, same border
+    /// and same surface as the heart beside it, so a row of them reads as one
+    /// control repeated rather than as three unrelated buttons.
+    private func barCircle(_ symbol: String, _ label: String, id: String,
+                           action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: symbol)
+                .font(.title3)
+                .foregroundStyle(Brand.moss)
+                .frame(width: 52, height: 52)
+                .background(Brand.surface, in: .circle)
+                .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier(id)
+        .accessibilityLabel(label)
+    }
+
     private var actionBar: some View {
         HStack(spacing: 10) {
             // The hand-off, and it is a REVERSAL of 2026-08-24, when this
@@ -1012,37 +1088,37 @@ struct TreeDetail: View {
             // button stands beside it: three controls at 375 points wrapped
             // the label onto two lines, which reads as a layout fault rather
             // than as a short word (seen on the sweep, 2026-08-26).
-            // ON YOUR OWN TREE THE BIG BUTTON IS THE CAMERA (Hidde,
-            // 2026-08-29: "de take me there knop is ook raar, de logische knop
-            // is add tree ofzo").
+            // ON YOUR OWN TREE THERE IS NO BIG BUTTON AT ALL (Hidde,
+            // 2026-09-01, having walked the flow: "je komt op de boom
+            // detailpagina met een grote knop take me there eronder, dat is
+            // niet perse de knop die je daar wilt hebben").
             //
-            // He is right and it reads as an oversight rather than a decision.
-            // A tree of yours is one you photographed while standing under it,
-            // so the loudest control on the page offers to walk you to a place
-            // you were just at. Meanwhile the camera, which this file calls the
-            // main act on every tree page, is the one control hidden here.
+            // This is the second correction of the same fault. On 2026-08-29
+            // directions and the camera traded places, which fixed the absurd
+            // half (a route to a tree you are standing under) and left the
+            // other one: "Add a tree", loudest control on the page, on the
+            // tree you added a second ago. Both read as though the save did
+            // not take, which is exactly what he reported.
             //
-            // So they trade places. Directions stay, as a circle beside the
-            // heart, because a month later you may well want to find it again;
-            // what changes is which of the two is shouting.
+            // The convention says the loudest control belongs to the thing you
+            // just made, and here there is nothing left to shout: the tree is
+            // saved, its state says so at the top of the page, and what is
+            // still missing is offered inline where it belongs, on the species,
+            // the age and the story. So the bar becomes a row of equal circles,
+            // which is what Apple Maps does on a place with several actions and
+            // no single primary one. See CONVENTIONS.md, "Landing after you
+            // have added something".
             if mine != nil {
-                Button { navigator.collectNearby = true } label: {
-                    Label("Add a tree", systemImage: "camera")
-                        .lineLimit(1)
+                barCircle("camera", "Add a tree", id: "mine-add-tree") {
+                    navigator.collectNearby = true
                 }
-                .buttonStyle(BrandButtonStyle())
-                .accessibilityIdentifier("mine-add-tree")
-
-                Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
-                    Image(systemName: "arrow.turn.up.right")
-                        .font(.title3)
-                        .foregroundStyle(Brand.moss)
-                        .frame(width: 52, height: 52)
-                        .background(Brand.surface, in: .circle)
-                        .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
+                Spacer(minLength: 0)
+                // Directions stay: a month later you may well want to find it
+                // again.
+                barCircle("arrow.turn.up.right", "Take me there", id: "mine-directions") {
+                    Directions.walk(lat: tree.lat, lng: tree.lng)
                 }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Take me there")
+                Spacer(minLength: 0)
             } else {
                 Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
                     Label("Take me there", systemImage: "arrow.turn.up.right")
