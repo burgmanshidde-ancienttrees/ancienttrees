@@ -716,5 +716,21 @@
    "species": "Elm (Ulmus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
+ ],
+ "blocked": [
+  {
+   "name": "The Witch Tree (Manidoo-gizhigance / Spirit Little Cedar Tree)",
+   "species": "Northern White Cedar (Thuja occidentalis)",
+   "lat": 47.955933,
+   "lng": -89.638599,
+   "reason": "BLOCKED under hard rule 10, and this one is not a close call. The Grand Portage Band closed the trail to independent public use in 1989 specifically to protect the tree from vandalism, and it can now be visited only on a guided tour arranged by telephone through Grand Portage Lodge. An appointment is exactly what the access test names as a no. The tree is also sacred to the Band (Manidoo-gizhigance, Spirit Little Cedar), so publishing a pin and a directions button would send strangers to a place a community deliberately closed. Verified and kept here rather than thrown away: first written record by Sieur de la Verendrye in 1731, who described it as already mature; confirmed standing on 21 February 2024. Do not re-research this as if it were an open question.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Witch_Tree",
+    "https://www.paddlinglight.com/articles/trip-reports/manido-gizhigans-spirit-little-cedar-tree-the-witch-tree/",
+    "https://www.cbsnews.com/minnesota/news/finding-minnesota-north-shores-witch-tree/",
+    "https://wtip.org/travis-novitsky-shares-the-history-of-the-sacred-spirit-tree/"
+   ],
+   "status": "blocked"
+  }
  ]
 }

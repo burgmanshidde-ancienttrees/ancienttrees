@@ -65,7 +65,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 2.1 km from the centre of Austin. Condition per the registry: 2. Measured April 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 71
+   "girth_cm": 71,
+   "needs_verification": true
   },
   {
    "name": "Quercus sinuata var. breviloba (Texas Big Tree Registry TreeID 970)",
@@ -75,7 +76,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 2.8 km from the centre of Austin. Condition per the registry: 2. Measured December 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 335
+   "girth_cm": 335,
+   "needs_verification": true
   },
   {
    "name": "Fraxinus texensis (Texas Big Tree Registry TreeID 2332)",
@@ -85,7 +87,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.6 km from the centre of Austin. Condition per the registry: 2. Measured July 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 218
+   "girth_cm": 218,
+   "needs_verification": true
   },
   {
    "name": "Fraxinus velutina (Texas Big Tree Registry TreeID 6435)",
@@ -95,7 +98,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 8.3 km from the centre of Austin. Condition per the registry: 2. Measured June 2022. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 480
+   "girth_cm": 480,
+   "needs_verification": true
   },
   {
    "name": "Quercus sinuata var. sinuata (Texas Big Tree Registry TreeID 29446)",
@@ -105,7 +109,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 26.4 km from the centre of Austin. Condition per the registry: 2. Measured March 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 290
+   "girth_cm": 290,
+   "needs_verification": true
   },
   {
    "name": "Quercus sinuata var. sinuata (Texas Big Tree Registry TreeID 1077)",
@@ -115,7 +120,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 26.7 km from the centre of Austin. Condition per the registry: 2. Measured March 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 340
+   "girth_cm": 340,
+   "needs_verification": true
   },
   {
    "name": "Quercus sinuata var. sinuata (Texas Big Tree Registry TreeID 29445)",
@@ -125,7 +131,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 26.8 km from the centre of Austin. Condition per the registry: 2. Measured March 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 340
+   "girth_cm": 340,
+   "needs_verification": true
   },
   {
    "name": "Chilopsis linearis (Texas Big Tree Registry TreeID 32449)",
@@ -135,7 +142,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 26.8 km from the centre of Austin. Condition per the registry: 2. Measured June 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 183
+   "girth_cm": 183,
+   "needs_verification": true
   },
   {
    "name": "Rhus virens var. virens (Texas Big Tree Registry TreeID 887)",
@@ -145,7 +153,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 27.6 km from the centre of Austin. Condition per the registry: 2. Measured April 2019. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 84
+   "girth_cm": 84,
+   "needs_verification": true
   }
  ],
  "blocked": [

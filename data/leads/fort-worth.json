@@ -11,7 +11,8 @@
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
    "girth_cm": 213,
    "verified_as": "ftw_004",
-   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json"
+   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
+   "needs_verification": true
   },
   {
    "name": "Prosopis glandulosa var. glandulosa (Texas Big Tree Registry TreeID 781)",
@@ -23,7 +24,8 @@
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
    "girth_cm": 478,
    "verified_as": "ftw_003",
-   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json"
+   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
+   "needs_verification": true
   },
   {
    "name": "Ziziphus zizyphus (Texas Big Tree Registry TreeID 436)",
@@ -35,7 +37,8 @@
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
    "girth_cm": 190,
    "verified_as": "ftw_001",
-   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json"
+   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
+   "needs_verification": true
   },
   {
    "name": "Ungnadia speciosa (Texas Big Tree Registry TreeID 782)",
@@ -45,7 +48,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 3.9 km from the centre of Fort Worth. Condition per the registry: 3. Measured August 2015. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 20
+   "girth_cm": 20,
+   "needs_verification": true
   },
   {
    "name": "Quercus buckleyi (Texas Big Tree Registry TreeID 843)",
@@ -57,7 +61,8 @@
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
    "girth_cm": 622,
    "verified_as": "ftw_002",
-   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json"
+   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json",
+   "needs_verification": true
   },
   {
    "name": "Quercus macrocarpa (Texas Big Tree Registry TreeID 1131)",
@@ -67,7 +72,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 8.8 km from the centre of Fort Worth. Condition per the registry: 4. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 554
+   "girth_cm": 554,
+   "needs_verification": true
   },
   {
    "name": "Quercus shumardii (Texas Big Tree Registry TreeID 2343)",
@@ -77,7 +83,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 12.5 km from the centre of Fort Worth. Condition per the registry: 2. Measured June 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 447
+   "girth_cm": 447,
+   "needs_verification": true
   },
   {
    "name": "Ilex vomitoria (Texas Big Tree Registry TreeID 102)",
@@ -87,7 +94,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 12.8 km from the centre of Fort Worth. Condition per the registry: 2. Measured September 2007. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 76
+   "girth_cm": 76,
+   "needs_verification": true
   },
   {
    "name": "Ulmus parviflora (Texas Big Tree Registry TreeID 1326)",
@@ -97,7 +105,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 14.1 km from the centre of Fort Worth. Condition per the registry: 2. Measured June 2019. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 254
+   "girth_cm": 254,
+   "needs_verification": true
   },
   {
    "name": "Ilex vomitoria (Texas Big Tree Registry TreeID 1247)",
@@ -107,7 +116,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 16.3 km from the centre of Fort Worth. Condition per the registry: 2. Measured February 2017. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 99
+   "girth_cm": 99,
+   "needs_verification": true
   },
   {
    "name": "Ulmus crassifolia (Texas Big Tree Registry TreeID 2371)",
@@ -117,7 +127,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 16.3 km from the centre of Fort Worth. Condition per the registry: 2. Measured December 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 373
+   "girth_cm": 373,
+   "needs_verification": true
   },
   {
    "name": "Pinus thunbergii (Texas Big Tree Registry TreeID 919)",
@@ -127,7 +138,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 19.3 km from the centre of Fort Worth. Condition per the registry: 1. Measured April 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 221
+   "girth_cm": 221,
+   "needs_verification": true
   },
   {
    "name": "Lagerstroemia indica (Texas Big Tree Registry TreeID 1279)",
@@ -137,7 +149,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 21.0 km from the centre of Fort Worth. Condition per the registry: 1. Measured January 2018. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 183
+   "girth_cm": 183,
+   "needs_verification": true
   },
   {
    "name": "Lagerstroemia indica (Texas Big Tree Registry TreeID 4437)",
@@ -147,7 +160,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 21.0 km from the centre of Fort Worth. Condition per the registry: 3. Measured May 2022. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 211
+   "girth_cm": 211,
+   "needs_verification": true
   },
   {
    "name": "Ulmus americana (Texas Big Tree Registry TreeID 937)",
@@ -157,7 +171,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 23.1 km from the centre of Fort Worth. Condition per the registry: 1. Measured July 2012. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 549
+   "girth_cm": 549,
+   "needs_verification": true
   },
   {
    "name": "Quercus marilandica (Texas Big Tree Registry TreeID 1328)",
@@ -167,7 +182,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 23.7 km from the centre of Fort Worth. Condition per the registry: 2. Measured September 2019. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 236
+   "girth_cm": 236,
+   "needs_verification": true
   },
   {
    "name": "Pinus elliottii var. elliottii (Texas Big Tree Registry TreeID 1093)",
@@ -177,7 +193,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 23.8 km from the centre of Fort Worth. Condition per the registry: 2. Measured July 2012. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 251
+   "girth_cm": 251,
+   "needs_verification": true
   }
  ],
  "blocked": []

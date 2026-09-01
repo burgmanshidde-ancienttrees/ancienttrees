@@ -122,7 +122,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.7 km from the centre of Dallas. Condition per the registry: 2. Measured May 2010. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 86
+   "girth_cm": 86,
+   "needs_verification": true
   },
   {
    "name": "Cedrus deodara (Texas Big Tree Registry TreeID 337)",
@@ -132,7 +133,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 5.8 km from the centre of Dallas. Condition per the registry: 2. Measured July 2005. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 305
+   "girth_cm": 305,
+   "needs_verification": true
   },
   {
    "name": "Juglans nigra (Texas Big Tree Registry TreeID 1037)",
@@ -142,7 +144,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 6.4 km from the centre of Dallas. Condition per the registry: 3. Measured August 2010. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 394
+   "girth_cm": 394,
+   "needs_verification": true
   },
   {
    "name": "Catalpa bignonioides (Texas Big Tree Registry TreeID 760)",
@@ -152,7 +155,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 9.8 km from the centre of Dallas. Condition per the registry: 3. Measured August 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 721
+   "girth_cm": 721,
+   "needs_verification": true
   },
   {
    "name": "Fraxinus berlandieriana (Texas Big Tree Registry TreeID 675)",
@@ -162,7 +166,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 11.6 km from the centre of Dallas. Condition per the registry: 2. Measured May 2013. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 460
+   "girth_cm": 460,
+   "needs_verification": true
   },
   {
    "name": "Ulmus americana (Texas Big Tree Registry TreeID 1096)",
@@ -172,7 +177,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 11.7 km from the centre of Dallas. Condition per the registry: 2. Measured September 2012. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 538
+   "girth_cm": 538,
+   "needs_verification": true
   },
   {
    "name": "Vitex agnus-castus (Texas Big Tree Registry TreeID 285)",
@@ -182,7 +188,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 22.0 km from the centre of Dallas. Condition per the registry: 4. Measured May 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 351
+   "girth_cm": 351,
+   "needs_verification": true
   },
   {
    "name": "Eysenhardtia texana (Texas Big Tree Registry TreeID 2361)",
@@ -192,7 +199,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 30.0 km from the centre of Dallas. Condition per the registry: 2. Measured October 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 51
+   "girth_cm": 51,
+   "needs_verification": true
   },
   {
    "name": "Ungnadia speciosa (Texas Big Tree Registry TreeID 2336)",
@@ -202,7 +210,8 @@
    "status": "lead",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 30.0 km from the centre of Dallas. Condition per the registry: 2. Measured August 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 66
+   "girth_cm": 66,
+   "needs_verification": true
   }
  ],
  "blocked": [

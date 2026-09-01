@@ -112,6 +112,10 @@ def main():
                            "check that it stands somewhere the public may go."
                            % (d, name, r.get("Condition") or "not stated",
                               r.get("MeasurementDateString") or "date not stated")),
+                # The flag, not just the prose: leads.py judges "has a pass
+                # looked at this" by whether any reason text exists, so a
+                # reason saying NOT VERIFIED would otherwise mark these READY.
+                "needs_verification": True,
                 "source": "Texas Big Tree Registry (lead source only, licence "
                           "disqualifies import; see OPEN_DATA_SURVEY.md)",
             }
