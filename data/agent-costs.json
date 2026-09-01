@@ -4398,6 +4398,51 @@
     "tokens": 0,
     "trees": 0,
     "note": "orchestration, not a dispatched pass: folded 15 duplicate/stale entries out of the three us-famous-*-verified.json research files (all now deleted, fully processed) into the right city leads files with why-notes; wrote 4 new species-page intros (white-oak, cook-pine, japanese-chinquapin, kapok) closing pagegaps.py gaps. tokens not separately metered from the session total."
+   },
+   {
+    "target": "regensburg",
+    "kind": "verify",
+    "tokens": 74000,
+    "trees": 5,
+    "note": "session. The Bavarian STATE register carried ONE of Regensburg's ~15 designated trees; the city's own Naturdenkmal ordinance, mirrored on de.wikipedia, held the rest and is where all five came from. 12 of the 27 staged rows were rocks, caves, ruins and a sinkhole.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "matera",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "session. Two trees verified and NOT published: neither passes the single-destination-tree test, and Matera stands at two. Eleven register trees sit on working masserie and fail hard rule 10, so the city's cap is access rather than supply. Both parked in leads with the reasoning; not waste, a correct no.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "madeira (Funchal deepen)",
+    "kind": "verify",
+    "tokens": 80000,
+    "trees": 4,
+    "note": "session. Corrected the brief's own premise: the IFCN ASMAC survey does not cover these, the register is Quadro 5 inside Funchal's municipal PDM planning report, found by fetching the PDF and grepping it. Refused a species claim it could not see the source for.",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "regensburg",
+    "kind": "write",
+    "tokens": 60000,
+    "trees": 5,
+    "note": "new city; the story refuses the available bridge claim in the prose itself, and the dying chestnut leads its entry rather than being buried.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "madeira",
+    "kind": "write",
+    "tokens": 118000,
+    "trees": 4,
+    "note": "six to ten plus the copy pass and a Portugal country count fix. Caught that the brief's 'first paid entry' premise was wrong: two live trees already carried paid_entry.",
+    "wasted": 0,
+    "brief_wrong": true
    }
   ]
  }

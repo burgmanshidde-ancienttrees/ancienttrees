@@ -1,0 +1,191 @@
+{
+  "city": "Regensburg",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Regensburg protects its trees one at a time, by number, and the result is a set of city-centre trees rather than country giants. A plane in the Herzogspark shares its lawn with a medieval gate tower, another holds a street corner in Prebrunn, and a third grows on a market place the Romans laid out around 175 AD. Over the Steinerne Bruecke, the oldest stone bridge in Germany, two protected chestnut groups stand a few doors apart on the same Stadtamhof street. All five are free, and the whole set is one afternoon on foot.",
+  "meta_description": "Five protected trees in Regensburg: a plane by a medieval gate tower, one on a Roman market square, and two chestnut groups over the Stone Bridge.",
+  "question_answer": "The oldest tree on this Regensburg page is the plane in the Herzogspark, put at roughly 200 years old, standing in the public park at the northwestern edge of the old town beside the medieval Prebrunnturm. It is also the only one of these five trees with any age attached to it at all, and that figure comes from a photographer's caption written on site in 2022 rather than from a survey or a ring count, so read it as one person's estimate. The other four, two more planes and two chestnut groups, are protected by the city without a date between them: Regensburg's natural monument register records what is designated and when it was designated, never how old it is. Any one of the undated four could be older, and nobody has checked. If you know of a girth measurement or a planting record for any of them, tell us and this page changes.",
+  "question_meta": "Regensburg's oldest tree here is the Herzogspark plane at roughly 200 years, and it is the only one of these five protected trees with an age at all.",
+  "question_context": "Regensburg is a city that protects individual trees rather than dating them. Its natural monument ordinance gives each protected tree or group a number, a street and a date of designation, and no age whatsoever, which is why four of the five trees here carry no figure and the fifth's roughly 200 years rests on a photographer's caption instead of a measurement.\n\nWhat the city does offer is trees that are unusually easy to see in one go. The Herzogspark plane and the Singrün corner plane are about five minutes apart in Prebrunn, on the western edge of the old town. The plane at the Alter Kornmarkt stands in the middle of the UNESCO-listed centre, on a square in use as trading ground since Roman times. The two chestnut groups are over the Steinerne Bruecke in Stadtamhof, a few doors apart on the same street, protected under separate numbers granted a year apart.\n\nAll five are free and reachable on foot from Regensburg Hauptbahnhof. If you can date any of them, tell us.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Regensburg?",
+      "a": "Of the five protected trees on this page, only the Herzogspark plane has an age at all, put at roughly 200 years by a photographer's on-site caption rather than by a survey. The other four are undated, so one of them could well be older."
+    },
+    {
+      "q": "Are Regensburg's protected trees free to visit?",
+      "a": "All five are free. Three stand on public streets and squares and are reachable at any hour; the Herzogspark plane is inside a municipal park open during daylight hours. No ticket is needed anywhere on this list."
+    },
+    {
+      "q": "Can you see all five in one walk?",
+      "a": "Yes, in an afternoon. Three are on the old town side, two of them five minutes apart in Prebrunn and one on the Alter Kornmarkt, and the two chestnut groups are over the Steinerne Bruecke in Stadtamhof, a few doors apart on Am Gries."
+    },
+    {
+      "q": "Is one of the chestnuts on Am Gries dying?",
+      "a": "One of the group was visibly dying when a photographer recorded it on 29 August 2022, and the rest were standing. No more recent public statement about their condition exists. If you see how they are doing now, tell us."
+    }
+  ],
+  "oldest_tree_id": "rgb_001",
+  "trees": [
+    {
+      "id": "rgb_001",
+      "name": "The Herzogspark Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 220,
+      "girth_cm": null,
+      "location": {
+        "address": "Herzogspark, near Westendstrasse, Regensburg",
+        "latitude": 49.023601,
+        "longitude": 12.081839,
+        "neighbourhood": "Herzogspark (Prebrunn), Altstadt"
+      },
+      "story": "This plane shares a lawn with a medieval gate tower and is the newcomer of the two by centuries. The Prebrunnturm anchors the northwestern corner of Regensburg's old town, and the ground under both tree and tower was a bastion in the city wall long before anything was planted on it.\n\nThe garden came in 1804, laid out privately for Georg Friedrich von Mueller on the site of that old bastion. The Thurn und Taxis family took it over in 1843, the city bought it in 1935, and it opened to the public between 1950 and 1952 as the Herzogspark.\n\nWhere the plane fits into that sequence is not recorded anywhere. The only age anyone has published is roughly 200 years, and it comes from a photographer's caption written on site in 2022 rather than from a survey or a ring count, so treat it as one person's estimate. Nothing links this particular tree to the original 1804 planting either. The park's founding date and the tree's age are two separate facts.\n\nWhat is documented is the protection. It is number 10 on the city's own list of natural monuments, one of a small group of Regensburg trees designated individually rather than as part of a landscape. If you know when it went into the ground, tell us.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Regensburg (Naturdenkmal Nr. 10, designated under the city's Naturdenkmal-SicherungsVO, consolidated version of 24 August 2007)",
+        "https://commons.wikimedia.org/wiki/File:Regensburg-HerzogsparkPlatane-1-Asio.JPG (photographer's own dated description, 29 August 2022: '200-jährige Platane (Naturdenkmal) in dem als Naturdenkmal geschützten Herzogspark')"
+      ],
+      "access": "Free. Inside the Herzogspark, a public municipal park at the northwestern edge of the Altstadt, open daily during daylight hours.",
+      "transport": "Regensburg Hauptbahnhof, then about a 15-20 minute walk, or bus to Prebrunn/Herzogspark stop, 5 minute walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rgb_002",
+      "name": "The Chestnuts of Am Gries",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "not documented; mature specimens, one in visible decline as of 2022",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Am Gries 18, Regensburg-Stadtamhof",
+        "latitude": 49.024291,
+        "longitude": 12.102277,
+        "neighbourhood": "Stadtamhof"
+      },
+      "story": "One of these chestnuts is dying, and the most recent public look at them was taken four years ago. The photographer who recorded the group on 29 August 2022 captioned the picture with the dying chestnut in the foreground, which remains the only statement anyone has published about their condition. The rest of the group was standing.\n\nTwo separate authorities protect them, which is unusual for a row of street trees. Regensburg's own natural monument ordinance lists them as number 52, the Kastanien Am Gries, designated on 28 March 1996. Bavaria's state register carries the same group independently as ND-03369. Between them they establish the species, the position and the protected status. Neither records an age, which is true of almost every tree on this page.\n\nThey stand on Am Gries in Stadtamhof, on the far bank of the Danube, about five minutes on foot from the end of the Steinerne Bruecke. That crossing is the reason to do these two chestnut entries together with the old town ones rather than on another day.\n\nStanding in front of them, the group's condition is the thing you will read first. If the failing chestnut has gone since 2022, or if the others have caught up with it, tell us.",
+      "verified_sources": [
+        "https://www.regensburg.de/stadtrecht/233932/verordnung-zur-sicherung-von-naturdenkmalen-im-stadtgebiet-von-regensburg-nd-sicherungsvo-in-der-fassung-der-bekanntmachung-vom-24-august-2007.html (city ordinance, 'Kastanien Am Gries', Naturdenkmal Nr. 52, designated 28 March 1996)",
+        "Bavaria LfU state Naturdenkmal register, entry ND-03369 'Naturdenkmal Kastanien am Gries, St. Regensburg' (independent state-level designation, coordinates ~250m from the photographed trees, same street)",
+        "https://commons.wikimedia.org/wiki/File:Regensburg-NaturdenkmalKastanien-AmGries18-1-Asio.JPG (photographer's dated description, 29 August 2022)"
+      ],
+      "access": "Free. Street trees on Am Gries in Stadtamhof, visible and reachable from the public street.",
+      "transport": "Across the Steinerne Brücke (Stone Bridge) from the Altstadt, then about a 5 minute walk along Am Gries.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "The cluster of horse chestnuts on the street outside Am Gries 18, one of them visibly failing as of 2022. The separately protected chestnut at number 30, a few doors east, is a single crown beside a stump.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white candles stand upright over the whole group"
+      }
+    },
+    {
+      "id": "rgb_003",
+      "name": "The Chestnuts of the Golden Lion",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Am Gries 30, Regensburg-Stadtamhof",
+        "latitude": 49.024296,
+        "longitude": 12.103077,
+        "neighbourhood": "Stadtamhof"
+      },
+      "story": "The protection here covers one horse chestnut and a torso. That is the register's own wording: entry number 53 on Regensburg's natural monument list, granted on 11 June 1997, protects a single standing chestnut plus what is left of a second, which is a good deal less than the plural in its name suggests.\n\nThe name belongs to the building rather than the trees. Zum Goldenen Loewen, the Golden Lion, was an inn on this plot at Am Gries 30, and the chestnut kept the name after the inn stopped trading.\n\nIt stands a few doors along from the Kastanien Am Gries, and the two are genuinely separate designations made a year apart under different numbers, not one group counted twice. On the ground the difference is easy: a cluster of trunks outside number 18, a single crown and the remains of its neighbour outside number 30.\n\nNobody has dated either of them. One city ordinance from 1997 and a photograph from August 2022 are the entire documented record for this tree, and the photograph is also the last confirmation that it is standing. If you know the planting year, or you have five minutes and a tape measure, tell us.",
+      "verified_sources": [
+        "https://www.regensburg.de/stadtrecht/233959/ (city ordinance, 'Rosskastanien Zum Goldenen Loewen in Stadtamhof', Naturdenkmal Nr. 53, designated 11 June 1997)",
+        "https://commons.wikimedia.org/wiki/File:Regensburg-NaturdenkmalRosskastanien-AmGries30-1-Asio.JPG (photographer's dated description, 29 August 2022)"
+      ],
+      "access": "Free. Street trees at Am Gries 30 in Stadtamhof, visible and reachable from the public street; named for the former Zum Goldenen Loewen inn on the same plot.",
+      "transport": "Across the Steinerne Bruecke (Stone Bridge) from the Altstadt, then about a 5 minute walk along Am Gries.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "how_to_recognise": "The single horse chestnut outside Am Gries 30, on the plot of the former Zum Goldenen Loewen inn, with the remains of a second tree beside it. The protected group at number 18 is a cluster of several trunks."
+    },
+    {
+      "id": "rgb_004",
+      "name": "The Plane of the Old Corn Market",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Alter Kornmarkt, Regensburg (south side, near the Alte Kapelle bell tower)",
+        "latitude": 49.0188,
+        "longitude": 12.1004,
+        "neighbourhood": "Altstadt (old town, UNESCO World Heritage site)"
+      },
+      "story": "This plane grows on a market place the Romans laid out around 175 AD. The Alter Kornmarkt is a nearly square open space in the heart of the UNESCO-listed old town, ringed by the Herzogshof, the Roemerturm and the Carmelite monastery, and it has stayed trading ground for most of the time since: a vegetable market still takes it over on Saturday mornings.\n\nThe tree is number 34 on the city's list of natural monuments, entered simply as a plane at the Alter Kornmarkt. That entry gives no house number and no coordinate. The square's own description mentions a row of trees along the south side that partly hides the freestanding bell tower of the Alte Kapelle, which is the likeliest place to start looking, though no source actually places this tree in that row. The pin here marks the square rather than a trunk, so expect to spend a minute working out which crown you have come for.\n\nA photograph taken on 11 August 2024 shows it standing. No age has ever been recorded for it, which is ordinary for a tree the city protects by street name and nothing else. If you can date it, or point at the exact trunk, tell us.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Regensburg (Naturdenkmal Nr. 34, \"Platane\", \"Am Alten Kornmarkt\", designated under the city Naturdenkmal-SicherungsVO)",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Platane_am_Alten_Kornmarkt_(Regensburg).jpg (dated photograph, taken 11 August 2024, confirming the tree currently stands)"
+      ],
+      "access": "Free. Standing on or beside the Alter Kornmarkt, a public square in the historic centre used for a weekly Saturday vegetable market; open at all times.",
+      "transport": "In the Altstadt, about a 10 minute walk from Regensburg Hauptbahnhof, next to the Roman-era Roemerturm and Herzogshof.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "rgb_005",
+      "name": "The Plane at Singrün Corner",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Corner of Prebrunnstrasse and Am Singruen, Regensburg",
+        "latitude": 49.0218,
+        "longitude": 12.0835,
+        "neighbourhood": "Prebrunn, Altstadt"
+      },
+      "story": "The entry that protects this tree gives no address, only a corner. Number 43 on Regensburg's list of natural monuments is a plane at the corner of Prebrunnstrasse and Am Singrün, and that is the whole of the location anyone has published: no house number, no coordinate, and no GPS tag on the photograph of it either. The pin here marks the corner, which will get you to the right junction and not to the exact trunk.\n\nLondon planes went into European streets by the thousand for their tolerance of compacted soil and city air, and almost all of them stay anonymous. This one is on the protected list, in Prebrunn on the western edge of the old town, a five minute walk from the plane in the Herzogspark. That proximity makes the two of them a single stop rather than two, which is worth knowing before you plan the afternoon.\n\nThe most recent photograph of it was taken on 15 September 2024, which makes this the best confirmed of the five trees here: the others were last recorded in 2022 or 2024. Nobody has dated it, and nobody has put a tape around it. If you can do either, tell us.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Regensburg (Naturdenkmal Nr. 43, \"Platane am Singruen\", \"Ecke Prebrunnstrasse - Am Singruen\", city Naturdenkmal-SicherungsVO)",
+        "https://commons.wikimedia.org/wiki/File:ND_Platane_am_Singr%C3%BCn_(Regensburg).jpg (dated photograph, taken 15 September 2024, confirming the tree currently stands)"
+      ],
+      "access": "Free. Standing at a public street corner in the Prebrunn district, visible and reachable at any time.",
+      "transport": "About a 10-15 minute walk from Regensburg Hauptbahnhof; a 5 minute walk from the Herzogspark (rgb_001), on the same side of the old town.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

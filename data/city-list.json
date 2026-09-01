@@ -182,7 +182,7 @@
    "status": "published",
    "note": "Hidde, 2026-08-02: he is travelling there, so this one is worth doing properly and soon. Search order per Step 1: name the shrine and temple precincts first (Kushida-jinja and its ginkgo, Sumiyoshi-jinja, Shofuku-ji, Tochoji, Ohori Park, Maizuru Park and the castle ruins, Rakusuien, Atago-jinja), then the national Natural Monument register, then the generic sweep. Note the CURATION.md entry closing Fukuoka is about the REGISTER LAYER only (no openly licensed prefectural dataset), which says nothing about whether the city has remarkable trees to curate.",
    "demand_views_90d": 77485,
-   "trees": 13
+   "trees": 15
   },
   {
    "city": "Valencia",
@@ -285,7 +285,7 @@
    "country": "United Kingdom",
    "slug": "edinburgh",
    "status": "published",
-   "trees": 15
+   "trees": 16
   },
   {
    "city": "Sintra",
@@ -337,7 +337,7 @@
    "country": "United States",
    "slug": "boston",
    "status": "published",
-   "trees": 10
+   "trees": 11
   },
   {
    "city": "The Hague",
@@ -393,7 +393,7 @@
    "slug": "tokyo",
    "status": "published",
    "demand_views_90d": 394702,
-   "trees": 10
+   "trees": 15
   },
   {
    "city": "Montreal",
@@ -659,14 +659,6 @@
    "trees": 5
   },
   {
-   "city": "Funchal",
-   "country": "Portugal",
-   "slug": "funchal",
-   "status": "pending",
-   "demand_views_90d": 174351,
-   "trees": 0
-  },
-  {
    "city": "Zagreb",
    "country": "Croatia",
    "slug": "zagreb",
@@ -712,6 +704,14 @@
    "slug": "rio-de-janeiro",
    "status": "pending",
    "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Funchal",
+   "country": "Portugal",
+   "slug": "funchal",
+   "status": "pending",
+   "demand_views_90d": 174351,
    "trees": 0
   },
   {
@@ -867,7 +867,7 @@
    "slug": "osaka",
    "status": "published",
    "demand_views_90d": 163112,
-   "trees": 4
+   "trees": 5
   },
   {
    "city": "Lucca",
@@ -1000,14 +1000,6 @@
    "trees": 12
   },
   {
-   "city": "Lima",
-   "country": "Peru",
-   "slug": "lima",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Bari",
    "country": "Italy",
    "slug": "bari",
@@ -1019,6 +1011,14 @@
    "country": "Germany",
    "slug": "dresden",
    "status": "published",
+   "trees": 5
+  },
+  {
+   "city": "Lima",
+   "country": "Peru",
+   "slug": "lima",
+   "status": "published",
+   "demand_views_90d": null,
    "trees": 5
   },
   {
@@ -1398,6 +1398,14 @@
    "trees": 0
   },
   {
+   "city": "Athens, Georgia",
+   "country": "United States",
+   "slug": "athens-georgia",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
+  },
+  {
    "city": "Baarn",
    "country": "Netherlands",
    "slug": "baarn",
@@ -1405,6 +1413,14 @@
    "note": "Off-focus, opened 2026-08-08 on Hidde's explicit call (his hometown). Cantonspark ex-botanical garden + Groeneveld + the Pekingtuin oak he pointed at himself.",
    "demand_views_90d": 2502,
    "trees": 5
+  },
+  {
+   "city": "Brunswick, Georgia",
+   "country": "United States",
+   "slug": "brunswick-georgia",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
   },
   {
    "city": "Bucaco",
@@ -1422,6 +1438,38 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Chadds Ford",
+   "country": "United States",
+   "slug": "chadds-ford",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
+  },
+  {
+   "city": "Chapel Hill, North Carolina",
+   "country": "United States",
+   "slug": "chapel-hill-north-carolina",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
+  },
+  {
+   "city": "Columbia, Missouri",
+   "country": "United States",
+   "slug": "columbia-missouri",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
+  },
+  {
+   "city": "Coos Bay",
+   "country": "United States",
+   "slug": "coos-bay",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
   },
   {
    "city": "Delhi",
@@ -1452,6 +1500,30 @@
    "slug": "emmen",
    "status": "published",
    "trees": 7
+  },
+  {
+   "city": "Fish Lake, Utah",
+   "country": "United States",
+   "slug": "fish-lake-utah",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
+  },
+  {
+   "city": "Guerneville",
+   "country": "United States",
+   "slug": "guerneville",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 2
+  },
+  {
+   "city": "Hampton, Virginia",
+   "country": "United States",
+   "slug": "hampton-virginia",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
   },
   {
    "city": "Hanoi",
@@ -1494,6 +1566,22 @@
    "note": "Opened 2026-08-31 from Kagoshima City's own preserved-tree register (38 designated trees, species, girth at 1.5 m, height and estimated age, updated 2025-11-25) cross-checked against the Hitozato Kyoboku giant-tree database. Includes two day trips labelled as such: the Akou of Yuno on Sakurajima and the Great Camphor of Kamo in Aira, the largest tree in Japan."
   },
   {
+   "city": "Lebec",
+   "country": "United States",
+   "slug": "lebec",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
+  },
+  {
+   "city": "Logan, Ohio",
+   "country": "United States",
+   "slug": "logan-ohio",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
+  },
+  {
    "city": "Manila",
    "country": "Philippines",
    "slug": "manila",
@@ -1508,6 +1596,14 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Martinsville, New Jersey",
+   "country": "United States",
+   "slug": "martinsville-new-jersey",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
   },
   {
    "city": "Miyazaki",
@@ -1532,102 +1628,6 @@
    "status": "published",
    "demand_views_90d": 7556,
    "trees": 10
-  },
-  {
-   "city": "Athens, Georgia",
-   "country": "United States",
-   "slug": "athens-georgia",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Brunswick, Georgia",
-   "country": "United States",
-   "slug": "brunswick-georgia",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Chadds Ford",
-   "country": "United States",
-   "slug": "chadds-ford",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Chapel Hill, North Carolina",
-   "country": "United States",
-   "slug": "chapel-hill-north-carolina",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Columbia, Missouri",
-   "country": "United States",
-   "slug": "columbia-missouri",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Coos Bay",
-   "country": "United States",
-   "slug": "coos-bay",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Fish Lake, Utah",
-   "country": "United States",
-   "slug": "fish-lake-utah",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Guerneville",
-   "country": "United States",
-   "slug": "guerneville",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 2
-  },
-  {
-   "city": "Hampton, Virginia",
-   "country": "United States",
-   "slug": "hampton-virginia",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Lebec",
-   "country": "United States",
-   "slug": "lebec",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Logan, Ohio",
-   "country": "United States",
-   "slug": "logan-ohio",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
-  },
-  {
-   "city": "Martinsville, New Jersey",
-   "country": "United States",
-   "slug": "martinsville-new-jersey",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
   },
   {
    "city": "Oklahoma City",
