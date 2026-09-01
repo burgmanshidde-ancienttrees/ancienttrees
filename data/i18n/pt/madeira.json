@@ -1,0 +1,80 @@
+{
+ "_note": "Portuguese overlay for Madeira, hand-written 2026-09-01. European Portuguese, for readers in Portugal. Rendered from data/cities/madeira.json, which stays the source of truth: every fact, age, hedge and access note here already exists there in verified English, and nothing was researched or sharpened in translation. Four of the six trees carry no recorded age in the island's register and the Portuguese says so as plainly as the English does. The search terms are not translations: Madeira's own category is 'arvores monumentais' (IFCN/ASMAC register), so the title, meta and question fields carry that rather than a literal rendering of 'ancient trees'. Distances are kept exact because a reader in Lisbon knows how far Fanal is from Funchal. Text only: every coordinate, photo, licence and walk stays in data/cities/madeira.json.",
+ "city": "Madeira",
+ "title": "Árvores monumentais da Madeira: as 6 mais notáveis",
+ "meta_description": "As seis árvores notáveis da Madeira: o til em forma de bruxa na laurissilva do Fanal, um núcleo de dragoeiros e quatro gigantes que ninguém datou.",
+ "intro": "Quatro das seis árvores da Madeira ficam a poucos quilómetros do centro do Funchal, o que dá uma tarde a sério: um jardim botânico, um parque público, um jardim no Monte e um núcleo de dragoeiros nas Neves. As outras duas são de carro. As Queimadas, acima de Santana, na costa norte, ficam a cerca de uma hora, e o núcleo de tis do Fanal, no planalto do Paul da Serra, a hora e um quarto de estrada de montanha no sentido contrário. Quatro das seis não têm idade registada nenhuma.",
+ "question_title": "Qual é a árvore mais antiga da Madeira? (Árvore da Bruxa)",
+ "question_meta": "A árvore mais antiga da Madeira é a Árvore da Bruxa, no núcleo de tis do Fanal, com centenas de anos. Os gigantes do Funchal não têm idade registada.",
+ "question_answer": "A árvore mais antiga desta lista é a Árvore da Bruxa, no Fanal, um til (Ocotea foetens) dentro do núcleo protegido do planalto do Paul da Serra, acima do Porto Moniz. As estimativas vão de várias centenas de anos a 500 ou 600, e o próprio registo da Madeira data o núcleo à volta dela apenas como centenas de anos, descrevendo uma mancha referenciada como anterior à chegada dos portugueses à ilha, em 1419. É a resposta mais vaga que há e é a melhor disponível, porque as quatro árvores monumentais do Funchal e arredores não têm idade registada nenhuma.",
+ "question_context": "A questão da idade dá aqui contra uma parede lisa: o próprio registo de árvores monumentais da ilha quase nunca traz idades. Quatro das seis árvores desta lista, o ginkgo do Jardim Botânico, o cipreste da Quinta Magnólia, a faia-vermelha do Monte e a pseudotsuga das Queimadas, estão inscritas só pelo tamanho, com sem referência na coluna da idade. O levantamento registou altura e perímetro, não anos. Sobram os dois povoamentos nativos. Os dragoeiros das Neves são descritos como centenários, mais de um século, e nada mais preciso do que isso. O núcleo de tis do Fanal é datado apenas como centenas de anos e é referenciado como anterior à chegada dos portugueses a uma ilha desabitada, em 1419; a árvore que os visitantes ali conhecem por Árvore da Bruxa é posta em 500 ou 600 anos pelas fontes de turismo, sem nada publicado por trás desse número. Portanto a ordenação honesta é Fanal primeiro, Neves em segundo, e quatro gigantes sem data a seguir. A pseudotsuga é a armadilha: é a árvore mais alta da lista, com 39 metros, e as pseudotsugas crescem depressa, por isso a altura não diz nada sobre a idade dela.",
+ "faq": [
+  {
+   "q": "Qual é a árvore mais antiga da Madeira?",
+   "a": "Das árvores desta lista, a Árvore da Bruxa, no núcleo de tis do Fanal, no planalto do Paul da Serra acima do Porto Moniz. O registo data o núcleo apenas como centenas de anos e refere-o como anterior ao povoamento da ilha, em 1419; as fontes de turismo põem a árvore em 500 ou 600 anos sem publicarem qualquer cálculo."
+  },
+  {
+   "q": "Porque é que tantas árvores monumentais da Madeira não têm idade?",
+   "a": "Porque o registo da ilha inscreve-as pelo tamanho. Cada entrada regista altura, perímetro do tronco e estado, e a coluna da idade do ginkgo, do cipreste da Quinta Magnólia, da faia-vermelha do Monte e da pseudotsuga das Queimadas diz apenas sem referência. Ninguém lhes tirou amostras. Se tiver um registo de plantação de qualquer uma das quatro, queremos vê-lo."
+  },
+  {
+   "q": "É preciso carro, e a que distância ficam umas das outras?",
+   "a": "Para quatro delas, não. O jardim botânico, a Quinta Magnólia, os Jardins do Imperador no Monte e os dragoeiros das Neves ficam todos a poucos quilómetros do centro do Funchal, alcançáveis de autocarro ou de teleférico. As outras duas pedem carro: as Queimadas, em Santana, ficam a cerca de uma hora, e o Fanal a hora e um quarto de estrada de montanha pelo planalto do Paul da Serra, no sentido contrário."
+  },
+  {
+   "q": "A Árvore da Bruxa do Fanal está sinalizada?",
+   "a": "Não. Não há placa, nem seta, nem caminho marcado até ela, e os visitantes relatam com regularidade andar à procura pelo núcleo antes de darem com ela. O nosso ponto marca a parte do núcleo onde ela está e não o tronco. O nevoeiro da manhã é quando o Fanal fica como está nas fotografias."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Portuguese common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Hedges carried over exactly where the English source hedges, including the four undated register entries.",
+ "trees": {
+  "mdr_001": {
+   "name": "O Ginkgo do Jardim Botânico",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "não documentada",
+   "access": "Entrada paga, 7,50 euros por adulto, aberto todos os dias das 09:00 às 18:00 (última entrada 30 min antes do fecho)",
+   "transport": "Autocarros 29, 30, 31 ou 31A do centro do Funchal (cerca de 10 minutos), ou o Teleférico do Jardim Botânico a partir do Monte. Para esta não é preciso carro.",
+   "story": "O registo oficial das árvores monumentais da Madeira inscreve este ginkgo por uma única razão, o tamanho, e onde devia estar a idade lê-se sem referência. Ninguém o datou. O que os técnicos mediram foram 18 metros de altura e um tronco de 1,62 metros de perímetro, um exemplar sério de uma árvore que não tem nada que se dar bem nesta latitude e dá-se à mesma.\n\nO Ginkgo biloba é a última espécie que resta de uma linhagem inteira, sem parente vivo próximo em lado nenhum, e só chegou aos jardins europeus no século XVIII. Este cresce no Jardim Botânico da Madeira, na encosta acima do Funchal, entre cerca de 3.000 espécies trazidas de todos os continentes a que o jardim conseguiu chegar, a dez minutos da cidade de autocarro ou a um teleférico de descida do Monte.\n\nO jardim abriu ao público em 1960, o que data o jardim e não a árvore. Ninguém registou quando este ginkgo foi plantado. Se tiver um registo de plantação, ou um perímetro medido mais recentemente do que o levantamento, mande-nos.\n\nE depois, em novembro, a copa fica de um dourado de manteiga e larga tudo em poucos dias, que é a semana para estar por baixo dela."
+  },
+  "mdr_002": {
+   "name": "O Cipreste da Quinta Magnólia",
+   "species": "Cipreste-do-buçaco (Cupressus lusitanica)",
+   "age_estimate": "não documentada",
+   "access": "Entrada gratuita, aberto todos os dias das 08:00 às 20:00",
+   "transport": "Parque no centro do Funchal, a pé a partir da zona do Lido ou uma curta viagem de autocarro ou táxi do centro da cidade. Para esta não é preciso carro.",
+   "story": "Os madeirenses chamam a esta espécie cedro-das-barracas, porque tradicionalmente se cortava a guia jovem para a copa engrossar para fora e fazer um telhado de sombra. A esta ninguém fez isso. Foi antes para cima: 29,5 metros de altura sobre um tronco de 6,06 metros de perímetro, mais de um metro de diâmetro maciço, coisa que o registo da ilha aponta como excepcional num Cupressus lusitanica e suficiente para fazer dele um dos maiores da espécie na Madeira.\n\nA espécie não é portuguesa, diga o nome o que disser. Vem do México e da América Central, e ficou com o nome latino por causa de árvores que já cresciam em Portugal e não de nada perto da origem real.\n\nA idade não está registada. O registo dá-lhe o estado bom e nota que está sob monitorização técnica permanente, que é o que a ilha faz às árvores que não tenciona perder. Ninguém o datou, e se souber quando foi plantado, diga-nos.\n\nEstá na Quinta Magnólia, um parque público de uns 40.000 metros quadrados no meio do Funchal, gratuito e aberto das oito da manhã às oito da noite, o que faz desta a árvore mais fácil de ir ver em toda a lista."
+  },
+  "mdr_003": {
+   "name": "A Faia-Vermelha dos Jardins do Imperador",
+   "species": "Faia-vermelha (Fagus sylvatica var. purpurea)",
+   "age_estimate": "não documentada",
+   "access": "Entrada paga, cerca de 1 euro (muitas vezes gratuita ao domingo), aberto de segunda a sexta das 09:30 às 17:30, domingos e feriados das 10:30 às 17:30",
+   "transport": "Freguesia do Monte, alcançável pelo teleférico do Monte a partir do Funchal mais uma curta caminhada, ou de autocarro na direcção do Monte. Para esta não é preciso carro.",
+   "story": "O último imperador da Áustria morreu neste jardim. Carlos I, deposto em 1918 e exilado na Madeira, passou os últimos meses no que era então a Quinta do Monte e ali morreu em 1922, e é por isso que a propriedade se chama hoje Jardins do Imperador.\n\nA árvore que a domina é uma faia-vermelha, 36 metros de altura sobre um tronco de 3,52 metros de perímetro. É uma coisa estranha de encontrar aqui. A Fagus sylvatica é uma árvore de floresta do norte da Europa e isto é uma ilha subtropical no Atlântico; o que a torna possível é o próprio Monte, alto na encosta acima do Funchal, na faixa de nuvem que os ventos alísios empurram contra a montanha. A freguesia é permanentemente húmida e vários graus mais fresca do que a marginal, e a faia comporta-se em conformidade.\n\nO registo das árvores monumentais da Madeira inscreve-a pelo tamanho, dá-lhe o estado bom e, na idade, escreve sem referência. Ninguém a datou, e a história da própria quinta não resolve a questão. Se souber quando esta faia foi plantada, diga-nos.\n\nA entrada custa cerca de um euro, muitas vezes nada ao domingo, e o teleférico do Monte pára a curta distância a pé."
+  },
+  "mdr_004": {
+   "name": "A Pseudotsuga das Queimadas",
+   "species": "Pseudotsuga (Pseudotsuga menziesii)",
+   "age_estimate": "não documentada",
+   "access": "Gratuito, parque florestal público",
+   "transport": "De carro a partir do Funchal via Santana, cerca de 1 hora a 1 hora e 15 minutos de estrada; não há transporte público prático até ao parque, por isso o carro é a maneira realista.",
+   "story": "Uma pseudotsuga não tem nada que estar numa floresta de louros, e esta tem 39 metros. É a árvore mais alta desta lista, uma conífera norte-americana plantada dentro do Parque Florestal das Queimadas, que fica na laurissilva que a UNESCO classificou como Património Mundial: o maior resto sobrevivente da floresta de louros que em tempos cobriu boa parte do sul da Europa. O registo da Madeira inscreve-a pelo tamanho, com 3,61 metros de perímetro, estado bom e idade sem referência.\n\nVale a pena ser directo sobre o que ela é. Nada aqui é nativo, e está nesta página por ser um exemplar genuinamente grande num sítio onde as pessoas já vão, e não por pertencer à floresta que a rodeia.\n\nEsse sítio é o ponto de partida do PR9, a Levada do Caldeirão Verde, uma das caminhadas que trazem as pessoas à Madeira, e o registo chama às Queimadas um dos locais mais visitados da ilha. O parque é gratuito e aberto, com o caminho da levada a fugir para dentro da laurissilva.\n\nNinguém datou a pseudotsuga, e há uma razão para não adivinhar pela altura: as pseudotsugas crescem depressa, por isso uma grande não tem de ser velha. Se encontrar um registo de plantação, mande-o."
+  },
+  "mdr_005": {
+   "name": "A Árvore da Bruxa do Fanal",
+   "species": "Til (Ocotea foetens)",
+   "age_estimate": "várias centenas de anos",
+   "access": "Gratuito, terreno público dentro do Parque Natural da Madeira, classificado como muito fácil pelo registo; uma curta caminhada a partir do parque de estacionamento do Fanal, mas não há no local qualquer sinalização que nomeie ou aponte para esta árvore em concreto",
+   "transport": "Só de carro; cerca de 1 hora a 1 hora e 15 minutos a partir do Funchal pela ER209, e bem mais de uma hora à volta, porque o Paul da Serra é condução de planalto de montanha e não um salto suburbano.",
+   "story": "O núcleo a que estas árvores pertencem já estava de pé quando os portugueses encontraram a Madeira desabitada, em 1419. O Fanal é um núcleo protegido de 20 hectares de til, Ocotea foetens, no planalto do Paul da Serra, dentro da laurissilva classificada pela UNESCO, e o registo da ilha data-o apenas como centenas de anos, referindo uma mancha anterior à colonização da ilha. Os oito troncos que os técnicos mediram vão de 0,68 a 2,28 metros de perímetro.\n\nUma árvore lá dentro tornou-se a que toda a gente fotografa. As fontes de viagens e de fotografia chamam-lhe Árvore da Bruxa, pelo tronco que se torce com força e pelos ramos que se leem como braços estendidos debaixo de um casaco de musgo. A literatura turística põe-lhe 500 ou 600 anos; o registo não passa de centenas, e nenhum dos números assenta numa medição, por isso esta página não os afina.\n\nNo terreno nada a identifica. Não há placa, nem seta, nem caminho até ao tronco, e os visitantes relatam com regularidade andar à procura pelo núcleo antes de darem com ela, e é por isso que o nosso ponto marca a área e não a árvore. Venha com o nevoeiro da manhã, se conseguir. É quando o Fanal fica como está nas fotografias, e quando os tis deixam de se ler como árvores."
+  },
+  "mdr_006": {
+   "name": "O Núcleo dos Dragoeiros das Neves",
+   "species": "Dragoeiro (Dracaena draco)",
+   "age_estimate": "mais de um século",
+   "access": "Entrada gratuita, jardim público com centro de informação aberto de segunda a sexta das 09:00 às 12:30 e das 14:00 às 17:30; visitas guiadas mediante contacto com o centro",
+   "transport": "A cerca de 5 km do centro do Funchal por estrada; não há transporte público directo assinalado, por isso o táxi ou o carro são a maneira realista.",
+   "story": "O Governo Regional da Madeira comprou este terreno por uma razão: as árvores que estavam nele. O Núcleo dos Dragoeiros das Neves é um pequeno jardim feito de propósito em São Gonçalo, a cinco quilómetros do centro do Funchal, desenhado à volta daquilo a que o registo da ilha chama um notável grupo de dragoeiros centenários. Tem centro de informação, horário, telefone e visitas guiadas mediante pedido, tratamento notável para um jardim que se atravessa num minuto, e que diz bem o pouco que resta da população original de dragoeiros da Madeira.\n\nO Dracaena draco é nativo daqui, das Canárias e de quase mais lado nenhum, e cresce devagar o suficiente para a palavra centenários do registo significar alguma coisa: cerca de dez anos para chegar aos dois ou três metros. O tronco mais grosso do grupo mede 4,77 metros de perímetro e o conjunto chega aos 13 metros. O registo não dá idade para além de centenário, e esta página não inventa nenhuma.\n\nCorte a casca e a seiva corre vermelha. É o sangue-de-drago, importado para a Europa durante séculos como tinta, verniz e remédio, e as árvores foram sangradas com força para o obter. A entrada é gratuita, o centro de informação tem horário de dias úteis, e a visita inteira leva vinte minutos."
+  }
+ }
+}

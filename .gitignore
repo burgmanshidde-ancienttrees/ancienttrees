@@ -6,3 +6,11 @@ site/dist/
 _scratch_*
 press-trees.csv
 out/
+
+# Translation overlays being written. Contract J is enforced by the build, so a
+# half-finished overlay in HEAD takes the whole deploy down: that happened on
+# 2026-09-01 when a concurrent session's commit swept up de/munich.json at 7 of
+# 45 trees. A pass now writes <city>.json.partial and renames it as its last
+# action, and this line makes it impossible for anyone else to commit the
+# in-between state, whatever they type at git add.
+data/i18n/*/*.json.partial
