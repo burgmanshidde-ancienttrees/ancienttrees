@@ -3,7 +3,7 @@
     {
       "candidate": "Canforeira (Quinta Josefina), Wikidata Q98822606, inventory PDM-F-AM-218",
       "species": "Camphor Tree (Cinnamomum camphora)",
-      "reason": "Officially designated Funchal arvore monumental at 32.65774,-16.92848. 'Quinta Josefina' no longer reads as a walled private estate: it is now the name of an urban neighbourhood (Bairro da Quinta Josefina) in Santo Antonio parish, with its own street (Rua da Quinta Josefina) carrying a public infant school and primary school, and the Camara Municipal has run urban-requalification projects there. This raises real doubt about whether the candidate is on genuinely private grounds at all, but this pass could not pin down whether the tree stands on a public street/square within the bairro, on school grounds, or inside a remaining private plot. Held as a lead pending that specific access check, same treatment as the already-held hospital rubber tree lead."
+      "reason": "Officially designated Funchal arvore monumental at 32.65774,-16.92848, code 218 in the Funchal PDM's Quadro 5 (Relatorio de Fundamentacao, Vol II, March 2018). This pass found the resolving fact: Quadro 5 lists code 218 under the location \"Escola Basica de 2 e 3 Ciclo de Santo Antonio\", a public basic school, not a private quinta or an ambiguous street tree as previously guessed. Per hard rule 10's school exception, a school-grounds tree ships only with real evidence the grounds are genuinely open (a public path crossing them, weekend opening, etc); this pass found no such evidence for this specific school. Absent that evidence it stays a lead rather than being published or moved to blocked, in case a later pass finds the school opens its yard or the tree actually stands on the public street frontage rather than inside the grounds."
     },
     {
       "candidate": "Palmeira-de-leque (Caminho das Courelas, 31), Wikidata Q98822491, inventory PDM-F-AM-215",
@@ -13,12 +13,17 @@
     {
       "candidate": "Nucleo de Tis - Montado do Sabugal (til grove)",
       "species": "Til (Ocotea foetens)",
-      "reason": "Second officially designated til nucleus (ASMAC n.78, island code SFOF02), same species and 'predates 1419' framing as the Fanal nucleus, height 37.0m, max perimeter 13.80m across the grove, 'Medio' (medium) accessibility on a forest path linking the Faja da Nogueira power station to the Levada da Serra do Faial in Santana/Faial parish, coordinates 32.744917,-16.907861. Unlike Fanal, no individually named or independently identified specimen (no 'witch tree' equivalent) was found this pass, so it fails the collectible-point test as researched. Worth a future pass if a named individual specimen or better access description turns up."
+      "reason": "Second officially designated til nucleus (ASMAC n.78, island code SFOF02), same species and 'predates 1419' framing as the Fanal nucleus, height 37.0m, max perimeter 13.80m across the grove, 'Medio' (medium) accessibility on a forest path linking the Faja da Nogueira power station to the Levada da Serra do Faial in Santana/Faial parish, coordinates 32.744917,-16.907861. Unlike Fanal, no individually named or independently identified specimen (no 'witch tree' equivalent) was found this pass, so it fails the collectible-point test as researched. Worth a future pass if a named individual specimen or better access description turns up. Follow-up check (this pass, 2026-09-01): searched specifically for an individually named specimen within this grove, the way Fanal's 'Witch Tree' was singled out of its own nucleus. Found none: Madeira Island Magazine's own 'oldest tree in Madeira' piece describes the whole grove at Chao do Nateiro as predating 1419, exactly like the register, but does not name or distinguish one trunk from the others. Stays a lead as a grove, not a collectible point."
     },
     {
       "candidate": "Hospital garden rubber tree (Ficus elastica), Hospital Dr. Joao de Almada, Quinta de Santana, Monte",
       "species": "Rubber tree (Ficus elastica)",
       "reason": "Register entry ASMAC n.89 (island code FMFE01), height 27.0m, perimeter 7.23m, historically tied to the former Quinta de Santana tuberculosis sanatorium (opened 1940). The site is now an operating public hospital (Hospital Dr. Joao de Almada / SESARAM). Could not confirm this pass whether the grounds are genuinely open to casual visitors beyond patients, visitors and staff; sending readers onto working hospital grounds needs that confirmation first. Held as a lead pending an access check, not blocked outright, since public hospital grounds sometimes have an accessible forecourt or garden."
+    },
+    {
+      "candidate": "Nucleo dos Dragoeiros (Neves), Wikidata Q109303182, inventory PDM-F-AM code (Sao Goncalo)",
+      "species": "Dragon Tree (Dracaena draco)",
+      "reason": "At 32.648809,-16.869793, Sao Goncalo. This is the same designated dragon-tree grove already published as mdr_006, 'The Dragon Tree Grove of Neves' (Jardim do Nucleo dos Dragoeiros das Neves, 32.64875,-16.869667), roughly 30 metres away, same name (Nucleo dos Dragoeiros), same species and same parish. Recorded here as a duplicate rather than a new entry, per the brief's instruction to log rather than re-ship anything within 30 metres of an existing published tree."
     }
   ],
   "blocked": [

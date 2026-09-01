@@ -1,103 +1,103 @@
 [
-  {
-    "id": "mdr_007",
-    "name": "The Araucaria of Quinta Vigia",
-    "species": "Cook Pine (Araucaria columnaris)",
-    "age_estimate": "",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 350,
-    "location": {
-      "address": "Quinta Vigia, Avenida do Infante, Se, Funchal",
-      "latitude": 32.64518,
-      "longitude": -16.91563,
-      "neighbourhood": "Se, Funchal"
-    },
-    "verified_sources": [
-      "https://www.wikidata.org/wiki/Q98858620",
-      "https://en.wikipedia.org/wiki/Quinta_Vigia",
-      "https://visit.funchal.pt/item/quinta-vigia-garden/?lang=en",
-      "https://ifcn.madeira.gov.pt/pt/quintas-e-jardins/quintas/quinta-vigia.html"
-    ],
-    "access": "Paid entry, gardens of Quinta Vigia open Monday to Friday 8:30am-5:30pm (closed weekends, public holidays, and whenever the official residence has a function); IFCN Madeira lists it among its managed public quintas",
-    "transport": "Central Funchal, short walk from the marina/Avenida do Mar",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Quinta Vigia is the official residence and office of the President of the Regional Government of Madeira (since 1984), but its gardens are a separate public-facing amenity, open weekdays with paid entry (confirmed by Wikipedia, visit.funchal.pt and IFCN Madeira, which lists Quinta Vigia among the quintas/gardens it manages alongside Quinta das Cruzes and Quinta do Poco). The tree carries Funchal's official 'arvore monumental' designation (Wikidata Q98858620, inventory PDM-F-AM-292), sourced to the Funchal Plano Diretor Municipal revision report (revisaopdm.cm-funchal.pt, Relatorio de Fundamentacao PDF); that PDF was not directly fetched (redirects, likely large, skipped under the time-box), so this rests on Wikidata's citation of it plus the corroboration below. Species and measurements (girth 3.50m at 1.30m, height 41.20m, measured 2018-02-09) come from monumentaltrees.com's Quinta Vigia entry. monumentaltrees.com itself 403s automated fetches (curl and WebFetch both, consistent with the known blocklist pattern), so the page could not be viewed directly this pass; the figures are cross-checked twice because the exact same height (41.20m) and measurement date (2018-02-09) are independently recorded as a structured, referenced Wikidata claim (P2048) citing that same monumentaltrees.com URL, agreeing exactly across two separate retrieval paths, which is stronger than a single search-summary reading (the Cyprus lesson is about not trusting an AI summary alone for figures). Location is described as 'the NW corner of the gardens', labelled on site per monumentaltrees.com; the Wikidata coordinate (7-decimal precision) is treated as a tree-level GPS point tied to that same survey rather than a park centroid. No age recorded anywhere; age_estimate left empty per the age doctrine, page should ask the reader. Note for the writer: two other araucaria trees in Funchal carry the same 'arvore monumental' designation (Quinta das Preces, and Quinta do Palheiro Ferreiro's is a different genus, Metrosideros), so do not let species bleed across quintas."
+ {
+  "id": "mdr_007",
+  "name": "The Araucaria of Quinta Vigia",
+  "species": "Araucaria (Araucaria sp.)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Quinta Vigia, Avenida do Infante 1, Se, Funchal",
+   "latitude": 32.645183,
+   "longitude": -16.915626,
+   "neighbourhood": "Se, Funchal"
   },
-  {
-    "id": "mdr_008",
-    "name": "The Metrosidero of Palheiro Gardens",
-    "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
-    "age_estimate": "",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 763,
-    "location": {
-      "address": "Palheiro Gardens, Caminho do Quinta do Palheiro 32, Sao Goncalo, Funchal",
-      "latitude": 32.6593,
-      "longitude": -16.86698,
-      "neighbourhood": "Sao Goncalo, Funchal"
-    },
-    "verified_sources": [
-      "https://www.wikidata.org/wiki/Q98815233",
-      "https://valconmac2.eu/asmacs/asmac-088-metrosidero/",
-      "https://palheirogardens.com/en/"
-    ],
-    "access": "Paid entry, Palheiro Gardens open daily 9am-5pm (closed 1 January and 25 December), adult ticket around EUR 11 per tripadvisor/trip.com listings",
-    "transport": "Sao Goncalo, eastern Funchal; reachable by local bus or taxi/car, roughly 15-20 minutes from the city centre",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Quinta do Palheiro Ferreiro (trading as Palheiro Gardens) is a well-known, long-established paid botanical garden, open daily; this is a straightforward hard-rule-10 pass, no access concern. Official designation: Funchal 'arvore monumental', Wikidata Q98815233, inventory PDM-F-AM-192, referenced to the same Funchal PDM revision report as mdr_007 (not independently fetched, large PDF). Second, independent source: valconmac2.eu's 'ASMAC-088: Metrosidero' page, which reads as Madeira's own monumental-tree register documentation (the ASMAC numbering matches entries already used and blocked in data/leads/madeira.json from an earlier pass, e.g. ASMAC n.80/83/84), gives species Metrosideros excelsa, height 40.5m, and EIGHT separate trunk/stem girth measurements (4.47, 7.63, 3.89, 3.25, 2.25, 2.47, 2.72, 2.16 metres) rather than one trunk figure, i.e. this is a multi-stemmed/spreading specimen, not a single-trunk giant; girth_cm above records only the largest single stem (7.63m) and the writer should say plainly it is a multi-trunked tree rather than implying one 7.63m trunk. Location within the 30+ acre garden is described only as 'perpendicular to the facade of the ancient House of the Counts, on a lawn among specimens of varied origin', which is a description rather than a GPS fix, and Wikidata's own coordinate precision (5 decimal places) is coarser than mdr_007's, consistent with a garden-area point rather than a surveyed tree point; location_precision is therefore approximate. No age or planting date found anywhere (the register page itself says 'sin referencia'/no reference); age_estimate left empty for the reader to help with. Garden is famous overall for having, per the register source, the highest density of monumental trees in the whole Madeira region, so there may be other candidates worth a future pass here, but only this one was in the Wikidata batch."
+  "verified_sources": [
+   "https://revisaopdm.funchal.pt/images/PDF_SITE/versao_final/Relatorio-de-Fundamentacao_posparecerSRARN_vf.pdf",
+   "https://ifcn.madeira.gov.pt/quintas-e-jardins/quintas/quinta-vigia.html",
+   "https://visitmadeira.com/en/what-to-do/culture-passionates/gardens/quinta-vigia/"
+  ],
+  "access": "Free entry, government grounds (official residence of the President of the Regional Government of Madeira), open to the public Monday to Friday, roughly 08:00/08:30 to 17:30/18:00 depending on source; closed weekends and holidays. No appointment needed to walk the gardens.",
+  "transport": "Avenida do Infante, central Funchal seafront; walkable (10-15 min) from Praca do Municipio, or a short bus/taxi ride. No car needed.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Officially designated as code 292 (\"Araucaria\") under Quinta Vigia in Quadro 5 of the Funchal PDM Relatorio de Fundamentacao (Volume II, March 2018), which itself cites the regional government publication \"Arvores Monumentais e Emblematicas\" (Direcao Regional de Florestas, 2008) as the source of the whole monumental-tree list for the municipality (118 specimens recensed, 111 monumental + 7 emblematic) -- one official register source. Second source: IFCN Madeira and visitmadeira.com/lifecooler.com independently confirm Quinta Vigia is a real, currently operating public garden (c.10,000 sqm), the official residence of the President of the Regional Government since 1984, open to the public free of charge on weekdays; these describe the garden and its general planting (which includes multiple araucaria and other exotic species) rather than this specific tree, so flagged as site-level corroboration, the same caveat already used on mdr_001-004 in this city file. SPECIES CAUTION: Wikidata (Q98858620) labels this specific specimen Araucaria columnaris but cites ZERO references for that claim; its own \"described at\" link points to a monumentaltrees.com page (height 41.20m, measured 2018-02-09) that this pass could not view (Cloudflare bot-check blocked both a plain fetch and a browser-session attempt, two tries). Per the search-summary rule, an unseen page is not evidence, so that height figure is NOT recorded here and the species is left at genus level rather than repeating an uncited claim -- the PDM table itself only says \"Araucaria\" with no species epithet, and IFCN prose about the garden separately mentions Araucaria heterophylla as one of several exotic species present at Quinta Vigia generally, so heterophylla vs columnaris is genuinely unresolved by this pass. The page should ask the reader which araucaria this is. Alive: garden in continuous active public/government use through 2026 per its own site and tourism sources. No girth or height recorded because the only figure found (monumentaltrees, via Wikidata) could not be verified on the source page itself."
+ },
+ {
+  "id": "mdr_008",
+  "name": "The Ombu of the Municipal Garden",
+  "species": "Ombu (Phytolacca dioica)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Jardim Municipal do Funchal, Rua Ivens 11, Se, Funchal",
+   "latitude": 32.647993,
+   "longitude": -16.912191,
+   "neighbourhood": "Se, Funchal"
   },
-  {
-    "id": "mdr_009",
-    "name": "The Bela-Sombra of the Municipal Garden",
-    "species": "Ombu (Phytolacca dioica)",
-    "age_estimate": "",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": null,
-    "location": {
-      "address": "Jardim Municipal do Funchal (Jardim Dona Amelia), Rua Ivens 11, Se, Funchal",
-      "latitude": 32.647993,
-      "longitude": -16.912191,
-      "neighbourhood": "Se, Funchal"
-    },
-    "verified_sources": [
-      "https://www.wikidata.org/wiki/Q109289870",
-      "https://commons.wikimedia.org/wiki/File:Rua_Ivens,_Funchal,_Madeira_-_2012-03-18_-_DSC06289.jpg",
-      "https://www.madeira-web.com/pt/locais/funchal/jardins-parques/jardim-municipal.html"
-    ],
-    "access": "Free, open daily (the Jardim Municipal / Jardim Dona Amelia is a small central public park, 8,300 sqm, facing the Municipal Theatre between Avenida Arriaga and Rua Ivens)",
-    "transport": "Central Funchal, walkable from the cathedral/marina area",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Candidate was labelled only 'bela-sombra' with a coordinate matching another candidate exactly (see mdr_010); worked out via the Commons photo filename (Rua Ivens, Funchal) and its category, which places it in the Jardim Municipal do Funchal (also known as Jardim Dona Amelia), a small free public garden in the city centre between Avenida Arriaga and Rua Ivens, open daily per madeira-web.com and other listings. Official designation: Funchal 'arvore monumental', Wikidata Q109289870, inventory PDM-F-AM-305, referenced to the Funchal PDM revision report (same document as mdr_007/008, not independently fetched). Species read from the common name 'bela-sombra', which in Madeira/Portugal denotes Phytolacca dioica (ombu/umbu, South American in origin, widely planted as an ornamental shade tree); this identification is by common-name convention rather than a source stating the binomial directly for THIS tree, so the writer should hold it loosely and the page can invite a correction. No independent age, girth or height figure found this pass; both left empty. Location precision is approximate: this candidate's Wikidata coordinate is identical (to 7 decimals) to mdr_010's despite the two trees being different species with different street names in their source photo filenames (Rua Ivens vs Rua Conselheiro Jose Silvestre Ribeiro, both of which border the same small garden), which looks like a coordinate copied across two Wikidata entries rather than two independently surveyed points; treat the pin as 'somewhere in this small central garden' rather than a precise trunk location. A future pass with more time could visit the garden's own signage (Funchal's 2026 bilingual monumental-tree signage project, per funchal.pt) to pin both trees exactly and confirm species."
+  "verified_sources": [
+   "https://revisaopdm.funchal.pt/images/PDF_SITE/versao_final/Relatorio-de-Fundamentacao_posparecerSRARN_vf.pdf",
+   "https://pt.wikipedia.org/wiki/Jardim_Municipal_do_Funchal",
+   "https://visit.funchal.pt/item/jardim-municipal-do-funchal-2/"
+  ],
+  "access": "Free, public municipal garden, open every day (reported as open around the clock); this specific tree sits somewhere within an 8,300 sqm garden rather than at a marked spot.",
+  "transport": "Central Funchal, Rua Ivens, a short walk from Avenida Arriaga and the seafront. No car needed.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Officially designated as code 305 (\"Bela Sombra\") under \"Jardim Municipal do Funchal\" in Quadro 5 of the Funchal PDM Relatorio de Fundamentacao (Volume II, March 2018), which cites the regional government publication \"Arvores Monumentais e Emblematicas\" (Direcao Regional de Florestas, 2008) as the source for the whole municipal monumental-tree list -- one official register source, same document used for mdr_007/009/010. Second source: the Portuguese Wikipedia article on the garden and the Camara Municipal do Funchal / visitfunchal pages independently confirm the Jardim Municipal do Funchal (formerly Jardim Dona Amelia, opened 1885 on the former Convento de Sao Francisco site) is a real, currently operating, free public garden at this exact address, bordered by Rua Ivens (north) and Rua Conselheiro Jose Silvestre Ribeiro (west), matching the Wikidata record street address for this tree; the Wikipedia article lists the garden general planting (barbusano, dragoeiro, til, pau-branco, kigelia, garcinia, plumeria, pandanus) but does not name the bela-sombra specifically, so flagged as site-level rather than tree-specific corroboration, same caveat pattern as the rest of this city file. LOCATION CAUTION: Wikidata gives the identical coordinate (32.647993,-16.912191) for BOTH this tree and the camphor tree (mdr_009) in the same garden, which reads as a single park-level point rather than two independently surveyed trunk positions, so both are marked approximate rather than confirmed. Garden is compact (8,300 sqm, roughly one hectare) so approximate still places a visitor within a short walk of the trunk. Alive: garden in continuous public use through 2026 per municipal and tourism sources. No girth or height found for this specific specimen; the parent 2008 survey likely records one but this pass could not access that book directly, only the PDM report that cites it. Species note: Phytolacca dioica is a South American species (Argentina/Uruguay/Brazil/Paraguay) unrelated to any Madeiran native, grown widely as a shade tree; the common Portuguese name means literally beautiful shade."
+ },
+ {
+  "id": "mdr_009",
+  "name": "The Camphor Tree of the Municipal Garden",
+  "species": "Camphor Tree (Cinnamomum camphora)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Jardim Municipal do Funchal, Rua Conselheiro Jose Silvestre Ribeiro, Se, Funchal",
+   "latitude": 32.647993,
+   "longitude": -16.912191,
+   "neighbourhood": "Se, Funchal"
   },
-  {
-    "id": "mdr_010",
-    "name": "The Camphor Tree of the Municipal Garden",
-    "species": "Camphor Tree (Cinnamomum camphora)",
-    "age_estimate": "",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": null,
-    "location": {
-      "address": "Jardim Municipal do Funchal (Jardim Dona Amelia), Rua Conselheiro Jose Silvestre Ribeiro, Se, Funchal",
-      "latitude": 32.647993,
-      "longitude": -16.912191,
-      "neighbourhood": "Se, Funchal"
-    },
-    "verified_sources": [
-      "https://www.wikidata.org/wiki/Q109290467",
-      "https://commons.wikimedia.org/wiki/File:Rua_Conselheiro_Jos%C3%A9_Silvestre_Ribeiro,_Funchal,_Madeira_-_2012-03-18_-_DSC06416.jpg",
-      "https://www.madeira-web.com/pt/locais/funchal/jardins-parques/jardim-municipal.html"
-    ],
-    "access": "Free, open daily (same Jardim Municipal / Jardim Dona Amelia as mdr_009, a small central public park)",
-    "transport": "Central Funchal, walkable from the cathedral/marina area",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Same garden and same coordinate-duplication caveat as mdr_009 (see its notes); this one's Commons photo filename names Rua Conselheiro Jose Silvestre Ribeiro, a street on the other side of the same small Jardim Municipal do Funchal. Official designation: Funchal 'arvore monumental', Wikidata Q109290467, inventory PDM-F-AM-312, referenced to the Funchal PDM revision report (not independently fetched this pass). Species 'canforeira' is the standard Portuguese common name for Cinnamomum camphora (camphor tree); a jardinscomhistorias.com page on Quinta do Palheiro Ferreiro's own garden separately mentions a canforeira as one of its named specimen trees, which is a different individual (not this one, that one belongs to mdr_008's quinta) but confirms canforeira/Cinnamomum camphora is a species genuinely grown as a notable specimen tree on Madeira, corroborating the identification convention. No independent age, girth or height found; both left empty for the reader. Location precision approximate for the same reason as mdr_009: shared exact coordinate with a differently-named, differently-photographed tree suggests a park-level rather than tree-level GPS fix."
-  }
+  "verified_sources": [
+   "https://revisaopdm.funchal.pt/images/PDF_SITE/versao_final/Relatorio-de-Fundamentacao_posparecerSRARN_vf.pdf",
+   "https://pt.wikipedia.org/wiki/Jardim_Municipal_do_Funchal",
+   "https://visit.funchal.pt/item/jardim-municipal-do-funchal-2/"
+  ],
+  "access": "Free, public municipal garden, open every day (reported as open around the clock); this specific tree sits somewhere within an 8,300 sqm garden rather than at a marked spot.",
+  "transport": "Central Funchal, Rua Conselheiro Jose Silvestre Ribeiro side of the garden, a short walk from Avenida Arriaga and the seafront. No car needed.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Officially designated as code 312 (\"Canforeira\") under \"Jardim Municipal do Funchal\" in Quadro 5 of the Funchal PDM Relatorio de Fundamentacao (Volume II, March 2018), same official register as mdr_007/008/010, itself citing \"Arvores Monumentais e Emblematicas\" (Direcao Regional de Florestas, 2008). Second source: same as mdr_008, the Portuguese Wikipedia article plus visitfunchal/Camara Municipal pages independently confirm the garden is real, free, public and currently operating at this address; they do not name this specific camphor tree, so flagged as site-level rather than tree-specific corroboration. This is a DIFFERENT registered specimen from mdr_008 (different code, 312 vs 305, different species) even though Wikidata gives it the identical coordinate (32.647993,-16.912191) to the bela-sombra, which is why both are marked approximate: the shared coordinate reads as a single park-level point rather than two independently surveyed trunk positions. Garden is compact (8,300 sqm) so approximate still places a visitor within a short walk. Alive: garden in continuous public use through 2026. No girth or height found for this specific specimen. Camphor trees (Cinnamomum camphora) are already used elsewhere on this site under the canonical common name Camphor Tree; this entry matches that naming."
+ },
+ {
+  "id": "mdr_010",
+  "name": "The Pohutukawa of Quinta do Palheiro Ferreiro",
+  "species": "Pohutukawa (Metrosideros excelsa)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Quinta do Palheiro Ferreiro (Palheiro Gardens), Caminho do Palheiro 32, Sao Goncalo, Funchal",
+   "latitude": 32.6593,
+   "longitude": -16.86698,
+   "neighbourhood": "Sao Goncalo, Funchal"
+  },
+  "verified_sources": [
+   "https://revisaopdm.funchal.pt/images/PDF_SITE/versao_final/Relatorio-de-Fundamentacao_posparecerSRARN_vf.pdf",
+   "https://www.tripadvisor.com/Attraction_Review-g189167-d196086-Reviews-or10-Palheiro_Gardens-Funchal_Madeira_Madeira_Islands.html",
+   "https://www.madeira-web.com/en/places/funchal/gardens-parks/quinta-palheiro-ferreiro.html"
+  ],
+  "access": "Paid entry (Palheiro Gardens): adults EUR 11, ages 15-17 EUR 6, children free, Madeira residents EUR 6 with proof of residence; open daily 09:00-17:00, every day of the year except Christmas Day.",
+  "transport": "Caminho do Palheiro, in the hills east of Funchal (about 500m altitude); reachable by taxi or car, roughly 15-20 minutes from central Funchal, or bus toward Sao Goncalo/Camacha plus a walk.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Officially designated as code 192 (\"Metrosidero\") under \"Quinta do Palheiro, Palheiro Ferreiro\" in Quadro 5 of the Funchal PDM Relatorio de Fundamentacao (Volume II, March 2018), the same document and 2008 regional source used for mdr_007/008/009; Wikidata (Q98815233) cites this exact PDM PDF as its own reference, confirming the match. Second source: TripAdvisor and madeira-web.com independently confirm Quinta do Palheiro Ferreiro (Palheiro Gardens) is a real, currently operating, paid private estate garden open daily, admired for its exotic plant collection; they describe the garden generally and do not name this specific metrosideros, so flagged as site-level rather than tree-specific corroboration, same caveat as the rest of this pass and the existing city file. ACCESS: private estate but genuinely open to the paying public every day (except Christmas), which satisfies the access test the same way Madeira paid-entry hard rule cases already do (e.g. the Botanical Garden ginkgo, mdr_001); this is not a private residence closed to visitors. Note the same PDM table lists SEVERAL other named specimens at this same Quinta do Palheiro / Palheiro Ferreiro location (tulipeiro, til, another araucaria da Queenslandia, carvalho, cedro do Atlas, another canforeira, nucleos de platanos, sequoia, pinheiro das canarias) under separate codes, so this is one specimen among many monumental trees in the same garden, picked as the collectible point for this pass because Metrosideros excelsa (pohutukawa) is a striking and distinctive New Zealand species rarely seen on this list; a second visit could add more from the same garden as separate entries later. Alive: garden in continuous paid public operation through 2026 per current tourism sources. No girth or height found for this specific specimen; the parent 2008 survey likely records one but this pass could not access that book directly.",
+  "paid_entry": true
+ }
 ]
