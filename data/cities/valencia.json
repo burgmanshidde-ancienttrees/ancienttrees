@@ -5,7 +5,7 @@
   "intro": "Valencia protects more monumental and singular trees than any other region in Spain, over 2,400 across the Comunitat Valenciana under a 2006 law, and the city maps five routes past its own share of them. Several of its most-loved trees share an oddly specific origin story: 19th century gardeners meant to plant a magnolia and grabbed a fig sapling by mistake, or a species imported because it had just become fashionable on the French Riviera. What survives from those errors and fashions includes the widest tree canopy in the city, a 400-year-old olive, and the tallest tree in the province.",
   "meta_description": "Valencia protects more monumental trees than any Spanish region. Meet El Titan, a 174-year-old fig planted by mistake, and a 400-year-old olive.",
   "question_answer": "The oldest tree in Valencia is generally cited as the olive tree of Parque de la Rambleta, in the San Marcelino neighbourhood, estimated at around 400 years old and described by the city's own monumental trees route as the oldest specimen among all five of its walking trails.",
-  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and twenty-two more monumental trees across the city.",
+  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and twenty-three more monumental trees across the city.",
   "question_context": "Valencia is unusually well documented for this kind of question: the Comunitat Valenciana keeps a legal Catálogo de Árboles Monumentales y Singulares under a 2006 regional law, now covering more than 2,400 protected trees, and the city government separately publishes five named walking and cycling routes past its own monumental specimens, complete with individual profiles. Within that system, the olive of Parque de la Rambleta is the one most consistently named as the oldest, though as with most old olives, its 400-year figure comes from general estimate rather than a ring count or documented planting record. El Titan, the city's giant Ficus macrophylla in the Jardines del Parterre, is younger by comparison at 174 years but has a firmer, more specifically documented planting date, the tradeoff between the two runs through most of this list. The park sits in the San Marcelino neighbourhood on Pio IX street, next to the city's General Cemetery, a short bus ride south of the historic centre.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Valencia's monumental trees free to see?",
-      "a": "Fifteen of them are free: the Rambleta olive, El Titan and the rest of the Jardines del Parterre and Glorieta figs, and the other park and street trees all stand in open public ground. The other eight, including the Kashmir Cypress and Caucasian Elm, share the Jardi Botanic de la Universitat de Valencia, which charges a small entry fee, an ordinary botanical-garden ticket rather than anything specific to the trees."
+      "a": "Fifteen of them are free: the Rambleta olive, El Titan and the rest of the Jardines del Parterre and Glorieta figs, and the other park and street trees all stand in open public ground. The other nine, including the Kashmir Cypress and Caucasian Elm, share the Jardi Botanic de la Universitat de Valencia, which charges a small entry fee, an ordinary botanical-garden ticket rather than anything specific to the trees."
     },
     {
       "q": "How does Valencia protect its monumental trees?",
@@ -775,6 +775,39 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "vlc_025",
+      "name": "The Mexican White Oak of the Botanic Garden",
+      "species": "Mexican White Oak (Quercus polymorpha)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 344,
+      "height_m": 26.5,
+      "crown_m": 25.2,
+      "location": {
+        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+        "latitude": 39.476414,
+        "longitude": -0.38677,
+        "neighbourhood": "Ciutat Vella"
+      },
+      "story": "Quercus polymorpha barely counts as a North American oak. Its range runs through Mexico, Guatemala and Honduras, and it crosses into the United States only once, in a single wild stand roughly 30 kilometres north of the Rio Grande in Texas. Everywhere else it grows, it grows on purpose: gardeners prize it for holding its leaves through most of a mild winter and for shrugging off heat that would strip a European oak bare.\n\nThe regional register lists Valencia's specimen as the Alzina de Mexic del Botanic, girth 3.44 metres and a crown 25.2 metres across, nearly as wide as the tree is tall at 26.5 metres. That crown is doing the work here: this is a garden oak built for shade rather than height, a wide flat canopy over one of the botanic garden's paths.\n\nNobody has dated it, and no second source beyond the regional catalogue has turned up to confirm the measurements, though that catalogue is the same body responsible for every monumental and singular tree the region records. If you know when it was planted, or have stood under it, tell us.\n\nIt grows in the university's botanic garden, the same paid-entry collection as the Silk Floss Tree and the Virginia Oak nearby.",
+      "verified_sources": [
+        "data/registers/valencia-arboles-monumentales.json (register_id 1150, girth 3.44m, height 26.5m, crown 25.2m)"
+      ],
+      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Silk Floss Tree and the Virginia Oak",
+      "transport": "10 min walk from Angel Guimera metro station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true,
+      "notes": "Single-sourced: only the Comunitat Valenciana's register of monumental and singular trees (id 1150) carries this specimen; espores.org's own ten-tree feature on this garden, which corroborates several neighbours, does not include it."
     }
   ]
 }

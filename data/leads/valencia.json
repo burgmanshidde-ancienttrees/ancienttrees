@@ -1,76 +1,76 @@
 {
- "leads": [
-  {
-   "name": "Arbre botella del Botanic II",
-   "species_register": "Brachychiton populneus",
-   "latitude": 39.47613,
-   "longitude": -0.38616,
-   "girth_m": 2.9,
-   "reason": "Only one source found this pass: the official register itself. No independent article, garden-authority page or Wikipedia entry specific to this individual specimen turned up. Species-name ambiguity noted: the Jardi Botanic's own public catalogue page found in this pass describes a 'arbol botella' / Brachychiton DISCOLOR (not populneus) in the same garden, and both species share the Spanish common name 'arbol botella' (bottle tree), so it is unclear whether the register's populneus ID for this exact specimen is correct or whether the web description refers to a different bottle tree in the garden. Needs either a second independent source for this specific register point, or an in-person/photo check of the trunk and leaf shape to resolve the species question before this can be delivered as verified."
-  },
-  {
-   "name": "Caquier de Virginia del Botanic I (Diospyros virginiana)",
-   "species_register": "Diospyros virginiana",
-   "latitude": 39.47605,
-   "longitude": -0.38625,
-   "girth_m": 2.2,
-   "reason": "Not researched this pass (out of the steered priority list of named giants); register candidate only, in the same Botanic Garden cluster as vlc_015/vlc_016 candidates. Worth a future look given it sits inside a cluster already being deepened."
-  },
-  {
-   "name": "39 unnamed register palms and small ficus within 0.4-0.8 km of the city centre",
-   "species_register": "mostly Phoenix dactylifera, Washingtonia robusta/filifera, Phoenix canariensis, 0.8-2.4m girth",
-   "reason": "Not individually evaluated this pass, per steering to prioritise named giants over the dozens of unnamed street/park palms in the register. A register listing as 'protected' is not by itself a reason to include; most of these are ordinary street or park palms rather than collectible destinations. Several sit within 80m of already-published trees (vlc_001, vlc_006/007/008/009 area) and were deliberately skipped rather than risk near-duplicate entries. Worth a pass only if a future city review specifically wants to grow Valencia past its current count and needs fresh candidates.",
-   "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Alzina de Mexic del Botanic (Quercus polymorpha)",
-   "species_register": "Quercus polymorpha",
-   "latitude": 39.476414,
-   "longitude": -0.38677,
-   "girth_m": 3.44,
-   "height_m": 26.5,
-   "crown_m": 25.2,
-   "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found within two search attempts and a direct-fetch attempt at the garden's own virtual species catalogue (jardibotanic.org); WebSearch's own AI summary claimed a jardibotanic.org catalogue page existed for this species, but per the search-summary-is-a-lead-never-a-source rule that summary was not trusted, and three different jardibotanic.org URLs fetched directly (pid 2294, 2297, and a live cadbusc= search for 'Quercus polymorpha') did not return this species. Register-only for now; worth a retry with a different jardibotanic.org pid or a Wikipedia/Wikispecies cross-check.",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Nouer americà del Botanic I (Carya illinoinensis)",
-   "species_register": "Carya illinoinensis",
-   "latitude": 39.476621,
-   "longitude": -0.387157,
-   "girth_m": 3.88,
-   "height_m": 32.9,
-   "crown_m": 16.1,
-   "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found: WebSearch's AI summary said this pecan is listed in the garden's Bosque and Escola Botanica collections, but per the search-summary-is-a-lead-never-a-source rule that was not trusted without a direct fetch, and the jardibotanic.org pid guessed from a related search result (2850) turned out to be Viburnum tinus, a different plant entirely. Register-only for now; worth a retry with the garden's own site search or a Wikipedia cross-check."
-  },
-  {
-   "name": "The Ficus of the Corts Valencianes",
-   "species": "Moreton Bay Fig (Ficus macrophylla)",
-   "lat": 39.47808,
-   "lng": -0.37439,
-   "former_id": "vlc_012",
-   "status": "blocked",
-   "why": "PULLED FROM THE LIVE PAGE 2026-08-29 on hard rule 10. Inside the working seat of the Valencian regional parliament, visible only on a free guided tour that must be booked in advance, is not offered in August, and which the entry itself called not a walk-up, casual-visit tree. Nothing is wrong with the tree and the research is kept here in full; it can go back the day the access changes. Access as published: RESTRICTED: this is the working seat of the Valencian regional parliament (Corts Valencianes), inside the Palau de Benicarlo / Palau dels Borja. The garden and ficus are visible only on a free guided tour, offered Mondays and Fridays mornings at 10:00/11:00/12:00/13:00, must be booked in advance by phone or the Corts Valencianes website, and NOT offered in August. This is not a walk-up, casual-visit tree.",
-   "age_estimate": "sources disagree: called both 'century-old' and dated to the second half of the 19th century",
-   "girth_cm": 1362,
-   "verified_sources": [
-    "https://www.barcelo.com/guia-turismo/en/spain/valencia/things-to-do/las-corts-valencianes/",
-    "https://arquitectosdevalencia.es/contenido/visita-de-arquitectura-corts-valencianes/",
-    "data/registers/valencia-arboles-monumentales.json (girth 13.6m)"
-   ],
-   "story": "One of the largest fig trees in Valencia grows in a garden you can enter twice a week, by appointment, and not at all in August. It stands in the courtyard of the Palau de Benicarlo, also known as the Palau dels Borja, which is the working seat of the Corts Valencianes, the Valencian regional parliament. The only way to stand under it is the free guided tour of the building, offered on Monday and Friday mornings and booked in advance through the parliament itself. The tour runs about an hour and spends most of it on the debating chamber rather than the garden, which is worth knowing before you go.\n\nThe tree is in the same weight class as the city's famous ones. The regional register measures its trunk at 13.6 metres around, within centimetres of El Titan in the Parterre. Its age is disputed. One account calls it simply a century old, 22 metres tall with a crown spreading more than 12 metres. Another dates its origins to the second half of the nineteenth century, which would make it something between 127 and 176. Both figures are in circulation and neither has a planting record behind it.\n\nSo this is the least casual visit on the list, and the only tree here that requires a phone call. It also spends its life inside a security perimeter, tended by a government that lists it as one of the region's monumental trees."
-  }
- ],
- "blocked": [
-  {
-   "name": "Ficus del Palacio de Raga (interior)",
-   "species_register": "Ficus macrophylla",
-   "latitude": 39.47795,
-   "longitude": -0.37952,
-   "girth_m": 9.3,
-   "reason": "PRIVATE LAND, not open to visitors. Stands inside the walled courtyard of the former Palacio de Raga, which today is a Generalitat Valenciana residencia (RPM Palau de Raga), a social-services care home and day centre for the elderly, not a museum or venue with public opening hours. Local legend holds it is the older and larger of the two Raga-area ficus (a supposed gift from botanist Cavanilles, which if true would put it over 200 years old), but it cannot be visited and its location is inside a residential care facility, which this project does not publish per hard rule 10. The PUBLIC tree 30m away in the same plaza is delivered as vlc_011; do not confuse the two."
-  }
- ]
+  "leads": [
+    {
+      "name": "Arbre botella del Botanic II",
+      "species_register": "Brachychiton populneus",
+      "latitude": 39.47613,
+      "longitude": -0.38616,
+      "girth_m": 2.9,
+      "reason": "Only one source found this pass: the official register itself. No independent article, garden-authority page or Wikipedia entry specific to this individual specimen turned up. Species-name ambiguity noted: the Jardi Botanic's own public catalogue page found in this pass describes a 'arbol botella' / Brachychiton DISCOLOR (not populneus) in the same garden, and both species share the Spanish common name 'arbol botella' (bottle tree), so it is unclear whether the register's populneus ID for this exact specimen is correct or whether the web description refers to a different bottle tree in the garden. Needs either a second independent source for this specific register point, or an in-person/photo check of the trunk and leaf shape to resolve the species question before this can be delivered as verified."
+    },
+    {
+      "name": "Caquier de Virginia del Botanic I (Diospyros virginiana)",
+      "species_register": "Diospyros virginiana",
+      "latitude": 39.47605,
+      "longitude": -0.38625,
+      "girth_m": 2.2,
+      "reason": "Not researched this pass (out of the steered priority list of named giants); register candidate only, in the same Botanic Garden cluster as vlc_015/vlc_016 candidates. Worth a future look given it sits inside a cluster already being deepened."
+    },
+    {
+      "name": "39 unnamed register palms and small ficus within 0.4-0.8 km of the city centre",
+      "species_register": "mostly Phoenix dactylifera, Washingtonia robusta/filifera, Phoenix canariensis, 0.8-2.4m girth",
+      "reason": "Not individually evaluated this pass, per steering to prioritise named giants over the dozens of unnamed street/park palms in the register. A register listing as 'protected' is not by itself a reason to include; most of these are ordinary street or park palms rather than collectible destinations. Several sit within 80m of already-published trees (vlc_001, vlc_006/007/008/009 area) and were deliberately skipped rather than risk near-duplicate entries. Worth a pass only if a future city review specifically wants to grow Valencia past its current count and needs fresh candidates.",
+      "species": "Fig (Ficus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Alzina de Mexic del Botanic (Quercus polymorpha)",
+      "species_register": "Quercus polymorpha",
+      "latitude": 39.476414,
+      "longitude": -0.38677,
+      "girth_m": 3.44,
+      "height_m": 26.5,
+      "crown_m": 25.2,
+      "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found within two search attempts and a direct-fetch attempt at the garden's own virtual species catalogue (jardibotanic.org); WebSearch's own AI summary claimed a jardibotanic.org catalogue page existed for this species, but per the search-summary-is-a-lead-never-a-source rule that summary was not trusted, and three different jardibotanic.org URLs fetched directly (pid 2294, 2297, and a live cadbusc= search for 'Quercus polymorpha') did not return this species. Register-only for now; worth a retry with a different jardibotanic.org pid or a Wikipedia/Wikispecies cross-check. [RESOLVED 2026-09-01, delivered as vlc_025]",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Nouer americà del Botanic I (Carya illinoinensis)",
+      "species_register": "Carya illinoinensis",
+      "latitude": 39.476621,
+      "longitude": -0.387157,
+      "girth_m": 3.88,
+      "height_m": 32.9,
+      "crown_m": 16.1,
+      "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found: WebSearch's AI summary said this pecan is listed in the garden's Bosque and Escola Botanica collections, but per the search-summary-is-a-lead-never-a-source rule that was not trusted without a direct fetch, and the jardibotanic.org pid guessed from a related search result (2850) turned out to be Viburnum tinus, a different plant entirely. Register-only for now; worth a retry with the garden's own site search or a Wikipedia cross-check."
+    },
+    {
+      "name": "The Ficus of the Corts Valencianes",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "lat": 39.47808,
+      "lng": -0.37439,
+      "former_id": "vlc_012",
+      "status": "blocked",
+      "why": "PULLED FROM THE LIVE PAGE 2026-08-29 on hard rule 10. Inside the working seat of the Valencian regional parliament, visible only on a free guided tour that must be booked in advance, is not offered in August, and which the entry itself called not a walk-up, casual-visit tree. Nothing is wrong with the tree and the research is kept here in full; it can go back the day the access changes. Access as published: RESTRICTED: this is the working seat of the Valencian regional parliament (Corts Valencianes), inside the Palau de Benicarlo / Palau dels Borja. The garden and ficus are visible only on a free guided tour, offered Mondays and Fridays mornings at 10:00/11:00/12:00/13:00, must be booked in advance by phone or the Corts Valencianes website, and NOT offered in August. This is not a walk-up, casual-visit tree.",
+      "age_estimate": "sources disagree: called both 'century-old' and dated to the second half of the 19th century",
+      "girth_cm": 1362,
+      "verified_sources": [
+        "https://www.barcelo.com/guia-turismo/en/spain/valencia/things-to-do/las-corts-valencianes/",
+        "https://arquitectosdevalencia.es/contenido/visita-de-arquitectura-corts-valencianes/",
+        "data/registers/valencia-arboles-monumentales.json (girth 13.6m)"
+      ],
+      "story": "One of the largest fig trees in Valencia grows in a garden you can enter twice a week, by appointment, and not at all in August. It stands in the courtyard of the Palau de Benicarlo, also known as the Palau dels Borja, which is the working seat of the Corts Valencianes, the Valencian regional parliament. The only way to stand under it is the free guided tour of the building, offered on Monday and Friday mornings and booked in advance through the parliament itself. The tour runs about an hour and spends most of it on the debating chamber rather than the garden, which is worth knowing before you go.\n\nThe tree is in the same weight class as the city's famous ones. The regional register measures its trunk at 13.6 metres around, within centimetres of El Titan in the Parterre. Its age is disputed. One account calls it simply a century old, 22 metres tall with a crown spreading more than 12 metres. Another dates its origins to the second half of the nineteenth century, which would make it something between 127 and 176. Both figures are in circulation and neither has a planting record behind it.\n\nSo this is the least casual visit on the list, and the only tree here that requires a phone call. It also spends its life inside a security perimeter, tended by a government that lists it as one of the region's monumental trees."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Ficus del Palacio de Raga (interior)",
+      "species_register": "Ficus macrophylla",
+      "latitude": 39.47795,
+      "longitude": -0.37952,
+      "girth_m": 9.3,
+      "reason": "PRIVATE LAND, not open to visitors. Stands inside the walled courtyard of the former Palacio de Raga, which today is a Generalitat Valenciana residencia (RPM Palau de Raga), a social-services care home and day centre for the elderly, not a museum or venue with public opening hours. Local legend holds it is the older and larger of the two Raga-area ficus (a supposed gift from botanist Cavanilles, which if true would put it over 200 years old), but it cannot be visited and its location is inside a residential care facility, which this project does not publish per hard rule 10. The PUBLIC tree 30m away in the same plaza is delivered as vlc_011; do not confuse the two."
+    }
+  ]
 }
