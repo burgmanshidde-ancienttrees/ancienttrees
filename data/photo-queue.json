@@ -42351,7 +42351,9 @@
      "author": "Boston Public Library",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR Category:Historical images from Wikipedia Summer of Monuments Category:Images from Wikipedia Summer of Monuments Category:Images from Wikipedia Summer of Monuments uploaded after the deadline Category:Images with extracted images Category:PD US no notice Category:Postcards of Athens, Georgia Category:Postcards of Georgia (U.S. state) published by Tichnor Brothers Category:Supported by Wikimedia DC Category:Tree That Owns Itself"
+     "cats": "Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR Category:Historical images from Wikipedia Summer of Monuments Category:Images from Wikipedia Summer of Monuments Category:Images from Wikipedia Summer of Monuments uploaded after the deadline Category:Images with extracted images Category:PD US no notice Category:Postcards of Athens, Georgia Category:Postcards of Georgia (U.S. state) published by Tichnor Brothers Category:Supported by Wikimedia DC Category:Tree That Owns Itself",
+     "judged": "reject",
+     "verdict": "a tinted vintage postcard with printed text across it, and of the ORIGINAL tree that fell in 1942; the light meter said OK because it measures light, not what a thing is"
     },
     {
      "title": "iNat obs 236558231 (Quercus alba)",
@@ -42360,7 +42362,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "33.9550348,-83.3823758997"
+     "obs_location": "33.9550348,-83.3823758997",
+     "judged": "reject",
+     "verdict": "a white oak looking up the trunk, no geotag and no way to tell it is this corner's oak rather than any of Athens' others; the Copenhagen pacifier-tree case"
     },
     {
      "title": "iNat obs 236558231 (Quercus alba)",
@@ -42415,7 +42419,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-4.0 Category:July 2020 in Georgia (U.S. state) Category:Lover's Oak Category:Self-published work",
-     "source": "wikidata/Q96678441"
+     "source": "wikidata/Q96678441",
+     "judged": "approve",
+     "verdict": "the tree fills the frame from a public street, crown and trunk both readable, in leaf, daylight"
     }
    ]
   },
@@ -42433,7 +42439,9 @@
      "author": "Drew  Jacksich",
      "lat": null,
      "lng": null,
-     "cats": "Category:Amtrak in 1989 Category:April 1989 United States photographs Category:April 1989 in Louisiana Category:April 1989 in rail transport in the United States Category:Bloody Nose livery Category:CC-BY-2.0 Category:EMD SD40T-2 locomotives of the Southern Pacific Railroad Category:Flickr images uploaded by Flickr upload bot Category:GE P30CH locomotives of Amtrak Category:Lafayette, Louisiana in the 1980s Category:Number 8498 on rail vehicles Category:Passenger trains in Louisiana Category:Photographs by Drew Jacksich Category:Rosa Parks Transportation Center, Lafayette, Louisiana Category:Sunset Limited Category:Trains at train stations in Louisiana"
+     "cats": "Category:Amtrak in 1989 Category:April 1989 United States photographs Category:April 1989 in Louisiana Category:April 1989 in rail transport in the United States Category:Bloody Nose livery Category:CC-BY-2.0 Category:EMD SD40T-2 locomotives of the Southern Pacific Railroad Category:Flickr images uploaded by Flickr upload bot Category:GE P30CH locomotives of Amtrak Category:Lafayette, Louisiana in the 1980s Category:Number 8498 on rail vehicles Category:Passenger trains in Louisiana Category:Photographs by Drew Jacksich Category:Rosa Parks Transportation Center, Lafayette, Louisiana Category:Sunset Limited Category:Trains at train stations in Louisiana",
+     "judged": "reject",
+     "verdict": "a Southern Pacific locomotive at Lafayette, Louisiana; matched on the word Lafayette"
     }
    ]
   },
@@ -42524,7 +42532,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Boone County, Missouri Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Lewis and Clark National Historic Trail Category:The Big Tree, Missouri",
-     "source": "wikidata/Q104875034"
+     "source": "wikidata/Q104875034",
+     "judged": "approve",
+     "verdict": "whole crown against open sky with people at the base for scale; the best photograph in this batch"
     },
     {
      "title": "iNat obs 202584615 (Quercus macrocarpa)",
@@ -42551,7 +42561,9 @@
      "author": "BLM",
      "lat": 43.178334,
      "lng": -123.809537,
-     "cats": "Category:Doerner fir Category:Files with coordinates missing SDC location of creation Category:PD US BLM Category:Pinales in Oregon in June Category:Pseudotsuga in Oregon Category:Pseudotsuga in the Northern Hemisphere in June 2008 Category:Pseudotsuga menziesii subsp. menziesii"
+     "cats": "Category:Doerner fir Category:Files with coordinates missing SDC location of creation Category:PD US BLM Category:Pinales in Oregon in June Category:Pseudotsuga in Oregon Category:Pseudotsuga in the Northern Hemisphere in June 2008 Category:Pseudotsuga menziesii subsp. menziesii",
+     "judged": "hold",
+     "verdict": "the right tree, but photographed before the August 2025 fire took roughly fifteen metres off its top; the page's whole story is that it lost that crown, so the picture would contradict the text"
     }
    ]
   },
@@ -42689,7 +42701,9 @@
      "author": "Sergei Mutovkin",
      "lat": 38.53714,
      "lng": -123.0070532,
-     "cats": "Category:CC-BY-2.0 Category:Colonel Armstrong Category:Creative Commons Attribution 2.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Files by User:Hike395 from flickr Category:Flickr images missing SDC copyright status Category:Flickr images reviewed by FlickreviewR 2"
+     "cats": "Category:CC-BY-2.0 Category:Colonel Armstrong Category:Creative Commons Attribution 2.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Files by User:Hike395 from flickr Category:Flickr images missing SDC copyright status Category:Flickr images reviewed by FlickreviewR 2",
+     "judged": "approve",
+     "verdict": "trunk base to canopy, unmistakably the subject, daylight under the grove"
     },
     {
      "title": "File:Colonel Armstrong tree (53178826828).jpg",
@@ -42831,7 +42845,9 @@
      "author": "Missvain",
      "lat": 38.533847,
      "lng": -123.004172,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Forests in California in January 2023 Category:January 2023 in Guerneville, California Category:Parson Jones Tree Category:Plant photos by Sarah Stierch Category:Self-published work Category:Trails in Armstrong Redwoods State Natural Reserve Category:United States photographs taken on 2023-01-02"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Forests in California in January 2023 Category:January 2023 in Guerneville, California Category:Parson Jones Tree Category:Plant photos by Sarah Stierch Category:Self-published work Category:Trails in Armstrong Redwoods State Natural Reserve Category:United States photographs taken on 2023-01-02",
+     "judged": "approve",
+     "verdict": "base to canopy; the small sign at the foot identifies it without dominating, unlike candidate 01 where the interpretive board fills the lower half"
     },
     {
      "title": "File:Sequoia sempervirens Armstrong3.jpg",
@@ -43180,7 +43196,9 @@
      "author": "C.C. Pierce",
      "lat": null,
      "lng": null,
-     "cats": "Category:1912 in California Category:Graves in California Category:PD-author Category:Peter Lebeck Oak Category:Signs in Kern County, California Category:Tejon Ranch, California"
+     "cats": "Category:1912 in California Category:Graves in California Category:PD-author Category:Peter Lebeck Oak Category:Signs in Kern County, California Category:Tejon Ranch, California",
+     "judged": "reject",
+     "verdict": "an archival photograph of the grave, not a photograph of the living tree"
     }
    ]
   },
@@ -43218,7 +43236,9 @@
      "author": "Marcdcheung",
      "lat": 41.847423,
      "lng": -72.806412,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Platanus in the United States Category:Self-published work Category:Trees"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Platanus in the United States Category:Self-published work Category:Trees",
+     "judged": "approve",
+     "verdict": "whole tree, trunk and crown, in leaf, open daylight"
     },
     {
      "title": "File:Pinchot Sycamore - sycamore tree in Simsbury, Connecticut, May 2015.jpg",
@@ -43295,7 +43315,9 @@
      "author": "Rizka",
      "lat": 45.484239,
      "lng": -123.972908,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fog Category:Octopus tree Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fog Category:Octopus tree Category:Self-published work",
+     "judged": "approve",
+     "verdict": "the octopus limb structure fills the frame; fog is atmospheric rather than archival and the sign sits low enough to survive the card crop"
     },
     {
      "title": "File:Sitka Spruce Octopus Tree (Tillamook County, Oregon scenic images) (tilDA0067).jpg",
@@ -43359,7 +43381,9 @@
      "author": "Erik Soderstrom",
      "lat": 37.023003,
      "lng": -76.33007,
-     "cats": "Category:CC-BY-SA-4.0 Category:Emancipation Oak Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Virginia Category:Images from Wiki Loves Monuments 2019 in the United States Category:National Register of Historic Places with known IDs Category:Self-published work Category:September 2019 in Virginia Category:United States photographs taken on 2019-09-14 Category:Uploaded via Campaign:wlm-us Category:Wiki Loves Monuments 2019 in the United States unreviewed"
+     "cats": "Category:CC-BY-SA-4.0 Category:Emancipation Oak Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Virginia Category:Images from Wiki Loves Monuments 2019 in the United States Category:National Register of Historic Places with known IDs Category:Self-published work Category:September 2019 in Virginia Category:United States photographs taken on 2019-09-14 Category:Uploaded via Campaign:wlm-us Category:Wiki Loves Monuments 2019 in the United States unreviewed",
+     "judged": "approve",
+     "verdict": "the sprawling live oak limbs fill the right two thirds, in leaf, bright daylight"
     },
     {
      "title": "File:Emancipation Oak Canopy.jpg",
@@ -43398,7 +43422,8 @@
    "name": "The Great White Oak of Logan (Logan Oak)",
    "checked": "2026-09-01",
    "sweep": 5,
-   "candidates": []
+   "candidates": [],
+   "exhausted": "the sweep returned nothing open-licensed for this tree"
   },
   "mtv_001": {
    "city": "Martinsville, New Jersey",
@@ -43415,7 +43440,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-3.0-migrated Category:GFDL Category:License migration completed Category:Self-published work Category:The Devil's Tree Category:User-created GFDL images",
-     "source": "wikidata/Q16931099"
+     "source": "wikidata/Q16931099",
+     "judged": "approve",
+     "verdict": "the solitary oak fills the frame in its own field; flat overcast light and a partly dead crown, which is what the tree actually looks like"
     },
     {
      "title": "iNat obs 197752320 (Quercus)",
@@ -43491,7 +43518,8 @@
      "source": "inaturalist",
      "obs_location": "35.4732033333,-97.5172883333"
     }
-   ]
+   ],
+   "exhausted": "all five candidates are other Survivors: a 1984 Scotti Brothers band publicity photo, the World Trade Center survivor tree, and a USS Arizona survivor"
   },
   "oly_001": {
    "city": "Olympic National Park",
@@ -43517,7 +43545,9 @@
      "author": "rachel_thecat",
      "lat": 47.674996,
      "lng": -124.397764,
-     "cats": "Category:CC-BY-SA-2.0 Category:Cupressales in Olympic National Park Category:Files by rachel thecat Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR Category:June 2007 in Washington (state) Category:Kalaloch Big Cedar Category:United States photographs taken on 2007-06-08"
+     "cats": "Category:CC-BY-SA-2.0 Category:Cupressales in Olympic National Park Category:Files by rachel thecat Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR Category:June 2007 in Washington (state) Category:Kalaloch Big Cedar Category:United States photographs taken on 2007-06-08",
+     "judged": "approve",
+     "verdict": "the hollow burled base fills the frame, which is this tree's whole point since the 2014 storm took the crown"
     },
     {
      "title": "File:The Kalaloch Cedar ^ an architect - Flickr - rachel thecat.jpg",
@@ -43545,7 +43575,9 @@
      "author": "",
      "lat": null,
      "lng": null,
-     "cats": "Category:1910 photographs of California Category:CC-PD-Mark Category:El Palo Alto Category:Files with no machine-readable author Category:Media lacking author information Category:PD-old missing SDC copyright status Category:PD Old Category:Postcards of Santa Clara County, California Category:San Francisquito Creek Bridge Category:Sequoia sempervirens (historical images)"
+     "cats": "Category:1910 photographs of California Category:CC-PD-Mark Category:El Palo Alto Category:Files with no machine-readable author Category:Media lacking author information Category:PD-old missing SDC copyright status Category:PD Old Category:Postcards of Santa Clara County, California Category:San Francisquito Creek Bridge Category:Sequoia sempervirens (historical images)",
+     "judged": "reject",
+     "verdict": "a tinted vintage postcard with printed title"
     },
     {
      "title": "File:El Palo Alto Tree August 2004.jpg",
@@ -43555,7 +43587,9 @@
      "author": "",
      "lat": 37.4474445,
      "lng": -122.1705812,
-     "cats": "Category:August 2004 United States photographs Category:August 2004 in California Category:Bridges in the United States photographed in 2004 Category:CC-BY-SA-3.0-migrated Category:El Palo Alto Category:Files with coordinates missing SDC location of creation Category:Files with no machine-readable author Category:Files with no machine-readable source Category:GFDL Category:License migration completed Category:Media missing infobox template Category:San Francisquito Creek Bridge Category:Self-published work Category:Sequoia sempervirens (historical images) Category:Taken with Canon Digital IXUS 400 Category:User-created GFDL images"
+     "cats": "Category:August 2004 United States photographs Category:August 2004 in California Category:Bridges in the United States photographed in 2004 Category:CC-BY-SA-3.0-migrated Category:El Palo Alto Category:Files with coordinates missing SDC location of creation Category:Files with no machine-readable author Category:Files with no machine-readable source Category:GFDL Category:License migration completed Category:Media missing infobox template Category:San Francisquito Creek Bridge Category:Self-published work Category:Sequoia sempervirens (historical images) Category:Taken with Canon Digital IXUS 400 Category:User-created GFDL images",
+     "judged": "reject",
+     "verdict": "a distant view: the foreground is a railway trestle and gravel, and the redwood has to be searched for"
     },
     {
      "title": "iNat obs 11110 (Sequoia sempervirens)",
@@ -43651,7 +43685,9 @@
      "author": "Eric Kilby from Somerville, MA, USA",
      "lat": 36.581555,
      "lng": -118.751331,
-     "cats": "Category:CC-BY-SA-2.0 Category:Files from Eric Kilby Flickr stream Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:General Sherman Tree Category:May 2024 in California Category:Taken with Nikon Z 9 Category:Trees in the Northern Hemisphere in May 2024 Category:United States photographs taken on 2024-05-20"
+     "cats": "Category:CC-BY-SA-2.0 Category:Files from Eric Kilby Flickr stream Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:General Sherman Tree Category:May 2024 in California Category:Taken with Nikon Z 9 Category:Trees in the Northern Hemisphere in May 2024 Category:United States photographs taken on 2024-05-20",
+     "judged": "approve",
+     "verdict": "base to crown, sunlit trunk against blue sky; candidate 2013-09-20 10 57 41 measured POOR, underexposed"
     },
     {
      "title": "File:General Sherman Tree in Sequoia National Park - June 2022.jpg",
@@ -43774,7 +43810,9 @@
      "lat": 42.468814,
      "lng": -72.578356,
      "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Sunderland Buttonball (tree) Category:Taken with Samsung IT100",
-     "source": "wikidata/Q5003097"
+     "source": "wikidata/Q5003097",
+     "judged": "approve",
+     "verdict": "the massive trunk and its candelabra of limbs fill the frame; the crown is cut off and the trunk architecture is the point of this tree"
     },
     {
      "title": "File:Buttonball 05.jpg",
