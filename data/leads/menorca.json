@@ -2,7 +2,7 @@
  "city": "Menorca",
  "country": "Spain",
  "city_slug": "menorca",
- "note": "From the 2026-08-30 verify pass on the Balearic arbres singulars register, 16 rows within 25 km of Mao. Six trees verified and delivered to data/research/menorca-verified.json: Pi Ver del Doctor Camps, Pi de Cala Galdana, Alzina d'Alfuri de Dalt, the Platers de l'Ermita de Sant Joan des Verger, and both trees of the Illa del Llatzeret (Drago and Pi Felip). Leads failed only our evidence or access bar; blocked can never ship as they stand.",
+ "note": "From the 2026-08-30 verify pass on the Balearic arbres singulars register, 16 rows within 25 km of Mao. Six trees verified and delivered to data/research/menorca-verified.json: Pi Ver del Doctor Camps, Pi de Cala Galdana, Alzina d'Alfuri de Dalt, the Platers de l'Ermita de Sant Joan des Verger, and both trees of the Illa del Llatzeret (Drago and Pi Felip). The Llatzeret pair was blocked on 2026-08-30 as an appointment under hard rule 10 and UNBLOCKED by Hidde on 2026-09-01: a bookable boat tour is inconvenience rather than harm, and the honest answer to inconvenience is to state it. They are staged at data/research/menorca-llatzeret.json. Leads failed only our evidence or access bar; blocked can never ship as they stand.",
  "leads": [
   {
    "name": "Alzina de s'Artiga Vella",
@@ -75,60 +75,6 @@
    "lat": 40.020597,
    "lng": 3.988225,
    "reason": "Register id 402, Ferreries. The register's own notes field says plainly: 'Arbre en regressio, practicament mort' (tree in decline, practically dead). Privately held (particular) as well. Never ships: this project does not publish dead trees, and there is no public-access evidence in any case."
-  },
-  {
-   "id": "men_005",
-   "name": "Drago de l'Illa del Llatzeret",
-   "species": "Dragon Tree (Dracaena draco)",
-   "age_estimate": "roughly 98 years",
-   "age_min": 95,
-   "age_max": 100,
-   "girth_cm": 250,
-   "height_m": 4,
-   "location": {
-    "address": "In the garden of the old Lazareto (quarantine station), Illa del Llatzeret, Mao harbour, Menorca",
-    "latitude": 39.877345,
-    "longitude": 4.302799,
-    "neighbourhood": "Illa del Llatzeret, Mao"
-   },
-   "verified_sources": [
-    "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI551158&id=551158",
-    "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/",
-    "https://www.menorca.es/en/Visitas_guiadas_a_la_Illa_de_Llatzeret/14057"
-   ],
-   "access": "Restricted to guided visits: the island is reached only by a Fundacio Foment del Turisme de Menorca boat tour departing the Calesfonts dock in Es Castell (2.5 hours, runs seasonally, paid ticket, booking required, contact llatzeret@menorca.es); not a walk-up destination",
-   "transport": "Guided boat crossing from the Calesfonts dock, Es Castell, roughly 15 minutes from Mao by car to reach the departure point",
-   "location_precision": "confirmed",
-   "curation_status": "ai_generated",
-   "verify_notes": "CAIB official register fitxa (catalogued 17/02/2003, register id 417/19): stands in the garden of the former Lazareto de Mao, a quarantine station built for ships and travellers arriving from the Indies, historically used to treat infectious disease. A Canary Islands species, documented as planted in 1928 (so a real, sourced planting date for this specimen, not a bridge claim: age given directly as '97 anys, planted 1928' in an apparently later revision of the fitxa, which puts today's age at roughly 98 years). Notable in the Balearics for being one of few large, well-preserved, unmutilated dragon trees that grew in situ. Wide crown with 7 primary branches, 9.4m canopy diameter, only 3.8m tall, base perimeter 3.80m, perimeter at 1.3m 2.50m (girth_cm 250), abundant fruiting, leaves in good condition. Owned by the Ministerio de Sanidad (public). Independent source SDL Medioambiente (2016) repeats the 1928 planting date and location, confirming the register. The island itself is confirmed as a real, bookable public destination via the Consell Insular de Menorca's own tourism page for guided Llatzeret visits (boat from Calesfonts, 2.5-hour tour); exact current pricing was not confirmed on that page directly and is left out rather than guessed. This is a paid, seasonal, guided-only site, which the access field states plainly per hard rule 10's viewing/access tests.",
-   "blocked_reason": "Hard rule 10: reachable only on a booked guided boat tour to the Illa del Llatzeret (Fundacio Foment del Turisme de Menorca, 2.5 hours, from the Calesfonts dock at Es Castell). The rule allows paid entry and does not allow an appointment, and a scheduled seasonal tour you must book is an appointment rather than a gate you walk through. Fully verified otherwise, 2026-08-30: the dragon tree has a documented 1928 planting and the Pi Felip carries the register's own 2025 note about a lost branch, which is the freshest proof of life on the whole island. If the island ever opens to independent visitors, or Hidde rules that a booked tour counts, both ship as they stand with no further research."
-  },
-  {
-   "id": "men_006",
-   "name": "Pi Felip de l'Illa del Llatzeret",
-   "species": "Aleppo Pine (Pinus halepensis)",
-   "age_estimate": "roughly 80-120 years",
-   "age_min": 80,
-   "age_max": 120,
-   "girth_cm": 360,
-   "height_m": 10,
-   "location": {
-    "address": "In the garden of the old Lazareto (quarantine station), Illa del Llatzeret, Mao harbour, Menorca",
-    "latitude": 39.877562,
-    "longitude": 4.30271,
-    "neighbourhood": "Illa del Llatzeret, Mao"
-   },
-   "verified_sources": [
-    "https://www.caib.es/sites/proteccioespecies/ca/fitxes/archivopub.do?ctrl=MCRST272ZI551195&id=551195",
-    "https://sdlmedioambiente.com/los-16-arboles-singulares-de-menorca-y-algunas-de-sus-curiosidades/",
-    "https://www.menorca.es/en/Visitas_guiadas_a_la_Illa_de_Llatzeret/14057"
-   ],
-   "access": "Restricted to guided visits: the island is reached only by a Fundacio Foment del Turisme de Menorca boat tour departing the Calesfonts dock in Es Castell (2.5 hours, runs seasonally, paid ticket, booking required, contact llatzeret@menorca.es); not a walk-up destination",
-   "transport": "Guided boat crossing from the Calesfonts dock, Es Castell, roughly 15 minutes from Mao by car to reach the departure point",
-   "location_precision": "confirmed",
-   "curation_status": "ai_generated",
-   "verify_notes": "CAIB official register fitxa (catalogued 17/02/2003, register id 662/55): stands a few metres from the dragon tree in the same Lazareto garden, notable for its unusually wide, flat-branched crown, spreading 20.8 by 26 metres on just four primary branches, height only 10m, trunk diameter 1.14m (base perimeter 440cm, perimeter at 1.3m 360cm, girth_cm 360). Several branches are propped up. The register itself is explicit about declining condition: mature specimen with unbalanced structure, low vitality, high fragility, only 40-60% of canopy volume remaining, and notes it lost another branch as recently as 2025, which is unusually current confirmation that the tree is a living, monitored specimen. Owned by the Ministerio de Sanidad (public). Independent source SDL Medioambiente (2016) corroborates location and species and gives a close height figure (10.5m vs the register's 10m). Same access as the neighbouring dragon tree: paid, seasonal, guided-boat-only visit to the island via the Consell Insular de Menorca's own Llatzeret tour.",
-   "blocked_reason": "Hard rule 10: reachable only on a booked guided boat tour to the Illa del Llatzeret (Fundacio Foment del Turisme de Menorca, 2.5 hours, from the Calesfonts dock at Es Castell). The rule allows paid entry and does not allow an appointment, and a scheduled seasonal tour you must book is an appointment rather than a gate you walk through. Fully verified otherwise, 2026-08-30: the dragon tree has a documented 1928 planting and the Pi Felip carries the register's own 2025 note about a lost branch, which is the freshest proof of life on the whole island. If the island ever opens to independent visitors, or Hidde rules that a booked tour counts, both ship as they stand with no further research."
   }
  ]
 }

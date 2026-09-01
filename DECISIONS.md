@@ -1,5 +1,43 @@
 # Decisions
 
+## 2026-09-01 - A booking is paid entry with a timetable, not an appointment
+
+Hidde, shown two verified Menorca trees held off the site because the Illa del
+Llatzeret is reached only on a booked boat tour: "kunnen we bij Menorca en
+Llatzeret niet gewoon die informatie tonen net als we doen als je een ticket
+hebt, lijkt mij geen probleem als het maar duidelijk is dat je er niet zomaar
+komt."
+
+**What changed.** Hard rule 10's access list refuses "an appointment". That was
+read on 2026-08-30 as covering any booking, and two fully verified trees were
+blocked on it. It now reads narrowly: the appointment this rule refuses is asking
+a PRIVATE party's permission to enter their space, the doorbell, the reception
+desk, the guard who checks. A tour anyone can book, a ticketed opening time, a
+guided visit to a public site is the paid-entry case wearing a timetable, and
+paid entry has always been a yes as long as `access` says so.
+
+**The test, stated so it does not drift back.** Is the thing between the reader
+and the tree a PRICE AND A SCHEDULE, which we can state exactly, or somebody's
+PERMISSION, which we cannot promise on their behalf? The first ships with an
+honest access line. The second does not ship.
+
+**Why the earlier reading was wrong on the rule's own terms**, which is the part
+worth keeping. CLAUDE.md already says hard rule 10 was written about HARM, a tree
+damaged by visitors and a person's home invaded, and that a gate which might be
+shut is inconvenience rather than harm, whose honest answer is to say so rather
+than hide the thing. A bookable boat to a public island is inconvenience. The
+block was this rule applied harder than it says, which is a failure mode this
+corpus has now recorded several times.
+
+**What did not move.** A location its source deliberately withholds, and
+somebody's home, both still absolute. And the page has to be unmistakable: the
+Menorca copy said "no ticket, no gate and no appointment anywhere on this list",
+which was true of four trees and false of six, and was rewritten with them.
+
+**Consequence worth noting:** Menorca goes to two paid entries of six, 33 percent,
+which sits exactly on the "at most about a third" line. A third paid tree there
+needs a check first.
+
 ## 2026-08-31 - A place may publish below four trees when one tree is itself the destination
 
 Hidde, after asking whether trees would be better handled loose from pages at
