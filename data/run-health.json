@@ -3058,6 +3058,73 @@
    "tokens": null,
    "claims_held": [],
    "logged": null
+  },
+  {
+   "started": "2026-09-01T18:58:18+00:00",
+   "date": "2026-09-01",
+   "run_id": "33546745618",
+   "minutes": 53.9,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 451,
+   "denials": 29,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(iconv), Bash(if), Bash(nohup), Bash(python3), Bash(rm), Bash(until)",
+   "ended": "success",
+   "tokens": 3480713,
+   "claims_held": [
+    "madeira",
+    "pisa"
+   ],
+   "commits": 25,
+   "cities_touched": 11,
+   "cities": [
+    {
+     "city": "gonzales-texas",
+     "trees": 1
+    },
+    {
+     "city": "princeton-new-jersey",
+     "trees": 1
+    },
+    {
+     "city": "wye-mills-maryland",
+     "trees": 1
+    },
+    {
+     "city": "athens-georgia",
+     "trees": 0
+    },
+    {
+     "city": "bari",
+     "trees": 0
+    },
+    {
+     "city": "buenos-aires",
+     "trees": 0
+    },
+    {
+     "city": "charleston",
+     "trees": 0
+    },
+    {
+     "city": "crete",
+     "trees": 0
+    },
+    {
+     "city": "ede",
+     "trees": 0
+    },
+    {
+     "city": "heerlen",
+     "trees": 0
+    },
+    {
+     "city": "tenerife",
+     "trees": 0
+    }
+   ],
+   "trees": 3,
+   "logged": true
   }
  ],
  "schedule_changes": [
