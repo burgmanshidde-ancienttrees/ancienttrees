@@ -383,14 +383,6 @@
    "trees": 6
   },
   {
-   "city": "Girona",
-   "country": "Spain",
-   "slug": "girona",
-   "status": "published",
-   "trees": 7,
-   "note": "Opened 2026-08-31 from the same Catalan register. None is in Girona itself: the city's own Devesa is a grove of ~2,500 planes and the register declares individuals only. Four of the seven are inside designated natural areas. The register records vitality, so the dead entries near Girona were excluded from the data rather than by guess."
-  },
-  {
    "city": "Athens",
    "country": "Greece",
    "slug": "athens",
@@ -538,14 +530,6 @@
    "slug": "boston",
    "status": "published",
    "trees": 10
-  },
-  {
-   "city": "Hiroshima",
-   "country": "Japan",
-   "slug": "hiroshima",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 8
   },
   {
    "city": "Lyon",
@@ -814,14 +798,6 @@
    "trees": 4
   },
   {
-   "city": "Sapporo",
-   "country": "Japan",
-   "slug": "sapporo",
-   "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from the Hitozato Kyoboku giant-tree database (Environment Ministry 2007 survey, per-tree coordinates) and Imada Hideki's 150 Giant and Notable Trees of Hokkaido (2018). A young city: no shrine here predates 1869, so the old trees are either Maruyama primeval forest remnants or settler imports."
-  },
-  {
    "city": "Kobe",
    "country": "Japan",
    "slug": "kobe",
@@ -862,14 +838,6 @@
    "trees": 4
   },
   {
-   "city": "Nagoya",
-   "country": "Japan",
-   "slug": "nagoya",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 6
-  },
-  {
    "city": "Osaka",
    "country": "Japan",
    "slug": "osaka",
@@ -901,14 +869,6 @@
    "note": "MASAF cluster: 20 registered trees inside 1.6 km, 6 published as one walk of about 800 m entirely inside the walls. Rest in data/leads/lucca.json.",
    "demand_views_90d": 52271,
    "trees": 14
-  },
-  {
-   "city": "Naha",
-   "country": "Japan",
-   "slug": "naha",
-   "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from Okinawa prefecture's hundred notable trees (midorihana-okinawa.jp, run by the prefecture's environment department), which publishes per tree the species, height, girth, an estimated AGE, the owner, a coordinate and the designation history, and marks revoked certifications. The best-documented register used today. Yonagusuku's banyan, Okinawa's biggest tree at 23.5 m girth, is excluded and recorded as blocked: the register names its owner as a private household."
   },
   {
    "city": "Padua",
@@ -952,14 +912,6 @@
    "trees": 9
   },
   {
-   "city": "Kanazawa",
-   "country": "Japan",
-   "slug": "kanazawa",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 7
-  },
-  {
    "city": "Kuala Lumpur",
    "country": "Malaysia",
    "slug": "kuala-lumpur",
@@ -976,20 +928,20 @@
    "trees": 8
   },
   {
-   "city": "Segovia",
-   "country": "Spain",
-   "slug": "segovia",
-   "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from Castilla y Leon's register of notable trees (ORDEN MAM/1156/2006). Five of six are in the royal gardens at La Granja, 11 km out. The register has no age column, so no tree here carries an age, and its trunk column is not quoted anywhere because reading it as diameter makes AS-SG-07 the thickest sequoia in Europe."
-  },
-  {
    "city": "Cape Town",
    "country": "South Africa",
    "slug": "cape-town",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Girona",
+   "country": "Spain",
+   "slug": "girona",
+   "status": "published",
+   "trees": 7,
+   "note": "Opened 2026-08-31 from the same Catalan register. None is in Girona itself: the city's own Devesa is a grove of ~2,500 planes and the register declares individuals only. Four of the seven are inside designated natural areas. The register records vitality, so the dead entries near Girona were excluded from the data rather than by guess."
   },
   {
    "city": "Nice",
@@ -1032,14 +984,6 @@
    "trees": 21
   },
   {
-   "city": "Ronda",
-   "country": "Spain",
-   "slug": "ronda",
-   "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from Andalusia's singular-tree register, which publishes a one-page measured sheet per tree carrying height, girth at 1.30 m, girth at the base, crown diameter AND an ownership field. That ownership field is what made this city publishable: it answers hard rule 10 from the data. Three trees are on public land in the Sierra de las Nieves, two are private land beside a public track, one is view-only from a pass and says so."
-  },
-  {
    "city": "Genoa",
    "country": "Italy",
    "slug": "genoa",
@@ -1047,14 +991,6 @@
    "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
    "demand_views_90d": 145206,
    "trees": 12
-  },
-  {
-   "city": "Kamakura",
-   "country": "Japan",
-   "slug": "kamakura",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 6
   },
   {
    "city": "Lima",
@@ -1070,14 +1006,6 @@
    "slug": "bari",
    "status": "published",
    "trees": 4
-  },
-  {
-   "city": "Tarragona",
-   "country": "Spain",
-   "slug": "tarragona",
-   "status": "published",
-   "trees": 4,
-   "note": "Opened 2026-08-31 from Catalonia's monumental-tree register via its structured Catalan Wikipedia mirror, which carries species, condition, height, girth at 1.3 m, crown, coordinates and the official gencat record per tree. Only four of the nine live trees within 30 km stand on ground the public may walk on; the rest are on private mas and are recorded as blocked."
   },
   {
    "city": "Dresden",
@@ -1134,12 +1062,12 @@
    "trees": 4
   },
   {
-   "city": "Pamplona",
-   "country": "Spain",
-   "slug": "pamplona",
+   "city": "Hiroshima",
+   "country": "Japan",
+   "slug": "hiroshima",
    "status": "published",
-   "trees": 6,
-   "note": "Opened 2026-08-31 from Navarra's SITNA register of declared Natural Monuments (CC BY 4.0). The thinnest register on the site: species, place, declaration year and coordinate, with no height, girth, age or vitality field anywhere, so no tree here carries a measurement it does not have and every page says so."
+   "demand_views_90d": null,
+   "trees": 8
   },
   {
    "city": "Bangkok",
@@ -1190,6 +1118,22 @@
    "trees": 5
   },
   {
+   "city": "Sapporo",
+   "country": "Japan",
+   "slug": "sapporo",
+   "status": "published",
+   "trees": 6,
+   "note": "Opened 2026-08-31 from the Hitozato Kyoboku giant-tree database (Environment Ministry 2007 survey, per-tree coordinates) and Imada Hideki's 150 Giant and Notable Trees of Hokkaido (2018). A young city: no shrine here predates 1869, so the old trees are either Maruyama primeval forest remnants or settler imports."
+  },
+  {
+   "city": "Nagoya",
+   "country": "Japan",
+   "slug": "nagoya",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
+  },
+  {
    "city": "Gdansk",
    "country": "Poland",
    "slug": "gdansk",
@@ -1203,6 +1147,14 @@
    "slug": "salzburg",
    "status": "published",
    "trees": 5
+  },
+  {
+   "city": "Naha",
+   "country": "Japan",
+   "slug": "naha",
+   "status": "published",
+   "trees": 6,
+   "note": "Opened 2026-08-31 from Okinawa prefecture's hundred notable trees (midorihana-okinawa.jp, run by the prefecture's environment department), which publishes per tree the species, height, girth, an estimated AGE, the owner, a coordinate and the designation history, and marks revoked certifications. The best-documented register used today. Yonagusuku's banyan, Okinawa's biggest tree at 23.5 m girth, is excluded and recorded as blocked: the register names its owner as a private household."
   },
   {
    "city": "Antwerp",
@@ -1229,12 +1181,28 @@
    "trees": 4
   },
   {
+   "city": "Kanazawa",
+   "country": "Japan",
+   "slug": "kanazawa",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 7
+  },
+  {
    "city": "Ferrara",
    "country": "Italy",
    "slug": "ferrara",
    "status": "published",
    "demand_views_90d": 27490,
    "trees": 5
+  },
+  {
+   "city": "Segovia",
+   "country": "Spain",
+   "slug": "segovia",
+   "status": "published",
+   "trees": 6,
+   "note": "Opened 2026-08-31 from Castilla y Leon's register of notable trees (ORDEN MAM/1156/2006). Five of six are in the royal gardens at La Granja, 11 km out. The register has no age column, so no tree here carries an age, and its trunk column is not quoted anywhere because reading it as diameter makes AS-SG-07 the thickest sequoia in Europe."
   },
   {
    "city": "Zaragoza",
@@ -1245,12 +1213,44 @@
    "trees": 7
   },
   {
+   "city": "Ronda",
+   "country": "Spain",
+   "slug": "ronda",
+   "status": "published",
+   "trees": 6,
+   "note": "Opened 2026-08-31 from Andalusia's singular-tree register, which publishes a one-page measured sheet per tree carrying height, girth at 1.30 m, girth at the base, crown diameter AND an ownership field. That ownership field is what made this city publishable: it answers hard rule 10 from the data. Three trees are on public land in the Sierra de las Nieves, two are private land beside a public track, one is view-only from a pass and says so."
+  },
+  {
+   "city": "Kamakura",
+   "country": "Japan",
+   "slug": "kamakura",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
+  },
+  {
    "city": "Buenos Aires",
    "country": "Argentina",
    "slug": "buenos-aires",
    "status": "published",
    "demand_views_90d": null,
    "trees": 4
+  },
+  {
+   "city": "Tarragona",
+   "country": "Spain",
+   "slug": "tarragona",
+   "status": "published",
+   "trees": 4,
+   "note": "Opened 2026-08-31 from Catalonia's monumental-tree register via its structured Catalan Wikipedia mirror, which carries species, condition, height, girth at 1.3 m, crown, coordinates and the official gencat record per tree. Only four of the nine live trees within 30 km stand on ground the public may walk on; the rest are on private mas and are recorded as blocked."
+  },
+  {
+   "city": "Pamplona",
+   "country": "Spain",
+   "slug": "pamplona",
+   "status": "published",
+   "trees": 6,
+   "note": "Opened 2026-08-31 from Navarra's SITNA register of declared Natural Monuments (CC BY 4.0). The thinnest register on the site: species, place, declaration year and coordinate, with no height, girth, age or vitality field anywhere, so no tree here carries a measurement it does not have and every page says so."
   },
   {
    "city": "Cesky Krumlov",
