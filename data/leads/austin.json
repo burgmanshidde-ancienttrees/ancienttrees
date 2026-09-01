@@ -56,6 +56,96 @@
    ],
    "girth_cm": 488,
    "owner": "City of Pflugerville"
+  },
+  {
+   "name": "Ilex decidua (Texas Big Tree Registry TreeID 15446)",
+   "species": "Ilex decidua",
+   "lat": 30.28555556,
+   "lng": -97.74572222,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 2.1 km from the centre of Austin. Condition per the registry: 2. Measured April 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 71
+  },
+  {
+   "name": "Quercus sinuata var. breviloba (Texas Big Tree Registry TreeID 970)",
+   "species": "Quercus sinuata var. breviloba",
+   "lat": 30.24305556,
+   "lng": -97.73472222,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 2.8 km from the centre of Austin. Condition per the registry: 2. Measured December 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 335
+  },
+  {
+   "name": "Fraxinus texensis (Texas Big Tree Registry TreeID 2332)",
+   "species": "Fraxinus texensis",
+   "lat": 30.28533333,
+   "lng": -97.78586111,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.6 km from the centre of Austin. Condition per the registry: 2. Measured July 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 218
+  },
+  {
+   "name": "Fraxinus velutina (Texas Big Tree Registry TreeID 6435)",
+   "species": "Fraxinus velutina",
+   "lat": 30.34137778,
+   "lng": -97.75007778,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 8.3 km from the centre of Austin. Condition per the registry: 2. Measured June 2022. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 480
+  },
+  {
+   "name": "Quercus sinuata var. sinuata (Texas Big Tree Registry TreeID 29446)",
+   "species": "Quercus sinuata var. sinuata",
+   "lat": 30.18156111,
+   "lng": -97.48715833,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 26.4 km from the centre of Austin. Condition per the registry: 2. Measured March 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 290
+  },
+  {
+   "name": "Quercus sinuata var. sinuata (Texas Big Tree Registry TreeID 1077)",
+   "species": "Quercus sinuata var. sinuata",
+   "lat": 30.18541667,
+   "lng": -97.48161111,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 26.7 km from the centre of Austin. Condition per the registry: 2. Measured March 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 340
+  },
+  {
+   "name": "Quercus sinuata var. sinuata (Texas Big Tree Registry TreeID 29445)",
+   "species": "Quercus sinuata var. sinuata",
+   "lat": 30.18205556,
+   "lng": -97.48214722,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 26.8 km from the centre of Austin. Condition per the registry: 2. Measured March 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 340
+  },
+  {
+   "name": "Chilopsis linearis (Texas Big Tree Registry TreeID 32449)",
+   "species": "Chilopsis linearis",
+   "lat": 30.17277778,
+   "lng": -98.00027778,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 26.8 km from the centre of Austin. Condition per the registry: 2. Measured June 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 183
+  },
+  {
+   "name": "Rhus virens var. virens (Texas Big Tree Registry TreeID 887)",
+   "species": "Rhus virens var. virens",
+   "lat": 30.42655556,
+   "lng": -97.96330556,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 27.6 km from the centre of Austin. Condition per the registry: 2. Measured April 2019. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 84
   }
  ],
  "blocked": [
