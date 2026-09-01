@@ -535,6 +535,12 @@
     500
    ]
   },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/427773301/large.jpeg": {
+   "base": "cph_001-davie-poplar",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/d/dc/Angel_Live_Oak.jpg": {
    "base": "chs_001-the-angel-oak",
    "widths": [
@@ -1629,6 +1635,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/c/c7/Naturdenkmal_Linde_in_der_Gr%C3%BCnanlage_Hallerwiese_N%C3%BCrnberg_2025-02-09_09.jpg": {
    "base": "nbg_001-the-gnarled-lime-of-hallerwiese",
+   "widths": [
+    500
+   ]
+  },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/292407471/large.jpg": {
+   "base": "okc_001-the-survivor-tree",
    "widths": [
     500
    ]
