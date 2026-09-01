@@ -1,8 +1,19 @@
-reply to submission 54, Angie Rathmel, Prague plane of Nove Mlyny
+reply to submission 54, Prague, the Plane of Nove Mlyny
+(no name in this file on purpose: we never record a sender's name)
 ---
-You're right, the plane at Nove Mlyny still has no photo on the page. Everything else you described checks out against our sources: the corner opposite the Church of St Clement, the register measurement.
+You are right, and thank you. The plane at Nove Mlyny has no photograph on
+its page, and that is a real gap rather than an oversight we had missed.
 
-If you have a picture of it yourself, reply here with it and we'll get it credited and live. Thank you for flagging it.
+We only publish a photo when it is clearly of that tree and carries an open
+licence, so the page shows the gap honestly instead of putting up a stock
+picture of a plane tree. That is why it is still empty.
+
+If you have a photograph of it, or pass it again and take one, send it
+through the contribute link on the page and we will credit you and put it
+live. A picture taken from across the corner, with the whole tree in the
+frame, is exactly what the page needs.
+
+And while you are there: is there a tree in Prague we have missed?
 
 Ancient Trees
-https://ancienttrees.app
+https://ancienttrees.app/prague/plane-of-nove-mlyny

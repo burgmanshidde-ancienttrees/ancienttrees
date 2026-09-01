@@ -10,6 +10,54 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-01 - Reader submission 54 (Prague, the Plane of Nove Mlyny): what she actually said, and a name in a public repo
+
+The first genuine tree submission this project has had from a stranger, and it
+had no CURATION entry until now, which is why nobody could say what it was.
+
+**What she actually wrote**, in full, is one sentence: the Plane of Nove Mlyny
+is listed on this site but does not yet have a picture. That is the whole
+report. She is right; prg_017 still carries `photo.status: missing`.
+
+**What she did NOT do is correct the location.** The street corner text on the
+row is the contribute form's own location field, filled in while looking at our
+page, so it matches our published address because it came from it. The commit
+that processed her submission (d17cdac) changed nothing but a line of notes: the
+address, the coordinates and the recognition line were all already there. Our
+own `verify_notes` nevertheless said she "confirmed the location and register
+facts", which is an over-read of a form field as independent verification, and
+it has been rewritten to say what happened instead.
+
+**She is also the most engaged real person the site has had.** Account created
+2026-08-30 20:22, report sent 20:55, then five Prague trees saved between 20:58
+and 21:13 including the one she reported. Not signed in since. Of five accounts
+in existence, hers is one of only two that has ever saved anything.
+
+**The serious finding: her name was written into a public repository.** It went
+into prg_017's verify_notes and into drafts/reply-prague-plane.md on 2026-08-30.
+It never rendered on the site, and that is beside the point: this repo is
+public, so a name in data/ or drafts/ is published on GitHub the moment it is
+pushed. Both files are now de-named.
+
+This is the second day this has happened (2026-08-11 was a submitter's name
+rendered on a tree page), so per the ratchet it is now a build check:
+`check_no_sender_names()` in scripts/preflight.py fails on a name written next
+to a submission reference, in data/cities, data/leads or drafts. Removing it
+needs Hidde.
+
+**FOR HIDDE, two things that are yours:**
+- Her name is still in commit d17cdac in the public history. Taking it out means
+  rewriting published history and a force-push, which hard rule 3 forbids
+  without your say-so. HEAD is clean; the history is your call.
+- The reply is drafted and rewritten (drafts/reply-prague-plane.md) and has NOT
+  been sent. `replied_at` and `thanked_at` are both still null. Her account has
+  an email on file, so unlike submission 56 the channel works. The draft now
+  thanks her, explains why the gap is honest rather than an oversight, asks for
+  a photograph, and ends with a tree question. It goes when you say so.
+
+Still open, and it is the thing that would turn the reply into a result: prg_017
+has no photograph and nobody has hunted one.
+
 ## 2026-08-31 - Nine zero cities opened, Matera and Taormina refused on access
 
 Registers used, and what each one does or does not answer:
