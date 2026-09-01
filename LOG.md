@@ -9,6 +9,64 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-01 (session) - Nine photographs on eight cities that had none
+
+You asked for a photo round. 112 of 230 published cities carried no photograph at
+all, and a night run still cannot judge one, so this is the half only a session can do.
+
+**How the targets were picked**, because "cities with no photo" is 112 and a viewing
+pass is 30 images. The intersection of three things: no photograph anywhere in the
+city, a candidate already in the photo queue, and the newest DATA.md depth roster
+showing the page taking impressions. That gave 27 cities. Added to it were the
+single-famous-tree pages from the August batch, where the photograph is most of the
+page and the tree is the reason for the trip.
+
+| | |
+|---|---|
+| images fetched at 960px | 34 |
+| killed by photo_light before anybody looked | 8 |
+| viewed as pixels | 26 |
+| approved | 9 |
+| cities that went from no photograph to one | 8 |
+
+| City | Tree | Impressions |
+|---|---|---:|
+| Tenerife | Pino Gordo | 195 |
+| Crete | the Olive Tree of Vouves | 110 |
+| Crete | the Olive Tree of Azoria | |
+| Charleston | the Angel Oak | new page |
+| Bari | the Lie Tree of Quasano | |
+| Heerlen | the Plane of Terworm | |
+| Athens, Georgia | the Son of the Tree That Owns Itself | new page |
+| Ede | Beuk Marjan | |
+| Buenos Aires | the Magnolia de Avellaneda | |
+
+**Half the shortlist came back already judged**, several of them within the hour, by
+the photo lane the machine gained this evening. That is the queue's memory working
+rather than a waste: it cost nothing and it stopped me re-judging Sydney's jacaranda,
+Bratislava's birch and Seattle's grand fir, each of which already carried a written
+verdict better than the one I would have improvised.
+
+**What the 25 rejections say, and it is the same lesson every time.** Filename
+matching produced a Bombardier Dash 8 for a Toronto oak, portraits of Queen Wilhelmina
+for a Rotterdam linden named after her, and a street corner with wheelie bins for a
+Groningen poplar. The matching decides what is worth LOOKING at and never what ships.
+
+**Two calls worth arguing with.** Ede's beech is approved on a 55 m geotag plus the
+Dutch national register holding no other monumental tree within 500 metres of it,
+rather than on its filename, which is the Copenhagen lesson applied. And Athens
+Georgia had a cleaner photograph of the same oak against a blue sky, which was
+rejected because it is BARE and the in-leaf rule says so.
+
+**FOR HIDDE, one thing to know rather than to do.** The only photograph of the
+Evergreen Plane of Gortyn, on the Crete page, shows a leafless skeletal tree. Either
+the file is named for the place rather than the tree, or that tree is in trouble, and
+a photograph cannot tell which. Written up in CURATION.md for a verify pass. Nothing
+suggests it is gone; our own picture just disagrees with our own story.
+
+Cost: no agents dispatched, one session context, roughly 40 minutes of wall clock,
+most of it the 3.2 second throttle Wikimedia needs.
+
 ## 2026-09-01 (session) - Twenty famous American trees go live, on nineteen places that had none
 
 Hidde asked whether the 60 American trees sitting in `data/leads/_famous-united-states.json` could go live. Sixty was never the number, and the arithmetic is worth keeping because the same file exists for 50 other countries.

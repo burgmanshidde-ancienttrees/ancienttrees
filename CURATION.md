@@ -10,6 +10,26 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-01 - The only photograph of the Evergreen Plane of Gortyn shows a bare tree
+
+Found during a session photo viewing pass, recorded rather than acted on because a
+photograph cannot settle it. `crt_004` is the Evergreen Plane of Gortyn, whose entire
+claim to fame is that it keeps its leaves. The three candidates in the photo queue are
+all from one 2023 series named "Gortys Evergreen Platanus", and the one viewed at 960px
+(20230607 105402) shows a path lined with flowering oleander and, at the left edge, a
+leafless skeletal tree. Two readings, and they need different answers:
+
+- The bare tree in frame is NOT the plane, and the file is named for the place rather
+  than the subject. Then the entry is fine and the photograph is simply useless.
+- The bare tree IS the plane. Then the tree is in trouble or dead, and a dead tree
+  never ships (CLAUDE.md, "we doen niet aan dode bomen").
+
+The geotags sit 634 m from our pin, which is far enough inside a large archaeological
+site to mean nothing either way. A verify pass should ask the Greek forestry service or
+the Gortyn site authority whether the tree is alive and what condition it is in, and
+should fix our pin while it is there. Not a blocker: nothing here is evidence the tree
+is gone, only that our one photograph disagrees with our own story.
+
 ## 2026-09-01 - Reader submission 57 (Baarn, GPS-only): another Hidde test click, not a reader report
 
 Row 57 (`kind: tree`, city "Baarn", `app:collect`, no tree name, no species, `why`
