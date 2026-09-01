@@ -47,6 +47,31 @@ final class FlowWalk: XCTestCase {
         let steps: [Step]
     }
 
+    /// Tap a button by identifier ONCE IT IS THERE.
+    ///
+    /// Every step here used to tap the instant its closure ran, which passes on
+    /// a desk and fails on a loaded runner. The launch check above waits for the
+    /// first static text, and that only proves the window drew something: a list
+    /// that fills from demo data, a sheet that springs, a push that animates all
+    /// land later than the first label does.
+    ///
+    /// It cost a red gate on 2026-09-01, on the report-and-block flow, which is
+    /// the worst one to lose because Apple's reviewer taps exactly that sequence
+    /// (iOS 18.5 in CI: "Failed to tap person-more, no matches found"). The same
+    /// flow walked clean on a desk minutes later, which is the signature of a
+    /// race rather than a fault: a test that fails only where the machine is
+    /// busy is testing the machine.
+    ///
+    /// Ten seconds, and it costs nothing when the element is already there,
+    /// because waitForExistence returns as soon as it appears. It deliberately
+    /// does NOT assert: a missing button still fails on the next line, with the
+    /// tap's own message and its screenshot, rather than being renamed here.
+    private static func tap(_ app: XCUIApplication, _ id: String) {
+        let b = app.buttons[id].firstMatch
+        _ = b.waitForExistence(timeout: 10)
+        b.tap()
+    }
+
     // MARK: - the flows
 
     /// A signed-in account, because signed out is a different and much shorter
@@ -58,9 +83,9 @@ final class FlowWalk: XCTestCase {
             // The one that was broken. Two doors to the profile editor and a
             // way back out of both.
             Flow(name: "settings", args: ["-tab=2"] + signedIn, steps: [
-                Step(name: "gear") { $0.buttons["mytrees-settings"].tap() },
-                Step(name: "your-own-card") { $0.buttons["profile-signin"].tap() },
-                Step(name: "cancel-the-editor") { $0.buttons["Cancel"].firstMatch.tap() },
+                Step(name: "gear") { Self.tap($0, "mytrees-settings") },
+                Step(name: "your-own-card") { Self.tap($0, "profile-signin") },
+                Step(name: "cancel-the-editor") { Self.tap($0, "Cancel") },
                 Step(name: "back-to-my-trees") { back($0) },
             ]),
 
@@ -93,7 +118,7 @@ final class FlowWalk: XCTestCase {
             // The camera in the bar is the app's one deed, and it is gated.
             // A gate that leaves you nowhere is worse than no gate.
             Flow(name: "collect-gate", args: ["-tab=0"], steps: [
-                Step(name: "tap-the-camera") { $0.buttons["tab-collect"].tap() },
+                Step(name: "tap-the-camera") { Self.tap($0, "tab-collect") },
             ]),
 
             // MODERATION, built 2026-08-27 and therefore the least walked thing
@@ -102,14 +127,14 @@ final class FlowWalk: XCTestCase {
             // afternoon.
             Flow(name: "report-and-block",
                  args: ["-tab=2", "-people", "-people-demo"] + signedIn, steps: [
-                Step(name: "open-the-ellipsis") { $0.buttons["person-more"].firstMatch.tap() },
-                Step(name: "choose-report") { $0.buttons["Report this person"].firstMatch.tap() },
+                Step(name: "open-the-ellipsis") { Self.tap($0, "person-more") },
+                Step(name: "choose-report") { Self.tap($0, "Report this person") },
                 // The literal string, not Moderation.Reason: a UI test runs in
                 // its own process and cannot see the app's types at all.
                 Step(name: "pick-a-reason") {
-                    $0.buttons["An offensive name or picture"].firstMatch.tap()
+                    Self.tap($0, "An offensive name or picture")
                 },
-                Step(name: "close-the-thank-you") { $0.buttons["OK"].firstMatch.tap() },
+                Step(name: "close-the-thank-you") { Self.tap($0, "OK") },
             ]),
 
             // The way into the app from a search, which is how somebody who
@@ -163,12 +188,12 @@ final class FlowWalk: XCTestCase {
             Flow(name: "delete-account-route",
                  args: ["-tab=2", "-settings"] + signedIn, steps: [
                 Step(name: "open-account") {
-                    $0.buttons["settings-account"].firstMatch.tap()
+                    Self.tap($0, "settings-account")
                 },
                 Step(name: "delete-asks-first") {
-                    $0.buttons["Delete account"].firstMatch.tap()
+                    Self.tap($0, "Delete account")
                 },
-                Step(name: "cancel") { $0.buttons["Cancel"].firstMatch.tap() },
+                Step(name: "cancel") { Self.tap($0, "Cancel") },
                 // AND IT STOPS THERE. Closing the sheet was a fourth step and
                 // it is gone: neither "Done" nor an identifier put on that
                 // Button can be found, because an identifier set inside a
@@ -179,8 +204,8 @@ final class FlowWalk: XCTestCase {
 
             Flow(name: "settings-bottom", args: ["-tab=2", "-settings"] + signedIn, steps: [
                 Step(name: "scroll-to-the-bottom") { $0.swipeUp(); $0.swipeUp() },
-                Step(name: "sign-out-asks-first") { $0.buttons["Sign out"].firstMatch.tap() },
-                Step(name: "cancel") { $0.buttons["Cancel"].firstMatch.tap() },
+                Step(name: "sign-out-asks-first") { Self.tap($0, "Sign out") },
+                Step(name: "cancel") { Self.tap($0, "Cancel") },
             ]),
         ]
     }

@@ -78,21 +78,35 @@ final class StressWalk: XCTestCase {
                 let count = buttons.count
                 guard count > 0 else { lastAction = "nothing to tap"; break }
                 let pick = buttons.element(boundBy: Int.random(in: 0..<count, using: &rng))
-                guard pick.exists else { lastAction = "gone before the tap"; break }
+                // ONE THROWING snapshot, and it is the only call here that can
+                // be caught. .exists answers safely, but .frame and .label are
+                // plain properties: when the element has gone since the count
+                // was read they do not return, they fail the test outright, and
+                // this test exists precisely to survive a screen moving under
+                // it. The comment above records the same death at index 15;
+                // this is index 20, on iOS 18.5 in CI on 2026-09-01, and
+                // resolving later only ever narrows that window rather than
+                // closing it. snapshot() throws, so `try?` turns a red gate
+                // into the "gone before the tap" this loop already knows how to
+                // handle.
+                guard pick.exists, let snap = try? pick.snapshot() else {
+                    lastAction = "gone before the tap"
+                    break
+                }
                 // NOT isHittable. It throws rather than answering false for an
                 // element scrolled out of view ("activation point invalid and no
                 // suggested hit points"), and a row far down a list is exactly
                 // what a random index keeps picking. So the frame is asked
                 // instead and the tap goes to a coordinate inside it, which
                 // needs no hittability question at all.
-                let box = pick.frame
+                let box = snap.frame
                 let screen = app.frame
                 guard box.width > 1, box.height > 1,
                       screen.contains(CGPoint(x: box.midX, y: box.midY)) else {
                     lastAction = "off screen"
                     break
                 }
-                let label = pick.label.lowercased()
+                let label = snap.label.lowercased()
                 guard !Self.avoid.contains(where: { label.contains($0) }) else {
                     lastAction = "left '\(pick.label)' alone"
                     break
