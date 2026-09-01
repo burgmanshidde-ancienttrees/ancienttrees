@@ -268,22 +268,37 @@ struct SignInSheet: View {
             // "Nothing else" did not.
             Text("We store your email address and what you collect: the trees you save, the ones you photograph, and where they stand. No advertising, and you can delete the lot from this app.")
                 .font(.caption2).foregroundStyle(.secondary)
-                // Leading, not centred, and that is the actual fix rather than
-                // the first attempt at one. A centred multiline Text reports
-                // its accessibility frame as the tight box around its widest
-                // WRAPPED LINE, not the frame around it; .frame(maxWidth:
-                // .infinity) alone (2026-08-31) does not change that, because
-                // the frame's default alignment still centres that tight box
-                // inside the wider space, so the reported left edge still
-                // drifts a point or two with whatever line happens to be
-                // widest, which itself shifts with per-OS font metrics
-                // (appfit.py DRIFT, real on iOS 18, invisible on 26, confirmed
-                // still failing after the first fix on 2026-09-01). Leading
-                // alignment on both the text and the frame pins the tight
-                // box's left edge to the frame's left edge by construction, on
-                // every OS, matching the siblings it is meant to line up with.
-                .multilineTextAlignment(.leading)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                // CENTRED, like every other thing on this sheet, and it stays
+                // that way. Two runs on 2026-09-01 tried to answer an appfit
+                // DRIFT finding here by changing the layout: first
+                // .frame(maxWidth: .infinity), then leading alignment on the
+                // text and its frame. The second one worked on the number and
+                // broke the screen, because this sheet is a centred
+                // composition (mark, headline, subtitle, both buttons, the
+                // line below this one, the Terms and Privacy links) and it
+                // left ONE paragraph flush against the left margin with its
+                // centred twin directly underneath it.
+                //
+                // The finding is a measurement artefact and not a layout
+                // fault. Measured on iOS 18.6 with exactly the code CI
+                // reported: this text sits at x=30.5 w=314.0, its neighbour at
+                // x=34.8 w=305.4, both buttons at x=29.1 w=316.9, and every
+                // one of those centres on 187.5 in a 375 point screen. appfit
+                // exempts all of them and reports nothing. CI's floor job runs
+                // iOS 18.5, where the same code measures x=25.5 against
+                // siblings at 22, so the two point releases wrap this
+                // paragraph differently and the widest wrapped line is what
+                // gets measured.
+                //
+                // If it fires again, fix appfit rather than this screen: a
+                // wrapped paragraph's left edge is where its longest line
+                // happened to break, which is not an edge anybody laid out.
+                // Apple's own newer guidance does left-align onboarding and
+                // alert text (WWDC25, the new design system), and that is a
+                // real option, but it is a decision about the WHOLE sheet and
+                // Hidde's to make, not something a layout gate gets to force
+                // one paragraph at a time.
+                .multilineTextAlignment(.center)
             // Both of these were text a finger has to find: "Privacy" measured
             // 37 by 13 points and "Not now" 55 by 17, against Apple's 44 by 44.
             // The words stay the same size; the area around them is the target.
