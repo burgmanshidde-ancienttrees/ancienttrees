@@ -1,0 +1,156 @@
+{
+  "city": "Auckland",
+  "country": "New Zealand",
+  "status": "needs_curation",
+  "intro": "Auckland's most remarkable trees are not native. Two Moreton Bay figs, the larger of them the biggest of its species in New Zealand, a champion Algerian oak with its roots fenced off from foot traffic, and a pair of English oaks planted for two coronations eight years apart: all imported, all more than a century old. They stand in four separate corners of the city, a harbour crossing to Devonport, a school lawn in Takapuna, parks in Hillsborough and Epsom, so treat this as a city of destinations rather than one walk.",
+  "meta_description": "Auckland's oldest trees: New Zealand's biggest Moreton Bay fig at Monte Cecilia Park, a champion Algerian oak, and a pair of coronation oaks.",
+  "question_answer": "The oldest tree on this Auckland list is the Monte Cecilia Fig, a Moreton Bay fig in Monte Cecilia Park, Hillsborough, estimated at about 176 years, in a band of 170 to 180, from a planting date of around 1850. The New Zealand Tree Register calls it the country's largest Moreton Bay fig, with a girth of 1594 centimetres measured across three merged trunks and a crown spreading 51.7 metres on average.",
+  "question_meta": "Auckland's oldest tree is a Moreton Bay fig planted around 1850. How old the rest are, and where to find the country's champion Algerian oak.",
+  "question_context": "The Monte Cecilia Fig has had two very different lives. For most of its life it grew behind the boundary of a private estate, first Pah Farm under owner James Williamson, known locally as Williamson's Castle, later the Pah Homestead grounds, and it only became public when Auckland Council bought the land in 2004. A tree planted around 1850 has only been open to visitors for the last twenty years of it.\n\nNobody has a documented planting date more precise than \"around 1850,\" and no source gives it a proper name beyond a description of where it stands; several other large Moreton Bay figs share the park with it, planted in the same era. Its size is not in question: the New Zealand Tree Register calls it the country's largest Moreton Bay fig by girth, though that figure is taken across three trunks that have grown together rather than one clean stem. Devonport's Old Albert, the second fig on this list, is younger by more than thirty years and an eight minute walk from the ferry.",
+  "oldest_tree_id": "akl_004",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Auckland?",
+      "a": "On this list, the Monte Cecilia Fig in Hillsborough, a Moreton Bay fig planted around 1850 and about 176 years old. The New Zealand Tree Register calls it the largest Moreton Bay fig in the country, with a girth of nearly 16 metres taken across its three merged trunks."
+    },
+    {
+      "q": "Are Auckland's remarkable trees free to visit?",
+      "a": "Three of the five are, standing in public council parks with no gate or ticket: Old Albert in Devonport's Windsor Reserve, the Monte Cecilia Fig, and the champion Algerian oak in Cornwall Park. The two coronation oaks at Takapuna Primary School are visible from the public footpath but stand on school grounds, so those two are for viewing rather than walking up to."
+    },
+    {
+      "q": "Can you get close to the coronation oaks at Takapuna?",
+      "a": "The two oaks stand right at the school's Anzac Street boundary, beside the 1923 War Memorial Gates, and read clearly from the footpath. The lawn itself is school property and not open outside school events, so this pair is best treated as a tree to look at rather than stand under."
+    },
+    {
+      "q": "Do you need a car to see Auckland's oldest trees?",
+      "a": "Not strictly, but you will need more than one trip. Old Albert is a short walk from the Devonport ferry, the Cornwall Park oak and the Takapuna oaks are reachable by local bus, and the Monte Cecilia Fig in Hillsborough is a short bus ride or drive from the centre. None of the five are within walking distance of another."
+    }
+  ],
+  "trees": [
+    {
+      "id": "akl_001",
+      "name": "Old Albert",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "about 143 years",
+      "age_min": 140,
+      "age_max": 145,
+      "girth_cm": 1087,
+      "location": {
+        "address": "Windsor Reserve, Victoria Road, Devonport, Auckland (beside Devonport Library)",
+        "latitude": -36.8311084605075,
+        "longitude": 174.79785561561584,
+        "neighbourhood": "Devonport"
+      },
+      "story": "Old Albert is twice as wide as it is tall. The crown of this Moreton Bay Fig averages 42 metres across, on readings of 44 by 40, over a tree standing 21.5 metres high. It went into Windsor Reserve in 1883, grown from a seedling raised by way of Albert Park in the city centre across the harbour, which is where the name comes from. That puts it at about 143 years old, in a band the register gives as 140 to 145.\n\nThe form is unusual for the species. Three stems rather than one trunk, a curtain of aerial roots, and almost none of the heavy buttressing Moreton Bay figs are known for elsewhere. Devonport calls it an Australian banyan, and standing under the canopy you can see why. The girth is 1087 centimetres at a metre up, measured with the aerial roots left out, which is the honest way to do it on a tree like this.\n\nIt has spent its whole life at the point where Devonport meets the water, a few minutes from the wharf, and the town has grown up around it rather than the other way round. Auckland Council carries it as a registered notable tree and arborists maintain it on that basis; the last field observation on the register found it present and in good health.\n\nThe ferry from downtown lands eight minutes' walk away. Few trees this size are this easy to reach.",
+      "verified_sources": [
+        "https://www.treeregister.nz/tree/view/774",
+        "https://devonportflagstaff.co.nz/9-fun-facts-about-devonport/"
+      ],
+      "access": "Free, in a public council park beside the Devonport Library. Fully open, no restrictions.",
+      "transport": "Devonport ferry terminal, about 8 minutes walk (or the short ferry crossing from downtown Auckland, ~12 minutes, then the walk)",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "akl_002",
+      "name": "Edward VII Coronation Tree",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 124 years",
+      "age_min": 122,
+      "age_max": 126,
+      "girth_cm": null,
+      "location": {
+        "address": "Front of Takapuna Primary School, 23 Auburn Street (Anzac Street frontage), Takapuna, Auckland",
+        "latitude": -36.787773,
+        "longitude": 174.76879,
+        "neighbourhood": "Takapuna"
+      },
+      "story": "The two records of this oak cannot agree on the day it was planted, and they are a week apart. The plaque quoted by Takapuna Primary School dates it to 2 August 1902, the coronation of Edward VII. Auckland Council's notable tree schedule, through Wikidata, gives the planting as 9 August 1902. Nobody has reconciled the two, and either way the tree is about 124 years old, in a band of 122 to 126.\n\nIt is the elder of a pair. Eight years later a second Pedunculate Oak went in a few metres along the same frontage for the coronation of George V, and both are still there. The school puts it plainly in its own history: the oaks were planted at the front of the school, they survive today, over a hundred years later, and each carries its own plaque.\n\nIn 1923 the War Memorial Gates were raised beside them and unveiled by the Governor-General, Viscount Jellicoe. So this oak has grown up inside a small piece of civic memory, two coronations and a war marked out on one strip of lawn, with a primary school going past it twice a day.\n\nSee it from the footpath. Both oaks read clearly from Anzac Street, at or very near the boundary. The front lawn is school ground and we cannot promise it is open, so plan on looking rather than walking up to the trunk.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q131692958",
+        "https://www.tps.school.nz/our-history/"
+      ],
+      "access": "Stands on the school's street frontage beside the War Memorial Gates; visible from the public footpath on Anzac Street. The school grounds themselves are not open to the public outside school events, so treat this as a view-from-the-street tree rather than one to walk up to.",
+      "transport": "Takapuna town centre, a few minutes walk; buses run along Lake Road nearby",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "akl_003",
+      "name": "George V Coronation Tree",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 116 years",
+      "age_min": 114,
+      "age_max": 118,
+      "girth_cm": null,
+      "location": {
+        "address": "Front of Takapuna Primary School, 23 Auburn Street (Anzac Street frontage), Takapuna, Auckland",
+        "latitude": -36.787725,
+        "longitude": 174.768902,
+        "neighbourhood": "Takapuna"
+      },
+      "story": "A primary school in Takapuna is on Auckland Council's historic heritage schedule because of two oak trees on its front lawn. This is the younger one, planted in 1910 for the coronation of George V, eight years after the school had already done the same thing for Edward VII a few metres away. It is about 116 years old, in a band of 114 to 118.\n\nBoth trees are Pedunculate Oaks, the English species, put in the ground on the other side of the world as an act of loyalty to a king most of the people planting them would never see. Both carry a plaque. Both are still standing, which the school confirms in its own history, and Auckland Council lists them twice over, once as notable trees and once as heritage.\n\nThirteen years after this oak went in, the War Memorial Gates were raised alongside it and unveiled by the Governor-General, Viscount Jellicoe. Coronation, coronation, war: three moments a town wanted marked, all within a few metres of pavement, and the oaks are the only part of it still growing.\n\nA note on getting close. The tree stands at the school's Anzac Street frontage and is easy to see from the public footpath. The lawn itself is school ground and we have no confirmation the public may cross it, so this is one to look at from the street.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q131693024",
+        "https://www.tps.school.nz/our-history/"
+      ],
+      "access": "Stands on the school's street frontage beside the War Memorial Gates and its sibling Edward VII oak; visible from the public footpath on Anzac Street. The school grounds themselves are not open to the public outside school events, so treat this as a view-from-the-street tree rather than one to walk up to.",
+      "transport": "Takapuna town centre, a few minutes walk; buses run along Lake Road nearby",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "akl_004",
+      "name": "The Monte Cecilia Fig",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "about 176 years",
+      "age_min": 170,
+      "age_max": 180,
+      "girth_cm": 1594,
+      "location": {
+        "address": "Monte Cecilia Park, 72 Hillsborough Road, Hillsborough, Auckland (near the old carriageway to the Pah Homestead)",
+        "latitude": -36.91552772939153,
+        "longitude": 174.76447820663452,
+        "neighbourhood": "Hillsborough"
+      },
+      "story": "The largest Moreton Bay fig in New Zealand throws a crown wider than it is tall, by twenty metres. The register measures the spread at 51.7 metres on average, readings of 55.4 by 48, over a tree 30 metres high. Its girth is recorded as 1594 centimetres, taken at the narrowest waist of the bole, and that figure needs reading carefully: this is a three-trunked tree, so the tape goes around several merged stems rather than one clean column.\n\nIt was planted around 1850, which makes it roughly 176 years old, in a band of 170 to 180. The ground it stands on was then Pah Farm, the estate of James Williamson, known around Auckland as Williamson's Castle, and the designed landscape around it was laid out under head gardener John Blackmoore. For the next century and a half the fig grew behind a private boundary. Auckland Council bought the estate in 2004, so a tree that has stood here since the 1850s has only been open to everybody for its last twenty years.\n\nIt is not alone. Monte Cecilia Park holds several old Moreton Bay figs, and the council's own account calls many of them the oldest of their species in the country.\n\nOne caveat on the numbers. A second source puts the height nearer 27 metres against the register's 30, and nobody has been up with a rangefinder to settle it.",
+      "verified_sources": [
+        "https://www.treeregister.nz/tree/view/783",
+        "https://en.wikipedia.org/wiki/Monte_Cecilia_Park"
+      ],
+      "access": "Free, in a public Auckland Council park. Fully open, standing a short distance from the old homestead.",
+      "transport": "Local buses run along Hillsborough Road; about 7km / a short bus or drive from the city centre",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "akl_005",
+      "name": "The Cornwall Park Algerian Oak",
+      "species": "Algerian Oak (Quercus canariensis)",
+      "age_estimate": "about 106 years",
+      "age_min": 100,
+      "age_max": 110,
+      "girth_cm": 650,
+      "location": {
+        "address": "Cornwall Park, on the lawn west of Pohutukawa Drive, near Twin Oak Drive, Auckland",
+        "latitude": -36.89515240232903,
+        "longitude": 174.7863006591797,
+        "neighbourhood": "Epsom / One Tree Hill"
+      },
+      "story": "There is a fence around this oak, and it is not there to keep you off the tree. It is there to keep feet off the roots. Cornwall Park has closed the root zone and let the canopy come down to ground level, so New Zealand's national champion Algerian Oak stands inside a skirt of its own branches, 27.2 metres high with a crown averaging just under 40 metres across.\n\nThe register scores it 378 on the champion tree scale and rates it among the largest of its species anywhere in the world. The trunk measures 650 centimetres round at 1.15 metres, taken below the branch flare, and it is a single stem rather than a cluster of merged trunks, which is part of why the park calls it one of the best-formed Algerian oaks in the country.\n\nNobody wrote down the day it went in. Cornwall Park puts the planting in the early 1920s, by park staff under Sir James Gunson, then chairman of the park board, which makes it about 106 years old, somewhere between 100 and 110. If you know the exact date, tell us.\n\nSomeone looked at it in February 2026 and recorded a good full canopy with some leafminer damage. That is the kind of note a tree gets when people are watching it. The park is free, open at all hours, four kilometres from the middle of the city.",
+      "verified_sources": [
+        "https://www.treeregister.nz/tree/view/665",
+        "https://cornwallpark.co.nz/see-and-do/the-trees"
+      ],
+      "access": "Free, in Cornwall Park, a large public heritage park open at all times.",
+      "transport": "Buses run along Manukau Road and Green Lane; about 4km / a short bus ride from the city centre",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}

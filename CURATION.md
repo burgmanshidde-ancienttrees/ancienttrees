@@ -10,6 +10,31 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-01 - Auckland opened, 5 trees; Matera's 2 verified trees written but held below the floor
+
+Wrote stories for the trees already sitting fully verified in data/research/ (passcheck.py
+--pending), per the runner's "write pass first, whenever there is one" rule.
+
+**Auckland: new city, 5 trees, all previously verified from the New Zealand Tree Register and
+independent sources, none from a register import (0 register trees within 20 km).** Old Albert
+(Devonport, a 3-stemmed Moreton Bay fig, 1883), Edward VII and George V Coronation Trees
+(Takapuna Primary School, oaks planted 1902 and 1910, flagged: view-only from Anzac Street,
+school grounds not confirmed open to the public), The Monte Cecilia Fig (Hillsborough, NZ's
+largest Moreton Bay fig by girth, oldest of the five at about 176 years), and the Cornwall Park
+Algerian Oak (national champion of its species, root zone fenced off). No photos yet on any of
+the five; an honest gap for a later photo pass.
+
+**Matera stayed unpublished: only 2 trees clear verification (The Pine of Viale Aldo Moro, a
+public street tree by the station; The Black Poplar of Timmari, a public hillside tree reached
+by an 11km hiking trail), below the 4-tree floor and neither is a single-destination exception.**
+Both now carry finished stories in data/research/matera-verified.json, kept rather than thrown
+away. Matera was already scouted and refused on 2026-08-31 (CURATION.md, that date): most of its
+16 nearby register trees are masseria/jazzo private-estate trees or too far out (7-19 km) for
+the day-trip boundary. Leaves in data/leads/matera.json point at a few more candidates
+(Villa Longo historic park, worth a fresh look; the rest sit in neighbouring comuni, not Matera
+itself). Needs a further verify pass before it can open, not attempted this session (a from-zero
+web-research push on an already-refused city is off the ladder without Hidde naming it).
+
 ## 2026-09-01 - Three new single-tree US places published; the us-famous-* research files fully cleared
 
 A write pass on data/research/us-famous-2-verified.json and us-famous-3-verified.json produced

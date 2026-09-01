@@ -1,183 +1,195 @@
 {
-  "leads": [
-    {
-      "name": "Wolfgangseiche (St. Wolfgang's Oak) bei Neueglofsheim",
-      "register_id": "ND-02671",
-      "wikidata": "Q2222131",
-      "latitude": 48.9019,
-      "longitude": 12.1827,
-      "reason": "Two independent sources exist (Bavaria LfU state Naturdenkmal register ND-02671, and Wikidata Q2222131 'Sankt-Wolfgangs-Eiche' with a Commons photo), a rare case of a corroborated candidate this far out. But it sits about 14.6-14.7 km from Regensburg's centre, near Neueglofsheim (Gde. Thalmassing), which was not confirmed to fall inside the roughly-30-minute public transport day trip boundary in the time this pass had; access, setting (roadside, field edge, churchyard) and current condition are also unconfirmed. Worth a focused follow-up: check transit time and what the tree actually stands beside."
-    },
-    {
-      "name": "Naturdenkmal Linde",
-      "register_id": "ND-02804",
-      "latitude": 49.01898685,
-      "longitude": 12.00772818,
-      "reason": "Generic register name gives no address or description. 5.5 km from centre. Not researched this pass for time; no second source found yet. Needs a Wikipedia/local join or a fresh search to identify which lime tree this is."
-    },
-    {
-      "name": "Naturdenkmal Eiche",
-      "register_id": "ND-02811",
-      "latitude": 48.95573204,
-      "longitude": 12.07933178,
-      "reason": "Generic register name, no address. 6.8 km from centre. Not researched this pass for time."
-    },
-    {
-      "name": "Naturdenkmal Eiche (sog. Bildeiche am Frauenreis)",
-      "register_id": "ND-02810",
-      "latitude": 48.94769907,
-      "longitude": 12.10607131,
-      "reason": "A 'Bildeiche' usually marks a wayside shrine oak, a promising story angle, but not researched this pass for time. 7.8 km from centre. Needs a second source and an access check."
-    },
-    {
-      "name": "Naturdenkmal Dorflinde in Eilsbrunn, Gde. Sinzing",
-      "register_id": "ND-03353",
-      "latitude": 49.00447247,
-      "longitude": 11.97501083,
-      "reason": "Village lime in the neighbouring municipality of Sinzing, 8.0 km from Regensburg centre. Not researched this pass for time; likely a village square or churchyard tree, worth checking for transit time and a second source."
-    },
-    {
-      "name": "Naturdenkmal 2 Linden in Pollenried, Gde. Nittendorf",
-      "register_id": "ND-03351",
-      "latitude": 49.03288554,
-      "longitude": 11.93918611,
-      "reason": "10.7 km out, likely beyond a comfortable day-trip boundary from Regensburg; not researched this pass. A pair of limes could be a compact two-tree ensemble if they stand close together, worth checking."
-    },
-    {
-      "name": "Naturdenkmal 2 Eichen in Karlstein, Mkt. Regenstauf",
-      "register_id": "ND-03335",
-      "latitude": 49.15226871,
-      "longitude": 12.17124754,
-      "reason": "16.4 km out, in Regenstauf market town rather than Regensburg itself; not researched this pass, likely too far for the day-trip boundary without a car."
-    },
-    {
-      "name": "Naturdenkmal Linde in Holzheim am Forst",
-      "register_id": "ND-02678",
-      "latitude": 49.15497852,
-      "longitude": 11.9887789,
-      "reason": "16.9 km out; not researched, likely too far for the day-trip boundary."
-    },
-    {
-      "name": "Naturdenkmal 2 Linden bei kleiner Kapelle in Kallmuenz",
-      "register_id": "ND-03325",
-      "latitude": 49.15959156,
-      "longitude": 11.96078687,
-      "reason": "18.2 km out, in the separate town of Kallmuenz; not researched, likely a Kallmuenz page candidate rather than a Regensburg one if that town is ever opened."
-    },
-    {
-      "name": "Naturdenkmal 2 Linden in Paring",
-      "register_id": "ND-02148",
-      "latitude": 48.85096848,
-      "longitude": 12.09440548,
-      "reason": "18.4 km out; not researched, likely too far for the day-trip boundary."
-    },
-    {
-      "name": "Naturdenkmal Linde in Leonberg, St. Maxhuette-Haidhof",
-      "register_id": "ND-03332",
-      "latitude": 49.19021772,
-      "longitude": 12.10977198,
-      "reason": "19.4 km out, in a different town; not researched, out of Regensburg's day-trip range."
-    },
-    {
-      "name": "Naturdenkmal Linde in Dallackenried vor der Kapelle, Mkt. Kallmuenz",
-      "register_id": "ND-03323",
-      "latitude": 49.15289992,
-      "longitude": 11.91567092,
-      "reason": "19.5 km out; not researched, out of range for a Regensburg page."
-    },
-    {
-      "name": "Naturdenkmal Baumensemble Rotbuche und Stieleiche, Ludwig-Eckert-Strasse 12",
-      "city_register_no": 56,
-      "latitude": 49.0168306,
-      "longitude": 12.0821109,
-      "reason": "Designated 8 December 2003, has a dated (2024) Commons photo, but the address geocodes to a private residential building (OSM tags it 'residential'). Moved to blocked rather than shipped; see blocked list. Left here too as a pointer in case a future pass finds evidence the ensemble is street-visible or on a public verge."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Naturdenkmal Allee (13 Baeume entlang B 15 alt)",
-      "register_id": "ND-02806",
-      "reason": "An avenue of 13 trees along a former federal road, not one collectible point per the ensemble rule: there is no single obvious place to stand."
-    },
-    {
-      "name": "Naturdenkmal 2 Lindenalleen in Kuern, Gde. Bernhardswald",
-      "register_id": "ND-03336",
-      "reason": "Two lime avenues (plural, per the name), not a compact single-point ensemble."
-    },
-    {
-      "name": "Naturdenkmal Felsenpartie",
-      "register_id": "ND-02808",
-      "reason": "A rock formation, not a tree. Semantic filter: the Bavarian Naturdenkmal register covers all protected natural monuments, not only trees."
-    },
-    {
-      "name": "Naturdankmal Grosse Doline",
-      "register_id": "ND-02809",
-      "reason": "A sinkhole, not a tree."
-    },
-    {
-      "name": "Naturdenkmal Felsblock Die Hohe Wand",
-      "register_id": "ND-02883",
-      "reason": "A rock outcrop, not a tree."
-    },
-    {
-      "name": "Naturdenkmal Stifterfelsen",
-      "register_id": "ND-02876",
-      "reason": "A named rock, not a tree."
-    },
-    {
-      "name": "Naturdenkmal Felsgruppe Maihoehle bei Schoenhofen",
-      "register_id": "ND-02877",
-      "reason": "A rock group with a cave, not a tree."
-    },
-    {
-      "name": "ND Felsgruppe mit Marmortafel an der B16 westlich von Bad Abbach",
-      "register_id": "ND-02080",
-      "reason": "A rock group, not a tree."
-    },
-    {
-      "name": "Naturdenkmal Galgenberg",
-      "register_id": "ND-02666",
-      "reason": "A hill/former gallows site; the register entry does not identify a specific tree. Not a tree candidate."
-    },
-    {
-      "name": "Naturdenkmal Burgruine Wolfsegg mit Tropfsteinhoehle",
-      "register_id": "ND-02816",
-      "reason": "A castle ruin with a dripstone cave, not a tree."
-    },
-    {
-      "name": "ND Teufelsfelsen bei Alkofen",
-      "register_id": "ND-02079",
-      "reason": "A named rock (\"Devil's Rock\"), not a tree."
-    },
-    {
-      "name": "Naturdenkmal Schlossberg Alteglofsheim",
-      "register_id": "ND-02670",
-      "reason": "A castle hill / geological feature, not identified as a specific tree."
-    },
-    {
-      "name": "ND Riesensprung (Felsformation)",
-      "register_id": "ND-02664",
-      "reason": "Explicitly labelled a rock formation (Felsformation) in its own name, not a tree."
-    },
-    {
-      "name": "Naturdenkmal Ginkgobaum, Kumpfmuehler Strasse 1",
-      "city_register_no": 42,
-      "reason": "Address geocodes to a private apartment building (OSM: 'apartments'). No evidence found of public access to the plot corner where the tree stands. Per hard rule 10, stays out until a source shows it is genuinely reachable without asking anyone's permission."
-    },
-    {
-      "name": "Naturdenkmal Japanischer Schnurbaum, Yorckstrasse 1",
-      "city_register_no": 57,
-      "reason": "Address geocodes to a private house (OSM: 'house'). No evidence of public access found. Blocked under hard rule 10 pending better evidence."
-    },
-    {
-      "name": "Naturdenkmal Robinie an der Theodor-Koerner-Strasse (Puchta-Robinie)",
-      "city_register_no": 55,
-      "reason": "Address geocodes to a private house (OSM: 'house'). No evidence of public access found. Blocked under hard rule 10 pending better evidence."
-    },
-    {
-      "name": "Naturdenkmal Baumensemble Rotbuche und Stieleiche, Ludwig-Eckert-Strasse 12",
-      "city_register_no": 56,
-      "reason": "Address geocodes to a private residential building (OSM: 'residential'). No evidence of public access found despite a dated 2024 Commons photo existing. Blocked under hard rule 10 pending better evidence; see matching lead entry above."
-    }
-  ]
+ "leads": [
+  {
+   "name": "Wolfgangseiche (St. Wolfgang's Oak) bei Neueglofsheim",
+   "register_id": "ND-02671",
+   "wikidata": "Q2222131",
+   "latitude": 48.9019,
+   "longitude": 12.1827,
+   "reason": "Two independent sources exist (Bavaria LfU state Naturdenkmal register ND-02671, and Wikidata Q2222131 'Sankt-Wolfgangs-Eiche' with a Commons photo), a rare case of a corroborated candidate this far out. But it sits about 14.6-14.7 km from Regensburg's centre, near Neueglofsheim (Gde. Thalmassing), which was not confirmed to fall inside the roughly-30-minute public transport day trip boundary in the time this pass had; access, setting (roadside, field edge, churchyard) and current condition are also unconfirmed. Worth a focused follow-up: check transit time and what the tree actually stands beside.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Naturdenkmal Linde",
+   "register_id": "ND-02804",
+   "latitude": 49.01898685,
+   "longitude": 12.00772818,
+   "reason": "Generic register name gives no address or description. 5.5 km from centre. Not researched this pass for time; no second source found yet. Needs a Wikipedia/local join or a fresh search to identify which lime tree this is."
+  },
+  {
+   "name": "Naturdenkmal Eiche",
+   "register_id": "ND-02811",
+   "latitude": 48.95573204,
+   "longitude": 12.07933178,
+   "reason": "Generic register name, no address. 6.8 km from centre. Not researched this pass for time."
+  },
+  {
+   "name": "Naturdenkmal Eiche (sog. Bildeiche am Frauenreis)",
+   "register_id": "ND-02810",
+   "latitude": 48.94769907,
+   "longitude": 12.10607131,
+   "reason": "A 'Bildeiche' usually marks a wayside shrine oak, a promising story angle, but not researched this pass for time. 7.8 km from centre. Needs a second source and an access check."
+  },
+  {
+   "name": "Naturdenkmal Dorflinde in Eilsbrunn, Gde. Sinzing",
+   "register_id": "ND-03353",
+   "latitude": 49.00447247,
+   "longitude": 11.97501083,
+   "reason": "Village lime in the neighbouring municipality of Sinzing, 8.0 km from Regensburg centre. Not researched this pass for time; likely a village square or churchyard tree, worth checking for transit time and a second source."
+  },
+  {
+   "name": "Naturdenkmal 2 Linden in Pollenried, Gde. Nittendorf",
+   "register_id": "ND-03351",
+   "latitude": 49.03288554,
+   "longitude": 11.93918611,
+   "reason": "10.7 km out, likely beyond a comfortable day-trip boundary from Regensburg; not researched this pass. A pair of limes could be a compact two-tree ensemble if they stand close together, worth checking."
+  },
+  {
+   "name": "Naturdenkmal 2 Eichen in Karlstein, Mkt. Regenstauf",
+   "register_id": "ND-03335",
+   "latitude": 49.15226871,
+   "longitude": 12.17124754,
+   "reason": "16.4 km out, in Regenstauf market town rather than Regensburg itself; not researched this pass, likely too far for the day-trip boundary without a car."
+  },
+  {
+   "name": "Naturdenkmal Linde in Holzheim am Forst",
+   "register_id": "ND-02678",
+   "latitude": 49.15497852,
+   "longitude": 11.9887789,
+   "reason": "16.9 km out; not researched, likely too far for the day-trip boundary.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Naturdenkmal 2 Linden bei kleiner Kapelle in Kallmuenz",
+   "register_id": "ND-03325",
+   "latitude": 49.15959156,
+   "longitude": 11.96078687,
+   "reason": "18.2 km out, in the separate town of Kallmuenz; not researched, likely a Kallmuenz page candidate rather than a Regensburg one if that town is ever opened.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Naturdenkmal 2 Linden in Paring",
+   "register_id": "ND-02148",
+   "latitude": 48.85096848,
+   "longitude": 12.09440548,
+   "reason": "18.4 km out; not researched, likely too far for the day-trip boundary.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Naturdenkmal Linde in Leonberg, St. Maxhuette-Haidhof",
+   "register_id": "ND-03332",
+   "latitude": 49.19021772,
+   "longitude": 12.10977198,
+   "reason": "19.4 km out, in a different town; not researched, out of Regensburg's day-trip range.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Naturdenkmal Linde in Dallackenried vor der Kapelle, Mkt. Kallmuenz",
+   "register_id": "ND-03323",
+   "latitude": 49.15289992,
+   "longitude": 11.91567092,
+   "reason": "19.5 km out; not researched, out of range for a Regensburg page.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Naturdenkmal Baumensemble Rotbuche und Stieleiche, Ludwig-Eckert-Strasse 12",
+   "city_register_no": 56,
+   "latitude": 49.0168306,
+   "longitude": 12.0821109,
+   "reason": "Designated 8 December 2003, has a dated (2024) Commons photo, but the address geocodes to a private residential building (OSM tags it 'residential'). Moved to blocked rather than shipped; see blocked list. Left here too as a pointer in case a future pass finds evidence the ensemble is street-visible or on a public verge."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Naturdenkmal Allee (13 Baeume entlang B 15 alt)",
+   "register_id": "ND-02806",
+   "reason": "An avenue of 13 trees along a former federal road, not one collectible point per the ensemble rule: there is no single obvious place to stand."
+  },
+  {
+   "name": "Naturdenkmal 2 Lindenalleen in Kuern, Gde. Bernhardswald",
+   "register_id": "ND-03336",
+   "reason": "Two lime avenues (plural, per the name), not a compact single-point ensemble."
+  },
+  {
+   "name": "Naturdenkmal Felsenpartie",
+   "register_id": "ND-02808",
+   "reason": "A rock formation, not a tree. Semantic filter: the Bavarian Naturdenkmal register covers all protected natural monuments, not only trees."
+  },
+  {
+   "name": "Naturdankmal Grosse Doline",
+   "register_id": "ND-02809",
+   "reason": "A sinkhole, not a tree."
+  },
+  {
+   "name": "Naturdenkmal Felsblock Die Hohe Wand",
+   "register_id": "ND-02883",
+   "reason": "A rock outcrop, not a tree."
+  },
+  {
+   "name": "Naturdenkmal Stifterfelsen",
+   "register_id": "ND-02876",
+   "reason": "A named rock, not a tree."
+  },
+  {
+   "name": "Naturdenkmal Felsgruppe Maihoehle bei Schoenhofen",
+   "register_id": "ND-02877",
+   "reason": "A rock group with a cave, not a tree."
+  },
+  {
+   "name": "ND Felsgruppe mit Marmortafel an der B16 westlich von Bad Abbach",
+   "register_id": "ND-02080",
+   "reason": "A rock group, not a tree."
+  },
+  {
+   "name": "Naturdenkmal Galgenberg",
+   "register_id": "ND-02666",
+   "reason": "A hill/former gallows site; the register entry does not identify a specific tree. Not a tree candidate."
+  },
+  {
+   "name": "Naturdenkmal Burgruine Wolfsegg mit Tropfsteinhoehle",
+   "register_id": "ND-02816",
+   "reason": "A castle ruin with a dripstone cave, not a tree."
+  },
+  {
+   "name": "ND Teufelsfelsen bei Alkofen",
+   "register_id": "ND-02079",
+   "reason": "A named rock (\"Devil's Rock\"), not a tree."
+  },
+  {
+   "name": "Naturdenkmal Schlossberg Alteglofsheim",
+   "register_id": "ND-02670",
+   "reason": "A castle hill / geological feature, not identified as a specific tree."
+  },
+  {
+   "name": "ND Riesensprung (Felsformation)",
+   "register_id": "ND-02664",
+   "reason": "Explicitly labelled a rock formation (Felsformation) in its own name, not a tree."
+  },
+  {
+   "name": "Naturdenkmal Ginkgobaum, Kumpfmuehler Strasse 1",
+   "city_register_no": 42,
+   "reason": "Address geocodes to a private apartment building (OSM: 'apartments'). No evidence found of public access to the plot corner where the tree stands. Per hard rule 10, stays out until a source shows it is genuinely reachable without asking anyone's permission."
+  },
+  {
+   "name": "Naturdenkmal Japanischer Schnurbaum, Yorckstrasse 1",
+   "city_register_no": 57,
+   "reason": "Address geocodes to a private house (OSM: 'house'). No evidence of public access found. Blocked under hard rule 10 pending better evidence."
+  },
+  {
+   "name": "Naturdenkmal Robinie an der Theodor-Koerner-Strasse (Puchta-Robinie)",
+   "city_register_no": 55,
+   "reason": "Address geocodes to a private house (OSM: 'house'). No evidence of public access found. Blocked under hard rule 10 pending better evidence."
+  },
+  {
+   "name": "Naturdenkmal Baumensemble Rotbuche und Stieleiche, Ludwig-Eckert-Strasse 12",
+   "city_register_no": 56,
+   "reason": "Address geocodes to a private residential building (OSM: 'residential'). No evidence of public access found despite a dated 2024 Commons photo existing. Blocked under hard rule 10 pending better evidence; see matching lead entry above."
+  }
+ ]
 }
