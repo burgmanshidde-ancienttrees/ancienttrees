@@ -531,12 +531,15 @@
       "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
       "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/flo_014-himalayan-cedar-of-the-semplici.jpg",
+        "license": "Provided by the Sistema Museale di Ateneo, Universita degli Studi di Firenze, all rights reserved",
+        "attribution": "Sistema Museale di Ateneo, Universita degli Studi di Firenze",
+        "status": "approved",
+        "width": 1067,
+        "height": 1600,
+        "note": "Sent by Giulia Torta, who runs the Orto botanico di Firenze, on 2026-08-31 in answer to our own request, with the credit line she asked for verbatim: 'Puoi citare per i crediti \"Sistema Museale di Ateneo, Universita degli Studi di Firenze\".' Not an open licence: ask them before reuse. Original 4160x6240, resized to 1600 tall and vendored onto our own domain like every other photograph."
       },
-      "curation_status": "ai_generated",
+      "curation_status": "hidde_approved",
       "notes": "MASAF 07/D612/FI/09 (girth 418 cm, height 28.0 m). Second source is the garden's own page, which records the tree in the collection from 1880 and describes its imposing dimensions and drooping branches. 1880 is a first-record date, not a planting date, so the age is published as a floor with a wide upper bound. SPECIES NAMING, needs a human decision: this uses 'Himalayan Cedar (Cedrus deodara)', the majority form across the site (5 entries against 3 for 'Deodar Cedar'), but the live flo_008 in this same city file says 'Deodar Cedar (Cedrus deodara)'. As it stands the two Florence cedars would land on different species pages, which hard rule 9 exists to prevent. Renaming flo_008 is a one-line fix to the live file and was deliberately not made here. PHOTO GAP IS DELIBERATE: a CC BY-SA 3.0 Commons image exists (File:Cedrus deodara 01 by Line1.jpg, same photographer and day as the other two garden photos) and was downloaded and viewed at 960 px. It is a dark, backlit shot up into the crown in which the tree cannot be read at all and the imposing dimensions are invisible. It fails the Cadiz standard on exposure and on crown-and-trunk readability, so it was rejected. An honest gap beats a bad photo.",
       "location_precision": "confirmed",
       "height_m": 28.0,
