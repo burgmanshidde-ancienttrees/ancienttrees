@@ -4368,6 +4368,13 @@
         "tokens": 0,
         "trees": 0,
         "note": "session work, tokens not self-tracked; iOS CI rung-2 investigation. Found the floor job (iOS 18) failing 4/4 scheduled runs since 08-30 traced to the same run (33442819227) already covered by the top LOG entry, whose stdout-pollution root cause was already fixed and pushed at 00:41 today (unverified, no scheduled run has fired since). Two independent, real findings from that same run fixed: a RefusedWalk timing flake (chip label read before CLLocationManager delivered its callback) and a sign-in DRIFT false-positive (centred caption whose wrap width sits right at appfit centred() threshold). A defensive boot() call added to appfit.py run_test. The equivalent one-line fix for ios.yml itself could not be pushed (token lacks workflows scope, same known limitation as every prior session)."
+      },
+      {
+        "target": "ios.yml/SignIn.swift",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "rung 2: the floor job kept failing on schedule (2/2 since the 02:41 fix) with the identical DRIFT finding, x=25.5 vs x=22, unchanged by that fix. Root cause: a centred multiline Text reports its AX frame as the tight box around its widest wrapped line, positioned by the frame alignment, which the prior fix left at .center, so nothing about the reported position actually moved. Fixed for real with leading alignment on both the text and its frame, which pins the tight box to the container edge by construction. Also finished the boot() fix in .github/workflows/ios.yml the prior session left half done, but could not push it: token still lacks the workflows scope. Reverted that one file locally and left the two-line fix documented in LOG.md for a session that can."
       }
     ]
   }

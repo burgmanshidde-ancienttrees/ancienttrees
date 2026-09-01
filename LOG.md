@@ -9,6 +9,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-01 (session) - Rung 2: the sign-in DRIFT fix from 02:41 did not actually work; fixed it for real
+
+The session-start brief flagged the iOS app as broken: the floor job (iOS 18, scheduled/dispatch only, never on a push) had failed twice running on its own schedule (2026-08-31 21:43 and 2026-09-01 09:51), even though a session had already pushed a fix at 02:41 that morning. The 09:51 run's log showed the identical finding as before that fix, character for character: `signin` and `signin-email` both `FAIL`, `StaticText 'We store your email address and what you ...' starts at x=25.5 while 2 other things on this screen start at x=22`. The fix had done nothing.
+
+Read why: the 02:41 fix wrapped the disclaimer text in `.frame(maxWidth: .infinity)`, on the theory that its measured bounding box was "whichever wrapped line is longest." True, but incomplete: a centred multiline `Text`'s accessibility frame is that tight box, and it is positioned inside its frame by the frame's *alignment*, which the fix left at the default `.center`. So the reported x could still drift a point or two with per-OS font metrics, exactly as before, because nothing about where the tight box actually sits had changed. Fixed with `.multilineTextAlignment(.leading)` and `.frame(maxWidth: .infinity, alignment: .leading)`, which pins that tight box to the container's left edge by construction rather than by hoping the widest wrapped line happens to land close enough. Pushed (`3a59b4c1`).
+
+Also tried to finish the boot-race fix the 02:41 session had left half done: `ios.yml`'s own "Build and test on the floor" step still calls `appsweep.udid_for()` without booting before handing the UDID to `xcodebuild`, the same race `appfit.py`'s `run_test()` was fixed for on 2026-08-31. Wrote the one-line `appsweep.boot(udid)` fix, but this session's push token still lacks the `workflows` GitHub App permission needed to touch `.github/workflows/*.yml` (`refusing to allow a GitHub App to create or update workflow ... without workflows permission`), same wall as the prior session hit. Reverted that file locally rather than leaving an uncommitted diff sitting in the tree. **FOR HIDDE or a session with that scope:** in `.github/workflows/ios.yml`, the "Build and test on the floor" step's UDID lookup needs `udid = appsweep.udid_for(*d)`, `appsweep.boot(udid)`, `print(udid)` in place of the current single `print(appsweep.udid_for(*d))`.
+
+Neither fix could be verified here (no Xcode on this runner, and `gh workflow run`/`workflow_dispatch` is also refused with the same permission error), so the real test is the next scheduled floor run. Continuing to Step 0 for content work now that this is done.
+
 ## 2026-09-01 - Night run 2026-09-01 08:58 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 12.5 minutes of its 120 minute window, 101 turns, 12 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: madeira, brisbane, alicante, which block the top of the queue until they expire.
