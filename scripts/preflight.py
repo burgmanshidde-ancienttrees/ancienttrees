@@ -853,11 +853,51 @@ def check_register_licences():
     return out
 
 
+
+def check_no_sender_names():
+    """A submitter's name must never be written down anywhere we publish.
+
+    Hidde, 2026-08-11, on finding a submitter's name rendered on a tree page:
+    "privacy technisch echt een no go... ookal is het via formulier niet meer
+    doen nooit." That was day one. Day two was 2026-08-30, when a run closing
+    reader submission #54 wrote the sender's real name into a tree's
+    verify_notes and into a drafts/ file. It never rendered on the site, and it
+    did not need to: this repository is public, so a name in data/ or drafts/ is
+    published on GitHub the moment it is pushed.
+
+    A lesson that appears on two different days becomes a build check, so here
+    it is. The shape it looks for is the one that actually happened, a name in
+    brackets straight after a submission reference, plus the older
+    submitted_by field carrying anything new. Removing this check needs Hidde.
+    """
+    out = []
+    pat = re.compile(r"submission\s*#?\s*\d+\s*\(([^)]{2,60})\)", re.I)
+    allowed = ("gps", "app", "no name", "kind", "city", "tree", "feedback",
+               "correction", "privacy", "photo", "test", "vote")
+    targets = sorted(glob.glob("data/cities/*.json")) + sorted(glob.glob("drafts/*.md")) \
+        + sorted(glob.glob("data/leads/*.json"))
+    for path in targets:
+        try:
+            with open(path, encoding="utf-8") as fh:
+                text = fh.read()
+        except OSError:
+            continue
+        for m in pat.finditer(text):
+            inside = m.group(1).strip()
+            if any(a in inside.lower() for a in allowed):
+                continue
+            if re.match(r"^[A-Z][a-z]+(\s+[A-Z][a-z'\-]+)+$", inside):
+                out.append("%s: a submitter's name is written next to a submission "
+                           "reference (%r). No sender is ever named in anything we "
+                           "publish, and this repo is public." % (path, inside))
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
                 + check_phenology() + check_register_licences()
-                + check_access_permission()
+                + check_access_permission() + check_no_sender_names()
                 + check_collection_targets())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
