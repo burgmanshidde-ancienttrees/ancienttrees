@@ -259,6 +259,12 @@
       "seen": "2026-08-31",
       "cost": "burned two 20s timeouts during a US register scouting pass (San Diego target)",
       "workaround": "unknown; San Diego's designated-tree programme (Council Policy 900-19) has no published dataset anyway, so this host was not chased further"
+    },
+    "idese.cultura.gov.it": {
+      "behaviour": "refuses the connection outright (curl -m 20 and WebFetch both ECONNREFUSED / exit 000) on two different individual-tree pages, not a hang",
+      "seen": "2026-09-01",
+      "cost": "cheap, fails fast",
+      "workaround": "unknown from this environment; retry from a session with different network access. WebSearch summaries of its content (girth/height/age figures) are not usable as sources per the search-summary-is-a-lead-never-a-source rule"
     }
   }
 }
