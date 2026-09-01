@@ -893,12 +893,62 @@ def check_no_sender_names():
     return out
 
 
+def check_overlay_coverage():
+    """Every translated city must cover every tree its English page holds.
+
+    Added 2026-09-01, after the same failure took the whole site down TWICE in
+    one day. A translation overlay lists trees by id, the build refuses to
+    render a page whose overlay is short, and because this is a static site
+    that refusal kills the entire deploy rather than one page. Munich went
+    from 30 trees to 45 in a write pass and its German overlay did not follow;
+    Madeira went from 6 to 10 a few hours later and its Portuguese overlay did
+    not follow either. Between them they blocked every change from every
+    session and night run for most of a day.
+
+    `scripts/i18ncheck.py` already catches this and catches far more, but it
+    is a separate command that a write pass has no reason to run, and both
+    failures were committed by passes that ran preflight and saw it pass. So
+    the cheap half of that check lives here too, where the work actually
+    happens: does the overlay have an entry for every tree. Anything subtler
+    about a translation, the word counts, the count promises in prose, the
+    banned words, stays in i18ncheck.
+
+    Deliberately a FAIL rather than a NOTE: this one does not degrade a page,
+    it stops the site shipping.
+    """
+    out = []
+    for path in sorted(glob.glob("data/i18n/*/*.json")):
+        lang, name = path.split(os.sep)[-2:]
+        slug = name[:-5]
+        city_path = os.path.join("data", "cities", name)
+        if not os.path.exists(city_path):
+            continue
+        try:
+            with open(path, encoding="utf-8") as fh:
+                overlay = json.load(fh)
+            with open(city_path, encoding="utf-8") as fh:
+                city = json.load(fh)
+        except Exception:
+            continue
+        translated = overlay.get("trees") or {}
+        missing = [t["id"] for t in city.get("trees", []) if t["id"] not in translated]
+        if missing:
+            out.append("%s/%s: the overlay is missing %d of %d trees (%s). A short "
+                       "overlay does not degrade one page, it refuses the whole build "
+                       "and nothing ships. Translate them or the deploy stays red; "
+                       "python3 scripts/i18ncheck.py %s/%s says what else it needs."
+                       % (lang, slug, len(missing), len(city.get("trees", [])),
+                          ", ".join(missing[:6]) + (", ..." if len(missing) > 6 else ""),
+                          lang, slug))
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
                 + check_phenology() + check_register_licences()
                 + check_access_permission() + check_no_sender_names()
-                + check_collection_targets())
+                + check_collection_targets() + check_overlay_coverage())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
