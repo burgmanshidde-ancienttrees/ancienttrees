@@ -160,6 +160,40 @@ HELD_MARKER = re.compile(
 # patterns ("would need a", "likely/almost certainly beyond") did not cover.
 # Checked against the full leads corpus per this file's own methodology: 8
 # hits, 0 count-doctrine collisions.
+#
+# Widened a fifth time 2026-09-01 (same day again, a session dispatching a
+# write pass on the full leads.py --ready pile, 16 entries across 12 cities):
+# ALL 16 turned out to be declines in the pass's own words, none of them any
+# phrasing already caught. "Still not shippable" and "not shippable without a
+# second source" (Turin's plane, Groningen, Vienna, Caserta, Napoli, Toronto's
+# four); "needs an explicit access check" (Utrecht's elm); "does not yet
+# clear the honest access-line test" (Warsaw's ash); "Held on the
+# walk-across-town test" (the Wallace Yew, a variant of the existing HELD
+# marker that names a different test); "resolve it with that pass" (a lead
+# folded into another cluster's open question, Barcelona's fig); "needs
+# checking before it could ship" (Brussels' maple, health status unresolved).
+# Checked against the full leads corpus: 10 hits on "not shippable", 2 on
+# "needs an explicit access check", 2 on "access-line test", 1 each on the
+# rest, 0 count-doctrine collisions anywhere.
+#
+# Same pass, second round: after the fifth widening above, 10 of the 16
+# originally-flagged READY leads were STILL sitting there unfixed, each
+# declined in yet another wording. Turin's three-oak group has no measurements
+# at all and is explicitly hypothetical ("if they are ever split"); Barcelona's
+# Molle/Eucaliptus pair is undated and judged "is not a walk"; Coimbra's
+# sequoia and Perugia's mulberry are single-sourced register rows with "no
+# independent source found"; Rouen's Douglas firs were "held back for the
+# same reasons" as a neighbouring declined lead; Salzburg's pear reads "not
+# individually verified this pass" (the existing "not verified this pass"
+# pattern needs the words adjacent and missed the inserted "individually",
+# same shape as the existing "not individually researched" entry above);
+# Vilnius' oak was explicitly "left as a lead rather than shipped [or
+# blocked]"; Zaragoza's plane is conditional on infrastructure that does not
+# exist yet, "keep as the candidate if [it] is ever made continuous". Checked
+# against the full corpus: 2/8/5/12/1/1 hits respectively, with two
+# count-doctrine collisions on the last two phrases and both are the
+# protected case itself (Singapore and Den Bosch hitting their brief's own
+# tree-count instruction), so both stay exempted as intended.
 NOT_READY_MARKER = re.compile(
     r"\[SKIPPED\b[^\]]*\]|\b(?:not pursued|left unverified|left undelivered|"
     r"ship once|not delivered on|removed from protection|"
@@ -177,7 +211,13 @@ NOT_READY_MARKER = re.compile(
     r"worth a look next pass|time.?boxed out|time.?boxed to|"
     r"needs a survival check|shut for construction|closed until|"
     r"rather than a tree|likely not remarkable|"
-    r"day-trip-boundary check is needed)\b",
+    r"day-trip-boundary check is needed|"
+    r"not shippable|needs an explicit access check|access-line test|"
+    r"held on the walk-across-town test|resolve it with that pass|"
+    r"needs checking before it could ship|"
+    r"is not a walk|no independent source found|"
+    r"not individually verified this pass|left as a lead rather than|"
+    r"keep as the candidate if|held back for the same reasons)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
