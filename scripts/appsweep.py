@@ -289,6 +289,13 @@ def screens(sub):
         ("collection",    ["-tab=0", f'-open=collection:{sub["collection"]}'], 5),
         ("walk",          ["-tab=0", f'-open=walk:{sub["walk"]}'], 7),
         ("place-pin",     ["-tab=0", f'-open=tree:{sub["tree"]}', "-placepin"], 8),
+        # A TREE YOU ADDED YOURSELF, added 2026-09-01. The end of the add
+        # flow, and until now the one page in the app that no argument here
+        # opened: the status card, the fields still to fill, and a bar with no
+        # primary button. -mine-demo makes the two sightings and gives them
+        # fixed ids so this can address one.
+        ("own-tree",      ["-tab=0", "-signed-in", "-mine-demo",
+                           "-open=mine:00000000-0000-0000-0000-0000000000a1"], 6),
         ("species-pick",  ["-tab=0", f'-open=tree:{sub["tree"]}', "-speciespick"], 8),
         # The which-maps-app question, which is a dialog and still a screen:
         # it is the first thing a person meets after tapping Take me there.
