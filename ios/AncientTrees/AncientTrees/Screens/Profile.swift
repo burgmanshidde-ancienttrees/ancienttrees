@@ -551,6 +551,11 @@ struct ProfileView: View {
     /// 2026-08-21). Changing the address itself is not built: it needs a
     /// verified swap on the server and it moves somebody's whole collection,
     /// so it is Hidde's to open rather than mine.
+    private func dismissKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder),
+                                        to: nil, from: nil, for: nil)
+    }
+
     /// Case and stray spaces forgiven: the point is that somebody typed the
     /// word on purpose, not that they can hit shift.
     private var mayDelete: Bool {
@@ -586,6 +591,14 @@ struct ProfileView: View {
                 TextField("DELETE", text: $typedToConfirm)
                     .textInputAutocapitalization(.characters)
                     .autocorrectionDisabled()
+                    // RETURN PUTS THE KEYBOARD AWAY, and it is not a nicety.
+                    // The flow walk found it (2026-09-01): after typing, the
+                    // keyboard stands over the Delete account button, so the
+                    // tap lands on a key and nothing happens. A person meets
+                    // exactly that on a small phone, types the word, reaches
+                    // for the button and hits a letter instead.
+                    .submitLabel(.done)
+                    .onSubmit { dismissKeyboard() }
                     .font(.callout)
                     .padding(.horizontal, 14).frame(height: 48)
                     .background(Brand.surfaceMuted, in: RoundedRectangle(cornerRadius: 10))
