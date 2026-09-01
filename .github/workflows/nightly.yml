@@ -293,6 +293,20 @@ jobs:
             changes what a reader can see today. So the order is not a
             preference, it is what the stages actually do.
 
+            AND WHEN THERE IS NOT ONE TO DO, YOUR FIRST DISPATCH REFILLS THE
+            SHELF. If prepare.py printed "REFILL THE SHELF FIRST", the writable
+            pile is under its floor and the rule above has nothing to act on:
+            there is no write pass because there is nothing verified to write.
+            Then the batch prepare.py names on the next lines is your first
+            dispatch, a verify agent per BRIEF_RESEARCH.md, before you take
+            anything else off the ladder. Claim it first like any other pass.
+
+            This exists because the pile went from 366 leads on 2026-08-28 to 16
+            on 2026-09-01 while every run in between read the warning and walked
+            past it. An empty shelf is the one state that makes the cheapest rung
+            of the ladder unavailable, so refilling it is not a lane competing
+            with the others, it is what puts them back.
+
             WHICH trees is CLAUDE.md's call and not this prompt's: read rule
             one's order in "The course after the fortnight" and take the first
             lane that has anything in it. `city_queue.py --next` and

@@ -134,6 +134,38 @@ def wealth_factor(country):
     return 0.5 if country in UPPER_MIDDLE else 1.0
 
 
+
+# Hidde, 2026-09-01: "ik wil dat je US prioriteert". A country multiplier in
+# the same shape as wealth_factor above, because that is the only place a
+# priority survives: the queue re-ranks itself from this script every morning
+# in the data digest, so a preference written anywhere else is overwritten by
+# tomorrow's run. Changing the dial is editing the number on the next line;
+# switching it off is setting it to 1.0.
+#
+# What it costs, stated plainly the way the wealth table states its own cost.
+# CLAUDE.md's distribution reasoning says we hold position where nobody else
+# writes, and English-language city tree searches in the United States are the
+# most contested there are. Our own data already shows it: Los Angeles carries
+# 8 trees and takes 0 impressions, Houston 4 trees and 14, Dallas 8 and 18,
+# while a small Dutch town ranks second for its own oldest tree. So this dial
+# buys attention for pages that are harder to rank than their score now
+# suggests, and that is a deliberate trade rather than an oversight.
+#
+# Where the US is genuinely cheap is the other shape, and a run should prefer
+# it: data/leads/_famous-united-states.json holds 60 named American trees,
+# every one of them with a photograph already attached, and a named tree is a
+# long-tail query nobody contests. That is the 2026-08-31 single-famous-tree
+# exception's own worked example. Prioritising the US through named trees
+# beats prioritising it through big city pages, and this multiplier does not
+# express that difference: it only decides the order cities are looked at.
+FOCUS_COUNTRIES = {"United States": 2.0}
+
+
+def focus_factor(country):
+    """Owner-set country priority. 1.0 means no thumb on the scale."""
+    return FOCUS_COUNTRIES.get(country, 1.0)
+
+
 def measured_yield(c):
     """Impressions per 1,000 Wikivoyage views. None when unmeasurable."""
     t = c.get("travel") or 0
@@ -175,7 +207,7 @@ def main():
                 c["basis"] = "paused: outside the focus countries"
                 continue
             wealth = 1.0
-        base *= wealth
+        base *= wealth * focus_factor(c.get("country", ""))
         if c["status"] == "published" and (c.get("impressions_10d") or 0) > 0:
             my = measured_yield(c)
             if my is not None:
