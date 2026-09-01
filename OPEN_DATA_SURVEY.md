@@ -3228,3 +3228,31 @@ Inverness, Canterbury, Stratford-upon-Avon, Stirling, Windsor, Glasgow. This
 pass narrowed the US side of that list by five (four now `empty`, one
 `stalled`) plus confirmed Asheville's existing `empty` verdict did not need
 re-checking.
+
+## City of Sydney, Register of Significant Trees: ANSWERED, and the answer is no (2026-08-31)
+
+Karen Sweeney, Urban Forest Manager at the City of Sydney, replied to our
+permission ask: "At this stage, we are not looking to licence the Significant
+Tree data for use on external platforms." Her reason is specific and worth
+recording verbatim, because it is the one that will come up again: "One of our
+key concerns is ensuring that the data remains under our management and is not
+republished in a way that could later be incorporated into paid products or
+services." She proposes instead a model that sends people back to the City of
+Sydney's own site for the information.
+
+**So the 2,504 trees are closed, and this is now a written verdict rather than
+an open question.** Do not scout this register again, do not re-ask before a
+long time has passed, and do not treat the ArcGIS feature service being
+reachable as permission: it is not.
+
+**What this does NOT block.** Nothing we publish in Sydney came from that
+register in the first place: all six trees stand on botanic-garden pages,
+museum records, council pages, the BBC and Wikipedia, each with its own
+sources. Facts about individual trees remain findable and verifiable from
+elsewhere, exactly as with any non-licensable source. What is closed is
+republishing their dataset, which we were never doing.
+
+**The transferable lesson.** A municipality's worry is not attribution, it is
+that a free dataset ends up inside somebody's paid product. That objection is
+answered by what a project DOES rather than by what it promises, so the useful
+reply is to point at what is actually published and not to argue.
