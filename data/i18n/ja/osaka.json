@@ -1,11 +1,11 @@
 {
  "_note": "Japanese overlay for Osaka, written 2026-08-22 from data/cities/osaka.json. Text only: every coordinate, photo, licence, age range and best_time stays in the English source file. COUNTING NOTE for the checker: Japanese does not put spaces between words, so a whitespace-token word count returns 1 for a whole paragraph. Counted in CHARACTERS instead, on the convention agreed with the brief: intro 150-250 characters (the equivalent of the 60-100 word rule), each story 350-600 characters (the equivalent of 150-250 words). Titles and meta descriptions are inside the English character caps as written. Search terms follow Japanese usage rather than a literal translation of 'ancient trees': 巨木 (giant tree), 古木 (old tree), 巨樹, 天然記念物 (Natural Monument). Place names take their Japanese forms throughout (住吉大社, 楠珺社, 阿遅速雄神社, 難波神社, 放出駅, 心斎橋), never a romanisation. Two departures from the English are recorded in the pass report and are corrections of plain factual errors in the source intro, not rewriting: the English intro says three of the four are camphors when the species field says all four are, and it says one tree 'shares a name with Bunraku' when the story says only that Bunraku was first staged in its courtyard. Every hedge in the English (the Taisho lightning strike, the 400-year age that only works if it is the same tree, the traditional rather than measured ages) survives in the Japanese unchanged.",
  "city": "大阪",
- "title": "大阪の巨木と古木4選：住吉大社の樹齢1000年のクスノキから",
- "meta_description": "大阪で最も古い木は神社のクスノキです。住吉大社の樹齢約1000年の千年楠と、落雷で幹の大半を失ったあとに生き直したクスノキを中心に、大阪の巨木4本を場所と行き方とともに紹介します。",
- "intro": "大阪で最も古い木は、いずれも神社の境内に立っている。ここに挙げた4本はすべてクスノキで、千年以上にわたって信仰の場として使われ、再開発されることのなかった土地に根を張っている。1本は落雷で幹の大半を失い、残った部分から生き直した。もう1本は、人形浄瑠璃の文楽が最初に興行された境内に立っている。どれも大阪の有名な観光地ではない。それでも4本とも、まわりに立っているどの建物よりも古い。",
+ "title": "大阪の巨木と古木5選：住吉大社の樹齢1000年のクスノキから",
+ "meta_description": "大阪で最も古い木は神社のクスノキです。住吉大社の樹齢約1000年の千年楠と、落雷で幹の大半を失ったあとに生き直したクスノキを中心に、大阪の巨木5本を場所と行き方とともに紹介します。",
+ "intro": "大阪で最も古い木は、いずれも神社の境内に立っている。ここに挙げた5本は、千年以上にわたって信仰の場として使われ、再開発されることのなかった土地に根を張っている。1本は落雷で幹の大半を失い、残った部分から生き直した。もう1本は、人形浄瑠璃の文楽が最初に興行された境内に立っている。どれも大阪の有名な観光地ではない。それでも5本とも、まわりに立っているどの建物よりも古い。",
  "question_title": "大阪で最も古い木は？住吉大社の樹齢約1000年のクスノキ",
- "question_meta": "大阪で最も古い木は、住吉大社の楠珺社に立つ樹齢約1000年の千年楠。その正確な場所と神社の歴史、そして市内のクスノキの巨木3本を紹介します。",
+ "question_meta": "大阪で最も古い木は、住吉大社の楠珺社に立つ樹齢約1000年の千年楠。その正確な場所と神社の歴史、そして市内の巨木4本を紹介します。",
  "question_answer": "大阪で最も古い木は、住吉大社の境内にある楠珺社のクスノキ「千年楠」で、樹齢は約1000年と推定されている。幹回りは10メートル近くあり、大阪市はこの木を保存樹に指定している。",
  "question_context": "大阪で最も古い木という肩書きには、実際に競合がいる。鶴見区の阿遅速雄神社のクスノキも言い伝えでは樹齢1000年近くとされ、1970年に大阪府の天然記念物に指定されている。この指定は、千年楠にかかるどの指定よりも古く、記録としても正式なものである。ただしこの木は大正時代のいつかに落雷で主幹の大半を失い、いま立っているのは、残ったおよそ3分の1から樹木医の手を借りて生き直した姿である。回復の物語としては本物だが、単純に最も古いと呼ぶには込み入っている。住吉大社の楠珺社に立つ千年楠には、そうした但し書きがない。傷のない一本の幹が幹回りで10メートル近くあり、大阪市の保存樹に指定され、複数の独立した資料で樹齢の推定が一致している。さらにこの木は初辰まいりの中心でもある。4年をかけて48体の小さな猫の授かりものを木の根元で集めていく参拝で、そのおかげで市内で最も多くの人が訪れる木の一本になっている。もっとも、樹齢を目当てに来る人はほとんどいない。行き方は、南海本線の住吉大社駅から徒歩3分、または鳥居のすぐ前にある阪堺線の住吉鳥居前停留場から。",
  "faq": [
