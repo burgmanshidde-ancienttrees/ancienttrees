@@ -1,405 +1,562 @@
 {
-  "city": "Tokyo",
-  "country": "Japan",
-  "status": "needs_curation",
-  "intro": "Tokyo has burned to the ground more times than almost any capital on Earth: the 1657 Meireki fire, the 1868 Battle of Ueno, the 1923 earthquake, and the March 1945 firebombing each erased whole districts overnight. The city's oldest trees survived by an accident of biology as much as luck. Ginkgo bark and wood hold unusual moisture and resist igniting, which is one reason five of these ten are ginkgos, scarred but alive on temple and shrine ground. The oldest dates from the Kamakura period. The newest is a hundred-year-old avenue everyone has already seen in photographs.",
-  "meta_description": "Tokyo's oldest trees survived the fires that leveled the city around them. Start with the 750-year-old ginkgo at Zenpukuji, Tokyo's oldest living thing.",
-  "question_answer": "The oldest tree in Tokyo is the ginkgo at Zenpukuji temple in Motoazabu, estimated at around 750 years old and a National Natural Monument since 1926. Nicknamed the Upside-Down Ginkgo for its hanging aerial roots, it stands a seven minute walk from Azabu-Juban Station.",
-  "question_meta": "Zenpukuji's 750-year-old ginkgo, the Upside-Down Ginkgo, is Tokyo's oldest tree. Its legend, exact location, and nine more remarkable trees nearby.",
-  "question_context": "Tokyo's claim to its oldest tree comes with more competition than most capitals. Sensoji temple in Asakusa has its own scarred ginkgo, tied by legend to the 12th century shogun Minamoto no Yoritomo and commonly cited at around 800 years old, older than Zenpukuji's tree. But that age rests entirely on oral tradition, and the tree lost its official Natural Monument status after 1945 fire damage. Zenpukuji's ginkgo carries an active national designation dating to 1926 and a growth-ring estimate that supports roughly 750 years, which is why guidebooks and Minato City's own tourism office call it Tokyo's oldest living tree while treating Sensoji's as a close, less formally verified second. Both trees share something else: they survived the same March 1945 firebombing raids that destroyed the buildings around them, because ginkgo wood resists catching fire in a way most other trees do not. Zenpukuji's tree also carries a legend of its own, said to have grown from a walking staff planted by the monk Shinran in 1229. Getting there: Azabu-Juban Station on the Namboku or Oedo line, then a seven minute walk.",
-  "faq": [
-    {
-      "q": "What is the oldest tree in Tokyo?",
-      "a": "The ginkgo at Zenpukuji temple in Motoazabu, estimated at 750 years old and a National Natural Monument since 1926. A similarly aged ginkgo at Sensoji in Asakusa is sometimes cited as older by legend, but its age has never been formally measured."
-    },
-    {
-      "q": "Why are so many of Tokyo's oldest trees ginkgos?",
-      "a": "Ginkgo wood and bark hold unusual moisture and resist catching fire, which let several of the city's oldest ginkgos survive the 1923 earthquake fires and the 1945 firebombing that destroyed the temples and shrines around them."
-    },
-    {
-      "q": "Are Tokyo's ancient trees free to visit?",
-      "a": "Eight of the ten are free. Hamarikyu Gardens and Koishikawa Botanical Garden charge a small entry fee, and Ueno Toshogu asks for one only if you want to see its camphor tree up close by the gold-leafed gate."
-    },
-    {
-      "q": "Where do Tokyo's ancient trees cluster?",
-      "a": "On shrine and temple grounds. Religious sites were rarely redeveloped and often kept their original trees deliberately, which makes them the most reliable place in Tokyo to find something genuinely old."
-    }
-  ],
-  "trees": [
-    {
-      "id": "tok_001",
-      "name": "The Zenpukuji Ginkgo",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "750 years",
-      "age_min": 700,
-      "age_max": 800,
-      "location": {
-        "address": "Zenpukuji, 1-6-21 Motoazabu, Minato-ku, Tokyo 106-0046",
-        "latitude": 35.653564,
-        "longitude": 139.732872,
-        "neighbourhood": "Motoazabu, Minato"
-      },
-      "story": "The upside-down tree Tokyo never quite got over. In 1229 the Buddhist monk Shinran planted his walking staff in the ground here before leaving Zenpukuji, or so the story goes, and the staff took root and grew into this ginkgo. Whatever the truth of the legend, tree-ring estimates put the trunk at roughly 750 years old, which makes it the oldest living thing in Tokyo and a rare tree that has outlasted the city around it more than once. Its aerial roots hang from the lower branches like stalactites, thick and pendulous enough that locals nicknamed it Sakasa Icho, the Upside-Down Ginkgo. The tree was declared a National Natural Monument in 1926, one of the first in Tokyo. Then came March 1945: American incendiary bombs burned most of the temple to the ground and scorched the ginkgo's trunk black. Ginkgos are famously fire-resistant, sappy and slow to catch, and this one kept living. New growth eventually covered the char. Every autumn it turns a shade of gold that draws photographers who have never heard of Shinran.",
-      "verified_sources": [
-        "https://ja.wikipedia.org/wiki/%E5%96%84%E7%A6%8F%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
-        "https://visit-minato-city.tokyo/en/places/1047",
-        "https://japantoday.com/category/features/travel/a-visit-to-zenpukuji-temple-in-azabu-to-see-the-oldest-tree-in-tokyo"
-      ],
-      "access": "Free, temple grounds open daily",
-      "transport": "7 min walk from Azabu-Juban Station (Namboku/Oedo lines)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Giant_Ginkgo_Tree_-_Zenpukuji_-_Minato%2C_Tokyo_-_DSC06818.JPG",
-        "license": "CC0 1.0",
-        "attribution": "Daderot, Wikimedia Commons",
-        "status": "approved",
-        "width": 5472,
-        "height": 3648
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "late November, when the ginkgo turns deep gold",
-        "kind": "autumn colour"
-      }
-    },
-    {
-      "id": "tok_002",
-      "name": "The Sensoji War Ginkgo",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "800 years",
-      "age_min": 700,
-      "age_max": 850,
-      "location": {
-        "address": "Sensoji, 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032",
-        "latitude": 35.713403,
-        "longitude": 139.795527,
-        "neighbourhood": "Asakusa, Taito"
-      },
-      "story": "This ginkgo used to be a national treasure and technically is not one anymore, and the reason why says everything about it. Legend holds that a branch stuck in the ground here by the shogun Minamoto no Yoritomo, visiting around 1189, took root and grew into this tree, which would make it roughly 800 years old. The Japanese government designated it a Natural Monument in 1930. Then, on the night of March 10, 1945, American firebombs burned nearly all of Asakusa to the ground, including Sensoji's main hall and its five-story pagoda, both later rebuilt from scratch. The ginkgo was hit directly. Its trunk is still hollow and blackened five or six meters up, a permanent scorch mark from a night that killed roughly 100,000 people in Tokyo. The fire damage was severe enough that the monument designation was revoked after the war. The tree itself was not deterred: it kept growing, and it is the one part of Sensoji that watched the temple burn and rebuild around it rather than the other way around.",
-      "verified_sources": [
-        "https://www.tokyo-np.co.jp/article/164735",
-        "https://asakusa.gr.jp/jp/?p=2498",
-        "http://asakusanews.com/erudition/2039"
-      ],
-      "access": "Free, temple grounds open daily",
-      "transport": "5 min walk from Asakusa Station (Ginza/Asakusa/Tobu lines)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "The 800-year figure rests on oral legend (the Minamoto no Yoritomo story), not a tree-ring count. Existence, species, WWII fire damage and the revoked monument status are all independently sourced; the precise age is not.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "late November, when the leaves turn gold",
-        "kind": "autumn colour"
-      }
-    },
-    {
-      "id": "tok_003",
-      "name": "The Ueno Toshogu Camphor",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "age_estimate": "600 years",
-      "age_min": 550,
-      "age_max": 650,
-      "location": {
-        "address": "Ueno Toshogu, 9-88 Uenokoen, Taito-ku, Tokyo 110-0007",
-        "latitude": 35.715367,
-        "longitude": 139.770632,
-        "neighbourhood": "Ueno, Taito"
-      },
-      "story": "Ueno Park's biggest tree predates the shrine built around it by more than two centuries. This camphor was already an old tree in 1627 when Ueno Toshogu was founded to enshrine Tokugawa Ieyasu, and it has stood on this rise since before Ueno was Ueno at all, which is why the shrine's own literature calls it Ueno's ancestral tree. Its trunk runs more than eight meters around, the widest in the park by a comfortable margin. The shrine itself survived the 1657 Meireki fire, the 1868 Battle of Ueno between shogunate loyalists and the new imperial army, the 1923 earthquake, and the 1945 air raids that destroyed most of Ueno's other historic buildings, largely because an Edo-era engineer built its main hall with unusually deep foundations. The camphor watched all four disasters from a few meters away and came through each one with nothing worse than scorched leaves. Its canopy now shades the approach to the shrine's gold-leafed karamon gate, a combination that has made this corner of the park a minor pilgrimage for anyone who likes their history literally rooted in place.",
-      "verified_sources": [
-        "https://www.uenotoshogu.com/spot/",
-        "https://4travel.jp/dm_shisetsu_tips/12160785"
-      ],
-      "access": "Free to view; a 500 yen fee applies only if you also want to enter the shrine's inner hall precinct by the karamon gate",
-      "transport": "10 min walk from Ueno Station (JR/Ginza/Hibiya lines)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "notes": "Sourcing is the shrine's own site plus travel-review corroboration rather than an independent registry; a stronger third source would be worth finding in a future pass.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "tok_004",
-      "name": "The Head-Betting Ginkgo",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "450 years",
-      "age_min": 400,
-      "age_max": 500,
-      "location": {
-        "address": "Hibiya Park, near Hibiya Matsumotoro, 1-6 Hibiyakoen, Chiyoda-ku, Tokyo 100-0012",
-        "latitude": 35.673791,
-        "longitude": 139.755807,
-        "neighbourhood": "Hibiya, Chiyoda"
-      },
-      "story": "An engineer once bet his own head on this tree's survival, and won. In 1901, city planners preparing to build Hibiya Park, Japan's first Western-style public park, needed the road at its edge widened, and this 400-year-old ginkgo stood directly in the way. Honda Seiroku, the park's designer, refused to let it be felled and reportedly told his superiors he would offer his own head if the transplant failed. Over 25 days in 1902, laborers moved the tree roughly 450 meters to its current spot, an operation that reportedly needed 20,000 kan, close to 75 tons, of root ball and trunk. It worked, and the tree kept the nickname Kubikake Icho, the Head-Betting Ginkgo, ever since. It survived a second scare in 1971, when a firebomb thrown by a radical group during a protest burned down the neighboring Matsumotoro restaurant and scorched the ginkgo black; it leafed out again the following spring. Honda kept his head. The tree, seven meters around and still growing, kept its park.",
-      "verified_sources": [
-        "https://ja.wikipedia.org/wiki/%E9%A6%96%E3%81%8B%E3%81%91%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
-        "https://jumokui.jp/tree-data/%E9%A6%96%E6%8E%9B%E3%81%91%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6/",
-        "https://www.tokyo-greenbizmap.metro.tokyo.lg.jp/tokusyu/meiboku/"
-      ],
-      "access": "Free, public park",
-      "transport": "3 min walk from Hibiya Station (Hibiya/Chiyoda/Mita lines)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/20260418_Kubi-kake_ginkgo_tree.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Mark Yasuda (Myasuda), Wikimedia Commons",
-        "status": "approved",
-        "width": 3072,
-        "height": 4080
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "late November, at the peak of its golden colour",
-        "kind": "autumn colour"
-      }
-    },
-    {
-      "id": "tok_005",
-      "name": "The Shiba Toshogu Ginkgo",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "385 years",
-      "age_min": 380,
-      "age_max": 390,
-      "location": {
-        "address": "Shiba Toshogu, 4-8-10 Shiba Koen, Minato-ku, Tokyo 105-0011",
-        "latitude": 35.655096,
-        "longitude": 139.748626,
-        "neighbourhood": "Shiba Park, Minato"
-      },
-      "story": "A shogun planted this tree with his own hands, or so Shiba Toshogu has claimed for almost four centuries. In 1641, Tokugawa Iemitsu, the third Tokugawa shogun, is said to have planted this ginkgo himself at the shrine built to deify his grandfather Ieyasu. It has been designated a Tokyo Natural Monument ever since records began keeping track, one of the city's officially protected trees. The shrine originally sat inside the vast precinct of Zojoji temple next door, the Tokugawa family's own funerary temple, until the Meiji government's forced separation of Buddhist and Shinto sites in the 1870s split them into two addresses. Zojoji's main hall was destroyed in the 1945 air raids that leveled most of Shiba; the shrine's smaller buildings burned too. The ginkgo, planted by the man whose family the whole complex was built to honor, came through the fires that took the buildings around it. Today it stands about 21 meters tall in front of the shrine's gate, with Tokyo Tower rising directly behind it, so most cameras pointed this way are aimed at the 1958 steel lattice rather than at the tree in front of it.",
-      "verified_sources": [
-        "https://wood.jp/8-jumoku/kyoju/tokyo/sibatoushouguu-icho.html",
-        "https://www.shibatoshogu.com/",
-        "https://note.com/fu9da/n/na876737abf77"
-      ],
-      "access": "Free, shrine grounds open daily",
-      "transport": "3 min walk from Shibakoen Station (Toei Mita line)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Shiba_Toshogu_03.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Reggaeman, Wikimedia Commons",
-        "status": "approved",
-        "width": 1944,
-        "height": 2592
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "late November, when the ginkgo turns gold",
-        "kind": "autumn colour"
-      }
-    },
-    {
-      "id": "tok_006",
-      "name": "The Three Hundred Year Pine",
-      "species": "Japanese Black Pine (Pinus thunbergii)",
-      "age_estimate": "300+ years",
-      "age_min": 300,
-      "age_max": 320,
-      "location": {
-        "address": "Hamarikyu Onshi Teien, 1-1 Hamarikyucho, Chuo-ku, Tokyo 104-0046",
-        "latitude": 35.6624579,
-        "longitude": 139.764008,
-        "neighbourhood": "Hamamatsucho, Chuo"
-      },
-      "story": "The biggest black pine in Tokyo grows in a garden that floods on purpose. Hamarikyu was built on reclaimed tidal land as a shogunal duck-hunting villa, and its ponds still rise and fall with Tokyo Bay through a working seawater gate, the only tide-powered garden pond left in the city. This pine was planted around 1709, when the sixth shogun Tokugawa Ienobu rebuilt the estate into something closer to its current form, and it has spent three centuries spreading rather than climbing: its lowest branches now sprawl low and wide across log supports, some running more than 20 meters from the trunk. Locals simply call it Sanbyakunen no Matsu, the Three Hundred Year Pine. The garden survived two disasters that erased most of its original structures, the 1923 earthquake and the 1945 firebombing, and the tree's low, horizontal shape likely helped it through both: black pines built close to the ground catch less wind and radiant heat than tall ones. What is left today is one tree and one tea house rebuilt from photographs, inside a garden that Tokyo Bay still floods twice a day.",
-      "verified_sources": [
-        "https://www.tokyo-greenbizmap.metro.tokyo.lg.jp/tokusyu/meiboku/",
-        "https://ja.wikipedia.org/wiki/%E6%B5%9C%E9%9B%A2%E5%AE%AE%E6%81%A9%E8%B3%9C%E5%BA%AD%E5%9C%92",
-        "https://www.jalan.net/kankou/spt_guide000000190885/",
-        "https://www.openstreetmap.org/node/2493399895"
-      ],
-      "access": "Paid entry, 300 yen",
-      "transport": "7 min walk from Shiodome Station (Oedo/Yurikamome lines)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Hama-Rikyu_300-year-old_pine.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Kimon Berlin and Gribeco, Wikimedia Commons",
-        "status": "approved",
-        "width": 3504,
-        "height": 2336
-      },
-      "curation_status": "ai_generated",
-      "notes": "Pin corrected from the garden's main entrance to the tree's own position: OpenStreetMap carries a contributor-mapped node named \"三百年の松\" (Three-Hundred-Year Pine Tree) tagged as Pinus thunbergii at this spot, with a matching guidepost and information-board node within a few metres corroborating it.",
-      "location_precision": "confirmed",
-      "paid_entry": true
-    },
-    {
-      "id": "tok_007",
-      "name": "The Ginkgo of the Sperm Discovery",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "300 years",
-      "age_min": 280,
-      "age_max": 320,
-      "location": {
-        "address": "Koishikawa Botanical Garden, 3-7-1 Hakusan, Bunkyo-ku, Tokyo 112-0001",
-        "latitude": 35.7202202,
-        "longitude": 139.7451807,
-        "neighbourhood": "Hakusan, Bunkyo"
-      },
-      "story": "In 1896, a botanist working under this tree changed what science understood about how plants reproduce. Hirase Sakugoro, an artist-turned-researcher with no university degree, spent years examining ginkgo ovules from this specimen at what was then Tokyo Imperial University's botanical garden. He discovered that ginkgo trees produce swimming sperm cells, motile and flagellated like something out of animal biology, a reproductive method no other seed plant on Earth was known to use. It overturned assumptions about the evolutionary line between ferns and flowering plants and made the ginkgo, already ancient as a genus, into a living fossil in the most literal sense: a plant still reproducing the way its ancestors did 200 million years ago. The discovery is commemorated with a stone marker at the tree's base, placed for its sixtieth anniversary in 1956. The tree itself, one of the female specimens whose ovules made the discovery possible, is estimated by ring count at around 300 years old, and it still drops a heavy carpet of ginkgo nuts every autumn, oblivious to its own scientific importance.",
-      "verified_sources": [
-        "https://www.bg.s.u-tokyo.ac.jp/koishikawa/overview/memorial.html",
-        "https://koishikawa-bg.jp/ennai/ginkgo/",
-        "https://www.openstreetmap.org/node/4683343152"
-      ],
-      "access": "Paid entry, 500 yen (University of Tokyo botanical garden)",
-      "transport": "10 min walk from Hakusan Station (Toei Mita line)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Tokyo%2C_Koishikawa_%282005%29_11.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "LBM1948, via Wikimedia Commons",
-        "status": "approved",
-        "width": 1077,
-        "height": 706
-      },
-      "curation_status": "ai_generated",
-      "notes": "Pin corrected from the garden entrance to the tree's own position: OpenStreetMap carries a contributor-mapped node named \"精子発見のイチョウ\" (The spermatozoid of Ginkgo biloba) tagged as Ginkgo biloba at this spot, with the 1956 commemorative-stele node recorded almost on top of it, matching the stone marker described in our own sources. Only photos of the adjacent commemorative stone were found on Wikimedia Commons, not the tree itself, so no photo is used.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "late November, when the leaves turn gold",
-        "kind": "autumn colour"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "tok_008",
-      "name": "The Kameido Tenjin Wisteria",
-      "species": "Japanese Wisteria (Wisteria floribunda)",
-      "age_estimate": "150+ years (shrine's wisteria tradition dates to 1663)",
-      "age_min": 150,
-      "age_max": 360,
-      "location": {
-        "address": "Kameido Tenjin Shrine, 3-6-1 Kameido, Koto-ku, Tokyo 136-0071",
-        "latitude": 35.702616,
-        "longitude": 139.820732,
-        "neighbourhood": "Kameido, Koto"
-      },
-      "story": "Claude Monet may owe part of his water lily garden to this shrine, according to art historians who trace a line from Hiroshige's woodblock prints to Giverny. Utagawa Hiroshige painted Kameido Tenjin's wisteria and its arched drum bridge in his 1856 series One Hundred Famous Views of Edo, and that print reportedly reached and influenced French Impressionists including Monet, who filled his own garden with wisteria decades later. The shrine was founded in 1663 on marshy ground, and its first head priest planted wisteria because the vines tolerate wet soil; the fifth and eighth shoguns, Tsunayoshi and Yoshimune, are both recorded visiting specifically to see it bloom. Today around 50 wisteria plants across 15 trellises still frame the bridge every late April, trained and pruned continuously since the Edo period even if individual vines have been replaced along the way, the way a shrine's sacred rope gets rewoven without anyone calling it a different rope. Exactly how old any single living vine is remains unclear. What is certain is that people have been coming here to see wisteria bloom for more than 360 years.",
-      "verified_sources": [
-        "https://www.city.koto.lg.jp/kuse/koho/houdou/r07/r0704/r070418fuji.html",
-        "https://kameidotenjin-sha.jp/",
-        "https://thegate12.com/jp/article/601"
-      ],
-      "access": "Free, shrine grounds open daily",
-      "transport": "15 min walk from Kameido Station (JR Sobu line), or 10 min from Higashi-Ojima Station (Toei Shinjuku line)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Wisteria_at_Kameido_Tenjin.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Fred Cherrygarden, Wikimedia Commons",
-        "status": "approved",
-        "width": 4000,
-        "height": 6000
-      },
-      "curation_status": "flagged",
-      "notes": "The shrine's wisteria tradition is continuous since 1663, but the current vines have almost certainly been renewed and replanted over that span like a trained garden feature rather than surviving as single 360-year-old plants. Age range left wide to reflect that uncertainty honestly.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          4,
-          5
-        ],
-        "label": "late April into May, when the wisteria hangs in flower",
-        "kind": "blossom"
-      }
-    },
-    {
-      "id": "tok_009",
-      "name": "The Meiji Jingu Gaien Ginkgo Avenue",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "100+ years",
-      "age_min": 100,
-      "age_max": 120,
-      "location": {
-        "address": "Icho Namiki, Meiji Jingu Gaien, 2-1 Kitaaoyama, Minato-ku, Tokyo 107-0061",
-        "latitude": 35.674,
-        "longitude": 139.7168,
-        "neighbourhood": "Kitaaoyama, Minato"
-      },
-      "story": "Every one of these 146 ginkgo trees was already a young adult when it was planted. In 1908, gardeners collected seeds from ginkgos at Shinjuku Gyoen and grew 1,600 seedlings in a nursery; only the straightest, best-shaped survivors, already six meters tall, were selected fifteen years later to line this avenue when Meiji Jingu Gaien opened in 1923 as a memorial to Emperor Meiji. The landscape architect who laid it out planted them nine meters apart along a 300-meter stretch running straight toward the Meiji Memorial Picture Gallery, engineering the perspective so the trees appear to funnel toward the building's dome from any angle on the street. A century on, the tallest reaches 28 meters, and every November the avenue turns the same uniform gold that has made it one of the most photographed streets in Japan, filled with tour groups and engagement shoots in equal number. A 2023 redevelopment plan for the neighboring stadium district reignited public debate over whether construction work threatens the ginkgos' roots, a reminder that even Tokyo's most photographed trees remain, legally, just trees.",
-      "verified_sources": [
-        "https://www.jingugaienmachidukuri.jp/history/",
-        "https://mrs.living.jp/tokyo/kurashi_info/article/5987244"
-      ],
-      "access": "Free, public avenue",
-      "transport": "3 min walk from Aoyama-itchome Station (Ginza/Hanzomon/Oedo lines)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Meiji_jingu_outer_garden_ginkgo_trees_2013_nov.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Kentin, Wikimedia Commons",
-        "status": "approved",
-        "width": 3648,
-        "height": 2736
-      },
-      "curation_status": "ai_generated",
-      "notes": "This is an avenue of 146 individually planted ginkgos rather than a single tree, so the pin marks the Aoyama-dori entrance rather than one exact trunk.",
-      "location_precision": "approximate",
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "late November, when the whole avenue turns gold",
-        "kind": "autumn colour"
-      }
-    },
-    {
-      "id": "tok_010",
-      "name": "The Meoto Kusu",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "age_estimate": "106 years",
-      "age_min": 100,
-      "age_max": 110,
-      "location": {
-        "address": "Meiji Jingu, near the outer worship hall, 1-1 Yoyogikamizonocho, Shibuya-ku, Tokyo 151-8557",
-        "latitude": 35.6757978,
-        "longitude": 139.6992138,
-        "neighbourhood": "Yoyogi, Shibuya"
-      },
-      "story": "This is the youngest tree on this list by roughly six centuries, and also the one most people specifically travel here to touch. Two camphor trees were donated to Meiji Jingu when the shrine was built in 1920 to deify Emperor Meiji and Empress Shoken, planted side by side just in front of the outer worship hall and bound together with a sacred straw rope, a shimenawa, that marks them as one connected being rather than two separate trees. They are called Meoto Kusu, the Married Couple Camphors, and generations of visitors have prayed here for good marriages and family harmony, a tradition now widened into a general wish for good relationships of any kind. Camphor trees can live over a thousand years, so at just over a century old these two are barely past childhood by the standards of their own species, let alone the 750-year ginkgo across town in Motoazabu. What they lack in age they make up in company: Meiji Jingu draws close to three million visitors in the first three days of January alone, more than any other shrine in Japan, and a large share detour past these two camphors on the way to the main hall.",
-      "verified_sources": [
-        "https://subaru-t.co.jp/blog/2023/09/07/%EF%BD%82-12/",
-        "https://jinjabukkaku-arekore.com/meotokusu-at-meiji-shrine/",
-        "https://www.openstreetmap.org/node/4368070703"
-      ],
-      "access": "Free, shrine grounds open daily",
-      "transport": "1 min walk from Meiji-Jingumae Station (Chiyoda/Fukutoshin lines)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Meiji_Jingu_005.jpg",
-        "license": "CC0 1.0",
-        "attribution": "Ocdp, Wikimedia Commons",
-        "status": "approved",
-        "width": 4288,
-        "height": 2848
-      },
-      "curation_status": "flagged",
-      "notes": "Sourcing is blog-level rather than an official registry or newspaper; the trees themselves and their 1920 planting date are consistently reported across independent sources, but a stronger primary source is worth finding later. Also the youngest tree on this list by far, included for its historical and cultural significance (Meiji Jingu's founding, and the site's status as Japan's most-visited shrine) rather than age. Pin corrected to a contributor-mapped OpenStreetMap node named \"夫婦楠\" directly in front of the outer worship hall, independently matching a Yahoo Map place entry for the same name within a few metres.",
-      "location_precision": "confirmed"
-    }
-  ],
-  "oldest_tree_id": "tok_001"
+ "city": "Tokyo",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Tokyo has burned to the ground more times than almost any capital on Earth: the 1657 Meireki fire, the 1868 Battle of Ueno, the 1923 earthquake, and the March 1945 firebombing each erased whole districts overnight. The city's oldest trees survived by an accident of biology as much as luck. Ginkgo bark and wood hold unusual moisture and resist igniting, which is one reason five of these are ginkgos, scarred but alive on temple and shrine ground. The oldest dates from the Kamakura period. The newest is a hundred-year-old avenue everyone has already seen in photographs.",
+ "meta_description": "Tokyo's oldest trees survived the fires that leveled the city around them. Start with the 750-year-old ginkgo at Zenpukuji, Tokyo's oldest living thing.",
+ "question_answer": "The oldest tree in Tokyo is the ginkgo at Zenpukuji temple in Motoazabu, estimated at around 750 years old and a National Natural Monument since 1926. Nicknamed the Upside-Down Ginkgo for its hanging aerial roots, it stands a seven minute walk from Azabu-Juban Station.",
+ "question_meta": "Zenpukuji's 750-year-old ginkgo, the Upside-Down Ginkgo, is Tokyo's oldest tree. Its legend, exact location, and fourteen more remarkable trees nearby.",
+ "question_context": "Tokyo's claim to its oldest tree comes with more competition than most capitals. Sensoji temple in Asakusa has its own scarred ginkgo, tied by legend to the 12th century shogun Minamoto no Yoritomo and commonly cited at around 800 years old, older than Zenpukuji's tree. But that age rests entirely on oral tradition, and the tree lost its official Natural Monument status after 1945 fire damage. Zenpukuji's ginkgo carries an active national designation dating to 1926 and a growth-ring estimate that supports roughly 750 years, which is why guidebooks and Minato City's own tourism office call it Tokyo's oldest living tree while treating Sensoji's as a close, less formally verified second. Both trees share something else: they survived the same March 1945 firebombing raids that destroyed the buildings around them, because ginkgo wood resists catching fire in a way most other trees do not. Zenpukuji's tree also carries a legend of its own, said to have grown from a walking staff planted by the monk Shinran in 1229. Getting there: Azabu-Juban Station on the Namboku or Oedo line, then a seven minute walk.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Tokyo?",
+   "a": "The ginkgo at Zenpukuji temple in Motoazabu, estimated at 750 years old and a National Natural Monument since 1926. A similarly aged ginkgo at Sensoji in Asakusa is sometimes cited as older by legend, but its age has never been formally measured."
+  },
+  {
+   "q": "Why are so many of Tokyo's oldest trees ginkgos?",
+   "a": "Ginkgo wood and bark hold unusual moisture and resist catching fire, which let several of the city's oldest ginkgos survive the 1923 earthquake fires and the 1945 firebombing that destroyed the temples and shrines around them."
+  },
+  {
+   "q": "Are Tokyo's ancient trees free to visit?",
+   "a": "Most are free. Hamarikyu Gardens and Koishikawa Botanical Garden charge a small entry fee, and Ueno Toshogu asks for one only if you want to see its camphor tree up close by the gold-leafed gate."
+  },
+  {
+   "q": "Where do Tokyo's ancient trees cluster?",
+   "a": "On shrine and temple grounds. Religious sites were rarely redeveloped and often kept their original trees deliberately, which makes them the most reliable place in Tokyo to find something genuinely old."
+  }
+ ],
+ "trees": [
+  {
+   "id": "tok_001",
+   "name": "The Zenpukuji Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "750 years",
+   "age_min": 700,
+   "age_max": 800,
+   "location": {
+    "address": "Zenpukuji, 1-6-21 Motoazabu, Minato-ku, Tokyo 106-0046",
+    "latitude": 35.653564,
+    "longitude": 139.732872,
+    "neighbourhood": "Motoazabu, Minato"
+   },
+   "story": "The upside-down tree Tokyo never quite got over. In 1229 the Buddhist monk Shinran planted his walking staff in the ground here before leaving Zenpukuji, or so the story goes, and the staff took root and grew into this ginkgo. Whatever the truth of the legend, tree-ring estimates put the trunk at roughly 750 years old, which makes it the oldest living thing in Tokyo and a rare tree that has outlasted the city around it more than once. Its aerial roots hang from the lower branches like stalactites, thick and pendulous enough that locals nicknamed it Sakasa Icho, the Upside-Down Ginkgo. The tree was declared a National Natural Monument in 1926, one of the first in Tokyo. Then came March 1945: American incendiary bombs burned most of the temple to the ground and scorched the ginkgo's trunk black. Ginkgos are famously fire-resistant, sappy and slow to catch, and this one kept living. New growth eventually covered the char. Every autumn it turns a shade of gold that draws photographers who have never heard of Shinran.",
+   "verified_sources": [
+    "https://ja.wikipedia.org/wiki/%E5%96%84%E7%A6%8F%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+    "https://visit-minato-city.tokyo/en/places/1047",
+    "https://japantoday.com/category/features/travel/a-visit-to-zenpukuji-temple-in-azabu-to-see-the-oldest-tree-in-tokyo"
+   ],
+   "access": "Free, temple grounds open daily",
+   "transport": "7 min walk from Azabu-Juban Station (Namboku/Oedo lines)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Giant_Ginkgo_Tree_-_Zenpukuji_-_Minato%2C_Tokyo_-_DSC06818.JPG",
+    "license": "CC0 1.0",
+    "attribution": "Daderot, Wikimedia Commons",
+    "status": "approved",
+    "width": 5472,
+    "height": 3648
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "late November, when the ginkgo turns deep gold",
+    "kind": "autumn colour"
+   }
+  },
+  {
+   "id": "tok_002",
+   "name": "The Sensoji War Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "800 years",
+   "age_min": 700,
+   "age_max": 850,
+   "location": {
+    "address": "Sensoji, 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032",
+    "latitude": 35.713403,
+    "longitude": 139.795527,
+    "neighbourhood": "Asakusa, Taito"
+   },
+   "story": "This ginkgo used to be a national treasure and technically is not one anymore, and the reason why says everything about it. Legend holds that a branch stuck in the ground here by the shogun Minamoto no Yoritomo, visiting around 1189, took root and grew into this tree, which would make it roughly 800 years old. The Japanese government designated it a Natural Monument in 1930. Then, on the night of March 10, 1945, American firebombs burned nearly all of Asakusa to the ground, including Sensoji's main hall and its five-story pagoda, both later rebuilt from scratch. The ginkgo was hit directly. Its trunk is still hollow and blackened five or six meters up, a permanent scorch mark from a night that killed roughly 100,000 people in Tokyo. The fire damage was severe enough that the monument designation was revoked after the war. The tree itself was not deterred: it kept growing, and it is the one part of Sensoji that watched the temple burn and rebuild around it rather than the other way around.",
+   "verified_sources": [
+    "https://www.tokyo-np.co.jp/article/164735",
+    "https://asakusa.gr.jp/jp/?p=2498",
+    "http://asakusanews.com/erudition/2039"
+   ],
+   "access": "Free, temple grounds open daily",
+   "transport": "5 min walk from Asakusa Station (Ginza/Asakusa/Tobu lines)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "The 800-year figure rests on oral legend (the Minamoto no Yoritomo story), not a tree-ring count. Existence, species, WWII fire damage and the revoked monument status are all independently sourced; the precise age is not.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "late November, when the leaves turn gold",
+    "kind": "autumn colour"
+   }
+  },
+  {
+   "id": "tok_003",
+   "name": "The Ueno Toshogu Camphor",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "age_estimate": "600 years",
+   "age_min": 550,
+   "age_max": 650,
+   "location": {
+    "address": "Ueno Toshogu, 9-88 Uenokoen, Taito-ku, Tokyo 110-0007",
+    "latitude": 35.715367,
+    "longitude": 139.770632,
+    "neighbourhood": "Ueno, Taito"
+   },
+   "story": "Ueno Park's biggest tree predates the shrine built around it by more than two centuries. This camphor was already an old tree in 1627 when Ueno Toshogu was founded to enshrine Tokugawa Ieyasu, and it has stood on this rise since before Ueno was Ueno at all, which is why the shrine's own literature calls it Ueno's ancestral tree. Its trunk runs more than eight meters around, the widest in the park by a comfortable margin. The shrine itself survived the 1657 Meireki fire, the 1868 Battle of Ueno between shogunate loyalists and the new imperial army, the 1923 earthquake, and the 1945 air raids that destroyed most of Ueno's other historic buildings, largely because an Edo-era engineer built its main hall with unusually deep foundations. The camphor watched all four disasters from a few meters away and came through each one with nothing worse than scorched leaves. Its canopy now shades the approach to the shrine's gold-leafed karamon gate, a combination that has made this corner of the park a minor pilgrimage for anyone who likes their history literally rooted in place.",
+   "verified_sources": [
+    "https://www.uenotoshogu.com/spot/",
+    "https://4travel.jp/dm_shisetsu_tips/12160785"
+   ],
+   "access": "Free to view; a 500 yen fee applies only if you also want to enter the shrine's inner hall precinct by the karamon gate",
+   "transport": "10 min walk from Ueno Station (JR/Ginza/Hibiya lines)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "notes": "Sourcing is the shrine's own site plus travel-review corroboration rather than an independent registry; a stronger third source would be worth finding in a future pass.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "tok_004",
+   "name": "The Head-Betting Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "450 years",
+   "age_min": 400,
+   "age_max": 500,
+   "location": {
+    "address": "Hibiya Park, near Hibiya Matsumotoro, 1-6 Hibiyakoen, Chiyoda-ku, Tokyo 100-0012",
+    "latitude": 35.673791,
+    "longitude": 139.755807,
+    "neighbourhood": "Hibiya, Chiyoda"
+   },
+   "story": "An engineer once bet his own head on this tree's survival, and won. In 1901, city planners preparing to build Hibiya Park, Japan's first Western-style public park, needed the road at its edge widened, and this 400-year-old ginkgo stood directly in the way. Honda Seiroku, the park's designer, refused to let it be felled and reportedly told his superiors he would offer his own head if the transplant failed. Over 25 days in 1902, laborers moved the tree roughly 450 meters to its current spot, an operation that reportedly needed 20,000 kan, close to 75 tons, of root ball and trunk. It worked, and the tree kept the nickname Kubikake Icho, the Head-Betting Ginkgo, ever since. It survived a second scare in 1971, when a firebomb thrown by a radical group during a protest burned down the neighboring Matsumotoro restaurant and scorched the ginkgo black; it leafed out again the following spring. Honda kept his head. The tree, seven meters around and still growing, kept its park.",
+   "verified_sources": [
+    "https://ja.wikipedia.org/wiki/%E9%A6%96%E3%81%8B%E3%81%91%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+    "https://jumokui.jp/tree-data/%E9%A6%96%E6%8E%9B%E3%81%91%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6/",
+    "https://www.tokyo-greenbizmap.metro.tokyo.lg.jp/tokusyu/meiboku/"
+   ],
+   "access": "Free, public park",
+   "transport": "3 min walk from Hibiya Station (Hibiya/Chiyoda/Mita lines)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/20260418_Kubi-kake_ginkgo_tree.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Mark Yasuda (Myasuda), Wikimedia Commons",
+    "status": "approved",
+    "width": 3072,
+    "height": 4080
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "late November, at the peak of its golden colour",
+    "kind": "autumn colour"
+   }
+  },
+  {
+   "id": "tok_005",
+   "name": "The Shiba Toshogu Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "385 years",
+   "age_min": 380,
+   "age_max": 390,
+   "location": {
+    "address": "Shiba Toshogu, 4-8-10 Shiba Koen, Minato-ku, Tokyo 105-0011",
+    "latitude": 35.655096,
+    "longitude": 139.748626,
+    "neighbourhood": "Shiba Park, Minato"
+   },
+   "story": "A shogun planted this tree with his own hands, or so Shiba Toshogu has claimed for almost four centuries. In 1641, Tokugawa Iemitsu, the third Tokugawa shogun, is said to have planted this ginkgo himself at the shrine built to deify his grandfather Ieyasu. It has been designated a Tokyo Natural Monument ever since records began keeping track, one of the city's officially protected trees. The shrine originally sat inside the vast precinct of Zojoji temple next door, the Tokugawa family's own funerary temple, until the Meiji government's forced separation of Buddhist and Shinto sites in the 1870s split them into two addresses. Zojoji's main hall was destroyed in the 1945 air raids that leveled most of Shiba; the shrine's smaller buildings burned too. The ginkgo, planted by the man whose family the whole complex was built to honor, came through the fires that took the buildings around it. Today it stands about 21 meters tall in front of the shrine's gate, with Tokyo Tower rising directly behind it, so most cameras pointed this way are aimed at the 1958 steel lattice rather than at the tree in front of it.",
+   "verified_sources": [
+    "https://wood.jp/8-jumoku/kyoju/tokyo/sibatoushouguu-icho.html",
+    "https://www.shibatoshogu.com/",
+    "https://note.com/fu9da/n/na876737abf77"
+   ],
+   "access": "Free, shrine grounds open daily",
+   "transport": "3 min walk from Shibakoen Station (Toei Mita line)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Shiba_Toshogu_03.jpg",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Reggaeman, Wikimedia Commons",
+    "status": "approved",
+    "width": 1944,
+    "height": 2592
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "late November, when the ginkgo turns gold",
+    "kind": "autumn colour"
+   }
+  },
+  {
+   "id": "tok_006",
+   "name": "The Three Hundred Year Pine",
+   "species": "Japanese Black Pine (Pinus thunbergii)",
+   "age_estimate": "300+ years",
+   "age_min": 300,
+   "age_max": 320,
+   "location": {
+    "address": "Hamarikyu Onshi Teien, 1-1 Hamarikyucho, Chuo-ku, Tokyo 104-0046",
+    "latitude": 35.6624579,
+    "longitude": 139.764008,
+    "neighbourhood": "Hamamatsucho, Chuo"
+   },
+   "story": "The biggest black pine in Tokyo grows in a garden that floods on purpose. Hamarikyu was built on reclaimed tidal land as a shogunal duck-hunting villa, and its ponds still rise and fall with Tokyo Bay through a working seawater gate, the only tide-powered garden pond left in the city. This pine was planted around 1709, when the sixth shogun Tokugawa Ienobu rebuilt the estate into something closer to its current form, and it has spent three centuries spreading rather than climbing: its lowest branches now sprawl low and wide across log supports, some running more than 20 meters from the trunk. Locals simply call it Sanbyakunen no Matsu, the Three Hundred Year Pine. The garden survived two disasters that erased most of its original structures, the 1923 earthquake and the 1945 firebombing, and the tree's low, horizontal shape likely helped it through both: black pines built close to the ground catch less wind and radiant heat than tall ones. What is left today is one tree and one tea house rebuilt from photographs, inside a garden that Tokyo Bay still floods twice a day.",
+   "verified_sources": [
+    "https://www.tokyo-greenbizmap.metro.tokyo.lg.jp/tokusyu/meiboku/",
+    "https://ja.wikipedia.org/wiki/%E6%B5%9C%E9%9B%A2%E5%AE%AE%E6%81%A9%E8%B3%9C%E5%BA%AD%E5%9C%92",
+    "https://www.jalan.net/kankou/spt_guide000000190885/",
+    "https://www.openstreetmap.org/node/2493399895"
+   ],
+   "access": "Paid entry, 300 yen",
+   "transport": "7 min walk from Shiodome Station (Oedo/Yurikamome lines)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Hama-Rikyu_300-year-old_pine.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Kimon Berlin and Gribeco, Wikimedia Commons",
+    "status": "approved",
+    "width": 3504,
+    "height": 2336
+   },
+   "curation_status": "ai_generated",
+   "notes": "Pin corrected from the garden's main entrance to the tree's own position: OpenStreetMap carries a contributor-mapped node named \"三百年の松\" (Three-Hundred-Year Pine Tree) tagged as Pinus thunbergii at this spot, with a matching guidepost and information-board node within a few metres corroborating it.",
+   "location_precision": "confirmed",
+   "paid_entry": true
+  },
+  {
+   "id": "tok_007",
+   "name": "The Ginkgo of the Sperm Discovery",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "300 years",
+   "age_min": 280,
+   "age_max": 320,
+   "location": {
+    "address": "Koishikawa Botanical Garden, 3-7-1 Hakusan, Bunkyo-ku, Tokyo 112-0001",
+    "latitude": 35.7202202,
+    "longitude": 139.7451807,
+    "neighbourhood": "Hakusan, Bunkyo"
+   },
+   "story": "In 1896, a botanist working under this tree changed what science understood about how plants reproduce. Hirase Sakugoro, an artist-turned-researcher with no university degree, spent years examining ginkgo ovules from this specimen at what was then Tokyo Imperial University's botanical garden. He discovered that ginkgo trees produce swimming sperm cells, motile and flagellated like something out of animal biology, a reproductive method no other seed plant on Earth was known to use. It overturned assumptions about the evolutionary line between ferns and flowering plants and made the ginkgo, already ancient as a genus, into a living fossil in the most literal sense: a plant still reproducing the way its ancestors did 200 million years ago. The discovery is commemorated with a stone marker at the tree's base, placed for its sixtieth anniversary in 1956. The tree itself, one of the female specimens whose ovules made the discovery possible, is estimated by ring count at around 300 years old, and it still drops a heavy carpet of ginkgo nuts every autumn, oblivious to its own scientific importance.",
+   "verified_sources": [
+    "https://www.bg.s.u-tokyo.ac.jp/koishikawa/overview/memorial.html",
+    "https://koishikawa-bg.jp/ennai/ginkgo/",
+    "https://www.openstreetmap.org/node/4683343152"
+   ],
+   "access": "Paid entry, 500 yen (University of Tokyo botanical garden)",
+   "transport": "10 min walk from Hakusan Station (Toei Mita line)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Tokyo%2C_Koishikawa_%282005%29_11.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "LBM1948, via Wikimedia Commons",
+    "status": "approved",
+    "width": 1077,
+    "height": 706
+   },
+   "curation_status": "ai_generated",
+   "notes": "Pin corrected from the garden entrance to the tree's own position: OpenStreetMap carries a contributor-mapped node named \"精子発見のイチョウ\" (The spermatozoid of Ginkgo biloba) tagged as Ginkgo biloba at this spot, with the 1956 commemorative-stele node recorded almost on top of it, matching the stone marker described in our own sources. Only photos of the adjacent commemorative stone were found on Wikimedia Commons, not the tree itself, so no photo is used.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "late November, when the leaves turn gold",
+    "kind": "autumn colour"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "tok_008",
+   "name": "The Kameido Tenjin Wisteria",
+   "species": "Japanese Wisteria (Wisteria floribunda)",
+   "age_estimate": "150+ years (shrine's wisteria tradition dates to 1663)",
+   "age_min": 150,
+   "age_max": 360,
+   "location": {
+    "address": "Kameido Tenjin Shrine, 3-6-1 Kameido, Koto-ku, Tokyo 136-0071",
+    "latitude": 35.702616,
+    "longitude": 139.820732,
+    "neighbourhood": "Kameido, Koto"
+   },
+   "story": "Claude Monet may owe part of his water lily garden to this shrine, according to art historians who trace a line from Hiroshige's woodblock prints to Giverny. Utagawa Hiroshige painted Kameido Tenjin's wisteria and its arched drum bridge in his 1856 series One Hundred Famous Views of Edo, and that print reportedly reached and influenced French Impressionists including Monet, who filled his own garden with wisteria decades later. The shrine was founded in 1663 on marshy ground, and its first head priest planted wisteria because the vines tolerate wet soil; the fifth and eighth shoguns, Tsunayoshi and Yoshimune, are both recorded visiting specifically to see it bloom. Today around 50 wisteria plants across 15 trellises still frame the bridge every late April, trained and pruned continuously since the Edo period even if individual vines have been replaced along the way, the way a shrine's sacred rope gets rewoven without anyone calling it a different rope. Exactly how old any single living vine is remains unclear. What is certain is that people have been coming here to see wisteria bloom for more than 360 years.",
+   "verified_sources": [
+    "https://www.city.koto.lg.jp/kuse/koho/houdou/r07/r0704/r070418fuji.html",
+    "https://kameidotenjin-sha.jp/",
+    "https://thegate12.com/jp/article/601"
+   ],
+   "access": "Free, shrine grounds open daily",
+   "transport": "15 min walk from Kameido Station (JR Sobu line), or 10 min from Higashi-Ojima Station (Toei Shinjuku line)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Wisteria_at_Kameido_Tenjin.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Fred Cherrygarden, Wikimedia Commons",
+    "status": "approved",
+    "width": 4000,
+    "height": 6000
+   },
+   "curation_status": "flagged",
+   "notes": "The shrine's wisteria tradition is continuous since 1663, but the current vines have almost certainly been renewed and replanted over that span like a trained garden feature rather than surviving as single 360-year-old plants. Age range left wide to reflect that uncertainty honestly.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     4,
+     5
+    ],
+    "label": "late April into May, when the wisteria hangs in flower",
+    "kind": "blossom"
+   }
+  },
+  {
+   "id": "tok_009",
+   "name": "The Meiji Jingu Gaien Ginkgo Avenue",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "100+ years",
+   "age_min": 100,
+   "age_max": 120,
+   "location": {
+    "address": "Icho Namiki, Meiji Jingu Gaien, 2-1 Kitaaoyama, Minato-ku, Tokyo 107-0061",
+    "latitude": 35.674,
+    "longitude": 139.7168,
+    "neighbourhood": "Kitaaoyama, Minato"
+   },
+   "story": "Every one of these 146 ginkgo trees was already a young adult when it was planted. In 1908, gardeners collected seeds from ginkgos at Shinjuku Gyoen and grew 1,600 seedlings in a nursery; only the straightest, best-shaped survivors, already six meters tall, were selected fifteen years later to line this avenue when Meiji Jingu Gaien opened in 1923 as a memorial to Emperor Meiji. The landscape architect who laid it out planted them nine meters apart along a 300-meter stretch running straight toward the Meiji Memorial Picture Gallery, engineering the perspective so the trees appear to funnel toward the building's dome from any angle on the street. A century on, the tallest reaches 28 meters, and every November the avenue turns the same uniform gold that has made it one of the most photographed streets in Japan, filled with tour groups and engagement shoots in equal number. A 2023 redevelopment plan for the neighboring stadium district reignited public debate over whether construction work threatens the ginkgos' roots, a reminder that even Tokyo's most photographed trees remain, legally, just trees.",
+   "verified_sources": [
+    "https://www.jingugaienmachidukuri.jp/history/",
+    "https://mrs.living.jp/tokyo/kurashi_info/article/5987244"
+   ],
+   "access": "Free, public avenue",
+   "transport": "3 min walk from Aoyama-itchome Station (Ginza/Hanzomon/Oedo lines)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Meiji_jingu_outer_garden_ginkgo_trees_2013_nov.jpg",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Kentin, Wikimedia Commons",
+    "status": "approved",
+    "width": 3648,
+    "height": 2736
+   },
+   "curation_status": "ai_generated",
+   "notes": "This is an avenue of 146 individually planted ginkgos rather than a single tree, so the pin marks the Aoyama-dori entrance rather than one exact trunk.",
+   "location_precision": "approximate",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "late November, when the whole avenue turns gold",
+    "kind": "autumn colour"
+   }
+  },
+  {
+   "id": "tok_010",
+   "name": "The Meoto Kusu",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "age_estimate": "106 years",
+   "age_min": 100,
+   "age_max": 110,
+   "location": {
+    "address": "Meiji Jingu, near the outer worship hall, 1-1 Yoyogikamizonocho, Shibuya-ku, Tokyo 151-8557",
+    "latitude": 35.6757978,
+    "longitude": 139.6992138,
+    "neighbourhood": "Yoyogi, Shibuya"
+   },
+   "story": "This is the youngest tree on this list by roughly six centuries, and also the one most people specifically travel here to touch. Two camphor trees were donated to Meiji Jingu when the shrine was built in 1920 to deify Emperor Meiji and Empress Shoken, planted side by side just in front of the outer worship hall and bound together with a sacred straw rope, a shimenawa, that marks them as one connected being rather than two separate trees. They are called Meoto Kusu, the Married Couple Camphors, and generations of visitors have prayed here for good marriages and family harmony, a tradition now widened into a general wish for good relationships of any kind. Camphor trees can live over a thousand years, so at just over a century old these two are barely past childhood by the standards of their own species, let alone the 750-year ginkgo across town in Motoazabu. What they lack in age they make up in company: Meiji Jingu draws close to three million visitors in the first three days of January alone, more than any other shrine in Japan, and a large share detour past these two camphors on the way to the main hall.",
+   "verified_sources": [
+    "https://subaru-t.co.jp/blog/2023/09/07/%EF%BD%82-12/",
+    "https://jinjabukkaku-arekore.com/meotokusu-at-meiji-shrine/",
+    "https://www.openstreetmap.org/node/4368070703"
+   ],
+   "access": "Free, shrine grounds open daily",
+   "transport": "1 min walk from Meiji-Jingumae Station (Chiyoda/Fukutoshin lines)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Meiji_Jingu_005.jpg",
+    "license": "CC0 1.0",
+    "attribution": "Ocdp, Wikimedia Commons",
+    "status": "approved",
+    "width": 4288,
+    "height": 2848
+   },
+   "curation_status": "flagged",
+   "notes": "Sourcing is blog-level rather than an official registry or newspaper; the trees themselves and their 1920 planting date are consistently reported across independent sources, but a stronger primary source is worth finding later. Also the youngest tree on this list by far, included for its historical and cultural significance (Meiji Jingu's founding, and the site's status as Japan's most-visited shrine) rather than age. Pin corrected to a contributor-mapped OpenStreetMap node named \"夫婦楠\" directly in front of the outer worship hall, independently matching a Yahoo Map place entry for the same name within a few metres.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "tok_011",
+   "name": "Kyu-Hosokawa-tei no Shii",
+   "species": "Japanese Chinquapin (Castanopsis sieboldii)",
+   "age_estimate": "roughly 400 years",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 813,
+   "height_m": 10.8,
+   "location": {
+    "address": "Takanawa 1-16-25, Minato-ku, Tokyo (inside Takanawa Community Plaza)",
+    "latitude": 35.64167,
+    "longitude": 139.73461,
+    "neighbourhood": "Takanawa, Minato-ku"
+   },
+   "verified_sources": [
+    "https://ja.wikipedia.org/wiki/%E6%97%A7%E7%B4%B0%E5%B7%9D%E9%82%B8%E3%81%AE%E3%82%B7%E3%82%A4",
+    "http://www.tree-flower.jp/13/kyu_hosokawatei_527/kyu_hosokawatei_shii_.html",
+    "https://www.tv-tokyo.co.jp/adomachi/backnumber/20250510/145947.html"
+   ],
+   "access": "Free. Stands on the grounds of Takanawa Community Plaza (a Minato-ku public facility), open during the plaza's public hours.",
+   "transport": "Shirokanetakanawa Station (Toei Mita Line / Tokyo Metro Namboku Line), about 1-2 minute walk; the plaza sits almost directly above the station",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Eight metres around and barely eleven tall, this chinquapin is built like a barrel. The Tokyo Board of Education's plaque gives it a girth of 8.13 metres against a height of 10.8, which is the shape a tree takes when it spends centuries widening instead of climbing. It grows a minute from the ticket gates of Shirokanetakanawa Station, inside the grounds of a Minato ward community plaza, and most people walk past it.\n\nThe ground under it is darker than the setting suggests. This was the lower residence of the Hosokawa lords of Kumamoto, and after the Ako Incident of 1701 it was here that Oishi Kuranosuke and sixteen other Ako retainers were held in shogunate custody until they were ordered to commit seppuku. A monument nearby still marks the spot. Whether the tree was standing then, nobody can say. TV Tokyo's 2025 segment on it repeats the local figure of roughly four hundred years or more, and there is no ring count, register entry or planting record to tighten that. If anyone has measured it properly, we would like to know.\n\nTokyo lists it as a Natural Monument. Sudajii is an evergreen and does nothing dramatic in any month. It is simply very old, very wide, and still standing on the exact patch of ground where the Hosokawa mansion used to be, which is more than the mansion managed.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "tok_012",
+   "name": "The Himalayan Cedar of Yanaka",
+   "species": "Himalayan Cedar (Cedrus deodara)",
+   "age_estimate": "around 100 years",
+   "age_min": 90,
+   "age_max": 110,
+   "girth_cm": 400,
+   "height_m": 20,
+   "location": {
+    "address": "Yanaka 1-6-15, Taito-ku, Tokyo",
+    "latitude": 35.72167,
+    "longitude": 139.76733,
+    "neighbourhood": "Yanaka, Taito-ku"
+   },
+   "verified_sources": [
+    "https://t-navi.city.taito.lg.jp/spot/1122",
+    "https://journeytotrees.com/2020/02/23/kyoju007/",
+    "https://tms-media.jp/posts/20647/"
+   ],
+   "access": "Free, no gate at all: the tree stands on public land at a small triangular street junction in Yanaka, beside what was a bakery, and is visible and reachable at any hour.",
+   "transport": "Nippori Station (JR Yamanote Line / Keisei Line), roughly a 10 minute walk through the Yanaka Ginza area",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "This tree started as a pot plant. Around 1926 the grandfather of the Mikado bread shop, at whose door it still stands, kept a Himalayan cedar seedling in a container and watered it with the water left over from rinsing rice, until it outgrew the pot and went into the ground at the corner. It is now twenty metres tall and four metres round, and it fills a small triangular street junction in Yanaka entirely.\n\nNothing about it belongs here. Cedrus deodara comes from the western Himalaya, and a hundred-year-old one wedged into a lane of low wooden houses in old Tokyo is worth going to look at once. Taito ward gave it formal protection in 2006, and the junction sits on the national list of a hundred historic Japanese landscapes.\n\nIts age is argued over by about a decade. The ward's own page says ninety years; Tokyo Shimbun ran a headline in October 2019 calling it a hundred, and a survey the following spring recorded the same. That October typhoon tore off roughly a third of the crown and shut the road for days. The ward cut back what was left in November 2020, pruned again after that, and by September 2024 the tree had been braced against the next storm.\n\nA century on, the pot is a footnote and the cedar is the landmark. It is on open street, with no gate and no hours.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "tok_013",
+   "name": "Akiba no Kuromatsu",
+   "species": "Japanese Black Pine (Pinus thunbergii)",
+   "age_estimate": "about 300 years",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 400,
+   "height_m": 17,
+   "location": {
+    "address": "Denenchofu 5-chome 3-19, Ota-ku, Tokyo, beside the Umazaka slope east of Shozenji Temple",
+    "latitude": 35.595395,
+    "longitude": 139.65885,
+    "neighbourhood": "Denenchofu, Ota-ku"
+   },
+   "verified_sources": [
+    "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%84",
+    "https://nature-spot-visitor-club.blog.jp/archives/44935135.html"
+   ],
+   "access": "Free. Stands beside the public road up the Umazaka slope on the east side of Shozenji Temple, on land that historically belonged to the temple; visible and reachable directly from the street, no gate to pass.",
+   "transport": "Denenchofu Station (Tokyu Toyoko Line / Meguro Line), roughly 10-20 minute walk uphill",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Tokyo once designated a set of black pines as its own Natural Monuments. This is the last of them left standing. The metropolitan survey literature records it as the only survivor of that group as of 2015, and as the second-largest pine in Tokyo after the great one at Zenyoji in Edogawa.\n\nIt grows beside the Umazaka slope in Denenchofu, on ground that belonged to Shozenji, a Jodo-shu temple founded in 1639. The trunk climbs straight for about seven metres and then opens out into an umbrella, which is what a black pine does when nothing crowds it: roughly seventeen metres tall, about four metres round, and around three hundred years old, which is as precise as any source is willing to be. At its foot is a small stone shrine to Akiba, the temple's guardian deity, and that is where the tree gets its name.\n\nThree centuries beside a road is hard work. A city survey in 1986 found it vigorous, with limbs reaching out over a neighbouring building; those were cut back for wind risk, and more came off after snow broke what remained. It was photographed on a temple walk in September 2025, still fanning out over the slope.\n\nThe city designated it on 19 March 1963. There is no gate and no ticket: the pine stands on the public path up the hill, where it has been the whole time.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "tok_014",
+   "name": "Yogo no Matsu",
+   "species": "Japanese Black Pine (Pinus thunbergii)",
+   "age_estimate": "over 600 years",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 450,
+   "height_m": 8,
+   "location": {
+    "address": "Higashi-Koiwa 2-24-2, Edogawa-ku, Tokyo, in the grounds of Zenyoji Temple (Koiwa Fudoson)",
+    "latitude": 35.72767,
+    "longitude": 139.8935,
+    "neighbourhood": "Higashi-Koiwa, Edogawa-ku"
+   },
+   "verified_sources": [
+    "https://ja.wikipedia.org/wiki/%E5%BD%B1%E5%90%91%E3%81%AE%E3%83%9E%E3%83%84",
+    "https://secchin.exblog.jp/38765295"
+   ],
+   "access": "Free. Zenyoji Temple (also known locally as Koiwa Fudoson) is open to the public; the pine stands prominently in the temple precinct, its huge crown held up on 82 wooden props.",
+   "transport": "JR Sobu Line to Koiwa Station, then a bus toward Kasai/Mizue to the Edogawa Hospital Mae stop, then about a 200 metre walk",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "Eight metres tall, and it takes eighty-two wooden props to hold it up. The Yogo Pine at Zenyoji in Edogawa grows sideways rather than upward: the limbs split about two metres off the ground and reach roughly twenty-eight metres east to west and thirty-one north to south, covering over eight hundred square metres. It is reputed to spread wider than any other pine in Japan.\n\nIt became a National Natural Monument in September 2011, the country's top tier of protection, though Tokyo had already designated it back in 1926. It is older than the temple standing behind it. Zenyoji is traditionally dated to about 1500; the pine is said to be over six hundred years old, and a temple manuscript of 1745 already describes an old pine on the site. Nobody knows who named it. Yogo means a deity appearing briefly in worldly form.\n\nThe best story about it is an argument. For decades it contested the title of Japan's finest pine with the Okano Matsu in Kagawa, and in 1980, after a row broke out at the temple, a sumo chief referee was asked to settle the matter. He ruled the two joint yokozuna. The plaque recording that verdict still hangs under the branches. The Kagawa tree died in 1993.\n\nThis one nearly went too. A pond filled in nearby choked its roots from the 1970s on, and a ten-year soil and drainage rescue finished in July 2011, weeks before the national listing.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "tok_015",
+   "name": "Yono no Okaya",
+   "species": "Japanese Nutmeg-yew (Torreya nucifera)",
+   "age_estimate": "traditionally said to be close to 1,000 years",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 700,
+   "height_m": 21.5,
+   "location": {
+    "address": "Suzuya 4-1083-1, Chuo-ku, Saitama City, Saitama Prefecture, in the Konpira-do precinct of Myogyoji Temple",
+    "latitude": 35.871998,
+    "longitude": 139.627065,
+    "neighbourhood": "Suzuya, Chuo-ku, Saitama City (roughly 30-40 minutes from central Tokyo by train, not within Tokyo itself)"
+   },
+   "verified_sources": [
+    "https://www.city.saitama.lg.jp/004/005/006/001/005/002/001/p000148.html",
+    "https://online.bunka.go.jp/heritages/detail/137954"
+   ],
+   "access": "Free. Stands in the Konpira-do (Konpira shrine hall) precinct on the south side of Myogyoji Temple, on ground open to visitors; owned by the temple (religious corporation Myogyoji).",
+   "transport": "Minami-Yono Station (JR Saikyo Line), a short walk through a residential neighbourhood; exact minutes not independently confirmed",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "By the temple's own history, this nutmeg-yew went into the ground in the 1030s, and four hundred years later, in the Oei era, it was already known as the largest tree in the Kanto plain and used by travellers as a landmark. That is tradition rather than measurement, and Saitama City's cultural properties page records it as tradition. Nobody has counted the rings.\n\nWhat has been measured, in a 1988 survey: 21.5 metres tall, a trunk about seven metres round, a root spread of 13.5 metres, forking into two limbs less than two metres above the ground. Both the city and the national Agency for Cultural Affairs describe the tree as vigorous. It has been a National Natural Monument since 25 July 1932.\n\nIt is not in Tokyo. It stands in Suzuya, in Saitama City, about twenty-one kilometres north of the centre and a short walk from Minami-Yono station, which makes it a half-day rather than an afternoon. You will find it in the Konpira hall precinct on the south side of Myogyoji temple, and by local tradition the hall is there because of the tree: a Kamakura-period account holds that the kaya was enshrined as the sacred tree of the deity Konpira-ten, and the site is still worshipped as Kayagi Konpira.\n\nTorreya nucifera is a slow, dense evergreen conifer with the reputation of taking centuries to get anywhere. It looks much the same in February as in August.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ],
+ "oldest_tree_id": "tok_001"
 }

@@ -648,7 +648,12 @@ def main():
     todo = []
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
         d = json.load(open(f))
-        if cities and d["city"].lower() not in cities:
+        # Matches the city NAME or its slug, because the slug is what a
+        # caller has to hand (it is the filename and the URL) and passing it
+        # used to match nothing and report "0 photo-less trees unchecked",
+        # which reads as a finished sweep rather than a typo. 2026-09-01.
+        slug = os.path.basename(f)[:-5]
+        if cities and d["city"].lower() not in cities and slug not in cities:
             continue
         for t in d.get("trees", []):
             if (t.get("photo") or {}).get("url"):
