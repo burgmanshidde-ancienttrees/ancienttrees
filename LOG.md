@@ -9,6 +9,43 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-01 (session) - Twenty famous American trees go live, on nineteen places that had none
+
+Hidde asked whether the 60 American trees sitting in `data/leads/_famous-united-states.json` could go live. Sixty was never the number, and the arithmetic is worth keeping because the same file exists for 50 other countries.
+
+| | |
+|---|---|
+| rows in the file | 60 |
+| already published (Hitachi Tree, Sylvia, Lahaina Banyan) | -3 |
+| already blocked | -4 |
+| Commons categories rather than trees | -4 |
+| duplicated inside the file | -2 |
+| real candidates | 47 |
+| verified alive by three verify passes | 25 |
+| **published** | **20** |
+
+**A famous tree is often famous precisely BECAUSE it is dead**, and that is the whole reason these needed verifying rather than importing. The Charter Oak fell in 1856, the Great Elm in 1876, the Liberty Tree was cut down in 1775, and every one of them keeps its Commons category and its photographs forever. Eighteen of the 47 are gone. Methuselah is blocked because the US Forest Service withholds its location on purpose.
+
+Published: General Sherman (Sequoia NP), Colonel Armstrong and Parson Jones (Guerneville), Davie Poplar (Chapel Hill), Doerner Fir (Coos Bay), Kalaloch Redcedar (Olympic NP), Lover's Oak (Brunswick GA), El Palo Alto, Octopus Tree (Tillamook), Pando (Fish Lake), Brandywine Sycamore (Chadds Ford), Pinchot Sycamore (Simsbury), Sunderland Buttonball, Emancipation Oak (Hampton VA), the Devil's Tree (Martinsville NJ), the Great White Oak of Logan OH, the Peter Lebeck Oak (Lebec), the Survivor Tree (Oklahoma City), the Big Tree of Boone County (Columbia MO), the Son of the Tree That Owns Itself (Athens GA).
+
+**Four are held, in `data/leads/_us-famous-held.json` with the reason**, and three of those four are judgement calls Hidde may want to overturn:
+
+- **Mercer Oak** and **Wye Oak** are successors of 26 and 20 years. The fame belongs to trees that no longer stand, so "would somebody travel for THIS tree" is honestly no.
+- **Sam Houston Oak** stands on private farmland beside the Braches House, view-only from a public dirt road. The Hobart precedent allows view-only, but Hobart was a government building and this may be somebody's home. Question 3 outranks questions 1 and 2.
+- **Witch Tree** (Grand Portage) may only be visited on a band-authorised guided tour, which is an appointment, and an appointment fails the access test.
+
+**Two duplicates got past my own check, and the gap is worth naming.** Both New Orleans candidates, the McDonogh Oak and the Dueling Oak, were already live as `nol_001` and `nol_003`. Name matching fails for the reason `backlog.py` documents, and distance matching failed too, because neither lead carried a coordinate. A lead with no point is invisible to both checks. (A night run built exactly this check the same afternoon, independently.)
+
+**Eight places are named with their state**, because `city_names.py` resolved "Sunderland" to Tyne and Wear, 5164 km from the buttonball tree in Massachusetts. Done before the first build, so no URL was ever retired.
+
+**Photos: 11 of the 20, from a viewing pass over 103 candidates**, screened with `photo_light.py` first. The rejections are the better record: Oklahoma City's five "Survivor Tree" candidates were a 1984 publicity photo of the band Survivor, the World Trade Center survivor tree and a survivor of the USS Arizona; the Brandywine Sycamore matched a Southern Pacific locomotive at Lafayette, Louisiana; and both the Tree That Owns Itself and El Palo Alto matched tinted vintage postcards that the light meter scored OK, because it measures light and cannot see what a thing is. Doerner Fir is `held`: right tree, photographed before the August 2025 fire took fifteen metres off its top, and its page's whole story is that it lost that crown.
+
+**Two build checks earned their keep**, both of them hard rule 9: "Live Oak (Quercus sp.)" in Austin against "Oak (Quercus sp.)" on the Devil's Tree, and a Kyoto cherry carrying a whole description in its species field.
+
+**And one thing no check could see: every one of the nineteen new pages rendered "1 Trees Worth Visiting" in its title tag**, plus "1 trees on the map", "All 1 trees" and "Download all 1 trees". Philadelphia has read that way since Bartram's Ginkgo opened it. Fixed as `nTrees()` in `tree-count.ts` and a singular branch in all seven translated languages. The build was green through all of it, which is the point: the QA layers check structure, existence, diffs and fit, and none of them can read a sentence. Found by looking at the rendered page at 375px, which is the per-change eyes rule doing its job.
+
+Cost: three verify passes and two write passes, roughly 590k tokens for 20 published trees, about 30k per tree. Above the 15k target, and the reason is visible in the arithmetic: 22 of the 47 candidates cost a full verification each and produced nothing but a dated rejection. Those rejections are permanent, so the next famous-tree batch in any country starts cheaper.
+
 ## 2026-09-01 - Night run 2026-09-01 14:23 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.4 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). 1 commit(s), none of them a published tree.
