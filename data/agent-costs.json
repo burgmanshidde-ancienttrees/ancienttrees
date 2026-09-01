@@ -1033,7 +1033,7 @@
         "kind": "scout",
         "tokens": 124675,
         "trees": 0,
-        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+        "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       },
       {
         "target": "barcelona",
@@ -4361,6 +4361,13 @@
         "tokens": 95000,
         "trees": 0,
         "note": "honest zero: all near-city register candidates were duplicates of the 10 already-published trees or the two already-blocked private-land trees; two new remote Sinnai forest clusters (~22km out) found and left as leads on access/host-unreachable grounds (idese.cultura.gov.it added to fetch-blocklist.json), three prior leads got a documented second failed attempt"
+      },
+      {
+        "target": "ios.yml/appfit.py/SignIn.swift/RefusedWalk.swift",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session work, tokens not self-tracked; iOS CI rung-2 investigation. Found the floor job (iOS 18) failing 4/4 scheduled runs since 08-30 traced to the same run (33442819227) already covered by the top LOG entry, whose stdout-pollution root cause was already fixed and pushed at 00:41 today (unverified, no scheduled run has fired since). Two independent, real findings from that same run fixed: a RefusedWalk timing flake (chip label read before CLLocationManager delivered its callback) and a sign-in DRIFT false-positive (centred caption whose wrap width sits right at appfit centred() threshold). A defensive boot() call added to appfit.py run_test. The equivalent one-line fix for ios.yml itself could not be pushed (token lacks workflows scope, same known limitation as every prior session)."
       }
     ]
   }
