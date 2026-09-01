@@ -5,7 +5,7 @@
   "intro": "Kagoshima keeps its own list. Since 1974 the city has designated preserved trees one at a time, measured each at 1.5 metres and put a signboard at its foot, so the ages here come from a municipal register rather than from folklore. Number one is a camphor at Kagoshima Shrine. Number eight is a subtropical fig on the flank of an active volcano that the sign dates at a thousand years. Above the harbour, Shiroyama was fenced off for most of the Edo period and never cleared. An hour north stands the largest tree in Japan.",
   "meta_description": "Kagoshima's ancient trees: a thousand-year fig on Sakurajima, the cycad that gave botany its first plant sperm, and Japan's largest tree an hour north.",
   "question_answer": "The oldest tree in Kagoshima is the Akou of Yuno, a subtropical fig on the eastern flank of Sakurajima, which the city's own preserved-tree signboard dates at about 1,000 years. It stands in the hamlet of Yuno in Higashi-Sakurajima, reached by the 15-minute ferry from central Kagoshima and a local bus.",
-  "question_meta": "The Akou of Yuno on Sakurajima, about 1,000 years old, is Kagoshima's oldest tree. Where it stands, how the age is dated, and 11 more remarkable trees.",
+  "question_meta": "The Akou of Yuno on Sakurajima, about 1,000 years old, is Kagoshima's oldest tree. Where it stands, how the age is dated, and 12 more remarkable trees.",
   "question_context": "Kagoshima's ages come from an unusually concrete place. Under a 1974 ordinance the city designates individual preserved trees, records trunk circumference at 1.5 metres, height and an estimated age for each, and posts that estimate on a board at the tree. The Akou of Yuno is preserved tree number 8, and its board gives about 1,000 years, roughly three times the next oldest figure on the list. Nothing behind that number is a ring count and the city does not publish its method, so treat it as an official estimate. The Environment Ministry measured the same tree at 6.5 metres around against the city's 7.4, most likely because it recorded only the thicker of two stems that fuse a metre above the ground. If a day trip counts, an older tree stands an hour north in Aira: the Great Camphor of Kamo was already worshipped as sacred when the shrine beside it was founded in 1123. Getting to Yuno: the Sakurajima ferry runs around the clock and takes 15 minutes, then a local bus toward Higashi-Sakurajima.",
   "oldest_tree_id": "kag_009",
   "faq": [
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Kagoshima's ancient trees free to visit?",
-      "a": "Yes, all twelve. Nine stand in public parks, on shrine grounds or beside a public road in the city, one is on a lane through a Sakurajima hamlet, and the two out-of-town trees are on open shrine ground. None charges entry."
+      "a": "Yes, all thirteen. Ten stand in public parks, on shrine grounds or beside a public road in the city, one is on a lane through a Sakurajima hamlet, and the two out-of-town trees are on open shrine ground. None charges entry."
     },
     {
       "q": "What is an akou tree?",
@@ -27,7 +27,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "Most of them. Four sit within a kilometre of Terukuni Park and Shiroyama in the city centre. Six more make a second walk of about two and a half kilometres along the northern waterfront, from Nanshu Shrine down through Tagayama Park to the stone bridges at Gionnosu and on up the Iso coast road. Sakurajima and Kamo are separate trips."
+      "a": "Most of them. Four sit within a kilometre of Terukuni Park and Shiroyama in the city centre. Seven more make a second walk of about two and a half kilometres along the northern waterfront, from Nanshu Shrine down through Tagayama Park to the stone bridges at Gionnosu and on up the Iso coast road. Sakurajima and Kamo are separate trips."
     }
   ],
   "trees": [
@@ -423,6 +423,44 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Single-sourced, and the source is a volunteer map survey: OpenStreetMap node 12843461914, surveyed 2025-06-20, tagged natural=tree, name 琉球船の目印松, species=Pinus luchuensis, denotation=landmark. Nothing corroborates the name, the species or the position, which is why the pin is marked approximate; it puts you on the right 50 metres of coast road, where there is one conspicuous pine. No age, girth or height is recorded anywhere, and the page asks rather than estimates. Published under the publish-and-ask rule: an unverified name is a question for a reader, not a reason to withhold a real tree."
+    },
+    {
+      "id": "kag_013",
+      "name": "The Ginkgo of Nanshu Shrine",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 130 years",
+      "age_min": 110,
+      "age_max": 150,
+      "girth_cm": 297,
+      "height_m": 24.0,
+      "location": {
+        "address": "Nanshu Shrine, Kamitatsuo-cho 2-1, Kagoshima 892-0801",
+        "latitude": 31.60645,
+        "longitude": 130.558877,
+        "neighbourhood": "Kamitatsuo-cho"
+      },
+      "story": "Kagoshima's preservation register holds two trees at Nanshu Shrine, and the ginkgo is the taller by ten metres. Registered in 1974 as preserved tree number 16, it stands 24 metres over the graves of the men who fought and died in the 1877 Satsuma Rebellion, a girth of just under three metres and an age the city puts at about 130 years, roughly what it also recorded for the ogatama magnolia sharing these grounds.\n\nGinkgos are famously slow to die. Individuals in China and Japan have stood for well over a thousand years, so on that scale this one has barely started. What it has already done is weather Sakurajima's ash, which drifts across this hillside on most days and settles on every leaf the volcano can reach.\n\nNobody appears to have re-measured either tree since that original 1974 survey, so the figures on the register are older than most of the visitors reading them. Its one dramatic month is November, when the whole crown turns a single even gold over a cemetery that otherwise asks for quiet.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when the crown turns a single even gold",
+        "kind": "autumn colour"
+      },
+      "verified_sources": [
+        "https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "Kagoshima City View bus to Nanshu Shrine, or about 20 minutes on foot from JR Kagoshima Station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single-sourced: only Kagoshima City's preserved-tree register (number 16) carries this tree, the same 1974 survey and the same document as kag_005 next to it. The pin is the shrine, not the trunk."
     }
   ]
 }

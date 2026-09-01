@@ -128,12 +128,36 @@ HELD_MARKER = re.compile(
 # doubtful transit claim), which is a location-honesty question and not the
 # same thing as CLAUDE.md's protected "nobody got round to researching it
 # further" (bare distance or lack of a second source, which stays READY).
+# Widened again 2026-09-01: a write-pass dispatch sampled all 50 READY leads
+# across every city (not a handful, all of them) to assemble a batch, and
+# found only a small minority actually clear of an open question. Coimbra's
+# ten were register rows with the note "Not researched this pass" verbatim,
+# repeated city after city; Napoli's camphors and Barcelona's Pebrer bord read
+# "single-sourced, access unconfirmed" or "not for public access"; Vilnius'
+# Mickunu azuolas needed "a transit-time check before it could be presented
+# honestly as reachable"; Paris' weeping elm stands in a square "shut for
+# construction until roughly mid-2027". None of the three prior widenings
+# (2026-08-23, 2026-08-31) catch any of these phrasings, which is the same
+# whack-a-mole shape as before: a pass declines a lead in new words every
+# time. Checked against the full leads corpus (every file, not just the
+# flagged cities) exactly as the note above requires: two of the new phrases
+# collide with a count-doctrine word, and both collisions are the protected
+# case itself (Poznan's oak, "held back only to avoid overshooting... target"),
+# which COUNT_DOCTRINE_WORDS already exempts below.
 NOT_READY_MARKER = re.compile(
     r"\[SKIPPED\b[^\]]*\]|\b(?:not pursued|left unverified|left undelivered|"
     r"ship once|not delivered on|removed from protection|"
     r"survival is a genuine question|identity unresolved|unresolved conflict|"
     r"could be a genuine second|almost certainly beyond|likely beyond|"
-    r"would need a)\b",
+    r"would need a|"
+    r"not researched this pass|not individually researched|"
+    r"not evaluated this pass|not verified this pass|not confirmed this pass|"
+    r"not verified tree by tree|access unverified|access unconfirmed|"
+    r"access does not clear|not for public access|stays a lead|"
+    r"held back this pass|not shipped this pass|blocked from shipping|"
+    r"not chased further|worth a future pass|worth a later pass|"
+    r"worth a look next pass|time.?boxed out|time.?boxed to|"
+    r"needs a survival check|shut for construction|closed until)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
