@@ -222,12 +222,62 @@ def pipeline_status():
                       f"data/genus-names.json is the cheap way to refill it: every word "
                       f"added there turns leads into writable trees for nothing. ***")
             elif top and top.startswith("source"):
-                print(f"  *** the writable pile is under {READY_FLOOR}, and the dominant "
-                      f"gap is unsourced leads ({miss_counts[top]} of them): a scrape, never "
-                      f"looked at by a pass. No script fills that; it needs an actual verify "
-                      f"pass (rung 4/5), not a refill. ***")
+                # A directive, not advice. Until 2026-09-01 this printed the
+                # diagnosis and stopped, and a run was free to read it and go
+                # do something else, which is what happened: the pile went
+                # from 366 on 08-28 to 16 on 09-01 while every run walked
+                # past this line. Hidde named the gap in one sentence ("de
+                # schrijfplank moet ook autonoom gevuld worden als die leeg
+                # raakt"), and an empty shelf is the one state that makes the
+                # cheapest rung on the ladder unavailable, so it outranks
+                # whatever else the run had in mind.
+                print(f"  *** REFILL THE SHELF FIRST: the writable pile is under "
+                      f"{READY_FLOOR} and {miss_counts[top]} leads are unsourced, a scrape "
+                      f"never looked at by a pass. No script fills that. Dispatch a verify "
+                      f"agent on the batch below BEFORE taking anything else off the "
+                      f"ladder. ***")
+                for line in refill_batches(b):
+                    print(line)
     except Exception as exc:
         print(f"  ready to write    : unknown ({exc.__class__.__name__})")
+
+
+
+def refill_batches(b, want=3):
+    """Name the verify batches that would refill the writable shelf.
+
+    Exists so the directive above points at work rather than at a problem. A
+    run should not have to derive which file to verify: that derivation is
+    the same every time and a run on a short window skips it.
+
+    The order is size first, because CLAUDE.md's assembly line refuses a pass
+    under six expected candidates and the fixed cost per pass is what makes a
+    thin batch expensive. The `_famous-*` files are deliberately eligible and
+    usually win: they are country batches, which is the shape CLAUDE.md asks
+    for, and famous_trees.py records that nearly all of their entries arrive
+    with a photograph already attached, so a verified one lands on a page
+    complete rather than with a gap.
+    """
+    import collections
+    per = collections.Counter()
+    photos = collections.Counter()
+    for item in b["needs"]:
+        city, lead, miss = item[0], item[1], item[2]
+        if not any(m.startswith("source") for m in miss):
+            continue
+        per[city] += 1
+        if isinstance(lead, dict) and lead.get("photos"):
+            photos[city] += 1
+    if not per:
+        return []
+    out = ["      the batches that would refill it, biggest first:"]
+    for city, n in per.most_common(want):
+        kind = "country batch" if city.startswith("_famous-") else "city"
+        out.append("        %-26s %3d unsourced, %3d with a photo already  (%s)"
+                   % (city, n, photos[city], kind))
+    out.append("      brief it from data/leads/<name>.json; verify agent, per "
+               "BRIEF_RESEARCH.md.")
+    return out
 
 
 # Under this many writable leads and refilling the pile outranks writing from
