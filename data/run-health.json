@@ -2963,6 +2963,29 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-01T08:58:57+00:00",
+   "date": "2026-09-01",
+   "run_id": "33489807347",
+   "minutes": 12.5,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 101,
+   "denials": 12,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(for), Bash(gh), Bash(python3)",
+   "ended": "success",
+   "tokens": 16145801,
+   "claims_held": [
+    "madeira",
+    "brisbane",
+    "alicante"
+   ],
+   "commits": 5,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
   }
  ],
  "schedule_changes": [

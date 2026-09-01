@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-01 - Night run 2026-09-01 08:58 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 12.5 minutes of its 120 minute window, 101 turns, 12 commands refused by the allowlist, ended clean (success). 5 commit(s), none of them a published tree. Claims left behind: madeira, brisbane, alicante, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-01 - Night run 2026-09-01 08:28 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 15.7 minutes of its 120 minute window, 109 turns, 16 commands refused by the allowlist, ended clean (success). 6 commit(s), none of them a published tree. Claims left behind: brisbane, alicante, which block the top of the queue until they expire.
