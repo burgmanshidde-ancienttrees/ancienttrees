@@ -1,0 +1,78 @@
+{
+  "city": "Lima",
+  "leads": [
+    {
+      "wikidata_qid": "Q137303607",
+      "name": "Acacia patrimonial en Magdalena del Mar, registro 1",
+      "species": "Acacia (genus only; Peruvian coverage suggests Acacia macracantha but not confirmed on a fetched page)",
+      "latitude": -12.089167,
+      "longitude": -77.060045,
+      "reason": "Part of Magdalena del Mar's 8-tree heritage register (2nd-most of any Lima district per infobae Jan 2026), declared by a municipal ordinance this pass could not retrieve in full (munimagdalena.gob.pe's own article on the program did not return readable body text; the 2020 ordinance number was not found via search). A WebSearch AI summary mentioned Acacia macracantha at 'Plaza Tupac Amaru' but per the search-summary-is-a-lead-never-a-source rule this was never confirmed against a fetched page, so it is recorded here as an unverified pointer only, not used as fact. No exact address or age found on any page actually fetched."
+    },
+    {
+      "wikidata_qid": "Q137303614",
+      "name": "Laurel patrimonial en Magdalena del Mar, registro 8",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "latitude": -12.092394,
+      "longitude": -77.073521,
+      "reason": "Same Magdalena register as above. No independent source found beyond the Wikidata/register entry itself; only one source in hand, which fails the two-source bar. Worth a return pass once Magdalena's own ordinance or technical sheet PDF can be reached."
+    },
+    {
+      "wikidata_qid": "Q137303608",
+      "name": "Eucalipto patrimonial en Magdalena del Mar, registro 2",
+      "species": "Eucalyptus citriodora",
+      "latitude": -12.100581,
+      "longitude": -77.058794,
+      "reason": "The only one of Magdalena's 7 eucalyptus with a specific species (Lemon-scented Gum), so the best candidate of the seven if this cluster is pursued again, but still only one source (Wikidata/register) found this pass. No exact address, age or second source located."
+    },
+    {
+      "wikidata_qid": "Q137303609",
+      "name": "Eucalipto patrimonial en Magdalena del Mar, registro 3",
+      "species": "Eucalyptus (species not specified)",
+      "latitude": -12.096566,
+      "longitude": -77.059937,
+      "reason": "One of 7 near-identical Magdalena eucalyptus entries; brief instructs taking at most the best one or two rather than researching all seven. Only one source, no exact address or age found."
+    },
+    {
+      "wikidata_qid": "Q137303610",
+      "name": "Eucalipto patrimonial en Magdalena del Mar, registro 4",
+      "species": "Eucalyptus (species not specified)",
+      "latitude": -12.100888,
+      "longitude": -77.058232,
+      "reason": "Same as registro 3; not individually researched this pass."
+    },
+    {
+      "wikidata_qid": "Q137303611",
+      "name": "Eucalipto patrimonial en Magdalena del Mar, registro 5",
+      "species": "Eucalyptus (species not specified)",
+      "latitude": -12.094487,
+      "longitude": -77.05736,
+      "reason": "Same as registro 3; not individually researched this pass."
+    },
+    {
+      "wikidata_qid": "Q137303612",
+      "name": "Eucalipto patrimonial en Magdalena del Mar, registro 6",
+      "species": "Eucalyptus (species not specified)",
+      "latitude": -12.094636,
+      "longitude": -77.057416,
+      "reason": "Same as registro 3; not individually researched this pass."
+    },
+    {
+      "wikidata_qid": "Q137303613",
+      "name": "Eucalipto patrimonial en Magdalena del Mar, registro 7",
+      "species": "Eucalyptus (species not specified)",
+      "latitude": -12.094827,
+      "longitude": -77.05752,
+      "reason": "Same as registro 3; not individually researched this pass."
+    },
+    {
+      "wikidata_qid": "Q137303615",
+      "name": "Ombu patrimonial en Magdalena del Mar, registro 9",
+      "species": "Ombu (Phytolacca dioica)",
+      "latitude": -12.099377,
+      "longitude": -77.056563,
+      "reason": "A second ombu, distinct from Pueblo Libre's San Martin ombu (lim_003) which was fully verified this pass. Only one source found (Wikidata/register); worth chasing on a return pass, especially since Magdalena's own program page could not be read in full this session."
+    }
+  ],
+  "blocked": []
+}

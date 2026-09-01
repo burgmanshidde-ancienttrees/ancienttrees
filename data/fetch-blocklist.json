@@ -283,6 +283,18 @@
    "seen": "2026-09-01",
    "cost": "one fetch during the Gilwell Oak verify pass",
    "workaround": "Wayback Machine snapshots load fine via curl with a browser user agent, and that is how this pass got the current access wording (the site that operates Gilwell Park and publishes its current visitor access)."
+  },
+  "msi.gob.pe": {
+   "behaviour": "hangs, no response at all (curl -m 20, exit 28). San Isidro's municipal site.",
+   "seen": "2026-09-01",
+   "cost": "one fetch of the Lima verify pass",
+   "workaround": "the ordinance content (535-MSI, and the 2026 Ruta de los Arboles Patrimoniales) was reachable through infobae, El Comercio, andina.pe and gob.pe, which carried enough to verify five trees."
+  },
+  "munimagdalena.gob.pe": {
+   "behaviour": "responds, but plain curl gets JS boilerplate rather than article text, so the programme page cannot be read this way.",
+   "seen": "2026-09-01",
+   "cost": "the Magdalena del Mar half of the Lima pass, seven eucalyptus left unverified",
+   "workaround": "unknown; a browser session or the ordinance PDF via a search engine cache."
   }
  }
 }
