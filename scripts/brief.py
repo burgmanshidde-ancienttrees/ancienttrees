@@ -158,10 +158,16 @@ def photos_still_off_domain(out):
     2026-08-29, and Hidde reported the same thing again ("plaatjes laden weer
     niet").
 
-    It cannot be automated where the rest of this is automated. The GitHub
-    Actions egress proxy blocks upload.wikimedia.org, measured 2026-08-07, so a
-    workflow step would fetch nothing and say so to nobody. A session reaches it
-    normally, which is why the reminder is here, at the top of one.
+    It is automated since 2026-09-01: .github/workflows/photos.yml runs the
+    script daily and commits what arrives. This line stays because the workflow
+    can be behind by a day and because a handful can never be vendored at all,
+    but it is no longer a chore waiting on a person.
+
+    The reason it was not automated before was wrong. "The GitHub Actions egress
+    proxy blocks upload.wikimedia.org, measured 2026-08-07" was a misread: the
+    runner fetches the full file and the 500/960px buckets, 200 OK, probed from
+    the runner on 2026-09-01. What failed in August were 400s on a thumbnail
+    width Wikimedia does not render.
 
     It asks the script rather than counting off-domain urls itself, and that is
     the difference between a line worth reading and one nobody believes: a
@@ -175,7 +181,7 @@ def photos_still_off_domain(out):
     if m and int(m.group(1)):
         out += [f"{m.group(1)} photograph(s) are not on our own domain yet, which is "
                 f"how the app's images start failing.",
-                "  python3 scripts/vendor_photos.py   (local only: CI cannot reach Wikimedia)",
+                "  python3 scripts/vendor_photos.py   (or wait for the daily photos.yml)",
                 ""]
 
 

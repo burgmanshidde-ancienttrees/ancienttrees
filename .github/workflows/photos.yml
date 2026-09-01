@@ -1,0 +1,55 @@
+name: Vendor photographs
+
+# Copy newly approved photographs onto our own domain, every day, without a
+# person. scripts/vendor_photos.py has run "once, by hand" since 2026-08-27,
+# which was fine while Hidde opened a session most days and is not fine now
+# that he is away for months: every photograph a night run approves stays on
+# upload.wikimedia.org until somebody remembers, and Wikimedia rate-limits a
+# card grid at exactly the moment the app tries to draw one. Eleven were
+# already waiting when this was written.
+#
+# It was believed CI could not do this at all. It can: probed 2026-09-01, the
+# runner fetches the full file and the 500/960px buckets, 200 OK. The
+# 2026-08-07 "egress proxy blocks Wikimedia" verdict was a misread 400 on a
+# thumbnail width Wikimedia does not serve.
+#
+# The script is serialised at one request every three seconds on purpose and
+# fetches only what is missing, so a normal day is a minute and a no-op day
+# costs nothing. Licences are checked by name inside it; anything that does not
+# permit redistribution is skipped and printed, never guessed at.
+
+on:
+  schedule:
+    - cron: "40 4 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vendor-photos
+  cancel-in-progress: false
+
+jobs:
+  vendor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch what is missing
+        run: python3 scripts/vendor_photos.py
+
+      - name: Commit what arrived
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "nothing new to vendor"
+            exit 0
+          fi
+          git config user.name "claude[bot]"
+          git config user.email "41898282+claude[bot]@users.noreply.github.com"
+          git add -A site/public/photos data
+          n=$(git diff --cached --name-only -- site/public/photos | wc -l | tr -d ' ')
+          git commit -m "Vendor $n photograph file(s) onto our own domain"
+          git pull --rebase --autostash -q
+          git push
