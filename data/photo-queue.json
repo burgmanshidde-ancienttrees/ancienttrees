@@ -35067,7 +35067,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work",
-     "source": "wikidata/Q105501045"
+     "source": "wikidata/Q105501045",
+     "judged": "reject",
+     "verdict": "viewed at 960px: a spectacular portrait of the trunk and root mass, but the crown is cut off at the top, so it is a trunk study rather than the whole tree"
     },
     {
      "title": "File:Monumental Olive tree near Kavousi (Crete) 01.jpg",
@@ -35077,7 +35079,9 @@
      "author": "Unukorno",
      "lat": 35.115232,
      "lng": 25.86078,
-     "cats": "Category:Azorias olive tree Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+     "cats": "Category:Azorias olive tree Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work",
+     "judged": "approve",
+     "verdict": "approved: viewed at 960px. The braided trunk centre frame with the canopy above it, in leaf, daylight. Geotag 41 m from our pin and the file names Kavousi. The Wikidata-linked candidate 03 shows the trunk better and cuts the crown off, so this one is the entry photograph."
     },
     {
      "title": "File:Monumental Olive tree near Kavousi (Crete) 02.jpg",
@@ -35137,7 +35141,9 @@
      "author": "Jerzy Strzelecki",
      "lat": null,
      "lng": null,
-     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work"
+     "cats": "Category:Azorias olive tree Category:CC-BY-SA-3.0 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed at 960px: a spectacular portrait of the trunk and root mass, but the crown is cut off at the top, so it is a trunk study rather than the whole tree"
     },
     {
      "title": "File:Olive tree (Kavousi - Azorias), Crete 04(js).jpg",
@@ -35243,7 +35249,9 @@
      "author": "Eric Nagle",
      "lat": 35.486839,
      "lng": 23.7868,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Items with VRTS permission confirmed Category:Vouves olive tree"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Items with VRTS permission confirmed Category:Vouves olive tree",
+     "judged": "approve",
+     "verdict": "approved: viewed at 960px. The tree dead centre, the whorled ancient bole and the full crown both readable, in leaf under a blue sky. Geotag 2 m from our pin, the file names the tree and carries a VRTS permission."
     },
     {
      "title": "File:Olive tree of Vouves 2021-10-16.jpg",
@@ -35253,7 +35261,9 @@
      "author": "Alexey Komarov",
      "lat": 35.486855,
      "lng": 23.786795,
-     "cats": "Category:2021 in Crete Category:CC-BY-SA-4.0 Category:Crete by user:Alexkom000 Category:Files with coordinates missing SDC location of creation Category:Greece photographs taken on 2021-10-16 Category:October 2021 by user:Alexkom000 Category:Oleaceae in the Northern Hemisphere in October 2021 Category:Self-published work Category:Taken on missing SDC inception Category:Taken with Sony ILCE-7S and Sony FE 28-70mm F3.5-5.6 OSS by user:Alexkom000 Category:Trees by user:Alexkom000 Category:Vouves olive tree"
+     "cats": "Category:2021 in Crete Category:CC-BY-SA-4.0 Category:Crete by user:Alexkom000 Category:Files with coordinates missing SDC location of creation Category:Greece photographs taken on 2021-10-16 Category:October 2021 by user:Alexkom000 Category:Oleaceae in the Northern Hemisphere in October 2021 Category:Self-published work Category:Taken on missing SDC inception Category:Taken with Sony ILCE-7S and Sony FE 28-70mm F3.5-5.6 OSS by user:Alexkom000 Category:Trees by user:Alexkom000 Category:Vouves olive tree",
+     "judged": "reject",
+     "verdict": "viewed at 960px: the correct tree in good light, but the municipal monument sign takes the left third; a cleaner candidate was approved"
     },
     {
      "title": "iNat obs 41697700 (Olea europaea)",
@@ -35652,7 +35662,9 @@
      "licence": "CC BY",
      "author": "(c) Sophia K, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "30.1840633333,-97.7237466667"
+     "obs_location": "30.1840633333,-97.7237466667",
+     "judged": "reject",
+     "verdict": "viewed at 1024px: shot from directly beneath with heavy lens flare, the crown is not readable and the base is out of frame"
     },
     {
      "title": "iNat obs 94599224 (Taxodium distichum)",
@@ -35661,7 +35673,9 @@
      "licence": "CC BY",
      "author": "(c) Sophia K, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "30.1840633333,-97.7237466667"
+     "obs_location": "30.1840633333,-97.7237466667",
+     "judged": "reject",
+     "verdict": "viewed at 1024px: shot from directly beneath with heavy lens flare, the crown is not readable and the base is out of frame"
     },
     {
      "title": "iNat obs 252800788 (Taxodium distichum)",
@@ -35670,7 +35684,9 @@
      "licence": "CC BY",
      "author": "(c) mattmsa, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "30.1840916667,-97.7236888889"
+     "obs_location": "30.1840916667,-97.7236888889",
+     "judged": "reject",
+     "verdict": "viewed at 1024px: shot up into the limbs through a screen of surrounding branches, the whole tree is not readable"
     }
    ]
   },
@@ -36903,7 +36919,9 @@
      "author": "Fry72",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR: almost colourless, reads as black and white"
     },
     {
      "title": "File:Pino de las dos Pernadas, Vilaflor de Chasna, Tenerife 01.jpg",
@@ -36993,7 +37011,9 @@
      "author": "Fry72",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR: backlit, the sky blown out and the subject a silhouette"
     },
     {
      "title": "File:Pino Gordo, Vilaflor de Chasna, Tenerife 02.jpg",
@@ -37003,7 +37023,9 @@
      "author": "Fry72",
      "lat": 28.165203,
      "lng": -16.636862,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR: almost colourless and backlit with the sky blown out"
     },
     {
      "title": "File:Pino Gordo, Vilaflor de Chasna, Tenerife 03.jpg",
@@ -37013,7 +37035,9 @@
      "author": "Fry72",
      "lat": null,
      "lng": null,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR: almost colourless, reads as black and white"
     },
     {
      "title": "File:Pino Gordo, info panel 2025.jpg",
@@ -37033,7 +37057,9 @@
      "author": "Cayambe",
      "lat": 28.1652,
      "lng": -16.636861,
-     "source": "commons/famous"
+     "source": "commons/famous",
+     "judged": "approve",
+     "verdict": "approved: viewed at 960px. The whole Canary pine against the sky, crown and trunk both readable, people at the base for scale and the viewing platform in frame. Daylight, colour. Geotagged 2 m from our pin and the file names the tree."
     },
     {
      "title": "File:Teneriffa, Kanarische Kiefer bei Vilaflor 1.jpg",
@@ -37970,7 +37996,9 @@
      "lat": 41.098572,
      "lng": 16.871306,
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Apulia Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-29 Category:Pino d'Aleppo monumentale (Bari) Category:Self-published work Category:September 2018 in Bari Category:Uploaded via Campaign:wlm-it",
-     "source": "wikidata/Q55742459"
+     "source": "wikidata/Q55742459",
+     "judged": "reject",
+     "verdict": "viewed at 960px: shot from beneath into the limbs with a street lamp across the frame, the whole tree is not readable and the base is out of frame"
     }
    ]
   },
@@ -37999,7 +38027,9 @@
      "author": "Mara Cavalluzzi",
      "lat": 40.968414,
      "lng": 16.578108,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Italy Category:Images from Wiki Loves Monuments 2019 in Italy - Apulia Category:Images from Wiki Loves Monuments 2019 in Italy - veteran trees Category:Italy photographs taken on 2019-09-03 Category:On OSM Category:Quercus ilex in Italy Category:Self-published work Category:Toritto Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Italy Category:Images from Wiki Loves Monuments 2019 in Italy - Apulia Category:Images from Wiki Loves Monuments 2019 in Italy - veteran trees Category:Italy photographs taken on 2019-09-03 Category:On OSM Category:Quercus ilex in Italy Category:Self-published work Category:Toritto Category:Uploaded via Campaign:wlm-it",
+     "judged": "approve",
+     "verdict": "approved: viewed at 960px. The tree is the subject and centre frame, trunk readable from the base, in leaf, daylight. The file is named for this tree and geotagged on it. Weakness: a phone snapshot in dull light with the crown running out of frame, so replace it when a better one turns up."
     }
    ]
   },
@@ -38302,7 +38332,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Argentina photographs taken on 2006-12-24 Category:CC-BY-2.0 Category:Calle Quintana, Buenos Aires Category:December 2006 in Buenos Aires Category:Files supported by Wikimedia Argentina Category:Flickr images uploaded by Flickr upload bot Category:FoP-Argentina Category:Gomero de la Recoleta Category:Photographs by Beatrice Murch Category:Plaza Intendente Alvear Category:Taken with Konica Minolta Dimage X50",
-     "source": "wikidata/Q56303696"
+     "source": "wikidata/Q56303696",
+     "judged": "reject",
+     "verdict": "viewed at 960px: the canopy reads as a green mass with no trunk visible at all, the sky is blown white and an office block takes the top left. The gomero's propped limbs, which are the whole point of it, are not in the frame"
     },
     {
      "title": "File:A tree near Necropolis (Recoleta).jpg",
@@ -38372,7 +38404,9 @@
      "author": "Beatrice Murch",
      "lat": null,
      "lng": null,
-     "cats": "Category:Argentina photographs taken on 2006-12-24 Category:CC-BY-2.0 Category:Calle Quintana, Buenos Aires Category:December 2006 in Buenos Aires Category:Files supported by Wikimedia Argentina Category:Flickr images uploaded by Flickr upload bot Category:FoP-Argentina Category:Gomero de la Recoleta Category:Photographs by Beatrice Murch Category:Plaza Intendente Alvear Category:Taken with Konica Minolta Dimage X50"
+     "cats": "Category:Argentina photographs taken on 2006-12-24 Category:CC-BY-2.0 Category:Calle Quintana, Buenos Aires Category:December 2006 in Buenos Aires Category:Files supported by Wikimedia Argentina Category:Flickr images uploaded by Flickr upload bot Category:FoP-Argentina Category:Gomero de la Recoleta Category:Photographs by Beatrice Murch Category:Plaza Intendente Alvear Category:Taken with Konica Minolta Dimage X50",
+     "judged": "reject",
+     "verdict": "viewed at 960px: the canopy reads as a green mass with no trunk visible at all, the sky is blown white and an office block takes the top left. The gomero's propped limbs, which are the whole point of it, are not in the frame"
     },
     {
      "title": "iNat obs 20254671 (Ficus)",
@@ -38522,7 +38556,9 @@
      "author": "Mister Roboto",
      "lat": -34.574716,
      "lng": -58.408482,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Uploaded via Campaign:wlm-ar"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Uploaded via Campaign:wlm-ar",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR: underexposed"
     },
     {
      "title": "File:Magnolia histórica 9.JPG",
@@ -38532,7 +38568,9 @@
      "author": "Mister Roboto",
      "lat": -34.574716,
      "lng": -58.408482,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Uploaded via Campaign:wlm-ar"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Argentina with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2013 Category:Images from Wiki Loves Monuments 2013 in Argentina Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Magnolia histórica de Avellaneda Category:Self-published work Category:Uploaded via Campaign:wlm-ar",
+     "judged": "reject",
+     "verdict": "viewed at 960px: the plaque reading MAGNOLIA GRANDIFLORA settles the identity, but an overhanging plane branch crosses the entire upper frame and reads as the tree itself"
     },
     {
      "title": "File:Monumento Nicolas Avellaneda.JPG",
@@ -38780,7 +38818,9 @@
      "author": "Characea",
      "lat": 35.23365,
      "lng": 25.469119,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check",
+     "judged": "reject",
+     "verdict": "viewed at 960px: a wide panorama of the village square with the canopy overhead and the spring-fountain arches; no single tree is the subject and the trunk is not readable"
     },
     {
      "title": "File:Krassi huge Platanus 13 02 04 962000.jpeg",
@@ -38850,7 +38890,9 @@
      "author": "Characea",
      "lat": 35.233272,
      "lng": 25.468578,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Krasi Category:Self-published work Category:Uploads by Characea needing check",
+     "judged": "reject",
+     "verdict": "viewed at 960px: a distant view of the crown over rooftops and scrub, the tree has to be searched for and the trunk is not visible"
     }
    ]
   },
@@ -38868,7 +38910,9 @@
      "author": "Rigorius",
      "lat": 35.063333,
      "lng": 24.946667,
-     "cats": "Category:2023 in Gortyna Category:CC-BY-SA-4.0 Category:Evergreen Platanus (Gortyn) Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+     "cats": "Category:2023 in Gortyna Category:CC-BY-SA-4.0 Category:Evergreen Platanus (Gortyn) Category:Files with coordinates missing SDC location of creation Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed at 960px: oleander in bloom fills most of the frame and the only tree in it is bare and skeletal, which is the opposite of what this entry claims. Not an entry photograph, and the tree's condition is worth a verify pass"
     },
     {
      "title": "File:Gortys Evergreen Platanus 20230607 105504.jpg",
@@ -39724,7 +39768,9 @@
      "licence": "CC BY",
      "author": "(c) Marios Thoma, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "35.0319222222,33.035175"
+     "obs_location": "35.0319222222,33.035175",
+     "judged": "reject",
+     "verdict": "viewed at 1024px: the right kind of tree, a split hollow olive, but shot at dusk with the crown cut off, and it stands in a numbered survey grove where several old olives look alike"
     },
     {
      "title": "iNat obs 295328177 (Olea europaea)",
@@ -39733,7 +39779,9 @@
      "licence": "CC BY",
      "author": "(c) Marios Thoma, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "35.0319222222,33.035175"
+     "obs_location": "35.0319222222,33.035175",
+     "judged": "reject",
+     "verdict": "viewed at 1024px: the right kind of tree, a split hollow olive, but shot at dusk with the crown cut off, and it stands in a numbered survey grove where several old olives look alike"
     }
    ]
   },
@@ -39818,7 +39866,9 @@
      "author": "Tim Hatfield",
      "lat": 32.717134,
      "lng": -80.08024,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Trees"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Trees",
+     "judged": "approve",
+     "verdict": "approved: viewed at 960px. Unmistakably the Angel Oak, the whole sprawl of low limbs in frame with visitors for scale, trunk dead centre, in leaf, daylight. Geotag 18 m."
     },
     {
      "title": "File:Angel Oak Tree 2019.jpg",
@@ -39828,7 +39878,9 @@
      "author": "Frmorrison",
      "lat": 32.721677,
      "lng": -80.085793,
-     "cats": "Category:Angel Oak Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:July 2019 in South Carolina Category:License migration not eligible Category:Self-published work"
+     "cats": "Category:Angel Oak Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:July 2019 in South Carolina Category:License migration not eligible Category:Self-published work",
+     "judged": "reject",
+     "verdict": "viewed at 960px: atmospheric but shot from under the canopy, the whole tree is not readable and mulch takes the bottom half; a better candidate was approved"
     },
     {
      "title": "File:Angle Oak Tree - Flickr - Bruce Tuten.jpg",
@@ -39838,7 +39890,9 @@
      "author": "Bruce Tuten from Savannah, Georgia, United States",
      "lat": 32.717507,
      "lng": -80.080547,
-     "cats": "Category:Angel Oak Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr files uploaded by Red panda bot Category:Flickr images reviewed by FlickreviewR 2 Category:November 2006 in South Carolina Category:Photos in Flickr Explore Category:United States photographs taken on 2006-11-10"
+     "cats": "Category:Angel Oak Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr files uploaded by Red panda bot Category:Flickr images reviewed by FlickreviewR 2 Category:November 2006 in South Carolina Category:Photos in Flickr Explore Category:United States photographs taken on 2006-11-10",
+     "judged": "reject",
+     "verdict": "photo_light scores it POOR: almost colourless, reads as black and white"
     },
     {
      "title": "File:How Many Trees (41991980).jpeg",
@@ -40768,7 +40822,9 @@
      "author": "Henk Monster",
      "lat": 52.043901,
      "lng": 5.692598,
-     "cats": "Category:CC-BY-3.0 Category:Netherlands photographs taken on 2012-05-19 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Trees in Ede, Netherlands"
+     "cats": "Category:CC-BY-3.0 Category:Netherlands photographs taken on 2012-05-19 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Henk Monster Category:Photos from Panoramio Category:Trees in Ede, Netherlands",
+     "judged": "approve",
+     "verdict": "approved: viewed at 960px. A solitary veteran beech with a mossy root flare and a candelabra of limbs, whole tree readable, in fresh leaf, daylight. Identity rests on three things rather than the filename: right species, geotag 55 m from our pin, and the Dutch national register holding no other monumental tree within 500 m of it."
     }
    ]
   },
@@ -41782,7 +41838,9 @@
      "author": "Jan Geerling",
      "lat": 53.218472,
      "lng": 6.568661,
-     "cats": "Category:CC-BY-SA-4.0 Category:Photographs by Jan Geerling in Groningen Category:Uploaded with pattypan"
+     "cats": "Category:CC-BY-SA-4.0 Category:Photographs by Jan Geerling in Groningen Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "viewed at 960px: a street corner with wheelie bins and bicycles, no tree in the frame at all"
     }
    ]
   },
@@ -42257,7 +42315,9 @@
      "author": "Wutsje",
      "lat": 53.21219444,
      "lng": 6.57507778,
-     "cats": "Category:CC-BY-SA-3.0 Category:Gemeentelijke monumenten in Groningen (city) Category:Gemeentelijke monumenten with known IDs Category:Information field template with formatting Category:Johannes Godfried van Beusekom Category:Oosterpoortwijk Category:Oosterweg (Groningen) Category:Schools in Groningen (city)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Gemeentelijke monumenten in Groningen (city) Category:Gemeentelijke monumenten with known IDs Category:Information field template with formatting Category:Johannes Godfried van Beusekom Category:Oosterpoortwijk Category:Oosterweg (Groningen) Category:Schools in Groningen (city)",
+     "judged": "reject",
+     "verdict": "viewed at 960px: a building portrait of the Poortershoes, the plane appears only as branches in the top right corner"
     }
    ]
   },
@@ -42382,7 +42442,9 @@
      "licence": "CC BY",
      "author": "(c) Scott Ward, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "33.955124406,-83.3823571576"
+     "obs_location": "33.955124406,-83.3823571576",
+     "judged": "approve",
+     "verdict": "approved: viewed at 1024px. The oak on its raised stone plot at the corner, granite posts, chain and plaque all in frame, trunk readable from the base, in leaf, daylight. The observation sits 46 m from our pin at 9 m accuracy. The bare-crown candidate from obs 203273664 has better light and was rejected on the in-leaf rule."
     },
     {
      "title": "iNat obs 195502528 (Quercus alba)",
@@ -42391,7 +42453,9 @@
      "licence": "CC BY",
      "author": "(c) Scott Ward, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "33.955124406,-83.3823571576"
+     "obs_location": "33.955124406,-83.3823571576",
+     "judged": "approve",
+     "verdict": "approved: viewed at 1024px. The oak on its raised stone plot at the corner, granite posts, chain and plaque all in frame, trunk readable from the base, in leaf, daylight. The observation sits 46 m from our pin at 9 m accuracy. The bare-crown candidate from obs 203273664 has better light and was rejected on the in-leaf rule."
     },
     {
      "title": "iNat obs 203273664 (Quercus alba)",
@@ -42400,7 +42464,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "33.95513,-83.38233"
+     "obs_location": "33.95513,-83.38233",
+     "judged": "reject",
+     "verdict": "viewed at 1024px: a good clean photograph of the whole tree against a blue sky, but the crown is bare; the in-leaf candidate from obs 195502528 was approved on the in-leaf rule"
     }
    ]
   },
@@ -44967,7 +45033,9 @@
      "author": "René Bongard",
      "lat": 50.885979,
      "lng": 5.95592,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nature of Heerlen Category:Netherlands photographs taken on 2007-06-19 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 419593"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nature of Heerlen Category:Netherlands photographs taken on 2007-06-19 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 419593",
+     "judged": "approve",
+     "verdict": "approved: viewed at 960px. A solitary plane at the end of the lane, whole tree readable from trunk to crown, in leaf, evening sun, blue sky. The file names the tree and its place, geotag 35 m."
     }
    ]
   },
@@ -45091,6 +45159,10 @@
   {
    "date": "2026-08-22",
    "note": "Photo-judging pass on Nijmegen, local session with working egress, one image request every 3.2 seconds across 22 fetches and no rate limiting. 27 previously unjudged candidates closed across nij_008, nij_009, nij_012 and nij_014: 22 viewed as actual pixels and 5 rejected on place metadata alone (two other-town Wilhelminabomen, a Wilhelminaboom detail, and two pastoriewoningen in Batenburg and Suameer, none of them in Nijmegen or Lent). nij_001 to nij_004 already carried candidate verdicts from 2026-08-13 and were not re-judged, only closed at tree level. One approval: nij_009, File:Kabouterboom in Beek.jpg, written into nijmegen.json, which gives Nijmegen its first photograph. The pattern here is the one this queue keeps producing. A tree that is nationally famous has nine candidates and a real photograph; the other seven trees have candidates only because a name matched. Julianaboom, Wilhelminaboom, Sterrenbos and pastorie are all national names, and the sweep returned the Maastricht ironwork, the Zutphen and Leeuwarden Wilhelminabomen, a Sint-Michielsgestel house and two pastoriewoningen 18 and 150 km away. Worth recording for nij_012 specifically: two 2020s photographs of the Hertogplein show the square rebuilt with young trees and no crowned iron fence visible from either angle, which is not proof of anything but is worth a verify pass rather than another photo sweep. Nijmegen nij_001, nij_002, nij_003, nij_004, nij_008, nij_012 and nij_014 are now documented dead ends on Commons and should not be re-swept."
+  },
+  {
+   "date": "2026-09-01",
+   "note": "Session viewing pass over photo-less cities, chosen from the intersection of no photograph, a candidate in the queue, and measured demand in the newest DATA.md depth roster, plus the single-famous-tree pages where the photograph is the page. 34 images fetched at 960px (one request every 3.2 seconds, no 429), 8 of them killed by photo_light before viewing, 26 viewed as pixels. 9 approved on 8 cities that had no photograph at all: Tenerife, Crete (2), Charleston, Bari, Heerlen, Athens Georgia, Ede, Buenos Aires. Half the shortlist came back already judged by earlier passes, which is the queue's memory working. What the rejections say about the sweep: filename matching produced a Dash 8 aircraft for a Toronto oak, portraits of Queen Wilhelmina for a Rotterdam linden, and a street corner with wheelie bins for a Groningen poplar, so the matching decides what is worth looking at and never what ships."
   }
  ]
 }
