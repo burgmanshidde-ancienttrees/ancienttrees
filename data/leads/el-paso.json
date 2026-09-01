@@ -1,0 +1,36 @@
+{
+ "city": "El Paso",
+ "leads": [
+  {
+   "name": "Pinus halapensis (Texas Big Tree Registry TreeID 538)",
+   "species": "Pinus halapensis",
+   "lat": 31.75961111,
+   "lng": -106.48263889,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 0.3 km from the centre of El Paso. Condition per the registry: 1. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 338
+  },
+  {
+   "name": "Chilopsis linearis (Texas Big Tree Registry TreeID 396)",
+   "species": "Chilopsis linearis",
+   "lat": 31.82444444,
+   "lng": -106.43888889,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 8.2 km from the centre of El Paso. Condition per the registry: 2. Measured August 2008. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 244
+  },
+  {
+   "name": "Fraxinus velutina (Texas Big Tree Registry TreeID 366)",
+   "species": "Fraxinus velutina",
+   "lat": 31.84027778,
+   "lng": -106.5875,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 13.0 km from the centre of El Paso. Condition per the registry: 2. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 389
+  }
+ ],
+ "blocked": []
+}

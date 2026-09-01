@@ -56,6 +56,66 @@
    ],
    "girth_cm": 376,
    "owner": "Inverness Houston POA, INC"
+  },
+  {
+   "name": "Lagerstroemia indica (Texas Big Tree Registry TreeID 990)",
+   "species": "Lagerstroemia indica",
+   "lat": 29.72708333,
+   "lng": -95.40119444,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.8 km from the centre of Houston. Condition per the registry: 2. Measured November 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 279
+  },
+  {
+   "name": "Ilex vomitoria (Texas Big Tree Registry TreeID 1128)",
+   "species": "Ilex vomitoria",
+   "lat": 29.75622,
+   "lng": -95.42069,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.9 km from the centre of Houston. Condition per the registry: 3. Measured August 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 91
+  },
+  {
+   "name": "Acer rubrum (Texas Big Tree Registry TreeID 2353)",
+   "species": "Acer rubrum",
+   "lat": 29.74369722,
+   "lng": -95.43582222,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 6.6 km from the centre of Houston. Condition per the registry: 2. Measured July 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 307
+  },
+  {
+   "name": "Quercus polymorpha (Texas Big Tree Registry TreeID 2359)",
+   "species": "Quercus polymorpha",
+   "lat": 29.69896111,
+   "lng": -95.45198611,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 10.5 km from the centre of Houston. Condition per the registry: 2. Measured May 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 231
+  },
+  {
+   "name": "Juniperus virginiana var. silicicola (Texas Big Tree Registry TreeID 645)",
+   "species": "Juniperus virginiana var. silicicola",
+   "lat": 29.79513889,
+   "lng": -95.50713889,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 13.8 km from the centre of Houston. Condition per the registry: 2. Measured August 2015. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 231
+  },
+  {
+   "name": "Juniperus virginiana var. silicicola (Texas Big Tree Registry TreeID 249)",
+   "species": "Juniperus virginiana var. silicicola",
+   "lat": 29.79561111,
+   "lng": -95.50733333,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 13.8 km from the centre of Houston. Condition per the registry: 2. Measured August 2015. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 196
   }
  ],
  "blocked": [
