@@ -331,6 +331,34 @@ def main():
     else:
         unknown.append("REVIEW.md")
 
+    # Can we still answer a contributor? Added 2026-09-01: the reply to
+    # submission #54 failed on every digest and every night run for two days
+    # with a Gmail 535 BadCredentials, and nothing said so, because the step is
+    # continue-on-error by design (a mail fault must never take the digest's
+    # numbers with it). contributor_reply.py now records the transport's state
+    # and this reads it, so the silence has an end.
+    mail_path = os.path.join(os.path.dirname(os.path.dirname(
+        os.path.abspath(__file__))), "data", "mail-health.json")
+    if os.path.exists(mail_path):
+        try:
+            with open(mail_path, encoding="utf-8") as fh:
+                mh = json.load(fh)
+        except Exception:
+            mh = {}
+        fails = int(mh.get("consecutive_failures", 0) or 0)
+        if fails:
+            print(f"  {'Contributor mail':20s} {'FAILING':10s} "
+                  f"{fails} attempt(s) in a row")
+            problems.append(
+                "Contributor replies are not going out: %d failed attempt(s) in a "
+                "row, newest %s. A reader who wrote to us is waiting and the "
+                "machine cannot answer. Last error: %s"
+                % (fails, (mh.get("last_error_at") or "?")[:16],
+                   (mh.get("last_error") or "")[:120]))
+        else:
+            print(f"  {'Contributor mail':20s} {'ok':10s} "
+                  f"last sent {(mh.get('last_sent_at') or 'never')[:16]}")
+
     if unknown:
         print(f"\n  could not check: {', '.join(unknown)} "
               "(gh missing, unauthenticated, or the file is absent)")

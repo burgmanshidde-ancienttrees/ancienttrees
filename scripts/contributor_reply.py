@@ -44,6 +44,41 @@ SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 SENT_PATH = os.path.join(ROOT, "data", "outreach-sent.json")
 DAILY_CAP = int(os.environ.get("OUTREACH_DAILY_CAP", "50"))
 
+
+HEALTH_PATH = os.path.join(ROOT, "data", "mail-health.json")
+
+
+def _note_transport(error):
+    """Record whether the mail actually went, so a dead transport is visible.
+
+    Written 2026-09-01 after finding that the reply to submission #54 had been
+    failing on every digest and every night run since 2026-08-30 with a Gmail
+    535 BadCredentials, and nobody knew. The step is deliberately
+    continue-on-error so a mail problem cannot kill the digest, which is right,
+    and the cost of that is that the failure is silent. This file is what
+    health.py reads, so the silence ends at the next rung-2 check.
+    """
+    now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    try:
+        state = json.load(open(HEALTH_PATH))
+    except Exception:
+        state = {}
+    if error:
+        state["last_error"] = error
+        state["last_error_at"] = now
+        state["consecutive_failures"] = int(state.get("consecutive_failures", 0)) + 1
+    else:
+        state["last_sent_at"] = now
+        state["consecutive_failures"] = 0
+        state.pop("last_error", None)
+    try:
+        with open(HEALTH_PATH, "w") as fh:
+            json.dump(state, fh, indent=2, sort_keys=True)
+            fh.write("\n")
+    except OSError:
+        pass
+
+
 THANKS_SUBJECT = {
     "tree": "Thank you, we received your tree tip",
     "city": "Thank you, we received your tree tip",
@@ -51,9 +86,13 @@ THANKS_SUBJECT = {
     "feedback": "Thank you, we received your report",
 }
 
-THANKS_BODY = """Thank you. Your input is very valuable: a real person telling us about a real tree is the best thing this project receives. Together we're building the best database of remarkable trees there is, and the point of it all is getting people outside, standing in front of something old and epic.
+THANKS_BODY = """Thank you for your feedback. We are looking into it and we will come back to you with what it changed.
 
-We check everything against independent sources, so give us a little time. We'll come back to you with what your input changed. And please feel free to send more: a tree you love, a correction, a photo. They all make the map better.
+Please keep them coming: a tree you love, a mistake we have made, a photograph. Every one of them makes the map better, and a real person telling us about a real tree is the best thing this project receives.
+
+We are also building an iPhone app. It is not live yet, and it will make this much easier: you photograph a tree standing in front of it and it reaches us with the location attached. You can put your name down here and we will tell you when it is out:
+
+https://ancienttrees.app/app
 
 Ancient Trees
 https://ancienttrees.app
@@ -86,6 +125,13 @@ def mailcheck_ok(text):
 
 def main():
     really = "--send" in sys.argv
+    only = None
+    for i, a in enumerate(sys.argv):
+        if a == "--only" and i + 1 < len(sys.argv):
+            only = sys.argv[i + 1]
+    if only not in (None, "thanks", "answers"):
+        print("contributor_reply: --only takes 'thanks' or 'answers'")
+        return 2
     key = os.environ.get("SUPABASE_SERVICE_KEY")
     if not key:
         print("contributor_reply: SUPABASE_SERVICE_KEY absent, nothing to do")
@@ -149,10 +195,40 @@ def main():
             continue
         if why.startswith("vote undone"):
             continue
-        if not r.get("thanked_at") and addr not in thanked_addrs:
+        if only != "answers" and not r.get("thanked_at") and addr not in thanked_addrs:
             subj = THANKS_SUBJECT.get(r.get("kind"), THANKS_SUBJECT["feedback"])
             jobs.append((r, subj, THANKS_BODY, "thanked_at"))
             thanked_addrs.add(addr)
+        if only == "thanks":
+            continue
+        # STAGE TWO, AUTOMATIC (Hidde, 2026-09-01): "if we put it on the
+        # website give a confirmation with the page". A run that acted on a
+        # submission sets outcome 'changed'; it should not also have to write
+        # the mail. When it did write one, that wins, because a specific
+        # answer always beats a template.
+        if (r.get("outcome") == "changed" and not r.get("reply_text")
+                and not r.get("replied_at")):
+            page = (r.get("page") or "").strip()
+            if not page and r.get("city"):
+                page = "https://ancienttrees.app/%s" % (
+                    r["city"].strip().lower().replace(" ", "-"))
+            thing = (r.get("tree") or "").strip()
+            lines = ["Thank you again. What you sent us is on the site now."]
+            if thing:
+                lines.append("")
+                lines.append("%s: %s" % (thing, page or "https://ancienttrees.app"))
+            elif page:
+                lines.append("")
+                lines.append(page)
+            lines += ["",
+                      "Have a look and tell us if anything is still wrong. And "
+                      "if you know another tree worth adding, we would like to "
+                      "hear about it.",
+                      "", "Ancient Trees", "https://ancienttrees.app"]
+            r["reply_text"] = "\n".join(lines) + "\n"
+            supa("/rest/v1/submissions?id=eq.%s" % r["id"], key, "PATCH",
+                 {"reply_text": r["reply_text"]})
+            print("AUTO composed a change confirmation for row %s" % r["id"])
         if r.get("reply_text") and not r.get("replied_at"):
             ok, report = mailcheck_ok(r["reply_text"])
             if not ok:
@@ -197,11 +273,13 @@ def main():
             server.send_message(msg)
         except Exception as e:
             print("MAIL FAILED for %s: %s" % (low, str(e)[:160]))
+            _note_transport(str(e)[:200])
             print("Nothing was stamped, so the next run tries again. "
                   "If this is a 535 BadCredentials, the app password in the "
                   "environment is wrong or has spaces in it.")
             return 0
         sent_today += 1
+        _note_transport(None)
         now = datetime.datetime.now(datetime.timezone.utc).isoformat()
         # Stamp every row of this address needing this stamp, so the
         # double-submit's siblings are covered by the one mail. The address
