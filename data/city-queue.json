@@ -584,7 +584,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "birmingham"
   },
   {
    "rank": 26,
@@ -1021,7 +1022,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "jacksonville"
   },
   {
    "rank": 45,
@@ -1133,7 +1135,8 @@
    "wikidata": 1,
    "supply": 1,
    "target": 10,
-   "ease": 1.02
+   "ease": 1.02,
+   "slug": "boise"
   },
   {
    "city": "Long Beach",
@@ -1153,7 +1156,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "long-beach"
   },
   {
    "city": "Little Rock",
@@ -1173,7 +1177,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "little-rock"
   },
   {
    "rank": 52,
@@ -1239,7 +1244,8 @@
    "wikidata": 2,
    "supply": 2,
    "target": 10,
-   "ease": 1.04
+   "ease": 1.04,
+   "slug": "indianapolis"
   },
   {
    "city": "Oakland",
@@ -1259,7 +1265,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "oakland"
   },
   {
    "city": "Fort Lauderdale",
@@ -1279,7 +1286,8 @@
    "wikidata": 1,
    "supply": 1,
    "target": 10,
-   "ease": 1.02
+   "ease": 1.02,
+   "slug": "fort-lauderdale"
   },
   {
    "rank": 57,
@@ -1347,7 +1355,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "lexington"
   },
   {
    "city": "Reno",
@@ -1367,7 +1376,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "reno"
   },
   {
    "city": "Des Moines",
@@ -1387,7 +1397,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "des-moines"
   },
   {
    "city": "Daytona Beach",
@@ -1407,7 +1418,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "daytona-beach"
   },
   {
    "rank": 63,
@@ -1473,7 +1485,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "chattanooga"
   },
   {
    "rank": 66,
@@ -1610,7 +1623,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "santa-cruz"
   },
   {
    "rank": 72,
@@ -1676,7 +1690,8 @@
    "wikidata": 1,
    "supply": 1,
    "target": 10,
-   "ease": 1.02
+   "ease": 1.02,
+   "slug": "spokane"
   },
   {
    "rank": 75,
@@ -1719,7 +1734,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "key-west"
   },
   {
    "rank": 77,
@@ -1762,7 +1778,8 @@
    "wikidata": 1,
    "supply": 1,
    "target": 10,
-   "ease": 1.02
+   "ease": 1.02,
+   "slug": "pittsburgh"
   },
   {
    "city": "Huntsville",
@@ -1783,7 +1800,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "huntsville"
   },
   {
    "city": "Saratoga Springs",
@@ -1803,7 +1821,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "saratoga-springs"
   },
   {
    "city": "West Palm Beach",
@@ -1823,7 +1842,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "west-palm-beach"
   },
   {
    "city": "Monterey",
@@ -1844,7 +1864,8 @@
    "wikidata": 1,
    "supply": 1,
    "target": 10,
-   "ease": 1.02
+   "ease": 1.02,
+   "slug": "monterey"
   },
   {
    "city": "Saint Petersburg",
@@ -1865,7 +1886,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "saint-petersburg"
   },
   {
    "city": "St. Louis",
@@ -1885,7 +1907,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "st-louis"
   },
   {
    "rank": 85,
@@ -1974,7 +1997,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "tampa"
   },
   {
    "rank": 89,
@@ -2041,7 +2065,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "cincinnati"
   },
   {
    "city": "San Antonio",
@@ -2061,7 +2086,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "san-antonio"
   },
   {
    "rank": 93,
@@ -2104,7 +2130,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "fort-worth"
   },
   {
    "city": "Lansing",
@@ -2124,7 +2151,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "lansing"
   },
   {
    "rank": 96,
@@ -2213,7 +2241,8 @@
    "wikidata": 1,
    "supply": 1,
    "target": 10,
-   "ease": 1.02
+   "ease": 1.02,
+   "slug": "tulsa"
   },
   {
    "rank": 100,
@@ -2349,7 +2378,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "san-jose"
   },
   {
    "rank": 106,
@@ -2392,7 +2422,8 @@
    "wikidata": 6,
    "supply": 6,
    "target": 10,
-   "ease": 1.12
+   "ease": 1.12,
+   "slug": "jersey-city"
   },
   {
    "rank": 108,
@@ -2619,7 +2650,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "milwaukee"
   },
   {
    "rank": 118,
@@ -2662,7 +2694,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "atlanta"
   },
   {
    "city": "Anchorage",
@@ -2682,7 +2715,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "anchorage"
   },
   {
    "city": "Raleigh",
@@ -2702,7 +2736,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "raleigh"
   },
   {
    "rank": 122,
@@ -2746,7 +2781,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "cleveland"
   },
   {
    "city": "El Paso",
@@ -2766,7 +2802,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "el-paso"
   },
   {
    "rank": 125,
@@ -3064,7 +3101,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "nashville"
   },
   {
    "rank": 138,
@@ -3130,7 +3168,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "ann-arbor"
   },
   {
    "rank": 141,
@@ -3288,7 +3327,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "albuquerque"
   },
   {
    "rank": 148,
@@ -3332,7 +3372,8 @@
    "wikidata": 1,
    "supply": 1,
    "target": 10,
-   "ease": 1.02
+   "ease": 1.02,
+   "slug": "minneapolis"
   },
   {
    "rank": 150,
@@ -3490,7 +3531,8 @@
    "wikidata": 1,
    "supply": 1,
    "target": 10,
-   "ease": 1.02
+   "ease": 1.02,
+   "slug": "baltimore"
   },
   {
    "rank": 157,
@@ -4434,7 +4476,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "santa-fe"
   },
   {
    "rank": 198,
@@ -5034,7 +5077,8 @@
    "score": 1.99,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 2,
-   "travel": 7972
+   "travel": 7972,
+   "slug": "eindhoven"
   },
   {
    "rank": 224,
@@ -6467,7 +6511,8 @@
    "score": 1.03,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 1,
-   "travel": 4127
+   "travel": 4127,
+   "slug": "tilburg"
   },
   {
    "rank": 286,
@@ -6536,7 +6581,8 @@
    "score": 1.01,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 1,
-   "travel": 4023
+   "travel": 4023,
+   "slug": "alkmaar"
   },
   {
    "rank": 289,
@@ -6651,7 +6697,8 @@
    "score": 0.93,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 7,
-   "travel": 3702
+   "travel": 3702,
+   "slug": "hilversum"
   },
   {
    "rank": 294,
@@ -6857,7 +6904,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "middletown"
   },
   {
    "rank": 303,
@@ -7041,7 +7089,8 @@
    "score": 0.71,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 0,
-   "travel": 2843
+   "travel": 2843,
+   "slug": "dordrecht"
   },
   {
    "rank": 311,
@@ -7086,7 +7135,8 @@
    "score": 0.67,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 6,
-   "travel": 2680
+   "travel": 2680,
+   "slug": "amersfoort"
   },
   {
    "rank": 313,
@@ -7457,7 +7507,8 @@
    "score": 0.53,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 3,
-   "travel": 2108
+   "travel": 2108,
+   "slug": "apeldoorn"
   },
   {
    "rank": 329,
@@ -7618,7 +7669,8 @@
    "score": 0.48,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 1,
-   "travel": 1931
+   "travel": 1931,
+   "slug": "venlo"
   },
   {
    "rank": 336,
@@ -7732,7 +7784,8 @@
    "score": 0.38,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 1,
-   "travel": 1532
+   "travel": 1532,
+   "slug": "enschede"
   },
   {
    "rank": 341,
@@ -7869,7 +7922,8 @@
    "score": 0.35,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 2,
-   "travel": 1416
+   "travel": 1416,
+   "slug": "assen"
   },
   {
    "city": "Heerlen",
@@ -7891,7 +7945,8 @@
    "score": 0.35,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 6,
-   "travel": 1417
+   "travel": 1417,
+   "slug": "heerlen"
   },
   {
    "rank": 348,
@@ -7936,7 +7991,8 @@
    "score": 0.35,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 0,
-   "travel": 1388
+   "travel": 1388,
+   "slug": "zwolle"
   },
   {
    "rank": 350,
@@ -7981,7 +8037,8 @@
    "score": 0.31,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 3,
-   "travel": 1257
+   "travel": 1257,
+   "slug": "deventer"
   },
   {
    "city": "Hoorn",
@@ -8003,7 +8060,8 @@
    "score": 0.3,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 0,
-   "travel": 1209
+   "travel": 1209,
+   "slug": "hoorn"
   },
   {
    "city": "Leeuwarden",
@@ -8025,7 +8083,8 @@
    "score": 0.3,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 1,
-   "travel": 1184
+   "travel": 1184,
+   "slug": "leeuwarden"
   },
   {
    "rank": 354,
@@ -8093,7 +8152,8 @@
    "score": 0.29,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 2,
-   "travel": 1167
+   "travel": 1167,
+   "slug": "helmond"
   },
   {
    "rank": 357,
@@ -8138,7 +8198,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "phoenix"
   },
   {
    "rank": 359,
@@ -8206,7 +8267,8 @@
    "score": 0.26,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 0,
-   "travel": 1024
+   "travel": 1024,
+   "slug": "roosendaal"
   },
   {
    "rank": 362,
@@ -8364,7 +8426,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "newark"
   },
   {
    "rank": 369,
@@ -8454,7 +8517,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "allentown"
   },
   {
    "city": "Oss",
@@ -8476,7 +8540,8 @@
    "score": 0.11,
    "basis": "published, never ranked (may be uncrawled)",
    "wikidata": 0,
-   "travel": 438
+   "travel": 438,
+   "slug": "oss"
   },
   {
    "rank": 374,
@@ -8519,7 +8584,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "buffalo"
   },
   {
    "city": "San Juan",
@@ -8539,7 +8605,8 @@
    "wikidata": 0,
    "supply": 0,
    "target": 10,
-   "ease": 1.0
+   "ease": 1.0,
+   "slug": "san-juan"
   },
   {
    "rank": 377,
@@ -8629,7 +8696,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "alexandria"
   },
   {
    "rank": null,
@@ -8766,7 +8834,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "boulder"
   },
   {
    "city": "Bowling Green",
@@ -8787,7 +8856,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "bowling-green"
   },
   {
    "rank": null,
@@ -8853,7 +8923,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "charlotte"
   },
   {
    "rank": null,
@@ -8944,7 +9015,8 @@
    "score": null,
    "basis": "no travel demand measured",
    "wikidata": 5,
-   "travel": 0
+   "travel": 0,
+   "slug": "ede"
   },
   {
    "city": "Emmen",
@@ -8966,7 +9038,8 @@
    "score": null,
    "basis": "no travel demand measured",
    "wikidata": 0,
-   "travel": 0
+   "travel": 0,
+   "slug": "emmen"
   },
   {
    "rank": null,
@@ -9011,7 +9084,8 @@
    "score": null,
    "basis": "no travel demand measured",
    "wikidata": 10,
-   "travel": 0
+   "travel": 0,
+   "slug": "haarlemmermeer"
   },
   {
    "rank": null,
@@ -9193,7 +9267,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "lancaster"
   },
   {
    "rank": null,
@@ -9398,7 +9473,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "pine-city"
   },
   {
    "city": "Providence",
@@ -9418,7 +9494,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "providence"
   },
   {
    "city": "Rochester",
@@ -9439,7 +9516,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "rochester"
   },
   {
    "city": "Santa Barbara",
@@ -9459,7 +9537,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "santa-barbara"
   },
   {
    "city": "Scottsdale",
@@ -9480,7 +9559,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "scottsdale"
   },
   {
    "rank": null,
@@ -9525,7 +9605,8 @@
    "score": null,
    "basis": "no travel demand measured",
    "wikidata": 4,
-   "travel": 0
+   "travel": 0,
+   "slug": "sittard-geleen"
   },
   {
    "city": "Tacoma",
@@ -9545,7 +9626,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "tacoma"
   },
   {
    "rank": null,
@@ -9635,7 +9717,8 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.0
+   "work_score": 0.0,
+   "slug": "wilmington"
   },
   {
    "rank": null,
@@ -9680,7 +9763,8 @@
    "score": null,
    "basis": "no travel demand measured",
    "wikidata": 13,
-   "travel": 0
+   "travel": 0,
+   "slug": "zaanstad"
   }
  ]
 }

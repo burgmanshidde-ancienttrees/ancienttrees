@@ -28,6 +28,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import urllib.parse
 import urllib.request
 
@@ -50,6 +51,19 @@ COUNTRY_Q = {
 # own title, and "Manhattan" is a borough of it. A district entering the pool
 # as a city would put two rows on the same trees.
 SKIP = {"New York City", "Manhattan"}
+
+
+
+def slugify(name):
+    """The queue's own slug shape: 'San Antonio' -> 'san-antonio'.
+
+    Written after the first --write run omitted it and broke prepare.py, which
+    indexes rows by c["slug"] without a guard and is the first thing every
+    night run calls. A row missing a field the rest of the queue carries is
+    not a harmless row.
+    """
+    out = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", out.lower())).strip("-")
 
 
 def _get(url, accept=None, timeout=40):
@@ -171,8 +185,9 @@ def main():
 
     if args.write and missing:
         for v, name, t in missing:
-            row = {"city": name, "country": args.country, "status": "pending",
-                   "trees": 0, "travel": v, "source": "pool_audit 2026-09-01"}
+            row = {"city": name, "slug": slugify(name), "country": args.country,
+                   "status": "pending", "trees": 0, "travel": v,
+                   "source": "pool_audit 2026-09-01"}
             if name != t.replace("_", " "):
                 row["article"] = t.replace("_", " ")
             doc["cities"].append(row)
