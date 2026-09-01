@@ -1,296 +1,301 @@
 {
- "country": "Australia",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Big Fig, Miriam Vale",
-   "lat": -24.3292,
-   "lng": 151.5637,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Big_Fig,_Miriam_Vale.jpg"
-   ],
-   "status": "lead",
-   "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Bland Oak",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:BlandOakCarramar.jpg",
-    "https://commons.wikimedia.org/wiki/File:Blandoaktree.jpg",
-    "https://commons.wikimedia.org/wiki/File:BlankOaktree.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Cazneaux Tree",
-   "lat": -31.518867,
-   "lng": 138.6385,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20081020_15_cazneaux_tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_4682_Casneauxs_Tree_with_the_ramparts_of_Wilpena_Pound_in_the_background_Flinders_Ranges_SA_1992.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cazneaux_Tree,_Flinders_Ranges_-_South_Australia.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Centurion tree",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Centurion_Tree,_TAS,_AUS.jpg",
-    "https://commons.wikimedia.org/wiki/File:Centurion_tree_99.82.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Dig Tree",
-   "lat": -27.62285805,
-   "lng": 141.07527161,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Burke%27s_Tree_showing_the_debris_and_sand_found_around_it.(GN02943).jpg",
-    "https://commons.wikimedia.org/wiki/File:Burke_and_Wills_dig_tree_1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Burke_and_Wills_dig_tree_2.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Fig Tree, Gladstone",
-   "lat": -23.8413,
-   "lng": 151.2566,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Fig_Tree,_Gladstone_(2009).jpg"
-   ],
-   "status": "lead",
-   "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gloucester Tree",
-   "lat": -34.447653,
-   "lng": 116.059522,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:00_4501_Australien_-_Gloucester-Nationalpark.jpg",
-    "https://commons.wikimedia.org/wiki/File:00_4503_Australien_-_Gloucester-Nationalpark.jpg",
-    "https://commons.wikimedia.org/wiki/File:ClimbingTheGloucesterTree_2005_SeanMcClean.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Gregory's Tree",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Boab_tree_marked_by_Gregory%27s_party_(Gregory_Baobab)_in_1856_-_Northern_Territory,_Roper_River(GN00722C).jpg",
-    "https://commons.wikimedia.org/wiki/File:Boab_tree_marked_by_Gregory%27s_party_in_1856_-_Northern_Territory_(Roper_River)_(Gregory_Baobab)(GN03758).jpg",
-    "https://commons.wikimedia.org/wiki/File:Gregory%27s_tree,_1900.tif"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "H2 Hinde Tree",
-   "lat": -28.0437,
-   "lng": 153.2877,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:The_H2_Hinde_Tree_(Macadamia_integrifolia)_on_Colliston_(2008).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Hodgkinson's Marked Tree",
-   "lat": -19.854,
-   "lng": 138.1062,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hodgkinson%27s_Marked_Tree_(2007).jpg",
-    "https://commons.wikimedia.org/wiki/File:Hodgkinson%27s_Marked_Tree_-_marks.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Hoop Pines, Bald Hills",
-   "lat": -27.3151,
-   "lng": 153.0041,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:602346_-_Hoop_Pines_(2009).jpg"
-   ],
-   "status": "lead",
-   "species": "Araucaria (Araucaria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Jacaranda, University of Sydney",
-   "lat": -33.88616667,
-   "lng": 151.189,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Carpet_of_jacaranda,_Sydney_University.jpg",
-    "https://commons.wikimedia.org/wiki/File:Inside_Quadrangle_Cloisters,_University_of_Sydney.JPG",
-    "https://commons.wikimedia.org/wiki/File:Jacaranda,_Sydney_University.jpg"
-   ],
-   "status": "lead",
-   "species": "Jacaranda (Jacaranda sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kelvin Grove Fig Trees and Air Raid Shelter",
-   "lat": -27.4553,
-   "lng": 153.0127,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kelvin_Grove_Fig_Trees_(2009).jpg",
-    "https://commons.wikimedia.org/wiki/File:Kelvin_Grove_Fig_Trees_and_Air_Raid_Shelter.jpg"
-   ],
-   "status": "lead",
-   "species": "Fig (Ficus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kidman's Tree of Knowledge",
-   "lat": -24.785,
-   "lng": 139.5925,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kidman%27s_Tree_of_Knowledge_(2005).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Landsborough Tree",
-   "lat": -17.7391,
-   "lng": 139.5648,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Landsborough_Tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:Landsborough_Tree_from_W_(2009).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Landsborough's Blazed Tree (Camp 67)",
-   "lat": -26.4904,
-   "lng": 146.1947,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_67_(2009).jpg",
-    "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_67_(2009)_-_blaze.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Landsborough's Blazed Tree (Camp 69)",
-   "lat": -26.6761,
-   "lng": 146.158,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_69_(2015).jpg",
-    "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_69_(2015)_-_closeup.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Leichhardt Tree, Comet",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:StateLibQld_2_388261_Leichhardt_Tree_with_the_impression_L_23_degree_57,_Comet_River,_1927.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Moonah Creek Hanging Tree",
-   "lat": -21.503,
-   "lng": 138.9184,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Moonah_Creek_%27Hanging_Tree%27_(1964).jpg",
-    "https://commons.wikimedia.org/wiki/File:Moonah_Creek_%27Hanging_Tree%27_(2003).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Pillar Box, Claremont",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Halfway_tree_-_Western_Australia.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pillar_Box,_Claremont,_December_2021.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Proclamation Tree",
-   "lat": -32.05015,
-   "lng": 115.74996,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2013-08-04_1049_Proclamation_Tree_in_Fremantle.JPG",
-    "https://commons.wikimedia.org/wiki/File:2013-08-11_0947_Freopedia_plaque_at_the_base_of_the_Proclamation_Tree_in_Fremantle.JPG",
-    "https://commons.wikimedia.org/wiki/File:2013-08-11_0948_Fremantle_Proclamation_Tree.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Separation Tree",
-   "lat": -37.829326,
-   "lng": 144.983463,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Separation_Tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:Separation_Tree_20180726-019.jpg",
-    "https://commons.wikimedia.org/wiki/File:Separation_Tree_Rest_House_exterior_20180726-018.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "The Old Gum Tree",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Glenelg_Pageant_for_showing_old_gum_tree_for_centenary(GN09938).jpg",
-    "https://commons.wikimedia.org/wiki/File:Glenelg_Pageant_for_showing_old_gum_tree_for_centenary(GN09942).jpg",
-    "https://commons.wikimedia.org/wiki/File:Glenelg_Pageant_near_old_gum_tree_for_centenary(GN09932).jpg"
-   ],
-   "status": "lead",
-   "species": "Eucalyptus (Eucalyptus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "The Robbers Tree",
-   "lat": -28.074,
-   "lng": 145.6817,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Robbers_Tree_on_the_sandhill_at_Cunnamulla_circa_1920.jpg",
-    "https://commons.wikimedia.org/wiki/File:The_Robbers_Tree_(Plaque).jpg",
-    "https://commons.wikimedia.org/wiki/File:The_Robbers_Tree_(Robbery_Under_Arms).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tree of Knowledge (Australia)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:0C6A2758.jpg",
-    "https://commons.wikimedia.org/wiki/File:0C6A2759.jpg",
-    "https://commons.wikimedia.org/wiki/File:0C6A2760.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "William Wyndham's gravesite",
-   "lat": -23.9369,
-   "lng": 151.3535,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:William_Wyndhams_gravesite_and_remnant_orchard_trees.jpg",
-    "https://commons.wikimedia.org/wiki/File:William_Wyndhams_gravesite_and_remnant_orchard_trees_(2004).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Boab Prison Tree",
-   "lat": -17.347862,
-   "lng": 123.670163,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:00_1996_Boab_Prison_Tree_-_Derby,_Westaustralien.jpg",
-    "https://commons.wikimedia.org/wiki/File:00_1997_Derby,_Westaustralien_-_Boab_Prison_Tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:00_2000_Boab_Prison_Tree_-_Derby,_Western_Australia.jpg"
-   ],
-   "status": "lead"
-  }
- ]
+  "country": "Australia",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Big Fig, Miriam Vale",
+      "lat": -24.3292,
+      "lng": 151.5637,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Big_Fig,_Miriam_Vale.jpg"
+      ],
+      "status": "lead",
+      "species": "Fig (Ficus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Bland Oak",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:BlandOakCarramar.jpg",
+        "https://commons.wikimedia.org/wiki/File:Blandoaktree.jpg",
+        "https://commons.wikimedia.org/wiki/File:BlankOaktree.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Cazneaux Tree",
+      "lat": -31.518867,
+      "lng": 138.6385,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20081020_15_cazneaux_tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_4682_Casneauxs_Tree_with_the_ramparts_of_Wilpena_Pound_in_the_background_Flinders_Ranges_SA_1992.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cazneaux_Tree,_Flinders_Ranges_-_South_Australia.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Centurion tree",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Centurion_Tree,_TAS,_AUS.jpg",
+        "https://commons.wikimedia.org/wiki/File:Centurion_tree_99.82.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Dig Tree",
+      "lat": -27.62285805,
+      "lng": 141.07527161,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Burke%27s_Tree_showing_the_debris_and_sand_found_around_it.(GN02943).jpg",
+        "https://commons.wikimedia.org/wiki/File:Burke_and_Wills_dig_tree_1.JPG",
+        "https://commons.wikimedia.org/wiki/File:Burke_and_Wills_dig_tree_2.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Fig Tree, Gladstone",
+      "lat": -23.8413,
+      "lng": 151.2566,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Fig_Tree,_Gladstone_(2009).jpg"
+      ],
+      "status": "lead",
+      "species": "Fig (Ficus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gloucester Tree",
+      "lat": -34.447653,
+      "lng": 116.059522,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:00_4501_Australien_-_Gloucester-Nationalpark.jpg",
+        "https://commons.wikimedia.org/wiki/File:00_4503_Australien_-_Gloucester-Nationalpark.jpg",
+        "https://commons.wikimedia.org/wiki/File:ClimbingTheGloucesterTree_2005_SeanMcClean.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Gregory's Tree",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Boab_tree_marked_by_Gregory%27s_party_(Gregory_Baobab)_in_1856_-_Northern_Territory,_Roper_River(GN00722C).jpg",
+        "https://commons.wikimedia.org/wiki/File:Boab_tree_marked_by_Gregory%27s_party_in_1856_-_Northern_Territory_(Roper_River)_(Gregory_Baobab)(GN03758).jpg",
+        "https://commons.wikimedia.org/wiki/File:Gregory%27s_tree,_1900.tif"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "H2 Hinde Tree",
+      "lat": -28.0437,
+      "lng": 153.2877,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:The_H2_Hinde_Tree_(Macadamia_integrifolia)_on_Colliston_(2008).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Hodgkinson's Marked Tree",
+      "lat": -19.854,
+      "lng": 138.1062,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hodgkinson%27s_Marked_Tree_(2007).jpg",
+        "https://commons.wikimedia.org/wiki/File:Hodgkinson%27s_Marked_Tree_-_marks.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Hoop Pines, Bald Hills",
+      "lat": -27.3151,
+      "lng": 153.0041,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:602346_-_Hoop_Pines_(2009).jpg"
+      ],
+      "status": "lead",
+      "species": "Hoop Pine (Araucaria cunninghamii)",
+      "species_basis": "confirmed by Queensland Heritage Register listing and Wikipedia",
+      "age_estimate": "taller tree ~190 years, smaller ~140 years (per Queensland Heritage Register citation)",
+      "note": "A genuinely compact pair, one site, historically significant (marks the original Stewart Farmhouse site, among the earliest non-Indigenous settlement in Bald Hills; hoop pine logging was one reason for the Moreton Bay penal settlement). BLOCKED ON ACCESS ONLY, not on quality: the pair stands 'at the end of the school's main driveway, framing the entrance to the Administration Building' of St Paul's Anglican School, a 51-hectare private campus at 34 Strathpine Road; no source found stating the driveway or entrance is open to the public without a school reason to be there. Per the school-grounds rule this stays a lead rather than a block: if a future pass finds evidence of genuine public access (a public path, visibility from Strathpine Road itself, stated open days) it can ship. Not researched further in this pass (checked 2026-09-01)."
+    },
+    {
+      "name": "Jacaranda, University of Sydney",
+      "lat": -33.88616667,
+      "lng": 151.189,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Carpet_of_jacaranda,_Sydney_University.jpg",
+        "https://commons.wikimedia.org/wiki/File:Inside_Quadrangle_Cloisters,_University_of_Sydney.JPG",
+        "https://commons.wikimedia.org/wiki/File:Jacaranda,_Sydney_University.jpg"
+      ],
+      "status": "lead",
+      "species": "Jacaranda (Jacaranda sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kidman's Tree of Knowledge",
+      "lat": -24.785,
+      "lng": 139.5925,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kidman%27s_Tree_of_Knowledge_(2005).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Landsborough Tree",
+      "lat": -17.7391,
+      "lng": 139.5648,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Landsborough_Tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:Landsborough_Tree_from_W_(2009).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Landsborough's Blazed Tree (Camp 67)",
+      "lat": -26.4904,
+      "lng": 146.1947,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_67_(2009).jpg",
+        "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_67_(2009)_-_blaze.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Landsborough's Blazed Tree (Camp 69)",
+      "lat": -26.6761,
+      "lng": 146.158,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_69_(2015).jpg",
+        "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_69_(2015)_-_closeup.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Leichhardt Tree, Comet",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:StateLibQld_2_388261_Leichhardt_Tree_with_the_impression_L_23_degree_57,_Comet_River,_1927.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Moonah Creek Hanging Tree",
+      "lat": -21.503,
+      "lng": 138.9184,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Moonah_Creek_%27Hanging_Tree%27_(1964).jpg",
+        "https://commons.wikimedia.org/wiki/File:Moonah_Creek_%27Hanging_Tree%27_(2003).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Pillar Box, Claremont",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Halfway_tree_-_Western_Australia.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pillar_Box,_Claremont,_December_2021.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Proclamation Tree",
+      "lat": -32.05015,
+      "lng": 115.74996,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2013-08-04_1049_Proclamation_Tree_in_Fremantle.JPG",
+        "https://commons.wikimedia.org/wiki/File:2013-08-11_0947_Freopedia_plaque_at_the_base_of_the_Proclamation_Tree_in_Fremantle.JPG",
+        "https://commons.wikimedia.org/wiki/File:2013-08-11_0948_Fremantle_Proclamation_Tree.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Separation Tree",
+      "lat": -37.829326,
+      "lng": 144.983463,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Separation_Tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:Separation_Tree_20180726-019.jpg",
+        "https://commons.wikimedia.org/wiki/File:Separation_Tree_Rest_House_exterior_20180726-018.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "The Old Gum Tree",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Glenelg_Pageant_for_showing_old_gum_tree_for_centenary(GN09938).jpg",
+        "https://commons.wikimedia.org/wiki/File:Glenelg_Pageant_for_showing_old_gum_tree_for_centenary(GN09942).jpg",
+        "https://commons.wikimedia.org/wiki/File:Glenelg_Pageant_near_old_gum_tree_for_centenary(GN09932).jpg"
+      ],
+      "status": "lead",
+      "species": "Eucalyptus (Eucalyptus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "The Robbers Tree",
+      "lat": -28.074,
+      "lng": 145.6817,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Robbers_Tree_on_the_sandhill_at_Cunnamulla_circa_1920.jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Robbers_Tree_(Plaque).jpg",
+        "https://commons.wikimedia.org/wiki/File:The_Robbers_Tree_(Robbery_Under_Arms).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tree of Knowledge (Australia)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:0C6A2758.jpg",
+        "https://commons.wikimedia.org/wiki/File:0C6A2759.jpg",
+        "https://commons.wikimedia.org/wiki/File:0C6A2760.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "William Wyndham's gravesite",
+      "lat": -23.9369,
+      "lng": 151.3535,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:William_Wyndhams_gravesite_and_remnant_orchard_trees.jpg",
+        "https://commons.wikimedia.org/wiki/File:William_Wyndhams_gravesite_and_remnant_orchard_trees_(2004).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Boab Prison Tree",
+      "lat": -17.347862,
+      "lng": 123.670163,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:00_1996_Boab_Prison_Tree_-_Derby,_Westaustralien.jpg",
+        "https://commons.wikimedia.org/wiki/File:00_1997_Derby,_Westaustralien_-_Boab_Prison_Tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:00_2000_Boab_Prison_Tree_-_Derby,_Western_Australia.jpg"
+      ],
+      "status": "lead"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Kelvin Grove Fig Trees and Air Raid Shelter",
+      "lat": -27.4553,
+      "lng": 153.0127,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kelvin_Grove_Fig_Trees_(2009).jpg",
+        "https://commons.wikimedia.org/wiki/File:Kelvin_Grove_Fig_Trees_and_Air_Raid_Shelter.jpg"
+      ],
+      "status": "blocked",
+      "species": "Fig (Ficus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "not a collectible point: the Queensland Heritage listing covers three separate fig groupings (5 trees at Normanby Fiveways, 7 at Marshall Park, 3 at Prospect Terrace) strung along a full kilometre of Kelvin Grove Road, with no single obvious place to stand, the same 'avenue' shape as the rejected Plane Trees of La Rambla precedent (checked 2026-09-01, source: en.wikipedia.org/wiki/Kelvin_Grove_Fig_Trees_and_Air_Raid_Shelter). If wanted later, the Prospect Terrace corner alone (3 weeping figs plus the WWII air raid shelter, now a bus shelter, with a fig branch grown onto its roof) is a narrower, genuinely compact candidate that was not separately researched in this pass."
+    }
+  ]
 }
