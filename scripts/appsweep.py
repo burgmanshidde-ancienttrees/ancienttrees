@@ -339,7 +339,7 @@ def udid_for(name, devicetype, runtime=None):
         for d in devices:
             if d["name"] == name and d.get("isAvailable"):
                 return d["udid"]
-    print(f"  creating {name}")
+    print(f"  creating {name}", file=sys.stderr)
     args = ["xcrun", "simctl", "create", name, devicetype]
     if runtime:
         args.append(runtime)

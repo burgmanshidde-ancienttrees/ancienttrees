@@ -40,18 +40,18 @@
    "lat": 54.692463,
    "lng": 25.244651,
    "status": "lead",
-   "why": "Researched this pass: register-only, one source. Two search attempts (general web search, then a saugomasmedis.lt/register-id-targeted search) found no independent second source naming this specific pine; results kept surfacing the neighbouring Žvėrynas lindens and oak instead (Sėlių/T.Narbuto streets cluster, ~700m-1km north). No address, condition or accessibility information found either. Stays a lead until a second source or a Lithuanian-language heritage/municipal page turns up.",
+   "why": "Researched this pass: register-only, one source. Two search attempts (general web search, then a saugomasmedis.lt/register-id-targeted search) found no independent second source naming this specific pine; results kept surfacing the neighbouring Žvėrynas lindens and oak instead (Sėlių/T.Narbuto streets cluster, ~700m-1km north). No address, condition or accessibility information found either. Stays a lead until a second source or a Lithuanian-language heritage/municipal page turns up. Re-checked this pass (vietoves.lt Ž-index search, targeted web search): still no second source found. Stays a lead.",
    "species": "Pine (Pinus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Swiss pine",
+   "name": "Swiss pine -- RESOLVED, shipped as vln_014",
    "name_lt": "Kedrinė pušis",
    "register_id": "0310505020045",
    "lat": 54.69599,
    "lng": 25.30709,
-   "status": "lead",
-   "why": "An individual named conifer, 2km out. Not researched this pass; \"Swiss pine\" (Pinus cembra) would be an unusual planted specimen in Lithuania and worth confirming the species carefully rather than assuming.",
+   "status": "resolved_duplicate",
+   "why": "Shipped as vln_014, The Antakalnis Swiss Pine (Pinus cembra), 2026-09-01. Kept in this file rather than deleted so a future pass does not re-open it.",
    "species": "Pine (Pinus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
@@ -84,9 +84,15 @@
    "lat": 54.69998,
    "lng": 25.19422,
    "status": "lead",
-   "why": "5.7km out, within Vilnius's own Pilaite district (reachable by city bus, so plausibly inside the day-trip boundary). Not researched this pass.",
+   "why": "Register-only, one source, despite three search attempts this pass (general web search, vietoves.lt P-index page, the Pilaitė district Wikipedia article). Confirmed as a real, recently-designated state nature heritage object (a 2020s VSTT press release names it among 80 newly protected objects, per search snippets), but the press release itself (vstt.lrv.lt) 403s to fetch and a mirroring news article (madeinvilnius.lt) also 403s, so no independent source could actually be read to confirm species/girth/age. Stays a lead until one of those pages can be reached (try a Wayback Machine snapshot next) or another source turns up.",
    "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "sources_tried": [
+    "vstt.lrv.lt press release (403 Forbidden to fetch)",
+    "madeinvilnius.lt news mirror (403 Forbidden to fetch)",
+    "vietoves.lt P-index (no match)",
+    "lt.wikipedia.org Pilaitė district article (no mention)"
+   ]
   },
   {
    "name": "Dirkliskes Forest Oak",
@@ -273,6 +279,16 @@
    "lat": 54.71887,
    "lng": 25.32186,
    "reason": "Not researched in depth this pass given the four-candidate limit, but the register name itself describes a private/curated COLLECTION of miniature (dwarf-cultivar) conifers assembled by a named individual, not a single tree or a compact famous ensemble with one obvious place to stand. Likely closer to the blocked Castle Park chestnut circle (a planted landscape feature) than to a shippable single specimen or twin. Left blocked rather than a lead so a future pass does not spend research time before a source describes it as visitable and collectible; revisit only if a source frames it as a single accessible garden/exhibit."
+  },
+  {
+   "name": "Canadian poplar in Castle park (Pilių parko kanadinė tuopa)",
+   "register_id": "0310505060005",
+   "reason": "DEAD: felled 30 October 2012 per its own Lithuanian Wikipedia article (lt.wikipedia.org/wiki/Pilių_parko_kanadinė_tuopa) -- wood had rotted up to 2.5m from the base, judged unsafe, cut down entirely with no trunk left standing. A ~12m section of the trunk was left lying on the Pilies Park lawn for educational/ecological reasons and a stump marks the spot, but there is no living tree. Register (0310505060005, lithuania-stvk-gpo.json) still lists it as publishable because the register carries no vitality field; never ship."
+  },
+  {
+   "name": "Belunai Oak (Belūnų ąžuolas / Bieliūnų ąžuolas)",
+   "register_id": "0310505010101",
+   "reason": "DEAD: the Lithuanian Wikipedia article on Bieliūnai village (lt.wikipedia.org/wiki/Bieliūnai_(Vilnius)) states \"Į šiaurę nuo kaimo augo nūnai nunykęs Bieliūnų ąžuolas\" (north of the village grew the now-withered/deceased Bieliūnų oak), i.e. it no longer stands alive. A general web search also surfaced language describing it as fallen/uprooted (išvirto). Register (0310505010101, lithuania-stvk-gpo.json, name_en Belūnai Oak) still lists it as publishable because the register carries no vitality field; never ship. (Also: was the day-trip-boundary check candidate at 9.8km out -- moot now.)"
   }
  ]
 }
