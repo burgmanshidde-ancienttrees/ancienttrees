@@ -1561,6 +1561,18 @@
     500
    ]
   },
+  "https://inaturalist-open-data.s3.amazonaws.com/photos/472367462/large.jpeg": {
+   "base": "nol_003-the-dueling-oak",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7e/Tree_of_life_2021.jpg": {
+   "base": "nol_004-the-tree-of-life",
+   "widths": [
+    500
+   ]
+  },
   "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hangman%27s_Elm%2C_Washington_Square_Park%2C_NYC_%28October_2023%29.jpg": {
    "base": "nyc_001-the-hangman-s-elm",
    "widths": [
@@ -1635,6 +1647,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/c/c7/Naturdenkmal_Linde_in_der_Gr%C3%BCnanlage_Hallerwiese_N%C3%BCrnberg_2025-02-09_09.jpg": {
    "base": "nbg_001-the-gnarled-lime-of-hallerwiese",
+   "widths": [
+    500
+   ]
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hitachi_tree.jpg": {
+   "base": "hnl_006-the-hitachi-tree",
    "widths": [
     500
    ]
