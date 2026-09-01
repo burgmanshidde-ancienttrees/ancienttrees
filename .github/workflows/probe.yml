@@ -1,0 +1,28 @@
+name: Egress probe
+# One question, asked from the runner because it cannot be asked from here:
+# can a night run reach the image hosts? The answer was NO on 2026-08-07 and
+# it has closed the whole photo lane to the machine ever since, which matters
+# now that 3,395 candidates sit queued for a viewing pass only a session can
+# do. A licence or a network verdict is evidence with a date on it; this is
+# how the date gets refreshed. Dispatch only, costs about a minute.
+on:
+  workflow_dispatch: {}
+permissions: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Can the runner fetch an image
+        run: |
+          set +e
+          for u in \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Major_Oak.jpg/640px-Major_Oak.jpg" \
+            "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File:Major_Oak.jpg&prop=imageinfo&iiprop=url" \
+            "https://api.openverse.org/v1/images/?q=oak" \
+            "https://api.inaturalist.org/v1/observations?taxon_name=Quercus&per_page=1" \
+            "https://static.inaturalist.org/photos/1/medium.jpg" ; do
+            code=$(curl -sS -m 20 -o /tmp/out.bin -w '%{http_code}' -A 'AncientTrees/1.0 (probe)' "$u")
+            printf '%-6s %8s bytes  %s\n' "$code" "$(wc -c </tmp/out.bin)" "$u"
+          done
+          file /tmp/out.bin || true
