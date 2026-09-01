@@ -1,0 +1,216 @@
+{
+ "_note": "Overlay italiano per Firenze, scritto a mano il 2026-09-01. Reso da data/cities/florence.json, che resta la fonte di verità: coordinate, foto, licenze, età e note di accesso vivono lì e qui non cambia nulla. I termini di ricerca sono l'unica cosa che non è una traduzione: il termine legale e quotidiano in Italia è 'alberi monumentali', quindi titolo, meta description e campi della domanda sono scritti come li cercherebbe un lettore italiano e non come resa letterale dell'inglese.",
+ "city": "Firenze",
+ "title": "Alberi monumentali di Firenze: 23 giganti da vedere",
+ "meta_description": "I 23 alberi più notevoli di Firenze: il tasso piantato nel 1720 nell'Orto Botanico, un enorme cipresso messicano e l'albero che nessuno nota al Piazzale.",
+ "intro": "Gli alberi vecchi di Firenze vengono da due origini. Il Giardino dei Semplici, orto botanico fondato nel 1545 per coltivare le medicine dei Medici, conserva i più antichi alberi documentati della città: un tasso piantato nel 1720 e una quercia da sughero del 1805, ancora dove i direttori li misero. Quasi tutto il resto viene da un decennio solo, gli anni Sessanta e Settanta dell'Ottocento, quando Firenze fu per poco capitale d'Italia e Giuseppe Poggi aprì nuovi parchi e piazzali sulle colline sopra l'Arno. Entrambe le epoche sono ancora in piedi, ignorate da chi sale quassù solo per il Duomo.",
+ "question_title": "Qual è l'albero più antico di Firenze? (306 anni)",
+ "question_meta": "L'albero più antico di Firenze è un tasso di 306 anni piantato nel 1720 nel Giardino dei Semplici. Dove si trova, e gli altri alberi notevoli della città.",
+ "question_answer": "L'albero più antico documentato di Firenze è un tasso del Giardino dei Semplici, piantato nel 1720 dal botanico Pier Antonio Micheli e oggi di circa 306 anni. Cresce a pochi minuti a piedi da Piazza San Marco, dietro il biglietto d'ingresso di uno dei più antichi orti botanici universitari del mondo.",
+ "question_context": "Quasi tutte le affermazioni sull'albero più antico di una città poggiano su una circonferenza stimata e non su una data di impianto documentata, ed è questo che rende insolito il tasso del Giardino dei Semplici: l'impianto del 1720 è agli atti perché Pier Antonio Micheli, il botanico che lo mise a dimora, teneva allora i registri del giardino. Firenze ha così qualcosa di più raro di un albero vecchio: un albero la cui età nessuno deve indovinare. Cresce nel Giardino dei Semplici, l'orto botanico murato di Via Pier Antonio Micheli vicino a Piazza San Marco, fondato nel 1545 da Cosimo I de' Medici per coltivare piante medicinali e oggi fra i più antichi orti botanici universitari ancora in attività al mondo. Serve il biglietto, a differenza di quasi tutti gli altri alberi di questa lista. Lì accanto crescono una quercia da sughero piantata meno di un secolo dopo, nel 1805, e un cipresso di Montezuma aggiunto nel 1884 che da allora ha messo su il tronco più largo della città. Tutti e tre hanno passato l'intera vita entro poche centinaia di metri l'uno dall'altro, curati da una successione di direttori invece che lasciati crescere allo stato brado, ed è esattamente il motivo per cui la loro età si conosce invece di stimarla.",
+ "faq": [
+  {
+   "q": "Qual è l'albero più antico di Firenze?",
+   "a": "Un tasso del Giardino dei Semplici, piantato nel 1720 dal botanico Pier Antonio Micheli. Con i suoi 306 anni circa è uno dei pochi alberi della città la cui data esatta di impianto è agli atti invece di essere stimata."
+  },
+  {
+   "q": "Gli alberi notevoli di Firenze si visitano gratis?",
+   "a": "In buona parte sì. I due del Parco delle Cascine, il Bobolino, il Salviatino, il Piazzale Michelangelo, Villa Vogel e il cedro dell'incenso accanto al cancello del Bobolino non chiedono nulla. Gli altri stanno dentro due giardini a pagamento, il Giardino dei Semplici e il Giardino di Boboli, con il normale biglietto museale e niente di specifico per gli alberi."
+  },
+  {
+   "q": "Perché pochissimi alberi notevoli di Firenze sono medievali o più antichi?",
+   "a": "Quasi tutti gli alberi più antichi documentati della città sono stati piantati apposta dentro giardini istituzionali, a partire dal Giardino dei Semplici nel 1545, invece di restare in piedi attraverso secoli di agricoltura, alluvioni e guerre. L'età vera di Firenze sta nei suoi edifici; gli alberi, al confronto, sono soprattutto impianti del Settecento, dell'Ottocento e del primo Novecento."
+  },
+  {
+   "q": "Che cosa c'entra Giuseppe Poggi con gli alberi di Firenze?",
+   "a": "Poggi è l'architetto che ridisegnò le colline e i viali di Firenze quando la città fu per poco capitale d'Italia, negli anni Sessanta e Settanta dell'Ottocento. Il Piazzale Michelangelo, il giardino del Bobolino e diversi alberi di questa lista vengono tutti da quel solo decennio di lavori."
+  }
+ ],
+ "strings_note": "Campi per albero: name, species (nome comune italiano, stesso nome latino), age_estimate, access, transport, story. Storie da 150 a 250 parole, stesso standard dell'inglese, nessun trattino lungo.",
+ "trees": {
+  "flo_001": {
+   "name": "Il Tasso di Micheli",
+   "species": "Tasso (Taxus baccata)",
+   "age_estimate": "306 anni",
+   "access": "Ingresso a pagamento (biglietto dell'Orto Botanico, ingresso museale ordinario)",
+   "transport": "5 minuti a piedi da Piazza San Marco (fermata della tramvia T2)",
+   "story": "L'albero più antico accertato di Firenze cresce dietro un biglietto, in un giardino che precede di due secoli i musei più famosi della città. Pier Antonio Micheli piantò questo tasso nel 1720, mentre dirigeva l'Orto Botanico per Cosimo III de' Medici, e l'albero è ormai sopravvissuto di oltre 150 anni al Granducato che lo aveva assunto. Con i suoi 306 anni circa è la cosa viva datata con più precisione a Firenze: invece del conteggio di anelli tirato a indovinare che sta dietro quasi tutti gli alberi antichi, il suo impianto è agli atti perché Micheli, uno dei primi botanici di professione d'Europa, teneva di persona i registri del giardino. Il tronco si è ingrossato fino a quasi quattro metri di circonferenza, e la chioma scura e fitta getta ancora quell'ombra profonda per cui i tassi sono apprezzati e temuti; ogni parte dell'albero tranne la polpa rossa attorno al seme è velenosa, cosa che i medici del Settecento che lo studiavano sapevano benissimo. Il Giardino dei Semplici aprì nel 1545 per coltivare piante medicinali per i Medici, il che lo rende uno dei più antichi orti botanici universitari del mondo, e questo tasso ci sta dentro da quasi due terzi di tutta quella storia. È sopravvissuto all'alluvione dell'Arno del 1966 che annegò gran parte del centro a poche strade da qui, e cresce ancora, lasciando cadere ogni autunno i piccoli arilli rossi che gli uccelli ripuliscono."
+  },
+  "flo_002": {
+   "name": "La Quercia da sughero del Giardino dei Semplici",
+   "species": "Quercia da sughero (Quercus suber)",
+   "age_estimate": "221 anni",
+   "access": "Ingresso a pagamento (biglietto dell'Orto Botanico, ingresso museale ordinario)",
+   "transport": "5 minuti a piedi da Piazza San Marco (fermata della tramvia T2)",
+   "story": "Ogni quercia da sughero commerciale in Portogallo e in Spagna viene spogliata ogni nove anni circa, la corteccia staccata per tappi da vino e pavimenti mentre l'albero sotto sopravvive, cicatrizzato di arancione finché non guarisce. La quercia da sughero di Firenze, piantata nel 1805 da Ottaviano Targioni Tozzetti nello stesso orto botanico che ha fatto crescere il tasso di Micheli, non è mai stata decorticata nemmeno una volta. Due secoli di crescita indisturbata hanno ispessito la sua corteccia in un'armatura spugnosa e profondamente fessurata di oltre quattro metri di circonferenza, esattamente la consistenza e lo spessore che altrove nel Mediterraneo farebbero drizzare le orecchie a un raccoglitore di sughero. Lasciata stare per la ricerca e la didattica invece che per il prodotto, ha costruito una delle chiome più larghe e teatrali del Giardino dei Semplici, oltre 400 metri quadrati di copertura da un tronco solo. Targioni Tozzetti diresse il giardino nei primi dell'Ottocento, terza generazione di una dinastia toscana di naturalisti, e questo albero fu una delle sue aggiunte a una collezione costruita per insegnare agli studenti di farmacia a riconoscere le piante dal vero e non da un disegno. Sta a pochi passi dal tasso, in un giardino che ha conservato in silenzio alcuni degli esemplari documentati più antichi di entrambe le specie in Italia, senza che nessuno dei due abbia mai dovuto ripagarsi il mantenimento."
+  },
+  "flo_003": {
+   "name": "Il Cipresso di Montezuma",
+   "species": "Cipresso di Montezuma (Taxodium mucronatum)",
+   "age_estimate": "circa 140 anni",
+   "access": "Ingresso a pagamento (biglietto dell'Orto Botanico, ingresso museale ordinario)",
+   "transport": "5 minuti a piedi da Piazza San Marco (fermata della tramvia T2)",
+   "story": "Niente altro a Firenze viene dal Messico, ha un tronco di sette metri di circonferenza ed è stato colpito da un fulmine appena una decina d'anni fa. Questo cipresso di Montezuma, cugino del cipresso calvo americano e originario delle rive dei fiumi attorno a Città del Messico, andò in terra al Giardino dei Semplici negli anni Ottanta dell'Ottocento, portato a nord come uno dei tanti trofei botanici che i giardini di quel secolo facevano a gara ad accaparrarsi. Crebbe per oltre un secolo senza troppi incidenti, arrivando a una circonferenza che pochi alberi di questa lista possono eguagliare, finché una tempesta del settembre 2014 lo colpì in pieno, spaccandogli e rimodellandogli la chioma in un pomeriggio solo. L'albero è sopravvissuto, anche se la sua sagoma porta oggi l'asimmetria di quel colpo invece della piramide ordinata che la specie di solito tiene. Nel suo areale d'origine questo cipresso può vivere mille anni e più, e il caso più celebre è l'Árbol del Tule vicino a Oaxaca, uno degli alberi più massicci della Terra; l'esemplare fiorentino al confronto è un ragazzino, ed è comunque quello con il tronco più largo di tutta questa lista. Chi gira l'orto botanico per i suoi abitanti più famosi, il tasso di epoca medicea e la quercia da sughero lì accanto, spesso gli passa davanti senza accorgersi di aver appena superato qualcosa che in natura non cresce da nessuna parte entro quattromila chilometri dalla Toscana."
+  },
+  "flo_004": {
+   "name": "La Farnia dell'Ippodromo",
+   "species": "Farnia (Quercus robur)",
+   "age_estimate": "oltre 100 anni",
+   "access": "Gratuito, parco pubblico",
+   "transport": "20 minuti a piedi dalla fermata Cascine della tramvia T1, attraversando il parco fino all'ex Ippodromo delle Mulina",
+   "story": "L'albero più alto del parco più grande di Firenze sta dove correvano i cavalli. Questa farnia, che sale a 29 metri sopra i prati occidentali del Parco delle Cascine, cresce sull'area del vecchio Ippodromo delle Mulina, una pista da trotto in attività dal 1891 fino a quando il Comune ha ripreso il terreno dismesso, pochi anni fa. La quercia precede l'ippodromo di generazioni. È uno dei soli sei alberi che il Comune di Firenze ha riconosciuto formalmente come monumentali di propria competenza, uno status arrivato molto prima della recente spinta municipale a censire decine di altri candidati fra le Cascine e le ville storiche, un elenco cresciuto da una dozzina di voci nel 2020 a ventinove nel 2026. Il tronco misura quasi quattro metri e mezzo di circonferenza, abbastanza largo perché gli arboricoltori ne stimino l'età ben oltre il secolo senza aver mai trovato un documento di impianto a confermarlo. Quel che è certo è la taglia: niente altro in piedi nei 130 ettari delle Cascine, un parco con una sua storia buia (le forze di occupazione naziste vi compirono un'esecuzione di massa nel luglio 1944, ancora segnata oggi da una lapide), si avvicina all'altezza di questa quercia. Cresce al margine occidentale del parco, oltre gli ippocastani e i pioppi, lontano da chi corre e dalle bancarelle del mercato più vicine alla città, esattamente dove finisce un albero lasciato in pace per un secolo."
+  },
+  "flo_005": {
+   "name": "Il Leccio delle Cascine",
+   "species": "Leccio (Quercus ilex)",
+   "age_estimate": "stimata oltre 100 anni",
+   "access": "Gratuito, parco pubblico",
+   "transport": "10 minuti a piedi dalla fermata Cascine della tramvia T1, lungo il viale che costeggia l'Arno",
+   "story": "Questo leccio ha passato tutta la vita a cercare l'equilibrio, e si vede. Cresce lungo il viale che costeggia l'Arno dentro il Parco delle Cascine, non lontano dal mercato che si monta ogni martedì lungo il fiume, e ha sviluppato radici a contrafforte insolitamente grandi e lunghi tratti di radice scoperti che si aprono dalla base come qualcosa di costruito invece che cresciuto. Gli arboricoltori che lo hanno rilevato nel 2022 e di nuovo nel 2025 hanno registrato un tronco fermo a poco più di quattro metri di circonferenza e una chioma che arriva quasi a 19 metri, e ne hanno giudicato ottima la salute tutte e due le volte, contrafforti compresi. I lecci sono sempreverdi, spontanei in tutto il Mediterraneo e fatti per sopravvivere esattamente al tipo di allagamento periodico che l'Arno consegna a questo parco da secoli; l'apparato radicale scoperto e muscoloso è molto probabilmente la risposta dell'albero a un suolo umido e mobile, e non un difetto. Non sopravvive nessuna data di impianto documentata, cosa normale per un parco così vecchio e così grande, ma la circonferenza lo porta ampiamente oltre il primo secolo. Sta in un tratto delle Cascine che quasi nessun turista raggiunge, ben oltre la vecchia pista dei cavalli, nella metà occidentale più tranquilla di un parco che è terreno pubblico da quando la sorella di Napoleone, Elisa Baciocchi, aprì ai fiorentini comuni le ex tenute di caccia dei Medici durante il suo governo da granduchessa di Toscana."
+  },
+  "flo_006": {
+   "name": "Lo Spino di Giuda del Salviatino",
+   "species": "Spino di Giuda (Gleditsia triacanthos)",
+   "age_estimate": "età non documentata",
+   "access": "Gratuito, angolo di strada pubblico",
+   "transport": "Autobus 11 fino al capolinea del Salviatino, poi una breve passeggiata lungo Via Lungo l'Affrico",
+   "story": "Firenze ha due alberi legati dalla tradizione popolare a Giuda, e questo è quello che la gente si immagina sbagliato. L'albero che in italiano si chiama di solito albero di Giuda è il Cercis siliquastrum, la piccola specie dai fiori rosa legata alla leggenda che Giuda vi si sia impiccato; questo è lo spino di Giuda, un albero del tutto diverso, la Gleditsia triacanthos, originaria del Nord America e chiamata così invece per le sue spine davvero feroci, alcune un tempo lunghe più di dieci centimetri, che crescevano lungo il tronco e i rami prima che le varietà coltivate le addolcissero. L'esemplare fiorentino, solo a un incrocio residenziale del Salviatino sul margine nordorientale della città, non è mai stato selezionato per niente. Il suo tronco si è ingrossato fino a cinque metri e mezzo di circonferenza, fra i più grandi registrati per la specie in qualsiasi posto, e il registro italiano degli alberi monumentali gli attribuisce rilevanza nazionale, cosa che pochi altri alberi fiorentini condividono. Non sopravvive nessun documento di impianto, il che è normale per un albero che stava su quella che era campagna aperta prima che il Salviatino si urbanizzasse attorno a lui. D'inverno offre poca ombra e di fiori non ne ha da segnalare, e quasi tutti i residenti dei palazzi intorno probabilmente non sanno che il loro angolo di strada tiene un primato botanico vero."
+  },
+  "flo_007": {
+   "name": "Il Cedro del Bobolino",
+   "species": "Cedro del Libano (Cedrus libani)",
+   "age_estimate": "età non documentata, il giardino risale agli anni Sessanta e Settanta dell'Ottocento",
+   "access": "Gratuito, giardino pubblico, sempre aperto",
+   "transport": "15 minuti a piedi da Porta Romana, lungo Viale Machiavelli",
+   "story": "Quasi tutti i grandi giardini di collina di Firenze esistono perché la città ha governato per poco l'Italia intera. Quando Firenze fu capitale del giovane regno fra il 1865 e il 1871, all'architetto Giuseppe Poggi toccò il compito di modernizzarla, e oltre ad abbattere le vecchie mura per farne viali larghi tracciò una serie di nuovi parchi sulle colline sopra l'Arno, di cui il Bobolino, un modesto cuneo di giardino pubblico vicino a Porta Romana, è uno dei più piccoli e dei meno frequentati. Il suo pezzo forte è questo cedro del Libano, oggi con un tronco di oltre quattro metri e mezzo di circonferenza e una chioma appena oltre i 22 metri, più o meno dove il piano di Poggi lo mise un secolo e mezzo fa. Il registro regionale italiano elenca questo cedro fra gli alberi monumentali riconosciuti della Toscana, una voce nel conto crescente degli esemplari fiorentini, passato da una dozzina nel 2020 a ventinove candidati nel 2026 mentre il Comune smaltisce l'arretrato degli alberi trascurati nei suoi parchi. A differenza del vicino più famoso, Boboli a poche centinaia di metri, il Bobolino non chiede nulla e non chiude mai i cancelli, il che fa di questo cedro uno dei pochi alberi davvero monumentali di Firenze a cui chiunque può avvicinarsi a qualunque ora del giorno e della notte."
+  },
+  "flo_008": {
+   "name": "Il Cedro sopra Pegaso",
+   "species": "Cedro dell'Himalaya (Cedrus deodara)",
+   "age_estimate": "età non documentata, probabilmente sotto i 160 anni",
+   "access": "Ingresso a pagamento (biglietto del Giardino di Boboli)",
+   "transport": "15 minuti a piedi in salita dall'ingresso di Palazzo Pitti fino alla terrazza del Giardino del Cavaliere",
+   "story": "Il simbolo pubblico di Firenze sta accanto a questo cedro dal 1865, e quasi nessuno di chi visita il Giardino di Boboli sale abbastanza in alto da accorgersi dell'uno o dell'altro. Il Giardino del Cavaliere, terrazza murata nel punto più alto del giardino, ospita la statua di un cavallo alato che la Regione Toscana ha poi adottato come proprio emblema ufficiale, scolpita da Aristodemo Costoli nello stesso anno in cui Firenze divenne capitale del neonato Regno d'Italia. Accanto cresce un cedro deodara, specie himalayana arrivata nei giardini europei solo qualche decennio prima, dopo che i cacciatori di piante britannici e francesi ne avevano riportato i semi dalle montagne del Kashmir e del Nepal negli anni Trenta e Quaranta dell'Ottocento. L'esemplare di Boboli ha messo su un tronco di quasi quattro metri e tre quarti di circonferenza, sempreverde e indifferente alla folla stagionale che assedia l'anfiteatro più in basso per matrimoni e fotografie. Per questo albero in particolare non è emerso nessun documento di impianto, quindi la sua età si può delimitare solo con l'arrivo della specie in Europa e con la storia nota della terrazza, il che lo colloca al massimo nel suo secondo secolo. Sta in silenzio sopra uno dei giardini più visitati d'Italia, su una terrazza che quasi tutti i gitanti saltano perché significa un'altra rampa di scale dopo i prati principali."
+  },
+  "flo_009": {
+   "name": "Il Ginkgo del Piazzale Michelangelo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "età non documentata, probabilmente sotto i 150 anni",
+   "access": "Gratuito, piazza pubblica, sempre aperta",
+   "transport": "20 minuti a piedi in salita da Ponte Vecchio, oppure autobus 12 o 13 fino al Piazzale Michelangelo",
+   "story": "Milioni di persone fotografano ogni anno la vista dal Piazzale Michelangelo, e quasi nessuna fotografa l'albero sotto cui si mette per farlo. Questo ginkgo cresce al bordo del piazzale che l'architetto Giuseppe Poggi costruì nel 1875 come grande terrazza panoramica della città che aveva appena rimodellato, piantato fra le decine di specie ornamentali che Poggi e il suo giardiniere Attilio Pucci scelsero per i nuovi viali di collina. Il Ginkgo biloba viene spesso chiamato fossile vivente, unico superstite di una famiglia di alberi che prosperava insieme ai dinosauri ed è cambiata pochissimo da allora; questo esemplare, con un tronco di tre metri di circonferenza, al confronto è un nuovo arrivato, ben sotto i 150 anni, ma appartiene alla stirpe più antica di tutta questa lista con un margine di decine di milioni di anni. Ogni novembre le sue foglie a ventaglio virano a un oro uniforme e cadono nel giro di pochi giorni, tutte insieme, invece di sbiadire gradualmente come fa quasi tutto il colore autunnale, coprendo per poco il terreno di un colore che fotografa perfino meglio del profilo della città dietro. Per questo albero in particolare non è documentata nessuna data esatta di impianto, solo la sua presenza nello stesso progetto di sistemazione a verde del piazzale."
+  },
+  "flo_010": {
+   "name": "Il Pino di Villa Vogel",
+   "species": "Pino domestico (Pinus pinea)",
+   "age_estimate": "età non documentata",
+   "access": "Gratuito, parco pubblico",
+   "transport": "Autobus 6 o 9 verso Isolotto-Legnaia fino a Via delle Torri, poi pochi minuti a piedi dentro il parco",
+   "story": "I giardini rinascimentali di Firenze si prendono tutta l'attenzione; questo pino cresce in un parco molto diverso. Il Parco di Villa Vogel sta all'Isolotto-Legnaia, quartiere residenziale a sudovest del centro storico senza nessuno dei gruppi organizzati che riempiono Boboli né delle code che stanno fuori dagli Uffizi, in una villa che la famiglia Vogel donò alla città negli anni Ottanta perché il loro terreno diventasse area giochi, pista di pattinaggio e posto per i picnic del quartiere. Questo pino domestico sta in quella che i rilevatori descrivono come la parte più vecchia rimasta del giardino originario, in un punto isolato ancora circondato da cipressi secolari che precedono la donazione della villa di generazioni. Il suo tronco misura modesti tre metri e un terzo di circonferenza, meno degli esemplari da giardino di rappresentanza dall'altra parte della città, ma è sopravvissuto a qualunque occasione di famiglia o moda paesaggistica lo abbia messo lì, e oggi fa ombra ai giochi dei bambini invece che a un prato privato. Non sopravvive nessuna traccia del suo impianto, coerentemente con un giardino costruito per una famiglia e non catalogato per i visitatori. È il promemoria che gli alberi vecchi di Firenze non stanno solo nei giardini a pagamento e nelle piazze da cartolina: alcuni sono semplicemente finiti nel parco più vicino a dove i fiorentini normali si trovano ad abitare."
+  },
+  "flo_011": {
+   "name": "L'Olmo del Caucaso tagliato per salvarlo",
+   "species": "Olmo del Caucaso (Zelkova carpinifolia)",
+   "age_estimate": "circa 199 anni, piantato nel 1827",
+   "access": "Ingresso a pagamento (biglietto dell'Orto Botanico, ingresso museale ordinario)",
+   "transport": "5 minuti a piedi da Piazza San Marco (fermata della tramvia T2)",
+   "story": "Negli anni Ottanta questo albero ha perso circa due terzi della propria altezza in una sola operazione, ed è ancora sul registro nazionale. Il giardino piantò qui un olmo del Caucaso nel 1827 e crebbe come fa la specie, lentamente, fino a un tronco oggi vicino ai sei metri di circonferenza. Poi arrivò un attacco fungino, indicato in un registro come grafiosi dell'olmo, e la risposta fu la chirurgia invece della sega alla base. I rami vennero via duramente, e quel che sta in piedi oggi è una colonna grigia e scanalata che porta una chioma ricresciuta dai tagli. Il registro nazionale dà ancora questo albero a trenta metri di altezza. Il rilievo di campo del 2021 ne ha misurati dieci. Sono oneste tutte e due le cifre, appartengono semplicemente a decenni diversi, e la differenza fra loro è l'operazione. La Zelkova carpinifolia non è un olmo, comunque la chiamino tutti. È una cugina stretta, di un piccolo areale del Caucaso e della sponda meridionale del Caspio, ed è piantata in tutta Europa proprio perché si scrolla di dosso la malattia che ha svuotato il continente dei suoi olmi, cosa su cui vale la pena riflettere stando davanti a uno che comunque ha avuto bisogno di essere tagliato. Il tronco è la cosa da guardare: contrafforti, argento, e sproporzionato in modo selvaggio rispetto a tutto quello che gli sta sopra."
+  },
+  "flo_012": {
+   "name": "La Zelkova che qualcuno continua a misurare",
+   "species": "Zelkova giapponese (Zelkova serrata)",
+   "age_estimate": "135 anni, piantata nel 1891",
+   "access": "Ingresso a pagamento (biglietto dell'Orto Botanico, ingresso museale ordinario)",
+   "transport": "5 minuti a piedi da Piazza San Marco (fermata della tramvia T2)",
+   "story": "Qualcuno ha messo il metro attorno a questo tronco tre volte in quarant'anni: 3,30 metri nel 1980, 3,89 nel 2001, 4,40 nel 2021. Pochissimi alberi da qualsiasi parte portano una documentazione del genere, e vuol dire che si può guardare questo crescere di circa due centimetri e mezzo di circonferenza l'anno senza stare ad aspettare. Il giardino la piantò nel 1891 e le riconosce la chioma più larga di tutta la collezione, che in un posto così vecchio è un'affermazione seria. La Zelkova serrata viene dal Giappone, dalla Corea e dalla Cina orientale, dove è il keyaki, il legno usato per i pilastri dei templi e per le casse dei tamburi taiko, ed è la specie più spesso allevata come bonsai a scopa perché la ramificazione è naturalmente regolare. A dimensione piena la stessa abitudine produce un vaso: un tronco corto che si divide in un ventaglio di rami quasi uguali. La corteccia è il dettaglio da cercare. Si stacca in piccole placche arrotondate e lascia sotto chiazze arancioni, così il tronco si legge come un mosaico invece che come una superficie, ed è il modo più rapido per riconoscere questo albero dal vialetto. In autunno le foglie virano all'arancione e alla ruggine prima di cadere."
+  },
+  "flo_013": {
+   "name": "Il Pino con la chioma a bandiera",
+   "species": "Pino bruzio (Pinus brutia)",
+   "age_estimate": "oltre 130 anni, nel giardino dalla fine dell'Ottocento",
+   "access": "Ingresso a pagamento (biglietto dell'Orto Botanico, ingresso museale ordinario)",
+   "transport": "5 minuti a piedi da Piazza San Marco (fermata della tramvia T2)",
+   "story": "Il giardino tiene questo pino sotto osservazione costante, e lo dichiara per iscritto, perché la sua chioma è cresciuta a bandiera. Quasi tutto il peso sta da un lato solo di un lungo tronco spoglio, a trentatré metri di altezza, che è quello che succede quando un albero passa un secolo a cercare l'unico varco di una collezione affollata, ed è anche la forma che più facilmente cede in una tempesta. Pubblicare una cosa del genere su un albero di cui si va fieri è insolitamente franco. Il pino è nella collezione dalla fine dell'Ottocento e ha preso la posizione attuale nel 1922. È il pino di Turchia, anche se le fonti italiane lo chiamano pino bruzio, dalla Calabria, e i botanici discutono da un secolo se sia una specie a sé o una sottospecie del pino d'Aleppo; il registro nazionale lo archivia ancora sotto Pinus halepensis. Viene dal Mediterraneo orientale, dalla Turchia, da Cipro e dal Levante, dove è il pino che colonizza per primo il terreno bruciato e da cui per secoli si è estratta la resina. I suoi aghi sono più lunghi e più scuri di quelli del pino d'Aleppo, e le pigne stanno quasi senza picciolo contro il ramo, puntate in avanti. Conviene arretrare verso il muro del giardino per vederlo tutto intero."
+  },
+  "flo_014": {
+   "name": "Il Cedro dell'Himalaya dei Semplici",
+   "species": "Cedro dell'Himalaya (Cedrus deodara)",
+   "age_estimate": "almeno 146 anni, nei registri del giardino dal 1880",
+   "access": "Ingresso a pagamento (biglietto dell'Orto Botanico, ingresso museale ordinario)",
+   "transport": "5 minuti a piedi da Piazza San Marco (fermata della tramvia T2)",
+   "story": "Il cedro dell'Himalaya arrivò in Europa solo nel 1822, e questo era sui registri del giardino entro il 1880, il che ne fa un adottante precoce di un albero che mezzo continente avrebbe poi piantato in ogni parco costruito. Ha avuto almeno 146 anni per portare le proprie ragioni: quattro metri e un quinto di circonferenza, ventotto metri di altezza, con le punte dei rami pendenti che distinguono un deodara dai più rigidi cedri del Libano e dell'Atlante. La cima si piega invece di stare dritta e i rami esterni scendono in morbide tende grigioverdi, che è il modo più rapido per distinguere i tre cedri da trenta metri di distanza, e qui vale la pena saperlo perché un cedro del Libano cresce oltre il fiume, al Bobolino. Nel suo areale, dall'Afghanistan al Kashmir fino al Nepal occidentale, questa specie raggiunge i sessanta metri sui versanti a duemila metri di quota, e il suo legno resiste al marciume abbastanza bene da aver costruito templi himalayani. Deodara viene da devadaru, il sanscrito per legno degli dei. Il giardino lo acquisì nei decenni in cui le collezioni europee si contendevano materiale himalayano e messicano, lo stesso appetito che quattro anni dopo portò qui il cipresso di Montezuma. È sempreverde, quindi ha più o meno lo stesso aspetto in qualunque momento si venga, che è un motivo per andare e non per aspettare."
+  },
+  "flo_015": {
+   "name": "L'Albero degli Sposi",
+   "species": "Cedro dell'incenso (Calocedrus decurrens)",
+   "age_estimate": "età non documentata, giardino realizzato fra il 1865 e il 1877",
+   "access": "Gratuito, giardino pubblico, sempre aperto",
+   "transport": "15 minuti a piedi da Porta Romana, lungo Viale Machiavelli",
+   "story": "Due rami enormi salgono paralleli al tronco come un paio di corna, e Firenze fa la battuta ovvia da generazioni: in città lo chiamano l'albero dei cornuti. Gli sposi novelli ci posano davanti lo stesso, in numero tale da avergli fatto guadagnare un secondo nome più educato, l'albero degli sposi, e sono in uso tutti e due. È un cedro dell'incenso, originario delle montagne dell'Oregon e della California, e il suo tronco misura cinque metri e mezzo di circonferenza ad altezza di petto, cifra che per la specie in Europa rasenta lo straordinario. Sta a sinistra dell'aiuola centrale del Giardino del Bobolino, la parte di mezzo del giardino all'inglese che Giuseppe Poggi costruì lungo il Viale dei Colli fra il 1865 e il 1877, quando Firenze era per poco capitale d'Italia e Poggi ne stava rifacendo le colline. Schiacciate un rametto caduto e sa forte di resina, ed è da lì che viene il nome. Una tempesta violenta nell'inverno del 1985 gli danneggiò gravemente il tronco e si è ripreso. La città gli ha dato tutela formale nel 2020. Il cedro del Libano di questa pagina sta a pochi passi, quindi i due sono una tappa sola e non due."
+  },
+  "flo_016": {
+   "name": "Il Pino domestico del Bobolino",
+   "species": "Pino domestico (Pinus pinea)",
+   "age_estimate": "",
+   "access": "",
+   "transport": "",
+   "story": "I pini domestici sono noti per la larghezza, non per l'altezza. Questo è alto 31,5 metri.\n\nIl pino a ombrello dà al panorama italiano la sua sagoma appiattita, e di solito lo fa da un tronco spoglio di dieci o quindici metri. Il pino del Bobolino è andato su oltre che in largo, con un tronco di 412 centimetri di circonferenza, e sta sulla collina dell'Oltrarno fra le ville e i piccoli parchi che coprono il versante a sud del fiume. Altri due alberi tutelati stanno entro cinquanta metri da lui, quindi arrivare a tutti e tre non costa nulla più che girarsi.\n\nUna cautela su quei numeri. Il registro nazionale degli alberi monumentali è l'unica fonte che censisce questo pino, e sia l'elenco del Comune sia la stampa locale risalgono alla stessa designazione, quindi le misure sono una lettura ripetuta e non tre che concordano. Nessuna età è mai stata pubblicata per lui.\n\nUn pino domestico porta pigne che maturano in tre anni, il che vuol dire che il terreno sotto ne tiene a ogni stadio nello stesso momento, verdi e chiuse, grigie e in apertura, e finite. I semi dentro sono i pinoli, quelli che vanno nel pesto, e cavarli dal guscio è il motivo per cui costano quello che costano."
+  },
+  "flo_017": {
+   "name": "Il Cipresso di Monterey del Giardino Simone Weil",
+   "species": "Cipresso di Monterey (Cupressus macrocarpa)",
+   "age_estimate": "",
+   "access": "",
+   "transport": "",
+   "story": "Allo stato spontaneo questa specie cresce su due piccoli promontori della California e in nessun altro posto della Terra. Su una collina fiorentina ce n'è uno.\n\nIl Cupressus macrocarpa sopravvive in natura a Cypress Point e a Point Lobos, vicino a Monterey, un paio di miglia di alberi appiattiti dal vento sulla costa del Pacifico. Portatelo via da quella costa e si comporta come una pianta diversa: cresce in fretta, si allarga e raggiunge dimensioni che a casa sua non tocca mai, ed è così che è finito nei giardini dalla Nuova Zelanda alla Toscana. Questo ha un tronco di 388 centimetri e arriva a 18,5 metri, scuro e con la chioma larga, in un giardino pubblico gratuito a un centinaio di metri dagli alberi del Bobolino.\n\nLa parte interessante è quello che di lui non si sa. Il registro nazionale degli alberi monumentali riporta la specie, la circonferenza e l'altezza, e nient'altro. Nessuna età, nessuna data di impianto, nessuna traccia di chi lo abbia messo lì, e non è stata trovata nessuna fonte indipendente che confermi niente di tutto questo. Un cipresso di Monterey di queste dimensioni in Italia è quasi certamente un impianto da giardino ottocentesco, dei decenni in cui la specie era appena arrivata in Europa e ogni giardino serio ne voleva uno. Ma è una deduzione e non una prova, e conviene sapere quale delle due vi stanno mettendo in mano."
+  },
+  "flo_018": {
+   "name": "Il Cipresso della salita al Monte alle Croci",
+   "species": "Cipresso comune (Cupressus sempervirens)",
+   "age_estimate": "",
+   "access": "",
+   "transport": "",
+   "story": "Questo cipresso cresce accanto a una scalinata, sulla salita dei pellegrini che dal fiume porta a San Miniato al Monte.\n\nLa Via del Monte alle Croci è il percorso a gradini che parte da Piazza Poggi e sale alla basilica, che tiene il punto più alto di Firenze dall'undicesimo secolo. Il cipresso comune fiancheggia accessi come questo in tutta la Toscana, piantato per la sua colonna stretta e scura e per l'abitudine di sopravvivere a chi lo ha piantato. Questo è alto 21,5 metri con un tronco di 346 centimetri, che è pesante per una specie che di solito resta snella, e sta a circa 250 metri dal Piazzale Michelangelo, quindi la passeggiata fra i due non chiede nessuna deviazione.\n\nNessuno ne ha pubblicato l'età. Il registro nazionale degli alberi monumentali lo elenca e il Comune ripubblica quell'elenco, che è una fonte e non due, e nessuno dei due porta una data. Quel che si può dire è che un cipresso mette su circonferenza lentamente, e che un tronco di questa taglia non è il lavoro di qualche decennio.\n\nCupressus sempervirens vuol dire sempre verde, e lo è. L'albero a gennaio è esattamente come a luglio, che è parte del motivo per cui questa collina si legge uguale in ogni stagione e per cui la salita è buona anche d'inverno."
+  },
+  "flo_019": {
+   "name": "Il Pino d'Aleppo di Via Giramondino",
+   "species": "Pino d'Aleppo (Pinus halepensis)",
+   "age_estimate": "",
+   "access": "",
+   "transport": "",
+   "story": "Un pino d'Aleppo tiene le pigne sigillate sul ramo per anni e le apre con il calore, così il fuoco che uccide l'albero semina la generazione successiva.\n\nÈ una strategia costruita per una costa calda, secca e soggetta agli incendi, ed è il motivo per cui il Pinus halepensis copre tanta parte del Mediterraneo occidentale mentre compare a malapena nella città siriana da cui prende il nome. A Firenze è un albero piantato e non spontaneo. Questo sta su Viale Galileo, parte dell'anello di viali di collina che Giuseppe Poggi aprì negli anni Sessanta dell'Ottocento, quando Firenze era per poco capitale d'Italia e si rifaceva per l'occasione. Il suo tronco misura 323 centimetri e arriva a 22,5 metri, il più esile degli alberi tutelati di questo tratto, anche se è anche quello davanti a cui si passa che lo si voglia o no: sta più o meno a metà strada fra il Bobolino e il Piazzale Michelangelo.\n\nLe prove dietro di lui sono poche e vale la pena dirlo. Lo censisce solo il registro nazionale degli alberi monumentali, con il Comune che ne ristampa la voce, quindi c'è una fonte sola e nessuna età.\n\nPer distinguerlo dai pini domestici della stessa passeggiata, guardate la corteccia in alto, dove un pino d'Aleppo diventa grigio pallido con l'arancione che affiora nelle fessure, e gli aghi, che sono più fini e di un verde più chiaro."
+  },
+  "flo_020": {
+   "name": "Il Corbezzolo del Giardino dell'Iris",
+   "species": "Corbezzolo (Arbutus unedo)",
+   "age_estimate": "",
+   "access": "",
+   "transport": "",
+   "story": "Il corbezzolo fiorisce e matura i frutti nello stesso momento, così in autunno tiene campanelle bianche e frutti rossi sullo stesso ramo.\n\nL'Arbutus unedo di solito è un arbusto che si guarda dall'alto. Questo è alto otto metri e cresce nel giardino dell'iris accanto al Piazzale Michelangelo. La sua voce sul registro nazionale degli alberi monumentali riporta quell'altezza e lascia vuota la colonna della circonferenza, e nessuna età è mai stata pubblicata da nessuna parte, quindi quel che si sa di lui è una specie, un punto e otto metri. Plinio gli diede la seconda metà del nome, unedo, da unum edo, ne mangio uno solo, che resta un giudizio equo. Il frutto sembra un litchi incrociato con un lampone e sa di pochissimo.\n\nQui il momento conta più che per quasi tutti gli alberi di questa lista, e non a favore dell'albero. Il giardino apre solo per qualche settimana in primavera, attorno alla fioritura degli iris per cui è stato fatto, quindi il momento autunnale in cui il corbezzolo fa il suo numero cade di solito a cancello chiuso. Andateci per gli iris, trovate il corbezzolo mentre siete dentro, e i frutti prendeteli sulla fiducia.\n\nLa sua documentazione poggia su una sola voce di registro che il Comune ripubblica, che è una fonte e non due."
+  },
+  "flo_021": {
+   "name": "La Palma da vino cilena di Villa di Rusciano",
+   "species": "Palma da vino cilena (Jubaea chilensis)",
+   "age_estimate": "",
+   "access": "",
+   "transport": "",
+   "story": "Questa palma è stata quasi raccolta fino all'estinzione per la sua linfa, che veniva bollita fino a farne un miele. Prendere la linfa significava abbattere l'albero.\n\nLa Jubaea chilensis porta uno dei tronchi più grossi della famiglia delle palme, una colonna grigia larga più di un metro, e cresce abbastanza lentamente che un albero spillato voleva dire un secolo di crescita speso in un solo raccolto di miele di palma. La popolazione selvatica cilena è crollata sotto quel commercio e oggi sopravvive in poche valli protette. La specie è anche fra le palme più rustiche che esistano, ed è così che raggiunse i giardini delle ville italiane nell'Ottocento: una palma capace di reggere una gelata valeva moltissimo per chiunque stesse tracciando un giardino esotico in un clima che ne uccide quasi tutte.\n\nQuesta misura 349 centimetri di circonferenza e arriva a 15,5 metri, nel parco di una villa comunale a est del centro. La sua documentazione è una riga sola, la scheda nazionale degli alberi monumentali con la città che ne ripubblica la stessa voce, e non porta né età né data di impianto.\n\nSta parecchio a est degli alberi di collina e fa una gita a sé invece di aggiungersi a una passeggiata. Se valga un pomeriggio dipende da quante palme con un tronco come una colonna di pietra vi è capitato di avere davanti."
+  },
+  "flo_022": {
+   "name": "Il Cipresso di Villa della Petraia",
+   "species": "Cipresso comune (Cupressus sempervirens)",
+   "age_estimate": "",
+   "access": "",
+   "transport": "",
+   "story": "Sul registro degli alberi monumentali di Firenze un solo tronco è più grosso di questo cipresso, e appartiene a un cipresso di Montezuma.\n\nCon i suoi 580 centimetri di circonferenza, questo non è lo snello punto esclamativo scuro che il cipresso comune di solito disegna in una veduta toscana. È un albero vecchio e pesante, e sta nel giardino di Villa della Petraia, villa medicea a circa cinque chilometri a nord del centro, aperta ai visitatori e iscritta all'UNESCO insieme alle altre ville e giardini medicei. I Medici comprarono la tenuta nel Cinquecento e la ricostruirono, e il giardino a terrazze in cui il cipresso cresce è uscito da quel lavoro.\n\nLe prove sono profonde una voce. Il registro nazionale riporta la specie e la circonferenza, il Comune lo ristampa, e nessuno dei due pubblica un'età, quindi un albero di evidente antichità non ha nessuna data attaccata addosso. Ha il tronco di qualcosa che sta in piedi da moltissimo tempo, e nessuno ha messo per iscritto da quanto.\n\nIl legno di cipresso marcisce a fatica, ed è il motivo per cui è stato usato per casse, porte e bare, e per cui i cipressi vecchi tendono a restare sani nella struttura molto dopo che altre specie si sono svuotate. È il vantaggio silenzioso dietro quasi tutti i cipressi molto vecchi d'Italia, questo compreso."
+  },
+  "flo_023": {
+   "name": "Il Cipresso del Giardino di Boboli",
+   "species": "Cipresso comune (Cupressus sempervirens)",
+   "age_estimate": "circa 375 anni",
+   "access": "Ingresso a pagamento (biglietto del Giardino di Boboli, compreso nel complesso museale di Palazzo Pitti e Gallerie degli Uffizi)",
+   "transport": "Circa 7 minuti a piedi da Ponte Vecchio; l'autobus C3 ferma a Palazzo Pitti",
+   "story": "I cipressi più famosi di Boboli sono la doppia fila del Viottolone, il viale che scende dritto dall'anfiteatro. Questo sta fuori da quel viale, esemplare a sé iscritto al registro italiano degli alberi monumentali, più vicino al lato di Palazzo Pitti che alle schiere di cipressi del viale.\n\nCon 357 centimetri di circonferenza e fino a 30 metri di altezza, non ha niente di eccezionale in un giardino specializzato esattamente in questa specie ed esattamente in questa taglia. Quel che lo distingue sono le carte: il registro toscano degli alberi ne calcola l'età attorno ai 375 anni a partire da quello che chiama un anno di nascita registrato, base documentaria che questa pagina non è riuscita a verificare in modo indipendente, quindi prendete la cifra come una stima ragionata e non come un fatto inciso nella pietra. Se regge, l'albero precede la Boboli che quasi tutti i visitatori riconoscono, sistemata dai duchi medicei successivi lungo il Seicento, anche se niente lega questo tronco preciso a una fase particolare di quei lavori.\n\nIl Giardino di Boboli nacque nel 1549 come giardino privato dei Medici e aprì al pubblico solo nel 1766. L'ingresso oggi funziona con lo stesso biglietto combinato degli Uffizi e di Palazzo Pitti, quindi questo cipresso è una delle tappe più facili da raggiungere di tutta la pagina fiorentina: pochi minuti a piedi da Ponte Vecchio, dentro un giardino che si riempie di gente con o senza un albero di 375 anni da cercare."
+  }
+ }
+}

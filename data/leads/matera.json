@@ -1,19 +1,117 @@
 {
-  "city": "Matera", "country": "Italy", "city_slug": "matera",
-  "note": "Scouted 2026-08-31 as one of ten ranked zero cities and NOT published. Matera is #258 with 67,033 demand and the national MASAF register holds 44 monumental trees within 25 km, which is ample supply. It failed on ACCESS, not on trees: eleven of the seventeen nearest sit on a masseria, the fortified private farm that is the standard rural unit here, and MASAF publishes no ownership or access field, so there is no way to answer hard rule 10 from the data the way Andalusia's and Okinawa's registers allow. Three or four candidates look public and none of them could be confirmed. Publishing this city needs one of: a Basilicata regional sheet per tree, the Parco della Murgia Materana's own list of what its trails pass, or a reader who has walked it.",
-  "leads": [
-    {"name": "Pino domestico of Viale Aldo Moro", "species": "Stone Pine (Pinus pinea)", "lat": null, "lng": null, "status": "lead",
-     "why": "MASAF: 290 cm girth, 22 m tall, on Viale Aldo Moro in Matera itself and flagged urban, so it is almost certainly a street tree and publishable. Needs its coordinate read off the register and one confirmation."},
-    {"name": "Pioppo nero of Colle Timmari", "species": "Black Poplar (Populus nigra)", "lat": null, "lng": null, "status": "lead",
-     "why": "MASAF: 420 cm girth, 22 m tall, at Colle Timmari by the Fontana della Madonna, 9.8 km out. Timmari is an archaeological site with a spring, which reads public. Unconfirmed."},
-    {"name": "Gelso bianco of Altamura", "species": "White Mulberry (Morus alba)", "lat": null, "lng": null, "status": "lead",
-     "why": "MASAF: 290 cm girth, 7 m tall, Via Madonna della Croce 117, flagged urban. A street address, so probably reachable, but Altamura is a separate city 19 km away and would belong to its own page rather than Matera's."},
-    {"name": "Pino bruzio of the Oliveto dei Monaci", "species": "Calabrian Pine (Pinus halepensis var. brutia)", "lat": null, "lng": null, "status": "lead",
-     "why": "MASAF: 410 cm girth, 20 m tall, at Montescaglioso, 18.5 km. The name means the monks' olive grove and the abbey of San Michele Arcangelo is beside it, so this may be open ground. Unconfirmed."},
-    {"name": "Olivi of the Fosso di Carpatiello, Ferrandina", "species": "Olive (Olea europaea)", "lat": null, "lng": null, "status": "lead",
-     "why": "Two monumental olives at 550 and 750 cm girth, 23 km southwest. Ferrandina is olive country and these are large even for it. A fosso is a gully; whether there is public access along it is unknown."}
-  ],
-  "blocked": [
-    {"name": "Eleven masseria trees within 25 km", "why": "Ginepro coccolone at Masseria Passarelli (two), Ginepro coccolone at Masseria Selva Teresa, Salice bianco at Masseria Monte Grosso, Roverella at Masseria Lo Russo (496 cm, the thickest oak near Matera), Fragno at Masseria Malvezzi, Cerro at Masseria Malerba, Roverella at Masseria del Pulo, Leccio at the Stabilimento De Laurentis, Quercia castagnara at the Jazzo delle Conche. A masseria is a private working farm and a jazzo a private sheepfold. Hard rule 10 blocks all of them without an owner's invitation."}
-  ]
+ "city": "Matera",
+ "country": "Italy",
+ "city_slug": "matera",
+ "note": "Verification pass 2026-09-01, working from data/research/matera-staged.json (16 register rows, mostly duplicated between MASAF and the Puglia/Basilicata regional sheets, 10 Wikidata entities, largely the same trees as the register). Delivered 2 trees to data/research/matera-verified.json: the Pino domestico of Viale Aldo Moro (mat_001, an urban street tree 5 min from Matera Centrale station, corroborated by the register, Wikidata, a geolocated 2018 Wikimedia Commons photo, and an OpenStreetMap node that already names it 'Il Pino') and the Pioppo nero of Colle Timmari (mat_002, on public but remote and poorly signposted ground within the Timmari archaeological park, corroborated by the register plus an independent CAI Matera hiking-club excursion write-up naming this exact tree). That is below the 4-tree floor for a page; everything else near Matera in the staged supply either sits on a private masseria (a fortified working farm, the standard rural land unit here) or could not be confirmed as public within this pass's time-box. Matches the 2026-08-31 scouting verdict already on file below: this city fails on ACCESS, not on trees.\n\nNOT PUBLISHED 2026-09-01, and the reason is the single-famous-tree test rather than the evidence. Both trees below are fully verified, sourced and pinned, and Matera stands at two, under the four-tree floor. Hidde's 2026-08-31 exception lets a place publish below four when ONE tree is itself the destination: would somebody travel specifically for this tree? A stone pine on Viale Aldo Moro and a black poplar 9.5 km out in the Timmari archaeological park are not that, however good they are. People go to Matera for the Sassi. So the exception correctly says no, and the two trees wait here rather than being stretched into a page. Do not re-verify them. Matera's problem is ACCESS and not supply: eleven register trees sit on working masserie and fail hard rule 10, which is what caps this city. Two more publicly reachable trees would open it under the normal floor.",
+ "leads": [
+  {
+   "name": "Ciliegio canino of Contrada La Vaglia",
+   "species": "Mahaleb Cherry / St Lucie Cherry (Prunus mahaleb)",
+   "lat": 40.681978,
+   "lng": 16.598133,
+   "status": "lead",
+   "why": "Register: no girth recorded, 5 m tall, flagged urban, 1.7 km from centre near the SS7 Appia state road in the San Pardo area. Matches Wikidata Q55740953 at the same point. Unlike the masseria trees this is not on a named private farm, so it may be a roadside or field-margin tree with no owner to ask permission of, but two search attempts found no source describing the actual site (an Overpass query for nearby features also timed out once and was not retried per the fetch-discipline rule). A small, modest species for the honour too: Prunus mahaleb is a wild cherry, locally notable mainly because the Lanera district of Matera is named after this variety, which is a fact about the neighbourhood rather than about this individual tree. Needs a site visit or a better local source before it can ship."
+  },
+  {
+   "name": "Pino bruzio of the Oliveto dei Monaci, Montescaglioso",
+   "species": "Calabrian Pine (Pinus halepensis var. brutia)",
+   "lat": 40.517361,
+   "lng": 16.700611,
+   "status": "lead",
+   "why": "Register: 410 cm girth, 20 m tall, 18.6 km from Matera, at an olive grove ('Oliveto dei Monaci') that Montescaglioso's own heritage catalogue describes as a working Benedictine agricultural building within the historic 'Murro fief', on the Carrera road, tied to the Abbey of Montescaglioso. Nothing found says this specific grove is open to visitors the way the Abbey itself is; treat it as private estate land pending better evidence. Also worth noting for any future Matera page: Montescaglioso is its own town, and at nearly 19 km this tree reads more naturally as a candidate for a future Montescaglioso page than as a Matera day-trip entry."
+  },
+  {
+   "name": "Gelso bianco of Altamura",
+   "species": "White Mulberry (Morus alba)",
+   "lat": 40.833617,
+   "lng": 16.551189,
+   "status": "lead",
+   "why": "Register: 290 cm girth, 7 m tall, Via Madonna della Croce 117, flagged urban, a street address so probably reachable. Not researched further this pass: Altamura is a separate comune 19 km away in Puglia and belongs to its own future page, not Matera's."
+  },
+  {
+   "name": "Leccio of Santeramo in Colle",
+   "species": "Holm Oak (Quercus ilex)",
+   "lat": 40.746586,
+   "lng": 16.703411,
+   "status": "lead",
+   "why": "Register: 330 cm girth, 17.5 m tall, at the 'Stabilimento De Laurentis', Santeramo in Colle (Bari province), 12.4 km away. An industrial site name suggests private grounds; also out of scope for Matera regardless, belongs to a future Santeramo/Bari-province page if one is ever built."
+  },
+  {
+   "name": "Villa Longo historic park (not in the staged register/Wikidata supply)",
+   "species": "mixed: Japanese maples, monumental magnolias, limes, yews, English oak/hornbeam, black walnut and others",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Found by general search, not in the staged supply. A protected historic garden (Italian decrees of 1982/1983) south-east of the centre, 4.6 ha, laid out around 1900, with named 'magnolie monumentali' among its plantings. Not pursued to a candidate: it is run as a private event venue and B&B (villalongo.it advertises stays, weddings and paid villa tours) and its description names no single measured, individually identifiable specimen, only a planted landscape of many species, which fails the one-collectible-point test rather than the access one. Worth a fresh look if a future pass can name one specific tree there and confirm the villa tour genuinely lets a visitor reach it."
+  },
+  {
+   "name": "Olivi of the Fosso di Carpatiello, Ferrandina",
+   "species": "Olive (Olea europaea)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Carried over from the 2026-08-31 scouting note, not in this pass's staged supply. Two monumental olives at 550 and 750 cm girth, 23 km southwest. Ferrandina is olive country and these are large even for it. A fosso is a gully; whether there is public access along it is unknown. Also out of scope for a Matera page specifically."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Eleven masseria and jazzo trees within 25 km",
+   "why": "Ginepro coccolone at Masseria Passarelli (two, 40.612222/40.612778, 16.647222), Ginepro coccolone at Masseria Selva Teresa (190 cm girth, 40.621139, 16.673833), Salice bianco at Masseria Monte Grosso (370 cm girth, 40.688111, 16.697972), Roverella at Masseria Lo Russo (496 cm girth, the thickest tree in the staged supply, 40.725167, 16.523917), Fragno at Masseria Malvezzi (40.610447, 16.701739), Cerro at Masseria Malerba in Altamura (405 cm girth, Bari province, also out of scope), Roverella at Masseria del Pulo, Leccio at the Stabilimento De Laurentis in Santeramo (330 cm girth, Bari province, also out of scope), Quercia castagnara at the Jazzo delle Conche. A masseria is a private working farm and a jazzo a private sheepfold; none of these register rows carries an access or ownership field, and no independent source was found placing any of them on ground the public may enter without asking. Hard rule 10 blocks all of them without an owner's invitation or a source describing genuine open access. Not re-fetched individually this pass; carried forward from the 2026-08-31 scouting verdict, which this pass's own read of the register agrees with."
+  }
+ ],
+ "verified_but_unpublished": [
+  {
+   "id": "mat_001",
+   "name": "The Pine of Viale Aldo Moro",
+   "species": "Stone Pine (Pinus pinea)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 290,
+   "height_m": 22.0,
+   "location": {
+    "address": "Viale Aldo Moro, Matera",
+    "latitude": 40.664333,
+    "longitude": 16.598019,
+    "neighbourhood": "Centro, near Matera Centrale station"
+   },
+   "verified_sources": [
+    "MASAF/Basilicata regional register of monumental trees, sheet 03/F052/MT/17, comune di Matera, locality Viale Aldo Moro, girth 290 cm, height 22 m, flagged urban",
+    "https://www.wikidata.org/wiki/Q55740945 (matches the same coordinate)",
+    "https://commons.wikimedia.org/wiki/File:Pino_Matera.jpg (Wiki Loves Monuments Italia 2018 entry, wiki-ID 17F05203F052MT17, camera location 40.664333,16.598019, photographed 21 September 2018, so alive and standing as of that date)",
+    "OpenStreetMap node 2505619685, tagged natural=tree, name \"Il Pino\", Viale Aldo Moro, Centro, Matera (40.664378, 16.598034)"
+   ],
+   "access": "Free. Street tree on Viale Aldo Moro, a public road; no gate or permission needed.",
+   "transport": "Matera Centrale railway station, about 5 minutes on foot along Viale Aldo Moro. Piazza Vittorio Veneto and the edge of the Sassi are about 10 minutes on foot.",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "verify_notes": "Four independent records agree on one point to within a few metres: the regional monumental-tree register (id 03/F052/MT/17, wiki-ID 17F05203F052MT17), a matching Wikidata item, a geolocated Wikimedia Commons photo from a 2018 Wiki Loves Monuments entry, and an OpenStreetMap natural=tree node that names it 'Il Pino' ('The Pine'), i.e. locals already treat it as a landmark. Species is Pinus pinea (Italian stone pine / umbrella pine), a common urban and coastal tree in Italy, distinctive umbrella-shaped crown. Girth 290 cm, height 22 m per the register. AGE: no source gives one. I looked for a growth-rate basis to derive one (published Pinus pinea DBH growth studies give roughly 1.0-1.3 cm/year in adult trees, e.g. a fertilization trial and dendrochronology papers on Italian coastal stands), but that rate is measured on already-mature trees over short (5-year) windows, not a lifetime average, and stone pines grow markedly faster as saplings; extrapolating it linearly across the tree's whole life would be exactly the kind of over-precise guess the project bans. Left age fields empty rather than force a number; the page should ask the reader if anyone knows a planting date. Wiki Loves Monuments treats the tree as a protected cultural/environmental monument, consistent with its status as a public street tree on a named avenue rather than anything private. No dead/decline signal found; the 2018 photo shows a full, healthy crown."
+  },
+  {
+   "id": "mat_002",
+   "name": "The Black Poplar of Timmari",
+   "species": "Black Poplar (Populus nigra)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 420,
+   "height_m": 22.0,
+   "location": {
+    "address": "Localita Fontana della Madonna, Colle di Timmari, Matera",
+    "latitude": 40.650694,
+    "longitude": 16.489722,
+    "neighbourhood": "Timmari, on the Apulian-Greek archaeological park hill, about 9.5 km west of central Matera"
+   },
+   "verified_sources": [
+    "MASAF/Basilicata regional register of monumental trees, sheet 07/F052/MT/17, comune di Matera, locality Colle Timmari - Fontana della Madonna, girth 420 cm, height 22 m",
+    "https://www.wikidata.org/wiki/Q55740951 (pioppo nero, same coordinate)",
+    "https://www.caimatera.it/escursione/sentiero-del-pioppo-nero-di-timmari/ (CAI Matera hiking-club excursion, run 26 January 2025, whose stated route goes to Fontana della Madonna specifically \"per ammirare il pioppo nero, albero monumentale censito nel catasto regionale\", i.e. an independent, non-register source confirming both the tree and this exact spot)"
+   ],
+   "access": "Free, on open hillside within the Timmari archaeological area. No gate, no ticket. It sits well off the beaten path: reachable on foot via forest tracks and part-paved roads through the Parco Archeologico Appulo-Greco di Timmari, and a local hiking club (CAI Matera) runs an 11 km loop trail that passes directly by it. This pass could not confirm whether a shorter direct approach by car exists; treat it as a countryside walk rather than a stroll from the Sassi.",
+   "transport": "About 9.5 km / roughly a 20 minute drive west of central Matera; no public transport reaches Timmari directly. On foot from the nearest road it is a rural walk of at least an hour through the archaeological park.",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "verify_notes": "Two independent sources: the regional monumental-tree register (girth 420 cm, height 22 m) and a Matera hiking club (CAI) excursion writeup that independently names this exact tree and place as the destination of a guided walk, describing it as census-listed in the regional cadastre. It stands at Fontana della Madonna, a spring site on the Timmari hill, beside an Apulo-Greek archaeological park (a Bronze-Age-to-classical settlement excavated by Domenico Ridola, whose finds are in Matera's archaeology museum) and near the Diga di San Giuliano reservoir. A press piece (Gazzetta del Mezzogiorno) describes Timmari as a genuinely public but poorly signposted hillside, forest trails and partly paved roads, nothing gated. SPECIES: Populus nigra, black poplar, a fast-growing native riparian species; a 420 cm girth is a substantial specimen for the species even though black poplars can put on girth quickly when young, which is exactly why I did not force an age estimate: published growth figures for the species are wildly non-linear (very fast early growth, e.g. reported ~2 m diameter in 30-50 years in temperate Europe, versus a documented maximum lifespan of up to 200 years and at least one recorded specimen dated to roughly 325 years), and this tree stands in a much drier, hotter climate than those reference figures, which would slow growth in ways I cannot quantify. Age left empty; a local with a planting record or an official dendrochronology reading is the only honest way to answer it. WORTH NOTING FOR THE STORY: the site combines a genuinely old spring-fed landscape (springs here supported settlement from the Neolithic onward) with the tree, but that is a fact about the SITE, not a bridge to the tree's own age, and should not be written as one."
+  }
+ ]
 }
