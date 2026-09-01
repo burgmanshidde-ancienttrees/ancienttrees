@@ -390,12 +390,24 @@ jobs:
             true of THIS RUNNER and nothing else knows.
 
             Runner facts, which are the reason this prompt exists at all:
-            - NEVER judge or approve a photo here. This runner's egress proxy
-              blocks upload.wikimedia.org and api.openverse.org, so 313 of 337
-              candidates were unreachable on 2026-08-07 and a whole window went
-              on discovering that. Viewing works only in Hidde's own sessions.
-              Running the free API sweep (scripts/photo_hunt.py --recheck) is
-              fine here and fills the queue for one of those sessions.
+            - YOU CAN JUDGE PHOTOGRAPHS HERE. This runner reaches
+              upload.wikimedia.org, its 500px and 960px thumbnails, the Commons
+              API, Openverse and iNaturalist, all 200 OK, measured 2026-09-01.
+              The line that stood here for 25 days said the opposite and it was
+              a misdiagnosis: the 2026-08-07 failures were 400s on a thumbnail
+              width Wikimedia does not serve (it renders fixed buckets, 250 330
+              500 960, which site/src/lib/images.ts already knew), read as a
+              proxy block. Nothing was ever blocked.
+              So a viewing pass is a lane you may take: `photo_fetch.py --zero
+              --out <dir> --per-tree 3` downloads and exposure-scores the
+              candidates, you READ the files it wrote and judge them against
+              the Cadiz standard in CLAUDE.md, and `photo_verdicts.py` applies
+              what you decided. The two honesty rules are untouched and they
+              are the whole point: look at the actual pixels before approving
+              anything, and never approve a photograph that might be of a
+              different tree (status `held`, not `approved`).
+              The API sweep (scripts/photo_hunt.py --recheck) is still free and
+              still worth running to keep the queue stocked.
             - Verify with `npm --prefix site ci` then `npm --prefix site run
               build`. Both start with npm on purpose: a parenthesised subshell
               like `(cd site && ...)` matches no entry on the tool allowlist and
