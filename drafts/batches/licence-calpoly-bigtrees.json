@@ -1,0 +1,14 @@
+{
+ "batch": "licence-calpoly-bigtrees",
+ "note": "Hidde, 2026-09-01: \"zet die mail maar op de outreach to do\". A licence permission ask, not a cold pitch. The California Registry of Big Trees at Cal Poly's Urban Forest Ecosystems Institute is 266 champion trees with tree-level coordinates, species, height, girth, a measurement date and a DEAD flag, behind one open endpoint that needs no key: https://www.selectree.calpoly.edu/api/bigtrees/getAllBt. 229 are live, unhidden and located. Los Angeles 54, Santa Barbara 24, Sacramento 14, Santa Clara 12, San Diego 8; Sacramento and San Diego are ranked cities we have nothing in. It is the only right-shaped US register found across two scouting rounds. NOT IMPORTED and it must stay that way until this is answered: no terms of use for the data exist on californiabigtrees.calpoly.edu, selectree.calpoly.edu or ufei.calpoly.edu, only an accuracy disclaimer, and no licence stated is a stall rather than a yes. Address published by the registry itself on its own home page. Passes scripts/mailcheck.py.",
+ "status": "awaiting_hidde",
+ "mails": [
+  {
+   "to": "mritter@calpoly.edu",
+   "outlet": "Cal Poly UFEI, California Registry of Big Trees",
+   "subject": "Using the California Registry of Big Trees on ancienttrees.app",
+   "body": "Hi Matt,\n\nI run ancienttrees.app, a map of remarkable old trees you can go and visit. It's live with about 2,200 trees across 230 cities, and I'm working on an iOS app alongside it.\n\nI've been bringing together official tree registers from around the world, and the California Registry of Big Trees is the best one I've found in the US by a distance. Most American cities either publish their whole street-tree inventory or designate by trunk size, so there's no curated list to work from. Yours is an actual register, with coordinates and measurements and a date on them.\n\nI couldn't find any terms of use for the data, so I'd rather ask than assume. Would you be happy for me to use the registry on the map, crediting UFEI and Cal Poly on every tree that comes from it? Happy to link back wherever you'd like.\n\nOne other thing either way: if you have personal tips for the best trees to stand in front of around Sacramento or San Diego, I'd love to hear them.\n\nThanks,\nHidde",
+   "resend_reason": "First contact. Not previously mailed; checked against data/outreach-sent.json."
+  }
+ ]
+}
