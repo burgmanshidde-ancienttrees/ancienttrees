@@ -157,6 +157,13 @@
       "Ateny",
       "Athény"
     ],
+    "athens-georgia": [
+      "Athens",
+      "Athens i Georgia",
+      "Atensas",
+      "Atensa",
+      "Atens"
+    ],
     "austin": [
       "Ostinas",
       "Ostina",
@@ -344,6 +351,9 @@
       "Brynn",
       "ma tomo Pono"
     ],
+    "brunswick-georgia": [
+      "Brunswick"
+    ],
     "brussels": [
       "Brussels Hoofdstedelijk Gewest",
       "Region Brüssel-Hauptstadt",
@@ -458,6 +468,9 @@
       "Krumau",
       "Çeski Krumlov"
     ],
+    "chapel-hill-north-carolina": [
+      "Chapel Hill"
+    ],
     "charleston": [
       "Čarlstonas",
       "Čārlstona",
@@ -495,6 +508,10 @@
       "Cwlen",
       "Këlni"
     ],
+    "columbia-missouri": [
+      "Columbia",
+      "Columbia i Missouri"
+    ],
     "como": [
       "Côme",
       "Komas",
@@ -504,6 +521,9 @@
       "Commo",
       "Comu",
       "Còm"
+    ],
+    "coos-bay": [
+      "Baia di Coos"
     ],
     "copenhagen": [
       "Kopenhagen",
@@ -692,6 +712,10 @@
       "Firrara",
       "Frara"
     ],
+    "fish-lake-utah": [
+      "Fish Lake",
+      "Lago Fish"
+    ],
     "florence": [
       "Florenz",
       "Florencia",
@@ -847,6 +871,10 @@
       "Haarlimmermar",
       "Haerlemmermeer",
       "Haorlemmermeer"
+    ],
+    "hampton-virginia": [
+      "Hampton",
+      "Hamptonas"
     ],
     "heerlen": [
       "Hērlena",
@@ -1053,6 +1081,9 @@
       "Labaceaster",
       "Laiboch"
     ],
+    "logan-ohio": [
+      "Logan"
+    ],
     "london": [
       "Londen",
       "Londres",
@@ -1150,6 +1181,9 @@
       "Malago",
       "Malaqa",
       "Maraga"
+    ],
+    "martinsville-new-jersey": [
+      "Martinsville"
     ],
     "maui": [
       "ma lili Mawi"
@@ -1341,6 +1375,18 @@
     "oahu": [
       "ma lili Owaju"
     ],
+    "oklahoma-city": [
+      "Oklahoma Sitis",
+      "Oklahomasitija",
+      "Cathair Oklahoma",
+      "Dinas Oklahoma",
+      "Oklahomaborg",
+      "Kota Oklahoma",
+      "Bandar Raya Oklahoma",
+      "Thành phố Oklahoma",
+      "Oklahomapolis",
+      "Cita Oklahoma"
+    ],
     "osaka": [
       "Oszaka",
       "Ósaca",
@@ -1424,6 +1470,10 @@
       "Palma de Majorko",
       "Palma de Mayorka",
       "Palma di Majorca"
+    ],
+    "palo-alto": [
+      "Palo Altas",
+      "Paloalto"
     ],
     "pamplona": [
       "Pampelune",
@@ -1709,6 +1759,18 @@
       "Seulum",
       "Houra"
     ],
+    "sequoia-national-park": [
+      "Parc national de Sequoia",
+      "Parque nacional de las Secuoyas",
+      "Parco nazionale di Sequoia",
+      "Parque Nacional da Sequoia",
+      "Parc Nacional Sequoia",
+      "Sequoia nationalpark",
+      "Sequoian kansallispuisto",
+      "Park Narodowy Sekwoi",
+      "Národní park Sequoia",
+      "Národný park Sequoia"
+    ],
     "setubal": [
       "Setubalis",
       "Setubala",
@@ -1792,6 +1854,9 @@
       "Strasbūras",
       "Strasbūra",
       "Strasbwrg"
+    ],
+    "sunderland-massachusetts": [
+      "Sunderland"
     ],
     "sydney": [
       "Sídney",
@@ -2122,6 +2187,7 @@
     "assen": "Assen",
     "assisi": "Assisi",
     "athens": "Athens",
+    "athens-georgia": "Athens, Georgia",
     "austin": "Austin, Texas",
     "baarn": "Baarn",
     "bamberg": "Bamberg",
@@ -2142,6 +2208,7 @@
     "brisbane": "Brisbane",
     "bristol": "Bristol",
     "brno": "Brno",
+    "brunswick-georgia": "Brunswick, Georgia",
     "brussels": "Brussels",
     "bucaco": "Serra do Buçaco",
     "bucharest": "Bucharest",
@@ -2153,11 +2220,15 @@
     "caserta": "Caserta",
     "catania": "Catania",
     "cesky-krumlov": "Český Krumlov",
+    "chadds-ford": "Chadds Ford, Pennsylvania",
+    "chapel-hill-north-carolina": "Chapel Hill, North Carolina",
     "charleston": "Charleston, South Carolina",
     "chicago": "Chicago",
     "coimbra": "Coimbra",
     "cologne": "Cologne",
+    "columbia-missouri": "Columbia, Missouri",
     "como": "Como",
+    "coos-bay": "Coos Bay",
     "copenhagen": "Copenhagen",
     "cordoba": "Córdoba, Spain",
     "cork": "Cork (city)",
@@ -2177,6 +2248,7 @@
     "emmen": "Emmen, Netherlands",
     "enschede": "Enschede",
     "ferrara": "Ferrara",
+    "fish-lake-utah": "Fish Lake (Utah)",
     "florence": "Florence",
     "fort-worth": "Fort Worth, Texas",
     "frankfurt": "Frankfurt",
@@ -2189,9 +2261,11 @@
     "granada": "Granada",
     "graz": "Graz",
     "groningen": "Groningen",
+    "guerneville": "Guerneville, California",
     "guimaraes": "Guimarães",
     "haarlem": "Haarlem",
     "haarlemmermeer": "Haarlemmermeer",
+    "hampton-virginia": "Hampton, Virginia",
     "heerlen": "Heerlen",
     "helmond": "Helmond",
     "helsinki": "Helsinki",
@@ -2210,11 +2284,13 @@
     "krakow": "Kraków",
     "kyoto": "Kyoto",
     "las-vegas": "Las Vegas",
+    "lebec": "Lebec, California",
     "leeuwarden": "Leeuwarden",
     "leiden": "Leiden",
     "leipzig": "Leipzig",
     "lisbon": "Lisbon",
     "ljubljana": "Ljubljana",
+    "logan-ohio": "Logan, Ohio",
     "london": "London",
     "los-angeles": "Los Angeles",
     "lucca": "Lucca",
@@ -2224,6 +2300,7 @@
     "madeira": "Madeira",
     "madrid": "Madrid",
     "malaga": "Málaga",
+    "martinsville-new-jersey": "Martinsville, New Jersey",
     "maui": "Maui",
     "melbourne": "Melbourne",
     "menorca": "Menorca",
@@ -2243,6 +2320,7 @@
     "nijmegen": "Nijmegen",
     "nuremberg": "Nuremberg",
     "oahu": "Oʻahu",
+    "oklahoma-city": "Oklahoma City",
     "osaka": "Osaka",
     "oslo": "Oslo",
     "oss": "Oss",
@@ -2251,6 +2329,7 @@
     "padua": "Padua",
     "palermo": "Palermo",
     "palma-de-mallorca": "Palma de Mallorca",
+    "palo-alto": "Palo Alto, California",
     "pamplona": "Pamplona",
     "paris": "Paris",
     "parma": "Parma",
@@ -2280,8 +2359,10 @@
     "seattle": "Seattle",
     "segovia": "Segovia",
     "seoul": "Seoul",
+    "sequoia-national-park": "Sequoia National Park",
     "setubal": "Setúbal",
     "seville": "Seville",
+    "simsbury": "Simsbury, Connecticut",
     "singapore": "Singapore",
     "sintra": "Sintra",
     "sittard-geleen": "Sittard-Geleen",
@@ -2290,6 +2371,7 @@
     "split": "Split, Croatia",
     "stockholm": "Stockholm",
     "strasbourg": "Strasbourg",
+    "sunderland-massachusetts": "Sunderland, Massachusetts",
     "sydney": "Sydney",
     "tallinn": "Tallinn",
     "tarragona": "Tarragona",
@@ -2297,6 +2379,7 @@
     "the-hague": "The Hague",
     "thessaloniki": "Thessaloniki",
     "tilburg": "Tilburg",
+    "tillamook": "Tillamook, Oregon",
     "tokyo": "Tokyo",
     "toronto": "Toronto",
     "toulouse": "Toulouse",
@@ -2323,9 +2406,15 @@
   "search_names_note": "Generated by scripts/city_names.py from the English Wikipedia's langlinks: every published city's name in the languages people actually type, so the site search finds Den Haag as well as The Hague. Latin script only and capped per city, because search-index.json is downloaded by every visitor who touches the search box. FOR SEARCH ONLY. This block is never the authority on which name a city publishes under; that stays the hand-curated `aliases` block, which checkCityNames reads and which must not be fed generated data.",
   "no_other_names": {
     "breda": "Breda",
-    "sintra": "Sintra"
+    "chadds-ford": "Chadds Ford, Pennsylvania",
+    "guerneville": "Guerneville, California",
+    "lebec": "Lebec, California",
+    "simsbury": "Simsbury, Connecticut",
+    "sintra": "Sintra",
+    "tillamook": "Tillamook, Oregon"
   },
   "unresolved_names": {
-    "hawaii": "no article within 40 km, tried Hawaii (Hawaii, 312 km away); Hawaii, United States (Hawaii, 312 km away); search: List of United States cities by population; search: Honolulu; search: 2026 United States House of Representatives elections in Hawaii"
+    "hawaii": "no article within 40 km, tried Hawaii (Hawaii, 312 km away); Hawaii, United States (Hawaii, 312 km away); search: List of United States cities by population; search: Honolulu; search: 2026 United States House of Representatives elections in Hawaii",
+    "olympic-national-park": "no article within 40 km, tried Olympic National Park (Olympic National Park, 75 km away); Olympic National Park, United States; search: Park City, Utah; search: List of national parks of the United States; search: Olympic National Park"
   }
 }
