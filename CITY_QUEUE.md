@@ -478,16 +478,16 @@ so qa.py fails the deploy when the table and the json disagree.
 | 281 | Rothenburg ob der Tauber | 0.75 | 39,879 | 4 | - | 1 | 8 | 20 | measured |
 | 282 | Ferrara | 0.50 | 27,490 | 5 | 1 | 1 | 7 | 20 | measured |
 | 283 | Segovia | 0.54 | 30,968 | 6 | - | 1 | 5 | 10 | published, never ranked (may be uncrawled) |
-| 284 | Zaragoza | 0.50 | 87,580 | 7 | - | 1 | - | 20 | measured |
-| 285 | Savannah | 0.76 | 128,162 | 2 | - | - | - | 10 | published, never ranked (may be uncrawled) |
+| 284 | Savannah | 0.76 | 128,162 | 2 | - | - | - | 10 | published, never ranked (may be uncrawled) |
+| 285 | Zaragoza | 0.50 | 87,580 | 7 | - | 1 | - | 20 | measured |
 | 286 | Cologne | 0.75 | 191,812 | 5 | - | 1 | - | 30 | measured |
 | 287 | Ottawa | 0.50 | - | 8 | - | 1 | 119 | 20 | measured |
 | 288 | Modena | 0.44 | 51,698 | 5 | - | 1 | 3 | 10 | published, never ranked (may be uncrawled) |
 | 289 | Ronda | 0.42 | 51,510 | 6 | - | - | 9 | 10 | published, never ranked (may be uncrawled) |
 | 290 | Kamakura | 0.44 | 33,492 | 6 | - | - | - | 10 | published, never ranked (may be uncrawled) |
 | 291 | Buenos Aires | 0.63 | 333,331 | 4 | - | - | - | 30 | measured |
-| 292 | Rouen | 0.54 | 72,334 | 12 | - | 1 | 6 | 10 | published, never ranked (may be uncrawled) |
-| 293 | Maui | 0.58 | - | 4 | - | - | 3 | 10 | published, never ranked (may be uncrawled) |
+| 292 | Maui | 0.58 | - | 4 | - | - | 3 | 10 | published, never ranked (may be uncrawled) |
+| 293 | Rouen | 0.54 | 72,334 | 12 | - | 1 | 6 | 10 | published, never ranked (may be uncrawled) |
 | 294 | Tarragona | 0.36 | 32,396 | 4 | - | - | - | 10 | published, never ranked (may be uncrawled) |
 | 295 | Charleston | 0.55 | 155,987 | 2 | - | - | - | 10 | published, never ranked (may be uncrawled) |
 | 296 | Pamplona | 0.34 | 128,065 | 6 | - | - | 1 | 10 | published, never ranked (may be uncrawled) |
