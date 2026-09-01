@@ -6,30 +6,36 @@
    "species": "Fraxinus texensis",
    "lat": 32.76583333,
    "lng": -97.32916667,
-   "status": "lead",
+   "status": "verified",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 1.2 km from the centre of Fort Worth. Condition per the registry: 3. Measured December 2025. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 213
+   "girth_cm": 213,
+   "verified_as": "ftw_004",
+   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json"
   },
   {
    "name": "Prosopis glandulosa var. glandulosa (Texas Big Tree Registry TreeID 781)",
    "species": "Prosopis glandulosa var. glandulosa",
    "lat": 32.747,
    "lng": -97.36611111,
-   "status": "lead",
+   "status": "verified",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 3.4 km from the centre of Fort Worth. Condition per the registry: 3. Measured June 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 478
+   "girth_cm": 478,
+   "verified_as": "ftw_003",
+   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json"
   },
   {
    "name": "Ziziphus zizyphus (Texas Big Tree Registry TreeID 436)",
    "species": "Ziziphus zizyphus",
    "lat": 32.73636111,
    "lng": -97.36494444,
-   "status": "lead",
+   "status": "verified",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 3.8 km from the centre of Fort Worth. Condition per the registry: 2. Measured May 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 190
+   "girth_cm": 190,
+   "verified_as": "ftw_001",
+   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json"
   },
   {
    "name": "Ungnadia speciosa (Texas Big Tree Registry TreeID 782)",
@@ -46,10 +52,12 @@
    "species": "Quercus buckleyi",
    "lat": 32.7175,
    "lng": -97.34972222,
-   "status": "lead",
+   "status": "verified",
    "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.6 km from the centre of Fort Worth. Condition per the registry: 2. Measured July 2026. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go.",
    "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-   "girth_cm": 622
+   "girth_cm": 622,
+   "verified_as": "ftw_002",
+   "note": "Verified this pass (2026-09-01), see data/research/fortworth-verified.json"
   },
   {
    "name": "Quercus macrocarpa (Texas Big Tree Registry TreeID 1131)",

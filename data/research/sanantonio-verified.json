@@ -1,0 +1,98 @@
+[
+  {
+    "id": "san_001",
+    "name": "The Ben Milam Cypress",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "over 200 years",
+    "age_min": 200,
+    "age_max": 260,
+    "girth_cm": 762,
+    "location": {
+      "address": "San Antonio River Walk, behind the Drury Plaza Hotel (105 S St Mary's St), between the Commerce Street and Houston Street bridges, downtown San Antonio, TX",
+      "latitude": 29.4262,
+      "longitude": -98.493,
+      "neighbourhood": "Downtown / River Walk"
+    },
+    "verified_sources": [
+      "https://texastimetravel.com/blog/history-in-the-trees/",
+      "https://sanantonioreport.org/heritage-tree-the-ben-milam-bald-cypress/"
+    ],
+    "access": "Free, visible year-round from the public River Walk path and from river barge tours; also viewable from the patio of a riverside restaurant nearby.",
+    "transport": "In downtown San Antonio, on the River Walk between Commerce St and Houston St bridges; a 5-10 minute walk from the Alamo.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree: San Antonio Report (Aug 2012, updated Oct 2022, byline heritage-tree feature) gives circumference 25 feet (~762 cm), DBH 94 inches, height 90 feet, age 200+ years. TexasTimeTravel.com corroborates the historical story and species independently. STORY: according to local legend, a Mexican sharpshooter under General Cos shot and killed Texian commander Ben Milam from this cypress on the night of Dec 7, 1835, during the Siege of Bexar, while Milam was crossing the courtyard of the adjacent (since-demolished, c.1910) Veramendi Palace to confer with another officer. River Walk caretakers reportedly also call the tree 'Geronimo'. ALIVE CHECK: a separate San Antonio Report news article (2019) about a DIFFERENT tree (an Arizona ash) toppling near the Houston St bridge explicitly distinguishes it from \"the Ben Milam bald cypress, a historic heritage tree ... [that] remains standing on the River Walk\", so confirmed standing as of June 2019; no later report of it falling was found in this pass. THIRD PARTY: Texas A&M Forest Service 'Famous Trees of Texas' also profiles this tree (title confirms it exists in that register) but the page 403s to both curl and WebFetch, so it could not be read directly and is not counted as one of the two sources; only cited here as evidence a formal state registry recognises the tree, corroborating rather than sourcing the facts above. LOCATION: no tree-level GPS found; positioned from the described spot (\"between E Commerce and East Houston Streets on the east bank\", \"behind the Drury Inn\") which places it precisely along a roughly 150m stretch of river walk rather than at one confirmed point, hence approximate. GIRTH: circumference given directly in feet by the source (25 ft = 762 cm), not converted from diameter; DBH of 94in (~239cm) is also on record if a diameter figure is preferred later. REMARKABLE: genuinely historic assassination-site tree with a well documented 1835 story, centrally located on San Antonio's single most visited tourist path."
+  },
+  {
+    "id": "san_002",
+    "name": "The Big Tree at the Alamo",
+    "species": "Plateau Live Oak (Quercus virginiana / fusiformis)",
+    "age_estimate": "roughly 155-160 years",
+    "age_min": 150,
+    "age_max": 165,
+    "girth_cm": 389,
+    "location": {
+      "address": "Convento Courtyard, the Alamo (300 Alamo Plaza), near the north barracks wall beside an abandoned well, downtown San Antonio, TX",
+      "latitude": 29.426,
+      "longitude": -98.4863,
+      "neighbourhood": "Downtown / Alamo Plaza"
+    },
+    "verified_sources": [
+      "https://sanantonioreport.org/heritage-tree-live-oak-at-the-alamo/",
+      "https://spectrumlocalnews.com/tx/austin/news/2026/05/14/alamo-renovations-continue--but-historic-live-oak-tree-safe-from-change"
+    ],
+    "access": "Free (the Alamo grounds and courtyards are free to enter; only the interior exhibits require a ticket). Reachable by the downtown Blue or Yellow bus routes.",
+    "transport": "In downtown San Antonio at Alamo Plaza; a short walk from the River Walk and san_001 (Ben Milam Cypress).",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree and corroborate: San Antonio Report's 2012 heritage-tree feature (dimensions from a professional survey: height 39ft1in, canopy spread 88ft, DBH 49in, circumference 12ft9in = ~389cm, age given as 140 years AT THAT TIME i.e. planted/germinated circa 1872) and Spectrum News (May 2026, current) which independently confirms the tree still stands, gives its age as \"nearly 160 years old\" and confirms it is explicitly protected/excluded from the ongoing $400 million, five-year Alamo Plan renovation (quote from Alamo historian Thomas Ledesma: \"Our goal is to preserve the wonderful trees that we have here\"). AGE BASIS: not a growth-rate estimate but a documented specimen history: the tree was already ~40 years old when nurseryman Walter Whall transplanted it whole (by mule cart) from a ranch to the Alamo grounds in 1912-1913, said to be the first major tree-transplant of its kind in San Antonio and the start of Whall's tree-moving business; adding the ~114 years since to its ~40-45 years at transplant gives the ~155-160 year figure both sources independently arrive at. STORY: known locally as \"the Big Tree\", the most popular/photographed tree on the Alamo grounds, in the Convento Courtyard near an old well; its dense live-oak wood (76 lb/cu ft per the SA Report piece) causes heavy limbs to bow, requiring cabling and pruning to protect the adjacent limestone walls. LOCATION: precise, named courtyard within the small, well-mapped Alamo compound; confirmed precision. NOT the same trees as the City's Brackenridge Park heritage-tree tree-ring dating project (Jan 2023 city-commissioned dendro study of trees #95, #100, #139, #141): that separate official study found those FOUR SPECIFIC heritage-designated Brackenridge trees (two live oaks, a pecan, a bald cypress, all near the Japanese Tea Garden/river wall) were in fact only 34 to 92 years old by ring count, i.e. NOT old despite qualifying for the city's 24-inch-diameter heritage designation; recorded here so a later pass does not re-chase those four numbered trees as ancient-tree candidates. A fifth Brackenridge oak (#101) was too large/dense to core and its age is undetermined but the surveyor's professional opinion was it is unlikely to be old either, similar in age to its sampled neighbours."
+  },
+  {
+    "id": "san_003",
+    "name": "The Champion Mexican Sycamore",
+    "species": "Mexican Sycamore (Platanus mexicana)",
+    "age_estimate": "roughly 35-45 years",
+    "age_min": 35,
+    "age_max": 45,
+    "girth_cm": 328,
+    "location": {
+      "address": "Trinity University disc golf course, just south of Hildebrand Ave near Devine Rd and Stadium Dr, San Antonio, TX",
+      "latitude": 29.4647,
+      "longitude": -98.4809,
+      "neighbourhood": "Trinity University / Monte Vista"
+    },
+    "verified_sources": [
+      "https://sanantonioreport.org/heritage-tree-the-champion-mexican-sycamore-at-trinity-university/",
+      "Texas Big Tree Registry TreeID 858 (lead source only, corroborating measurement)"
+    ],
+    "access": "Free. Stands on Trinity University's open campus grounds (the disc golf course), reachable on foot; VIA bus Route 8 stops nearby on Stadium Drive.",
+    "transport": "On the Trinity University campus, about 4.5km north of downtown San Antonio; reachable by VIA bus Route 8.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources corroborate the same tree: San Antonio Report's heritage-tree feature (c.2012-13, dimensions height 70ft, spread 73ft, DBH 37in, circumference 9ft7in = ~292cm, age given then as 30-35 years, planted mid-1980s) and the Texas Big Tree Registry (TreeID 858, lead source only per project rules), which measured the same species at the same site (4.7km from San Antonio centre, matching Trinity University's location) in November 2021 at 328cm circumference and condition 1 (best) - consistent with roughly a decade's further growth on a fast-growing species the SA Report piece says can add several feet a year. AGE: derived from the documented planting date (mid-1980s per City Forester Michael Nentwich, quoted in the SA Report piece) rather than a growth-rate guess; today (2026) that puts the tree at roughly 35-45 years, so NOT ancient, but it is the TEXAS STATE CHAMPION for its species (largest known Platanus mexicana in the state per the Big Tree Registry) and visually distinctive: shaggy, camouflage-patterned bark that sheds to reveal a near-white trunk, locally nicknamed the 'ghost tree'. Grows beside a second, slightly smaller companion Mexican sycamore from a drainage creek on the disc golf course. QUALIFIES on visual/champion-tree grounds rather than age, per the bar (genuinely old OR visually spectacular OR historically significant). ALIVE CHECK: confirmed standing and healthy (condition 1) as of the Nov 2021 registry measurement; no report of removal or decline found in this pass, though nothing more recent than 2021 was located, hence flagged. LOCATION: registry coordinates and disc-golf-course listings (29.4649, -98.4813) agree closely with the SA Report's description of the site; positioned to the course generally rather than to the exact trunk, hence approximate. ACCESS: Trinity's disc golf course is open, unfenced campus parkland with public transit directions published by a local newspaper, i.e. genuinely open rather than requiring permission."
+  },
+  {
+    "id": "san_004",
+    "name": "The Champion Mountain Laurel at Incarnate Word",
+    "species": "Texas Mountain Laurel (Dermatophyllum secundiflorum, syn. Sophora secundiflora)",
+    "age_estimate": "not documented; local tradition says around 100 years",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 152,
+    "location": {
+      "address": "Near the Lourdes Grotto, University of the Incarnate Word campus, just west of Broadway and north of E Hildebrand Ave, San Antonio, TX",
+      "latitude": 29.4658,
+      "longitude": -98.4646,
+      "neighbourhood": "Alamo Heights / Broadway"
+    },
+    "verified_sources": [
+      "https://sanantonioreport.org/heritage-tree-champion-mountain-laurel-at-incarnate-word/",
+      "https://docsonline.sanantonio.gov/FileUploads/dsd/TreeDevelopmentProcessPresentation.pdf"
+    ],
+    "access": "Free. Stands on University of the Incarnate Word grounds near the public Lourdes Grotto, a devotional site open to visitors (the grotto's own gate is only decorative, not locked); driving onto campus may require a visitor parking pass, but the grotto itself is a walk-up public site.",
+    "transport": "On the UIW campus off Broadway, north-central San Antonio; VIA bus Route 8 runs nearby on Stadium Drive.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree it exists and is the state champion for its species: San Antonio Report's heritage-tree feature (dimensions: height 32ft2in, canopy 33ft4in, DBH 19in, circumference 5ft = ~152cm) and a City of San Antonio Development Services planning presentation (docsonline.sanantonio.gov) which independently labels it 'State Champion Texas Mountain laurel on Incarnate Word' campus, corroborating the champion designation from an official city document rather than only the newspaper. SPECIES NOTE: Texas mountain laurel is normally a large shrub (typical mature height ~15ft); this specimen reaching 32ft is exceptional, which is why it holds the state Big Tree Registry champion title for the species - qualifies on the visually-spectacular/champion-scale test rather than confirmed age. AGE: no documented planting date or growth-rate basis found; SA Report explicitly calls the ~100-year figure 'unconfirmed... local folklore', so left empty here per the estimate rules rather than repeated as a number; the page should ask the reader. LOCATION: sourced only to 'near the grotto, close to the administration building, on Congregational property near the historic Brackenridge Villa' rather than a mapped point, hence approximate; positioned to the Lourdes Grotto area of the UIW campus as the closest named landmark. ACCESS CHECKED CAREFULLY: the SA Report piece flags this is technically Sisters of Charity of the Incarnate Word (Congregational) property rather than the university campus proper, which could read as private; however independent search confirms the Lourdes Grotto immediately next to it is a longstanding public Catholic pilgrimage/devotional site, its own gate 'only decoratively gated' (not locked) per a UIW student-life source, and reachable by public transit with published bus directions in the SA Report piece itself. Judged genuinely open on that basis, but this is the thinnest access case of the San Antonio set and worth a second look before publishing. NOT the same specimen as the Texas Big Tree Registry lead for this species (TreeID 1010, 14km further out, different coordinates); that registry lead remains unverified and stays in leads."
+  }
+]
