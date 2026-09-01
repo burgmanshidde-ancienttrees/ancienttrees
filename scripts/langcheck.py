@@ -73,11 +73,21 @@ AREA = {
     "Colombia": "es", "Peru": "es", "Uruguay": "es", "Cuba": "es",
     "Italy": "it",
     "Netherlands": "nl",
-    "Germany": "de", "Austria": "de", "Switzerland": "de",
+    "Germany": "de", "Austria": "de",
+    # Switzerland is not one language area and mapping it whole was wrong: it
+    # put Geneva, which is francophone and already has a French overlay, at the
+    # top of the German list on 2026-09-01. Cities decide it, not the country.
+    "Switzerland": None,
     "Portugal": "pt", "Brazil": "pt",
     "France": "fr",
     "Japan": "ja",
 }
+
+
+# Countries that are not one language area are decided per city instead.
+CITY_AREA = {"Geneva": "fr", "Lausanne": "fr", "Zurich": "de", "Bern": "de",
+             "Basel": "de", "Lugano": "it", "Brussels": "fr", "Antwerp": "nl",
+             "Ghent": "nl", "Bruges": "nl"}
 
 
 def english_impressions():
@@ -136,7 +146,7 @@ def show_next():
             city = json.load(open(f, encoding="utf-8"))
         except (ValueError, OSError):
             continue
-        lang = AREA.get(city.get("country", ""))
+        lang = CITY_AREA.get(city.get("city", "")) or AREA.get(city.get("country", ""))
         if not lang or (lang, slug) in have:
             continue
         clicks, impressions = imps.get(slug, (0, 0))
