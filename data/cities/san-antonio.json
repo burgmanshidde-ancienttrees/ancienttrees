@@ -1,0 +1,169 @@
+{
+ "city": "San Antonio",
+ "country": "United States",
+ "status": "needs_curation",
+ "intro": "The most photographed tree at the Alamo arrived on a mule cart in 1912 and did not watch the 1836 battle, whatever the postcards suggest. A few streets away a bald cypress on the River Walk is said to be the one a marksman fired from on the night Ben Milam was killed. Four verified trees, two of them genuinely old and two of them state champions that got their size on speed rather than centuries.",
+ "meta_description": "San Antonio's oldest tree is a bald cypress on the River Walk, over 200 years old. Four verified remarkable trees and how to reach each one.",
+ "question_meta": "A bald cypress on the River Walk, over 200 years old, is San Antonio's oldest tree. Where to find it and the city's other three remarkable trees.",
+ "question_answer": "San Antonio's oldest tree is the bald cypress on the River Walk known as the Ben Milam Cypress, over 200 years old and 762 centimetres round. It stands downtown between the Commerce Street and Houston Street bridges, free to see from the public path at any hour.",
+ "question_context": "The cypress is the only one of the city's four verified trees whose age runs past two centuries, and even there the figure is a floor rather than a measurement. What ties it to 1835 is local tradition: the shot that killed Ben Milam during the Siege of Bexar is said to have come from its branches, and at over 200 years old the tree was certainly already standing that December. The Alamo's Big Tree is the one people assume is older and is not. The nurseryman Walter Whall dug it up from a ranch outside town in 1912 or 1913, already around forty years old, and hauled it whole to the Convento Courtyard, which puts it at roughly 155 to 160 years today. The other two are champions by size rather than age. Trinity University's Mexican sycamore is the largest in Texas and only about forty years old, and the Texas mountain laurel on the University of the Incarnate Word grounds holds the state title at 9.8 metres tall for a plant most Texans know as a shrub. All four are free to visit.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in San Antonio?",
+   "a": "The Ben Milam Cypress on the River Walk, a bald cypress over 200 years old and 762 centimetres round, standing between the Commerce Street and Houston Street bridges downtown."
+  },
+  {
+   "q": "Did the Alamo's Big Tree witness the 1836 battle?",
+   "a": "No. It was transplanted into the Convento Courtyard in 1912 or 1913, already around forty years old, by the nurseryman Walter Whall. It is roughly 155 to 160 years old today, so it began growing on a ranch outside town well after the battle."
+  },
+  {
+   "q": "Are San Antonio's remarkable trees free to visit?",
+   "a": "All four are. The Alamo's grounds and courtyards are free to enter and only the interior exhibits need a ticket. The River Walk cypress is visible from the public path at any hour, and the Trinity University and Incarnate Word campuses are both open to walk onto."
+  },
+  {
+   "q": "Can you walk between them?",
+   "a": "Between the two downtown ones. The Ben Milam Cypress and the Alamo's Big Tree are a few minutes apart on foot. The Mexican sycamore is about 4.5 kilometres north at Trinity University and the mountain laurel is on the Incarnate Word campus off Broadway, both reachable by VIA bus."
+  },
+  {
+   "q": "Why is a forty-year-old tree on this list?",
+   "a": "Because of what it did in forty years. The Mexican sycamore at Trinity University is the largest of its species in Texas at 328 centimetres round, which is remarkable for how fast it got there rather than for how long it has stood. We say so on its page rather than dressing it up as ancient."
+  }
+ ],
+ "trees": [
+  {
+   "id": "san_001",
+   "name": "The Ben Milam Cypress",
+   "species": "Bald Cypress (Taxodium distichum)",
+   "age_estimate": "over 200 years",
+   "age_min": 200,
+   "age_max": 260,
+   "girth_cm": 762,
+   "location": {
+    "address": "San Antonio River Walk, behind the Drury Plaza Hotel (105 S St Mary's St), between the Commerce Street and Houston Street bridges, downtown San Antonio, TX",
+    "latitude": 29.4262,
+    "longitude": -98.493,
+    "neighbourhood": "Downtown / River Walk"
+   },
+   "verified_sources": [
+    "https://texastimetravel.com/blog/history-in-the-trees/",
+    "https://sanantonioreport.org/heritage-tree-the-ben-milam-bald-cypress/"
+   ],
+   "access": "Free, visible year-round from the public River Walk path and from river barge tours; also viewable from the patio of a riverside restaurant nearby.",
+   "transport": "In downtown San Antonio, on the River Walk between Commerce St and Houston St bridges; a 5-10 minute walk from the Alamo.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "story": "By local tradition, the shot that killed Ben Milam came out of this tree. On the night of 7 December 1835, during the Siege of Bexar, a marksman under General Cos is said to have fired from the branches of this bald cypress as the Texian commander crossed the courtyard of the Veramendi Palace to confer with another officer. Milam died there. The palace came down around 1910. The cypress is still standing, 762 centimetres round and about 27 metres tall, and put at over two hundred years old, which means it was certainly already here that night.\n\nWhether a rifleman was ever actually up there is not settled and probably never will be; the story is older than anyone alive to check it. What is not in doubt is that this trunk was on this bank while San Antonio changed hands, and that it has stood through everything the city did to the river afterwards, including turning it into a walkway lined with restaurants.\n\nToday it grows behind a downtown hotel on the busiest stretch of the River Walk, and the barges narrating the river's history pass underneath it all day long. The crews who look after the walk call it Geronimo. It is free to see from the path or from the water. Our pin marks a stretch of the east bank rather than the trunk, so look for the biggest cypress between the Commerce Street and Houston Street bridges.",
+   "best_time": {
+    "months": [
+     11,
+     12
+    ],
+    "kind": "autumn colour",
+    "label": "late November into December, when the needles turn rust and drop into the river"
+   },
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "san_002",
+   "name": "The Big Tree at the Alamo",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "age_estimate": "roughly 155-160 years",
+   "age_min": 150,
+   "age_max": 165,
+   "girth_cm": 389,
+   "location": {
+    "address": "Convento Courtyard, the Alamo (300 Alamo Plaza), near the north barracks wall beside an abandoned well, downtown San Antonio, TX",
+    "latitude": 29.426,
+    "longitude": -98.4863,
+    "neighbourhood": "Downtown / Alamo Plaza"
+   },
+   "verified_sources": [
+    "https://sanantonioreport.org/heritage-tree-live-oak-at-the-alamo/",
+    "https://spectrumlocalnews.com/tx/austin/news/2026/05/14/alamo-renovations-continue--but-historic-live-oak-tree-safe-from-change"
+   ],
+   "access": "Free (the Alamo grounds and courtyards are free to enter; only the interior exhibits require a ticket). Reachable by the downtown Blue or Yellow bus routes.",
+   "transport": "In downtown San Antonio at Alamo Plaza; a short walk from the River Walk and san_001 (Ben Milam Cypress).",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "The most photographed tree at the Alamo arrived on a mule cart. It did not watch the 1836 battle, and it was not even growing here: in 1912 or 1913 the nurseryman Walter Whall dug up a live oak already around forty years old from a ranch outside town and hauled it whole to the Convento Courtyard, said to be the first transplant of its size anyone in San Antonio had attempted. It survived the move, it launched Whall a business shifting trees, and it has stood beside the old well for well over a century since. Add the head start and it comes to roughly 155 to 160 years.\n\nLocals just call it the Big Tree, and the name is about spread rather than height. It is 389 centimetres round and only about twelve metres tall, with a crown reaching some 27 metres across, more than twice its own height. Live oak wood is heavy enough that the tree's own limbs sag under themselves, so the branches are cabled and pruned to keep them off the limestone of the barracks wall.\n\nThe Alamo is in the middle of a 400 million dollar rebuild of its plaza, running five years, and the tree is explicitly excluded from the works. Grounds and courtyards are free to walk into. Only the exhibits inside need a ticket.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "san_003",
+   "name": "The Champion Mexican Sycamore",
+   "species": "Mexican Sycamore (Platanus mexicana)",
+   "age_estimate": "roughly 35-45 years",
+   "age_min": 35,
+   "age_max": 45,
+   "girth_cm": 328,
+   "location": {
+    "address": "Trinity University disc golf course, just south of Hildebrand Ave near Devine Rd and Stadium Dr, San Antonio, TX",
+    "latitude": 29.4647,
+    "longitude": -98.4809,
+    "neighbourhood": "Trinity University / Monte Vista"
+   },
+   "verified_sources": [
+    "https://sanantonioreport.org/heritage-tree-the-champion-mexican-sycamore-at-trinity-university/",
+    "Texas Big Tree Registry TreeID 858 (lead source only, corroborating measurement)"
+   ],
+   "access": "Free. Stands on Trinity University's open campus grounds (the disc golf course), reachable on foot; VIA bus Route 8 stops nearby on Stadium Drive.",
+   "transport": "On the Trinity University campus, about 4.5km north of downtown San Antonio; reachable by VIA bus Route 8.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "story": "This is the biggest Mexican sycamore in Texas and it is about forty years old. The city forester puts its planting in the mid 1980s, which rules out any romance about ancient wood; what it has instead is speed. Mexican sycamore can put on several feet a year, and this one had reached 328 centimetres of girth by the time the Texas Big Tree Registry taped it in November 2021, taking the state championship for the species and scoring the registry's top grade for condition.\n\nThe bark is the reason to walk over. It sheds in irregular plates, leaving a mottled camouflage pattern that gives way to a trunk close to bone white, which is why people on the Trinity University campus call it the ghost tree. The leaves are large, felted silver underneath, and they flip in wind. A second, slightly smaller Mexican sycamore grows beside it, both of them fed by the drainage creek that runs through the disc golf course.\n\nSo it earns its place on size and strangeness rather than on years, and it is worth saying so plainly rather than dressing a young tree up as an old one. The ground is open campus, no gate and no fee, about 4.5 kilometres north of downtown, with a VIA Route 8 stop on Stadium Drive. Our pin marks the course rather than the trunk. Look for the whitest tree on it.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "san_004",
+   "name": "The Champion Mountain Laurel at Incarnate Word",
+   "species": "Texas Mountain Laurel (Dermatophyllum secundiflorum, syn. Sophora secundiflora)",
+   "age_estimate": "not documented; local tradition says around 100 years",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 152,
+   "location": {
+    "address": "Near the Lourdes Grotto, University of the Incarnate Word campus, just west of Broadway and north of E Hildebrand Ave, San Antonio, TX",
+    "latitude": 29.4658,
+    "longitude": -98.4646,
+    "neighbourhood": "Alamo Heights / Broadway"
+   },
+   "verified_sources": [
+    "https://sanantonioreport.org/heritage-tree-champion-mountain-laurel-at-incarnate-word/",
+    "https://docsonline.sanantonio.gov/FileUploads/dsd/TreeDevelopmentProcessPresentation.pdf"
+   ],
+   "access": "Free. Stands on University of the Incarnate Word grounds near the public Lourdes Grotto, a devotional site open to visitors (the grotto's own gate is only decorative, not locked); driving onto campus may require a visitor parking pass, but the grotto itself is a walk-up public site.",
+   "transport": "On the UIW campus off Broadway, north-central San Antonio; VIA bus Route 8 runs nearby on Stadium Drive.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "story": "Texas mountain laurel is a shrub. This one is nearly ten metres tall, which is exactly why it holds the state champion title for the species: 9.8 metres of height and a crown just over ten metres across, on a plant most Texans know as a dense evergreen bush beside a car park. Its trunk is 152 centimetres round. San Antonio's own development services department names it as the state champion in its planning material, and the newspaper that had it surveyed agrees.\n\nIn March it flowers in heavy drooping purple clusters that smell of grape soda, unmistakably and from some distance, which is the one week of the year you can find this tree by nose. Afterwards it sets hard red seeds inside woody pods, the mescal beans that give the species its other name and that are toxic enough to leave alone.\n\nIt grows beside the Lourdes Grotto on the Incarnate Word grounds, a devotional site people have been walking up to for generations; the gate there is decorative rather than locked. Local tradition puts the tree at around a hundred years old, and the paper that reported that figure says plainly it is folklore rather than record, so take it as a story people tell. Nobody has established an age.\n\nCome on foot. Driving onto campus can mean a visitor parking pass; walking in does not.",
+   "best_time": {
+    "months": [
+     3
+    ],
+    "kind": "flowers",
+    "label": "March, when the purple clusters open and the whole tree smells of grape soda"
+   },
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}
