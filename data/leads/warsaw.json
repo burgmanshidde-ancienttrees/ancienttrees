@@ -27,13 +27,14 @@
       "reason": "Register + Wikipedia list place it 'przed SGGW' (in front of SGGW) on al. Niepodleglosci, Mokotow, 1.16km from war_005. No independent second source found within this pass's search budget beyond the register/Wikipedia-list family; several searches for girth, age or a dedicated writeup came back empty. A register-only tree with a genuine second source still needed before it can ship; worth another look at SGGW's own site or a district PDF (ursynow.um.warszawa.pl and architektura.um.warszawa.pl both 403'd automated fetches this pass, see below, so a browser-session fetch might succeed where curl/WebFetch did not). RESOLVED 2026-08-23: the point sits directly on Aleja Niepodleglosci itself (confirmed by reverse geocode), a public avenue with open pavement access, so the access question does not apply; SGGW's own history page corroborates that the university's original Mokotow campus occupied this ground from 1923 to 1956, used as second-source context for the setting though not for the tree's own age or girth, which remain undocumented. Shipped as war_010, flagged."
     },
     {
-      "name": "The Karol Oak (Dab Karol)",
+      "name": "The Karol Oak (Dab Karol) -- RESOLVED, shipped as war_019",
       "species": "Pedunculate Oak (Quercus robur)",
       "kodinspire": "PL.ZIPOP.1393.PP.1465011.3xxx (see Wikipedia list row 'Dab szypulkowy pn. \"Karol\"')",
       "latitude": 52.26785824432941,
       "longitude": 20.975847374208332,
       "designated": "1982-10-22",
-      "reason": "Zoliborz, ul. Popieluszki 15, roughly 4.5km from the nearest published tree (war_003, Wola) and would start a new cluster rather than tighten the existing one. Not researched further this pass for that reason (brief asked to prefer trees that tighten the walk); the street name suggests a possible link to Father Jerzy Popieluszko, worth checking in a future pass since that would be a strong story angle."
+      "reason": "Shipped as war_019, The Karol Oak, 2026-09-01. Kept in this file rather than deleted so a future pass does not re-open it.",
+      "status": "resolved_duplicate"
     },
     {
       "name": "The Wawer oak/pine cluster (Wielki Wojtek, Dwojak, Deby Ostrowskiego, Deby przy Trakcie, Placzaca Sosna)",

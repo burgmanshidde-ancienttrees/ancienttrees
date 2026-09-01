@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Warsaw's remarkable trees free to visit?",
-      "a": "13 of the 17 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
+      "a": "14 of the 18 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
     },
     {
       "q": "Why does Warsaw have so few very old trees?",
@@ -599,6 +599,39 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "war_019",
+      "name": "The Karol Oak",
+      "name_pl": "Dąb Karol",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": 24.0,
+      "location": {
+        "address": "ul. ks. Jerzego Popiełuszki 15, Żoliborz, Warsaw",
+        "latitude": 52.267858,
+        "longitude": 20.975847,
+        "neighbourhood": "Żoliborz"
+      },
+      "verified_sources": [
+        "GDOS national register of natural monuments (poland-gdos-pomniki-przyrody.json), gid 147249, kodinspire PL.ZIPOP.1393.PP.1465011.3089, name_pl \"Karol\", Quercus robur, jednoobiektowy (single-object) designation, designated 1982-10-22, coordinates 52.267858,20.975847",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (fetched wikitext directly, not the rendered table): independently lists the same tree, \"[[Dąb szypułkowy]] pn. „Karol”\", Żoliborz ul. Popiełuszki 15, designated 1982-10-22, same CRFOP id, with its own photo file Dąb_karol.jpg and Commons category",
+        "https://commons.wikimedia.org/wiki/Category:Oak_Karol -> Wikidata Q72167972 (fetched directly, read the raw Wikidata infobox HTML rather than trusting a search summary): label \"Oak Karol\" / \"dąb Karol\", height (P2048) 24m, coordinates (P625) 52.26788,20.97586 (within 3m of the register point), categorised under \"Street trees in Warsaw\" and \"Natural monuments in Warsaw (trees)\""
+      ],
+      "access": "Free, public street tree in Żoliborz on ul. Popiełuszki; Wikimedia Commons categorises it explicitly as a \"street tree in Warsaw\". It stands near (not necessarily inside) Żłobek nr 24, a public nursery at the same street address which has its own separately-registered oak (a different, unnamed tree, kodinspire ...3078) -- the two should not be confused",
+      "transport": "Żoliborz district, roughly 4-5km north of Warsaw city centre and about 4.5km from the nearest currently-published Warsaw tree (war_003, Wola); would start a new cluster rather than join the existing one",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Warsaw's register of natural monuments gives this oak a first name. Karol is a pedunculate oak of 24 metres, and it is not a park tree: it grows on the pavement of ul. Popiełuszki in Żoliborz, four or five kilometres north of the centre.\n\nThe state protected it on 22 October 1982, registered on its own rather than as one of a group, which means the monument is this single tree and nothing around it. More than forty years later it is still standing on the same stretch of pavement.\n\nGet the address right when you go. Number 15 holds two protected oaks. The public nursery at that address has its own, entered in the register separately and never given a name, so the pair are easy to mix up on the ground. Karol is the one with the name; its neighbour carries only a code.\n\nThe height is on record and almost nothing else is. No published source we could find gives a girth or an age, which for a named oak on a Warsaw street is a strange gap. If you have put a tape measure around it, or you know when it was planted, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
