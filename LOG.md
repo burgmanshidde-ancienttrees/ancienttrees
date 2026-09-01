@@ -9,7 +9,31 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-01 (session) - Two more photo passes, and the one that worked was the cheapest
+## 2026-09-01 (night run) - Auckland opens, 5 trees; iOS CI flakiness checked and left alone
+
+Rung 2 first: `health.py` flagged the iOS app workflow as failing on its schedule. Read both
+recent run logs (`gh run view --log-failed`): one died on "Lost connection to the application"
+in SweepFrames, the other on a boringssl CERTIFICATE_VERIFY_FAILED reaching the network in the
+test job. No iOS-related commit landed anywhere near either failure, both look like macOS-runner
+infrastructure flakiness rather than a code regression, and this session cannot run Xcode itself
+to confirm further. Tried `gh workflow run ios.yml` to get a clean retry; refused with a 403
+(this bot token cannot dispatch workflows). Left it for the next scheduled run or Hidde's own
+retrigger rather than chasing a phantom bug.
+
+Then `prepare.py`: nothing needed refilling, and `passcheck.py --pending` showed two research
+files already fully verified and waiting only on a story (the runner's "write pass first"
+rule). Dispatched write-stories on both. **Matera (2 trees)** got its stories but stays
+unpublished, below the 4-tree floor and not a single-destination case; kept in
+data/research/matera-verified.json. **Auckland (5 trees)**, claimed after an old stale verify
+claim from another session expired, cleared the floor: built the full city page (intro, FAQ,
+question-page fields, oldest tree the Monte Cecilia Fig at ~176 years) per Contract C, fixed a
+too-long question_meta preflight caught, ran city_names.py, tree_index.py, the Astro build and
+qa.py. qa.py's only complaint was a single sitemap lastmod date, an artifact of this checkout's
+shallow git history (3 commits visible locally), not a real problem. Committed and pushed.
+
+7-day visits from visitors.py: 587 visits, 1049 page views, trending up (48-101/day, no clear
+trend beyond weekday noise).
+
 
 Three viewing passes this evening rather than one. The first is logged below; these
 are the second and third, and the difference between them is the finding.
