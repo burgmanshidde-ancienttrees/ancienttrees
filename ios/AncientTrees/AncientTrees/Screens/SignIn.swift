@@ -268,16 +268,22 @@ struct SignInSheet: View {
             // "Nothing else" did not.
             Text("We store your email address and what you collect: the trees you save, the ones you photograph, and where they stand. No advertising, and you can delete the lot from this app.")
                 .font(.caption2).foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
-                // Full width on purpose, not just centred within it: this line
-                // wraps to several lines, and without a fixed frame its
-                // measured bounding box is whichever wrapped line is longest,
-                // which shifts a point or two with font metrics. That is what
-                // made it read as a few points off its siblings' left edge on
-                // iOS 18 and not on 26 (appfit.py DRIFT, 2026-08-31): nothing
-                // in the layout moved, only where this one line happened to
-                // wrap.
-                .frame(maxWidth: .infinity)
+                // Leading, not centred, and that is the actual fix rather than
+                // the first attempt at one. A centred multiline Text reports
+                // its accessibility frame as the tight box around its widest
+                // WRAPPED LINE, not the frame around it; .frame(maxWidth:
+                // .infinity) alone (2026-08-31) does not change that, because
+                // the frame's default alignment still centres that tight box
+                // inside the wider space, so the reported left edge still
+                // drifts a point or two with whatever line happens to be
+                // widest, which itself shifts with per-OS font metrics
+                // (appfit.py DRIFT, real on iOS 18, invisible on 26, confirmed
+                // still failing after the first fix on 2026-09-01). Leading
+                // alignment on both the text and the frame pins the tight
+                // box's left edge to the frame's left edge by construction, on
+                // every OS, matching the siblings it is meant to line up with.
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
             // Both of these were text a finger has to find: "Privacy" measured
             // 37 by 13 points and "Not now" 55 by 17, against Apple's 44 by 44.
             // The words stay the same size; the area around them is the target.
