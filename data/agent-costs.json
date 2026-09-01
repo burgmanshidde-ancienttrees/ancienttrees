@@ -4443,6 +4443,15 @@
     "note": "six to ten plus the copy pass and a Portugal country count fix. Caught that the brief's 'first paid entry' premise was wrong: two live trees already carried paid_entry.",
     "wasted": 0,
     "brief_wrong": true
+   },
+   {
+    "target": "pt/madeira",
+    "kind": "write",
+    "tokens": 60000,
+    "trees": 4,
+    "note": "overlay translation forced by my own Madeira deepen, which took the whole site down: the second time in one day that a city outgrew its overlay. Also fixed the six-to-ten counts across title, meta, intro, question set and FAQ, which i18ncheck only sees in four of those fields.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
