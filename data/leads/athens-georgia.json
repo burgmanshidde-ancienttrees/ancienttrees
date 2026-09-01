@@ -1,0 +1,14 @@
+{
+  "city": "athens-georgia",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "The Son of the Tree That Owns Itself",
+      "species": "White Oak (Quercus alba)",
+      "lat": 33.954722,
+      "lng": -83.382222,
+      "status": "duplicate",
+      "why": "DUPLICATE, found 2026-09-01: same tree as already-published atg_001 (The Son of the Tree That Owns Itself), 0m away, researched independently as ath_001 in data/research/us-famous-3-verified.json (its id happened to collide with the unrelated Athens, Greece ath_001, which is a separate false trail: this is a coordinate duplicate of the Georgia tree, not an id collision needing reassignment). Not merged; the research file's verify_notes add detail worth keeping: successor planted 4 Dec 1946 by the Junior Ladies' Garden Club from the original's acorn, over 50ft/15m by 2006 per Wikipedia."
+    }
+  ]
+}

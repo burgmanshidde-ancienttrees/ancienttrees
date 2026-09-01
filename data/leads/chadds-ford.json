@@ -1,0 +1,14 @@
+{
+  "city": "chadds-ford",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "The Brandywine Sycamore (Lafayette Sycamore)",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "lat": 39.87458,
+      "lng": -75.5718,
+      "status": "duplicate",
+      "why": "DUPLICATE, found 2026-09-01: same tree as already-published cdf_001 (The Brandywine Sycamore / Lafayette Sycamore), 0m away, researched independently as chf_001 in data/research/us-famous-2-verified.json. Not merged."
+    }
+  ]
+}

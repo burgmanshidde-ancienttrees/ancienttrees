@@ -10,6 +10,34 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-01 - Three new single-tree US places published; the us-famous-* research files fully cleared
+
+A write pass on data/research/us-famous-2-verified.json and us-famous-3-verified.json produced
+four stories; three reached data/cities as new single-tree destinations under the 2026-08-31
+exception (would somebody travel specifically for this one tree): Princeton, New Jersey (The
+Mercer Oak, successor, marking where General Hugh Mercer fell in 1777), Wye Mills, Maryland
+(The Wye Oak, a genetic clone of the largest white oak ever recorded in the US, planted on the
+original's spot in 2006), Gonzales, Texas (The Sam Houston Oak, view-only from a public road,
+camp site of the 1836 Runaway Scrape retreat). Four new species-page gaps closed the same
+session (white-oak, cook-pine, japanese-chinquapin, kapok, per pagegaps.py).
+
+The fourth story, nol_dueling_001 (New Orleans), turned out to be the same tree as
+already-published nol_003 under a different coordinate estimate (519m apart, identical facts:
+girth, height, age, the 1949-hurricane-took-the-other-one story); folded into
+data/leads/new-orleans.json as a duplicate rather than merged.
+
+A fifth candidate, gpo_001 (The Witch Tree, Grand Portage, MN), was withdrawn mid-write: it
+already carried an explicit BLOCKED verdict under hard rule 10 in
+data/leads/_famous-united-states.json (independent access closed by the Grand Portage Band
+specifically to protect a sacred site from vandalism, not a mere booking gate), which the verify
+pass that staged it had missed. Reconfirmed blocked rather than published.
+
+Cleared the rest of all three us-famous-*-verified.json files while at it (15 entries total):
+10 in file 1 and 5 more across files 2/3 were duplicates of already-published trees under
+different ids (folded into the right city's leads with why-notes) or stale copies of trees
+already live under the same id (deleted, no data lost). All three research files are now empty
+and deleted; the shelf is clear of this batch.
+
 ## 2026-09-01 - The only photograph of the Evergreen Plane of Gortyn shows a bare tree
 
 Found during a session photo viewing pass, recorded rather than acted on because a

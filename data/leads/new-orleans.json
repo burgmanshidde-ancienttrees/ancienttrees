@@ -1,0 +1,14 @@
+{
+  "city": "New Orleans",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "The Dueling Oak (nol_dueling_001, a second research pass)",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "lat": 29.98194,
+      "lng": -90.09056,
+      "status": "duplicate",
+      "why": "DUPLICATE, found 2026-09-01 during a write pass on data/research/us-famous-2-verified.json's nol_dueling_001: same tree as already-published nol_003 (The Dueling Oak), 519m away by coordinate but identical by every fact in hand (girth ~7.6m round vs nol_003's 7.5m, height 21.3m vs 21m, age ~300 years, same 1949-hurricane-took-the-other-one story, same junction of Dueling Oaks Drive and Dreyfous Drive near the sculpture garden and NOMA). The 519m gap is two independent coordinate estimates for one tree, not two trees; passcheck.py's 50m duplicate radius did not catch it because of that gap, so recorded here by hand instead. A full alternate-sourced story was written for this pass (uponarriving.com, neworleanscitypark.com) and is worth keeping as a second-source check on nol_003's existing story rather than a new entry. Not merged. If a future pin pass wants to sharpen nol_003's location_precision from approximate to confirmed, cross-check both coordinate estimates and the two source sets before doing so."
+    }
+  ]
+}

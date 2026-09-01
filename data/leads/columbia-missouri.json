@@ -1,0 +1,14 @@
+{
+  "city": "columbia-missouri",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "The Big Tree (Williamson Bur Oak)",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "lat": 38.899311,
+      "lng": -92.464603,
+      "status": "duplicate",
+      "why": "DUPLICATE, found 2026-09-01: same tree as already-published clm_001 (The Big Tree / Williamson Bur Oak), 0m away, researched independently as mcb_001 in data/research/us-famous-3-verified.json. Not merged."
+    }
+  ]
+}

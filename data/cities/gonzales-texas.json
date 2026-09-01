@@ -1,0 +1,61 @@
+{
+  "city": "Gonzales, Texas",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "On the night of 13 March 1836, Sam Houston and as many as four hundred Texans camped under this live oak with the town of Gonzales burning behind them, word of the fall of the Alamo just arrived. The retreat that followed is remembered as the Runaway Scrape, and the tree still carries Houston's name. It stands on private land beside a Greek Revival house, but it is plainly visible from a public road, marked by a Texas historical marker put up in 1936.",
+  "meta_description": "The Sam Houston Oak near Gonzales, Texas marks where Houston camped the night the Runaway Scrape began. View-only from a public road.",
+  "question_meta": "Gonzales, Texas maps one tree: the Sam Houston Oak, camp site of the Runaway Scrape retreat on 13 March 1836, viewable from a public road.",
+  "question_answer": "The tree we map for Gonzales is the Sam Houston Oak, a live oak of undocumented age standing beside the Braches House off CR 361, about 13 km east of town. Sam Houston and as many as four hundred Texans camped under it on 13 March 1836 as they began the retreat known as the Runaway Scrape, the night after word reached Gonzales that the Alamo had fallen. It is on private land but stands plainly visible from the public road.",
+  "question_context": "The Sam Houston Oak stands beside the Braches House off County Road 361, about 13 km east of Gonzales, Texas, reached by car; there is no public transit this far into rural Gonzales County, and neither Houston nor San Antonio, our nearest published cities, is within a 30-minute day-trip radius.\n\nThe house and the land the oak stands on are private, and visitors cannot enter. The tree is plainly visible from CR 361, a public dirt road, and a Texas historical marker has stood at the roadside turn since 1936, so the site is easy to find even though the tree itself cannot be approached.\n\nNo age has ever been published for it, only that it was already large enough in 1836 for several hundred men to camp beneath. One account places Santa Anna's forces under the same tree about three weeks later; no reliable source confirms it, so treat it as a story attached to the tree rather than a fact about it.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Gonzales, Texas?",
+      "a": "The Sam Houston Oak, a live oak off CR 361 east of town. No age has been published for it; it was already large enough in 1836 to shelter several hundred camped men."
+    },
+    {
+      "q": "Can I visit the Sam Houston Oak?",
+      "a": "Only from the road. The tree and the Braches House beside it stand on private land, but both are plainly visible from CR 361, a public dirt road, marked by a 1936 Texas historical marker."
+    },
+    {
+      "q": "Why is the Sam Houston Oak significant?",
+      "a": "Sam Houston and as many as four hundred Texans camped under it on 13 March 1836, the start of the retreat known as the Runaway Scrape, the night after Gonzales learned the Alamo had fallen."
+    },
+    {
+      "q": "Did Santa Anna really camp under the same tree?",
+      "a": "One local account says his forces camped there about three weeks later, but no reliable source confirms it. Treat it as a story attached to the tree rather than an established fact."
+    }
+  ],
+  "oldest_tree_id": "gon_001",
+  "trees": [
+    {
+      "id": "gon_001",
+      "name": "The Sam Houston Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Beside the Braches House, off CR 361, about 8 miles east of Gonzales, Texas",
+        "latitude": 29.471304,
+        "longitude": -97.308161,
+        "neighbourhood": "Rural Gonzales County"
+      },
+      "verified_sources": [
+        "https://texastimetravel.com/directory/sam-houston-oak/",
+        "https://texastimetravel.com/blog/history-in-the-trees/"
+      ],
+      "access": "View-only from a public dirt road. The Braches House and the land the oak stands on are private property; visitors cannot enter, but the tree and house are visible from CR 361, a public dirt road, from a respectful distance outside the gates and fences. A 1936 Texas state historical marker stands at the roadside turn (Alternate US 90 / CR 361).",
+      "transport": "Rural Gonzales County, Texas, about 8 miles / 13 km east of the town of Gonzales on Hwy 90A then north on CR 361. Not within 30 minutes of any city we currently publish (Houston and San Antonio are both roughly 90+ minutes away); stands alone as a Gonzales-area entry.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "On the night of 13 March 1836, Sam Houston and as many as four hundred Texans camped under this live oak with Gonzales burning behind them. News of the fall of the Alamo had arrived, the town was burned, and the retreat that followed is remembered as the Runaway Scrape. The tree carries that name too.\n\nOne account has Santa Anna's forces camping under the same oak about three weeks later, which no reliable source confirms. Treat it as a story attached to the tree rather than a fact about it.\n\nThe Braches House beside it came afterwards, a Greek Revival house of 1842, six years after the night that made the spot worth marking. Texas put up a historical marker at the roadside turn in 1936.\n\nThis is a view only tree. The house and the land around it are private and cannot be entered, but the oak stands plainly visible from CR 361, a public dirt road, and the pin marks the roadside viewing point rather than the trunk.\n\nNobody has published an age for it. It was already big enough in 1836 for several hundred men to camp under, and no source gives a figure. If you know one, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
