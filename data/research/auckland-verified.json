@@ -1,0 +1,122 @@
+[
+  {
+    "id": "akl_001",
+    "name": "Old Albert",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "about 143 years",
+    "age_min": 140,
+    "age_max": 145,
+    "girth_cm": 1087,
+    "location": {
+      "address": "Windsor Reserve, Victoria Road, Devonport, Auckland (beside Devonport Library)",
+      "latitude": -36.8311084605075,
+      "longitude": 174.79785561561584,
+      "neighbourhood": "Devonport"
+    },
+    "verified_sources": [
+      "https://www.treeregister.nz/tree/view/774",
+      "https://devonportflagstaff.co.nz/9-fun-facts-about-devonport/"
+    ],
+    "access": "Free, in a public council park beside the Devonport Library. Fully open, no restrictions.",
+    "transport": "Devonport ferry terminal, about 8 minutes walk (or the short ferry crossing from downtown Auckland, ~12 minutes, then the walk)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree: NZ Tree Register (treeregister.nz, tree-level GPS, observed by B. Cadwallader, most recent field note 2010, Tree Present: Yes, Tree Health: good) and the Devonport Flagstaff local paper. Planted 1883 from a seedling raised via Albert Park in the Auckland CBD, hence the name Old Albert; also called an Australian banyan locally. Multi-trunk form (3 stems per the register), many aerial roots, does not show the typical buttressing of the species. Girth 1087cm at 1m height (measurement excludes aerial roots), height 21.5m, average crown spread 42m (crown spread readings 44m x 40m). A 2024 Auckland Council piece on arborists protecting the city's notable trees (ourauckland.aucklandcouncil.govt.nz, blocked by Cloudflare on direct fetch but findable via search, so treat as corroborating rather than a cited source) describes it as one of the city's registered notable trees, regularly maintained, canopy over 40m. Devonport is reached by a short and well-known ferry crossing from downtown Auckland, which is the standard way locals and visitors reach it; walkable from the ferry terminal."
+  },
+  {
+    "id": "akl_002",
+    "name": "Edward VII Coronation Tree",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 124 years",
+    "age_min": 122,
+    "age_max": 126,
+    "girth_cm": null,
+    "location": {
+      "address": "Front of Takapuna Primary School, 23 Auburn Street (Anzac Street frontage), Takapuna, Auckland",
+      "latitude": -36.787773,
+      "longitude": 174.76879,
+      "neighbourhood": "Takapuna"
+    },
+    "verified_sources": [
+      "https://www.wikidata.org/wiki/Q131692958",
+      "https://www.tps.school.nz/our-history/"
+    ],
+    "access": "Stands on the school's street frontage beside the War Memorial Gates; visible from the public footpath on Anzac Street. The school grounds themselves are not open to the public outside school events, so treat this as a view-from-the-street tree rather than one to walk up to.",
+    "transport": "Takapuna town centre, a few minutes walk; buses run along Lake Road nearby",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources: Wikidata (which cites Auckland Council's Unitary Plan Schedule 10, Notable Trees, and the Historic Heritage schedule, Appendix 9) gives species English/Pedunculate Oak (Quercus robur), planted 9 August 1902, and the school's own \"Our History\" page (tps.school.nz, updated at least as recently as the 2024 Charles III planting mention, so recent) independently confirms: \"The oak trees were planted at the front of the school. These survive today, over 100 years later. Both have plaques commemorating the Coronation of King Edward VII on August 2nd 1902 and King George V in 1910.\" That page is the stronger alive-now evidence. Stands as a pair with the George V Coronation Tree (akl_003), a few metres apart, both at the Anzac Street frontage beside the school's 1923 War Memorial Gates (unveiled by Governor-General Viscount Jellicoe). FLAGGED because I could not independently confirm the front lawn is open ground rather than fenced school property; the address itself (\"Anzac Street frontage\") and the trees' pairing with a public war memorial suggest they stand at or very near the boundary, visible without entering the grounds, but I have not found an explicit statement that the public may walk up to the trunk. Recorded as a view-only entry accordingly; a future pass or a reader visiting in person can confirm whether the school grounds are in fact open."
+  },
+  {
+    "id": "akl_003",
+    "name": "George V Coronation Tree",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "about 116 years",
+    "age_min": 114,
+    "age_max": 118,
+    "girth_cm": null,
+    "location": {
+      "address": "Front of Takapuna Primary School, 23 Auburn Street (Anzac Street frontage), Takapuna, Auckland",
+      "latitude": -36.787725,
+      "longitude": 174.768902,
+      "neighbourhood": "Takapuna"
+    },
+    "verified_sources": [
+      "https://www.wikidata.org/wiki/Q131693024",
+      "https://www.tps.school.nz/our-history/"
+    ],
+    "access": "Stands on the school's street frontage beside the War Memorial Gates and its sibling Edward VII oak; visible from the public footpath on Anzac Street. The school grounds themselves are not open to the public outside school events, so treat this as a view-from-the-street tree rather than one to walk up to.",
+    "transport": "Takapuna town centre, a few minutes walk; buses run along Lake Road nearby",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Sibling of akl_002, planted 1910 for the coronation of King George V, per the school's own history page (tps.school.nz) which names both trees together and confirms both survive today. Wikidata entry cites the same Auckland Council Unitary Plan schedules (Notable Trees Schedule 10 and Historic Heritage Appendix 9) as the source for designation. Same species (Pedunculate Oak, Quercus robur) and same access caveat as akl_002: standing at the street frontage beside the school's War Memorial Gates, genuinely visible from Anzac Street, but I could not confirm the front lawn itself is open to the public rather than fenced school property. Recorded as a view-only entry, flagged for that reason."
+  },
+  {
+    "id": "akl_004",
+    "name": "The Monte Cecilia Fig",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "about 176 years",
+    "age_min": 170,
+    "age_max": 180,
+    "girth_cm": 1594,
+    "location": {
+      "address": "Monte Cecilia Park, 72 Hillsborough Road, Hillsborough, Auckland (near the old carriageway to the Pah Homestead)",
+      "latitude": -36.91552772939153,
+      "longitude": 174.76447820663452,
+      "neighbourhood": "Hillsborough"
+    },
+    "verified_sources": [
+      "https://www.treeregister.nz/tree/view/783",
+      "https://en.wikipedia.org/wiki/Monte_Cecilia_Park"
+    ],
+    "access": "Free, in a public Auckland Council park. Fully open, standing a short distance from the old homestead.",
+    "transport": "Local buses run along Hillsborough Road; about 7km / a short bus or drive from the city centre",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree: NZ Tree Register (treeregister.nz, tree-level GPS, last field observation 24 Sep 2008 by G. Collett, Tree Present: Yes, Tree Health: \"Very healthy Nov. 2010\") citing Burstall & Sale's 1984 book Great Trees of New Zealand p.56, and Wikipedia's Monte Cecilia Park article (citing Auckland Council sources), which independently confirms the park holds several Moreton Bay figs and that \"many of these trees are the oldest of their species in New Zealand.\" Register calls this the largest Moreton Bay fig in New Zealand: girth 1594cm measured at the narrowest waist of the bole 1.5-2m up (a multi-trunk form, 3 trunks, so this figure encompasses several merged trunks, not a single stem, noting per the register's own comment), height 30m, average crown spread 51.7m (55.4m x 48m). Planted circa 1850 by the estate's owner/gardener during the era it was known as Williamson's Castle / Pah Farm, later the Pah Homestead grounds; Wikipedia dates the wider designed landscape to head gardener John Blackmoore under owner James Williamson. Auckland Council bought the estate as a public park in 2004. A search summary citing monumentaltrees.com gave a slightly lower height, about 27.45m, against the register's 30m; both describe the same tree and the discrepancy is not resolved, register figure used as the more detailed source. No proper name found in any source, so the entry uses a descriptive name from its location rather than inventing one; several other large figs and a champion hoop pine stand nearby in the same park and could be a good second Hillsborough entry for a later pass."
+  },
+  {
+    "id": "akl_005",
+    "name": "The Cornwall Park Algerian Oak",
+    "species": "Algerian Oak (Quercus canariensis)",
+    "age_estimate": "about 106 years",
+    "age_min": 100,
+    "age_max": 110,
+    "girth_cm": 650,
+    "location": {
+      "address": "Cornwall Park, on the lawn west of Pohutukawa Drive, near Twin Oak Drive, Auckland",
+      "latitude": -36.89515240232903,
+      "longitude": 174.7863006591797,
+      "neighbourhood": "Epsom / One Tree Hill"
+    },
+    "verified_sources": [
+      "https://www.treeregister.nz/tree/view/665",
+      "https://cornwallpark.co.nz/see-and-do/the-trees"
+    ],
+    "access": "Free, in Cornwall Park, a large public heritage park open at all times.",
+    "transport": "Buses run along Manukau Road and Green Lane; about 4km / a short bus ride from the city centre",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree: NZ Tree Register (treeregister.nz, tree-level GPS, observed most recently 18 Feb 2026 by G. Collett, Tree Present: Yes, health \"a good full canopy, however some leafminer damage\"; earlier observations 2020, 2010, 2005) and Cornwall Park's own website, which independently describes it as planted in the early 1920s, one of the best-formed Algerian oaks in New Zealand, and listed as a notable tree in the NZ Tree Register. The register calls it the NZ National Champion of its species and one of the largest Algerian oaks in the world (NZNTT, 2019), Champion Tree Score 378. Single trunk, girth 650cm at 1.15m (measured below the branch flare), height 27.2m, average crown spread 39.75m. Presumed planted in the 1920s by Cornwall Park staff under Sir James Gunson, chairman of the park board at the time; no exact planting date recorded, so circa 1920 is used. Root zone has been fenced off with the canopy allowed to grow down to ground level, per the register's tree-form notes, which is worth a line in the story about how it is being cared for. This is the single strongest-evidenced tree of the pass: a very recent field observation (Feb 2026) plus a park-authority page in agreement, in a large free public park a short bus ride from the centre."
+  }
+]

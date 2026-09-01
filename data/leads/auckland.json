@@ -1,0 +1,27 @@
+{
+  "city": "Auckland",
+  "country": "New Zealand",
+  "city_slug": "auckland",
+  "note": "Candidates found during the 2026-09-01 zero-to-open research pass. Never rendered: these are leads/blocked, not entries.",
+  "leads": [
+    {
+      "name": "The Simpson Kauri and McKinney Kauri, Parry Kauri Park",
+      "species": "Kauri (Agathis australis)",
+      "lat": -36.4164,
+      "lng": 174.6693,
+      "status": "lead",
+      "why": "Two named, photographed kauri in Parry Kauri Park, Warkworth, per data/leads/_famous-new-zealand.json. Roughly 48km north of the Auckland centre point used for this pass, well outside the 15km sweep radius and beyond a comfortable day-trip framing for an AUCKLAND page, so not researched this pass. Kauri dieback status at this specific park not checked. Worth a look for a separate Warkworth/Rodney entry, or if Auckland's day-trip boundary is read more generously later."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The Harvey Tree",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "lat": -36.848332,
+      "lng": 174.763671,
+      "status": "blocked",
+      "blocked_reason": "dead",
+      "why": "NEVER SHIP as an entry. Stood outside 93 Albert Street, planted in the 1960s/70s by businessman Les Harvey. Auckland's City Rail Link project confirms on its own tree programme page that the original tree \"had to be removed as its roots were severely intertwined with the utilities (gas, water mains, electrical cables) beneath the footpath\": only a CUTTING of the Harvey Tree is being replanted near Te Waihorotiu Station on Albert Street as part of the CRL urban planting programme. The Wikidata/Commons entry (Q140069066) that seeded this candidate has photographs of the original tree but nothing dating it as still standing; the CRL page is the more recent, authoritative, dated source and it is unambiguous. Source: https://www.cityraillink.co.nz/trees (fetched 2026-09-01)."
+    }
+  ]
+}
