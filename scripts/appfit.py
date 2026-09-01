@@ -473,10 +473,26 @@ def check(screen):
             # starting at 0.5 and another at 1.5 is the difference between an F
             # and a J rather than a mistake anyone made.
             if 2.0 <= gap <= DRIFT_MAX:
-                findings.append(("DRIFT", group[0],
+                # THE MEASUREMENTS, not only the verdict. A DRIFT that says
+                # "x=25.5 against x=22" tells you something is off and nothing
+                # about whether it is a layout fault or the exemption missing
+                # by a hair, and the difference decides whether you change the
+                # screen or the check. Two runs on 2026-09-01 changed the
+                # sign-in sheet on that finding, the second one breaking the
+                # screen to satisfy it, and neither could see that the element
+                # centres exactly on the screen's middle on iOS 18.6 while
+                # measuring three points off it on 18.5 (the OS CI's floor job
+                # runs, which no desk here has installed).
+                #
+                # centre and half-width are what centred() reads, so printing
+                # them says in one line why the exemption did or did not apply.
+                el = group[0]
+                findings.append(("DRIFT", el,
                                  f"starts at x={x:g} while {len(lefts[dominant])} "
                                  f"other things on this screen start at x={dominant:g}"
-                                 + (f", and {len(group) - 1} more like it" if len(group) > 1 else "")))
+                                 + (f", and {len(group) - 1} more like it" if len(group) > 1 else "")
+                                 + f" [w={el.w:g}, centre={el.x + el.w / 2:g} "
+                                   f"vs screen {W / 2:g}, w/W={el.w / W:.3f}]"))
     return findings
 
 
