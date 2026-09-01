@@ -1,114 +1,114 @@
 {
-  "city": "Kagoshima",
-  "country": "Japan",
-  "city_slug": "kagoshima",
-  "note": "Candidates from the 2026-08-31 pass that opened Kagoshima. Source unless stated: Kagoshima City's preserved-tree register (38 designated trees, updated 2025-11-25) at https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html . Never rendered: these are leads, not entries. Both landmark pines found on OpenStreetMap were published on 2026-08-31 (kag_011, kag_012) and are no longer listed here.",
-  "leads": [
-    {
-      "name": "Ogatama and ginkgo of Nanshu Shrine (the ginkgo)",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "lat": 31.60645,
-      "lng": 130.558877,
-      "status": "lead",
-      "why": "Preserved tree 16: 2.97 m girth, 24 m tall, about 130 years, same grounds as kag_005. Left off to avoid two entries at one stop; add if the city page deepens. [RESOLVED 2026-09-01, delivered as kag_013]"
-    },
-    {
-      "name": "Camphor of Hie Shrine, Tokiwa",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Preserved tree 19: 4.70 m, 18.5 m, about 350 years, Tokiwa 1-17-30. One of the oldest figures on the register after Yuno and Kagoshima Shrine. Needs a coordinate and a second source."
-    },
-    {
-      "name": "Camphor of Tagami Hachiman Shrine",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Preserved tree 28: 3.75 m, 23.5 m, about 300 years, Tagami 6-14-30."
-    },
-    {
-      "name": "Yamamomo at the site of Saigo's country house",
-      "species": "Chinese Bayberry (Morella rubra)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Preserved tree 23: 4.05 m, 16 m, about 250 years, Nishibeppu-cho 2789, on the site of Saigo Takamori's country residence. Good story, needs a coordinate and an access check."
-    },
-    {
-      "name": "The plum of the Komatsu Tatewaki residence",
-      "species": "Japanese Apricot (Prunus mume)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Preserved tree 37: 0.70 m, 4.8 m, about 300 years, Harara 4-16-16. The oldest plum on the register and by far the smallest tree on it. Worth checking whether the site is publicly enterable."
-    },
-    {
-      "name": "Southern magnolia of the Tamazato villa garden",
-      "species": "Southern Magnolia (Magnolia grandiflora)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Preserved tree 26: 2.37 m, 16.5 m, about 180 years, Tamazato-cho 27, inside the Tamazato villa garden. A magnolia of that age in Japan would be an early import; worth a check. Access and opening hours unverified."
-    },
-    {
-      "name": "Akou of Higashi-Sakurajima 137",
-      "species": "Sea Fig (Ficus superba)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Preserved tree 34: 5.75 m, 16.5 m, about 150 years. A second Sakurajima akou, near kag_009. Would make the Sakurajima trip a two-tree walk once a coordinate exists."
-    },
-    {
-      "name": "Camphor and akou of Omoto Shrine, Sakurajima",
-      "species": "Camphor Tree (Cinnamomum camphora) and Sea Fig (Ficus superba)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Preserved trees 43 and 44: 4.80 m / 19.5 m and 4.70 m / 11.0 m, both about 130 years, Sakurajima Futamata-cho 272-1. Two trees at one shrine on the island."
-    },
-    {
-      "name": "Kaya and camphor of Kamo Hachiman Shrine",
-      "species": "Japanese Nutmeg-yew (Torreya nucifera) and Camphor Tree (Cinnamomum camphora)",
-      "lat": 31.765757,
-      "lng": 130.569538,
-      "status": "lead",
-      "why": "5.0 m and 7.4 m girth, in the same grounds as kag_010 (Hitozato Kyoboku, Kagoshima prefecture list). No age published for either. Would turn the Aira day trip into a three-tree stop."
-    },
-    {
-      "name": "Camphor of Ishiki Suwa Shrine",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "lat": 31.6278,
-      "lng": 130.5273,
-      "status": "lead",
-      "why": "5.1 m girth by the Environment Ministry's 2000 survey, 26 m, about 450 years by the signboard, at 31 37 40.1 N / 130 31 38.1 E. Was preserved tree 14, and 14 is on the city's list of DELISTED numbers, which usually means the tree is gone or was removed from protection. Needs a check before anyone writes it."
-    },
-    {
-      "name": "Mukunoki of Tsukada Shrine",
-      "species": "Muku Tree (Aphananthe aspera)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "Preserved tree 4: 4.95 m, 23.5 m, about 180 years, Okanohara-cho. Note the register and the Hitozato Kyoboku database give different street numbers (1012 and 1007) for the same shrine."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Camphors of Fukuhira, Uzuku, Kawakami, Suzuyama, Matsumoto and Kiire primary schools",
-      "why": "Preserved trees 10, 11, 17, 21, 22, 36, 41 and 42 all stand inside school grounds. CLAUDE.md hard rule 10: a tree on school ground ships only with real evidence the grounds are genuinely open to the public, and there is none for any of these."
-    },
-    {
-      "name": "Kiire Kandelia obovata stand",
-      "why": "A Special Natural Monument and a plant community rather than an identifiable tree, roughly 30 km south. Fails the collectible-point test: there is no single trunk to stand in front of."
-    },
-    {
-      "name": "Senbon Icho, Tarumizu",
-      "why": "A planted grove of around a thousand ginkgos across the bay. Spectacular in autumn and not a collectible point. The Commons photographs attached to this name in data/leads/_famous-japan.json are of Katsushika Hachimangu in Tokyo and are nothing to do with it."
-    },
-    {
-      "name": "Preserved trees 9, 12, 13, 14, 20, 29, 39 and 46",
-      "why": "The city's own register lists these designation numbers as revoked. Do not write any of them without first establishing that the tree still stands."
-    }
-  ]
+ "city": "Kagoshima",
+ "country": "Japan",
+ "city_slug": "kagoshima",
+ "note": "Candidates from the 2026-08-31 pass that opened Kagoshima. Source unless stated: Kagoshima City's preserved-tree register (38 designated trees, updated 2025-11-25) at https://www.city.kagoshima.lg.jp/kankyo/kankyo/hozen/machizukuri/kankyohozen/shizen/hozonju/hozonju-02.html . Never rendered: these are leads, not entries. Both landmark pines found on OpenStreetMap were published on 2026-08-31 (kag_011, kag_012) and are no longer listed here.",
+ "leads": [
+  {
+   "name": "Ogatama and ginkgo of Nanshu Shrine (the ginkgo)",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "lat": 31.60645,
+   "lng": 130.558877,
+   "status": "lead",
+   "why": "Preserved tree 16: 2.97 m girth, 24 m tall, about 130 years, same grounds as kag_005. Left off to avoid two entries at one stop; add if the city page deepens. [RESOLVED 2026-09-01, delivered as kag_013]"
+  },
+  {
+   "name": "Camphor of Hie Shrine, Tokiwa",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Preserved tree 19: 4.70 m, 18.5 m, about 350 years, Tokiwa 1-17-30. One of the oldest figures on the register after Yuno and Kagoshima Shrine. Needs a coordinate and a second source."
+  },
+  {
+   "name": "Camphor of Tagami Hachiman Shrine",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Preserved tree 28: 3.75 m, 23.5 m, about 300 years, Tagami 6-14-30."
+  },
+  {
+   "name": "Yamamomo at the site of Saigo's country house",
+   "species": "Chinese Bayberry (Morella rubra)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Preserved tree 23: 4.05 m, 16 m, about 250 years, Nishibeppu-cho 2789, on the site of Saigo Takamori's country residence. Good story, needs a coordinate and an access check."
+  },
+  {
+   "name": "The plum of the Komatsu Tatewaki residence",
+   "species": "Japanese Apricot (Prunus mume)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Preserved tree 37: 0.70 m, 4.8 m, about 300 years, Harara 4-16-16. The oldest plum on the register and by far the smallest tree on it. Worth checking whether the site is publicly enterable."
+  },
+  {
+   "name": "Southern magnolia of the Tamazato villa garden",
+   "species": "Southern Magnolia (Magnolia grandiflora)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Preserved tree 26: 2.37 m, 16.5 m, about 180 years, Tamazato-cho 27, inside the Tamazato villa garden. A magnolia of that age in Japan would be an early import; worth a check. Access and opening hours unverified."
+  },
+  {
+   "name": "Akou of Higashi-Sakurajima 137",
+   "species": "Sea Fig (Ficus superba)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Preserved tree 34: 5.75 m, 16.5 m, about 150 years. A second Sakurajima akou, near kag_009. Would make the Sakurajima trip a two-tree walk once a coordinate exists."
+  },
+  {
+   "name": "Camphor and akou of Omoto Shrine, Sakurajima",
+   "species": "Camphor Tree (Cinnamomum camphora) and Sea Fig (Ficus superba)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Preserved trees 43 and 44: 4.80 m / 19.5 m and 4.70 m / 11.0 m, both about 130 years, Sakurajima Futamata-cho 272-1. Two trees at one shrine on the island."
+  },
+  {
+   "name": "Kaya and camphor of Kamo Hachiman Shrine",
+   "species": "Japanese Nutmeg-yew (Torreya nucifera) and Camphor Tree (Cinnamomum camphora)",
+   "lat": 31.765757,
+   "lng": 130.569538,
+   "status": "lead",
+   "why": "5.0 m and 7.4 m girth, in the same grounds as kag_010 (Hitozato Kyoboku, Kagoshima prefecture list). No age published for either. Would turn the Aira day trip into a three-tree stop. [SKIPPED 2026-09-01 by the write pass: checked against the prefecture's own page for the Great Camphor (kag_010) and a web search for Kamo Hachiman Shrine's trees; neither mentions a kaya or a second camphor there. no independent source found for this pairing this pass, so it is not shippable as things stand rather than merely unconfirmed.]"
+  },
+  {
+   "name": "Camphor of Ishiki Suwa Shrine",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "lat": 31.6278,
+   "lng": 130.5273,
+   "status": "lead",
+   "why": "5.1 m girth by the Environment Ministry's 2000 survey, 26 m, about 450 years by the signboard, at 31 37 40.1 N / 130 31 38.1 E. Was preserved tree 14, and 14 is on the city's list of DELISTED numbers, which usually means the tree is gone or was removed from protection. Needs a check before anyone writes it."
+  },
+  {
+   "name": "Mukunoki of Tsukada Shrine",
+   "species": "Muku Tree (Aphananthe aspera)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Preserved tree 4: 4.95 m, 23.5 m, about 180 years, Okanohara-cho. Note the register and the Hitozato Kyoboku database give different street numbers (1012 and 1007) for the same shrine."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Camphors of Fukuhira, Uzuku, Kawakami, Suzuyama, Matsumoto and Kiire primary schools",
+   "why": "Preserved trees 10, 11, 17, 21, 22, 36, 41 and 42 all stand inside school grounds. CLAUDE.md hard rule 10: a tree on school ground ships only with real evidence the grounds are genuinely open to the public, and there is none for any of these."
+  },
+  {
+   "name": "Kiire Kandelia obovata stand",
+   "why": "A Special Natural Monument and a plant community rather than an identifiable tree, roughly 30 km south. Fails the collectible-point test: there is no single trunk to stand in front of."
+  },
+  {
+   "name": "Senbon Icho, Tarumizu",
+   "why": "A planted grove of around a thousand ginkgos across the bay. Spectacular in autumn and not a collectible point. The Commons photographs attached to this name in data/leads/_famous-japan.json are of Katsushika Hachimangu in Tokyo and are nothing to do with it."
+  },
+  {
+   "name": "Preserved trees 9, 12, 13, 14, 20, 29, 39 and 46",
+   "why": "The city's own register lists these designation numbers as revoked. Do not write any of them without first establishing that the tree still stands."
+  }
+ ]
 }

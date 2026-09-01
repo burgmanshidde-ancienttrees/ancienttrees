@@ -1,17 +1,38 @@
 {
-  "city": "Taormina",
-  "country": "Italy",
-  "city_slug": "taormina",
-  "note": "Scouted 2026-08-31 while opening ranked zero cities and NOT published. Every tree the national MASAF register holds inside the comune of Taormina stands in the grounds of one private hotel, which hard rule 10 blocks. Kept so nobody re-runs this hunt.",
-  "leads": [
-    {"name": "Fico magnolioide di Villa Puglisi, Riposto", "species": "Moreton Bay Fig (Ficus macrophylla)", "lat": 37.728036, "lng": 15.198322, "status": "lead",
-     "why": "MASAF sheet 01/H325/CT/19: 11 metres round and 18 metres tall, in Villa Puglisi at Riposto, 15.7 km from Taormina. Public villa gardens by the name, so this one probably passes; it is the only publishable tree found near Taormina and one tree cannot carry a page unless it is itself the destination. Would work as a Catania-area entry, or with Riposto as its own place."}
-  ],
-  "blocked": [
-    {"name": "Albero del drago, Taormina", "why": "MASAF 01/L042/ME/19, Dracaena draco, 2 m round and 8 m tall, at 37.850536 / 15.281122. The register's own locality field says Hotel Excelsior Palace. Private hotel grounds: hard rule 10, a reception desk to talk past is a no."},
-    {"name": "Carrubo, Taormina", "why": "MASAF 03/L042/ME/19, Ceratonia siliqua, 8 metres round, a remarkable carob by any standard. Same hotel grounds. Blocked on access, not on quality."},
-    {"name": "Fico magnolioide group, Taormina", "why": "MASAF 02/L042/ME/19, a homogeneous group of Ficus macrophylla at the same hotel. Blocked on access, and a group would also need to pass the collectible-point test."},
-    {"name": "Cipressi comuni, Taormina, two trees", "why": "MASAF 04 and 05/L042/ME/19, Cupressus sempervirens, both 2 m round and 30 m tall. Same hotel grounds."},
-    {"name": "Sant'Alfio and Milo trees", "why": "Not blocked, already ours: the Castagno dei Cento Cavalli and its neighbours were published on 2026-08-31 under Sant'Alfio. Do not duplicate them onto a Taormina page."}
-  ]
+ "city": "Taormina",
+ "country": "Italy",
+ "city_slug": "taormina",
+ "note": "Scouted 2026-08-31 while opening ranked zero cities and NOT published. Every tree the national MASAF register holds inside the comune of Taormina stands in the grounds of one private hotel, which hard rule 10 blocks. Kept so nobody re-runs this hunt.",
+ "leads": [
+  {
+   "name": "Fico magnolioide di Villa Puglisi, Riposto",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "lat": 37.728036,
+   "lng": 15.198322,
+   "status": "lead",
+   "why": "MASAF sheet 01/H325/CT/19: 11 metres round and 18 metres tall, in Villa Puglisi at Riposto, 15.7 km from Taormina. Public villa gardens by the name, so this one probably passes; it is the only publishable tree found near Taormina and one tree cannot carry a page unless it is itself the destination. Would work as a Catania-area entry, or with Riposto as its own place. [SKIPPED 2026-09-01 by the write pass: single register source (MASAF), and it has no home yet: 15.7km from Taormina with no place of its own created, so it needs a place decision (Catania-area entry, or a new Riposto page) before it could ship, not just a story. not shippable this pass.]"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Albero del drago, Taormina",
+   "why": "MASAF 01/L042/ME/19, Dracaena draco, 2 m round and 8 m tall, at 37.850536 / 15.281122. The register's own locality field says Hotel Excelsior Palace. Private hotel grounds: hard rule 10, a reception desk to talk past is a no."
+  },
+  {
+   "name": "Carrubo, Taormina",
+   "why": "MASAF 03/L042/ME/19, Ceratonia siliqua, 8 metres round, a remarkable carob by any standard. Same hotel grounds. Blocked on access, not on quality."
+  },
+  {
+   "name": "Fico magnolioide group, Taormina",
+   "why": "MASAF 02/L042/ME/19, a homogeneous group of Ficus macrophylla at the same hotel. Blocked on access, and a group would also need to pass the collectible-point test."
+  },
+  {
+   "name": "Cipressi comuni, Taormina, two trees",
+   "why": "MASAF 04 and 05/L042/ME/19, Cupressus sempervirens, both 2 m round and 30 m tall. Same hotel grounds."
+  },
+  {
+   "name": "Sant'Alfio and Milo trees",
+   "why": "Not blocked, already ours: the Castagno dei Cento Cavalli and its neighbours were published on 2026-08-31 under Sant'Alfio. Do not duplicate them onto a Taormina page."
+  }
+ ]
 }
