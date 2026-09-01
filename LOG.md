@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-01 - Night run 2026-09-01 14:23 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 0.4 minutes of its 120 minute window (wall clock: cancelled before it could report its own duration), ended clean (cut off at the cap, no result record). 1 commit(s), none of them a published tree.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-01 (session) - Rung 2: the sign-in DRIFT fix from 02:41 did not actually work; fixed it for real
 
 The session-start brief flagged the iOS app as broken: the floor job (iOS 18, scheduled/dispatch only, never on a push) had failed twice running on its own schedule (2026-08-31 21:43 and 2026-09-01 09:51), even though a session had already pushed a fix at 02:41 that morning. The 09:51 run's log showed the identical finding as before that fix, character for character: `signin` and `signin-email` both `FAIL`, `StaticText 'We store your email address and what you ...' starts at x=25.5 while 2 other things on this screen start at x=22`. The fix had done nothing.
