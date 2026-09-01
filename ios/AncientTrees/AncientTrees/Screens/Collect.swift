@@ -667,8 +667,15 @@ struct CollectView: View {
                         .font(.brand(19, .bold, relativeTo: .title3))
                         .foregroundStyle(Brand.ink)
                         .lineLimit(1).truncationMode(.middle)
-                        // A NAME IS 23 POINTS TALL and Apple's floor is 44.
-                        .frame(minHeight: 44, alignment: .leading)
+                        // A NAME IS 23 POINTS TALL and Apple's floor is 44,
+                        // and it is as WIDE as the name too, which is the half
+                        // this line missed until 2026-09-04. Signed out the
+                        // label reads "Sign in" and measures 86 points, so it
+                        // passed; signed in it is whatever the account is
+                        // called, and appfit caught the tap target at 33.7 by
+                        // 44 on iOS 18 for a two-letter name. A short name is
+                        // not a smaller person to aim at.
+                        .frame(minWidth: 44, minHeight: 44, alignment: .leading)
                         .tapUnlessDragged {
                             if editable { editingProfile = true } else { signingIn = true }
                         }
