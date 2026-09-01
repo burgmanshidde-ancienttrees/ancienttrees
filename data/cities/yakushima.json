@@ -1,0 +1,65 @@
+{
+ "city": "Yakushima",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Published ages for Jomon Sugi run from 1,300 years to 7,200, and not one of them is a measurement. The tree is hollow where its oldest wood should be, so no core has ever reached the centre and every figure ever printed is an extrapolation. What can be measured is the body: 16.4 metres around, the largest Japanese cedar known, standing in the World Heritage core zone of an island off southern Kyushu. Reaching it is a nine to ten hour mountain day, and you view it from a deck ten metres off.",
+ "meta_description": "Jomon Sugi on Yakushima is the largest Japanese cedar known, 16.4 metres round, and its age is genuinely disputed. What it takes to reach it.",
+ "question_meta": "Jomon Sugi is Yakushima's oldest tree, officially over 2,600 years, though published estimates run to 7,200. What it takes to stand in front of it.",
+ "question_answer": "Yakushima's oldest tree is Jomon Sugi, a Japanese cedar the Ministry of the Environment puts at over 2,600 years old. Nobody can date it properly: the trunk is hollow at the centre, so every published age is an extrapolation from the outer rings inward, and the printed figures run from 1,300 to 7,200 years.",
+ "question_context": "Yakusugi, the cedars of this island, rot from the inside out as they age, which is exactly why the oldest of them cannot be dated. A core sample has never reached the pith of Jomon Sugi, so its age is calculated by extending the growth rate of the outer wood inward, and small differences in that rate produce wildly different answers. The 7,200-year figure came out of early coring attempts and is largely discarded now; the Ministry of the Environment's official line is over 2,600 years. What is not in doubt is the size. It measures 16.4 metres round at chest height and 25.3 metres tall, which makes it the largest yakusugi known, and it forms part of a Special Natural Monument inside the island's World Heritage core zone. It was only found in 1966, by a postal worker, and named for the Jomon period on the strength of an age nobody could confirm. Visitors reach it on a nine to ten hour round walk from the Arakawa trailhead and view it from a wooden deck about ten metres from the trunk, because feet on its root plate were doing real damage.",
+ "faq": [
+  {
+   "q": "How old is Jomon Sugi?",
+   "a": "Officially over 2,600 years, per the Ministry of the Environment. Published estimates run from 1,300 to 7,200 years, and none of them is a measurement: the trunk is hollow at its centre so no core has ever reached the oldest wood."
+  },
+  {
+   "q": "How hard is it to reach Jomon Sugi?",
+   "a": "It is a full mountain day, not a walk. The round trip from the Arakawa trailhead runs nine to ten hours, most of it along an old logging tramway. From 1 March to 30 November the access road is closed to private cars and you must book a seat on the pre-dawn shuttle in advance."
+  },
+  {
+   "q": "Can you touch the tree?",
+   "a": "No. Visitors view it from a wooden deck roughly ten metres from the trunk, seeing it from three sides. The base and roots are fenced off because trampling of the root plate was damaging the tree."
+  },
+  {
+   "q": "Does it cost anything?",
+   "a": "There is no entry ticket for the forest, but a voluntary mountain-area conservation fee is strongly requested on this route: 1,000 yen for a day visit and 2,000 yen if you stay overnight in the mountains, for middle-school age and up."
+  },
+  {
+   "q": "Why is only one tree listed for Yakushima?",
+   "a": "Because it is the one people travel for. The island has many famous yakusugi and we would rather add each one properly than list names we have not checked. If you know one that belongs here, tell us."
+  }
+ ],
+ "trees": [
+  {
+   "id": "yak_001",
+   "name": "Jomon Sugi",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "age_estimate": "estimated 2,600+ years (official Ministry of Environment figure; disputed, see notes)",
+   "age_min": 2000,
+   "age_max": 3600,
+   "girth_cm": 1640,
+   "location": {
+    "address": "Viewing deck, Yakushima Wilderness area (Yaku-shima National Park), Arakawa trail, Yakushima-cho, Kumage-gun, Kagoshima",
+    "latitude": 30.360863,
+    "longitude": 130.529192,
+    "neighbourhood": "Yakushima wilderness / Arakawa trail"
+   },
+   "verified_sources": [
+    "https://www.env.go.jp/nature/isan/worldheritage/yakushima/area/a07.html",
+    "https://www.rinya.maff.go.jp/kyusyu/yakusima_hozen_c/tozansyanominasamahe.html",
+    "https://ja.wikipedia.org/wiki/%E7%B8%84%E6%96%87%E6%9D%89"
+   ],
+   "access": "Free to view (no entry ticket to the forest itself), but a voluntary mountain-area conservation cooperation fee is strongly requested on this route: 1,000 yen for a day visit, 2,000 yen if overnighting in the mountains, for middle-school age and up. The tree itself is fenced off for protection: visitors view it from a wooden deck roughly 10m from the trunk, mainly from three sides, and may not approach the base or roots (root-plate trampling damage is the reason). This is a serious mountain hike, not a park walk: round trip from the Arakawa trailhead is roughly 9-10 hours, largely along an old logging-tramway bed (torokko-michi, about 8km) followed by a mountain trail. From 1 March to 30 November, the access road to the Arakawa trailhead is closed to private cars; visitors must buy a seat in advance on the Arakawa Tozan shuttle bus, which runs from the Yakusugi Museum bus stop. From 1 December to end of February, private cars may drive to the trailhead directly. Sturdy hiking gear, an early start (buses run pre-dawn) and a full day are required; this is explicitly the kind of trip that must be described honestly as a serious hike, never as a stroll.",
+   "transport": "No public transport reaches the trailhead directly; the Arakawa Tozan shuttle bus (pre-booked ticket, purchased in advance at Miyanoura or Anbo tourist information counters) runs between the Yakusugi Museum and the Arakawa trailhead during the March-November restricted season. From the trailhead it is roughly 9-10 hours round trip on foot to the viewing deck.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Published ages for this cedar run from about 1,300 years to 7,200, and not one of them is a measurement. Yakusugi rot from the inside out, so this trunk is hollow where its oldest wood should be, and no core sample has ever reached the pith. Every figure ever printed about its age is an extrapolation from the outer rings inward. The Ministry of the Environment's official line is over 2,600 years. The 7,200 came out of early coring attempts and is largely discarded now. The honest answer is that nobody knows, and that is the most interesting thing about it.\n\nWhat can be measured is the body: 16.4 metres around at chest height, 25.3 metres tall, the largest yakusugi known. It was only found in 1966, by a postal worker, and named for the Jomon period on the strength of an age nobody could confirm. It sits in the World Heritage core zone on Yakushima and forms part of a Special Natural Monument.\n\nTwo things to know before you go. You cannot get near it. Visitors stand on a wooden deck about ten metres off and see it from three sides, because feet on the root plate were doing real damage.\n\nAnd this is a full mountain day, not a walk. The round trip from the Arakawa trailhead runs nine to ten hours, most of it along an old logging tramway. March to November the road is shut to cars and the pre-dawn shuttle must be booked ahead.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}

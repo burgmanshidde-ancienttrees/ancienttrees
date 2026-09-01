@@ -1,466 +1,542 @@
 {
-  "city": "Fukuoka",
-  "country": "Japan",
-  "status": "needs_curation",
-  "intro": "Fukuoka's oldest trees stand watch over shrines the city grew up around, not the other way around. A cedar Empress Jingu is said to have planted with her own hand still guards Kashii Shrine's inner grounds. A stubbornly hollow ginkgo, already declared a thousand years old on a stone plaque installed in 1913, anchors Hakata's biggest festival. A giant camphor stands in the exact middle of Tenjin's shopping crowds, and another keeps a quieter neighbourhood's own calendar entirely. None of them are Fukuoka's famous sights. All of them were already old when the city's postwar skyline was still rice paddies.",
-  "meta_description": "Fukuoka's oldest trees guard its shrines: a legendary cedar, a hollow thousand-year ginkgo, and a camphor rooted in the middle of Tenjin.",
-  "question_answer": "The oldest tree in Fukuoka is, by tradition, the Ayasugi, a Japanese cedar at Kashii Shrine said to be around 1,800 years old and planted, by legend, by Empress Jingu herself. It stands 21.5 metres tall beside the shrine's main hall in Higashi-ku.",
-  "question_meta": "Kashii Shrine's Ayasugi cedar, said to be 1,800 years old, is Fukuoka's oldest tree. Its legend, exact location, and 12 more remarkable trees nearby.",
-  "question_context": "Fukuoka's claim to its oldest tree rests on tradition rather than measurement. The Ayasugi's roughly 1,800-year figure comes from Kashii Shrine's own founding legend, that Empress Jingu planted a cedar branch from her armor here on returning from a third-century campaign, a story with no ring count or scientific dating behind it. A more conservative rival stands across town: the ginkgo at Kushida Shrine, which a 1913 monument already called over a thousand years old, though a later trunk measurement suggested a real age closer to 600. Neither figure is settled science, which is honest for a city where almost every old tree grows on shrine ground with a founding myth attached rather than a documented planting record. What is not in dispute is which tree carries more ceremonial weight: the Ayasugi's cuttings have traditionally been sent to the Imperial court, and its shrine is one of the few in Japan that still receives a personal envoy from the Emperor. Getting there: JR Kashii-jingu-mae Station, about a five-minute walk to the shrine's inner grounds.",
-  "oldest_tree_id": "fuk_001",
-  "faq": [
-    {
-      "q": "What is the oldest tree in Fukuoka?",
-      "a": "By shrine tradition, the Ayasugi cedar at Kashii Shrine, roughly 1,800 years old. A more conservatively dated rival, the ginkgo at Kushida Shrine, carries a 1913 monument claiming over 1,000 years, though a later trunk measurement suggests closer to 600."
-    },
-    {
-      "q": "Why are so many of Fukuoka's oldest trees at shrines?",
-      "a": "Shrine grounds are some of the only land in a dense, frequently rebuilt city that has never been cleared for redevelopment, and camphors, cedars and ginkgoes were traditionally planted as a shrine's sacred tree, exactly the undisturbed conditions an old tree needs to survive centuries."
-    },
-    {
-      "q": "Are Fukuoka's ancient trees free to visit?",
-      "a": "Yes. All are on shrine grounds that are free and open daily, from Kego Shrine's camphor in the middle of Tenjin's shopping district to the quieter, residential grounds of Tajima Hachiman Shrine."
-    },
-    {
-      "q": "Is the Flying Plum at Dazaifu Tenmangu really in Fukuoka?",
-      "a": "No, honestly: Dazaifu is a separate city, about 30 minutes from central Fukuoka on the direct Nishitetsu express train. It is included as a well-documented day trip, not as a Fukuoka City tree, the same way this project treats other short out-of-town detours."
-    }
-  ],
-  "trees": [
-    {
-      "id": "fuk_001",
-      "name": "The Ayasugi of Kashii Shrine",
-      "species": "Japanese Cedar (Cryptomeria japonica)",
-      "age_estimate": "traditionally about 1,800 years",
-      "age_min": 1700,
-      "age_max": 1900,
-      "location": {
-        "address": "Kashii Shrine, 4-16-1 Kashii, Higashi-ku, Fukuoka 813-0011",
-        "latitude": 33.6534861,
-        "longitude": 130.4526583,
-        "neighbourhood": "Kashii, Higashi-ku"
-      },
-      "story": "Legend says this cedar started as a twig. Empress Jingu, returning from a campaign on the Korean peninsula in the third century, is said to have buried a sword, a spear and a staff on this spot, then pushed a cedar branch from her own armor sleeve into the ground beside them with a vow that it should guard Japan forever. The branch took. Its leaves grow in an alternating, woven pattern that gave the tree its name, Ayasugi, patterned cedar, and for centuries cuttings from it have been sent to the Imperial court as a token from one of Japan's most ceremonially important shrines. Kashii Shrine is a chokusaisha, one of the few shrines that still receives a personal envoy from the Emperor, and its unusual kashii-zukuri roofline is a National Important Cultural Property in its own right. The tree made its way into classical poetry too: a verse in the Shin Kokin Wakashu, compiled around 1205, already treats the Ayasugi as an old and storied thing. Today it stands 21.5 metres tall with a trunk 4.9 metres around, a dense green pyramid beside the shrine's main hall, still doing, by tradition, the exact job it was planted for eighteen centuries ago.",
-      "verified_sources": [
-        "https://museum.city.fukuoka.jp/archives/leaflet/290/index.html",
-        "https://kashiigu.com/keidai-annai/"
-      ],
-      "access": "Free, shrine grounds open daily",
-      "transport": "JR Kashii-jingu-mae Station, about 5 to 9 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Sacred_tree_%22Ayasugi%22_in_Kashii_Shrine.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "そらみみ, via Wikimedia Commons",
-        "status": "approved",
-        "width": 4007,
-        "height": 3005
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Age is Kashii Shrine's own traditional figure, tied to a founding legend involving Empress Jingu, not a measured or ring-counted date. Height and trunk circumference are directly measured and not in dispute. Coordinates are the shrine's own location, not the tree's exact spot within the grounds."
-    },
-    {
-      "id": "fuk_002",
-      "name": "The Ginkgo of Kushida Shrine",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "600 to over 1,000 years",
-      "age_min": 600,
-      "age_max": 1050,
-      "location": {
-        "address": "Kushida Shrine, 1-41 Kamikawabata-machi, Hakata-ku, Fukuoka 812-0026",
-        "latitude": 33.592972,
-        "longitude": 130.410472,
-        "neighbourhood": "Kawabata, Hakata-ku"
-      },
-      "story": "A 1913 stone monument at the foot of this ginkgo already declared it over a thousand years old, and the monument itself is now old enough to be doubted along with the tree. A later measurement of its trunk put the real figure closer to 600 years, which barely dents the point: this is Hakata's most sung-about tree, its own line in the centuries-old Hakata Iwai Uta, the toast still performed at weddings and shop openings across the district. It stands beside the starting point of the Gion Yamakasa festival, so its crown has watched every decorated float lurch past below it every July for generations. Age has not been gentle underneath the show: the lower trunk is hollow and decayed, several major limbs have been cut back hard, and metal rings and props now hold up what canopy remains. None of that stops it turning, every November, into a single dense cone of butter-gold leaves that the whole neighbourhood times its photographs around. A female tree, it drops fruit by the bagful onto the shrine's stone paving each autumn, pollinated by male ginkgoes it cannot see from streets away.",
-      "verified_sources": [
-        "https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/459",
-        "https://jinjafan.jp/4000646/spots/1786/"
-      ],
-      "access": "Free, shrine grounds open daily",
-      "transport": "Nakasu-Kawabata Station (subway), about 5 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Kushida_no_Ginan_the_W_side_1-41_Kami-kawabatamachi_Hakata-ku_Fukuoka_20231128.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Hirho, via Wikimedia Commons",
-        "status": "approved",
-        "width": 1728,
-        "height": 2304
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "late November, when the whole crown turns gold within about a week",
-        "kind": "autumn colour"
-      },
-      "notes": "A 1913 preservation monument records \"over 1,000 years\"; a later trunk-based estimate suggests closer to 600. Both figures are stated rather than one being picked as correct. Coordinates are the shrine's own location, not the tree's exact spot within the grounds."
-    },
-    {
-      "id": "fuk_003",
-      "name": "The Flying Plum of Dazaifu Tenmangu",
-      "species": "Japanese Apricot (Prunus mume)",
-      "age_estimate": "traditionally over 1,000 years",
-      "age_min": 1000,
-      "age_max": 1125,
-      "location": {
-        "address": "Dazaifu Tenmangu, 4-7-1 Saifu, Dazaifu, Fukuoka 818-0195",
-        "latitude": 33.521528,
-        "longitude": 130.534861,
-        "neighbourhood": "Saifu, Dazaifu (day trip from central Fukuoka)"
-      },
-      "story": "When the courtier Sugawara no Michizane was exiled from Kyoto in 901, legend says three trees in his garden reacted differently: the cherry withered from grief, the pine tried to follow him and only made it as far as modern Kobe before giving up, and the plum flew the whole distance overnight to take root in front of him at Dazaifu. Michizane had written it a farewell poem asking it to keep sending its scent east even with its master gone, and the plum, so the story goes, closed the distance itself instead. Whatever actually happened, this tree has been called Tobiume, the Flying Plum, ever since, and it blooms earliest of the roughly six thousand plum trees planted across these grounds, usually from late January. Its base splits into three separate stems, evidence of centuries dying back and regrowing from the root rather than one continuous trunk, and it originally stood at a different shrine on the site of Michizane's actual residence before being moved here when Dazaifu Tenmangu was built around him. Michizane became the god of scholarship after his death, and this is the tree students touch for luck before an exam season most of them will not personally remember choosing. Dazaifu sits a short train ride from central Fukuoka, roughly thirty minutes on the direct express from Tenjin.",
-      "verified_sources": [
-        "https://ja.wikipedia.org/wiki/飛梅",
-        "https://www.dazaifutenmangu.or.jp/kigan/tobiume",
-        "https://jinjafan.jp/4002576/spots/1164/"
-      ],
-      "access": "Free to enter the shrine grounds; some inner buildings and treasure halls charge admission",
-      "transport": "Nishitetsu Dazaifu Station, 5 min walk to the shrine; about 29 min by direct express train from Nishitetsu Fukuoka (Tenjin) Station, longer with a transfer on some weekday services",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Plum_tree_%22Tobiume%22_in_front_of_Gohonden_of_Dazaifu_Temman_Shrine.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "そらみみ, via Wikimedia Commons",
-        "status": "approved",
-        "width": 4032,
-        "height": 3024
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "best_time": {
-        "months": [
-          1,
-          2
-        ],
-        "label": "late January into February, when it opens first among the shrine's thousands of plum trees",
-        "kind": "flowers"
-      },
-      "notes": "Age is legendary, tied to the 901 exile of Sugawara no Michizane. The tree's three-stemmed base suggests centuries of dying back and regrowing from the root rather than one continuous trunk since a single planting. Dazaifu is a separate city from Fukuoka; included under the project's day-trip rule and labelled honestly as such throughout."
-    },
-    {
-      "id": "fuk_004",
-      "name": "The Camphor of Kego Shrine",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "age_estimate": "over 300 years",
-      "age_min": 300,
-      "age_max": 420,
-      "location": {
-        "address": "Kego Shrine, 2-2-20 Tenjin, Chuo-ku, Fukuoka 810-0001",
-        "latitude": 33.58778,
-        "longitude": 130.399917,
-        "neighbourhood": "Tenjin, Chuo-ku"
-      },
-      "story": "Fukuoka's busiest shopping street runs past a camphor tree older than the district's name. Tenjin was built up around Kego Shrine, not the other way around, and the shrine's own record puts this camphor at over three hundred years, older than the 1608 rebuilding ordered by Kuroda Nagamasa, the daimyo who also built Fukuoka Castle. The shrine traces its founding much further back, to a guardian deity said to have protected Empress Jingu's fleet during a third-century campaign, but the tree standing today is a comparatively recent arrival by that math, planted or self-seeded sometime after the shrine's Edo-period move to this exact spot. What makes it worth a detour is the contrast: department stores, a covered shopping arcade and some of the highest rents in Kyushu surround a small shrine precinct where a single camphor still throws real shade over the forecourt. Kego Park borders the grounds to the north, giving the tree a second, quieter side to be seen from. Independent measurements of its exact girth or height are hard to come by, which is unusual for a tree this central. What is not in doubt is its address: closer to a train platform than any other tree on this list.",
-      "verified_sources": [
-        "https://kegojinja.or.jp/about/"
-      ],
-      "access": "Free, shrine grounds open 6:00-18:00",
-      "transport": "Nishitetsu Fukuoka (Tenjin) Station, adjacent; Tenjin-Minami subway station, about 1 min walk",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Age comes from the shrine's own official website; no second independent source giving a measurement or figure was found. Included on that single, credible source per the project's flagging rule. Coordinates are the shrine's own location, not the tree's exact spot within the grounds."
-    },
-    {
-      "id": "fuk_005",
-      "name": "The Great Camphor of Tajima Hachiman Shrine",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "age_estimate": "several hundred years",
-      "age_min": 300,
-      "age_max": 600,
-      "location": {
-        "address": "Tajima Hachiman Shrine, Tajima, Jonan-ku, Fukuoka 814-0113",
-        "latitude": 33.567414,
-        "longitude": 130.374018,
-        "neighbourhood": "Tajima, Jonan-ku"
-      },
-      "story": "Wrap a tape measure around this camphor and you will need eleven metres of it, roughly the wingspan of a small aircraft. It is the largest of twelve trees on these grounds that Fukuoka City has individually designated as preserved trees, a small grove of camphors and ginkgoes several hundred years old crowded into a quiet residential shrine across the Hii River from the city centre. Unlike Fukuoka's grander, more visited shrines, Tajima Hachiman keeps its own calendar: Tajima Kagura, a masked sacred dance handed down through the neighbourhood for generations, is still performed on these grounds rather than staged for tourists elsewhere. The camphor stands close to the main hall, a single column of dense evergreen crown that has outgrown its own trunk's proportions, the kind of tree whose base takes several adults holding hands to encircle. Camphor wood was prized across East Asia for shipbuilding and for warding off insects, both of which likely helped trees like this one survive centuries that felled less useful species nearby. It carries no legend as old as Fukuoka's imperial-founded shrines, and that is part of its appeal: a genuinely enormous tree, growing where people actually live, with no admission gate and no crowd between you and its trunk.",
-      "verified_sources": [
-        "https://sasatto.jp/article/entry-583.html",
-        "https://tabi-bito.net/camphor-tree-of-tajima-hachiman-shrine-fukuoka-city/"
-      ],
-      "access": "Free, shrine grounds open daily",
-      "transport": "No direct train or subway; Nishitetsu bus route 12 from Tenjin toward Tajima, then a short walk across the Hii River",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "Age is described only as \"several hundred years\" in the two sources found, both consistent but neither giving a precise figure. Coordinates are geocoded from the shrine's street address, not a tree-specific source; the exact house number for the address varies slightly between sources, so this pin should be treated as a close approximation of the shrine block rather than the tree itself."
-    },
-    {
-      "id": "fuk_006",
-      "name": "The Great Camphor of Dazaifu",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "age_estimate": "said to be 1,000 to 1,500 years",
-      "age_min": 300,
-      "age_max": 1500,
-      "location": {
-        "address": "Dazaifu Tenmangu, 4-7-1 Saifu, Dazaifu 818-0117",
-        "latitude": 33.521167,
-        "longitude": 130.534378,
-        "neighbourhood": "Dazaifu, about 35 min from Tenjin"
-      },
-      "story": "The official sign under this camphor hedges, and it has been hedging since 1924. Erected by the education ministry and still standing, it says the age is said to be a thousand years, or perhaps fifteen hundred. That is unusually careful language for a monument, and it is the honest position: one giant-tree survey puts the tree at only three hundred and something, oral tradition stretches to two thousand, and nobody has ever cored it. What is measured is the size. Twenty-eight and a half metres tall and eleven point seven metres around, it is the largest of several camphors protected together as a national natural monument on the eighth of March 1922, the same day as the two giants at Umi a few stations north. The trunk is deeply fluted and hollow at the base, which is normal at this size rather than a sign of decline. Dazaifu Tenmangu is the head shrine of the deity of learning, so in exam season the grounds fill with students, and this tree stands to the west of all of them in front of the Seishinkan.",
-      "verified_sources": [
-        "https://www.city.dazaifu.lg.jp/site/bunkazai/2380.html",
-        "https://ja.wikipedia.org/wiki/%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE"
-      ],
-      "access": "Free, open shrine grounds",
-      "transport": "Nishitetsu from Tenjin via Futsukaichi, about 35 min and 400 yen, then 10 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Grand_camphor_tree_in_Dazaifu_Temman_Shrine.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Soramimi, via Wikimedia Commons",
-        "status": "approved",
-        "width": 2448,
-        "height": 3264
-      },
-      "curation_status": "flagged",
-      "notes": "Age estimates run from 300 to 2,000 depending on source; the range covers the defensible span and the entry quotes the official marker's own hedging rather than picking a number. The 1922 designation covers several camphors; the municipal register records this as the largest.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "fuk_007",
-      "name": "Yubuta no Mori, the Bathing Camphor",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "age_estimate": "1,000 to 2,000 years, sources disagree",
-      "age_min": 1000,
-      "age_max": 2000,
-      "location": {
-        "address": "Umi Hachimangu, 1-1-1 Umi, Umi town, Kasuya district 811-2101",
-        "latitude": 33.5703,
-        "longitude": 130.5088,
-        "neighbourhood": "Umi town, about 45 min from Hakata"
-      },
-      "story": "Its name means the bathing lid, and the legend explains the shape. Empress Jingu is said to have given birth to the future Emperor Ojin at this spot and to have bathed the newborn beneath this camphor, whose branches closed over the bath like a cover. The shrine that grew up around the story is now the principal shrine in Japan for safe childbirth, and expectant mothers travel from across the country to it. The tree is a single organism despite the word forest in its name, roughly fifteen metres around and reaching thirty metres, protected as a national natural monument since the eighth of March 1922. Sources put it at either a thousand years or two thousand, with no way to choose between them, so both stand here. What is not in doubt is its health: photographed in September 2024 it carries a full, dense, unbroken crown, which is more than can be said for several famous camphors nearer the city. Its equally protected companion stands about a hundred metres away and was designated on the same day.",
-      "verified_sources": [
-        "https://www.town.umi.lg.jp/site/miru/kanko121.html",
-        "https://ja.wikipedia.org/wiki/%E5%AE%87%E7%BE%8E%E5%85%AB%E5%B9%A1%E5%AE%AE"
-      ],
-      "access": "Free, open shrine precinct",
-      "transport": "About 45 min from Hakata: JR to Kashii, then the Kashii line to Umi terminus, then 9 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Yufuta-no-mori_ac.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Asturio Cantabrio, via Wikimedia Commons",
-        "status": "approved",
-        "width": 5973,
-        "height": 3971
-      },
-      "curation_status": "flagged",
-      "notes": "Beyond the usual day-trip radius at about 45 minutes, stated plainly rather than rounded down. Age sources conflict by a factor of two and both are reported. Coordinates come from a photograph's camera GPS rather than a mapped tree node, so the pin is the precinct.",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "fuk_008",
-      "name": "Kinukake no Mori, the Robe Camphor",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "age_estimate": "300 to 2,000 years, sources disagree sharply",
-      "age_min": 300,
-      "age_max": 2000,
-      "location": {
-        "address": "Umi Hachimangu, 1-1-1 Umi, Umi town, Kasuya district 811-2101",
-        "latitude": 33.5708,
-        "longitude": 130.5091,
-        "neighbourhood": "Umi town, about 45 min from Hakata"
-      },
-      "story": "Twenty metres around. That is nearly double the largest tree in the city of Fukuoka, and it makes this camphor one of the great trees of Japan by measurement alone, whatever anyone decides about its age. The estimates for that run from three hundred years to two thousand, a disagreement so wide it is really an admission that nobody knows. The name means the hanging of the robe: Empress Jingu, having given birth beside its neighbour a hundred metres away, is said to have hung the birth robe on this tree. A custom still runs on it. Expectant women take one of the smooth stones kept at the shrine home with them, and after a safe birth they bring back two, so the pile grows with every delivery. The tree carries its centuries openly, the upper trunk gone and a large rough cavity opening in the side, and it was still in full leaf when photographed in September 2024. Both it and its neighbour became national natural monuments on the same day in March 1922.",
-      "verified_sources": [
-        "https://www.town.umi.lg.jp/site/miru/kanko121.html",
-        "https://ja.wikipedia.org/wiki/%E5%AE%87%E7%BE%8E%E5%85%AB%E5%B9%A1%E5%AE%AE"
-      ],
-      "access": "Free, open shrine precinct",
-      "transport": "About 45 min from Hakata: JR to Kashii, then the Kashii line to Umi terminus, then 9 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kinukake-no-mori_ac_%281%29.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Asturio Cantabrio, via Wikimedia Commons",
-        "status": "approved",
-        "width": 5973,
-        "height": 3971
-      },
-      "curation_status": "flagged",
-      "notes": "Beyond the usual day-trip radius at about 45 minutes, stated plainly. The age disagreement is severe and both figures are reported; the 20m girth is agreed by two sources. Photo licence recorded but the visual check was blocked by rate limiting, so it stays unapproved.",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "fuk_009",
-      "name": "The Broad-leaf Ehretia of Dazaifu",
-      "species": "Broad-leaf Ehretia (Ehretia macrophylla)",
-      "age_estimate": "about 700 years",
-      "age_min": 500,
-      "age_max": 800,
-      "location": {
-        "address": "Dazaifu Tenmangu, west of the shrine buildings, Saifu, Dazaifu 818-0117",
-        "latitude": 33.52169,
-        "longitude": 130.534167,
-        "neighbourhood": "Dazaifu, about 35 min from Tenjin"
-      },
-      "story": "This is the largest of its species in Japan, and almost nobody visiting the shrine knows it is there. Ehretia macrophylla belongs to the borage family, the same group as forget-me-nots, and it is not a plant anyone expects at monumental size; this one is fifteen metres tall and six and a half metres around, which earned it a national natural monument designation of its own in June 1935, thirteen years after the camphors nearby. Lightning struck it in 1914 and snapped off the upper trunk, and the remaining stem is hollow to a height of about ten metres, so what stands there is a survivor rather than a specimen. It sits west of the main buildings, on the far side from the crowds heading for the exam charms. Look for a broad-leaved tree with a heavy scarred trunk and a crown that stops abruptly where the lightning ended it, then check the sign, because there is no way to tell a record-breaking ehretia from an ordinary broadleaf without one.",
-      "verified_sources": [
-        "https://www.city.dazaifu.lg.jp/site/bunkazai/2380.html",
-        "https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%B7%E3%83%A3%E3%83%8E%E3%82%AD"
-      ],
-      "access": "Free, open shrine grounds",
-      "transport": "Nishitetsu from Tenjin via Futsukaichi, about 35 min, then 10 min walk",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "The 700-year age comes from a single published figure. The largest-in-Japan claim is species-specific and stated by the municipal register, which is why it is used. No open-licence photograph exists; Commons searches under both the Japanese and scientific names returned nothing.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "fuk_010",
-      "name": "The Married Ginkgos of Kushida",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "over 300 years",
-      "age_min": 250,
-      "age_max": 400,
-      "location": {
-        "address": "Kushida Shrine, 1-41 Kamikawabata-machi, Hakata-ku, Fukuoka 812-0026",
-        "latitude": 33.592778,
-        "longitude": 130.410667,
-        "neighbourhood": "Hakata"
-      },
-      "story": "On the fifth of October, seven priests climb in with bamboo poles and shake this tree until the nuts come down. Shrine maidens gather them with chopsticks, because ginkgo flesh smells strongly enough that nobody wants it on their hands, and the nuts are dried and kept until March, when they are given out at the Ginan Festival as charms for a harmonious marriage and for children. That is the whole reason these trees carry their name. They stand opposite the main hall, three large ginkgos of over three hundred years treated as a single married pair, and the one at the front is the female that actually fruits. They are a few steps from the far more famous ginkgo on the other side of the same precinct, the one that is older, taller and sung about in the festival song, which most visitors photograph without noticing these at all. The city lists them among its preserved trees. Come on the fifth of October for the only tree ritual in Fukuoka that involves men with poles in a shrine courtyard.",
-      "verified_sources": [
-        "https://yokanavi.com/spots/26906",
-        "https://ja.wikipedia.org/wiki/%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE_(%E7%A6%8F%E5%B2%A1%E5%B8%82)"
-      ],
-      "access": "Free, open shrine precinct",
-      "transport": "Nanakuma Line to Kushida-jinjamae, 2 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Kushida_Shrine_Meoto-ginan_the_preserved_trees_1-41_Kami-kawabatamachi_Hakata-ku_Fukuoka_20231207.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Hirho, via Wikimedia Commons",
-        "status": "approved",
-        "width": 3000,
-        "height": 4000
-      },
-      "curation_status": "flagged",
-      "notes": "An ensemble of three trees under one name with one obvious place to stand, which is a judgment call rather than a clear pass. The age and the October ritual come from tourism and news sources rather than the municipal register and are worth re-verifying. Photo not viewed at full size; a blank wall reportedly occupies the left third.",
-      "best_time": {
-        "months": [
-          10
-        ],
-        "label": "5 October, when priests shake the nuts down with bamboo poles",
-        "kind": "fruit"
-      },
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "fuk_011",
-      "name": "The Bodhi Tree of Kaidan-in",
-      "species": "Miquel's Linden (Tilia miqueliana)",
-      "age_estimate": "over 200 years",
-      "age_min": 200,
-      "age_max": 260,
-      "location": {
-        "address": "Kaidan-in, 5-7-10 Kanzeonji, Dazaifu 818-0101",
-        "latitude": 33.5148788,
-        "longitude": 130.5208599,
-        "neighbourhood": "Dazaifu, about 35 min from Tenjin"
-      },
-      "story": "The bodhi tree of Japanese temples is not the bodhi tree. The Buddha's own species will not survive a Japanese winter, so temples here plant a lime, Tilia miqueliana, and call it by the same name, which is why this modest tree at Kaidan-in carries a title far larger than its six metres. It is protected all the same, designated a Dazaifu city natural monument in September 2013, and its age has an unusually firm floor: a gazetteer of the province compiled in 1814 records a single bodhi tree standing at Kaidan-in, so this one, or its immediate predecessor on the same ground, was already worth listing two centuries ago. Tradition connects the planting to Ganjin, the blind Chinese monk who crossed to Japan on his sixth attempt and founded the ordination platform this temple is built around. That is tradition only, and the arithmetic says so, because Ganjin died in 763 and the tree is two hundred years old. In June it flowers, pale yellow and heavily scented, which is the one week it stops being a small tree with a big name.",
-      "verified_sources": [
-        "https://www.city.dazaifu.lg.jp/site/bunkazai/2380.html",
-        "https://ja.wikipedia.org/wiki/%E6%88%92%E5%A3%87%E9%99%A2"
-      ],
-      "access": "Free precinct; the ordination hall itself charges a small fee",
-      "transport": "Nishitetsu to Gojo station, then about 10 min walk; roughly 35 min from Tenjin",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Height, girth, age and the 2013 designation all come from the Dazaifu municipal register, and the 1814 gazetteer gives the age a documentary floor, which is unusual. The Ganjin connection is tradition only and the entry says so. Pin is the temple, not the individual tree.",
-      "best_time": {
-        "months": [
-          6
-        ],
-        "label": "June, when the pale yellow flowers open and the whole tree smells of them",
-        "kind": "flowers"
-      },
-      "location_precision": "approximate"
-    },
-    {
-      "id": "fuk_012",
-      "name": "The Great Yamamomo of Kanatake",
-      "species": "Red Bayberry (Myrica rubra)",
-      "age_estimate": "roughly 300 to 400 years",
-      "age_min": 300,
-      "age_max": 400,
-      "girth_cm": 440,
-      "location": {
-        "address": "Kanatake, Nishi Ward, Fukuoka (postal area 819-0035)",
-        "latitude": 33.522772,
-        "longitude": 130.303222,
-        "neighbourhood": "Kanatake, Nishi Ward"
-      },
-      "verified_sources": [
-        "https://www.city.fukuoka.lg.jp/nishiku/c-shinko/charm/nisikunotakara/yamamomo.html",
-        "http://www.hitozato-kyoboku.com/hukuokaken.htm"
-      ],
-      "access": "Privately owned but open to the public (the ward government's own page says so explicitly); visitors are asked to be careful, since foot traffic compacting the soil over the roots is named as a real risk to the tree's vigour, not a formality.",
-      "transport": "No train station is within walking distance (Hashimoto or Jiromaru stations are both roughly 2.7km, about 33-34 minutes on foot). Nishitetsu Bus routes 1 or 2 run to the 'Kanatake' stop from Meinohama Station's south exit, Hashimoto Station, Hakata Station bus terminal or Tenjin; the tree stands in the neighbourhood around that stop.",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "An owl sometimes nests in the hollow of this tree's trunk, which Fukuoka's own ward government mentions on its page about the specimen without treating it as remarkable, just one more fact about a tree old enough to have grown a cavity worth nesting in. Estimated at three to four hundred years old, it is the larger of only two Myrica rubra the prefecture has designated a natural monument, its root spread alone measuring eight metres across.\n\nRed bayberry is more commonly a large shrub than a proper tree, grown across East Asia for a tart, dark red summer fruit that stains fingers and pavement alike; reaching four metres round at chest height and standing fourteen metres tall, this one has outgrown the category by any measure. The ward's own page and an independent survey of Japan's giant trees disagree on the exact girth by thirty centimetres, a gap almost certainly explained by different measurement dates rather than a mistake either way.\n\nThe tree stands on private land whose owner has kept it open to the public, and the same page that welcomes visitors also asks them to tread carefully: foot traffic compacting the soil over its roots is named as a real threat to its health, not a formality. No train station sits within walking distance; a bus from Meinohama, Hashimoto or central Fukuoka runs to the Kanatake stop nearby.",
-      "verify_notes": "Fukuoka City's own Nishi Ward government page (city.fukuoka.lg.jp, under 'Nishi Ward's Treasures' / nature) designates this as a Fukuoka Prefecture-designated Natural Monument: estimated age 300-and-some-tens of years (translated here as a broad 'roughly 300 to 400 years', not sharpened), girth at breast height 4.4m (440cm), root-spread girth 8m, height 14m, larger than the other prefecturally designated Myrica rubra in Nakashima Park, Naka-gawa City. It notes a cavity in the trunk where owls often nest. Second source: hitozato-kyoboku.com, a long-running nationwide Japanese giant-tree survey site (used here for corroboration only, same convention as monumentaltrees.com under hard rule 1), lists the same tree (its entry #5608, '金武のヤマモモ', Fukuoka-shi Nishi-ku Kanatake, prefectural designation) with girth 4.7m, matching the coordinate this project's earlier lead pass had already recorded (33.522772,130.303222) almost exactly. GIRTH CONFLICT, not silently resolved: city page says 4.4m, kyoboku says 4.7m; used the city government's figure (440cm) as girth_cm since its page gives full measurement context (breast height specifically) and flagged for the discrepancy, which is most likely two different measurement dates. Location independently reconfirmed a third way: an OpenStreetMap natural=tree node exists at 33.5227721,130.3032217, named '金武の大ヤマモモ' (Kanatake's Great Yamamomo), essentially the same point to six decimal places, so location_precision is confirmed with unusual confidence for a lone specimen. Reading correction: the place name 金武 in this Nishi Ward context reads 'Kanatake', not 'Kanetake' as the earlier lead entry had it (confirmed via multiple independent Japanese postal/address lookups for postal code 819-0035); the city page's own name is 'Kanatake no Yamamomo'. Whoever updates data/leads/fukuoka.json should correct the spelling there too. Alive-now: no dated recent photo or news found this pass, but the source is a currently-live official ward government page describing the tree in the present tense as a designated natural monument people currently visit (with an active visitor-conduct warning), which is reasonable but not dated-photo-level evidence; noting this honestly rather than treating it as fully confirmed.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "fuk_013",
-      "name": "The Married Camphor and Great Ginkgo of Torikai Hachimangu",
-      "species": "Camphor Tree (Cinnamomum camphora) and Ginkgo (Ginkgo biloba)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "location": {
-        "address": "Torikai Hachimangu, 2-1-17 Imagawa, Chuo Ward, Fukuoka",
-        "latitude": 33.587188,
-        "longitude": 130.366383,
-        "neighbourhood": "Imagawa, Chuo Ward"
-      },
-      "verified_sources": [
-        "https://hachimansama.jp/blog/1910",
-        "http://www.fukuokanomori.xyz/shoukai/torikai/"
-      ],
-      "access": "Free. Both trees stand in the open approach/precinct of Torikai Hachimangu, a public Shinto shrine, immediately flanking the torii; no gate or restriction beyond ordinary shrine visiting hours.",
-      "transport": "Fukuoka City Subway Airport Line: Tojinmachi Station, about 6 minutes on foot, or Nishijin Station, about 7 minutes. Also reachable by Nishitetsu bus to the Jigyo or Imagawa-nishimachi-koen-mae stops, a couple of minutes' walk.",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "Despite the name, the Married Camphor is one tree, not two. Its trunk forks into a pair from a single base low to the ground, which is exactly why visitors to Torikai Hachimangu read it as a couple rather than a single specimen, and why a shrine built around relationships adopted it as a symbol for exactly that. Cords get tied to its shimenawa rope by people hoping their own pairing holds as well as the tree's two trunks have.\n\nTwelve metres away, flanking the shrine's torii from the other side, stands the Great Ginkgo, called locally the Ibuki Ginkgo. The shrine's own account puts its age at five to six hundred years, a figure with no independent source found to confirm it, so treat it as tradition rather than a documented fact, the same caution this page applies to a wartime survival story attached to the tree elsewhere online, which nothing beyond the shrine's own telling supports.\n\nBoth trees stand in the open shrine forecourt, free to visit at any hour a Shinto shrine keeps its grounds open, reachable on foot from either Tojinmachi or Nishijin subway station. Camphor on the left of the torii, ginkgo on the right, both close enough to touch from the same few steps.",
-      "verify_notes": "FOLDED ENTRY, one collectible point: this shrine names three sacred trees on its own site ('三本の御神木'), but only two stand together at the shrine approach and are treated locally as one paired feature (a third, a cycad said to be over 1000 years old by the shrine's own account, stands elsewhere in the precinct near the shrine office and is out of scope for this pass, not researched or verified). The 'Married Camphor' (夫婦楠) is NOT two separate trees despite the plural-sounding English gloss in the earlier lead entry: per an independent visitor blog (fukuokanomori.xyz) it is a single specimen whose trunk forks into two from one root/base, which is exactly why it reads locally as 'a married pair'. It stands about 12 metres from the 'Great Ginkgo of Ibuki' (息吹の大銀杏), both directly flanking the shrine's torii (camphor on the left, ginkgo on the right, viewed from the approach road), both used in the same 'en-musubi' (relationship-binding) cord-tying tradition on the same shimenawa rope. One obvious place to stand: the shrine forecourt, both trees visible and touchable within a few steps of each other. Treated as one entry per the ensemble/collectible-point test. Location: OpenStreetMap carries individually named natural=tree nodes for both, '夫婦の楠' at 33.5872072,130.3663361 and '息吹の大銀杏' at 33.5871694,130.3664296, about 12m apart; used the midpoint (33.587188,130.366383) as the single entry coordinate, which is confirmed rather than approximate since both individual trunks are independently pinned, not guessed at park scale. Age: the shrine's own blog (hachimansama.jp/blog/1910, 2012) gives the ginkgo's age as '樹齢は、500年とも600年ともいわれています' ('said to be 500 or 600 years old'), a vague figure from a real source, but it is SELF-published by the shrine and has no independent corroboration found this pass (not on Japanese Wikipedia, which does not mention either tree at all), so age_estimate is left empty here rather than repeated as fact; flag this for the writer to attribute explicitly as shrine tradition if used. No age or girth found anywhere for the camphor. IMPORTANT CAUTION carried over from this city's own leads file: the shrine's own account also claims the ginkgo survived a direct WWII incendiary-bomb hit and resprouted from a blackened trunk. This is exactly the class of claim already blocked elsewhere in Fukuoka (see data/leads/fukuoka.json, 'The Mukunoki of Kouun Shrine, Nishi Park': 'there is no Fukuoka equivalent of the Hiroshima survivor-tree registry, so no Fukuoka tree may be given an air-raid survival story'). Per that standing city-wide caution, do NOT write this air-raid claim into the published story as verified history; it may be mentioned, if at all, explicitly framed as the shrine's own tradition, not as confirmed fact. Alive-now: fukuokanomori.xyz's visit is dated June 2024 (令和6年6月参拝) with photographs of both trees current at that visit, which is the freshest alive-now evidence found and is reasonably recent; no more recent confirmation sought this pass.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    }
-  ]
+ "city": "Fukuoka",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Fukuoka's oldest trees stand watch over shrines the city grew up around, not the other way around. A cedar Empress Jingu is said to have planted with her own hand still guards Kashii Shrine's inner grounds. A stubbornly hollow ginkgo, already declared a thousand years old on a stone plaque installed in 1913, anchors Hakata's biggest festival. A giant camphor stands in the exact middle of Tenjin's shopping crowds, and another keeps a quieter neighbourhood's own calendar entirely. None of them are Fukuoka's famous sights. All of them were already old when the city's postwar skyline was still rice paddies.",
+ "meta_description": "Fukuoka's oldest trees guard its shrines: a legendary cedar, a hollow thousand-year ginkgo, and a camphor rooted in the middle of Tenjin.",
+ "question_answer": "The oldest tree in Fukuoka is, by tradition, the Ayasugi, a Japanese cedar at Kashii Shrine said to be around 1,800 years old and planted, by legend, by Empress Jingu herself. It stands 21.5 metres tall beside the shrine's main hall in Higashi-ku.",
+ "question_meta": "Kashii Shrine's Ayasugi cedar, said to be 1,800 years old, is Fukuoka's oldest tree. Its legend, exact location, and fourteen more remarkable trees nearby.",
+ "question_context": "Fukuoka's claim to its oldest tree rests on tradition rather than measurement. The Ayasugi's roughly 1,800-year figure comes from Kashii Shrine's own founding legend, that Empress Jingu planted a cedar branch from her armor here on returning from a third-century campaign, a story with no ring count or scientific dating behind it. A more conservative rival stands across town: the ginkgo at Kushida Shrine, which a 1913 monument already called over a thousand years old, though a later trunk measurement suggested a real age closer to 600. Neither figure is settled science, which is honest for a city where almost every old tree grows on shrine ground with a founding myth attached rather than a documented planting record. What is not in dispute is which tree carries more ceremonial weight: the Ayasugi's cuttings have traditionally been sent to the Imperial court, and its shrine is one of the few in Japan that still receives a personal envoy from the Emperor. Getting there: JR Kashii-jingu-mae Station, about a five-minute walk to the shrine's inner grounds.",
+ "oldest_tree_id": "fuk_001",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Fukuoka?",
+   "a": "By shrine tradition, the Ayasugi cedar at Kashii Shrine, roughly 1,800 years old. A more conservatively dated rival, the ginkgo at Kushida Shrine, carries a 1913 monument claiming over 1,000 years, though a later trunk measurement suggests closer to 600."
+  },
+  {
+   "q": "Why are so many of Fukuoka's oldest trees at shrines?",
+   "a": "Shrine grounds are some of the only land in a dense, frequently rebuilt city that has never been cleared for redevelopment, and camphors, cedars and ginkgoes were traditionally planted as a shrine's sacred tree, exactly the undisturbed conditions an old tree needs to survive centuries."
+  },
+  {
+   "q": "Are Fukuoka's ancient trees free to visit?",
+   "a": "Yes. All are on shrine grounds that are free and open daily, from Kego Shrine's camphor in the middle of Tenjin's shopping district to the quieter, residential grounds of Tajima Hachiman Shrine."
+  },
+  {
+   "q": "Is the Flying Plum at Dazaifu Tenmangu really in Fukuoka?",
+   "a": "No, honestly: Dazaifu is a separate city, about 30 minutes from central Fukuoka on the direct Nishitetsu express train. It is included as a well-documented day trip, not as a Fukuoka City tree, the same way this project treats other short out-of-town detours."
+  }
+ ],
+ "trees": [
+  {
+   "id": "fuk_001",
+   "name": "The Ayasugi of Kashii Shrine",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "age_estimate": "traditionally about 1,800 years",
+   "age_min": 1700,
+   "age_max": 1900,
+   "location": {
+    "address": "Kashii Shrine, 4-16-1 Kashii, Higashi-ku, Fukuoka 813-0011",
+    "latitude": 33.6534861,
+    "longitude": 130.4526583,
+    "neighbourhood": "Kashii, Higashi-ku"
+   },
+   "story": "Legend says this cedar started as a twig. Empress Jingu, returning from a campaign on the Korean peninsula in the third century, is said to have buried a sword, a spear and a staff on this spot, then pushed a cedar branch from her own armor sleeve into the ground beside them with a vow that it should guard Japan forever. The branch took. Its leaves grow in an alternating, woven pattern that gave the tree its name, Ayasugi, patterned cedar, and for centuries cuttings from it have been sent to the Imperial court as a token from one of Japan's most ceremonially important shrines. Kashii Shrine is a chokusaisha, one of the few shrines that still receives a personal envoy from the Emperor, and its unusual kashii-zukuri roofline is a National Important Cultural Property in its own right. The tree made its way into classical poetry too: a verse in the Shin Kokin Wakashu, compiled around 1205, already treats the Ayasugi as an old and storied thing. Today it stands 21.5 metres tall with a trunk 4.9 metres around, a dense green pyramid beside the shrine's main hall, still doing, by tradition, the exact job it was planted for eighteen centuries ago.",
+   "verified_sources": [
+    "https://museum.city.fukuoka.jp/archives/leaflet/290/index.html",
+    "https://kashiigu.com/keidai-annai/"
+   ],
+   "access": "Free, shrine grounds open daily",
+   "transport": "JR Kashii-jingu-mae Station, about 5 to 9 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Sacred_tree_%22Ayasugi%22_in_Kashii_Shrine.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "そらみみ, via Wikimedia Commons",
+    "status": "approved",
+    "width": 4007,
+    "height": 3005
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "notes": "Age is Kashii Shrine's own traditional figure, tied to a founding legend involving Empress Jingu, not a measured or ring-counted date. Height and trunk circumference are directly measured and not in dispute. Coordinates are the shrine's own location, not the tree's exact spot within the grounds."
+  },
+  {
+   "id": "fuk_002",
+   "name": "The Ginkgo of Kushida Shrine",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "600 to over 1,000 years",
+   "age_min": 600,
+   "age_max": 1050,
+   "location": {
+    "address": "Kushida Shrine, 1-41 Kamikawabata-machi, Hakata-ku, Fukuoka 812-0026",
+    "latitude": 33.592972,
+    "longitude": 130.410472,
+    "neighbourhood": "Kawabata, Hakata-ku"
+   },
+   "story": "A 1913 stone monument at the foot of this ginkgo already declared it over a thousand years old, and the monument itself is now old enough to be doubted along with the tree. A later measurement of its trunk put the real figure closer to 600 years, which barely dents the point: this is Hakata's most sung-about tree, its own line in the centuries-old Hakata Iwai Uta, the toast still performed at weddings and shop openings across the district. It stands beside the starting point of the Gion Yamakasa festival, so its crown has watched every decorated float lurch past below it every July for generations. Age has not been gentle underneath the show: the lower trunk is hollow and decayed, several major limbs have been cut back hard, and metal rings and props now hold up what canopy remains. None of that stops it turning, every November, into a single dense cone of butter-gold leaves that the whole neighbourhood times its photographs around. A female tree, it drops fruit by the bagful onto the shrine's stone paving each autumn, pollinated by male ginkgoes it cannot see from streets away.",
+   "verified_sources": [
+    "https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/459",
+    "https://jinjafan.jp/4000646/spots/1786/"
+   ],
+   "access": "Free, shrine grounds open daily",
+   "transport": "Nakasu-Kawabata Station (subway), about 5 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Kushida_no_Ginan_the_W_side_1-41_Kami-kawabatamachi_Hakata-ku_Fukuoka_20231128.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Hirho, via Wikimedia Commons",
+    "status": "approved",
+    "width": 1728,
+    "height": 2304
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "late November, when the whole crown turns gold within about a week",
+    "kind": "autumn colour"
+   },
+   "notes": "A 1913 preservation monument records \"over 1,000 years\"; a later trunk-based estimate suggests closer to 600. Both figures are stated rather than one being picked as correct. Coordinates are the shrine's own location, not the tree's exact spot within the grounds."
+  },
+  {
+   "id": "fuk_003",
+   "name": "The Flying Plum of Dazaifu Tenmangu",
+   "species": "Japanese Apricot (Prunus mume)",
+   "age_estimate": "traditionally over 1,000 years",
+   "age_min": 1000,
+   "age_max": 1125,
+   "location": {
+    "address": "Dazaifu Tenmangu, 4-7-1 Saifu, Dazaifu, Fukuoka 818-0195",
+    "latitude": 33.521528,
+    "longitude": 130.534861,
+    "neighbourhood": "Saifu, Dazaifu (day trip from central Fukuoka)"
+   },
+   "story": "When the courtier Sugawara no Michizane was exiled from Kyoto in 901, legend says three trees in his garden reacted differently: the cherry withered from grief, the pine tried to follow him and only made it as far as modern Kobe before giving up, and the plum flew the whole distance overnight to take root in front of him at Dazaifu. Michizane had written it a farewell poem asking it to keep sending its scent east even with its master gone, and the plum, so the story goes, closed the distance itself instead. Whatever actually happened, this tree has been called Tobiume, the Flying Plum, ever since, and it blooms earliest of the roughly six thousand plum trees planted across these grounds, usually from late January. Its base splits into three separate stems, evidence of centuries dying back and regrowing from the root rather than one continuous trunk, and it originally stood at a different shrine on the site of Michizane's actual residence before being moved here when Dazaifu Tenmangu was built around him. Michizane became the god of scholarship after his death, and this is the tree students touch for luck before an exam season most of them will not personally remember choosing. Dazaifu sits a short train ride from central Fukuoka, roughly thirty minutes on the direct express from Tenjin.",
+   "verified_sources": [
+    "https://ja.wikipedia.org/wiki/飛梅",
+    "https://www.dazaifutenmangu.or.jp/kigan/tobiume",
+    "https://jinjafan.jp/4002576/spots/1164/"
+   ],
+   "access": "Free to enter the shrine grounds; some inner buildings and treasure halls charge admission",
+   "transport": "Nishitetsu Dazaifu Station, 5 min walk to the shrine; about 29 min by direct express train from Nishitetsu Fukuoka (Tenjin) Station, longer with a transfer on some weekday services",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Plum_tree_%22Tobiume%22_in_front_of_Gohonden_of_Dazaifu_Temman_Shrine.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "そらみみ, via Wikimedia Commons",
+    "status": "approved",
+    "width": 4032,
+    "height": 3024
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "best_time": {
+    "months": [
+     1,
+     2
+    ],
+    "label": "late January into February, when it opens first among the shrine's thousands of plum trees",
+    "kind": "flowers"
+   },
+   "notes": "Age is legendary, tied to the 901 exile of Sugawara no Michizane. The tree's three-stemmed base suggests centuries of dying back and regrowing from the root rather than one continuous trunk since a single planting. Dazaifu is a separate city from Fukuoka; included under the project's day-trip rule and labelled honestly as such throughout."
+  },
+  {
+   "id": "fuk_004",
+   "name": "The Camphor of Kego Shrine",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "age_estimate": "over 300 years",
+   "age_min": 300,
+   "age_max": 420,
+   "location": {
+    "address": "Kego Shrine, 2-2-20 Tenjin, Chuo-ku, Fukuoka 810-0001",
+    "latitude": 33.58778,
+    "longitude": 130.399917,
+    "neighbourhood": "Tenjin, Chuo-ku"
+   },
+   "story": "Fukuoka's busiest shopping street runs past a camphor tree older than the district's name. Tenjin was built up around Kego Shrine, not the other way around, and the shrine's own record puts this camphor at over three hundred years, older than the 1608 rebuilding ordered by Kuroda Nagamasa, the daimyo who also built Fukuoka Castle. The shrine traces its founding much further back, to a guardian deity said to have protected Empress Jingu's fleet during a third-century campaign, but the tree standing today is a comparatively recent arrival by that math, planted or self-seeded sometime after the shrine's Edo-period move to this exact spot. What makes it worth a detour is the contrast: department stores, a covered shopping arcade and some of the highest rents in Kyushu surround a small shrine precinct where a single camphor still throws real shade over the forecourt. Kego Park borders the grounds to the north, giving the tree a second, quieter side to be seen from. Independent measurements of its exact girth or height are hard to come by, which is unusual for a tree this central. What is not in doubt is its address: closer to a train platform than any other tree on this list.",
+   "verified_sources": [
+    "https://kegojinja.or.jp/about/"
+   ],
+   "access": "Free, shrine grounds open 6:00-18:00",
+   "transport": "Nishitetsu Fukuoka (Tenjin) Station, adjacent; Tenjin-Minami subway station, about 1 min walk",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "notes": "Age comes from the shrine's own official website; no second independent source giving a measurement or figure was found. Included on that single, credible source per the project's flagging rule. Coordinates are the shrine's own location, not the tree's exact spot within the grounds."
+  },
+  {
+   "id": "fuk_005",
+   "name": "The Great Camphor of Tajima Hachiman Shrine",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "age_estimate": "several hundred years",
+   "age_min": 300,
+   "age_max": 600,
+   "location": {
+    "address": "Tajima Hachiman Shrine, Tajima, Jonan-ku, Fukuoka 814-0113",
+    "latitude": 33.567414,
+    "longitude": 130.374018,
+    "neighbourhood": "Tajima, Jonan-ku"
+   },
+   "story": "Wrap a tape measure around this camphor and you will need eleven metres of it, roughly the wingspan of a small aircraft. It is the largest of twelve trees on these grounds that Fukuoka City has individually designated as preserved trees, a small grove of camphors and ginkgoes several hundred years old crowded into a quiet residential shrine across the Hii River from the city centre. Unlike Fukuoka's grander, more visited shrines, Tajima Hachiman keeps its own calendar: Tajima Kagura, a masked sacred dance handed down through the neighbourhood for generations, is still performed on these grounds rather than staged for tourists elsewhere. The camphor stands close to the main hall, a single column of dense evergreen crown that has outgrown its own trunk's proportions, the kind of tree whose base takes several adults holding hands to encircle. Camphor wood was prized across East Asia for shipbuilding and for warding off insects, both of which likely helped trees like this one survive centuries that felled less useful species nearby. It carries no legend as old as Fukuoka's imperial-founded shrines, and that is part of its appeal: a genuinely enormous tree, growing where people actually live, with no admission gate and no crowd between you and its trunk.",
+   "verified_sources": [
+    "https://sasatto.jp/article/entry-583.html",
+    "https://tabi-bito.net/camphor-tree-of-tajima-hachiman-shrine-fukuoka-city/"
+   ],
+   "access": "Free, shrine grounds open daily",
+   "transport": "No direct train or subway; Nishitetsu bus route 12 from Tenjin toward Tajima, then a short walk across the Hii River",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "notes": "Age is described only as \"several hundred years\" in the two sources found, both consistent but neither giving a precise figure. Coordinates are geocoded from the shrine's street address, not a tree-specific source; the exact house number for the address varies slightly between sources, so this pin should be treated as a close approximation of the shrine block rather than the tree itself."
+  },
+  {
+   "id": "fuk_006",
+   "name": "The Great Camphor of Dazaifu",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "age_estimate": "said to be 1,000 to 1,500 years",
+   "age_min": 300,
+   "age_max": 1500,
+   "location": {
+    "address": "Dazaifu Tenmangu, 4-7-1 Saifu, Dazaifu 818-0117",
+    "latitude": 33.521167,
+    "longitude": 130.534378,
+    "neighbourhood": "Dazaifu, about 35 min from Tenjin"
+   },
+   "story": "The official sign under this camphor hedges, and it has been hedging since 1924. Erected by the education ministry and still standing, it says the age is said to be a thousand years, or perhaps fifteen hundred. That is unusually careful language for a monument, and it is the honest position: one giant-tree survey puts the tree at only three hundred and something, oral tradition stretches to two thousand, and nobody has ever cored it. What is measured is the size. Twenty-eight and a half metres tall and eleven point seven metres around, it is the largest of several camphors protected together as a national natural monument on the eighth of March 1922, the same day as the two giants at Umi a few stations north. The trunk is deeply fluted and hollow at the base, which is normal at this size rather than a sign of decline. Dazaifu Tenmangu is the head shrine of the deity of learning, so in exam season the grounds fill with students, and this tree stands to the west of all of them in front of the Seishinkan.",
+   "verified_sources": [
+    "https://www.city.dazaifu.lg.jp/site/bunkazai/2380.html",
+    "https://ja.wikipedia.org/wiki/%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE"
+   ],
+   "access": "Free, open shrine grounds",
+   "transport": "Nishitetsu from Tenjin via Futsukaichi, about 35 min and 400 yen, then 10 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Grand_camphor_tree_in_Dazaifu_Temman_Shrine.jpg",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Soramimi, via Wikimedia Commons",
+    "status": "approved",
+    "width": 2448,
+    "height": 3264
+   },
+   "curation_status": "flagged",
+   "notes": "Age estimates run from 300 to 2,000 depending on source; the range covers the defensible span and the entry quotes the official marker's own hedging rather than picking a number. The 1922 designation covers several camphors; the municipal register records this as the largest.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "fuk_007",
+   "name": "Yubuta no Mori, the Bathing Camphor",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "age_estimate": "1,000 to 2,000 years, sources disagree",
+   "age_min": 1000,
+   "age_max": 2000,
+   "location": {
+    "address": "Umi Hachimangu, 1-1-1 Umi, Umi town, Kasuya district 811-2101",
+    "latitude": 33.5703,
+    "longitude": 130.5088,
+    "neighbourhood": "Umi town, about 45 min from Hakata"
+   },
+   "story": "Its name means the bathing lid, and the legend explains the shape. Empress Jingu is said to have given birth to the future Emperor Ojin at this spot and to have bathed the newborn beneath this camphor, whose branches closed over the bath like a cover. The shrine that grew up around the story is now the principal shrine in Japan for safe childbirth, and expectant mothers travel from across the country to it. The tree is a single organism despite the word forest in its name, roughly fifteen metres around and reaching thirty metres, protected as a national natural monument since the eighth of March 1922. Sources put it at either a thousand years or two thousand, with no way to choose between them, so both stand here. What is not in doubt is its health: photographed in September 2024 it carries a full, dense, unbroken crown, which is more than can be said for several famous camphors nearer the city. Its equally protected companion stands about a hundred metres away and was designated on the same day.",
+   "verified_sources": [
+    "https://www.town.umi.lg.jp/site/miru/kanko121.html",
+    "https://ja.wikipedia.org/wiki/%E5%AE%87%E7%BE%8E%E5%85%AB%E5%B9%A1%E5%AE%AE"
+   ],
+   "access": "Free, open shrine precinct",
+   "transport": "About 45 min from Hakata: JR to Kashii, then the Kashii line to Umi terminus, then 9 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Yufuta-no-mori_ac.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Asturio Cantabrio, via Wikimedia Commons",
+    "status": "approved",
+    "width": 5973,
+    "height": 3971
+   },
+   "curation_status": "flagged",
+   "notes": "Beyond the usual day-trip radius at about 45 minutes, stated plainly rather than rounded down. Age sources conflict by a factor of two and both are reported. Coordinates come from a photograph's camera GPS rather than a mapped tree node, so the pin is the precinct.",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "fuk_008",
+   "name": "Kinukake no Mori, the Robe Camphor",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "age_estimate": "300 to 2,000 years, sources disagree sharply",
+   "age_min": 300,
+   "age_max": 2000,
+   "location": {
+    "address": "Umi Hachimangu, 1-1-1 Umi, Umi town, Kasuya district 811-2101",
+    "latitude": 33.5708,
+    "longitude": 130.5091,
+    "neighbourhood": "Umi town, about 45 min from Hakata"
+   },
+   "story": "Twenty metres around. That is nearly double the largest tree in the city of Fukuoka, and it makes this camphor one of the great trees of Japan by measurement alone, whatever anyone decides about its age. The estimates for that run from three hundred years to two thousand, a disagreement so wide it is really an admission that nobody knows. The name means the hanging of the robe: Empress Jingu, having given birth beside its neighbour a hundred metres away, is said to have hung the birth robe on this tree. A custom still runs on it. Expectant women take one of the smooth stones kept at the shrine home with them, and after a safe birth they bring back two, so the pile grows with every delivery. The tree carries its centuries openly, the upper trunk gone and a large rough cavity opening in the side, and it was still in full leaf when photographed in September 2024. Both it and its neighbour became national natural monuments on the same day in March 1922.",
+   "verified_sources": [
+    "https://www.town.umi.lg.jp/site/miru/kanko121.html",
+    "https://ja.wikipedia.org/wiki/%E5%AE%87%E7%BE%8E%E5%85%AB%E5%B9%A1%E5%AE%AE"
+   ],
+   "access": "Free, open shrine precinct",
+   "transport": "About 45 min from Hakata: JR to Kashii, then the Kashii line to Umi terminus, then 9 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kinukake-no-mori_ac_%281%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Asturio Cantabrio, via Wikimedia Commons",
+    "status": "approved",
+    "width": 5973,
+    "height": 3971
+   },
+   "curation_status": "flagged",
+   "notes": "Beyond the usual day-trip radius at about 45 minutes, stated plainly. The age disagreement is severe and both figures are reported; the 20m girth is agreed by two sources. Photo licence recorded but the visual check was blocked by rate limiting, so it stays unapproved.",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "fuk_009",
+   "name": "The Broad-leaf Ehretia of Dazaifu",
+   "species": "Broad-leaf Ehretia (Ehretia macrophylla)",
+   "age_estimate": "about 700 years",
+   "age_min": 500,
+   "age_max": 800,
+   "location": {
+    "address": "Dazaifu Tenmangu, west of the shrine buildings, Saifu, Dazaifu 818-0117",
+    "latitude": 33.52169,
+    "longitude": 130.534167,
+    "neighbourhood": "Dazaifu, about 35 min from Tenjin"
+   },
+   "story": "This is the largest of its species in Japan, and almost nobody visiting the shrine knows it is there. Ehretia macrophylla belongs to the borage family, the same group as forget-me-nots, and it is not a plant anyone expects at monumental size; this one is fifteen metres tall and six and a half metres around, which earned it a national natural monument designation of its own in June 1935, thirteen years after the camphors nearby. Lightning struck it in 1914 and snapped off the upper trunk, and the remaining stem is hollow to a height of about ten metres, so what stands there is a survivor rather than a specimen. It sits west of the main buildings, on the far side from the crowds heading for the exam charms. Look for a broad-leaved tree with a heavy scarred trunk and a crown that stops abruptly where the lightning ended it, then check the sign, because there is no way to tell a record-breaking ehretia from an ordinary broadleaf without one.",
+   "verified_sources": [
+    "https://www.city.dazaifu.lg.jp/site/bunkazai/2380.html",
+    "https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%B7%E3%83%A3%E3%83%8E%E3%82%AD"
+   ],
+   "access": "Free, open shrine grounds",
+   "transport": "Nishitetsu from Tenjin via Futsukaichi, about 35 min, then 10 min walk",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "The 700-year age comes from a single published figure. The largest-in-Japan claim is species-specific and stated by the municipal register, which is why it is used. No open-licence photograph exists; Commons searches under both the Japanese and scientific names returned nothing.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "fuk_010",
+   "name": "The Married Ginkgos of Kushida",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "over 300 years",
+   "age_min": 250,
+   "age_max": 400,
+   "location": {
+    "address": "Kushida Shrine, 1-41 Kamikawabata-machi, Hakata-ku, Fukuoka 812-0026",
+    "latitude": 33.592778,
+    "longitude": 130.410667,
+    "neighbourhood": "Hakata"
+   },
+   "story": "On the fifth of October, seven priests climb in with bamboo poles and shake this tree until the nuts come down. Shrine maidens gather them with chopsticks, because ginkgo flesh smells strongly enough that nobody wants it on their hands, and the nuts are dried and kept until March, when they are given out at the Ginan Festival as charms for a harmonious marriage and for children. That is the whole reason these trees carry their name. They stand opposite the main hall, three large ginkgos of over three hundred years treated as a single married pair, and the one at the front is the female that actually fruits. They are a few steps from the far more famous ginkgo on the other side of the same precinct, the one that is older, taller and sung about in the festival song, which most visitors photograph without noticing these at all. The city lists them among its preserved trees. Come on the fifth of October for the only tree ritual in Fukuoka that involves men with poles in a shrine courtyard.",
+   "verified_sources": [
+    "https://yokanavi.com/spots/26906",
+    "https://ja.wikipedia.org/wiki/%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE_(%E7%A6%8F%E5%B2%A1%E5%B8%82)"
+   ],
+   "access": "Free, open shrine precinct",
+   "transport": "Nanakuma Line to Kushida-jinjamae, 2 min walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Kushida_Shrine_Meoto-ginan_the_preserved_trees_1-41_Kami-kawabatamachi_Hakata-ku_Fukuoka_20231207.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Hirho, via Wikimedia Commons",
+    "status": "approved",
+    "width": 3000,
+    "height": 4000
+   },
+   "curation_status": "flagged",
+   "notes": "An ensemble of three trees under one name with one obvious place to stand, which is a judgment call rather than a clear pass. The age and the October ritual come from tourism and news sources rather than the municipal register and are worth re-verifying. Photo not viewed at full size; a blank wall reportedly occupies the left third.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "label": "5 October, when priests shake the nuts down with bamboo poles",
+    "kind": "fruit"
+   },
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "fuk_011",
+   "name": "The Bodhi Tree of Kaidan-in",
+   "species": "Miquel's Linden (Tilia miqueliana)",
+   "age_estimate": "over 200 years",
+   "age_min": 200,
+   "age_max": 260,
+   "location": {
+    "address": "Kaidan-in, 5-7-10 Kanzeonji, Dazaifu 818-0101",
+    "latitude": 33.5148788,
+    "longitude": 130.5208599,
+    "neighbourhood": "Dazaifu, about 35 min from Tenjin"
+   },
+   "story": "The bodhi tree of Japanese temples is not the bodhi tree. The Buddha's own species will not survive a Japanese winter, so temples here plant a lime, Tilia miqueliana, and call it by the same name, which is why this modest tree at Kaidan-in carries a title far larger than its six metres. It is protected all the same, designated a Dazaifu city natural monument in September 2013, and its age has an unusually firm floor: a gazetteer of the province compiled in 1814 records a single bodhi tree standing at Kaidan-in, so this one, or its immediate predecessor on the same ground, was already worth listing two centuries ago. Tradition connects the planting to Ganjin, the blind Chinese monk who crossed to Japan on his sixth attempt and founded the ordination platform this temple is built around. That is tradition only, and the arithmetic says so, because Ganjin died in 763 and the tree is two hundred years old. In June it flowers, pale yellow and heavily scented, which is the one week it stops being a small tree with a big name.",
+   "verified_sources": [
+    "https://www.city.dazaifu.lg.jp/site/bunkazai/2380.html",
+    "https://ja.wikipedia.org/wiki/%E6%88%92%E5%A3%87%E9%99%A2"
+   ],
+   "access": "Free precinct; the ordination hall itself charges a small fee",
+   "transport": "Nishitetsu to Gojo station, then about 10 min walk; roughly 35 min from Tenjin",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Height, girth, age and the 2013 designation all come from the Dazaifu municipal register, and the 1814 gazetteer gives the age a documentary floor, which is unusual. The Ganjin connection is tradition only and the entry says so. Pin is the temple, not the individual tree.",
+   "best_time": {
+    "months": [
+     6
+    ],
+    "label": "June, when the pale yellow flowers open and the whole tree smells of them",
+    "kind": "flowers"
+   },
+   "location_precision": "approximate"
+  },
+  {
+   "id": "fuk_012",
+   "name": "The Great Yamamomo of Kanatake",
+   "species": "Red Bayberry (Myrica rubra)",
+   "age_estimate": "roughly 300 to 400 years",
+   "age_min": 300,
+   "age_max": 400,
+   "girth_cm": 440,
+   "location": {
+    "address": "Kanatake, Nishi Ward, Fukuoka (postal area 819-0035)",
+    "latitude": 33.522772,
+    "longitude": 130.303222,
+    "neighbourhood": "Kanatake, Nishi Ward"
+   },
+   "verified_sources": [
+    "https://www.city.fukuoka.lg.jp/nishiku/c-shinko/charm/nisikunotakara/yamamomo.html",
+    "http://www.hitozato-kyoboku.com/hukuokaken.htm"
+   ],
+   "access": "Privately owned but open to the public (the ward government's own page says so explicitly); visitors are asked to be careful, since foot traffic compacting the soil over the roots is named as a real risk to the tree's vigour, not a formality.",
+   "transport": "No train station is within walking distance (Hashimoto or Jiromaru stations are both roughly 2.7km, about 33-34 minutes on foot). Nishitetsu Bus routes 1 or 2 run to the 'Kanatake' stop from Meinohama Station's south exit, Hashimoto Station, Hakata Station bus terminal or Tenjin; the tree stands in the neighbourhood around that stop.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "An owl sometimes nests in the hollow of this tree's trunk, which Fukuoka's own ward government mentions on its page about the specimen without treating it as remarkable, just one more fact about a tree old enough to have grown a cavity worth nesting in. Estimated at three to four hundred years old, it is the larger of only two Myrica rubra the prefecture has designated a natural monument, its root spread alone measuring eight metres across.\n\nRed bayberry is more commonly a large shrub than a proper tree, grown across East Asia for a tart, dark red summer fruit that stains fingers and pavement alike; reaching four metres round at chest height and standing fourteen metres tall, this one has outgrown the category by any measure. The ward's own page and an independent survey of Japan's giant trees disagree on the exact girth by thirty centimetres, a gap almost certainly explained by different measurement dates rather than a mistake either way.\n\nThe tree stands on private land whose owner has kept it open to the public, and the same page that welcomes visitors also asks them to tread carefully: foot traffic compacting the soil over its roots is named as a real threat to its health, not a formality. No train station sits within walking distance; a bus from Meinohama, Hashimoto or central Fukuoka runs to the Kanatake stop nearby.",
+   "verify_notes": "Fukuoka City's own Nishi Ward government page (city.fukuoka.lg.jp, under 'Nishi Ward's Treasures' / nature) designates this as a Fukuoka Prefecture-designated Natural Monument: estimated age 300-and-some-tens of years (translated here as a broad 'roughly 300 to 400 years', not sharpened), girth at breast height 4.4m (440cm), root-spread girth 8m, height 14m, larger than the other prefecturally designated Myrica rubra in Nakashima Park, Naka-gawa City. It notes a cavity in the trunk where owls often nest. Second source: hitozato-kyoboku.com, a long-running nationwide Japanese giant-tree survey site (used here for corroboration only, same convention as monumentaltrees.com under hard rule 1), lists the same tree (its entry #5608, '金武のヤマモモ', Fukuoka-shi Nishi-ku Kanatake, prefectural designation) with girth 4.7m, matching the coordinate this project's earlier lead pass had already recorded (33.522772,130.303222) almost exactly. GIRTH CONFLICT, not silently resolved: city page says 4.4m, kyoboku says 4.7m; used the city government's figure (440cm) as girth_cm since its page gives full measurement context (breast height specifically) and flagged for the discrepancy, which is most likely two different measurement dates. Location independently reconfirmed a third way: an OpenStreetMap natural=tree node exists at 33.5227721,130.3032217, named '金武の大ヤマモモ' (Kanatake's Great Yamamomo), essentially the same point to six decimal places, so location_precision is confirmed with unusual confidence for a lone specimen. Reading correction: the place name 金武 in this Nishi Ward context reads 'Kanatake', not 'Kanetake' as the earlier lead entry had it (confirmed via multiple independent Japanese postal/address lookups for postal code 819-0035); the city page's own name is 'Kanatake no Yamamomo'. Whoever updates data/leads/fukuoka.json should correct the spelling there too. Alive-now: no dated recent photo or news found this pass, but the source is a currently-live official ward government page describing the tree in the present tense as a designated natural monument people currently visit (with an active visitor-conduct warning), which is reasonable but not dated-photo-level evidence; noting this honestly rather than treating it as fully confirmed.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "fuk_013",
+   "name": "The Married Camphor and Great Ginkgo of Torikai Hachimangu",
+   "species": "Camphor Tree (Cinnamomum camphora) and Ginkgo (Ginkgo biloba)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Torikai Hachimangu, 2-1-17 Imagawa, Chuo Ward, Fukuoka",
+    "latitude": 33.587188,
+    "longitude": 130.366383,
+    "neighbourhood": "Imagawa, Chuo Ward"
+   },
+   "verified_sources": [
+    "https://hachimansama.jp/blog/1910",
+    "http://www.fukuokanomori.xyz/shoukai/torikai/"
+   ],
+   "access": "Free. Both trees stand in the open approach/precinct of Torikai Hachimangu, a public Shinto shrine, immediately flanking the torii; no gate or restriction beyond ordinary shrine visiting hours.",
+   "transport": "Fukuoka City Subway Airport Line: Tojinmachi Station, about 6 minutes on foot, or Nishijin Station, about 7 minutes. Also reachable by Nishitetsu bus to the Jigyo or Imagawa-nishimachi-koen-mae stops, a couple of minutes' walk.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Despite the name, the Married Camphor is one tree, not two. Its trunk forks into a pair from a single base low to the ground, which is exactly why visitors to Torikai Hachimangu read it as a couple rather than a single specimen, and why a shrine built around relationships adopted it as a symbol for exactly that. Cords get tied to its shimenawa rope by people hoping their own pairing holds as well as the tree's two trunks have.\n\nTwelve metres away, flanking the shrine's torii from the other side, stands the Great Ginkgo, called locally the Ibuki Ginkgo. The shrine's own account puts its age at five to six hundred years, a figure with no independent source found to confirm it, so treat it as tradition rather than a documented fact, the same caution this page applies to a wartime survival story attached to the tree elsewhere online, which nothing beyond the shrine's own telling supports.\n\nBoth trees stand in the open shrine forecourt, free to visit at any hour a Shinto shrine keeps its grounds open, reachable on foot from either Tojinmachi or Nishijin subway station. Camphor on the left of the torii, ginkgo on the right, both close enough to touch from the same few steps.",
+   "verify_notes": "FOLDED ENTRY, one collectible point: this shrine names three sacred trees on its own site ('三本の御神木'), but only two stand together at the shrine approach and are treated locally as one paired feature (a third, a cycad said to be over 1000 years old by the shrine's own account, stands elsewhere in the precinct near the shrine office and is out of scope for this pass, not researched or verified). The 'Married Camphor' (夫婦楠) is NOT two separate trees despite the plural-sounding English gloss in the earlier lead entry: per an independent visitor blog (fukuokanomori.xyz) it is a single specimen whose trunk forks into two from one root/base, which is exactly why it reads locally as 'a married pair'. It stands about 12 metres from the 'Great Ginkgo of Ibuki' (息吹の大銀杏), both directly flanking the shrine's torii (camphor on the left, ginkgo on the right, viewed from the approach road), both used in the same 'en-musubi' (relationship-binding) cord-tying tradition on the same shimenawa rope. One obvious place to stand: the shrine forecourt, both trees visible and touchable within a few steps of each other. Treated as one entry per the ensemble/collectible-point test. Location: OpenStreetMap carries individually named natural=tree nodes for both, '夫婦の楠' at 33.5872072,130.3663361 and '息吹の大銀杏' at 33.5871694,130.3664296, about 12m apart; used the midpoint (33.587188,130.366383) as the single entry coordinate, which is confirmed rather than approximate since both individual trunks are independently pinned, not guessed at park scale. Age: the shrine's own blog (hachimansama.jp/blog/1910, 2012) gives the ginkgo's age as '樹齢は、500年とも600年ともいわれています' ('said to be 500 or 600 years old'), a vague figure from a real source, but it is SELF-published by the shrine and has no independent corroboration found this pass (not on Japanese Wikipedia, which does not mention either tree at all), so age_estimate is left empty here rather than repeated as fact; flag this for the writer to attribute explicitly as shrine tradition if used. No age or girth found anywhere for the camphor. IMPORTANT CAUTION carried over from this city's own leads file: the shrine's own account also claims the ginkgo survived a direct WWII incendiary-bomb hit and resprouted from a blackened trunk. This is exactly the class of claim already blocked elsewhere in Fukuoka (see data/leads/fukuoka.json, 'The Mukunoki of Kouun Shrine, Nishi Park': 'there is no Fukuoka equivalent of the Hiroshima survivor-tree registry, so no Fukuoka tree may be given an air-raid survival story'). Per that standing city-wide caution, do NOT write this air-raid claim into the published story as verified history; it may be mentioned, if at all, explicitly framed as the shrine's own tradition, not as confirmed fact. Alive-now: fukuokanomori.xyz's visit is dated June 2024 (令和6年6月参拝) with photographs of both trees current at that visit, which is the freshest alive-now evidence found and is reasonably recent; no more recent confirmation sought this pass.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "fuk_014",
+   "name": "Seicho-zakura",
+   "species": "Cherry (Prunus sp.)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "In front of Nishitetsu-Kashii Station, Higashi-ku, Fukuoka",
+    "latitude": 33.659564,
+    "longitude": 130.441467,
+    "neighbourhood": "Kashii, Higashi-ku"
+   },
+   "verified_sources": [
+    "https://wood.jp/8-jumoku/web-jumoku/web/web-tree-2735.html",
+    "https://wood.jp/8-jumoku/web-jumoku/web/web-tree-1630.html"
+   ],
+   "access": "Free, public station forecourt, always visible",
+   "transport": "At Nishitetsu-Kashii Station (Nishitetsu Kaizuka Line), 0 min walk",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "In January 2008 this cherry was picked up by crane, root ball and all, and set back down about thirty metres away. It stood eight metres tall and the ball weighed roughly three and a half tonnes. The reason it was moved rather than felled is a detective novel.\n\nThe tree grew on the grounds of the old Nishitetsu-Kashii station, the area Matsumoto Seicho used as the setting for Ten to Sen, his 1958 novel. When the line was lifted onto a viaduct in 2006 and the old station came down, his readers organised. The Matsumoto Seicho society, a non-profit of fans, petitioned Fukuoka City and the Nishitetsu railway to keep the tree, and on 21 January 2008 it was transplanted whole to the forecourt of the new station, beside a stone monument to the book. The arborist who supervised the move reckoned it had another twenty or thirty years of flowering in it with proper care, which takes it into the 2040s.\n\nNobody has recorded its age. The sources call it simply an old tree, and none of them names the cultivar either, so if you know your cherries and you are standing in front of it, tell us which one this is.\n\nIt is not the oldest tree in Fukuoka, or the biggest, or the strangest. It is the one a few hundred readers refused to let go of, and it flowers every spring over a commuter forecourt because of that.",
+   "best_time": {
+    "months": [
+     3,
+     4
+    ],
+    "kind": "flowers",
+    "label": "late March into early April, when it flowers over the station forecourt"
+   },
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "fuk_015",
+   "name": "Shimo-ose no Okatsura",
+   "species": "Katsura (Cercidiphyllum japonicum)",
+   "age_estimate": "roughly 1,000 years (official estimate)",
+   "age_min": 900,
+   "age_max": 1100,
+   "girth_cm": null,
+   "location": {
+    "address": "Shimo-ose, Fuji-cho, Saga City, Saga Prefecture (200m west of Kitayama Kiln, Fuji-cho Shimo-ose 564-1)",
+    "latitude": 33.44334,
+    "longitude": 130.26053,
+    "neighbourhood": "Fuji-cho, Saga City"
+   },
+   "verified_sources": [
+    "https://www.city.saga.lg.jp/main/875.html",
+    "https://www.pref.saga.lg.jp/kiji0031653/index.html",
+    "https://www.nikkei.com/article/DGXZQOJC173NW0X11C23A1000000/"
+   ],
+   "access": "Free, self-guided, open year round, no fee. No car park at the tree itself (roadside pull-off). Reached only by car; no public bus service found to the site.",
+   "transport": "No train or bus. By car: about 30 min from Saga-Yamato IC, or roughly 5-10 min from the Mitsuse Tunnel tollgate if coming from Fukuoka city (via the Mitsuse Toll Road/Route 263, then Pref. Route 299 through Fuji-cho). Not walkable from any station.",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "The tree at the centre of this tree is gone. What stands at Shimo-ose is a ring of root suckers that came up around the base of a katsura whose original central stem died: more than twenty of them are over a metre round in their own right, the largest about three metres, and together the clump reaches thirty-four metres tall from a root base measuring 13.8 metres around. Saga Prefecture calls it the second-largest katsura in Japan. There is no single trunk to put a tape around.\n\nBoth Saga City and the prefecture put its age at roughly a thousand years. It became a National Natural Monument in May 1962, one of the country's earlier and firmer designations. It grows inside the precinct of a mountain-god shrine in a valley in Fuji-cho, and the prefectural description says it was venerated as a sacred tree.\n\nNovember is the reason to make the trip. Katsura leaves are almost circular, they turn butter yellow, and as they fall and dry they give off a smell of burnt sugar that carries a surprising distance in still air. Nikkei ran a feature on this tree's autumn colour in 2023.\n\nIt is not in Fukuoka. This is Fuji-cho, in Saga City, over the mountains, and it needs a car: five to ten minutes past the Mitsuse tunnel tollgate coming from the Fukuoka side, on a mountain road, with a roadside pull-off and no bus of any kind.",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "kind": "autumn colour",
+    "label": "November, when the round leaves turn yellow and the fallen ones smell of burnt sugar"
+   },
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
 }
