@@ -7,15 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Fetch real image urls
+      - name: Fetch bucketed thumbnails
         run: |
           set +e
           for u in \
-            "https://upload.wikimedia.org/wikipedia/commons/b/bc/Q98444729.jpg" \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Q98444729.jpg/640px-Q98444729.jpg" \
-            "https://upload.wikimedia.org/wikipedia/commons/c/c9/HRAST_CVETNI_TRG_1.JPG" ; do
-            code=$(curl -sS -m 25 -o /tmp/out.bin -w '%{http_code}' -A 'AncientTreesBot/1.0 (https://ancienttrees.app; hello@ancienttrees.app)' "$u")
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Q98444729.jpg/960px-Q98444729.jpg" \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Q98444729.jpg/500px-Q98444729.jpg" \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/HRAST_CVETNI_TRG_1.JPG/960px-HRAST_CVETNI_TRG_1.JPG" ; do
+            code=$(curl -sS -m 25 -o /tmp/out.bin -w '%{http_code}' -A 'AncientTreesBot/1.0 (https://ancienttrees.app)' "$u")
             printf '%-6s %9s bytes  %s\n' "$code" "$(wc -c </tmp/out.bin)" "$u"
             file /tmp/out.bin
-            head -c 300 /tmp/out.bin | tr -d '\0'; echo
           done
