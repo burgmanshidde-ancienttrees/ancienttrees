@@ -37,6 +37,17 @@ struct ProfileView: View {
 
     @State private var signingIn = false
     @State private var confirmingDelete = false
+    /// THE SECOND ASK, typed rather than tapped (Hidde, 2026-08-31: "met twee
+    /// keer vragen weet je het zeker").
+    ///
+    /// The references all ask twice and none of them does it with two dialogs:
+    /// Strava confirms and then mails you, Google makes you sign in again.
+    /// Both are expensive here, a mail needs the server and a re-authentication
+    /// fails the moment somebody has no signal, on the one screen where failing
+    /// is worst. A typed word is the ordinary substitute, it is a real second
+    /// act rather than a second tap in the same place, and it works with the
+    /// aeroplane mode on.
+    @State private var typedToConfirm = ""
     @State private var confirmingSignOut = false
     /// A second tap used to start a second upload of everything. See below.
     @State private var signingOut = false
@@ -540,6 +551,12 @@ struct ProfileView: View {
     /// 2026-08-21). Changing the address itself is not built: it needs a
     /// verified swap on the server and it moves somebody's whole collection,
     /// so it is Hidde's to open rather than mine.
+    /// Case and stray spaces forgiven: the point is that somebody typed the
+    /// word on purpose, not that they can hit shift.
+    private var mayDelete: Bool {
+        typedToConfirm.trimmingCharacters(in: .whitespaces).uppercased() == "DELETE"
+    }
+
     private var accountSheet: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 16) {
@@ -564,13 +581,25 @@ struct ProfileView: View {
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 Spacer()
+                Text("Type DELETE to confirm")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                TextField("DELETE", text: $typedToConfirm)
+                    .textInputAutocapitalization(.characters)
+                    .autocorrectionDisabled()
+                    .font(.callout)
+                    .padding(.horizontal, 14).frame(height: 48)
+                    .background(Brand.surfaceMuted, in: RoundedRectangle(cornerRadius: 10))
+                    .accessibilityIdentifier("delete-confirm-field")
                 Button { confirmingDelete = true } label: {
                     Text("Delete account")
-                        .font(.callout).foregroundStyle(.red)
+                        .font(.callout)
+                        .foregroundStyle(mayDelete ? .red : Brand.inkSoft.opacity(0.5))
                         .frame(maxWidth: .infinity).frame(height: 48)
                         .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
+                .disabled(!mayDelete)
+                .accessibilityIdentifier("delete-confirm-button")
             }
             .padding(20)
             .frame(maxWidth: .infinity, alignment: .leading)
