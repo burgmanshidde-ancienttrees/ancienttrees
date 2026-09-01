@@ -2,10 +2,10 @@
   "city": "Delft",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Delft's oldest tree predates the Netherlands' own royal house by two centuries and still fruits every summer in a working almshouse courtyard. Its youngest tree is a graft from Germany, planted specifically to keep William of Orange's memory rooted in the city where he died. Four verified trees, one of them a living link to a 1944 discovery once thought extinct.",
-  "meta_description": "Delft's oldest tree is a 319-year-old mulberry in a 1707 almshouse courtyard. Four verified ancient trees, real stories, how to reach each one.",
+  "intro": "Delft's oldest tree predates the Netherlands' own royal house by two centuries and still fruits every summer in a working almshouse courtyard. Its youngest tree is a graft from Germany, planted specifically to keep William of Orange's memory rooted in the city where he died. Eight verified trees, one of them a living link to a 1944 discovery once thought extinct.",
+  "meta_description": "Delft's oldest tree is a 319-year-old mulberry in a 1707 almshouse courtyard. Eight verified ancient trees, real stories, how to reach each one.",
   "question_answer": "Delft's oldest tree is a black mulberry in the courtyard of Hofje van Pauw on Paardenmarkt, planted in 1707 when the almshouse was founded and roughly 319 years old. Tree specialist Jorn Copijn identified it in 2023 as a rare subspecies likely brought to the Netherlands by the VOC.",
-  "question_meta": "A 319-year-old mulberry in a 1707 almshouse courtyard is Delft's oldest tree. Where to find it, and the city's other three verified ancient trees.",
+  "question_meta": "A 319-year-old mulberry in a 1707 almshouse courtyard is Delft's oldest tree. Where to find it, and the city's other seven verified ancient trees.",
   "question_context": "The mulberry's age comes from the founding date of Hofje van Pauw itself, the almshouse Elisabeth Pauw endowed by testament in 1707, rather than a ring count or measured estimate. Copijn Boomspecialisten's 2023 assessment identified the tree as Morus nigra subsp. multicaulus, a subspecies not formally recorded in Europe until 1821, well over a century after this specimen was already growing in the courtyard. The most likely explanation ties the tree to Delft's own trading history rather than European botany: the Dutch East India Company traded out of India, where the subspecies originates, from 1700, and kept a chamber in Delft from 1602, making a returning VOC ship a more plausible route for the tree than any documented import. The hofje's courtyard gate on Paardenmarkt stays open to visitors during the day, though the houses around the tree are still lived in. None of Delft's other verified trees currently outdate it; the next oldest, a set of horse chestnuts on Sint Agathaplein, is over two centuries younger.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Delft's ancient trees free to visit?",
-      "a": "The mulberry's courtyard and Sint Agathaplein are both free public access. The Prinsentuin linden sits on Museum Prinsenhof's grounds, which are mid-renovation through 2027, so garden access may be temporarily restricted. TU Delft's Botanic Garden, home to the dawn redwoods, charges standard admission."
+      "a": "The mulberry's courtyard and Sint Agathaplein are both free public access, as are the newly added Kalverbos elms and planes and the wingnut and bald cypress on the old Nieuwe Plantage rampart. The Prinsentuin linden sits on Museum Prinsenhof's grounds, which are mid-renovation through 2027, so garden access may be temporarily restricted. TU Delft's Botanic Garden, home to the dawn redwoods, charges standard admission."
     },
     {
       "q": "Why does Delft have a tree grown from a twig cut in Germany?",
@@ -168,6 +168,125 @@
         "status": "missing"
       },
       "paid_entry": true
+    },
+    {
+      "id": "del_005",
+      "name": "The Dutch Elms of Kalverbos",
+      "species": "Dutch Elm (Ulmus x hollandica)",
+      "age_estimate": "about 160 years",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Hoek Kalverbos/Nieuwe Plantage, Delft",
+        "latitude": 52.017626,
+        "longitude": 4.352089,
+        "neighbourhood": "Wateringse Veld / Kalverbos"
+      },
+      "story": "Fourteen elms stand at one corner of a park that used to be a cemetery. Kalverbos served as Delft's burial ground for 46 years before the city moved its dead to the Jaffalaan in 1874, and when the empty ground became a public park two decades later, laid out in the romantic style by garden architect Hugo Poortman, these trees were already grown. The register dates them to between 1860 and 1870, planted while this was still consecrated ground, which puts them at about 160 years old.\n\nFour graves were left in place rather than moved, and the strangest belongs to Karl Wilhelm Naundorff, a Prussian clockmaker who spent his life insisting he was the lost Dauphin of France, Louis XVII, smuggled out of prison as a child while a substitute died in his place. Nobody believed him while he lived, and DNA testing in 2000 finally settled the argument against him, but his grave in this Dutch park still carries the fleur-de-lis of French royalty.\n\nThe elms have their own survival story. Dutch elm disease, named for the country that first identified it, swept through the Netherlands twice in the twentieth century and emptied whole streets of exactly this species. This grove made it through both waves and is now one of Delft's protected monumental groups.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1680756: Hollandse iep, fourteen trees, Hoek Kalverbos/Nieuwe Plantage, Delft, planting band 1860-1870, reason for protection 'monumentaal', owner gemeente, recorded as visitable and visible"
+      ],
+      "access": "Free, in the open park of Kalverbos, at any hour",
+      "transport": "Delft railway station, then about a 15-minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "del_006",
+      "name": "The Planes of Kalverbos",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Kalverbos, Delft",
+        "latitude": 52.017127,
+        "longitude": 4.351756,
+        "neighbourhood": "Wateringse Veld / Kalverbos"
+      },
+      "story": "Three plane trees went into Kalverbos around the years Delft finished the red-brick water tower that still looms over the park. Construction started in 1895, the tower pumped the city's water until 1996 and has since become a venue for parties. The register that protects these trees describes them standing in the same historic setting as the tower, an old bench and the graves nearby, planted as the park found its final shape.\n\nKalverbos itself began as a cemetery, in use for 46 years before Delft moved its dead to the Jaffalaan in 1874. Its conversion into a public park in 1894, laid out by garden architect Hugo Poortman in the romantic landscape style, gave it the winding paths it still has. These planes, dated to 1890 to 1900, are close to that age, among the first trees to grow up with the park rather than the burial ground it replaced.\n\nLondon planes are a seventeenth century hybrid of an American and an Asian parent, fast growing and tolerant enough of clipping to survive on a Dutch street. Three of them, standing together at well over a century old, anchor one corner of a park that covers barely a hectare.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1697031: Platanen Kalverbos, three trees, Kalverbos, Delft, planting band 1890-1900, reason for protection 'monumentaal', owner gemeente, recorded as visitable and visible"
+      ],
+      "access": "Free, in the open park of Kalverbos, at any hour",
+      "transport": "Delft railway station, then about a 15-minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "del_007",
+      "name": "The Wingnut of Nieuwe Plantage",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "about 130 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Tegenover Nieuwe Plantage 28, Delft",
+        "latitude": 52.017887,
+        "longitude": 4.354523,
+        "neighbourhood": "Nieuwe Plantage"
+      },
+      "story": "A wingnut gets its name from a seed built with two papery blades, and this one has grown for well over a century on ground that used to be Delft's city wall. The wall came down around 1890, and the register credits the new layout to a landscape architect surnamed Zocher, a name attached to some of the country's best known nineteenth century parks, who chose large, fast-growing species for the reclaimed rampart. That is the register's own account of why this edge of the city carries so many good trees planted at once.\n\nCaucasian wingnuts come from forests around the Black Sea and the Caspian, and they grow faster than almost anything else planted alongside them in a Dutch garden, oaks and limes included. This one was planted between 1890 and 1900, putting it at around 130 years old, on a strip of the old rampart directly across the street from an ordinary Delft address, number 28 Nieuwe Plantage.\n\nNothing beyond the national monumental tree register has been found to confirm it further. If you know this tree, tell us.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1696370: Vleugelnoot, Tegenover Nieuwe Plantage 28, Delft, planting band 1890-1900, reason for protection 'monumentaal', owner gemeente, recorded as visitable and visible"
+      ],
+      "access": "Free, on the public verge opposite Nieuwe Plantage 28, at any hour",
+      "transport": "Delft railway station, then about a 15-minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "del_008",
+      "name": "The Bald Cypress of Geer Boogerd",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "about 110 years",
+      "age_min": 106,
+      "age_max": 116,
+      "location": {
+        "address": "Geer Boogerd 57-59, Delft",
+        "latitude": 52.017041,
+        "longitude": 4.354864,
+        "neighbourhood": "Nieuwe Plantage"
+      },
+      "story": "A swamp tree from the American South outlived the psychiatric hospital that once surrounded it. The Sint-Jorisgasthuis stood on this ground for close to 150 years under its older name, Binnengesticht, rebuilt in the 1920s and finally demolished in the 1960s to make way for housing. Its bald cypress, planted somewhere between 1910 and 1920 in what was then the institution's large garden, is one of the few things on the site that survived the building coming down around it.\n\nBald cypresses are conifers that behave like broadleaf trees, dropping their needles every autumn, which is unusual enough among cone-bearing species that Delft's specimen stands out on a small square that gives no other hint of what stood here for a century and a half. In its native range along the Mississippi and the Gulf coast it grows in standing water and throws up woody knees around its base; on a Dutch street corner it just grows tall.\n\nAt around 110 years old, it is the youngest of Delft's newly registered trees and the only witness left to a building nobody living remembers walking into.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when the needles turn rust orange before dropping",
+        "kind": "autumn colour"
+      },
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1696368: Moerascypres, Geer Boogerd 57-59, Delft, planting band 1910-1920, reason for protection 'monumentaal', owner gemeente, recorded as visitable and visible"
+      ],
+      "access": "Free, on the public square at Geer Boogerd, at any hour",
+      "transport": "Delft railway station, then about a 15-minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
