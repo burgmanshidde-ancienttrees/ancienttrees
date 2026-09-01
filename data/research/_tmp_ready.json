@@ -1,0 +1,664 @@
+[
+ [
+  "paris",
+  {
+   "name": "Orme pleureur (Weeping Wych Elm), Square Jean XXIII",
+   "species": "Weeping Wych Elm (Ulmus glabra 'Pendula')",
+   "register_girth_cm": 180,
+   "place": "Square Jean-XXIII, 2 Quai de l'Archeveche, 75004 Paris",
+   "latitude": 48.8521,
+   "longitude": 2.3508,
+   "reason": "Same closure as the Turkish Hazel lead above: Square Jean-XXIII shut for construction until roughly mid-2027. Also unresolved: paris.fr's own page says two weeping elms survived Dutch elm disease here, but the register carries only one entry for this species at this spot; a future pass should check for a second specimen once the square reopens."
+  },
+  []
+ ],
+ [
+  "rothenburg-ob-der-tauber",
+  {
+   "register_id": "ND-04853",
+   "name": "ND Nr. 48 Birnbaum",
+   "latitude": 49.37617784,
+   "longitude": 10.15031728,
+   "km_from_centre": 2.52,
+   "reason": "Not researched this pass; only 4 named candidates were worked to completion (rule of at most four per verification pass). A wild pear (Birnbaum) 200 m north of Ziegelhuette, per the Landkreis Ansbach Naturdenkmal Wikipedia list. Untouched, worth a future pass.",
+   "species": "Pear (Pyrus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  []
+ ],
+ [
+  "toulouse",
+  {
+   "register_id": "16807",
+   "name": "Platanus x hispanica (London Plane), Allee Alfred Mayssonnie",
+   "reason": "Plausibly a public street/allee tree (OSM tags the point as highway=service) but not individually researched or confirmed this pass; time-boxed out. Coordinates: 43.5884, 1.4370.",
+   "latitude": 43.5884,
+   "longitude": 1.437,
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  []
+ ],
+ [
+  "toulouse",
+  {
+   "register_id": "17297",
+   "name": "Wisteria sinensis (Chinese Wisteria), near Pont Pierre de Coubertin",
+   "reason": "Wisteria is a woody vine rather than a tree in the usual sense; could still be a collectible point if trained into standard/tree form (common in France), but this pass found no source describing its form or confirming public access (reverse-geocodes near a bridge and sports pitch). Register records planted 1922 and remarkable_label_source 'Arbres et paysages d'Autan' (the specialist tree association, not the city), which is a promising signal, but no independent source describing THIS specific wisteria was found this pass. IMPORTANT, learned this pass: this is a DIFFERENT tree from the well-documented, nationally labelled 'glycine de Toulouse' at the Serres municipales (see new entry below, register id unknown/not in this register file) -- do not conflate them, their coordinates are about 2km apart. Coordinates: 43.5857, 1.4339.",
+   "latitude": 43.5857,
+   "longitude": 1.4339,
+   "species": "Wisteria (Wisteria sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  []
+ ],
+ [
+  "turin",
+  {
+   "name": "The Populus nigra of via Don Lorenzo Milani",
+   "species": "Black Poplar (Populus nigra)",
+   "register_id": "002/C860/TO/01",
+   "latitude": 45.09128,
+   "longitude": 7.608835,
+   "girth_cm": 540,
+   "height_m": 30,
+   "crown_m": null,
+   "age_band": "< 100",
+   "ownership": "Pubblica",
+   "reason": "New find, 2026-08-31 pass, not previously recorded. 6.7 km from centre, girth 5.4 m despite an age band under 100 years, so a fast-growing giant rather than an ancient tree; potentially visually spectacular on size alone. Reverse-geocodes to via Don Lorenzo Milani, Ricovero, Collegno, a separate comune west of Torino, not the city itself. One targeted search (\"pioppo nero monumentale Collegno\") found the Comune di Collegno's own municipal tree census page exists but returned no specific hit for this tree, and no press coverage. No second source, no place name, no confirmed park/access context, and it would need its own day-trip justification (transit time from Torino centre) rather than joining this walk. Worth a look next pass with a direct fetch of Collegno's tree census, not chased further this pass."
+  },
+  []
+ ],
+ [
+  "turin",
+  {
+   "name": "The wide plane east of the Po",
+   "species": "London Plane (Platanus x acerifolia)",
+   "register_id": "006/L219/TO/01",
+   "latitude": 45.06427,
+   "longitude": 7.71956,
+   "girth_cm": 640,
+   "height_m": 14,
+   "crown_m": 16,
+   "age_band": ">200",
+   "ownership": "Pubblica",
+   "reason": "Second widest trunk in the city at 6.4 m and yet only 14 m tall, which almost certainly means a pollarded or topped tree. Neither the tourist route nor either press list names it, so it has no place name at all yet and no second source. Worth a look because of the girth, but the height ratio needs explaining before it could be written. CHECKED 2026-08-23: this is NOT the press-documented 'plane of Corso Novara by the Cimitero Monumentale' (see that separate, already-blocked lead below); this point sits about 1.8km further southeast, on the Sassi hillside. A reverse geocode of the coordinate returns 'Villa Rey' as the nearest named OSM feature, roughly 250m off, which may just be sparse tagging on that hillside rather than evidence the tree stands on Villa Rey's own grounds (Villa Rey's registered plane, reg_id 009, is a separate point 1.8km away and is itself blocked on access, see above). Still no name, no second source and no confirmed access status. Do not ship without a real site identification; worth a look at Google Street View or a Sassi/Madonna del Pilone neighbourhood association page next pass. CHECKED AGAIN 2026-08-31: Nominatim reverse geocode places the exact point at 92 int. 119, Corso Quintino Sella, Madonna del Pilone, within Torino proper (Circoscrizione 7, Sassi). Three separate searches this pass (platano + Madonna del Pilone/Sassi/Corso Quintino Sella; platano + Sassi/collina Po/censimento; platano + Villa Rey/Borgata Sassi) and one attempted fetch of the torinocronaca.it 16-monumental-trees survey and the 5wagora.com monumental-trees article (both loaded fine and list all 16 named register trees by park) found this tree in neither: it genuinely has no press coverage and no place name anywhere found, confirming the 2026-08-23 finding rather than overturning it. Register remains the sole source. Still a lead, not shippable without a second source under BRIEF_RESEARCH.md's two-source bar."
+  },
+  []
+ ],
+ [
+  "turin",
+  {
+   "name": "The three oaks of the Borgo Medievale, if they are ever split",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "register_id": "013/L219/TO/01",
+   "latitude": 45.0492,
+   "longitude": 7.68468,
+   "girth_cm": null,
+   "height_m": null,
+   "crown_m": null,
+   "age_band": null,
+   "ownership": "Pubblica",
+   "reason": "Blocked as shipped (see below) because the register files them as one GRUPPO with no measurements. Kept as a lead because the press lists them individually at 27 m each, so if a municipal source ever gives them separate girths and points, they are three ready-made entries sitting in the middle of a walk that already passes them."
+  },
+  []
+ ],
+ [
+  "utrecht",
+  {
+   "register_nr": 1678211,
+   "name": "Vegeta iep (Vegeta Elm)",
+   "latitude": 52.085843,
+   "longitude": 5.124038,
+   "place": "In de Warendorfftuin, Vrouw Juttehof, Lange Nieuwstraat 93-95, Utrecht",
+   "planted_band": "1860-1870",
+   "reason": "owner_category gemeente but setting is 'tuin' (garden) inside the Vrouw Juttehof, another hofje/almshouse courtyard. Needs an explicit access check before shipping, same caution as above.",
+   "species": "Elm (Ulmus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  []
+ ],
+ [
+  "valencia",
+  {
+   "name": "Alzina de Mexic del Botanic (Quercus polymorpha)",
+   "species_register": "Quercus polymorpha",
+   "latitude": 39.476414,
+   "longitude": -0.38677,
+   "girth_m": 3.44,
+   "height_m": 26.5,
+   "crown_m": 25.2,
+   "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found within two search attempts and a direct-fetch attempt at the garden's own virtual species catalogue (jardibotanic.org); WebSearch's own AI summary claimed a jardibotanic.org catalogue page existed for this species, but per the search-summary-is-a-lead-never-a-source rule that summary was not trusted, and three different jardibotanic.org URLs fetched directly (pid 2294, 2297, and a live cadbusc= search for 'Quercus polymorpha') did not return this species. Register-only for now; worth a retry with a different jardibotanic.org pid or a Wikipedia/Wikispecies cross-check.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  []
+ ],
+ [
+  "warsaw",
+  {
+   "name": "The Weeping Ash at Palac Puslowskich (ul. Pulawska 97)",
+   "species": "European Ash, weeping form (Fraxinus excelsior f. pendula)",
+   "kodinspire": "PL.ZIPOP.1393.PP.1465011.3264",
+   "latitude": 52.19883,
+   "longitude": 21.02492,
+   "designated": "1990-12-27",
+   "reason": "A distinctive weeping-form ash, register-described as a remnant of a former palace park, standing around Palac Puslowskich (built 1862 for Ksawery Puslowski, designed by Henryk Marconi; historically the Instytut Moralnej Poprawy Dzieci, a childrens reform institute, per warszawyhistoriaukryta.blogspot.com and blogi.kukushka.eu). Current occupant/use and whether the grounds are open to walk-in visitors were NOT established this pass (ran out of budget after the palace-history search); a fotopolska.eu link that looked promising turned out to describe a different ash tree entirely (ul. Pustola, Wola) and was discarded per the search-summary-is-a-lead rule. 0.64km from war_009 and 0.46km from war_005, would fit the cluster well if access clears. Needs: current occupant of the palace/grounds and whether the tree stands on a public pavement or inside the institutional grounds. UPDATE 2026-08-31: established the current occupant, which the previous pass could not: Mlodziezowy Dom Kultury (MDK Mokotow), a youth culture centre, has occupied the palace since 1 January 1968 (whu.org.pl) and still operates there today (mdk-mokotow.pl). It publishes visiting/office hours (secretariat Mon-Thu 9-17, described elsewhere as open Mon-Thu 8-20 and Sat 8-14, closed Fri/Sun) and a playground/small garden area at Pulawska 97B is mentioned by a directory listing, which suggests routine walk-in use rather than an appointment-only site. But no source describes the grounds, a garden or the tree itself, or states plainly that a member of the public (not enrolled in a class) may walk onto the property to see it, so this does not yet clear the honest access-line test. Leaving as a lead rather than shipping or blocking; a session that can browse mdk-mokotow.pl's photo galleries or Google Street View/Maps reviews, or a reader visit, would likely settle it quickly."
+  },
+  []
+ ],
+ [
+  "_famous-united-kingdom",
+  {
+   "name": "Wallace Yew",
+   "lat": 55.835547,
+   "lng": -4.488838,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:The_Wallace_Monument,_Elderslie_(geograph_2393343).jpg",
+    "https://commons.wikimedia.org/wiki/File:The_Wallace_Yew_(geograph_7720934).jpg",
+    "https://commons.wikimedia.org/wiki/File:The_Wallace_Yew_-_geograph.org.uk_-_2115747.jpg"
+   ],
+   "status": "lead",
+   "species": "Yew (Taxus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "why": "Verified and NOT shipped, 2026-08-29. Alive as of a 2021 photograph and behind a protective fence at Elderslie beside the Wallace monument, but wrecked: set on fire in 1978, and a storm on 12 January 2005 tore away the better-growing half and split the trunk almost to the ground. Age is genuinely disputed rather than merely unknown, 300 years by expert estimate against a 700-year tradition tying it to William Wallace himself, with 18th-century parish records already calling it ancient. Source: scotlands-yew-trees.org. Held on the walk-across-town test rather than on any rule; revisit if a recent photograph shows it worth the trip."
+  },
+  []
+ ],
+ [
+  "barcelona",
+  {
+   "name": "Molle del jardi d'Aclimatacio and Eucaliptus tuart del jardi d'Aclimatacio",
+   "species": "Schinus longifolia; Eucalyptus gomphocephala",
+   "lat": 41.3663,
+   "lng": 2.1512,
+   "status": "lead",
+   "why": "Both dated 'Per determinar' in the register, both a short walk from bcn_005 and bcn_006. Two undated trees is not a walk."
+  },
+  []
+ ],
+ [
+  "barcelona",
+  {
+   "name": "Pebrer bord del carrer Maignon",
+   "species": "Schinus molle",
+   "lat": 41.41023316885091,
+   "lng": 2.152881283257778,
+   "status": "lead",
+   "why": "Same garden as the Garrofer above, 41m away, same access question and same conclusion: register plus beteve.cat's 2021 press piece give two sources for existence and species, but not for public access. Girth of 4.34m is large for the species; plausible for a mature multi-stemmed Schinus molle but worth a sanity check against a photo before shipping. Resolve alongside the Garrofer, they are one site.",
+   "register_id": 99400680097,
+   "register_notes": "Girth 4.34m, height 10m, crown 12m. Catalogued 2021. Ownership field blank in the register import."
+  },
+  []
+ ],
+ [
+  "barcelona",
+  {
+   "name": "The Pedralbes cluster: Jardins del Palau Reial de Pedralbes and Jardins de la Torre Girona",
+   "species": "Pinus pinea; Cedrus deodara; Tetraclinis articulata; Brachychiton populneus; Maclura pomifera; Pinus halepensis",
+   "lat": 41.3886,
+   "lng": 2.1163,
+   "status": "lead",
+   "why": "Not evaluated in this pass, and recorded here because it is the strongest untouched cluster in the city. Eight register entries lie inside 400 m of each other across the Palau Reial gardens, the Torre Girona gardens and the Pavellons Guell with Gaudi's dragon gate, all in one walk, 1.2 km west of bcn_007. A future pass should take this as a single unit rather than tree by tree, and must check the access of each: the Palau Reial gardens are public, Torre Girona sits on the UPC campus, and the Pavellons Guell keep visiting hours.",
+   "register_notes": "OSM nodes 4506752018, 4532330334, 4506742261, 4506743003, 4506753110 confirm several of these positions."
+  },
+  []
+ ],
+ [
+  "barcelona",
+  {
+   "name": "Lledoner de la Fundacio Munoz Ramonet",
+   "species": "Celtis australis",
+   "lat": 41.39627,
+   "lng": 2.14689,
+   "status": "lead",
+   "why": "Access unverified. The Munoz Ramonet gardens passed to the city and open to the public on a limited schedule; that needs confirming before this counts as publicly accessible. Undated in the candidate list."
+  },
+  []
+ ],
+ [
+  "barcelona",
+  {
+   "name": "Figuera de la Facultat de Dret",
+   "species": "Ficus carica",
+   "lat": 41.38738,
+   "lng": 2.12075,
+   "status": "lead",
+   "why": "On the university law faculty grounds. The campus is open in practice but the register does not say so, and the entry is undated. Sits inside the Pedralbes cluster above, so resolve it with that pass."
+  },
+  []
+ ],
+ [
+  "barcelona",
+  {
+   "name": "Melaleuca dels jardins de Petra Kelly",
+   "species": "Melaleuca armillaris",
+   "lat": 41.36523,
+   "lng": 2.16176,
+   "status": "lead",
+   "why": "Undated, 4 m tall and a 1.88 m girth, which is a broad low shrub rather than a tree. Recorded for completeness.",
+   "register_id": 99400680104
+  },
+  []
+ ],
+ [
+  "brussels",
+  {
+   "register_id": "3423 / 3420",
+   "name": "The Silver Maple and Pagoda Tree of Place Jean Jacobs",
+   "species": "Acer saccharinum, Sophora japonica",
+   "girth_cm": 266,
+   "lat": 50.8353,
+   "lng": 4.35234,
+   "status": "lead",
+   "why": "A tiny square between the Sablon and the Palace of Justice, two registered trees, both described as holding a central position in the landscape. The silver maple's health is recorded as 'Defauts moyens', middling defects, which is the worst rating anywhere in this cluster and needs checking before it could ship. bru_008 already gives Brussels a pagoda tree."
+  },
+  []
+ ],
+ [
+  "buenosaires",
+  {
+   "name": "Aguaribay del Perito Moreno",
+   "species": "Peruvian Peppertree (Schinus molle)",
+   "lat": -34.634083,
+   "lng": -58.402,
+   "status": "lead",
+   "why": "Excellent facts otherwise: planted in 1872 by explorer Francisco 'Perito' Moreno on his own estate (per his own unpublished memoirs, verified by Argentina's National Commission of Monuments), the school later built on the site (Instituto Bernasconi, Catulo Castillo 2750, Parque Patricios) was moved 10 metres during construction specifically to avoid removing the tree, and it was Argentina's first tree declared a national historic monument (Decreto Nacional 3.369/1943 per Argentina.gob.ar; press sources also cite Decreto 2.232/1943, likely a mix-up with the later 1946 magnolia/pacara decree, worth resolving before publishing). BLOCKED FROM SHIPPING THIS PASS on access only: sources agree the tree stands within the Instituto's own grounds/interior park ('dentro del predio, no sobre la vereda'), which is a functioning public school of over 3,600 students. The complex does house two public museums people visit (Geografico 'Juan B. Teran' and Ciencias Naturales 'Angel Gallardo'), which suggests some real public access exists, but no source found this pass confirmed whether the tree itself sits in a part of the grounds reachable during those visits, or whether it is visible from Catulo Castillo street over a fence/gate. A follow-up pass should check for a street-view/photo showing the tree from outside the grounds, or a museum-visit description that places it on the visitable route, before this ships as either a full entry or a view-only one."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Cedro-do-atlas (ICNF, 8.4km out)",
+   "species": "Atlas Cedar (Cedrus atlantica)",
+   "lat": 40.2657,
+   "lng": -8.4677,
+   "status": "lead",
+   "why": "Register only (portugal-icnf.json): girth 3.7m, age_register 108. Not researched this pass (time-boxed to the sub-4km cluster). Needs a second source and an access/location check before it can verify."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Sobreiro (ICNF, 10.3km out)",
+   "species": "Cork Oak (Quercus suber)",
+   "lat": 40.2583,
+   "lng": -8.5104,
+   "status": "lead",
+   "why": "Register only: girth 4.6m, age_register 308, one of the oldest-dated candidates in the whole set. Not researched this pass. Worth prioritising next time given the age."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Tulipeiro-da-virginia (ICNF, 11.8km out)",
+   "species": "Tulip Tree (Liriodendron tulipifera)",
+   "lat": 40.1171,
+   "lng": -8.4964,
+   "status": "lead",
+   "why": "Register only: girth 4.3m, age_register 115. South of the city, on the far side of the close-in cluster; not researched this pass."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Sobreiro (ICNF, 12.1km out)",
+   "species": "Cork Oak (Quercus suber)",
+   "lat": 40.2749,
+   "lng": -8.5209,
+   "status": "lead",
+   "why": "Register only: girth 5.4m, age_register 306. Not researched this pass."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Eucalipto (ICNF, 12.2km out)",
+   "species": "Eucalyptus obliqua",
+   "lat": 40.277,
+   "lng": -8.3083,
+   "status": "lead",
+   "why": "Register only: girth 4.4m, age_register 87. Not researched this pass; on the opposite side of the city from the 10.3-12.1km cork oaks, so it does not join that pair into a cluster."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Sequoia (ICNF, 13.3km out)",
+   "species": "Coast Redwood (Sequoia sempervirens)",
+   "lat": 40.2695,
+   "lng": -8.2841,
+   "status": "lead",
+   "why": "Register only: girth 4.2m, age_register 158. Close to the two glicinias and the Eucalyptus obliqua candidate above (within about 1km), possibly a small cluster worth a dedicated pass."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Glicinia n.2 (ICNF, 13.5km out)",
+   "species": "Chinese Wisteria (Wisteria sinensis)",
+   "lat": 40.2699,
+   "lng": -8.281,
+   "status": "lead",
+   "why": "Register only: girth 0.1m, age_register 11. Very young; likely not remarkable on its own, but sits beside glicinia n.1 and the sequoia above."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Glicinia n.1 (ICNF, 13.6km out)",
+   "species": "Chinese Wisteria (Wisteria sinensis)",
+   "lat": 40.2701,
+   "lng": -8.2807,
+   "status": "lead",
+   "why": "Register only: girth 2.3m, age_register 97. Not researched this pass."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Platano (ICNF, 13.6km out)",
+   "species": "London Plane (Platanus x hispanica)",
+   "lat": 40.2273,
+   "lng": -8.5706,
+   "status": "lead",
+   "why": "Register only ('Platanus hybrida Brot.' in the source, standardise to London Plane per house style): girth 5.0m, age_register 100. West of the close-in cluster; not researched this pass."
+  },
+  []
+ ],
+ [
+  "coimbra",
+  {
+   "name": "Falsa-arvore-do-incenso (ICNF, 18.3km out)",
+   "species": "Sweet Pittosporum (Pittosporum undulatum)",
+   "lat": 40.10945,
+   "lng": -8.23704,
+   "status": "lead",
+   "why": "Register only: girth 2.4m, age_register 108. Furthest of the non-Bucaco candidates from the centre; a day-trip-boundary check is needed before this could ever ship as part of a Coimbra page."
+  },
+  []
+ ],
+ [
+  "kagoshima",
+  {
+   "name": "Ogatama and ginkgo of Nanshu Shrine (the ginkgo)",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "lat": 31.60645,
+   "lng": 130.558877,
+   "status": "lead",
+   "why": "Preserved tree 16: 2.97 m girth, 24 m tall, about 130 years, same grounds as kag_005. Left off to avoid two entries at one stop; add if the city page deepens."
+  },
+  []
+ ],
+ [
+  "kagoshima",
+  {
+   "name": "Kaya and camphor of Kamo Hachiman Shrine",
+   "species": "Japanese Nutmeg-yew (Torreya nucifera) and Camphor Tree (Cinnamomum camphora)",
+   "lat": 31.765757,
+   "lng": 130.569538,
+   "status": "lead",
+   "why": "5.0 m and 7.4 m girth, in the same grounds as kag_010 (Hitozato Kyoboku, Kagoshima prefecture list). No age published for either. Would turn the Aira day trip into a three-tree stop."
+  },
+  []
+ ],
+ [
+  "napoli",
+  {
+   "name": "The Camphor of the Principessa Jolanda Gardens",
+   "species": "Cinnamomum camphora",
+   "lat": 40.86683,
+   "lng": 14.24794,
+   "status": "lead",
+   "why": "388 cm in the national register. Corroborated only loosely, by a gardening site noting that a camphor and a cedar in these gardens are still monumental, with no date on the claim. Same liveness doubt as the cedar above after the 2022 lightning strike on the staircase plane. Also a fourth camphor would make the page repetitive."
+  },
+  []
+ ],
+ [
+  "napoli",
+  {
+   "name": "The Camphor of the Sant'Andrea delle Dame Cloister",
+   "species": "Cinnamomum camphora",
+   "lat": 40.85257,
+   "lng": 14.25249,
+   "status": "lead",
+   "why": "500 cm and 25 m in the cloister of a sixteenth century convent now part of the university medical faculty, in the historic centre 1.5 km south of Capodimonte. Sacred ground, exactly the kind of site worth searching. Held back on two counts: single-sourced, and cloister access inside a working university building is unconfirmed, which hard rule 10 says means leave it out until someone establishes that a visitor may walk in."
+  },
+  []
+ ],
+ [
+  "napoli",
+  {
+   "name": "The Camphor of the Accademia di Belle Arti Cloister",
+   "species": "Cinnamomum camphora",
+   "lat": 40.85175,
+   "lng": 14.25118,
+   "status": "lead",
+   "why": "300 cm and 28 m, tall for its girth, in the cloister of the fine arts academy. Same two problems as Sant'Andrea delle Dame: single-sourced and unconfirmed public access to an institutional courtyard."
+  },
+  []
+ ],
+ [
+  "napoli",
+  {
+   "name": "The Nolina of the Orto Botanico",
+   "species": "Nolina / Beaucarnea, species disputed",
+   "lat": 40.861058,
+   "lng": 14.261711,
+   "status": "lead",
+   "why": "560 cm at the base and 4 m tall, the second widest registered trunk in the whole garden and visually the strangest thing in it, a huge swollen succulent foot. Held back on one point only, and it is the species. MASAF calls it Nolina longifolia, Campania scheda 163 calls it Nolina recurvata, and those are two different plants, not two names for one. Both are now placed in Beaucarnea and both are Italian 'pianta mangiafumo', so the common name cannot break the tie either. The garden's own desert and arboretum pages do not list it at all, so there is no third opinion online. Everything else verifies: both registers give the same 560 cm at the same point. Publishing genus-only was considered and rejected, since no entry in the corpus does that and hard rule 9 keys the species pages on the binomial. To resolve: read the plant label on site, or ask the garden. Then it ships."
+  },
+  []
+ ],
+ [
+  "nara",
+  {
+   "name": "Cycad of Jokyo-ji",
+   "species": "Cycas revoluta",
+   "lat": 34.6823,
+   "lng": 135.8252,
+   "status": "lead",
+   "why": "Nara City Natural Monument, 1979, and close to the station. Small tree at a minor temple, thin sourcing, visitor access unverified."
+  },
+  []
+ ],
+ [
+  "perugia",
+  {
+   "name": "White Mulberry, Cenerente",
+   "species": "Morus alba",
+   "lat": 43.143989,
+   "lng": 12.353722,
+   "status": "lead",
+   "why": "Register sheet 33/G478/PG/10, girth 327cm, only 4m tall (unusually short for the girth, worth sanity-checking the height figure). 4.54km out in Cenerente, isolated, no independent source found this pass."
+  },
+  []
+ ],
+ [
+  "rouen",
+  {
+   "name": "Le hetre a oreilles (the Beech with Ears)",
+   "species": "Fagus sylvatica",
+   "lat": 49.3231821,
+   "lng": 0.887365,
+   "status": "lead",
+   "why": "One of the 13 officially designated trees (register + ONF page both confirm it), a beech named for a distinctive shape ('with ears'), 113cm base diameter, 35m tall, register age estimate 120-150 years, in parcelle 440, Foret domaniale de La Londe-Rouvray. Held back this pass on distance and access quality rather than evidence: about 19.7km from central Rouen with only generic forest-road driving directions given (no named waymarked circuit like the Petit-Essart or Troglodytes trails that got chene_a_madame and h_roche_fouet included), and no description found of what the 'ears' actually look like. A future pass should look for a photo of the shape and check whether it sits on any marked circuit before adding it."
+  },
+  []
+ ],
+ [
+  "rouen",
+  {
+   "name": "Les pionniers (the Pioneers, Douglas firs)",
+   "species": "Pseudotsuga menziesii",
+   "lat": 49.321884,
+   "lng": 0.8851463,
+   "status": "lead",
+   "why": "One of the 13 officially designated trees/groups, a stand of Douglas firs (62-94cm base diameter, 35-38m tall, register age estimate 120-150 years) in parcelle 451, Foret domaniale de La Londe-Rouvray, right next to the hetre a oreilles above (same car park, same access route). Held back for the same reasons: about 19.9km out, generic forest-road access only, no distinct visual story beyond 'first-generation planted conifers'. If h_oreilles is added later this one is essentially free (same trip)."
+  },
+  []
+ ],
+ [
+  "salzburg",
+  {
+   "name": "Birnbaum beim Hofstetter am Gaisberg (pear tree, Gaisberg)",
+   "species": "Pyrus communis",
+   "lat": 47.786038,
+   "lng": 13.100494,
+   "status": "lead",
+   "why": "Register entry, over 180 years old per the register transcription itself (a real documented age, not derived), last remnant of an orchard on the Gaisberg. Not individually verified this pass for lack of time; a promising candidate for a follow-up, though the Gaisberg is a c.5km hill outside the tight walkable cluster."
+  },
+  []
+ ],
+ [
+  "taormina",
+  {
+   "name": "Fico magnolioide di Villa Puglisi, Riposto",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "lat": 37.728036,
+   "lng": 15.198322,
+   "status": "lead",
+   "why": "MASAF sheet 01/H325/CT/19: 11 metres round and 18 metres tall, in Villa Puglisi at Riposto, 15.7 km from Taormina. Public villa gardens by the name, so this one probably passes; it is the only publishable tree found near Taormina and one tree cannot carry a page unless it is itself the destination. Would work as a Catania-area entry, or with Riposto as its own place."
+  },
+  []
+ ],
+ [
+  "vilnius",
+  {
+   "name": "Žvėryno pušis (Žvėrynas pine)",
+   "name_lt": "Žvėryno pušis",
+   "register_id": "0310505020043",
+   "lat": 54.692463,
+   "lng": 25.244651,
+   "status": "lead",
+   "why": "Researched this pass: register-only, one source. Two search attempts (general web search, then a saugomasmedis.lt/register-id-targeted search) found no independent second source naming this specific pine; results kept surfacing the neighbouring Žvėrynas lindens and oak instead (Sėlių/T.Narbuto streets cluster, ~700m-1km north). No address, condition or accessibility information found either. Stays a lead until a second source or a Lithuanian-language heritage/municipal page turns up. Re-checked this pass (vietoves.lt Ž-index search, targeted web search): still no second source found. Stays a lead.",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  []
+ ],
+ [
+  "vilnius",
+  {
+   "name": "Belunai Oak",
+   "name_lt": "Belūnų ąžuolas",
+   "register_id": "0310505010101",
+   "lat": 54.6845,
+   "lng": 25.12796,
+   "status": "lead",
+   "why": "9.8km out, inside the day-trip boundary if public transport reaches it within roughly 30 minutes (unverified). Not researched this pass.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  []
+ ],
+ [
+  "vilnius",
+  {
+   "name": "Canadian poplar in Castle park",
+   "name_lt": "Pilių parko kanadinė tuopa",
+   "register_id": "0310505060005",
+   "lat": 54.68532,
+   "lng": 25.29014,
+   "status": "lead",
+   "why": "A single named individual poplar in the Castle park area. Not researched this pass; a Canadian poplar (introduced, fast-growing, relatively short-lived) is a weaker remarkable-tree case than the named oaks, lindens and multi-trunk specimens already shipped or listed nearby, so it is deprioritised rather than blocked.",
+   "species": "Poplar (Populus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  []
+ ],
+ [
+  "vilnius",
+  {
+   "name": "Pilaite Manor Pine",
+   "name_lt": "Pilaitės dvaro pušis",
+   "register_id": "0310506000166",
+   "lat": 54.69998,
+   "lng": 25.19422,
+   "status": "lead",
+   "why": "Register-only, one source, despite three search attempts this pass (general web search, vietoves.lt P-index page, the Pilaitė district Wikipedia article). Confirmed as a real, recently-designated state nature heritage object (a 2020s VSTT press release names it among 80 newly protected objects, per search snippets), but the press release itself (vstt.lrv.lt) 403s to fetch and a mirroring news article (madeinvilnius.lt) also 403s, so no independent source could actually be read to confirm species/girth/age. Stays a lead until one of those pages can be reached (try a Wayback Machine snapshot next) or another source turns up.",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "sources_tried": [
+    "vstt.lrv.lt press release (403 Forbidden to fetch)",
+    "madeinvilnius.lt news mirror (403 Forbidden to fetch)",
+    "vietoves.lt P-index (no match)",
+    "lt.wikipedia.org Pilaitė district article (no mention)"
+   ]
+  },
+  []
+ ],
+ [
+  "vilnius",
+  {
+   "name": "Mickūnų ąžuolas (Mickūnai oak)",
+   "name_lt": "Mickūnų ąžuolas",
+   "register_id": "0310506000097",
+   "lat": 54.703003,
+   "lng": 25.491929,
+   "status": "lead",
+   "why": "Researched this pass: existence corroborated by a second independent source (vietoves.lt's own Vilniaus rajono savivaldybė natural-heritage catalogue, fetched directly, lists it by name under Medžiai/Vilniaus rajono savivaldybė), but that source gives no age, girth, address or condition, matching the register's own bare entry. Mickūnai is a town in Vilnius DISTRICT municipality (not city), roughly 4km beyond the city boundary and ~12.8km from the register point to the city centre; it has its own railway station on the Vilnius-Ignalina-Turmantas line, so a day trip is plausible, but two attempts (a schedule search and a Moovit fetch that returned no content) could not confirm the door-to-door public transport time against the ~30 minute boundary. Left as a lead rather than shipped or blocked: worth a transit-time check before it could be presented honestly as reachable from Vilnius.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  []
+ ],
+ [
+  "wroclaw",
+  {
+   "name": "Dab Nestor",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "lat": 51.137284561925796,
+   "lng": 17.027349725780148,
+   "status": "lead",
+   "why": "Researched this pass. Two independent sources agree closely on facts: the GDOS register (designated 2009-02-17, PL.ZIPOP.1393.PP.0264011.2380) and a dedicated page on drzeworoku.pl (a Polish tree-of-the-year competition site), which gives species Quercus robur, age ~220 years, height ~20m, girth 435cm, and history (planted 19th century, preserved through postwar redevelopment, later adopted and named by Primary School No. 50, ul. Czeska 38, Wroclaw-Psie Pole, which reported it into the register). That clears the two-source bar for existence/species/age. NOT SHIPPED this pass because access does not clear hard rule 10s school test: every source describes it as standing on or at the boundary of Primary School No. 50s grounds (\"marked the boundary between two schools\"), and none states that the public may walk onto that ground, that a public path crosses it, or that it borders open parkland. wroclaw.pl official pomniki-przyrody page names it in a list with no address or access detail. Needs: a satellite/street-level check of whether the registered coordinate (51.137285,17.027350) sits on the street/pavement side of the boundary rather than inside a fenced schoolyard, or a source stating public access, before this can ship."
+  },
+  []
+ ],
+ [
+  "wroclaw",
+  {
+   "name": "Wroclaw Zoo dendrological embankment cluster",
+   "species": "Ginkgo biloba, Chamaecyparis lawsoniana, Thuja occidentalis, Taxus baccata, Chamaecyparis pisifera, Cercidiphyllum japonicum, Populus nigra, Celtis occidentalis, Ulmus laevis, Sorbus torminalis, Castanea sativa (11 separate single-tree register entries)",
+   "lat": 51.11,
+   "lng": 17.072,
+   "status": "lead",
+   "why": "A dense run of individually-designated exotic and native trees (designated 1999-2011, various dates) clustered tightly around the Wroclaw Zoo / Park Szczytnicki area, roughly 2.0-3.0km from the centre. A general web search places this concentration 'on an embankment at the section of the Zoological Garden', meaning likely paid zoo entry rather than free park; not verified tree by tree this pass. A future pass must confirm, per tree, whether it stands on the free park side or inside the paid zoo and say so honestly in access; paid entry is publishable as long as access states it plainly. See poland-gdos-pomniki-przyrody.json filtered to lat 51.108-51.118 / lon 17.067-17.076, near_city Wroclaw, for the full list of gids."
+  },
+  []
+ ],
+ [
+  "zaragoza",
+  {
+   "name": "The London Plane of the Huerva mouth",
+   "species": "Platanus x hispanica",
+   "ficha": 31,
+   "lat": 41.650126,
+   "lng": -0.854252,
+   "status": "lead",
+   "why": "The tallest tree in the register at 30 m, and 3.40 m round at 1.30 m, condition 'bueno' in 2005. It stands on public land between the Manuel Gimenez Abad bridge of the Tercer Cinturon and the railway bridge, which is exactly the problem: it is a road-and-rail margin rather than a place anyone walks to, roughly 900 m southeast of Parque Bruil with no pleasant route between. The book already noted it was short of water because the irrigation channel beside it had been altered. Keep as the candidate if the Huerva riverside path is ever made continuous."
+  },
+  []
+ ],
+ [
+  "zaragoza",
+  {
+   "name": "The Field Elms of Camino de Enmedio, La Cartuja",
+   "species": "Ulmus minor",
+   "lat": 41.604558,
+   "lng": -0.838159,
+   "status": "lead",
+   "why": "Two registered field elms on the same lane in La Cartuja Baja, 2.50 m and 2.20 m round, both 'bueno' in 2005, with a registered white mulberry a short way along the same camino. Mature field elms are worth attention anywhere because Dutch elm disease removed most of them, and three registered trees on one rural lane is a genuine small cluster. La Cartuja Baja is 8 km southeast of the centre and inside the day-trip boundary by city bus. Needs a survival check, since elms are exactly the species that quietly go, and the book already flagged that the lane had recently been concreted over one of them. CHECKED 2026-08-15: a Wikiloc trail description of this exact stretch (Pabellon Principe Felipe to La Cartuja Baja via Camino de Enmedio) still lists 'arboles singulares de moral y olmo' along the path, which is real but general corroboration that at least one elm and the mulberry survive; it does not say which of the two registered elms, so the concreted-over one still cannot be identified. Not written: the register already flagged one specimen as directly threatened and a general trail blurb cannot rule out that it was the one lost. Next step: streetlevel imagery or a more specific, dated source."
+  },
+  []
+ ]
+]
