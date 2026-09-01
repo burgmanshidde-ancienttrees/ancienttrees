@@ -30,8 +30,8 @@
       "at": "2026-08-30T12:32:01+00:00"
     },
     "2026-08-31": {
-      "note": "Fixed the walks-pill BLOCKER: [city].astro map pill now links to /[city]/walks when one exists rather than claiming walks are app-only. Also fixed the Trees-nearby WARN: [tree].astro now hides the empty heading/div when there are no nearby trees, and rewrites the CTA sentence for single-tree places instead of pluralizing '1 remarkable ancient trees'. Verified on Sant'Alfio and Philadelphia; multi-tree pages (Charleston) unaffected.",
-      "at": "2026-08-31T19:32:31+00:00"
+      "note": "Fixed the walks-pill BLOCKER: [city].astro map pill now links to /[city]/walks when a real walks page exists, instead of falsely claiming walks are app-only. Built and QA'd clean, answered in health.py's ledger. || Separately (2026-09-01, not a REVIEW.md finding): the iOS floor job's failing schedule streak (device race, sign-in DRIFT, RefusedWalk cancel button) was already fixed on main by a prior session, commit 420a60f7, verified present in RefusedWalk.swift. The floor job only runs on schedule/dispatch, never push, so the fix is unverified until the next 05:00/17:00 UTC cron; this session's token cannot dispatch ios.yml by hand (403 on gh workflow run). Left for the next scheduled run to confirm.",
+      "at": "2026-09-01T06:08:21+00:00"
     }
   }
 }
