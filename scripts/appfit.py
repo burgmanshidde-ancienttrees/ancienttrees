@@ -506,6 +506,14 @@ def run_test(device, scratch):
         else:
             udid = appsweep.udid_for(
                 device, dict(appsweep.DEVICES).get(device, ""))
+        # A device simctl just created is not always immediately resolvable
+        # by xcodebuild's own "-destination id=..." matching, which failed
+        # outright ("Unable to find a device matching the provided
+        # destination specifier") on the floor job's first run against a
+        # brand new iOS 18 device, 2026-08-31. Booting registers it fully;
+        # appsweep.py's own main() already does this before using a device
+        # it just created, this brings run_test() in line with that.
+        appsweep.boot(udid)
     device_dir = pathlib.Path.home() / "Library/Developer/CoreSimulator/Devices" / udid
     for stale in device_dir.rglob(DUMP_NAME):
         stale.unlink()
