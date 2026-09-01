@@ -680,6 +680,17 @@ struct TreeDetail: View {
             if mine != nil, tree.age == nil {
                 Button { editing = .age } label: { fact("Add it", "Age") }
                     .buttonStyle(.plain)
+                    // THE SAME TWO LINES AS THE SPECIES BUTTON BELOW, and for
+                    // the same reason: a label's own frame gives the button no
+                    // hit area, so this measured 62 by 34 against Apple's 44 by
+                    // 44. Its sibling was fixed when the gate could see it; this
+                    // one only appears on a tree you added yourself, which no
+                    // launch argument could open until the own-tree screen was
+                    // added earlier today (d47da72f). The first measurement of
+                    // that screen found this, which is the whole argument for
+                    // adding it.
+                    .frame(minHeight: 44)
+                    .contentShape(.rect)
             } else {
                 fact(shortAge, "Age")
             }
