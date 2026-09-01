@@ -2427,6 +2427,30 @@
   },
   {
    "rank": 108,
+   "city": "Austin",
+   "country": "United States",
+   "slug": "austin",
+   "score": 9.51,
+   "demand": 226631,
+   "basis": "measured",
+   "status": "published",
+   "trees": 5,
+   "photos": 0,
+   "walks": 0,
+   "register": 0,
+   "ready": 9,
+   "supply": 9,
+   "target": 20,
+   "ease": 1.18,
+   "work_score": 11.22,
+   "article": "Austin, Texas",
+   "impressions_10d": 19,
+   "clicks_10d": 0,
+   "travel": 3648,
+   "wikidata": 0
+  },
+  {
+   "rank": 109,
    "city": "Jerusalem",
    "country": "Israel",
    "slug": "jerusalem",
@@ -2449,7 +2473,7 @@
    "wikidata": 0
   },
   {
-   "rank": 109,
+   "rank": 110,
    "city": "Guimaraes",
    "country": "Portugal",
    "slug": "guimaraes",
@@ -2472,7 +2496,7 @@
    "wikidata": 2
   },
   {
-   "rank": 110,
+   "rank": 111,
    "city": "San Diego",
    "country": "United States",
    "slug": "san-diego",
@@ -2495,7 +2519,7 @@
    "wikidata": 0
   },
   {
-   "rank": 111,
+   "rank": 112,
    "city": "Arnhem",
    "country": "Netherlands",
    "slug": "arnhem",
@@ -2518,7 +2542,7 @@
    "wikidata": 5
   },
   {
-   "rank": 112,
+   "rank": 113,
    "city": "Dubai",
    "country": "United Arab Emirates",
    "slug": "dubai",
@@ -2541,7 +2565,7 @@
    "wikidata": 0
   },
   {
-   "rank": 113,
+   "rank": 114,
    "city": "Trieste",
    "country": "Italy",
    "slug": "trieste",
@@ -2564,7 +2588,7 @@
    "wikidata": 13
   },
   {
-   "rank": 114,
+   "rank": 115,
    "city": "Melbourne",
    "country": "Australia",
    "slug": "melbourne",
@@ -2587,7 +2611,7 @@
    "wikidata": 3
   },
   {
-   "rank": 115,
+   "rank": 116,
    "city": "Quebec City",
    "country": "Canada",
    "slug": "quebec-city",
@@ -2610,7 +2634,7 @@
    "wikidata": 0
   },
   {
-   "rank": 116,
+   "rank": 117,
    "city": "Hamburg",
    "country": "Germany",
    "slug": "hamburg",
@@ -2633,6 +2657,29 @@
    "wikidata": 2
   },
   {
+   "rank": 118,
+   "city": "Dallas",
+   "country": "United States",
+   "slug": "dallas",
+   "score": 9.01,
+   "demand": null,
+   "basis": "measured",
+   "status": "published",
+   "trees": 8,
+   "photos": 1,
+   "walks": 1,
+   "register": 0,
+   "ready": 9,
+   "supply": 9,
+   "target": 30,
+   "impressions_10d": 18,
+   "clicks_10d": 0,
+   "ease": 1.18,
+   "work_score": 10.63,
+   "travel": 12294,
+   "wikidata": 0
+  },
+  {
    "city": "Milwaukee",
    "country": "United States",
    "status": "pending",
@@ -2642,7 +2689,7 @@
    "score": 10.63,
    "basis": "predicted (travel demand)",
    "work_score": 10.63,
-   "rank": 117,
+   "rank": 119,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2654,7 +2701,7 @@
    "slug": "milwaukee"
   },
   {
-   "rank": 118,
+   "rank": 120,
    "city": "Salt Lake City",
    "country": "United States",
    "slug": "salt-lake-city",
@@ -2686,7 +2733,7 @@
    "score": 10.29,
    "basis": "predicted (travel demand)",
    "work_score": 10.29,
-   "rank": 119,
+   "rank": 121,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2707,7 +2754,7 @@
    "score": 10.25,
    "basis": "predicted (travel demand)",
    "work_score": 10.25,
-   "rank": 120,
+   "rank": 122,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2728,7 +2775,7 @@
    "score": 10.07,
    "basis": "predicted (travel demand)",
    "work_score": 10.07,
-   "rank": 121,
+   "rank": 123,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2740,7 +2787,7 @@
    "slug": "raleigh"
   },
   {
-   "rank": 122,
+   "rank": 124,
    "city": "Bali",
    "country": "Indonesia",
    "slug": "bali",
@@ -2773,7 +2820,7 @@
    "score": 9.76,
    "basis": "predicted (travel demand)",
    "work_score": 9.76,
-   "rank": 123,
+   "rank": 125,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2794,7 +2841,7 @@
    "score": 9.7,
    "basis": "predicted (travel demand)",
    "work_score": 9.7,
-   "rank": 124,
+   "rank": 126,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -2806,7 +2853,7 @@
    "slug": "el-paso"
   },
   {
-   "rank": 125,
+   "rank": 127,
    "city": "Budapest",
    "country": "Hungary",
    "slug": "budapest",
@@ -2829,7 +2876,7 @@
    "wikidata": 2
   },
   {
-   "rank": 126,
+   "rank": 128,
    "city": "Santorini",
    "country": "Greece",
    "slug": "santorini",
@@ -2853,31 +2900,7 @@
    "wikidata": 0
   },
   {
-   "rank": 127,
-   "city": "Austin",
-   "country": "United States",
-   "slug": "austin",
-   "score": 9.51,
-   "demand": 226631,
-   "basis": "measured",
-   "status": "published",
-   "trees": 5,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 20,
-   "ease": 1.0,
-   "work_score": 9.51,
-   "article": "Austin, Texas",
-   "impressions_10d": 19,
-   "clicks_10d": 0,
-   "travel": 3648,
-   "wikidata": 0
-  },
-  {
-   "rank": 128,
+   "rank": 129,
    "city": "Miami",
    "country": "United States",
    "slug": "miami",
@@ -2900,7 +2923,7 @@
    "wikidata": 0
   },
   {
-   "rank": 129,
+   "rank": 130,
    "city": "Turku",
    "country": "Finland",
    "slug": "turku",
@@ -2923,7 +2946,7 @@
    "wikidata": 1
   },
   {
-   "rank": 130,
+   "rank": 131,
    "city": "Strasbourg",
    "country": "France",
    "slug": "strasbourg",
@@ -2946,7 +2969,7 @@
    "wikidata": 0
   },
   {
-   "rank": 131,
+   "rank": 132,
    "city": "Edmonton",
    "country": "Canada",
    "slug": "edmonton",
@@ -2969,7 +2992,7 @@
    "wikidata": 0
   },
   {
-   "rank": 132,
+   "rank": 133,
    "city": "Winnipeg",
    "country": "Canada",
    "slug": "winnipeg",
@@ -2992,7 +3015,7 @@
    "wikidata": 0
   },
   {
-   "rank": 133,
+   "rank": 134,
    "city": "Canberra",
    "country": "Australia",
    "slug": "canberra",
@@ -3015,7 +3038,7 @@
    "wikidata": 0
   },
   {
-   "rank": 134,
+   "rank": 135,
    "city": "Manchester",
    "country": "United Kingdom",
    "slug": "manchester",
@@ -3035,29 +3058,6 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 9056,
-   "wikidata": 0
-  },
-  {
-   "rank": 135,
-   "city": "Dallas",
-   "country": "United States",
-   "slug": "dallas",
-   "score": 9.01,
-   "demand": null,
-   "basis": "measured",
-   "status": "published",
-   "trees": 8,
-   "photos": 1,
-   "walks": 1,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 30,
-   "impressions_10d": 18,
-   "clicks_10d": 0,
-   "ease": 1.0,
-   "work_score": 9.01,
-   "travel": 12294,
    "wikidata": 0
   },
   {
@@ -3310,6 +3310,29 @@
    "wikidata": 2
   },
   {
+   "rank": 147,
+   "city": "Houston",
+   "country": "United States",
+   "slug": "houston",
+   "score": 7.01,
+   "demand": null,
+   "basis": "measured",
+   "status": "published",
+   "trees": 4,
+   "photos": 0,
+   "walks": 0,
+   "register": 0,
+   "ready": 6,
+   "supply": 6,
+   "target": 30,
+   "impressions_10d": 14,
+   "clicks_10d": 1,
+   "ease": 1.12,
+   "work_score": 7.85,
+   "travel": 12217,
+   "wikidata": 0
+  },
+  {
    "city": "Albuquerque",
    "country": "United States",
    "status": "pending",
@@ -3319,7 +3342,7 @@
    "score": 7.83,
    "basis": "predicted (travel demand)",
    "work_score": 7.83,
-   "rank": 147,
+   "rank": 148,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -3331,7 +3354,7 @@
    "slug": "albuquerque"
   },
   {
-   "rank": 148,
+   "rank": 149,
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
@@ -3364,7 +3387,7 @@
    "score": 7.53,
    "basis": "predicted (travel demand)",
    "work_score": 7.68,
-   "rank": 149,
+   "rank": 150,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -3376,7 +3399,7 @@
    "slug": "minneapolis"
   },
   {
-   "rank": 150,
+   "rank": 151,
    "city": "Istanbul",
    "country": "Turkey",
    "slug": "istanbul",
@@ -3399,7 +3422,7 @@
    "wikidata": 7
   },
   {
-   "rank": 151,
+   "rank": 152,
    "city": "Nuremberg",
    "country": "Germany",
    "slug": "nuremberg",
@@ -3422,7 +3445,7 @@
    "wikidata": 13
   },
   {
-   "rank": 152,
+   "rank": 153,
    "city": "Los Angeles",
    "country": "United States",
    "slug": "los-angeles",
@@ -3445,7 +3468,7 @@
    "wikidata": 2
   },
   {
-   "rank": 153,
+   "rank": 154,
    "city": "Luang Prabang",
    "country": "Laos",
    "slug": "luang-prabang",
@@ -3468,7 +3491,7 @@
    "wikidata": 0
   },
   {
-   "rank": 154,
+   "rank": 155,
    "city": "Bergen",
    "country": "Norway",
    "slug": "bergen",
@@ -3491,7 +3514,7 @@
    "wikidata": 0
   },
   {
-   "rank": 155,
+   "rank": 156,
    "city": "Mexico City",
    "country": "Mexico",
    "slug": "mexico-city",
@@ -3523,7 +3546,7 @@
    "score": 7.1,
    "basis": "predicted (travel demand)",
    "work_score": 7.24,
-   "rank": 156,
+   "rank": 157,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -3535,7 +3558,7 @@
    "slug": "baltimore"
   },
   {
-   "rank": 157,
+   "rank": 158,
    "city": "Glasgow",
    "country": "United Kingdom",
    "slug": "glasgow",
@@ -3558,7 +3581,7 @@
    "wikidata": 3
   },
   {
-   "rank": 158,
+   "rank": 159,
    "city": "Oslo",
    "country": "Norway",
    "slug": "oslo",
@@ -3579,29 +3602,6 @@
    "work_score": 7.14,
    "travel": 7046,
    "wikidata": 7
-  },
-  {
-   "rank": 159,
-   "city": "Houston",
-   "country": "United States",
-   "slug": "houston",
-   "score": 7.01,
-   "demand": null,
-   "basis": "measured",
-   "status": "published",
-   "trees": 4,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 30,
-   "impressions_10d": 14,
-   "clicks_10d": 1,
-   "ease": 1.0,
-   "work_score": 7.01,
-   "travel": 12217,
-   "wikidata": 0
   },
   {
    "rank": 160,
