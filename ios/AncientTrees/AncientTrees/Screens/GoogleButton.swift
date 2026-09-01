@@ -14,10 +14,14 @@
 // volgen geen eigen ideeen."
 //
 // So this is Google's published button: white ground, a one point #747775
-// border, #1F1F1F label, the four-colour G at 18 points with 12 points of
-// padding, and Roboto Medium where it exists. Using their mark on a button that
-// signs people into Google is exactly what their guidelines are for; drawing a
-// worse one of my own was never the safer option, only the more timid one.
+// border, #1F1F1F label, the unaltered four-colour G, and Roboto Medium where it
+// exists. Using their mark on a button that signs people into Google is exactly
+// what their guidelines are for; drawing a worse one of my own was never the
+// safer option, only the more timid one.
+//
+// Where it departs from their spec, and why, is the note inside body: this
+// button never stands alone, it stands under Apple's, and Apple's cannot be
+// told where to put anything.
 
 import SwiftUI
 
@@ -57,25 +61,53 @@ struct GoogleSignInButton: View {
 
     var body: some View {
         Button(action: action) {
-            // Mark on the left, LABEL CENTRED. It used to be an HStack with a
-            // trailing Spacer, so the words sat hard against the G with all the
-            // air on the right, while the Apple button beside it centres its
-            // own content. Two sign-in buttons that disagree about where their
-            // words go is what Hidde saw (2026-08-24: "totaal niet goed
-            // uitgelijnd"), and centring is also Google's own layout.
-            ZStack {
+            // MARK AND LABEL AS ONE CENTRED GROUP, because the button beside
+            // this one draws itself that way and cannot be told otherwise.
+            // SignInWithAppleButton is Apple's own control: it centres its mark
+            // and its words together as a unit, and its type size is derived
+            // from the button's height. Ours is the only one of the two that
+            // can move.
+            //
+            // Google's guidelines describe a mark at the leading edge with 16
+            // points of padding on iOS, and that is what this used to do. It is
+            // right in isolation and wrong here, because the result was one
+            // mark at the left edge and another near the middle, one line of
+            // large type and one of small, on two controls stacked 14 points
+            // apart (Hidde, 2026-09-01: "dan moet het apple logo en google logo
+            // wel op dezelfde plek uitlijnen en continue met google en apple
+            // hetzelfde grote lettertype"). The second time he has had to say
+            // these two do not agree; the first was 2026-08-24, when only the
+            // label was centred and the mark was left where it is now.
+            //
+            // What Google's rules actually forbid is altering their mark: "You
+            // can't change the size or color of the Google 'G' logo. It must be
+            // the standard color version." The four-colour G is untouched, at
+            // its own aspect ratio, on white. What moves is our layout around
+            // it, which is the part their spec treats as guidance for a button
+            // standing on its own rather than one paired with Apple's.
+            HStack(spacing: 8) {
+                // 15, MEASURED AGAINST THE MARK ABOVE IT rather than taken
+                // from Google's own ratio, which would put it at about 26 for
+                // a 20 point label. Apple draws its mark 11 points wide here;
+                // Google's G at 20 was 19 and read as the heavier of the two
+                // buttons, which is the thing being fixed. At 15 it measures 14
+                // and the pair reads as a pair. Photographed at 20 and at 15
+                // and chosen from the pictures (Hidde, 2026-09-01: "onderste").
+                //
+                // The mark itself is untouched, which is what Google's rules
+                // actually protect: standard four colours, own aspect ratio, on
+                // white.
+                GoogleMark(side: 15)
                 Text(title)
-                    // Roboto Medium is Google's spec; the system face at the
-                    // same weight is the honest substitute rather than a
-                    // download for one label.
-                    .font(.system(size: 16, weight: .medium))
-                    .frame(maxWidth: .infinity)
-                HStack(spacing: 0) {
-                    GoogleMark()
-                    Spacer(minLength: 0)
-                }
-                .padding(.leading, 12)
+                    // 20 point, matching what Apple's control draws at this
+                    // height, rather than Google's web figure of 14. Two labels
+                    // at different sizes read as two different kinds of button.
+                    // Roboto Medium is Google's face; the system one at the same
+                    // weight is the honest substitute rather than shipping a
+                    // font download for one label.
+                    .font(.system(size: 20, weight: .medium))
             }
+            .frame(maxWidth: .infinity)
             .padding(.horizontal, 12)
             .frame(maxWidth: .infinity, minHeight: 52)
             .foregroundStyle(scheme == .dark ? Color(white: 0.89) : Color(red: 0.12, green: 0.12, blue: 0.12))
