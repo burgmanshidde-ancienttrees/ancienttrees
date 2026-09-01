@@ -14,12 +14,6 @@
       "claimed_at": "2026-09-01T18:53:38+00:00"
     },
     {
-      "target": "auckland",
-      "kind": "verify",
-      "by": "session-003219a4",
-      "claimed_at": "2026-09-01T18:18:04+00:00"
-    },
-    {
       "target": "dordrecht,delft,alkmaar,assen,enschede,haarlem,haarlemmermeer,oklahoma-city,palo-alto,chapel-hill-north-carolina,bilbao,ottawa,bucharest,fort-worth",
       "kind": "photo",
       "by": "session-044d86a3",
@@ -36,6 +30,12 @@
       "kind": "write",
       "by": "night-run",
       "claimed_at": "2026-09-01T22:13:16+00:00"
+    },
+    {
+      "target": "auckland",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-09-01T22:18:16+00:00"
     }
   ]
 }
