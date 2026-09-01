@@ -937,16 +937,16 @@ def print_wikidata(slug, pub_pts):
         d = json.load(open(os.path.join(ROOT, "data", "research",
                                         "wikidata-candidates.json")))
     except Exception:
-        return
+        return set()
     block = d.get("cities", {}).get(slug)
     if not block:
-        return
+        return set()
     fresh = [c for c in block.get("candidates", [])
              if not c.get("probably_ours")
              and not any(km((c["latitude"], c["longitude"]), p) <= NEAR_PUBLISHED_KM
                          for p in pub_pts)]
     if not fresh:
-        return
+        return set()
     print(f"\nWIKIDATA CANDIDATES (CC0, harvested {block.get('harvested')}): "
           f"{len(fresh)} not already ours; discovery AND corroboration feed.")
     for c in fresh[:12]:
@@ -956,6 +956,54 @@ def print_wikidata(slug, pub_pts):
               f"({c['latitude']:.5f},{c['longitude']:.5f}) {img}{des}")
     if len(fresh) > 12:
         print(f"  ...and {len(fresh)-12} more in data/research/wikidata-candidates.json")
+    return {c["qid"] for c in fresh}
+
+
+def print_wikidata_global(centre, pub_pts, already_shown=frozenset(), radius_km=15.0):
+    """The broader CC0 Wikidata sweep (data/research/wikidata-remarkable-trees.json,
+    19,775 trees worldwide, scripts/scout_next.py's `wikidata_points()` reads the
+    same file), searched by radius rather than by per-city key.
+
+    Found 2026-09-01: city_queue.py's OPENABLE-TODAY list counts supply from this
+    file, but this brief only ever printed print_wikidata()'s older, 95-city
+    harvest (wikidata-candidates.json), which does not cover a single one of the
+    cities city_queue calls openable today. A run trusting the brief over the
+    queue would see zero candidates and wrongly read that as no supply. This
+    function is the missing link: same radius city_queue.py uses (15 km), same
+    already-published and already-judged de-dup the register block above applies."""
+    try:
+        d = json.load(open(os.path.join(ROOT, "data", "research",
+                                        "wikidata-remarkable-trees.json")))
+    except Exception:
+        return
+    fresh = []
+    for t in d.get("trees", []):
+        if t.get("qid") in already_shown:
+            continue
+        lat, lng = t.get("latitude"), t.get("longitude")
+        if lat is None or lng is None:
+            continue
+        if km(centre, (lat, lng)) > radius_km:
+            continue
+        if any(km((lat, lng), p) <= NEAR_PUBLISHED_KM for p in pub_pts):
+            continue
+        if already_judged(lat, lng, t.get("species")):
+            continue
+        fresh.append(t)
+    if not fresh:
+        return
+    fresh.sort(key=lambda t: km(centre, (t["latitude"], t["longitude"])))
+    print(f"\nWIKIDATA CANDIDATES, global sweep (CC0, {radius_km:.0f} km radius): "
+          f"{len(fresh)} not already ours or already judged. Leads, not sources:")
+    for t in fresh[:12]:
+        img = "img" if t.get("commons_image") else "no-img"
+        des = f"  [{t['designation']}]" if t.get("designation") else ""
+        sp = f"  ({t['species']})" if t.get("species") else ""
+        print(f"  {t['qid']}  {t.get('name','?')[:40]:<42} "
+              f"({t['latitude']:.5f},{t['longitude']:.5f}) {img}{sp}{des}")
+    if len(fresh) > 12:
+        print(f"  ...and {len(fresh)-12} more; re-run scout_next.py or filter "
+              f"data/research/wikidata-remarkable-trees.json directly.")
 
 
 def print_leads(slug):
@@ -1009,9 +1057,17 @@ def brief(arg, live):
     print("  that one file. APPEND each verified tree to the delivery file AS FOUND,")
     print("  never only at the end.")
 
+    # Checked against every published tree, not just this target's own: a NEW
+    # city's centre can sit close enough to an ALREADY published one that a
+    # register or Wikidata candidate is actually somebody else's live tree.
+    # Found 2026-09-01 dispatching a Jersey City brief: Q1407769 "Hangman's
+    # Elm" (40.73190,-73.99860) is nyc_001, 8 km away, and would have printed
+    # as fresh because only the target's own (empty, for a new city) point
+    # list was ever checked.
+    pub_pts = [p for c in live for p in c["points"]]
+
     if centre:
         cands = candidates_near(*centre)
-        pub_pts = match["points"] if match else []
         for e in cands:
             e["_pub"] = any(km((e["lat"], e["lng"]), p) <= NEAR_PUBLISHED_KM
                             for p in pub_pts)
@@ -1065,7 +1121,9 @@ def brief(arg, live):
         print("  research from zero and budget accordingly.")
 
     print_leads(slug)
-    print_wikidata(slug, match["points"] if match else [])
+    shown_qids = print_wikidata(slug, pub_pts) or set()
+    if centre:
+        print_wikidata_global(centre, pub_pts, shown_qids)
     print_archived_notes(slug, match["city"] if match else arg)
     print_blocklist()
 
