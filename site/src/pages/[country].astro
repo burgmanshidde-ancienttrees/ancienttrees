@@ -3,6 +3,7 @@
 // Single-segment file route (NOT [country]/index.astro): emits {country}.html
 // directly, same reasoning as the city route. See ARCHITECTURE.md.
 import { getCollection, type CollectionEntry } from "astro:content";
+import { nTrees } from "../lib/tree-count";
 import Base from "../layouts/Base.astro";
 import TreeCard from "../components/TreeCard.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
@@ -109,7 +110,7 @@ const rows = ranked.map((c, i) => {
     const b: [number, number] = [best.age_min ?? 0, best.age_max ?? 0];
     return a[0] > b[0] || (a[0] === b[0] && a[1] > b[1]) ? t : best;
   }, null);
-  let sub = `${c.count} trees`;
+  let sub = nTrees(c.count);
   if (cityOldest) sub += ` · oldest ${cityOldest.age_estimate ?? ""}`;
   return { i: i + 1, slug: c.slug, cityName: c.cityName, ph, sub };
 });

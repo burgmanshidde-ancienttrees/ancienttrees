@@ -2,6 +2,7 @@
 // Cities index, grouped by country. Ported from build_cities_index(),
 // build_site.py:4277-4325.
 import { getCollection } from "astro:content";
+import { nTrees } from "../lib/tree-count";
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees } from "../lib/trees";
@@ -46,7 +47,7 @@ function card(p: (typeof published)[number]): string {
   const ph = p.face
     ? `<span class="exc-ph"><img src="${esc(p.face)}" alt="" loading="lazy"></span>`
     : '<span class="exc-ph exc-noph"></span>';
-  return `<a class="exc-card" href="/${p.slug}">${ph}<span class="exc-body"><b>${esc(p.city)}</b><span>${p.count} trees</span></span></a>`;
+  return `<a class="exc-card" href="/${p.slug}">${ph}<span class="exc-body"><b>${esc(p.city)}</b><span>${nTrees(p.count)}</span></span></a>`;
 }
 
 const canonical = `${BASE_URL}/cities`;

@@ -13,6 +13,7 @@ import { usablePhoto, metaImageUrls, ogImageUrl } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { peakFor } from "../lib/phenology";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { nTrees } from "../lib/tree-count";
 import { fitTitle } from "../lib/title";
 import { submitLink, ageToken } from "../lib/tree-copy";
 import { mapHead } from "../lib/map";
@@ -107,10 +108,10 @@ const ageHook = oldestYears >= 200 ? oldestAge : null;
 const title = fitTitle([
   ...(ageHook ? [
     `Ancient Trees in ${cityName}: ${trees.length} to See, Oldest ${ageHook} Years`,
-    `Ancient Trees in ${cityName}: ${trees.length} Trees, Oldest ${ageHook} Years`,
+    `Ancient Trees in ${cityName}: ${nTrees(trees.length)}, Oldest ${ageHook} Years`,
   ] : []),
-  `Ancient Trees in ${cityName}: ${trees.length} Remarkable Trees Worth Visiting`,
-  `Ancient Trees in ${cityName}: ${trees.length} Trees Worth Visiting`,
+  `Ancient Trees in ${cityName}: ${trees.length === 1 ? "One Remarkable Tree" : `${trees.length} Remarkable Trees`} Worth Visiting`,
+  `Ancient Trees in ${cityName}: ${nTrees(trees.length)} Worth Visiting`,
   `Ancient Trees in ${cityName}`,
 ]);
 const description =
@@ -217,13 +218,13 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="sheet-grab">
         <div class="panel-head">
           <Breadcrumbs items={crumbItems} />
-          <button type="button" class="sheet-back">← All {trees.length} trees</button>
+          <button type="button" class="sheet-back">← All {nTrees(trees.length)}</button>
           <p class="eyebrow">{country}</p>
           <div class="page-head">
             <h1>Ancient Trees in <em>{cityName}</em></h1>
             <ShareButton url={canonical} title={`Ancient trees in ${cityName}`} />
           </div>
-          <p class="sheet-count">{trees.length} trees on the map</p>
+          <p class="sheet-count">{nTrees(trees.length)} on the map</p>
         </div>
       </div>
       <div class="sheet-body">
@@ -250,7 +251,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
           </div>
         )}
         <div class="take-with-you">
-          <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>Download all {trees.length} trees</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
+          <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>Download all {nTrees(trees.length)}</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
         </div>
         <div class="app-pitch">
           <strong>Walk them with the app</strong>
