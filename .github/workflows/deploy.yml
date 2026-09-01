@@ -48,6 +48,16 @@ jobs:
       - name: Preflight the data
         run: python3 scripts/preflight.py
 
+      # The same argument, one layer over: i18ncheck.py has enforced Contract J
+      # since the seven languages landed and nothing ever ran it, so on
+      # 2026-09-01 twelve of twenty-three overlays promised a tree count the
+      # city did not have. Amsterdam's Dutch title still said "de 39 mooiste"
+      # after five trees came off and its English copy was corrected. The build
+      # already refuses an untranslated tree; it could not see a translated
+      # page lying about how many there are.
+      - name: Check the translation overlays
+        run: python3 scripts/i18ncheck.py
+
       # working-directory matters beyond convention: data-dir.ts resolves
       # ../data from process.cwd(), so astro build must run with site/ as
       # cwd or every content-collection read breaks.
