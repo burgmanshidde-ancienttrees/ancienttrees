@@ -13,6 +13,79 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-01
+
+Reviewed the last 24 hours (~140 commits): heavy assembly-line work (Naha,
+Pamplona, Ronda, Nagoya, Kamakura, Segovia, Sapporo, Tarragona, Girona,
+Kanazawa, Miyazaki, Hiroshima and Kagoshima opened from zero; Delft, Naples,
+Valencia, Turin, Warsaw, Vilnius deepened), the sender-name privacy fix
+(`f91e11bb`, de-naming a submitter from `data/cities/prague.json` and
+`drafts/`, plus a new `check_no_sender_names()` ratchet in preflight.py), two
+outreach replies sent with Hidde's approval (Sydney's register-licensing
+refusal recorded in OPEN_DATA_SURVEY.md so it is not rescouted; the Florence
+Himalayan cedar photo, sent directly by the garden with a verbatim credit
+line, going live), the web account page rebuild (`bac7be40`, a name field so
+web-created accounts become findable in the app, deletion moved to a marked
+area at the page foot), and the App Review reply package for Apple's
+Guideline 2.1 rejection (`d6f01f21`). Ran `python3 scripts/qa.py` (4080
+pages, clean), `python3 scripts/superlatives.py` (540 claims, no collisions)
+and `python3 scripts/preflight.py` (207 cities, 0 problems besides the
+already-tracked paid-entry NOTEs, Kamakura newly on that list at 67% and not
+re-litigated here).
+
+Verified both of yesterday's findings are fixed in the current build. The
+walks-pill BLOCKER: sampled `site/dist/kagoshima.html`, the map pill now
+links to `/kagoshima/walks` (the real walks page) rather than `/app`
+(`b299c341`). The empty "Trees nearby" WARN: `site/dist/santalfio/
+hundred-horse-chestnut.html` no longer renders the heading over nothing, and
+`site/dist/philadelphia/bartrams-ginkgo.html` no longer has the "all 1
+remarkable ancient trees" singular/plural slip (`ad73db9d`).
+
+Spot-checked five new city pages (Naha, Pamplona, Kagoshima, Segovia, Naples)
+in the built HTML: titles, descriptions and the two-format title logic in
+`[city].astro` (the "Oldest N Years" hook only above 200 years, falling back
+to "Remarkable Trees Worth Visiting" otherwise) all read correctly, no em
+dashes or banned words. Naples's new disputed-species entry (nap_024, the
+Elephant's Foot) correctly asks the reader which of two register names is
+right rather than guessing, per the publish-and-ask rule, and the city's
+tree-count copy (23/24) is internally consistent across intro, FAQ and
+question_meta. The Prague fix itself reads honestly: `verify_notes` now says
+plainly that the submitter's own filled-in location field was not
+independent confirmation, rather than over-crediting a form default as
+verification.
+
+**APP.** Read all six rotated screenshots (`people.png`, `place-pin.png`,
+`profile-edit.png`, `profile-signed-in.png`, `profile.png`, `refused.png`).
+`profile-signed-in.png` and `profile.png` carry "You can add a tree by
+taking a photograph of it and filling in what you know", which is the
+corrected PRODUCT_COPY.md pattern (reader as subject, joined with "by") in
+active use rather than the rejected builder-speak version, and both empty
+counters ("0 collected · 0 saved") read as honest zero states rather than as
+broken ones. `profile.png` correctly shows the "Add a tree" entry point
+while signed out, consistent with the Google Maps convention already ruled
+on repeatedly (visible to everyone, acting needs sign-in): tapping it is
+what should gate, not seeing it. `place-pin.png` (the pin-correction flow)
+states up front that sending needs a free account and why ("so we can tell
+you what your correction changed"), which is the honest, non-wall version of
+the same rule. `refused.png` (location permission refused) matches the
+2026-08-31 ruling recorded in CONVENTIONS.md: no interstitial in front of
+the system prompt, a plain statement of what is off and why it helps.
+Nothing across the six contradicts itself, overpromises, or shows a control
+with no stated purpose.
+
+Nothing found at BLOCKER or WARN level. One thing noted and deliberately not
+raised as a finding: Florence's new cedar photo and the pre-existing Bucaco
+photos are licensed as "Provided by [institution], all rights reserved"
+rather than an open licence (CC0/CC-BY/CC-BY-SA), which is narrower than
+CLAUDE.md Step 4's literal wording ("openly-licensed sources... CC0, CC-BY,
+CC-BY-SA only"). This is an established pattern, not new today, and it is a
+direct, verbatim-credited grant from the copyright holder rather than a
+weaker claim, so it reads as more defensible than an open licence, not less.
+Flagging only as context in case a future corpus pass wants to reconcile the
+written rule with the practice; it is not a reader-facing problem.
+
+---
+
 ## 2026-08-31
 
 Reviewed the last 24 hours (134 commits, back through `323b35f4`): heavy
