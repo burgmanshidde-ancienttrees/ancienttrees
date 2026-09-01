@@ -9,6 +9,65 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-01 (session) - Two more photo passes, and the one that worked was the cheapest
+
+Three viewing passes this evening rather than one. The first is logged below; these
+are the second and third, and the difference between them is the finding.
+
+| Pass | How targets were picked | Fetched | Viewed | Approved |
+|---|---|---:|---:|---:|
+| 1 | photo-less AND a queued candidate AND measured demand | 34 | 26 | 9 |
+| 2 | photo-less AND a queued candidate, demand ignored | 20 | 18 | 2 |
+| 3 | photo-less AND **never swept at all**, re-swept first | 18 | 18 | 3 |
+
+**Pass 2 was the weak one and it is worth saying why.** With the demand roster
+worked, what remains in the queue for the Dutch cities is overwhelmingly panoramio
+street and park photography where no tree is the subject: fallow deer in a paddock
+for a Dordrecht locust, a field of crocuses in front of a manor house for three
+separate Assen trees, a coach house for the Enschede wellingtonia, a canal and a
+church for the Haarlem planes. Scoring those harder does not make them better.
+
+**Pass 3 asked a different question and it paid.** 101 photo-less cities, and a
+count showed that twelve of them held trees the sweep had NEVER asked about, some
+with real demand: Las Vegas at 78 impressions with 11 trees and not one candidate
+ever fetched, New Orleans at 32, Oahu at 25, Maastricht, Houston, Venlo, Rouen,
+Toronto, Seattle, Sorrento, Perugia, Rotterdam. Re-running `photo_hunt.py
+--recheck` on those cost nothing but API calls and produced two of the three best
+photographs of the evening.
+
+So the rule for the next pass: **ask a city that was never asked before re-scoring
+a city that was.**
+
+**What went live in these two passes**
+
+| City | Tree | |
+|---|---|---|
+| Oklahoma City | the Survivor Tree | identified by the memorial wall in the frame |
+| Chapel Hill | Davie Poplar | identified by a bracing cable, see below |
+| Oahu | the Hitachi Tree | the best photograph of the evening |
+| New Orleans | the Tree of Life | |
+| New Orleans | the Dueling Oak | 15 m from our pin, which is what separates it |
+
+**Nothing was approved on a filename.** Two needed real work. McCorkle Place at
+Chapel Hill holds Davie Poplar, Davie Poplar Jr and Davie Poplar III within tens of
+metres and the observation's own accuracy is 211 metres, so the filename proves
+nothing: the other two photographs in the same observation show a colossal trunk
+with an old wound and a steel bracing cable with its eye bolt, which the 1918 and
+1993 successors do not carry. City Park in New Orleans holds several famous live
+oaks, and the Anseman Oak's best candidate is a magnificent knobby trunk titled
+"Knobby Old Tree" sitting 212 m from our pin, so it was rejected and the gap stays
+honest.
+
+**The near miss worth recording: El Palo Alto.** Its only unjudged candidate is
+unmistakably the tree, CC0, whole tree with people at the fence for scale, and it is
+a stitched panorama 562 pixels wide. Rendered into the 16 by 10 card it becomes a
+soft slice of trunk and foliage, on a one-tree page where that card is the only one.
+Rejected rather than held, because the identity is certain and it is the rendering
+that fails. It needs a reader photograph or a new source.
+
+**Where the evening ends:** 112 photo-less cities at the start, 104 now, and 4 new
+cities opened by the night runs while this ran, so 13 were actually closed.
+
 ## 2026-09-01 (session) - Tree page photos now reserve their own space: 518px of layout shift gone from 410 pages
 
 Every tree page with a photograph threw its own content down the page when the
