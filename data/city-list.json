@@ -102,6 +102,13 @@
    "trees": 17
   },
   {
+   "city": "New York",
+   "country": "United States",
+   "slug": "new-york",
+   "status": "published",
+   "trees": 20
+  },
+  {
    "city": "London",
    "country": "United Kingdom",
    "slug": "london",
@@ -209,6 +216,14 @@
    "trees": 17
   },
   {
+   "city": "Seattle",
+   "country": "United States",
+   "slug": "seattle",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
+  },
+  {
    "city": "Nijmegen",
    "country": "Netherlands",
    "slug": "nijmegen",
@@ -225,11 +240,11 @@
    "trees": 8
   },
   {
-   "city": "New York",
+   "city": "Chicago",
    "country": "United States",
-   "slug": "new-york",
+   "slug": "chicago",
    "status": "published",
-   "trees": 20
+   "trees": 6
   },
   {
    "city": "Toronto",
@@ -296,6 +311,13 @@
    "trees": 45
   },
   {
+   "city": "Oahu",
+   "country": "United States",
+   "slug": "oahu",
+   "status": "published",
+   "trees": 8
+  },
+  {
    "city": "Berlin",
    "country": "Germany",
    "slug": "berlin",
@@ -311,12 +333,27 @@
    "trees": 27
   },
   {
+   "city": "Boston",
+   "country": "United States",
+   "slug": "boston",
+   "status": "published",
+   "trees": 10
+  },
+  {
    "city": "The Hague",
    "country": "Netherlands",
    "slug": "the-hague",
    "status": "published",
    "demand_views_90d": 236723,
    "trees": 29
+  },
+  {
+   "city": "San Francisco",
+   "country": "United States",
+   "slug": "san-francisco",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Vilnius",
@@ -333,6 +370,14 @@
    "status": "published",
    "demand_views_90d": 31401,
    "trees": 20
+  },
+  {
+   "city": "New Orleans",
+   "country": "United States",
+   "slug": "new-orleans",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
   },
   {
    "city": "Cagliari",
@@ -375,14 +420,6 @@
    "trees": 4
   },
   {
-   "city": "Seattle",
-   "country": "United States",
-   "slug": "seattle",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 6
-  },
-  {
    "city": "Athens",
    "country": "Greece",
    "slug": "athens",
@@ -398,11 +435,11 @@
    "trees": 6
   },
   {
-   "city": "Chicago",
+   "city": "Washington DC",
    "country": "United States",
-   "slug": "chicago",
+   "slug": "washington-dc",
    "status": "published",
-   "trees": 6
+   "trees": 14
   },
   {
    "city": "Cadiz",
@@ -494,11 +531,12 @@
    "trees": 12
   },
   {
-   "city": "Oahu",
+   "city": "Miami",
    "country": "United States",
-   "slug": "oahu",
-   "status": "published",
-   "trees": 8
+   "slug": "miami",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Potsdam",
@@ -525,13 +563,6 @@
    "trees": 0
   },
   {
-   "city": "Boston",
-   "country": "United States",
-   "slug": "boston",
-   "status": "published",
-   "trees": 10
-  },
-  {
    "city": "Lyon",
    "country": "France",
    "slug": "lyon",
@@ -540,28 +571,12 @@
    "trees": 13
   },
   {
-   "city": "San Francisco",
-   "country": "United States",
-   "slug": "san-francisco",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Delft",
    "country": "Netherlands",
    "slug": "delft",
    "status": "published",
    "demand_views_90d": 31293,
    "trees": 8
-  },
-  {
-   "city": "New Orleans",
-   "country": "United States",
-   "slug": "new-orleans",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
   },
   {
    "city": "Helsinki",
@@ -585,6 +600,14 @@
    "slug": "istanbul",
    "status": "published",
    "trees": 14
+  },
+  {
+   "city": "Los Angeles",
+   "country": "United States",
+   "slug": "los-angeles",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 8
   },
   {
    "city": "Mexico City",
@@ -690,13 +713,6 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Washington DC",
-   "country": "United States",
-   "slug": "washington-dc",
-   "status": "published",
-   "trees": 14
   },
   {
    "city": "Rotterdam",
@@ -854,14 +870,6 @@
    "trees": 6
   },
   {
-   "city": "Miami",
-   "country": "United States",
-   "slug": "miami",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
    "city": "Lucca",
    "country": "Italy",
    "slug": "lucca",
@@ -918,14 +926,6 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Los Angeles",
-   "country": "United States",
-   "slug": "los-angeles",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 8
   },
   {
    "city": "Cape Town",
@@ -1253,6 +1253,14 @@
    "note": "Opened 2026-08-31 from Navarra's SITNA register of declared Natural Monuments (CC BY 4.0). The thinnest register on the site: species, place, declaration year and coordinate, with no height, girth, age or vitality field anywhere, so no tree here carries a measurement it does not have and every page says so."
   },
   {
+   "city": "Philadelphia",
+   "country": "United States",
+   "slug": "philadelphia",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 1
+  },
+  {
    "city": "Cesky Krumlov",
    "country": "Czech Republic",
    "slug": "cesky-krumlov",
@@ -1288,14 +1296,6 @@
    "slug": "bamberg",
    "status": "published",
    "trees": 4
-  },
-  {
-   "city": "Philadelphia",
-   "country": "United States",
-   "slug": "philadelphia",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 1
   },
   {
    "city": "Vancouver",
