@@ -392,17 +392,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Hiramatsu no utsukushimatsu jiseichi",
-   "lat": 34.993108,
-   "lng": 136.075728,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Pinus_densiflora_form._Umbraculifera._habitat_of_Hiramatsu_district._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pinus_densiflora_form._Umbraculifera._habitat_of_Hiramatsu_district._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pinus_densiflora_form._Umbraculifera._habitat_of_Hiramatsu_district._C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
    "name": "Hitome-senbon-zakura",
    "lat": 38.056016,
    "lng": 140.746526,
@@ -1404,19 +1393,6 @@
    "status": "lead"
   },
   {
-   "name": "Phoenix Trees Exposed to the A-bomb",
-   "lat": 35.367167,
-   "lng": 139.552694,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Aogiri_Yokohama_Sakae.jpg",
-    "https://commons.wikimedia.org/wiki/File:Aogiri_Yokohama_Sakae_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Arvore_que_sobreviveu_a_bomba_atomica_-_Tree_what_survivor_for_a-bomb_(7069526497).jpg"
-   ],
-   "status": "lead",
-   "species": "Date Palm (Phoenix sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Renchakuji no Yamamomo",
    "lat": 34.883028,
    "lng": 139.130668,
@@ -2250,6 +2226,48 @@
    "status": "lead",
    "species": "Japanese Cedar (Cryptomeria sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Wilson's Stump",
+   "reason": "Stump of a yakusugi felled roughly 500 years ago (named for E.H. Wilson who documented it in 1914); dead, not a living tree. Never ships as an entry per the never-dead rule. May be mentioned as context inside a living Yakushima tree story (its three living descendants growing nearby could be a separate future lead).",
+   "coordinate": [
+    30.359715,
+    130.557859
+   ]
+  },
+  {
+   "name": "Natural habitat of Pyrus calleryana in Tado",
+   "reason": "Official designation is \"Tado Inunashi Natural Habitat\" (多度のイヌナシ自生地), a ~0.3ha / 3,000sqm protected wild population of endangered Pyrus calleryana var. dimorphophylla on Mt Tado, Kuwana, Mie, designated National Natural Monument 2010-08-05. A habitat/population, not one identifiable tree or a compact ensemble with one place to stand. Rejected per brief instruction.",
+   "coordinate": [
+    35.133608,
+    136.609756
+   ]
+  },
+  {
+   "name": "Okina sugi",
+   "reason": "Fell on 10 September 2010 (confirmed by two independent Japanese news sources, Nikkei and a Yahoo News/local report): the trunk was roughly 90 percent hollow/decayed internally and could not bear the weight of its own upper 20m. Was the second-largest-girth Yakusugi (12.6m/1260cm) after Jomon Sugi, estimated age about 2,000 years, height 23.7m before falling, standing at about 1000m elevation on the Jomon Sugi trail. Now dead/fallen, so it never ships as an entry per the never-dead rule. The Commons photos in the lead file likely predate the 2010 fall and would misrepresent it as standing today.",
+   "coordinate": [
+    30.358212,
+    130.537663
+   ]
+  },
+  {
+   "name": "Phoenix Trees Exposed to the A-bomb",
+   "reason": "Confirmed mismatch, checked per brief instruction 2026-09-01. The Commons file File:Aogiri_Yokohama_Sakae.jpg carries its own caption and geotag: this is a second-generation aogiri (Firmiana simplex, Chinese Parasol Tree) planted at Earth Plaza (Chikyu Shimin Kanagawa Plaza) in Sakae-ku, YOKOHAMA, photographed 17 August 2025. It is a young sapling grown from the SEED of the trees that survived the Hiroshima bombing 1.3km from the hypocentre, not a tree itself exposed to the bomb, and it does not stand in Hiroshima at all. \"Phoenix\" in the lead name is the English nickname for aogiri (Chinese Parasol Tree), not the palm genus Phoenix; the leads file's own \"Date Palm (Phoenix sp.)\" species guess is a genus misread from that nickname and is wrong on every axis: wrong species, wrong history (second-generation descendant, not an original hibaku tree) and wrong location (Yokohama, not Hiroshima). Never chase this as a bombed original in Hiroshima. It COULD in principle become its own honestly-described lead someday (a peace-memorial aogiri sapling in Sakae-ku, Yokohama, correctly named and species-corrected), but that is a new, separate research question, not this entry, and the tree is very young rather than old.",
+   "coordinate": [
+    35.367167,
+    139.552694
+   ]
+  },
+  {
+   "name": "Hiramatsu no utsukushimatsu jiseichi",
+   "reason": "Checked per brief 2026-09-01. Official designation is Hiramatsu no Utsukushimatsu Jiseichi (平松のウツクシマツ自生地), a National Natural Monument (designated 3 March 1921) in KONAN CITY, SHIGA PREFECTURE (not Kyoto city, though within day-trip range at ~28km), protecting a wild population of Utsukushimatsu, a naturally radial-branching form of Japanese red pine (Pinus densiflora forma umbraculifera) that grows together on the southeast slope of Mt Bishozan. This is the only place this growth form occurs as a natural stand. Confirmed via Japanese Wikipedia and the Agency for Cultural Affairs database (online.bunka.go.jp), both found via search. A HABITAT/POPULATION covering a hillside, not one identifiable tree or a compact ensemble with one obvious place to stand; rejected on the same grounds as the Tado Inunashi habitat already blocked in this file. Also actively declining: multiple sources note rapid pine-wilt-disease losses in recent years despite local conservation efforts, which would make an alive-now claim for any single specimen within it hard to stand behind without visiting. A separate lead already in this file, \"Nento-Hiramatsu Pine Tree\" (Commons category Nento-Hiramatsu Park, no coordinate yet), may be an individually named specimen near or within this habitat and could be worth checking on its own in a future pass; not researched here, out of scope for this brief.",
+   "coordinate": [
+    34.993108,
+    136.075728
+   ]
   }
  ]
 }
