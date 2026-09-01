@@ -3125,6 +3125,34 @@
    ],
    "trees": 3,
    "logged": true
+  },
+  {
+   "started": "2026-09-01T22:10:19+00:00",
+   "date": "2026-09-01",
+   "run_id": "33564903026",
+   "minutes": 45.7,
+   "minutes_basis": "measured",
+   "attempts": 1,
+   "turns": 198,
+   "denials": 11,
+   "denials_source": "permission_denials: Bash(gh), Bash(git), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 46818865,
+   "claims_held": [
+    "hokuto",
+    "miharu",
+    "neo-motosu"
+   ],
+   "commits": 8,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "auckland",
+     "trees": 5
+    }
+   ],
+   "trees": 5,
+   "logged": true
   }
  ],
  "schedule_changes": [
