@@ -4346,6 +4346,22 @@
         "wasted": 0,
         "brief_wrong": false
       }
+    ],
+    "2026-09-01": [
+      {
+        "target": "vilnius+warsaw",
+        "kind": "write",
+        "tokens": 58000,
+        "trees": 2,
+        "note": "2-tree write pass finishing a standing verify claim: vln_014 (Antakalnis Swiss Pine) + war_019 (Karol Oak). ~29k/tree, well over the 15k target, entirely fixed cost since BRIEF_WRITING's 15-to-20 batching was skipped for a 2-tree batch."
+      },
+      {
+        "target": "cagliari",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 0,
+        "note": "honest zero: all near-city register candidates were duplicates of the 10 already-published trees or the two already-blocked private-land trees; two new remote Sinnai forest clusters (~22km out) found and left as leads on access/host-unreachable grounds (idese.cultura.gov.it added to fetch-blocklist.json), three prior leads got a documented second failed attempt"
+      }
     ]
   }
 }
