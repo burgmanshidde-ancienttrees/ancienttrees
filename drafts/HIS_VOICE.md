@@ -143,3 +143,52 @@ failure here is different, and worth naming precisely: **inventing a benefit to
 them that we do not know they want**, in order to avoid saying we want
 something. When the benefit is real, name it. When the thing is simply an ask,
 ask.
+
+## Do not answer a charge nobody made (Hidde, 2026-08-31)
+
+The City of Sydney declined to licence their register, politely, and gave their
+reason. The draft reply told them "none of the Sydney trees we publish came
+from the Register anyway". His verdict: **"you sound like a child defending
+that we didn't use the register."**
+
+Nobody had accused us of anything. The sentence existed to make us look clean,
+and the word "anyway" is the tell: it answers an objection that was never
+raised. This is the defensive habit already recorded in memory, and it survives
+best inside otherwise good mails, so the check is a question rather than a
+word. Before a sentence about what we did NOT do, ask: did they say we did?
+If not, cut it.
+
+## THE SHAPE OF A REPLY (Hidde, 2026-08-31: "onthou deze vorm")
+
+Read this before writing any answer to somebody who has written to us. It is
+distilled from a fortnight of his corrections, and every line below is one he
+actually made.
+
+**Four to six lines. Under 150 words.** If it is longer, something is being
+defended, explained or sold. The good ones this fortnight run 89 to 130 words;
+the ones he sent back were 228 and 359.
+
+**The order.**
+
+1. **Thanks, and the answer, in one line.** No compliment with a justification
+   bolted on, and never their own title recited back at them ("venant du
+   président de l'association qui a créé le label" was struck).
+2. **What changed, if they corrected us.** Say it as fact, name what the page
+   says now, and stop. One short sorry inside a sentence is the whole apology.
+3. **What is true about us, only if they raised it.** The paid tier, the
+   distance we work from, the app. Plainly, no defence.
+4. **One ask, last, in plain words.** "Would a link to us fit somewhere on your
+   site?" beats any version that explains how it would help them. One ask, not
+   two.
+5. **Out.** No summary line, no promise about what happens next.
+
+**Never in a reply.** A sentence about what we did NOT do, unless they said we
+did. A forever-promise about price, unless he made it himself that day. A
+number for the price, a date for the app. How we verify anything. A second ask
+because the first one felt small. A benefit invented on their behalf.
+
+**Do first, then write.** Every reply that landed well this fortnight reported
+a change that had already shipped: the lorry out of the Olifantsiep, the five
+Amsterdam trees pulled, Park Guell's access corrected, the cedar photograph
+live. "Fixed, here it is" is worth more than any paragraph of intent.
+

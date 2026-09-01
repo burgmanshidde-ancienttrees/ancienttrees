@@ -51,6 +51,7 @@ register" rather than "may we have yours"), with the payoff inside the ask
 rather than rules about them, and imitate by proximity.
 """
 import glob
+import os
 import re
 import sys
 
@@ -277,7 +278,7 @@ def body_of(text):
 def check(path):
     text = open(path, encoding="utf-8").read()
     body = body_of(text)
-    hits = []
+    hits = list(check_reply_length(path, body))
     for label, patterns in CHECKS:
         for pat in patterns:
             for m in re.finditer(pat, body, re.I):
@@ -359,6 +360,29 @@ def lowercase_hits(body):
         return [("LOWER-CASE SENTENCES", "%d sentence(s)" % len(bad),
                  "%s ... capitals, per his 2026-08-12 ruling" % bad[0])]
     return []
+
+
+def check_reply_length(path, body):
+    """A reply to a person should be four to six lines.
+
+    Hidde, 2026-08-31, on a five-paragraph answer to a polite no: "pff what a
+    horrible response start over", and then "onthou deze vorm zodat het de
+    volgende keer beter gaat". Length is the one part of that shape a script
+    can see. Measured over every reply written this fortnight: the ones that
+    landed run 89 to 130 words, the two he sent back were 228 and 359.
+
+    The threshold is 200 rather than 150, because a genuinely point-by-point
+    answer exists (Bomenstichting Amsterdam sent eight numbered comments) and
+    a check that fires on good work is a check nobody reads. Only files named
+    drafts/reply-*.md are measured: a batch mail is a different animal."""
+    if "reply-" not in os.path.basename(path):
+        return []
+    n = len(body.split())
+    if n <= 200:
+        return []
+    return [("TOO LONG FOR A REPLY", "%d words" % n,
+             "four to six lines is the shape; over 200 words means something "
+             "is being defended, explained or sold")]
 
 
 def main():
