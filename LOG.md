@@ -9,6 +9,53 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-01 (continuation of a window whose first attempt shipped 3 trees and stopped early) - Cleared two stale claims, found the READY pile was empty, dispatched a Madeira verify pass
+
+Step 0: released two stale claims left standing from an earlier attempt this
+window. `munich` (verify) turned out to be already finished and merged
+(muc_011-014 in `data/research/munich-extra.json` matched the live
+`data/cities/munich.json` word for word); `_famous-japan` (verify) is a
+182-lead unstarted scouting pile too large for this window, released rather
+than held.
+
+`leads.py --ready` listed 8 candidates across 5 cities (Lima x4, Turin,
+Coimbra, Kagoshima, Taormina). Read each against its own source before
+dispatching a write pass, per the pattern this file has hit five times
+already this week: none actually cleared the bar. Lima's four are
+single-source Wikidata rows too thin for a story (missing species/age/address
+on most); Turin's "three oaks" is a register GRUPPO with no per-tree
+measurements, explicitly hypothetical ("if they are ever split"); Coimbra's
+sequoia is register-only with no address and an unchecked 13.3km day-trip
+distance; Kagoshima's kaya/camphor pairing could not be corroborated against
+either the prefecture's own page for the Great Camphor or a web search;
+Taormina's fig has no place assigned yet (15.7km out, no city to belong to).
+Recorded a decline reason in each lead's own `reason`/`why` field so
+`leads.py`'s classifier files them as BLOCKED instead of re-serving them.
+READY is now correctly 0.
+
+Rung 2 (`health.py`): clear, 0 BLOCKER. Rung 1 (submissions): 0 unprocessed
+(57 of 57 already handled).
+
+Rung 4: `scout_next.py --target` pointed at scouting Birmingham's register,
+but `city_queue.py --next` showed Funchal as "openable today" with 12
+Wikidata monumental-tree candidates, which outranks scouting per rule 1(0).
+Checked it against the LOG's own 2026-08-30 note first ("Funchal sits in the
+queue as a zero city... Madeira is already published 6 km away... that is
+Madeira to deepen, not a Funchal page to open") and confirmed against the
+live city file: `data/cities/madeira.json` already carries 4 Funchal trees.
+Opening a separate Funchal page would have duplicated it. Claimed `madeira`
+for a verify pass instead and dispatched it on the 12 Wikidata candidates
+(all carrying Funchal's official "árvore monumental" designation), still
+running as this is written.
+
+Submissions: 0 new. Claims released: munich, _famous-japan. Claims standing:
+madeira (verify, this pass).
+
+FOR HIDDE: nothing blocks. Worth knowing: this window shipped 0 new trees but
+narrowed real supply (the leads pile is cleaner, a naming trap between
+Funchal and Madeira is now recorded rather than left for a future run to
+rediscover). Week budget is close to its ceiling; expect shorter windows.
+
 ## 2026-09-01 (session) - Rung 2 first: Munich's German overlay was breaking the deploy; then submission 57, then a write pass and shelf cleanup
 
 Opened on health.py's RUNG 2: Smoke test and Build and deploy were both failing.
