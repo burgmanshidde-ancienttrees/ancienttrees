@@ -240,21 +240,23 @@ struct SignInSheet: View {
     // MARK: - shared pieces
 
     private var header: some View {
-        VStack(spacing: 8) {
+        VStack(alignment: .leading, spacing: 8) {
             SpeciesMark(species: "Pedunculate Oak", color: brand)
                 .frame(width: 52, height: 52)
             Text(reason.headline)
-                .font(.title2.bold()).multilineTextAlignment(.center)
+                .font(.title2.bold()).multilineTextAlignment(.leading)
             Text(reason.detail)
                 .font(.subheadline).foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.leading)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.top, 2)
     }
 
     @ViewBuilder private var problemLine: some View {
         if let p = account.problem {
-            Text(p).font(.footnote).foregroundStyle(.red).multilineTextAlignment(.center)
+            Text(p).font(.footnote).foregroundStyle(.red).multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 
@@ -262,43 +264,38 @@ struct SignInSheet: View {
     /// honest version of it converts better than a vague one, and it is the same
     /// sentence the website has carried since the account track opened.
     private var footer: some View {
-        VStack(spacing: 6) {
+        VStack(alignment: .leading, spacing: 6) {
             // Same correction as Profile's, same day. The "no advertising" and
             // the deletion promise both survive because both are still true;
             // "Nothing else" did not.
             Text("We store your email address and what you collect: the trees you save, the ones you photograph, and where they stand. No advertising, and you can delete the lot from this app.")
                 .font(.caption2).foregroundStyle(.secondary)
-                // CENTRED, like every other thing on this sheet, and it stays
-                // that way. Two runs on 2026-09-01 tried to answer an appfit
-                // DRIFT finding here by changing the layout: first
-                // .frame(maxWidth: .infinity), then leading alignment on the
-                // text and its frame. The second one worked on the number and
-                // broke the screen, because this sheet is a centred
-                // composition (mark, headline, subtitle, both buttons, the
-                // line below this one, the Terms and Privacy links) and it
-                // left ONE paragraph flush against the left margin with its
-                // centred twin directly underneath it.
+                // LEADING, and so is everything else on this sheet, which is
+                // the point. Hidde chose it on 2026-09-01 after seeing both
+                // versions photographed side by side ("rechts ziet er beter
+                // uit").
                 //
-                // The finding is a measurement artefact and not a layout
-                // fault. Measured on iOS 18.6 with exactly the code CI
-                // reported: this text sits at x=30.5 w=314.0, its neighbour at
-                // x=34.8 w=305.4, both buttons at x=29.1 w=316.9, and every
-                // one of those centres on 187.5 in a 375 point screen. appfit
-                // exempts all of them and reports nothing. CI's floor job runs
-                // iOS 18.5, where the same code measures x=25.5 against
-                // siblings at 22, so the two point releases wrap this
-                // paragraph differently and the widest wrapped line is what
-                // gets measured.
+                // How it got here matters, because the same paragraph was
+                // changed three times that day and only the last change was a
+                // decision. An appfit DRIFT finding on iOS 18.5 had the gate
+                // red; one run answered it with .frame(maxWidth: .infinity),
+                // which measured identically before and after and therefore did
+                // nothing; a second gave this ONE paragraph leading alignment,
+                // which moved the number and left it flush left with its
+                // centred twin underneath, on a sheet centred everywhere else.
+                // That was reverted, because a layout gate does not get to
+                // redesign a screen one element at a time.
                 //
-                // If it fires again, fix appfit rather than this screen: a
-                // wrapped paragraph's left edge is where its longest line
-                // happened to break, which is not an edge anybody laid out.
-                // Apple's own newer guidance does left-align onboarding and
-                // alert text (WWDC25, the new design system), and that is a
-                // real option, but it is a decision about the WHOLE sheet and
-                // Hidde's to make, not something a layout gate gets to force
-                // one paragraph at a time.
-                .multilineTextAlignment(.center)
+                // What replaced it is the whole sheet, deliberately: Apple's
+                // own guidance moved onboarding and alert text to leading
+                // alignment in the new design system (WWDC25, "Get to know the
+                // new design system"), and one margin for the mark, the
+                // headline, the subtitle, both small lines and the links reads
+                // calmer than five separate centres. The DRIFT finding going
+                // quiet is a side effect of that decision and was not its
+                // reason.
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
             // Both of these were text a finger has to find: "Privacy" measured
             // 37 by 13 points and "Not now" 55 by 17, against Apple's 44 by 44.
             // The words stay the same size; the area around them is the target.
@@ -311,7 +308,8 @@ struct SignInSheet: View {
             // photographs on a phone is one person.
             Text("By continuing you agree to the Terms and the Privacy notice.")
                 .font(.caption2).foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
             HStack(spacing: 18) {
                 Link("Terms", destination: URL(string: "https://ancienttrees.app/terms")!)
                     .font(.caption2)
@@ -324,6 +322,7 @@ struct SignInSheet: View {
             }
 
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.top, 2)
     }
 

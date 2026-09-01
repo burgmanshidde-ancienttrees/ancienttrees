@@ -121,6 +121,56 @@ that exists.
 
 ---
 
+## Two sign-in buttons stacked, and why they cannot fully agree
+
+**Looked up 2026-09-01:** Apple's Human Interface Guidelines and
+https://developers.google.com/identity/branding-guidelines, read rather than
+remembered.
+
+**What each provider specifies, and they differ.** Apple's
+`SignInWithAppleButton` is Apple's own control: it centres its mark and its
+words together as one group and derives its type size from the button's height.
+Nothing about that is adjustable. Google's spec puts their mark at the LEADING
+edge with 16 points of padding on iOS, at 14 point text, with the mark larger
+than the type.
+
+Follow both literally on one sheet and you get what Hidde saw twice: one mark
+at the left edge and one near the middle, one large label and one small.
+
+**What Google actually forbids** is altering the mark itself: "You can't change
+the size or color of the Google 'G' logo. It must be the standard color
+version." They permit a custom button outright, while recommending their SDK.
+Apple effectively does not, so ours is the only one of the two that can move.
+
+**So: ours matches theirs.** Mark and label centred as one group, label at the
+same size Apple draws, mark sized against Apple's rather than by Google's own
+ratio. `Screens/GoogleButton.swift` carries the numbers and the measurements
+behind them.
+
+**The residue, so nobody chases it again:** the two marks still sit about 7
+points apart, because "Google" is a wider word than "Apple" and both groups are
+centred. Both are perfectly symmetrical about the screen's centre; the gap is
+arithmetic, not a mistake. Closing it entirely means replacing Apple's own
+button with a hand-drawn one, which is the thing the entry above was written
+against.
+
+---
+
+## Alignment on a sheet, centred or leading
+
+**Reference: Apple, WWDC25 "Get to know the new design system".** Typography is
+"now bolder and left-aligned to improve readability in key moments like alerts
+and onboarding". Apple has moved its own onboarding sheets off centre.
+
+Ours followed on 2026-09-01, sign-in sheet first, chosen by Hidde from
+photographs of both ("rechts ziet er beter uit"). The rule that came with it
+matters more than the alignment: it is a WHOLE-SHEET decision. Mark, headline,
+subtitle, small print and links move together or not at all. A single element
+switched to make a layout check go quiet is how that sheet ended up with one
+flush-left paragraph above its centred twin earlier the same day.
+
+---
+
 ## Feedback and reporting, and who may send it
 
 **Reference: Google Maps.** The options are visible to everyone; acting on one
