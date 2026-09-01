@@ -48,7 +48,7 @@ DAILY_CAP = int(os.environ.get("OUTREACH_DAILY_CAP", "50"))
 HEALTH_PATH = os.path.join(ROOT, "data", "mail-health.json")
 
 
-def _note_transport(error):
+def _note_transport(error, sent=True):
     """Record whether the mail actually went, so a dead transport is visible.
 
     Written 2026-09-01 after finding that the reply to submission #54 had been
@@ -68,7 +68,9 @@ def _note_transport(error):
         state["last_error_at"] = now
         state["consecutive_failures"] = int(state.get("consecutive_failures", 0)) + 1
     else:
-        state["last_sent_at"] = now
+        if sent:
+            state["last_sent_at"] = now
+        state["last_ok_at"] = now
         state["consecutive_failures"] = 0
         state.pop("last_error", None)
     try:
@@ -302,6 +304,26 @@ def main():
         server.quit()
     if not jobs:
         print("contributor_reply: nothing waiting")
+        # PROVE THE TRANSPORT EVEN WITH AN EMPTY QUEUE. Added 2026-09-01: the
+        # Gmail credentials were dead for two days and the only thing that
+        # could have noticed was a mail actually trying to go. Most runs have
+        # nothing to send, so on those runs the fault stayed invisible. One
+        # login per run costs nothing and means health.py always knows whether
+        # we could answer a reader if one wrote to us right now.
+        if really and all(creds.values()):
+            try:
+                probe = smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]),
+                                     timeout=30)
+                probe.starttls()
+                probe.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+                probe.quit()
+                _note_transport(None, sent=False)
+                print("contributor_reply: transport ok")
+            except Exception as e:
+                _note_transport(str(e)[:200])
+                print("TRANSPORT DEAD: %s" % str(e)[:160])
+                print("Nobody is owed a mail right now, but the next reader "
+                      "who writes to us could not be answered.")
     return 0
 
 

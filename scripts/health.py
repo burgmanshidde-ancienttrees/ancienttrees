@@ -357,6 +357,7 @@ def main():
                    (mh.get("last_error") or "")[:120]))
         else:
             print(f"  {'Contributor mail':20s} {'ok':10s} "
+                  f"checked {(mh.get('last_ok_at') or '?')[:16]}, "
                   f"last sent {(mh.get('last_sent_at') or 'never')[:16]}")
 
     if unknown:
