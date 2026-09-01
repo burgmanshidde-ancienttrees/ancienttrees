@@ -434,6 +434,17 @@ def readiness(entry):
         missing.append("position")
     if not has_source_evidence(entry):
         missing.append("source (never looked at by a pass, only scraped)")
+    if entry.get("needs_verification"):
+        # An explicit flag, because has_source_evidence() above is a PROXY: it
+        # asks whether any prose field exists, so a `reason` that says in words
+        # "this is not verified" passes it. That happened on 2026-09-01, when
+        # 39 Texas Big Tree Registry leads were written with a reason field
+        # spelling out that the registry's licence makes them lead-only and
+        # each still needs an independent second source. They counted as READY
+        # the same afternoon. A writer taking them would have produced stories
+        # from a single disqualified source with no named place, which hard
+        # rule 2 forbids however the gap arrived.
+        missing.append("verification (lead-only source, flagged needs_verification)")
     return missing
 
 

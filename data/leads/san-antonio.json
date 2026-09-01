@@ -1,65 +1,70 @@
 {
-  "city": "San Antonio",
-  "leads": [
-    {
-      "name": "Ailanthus altissima (Texas Big Tree Registry TreeID 861)",
-      "species": "Ailanthus altissima",
-      "lat": 29.415,
-      "lng": -98.49138889,
-      "status": "lead",
-      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 1.0 km from the centre of San Antonio. Condition per the registry: 2. Measured May 2017. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Not independently investigated in the 2026-09-01 verification pass (time-boxed to the four candidates found via named-place search instead); still needs a second source and an access check.",
-      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-      "girth_cm": 401
-    },
-    {
-      "name": "Platanus mexicana (Texas Big Tree Registry TreeID 858)",
-      "species": "Platanus mexicana",
-      "lat": 29.46466667,
-      "lng": -98.48094444,
-      "status": "lead",
-      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.7 km from the centre of San Antonio. Condition per the registry: 1. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Not independently investigated in the 2026-09-01 verification pass (time-boxed to the four candidates found via named-place search instead); still needs a second source and an access check.",
-      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-      "girth_cm": 328
-    },
-    {
-      "name": "Vachellia farnesiana (Texas Big Tree Registry TreeID 2350)",
-      "species": "Vachellia farnesiana",
-      "lat": 29.50388889,
-      "lng": -98.45519444,
-      "status": "lead",
-      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 9.6 km from the centre of San Antonio. Condition per the registry: 2. Measured July 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Not independently investigated in the 2026-09-01 verification pass (time-boxed to the four candidates found via named-place search instead); still needs a second source and an access check.",
-      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-      "girth_cm": 274
-    },
-    {
-      "name": "Dermatophyllum secundiflora (Texas Big Tree Registry TreeID 1010)",
-      "species": "Dermatophyllum secundiflora",
-      "lat": 29.53166667,
-      "lng": -98.56833333,
-      "status": "lead",
-      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 14.0 km from the centre of San Antonio. Condition per the registry: 3. Measured December 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. UPDATE 2026-09-01 verification pass: a Texas Mountain Laurel state champion specimen WAS independently verified and published this pass as san_004 (The Champion Mountain Laurel at Incarnate Word, University of the Incarnate Word campus), sourced from San Antonio Report + a City of San Antonio planning document. However that published tree's coordinates (29.4658, -98.4646) do not match this lead's coordinates (29.53167, -98.56833, 14km further out), so this registry lead itself remains a SEPARATE, still-unverified specimen; do not assume it is the same tree as san_004.",
-      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-      "girth_cm": 188
-    },
-    {
-      "name": "Diospyros texana (Texas Big Tree Registry TreeID 11443)",
-      "species": "Diospyros texana",
-      "lat": 29.27219444,
-      "lng": -98.43252778,
-      "status": "lead",
-      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 17.9 km from the centre of San Antonio. Condition per the registry: 2. Measured January 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Not independently investigated in the 2026-09-01 verification pass (time-boxed to the four candidates found via named-place search instead); still needs a second source and an access check.",
-      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-      "girth_cm": 137
-    },
-    {
-      "name": "Brackenridge Park numbered heritage trees (#95, #100, #101, #139, #141)",
-      "species": "Live Oak (Quercus virginiana/fusiformis), Pecan (Carya illinoinensis), Bald Cypress (Taxodium distichum)",
-      "lat": 29.4638,
-      "lng": -98.4703,
-      "status": "lead",
-      "reason": "Found via the City of San Antonio's own commissioned tree-ring dating study (Joe Buck / Cross Timbers Dendro Consulting, Jan 2023 final report, sanantonio.gov PDF), which cored five of the city's officially designated 'heritage trees' (>24in diameter) near the river wall/Japanese Tea Garden area of Brackenridge Park. NOT PROMOTED to verified this pass: ring-count dating found tree #139 (pecan) 82-92 years old, #100 (live oak) 75-81 years, #95 (live oak) 73-79 years, #141 (bald cypress) only 34-38 years old. All are heritage-SIZED but none is centuries-old; they qualify for the city's diameter-based designation but not for this project's 'genuinely old' bar. #101 (a large live oak) could not be cored (borer broke) but the surveyor's professional opinion is it is unlikely to be old either. Recorded here so a future pass does not re-chase these five specific numbered trees as ancient-tree candidates; they could still be considered on visual/historic-park grounds if a future pass wants to build a Brackenridge Park cluster, but not on age.",
-      "source": "City of San Antonio Parks and Recreation / Cross Timbers Dendro Consulting LLC, Jan 2023 (https://www.sanantonio.gov/Portals/0/Files/Parks/BrackenRidgeMasterPlan/Brackenridge%20Park%20Tree-Ring%20Dating%20Project.pdf)"
-    }
-  ],
-  "blocked": []
+ "city": "San Antonio",
+ "leads": [
+  {
+   "name": "Ailanthus altissima (Texas Big Tree Registry TreeID 861)",
+   "species": "Ailanthus altissima",
+   "lat": 29.415,
+   "lng": -98.49138889,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 1.0 km from the centre of San Antonio. Condition per the registry: 2. Measured May 2017. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Not independently investigated in the 2026-09-01 verification pass (time-boxed to the four candidates found via named-place search instead); still needs a second source and an access check.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 401,
+   "needs_verification": true
+  },
+  {
+   "name": "Platanus mexicana (Texas Big Tree Registry TreeID 858)",
+   "species": "Platanus mexicana",
+   "lat": 29.46466667,
+   "lng": -98.48094444,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 4.7 km from the centre of San Antonio. Condition per the registry: 1. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Not independently investigated in the 2026-09-01 verification pass (time-boxed to the four candidates found via named-place search instead); still needs a second source and an access check.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 328,
+   "needs_verification": true
+  },
+  {
+   "name": "Vachellia farnesiana (Texas Big Tree Registry TreeID 2350)",
+   "species": "Vachellia farnesiana",
+   "lat": 29.50388889,
+   "lng": -98.45519444,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 9.6 km from the centre of San Antonio. Condition per the registry: 2. Measured July 2020. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Not independently investigated in the 2026-09-01 verification pass (time-boxed to the four candidates found via named-place search instead); still needs a second source and an access check.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 274,
+   "needs_verification": true
+  },
+  {
+   "name": "Dermatophyllum secundiflora (Texas Big Tree Registry TreeID 1010)",
+   "species": "Dermatophyllum secundiflora",
+   "lat": 29.53166667,
+   "lng": -98.56833333,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 14.0 km from the centre of San Antonio. Condition per the registry: 3. Measured December 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. UPDATE 2026-09-01 verification pass: a Texas Mountain Laurel state champion specimen WAS independently verified and published this pass as san_004 (The Champion Mountain Laurel at Incarnate Word, University of the Incarnate Word campus), sourced from San Antonio Report + a City of San Antonio planning document. However that published tree's coordinates (29.4658, -98.4646) do not match this lead's coordinates (29.53167, -98.56833, 14km further out), so this registry lead itself remains a SEPARATE, still-unverified specimen; do not assume it is the same tree as san_004.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 188,
+   "needs_verification": true
+  },
+  {
+   "name": "Diospyros texana (Texas Big Tree Registry TreeID 11443)",
+   "species": "Diospyros texana",
+   "lat": 29.27219444,
+   "lng": -98.43252778,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 17.9 km from the centre of San Antonio. Condition per the registry: 2. Measured January 2024. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Not independently investigated in the 2026-09-01 verification pass (time-boxed to the four candidates found via named-place search instead); still needs a second source and an access check.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 137,
+   "needs_verification": true
+  },
+  {
+   "name": "Brackenridge Park numbered heritage trees (#95, #100, #101, #139, #141)",
+   "species": "Live Oak (Quercus virginiana/fusiformis), Pecan (Carya illinoinensis), Bald Cypress (Taxodium distichum)",
+   "lat": 29.4638,
+   "lng": -98.4703,
+   "status": "lead",
+   "reason": "Found via the City of San Antonio's own commissioned tree-ring dating study (Joe Buck / Cross Timbers Dendro Consulting, Jan 2023 final report, sanantonio.gov PDF), which cored five of the city's officially designated 'heritage trees' (>24in diameter) near the river wall/Japanese Tea Garden area of Brackenridge Park. NOT PROMOTED to verified this pass: ring-count dating found tree #139 (pecan) 82-92 years old, #100 (live oak) 75-81 years, #95 (live oak) 73-79 years, #141 (bald cypress) only 34-38 years old. All are heritage-SIZED but none is centuries-old; they qualify for the city's diameter-based designation but not for this project's 'genuinely old' bar. #101 (a large live oak) could not be cored (borer broke) but the surveyor's professional opinion is it is unlikely to be old either. Recorded here so a future pass does not re-chase these five specific numbered trees as ancient-tree candidates; they could still be considered on visual/historic-park grounds if a future pass wants to build a Brackenridge Park cluster, but not on age.",
+   "source": "City of San Antonio Parks and Recreation / Cross Timbers Dendro Consulting LLC, Jan 2023 (https://www.sanantonio.gov/Portals/0/Files/Parks/BrackenRidgeMasterPlan/Brackenridge%20Park%20Tree-Ring%20Dating%20Project.pdf)"
+  }
+ ],
+ "blocked": []
 }

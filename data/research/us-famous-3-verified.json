@@ -1,0 +1,126 @@
+[
+  {
+    "id": "pnj_001",
+    "name": "The Mercer Oak (successor)",
+    "species": "White Oak (Quercus alba)",
+    "age_estimate": "young, planted around 2000-2001",
+    "age_min": 24,
+    "age_max": 26,
+    "girth_cm": null,
+    "location": {
+      "address": "Princeton Battlefield State Park, 500 Mercer St, Princeton, New Jersey",
+      "latitude": 40.331711,
+      "longitude": -74.675603,
+      "neighbourhood": "Princeton Battlefield State Park"
+    },
+    "verified_sources": [
+      "https://islandinthenet.com/mercer-white-oak-princeton-battlefield-park/",
+      "https://pbs1777.org/landmarks-of-the-princeton-battlefield/"
+    ],
+    "access": "Free. New Jersey state park, open daily, no entry fee.",
+    "transport": "Princeton Battlefield State Park, about 3 km southwest of downtown Princeton, NJ. Not within 30 min of any city we currently publish; nearest published city is Philadelphia, roughly 65 km / 50+ min drive, too far to count as a day-trip extension.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SUCCESSOR TREE, not the original. The original Mercer Oak (white oak, ~300 years old, near where General Hugh Mercer was mortally wounded during the Battle of Princeton, Jan 1777) collapsed in high winds in March 2000 (islandinthenet.com, dating the fall and giving the ~300yr age of the original). An arborist planted an 8-foot sapling grown from an acorn of the original tree inside/beside the former tree's stump shortly after (islandinthenet.com says 'soon after'; pbs1777.org, the Princeton Battlefield Society's own page, gives 2001 as the planting year for the direct descendant). ALIVE CHECK: a Wikimedia Commons photo titled 'Mercer Oak, Princeton Battlefield State Park in 2024' is geotagged to these exact coordinates (confirmed via Commons API), giving dated 2024 evidence the successor stands and is photographed at the named spot. A second Commons photo shows the sapling in December 2022 (islandinthenet.com's own December 2022 photo). No girth or height figure found in this pass; the tree is young (roughly 25 years old) so a mature girth is not expected. Historically significant site (National Historic Landmark battlefield, American Revolution, Jan 3 1777) and the tree is the park's named living memorial, planted from the original's own acorn on the spot where Mercer fell nearby. Would somebody travel specifically for this tree: borderline yes, treat as a companion feature of the battlefield rather than a solo destination in its own right, since it is young and unremarkable to look at, but it is the site's namesake and the battlefield itself is already a National Historic Landmark that people visit. Two independent sources agree on the essential facts (fall date/cause, successor planted from acorn); minor date discrepancy on exact planting year (WebSearch summary said an arborist planted an 8-ft sapling in 1981 sourced from an earlier acorn, which conflicts with the 2000 stump-planting story and looks like a search-summary artifact rather than a page fact; only the pbs1777.org and islandinthenet.com fetched-page facts were used, not the unverified search summary)."
+  },
+  {
+    "id": "ftj_001",
+    "name": "The Peter Lebeck Oak",
+    "species": "Valley Oak (Quercus lobata)",
+    "age_estimate": "several hundred years",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Fort Tejon State Historic Park, 4201 Fort Tejon Rd, Lebec, California",
+      "latitude": 34.8693465,
+      "longitude": -118.9025777,
+      "neighbourhood": "Fort Tejon State Historic Park"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Peter_Lebeck",
+      "https://www.avoidingregret.com/2016/03/photo-essay-fort-tejon-and-ghost-of.html",
+      "https://scvhistory.com/scvhistory/lw2128a.htm"
+    ],
+    "access": "Free to view; Fort Tejon State Historic Park charges a day-use vehicle fee and is open daily 9am-4pm.",
+    "transport": "Fort Tejon State Historic Park, Lebec, CA, on the west side of I-5 in Grapevine Canyon. About 113 km / 70 miles from Los Angeles (our nearest published city), roughly 1.5 hours drive, too far to count as a day-trip extension of LA.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A valley oak under which trapper Peter Lebeck (probably a Frenchman) was buried after being killed by a grizzly bear on 17 October 1837, near what became Fort Tejon (founded 1854). One of the oaks carried an inscription cut into the bark: 'Peter le Beck, killed by a bear, Octr 17, 1837'. By 1857 bark had regrown over the carving; the Foxtail Rangers (a Bakersfield group) removed that bark in the 1880s-90s, found the inscription mirrored on its underside, and reburied/re-marked the grave; the recovered bark is now displayed at Fort Tejon (per SCVHistory and a WebSearch summary sourced to a 2001 account) or, per another account, at Kern County Museum in Bakersfield -- sources disagree on where the carved bark piece now sits, and this is flagged rather than resolved. A proper headstone replicating the inscription was placed at the grave in 1938. ALIVE CHECK: no photo newer than 2016 was found and verified directly in this pass (the Commons/calisphere photo of the grave is a 1912 historical image, not current evidence, confirmed via Commons API metadata). A 2016 photo-essay (avoidingregret.com) describes the grave as lying beneath one of the fort's 'well-preserved 400-year-old valley oaks', implying the tree was alive and standing at that visit; no source found reporting its death or removal since. Flagged for this reason: alive-evidence is a decade old rather than from the last few years, and a future pass should look for a newer photo or park record before this is upgraded. LOCATION CAVEAT worth flagging hard: Wikipedia's own article states the 1940 state acquisition of Fort Tejon land 'did not include the Lebeck Oak or several lesser structures', which raises a real question about whether the tree sits inside the park boundary or on adjacent land; however, multiple current tourism sources (Tripadvisor, general park descriptions) describe the grave as something visitors see as part of a normal park visit, and no source describes it as fenced off or inaccessible. PIN is approximate at the park entrance, not the tree itself; no tree-level coordinate or geotagged recent photo was found. No girth or height figure found in this pass."
+  },
+  {
+    "id": "wye_001",
+    "name": "The Wye Oak (clone)",
+    "species": "White Oak (Quercus alba)",
+    "age_estimate": "young, planted 2006",
+    "age_min": 19,
+    "age_max": 20,
+    "girth_cm": null,
+    "location": {
+      "address": "Wye Oak State Park, Wye Mills, Talbot County, Maryland",
+      "latitude": 38.939167,
+      "longitude": -76.080833,
+      "neighbourhood": "Wye Oak State Park"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Wye_Oak",
+      "https://www.baltimoresun.com/2002/06/07/wye-oak-topples-shattered-by-storm/"
+    ],
+    "access": "Free. Maryland state park, open daily during daylight hours, no entry fee found.",
+    "transport": "Wye Oak State Park, Wye Mills, Talbot County, Maryland. About 100 km from Washington DC (our nearest published city), well over an hour's drive, too far for a day-trip extension.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "CLONE, not the original tree. The original Wye Oak was Maryland's state tree, the largest known white oak in the United States, believed over 460 years old, and stood in what is now Wye Oak State Park for four centuries. It was destroyed in a severe thunderstorm on 6 June 2002 (Baltimore Sun, contemporary report). Before its fall, University of Maryland horticulture professor Frank Gouin led an effort to clone it via grafting because of its size, age and unusual resistance to oak wilt and gypsy moth; two grafted clones were planted at Mount Vernon on 26 April 2002 (before the original fell). A genetic clone was planted at the original site in Wye Oak State Park during a ceremony on 6 June 2006 (the 4th anniversary of the fall), on/near the remains of the original trunk, per Wikipedia. ALIVE CHECK: a Wikimedia Commons photo titled 'IMG9711 Wye Oak clone.jpg' carries EXIF DateTimeOriginal of 2025-07-22 (confirmed via Commons API), i.e. photographed alive at the site within the last year. Coordinates: Wikipedia infobox gives 38 56 21 N 76 04 51 W for the Wye Oak site, which converts to 38.939167, -76.080833, matching the coordinate already supplied in the lead batch almost exactly (38.939258, -76.08089) -- treated as confirmed, tree-level. No girth/height figure found for the clone in this pass; it is young (planted 2006, ~19-20 years old as of 2025) so a small trunk is expected and not remarkable yet. The state built an entire park around this single tree's site and it was the state tree of Maryland for over 60 years, so despite the clone's youth the SITE itself carries strong legacy pull; flagged mainly because no girth/height was captured and because this is explicitly a young successor rather than the famous original."
+  },
+  {
+    "id": "ath_001",
+    "name": "The Son of the Tree That Owns Itself",
+    "species": "White Oak (Quercus alba)",
+    "age_estimate": "roughly 80 years",
+    "age_min": 79,
+    "age_max": 80,
+    "girth_cm": null,
+    "height_m": 15,
+    "location": {
+      "address": "Corner of South Finley Street and Dearing Street, Athens, Georgia",
+      "latitude": 33.954722,
+      "longitude": -83.382222,
+      "neighbourhood": "Downtown Athens"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Tree_That_Owns_Itself",
+      "https://www.roadsideamerica.com/tip/312",
+      "https://www.fodors.com/world/north-america/usa/georgia/central-and-north-georgia/places/athens/experiences/news/meet-the-tree-that-owns-itself"
+    ],
+    "access": "Free. Stands on a public street corner in downtown Athens, visible and reachable at any time, no fee.",
+    "transport": "Downtown Athens, Georgia. Athens is not currently one of our published US cities; this stands alone unless/until an Athens page exists.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SUCCESSOR TREE, not the original. The original white oak stood on this corner and was, per local legend, deeded ownership of itself and the land within 8 feet of its trunk by Col. William H. Jackson in his will (1890 legend, published in the Athens Weekly Banner in 1890; the legal validity of a tree owning property is disputed by legal scholars per Wikipedia, but the story and the site are treated as the destination regardless). The original tree fell in a windstorm in 1942. The Junior Ladies' Garden Club of Athens, with University of Georgia horticulture students under Roy Bowden, planted a replacement grown from one of the original tree's acorns on 4 December 1946, in the same plot. It was 5 feet tall at planting (trimmed to 3 feet for transplant) and had reached over 50 feet by 2006 (Wikipedia). Commonly called the 'Son of the Tree That Owns Itself'. ALIVE CHECK: no photo with a verified recent date (last few years) was directly confirmed in this pass -- two attempted fetches (redandblack.com 2022 article, Atlas Obscura page) both failed (429 and 403 respectively) and were not retried per the two-attempts rule. However multiple current tourism/reference sources (Fodor's, Roadside America, Only In Your State) describe it in the present tense as an existing, visitable attraction, and no source found reports it dead, damaged or removed. Flagged for this reason: recency of alive-evidence is not directly confirmed with a dated photo in this pass, though corroboration is otherwise strong. Would somebody travel specifically for this tree: yes for the story (a tree that legally 'owns itself', land included) even though the visible tree itself is an unremarkable-looking young-ish oak; the site is a well known only-in-Athens landmark with its own historical marker. No girth figure found; height reached over 50ft (15m) by 2006 per Wikipedia, likely more today but not independently re-measured in this pass."
+  },
+  {
+    "id": "okc_001",
+    "name": "The Survivor Tree",
+    "species": "American Elm (Ulmus americana)",
+    "age_estimate": "around 100 years",
+    "age_min": 90,
+    "age_max": 110,
+    "girth_cm": null,
+    "location": {
+      "address": "Outdoor Symbolic Memorial, Oklahoma City National Memorial, 620 N Harvey Ave, Oklahoma City, Oklahoma",
+      "latitude": 35.473176,
+      "longitude": -97.517059,
+      "neighbourhood": "Downtown Oklahoma City"
+    },
+    "verified_sources": [
+      "https://memorialmuseum.com/experience/the-survivor-tree/",
+      "https://en.wikipedia.org/wiki/Oklahoma_City_Bombing_Memorial_%27Survivor_Tree%27",
+      "https://www.news9.com/story/67f40f4ba0c6d2054de691c4/survivor-tree-a-living-symbol-of-resilience-and-hope"
+    ],
+    "access": "Free. The Outdoor Symbolic Memorial (which includes the Survivor Tree, the Gates of Time, the Field of Empty Chairs) is open 24 hours a day, 365 days a year, at no charge. Only the separate indoor Museum charges admission.",
+    "transport": "Downtown Oklahoma City, already one of our published cities; the tree stands within the city itself.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "American elm that stood in a parking lot across the street from the Alfred P. Murrah Federal Building and survived the 19 April 1995 bombing, though the blast stripped most of its branches and embedded glass and debris in the trunk; officials nearly cut it down afterward to recover evidence. About a year later it began blooming again and was preserved as the centrepiece of the Oklahoma City National Memorial's Outdoor Symbolic Memorial, on the north side of the site. Photos from the 1920s (when the site was a family home's back yard) indicate the tree is roughly 100 years old (memorialmuseum.com). ALIVE CHECK: a 2024/2025-dated local news piece (News9.com, headline references 'nearly 30 years' since the 1995 bombing, i.e. written around 2024-25) describes the tree as thriving today; the memorial's own current site describes it in the present tense as an actively maintained, protected feature with an ongoing seed-collection and gifting program (elm seedlings from this tree are distributed to visitors and grown at partner sites). No girth or precise height found in this pass; height/spread commonly cited around 40 feet. The Rescuers' Orchard (redbuds, maples, pistache, elms) is planted around it. PIN is the memorial park's centroid (approximate); the site is small (roughly 150 x 220 metres) so this is a tight approximation, not a park-level guess across a large area, but should be upgraded to the tree's exact position by a future pass with a mapped photo or the memorial's own site plan."
+  }
+]

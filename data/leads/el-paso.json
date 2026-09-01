@@ -1,45 +1,48 @@
 {
-  "city": "El Paso",
-  "leads": [
-    {
-      "name": "Pinus halapensis (Texas Big Tree Registry TreeID 538)",
-      "species": "Pinus halapensis",
-      "lat": 31.75961111,
-      "lng": -106.48263889,
-      "status": "lead",
-      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 0.3 km from the centre of El Paso. Condition per the registry: 1. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Investigated in the 2026-09-01 verification pass: no independent second source with a specific location found for this exact registry specimen within the time-box; remains unverified.",
-      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-      "girth_cm": 338
-    },
-    {
-      "name": "Chilopsis linearis (Texas Big Tree Registry TreeID 396)",
-      "species": "Chilopsis linearis",
-      "lat": 31.82444444,
-      "lng": -106.43888889,
-      "status": "lead",
-      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 8.2 km from the centre of El Paso. Condition per the registry: 2. Measured August 2008. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Investigated in the 2026-09-01 verification pass: no independent second source with a specific location found for this exact registry specimen within the time-box; remains unverified.",
-      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-      "girth_cm": 244
-    },
-    {
-      "name": "Fraxinus velutina (Texas Big Tree Registry TreeID 366)",
-      "species": "Fraxinus velutina",
-      "lat": 31.84027778,
-      "lng": -106.5875,
-      "status": "lead",
-      "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 13.0 km from the centre of El Paso. Condition per the registry: 2. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Investigated in the 2026-09-01 verification pass: no independent second source with a specific location found for this exact registry specimen within the time-box; remains unverified.",
-      "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
-      "girth_cm": 389
-    },
-    {
-      "name": "The Aleppo Pine at Magoffin & San Antonio Avenues (downtown El Paso)",
-      "species": "Aleppo Pine (Pinus halepensis)",
-      "lat": 31.7596,
-      "lng": -106.4826,
-      "status": "lead",
-      "reason": "STRONG LEAD, matches Texas Big Tree Registry TreeID 538 (0.3km from El Paso centre, girth 338cm, condition 1, measured Nov 2021) almost exactly in species and location. A WebSearch AI summary repeatedly and consistently claimed: 76ft tall, a Texas state champion, standing 'at the bus stop where Magoffin and San Antonio Avenues meet' in downtown El Paso, cared for by former TFS regional urban forester Oscar Mestas (2015 Texas Arborist of the Year, based in El Paso), citing Texas Monthly's 'Ten Truly Tree-mendous Texas Trees'. THIS COULD NOT BE VERIFIED ON A FETCHED PAGE: texasmonthly.com/travel/ten-truly-tree-mendous-texas-trees/ returned HTTP 403 to both WebFetch and curl with a browser user-agent (two attempts, moved on per BRIEF_RESEARCH.md). The ISA Texas Nov 2015 'In the Shade' newsletter PDF (isatexas.com, fetched successfully) profiles Oscar Mestas at length as 2015 Arborist of the Year and confirms his El Paso base and 30-year TFS career, but does NOT mention this pine or its location anywhere in the full text. Per BRIEF_RESEARCH.md's 'a search summary is a lead, never a source' rule, none of the specific figures (76ft, the cross-street location, the Mestas connection) are treated as verified; only the registry entry itself is solid. NEXT STEP for a future pass: try the Wayback Machine for the Texas Monthly URL, or find the article in a library/print archive, to get a second, directly-quotable source before publishing.",
-      "source": "Texas Big Tree Registry (lead source only) + unconfirmed WebSearch summary of Texas Monthly's Ten Truly Tree-mendous Texas Trees"
-    }
-  ],
-  "blocked": []
+ "city": "El Paso",
+ "leads": [
+  {
+   "name": "Pinus halapensis (Texas Big Tree Registry TreeID 538)",
+   "species": "Pinus halapensis",
+   "lat": 31.75961111,
+   "lng": -106.48263889,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 0.3 km from the centre of El Paso. Condition per the registry: 1. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Investigated in the 2026-09-01 verification pass: no independent second source with a specific location found for this exact registry specimen within the time-box; remains unverified.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 338,
+   "needs_verification": true
+  },
+  {
+   "name": "Chilopsis linearis (Texas Big Tree Registry TreeID 396)",
+   "species": "Chilopsis linearis",
+   "lat": 31.82444444,
+   "lng": -106.43888889,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 8.2 km from the centre of El Paso. Condition per the registry: 2. Measured August 2008. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Investigated in the 2026-09-01 verification pass: no independent second source with a specific location found for this exact registry specimen within the time-box; remains unverified.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 244,
+   "needs_verification": true
+  },
+  {
+   "name": "Fraxinus velutina (Texas Big Tree Registry TreeID 366)",
+   "species": "Fraxinus velutina",
+   "lat": 31.84027778,
+   "lng": -106.5875,
+   "status": "lead",
+   "reason": "From the Texas Big Tree Registry sweep of 2026-08-20, 13.0 km from the centre of El Paso. Condition per the registry: 2. Measured November 2021. NOT verified: the registry's licence allows it as a lead source only, so this needs an independent second source, the actual place named, and a check that it stands somewhere the public may go. Investigated in the 2026-09-01 verification pass: no independent second source with a specific location found for this exact registry specimen within the time-box; remains unverified.",
+   "source": "Texas Big Tree Registry (lead source only, licence disqualifies import; see OPEN_DATA_SURVEY.md)",
+   "girth_cm": 389,
+   "needs_verification": true
+  },
+  {
+   "name": "The Aleppo Pine at Magoffin & San Antonio Avenues (downtown El Paso)",
+   "species": "Aleppo Pine (Pinus halepensis)",
+   "lat": 31.7596,
+   "lng": -106.4826,
+   "status": "lead",
+   "reason": "STRONG LEAD, matches Texas Big Tree Registry TreeID 538 (0.3km from El Paso centre, girth 338cm, condition 1, measured Nov 2021) almost exactly in species and location. A WebSearch AI summary repeatedly and consistently claimed: 76ft tall, a Texas state champion, standing 'at the bus stop where Magoffin and San Antonio Avenues meet' in downtown El Paso, cared for by former TFS regional urban forester Oscar Mestas (2015 Texas Arborist of the Year, based in El Paso), citing Texas Monthly's 'Ten Truly Tree-mendous Texas Trees'. THIS COULD NOT BE VERIFIED ON A FETCHED PAGE: texasmonthly.com/travel/ten-truly-tree-mendous-texas-trees/ returned HTTP 403 to both WebFetch and curl with a browser user-agent (two attempts, moved on per BRIEF_RESEARCH.md). The ISA Texas Nov 2015 'In the Shade' newsletter PDF (isatexas.com, fetched successfully) profiles Oscar Mestas at length as 2015 Arborist of the Year and confirms his El Paso base and 30-year TFS career, but does NOT mention this pine or its location anywhere in the full text. Per BRIEF_RESEARCH.md's 'a search summary is a lead, never a source' rule, none of the specific figures (76ft, the cross-street location, the Mestas connection) are treated as verified; only the registry entry itself is solid. NEXT STEP for a future pass: try the Wayback Machine for the Texas Monthly URL, or find the article in a library/print archive, to get a second, directly-quotable source before publishing.",
+   "source": "Texas Big Tree Registry (lead source only) + unconfirmed WebSearch summary of Texas Monthly's Ten Truly Tree-mendous Texas Trees"
+  }
+ ],
+ "blocked": []
 }
