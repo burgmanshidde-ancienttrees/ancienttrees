@@ -36,8 +36,10 @@ against the same files. Nobody prepares by hand any more.
 """
 import argparse
 import glob
+import datetime
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -199,6 +201,8 @@ def pipeline_status():
     except Exception as exc:  # never let preparation cost a window
         print(f"  refilled          : skipped ({exc.__class__.__name__})")
 
+    data_age()
+
     try:
         import leads as _leads
         b = _leads.buckets()
@@ -241,6 +245,42 @@ def pipeline_status():
     except Exception as exc:
         print(f"  ready to write    : unknown ({exc.__class__.__name__})")
 
+
+
+
+def data_age():
+    """How old is the demand data a run is about to make decisions on?
+
+    Hidde, 2026-09-01: "is het probleem niet in onze autonome flow dat als de
+    daily digest nachtrun niet werkt dat we dan een dag achterlopen". The
+    digest itself turns out to be the reliable part (37 consecutive days in
+    DATA.md with no gap), and health.py already flags the WORKFLOW going
+    quiet. What nothing did was tell the run how old the FILE is, so a run
+    reading a stale depth roster could not know it was stale and would spend
+    its window deepening cities that stopped being the answer days ago.
+
+    Two days is the threshold rather than one, because Search Console lags two
+    to three days by itself: a single missed digest moves nothing and warning
+    about it would train a run to ignore the line.
+    """
+    path = os.path.join(ROOT, "DATA.md")
+    if not os.path.exists(path):
+        return
+    head = open(path, encoding="utf-8").read(40000)
+    m = re.search(r"^## (\d{4}-\d{2}-\d{2})", head, re.M)
+    if not m:
+        print("  demand data      : DATA.md carries no dated entry")
+        return
+    age = (datetime.date.today() - datetime.date.fromisoformat(m.group(1))).days
+    if age <= 2:
+        print("  demand data      : DATA.md newest entry %s (%d day(s) old)"
+              % (m.group(1), age))
+    else:
+        print("  *** DATA.md's newest entry is %s, %d days old. The depth roster and "
+              "the queue's ranking are that old too, so rule two ('depth only where "
+              "there is demand') is being applied to stale numbers. Check the Data "
+              "digest workflow before spending the window on depth: "
+              "python3 scripts/health.py ***" % (m.group(1), age))
 
 
 def refill_batches(b, want=3):
