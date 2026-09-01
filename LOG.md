@@ -9,6 +9,52 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-01 (session) - Rung 2 first: Munich's German overlay was breaking the deploy; then submission 57, then a write pass and shelf cleanup
+
+Opened on health.py's RUNG 2: Smoke test and Build and deploy were both failing.
+i18ncheck.py showed de/munich 38 problems, "no translation for muc_XXX": Munich
+had grown from 7 to 45 trees and the German overlay had not kept up, taking the
+whole deploy down. Claimed munich and dispatched three translation agents to
+backfill it in parallel; a concurrent session (fcd38d89) fixed the same gap
+faster, so I stopped my three agents before they wrote anything and released
+the claim. Verified de/munich clean afterward and confirmed the concurrent
+session's fix went green in CI (deploy + smoke both success on 33547746677).
+Checked ios.yml too: it's failing on a SMALL tap-target finding on 'mytrees-who',
+but LOG.md already records a 2026-09-01 decision not to blind-patch SwiftUI
+accessibility-tree merging without a Mac to verify against, so left it for a
+session with hands-on access, same as before; health.py's own RUNG 2 output
+doesn't gate on it anyway.
+
+Rung 1: one unprocessed reader submission (id 57, Baarn, GPS-only, app:collect).
+Resolved via the admin API to burgmans.hidde@gmail.com on a freshly created
+account, GPS ~7m from two earlier confirmed Hidde test clicks (rows 43/44).
+Set outcome: holds, logged in CURATION.md, marked processed.
+
+Rung 4/discovery: prepare.py showed 30 verified trees awaiting a writer
+(auckland, already claimed elsewhere; us-famous-2 and us-famous-3). Claimed
+and dispatched a write-stories pass on the 5 clean candidates in those two
+files. Caught mid-pass that one of them, gpo_001 (The Witch Tree, Grand
+Portage MN), already carried a hard-rule-10 BLOCKED verdict in
+data/leads/_famous-united-states.json (access closed by the tribe specifically
+to protect a sacred site from vandalism) that the earlier verify pass had
+missed; sent the writer a stop message and it withdrew the story cleanly.
+Of the remaining 4 stories, nol_dueling_001 (New Orleans) turned out on my own
+check to be a 519m coordinate-duplicate of already-published nol_003 (same
+girth, height, age, same "hurricane took the other one in 1949" story) and was
+folded into leads rather than merged. The other 3 merged as new single-tree
+places under the 2026-08-31 exception: Princeton NJ (Mercer Oak successor),
+Wye Mills MD (Wye Oak clone), Gonzales TX (Sam Houston Oak, view-only).
+While in the shelf, cleared the rest of all three us-famous-*-verified.json
+files (15 more duplicate/stale entries, folded or deleted with why-notes);
+all three are now empty and deleted.
+
+Also closed 4 species-page gaps pagegaps.py named (white-oak, cook-pine,
+japanese-chinquapin, kapok), each intro written from its own 2-3 mapped trees.
+
+preflight, tree_index.py, i18ncheck and `npm run build` all clean before
+pushing (3563 pages built). Visits, last 7 days: 569 visits, 1031 page views,
+climbing Mon-Fri and dipping weekends, nothing unusual.
+
 ## 2026-09-01 (session) - Nine photographs on eight cities that had none
 
 You asked for a photo round. 112 of 230 published cities carried no photograph at
