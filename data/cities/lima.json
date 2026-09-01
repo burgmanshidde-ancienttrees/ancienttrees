@@ -1,0 +1,196 @@
+{
+ "city": "Lima",
+ "country": "Peru",
+ "status": "needs_curation",
+ "oldest_tree_id": "lim_002",
+ "intro": "Lima gets a few millimetres of rain a year, so nothing old here grew by accident. The oldest tree on the city's heritage register is an olive put in the ground around 1640 by the friar who became Saint Martin de Porres, and it has been watered by hand, by channel and by sea fog ever since. Five trees, five species, three of them a short walk apart in the old olive grove of San Isidro.",
+ "meta_description": "Lima's oldest tree is an olive of about 390 years, planted by Saint Martin de Porres. Five heritage trees, real stories, and how to reach each one.",
+ "question_meta": "An olive of roughly 390 years in Bosque El Olivar, planted by the friar who became Saint Martin de Porres, is Lima's oldest tree.",
+ "question_answer": "Lima's oldest tree is an olive in Bosque El Olivar in San Isidro, put in the ground between 1637 and 1643 according to the studies the district cites, which makes it close to 390 years old. It was planted by the Dominican friar Martin de Porres, canonised three centuries later. The grove is a public park, open daily and free.",
+ "question_context": "Lima's heritage trees are recorded by municipal ordinance rather than by a national register, which is why the ages here come with the district attached: San Isidro under ordinance 535, Pueblo Libre under 570, Miraflores under 555. The olive is the longest-lived on that register and its date comes from studies of the grove rather than from a ring count, so treat 390 years as the studied estimate it is. What makes the number remarkable is where it stands. Lima is coastal desert with a few millimetres of rain a year, and the only reliable water is months of grey sea fog, so every old tree in this city has been kept alive by an irrigation channel or somebody's decision for as long as it has stood. The grove around this olive descends from trees brought from Seville in the 1560s and was farmed as an olive plantation for centuries before the city grew around it. Two of the other four have no recorded age at all, and we say so on their pages rather than filling the gap.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Lima?",
+   "a": "An olive in Bosque El Olivar in San Isidro, planted between 1637 and 1643 by the Dominican friar Martin de Porres, which makes it close to 390 years old. It is the longest-lived tree on the city's heritage register."
+  },
+  {
+   "q": "Are Lima's heritage trees free to visit?",
+   "a": "All five are. Three stand in public parks in San Isidro, one in Parque El Carmen in Pueblo Libre, and the cedar stands on the public pavement of Avenida 28 de Julio in Miraflores."
+  },
+  {
+   "q": "Can you walk between them?",
+   "a": "Between three of them. The olive, the araucaria and the ceiba are all in or beside Bosque El Olivar in San Isidro, within about a kilometre. The ombu in Pueblo Libre and the cedar in Miraflores are separate trips."
+  },
+  {
+   "q": "How does anything grow old in a desert city?",
+   "a": "By being watered. Lima gets a few millimetres of rain a year and its nearest thing to weather is months of sea fog off the Pacific. Every old tree here has been kept alive by an irrigation channel, a river branch or a decision somebody kept making, for as long as it has stood."
+  },
+  {
+   "q": "Why do two of these trees have no age?",
+   "a": "Because nobody has recorded one, and we would rather leave the field empty than invent a number. If you know of a dated source for the Miraflores cedar or the San Isidro ceiba, we would like to hear about it."
+  }
+ ],
+ "trees": [
+  {
+   "id": "lim_001",
+   "name": "The Chabuca Granda Cedar",
+   "species": "Spanish Cedar (Cedrela odorata)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Avenida 28 de Julio, block 6, Miraflores, in front of the singer Chabuca Granda's former house",
+    "latitude": -12.127867,
+    "longitude": -77.027134,
+    "neighbourhood": "Miraflores"
+   },
+   "story": "In September 1977 a singer put her arms around this cedar and the men with the saws went home. Chabuca Granda had been told the tree outside her house on Avenida 28 de Julio was coming down, and she made herself the obstacle, on the third of the month, which was her own birthday. Afterwards she wrote it a poem, \"Cancion al arbol del canto\".\n\nThe cedar is still on the pavement of the sixth block, in front of the house. In 2020 Miraflores entered it as Registro 001-2020-MM, the first tree in the district's heritage register and so far the only one, under an ordinance that weighs height, trunk diameter, whether the species is a vulnerable one, and what a tree means to the people living around it. Spanish cedar clears that third bar almost everywhere it grows: Cedrela odorata is a prized cabinet timber and is logged hard across its range, which is not a common way for a tree to end up protected on a city street corner in the middle of a residential block.\n\nNobody has published its age, its height or its girth, and we would rather leave the field empty than put a number in it. If you know when this cedar went into the pavement, or have seen anything that dates it, tell us and it goes on the page.",
+   "verified_sources": [
+    "https://www.miraflores.gob.pe/el-cedro-que-chabuca-granda-salvo-de-la-muerte-fue-declarado-primer-arbol-patrimonial-por-la-municipalidad-de-miraflores/",
+    "https://www.infobae.com/america/peru/2022/09/09/el-abrazo-de-chabuca-granda-el-dia-que-enfrento-a-unos-taladores-para-salvar-un-arbol-en-miraflores/"
+   ],
+   "access": "Free, standing on the public pavement of Avenida 28 de Julio",
+   "transport": "Central Miraflores, walkable from Parque Kennedy",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "lim_002",
+   "name": "The Olive of San Martin de Porres",
+   "species": "Olive (Olea europaea)",
+   "age_estimate": "roughly 390 years",
+   "age_min": 380,
+   "age_max": 400,
+   "girth_cm": null,
+   "location": {
+    "address": "Bosque El Olivar, Calle Hermilio Hernandez (block 1), next to Casa Museo Marina Nunez del Prado, near Calle Antero Aspillaga 291, San Isidro",
+    "latitude": -12.10076,
+    "longitude": -77.034116,
+    "neighbourhood": "San Isidro"
+   },
+   "story": "The longest-lived tree on Lima's heritage register is an olive, and the studies San Isidro cites put it in the ground between 1637 and 1643, planted by the Dominican friar Martin de Porres, who was made a saint three centuries later. That is close to 390 years. A national survey of the city's heritage trees says only \"over 380\", so we give the band rather than pick a figure.\n\nNow consider the ground it did that on. Lima sits in coastal desert and rain here is measured in millimetres a year. Four centuries of growth on this spot happened on irrigation, channelled water and the winter fog that sits over the city for months, which means somebody has been deciding to keep this olive alive since before Peru was a country.\n\nIt stands in the Bosque El Olivar, the old colonial grove of more than 1,600 olives raised from Spanish stock, immediately beside the Casa Museo Marina Nunez del Prado. The grove's founding is the grove's story; this trunk has its own, Registro 003-2020-MSI, and its own dated planting. In May 2026 Peru's national forestry service recognised the district for conserving it, which is the most recent word anyone has published on the tree and a good sign for a plant of that age.",
+   "best_time": {
+    "months": [
+     4,
+     5
+    ],
+    "kind": "fruit",
+    "label": "April and May, when the fruit darkens on the branch"
+   },
+   "verified_sources": [
+    "https://www.gob.pe/institucion/munisanisidro-lima/noticias/1395160-san-isidro-recibe-reconocimiento-por-conservar-el-olivo-arbol-patrimonial-de-valor-historico",
+    "https://busquedas.elperuano.pe/normaslegales/ordenanza-que-declara-el-reconocimiento-de-arboles-patrimoni-ordenanza-no-535-msi-1929195-1/",
+    "https://www.infobae.com/peru/2026/01/28/lima-y-su-patrimonio-verde-en-que-distritos-estan-los-26-arboles-patrimoniales/"
+   ],
+   "access": "Free, inside Bosque El Olivar, a public park open daily",
+   "transport": "San Isidro, walkable within the park district; several bus routes serve Av Los Incas",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "lim_003",
+   "name": "San Martin's Ombu",
+   "species": "Ombu (Phytolacca dioica)",
+   "age_estimate": "about 200 years",
+   "age_min": 195,
+   "age_max": 210,
+   "girth_cm": null,
+   "location": {
+    "address": "Parque El Carmen (Quinta de los Libertadores), Pueblo Libre",
+    "latitude": -12.073746,
+    "longitude": -77.070084,
+    "neighbourhood": "Pueblo Libre"
+   },
+   "story": "Strictly speaking this is not a tree. An ombu has no true wood: the swollen grey column holding up the crown is soft tissue full of stored water, which is how the species gets through drought on the South American grasslands where it belongs. It is a giant herb, roughly 25 to 30 metres of it, depending on whose measurement you take.\n\nThe story attached to it is Peru's founding one. In 1821, the year independence was declared, Jose de San Martin was living at the Quinta de los Libertadores in Pueblo Libre, and the ombu went into the garden from a seed he is said to have carried up from Argentina. Every Peruvian retelling credits the liberator's own hands, and the outlets that repeat it also file that part as legend, so we will too. The date is the part that holds.\n\nSan Martin handed the war to Bolivar and left the country the following year. The ombu stayed and watched the republic assemble itself around the house, which is now a museum, in a garden that is now the public Parque El Carmen. Pueblo Libre declared it Registro 1, cultural and historical heritage of the district, in 2020, and rebuilt the ground around it in 2022 with new lighting and a pergola. Two hundred years, and still no wood in it.",
+   "verified_sources": [
+    "https://www.infobae.com/america/peru/2022/07/28/conoce-al-ombu-el-arbol-bicentenario-que-planto-el-libertador-san-martin-que-puedes-visitar-en-pueblo-libre/",
+    "https://andina.pe/agencia/noticia-bicentenario-pueblo-libre-revalora-parque-donde-libertador-san-martin-planto-un-arbol-853220.aspx",
+    "https://busquedas.elperuano.pe/dispositivo/NL/1881618-1"
+   ],
+   "access": "Free, in Parque El Carmen, a public park",
+   "transport": "Central Pueblo Libre, walkable from Plaza Bolivar",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "lim_004",
+   "name": "The Ceiba of Parque Ernesto Alayza Grundy",
+   "species": "Kapok (Ceiba pentandra)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Green area of Pasaje 65 NN, at the entrance to Parque Ernesto Alayza Grundy, Calle Victor Maurtua (block 1), San Isidro",
+    "latitude": -12.108231,
+    "longitude": -77.041267,
+    "neighbourhood": "San Isidro"
+   },
+   "story": "This is a rainforest tree standing in a desert. The kapok belongs to tropical lowland forest, where it pushes its crown out above the canopy on buttress roots wide enough to stand between. Lima is a desert city whose nearest thing to weather is months of grey sea fog. San Isidro's own heritage route calls the ceibo an uncommon sight in this part of the city, and there are two of them in the district, this one and another on Calle Alfredo Roldan Seminario.\n\nIt grows in the green strip at the entrance to Parque Ernesto Alayza Grundy on Calle Victor Maurtua, and it was one of three trees San Isidro recognised together in Ordinance 535-MSI, published in February 2021. The other two stand in the Bosque El Olivar a short walk north, an olive close to 390 years old and a 40-metre araucaria. This one is Registro 002-2020-MSI. In June 2026 all three became stops on the district's heritage tree route.\n\nCeibas flower at night and are pollinated by bats. Then they hang out pods of silky floss, the kapok that once stuffed mattresses and life jackets, which comes apart and drifts across whatever is underneath.\n\nNo age has been published for it, and no height or girth either. If you have measured it, or know when it was planted, tell us.",
+   "verified_sources": [
+    "https://busquedas.elperuano.pe/normaslegales/ordenanza-que-declara-el-reconocimiento-de-arboles-patrimoni-ordenanza-no-535-msi-1929195-1/",
+    "https://www.infobae.com/peru/2026/06/28/san-isidro-presenta-la-ruta-de-los-arboles-patrimoniales-con-ejemplares-de-hasta-388-anos/"
+   ],
+   "access": "Free, in the entrance green area of a public park",
+   "transport": "San Isidro, walkable within the district",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "lim_005",
+   "name": "The Araucaria of El Olivar",
+   "species": "Cook Pine (Araucaria columnaris)",
+   "age_estimate": "roughly 80 years",
+   "age_min": 70,
+   "age_max": 90,
+   "girth_cm": null,
+   "location": {
+    "address": "Bosque El Olivar, at the corner of Calle 24 de Abril (block 2) and Calle Las Amazonas (block 1), San Isidro",
+    "latitude": -12.098457,
+    "longitude": -77.033783,
+    "neighbourhood": "San Isidro"
+   },
+   "story": "San Isidro calls this one of the tallest trees in Lima, and it is also the youngest thing in the grove it stands in by about three centuries. The district puts it at 44 metres and roughly 80 years old; the article published when its heritage route opened says 41 metres. Nobody has produced a planting record, only an estimate, so the honest reading is a conifer somewhere between 70 and 90 years old that has grown past everything around it.\n\nEverything around it is olives. The Bosque El Olivar is a colonial grove raised from Spanish stock, and one of its trees was planted in the 1630s. The araucaria is a Cook pine from New Caledonia, a Pacific island group most of the way around the world from here, and it arrived in living memory. It carries Registro 001-2020-MSI, the first of three trees San Isidro recognised together in Ordinance 535-MSI in February 2021, and it is a stop on the heritage tree route the district opened in June 2026.\n\nOne thing to look for while you are under it. Cook pines lean, reliably, and measured across the species worldwide they lean towards the equator. Lima sits 12 degrees south of it, so the tilt, where there is one, runs north.",
+   "verified_sources": [
+    "https://www.gob.pe/institucion/munisanisidro-lima/noticias/1395160-san-isidro-recibe-reconocimiento-por-conservar-el-olivo-arbol-patrimonial-de-valor-historico",
+    "https://busquedas.elperuano.pe/normaslegales/ordenanza-que-declara-el-reconocimiento-de-arboles-patrimoni-ordenanza-no-535-msi-1929195-1/",
+    "https://www.infobae.com/peru/2026/06/28/san-isidro-presenta-la-ruta-de-los-arboles-patrimoniales-con-ejemplares-de-hasta-388-anos/"
+   ],
+   "access": "Free, inside Bosque El Olivar, a public park open daily",
+   "transport": "San Isidro, walkable within the park district",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}
