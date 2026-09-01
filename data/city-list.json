@@ -715,6 +715,14 @@
    "trees": 0
   },
   {
+   "city": "Bilbao",
+   "country": "Spain",
+   "slug": "bilbao",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
+  },
+  {
    "city": "Rotterdam",
    "country": "Netherlands",
    "slug": "rotterdam",
@@ -730,14 +738,6 @@
    "note": "One walk, Porta Nuova station to the Po, 1.94 km spread. Taken from the official 13.9 km tourist route, which is really four walks; the other three are in data/leads/turin.json. Piemonte's regional register (data/registers/piemonte-alberi-monumentali.json) carries presumed age bands and removal status, which no other Italian source does.",
    "demand_views_90d": 147456,
    "trees": 11
-  },
-  {
-   "city": "Bilbao",
-   "country": "Spain",
-   "slug": "bilbao",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
   },
   {
    "city": "Oxford",
@@ -854,20 +854,20 @@
    "trees": 4
   },
   {
-   "city": "Osaka",
-   "country": "Japan",
-   "slug": "osaka",
-   "status": "published",
-   "demand_views_90d": 163112,
-   "trees": 4
-  },
-  {
    "city": "York",
    "country": "United Kingdom",
    "slug": "york",
    "status": "published",
    "demand_views_90d": 118066,
    "trees": 6
+  },
+  {
+   "city": "Osaka",
+   "country": "Japan",
+   "slug": "osaka",
+   "status": "published",
+   "demand_views_90d": 163112,
+   "trees": 4
   },
   {
    "city": "Lucca",
@@ -910,6 +910,13 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Eindhoven",
+   "country": "Netherlands",
+   "slug": "eindhoven",
+   "status": "published",
+   "trees": 7
   },
   {
    "city": "Granada",
@@ -1031,14 +1038,6 @@
    "trees": 4
   },
   {
-   "city": "Split",
-   "country": "Croatia",
-   "slug": "split",
-   "status": "published",
-   "demand_views_90d": 132399,
-   "trees": 4
-  },
-  {
    "city": "Leipzig",
    "country": "Germany",
    "slug": "leipzig",
@@ -1054,11 +1053,11 @@
    "trees": 4
   },
   {
-   "city": "Zurich",
-   "country": "Switzerland",
-   "slug": "zurich",
+   "city": "Split",
+   "country": "Croatia",
+   "slug": "split",
    "status": "published",
-   "demand_views_90d": 140788,
+   "demand_views_90d": 132399,
    "trees": 4
   },
   {
@@ -1068,6 +1067,28 @@
    "status": "published",
    "demand_views_90d": null,
    "trees": 8
+  },
+  {
+   "city": "Zurich",
+   "country": "Switzerland",
+   "slug": "zurich",
+   "status": "published",
+   "demand_views_90d": 140788,
+   "trees": 4
+  },
+  {
+   "city": "Tilburg",
+   "country": "Netherlands",
+   "slug": "tilburg",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Alkmaar",
+   "country": "Netherlands",
+   "slug": "alkmaar",
+   "status": "published",
+   "trees": 7
   },
   {
    "city": "Bangkok",
@@ -1110,12 +1131,26 @@
    "trees": 4
   },
   {
+   "city": "Dordrecht",
+   "country": "Netherlands",
+   "slug": "dordrecht",
+   "status": "published",
+   "trees": 7
+  },
+  {
    "city": "Parma",
    "country": "Italy",
    "slug": "parma",
    "status": "published",
    "demand_views_90d": 40425,
    "trees": 5
+  },
+  {
+   "city": "Amersfoort",
+   "country": "Netherlands",
+   "slug": "amersfoort",
+   "status": "published",
+   "trees": 8
   },
   {
    "city": "Sapporo",
@@ -1157,6 +1192,13 @@
    "note": "Opened 2026-08-31 from Okinawa prefecture's hundred notable trees (midorihana-okinawa.jp, run by the prefecture's environment department), which publishes per tree the species, height, girth, an estimated AGE, the owner, a coordinate and the designation history, and marks revoked certifications. The best-documented register used today. Yonagusuku's banyan, Okinawa's biggest tree at 23.5 m girth, is excluded and recorded as blocked: the register names its owner as a private household."
   },
   {
+   "city": "Apeldoorn",
+   "country": "Netherlands",
+   "slug": "apeldoorn",
+   "status": "published",
+   "trees": 8
+  },
+  {
    "city": "Antwerp",
    "country": "Belgium",
    "slug": "antwerp",
@@ -1189,6 +1231,13 @@
    "trees": 7
   },
   {
+   "city": "Venlo",
+   "country": "Netherlands",
+   "slug": "venlo",
+   "status": "published",
+   "trees": 7
+  },
+  {
    "city": "Ferrara",
    "country": "Italy",
    "slug": "ferrara",
@@ -1203,6 +1252,13 @@
    "status": "published",
    "trees": 6,
    "note": "Opened 2026-08-31 from Castilla y Leon's register of notable trees (ORDEN MAM/1156/2006). Five of six are in the royal gardens at La Granja, 11 km out. The register has no age column, so no tree here carries an age, and its trunk column is not quoted anywhere because reading it as diameter makes AS-SG-07 the thickest sequoia in Europe."
+  },
+  {
+   "city": "Enschede",
+   "country": "Netherlands",
+   "slug": "enschede",
+   "status": "published",
+   "trees": 7
   },
   {
    "city": "Zaragoza",
@@ -1229,6 +1285,13 @@
    "trees": 6
   },
   {
+   "city": "Zwolle",
+   "country": "Netherlands",
+   "slug": "zwolle",
+   "status": "published",
+   "trees": 7
+  },
+  {
    "city": "Buenos Aires",
    "country": "Argentina",
    "slug": "buenos-aires",
@@ -1237,12 +1300,33 @@
    "trees": 4
   },
   {
+   "city": "Deventer",
+   "country": "Netherlands",
+   "slug": "deventer",
+   "status": "published",
+   "trees": 7
+  },
+  {
+   "city": "Leeuwarden",
+   "country": "Netherlands",
+   "slug": "leeuwarden",
+   "status": "published",
+   "trees": 7
+  },
+  {
    "city": "Tarragona",
    "country": "Spain",
    "slug": "tarragona",
    "status": "published",
    "trees": 4,
    "note": "Opened 2026-08-31 from Catalonia's monumental-tree register via its structured Catalan Wikipedia mirror, which carries species, condition, height, girth at 1.3 m, crown, coordinates and the official gencat record per tree. Only four of the nine live trees within 30 km stand on ground the public may walk on; the rest are on private mas and are recorded as blocked."
+  },
+  {
+   "city": "Helmond",
+   "country": "Netherlands",
+   "slug": "helmond",
+   "status": "published",
+   "trees": 7
   },
   {
    "city": "Pamplona",
@@ -1314,27 +1398,6 @@
    "trees": 0
   },
   {
-   "city": "Alkmaar",
-   "country": "Netherlands",
-   "slug": "alkmaar",
-   "status": "published",
-   "trees": 7
-  },
-  {
-   "city": "Amersfoort",
-   "country": "Netherlands",
-   "slug": "amersfoort",
-   "status": "published",
-   "trees": 8
-  },
-  {
-   "city": "Apeldoorn",
-   "country": "Netherlands",
-   "slug": "apeldoorn",
-   "status": "published",
-   "trees": 8
-  },
-  {
    "city": "Baarn",
    "country": "Netherlands",
    "slug": "baarn",
@@ -1377,30 +1440,9 @@
    "trees": 0
   },
   {
-   "city": "Deventer",
-   "country": "Netherlands",
-   "slug": "deventer",
-   "status": "published",
-   "trees": 7
-  },
-  {
-   "city": "Dordrecht",
-   "country": "Netherlands",
-   "slug": "dordrecht",
-   "status": "published",
-   "trees": 7
-  },
-  {
    "city": "Ede",
    "country": "Netherlands",
    "slug": "ede",
-   "status": "published",
-   "trees": 7
-  },
-  {
-   "city": "Eindhoven",
-   "country": "Netherlands",
-   "slug": "eindhoven",
    "status": "published",
    "trees": 7
   },
@@ -1412,26 +1454,12 @@
    "trees": 7
   },
   {
-   "city": "Enschede",
-   "country": "Netherlands",
-   "slug": "enschede",
-   "status": "published",
-   "trees": 7
-  },
-  {
    "city": "Hanoi",
    "country": "Vietnam",
    "slug": "hanoi",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Helmond",
-   "country": "Netherlands",
-   "slug": "helmond",
-   "status": "published",
-   "trees": 7
   },
   {
    "city": "Ho Chi Minh City",
@@ -1464,13 +1492,6 @@
    "status": "published",
    "trees": 13,
    "note": "Opened 2026-08-31 from Kagoshima City's own preserved-tree register (38 designated trees, species, girth at 1.5 m, height and estimated age, updated 2025-11-25) cross-checked against the Hitozato Kyoboku giant-tree database. Includes two day trips labelled as such: the Akou of Yuno on Sakurajima and the Great Camphor of Kamo in Aira, the largest tree in Japan."
-  },
-  {
-   "city": "Leeuwarden",
-   "country": "Netherlands",
-   "slug": "leeuwarden",
-   "status": "published",
-   "trees": 7
   },
   {
    "city": "Manila",
@@ -1511,27 +1532,6 @@
    "status": "published",
    "demand_views_90d": 7556,
    "trees": 10
-  },
-  {
-   "city": "Tilburg",
-   "country": "Netherlands",
-   "slug": "tilburg",
-   "status": "published",
-   "trees": 7
-  },
-  {
-   "city": "Venlo",
-   "country": "Netherlands",
-   "slug": "venlo",
-   "status": "published",
-   "trees": 7
-  },
-  {
-   "city": "Zwolle",
-   "country": "Netherlands",
-   "slug": "zwolle",
-   "status": "published",
-   "trees": 7
   }
  ]
 }
