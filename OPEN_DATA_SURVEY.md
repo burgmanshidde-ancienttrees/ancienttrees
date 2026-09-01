@@ -4,6 +4,16 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## Germany: the STATE Naturdenkmal register misses the CITY's own designations (found on Regensburg, 2026-09-01)
+
+**A transferable finding rather than a new source, and it applies to every German city in the queue.** A Regensburg pass was staged with 27 rows from `data/registers/bayern-naturdenkmale.json`, the Bavarian LfU state dataset, filtered to 20 km. Of Regensburg's roughly fifteen individually designated Naturdenkmal TREES, that state dataset carried **one**. All five trees the pass shipped came from somewhere else.
+
+**Where the supply actually is: the city's own Naturdenkmal-Sicherungsverordnung**, the municipal ordinance that designates them, which German Wikipedia mirrors as "Liste der Naturdenkmaler in <city>" with register ids and addresses. That mirror is the same registry-join technique that already carried Krakow, Warsaw, Vilnius and Frankfurt: fetch the WIKITEXT and join on the id.
+
+**Why this matters beyond one city.** It is the "regional register before the national one" lesson from Italy, one level further down: in Germany the tier that holds the individual urban trees is the CITY, and the state register is largely the rural and geological designations. It also explains the other half of the staged list, which is worth knowing before anyone budgets a window: a Bavarian *Naturdenkmal* is any protected natural monument, so 12 of the 27 rows were rocks, caves, ruins and a sinkhole, and two more were avenues rather than collectible points.
+
+**So for a German city, in this order:** the city's own Sicherungsverordnung or its Wikipedia mirror first, the state LfU dataset second and mostly for the surroundings, and expect to run the semantic filter hard on both. Munich, Nuremberg and Berlin are already published and were not built this way, so their pages may be thinner than their cities actually are; Freiburg, Stuttgart, Hamburg, Dresden and Leipzig are still in the queue and should start from the municipal tier.
+
 ## Luxembourg: the ANF arbres remarquables register, imported 2026-08-30 (VERDICT: usable, CC0)
 
 **USABLE, and it is the whole country in one file.** The Administration de la nature et des forets publishes every tree classified as remarkable by grand-ducal regulation as open data at data.public.lu, currently the list under the regulation of 31 January 2025. **238 trees, tree-level WGS84 coordinates, 83 communes.** Imported to `data/registers/luxembourg-anf.json`.
