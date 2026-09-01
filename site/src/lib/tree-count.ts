@@ -37,3 +37,13 @@ export async function roundedTrees(): Promise<number> {
   const n = await totalTrees();
   return n < 100 ? 0 : Math.floor(n / 100) * 100;
 }
+
+/** "1 tree" / "7 trees". Written 2026-09-01, when nineteen one-tree places
+ * went live in a day and every one of them rendered "1 Trees Worth Visiting"
+ * in its title tag and "1 trees on the map" over its map. Philadelphia had
+ * been reading that way since it opened with Bartram's Ginkgo and nobody had
+ * looked. The 2026-08-31 exception makes one-tree places ordinary rather than
+ * rare, so the count needs a plural rule rather than nineteen ternaries. */
+export function nTrees(n: number): string {
+  return `${n} ${n === 1 ? "tree" : "trees"}`;
+}

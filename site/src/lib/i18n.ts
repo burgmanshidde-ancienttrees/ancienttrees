@@ -141,8 +141,8 @@ export interface UIStrings {
 
 const EN: UIStrings = {
   home: "Home",
-  backToTrees: (n) => `\u2190 The ${n} trees`,
-  treesOnMap: (n) => `${n} trees on the map`,
+  backToTrees: (n) => `\u2190 ${n === 1 ? "The tree" : `The ${n} trees`}`,
+  treesOnMap: (n) => `${n} ${n === 1 ? "tree" : "trees"} on the map`,
   heading: (c) => `Ancient Trees in ${c}`,
   readMore: "Read more",
   visitedOf: (n, city) => `visited in ${city}`,
@@ -180,8 +180,8 @@ const EN: UIStrings = {
 const TABLE: Record<string, Partial<UIStrings>> = {
   es: {
     home: "Inicio",
-    backToTrees: (n) => `\u2190 Los ${n} \u00e1rboles`,
-    treesOnMap: (n) => `${n} \u00e1rboles en el mapa`,
+    backToTrees: (n) => `\u2190 ${n === 1 ? "El \u00e1rbol" : `Los ${n} \u00e1rboles`}`,
+    treesOnMap: (n) => `${n} ${n === 1 ? "\u00e1rbol" : "\u00e1rboles"} en el mapa`,
     heading: (c) => `\u00c1rboles hist\u00f3ricos de ${c}`,
     readMore: "Leer m\u00e1s",
     visitedOf: (n, city) => `visitados en ${city}`,
@@ -217,8 +217,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
   },
   it: {
     home: "Home",
-    backToTrees: (n) => `\u2190 I ${n} alberi`,
-    treesOnMap: (n) => `${n} alberi sulla mappa`,
+    backToTrees: (n) => `\u2190 ${n === 1 ? "L\u2019albero" : `I ${n} alberi`}`,
+    treesOnMap: (n) => `${n} ${n === 1 ? "albero" : "alberi"} sulla mappa`,
     heading: (c) => `Alberi monumentali di ${c}`,
     readMore: "Leggi di pi\u00f9",
     visitedOf: (n, city) => `visitati a ${city}`,
@@ -254,8 +254,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
   },
   nl: {
     home: "Home",
-    backToTrees: (n) => `\u2190 De ${n} bomen`,
-    treesOnMap: (n) => `${n} bomen op de kaart`,
+    backToTrees: (n) => `\u2190 ${n === 1 ? "De boom" : `De ${n} bomen`}`,
+    treesOnMap: (n) => `${n} ${n === 1 ? "boom" : "bomen"} op de kaart`,
     heading: (c) => `Monumentale bomen in ${c}`,
     readMore: "Lees meer",
     visitedOf: (n, city) => `bezocht in ${city}`,
@@ -291,8 +291,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
   },
   de: {
     home: "Start",
-    backToTrees: (n) => `\u2190 Die ${n} B\u00e4ume`,
-    treesOnMap: (n) => `${n} B\u00e4ume auf der Karte`,
+    backToTrees: (n) => `\u2190 ${n === 1 ? "Der Baum" : `Die ${n} B\u00e4ume`}`,
+    treesOnMap: (n) => `${n} ${n === 1 ? "Baum" : "B\u00e4ume"} auf der Karte`,
     heading: (c) => `Alte B\u00e4ume in ${c}`,
     readMore: "Mehr lesen",
     visitedOf: (n, city) => `in ${city} besucht`,
@@ -328,8 +328,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
   },
   pt: {
     home: "In\u00edcio",
-    backToTrees: (n) => `\u2190 As ${n} \u00e1rvores`,
-    treesOnMap: (n) => `${n} \u00e1rvores no mapa`,
+    backToTrees: (n) => `\u2190 ${n === 1 ? "A \u00e1rvore" : `As ${n} \u00e1rvores`}`,
+    treesOnMap: (n) => `${n} ${n === 1 ? "\u00e1rvore" : "\u00e1rvores"} no mapa`,
     heading: (c) => `\u00c1rvores hist\u00f3ricas de ${c}`,
     readMore: "Ler mais",
     visitedOf: (n, city) => `visitadas em ${city}`,
@@ -365,8 +365,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
   },
   fr: {
     home: "Accueil",
-    backToTrees: (n) => `\u2190 Les ${n} arbres`,
-    treesOnMap: (n) => `${n} arbres sur la carte`,
+    backToTrees: (n) => `\u2190 ${n === 1 ? "L\u2019arbre" : `Les ${n} arbres`}`,
+    treesOnMap: (n) => `${n} ${n === 1 ? "arbre" : "arbres"} sur la carte`,
     heading: (c) => `Arbres remarquables de ${c}`,
     readMore: "Lire la suite",
     visitedOf: (n, city) => `visit\u00e9s \u00e0 ${city}`,
