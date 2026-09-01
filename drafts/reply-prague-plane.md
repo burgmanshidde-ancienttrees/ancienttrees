@@ -1,19 +1,18 @@
 reply to submission 54, Prague, the Plane of Nove Mlyny
-(no name in this file on purpose: we never record a sender's name)
+(no name in this file on purpose: the repo is public and we never record a
+ sender's name. Add her first name when you send it if you want to.)
 ---
-You are right, and thank you. The plane at Nove Mlyny has no photograph on
-its page, and that is a real gap rather than an oversight we had missed.
+Thank you for pointing that out. You are right, the plane at Nove Mlyny has
+no photograph, and that is a gap we can really only close with help from
+people who are near the tree.
 
-We only publish a photo when it is clearly of that tree and carries an open
-licence, so the page shows the gap honestly instead of putting up a stock
-picture of a plane tree. That is why it is still empty.
+Would you be up for helping us photograph a few of Prague's trees? We are
+about to release an app that makes it easy: you take the picture standing at
+the tree and it comes to us with the location already attached.
 
-If you have a photograph of it, or pass it again and take one, send it
-through the contribute link on the page and we will credit you and put it
-live. A picture taken from across the corner, with the whole tree in the
-frame, is exactly what the page needs.
-
-And while you are there: is there a tree in Prague we have missed?
+No rush and no obligation, and even one photograph of the Nove Mlyny plane
+would be a good start. And if you spot anything else on the site, wrong,
+missing or just worth adding, we are very happy to hear it.
 
 Ancient Trees
-https://ancienttrees.app/prague/plane-of-nove-mlyny
+https://ancienttrees.app/prague
