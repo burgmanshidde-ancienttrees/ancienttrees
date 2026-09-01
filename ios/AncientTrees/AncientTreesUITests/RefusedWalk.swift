@@ -57,8 +57,17 @@ final class RefusedWalk: XCTestCase {
             NSPredicate(format: "label CONTAINS[c] 'Location off'")).firstMatch
         XCTAssertTrue(chip.waitForExistence(timeout: 12),
                       "with location refused the map said nothing about it")
-        // And it offers the only thing that can actually fix it.
-        XCTAssertTrue(chip.label.localizedCaseInsensitiveContains("turn on"),
+        // And it offers the only thing that can actually fix it. Not read the
+        // instant the chip exists: CLLocationManager's very first
+        // authorizationStatus read on a cold launch can still say
+        // .notDetermined for a moment, before locationd's own callback
+        // delivers the real .denied a beat later, so the chip's first paint
+        // can briefly say "Use my location" before correcting itself. Wait
+        // for the corrected text rather than failing on the flash.
+        let saysTurnOn = NSPredicate(format: "label CONTAINS[c] 'turn on'")
+        let stabilised = expectation(for: saysTurnOn, evaluatedWith: chip)
+        let result = XCTWaiter().wait(for: [stabilised], timeout: 8)
+        XCTAssertEqual(result, .completed,
                       "the chip does not offer a way out: '\(chip.label)'")
     }
 

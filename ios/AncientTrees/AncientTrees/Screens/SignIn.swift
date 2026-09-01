@@ -269,6 +269,15 @@ struct SignInSheet: View {
             Text("We store your email address and what you collect: the trees you save, the ones you photograph, and where they stand. No advertising, and you can delete the lot from this app.")
                 .font(.caption2).foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
+                // Full width on purpose, not just centred within it: this line
+                // wraps to several lines, and without a fixed frame its
+                // measured bounding box is whichever wrapped line is longest,
+                // which shifts a point or two with font metrics. That is what
+                // made it read as a few points off its siblings' left edge on
+                // iOS 18 and not on 26 (appfit.py DRIFT, 2026-08-31): nothing
+                // in the layout moved, only where this one line happened to
+                // wrap.
+                .frame(maxWidth: .infinity)
             // Both of these were text a finger has to find: "Privacy" measured
             // 37 by 13 points and "Not now" 55 by 17, against Apple's 44 by 44.
             // The words stay the same size; the area around them is the target.
