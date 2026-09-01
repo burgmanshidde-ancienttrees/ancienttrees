@@ -238,8 +238,35 @@ jobs:
             git push
           fi
 
+      # Is there any budget to spend before we spend any orienting? Added
+      # 2026-09-01. The budget check already existed, and it ran in the wrong
+      # place: only BETWEEN attempts, never before the first. So a knock
+      # arriving after the day's share was gone still started an agent, which
+      # read the corpus, ran prepare.py, picked a city, claimed it, and only
+      # then asked the probe and was told to stop. Measured over the week to
+      # 2026-09-01: nine runs came in under twenty minutes, spent 118 minutes
+      # between them and shipped zero trees, and every one of the last ten
+      # runs but one was stopped by this same budget line. The overshoot IS
+      # that waste: days budgeted at 260 minutes were landing at 261 to 347.
+      #
+      # This raises no ceiling and lowers none. It moves the same limit to the
+      # front, so the day's minutes go to a few runs long enough to produce
+      # something instead of being chopped into orientations. A skipped knock
+      # costs seconds; a knock that orients and goes home costs thirteen
+      # minutes.
+      - name: Is there budget to start at all
+        id: budget
+        run: |
+          if python3 scripts/run_health.py --week; then
+            echo "start=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "start=no" >> "$GITHUB_OUTPUT"
+            echo "::notice::Budget spent, skipping this knock before it costs a window."
+          fi
+
       - name: Run the research workflow from CLAUDE.md
         id: claude
+        if: steps.budget.outputs.start == 'yes'
         uses: anthropics/claude-code-action@v1
         env:
           # The runs' eyes: lets a run read the visitor trend itself via
@@ -281,6 +308,19 @@ jobs:
             visits line into your LOG.md entry, and let it steer depth choices
             (deepen what people actually visit). If it says no token or refuses,
             skip it silently and work on.
+
+            SHELL STYLE, because it costs you turns. The allowlist matches one
+            command at a time. A heredoc (python3 - <<'EOF'), a shell construct
+            (for/if/while), a subshell or a pipeline into something unlisted
+            cannot be matched to a single entry, so it is refused even when
+            every binary in it is allowed. Measured over the week to 2026-09-01:
+            952 refusals across 42 runs, about 23 each, and the most refused
+            names were python3, curl, cd, echo, cat and git, all of which are on
+            the allowlist. So: one command per call; write a script to a file
+            with Write and then run it rather than piping it in; use python3 -c
+            or a real file instead of a heredoc; let Read, Glob and Grep do what
+            you would have done with a for loop. rm is denied on purpose, so
+            reach for git rm or leave the file.
 
             Step 0 holds a priority ladder; work out which rung applies and do that.
             Reader submissions outrank everything. Something published being wrong
@@ -578,7 +618,10 @@ jobs:
       # says that stops being a sentence and becomes a mechanism.
       - name: Is the window worth another go
         id: probe
-        if: always()
+        # Not always(): a knock the budget gate skipped has no attempt to judge
+        # and no execution file to read, so the probe would fall back to a
+        # stale record from a previous run on the same runner path.
+        if: always() && steps.budget.outputs.start == 'yes'
         continue-on-error: true
         env:
           RUN_START_SHA: ${{ steps.start.outputs.sha }}
