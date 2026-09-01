@@ -547,3 +547,48 @@ line in TreeMap carries the weight of this: `showsUserLocation` stays false unti
 somebody has already said yes, because MapLibre asks the system the moment it is
 set, and without that guard iOS would get in first, on launch, with no reason
 given.
+
+---
+
+## Landing after you have added something (2026-09-01)
+
+**Looked up because Hidde walked the add-a-tree flow and found two things at
+once: the loudest button on the page you land on is about going somewhere, and
+nothing anywhere says the tree was saved.**
+
+**Reference: iNaturalist.** Sharing an observation puts you on your own Me
+page, where the observation you just made is the top row and carries its own
+upload state. You are never left wondering whether it took.
+
+**Reference: Google Maps.** Adding a missing place shows a short thank-you at
+the moment you submit, the place appears under Your contributions, and the
+verdict arrives later by mail. The acknowledgement and the STATUS are two
+different things: one is a second long, the other stays true until the review
+is over.
+
+**Reference: Apple's HIG, "Feedback".** Status feedback belongs near the item
+it describes, so somebody gets it without leaving what they are doing, and an
+alert is never used merely to inform: "People don't appreciate an interruption
+from an alert that's informative, but not actionable."
+
+**Reference: Material, acknowledgement.** A submitted form is acknowledged by
+one line at the bottom of the screen, briefly, with at most one action on it
+(Undo). Not a dialog, not a screen.
+
+**So the pattern, in three beats.** (1) You land on the THING you made, or on
+the list holding it. (2) It is acknowledged in one line at the moment it
+happens, non-modal. (3) Its state is written ON it and stays there while it is
+true, because a toast leaves no trace and somebody coming back an hour later
+has no way to ask.
+
+**And the fourth, which is where ours went wrong:** the loudest control on that
+page belongs to the thing you just made, which means finishing it or leaving.
+Directions to a tree you are standing under, and "Add a tree" on the tree you
+have this second added, both read as though the save did not take.
+
+Read 2026-09-01:
+- https://help.inaturalist.org/en/support/solutions/articles/151000192921-how-to-make-an-observation
+- https://support.google.com/maps/answer/6320846
+- https://support.google.com/maps/answer/9678350
+- https://developer.apple.com/design/human-interface-guidelines/patterns/feedback/
+- https://m2.material.io/design/communication/confirmation-acknowledgement.html
