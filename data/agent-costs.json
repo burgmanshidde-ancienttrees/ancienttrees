@@ -4384,6 +4384,20 @@
     "note": "2 stories plus the page-copy rewrite from four trees to six under Hidde's booking ruling. Found the falsified access claim in five places, not the one quoted in the brief, including an FAQ that named 'the roundabout where the Aleppo pine stands' and stopped being unambiguous the moment a second Aleppo pine joined the page.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "us-famous-2+us-famous-3",
+    "kind": "write",
+    "tokens": 51000,
+    "trees": 3,
+    "note": "write pass produced 4 stories (nol_dueling_001, pnj_001, wye_001, gon_001); nol_dueling_001 turned out to be a 519m-coordinate duplicate of already-published nol_003 and was folded into leads instead of merged, so 3 trees actually reached data/cities (pnj_001, wye_001, gon_001, each its own new single-tree place per the 2026-08-31 exception). gpo_001 (Witch Tree) was withdrawn mid-pass: a hard rule 10 blocked verdict already existed for it in data/leads/_famous-united-states.json and the pass had missed it."
+   },
+   {
+    "target": "us-famous-1/2/3 cleanup + 4 species pages",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 0,
+    "note": "orchestration, not a dispatched pass: folded 15 duplicate/stale entries out of the three us-famous-*-verified.json research files (all now deleted, fully processed) into the right city leads files with why-notes; wrote 4 new species-page intros (white-oak, cook-pine, japanese-chinquapin, kapok) closing pagegaps.py gaps. tokens not separately metered from the session total."
    }
   ]
  }

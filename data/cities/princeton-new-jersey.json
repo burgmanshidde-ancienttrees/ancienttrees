@@ -1,0 +1,61 @@
+{
+  "city": "Princeton, New Jersey",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "A single white oak marks the ground where the Battle of Princeton turned on 3 January 1777, near the spot General Hugh Mercer was mortally wounded. The tree famous enough to carry his name, the original Mercer Oak, stood roughly three centuries before a storm brought it down in March 2000. What grows there now is its own successor, raised from an acorn in the old stump. The battlefield around it is a National Historic Landmark, free and open every day of the year.",
+  "meta_description": "The Mercer Oak at Princeton Battlefield is a young successor tree, marking the spot where General Hugh Mercer fell in 1777. Free, open daily.",
+  "question_meta": "Princeton Battlefield's only mapped tree is the Mercer Oak successor, a young white oak planted from the fallen original's own acorn around 2001.",
+  "question_answer": "The tree we map for Princeton is the Mercer Oak, and it is young rather than ancient: a white oak planted around 2000 to 2001 from an acorn of the original three-hundred-year-old Mercer Oak, which fell in a storm in March 2000. It stands in the open field of Princeton Battlefield State Park, near where General Hugh Mercer was mortally wounded on 3 January 1777, free to visit every day.",
+  "question_context": "Princeton Battlefield State Park sits about 3 km southwest of downtown Princeton, New Jersey, at 500 Mercer Street. There is no public transit to the gate; the park has its own free parking. The nearest city we publish is Philadelphia, roughly 65 km away, too far to fold into a single day trip.\n\nThe park is open daily, free, and the oak stands alone in the middle of the open battlefield lawn, easy to find because there is nothing else there competing for attention. It marks history more than it displays age: the tree that made this ground famous was three centuries old when it fell in a March 2000 storm, and its replacement is roughly a quarter of a century into the same job, grown from an acorn an arborist planted in the old stump. The Princeton Battlefield Society dates that planting to 2001, though other accounts only say it happened soon after the original fell.\n\nThere is no strong seasonal moment for a young white oak; visit for the battlefield and the story of 3 January 1777 rather than for a particular week.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Princeton, New Jersey?",
+      "a": "The only ancient tree we map here is the Mercer Oak at Princeton Battlefield, and it is honestly young: a successor planted around 2000 to 2001 from the seed of the original, much older Mercer Oak, which fell in a 2000 storm after standing for roughly three centuries."
+    },
+    {
+      "q": "Is the Mercer Oak free to visit?",
+      "a": "Yes. Princeton Battlefield State Park is a free New Jersey state park, open every day, with its own parking."
+    },
+    {
+      "q": "What happened to the original Mercer Oak?",
+      "a": "It came down in high winds in March 2000. An arborist planted a sapling grown from its own acorn in the remains of the stump; the Princeton Battlefield Society dates that planting to 2001."
+    },
+    {
+      "q": "Why is the Mercer Oak significant?",
+      "a": "It marks the spot near where General Hugh Mercer was mortally wounded during the Battle of Princeton on 3 January 1777, a turning point in Washington's winter campaign."
+    }
+  ],
+  "oldest_tree_id": "pnj_001",
+  "trees": [
+    {
+      "id": "pnj_001",
+      "name": "The Mercer Oak (successor)",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "young, planted around 2000-2001",
+      "age_min": 24,
+      "age_max": 26,
+      "girth_cm": null,
+      "location": {
+        "address": "Princeton Battlefield State Park, 500 Mercer St, Princeton, New Jersey",
+        "latitude": 40.331711,
+        "longitude": -74.675603,
+        "neighbourhood": "Princeton Battlefield State Park"
+      },
+      "verified_sources": [
+        "https://islandinthenet.com/mercer-white-oak-princeton-battlefield-park/",
+        "https://pbs1777.org/landmarks-of-the-princeton-battlefield/"
+      ],
+      "access": "Free. New Jersey state park, open daily, no entry fee.",
+      "transport": "Princeton Battlefield State Park, about 3 km southwest of downtown Princeton, NJ. Not within 30 min of any city we currently publish; nearest published city is Philadelphia, roughly 65 km / 50+ min drive, too far to count as a day-trip extension.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The tree standing here is younger than most of the people who come to see it. The Mercer Oak that made this field famous was a white oak of about three hundred years, standing near the spot where General Hugh Mercer was mortally wounded in the Battle of Princeton on 3 January 1777, and it went down in high winds in March 2000.\n\nWhat grows there now came out of its own acorn. An arborist planted an eight foot sapling in the remains of the parent's stump; the Princeton Battlefield Society dates that planting to 2001, while other accounts say only that it happened soon after the fall.\n\nSo this is a young tree on old ground: a slim white oak alone in the middle of an open field, photographed at the spot as recently as 2024, and about twenty five years into a job the last one held for three centuries. Nobody visiting today will see it finished.\n\nThe field around it is the reason to make the walk. Princeton Battlefield is a National Historic Landmark, free and open daily, and the oak marks the place rather than competing with it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "city": "lebec",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "The Peter Lebeck Oak",
+      "species": "Valley Oak (Quercus lobata)",
+      "lat": 34.8693465,
+      "lng": -118.9025777,
+      "status": "duplicate",
+      "why": "DUPLICATE, found 2026-09-01: same tree as already-published leb_001 (The Peter Lebeck Oak), 0m away, researched independently as ftj_001 in data/research/us-famous-3-verified.json. Not merged."
+    }
+  ]
+}

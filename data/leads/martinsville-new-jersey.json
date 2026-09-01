@@ -1,0 +1,14 @@
+{
+  "city": "martinsville-new-jersey",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "The Devil's Tree",
+      "species": "Oak (Quercus sp.)",
+      "lat": 40.63,
+      "lng": -74.5831,
+      "status": "duplicate",
+      "why": "DUPLICATE, found 2026-09-01: same tree as already-published mtv_001 (The Devil's Tree), 0m away, researched independently as brt_001 in data/research/us-famous-2-verified.json (its id happened to collide with Bratislava's unrelated brt_001, which is a separate false trail from the real one: this is a coordinate duplicate, not an id collision needing reassignment). Not merged."
+    }
+  ]
+}

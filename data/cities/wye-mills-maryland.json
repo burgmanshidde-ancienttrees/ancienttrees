@@ -1,0 +1,61 @@
+{
+  "city": "Wye Mills, Maryland",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Maryland built a state park around one white oak, the largest of its kind ever recorded in the country and the state tree for more than sixty years, and then lost it in a single thunderstorm on 6 June 2002. It had been cloned by grafting just in time. A genetic copy of the original Wye Oak was planted on the same spot four years later, on the anniversary of the storm, and it is what stands in Wye Oak State Park today: young, but the same tree in every way that matters.",
+  "meta_description": "Wye Oak State Park in Maryland was built around the largest white oak ever recorded in the US. A genetic clone now grows on the spot it fell.",
+  "question_meta": "Wye Oak State Park's tree is a genetic clone of the original Wye Oak, the largest white oak ever recorded in the US, lost to a 2002 storm.",
+  "question_answer": "The tree we map at Wye Mills is a clone, planted 6 June 2006 on the exact spot where the original Wye Oak stood until a thunderstorm destroyed it on 6 June 2002. The original was the largest known white oak in the United States, believed to be over 460 years old and Maryland's official state tree for more than six decades. The clone, grafted from the original before it fell, is free to visit every day in Wye Oak State Park.",
+  "question_context": "Wye Oak State Park is in Wye Mills, Talbot County, Maryland, about 100 km from Washington DC, our nearest published city and too far for a single day-trip pairing. There is no public transit; visitors drive and park at the small state park built around the one tree.\n\nThe park is open free, daily, during daylight hours. What stands there now is a genetic clone rather than the original trunk: horticulturist Frank Gouin led a University of Maryland effort to graft cuttings from the Wye Oak before disease or storm could take it, partly for its size and age and partly because it resisted oak wilt and gypsy moth better than other white oaks nearby. Two grafts were planted at Mount Vernon six weeks before the original fell; this one went into the ground on the old site itself, on the anniversary of the storm.\n\nThere is no strong seasonal peak for a tree this young; the reason to visit is the continuity rather than the canopy.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Wye Mills, Maryland?",
+      "a": "The tree we map is young: a genetic clone of the original Wye Oak, planted in 2006 on the spot the original stood until 2002. The original was over 460 years old when a storm destroyed it."
+    },
+    {
+      "q": "Is Wye Oak State Park free to visit?",
+      "a": "Yes. It is a Maryland state park, open free every day during daylight hours."
+    },
+    {
+      "q": "What happened to the original Wye Oak?",
+      "a": "A severe thunderstorm destroyed it on 6 June 2002. It had been the largest known white oak in the United States and Maryland's state tree for more than sixty years."
+    },
+    {
+      "q": "Is the current tree really the same oak?",
+      "a": "Genetically, yes. It was grafted from the original before it fell, as part of a University of Maryland cloning effort led by horticulturist Frank Gouin, and planted on the original site in 2006."
+    }
+  ],
+  "oldest_tree_id": "wye_001",
+  "trees": [
+    {
+      "id": "wye_001",
+      "name": "The Wye Oak (clone)",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "young, planted 2006",
+      "age_min": 19,
+      "age_max": 20,
+      "girth_cm": null,
+      "location": {
+        "address": "Wye Oak State Park, Wye Mills, Talbot County, Maryland",
+        "latitude": 38.939167,
+        "longitude": -76.080833,
+        "neighbourhood": "Wye Oak State Park"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Wye_Oak",
+        "https://www.baltimoresun.com/2002/06/07/wye-oak-topples-shattered-by-storm/"
+      ],
+      "access": "Free. Maryland state park, open daily during daylight hours, no entry fee found.",
+      "transport": "Wye Oak State Park, Wye Mills, Talbot County, Maryland. About 100 km from Washington DC (our nearest published city), well over an hour's drive, too far for a day-trip extension.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Maryland built a state park around a single tree and then lost it in one afternoon. The Wye Oak was the largest known white oak in the United States, believed to be over 460 years old, and the state tree of Maryland for more than sixty years. A severe thunderstorm destroyed it on 6 June 2002.\n\nIt had been copied just in time. Frank Gouin, a horticulture professor at the University of Maryland, led an effort to clone the tree by grafting, partly for its size and age and partly because it shrugged off oak wilt and gypsy moth in a way other white oaks did not. Two of those grafts went into the ground at Mount Vernon on 26 April 2002, six weeks before the storm.\n\nA genetic clone was planted here on 6 June 2006, four years to the day after the fall, on the old site and near the remains of the original trunk.\n\nSo what stands in the park is not a big tree. It is the same tree, genetically, in the same place, about twenty years into a life its parent ran for four and a half centuries. It was photographed alive and growing here in July 2025. Come for that rather than for the girth.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
