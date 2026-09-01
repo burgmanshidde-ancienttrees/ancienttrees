@@ -9,6 +9,48 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-01 (session) - Tree page photos now reserve their own space: 518px of layout shift gone from 410 pages
+
+Every tree page with a photograph threw its own content down the page when the
+image arrived. The `img` carried no width or height, so the browser gave the
+figure zero height and painted the credit, the recognition line and the whole
+story directly under the chips; the moment the file loaded they dropped. I
+measured it live on /ede/beuk-marjan before touching anything: **518 pixels at
+375 wide, 984 on a desktop**, with the photograph above the fold both times.
+That is Cumulative Layout Shift, Google ranks on it, and this project's binding
+constraint is ranking rather than supply.
+
+The fix was cheap because the data was already there. Every photo block in
+`data/cities` records the file's real `width` and `height` (413 of 413 rendered
+photographs carry both; `photo_res.py` fills them and the digest runs it daily),
+and nothing was passing them to the markup. Now `photoDims()` reads the pair,
+`imgSrcset()` emits the two attributes when both are known, and `.tree-photo img`
+gained `height: auto` in the stylesheet. That last line is not tidiness: the
+height attribute is a presentational hint, so `width: 100%` with a bare height
+attribute would have painted a 343 by 4928 smear instead of a photograph. The
+stylesheet is content-hashed, so a returning visitor cannot pair new HTML with
+the old cached CSS.
+
+Verified with eyes rather than by grep, since there is no local build: I served
+the live page's own HTML with the exact markup change and the new stylesheet,
+and measured both phases at 375 and at 1280. Before, the figure went 0 to 518
+and the caption from y=266 to y=784. After, it stands at 517.9 from the first
+paint and does not move; on desktop 984.4 from the first paint, caption fixed at
+y=1236. Same final layout to within a pixel, image undistorted.
+
+Per the ratchet, `check_tree_photo_dimensions()` in `scripts/qa.py` now fails the
+deploy if the render site drops the attributes again. It fails on the mistake and
+not on the gap, the way `check_photo_resolution()` does: a render site that stops
+passing them loses them on every page at once, while an unmeasured new photograph
+loses them on one, and blocking a deploy over that would be the kind of gate the
+mandate warns about. It also fails if the `.tree-photo` figure ever disappears,
+so it cannot pass by matching nothing.
+
+Card images were checked and left alone: `.tree-card-photo`, `.entry-thumb`,
+`.ctry-ph`, `.shelf-ph` and the homepage hero all sit in containers with a fixed
+aspect ratio or absolute positioning, so they reserve their space already. The
+tree page hero was the only image on the site that did not.
+
 ## 2026-09-01 (continuation of a window whose first attempt shipped 3 trees and stopped early) - Cleared two stale claims, found the READY pile was empty, dispatched a Madeira verify pass
 
 Step 0: released two stale claims left standing from an earlier attempt this

@@ -174,13 +174,50 @@ export function photoWidth(p: unknown): number {
 export const MIN_CARD_PX = 540;
 export const MIN_HERO_PX = 960;
 
+/** The intrinsic width and height a photo block records, or zeros when either
+ * is missing.
+ *
+ * These become the `width` and `height` attributes on the rendered `<img>`, and
+ * their only job there is to reserve the space before the file arrives. Without
+ * them a tree page paints its story directly under the chips and then throws it
+ * down the page the moment the photograph loads: measured on /ede/beuk-marjan
+ * on 2026-09-01, 518 pixels at 375 wide and over a thousand on a desktop, with
+ * the image above the fold both times. That is a Cumulative Layout Shift, which
+ * Google ranks on, and ranking is the binding constraint on this project.
+ *
+ * The numbers are the file's real dimensions, not the thumbnail's; only the
+ * RATIO is used, and a bucketed Wikimedia thumbnail keeps the ratio of the
+ * original it was cut from. Zeros mean a photograph nobody has measured yet,
+ * and then the markup says nothing rather than something wrong:
+ * scripts/photo_res.py fills the pair in on its next pass and the daily digest
+ * runs it. Every photo we render carries both today (413 of 413, checked
+ * 2026-09-01); this is the honest fallback for the next one added by hand.
+ *
+ * A caller that uses this MUST let the height be auto in CSS. The height
+ * attribute is a presentational hint, so `width: 100%` with a bare height
+ * attribute paints a 343 by 4928 smear rather than a photograph. */
+export function photoDims(p: unknown): { width: number; height: number } {
+  const o = p as { width?: number; height?: number } | null;
+  const w = o?.width;
+  const h = o?.height;
+  return typeof w === "number" && w > 0 && typeof h === "number" && h > 0
+    ? { width: w, height: h }
+    : { width: 0, height: 0 };
+}
+
 /** src/srcset/sizes attribute string for a photo url, ready to spread into an <img>.
  *
  * `intrinsic` is the file's real width. Offering a 960w candidate for a 375px
  * file is not harmless: the browser picks it, gets 375 pixels back, and paints
  * them upscaled. Capping the candidates at what exists keeps the markup honest
  * about the file, which is also what makes the qa check meaningful. */
-export function imgSrcset(url: string, widths: number[], sizes: string, intrinsic = 0) {
+export function imgSrcset(
+  url: string,
+  widths: number[],
+  sizes: string,
+  intrinsic = 0,
+  intrinsicHeight = 0,
+) {
   const seen = new Set<string>();
   const pairs: [string, number][] = [];
   const capped = intrinsic > 0 ? widths.filter((w) => w <= intrinsic) : widths;
@@ -192,11 +229,18 @@ export function imgSrcset(url: string, widths: number[], sizes: string, intrinsi
     }
   }
   const srcset = pairs.map(([u, w]) => `${u} ${w}w`).join(", ");
-  return {
+  const out: { src: string; srcset: string; sizes: string; width?: number; height?: number } = {
     src: thumbUrl(url, widths[0]),
     srcset,
     sizes,
   };
+  // Both or neither. A width without a height gives the browser no ratio and
+  // only a presentational hint, which is worse than saying nothing.
+  if (intrinsic > 0 && intrinsicHeight > 0) {
+    out.width = intrinsic;
+    out.height = intrinsicHeight;
+  }
+  return out;
 }
 
 /** HTML attribute string form, for contexts building raw markup rather than JSX-like props. */

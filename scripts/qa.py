@@ -333,6 +333,62 @@ def check_photo_resolution():
     return out
 
 
+# A tree page's photograph, as it landed. Tolerant of extra attributes and of
+# whatever whitespace the generator leaves between the figure and the img,
+# because the point is to notice the ATTRIBUTES going missing, not to fail the
+# day somebody adds a class.
+TREE_PHOTO_IMG = re.compile(
+    r'<figure[^>]*\bclass="[^"]*\btree-photo\b[^"]*"[^>]*>\s*<img\b([^>]*)>', re.S)
+
+
+def check_tree_photo_dimensions(pages):
+    """A tree page's photograph must reserve its own space before it loads.
+
+    Measured live on /ede/beuk-marjan, 2026-09-01: the img carried no width or
+    height, so the browser gave the figure zero height and painted the credit,
+    the recognition line and the whole story directly under the chips. When the
+    file arrived they dropped 518 pixels at 375 wide and over a thousand on a
+    desktop, with the photograph above the fold in both cases. That is a
+    Cumulative Layout Shift, Google ranks on it, and DISTRIBUTION is this
+    project's binding constraint, so a shift on 410 pages is a ranking cost
+    rather than a cosmetic one.
+
+    The fix is two attributes carrying the ratio, which every one of those
+    photographs already records in data/cities. So this is the ratchet: the
+    render site cannot quietly drop them again.
+
+    It fails on the MISTAKE and not on the gap, the same way
+    check_photo_resolution() does. A render site that stops passing the
+    dimensions loses them on every page at once; a photograph somebody adds by
+    hand before photo_res.py has measured it loses them on one, and blocking a
+    deploy over that would be the gate the mandate warns about. Hence a
+    tolerance rather than a zero.
+    """
+    out = []
+    total = bare = 0
+    examples = []
+    for page in pages:
+        for m in TREE_PHOTO_IMG.finditer(page.read_text(encoding="utf-8")):
+            total += 1
+            attrs = m.group(1)
+            if not (re.search(r'\swidth="\d+"', attrs)
+                    and re.search(r'\sheight="\d+"', attrs)):
+                bare += 1
+                if len(examples) < 4:
+                    examples.append(str(page.relative_to(DIST)))
+    if not total:
+        out.append("no <figure class=\"tree-photo\"> in the build: this check "
+                   "no longer checks anything. Point it at whatever renders a "
+                   "tree page's photograph now, or delete it deliberately.")
+    elif bare > max(5, total // 20):
+        out.append("%d of %d tree photos render with no width/height, so the page "
+                   "below them jumps when the image loads (CLS): %s. Pass "
+                   "photoDims(photo) into imgSrcset, and run "
+                   "`python3 scripts/photo_res.py` if the data is what is missing."
+                   % (bare, total, ", ".join(examples)))
+    return out
+
+
 def check_save_flow_integrity():
     """Two checks born of 2026-08-14's bugs, per the ratchet.
 
@@ -1076,6 +1132,7 @@ def main():
     failures += check_sitemap_dates()
     failures += check_no_name_promise(pages)
     failures += check_tree_count_claims(pages)
+    failures += check_tree_photo_dimensions(pages)
     failures += check_species_face_is_chosen()
     failures += check_faces_travel_to_the_app()
     failures += check_every_feed_is_in_the_version()
