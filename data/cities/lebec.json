@@ -1,0 +1,63 @@
+{
+  "city": "Lebec",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "A trapper named Peter Lebeck was killed by a grizzly bear here in October 1837 and buried under a valley oak, with the date cut into its bark. The tree grew over the lettering and sealed it in; when the bark was cut away decades later, the inscription was found mirrored on the underside, pressed there as the wound healed. The oak stands at Fort Tejon State Historic Park in Grapevine Canyon beside I-5, with a 1938 headstone copying the words. Open daily, day use vehicle fee.",
+  "meta_description": "A grizzly killed Peter Lebeck in 1837. His epitaph was cut into this valley oak, and the tree grew over it. Fort Tejon State Historic Park.",
+  "question_meta": "The Peter Lebeck Oak at Fort Tejon State Historic Park marks a trapper's 1837 grave, with his epitaph once cut into the living bark.",
+  "question_answer": "The oldest tree in Lebec is the Peter Lebeck Oak, a valley oak at Fort Tejon State Historic Park on Fort Tejon Road, beside I-5 in Grapevine Canyon. Nobody has dated it properly; a 2016 account describes the fort's valley oaks as around four hundred years old, and no ring count or girth measurement has been published for this one. It is known for the grave beneath it. Peter Lebeck, probably a Frenchman, was killed by a grizzly bear on 17 October 1837, and whoever buried him cut the notice into the bark: Peter le Beck, killed by a bear, Octr 17, 1837. The tree healed over the carving and it was recovered decades later. The park is open daily from 9 to 4 with a day use vehicle fee, and the grave is part of an ordinary visit.",
+  "question_context": "Fort Tejon State Historic Park is on the west side of I-5 in Grapevine Canyon at Lebec, about 70 miles north of Los Angeles and roughly an hour and a half by car. There is no public transport, so this is a driving stop, and it is a natural one on the way over the Grapevine. The park opens daily from 9 to 4 and charges a day use vehicle fee; the grave under the oak is part of a normal visit rather than a separate ticket, and the restored 1854 fort buildings are the rest of the site. The tree's story is older than the fort by seventeen years. Peter Lebeck was killed by a grizzly on 17 October 1837 and buried here, his epitaph cut into the bark. By 1857 the tree had grown over it. In the 1880s or 1890s the Foxtail Rangers, a group out of Bakersfield, cut that bark away and found the words mirrored on the inner face. Where that piece of bark now sits is disputed between the fort and the Kern County Museum in Bakersfield. The pin marks the park entrance rather than the tree.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Lebec?",
+      "a": "The Peter Lebeck Oak, a valley oak at Fort Tejon State Historic Park. Nobody has dated it properly; a 2016 account puts the fort's valley oaks at around four hundred years, which is the best figure available."
+    },
+    {
+      "q": "What is the story of the carving?",
+      "a": "Peter Lebeck was killed by a grizzly bear on 17 October 1837 and buried under the oak, with the notice cut into the bark. The tree grew over the lettering by 1857. When the Foxtail Rangers cut that bark away decades later, the words were mirrored on its underside."
+    },
+    {
+      "q": "Can I visit the grave, and what does it cost?",
+      "a": "Yes. Fort Tejon State Historic Park is open daily from 9 to 4 and charges a day use vehicle fee. The grave is on the ordinary visitor route through the site, alongside the restored 1854 fort buildings."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car. The park is on the west side of I-5 in Grapevine Canyon at Lebec, about 70 miles and an hour and a half north of Los Angeles. There is no public transport, and the pin marks the park entrance rather than the tree itself."
+    }
+  ],
+  "oldest_tree_id": "leb_001",
+  "trees": [
+    {
+      "id": "leb_001",
+      "name": "The Peter Lebeck Oak",
+      "species": "Valley Oak (Quercus lobata)",
+      "age_estimate": "several hundred years",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Fort Tejon State Historic Park, 4201 Fort Tejon Rd, Lebec, California",
+        "latitude": 34.8693465,
+        "longitude": -118.9025777,
+        "neighbourhood": "Fort Tejon State Historic Park"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Peter_Lebeck",
+        "https://www.avoidingregret.com/2016/03/photo-essay-fort-tejon-and-ghost-of.html",
+        "https://scvhistory.com/scvhistory/lw2128a.htm"
+      ],
+      "access": "Free to view; Fort Tejon State Historic Park charges a day-use vehicle fee and is open daily 9am-4pm.",
+      "transport": "Fort Tejon State Historic Park, Lebec, CA, on the west side of I-5 in Grapevine Canyon. About 113 km / 70 miles from Los Angeles (our nearest published city), roughly 1.5 hours drive, too far to count as a day-trip extension of LA.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "In October 1837 a trapper called Peter Lebeck was killed by a grizzly bear here, and whoever buried him cut the notice into the bark of a valley oak: Peter le Beck, killed by a bear, Octr 17, 1837. By 1857 the tree had grown over the lettering and sealed it in. In the 1880s or 1890s the Foxtail Rangers, a group out of Bakersfield, cut that bark away and found the inscription mirrored on its underside, the tree having taken an impression of the words while healing over them. They re-marked the grave, and a headstone copying the wording went in during 1938. The recovered bark is on display, though sources disagree on whether at Fort Tejon itself or at the Kern County Museum in Bakersfield, so ask at the desk. The fort came seventeen years after the burial, in 1854, which makes the oak the older resident by some margin. Nobody has dated it properly. The most recent account we can point to is a 2016 visit describing the fort's valley oaks as around four hundred years old, so if you know better, or find this one changed, tell us. Fort Tejon State Historic Park sits beside I-5 in Grapevine Canyon, open daily from 9 to 4 with a day use vehicle fee, and the grave is part of an ordinary visit. The pin marks the park entrance rather than the tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "height_m": null
+    }
+  ]
+}

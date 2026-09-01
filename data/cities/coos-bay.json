@@ -1,0 +1,62 @@
+{
+  "city": "Coos Bay",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The tallest known Douglas fir on Earth stood in the hills of Coos County until August 2025, when a fire nobody has explained burned for days in its crown. The Doerner Fir survived it, about fifteen metres shorter and no longer the record holder. It is roughly 450 years old and still among the tallest trees anywhere that are not redwoods. The trail in is short and marked; the road in is an hour of BLM forest road, the last stretch gravel and unmaintained in winter. Free, on public land.",
+  "meta_description": "A fire took 15 metres off the Doerner Fir in August 2025 and it lived. The former tallest Douglas fir on Earth, on BLM land in Coos County.",
+  "question_meta": "The Doerner Fir, about 450 years old, is the former tallest Douglas fir on Earth. On BLM land in Coos County, free, by a short marked trail.",
+  "question_answer": "The oldest and tallest tree in Coos County is the Doerner Fir, a Douglas fir of roughly 450 years on BLM land off Upper East Fork Brummit Road, reached by a signed trailhead about an hour's drive from Roseburg. Until August 2025 it was the tallest known Douglas fir on Earth at 325.8 feet, or 99.3 metres. That month a fire of unexplained origin burned for several days in its crown; firefighters put it out and the tree lived, but it lost around fifty feet off the top and the record with it. No official remeasurement has been published since, so the height given here, about 84 metres, is an approximation from press coverage rather than a survey. Access is free, on public land, by a short marked trail.",
+  "question_context": "The Doerner Fir stands on BLM land in the Coast Range of eastern Coos County, off Upper East Fork Brummit Road. There is no public transport and no shortcut. The usual approach is about an hour's drive from Roseburg, mostly on paved BLM forest road with the last four and a half miles on gravel, and that road is not maintained through the winter, so check conditions before setting out. The trailhead has its own parking area and a register to sign, and from there a short marked trail drops to the tree. All of it is free and open. What waits at the bottom changed in August 2025, when a fire burned for several days in the crown and firefighters worked it until it was out. The tree came through. It lost roughly fifty feet off the top and with it the title of tallest known Douglas fir on Earth, previously measured at 325.8 feet, among the tallest non-redwood trees recorded anywhere. It was known as the Brummit Fir before it was renamed for a Douglas County commissioner.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Coos Bay?",
+      "a": "The Doerner Fir, a Douglas fir of roughly 450 years standing on BLM land in eastern Coos County. It was the tallest known Douglas fir on Earth until a fire cost it about fifteen metres of crown in August 2025."
+    },
+    {
+      "q": "Is the Doerner Fir still alive after the 2025 fire?",
+      "a": "Yes. The fire burned for several days in the crown, firefighters extinguished it, and the tree survived with its top gone. It is no longer the record holder and it is still standing."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free, on public land, with no permit. Drive about an hour from Roseburg on BLM forest roads, the last four and a half miles gravel, to a signed trailhead with parking. The road is not maintained in winter."
+    },
+    {
+      "q": "How tall is it now?",
+      "a": "Around 84 metres by press estimates after the fire, down from a measured 325.8 feet, or 99.3 metres. Nobody has published an official remeasurement, so treat the current figure as approximate."
+    }
+  ],
+  "oldest_tree_id": "coo_001",
+  "trees": [
+    {
+      "id": "coo_001",
+      "name": "Doerner Fir",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "roughly 450 years",
+      "age_min": 400,
+      "age_max": 500,
+      "height_m": 84,
+      "location": {
+        "address": "BLM land off Upper East Fork Brummit Road, Coos County, Oregon, west of Roseburg",
+        "latitude": 43.17951,
+        "longitude": -123.81209,
+        "neighbourhood": "Doerner Fir Trailhead, reached via a mostly-paved BLM forest road with a final 4.5 miles of gravel"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Doerner_Fir",
+        "https://www.smithsonianmag.com/smart-news/worlds-tallest-douglas-fir-tree-damaged-in-mysterious-multi-day-blaze-but-its-alive-after-firefighters-extinguish-flames-180987232/"
+      ],
+      "access": "Free, on BLM public land; short, well-marked trail from a dedicated trailhead parking lot. Access road is remote (about an hour of driving from Roseburg on paved and then gravel BLM roads) and not maintained in winter.",
+      "transport": "No public transit; nearest town is Roseburg, OR, about an hour's drive.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In August 2025 a fire nobody has explained burned for several days in the crown of this Douglas fir, and the tree survived it. Firefighters put the blaze out. The fir lost roughly fifty feet off its top and with it the record it had held for years as the tallest known Douglas fir on Earth. Before the fire it measured 325.8 feet, 99.3 metres, which put it among the tallest trees anywhere that are not redwoods. The height on this page, about 84 metres, comes from press coverage after the fire rather than from a survey; nobody has run a tape up it since, so treat it as approximate until someone does. It is roughly 450 years old, give or take fifty, which made it a large tree long before the logging that took nearly everything around it. It was the Brummit Fir until it was renamed for a Douglas County commissioner. Getting there is an honest part of the trip: about an hour from Roseburg on BLM roads, the last four and a half miles gravel and not maintained through winter, then a short marked trail from a proper trailhead with a register to sign. What waits at the end is now a scarred survivor rather than a record holder, which is arguably the better reason to walk in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "girth_cm": null
+    }
+  ]
+}

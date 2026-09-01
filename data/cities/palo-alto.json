@@ -1,0 +1,62 @@
+{
+  "city": "Palo Alto",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Palo Alto is named after a tree, and the tree is still there, on the bank of San Francisquito Creek with Caltrain going past a few metres away. El Palo Alto is a coast redwood of about a thousand years, and its name means the tall stick, which has become slightly awkward: it has lost roughly sixteen metres off the top since 1930, as the water table under the creek was drawn down. The city and local arborists have spent real money keeping it alive.",
+  "meta_description": "El Palo Alto, the thousand-year-old redwood the city is named after, has lost 16 metres off its top since 1930 and is still standing.",
+  "question_meta": "El Palo Alto, a coast redwood of about 1,000 years, is Palo Alto's oldest tree and its namesake. Free, on the creek bank by Alma Street.",
+  "question_answer": "The oldest tree in Palo Alto is El Palo Alto, the coast redwood the city takes its name from, estimated at about a thousand years and by some accounts a little over eleven hundred. It stands in El Palo Alto Park on the bank of San Francisquito Creek by Alma Street, next to the Caltrain tracks, free and reachable at any hour. It appears on the city seal, and a Spanish expedition is recorded camping at this creek in 1769.",
+  "question_context": "El Palo Alto Park is a small strip on the bank of San Francisquito Creek by Alma Street, where the Caltrain corridor crosses it. It is walkable from downtown Palo Alto and from the University Avenue station, free, open, and reachable at any hour. There is one tree here that anybody comes for.\n\nIt is not the largest redwood you will ever see, and that is the story rather than a disappointment. It measured 162 feet in 1930 and stands at about 110 today, roughly thirty three and a half metres, with a dead top, because the water table beneath the creek was drawn down between 1865 and 1955 and the crown died back as the water went.\n\nWhat is unusual is how closely it is now watched. A donated assessment in March 2025 ran ground-penetrating radar beneath it, excavated the roots with compressed air, flew a drone through the crown and left a prism on the trunk to measure movement. The finding was decay and a dead top on sound buttress roots.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Palo Alto?",
+      "a": "El Palo Alto, the coast redwood on San Francisquito Creek that the city is named after. Estimates put it at about a thousand years, and some at a little over eleven hundred."
+    },
+    {
+      "q": "How do I get to El Palo Alto?",
+      "a": "It is in El Palo Alto Park on the creek bank by Alma Street, beside the railway. Walkable from downtown Palo Alto and from the University Avenue Caltrain station. The park is free and open."
+    },
+    {
+      "q": "Why is the tree shorter than it used to be?",
+      "a": "The water table under San Francisquito Creek was drawn down between 1865 and 1955, and the crown died back progressively as the water went. It measured 162 feet in 1930 and stands at about 110 feet now, with a dead top."
+    },
+    {
+      "q": "Is El Palo Alto still healthy?",
+      "a": "It is alive and actively monitored. An assessment in March 2025 using ground-penetrating radar, root excavation and drone survey found decay and a dead top, but sound buttress roots. A prism on the trunk tracks whether the tree moves."
+    }
+  ],
+  "oldest_tree_id": "pla_001",
+  "trees": [
+    {
+      "id": "pla_001",
+      "name": "El Palo Alto",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "roughly 1,085 years",
+      "age_min": 1000,
+      "age_max": 1100,
+      "girth_cm": 686,
+      "height_m": 33.5,
+      "location": {
+        "address": "El Palo Alto Park, on the banks of San Francisquito Creek near Alma Street, Palo Alto, California",
+        "latitude": 37.4474445,
+        "longitude": -122.1705812,
+        "neighbourhood": "El Palo Alto Park, next to the Caltrain tracks where they cross Alma Street"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/El_Palo_Alto",
+        "https://gardenclubofpaloalto.org/wp-content/uploads/2024/02/El-Palo-Alto-the-Landmark-Redwood-Tree-.pdf"
+      ],
+      "access": "Free, public park, visible and reachable at any time.",
+      "transport": "Adjacent to the Palo Alto Caltrain corridor; walkable from downtown Palo Alto and University Ave Caltrain station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Palo Alto is named for how tall this redwood used to be. El Palo Alto is Spanish for the tall stick, the tree is on the city seal, and since 1930 it has lost about sixteen metres off the top.\n\nIt measured 162 feet then. It stands at roughly 110 today, about thirty three and a half metres, with a dead top. The cause was not a storm or a disease but plumbing: the water table under San Francisquito Creek was drawn down between 1865 and 1955, and the crown died back progressively as the water went.\n\nThe tree is old enough for all of that to be a late chapter. Estimates put it at a thousand years and a little beyond, which means it was already several centuries into its life when a Spanish expedition is recorded camping at this creek in 1769.\n\nIt may now be the most closely monitored tree in California. A donated assessment in March 2025 ran ground-penetrating radar under it, excavated the roots with compressed air, flew a drone through the crown and left a prism on the trunk to track whether it moves. The verdict was decay and a dead top, on sound buttress roots.\n\nIt stands in El Palo Alto Park on the creek bank by Alma Street, walkable from downtown, with Caltrain going past a few metres away. A survivor rather than a giant, which is the more interesting of the two.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "city": "Simsbury",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Simsbury built a park around one tree and then put floodlights on it. The Pinchot Sycamore is the largest tree in Connecticut, about thirty metres tall with an average crown spread of forty three, which makes it considerably wider than it is high. It stands on the flood plain of the Farmington River, the wet ground an American sycamore wants, and it carries the name of Gifford Pinchot, the conservationist who later governed the state.",
+  "meta_description": "Connecticut's largest tree stands in its own park in Simsbury: the Pinchot Sycamore, 8.8 metres round, wider than it is tall, floodlit at night.",
+  "question_meta": "The Pinchot Sycamore, over 200 years old and Connecticut's largest tree, stands in a free park on the Farmington River in Simsbury.",
+  "question_answer": "Simsbury's oldest known tree is the Pinchot Sycamore, an American sycamore on the east bank of the Farmington River off Route 185, estimated at over 200 years and possibly beyond 300. It is also the largest tree in Connecticut, measured in November 2025 at 884 centimetres round, 30.2 metres tall, with an average crown spread of 43 metres. It stands in its own free public park with a boat launch onto the river, and has been floodlit at night since 1997.",
+  "question_context": "Pinchot Sycamore Park is on the east bank of the Farmington River on Route 185, south of Simsbury's village centre and below Talcott Mountain. There is no direct public transport, so it is a car trip. The park is free and open, and the tree is the whole reason for it: open lawn, a boat launch onto the river, and floodlights that have been on the tree since 1997.\n\nIt was measured most recently in November 2025 at 884 centimetres round, 30.2 metres tall, with an average spread of 43 metres, which is what makes it Connecticut's largest tree and the national champion of its species. The age is given as over 200 years and possibly past 300. There is no planting date and it has never been cored.\n\nWinter is the moment worth choosing. A sycamore this size is at its most legible with the leaves off, when the white upper limbs and the whole frame of the crown show, and the floodlights make the same case after dark.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Simsbury?",
+      "a": "The Pinchot Sycamore, on the Farmington River off Route 185. It is estimated at over 200 years and possibly beyond 300, with no planting date on record."
+    },
+    {
+      "q": "Is the Pinchot Sycamore really the largest tree in Connecticut?",
+      "a": "Yes, on the state's own notable-trees record, and it is listed as the national champion for its species. Its last measurement, in November 2025, gave 884 centimetres of circumference, a height of 30.2 metres and an average crown spread of 43 metres."
+    },
+    {
+      "q": "Is it free to visit, and how do I get there?",
+      "a": "Free, in a public town park with open grounds and a boat launch. It is on Route 185 south of Simsbury centre and there is no direct public transport, so you will need a car."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "January and February. With the leaves off, the white upper limbs and the full frame of the crown are visible, which is the thing this tree is actually remarkable for. The floodlights have been on it since 1997, so it also reads after dark."
+    }
+  ],
+  "oldest_tree_id": "sim_001",
+  "trees": [
+    {
+      "id": "sim_001",
+      "name": "The Pinchot Sycamore",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "at least 200 years, possibly over 300",
+      "age_min": 200,
+      "age_max": 300,
+      "girth_cm": 884,
+      "height_m": 30.2,
+      "location": {
+        "address": "Pinchot Sycamore Park, Route 185 (Hopmeadow St / Simsbury Rd) on the east bank of the Farmington River, Simsbury, CT",
+        "latitude": 41.847492,
+        "longitude": -72.806512,
+        "neighbourhood": "Simsbury, near the base of Talcott Mountain"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Pinchot_Sycamore",
+        "https://oak.conncoll.edu/notabletrees/ViewTreeData.jsp?selected=128002"
+      ],
+      "access": "Free, public town park (Pinchot Sycamore Park), open grounds with a boat launch onto the Farmington River; floodlit at night since a 1997 lighting project.",
+      "transport": "No direct public transit found; car access off Route 185 south of Simsbury town center. Nearest published city is Boston or New York, both well over an hour away by road; treat as its own place (Simsbury, CT).",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This sycamore is considerably wider than it is tall: about thirty metres up, and an average spread of forty three metres across. Connecticut has nothing bigger, and the national register lists it as the champion of its species.\n\nIt was measured again in November 2025 at 884 centimetres round, a trunk that takes five or six people holding hands to enclose. It is doing this on the flood plain of the Farmington River, which is exactly the wet ground an American sycamore wants. Its age is given as over two hundred years and possibly beyond three hundred. There is no planting date, and nobody has cored it.\n\nIt carries the name of Gifford Pinchot, the conservationist who later governed Connecticut, which makes it one of the few champion trees named for someone who would have known what the title meant.\n\nThe town built a park around it rather than the other way round: open lawn, a boat launch onto the river, and floodlights since 1997, so the frame is legible after dark as well. The October snowstorm of 2011 took some of the canopy and left the heavy lower limbs alone, which is why the shape survived intact.\n\nFree, open, on Route 185 south of the village centre.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the white upper limbs show"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

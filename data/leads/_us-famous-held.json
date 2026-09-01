@@ -1,0 +1,112 @@
+{
+ "note": "Verified American famous trees that are alive and sourced but are NOT published, each with the reason. Kept whole so a later pass continues rather than restarts: the verification is done and paid for. Written 2026-09-01 from the three us-famous verify passes.",
+ "leads": [
+  {
+   "id": "pnj_001",
+   "name": "The Mercer Oak (successor)",
+   "species": "White Oak (Quercus alba)",
+   "age_estimate": "young, planted around 2000-2001",
+   "age_min": 24,
+   "age_max": 26,
+   "girth_cm": null,
+   "location": {
+    "address": "Princeton Battlefield State Park, 500 Mercer St, Princeton, New Jersey",
+    "latitude": 40.331711,
+    "longitude": -74.675603,
+    "neighbourhood": "Princeton Battlefield State Park"
+   },
+   "verified_sources": [
+    "https://islandinthenet.com/mercer-white-oak-princeton-battlefield-park/",
+    "https://pbs1777.org/landmarks-of-the-princeton-battlefield/"
+   ],
+   "access": "Free. New Jersey state park, open daily, no entry fee.",
+   "transport": "Princeton Battlefield State Park, about 3 km southwest of downtown Princeton, NJ. Not within 30 min of any city we currently publish; nearest published city is Philadelphia, roughly 65 km / 50+ min drive, too far to count as a day-trip extension.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "SUCCESSOR TREE, not the original. The original Mercer Oak (white oak, ~300 years old, near where General Hugh Mercer was mortally wounded during the Battle of Princeton, Jan 1777) collapsed in high winds in March 2000 (islandinthenet.com, dating the fall and giving the ~300yr age of the original). An arborist planted an 8-foot sapling grown from an acorn of the original tree inside/beside the former tree's stump shortly after (islandinthenet.com says 'soon after'; pbs1777.org, the Princeton Battlefield Society's own page, gives 2001 as the planting year for the direct descendant). ALIVE CHECK: a Wikimedia Commons photo titled 'Mercer Oak, Princeton Battlefield State Park in 2024' is geotagged to these exact coordinates (confirmed via Commons API), giving dated 2024 evidence the successor stands and is photographed at the named spot. A second Commons photo shows the sapling in December 2022 (islandinthenet.com's own December 2022 photo). No girth or height figure found in this pass; the tree is young (roughly 25 years old) so a mature girth is not expected. Historically significant site (National Historic Landmark battlefield, American Revolution, Jan 3 1777) and the tree is the park's named living memorial, planted from the original's own acorn on the spot where Mercer fell nearby. Would somebody travel specifically for this tree: borderline yes, treat as a companion feature of the battlefield rather than a solo destination in its own right, since it is young and unremarkable to look at, but it is the site's namesake and the battlefield itself is already a National Historic Landmark that people visit. Two independent sources agree on the essential facts (fall date/cause, successor planted from acorn); minor date discrepancy on exact planting year (WebSearch summary said an arborist planted an 8-ft sapling in 1981 sourced from an earlier acorn, which conflicts with the 2000 stump-planting story and looks like a search-summary artifact rather than a page fact; only the pbs1777.org and islandinthenet.com fetched-page facts were used, not the unverified search summary).",
+   "hold_reason": "successor planted 2000, 26 years old; the fame belongs to the original that fell in March 2000, so nobody travels for the tree that stands",
+   "status": "held"
+  },
+  {
+   "id": "wye_001",
+   "name": "The Wye Oak (clone)",
+   "species": "White Oak (Quercus alba)",
+   "age_estimate": "young, planted 2006",
+   "age_min": 19,
+   "age_max": 20,
+   "girth_cm": null,
+   "location": {
+    "address": "Wye Oak State Park, Wye Mills, Talbot County, Maryland",
+    "latitude": 38.939167,
+    "longitude": -76.080833,
+    "neighbourhood": "Wye Oak State Park"
+   },
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Wye_Oak",
+    "https://www.baltimoresun.com/2002/06/07/wye-oak-topples-shattered-by-storm/"
+   ],
+   "access": "Free. Maryland state park, open daily during daylight hours, no entry fee found.",
+   "transport": "Wye Oak State Park, Wye Mills, Talbot County, Maryland. About 100 km from Washington DC (our nearest published city), well over an hour's drive, too far for a day-trip extension.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "CLONE, not the original tree. The original Wye Oak was Maryland's state tree, the largest known white oak in the United States, believed over 460 years old, and stood in what is now Wye Oak State Park for four centuries. It was destroyed in a severe thunderstorm on 6 June 2002 (Baltimore Sun, contemporary report). Before its fall, University of Maryland horticulture professor Frank Gouin led an effort to clone it via grafting because of its size, age and unusual resistance to oak wilt and gypsy moth; two grafted clones were planted at Mount Vernon on 26 April 2002 (before the original fell). A genetic clone was planted at the original site in Wye Oak State Park during a ceremony on 6 June 2006 (the 4th anniversary of the fall), on/near the remains of the original trunk, per Wikipedia. ALIVE CHECK: a Wikimedia Commons photo titled 'IMG9711 Wye Oak clone.jpg' carries EXIF DateTimeOriginal of 2025-07-22 (confirmed via Commons API), i.e. photographed alive at the site within the last year. Coordinates: Wikipedia infobox gives 38 56 21 N 76 04 51 W for the Wye Oak site, which converts to 38.939167, -76.080833, matching the coordinate already supplied in the lead batch almost exactly (38.939258, -76.08089) -- treated as confirmed, tree-level. No girth/height figure found for the clone in this pass; it is young (planted 2006, ~19-20 years old as of 2025) so a small trunk is expected and not remarkable yet. The state built an entire park around this single tree's site and it was the state tree of Maryland for over 60 years, so despite the clone's youth the SITE itself carries strong legacy pull; flagged mainly because no girth/height was captured and because this is explicitly a young successor rather than the famous original.",
+   "hold_reason": "clone planted 2006, 20 years old; same reason as the Mercer Oak",
+   "status": "held"
+  },
+  {
+   "id": "gon_001",
+   "name": "The Sam Houston Oak",
+   "species": "Live Oak (Quercus virginiana)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Beside the Braches House, off CR 361, about 8 miles east of Gonzales, Texas",
+    "latitude": 29.471304,
+    "longitude": -97.308161,
+    "neighbourhood": "Rural Gonzales County"
+   },
+   "verified_sources": [
+    "https://texastimetravel.com/directory/sam-houston-oak/",
+    "https://texastimetravel.com/blog/history-in-the-trees/"
+   ],
+   "access": "View-only from a public dirt road. The Braches House and the land the oak stands on are private property; visitors cannot enter, but the tree and house are visible from CR 361, a public dirt road, from a respectful distance outside the gates and fences. A 1936 Texas state historical marker stands at the roadside turn (Alternate US 90 / CR 361).",
+   "transport": "Rural Gonzales County, Texas, about 8 miles / 13 km east of the town of Gonzales on Hwy 90A then north on CR 361. Not within 30 minutes of any city we currently publish (Houston and San Antonio are both roughly 90+ minutes away); stands alone as a Gonzales-area entry.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "VIEW-ONLY entry, per the Hobart precedent: genuinely visible from a public road, not enterable. A large live oak beside the 1842 Braches House (Greek Revival plantation-era house) where General Sam Houston and up to ~400 Texans camped on the night of 13 March 1836, at the start of the 'Runaway Scrape' retreat after burning Gonzales following news of the Alamo's fall; also called the Runaway Scrape Oak. One source (texasescapes.com via WebSearch summary) states Santa Anna's forces reportedly camped under the same tree about three weeks later, though this could not be independently confirmed by directly fetching a page in this pass (texasescapes.com timed out twice, treated as a hanging host and not retried further -- flag for data/fetch-blocklist.json). A 1936 Texas state historical marker commemorates the site at the Alt US 90 / CR 361 junction. ALIVE CHECK: texastimetravel.com's own current directory and blog entry (both live, current pages) describe the tree in the present tense as 'a lonely but grand live oak' still standing beside the house; no death or removal reported anywhere. PIN: the coordinate is a geotagged 2010s-era Panoramio photo of the historical marker itself (confirmed via Commons API, matches the lead batch's supplied coordinate exactly), which sits at the roadside viewing point near the tree, not the trunk itself -- appropriate for a view-only entry per the Hobart rule. No age or girth figure found in this pass; the tree was already large enough to shade several hundred men camping under it in 1836, so it was already mature 190 years ago, but no source gives a number and none should be invented. Species is live oak per two sources (not genus-only).",
+   "hold_reason": "private farmland beside the Braches House, a dwelling; view-only from a public dirt road, held until we can show nobody lives there",
+   "status": "held"
+  },
+  {
+   "id": "gpo_001",
+   "name": "The Witch Tree (Manidoo-gizhigance / Spirit Little Cedar Tree)",
+   "species": "Northern White Cedar (Thuja occidentalis)",
+   "age_estimate": "several hundred years, at least 300",
+   "age_min": 300,
+   "age_max": 500,
+   "girth_cm": null,
+   "height_m": null,
+   "location": {
+    "address": "On a rocky point on the Lake Superior shore, Grand Portage Indian Reservation, Grand Portage, Cook County, Minnesota",
+    "latitude": 47.955933,
+    "longitude": -89.638599,
+    "neighbourhood": "Grand Portage (near Grand Portage National Monument / Grand Portage State Park)"
+   },
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Witch_Tree",
+    "https://www.paddlinglight.com/articles/trip-reports/manido-gizhigans-spirit-little-cedar-tree-the-witch-tree/",
+    "https://www.cbsnews.com/minnesota/news/finding-minnesota-north-shores-witch-tree/",
+    "https://wtip.org/travis-novitsky-shares-the-history-of-the-sacred-spirit-tree/"
+   ],
+   "access": "Restricted, not a free walk-up. The Grand Portage Band closed the trail to independent public use in 1989 to protect the tree from vandalism; it may only be visited on a guided tour with a naturalist arranged through Grand Portage Lodge (218-475-2277). A guided hike to the tree was run as recently as 21 Feb 2024 (Heart of the Continent Partnership Winter Gathering, led by tribal member Travis Novitsky), which is also the most recent dated confirmation found that the tree still stands. Location is openly published by the tribe and multiple outlets, not withheld; the restriction is on unaccompanied access, not on knowledge of where it is.",
+   "transport": "No public transit; reached by car via Grand Portage, MN near the Canadian border (~30 min north of Grand Marais), then by guided hike/boat from Grand Portage Lodge.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Sacred to the Grand Portage Band of Lake Superior Ojibwe (Manidoo-gizhigance, Spirit Little Cedar Tree). First European written record by French explorer Sieur de la Verendrye in 1731, who described it as already mature, giving a floor age of ~300 years then (~500 today per some tribal sources, kept broad here). Grows straight out of bare rock on the Lake Superior shoreline, gnarled, stunted and twisted from exposure; no girth figure found in sources checked. Traditionally offered tobacco by Ojibwe travellers for safe passage on the lake. Flagged because the most recent explicit alive-confirmation found is a Feb 2024 guided-hike listing rather than a dated survey or photo with visible health assessment; no death, storm-damage or removal report was found anywhere, and the site remains an actively promoted, actively guarded destination, which is itself evidence it still stands. Would somebody travel specifically for this tree: yes, guided tours exist for exactly this purpose and it is a named stop on North Shore Minnesota tourism material. This is a single-tree destination in a remote location with no city in our published list within reach; treat as its own place (Grand Portage, MN) under the single-tree exception rather than folding into another city.",
+   "hold_reason": "Grand Portage Band closed the trail to independent visitors in 1989; reachable only on a band-authorised guided tour, which is an appointment and therefore fails the access test",
+   "status": "held"
+  }
+ ]
+}

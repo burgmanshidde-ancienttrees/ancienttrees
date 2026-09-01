@@ -1,0 +1,63 @@
+{
+  "city": "Oklahoma City",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The tree on this page stood in a car park across the street from the Alfred P. Murrah Federal Building. On 19 April 1995 the bombing stripped away most of its branches and drove glass and debris into its trunk, and investigators nearly took it down to recover that debris as evidence. It was left standing, and about a year later it came into bloom again. It is now the centre of the outdoor grounds of the Oklahoma City National Memorial.",
+  "meta_description": "The Survivor Tree came through the 1995 Oklahoma City bombing and bloomed again the next spring. It stands at the National Memorial, free, all hours.",
+  "question_meta": "The Survivor Tree, an American elm of about 100 years, stands at the Oklahoma City National Memorial. Free, open every hour of the year.",
+  "question_answer": "Oklahoma City's most significant old tree is the Survivor Tree, an American elm of around 100 years standing at the Outdoor Symbolic Memorial of the Oklahoma City National Memorial, 620 N Harvey Avenue. Photographs of the site from the 1920s, when the ground was the back yard of a family home, show it already growing. Older trees very likely stand elsewhere in the city; none of them is recorded, and none of them is this one.",
+  "question_context": "The tree stands on the north side of the Oklahoma City National Memorial at 620 N Harvey Avenue, downtown, above the Field of Empty Chairs and within the Gates of Time. The Outdoor Symbolic Memorial, which is where the tree is, is open 24 hours a day, 365 days a year and costs nothing. Only the separate indoor museum charges admission, and you do not need it to see the elm.\n\nWhat you find is one tree in a place built around it. The Rescuers' Orchard, planted with redbuds, maples and elms, stands around it, and seed is collected from the elm each year and grown on, with seedlings going to visitors and to partner sites elsewhere in the country.\n\nIt is a working memorial rather than a park, and people come to it for reasons that have nothing to do with trees. Visit it as you would any memorial: quietly, and at your own pace. There is no charge, no ticket and no closing time.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Oklahoma City?",
+      "a": "The Survivor Tree, the American elm at the Oklahoma City National Memorial, is the oldest tree in the city with a documented history. Photographs from the 1920s show it already growing on what was then a private back yard, which puts it at around 100 years."
+    },
+    {
+      "q": "Is it free to see the Survivor Tree?",
+      "a": "Yes. The Outdoor Symbolic Memorial is open every hour of every day of the year at no charge. The indoor museum on the same site charges admission, but the tree is not inside it."
+    },
+    {
+      "q": "Where exactly is the Survivor Tree?",
+      "a": "On the north side of the memorial grounds at 620 N Harvey Avenue in downtown Oklahoma City, on a raised terrace above the Field of Empty Chairs, with the Rescuers' Orchard planted around it."
+    },
+    {
+      "q": "What happened to the tree in the bombing?",
+      "a": "The blast stripped most of its branches and embedded glass and debris in the trunk. Investigators considered felling it to recover that material as evidence. It was left in place, bloomed again roughly a year later, and was made the centrepiece of the memorial."
+    }
+  ],
+  "oldest_tree_id": "okc_001",
+  "trees": [
+    {
+      "id": "okc_001",
+      "name": "The Survivor Tree",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "around 100 years",
+      "age_min": 90,
+      "age_max": 110,
+      "girth_cm": null,
+      "location": {
+        "address": "Outdoor Symbolic Memorial, Oklahoma City National Memorial, 620 N Harvey Ave, Oklahoma City, Oklahoma",
+        "latitude": 35.473176,
+        "longitude": -97.517059,
+        "neighbourhood": "Downtown Oklahoma City"
+      },
+      "verified_sources": [
+        "https://memorialmuseum.com/experience/the-survivor-tree/",
+        "https://en.wikipedia.org/wiki/Oklahoma_City_Bombing_Memorial_%27Survivor_Tree%27",
+        "https://www.news9.com/story/67f40f4ba0c6d2054de691c4/survivor-tree-a-living-symbol-of-resilience-and-hope"
+      ],
+      "access": "Free. The Outdoor Symbolic Memorial (which includes the Survivor Tree, the Gates of Time, the Field of Empty Chairs) is open 24 hours a day, 365 days a year, at no charge. Only the separate indoor Museum charges admission.",
+      "transport": "Downtown Oklahoma City, already one of our published cities; the tree stands within the city itself.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "After the bombing, officials nearly took the tree down. The blast had driven glass and debris into its trunk, and the trunk was evidence.\n\nThe elm stood in the car park across the street from the Alfred P. Murrah Federal Building, and it had stood there long before the building did. Photographs from the 1920s, when the ground was the back yard of a family home, show it already growing, which puts it at around a hundred years old. On 19 April 1995 the explosion stripped away most of its branches.\n\nIt was left standing. About a year later it came into bloom again, and it was kept, as the centre of the outdoor grounds of the Oklahoma City National Memorial, on the north side of the site above the Field of Empty Chairs. The Rescuers' Orchard of redbuds, maples and elms was planted around it.\n\nIt is tended now more closely than most trees anywhere. Seed is collected from it and grown on, and the seedlings go to visitors and to partner sites elsewhere in the country, so the tree exists in more places than this one.\n\nThe outdoor memorial, the tree included, is open every hour of every day of the year and costs nothing. Only the indoor museum charges admission.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "height_m": null
+    }
+  ]
+}

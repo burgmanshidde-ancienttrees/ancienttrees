@@ -1,0 +1,62 @@
+{
+  "city": "Hampton, Virginia",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The Emancipation Proclamation was read to the South for the first time under this live oak, in September 1863, to the free and newly freed Black community of the Virginia Peninsula. Mary Peake had already taught children to read beneath it, at a time when Virginia law forbade teaching them. The tree still stands on the Hampton University campus, canopy about 98 feet across, and is still used for ceremonies. Its age is unsettled, with estimates from 200 to over 300 years. Open campus ground, free, nothing between you and it.",
+  "meta_description": "The Emancipation Proclamation was first read in the South under this live oak in 1863. It still stands on the Hampton University campus, free to visit.",
+  "question_meta": "The Emancipation Oak, roughly 200 to 300 years old, stands on the Hampton University campus where the Emancipation Proclamation was read in 1863.",
+  "question_answer": "The oldest tree in Hampton is the Emancipation Oak, a southern live oak on the Hampton University campus near the corner of East Queen Street and Tyler Street, estimated at somewhere between 200 and 300 years. The estimates disagree badly: older material says 150 to 200 years, a 2023 figure says about 250, a 2022 report says 309, and nobody has cored the tree to settle it, deliberately, because taking a core from an old live oak for the sake of a number is a poor trade. In September 1863 the Black community of the Virginia Peninsula gathered beneath it for the first public reading of the Emancipation Proclamation in the South. Its canopy spreads about 98 feet on a trunk about 50 feet tall. The campus grounds are open and free.",
+  "question_context": "The Emancipation Oak stands on the Hampton University campus near the corner of East Queen Street and Tyler Street, on open ground with no fence, no ticket and no restriction on walking up to it. The campus is a National Historic Landmark district, listed on the National Register in November 1969, and this tree is part of what earned it that. Hampton sits on the Virginia Peninsula and the campus is straightforward to reach by car from I-64, with parking nearby. Mary Peake taught free and enslaved Black children to read beneath these branches when Virginia law forbade it. In September 1863 the community gathered here for the first Southern public reading of the Emancipation Proclamation, and the university still holds ceremonies under the tree. What you see is a southern live oak doing what live oaks do with space, spreading a canopy about 98 feet across on a trunk barely 50 feet tall. It is evergreen, so no season is better than another. National Geographic once listed it among ten great trees of the world.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Hampton?",
+      "a": "The Emancipation Oak on the Hampton University campus, a southern live oak estimated at 200 to 300 years. Published figures range from 150 to 309 years and nobody has cored it, so the number is genuinely open."
+    },
+    {
+      "q": "Why is it called the Emancipation Oak?",
+      "a": "Because the Emancipation Proclamation was read publicly under it in September 1863, the first such reading in the South, to the Black community of the Virginia Peninsula. Mary Peake had taught freed and enslaved children to read there before that."
+    },
+    {
+      "q": "Can I visit it, and does it cost anything?",
+      "a": "Yes, and no. It stands on open campus ground within Hampton University's National Historic Landmark district, free, unfenced, with nothing between you and the tree."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "Any time. Southern live oaks are evergreen and hold their leaves through winter, so the tree looks much the same all year. The university's own Emancipation Day gatherings are held beneath it."
+    }
+  ],
+  "oldest_tree_id": "hmp_001",
+  "trees": [
+    {
+      "id": "hmp_001",
+      "name": "The Emancipation Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "roughly 200 to 300 years",
+      "age_min": 200,
+      "age_max": 309,
+      "girth_cm": null,
+      "height_m": 15.2,
+      "location": {
+        "address": "Hampton University campus, near the corner of E Queen St and Tyler St, Hampton, VA",
+        "latitude": 37.023003,
+        "longitude": -76.33007,
+        "neighbourhood": "Hampton University campus"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Emancipation_Oak",
+        "https://www.wtkr.com/news/more-than-300-year-old-emancipation-oak-near-hampton-university-serves-as-living-witness-to-history"
+      ],
+      "access": "Free, on the open grounds of Hampton University's campus; part of the university's National Historic Landmark district.",
+      "transport": "Within Hampton, VA. Not one of our currently published US cities; treat as its own place (Hampton, VA) unless a future pass opens a Hampton Roads/Norfolk-Virginia Beach city page it could join.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The Emancipation Proclamation got its first public reading in the South under this live oak, in September 1863, to the Black community of the Virginia Peninsula gathered in its shade. Before that, and before it was legal, Mary Peake taught freed and enslaved children to read under the same branches. The tree is still on the Hampton University campus and still used for ceremonies. Its canopy spreads about 98 feet across on a trunk barely 50 feet tall, which is what a live oak does when nothing crowds it: out rather than up. The age is genuinely unsettled. Older material says 150 to 200 years, a 2023 estimate says around 250, a 2022 report says 309. Nobody has cored it, deliberately, because taking a core from an old live oak to settle a number is a poor trade. Read it as somewhere between two and three centuries, and note that even the low end puts it here, and grown, in 1863. National Geographic once listed it among ten great trees of the world. It stands inside Hampton University's National Historic Landmark district, on open campus ground, free, with nothing between you and it. Most places where something like this happened keep a plaque. This one kept the tree that people were standing under.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

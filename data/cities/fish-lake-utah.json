@@ -1,0 +1,70 @@
+{
+  "city": "Fish Lake, Utah",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Pando is a single quaking aspen with roughly 40,000 trunks. One root system, about 106 acres, every stem genetically identical, and by mass it is commonly reckoned the largest living thing on Earth. Its age is a genuine argument rather than a rounded number, running from several hundred years to 80,000 depending on the method used. A flat 1.4 mile trail from the Old Spanish Trailhead by Fish Lake walks straight into it. There is no single trunk to photograph, which is exactly what makes the walk worth taking.",
+  "meta_description": "Pando is one aspen with 40,000 trunks and one root system, spread over 106 acres by Fish Lake, Utah. A flat trail walks straight into it.",
+  "question_meta": "Pando, one quaking aspen of 40,000 stems on one root system, spreads over 106 acres at Fish Lake, Utah. Free, no permit, flat 1.4 mile trail.",
+  "question_answer": "The oldest living thing at Fish Lake is Pando, a single quaking aspen made up of roughly 40,000 stems sharing one root system across about 106 acres, entered from the Old Spanish Trailhead on Highway 25 in Fishlake National Forest. Its age is disputed and we are not going to narrow it: the popular figure of 80,000 years comes from an assumed rate of spread, and other researchers argue for anything from several hundred years to about 14,000. What is not disputed is the mass, which is why Pando is commonly described as the largest known living organism on Earth. A flat 1.4 mile out and back from the trailhead runs a spur directly through the clone. Free, no permit, US Forest Service land.",
+  "question_context": "Pando lies beside Highway 25, the Fishlake Scenic Byway, on the southwest side of Fish Lake in Fishlake National Forest, central Utah. The nearest town is Richfield, about 25 minutes away; there is no public transport, and the byway can close with snow. Parking is at the Old Spanish Trailhead, which is signed, free and needs no permit. From there a flat 1.4 mile walk out and back on the Lakeshore National Recreation Trail runs a spur directly through the clone, and an overlook reachable off Forest Road 046N shows the extent of it from outside. The Forest Service manages the site, and researchers are actively studying whether the clone can still replace itself, because deer and cattle browse the young stems before they clear head height. Nothing here is closed to visitors. The one thing to understand before arriving: there is no single trunk and no viewpoint that holds the whole organism, so you walk into it rather than up to it, and the stems on either side of the path are all one thing.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Fish Lake?",
+      "a": "Pando, and it is not really a tree in the usual sense: it is one quaking aspen expressed as about 40,000 stems on a shared root system. Age estimates run from several hundred years to 80,000 and researchers do not agree on a method, so no single figure is settled."
+    },
+    {
+      "q": "Is Pando one tree or a forest?",
+      "a": "One organism. Every stem is genetically identical and connected underground, which is why the whole hillside changes colour in the same week each autumn. It looks like a forest and behaves like a single plant."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free, no permit. Park at the Old Spanish Trailhead on Highway 25 by Fish Lake, about 25 minutes from Richfield, Utah, and walk the flat 1.4 mile trail that runs into the clone. The scenic byway can close with snow."
+    },
+    {
+      "q": "When is the best time to visit?",
+      "a": "Late September into early October, when every stem turns gold in the same week. That synchrony is the visible proof that it is all one organism."
+    }
+  ],
+  "oldest_tree_id": "fsh_001",
+  "trees": [
+    {
+      "id": "fsh_001",
+      "name": "Pando",
+      "species": "Quaking Aspen (Populus tremuloides)",
+      "age_estimate": "estimated thousands of years (a single precise figure is disputed)",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Old Spanish Trailhead, Highway 25 (Fishlake Scenic Byway), Fishlake National Forest, near Fish Lake, Utah",
+        "latitude": 38.523324,
+        "longitude": -111.748295,
+        "neighbourhood": "the Old Spanish Trailhead parking area, where the Lakeshore National Recreation Trail runs a spur directly through the Pando clone"
+      },
+      "verified_sources": [
+        "https://www.fs.usda.gov/r04/fishlake/recreation/explore-forest/pando",
+        "https://www.sltrib.com/artsliving/outdoors/2017/11/14/hike-to-the-pando-overlook-via-lakeshore-national-recreation-trail-at-fish-lake-for-a-glimpse-of-the-worlds-most-massive-known-living-thing/"
+      ],
+      "access": "Free, US Forest Service land, no permit needed; a flat, easy 1.4-mile out-and-back trail from the Old Spanish Trailhead walks directly through the clone, and a further overlook is reachable via the Lakeshore National Recreation Trail off Forest Road 046N.",
+      "transport": "No public transit; nearest town is Richfield, UT, about 25 minutes' drive.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Pando is not a tree. It is one quaking aspen: a single organism of roughly 40,000 stems sharing one root system across about 106 acres, commonly reckoned the most massive known living thing on Earth. Every stem is genetically identical, which is why the whole hillside changes colour in the same week each autumn, and why the trunks you walk between are closer to branches than to neighbours. Its age is a live argument rather than a rounded number. The popular figure is 80,000 years, derived from an assumed rate of spread. Other researchers put it anywhere from several hundred to about 14,000, and the disagreement is about method rather than about Pando. Nobody has settled it and we are not going to tidy it here. What is documented is that the clone is failing to replace itself: deer and cattle eat the young stems before they clear browsing height, so an organism of that age currently consists mostly of old wood, and the Forest Service manages it with that in mind. The Old Spanish Trailhead sits on Highway 25 by Fish Lake, free, no permit, and a flat 1.4 mile walk out and back goes straight into the clone. There is no single trunk to stand in front of and no way to see the whole of it at once. That is the thing you have come for.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "late September into early October, when every stem turns gold in the same week"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "girth_cm": null,
+      "height_m": null
+    }
+  ]
+}
