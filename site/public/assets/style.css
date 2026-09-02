@@ -518,6 +518,19 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .acct-danger { margin-top: 1rem; padding: 0.9rem; border: 1px solid #E3C7C0;
   border-radius: 10px; background: #FCF6F4; }
 .acct-danger .acct-link { min-height: 44px; display: inline-flex; align-items: center; }
+/* THE TWO LANES on /account, the web form of the app's segmented control
+   (2026-09-02). Same behaviour, per-surface design: a tab pair reads as tabs
+   on a page, where a segmented control reads as iOS. */
+.acct-lanes { margin-top: 1.8rem; }
+.lane-picker { display: flex; gap: 4px; background: var(--cream); border: 1px solid var(--cream-dark);
+  border-radius: 999px; padding: 4px; margin-bottom: 1.1rem; }
+.lane { flex: 1; min-height: 44px; border: none; background: none; border-radius: 999px;
+  font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink-mid); cursor: pointer; }
+.lane.on { background: #fff; color: var(--ink); box-shadow: 0 1px 3px rgba(26,26,20,0.12); }
+/* What has happened to a tree you added, in the app's own words. */
+.mine-state { display: flex; align-items: center; gap: 7px; margin: 0.35rem 0 0;
+  font-family: var(--sans); font-size: 12.5px; color: var(--ink-mid); }
+.mine-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--moss); flex: none; }
 .acct-name { margin-top: 1.4rem; }
 .acct-name label { display: block; font-family: var(--sans); font-size: 12px;
   text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); margin-bottom: 0.4rem; }
