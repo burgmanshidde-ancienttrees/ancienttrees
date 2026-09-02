@@ -104,6 +104,14 @@ contests) is None. The expected rating is 4+.
 
 ## App Review notes
 
+**The photograph paragraph changed on 2026-09-02 and applies from the NEXT
+build.** The version at review today is accurate for the binary it describes:
+nothing a user photographs is published, so "never shown to anybody else" is
+true of it. The wording below is for the submission that carries the new
+sentence on both camera screens, and it must go in before that build is sent.
+
+
+
 **Superseded 2026-08-31. The version below was in the first submission and it
 was not enough**: Apple rejected under Guideline 2.1 (Information Needed) on
 2026-08-30 asking for seven things, and this block answered two of them. The
@@ -131,7 +139,7 @@ SIGNING IN is with Apple or Google, so you can sign in with your own Apple ID an
 
 USER CONTENT: people may set a display name and a profile picture that others can see when searching for somebody to follow. Reporting and blocking are on the three dots beside any person in Find People (My trees, the person icon beside your name). A blocked person is hidden everywhere except your own search for them, where they appear last with an Unblock button, so a block can always be lifted. Reports reach us directly and we act on them. Our terms state there is no tolerance for offensive or impersonating profiles: https://ancienttrees.app/terms
 
-PHOTOGRAPHS people take of trees stay on the device while signed out. Once signed in they sync to that person's own account so a new phone does not lose them: the storage bucket is private and no policy anywhere lets one account read another's, so they are never shown to anybody else.
+PHOTOGRAPHS people take of trees stay on the device while signed out. Once signed in they sync to that person's own account so a new phone does not lose them: the storage bucket is private and no policy anywhere lets one account read another's, so no user can see another user's photographs. We ourselves may use a photograph on the public page of the tree it shows, credited to that person's display name and never to their email address; both screens that take a photograph say so before it is taken, and we remove it on request or on account deletion.
 
 LOCATION is used only to centre the map on the trees nearest you and is never sent anywhere.
 

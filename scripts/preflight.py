@@ -1026,10 +1026,68 @@ TYPED_TEXT_IS_CODE = re.compile(
     r"|;\s*$|=>\s*\(?\s*$")
 
 
+def language_aware_components():
+    """The components a reader meets in seven languages, found rather than listed.
+
+    A hardcoded list of four was the first version and it had the flaw the
+    whole check exists to close: the NEXT shared component nobody adds to the
+    list ships unchecked, which is how the Spanish labels lived for eleven days.
+    So the rule is derived from the file: it is language-aware if it is named
+    Translated*, calls ui(), or declares a lang prop.
+
+    What this deliberately skips are the components that take their labels as
+    PROPS (SaveHeart, WorthIt, ShareButton, Breadcrumbs, LanguagePicker). Those
+    carry no text of their own; their caller passes it, and the caller is
+    checked here or is a page.
+    """
+    out = []
+    for path in sorted(glob.glob(os.path.join("site", "src", "components", "*.astro"))):
+        with open(path, encoding="utf-8") as fh:
+            src = fh.read()
+        name = os.path.basename(path)
+        if (name.startswith("Translated") or "ui(" in src
+                or re.search(r"lang\s*[?]?:\s*string", src)):
+            out.append((name, src))
+    return out
+
+
+TYPED_TEXT_IS_CODE = re.compile(
+    r"^(const|let|var|return|if|for|while|switch|case|else|await|import)\b"
+    r"|;\s*$|=>\s*\(?\s*$")
+
+
+def visible_text(body):
+    """What a reader would see: tags, scripts, styles and expressions removed.
+
+    Tags go first and across line breaks, since an attribute list is often
+    several lines. Then every {expression}, including one that opens on this
+    line and closes on another. Anything still standing was typed.
+    """
+    body = re.sub(r"<script[\s\S]*?</script>", " ", body, flags=re.I)
+    body = re.sub(r"<style[\s\S]*?</style>", " ", body, flags=re.I)
+    body = re.sub(r"\{/\*[\s\S]*?\*/\}", " ", body)
+    body = re.sub(r"<[^>]*>", " ", body, flags=re.S)
+    out = []
+    for line in body.split("\n"):
+        text, prev = line, None
+        while prev != text:
+            prev = text
+            text = re.sub(r"\{[^{}]*\}", " ", text)
+        text = re.sub(r"\{.*$", " ", text)
+        text = re.sub(r"^[^{}]*\}", " ", text)
+        text = text.strip()
+        if not re.search(r"[A-Za-z]{3}", text):
+            continue
+        if TYPED_TEXT_IS_CODE.search(text):
+            continue
+        out.append(text)
+    return out
+
+
 def check_translated_components_have_no_typed_text():
     """A word typed into a component that renders in seven languages.
 
-    The general form of the check above, and it exists because that one only
+    The general form of the check below, and it exists because that one only
     catches SPANISH. On 2026-09-02 the photo credit under every tree read
     "Foto:" on the Japanese, French and German pages, and "Photo:" on every
     card in all seven, because both labels were typed into the markup. Neither
@@ -1041,46 +1099,71 @@ def check_translated_components_have_no_typed_text():
     be remembered on every edit fails on the edit nobody remembers, so this is
     the check instead.
 
-    It reads what a VISITOR sees: tags go first (across line breaks, since an
-    attribute list is often several lines), then every {expression}, and
-    whatever text survives was typed rather than looked up. A translated
-    component should have no bare text in it at all, which is what makes this
-    quiet: it finds nothing in any of the four today, and finds both of the
-    labels above the moment either is typed back in. Lines that are plainly
-    JavaScript inside a map block are skipped, because those are not read by
-    anybody.
+    A translated component should carry no bare text at all, which is what
+    makes this quiet by construction: it finds nothing in any of the six today,
+    and names either label the moment one is typed back in.
     """
     out = []
-    files = ["TranslatedTreePage.astro", "TranslatedQuestionPage.astro",
-             "TranslatedCityPage.astro", "TreeCard.astro"]
-    for name in files:
-        path = os.path.join("site", "src", "components", name)
-        if not os.path.exists(path):
-            continue
-        with open(path, encoding="utf-8") as fh:
-            src = fh.read()
+    for name, src in language_aware_components():
         parts = src.split("---", 2)
         body = parts[2] if len(parts) > 2 else src
-        body = re.sub(r"\{/\*[\s\S]*?\*/\}", " ", body)
-        body = re.sub(r"<[^>]*>", " ", body, flags=re.S)
-        for line in body.split("\n"):
-            text, prev = line, None
-            while prev != text:
-                prev = text
-                text = re.sub(r"\{[^{}]*\}", " ", text)
-            text = re.sub(r"\{.*$", " ", text)
-            text = re.sub(r"^[^{}]*\}", " ", text)
-            text = text.strip()
-            if not re.search(r"[A-Za-z]{3}", text):
-                continue
-            if TYPED_TEXT_IS_CODE.search(text):
-                continue
-            if text in ("Ancient Trees",):
+        for text in visible_text(body):
+            if text in ("Ancient Trees",):      # the brand is never translated
                 continue
             out.append("%s: %r is typed into a component that renders in seven "
                        "languages, so every reader gets it in English. Add a key "
                        "to UIStrings in site/src/lib/i18n.ts, fill it for every "
                        "language, and read it through ui(lang)." % (name, text[:60]))
+    return out
+
+
+UI_LANGS = ("es", "it", "nl", "de", "pt", "fr", "ja")
+
+
+def check_ui_strings_cover_every_language():
+    """A string added in English only, which seven languages then serve in English.
+
+    ui() is `{...EN, ...TABLE[lang]}` and TABLE is typed Partial<UIStrings>, so
+    a key filled for English and forgotten everywhere else compiles, ships, and
+    silently reads English on every translated page. Nothing anywhere said so:
+    the fallback is deliberate and good for a language we have not added yet,
+    and useless as a signal about a language we have.
+
+    All seven cover all sixty keys today, which is what makes this the right
+    shape of check: it is silent now and speaks on the first key somebody adds
+    to EN alone. Written 2026-09-02 with the check above, when Hidde asked how
+    this would be held rather than remembered.
+    """
+    path = os.path.join("site", "src", "lib", "i18n.ts")
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as fh:
+        src = fh.read()
+    try:
+        iface = src[src.index("interface UIStrings"):src.index("const EN: UIStrings")]
+        table = src[src.index("const TABLE"):src.index("export function ui")]
+    except ValueError:
+        return ["site/src/lib/i18n.ts no longer has the shape this check reads "
+                "(interface UIStrings, const EN, const TABLE); update the check "
+                "rather than deleting it."]
+    keys = set(re.findall(r"^\s{2}([A-Za-z][A-Za-z0-9]*)\s*[?]?:", iface, re.M))
+    out = []
+    for lang in UI_LANGS:
+        marker = "\n  %s: {" % lang
+        if marker not in table:
+            out.append("site/src/lib/i18n.ts has no block for %r at all, so that "
+                       "language reads English throughout." % lang)
+            continue
+        i = table.index(marker)
+        j = table.find("\n  },", i)
+        have = set(re.findall(r"^\s{4}([A-Za-z][A-Za-z0-9]*):", table[i:j], re.M))
+        missing = sorted(keys - have)
+        if missing:
+            out.append("site/src/lib/i18n.ts: %s is missing %d of %d strings, so "
+                       "readers of that language get English for %s. Fill them in "
+                       "its block in TABLE."
+                       % (lang, len(missing), len(keys),
+                          ", ".join(missing[:5]) + (", ..." if len(missing) > 5 else "")))
     return out
 
 
@@ -1322,6 +1405,7 @@ def main():
                 + check_collection_targets() + check_overlay_coverage()
                 + check_chrome_is_translated()
                 + check_translated_components_have_no_typed_text()
+                + check_ui_strings_cover_every_language()
                 + check_translated_components_are_neutral()
                 + check_no_two_language_switch())
     files = sorted(glob.glob("data/cities/*.json"))
