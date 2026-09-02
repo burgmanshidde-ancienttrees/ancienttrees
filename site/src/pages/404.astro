@@ -24,12 +24,15 @@ const description = "That page is not here. The map and the city list are, thoug
       on the site is reachable from the map or the city list.
     </p>
     <p>
-      <a href="/explore">Open the map</a> &middot;
-      <a href="/cities">All cities</a> &middot;
+      {/* The space after each separator is explicit. Astro drops the newline
+          before an element, so "map &middot;\n<a>All cities" rendered as
+          "map \u00b7All cities" on the page every broken link lands on. */}
+      <a href="/explore">Open the map</a> &middot;{" "}
+      <a href="/cities">All cities</a> &middot;{" "}
       <a href="/">Home</a>
     </p>
     <p>
-      If you followed a link from somewhere and it should have worked,
+      If you followed a link from somewhere and it should have worked,{" "}
       <a href="/contribute">tell us</a> and we will fix it.
     </p>
   </main>
