@@ -48,5 +48,31 @@
     "location_precision": "approximate",
     "curation_status": "flagged",
     "verify_notes": "Southern Magnolia (Magnolia grandiflora) at Parc Borely, Marseille 8e. jardinsdefrance.org (Societe Nationale d Horticulture de France), in a roundup of exceptional Magnolia grandiflora specimens across France by trunk girth and crown height, lists it exactly as: \"Marseille, Parc Borely, plante en 1929 : 2,22 m/20 m\" (2.22m circumference measured at 1m above ground, 20m crown height). CAUTION: an earlier WebSearch AI summary of the same page mis-attributed a different row in that same list (Grasse, planted 1956, 2.7m/18m) to Marseille; the figures used here were confirmed by fetching and reading the raw page text directly, per the search-summary-is-a-lead-never-a-source rule. graines-et-plantes.com independently corroborates a Magnolia grandiflora as a standout, remarkable specimen with ivory-coloured flowers in the park, without giving measurements. Documented planting date (1929) is the basis for the age figure, not a growth-rate estimate; roughly 95-97 years old as of 2026. LOCATION_PRECISION IS APPROXIMATE: neither source gives which part of the 17-hectare park it stands in. One Magnolia grandiflora is tagged as an OSM natural=tree node (id 2365945739) at 43.2597652,5.383882, inside/immediately adjacent to Parc Borely near the same spot as the bald cypresses (mrs_001), but this is supporting evidence only, not proof it is the same 1929 specimen, since ordinary magnolias also grow in the park. A future pass should look for the park s own tree-trail signage (a 1995 pedagogical circuit exists per marseille-autrement.fr, walking about twenty remarkable trees) to pin the exact spot."
+  },
+  {
+    "id": "mrs_003",
+    "name": "The Plane Tree of Place des Augustines",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "several centuries (vague, undocumented)",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Place des Augustines, Le Panier, 13002 Marseille",
+      "latitude": 43.2973337,
+      "longitude": 5.3686195,
+      "neighbourhood": "Le Panier, 2nd arrondissement"
+    },
+    "verified_sources": [
+      "https://www.la-table-d-augustine-restaurant-marseille.com/",
+      "https://marseille.love-spots.com/en/spots/eating-out/restaurants/104282-la-table-daugustine.html",
+      "https://croquisurbains.fr/les-places-du-panier-a-marseille",
+      "OSM natural=tree node 1346333315 at 43.2973337,5.3686195, tagged denotation=natural_monument, species=Platanus hispanica, reverse-geocoding to Place des Augustines, Le Panier, Marseille 2e"
+    ],
+    "access": "Free, standing in a public square in Le Panier, always visible/accessible",
+    "transport": "Metro line 1 or 2, Vieux-Port or Colbert stop, short walk into Le Panier",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A large London Plane (Platanus x hispanica/acerifolia) standing in Place des Augustines, the small square at the heart of Le Panier, Marseille s oldest quarter, on the site of a former Ursuline (1636) then Augustine (1748) convent. Multiple independent tourism/lifestyle sources describe it consistently as the dominant, shading feature of the square: love-spots.com calls it \"the great plane tree\"; croquisurbains.fr notes \"son bar du platane d une certaine epoque aussi\" (a bar named for the plane tree, itself of some age); the restaurant La Table d Augustine, which opened on the square in 2023 and sits directly beneath it, describes it on its own site as \"le plus vieux platane du centre-ville, temoin silencieux des siecles passes\" (the oldest plane tree in the city centre, silent witness to centuries past). FLAGGED because the only source giving an age figure at all is the restaurant s own promotional copy (an interested party, and \"oldest in the city centre\" is an unverified superlative); other sources agree only that it is old and large, not by how much. Using the vague plural (\"centuries\", \"siecles passes\") rather than sharpening to a number, per the rule against turning a vague source into a precise one. OSM tags a single London Plane node right at this square s coordinates with denotation=natural_monument, a legal/heritage-protection style tag, which is corroborating but crowd-sourced and not itself verified against a French official register. No canker-stain (Ceratocystis platani) news or dieback reports found for this specific tree; the restaurant opening beneath it in 2023 and the square s tourism write-ups being current implies the tree is alive and healthy as of recently, though no dated photo/observation was directly viewed. Ask a reader for a trunk girth or a more precise planting record if anyone in Le Panier has one."
   }
 ]

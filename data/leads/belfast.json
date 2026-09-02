@@ -1,1 +1,15 @@
-{"leads": [], "blocked": []}
+{
+  "leads": [
+    {
+      "name": "The Ormeau Plane",
+      "species": "London Plane (Platanus x hispanica), per one source",
+      "reason": "A notable, informally famous plane tree in Ormeau Park (Belfast's oldest municipal park, opened 1871), described by thestreettree.substack.com as 'a charmingly grotesque... corpulent, short, gouty' specimen and 'a popular curiosity'. Full article is paywalled so no age, girth, height or exact in-park location could be extracted; only the preview snippet was readable. A second search for corroboration ('Ormeau Park plane tree girth', 'London plane Belfast park notable') turned up nothing else naming this specific tree. One source only, and a thin one at that (no numbers), so held as a lead rather than shipped. A future pass should try to read the full substack post (may need a subscription or an archive snapshot), and/or search Belfast City Council's own Ormeau Park page and any tree survey/strategy documents for a named or tagged plane."
+    },
+    {
+      "name": "Belfast Castle Estate / Cave Hill Country Park woodland",
+      "species": "mixed, unconfirmed",
+      "reason": "One of the four sites named in the brief. Woodland Trust holds a 'Belfast Castle Estate' wood entry and the estate's slopes were planted with evergreen and deciduous trees from the 1880s onward per general history sources, but no single named/individually remarkable veteran tree was found in this pass, only a general naturalised woodland roughly 140 years old at most. That is a landscape, not a collectible point per the standing rule (an avenue or a whole wood is blocked, a single named tree is not). Worth a future pass specifically searching Belfast City Council's Belfast Castle Estate management plan or tree survey for any individually named/notable specimen (a cedar, wellingtonia, or similar Victorian estate planting would be typical); none was found searching generically in the time available here."
+    }
+  ],
+  "blocked": []
+}

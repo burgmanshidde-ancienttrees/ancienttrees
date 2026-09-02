@@ -77,5 +77,31 @@
     "curation_status": "flagged",
     "verify_notes": "Historically significant rather than genuinely ancient: Metasequoia glyptostroboides was known only from fossils and presumed extinct until living specimens were found in China in 1946; seed grown at the Arnold Arboretum (Boston) in 1948 supplied the first plants distributed to botanic gardens worldwide, including this one. Friends of Belfast Botanic Gardens (fobbg.co.uk, the gardens' own volunteer/education body, cites a specific tag: 54deg34.985'N, 5deg56.156'W, Tag #59) date this specimen to approximately 1950, making it one of the first dawn redwoods grown in Ireland after the species' rediscovery -- a 'living fossil' story worth leading with. The Tree Council of Ireland's register (treeregister.ie) also lists a Dawn Redwood at Belfast Botanic Gardens, corroborating it as a recognised notable specimen, though its own page gave no extra measurement detail beyond the listing itself. Two other Metasequoia specimens stand elsewhere in the same gardens (rock garden; beside the Malone-gate-to-Palm-House path) if this one needs replacing or a photo cannot be matched confidently -- note that risk explicitly for the photo pass. A WebSearch AI summary claimed a monumentaltrees.com height of 22m for this tree, but monumentaltrees.com 403'd every direct fetch attempt in this pass (expected, they block automated fetching) so that figure was NOT verified on the page itself and is deliberately excluded per the search-summary-is-a-lead-never-a-source rule. Age is estimated from the planting/distribution history (documented planting era for the species' UK/Ireland introduction), not from a girth measurement.",
     "girth_source_note": null
+  },
+  {
+    "id": "bfs_004",
+    "name": "The Friar's Bush Hawthorn",
+    "species": "Common Hawthorn (Crataegus monogyna)",
+    "age_estimate": "not documented; described as old and reclining",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Friar's Bush Graveyard, Stranmillis Road, Belfast BT9, beside the Ulster Museum",
+      "latitude": 54.5818,
+      "longitude": -5.935,
+      "neighbourhood": "Stranmillis / Queen's Quarter, Belfast"
+    },
+    "verified_sources": [
+      "https://remarkabletrees.org/trees-of-folklore/friars-bush-belfast/",
+      "https://en.wikipedia.org/wiki/Friar%27s_Bush_Graveyard",
+      "https://www.belfastcity.gov.uk/births-deaths-and-ceremonies/cemeteries/friar-s-bush"
+    ],
+    "access": "Free, but appointment-only: Belfast City Council manages the graveyard and visitors must book ahead (call 028 9027 0296 or email the council) to be let in; guided tours also run through Cairde na Cille and Friends of Friar's Bush Graveyard. No car parking on site; some paths unsuitable for wheelchairs.",
+    "transport": "Metro 8A-B from Belfast city centre, alight at Botanic Gardens; Botanic rail halt also nearby.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "The graveyard itself IS the story here: this is the oldest Christian burial ground in Belfast and gives the site its name. Two independent sources agree on the core legend: remarkabletrees.org (Northern Ireland's Remarkable Trees project) and Belfast City Council's own page both say Catholics gathered secretly to hear Mass under this hawthorn during the Penal Laws of the 18th century (Mass being banned), which is why the graveyard is called 'Friar's Bush'. Wikipedia independently corroborates via a citation to poet Joseph Campbell's verse calling it the 'Stranmillis trysting thorn'. remarkabletrees.org adds a specific (if unverifiable) origin legend: a friar was supposedly murdered and buried on the spot near the thorn where he preached, and a stone marked the grave. Council's own page says the tree stands 'in the centre of the cemetery'. Species given as hawthorn (Crataegus monogyna, the common native hawthorn) by remarkabletrees.org; no scientific name given by the other two sources but nothing contradicts it. No numeric age or girth found anywhere; described only as 'old' and 'reclining' (remarkabletrees.org: 'may well bow down under the weight of its history'), consistent with a genuinely veteran, low, spreading hawthorn rather than a tall tree. IMPORTANT ACCESS NOTE: this is NOT casual walk-up access. Belfast City Council's own page states visitors must make an appointment (phone or email) to get in; this is publicly-owned and free but gated, not open-gate public ground. Flagging for the writer/owner to judge against the current access rules for a bookable/appointment site (allowed as of the 2026-09-01 loosening as long as the access line states it plainly, which I have done). No dated recent (2020s) sighting confirming the specific tree is still alive was found in this pass; the graveyard is actively managed and toured (Cairde na Cille, Friends of Friar's Bush Graveyard both currently active per Council's page), which is indirect but real evidence the site and its named feature are still being shown to visitors.",
+    "girth_source_note": null
   }
 ]
