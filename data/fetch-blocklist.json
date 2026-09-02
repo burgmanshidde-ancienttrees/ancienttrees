@@ -331,6 +331,21 @@
    "what": "403/406 to the default fetcher, 200 with a full desktop Safari user agent.",
    "workaround": "same full desktop Safari user agent as terra.com.br",
    "date": "2026-09-02"
+  },
+  "sandiegoreader.com": {
+   "what": "Cloudflare 'Performing security verification' interstitial that does NOT clear. Tried WebFetch, curl with a browser user agent, the Wayback Machine, a reader proxy, and a REAL BROWSER SESSION held for 16 seconds; the challenge never resolved.",
+   "workaround": "None found, and do not try to defeat the challenge. WebSearch's own extracted snippets DO carry the content: its 2017 'top ten trees of Balboa Park' piece and a 2025 follow-up are the best remaining San Diego supply, and searching the site returns usable summaries where fetching returns nothing. Treat those as leads needing a second source, never as the source itself.",
+   "date": "2026-09-02"
+  },
+  "sandiegohistory.org": {
+   "what": "403 to WebFetch, browser-UA curl and Wayback alike.",
+   "workaround": "unknown",
+   "date": "2026-09-02"
+  },
+  "pacifichorticulture.org": {
+   "what": "403 to WebFetch, browser-UA curl and Wayback alike.",
+   "workaround": "unknown",
+   "date": "2026-09-02"
   }
  }
 }

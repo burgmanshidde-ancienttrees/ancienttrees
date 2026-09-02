@@ -1,0 +1,54 @@
+{
+  "leads": [
+    {
+      "name": "\"Grandpa\" the Mexican Elderberry",
+      "species": "Mexican / Blue Elderberry (Sambucus mexicana)",
+      "location_hint": "Florida Canyon, Balboa Park, San Diego (native plant preserve)",
+      "reason": "Reported as possibly the oldest tree in the park and the only naturally-occurring one (everything else in the park's top-ten-trees coverage was planted). Found only via a search-engine summary of sandiegoreader.com's 2017 'top ten trees of Balboa Park', which 403'd on every direct fetch attempt (WebFetch, browser-UA curl, Wayback Machine copy, r.jina.ai reader proxy). Per this project's search-summary rule, a claim seen only in a summary is not evidence; needs a session that can browse past Cloudflare, or a second independent source, before it can verify."
+    },
+    {
+      "name": "The Sixth Avenue / Upas Street Cork Oaks",
+      "species": "Cork Oak (Quercus suber)",
+      "location_hint": "Near the site of Kate Sessions' old flower shop, Sixth Avenue and Upas Street, Balboa Park",
+      "reason": "Multiple cork oaks (a group, not one tree) planted as part of Sessions' 1892 planting programme, described in San Diego Magazine (2020) as ~128 years old at the time. iNaturalist shows Quercus suber scattered widely across this whole stretch of Balboa Park (14 observations within 2km), so no single specimen could be identified as THE historic tree. Fails the one-collectible-point test as researched; would need a source naming one specific oak (a plaque, a park sign, or a closer historical account) to become a single entry."
+    },
+    {
+      "name": "The Juan Street Pepper Trees, Old Town",
+      "species": "Peruvian Pepper Tree (Schinus molle)",
+      "location_hint": "Juan Street, Old Town San Diego State Historic Park",
+      "reason": "SOHO (Save Our Heritage Organisation) calls the pepper tree San Diego's 'signature historical tree'; the oldest along Juan Street date to the mid-19th century. Blocked from being a single entry because sources describe an avenue of roughly two dozen trees, not one point. Current survival is also uncertain: a 2015 SOHO article describes the City marking about two dozen of these trees for removal during a sidewalk project after residents were told they would stay; no source found confirms whether removal happened or was stopped. Needs a fresh check before any of these ship."
+    },
+    {
+      "name": "Presidio Park's 1920s planted forest",
+      "species": "Monterey Pine (Pinus radiata), Aleppo Pine (Pinus halepensis), Stone Pine (Pinus pinea), Ribbon Gum (Eucalyptus viminalis), Blue Gum (Eucalyptus globulus)",
+      "location_hint": "Presidio Park, near the Junipero Serra Museum, San Diego",
+      "reason": "George Marston's 1920s planting of 10,000 trees and shrubs on the site of the original 1769 Spanish presidio. sandiegohistory.org's own 1962 'Plant Tour of Presidio Park' names several large individual specimens by species and rough location (e.g. a large pine 'near the right-hand edge of Presidio Drive') but the whole host 403'd on every fetch attempt. Worth a full pass once that host is reachable; likely to contain a real single-tree candidate."
+    },
+    {
+      "name": "Marston House canyon plantings",
+      "species": "Deodar Cedar, Canary Island Pine, Coast Live Oak, Eucalyptus",
+      "location_hint": "George W. Marston House Museum and Gardens, 3525 7th Ave, Balboa Park edge",
+      "reason": "Landscape gardener George Cooke began planting deodar cedars, Canary Island pines and live oaks here in 1906. Sources (tclf.org) describe the planting scheme but name no single standout specimen, and admission terms for the grounds (versus just the house) were not confirmed this pass. Needs a source naming an individual tree plus confirmation the garden or canyon paths are free to walk without a house tour ticket."
+    },
+    {
+      "name": "The rest of San Diego Reader's Balboa Park tree coverage",
+      "species": "various",
+      "location_hint": "Balboa Park generally",
+      "reason": "sandiegoreader.com published 'The top ten trees of Balboa Park' (2017) and a 2025 follow-up 'Balboa Park has more than these ten trees'. Both titles strongly suggest several more individually documented candidates beyond the four verified this pass, but the host returned HTTP 403 (Cloudflare) on every attempted fetch route. A session with real browser access should read both pieces directly; likely the single richest remaining source for this city."
+    },
+    {
+      "name": "Mission San Diego de Alcala historic orchard trees",
+      "species": "Olive (Olea europaea), possibly others",
+      "location_hint": "Mission San Diego de Alcala, Mission Valley, San Diego",
+      "reason": "The mission (founded 1769, first of the California missions) once had large olive orchards (one of 300 trees, one of 167) and cuttings from here started orchards at other missions. No source found this pass names a specific surviving individual tree with a location and evidence of current life; a widely-repeated claim about 'California's first pepper tree' being here turned out on checking to belong to Mission San Luis Rey in Oceanside, not this mission (a caught bridge-claim risk, not a verified fact). Needs fresh research into the mission's current gardens, ideally with the mission office directly, to find out whether any individual tree from the historic orchards still stands."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The Lorax Tree",
+      "species": "Monterey Cypress (Cupressus macrocarpa)",
+      "location_hint": "Ellen Browning Scripps Park, La Jolla, San Diego",
+      "reason": "Dead. The famous cypress thought to have inspired Dr. Seuss's The Lorax toppled over and died in June 2019 (widely reported: CNN, Time, local San Diego news). Never ships as a collectible entry per the never-dead-trees rule; could only ever appear as historical context inside another story, never as its own entry."
+    }
+  ]
+}
