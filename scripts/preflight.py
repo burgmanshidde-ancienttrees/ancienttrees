@@ -893,6 +893,51 @@ def check_no_sender_names():
     return out
 
 
+
+def check_chrome_is_translated():
+    """The navigation and footer must read from the string table, not be typed.
+
+    Added 2026-09-02. Until that day we served 663 hand-translated trees inside
+    an English frame: /es/seville gave Spanish stories under a nav reading Map,
+    Cities, Countries, Species and buttons saying "Suggest a tree" and "Get the
+    app". komoot ships its interface in 14 languages and AllTrails in 12, and
+    the fix here was one string table (site/src/lib/ui-strings.ts) plus wiring.
+
+    The table's own TypeScript Record guarantees every string exists in all
+    eight languages, so the gap this guards is the other one: somebody adding a
+    NEW nav or footer link and typing its label straight into Base.astro. That
+    compiles, ships, and silently un-translates the chrome for seven languages
+    at once, which is exactly how the first version of this problem arrived.
+
+    The test is deliberately narrow, only the anchor and heading text inside
+    the nav and footer of Base.astro, because a broader "no English in this
+    file" rule would fire on comments, class names and the brand, and a check
+    that cries wolf is one everybody learns to skip.
+    """
+    out = []
+    path = os.path.join("site", "src", "layouts", "Base.astro")
+    if not os.path.exists(path):
+        return out
+    with open(path, encoding="utf-8") as fh:
+        src = fh.read()
+    # <a ...>Some Words</a> and <h4>Some Words</h4>, but not {t.something}
+    pat = re.compile(r"<(a|h4|p class=\"nav-group[^\"]*\")\b[^>]*>"
+                     r"((?:(?!</?(?:a|h4|p)\b)[\s\S])*?)</(?:a|h4|p)>")
+    for m in pat.finditer(src):
+        inner = m.group(2)
+        text = re.sub(r"<[^>]+>", "", inner).strip()
+        if not text or "{t." in inner or "set:html" in inner:
+            continue
+        if text in ("Ancient Trees",):      # the brand is never translated
+            continue
+        if not re.search(r"[A-Za-z]{3}", text):
+            continue
+        out.append("Base.astro: %r is typed into the chrome rather than read "
+                   "from site/src/lib/ui-strings.ts, so it stays English on all "
+                   "seven translated languages. Add a key to UiStrings, fill it "
+                   "for every language, and use {t.yourKey}." % text[:60])
+    return out
+
 def check_overlay_coverage():
     """Every translated city must cover every tree its English page holds.
 
@@ -948,7 +993,8 @@ def main():
                 + check_cross_city_duplicates() + check_same_city_duplicates()
                 + check_phenology() + check_register_licences()
                 + check_access_permission() + check_no_sender_names()
-                + check_collection_targets() + check_overlay_coverage())
+                + check_collection_targets() + check_overlay_coverage()
+                + check_chrome_is_translated())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
