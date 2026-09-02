@@ -10,6 +10,28 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-02 - Kansas City opened (4 trees, all one arboretum); Alicante photo pass holds one, rejects six
+
+**Kansas City** (rank 52, 0 trees before today, on Hidde's own named-cities list): finished a
+verify claim an earlier attempt in this window had left standing. All 4 candidates found sit on
+the Linda Hall Library's arboretum lawn near UMKC, each the Champion Tree Program of Greater
+Kansas City's registered largest of its species in the metro: a 1968 Shumard oak, a 1956 double
+flowered horsechestnut, a 1971 purple beech and a 1975 hardy rubber tree (Eucommia ulmoides, the
+sole living species in its family). Ships exactly at the 4-tree floor; the only other candidate
+found, the Frank Liberty bur oak, was cut down in January 2026 (multiple local news sources) and
+is recorded blocked in data/leads/kansascity.json, never published. No register covers this area
+(web research only) and no photos were hunted this pass; both are honest gaps. One age dispute
+worth flagging for a future pass: the horsechestnut's height is given as 54ft by the library and
+80ft by a 2017 gardening-magazine visit, kept as a stated disagreement rather than resolved by
+guessing. All approximate pins (library-grounds centroid, no per-tree GPS retrieved).
+
+**Alicante**: a photo-judge viewing pass against the queue found one good Moreton Bay fig photo
+of Plaza Gabriel Miro, held rather than approved because the Commons file names only the square
+and four figs stand there (ali_001-004); the pictured trunk reads as the thickest of the group,
+likely ali_001, not the tree it would need to attach to. Six other candidates rejected: four
+close-up branch/trunk studies with no readable crown, one archival 1912 press photograph matched
+by a name collision (Canalejas), one near-monochrome iNaturalist pair.
+
 ## 2026-09-02 - Beijing opened (6 trees); three Japanese cherries published as single-tree destinations; Brighton collided with a concurrent session
 
 Finished a write pass an earlier attempt had claimed and left unfinished: 15 verified trees

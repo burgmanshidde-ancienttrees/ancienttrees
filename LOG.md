@@ -37,6 +37,34 @@ test the flow once: add a tree, tap Share, open the link on a phone that is not 
 that is pasted the page honestly says the link leads nowhere. He asked for this to be
 remembered rather than done now: "onthou maar dat ik dit ooit moet testen nu geen tijd."
 
+## 2026-09-02 (autonomous run) - Kansas City opened (4 trees); Alicante photo pass merged; both finished stranded claims
+
+Continuation of a window an earlier attempt in this same slot stopped early (71 min in, 49 min
+of window unspent, no error, no usage-limit death). git pull found two pieces of finished or
+near-finished work waiting uncommitted: an Alicante photo-judge pass and a standing Kansas City
+verify claim with 4 fully-verified, story-less trees.
+
+**Committed the Alicante photo pass as-is**: one Moreton Bay fig photo held (not approved) on
+identity grounds, six rejected on framing/archival/monochrome grounds. Correct, honest work from
+earlier in this window, just uncommitted.
+
+**Kansas City** (rank 52, one of Hidde's own named American cities, 0 trees before today):
+dispatched a write-stories pass on the 4 verified Linda Hall Library arboretum trees (Shumard
+oak, double flowered horsechestnut, purple beech, hardy rubber tree), assembled the city file,
+regenerated city-list.json/CITY_QUEUE.md via scripts/city_queue.py (added the missing city-list
+row by hand first; the script updates existing rows but does not add new ones), built and ran
+QA clean. Ships at exactly the 4-tree floor: everything else researched on this pass was either
+the dead Frank Liberty bur oak (removed Jan 2026, blocked) or outside scope. Full detail and one
+flagged height dispute (horsechestnut: library says 54ft, a 2017 magazine says 80ft) in
+CURATION.md.
+
+Also checked Matera's `passcheck --pending` entry (2 trees "ready to merge"): an earlier pass had
+already correctly decided NOT to publish, below the 4-tree floor and failing the single-tree-
+destination exception. Left alone, nothing to do there.
+
+Released the Kansas City claim. `python3 scripts/health.py` reads clear (the SessionStart hook's
+BROKEN warning was stale: those three workflow runs were cancelled by this session's own pushes,
+not failing).
 
 ## 2026-09-02 (autonomous run) - Finished a stranded write pass: Beijing and 3 Japan single-tree pages, 15 trees written
 

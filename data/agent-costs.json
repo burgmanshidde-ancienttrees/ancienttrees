@@ -1033,7 +1033,7 @@
     "kind": "scout",
     "tokens": 124675,
     "trees": 0,
-    "note": "Kyoto \u533a\u6c11\u306e\u8a87\u308a\u306e\u6728 register DISQUALIFIED: city site policy explicitly forbids \u8907\u88fd\u30fb\u8ee2\u7528 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+    "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
    },
    {
     "target": "barcelona",
@@ -4607,6 +4607,15 @@
     "note": "rung 2 work: fixed the QA false-positive blocking two straight deploys (con su nombre in a historical sentence), rebuilt and pushed. Diagnosed the ios.yml floor job schedule failures (missing retry flags for the known testmanagerd flake) but could not push the workflow fix, no workflows scope on this token; left instructions in LOG.md.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "kansascity",
+    "kind": "write",
+    "tokens": 33000,
+    "trees": 4,
+    "note": "4 Linda Hall Library arboretum stories, ~8.3k tokens per tree. brief_wrong: brief said no tree had a dated age, all four had documented planting dates in verify_notes. Defused a girth superlative collision between kcm_002 (231cm) and kcm_003 stale largest-girth note (216cm).",
+    "wasted": 0,
+    "brief_wrong": true
    }
   ]
  }
