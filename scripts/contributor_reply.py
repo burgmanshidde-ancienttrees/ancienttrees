@@ -195,6 +195,21 @@ def thanks_body(rows_for_addr):
         tips += tip_lines(r) + [""]
     if tips:
         out += ["What you sent us:", ""] + tips
+    # WHERE THEIR OWN TREES ARE (Hidde, 2026-09-02: "deze link ook toevoegen in
+    # de bedank voor het toevoegen van een boom mail zodat mensen hun eigen
+    # boom kunnen zien en delen"). Only to somebody with an account, because
+    # /account shows what that account holds and shows an empty page to
+    # anybody else, and only where a tree was actually added: a correction is
+    # not a tree of theirs.
+    #
+    # It says SEE and not share, which is the honest half today. Sharing a tree
+    # of yours is the share card in the app; a link anybody can open is the
+    # unlisted page that comes next, and this line points at it the day it
+    # exists.
+    if (any(r.get("user_id") for r in rows_for_addr)
+            and any(r.get("kind") in ("tree", "city") for r in rows_for_addr)):
+        out += ["You can see the trees you added, with your own photographs, "
+                "on your account:", "", SITE + "/account", ""]
     out += ["Please keep them coming: a tree you love, a mistake we have made, "
             "a photograph. Every one of them makes the map better, and a real "
             "person telling us about a real tree is the best thing this "
