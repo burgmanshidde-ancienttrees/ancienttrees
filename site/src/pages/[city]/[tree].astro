@@ -26,7 +26,7 @@ import { usablePhoto, imgSrcset, photoDims, thumbUrl, creditRequired, creditName
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
-import { ageToken, metaFromStory, submitLink, locationIsApproximate } from "../../lib/tree-copy";
+import { ageToken, metaForTree, submitLink, locationIsApproximate } from "../../lib/tree-copy";
 import WorthIt from "../../components/WorthIt.astro";
 import SignInModal from "../../components/SignInModal.astro";
 import SaveHeart from "../../components/SaveHeart.astro";
@@ -37,7 +37,7 @@ import { WORTHIT_JS } from "../../lib/worthit-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { seasonBlock } from "../../lib/phenology";
 import { mapHead, singlePinScript } from "../../lib/map";
-import { hreflangForCity } from "../../lib/i18n";
+import { hreflangForCity, ui } from "../../lib/i18n";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -130,7 +130,8 @@ const title = fitTitle([
   `${tree.name} in ${cityName}`,
   tree.name,
 ]);
-const description = metaFromStory(tree.story ?? "");
+// Answer before hook, which is what Contract B asks for; see metaForTree.
+const description = metaForTree(tree, cityName, ui("en").metaLead);
 
 // Sorted by haversine distance, matching build_tree_page's own nearby sort
 // (build_site.py:3152-3154).

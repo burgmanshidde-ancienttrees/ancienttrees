@@ -66,12 +66,12 @@ export function ageToken(tree: Tree): string | null {
 
 /** Build a meta description from the story's opening sentences, max
  * DESC_MAX, cutting on a word boundary rather than mid-clause. */
-export function metaFromStory(story: string): string {
+export function metaFromStory(story: string, budget: number = DESC_MAX): string {
   const sentences = story.split(/(?<=[.!?]) /);
   let out = "";
   for (const s of sentences) {
     const candidate = out ? out + " " + s : s;
-    if (candidate.length <= DESC_MAX) {
+    if (candidate.length <= budget) {
       out = candidate;
       continue;
     }
@@ -101,7 +101,7 @@ export function metaFromStory(story: string): string {
       let built = "";
       for (const c of clauses) {
         const next = built ? built + " " + c : c;
-        if (next.replace(/[,;:]+$/, "").length > DESC_MAX) break;
+        if (next.replace(/[,;:]+$/, "").length > budget) break;
         built = next;
       }
       built = built.trim().replace(/[,;:]+$/, "");
@@ -110,7 +110,7 @@ export function metaFromStory(story: string): string {
         break;
       }
     }
-    const cut = candidate.slice(0, DESC_MAX - 1);
+    const cut = candidate.slice(0, budget - 1);
     const lastSpace = cut.lastIndexOf(" ");
     out = (lastSpace > -1 ? cut.slice(0, lastSpace) : cut).replace(/[,.;:]+$/, "") + "…";
     break;
@@ -140,4 +140,47 @@ export function submitLink(
  * the field counts as approximate. */
 export function locationIsApproximate(tree: Tree): boolean {
   return (tree.location_precision ?? "approximate") !== "confirmed";
+}
+
+/** A meta description that ANSWERS before it hooks, which is what Contract B
+ *  has asked for since v1.0 and what the implementation never did.
+ *
+ *  Until 2026-09-02 a tree page's description was the story's opening, and a
+ *  story opens with its surprise. El Drago Milenario, which takes 11
+ *  impressions a day for its own name, offered searchers "Nobody can date this
+ *  tree, and nobody is going to." True, well written, and no use at all to
+ *  somebody deciding whether to click: it says nothing about what the tree is,
+ *  where it stands, or whether they can go. Measured across the pages losing
+ *  the most clicks, every one of them led with a hook and buried the answer.
+ *
+ *  So: the facts first, in the order a searcher wants them, then as much of the
+ *  story as fits. The tail reuses metaFromStory, which already knows how to cut
+ *  on a clause boundary rather than mid-thought.
+ */
+export function metaForTree(tree: {
+  species?: string; age_estimate?: string;
+  location?: { neighbourhood?: string | null; address?: string | null } | null;
+  story?: string;
+}, cityName: string,
+   lead: (species: string, age: string, where: string) => string,
+   overrides?: { species?: string; age_estimate?: string; story?: string }): string {
+  const rawSpecies = (overrides?.species ?? tree.species ?? "").split("(")[0].trim();
+  // "Mixed species" is our placeholder for an ensemble, not a name, and it
+  // reads as a database field rather than as a tree.
+  const species = rawSpecies && !/^mixed species$/i.test(rawSpecies) ? rawSpecies : "";
+  const ageText = (overrides?.age_estimate ?? tree.age_estimate ?? "").trim();
+  const age = /not documented|unknown|undated|not established/i.test(ageText)
+    ? "" : (ageText.replace(/,/g, "").match(/\d{2,4}/) ?? [""])[0];
+
+  const loc = tree.location ?? {};
+  const area = (loc.neighbourhood ?? "").split("/")[0].split(",")[0].trim()
+    || (loc.address ?? "").split(",")[0].trim();
+  const where = area && !area.toLowerCase().includes(cityName.toLowerCase())
+    ? `${area}, ${cityName}` : cityName;
+
+  const opening = lead(species, age, where);
+  const room = DESC_MAX - opening.length - 1;
+  const story = overrides?.story ?? tree.story ?? "";
+  const tail = room >= 45 ? metaFromStory(story, room) : "";
+  return tail ? `${opening} ${tail}` : opening;
 }

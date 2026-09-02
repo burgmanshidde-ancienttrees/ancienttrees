@@ -16,7 +16,7 @@ import { haversineKm } from "../lib/walks";
 import { usablePhoto, imgSrcset, photoDims, thumbUrl, creditRequired, creditName } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
-import { locationIsApproximate } from "../lib/tree-copy";
+import { locationIsApproximate, metaForTree } from "../lib/tree-copy";
 import { mapHead, singlePinScript } from "../lib/map";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation, type TreeTranslation } from "../lib/i18n";
 import { hasWalksPage } from "../lib/city-walks";
@@ -51,23 +51,14 @@ const loc = tree.location;
 const canonical = `${BASE_URL}/${lang}/${cslug}/${tslug}`;
 
 const title = `${x.name}, ${tr.city}`.length <= 60 ? `${x.name}, ${tr.city}` : x.name;
-// Same fill-the-room discipline as the English metaFromStory, inline because
-// the Spanish sentence shapes differ and the helper is four lines.
-function metaEs(story: string): string {
-  const sentences = story.split(/(?<=[.!?]) /);
-  let out = "";
-  for (const s of sentences) {
-    const cand = out ? out + " " + s : s;
-    if (cand.length <= 155) { out = cand; continue; }
-    if (out.length >= 120) break;
-    const cut = cand.slice(0, 154);
-    const sp = cut.lastIndexOf(" ");
-    out = (sp > -1 ? cut.slice(0, sp) : cut).replace(/[,.;:]+$/, "") + "…";
-    break;
-  }
-  return out;
-}
-const description = metaEs(x.story);
+// Answer before hook, in this page's own language. Until 2026-09-02 this was
+// an inline copy of metaFromStory called metaEs, written when Spanish was the
+// only translation, so seven languages shared a helper named after one of them
+// and none of them answered what the tree is before hooking. The lead template
+// per language lives in i18n.ts's metaLead.
+const description = metaForTree(
+  tree, tr.city, U.metaLead,
+  { species: x.species, age_estimate: x.age_estimate, story: x.story });
 
 function kmBetween(a: { latitude: number; longitude: number }, b: { latitude: number; longitude: number }): number {
   return haversineKm([a.latitude, a.longitude], [b.latitude, b.longitude]);
