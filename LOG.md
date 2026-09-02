@@ -9,6 +9,31 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-02 (session with Hidde) - Paulo corrected us, and both his held photographs went live
+
+He answered this morning's mail: he sent the Bischofia photograph BECAUSE that tree is on our
+own Porto list, and he linked the page. He is right, and so was the second photograph I held.
+Both are trees we have published for weeks, and the mail asked him whether one of them deserved
+a place.
+
+**Fixed on the site.** por_006, the Bischofia trio, now carries his whole-tree photograph
+instead of an iNaturalist close-up of leaves and fruit. por_005, the camellias of Casa Tait,
+carries his photograph of the walk in flower instead of a generic Camellia japonica bloom off
+Commons that our own notes had been flagging as untied to Porto since July. Porto stays at 10
+photographs and 8 of them are his; these were replacements, not gap-filling.
+
+**Fixed so it cannot repeat.** The eight photographs were matched only against trees with no
+photograph, so the two of trees that already had one came out as trees we do not publish.
+`check_leads_already_published()` in scripts/preflight.py now catches that: it reads leads
+somebody sent us and leads whose own words claim we do not have the tree, and matches them
+against the city's published trees on distance, or on genus plus a shared place phrase. Verified
+in both directions: it names his two and nothing else in 258 leads files.
+
+**FOR HIDDE:** `drafts/reply-paulo-4.md` is ready to send, in Portuguese with the English
+underneath. It says he is right, links both trees, and asks a new question about Coimbra (live,
+four trees, no photograph). It drops the app line: he has no smartphone and said so cheerfully,
+so the honest answer is that the website has the same trees and works on any computer.
+
 ## 2026-09-02 (session with Hidde) - The add-a-tree flow ends properly, and a tree of yours can have a page
 
 He walked the flow and found two things: the loudest button under a tree he had just added was
