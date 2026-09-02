@@ -1,0 +1,77 @@
+[
+  {
+    "id": "fjp_001",
+    "name": "Jindai-zakura (Yamataka Jindai Zakura)",
+    "species": "Edo-higan Cherry (Prunus itosakura, syn. Prunus subhirtella var. ascendens)",
+    "age_estimate": "traditionally estimated 1,800-2,000 years",
+    "age_min": 1800,
+    "age_max": 2000,
+    "girth_cm": 1180,
+    "location": {
+      "address": "Jisso-ji Temple, 2763 Yamataka, Takegawa-cho, Hokuto-shi, Yamanashi 408-0306, Japan",
+      "latitude": 35.780798,
+      "longitude": 138.367517,
+      "neighbourhood": "Yamataka, Hokuto"
+    },
+    "verified_sources": [
+      "https://www.yamanashi-kankou.jp/english/uncover/yamataka-jindai-zakura.html",
+      "https://www.city.hokuto.yamanashi.jp/fc/location/22452.html",
+      "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202104/202104_02_en.html"
+    ],
+    "access": "Paid entry to Jisso-ji Temple grounds during blossom season (approx 500 yen adult, per Japanese-language tourism sources); free rest of year per some listings, so check locally. Grounds are open to the public.",
+    "transport": "Nearest station is JR Chuo Main Line's Hinoharu, then taxi or the Hokuto municipal bus (Mukawa loop line) to the Jindai Koen stop; from Kobuchizawa station it is roughly a 30-minute taxi ride.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Alive now: confirmed by 2026 seasonal blossom-forecast pages (weathernews.jp, tenki.jp, hanami.walkerplus.com) still tracking and photographing this specific tree for the 2026 hanami season, so it is standing and monitored today. Species: Edo-higan cherry, Prunus itosakura (also cited as P. subhirtella var. ascendens in older sources) -- agreed by yamanashi-kankou.jp (official prefecture tourism board) and Hokuto city's own page. CORRECTION to an earlier draft of this note: designation year is 1922 (Taisho 11, 12 October), not 1936 as one AI search summary claimed uncorroborated -- confirmed via Japanese Wikipedia's article on Japan's National Natural Monument tree list, which names Jindai-zakura as one of five single trees (with Miharu Takizakura, Usuzumi-zakura, Saitama's Ishido Kaba-zakura and Shizuoka's Kariyado Semba-zakura) designated in the very first batch of National Natural Monuments. Grouped with Miharu Takizakura and Usuzumi-zakura as the 'Three Great Cherry Trees of Japan' (a subset of the wider 'Five Great Cherry Trees'). Height ~10.3m; girth given as 'nemawari' (root-flare circumference) ~11.8-13.5m depending on source (yamanashi-kankou.jp says 11.8m, a weathernews aggregator says 13.5m) -- this is a root-spread measurement on a heavily buttressed ancient specimen, not a breast-height trunk diameter, recorded as girth_cm from the lower, more consistently cited figure; note the discrepancy for the writer. AGE FLAG per the brief's instruction to treat round dramatic ages skeptically: the 1,800-2,000 year figure is the traditional/legendary estimate repeated by every source found (official prefecture tourism, city government, and a Japanese government cultural publication), tied to a legend that the warrior prince Yamato Takeru planted it. It is NOT a scientifically dated figure -- one secondary source (thetreeographer.com, a dendrology blog, not used as one of the two formal sources here) reports that when a large limb broke off in a storm, arborists counted over 1,000 growth rings in that limb alone, and states the trunk itself is too hollow/gnarled to core or ring-count reliably, so the true age cannot be pinned down and the 1,800-2,000 figure remains a repeated tradition rather than a lab result. Ship the age as a traditional/reputed estimate, not a confirmed one; this is exactly the case where 'several hundred/thousand years, repeated as vaguely as the source gives it' applies, not a narrowed number. Legend: a 13th-century tale has Nichiren finding the tree dying and praying for its recovery. Good visual/narrative material: pale, drooping blossoms in early April; seeds have reportedly been sent into space and propagated worldwide as a symbol of longevity."
+  },
+  {
+    "id": "fjp_002",
+    "name": "Miharu Takizakura (Miharu Waterfall Cherry)",
+    "species": "Weeping Edo-higan Cherry, 'Beni-shidare' cultivar (Prunus itosakura f. pendula, cited variously as Prunus subhirtella var. pendula 'Itosakura' or Prunus spachiana 'Pendula Rosea')",
+    "age_estimate": "traditionally estimated over 1,000 years",
+    "age_min": 1000,
+    "age_max": 1200,
+    "girth_cm": 950,
+    "location": {
+      "address": "296 Sakurakubo, Aza-Taki, Oaza-Taki, Miharu-machi, Tamura-gun, Fukushima 963-7758, Japan",
+      "latitude": 37.408039,
+      "longitude": 140.499828,
+      "neighbourhood": "Taki, Miharu"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Miharu_Takizakura",
+      "https://www.japan-guide.com/e/e7792.html",
+      "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%98%A5%E6%BB%9D%E6%A1%9C"
+    ],
+    "access": "Paid entry, 500 yen, charged only during cherry-blossom season (mid-to-late April); free the rest of the year. Grounds are open to the public.",
+    "transport": "JR Ban'etsu-to Line to Miharu Station (12 minutes, 260 yen from Koriyama), then a seasonal shuttle bus running only during the bloom period (1-day pass 1,500 yen in 2026, service dates in early-to-mid April). Described by japan-guide.com as rural and difficult to reach by public transport outside that window; a car or taxi is the practical option the rest of the year.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Alive now: japan-guide.com's page was updated 21 March 2026 with the 2026 seasonal shuttle-bus schedule (service running 4-12 April 2026) for this specific tree, and weathernews.jp carries a live 2026 bloom-forecast page for the same spot, so it is standing, tended and visited today. Survived the 2011 Tohoku earthquake and tsunami unharmed (en.wikipedia.org), and this is roughly 60km from the Fukushima Daiichi plant; visitor numbers dropped sharply after the 2011 nuclear disaster and rebounded by 2012 per the same source, a good \"witnessed history\" beat for the writer. Species agreed across sources as a weeping Edo-higan cherry cultivar (beni-shidare / red weeping cherry), scientific name cited inconsistently (Prunus itosakura f. pendula on some pages, Prunus subhirtella var. pendula or Prunus spachiana 'Pendula Rosea' on others) -- these all refer to the same cultivated weeping form of the Edo-higan cherry, flag the naming variation for the writer rather than picking one silently. National Natural Monument designation: 12 October 1922 (Taisho 11), part of the same first-ever batch as Jindai-zakura (fjp_001) and Usuzumi-zakura; Japanese Wikipedia states it was the first cherry TREE ever so designated, which is a plausible companion fact to Jindai-zakura's 'first National Natural Monument of any kind' claim rather than a contradiction, though not independently confirmed here -- do not present both claims as settled fact in the same breath. AGE FLAG: 'over 1,000 years' is the universally repeated traditional figure; no source found gives a scientific dating method behind it, so it is reported here as a traditional estimate rather than a measured one, kept vague per the age-estimating rule rather than narrowed to a specific number. Measurements disagree across sources and none says why: height cited as both 12m and 19m, trunk girth cited as 7.9m, 9.5m and 11.3m depending on the page; girth_cm recorded here uses japan-guide.com's 9.5m as the middle, most-repeated figure -- flag the spread for the writer, do not silently pick a winner. Crown spread is large and photogenic: 22m east-west by 18m north-south. In January 2005 a heavy snowfall broke several branches and local residents built wooden props to support the tree, which still stands today -- good material for 'what it has witnessed' framing (earthquake, snow damage, community care). Roughly 300,000 visitors a year; cuttings/descendants have been planted in Austria, Bhutan, Hungary, Poland, South Korea, Taiwan, the UK and the US as goodwill gifts, which could feed a nice line about its international reach."
+  },
+  {
+    "id": "fjp_003",
+    "name": "Usuzumi-zakura (Neodani Usuzumi-zakura)",
+    "species": "Edo-higan Cherry (Prunus itosakura, cited on the official cultural-heritage record as \"Prunus aeguinoctialis\", an older synonym)",
+    "age_estimate": "traditionally estimated around 1,500 years",
+    "age_min": 1500,
+    "age_max": 1500,
+    "girth_cm": 940,
+    "location": {
+      "address": "995 Neo Itasho, Motosu-shi, Gifu 501-1231, Japan (Usuzumi Park)",
+      "latitude": 35.632441,
+      "longitude": 136.609038,
+      "neighbourhood": "Neo, Motosu"
+    },
+    "verified_sources": [
+      "https://online.bunka.go.jp/heritages/detail/172095",
+      "https://www.nippon.com/en/guide-to-japan/sakura00121050/japan%E2%80%99s-top-100-blossoms-usuzumi-park-gifu.html",
+      "https://www.city.motosu.lg.jp/0000001137.html"
+    ],
+    "access": "Free, 24-hour admission to Usuzumi Park.",
+    "transport": "About a 15-minute walk from Tarumi Station on the Tarumi Railway (Tarumi Tetsudo).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Alive now: multiple 2026 bloom-forecast pages (weathernews.jp, tenki.jp, walkerplus.com) carry live 2026 data for this exact spot, including a 4 April 2026 report from a visitor saying the blossoms were 'kirei deshita' (beautiful) that week, so it is standing and actively visited this season. Species: Edo-higan cherry, agreed by Japan's Agency for Cultural Affairs record (bunka.go.jp) and nippon.com. Officially designated a National Natural Monument on 12 October 1922 (Taisho 11) per the Agency for Cultural Affairs record, the same date as Jindai-zakura (fjp_001) and Miharu Takizakura (fjp_002) -- all three of the 'Three Great Cherry Trees of Japan' were designated together in Japan's first-ever batch of National Natural Monuments. Named for its pale ink-grey ('usuzumi') tint as the white, full-bloom petals fade. Legend: said to have been planted around 467 CE by Odo no Okimi, later Emperor Keitai, before he left the Neo valley for the capital -- a legend, not a documented planting record, so the ~1,500-year figure is a traditional estimate rather than a scientifically dated one; report it as such and do not narrow it further. Girth given consistently near 9.4m (nippon.com: 9.4m; bunka.go.jp: 'about three jo', roughly 9m using the traditional unit) -- recorded as 940cm. Height cited as 17.3m (nippon.com) though bunka.go.jp instead describes a roughly 30m branch spread; note both for the writer rather than conflating them. THE STANDOUT STORY, confirmed by two independent sources (a Japan Today feature and a travel-around-japan.com page, cross-checked against each other since neither is a search-summary invention -- both describe the same named individual and the same events): the tree was in visible decline from around 1913, and in 1948 Japan's Ministry of Education inspected it and concluded it would be dead within three years. In 1949 a Gifu dentist named Toshiyuki Maeda undertook a month-long root-grafting operation, cutting away 238 dying roots and grafting in new ones; the tree recovered fully by 1950 and has withstood typhoons and further stress since. This is a strong, specific, sourced 'witnessed history' beat, distinct from the planting legend, and worth leading the story with rather than the Emperor Keitai tale."
+  }
+]
