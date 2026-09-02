@@ -3315,3 +3315,157 @@ republishing their dataset, which we were never doing.
 that a free dataset ends up inside somebody's paid product. That objection is
 answered by what a project DOES rather than by what it promises, so the useful
 reply is to point at what is actually published and not to argue.
+
+## China: 古树名木 (ancient and famous trees), scouted at the national level and on Beijing, Shanghai, Guangzhou, Hangzhou, Nanjing, Suzhou: EMPTY, no account created, no licence to record (2026-09-02)
+
+> **CORRECTED THE SAME DAY, 2026-09-02, and the correction changes what a future
+> pass should do.** The verdict above says EMPTY, meaning no register exists to
+> find. That is right about a bulk machine-readable dataset and wrong about the
+> register, and the difference matters: EMPTY tells the next scout to stop
+> looking, and this does not.
+>
+> **Guangzhou publishes its ancient trees as a GAZETTE TABLE, which is the
+> Sweden shape.** The city has designated them in numbered batches by government
+> notice since 1985 (five batches; the fourth covers 315 trees, the fifth 268),
+> and the Bureau of Forestry and Landscaping published the full grade-two list on
+> 2024-07-11 at
+> `lyylj.gz.gov.cn/zwgk/sjfb/content/post_9756098.html`.
+> Fetched and parsed here: **156 trees in one inline HTML table**, columns
+> 序号, 编号 (a 17-digit register number), 每木类型, 县(区、市), 树种 (species),
+> 乡镇（街道）, 村（社区）, 小地名, 权属 (ownership), 估测树龄 (estimated age) and
+> 古树等级 (grade). Ages run 301 to 484 years. 94 of the 156 are lychee, 25 banyan.
+> Ownership is 137 集体 (collective) and 19 国有 (state), which speaks directly to
+> hard rule 10. **What it has no column for is coordinates**, though 小地名 is
+> unusually precise, down to "the fifth tree to the right of number 4".
+>
+> **THE LICENCE IS THE BLOCKER, not the data.** That site's own footer reads
+> `版权所有Copyright © 2018 广州市林业和园林局`, all rights reserved, with no open
+> licence anywhere. Under this project's rules that **disqualifies a bulk import**
+> and leaves the source usable only to FIND trees that are then verified from
+> elsewhere, exactly as Texas and Nevada are treated.
+>
+> So the honest China verdict is not "no register". It is: **the registers exist,
+> several are published as readable gazette tables, none carries an open licence,
+> and none carries coordinates.** A Chinese city is therefore ordinary
+> web-research work with an unusually good lead list to start from, and the thing
+> that would change that is permission rather than another search.
+> `gz.gov.cn` hangs to curl, WebFetch and a browser session alike; the
+> `lyylj.gz.gov.cn` subdomain serves the tables fine.
+
+
+Dispatched by Hidde after a Beijing verify pass reported the register's shape:
+tree-level data exists (species, age, height, girth, custodian unit, growth
+habits, historical significance) but sits behind a QR code on each tree's
+physical plaque, register-number format `110131A04650`, with no browsable
+portal found from that pass. This scout asked whether a bulk, licensed,
+account-free route exists anywhere in the country. It does not.
+
+**1. Is there a public, machine-readable or fetchable list? No, at every tier checked.**
+
+- **data.beijing.gov.cn** (the municipal open-data platform) loads fine to a
+  plain `curl -m 20` with a browser UA and its search/catalogue pages render.
+  The only dataset published by the 市园林绿化局 (Bureau of Landscaping and
+  Greening) anywhere on the platform is `乡镇林业站信息` (township forestry
+  station addresses, Pinggu district, 15 rows: station name and address only,
+  no trees). No `古树名木` or `名木` dataset exists on this platform under any
+  topic or agency facet reached. `yllhj.beijing.gov.cn`'s own `古树名木保护`
+  section (`sdlh/ylkj/yllhhyzjcxnew/gsmmbh/`) is a directory of protection
+  EXPERTS' names, not tree data.
+- **The QR/plaque system has no public index.** Each plaque's code resolves to
+  that one tree's record; no search found a browsable list of codes or a
+  guessable URL pattern that would let a code be resolved without physically
+  standing at the tree. Nothing was enumerated or scraped, per the brief's
+  instruction, because no pattern was even found to consider.
+- **The national tier is the same shape, one level up.** `全国古树名木智慧管理系统`
+  (the National Ancient and Famous Tree Smart Management System), launched
+  2023-09-25, is real and described in state media as covering "508.19万株"
+  (5,081,900 trees) nationally with per-tree map positioning and archive
+  lookup. No public URL for it was found anywhere, including on
+  forestry.gov.cn's own coverage of its launch; every description reads as a
+  professional/departmental tool for forestry staff, not a citizen-facing
+  portal. The third national census (mentioned in the brief) started June
+  2026 and will feed the same internal system.
+- **Five other major cities checked, all the same shape.** Guangzhou (9,961
+  registered trees), Nanjing (2,215), Suzhou (2,307), Hangzhou (28,952),
+  Shanghai (2,812) each run their own internal "一树一档" / "一张图" tree
+  management system, confirmed only through news coverage describing it as
+  informatised internal management, never as a public dataset. What each city
+  DOES publish openly is a **narrative showcase of a handful of named champion
+  trees**: Guangzhou's forestry bureau runs a `成果展示/古树名木保护` page
+  profiling individual famous trees one article each (泰山寺菩提树, 荔枝王,
+  etc.), and Beijing's own coverage (news outlets citing the WeChat account
+  "北京古树") profiles named trees with full plaque data (age, height, girth,
+  history) in running prose. These are **lead sources for individual city
+  passes, exactly the "does somebody NAME the trees" pattern this file's own
+  method section now runs on**, never a register: no coordinates, no bulk
+  download, one tree per article.
+- Guangzhou's own gazette-notice route (`关于公布广州市第五批古树名木的通知`,
+  a numbered "batch" announcement in the style that worked for Sweden's
+  decision documents) could not be tested: `gz.gov.cn` hung on both
+  `curl -m 20` and WebFetch (see fetch-blocklist note below). Whether these
+  batch notices name individual trees with coordinates in table form, the way
+  Guangdong's own "一张图/三清单" language implies they might, is unresolved
+  and worth one more try from a session that can reach the host.
+
+**2. Licence: nothing to license, so nothing is claimed.** The only concrete
+document read was data.beijing.gov.cn's own site-wide `法律声明` (Legal
+Statement, `gywm/mzsm/index.htm`), which is NOT a per-dataset "开放协议": the
+nav link labelled 开放协议 is mislabeled/broken and actually points at the
+site's feedback page (`hdfk/index.htm`), which itself only distinguishes
+`无条件开放数据集` (unconditionally open datasets, downloadable directly) from
+an implied conditional tier requiring application. The Legal Statement's
+operative sentences, read directly rather than summarised: `用户有权免费获取
+本网站所提供的所有政务数据资源，享有数据资源的非排他使用权；可自由利用、
+自由传播与分享，不得违反国家相关法律规定` ("users have the right to freely
+obtain all government data resources provided by this site, and hold a
+non-exclusive right of use; they may freely use, disseminate and share it,
+provided they do not violate relevant national laws") and `用户应在应用本网站
+政务数据资源所产生的成果中注明政务数据资源来源为"北京市公共数据开放平台"`
+("users must credit results built on this site's data resources to the
+'Beijing Municipal Public Data Open Platform'"). Read plainly: free,
+non-exclusive, redistributable, attribution required, no explicit
+non-commercial clause. **This is recorded for the next scout's benefit and is
+not a usable verdict for trees**, because there is no tree dataset on the
+platform for it to apply to. No licence document exists for anything else
+checked (Guangzhou's showcase page, the national smart-management system)
+because none of them publish a downloadable dataset at all.
+
+**3. Accounts: none created, none needed to reach what exists, and what would
+need one is out of reach anyway.** `data.beijing.gov.cn` shows 登录/新用户注册
+in its nav, but the one dataset found under 园林绿化局 downloaded via a plain
+`下载` link with no login prompt, consistent with the "无条件开放" tier being
+account-free; the conditional tier (which nothing tree-related sits in) would
+need a formal `数据申请` (data application), not attempted. The national smart
+management system and every municipal internal platform read as
+departmental/professional tools without any public registration route at all,
+which is a harder wall than a login: there is no account to request. No
+registration, login or terms-of-service acceptance was attempted anywhere in
+this pass.
+
+**Verdict: EMPTY.** China's 古树名木 designation is real, rich and exactly as
+described in the brief, but it is architected as a per-tree lookup system
+(plaque to QR to internal database) rather than a published register, at both
+the national and every city tier checked. The route into this country is NOT
+a register import; it is the lead-list technique the "does anybody NAME its
+trees" section of BRIEF_RESEARCH.md already codifies, applied to each city's
+own showcase pages, gazette batch-notices and news coverage, city by city, at
+ordinary web-research rates. Do not re-scout for a bulk China register without
+a new angle; a session that can reach `gz.gov.cn` could still check whether a
+批次公布 notice is a real per-tree table, which is the one thread left loose.
+
+### Fetch blocklist addition
+
+`gz.gov.cn`: hung on `curl -m 20` (exit 1, no connection within timeout) and
+on WebFetch (`socket hang up`) fetching a 2020 batch-notice page
+(`zwgk/fggw/szfwj/content/post_2833058.html`), seen 2026-09-02. The bureau's
+own subdomain `lyylj.gz.gov.cn` answered normally in under a second, so route
+around the `gz.gov.cn` main portal via bureau subdomains where possible.
+`m.bjnews.com.cn` refused a WebFetch (`ECONNREFUSED`) on one article,
+2026-09-02; cheap failure, not a hang, noted for completeness rather than as
+a hard block.
+
+### Cost
+
+One pass, WebSearch and curl/WebFetch only, no agent dispatch, roughly 45
+minutes. No trees delivered (none were sought; this was a scouting pass per
+the brief). Token estimate for the daily retro: ~55k tokens.

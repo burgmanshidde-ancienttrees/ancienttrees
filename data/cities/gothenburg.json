@@ -1,0 +1,197 @@
+{
+  "city": "Gothenburg",
+  "country": "Sweden",
+  "status": "needs_curation",
+  "intro": "Gothenburg protects its old trees one order at a time, and until recently it barely bothered. For eighty years a single lime in a churchyard on Hisingen carried the city's only nature monument order, granted in 1945. In October 2025 four oaks in Orgryte joined it, boundary trees that once marked the divisions between farms and now stand between houses, on a footpath and beside a main road. One of them has a parcel of land to itself, and every one of the five is free to walk up to.",
+  "meta_description": "Gothenburg's oldest tree is a thousand-year linden on Hisingen, protected since 1945. Four boundary oaks in Orgryte joined it in October 2025.",
+  "question_meta": "The Thousand-Year Linden of Torslanda, roughly 800 to 900 years old, is Gothenburg's oldest tree. Where it stands, and how to reach it.",
+  "question_answer": "The oldest tree in Gothenburg is the Thousand-Year Linden in the churchyard at Torslanda on Hisingen, a multi-stemmed lime that the sources put at roughly 800 to 900 years old despite the name. It stands beside Torslanda church, about 25 to 35 minutes from the centre by bus, and it has been protected as a nature monument since 1945, for eighty years the only tree in the city with that status.",
+  "question_context": "The thousand in the name comes from the church rather than from the tree. The oldest parts of Torslanda kyrka date from the late eleventh or early twelfth century, and local tradition has long held that the lime beside it went in at the same time. The sources that have examined it more carefully, Swedish Radio and the parish among them, put the age nearer 800 to 900 years, which still leaves it the oldest thing on this page. It is not a single trunk. Centuries of cutting back left it regrowing from the stool, so it stands as a cluster of stems, nine of them by one old description, and one of those came down across Kongahallavagen in an autumn storm in 2024 and struck a passing car. The driver was unhurt, and the tree has been under active management since. The runners-up are oaks rather than limes: four boundary trees in Orgryte, one of them over six metres round and at least 500 years old, all protected in October 2025. Reaching the linden means a bus to Torslanda torg and a short walk to the churchyard, which is small enough that the tree is easy to find.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Gothenburg?",
+      "a": "The Thousand-Year Linden in Torslanda churchyard on Hisingen, which sources put at roughly 800 to 900 years rather than the thousand of its name. It has been a protected nature monument since 1945."
+    },
+    {
+      "q": "Are Gothenburg's ancient trees free to visit?",
+      "a": "Yes, all of them. The linden stands in a churchyard open in daylight hours, and the four Orgryte oaks stand on residential streets, a public footpath and a road verge, with nothing to pay and no gate to pass."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "The four Orgryte oaks sit within about a kilometre of each other and make a short walk between the streets and the edge of the Delsjon woods. The linden is on Hisingen and is a separate trip, 25 to 35 minutes from the centre by bus."
+    },
+    {
+      "q": "What is a boundary oak?",
+      "a": "A gransek: a tree left standing on the line between two farms to mark it, in the centuries before wire and fences. The farms out at Orgryte were broken up in the 1800s and the city grew over their fields, but the oaks that held the corners are still there."
+    }
+  ],
+  "oldest_tree_id": "got_001",
+  "trees": [
+    {
+      "id": "got_001",
+      "name": "The Thousand-Year Linden of Torslanda",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 800 to 900 years, locally called the Thousand-Year Linden",
+      "age_min": 800,
+      "age_max": 900,
+      "girth_cm": null,
+      "location": {
+        "address": "Torslanda kyrkogard, Torslanda kyrkvag 1, 423 32 Torslanda, Goteborg",
+        "latitude": 57.7250417,
+        "longitude": 11.769056,
+        "neighbourhood": "Torslanda, Hisingen"
+      },
+      "story": "For eighty years this was the only tree in Gothenburg with a nature monument order on it. The county board made it a naturminne in 1945, and nothing else in the city joined it until four boundary oaks in Orgryte were designated in October 2025.\n\nLocally it is the Thousand-Year Linden, and the thousand comes from the church rather than from the tree. The oldest parts of Torslanda kyrka go back to the late eleventh or early twelfth century, and tradition has long held that tree and building arrived together. The sources that have looked hardest, Swedish Radio and the parish among them, put it nearer 800 to 900 years, which is old enough without the folklore.\n\nIt does not grow as one trunk. Centuries of cutting back left it regrowing from the stool, and it has carried several stems for as long as anyone has described it, nine of them by one old account. One of those stems came down in an autumn storm in 2024, fell across Kongahallavagen and struck a passing car. The driver was unhurt. A further section left hanging over the road was taken off afterwards, so expect a tree being actively worked on rather than left to itself.\n\nWhich lime it is, nobody has recorded. If you know the leaf, tell us.",
+      "how_to_recognise": "The multi-stemmed lime in the churchyard, several trunks rising from one low base rather than a single stem.",
+      "verified_sources": [
+        "https://www.svenskakyrkan.se/gbs/nyheter/stormen-skadade-tusenariga-linden-pa-torslanda-kyrkogard",
+        "https://www.sverigesradio.se/artikel/tusenariga-linden-i-torslanda-kan-bli-dubbelt-sa-gammal",
+        "https://www.svenskakyrkan.se/gbs/torslanda-kyrkogard"
+      ],
+      "access": "Free, churchyard open in daylight hours",
+      "transport": "Bus X1 from Lindholmen or bus 29 from Goteborg Centralstation to Torslanda torg, then short walk; roughly 25-35 minutes from central Goteborg",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "got_002",
+      "name": "Skarseken",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": null,
+      "location": {
+        "address": "Skarsgatan near Drakenbergsgatan, Orgryte, Goteborg",
+        "latitude": 57.6965,
+        "longitude": 12.0085,
+        "neighbourhood": "Orgryte"
+      },
+      "story": "Goteborgs-Posten calls this the only giant tree in Gothenburg with a plot of its own, and it means that literally: Skar 751:93 is a parcel of land that exists for an oak rather than for a building. On 14 October 2025 the city made the arrangement formal and declared the tree a naturminne, a nature monument, one of four oaks in Orgryte designated that day.\n\nGiant tree is a category here rather than a compliment. The county board of Vastra Gotaland applies it to trunks more than a metre through, and it rates this one sarskilt skyddsvart, specially worth protecting, standing inside an area the county has singled out for exactly such trees.\n\nSkarseken is a gransek, a boundary oak. Before the 1800s the farms out here, Garda and Stora Torp among them, marked their lines with trees instead of fences, and the oaks outlived the boundaries, then the farms, then the fields themselves. The city arrived, the streets bent around them, and the lines they hold are now nobody's. The city puts the four somewhere between 300 and 500 years old.\n\nNo girth has ever been published for this one. If you bring a tape measure, we would like the number.",
+      "how_to_recognise": "The one heavy old oak standing alone on its own small square of ground between the houses, much thicker than anything planted around it.",
+      "verified_sources": [
+        "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
+        "http://www5.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/3df03eb0d7ffce02c1258d0900487fc4/$FILE/Bilaga%203.pdf",
+        "https://www.gp.se/nyheter/goteborg/eken-i-skar-goteborgs-enda-jattetrad-med-egen-tomt.f07dd41f-1d9d-498f-be38-9e0c7942af6c"
+      ],
+      "access": "Free, standing on a residential street in Orgryte, viewable from public road",
+      "transport": "Tram to Danska vagen or Redbergsplatsen then short walk; roughly 15-20 minutes from central Goteborg",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "got_003",
+      "name": "Granseken (the Delsjovagen boundary oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "at least 500 years",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 600,
+      "location": {
+        "address": "Delsjovagen, near Skarsgatan, Orgryte, Goteborg",
+        "latitude": 57.6975,
+        "longitude": 12.0095,
+        "neighbourhood": "Orgryte"
+      },
+      "story": "A crash barrier was growing into the trunk of Gothenburg's largest oak. That was one of the complaints the citizens' network Tradplan Goteborg raised about this tree: a guardrail pressing on the bark, a branch taken off carelessly enough to leave fungal decay showing, and a heavy callus where the oak was trying to close the wound. They campaigned for it to be protected. On 14 October 2025 the city declared it a naturminne, a nature monument, one of four boundary oaks in Orgryte given that status the same day.\n\nIt measures over six metres round at chest height and is at least 500 years old, which makes it the largest oak in the city. A 1951 depiction of it called it the thousand-year oak. That figure is local affection rather than a measurement, and nobody has stood behind it since.\n\nGransek means boundary oak. This one marked the line between farms such as Garda and Stora Torp until the 1800s, and it was already old when it was handed that job. Delsjovagen came later and now runs past its feet, which is where the barrier comes in. How much live crown it carries today nobody has published; the protection order is the most recent word on it.",
+      "how_to_recognise": "The enormous oak at the edge of Delsjovagen near the Skarsgatan end, far bigger than anything around it, with the road barrier running close past its trunk.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are down and the whole frame of the trunk shows"
+      },
+      "verified_sources": [
+        "http://www.tradplangoteborg.se/radda_granseken/",
+        "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
+        "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448"
+      ],
+      "access": "Free, standing beside Delsjovagen, viewable and reachable from the public road/verge",
+      "transport": "Tram to Danska vagen or bus toward Delsjon then short walk; roughly 15-20 minutes from central Goteborg",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "got_004",
+      "name": "The Skogshagestigen boundary oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": null,
+      "location": {
+        "address": "Skogshagestigen, near Delsjogrillen (Delsjovagen 53), Orgryte, Goteborg",
+        "latitude": 57.6997,
+        "longitude": 12.0128,
+        "neighbourhood": "Orgryte"
+      },
+      "story": "When Gothenburg turned four oaks into nature monuments on 14 October 2025, this is the tree everybody stood under. The ceremony was held here, on the path called Skogshagestigen a few minutes from the Delsjon grill, and the four were designated as a set rather than one at a time.\n\nIt has no name. Only Skarseken among the four carries one, and this oak is described by the path it stands beside, which is the ordinary fate of a gransek, a boundary oak. These trees marked the divisions between farms out here until the 1800s, doing the work a fence does, and most of them were never called anything at all. The city gives the group an age of 300 to 500 years and no individual figures.\n\nOf the four this is the one to build an afternoon around. Delsjon's woods and lakes begin a few minutes further along, so the oak stands at the seam where Orgryte's streets stop and the recreation ground starts, which is a better place to be standing under a five-hundred-year-old tree than a residential kerb.\n\nNo girth, no height, no dated age. If you measure it, we will take the number.",
+      "how_to_recognise": "The big old oak beside the Skogshagestigen footpath, a short walk uphill from the grill at Delsjovagen 53.",
+      "verified_sources": [
+        "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
+        "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448"
+      ],
+      "access": "Free, on a public path (Skogshagestigen) near the Delsjon recreation area",
+      "transport": "Bus toward Delsjon/Skatas then short walk; roughly 20 minutes from central Goteborg",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "got_005",
+      "name": "The Laboratoriegatan boundary oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": null,
+      "location": {
+        "address": "Laboratoriegatan, near Sankt Sigfridsgatan, Orgryte, Goteborg",
+        "latitude": 57.6938,
+        "longitude": 12.0022,
+        "neighbourhood": "Orgryte"
+      },
+      "story": "This oak was a property line before Laboratoriegatan was a street. It is one of Orgryte's gransekar, the boundary oaks that marked the divisions between farms out here until the 1800s, when the land was broken up and the district filled in around them with houses and street names. The tree stayed where it was. The line it holds has not been a line for two centuries.\n\nOn 14 October 2025 Gothenburg declared four of these oaks naturminnen, nature monuments, and this is the westernmost of them, standing on a residential street near Sankt Sigfridsgatan. Before that day the city held exactly one such order, on a lime in Torslanda churchyard protected in 1945, so this is recognition that arrived several centuries late.\n\nThe city gives the four an age of 300 to 500 years and stops there. Nobody has published a girth for this one, or a height, or a name; among the four only Skarseken has ever been called anything in particular. It is the least documented tree on this page and it has outlasted every farm, fence and owner that ever had a use for it.",
+      "how_to_recognise": "The heavy old oak on Laboratoriegatan near the Sankt Sigfridsgatan end, much thicker in the trunk than the street trees along it.",
+      "verified_sources": [
+        "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
+        "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448"
+      ],
+      "access": "Free, on a residential street (Laboratoriegatan) in Orgryte, viewable from public road",
+      "transport": "Tram to Danska vagen or Olskrokstorget then short walk; roughly 15-20 minutes from central Goteborg",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
