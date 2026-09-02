@@ -765,3 +765,53 @@ alternates) and `alltrails.com/parks/us/california/yosemite-national-park`
 not usable as a reference here: its page is behind a consent wall and its globe
 control covers language, currency and region together, which is a different
 problem from ours.
+
+---
+
+## A profile page, and where settings sit (2026-09-02)
+
+**Reference: Polarsteps' own profile, and our app's My trees screen.** Hidde
+put the two side by side and asked for the same shape on the web. What both do,
+in this order: the avatar and name, a small follow line, a row of counts, one
+primary action, then the person's lists as tabs. Settings are NOT on the page.
+They sit behind a gear in the top corner and open a screen of their own.
+
+Polarsteps: avatar, name, `51 Landen / 21 Volgers / 24 Volgend`, a red "Voeg een
+reis toe" button, then Reizen / Statistieken as tabs. Read from
+polarsteps.com/HiddeBurgmans, 2026-09-02.
+
+Strava, AllTrails and Airbnb are the same shape, and it is the shape our own
+`Collect.swift` already had. What the website had instead was a sign-in card
+first, then account admin, a name editor and a delete panel stacked around the
+trees, which is the fault Hidde found in the app on 2026-08-21 ("my first button
+I see is to sign out or delete accounts") surviving a fortnight longer here.
+
+**The counts are the app's counts, not new ones**: trees you have stood in
+front of plus the ones you added, the species among them, the countries. Taken
+from Collect.swift so two surfaces cannot answer the same question differently.
+
+**What differs per surface, and only this**: adding a tree is a camera sheet on
+the phone and the contribute form on the web, because a laptop has no camera in
+a park. The behaviour matches, the design does not have to (CLAUDE.md's
+both-surfaces rule).
+
+---
+
+## A feature that lives in the app only (2026-09-02)
+
+**Reference: our own AppModal, which already followed AllTrails.** When the
+website carries a control for something only the app does, the control opens
+the one app overlay. It does not navigate to a teaser page, and it does not
+sometimes do one and sometimes the other: a control that behaves two ways is
+two controls.
+
+This settled the walks. They are the Plus product, so a web page showing the
+route undercuts what is sold and a web page teasing it half-delivers. Hidde:
+"stuur ze maar gewoon naar de app. Dan kunnen we zien hoe vaak het wordt geklikt
+en gaan we dan maar snel die walks in de app maken." The tap count is the point:
+it is what times the work in the app.
+
+**The honesty half, which is ours rather than borrowed**: a page may only
+mention the feature where it genuinely exists. `hasWalksPage()` gates whether
+the word "walk" appears at all, so we never advertise a route the app does not
+have. Enforced by `check_walks_go_to_the_app()` in scripts/qa.py.

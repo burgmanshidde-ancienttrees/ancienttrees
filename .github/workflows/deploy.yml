@@ -10,9 +10,23 @@ permissions:
   pages: write
   id-token: write
 
+# A PUSH MAY CANCEL A PUSH; A DISPATCHED BUILD FINISHES. Same fault and same
+# fix as ios.yml on 2026-08-25, appearing here on 2026-09-02: eleven builds in
+# a row were cancelled between 17:31 and 17:48, one every one to three minutes,
+# because a night run doing verify passes commits its claims and releases
+# faster than a build takes. A build takes eight minutes, so not one of them
+# could ever finish and the site quietly stopped deploying. Nothing failed;
+# there was simply never a verdict.
+#
+# Cancelling a superseded PUSH is still right: judging a commit that has
+# already been replaced costs a runner ten minutes and tells nobody anything.
+# What was wrong is that there was no way to ask for a build that survives the
+# next commit. A dispatched run gets a group of its own and is never cancelled,
+# so a person (or an agent that has just pushed something it needs to verify)
+# can always get an answer: gh workflow run deploy.yml
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: pages-${{ github.event_name == 'workflow_dispatch' && 'manual' || 'push' }}
+  cancel-in-progress: ${{ github.event_name != 'workflow_dispatch' }}
 
 jobs:
   build:
