@@ -110,7 +110,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     {photo && photo.url ? (
       <figure class="tree-photo">
         <img {...imgSrcset(photo.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px", photoDims(photo).width, photoDims(photo).height)} alt={x.name} loading="lazy" />
-        {creditRequired(photo.license) && <figcaption>Foto: {creditText(photo.attribution, photo.license)}</figcaption>}
+        {creditRequired(photo.license) && <figcaption>{U.photoCredit(creditText(photo.attribution, photo.license) ?? "")}</figcaption>}
       </figure>
     ) : (
       <figure class="tree-noph">
