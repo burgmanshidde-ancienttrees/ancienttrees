@@ -411,14 +411,6 @@
    "trees": 6
   },
   {
-   "city": "San Francisco",
-   "country": "United States",
-   "slug": "san-francisco",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 6
-  },
-  {
    "city": "Sorrento",
    "country": "Italy",
    "slug": "sorrento",
@@ -779,14 +771,6 @@
    "trees": 0
   },
   {
-   "city": "Rio de Janeiro",
-   "country": "Brazil",
-   "slug": "rio-de-janeiro",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 6
-  },
-  {
    "city": "Funchal",
    "country": "Portugal",
    "slug": "funchal",
@@ -958,6 +942,14 @@
    "slug": "helmond",
    "status": "published",
    "trees": 7
+  },
+  {
+   "city": "San Francisco",
+   "country": "United States",
+   "slug": "san-francisco",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
   },
   {
    "city": "Tel Aviv",
@@ -1194,6 +1186,14 @@
    "status": "published",
    "demand_views_90d": 34962,
    "trees": 4
+  },
+  {
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "slug": "rio-de-janeiro",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 6
   },
   {
    "city": "Vancouver",
