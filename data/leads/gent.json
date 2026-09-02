@@ -1,0 +1,48 @@
+{
+ "city": "Ghent",
+ "leads": [
+  {
+   "candidate": "Opgaande bruine beuk bij Klein Begijnhof Onze-Lieve-Vrouw-Ter-Hoye (register object 131363)",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "location": {
+    "latitude": 51.046264,
+    "longitude": 3.73744,
+    "address": "Lange Violettestraat, Gent"
+   },
+   "girth_cm": 265,
+   "reason": "Access uncertain, not confirmed private. Register text: the garden this beech stands in was the walled ('ommuurde') private garden of the grootjuffer (the beguinage's directress), and is 'nu ingericht als park voor de begijnhofbewoners' (now laid out as a park FOR THE BEGUINAGE RESIDENTS), distinct from the beguinage's main courtyard which nl.wikipedia confirms remains a public tourist attraction ('blijft het Klein Begijnhof een toeristische trekpleister'). Two attempts to find a source confirming whether visitors may enter this specific garden (as opposed to the main courtyard) returned nothing usable in the time available. Do not ship until this is resolved: either confirm the garden is open to visitors, or confirm it is resident-only and block it."
+  },
+  {
+   "candidate": "Opgaande bruine beuk bij Klein Begijnhof Onze-Lieve-Vrouw-Ter-Hoye (register object 131367)",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "location": {
+    "latitude": 51.046739,
+    "longitude": 3.737189,
+    "address": "Lange Violettestraat, Gent"
+   },
+   "girth_cm": null,
+   "reason": "Same garden, same access question as 131363; standing next to a white horse chestnut per the register."
+  },
+  {
+   "candidate": "Koningslinde als herdenkingsboom, Citadelpark (register object 306482)",
+   "species": "Common Lime (Tilia x europaea 'Pallida')",
+   "location": {
+    "latitude": 51.036954,
+    "longitude": 3.719089,
+    "address": "Paul Bergmansdreef, Citadelpark, Gent"
+   },
+   "girth_cm": null,
+   "reason": "Not researched to full verification this pass, ninth candidate beyond this pass's four-name limit. Public park (Citadelpark), planted 1990 for King Boudewijn's 60th birthday/40th reign anniversary, so genuinely young (36 years) with a real but modest historical-significance case. Worth a look in a later pass if the city needs to grow past six; not a rejection on the merits, just not reached."
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Bomenrij van gekandelaarde linden Klein Begijnhof Onze-Lieve-Vrouw ter Hoye (register object 131358)",
+   "reason": "A row of pleached limes, not a single collectible point. An avenue/row is explicitly excluded by the project's ensemble rule."
+  },
+  {
+   "candidate": "Bomenrij van gekandelaarde linden Klein Begijnhof Onze-Lieve-Vrouw ter Hoye (register object 131359)",
+   "reason": "Same reason: a U-shaped row of 29 pleached limes bordering the central lawn, not a single point to stand at."
+  }
+ ]
+}
