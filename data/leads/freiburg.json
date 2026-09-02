@@ -1,0 +1,72 @@
+{
+  "city": "Freiburg im Breisgau",
+  "leads": [
+    {
+      "name": "Lutherlinde",
+      "species": "Lime/Linden (Tilia)",
+      "location": {"latitude": 47.99209, "longitude": 7.81723},
+      "reason": "Wikidata Q58015520 lead, and matches LUBW register id 83110000045 (RIPS 3119013000138, designated 1974-05-02) almost exactly via the de.wikipedia Naturdenkmal list join. Register + Wikidata corroborate existence and coordinates, but no second source with actual descriptive facts (age, story, why 'Luther') was found this pass; WebSearch turned up nothing specific to this tree despite several tries. Also about 3.4 km west of the Altstadt centre, outside the walkable cluster. Worth a targeted search next time for 'Lutherlinde Freiburg' combined with the street/neighbourhood once known, or a direct look at the RIPS steckbrief page (rips-dienste.lubw.baden-wuerttemberg.de, id=3119013000138), which loaded fine for other trees this pass but was not checked for this one due to time."
+    },
+    {
+      "name": "Bergahorn, Ecke Hildastraße/Urachstraße",
+      "species": "Sycamore Maple (Acer pseudoplatanus)",
+      "location": {"latitude": 47.985132, "longitude": 7.854130},
+      "reason": "Well documented: planted around 1940, 13 m crown, girth over 2 m, was 'Baum des Jahres' locally, designated Naturdenkmal 2011-01-28 (register id 83110000135, RIPS 3119013000225; Freiburg Amtsblatt article + badische-zeitung 'Nasenzwickerle unter Denkmalschutz', 2009, as sources). BLOCKED ON ACCESS, not evidence: freiburg-schwarzwald.de states plainly it stands 'auf dem Grundstück des Erzbischöflichen Ordinariats in der Hildastraße 65, dem jetzigen Bürogebäude des Erzbischöflichen Bauamtes' (on the grounds of the Archbishopric's own office building), opposite the old Wiehre train station. That reads as institutional/private office grounds rather than a plainly public street tree, and no source confirms public access. Worth checking with an OSM access-tag query (per the Ypres technique in BRIEF_RESEARCH.md) or a street-view look before a future pass ships it."
+    },
+    {
+      "name": "1 Kaukasische Flügelnuss",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "location": {"latitude": 47.989976, "longitude": 7.848369},
+      "reason": "Confirmed as a real, current LUBW register entry (id 83110000161, RIPS steckbrief 3119013000252, designated 2021-10-29, verified by fetching the RIPS page directly). A rare, distinctive species and close to the Altstadt (~0.7 km). No second source with descriptive facts, address or access details found this pass; the RIPS steckbrief itself carries no description text ('kein Dokument zu diesem Objekt vorhanden'). Worth a dedicated search next time, possibly for the exact street via the Amtsblatt vom 5.11.2021 announcement."
+    },
+    {
+      "name": "1 Mammutbaum, Schubertstraße / Franz-Liszt-Straße",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "location": {"latitude": 48.01289, "longitude": 7.859815},
+      "reason": "Register entry only (id 83110000129, RIPS 3119013000219, designated 2011-01-28), ~2 km north of centre. Not searched this pass for a second source due to the time box; a promising named-street candidate for a follow-up."
+    },
+    {
+      "name": "1 Tulpenbaum, Kartäuserstraße",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "location": {"latitude": 47.99258, "longitude": 7.8687},
+      "reason": "Register entry only (id 83110000132, RIPS 3119013000222, designated 2011-01-28), ~1.7 km east of centre. Not searched this pass for a second source; follow-up candidate."
+    },
+    {
+      "name": "Linden am Kapellenweg (Wiehre)",
+      "species": "Lime/Linden (Tilia)",
+      "location": null,
+      "reason": "freiburg-schwarzwald.de (reproducing a 2009 badische-zeitung piece) names these as Freiburg's OLDEST Naturdenkmal trees, dating from 1645 in the Thirty Years' War era, on the Kapellenweg in the Wiehre district. Could not match a specific register entry/coordinate to this address in the time available; several 'Linde'/'Sommerlinde' entries in the LUBW list sit in the general Wiehre area (e.g. ids 83110000003, 83110000017) and one of them is very likely this. Worth resolving with a targeted RIPS steckbrief check or a direct search for 'Kapellenweg Freiburg' street location next pass; this is potentially the single best find in the whole city given its documented age."
+    },
+    {
+      "name": "Platane an der Kartaus",
+      "species": "Plane (Platanus)",
+      "location": null,
+      "reason": "freiburg-schwarzwald.de: Freiburg's TALLEST Naturdenkmal, at least 38 m, in the Kartaus/Littenweiler area on the eastern edge of the city. A direct RIPS steckbrief URL was found in search results (id=2229013000033, a different id prefix from the rest of Freiburg's register, suggesting it may sit just over the municipal boundary in a neighbouring Gemeinde such as Ebnet or Kirchzarten and needs its Gemeinde field checked before treating it as a Freiburg tree). Not fetched this pass; follow-up candidate, but check the municipality first."
+    },
+    {
+      "name": "Mammutbaum an der Starkenstraße",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "location": null,
+      "reason": "freiburg-schwarzwald.de: Freiburg's MOST MASSIVE Naturdenkmal by girth, 7 m trunk circumference, from the 19th century, on Starkenstraße. Not matched to a register coordinate or searched for a second source this pass; strong follow-up candidate given the girth figure alone would support a solid age estimate."
+    },
+    {
+      "name": "Bergahorn auf dem Kybfelsen",
+      "species": "Sycamore Maple (Acer pseudoplatanus)",
+      "location": null,
+      "reason": "freiburg-schwarzwald.de: called the most 'urwüchsig' (primeval-looking) Naturdenkmal, about 220 years old, on the Kybfelsen (a rock outcrop, possibly near the Kyburg viewpoint on the route to Waldtraut vom Mühlwald in Günterstal, unconfirmed). Not matched to a register coordinate this pass."
+    },
+    {
+      "name": "Herdermer Eichhalde oak stand",
+      "species": "Oak (Quercus sp.)",
+      "location": null,
+      "reason": "freiburg-schwarzwald.de: a stand of oaks that gave the street 'Eichhalde' its name in the Herdern district, designated as a group Naturdenkmal in 2006 after local advocacy (a 'Bürgerinitiative Zähringer Eiche' page also references a 350-year-old oak felled nearby, worth disentangling from this one). Not matched to a register coordinate this pass; also reads as more of a stand than a single collectible point, so may not pass the ensemble test even if pinned down."
+    },
+    {
+      "name": "2 Mammutbäume, 1 Lebensbaum, 1 Douglasie, 1 Zeder (conifer group)",
+      "species": "Mixed conifers",
+      "location": {"latitude": 47.976398, "longitude": 7.897307},
+      "reason": "Register group entry (id 83110000116, RIPS 3119013000203, designated 1998-03-24). A WebSearch AI summary claimed this group stands inside the Alter Friedhof cemetery, but the coordinates are about 3 km from the Alter Friedhof's own FND coordinates (48.0009867, 7.8575983), so that claim does not survive checking and was DISCARDED (the exact 'search summary is a lead, never a source' trap named in BRIEF_RESEARCH.md). Real location and setting unconfirmed; needs its own search before use."
+    }
+  ],
+  "blocked": []
+}
