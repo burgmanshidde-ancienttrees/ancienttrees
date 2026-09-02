@@ -420,7 +420,24 @@ jobs:
   floor:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: macos-15
-    timeout-minutes: 90
+    # Measured on the scheduled run of 2026-09-02, which finished every step
+    # and was killed anyway: 09:23:38 to 10:57:51 is 94 minutes against a
+    # ceiling of 90. It reads as "cancelled", so the alarm said the app gate
+    # never passes while the truth was that its verdict never arrived.
+    #
+    # Where the time goes on the floor, from that run:
+    #   iOS 18 runtime, cached                     11 s
+    #   build and test on the floor                20 min
+    #   RefusedWalk                                 9 min
+    #   appfit on iOS 18                           43 min
+    #   appsweep screenshots                       22 min
+    #
+    # 150 leaves real headroom, and it costs nothing: the repository is public,
+    # so Actions minutes are free, and this job runs twice a day rather than on
+    # every push. The growth item is appfit at 43 minutes, which is longer than
+    # the build; when it passes an hour, split THIS job the way test and look
+    # were split rather than raising the number again.
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
 
