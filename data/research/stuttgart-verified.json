@@ -1,0 +1,146 @@
+[
+  {
+    "id": "stu_001",
+    "name": "The Bernhardskirche Linden",
+    "species": "Winter Linden (Tilia cordata)",
+    "age_estimate": "roughly 150 years",
+    "age_min": 140,
+    "age_max": 165,
+    "girth_cm": null,
+    "location": {
+      "address": "Rohrackerstr. 257, 70329 Stuttgart-Rohracker",
+      "latitude": 48.75659,
+      "longitude": 9.23043,
+      "neighbourhood": "Rohracker"
+    },
+    "verified_sources": [
+      "https://www.hedelfingen-rohracker-evangelisch.de/unsere-kirchen/bernhardskirche-in-rohracker",
+      "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000105"
+    ],
+    "access": "In the garden of the Bernhardskirche in Rohracker; open to visitors during the day, free, no ticket.",
+    "transport": "Bus 62 to the Rohracker stop, then a short walk",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Official Naturdenkmal, designated 24-06-2003 (Amtsblatt Stadt Stuttgart Nr. 29, 17.07.2003), register no. 81110000075 / 81110001703 (both the Wikipedia join and the LUBW steckbrief carry two register ids at identical coordinates for this same tree; treated as one entry rather than two, a likely renumbering in the register rather than a second tree, since the ordinance PDF (stuttgart.de/medien/ibs/3-8.pdf, entry 17/3) lists only one Winterlinde an der Bernhardskirche at Rohrackerstr. 257). Protection reasons given: Eigenart (character), Tierbiotop (animal habitat). Second source is the parish's own history page (fetched directly, not a search summary): the Bernhardskirche was built after 1447, and the page states plainly that the linden in the garden is said to have been planted in 1870, giving roughly 150-155 years as of 2026. This is a documented planting date for this specimen, not a bridge from the church's general age, so it counts as a derived estimate. The church calls its own garden a place to linger, with the linden as its shade tree, supporting open public access alongside the churchyard."
+  },
+  {
+    "id": "stu_002",
+    "name": "The Hutteneiche",
+    "species": "Oak (Quercus sp.), exact species not established",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Vaihinger Wald, Rohrer Höhe, near the A8, Stuttgart-Vaihingen",
+      "latitude": 48.72217,
+      "longitude": 9.07677,
+      "neighbourhood": "Vaihingen"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Hutteneiche",
+      "https://www.komoot.com/highlight/628698"
+    ],
+    "access": "In the public Vaihinger Wald, a working state forest open to walkers; a signpost erected in the forest in January 2013 points visitors toward the tree from the main path.",
+    "transport": "S-Bahn to Stuttgart-Vaihingen or Rohr, then a walk into the forest",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Not on the official 89-entry Naturdenkmal list (checked against the LUBW/Wikipedia join and the city's own designation ordinance, neither names it), so it qualifies on historical significance rather than official designation. Wikipedia (de.wikipedia.org/wiki/Hutteneiche) and an independent komoot trail entry both carry the same story: on 7 May 1515 Duke Ulrich of Wurttemberg killed his stable master Hans von Hutten during a hunting party after a dispute, reputedly over the duke's pursuit of Hutten's wife, and is said to have hung the body from this oak. A city signboard naming the tree was put up in the forest in January 2013. DO NOT read the 1515 date as the tree's age: no source claims the standing tree is the same individual from 1515, only that the story is attached to this spot, so age is left unset rather than bridged from the legend. The komoot entry (a 2018 visitor note) says the tree sits about 130 metres off the marked path from the signpost, southeast; it is unclear whether the Wikidata/Wikipedia coordinate marks the signpost or the tree itself, which is why location_precision is approximate rather than confirmed despite having a specific point. No girth or recent condition source found this pass; flagged for that and for the coordinate ambiguity, not for the tree's existence, which two sources independently confirm."
+  },
+  {
+    "id": "stu_003",
+    "name": "The Max-Eyth-See Oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Max-Eyth-See lakeside park, Mühlhausen/Hofen, Stuttgart",
+      "latitude": 48.83698,
+      "longitude": 9.21885,
+      "neighbourhood": "Mühlhausen/Hofen"
+    },
+    "verified_sources": [
+      "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+      "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_am_Max-Eyth-See_Stuttgart.jpg"
+    ],
+    "access": "In the public lakeside park around the Max-Eyth-See, a free and heavily used recreation area with paths all around the lake; open at all times, no ticket.",
+    "transport": "Stadtbahn U14 to the Max-Eyth-See stop, a few minutes' walk",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Official Naturdenkmal (register no. 81110001103, city ordinance entry 11/3, Muhlhausen/Hofen, Flurstuck 330), designated 24-06-2003, protection reason: Eigenart (character), used as a Tierbiotop (animal habitat); the city's own ordinance PDF requires an annual safety and health check of the tree. Second source is a Wikimedia Commons photograph taken 21 May 2022 and geotagged at 48.837154, 9.218594, within about 5 metres of the register/Wikidata coordinate, titled and captioned with the exact Naturdenkmal name, which is dated recent evidence the tree was standing and photographed within the last few years, per the aerial/photo evidence rule. Max-Eyth-See itself is Stuttgart's largest recreational lake, created in 1935 from a former gravel quarry, under landscape protection since 1961, with up to 15,000 visitors on a weekend (de.wikipedia.org/wiki/Max-Eyth-See); the article describes the surrounding grounds as having old trees and lawns but does not name this oak specifically, so it is not counted as a source, only as context. No age or girth source found this pass; left empty rather than guessed."
+  },
+  {
+    "id": "stu_004",
+    "name": "The Oberdorfplatz Mulberry",
+    "species": "Mulberry (Morus sp.)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Oberdorfplatz, 70567 Stuttgart-Möhringen",
+      "latitude": 48.72611,
+      "longitude": 9.14459,
+      "neighbourhood": "Möhringen"
+    },
+    "verified_sources": [
+      "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+      "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Maulbeerbaum_Oberdorfplatz.jpg"
+    ],
+    "access": "On Oberdorfplatz, a public square in the old village centre of Möhringen; free, open at all times.",
+    "transport": "Stadtbahn to Möhringen Rathaus, short walk",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Official Naturdenkmal (register no. 81110002203, city ordinance entry 22/3, Möhringen, Flurstucke 212/3, 199/4, 157), designated 24-06-2003, protection reasons: Eigenart (character), Seltenheit (rarity), kulturell (cultural significance), which is a rarer set of reasons than the usual Eigenart/Tierbiotop pairing and marks the species itself, not just the individual tree, as notable in this register. Second source is a Wikimedia Commons photograph taken 27 March 2017, captioned with the exact register number and 'Stuttgart-Möhringen', confirming the tree by name and place though the photo predates this pass by several years and no more recent sighting was found. Oberdorfplatz is confirmed as a real public square address in Möhringen (postal code 70567) via street-address listings. Species recorded only as mulberry, not black vs white; left as Morus sp. rather than guessed. No age or girth source found."
+  },
+  {
+    "id": "stu_005",
+    "name": "The Bald Cypresses of the Kurpark",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Kurpark, Bad Cannstatt, Stuttgart",
+      "latitude": 48.80782,
+      "longitude": 9.22327,
+      "neighbourhood": "Bad Cannstatt"
+    },
+    "verified_sources": [
+      "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+      "https://commons.wikimedia.org/wiki/File:Sumpfzypressen_im_Kurpark_Nr._81110001301.jpg"
+    ],
+    "access": "In the Kurpark in Bad Cannstatt, a free public park; open at all times, no ticket.",
+    "transport": "Stadtbahn to Bad Cannstatt, short walk through the Kurpark",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Official Naturdenkmal (register no. 81110001301, city ordinance entry 13/1, Bad Cannstatt, Flurstuck 184/1), designated 24-06-2003, protection reasons: Eigenart (character), Seltenheit (rarity) - bald cypress is not native and uncommon as a designated tree here, which is presumably why three specimens together earned protection. Second source is a Wikimedia Commons photograph captioned with the exact register number, but it is dated 9 May 2017, about nine years old, and a search this pass for anything more recent on the Kurpark's tree stock (Stuttgarter Nachrichten pieces on Kurpark renovation plans through 2027) did not name these three cypresses specifically. Flagged for that gap: alive as of 2017 is solid, alive today is not independently confirmed this pass. The Kurpark itself is an active, maintained public park with a 19th-century tree stock undergoing gradual renewal, so the entry is worth carrying forward rather than dropping, but a fresher photo or sighting would clear the flag. No age or girth source found."
+  },
+  {
+    "id": "stu_006",
+    "name": "The Ash at Schloss Solitude",
+    "species": "Common Ash (Fraxinus excelsior)",
+    "age_estimate": "roughly 250 years",
+    "age_min": 200,
+    "age_max": 300,
+    "girth_cm": 672,
+    "location": {
+      "address": "In front of Schloss Solitude, Solitude, Stuttgart-West",
+      "latitude": 48.78743,
+      "longitude": 9.08391,
+      "neighbourhood": "Solitude / Stuttgart-West"
+    },
+    "verified_sources": [
+      "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+      "https://www.baumkunde.de/baumregister/819-esche_am_schloss_solitude/"
+    ],
+    "access": "In the open green grounds in front of Schloss Solitude; free and open at all times. Only the palace interior itself requires a ticket.",
+    "transport": "Bus 92 to the Solitude stop, short walk",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Official Naturdenkmal registers this as one group, '1 Baumgruppe vor Schloss Solitude (1 Esche und 2 Bergahorn)', one ash plus two sycamore maples (Acer pseudoplatanus), city ordinance entry 5/6, West/Solitude, Flurstucke 1/5 and 10, designated 24-06-2003, protection reasons Eigenart (character), Tierbiotop (animal habitat). Second, independent source is baumkunde.de, a German dendrological tree register (Register-Nr. 819), which measures the ash individually: Gemeine Esche (common ash), girth 6.72 m measured at 60 cm height on 13.05.2026, height 23.0 m, condition 'vital' at last visit the same date, age given by the register as 250 years, location 'in der Grunanlage vor der Solitude', access noted as offentlich zuganglich (publicly accessible). Its coordinates (E9 05.022' / N48 47.249', i.e. 9.0837, 48.7875) match the Wikipedia/Wikidata point for this monument within a few metres. The tree's trunk divides low into a wide, many-branched crown per baumkunde's description. Age is treated as a broad band (200-300) rather than baumkunde's own point figure of 250, per this project's rule against sharpening a derived estimate; the source's own number is kept in age_estimate as a label. The two accompanying sycamore maples are part of the same designated monument but were not individually measured or described by any source found this pass; the entry covers the group with the ash as its best-documented member. Schloss Solitude is a public baroque hunting lodge and its grounds are freely open; only interior visits are ticketed (schloss-solitude.de)."
+  }
+]
