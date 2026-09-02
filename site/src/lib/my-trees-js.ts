@@ -24,7 +24,6 @@ export const MY_TREES_JS = `
   var SB = "${SUPABASE_URL}", KEY = "${SUPABASE_KEY}";
   var list = document.getElementById('mine-list');
   var empty = document.getElementById('mine-empty');
-  var out = document.getElementById('mine-signedout');
   if (!list) return;
 
   // The app's own words for what has happened to a tree you offered
@@ -74,7 +73,6 @@ export const MY_TREES_JS = `
     list.innerHTML = '';
     list.hidden = true;
     if (empty) empty.hidden = true;
-    if (out) out.hidden = false;
     if (window.atMineCounted) window.atMineCounted(0);
   }
 
@@ -85,7 +83,6 @@ export const MY_TREES_JS = `
       .then(function(r) { return r.ok ? r.json() : null; })
       .then(function(rows) {
         if (!rows) return;
-        if (out) out.hidden = true;
         if (window.atMineCounted) window.atMineCounted(rows.length);
         if (!rows.length) { list.hidden = true; return; }
         list.innerHTML = rows.map(function(row) { return '<li>' + card(row) + '</li>'; }).join('');

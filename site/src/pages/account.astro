@@ -92,8 +92,16 @@ const canonical = `${BASE_URL}/account`;
       <div class="stat"><b id="n-countries">0</b><span>Countries</span></div>
     </div>
 
+    {/* Full width, because it is the one action on the page and both
+        references draw it that way: our own Collect screen and Polarsteps'
+        red "Voeg een reis toe". A pill hugging its own text reads as a
+        secondary link.
+
+        No "signed in as ..." paragraph here. It was three lines of grey
+        between the button and the lists, and the app keeps that fact in
+        Settings, which is where it now lives on the web too. The trees are
+        the screen. */}
     <a class="go-btn profile-add" href="/contribute?kind=tree">Add a tree</a>
-    <p class="acct-fine" id="in-note">Your trees are kept under <strong id="in-email"></strong> and follow you to any device. Signing in with a different address starts a separate collection.</p>
   </section>
 
   <!-- TWO LANES, THE APP'S TWO LANES, in the app's order and with the app's
@@ -111,7 +119,6 @@ const canonical = `${BASE_URL}/account`;
       <ul id="visited-list" class="saved-list" hidden></ul>
       <ul id="mine-list" class="saved-list" hidden></ul>
       <p id="mine-empty" hidden>Nothing here yet. Check in at a tree when you are standing in front of it, or add one of your own. <a href="/explore">Find a tree near you</a>.</p>
-      <p id="mine-signedout" hidden>Sign in and the trees you collected appear here.</p>
     </div>
 
     <div id="pane-saved" role="tabpanel" aria-labelledby="lane-saved" hidden>

@@ -539,7 +539,8 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
   display: flex; align-items: center; justify-content: center;
   color: var(--ink-mid); background: var(--cream); text-decoration: none; }
 .profile-gear:hover { background: var(--cream-dark); color: var(--ink); }
-.profile-add { display: inline-flex; margin-top: 0.2rem; }
+.profile-add { display: flex; width: 100%; justify-content: center; margin-top: 0.2rem; }
+@media (min-width: 640px) { .profile-add { width: auto; display: inline-flex; } }
 /* THE TWO LANES on /account, the web form of the app's segmented control
    (2026-09-02). Same behaviour, per-surface design: a tab pair reads as tabs
    on a page, where a segmented control reads as iOS. */
