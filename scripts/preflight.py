@@ -1030,6 +1030,13 @@ def check_overlay_coverage():
 
 
 LEAD_SAME_TREE_RADIUS_M = 60
+# The lead says, in its own words, that this is a tree we do not have.
+LEAD_CLAIMS_NEW = re.compile(
+    r"we do not publish|we don't publish|a tree we do not|never heard|new to us|"
+    r"do not have|not (?:yet )?on (?:the|our) (?:site|map|list)|not published", re.I)
+# Somebody sent it to us, which is the other way a wrong verdict reaches a person.
+LEAD_IS_A_GIFT = re.compile(
+    r"photograph sent|photo sent|sent by transfer|submitted by|sent to us|reader submission", re.I)
 _LEAD_STOP = {"the", "of", "a", "an", "and", "do", "da", "de", "di", "du", "des", "del",
               "der", "die", "das", "el", "la", "le", "les", "los", "en", "in", "at", "on",
               "no", "na", "dos", "tree", "trees", "walk", "old", "great", "big"}
@@ -1077,6 +1084,14 @@ def check_leads_already_published():
     carries a coordinate, because no language can fool it. Where it does not,
     the genus plus a place phrase both texts share, accent-folded, which is
     what "Bischofia / Jardim Botanico" and "Camellia / Casa Tait" both were.
+
+    And it reads only the leads that would COST something, which is the
+    difference between a check and a wall of text: matching every lead against
+    every published tree prints 374 notes, most of them a lead that was
+    promoted to a tree and left in the file, and an alarm that fires 374 times
+    is an alarm nobody reads. So: a lead whose own prose says we do not have
+    this tree, or one somebody sent us with a photograph. Those are the two
+    that end up in a sentence addressed to a person.
     """
     import math
     published = {}
@@ -1107,6 +1122,11 @@ def check_leads_already_published():
             d = json.load(fh)
         for lead in (d.get("leads") or []):
             if not isinstance(lead, dict):
+                continue
+            text = " ".join(str(v) for v in lead.values() if isinstance(v, str))
+            claims_new = LEAD_CLAIMS_NEW.search(text)
+            gift = "photo_available" in lead or LEAD_IS_A_GIFT.search(text)
+            if not (claims_new or gift):
                 continue
             name = lead.get("name") or lead.get("name_pt") or ""
             genus = _genus(lead.get("species"))
