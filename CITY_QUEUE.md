@@ -246,7 +246,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 49 | Berlin | 15.00 | 412,181 | 19 | 11 | 1 | 195 | 30 | measured |
 | 50 | Sintra | 11.17 | 46,889 | 5 | 3 | - | 6 | 20 | measured |
 | 51 | Oahu | 14.70 | - | 8 | 1 | - | 133 | 20 | measured |
-| 52 | Kansas City | 21.02 | - | 4 | - | - | - | 10 | predicted (travel demand) |
+| 52 | Kansas City | 21.02 | - | 4 | - | 1 | - | 10 | predicted (travel demand) |
 | 53 | Asheville | 20.89 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 54 | Boise | 20.29 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 55 | Long Beach | 20.48 | - | - | - | - | - | 10 | predicted (travel demand) |
@@ -469,7 +469,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 272 | Syracuse | 1.75 | 102,833 | - | - | - | - | 10 | predicted (travel demand) |
 | 273 | Cartagena | 2.58 | 65,066 | - | - | - | - | 10 | predicted (travel demand) |
 | 274 | Gran Canaria | 1.67 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 275 | Ghent | 2.36 | 82,757 | - | - | - | - | 10 | predicted (travel demand) |
+| 275 | Ghent | 2.36 | 82,757 | 6 | - | - | - | 10 | predicted (travel demand) |
 | 276 | Innsbruck | 2.52 | 58,742 | - | - | - | - | 10 | predicted (travel demand) |
 | 277 | Bern | 2.51 | 90,627 | - | - | - | - | 10 | predicted (travel demand) |
 | 278 | Valletta | 2.45 | 84,342 | - | - | - | - | 10 | predicted (travel demand) |
@@ -491,7 +491,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 294 | Zurich | 2.06 | 140,788 | 4 | - | - | - | 20 | measured |
 | 295 | La Gomera | 1.37 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 296 | Thessaloniki | 2.06 | 180,145 | 4 | - | 1 | - | 20 | measured |
-| 297 | Leuven | 2.05 | 40,645 | - | - | - | - | 10 | predicted (travel demand) |
+| 297 | Leuven | 2.05 | 40,645 | 4 | - | - | - | 10 | predicted (travel demand) |
 | 298 | Ischia | 1.32 | - | - | - | - | 2 | 10 | predicted (travel demand) |
 | 299 | Izmir | 1.88 | 69,826 | - | - | - | - | 10 | predicted (travel demand) |
 | 300 | Belgrade | 1.91 | 178,116 | 4 | 4 | - | - | 20 | measured |
