@@ -563,6 +563,15 @@ struct CollectSheet: View {
             Text("It is in your trees now, with your photograph.")
                 .font(.subheadline)
                 .foregroundStyle(Brand.inkSoft)
+            // The same sentence as the submit screen, and it belongs here for
+            // the same reason: Hidde's ruling covers a tree we ALREADY map, so
+            // a photograph taken on this screen can end up on that tree's page
+            // when the page has none or this one is better. Somebody who is
+            // told that only on the other screen has not been told.
+            Text("Your photograph can appear on the tree's page, with your name under it.")
+                .font(.footnote)
+                .foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
             doneButton
             // The escape hatch, small and always there: a confident match is
             // still a guess, and the person holding the phone can see the
@@ -630,15 +639,22 @@ struct CollectSheet: View {
                 // reader carry a decision that is ours, and most people would
                 // have taken the one that gave us nothing.
                 //
-                // THIS SENTENCE WAS FALSE FROM 27 AUGUST, corrected 08-28
-                // alongside the primer, the privacy manifest and the release
-                // checklist. It said the photograph never leaves the phone,
-                // which stopped being true the day SightingSync landed: signed
-                // in, it goes to a private bucket so a lost phone does not take
-                // your trees with it. Nobody else can read it, and that is the
-                // part worth saying; "stays on your phone" was the part that
-                // was not ours to promise any more.
-                Text("Your photograph is yours and nobody else sees it. What you write reaches us, and we look at every one.")
+                // THIS SENTENCE HAS BEEN WRONG TWICE, in opposite directions.
+                // Until 08-28 it said the photograph never leaves the phone,
+                // which stopped being true the day SightingSync landed. Then it
+                // said nobody else sees it, which was true of the code and
+                // false of the intention, on the one screen where somebody
+                // hands us a photograph FOR the map. Hidde, 2026-09-02: "het
+                // hele idee is dat als mensen fotos indienen dat hij potentieel
+                // voor het grote publiek word gebruikt", and "ook als de boom
+                // er al is en geen foto heeft of de foto van de gebruiker is
+                // beter gaan we die gebruiken."
+                //
+                // So it says what we may actually do, at the moment somebody
+                // decides to send it, which is the only moment consent means
+                // anything. No toggle beside it, per his 2026-08-24 ruling that
+                // the reader should not carry a choice that is ours.
+                Text("Your photograph can appear on the tree's page, with your name under it. We read every word you send.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
