@@ -1,0 +1,158 @@
+{
+  "city": "Kansas City",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Kansas City's most remarkable trees are not scattered across parks and cemeteries: all four grow on one library lawn. The Linda Hall Library, a private research library near the UMKC campus, has spent decades measuring and cataloguing its grounds for the Champion Tree Program of Greater Kansas City, and four of its specimens are now the largest of their kind anywhere in the metro. An oak, a double-flowered horsechestnut, a purple beech and the last living relative of its own botanical family, all free to walk among, dawn to dusk.",
+  "meta_description": "Kansas City's champion trees: an oak, a purple beech, a double-flowered horsechestnut and a rare rubber tree, all growing on one library lawn.",
+  "question_meta": "Kansas City's oldest tree is the 1956 double-flowered horsechestnut on the Linda Hall Library lawn, about 70 years old. Full list of 4.",
+  "question_answer": "The oldest tree in Kansas City's collection is the double-flowered horsechestnut planted in 1956 on the grounds of the Linda Hall Library, near Rockhill Road by the UMKC campus, making it about 70 years old. It is also the metro's largest known specimen of its kind, with a trunk 231 centimetres round.",
+  "question_context": "Every tree on this page grows within a few hundred feet of each other on the Linda Hall Library's arboretum lawn, and every age here starts from the same kind of record: a planting date kept in the library's own files rather than a growth-ring estimate. The horsechestnut went into the ground in 1956, the purple beech in 1971, the Shumard oak in 1968, and the hardy rubber tree, the youngest of the four, in 1975. All four are registered with the Champion Tree Program of Greater Kansas City, a metro-wide survey that has tracked the largest known tree of each species since 1955, when the J.C. Nichols Company's own landscaping department started the count. All four hold that title for their kind today, from a Chinese species with no close living relatives to a horsechestnut bred never to drop a conker. Nobody outside the library has independently measured any of them since a 2008 survey, so treat the girths and heights on this page as the institution's own record rather than a fresh third-party check, and tell us if you have measured one more recently.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kansas City?",
+      "a": "The double-flowered horsechestnut on the Linda Hall Library lawn, planted in 1956 and about 70 years old. It is also the metro's largest known specimen of its kind."
+    },
+    {
+      "q": "Why are all of Kansas City's remarkable trees at one library?",
+      "a": "The Linda Hall Library's grounds have been surveyed and catalogued for decades as part of the Champion Tree Program of Greater Kansas City, a metro-wide register that has tracked the largest tree of each species since 1955. Four of the library's own trees currently hold that title."
+    },
+    {
+      "q": "Is the Linda Hall Library arboretum free to visit?",
+      "a": "Yes. The grounds are open to the public, free of charge, dawn to dusk. The library building itself keeps separate hours."
+    },
+    {
+      "q": "What is the hardy rubber tree and why is it unusual?",
+      "a": "Eucommia ulmoides is the sole living species in its entire plant family, native to China. The trees grown in the West are a male clone that never sets seed, and a torn leaf holds together on fine threads of latex, which is where the name comes from."
+    }
+  ],
+  "hero_tree_id": "kcm_002",
+  "oldest_tree_id": "kcm_002",
+  "trees": [
+    {
+      "id": "kcm_001",
+      "name": "The Shumard Oak of Linda Hall Library",
+      "species": "Shumard Oak (Quercus shumardii)",
+      "age_estimate": "about 58 years",
+      "age_min": 50,
+      "age_max": 65,
+      "girth_cm": 211,
+      "location": {
+        "address": "The Linda Hall Library arboretum, 5109 Cherry Street, Kansas City, Missouri 64110",
+        "latitude": 39.0331,
+        "longitude": -94.5789,
+        "neighbourhood": "Rockhill / UMKC area"
+      },
+      "story": "The largest Shumard oak in greater Kansas City grows on a library lawn, and the library knows it by number. It is 34-21-1 in the Linda Hall Library arboretum's own catalogue, one of the sixteen trees the Champion Tree Program of Greater Kansas City records as the biggest of their kind in the metro. That programme has been keeping score since 1955, when the J.C. Nichols Company's landscaping department started measuring the city's trees.\n\nThis one is not old. It went into the ground in 1968 as nursery stock from Rosehill, which makes it a contemporary of the Apollo programme rather than of anything medieval. What it has instead is speed. Shumard oak is a bottomland tree of the southern and central states, built for deep soil and steady water, and on a watered institutional lawn it behaves accordingly. At the 2008 survey the trunk measured 83 inches round, 211 centimetres, under a crown 61 feet tall and 45 feet across. No newer figure has been published, and close to two decades of growth have gone onto the trunk since.\n\nEverything on record here comes from the library's own arboretum files. No outside surveyor has put a tape around it, so treat the numbers as the institution's rather than as a second opinion. The grounds are free and open dawn to dusk, and the oak stands on them as a catalogued specimen rather than as landscaping.",
+      "verified_sources": [
+        "https://www.lindahall.org/about/arboretum/shumard-oak-34-21-1/",
+        "https://libguides.lindahall.org/trees"
+      ],
+      "access": "Free. The Linda Hall Library grounds and arboretum are open to the public dawn to dusk.",
+      "transport": "Near Rockhill Road on the UMKC-adjacent stretch of Cherry Street; served generally by RideKC bus routes in the area, no single confirmed stop within a short walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "kcm_002",
+      "name": "The Double Flowered Horsechestnut of Linda Hall Library",
+      "species": "Double Flowered Horsechestnut (Aesculus hippocastanum 'Baumannii')",
+      "age_estimate": "about 70 years",
+      "age_min": 60,
+      "age_max": 75,
+      "girth_cm": 231,
+      "location": {
+        "address": "The Linda Hall Library arboretum, 5109 Cherry Street, Kansas City, Missouri 64110, about 100 feet from the NE corner of the main library building",
+        "latitude": 39.0332,
+        "longitude": -94.5787,
+        "neighbourhood": "Rockhill / UMKC area"
+      },
+      "story": "This horsechestnut has never dropped a conker, and it never will. 'Baumannii' is the double-flowered form of the common horsechestnut, bred so that the flower doubles its petals and loses the ability to set fruit. What you get in exchange is a longer, heavier bloom and a lawn nobody has to sweep, which is a fair trade unless you are a child collecting conkers.\n\nIt was planted in 1956, about a hundred feet from the northeast corner of the main library building, and it sits on the Greater Kansas City champion list as 2-4-1, the largest known of its kind in the metro. The library's own survey, taken around 2008, puts the trunk at 91 inches round, 231 centimetres, under a crown 40 feet across.\n\nThe height is disputed. The library says 54 feet. A Kansas City gardening magazine that visited in 2017 says 80. Nobody has reconciled the two, and the gap is wider than nine years of growth can explain, so the honest answer is somewhere between them, and worth judging with your own neck.\n\nLate April into May is when the argument stops mattering. The whole crown goes up in white double candles for two or three weeks, and then nothing falls.",
+      "verified_sources": [
+        "https://www.lindahall.org/about/arboretum/arboretum-collections/champion-trees/",
+        "https://libguides.lindahall.org/trees",
+        "https://kcgmag.com/blog/2017/10/09/trees-at-linda-hall-library/"
+      ],
+      "access": "Free. The Linda Hall Library grounds and arboretum are open to the public dawn to dusk.",
+      "transport": "Near Rockhill Road on the UMKC-adjacent stretch of Cherry Street; served generally by RideKC bus routes in the area, no single confirmed stop within a short walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [4, 5],
+        "kind": "flowers",
+        "label": "late April into May, when the crown fills with double white candles"
+      }
+    },
+    {
+      "id": "kcm_003",
+      "name": "The Rivers Purple Beech of Linda Hall Library",
+      "species": "Rivers Purple Beech (Fagus sylvatica 'Riversii')",
+      "age_estimate": "about 55 years",
+      "age_min": 45,
+      "age_max": 60,
+      "girth_cm": 216,
+      "location": {
+        "address": "The Linda Hall Library arboretum, 5109 Cherry Street, Kansas City, Missouri 64110",
+        "latitude": 39.0331,
+        "longitude": -94.579,
+        "neighbourhood": "Rockhill / UMKC area"
+      },
+      "story": "European beech is a tree of cool, damp woodland. Kansas City summers are neither, which is what makes this one quietly impressive.\n\n'Riversii' is a selected purple form of the common European beech, kept going by grafting because the colour does not come reliably from seed. The leaves open a deep red-purple in spring and hold close to it through the season, so this is one of the few trees on these grounds with no single week that beats the others. It looks like this in June and it looks like this in September.\n\nIt went into the ground in 1971 as Rosehill Nursery stock and carries the tag 14-2-1 on the Greater Kansas City champion list, the largest of its kind anybody in the metro has registered. At the 2008 survey the trunk was 85 inches round, 216 centimetres, under a crown 43 feet tall. The same table gives its spread as 42 inches, which would make it a broomstick; it is almost certainly 42 feet and a slipped unit, so we have left the number out rather than quietly repair somebody else's arithmetic.\n\nEverything above comes from one institution counted twice, the library's arboretum pages and its own subject guide. Nobody outside has put a tape around this trunk, and the last figures anyone published are nearly two decades old. If you have measured it more recently, tell us and we will update it.",
+      "verified_sources": [
+        "https://libguides.lindahall.org/trees",
+        "https://www.lindahall.org/about/arboretum/arboretum-collections/champion-trees/"
+      ],
+      "access": "Free. The Linda Hall Library grounds and arboretum are open to the public dawn to dusk.",
+      "transport": "Near Rockhill Road on the UMKC-adjacent stretch of Cherry Street; served generally by RideKC bus routes in the area, no single confirmed stop within a short walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "kcm_004",
+      "name": "The Hardy Rubber Tree of Linda Hall Library",
+      "species": "Hardy Rubber Tree (Eucommia ulmoides)",
+      "age_estimate": "about 51 years",
+      "age_min": 45,
+      "age_max": 55,
+      "girth_cm": 74,
+      "location": {
+        "address": "The Linda Hall Library arboretum, 5109 Cherry Street, Kansas City, Missouri 64110, SE corner of the grounds",
+        "latitude": 39.0329,
+        "longitude": -94.5787,
+        "neighbourhood": "Rockhill / UMKC area"
+      },
+      "story": "A torn leaf of this tree does not come apart cleanly. The two halves hang together on fine threads of latex, and that is where the hardy rubber tree gets its name.\n\nEucommia ulmoides is the last of its line. It is the only living species in its family, a Chinese tree with no close relatives left anywhere. In Western gardens it is stranger still: the trees in cultivation are a male clone, so they flower every year and have never set a seed.\n\nThis one was planted in 1975 in the southeast corner of the grounds, and it is registered as 13b-1-1 on the Greater Kansas City champion list. The library's survey around 2008 gave it 29 inches of trunk, 74 centimetres, standing 26 feet tall with a 33 foot spread. A Kansas City gardening magazine that came by in 2017 put it at 35 feet and expected it to reach 50 in time. Those two heights do not contradict each other; they are nine years apart, and the tree was doing what trees do in between.\n\nBeing the metro champion of a species almost nobody plants is a title won in a thin field, and it is worth the detour regardless. The grounds are free and open dawn to dusk. This is the least imposing tree on the list and the only one with no relatives.",
+      "verified_sources": [
+        "https://www.lindahall.org/about/arboretum/hardy-rubber-tree-13b-1-1/",
+        "https://kcgmag.com/blog/2017/10/09/trees-at-linda-hall-library/"
+      ],
+      "access": "Free. The Linda Hall Library grounds and arboretum are open to the public dawn to dusk.",
+      "transport": "Near Rockhill Road on the UMKC-adjacent stretch of Cherry Street; served generally by RideKC bus routes in the area, no single confirmed stop within a short walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

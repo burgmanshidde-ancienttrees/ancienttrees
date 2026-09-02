@@ -325,6 +325,14 @@
    "trees": 8
   },
   {
+   "city": "Kansas City",
+   "country": "United States",
+   "slug": "kansas-city",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
+  },
+  {
    "city": "Cagliari",
    "country": "Italy",
    "slug": "cagliari",
@@ -798,9 +806,9 @@
    "city": "Beijing",
    "country": "China",
    "slug": "beijing",
-   "status": "pending",
+   "status": "published",
    "demand_views_90d": null,
-   "trees": 0
+   "trees": 6
   },
   {
    "city": "Brno",
