@@ -261,6 +261,9 @@ enum SightingSync {
     }
 
     static func url(for id: UUID) -> URL? {
-        URL(string: "https://ancienttrees.app/t/?id=" + id.uuidString.lowercased())
+        // /t and not /t/: the site builds in Astro's "file" format, so the page is
+        // t.html and GitHub Pages serves it at /t. The trailing slash 404s, which
+        // is the kind of thing you only find by asking the live site.
+        URL(string: "https://ancienttrees.app/t?id=" + id.uuidString.lowercased())
     }
 }
