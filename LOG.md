@@ -9,7 +9,65 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-02 (session) - The digest was counting our own testing as readers
+## 2026-09-02 (session) - Japan: the machine can see photographs, and the budget was the brake
+
+Hidde leaves for Japan for the coming months and asked the honest version of the
+question this project keeps circling: "ik heb niet het idee als ik jou geen input ga
+geven dat je genoeg tokens gaat gebruiken om steden te vullen en bomen te zoeken, hoe
+zorgen we dat je dit zonder mij wel gaat doen." Measured before answering: the machine
+shipped **256 trees in the last seven days** across 46 runs and 1,609 minutes, so the
+worry is not that it stops. Three things were actually wrong.
+
+**1. The budget, not the usage limit, was stopping the runs.** The week stood at
+1,462 of 1,800 budgeted minutes and every knock after 06:00 UTC yesterday died on that
+line: four runs of 12 to 16 minutes and one of 40 seconds. Those numbers were calibrated
+for a week Hidde SHARES, and he is about to stop sharing it. On his ruling,
+`WEEK_BUDGET_MINUTES` is 5000 and `DAY_BUDGET_MINUTES` 900, close enough to the physical
+ceiling (12 knocks x 120 minutes) that they are now purely a runaway backstop. The
+governor is `recent_limit_deaths`, exactly as designed: an attempt the limit kills dies
+in seconds and costs nothing, and it feels his absence and his return without anybody
+setting a number. **When he is back, put them to 1800 / 260.**
+
+**2. The runner can see photographs, and has been able to all along.** For 25 days this
+corpus has said the GitHub Actions egress proxy blocks `upload.wikimedia.org` and
+`api.openverse.org`, which closed the whole photo lane to the machine and left every
+viewing pass waiting on Hidde's own Mac. Probed from the runner today: the full file
+returns 200 and 7.4 MB of JPEG, the 500px and 960px thumbnails return 200, and the
+Commons API, Openverse and iNaturalist all return 200. The 2026-08-07 failures were
+**400s on a thumbnail width Wikimedia does not render** (it serves fixed buckets,
+250/330/500/960, which `site/src/lib/images.ts` had already probed and written down),
+read as a network block. It is the same shape as the Dutch register licence: a verdict
+that closed a door outlived the fact and nobody re-opened it.
+
+Corrected in CLAUDE.md (twice), in nightly.yml's runner facts and in brief.py. A night
+run may now take a viewing pass, and the machinery for it already existed end to end
+(`photo_fetch.py` downloads and exposure-scores, the run reads the files,
+`photo_verdicts.py` applies). The honesty half is untouched: look at the pixels, and
+`held` rather than `approved` where two similar trees stand nearby. **3,395 candidates
+sit queued against 1,367 trees**, and until today all of them waited on him.
+
+**3. Nothing reached him.** Every alarm here fires into a file only a session reads,
+which is how the fresh-eyes review failed three mornings running in August and the
+weekly analysis sat dead for a week. `scripts/weekly_mail.py` plus
+`.github/workflows/weekly-mail.yml` send one screen every Monday 06:00 UTC: the alarm
+first (a failed gate, a night shift dying in seconds, knocks not arriving, a week with
+no trees), the machine's seven days under it with the cities named, then DATA.md's
+newest entry passed through unchanged. Cancelled runs deliberately raise no alarm.
+A test send went out today and arrived. His address is a repository secret, not in this
+public repo.
+
+Also automated: `.github/workflows/photos.yml` runs `vendor_photos.py` daily. That chore
+had run "once, by hand" since 2026-08-27, so every photograph a run approved drifted
+back off our domain until somebody remembered; eleven were waiting and are now vendored
+by CI. It was believed CI could not do it, for the same wrong reason as above.
+
+**FOR HIDDE, one open decision.** The photo lane is now open to the machine but sits at
+rung 6, under new coverage, and rungs 1 to 5 will not be empty for months, so it may
+never be reached. Giving photographs their own schedule (the way the digest and the
+review have one) would fix that and would spend from the same budget as the tree work.
+Say the word and it takes twenty minutes; left alone, trees keep all of it.
+
+2026-09-02 (session) - The digest was counting our own testing as readers
 
 Hidde, reading the morning digest: "im the user who addes something to baarn". The
 09-01 entry had opened with "1 tree submission arrived yesterday (36 total); an account
