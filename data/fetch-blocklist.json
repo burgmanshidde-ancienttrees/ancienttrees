@@ -301,6 +301,36 @@
    "what": "403 to plain curl AND to curl with a browser user agent, on both /info/ pages and /download/downloads/ PDFs. Fast fail, not a hang, so it costs a second rather than a window.",
    "workaround": "A REAL BROWSER SESSION LOADS IT FINE (verified 2026-09-02). This is the tooling gap OPEN_DATA_SURVEY already names: a scout with a browser reads what curl cannot. The page worth having is /info/709/looking_after_parks_and_open_spaces/5754/trees/4, 'Rare trees in parks', which lists the RHS-funded Owen Johnson survey tree by tree and park by park. WebSearch's own extracted snippets also carried most of that page's content.",
    "date": "2026-09-02"
+  },
+  "multirio.rio.rj.gov.br": {
+   "what": "ECONNREFUSED on two URL variants, fails fast.",
+   "workaround": "unknown; the Rio pass used other Brazilian sources",
+   "date": "2026-09-02"
+  },
+  "irph.prefeitura.rio": {
+   "what": "ECONNREFUSED. Rio's heritage institute, so the host you most want for tombamento decrees.",
+   "workaround": "unknown; INEPAC decree numbers were confirmed from secondary Brazilian sources instead",
+   "date": "2026-09-02"
+  },
+  "escuteaterra.museudapessoa.org": {
+   "what": "403.",
+   "workaround": "unknown",
+   "date": "2026-09-02"
+  },
+  "atlasdochao.org": {
+   "what": "403, Cloudflare JS challenge.",
+   "workaround": "unknown",
+   "date": "2026-09-02"
+  },
+  "terra.com.br": {
+   "what": "403/406 to the default fetcher, 200 with a full desktop Safari user agent. NOT a block, a user-agent check.",
+   "workaround": "curl -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'",
+   "date": "2026-09-02"
+  },
+  "jbemfolhas.com.br": {
+   "what": "403/406 to the default fetcher, 200 with a full desktop Safari user agent.",
+   "workaround": "same full desktop Safari user agent as terra.com.br",
+   "date": "2026-09-02"
   }
  }
 }

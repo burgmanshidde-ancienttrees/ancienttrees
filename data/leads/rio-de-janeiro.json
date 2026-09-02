@@ -1,0 +1,46 @@
+{
+  "leads": [
+    {
+      "name": "Parque Lage",
+      "notes": "Free, historic estate park at the foot of Corcovado (John Tyndale garden, c.1840; IPHAN listed 1957). General flora confirmed (jequitibás, embaúbas, figueiras-bravas/strangler figs, ipês, pau-brasil) but no single named, dated, individually documented tree found within this pass's time budget. Worth a targeted follow-up search for a specific specimen (e.g. a named jequitibá or gameleira) with two independent sources."
+    },
+    {
+      "name": "Quinta da Boa Vista (São Cristóvão)",
+      "notes": "Free imperial park, landscaped by Auguste Glaziou in 1869. A stock photo (pulsarimagens.com.br) shows a 'centennial fig tree trunk' but with no name, address, decree or dating beyond the caption. Worth a follow-up: search for the park's own signage or a Fundação Parques e Jardins release naming individual specimens."
+    },
+    {
+      "name": "Praça Paris / Passeio Público (Mestre Valentim, 1783)",
+      "notes": "Oldest public park in Brazil, IPHAN listed 1938, free. The IPHAN listing and ipatrimonio.org's own page cover the garden's architecture (Chafariz dos Amores, obelisks, main gate) but name no individual tree. Worth checking Fundação Casa de Rui Barbosa's Glaziou archive (antigo.casaruibarbosa.gov.br/glaziou/) directly for tree-level detail in a future pass."
+    },
+    {
+      "name": "Trio of baobabs at the Complexo de Israel, Zona Norte, Rio",
+      "notes": "Mentioned in passing by ABC do ABC (Jan 2025) as unsignposted and little-known, next to a sports/cultural complex. Not located, dated or independently verified within this pass."
+    },
+    {
+      "name": "\"João Gordo\", a second Paquetá baobab (planted 2013)",
+      "notes": "Referenced by Diário do Rio and Bafafá: deliberately cut by vandals (religious intolerance against candomblé/African symbolism) and later regrew after community watering effort. Too young to be remarkable on age alone and its current health is unconfirmed; possible future entry once condition is verified, and only if genuinely regrown and worth the walk rather than a stump with a story."
+    },
+    {
+      "name": "The other 8 of the '10 Trees of Paquetá' (1967 municipal landscape listing)",
+      "notes": "Named individually by ipatrimonio.org with street addresses: Amendoeira (Praia dos Tamoios/Ladeira Vicente), 2x Mangueira (Rua Tomás Cerqueira; Rua Padre Juvenal), Tamarineira (Praia José Bonifácio), Jaqueira (Rua Guedes de Carvalho), Mangueira (Rua Guedes de Carvalho), Mangueira (Rua Frei Leopoldo/Rua Manuel Macedo), Algodoeira de Praia (Praia Marechal Floriano), Tamarineira (Praia Marechal Floriano). Single-sourced (one catalogue page) and not individually distinguished as remarkable beyond the group listing; each would need a second source and a vitality check before shipping."
+    },
+    {
+      "name": "Other giant trees on the JBRJ 'Trilha das Árvores Gigantes' (2022)",
+      "notes": "Beyond the African Mahogany (rio_002) and the Sumaúma (rio_001), the same Agência Brasil piece names: Imperial Palm (Roystonea oleracea, 48.1m), White Faveira (Parkia multijuga, 36.9m), African Alfarrobeira (Parkia biglandulosa, 37m), Pink Jequitibá (Cariniana legalis, 31m, native/endemic), Acorn Fava (Parkia pendula, 34.5m), Tasmanian Eucalyptus (Eucalyptus globulus, 39.5m), Durian (Durio zibethinus, 33.03m), Pau-Mulato (Calycophyllum spruceanum, 29.62m), Okoume (Aucoumea klaineana, 36.35m). Only one source (Agência Brasil) found for these so far; a second source and exact garden position would be needed for each before shipping. The Pink Jequitibá is the one native/endemic species among them and may be the strongest next candidate."
+    },
+    {
+      "name": "Exact position of the Sumaúma of Tom Jobim (rio_001) and the Giant African Mahogany (rio_002) within the Jardim Botânico",
+      "notes": "Pin-upgrade lead: both currently ship location_precision approximate at garden-centre coordinates. The garden's own visitor app (mentioned in coverage) reportedly carries tree-level info; a future session with access to that app, or a mapped photo/geotagged observation, could upgrade both to confirmed."
+    },
+    {
+      "name": "Species confirmation for the Fig Tree of Rua Faro (rio_005)",
+      "notes": "A WebSearch summary (unverified, from an unreachable host) named the species Ficus tomentella and the address as Rua Faro no. 51, differing slightly from the two directly-read sources which give no scientific species and place it near no. 80 at the top/end of the street. Needs a primary-source check (IRPH/Conselho de Proteção do Patrimônio Cultural decree text, if it can be found and fetched) to resolve both the species and the precise address."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "\"Pau Ferro\" tree, Rua Marquês de Olinda 64, Botafogo",
+      "reason": "Individually listed by decree (12.625, 10/01/1994) per ipatrimonio.org, described as standing 'nos jardins' (in the gardens) of that address. Checked the address: it is the private residential Condomínio Edifício Porto Velho Porto Novo, built 1977, with a private green area as a resident amenity. This is a tree on a private residential plot, which hard rule 10 excludes even when a heritage decree exists and even if partly visible from the street. Blocked, not a lead: this is a permanent exclusion unless a future source documents genuine public access to the condominium's grounds."
+    }
+  ]
+}
