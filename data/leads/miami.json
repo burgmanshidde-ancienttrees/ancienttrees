@@ -1,43 +1,134 @@
 {
-  "leads": [
-    {
-      "site": "The Kampong (National Tropical Botanic Garden), Coconut Grove, Miami",
-      "candidate": "The Kaffir Orange (Strychnos spinosa)",
-      "reason": "Documented in a 1938 first-person memoir (USDA ARS 'Reminiscences of Early Plant Introduction in South Florida') as the very first tree Ed Simmonds planted on what became The Kampong, on a bayfront property Fairchild acquired before the garden's formal 1916 founding date. Strong historical provenance but no source found in this pass states the tree is still alive today; Strychnos spinosa is described elsewhere as a 'low, spiny, bushlike' species, so longevity is uncertain. Needs a Kampong-focused pass (NTBG's own current plant records, or a site visit report) to confirm survival before it can ship. Paid, reservation-encouraged entry (Tue-Sat 9am-3pm)."
-    },
-    {
-      "site": "Vizcaya Museum and Gardens",
-      "candidate": "The 'Florida Challenger' Royal Palm (Roystonea regia)",
-      "reason": "vizcaya.org/collections/gardens/about-gardens/ states one surviving Royal Palm among ~100 brought from Cuba by Deering is recognised as a Florida Challenger, the fourth-largest Royal Palm in the state. Only one source found (Vizcaya's own site); no independent corroboration located in this pass's time budget. Worth a second search pass specifically for Florida's champion palm register or a news piece."
-    },
-    {
-      "site": "Vizcaya Museum and Gardens",
-      "candidate": "Vizcaya's 8 unnamed national champion trees",
-      "reason": "vizcaya.org states the property's forest holds 8 documented national champion trees, 'the largest of their kind in the United States', but does not name species or locations. Worth a dedicated pass or a direct enquiry to Vizcaya's horticulture staff to identify individual specimens."
-    },
-    {
-      "site": "Simpson Park Hammock",
-      "candidate": "The living Gulf Licaria (Licaria triandra) near the pond",
-      "reason": "The park's own 2022 brochure says the country's oldest/largest Gulf Licaria at Simpson Park was toppled by Hurricane Katrina in 2005, but also notes a different, living specimen near the pond was observed fruiting for the first time in February 2012. That second tree could be a candidate in its own right but has no size, age or recent (2018+) confirmation; needs its own verification."
-    },
-    {
-      "site": "Miami-Dade County (unnamed specific park)",
-      "candidate": "Florida's National Champion Florida Strangler Fig (Ficus aurea)",
-      "reason": "fufc.org (Florida's Champion Tree program) states the largest National Champion tree in Florida is a native Florida Strangler Fig in Miami-Dade County: 342in circumference, 69ft tall, 72ft average crown spread. No specific park, address or coordinates found in this pass. High value if the exact site can be found (a genuinely enormous, free-to-see native tree would balance the city's paid-site-heavy candidate list). Worth a dedicated search of the Florida Forest Service / UF champion tree database, which is JavaScript-driven and needs a different fetch approach."
-    }
-  ],
-  "blocked": [
-    {
-      "site": "110 Phoenetia Avenue, Coral Gables ('Garden of Our Lord' live oak)",
-      "reason": "A live oak locally estimated at 100-200 years old (Montgomery Botanical Center: 100-155y; Vizcaya's own horticulturalists quoted as 'easily 200 years old'), canopy over 100ft, on a privately-owned 1.5-acre lot purchased in 2021 by a developer (Century Homebuilders) planning a nine-story, 200-unit building; approved by Coral Gables' Board of Architects in 2023. Private land under active redevelopment threat with no public access (hard rule 10). Also the tree's own survival is in doubt: the developer proposes relocating it, which horticultural experts warn would likely kill it. Source: Yahoo News, 9 Aug 2025, 'Development could kill a tree older than Coral Gables.'"
-    },
-    {
-      "site": "King's Highway Banyan Trees, SW 304th St between SW 167th and SW 174th Ave",
-      "reason": "Formally a Miami-Dade County historic site (designated 18 April 2007), Ficus benghalensis planted in the 1940s. Blocked for two reasons: (1) location is in the Homestead/Leisure City area, roughly 32km / well over 30 minutes from downtown Miami, outside the day-trip boundary for a Miami city page; (2) it is a multi-block roadside canopy corridor, not one collectible point with an obvious place to stand (an avenue, per the hard rules)."
-    },
-    {
-      "site": "333 SE 2nd Avenue, downtown Miami (Royal Palm Gardens banyan)",
-      "reason": "The last surviving tree of the historic Royal Palm Hotel gardens, a banyan planted circa 1897-1903, survived the 1926 hurricane and the hotel's demolition, but was itself removed on 10 December 1955 to add parking spaces. The site is now the Wells Fargo Center (completed 2010). Dead/gone; nothing to visit."
-    }
-  ]
+ "leads": [
+  {
+   "site": "The Kampong (National Tropical Botanic Garden), Coconut Grove, Miami",
+   "candidate": "The Kaffir Orange (Strychnos spinosa)",
+   "reason": "Documented in a 1938 first-person memoir (USDA ARS 'Reminiscences of Early Plant Introduction in South Florida') as the very first tree Ed Simmonds planted on what became The Kampong, on a bayfront property Fairchild acquired before the garden's formal 1916 founding date. Strong historical provenance but no source found in this pass states the tree is still alive today; Strychnos spinosa is described elsewhere as a 'low, spiny, bushlike' species, so longevity is uncertain. Needs a Kampong-focused pass (NTBG's own current plant records, or a site visit report) to confirm survival before it can ship. Paid, reservation-encouraged entry (Tue-Sat 9am-3pm)."
+  },
+  {
+   "site": "Vizcaya Museum and Gardens",
+   "candidate": "The 'Florida Challenger' Royal Palm (Roystonea regia)",
+   "reason": "vizcaya.org/collections/gardens/about-gardens/ states one surviving Royal Palm among ~100 brought from Cuba by Deering is recognised as a Florida Challenger, the fourth-largest Royal Palm in the state. Only one source found (Vizcaya's own site); no independent corroboration located in this pass's time budget. Worth a second search pass specifically for Florida's champion palm register or a news piece."
+  },
+  {
+   "site": "Vizcaya Museum and Gardens",
+   "candidate": "Vizcaya's 8 unnamed national champion trees",
+   "reason": "vizcaya.org states the property's forest holds 8 documented national champion trees, 'the largest of their kind in the United States', but does not name species or locations. Worth a dedicated pass or a direct enquiry to Vizcaya's horticulture staff to identify individual specimens."
+  },
+  {
+   "site": "Simpson Park Hammock",
+   "candidate": "The living Gulf Licaria (Licaria triandra) near the pond",
+   "reason": "The park's own 2022 brochure says the country's oldest/largest Gulf Licaria at Simpson Park was toppled by Hurricane Katrina in 2005, but also notes a different, living specimen near the pond was observed fruiting for the first time in February 2012. That second tree could be a candidate in its own right but has no size, age or recent (2018+) confirmation; needs its own verification."
+  },
+  {
+   "site": "Miami-Dade County (unnamed specific park)",
+   "candidate": "Florida's National Champion Florida Strangler Fig (Ficus aurea)",
+   "reason": "fufc.org (Florida's Champion Tree program) states the largest National Champion tree in Florida is a native Florida Strangler Fig in Miami-Dade County: 342in circumference, 69ft tall, 72ft average crown spread. No specific park, address or coordinates found in this pass. High value if the exact site can be found (a genuinely enormous, free-to-see native tree would balance the city's paid-site-heavy candidate list). Worth a dedicated search of the Florida Forest Service / UF champion tree database, which is JavaScript-driven and needs a different fetch approach."
+  },
+  {
+   "site": "73rd Street & Dickens Avenue, Miami Beach",
+   "candidate": "Buttonwood (Conocarpus erectus), 'the oldest tree in Miami Beach'",
+   "reason": "A Miami community newspaper quotes Miami Beach's own Urban Forester, Mark Williams, by name calling this street tree the oldest in the city, with a distinctive support structure (branches reaching to the ground). Free, on public right-of-way, easily recognisable per the source. Only one source found in this pass (communitynewspapers.com); Miami Beach's own public tree inventory (opentreemap.org/miamibeachtrees) likely carries this specimen but is JS-rendered and returned 404 on a direct fetch of the guessed feature id, needs a rendering fetch or the map's own search. NOTE: Miami Beach is a separate incorporated city from Miami; route this to a Miami Beach city file rather than folding it into Miami's, unless Hidde/the queue treats them as one page. Approx location: Dickens Ave & 73rd St, Atlantic Heights, Miami Beach (25.859, -80.125)."
+  },
+  {
+   "site": "Charles Deering Estate, 16701 SW 72nd Ave (Palmetto Bay/unincorporated Miami-Dade, south of Coconut Grove)",
+   "candidate": "The Bullet Tree / Black Olive (Bucida buceras) at the Stone House",
+   "reason": "monumentaltrees.com records a Bucida buceras at the Deering Estate, NE corner of the Stone House (built 1922 by Charles Deering, brother of James Deering who built Vizcaya), girth 4m, height 18.2m, age 119 +/-10 years - a real dendrological-style estimate. Per hard rules monumentaltrees.com cannot be the sole source; no independent second source (deeringestate.org, Wikipedia, local news) was found confirming this specific specimen within this pass's time budget. Estate charges paid entry. Worth a dedicated Deering Estate pass, ideally checking deeringestate.org's own interpretive materials or contacting the estate directly, since Deering Estate is thematically a strong companion to Vizcaya (same family) and would deepen that story if confirmed."
+  },
+  {
+   "site": "Collins Park, Miami Beach",
+   "candidate": "The Baobab Tree of Collins Park",
+   "reason": "communitynewspapers.com (Miami Beach Sun, Sand, Surf and the Trees) describes a 'majestic' baobab in Collins Park with cultural significance as Africa's 'Tree of Life'. No size, age, species-confirmation (which Adansonia sp.) or second source found in this pass. Free public park. Same Miami Beach routing note as the Buttonwood above."
+  }
+ ],
+ "blocked": [
+  {
+   "site": "110 Phoenetia Avenue, Coral Gables ('Garden of Our Lord' live oak)",
+   "reason": "A live oak locally estimated at 100-200 years old (Montgomery Botanical Center: 100-155y; Vizcaya's own horticulturalists quoted as 'easily 200 years old'), canopy over 100ft, on a privately-owned 1.5-acre lot purchased in 2021 by a developer (Century Homebuilders) planning a nine-story, 200-unit building; approved by Coral Gables' Board of Architects in 2023. Private land under active redevelopment threat with no public access (hard rule 10). Also the tree's own survival is in doubt: the developer proposes relocating it, which horticultural experts warn would likely kill it. Source: Yahoo News, 9 Aug 2025, 'Development could kill a tree older than Coral Gables.'"
+  },
+  {
+   "site": "King's Highway Banyan Trees, SW 304th St between SW 167th and SW 174th Ave",
+   "reason": "Formally a Miami-Dade County historic site (designated 18 April 2007), Ficus benghalensis planted in the 1940s. Blocked for two reasons: (1) location is in the Homestead/Leisure City area, roughly 32km / well over 30 minutes from downtown Miami, outside the day-trip boundary for a Miami city page; (2) it is a multi-block roadside canopy corridor, not one collectible point with an obvious place to stand (an avenue, per the hard rules)."
+  },
+  {
+   "site": "333 SE 2nd Avenue, downtown Miami (Royal Palm Gardens banyan)",
+   "reason": "The last surviving tree of the historic Royal Palm Hotel gardens, a banyan planted circa 1897-1903, survived the 1926 hurricane and the hotel's demolition, but was itself removed on 10 December 1955 to add parking spaces. The site is now the Wells Fargo Center (completed 2010). Dead/gone; nothing to visit."
+  }
+ ],
+ "verified_but_unpublished": [
+  {
+   "id": "mia_001",
+   "name": "The Champion Paradise Tree of Simpson Park",
+   "species": "Paradise Tree (Simarouba glauca)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Simpson Park, 55 SW 17th Road, Miami, FL 33129 (behind the Charles Torrey Simpson Garden Center building, near the park's main/east entrance)",
+    "latitude": 25.7587,
+    "longitude": -80.1958,
+    "neighbourhood": "The Roads / Brickell, Miami"
+   },
+   "verified_sources": [
+    "https://web.archive.org/web/20250520235933/https://www.miami.gov/files/sharedassets/public/v/1/parks/simpson-park-brochure-2022.pdf",
+    "https://floridahikes.com/simpson-rockland-hammock-preserve/"
+   ],
+   "access": "Free. City of Miami park, open daily 8am-5pm (east entrance closes 4pm); closed on holidays.",
+   "transport": "In the Brickell/The Roads neighbourhood just south of downtown Miami; no Metrorail station within easy walk, nearest is roughly a mile away. Reachable by Metrobus on nearby routes, bike, rideshare, or on foot from Brickell (about 20-25 minutes).",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "verify_notes": "City of Miami's own 2022 Simpson Park brochure (official park map/guide, archived copy fetched because live miami.gov PDF returned Access Denied to curl) labels this specimen 'Paradise Tree (Champion Tree)' as stop on the park's numbered nature trail, located behind the Charles Torrey Simpson Garden Center building. floridahikes.com independently describes it as 'a large paradise tree behind the building designated as a National Champion tree... the largest known example of its species in the country', confirming the champion designation from a second, independent source. Simpson Park Hammock is a 7.8-acre remnant of the historic Brickell Hammock tropical hardwood forest, one of the last such fragments in urban Miami (Wikipedia: Simpson Park Hammock), so the setting itself is remarkable, not just this one tree. Champion status here is about SIZE (largest known of the species), not documented age; no age or girth figure found in either source, so left blank rather than guessed - Simarouba glauca is not typically a multi-century tree. Alive/current: brochure is dated 2022, five years after Hurricane Irma (2017) closed the park for canopy damage, so evidence of life postdates that storm; no more recent (2023+) dated confirmation found in this pass. Location is approximate: I have the park's centroid and the brochure's own trail map showing the tree's position relative to the Garden Center building and numbered stops, but no independent tree-level GPS coordinate, so a visitor should look for the marked nature-trail stop behind the Garden Center rather than trust the pin to the metre. Flagged for: (1) no independent dated (2023+) confirmation of survival, (2) no age data, (3) pin is park-level/building-relative, not tree-level. A visitor or park naturalist (contact in the brochure: Gloria Antia, Parks Naturalist Senior) could confirm current status and exact spot."
+  },
+  {
+   "id": "mia_002",
+   "name": "The Garden Mound Oaks of Vizcaya",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "age_estimate": "roughly 200 years",
+   "age_min": 150,
+   "age_max": 220,
+   "girth_cm": null,
+   "location": {
+    "address": "Vizcaya Museum and Gardens, 3251 South Miami Avenue, Miami, FL 33129 (the Garden Mound, an artificial hill near the south end of the formal gardens)",
+    "latitude": 25.7447,
+    "longitude": -80.2116,
+    "neighbourhood": "Coconut Grove / Brickell Hammock, Miami"
+   },
+   "verified_sources": [
+    "https://vizcaya.org/gardenmound-label/",
+    "https://www.sofiascountrygardens.com/post/vizcaya-museum-and-gardens",
+    "https://vizcaya.org/collections/gardens/about-gardens/"
+   ],
+   "access": "Paid entry to Vizcaya Museum and Gardens (general admission ticket required); open Wednesday-Monday, closed Tuesdays. The Garden Mound is a short walk from the main entrance, up a set of stone stairs.",
+   "transport": "Vizcaya Metrorail station (on the Metrorail/M-Path) is about a 500m, 5-10 minute walk from the entrance.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "verify_notes": "Four Southern Live Oaks (Quercus virginiana) crown the Garden Mound, an artificial hill built during construction of Vizcaya (1914-1922) as the winter estate of James Deering. Vizcaya's own official interpretive label (vizcaya.org/gardenmound-label) calls them '200-year old, windswept Live Oak trees' and says the mound is one of the few spots where 'the house appears small, almost a miniature', with 360-degree views over the mangrove shore, the rockland hammock and the formal gardens. Independent source sofiascountrygardens.com corroborates the mechanism without repeating Vizcaya's own age claim: the four oaks were already mature specimens dug from another Deering-owned property and moved to the mound during construction, 'transplanted one hundred years ago' (from that source's own vantage point), which is consistent with (not identical to, so not treated as a bridge to a precise figure) Vizcaya's 200-year claim: mature at transplant circa 1914-1922 plus roughly a century since. Age is real estate PR language from the institution itself rather than an independent dendrological measurement, so flagged and given as a broad range (150-220y) rather than repeated as an exact 200. No girth recorded by either source. Deering deliberately imported large mature trees property-wide to fake an established look immediately (About Gardens page also documents a large strangler fig moved by barge that blew down in a storm, and over 100 Royal Palms shipped from Cuba, one surviving specimen recognised as a Florida Challenger, the fourth-largest Royal Palm in the state - a possible second entry for a later pass). Vizcaya's forest also holds 8 documented national champion trees per the same official page, unnamed in the source, worth a targeted follow-up. Alive now: the oaks are a maintained, actively promoted feature of a paying museum with a dedicated 2020s-era interpretive page about them, and are 'regularly trimmed... to be more resilient during storms' per vizcaya.org, so recent tending is documented even without a dated 2023+ photo. Location is approximate: pin is the Vizcaya property centroid: the Garden Mound itself sits toward the south end of the formal gardens near the water, findable on-site from the entrance via the garden map, but I do not have the mound's own coordinate."
+  },
+  {
+   "id": "mia_003",
+   "name": "David Fairchild's Inauguration Baobab",
+   "species": "Baobab (Adansonia digitata)",
+   "age_estimate": "planted 1938, so about 88 years",
+   "age_min": 88,
+   "age_max": 88,
+   "girth_cm": null,
+   "location": {
+    "address": "Fairchild Tropical Botanic Garden, 10901 Old Cutler Road, Coral Gables, FL 33156 (near the Sunken Garden, in the Montgomery Palmetum)",
+    "latitude": 25.6785,
+    "longitude": -80.2743,
+    "neighbourhood": "Coral Gables, Miami"
+   },
+   "verified_sources": [
+    "https://fairchildgarden.org/visit/the-gardens-early-plantings/",
+    "https://en.wikipedia.org/wiki/Fairchild_Tropical_Botanic_Garden"
+   ],
+   "access": "Paid entry to Fairchild Tropical Botanic Garden (general admission ticket required); open daily.",
+   "transport": "No Metrorail or Metrobus stop within easy walking distance; typically reached by car (parking on site).",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "verify_notes": "Planted by the botanist Dr. David Fairchild himself at the Garden's public inauguration on 23 March 1938 (fairchildgarden.org's own 'Early Plantings' page, which is a documented planting record for THIS specific specimen, not a bridge from the garden's founding date), grown from material Fairchild collected on the 1927 Utowana expedition to West Africa. Wikipedia's Fairchild Tropical Botanic Garden article independently confirms: 'Many plants still growing in the Garden were collected and planted by him [Fairchild], including a giant African baobab tree' - corroborating that this specific tree is (a) still alive and (b) one Fairchild personally planted, from a source outside the garden's own site. Species confirmed as Adansonia digitata (African baobab) by fairchildgarden.org. Note there is a SECOND, larger baobab elsewhere in the garden (near the Phillips-Atwater Gatehouse, also planted 1938 but from Dade County Nursery stock, not Fairchild's own expedition material) - do not conflate the two; this entry is specifically the Sunken Garden / Montgomery Palmetum specimen with the Fairchild-personal planting story, which is the more remarkable one. Age is a straightforward documented-planting-date calculation (2026 minus 1938), not an estimate, so it is unusually solid for this database, though as an ex-situ botanic-garden specimen its 'remarkable' quality is historical/horticultural (a named plant-hunter's own tree, still growing 88 years on) rather than ancient-age or huge-size. No girth or height found in either source. Alive now: it is a named, signed stop the garden itself still promotes on a page updated recently, so institutional maintenance implies current life, though no dated 2023+ photo or observation was found in this pass. Location is approximate: I have the garden's entrance/building coordinate plus the descriptive location ('near the Sunken Garden in the Montgomery Palmetum'), not a tree-level GPS pin; the garden's own map or a staff member on site could confirm the exact spot."
+  }
+ ],
+ "note": "\n\nNOT PUBLISHED 2026-09-02, and for two reasons that a fourth tree alone would not fix. Three trees verified, under the four-tree floor, and Hidde's single-destination-tree exception does not rescue them: the test is whether somebody would travel specifically for THIS ONE TREE, and a champion paradise tree, the Vizcaya garden-mound oaks and Fairchild's baobab are all trees you meet once you are already at the garden rather than reasons to go. THE HARDER PROBLEM IS THE TICKET RATIO: two of the three sit behind paid entry (Vizcaya, Fairchild), which is 67 percent against a limit of about a third. So Miami needs TWO MORE FREE trees, not one more tree, or the page becomes a garden page with a city's name on it, which is exactly what that rule exists to stop. THIRD, AND CHECK IT FIRST NEXT TIME: none of the three has dated evidence of life after 2018. Andrew flattened much of south Miami-Dade in 1992 and Irma and Ian did more in 2017 and 2022, so a pre-2018 source is not proof a tree stands. All three are flagged for it. THE PATH, already scouted so nobody starts from zero: the Deering Estate Bullet Tree needs one more independent source, and the Miami Beach oldest Buttonwood needs a routing decision because Miami Beach is a separately incorporated city. Both are free. Do not re-verify the three below; they are done and sourced."
 }
