@@ -339,8 +339,16 @@ const CREDIT_HOSTS = [
 ];
 
 export function creditName(attribution?: string | null): string | null {
-  const raw = (attribution ?? "").trim();
+  let raw = (attribution ?? "").trim();
   if (!raw) return null;
+  // Four photographs have no author recorded at all, only a host, and they
+  // printed as "Photo: via Wikimedia Commons" in English and "Foto: via
+  // Wikimedia Commons" in five other languages, where "via" is not even a
+  // word. Seen on /es/alicante while checking the seven languages on
+  // 2026-09-02. The host stays, because it is all we have and a credit with
+  // no name still has to say where the picture came from; the dangling
+  // preposition goes.
+  raw = raw.replace(/^via\s+/i, "");
   for (const host of CREDIT_HOSTS) {
     if (raw.endsWith(host)) {
       const shorter = raw.slice(0, raw.length - host.length).trim();
