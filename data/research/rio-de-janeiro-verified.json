@@ -1,0 +1,50 @@
+[
+  {
+    "id": "rio_001",
+    "name": "The Sumaúma of Tom Jobim",
+    "species": "Kapok (Ceiba pentandra)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Jardim Botânico do Rio de Janeiro, near the Aleia Custódio Serrão, Rua Jardim Botânico 1008, Jardim Botânico, Rio de Janeiro",
+      "latitude": -22.9675,
+      "longitude": -43.2245,
+      "neighbourhood": "Jardim Botânico"
+    },
+    "verified_sources": [
+      "https://agenciabrasil.ebc.com.br/geral/noticia/2022-09/jardim-botanico-do-rio-lanca-trilha-das-arvores-gigantes",
+      "https://www.terra.com.br/planeta/noticias/qual-e-a-arvore-favorita-de-tom-jobim-que-virou-cenario-para-a-foto-de-filha-de-biden,79a6046f9431544751d68c4643210e49qdyxhb9v.html"
+    ],
+    "access": "Paid entry to the Jardim Botânico do Rio de Janeiro (daily, standard garden ticket)",
+    "transport": "Jardim Botânico neighbourhood, reachable by bus; roughly 20-25 min from central Rio by car/taxi",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Known within the Botanical Garden as 'a árvore de Tom' (Tom's tree): composer/musician Antônio Carlos 'Tom' Jobim (1927-1994) stopped to admire this sumaúma on his morning walks in the garden and drew inspiration from it. A plaque honouring him (an IBAMA tribute calling him 'maestro soberano') was installed at the foot of the tree in January 1995, a year after his death, documented by columnist Antonio Callado in Folha de São Paulo's 'Ilustrada' section, 14 Jan 1995 (cited via Terra). Confirmed alive and standing as recently as Nov 2024, when Ashley Biden (daughter of US President Joe Biden, in Rio for the G20 summit) was photographed posing in front of it during a garden visit, widely reported (Terra, 20 Nov 2024). Height 40.01m per the garden's own 'Trilha das Árvores Gigantes' (Giant Trees Trail), launched Sept 2022 (Agência Brasil), which lists it among the garden's tallest specimens. Species Ceiba pentandra (kapok/sumaúma), native to Latin America, present in Brazil's North, Northeast and Centre-West; the species can live over 100 years and reach up to 70m per general species sources, though no age is documented specifically for this individual, so age is left undocumented rather than estimated from generic species longevity (would be a bridge claim). Location: garden sources place sumaúma specimens along the 'Aleia Custódio Serrão' path; I could not confirm this is the exact same tree as the Tom Jobim specimen from open sources within the time available, so location_precision is approximate (garden-area level, not tree-level pin) and coordinates are the garden's approximate centre. A reader visiting could confirm the plaque's exact spot. No girth/circumference figure found in sources checked."
+  },
+  {
+    "id": "rio_002",
+    "name": "The Giant African Mahogany",
+    "species": "African Mahogany (Khaya senegalensis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Jardim Botânico do Rio de Janeiro, Rua Jardim Botânico 1008, Jardim Botânico, Rio de Janeiro",
+      "latitude": -22.9675,
+      "longitude": -43.2245,
+      "neighbourhood": "Jardim Botânico"
+    },
+    "verified_sources": [
+      "https://agenciabrasil.ebc.com.br/geral/noticia/2022-09/jardim-botanico-do-rio-lanca-trilha-das-arvores-gigantes",
+      "https://diariodorio.com/trilha-das-arvores-gigantes-e-lancada-no-jardim-botanico-do-rio/"
+    ],
+    "access": "Paid entry to the Jardim Botânico do Rio de Janeiro (daily, standard garden ticket); this specimen anchors the garden's own guided 'Trilha das Árvores Gigantes' (Giant Trees Trail)",
+    "transport": "Jardim Botânico neighbourhood, reachable by bus; roughly 20-25 min from central Rio by car/taxi",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "The tallest tree in the Jardim Botânico's living collection at 49.1m, about the height of a 16-storey building, reported by two independent outlets (Agência Brasil and Diário do Rio) covering the garden's own launch of the 'Trilha das Árvores Gigantes' on 21 September 2022 (Brazil's Tree Day), led by Marcus Nadruz, coordinator of the JBRJ's Living Collection. In the wild Khaya senegalensis (native to West Africa/the Sahel, also called dry-zone or Senegal mahogany) reaches only 30-35m, so this individual is unusually exceptional for its species. No age or girth figure was published in either source; the JBRJ's own detail page for the trail (gov.br/jbrj) required an authenticated login and could not be read, so any additional measurements it may hold (age, girth, exact plot) are unconfirmed. This is one of ten/eleven specimens (sources differ, 'dez' vs the fuller 11-tree list from the same Agência Brasil piece) on the trail, all over 25m tall, including an imperial palm (Roystonea oleracea, 48.1m) as runner-up. Location is garden-area only; exact tree position within the arboretum not confirmed from open sources, so location_precision is approximate."
+  }
+]

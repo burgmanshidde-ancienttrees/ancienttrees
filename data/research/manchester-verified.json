@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "mcr_001",
+    "name": "The Manchester Poplar",
+    "species": "Black Poplar (Populus nigra subsp. betulifolia)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 407,
+    "location": {
+      "address": "Annie Lees Playing Fields, Mount Road, Gorton, Manchester M18 7BQ",
+      "latitude": 53.458839,
+      "longitude": -2.1830842,
+      "neighbourhood": "Gorton"
+    },
+    "verified_sources": [
+      "https://secretmanchester.com/manchester-poplar-tree/",
+      "https://elmhousetreeservices.co.uk/manchester-poplar-protected-trees-greater-manchester/"
+    ],
+    "access": "Free, in a public park (Annie Lees Playing Fields), open during daylight hours",
+    "transport": "Gorton railway station, about a 20 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "Native black poplar (Populus nigra subsp. betulifolia), the UK's most endangered native tree and the species the city is informally named after ('Manchester Poplar'). Girth ~4.07m (13ft) per Woodland Trust, cited identically by both sources. Age is explicitly undocumented in both sources ('nobody knows its exact age' / 'age is a complete enigma'); both call it clearly very old given its size, so leave age_estimate empty per the honesty rule rather than guess from girth (no published growth-rate source found for this subspecies in this pass). Survived Manchester's industrial-era soot and acid rain that killed most trees in the city centre, which is exactly why black poplars are nicknamed 'Manchester poplars' locally. Shortlisted for the Woodland Trust's UK Tree of the Year 2023 (national shortlist, lost to another entry per later news, not confirmed either way this pass). Protected by a Tree Preservation Order per elmhousetreeservices.co.uk. Location: park-level coordinate only (Nominatim centroid of Annie Lees Playing Fields); no OSM natural=tree node found for the individual tree via Overpass (empty result in the park bounding box), so location_precision is approximate, not confirmed. A second, younger poplar of the same species/nickname is planted in St John's Gardens in the city centre (Castlefield, former churchyard redeveloped as a garden in 1932) -- do not conflate the two; this entry is specifically the older Gorton specimen, which is the one both sources treat as the remarkable/oldest one."
+  }
+]
