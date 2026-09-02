@@ -164,7 +164,12 @@ export function metaForTree(tree: {
 }, cityName: string,
    lead: (species: string, age: string, where: string) => string,
    overrides?: { species?: string; age_estimate?: string; story?: string }): string {
-  const rawSpecies = (overrides?.species ?? tree.species ?? "").split("(")[0].trim();
+  // Both bracket shapes: the Japanese overlays write the binomial inside a
+  // full-width （ ）, so splitting on "(" alone left "スギ（Cryptomeria
+  // japonica）" in the snippet and spent thirty characters on Latin nobody
+  // searched for.
+  const rawSpecies = (overrides?.species ?? tree.species ?? "")
+    .split(/[(\uff08]/)[0].trim();
   // "Mixed species" is our placeholder for an ensemble, not a name, and it
   // reads as a database field rather than as a tree.
   const species = rawSpecies && !/^mixed species$/i.test(rawSpecies) ? rawSpecies : "";
