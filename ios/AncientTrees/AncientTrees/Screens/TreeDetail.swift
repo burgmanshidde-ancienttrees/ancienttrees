@@ -45,6 +45,10 @@ struct TreeDetail: View {
     /// The hero shows the map instead of the photograph. A swap rather than a
     /// jump to the Map tab, so the reader keeps their place.
     @State private var showingMap = false
+    /// The picture the share sheet hands on, drawn once when a tree of yours
+    /// is opened. Nil until then, and only ever set on your own trees: ours
+    /// have a page on the web and share that instead, from the toolbar.
+    @State private var shareCard: Image?
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -314,6 +318,17 @@ struct TreeDetail: View {
             }
         }
         .task {
+            // The share card, drawn once per page. Only on your own trees, and
+            // only if it has not been drawn already: this runs again when the
+            // view comes back and redrawing 1080 by 1350 pixels for nothing is
+            // the kind of waste nobody ever sees and everybody's battery pays.
+            if let m = mine, shareCard == nil {
+                shareCard = Image(uiImage: ShareCard.render(
+                    photo: sightings.image(m),
+                    name: tree.name,
+                    species: tree.species.isEmpty ? nil : tree.commonName,
+                    date: m.date))
+            }
             Measure.event("tree_opened", ["tree": mine == nil ? tree.id : "own"])
             // Debug scaffolding, same family as -tab, -select and -collected:
             // simctl cannot tap, and a screen that only exists after a tap is a
@@ -1120,16 +1135,34 @@ struct TreeDetail: View {
             // no single primary one. See CONVENTIONS.md, "Landing after you
             // have added something".
             if mine != nil {
-                barCircle("camera", "Add a tree", id: "mine-add-tree") {
-                    navigator.collectNearby = true
+                // ONE ACTION, AND IT IS SHARE (Hidde, 2026-09-01: "all cta's
+                // below dont make sense, i think the only thing that makes
+                // sense below is a share button for people to share their tree
+                // on social media").
+                //
+                // This is the third pass at this bar and the first one that
+                // asks what somebody actually wants at this moment. Directions
+                // to a tree you are standing under, a camera on the tree you
+                // just photographed, a heart on a tree that is already yours:
+                // three controls, none of them a thing anybody would do next.
+                //
+                // Sharing has no such problem. What Strava does with an
+                // activity is what this needs, for the same reason: there is no
+                // page to link to, so the thing shared is a picture with the
+                // facts and our mark on it. See Kit/ShareCard.swift.
+                //
+                // The button appears when the card has been drawn, a few
+                // milliseconds after the page does. A button that is there but
+                // does nothing until then would be worse.
+                if let card = shareCard {
+                    ShareLink(item: card,
+                              preview: SharePreview(tree.name, image: card)) {
+                        Label("Share this tree", systemImage: "square.and.arrow.up")
+                            .lineLimit(1)
+                    }
+                    .buttonStyle(BrandButtonStyle())
+                    .accessibilityIdentifier("mine-share")
                 }
-                Spacer(minLength: 0)
-                // Directions stay: a month later you may well want to find it
-                // again.
-                barCircle("arrow.turn.up.right", "Take me there", id: "mine-directions") {
-                    Directions.walk(lat: tree.lat, lng: tree.lng)
-                }
-                Spacer(minLength: 0)
             } else {
                 Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
                     Label("Take me there", systemImage: "arrow.turn.up.right")
@@ -1168,7 +1201,9 @@ struct TreeDetail: View {
                 .accessibilityIdentifier("tree-add-photo-bar")
                 .accessibilityLabel("Photograph this tree")
             }
-            SaveHeart(tree: tree, look: .inBar)
+            // NOT ON YOUR OWN TREE: a tree you added is in your collection
+            // already, so a heart on it saves it to the list it is on.
+            if mine == nil { SaveHeart(tree: tree, look: .inBar) }
         }
         // The same 20 as the page's content above it; at 16 the bar began
         // four points left of every paragraph, which is the drift the layout

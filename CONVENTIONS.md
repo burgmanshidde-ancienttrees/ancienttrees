@@ -642,3 +642,30 @@ Read 2026-09-01:
 - https://support.google.com/maps/answer/9678350
 - https://developer.apple.com/design/human-interface-guidelines/patterns/feedback/
 - https://m2.material.io/design/communication/confirmation-acknowledgement.html
+
+---
+
+## Sharing something you made that has no page (2026-09-02)
+
+**Reference: Strava.** Tapping share on your own activity draws a CARD rather
+than sending a link: your photograph or your map, the facts on top of it, their
+own mark in the corner, handed to the system sheet. Where the activity carries
+photographs it asks which to use; where it carries none it uses the map.
+
+**Reference: iNaturalist, which does the opposite and shows why.** Its share is
+a LINK, because every observation has a public page. Ask which of the two you
+are before copying either: a link is better when there is something to link to,
+and an invention when there is not.
+
+**Ours has no page.** A tree only you have holds no address on the web, so the
+picture is the only honest thing to send. It carries the name, the date, the
+species where you have named one, and the wordmark, which is the whole reason
+to draw a card rather than to send the bare photograph.
+
+**And the shape: 4:5 at 1080 wide**, which Instagram, WhatsApp and Messages all
+show without cropping into it. Strava also draws a 9:16 story sticker; that is a
+second size, for the day somebody asks.
+
+Read 2026-09-02:
+- https://support.strava.com/hc/en-us/articles/221089587-Sharing-Your-Strava-Activities
+- https://forum.inaturalist.org/t/getting-creating-a-link-to-your-observations-so-they-can-be-shared-etc/49896
