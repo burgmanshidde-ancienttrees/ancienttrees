@@ -830,3 +830,23 @@ page). Matt Ritter runs UFEI at Cal Poly.
 `scripts/stats.py` on 2026-08-31 (2,030 trees, 189 cities, so "about 2,000" and
 "190" are honest roundings, not claims). The mail makes no claim about what the
 site will or will not cost, which is the standing rule.
+
+## Paulo Araujo's fourth mail, 2026-09-02: he corrected us and we said so
+
+| Date | Who | Ask | Status |
+|---|---|---|---|
+| 2026-09-02 | Paulo V. Araujo, Dias com Arvores (dias.com.arvores@sapo.pt) | Say he is right about the Bischofia, link both trees now carrying his photographs, and ask for a tree idea for Coimbra or any other Portuguese city | **sent** |
+
+He wrote back the same morning to say he photographed the Bischofia BECAUSE it
+is on our own Porto list, with a link to our page. He was right: por_006 has
+been live since July, and so has the camellia walk he sent, which is por_005.
+Both photographs replaced something worse before the reply went out.
+
+Three things in the mail are Hidde's own, dictated in session: a compliment on
+living without a telephone ("deve ser bem mais sossegado"), one short apology
+for the confusion in the opening sentence, and the tree question widened from
+Coimbra alone to Coimbra or any other Portuguese city.
+
+**The thread rule held and is worth restating**: the ask that survives a
+correction is a tree. He has now been asked four times and answered four times,
+and every answer has arrived with either a photograph or a fact.
