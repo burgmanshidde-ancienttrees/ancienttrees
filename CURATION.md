@@ -10,6 +10,41 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-02 - Porto: two of Paulo Araujo's photographs were of trees we already publish
+
+He wrote back the same day the thank-you mail went out, to say that he photographed the
+Bischofia of the Jardim Botanico BECAUSE it stands on our own Porto list, with a link to our
+page. He is right. It is por_006, live since July with a story and a confirmed pin, and the
+second photograph held that morning is por_005, the camellias of Casa Tait, live since the city
+opened. Both had been filed to `data/leads/porto.json` as trees we do not publish; both entries
+are deleted, because a lead that is a published tree is not a lead.
+
+**Cause.** The eight photographs were matched only against Porto trees with NO photograph, so
+the two of trees that already had one fell out of the bottom as trees we had never heard of.
+Assumed new, actually published: the same class passcheck.py and backlog.py were written for
+after three briefs went out to open cities that were already live, one layer down, and the first
+time it cost a contributor rather than a run.
+
+**Ratchet.** `check_leads_already_published()` in scripts/preflight.py, a NOTE. It reads only
+the leads that can cost something, a lead somebody SENT us or a lead whose own words say we do
+not have this tree, and matches them against published trees in that city on distance where
+there is a coordinate and on genus plus a shared accent-folded place phrase where there is not.
+Never on the name alone. Checked both ways before committing: it names both of his and nothing
+else across 258 leads files.
+
+**Both photographs replaced something worse, which is the part worth keeping.** por_006 carried
+an iNaturalist close-up of leaves and fruit, a rejection under the Cadiz standard, and now
+carries a whole tree in leaf with trunk and crown readable (flat overcast light, POOR on
+photo_light for contrast, and still the better photograph: the subject is the tree). por_005
+carried a generic Camellia japonica bloom off Commons with no tie to Casa Tait or Porto, which
+its own notes had flagged as exactly that since 2026-07-29, and now carries the camellia walk
+itself in flower with the house behind it. Porto stays at 10 photographs; 8 are his.
+
+Also recorded from his mail, and it changes no sentence on the page: he knows no other Bischofia
+javanica in mainland Portugal and would expect the species only in the islands, which agrees
+with the council classification the page already cites. And he will not be testing the app,
+because he has no smartphone.
+
 ## 2026-09-02 - Kansas City opened (4 trees, all one arboretum); Alicante photo pass holds one, rejects six
 
 **Kansas City** (rank 52, 0 trees before today, on Hidde's own named-cities list): finished a
