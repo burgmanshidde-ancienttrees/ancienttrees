@@ -1,0 +1,27 @@
+[
+  {
+    "id": "sdg_001",
+    "name": "The Moreton Bay Fig of Balboa Park",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "about 112 years",
+    "age_min": 110,
+    "age_max": 115,
+    "girth_cm": 1230,
+    "height_m": 24,
+    "location": {
+      "address": "North entrance plaza, San Diego Natural History Museum, Balboa Park, San Diego, CA",
+      "latitude": 32.73275,
+      "longitude": -117.14748,
+      "neighbourhood": "Balboa Park"
+    },
+    "verified_sources": [
+      "https://www.sdnhm.org/about-us/history/museum-lore/moreton-bay-fig-tree/",
+      "https://en.wikipedia.org/wiki/Moreton_Bay_Fig_Tree_(Balboa_Park)"
+    ],
+    "access": "Free, in the open park outside the Natural History Museum. The ground beneath its crown has been fenced off since 1989 to protect the tree's surface roots from foot traffic, but the tree itself is fully visible from the plaza.",
+    "transport": "Served by MTS bus route 7 to Balboa Park (Park Blvd pedestrian overpass stop), about a 10 minute walk to the museum plaza.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Planted 1914 as a five-gallon sapling for the 1915 Panama-California Exposition's San Diego County garden exhibit; as of 2017 the Nat's own history calls it the last surviving plant from that exhibit. Age counted from planting (1914) rather than exposition opening. 1996 measurements from the California Registry of Big Trees, cited by the Nat: height ~78 ft (24 m), crown width ~123 ft (37 m), trunk girth 486 in (12.3 m) -- note girth is a buttressed fig mass, not a single round trunk, so do not repeat it as a simple diameter figure. Declined from soil compaction and root damage from visitors; trimmed and fenced off in 1989, has since recovered and now shows characteristic aerial roots. The Nat's own page explicitly flags an unverified attribution: 'While some attribute the planting to Kate Sessions... there is no documentation to verify this claim' -- do NOT credit Sessions with this specific tree, that would be the bridge-claim trap. One of California's largest trees per the Big Tree registry. Flagged only because the 1996 measurement is three decades old; the tree's survival and continued presence are otherwise well documented (Wikipedia, the Nat's own current page, San Diego Reader 2017 piece)."
+  }
+]
