@@ -707,3 +707,61 @@ Read 2026-09-02:
 - https://support.strava.com/en-us/articles/15401987-Activity-Privacy-Controls
 - https://www.inaturalist.org/pages/geoprivacy
 - https://support.google.com/maps/answer/6320846
+
+---
+
+## Switching the language of a page
+
+**References: komoot and AllTrails, both read directly on 2026-09-02.** Both are
+the standing outdoor references, both are SEO-driven, and both translate real
+content rather than only their interface, which makes them the closest thing to
+our problem that exists.
+
+**Where the control lives: the FOOTER, last item, in both.** Neither puts it in
+the header, and neither uses a flag. komoot's is a plain line reading `English`
+at the very bottom, after the legal links. AllTrails' is a native `<select>`
+with `aria-label="Select a language"` in the footer's own `languageSelect`
+block.
+
+**How the options read: endonyms, the language named in itself.** komoot shows
+`English`. AllTrails goes further and adds the country in the same language,
+`English (US)`, `English (UK)`, `Dansk (Danmark)`, because it distinguishes
+locales rather than languages. Not flags: a flag is a country and several of
+these languages have no single country.
+
+**URL shape: locale subdirectory, English on the bare path.** komoot uses
+`/de-de/discover`, `/ja-jp/discover`, with `/discover` itself being English.
+AllTrails uses `/de/parks/...`, `/es/parques/...`, English again on the bare
+path.
+
+**And AllTrails translates the PATH SEGMENT, not just the content:**
+`/parks/us/california/yosemite-national-park` becomes `/parken/...` in Dutch,
+`/parcs/...` in French, `/parchi/...` in Italian, `/parques/...` in Spanish and
+Portuguese. This is worth recording because it is exactly what Contract J
+already does with our question pages, `/seville/oldest-tree` against
+`/es/seville/arbol-mas-antiguo`. Our URL design matches the reference without
+having been checked against it, which is luck rather than judgement, and it is
+now checked.
+
+**Both emit `hreflang` for every locale of the page**, including
+`x-default`, which we also already do.
+
+**What we do that they do not, and it is defensible.** Our language link is
+inline on the page itself ("Esta página también está disponible"), written in
+the target language, rather than a site-wide control in the footer. That serves
+a reader who landed on the English page from Google and would prefer their own,
+which is our actual traffic pattern. The two are not exclusive and the footer
+control is the one we lack.
+
+**The gap this lookup was done for.** A translated page of ours sits inside an
+English frame: on `/es/seville` the navigation still reads Map, Cities,
+Countries, Species, Parks, Collections, and the buttons still say "Suggest a
+tree", "Sponsor this project" and "Get the app". Both references translate
+their chrome into every locale they serve. Ours is roughly twenty strings.
+
+Sources, read 2026-09-02: `komoot.com/discover` (footer, and its 14 `hreflang`
+alternates) and `alltrails.com/parks/us/california/yosemite-national-park`
+(footer `Footer_languageSelect`, and its 12 `hreflang` alternates). Airbnb was
+not usable as a reference here: its page is behind a consent wall and its globe
+control covers language, currency and region together, which is a different
+problem from ours.
