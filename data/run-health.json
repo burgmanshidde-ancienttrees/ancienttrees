@@ -3341,6 +3341,37 @@
    ],
    "trees": 24,
    "logged": true
+  },
+  {
+   "started": "2026-09-02T12:37:00+00:00",
+   "date": "2026-09-02",
+   "run_id": "33629536503",
+   "minutes": 27.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 213,
+   "denials": 23,
+   "denials_source": "permission_denials: Bash, Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(mkdir), Bash(python3), Bash(set)",
+   "ended": "success",
+   "tokens": 2524683,
+   "claims_held": [
+    "_famous-japan",
+    "matera"
+   ],
+   "commits": 11,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "kansas-city",
+     "trees": 4
+    },
+    {
+     "city": "alicante",
+     "trees": 0
+    }
+   ],
+   "trees": 4,
+   "logged": true
   }
  ],
  "schedule_changes": [
