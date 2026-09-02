@@ -1,0 +1,62 @@
+{
+  "city": "Gutau",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "Gutau's one mapped tree is a European yew beside the Staudinger farmhouse at Lehen, on the edge of this Upper Austrian village. Walkers on the Boblberg circuit call it the thousand-year yew. The Naturdenkmal register that has protected it since 1985 keeps no age at all, and a trunk still under two metres round argues against the name. What is certain: a working farm, a marked hiking loop, and an evergreen nobody can actually date.",
+  "meta_description": "Gutau's yew stands beside a farmhouse at Lehen, locally called the thousand-year yew though its own register keeps no age at all.",
+  "question_meta": "A European yew beside the Staudinger farmhouse at Lehen, Gutau, Upper Austria. Locally called the thousand-year yew; the register gives no age.",
+  "question_answer": "Gutau's only mapped tree is a European yew known locally as the thousand-year yew, though nobody has actually dated it. It stands about twenty metres east of the Staudinger farmhouse at Lehen, on the edge of Gutau in Upper Austria, protected as a Naturdenkmal since 1985. The register carries no age field, and the trunk's own growth, 1.70 metres round in 1985 and 1.90 by 2016, argues against the popular name: a tree that size is unlikely to be anywhere near a thousand years old. It stands beside the Boblberg circuit, a marked local walking loop. Free, no permit, and no age we can vouch for.",
+  "question_context": "The yew grows at the edge of Gutau, a small Upper Austrian village in the Bezirk Freistadt, about twenty metres east of the Staudinger farmhouse in the Lehen area. There is no public transport to the site; it is reached on foot, apparently as a stop on the Boblberg circuit, a local hiking loop that passes the farm. Protected as Naturdenkmal nd292 since 6 February 1985, the yew has been measured twice on record, 1.70 metres round in 1985 and 1.90 metres by 2016, with no age ever assigned by the register itself. The popular name, the thousand-year yew, is a local nickname rather than a documented figure, and given how slowly the trunk has grown, a full millennium looks unlikely. Nothing suggests the tree is anything but healthy and there is no fee or permit to see it. Only one yew Naturdenkmal is registered anywhere in the Gutau municipality, which is why this is almost certainly the tree shown in the photographs used to identify it: Upper Austria's Naturdenkmal programme protects individual trees for age, size or landscape value, one by one, rather than by species, and this yew has carried that protection for four decades.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Gutau?",
+      "a": "The only tree mapped here so far is a European yew beside the Staudinger farmhouse at Lehen, locally called the thousand-year yew. Its own register carries no age field, and the trunk's slow growth (1.70m round in 1985, 1.90m by 2016) makes a literal thousand years unlikely."
+    },
+    {
+      "q": "Is the yew really a thousand years old?",
+      "a": "Probably not. That is a local nickname, not a measurement. No source gives it a real age, and yews this size usually fall well short of a millennium. If you know of a survey that says otherwise, tell us."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free, no permit. The yew stands beside the Staudinger farmhouse at Lehen, apparently reachable as a stop on the Boblberg circuit hiking trail. There is no public transport; you walk in from Gutau village."
+    },
+    {
+      "q": "Can I get close to the tree, or is it on private land?",
+      "a": "It stands right by a working farmhouse, but the evidence points to it being a marked stop on a public trail rather than something you need the farm's permission to see. We have not confirmed this outright, so treat it as likely open rather than certain."
+    }
+  ],
+  "oldest_tree_id": "gut_001",
+  "trees": [
+    {
+      "id": "gut_001",
+      "name": "1000jährige Eibe Gutau",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Beside the Staudinger farmhouse at Lehen, on the Boblberg circuit hiking trail, Gutau, Upper Austria",
+        "latitude": 48.434608,
+        "longitude": 14.624856,
+        "neighbourhood": "Lehen, on the Boblberg circuit"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Freistadt",
+        "https://www.monumentaltrees.com/de/aut/oberosterreich/freistadt/15713_bauernhausesinlehen/"
+      ],
+      "access": "Free. Stands about twenty metres east of the Staudinger farmhouse, apparently as a marked stop on the public Boblberg circuit hiking trail rather than inside the farmyard itself; this reading comes from a hiking club's trip report rather than a stated visitor policy, so treat it as likely rather than guaranteed.",
+      "transport": "No public transport; reached on foot from Gutau village via the Boblberg circuit hiking trail.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The name promises a thousand years. The trunk disagrees.\n\nWalkers on the Boblberg circuit above Gutau pass this yew and call it the thousand-year yew. Upper Austria's register is quieter. It was protected as Naturdenkmal nd292 on 6 February 1985, entered simply as a European yew standing about twenty metres east of the Staudinger farmhouse at Lehen, with no age field at all.\n\nWhat the record does carry is a waistline. In February 1985 the trunk measured 1.70 metres round and the tree stood roughly eleven metres tall. Measured again in 2016, it had reached 1.90 metres. Twenty centimetres in thirty-one years. Even at that unhurried pace, a trunk still under two metres round is a long way short of what a millennium of growth usually leaves behind. Yews are genuinely hard to date, because the old ones hollow out and take their rings with them. But the name here is folklore rather than measurement.\n\nSo this one goes without an age. Nobody has dated it and the register never tried. If you know of a survey that holds up, tell us and it goes on the page.\n\nWhat is not in doubt: a dark, dense evergreen at the edge of a working farm, on a marked walking loop, and older than anyone there can put a number on.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "girth_cm": 190,
+      "height_m": 11
+    }
+  ]
+}
