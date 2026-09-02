@@ -1,0 +1,124 @@
+[
+  {
+    "id": "bhm_001",
+    "name": "The Preston Twin",
+    "species": "English Elm (Ulmus minor 'Atinia')",
+    "age_estimate": "about 410 years",
+    "age_min": 400,
+    "age_max": 420,
+    "girth_cm": 638,
+    "location": {
+      "address": "Preston Park, northern end, in front of the Walled Garden, near Preston Manor, Brighton",
+      "latitude": 50.842,
+      "longitude": -0.15,
+      "neighbourhood": "Preston Park"
+    },
+    "verified_sources": [
+      "https://www.brighton-hove.gov.uk/news/2023/community-effort-turns-tree-tragedy-stunning-sculpture",
+      "https://en.wikipedia.org/wiki/Preston_Twins",
+      "https://www.ancienttreeforum.org.uk/the-preston-twins-brighton-julian-hight/",
+      "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/national-elm-collection"
+    ],
+    "access": "Free, public park, open dawn to dusk",
+    "transport": "Preston Park railway station, 5 min walk; also on several bus routes along London Road/Preston Drove",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One of a pair of English elms (Ulmus minor Atinia) planted c.1613, almost certainly as part of a hedgerow, at the north end of Preston Park. Believed the oldest and largest surviving English elm in Europe (Brighton council: \"largest and oldest surviving English Elm in Europe\"). Reached over 30m tall and 7m crown spread historically; trunk girth recorded by the Ancient Tree Forum at 6.38m (638cm) for each of the pair before one was felled. The eastern twin was storm-damaged in 2017, contracted Dutch elm disease in 2018, and was felled December 2019 to protect its neighbour; it was carved into a gilded sculpture (unveiled spring 2023) that now stands beside the survivor at the same spot, so a visitor sees both: living tree and sculpted twin. The western twin survives and is dedicated to Queen Elizabeth II as part of the Queens Green Canopy (announced May 2022). Wikipedia (last substantively updated May 2025) records no further loss since. Hosts a colony of White-letter Hairstreak butterflies, a species reliant on elm and in decline elsewhere due to Dutch elm disease. Brighton and Hove holds full National Collection status for elms (Plant Heritage, since 1998) and has run an active elm-disease sanitation programme since the early 1970s, which is why this population survived when most of Britain lost its elms. LOCATION: council source (2023) gives a what3words reference (that.brave.daring) for the sculpture/tree pair, described as \"the northern end of Preston Park in front of the Walled Garden, to the left of the main entrance\" near Preston Manor; could not resolve the what3words grid to exact coordinates without a paid API, so pin is approximate at the Preston Manor/Walled Garden end of the park pending a tighter fix. FLAGGED for that reason only; existence, species, age and current survival are each backed by 2+ independent sources (Brighton & Hove City Council, Wikipedia, Ancient Tree Forum, Sussex Express)."
+  },
+  {
+    "id": "bhm_002",
+    "name": "The Brace Elm",
+    "species": "English Elm (Ulmus minor 'Atinia')",
+    "age_estimate": "about 250 years",
+    "age_min": 240,
+    "age_max": 260,
+    "girth_cm": 460,
+    "location": {
+      "address": "Royal Pavilion Garden, Brighton (sources differ on exact lawn: north, south and west edges are each named)",
+      "latitude": 50.8228,
+      "longitude": -0.1382,
+      "neighbourhood": "Royal Pavilion Garden"
+    },
+    "verified_sources": [
+      "https://brightonmuseums.org.uk/discovery/history-stories/living-monuments-a-discovery-of-the-pavilion-elms/",
+      "https://brightonmuseums.org.uk/removal-of-dead-trees-in-the-royal-pavilion-garden/",
+      "https://www.brightonelmtrees.com/the-brace-elm.html"
+    ],
+    "access": "Free, public garden, open year-round",
+    "transport": "Brighton railway station, 15 min walk; central Brighton, many bus routes to Old Steine/North Street",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Known locally as the Brace Elm or Padlock Tree: an English elm (Ulmus minor Atinia) planted in 1776 (one source says planted in the 1790s but repeats the same 1776 date for the planting itself; treat 1776 as the documented date), making it older than the Royal Pavilion. Named for a pair of forged iron bands fitted around the trunk, reputedly in the 20th century, to hold together a hollow, decaying stem, and for the padlocks visitors have attached to it as a love-lock tradition. Brighton & Hove Museums (Living Monuments article) calls it their oldest elm and describes it as \"hollow-but-healthy\", located near the Indian Gate at the south entrance to the garden; a dedicated Brighton elm-tree resource (brightonelmtrees.com) instead places it on the southern edge and gives a 1968 survey figure of 20m height and 4.6m (460cm) girth with two large cavities documented at that time, which is old data and stated as such rather than as a current measurement; another museum article calls it the \"West Lawn\" tree. Sources do not agree on which lawn, so the pin is approximate at the garden centre rather than a specific tree. DATED EVIDENCE OF LIFE: a Brighton & Hove Museums article about felling a dead sycamore, published 14 March 2025 and last modified 4 June 2026, describes this same 1776 elm as a living heritage asset that will benefit from the sycamore's removal (more light), i.e. confirmed standing and being actively managed within the last few months. Distinct from an unrelated, undated \"legacy\" museums story about a different, unnamed elm on the garden's north lawn that WAS felled for Dutch elm disease; that one is not this tree and is not being conflated with it. Part of the National Elm Collection (Plant Heritage status since 1998). FLAGGED for the lawn/location disagreement and the age of the only girth figure found (1968); species, planting date and current survival are corroborated by two independent publishers."
+  },
+  {
+    "id": "bhm_003",
+    "name": "The Stanmer Churchyard Yew",
+    "species": "Yew (Taxus baccata)",
+    "age_estimate": "over 500 years",
+    "age_min": 500,
+    "age_max": 1000,
+    "girth_cm": 594,
+    "location": {
+      "address": "Churchyard of Stanmer Parish Church, north side of the church, Stanmer Park, Brighton",
+      "latitude": 50.8703,
+      "longitude": -0.1019,
+      "neighbourhood": "Stanmer Park"
+    },
+    "verified_sources": [
+      "https://www.brighton-hove.gov.uk/sites/default/files/2022-03/Special%20Trees%20of%20Stanmer%20Park%20-%20A2_Fiona%20Le%20Garsmeur%201.pdf",
+      "https://www.ancient-yew.org/yew_tree_database/stanmer/"
+    ],
+    "access": "Free, public churchyard within Stanmer Park, generally open in daylight hours",
+    "transport": "Falmer railway station, 20-25 min walk through the park; bus routes to Stanmer village",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two ancient yews grow on the north side of Stanmer parish church, first recorded in print in 1833 (J.D. Parry, describing \"two curious old yew-trees in the churchyard\") and appearing in a Burrell Collection drawing of c.1780, so the trees themselves predate that record. Brighton & Hove City Council names this specimen \"believed to be the oldest tree in Brighton\", classifies it \"ancient\" and gives an estimate of over 500 years, with a note that local tradition pushes the estimate to Saxon origins and 1,000+ years, which is a claim to flag rather than state as fact; council and the Ancient Yew Group agree on the 500+ years figure so that is what ships as the estimate, with the older claim recorded here only. Girth 594cm per council survey; the Ancient Yew Group database records the same tree (their id 735) at 594cm and a second yew alongside it (id 736) at 564cm measured at 75cm height, both classed \"Ancient 5-7m\". The Ancient Yew Group site was surveyed on the ground 6 July 1999 (Tim Hills) and the database page references a 2024 site file (Stanmer-2024.pdf, link on the site returned 404 when checked directly, so treat the 2024 update as referenced rather than read), which is dated evidence the tree is still being tracked recently; the council PDF is dated 2022. Yew is naturally long-lived, slow-growing and disease-resistant compared to elm, so absence of a very recent individual sighting is a lower risk here than for the elms. Hollow trunk is typical of ancient yews of this girth class but not explicitly confirmed for this specimen in the sources read; not stated as fact. Publicly accessible churchyard, no gate or restriction mentioned in either source. FLAGGED only for the unresolved 2024 PDF and the Saxon-age folklore claim; existence, species, location and the core age/girth figures are corroborated by two independent bodies (the council and the specialist Ancient Yew Group)."
+  },
+  {
+    "id": "bhm_004",
+    "name": "The Stanmer House Cedar of Lebanon",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "planted in the 18th century, roughly 250 to 300 years",
+    "age_min": 250,
+    "age_max": 300,
+    "location": {
+      "address": "Grounds behind Stanmer House, Stanmer Park, Brighton",
+      "latitude": 50.8691,
+      "longitude": -0.1024,
+      "neighbourhood": "Stanmer Park"
+    },
+    "verified_sources": [
+      "https://www.brighton-hove.gov.uk/sites/default/files/2022-03/Special%20Trees%20of%20Stanmer%20Park%20-%20A2_Fiona%20Le%20Garsmeur%201.pdf",
+      "https://thelivingcoast.org.uk/stanmer-park"
+    ],
+    "access": "Free, public parkland grounds around Stanmer House, open during park hours",
+    "transport": "Falmer railway station, 20-25 min walk through the park; bus routes to Stanmer village",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One of three Lebanon cedars (Cedrus libani) standing behind Stanmer House, planted in the 18th century, traditionally associated with Thomas Pelham, who built the house in the 1720s. Brighton & Hove City Council names this specimen the East Sussex height champion for its species. A second independent source (The Living Coast, the local nature partnership) corroborates the planting era and the trio of cedars and adds that one of the original cedars (not this one) was lost in the great storm of 1989 at over 150 years old, its wood later carved into badger sculptures still on site; that loss is evidence the group is being watched over time and that at least one companion has already been lost, not evidence about this tree. No girth or exact height figure found in either source, only the height-champion designation, so girth_cm is left blank rather than guessed. Age is derived only as broadly as \"18th century planting\" allows; no single source gives a specific planting year for this individual cedar. Publicly accessible parkland, no access restriction found. FLAGGED for the missing measurement and for imprecise identification of which of the three cedars is meant (sources describe them as a group rather than naming this one individually); existence, species, planting era and location are corroborated by two independent sources (the council and The Living Coast)."
+  },
+  {
+    "id": "bhm_005",
+    "name": "The Queen's Park Champion Wych Elm",
+    "species": "Wych Elm (Ulmus glabra)",
+    "age_estimate": "roughly 200 years",
+    "age_min": 180,
+    "age_max": 220,
+    "girth_cm": 389,
+    "location": {
+      "address": "Queen's Park, in the dog exercise area just above the playground, Brighton",
+      "latitude": 50.8248,
+      "longitude": -0.1268,
+      "neighbourhood": "Queen's Park"
+    },
+    "verified_sources": [
+      "https://fqpbrighton.net/4947/4947/",
+      "https://fqpbrighton.net/wildlife/the-elm-trees-of-queens-park/"
+    ],
+    "access": "Free, public park, open year-round",
+    "transport": "Brighton railway station, 25 min walk or short bus ride to Queen's Park Road; also walkable from the seafront",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A Wych elm (Ulmus glabra, the only elm truly native to Britain) in Queen's Park, registered with the Tree Register of the British Isles (TROBI) as the Sussex County Champion for its species on girth: 389cm circumference, the widest Wych elm girth recorded in Sussex, measured June 2020. Height given as 23m. Estimated about 200 years old by Friends of Queen's Park (FQP), the group that surveys and reports on it; the same source says it has survived Dutch elm disease, both World Wars and the Great Storm of 1987. Located in the dog exercise area just above the playground. FQP's separate article on the park's elms independently describes several elms in the same part of the park estimated at 100 to 150+ years old, consistent with a mature elm population here, though it names a \"playground elm\" and \"oldest in the park\" without giving the same 389cm figure, so it cannot be treated as full independent confirmation of the champion measurement itself. Both pages are published by the same group (Friends of Queen's Park), so this ships as a single fully-sourced figure rather than two independent ones, flagged for that reason. Queen's Park elms are part of the wider National Elm Collection and benefit from the same council sanitation programme protecting Brighton's elms generally. No news of this specific tree's loss found in later searches. Worth checking TROBI's own database directly in a future pass for a more recent official measurement."
+  }
+]

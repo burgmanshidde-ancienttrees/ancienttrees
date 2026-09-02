@@ -1,0 +1,21 @@
+{
+  "leads": [
+    {
+      "candidate": "Slottsskogen's largest oak (568 cm circumference)",
+      "reason": "Goteborg Stad's own 'Vardefulla ekar' (Valuable Oaks) page for Slottsskogen states some oaks are over 300 years old and names one specific measurement, 'the largest tree is 568 cm in circumference', and says the park has had some of its oldest oaks age-determined and mapped, with each marked tree signed on site and a locating map available in PDF. This is a genuine naming body (the city, for its own flagship park), but the actual PDF map with individual tree locations could not be reached in two attempts (WebFetch returned a stripped/no-content version, curl redirected to the generic Slottsskogen homepage rather than the vardefulla-ekar subpage). A future pass should find the current URL of the map PDF (search 'Slottsskogen vardefulla ekar karta pdf goteborg.se' or check the page via a browser render) and pull the individual tree with the 568 cm girth plus any age-determination results, which would likely add 1-2 strong candidates."
+    },
+    {
+      "candidate": "Tradgardsforeningen (Garden Society of Gothenburg) historic plantings",
+      "reason": "Suggested in the brief as a likely site (1842 park with a listed palm house). Not researched this pass due to the 40-minute time-box and the four/five-candidate limit already used on the naturminne-designated boundary oaks and the Torslanda linden, which were a more cost-effective single source. Worth a targeted search next time for any individually documented specimen tree (e.g. a named champion conifer or an original 1842 planting with its own record), rather than the park's general planting history."
+    },
+    {
+      "candidate": "Goteborgs botaniska tradgard (Botanical Garden) champion/named trees",
+      "reason": "Suggested in the brief. A general search found the garden holds ~6,000 exotic trees/shrubs in its arboretum and the rare Easter Island tree (Sophora toromiro) collection, but nothing pointing to an individually named or dated ancient specimen with its own page or plaque. Worth checking the garden's own website (botaniska.se) directly for a 'famous trees' or arboretum highlights page, not attempted this pass."
+    },
+    {
+      "candidate": "Ostra kyrkogarden / Stampens kyrkogard old trees",
+      "reason": "Suggested in the brief as the kind of site where this project's best finds usually are. Not researched this pass; no search was run. Worth checking next time, especially since Torslanda kyrkogard (a smaller, more remote churchyard) already produced this pass's single best tree, suggesting Goteborg's churchyards in general are a promising vein."
+    }
+  ],
+  "blocked": []
+}

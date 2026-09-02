@@ -14,6 +14,16 @@ What does is **the Funchal PDM's `Relatorio de Fundamentacao`, Volume II, March 
 
 **Caveat carried from the pass:** the coordinates around it are park-level rather than tree-level. Two different species sat at an identical lat/long inside the Jardim Municipal, which is the tell, so everything from this source ships `approximate` unless a second source pins the trunk.
 
+## Sweden: the national endpoint is dead and the designations are alive as documents (Gothenburg, 2026-09-02)
+
+**A pass that should have failed and did not, because it went looking for the DECISION rather than the dataset.** Naturvardsverket's national naturvardsregistret is shut on every route: WFS disabled, both REST paths 403, and the GetCapabilities answers 200 with an error document inside so a status check reads it as working. On the old reading that closed Sweden.
+
+It does not, because a *naturminne* is designated by a decision, and decisions are published as documents. A Gothenburg pass found **five individually named trees** in the municipal naturminne record: the Torslanda linden, designated in 1945, and four boundary oaks in Orgryte designated on **14 October 2025**, with the city's own decision document (SBF-2025-00290) fetched and read. One authoritative source produced the whole city at about 11.6k tokens a tree.
+
+**This is now the fourth country where the same shape held**, and it is worth stating as one rule rather than four notes. Italy: the regional cards beat the national MASAF file. Germany: the municipal ordinance beats the state register. Madeira: the monumental-tree table sits inside the municipal PLAN. San Francisco: the Landmark Tree list is webpages, not data. Sweden: the county and municipal decisions, not the national geoserver.
+
+**The rule: the tier that actually protects a tree is the tier that names it, and it usually publishes a DOCUMENT rather than a dataset.** An open-data portal search finds the wrong tier and the wrong format, and answers "no register" when the register is a PDF, an ordinance annexe or a decision. So ask who signs the protection order, then go and read what they signed.
+
 ## Germany, second Wikipedia source class: "Liste markanter und alter Baumexemplare in <city>" (found on Hamburg, 2026-09-02)
 
 **A second, better German list class, and it is not the Naturdenkmal mirror already documented below.** A Hamburg pass went looking for the city's own Naturdenkmal register, as the Regensburg finding says to. Hamburg's official register holds **eleven entries and exactly one real tree candidate**: the rest is a boulder, four flood-breach ponds, two moors, a ditch, a clay pit and a garden meadow. The semantic filter ate the whole source.
