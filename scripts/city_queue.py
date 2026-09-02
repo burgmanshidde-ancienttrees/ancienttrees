@@ -223,6 +223,34 @@ def wikidata_points():
     return out
 
 
+def published_points():
+    """Every tree we already publish, as bare coordinates.
+
+    Here so the queue can answer "is this zero city actually a naming trap"
+    on DISTANCE rather than on the city name, which is the same lesson
+    backlog.py already learned: Napoli and Firenze were dispatched as new
+    cities while Naples and Florence had been live for weeks. Funchal is the
+    standing example in the other direction: it has no city file of its own,
+    so it reads as a zero city forever, while data/cities/madeira.json has
+    published its trees since August. Four separate runs have now been sent
+    at it."""
+    out = []
+    for f in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        try:
+            with open(f, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        for t in d.get("trees", []):
+            loc = t.get("location") or {}
+            if loc.get("latitude") is not None:
+                out.append((loc["latitude"], loc["longitude"], d.get("city", "")))
+    return out
+
+
+OURS = []
+
+
 WD = []
 
 
@@ -280,6 +308,8 @@ def measure(pts):
             continue
         lat = sum(t["location"]["latitude"] for t in ts) / len(ts)
         lng = sum(t["location"]["longitude"] for t in ts) / len(ts)
+        PUB_PINS.extend((t["location"]["latitude"], t["location"]["longitude"],
+                         d["city"]) for t in ts)
         lp = os.path.join(ROOT, "data", "leads", f"{slug}.json")
         ready = 0
         if os.path.exists(lp):
@@ -333,6 +363,37 @@ def ease_for(country, supply):
 
 PTS = []
 
+# Every pin we already publish, as (lat, lng, city). Built once in main().
+PUB_PINS = []
+
+
+def covered_by(lat, lng, km=8.0):
+    """Which published city, if any, already has trees in this town.
+
+    Written 2026-09-02 after a session claimed Funchal (#176, "0 trees") and
+    dispatched a pass to open it, when nine of the thirteen candidates it was
+    handed sat inside data/cities/madeira.json and five were already live. The
+    queue is not wrong about the count: nothing is published under the name
+    Funchal. It is matching by NAME, which is the exact failure CLAUDE.md
+    records for Napoli and Firenze and which backlog.py exists to prevent, so
+    the fix belongs here rather than in a run's memory.
+
+    8 km, not 25: the question is "are our pins already in this town", not
+    "is there a published city in the region". Pisa and Lucca are 20 km apart
+    and are genuinely two cities; Funchal and Madeira are 500 metres apart and
+    are one.
+    """
+    dlat = km / 111.0
+    dlng = km / (111.0 * max(math.cos(math.radians(lat)), 0.1))
+    hits = {}
+    for a, b, city in PUB_PINS:
+        if abs(a - lat) < dlat and abs(b - lng) < dlng:
+            hits[city] = hits.get(city, 0) + 1
+    if not hits:
+        return None
+    city, n = max(hits.items(), key=lambda kv: kv[1])
+    return {"city": city, "trees": n}
+
 
 def enrich(doc, live):
     """Write the measured columns into the source file itself, so the numbers a
@@ -366,6 +427,11 @@ def enrich(doc, live):
             # is telling a run to open.
             wd = near(WD, pos[0], pos[1], 15.0) if pos else 0
             supply = reg + wd
+            cov = covered_by(pos[0], pos[1]) if pos else None
+            if cov:
+                c["covered_by"] = cov
+            else:
+                c.pop("covered_by", None)
             c.update(status="pending", trees=0, photos=0, walks=0,
                      register=reg, ready=0, wikidata=wd, supply=supply,
                      target=target_for(c.get("demand"), c.get("basis", "").startswith("measured"), c.get("impressions_10d"), c.get("travel")))
@@ -509,7 +575,11 @@ def main():
         print("      leads file or a Wikidata cluster, or leave it.")
         print("  wikidata = named trees within 15 km that we do NOT map, from")
         print("      the CC0 layer. It is a lead list, not a register: every")
-        print("      entry still needs its second source and its own pin.\n")
+        print("      entry still needs its second source and its own pin.")
+        print("  COVERED = we already publish trees in this town under another")
+        print("      name. Zero here means zero pages called that, not zero")
+        print("      trees on the ground: deepen the named city instead of")
+        print("      opening a second page beside it.\n")
         # Supply first, rank second, since 2026-08-28. Hidde put opening a
         # zero-tree city with supply at the top of rule one that day ("ik denk
         # nog steeds dat het nuttiger is om steden toe te voegen die op 0 staan
@@ -521,8 +591,38 @@ def main():
         def _supply(c):
             return c.get("register", 0) + c.get("ready", 0) + c.get("wikidata", 0)
 
-        openable = [c for c in s1 if _supply(c) > 0]
-        dry = [c for c in s1 if _supply(c) == 0]
+        # A zero city is only a zero city if nobody has published its trees
+        # under another name. Funchal has read as openable since August while
+        # data/cities/madeira.json carried four of its trees, and four separate
+        # runs have now been sent at it; the LOG catches it each time, one
+        # window later. Match on DISTANCE, never on the name, which is the
+        # lesson backlog.py already carries.
+        def _covered(c):
+            pos = city_coords(c["city"], c.get("article"))
+            if not pos:
+                return None
+            hits = [p for p in OURS
+                    if abs(p[0] - pos[0]) < 6.0 / 111.0
+                    and abs(p[1] - pos[1]) < 6.0 / (111.0 * max(0.2, math.cos(math.radians(pos[0]))))]
+            if not hits:
+                return None
+            names = sorted({p[2] for p in hits})
+            return "%d tree(s) already published within 6 km, under %s" % (
+                len(hits), ", ".join(names[:3]))
+
+        trap = [(c, _covered(c)) for c in s1]
+        covered = [(c, why) for c, why in trap if why]
+        rest = [c for c, why in trap if not why]
+        openable = [c for c in rest if _supply(c) > 0]
+        dry = [c for c in rest if _supply(c) == 0]
+        if covered:
+            print("  NOT ACTUALLY ZERO (%d): we already publish trees at this"
+                  % len(covered))
+            print("  place under another name. Deepen that place; do not open a")
+            print("  second page and do not dispatch a pass at these.\n")
+            for c, why in covered[:10]:
+                print("%3d  %-16s %s" % (c["rank"], c["city"][:16], why))
+            print()
         print("  OPENABLE TODAY (%d of %d): supply already on hand, so rule 1(d)"
               % (len(openable), len(s1)))
         print("  does not apply. These are the top of rule one.\n")
@@ -532,6 +632,10 @@ def main():
                 c["rank"], "* " if c["city"].lower() in named else "  ",
                 c["city"][:16], c.get("register", 0), c.get("ready", 0),
                 c.get("wikidata", 0)))
+            cov = c.get("covered_by")
+            if cov:
+                print("      COVERED: %d trees already published as %s"
+                      % (cov["trees"], cov["city"]))
         print("\n  NOTHING TO OPEN THEM FROM (%d): scout a register (rung 5) or"
               % len(dry))
         print("  wait for Hidde to name one. Do not research these from zero.\n")
@@ -608,6 +712,7 @@ def main():
     pts = register_points(warn=True)
     globals()['PTS'] = pts
     globals()['WD'] = wikidata_points()
+    globals()['OURS'] = published_points()
     live = measure(pts)
     doc = enrich(load_source(), live)
     order = rebuild_table(doc)
