@@ -1,0 +1,63 @@
+{
+ "city": "Motosu",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Motosu's one mapped tree is Usuzumi-zakura, the Pale Ink Cherry, whose white blossom fades to grey as it goes over each April. Legend puts the planting around 467 CE, and in 1948 the tree was given three years to live before a local dentist spent a month grafting in new roots and saved it. It was named a National Natural Monument in 1922 alongside Jindai-zakura and Miharu Takizakura, together Japan's Three Great Cherry Trees, and stands free to visit in Usuzumi Park, open at any hour.",
+ "meta_description": "Usuzumi-zakura, saved from death by a dentist's roots graft in 1949, blooms white then pale ink grey. One of Japan's Three Great Cherry Trees.",
+ "question_answer": "Motosu's only mapped tree is Usuzumi-zakura, an Edo-higan cherry traditionally dated to around 1,500 years old on a legend that Emperor Keitai's predecessor planted it around 467 CE. It stands in Usuzumi Park in the Neo valley of Gifu Prefecture, free and open at any hour, a 15 minute walk from Tarumi Station.",
+ "question_meta": "Usuzumi-zakura in Motosu is traditionally dated to around 1,500 years, one of Japan's Three Great Cherry Trees. Free, open 24 hours.",
+ "question_context": "Usuzumi-zakura grows in Usuzumi Park in the Neo valley of Motosu, Gifu Prefecture, and takes its name, pale ink, from the way its white blossom fades to a grey-tinged wash as it goes over each spring. Legend credits the planting to Odo no Okimi, later Emperor Keitai, around 467 CE, before he left the valley for the capital, which is where the traditional age of roughly 1,500 years comes from; treat it as legend rather than a planting record. In 1948 Japan's Ministry of Education inspected the tree and gave it three years to live. A Gifu dentist named Toshiyuki Maeda spent the following month cutting away 238 dying roots and grafting in new ones, and by 1950 the tree had recovered; it has since taken typhoons and is still flowering. It was designated a National Natural Monument on 12 October 1922, the same day as Jindai-zakura and Miharu Takizakura, together making up the Three Great Cherry Trees of Japan.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Motosu?",
+   "a": "Usuzumi-zakura, the only tree mapped here, at Usuzumi Park in the Neo valley. Legend dates the planting to around 467 CE, roughly 1,500 years ago, though that rests on a legend about Emperor Keitai rather than a planting record."
+  },
+  {
+   "q": "Why did a dentist save this tree?",
+   "a": "In 1948 the tree was inspected and given three years to live. A Gifu dentist, Toshiyuki Maeda, spent a month in 1949 cutting away 238 dying roots and grafting in new ones, and the tree had recovered by 1950."
+  },
+  {
+   "q": "When is the best time to see Usuzumi-zakura?",
+   "a": "Early April, when the blossom opens white and fades toward pale grey as it goes over, which gives the tree its name."
+  },
+  {
+   "q": "Is Usuzumi-zakura free to visit?",
+   "a": "Yes. Usuzumi Park has free, 24-hour admission, about a 15 minute walk from Tarumi Station on the Tarumi Railway."
+  }
+ ],
+ "trees": [
+  {
+   "id": "mtz_001",
+   "name": "Usuzumi-zakura (Neodani Usuzumi-zakura)",
+   "species": "Higan Cherry (Prunus subhirtella var. ascendens)",
+   "age_estimate": "traditionally estimated around 1,500 years",
+   "age_min": 1500,
+   "age_max": 1500,
+   "girth_cm": 940,
+   "location": {
+    "address": "995 Neo Itasho, Motosu-shi, Gifu 501-1231, Japan (Usuzumi Park)",
+    "latitude": 35.632441,
+    "longitude": 136.609038,
+    "neighbourhood": "Neo, Motosu"
+   },
+   "story": "In 1948 Japan's Ministry of Education inspected this cherry and gave it three years to live. The following year a Gifu dentist named Toshiyuki Maeda spent a month working on it, cutting away 238 dying roots and grafting in new ones. By 1950 the tree had recovered. It has taken typhoons since and is still flowering.\n\nThe name means pale ink. The blossom opens white and fades to a grey-tinged wash as it goes over, the colour of thin sumi ink, and that fading is as much the point as the peak. Full bloom falls in early April.\n\nLegend puts the planting around 467 CE, by Odo no Okimi, later the Emperor Keitai, before he left the Neo valley for the capital. That is where the traditional figure of about 1,500 years comes from, and a legend is not a planting record, so hold the number loosely. The measurements are firmer: a girth around 9.4 metres, a height given as 17.3, and a branch spread that Japan's Agency for Cultural Affairs puts at roughly 30 metres.\n\nIt was designated a National Natural Monument on 12 October 1922, the same day as Jindai-zakura and Miharu Takizakura, with which it makes up the Three Great Cherry Trees of Japan.\n\nUsuzumi Park is free and open at any hour, fifteen minutes on foot from Tarumi Station on the Tarumi Railway.",
+   "best_time": {
+    "months": [
+     4
+    ],
+    "kind": "flowers",
+    "label": "early April, when the white blossom fades to pale ink grey"
+   },
+   "verified_sources": [
+    "https://online.bunka.go.jp/heritages/detail/172095",
+    "https://www.nippon.com/en/guide-to-japan/sakura00121050/japan%E2%80%99s-top-100-blossoms-usuzumi-park-gifu.html",
+    "https://www.city.motosu.lg.jp/0000001137.html"
+   ],
+   "access": "Free, 24-hour admission to Usuzumi Park.",
+   "transport": "About a 15-minute walk from Tarumi Station on the Tarumi Railway (Tarumi Tetsudo).",
+   "location_precision": "confirmed",
+   "curation_status": "flagged"
+  }
+ ],
+ "oldest_tree_id": "mtz_001"
+}

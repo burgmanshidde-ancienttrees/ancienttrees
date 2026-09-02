@@ -1,0 +1,64 @@
+{
+ "city": "Miharu",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Miharu's one mapped tree is Miharu Takizakura, the Waterfall Cherry, a weeping cherry whose crown comes down in pink strands over a span of 22 metres. Roughly 300,000 people visit it during its short April bloom. It was designated a National Natural Monument in October 1922, in the same first batch as Jindai-zakura and Usuzumi-zakura, together making up Japan's Three Great Cherry Trees. It stands about 60 kilometres from the Fukushima Daiichi plant and came through the 2011 earthquake unharmed.",
+ "meta_description": "Miharu Takizakura, the Waterfall Cherry, draws 300,000 visitors each April. One of Japan's Three Great Cherry Trees, in Fukushima.",
+ "question_answer": "Miharu's only mapped tree is Miharu Takizakura, a weeping Edo-higan cherry traditionally estimated at over 1,000 years old, though no dating method backs the figure. It stands in the village of Miharu, Fukushima, its crown spreading 22 metres east to west, and around 300,000 people visit during its bloom each April.",
+ "question_meta": "Miharu Takizakura is a weeping cherry over 1,000 years old by tradition, drawing 300,000 visitors each April. One of the Three Great Cherry Trees.",
+ "question_context": "Miharu Takizakura stands in the village of Miharu in Fukushima Prefecture, its name meaning waterfall cherry for the way its weeping crown falls in pink strands, 22 metres across east to west and 18 north to south. It was designated a National Natural Monument on 12 October 1922, the same day as Jindai-zakura and Usuzumi-zakura, and Japanese sources describe it as the first cherry tree ever given that status. The traditional age, over a thousand years, carries no dating method behind it, and published measurements disagree with each other by several metres, which the sources themselves never explain. In January 2005 heavy snow broke several branches, and local residents built wooden props that still carry part of the crown's weight today. The tree survived the March 2011 earthquake undamaged, despite standing about 60 kilometres from the Fukushima Daiichi nuclear plant; visitors stopped coming that year and were back within twelve months. Cuttings have since been sent abroad as goodwill gifts, to Bhutan, Poland, Taiwan, Britain and the United States among others.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Miharu?",
+   "a": "Miharu Takizakura, the only tree mapped here, a weeping cherry traditionally said to be over 1,000 years old. No dating method backs the figure, and published measurements of its height and girth disagree with each other by several metres."
+  },
+  {
+   "q": "When does Miharu Takizakura bloom?",
+   "a": "In April, usually mid-to-late in the month depending on the year. A seasonal shuttle bus from Miharu Station runs only during the bloom period, since the site is otherwise described as difficult to reach without a car."
+  },
+  {
+   "q": "Was the tree affected by the 2011 earthquake or the nuclear accident?",
+   "a": "The tree itself came through the March 2011 earthquake unharmed, though it stands about 60 kilometres from the Fukushima Daiichi plant. Visitors stayed away that year and returned within about twelve months."
+  },
+  {
+   "q": "Is Miharu Takizakura free to visit?",
+   "a": "Entry costs 500 yen during the bloom and is free the rest of the year. The seasonal shuttle bus from the station is a separate paid ticket."
+  }
+ ],
+ "trees": [
+  {
+   "id": "mhr_001",
+   "name": "Miharu Takizakura (Miharu Waterfall Cherry)",
+   "species": "Weeping Higan Cherry (Prunus subhirtella)",
+   "age_estimate": "traditionally estimated over 1,000 years",
+   "age_min": 1000,
+   "age_max": 1200,
+   "girth_cm": 950,
+   "location": {
+    "address": "296 Sakurakubo, Aza-Taki, Oaza-Taki, Miharu-machi, Tamura-gun, Fukushima 963-7758, Japan",
+    "latitude": 37.408039,
+    "longitude": 140.499828,
+    "neighbourhood": "Taki, Miharu"
+   },
+   "story": "The 2011 earthquake left this tree unharmed. A snowfall six years earlier nearly did not. In January 2005 heavy snow broke several branches, and local residents built wooden props to carry the weight. The props are still there, and so is the tree.\n\nIt is a weeping Edo-higan of the beni-shidare form, and its name means waterfall cherry: a crown 22 metres across east to west and 18 north to south, coming down in pink strands. Around 300,000 people a year come to stand under it. Cuttings have gone abroad as goodwill gifts to Bhutan, Poland, Taiwan, Britain and the United States, among others.\n\nThe age given everywhere is over a thousand years, with no dating method behind it, so read it as tradition rather than measurement. The other figures are no tidier: sources put the height at both 12 and 19 metres and the girth at 7.9, 9.5 or 11.3, and none of them explains the gap. It was designated a National Natural Monument on 12 October 1922, in the same first batch as Jindai-zakura and Usuzumi-zakura, and Japanese sources say it was the first cherry tree ever given that status.\n\nIt stands about 60 kilometres from the Fukushima Daiichi plant. Visitors stopped coming after 2011 and were back within a year.\n\nEntry costs 500 yen during the bloom and nothing outside it. The shuttle bus from Miharu station runs only while the tree is flowering.",
+   "best_time": {
+    "months": [
+     4
+    ],
+    "kind": "flowers",
+    "label": "April, when the whole crown comes down in pink strands"
+   },
+   "verified_sources": [
+    "https://en.wikipedia.org/wiki/Miharu_Takizakura",
+    "https://www.japan-guide.com/e/e7792.html",
+    "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%98%A5%E6%BB%9D%E6%A1%9C"
+   ],
+   "access": "Paid entry, 500 yen, charged only during cherry-blossom season (mid-to-late April); free the rest of the year. Grounds are open to the public.",
+   "transport": "JR Ban'etsu-to Line to Miharu Station (12 minutes, 260 yen from Koriyama), then a seasonal shuttle bus running only during the bloom period (1-day pass 1,500 yen in 2026, service dates in early-to-mid April). Described by japan-guide.com as rural and difficult to reach by public transport outside that window; a car or taxi is the practical option the rest of the year.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "paid_entry": true
+  }
+ ],
+ "oldest_tree_id": "mhr_001"
+}

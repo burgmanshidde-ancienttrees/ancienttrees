@@ -1,0 +1,64 @@
+{
+ "city": "Hokuto",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Hokuto's one mapped tree is Jindai-zakura, the oldest of Japan's Three Great Cherry Trees and, by tradition, the oldest cherry in the country: somewhere between 1,800 and 2,000 years old. It grows at Jisso-ji Temple in the hills of Yamanashi and was among the first five individual trees Japan ever named a National Natural Monument, in 1922. It flowers pale and drooping in early April, and bloom forecasters track it every year like a piece of infrastructure.",
+ "meta_description": "Jindai-zakura, traditionally Japan's oldest cherry tree at up to 2,000 years, grows at Jisso-ji Temple in Hokuto. One of the Three Great Cherry Trees.",
+ "question_answer": "Hokuto's only mapped tree is Jindai-zakura, an Edo-higan cherry at Jisso-ji Temple traditionally estimated at 1,800 to 2,000 years old, which would make it the oldest cherry tree in Japan. The figure rests on a legend that the warrior prince Yamato Takeru planted it, repeated by tourism boards and government publications but backed by no dating method, so read it as tradition rather than measurement.",
+ "question_meta": "Jindai-zakura in Hokuto is traditionally called Japan's oldest cherry tree, at up to 2,000 years. One of the Three Great Cherry Trees.",
+ "question_context": "Jindai-zakura grows on the grounds of Jisso-ji Temple in Yamataka, a hamlet in the city of Hokuto at the foot of the Southern Japan Alps. In October 1922 the Japanese government named its first National Natural Monuments, and this cherry was one of only five individual trees on that inaugural list, alongside Miharu Takizakura and Usuzumi-zakura, the two trees it is now always grouped with as the Three Great Cherry Trees of Japan. The traditional age, 1,800 to 2,000 years, comes from a legend that the warrior prince Yamato Takeru planted it on his way through the region; no dating method backs the figure, and the trunk is too hollow and knotted to read reliably. What can be measured is the base, a root flare given as 11.8 to 13.5 metres round beneath a tree only about 10 metres tall, spreading outward rather than climbing. Bloom forecasters track it individually every spring, and seeds from it have reportedly been flown into space and grown on in gardens abroad.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Hokuto?",
+   "a": "Jindai-zakura, the only tree mapped here, at Jisso-ji Temple. By tradition it is 1,800 to 2,000 years old, and Japanese sources often call it the oldest cherry tree in the country, though the figure rests on legend rather than a dating method."
+  },
+  {
+   "q": "Why is it called Jindai-zakura?",
+   "a": "Jindai means the age of the gods. Local legend credits the warrior prince Yamato Takeru with planting it on his way through the region, which is also where the traditional age comes from, a legend rather than a measurement."
+  },
+  {
+   "q": "When is the best time to see it?",
+   "a": "Early April, when the pale, drooping blossom typical of Edo-higan cherries opens. Bloom forecasters track the tree individually each spring."
+  },
+  {
+   "q": "Is Jindai-zakura free to visit?",
+   "a": "Jisso-ji Temple charges a small entry fee, around 500 yen, during blossom season; some listings describe it as free the rest of the year, so check locally. The grounds are open to the public."
+  }
+ ],
+ "trees": [
+  {
+   "id": "hok_001",
+   "name": "Jindai-zakura (Yamataka Jindai Zakura)",
+   "species": "Higan Cherry (Prunus subhirtella var. ascendens)",
+   "age_estimate": "traditionally estimated 1,800-2,000 years",
+   "age_min": 1800,
+   "age_max": 2000,
+   "girth_cm": 1180,
+   "location": {
+    "address": "Jisso-ji Temple, 2763 Yamataka, Takegawa-cho, Hokuto-shi, Yamanashi 408-0306, Japan",
+    "latitude": 35.780798,
+    "longitude": 138.367517,
+    "neighbourhood": "Yamataka, Hokuto"
+   },
+   "story": "In October 1922 Japan named its first National Natural Monuments. Five single trees were on that list, and this cherry was one of them. It is also counted among the Three Great Cherry Trees of Japan, with Miharu Takizakura in Fukushima and Usuzumi-zakura in Gifu, both designated on the very same day.\n\nThe age usually given is 1,800 to 2,000 years, tied to a legend that the warrior prince Yamato Takeru planted it. Treat that as a tradition rather than a finding. The prefecture's tourism board, the city of Hokuto and a government cultural publication all repeat the figure and none cites a dating method, and the trunk is too hollow and knotted to read reliably. What can be measured is the base: a root flare given as 11.8 metres round by the prefecture and 13.5 by other listings, under a tree only about 10 metres tall. It grows outward rather than up.\n\nIt is an Edo-higan, the long-lived species behind many of Japan's oldest cherries, and the blossom is pale and drooping in early April. Bloom forecasters still track this individual tree season by season, which is how we know it is alive and watched. Seeds from it have reportedly been flown into space and grown on around the world.\n\nJisso-ji charges around 500 yen during blossom season. Without a car it is a taxi from Hinoharu or Kobuchizawa.",
+   "best_time": {
+    "months": [
+     4
+    ],
+    "kind": "flowers",
+    "label": "early April, when the pale drooping blossom opens"
+   },
+   "verified_sources": [
+    "https://www.yamanashi-kankou.jp/english/uncover/yamataka-jindai-zakura.html",
+    "https://www.city.hokuto.yamanashi.jp/fc/location/22452.html",
+    "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202104/202104_02_en.html"
+   ],
+   "access": "Paid entry to Jisso-ji Temple grounds during blossom season (approx 500 yen adult, per Japanese-language tourism sources); free rest of year per some listings, so check locally. Grounds are open to the public.",
+   "transport": "Nearest station is JR Chuo Main Line's Hinoharu, then taxi or the Hokuto municipal bus (Mukawa loop line) to the Jindai Koen stop; from Kobuchizawa station it is roughly a 30-minute taxi ride.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "paid_entry": true
+  }
+ ],
+ "oldest_tree_id": "hok_001"
+}

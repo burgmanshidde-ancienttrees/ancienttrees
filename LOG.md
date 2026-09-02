@@ -9,6 +9,43 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-02 (autonomous run) - Finished a stranded write pass: Beijing and 3 Japan single-tree pages, 15 trees written
+
+Picked up where an earlier attempt in this window stopped: three claims (beijing, brighton,
+famousjapan) sat open with fully-verified research and no story written. Dispatched one
+write-stories pass across all 15 trees, then assembled and merged the city files myself
+(BRIEF_WRITING.md scopes the writer to prose only).
+
+**Shipped:** Beijing (6 trees, imperial parks and temples), opened from zero, a ranked city per
+city-queue.json. Three of Japan's "Three Great Cherry Trees" published as single-tree
+destination pages under the 2026-08-31 exception: Hokuto (Jindai-zakura), Miharu (Miharu
+Takizakura), Motosu (Usuzumi-zakura), each a real pilgrimage site drawing hundreds of thousands
+of April visitors.
+
+**Brighton collided with a concurrent session** ("Gothenburg and Brighton open...", same day):
+both of us wrote from the same data/research/brighton-verified.json in parallel and pushed
+around the same time. Same trees, same facts, different prose, since each was its own
+write-stories pass over the same source. Rather than double-publish or overwrite already-live
+content on rebase, kept the other session's version as-is and dropped mine; no work lost, since
+the underlying verified research is identical either way.
+
+Caught and fixed two things the build would otherwise have shipped broken on the Japan pages:
+all three shared one id prefix, which would have had their builds overwrite each other's trees;
+and two species-naming conflicts with already-published trees (English Elm's scientific name on
+my now-dropped Brighton draft, Higan Cherry's common name on the Japan pages), both hard rule 9
+violations the build now catches. Also refreshed the Japan country-page count, stale before this
+pass; the UK one was already fixed by the other session in the meantime.
+
+**Left as an honest gap:** Beijing ships 83% behind paid entry (5 of 6 trees), with no free
+candidates on hand to balance it; recorded in CURATION.md for a future pass or register.
+
+Matera's 2 already-written trees remain held below the four-tree floor (unchanged, per the
+2026-09-01 entry).
+
+Build and QA clean (preflight: 0 problems; qa.py's one finding is the shallow-clone sitemap
+lastmod artifact, unrelated to this change, present in any local checkout without full git
+history).
+
 ## 2026-09-02 (session) - The thank-you now says which tree
 
 Hidde got his second "thank you, we received your tree tip", word for word the
