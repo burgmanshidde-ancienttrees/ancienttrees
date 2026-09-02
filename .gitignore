@@ -14,3 +14,10 @@ out/
 # action, and this line makes it impossible for anyone else to commit the
 # in-between state, whatever they type at git add.
 data/i18n/*/*.json.partial
+# And any scratch file a pass leaves in that directory. The build and
+# i18ncheck both treat every *.json under data/i18n/<lang>/ as a translated
+# city, so a working file called _bru_part1.json becomes a city named
+# _bru_part1 and takes the build down. Seen 2026-09-02 during the Brussels
+# pass. Underscore-prefixed names are the convention for "not a city" and
+# data/leads/ already uses it.
+data/i18n/*/_*.json
