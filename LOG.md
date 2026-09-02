@@ -9,6 +9,53 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-02 (session with Hidde) - Two zero cities checked, and the reason the list was lying
+
+He asked for cities to go from zero to something. Three passes went out. One of them
+should never have been dispatched, and finding out why closed two holes.
+
+**Dubai is settled and the answer is no.** A time-boxed pass, one of the seventeen cities
+he named in August. Zero trees, and the reason is structural rather than a short window:
+Dubai's tree heritage is a bulk barcoding project that numbered and GPS-tagged over ten
+thousand ghaf trees as a population, so nobody has ever singled one of them out the way a
+heritage decree does elsewhere. Nothing clears the two-source bar or the exact-spot bar. Two
+real leads and one blocked entry are kept in data/leads/dubai.json with the verdict written
+at the top, so the next pass reads a line rather than researching its way to the same no.
+
+**Funchal was never a zero city. It is Madeira, and we publish ten trees there.** The queue
+lists it at #176 with 0 trees and eight Wikidata candidates, and five of those candidates
+were already live. A pass went out to open it before that surfaced. Worse, a pass on
+2026-09-01 had already run all eight remaining candidates to a verdict, in
+data/leads/madeira.json, and the brief did not show that file either. Both misses are the
+same one: matching a place by its NAME.
+
+Two fixes, both by distance, which is the thing no language can fool:
+
+- `city_queue.covered_by()` flags a zero city whose town already holds our pins, at 8 km.
+  Funchal now prints COVERED, 8 trees already published as Madeira. So does Jersey City,
+  whose six Wikidata candidates are Manhattan and Brooklyn trees we already have.
+- `passcheck.published_near()` says the same thing in the brief, measured against pins
+  rather than a city's mean, and hands over the neighbour's next id and delivery path. It
+  does not overturn resolve()'s Assisi/Perugia guard, which is right and untouched; it
+  reports the evidence the guard was hiding. Because it reassigns the slug, the leads
+  section now surfaces the neighbour's file, which is the half that would have saved the
+  pass.
+
+Two real Madeira leads became visible in the process, invisible until now because leads
+files disagree on field names and every entry printed as a question mark: a second til
+grove, and a rubber tree in a hospital garden with the register's own measurements.
+
+**And the star now survives into the list where it decides something.** A city he named
+that has no register and no Wikidata cluster lands in the dry list by definition, and that
+list is captioned "Do not research these from zero" with no star on any row. Dubai and
+Taipei were printed under a caption that contradicts the rule that covers them. A night run
+read it today and released a live Taipei claim with the reason "from-zero web research not
+authorized". It was authorized, by name, in August. They print in their own block now.
+
+**The honest state of the zero list:** of the 162 ranked cities on zero, not one has four
+or more register trees near it. The supply is not there, so the next batch of zero cities
+needs a register scout rather than another research pass. Taipei is still running.
+
 ## 2026-09-02 - Night run 2026-09-02 15:09 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 11.4 minutes of its 120 minute window, 64 turns, 6 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree. Claims left behind: _famous-germany, New York, which block the top of the queue until they expire.
