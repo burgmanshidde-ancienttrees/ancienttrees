@@ -1,0 +1,19 @@
+[
+  {
+    "id": "lvp_001",
+    "name": "The Allerton Oak",
+    "species": "Sessile Oak (Quercus petraea)",
+    "age_estimate": "widely said to be around 1,000 years (traditional estimate, undated)",
+    "age_min": 400,
+    "age_max": 1000,
+    "girth_cm": 550,
+    "location": {"address": "Calderstones Park, Calderstones Road, Liverpool L18 3JB", "latitude": 53.3825, "longitude": -2.892778, "neighbourhood": "Calderstones Park, Allerton"},
+    "verified_sources": ["https://en.wikipedia.org/wiki/Allerton_Oak", "https://historic-liverpool.co.uk/allerton-oak-ancient-and-award-winning-tree/"],
+    "access": "Free, public park, open daily during park hours. The tree stands behind a protective double fence and cannot be approached to touch, but is fully visible.",
+    "transport": "Mossley Hill or West Allerton rail station, about a 15-20 minute walk; bus routes 61A, 75, 76, 86C stop near the park entrance on Menlove Avenue.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Girth 5.5m (18ft), independently reported by Historic Liverpool and Wikipedia (citing BBC/Woodland Trust Tree of the Year coverage). The '~1,000 years old' figure (seeded c.1000 AD) is repeated across every source found but is a traditional/popular figure, not a ring count or documented planting date; treat as legend-derived, hence the wide age band. It is commonly called the oldest oak in North West England. Reputed to have been the meeting place of a medieval 'hundred court' under its branches, though Historic Liverpool notes some historians think the nearby Calderstones (a neolithic burial monument) is the more likely court site; state as disputed legend, not fact. Split down the middle and largely hollow; local story attributes this to the shockwave of the Lottie Sleigh gunpowder ship explosion on the Mersey, 15 Feb 1864 (11 tonnes of gunpowder, felt across Liverpool), but Historic Liverpool explicitly says 'no one can really say' the explosion caused the split. Metal crutches have propped its heavy limbs since 1907; an ~GBP80,000 project (underway as of 2019) is replacing them with modern adjustable supports. Produces roughly 100,000 acorns a year and was reported thriving as of 2014, despite a 1970s Liverpool Echo prediction it would be dead by 2020. Won England's Tree of the Year in 2014 and again in 2019 (34% of ~11,000 votes), then represented England in the 2020 European Tree of the Year. A sapling grown from its acorns, 'Allerton Oak the Younger', is being raised elsewhere in the park.",
+    "girth_note": "5.5m girth confirmed by two sources; do not use as the sole basis to sharpen the age claim, since no published growth-rate calculation for this specimen was found."
+  }
+]

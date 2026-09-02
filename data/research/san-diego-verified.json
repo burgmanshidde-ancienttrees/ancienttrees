@@ -49,5 +49,30 @@
     "location_precision": "approximate",
     "curation_status": "flagged",
     "verify_notes": "Kate Sessions, San Diego's pioneering horticulturist ('Mother of Balboa Park'), bought 7 acres at Garnet and Pico in Pacific Beach in the 1920s (one source gives 1924 for the purchase) for her final nursery, Soledad Terrace. The tipu tree she planted there is the only survivor of that nursery; it now grows beside California Historical Landmark No. 764, dedicated in 1961 to the nursery site itself (the plaque commemorates her life, not the tree specifically). katestrees.org (a site maintained by a Sessions researcher) dates the tree's planting to 1928 and calls it a protected heritage tree, still alive; the California Historical Landmarks blog gives 'planted in the 1920s', consistent with 1928. Landmark coordinates (32 48.325 N, 117 13.377 W) mark the plaque at the corner; sources describe the tree as standing near the marker rather than giving the tree's own coordinates, hence approximate precision. No girth or height found in any source checked. This is a directly documented Sessions planting (not a bridge claim): multiple sources independently name her as the planter of this specific tree, unlike the Balboa Park fig where the Sessions attribution is explicitly unverified."
+  },
+  {
+    "id": "sdg_003",
+    "name": "The Guadalupe Island Cypress by the Horseshoe Club",
+    "species": "Guadalupe Island Cypress (Hesperocyparis guadalupensis / Cupressus guadalupensis)",
+    "age_estimate": "roughly 130 years, planted around 1892",
+    "age_min": 120,
+    "age_max": 136,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "By the San Diego Chess Club and Horseshoe Club building, 2225 6th Avenue, Balboa Park, San Diego, CA (Sixth Avenue near Ivy Street)",
+      "latitude": 32.7295,
+      "longitude": -117.1613,
+      "neighbourhood": "Balboa Park (Bankers Hill edge)"
+    },
+    "verified_sources": [
+      "https://www.sdnhm.org/blog/blog_details/kate-sessions-a-legendary-san-diego-icon/99/",
+      "https://www.sandiegomagazine.com/neighborhoods/what-s-the-oldest-tree-in-san-diego/article_95d6999c-5fee-11ea-a336-8f59b386be69.html"
+    ],
+    "access": "Free, in the open park along Balboa Park's Sixth Avenue frontage, beside the public chess and horseshoe club building.",
+    "transport": "On the Sixth Avenue side of Balboa Park; served by MTS bus route 3, about a 5 to 10 minute walk from the Cabrillo Bridge / Balboa Park west entrance area.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One of Kate Sessions' own plantings from her 1892 lease of park land at Sixth and Upas, in exchange for planting 100 trees a year (the same lease documented for sdg_002 and the cork oaks below). The Nat's own Sessions biography and San Diego Magazine (2020, 'What's the Oldest Tree in San Diego?') both independently name this species and location, describing it as 'enormously tall' and among the oldest confirmed Sessions plantings still standing, San Diego Magazine giving 'approximately 128 years old' as of 2020 (so roughly 134 by 2026; used a slightly broader band here to stay honest about the rough age). Guadalupe Island cypress is critically rare in the wild on its native Isla Guadalupe (threatened historically by feral goats), which makes a mainland specimen this size and age unusual. No girth or height measurement found in either source. Coordinates are my own estimate of the Sixth Avenue/Ivy Street area by the chess and horseshoe clubs (address 2225 6th Ave, confirmed by the chess club's own site) rather than a sourced tree-level position, hence approximate precision; a future pass should confirm the exact spot on the ground or via a mapped photo. sandiegoreader.com's 2017 'top ten trees of Balboa Park' piece likely covers this tree too but the host returned HTTP 403 (Cloudflare) on every fetch attempt (direct WebFetch, curl with browser UA, Wayback Machine copy, and a reader-proxy), so it could not be used; worth flagging for the blocklist."
   }
 ]
