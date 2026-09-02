@@ -1,40 +1,70 @@
 {
   "leads": [
     {
+      "name": "The Railway Poplar, Alexandra Park",
+      "species": "Railway Poplar (likely Populus x canadensis, historic cultivar), Alexandra Park",
+      "location_hint": "Alexandra Park, Whalley Range, Manchester M16 8HZ",
+      "reason": "Named by the council's RHS/Owen Johnson survey page as 'one of the biggest in England', alongside the Variegated Green Ash which shipped as mcr_004 from the same park. Not used this pass under the four-candidate limit and because only one source (the council page) was found for either; the Ash was chosen as the fourth candidate since it carries a documented planting period. Worth its own pass if a second source turns up, since 'one of the biggest in England' is a strong claim."
+    },
+    {
+      "name": "Aspen Poplars, Fog Lane Park",
+      "species": "Aspen Poplar (Populus tremula)",
+      "location_hint": "Fog Lane Park, Fog Lane, Didsbury, Manchester M20 6HG",
+      "reason": "Named by the council's RHS/Owen Johnson survey page as 'some of the tallest in England', in the same park as the Crimean Limes that shipped as mcr_005. Only one source found. Not pursued further under the four-candidate limit."
+    },
+    {
+      "name": "Scotch Laburnum, Fog Lane Park",
+      "species": "Scotch Laburnum (Laburnum alpinum)",
+      "location_hint": "Fog Lane Park, Fog Lane, Didsbury, Manchester M20 6HG",
+      "reason": "Named by the council's RHS/Owen Johnson survey page as 'one of the tallest in England', in the same park as mcr_005. Only one source found. Not pursued further under the four-candidate limit."
+    },
+    {
+      "name": "Northern Catalpa, Fog Lane Park",
+      "species": "Northern Catalpa (Catalpa speciosa)",
+      "location_hint": "Fog Lane Park, Fog Lane, Didsbury, Manchester M20 6HG",
+      "reason": "Named by the council's RHS/Owen Johnson survey page with no superlative attached (just listed). Only one source found, no distinguishing detail beyond presence. Weakest of the Fog Lane candidates; not pursued."
+    },
+    {
+      "name": "Silver Birch 'Golden Cloud', Fletcher Moss Botanical Gardens",
+      "species": "Silver Birch 'Golden Cloud' (Betula pendula 'Golden Cloud')",
+      "location_hint": "Fletcher Moss Botanical Garden, Stenner Lane, Didsbury, Manchester M20 2RQ",
+      "reason": "Named by the council's RHS/Owen Johnson survey page as 'a very rare tree'. Only one source found; not pursued this pass since Fletcher Moss already contributed two trees (mcr_002, mcr_003)."
+    },
+    {
+      "name": "Eucalyptus, Heaton Park",
+      "species": "Eucalyptus sp.",
+      "location_hint": "Heaton Park, Prestwich/Higher Blackley, Manchester",
+      "reason": "Named by the council's RHS/Owen Johnson survey page as 'might be the biggest of its species' (hedged, not a confirmed claim). Only one source, and the hedge itself makes it a weaker claim than the other council-page trees. Heaton Park otherwise returned no single named, dated, individually-remarkable tree in general web research this pass (see below); this Eucalyptus is the one specific lead the council page gives for that park."
+    },
+    {
       "name": "Cappadocian Maple, Parsonage Gardens",
       "species": "Cappadocian Maple (Acer cappadocicum)",
       "location_hint": "Parsonage Gardens, Stenner Lane, Didsbury (opposite St James' Church, adjoining Fletcher Moss Botanical Garden)",
-      "reason": "Only source found this pass is monumentaltrees.com (girth 2.06m, estimated 126 +/- 30 years old as of 2024), which per hard rule 1 may verify but never be the sole source. Needs one independent source (Tree Register / tree-register.org listing, a Manchester City Council or Didsbury Civic Society document naming this specific tree, or a dated photo/observation) before it can ship. Age at 126 years is modest, not spectacular, so also worth checking whether it carries a real champion-tree designation (Tree Register 'British & Irish Champion' status) that would make the historically-significant case stronger; not confirmed this pass, only inferred by analogy to a different Cappadocian Maple champion at Leonardslee."
-    },
-    {
-      "name": "Adam's Laburnum (Laburnocytisus 'Adamii'), Parsonage Gardens/Fletcher Moss",
-      "species": "+ Laburnocytisus 'Adamii'",
-      "location_hint": "Parsonage Gardens or Fletcher Moss Botanical Garden, Didsbury (didsburycivicsociety.org places it in Parsonage Gardens: 'a very rare specimen of an early bio-engineered tree (Laburnocytisus Adamii), that still survives today')",
-      "reason": "Genuinely rare (a graft-chimaera between Laburnum anagyroides and Chamaecytisus purpureus, created accidentally in 1825 by nurseryman Jean Louis Adam near Paris; very few specimens exist anywhere), which would clear the 'historically significant' bar even with no great age. One source (Didsbury Civic Society) confirms presence and that it 'still survives today', dated page last-updated 2020-12-06. Manchester City Council's own 'rare trees in parks' page (manchester.gov.uk) very likely names this tree with more detail but returned HTTP 403 to both curl and WebFetch this pass; worth another attempt with a browser session. Needs a second independent source and a tree-level coordinate; not attempted further this pass under the four-candidate/time-box rule."
+      "reason": "Only source found across both passes is monumentaltrees.com (girth 2.06m, estimated 126 +/- 30 years old as of 2024), which per hard rule 1 may verify but never be the sole source. The council's rare-trees page (checked this second pass) does not mention this tree, so it did not gain a source. Still needs one independent source before it can ship."
     },
     {
       "name": "The Manchester Poplar, St John's Gardens",
       "species": "Black Poplar (Populus nigra subsp. betulifolia)",
       "location_hint": "St John's Gardens, Lower Byrom Street/Byrom Street/Quay Street, Castlefield, Manchester (a former churchyard, redeveloped as a public garden in 1932)",
-      "reason": "A second, younger Manchester Poplar specimen distinct from the one shipped as mcr_001 (Annie Lees Park, Gorton). Confirmed to exist by Wikipedia's St John's Gardens article and proarbmagazine.com's 2014 city-centre tree trail piece, but neither gives an age, girth or planting date, and the garden itself only dates from 1932, so this individual is not remarkable enough to justify a second, near-duplicate poplar entry on the same city page. Recorded as a lead rather than blocked in case a future pass finds it is in fact notably older or more storied than the 1932 redevelopment suggests."
+      "reason": "A second, younger Manchester Poplar specimen distinct from mcr_001 (Annie Lees Park, Gorton). Confirmed to exist by Wikipedia's St John's Gardens article and a 2014 city-centre tree trail piece, but neither gives an age, girth or planting date, and the garden itself only dates from 1932. Recorded as a lead rather than blocked in case a future pass finds it is more storied than the 1932 redevelopment suggests."
     },
     {
-      "name": "Heaton Park veteran trees (unnamed)",
-      "species": "unknown; the park borders describe a Turkey Oak (Quercus cerris) and mention 'some of the oldest trees in the park' surviving in the restored Western Pleasure Ground, no individual named or dated",
+      "name": "Heaton Park veteran trees (unnamed, other than the Eucalyptus lead above)",
+      "species": "unknown; the park's own descriptions mention a Turkey Oak (Quercus cerris) and 'some of the oldest trees in the park' surviving in the restored Western Pleasure Ground, no individual named or dated",
       "location_hint": "Heaton Park, Prestwich/Higher Blackley, Manchester, especially the Western Pleasure Ground near Heaton Hall",
-      "reason": "Heaton Park is one of Europe's largest municipal parks with an 18th-century hall and genuinely old estate-era planting, and is a strong candidate site, but this pass found no single named, dated, individually-remarkable tree, only general park descriptions. Historic England's Register entry (list-entry/1000854) likely has more but returned HTTP 403 to curl this pass. Worth a dedicated register/HE-listing pass with a browser session rather than plain curl."
+      "reason": "Historic England's Register entry (list-entry/1000854) 403s to curl; not retried via browser this pass since the four-candidate slots were spent on the council page's Fletcher Moss/Alexandra Park/Fog Lane trees instead. Worth a dedicated pass with browser access, same as the council page turned out to be."
     },
     {
       "name": "St Mary's Church, Didsbury churchyard tree",
       "species": "unknown",
-      "location_hint": "St Mary's Church, Didsbury (the brief's suggested site)",
-      "reason": "No source found this pass naming any specific old or notable tree at this churchyard. Not blocked, just unresearched; a future pass could check the church's own website, Historic England listing, or a site visit report."
+      "location_hint": "St Mary's Church, Didsbury",
+      "reason": "No source found across two passes naming any specific old or notable tree at this churchyard. Not blocked, just unresearched."
     },
     {
       "name": "Blackley churchyard tree (St Peter's or other)",
       "species": "unknown",
       "location_hint": "St Peter's Church, Old Market Street, Blackley, Manchester (built 1844) or another Blackley churchyard",
-      "reason": "No source found this pass naming any specific old or notable tree here. St Peter's itself only dates from 1844, which caps how old any planted specimen could plausibly be unless it predates the current building on an older church site. Not blocked, just unresearched."
+      "reason": "No source found across two passes naming any specific old or notable tree here. St Peter's itself only dates from 1844, capping how old any planted specimen could plausibly be unless it predates the current building on an older church site. Not blocked, just unresearched."
     }
   ],
   "blocked": []

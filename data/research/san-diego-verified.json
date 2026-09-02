@@ -23,5 +23,31 @@
     "location_precision": "confirmed",
     "curation_status": "flagged",
     "verify_notes": "Planted 1914 as a five-gallon sapling for the 1915 Panama-California Exposition's San Diego County garden exhibit; as of 2017 the Nat's own history calls it the last surviving plant from that exhibit. Age counted from planting (1914) rather than exposition opening. 1996 measurements from the California Registry of Big Trees, cited by the Nat: height ~78 ft (24 m), crown width ~123 ft (37 m), trunk girth 486 in (12.3 m) -- note girth is a buttressed fig mass, not a single round trunk, so do not repeat it as a simple diameter figure. Declined from soil compaction and root damage from visitors; trimmed and fenced off in 1989, has since recovered and now shows characteristic aerial roots. The Nat's own page explicitly flags an unverified attribution: 'While some attribute the planting to Kate Sessions... there is no documentation to verify this claim' -- do NOT credit Sessions with this specific tree, that would be the bridge-claim trap. One of California's largest trees per the Big Tree registry. Flagged only because the 1996 measurement is three decades old; the tree's survival and continued presence are otherwise well documented (Wikipedia, the Nat's own current page, San Diego Reader 2017 piece)."
+  },
+  {
+    "id": "sdg_002",
+    "name": "The Kate Sessions Tipu Tree",
+    "species": "Pride of Bolivia / Tipu Tree (Tipuana tipu)",
+    "age_estimate": "about a century old, planted in the 1920s",
+    "age_min": 96,
+    "age_max": 106,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Northwest corner of Garnet Avenue and Pico Street, Pacific Beach, San Diego, CA (California Historical Landmark No. 764)",
+      "latitude": 32.805417,
+      "longitude": -117.22295,
+      "neighbourhood": "Pacific Beach"
+    },
+    "verified_sources": [
+      "https://californiahistoricallandmarks.wordpress.com/2013/03/15/no-764-kate-olivia-sessions-nursery-site/",
+      "https://katestrees.org/kates-birthday/",
+      "https://ohp.parks.ca.gov/ListedResources/Detail/764"
+    ],
+    "access": "Free, on a public street corner. The tree and its California Historical Landmark plaque stand in the open on the northwest corner of Garnet Avenue and Pico Street.",
+    "transport": "Served by MTS bus routes through Pacific Beach on Garnet Avenue; roughly a 10 minute walk from the Mission Bay Dr / Garnet Ave corridor.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Kate Sessions, San Diego's pioneering horticulturist ('Mother of Balboa Park'), bought 7 acres at Garnet and Pico in Pacific Beach in the 1920s (one source gives 1924 for the purchase) for her final nursery, Soledad Terrace. The tipu tree she planted there is the only survivor of that nursery; it now grows beside California Historical Landmark No. 764, dedicated in 1961 to the nursery site itself (the plaque commemorates her life, not the tree specifically). katestrees.org (a site maintained by a Sessions researcher) dates the tree's planting to 1928 and calls it a protected heritage tree, still alive; the California Historical Landmarks blog gives 'planted in the 1920s', consistent with 1928. Landmark coordinates (32 48.325 N, 117 13.377 W) mark the plaque at the corner; sources describe the tree as standing near the marker rather than giving the tree's own coordinates, hence approximate precision. No girth or height found in any source checked. This is a directly documented Sessions planting (not a bridge claim): multiple sources independently name her as the planter of this specific tree, unlike the Balboa Park fig where the Sessions attribution is explicitly unverified."
   }
 ]
