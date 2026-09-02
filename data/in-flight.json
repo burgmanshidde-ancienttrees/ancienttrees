@@ -14,12 +14,6 @@
       "claimed_at": "2026-09-02T17:57:04+00:00"
     },
     {
-      "target": "stuttgart",
-      "kind": "verify",
-      "by": "session-1b4787ca",
-      "claimed_at": "2026-09-02T17:54:47+00:00"
-    },
-    {
       "target": "funchal --as session-a4caaf53",
       "kind": "verify",
       "by": "night-run",
@@ -32,22 +26,28 @@
       "claimed_at": "2026-09-02T18:06:54+00:00"
     },
     {
-      "target": "Freiburg",
-      "kind": "write",
-      "by": "session-a4caaf53",
-      "claimed_at": "2026-09-02T18:11:58+00:00"
-    },
-    {
-      "target": "Heidelberg",
-      "kind": "write",
-      "by": "session-a4caaf53",
-      "claimed_at": "2026-09-02T18:11:58+00:00"
-    },
-    {
       "target": "Taipei",
       "kind": "write",
       "by": "session-a4caaf53",
       "claimed_at": "2026-09-02T18:12:21+00:00"
+    },
+    {
+      "target": "stuttgart",
+      "kind": "write",
+      "by": "session-1b4787ca",
+      "claimed_at": "2026-09-02T18:12:28+00:00"
+    },
+    {
+      "target": "freiburg",
+      "kind": "write",
+      "by": "session-1b4787ca",
+      "claimed_at": "2026-09-02T18:12:28+00:00"
+    },
+    {
+      "target": "heidelberg",
+      "kind": "write",
+      "by": "session-1b4787ca",
+      "claimed_at": "2026-09-02T18:12:28+00:00"
     }
   ]
 }
