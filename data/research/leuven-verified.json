@@ -71,5 +71,30 @@
     "location_precision": "confirmed",
     "curation_status": "flagged",
     "verify_notes": "Onroerend Erfgoed inventory entry 131504 plus its own legal protection decree (aanduidingsobject 944, definitief beschermingsbesluit signed 2010-07-12): a black mulberry (Morus nigra) at the corner of Wijnpersstraat and Donkerstraat, a few metres south of the monument-protected former Wijnpershuis (wine press house) of the Sint-Geertrui abbey (protected 1938), now home to the provincial horticulture school De Wijnpers (over 110 years on the site, per the school's own history). Measured girth 244cm at 1.5m height (survey dated 2013-10-23), short trunk (hoogte_stam 0.6m) before it forks, which is the species' normal older-age habit of leaning/sprawling rather than standing tall; crown diameter 17m. The register's own description says the tree 'forms a unity with the protected Wijnpershuis it leans on' (vormt een eenheid met het beschermde Wijnpershuis waarop hij steunt), so it stands close to the building. Protection covers a 20m radius zone around the tree. FLAGGED: single-sourced beyond the register and its own protection decree (both from the same agency, Onroerend Erfgoed); no independent second source found confirming existence, species or age. No age given anywhere; girth alone (244cm) is not enough for a confident derived age for a multi-stemmed, ground-hugging species like black mulberry, so age_estimate is left empty rather than guessed. The exact boundary between public street and the school's own frontage was not independently confirmed by a mapped photo; the register's wording ('op de hoek van' = at the corner of two streets) is the basis for treating it as street-corner public land."
+  },
+  {
+    "id": "lvn_004",
+    "name": "The Ymeria Bundle Plane",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 920,
+    "height_m": null,
+    "location": {
+      "address": "Beside the Ymeria community house (ontmoetingshuis Ymeria) and sports grounds, at the corner of Pastoor Bellonstraat and Weggevoerdenstraat, Wijgmaal, Leuven",
+      "latitude": 50.926247,
+      "longitude": 4.706905,
+      "neighbourhood": "Wijgmaal (Wilsele boundary)"
+    },
+    "verified_sources": [
+      "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/131500",
+      "https://www.onroerenderfgoed.be/blog/preventieve-snoeiwerken-aan-de-ymeria-plataan-leuven"
+    ],
+    "access": "Free, public. Stands beside the Ymeria community meeting house (ontmoetingshuis) and sports grounds in Wijgmaal, at a street corner rather than inside the fenced pitches. Onroerend Erfgoed's own 2015 field report calls it 'this busy, publicly visited location' (deze druk bezochte publieke locatie). The football pitches themselves are bookable by reservation (confirmed via leuven.be/voetbalterreinen-ymeria), but the tree itself stands at the community-house/street side, not on the enclosed playing surface.",
+    "transport": "Wijgmaal, Leuven; roughly 20-25 minutes from Leuven centre by bus toward Wilsele/Wijgmaal",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Onroerend Erfgoed inventory entry 131500 ('Bundelboom van gewone plataan'): a bundle-trunk common plane formed by several individual trees fused after being planted together in one hole, a 19th-century technique to obtain a thick-looking tree quickly. Second, independent source: Onroerend Erfgoed's own blog post (19 November 2015, 'Preventieve snoeiwerken aan de Ymeria-plataan in Leuven'), a field report rather than a register listing, fetched directly and quoted here (not taken from a search summary). It gives the measured figure directly: 'omtrek op borsthoogte van 9,20 m' (girth at breast height 9.20m = 920cm), calls it 'een van de dikste platanen van het land' (one of the thickest plane trees in the country), and confirms legal protection as a monument since 2010. Likely planted on a filled-in former arm of the Dijle marking the old Wilsele/Wijgmaal boundary; an alternative local theory is that it was once pollarded rather than a true bundle-planting, both cited honestly as unresolved by the source itself. The trunk is hollow at the base (a bike rack literally stands inside it per the source) with a stability review in 2015 leading to preventive pruning by a specialist crew (Bioom Boombeheer, under Onafhankelijk Boomtechnisch Advies De Linde) working with the City of Leuven and Onroerend Erfgoed; the source describes the remaining wood as still vigorous ('de zware takken groeien nog sterk en lijken heel vitaal'). GIRTH IS EXPLICITLY A FUSED BUNDLE OF MULTIPLE STEMS, NOT ONE TRUNK: no age estimate is derived from it, because the standard girth-to-age growth-rate method assumes a single stem and would badly overstate age here; age_estimate is left empty rather than guessed, exactly the trap the rulebook warns about. FLAGGED for two reasons: (1) direct field confirmation of vitality dates to 2015, eleven years old; search-engine summaries (not independently fetched, so not used as fact here) suggest an active 2024-2026 Wijgmaal masterplan explicitly keeps this tree, but that could not be confirmed by directly fetching a dated primary source in the time available, so treat 'still standing' as likely but not freshly verified. (2) The tree sits adjacent to the Ymeria sports grounds, which ARE bookable by reservation for football use (leuven.be/voetbalterreinen-ymeria); the tree itself is described by the source as being at a busy public spot near the community house rather than inside the reserved pitch, but a future pass should confirm this distinction on the ground or via a recent street-level photo before treating it as fully settled."
   }
 ]
