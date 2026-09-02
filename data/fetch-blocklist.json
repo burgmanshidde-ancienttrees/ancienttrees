@@ -356,6 +356,11 @@
    "what": "403 to both curl and WebFetch.",
    "workaround": "unknown",
    "date": "2026-09-02"
+  },
+  "klbotanicalgarden.gov.my": {
+   "what": "Fails to resolve or connect entirely, curl exit 1, HTTP 000.",
+   "workaround": "unknown; the KL pass used FRIM's own site and tourism sources instead",
+   "date": "2026-09-02"
   }
  }
 }

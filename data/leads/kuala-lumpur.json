@@ -1,4 +1,65 @@
 {
-  "leads": [],
-  "blocked": []
+ "leads": [
+  {
+   "candidate": "Perdana Botanical Garden (Taman Botani Perdana / Lake Gardens), including the Carcosa Seri Negara grounds within it",
+   "reason": "Real old-garden site (laid out from 1888/1889) with repeated secondary-source claims of 'heritage trees' and 'mahogany trees more than 300 years old', but no individually named or documented specimen tree found in this pass. The 300-year mahogany claim is almost certainly wrong or a bridge claim: mahogany (Swietenia) is a New World genus not introduced to Malaya until the 19th/20th century, and the garden itself is only ~138 years old; it appears verbatim across several tourism sites and looks copied rather than sourced, so it was not used. The Carcosa Seri Negara grounds inside the gardens (former colonial residence, now a museum since 2017, described as open to the public) are separately reported to hold 'some of the most majestically shaped rain trees in the country', again as an ensemble rather than one named tree. A future pass should try: the official klbotanicalgarden.gov.my site (did not resolve for this pass, see verify_notes-style host note below), a rendered/JS fetch if it is JS-heavy, DBKL's own heritage-tree list (593 trees reported city-wide per a 2020 Selangorkini article, no public list found), or an on-the-ground photo survey to identify one standout individual specimen worth a page entry."
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "The rain trees behind Sultan Abdul Samad Building / along Merdeka Square and Jalan Raja (Royal Selangor Club padang)",
+   "reason": "Not a single collectible point: every source describes a row/avenue of colonial-era rain trees rather than one identifiable tree with an obvious place to stand, matching the project's own 'avenue is not one place to stand' rule. No individually named or plaqued specimen found despite targeted searching in English and Malay ('pokok hujan Dataran Merdeka'). Keeping as blocked rather than a lead because the site itself (a manicured ceremonial square) makes a single standout tree unlikely to exist; a reader tip naming one specific tree there would reopen this."
+  }
+ ],
+ "verified_but_unpublished": [
+  {
+   "id": "kul_001",
+   "name": "The Jelutong Tree of KL Tower",
+   "species": "Jelutong (Dyera costulata)",
+   "age_estimate": "about a century old",
+   "age_min": 95,
+   "age_max": 130,
+   "girth_cm": null,
+   "location": {
+    "address": "Menara Kuala Lumpur (KL Tower), 2 Jalan Punchak, off Jalan P. Ramlee, Bukit Nanas, 50250 Kuala Lumpur",
+    "latitude": 3.152778,
+    "longitude": 101.7038,
+    "neighbourhood": "Bukit Nanas"
+   },
+   "verified_sources": [
+    "https://uk.trip.com/moments/detail/kuala-lumpur-45-136364573",
+    "https://wanderlog.com/place/details/9147172/jelutong-tree",
+    "https://www.alamy.com/jelutong-tree-dyera-costulata-at-kl-tower-bukit-nanas-kuala-lumpur-malaysia-image230624731.html"
+   ],
+   "access": "Free to view in the outdoor lobby/pedestrian mall area of KL Tower, reached by the free shuttle from the main gate; the tower's observation deck itself needs a paid ticket from about MYR 25.",
+   "transport": "Bukit Nanas Monorail station, about 10 minute walk uphill",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "verify_notes": "Standing Jelutong (Dyera costulata) preserved inside the grounds of KL Tower/Menara Kuala Lumpur, at Bukit Nanas Forest Reserve, the last patch of primary rainforest inside the KL city limits (gazetted 1906). When the tower was built (completed 1996), the design was shifted and a retaining wall built around the tree at a cost reported as RM430,000 so it would not be cut down; the tree now grows beside the pedestrian walkway near the lobby entrance. Age reported inconsistently across sources: wanderlog says '95-year-old', nerdnomads and others say 'over 100 years old' -- kept broad and vague rather than picking one. No register or arborist survey found giving girth; do not invent one. Location coordinates used are KL Tower's building address (approximate), not a tree-level GPS fix -- I could not find a published lat/long for the tree itself, only photographic and descriptive confirmation it stands beside the lobby/pedestrian mall. Species confirmed both by an Alamy stock photo captioned 'Jelutong tree (Dyera costulata) at KL Tower, Bukit Nanas' and by multiple travel-site descriptions. Flagged because sources are travel/tourism sites rather than an official DBKL or KL Tower heritage designation document; I could not find DBKL's own heritage-tree list (593 trees reported city-wide per a 2020 Selangorkini article) published anywhere online to cross-check against."
+  },
+  {
+   "id": "kul_002",
+   "name": "The Keladan of FRIM Field 12",
+   "species": "Keladan (Dryobalanops oblongifolia)",
+   "age_estimate": "roughly 115 years old",
+   "age_min": 110,
+   "age_max": 120,
+   "girth_cm": 364,
+   "location": {
+    "address": "Forest Research Institute Malaysia (FRIM), Field 12, Jalan FRIM, 52109 Kepong, Selangor",
+    "latitude": 3.235339,
+    "longitude": 101.634269,
+    "neighbourhood": "Kepong (about 16 km northwest of central Kuala Lumpur)"
+   },
+   "verified_sources": [
+    "https://www.frim.gov.my/keladan-among-the-oldest-planted-forest-trees-at-frim/"
+   ],
+   "access": "Inside FRIM's forest research campus, which is open to the public daily; RM1 entry for Malaysian citizens, RM5 for non-citizens, plus a small vehicle fee if driving in.",
+   "transport": "About 16 km from central Kuala Lumpur; no direct rail station, reached by car/Grab or a bus plus short ride from Kepong Sentral (KTM). Within the roughly 30-minute day-trip boundary by car, closer to 45 to 60 minutes by public transport in traffic.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "verify_notes": "FRIM's own official site (frim.gov.my, article dated 22 January 2018, 'Keladan, among the oldest planted forest trees at FRIM') documents a specific individual keladan tree in Field 12, an area of Kepong cleared for non-systematic trial planting from December 1910 to 1912. Species Dryobalanops oblongifolia (kapur/keladan family, Dipterocarpaceae), planted alongside kapur (D. aromatica) in that same trial. The article gives hard measurements for the largest specimen: diameter at breast height 115.8 cm, height 36.4 m, age at time of writing 116 years (so planted circa 1902, which conflicts slightly with the article's own 1910-1912 planting window for the field -- recorded as a discrepancy rather than resolved). Girth recorded here as circumference derived from the stated DBH via pi (115.8 x pi = ~364 cm); the source itself reports DBH, not circumference, noted so the writer does not repeat it as a trunk-tape measurement. FRIM's Director General and GIS branch staff are photographed with the tree in the article, which is the strongest kind of institutional source this project accepts (equivalent to a register entry). Single-sourced: I could not find independent news coverage of this specific tree, only of FRIM's Field 12 planting programme and the institute's July 2025 UNESCO World Heritage listing (Selangor Forest Park) generally, which corroborate the site's history and continued significance but not this individual tree by name. Flagged for that reason. 'Alive now' evidence is indirect: the source article is from 2018, but FRIM's own website carries live admission-fee and visitor-guide pages updated as recently as July 2026, confirming the institute and its grounds are actively open and maintained; I found no report of Field 12 or this tree being felled or lost. Location is campus-level (FRIM's main entrance coordinates), not a tree-level GPS fix; Field 12 is a named plot within FRIM's 545-hectare estate and I could not pin its exact position within the pass's time budget."
+  }
+ ],
+ "note": "\n\nNOT PUBLISHED 2026-09-02. Two trees, under the four-tree floor, both single-sourced, and the single-destination-tree exception does not rescue them: neither the KL Tower jelutong nor FRIM's keladan is a reason somebody travels. Done and sourced; do not re-verify. THIS CITY IS THE NAMING PROBLEM RECORDED IN BRIEF_RESEARCH.md: DBKL runs a heritage-tree programme, but no published list of designated specimens surfaced, and Perdana Botanical Garden's own heritage claims never resolved to one named tree. The Merdeka Square rain trees are an avenue and blocked as such. ONE FABRICATION CAUGHT AND DELIBERATELY NOT USED: the widely repeated claim that Perdana holds mahogany trees over 300 years old fails on its own terms, since mahogany is a New World genus and the garden is about 138 years old. It is copied between tourism sites. Do not let it back in."
 }
