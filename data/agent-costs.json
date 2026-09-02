@@ -4553,6 +4553,51 @@
     "note": "three new pages, 13.3k per tree from the harness's own counter. Two species strings corrected for hard rule 9 before the build could fail on them.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "belfast",
+    "kind": "verify",
+    "tokens": 65000,
+    "trees": 4,
+    "note": "Northern Ireland's own bodies (NIEA, TROBI) rather than the gated Woodland Trust inventory. Refused to settle whether 'Granddad' and the promoted Belvoir Oak are one trunk or two.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "marseille",
+    "kind": "verify",
+    "tokens": 105000,
+    "trees": 0,
+    "note": "NOT published: 3 trees, none a destination. Six parks all describe their tree populations collectively and name nobody, which is the yield predictor now written into BRIEF_RESEARCH.md. Caught a WebSearch summary misattributing a Grasse tree to Marseille.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "sarajevo",
+    "kind": "verify",
+    "tokens": 80000,
+    "trees": 0,
+    "note": "NOT published, honestly: both best-documented sets are avenues and fail the collectible-point rule, and the Zuta tabija walnuts were felled Jan 2025. Evidenced the siege warning: Vrelo Bosne's trees were burned for heating and the park was replanted in 2000.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "kuala-lumpur",
+    "kind": "verify",
+    "tokens": 61000,
+    "trees": 0,
+    "note": "NOT published: 2 single-sourced trees, neither a destination. Caught a fabricated claim copied between tourism sites, that Perdana holds 300-year-old mahoganies, which fails on mahogany being a New World genus in a 138-year-old garden.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "San Diego + Rio + Liverpool + Belfast",
+    "kind": "write",
+    "tokens": 245000,
+    "trees": 16,
+    "note": "four new pages from zero. 15.3k per tree against the 15k target. Three species strings and one unusable source URL corrected before the build could fail on them.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

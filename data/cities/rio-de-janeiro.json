@@ -1,0 +1,222 @@
+{
+  "city": "Rio de Janeiro",
+  "country": "Brazil",
+  "status": "needs_curation",
+  "intro": "Rio scatters its remarkable trees rather than clustering them. Two grow inside the Jardim Botânico, which charges to get in: the kapok Tom Jobim stopped at on his morning walks, and an African mahogany of 49.1 metres, the tallest tree in the garden's collection. Two more stand on open streets under heritage protection, one of them the first tree the city ever landmarked, saved by a hundred neighbours who turned out under it in 1980. One is the only catalogued centenary specimen of a critically endangered species. And one is a baobab ten metres round, an hour away by ferry.",
+  "meta_description": "Rio's remarkable trees: Tom Jobim's kapok, a 49-metre mahogany, the first tree the city ever landmarked, and a baobab 10 metres round on Paquetá.",
+  "question_answer": "The oldest tree in Rio de Janeiro is most likely Maria Gorda, the baobab standing on the beachfront of Paquetá island, though its age is genuinely disputed. One account has it planted in 1627 by colonisers who carried the seed from the African savanna, which would put it close to four hundred years; another says a baobab arrived from Manaus in 1907 and took the name then. Its trunk measures ten metres round, and it is reached only by ferry from Praça XV, roughly an hour each way.",
+  "question_meta": "Rio's oldest tree is probably Maria Gorda, the Paquetá baobab, 10 metres round. Its age is disputed between 1627 and 1907, and we say so.",
+  "question_context": "Almost nothing in Rio has been dated properly, which is why this answer comes with a range rather than a number. Maria Gorda's two competing origin stories are nearly three centuries apart, and neither has a document behind it that anyone has published.\n\nThe runners-up are no better behaved. The fig on Rua Faro, which became the first tree the city ever landmarked in 1980, is called over 200 years old by one account of its own rescue and more than 350 by the neighbourhood association that was founded to save it. The emperor's tree in Campo de Santana was planted by the French landscaper Auguste François Glaziou, who was commissioned to create that park in 1871, but no source states the year this particular tree went in, so it is given as a band of 140 to 160 years rather than counted from the park's founding date. The two giants inside the Jardim Botânico carry no published age at all, only heights.\n\nWhat Rio has instead of dated trees is protected ones, some of them since 1967.",
+  "oldest_tree_id": "rio_006",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Rio de Janeiro?",
+      "a": "Probably Maria Gorda, the baobab on Paquetá island, with a trunk ten metres round. Its age is disputed: one account gives a planting in 1627, another says a baobab came from Manaus in 1907 and took the name then. Nobody has settled it."
+    },
+    {
+      "q": "Are Rio's remarkable trees free to visit?",
+      "a": "Four of the six are free, standing on public streets and in a public park in the centre. The other two, the kapok known as Tom's tree and the 49.1 metre African mahogany, are inside the Jardim Botânico and need a garden ticket."
+    },
+    {
+      "q": "How do you get to the baobab on Paquetá?",
+      "a": "By boat from Praça XV in central Rio. The regular ferry takes about 60 to 70 minutes each way and a faster catamaran runs some crossings in 30 to 40. Treat it as its own day out rather than an add-on to a mainland walk."
+    },
+    {
+      "q": "Which trees in Rio are protected by law?",
+      "a": "Several here. The Tijuca fig has been immune from felling under a state decree since 1968, the fig on Rua Faro became the city's first landmarked tree in 1980, and Maria Gorda is listed individually by the state heritage institute and was part of a group of ten Paquetá trees landmarked in 1967."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rio_001",
+      "name": "The Sumaúma of Tom Jobim",
+      "species": "Kapok (Ceiba pentandra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Jardim Botânico do Rio de Janeiro, near the Aleia Custódio Serrão, Rua Jardim Botânico 1008, Jardim Botânico, Rio de Janeiro",
+        "latitude": -22.9675,
+        "longitude": -43.2245,
+        "neighbourhood": "Jardim Botânico"
+      },
+      "story": "Antônio Carlos Jobim walked in this garden most mornings and stopped in front of this kapok. The staff have called it a árvore de Tom ever since, Tom's tree. In January 1995, a year after his death, IBAMA set a plaque at its foot addressing him as maestro soberano, and the columnist Antonio Callado wrote the whole thing up in the Folha de São Paulo that week.\n\nThe tree stands 40.01 metres tall, one of the specimens the Jardim Botânico put on its Trilha das Árvores Gigantes when the Giant Trees Trail opened in September 2022. Ceiba pentandra is the sumaúma, the tree that holds the top of the canopy across the Amazon and up into Central America, buttressed at the base the way rainforest giants are.\n\nNobody has dated it. The species is credited with lives well past a century and heights near seventy metres, but that is the species rather than this individual, and there is no ring count, no planting record and no published estimate for this trunk. So the honest answer is that we do not know how old Tom's tree is, and somebody at the garden probably does.\n\nIt was standing and photographed as recently as November 2024, when Ashley Biden posed in front of it during the G20 and the picture ran widely.",
+      "how_to_recognise": "A plaque set at the foot of the trunk addresses Tom Jobim as maestro soberano. Other sumaúmas grow along the same path, and the plaque is what settles which one this is.",
+      "verified_sources": [
+        "https://agenciabrasil.ebc.com.br/geral/noticia/2022-09/jardim-botanico-do-rio-lanca-trilha-das-arvores-gigantes",
+        "https://www.terra.com.br/planeta/noticias/qual-e-a-arvore-favorita-de-tom-jobim-que-virou-cenario-para-a-foto-de-filha-de-biden,79a6046f9431544751d68c4643210e49qdyxhb9v.html"
+      ],
+      "access": "Paid entry to the Jardim Botânico do Rio de Janeiro (daily, standard garden ticket)",
+      "paid_entry": true,
+      "transport": "Jardim Botânico neighbourhood, reachable by bus; roughly 20-25 min from central Rio by car/taxi",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "height_m": 40,
+      "notes": "Height 40.01m per the garden's own Trilha das Árvores Gigantes (Agência Brasil, Sept 2022). Age deliberately left undocumented rather than derived from generic species longevity, which would be a bridge claim. Coordinates are the garden's approximate centre; sumaúma specimens line the Aleia Custódio Serrão and this could not be confirmed as the exact same tree from open sources, hence approximate precision and the plaque as the recognition point."
+    },
+    {
+      "id": "rio_002",
+      "name": "The Giant African Mahogany",
+      "species": "African Mahogany (Khaya senegalensis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "height_m": 49,
+      "location": {
+        "address": "Jardim Botânico do Rio de Janeiro, Rua Jardim Botânico 1008, Jardim Botânico, Rio de Janeiro",
+        "latitude": -22.9675,
+        "longitude": -43.2245,
+        "neighbourhood": "Jardim Botânico"
+      },
+      "story": "In the wild, Khaya senegalensis stops at around 30 to 35 metres. This one is 49.1 metres, which makes it the tallest tree in the Jardim Botânico's living collection and roughly the height of a sixteen-storey building. It is a West African tree, from the Sahel and the dry savannas, and it has done considerably better in Rio than it manages at home.\n\nThe garden made it the anchor of its Trilha das Árvores Gigantes, the Giant Trees Trail, opened on 21 September 2022, which is Brazil's Tree Day. Marcus Nadruz, who coordinates the garden's living collection, led the first walk. The trail takes in ten or eleven specimens depending on which report you read, every one of them over 25 metres, and the runner-up is an imperial palm at 48.1 metres, a metre short.\n\nWhat nobody has published is how old it is or how thick. The garden's own trail page sits behind a login, so any measurements it holds are unreadable from outside, and the two news reports of the launch give the height and nothing else. If you have walked the trail with a guide who knows the rest, we would like to hear it.\n\nThe height on its own is worth the walk. Standing under a mahogany half again as tall as its species manages in Africa is a strange piece of arithmetic to do with your neck.",
+      "how_to_recognise": "It anchors the garden's Giant Trees Trail: the tallest crown in the collection at 49.1 metres, a metre above the imperial palm that comes second.",
+      "verified_sources": [
+        "https://agenciabrasil.ebc.com.br/geral/noticia/2022-09/jardim-botanico-do-rio-lanca-trilha-das-arvores-gigantes",
+        "https://diariodorio.com/trilha-das-arvores-gigantes-e-lancada-no-jardim-botanico-do-rio/"
+      ],
+      "access": "Paid entry to the Jardim Botânico do Rio de Janeiro (daily, standard garden ticket); this specimen anchors the garden's own guided 'Trilha das Árvores Gigantes' (Giant Trees Trail)",
+      "paid_entry": true,
+      "transport": "Jardim Botânico neighbourhood, reachable by bus; roughly 20-25 min from central Rio by car/taxi",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Height 49.1m reported independently by Agência Brasil and Diário do Rio covering the trail launch on 21 Sept 2022. No age or girth published in either; the JBRJ's own trail detail page required an authenticated login. Coordinates are garden-area only, so the exact position within the arboretum is not fixed."
+    },
+    {
+      "id": "rio_003",
+      "name": "The Figueira Gigante of Tijuca",
+      "species": "Strangler Fig (Urostigma sp.)",
+      "age_estimate": "over a century",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Rua Mariz e Barros, 678, in front of the SENAI building, Tijuca, Rio de Janeiro",
+        "latitude": -22.9202,
+        "longitude": -43.2379,
+        "neighbourhood": "Tijuca"
+      },
+      "story": "In October 1968 the state of Rio put this fig beyond the reach of a chainsaw. Decree E 2433 lists it as imune ao corte, immune from felling, which is a legal category the state heritage institute keeps for individual remarkable trees rather than for buildings. It has stood on the pavement of Rua Mariz e Barros ever since, in front of number 678, opposite the SENAI building.\n\nIt is a strangler fig, a mata-pau, a plant that begins life in the fork of another tree and finishes by replacing it. This one has a short, thick, grooved trunk and a sprawl of aerial roots that have interlaced into something between a wall and a cage. The heritage catalogue calls it secular, centuries old, and puts no number on it, so neither will we.\n\nOne source is all this tree has: a heritage catalogue entry naming the decree. What that leaves you with is a protection order from 1968 and an address you can go and test.\n\nWhich is also the honest gap here. We have not found a dated sighting of it in recent years, only the listing, unchanged. If you walk down Mariz e Barros and it is still standing over the pavement, that is worth telling us, and so is the opposite.",
+      "how_to_recognise": "A short, thick, grooved trunk with aerial roots sprawled and interlaced around it, standing over the pavement in front of number 678, across from the SENAI building.",
+      "verified_sources": [
+        "https://www.ipatrimonio.org/rio-de-janeiro-figueira-gigante/"
+      ],
+      "access": "Free, a street tree visible and reachable from the public sidewalk at all times",
+      "transport": "Tijuca neighbourhood; reachable by metro (Saens Peña or Afonso Pena stations) plus a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single source: ipatrimonio.org, which names INEPAC decree E 2433 of 24 October 1968 directly. Two corroborating leads (Museu da Pessoa's digital exhibition, multirio.rio.rj.gov.br) returned HTTP 403 and a refused connection respectively and are not counted as sources. No dated recent photograph or news mention confirms vitality; flagged for a vitality check rather than assumed dead. Address and decree number are exact and testable by a reader."
+    },
+    {
+      "id": "rio_004",
+      "name": "The Emperor's Tree of Campo de Santana",
+      "species": "Árvore-do-Imperador (Chrysophyllum imperiale)",
+      "age_estimate": "about 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "height_m": 12,
+      "location": {
+        "address": "Campo de Santana (Praça da República), Centro, Rio de Janeiro",
+        "latitude": -22.9058,
+        "longitude": -43.1943,
+        "neighbourhood": "Centro"
+      },
+      "story": "This is the only catalogued centenary specimen of its species in Rio, and part of it is held up by steel cable. In April 2022 the forestry engineer Sydney Brasil climbed the tree, twelve metres and more, and fitted cabling to carry two limbs that had cracked over old cavities. He had first flagged the damage in 2019.\n\nChrysophyllum imperiale is critically endangered in its own Atlantic Forest, and it is called the emperor's tree because two emperors were fond of it. Dom Pedro I and Dom Pedro II both liked the fruit, which looks like an abiu, pale yellow skinned with a sweet translucent pulp, and Dom Pedro II sent seedlings abroad. Catalogued specimens now stand in the botanical gardens of Sydney, Lisbon, Buenos Aires, Brussels and Florence.\n\nIt grows in Campo de Santana, the largest green space in central Rio, which the French landscaper Auguste François Glaziou was commissioned to create in 1871. Dom Pedro II had brought him over in 1858 to run the imperial parks and gardens, and he went on to lay out the Passeio Público, the grounds of the Palácio do Catete and Quinta da Boa Vista. Glaziou planted this tree. No source gives the year, so its age is a band of 140 to 160 years rather than a number counted from the park's own founding.\n\nEighteen years after that park opened, the Republic was proclaimed in it.",
+      "how_to_recognise": "Look for the steel cables slung between two of its upper limbs, fitted in 2022 to carry branches that had cracked over old cavities.",
+      "verified_sources": [
+        "https://diariodorio.com/as-arvores-mais-antigas-do-rio-de-janeiro/",
+        "https://www.correiobraziliense.com.br/brasil/2022/04/5000254-o-resgate-ambiental-no-rio-de-janeito-de-um-dos-simbolos-do-imperio.html"
+      ],
+      "access": "Free, in the public park of Campo de Santana, open daily",
+      "transport": "Central station (Central do Brasil) or Presidente Vargas metro station, a few minutes' walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Age kept broad at 140-160 rather than pinned to Glaziou's 1871 commission, which no source connects to this tree's planting year: that join would be a bridge claim. Confirmed alive and under active conservation as of April 2022 (Correio Braziliense/Agência Estado). Height 12m+ is the only measurement published; no girth found. Pin is park-level, the position within Campo de Santana's paths is not fixed."
+    },
+    {
+      "id": "rio_005",
+      "name": "The Fig Tree of Rua Faro",
+      "species": "Fig (Ficus sp.)",
+      "age_estimate": "disputed, over 200 years",
+      "age_min": 200,
+      "age_max": 350,
+      "location": {
+        "address": "Rua Faro, near no. 80, at the top of the street close to Casa Maternal Mello Mattos, Jardim Botânico, Rio de Janeiro",
+        "latitude": -22.9685,
+        "longitude": -43.2286,
+        "neighbourhood": "Jardim Botânico"
+      },
+      "story": "In 1980 this fig became the first tree the city of Rio ever landmarked, and it took a protest in the street to get there. A construction company had plans for a building at number 45 of Rua Faro and wanted the tree felled or cut hard back. On 8 January 1980 more than a hundred residents turned out under it, led by the lawyer Leonel Kaz, and the campaign founded a neighbourhood association that still exists. A federal protection order came first and was then annulled by the same federal body that had issued it. The city's newly formed heritage council stepped in, and Decreto 2.783 of 23 September 1980 made the tree a protected municipal asset. Two days earlier the Jornal do Brasil had run the story across the front of its Caderno B.\n\nIts age is disputed and we are not going to settle it. JB em Folhas, retelling the rescue in 2023, calls it over 200 years old. AMAJB's own history of itself calls it a living being of more than 350 years. The band here holds both.\n\nThe fig grew up beside the old path to the seventeenth-century Capela de Nossa Senhora da Cabeça, when the Faro family owned the Chácara da Cabeça here in the nineteenth century. Neither account names the species beyond fig. If you know which one it is, tell us.",
+      "how_to_recognise": "At the top of Rua Faro, standing over the road close to the entrance of the Casa Maternal Mello Mattos.",
+      "verified_sources": [
+        "https://jbemfolhas.com.br/no-meio-do-caminho-tinha-uma-figueira/",
+        "http://amajb.org.br/historia-da-amajb/"
+      ],
+      "access": "Free, a street tree on the public Rua Faro, visible and reachable at all times",
+      "transport": "Jardim Botânico neighbourhood; reachable by bus, roughly 20 min from central Rio",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Ages disagree between the two sources (over 200 per JB em Folhas 2023, more than 350 per AMAJB) and are recorded rather than resolved. Confirmed alive as of the JB em Folhas piece of 28 September 2023. A search summary named the species as Ficus tomentella and the address as no. 51; neither directly-read source states a scientific species, so it stays at genus level and the page asks the reader. Location is street-level, not tree-level."
+    },
+    {
+      "id": "rio_006",
+      "name": "Maria Gorda, the Baobab of Paquetá",
+      "species": "Baobab (Adansonia sp.)",
+      "age_estimate": "disputed, likely centuries old",
+      "age_min": 120,
+      "age_max": 399,
+      "girth_cm": 1000,
+      "location": {
+        "address": "Praia dos Tamoios, near the corner of Ladeira do Vicente, Ilha de Paquetá, Rio de Janeiro",
+        "latitude": -22.7658,
+        "longitude": -43.1078,
+        "neighbourhood": "Ilha de Paquetá"
+      },
+      "story": "The sign in front of this baobab makes an offer: eternal luck to whoever kisses and respects me, and seven years of bad luck for every unkindness done to me. Islanders take it seriously enough to embrace the trunk, which is ten metres round.\n\nMaria Gorda, Fat Mary, is the main reason a good number of people get on the ferry to Paquetá at all. She is listed individually by the state heritage institute, and she was also one of ten trees on the island landmarked together by the city back in 1967. Her age is a mess. One account has her planted in 1627 by early colonisers who brought the seed from the African savanna. Another, which we could not read directly, claims a baobab arrived from Manaus in 1907 and took the name then. Almost three centuries separate those two, so the band here is left wide rather than picking a side.\n\nLocal tradition ties her origin to the death of an enslaved woman, Maria Apolinária, said to have vowed to leave a mark of African culture on the island. That is oral history rather than record, and it is told here as such.\n\nShe was alive and well in January 2025. A resident of sixty-four years told a reporter there had been no vandalism lately, and that she had thrown three seedlings, all replanted elsewhere on Paquetá.",
+      "how_to_recognise": "Ten metres round on the Praia dos Tamoios beachfront, with a sign at its foot promising luck to whoever kisses it. A younger baobab elsewhere on the island is a different tree.",
+      "verified_sources": [
+        "https://bafafa.com.br/turismo/bairros/maria-gorda-baoba-em-paqueta-plantado-em-1627-da-sorte-eterna-se-for-cuidado-com-carinho",
+        "https://abcdoabc.com.br/maria-gorda-a-arvore-baoba-que-une-tradicao-vandalismo-e-historia-na-ilha-de-paqueta/"
+      ],
+      "access": "Free, standing on the public beachfront street of Praia dos Tamoios; reachable at any time",
+      "transport": "Only reachable by ferry from Praça XV in central Rio: the regular CCR Barcas boat takes about 60-70 minutes each way, with a faster catamaran service running some crossings closer to 30-40 minutes; this is a boat trip, not a short hop, and should be planned as its own outing rather than a quick add-on to a mainland walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Age disputed: Bafafa gives a 1627 planting and a 10m trunk circumference; an unverified search summary claims a specimen came from Manaus in 1907 and took the name then. Band left wide rather than resolved. Reconfirmed alive and cared for by ABC do ABC in January 2025 (resident's name deliberately not published). A separate, younger baobab on Paqueta, planted 2013 and cut by vandals, is a different tree and is not this entry."
+    }
+  ]
+}

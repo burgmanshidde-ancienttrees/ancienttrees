@@ -1,0 +1,160 @@
+{
+  "city": "San Diego",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "San Diego's trees were planted, not inherited. In 1892 the city leased Kate Sessions park land on the condition that she plant a hundred trees a year in Balboa Park, and the 1915 exposition brought in much of the rest. So the oldest tree anyone can date here is around 130 years old, which is genuinely old for this city. All four are free: a fig 12 metres round, a cypress from an island off Baja, a kauri from New Zealand, and a tipu that outlived the nursery around it.",
+  "meta_description": "San Diego planted its own shade. A 1914 Moreton Bay fig 12 metres round, a Guadalupe cypress from 1892, and a New Zealand kauri on the Plaza.",
+  "question_answer": "The oldest tree in San Diego is a Guadalupe Island cypress on the Sixth Avenue side of Balboa Park, beside the chess and horseshoe club building, at roughly 130 years. San Diego Magazine went looking for the city's oldest tree in 2020 and named this one, putting it at about 128 years then. It is one of the trees Kate Sessions planted under her 1892 lease of park land at Sixth and Upas, which obliged her to plant a hundred trees a year in Balboa Park.",
+  "question_meta": "San Diego's oldest tree is a Guadalupe Island cypress in Balboa Park, planted around 1892 by Kate Sessions and now roughly 130 years old.",
+  "question_context": "A hundred and thirty years is a young answer by the standards of most cities, and here it is the right one. San Diego's shade is not old growth that a city grew up around; it was planted, mostly between 1892 and the 1915 Panama-California Exposition, and a tree that predates that effort is hard to find on the mesa. So the oldest trees in the city are the earliest plantings rather than the last survivors of anything.\n\nThe cypress has a second thing going for it. Cupressus guadalupensis grows wild in one place on earth, Isla Guadalupe off Baja California, where feral goats have long been the main threat to it, and a large mainland specimen is unusual for that reason alone. Nobody has published a girth or a height for this one, which is the frustrating part of a tree that two independent sources both call enormously tall.\n\nThe runner-up is easier to date exactly. The Moreton Bay fig outside the Natural History Museum went in as a five-gallon sapling in 1914 and is the last plant left from the county garden exhibit it was planted for.",
+  "oldest_tree_id": "sdg_003",
+  "faq": [
+    {
+      "q": "What is the oldest tree in San Diego?",
+      "a": "A Guadalupe Island cypress on the Sixth Avenue edge of Balboa Park, roughly 130 years old, planted by Kate Sessions under her 1892 lease of park land. San Diego Magazine put it at about 128 years when it went looking for the city's oldest tree in 2020."
+    },
+    {
+      "q": "Why are San Diego's oldest trees only a century old?",
+      "a": "Because the city planted them. Kate Sessions began putting a hundred trees a year into Balboa Park from 1892, and the 1915 Panama-California Exposition brought in much of the rest. A tree here that has stood since the 1890s has been there almost as long as the park has."
+    },
+    {
+      "q": "Are San Diego's remarkable trees free to visit?",
+      "a": "All four are. Three stand in Balboa Park with no ticket and no gate, and the fourth is on a street corner in Pacific Beach beside its historical landmark plaque. Museum admission is only needed for the galleries, never for the trees outside them."
+    },
+    {
+      "q": "Did Kate Sessions plant the big fig in Balboa Park?",
+      "a": "Probably not, and nobody can show that she did. The Natural History Museum, which the fig stands outside, says openly that the attribution to Sessions has no documentation behind it. The tipu tree in Pacific Beach is the one on this list she is independently credited with planting."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sdg_001",
+      "name": "The Moreton Bay Fig of Balboa Park",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "about 112 years",
+      "age_min": 110,
+      "age_max": 115,
+      "girth_cm": 1230,
+      "height_m": 24,
+      "location": {
+        "address": "North entrance plaza, San Diego Natural History Museum, Balboa Park, San Diego, CA",
+        "latitude": 32.73275,
+        "longitude": -117.14748,
+        "neighbourhood": "Balboa Park"
+      },
+      "story": "This fig went into the ground as a five-gallon sapling. That was 1914, planted for the San Diego County garden exhibit at the Panama-California Exposition the year after, and it is the last plant from that exhibit still alive. A survey for the California Registry of Big Trees in 1996 put it at 24 metres tall with a crown 37 metres across and a trunk 12.3 metres round, though that last figure is a buttressed fig mass rather than one clean stem. Moreton Bay figs do not so much grow a trunk as accumulate one.\n\nIts worst years came from being admired. Decades of visitors walking the ground under the crown compacted the soil and damaged the surface roots, and by the 1980s the tree was going backwards. In 1989 it was trimmed and the ground beneath it fenced off. It recovered. The aerial roots now hanging from the limbs are the sign of a fig doing well rather than merely holding on.\n\nSome accounts credit the planting to Kate Sessions, who supplied a great deal of what grows in this park. The Natural History Museum, whose north entrance the tree stands outside, says flatly that there is no documentation for that. A hundred and twelve years on, nobody knows whose hands put it in.\n\nThe measurements above are thirty years old. The tree has not stopped growing since.",
+      "verified_sources": [
+        "https://www.sdnhm.org/about-us/history/museum-lore/moreton-bay-fig-tree/",
+        "https://en.wikipedia.org/wiki/Moreton_Bay_Fig_Tree_(Balboa_Park)"
+      ],
+      "access": "Free, in the open park outside the Natural History Museum. The ground beneath its crown has been fenced off since 1989 to protect the tree's surface roots from foot traffic, but the tree itself is fully visible from the plaza.",
+      "transport": "Served by MTS bus route 7 to Balboa Park (Park Blvd pedestrian overpass stop), about a 10 minute walk to the museum plaza.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Age counted from the 1914 planting, not from the exposition's 1915 opening. Girth is a buttressed fig mass, not a round trunk; do not restate it as a diameter. The Natural History Museum's own page explicitly says the Kate Sessions attribution has no documentation, so the story says so rather than repeating it. Flagged only because the registry measurements date from 1996."
+    },
+    {
+      "id": "sdg_002",
+      "name": "The Kate Sessions Tipu Tree",
+      "species": "Tipu Tree (Tipuana tipu)",
+      "age_estimate": "about a century old, planted in the 1920s",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Northwest corner of Garnet Avenue and Pico Street, Pacific Beach, San Diego, CA (California Historical Landmark No. 764)",
+        "latitude": 32.805417,
+        "longitude": -117.22295,
+        "neighbourhood": "Pacific Beach"
+      },
+      "story": "This tipu is the last living thing from Kate Sessions' final nursery. Sessions, the horticulturist San Diego calls the mother of Balboa Park, bought seven acres at Garnet and Pico in Pacific Beach in the 1920s, one source dating the purchase to 1924, and ran Soledad Terrace on the land. The nursery is gone. The tree is what is left of it.\n\nShe planted it in 1928 according to katestrees.org, a site kept by a researcher of her work, which also records it as a protected heritage tree. The California Historical Landmarks record gives the looser 'planted in the 1920s', which agrees. Nobody has published a girth or a height for it, so if you happen to be carrying a tape measure, we would like the number.\n\nThe bronze plaque beside it is California Historical Landmark No. 764, dedicated in 1961. Read it carefully, because it commemorates the nursery site and Sessions herself rather than this tree. The distinction matters here: her name gets attached to a great many San Diego trees without any document behind it, and this one is the exception, independently credited to her by several sources.\n\nTipuana tipu comes from Bolivia and Argentina. In early summer it drops sprays of yellow-orange flowers over whatever is underneath, which here is a street corner.",
+      "how_to_recognise": "It grows beside the bronze California Historical Landmark plaque on the northwest corner of Garnet Avenue and Pico Street.",
+      "verified_sources": [
+        "https://californiahistoricallandmarks.wordpress.com/2013/03/15/no-764-kate-olivia-sessions-nursery-site/",
+        "https://katestrees.org/kates-birthday/",
+        "https://ohp.parks.ca.gov/ListedResources/Detail/764"
+      ],
+      "access": "Free, on a public street corner. The tree and its California Historical Landmark plaque stand in the open on the northwest corner of Garnet Avenue and Pico Street.",
+      "transport": "Served by MTS bus routes through Pacific Beach on Garnet Avenue; roughly a 10 minute walk from the Mission Bay Dr / Garnet Ave corridor.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "A directly documented Sessions planting, unlike the Balboa Park fig: several sources independently name her as the planter of this specific tree. Landmark coordinates mark the plaque at the corner rather than the tree, hence approximate precision. No girth or height found in any source checked.",
+      "best_time": {
+        "months": [5, 6],
+        "kind": "flowers",
+        "label": "late May and June, when the crown turns yellow-orange and then drops the lot onto the pavement"
+      }
+    },
+    {
+      "id": "sdg_003",
+      "name": "The Guadalupe Island Cypress by the Horseshoe Club",
+      "species": "Guadalupe Island Cypress (Cupressus guadalupensis)",
+      "age_estimate": "roughly 130 years, planted around 1892",
+      "age_min": 120,
+      "age_max": 136,
+      "location": {
+        "address": "By the San Diego Chess Club and Horseshoe Club building, 2225 6th Avenue, Balboa Park, San Diego, CA (Sixth Avenue near Ivy Street)",
+        "latitude": 32.7295,
+        "longitude": -117.1613,
+        "neighbourhood": "Balboa Park (Bankers Hill edge)"
+      },
+      "story": "San Diego Magazine went looking for the oldest tree in the city in 2020 and came back with this cypress, then about 128 years old. It is one of the trees Kate Sessions planted under the deal she struck in 1892: the city leased her park land at Sixth and Upas, and in exchange she put a hundred trees a year into Balboa Park. This is among the oldest of her plantings still standing.\n\nThe species makes it stranger than the date does. Cupressus guadalupensis grows wild in exactly one place on earth, Isla Guadalupe off Baja California, where feral goats have long been the main threat to what is left of the groves. A large mainland specimen of a tree that rare, on a public lawn beside a chess club, is an odd survival.\n\nBoth the Natural History Museum's own account of Sessions and San Diego Magazine name the species, the tree and the spot, and both describe it as enormously tall. Neither publishes a girth or a height, which is the frustrating part of a tree everyone agrees is remarkable. If you can measure it, we will take the number.\n\nA hundred and thirty years is not old in most of the places this site covers. In a city that had to plant its own shade, it is close to the beginning.",
+      "how_to_recognise": "A very tall cypress on the Sixth Avenue frontage of the park, standing beside the chess and horseshoe club building at 2225 Sixth Avenue.",
+      "verified_sources": [
+        "https://www.sdnhm.org/blog/blog_details/kate-sessions-a-legendary-san-diego-icon/99/",
+        "https://www.sandiegomagazine.com/neighborhoods/what-s-the-oldest-tree-in-san-diego/article_95d6999c-5fee-11ea-a336-8f59b386be69.html"
+      ],
+      "access": "Free, in the open park along Balboa Park's Sixth Avenue frontage, beside the public chess and horseshoe club building.",
+      "transport": "On the Sixth Avenue side of Balboa Park; served by MTS bus route 3, about a 5 to 10 minute walk from the Cabrillo Bridge / Balboa Park west entrance area.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "San Diego Magazine gave approximately 128 years as of 2020; the band here is kept broad rather than sharpened to a single figure. Species string set to the Cupressus form to match the rest of the corpus (Hesperocyparis guadalupensis is the same tree). Coordinates are an estimate of the Sixth Avenue / Ivy Street area by the chess and horseshoe clubs rather than a sourced tree-level position. sandiegoreader.com returned HTTP 403 on every fetch route and is a blocklist candidate."
+    },
+    {
+      "id": "sdg_004",
+      "name": "The Kauri by the Mingei Museum",
+      "species": "Kauri (Agathis australis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Beside the Mingei International Museum (House of Charm), Plaza de Panama, Balboa Park, San Diego, CA",
+        "latitude": 32.731356,
+        "longitude": -117.151108,
+        "neighbourhood": "Balboa Park"
+      },
+      "story": "There is a New Zealand kauri on the Plaza de Panama and almost nothing about it is written down. Agathis australis is barely grown anywhere in Southern California, which is what makes a mature one standing beside the House of Charm worth crossing the park for, whatever its size turns out to be. The record that confirms it is a single geotagged, photographed observation made in July 2016, still the only record of the species anywhere near San Diego on that platform.\n\nLocal pieces have described what is almost certainly this same tree, one of them calling it possibly the most valuable plant in the park, and quoting a height and a rough planting decade. None of those pages could be read directly, so none of their numbers are repeated here. This entry carries no age and no height rather than a figure nobody has checked.\n\nWhat is left is the tree itself, and it does not look like its neighbours. Kauri grow a straight grey column of a trunk and hold the crown right at the top of it, which reads oddly on a plaza planted with spreading subtropicals.\n\nIf you know when it went in, or how tall it is now, tell us. Somebody in San Diego knows, and it is not written down anywhere we can reach.",
+      "verified_sources": [
+        "https://www.inaturalist.org/observations/342689280"
+      ],
+      "access": "Free, in the open plaza outside the Mingei International Museum. No admission needed to see the tree itself; the museum charges for entry to its galleries.",
+      "transport": "Central Balboa Park, on the Plaza de Panama; served by MTS bus route 7 to the Prado, about a 10 minute walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Existence, species and position confirmed from a geotagged, photographed iNaturalist observation (id 342689280, 2016-07-09, 32.7313561/-117.1511082), the only Agathis australis record near San Diego on that platform. The second source listed by the verify pass (sandiegoreader.com) returned HTTP 403 on every fetch route and was dropped rather than cited unread, so this ships single-sourced. Its reported height (~65ft, or 52ft measured 1994) and a late-1930s/early-1940s planting estimate came only from search summaries and are deliberately not recorded. sandiegoreader.com and pacifichorticulture.org are blocklist candidates."
+    }
+  ]
+}

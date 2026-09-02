@@ -1,0 +1,104 @@
+{
+  "city": "Liverpool",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Liverpool keeps its two remarkable trees in one public park in Allerton. The Allerton Oak there was voted England's Tree of the Year in 2019, taking 34 percent of more than eleven thousand votes, and went on to represent England in the European contest. It is split down the middle, hollow, and propped on metal crutches since 1907, and it still drops something like a hundred thousand acorns a year. The sweet chestnut a short walk away is almost seven metres round, with bark that spirals as it climbs. One gate, one afternoon.",
+  "meta_description": "The Allerton Oak in Calderstones Park was England's Tree of the Year in 2019. Split, hollow, propped since 1907, and still dropping acorns.",
+  "question_answer": "The oldest tree in Liverpool is the Allerton Oak in Calderstones Park, Allerton. It is everywhere called a thousand years old, though that figure is tradition rather than measurement, so the honest band runs from about 400 years to 1,000. It stands behind a protective double fence, a 15 to 20 minute walk from Mossley Hill or West Allerton station, and in 2019 it was voted England's Tree of the Year with 34 percent of more than eleven thousand votes.",
+  "question_meta": "Liverpool's oldest tree is the Allerton Oak in Calderstones Park, called a thousand years old by tradition and 400 to 1,000 on the evidence.",
+  "question_context": "The thousand-year figure has been repeated so often that it reads like a measurement, and it is not one. No ring count is possible on a trunk this hollow, and no planting record exists, so what remains is a girth of 5.5 metres and a tree that is plainly very old. Hence the wide band: 400 years at the cautious end, a thousand at the traditional one.\n\nTwo stories are usually told to fill the gap, and neither dates the tree. The first says the local hundred court met under its branches in the Middle Ages, which is where the nickname the Law Oak comes from, though some historians think the neolithic Calderstones nearby are the likelier meeting place. The second blames the trunk's great split on the Lottie Sleigh, a ship carrying eleven tonnes of gunpowder that exploded on the Mersey on 15 February 1864 and was felt across the city. Historic Liverpool's verdict on that is simply that no one can really say. Both are good stories about the oak. Neither is evidence of its age.",
+  "oldest_tree_id": "lvp_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Liverpool?",
+      "a": "The Allerton Oak in Calderstones Park. It is popularly called a thousand years old, but that figure comes from tradition rather than from a ring count or a planting record, so the honest range is 400 to 1,000 years."
+    },
+    {
+      "q": "Is the Allerton Oak really a thousand years old?",
+      "a": "Nobody has proved it. The trunk is hollow, which rules out ring counting, and no document records a planting. What is certain is a girth of 5.5 metres and a tree that has been the landmark of this ground for centuries."
+    },
+    {
+      "q": "Can you walk up to the Allerton Oak?",
+      "a": "Not quite. It stands inside a protective double fence, so you can see all of it but cannot touch the trunk. The fence is why the ground under the crown has not been compacted the way it is around many veteran trees."
+    },
+    {
+      "q": "Are Liverpool's trees free to visit?",
+      "a": "Yes. Both stand in Calderstones Park, a public park open daily with no ticket and no gate to negotiate. Mossley Hill and West Allerton stations are each a 15 to 20 minute walk away."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lvp_001",
+      "name": "The Allerton Oak",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "widely said to be around 1,000 years (traditional estimate, undated)",
+      "age_min": 400,
+      "age_max": 1000,
+      "girth_cm": 550,
+      "location": {
+        "address": "Calderstones Park, Calderstones Road, Liverpool L18 3JB",
+        "latitude": 53.3825,
+        "longitude": -2.892778,
+        "neighbourhood": "Calderstones Park, Allerton"
+      },
+      "story": "In 2019 this oak took 34 percent of more than eleven thousand votes and was named England's Tree of the Year, then went on to represent England in the European competition. It had already won the English title once before, in 2014.\n\nIt is everywhere called a thousand years old. That number is tradition, not measurement: the trunk is hollow, which rules out ring counting, and nobody wrote down a planting. The honest band runs from about 400 years to that thousand. What can be measured is a girth of 5.5 metres and a trunk split from top to bottom.\n\nTwo stories attach to the split and neither is settled. One says the local hundred court sat under its branches in the Middle Ages, which is why it is also called the Law Oak, though some historians prefer the neolithic Calderstones nearby as the meeting place. The other blames the Lottie Sleigh, a ship carrying eleven tonnes of gunpowder that blew up on the Mersey on 15 February 1864 and was felt across Liverpool. Historic Liverpool's verdict is that no one can really say.\n\nMetal crutches have carried its heaviest limbs since 1907, replaced from 2019 by adjustable modern props at a cost near eighty thousand pounds. It still drops something like a hundred thousand acorns a year. A Liverpool Echo piece in the 1970s predicted it would be dead by 2020.",
+      "how_to_recognise": "It stands inside a protective double fence, propped on metal crutches, with the trunk split from top to bottom and largely hollow.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Allerton_Oak",
+        "https://historic-liverpool.co.uk/allerton-oak-ancient-and-award-winning-tree/"
+      ],
+      "access": "Free, public park, open daily during park hours. The tree stands behind a protective double fence and cannot be approached to touch, but is fully visible.",
+      "transport": "Mossley Hill or West Allerton rail station, about a 15-20 minute walk; bus routes 61A, 75, 76, 86C stop near the park entrance on Menlove Avenue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Girth 5.5m (18ft) reported independently by Historic Liverpool and Wikipedia. Do not use the girth to sharpen the age claim: no published growth-rate calculation for this specimen was found. The hundred-court and Lottie Sleigh stories are recorded as unproven tradition in both sources. A WWII anecdote about acorns sent to Liverpool servicemen came only from a search summary and is deliberately not used.",
+      "best_time": {
+        "months": [9, 10],
+        "kind": "fruit",
+        "label": "September and October, when it puts down something close to a hundred thousand acorns"
+      }
+    },
+    {
+      "id": "lvp_002",
+      "name": "The Calderstones Sweet Chestnut",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "roughly 280 years (derived from girth)",
+      "age_min": 230,
+      "age_max": 330,
+      "girth_cm": 683,
+      "location": {
+        "address": "Calderstones Park, Calderstones Road, Liverpool L18 3JB",
+        "latitude": 53.38167,
+        "longitude": -2.89417,
+        "neighbourhood": "Calderstones Park, Allerton"
+      },
+      "story": "The age of this sweet chestnut comes from a division sum. The Liverpool Botanical Society measured its girth at 683 centimetres on a field walk in October 2015, then divided by 2.5 centimetres a year, the growth rate they use for a tree in good condition carrying a full crown, and arrived at 273 years. Add the decade since and the answer is somewhere near 280. That is a method rather than a measurement, which is why the band here runs from 230 to 330 years and why nobody should quote a planting date for it.\n\nThe size is not in question. At close to seven metres round this is a large sweet chestnut by any standard, though a long way short of the British champions, which run from roughly nine to fourteen metres. The bark is the thing to look at: sweet chestnut ridges twist as the tree ages, and on this trunk they spiral right round. The society's own note on the day was short and admiring, a huge tree with characteristic spiralled bark and lots of fruit.\n\nIt shares Calderstones Park with the Allerton Oak and with dozens of other exotic specimens, including a giant sequoia planted as recently as 1964. Only one source has ever written this tree up. If you know of another, or you know exactly where in the park it stands, tell us.",
+      "how_to_recognise": "Look for the largest chestnut in the park, close to seven metres round, with bark ridges that spiral around the trunk rather than running straight up it.",
+      "verified_sources": [
+        "https://www.livbotsoc.org/blog/calrderstones-park"
+      ],
+      "access": "Free, public park, open daily during park hours.",
+      "transport": "Mossley Hill or West Allerton rail station, about a 15-20 minute walk; bus routes 61A, 75, 76, 86C stop near the park entrance on Menlove Avenue.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single source: a Liverpool Botanical Society field-trip report of 31 October 2015. Age derived by the society from girth at a stated 2.5cm/year growth rate, not a ring count. Coordinates are the park's published centroid, not a tree-level fix, hence approximate.",
+      "best_time": {
+        "months": [10],
+        "kind": "fruit",
+        "label": "October, when the spiny burrs open and the chestnuts land in the grass"
+      }
+    }
+  ]
+}
