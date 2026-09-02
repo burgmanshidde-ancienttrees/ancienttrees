@@ -4706,6 +4706,15 @@
     "note": "Second pass on a stalled zero city. Register confirmed exhausted: all 9 MASAF rows inside comune Matera are accounted for (2 already verified, 6 blocked masseria/jazzo, 1 parked lead), the rest belong to neighbouring comuni. No naming body exists for Matera's trees: the Villa Comunale, the historic cemetery and the Sassi convents all describe plantings collectively and name no specimen. Fails on NAMING, not on the evidence bar. Overpass timed out twice on the Ciliegio canino access question. City stays at 2, below the floor.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "madeira (dispatched as Funchal)",
+    "kind": "verify",
+    "tokens": 204000,
+    "trees": 0,
+    "note": "BRIEF WRONG: dispatched to OPEN Funchal, which is published as Madeira; five of the thirteen candidates were already live and a 2026-09-01 pass had already run all eight remaining ones to a verdict, in data/leads/madeira.json, which the brief did not surface because passcheck searched history by the name asked for. The pass did add value: OSM/Overpass corroboration moved one lead to blocked with tree-level evidence, and it confirmed the Funchal PDM Quadro 5 register is real (~100 named specimens) but all-rights-reserved, so not importable. Both name-matching holes closed the same day: city_queue.covered_by() and passcheck.published_near().",
+    "wasted": 120000,
+    "brief_wrong": true
    }
   ]
  }
