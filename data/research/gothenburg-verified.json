@@ -1,0 +1,125 @@
+[
+  {
+    "id": "got_001",
+    "name": "The Thousand-Year Linden of Torslanda",
+    "species": "Lime (Tilia sp.)",
+    "age_estimate": "roughly 800 to 900 years, locally called the Thousand-Year Linden",
+    "age_min": 800,
+    "age_max": 900,
+    "girth_cm": null,
+    "location": {
+      "address": "Torslanda kyrkogard, Torslanda kyrkvag 1, 423 32 Torslanda, Goteborg",
+      "latitude": 57.7250417,
+      "longitude": 11.769056,
+      "neighbourhood": "Torslanda, Hisingen"
+    },
+    "verified_sources": [
+      "https://www.svenskakyrkan.se/gbs/nyheter/stormen-skadade-tusenariga-linden-pa-torslanda-kyrkogard",
+      "https://www.sverigesradio.se/artikel/tusenariga-linden-i-torslanda-kan-bli-dubbelt-sa-gammal",
+      "https://www.svenskakyrkan.se/gbs/torslanda-kyrkogard"
+    ],
+    "access": "Free, churchyard open in daylight hours",
+    "transport": "Bus X1 from Lindholmen or bus 29 from Goteborg Centralstation to Torslanda torg, then short walk; roughly 25-35 minutes from central Goteborg",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Multi-stemmed (historically described as nine-stemmed) lime at Torslanda churchyard on Hisingen. Protected as a naturminne (nature monument) by Lansstyrelsen since 1945, the only such designation in Goteborg until the 2025 Orgryte boundary oaks. Church's oldest parts date late 11th/early 12th century; local tradition holds the tree is coeval, giving the 'thousand-year' nickname, though Sverigesradio and Svenska kyrkan sources put the real age closer to 800-900 years. Storm damage: one of its trunks snapped off in a 2024 autumn storm and fell across Kongahallavagen, hitting a passing car (driver unhurt); a further disputed trunk section above the road was subsequently cut, per tidningen.se coverage, confirming the tree was still being actively managed/alive into 2024-2025. Believed to be the product of historic stool/coppice regrowth (stubbskott), which is why it has multiple stems. Location precision is approximate: coordinates are for the church building: the churchyard is small so the tree is easy to find, but this is not a tree-level pin. Species recorded generically as 'lime' (lind); no source specifies Tilia cordata vs Tilia x europaea, flag for writer/reader question. Travel time is a genuine day-trip case: Torslanda is on Hisingen, roughly 25 minutes by bus to Lindholmen or up to 35 minutes direct from Centralstationen; label honestly, do not present as in-town."
+  },
+  {
+    "id": "got_002",
+    "name": "Skarseken",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 300 to 500 years",
+    "age_min": 300,
+    "age_max": 500,
+    "girth_cm": null,
+    "location": {
+      "address": "Skarsgatan near Drakenbergsgatan, Orgryte, Goteborg",
+      "latitude": 57.6965,
+      "longitude": 12.0085,
+      "neighbourhood": "Orgryte"
+    },
+    "verified_sources": [
+      "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
+      "http://www5.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/3df03eb0d7ffce02c1258d0900487fc4/$FILE/Bilaga%203.pdf",
+      "https://www.gp.se/nyheter/goteborg/eken-i-skar-goteborgs-enda-jattetrad-med-egen-tomt.f07dd41f-1d9d-498f-be38-9e0c7942af6c"
+    ],
+    "access": "Free, standing on a residential street in Orgryte, viewable from public road",
+    "transport": "Tram to Danska vagen or Redbergsplatsen then short walk; roughly 15-20 minutes from central Goteborg",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One of four 'gransekar' (boundary oaks) in Orgryte formally declared naturminnen (nature monuments) by Goteborgs Stad (Stadsbyggnadsforvaltningen, diarienummer SBF-2025-00290) on the fastighet Skar 751:93, with the decision confirmed after consultation with Lansstyrelsen Vastra Gotaland, who classified it as a 'jatteträd' (giant tree, trunk diameter over 1m) and 'sarskilt skyddsvart trad' (specially protection-worthy tree) standing in a county-designated priority area for such trees. Local press (GP) calls it 'Goteborg's only giant tree with its own plot' (own protected land parcel), which is a striking, verifiable framing worth using: GP's full article text could not be fetched (paywalled/compressed response, two attempts made) so only the headline framing is confirmed, not girth or exact age from that source. Age given as 300-500 years per vartgoteborg.se's roundup of all four oaks; no source gives an individual girth figure for this specific oak (unlike the Delsjovagen oak, see got_003), so girth_cm left null and should be asked of readers if a photo pass or reader can measure it. Believed to have marked a boundary between historic farms (e.g. Garda, Stora Torp) until the 1800s. Location precision approximate: coordinates are for the Skarsgatan/Drakenbergsgatan area, not a tree-level pin; the official decision document would carry an exact property boundary but was not extracted (encrypted/compressed PDF stream, image based coordinates not machine readable in the time available). Species recorded as Pedunculate Oak (Quercus robur, the common native oak of Swedish boundary/heritage trees) by inference from 'ek' plus giant-tree criteria; not stated explicitly as Quercus robur in any source, flag for the writer."
+  },
+  {
+    "id": "got_003",
+    "name": "Granseken (the Delsjovagen boundary oak)",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "at least 500 years",
+    "age_min": 500,
+    "age_max": 700,
+    "girth_cm": 600,
+    "location": {
+      "address": "Delsjovagen, near Skarsgatan, Orgryte, Goteborg",
+      "latitude": 57.6975,
+      "longitude": 12.0095,
+      "neighbourhood": "Orgryte"
+    },
+    "verified_sources": [
+      "http://www.tradplangoteborg.se/radda_granseken/",
+      "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
+      "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448"
+    ],
+    "access": "Free, standing beside Delsjovagen, viewable and reachable from the public road/verge",
+    "transport": "Tram to Danska vagen or bus toward Delsjon then short walk; roughly 15-20 minutes from central Goteborg",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Widely described as Goteborg's largest oak and one of its oldest and largest trees overall (tradplangoteborg.se, the citizen network that campaigned for its protection): trunk circumference over 600 cm at breast height, age at least 500 years, locally nicknamed 'the thousand-year oak' in a 1951 depiction though that figure is folklore rather than a measured age (kept out of age_min/max for that reason). One of four 'gransekar' (historic farm-boundary oaks, marking the line between farms such as Garda and Stora Torp until the 1800s) formally declared naturminnen (nature monuments) by Goteborgs Stad on 14 October 2025, per the city's own press release and vartgoteborg.se's report on the designation ceremony; this is a SECOND, independent, more recent source confirming the tree is still alive and now legally protected, which addresses the tradplangoteborg campaign page's account (undated on the page itself) of active damage: a guardrail cutting into the trunk, a carelessly removed branch showing fungal decay, and a large callus/structural weakness, which the campaign argued threatened the tree's survival. Read together: the tree was damaged and endangered, the campaign(same network as the 'Skyddsvarda Trad' pages) pushed for protection, and the city protected it in Oct 2025, which is consistent rather than contradictory, but the CURRENT vitality (percentage live crown) is not independently confirmed by a dated 2025/2026 photo or inspection report; flagged for that reason. Location precision approximate: 'near Skarsgatan' is the most specific location any source gives; Delsjovagen itself runs about 2km through Bo and Torp, so the coordinates given are an estimate of the Skarsgatan end, not a tree-level pin. Species recorded as Pedunculate Oak (Quercus robur) by inference (ek = oak, giant-tree criteria used for Swedish oaks); not stated explicitly in any source."
+  },
+  {
+    "id": "got_004",
+    "name": "The Skogshagestigen boundary oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 300 to 500 years",
+    "age_min": 300,
+    "age_max": 500,
+    "girth_cm": null,
+    "location": {
+      "address": "Skogshagestigen, near Delsjogrillen (Delsjovagen 53), Orgryte, Goteborg",
+      "latitude": 57.6997,
+      "longitude": 12.0128,
+      "neighbourhood": "Orgryte"
+    },
+    "verified_sources": [
+      "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
+      "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448"
+    ],
+    "access": "Free, on a public path (Skogshagestigen) near the Delsjon recreation area",
+    "transport": "Bus toward Delsjon/Skatas then short walk; roughly 20 minutes from central Goteborg",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One of four historic farm-boundary oaks ('gransekar') in and around Orgryte formally declared naturminnen (nature monuments) by Goteborgs Stad on 14 October 2025 (city press release via mynewsdesk, and vartgoteborg.se's report on the inauguration, which was held at this specific oak near Delsjogrillen). Age given only as part of the group range (300-500 years) shared by all four; no individual girth or age figure found for this oak specifically in the time available, unlike the Delsjovagen/Skarsgatan oak (got_003) which has a documented girth. Two independent sources confirm designation, location description and October 2025 date; no single source gives this tree an individual name (only Skarseken among the four is individually named), so it ships as 'the Skogshagestigen boundary oak', a descriptive rather than a proper name, flag for the writer/reader. Location precision approximate: coordinates are for Delsjogrillen restaurant at Delsjovagen 53, which press coverage places the tree 'near'; not a tree-level pin. Believed to mark a historic farm boundary near the Delsjo area, part of the same protection scheme as got_002 and got_003. Species inferred as Pedunculate Oak (Quercus robur) from 'ek' plus giant/heritage-oak criteria; not explicit in sources."
+  },
+  {
+    "id": "got_005",
+    "name": "The Laboratoriegatan boundary oak",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 300 to 500 years",
+    "age_min": 300,
+    "age_max": 500,
+    "girth_cm": null,
+    "location": {
+      "address": "Laboratoriegatan, near Sankt Sigfridsgatan, Orgryte, Goteborg",
+      "latitude": 57.6938,
+      "longitude": 12.0022,
+      "neighbourhood": "Orgryte"
+    },
+    "verified_sources": [
+      "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
+      "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448"
+    ],
+    "access": "Free, on a residential street (Laboratoriegatan) in Orgryte, viewable from public road",
+    "transport": "Tram to Danska vagen or Olskrokstorget then short walk; roughly 15-20 minutes from central Goteborg",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One of four historic farm-boundary oaks ('gransekar') formally declared naturminnen (nature monuments) by Goteborgs Stad on 14 October 2025 (city press release via mynewsdesk, and vartgoteborg.se's report). Age given only as part of the shared group range (300-500 years); no individual girth or age figure found for this specific oak in the time available. No individual proper name found for this tree (only Skarseken, got_002, carries one among the four); ships as a descriptive name, flag for the writer/reader. Location precision approximate: coordinates are for the Laboratoriegatan/Sankt Sigfridsgatan area based on nearby street-address lookups, not a tree-level pin; a future pass with access to the municipal decision documents (Diarienummer series parallel to SBF-2025-00290) could likely upgrade this to confirmed. Species inferred as Pedunculate Oak (Quercus robur) from 'ek' plus giant/heritage-oak criteria; not explicit in sources."
+  }
+]
