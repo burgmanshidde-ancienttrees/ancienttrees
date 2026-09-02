@@ -9,7 +9,8 @@ standing approval given in session for exactly these two:
 
   THANK-YOU  templated, to any submission row we can answer and that has no
              thanked_at. Sent once per address however many rows a
-             double-submit left.
+             double-submit left, and it NAMES the tips it covers, with a link
+             to the tree where the tree is one of ours.
   ANSWER     the run-composed reply_text, to answerable rows with no
              replied_at. mailcheck.py gates every one; a failing draft is
              held and printed, never sent.
@@ -32,6 +33,7 @@ bookkeeping rows.
 import datetime
 import json
 import os
+import re
 import smtplib
 import subprocess
 import sys
@@ -81,6 +83,135 @@ def _note_transport(error, sent=True):
         pass
 
 
+SITE = "https://ancienttrees.app"
+FEED = SITE + "/api/trees.json"
+TREE_ID = re.compile(r"^([a-z]{2,6}_\d{2,4})\b", re.I)
+COORDS = re.compile(r"(-?\d{1,3}\.\d+),\s*(-?\d{1,3}\.\d+)")
+_feed = {}
+
+
+def tree_pages():
+    """id -> url, read from the site's own feed rather than slugged here.
+
+    The website already decides what a tree's URL is, and the slug rule behind
+    it has a transliteration table, a leading-"the" strip and a frozen legacy
+    twin. Porting that into Python would be the second implementation CLAUDE.md
+    warns about (a decision travels as an ANSWER, never as a rule written
+    twice), and the mail is the worst place to be the copy that drifts: a dead
+    link in a thank-you is worse than no link at all.
+
+    Fetched lazily, so a run with nothing to send never pays for it, and a feed
+    we cannot read costs the link rather than the mail.
+    """
+    if "by_id" not in _feed:
+        by_id, paths = {}, set()
+        try:
+            with urllib.request.urlopen(FEED, timeout=60) as r:
+                for t in json.load(r).get("trees") or []:
+                    if t.get("id") and t.get("url"):
+                        by_id[t["id"]] = t["url"]
+                        paths.add(t["url"])
+        except Exception as e:
+            print("contributor_reply: tree feed unreadable (%s); naming the "
+                  "tip without a link" % str(e)[:60])
+        _feed["by_id"], _feed["paths"] = by_id, paths
+    return _feed["by_id"], _feed["paths"]
+
+
+def tip_link(row):
+    """The page of the tree this row is about, or "" when there is not one.
+
+    Two routes in, because the rows arrive from three surfaces. The worth-it
+    control names the tree by id and sends page "app" or a bare path; the
+    contribute form sends the referrer, which is a full URL when the reader
+    came from a tree page and something useless when they did not. A path is
+    only used when the feed confirms it is a tree page, so a referrer of
+    /contribute or google.com never becomes a link.
+    """
+    by_id, paths = tree_pages()
+    m = TREE_ID.match((row.get("tree") or "").strip())
+    if m and m.group(1).lower() in by_id:
+        return SITE + by_id[m.group(1).lower()]
+    path = (row.get("page") or "").strip()
+    for pre in ("https://ancienttrees.app", "http://ancienttrees.app"):
+        if path.startswith(pre):
+            path = path[len(pre):]
+    if not path.startswith("/"):
+        return ""
+    path = path.split("?")[0].split("#")[0].rstrip("/")
+    stripped = re.sub(r"^/[a-z]{2}(/)", r"\1", path)
+    if path in paths or stripped in paths:
+        return SITE + path
+    return ""
+
+
+def tip_name(row):
+    """What to call the tree, as the reader would recognise it."""
+    t = (row.get("tree") or "").strip()
+    m = re.match(r"^[a-z]{2,6}_\d{2,4}\s*\((.+)\)$", t, re.I)
+    if m:
+        t = m.group(1).strip()
+    if not t and row.get("kind") in ("tree", "city"):
+        t = (row.get("why") or "").strip().splitlines()[0][:60] if row.get("why") else ""
+    return t
+
+
+def tip_lines(row):
+    """Name and link one tip, as the lines it gets in the mail.
+
+    A tree added in the app has no page yet and never gets a fake one: what
+    identifies it there is the place and the coordinate the phone sent, which
+    is also all we hold.
+    """
+    name, url = tip_name(row), tip_link(row)
+    city = (row.get("city") or "").strip()
+    if name:
+        head = "%s, %s" % (name, city) if city and city.lower() not in name.lower() else name
+    else:
+        here = COORDS.search(row.get("location_hint") or "")
+        head = "The tree you added near %s" % city if city else "The tree you added"
+        if here:
+            head += ", at %s, %s" % (here.group(1), here.group(2))
+    return [head] + ([url] if url else [])
+
+
+def thanks_body(rows_for_addr):
+    """The thank-you, saying which tree it is about.
+
+    Hidde, 2026-09-02, on receiving his second "thank you, we received your
+    tree tip" and being unable to tell which of his tips it answered: "can we
+    add a link to the tree the person tipped in the mail". Somebody who sends
+    us three trees in a week gets three identical letters otherwise, and the
+    one thing they want to know, that we understood WHICH tree, is the one
+    thing the template never said.
+
+    It lists every unanswered tip from that address, because one mail already
+    stamps all of them.
+    """
+    out = ["Thank you for your feedback. We are looking into it and we will "
+           "come back to you with what it changed.", ""]
+    tips = []
+    for r in rows_for_addr:
+        tips += tip_lines(r) + [""]
+    if tips:
+        out += ["What you sent us:", ""] + tips
+    out += ["Please keep them coming: a tree you love, a mistake we have made, "
+            "a photograph. Every one of them makes the map better, and a real "
+            "person telling us about a real tree is the best thing this "
+            "project receives.", ""]
+    # Not to somebody who is already holding it. Both of the tips that
+    # prompted this were sent FROM the app, and both mails invited the sender
+    # to join a waiting list for the thing they had just used.
+    if not all((r.get("page") or "").startswith("app") for r in rows_for_addr):
+        out += ["We are also building an iPhone app. It is not live yet, and "
+                "it will make this much easier: you photograph a tree standing "
+                "in front of it and it reaches us with the location attached. "
+                "You can put your name down here and we will tell you when it "
+                "is out:", "", SITE + "/app", ""]
+    out += ["Ancient Trees", SITE]
+    return "\n".join(out) + "\n"
+
+
 THANKS_SUBJECT = {
     "tree": "Thank you, we received your tree tip",
     "city": "Thank you, we received your tree tip",
@@ -88,17 +219,6 @@ THANKS_SUBJECT = {
     "feedback": "Thank you, we received your report",
 }
 
-THANKS_BODY = """Thank you for your feedback. We are looking into it and we will come back to you with what it changed.
-
-Please keep them coming: a tree you love, a mistake we have made, a photograph. Every one of them makes the map better, and a real person telling us about a real tree is the best thing this project receives.
-
-We are also building an iPhone app. It is not live yet, and it will make this much easier: you photograph a tree standing in front of it and it reaches us with the location attached. You can put your name down here and we will tell you when it is out:
-
-https://ancienttrees.app/app
-
-Ancient Trees
-https://ancienttrees.app
-"""
 
 
 def supa(path, key, method="GET", body=None):
@@ -155,7 +275,8 @@ def main():
 
     try:
         rows = supa("/rest/v1/submissions?select=id,created_at,kind,city,tree,"
-                    "why,user_id,email,outcome,reply_text,thanked_at,replied_at"
+                    "why,page,location_hint,user_id,email,outcome,reply_text,"
+                    "thanked_at,replied_at"
                     "&or=(user_id.not.is.null,email.not.is.null)"
                     "&order=created_at.asc", key)
     except Exception as e:
@@ -184,6 +305,21 @@ def main():
         return ((r.get("email") or "").strip()
                 or users.get(r.get("user_id") or "", "")).strip()
 
+    def mailable(r):
+        """A privacy request is handled by hand and a vote-undo is bookkeeping."""
+        return (r.get("kind") != "privacy"
+                and not (r.get("why") or "").startswith("vote undone"))
+
+    # One mail per address covers every unthanked row that address left, since
+    # the stamping below already does. So the tips are gathered per address
+    # first, and the mail names all of them rather than the one row that
+    # happened to trigger it.
+    unthanked = {}
+    for r in rows:
+        addr = address(r).lower()
+        if addr and mailable(r) and not r.get("thanked_at"):
+            unthanked.setdefault(addr, []).append(r)
+
     jobs = []  # (row, subject, body, column_to_stamp)
     thanked_addrs = set()
     for r in rows:
@@ -199,7 +335,8 @@ def main():
             continue
         if only != "answers" and not r.get("thanked_at") and addr not in thanked_addrs:
             subj = THANKS_SUBJECT.get(r.get("kind"), THANKS_SUBJECT["feedback"])
-            jobs.append((r, subj, THANKS_BODY, "thanked_at"))
+            jobs.append((r, subj, thanks_body(unthanked.get(addr, [r])),
+                         "thanked_at"))
             thanked_addrs.add(addr)
         if only == "thanks":
             continue
@@ -210,15 +347,19 @@ def main():
         # answer always beats a template.
         if (r.get("outcome") == "changed" and not r.get("reply_text")
                 and not r.get("replied_at")):
-            page = (r.get("page") or "").strip()
+            # The tree's own page when we can name it, the city page
+            # otherwise. It used to read the row's `page` column, which the
+            # select did not even carry, and which holds the referrer rather
+            # than the tree: a reader who arrived from Google would have been
+            # sent a link to Google.
+            page = tip_link(r)
             if not page and r.get("city"):
-                page = "https://ancienttrees.app/%s" % (
-                    r["city"].strip().lower().replace(" ", "-"))
+                page = "%s/%s" % (SITE, r["city"].strip().lower().replace(" ", "-"))
             thing = (r.get("tree") or "").strip()
             lines = ["Thank you again. What you sent us is on the site now."]
             if thing:
                 lines.append("")
-                lines.append("%s: %s" % (thing, page or "https://ancienttrees.app"))
+                lines.append("%s: %s" % (thing, page or SITE))
             elif page:
                 lines.append("")
                 lines.append(page)
