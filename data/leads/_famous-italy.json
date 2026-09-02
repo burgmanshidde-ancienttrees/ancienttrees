@@ -207,45 +207,6 @@
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
-      "name": "L'Olivo di Canneto Sabino",
-      "lat": 42.1842,
-      "lng": 12.724294,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2015_Olive_Tree_from_Canneto_Sabino_IT.jpg",
-        "https://commons.wikimedia.org/wiki/File:Ulivone_di_Canneto_Sabino.jpg"
-      ],
-      "status": "lead",
-      "species": "Olive (Olea europaea)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "location_precision": "confirmed",
-      "girth_cm": 640,
-      "curation_status": "flagged",
-      "why": "Verified. Stands in an olive grove at Casale Bertini, comune of Fara in Sabina (Rieti province, Lazio), not Poggio Moiano despite the 'Sabino' name overlap; no city file exists yet for Fara in Sabina in data/cities/. Alive: still an active local landmark, festivals are held under it and it is a stop on the Via di Francesco pilgrim route (viadifrancescolazio.it, GPS 42 11'01.9\"N 12 43'26.7\"E, matches). Three independent sources agree on rough size (girth roughly 6.4-7.2m, height ~10m): it.wikipedia.org/wiki/Canneto_Sabino (7m circumference, ~10m tall, 'over 1000 years'), renneritalia.com/olivo-millenario-storie-sotto-albero (560cm at narrowest / 720cm at midpoint, hollow trunk used to hide supplies in WWII, still highly productive), and the register entry ilregistrodeglialberi.it/8605 (6.40m girth at 130cm height, 10.00m tall, coordinates 42.1842/12.724294 which is a near-exact match to the pin already on file, so confirmed at tree level). AGE IS DISPUTED and does not clear a clean single figure: legend credits it to Numa Pompilius (8th-7th c. BC, i.e. ~2000+ years, dismissed by the sources themselves), the register's own dendrological estimate says approx. 2005 years, Wikipedia and renneritalia both say experts estimate 'around a thousand years' tied to the 11th-century Benedictine land reclamation, and the University of Tuscia's own field analysis (cited by renneritalia) suggests it is probably younger still, perhaps only 700-800 years. Also note ilregistrodeglialberi.it explicitly debunks the tourist claim that this is 'the largest olive tree in Europe' or even in Lazio, so any story should not repeat that superlative uncritically. A single, unmistakable named tree, one obvious place to stand (it stands alone in the middle of a grove), and reached along a public pilgrim path, so it clears the collectible-point and access bars. Sources: https://it.wikipedia.org/wiki/Canneto_Sabino, https://renneritalia.com/olivo-millenario-storie-sotto-albero/, https://ilregistrodeglialberi.it/8605-olivone-di-canneto-olivo-fara-in-sabina-rieti-lazio, https://www.viadifrancescolazio.it/20-cosa-vedere/256-canneto-sabino.html",
-      "age_estimate": "disputed: roughly 700 to 2000 years",
-      "age_min": 700,
-      "age_max": 2000
-    },
-    {
-      "name": "Platano di Curinga",
-      "lat": 38.8235,
-      "lng": 16.3327,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2021_Curinga_plane_IT.jpg",
-        "https://commons.wikimedia.org/wiki/File:Curinga_albero_monumentale_platano_millenario_di_Vrisi.jpg",
-        "https://commons.wikimedia.org/wiki/File:Il_Gigante_Buono_di_Curinga_-_Platano_di_Vrisi.jpg"
-      ],
-      "status": "lead",
-      "species": "Oriental Plane (Platanus orientalis)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "location_precision": "confirmed",
-      "girth_cm": 1475,
-      "curation_status": "flagged",
-      "age_estimate": "roughly 800 to over 1,000 years, estimates vary",
-      "age_min": 600,
-      "age_max": 1200,
-      "why": "Verified. Also known as the Platano di Vrisi, standing in the Vrisi locality (SP 91), comune of Curinga, province of Catanzaro, Calabria. No city file exists yet for Curinga or Lamezia Terme in data/cities/. Alive and actively visited: reached by 'un percorso attrezzato' (a maintained path), came second in the 2021 European Tree of the Year contest, and is on Calabria's regional monumental-tree register plus the national MASAF list. Two independent sources agree closely on the main figures: it.wikipedia.org/wiki/Platano_di_Vrisi (31.5m tall, 14.75m circumference, measured scientifically by GTF [Gruppo dendrologico] on 28 Jan 2021, hollow trunk with an opening over 3m wide, big enough inside to shelter a dozen people or historically 100 sheep) and fondoambiente.it (FAI, Fondo Ambiente Italiano)'s own page, which corroborates the species, hollow trunk and legend but gives different, rougher figures (up to 20m tall, 18m circumference, and names the locality 'Loc. Corda' rather than 'Loc. Vrisi', likely an older or looser measurement/name than the dated 2021 survey). SANITY CHECK: girth_cm above uses the precise, dated 14.75m measurement rather than FAI's rounder 18-20m figures, since a scientific survey with a date beats an undated tourist-page figure, but both are recorded here for the writer. Species is Platanus orientalis (Oriental Plane, native to Armenia/Western Asia), not the London Plane hybrid. AGE IS DISPUTED: most sources say botanists established 'over 1000 years', tied to a legend that Basilian monks planted it in the 11th century while building the nearby Eremo di Sant'Elia; other coverage cites a professional estimate of approximately 800 +/- 200 years. Neither figure is a precise derivation from girth, both are dendrologists' field estimates, so age_estimate/age_min/age_max here span both. Coordinates cross-checked against Wikidata Q56258721 ('plane tree of Curinga', 38 49'24.64\"N 16 19'57.72\"E = 38.8235, 16.3327), an exact match to the pin already on file, so confirmed at tree level. Single unmistakable named tree, one obvious place to stand, publicly reached via a marked path: clears the collectible-point and access bars. Sources: https://it.wikipedia.org/wiki/Platano_di_Vrisi, https://fondoambiente.it/luoghi/il-platano-di-vrisi, https://www.wikidata.org/wiki/Q56258721, https://www.calabriaportal.com/curinga/4969-platano-curinga.html"
-    },
-    {
       "name": "Roverella del Santuario di Fonte Colombo",
       "lat": 42.37836,
       "lng": 12.82803,

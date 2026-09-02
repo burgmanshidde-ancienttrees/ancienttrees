@@ -1,0 +1,63 @@
+{
+  "city": "Ramsau am Dachstein",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "The oldest sycamore maple in the Ramsau grows at 1,170 metres on the plateau below the Dachstein's south wall, at the rear of a working farm called the Feistererhof. Its own information sign hedges the age at presumably around 450 years, an estimate rather than a measurement, and no girth or height has ever been published to check it against. It is an official Naturdenkmal in its own right, filed on the district's protected-tree list under its plain municipal name.",
+  "meta_description": "Ramsau am Dachstein's oldest sycamore maple stands at the Feistererhof farm, 1,170m up, its 450-year age an on-site estimate rather than a measurement.",
+  "question_meta": "The Feistererhof's sycamore maple, Ramsau am Dachstein, Styria: presumably around 450 years old by its own sign, at 1,170m below the Dachstein.",
+  "question_answer": "The oldest sycamore maple in Ramsau am Dachstein grows at the rear of the Feistererhof, a working farm at 1,170 metres on the Ramsau plateau, with the Dachstein's south wall rising above it. An on-site information sign gives its age as presumably around 450 years, an estimate rather than a measured figure, and no girth or height has been published to check it against. It is protected as an official Naturdenkmal, object number 010 on the Bezirk Liezen list. Sycamore maple is the species that keeps growing at this altitude when other broadleaf trees thin out.",
+  "question_context": "The tree stands on the Ramsau plateau in Styria, at the rear of the Feistererhof off the Feistererweg, roughly 1,170 metres above sea level with the Dachstein massif's south wall directly above. The Feistererhof is a working farm that also operates as a Bio-Hotel taking guests, and the tree carries its own visitor information sign, which is where the 450-year estimate comes from. There is no public transport to the farm; it is reached on foot or by car from Ramsau am Dachstein village. No source states outright that the public may approach the tree freely, though the presence of an interpretive sign suggests it is set up as a stop for visitors rather than kept private. It is separately listed as Naturdenkmal object 010 on the district's own register of protected trees, confirming its protected status independent of the sign's claims. A Wikimedia Commons photograph taken in July 2017 carries its own GPS location matching the coordinates used here almost exactly, and independently captions the tree as the oldest sycamore in the Ramsau, corroborating both the identification and the local reputation.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Ramsau am Dachstein?",
+      "a": "A sycamore maple at the rear of the Feistererhof farm, 1,170 metres up on the Ramsau plateau. Its own information sign gives an age of presumably around 450 years, an estimate rather than a measurement."
+    },
+    {
+      "q": "How reliable is the 450-year age?",
+      "a": "It comes from the tree's own on-site sign, not from a core sample or a girth calculation, and no source has published measurements to check it against. Treat it as the estimate of people who live with the tree rather than a settled figure."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "No public transport; you reach the Feistererhof on foot or by car from Ramsau am Dachstein via the Feistererweg. There is no stated fee, though the tree stands on a working farm's grounds."
+    },
+    {
+      "q": "Is the tree on private land?",
+      "a": "The Feistererhof is a working farm and guesthouse. The tree carries its own visitor information sign, which suggests it is used to seeing visitors, but no source confirms open access outright. If you have visited, tell us what you found."
+    }
+  ],
+  "oldest_tree_id": "ram_001",
+  "trees": [
+    {
+      "id": "ram_001",
+      "name": "Ahorn Feistererhof, Ramsau am Dachstein",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "presumably around 450 years",
+      "age_min": 400,
+      "age_max": 500,
+      "location": {
+        "address": "At the rear of the Feistererhof farm, off Feistererweg, Ramsau am Dachstein, Styria",
+        "latitude": 47.427881,
+        "longitude": 13.677831,
+        "neighbourhood": "The Ramsau plateau, at the Feistererhof"
+      },
+      "verified_sources": [
+        "https://www.ennstalwiki.at/wiki/index.php/Ahorn_Feistererhof",
+        "https://www.ennstalwiki.at/wiki/index.php/Naturdenkmale_im_Bezirk_Liezen",
+        "https://commons.wikimedia.org/wiki/File:St-Ramsau-Bergahorn-1.jpg"
+      ],
+      "access": "On the grounds of the Feistererhof, a working farm that also takes guests as a Bio-Hotel; the tree carries its own on-site information plaque, which suggests visitor access is customary, but no source states outright that the public may walk up to it. Treat as likely open rather than confirmed, and tell us what you find.",
+      "transport": "No public transport; reached on foot via the Feistererweg from Ramsau am Dachstein.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The only age anyone puts on this maple comes from a sign standing next to it, and the sign hedges: presumably around 450 years.\n\nTake that for what it is. It is the estimate of the people who live with the tree, not a figure from a core sample, and nobody has published a girth or a height that would let anyone check it. What is on the record is the tree's standing. It is the oldest sycamore in the Ramsau, and an official Naturdenkmal, object number 010 on the Bezirk Liezen list, filed under the flat municipal name Ahornbaum Ramsau am Dachstein.\n\nIt grows at 1,170 metres on the Ramsau plateau, with the south wall of the Dachstein above it, at the rear of the Feistererhof off the Feistererweg. The farm still works and now takes guests as well. Sycamore is the maple that keeps going at this altitude when other broadleaves thin out, and this is the one the district singled out.\n\nFour hundred and fifty years is a guess until somebody gets a tape around the trunk. If that is you, send us the number.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "girth_cm": null,
+      "height_m": null
+    }
+  ]
+}

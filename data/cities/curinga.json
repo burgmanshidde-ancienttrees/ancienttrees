@@ -1,0 +1,63 @@
+{
+  "city": "Curinga",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Also known as the Platano di Vrisi, Curinga's plane tree came second in the 2021 European Tree of the Year vote. A dendrological survey that year measured it at 31.5 metres tall with a trunk 14.75 metres round, one of the largest on this whole site, hollow enough inside that a dozen adults can stand in the opening. Legend credits Basilian monks with planting it in the 11th century while building the nearby hermitage of Sant'Elia; the honest range, from field estimates rather than ring counts, runs from about 800 years to well over a thousand.",
+  "meta_description": "The Platano di Vrisi in Curinga, Calabria: 14.75m round, hollow enough to shelter a dozen people, age estimated 800 to 1,000+ years.",
+  "question_meta": "Curinga's Platano di Vrisi: an Oriental Plane 14.75m round and 31.5m tall, second in the 2021 European Tree of the Year, Calabria.",
+  "question_answer": "Curinga's oldest and only mapped tree is the Platano di Vrisi, an Oriental Plane standing in the Vrisi locality off the SP 91 in Calabria. A dendrological survey on 28 January 2021 measured it at 31.5 metres tall with a circumference of 14.75 metres, figures that came with both a date and a method behind them, unlike older accounts that give a looser 18 to 20 metres. The trunk is hollow, with an opening more than three metres wide, big enough for a dozen adults to stand inside, and locally said to have once sheltered up to a hundred sheep. Its age is disputed between roughly 800 years, a professional field estimate, and over a thousand, the figure tied to a legend that Basilian monks planted it in the 11th century while building the nearby hermitage of Sant'Elia. Neither number comes from counting rings, since the trunk is hollow. The tree placed second in the 2021 European Tree of the Year contest and is listed on both Calabria's regional register of monumental trees and the national one.",
+  "question_context": "The plane tree stands in the Vrisi locality just outside Curinga, in the province of Catanzaro, Calabria, reached off the SP 91 provincial road and then along a maintained path (un percorso attrezzato). There is no public transport to the site; it is reached by car and then on foot. The tree is a well-known local and national landmark, entered on both Calabria's regional register of monumental trees and Italy's national MASAF list, and it placed second in the 2021 European Tree of the Year public vote, which is one measure of how well visited it already is. No fee or permit is recorded, and nothing suggests restricted access. The species, Platanus orientalis, is native to Armenia and Western Asia rather than Europe, and is not the same tree as the London Plane hybrid that lines boulevards across the continent; a genuinely old Oriental Plane of this size is rare well outside its native range, which is part of what makes the Curinga tree worth the detour.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Curinga?",
+      "a": "The Platano di Vrisi, an Oriental Plane in the Vrisi locality off the SP 91. Its age is disputed between roughly 800 years and well over a thousand, both field estimates rather than ring counts, since the trunk is hollow."
+    },
+    {
+      "q": "How big is the tree, really?",
+      "a": "A dendrological survey in January 2021 measured it at 31.5 metres tall and 14.75 metres round, among the largest trunks on this whole site. The hollow inside is over three metres wide, big enough for a dozen adults to stand in."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free, no permit. Reached by car off the SP 91 near Curinga, then on foot along a maintained path. There is no public transport."
+    },
+    {
+      "q": "Is this the tree that won a European award?",
+      "a": "It came second in the 2021 European Tree of the Year public vote, one of the more visited monumental trees in Calabria."
+    }
+  ],
+  "oldest_tree_id": "cur_001",
+  "trees": [
+    {
+      "id": "cur_001",
+      "name": "Platano di Curinga",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 800 to over 1,000 years, estimates vary",
+      "age_min": 600,
+      "age_max": 1200,
+      "location": {
+        "address": "Vrisi locality, off the SP 91, comune of Curinga, province of Catanzaro, Calabria",
+        "latitude": 38.8235,
+        "longitude": 16.3327,
+        "neighbourhood": "Vrisi, Curinga"
+      },
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Platano_di_Vrisi",
+        "https://fondoambiente.it/luoghi/il-platano-di-vrisi",
+        "https://www.wikidata.org/wiki/Q56258721"
+      ],
+      "access": "Free. Stands in the Vrisi locality off the SP 91, reached by a maintained path (un percorso attrezzato); a genuine local and national landmark, on both Calabria's regional monumental-tree register and the national list.",
+      "transport": "No public transport; reached by car via the SP 91 near Curinga, then on foot along the maintained path.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The hollow inside this plane tree once took a hundred sheep.\n\nThe opening in the trunk is over three metres wide, and the space behind it still holds a dozen adults standing up. The tree came second in the 2021 European Tree of the Year vote. It stands in the Vrisi locality outside Curinga, off the SP 91 in Calabria, reached by a maintained path, and it is listed on both Calabria's regional register of monumental trees and the national one.\n\nA dendrological survey on 28 January 2021 measured it at 31.5 metres tall with a circumference of 14.75 metres. Older accounts differ in both directions, giving 18 metres of girth and only 20 metres of height. The 2021 figures are the ones with a date and a method behind them.\n\nThe age is not settled either. Most accounts report botanists putting it beyond a thousand years, which goes with the local story that Basilian monks planted it in the eleventh century while building the hermitage of Sant'Elia nearby. Other coverage cites a professional estimate of about 800 years, give or take 200. Neither number comes from counting rings, because the trunk is hollow. Both are field judgements by people who look at trees for a living, and they disagree.\n\nThis is Platanus orientalis, the eastern plane of Asia Minor, and not the London hybrid that lines European boulevards.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "girth_cm": 1475,
+      "height_m": 31.5
+    }
+  ]
+}

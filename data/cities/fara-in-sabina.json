@@ -1,0 +1,72 @@
+{
+  "city": "Fara in Sabina",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Fara in Sabina's one mapped tree is an olive so old that its own sources cannot agree by how much: the national tree register's own dendrological reading puts it near two thousand years, other experts settle nearer a thousand and tie it to an eleventh-century land reclamation, and a university field study suggests it may be younger still. It stands alone in a grove at Casale Bertini, on the Via di Francesco pilgrim route, still cropping, still hollow enough to have hidden supplies during the Second World War.",
+  "meta_description": "Canneto Sabino's ancient olive spans four age estimates, 700 to 2,000 years, and still crops. On the Via di Francesco pilgrim route, Lazio.",
+  "question_meta": "The Olive of Canneto Sabino, Fara in Sabina: age disputed between roughly 700 and 2,000 years, on the Via di Francesco pilgrim route.",
+  "question_answer": "The oldest tree mapped in Fara in Sabina is an olive at Canneto Sabino known locally as l'Olivone, standing alone in a grove at Casale Bertini. Its age is genuinely disputed: Italy's national tree register gives a dendrological estimate of about 2,005 years, other sources put it nearer a thousand years and tie it to an 11th-century Benedictine land reclamation, and a University of Tuscia field study suggests it may be closer to 700 or 800. Like most ancient olives it is hollow, so there are no rings left to count and no way to settle the dispute from the tree itself. It measures 6.40 metres round at the register's own reference height, though the girth varies from 5.60 to 7.20 metres depending on where it is taken, because a trunk this old is really a bundle of fused stems. It still produces olives every year.",
+  "question_context": "The olive grows in an olive grove at Casale Bertini, near the hamlet of Canneto Sabino in the comune of Fara in Sabina, Rieti province, Lazio, about an hour north of Rome. It stands directly on the Via di Francesco, a long-distance pilgrim route, and is a stop many walkers already pass. There is no public transport to the grove itself; it is reached on foot or by car. The tree is on private agricultural land but functions as a public landmark: local festivals are held beneath it, and it is signposted as a point of interest on the pilgrim route. No fee or permit is recorded. During the Second World War, villagers reportedly used the tree's hollow trunk to hide supplies, a detail repeated by more than one local source. The tourist claim that this is the largest olive tree in Europe, or even in Lazio, is explicitly debunked by the national tree register itself, which still rates it among the region's most significant specimens on age and history rather than raw size.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Fara in Sabina?",
+      "a": "An ancient olive at Canneto Sabino, standing alone in a grove at Casale Bertini. Its age is disputed across sources, from about 700 years to as much as 2,000, and nobody has settled it because the trunk is hollow and carries no rings to count."
+    },
+    {
+      "q": "So how old is it, really?",
+      "a": "We don't pick a winner. The national tree register's own dendrological estimate is around 2,005 years; other sources say nearer a thousand, tied to an 11th-century land reclamation; a university field study suggests perhaps 700 to 800. All four figures are on the record."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free, no permit. The tree stands in a grove at Casale Bertini, directly on the Via di Francesco pilgrim route, reached on foot or by car near Canneto Sabino. There is no public transport."
+    },
+    {
+      "q": "Is it still a working olive tree?",
+      "a": "Yes. It still produces olives every year, despite a hollow trunk that villagers reportedly used to hide supplies during the Second World War. Local festivals are still held underneath it."
+    }
+  ],
+  "oldest_tree_id": "far_001",
+  "trees": [
+    {
+      "id": "far_001",
+      "name": "L'Olivo di Canneto Sabino",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "disputed: roughly 700 to 2,000 years",
+      "age_min": 700,
+      "age_max": 2000,
+      "location": {
+        "address": "Olive grove at Casale Bertini, on the Via di Francesco pilgrim route, Canneto Sabino, comune of Fara in Sabina, Lazio",
+        "latitude": 42.1842,
+        "longitude": 12.724294,
+        "neighbourhood": "Casale Bertini, Canneto Sabino"
+      },
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Canneto_Sabino",
+        "https://renneritalia.com/olivo-millenario-storie-sotto-albero/",
+        "https://ilregistrodeglialberi.it/8605-olivone-di-canneto-olivo-fara-in-sabina-rieti-lazio"
+      ],
+      "access": "Free. Stands alone in the middle of a working olive grove at Casale Bertini, on the Via di Francesco pilgrim route; a genuine local landmark, with festivals still held under it.",
+      "transport": "No public transport; reached on foot or by car near Canneto Sabino, a frazione of Fara in Sabina, Rieti province.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Four estimates of this olive's age are on the record and they span more than a thousand years.\n\nItaly's tree register credits it with roughly 2,005 years from its own dendrological assessment. Local legend goes further and hands the planting to Numa Pompilius, Rome's second king, in the seventh century BC, a story the sources that repeat it also dismiss as legend. Others settle near a thousand years and tie the tree to the Benedictine reclamation of this land in the eleventh century. The University of Tuscia's field analysis comes in lowest of all, at perhaps seven or eight hundred. Nobody has closed the gap, and the tree is no help: like most ancient olives it is hollow, so there are no rings left to count.\n\nThe measurements are firmer, if not identical. The register puts it at 6.40 metres round at 130 centimetres up and 10 metres tall. Taken elsewhere on the trunk it reads anywhere from 5.60 metres at its narrowest to 7.20 at its widest, because an olive this old is less a trunk than a bundle of fused stems.\n\nDuring the Second World War the hollow was used to hide supplies. It still crops. It stands by itself in the middle of a grove at Casale Bertini, on the Via di Francesco pilgrim route, and festivals are still held underneath it.",
+      "best_time": {
+        "months": [
+          10,
+          11,
+          12
+        ],
+        "kind": "fruit",
+        "label": "October to December: the harvest, when the fruit turns from green to black"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "girth_cm": 640,
+      "height_m": 10
+    }
+  ]
+}

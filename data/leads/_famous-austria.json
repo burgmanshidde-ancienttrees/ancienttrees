@@ -3,40 +3,6 @@
  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
  "leads": [
   {
-   "name": "1000jährige Eibe Gutau",
-   "lat": 48.434608,
-   "lng": 14.624856,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000j%C3%A4hrige_Eibe,_Gutau.jpg",
-    "https://commons.wikimedia.org/wiki/File:1000j%C3%A4hrige_Eibe,_Gutau_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Boblberg,_Gutau_1.jpg"
-   ],
-   "status": "lead",
-   "species": "European Yew (Taxus baccata)",
-   "location_precision": "confirmed",
-   "girth_cm": 190,
-   "why": "Verified as Naturdenkmal nd292 in the Land Oberösterreich register, reproduced by de.wikipedia.org 'Liste der Naturdenkmäler im Bezirk Freistadt': a European Yew (Taxus baccata) standing roughly 20m east of the Staudinger farmhouse ('Lehen') in Gutau, Upper Austria, protected since 06.02.1985, at 48.434608N 14.624856E. Second source: monumentaltrees.com's entry for the same tree ('Europäische Eibe auf dem Gelände eines Bauernhauses in Lehen', Freistadt) independently gives the same location (20m east of the Staudinger farmhouse) and adds measurements: stem circumference 1.70m in 1985 rising to 1.90m in 2016 (girth_cm recorded as the circumference figure, not a diameter conversion), height ~11m in Feb 1985. Only one yew Naturdenkmal is listed for the whole Gutau municipality, so this is almost certainly the tree in the Commons photos, though the popular name '1000-year-old yew' does not appear in either official source: it is a local nickname (used on the Boblberg hiking-loop trail this tree sits beside, per a 2023 Naturfreunde hike report placing a photo stop 'bei der 1000 jährigen Eibe' on that route) and the register carries no age field at all. Given a circumference of under 2m, an actual age of a full millennium is very unlikely for this species; leaving age_estimate empty rather than repeating the folk name as fact. Alive: photographed 22 July 2023 (Wikimedia, GLAM on Tour project) and measured as recently as 2016 (monumentaltrees). Access: appears to be a marked stop on a public hiking route (the Boblberg circuit) rather than inside the farmyard itself, but this is inferred from the hike report rather than stated outright by either source; flagging as the one soft point. Clears the bar: alive, two independent sources for species/location, one collectible point, publicly reachable via the trail. Sources: https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Freistadt ; https://www.monumentaltrees.com/de/aut/oberosterreich/freistadt/15713_bauernhausesinlehen/ ; https://holzwiesen.naturfreunde.at/berichte/2023/wanderung-in-gutau-um-den-boblberg/",
-   "curation_status": "flagged"
-  },
-  {
-   "name": "Ahorn Feistererhof, Ramsau am Dachstein",
-   "lat": 47.427881,
-   "lng": 13.677831,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:St-Ramsau-Bergahorn-1.jpg",
-    "https://commons.wikimedia.org/wiki/File:St-Ramsau-Bergahorn-2.jpg",
-    "https://commons.wikimedia.org/wiki/File:St-Ramsau-Bergahorn-3.jpg"
-   ],
-   "status": "lead",
-   "species": "Sycamore Maple (Acer pseudoplatanus)",
-   "location_precision": "confirmed",
-   "age_estimate": "presumably around 450 years",
-   "age_min": 400,
-   "age_max": 500,
-   "why": "Verified as the 'oldest Bergahorn in the Ramsau', standing at 1,170m elevation at the rear of the Feistererhof farm off Feistererweg in Ramsau am Dachstein, Styria. Source 1: ennstalwiki.at's dedicated page 'Ahorn Feistererhof' reports the age from the tree's own on-site information placard, 'vermutlich an die 450 Jahre alt' (presumably around 450 years old) -- repeated here as vaguely as the source gives it, not sharpened. No girth or height figure is given by that source. Source 2 (independent designation record): ennstalwiki.at's district list 'Naturdenkmale im Bezirk Liezen' lists it separately as the official Naturdenkmal 'Ahornbaum Ramsau am Dachstein', object no. 010, confirming protected status distinct from the placard text. Source 3, corroborating location only: the Wikimedia Commons photo (St-Ramsau-Bergahorn-1.jpg, taken 19 July 2017) carries its own geotag of 47°25'40.37\"N 13°40'40.19\"E (47.427881, 13.677831), matching the lead's supplied coordinates almost exactly, and its own caption independently calls it 'Ältester Bergahorn der Ramsau am Feistererhof ... (Naturdenkmal)'. Two of the three sources live on the same host (ennstalwiki), which is a soft point, but they draw from two different underlying records (an on-site plaque vs. a designation list) and the Commons geotag is fully independent. Alive: photographed 2017, described in present tense as the region's oldest specimen with no indication of loss. Access: reached via Feistererweg at the farm's rear; no source states outright that the public may walk up to it, so treat this as likely but unconfirmed rather than stated plainly -- the farm is a working Bio-Hotel/guesthouse, not obviously fenced off, but I could not find an explicit 'open to visitors' line. Clears the bar on alive/species/location; access is the one point to double check before shipping. Sources: https://www.ennstalwiki.at/wiki/index.php/Ahorn_Feistererhof ; https://www.ennstalwiki.at/wiki/index.php/Naturdenkmale_im_Bezirk_Liezen ; https://commons.wikimedia.org/wiki/File:St-Ramsau-Bergahorn-1.jpg",
-   "curation_status": "flagged"
-  },
-  {
    "name": "1000-jährige Eiche Bad Blumau",
    "lat": 47.105423,
    "lng": 16.049133,
