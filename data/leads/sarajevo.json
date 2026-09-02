@@ -1,0 +1,45 @@
+{
+ "leads": [
+  {
+   "candidate": "Veliki Park (Great Park), Centar municipality",
+   "reason": "Real, compact (3.3 ha) historic park, established 1888 on the former Cekrekcija cemetery site in English-landscape style; still standing and maintained (zppks.ba/spomenici-sa.ba list it as a natural-heritage site with ongoing works, a 2024 ground-subsidence remediation study among them). No individual tree within it has been named or dated by any source found in this pass, English or Bosnian (checked both English and Bosnian Wikipedia, park authority pages, tourism sites). Likely holds mature plane or chestnut specimens from the original 1886-88 planting, worth a targeted next pass: search Bosnian park-authority (KJKP Park) documents, or request info directly from Kantonalni zavod za zastitu kulturno-historijskog i prirodnog naslijedja (spomenici-sa.ba), which clearly holds records this general web search could not surface."
+  },
+  {
+   "candidate": "A large-girth tree recorded near Ilijas (Kanton Sarajevo)",
+   "reason": "monumentaltrees.com search result named 'Restoran Diana, Ilijas' with girth 5.40 m, height approx. 20 m, but the monumentaltrees.com page itself 403'd on fetch (known behaviour, see BRIEF_RESEARCH.md) and could not be viewed to confirm species or exact coordinates. hr.wikipedia's 'Popis zasticenih objekata prirode u BiH' separately confirms Ilijas holds some of BiH's 39 individually protected trees, but without naming which. Ilijas is a separate town roughly 20-25 km out; transit time to confirm it clears the ~30-minute day-trip boundary was not checked. Needs a session that can view monumentaltrees.com directly (single-page browser fetch, not automated) plus a transit-time check before this could even be assessed as a candidate."
+  },
+  {
+   "candidate": "Gazi Husrev-beg complex (mosque, madrasa, turbe courtyard), Bascarsija",
+   "reason": "One search result referenced a museum room 'dedicated to the tree of Gazi Husrev-beg and the development of his waqf', suggesting some historical tree association with the founder, but no source found describes an actual living tree, its species, age or location. Could be a symbolic/heraldic reference (a family tree in the genealogical sense) rather than a botanical one; needs a Bosnian-language museum or vakuf.ba source to disambiguate before it is even a real candidate."
+  },
+  {
+   "candidate": "Bentbasa protected landscape / Miljacka gorge, incl. Toplik cave and Jekovac plateau area",
+   "reason": "Designated Kanton Sarajevo's fifth protected landscape in 2017 (vlada.ks.gov.ba), 160.9 ha, cited for biological/geomorphological/hydrological diversity. No individual tree named in any source found. The old promenade through it (see 'Ambassadors Alley' in blocked) is the only vegetation feature documented; worth a further pass specifically on the Jekovac plateau and Jekovacka/Zuta tabija area away from the ceremonial avenue."
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Velika Aleja (the Ilidza-to-Vrelo Bosne avenue), including the Vrelo Bosne park approach",
+   "reason": "Not a collectible point: a 3.5 km double-row avenue, originally 726 oriental plane trees planted 1892 plus wild chestnuts planted 1888, of which 630 planes remained as of a 2017 article (radiosarajevo.ba, 1 Oct 2017). Well documented and genuinely dated (1998 conservation report from spomenici-sa.ba confirms the same 1892 plantings survived the 1992-96 siege and received restoration work Aug-Oct 1998), but no single standout specimen is named or distinguishable in any source checked (Bosnian and Serbian Wikipedia, spomenici-sa.ba, radiosarajevo.ba, Wikimedia Commons category of 57 photos, none captioned to an individual tree). Same failure mode as Barcelona's La Rambla planes per CLAUDE.md's collectible-point rule: nothing to stand at, nothing singular to have seen. If a future pass finds one named/marked specimen (e.g. 'the first tree planted' or a tree with its own plaque) it becomes a real candidate; until then this stays blocked as an ensemble/avenue."
+  },
+  {
+   "candidate": "Vilsonovo setaliste (Wilson's Promenade), Miljacka riverside",
+   "reason": "Avenue, not a collectible point: linden trees (three varieties, deliberately staggered for continuous bloom late May-10 July) planted 1905 by the Austro-Hungarian army, roughly 480 lindens and chestnuts along the promenade per tourism sources (radiosarajevo.ba, 24 Oct 2016). No individual tree distinguished in any source. Same ensemble failure as Velika Aleja above."
+  },
+  {
+   "candidate": "Ambassadors' Alley (Aleja ambasadora), Bentbasa, along the Miljacka canyon",
+   "reason": "150+ linden trees, each planted by a visiting foreign ambassador as a diplomatic/ceremonial tradition (has its own English Wikipedia page). Blocked for two independent reasons: it is an avenue/ensemble, not a single point, and the planting is an ongoing modern tradition (a 2023-era news hit found 'Ambassadors of Brazil and Malaysia plant linden trees in Sarajevo') rather than a historic one, so individual trees within it are recent and not old, spectacular or historically significant on their own."
+  },
+  {
+   "candidate": "Walnut trees, Zuta/Jekovacka tabija",
+   "reason": "Confirmed dead: spomenici-sa.ba reports all trees at this site were felled on 17 January 2025 amid public controversy, with replanting promised. A tree we know is dead never ships per hard rule 2; this is recorded so a future pass does not re-research it from zero."
+  }
+ ],
+ "notes": [
+  "Pass conducted 2026-09-02, roughly 40-45 minutes, English- and Bosnian-language web search only (WebSearch/WebFetch), no fetch-blocklist hosts hit and none newly discovered as hanging.",
+  "The single most useful next step for Sarajevo is direct contact with, or a scrape of, spomenici-sa.ba (Kantonalni zavod za zastitu kulturno-historijskog i prirodnog naslijedja) and zppks.ba (Zastita prirode i zastitna podrucja Kantona Sarajevo), which clearly hold individual-tree records (they conducted a 1998 tree-by-tree conservation survey of Velika Aleja) that do not surface through general web search. A session that can browse spomenici-sa.ba's full site structure (it has dozens of dated posts) rather than search-summary it would likely find named individual trees this pass could not.",
+  "The 1992-96 siege risk flagged in the brief is real and specific here: Vrelo Bosne's own English Wikipedia entry states trees there were chopped for firewood during the war and the park was restored by volunteers in 2000, which directly contradicts the 'over 100 years old, 630 of 726 preserved' claims made elsewhere about the same avenue. This pass could not resolve the contradiction (it may be that the avenue itself, on the Ilidza approach, survived better than the inner Vrelo Bosne spring park, which is a separate area) and flags it for whoever researches this city next: do not assume any Vrelo Bosne-area tree predates 2000 without a source that says so specifically for that tree.",
+  "monumentaltrees.com 403'd on every automated fetch attempt (WebFetch), consistent with BRIEF_RESEARCH.md's note that it requires a single-page browser session; a session with that capability should re-check the Sarajevo and Ilijas entries directly."
+ ],
+ "note": "\n\nZERO TREES 2026-09-02, and it is an honest zero rather than a thin pass. Both of the city's best-documented sets are AVENUES and fail the collectible-point rule the same way Barcelona's La Rambla planes did: Velika Aleja at Ilidza (planted 1888/1892, a dated 2017 article says 630 of 726 planes still stand) and Vilsonovo setaliste (the 1905 Austro-Hungarian linden avenue). Well documented, genuinely old, and nothing to stand at. Ambassadors' Alley is a modern ceremonial planting. The Zuta tabija walnuts were FELLED on 17 January 2025. THE SIEGE WARNING WAS REAL AND IS NOW EVIDENCED: Vrelo Bosne's own English Wikipedia page says its trees were chopped for heating during the war and the park was replanted by volunteers in 2000, which directly contradicts the '630 preserved, 100+ years old' claims about the same or adjacent ground. That contradiction is recorded rather than resolved, and it is the first thing a next pass must settle. THE HIGHEST-VALUE NEXT STEP, and it needs a session with a browser: spomenici-sa.ba, the Kantonalni zavod, clearly holds individual-tree records and ran a tree-by-tree conservation survey in 1998, but the pass could only reach it through search snippets. Checked 2026-09-02: the site DOES load in a browser session, it is a heritage-institute news site, and finding the register inside it is a navigation job rather than one fetch."
+}
