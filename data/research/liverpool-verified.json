@@ -34,8 +34,8 @@
     "girth_cm": 683,
     "location": {
       "address": "Calderstones Park, Calderstones Road, Liverpool L18 3JB",
-      "latitude": 53.3822,
-      "longitude": -2.8967,
+      "latitude": 53.38167,
+      "longitude": -2.89417,
       "neighbourhood": "Calderstones Park, Allerton"
     },
     "verified_sources": [
@@ -45,6 +45,6 @@
     "transport": "Mossley Hill or West Allerton rail station, about a 15-20 minute walk; bus routes 61A, 75, 76, 86C stop near the park entrance on Menlove Avenue.",
     "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Single source only: a Liverpool Botanical Society field-trip report (walk led by Maria Knowles, 31 October 2015, group of 15), which is a credible organised survey but not a register or a second independent publication; flagged for that reason, and a second source should be sought before this ships with full confidence. Girth measured at 683cm (over 22 feet), described as 'a huge tree with characteristic spiralled bark and lots of fruit.' The society derived its age from girth using a stated growth-rate assumption for a tree in good condition with a full crown of 2.5cm/year (683/2.5 = 273 years, as of Oct 2015; add roughly 11 years to bring to 2026, hence the estimate here of roughly 280-290 years). This is a girth-derived estimate per a stated method, not a ring count or documented planting date, so the age band here is kept broad. Location within the park is not pinned in the source beyond 'Calderstones Park' (the same walk also examined Sequoiadendron giganteum planted 1964 at 487cm girth nearby, and dozens of other exotic specimens), so location_precision is approximate pending a more exact fix. Stands in the same park as the Allerton Oak (lvp_001), so the two form a single walkable stop rather than two separate visits. 683cm is a genuinely large girth for the species in the UK (national UK champion sweet chestnuts run roughly 900-1400cm), so this is a notable but not record specimen."
+    "verify_notes": "Single source only: a Liverpool Botanical Society field-trip report (walk led by Maria Knowles, 31 October 2015, group of 15), which is a credible organised survey but not a register or a second independent publication; flagged for that reason, and a second source should be sought before this ships with full confidence. Girth measured at 683cm (over 22 feet), described as 'a huge tree with characteristic spiralled bark and lots of fruit.' The society derived its age from girth using a stated growth-rate assumption for a tree in good condition with a full crown of 2.5cm/year (683/2.5 = 273 years, as of Oct 2015; add roughly 11 years to bring to 2026, hence the estimate here of roughly 280-290 years). This is a girth-derived estimate per a stated method, not a ring count or documented planting date, so the age band here is kept broad. Location within the park is not pinned in the source beyond 'Calderstones Park' (the same walk also examined Sequoiadendron giganteum planted 1964 at 487cm girth nearby, and dozens of other exotic specimens), so location_precision is approximate pending a more exact fix. Stands in the same park as the Allerton Oak (lvp_001), so the two form a single walkable stop rather than two separate visits. 683cm is a genuinely large girth for the species in the UK (national UK champion sweet chestnuts run roughly 900-1400cm), so this is a notable but not record specimen. Coordinates are the park's own published centroid (Wikipedia infobox for Calderstones Park), not a tree-level fix, consistent with location_precision: approximate."
   }
 ]

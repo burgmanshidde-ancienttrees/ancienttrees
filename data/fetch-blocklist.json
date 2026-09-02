@@ -346,6 +346,11 @@
    "what": "403 to WebFetch, browser-UA curl and Wayback alike.",
    "workaround": "unknown",
    "date": "2026-09-02"
+  },
+  "historicengland.org.uk": {
+   "what": "403 to plain WebFetch and to curl with a browser user agent, on list-entry pages. Fast fail, not a hang.",
+   "workaround": "unknown; the Liverpool pass used Wikipedia and local botanical-society write-ups instead. Worth one browser-session attempt, since manchester.gov.uk 403s the same way and loads fine in a browser.",
+   "date": "2026-09-02"
   }
  }
 }
