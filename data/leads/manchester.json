@@ -1,0 +1,41 @@
+{
+  "leads": [
+    {
+      "name": "Cappadocian Maple, Parsonage Gardens",
+      "species": "Cappadocian Maple (Acer cappadocicum)",
+      "location_hint": "Parsonage Gardens, Stenner Lane, Didsbury (opposite St James' Church, adjoining Fletcher Moss Botanical Garden)",
+      "reason": "Only source found this pass is monumentaltrees.com (girth 2.06m, estimated 126 +/- 30 years old as of 2024), which per hard rule 1 may verify but never be the sole source. Needs one independent source (Tree Register / tree-register.org listing, a Manchester City Council or Didsbury Civic Society document naming this specific tree, or a dated photo/observation) before it can ship. Age at 126 years is modest, not spectacular, so also worth checking whether it carries a real champion-tree designation (Tree Register 'British & Irish Champion' status) that would make the historically-significant case stronger; not confirmed this pass, only inferred by analogy to a different Cappadocian Maple champion at Leonardslee."
+    },
+    {
+      "name": "Adam's Laburnum (Laburnocytisus 'Adamii'), Parsonage Gardens/Fletcher Moss",
+      "species": "+ Laburnocytisus 'Adamii'",
+      "location_hint": "Parsonage Gardens or Fletcher Moss Botanical Garden, Didsbury (didsburycivicsociety.org places it in Parsonage Gardens: 'a very rare specimen of an early bio-engineered tree (Laburnocytisus Adamii), that still survives today')",
+      "reason": "Genuinely rare (a graft-chimaera between Laburnum anagyroides and Chamaecytisus purpureus, created accidentally in 1825 by nurseryman Jean Louis Adam near Paris; very few specimens exist anywhere), which would clear the 'historically significant' bar even with no great age. One source (Didsbury Civic Society) confirms presence and that it 'still survives today', dated page last-updated 2020-12-06. Manchester City Council's own 'rare trees in parks' page (manchester.gov.uk) very likely names this tree with more detail but returned HTTP 403 to both curl and WebFetch this pass; worth another attempt with a browser session. Needs a second independent source and a tree-level coordinate; not attempted further this pass under the four-candidate/time-box rule."
+    },
+    {
+      "name": "The Manchester Poplar, St John's Gardens",
+      "species": "Black Poplar (Populus nigra subsp. betulifolia)",
+      "location_hint": "St John's Gardens, Lower Byrom Street/Byrom Street/Quay Street, Castlefield, Manchester (a former churchyard, redeveloped as a public garden in 1932)",
+      "reason": "A second, younger Manchester Poplar specimen distinct from the one shipped as mcr_001 (Annie Lees Park, Gorton). Confirmed to exist by Wikipedia's St John's Gardens article and proarbmagazine.com's 2014 city-centre tree trail piece, but neither gives an age, girth or planting date, and the garden itself only dates from 1932, so this individual is not remarkable enough to justify a second, near-duplicate poplar entry on the same city page. Recorded as a lead rather than blocked in case a future pass finds it is in fact notably older or more storied than the 1932 redevelopment suggests."
+    },
+    {
+      "name": "Heaton Park veteran trees (unnamed)",
+      "species": "unknown; the park borders describe a Turkey Oak (Quercus cerris) and mention 'some of the oldest trees in the park' surviving in the restored Western Pleasure Ground, no individual named or dated",
+      "location_hint": "Heaton Park, Prestwich/Higher Blackley, Manchester, especially the Western Pleasure Ground near Heaton Hall",
+      "reason": "Heaton Park is one of Europe's largest municipal parks with an 18th-century hall and genuinely old estate-era planting, and is a strong candidate site, but this pass found no single named, dated, individually-remarkable tree, only general park descriptions. Historic England's Register entry (list-entry/1000854) likely has more but returned HTTP 403 to curl this pass. Worth a dedicated register/HE-listing pass with a browser session rather than plain curl."
+    },
+    {
+      "name": "St Mary's Church, Didsbury churchyard tree",
+      "species": "unknown",
+      "location_hint": "St Mary's Church, Didsbury (the brief's suggested site)",
+      "reason": "No source found this pass naming any specific old or notable tree at this churchyard. Not blocked, just unresearched; a future pass could check the church's own website, Historic England listing, or a site visit report."
+    },
+    {
+      "name": "Blackley churchyard tree (St Peter's or other)",
+      "species": "unknown",
+      "location_hint": "St Peter's Church, Old Market Street, Blackley, Manchester (built 1844) or another Blackley churchyard",
+      "reason": "No source found this pass naming any specific old or notable tree here. St Peter's itself only dates from 1844, which caps how old any planted specimen could plausibly be unless it predates the current building on an older church site. Not blocked, just unresearched."
+    }
+  ],
+  "blocked": []
+}

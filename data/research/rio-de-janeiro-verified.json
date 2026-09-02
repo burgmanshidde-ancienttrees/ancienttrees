@@ -46,5 +46,28 @@
     "location_precision": "approximate",
     "curation_status": "flagged",
     "verify_notes": "The tallest tree in the Jardim Botânico's living collection at 49.1m, about the height of a 16-storey building, reported by two independent outlets (Agência Brasil and Diário do Rio) covering the garden's own launch of the 'Trilha das Árvores Gigantes' on 21 September 2022 (Brazil's Tree Day), led by Marcus Nadruz, coordinator of the JBRJ's Living Collection. In the wild Khaya senegalensis (native to West Africa/the Sahel, also called dry-zone or Senegal mahogany) reaches only 30-35m, so this individual is unusually exceptional for its species. No age or girth figure was published in either source; the JBRJ's own detail page for the trail (gov.br/jbrj) required an authenticated login and could not be read, so any additional measurements it may hold (age, girth, exact plot) are unconfirmed. This is one of ten/eleven specimens (sources differ, 'dez' vs the fuller 11-tree list from the same Agência Brasil piece) on the trail, all over 25m tall, including an imperial palm (Roystonea oleracea, 48.1m) as runner-up. Location is garden-area only; exact tree position within the arboretum not confirmed from open sources, so location_precision is approximate."
+  },
+  {
+    "id": "rio_003",
+    "name": "The Figueira Gigante of Tijuca",
+    "species": "Strangler Fig (Urostigma sp.)",
+    "age_estimate": "over a century",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Rua Mariz e Barros, 678, in front of the SENAI building, Tijuca, Rio de Janeiro",
+      "latitude": -22.9202,
+      "longitude": -43.2379,
+      "neighbourhood": "Tijuca"
+    },
+    "verified_sources": [
+      "https://www.ipatrimonio.org/rio-de-janeiro-figueira-gigante/"
+    ],
+    "access": "Free, a street tree visible and reachable from the public sidewalk at all times",
+    "transport": "Tijuca neighbourhood; reachable by metro (Saens Peña or Afonso Pena stations) plus a short walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A strangler fig (figueira-brava / mata-pau, genus Urostigma) with a short, thick, grooved trunk and sprawling interlaced aerial roots, standing on the public street Rua Mariz e Barros in front of no. 678 (opposite the SENAI building), Tijuca. Individually protected by the state heritage institute INEPAC under decree E 2433, listed 24 October 1968, one of Rio's declared 'imune ao corte' (immune from felling) trees, a legal category distinct from full tombamento used specifically for individual remarkable trees. Described in the source as a 'secular' (centuries-old) specimen; no numeric age, height or girth figure is published, so age_estimate is left as the vague 'over a century' the source itself uses rather than sharpened into a number. Only one source (ipatrimonio.org, a Latin American heritage-listing catalogue that names the decree number directly) could be directly fetched and verified within this pass; a second lead exists (Museu da Pessoa's 'Você Já Escutou a Terra?' digital exhibition, in which environmentalist Maurício Ruiz reportedly discusses this as one of Rio's oldest trees) but that page returned HTTP 403 to both curl and WebFetch and could not be confirmed by direct reading, so it is not counted as a source, only as a corroborating lead. multirio.rio.rj.gov.br, which WebSearch's own summary also associated with this tree via a piece titled 'Árvores integram patrimônio do Rio', refused connection outright (curl exit 7, ECONNREFUSED via WebFetch too) on two separate URL variants, so its content could not be verified either and is not used as a source, per the rule that a search summary is a lead, never a source. No dated recent photo or news mention was found confirming the tree is alive today; the 1968 protection decree and its unchanged listing on the ipatrimonio.org catalogue is the only currency evidence, so this is flagged for a vitality check rather than assumed dead. Address and INEPAC decree number are exact and testable by a reader."
   }
 ]
