@@ -4652,6 +4652,33 @@
     "note": "two new city pages. Caught that a superlatives collision between Beijing and Kyoto was a matcher artifact on the pronoun 'them' and refused to rewrite two unrelated live stories to silence it; the dispatching session anchored both pronouns instead, which fixed the warning and the prose.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "bruges",
+    "kind": "verify",
+    "tokens": 85000,
+    "trees": 4,
+    "note": "register-led, candidates staged from the API for free first. Caught that two of the four briefed candidates were wrong: the Zeebrugge memorial lime is a 2016 sapling beside an old monument, and De Keizer stands in a fenced private front garden. Also caught a churchyard elm the register still describes while its own 2019 note says it was felled.",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "ypres",
+    "kind": "verify",
+    "tokens": 60000,
+    "trees": 4,
+    "note": "a city with no old trees because the shelling took them all, so the page is about replanting. Settled two access questions from OpenStreetMap rather than from a search, which is now written up in BRIEF_RESEARCH.md. Blocked a poplar the register itself records as gone.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "bruges + ypres",
+    "kind": "write",
+    "tokens": 78000,
+    "trees": 8,
+    "note": "CAUGHT AN ID COLLISION THAT WOULD HAVE OVERWRITTEN THREE LIVE BRAGA TREES: my brief named prefix brg_, which is Braga's, because I wrote it by hand instead of generating it with passcheck.py --brief. Reassigned to bge_ before a word was written.",
+    "wasted": 0,
+    "brief_wrong": true
    }
   ]
  }
