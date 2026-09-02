@@ -6,9 +6,18 @@
 // Two independent actions, which is the whole point of the rebuild:
 //   the thumbs are an opinion, a toggle, complete on their own;
 //   "Something's wrong" opens fact chips and reports a problem.
-// They keep separate localStorage keys, so voting never blocks a correction and
-// a correction never spends the vote. Someone may love a tree and still tell us
-// the pin is wrong; the old nested version made that impossible.
+// They are independent, so voting never blocks a correction and a correction
+// never spends the vote. Someone may love a tree and still tell us the pin is
+// wrong; the old nested version made that impossible.
+//
+// WHAT YOU ALREADY SAID IS READ BACK FROM YOUR ACCOUNT, not remembered by the
+// browser (2026-09-02, Hidde: "alles wat wordt opgeslagen, moet op je account
+// zijn"). It used to sit in three localStorage keys per tree, which meant the
+// same person could vote again from a second browser and a vote made on the
+// phone was invisible here. The rows were always on the server; what was
+// missing was permission to read them back, and supabase/own-data.sql granted
+// exactly that on 2026-08-27 for the app's sake. This is the website catching
+// up with a policy that already exists.
 //
 // Revised 2026-08-21 on Hidde's ask, knowingly amending his 2026-08-16 split:
 // thumbs are now toggle buttons (press selects, press again undoes, the other
@@ -77,8 +86,45 @@ export const WORTHIT_JS = `
   // it selects and than unpress"): press selects and counts, press again
   // undoes, the other thumb switches. They stay visible after a vote; the
   // selected state IS the confirmation.
+  // What this account has already said about this tree, rebuilt from its own
+  // submission rows. Held in memory for this page and never written down.
+  //   why = "worth it" | "not worth it" | "vote undone: ..." | "report: ..."
+  //         | "report detail: ..."
+  var mine = {};   // tree id -> { vote, reported, detailed }
+  function state(tree) {
+    if (!mine[tree]) mine[tree] = { vote: null, reported: false, detailed: false };
+    return mine[tree];
+  }
+  function load(box) {
+    var s = session();
+    if (!s) return Promise.resolve();
+    var tree = box.dataset.tree;
+    return fetch('${SUPABASE_URL}/rest/v1/submissions?select=why&order=created_at.desc'
+                 + '&tree=like.' + encodeURIComponent(tree + '%'),
+      { headers: { 'apikey': '${SUPABASE_KEY}', 'Authorization': 'Bearer ' + s.access_token } })
+      .then(function(r) { return r.ok ? r.json() : []; })
+      .then(function(rows) {
+        var st = state(tree);
+        (rows || []).forEach(function(row) {
+          var why = String(row.why || '');
+          // Newest first, so the FIRST vote-shaped row is the standing one.
+          // "vote undone" first means the vote was taken back.
+          if (st.vote === null) {
+            if (why === 'worth it' || why === 'not worth it') {
+              st.vote = why === 'worth it' ? 'up' : 'down';
+            } else if (why.indexOf('vote undone') === 0) {
+              st.vote = false;   // decided: no standing vote
+            }
+          }
+          if (why.indexOf('report detail') === 0) st.detailed = true;
+          else if (why.indexOf('report') === 0) st.reported = true;
+        });
+        if (st.vote === false) st.vote = null;
+      })
+      .catch(function() {});
+  }
   function paint(box) {
-    var v = localStorage.getItem('at_worthit_' + box.dataset.tree);
+    var v = state(box.dataset.tree).vote;
     box.querySelectorAll('.worthit-btn').forEach(function(b) {
       var on = v === b.dataset.vote;
       b.classList.toggle('is-on', on);
@@ -88,7 +134,7 @@ export const WORTHIT_JS = `
   }
   function openWhy(box, heading) {
     var why = box.querySelector('.worthit-why');
-    if (!why || localStorage.getItem('at_wrong_' + box.dataset.tree)) return;
+    if (!why || state(box.dataset.tree).reported) return;
     var q = why.querySelector('.worthit-q');
     if (q) q.textContent = heading;
     why.hidden = false;
@@ -109,21 +155,27 @@ export const WORTHIT_JS = `
     show(box, '.worthit-thanks', true);
     var form = box.querySelector('.worthit-detail');
     if (!form) return;
-    if (localStorage.getItem('at_wrong_detail_' + tree)) {
+    if (state(tree).detailed) {
       form.hidden = true;
       box.querySelector('.worthit-thanks').textContent = 'Thanks, that helps.';
       return;
     }
-    var reason = localStorage.getItem('at_wrong_' + tree);
+    var reason = state(tree).reason;
     var chip = reason ? box.querySelector('.worthit-chip[data-reason="' + reason + '"]') : null;
     var q = form.querySelector('.worthit-q'), ta = form.querySelector('textarea');
     if (chip && q) q.textContent = chip.dataset.q || q.textContent;
     if (chip && ta) ta.placeholder = chip.dataset.ph || '';
     form.hidden = false;
   }
+  // Paint what is known now (nothing), then again once the account answers.
+  // A control that is briefly blank is honest; one that says "you voted" from
+  // a stale browser key is not.
   document.querySelectorAll('.worthit').forEach(function(box) {
     paint(box);
-    if (localStorage.getItem('at_wrong_' + box.dataset.tree)) reportDone(box);
+    load(box).then(function() {
+      paint(box);
+      if (state(box.dataset.tree).reported) reportDone(box);
+    });
   });
   document.addEventListener('submit', function(e) {
     var form = e.target.closest('.worthit-detail');
@@ -137,7 +189,7 @@ export const WORTHIT_JS = `
     var text = (form.querySelector('textarea').value || '').trim();
     if (!text) return;
     send(box, 'report detail', text.slice(0, 1000));
-    localStorage.setItem('at_wrong_detail_' + box.dataset.tree, '1');
+    state(box.dataset.tree).detailed = true;
     reportDone(box);
   });
   document.addEventListener('click', function(e) {
@@ -167,19 +219,19 @@ export const WORTHIT_JS = `
     }
 
     if (btn.classList.contains('worthit-btn')) {
-      var vkey = 'at_worthit_' + tree;
-      var cur = localStorage.getItem(vkey);
+      var st = state(tree);
+      var cur = st.vote;
       var vote = btn.dataset.vote;
       if (cur === vote) {
         // Accidental or changed mind: undo writes a compensating row, so the
         // tally nets out without anonymous deletes.
-        localStorage.removeItem(vkey);
+        st.vote = null;
         send(box, 'vote undone', cur === 'up' ? 'worth it' : 'not worth it');
         paint(box);
         return;
       }
       if (cur) send(box, 'vote undone', cur === 'up' ? 'worth it' : 'not worth it');
-      localStorage.setItem(vkey, vote);
+      st.vote = vote;
       send(box, vote === 'up' ? 'worth it' : 'not worth it', '');
       paint(box);
       // The app-store convention: the vote already counted; the why is an
@@ -188,9 +240,9 @@ export const WORTHIT_JS = `
       return;
     }
 
-    var rkey = 'at_wrong_' + tree;
-    if (localStorage.getItem(rkey)) { reportDone(box); return; }
-    localStorage.setItem(rkey, btn.dataset.reason);
+    if (state(tree).reported) { reportDone(box); return; }
+    state(tree).reported = true;
+    state(tree).reason = btn.dataset.reason;
     send(box, 'report', btn.dataset.reason);
     reportDone(box);
   });

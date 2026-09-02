@@ -1,10 +1,11 @@
-// The walks a city page and a city's walks page both need.
+// The walks a page may MENTION, and the test for whether it has any.
 //
-// One implementation, because two would drift and the city page has to know
-// whether the walks page exists before it may link to it. scripts/qa.py fails
-// the deploy on a page nothing links to, and it fails just as hard on a link
-// to a page that was never built, so the two questions have to be answered by
-// the same function.
+// It fed /[city]/walks (Contract K) until 2026-09-02, when Hidde took the
+// walks off the website for good and pointed every walk control at the app
+// overlay instead. What survives is the gate: a page may say the word "walk"
+// to a reader only where walks actually exist, and that answer has to come
+// from the same computation the app's own walks feed uses, or the website
+// advertises a route the app does not have.
 import { walkableTrees, type CityEntry, type Tree } from "./trees";
 import { speciesIcon } from "./species-icons";
 import { usablePhoto } from "./images";
@@ -18,9 +19,10 @@ export interface PageWalk {
   trees: Tree[];
 }
 
-/// Enough on the page to be worth a page: five tree entries across its walks,
-/// the same floor Contract H puts on a park, because below that the city page
-/// serves the reader better than a walks page wearing its name.
+/// Enough walking to be worth mentioning: five tree entries across a city's
+/// walks, the same floor Contract H puts on a park. Below it, what the app
+/// would offer is a stroll between two trees, and promising a "walk" for that
+/// is the kind of small over-claim a reader only has to be caught by once.
 export const WALKS_PAGE_MIN_TREES = 5;
 
 export function pageWalksFor(city: CityEntry): PageWalk[] {
@@ -66,8 +68,8 @@ export function pageWalksFor(city: CityEntry): PageWalk[] {
   return out.sort((a, b) => b.trees.length - a.trees.length);
 }
 
-/// True when this city earns a walks page. The city page asks this before it
-/// puts a link on itself.
+/// True when this city has walks worth pointing a reader at. The city and tree
+/// pages ask this before they show a walk control at all.
 export function hasWalksPage(city: CityEntry): boolean {
   const walks = pageWalksFor(city);
   return walks.reduce((n, w) => n + w.trees.length, 0) >= WALKS_PAGE_MIN_TREES;

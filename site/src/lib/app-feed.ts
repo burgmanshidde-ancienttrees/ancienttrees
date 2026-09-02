@@ -20,7 +20,7 @@
 import type { CityEntry } from "./trees";
 import { peakFor } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
-import { usablePhoto, thumbUrl, creditRequired, creditName } from "./images";
+import { usablePhoto, thumbUrl, creditRequired, creditName, creditText } from "./images";
 import { BASE_URL } from "./schema";
 
 /** The feed is read by an app on somebody's phone, which has no page to
@@ -80,7 +80,7 @@ export interface FeedTree {
   photo: { url: string; license: string | null; attribution: string | null;
             width: number | null; height: number | null;
             thumb: string; hero: string; credit_required: boolean;
-            attribution_short: string | null } | null;
+            attribution_short: string | null; credit_line: string | null } | null;
 }
 
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
@@ -133,6 +133,14 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
               // one photograph was credited two ways (Hidde, 2026-08-26, asked
               // which wins: "ingekort natuurlijk").
               attribution_short: creditName(p.attribution),
+              // The finished line, name and terms together, because the app
+              // was joining those two itself and a gift breaks that join: its
+              // licence field is a sentence ("Provided by Paulo V. Araujo
+              // (Dias com Arvores), all rights reserved") rather than a label,
+              // so the phone printed the giver's name twice and the words "all
+              // rights reserved" under a photograph he gave us. An answer in
+              // the feed, not a rule written twice.
+              credit_line: creditText(p.attribution, p.license),
             }
           : null,
       });

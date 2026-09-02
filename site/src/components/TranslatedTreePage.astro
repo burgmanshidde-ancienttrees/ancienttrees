@@ -13,7 +13,7 @@ import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { SIGNIN_JS } from "../lib/signin-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../lib/trees";
 import { haversineKm } from "../lib/walks";
-import { usablePhoto, imgSrcset, photoDims, thumbUrl, creditRequired, creditName } from "../lib/images";
+import { usablePhoto, imgSrcset, photoDims, thumbUrl, creditRequired, creditText } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { locationIsApproximate, metaForTree } from "../lib/tree-copy";
@@ -39,11 +39,15 @@ const U = ui(lang);
 const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
 
 const cslug = city.id;
-// Same bug, same fix as the English tree page (e464f8c6): the "#walk" anchor
-// on both the English and translated city page now holds the app-promotion
-// block rather than a real walk picker, and there is no translated walks
-// page, so this links to the English /[city]/walks page (still useful, a
-// map and a route need no translation) only when it actually exists.
+// The walk link opens the app overlay, since 2026-09-02 (Hidde: "stuur ze
+// maar gewoon naar de app"), the same as its English twin. AppModal renders
+// from Base.astro in this page's own language, so the dialog it opens is
+// translated even though this link is not a page any more.
+//
+// The sticky bar's second link used to go to /[city]/walks as well while
+// reading "More trees", which was two mistakes in one: it is not a walk
+// promise, and it pointed at a page that no longer exists. It goes to the
+// city page, which is where more trees actually are.
 const cityHasWalksPage = hasWalksPage(city);
 const tslugs = treeSlugsForCity(city);
 const tslug = tslugs[tree.id];
@@ -106,7 +110,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     {photo && photo.url ? (
       <figure class="tree-photo">
         <img {...imgSrcset(photo.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px", photoDims(photo).width, photoDims(photo).height)} alt={x.name} loading="lazy" />
-        {creditRequired(photo.license) && <figcaption>Foto: {creditName(photo.attribution)} ({photo.license})</figcaption>}
+        {creditRequired(photo.license) && <figcaption>Foto: {creditText(photo.attribution, photo.license)}</figcaption>}
       </figure>
     ) : (
       <figure class="tree-noph">
@@ -125,7 +129,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     <div class="action-row">
       <a class="go-btn" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">{U.takeMeThere}</a>
       {cityHasWalksPage && (
-        <a class="action-link" href={`/${cslug}/walks`}>{U.walkMoreTrees(tr.city)}</a>
+        <a class="action-link" href="/app" data-app-modal data-ev="walks-app">{U.walkMoreTrees(tr.city)} {U.inTheApp}</a>
       )}
     </div>
     <div class="prose-block"><p>{x.story}</p></div>
@@ -165,9 +169,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     <div class="tree-bar" aria-label={U.actions}>
       <SaveHeart treeId={x.id} treeName={x.name} labelSave={U.cardSave} labelSaved={U.cardSaved} />
       <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">{U.takeMeThere}</a>
-      {cityHasWalksPage && (
-        <a class="tb-link" href={`/${cslug}/walks`}>{U.moreTrees}</a>
-      )}
+      <a class="tb-link" href={`/${lang}/${cslug}`}>{U.moreTrees}</a>
     </div>
     <SignInModal lang={lang} />
 </main>

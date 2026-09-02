@@ -28,7 +28,6 @@ import { type WalkMarker } from "../lib/walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
 import { otherCitiesFor } from "../lib/other-cities";
-import { hasWalksPage } from "../lib/city-walks";
 import { byCityListOrder } from "../lib/city-order";
 import { hreflangForCity } from "../lib/i18n";
 import LanguagePicker from "../components/LanguagePicker.astro";
@@ -80,10 +79,6 @@ const { city, allCities, countryPages, speciesPages, collections } = Astro.props
 const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
-// Whether /[city]/walks was built for this city. Asked through the same
-// function the page itself uses, so a link can never point at a page that does
-// not exist, which scripts/qa.py would fail the deploy over.
-const showWalks = hasWalksPage(city);
 const trees = renderableTrees(city);
 const canonical = `${BASE_URL}/${cslug}`;
 const tslugs = treeSlugsForCity(city);
@@ -241,7 +236,6 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
           <span class="passport-total" id="passport-total"></span>
-          <button type="button" class="passport-save" id="passport-save">Save or move to another device</button>
         </p>
       </div>
       {trees.map((t, i) => (
@@ -250,12 +244,6 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       ))}
       <div class="panel-foot">
         <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world.</b> Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
-        {showWalks && (
-          <div class="take-with-you">
-            <strong>Walk them.</strong> The trees of {cityName} fall into routes you can do on foot in an afternoon:{" "}
-            <a href={`/${cslug}/walks`}>tree walks in {cityName}</a>.
-          </div>
-        )}
         <div class="take-with-you">
           <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>Download all {nTrees(trees.length)}</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
         </div>
@@ -318,17 +306,17 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div id="map" class="map"></div>
       <div class="walks" id="walk">
         <div class="map-tools">
-          {showWalks ? (
-            <a class="map-cta" href={`/${cslug}/walks`} data-ev="walks-app">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="map-cta-ic"><path d="M5 19c0-2.2 1.8-4 4-4h6c2.2 0 4-1.8 4-4s-1.8-4-4-4H9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="5" cy="19" r="2.2" fill="currentColor"/><circle cx="19" cy="5" r="2.2" fill="currentColor"/></svg>
-              <span class="map-cta-text">Walking routes<span class="map-cta-sub">see the routes</span></span>
-            </a>
-          ) : (
-            <a class="map-cta" href="/app" data-app-modal data-ev="walks-app">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="map-cta-ic"><path d="M5 19c0-2.2 1.8-4 4-4h6c2.2 0 4-1.8 4-4s-1.8-4-4-4H9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="5" cy="19" r="2.2" fill="currentColor"/><circle cx="19" cy="5" r="2.2" fill="currentColor"/></svg>
-              <span class="map-cta-text">Walking routes<span class="map-cta-sub">in the app</span></span>
-            </a>
-          )}
+          {/* EVERY walk control on the website opens the app overlay, since
+              2026-09-02 (Hidde: "stuur ze maar gewoon naar de app... er moet
+              niet een dieper liggende pagina zijn waar je die walks kan
+              lezen"). The walks are the Plus product, so the web reads the
+              click and hands it over rather than half-delivering the feature.
+              No condition here on purpose: a control that sometimes goes to a
+              page and sometimes opens a dialog is two controls. */}
+          <a class="map-cta" href="/app" data-app-modal data-ev="walks-app">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="map-cta-ic"><path d="M5 19c0-2.2 1.8-4 4-4h6c2.2 0 4-1.8 4-4s-1.8-4-4-4H9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="5" cy="19" r="2.2" fill="currentColor"/><circle cx="19" cy="5" r="2.2" fill="currentColor"/></svg>
+            <span class="map-cta-text">Walking routes<span class="map-cta-sub">in the app</span></span>
+          </a>
           <button type="button" class="map-gps" id="gps-btn" aria-pressed="false" aria-label="Where am I">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="gps-ic"><circle cx="12" cy="12" r="3.2" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
           </button>

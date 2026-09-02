@@ -108,7 +108,6 @@ export interface UIStrings {
   heading: (city: string) => string;
   readMore: string;
   visitedOf: (n: number, city: string) => string;
-  saveOrTransfer: string;
   mappingAll: string;
   missingOrWrong: (city: string) => string;
   tellUs: string;
@@ -136,7 +135,12 @@ export interface UIStrings {
   oldestTreeCrumb: string;
   fullStory: string;
   cityHasMore: (city: string) => string;
-  withWalkingRoute: string;
+  /** The full stop that closes the "more trees in this city" sentence on a
+   *  question page. A string rather than a literal because Japanese ends a
+   *  sentence with \u3002 and not with a dot. It used to be a clause promising
+   *  "with a walking route that passes several of them", which stopped being
+   *  true on 2026-09-02 when the walks left the website for the app. */
+  sentenceEnd: string;
   distanceAway: (d: string) => string;
   /** The factual opening of a tree page's meta description: what it is,
    *  how old, where. Contract B's "answer" half, per language, because
@@ -177,7 +181,6 @@ const EN: UIStrings = {
   heading: (c) => `Ancient Trees in ${c}`,
   readMore: "Read more",
   visitedOf: (n, city) => `visited in ${city}`,
-  saveOrTransfer: "Save or move to another device",
   mappingAll: "We are mapping every remarkable tree in the world.",
   missingOrWrong: (city) => `Do you know one in ${city} we are missing, or see a mistake here?`,
   tellUs: "Tell us",
@@ -205,7 +208,7 @@ const EN: UIStrings = {
   oldestTreeCrumb: "The oldest tree",
   fullStory: "The full story of this tree",
   cityHasMore: (c) => `${c} has more trees worth the visit:`,
-  withWalkingRoute: ", with a walking route that passes several of them.",
+  sentenceEnd: ".",
   distanceAway: (d) => `${d} away`,
   metaLead: (sp, age, where) => {
     const vowel = age ? /^(8|11|18|8\d)$/.test(age) : /^[AEIOU]/.test(sp);
@@ -271,7 +274,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `\u00c1rboles hist\u00f3ricos de ${c}`,
     readMore: "Leer m\u00e1s",
     visitedOf: (n, city) => `visitados en ${city}`,
-    saveOrTransfer: "Guardar o pasar a otro dispositivo",
     mappingAll: "Estamos cartografiando todos los \u00e1rboles singulares del mundo.",
     missingOrWrong: (city) => `\u00bfConoces uno en ${city} que nos falte, o ves aqu\u00ed un error?`,
     tellUs: "Cu\u00e9ntanoslo",
@@ -299,7 +301,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     oldestTreeCrumb: "El \u00e1rbol m\u00e1s antiguo",
     fullStory: "La historia completa de este \u00e1rbol",
     cityHasMore: (c) => `${c} tiene m\u00e1s \u00e1rboles que merecen la visita:`,
-    withWalkingRoute: ", con un recorrido a pie que pasa por varios de ellos.",
+    sentenceEnd: ".",
   },
   it: {
     metaLead: (sp, age, where) => sp && age ? `${sp} di circa ${age} anni a ${where}.`
@@ -333,7 +335,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `Alberi monumentali di ${c}`,
     readMore: "Leggi di pi\u00f9",
     visitedOf: (n, city) => `visitati a ${city}`,
-    saveOrTransfer: "Salva o trasferisci su un altro dispositivo",
     mappingAll: "Stiamo mappando tutti gli alberi notevoli del mondo.",
     missingOrWrong: (city) => `Ne conosci uno a ${city} che ci manca, o vedi un errore qui?`,
     tellUs: "Segnalacelo",
@@ -361,7 +362,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     oldestTreeCrumb: "L'albero pi\u00f9 antico",
     fullStory: "La storia completa di questo albero",
     cityHasMore: (c) => `${c} ha altri alberi che meritano la visita:`,
-    withWalkingRoute: ", con un percorso a piedi che ne tocca diversi.",
+    sentenceEnd: ".",
   },
   nl: {
     metaLead: (sp, age, where) => sp && age ? `${sp} van ongeveer ${age} jaar in ${where}.`
@@ -395,7 +396,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `Monumentale bomen in ${c}`,
     readMore: "Lees meer",
     visitedOf: (n, city) => `bezocht in ${city}`,
-    saveOrTransfer: "Bewaren of naar een ander apparaat overzetten",
     mappingAll: "We brengen alle bijzondere bomen ter wereld in kaart.",
     missingOrWrong: (city) => `Ken je er een in ${city} die hier mist, of zie je een fout?`,
     tellUs: "Laat het ons weten",
@@ -423,7 +423,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     oldestTreeCrumb: "De oudste boom",
     fullStory: "Het volledige verhaal van deze boom",
     cityHasMore: (c) => `${c} heeft meer bomen die de moeite waard zijn:`,
-    withWalkingRoute: ", met een wandelroute die er verschillende aandoet.",
+    sentenceEnd: ".",
   },
   de: {
     metaLead: (sp, age, where) => sp && age ? `${sp}, rund ${age} Jahre alt, in ${where}.`
@@ -457,7 +457,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `Alte B\u00e4ume in ${c}`,
     readMore: "Mehr lesen",
     visitedOf: (n, city) => `in ${city} besucht`,
-    saveOrTransfer: "Sichern oder auf ein anderes Ger\u00e4t \u00fcbertragen",
     mappingAll: "Wir kartieren alle bemerkenswerten B\u00e4ume der Welt.",
     missingOrWrong: (city) => `Kennen Sie einen in ${city}, der hier fehlt, oder sehen Sie einen Fehler?`,
     tellUs: "Sagen Sie es uns",
@@ -485,7 +484,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     oldestTreeCrumb: "Der \u00e4lteste Baum",
     fullStory: "Die ganze Geschichte dieses Baumes",
     cityHasMore: (c) => `${c} hat weitere B\u00e4ume, die den Weg lohnen:`,
-    withWalkingRoute: ", mit einem Spaziergang, der an mehreren vorbeif\u00fchrt.",
+    sentenceEnd: ".",
   },
   pt: {
     metaLead: (sp, age, where) => sp && age ? `${sp} com cerca de ${age} anos em ${where}.`
@@ -519,7 +518,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `\u00c1rvores hist\u00f3ricas de ${c}`,
     readMore: "Ler mais",
     visitedOf: (n, city) => `visitadas em ${city}`,
-    saveOrTransfer: "Guardar ou passar para outro dispositivo",
     mappingAll: "Estamos a mapear todas as \u00e1rvores not\u00e1veis do mundo.",
     missingOrWrong: (city) => `Conhece alguma em ${city} que nos falte, ou v\u00ea aqui um erro?`,
     tellUs: "Diga-nos",
@@ -547,7 +545,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     oldestTreeCrumb: "A \u00e1rvore mais antiga",
     fullStory: "A hist\u00f3ria completa desta \u00e1rvore",
     cityHasMore: (c) => `${c} tem mais \u00e1rvores que valem a visita:`,
-    withWalkingRoute: ", com um percurso a p\u00e9 que passa por v\u00e1rias delas.",
+    sentenceEnd: ".",
   },
   fr: {
     metaLead: (sp, age, where) => sp && age ? `${sp} d'environ ${age} ans à ${where}.`
@@ -581,7 +579,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `Arbres remarquables de ${c}`,
     readMore: "Lire la suite",
     visitedOf: (n, city) => `visit\u00e9s \u00e0 ${city}`,
-    saveOrTransfer: "Enregistrer ou transf\u00e9rer vers un autre appareil",
     mappingAll: "Nous cartographions tous les arbres remarquables du monde.",
     missingOrWrong: (city) => `Vous en connaissez un \u00e0 ${city} qui manque ici, ou vous voyez une erreur ?`,
     tellUs: "Dites-le-nous",
@@ -609,7 +606,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     oldestTreeCrumb: "L'arbre le plus vieux",
     fullStory: "L'histoire compl\u00e8te de cet arbre",
     cityHasMore: (c) => `${c} compte d'autres arbres qui valent le d\u00e9tour :`,
-    withWalkingRoute: ", avec un itin\u00e9raire \u00e0 pied qui en relie plusieurs.",
+    sentenceEnd: ".",
   },
   ja: {
     metaLead: (sp, age, where) => sp && age ? `${where}にある樹齢約${age}年の${sp}。`
@@ -643,7 +640,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `${c}\u306e\u53e4\u6a39`,
     readMore: "\u7d9a\u304d\u3092\u8aad\u3080",
     visitedOf: (n, city) => `${city}\u3067\u8a2a\u308c\u305f\u6570`,
-    saveOrTransfer: "\u4fdd\u5b58\u3059\u308b\u30fb\u5225\u306e\u7aef\u672b\u306b\u79fb\u3059",
     mappingAll: "\u4e16\u754c\u4e2d\u306e\u9280\u91cd\u306a\u6a39\u6728\u3092\u5730\u56f3\u306b\u3057\u3066\u3044\u307e\u3059\u3002",
     missingOrWrong: (city) => `${city}\u3067\u629c\u3051\u3066\u3044\u308b\u6a39\u6728\u3092\u3054\u5b58\u3058\u3067\u3059\u304b\u3001\u307e\u305f\u306f\u8aa4\u308a\u3092\u898b\u3064\u3051\u307e\u3057\u305f\u304b\u3002`,
     tellUs: "\u304a\u77e5\u3089\u305b\u304f\u3060\u3055\u3044",
@@ -671,7 +667,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     oldestTreeCrumb: "\u6700\u3082\u53e4\u3044\u6a39\u6728",
     fullStory: "\u3053\u306e\u6a39\u6728\u306e\u8a73\u3057\u3044\u8a71",
     cityHasMore: (c) => `${c}\u306b\u306f\u8a2a\u308c\u308b\u4fa1\u5024\u306e\u3042\u308b\u6a39\u6728\u304c\u307e\u3060\u3042\u308a\u307e\u3059\u3002`,
-    withWalkingRoute: "\u5f92\u6b69\u30eb\u30fc\u30c8\u3067\u3044\u304f\u3064\u304b\u3092\u3081\u3050\u308c\u307e\u3059\u3002",
+    sentenceEnd: "\u3002",
   },
 };
 

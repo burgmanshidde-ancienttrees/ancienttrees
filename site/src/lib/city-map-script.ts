@@ -1,7 +1,8 @@
 // Ported from city_map_script(), build_site.py:1532-2058. The city page's
 // map: tree pins, walk switching (redraw, not navigation), the zoom-out
-// city chooser, the passport (localStorage, ancienttrees_seen — see
-// ARCHITECTURE.md, this key never changes), and "where am I" GPS.
+// city chooser, the passport (account-only since 2026-09-02, read through
+// visited-sync-js.ts; the ancienttrees_seen key it used to write is gone),
+// and "where am I" GPS.
 //
 // Note: .seen-btn (the actual check-in button element) is referenced here
 // and in the CSS, but build_city_page never renders one into the tree
@@ -407,18 +408,15 @@ if (WALKS.length === 1 && WALKS[0].coords.length > 1) {
   drawWalk([]);
 }
 
-var SEEN_KEY = 'ancienttrees_seen';
-
+// THE LOG LIVES IN THE ACCOUNT (2026-09-02). It used to live in
+// localStorage under ancienttrees_seen, with the account as a copy merged as
+// a union; Hidde ended that: "alles wat wordt opgeslagen, moet op je account
+// zijn." visited-sync-js.ts holds this page's copy of the answer in memory
+// and writes every tick straight through.
 function readSeen() {
-  try { return JSON.parse(localStorage.getItem(SEEN_KEY)) || []; }
-  catch (e) { return []; }
+  return (window.atVisited ? window.atVisited() : []);
 }
-function writeSeen(list, changed, on) {
-  try { localStorage.setItem(SEEN_KEY, JSON.stringify(list)); } catch (e) {}
-  // The log is local first and always: the tick never waits on a network.
-  // visited-sync-js.ts carries it to the account when there is one, so a
-  // collection survives a new phone (Hidde's paywall copy sells it as a
-  // journal, and a journal that one cleared browser erases is not one).
+function writeSeen(changed, on) {
   if (changed && window.atPushVisited) { window.atPushVisited(changed, on); }
 }
 window.atPaintPassport = function() { try { paintPassport(); } catch (e) {} };
@@ -472,9 +470,17 @@ document.querySelectorAll('.seen-btn').forEach(function(btn) {
     var id = btn.dataset.tree;
     var seen = readSeen();
 
+    // A CHECK-IN NEEDS AN ACCOUNT, the same gate the heart has carried since
+    // 2026-08-30 and for the same reason (Hidde, 2026-09-02: "zodra je iets
+    // liket of wat dan ook, moet dat achter een account staan"). It opens the
+    // one sign-in dialog rather than ticking into nothing.
+    if (!window.atSignedIn || !window.atSignedIn()) {
+      if (window.atOpenSignIn) { window.atOpenSignIn(btn.dataset.name); }
+      return;
+    }
+
     if (seen.indexOf(id) !== -1) {
-      seen.splice(seen.indexOf(id), 1);
-      writeSeen(seen, id, false);
+      writeSeen(id, false);
       paintPassport();
       return;
     }
@@ -488,9 +494,7 @@ document.querySelectorAll('.seen-btn').forEach(function(btn) {
       var away = metresBetween(pos.coords.latitude, pos.coords.longitude,
                                parseFloat(btn.dataset.lat), parseFloat(btn.dataset.lng));
       if (away <= parseFloat(btn.dataset.radius)) {
-        var list = readSeen();
-        if (list.indexOf(id) === -1) { list.push(id); }
-        writeSeen(list, id, true);
+        writeSeen(id, true);
         paintPassport();
       } else {
         var far = away > 2000 ? Math.round(away / 1000) + ' km' : Math.round(away) + ' m';
@@ -502,34 +506,15 @@ document.querySelectorAll('.seen-btn').forEach(function(btn) {
   });
 });
 
+// THE #trees= TRANSFER LINK IS GONE (2026-09-02), along with the button that
+// made one. It existed to move a log between devices while the log lived in a
+// browser and nothing else; the account does that now, and better. Keeping it
+// would mean an unauthenticated url could write into somebody's collection,
+// which is the opposite of "everything behind an account". An old link simply
+// does nothing, which is the right failure: nobody loses anything, because
+// whatever it carried is already in the account it was signed into.
 if (location.hash.indexOf('#trees=') === 0) {
-  var incoming = decodeURIComponent(location.hash.slice(7)).split(',').filter(Boolean);
-  if (incoming.length) {
-    var merged = readSeen();
-    incoming.forEach(function(id) { if (merged.indexOf(id) === -1) { merged.push(id); } });
-    writeSeen(merged);
-    history.replaceState(null, '', location.pathname + location.search);
-  }
-}
-
-var saveBtn = document.getElementById('passport-save');
-if (saveBtn) {
-  saveBtn.addEventListener('click', function() {
-    var link = location.origin + location.pathname + '#trees=' + encodeURIComponent(readSeen().join(','));
-    function done(msg) {
-      saveBtn.textContent = msg;
-      setTimeout(function() { saveBtn.textContent = 'Save or move to another device'; }, 4000);
-    }
-    if (navigator.share) {
-      navigator.share({ title: 'My trees', url: link }).then(function() { done('Saved'); },
-                                                              function() {});
-    } else if (navigator.clipboard) {
-      navigator.clipboard.writeText(link).then(function() { done('Link copied. Bookmark it or mail it to yourself.'); },
-                                               function() { window.prompt('Copy this link:', link); });
-    } else {
-      window.prompt('Copy this link:', link);
-    }
-  });
+  history.replaceState(null, '', location.pathname + location.search);
 }
 
 paintPassport();

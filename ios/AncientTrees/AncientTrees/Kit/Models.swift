@@ -42,6 +42,13 @@ public struct Photo: Codable, Hashable, Sendable {
     /// credited one way on the phone and another on the website until Hidde
     /// picked the short one (2026-08-26: "ingekort natuurlijk").
     let attributionShort: String?
+    /// The finished credit, name and terms in one string, built by the same
+    /// function the website's figcaptions use. It exists because joining those
+    /// two here was wrong for a photograph somebody GAVE us: the licence field
+    /// then reads "Provided by Paulo V. Araujo (Dias com Arvores), all rights
+    /// reserved", so the phone printed his name twice and told a reader the
+    /// photograph he had donated was all rights reserved.
+    let creditLine: String?
 
     enum CodingKeys: String, CodingKey {
         case url, license, attribution, width, height
@@ -49,6 +56,7 @@ public struct Photo: Codable, Hashable, Sendable {
         case heroRaw = "hero"
         case creditRequiredRaw = "credit_required"
         case attributionShort = "attribution_short"
+        case creditLine = "credit_line"
     }
 
     /// The name to print. Falls back to the untrimmed one only for a snapshot
