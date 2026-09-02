@@ -1,0 +1,68 @@
+{
+  "city": "Otama",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "One tree, and it survived being knocked flat. Baba Zakura, the Cherry of the Riding Ground, grows in the grounds of Fukumitsu Kokuzo-do temple in Otama Village, Fukushima, put at roughly a thousand years by local tradition. A 2018 gale pushed it over at the base; villagers cut back the broken trunk and hauled it upright again, and it still flowers each April from the branches it has left. A National Natural Monument since 1936, free, open all year.",
+  "meta_description": "Baba Zakura in Otama, Fukushima: a thousand-year cherry toppled by a 2018 storm, righted by villagers, still flowering every April.",
+  "question_meta": "Otama's oldest tree is Baba Zakura, a National Natural Monument cherry put at roughly 1,000 years. Where it stands and how to reach it.",
+  "question_answer": "The oldest tree in Otama is Baba Zakura, an Edo-higan cherry in the grounds of Fukumitsu Kokuzo-do temple. Otama Village puts its age at around a thousand years, a figure carried down locally rather than measured. It has been a National Natural Monument since December 1936 and a Fukushima Green Cultural Property since 1983.",
+  "question_context": "The thousand-year figure is tradition, not a growth-rate reading: no core sample or ring count backs it, and the page states that plainly rather than dressing it up as a measurement. What is documented is the tree's condition. A 1936 survey measured it 21 metres tall with a trunk 7.45 metres round; the village's own figures today are 15 metres and 7 metres, the difference being what nine decades and one storm took. On 1 March 2018 a gale pushed the tree over at its base. Villagers cut back the broken trunk, hauled the remainder upright, packed the roots and kept working on it since. It still stands and still flowers each April, sparsely, from the young branches left. The name means the cherry of the riding ground: tradition holds that Minamoto no Yoshiie, campaigning north during the Later Three Years' War, pushed a cherry-wood riding whip into the earth to tether his horses and the whip rooted, the surrounding field used to train his cavalry. Farmers read the bloom as the signal to sow rice, hence the seed-sowing cherry. Free to visit, about 15 minutes by car from Motomiya interchange.",
+  "hero_tree_id": "ota_001",
+  "oldest_tree_id": "ota_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Otama?",
+      "a": "Baba Zakura, an Edo-higan cherry at Fukumitsu Kokuzo-do temple, put at roughly 1,000 years by local tradition rather than a measured reading."
+    },
+    {
+      "q": "Did the tree really fall over?",
+      "a": "Yes. A gale toppled it at the base on 1 March 2018. Villagers cut back the broken trunk, hauled it upright and packed the roots, and it has kept flowering since."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, the temple grounds are open and there is no entry charge."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car, about 15 minutes from Motomiya interchange on the Tohoku Expressway or 10 minutes from Motomiya Station. There is no direct public transit to the site itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ota_001",
+      "name": "Baba Zakura",
+      "species": "Edo-higan Cherry (Cerasus itosakura, shiro-higan form)",
+      "age_estimate": "roughly 1,000 years (traditional/legendary figure repeated by the village and prefecture, not a growth-rate dating)",
+      "age_min": 800,
+      "age_max": 1000,
+      "girth_cm": 700,
+      "location": {
+        "address": "Ishibashi, Tamai, Otama Village, Adachi District, Fukushima Prefecture (within the grounds of Fukumitsu Kokuzo-do temple)",
+        "latitude": 37.531008,
+        "longitude": 140.365022,
+        "neighbourhood": "Otama Village"
+      },
+      "story": "On 1 March 2018 a gale pushed this cherry over at the base. Villagers and a local preservation society cut back the broken upper trunk and hauled what was left upright again, packed the roots and went to work on it. It is still standing, and it still flowers each April, sparsely, from the young branches it has left.\n\nBaba Zakura is an Edo-higan cherry in the grounds of Fukumitsu Kokuzo-do temple, a National Natural Monument since December 1936 and a Fukushima Green Cultural Property since 1983. Otama Village puts its age at around a thousand years. That is a figure carried down locally rather than one derived from a measurement, so take it as tradition.\n\nThe name means the cherry of the riding ground. The story told here is that Minamoto no Yoshiie, campaigning north during the Later Three Years' War, pushed a cherry-wood riding whip into the earth to tether his horses, and the whip rooted; the field around it was where his cavalry trained. Farmers put the tree to plainer use. When it bloomed, it was time to sow rice, which is why it is also known as the seed-sowing cherry.\n\nThe 1936 survey found it 21 metres tall with a trunk 7.45 metres round. The village's own figures today are 15 metres and 7 metres. The difference is what the last ninety years took.",
+      "verified_sources": [
+        "https://www.vill.otama.fukushima.jp/kankou_shiseki/spot/shizen/babazakura/",
+        "https://ja.wikipedia.org/wiki/%E9%A6%AC%E5%A0%B4%E3%82%B6%E3%82%AF%E3%83%A9",
+        "https://www.arukikata.co.jp/tokuhain/244409/"
+      ],
+      "access": "Free. Stands within the grounds of Fukumitsu Kokuzo-do temple, Otama Village; temple grounds are open. 15 min by car from Motomiya IC (Tohoku Expwy) or 10 min by car from Motomiya Station.",
+      "transport": "Motomiya Station (JR Tohoku Main Line), about 10 minutes by car; no direct public transit noted to the site itself.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "late April, when the surviving branches flower"
+      }
+    }
+  ]
+}

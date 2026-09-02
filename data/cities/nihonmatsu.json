@@ -1,0 +1,92 @@
+{
+  "city": "Nihonmatsu",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Two of Fukushima's great cedars, each a National Natural Monument in its own right. Kohata's Great Cedar was hollowed out by lightning and now stands on more than ten struts, alive at roughly 780 to 800 years inside Okitsushima Shrine on Mt Kohata. Sugisawa's Great Cedar, further south, runs a trunk 10.9 metres round at close to a thousand years old, the whole village renamed after it in 1643. Both free, both open at all times, both a genuine climb or walk rather than a stroll.",
+  "meta_description": "Nihonmatsu, Fukushima: two National Natural Monument cedars, one lightning-hollowed and strutted, one 10.9 metres round and near 1,000 years old.",
+  "question_meta": "Nihonmatsu's oldest tree is Sugisawa's Great Cedar, put at roughly 1,000 years, with Kohata's Great Cedar close behind at 780 to 800.",
+  "question_answer": "The oldest tree in Nihonmatsu is Sugisawa's Great Cedar (Sugisawa no O Sugi), a Japanese cedar 10.9 metres round put at roughly 1,000 years by the city and prefecture, though one source allows for considerably less. Kohata's Great Cedar (Kohata no O Sugi), a lightning-hollowed cedar on Mt Kohata, is close behind at 780 to 800 years. Both are National Natural Monuments.",
+  "question_context": "Neither age comes from counting rings. Sugisawa's cedar takes its name from 1643, when the lord of the Nihonmatsu domain, Niwa Mitsushige, stopped beneath it on an inspection tour and was struck enough to rename the village Sugisawa, a name that has held for close to four hundred years; the usual thousand-year age rests on tradition rather than a measurement, and one source allows for a considerably younger tree. It has been a National Natural Monument since 1943, kept in the best condition of Fukushima's great cedars after repair work in 1986 and 1987 and further root and soil work between 2006 and 2008. Its trunk divides into five stems from about 6.6 metres up, with a crown spreading 25 to 30 metres and a breast-height girth of 10.9 metres. Kohata's cedar had different trouble: lightning hollowed it, the cavity has since been sealed and more than ten struts now hold it upright. It stands beside the Kado Shrine building within Okitsushima Shrine on Mt Kohata, a National Natural Monument since 1941, the tenth-largest tree in Fukushima Prefecture, sources disagreeing on its exact height and girth. Reaching it means the stone stairway from the shrine's first torii.",
+  "hero_tree_id": "nhm_002",
+  "oldest_tree_id": "nhm_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Nihonmatsu?",
+      "a": "Sugisawa's Great Cedar, put at roughly 1,000 years, though the figure is tradition rather than a measurement. Kohata's Great Cedar, at 780 to 800 years, is the second."
+    },
+    {
+      "q": "Why is Kohata's cedar full of wooden struts?",
+      "a": "Lightning hollowed it from the inside. The cavity was sealed and more than ten struts now hold the tree upright, which is how a cedar this size keeps standing once its core is gone."
+    },
+    {
+      "q": "Are both free to visit?",
+      "a": "Yes, both stand on open shrine or public land with no ticket needed. Reaching either is a genuine climb or walk, not a flat stroll."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Both are best reached by car, 20 to 35 minutes from Nihonmatsu-area JR stations. Sugisawa's cedar also has a bus connection from Nihonmatsu Station to the Sugisawa Taigi stop, five minutes on foot from there."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nhm_001",
+      "name": "Kohata no O Sugi (Kohata's Great Cedar)",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 780 to 800 years",
+      "age_min": 780,
+      "age_max": 800,
+      "girth_cm": 933,
+      "location": {
+        "address": "Kohata, Haruja 49-2 (also written 治家49-2), Nihonmatsu City, Fukushima Prefecture, within the grounds of Okitsushima Shrine (隠津島神社), on Mt Kohata, beside the subsidiary Kado Shrine (門神社)",
+        "latitude": 37.621942,
+        "longitude": 140.575932,
+        "neighbourhood": "Kohata, Nihonmatsu"
+      },
+      "story": "Lightning hollowed this cedar from the inside. The cavity has been sealed and more than ten struts now hold the tree upright, which is how a cedar of this size stays standing once its core has gone. It is alive and under constant maintenance, which is not the same thing as untouched.\n\nIt grows on Mt Kohata inside the precinct of Okitsushima Shrine, on the north side of the small Kado Shrine building. Shrine tradition puts the founding at 769 and dedicates the place to the three Munakata goddesses; for centuries it was known as Benzaiten-gu, and people here still call it Kohata's Benten-sama. The cedar has been a National Natural Monument since March 1941 and ranks as the tenth-largest tree in Fukushima Prefecture.\n\nSources do not agree on its dimensions. Nihonmatsu City records 20 metres tall with a trunk 9.33 metres round at breast height; a Fukushima Prefecture forest survey of 2016 and 2017 makes it 29 metres and 9.9 metres. Both accept the 1940 figure for the root girth, 16.2 metres. Age is given as 780 years by the survey and about 800 by the city, and neither number comes from counting rings.\n\nReaching it is a climb rather than a stroll, up the stone stairway from the first torii. Other large cedars and cypresses stand in the grounds, said locally to have been planted by the daimyo Gamo Ujisato.",
+      "verified_sources": [
+        "https://www.city.nihonmatsu.lg.jp/bunka_sports_syo/bunka_rekishi/shitei_bunka/towa/page001138.html",
+        "https://ja.wikipedia.org/wiki/%E6%9C%A8%E5%B9%A1%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE"
+      ],
+      "access": "Free, shrine grounds. Reached via the shrine's main approach (omote-sando) off route 117, a stone stairway from the first torii up Mt Kohata; parking (~10 cars) near the approach entrance and ~5 more near the second shrine office. This is a genuine climb, not a flat stroll, but no permission or ticket is needed.",
+      "transport": "About 20 min by car from Adachi Station, 25 min from Matsukawa Station, 35 min from Nihonmatsu Station (all JR Tohoku Main Line); no direct public transit to the shrine.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nhm_002",
+      "name": "Sugisawa no O Sugi (Sugisawa's Great Cedar)",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 1,000 years (city and prefecture both use this figure; one source gives a wider possible range)",
+      "age_min": 600,
+      "age_max": 1000,
+      "girth_cm": 1090,
+      "location": {
+        "address": "Sugisawa, Taira 97 (also written Sugisawa-aza-Taira 97), Nihonmatsu City, Fukushima Prefecture",
+        "latitude": 37.510622,
+        "longitude": 140.579412,
+        "neighbourhood": "Sugisawa, Nihonmatsu"
+      },
+      "story": "In 1643 the lord of the Nihonmatsu domain, Niwa Mitsushige, stopped under this cedar on an inspection tour and, by local account, was struck enough by it to rename the village Sugisawa after the tree. The name has stuck for close to four hundred years.\n\nIt has been a National Natural Monument since August 1943 and a Fukushima Green Cultural Property since 1983, and of the great cedars of this prefecture it is the one in the best condition: vitality described as vigorous, and remarkably little decay in the trunk for a tree of its age. That has not happened on its own. The cavity was treated, the roots reinforced and supports fitted in 1986 and 1987; between 2006 and 2008 the soil over the root plate was improved and visitors were kept off it.\n\nIts size is genuinely hard to pin down, because the trunk divides into five main stems from about 6.6 metres up and the crown spreads 25 to 30 metres across. Nihonmatsu City records a girth of 12.8 metres; the standard breast-height measurement is 10.9 metres, and the root girth 22.5 metres. Height is given as 50 metres, with one source stretching that to 68, which is tall enough for a sugi to be worth treating carefully.\n\nThe age usually quoted is around a thousand years, and one source allows for considerably less. Nobody has counted the rings.",
+      "verified_sources": [
+        "https://www.city.nihonmatsu.lg.jp/bunka_sports_syo/bunka_rekishi/shitei_bunka/iwashiro/page001135.html",
+        "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%B2%A2%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE"
+      ],
+      "access": "Free, public land (managed by the Sugisawa administrative district on national land). Bus: from Nihonmatsu Station take the Sugisawa bus to the 'Sugisawa Taigi' stop, then 5 min on foot. Car: about 30 min from Nihonmatsu Station or 35 min from Nihonmatsu IC (Tohoku Expressway).",
+      "transport": "Bus from Nihonmatsu Station (JR Tohoku Main Line) to Sugisawa Taigi stop, then a 5-minute walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

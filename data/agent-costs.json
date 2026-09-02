@@ -4742,6 +4742,33 @@
     "note": "Third zero city on the German route. de.wikipedia's Naturdenkmal list reproduces the LUBW state register in full for Heidelberg, 42 objects of which 33 are trees with names, coordinates and designation dates; every delivered tree was cross-checked against its own LUBW steckbrief. Only the Molkenkur Linden found a genuinely independent second source (an RNZ feature), so five of six ship flagged and single-sourced, every pin approximate, no ages. Dropped a Ginkgo whose courtyard location came from a search summary neither underlying page carried.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "nihonmatsu",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 2,
+    "note": "Session work, not a dispatched agent: stories already existed in data/research/nihonmatsu-verified.json from the same-day famous-trees verify batch (see leads/_famous-japan.json). Built the city page (intro, question fields, faq) and merged. Below the 4-tree floor but qualifies for the single-tree-destination exception: both are individually National Natural Monuments (780-800yr and ~1000yr cedars).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "otama",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "Session work, not a dispatched agent: story already existed in data/research/otama-verified.json (famous-trees verify batch). Built the city page and merged. One tree, National Natural Monument, single-tree-destination exception.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "ono (Tamura research file)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "Session work, not a dispatched agent: story already existed in data/research/tamura-verified.json (famous-trees verify batch), but the town is actually Ono in Tamura District, so the city file was renamed data/cities/ono.json to avoid colliding with a future Tamura City page. One entry, a paired meoto-sugi cedar counted as one collectible ensemble, National Natural Monument, single-tree-destination exception. Fixed a hard-rule-9 species-name collision (Cryptomeria japonica) caught by the build.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
