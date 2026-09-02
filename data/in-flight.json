@@ -1,29 +1,29 @@
 {
- "note": "Who is working on what, right now. Written by scripts/passcheck.py --claim and read by every passcheck run, because coordination is where this project loses tokens, not research. On 2026-08-06 a session write pass and a night run wrote the same nine Padova stories; 89,000 tokens bought nothing. The session had checked the queue twenty minutes before dispatching, and a night run landed in between. passcheck knew what was published and had no idea what was being worked on.",
- "how": "Claim before dispatching a pass, release when its output is merged. A claim older than expire_hours is ignored and pruned automatically, so a session that dies cannot block a city forever. This is a courtesy lock, not a mutex: the night runs work from their own clone, so a claim is only visible after it is pushed. It catches collisions minutes apart, which is the kind that actually happens here, and cannot catch collisions seconds apart.",
- "expire_hours": 4,
- "expire_hours_by_holder": {
-  "night-run": 1.5
- },
- "expire_hours_note": "The number above is a fallback only and is not read at runtime: scripts/passcheck.py's night_run_expiry_hours() greps timeout-minutes straight out of .github/workflows/nightly.yml (currently 120) and overrides this field every time, so do not trust this file's own number, trust the workflow. This field previously said 'killed at 60 minutes' after the workflow moved to 120 (2026-08-17/19) and stayed wrong for days; that is why this note now points at the source instead of restating it. Sessions keep the four hours, because a session legitimately pauses.",
- "claims": [
-  {
-   "target": "tenerife,crete,sydney,quebec-city,reykjavik,melbourne,seattle,cyprus,bratislava,austin,groningen,rotterdam",
-   "kind": "photo",
-   "by": "session-044d86a3",
-   "claimed_at": "2026-09-01T18:53:38+00:00"
+  "note": "Who is working on what, right now. Written by scripts/passcheck.py --claim and read by every passcheck run, because coordination is where this project loses tokens, not research. On 2026-08-06 a session write pass and a night run wrote the same nine Padova stories; 89,000 tokens bought nothing. The session had checked the queue twenty minutes before dispatching, and a night run landed in between. passcheck knew what was published and had no idea what was being worked on.",
+  "how": "Claim before dispatching a pass, release when its output is merged. A claim older than expire_hours is ignored and pruned automatically, so a session that dies cannot block a city forever. This is a courtesy lock, not a mutex: the night runs work from their own clone, so a claim is only visible after it is pushed. It catches collisions minutes apart, which is the kind that actually happens here, and cannot catch collisions seconds apart.",
+  "expire_hours": 4,
+  "expire_hours_by_holder": {
+    "night-run": 1.5
   },
-  {
-   "target": "dordrecht,delft,alkmaar,assen,enschede,haarlem,haarlemmermeer,oklahoma-city,palo-alto,chapel-hill-north-carolina,bilbao,ottawa,bucharest,fort-worth",
-   "kind": "photo",
-   "by": "session-044d86a3",
-   "claimed_at": "2026-09-01T19:54:40+00:00"
-  },
-  {
-   "target": "oahu,new-orleans,maastricht,rotterdam",
-   "kind": "photo",
-   "by": "session-044d86a3",
-   "claimed_at": "2026-09-01T20:12:08+00:00"
-  }
- ]
+  "expire_hours_note": "The number above is a fallback only and is not read at runtime: scripts/passcheck.py's night_run_expiry_hours() greps timeout-minutes straight out of .github/workflows/nightly.yml (currently 120) and overrides this field every time, so do not trust this file's own number, trust the workflow. This field previously said 'killed at 60 minutes' after the workflow moved to 120 (2026-08-17/19) and stayed wrong for days; that is why this note now points at the source instead of restating it. Sessions keep the four hours, because a session legitimately pauses.",
+  "claims": [
+    {
+      "target": "hamburg",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-09-02T01:18:31+00:00"
+    },
+    {
+      "target": "bamberg",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-09-02T01:18:33+00:00"
+    },
+    {
+      "target": "nuremberg",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-09-02T01:18:33+00:00"
+    }
+  ]
 }
