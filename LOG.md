@@ -9,6 +9,55 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-02 (session with Hidde) - Walks off the web, nothing on the device, and /account is the app's profile
+
+Four things he found in one morning. Three had one cause.
+
+**Walks are gone from the website.** `/[city]/walks` no longer exists and every
+walk control, on the city page, the tree page and the translated pages, opens
+the app overlay instead. No condition on it: a control that sometimes navigates
+and sometimes opens a dialog is two controls. The old URLs still resolve and
+land on the city page. Contract K is retired at blueprint v1.16. The point is
+the count: `walks-app` now records every walk intention on the site, and that
+number is what times finishing the walks in the app.
+
+**Nothing is kept in the browser any more.** Saving had needed an account since
+30 August, and a localStorage copy still sat behind that gate and was merged
+into the account as a union on every sign-in. That is why his account page was
+full of trees he had never deliberately kept. The check-in log, the saved
+cache, the worth-it votes and the recent-search list all moved to the account
+or went away, along with the `#trees=` link that let an unauthenticated url
+write into somebody's collection. The browser keeps the session token, the
+privacy opt-out and an unsent contribute draft.
+
+**A saved tree looks like a tree again.** The card used to be drawn from what
+we knew when the heart was tapped, in markup written by hand next to
+TreeCard.astro, so a tree photographed since showed nothing and a save made in
+the app had no name at all. The account now holds which trees and
+/api/cards.json holds what they are, composed by the same helpers as every
+other card: photo, species, age, city, credit.
+
+**/account is the app's My trees screen, with your own map beside it.** Panel
+on the left with your name, Trees / Species / Countries, one action and the two
+lanes; the map on the right with your own trees pinned, filled for the ones you
+have stood in front of and hollow for the ones you saved. Settings moved a
+click deeper to /account/settings, which is where sign out and delete account
+belonged all along. Same `.split` skeleton as the city page and /explore, so
+there is no second map implementation.
+
+**FOR HIDDE.** The rubbish the old union already pushed into your account is
+still in it, and clearing it means deleting rows, which is your call rather
+than mine. Say the word and I will empty the saves on your account so you start
+clean; otherwise the list now renders properly and you can un-heart what you do
+not want.
+
+Three ratchet checks shipped with it: qa.py refuses any storage key but the
+session, refuses a walk control that navigates, and deploy.yml no longer lets a
+push cancel a dispatched build. That last one was its own bug: eleven builds in
+a row were cancelled between 17:31 and 17:48 because a night run commits faster
+than a build takes, so the site had quietly stopped deploying with nothing red
+anywhere to say so. Same fault ios.yml had on 25 August, same fix.
+
 ## 2026-09-02 (session with Hidde) - Two zero cities checked, and the reason the list was lying
 
 He asked for cities to go from zero to something. Three passes went out. One of them
