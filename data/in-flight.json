@@ -42,6 +42,24 @@
       "kind": "verify",
       "by": "session-a4caaf53",
       "claimed_at": "2026-09-02T17:52:59+00:00"
+    },
+    {
+      "target": "matera",
+      "kind": "verify",
+      "by": "session-1b4787ca",
+      "claimed_at": "2026-09-02T17:54:46+00:00"
+    },
+    {
+      "target": "stuttgart",
+      "kind": "verify",
+      "by": "session-1b4787ca",
+      "claimed_at": "2026-09-02T17:54:47+00:00"
+    },
+    {
+      "target": "freiburg",
+      "kind": "verify",
+      "by": "session-1b4787ca",
+      "claimed_at": "2026-09-02T17:54:47+00:00"
     }
   ]
 }
