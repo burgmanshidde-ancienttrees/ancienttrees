@@ -66,6 +66,27 @@ evidence of verification, even when that text itself says the opposite; worth
 a look by whoever next touches that script, since it is exactly the kind of
 finding this file's "check the evidence before acting on it" rule exists for.
 
+**Then a real mistake, caught before it shipped.** With `city_queue.py --next` showing
+Funchal as "openable today" with 8 unmapped Wikidata monumental-tree candidates, and
+the LOG's own 2026-08-30/09-01 notes already flagging Funchal as a naming trap for
+Madeira (confirmed: `data/cities/madeira.json` already covers several Funchal
+quintas), I went straight to fresh WebSearch/WebFetch research on two of the 8
+candidates instead of checking `data/leads/madeira.json` first. Wrote up and staged
+two new trees, a "Camphor Tree of Quinta Josefina" and "Stone Pines of Pico dos
+Barcelos", both looking solid from a generic search. They were not: the leads file
+already held both, researched more carefully by an earlier pass. The Funchal PDM's
+own Quadro 5 table places the camphor tree's official coordinate at a public SCHOOL
+("Escola Basica de 2 e 3 Ciclo de Santo Antonio"), not the housing development a
+generic search surfaced, so it needs the school-access evidence hard rule 10 asks
+for and does not have it. The stone pines are a designated 2.5-hectare park, not one
+collectible point, the same failure already recorded for the Fanal til nucleus.
+Reverted `data/cities/madeira.json` before committing (`git checkout --`, confirmed
+back to 10 trees). The leads file's existing entries are correct and need no
+changes; this cost real time and shipped nothing, and the lesson is the one Step 0
+already states and I skipped: read a city's own leads/research history before
+researching it, even when the motive is "just verifying a couple of wikidata
+leads" rather than a full from-zero pass.
+
 No new submissions (checked directly against Supabase, 0 since id 57).
 
 ## 2026-09-01 (night run) - Auckland opens, 5 trees; iOS CI flakiness checked and left alone
