@@ -118,10 +118,13 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Ficus_en_la_plaza_de_Gabriel_Mir%C3%B3%2C_Alicante.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Varondán, via Wikimedia Commons",
+        "status": "held",
+        "note": "Viewed 2026-09-02 and it meets the Cadiz standard on picture quality: the buttressed trunk and aerial-root columns fill the centre, daylight, in colour, and the centre band survives the card crop. Held on IDENTITY. Four Moreton Bay figs stand on Plaza Gabriel Miro (ali_001 to ali_004) and the Commons file names only the square, not the tree. The trunk shown reads as the thickest of the group, which would be ali_001 at 10.65 m girth, not this tree at 7.5 m. Release it only if a source ties it to one trunk.",
+        "width": 4208,
+        "height": 3120
       },
       "girth_cm": 760
     },
