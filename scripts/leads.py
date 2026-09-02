@@ -194,12 +194,30 @@ HELD_MARKER = re.compile(
 # count-doctrine collisions on the last two phrases and both are the
 # protected case itself (Singapore and Den Bosch hitting their brief's own
 # tree-count instruction), so both stay exempted as intended.
+#
+# Widened a sixth time 2026-09-02, found while a continuation was told to
+# dispatch a write pass on the day's `--ready` list and read the actual entries
+# first instead. Six of Regensburg's seven READY leads matched "not researched"
+# but in a shape the existing "not researched this pass" pattern needs word for
+# word: "not researched, likely too far for the day-trip boundary" and "not
+# researched, out of range" (five register rows named only by a generic German
+# noun, no address, no second source), plus Wolfgangseiche's own hedge, "was not
+# confirmed... in the time this pass had" with "worth a focused follow-up"
+# rather than "worth a future pass". A seventh case is a different shape
+# entirely and worth naming separately: Matera's one READY lead, "Gelso bianco
+# of Altamura", is not an unfinished verification at all, it is the WRONG CITY
+# ("Altamura is a separate comune 19 km away in Puglia and belongs to its own
+# future page, not Matera's") filed under Matera's leads file by the sweep that
+# found it. Checked against the full corpus: 7 hits (6 Regensburg, 1 Matera), 0
+# count-doctrine collisions.
 NOT_READY_MARKER = re.compile(
     r"\[SKIPPED\b[^\]]*\]|\b(?:not pursued|left unverified|left undelivered|"
     r"ship once|not delivered on|removed from protection|"
     r"survival is a genuine question|identity unresolved|unresolved conflict|"
     r"could be a genuine second|almost certainly beyond|likely beyond|"
-    r"would need a|"
+    r"would need a|not researched,\s*(?:likely|out of)|"
+    r"in the time this pass had|worth a focused follow.?up|"
+    r"belongs to its own future page|"
     r"not researched this pass|not individually researched|"
     r"not evaluated (?:in )?this pass|not verified this pass|not confirmed this pass|"
     r"not verified tree by tree|access unverified|access unconfirmed|"
