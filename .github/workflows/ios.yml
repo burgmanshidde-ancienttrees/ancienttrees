@@ -247,9 +247,19 @@ jobs:
             echo "::error::The app did not compile, so no test could run. The compiler errors are above."
             exit 1
           fi
-          if grep -q "error:" /tmp/xcodebuild.log; then
+          # A real XCTest failure line, not a blanket "error:" match. The
+          # simulator's own console output can carry that substring on a
+          # healthy run, and did on 2026-09-01: boringssl logs
+          # "error:1000007d" mid SSL-handshake retry and the app goes on to
+          # work fine, but the blanket grep below read it as a failed test
+          # and exited 1 two lines after xcodebuild itself had printed
+          # "** TEST SUCCEEDED **". XCTest's own failure line is always
+          # "<file>:<line>: error: -[Class test] : ...", which the
+          # COMPILE_ERR pattern above never matches because that one always
+          # carries a column number.
+          if grep -qE ': error: -\[' /tmp/xcodebuild.log; then
             echo "::error::The app built. Tests FAILED, named below. This is not a build problem."
-            grep -E ": error: -\[" /tmp/xcodebuild.log | sed 's/^.*: error: //' | sort -u
+            grep -E ': error: -\[' /tmp/xcodebuild.log | sed 's/^.*: error: //' | sort -u
             exit 1
           fi
           # grep swallows the exit code, so ask xcodebuild again for the verdict.
