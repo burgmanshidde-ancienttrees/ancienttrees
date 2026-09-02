@@ -2,19 +2,27 @@
  "leads": [
   {
    "name": "ARF-labelled pine (Pin), Marseille, labelled Nov/Dec 2024",
-   "note": "arbres.org own validated-labels list (labels-valides.htm, fetched 2026-09-02) confirms a Pin in Marseille, Bouches-du-Rhone, received the official Arbre remarquable de France label in the November/December 2024 batch. This is a real, officially confirmed designation but no source found in this pass names the specific pine species, its exact address, age, or size. arbres.org own interactive map (la-carte-interactive-des-arbres-remarquables-labellises-en-france.htm) is JS-rendered and could not be queried by curl within this pass; a session with a real browser could likely locate the pin on that map. Worth a targeted follow-up."
+   "note": "arbres.org own validated-labels list (labels-valides.htm, fetched 2026-09-02) confirms a Pin in Marseille, Bouches-du-Rhone, received the official Arbre remarquable de France label in the November/December 2024 batch. This is a real, officially confirmed designation but no source found in this pass names the specific pine species, its exact address, age, or size. arbres.org own interactive map (la-carte-interactive-des-arbres-remarquables-labellises-en-france.htm) is JS-rendered and could not be queried by curl within this pass; a session with a real browser could likely locate the pin on that map. Worth a targeted follow-up.",
+   "species": "Pine (Pinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Place des Moulins plane trees, Le Panier (highest point of the Panier)",
-   "note": "Multiple sources (tourisme-marseille.com, pariszigzag.fr, francerent.com) describe Place des Moulins, the historic highest point of Le Panier (former windmill site, 16th c.), as shaded by plane trees (platanes), with no individual specimen singled out, no age or size figure found. Weaker than the confirmed Place des Augustines plane tree (mrs_003): here it is several trees, not clearly one collectible point, and no source calls them notably old. Worth a look if a future pass can find a specific age/girth or narrow to one tree."
+   "note": "Multiple sources (tourisme-marseille.com, pariszigzag.fr, francerent.com) describe Place des Moulins, the historic highest point of Le Panier (former windmill site, 16th c.), as shaded by plane trees (platanes), with no individual specimen singled out, no age or size figure found. Weaker than the confirmed Place des Augustines plane tree (mrs_003): here it is several trees, not clearly one collectible point, and no source calls them notably old. Worth a look if a future pass can find a specific age/girth or narrow to one tree.",
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Cedre du Liban, Parc du 26e Centenaire (denotation=park in OSM)",
-   "note": "OSM tags one Cedrus libani at 43.2825157,5.39189 with denotation=park, confirmed via Overpass is_in() to fall inside Grand parc du XXVIeme centenaire - Jean-Claude Gaudin. REJECTED for this pass: the whole park was built from scratch in 2001 on the former Gare du Prado site (competition won 1998, built by Bernard Huet, opened 2001), so nothing there can be more than ~25 years old; a cedar of that age is not yet visually spectacular and no source gives it individual attention. Caution: an early WebSearch AI summary wrongly attributed Parc Longchamp s centenarian-species list to this park; verified false by direct Overpass is_in() check before rejecting."
+   "note": "OSM tags one Cedrus libani at 43.2825157,5.39189 with denotation=park, confirmed via Overpass is_in() to fall inside Grand parc du XXVIeme centenaire - Jean-Claude Gaudin. REJECTED for this pass: the whole park was built from scratch in 2001 on the former Gare du Prado site (competition won 1998, built by Bernard Huet, opened 2001), so nothing there can be more than ~25 years old; a cedar of that age is not yet visually spectacular and no source gives it individual attention. Caution: an early WebSearch AI summary wrongly attributed Parc Longchamp s centenarian-species list to this park; verified false by direct Overpass is_in() check before rejecting.",
+   "species": "Cedar (Cedrus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Bald cypress ARBRES label date (2009) for Parc Borely (mrs_001)",
-   "note": "Single-sourced claim (provence7.com) that the Parc Borely bald cypresses were labelled Arbre remarquable by A.R.B.R.E.S. in 2009. Could not find this specific labelling event on arbres.org itself (only checked their Nov/Dec 2024 validated-labels page, not a full historical archive). A future pass could search arbres.org s labelling-ceremony archive (remises-de-label.htm and its older entries) for 2009 Marseille to confirm or correct."
+   "note": "Single-sourced claim (provence7.com) that the Parc Borely bald cypresses were labelled Arbre remarquable by A.R.B.R.E.S. in 2009. Could not find this specific labelling event on arbres.org itself (only checked their Nov/Dec 2024 validated-labels page, not a full historical archive). A future pass could search arbres.org s labelling-ceremony archive (remises-de-label.htm and its older entries) for 2009 Marseille to confirm or correct.",
+   "species": "Cypress (Cupressus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": [
