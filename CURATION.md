@@ -10,6 +10,21 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-02 - Submission 58 (Amsterdam, GPS only): not a tree, the canal-quay bomencamping
+
+Row 58, kind `tree`, city Amsterdam, GPS 52.39743,4.87408, no tree name, no `why`, page
+`app:collect`. Same spot (13 m away) as row 55 from 2026-08-31, a different user_id, both
+unnamed. Researched instead of repeating the earlier brush-off: the pin sits on Koivistokade
+in Minervahaven, which is the city's "bomencamping", a temporary holding nursery where trees
+pulled from Amsterdam's canal walls during quay reconstruction are moved by boat and replanted
+in open ground until they return to their old spot or a new one (aandegrachten.amsterdam).
+Not an old or remarkable tree of its own, and likely not open to casual visitors (working
+harbour/construction logistics site). Set outcome `open_question` on the row with a reply
+naming what is actually there and asking whether they meant a specific held/staked tree.
+Two independent pins at nearly the same spot within 48 hours suggests something visually
+striking is happening there (large trees being craned on and off boats would read that way to
+a passerby), worth a second look if a third report comes in with more detail.
+
 ## 2026-09-01 - Auckland opened, 5 trees; Matera's 2 verified trees written but held below the floor
 
 Wrote stories for the trees already sitting fully verified in data/research/ (passcheck.py
