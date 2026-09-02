@@ -434,7 +434,25 @@ PROBE_MIN_TURNS = 5         # below this it never really started: usage limit, n
 # same reason the paragraph above says a fixed number cannot know. It is a
 # backstop against a runaway, not a measurement, and the real governor is still
 # the limit felt in recent_limit_deaths.
-WEEK_BUDGET_MINUTES = 1800  # backstop only; the death brake is the real governor
+# Raised again, 1800 to 5000, on 2026-09-02, and this one is a different KIND of
+# change from the two above. Hidde is in Japan for the coming months and asked
+# the question this file has been circling since July: "hoe zorgen we dat je dit
+# zonder mij wel gaat doen." Every number here was calibrated for a week he
+# SHARES, and he is about to stop sharing it. Measured the day he asked: the
+# week stood at 1462 of 1800 and every knock after 06:00 UTC died on this line,
+# nine of them in the preceding week spending 118 minutes between them for zero
+# trees. The budget, not the usage limit, was the thing stopping the machine.
+#
+# 5000 a week and 900 a day is deliberately close to the physical ceiling (12
+# knocks x 120 minutes = 1440 a day), which is another way of saying this is now
+# a runaway backstop and nothing else. The governor is recent_limit_deaths
+# below, exactly as the paragraph above intends: an attempt the limit kills dies
+# in seconds and costs nothing, and two deaths in six hours stop the window
+# extending. That brake needs no number from anybody and it feels his absence
+# and his return on its own.
+#
+# WHEN HE IS BACK, put this to 1800 / 260. It is the first number to pull.
+WEEK_BUDGET_MINUTES = 5000  # backstop only; the death brake is the real governor
 # And the week has to be spread, not raced. A weekly budget alone front-loads:
 # the loop would spend all thousand minutes by Wednesday and leave the back half
 # of the week with a machine that starts and dies in seconds, which is the same
@@ -442,7 +460,7 @@ WEEK_BUDGET_MINUTES = 1800  # backstop only; the death brake is the real governo
 # it running every day, and a seventh is still one full 120-minute window plus
 # change, which is the shape the numbers want (a tree every 2.4 minutes in a
 # 40-to-70 minute run against every 25 minutes in a run under 20).
-DAY_BUDGET_MINUTES = 260   # a seventh of the week, moved with it
+DAY_BUDGET_MINUTES = 900   # a seventh of the week, moved with it (260 when he is back)
 LIMIT_DEATH_WINDOW_HOURS = 6   # how far back to look for "the window is shut right now"
 LIMIT_DEATHS_TO_BACK_OFF = 2   # one can be a blip; two in six hours is the wall
 PROBE_MINUTES = 20          # kept for the older callers that read it
