@@ -272,7 +272,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 75 | Reykjavik | 14.70 | 166,789 | 4 | - | 1 | - | 20 | measured |
 | 76 | Sydney | 16.47 | 305,304 | 6 | - | - | - | 30 | measured |
 | 77 | Chattanooga | 16.68 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 78 | San Francisco | 16.17 | 361,111 | - | - | - | - | 10 | predicted (travel demand) |
+| 78 | San Francisco | 16.17 | 361,111 | 6 | - | 1 | - | 10 | predicted (travel demand) |
 | 79 | Sorrento | 8.23 | 40,049 | 6 | - | 1 | 20 | 20 | measured |
 | 80 | Santa Cruz | 16.06 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 81 | Spokane | 15.66 | - | - | - | - | - | 10 | predicted (travel demand) |
@@ -310,8 +310,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 113 | Jerusalem | 11.17 | 314,788 | - | - | - | - | 10 | predicted (travel demand) |
 | 114 | San Diego | 11.06 | 214,939 | - | - | - | - | 10 | predicted (travel demand) |
 | 115 | Dubai | 11.02 | 334,167 | - | - | - | - | 10 | predicted (travel demand) |
-| 116 | Guimaraes | 5.59 | 26,203 | 8 | 1 | 1 | 19 | 20 | measured |
-| 117 | Hamburg | 10.27 | 191,221 | - | - | - | - | 10 | predicted (travel demand) |
+| 116 | Hamburg | 10.27 | 191,221 | 6 | - | 1 | - | 10 | predicted (travel demand) |
+| 117 | Guimaraes | 5.59 | 26,203 | 8 | 1 | 1 | 19 | 20 | measured |
 | 118 | Milwaukee | 10.63 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 119 | Austin | 10.59 | 226,631 | 5 | - | - | - | 20 | measured |
 | 120 | Salt Lake City | 10.31 | - | - | - | - | - | 10 | predicted (travel demand) |
@@ -332,7 +332,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 135 | Bristol | 9.12 | 163,983 | 5 | 1 | - | - | 20 | measured |
 | 136 | Winnipeg | 9.21 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 137 | Canberra | 9.14 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 138 | Manchester | 9.06 | 316,438 | - | - | - | - | 10 | predicted (travel demand) |
+| 138 | Manchester | 9.06 | 316,438 | 5 | - | - | - | 10 | predicted (travel demand) |
 | 139 | Glasgow | 8.53 | 253,705 | 4 | 2 | - | - | 30 | measured |
 | 140 | Pisa | 5.85 | 52,174 | - | - | - | - | 10 | predicted (travel demand) |
 | 141 | Nashville | 8.93 | - | - | - | - | - | 10 | predicted (travel demand) |

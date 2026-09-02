@@ -4481,6 +4481,78 @@
     "note": "4 stories for single-tree destination pages under the 2026-08-31 floor exception; all four ages disputed or absent, carried as disputes; best_time on the olive only; fixed a Sycamore Maple -> Sycamore species-name mismatch before merge; merged into 4 new city files, leads removed, city-list.json/country counts updated.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "hamburg",
+    "kind": "verify",
+    "tokens": 62000,
+    "trees": 6,
+    "note": "the city's official Naturdenkmal register holds 11 entries and one real tree; all six came from de.wikipedia's 'Liste markanter und alter Baumexemplare', a dendrological list rather than a protected-object mirror. Its most famous tree blocked on a private residence.",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "san-francisco",
+    "kind": "verify",
+    "tokens": 110000,
+    "trees": 6,
+    "note": "five off the city's Landmark Tree list, which two register scouts had missed because it is webpages rather than data. Corrected my brief on the Moon Tree (Strybing, not the Presidio, and nobody knows which tree).",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "manchester",
+    "kind": "verify",
+    "tokens": 150000,
+    "trees": 5,
+    "note": "one tree until the council's own RHS-funded Owen Johnson survey was relayed in from a browser session; manchester.gov.uk 403s to curl and loads in a browser. Three of five single-sourced and flagged.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "miami",
+    "kind": "verify",
+    "tokens": 100000,
+    "trees": 0,
+    "note": "NOT published: three trees, two ticketed, 67 percent against a limit of about a third, and no proof of life after 2018 in a county Andrew, Irma and Ian all hit. Parked with two free leads scouted.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "san-diego",
+    "kind": "verify",
+    "tokens": 105000,
+    "trees": 4,
+    "note": "exactly the floor, all free, all Balboa Park. Caught a dead tree (the Lorax Tree, toppled 2019) and a bridge claim (California's first pepper tree is at Mission San Luis Rey, not San Diego).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "rio-de-janeiro",
+    "kind": "verify",
+    "tokens": 105000,
+    "trees": 6,
+    "note": "first Brazilian city. Kept a 200-versus-350-year disagreement as a disputed range rather than choosing. Six hosts recorded, two of them user-agent checks rather than blocks.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "liverpool",
+    "kind": "verify",
+    "tokens": 111000,
+    "trees": 2,
+    "note": "the Allerton Oak carries the page under the destination-tree exception: England's Tree of the Year 2019 on 34 percent of 11,000 votes. Its thousand-year claim kept as legend, range 400-1000.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Hamburg + San Francisco + Manchester",
+    "kind": "write",
+    "tokens": 226000,
+    "trees": 17,
+    "note": "three new pages, 13.3k per tree from the harness's own counter. Two species strings corrected for hard rule 9 before the build could fail on them.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

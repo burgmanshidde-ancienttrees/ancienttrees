@@ -1,0 +1,192 @@
+{
+ "city": "Manchester",
+ "country": "United Kingdom",
+ "status": "needs_curation",
+ "oldest_tree_id": "mcr_004",
+ "intro": "Manchester's soot killed its old trees. What came through the nineteenth century did it out in the villages the city later swallowed, so this list is short on veterans and long on rarities: a laburnum in Didsbury whose branches flower yellow, purple and pink because it is two plants grown into one, limes in a suburban park that the city's own tree survey calls nationally important, an Amur cork tree doing far better than it should this far north. The survivor among them is a black poplar in Gorton, the tree that took the city's name.",
+ "meta_description": "Manchester's old trees died in the soot. What is left is rarities: a laburnum flowering three colours at once, and the black poplar named after the city.",
+ "question_answer": "Nobody has dated Manchester's remarkable trees, and the only one here with even a planting period is the Variegated Green Ash in Alexandra Park, which the council's tree survey places at the turn of the 20th century, so roughly 110 to 135 years old. The black poplar in Gorton is very likely older and nobody knows by how much: both sources that describe it say outright that its age is unknown, one calling it a complete enigma, and that is where this page leaves it. Industrial Manchester is the reason there is so little to date. Soot and acid rain killed most of the trees near the centre through the 1800s, so the city's old wood largely did not survive to be measured. If you know of a ring count, a girth or an estate record for any of these five, tell us.",
+ "question_meta": "Nobody has dated Manchester's trees. The variegated ash in Alexandra Park, planted around 1900, is the only one with a date, and the poplar is older.",
+ "question_context": "Manchester's list comes from one unusual document: a survey of the city's trees commissioned by the council with Royal Horticultural Society funding and carried out by Owen Johnson, who wrote the Collins Tree Guide. It reads like a specialist's notebook rather than a heritage register. It names a graft chimaera, a group of Crimean limes of national importance, aspens said to be among the tallest in England and a potential champion ash, and it dates almost none of them. Three of the five trees here are described by that survey and by nothing else we could find, which is worth knowing before walking out to one. The single figure on this page comes from the survey's own words about the Alexandra Park ash, planted at the turn of the 20th century, kept here as the wide band it actually is. The black poplar in Gorton is the exception in every direction: two sources, a measured girth of 4.07 metres, and both of them saying plainly that nobody knows its age.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Manchester?",
+   "a": "Nobody knows. The only tree on this page with a stated planting period is the variegated green ash in Alexandra Park, put in around the turn of the 20th century, so roughly 110 to 135 years. The black poplar in Gorton is very likely older, and both sources that describe it say its age is a mystery."
+  },
+  {
+   "q": "Why does Manchester have so few ancient trees?",
+   "a": "The soot. Coal smoke and acid rain killed most of the trees near the centre through the industrial century, and black poplar was one of the few species that kept growing in it, which is how it came to be called the Manchester poplar. What survives from earlier stands out in what were then outlying villages: Didsbury, Gorton, Whalley Range."
+  },
+  {
+   "q": "Are Manchester's remarkable trees free to visit?",
+   "a": "All five are. They stand in public parks and a public botanical garden, open in daylight, with no ticket."
+  },
+  {
+   "q": "Can I see several of them in one trip?",
+   "a": "Two are in the same place: Adam's laburnum and the Amur cork tree both grow at Fletcher Moss in Didsbury. Fog Lane Park and its limes are about 2 km away in the same suburb. Alexandra Park in Whalley Range and the poplar in Gorton are separate journeys across the city."
+  }
+ ],
+ "trees": [
+  {
+   "id": "mcr_001",
+   "name": "The Manchester Poplar",
+   "species": "Black Poplar (Populus nigra subsp. betulifolia)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 407,
+   "location": {
+    "address": "Annie Lees Playing Fields, Mount Road, Gorton, Manchester M18 7BQ",
+    "latitude": 53.458839,
+    "longitude": -2.1830842,
+    "neighbourhood": "Gorton"
+   },
+   "verified_sources": [
+    "https://secretmanchester.com/manchester-poplar-tree/",
+    "https://elmhousetreeservices.co.uk/manchester-poplar-protected-trees-greater-manchester/"
+   ],
+   "access": "Free, in a public park (Annie Lees Playing Fields), open during daylight hours",
+   "transport": "Gorton railway station, about a 20 minute walk",
+   "location_precision": "approximate",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "Britain's most endangered native tree is named after this city, and this is the specimen people come to see. Black poplar took the nickname Manchester poplar because it did the one thing almost nothing else managed here in the industrial century: it kept growing in the soot. Coal smoke and acid rain took the trees out of the city centre. The poplars stayed.\n\nNobody knows how old this one is. Both sources that describe it say so outright, one of them calling its age a complete enigma, and the only hard number anyone has is the trunk: 4.07 metres round, measured for the Woodland Trust and quoted identically by both. It carries a Tree Preservation Order, and in 2023 it went onto the Woodland Trust's shortlist for UK Tree of the Year.\n\nIt stands in Annie Lees Playing Fields in Gorton, a public park about twenty minutes on foot from Gorton station. One thing to know before setting off: a younger black poplar carrying the same nickname grows in St John's Gardens in the city centre, and the two are confused constantly. This is the Gorton tree, the old one. The pin marks the park rather than the trunk, so allow a few minutes of looking once you are through the gate.",
+   "how_to_recognise": "In Annie Lees Playing Fields in Gorton, not St John's Gardens in the city centre. It is the big one, a trunk over four metres round, far heavier than anything else in the park."
+  },
+  {
+   "id": "mcr_002",
+   "name": "Adam's Laburnum",
+   "species": "Adam's Laburnum (+ Laburnocytisus 'Adamii')",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Fletcher Moss Botanical Garden / Parsonage Gardens, Stenner Lane, Didsbury, Manchester M20 2RQ",
+    "latitude": 53.40833,
+    "longitude": -2.23056,
+    "neighbourhood": "Didsbury"
+   },
+   "verified_sources": [
+    "https://www.manchester.gov.uk/info/709/looking_after_parks_and_open_spaces/5754/trees/4",
+    "https://www.didsburycivicsociety.org/parsonage-gardens/"
+   ],
+   "access": "Free, in a public park/botanical garden. Didsbury Civic Society places the specimen in Parsonage Gardens, the walled garden by the Old Parsonage on Stenner Lane, which adjoins and is reached through Fletcher Moss Botanical Garden; look among the 'several magnificent old trees' in front of the Old Parsonage house.",
+   "transport": "East Didsbury railway station, about a 10 minute walk (per Fletcher Moss Botanical Garden's own Wikipedia entry); East Didsbury Metrolink stop, about a 15 minute walk",
+   "location_precision": "approximate",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "One tree, three colours of flower, and a nurseryman's accident from 1825 behind all of it. In that year the Parisian grower Jean Louis Adam grafted a purple broom onto a common laburnum, and instead of the graft simply taking, the join itself started sprouting shoots built from both plants at once. What grew is a chimaera: a single tree with two identities running through it, propagated ever since from that one plant. Some branches flower laburnum yellow, some broom purple, some a dull pink that is neither.\n\nManchester has one, in Didsbury, and the council's tree survey lists it as a champion in the Tree Register of the British Isles, which keeps Britain's record specimens. Didsbury Civic Society, describing the walled Parsonage Gardens beside the Old Parsonage, calls it a very rare example of early bio-engineering that still survives, which is a fair description of a plant that has been quietly outliving its own novelty for two centuries.\n\nNothing dates this particular tree, so it earns its place on rarity rather than age. Go in late May or June. Out of flower it is a small, ordinary-looking tree with a remarkable story, and in flower it is the only thing in the garden anyone looks at.",
+   "how_to_recognise": "In the walled Parsonage Gardens by the Old Parsonage, reached through Fletcher Moss, among the old trees standing in front of the house. A small tree, unmistakable in flower: yellow, purple and pink hanging on the same plant.",
+   "best_time": {
+    "months": [
+     5,
+     6
+    ],
+    "kind": "flowers",
+    "label": "late May and June, when one tree flowers yellow, purple and pink at once"
+   }
+  },
+  {
+   "id": "mcr_003",
+   "name": "The Amur Cork Tree",
+   "species": "Amur Cork Tree (Phellodendron amurense)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "height_m": 16.8,
+   "location": {
+    "address": "Fletcher Moss Botanical Garden, Stenner Lane, Didsbury, Manchester M20 2RQ",
+    "latitude": 53.40833,
+    "longitude": -2.23056,
+    "neighbourhood": "Didsbury"
+   },
+   "verified_sources": [
+    "https://www.manchester.gov.uk/info/709/looking_after_parks_and_open_spaces/5754/trees/4"
+   ],
+   "access": "Free, in a public botanical garden open during daylight hours; exact spot within the garden not established this pass",
+   "transport": "East Didsbury railway station, about a 10 minute walk; East Didsbury Metrolink stop, about a 15 minute walk",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "Either Manchester has the tallest Amur cork tree in Britain, or somebody's tape was wrong. The council's tree survey calls this one a glorious specimen standing at 55 feet, which is 16.8 metres. The tallest Phellodendron amurense on the national record stands at Forde Abbey in Somerset and measures 14.90 metres. Both cannot be right, the two figures may simply have been taken in different ways, and nobody has been back to settle it, so this page states the disagreement rather than picking a winner.\n\nWhat is not in dispute is that the tree is a surprise on its own terms. Phellodendron amurense comes from northeast Asia, reached Britain in 1885, and is generally reckoned to need the south of England to do well. This one is in a Didsbury botanical garden, doing well. It is named for its bark, which is thick, deeply ridged and corky enough to give under a thumb.\n\nOne caution. The council's survey is the only source we could find that names this tree, and it does not say where in Fletcher Moss it stands, so the pin is the garden rather than the spot. The garden is small, free and open in daylight, and a tree of that height in it is not hard to find.",
+   "how_to_recognise": "A tall tree with thick, deeply ridged bark, corky enough to give slightly under a thumb. The leaves are compound, in opposite pairs along the stalk."
+  },
+  {
+   "id": "mcr_004",
+   "name": "The Variegated Green Ash",
+   "species": "Variegated Green Ash (Fraxinus pennsylvanica, variegated cultivar)",
+   "age_estimate": "roughly 120 years, planted around the turn of the 20th century",
+   "age_min": 110,
+   "age_max": 135,
+   "girth_cm": null,
+   "location": {
+    "address": "Alexandra Park, Whalley Range, Manchester M16 8HZ",
+    "latitude": 53.452374,
+    "longitude": -2.2493909,
+    "neighbourhood": "Whalley Range"
+   },
+   "verified_sources": [
+    "https://www.manchester.gov.uk/info/709/looking_after_parks_and_open_spaces/5754/trees/4"
+   ],
+   "access": "Free, in a large public park open to Whalley Range/Moss Side; exact spot within the park's 60 acres not established this pass. The Friends of Alexandra Park run tree walks and could confirm the exact tree.",
+   "transport": "Wilbraham Road Metrolink stop, about a 10 minute walk; Manchester Oxford Road railway station then bus",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "Alexandra Park holds over seven thousand trees, and this is the one a specialist stops at. The council's survey calls it a very rare tree, planted at the turn of the 20th century, and a potential champion, which is the surveyor's own careful wording: a possible national record-holder rather than a confirmed one. That planting period is the only date anywhere on this page, and it puts the tree at roughly 110 to 135 years, a generation younger than the park it grows in.\n\nGreen ash is a North American tree, planted in Britain as an ornamental. The variegated form is the uncommon part: leaves that come out marked and streaked with cream rather than plain green, so the whole crown reads paler than the trees around it, which is how you pick it out at a distance.\n\nAlexandra Park opened in 1870, sixty acres of Victorian municipal park between Whalley Range and Moss Side, and it is still a working local park rather than a collection. The survey does not say where in those sixty acres the ash stands, and the pin marks the park. The Friends of Alexandra Park run tree walks and will know the exact tree, which is the shortest route to it.",
+   "how_to_recognise": "Look for a crown that reads noticeably paler than its neighbours: the leaves are streaked and edged with cream rather than plain green."
+  },
+  {
+   "id": "mcr_005",
+   "name": "The Crimean Limes of Fog Lane Park",
+   "species": "Crimean Linden (Tilia x euchlora)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Fog Lane Park, Fog Lane, Didsbury, Manchester M20 6HG",
+    "latitude": 53.424417,
+    "longitude": -2.2235,
+    "neighbourhood": "Didsbury"
+   },
+   "verified_sources": [
+    "https://www.manchester.gov.uk/info/709/looking_after_parks_and_open_spaces/5754/trees/4"
+   ],
+   "access": "Free, in a public park open during daylight hours; exact spot within the park not established this pass",
+   "transport": "East Didsbury railway station, roughly a 15-20 minute walk",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "The survey's own words are that these huge specimens are of national importance, and the word doing the work is the plural. There is more than one, they stand together in a suburban park in Didsbury, and the man who wrote that sentence, Owen Johnson, wrote the Collins Tree Guide. Nobody has counted them in print, nobody has measured them in print, and nobody has dated them.\n\nSo this entry is the group, because the group is what a visitor goes to see. Crimean lime is a hybrid, planted across northern European cities for a practical reason: it drops far less of the sticky honeydew that makes a common lime a bad thing to park a car under. It is a street tree in most places. Reaching a size worth calling nationally important is not what it usually does.\n\nFog Lane Park is free and open in daylight, an ordinary local park in south Manchester with an unusually good set of mature trees in it. The pin marks the park rather than the limes, because no source places them within it, and one source is all there is. If you walk it, tell us how many there are and where they stand. Nobody appears to have written that down.",
+   "how_to_recognise": "Several large limes standing together, well beyond street-tree size, in a park where nothing else comes close to them."
+  }
+ ]
+}
