@@ -935,6 +935,50 @@ def check_translated_components_are_neutral():
                            % (name, n, stripped[:70]))
     return out
 
+
+def check_no_two_language_switch():
+    """No component may choose between Spanish and English and call that i18n.
+
+    This is the shape of four separate faults found on 2026-09-01 and 09-02, and
+    four is not a coincidence. `const T = es ? {...} : {...}` was correct in
+    August when Malaga was the only translated city. Six languages landed on
+    2026-08-22, a `lang` prop was bolted onto the ternary, and the copy was
+    never widened, so six languages took the English branch for a fortnight:
+    the sign-in dialog including the sentence about what personal data we hold,
+    and the app overlay on every page of the site.
+
+    A `Record<Lang, ...>` cannot fail this way, because a missing language stops
+    the build. So the rule is not "translate these strings", it is "never write
+    the two-language switch again", and this is where that gets enforced.
+
+    The test looks for the switch itself rather than for untranslated text,
+    because untranslated text is the symptom and the ternary is the cause.
+    """
+    out = []
+    for path in sorted(glob.glob(os.path.join("site", "src", "**", "*.astro"),
+                                 recursive=True)
+                       + glob.glob(os.path.join("site", "src", "**", "*.ts"),
+                                   recursive=True)):
+        with open(path, encoding="utf-8") as fh:
+            for n, line in enumerate(fh, 1):
+                stripped = line.strip()
+                if stripped.startswith(("//", "*", "/*", "{/*")):
+                    continue
+                # Any ternary on a variable called `es`, not only one picking
+                # between object literals: the AppModal fix first read
+                # `es ? COPY.es : COPY.en`, which is the same fault wearing a
+                # table. Caught by testing the check against that exact line.
+                if re.search(r"\bes\s*\?", line) or \
+                   re.search(r'lang\s*===\s*"es"', line) or \
+                   re.search(r'\bes:\s*esProp', line):
+                    out.append("%s:%d picks between Spanish and English, which is "
+                               "not a language choice, it is the 2026-08 Malaga test "
+                               "left in place. Use a Record<Lang, ...> table like "
+                               "site/src/lib/ui-strings.ts so a missing language "
+                               "stops the build: %s"
+                               % (os.path.relpath(path), n, stripped[:70]))
+    return out
+
 def check_chrome_is_translated():
     """The navigation and footer must read from the string table, not be typed.
 
@@ -1172,7 +1216,8 @@ def main():
                 + check_access_permission() + check_no_sender_names()
                 + check_collection_targets() + check_overlay_coverage()
                 + check_chrome_is_translated()
-                + check_translated_components_are_neutral())
+                + check_translated_components_are_neutral()
+                + check_no_two_language_switch())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)

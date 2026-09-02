@@ -43,50 +43,198 @@
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { roundedTrees } from "../lib/tree-count";
 
-// `lang` widened this from a Spanish boolean on 2026-08-22. Modal copy is
-// chrome, which Contract J lets stay English until a language earns a
-// rollout, so an unlisted language gets the English modal rather than a
-// half-translated one.
-interface Props { es?: boolean; lang?: string }
-const { es: esProp = false, lang = "en" } = Astro.props as Props;
-const es = esProp || lang === "es";
+// THE COPY IS A TABLE, NOT A TERNARY, since 2026-09-02, and the shape is the
+// fix rather than the translations. It was `const T = es ? {...} : {...}` with
+// a `lang` prop bolted on in front of it on 2026-08-22, so the six languages
+// that are neither English nor Spanish silently took the English branch. A
+// German reader on /de/berlin/dicke-marie tapped "Get the app" and got "City
+// walks", "Your log" and "See everything it does" over their own prose, and
+// nothing could see it: this file renders from Base.astro, so it is on all 31
+// translated sets at once and no per-language template exists to catch it.
+//
+// So it follows lib/ui-strings.ts, which exists for exactly this and is the
+// model: a Record<Lang, ...> that stops compiling when a language is missing,
+// and a lookup falling back to the WHOLE English object. Never key by key. A
+// half-translated overlay is worse than an English one, because an English
+// overlay is a consistent choice and a mixed one reads as a fault.
+//
+// `locale` lives in the same table as the copy so the two cannot disagree.
+// It used to be a second ternary (`es ? "es-ES" : "en-US"`), which gave every
+// other language American thousands separators under its own sentences.
+import type { Lang } from "../lib/ui-strings";
+
+interface AppModalStrings {
+  /** Takes the formatted count, because the number sits inside the sentence
+   *  and every language puts it somewhere else. */
+  title: (count: string) => string;
+  /** Thousands separators: a full stop in German and Italian, a thin space in
+   *  French, nothing in Japanese. */
+  locale: string;
+  f1n: string; f1: string;
+  f2n: string; f2: string;
+  f3n: string; f3: string;
+  f4n: string; f4: string;
+  placeholder: string;
+  /** The input's aria-label. English here meant a screen reader read one
+   *  English label out in the middle of a translated overlay. */
+  emailLabel: string;
+  send: string;
+  note: string;
+  sent: string;
+  fail: string;
+  more: string;
+  close: string;
+}
+
+// The bullets keep the shape the competitor read of 2026-08-23 settled, in
+// every language: a short noun label, then one verb-first line, with each
+// verb different from its neighbours and the four lines roughly equal.
+const COPY: Record<Lang, AppModalStrings> = {
+  en: {
+    title: (n) => `Over ${n} old trees worth the walk`,
+    locale: "en-US",
+    f1n: "Trees near you", f1: "See which remarkable old trees are a few streets away",
+    f2n: "City walks", f2: "Follow a route past the best trees in one afternoon",
+    f3n: "Your log", f3: "Tick off the trees you have actually visited",
+    f4n: "Season Radar", f4: "Get notified the week a tree nearby comes into blossom",
+    placeholder: "you@example.com",
+    emailLabel: "Email address",
+    send: "Tell me first",
+    note: "We write to you the day it opens. One email. Nothing else.",
+    sent: "You are on the list. We will email you when the app is ready.",
+    fail: "That did not go through. Try again in a moment.",
+    more: "See everything it does",
+    close: "Close",
+  },
+  es: {
+    title: (n) => `Más de ${n} árboles viejos que merecen el paseo`,
+    locale: "es-ES",
+    f1n: "Árboles cerca de ti", f1: "Descubre qué árboles notables están a unas calles",
+    f2n: "Paseos por la ciudad", f2: "Sigue una ruta que pasa por los mejores árboles en una tarde",
+    f3n: "Tu registro", f3: "Marca los árboles que has visitado de verdad",
+    f4n: "Season Radar", f4: "Recibe un aviso la semana que un árbol cercano florece",
+    placeholder: "tu@ejemplo.com",
+    emailLabel: "Dirección de email",
+    send: "Avísame",
+    note: "Te escribimos el día que abra. Un email. Nada más.",
+    sent: "Estás en la lista. Te escribiremos cuando la app esté lista.",
+    fail: "No ha salido. Inténtalo de nuevo en un momento.",
+    more: "Ver todo lo que hace",
+    close: "Cerrar",
+  },
+  it: {
+    title: (n) => `Più di ${n} alberi secolari che valgono la passeggiata`,
+    locale: "it-IT",
+    f1n: "Alberi vicino a te", f1: "Scopri quali alberi notevoli si trovano a due passi",
+    f2n: "Passeggiate in città", f2: "Segui un percorso tra gli alberi migliori in un pomeriggio",
+    f3n: "Il tuo diario", f3: "Segna gli alberi che hai visitato davvero",
+    f4n: "Season Radar", f4: "Ricevi un avviso la settimana in cui un albero vicino fiorisce",
+    placeholder: "tu@esempio.com",
+    emailLabel: "Indirizzo email",
+    send: "Avvisami",
+    note: "Ti scriviamo il giorno in cui esce. Una email. Nient'altro.",
+    sent: "Sei in lista. Ti scriveremo quando l'app sarà pronta.",
+    fail: "Non ha funzionato. Riprova tra un momento.",
+    more: "Guarda tutto quello che fa",
+    close: "Chiudi",
+  },
+  nl: {
+    title: (n) => `Meer dan ${n} oude bomen die de wandeling waard zijn`,
+    locale: "nl-NL",
+    f1n: "Bomen bij jou in de buurt", f1: "Zie welke bijzondere oude bomen een paar straten verderop staan",
+    f2n: "Stadswandelingen", f2: "Volg een route langs de mooiste bomen in één middag",
+    f3n: "Jouw logboek", f3: "Vink de bomen af waar je echt voor hebt gestaan",
+    f4n: "Season Radar", f4: "Krijg bericht in de week dat een boom vlakbij in bloei staat",
+    placeholder: "jij@voorbeeld.nl",
+    emailLabel: "E-mailadres",
+    send: "Hou me op de hoogte",
+    note: "We schrijven je de dag dat hij uitkomt. Eén mail. Verder niets.",
+    sent: "Je staat op de lijst. We mailen je zodra de app klaar is.",
+    fail: "Dat is niet gelukt. Probeer het zo nog eens.",
+    more: "Bekijk alles wat hij doet",
+    close: "Sluiten",
+  },
+  de: {
+    title: (n) => `Über ${n} alte Bäume, für die sich der Weg lohnt`,
+    locale: "de-DE",
+    f1n: "Bäume in deiner Nähe", f1: "Sieh, welche bemerkenswerten alten Bäume ein paar Straßen weiter stehen",
+    f2n: "Stadtspaziergänge", f2: "Folge an einem Nachmittag einer Route zu den schönsten Bäumen",
+    f3n: "Dein Logbuch", f3: "Hake die Bäume ab, vor denen du wirklich gestanden hast",
+    f4n: "Season Radar", f4: "Erfahre in der Woche Bescheid, in der ein Baum in der Nähe blüht",
+    placeholder: "du@beispiel.de",
+    emailLabel: "E-Mail-Adresse",
+    send: "Sag mir Bescheid",
+    note: "Wir schreiben dir an dem Tag, an dem sie erscheint. Eine E-Mail. Sonst nichts.",
+    sent: "Du stehst auf der Liste. Wir melden uns, sobald die App fertig ist.",
+    fail: "Das hat nicht geklappt. Versuch es gleich noch einmal.",
+    more: "Sieh dir an, was sie alles kann",
+    close: "Schließen",
+  },
+  pt: {
+    title: (n) => `Mais de ${n} árvores antigas que valem a caminhada`,
+    locale: "pt-PT",
+    f1n: "Árvores perto de si", f1: "Veja que árvores notáveis estão a duas ruas de distância",
+    f2n: "Percursos pela cidade", f2: "Siga numa tarde um percurso pelas melhores árvores",
+    f3n: "O seu registo", f3: "Marque as árvores que visitou mesmo",
+    f4n: "Season Radar", f4: "Receba um aviso na semana em que uma árvore perto de si floresce",
+    placeholder: "nome@exemplo.pt",
+    emailLabel: "Endereço de email",
+    send: "Avise-me",
+    note: "Escrevemos-lhe no dia em que sair. Um email. Nada mais.",
+    sent: "Está na lista. Escrevemos-lhe quando a aplicação estiver pronta.",
+    fail: "Não resultou. Tente outra vez daqui a um momento.",
+    more: "Veja tudo o que faz",
+    close: "Fechar",
+  },
+  fr: {
+    title: (n) => `Plus de ${n} arbres anciens qui valent le détour`,
+    locale: "fr-FR",
+    f1n: "Des arbres près de vous", f1: "Voyez quels arbres remarquables se trouvent à deux rues",
+    f2n: "Balades en ville", f2: "Suivez en un après-midi un parcours par les plus beaux arbres",
+    f3n: "Votre carnet", f3: "Cochez les arbres devant lesquels vous êtes vraiment passé",
+    f4n: "Season Radar", f4: "Recevez un mot la semaine où un arbre proche entre en fleurs",
+    placeholder: "vous@exemple.fr",
+    emailLabel: "Adresse e-mail",
+    send: "Prévenez-moi",
+    note: "Nous vous écrivons le jour de la sortie. Un e-mail. Rien d'autre.",
+    sent: "Vous êtes sur la liste. Nous vous écrirons dès que l'app sera prête.",
+    fail: "Cela n'a pas fonctionné. Réessayez dans un instant.",
+    more: "Voyez tout ce qu'elle fait",
+    close: "Fermer",
+  },
+  // 常体, following the ja block in lib/i18n.ts.
+  ja: {
+    title: (n) => `歩いて訪ねる価値のある古木が${n}本以上`,
+    locale: "ja-JP",
+    f1n: "近くの木", f1: "すぐ近くにどんな見事な古木があるかわかる",
+    f2n: "街のさんぽコース", f2: "名木をめぐるルートを午後のうちにたどれる",
+    f3n: "自分の記録", f3: "実際に訪ねた木に印をつけられる",
+    f4n: "Season Radar", f4: "近くの木が花をつける週に知らせが届く",
+    placeholder: "you@example.com",
+    emailLabel: "メールアドレス",
+    send: "知らせを受け取る",
+    note: "公開した日にメールを送る。一通だけ。ほかには送らない。",
+    sent: "登録できた。アプリの準備ができたらメールを送る。",
+    fail: "うまくいかなかった。少ししてからもう一度試してほしい。",
+    more: "できることをすべて見る",
+    close: "閉じる",
+  },
+};
+
+interface Props { lang?: string }
+const { lang = "en" } = Astro.props as Props;
+
+// The whole English object for an unknown language, never key by key.
+const T = COPY[lang as Lang] ?? COPY.en;
 
 const rounded = await roundedTrees();
-const count = rounded.toLocaleString(es ? "es-ES" : "en-US");
-
-const T = es ? {
-  title: `Más de ${count} árboles viejos que merecen el paseo`,
-  f1n: "Árboles cerca de ti", f1: "Descubre qué árboles notables están a unas calles",
-  f2n: "Paseos por la ciudad", f2: "Sigue una ruta que pasa por los mejores árboles en una tarde",
-  f3n: "Tu registro", f3: "Marca los árboles que has visitado de verdad",
-  f4n: "Season Radar", f4: "Recibe un aviso la semana que un árbol cercano florece",
-  placeholder: "tu@ejemplo.com",
-  send: "Avísame",
-  note: "Te escribimos el día que abra. Un email. Nada más.",
-  sent: "Estás en la lista. Te escribiremos cuando la app esté lista.",
-  fail: "No ha salido. Inténtalo de nuevo en un momento.",
-  more: "Ver todo lo que hace",
-  close: "Cerrar",
-} : {
-  title: `Over ${count} old trees worth the walk`,
-  f1n: "Trees near you", f1: "See which remarkable old trees are a few streets away",
-  f2n: "City walks", f2: "Follow a route past the best trees in one afternoon",
-  f3n: "Your log", f3: "Tick off the trees you have actually visited",
-  f4n: "Season Radar", f4: "Get notified the week a tree nearby comes into blossom",
-  placeholder: "you@example.com",
-  send: "Tell me first",
-  note: "We write to you the day it opens. One email. Nothing else.",
-  sent: "You are on the list. We will email you when the app is ready.",
-  fail: "That did not go through. Try again in a moment.",
-  more: "See everything it does",
-  close: "Close",
-};
+const title = T.title(rounded.toLocaleString(T.locale));
 ---
 <dialog id="app-dialog" class="collect-dialog signin-dialog app-dialog">
   <button type="button" class="signin-close" id="app-close" aria-label={T.close}>&#10005;</button>
   <p class="signin-mark" aria-hidden="true">&#127795;</p>
   <div id="app-ask">
-    <h3>{T.title}</h3>
+    <h3>{title}</h3>
     <ul class="app-dialog-list">
       <li><b>{T.f1n}</b> {T.f1}</li>
       <li><b>{T.f2n}</b> {T.f2}</li>
@@ -94,7 +242,7 @@ const T = es ? {
       <li><b>{T.f4n}</b> {T.f4}</li>
     </ul>
     <form id="app-wl" class="signin-form" autocomplete="email">
-      <input type="email" id="app-wl-email" placeholder={T.placeholder} aria-label="Email address" required>
+      <input type="email" id="app-wl-email" placeholder={T.placeholder} aria-label={T.emailLabel} required>
       <button type="submit" class="go-btn">{T.send}</button>
     </form>
     <p class="signin-fine" id="app-wl-note">{T.note}</p>
