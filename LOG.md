@@ -9,7 +9,56 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-02 (continuation) - Bamberg and Nuremberg deepen by one tree each; iOS CI diagnosed further; a leads.py false-positive found
+## 2026-09-02 (continuation) - Four single-tree destination pages ship: Gutau, Ramsau am Dachstein, Fara in Sabina, Curinga
+
+Picked up after an earlier attempt in this window stopped at 20 minutes with nothing
+shipped, 100 of the window unspent. Found two standing verify claims on `_famous-austria`
+and `_famous-italy` with real work already done but uncommitted (partial verify passes
+from earlier attempts), and a stale `Hamburg` claim reclaimed 20 minutes before this
+attempt but never advanced.
+
+**Committed the uncommitted verify work first.** 3 more Austria leads and 2 more Italy
+leads had coordinates, species and sourced `why` notes already written but sitting in the
+working tree. Released Hamburg (still below the 4-tree floor at 1 verified candidate;
+reaching 4 there needs a real research pass, not a five-minute continuation, per the
+previous continuation's own note).
+
+**`leads.py --ready` then showed exactly 4 trees, all from those two verify passes,
+across cities with no existing page.** Dispatched a write-stories pass on all 4 (per
+Step 0's explicit instruction to do this before anything else): the yew of Gutau
+(Upper Austria, no credible age, its "thousand-year" name contradicted by a trunk still
+under 2m round), the Feistererhof sycamore in Ramsau am Dachstein (age from an on-site
+sign only, "presumably around 450 years"), the olive of Canneto Sabino in Fara in Sabina
+(age disputed across four sources, roughly 700 to 2,000 years), and the Platano di Vrisi
+in Curinga (runner-up in the 2021 European Tree of the Year vote, 14.75m round, age
+disputed 800 to 1,000+ years). All four are famous single trees with no walkable
+neighbours, so each ships as its own place page under the 2026-08-31 floor exception
+rather than waiting for three more trees that will never come.
+
+Built all four city files from the fish-lake-utah.json template (the established pattern
+for this case): intro, meta_description, question page (answer/meta/context), 4-question
+FAQ, one tree each. First build caught Curinga's question_context 41 words short of
+Contract B's 150-200 minimum; expanded all four with real sourced material already in
+the verify notes rather than padding. Fixed a species-name mismatch the writing agent
+flagged (Sycamore Maple -> Sycamore, matching the 18 other published sycamores) and a
+"Casale Sabino" typo for "Casale Bertini" in my own intro draft. Removed all 4 from the
+leads files, added city-list.json entries, ran city_names.py (language aliases),
+refreshed Austria's and Italy's country-page trees/cities counts in meta_description and
+intro, which my additions had made stale. Build, qa.py, preflight.py, superlatives.py and
+tree_index.py all clean (qa's one standing finding is the pre-existing shallow-clone
+sitemap issue). No photos yet for any of the four; an honest gap, not chased this pass.
+
+**Rung 2: iOS CI is green again.** The in-flight fix from an earlier attempt (retrying
+SweepFrames past the testmanagerd connection-drop flake) landed and its run succeeded,
+10.7h of red resolved without further action needed here.
+
+No new submissions (0 since id 57, checked directly). `leads.py --ready` is now empty
+again.
+
+Cost: one write-stories pass, ~39k tokens for 4 trees (~9.8k/tree, under the 15k target),
+logged to `data/agent-costs.json`. No other agents dispatched; the merge, build and QA
+work was done in-session.
+
 
 Picked up after an earlier attempt in the same window stopped at 15 minutes with
 nothing shipped, three standing verify claims (hamburg, bamberg, nuremberg) and
