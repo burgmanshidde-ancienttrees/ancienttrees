@@ -1,6 +1,6 @@
 {
  "country": "Japan",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown.",
  "leads": [
   {
    "name": "Narao Akō Tree",
@@ -132,19 +132,6 @@
    ],
    "status": "lead",
    "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Baba Zakura",
-   "lat": 37.531008,
-   "lng": 140.365022,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Baba_Zakura._Oct_25,_2023._Otama_Village,_Fukushima_Prefecture._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Baba_Zakura._Oct_25,_2023._Otama_Village,_Fukushima_Prefecture._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Baba_Zakura._Oct_25,_2023._Otama_Village,_Fukushima_Prefecture._C.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
@@ -582,19 +569,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Jindai-zakura (Suzakura-jinja)",
-   "lat": 36.680773,
-   "lng": 138.161675,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Sozakura_Shrine%27s_1200_years_old_Cherry_tree._-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Suzakura-jinja-jindaiszakura1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Suzakura-jinja-jindaiszakura2.JPG"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Jindai-zakura, Hokuto",
    "lat": 35.780798,
    "lng": 138.367517,
@@ -900,32 +874,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Kochozenji no Byakushin",
-   "lat": 35.595913,
-   "lng": 138.470285,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Aerial_photographs_of_around_Kochozenji_no_Byakushin_Juniperus_trees.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kochozenji_no_Byakushin_northwest_and_southwest_trees._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kochozenji_no_Byakushin_northwest_and_southwest_trees._B.jpg"
-   ],
-   "status": "lead",
-   "species": "Juniper (Juniperus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kohata no O Sugi",
-   "lat": 37.621942,
-   "lng": 140.575932,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kohata%27s_large_cedar_and_Kado_Shrine_building._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kohata%27s_large_cedar_and_Kado_Shrine_building._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kohata%27s_large_cedar_and_Kado_Shrine_building._C.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Kosugi no Ōsugi",
    "lat": 38.82005,
    "lng": 140.187263,
@@ -1031,19 +979,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Matabei-zakura",
-   "lat": 34.475087,
-   "lng": 135.917927,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2010-4-26_%E5%8F%88%E5%85%B5%E8%A1%9B%E6%A1%9C(matabezakura)_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Matabei-zakura_(33934707101).jpg",
-    "https://commons.wikimedia.org/wiki/File:Matabei-zakura_2007.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Miharu Takizakura",
    "lat": null,
    "lng": null,
@@ -1104,19 +1039,6 @@
    ],
    "status": "lead",
    "species": "Osmanthus (Osmanthus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Mitsue no Ōkeyaki",
-   "lat": 35.621636,
-   "lng": 138.494122,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Mitsue-no-Okeyaki_Zelkova_serrata_A.JPG",
-    "https://commons.wikimedia.org/wiki/File:Mitsue-no-Okeyaki_Zelkova_serrata_B.JPG",
-    "https://commons.wikimedia.org/wiki/File:Mitsue_no_Okeyaki_Zelkova_serrata_Aug.2019_A.jpg"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
@@ -1455,17 +1377,6 @@
    "status": "lead"
   },
   {
-   "name": "Sawajiri no O Hinoki (Sawara)",
-   "lat": 37.260903,
-   "lng": 140.690967,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Sawajiri_no_Ohinoki.JPG",
-    "https://commons.wikimedia.org/wiki/File:Swajiri_cypress_chamaecyparis_pisifera._Branches_and_leaves._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Swajiri_cypress_chamaecyparis_pisifera._Branches_and_leaves._B.jpg"
-   ],
-   "status": "lead"
-  },
-  {
    "name": "Sawatari no Kaya no Ki",
    "lat": null,
    "lng": null,
@@ -1486,19 +1397,6 @@
     "https://commons.wikimedia.org/wiki/File:%22Seichozakura%22_Cherry_Tree_in_front_of_Nishtetsu-Kashii_Station.jpg",
     "https://commons.wikimedia.org/wiki/File:Cherry_Blossoms_%22Seichozakura%22_in_front_of_Nishitetsu-Kashii_Station_1.jpg",
     "https://commons.wikimedia.org/wiki/File:Cherry_Blossoms_%22Seichozakura%22_in_front_of_Nishitetsu-Kashii_Station_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sen'nen-zakura (Uda)",
-   "lat": 34.514487,
-   "lng": 136.009581,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%E4%BB%8F%E9%9A%86%E5%AF%BA%E3%81%AE%E3%80%8C%E5%8D%83%E5%B9%B4%E6%A1%9C%E3%80%8D_Sen-nen-zakura,_1000-year-old_cherry_tree_in_Butsury%C5%ABji_2013.4.13_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E4%BB%8F%E9%9A%86%E5%AF%BA%E3%81%AE%E3%80%8C%E5%8D%83%E5%B9%B4%E6%A1%9C%E3%80%8D_%E5%AE%87%E9%99%80%E5%B8%82%E6%A6%9B%E5%8E%9F%E8%B5%A4%E5%9F%B4_Sen-nen-zakura_2013.4.13_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E4%BB%8F%E9%9A%86%E5%AF%BA%E3%81%AE%E3%80%8C%E5%8D%83%E5%B9%B4%E6%A1%9C%E3%80%8D_%E5%AE%87%E9%99%80%E5%B8%82%E6%A6%9B%E5%8E%9F%E8%B5%A4%E5%9F%B4_Sen-nen-zakura_2013.4.13_-_panoramio_(1).jpg"
    ],
    "status": "lead",
    "species": "Cherry (Prunus sp.)",
@@ -1767,43 +1665,6 @@
    "status": "lead",
    "species": "Ginkgo (Ginkgo sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sugisawa no O Sugi",
-   "lat": 37.510622,
-   "lng": 140.579412,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Sugisawa_large_cedar_tree._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sugisawa_large_cedar_tree._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sugisawa_large_cedar_tree._C.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Suwa Jinja no Jiji Sugi Baba Sugi",
-   "lat": 37.255027,
-   "lng": 140.66016,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Jiji_and_baba_cedar_trees_of_Suwa_Shrine._October_1936.jpg",
-    "https://commons.wikimedia.org/wiki/File:Signboard_to_Suwa_Jinja_no_Jiji_sugi_Baba_sugi.jpg",
-    "https://commons.wikimedia.org/wiki/File:Suwa_Shrine_080823_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Takakura Jinja no Shibunashigaya",
-   "lat": 34.795445,
-   "lng": 136.090822,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_Dec._2019._a.jpg",
-    "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_Dec._2019._b.jpg",
-    "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_Dec._2019._c.jpg"
-   ],
-   "status": "lead"
   },
   {
    "name": "Takase no Taiboku",
@@ -2156,19 +2017,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Yatsufusa Sugi",
-   "lat": 34.443317,
-   "lng": 135.976843,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Concrete_anchor_blocks_of_wires_supporting_Yatsufusa_cedar.jpg",
-    "https://commons.wikimedia.org/wiki/File:Multiple_wires_supporting_the_Yatsufusa_cedar.jpg",
-    "https://commons.wikimedia.org/wiki/File:Yatsufusa_Sugi_Cedar_tree._Stone_monument_of_natural_monument.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Yokomuro no o-kaya",
    "lat": 36.441153,
    "lng": 139.056147,
@@ -2271,6 +2119,11 @@
     34.993108,
     136.075728
    ]
+  },
+  {
+   "name": "Sawajiri no O Hinoki (Sawara)",
+   "reason": "Verified as real, alive and remarkable (Japan's largest known Sawara cypress, National Natural Monument 1974) but stands on private farmland managed for generations by the Usami family; no source establishes a public viewing point. Blocked under hard rule 10, 2026-09-02. A later pass could call Iwaki's tourism office to check for a public viewpoint.",
+   "status": "blocked"
   }
  ]
 }
