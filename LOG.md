@@ -9,6 +9,30 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-02 (session) - The digest was counting our own testing as readers
+
+Hidde, reading the morning digest: "im the user who addes something to baarn". The
+09-01 entry had opened with "1 tree submission arrived yesterday (36 total); an account
+was opened yesterday" and both were his. Checked against the database: **45 of the 51
+feedback rows in the fortnight, and 7 of the 8 trees sent in, came from three accounts
+of ours** (his own, his +1 address, and a deleted account that typed "Test" into four
+Baarn submissions and toggled one Rome vote nine times inside a minute).
+
+`daily_digest.py` now knows them, by sha1 of the user id rather than by address, since
+DATA.md is public. Ours are subtracted from the sign-up table, the running totals, the
+account count and the headline sentence, with one line underneath saying what was taken
+out so nothing is hidden. The feedback table marks them `us`. Two other lines improved
+with it: signed-out rows are counted separately instead of being named as "one account
+(no acct)", which read as a finding and was a formatting artefact.
+
+**What the fortnight actually looks like once we are out of it:** 1 tree sent in (the
+Prague London Plane, from a real reader), 3 feedback rows, 3 accounts, 8 waitlist, 10
+saves. The submission total falls from 36 to 7.
+
+Not touched: the events table (`save`, `directions`, `app-cta`) still counts our own
+clicks, because those rows carry no user id at all. If that matters, the fix is a flag
+in the beacon rather than a filter here.
+
 ## 2026-09-02 (continuation) - Four single-tree destination pages ship: Gutau, Ramsau am Dachstein, Fara in Sabina, Curinga
 
 Picked up after an earlier attempt in this window stopped at 20 minutes with nothing
