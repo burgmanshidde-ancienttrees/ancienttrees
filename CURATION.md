@@ -10,6 +10,21 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-02 - Otama, Nihonmatsu, Tamura: verified and written, held below the four-tree floor
+
+Finished a stranded write pass from the famous-japan lead pile (data/leads/_famous-japan.json):
+an earlier attempt in this window had already turned verify_notes into finished stories for four
+trees across these three Fukushima places, then stopped without merging or releasing its claims.
+
+None reaches four trees on its own (Otama 1, Nihonmatsu 2, Tamura 1 combined pair), and none
+clears the 2026-08-31 single-tree-destination exception on the evidence found: all are genuine
+National Natural Monuments with good stories, but nothing found frames any of them as a
+pilgrimage draw the way Miharu Takizakura (published, same lead pile, same day) is. See
+data/leads/{otama,nihonmatsu,tamura}.json for the full reasoning. Nothing is lost: the finished
+stories sit in data/research/{otama,nihonmatsu,tamura}-verified.json, ready to ship the moment
+either more trees turn up in the same place or Hidde judges one worth the trip on its own.
+Claims released.
+
 ## 2026-09-02 - Porto: two of Paulo Araujo's photographs were of trees we already publish
 
 He wrote back the same day the thank-you mail went out, to say that he photographed the
