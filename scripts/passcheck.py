@@ -466,6 +466,33 @@ def centre_from_any_name(arg):
     return None
 
 
+def published_near(centre, live, km_max=25.0):
+    """Published cities whose actual PINS sit near this point, nearest first.
+
+    Written 2026-09-02, the second time in one day that a pass was dispatched
+    at a place we already publish under a different name. resolve() already
+    distance-checks an unmatched name, and it refused the fold here on purpose:
+    its Assisi/Perugia guard declines to merge two names that are both ranked
+    cities, because sitting inside SAME_CITY_KM (20 km) is evidence of a shared
+    register radius rather than of being one place. That guard is right and
+    stays. What was missing is that the brief then said "NOT published, this
+    would be a NEW city" and mentioned no neighbour at all, so a pass was sent
+    to open Funchal while data/cities/madeira.json held ten trees, five of them
+    the very candidates it was handed, 500 metres away.
+
+    So this does not overturn the verdict, it reports the evidence: pins, not
+    the mean of a city's trees, because a spread-out city averages out to a
+    point in the harbour and the question is whether OUR TREES are here.
+    """
+    out = []
+    for c in live:
+        d = min((km(centre, pt) for pt in c["points"]), default=None)
+        if d is not None and d <= km_max:
+            out.append((d, c))
+    out.sort(key=lambda r: r[0])
+    return out
+
+
 def _research_trees(loaded):
     """A *-verified.json is an array, but one pass delivered {"trees": [...]}
     and the pending check crashed instead of reading it. Tolerate both."""
@@ -1006,6 +1033,15 @@ def print_wikidata_global(centre, pub_pts, already_shown=frozenset(), radius_km=
               f"data/research/wikidata-remarkable-trees.json directly.")
 
 
+def _first(entry, keys):
+    """The first non-empty value among keys, for files that disagree on names."""
+    for k in keys:
+        v = entry.get(k)
+        if isinstance(v, str) and v.strip():
+            return v.strip()
+    return None
+
+
 def print_leads(slug):
     for kind in ("leads", "research"):
         for f in sorted(glob.glob(os.path.join(ROOT, "data", kind, f"*{slug}*"))):
@@ -1017,14 +1053,22 @@ def print_leads(slug):
                 continue
             print(f"\nEARLIER PASS ALREADY WORKED HERE: {rel}")
             if isinstance(d, dict):
+                # Leads files are written by many passes and do not agree on
+                # field names: name/candidate/tree, why/reason/status/note.
+                # Reading only two of them printed "?" for every entry in
+                # data/leads/madeira.json, which is the one file a Funchal
+                # brief most needed to show (2026-09-02).
+                def _label(e):
+                    return _first(e, ("name", "candidate", "tree", "title")) or "?"
+
+                def _reason(e):
+                    return _first(e, ("why", "reason", "status", "note", "verdict")) or ""
+
                 for lead in (d.get("leads") or []):
-                    nm = lead.get("name", "?")
-                    why = lead.get("why") or lead.get("status") or ""
-                    print(f"  lead:    {nm}: {why[:110]}")
+                    print(f"  lead:    {_label(lead)}: {_reason(lead)[:110]}")
                 for b in (d.get("blocked") or []):
-                    nm = b.get("name", "?")
-                    why = b.get("why") or b.get("reason") or ""
-                    print(f"  BLOCKED: {nm}: {why[:110]} (never ship; do not re-research)")
+                    print(f"  BLOCKED: {_label(b)}: {_reason(b)[:110]} "
+                          f"(never ship; do not re-research)")
 
 
 def brief(arg, live):
@@ -1045,9 +1089,29 @@ def brief(arg, live):
     else:
         centre = coord or centre_from_any_name(arg)
         taken = sorted({i[:3] for c in live for i in c["ids"]})
-        print("STATUS: NOT published, this would be a NEW city. Floor: 4 verified trees or no page.")
-        print(f"  Pick a 3-letter id prefix NOT in: {' '.join(taken)}")
-        print(f"  Deliver to data/research/{slug}-verified.json (JSON array, one object per tree).")
+        neighbours = published_near(centre, live) if centre else []
+        touching = [(d, c) for d, c in neighbours if d <= 5.0]
+        if touching:
+            d, c = touching[0]
+            nid = f"{c['ids'][-1][:4]}{int(c['ids'][-1][4:]) + 1:03d}"
+            print(f"STATUS: NOTHING is published called {arg}, but WE ALREADY PUBLISH HERE.")
+            print(f"  {c['n']} trees are live as {c['city']} (/{c['slug']}), the nearest "
+                  f"{d:.1f} km from this centre.")
+            print("  Treat this as a DEEPEN pass on that city, not as a new page. Opening a")
+            print("  second page beside it splits one place across two URLs and re-researches")
+            print("  trees we hold. If you believe they are genuinely two places, say so in")
+            print("  your report and give the reason; do not just proceed.")
+            print(f"  New entries start at id {nid}. Never edit the city file; deliver to")
+            print(f"  data/research/{c['slug']}-verified.json (JSON array, one object per tree).")
+            slug = c["slug"]
+        else:
+            print("STATUS: NOT published, this would be a NEW city. Floor: 4 verified trees or no page.")
+            print(f"  Pick a 3-letter id prefix NOT in: {' '.join(taken)}")
+            print(f"  Deliver to data/research/{slug}-verified.json (JSON array, one object per tree).")
+            for d, c in neighbours[:3]:
+                print(f"  nearby and already published: {c['city']} (/{c['slug']}), "
+                      f"{c['n']} trees, nearest pin {d:.1f} km. Check its leads file before")
+                print("    researching anything, and do not take a tree it already holds.")
 
     print("\nTHE JOB, and only the job: VERIFY, do not write prose and do not hunt photos.")
     print("  Per candidate: (1) alive now, (2) species + age with two independent sources")
