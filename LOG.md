@@ -9,6 +9,35 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-02 (session with Hidde) - The add-a-tree flow ends properly, and a tree of yours can have a page
+
+He walked the flow and found two things: the loudest button under a tree he had just added was
+about going somewhere, and nothing said the tree was saved. Both fixed, then the question that
+followed them ("kunnen we niet een pagina maken van de boom die wel deelbaar is?") turned into
+the unlisted share page.
+
+**Shipped, app:** the status card moved to the top of your own tree's page, where you land after
+adding one, and it states the state rather than only explaining it; a declined tree stops
+claiming we are still looking at it. The action bar on your own tree lost its big button
+entirely and then gained the one that belongs there: Share. It draws a card (your photograph,
+the name, the date, the wordmark, 4:5 at 1080) and, since today, publishes an unlisted page and
+hands the sheet the link and the card together. Stop sharing sits in the same menu as remove.
+That page had never been in a screenshot: no launch argument opened it, so appsweep and the
+layout gate had never seen the screen the core act ends on. It is `own-tree` in both lists now.
+
+**Shipped, web:** /account reads your own sightings and shows them with your photographs
+(signed urls, the private bucket stays private), built in the app's shape: two lanes opening on
+My trees, counts above, settings below rather than in the middle. /t?id=<uuid> is the unlisted
+page, noindex, nothing links to it, and it does not show where the tree is. The thank-you mail
+now tells people where their own trees are.
+
+**FOR HIDDE, and nothing here moves without you:** paste `supabase/shared-sightings.sql` in the
+Supabase SQL editor (the column, the view, the public bucket for shared photographs only), then
+test the flow once: add a tree, tap Share, open the link on a phone that is not signed in. Until
+that is pasted the page honestly says the link leads nowhere. He asked for this to be
+remembered rather than done now: "onthou maar dat ik dit ooit moet testen nu geen tijd."
+
+
 ## 2026-09-02 (autonomous run) - Finished a stranded write pass: Beijing and 3 Japan single-tree pages, 15 trees written
 
 Picked up where an earlier attempt in this window stopped: three claims (beijing, brighton,
