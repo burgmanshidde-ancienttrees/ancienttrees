@@ -13,6 +13,76 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-02
+
+Reviewed the last 24 hours (~140 commits): heavy assembly-line work (Rio de
+Janeiro, San Diego, Belfast and Liverpool opened; Auckland, Lima, Regensburg
+opened; Hamburg, San Francisco, Manchester, Fort Worth, San Antonio opened;
+twenty famous American trees and several famous-Japan/Austria/Italy leads
+published; Madeira, Kagoshima and others deepened), Palma de Mallorca's
+Spanish translation, the account/deletion and app share-card work
+(`438e7752`, `2be34589`), and the daily digest/re-rank. Ran
+`python3 scripts/qa.py` directly against the current `site/dist` build.
+
+**BLOCKER — the site currently fails its own deploy gate: `scripts/qa.py`
+reports 2 problems, both a false-positive on legitimate content, introduced
+today by the Palma de Mallorca Spanish translation (`b9de0302`).**
+`check_no_name_promise()` (scripts/qa.py:817-842) greps built pages for the
+literal string `"con su nombre"` as a proxy for "we promise to publish your
+name", the pattern that shipped on Spanish tree pages on 2026-08-16. But
+`data/i18n/es/palma-de-mallorca.json`'s story for S'Olivera de Cort contains
+the sentence "El ayuntamiento le prometió a Batle una placa **con su
+nombre**" ("the city promised Batle a plaque with his name"), a documented
+historical fact about a 1989 civic gift (sourced to Ultima Hora), not a
+promise to the reader. Spanish `su` is both third-person ("his/her/their")
+and formal-second-person ("your"), and the check cannot tell them apart, so
+it fires on `site/dist/es/palma-de-mallorca.html` and
+`site/dist/es/palma-de-mallorca/solivera-de-cort.html` alike. This is
+exactly the class of error CLAUDE.md's ratchet exists to prevent (a check
+that fires twice becomes a build gate) turned on itself: the check is sound
+in intent but the keyword is not specific enough for Spanish grammar, and it
+is currently failing a build that should ship (SessionStart's "Build and
+deploy site FAILED" matches this). Fix direction for a session, not decided
+here: narrow the pattern to second-person contexts (e.g. require "tu"/"su"
+immediately after a promise verb aimed at "you", or exclude known
+third-person referents), or check the English source sentence's grammatical
+person before translation rather than grepping the Spanish output blind.
+
+**APP, NOTE.** `collect-away.png` and `collect-intro.png` (both rotated into
+today's six) render as the same screen pixel-for-pixel as far as a read can
+tell: the Amsterdam map behind a "Build your tree collection" /
+"Every tree you photograph joins your collection" sheet with "Take a photo"
+and "Choose from your photos". Their names imply two different entry
+states (arriving away from any known tree vs. a first-use intro), and if the
+underlying launch arguments are meant to produce different content, one of
+them is not doing so. Low confidence since this cannot be fixed by a night
+run either way (CLAUDE.md: runs do no visual-taste work) and may simply be
+two arguments that correctly fall back to one honest shared state; worth a
+session glance rather than a rung.
+
+Everything else read clean. Spot-checked the built pages for Liverpool (a
+new 2-tree place under the 2026-08-31 single-destination-tree exception,
+correctly flagged and sourced, "Trees nearby" renders correctly on both tree
+pages), Rio de Janeiro, San Diego, Belfast, Kagoshima and Palma's English
+and Spanish sets: no em dashes, no banned words, no superlative collisions
+in the sampled pages, hreflang reciprocal on the Spanish set, and the
+walks-pill/walks-page contradiction flagged BLOCKER on 2026-08-31 stays
+fixed (Liverpool has no walks page and correctly falls back to the app
+pill). Verified Kuala Lumpur's non-publication (`2f077b3a`) is handled
+honestly: two single-sourced trees, neither passing the destination-tree
+test, a fabricated "300-year-old mahogany" claim identified and explicitly
+not used, all recorded in `data/leads/kuala-lumpur.json` rather than
+shipped.
+
+Read all six rotated app screenshots (`city-map.png`, `city.png`,
+`collect-away.png`, `collect-intro.png`, `collect-place.png`,
+`collection-tab.png`). Aside from the NOTE above, nothing contradicts
+itself, overpromises, or shows a control with no stated purpose; the
+signed-out Collection tab's "0 Trees / 0 Species / 0 Countries" reads as an
+honest empty state per PRINCIPLES.md #3.
+
+---
+
 ## 2026-09-01
 
 Reviewed the last 24 hours (~140 commits): heavy assembly-line work (Naha,
