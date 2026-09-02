@@ -9,6 +9,44 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-02 (autonomous run) - rung 2 twice: the deploy fix shipped, the app fix could not
+
+Started at health.py's rung 2, which had two things flagged: the site build was
+red on two straight pushes, and the iOS app had failed on its own schedule twice
+running.
+
+**Build and deploy, fixed and pushed.** Both failures were the same QA gate:
+`es/palma-de-mallorca.json`'s story about the town's 1989 plaque promise to Jaime
+Batle, the tree's donor, contains "con su nombre" ("with his name"), which is
+also the literal string `check_no_name_promise()` greps for as a submitter-name
+leak. False positive, real historical sentence, but it blocked the deploy twice.
+Reworded to "que llevara grabado el nombre del donante", same meaning, no longer
+matches. Rebuilt, ran qa.py/preflight.py/i18ncheck.py clean, pushed as 29d06f47.
+Also carried two auto-tracked state files (first-seen.json, mail-health.json)
+that had drifted uncommitted since before this session.
+
+**iOS app, diagnosed but not landed.** The floor job (the iOS-18 schedule-only
+job) failed 09-01 in its layout step and 09-02 with no test results at all,
+1h35m against a 90-minute timeout, while `gh run view` on the same run's `test`
+job showed 120/120 passing. Traced it to the known testmanagerd connection-drop
+flake ("Lost connection to the application"): the `test` job's build-and-test
+step already carries `-retry-tests-on-failure -test-iterations 2` for exactly
+this, added 2026-09-01; the floor job's own build-and-test step never got the
+same flags, so the same flake there produces no xcresult, fails Verdict, and the
+job then runs long anyway because everything after Verdict is `if: always()`.
+Wrote the one-line fix and could not push it: this session's token still lacks
+the GitHub App `workflows` permission needed to touch `.github/workflows/*.yml`
+("refusing to allow a GitHub App to create or update workflow ... without
+workflows permission"), the same wall a prior session hit on this same file
+(see the 548-line entry in archive). Reverted the diff locally rather than leave
+it sitting uncommitted.
+
+**FOR HIDDE or a session with that scope:** in `.github/workflows/ios.yml`, the
+`floor` job's "Build and test on the floor" step's `xcodebuild test` invocation
+needs `-retry-tests-on-failure -test-iterations 2` added next to
+`-parallel-testing-enabled NO`, matching the `test` job's own build-and-test
+step a few dozen lines above it.
+
 ## 2026-09-02 (session) - Japan: the machine can see photographs, and the budget was the brake
 
 Hidde leaves for Japan for the coming months and asked the honest version of the
