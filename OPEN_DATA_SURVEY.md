@@ -227,8 +227,14 @@ been treating them as one.
 - **Sweden (Gothenburg #73, Malmo #134).** Naturvårdsverket's
   naturvårdsregistret covers *naturminne* and its metadata advertises
   WMS/WFS/REST, but `geodata.naturvardsverket.se/geoserver` answers every WFS
-  request with "Service WFS is disabled". The REST route was not tried and is
-  the next step.
+  request with "Service WFS is disabled". **The REST route was tried on
+  2026-09-02 and it is closed too**: `/geoserver/rest` and
+  `/arcgis/rest/services` both return 403, and the WFS GetCapabilities now
+  answers 200 with an `ows:ExceptionReport` body rather than an honest error
+  code, which is worth knowing because a status check alone reads it as
+  working. So this endpoint is exhausted, not merely untried, and Sweden needs
+  a different door: the county boards (lansstyrelsen) publish their own
+  protected-object data, and a *naturminne* is designated at county level.
 - **Austria (Graz #92, Salzburg #154, Innsbruck #163, Hallstatt #189).**
   Steiermark's Naturdenkmäler are published under **CC BY 4.0** with WMS/WFS via
   haleconnect.com: a confirmed licence and an unlocated endpoint, since the
