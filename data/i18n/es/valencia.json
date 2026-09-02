@@ -1,0 +1,224 @@
+{
+ "_note": "Spanish overlay for Valencia, hand-written 2026-09-02 under Contract J. Chosen because /valencia takes 65 impressions in the ten-day window and holds 24 trees, the largest untranslated Spanish-area page. 24 trees, full set: city page, question page and 24 tree pages under /es/. The prose is Castilian, because that is the language area our other Spanish sets serve and what a searcher outside the Comunitat Valenciana types; place names keep the form the canonical file uses and metro stops are given as Metrovalencia signs them, in Valencian (Xàtiva, Àngel Guimerà, Estació del Nord, Aragó, Les Carolines), because that is what a reader standing in the street reads on the platform. Institutional names keep their official form too: Jardí Botànic de la Universitat de València, Escola Botànica, Parc Lineal. Faithful to the English facts, never machine-patched (the accent disaster of 2026-08-09 is the standing warning). Counts checked against the file: 24 trees, 15 free and 9 inside the paid Jardí Botànic, which is what the English FAQ already says; the English question_meta's 'twenty-three more' is also correct.",
+ "city": "Valencia",
+ "title": "Árboles monumentales de Valencia: El Titán y 23 más",
+ "meta_description": "La Comunitat Valenciana protege más árboles monumentales que ninguna otra región. El Titán, un ficus de 174 años plantado por error, y un olivo de 400.",
+ "intro": "La Comunitat Valenciana protege más árboles monumentales y singulares que ninguna otra región española, más de 2.400 bajo una ley de 2006, y la ciudad traza cinco rutas por los suyos. Varios de sus árboles más queridos comparten un origen muy concreto: jardineros del siglo XIX que iban a plantar una magnolia y cogieron por error un plantón de ficus, o una especie importada porque acababa de ponerse de moda en la Costa Azul. De aquellos errores y modas quedan la copa más ancha de la ciudad, un olivo de 400 años y el árbol más alto de la provincia.",
+ "question_title": "¿Cuál es el árbol más antiguo de Valencia? (400 años)",
+ "question_meta": "El árbol más antiguo de Valencia es un olivo de 400 años en el Parque de la Rambleta. Su historia, su ubicación exacta y otros 23 árboles monumentales.",
+ "question_answer": "El árbol más antiguo de Valencia se cita habitualmente como el olivo del Parque de la Rambleta, en el barrio de San Marcelino, estimado en unos 400 años y descrito por la propia ruta municipal de árboles monumentales como el ejemplar más viejo de sus cinco itinerarios.",
+ "question_context": "Valencia está inusualmente bien documentada para esta pregunta: la Comunitat Valenciana mantiene un Catálogo de Árboles Monumentales y Singulares con rango de ley desde 2006, que hoy cubre más de 2.400 árboles protegidos, y el ayuntamiento publica aparte cinco rutas señalizadas, a pie y en bicicleta, por sus propios ejemplares monumentales, con una ficha para cada uno. Dentro de ese sistema, el olivo del Parque de la Rambleta es el que se nombra con más constancia como el más viejo, aunque, como con casi todos los olivos veteranos, su cifra de 400 años viene de una estimación general y no de un recuento de anillos ni de un registro de plantación. El Titán, el ficus gigante de los Jardines del Parterre, es más joven en comparación, 174 años, pero tiene una fecha de plantación más firme y más concreta, y esa disyuntiva recorre buena parte de esta lista. El parque está en el barrio de San Marcelino, en la calle Pío IX, junto al Cementerio General de la ciudad, a un trayecto corto de autobús al sur del centro histórico.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Valencia?",
+   "a": "El olivo del Parque de la Rambleta, estimado en unos 400 años, en el barrio de San Marcelino, junto al Cementerio General de Valencia. Las propias rutas municipales de árboles monumentales lo señalan como el ejemplar más viejo."
+  },
+  {
+   "q": "¿Qué es El Titán de Valencia?",
+   "a": "El apodo del ficus de Moreton Bay gigante del Jardín del Parterre, plantado por error en 1852 cuando los jardineros confundieron el plantón con una magnolia. Su copa da hoy sombra a unos 850 o 1.000 metros cuadrados, la más ancha de cualquier árbol de la ciudad."
+  },
+  {
+   "q": "¿Se pueden ver gratis los árboles monumentales de Valencia?",
+   "a": "Quince de ellos son gratuitos: el olivo de la Rambleta, El Titán y el resto de los ficus de los Jardines del Parterre y la Glorieta, y los demás árboles de parque y de calle están todos en suelo público abierto. Los otros nueve, entre ellos el ciprés de Cachemira y el olmo del Cáucaso, comparten el Jardí Botànic de la Universitat de València, que cobra una entrada pequeña, la de un jardín botánico cualquiera y no algo específico para estos árboles."
+  },
+  {
+   "q": "¿Cómo protege Valencia sus árboles monumentales?",
+   "a": "Con una ley autonómica de 2006 que creó el Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana, hoy con más de 2.400 árboles, el mayor de cualquier comunidad autónoma española, más cinco rutas municipales a pie y en bicicleta que destacan ejemplares concretos."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+ "trees": {
+  "vlc_001": {
+   "name": "El Titán, el ficus del Parterre",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "174 años",
+   "access": "Gratuito, jardín público",
+   "transport": "5 minutos a pie desde Xàtiva / Estació del Nord (metro y tren)",
+   "story": "Los jardineros plantaron este ficus por accidente en 1852, al confundir el plantón joven con una de las 47 magnolias que iban ese mismo año al recién trazado jardín del Parterre, el año en que se abrió también la primera línea de ferrocarril de Valencia. El error acabó siendo el árbol más celebrado de la ciudad. Su tronco mide hoy casi 13 metros de perímetro, su copa llega a casi 23 metros de altura con una extensión de más de 35, y la sombra que echa cubre algo cercano a 1.000 metros cuadrados de suelo, la copa más ancha de cualquier árbol de Valencia. Ha aguantado un temporal de viento en 1926 y la riada catastrófica de 1957 que cambió la relación de toda la ciudad con el río Turia, y en 1915 se convirtió en objeto de estudio de la Escuela de Ingenieros Agrónomos de Madrid, prueba de lo pronto que se reconoció su tamaño como algo notable. Durante décadas acogió además el baile de sardanas de los domingos y otras reuniones culturales valencianas a su sombra. Una gasolinera cercana, cuyos depósitos subterráneos amenazaban su sistema radicular, se desmanteló por fin en 2020 tras años de presión para proteger el árbol, valorado por el ayuntamiento en unos 380.000 euros."
+  },
+  "vlc_002": {
+   "name": "El olivo de La Rambleta",
+   "species": "Olivo (Olea europaea)",
+   "age_estimate": "unos 400 años",
+   "access": "Gratuito, parque público",
+   "transport": "Líneas de autobús 8 y 89 hasta el Parque de la Rambleta",
+   "story": "Este olivo ha aguantado más de una docena de generaciones de valencianos sin haber tenido que moverse nunca, a diferencia de casi todos los demás árboles de esta lista, que la ciudad ha plantado, trasplantado o rescatado de una demolición en algún momento de su vida. Crece en el Parque de la Rambleta, una zona verde de 14 hectáreas encajada entre el barrio de San Marcelino y el Cementerio General, al sur de la ciudad, dentro de un jardín mediterráneo de palmeras datileras, olivos griegos, cipreses, algarrobos y un cedro del Líbano. Las fuentes municipales le dan unos 400 años, sin un registro de plantación documentado para él, lo que es lo normal en los olivos viejos: la especie se ahueca y rebrota desde su propia base a lo largo de los siglos, así que los recuentos de anillos no son fiables ni siquiera allí donde se permitiera talar. La propia ruta municipal de árboles monumentales lo nombra directamente como el ejemplar más viejo de sus cinco itinerarios señalizados, un título que lo pone por delante de árboles situados en zonas mucho más visitadas de la ciudad."
+  },
+  "vlc_003": {
+   "name": "El ginkgo del Jardín de Monforte",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "unos 170 años",
+   "access": "Gratuito, jardín público",
+   "transport": "10 minutos a pie desde la estación de metro de Alameda",
+   "story": "Este ginkgo ha sobrevivido a todos los conflictos por los que ha pasado Valencia desde mediados del siglo XIX simplemente por pertenecer a una especie hecha para sobrevivir a casi todo. Ginkgo biloba suele describirse como un fósil viviente, con un linaje rastreable unos 250 millones de años atrás y prácticamente sin cambios, célebre por resistir el fuego, las enfermedades y la contaminación mejor que casi cualquier otro árbol grande. Este ejemplar concreto crece en el Jardín de Monforte, un jardín neoclásico de unos 12.000 metros cuadrados que el marqués de San Juan levantó sobre un huerto comprado en 1849, y que fue llenando de estatuas de mármol, fuentes y árboles singulares durante las décadas siguientes. Declarado Jardín Artístico Nacional en 1941, sigue siendo el último jardín histórico-artístico decimonónico intacto de Valencia, y de este ginkgo, plantado poco después de la fundación del jardín, el ayuntamiento dice que es el más conocido de su especie en la ciudad. Cerca, en el mismo jardín, crece un segundo ginkgo hembra, más joven."
+  },
+  "vlc_004": {
+   "name": "El ficus de la condesa de Ripalda",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "unos 135 años",
+   "access": "Gratuito, plaza pública",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Una moda de jardinería importada de la Riviera francesa es la razón de que este árbol exista siquiera. En 1891, la condesa viuda de Ripalda contrató al jardinero mayor de Valencia, Fernando Llopis, para trazar los jardines de su nuevo palacio, y Llopis propuso un ficus de Moreton Bay después de ver cómo la especie se ponía de moda entre las familias adineradas de la Costa Azul, una idea de jardín que los jardineros valencianos de la época tomaban prestada con frecuencia de aquel tramo de costa, de clima parecido. El palacio no sobrevivió al siglo XX: lo derribaron en 1968, y cuando la cuadrilla de demolición preguntó cómo quitar también el árbol, el jardinero mayor Vicente Peris les dijo que bastaría con una poda severa para matarlo. Se equivocó en lo que importaba: en lugar de morir, el ficus se hizo más fuerte, y hoy se levanta solo a la entrada de la Plaza Legión Española, el único rastro que queda de un palacio y un jardín borrados por completo del solar."
+  },
+  "vlc_005": {
+   "name": "La encina de la Avenida de Aragón",
+   "species": "Encina (Quercus ilex)",
+   "age_estimate": "sin datar, descrita como de varios siglos",
+   "access": "Gratuito, isleta de tráfico y arbolado de calle, de acceso público",
+   "transport": "5 minutos a pie desde la estación de metro de Aragó",
+   "story": "Esta encina es el último rastro físico de una huerta que desapareció bajo la ciudad que le creció alrededor. Estuvo en el medieval Camino del Cabanyal, regada por las históricas acequias de Mestalla y Algirós que daban agua a la huerta de Valencia, el cinturón de campos que rodeó la ciudad amurallada durante siglos. La urbanización se tragó la zona a partir de 1902, cuando la llegada del ferrocarril trajo calles y edificios a lo que había sido huerta abierta, y el árbol se fue quedando encajonado: estuvo dentro de los terrenos de la antigua estación de Aragón hasta que aquella estructura desapareció en 1974, después dentro de suelo del Ministerio de Obras Públicas hasta 1982, cuando la zona se reurbanizó por fin en la avenida ajardinada que conserva hoy. Ahora crece en una isleta entre la Avenida de Aragón y la Avenida Blasco Ibáñez, junto al aparcamiento del estadio de Mestalla, superviviente de varios siglos de un paisaje que ya no existe en ningún punto cercano."
+  },
+  "vlc_006": {
+   "name": "Los Tres Amigos",
+   "species": "Palmera canaria (Phoenix canariensis)",
+   "age_estimate": "unos 100 años",
+   "access": "Gratuito, arbolado de calle público",
+   "transport": "5 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Tres palmeras juntas a la entrada de una sola calle se han convertido en un punto de referencia lo bastante concreto como para prestar su apodo a varios comercios cercanos y a un bar. Se cree que Los Tres Amigos son el último rastro visible del jardín de una finca privada que hubo en esta parte de Valencia, antes de que el barrio en torno a la Plaza de España se urbanizara del todo a comienzos del siglo XX, dejando los tres ejemplares de Phoenix canariensis en pie donde quizá los enmarcaron un muro o una cancela de jardín. Las palmeras de esta especie pueden vivir bastante más de un siglo, y a estas se les calculan unos cien años, aunque no sobrevive ningún registro de plantación individual que confirme una fecha exacta. En enero de 2015 la asociación de vecinos Abastos-Finca Roja adoptó formalmente el trío como conjunto protegido, un gesto de barrio de los que suelen dedicarse a un único ejemplar monumental antes que a una plantación de esquina. Siguen siendo, en palabras de la propia asociación, una puerta de entrada a la calle que señalan."
+  },
+  "vlc_007": {
+   "name": "La Más Delgada del Paseo",
+   "species": "Washingtonia mexicana (Washingtonia robusta)",
+   "age_estimate": "plantación de comienzos del siglo XX",
+   "access": "Gratuito, jardín público",
+   "transport": "10 minutos a pie desde la estación de metro de Alameda",
+   "story": "Un error de jardinero dejó esta palmera más alta y más delgada que todas las de su alrededor. Cuando a comienzos del siglo XX se plantaron en los Jardines del Real, conocidos también como Viveros, hileras de Washingtonia filifera, se colaron por equivocación plantones jóvenes de Washingtonia robusta, una especie mexicana emparentada pero distinta, que crece bastante más alta y más esbelta, porque de jóvenes las dos son difíciles de distinguir. Para cuando los jardineros se dieron cuenta de la mezcla, este ejemplar concreto ya había crecido lo suficiente como para que quitarlo dejara un hueco evidente, así que lo dejaron seguir en lugar de corregirlo. Décadas después, se levanta muy por encima de sus vecinas filifera, más bajas, a lo largo del paseo dedicado a la familia Peris de jardineros mayores, una silueta esbelta y singular que se ve desde bastante lejos dentro del parque y a la que aquí llaman sin más la más delgada del paseo. Los Jardines del Real empezaron siendo terrenos reales anejos a un palacio derribado a comienzos del siglo XIX y se reabrieron después como uno de los parques públicos principales de la ciudad, que es la razón de que sus hileras formales de palmeras sigan leyéndose como una avenida planificada y no como un bosquecillo casual, incluida esta esbelta excepción."
+  },
+  "vlc_008": {
+   "name": "La palmera de Vicente Peris",
+   "species": "Washingtonia mexicana (Washingtonia robusta)",
+   "age_estimate": "unos 100 años",
+   "access": "Gratuito, paseo público",
+   "transport": "10 minutos a pie desde la estación de metro de Alameda",
+   "story": "Esta palmera sobrevivió a estorbar dos veces, primero al tráfico y luego a una cuadrilla de derribo, gracias a que un jardinero mayor se negó a dejar que la cortaran sin más. Creció originalmente en el patio de un colegio de los Hermanos Maristas en la Plaza Mirasol, hasta comienzos de los años sesenta, cuando aquel edificio y otros cercanos se derribaron para ensanchar la estrecha calle de Les Granotes y convertirla en la actual calle Poeta Querol. Antes que perder el árbol, el jardinero mayor Vicente Peris pidió al alcalde Adolfo Rincón de Arellano que cortara al tráfico las calles de alrededor durante una sola noche, y la palmera se cargó en dos camiones y se trasladó al amparo de la oscuridad a su nueva casa, al principio de la Avenida de Aragón, junto a La Alameda, donde sigue hoy. El traslado está documentado con suficiente detalle, hasta el nombre del alcalde y lo de los dos camiones, como para leerse como historia local verificada y no como leyenda adornada, un caso raro en esta lista en el que la supervivencia de un árbol fue una decisión humana enteramente deliberada y no un accidente del abandono."
+  },
+  "vlc_009": {
+   "name": "El eucalipto de Benimàmet",
+   "species": "Eucalipto rojo (Eucalyptus camaldulensis)",
+   "age_estimate": "de 80 a 100 años",
+   "access": "Gratuito, parque público",
+   "transport": "Junto a la estación de Les Carolines (línea 4)",
+   "story": "Con algo más de 41 metros de altura, este eucalipto es el árbol más alto de la provincia de Valencia y el cuarto más alto registrado en toda la comunidad, una escala que confirman las propias brigadas municipales de mantenimiento, que necesitan plataformas elevadoras y, para las ramas más altas, ayuda de los bomberos solo para podarlo con seguridad. Crece en el Parc Lineal de Benimàmet, en el borde noroeste de la ciudad, junto a la línea de tranvía que después se soterró a su paso, y está inscrito tanto por el Ayuntamiento de Valencia como en el Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana, el registro autonómico que lo protege por ley. Eucalyptus camaldulensis, originario de Australia, se plantó por toda la España mediterránea desde comienzos del siglo XX por su crecimiento rápido y su tolerancia a los suelos pobres y secos, pero a pocos ejemplares de la región se les ha dejado llegar a este tamaño. Su tronco mide unos 6,1 metros de perímetro en la base, con una copa que se extiende 30 metros de ancho, dimensiones que lo hacen visible bastante más allá del parque en el que está."
+  },
+  "vlc_010": {
+   "name": "El ciprés de Cachemira del Jardí Botànic",
+   "species": "Ciprés de Cachemira (Cupressus cashmeriana)",
+   "age_estimate": "sin datar",
+   "access": "Entrada de pago al Jardí Botànic (económica)",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Este árbol pertenece a una especie que hoy sobrevive en buena medida porque ha sido útil a la ceremonia budista tanto como a la botánica. Cupressus cashmeriana es el árbol nacional de Bután, silvestre solo en el Himalaya oriental, entre unos 1.500 y 2.800 metros de altitud, y lleva mucho tiempo conservándose a propósito alrededor de templos y monasterios budistas mientras la pérdida de hábitat lo empujaba en otros sitios a las listas internacionales de conservación. La ciencia occidental no lo describió formalmente hasta 1848, cuando el botánico británico William Griffith lo encontró en Cachemira y lo nombró mal en un primer momento, antes de que John Forbes Royle corrigiera el nombre para reflejar la región donde se documentó por primera vez. El ejemplar de Valencia crece en el Jardí Botànic de la universidad, uno de los jardines botánicos más antiguos de España, en la calle Quart, cerca de la vieja muralla medieval, y su follaje de un verde azulado brillante destaca dentro de la colección de coníferas del jardín. No hay documentada ninguna edad ni fecha de plantación para este ejemplar, así que cualquier cifra que se dé es una estimación amplia y no un dato verificado, pero lo que lo hace digno de figurar aquí es la rareza de la especie, no su tamaño ni su edad."
+  },
+  "vlc_011": {
+   "name": "El ficus de la Plaza Centenar de la Ploma",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "de unos 150 a 190 años, sin fecha de plantación individual documentada",
+   "access": "Gratuito, plaza pública. La zona del tronco está vallada para proteger el alcorque, pero el árbol se ve entero y se puede llegar hasta él desde la plaza.",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà, en el Barrio del Carmen",
+   "story": "Aquí hay dos ficus gigantes, con las copas tan pegadas que se leen como una sola, y solo a uno se puede llegar andando. El de la plaza es este, y no es la mitad modesta. Mide 27,8 metros de altura, con una copa de 28 y un perímetro en la base de 15,6 metros, donde las raíces aéreas han bajado y se han fundido en troncos secundarios. Ficus macrophylla en su forma columnar hace justo eso: se fabrica patas de más hasta que la línea entre tronco y raíz se borra.\n\nLas medidas no acaban de coincidir. El observatorio municipal del arbolado anota 7,68 metros a la altura del pecho; el registro autonómico da 13,7, casi con seguridad tomados más abajo en la misma masa fundida. Las dos cifras son reales y ninguna está mal.\n\nSu gemelo está a treinta metros, dentro del patio amurallado del antiguo Palacio de Raga, hoy una residencia de mayores de la Generalitat. La memoria local lo tiene por el mayor de los dos, supuestamente un regalo del botánico Cavanilles a Francisco Martínez de la Raga, lo que lo pondría bastante por encima de los doscientos años. Ninguno tiene fecha de plantación documentada. Los dos pertenecen a la oleada de ficus australianos que Valencia plantó desde 1850, la misma moda que dio El Titán al otro lado de la ciudad.\n\nEstá vallado en la base para que no se pise el alcorque. Todo lo demás queda abierto a quien cruce la plaza."
+  },
+  "vlc_013": {
+   "name": "El ficus de las Alameditas de Serranos",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "sin datar; el jardín es de 1830, pero no sobrevive ningún registro de plantación para este árbol",
+   "access": "Gratuito, paseo ajardinado público junto al antiguo cauce del Turia, al pie de la puerta de las Torres de Serranos",
+   "transport": "15 minutos a pie desde la estación de metro de Alameda, o cualquier autobús con parada en Torres de Serranos / Puente de Serranos",
+   "story": "Este paseo fue terreno de curtidores antes que jardín. En 1830 el barón de Hervés trazó las Alameditas de Serranos como dos paseos arbolados a ambos lados de la puerta de Serranos, sobre un suelo que antes se usaba para curar pieles; las escaleras junto a la puerta llegaron en 1837. El ficus que crece allí es el más pequeño de los ficus monumentales registrados de Valencia, y no por poco: 6,2 metros de perímetro, frente a los 9,3 a 13,8 de los gigantes del Parterre, la Glorieta y el Palacio de Raga. Aun así es lo bastante grande como para que en 2022 el ayuntamiento mandara cuadrillas a recortarlo donde sus ramas se metían en el tráfico.\n\nNadie sabe cuándo se plantó. El jardín es de 1830, que es el único techo firme que hay, y no sobrevive ningún registro individual para este árbol, y por eso la horquilla de edad de aquí es tan ancha.\n\nHay además una contradicción que conviene decir en vez de limar. Al menos un estudio de las Alameditas afirma que el paseo no contiene nada de especial edad ni interés botánico más allá de una Acacia farnesiana. El catálogo autonómico, en cambio, lo recoge como árbol singular protegido, una figura legal de la ley valenciana del arbolado de 2006 que exige cumplir criterios concretos. El registro es la prueba más fuerte. El desacuerdo, aun así, es real.\n\nEstá al pie de las Torres de Serranos, la antigua puerta de la ciudad."
+  },
+  "vlc_014": {
+   "name": "El primer ficus de la Glorieta",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "sin datar para este ejemplar; los ficus de la Glorieta se plantaron entre las décadas de 1850 y 1860 y las fuentes dicen que cada uno tiene una edad estimada distinta",
+   "access": "Gratuito, jardín público junto al Palacio de Justicia",
+   "transport": "5 minutos a pie desde Xàtiva / Estació del Nord (metro y tren), la misma parada que El Titán",
+   "story": "En 1957 la riada del Turia estuvo cerca de dejar bajo el agua la copa de este árbol. La Glorieta queda baja, junto al Palacio de Justicia, y la inundación que cambió para siempre la relación de Valencia con su río subió aquí casi hasta sumergir los ficus gigantes del jardín. Los tres salieron adelante.\n\nTres es el número que importa. La Glorieta tiene tres Ficus macrophylla, catalogados uno a uno, y este es el primero del conjunto, con un tronco de 9,7 metros de perímetro. No son trillizos: las fuentes sobre el grupo dicen sin rodeos que cada uno de los tres tiene una edad estimada distinta, y ninguna le pone cifra a este. En lo que sí coinciden es en la época. La plantación es de las décadas de 1850 y 1860, cuando Valencia llenaba sus nuevos jardines públicos de ficus australianos, unas veces a propósito y otras no.\n\nA cincuenta y cinco metros, al otro lado de la calle, en el Parterre, está El Titán, plantado en 1852 porque un jardinero tomó un plantón de ficus por una de las 47 magnolias que debía plantar. El mismo error está registrado en este lado de la calzada, en la misma tanda de trabajo y por las mismas manos.\n\nAsí que no hay que tomarlo por una copia menor del árbol más famoso. Es la otra mitad de un paseo de un minuto: dos jardines de nombres distintos, un solo origen y cuatro ficus enormes."
+  },
+  "vlc_015": {
+   "name": "El olmo del Cáucaso del Jardí Botànic",
+   "species": "Olmo del Cáucaso (Zelkova carpinifolia)",
+   "age_estimate": "sin datar, no se ha encontrado registro de plantación",
+   "access": "Entrada de pago al Jardí Botànic (económica), el mismo jardín que el ciprés de Cachemira.",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Con unos 33 metros, es una de las cosas más altas del jardín botánico de Valencia, y pertenece a una especie de la que casi ningún visitante ha oído hablar. Zelkova carpinifolia viene de los bosques del Cáucaso meridional y del norte de Irán. Es un pariente del olmo que forma un tronco corto y se abre en un haz denso de ramas casi verticales, así que la copa se lee más como un manojo sujeto en alto que como una copa extendida.\n\nSu tronco mide 5,3 metros de perímetro a la altura del pecho. Esa es la cifra del registro autonómico, y una medición de campo independiente tomada en abril de 2014 dio 5,27 metros, que es más o menos lo cerca que llegan dos personas distintas con cinta métrica.\n\nSu edad no está registrada en ninguna parte. El jardín se trasladó en 1802 a este solar, el antiguo Huerto de Tramoieres, fuera de la muralla medieval, lo que fija un techo y nada más. Más allá de la ficha del registro y de esa medición, este árbol casi no tiene rastro en papel: ningún reportaje, ninguna monografía del jardín, ninguna nota de plantación. Para un árbol de este tamaño es raro, y vale más decirlo que rellenarlo con un número plausible.\n\nComparte jardín con el ciprés de Cachemira, y una sola entrada cubre los dos. En otoño toda la copa se vuelve pardo anaranjada, que es lo más conocido de la especie después de su forma."
+  },
+  "vlc_016": {
+   "name": "La palmera del Palacio de Pineda",
+   "species": "Palmera canaria (Phoenix canariensis)",
+   "age_estimate": "sin datar; el palacio se construyó entre 1728 y 1731, pero no se ha encontrado registro de cuándo se plantó la palmera",
+   "access": "Gratuito, entrada libre al patio, que funciona como terraza pública de cafetería (Palau Pineda Cafè i Menjars) dentro del edificio que alberga la sede en Valencia de la UIMP (Universidad Internacional Menéndez Pelayo). Se entra sin más durante el horario de la cafetería; no es una visita de monumento con entrada.",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Bajo esta se puede pedir un café. El Palacio de Pineda se construyó entre 1728 y 1731 para Francisco Salvador Pineda, y su patio trasero amurallado, trazado como jardín privado, funciona hoy como terraza de una cafetería dentro de un campus universitario público. En el centro se levanta una única palmera canaria, inscrita en el catálogo autonómico de árboles monumentales y singulares, con las mesas dispuestas alrededor de su base.\n\nQué edad tiene, nadie lo sabe. El palacio tiene fecha de construcción al año y la palmera no tiene nada. No apareció ningún registro de plantación en ninguna fuente, y la ficha del catálogo solo confirma que es lo bastante grande y notable como para estar protegida. Las palmeras son difíciles de datar en cualquier caso: no hay anillos de crecimiento que contar, y el tronco alcanza pronto casi su grosor definitivo y a partir de ahí sobre todo gana altura. Aquí es defendible cualquier cosa entre ochenta años y dos siglos y medio, que es una forma larga de decir que la cifra se desconoce.\n\nEl edificio alberga desde comienzos de los años noventa la sede en Valencia de la UIMP, una universidad pública española, y esa es la única razón de que el patio esté abierto. Durante los dos siglos y medio anteriores fue el jardín privado de alguien, y esta palmera estuvo en él con la puerta cerrada."
+  },
+  "vlc_017": {
+   "name": "El palo borracho del Jardí Botànic",
+   "species": "Palo borracho (Ceiba speciosa)",
+   "age_estimate": "",
+   "access": "Entrada de pago al Jardí Botànic (económica), el mismo jardín que el ciprés de Cachemira y el olmo del Cáucaso",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Abre uno de los frutos de este árbol y te queda un puñado de relleno de almohada. Las cápsulas verdes de Ceiba speciosa se parten para soltar una masa de borra blanca, ligera e hidrófuga, que se recogía para rellenar almohadas y colchones y para aislar del calor y del frío. Por eso en Valencia se conoce la especie como árbol de la lana, junto al nombre local más antiguo de choricia.\n\nTodo lo demás en él está hecho para que no lo toques. El tronco se hincha en forma de barril y vuelve a estrecharse arriba, la corteza es lisa, verdosa y finamente estriada porque hace la fotosíntesis, y la parte baja del tallo está sembrada de espinas cónicas y duras. La especie viene de los bosques estacionalmente secos de Sudamérica, pierde la hoja y crece rápido, que es como un árbol sin registro de plantación ha llegado a 5,03 metros de perímetro y 32,1 metros de altura. De los árboles que el registro autonómico mide en este jardín, solo el olmo del Cáucaso, a unos pasos, tiene un tronco más grueso.\n\nNadie lo ha datado. El registro toma sus medidas y para ahí, y quienes escriben sobre el jardín describen la especie sin dar un año para este ejemplar. Si sabes cuándo se plantó, dínoslo.\n\nEstá dentro del jardín botánico de la universidad, tras una entrada pequeña que cubre también el ciprés de Cachemira y el olmo del Cáucaso."
+  },
+  "vlc_018": {
+   "name": "El roble de Virginia del Jardí Botànic",
+   "species": "Roble de Virginia (Quercus virginiana)",
+   "age_estimate": "",
+   "access": "Entrada de pago al Jardí Botànic (económica), el mismo jardín que el ciprés de Cachemira y el olmo del Cáucaso",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Este roble conserva la hoja todo el invierno, y su madera valió en su día más para una armada que para un carpintero. Quercus virginiana crece por la costa sur de Estados Unidos, de Virginia a Texas, perennifolio y excepcionalmente denso, y los carpinteros de ribera lo buscaban para las cuadernas curvas de los buques de guerra de madera, porque las curvas naturales del tronco ya coincidían con la forma del casco. En su área de origen también da de comer: las bellotas se pueden prensar para sacar aceite y las raíces engordan en tubérculos comestibles.\n\nEl ejemplar de Valencia está cerca de la entrada del jardín botánico de la universidad, lo que lo convierte en uno de los primeros árboles que se pasan y en uno de los más fáciles de pasar de largo. El registro le da 3,69 metros de perímetro, 32,6 metros de altura y una copa de 20,1 metros de diámetro. Esa es una figura alta y erguida para una especie más conocida en Georgia y Luisiana por irse de lado, sacando ramas horizontales sobre una carretera hasta que tocan el suelo.\n\nSu edad no está registrada. El jardín ocupa este suelo desde 1802, el antiguo Huerto de Tramoieres, fuera de la muralla medieval, lo que fija un techo y nada más. Ni el registro ni quienes escriben sobre el jardín le ponen un año. Si conoces uno, dínoslo.\n\nLa entrada al jardín es de pago, una tarifa modesta que cubre toda la colección."
+  },
+  "vlc_019": {
+   "name": "El plátano del Jardí Botànic",
+   "species": "Plátano de sombra (Platanus x acerifolia)",
+   "age_estimate": "",
+   "access": "Entrada de pago al Jardí Botànic (económica), el mismo jardín que el ciprés de Cachemira y el olmo del Cáucaso",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Ningún árbol de este jardín echa una sombra mayor. El plátano que crece contra el muro occidental del jardín botánico extiende una copa de 26 metros de diámetro, más ancha que la de cualquier otro árbol que el registro autonómico mida aquí, sobre un tronco de 4,16 metros de perímetro y 31,4 metros de altura. En una ciudad que se pasa cinco meses al año buscando sombra, ese es todo el atractivo, y quienes escriben sobre el jardín lo destacan por dar la sombra más profunda de la colección.\n\nLos plátanos arrastran en las ciudades españolas fama de árbol alérgico, y esos mismos autores lo matizan en el caso de este árbol, y llaman exagerada la preocupación.\n\nPlatanus hispanica es un híbrido, plantado por toda Europa desde el siglo XVII precisamente porque hace esto: crecer rápido, aguantar el aire malo y el suelo compactado, soltar la corteza a placas y formar una copa pesada en pocas décadas. Que es también la razón de que nadie se molestara en anotar cuándo se plantó este. El registro lo mide y no da año, el catálogo del jardín nombra la especie y no la fecha, y el árbol no lo cuenta. Si existe un registro de plantación, nos gustaría verlo.\n\nEstá en el extremo occidental del jardín, pasado el palo borracho, y el paseo entre los dos lleva alrededor de un minuto."
+  },
+  "vlc_020": {
+   "name": "El pino de Creta del Jardí Botànic",
+   "species": "Pino turco (Pinus brutia)",
+   "age_estimate": "",
+   "access": "Entrada de pago al Jardí Botànic (económica), el mismo jardín que el ciprés de Cachemira y el olmo del Cáucaso",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Los apicultores conocen esta especie mejor que los jardineros. Pinus brutia atrae a abejas que producen una miel muy buscada, y su madera es fina como para muebles de lujo, un par de credenciales extraño para un árbol que está tranquilo en una colección universitaria.\n\nLo que lo mete en el registro monumental es el tronco. Sube 30,1 metros en recto, con 3,39 metros de perímetro en la base, sosteniendo una copa comparativamente estrecha, de 17,3 metros. La palabra que usan quienes escriben sobre el jardín es rectilíneo, y es la palabra justa. Los pinos mediterráneos viejos suelen inclinarse, ahorquillarse o aplanarse en sombrilla contra el viento. Este subió como un mástil y paró.\n\nLa especie viene de Creta, del oeste de Turquía y de las costas del Mediterráneo oriental, que es la razón de que los carteles en español lo llamen pino de Creta mientras el uso inglés se ha asentado en pino turco. Es pariente cercano del pino carrasco que crece silvestre por toda esta costa, y los separan la longitud de la acícula y la forma en que las piñas se asientan en la rama, algo que conviene saber si se intenta distinguirlos durante un paseo.\n\nNo hay ninguna edad registrada para él. El registro lleva medidas y ninguna fecha, y no ha aparecido en ningún otro sitio una nota de plantación para este árbol, así que cuánto tiempo lleva aquí es genuinamente desconocido. Si lo sabes, dínoslo."
+  },
+  "vlc_021": {
+   "name": "El roble de Hartwiss del Jardí Botànic",
+   "species": "Roble de Hartwiss (Quercus hartwissiana)",
+   "age_estimate": "",
+   "access": "Entrada de pago al Jardí Botànic (económica), el mismo jardín que el ciprés de Cachemira y el olmo del Cáucaso",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Casi nadie llegará a ver nunca este roble creciendo en ningún sitio, tampoco en los países de los que procede. Quercus hartwissiana tiene un área natural estrecha, alrededor del Mediterráneo oriental y de la costa del mar Negro hacia el oeste de Asia, y escasea en cultivo. El nombre honra a Nicolai von Hartwiss, el botánico ruso que trabajó sobre las plantas de aquella región en el siglo XIX.\n\nValencia tiene uno, y no es un ejemplar de compromiso. Mide 33,4 metros de altura sobre un tronco de 3,06 metros de perímetro, con una copa de algo menos de 22 metros de ancho. Eso es un pie delgado cargando mucha altura, la forma de un árbol que creció con vecinos cerca y no a campo abierto.\n\nVive en la Escola Botànica, la colección docente del centro del jardín de la universidad, donde los árboles se ordenan por familia botánica y no por su aspecto, y el catálogo del jardín lo recoge allí bajo el nombre valenciano de Roure d'Hartwiss. Para eso sirve una colección así: especies que no se pueden ver en ninguna otra parte, plantadas para el estudio y luego dejadas en paz el tiempo suficiente como para convertirse en algo por lo que merece la pena caminar.\n\nNadie lo ha datado. El registro lo mide, el catálogo lo nombra, y ninguno de los dos ofrece un año ni una nota de plantación. Si sabes cuándo se plantó este roble, dínoslo."
+  },
+  "vlc_022": {
+   "name": "El pino australiano del Jardí Botànic",
+   "species": "Casuarina (Casuarina cunninghamiana)",
+   "age_estimate": "",
+   "access": "Entrada de pago al Jardí Botànic (económica), el mismo jardín que el ciprés de Cachemira y el olmo del Cáucaso",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "El jardín archiva este árbol como pino australiano, y no es un pino. Casuarina cunninghamiana es un árbol con flor de los valles fluviales del este de Australia, cuyas hojas se han reducido a anillos de escamas diminutas a lo largo de unos ramillos verdes, largos y articulados. Desde diez metros se lee como una conífera llorona. De cerca no tiene ni una acícula, y nada más en este jardín se le parece.\n\nCon 33,6 metros es uno de los árboles más altos de aquí, sobre un tronco de 3,49 metros de perímetro que sostiene una copa estrecha, de 18,4 metros. En Australia la especie se planta para sujetar las orillas de los ríos, con unas raíces que fijan nitrógeno en suelos arenosos y pobres. Aquí está en la Escola Botànica, entre la colección docente, sin hacer nada más útil que ser grande y raro.\n\nUna salvedad, dicha sin rodeos. El registro de árboles monumentales de la Generalitat cartografía este tronco concreto con ficha, coordenadas y medidas propias. El catálogo del propio jardín confirma que la especie crece en esta colección, pero esa página describe la especie y no este árbol en particular, así que la segunda fuente corrobora qué es y no cuál de los troncos es. Sobre el terreno cuesta equivocarse, porque una Casuarina no se parece a nada de su alrededor. Preferimos decir esto antes que dar por hecha una confirmación que no tenemos.\n\nNo hay ninguna edad registrada para él en ninguna parte."
+  },
+  "vlc_023": {
+   "name": "El segundo ficus de la Glorieta",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "unos 170 años, si pertenece al grupo plantado en 1852",
+   "access": "Gratuito, jardín público junto al Palacio de Justicia, el mismo jardín que el primer ficus de la Glorieta",
+   "transport": "5 minutos a pie desde Xàtiva / Estació del Nord (metro y tren), la misma parada que el primer ficus de la Glorieta y El Titán",
+   "story": "El mayor tronco de la Glorieta mide 11,35 metros de perímetro, y pertenece a un árbol que quizá se plantó por error. Valencia metió cuatro ficus australianos en estos dos jardines contiguos en 1852, y lo que se cuenta aquí es que los plantones llegaron mezclados en una partida de magnolias y fueron al suelo antes de que nadie identificara qué eran. Este es el mayor de los tres de la Glorieta y el segundo de los cuatro en conjunto, detrás de El Titán, al otro lado de la calle, en el Parterre.\n\nSu copa es la más ancha de este jardín, 39,5 metros sobre un árbol de 27,5 metros de altura, es decir, un techo de hojas perennes y coriáceas que sigue oscuro a mediodía en agosto. Ficus macrophylla viene de los bosques costeros de Nueva Gales del Sur y Queensland y suelta raíces aéreas que se funden y engordan en contrafuertes, que es como se monta una cifra de tronco como 11,35 metros en menos de dos siglos.\n\nLa fecha de 1852 está documentada para el grupo de cuatro y no para este árbol en concreto, y otras versiones sostienen que los cuatro no tienen la misma edad, así que esos 170 años son la época y no el cumpleaños. Lo que no está en duda es lo que ha aguantado: la Guerra Civil y la riada del Turia de 1957, que en la Glorieta subió lo suficiente como para amenazar estas copas."
+  },
+  "vlc_024": {
+   "name": "El tercer ficus de la Glorieta",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "unos 170 años, si pertenece al grupo plantado en 1852",
+   "access": "Gratuito, jardín público junto al Palacio de Justicia, el mismo jardín que el primer ficus de la Glorieta",
+   "transport": "5 minutos a pie desde Xàtiva / Estació del Nord (metro y tren), la misma parada que el primer ficus de la Glorieta y El Titán",
+   "story": "El más pequeño de los cuatro grandes ficus de Valencia tiene un tronco que dos personas no abarcan. Es el tercer Ficus macrophylla de la Glorieta, 4,95 metros de perímetro y 18,1 metros de altura, con una copa de 27,8 metros, la mitad más ancha de lo que el árbol es alto. En casi cualquier ciudad ese sería el árbol que abre la página. Aquí es el miembro modesto de una familia que incluye un ejemplar con un tronco de 13,8 metros al otro lado de la calle.\n\nLos cuatro entraron juntos en 1852, en la plantación que dio al Parterre y a la Glorieta sus ficus australianos. Por qué este se quedó más pequeño no está escrito en ninguna parte, y es la clase de pregunta que respondería alguien con los planos antiguos del jardín en la mano: el espacio de raíz, el agua, el pavimento y el trazado de los desagües cambian dentro de un jardín que apenas mide cien metros.\n\nEsa fecha de 1852 es del grupo. Ninguna fuente data este árbol por separado, y las versiones que se han fijado en los cuatro dicen que no son todos de la misma edad, así que la cifra honesta aquí es una época y no un número.\n\nEstá en el extremo oriental de la Glorieta, el más alejado de los tres del Palacio de Justicia, y, a diferencia del botánico de la universidad, no cuesta nada llegar hasta él y ponerse debajo."
+  },
+  "vlc_025": {
+   "name": "El roble blanco mexicano del Jardí Botànic",
+   "species": "Roble blanco mexicano (Quercus polymorpha)",
+   "age_estimate": "",
+   "access": "Entrada de pago al Jardí Botànic (económica), el mismo jardín que el palo borracho y el roble de Virginia",
+   "transport": "10 minutos a pie desde la estación de metro de Àngel Guimerà",
+   "story": "Quercus polymorpha apenas cuenta como roble norteamericano. Su área recorre México, Guatemala y Honduras, y solo cruza a Estados Unidos una vez, en una única población silvestre a unos 30 kilómetros al norte del río Bravo, en Texas. En todos los demás sitios donde crece, crece a propósito: los jardineros lo aprecian porque conserva la hoja durante casi todo un invierno suave y porque se sacude un calor que dejaría pelado a un roble europeo.\n\nEl registro autonómico recoge el ejemplar de Valencia como Alzina de Mèxic del Botànic, con 3,44 metros de perímetro y una copa de 25,2 metros de diámetro, casi tan ancha como alto es el árbol, que mide 26,5. Es la copa la que hace aquí el trabajo: este es un roble de jardín hecho para dar sombra antes que altura, una copa ancha y plana sobre uno de los caminos del jardín botánico.\n\nNadie lo ha datado, y no ha aparecido una segunda fuente más allá del catálogo autonómico que confirme las medidas, aunque ese catálogo es del mismo organismo responsable de todos los árboles monumentales y singulares que registra la comunidad. Si sabes cuándo se plantó, o te has puesto debajo, dínoslo.\n\nCrece en el jardín botánico de la universidad, la misma colección de entrada de pago que el palo borracho y el roble de Virginia, ahí al lado."
+  }
+ }
+}

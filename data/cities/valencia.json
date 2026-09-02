@@ -1,813 +1,813 @@
 {
-  "city": "Valencia",
-  "country": "Spain",
-  "status": "needs_curation",
-  "intro": "Valencia protects more monumental and singular trees than any other region in Spain, over 2,400 across the Comunitat Valenciana under a 2006 law, and the city maps five routes past its own share of them. Several of its most-loved trees share an oddly specific origin story: 19th century gardeners meant to plant a magnolia and grabbed a fig sapling by mistake, or a species imported because it had just become fashionable on the French Riviera. What survives from those errors and fashions includes the widest tree canopy in the city, a 400-year-old olive, and the tallest tree in the province.",
-  "meta_description": "Valencia protects more monumental trees than any Spanish region. Meet El Titan, a 174-year-old fig planted by mistake, and a 400-year-old olive.",
-  "question_answer": "The oldest tree in Valencia is generally cited as the olive tree of Parque de la Rambleta, in the San Marcelino neighbourhood, estimated at around 400 years old and described by the city's own monumental trees route as the oldest specimen among all five of its walking trails.",
-  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and twenty-three more monumental trees across the city.",
-  "question_context": "Valencia is unusually well documented for this kind of question: the Comunitat Valenciana keeps a legal Catálogo de Árboles Monumentales y Singulares under a 2006 regional law, now covering more than 2,400 protected trees, and the city government separately publishes five named walking and cycling routes past its own monumental specimens, complete with individual profiles. Within that system, the olive of Parque de la Rambleta is the one most consistently named as the oldest, though as with most old olives, its 400-year figure comes from general estimate rather than a ring count or documented planting record. El Titan, the city's giant Ficus macrophylla in the Jardines del Parterre, is younger by comparison at 174 years but has a firmer, more specifically documented planting date, the tradeoff between the two runs through most of this list. The park sits in the San Marcelino neighbourhood on Pio IX street, next to the city's General Cemetery, a short bus ride south of the historic centre.",
-  "faq": [
-    {
-      "q": "What is the oldest tree in Valencia?",
-      "a": "The olive tree of Parque de la Rambleta, estimated at around 400 years old, in the San Marcelino neighbourhood next to Valencia's General Cemetery. It is named as the oldest specimen on the city's own monumental trees routes."
-    },
-    {
-      "q": "What is El Titan in Valencia?",
-      "a": "The nickname for the giant Moreton Bay fig in the Jardín del Parterre, planted by mistake in 1852 when gardeners confused the sapling with a magnolia. Its canopy now shades roughly 850 to 1,000 square metres, the widest of any tree in the city."
-    },
-    {
-      "q": "Are Valencia's monumental trees free to see?",
-      "a": "Fifteen of them are free: the Rambleta olive, El Titan and the rest of the Jardines del Parterre and Glorieta figs, and the other park and street trees all stand in open public ground. The other nine, including the Kashmir Cypress and Caucasian Elm, share the Jardi Botanic de la Universitat de Valencia, which charges a small entry fee, an ordinary botanical-garden ticket rather than anything specific to the trees."
-    },
-    {
-      "q": "How does Valencia protect its monumental trees?",
-      "a": "Through a 2006 regional law creating the Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana, now covering more than 2,400 trees, the most of any Spanish autonomous community, plus five city-mapped walking and cycling routes highlighting individual specimens."
-    }
-  ],
-  "trees": [
-    {
-      "id": "vlc_001",
-      "name": "El Titan, the Ficus of the Parterre",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "age_estimate": "174 years",
-      "age_min": 173,
-      "age_max": 175,
-      "location": {
-        "address": "Jardín del Parterre, 46003 Valencia",
-        "latitude": 39.4722,
-        "longitude": -0.3703,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "story": "Gardeners planted this fig by accident in 1852, confusing the young sapling for one of the 47 magnolias also going into the newly laid-out Parterre garden that year, the same year Valencia's first railway line opened. The mistake became the city's most celebrated tree. Its trunk now measures nearly 13 metres around, its canopy reaches almost 23 metres high with a spread beyond 35 metres, and the shade it casts covers something close to 1,000 square metres of ground, the widest canopy of any tree in Valencia. It has outlasted a windstorm in 1926 and the catastrophic flood of 1957 that reshaped the whole city's relationship with the Turia river, and in 1915 it became a study subject for Madrid's School of Agricultural Engineers, evidence of how early its scale was recognised as remarkable. For decades it also hosted Sunday sardana dancing and other Valencian cultural gatherings in its shade. A nearby petrol station, whose underground tanks threatened its root system, was finally dismantled in 2020 after years of pressure to protect the tree, valued by the city at some 380,000 euros.",
-      "verified_sources": [
-        "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
-        "https://www.valenciabonita.es/2018/01/15/la-sombra-de-cuatro-grandes-ficus-de-valencia-los-historicos-ficus-del-parterre-y-la-glorieta/"
-      ],
-      "access": "Free, public garden",
-      "transport": "5 min walk from Xativa / Estacio del Nord (metro/train)",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/El_Parterre%2C_Val%C3%A8ncia%2C_ficus.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Joanbanjo, via Wikimedia Commons",
-        "status": "approved",
-        "width": 4511,
-        "height": 3071
-      },
-      "curation_status": "flagged",
-      "notes": "Measurements (12.95m trunk perimeter, 22.70m height, 35m+ canopy) and the 2020 petrol station removal are corroborated across both sources; the 380,000 euro valuation figure comes from valenciabonita.es only. Photo viewed directly: shows a massive, spectacular ficus with huge buttress roots and a wide multi-trunk canopy in a paved plaza. Approved. Pin corrected ~400m via the Generalitat Valenciana's own Catálogo de Árboles Monumentales y Singulares (ArcGIS layer), which lists this exact tree by name, 'Ficus del Parterre' (IPA 512), with a 13.82m trunk measurement matching this entry's own figure almost exactly.",
-      "location_precision": "confirmed",
-      "girth_cm": 1382
-    },
-    {
-      "id": "vlc_002",
-      "name": "The Olive Tree of La Rambleta",
-      "species": "Olive (Olea europaea)",
-      "age_estimate": "approximately 400 years",
-      "age_min": 350,
-      "age_max": 450,
-      "location": {
-        "address": "Parque de la Rambleta, Calle Pio IX, 46017 Valencia",
-        "latitude": 39.4473,
-        "longitude": -0.3939,
-        "neighbourhood": "San Marcelino, Patraix"
-      },
-      "story": "This olive has stood through more than a dozen generations of Valencians without ever needing to move, unlike almost every other tree on this list, which the city has planted, transplanted or rescued from demolition at some point in its life. It grows in Parque de la Rambleta, a 14 hectare green space wedged between the San Marcelino neighbourhood and the General Cemetery in the south of the city, among a Mediterranean garden of date palms, Greek olives, cypresses, carob trees and a cedar of Lebanon. City sources place its age at roughly 400 years, without an individually documented planting record, which is typical for old olives generally: the species hollows and re-grows from its own base over centuries, making ring counts unreliable even where felling would be permitted. It is named directly, on the city's own monumental trees route, as the oldest single tree among all five of its mapped trails, a title that puts it ahead of trees standing in far more visited parts of the city.",
-      "verified_sources": [
-        "https://www.valenciabonita.es/2017/10/31/parque-de-la-rambleta/",
-        "https://www.visitvalencia.com/que-hacer-valencia/rutas-por-la-ciudad/ruta-arboles-monumentales"
-      ],
-      "access": "Free, public park",
-      "transport": "Bus lines 8, 89 to Parque de la Rambleta",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "The 400-year figure is a general estimate repeated across city sources rather than a documented planting record, typical for old olive trees; presented as an estimate rather than a precise age. Pin corrected ~1.1km via the regional Catálogo de Árboles Monumentales y Singulares: the only Olea europaea recorded anywhere in Valencia's official monumental-tree dataset, marked at 350-plus years (this entry's own low-end estimate), sits within a cluster of catalogued date palms and eucalyptus in this same San Marcelino/Patraix pocket, consistent with the park's own mixed planting.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          9,
-          10,
-          11
-        ],
-        "label": "September to November: the harvest, when the fruit turns from green to black",
-        "kind": "fruit"
-      },
-      "girth_cm": 400
-    },
-    {
-      "id": "vlc_003",
-      "name": "The Ginkgo of Jardín de Monforte",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "approximately 170 years",
-      "age_min": 165,
-      "age_max": 175,
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "November, when its fan-shaped leaves turn gold and drop within days"
-      },
-      "location": {
-        "address": "Jardín de Monforte, Calle Montolivet, 46003 Valencia",
-        "latitude": 39.47722,
-        "longitude": -0.365013,
-        "neighbourhood": "L'Eixample"
-      },
-      "story": "This ginkgo has survived every conflict Valencia has been through since the mid-19th century simply by belonging to a species built to survive almost anything. Ginkgo biloba is often described as a living fossil, its lineage traceable back some 250 million years, largely unchanged, and famous for its ability to resist fire, disease and pollution better than almost any other large tree. This particular specimen grows in the Jardín de Monforte, a roughly 12,000 square metre neoclassical garden the Marquis of San Juan built from an orchard he bought in 1849, filling it with marble statues, fountains and specimen trees over the following decades. Declared a National Artistic Garden in 1941, it remains the last 19th century historical-artistic garden intact in Valencia, and this ginkgo, planted not long after the garden's founding, is described by the city as the best known of its kind in Valencia. A second, younger female ginkgo grows nearby in the same garden.",
-      "verified_sources": [
-        "https://www.hoyvalencia.app/rincones-valencia/20240218/jardin-de-monforte-un-oasis-neoclasico-en-el-corazon-de-valencia/",
-        "https://jardins.valencia.es/es/blog/descubre-valencia-traves-de-cinco-rutas-de-arboles-monumentales"
-      ],
-      "access": "Free, public garden",
-      "transport": "10 min walk from Alameda metro station",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Ginkgo_del_jard%C3%AD_de_Monfort_de_Val%C3%A8ncia.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Joanbanjo, via Wikimedia Commons",
-        "status": "approved",
-        "width": 4608,
-        "height": 3072
-      },
-      "curation_status": "flagged",
-      "notes": "Age given as approximately 170 years by one source, tied to the garden's 1849 founding; no individually documented planting record for this specific tree beyond that estimate. Photo viewed directly: shows a large tree in golden autumn foliage with a garden statue visible in frame, consistent with Jardin de Monforte's neoclassical statuary garden. Approved. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 684, 'Ginkgo de Monfort'), the only Ginkgo biloba recorded citywide, moved about 900m to the catalogue's surveyed point.",
-      "location_precision": "confirmed",
-      "girth_cm": 375
-    },
-    {
-      "id": "vlc_004",
-      "name": "The Ficus of the Countess of Ripalda",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "age_estimate": "approximately 135 years",
-      "age_min": 134,
-      "age_max": 136,
-      "location": {
-        "address": "Plaza Legion Espanola, 46010 Valencia",
-        "latitude": 39.477101,
-        "longitude": -0.365975,
-        "neighbourhood": "Exposicio, El Pla del Real"
-      },
-      "story": "A garden fashion imported from the French Riviera is the reason this tree exists at all. In 1891, the widowed Countess of Ripalda hired Valencia's head gardener, Fernando Llopis, to lay out the grounds of her new palace, and Llopis suggested a Moreton Bay fig after seeing the species become fashionable among wealthy families on the Cote d'Azur, a garden idea Valencian gardeners of the period regularly borrowed from that stretch of coast given its similar climate. The palace itself did not survive the 20th century, demolished in 1968, and when the demolition crew asked how to remove the tree along with it, head gardener Vicente Peris told them that severe pruning alone would be enough to kill it. He was wrong in the way that mattered: rather than dying, the fig grew stronger, and it now stands alone at the entrance to Plaza Legion Espanola, the sole surviving trace of a palace and garden otherwise erased from the site entirely.",
-      "verified_sources": [
-        "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
-        "http://www.callejeandoporvalencia.com/2018/03/el-ficus-de-la-condesa-de-ripalda.html",
-        "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/151"
-      ],
-      "access": "Free, public square",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "1891 planting date and the 1968 demolition/survival story are corroborated across both sources. Location and neighbourhood corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.2km from the actual plaza (same latitude, wrong longitude, suggesting an old data-entry slip). Nominatim places Plaza de la Legion Espanola at 39.4779, -0.3658/-0.3660, three independent hits agreeing within 100m; a further web search independently confirms the plaza sits in the Exposicio neighbourhood of El Pla del Real district, not Extramurs as previously stated. Fixed both fields. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (CC BY 4.0) carries exactly one Ficus macrophylla registered at 'Legion Espanola Pl' (idarbol 99100614/2), matching this entry's species and its own 'stands alone' framing; four other Ficus macrophylla in the same neighbourhood are all in the separate Alameda gardens, not this plaza, so no ambiguity. Moved from a plaza-level Nominatim geocode to the tree's own individually registered point.",
-      "location_precision": "confirmed",
-      "girth_cm": 1376
-    },
-    {
-      "id": "vlc_005",
-      "name": "The Holm Oak of Avenida de Aragon",
-      "species": "Holm Oak (Quercus ilex)",
-      "age_estimate": "undated, called centuries-old",
-      "age_min": 100,
-      "age_max": 200,
-      "location": {
-        "address": "Avenida de Aragon, near Avenida Blasco Ibanez, 46021 Valencia",
-        "latitude": 39.4762,
-        "longitude": -0.3628,
-        "neighbourhood": "Algiros"
-      },
-      "story": "This oak is the last physical trace of an orchard that vanished under the city growing around it. It once stood on the medieval Camino del Cabanyal, irrigated by the historic Mestalla and Algiros channels that watered Valencia's huerta, the market-garden belt that surrounded the walled city for centuries. Urbanisation swallowed the area from 1902, when the arrival of the railway brought streets and buildings to what had been open orchard, and the tree found itself progressively boxed in: it stood within the grounds of the old Aragon Central railway station until that structure disappeared in 1974, then inside Public Works Ministry land until 1982, when the area around it was finally redeveloped into the landscaped avenue setting it keeps today. It now grows on a traffic island between Avenida de Aragon and Avenida Blasco Ibanez, next to the Mestalla stadium's parking area, a centuries-old survivor of a landscape that otherwise no longer exists anywhere nearby.",
-      "verified_sources": [
-        "https://callejeandoporvalencia.blogspot.com/2021/11/la-encina-de-la-avenida-de-aragon.html",
-        "https://valenciaplaza.com/siete-arboles-historicos-de-valencia"
-      ],
-      "access": "Free, public traffic island / street planting",
-      "transport": "5 min walk from Aragon metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "The land-use history (1902 urbanisation, 1974 station removal, 1982 redevelopment) is documented by one source; a separate account attributes the tree's specific preservation to a 1980s councilwoman physically blocking excavators, a detail only found in one source, so it is not stated as confirmed fact in the story.",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "vlc_006",
-      "name": "Los Tres Amigos",
-      "species": "Canary Island Date Palm (Phoenix canariensis)",
-      "age_estimate": "approximately 100 years",
-      "age_min": 90,
-      "age_max": 110,
-      "location": {
-        "address": "Calle Albacete, near Plaza de Espana, 46007 Valencia",
-        "latitude": 39.465489,
-        "longitude": -0.382362,
-        "neighbourhood": "Extramurs"
-      },
-      "story": "Three palms standing together at the entrance to a single street have become a landmark specific enough to have lent their nickname to nearby shops and a bar. Los Tres Amigos are believed to be the last visible trace of a private estate garden that once stood in this part of Valencia, before the neighbourhood around Plaza de Espana was fully urbanised in the early 20th century, leaving the three Phoenix canariensis specimens standing where a garden wall or gate might once have framed them. Palms of this species can live well over a century, and these are estimated at around a hundred years old, though no individual planting record survives to confirm an exact date. In January 2015 the local Abastos-Finca Roja neighbourhood association formally adopted the trio as a protected ensemble, a grassroots gesture of the kind more often given to a single monumental specimen than to a street corner planting. They remain, in the association's own words, a gateway to the street they mark.",
-      "verified_sources": [
-        "https://valenciablancoynegro.blogspot.com/2020/09/los-tres-amigos.html",
-        "https://www.elperiodicodeaqui.com/epda-noticias/las-tres-palmeras-de-la-calle-albacete-de-valencia-son-apadrinadas-por-la-asociacion-de-vecinos-abastos-finca-roja/79598",
-        "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/151"
-      ],
-      "access": "Free, public street planting",
-      "transport": "5 min walk from Angel Guimera metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Species corrected during research: an initial source described these as Washingtonia palms, but a second, more specific source identifies them as Phoenix canariensis, which is the species used here. No individual planting date documented; age is an estimate. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (arbolado viario, CC BY 4.0, geoportal.valencia.es) carries exactly three Phoenix canariensis registered on Calle Albacete in the Arrancapins neighbourhood, matching this entry's own description of three named palms in that exact spot. Averaged the three registered points (idarbol 1140/188, 1140/189, 1140/190) for the group's coordinate. Previous pin was roughly 640m off, an old geocode-only estimate.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "vlc_007",
-      "name": "La Mas Delgada del Paseo",
-      "species": "Mexican Fan Palm (Washingtonia robusta)",
-      "age_estimate": "early 20th century planting",
-      "age_min": 100,
-      "age_max": 125,
-      "location": {
-        "address": "Jardines del Real (Viveros), Calle San Pio V, 46010 Valencia",
-        "latitude": 39.4791,
-        "longitude": -0.3708,
-        "neighbourhood": "Pla del Real"
-      },
-      "story": "A gardener's mistake left this palm standing taller and thinner than every other one around it. When Jardines del Real, also known as Viveros, was planted with rows of Washingtonia filifera palms in the early 20th century, young Washingtonia robusta saplings, a related but distinct Mexican species that grows noticeably taller and more slender, were mixed in by error, the two species being difficult to tell apart while young. By the time gardeners realised the mix-up, this particular tree had already grown tall enough that removing it would have left an obvious gap, so it was left to keep growing rather than corrected. Decades later, it now rises well above its shorter filifera neighbours along the path dedicated to the Peris family of head gardeners, a slender, singular silhouette visible from some distance across the park, and locally nicknamed simply the thinnest one on the promenade. Jardines del Real itself began as royal grounds attached to a palace demolished in the early 19th century, later reopened as one of the city's main public parks, which is why its formal rows of palms still read as a planned avenue rather than an accidental grove, this one slender exception included.",
-      "verified_sources": [
-        "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
-        "https://www.spottedbylocals.com/valencia/arbres-monumentals/"
-      ],
-      "access": "Free, public garden",
-      "transport": "10 min walk from Alameda metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "No individual planting date documented beyond 'early 20th century'; the species-confusion origin story is corroborated across both sources, though the second only summarises it as the nickname 'Skinny Rebel'.",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "vlc_008",
-      "name": "The Palm of Vicente Peris",
-      "species": "Mexican Fan Palm (Washingtonia robusta)",
-      "age_estimate": "approximately 100 years",
-      "age_min": 90,
-      "age_max": 110,
-      "location": {
-        "address": "La Alameda, beginning of Avenida de Aragon, 46010 Valencia",
-        "latitude": 39.469482,
-        "longitude": -0.360702,
-        "neighbourhood": "Pla del Real"
-      },
-      "story": "This palm survived being in the way twice, first of traffic and then of a demolition crew, thanks to one head gardener's refusal to let it simply be cut down. It originally grew in the courtyard of a Marist Brothers school at Plaza Mirasol, until the early 1960s, when that building and others nearby were demolished to widen what had been the narrow street of Les Granotes into today's Calle Poeta Querol. Rather than lose the tree, head gardener Vicente Peris asked mayor Adolfo Rincon de Arellano to close the surrounding streets to traffic for a single night, and the palm was loaded onto two trucks and moved under cover of darkness to a new home at the start of Avenida de Aragon, beside La Alameda, where it still stands today. The relocation is documented specifically enough, down to the mayor's name and the two-truck detail, that it reads as verified local history rather than embellished legend, a rare case on this list of a tree's survival being an entirely deliberate human choice rather than an accident of neglect.",
-      "verified_sources": [
-        "https://valenciablancoynegro.blogspot.com/2019/10/la-palmera-de-vicente-peris.html",
-        "https://valenciaplaza.com/siete-arboles-historicos-de-valencia"
-      ],
-      "access": "Free, public promenade",
-      "transport": "10 min walk from Alameda metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "The relocation story (Plaza Mirasol origin, early 1960s move, mayor's approval, two trucks) is corroborated across both sources with only minor variation in the gardener's recorded surname. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 673), which names this exact tree 'La Palmera de Vicente Peris', an exact match to this entry's own name; moved about 525m to the catalogue's surveyed point.",
-      "location_precision": "confirmed",
-      "girth_cm": 130
-    },
-    {
-      "id": "vlc_009",
-      "name": "The Eucalyptus of Benimamet",
-      "species": "River Red Gum (Eucalyptus camaldulensis)",
-      "age_estimate": "80-100 years",
-      "age_min": 80,
-      "age_max": 100,
-      "location": {
-        "address": "Parc Lineal, near Les Carolines metro station, Benimamet, 46017 Valencia",
-        "latitude": 39.500018,
-        "longitude": -0.423515,
-        "neighbourhood": "Benimamet"
-      },
-      "story": "At just over 41 metres tall, this eucalyptus is the tallest tree in the province of Valencia and the fourth tallest recorded anywhere in the wider region, a scale confirmed by the city's own maintenance crews, who need aerial platforms and, for its highest branches, help from the fire service just to prune it safely. It grows in the Parc Lineal in Benimamet, on the northwestern edge of the city, next to the tram line that was later routed underground past it, and is formally listed both by the Valencia city council and in the Comunitat Valenciana's own Catálogo de Árboles Monumentales y Singulares, the regional register that protects it by law. Eucalyptus camaldulensis, native to Australia, was planted widely across Mediterranean Spain from the early 20th century onward for its fast growth and tolerance of poor, dry soil, but few specimens anywhere in the region have been left to grow as large as this one. Its trunk runs some 6.1 metres around at the base, with a crown spreading 30 metres wide, dimensions that make it visible well beyond the park it stands in.",
-      "verified_sources": [
-        "https://www.valencia.es/cas/actualidad/-/content/eucalipto-benim%C3%A0met",
-        "https://mediambient.gva.es/es/web/cief/cataleg-d-arbres-monumentals-i-singulars"
-      ],
-      "access": "Free, public park",
-      "transport": "Adjacent to Les Carolines metro station (Line 4)",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Measurements (41.20m height, 6.1m trunk diameter, 30m crown) and the 80-100 year age come from the city's own official announcement; the regional catalogue source confirms its protected status but is a general registry page rather than an entry specific to this tree. Pin corrected ~790m by querying that same regional catalogue directly (ArcGIS layer): it lists this exact tree by name, 'Eucalipto de Benimámet' (IPA 2375), with a 41.2m height matching this entry's own figure exactly. Tightened by about 50m on 2026-07-30 via an independently bulk-imported OpenStreetMap node carrying the same register reference (reg_ref 2375, name 'Eucaliptus de Benimàmet', 41.2m height), which gives a more precise coordinate than the earlier rounded transcription.",
-      "location_precision": "confirmed",
-      "girth_cm": 597
-    },
-    {
-      "id": "vlc_010",
-      "name": "The Kashmir Cypress of the Botanical Garden",
-      "species": "Kashmir Cypress (Cupressus cashmeriana)",
-      "age_estimate": "undated",
-      "age_min": 50,
-      "age_max": 100,
-      "location": {
-        "address": "Jardi Botanic de la Universitat de Valencia, Calle Quart 80, 46008 Valencia",
-        "latitude": 39.4762,
-        "longitude": -0.3839,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "story": "This tree belongs to a species that survives today largely because it has been useful to Buddhist ceremony as much as to botany. Cupressus cashmeriana is the national tree of Bhutan, found wild only in the eastern Himalayas between roughly 1,500 and 2,800 metres of altitude, and it has long been deliberately preserved around Buddhist temples and monasteries even as habitat loss elsewhere pushed it onto international conservation watch lists. Western science only formally described it in 1848, when British botanist William Griffith encountered it in Kashmir and initially misnamed it, before John Forbes Royle corrected the naming to reflect the region where it was first documented. Valencia's specimen grows in the university's Jardí Botanic, one of the oldest botanical gardens in Spain, on Calle Quart near the city's old medieval walls, its foliage a distinctive bright blue-green among the garden's wider conifer collection. No individual age or planting date is documented for this specimen, so any figure given is a broad estimate rather than a verified record, but the species' own rarity, not its size or age, is what makes it worth including here.",
-      "verified_sources": [
-        "https://cultural.valencia.es/en/ruta/monumental-and-unique-trees/",
-        "https://es.wikipedia.org/wiki/Cupressus_pendula"
-      ],
-      "access": "Paid entry to the Jardí Botanic (small fee)",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "No individual age or planting record documented; included for species rarity per the city's own official monumental trees route rather than for size or age. Location given as the university's Jardí Botanic since the route's own 'Culture Park (former hospital)' description could not be reconciled precisely with a single confirmed address during this run.",
-      "location_precision": "approximate",
-      "paid_entry": true
-    },
-    {
-      "id": "vlc_011",
-      "name": "The Ficus of Plaza Centenar de la Ploma",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "age_estimate": "roughly 150 to 190 years, undocumented individual planting date",
-      "age_min": 150,
-      "age_max": 190,
-      "location": {
-        "address": "Plaza Centenar de la Ploma, 46001 Valencia",
-        "latitude": 39.47814,
-        "longitude": -0.37945,
-        "neighbourhood": "El Carmen, Ciutat Vella"
-      },
-      "story": "There are two giant figs here, their canopies touching so closely they read as one crown, and only one of them lets you walk up to it. The one in the plaza is this one, and it is not the modest half. It stands 27.8 metres tall with a canopy 28 metres across and a base circumference of 15.6 metres, where aerial roots have come down and fused into secondary trunks. Ficus macrophylla in its columnar form does this, building extra legs for itself until the line between trunk and root stops being obvious.\n\nThe measurements do not fully agree. Valencia's municipal tree observatory records 7.68 metres around at chest height; the regional monumental-tree register lists 13.7 metres, almost certainly taken lower on the same fused mass. Both figures are real and neither is wrong.\n\nIts twin stands thirty metres away, inside the walled courtyard of the former Palacio de Raga, now a Generalitat residence for the elderly. Local memory holds that one to be the older of the pair, supposedly a gift from the botanist Cavanilles to Francisco Martinez de la Raga, which would put it well past two hundred years. No planting date is documented for either. Both belong to the wave of Australian figs Valencia planted from the 1850s, the same fashion that produced El Titan across town.\n\nThe plaza tree is fenced at the base to keep feet off the root plate. Everything above that is open to anyone crossing the square.",
-      "verified_sources": [
-        "https://valenciablancoynegro.blogspot.com/2023/02/dos-ficus-en-el-centro-del-barrio-del.html",
-        "data/registers/valencia-arboles-monumentales.json (Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana, official register, CC BY 4.0)"
-      ],
-      "access": "Free, public plaza. The trunk area is fenced to protect the root plate, but the tree is fully visible and approachable from the plaza.",
-      "transport": "10 min walk from Angel Guimera metro station, in the Barrio del Carmen",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "girth_cm": 1370
-    },
-    {
-      "id": "vlc_013",
-      "name": "The Ficus of the Alameditas de Serranos",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "age_estimate": "undated; garden itself dates to 1830 but no individual planting record for this tree survives",
-      "age_min": 60,
-      "age_max": 195,
-      "location": {
-        "address": "Alameditas de Serranos, next to the Torres de Serranos, 46003 Valencia",
-        "latitude": 39.47944,
-        "longitude": -0.37552,
-        "neighbourhood": "El Carmen, Ciutat Vella"
-      },
-      "story": "This promenade was a leather-tanning ground before it was a garden. In 1830 the Baron de Herves laid out the Alameditas de Serranos as two tree-lined walks flanking the Serranos gate, on ground previously used for curing hides, and the staircases either side of the gate followed in 1837. The fig that grows there now is the smallest of Valencia's registered monumental figs, and not by a little: 6.2 metres around, against the 9.3 to 13.8 metres of the giants in the Parterre, the Glorieta and the Palacio de Raga. It is still large enough that the city had to send crews in 2022 to cut it back where its branches had grown into the traffic.\n\nNobody knows when it went in. The garden dates from 1830, which is the only firm ceiling anyone has, and no individual record for this tree survives, which is why the age range given here is as wide as it is.\n\nThere is also a contradiction worth stating rather than smoothing over. At least one survey of the Alameditas says the promenade holds nothing of particular age or botanical interest beyond an Acacia farnesiana. The regional catalogue, meanwhile, lists this fig as a protected singular tree, a legal designation under the Valencian tree law of 2006 that requires meeting specific criteria. The register is the stronger evidence. The disagreement is real all the same.\n\nIt stands at the foot of the Torres de Serranos, the old city gate.",
-      "verified_sources": [
-        "https://agroicultura.com/general/las-alameditas-de-serranos/",
-        "data/registers/valencia-arboles-monumentales.json (girth 6.2m, listed as a protected singular tree under the regional catalogue)"
-      ],
-      "access": "Free, public riverside garden promenade beside the old Turia riverbed, at the foot of the Torres de Serranos gate",
-      "transport": "15 min walk from Alameda metro station, or any bus serving the Torres de Serranos / Puente de Serranos stop",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "girth_cm": 620
-    },
-    {
-      "id": "vlc_014",
-      "name": "The First Ficus of the Glorieta",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "age_estimate": "undated for this specific specimen; the Glorieta's ficus were planted across the 1850s-60s and sources say each has a different estimated age",
-      "age_min": 100,
-      "age_max": 175,
-      "location": {
-        "address": "Jardin de la Glorieta, next to the Palacio de Justicia, 46002 Valencia",
-        "latitude": 39.47242,
-        "longitude": -0.36974,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "story": "In 1957 the Turia flood came close to putting this tree's crown under water. The Glorieta sits low beside the Palace of Justice, and the flood that permanently changed Valencia's relationship with its river ran deep enough here that the garden's giant figs were nearly submerged. All three of them came through it.\n\nThree is the number that matters. The Glorieta holds three Ficus macrophylla, catalogued individually, and this is the first of the set, with a trunk 9.7 metres around. They are not triplets: sources on the group state plainly that each of the three carries a different estimated age, and none of them assigns a figure to this one. What is agreed is the era. The planting belongs to the 1850s and 1860s, when Valencia was filling its new public gardens with Australian figs, sometimes on purpose and sometimes not.\n\nFifty-five metres away, across the street in the Parterre, stands El Titan, which went into the ground in 1852 because a gardener took a fig sapling for one of the 47 magnolias he was supposed to be planting. The same error is recorded on this side of the road, in the same batch of work, by the same hands.\n\nSo do not treat this as a lesser copy of the more famous tree. It is the other half of a walk that takes about a minute: two separately named gardens, one origin story, and four enormous figs between them.",
-      "verified_sources": [
-        "https://valenciasecreta.com/ficus-glorieta-parterre/",
-        "https://www.valenciabonita.es/2018/01/15/la-sombra-de-cuatro-grandes-ficus-de-valencia-los-historicos-ficus-del-parterre-y-la-glorieta/",
-        "data/registers/valencia-arboles-monumentales.json (girth 9.7m)"
-      ],
-      "access": "Free, public garden bordering the Palace of Justice",
-      "transport": "5 min walk from Xativa / Estacio del Nord (metro/train), same stop as El Titan",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "girth_cm": 968
-    },
-    {
-      "id": "vlc_015",
-      "name": "The Caucasian Elm of the Botanic Garden",
-      "species": "Caucasian Elm (Zelkova carpinifolia)",
-      "age_estimate": "undated, no planting record found",
-      "age_min": 80,
-      "age_max": 150,
-      "location": {
-        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
-        "latitude": 39.47592,
-        "longitude": -0.38621,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "story": "At roughly 33 metres, this is one of the tallest things growing in Valencia's botanic garden, and it belongs to a species most visitors have never heard of. Zelkova carpinifolia comes from the forests of the southern Caucasus and northern Iran. It is an elm relative that grows a short trunk and then breaks into a dense sheaf of near-vertical branches, so the crown reads more like a bundle held upright than a spreading canopy.\n\nIts trunk measures 5.3 metres around at chest height. That is the figure in the regional register, and an independent field measurement taken in April 2014 put it at 5.27 metres, which is about as close as two separate people with tape measures ever get.\n\nIts age is not recorded anywhere. The garden moved to this site, the old Huerto de Tramoieres outside the medieval wall, in 1802, which sets a ceiling and nothing more. Beyond the register entry and that one measurement, this tree has almost no paper trail: no newspaper feature, no garden monograph, no planting note. For a tree this size that is unusual, and it is better said out loud than filled in with a plausible number.\n\nIt shares the garden with the Kashmir Cypress, and one modest entrance fee covers both. In autumn the whole crown turns orange-brown, which is the species' best-known feature after its shape.",
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (girth 5.3m, listed as a protected singular tree)",
-        "https://www.monumentaltrees.com/es/esp/comunidadvalenciana/valencia/8809_jardinbotanicodelauniversidaddevalencia/17363/ (measurement cross-check only, per project rules never used as sole or primary source: independently recorded girth 5.27m at 1.30m height and height 33.10m, dated April 2014, an almost exact match to the register figure)"
-      ],
-      "access": "Paid entry to the Jardi Botanic (small fee), the same garden as the Kashmir Cypress.",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: the whole crown turns orange-brown, the tree's best-known moment after its shape",
-        "kind": "autumn colour"
-      },
-      "paid_entry": true,
-      "girth_cm": 535
-    },
-    {
-      "id": "vlc_016",
-      "name": "The Palm of the Palacio de Pineda",
-      "species": "Canary Island Date Palm (Phoenix canariensis)",
-      "age_estimate": "undated; palace itself built 1728-1731 but no record found of when the palm was planted",
-      "age_min": 80,
-      "age_max": 250,
-      "location": {
-        "address": "Palacio de Pineda, Plaza del Carmen, 46003 Valencia",
-        "latitude": 39.47876,
-        "longitude": -0.37888,
-        "neighbourhood": "El Carmen, Ciutat Vella"
-      },
-      "story": "You can order a coffee under this one. The Palacio de Pineda was built between 1728 and 1731 for Francisco Salvador Pineda, and its walled rear courtyard, laid out as a private garden, now works as the terrace of a cafe inside a public university campus. A single Canary Island Date Palm stands at the centre of it, listed in the regional catalogue of monumental and singular trees, with tables arranged around its base.\n\nHow old it is, nobody knows. The palace has a construction date to the year and the palm has nothing at all. No planting record turned up in any source, and the catalogue entry confirms only that it is large enough and notable enough to be protected. Palms are difficult to age in any case: there are no growth rings to count, and the trunk reaches close to its final thickness early and then mostly just gets taller. Anything from eighty years to two and a half centuries is defensible here, which is a long way of saying the number is unknown.\n\nThe building has housed the Valencia seat of the UIMP, a Spanish public university, since the early 1990s, and that is the only reason the courtyard is open at all. For the two and a half centuries before that it was somebody's private garden, and this palm was standing in it while the door stayed shut.",
-      "verified_sources": [
-        "https://www.valencia-cityguide.com/es/atracciones-turisticas/monumentos/palacio-de-pineda.html",
-        "https://www.monumentalnet.org/monumento.php?r=V-250001400-VAL-PAL-PIN&seo=palacio-de-pineda-valencia-valencia-comunidad-valenciana",
-        "data/registers/valencia-arboles-monumentales.json (listed as part of the regional Catalogo de Arboles Monumentales y Singulares)"
-      ],
-      "access": "Free entry to the courtyard, which now operates as a public cafe terrace (Palau Pineda Cafe i Menjars) inside the building that houses the UIMP (Universidad Internacional Menendez Pelayo) Valencia campus. Publicly walk-in accessible during cafe hours, not a ticketed monument visit.",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "vlc_017",
-      "name": "The Bottle Tree of the Botanic Garden",
-      "species": "Silk Floss Tree (Ceiba speciosa)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 503,
-      "height_m": 32.1,
-      "crown_m": 25.3,
-      "location": {
-        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
-        "latitude": 39.476241,
-        "longitude": -0.386276,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (register_id 1143, girth 5.03m, height 32.1m, crown 25.3m)",
-        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
-      ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "story": "Break open one of this tree's seed pods and you get a handful of pillow stuffing. The green capsules of Ceiba speciosa split to release a mass of white floss, light and water repellent, which was collected to stuff pillows and mattresses and to insulate against heat and cold. That is why Valencia knows the species as the arbol de la lana, the wool tree, alongside the older local name choricia.\n\nEverything else about it is built to stop you touching it. The trunk swells into a barrel and narrows again above, the bark is smooth, greenish and finely striated because it photosynthesises, and the lower stem is studded with hard conical thorns. The species comes from the seasonally dry forests of South America, drops its leaves and grows fast, which is how a tree with no planting record has reached 5.03 metres around and 32.1 metres tall. Of the trees the regional register measures in this garden, only the Caucasian Elm a short walk away carries a thicker trunk.\n\nNobody has dated it. The register takes its measurements and stops, and the garden's own writers describe the species without giving this specimen a year. If you know when it went in, tell us.\n\nIt stands inside the university's botanic garden, behind a small entrance fee that also covers the Kashmir Cypress and the Caucasian Elm.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "vlc_018",
-      "name": "The Virginia Oak of the Botanic Garden",
-      "species": "Southern Live Oak (Quercus virginiana)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 369,
-      "height_m": 32.6,
-      "crown_m": 20.1,
-      "location": {
-        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
-        "latitude": 39.476084,
-        "longitude": -0.386538,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (register_id 1145, girth 3.69m, height 32.6m, crown 20.1m)",
-        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
-      ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "story": "This oak keeps its leaves through winter, and its timber was once worth more to a navy than to a carpenter. Quercus virginiana grows along the American south coast from Virginia to Texas, evergreen and exceptionally dense, and shipwrights sought it out for the curved frames of wooden warships because the natural bends of the wood already matched the shape of a hull. In its own range it feeds people as well. The acorns can be pressed for oil, and the roots swell into edible tubers.\n\nValencia's specimen stands near the entrance of the university's botanic garden, which makes it one of the first trees you pass and one of the easiest to walk straight past. The register gives it a girth of 3.69 metres, a height of 32.6 metres and a crown 20.1 metres across. That is a tall, upright figure for a species better known in Georgia and Louisiana for going sideways, throwing horizontal limbs out over a road until they touch the ground.\n\nIts age is not recorded. The garden has stood on this ground since 1802, the old Huerto de Tramoieres outside the medieval wall, which sets a ceiling and nothing more. Neither the register nor the garden's own writers put a year on this tree. If you know one, tell us.\n\nEntry to the garden is paid, a modest fee that covers the whole collection.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "vlc_019",
-      "name": "The Plane Tree of the Botanic Garden",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 416,
-      "height_m": 31.4,
-      "crown_m": 26.0,
-      "location": {
-        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
-        "latitude": 39.476282,
-        "longitude": -0.387309,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (register_id 1151, girth 4.16m, height 31.4m, crown 26.0m)",
-        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
-      ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "story": "No tree in this garden throws a bigger shadow. The plane standing against the botanic garden's western wall spreads a crown 26 metres across, wider than any other tree the regional register measures here, over a trunk 4.16 metres around and 31.4 metres of height. In a city that spends five months of the year hunting for shade, that is the entire appeal, and the garden's own writers single it out for casting the deepest shade in the collection.\n\nPlanes carry a reputation in Spanish cities as an allergy tree, and the same writers push back on it in this tree's case, calling the worry overstated.\n\nPlatanus hispanica is a hybrid, planted across Europe since the seventeenth century precisely because it does this: grow fast, tolerate bad air and compacted ground, shed its bark in plates and produce a heavy canopy within a few decades. Which is also why nobody bothered to write down when this one was planted. The register measures it and gives no year, the garden's catalogue names the species and not the date, and the tree itself is not telling. If a planting record exists, we would like to see it.\n\nIt sits at the far western side of the garden, past the Silk Floss Tree, and the walk between the two takes about a minute.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "vlc_020",
-      "name": "The Cretan Pine of the Botanic Garden",
-      "species": "Turkish Pine (Pinus brutia)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 339,
-      "height_m": 30.1,
-      "crown_m": 17.3,
-      "location": {
-        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
-        "latitude": 39.475756,
-        "longitude": -0.386771,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (register_id 1140, girth 3.39m, height 30.1m, crown 17.3m)",
-        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
-      ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "story": "Beekeepers know this species better than gardeners do. Pinus brutia draws bees that produce a honey people actively seek out, and its timber is fine enough for luxury furniture, which is a strange pair of credentials for a tree standing quietly in a university collection.\n\nWhat gets it onto the monumental register is the trunk. It runs 30.1 metres straight up, 3.39 metres around at the base, carrying a comparatively narrow crown of 17.3 metres. The word the garden's own writers use is rectilinear, and it is the right one. Old Mediterranean pines usually lean, fork or flatten themselves into an umbrella against the wind. This one went up like a mast and stopped.\n\nThe species comes from Crete, western Turkey and the coasts of the eastern Mediterranean, which is why Spanish signage calls it the pino de Creta while English usage has settled on Turkish Pine. It is a close relative of the Aleppo Pine growing wild all along this coastline, and the two are separated by needle length and by the way the cones sit on the branch, which is worth knowing if you are trying to tell them apart on a walk.\n\nNo age is recorded for it. The register carries measurements and no dates, and no planting note for this tree has surfaced anywhere else, so how long it has been standing here is genuinely unknown. If you know, tell us.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "vlc_021",
-      "name": "The Hartwiss Oak of the Botanic Garden",
-      "species": "Hartwiss Oak (Quercus hartwissiana)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 306,
-      "height_m": 33.4,
-      "crown_m": 21.8,
-      "location": {
-        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
-        "latitude": 39.475743,
-        "longitude": -0.387004,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (register_id 1142, girth 3.06m, height 33.4m, crown 21.8m)",
-        "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_val&pid=2296"
-      ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "story": "Most people will never see this oak growing anywhere, including in the countries it comes from. Quercus hartwissiana has a narrow natural range around the eastern Mediterranean and the Black Sea coast into western Asia, and it is scarce in cultivation. The name honours Nicolai von Hartwiss, the Russian botanist who worked on the plants of that region in the nineteenth century.\n\nValencia has one, and it is not a token specimen. It stands 33.4 metres tall on a trunk 3.06 metres around, with a crown just under 22 metres wide. That is a slim stem carrying a lot of height, the shape of a tree that grew up with close neighbours rather than out in the open.\n\nIt lives in the Escola Botanica, the teaching collection at the centre of the university's garden, where trees are arranged by botanical family rather than by how they look, and the garden's own catalogue lists it there under the Valencian name Roure d'Hartwiss. That is what a collection like this is for: species you cannot see anywhere else, planted for study and then left alone long enough to turn into something worth walking to.\n\nNobody has dated it. The register measures it, the catalogue names it, and neither offers a year or a planting note. If you know when this oak went in, tell us.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "vlc_022",
-      "name": "The Australian Pine of the Botanic Garden",
-      "species": "River She-oak (Casuarina cunninghamiana)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 349,
-      "height_m": 33.6,
-      "crown_m": 18.4,
-      "location": {
-        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
-        "latitude": 39.475754,
-        "longitude": -0.387096,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (register_id 1141, girth 3.49m, height 33.6m, crown 18.4m)",
-        "https://jardibotanic.org/?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=465"
-      ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "The garden files this tree under pino australiano, and it is not a pine. Casuarina cunninghamiana is a flowering tree from the river valleys of eastern Australia whose leaves have shrunk to rings of tiny scales along long green jointed branchlets. From ten metres away it reads as a drooping conifer. Up close there is not a needle on it, and nothing else in this garden resembles it.\n\nAt 33.6 metres it is one of the tallest trees here, on a trunk 3.49 metres round carrying a narrow crown of 18.4 metres. In Australia the species is planted to hold riverbanks together, its roots fixing nitrogen in poor sandy soil. Here it stands in the Escola Botanica among the teaching collection, doing nothing more useful than being large and strange.\n\nOne caveat, stated plainly. The Generalitat's monumental tree register maps this individual trunk with its own entry, coordinates and measurements. The garden's own catalogue confirms that the species grows in this collection, but that page describes the species rather than this particular tree, so the second source corroborates what it is and not which trunk it is. On the ground it is hard to mistake, because a Casuarina looks like nothing around it. We would rather say this than imply a confirmation we do not have.\n\nNo age is recorded for it anywhere.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "vlc_023",
-      "name": "The Second Ficus of the Glorieta",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "age_estimate": "roughly 170 years, if it belongs to the group planted in 1852",
-      "age_min": 150,
-      "age_max": 180,
-      "girth_cm": 1135,
-      "height_m": 27.5,
-      "crown_m": 39.5,
-      "location": {
-        "address": "Jardin de la Glorieta, next to the Palacio de Justicia, 46002 Valencia",
-        "latitude": 39.472326,
-        "longitude": -0.369301,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (register_id 682, girth 11.35m, height 27.5m, crown 39.5m)",
-        "https://valenciasecreta.com/ficus-glorieta-parterre/"
-      ],
-      "access": "Free, public garden bordering the Palace of Justice, same garden as the First Ficus of the Glorieta",
-      "transport": "5 min walk from Xativa / Estacio del Nord (metro/train), same stop as vlc_014 and vlc_001",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "The biggest trunk in the Glorieta measures 11.35 metres around, and it belongs to a tree that may have been planted by mistake. Valencia put four Australian figs into these two adjoining gardens in 1852, and the account told about them locally is that the saplings arrived mixed into a delivery of magnolias and went into the ground before anyone identified what they were. This is the largest of the three standing in the Glorieta, and the second largest of the four overall, after El Titan across the road in the Parterre.\n\nIts crown is the widest in this garden, 39.5 metres of canopy over a tree 27.5 metres high, which in practice means a ceiling of leathery evergreen leaves that stays dark at midday in August. Ficus macrophylla comes from the coastal forests of New South Wales and Queensland and drops aerial roots that fuse and thicken into buttresses, which is how a trunk figure like 11.35 metres gets assembled in under two centuries.\n\nThe 1852 date is documented for the group of four rather than for this tree individually, and other accounts hold that the four are not all the same age, so read roughly 170 years as the era and not the birthday. What is not in question is what it has stood through: the Civil War, and the 1957 Turia flood, which rose in the Glorieta far enough to threaten these crowns.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "vlc_024",
-      "name": "The Third Ficus of the Glorieta",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "age_estimate": "roughly 170 years, if it belongs to the group planted in 1852",
-      "age_min": 150,
-      "age_max": 180,
-      "girth_cm": 495,
-      "height_m": 18.1,
-      "crown_m": 27.8,
-      "location": {
-        "address": "Jardin de la Glorieta, next to the Palacio de Justicia, 46002 Valencia",
-        "latitude": 39.472184,
-        "longitude": -0.369016,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (register_id 683, girth 4.95m, height 18.1m, crown 27.8m)",
-        "https://valenciasecreta.com/ficus-glorieta-parterre/"
-      ],
-      "access": "Free, public garden bordering the Palace of Justice, same garden as the First Ficus of the Glorieta",
-      "transport": "5 min walk from Xativa / Estacio del Nord (metro/train), same stop as vlc_014 and vlc_001",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "The smallest of Valencia's four great figs still has a trunk two people cannot reach around. This is the third Ficus macrophylla of the Glorieta, 4.95 metres in girth and 18.1 metres tall, with a crown spreading 27.8 metres, half as wide again as the tree is high. In most cities that is the headline tree on the page. Here it is the modest member of a family that includes a specimen with a 13.8-metre trunk on the other side of the road.\n\nAll four went in together in 1852, in the planting that gave the Parterre and the Glorieta their Australian figs. Why this one stayed smaller is not written down anywhere, and it is the sort of question somebody holding the garden's old plans could probably answer: root space, water, paving and where the drains run all differ across a garden barely a hundred metres across.\n\nThat 1852 date belongs to the group. No source dates this tree on its own, and accounts that have looked at the four say they are not all of an age, so the honest figure here is an era rather than a number.\n\nIt stands at the eastern end of the Glorieta, the furthest of the three from the Palace of Justice, and unlike the university's botanic garden across town it costs nothing to walk up to and stand under.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "vlc_025",
-      "name": "The Mexican White Oak of the Botanic Garden",
-      "species": "Mexican White Oak (Quercus polymorpha)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 344,
-      "height_m": 26.5,
-      "crown_m": 25.2,
-      "location": {
-        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
-        "latitude": 39.476414,
-        "longitude": -0.38677,
-        "neighbourhood": "Ciutat Vella"
-      },
-      "story": "Quercus polymorpha barely counts as a North American oak. Its range runs through Mexico, Guatemala and Honduras, and it crosses into the United States only once, in a single wild stand roughly 30 kilometres north of the Rio Grande in Texas. Everywhere else it grows, it grows on purpose: gardeners prize it for holding its leaves through most of a mild winter and for shrugging off heat that would strip a European oak bare.\n\nThe regional register lists Valencia's specimen as the Alzina de Mexic del Botanic, girth 3.44 metres and a crown 25.2 metres across, nearly as wide as the tree is tall at 26.5 metres. That crown is doing the work here: this is a garden oak built for shade rather than height, a wide flat canopy over one of the botanic garden's paths.\n\nNobody has dated it, and no second source beyond the regional catalogue has turned up to confirm the measurements, though that catalogue is the same body responsible for every monumental and singular tree the region records. If you know when it was planted, or have stood under it, tell us.\n\nIt grows in the university's botanic garden, the same paid-entry collection as the Silk Floss Tree and the Virginia Oak nearby.",
-      "verified_sources": [
-        "data/registers/valencia-arboles-monumentales.json (register_id 1150, girth 3.44m, height 26.5m, crown 25.2m)"
-      ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Silk Floss Tree and the Virginia Oak",
-      "transport": "10 min walk from Angel Guimera metro station",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true,
-      "notes": "Single-sourced: only the Comunitat Valenciana's register of monumental and singular trees (id 1150) carries this specimen; espores.org's own ten-tree feature on this garden, which corroborates several neighbours, does not include it."
-    }
-  ]
+ "city": "Valencia",
+ "country": "Spain",
+ "status": "needs_curation",
+ "intro": "Valencia protects more monumental and singular trees than any other region in Spain, over 2,400 across the Comunitat Valenciana under a 2006 law, and the city maps five routes past its own share of them. Several of its most-loved trees share an oddly specific origin story: 19th century gardeners meant to plant a magnolia and grabbed a fig sapling by mistake, or a species imported because it had just become fashionable on the French Riviera. What survives from those errors and fashions includes the widest tree canopy in the city, a 400-year-old olive, and the tallest tree in the province.",
+ "meta_description": "Valencia protects more monumental trees than any Spanish region. Meet El Titan, a 174-year-old fig planted by mistake, and a 400-year-old olive.",
+ "question_answer": "The oldest tree in Valencia is generally cited as the olive tree of Parque de la Rambleta, in the San Marcelino neighbourhood, estimated at around 400 years old and described by the city's own monumental trees route as the oldest specimen among all five of its walking trails.",
+ "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and twenty-three more monumental trees across the city.",
+ "question_context": "Valencia is unusually well documented for this kind of question: the Comunitat Valenciana keeps a legal Catálogo de Árboles Monumentales y Singulares under a 2006 regional law, now covering more than 2,400 protected trees, and the city government separately publishes five named walking and cycling routes past its own monumental specimens, complete with individual profiles. Within that system, the olive of Parque de la Rambleta is the one most consistently named as the oldest, though as with most old olives, its 400-year figure comes from general estimate rather than a ring count or documented planting record. El Titan, the city's giant Ficus macrophylla in the Jardines del Parterre, is younger by comparison at 174 years but has a firmer, more specifically documented planting date, the tradeoff between the two runs through most of this list. The park sits in the San Marcelino neighbourhood on Pio IX street, next to the city's General Cemetery, a short bus ride south of the historic centre.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Valencia?",
+   "a": "The olive tree of Parque de la Rambleta, estimated at around 400 years old, in the San Marcelino neighbourhood next to Valencia's General Cemetery. It is named as the oldest specimen on the city's own monumental trees routes."
+  },
+  {
+   "q": "What is El Titan in Valencia?",
+   "a": "The nickname for the giant Moreton Bay fig in the Jardín del Parterre, planted by mistake in 1852 when gardeners confused the sapling with a magnolia. Its canopy now shades roughly 850 to 1,000 square metres, the widest of any tree in the city."
+  },
+  {
+   "q": "Are Valencia's monumental trees free to see?",
+   "a": "Fifteen of them are free: the Rambleta olive, El Titan and the rest of the Jardines del Parterre and Glorieta figs, and the other park and street trees all stand in open public ground. The other nine, including the Kashmir Cypress and Caucasian Elm, share the Jardi Botanic de la Universitat de Valencia, which charges a small entry fee, an ordinary botanical-garden ticket rather than anything specific to the trees."
+  },
+  {
+   "q": "How does Valencia protect its monumental trees?",
+   "a": "Through a 2006 regional law creating the Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana, now covering more than 2,400 trees, the most of any Spanish autonomous community, plus five city-mapped walking and cycling routes highlighting individual specimens."
+  }
+ ],
+ "trees": [
+  {
+   "id": "vlc_001",
+   "name": "El Titan, the Ficus of the Parterre",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "174 years",
+   "age_min": 173,
+   "age_max": 175,
+   "location": {
+    "address": "Jardín del Parterre, 46003 Valencia",
+    "latitude": 39.4722,
+    "longitude": -0.3703,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "story": "Gardeners planted this fig by accident in 1852, confusing the young sapling for one of the 47 magnolias also going into the newly laid-out Parterre garden that year, the same year Valencia's first railway line opened. The mistake became the city's most celebrated tree. Its trunk now measures nearly 13 metres around, its canopy reaches almost 23 metres high with a spread beyond 35 metres, and the shade it casts covers something close to 1,000 square metres of ground, the widest canopy of any tree in Valencia. It has outlasted a windstorm in 1926 and the catastrophic flood of 1957 that reshaped the whole city's relationship with the Turia river, and in 1915 it became a study subject for Madrid's School of Agricultural Engineers, evidence of how early its scale was recognised as remarkable. For decades it also hosted Sunday sardana dancing and other Valencian cultural gatherings in its shade. A nearby petrol station, whose underground tanks threatened its root system, was finally dismantled in 2020 after years of pressure to protect the tree, valued by the city at some 380,000 euros.",
+   "verified_sources": [
+    "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
+    "https://www.valenciabonita.es/2018/01/15/la-sombra-de-cuatro-grandes-ficus-de-valencia-los-historicos-ficus-del-parterre-y-la-glorieta/"
+   ],
+   "access": "Free, public garden",
+   "transport": "5 min walk from Xativa / Estacio del Nord (metro/train)",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/El_Parterre%2C_Val%C3%A8ncia%2C_ficus.JPG",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Joanbanjo, via Wikimedia Commons",
+    "status": "approved",
+    "width": 4511,
+    "height": 3071
+   },
+   "curation_status": "flagged",
+   "notes": "Measurements (12.95m trunk perimeter, 22.70m height, 35m+ canopy) and the 2020 petrol station removal are corroborated across both sources; the 380,000 euro valuation figure comes from valenciabonita.es only. Photo viewed directly: shows a massive, spectacular ficus with huge buttress roots and a wide multi-trunk canopy in a paved plaza. Approved. Pin corrected ~400m via the Generalitat Valenciana's own Catálogo de Árboles Monumentales y Singulares (ArcGIS layer), which lists this exact tree by name, 'Ficus del Parterre' (IPA 512), with a 13.82m trunk measurement matching this entry's own figure almost exactly.",
+   "location_precision": "confirmed",
+   "girth_cm": 1382
+  },
+  {
+   "id": "vlc_002",
+   "name": "The Olive Tree of La Rambleta",
+   "species": "Olive (Olea europaea)",
+   "age_estimate": "approximately 400 years",
+   "age_min": 350,
+   "age_max": 450,
+   "location": {
+    "address": "Parque de la Rambleta, Calle Pio IX, 46017 Valencia",
+    "latitude": 39.4473,
+    "longitude": -0.3939,
+    "neighbourhood": "San Marcelino, Patraix"
+   },
+   "story": "This olive has stood through more than a dozen generations of Valencians without ever needing to move, unlike almost every other tree on this list, which the city has planted, transplanted or rescued from demolition at some point in its life. It grows in Parque de la Rambleta, a 14 hectare green space wedged between the San Marcelino neighbourhood and the General Cemetery in the south of the city, among a Mediterranean garden of date palms, Greek olives, cypresses, carob trees and a cedar of Lebanon. City sources place its age at roughly 400 years, without an individually documented planting record, which is typical for old olives generally: the species hollows and re-grows from its own base over centuries, making ring counts unreliable even where felling would be permitted. It is named directly, on the city's own monumental trees route, as the oldest single tree among all five of its mapped trails, a title that puts it ahead of trees standing in far more visited parts of the city.",
+   "verified_sources": [
+    "https://www.valenciabonita.es/2017/10/31/parque-de-la-rambleta/",
+    "https://www.visitvalencia.com/que-hacer-valencia/rutas-por-la-ciudad/ruta-arboles-monumentales"
+   ],
+   "access": "Free, public park",
+   "transport": "Bus lines 8, 89 to Parque de la Rambleta",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "The 400-year figure is a general estimate repeated across city sources rather than a documented planting record, typical for old olive trees; presented as an estimate rather than a precise age. Pin corrected ~1.1km via the regional Catálogo de Árboles Monumentales y Singulares: the only Olea europaea recorded anywhere in Valencia's official monumental-tree dataset, marked at 350-plus years (this entry's own low-end estimate), sits within a cluster of catalogued date palms and eucalyptus in this same San Marcelino/Patraix pocket, consistent with the park's own mixed planting.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10,
+     11
+    ],
+    "label": "September to November: the harvest, when the fruit turns from green to black",
+    "kind": "fruit"
+   },
+   "girth_cm": 400
+  },
+  {
+   "id": "vlc_003",
+   "name": "The Ginkgo of Jardín de Monforte",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "approximately 170 years",
+   "age_min": 165,
+   "age_max": 175,
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "November, when its fan-shaped leaves turn gold and drop within days"
+   },
+   "location": {
+    "address": "Jardín de Monforte, Calle Montolivet, 46003 Valencia",
+    "latitude": 39.47722,
+    "longitude": -0.365013,
+    "neighbourhood": "L'Eixample"
+   },
+   "story": "This ginkgo has survived every conflict Valencia has been through since the mid-19th century simply by belonging to a species built to survive almost anything. Ginkgo biloba is often described as a living fossil, its lineage traceable back some 250 million years, largely unchanged, and famous for its ability to resist fire, disease and pollution better than almost any other large tree. This particular specimen grows in the Jardín de Monforte, a roughly 12,000 square metre neoclassical garden the Marquis of San Juan built from an orchard he bought in 1849, filling it with marble statues, fountains and specimen trees over the following decades. Declared a National Artistic Garden in 1941, it remains the last 19th century historical-artistic garden intact in Valencia, and this ginkgo, planted not long after the garden's founding, is described by the city as the best known of its kind in Valencia. A second, younger female ginkgo grows nearby in the same garden.",
+   "verified_sources": [
+    "https://www.hoyvalencia.app/rincones-valencia/20240218/jardin-de-monforte-un-oasis-neoclasico-en-el-corazon-de-valencia/",
+    "https://jardins.valencia.es/es/blog/descubre-valencia-traves-de-cinco-rutas-de-arboles-monumentales"
+   ],
+   "access": "Free, public garden",
+   "transport": "10 min walk from Alameda metro station",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Ginkgo_del_jard%C3%AD_de_Monfort_de_Val%C3%A8ncia.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Joanbanjo, via Wikimedia Commons",
+    "status": "approved",
+    "width": 4608,
+    "height": 3072
+   },
+   "curation_status": "flagged",
+   "notes": "Age given as approximately 170 years by one source, tied to the garden's 1849 founding; no individually documented planting record for this specific tree beyond that estimate. Photo viewed directly: shows a large tree in golden autumn foliage with a garden statue visible in frame, consistent with Jardin de Monforte's neoclassical statuary garden. Approved. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 684, 'Ginkgo de Monfort'), the only Ginkgo biloba recorded citywide, moved about 900m to the catalogue's surveyed point.",
+   "location_precision": "confirmed",
+   "girth_cm": 375
+  },
+  {
+   "id": "vlc_004",
+   "name": "The Ficus of the Countess of Ripalda",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "approximately 135 years",
+   "age_min": 134,
+   "age_max": 136,
+   "location": {
+    "address": "Plaza Legion Espanola, 46010 Valencia",
+    "latitude": 39.477101,
+    "longitude": -0.365975,
+    "neighbourhood": "Exposicio, El Pla del Real"
+   },
+   "story": "A garden fashion imported from the French Riviera is the reason this tree exists at all. In 1891, the widowed Countess of Ripalda hired Valencia's head gardener, Fernando Llopis, to lay out the grounds of her new palace, and Llopis suggested a Moreton Bay fig after seeing the species become fashionable among wealthy families on the Cote d'Azur, a garden idea Valencian gardeners of the period regularly borrowed from that stretch of coast given its similar climate. The palace itself did not survive the 20th century, demolished in 1968, and when the demolition crew asked how to remove the tree along with it, head gardener Vicente Peris told them that severe pruning alone would be enough to kill it. He was wrong in the way that mattered: rather than dying, the fig grew stronger, and it now stands alone at the entrance to Plaza Legion Espanola, the sole surviving trace of a palace and garden otherwise erased from the site entirely.",
+   "verified_sources": [
+    "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
+    "http://www.callejeandoporvalencia.com/2018/03/el-ficus-de-la-condesa-de-ripalda.html",
+    "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/151"
+   ],
+   "access": "Free, public square",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "1891 planting date and the 1968 demolition/survival story are corroborated across both sources. Location and neighbourhood corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.2km from the actual plaza (same latitude, wrong longitude, suggesting an old data-entry slip). Nominatim places Plaza de la Legion Espanola at 39.4779, -0.3658/-0.3660, three independent hits agreeing within 100m; a further web search independently confirms the plaza sits in the Exposicio neighbourhood of El Pla del Real district, not Extramurs as previously stated. Fixed both fields. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (CC BY 4.0) carries exactly one Ficus macrophylla registered at 'Legion Espanola Pl' (idarbol 99100614/2), matching this entry's species and its own 'stands alone' framing; four other Ficus macrophylla in the same neighbourhood are all in the separate Alameda gardens, not this plaza, so no ambiguity. Moved from a plaza-level Nominatim geocode to the tree's own individually registered point.",
+   "location_precision": "confirmed",
+   "girth_cm": 1376
+  },
+  {
+   "id": "vlc_005",
+   "name": "The Holm Oak of Avenida de Aragon",
+   "species": "Holm Oak (Quercus ilex)",
+   "age_estimate": "undated, called centuries-old",
+   "age_min": 100,
+   "age_max": 200,
+   "location": {
+    "address": "Avenida de Aragon, near Avenida Blasco Ibanez, 46021 Valencia",
+    "latitude": 39.4762,
+    "longitude": -0.3628,
+    "neighbourhood": "Algiros"
+   },
+   "story": "This oak is the last physical trace of an orchard that vanished under the city growing around it. It once stood on the medieval Camino del Cabanyal, irrigated by the historic Mestalla and Algiros channels that watered Valencia's huerta, the market-garden belt that surrounded the walled city for centuries. Urbanisation swallowed the area from 1902, when the arrival of the railway brought streets and buildings to what had been open orchard, and the tree found itself progressively boxed in: it stood within the grounds of the old Aragon Central railway station until that structure disappeared in 1974, then inside Public Works Ministry land until 1982, when the area around it was finally redeveloped into the landscaped avenue setting it keeps today. It now grows on a traffic island between Avenida de Aragon and Avenida Blasco Ibanez, next to the Mestalla stadium's parking area, a centuries-old survivor of a landscape that otherwise no longer exists anywhere nearby.",
+   "verified_sources": [
+    "https://callejeandoporvalencia.blogspot.com/2021/11/la-encina-de-la-avenida-de-aragon.html",
+    "https://valenciaplaza.com/siete-arboles-historicos-de-valencia"
+   ],
+   "access": "Free, public traffic island / street planting",
+   "transport": "5 min walk from Aragon metro station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "The land-use history (1902 urbanisation, 1974 station removal, 1982 redevelopment) is documented by one source; a separate account attributes the tree's specific preservation to a 1980s councilwoman physically blocking excavators, a detail only found in one source, so it is not stated as confirmed fact in the story.",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "vlc_006",
+   "name": "Los Tres Amigos",
+   "species": "Canary Island Date Palm (Phoenix canariensis)",
+   "age_estimate": "approximately 100 years",
+   "age_min": 90,
+   "age_max": 110,
+   "location": {
+    "address": "Calle Albacete, near Plaza de Espana, 46007 Valencia",
+    "latitude": 39.465489,
+    "longitude": -0.382362,
+    "neighbourhood": "Extramurs"
+   },
+   "story": "Three palms standing together at the entrance to a single street have become a landmark specific enough to have lent their nickname to nearby shops and a bar. Los Tres Amigos are believed to be the last visible trace of a private estate garden that once stood in this part of Valencia, before the neighbourhood around Plaza de Espana was fully urbanised in the early 20th century, leaving the three Phoenix canariensis specimens standing where a garden wall or gate might once have framed them. Palms of this species can live well over a century, and these are estimated at around a hundred years old, though no individual planting record survives to confirm an exact date. In January 2015 the local Abastos-Finca Roja neighbourhood association formally adopted the trio as a protected ensemble, a grassroots gesture of the kind more often given to a single monumental specimen than to a street corner planting. They remain, in the association's own words, a gateway to the street they mark.",
+   "verified_sources": [
+    "https://valenciablancoynegro.blogspot.com/2020/09/los-tres-amigos.html",
+    "https://www.elperiodicodeaqui.com/epda-noticias/las-tres-palmeras-de-la-calle-albacete-de-valencia-son-apadrinadas-por-la-asociacion-de-vecinos-abastos-finca-roja/79598",
+    "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/151"
+   ],
+   "access": "Free, public street planting",
+   "transport": "5 min walk from Angel Guimera metro station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Species corrected during research: an initial source described these as Washingtonia palms, but a second, more specific source identifies them as Phoenix canariensis, which is the species used here. No individual planting date documented; age is an estimate. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (arbolado viario, CC BY 4.0, geoportal.valencia.es) carries exactly three Phoenix canariensis registered on Calle Albacete in the Arrancapins neighbourhood, matching this entry's own description of three named palms in that exact spot. Averaged the three registered points (idarbol 1140/188, 1140/189, 1140/190) for the group's coordinate. Previous pin was roughly 640m off, an old geocode-only estimate.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "vlc_007",
+   "name": "La Mas Delgada del Paseo",
+   "species": "Mexican Fan Palm (Washingtonia robusta)",
+   "age_estimate": "early 20th century planting",
+   "age_min": 100,
+   "age_max": 125,
+   "location": {
+    "address": "Jardines del Real (Viveros), Calle San Pio V, 46010 Valencia",
+    "latitude": 39.4791,
+    "longitude": -0.3708,
+    "neighbourhood": "Pla del Real"
+   },
+   "story": "A gardener's mistake left this palm standing taller and thinner than every other one around it. When Jardines del Real, also known as Viveros, was planted with rows of Washingtonia filifera palms in the early 20th century, young Washingtonia robusta saplings, a related but distinct Mexican species that grows noticeably taller and more slender, were mixed in by error, the two species being difficult to tell apart while young. By the time gardeners realised the mix-up, this particular tree had already grown tall enough that removing it would have left an obvious gap, so it was left to keep growing rather than corrected. Decades later, it now rises well above its shorter filifera neighbours along the path dedicated to the Peris family of head gardeners, a slender, singular silhouette visible from some distance across the park, and locally nicknamed simply the thinnest one on the promenade. Jardines del Real itself began as royal grounds attached to a palace demolished in the early 19th century, later reopened as one of the city's main public parks, which is why its formal rows of palms still read as a planned avenue rather than an accidental grove, this one slender exception included.",
+   "verified_sources": [
+    "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
+    "https://www.spottedbylocals.com/valencia/arbres-monumentals/"
+   ],
+   "access": "Free, public garden",
+   "transport": "10 min walk from Alameda metro station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "No individual planting date documented beyond 'early 20th century'; the species-confusion origin story is corroborated across both sources, though the second only summarises it as the nickname 'Skinny Rebel'.",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "vlc_008",
+   "name": "The Palm of Vicente Peris",
+   "species": "Mexican Fan Palm (Washingtonia robusta)",
+   "age_estimate": "approximately 100 years",
+   "age_min": 90,
+   "age_max": 110,
+   "location": {
+    "address": "La Alameda, beginning of Avenida de Aragon, 46010 Valencia",
+    "latitude": 39.469482,
+    "longitude": -0.360702,
+    "neighbourhood": "Pla del Real"
+   },
+   "story": "This palm survived being in the way twice, first of traffic and then of a demolition crew, thanks to one head gardener's refusal to let it simply be cut down. It originally grew in the courtyard of a Marist Brothers school at Plaza Mirasol, until the early 1960s, when that building and others nearby were demolished to widen what had been the narrow street of Les Granotes into today's Calle Poeta Querol. Rather than lose the tree, head gardener Vicente Peris asked mayor Adolfo Rincon de Arellano to close the surrounding streets to traffic for a single night, and the palm was loaded onto two trucks and moved under cover of darkness to a new home at the start of Avenida de Aragon, beside La Alameda, where it still stands today. The relocation is documented specifically enough, down to the mayor's name and the two-truck detail, that it reads as verified local history rather than embellished legend, a rare case on this list of a tree's survival being an entirely deliberate human choice rather than an accident of neglect.",
+   "verified_sources": [
+    "https://valenciablancoynegro.blogspot.com/2019/10/la-palmera-de-vicente-peris.html",
+    "https://valenciaplaza.com/siete-arboles-historicos-de-valencia"
+   ],
+   "access": "Free, public promenade",
+   "transport": "10 min walk from Alameda metro station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "The relocation story (Plaza Mirasol origin, early 1960s move, mayor's approval, two trucks) is corroborated across both sources with only minor variation in the gardener's recorded surname. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 673), which names this exact tree 'La Palmera de Vicente Peris', an exact match to this entry's own name; moved about 525m to the catalogue's surveyed point.",
+   "location_precision": "confirmed",
+   "girth_cm": 130
+  },
+  {
+   "id": "vlc_009",
+   "name": "The Eucalyptus of Benimamet",
+   "species": "River Red Gum (Eucalyptus camaldulensis)",
+   "age_estimate": "80-100 years",
+   "age_min": 80,
+   "age_max": 100,
+   "location": {
+    "address": "Parc Lineal, near Les Carolines metro station, Benimamet, 46017 Valencia",
+    "latitude": 39.500018,
+    "longitude": -0.423515,
+    "neighbourhood": "Benimamet"
+   },
+   "story": "At just over 41 metres tall, this eucalyptus is the tallest tree in the province of Valencia and the fourth tallest recorded anywhere in the wider region, a scale confirmed by the city's own maintenance crews, who need aerial platforms and, for its highest branches, help from the fire service just to prune it safely. It grows in the Parc Lineal in Benimamet, on the northwestern edge of the city, next to the tram line that was later routed underground past it, and is formally listed both by the Valencia city council and in the Comunitat Valenciana's own Catálogo de Árboles Monumentales y Singulares, the regional register that protects it by law. Eucalyptus camaldulensis, native to Australia, was planted widely across Mediterranean Spain from the early 20th century onward for its fast growth and tolerance of poor, dry soil, but few specimens anywhere in the region have been left to grow as large as this one. Its trunk runs some 6.1 metres around at the base, with a crown spreading 30 metres wide, dimensions that make it visible well beyond the park it stands in.",
+   "verified_sources": [
+    "https://www.valencia.es/cas/actualidad/-/content/eucalipto-benim%C3%A0met",
+    "https://mediambient.gva.es/es/web/cief/cataleg-d-arbres-monumentals-i-singulars"
+   ],
+   "access": "Free, public park",
+   "transport": "Adjacent to Les Carolines metro station (Line 4)",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Measurements (41.20m height, 6.1m trunk diameter, 30m crown) and the 80-100 year age come from the city's own official announcement; the regional catalogue source confirms its protected status but is a general registry page rather than an entry specific to this tree. Pin corrected ~790m by querying that same regional catalogue directly (ArcGIS layer): it lists this exact tree by name, 'Eucalipto de Benimámet' (IPA 2375), with a 41.2m height matching this entry's own figure exactly. Tightened by about 50m on 2026-07-30 via an independently bulk-imported OpenStreetMap node carrying the same register reference (reg_ref 2375, name 'Eucaliptus de Benimàmet', 41.2m height), which gives a more precise coordinate than the earlier rounded transcription.",
+   "location_precision": "confirmed",
+   "girth_cm": 597
+  },
+  {
+   "id": "vlc_010",
+   "name": "The Kashmir Cypress of the Botanical Garden",
+   "species": "Kashmir Cypress (Cupressus cashmeriana)",
+   "age_estimate": "undated",
+   "age_min": 50,
+   "age_max": 100,
+   "location": {
+    "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+    "latitude": 39.4762,
+    "longitude": -0.3839,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "story": "This tree belongs to a species that survives today largely because it has been useful to Buddhist ceremony as much as to botany. Cupressus cashmeriana is the national tree of Bhutan, found wild only in the eastern Himalayas between roughly 1,500 and 2,800 metres of altitude, and it has long been deliberately preserved around Buddhist temples and monasteries even as habitat loss elsewhere pushed it onto international conservation watch lists. Western science only formally described it in 1848, when British botanist William Griffith encountered it in Kashmir and initially misnamed it, before John Forbes Royle corrected the naming to reflect the region where it was first documented. Valencia's specimen grows in the university's Jardí Botanic, one of the oldest botanical gardens in Spain, on Carrer Quart near the city's old medieval walls, its foliage a distinctive bright blue-green among the garden's wider conifer collection. No individual age or planting date is documented for this specimen, so any figure given is a broad estimate rather than a verified record, but the species' own rarity, not its size or age, is what makes it worth including here.",
+   "verified_sources": [
+    "https://cultural.valencia.es/en/ruta/monumental-and-unique-trees/",
+    "https://es.wikipedia.org/wiki/Cupressus_pendula"
+   ],
+   "access": "Paid entry to the Jardí Botanic (small fee)",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "No individual age or planting record documented; included for species rarity per the city's own official monumental trees route rather than for size or age. Location given as the university's Jardí Botanic since the route's own 'Culture Park (former hospital)' description could not be reconciled precisely with a single confirmed address during this run.",
+   "location_precision": "approximate",
+   "paid_entry": true
+  },
+  {
+   "id": "vlc_011",
+   "name": "The Ficus of Plaza Centenar de la Ploma",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "roughly 150 to 190 years, undocumented individual planting date",
+   "age_min": 150,
+   "age_max": 190,
+   "location": {
+    "address": "Plaza Centenar de la Ploma, 46001 Valencia",
+    "latitude": 39.47814,
+    "longitude": -0.37945,
+    "neighbourhood": "El Carmen, Ciutat Vella"
+   },
+   "story": "There are two giant figs here, their canopies touching so closely they read as one crown, and only one of them lets you walk up to it. The one in the plaza is this one, and it is not the modest half. It stands 27.8 metres tall with a canopy 28 metres across and a base circumference of 15.6 metres, where aerial roots have come down and fused into secondary trunks. Ficus macrophylla in its columnar form does this, building extra legs for itself until the line between trunk and root stops being obvious.\n\nThe measurements do not fully agree. Valencia's municipal tree observatory records 7.68 metres around at chest height; the regional monumental-tree register lists 13.7 metres, almost certainly taken lower on the same fused mass. Both figures are real and neither is wrong.\n\nIts twin stands thirty metres away, inside the walled courtyard of the former Palacio de Raga, now a Generalitat residence for the elderly. Local memory holds that one to be the older of the pair, supposedly a gift from the botanist Cavanilles to Francisco Martinez de la Raga, which would put it well past two hundred years. No planting date is documented for either. Both belong to the wave of Australian figs Valencia planted from the 1850s, the same fashion that produced El Titan across town.\n\nThe plaza tree is fenced at the base to keep feet off the root plate. Everything above that is open to anyone crossing the square.",
+   "verified_sources": [
+    "https://valenciablancoynegro.blogspot.com/2023/02/dos-ficus-en-el-centro-del-barrio-del.html",
+    "data/registers/valencia-arboles-monumentales.json (Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana, official register, CC BY 4.0)"
+   ],
+   "access": "Free, public plaza. The trunk area is fenced to protect the root plate, but the tree is fully visible and approachable from the plaza.",
+   "transport": "10 min walk from Angel Guimera metro station, in the Barrio del Carmen",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "girth_cm": 1370
+  },
+  {
+   "id": "vlc_013",
+   "name": "The Ficus of the Alameditas de Serranos",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "undated; garden itself dates to 1830 but no individual planting record for this tree survives",
+   "age_min": 60,
+   "age_max": 195,
+   "location": {
+    "address": "Alameditas de Serranos, next to the Torres de Serranos, 46003 Valencia",
+    "latitude": 39.47944,
+    "longitude": -0.37552,
+    "neighbourhood": "El Carmen, Ciutat Vella"
+   },
+   "story": "This promenade was a leather-tanning ground before it was a garden. In 1830 the Baron de Herves laid out the Alameditas de Serranos as two tree-lined walks flanking the Serranos gate, on ground previously used for curing hides, and the staircases either side of the gate followed in 1837. The fig that grows there now is the smallest of Valencia's registered monumental figs, and not by a little: 6.2 metres around, against the 9.3 to 13.8 metres of the giants in the Parterre, the Glorieta and the Palacio de Raga. It is still large enough that the city had to send crews in 2022 to cut it back where its branches had grown into the traffic.\n\nNobody knows when it went in. The garden dates from 1830, which is the only firm ceiling anyone has, and no individual record for this tree survives, which is why the age range given here is as wide as it is.\n\nThere is also a contradiction worth stating rather than smoothing over. At least one survey of the Alameditas says the promenade holds nothing of particular age or botanical interest beyond an Acacia farnesiana. The regional catalogue, meanwhile, lists this fig as a protected singular tree, a legal designation under the Valencian tree law of 2006 that requires meeting specific criteria. The register is the stronger evidence. The disagreement is real all the same.\n\nIt stands at the foot of the Torres de Serranos, the old city gate.",
+   "verified_sources": [
+    "https://agroicultura.com/general/las-alameditas-de-serranos/",
+    "data/registers/valencia-arboles-monumentales.json (girth 6.2m, listed as a protected singular tree under the regional catalogue)"
+   ],
+   "access": "Free, public riverside garden promenade beside the old Turia riverbed, at the foot of the Torres de Serranos gate",
+   "transport": "15 min walk from Alameda metro station, or any bus serving the Torres de Serranos / Puente de Serranos stop",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "girth_cm": 620
+  },
+  {
+   "id": "vlc_014",
+   "name": "The First Ficus of the Glorieta",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "undated for this specific specimen; the Glorieta's ficus were planted across the 1850s-60s and sources say each has a different estimated age",
+   "age_min": 100,
+   "age_max": 175,
+   "location": {
+    "address": "Jardin de la Glorieta, next to the Palacio de Justicia, 46002 Valencia",
+    "latitude": 39.47242,
+    "longitude": -0.36974,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "story": "In 1957 the Turia flood came close to putting this tree's crown under water. The Glorieta sits low beside the Palace of Justice, and the flood that permanently changed Valencia's relationship with its river ran deep enough here that the garden's giant figs were nearly submerged. All three of them came through it.\n\nThree is the number that matters. The Glorieta holds three Ficus macrophylla, catalogued individually, and this is the first of the set, with a trunk 9.7 metres around. They are not triplets: sources on the group state plainly that each of the three carries a different estimated age, and none of them assigns a figure to this one. What is agreed is the era. The planting belongs to the 1850s and 1860s, when Valencia was filling its new public gardens with Australian figs, sometimes on purpose and sometimes not.\n\nFifty-five metres away, across the street in the Parterre, stands El Titan, which went into the ground in 1852 because a gardener took a fig sapling for one of the 47 magnolias he was supposed to be planting. The same error is recorded on this side of the road, in the same batch of work, by the same hands.\n\nSo do not treat this as a lesser copy of the more famous tree. It is the other half of a walk that takes about a minute: two separately named gardens, one origin story, and four enormous figs between them.",
+   "verified_sources": [
+    "https://valenciasecreta.com/ficus-glorieta-parterre/",
+    "https://www.valenciabonita.es/2018/01/15/la-sombra-de-cuatro-grandes-ficus-de-valencia-los-historicos-ficus-del-parterre-y-la-glorieta/",
+    "data/registers/valencia-arboles-monumentales.json (girth 9.7m)"
+   ],
+   "access": "Free, public garden bordering the Palace of Justice",
+   "transport": "5 min walk from Xativa / Estacio del Nord (metro/train), same stop as El Titan",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "girth_cm": 968
+  },
+  {
+   "id": "vlc_015",
+   "name": "The Caucasian Elm of the Botanic Garden",
+   "species": "Caucasian Elm (Zelkova carpinifolia)",
+   "age_estimate": "undated, no planting record found",
+   "age_min": 80,
+   "age_max": 150,
+   "location": {
+    "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+    "latitude": 39.47592,
+    "longitude": -0.38621,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "story": "At roughly 33 metres, this is one of the tallest things growing in Valencia's botanic garden, and it belongs to a species most visitors have never heard of. Zelkova carpinifolia comes from the forests of the southern Caucasus and northern Iran. It is an elm relative that grows a short trunk and then breaks into a dense sheaf of near-vertical branches, so the crown reads more like a bundle held upright than a spreading canopy.\n\nIts trunk measures 5.3 metres around at chest height. That is the figure in the regional register, and an independent field measurement taken in April 2014 put it at 5.27 metres, which is about as close as two separate people with tape measures ever get.\n\nIts age is not recorded anywhere. The garden moved to this site, the old Huerto de Tramoieres outside the medieval wall, in 1802, which sets a ceiling and nothing more. Beyond the register entry and that one measurement, this tree has almost no paper trail: no newspaper feature, no garden monograph, no planting note. For a tree this size that is unusual, and it is better said out loud than filled in with a plausible number.\n\nIt shares the garden with the Kashmir Cypress, and one modest entrance fee covers both. In autumn the whole crown turns orange-brown, which is the species' best-known feature after its shape.",
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (girth 5.3m, listed as a protected singular tree)",
+    "https://www.monumentaltrees.com/es/esp/comunidadvalenciana/valencia/8809_jardinbotanicodelauniversidaddevalencia/17363/ (measurement cross-check only, per project rules never used as sole or primary source: independently recorded girth 5.27m at 1.30m height and height 33.10m, dated April 2014, an almost exact match to the register figure)"
+   ],
+   "access": "Paid entry to the Jardi Botanic (small fee), the same garden as the Kashmir Cypress.",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: the whole crown turns orange-brown, the tree's best-known moment after its shape",
+    "kind": "autumn colour"
+   },
+   "paid_entry": true,
+   "girth_cm": 535
+  },
+  {
+   "id": "vlc_016",
+   "name": "The Palm of the Palacio de Pineda",
+   "species": "Canary Island Date Palm (Phoenix canariensis)",
+   "age_estimate": "undated; palace itself built 1728-1731 but no record found of when the palm was planted",
+   "age_min": 80,
+   "age_max": 250,
+   "location": {
+    "address": "Palacio de Pineda, Plaza del Carmen, 46003 Valencia",
+    "latitude": 39.47876,
+    "longitude": -0.37888,
+    "neighbourhood": "El Carmen, Ciutat Vella"
+   },
+   "story": "You can order a coffee under this one. The Palacio de Pineda was built between 1728 and 1731 for Francisco Salvador Pineda, and its walled rear courtyard, laid out as a private garden, now works as the terrace of a cafe inside a public university campus. A single Canary Island Date Palm stands at the centre of it, listed in the regional catalogue of monumental and singular trees, with tables arranged around its base.\n\nHow old it is, nobody knows. The palace has a construction date to the year and the palm has nothing at all. No planting record turned up in any source, and the catalogue entry confirms only that it is large enough and notable enough to be protected. Palms are difficult to age in any case: there are no growth rings to count, and the trunk reaches close to its final thickness early and then mostly just gets taller. Anything from eighty years to two and a half centuries is defensible here, which is a long way of saying the number is unknown.\n\nThe building has housed the Valencia seat of the UIMP, a Spanish public university, since the early 1990s, and that is the only reason the courtyard is open at all. For the two and a half centuries before that it was somebody's private garden, and this palm was standing in it while the door stayed shut.",
+   "verified_sources": [
+    "https://www.valencia-cityguide.com/es/atracciones-turisticas/monumentos/palacio-de-pineda.html",
+    "https://www.monumentalnet.org/monumento.php?r=V-250001400-VAL-PAL-PIN&seo=palacio-de-pineda-valencia-valencia-comunidad-valenciana",
+    "data/registers/valencia-arboles-monumentales.json (listed as part of the regional Catalogo de Arboles Monumentales y Singulares)"
+   ],
+   "access": "Free entry to the courtyard, which now operates as a public cafe terrace (Palau Pineda Cafe i Menjars) inside the building that houses the UIMP (Universidad Internacional Menendez Pelayo) Valencia campus. Publicly walk-in accessible during cafe hours, not a ticketed monument visit.",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "vlc_017",
+   "name": "The Bottle Tree of the Botanic Garden",
+   "species": "Silk Floss Tree (Ceiba speciosa)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 503,
+   "height_m": 32.1,
+   "crown_m": 25.3,
+   "location": {
+    "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+    "latitude": 39.476241,
+    "longitude": -0.386276,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (register_id 1143, girth 5.03m, height 32.1m, crown 25.3m)",
+    "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
+   ],
+   "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "Break open one of this tree's seed pods and you get a handful of pillow stuffing. The green capsules of Ceiba speciosa split to release a mass of white floss, light and water repellent, which was collected to stuff pillows and mattresses and to insulate against heat and cold. That is why Valencia knows the species as the arbol de la lana, the wool tree, alongside the older local name choricia.\n\nEverything else about it is built to stop you touching it. The trunk swells into a barrel and narrows again above, the bark is smooth, greenish and finely striated because it photosynthesises, and the lower stem is studded with hard conical thorns. The species comes from the seasonally dry forests of South America, drops its leaves and grows fast, which is how a tree with no planting record has reached 5.03 metres around and 32.1 metres tall. Of the trees the regional register measures in this garden, only the Caucasian Elm a short walk away carries a thicker trunk.\n\nNobody has dated it. The register takes its measurements and stops, and the garden's own writers describe the species without giving this specimen a year. If you know when it went in, tell us.\n\nIt stands inside the university's botanic garden, behind a small entrance fee that also covers the Kashmir Cypress and the Caucasian Elm.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "vlc_018",
+   "name": "The Virginia Oak of the Botanic Garden",
+   "species": "Southern Live Oak (Quercus virginiana)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 369,
+   "height_m": 32.6,
+   "crown_m": 20.1,
+   "location": {
+    "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+    "latitude": 39.476084,
+    "longitude": -0.386538,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (register_id 1145, girth 3.69m, height 32.6m, crown 20.1m)",
+    "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
+   ],
+   "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "This oak keeps its leaves through winter, and its timber was once worth more to a navy than to a carpenter. Quercus virginiana grows along the American south coast from Virginia to Texas, evergreen and exceptionally dense, and shipwrights sought it out for the curved frames of wooden warships because the natural bends of the wood already matched the shape of a hull. In its own range it feeds people as well. The acorns can be pressed for oil, and the roots swell into edible tubers.\n\nValencia's specimen stands near the entrance of the university's botanic garden, which makes it one of the first trees you pass and one of the easiest to walk straight past. The register gives it a girth of 3.69 metres, a height of 32.6 metres and a crown 20.1 metres across. That is a tall, upright figure for a species better known in Georgia and Louisiana for going sideways, throwing horizontal limbs out over a road until they touch the ground.\n\nIts age is not recorded. The garden has stood on this ground since 1802, the old Huerto de Tramoieres outside the medieval wall, which sets a ceiling and nothing more. Neither the register nor the garden's own writers put a year on this tree. If you know one, tell us.\n\nEntry to the garden is paid, a modest fee that covers the whole collection.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "vlc_019",
+   "name": "The Plane Tree of the Botanic Garden",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 416,
+   "height_m": 31.4,
+   "crown_m": 26.0,
+   "location": {
+    "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+    "latitude": 39.476282,
+    "longitude": -0.387309,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (register_id 1151, girth 4.16m, height 31.4m, crown 26.0m)",
+    "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
+   ],
+   "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "No tree in this garden throws a bigger shadow. The plane standing against the botanic garden's western wall spreads a crown 26 metres across, wider than any other tree the regional register measures here, over a trunk 4.16 metres around and 31.4 metres of height. In a city that spends five months of the year hunting for shade, that is the entire appeal, and the garden's own writers single it out for casting the deepest shade in the collection.\n\nPlanes carry a reputation in Spanish cities as an allergy tree, and the same writers push back on it in this tree's case, calling the worry overstated.\n\nPlatanus x acerifolia is a hybrid, planted across Europe since the seventeenth century precisely because it does this: grow fast, tolerate bad air and compacted ground, shed its bark in plates and produce a heavy canopy within a few decades. Which is also why nobody bothered to write down when this one was planted. The register measures it and gives no year, the garden's catalogue names the species and not the date, and the tree itself is not telling. If a planting record exists, we would like to see it.\n\nIt sits at the far western side of the garden, past the Silk Floss Tree, and the walk between the two takes about a minute.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "vlc_020",
+   "name": "The Cretan Pine of the Botanic Garden",
+   "species": "Turkish Pine (Pinus brutia)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 339,
+   "height_m": 30.1,
+   "crown_m": 17.3,
+   "location": {
+    "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+    "latitude": 39.475756,
+    "longitude": -0.386771,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (register_id 1140, girth 3.39m, height 30.1m, crown 17.3m)",
+    "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
+   ],
+   "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "Beekeepers know this species better than gardeners do. Pinus brutia draws bees that produce a honey people actively seek out, and its timber is fine enough for luxury furniture, which is a strange pair of credentials for a tree standing quietly in a university collection.\n\nWhat gets it onto the monumental register is the trunk. It runs 30.1 metres straight up, 3.39 metres around at the base, carrying a comparatively narrow crown of 17.3 metres. The word the garden's own writers use is rectilinear, and it is the right one. Old Mediterranean pines usually lean, fork or flatten themselves into an umbrella against the wind. This one went up like a mast and stopped.\n\nThe species comes from Crete, western Turkey and the coasts of the eastern Mediterranean, which is why Spanish signage calls it the pino de Creta while English usage has settled on Turkish Pine. It is a close relative of the Aleppo Pine growing wild all along this coastline, and the two are separated by needle length and by the way the cones sit on the branch, which is worth knowing if you are trying to tell them apart on a walk.\n\nNo age is recorded for it. The register carries measurements and no dates, and no planting note for this tree has surfaced anywhere else, so how long it has been standing here is genuinely unknown. If you know, tell us.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "vlc_021",
+   "name": "The Hartwiss Oak of the Botanic Garden",
+   "species": "Hartwiss Oak (Quercus hartwissiana)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 306,
+   "height_m": 33.4,
+   "crown_m": 21.8,
+   "location": {
+    "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+    "latitude": 39.475743,
+    "longitude": -0.387004,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (register_id 1142, girth 3.06m, height 33.4m, crown 21.8m)",
+    "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_val&pid=2296"
+   ],
+   "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "Most people will never see this oak growing anywhere, including in the countries it comes from. Quercus hartwissiana has a narrow natural range around the eastern Mediterranean and the Black Sea coast into western Asia, and it is scarce in cultivation. The name honours Nicolai von Hartwiss, the Russian botanist who worked on the plants of that region in the nineteenth century.\n\nValencia has one, and it is not a token specimen. It stands 33.4 metres tall on a trunk 3.06 metres around, with a crown just under 22 metres wide. That is a slim stem carrying a lot of height, the shape of a tree that grew up with close neighbours rather than out in the open.\n\nIt lives in the Escola Botanica, the teaching collection at the centre of the university's garden, where trees are arranged by botanical family rather than by how they look, and the garden's own catalogue lists it there under the Valencian name Roure d'Hartwiss. That is what a collection like this is for: species you cannot see anywhere else, planted for study and then left alone long enough to turn into something worth walking to.\n\nNobody has dated it. The register measures it, the catalogue names it, and neither offers a year or a planting note. If you know when this oak went in, tell us.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "vlc_022",
+   "name": "The Australian Pine of the Botanic Garden",
+   "species": "River She-oak (Casuarina cunninghamiana)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 349,
+   "height_m": 33.6,
+   "crown_m": 18.4,
+   "location": {
+    "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+    "latitude": 39.475754,
+    "longitude": -0.387096,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (register_id 1141, girth 3.49m, height 33.6m, crown 18.4m)",
+    "https://jardibotanic.org/?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=465"
+   ],
+   "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The garden files this tree under pino australiano, and it is not a pine. Casuarina cunninghamiana is a flowering tree from the river valleys of eastern Australia whose leaves have shrunk to rings of tiny scales along long green jointed branchlets. From ten metres away it reads as a drooping conifer. Up close there is not a needle on it, and nothing else in this garden resembles it.\n\nAt 33.6 metres it is one of the tallest trees here, on a trunk 3.49 metres round carrying a narrow crown of 18.4 metres. In Australia the species is planted to hold riverbanks together, its roots fixing nitrogen in poor sandy soil. Here it stands in the Escola Botanica among the teaching collection, doing nothing more useful than being large and strange.\n\nOne caveat, stated plainly. The Generalitat's monumental tree register maps this individual trunk with its own entry, coordinates and measurements. The garden's own catalogue confirms that the species grows in this collection, but that page describes the species rather than this particular tree, so the second source corroborates what it is and not which trunk it is. On the ground it is hard to mistake, because a Casuarina looks like nothing around it. We would rather say this than imply a confirmation we do not have.\n\nNo age is recorded for it anywhere.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "vlc_023",
+   "name": "The Second Ficus of the Glorieta",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "roughly 170 years, if it belongs to the group planted in 1852",
+   "age_min": 150,
+   "age_max": 180,
+   "girth_cm": 1135,
+   "height_m": 27.5,
+   "crown_m": 39.5,
+   "location": {
+    "address": "Jardin de la Glorieta, next to the Palacio de Justicia, 46002 Valencia",
+    "latitude": 39.472326,
+    "longitude": -0.369301,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (register_id 682, girth 11.35m, height 27.5m, crown 39.5m)",
+    "https://valenciasecreta.com/ficus-glorieta-parterre/"
+   ],
+   "access": "Free, public garden bordering the Palace of Justice, same garden as the First Ficus of the Glorieta",
+   "transport": "5 min walk from Xativa / Estacio del Nord (metro/train), same stop as the first Glorieta ficus and El Titan",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The biggest trunk in the Glorieta measures 11.35 metres around, and it belongs to a tree that may have been planted by mistake. Valencia put four Australian figs into these two adjoining gardens in 1852, and the account told about them locally is that the saplings arrived mixed into a delivery of magnolias and went into the ground before anyone identified what they were. This is the largest of the three standing in the Glorieta, and the second largest of the four overall, after El Titan across the road in the Parterre.\n\nIts crown is the widest in this garden, 39.5 metres of canopy over a tree 27.5 metres high, which in practice means a ceiling of leathery evergreen leaves that stays dark at midday in August. Ficus macrophylla comes from the coastal forests of New South Wales and Queensland and drops aerial roots that fuse and thicken into buttresses, which is how a trunk figure like 11.35 metres gets assembled in under two centuries.\n\nThe 1852 date is documented for the group of four rather than for this tree individually, and other accounts hold that the four are not all the same age, so read roughly 170 years as the era and not the birthday. What is not in question is what it has stood through: the Civil War, and the 1957 Turia flood, which rose in the Glorieta far enough to threaten these crowns.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "vlc_024",
+   "name": "The Third Ficus of the Glorieta",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "roughly 170 years, if it belongs to the group planted in 1852",
+   "age_min": 150,
+   "age_max": 180,
+   "girth_cm": 495,
+   "height_m": 18.1,
+   "crown_m": 27.8,
+   "location": {
+    "address": "Jardin de la Glorieta, next to the Palacio de Justicia, 46002 Valencia",
+    "latitude": 39.472184,
+    "longitude": -0.369016,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (register_id 683, girth 4.95m, height 18.1m, crown 27.8m)",
+    "https://valenciasecreta.com/ficus-glorieta-parterre/"
+   ],
+   "access": "Free, public garden bordering the Palace of Justice, same garden as the First Ficus of the Glorieta",
+   "transport": "5 min walk from Xativa / Estacio del Nord (metro/train), same stop as the first Glorieta ficus and El Titan",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The smallest of Valencia's four great figs still has a trunk two people cannot reach around. This is the third Ficus macrophylla of the Glorieta, 4.95 metres in girth and 18.1 metres tall, with a crown spreading 27.8 metres, half as wide again as the tree is high. In most cities that is the headline tree on the page. Here it is the modest member of a family that includes a specimen with a 13.8-metre trunk on the other side of the road.\n\nAll four went in together in 1852, in the planting that gave the Parterre and the Glorieta their Australian figs. Why this one stayed smaller is not written down anywhere, and it is the sort of question somebody holding the garden's old plans could probably answer: root space, water, paving and where the drains run all differ across a garden barely a hundred metres across.\n\nThat 1852 date belongs to the group. No source dates this tree on its own, and accounts that have looked at the four say they are not all of an age, so the honest figure here is an era rather than a number.\n\nIt stands at the eastern end of the Glorieta, the furthest of the three from the Palace of Justice, and unlike the university's botanic garden across town it costs nothing to walk up to and stand under.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "vlc_025",
+   "name": "The Mexican White Oak of the Botanic Garden",
+   "species": "Mexican White Oak (Quercus polymorpha)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 344,
+   "height_m": 26.5,
+   "crown_m": 25.2,
+   "location": {
+    "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+    "latitude": 39.476414,
+    "longitude": -0.38677,
+    "neighbourhood": "Ciutat Vella"
+   },
+   "story": "Quercus polymorpha barely counts as a North American oak. Its range runs through Mexico, Guatemala and Honduras, and it crosses into the United States only once, in a single wild stand roughly 30 kilometres north of the Rio Grande in Texas. Everywhere else it grows, it grows on purpose: gardeners prize it for holding its leaves through most of a mild winter and for shrugging off heat that would strip a European oak bare.\n\nThe regional register lists Valencia's specimen as the Alzina de Mexic del Botanic, girth 3.44 metres and a crown 25.2 metres across, nearly as wide as the tree is tall at 26.5 metres. That crown is doing the work here: this is a garden oak built for shade rather than height, a wide flat canopy over one of the botanic garden's paths.\n\nNobody has dated it, and no second source beyond the regional catalogue has turned up to confirm the measurements, though that catalogue is the same body responsible for every monumental and singular tree the region records. If you know when it was planted, or have stood under it, tell us.\n\nIt grows in the university's botanic garden, the same paid-entry collection as the Silk Floss Tree and the Virginia Oak nearby.",
+   "verified_sources": [
+    "data/registers/valencia-arboles-monumentales.json (register_id 1150, girth 3.44m, height 26.5m, crown 25.2m)"
+   ],
+   "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Silk Floss Tree and the Virginia Oak",
+   "transport": "10 min walk from Angel Guimera metro station",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true,
+   "notes": "Single-sourced: only the Comunitat Valenciana's register of monumental and singular trees (id 1150) carries this specimen; espores.org's own ten-tree feature on this garden, which corroborates several neighbours, does not include it."
+  }
+ ]
 }
