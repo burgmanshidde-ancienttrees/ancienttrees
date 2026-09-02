@@ -9,6 +9,29 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-02 (session) - The thank-you now says which tree
+
+Hidde got his second "thank you, we received your tree tip", word for word the
+same as the first, and asked for the one thing missing: "can we add a link to
+the tree the person tipped in the mail".
+
+`contributor_reply.py` now lists every unanswered tip from that address in the
+one mail it sends (which already stamped all of them), and links the tree when
+the tree is ours. The link is looked up in the site's own /api/trees.json, so
+it can never point at a page the site does not have, and a feed we cannot read
+costs the link rather than the mail. A tree added in the app has no page yet
+and gets no fake one: it is named by the place and the coordinate the phone
+sent, which is all we hold.
+
+Two things found while in there. The row select never carried `page`, so the
+stage-two change confirmation could not use it and fell back to the city page.
+And the app waiting-list paragraph was going to people who had just sent us a
+tree FROM the app; it now goes only to people who have not.
+
+Both link routes were checked against live rows (the Prague report, which
+arrives with a referrer, and a worth-it vote from the app, which arrives with a
+tree id and no page). Nothing was sent: the two rows still unthanked belong to
+an account that has since been deleted, so no mail is owed.
 ## 2026-09-02 (autonomous run) - rung 2 twice: the deploy fix shipped, the app fix could not
 
 Started at health.py's rung 2, which had two things flagged: the site build was
