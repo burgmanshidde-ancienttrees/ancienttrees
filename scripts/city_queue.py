@@ -578,10 +578,26 @@ def main():
             if cov:
                 print("      COVERED: %d trees already published as %s"
                       % (cov["trees"], cov["city"]))
+        # The star has to survive into THIS list, and until 2026-09-02 it did
+        # not. A city Hidde named with no register or Wikidata supply lands
+        # here by definition, so Dubai and Taipei were printed inside a block
+        # captioned "Do not research these from zero" while rule 1(d) says
+        # from-zero is exactly what is allowed for them. A night run read that
+        # caption the same day and released a live Taipei claim with the
+        # reason "from-zero web research not authorized". It was, by name.
+        dry_named = [c for c in dry if c["city"].lower() in named]
+        dry_rest = [c for c in dry if c["city"].lower() not in named]
+        if dry_named:
+            print("\n  NAMED BY HIDDE AND STILL ON ZERO (%d): no register and no"
+                  % len(dry_named))
+            print("  Wikidata cluster, and from-zero web research is ON anyway,")
+            print("  because he named the city (rule 1(d)). Use the 80/20 rule hard.\n")
+            print("  " + ", ".join("* %s (#%d)" % (c["city"], c["rank"])
+                                   for c in dry_named))
         print("\n  NOTHING TO OPEN THEM FROM (%d): scout a register (rung 5) or"
-              % len(dry))
+              % len(dry_rest))
         print("  wait for Hidde to name one. Do not research these from zero.\n")
-        print("  " + ", ".join("%s (#%d)" % (c["city"], c["rank"]) for c in dry[:15]))
+        print("  " + ", ".join("%s (#%d)" % (c["city"], c["rank"]) for c in dry_rest[:15]))
         print("\nSTAGE 2, DEEPENING: once stage 1 has nothing left that moves")
         print("cheaply. Targets are 20, or 30 for a big confirmed city.\n")
         print("  #  city             now target  ready  register  wikidata")
