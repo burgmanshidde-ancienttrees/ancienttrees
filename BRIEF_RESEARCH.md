@@ -199,6 +199,16 @@ versus 10 m for one laurel. Sources are wrong often enough that the physical
 sanity check in the register-pitfalls section above applies to everything, not
 only to registers.
 
+## Settling ACCESS from OpenStreetMap, not from a search (found on Ypres, 2026-09-02)
+
+**A technique worth keeping, because access is now the commonest reason a verified tree does not ship.** Three cities lost famous trees to hard rule 10 this week and a Leuven pass delivered four of twenty-six for that reason alone. Searching "is X open to the public" usually returns nothing decisive, and the honest fallback has been to record a lead and move on.
+
+An Ypres pass settled two candidates from OSM instead. The **Christusboom** sits on a golf course, which reads as private and would normally have been parked. An Overpass query found a **permissive, foot-designated path crossing the course about 20 metres from the tree**, so a visitor can genuinely walk to it, and it shipped with that in `access`. The same technique confirmed that Ravestraat is an ordinary public road where the register's farm-cross limes stand.
+
+**Why this works and where it stops.** OSM carries `access=`, `foot=`, `highway=footway` and `designation=` tags that are exactly the question hard rule 10 asks, and they are mapped by people who have stood there. It cut the other way too, in Leuven, where OSM tagged the access road to the Filosofenfontein grey alder as `access=private` and the thickest registered specimen in Belgium correctly stayed unpublished. **It is evidence, not proof**: a tag can be stale or wrong, so it settles a case rather than overriding a source that says otherwise, and it can never override the two absolutes, a location its source withholds and somebody's home.
+
+**Use it when a register gives you a tree and no access answer**, which in Flanders is most of them.
+
 ## What actually predicts a city's yield: does anybody NAME its trees (measured over ten cities, 2026-09-02)
 
 Ten cities were opened from zero in one day and the results split cleanly in a way

@@ -46,5 +46,51 @@
   "location_precision": "confirmed",
   "curation_status": "flagged",
   "verify_notes": "This is deliberately a young tree, and the story should say so rather than imply age. The ORIGINAL peace tree (vredesboom) on this spot was planted 30 November 1919 behind a wayside cross on the Sixplein, as a village-wide gesture marking Belgium's liberation; two independent sources agree on that date and the gesture (Flemish heritage inventory, object 306476, citing De Poperinghenaar newspaper of 7 December 1919, and the municipal heritage-trail site erfgoedhaltes.be). That original tree is gone; the register states plainly the tree now standing there is a comparatively recent replacement planted 'in the same spot, behind the calvary/cross,' with no date given for the replanting. So the honest entry is: a young lime standing in the exact spot a village planted its peace tree in 1919, replacing the original, not a 107-year-old tree itself. No girth or planting date recorded anywhere found; do not imply an age for the current tree. Worth telling: this is one of several 'vredesbomen' the register lists around Ieper from the same wave of post-Armistice civic planting (see ypr_001 at Voormezele), which is the real story for this whole city: nothing here is ancient because nothing here survived the war, and these plantings are the deliberate, documented answer to that."
+ },
+ {
+  "id": "ypr_003",
+  "name": "The Christusboom",
+  "species": "Oak (Quercus sp.)",
+  "age_estimate": "not established for the living wood; the site has been planted since roughly 1830",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Golf & Country Club De Palingbeek, edge of the course near the Kasteel Mahieu ruins, Hollebeke",
+   "latitude": 50.810614,
+   "longitude": 2.924454,
+   "neighbourhood": "Hollebeke (Ieper)"
+  },
+  "verified_sources": [
+   "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/305361"
+  ],
+  "access": "Free to view via the public Palingbeek provincial domain: a permissive, foot-designated path crosses the golf course itself and passes within about 20 metres of the tree (confirmed via OpenStreetMap way 907005343, tagged access=permissive, foot=designated, golf=path). Stay on the marked path and give way to golfers; the wider course beyond the path belongs to Golf & Country Club De Palingbeek (green fee required to play).",
+  "transport": "Hollebeke, roughly 4.5 km / a 10-minute drive south of Ieper centre; the Palingbeek visitor centre car park on Vaartstraat, Zillebeke, is the usual starting point for the walk in.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "SINGLE-SOURCED (Flemish heritage inventory, object 305361) so flagged; no independent second source found despite searching (web search, war-heritage databases, tourism sites) beyond the register's own citation of a golf club history folder ('De historische Palingbeek', published by the golf club itself, not independently viewed). The tree's own name IS its story: an oak planted around 1830 (register dating group: 'tweede kwart 19de eeuw', second quarter 19th century) when the park around the since-demolished Kasteel Mahieu was laid out. Reduced to nothing by the First World War, it 'miraculously' resprouted after the Armistice. Hit again in May 1940 during the British retreat to Dunkirk, leaving only a man-high stump, it resprouted a second time into its current form, in which people see a crucified Christ; visitors have driven nails into it and tied a white ribbon to make the shape more explicit, and it now carries several memorial plaques. Local tradition holds two Scottish soldiers killed in 1940 were buried at its foot; a simple cross there recalls their original grave. It also carries a folk designation in the register's own thesaurus as a 'spijkerboom' (nail tree), a known Belgian custom. Do not state an age for the tree itself: the wood standing today is at most a WWII-era regrowth (85 years) from a stump, not the 1830 planting, and no source measures it. Species is genus only (Quercus); no source names the specific oak. The regrowth-after-two-wars history, not age, is what makes this tree remarkable, which is exactly the honest story this whole city needs."
+ },
+ {
+  "id": "ypr_004",
+  "name": "The Farm Cross Limes of Boezinge",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Ravestraat 26, Boezinge, Ieper",
+   "latitude": 50.908269,
+   "longitude": 2.836544,
+   "neighbourhood": "Boezinge (Ieper)"
+  },
+  "verified_sources": [
+   "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/308476"
+  ],
+  "access": "Free to view from the public road. Three limes trained into candelabra shapes flank a concrete wayside cross that marks the gated entrance to a working farm on Ravestraat; OpenStreetMap confirms Ravestraat as an ordinary public road running past the site. The trees and cross stand at the farm's frontage, viewable from the roadside; the farmyard beyond the gate is private land, not open to visitors.",
+  "transport": "Boezinge village, roughly 4 km / a 10-minute drive north of Ieper centre, off the N369 towards Diksmuide.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "SINGLE-SOURCED (Flemish heritage inventory, object 308476); no independent second source found. Three limes (Tilia, species not specified) trained in an ornamental 'candelabra' shape (leiboom pruning), still actively maintained, standing either side of a rustic concrete cross bearing a Christ figure at the entrance ('hofgat') of a farm on Ravestraat. The register's own classification tags it as both a 'welkomstboom' (welcome tree, i.e. deliberately planted to be seen by arrivals) and a 'kapelboom' (chapel/shrine tree), which is the case for including it: this is a functioning small roadside shrine rather than a private garden feature, of the same kind Step 1 of the research doctrine specifically tells a pass to search for. No age, girth or planting date is recorded anywhere found. Flag this clearly as thin on facts (a distinctive shape and a devotional role, not a documented history) rather than dress it up; the pruning tradition being still practised today is itself the fact worth telling."
  }
 ]
