@@ -1,0 +1,188 @@
+---
+// Settings: the admin, one click behind the profile.
+//
+// Hidde, 2026-09-02: "settings een knop dieper". In the app this is
+// Profile.swift, a pushed screen reached from the gear on My trees, and its
+// order is the conventional one every reference shares (AllTrails, Komoot,
+// Airbnb, Strava): who you are, then what you can change, then the quiet
+// links, and only at the very bottom sign out and delete.
+//
+// It used to be a card at the foot of /account, which meant the two most
+// destructive controls in the product sat on the page somebody lands on to
+// look at their own trees. That is the exact fault Hidde found in the app on
+// 2026-08-21 ("my first button I see is to sign out or delete accounts"), and
+// the website had it for another fortnight.
+//
+// Deletion keeps its own marked area at the foot, per CONVENTIONS.md "How a
+// settings page is built, and where deleting an account sits": GitHub's Danger
+// Zone, Strava's Delete Your Account at the foot of My Account. The
+// both-surfaces rule asks that the BEHAVIOUR match, which is that deletion
+// costs a second deliberate step, not that the design match.
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { BASE_URL } from "../../lib/schema";
+import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
+
+const canonical = `${BASE_URL}/account/settings`;
+const crumbItems: [string, string | null][] = [
+  ["Your trees", `${BASE_URL}/account`],
+  ["Settings", null],
+];
+---
+<Base
+  title="Settings"
+  description="Your account, and what we hold."
+  canonical={canonical}
+  headExtra='<meta name="robots" content="noindex, nofollow">'
+>
+<main class="content-page account-page">
+  <Breadcrumbs items={crumbItems} />
+  <h1>Settings</h1>
+
+  <p id="set-out" class="acct-sub" hidden>You are not signed in. <a href="/account">Sign in</a> to change anything here.</p>
+
+  <section id="set-in" class="acct-card" hidden>
+    <p class="acct-group">Account</p>
+    <div class="acct-rows">
+      <div class="acct-row">
+        <label for="in-name">The name people see</label>
+        <div class="acct-name-row">
+          <input id="in-name" type="text" maxlength="40" autocomplete="nickname"
+                 placeholder="Nobody sees this until you set it" />
+          <button type="button" id="save-name" class="go-btn">Save</button>
+        </div>
+        <p class="acct-fine" id="name-note">Set a name and people can find you in the app to follow your trees. Leave it empty and nobody can.</p>
+      </div>
+      <div class="acct-row">
+        <label>Signed in as</label>
+        <p class="acct-fine"><strong id="set-email"></strong>. Your trees are kept under this address. To move your collection to another one, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
+      </div>
+    </div>
+
+    <p class="acct-group">About</p>
+    <div class="acct-rows">
+      <a class="acct-row acct-linkrow" href="/privacy">Privacy</a>
+      <a class="acct-row acct-linkrow" href="/terms">Terms</a>
+      <a class="acct-row acct-linkrow" href="/support">Support</a>
+    </div>
+
+    <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
+
+    <details class="acct-danger" id="del-panel">
+      <summary>Delete account</summary>
+      <div class="acct-danger-body">
+        <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. Deleting your account removes all of it, and it cannot be undone.</p>
+        <button type="button" id="del-acct" class="acct-link danger">Delete my account</button>
+      </div>
+    </details>
+  </section>
+</main>
+<Fragment slot="scripts" set:html={`
+<script>
+(function() {
+  var SB = "${SUPABASE_URL}", KEY = "${SUPABASE_KEY}";
+  var myId = null;
+  function session() {
+    try {
+      var s = JSON.parse(localStorage.getItem("ancienttrees_session"));
+      return (s && s.access_token && s.expires_at > Date.now() / 1000) ? s : null;
+    } catch (e) { return null; }
+  }
+  function signedOut() {
+    document.getElementById("set-in").hidden = true;
+    document.getElementById("set-out").hidden = false;
+  }
+  var s = session();
+  if (!s) { signedOut(); return; }
+  document.getElementById("set-in").hidden = false;
+
+  fetch(SB + "/auth/v1/user", { headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } })
+    .then(function(r) { return r.ok ? r.json() : null; })
+    .then(function(u) {
+      if (!u) return;
+      if (u.email) document.getElementById("set-email").textContent = u.email;
+      if (!u.id) return;
+      myId = u.id;
+      // The name they already chose, wherever they chose it. An empty box on a
+      // page that already knows the answer reads as data lost, and somebody who
+      // set their name in the app would be looking at exactly that.
+      fetch(SB + "/rest/v1/profiles?select=display_name&user_id=eq." + encodeURIComponent(u.id),
+            { headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } })
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(rows) {
+          if (rows && rows[0] && rows[0].display_name) {
+            document.getElementById("in-name").value = rows[0].display_name;
+          }
+        }).catch(function() {});
+    }).catch(function() {});
+
+  // The SAME upsert the app makes (profiles?on_conflict=user_id with
+  // resolution=merge-duplicates), so setting a name here and setting one in the
+  // app are one operation against one row rather than two paths that can
+  // disagree. CLAUDE.md's both-surfaces rule: the decision travels.
+  var nameBtn = document.getElementById("save-name");
+  nameBtn.addEventListener("click", function() {
+    var box = document.getElementById("in-name");
+    var note = document.getElementById("name-note");
+    var v = box.value.trim();
+    var cur = session();
+    if (!cur || !myId) { note.textContent = "Sign in again and try once more."; return; }
+    if (v.length < 1 || v.length > 40) { note.textContent = "A name is between 1 and 40 characters."; return; }
+    nameBtn.disabled = true;
+    note.textContent = "Saving.";
+    fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
+      method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                 "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates" },
+      body: JSON.stringify([{ user_id: myId, display_name: v }])
+    }).then(function(r) {
+      nameBtn.disabled = false;
+      note.textContent = r.ok
+        ? "Saved. People can find you as " + v + " in the app."
+        : "That did not save. Try again, or write to info@ancienttrees.app.";
+    }).catch(function() {
+      nameBtn.disabled = false;
+      note.textContent = "That did not save. Try again in a moment.";
+    });
+  });
+
+  document.getElementById("signout").addEventListener("click", function() {
+    var cur = session();
+    if (cur) fetch(SB + "/auth/v1/logout", { method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token } }).catch(function() {});
+    try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
+    // Signing out takes everything off the screen, because everything lives in
+    // the account now: there is nothing left on the device to clear.
+    location.href = "/account";
+  });
+
+  // Account deletion: calls the delete_user() SECURITY DEFINER function in
+  // Supabase (runs as owner, deletes the auth.users row for auth.uid() only).
+  // Two deliberate clicks; no dialog dependency.
+  var delBtn = document.getElementById("del-acct");
+  var delArmed = false;
+  delBtn.addEventListener("click", function() {
+    if (!delArmed) {
+      delArmed = true;
+      delBtn.textContent = "This permanently deletes your account and email. Click again to confirm.";
+      return;
+    }
+    var cur = session();
+    if (!cur) { location.href = "/account"; return; }
+    fetch(SB + "/rest/v1/rpc/delete_user", { method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                 "Content-Type": "application/json" }, body: "{}" })
+      .then(function(r) {
+        if (r.ok) {
+          try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
+          location.href = "/account";
+        } else {
+          delBtn.textContent = "Deletion failed. Try again, or email us via the privacy page.";
+        }
+      })
+      .catch(function() { delBtn.textContent = "Deletion failed (network). Try again."; });
+  });
+})();
+</script>
+`} />
+</Base>

@@ -46,13 +46,16 @@ Open decisions.
   byte-identical. This is non-negotiable per hard rule 3 (nothing
   irreversible in public) and SEO_GEO_BLUEPRINT.md's global rule ("a URL
   never changes once published").
-- The localStorage keys the passport and session already use:
-  `ancienttrees_seen` (collected trees) and `ancienttrees_session`
-  (`build_site.py:5568`, `:5576`). These are a public contract with every
-  visitor's browser. An island that renames either silently wipes existing
-  collections on next visit, the exact failure PRINCIPLES.md #12 exists to
-  prevent. `CheckInButton.astro` and `AccountWidget.astro` must read/write
-  the same key names, unchanged.
+- The one localStorage key left, `ancienttrees_session`. It is a public
+  contract with every visitor's browser and renaming it signs everybody out.
+  `ancienttrees_seen` (collected trees) and `at_saved_v1` (saved trees) were
+  the other two and are GONE as of 2026-09-02, on Hidde's instruction that
+  nothing be stored on the device: the collection lives in the account, in the
+  `visited` and `saves` tables, and the browser holds only the token that says
+  whose account it is. Nothing renamed a key, which is the failure
+  PRINCIPLES.md #12 is about; the data moved somewhere that survives a cleared
+  browser, a second device and Safari's seven-day wipe, which is what that
+  principle actually wanted.
 
 ## What changes
 

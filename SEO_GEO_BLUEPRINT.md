@@ -272,18 +272,30 @@ soon.
   cities gets no further investment however large its supply, and that is
   written down now so a good story cannot rescue it later.
 
-### Contract K — City walks page  `/[city]/walks` (v1.14)
+### Contract K — City walks page  `/[city]/walks` — RETIRED (v1.16)
 
-| Element | Specification |
-|---|---|
-| Title (≤60 chars) | `Tree Walks in [City]: [N] Routes Past [M] Trees`, falling back to `Tree Walks in [City]: [N] Routes`, then `Tree Walks in [City]` |
-| H1 | `Tree Walks in [City]` |
-| Body | Answer-first lede naming how many walks, how long the shortest and longest are, and how many trees they pass → a plain statement of what the route is and is not → each walk as a heading with its tree count, distance and time on foot, then its trees in walking order → the city's GPX |
-| Schema | ItemList of the walks + BreadcrumbList |
-| Internal links | Every tree links to its tree page; the city page links here and this links back; up to 6 other cities that also have this page |
-| Publish gate | **The city's walks together cover 5+ trees.** Same floor as Contract H, and for the same reason: below it the city page serves the reader better than a walks page wearing its name. |
-| Hard rule | **The URL is the CITY, never the walk.** Our walks are computed from where the trees stand, so adding a tree can split a walk, move its start and change its generated name. A per-walk URL would break on the next night run and hard rule 3 forbids retiring a public URL. A walk gets its own permanent address only when a PERSON fixed it, which is not the case for any walk we generate. |
-| Hard rule | Combined walks (the union of two smaller ones) are not listed. The app offers them as a longer option; on a page they read as a near-duplicate of the two legs. |
+Retired 2026-09-02 on Hidde's instruction. It existed from 2026-08-24 to
+2026-09-02 and is kept here as a heading rather than deleted, so nobody
+re-derives it: **the website has no page that shows a walk, and it will not
+get one back without him saying so.**
+
+His reasoning, in his own words: the walks belong in the app and behind Plus,
+"dus ik denk dat het beter is dat we voor nu, altijd als iemand op een walk
+klikt, we ze naar de app versturen", and "er moet dus niet een dieper liggende
+pagina zijn waar je die walks kan lezen". With it came the measurement he wants
+out of the change: point every walk control at the app, count the taps, and let
+that number decide how fast the walks get finished in the app.
+
+What replaces it, and it is a rule for every page type rather than a contract
+of its own: **a walk control opens the app overlay (`data-app-modal`), always,
+with no condition on it.** A control that sometimes goes to a page and
+sometimes opens a dialog is two controls. A page may still say the word "walk"
+to a reader, but only where walks genuinely exist, which is `hasWalksPage()` in
+`site/src/lib/city-walks.ts`, the same computation that feeds the app.
+
+Every `/[city]/walks` URL keeps resolving and lands on the city page, per hard
+rule 3; the stubs are in `site/src/lib/redirect-map.ts`. The walks themselves
+are untouched as data and still ship at `/api/walks.json`.
 
 ## MEASUREMENT CONTRACT (what proves this blueprint works)
 
@@ -292,6 +304,8 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 ---
 
 ## CHANGELOG
+
+- **v1.16 (2026-09-02):** Contract K retired: the website has no walks page any more, and every walk control on every page type opens the app overlay instead. Hidde's instruction in session, and the reasoning is the paywall line rather than the page: the walks are Plus (DECISIONS.md 2026-08-18), so a web page that hands out the route undercuts the thing being sold, and a web page that teases it half-delivers. "Fuck it, stuur ze maar gewoon naar de app. Dan kunnen we zien hoe vaak het wordt geklikt en gaan we dan maar snel die walks in de app maken." So the change is also the measurement: `walks-app` now counts every walk intention on the site instead of a fraction of them, and that number is what times the work in the app. Two things stay: `hasWalksPage()` still gates whether a page may say "walk" at all, so we never advertise a route that does not exist, and every `/[city]/walks` URL still resolves, landing on the city page, per hard rule 3.
 
 - **v1.15 (2026-08-28):** `[city]` in every contract means a PLACE: a city, a region, a national park or a forest. Approved by Hidde in session ("ja"), after the measurement that forced the question. Sixty famous American trees sit on Commons with photographs and coordinates, and only NINE of them fall within forty kilometres of a city we publish: General Sherman stands in Sequoia National Park, the Charter Oak in Hartford, the Lahaina Banyan on Maui. A tree with no home has no URL and is therefore not on this site at all, so the model was quietly excluding the best trees in the world. His own words for the shape: "het is toch prima om bomen zonder stad online te zetten... maar horen niet bij een stad." No contract changes and no page type is added; one word widens, which is the shape goal 3 anticipated (DECISIONS.md 2026-08-14: the schema must not assume "city"). Three rules come with it and they are what stop it becoming a spam farm: a place earns a page on the same four-tree floor as a city, a place must be a name a person would say out loud rather than a bounding box invented to hold two trees, and only cities appear on /cities.
 

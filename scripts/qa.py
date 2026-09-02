@@ -429,6 +429,109 @@ def check_save_flow_integrity():
     return out
 
 
+def check_nothing_is_stored_locally():
+    """The sixteenth ratchet check, from 2026-09-02.
+
+    Hidde: "ik wil dat je ervoor zorgt dat er niets meer lokaal wordt
+    opgeslagen. Alles wat wordt opgeslagen, moet op je account zijn. Dus zodra
+    je iets liket of wat dan ook, moet dat achter een account staan."
+
+    Saving was already account-gated, and a localStorage CACHE sat behind the
+    gate anyway. That is what filled his account with trees he had never kept:
+    saves made in a browser before the gate existed were merged into the
+    account as a union on the next sign-in, and a union cannot tell a
+    deliberate save from a leftover.
+
+    So the browser holds exactly one thing, `ancienttrees_session`, which is
+    not a saved tree, it is the token that says whose account this is. Anything
+    a person accumulates lives in the account. sessionStorage counts as storage
+    and is refused for the same reason.
+
+    The two deliberate exceptions are named here rather than left implicit:
+    `at_notrack` is a privacy opt-out that would be pointless on a server, and
+    the contribute draft (`at_contribute_draft`) protects text somebody has
+    typed and not yet sent, which is not something they have saved to a
+    collection. A key built from a variable is refused whatever it holds,
+    because the allowlist can only read literals; write the name out."""
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    src = root / "site" / "src"
+    if not src.exists():
+        return out
+    allowed = {"ancienttrees_session", "at_notrack", "at_contribute_draft"}
+    offenders = []
+    for f in sorted(list(src.rglob("*.ts")) + list(src.rglob("*.astro"))):
+        text = f.read_text(encoding="utf-8")
+        for line_no, line in enumerate(text.splitlines(), 1):
+            if "//" in line and line.strip().startswith("//"):
+                continue
+            for m in re.finditer(r"""(?:local|session)Storage\.(?:set|get|remove)Item\(\s*['"]([^'"]+)['"]""", line):
+                if m.group(1) not in allowed:
+                    offenders.append("%s:%d writes %r"
+                                     % (f.relative_to(root), line_no, m.group(1)))
+            # A key built from a variable is the same fault wearing a disguise.
+            if re.search(r"""(?:local|session)Storage\.(?:set|get|remove)Item\(\s*[A-Za-z_$]""", line):
+                offenders.append("%s:%d uses a computed storage key"
+                                 % (f.relative_to(root), line_no))
+    if offenders:
+        out.append("%d place(s) store something on the device. Only the session "
+                   "token may live there; everything a person keeps belongs to "
+                   "their account (2026-09-02). %s"
+                   % (len(offenders), "; ".join(offenders[:6])))
+    return out
+
+
+def check_walks_go_to_the_app():
+    """The walks left the website on 2026-09-02 and must not creep back.
+
+    Hidde: "er moet dus niet een dieper liggende pagina zijn waar je die walks
+    kan lezen ... stuur ze maar gewoon naar de app." The walks are the Plus
+    product, so a web page that shows the route undercuts what is being sold
+    and a web page that teases it half-delivers.
+
+    This is the ratchet, and this particular line has now been wrong twice: it
+    pointed at the app-promotion anchor while promising a route (found on Oahu,
+    2026-08-28), then at /[city]/walks, which no longer exists. Two days, two
+    faults, one check.
+
+    Two things are refused. A live link into a /walks path, which is the page
+    coming back or a stale link to it; the redirect stubs themselves are
+    allowed, since hard rule 3 requires them and they are how an old URL keeps
+    resolving. And a walk control that does not open the app overlay: every
+    element carrying data-ev="walks-app" must also carry data-app-modal, and
+    every page that has one must render the overlay it opens."""
+    out = []
+    linking = []
+    not_modal = []
+    no_dialog = []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        # A redirect stub is the mechanism that keeps the retired URL alive.
+        if "Moved:" in html and 'http-equiv="refresh"' in html.lower():
+            continue
+        if re.search(r'href="[^"]*/walks/?"', html):
+            linking.append(str(page.relative_to(DIST)))
+        for tag in re.findall(r"<a\b[^>]*>", html):
+            if 'data-ev="walks-app"' in tag and "data-app-modal" not in tag:
+                not_modal.append(str(page.relative_to(DIST)))
+                break
+        if 'data-ev="walks-app"' in html and 'id="app-dialog"' not in html:
+            no_dialog.append(str(page.relative_to(DIST)))
+    if linking:
+        out.append("%d page(s) link to a /walks page, which was retired on "
+                   "2026-09-02 (blueprint Contract K), e.g. %s"
+                   % (len(linking), ", ".join(linking[:5])))
+    if not_modal:
+        out.append("%d page(s) carry a walk control that navigates instead of "
+                   "opening the app overlay (needs data-app-modal), e.g. %s"
+                   % (len(not_modal), ", ".join(not_modal[:5])))
+    if no_dialog:
+        out.append("%d page(s) show a walk control without the app overlay it "
+                   "opens (silent no-op on tap), e.g. %s"
+                   % (len(no_dialog), ", ".join(no_dialog[:5])))
+    return out
+
+
 def check_no_owner_name():
     """The thirteenth ratchet check, from 2026-08-24.
 
@@ -1037,6 +1140,8 @@ def main():
     failures += check_one_tree_card()
     failures += check_one_owner_per_event()
     failures += check_no_owner_name()
+    failures += check_walks_go_to_the_app()
+    failures += check_nothing_is_stored_locally()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")

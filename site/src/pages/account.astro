@@ -1,25 +1,40 @@
 ---
-// The sign-in flow: email in, check-your-inbox with masked address and a
-// resend cooldown, an expired-link recovery, and the signed-in shell that
-// shows the visitor's real on-device collection. Ported from
-// build_account_page(), build_site.py:5487-5685. Kept noindexed and out of
-// the sitemap (sitemap-integration.ts excludes any noindexed page by
-// content, matching Python's "write straight to disk, skip the pages list"
-// trick) - this is still a prototype even with AUTH_ENABLED true.
+// Your profile: who you are, what you have collected, and your two lists.
+//
+// REBUILT 2026-09-02 TO MATCH THE APP (Hidde: "laten we deze opzet aanhouden
+// voor je profielpagina - daar alle functionaliteiten inbouwen die we ook in
+// de app hebben gebouwd en dan settings een knop dieper"), with the app's own
+// My trees screen and a Polarsteps profile beside it as the references.
+//
+// Convention, and it is the same one both references follow: a profile opens
+// with WHO, then a row of counts, then the thing you can do, then your lists.
+// Settings are not on it; they sit behind a gear in the corner. That is
+// Polarsteps, Strava, AllTrails and our own app, and it is what this page got
+// wrong: it opened with a sign-in card and then stacked the account admin, the
+// name editor and a delete panel around the trees.
+//
+// The counts are the app's counts, taken from Collect.swift so the two
+// surfaces cannot answer the same question differently: trees you have stood
+// in front of plus trees you added, the species among them, the countries.
+//
+// Both-surfaces note (CLAUDE.md, 2026-08-21): the BEHAVIOUR matches the app,
+// the design does not have to. Adding a tree is a camera sheet on the phone
+// and the contribute form here, because a laptop has no camera in a park.
+//
+// Kept noindexed and out of the sitemap: this is somebody's own page.
 import Base from "../layouts/Base.astro";
 import { BASE_URL } from "../lib/schema";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
-import { SAVED_LIST_JS } from "../lib/saved-list-js";
+import { PROFILE_JS } from "../lib/profile-js";
 import { MY_TREES_JS } from "../lib/my-trees-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import SignInModal from "../components/SignInModal.astro";
 import { SIGNIN_JS } from "../lib/signin-js";
-import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 
 const canonical = `${BASE_URL}/account`;
 ---
 <Base
-  title="Sign in to Ancient Trees"
+  title="Your trees"
   description="Keep your tree collection on every device."
   canonical={canonical}
   headExtra='<meta name="robots" content="noindex, nofollow">'
@@ -32,9 +47,7 @@ const canonical = `${BASE_URL}/account`;
     <p class="acct-sub">We send you a sign-in link, and your account keeps what you collect and save.</p>
     {/* Google publishes this mark and its guidelines, so the button uses
     the asset rather than a pill with the words alone. CONVENTIONS.md,
-    "A sign-in button": the provider ships it, use it. Hidde made this
-    correction on 2026-08-20 and it was applied to the iOS app and not
-    here, so the web button stayed a bare pill for a fortnight. */}
+    "A sign-in button": the provider ships it, use it. */}
     <button type="button" class="oauth-btn" id="acct-google"><svg class="oauth-mark" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.97 10.72a5.4 5.4 0 0 1 0-3.44V4.95H.96a9 9 0 0 0 0 8.1l3.01-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58C13.46.9 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"/></svg><span>Continue with Google</span></button>
     <p class="signin-or">or</p>
     <form id="acct-form" class="hero-search" autocomplete="email">
@@ -59,120 +72,56 @@ const canonical = `${BASE_URL}/account`;
     <p class="acct-actions"><button type="button" id="re-expired" class="go-btn">Send a new link</button></p>
   </section>
 
-  <!-- BUILT LIKE THE APP'S SETTINGS SCREEN, 2026-08-31, on Hidde's ask. It was
-       one flat card with Sign out and Delete my account sitting side by side on
-       it, a mis-click apart. The app puts deletion a layer in, under Account,
-       which is what he ruled on 2026-08-21 ("most of the time they put the
-       click further down") and what every reference does: Strava is Settings,
-       My Account, Delete Account; AllTrails the same; GitHub keeps destructive
-       actions in a marked area at the foot of the account page. CONVENTIONS.md
-       carries the full lookup.
-
-       A <details> rather than a second page: on the web a disclosure is the
-       honest equivalent of a pushed screen, it needs no routing, and it keeps
-       the one thing that matters, which is that deletion is not on the surface
-       somebody lands on. -->
-  <section id="st-in" class="acct-card" hidden>
-    <p class="hero-kicker">Signed in</p>
-    <h1>Your <em>trees</em>.</h1>
-
-    <div class="acct-identity">
-      <strong id="in-email"></strong>
-      <div class="stat-row">
-        <div class="stat"><b id="n-mine">0</b><span>your trees</span></div>
-        <div class="stat alt"><b id="n-trees">0</b><span>saved</span></div>
-        <div class="stat"><b id="n-cities">0</b><span>cities</span></div>
+  <!-- THE PROFILE ITSELF. Identity, counts, the one action, then the lists.
+       The gear is the only way to the settings, exactly as in the app. -->
+  <section id="st-in" class="profile-head" hidden>
+    <div class="profile-top">
+      <span class="profile-avatar" id="in-avatar" aria-hidden="true"></span>
+      <div class="profile-who">
+        <h1 id="in-handle">Your trees</h1>
+        <p class="profile-follow"><b id="n-followers">0</b> followers &nbsp; <b id="n-following">0</b> following</p>
       </div>
+      <a class="profile-gear" href="/account/settings" aria-label="Settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M19.4 13.5a7.6 7.6 0 0 0 0-3l1.7-1.3-2-3.4-2 .8a7.6 7.6 0 0 0-2.6-1.5L14.2 3H9.8l-.3 2.1a7.6 7.6 0 0 0-2.6 1.5l-2-.8-2 3.4 1.7 1.3a7.6 7.6 0 0 0 0 3L2.9 14.8l2 3.4 2-.8a7.6 7.6 0 0 0 2.6 1.5l.3 2.1h4.4l.3-2.1a7.6 7.6 0 0 0 2.6-1.5l2 .8 2-3.4z"/></svg>
+      </a>
     </div>
-    <p class="acct-sub" id="in-note">The trees you photographed and the ones you saved follow this account to any device.</p>
-    <!-- Said plainly because Google and Apple hand out different addresses, and
-         Apple's is a private relay by default. Somebody who signs in with Apple
-         on the phone and Google here would otherwise see an empty collection
-         and conclude we lost it. -->
-    <p class="acct-fine">Your trees are kept under this address. Signing in with a different one starts a separate collection. To use a different address, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a> and we will move your collection across.</p>
 
+    <div class="stat-row">
+      <div class="stat"><b id="n-trees">0</b><span>Trees</span></div>
+      <div class="stat alt"><b id="n-species">0</b><span>Species</span></div>
+      <div class="stat"><b id="n-countries">0</b><span>Countries</span></div>
+    </div>
+
+    <a class="go-btn profile-add" href="/contribute?kind=tree">Add a tree</a>
+    <p class="acct-fine" id="in-note">Your trees are kept under <strong id="in-email"></strong> and follow you to any device. Signing in with a different address starts a separate collection.</p>
   </section>
 
-  <section class="acct-lanes" id="saved">
+  <!-- TWO LANES, THE APP'S TWO LANES, in the app's order and with the app's
+       words (Hidde, 2026-08-26: "ik zou daar op openen, niet op favourites").
+       My trees is what you have stood in front of and what you added;
+       Favourites is what you hearted. They are independent lists and a tree
+       may be in both. -->
+  <section class="acct-lanes" id="saved" hidden>
     <div class="lane-picker" role="tablist" aria-label="Your lists">
       <button type="button" id="lane-mine" class="lane on" role="tab" aria-selected="true" aria-controls="pane-mine">My trees</button>
-      <button type="button" id="lane-saved" class="lane" role="tab" aria-selected="false" aria-controls="pane-saved">Saved</button>
+      <button type="button" id="lane-saved" class="lane" role="tab" aria-selected="false" aria-controls="pane-saved">Favourites</button>
     </div>
 
     <div id="pane-mine" role="tabpanel" aria-labelledby="lane-mine">
+      <ul id="visited-list" class="saved-list" hidden></ul>
       <ul id="mine-list" class="saved-list" hidden></ul>
-      <p id="mine-empty" hidden>You can add a tree in the app by photographing it and filling in what you know. <a href="/app">Get the app</a>.</p>
-      <p id="mine-signedout" hidden>Sign in above and the trees you photographed appear here.</p>
+      <p id="mine-empty" hidden>Nothing here yet. Check in at a tree when you are standing in front of it, or add one of your own. <a href="/explore">Find a tree near you</a>.</p>
+      <p id="mine-signedout" hidden>Sign in and the trees you collected appear here.</p>
     </div>
 
     <div id="pane-saved" role="tabpanel" aria-labelledby="lane-saved" hidden>
-      <p class="prose-block" id="saved-sub">The trees you tapped Save on. Sign in above to see them here and on any other device.</p>
       <ul id="saved-list" class="saved-list" hidden></ul>
       <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
     </div>
   </section>
-
-  <!-- SETTINGS AFTER THE TREES, which is the app's order (Hidde,
-       2026-09-02). The first version of this page put the lanes below the
-       whole settings card, so a signed-in person met their own name, the
-       about rows, sign out and the delete panel before reaching a single
-       tree. In the app the trees ARE the screen and the settings sit behind
-       a gear; on the web the honest equivalent is further down the page. -->
-  <section id="st-settings" class="acct-card" hidden>
-    <p class="acct-group">Settings</p>
-    <div class="acct-rows">
-      <!-- THE NAME OTHER PEOPLE SEE. The app has had a profile editor since the
-           social half shipped and this page had nothing, so an account made
-           here could never be found by anybody: the finder searches
-           display_name, and a profile row only comes into being when a name is
-           set. Name only, no picture: uploading needs the avatars bucket and
-           its policies, and the name is the whole of what makes an account
-           findable. -->
-      <div class="acct-row">
-        <label for="in-name">The name people see</label>
-        <div class="acct-name-row">
-          <input id="in-name" type="text" maxlength="40" autocomplete="nickname"
-                 placeholder="Nobody sees this until you set it" />
-          <button type="button" id="save-name" class="go-btn">Save</button>
-        </div>
-        <p class="acct-fine" id="name-note">Set a name and people can find you in the app to follow your trees. Leave it empty and nobody can.</p>
-      </div>
-
-    </div>
-
-    <p class="acct-group">About</p>
-    <div class="acct-rows">
-      <a class="acct-row acct-linkrow" href="/privacy">Privacy</a>
-      <a class="acct-row acct-linkrow" href="/terms">Terms</a>
-      <a class="acct-row acct-linkrow" href="/support">Support</a>
-    </div>
-
-    <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
-
-    <!-- DELETION AT THE FOOT, IN A MARKED AREA, OPENING A SCREEN OF ITS OWN.
-         Moved here 2026-08-31 after Hidde read the first attempt and said it
-         stood oddly, which it did. I had copied the app, where deletion lives
-         inside a pushed Account screen, into a disclosure sitting among the
-         settings rows. On the web that is nobody's pattern: GitHub puts a
-         Danger Zone at the foot of the account page with a named button that
-         opens a dialog, Strava a Delete Your Account link at the foot of My
-         Account, Airbnb and Google the same shape.
-
-         The both-surfaces rule is what I got wrong. It asks that the BEHAVIOUR
-         match, not the design: deletion costs a second, deliberate step on
-         both. A pushed screen does that on a phone; a named button at the foot
-         opening an explanation does it here. -->
-    <details class="acct-danger" id="del-panel">
-      <summary>Delete account</summary>
-      <div class="acct-danger-body">
-        <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. Deleting your account removes all of it, and it cannot be undone.</p>
-        <button type="button" id="del-acct" class="acct-link danger">Delete my account</button>
-      </div>
-    </details>
-  </section>
   <SignInModal />
 </main>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + SAVED_LIST_JS + MY_TREES_JS + `
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + PROFILE_JS + MY_TREES_JS + `
 <script>
 (function() {
   var SB = "${SUPABASE_URL}";
@@ -180,18 +129,15 @@ const canonical = `${BASE_URL}/account`;
   var states = ["st-signin", "st-sent", "st-expired", "st-in"];
   function show(id) {
     states.forEach(function(x) { document.getElementById(x).hidden = (x !== id); });
-    // The settings card is the second half of the signed-in state and lives
-    // below the lanes, so it is not one of the four states; it simply follows
-    // st-in.
-    var set = document.getElementById("st-settings");
-    if (set) set.hidden = (id !== "st-in");
+    // The lists are the second half of the signed-in state.
+    document.getElementById("saved").hidden = (id !== "st-in");
   }
+  var lastEmail = "";
   function mask(e) {
     var at = e.indexOf("@");
     if (at < 2) return e;
     return e[0] + "•••" + e.slice(at - 1);
   }
-  var lastEmail = "";
   function sendLink(email, done) {
     fetch(SB + "/auth/v1/otp?redirect_to=" + encodeURIComponent(location.origin + location.pathname), {
       method: "POST",
@@ -209,39 +155,14 @@ const canonical = `${BASE_URL}/account`;
       if (n <= 0) { clearInterval(cooldown); btn.disabled = false; btn.textContent = "Resend link"; }
     }, 1000);
   }
-  // The saved-list script owns these two numbers now (lib/saved-list-js.ts):
-  // they count the saved trees this page lists, not the check-in log, which
-  // is app-only on a phone and therefore permanently zero here.
-  function localStats() {}
-  // Who is signed in, kept so the name can be written against the right row.
-  var myId = null;
   function signedIn(session) {
     try { localStorage.setItem("ancienttrees_session", JSON.stringify(session)); } catch (e) {}
-    fetch(SB + "/auth/v1/user", { headers: { "apikey": KEY, "Authorization": "Bearer " + session.access_token } })
-      .then(function(r) { return r.ok ? r.json() : null; })
-      .then(function(u) {
-        if (u && u.email) document.getElementById("in-email").textContent = u.email;
-        if (u && u.id) { myId = u.id; loadName(session.access_token, u.id); }
-      })
-      .catch(function() {});
-    localStats();
-    if (window.atLoadMine) window.atLoadMine(session.access_token);
     show("st-in");
-  }
-
-  // The name they already chose, wherever they chose it. An empty box on a
-  // page that already knows the answer reads as data lost, and somebody who
-  // set their name in the app would be looking at exactly that.
-  function loadName(token, id) {
-    fetch(SB + "/rest/v1/profiles?select=display_name&user_id=eq." + encodeURIComponent(id),
-          { headers: { "apikey": KEY, "Authorization": "Bearer " + token } })
-      .then(function(r) { return r.ok ? r.json() : null; })
-      .then(function(rows) {
-        if (rows && rows[0] && rows[0].display_name) {
-          document.getElementById("in-name").value = rows[0].display_name;
-        }
-      })
-      .catch(function() {});
+    // The heart script concluded there was nobody signed in before the token
+    // arrived in the url hash; tell it otherwise.
+    if (window.atSyncSaves) window.atSyncSaves();
+    if (window.atLoadProfile) window.atLoadProfile(session.access_token);
+    if (window.atLoadMine) window.atLoadMine(session.access_token);
   }
   function parseHash() {
     var h = {};
@@ -293,44 +214,6 @@ const canonical = `${BASE_URL}/account`;
     if (lastEmail) { sendLink(lastEmail, function() {}); document.getElementById("sent-to").textContent = mask(lastEmail); }
     show(lastEmail ? "st-sent" : "st-signin"); if (lastEmail) startCooldown();
   });
-  // Saving it. The SAME upsert the app makes (profiles?on_conflict=user_id
-  // with resolution=merge-duplicates), so setting a name here and setting one
-  // in the app are one operation against one row rather than two paths that
-  // can disagree. CLAUDE.md's both-surfaces rule: the decision travels, the
-  // design does not have to.
-  var nameBtn = document.getElementById("save-name");
-  nameBtn.addEventListener("click", function() {
-    var box = document.getElementById("in-name");
-    var note = document.getElementById("name-note");
-    var v = box.value.trim();
-    var s = null;
-    try { s = JSON.parse(localStorage.getItem("ancienttrees_session")); } catch (e) {}
-    if (!s || !myId) { note.textContent = "Sign in again and try once more."; return; }
-    if (v.length < 1 || v.length > 40) {
-      note.textContent = "A name is between 1 and 40 characters.";
-      return;
-    }
-    nameBtn.disabled = true;
-    note.textContent = "Saving.";
-    fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
-      method: "POST",
-      headers: {
-        "apikey": KEY,
-        "Authorization": "Bearer " + s.access_token,
-        "Content-Type": "application/json",
-        "Prefer": "resolution=merge-duplicates"
-      },
-      body: JSON.stringify([{ user_id: myId, display_name: v }])
-    }).then(function(r) {
-      nameBtn.disabled = false;
-      note.textContent = r.ok
-        ? "Saved. People can find you as " + v + " in the app."
-        : "That did not save. Try again, or write to info@ancienttrees.app.";
-    }).catch(function() {
-      nameBtn.disabled = false;
-      note.textContent = "That did not save. Try again in a moment.";
-    });
-  });
 
   // The lane picker. Two panes, one visible, and the tab that is on says so
   // to a screen reader as well as in ink.
@@ -348,53 +231,8 @@ const canonical = `${BASE_URL}/account`;
     document.getElementById(pair[0]).addEventListener("click", function() { lane(pair[0]); });
   });
   // The nav's heart, the footer and /saved have all pointed at /account#saved
-  // for weeks. The anchor still lands on this block, and now it opens the lane
-  // it names rather than the other one.
+  // for weeks. The anchor lands on this block and opens the lane it names.
   if (location.hash === "#saved") lane("lane-saved");
-
-  document.getElementById("signout").addEventListener("click", function() {
-    try {
-      var s = JSON.parse(localStorage.getItem("ancienttrees_session"));
-      if (s) fetch(SB + "/auth/v1/logout", { method: "POST",
-        headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } }).catch(function() {});
-    } catch (e) {}
-    try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
-    if (window.atClearMine) window.atClearMine();
-    show("st-signin");
-  });
-  // Account deletion: calls the delete_user() SECURITY DEFINER function in
-  // Supabase (runs as owner, deletes auth.users row for auth.uid() only).
-  // Two clicks on purpose; no dialog dependency. The on-device collection in
-  // ancienttrees_seen is deliberately left alone: it was never on the server.
-  var delBtn = document.getElementById("del-acct");
-  var delArmed = false;
-  delBtn.addEventListener("click", function() {
-    if (!delArmed) {
-      delArmed = true;
-      delBtn.textContent = "This permanently deletes your account and email. Click again to confirm.";
-      return;
-    }
-    var s = null;
-    try { s = JSON.parse(localStorage.getItem("ancienttrees_session")); } catch (e) {}
-    if (!s) { show("st-signin"); return; }
-    fetch(SB + "/rest/v1/rpc/delete_user", { method: "POST",
-      headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token,
-                 "Content-Type": "application/json" }, body: "{}" })
-      .then(function(r) {
-        if (r.ok) {
-          try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
-          if (window.atClearMine) window.atClearMine();
-          delArmed = false;
-          delBtn.textContent = "Delete my account";
-          show("st-signin");
-        } else {
-          delBtn.textContent = "Deletion failed. Try again, or email us via the privacy page.";
-        }
-      })
-      .catch(function() {
-        delBtn.textContent = "Deletion failed (network). Try again.";
-      });
-  });
 })();
 </script>
 `} />
