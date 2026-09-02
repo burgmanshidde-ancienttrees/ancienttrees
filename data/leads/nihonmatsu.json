@@ -1,0 +1,17 @@
+{
+ "city": "Nihonmatsu",
+ "country": "Japan",
+ "city_slug": "nihonmatsu",
+ "note": "Verify pass 2026-09-02, sourced from the famous-japan lead pile (data/leads/_famous-japan.json, Commons named-tree sweep). Two trees fully verified, sourced, pinned and written to data/research/nihonmatsu-verified.json: nhm_001 Kohata no O Sugi (a lightning-hollowed cedar braced by more than ten struts, at Okitsushima Shrine on Mt Kohata) and nhm_002 Sugisawa no O Sugi (a five-stemmed cedar the village was renamed after in 1643, the healthiest of the two). Both are National Natural Monuments, roughly 12.4 km apart and not walkable together. That is below the 4-tree floor for a page.\n\nNOT PUBLISHED 2026-09-02. Both trees are fully verified and their stories already written (see data/research/nihonmatsu-verified.json), but Nihonmatsu City stands at two, and the 2026-08-31 single-tree-destination exception does not apply cleanly to either: it licenses a place publishing below four when ONE tree is the destination, and here there are two separate trees in two separate parts of the city, neither individually established as a pilgrimage draw in the sources found. So both wait here.\n\nOne more candidate worth a future look: Okitsushima Shrine's own grounds reportedly hold other large cedars and cypresses said to have been planted by the daimyo Gamo Ujisato, noted in nhm_001's research but not itself verified as a distinct tree.\n\nDo not re-verify nhm_001 or nhm_002. If a future pass finds two more publicly reachable, verified trees in Nihonmatsu City, both are ready to ship immediately, story and all.",
+ "leads": [
+  {
+   "name": "Cedars/cypresses of Okitsushima Shrine attributed to Gamo Ujisato",
+   "species": "likely Japanese Cedar (Cryptomeria japonica) or Hinoki Cypress (Chamaecyparis obtusa)",
+   "lat": null,
+   "lng": null,
+   "status": "lead",
+   "why": "Mentioned in passing in nhm_001's own research as other large trees in the same shrine grounds, reportedly planted by daimyo Gamo Ujisato. Not itself identified as a single named, individually measured specimen; needs its own search before it becomes a candidate."
+  }
+ ],
+ "blocked": []
+}
