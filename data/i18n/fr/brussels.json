@@ -1,0 +1,272 @@
+{
+  "_note": "Overlay français de Bruxelles, écrit à la main le 2026-09-02. Traduction de rendu, pas de recherche : chaque fait, âge, espèce et note d'accès vient de data/cities/brussels.json et y reste vérifié, réserves comprises. Bruxelles est bilingue, et les lieux portent ici leur nom français, Bois de la Cambre, Forêt de Soignes, parc du Cinquantenaire, parc Léopold, Watermael-Boitsfort, Berchem-Sainte-Agathe, sauf les noms propres qui n'existent qu'en néerlandais, le Kasterlinde et la Kasterlindenstraat. Texte seul : coordonnées, photos, licences et parcours restent dans le fichier anglais.",
+  "city": "Bruxelles",
+  "title": "Arbres remarquables de Bruxelles : les 30 plus beaux",
+  "meta_description": "Bruxelles inventorie ses arbres remarquables depuis 2002. Le chêne de près de 400 ans du parc Jacques Brel, et 29 autres à portée de métro.",
+  "intro": "Bruxelles tient depuis 2002 un inventaire scientifique de ses arbres remarquables, plus d'un millier de sujets classés par âge, rareté et poids historique, ce que peu de villes font. Cette minutie administrative explique des âges et des circonférences inhabituellement précis. Elle éclaire aussi un tour que la ville s'est joué à elle-même : pour créer le parc du Cinquantenaire en 1880, elle n'a pas planté de jeunes sujets. Elle a transplanté des arbres adultes venus d'un ancien cimetière et de la Forêt de Soignes, et le parc neuf paraissait centenaire le jour de son ouverture.",
+  "question_title": "Quel est le plus vieil arbre de Bruxelles ? (400 ans)",
+  "question_meta": "Le Chêne Joséphine, chêne pédonculé de près de 400 ans du parc Jacques Brel à Forest, est le plus vieil arbre de Bruxelles. Et 29 autres arbres.",
+  "question_answer": "Le plus vieil arbre documenté de Bruxelles est le Chêne Joséphine, un chêne pédonculé du parc Jacques Brel, à Forest, estimé à près de 400 ans d'après un tronc d'un peu plus de six mètres de tour. L'inventaire du patrimoine bruxellois le donne pour probablement le plus vieux chêne de toute la Région de Bruxelles-Capitale. Il se dresse dans un parc public qui n'a ouvert qu'en 1980, alors que l'arbre, lui, le précède de très loin.",
+  "question_context": "L'âge du Chêne Joséphine vient de sa circonférence plutôt que d'un acte de plantation : à 6,05 mètres de tour, mesurés à hauteur de poitrine, les forestiers appliquent les tables de croissance du chêne pédonculé et arrivent à un chiffre proche de quatre siècles, assez vieux pour que l'inventaire du patrimoine bruxellois le donne pour probablement le plus vieux chêne de toute la région. Aucun document ne nomme de date de plantation, puisque le terrain sur lequel il pousse faisait encore partie du Kersbeekbosch, un bois déjà consigné sous ce nom en 1648, bien avant que quiconque songe à noter les arbres qui s'y trouvaient. Le concurrent le plus sérieux pour le titre de doyen est le Kasterlinde, un tilleul qui marque le point exact où trois communes se rejoignent, documenté sur les cartes depuis 1777 et donc vieux d'au moins deux siècles et demi de façon prouvée, même si son âge réel estimé, calculé d'après la circonférence, ressort plus jeune que celui du chêne. Le parc Jacques Brel est lui-même un espace public récent, ouvert par la commune de Forest en 1980 seulement, après des décennies de propriété privée, mais le chêne qu'il abrite est le plus vieil être vivant accessible depuis une station de métro bruxelloise. La visite ne coûte rien.",
+  "faq": [
+    {
+      "q": "Quel est le plus vieil arbre de Bruxelles ?",
+      "a": "Très probablement le Chêne Joséphine, un chêne pédonculé du parc Jacques Brel, à Forest, estimé à près de 400 ans d'après sa circonférence. L'inventaire du patrimoine bruxellois le donne pour probablement le plus vieux chêne de la région."
+    },
+    {
+      "q": "Les arbres remarquables de Bruxelles sont-ils gratuits ?",
+      "a": "Oui, les trente se trouvent dans des parcs, des jardins et des rues publics, sans droit d'entrée, ce qui est rare comparé aux villes où les arbres les plus vieux se tiennent derrière la grille d'un château ou d'un palais."
+    },
+    {
+      "q": "Pourquoi Bruxelles connaît-elle si bien l'âge de ses propres arbres ?",
+      "a": "Depuis 2002, l'administration régionale du patrimoine tient un inventaire scientifique des arbres remarquables : circonférence mesurée, rareté vérifiée, association historique consignée. C'est pourquoi les circonférences et les âges donnés ici sont inhabituellement précis par rapport à la plupart des villes."
+    },
+    {
+      "q": "Pourquoi les arbres les plus impressionnants de Bruxelles ne sont-ils pas les plus vieux ?",
+      "a": "Bruxelles a déjà transplanté des arbres adultes plutôt que d'attendre que de jeunes sujets poussent. Quand le parc du Cinquantenaire a été créé en 1880, les jardiniers de la ville y ont amené des arbres déjà adultes venus d'un ancien cimetière et de la Forêt de Soignes, si bien que plusieurs de ses arbres les plus frappants sont plus vieux que le parc, mais plus jeunes que les sujets réellement séculaires ailleurs sur cette liste."
+    }
+  ],
+  "strings_note": "Champs par arbre : name, species (nom français courant, même latin), age_estimate, access, transport, story. Histoires de 150 à 250 mots, même exigence que l'anglais, aucun tiret cadratin.",
+  "trees": {
+    "bru_001": {
+      "name": "Le Chêne Joséphine",
+      "species": "Chêne pédonculé (Quercus robur)",
+      "age_estimate": "près de 400 ans",
+      "access": "Gratuit, parc public",
+      "transport": "Tram ou bus jusqu'à Forest Centre, puis quelques minutes à pied dans le parc",
+      "story": "L'inventaire du patrimoine bruxellois donne ce chêne pour probablement le plus vieil arbre, toutes espèces confondues, de toute la région, et sa preuve tient en un seul chiffre : 6,05 mètres de circonférence, mesurés à hauteur de poitrine. Ce tour de tronc correspond, d'après les tables de croissance du chêne, à un âge proche de quatre cents ans. Aucun acte de plantation n'existe pour un arbre aussi ancien, poussé sur ce qu'on appelait simplement le Kersbeekbosch, un bois déjà nommé dans un document de 1648, un siècle entier avant que quiconque songe à consigner les arbres qui s'y trouvaient. Un industriel du XXe siècle a bâti sur ces terres un château et un pavillon d'agrément, et rebaptisé l'endroit parc des Éperons d'Or, mais la commune de Forest n'a acquis le domaine qu'en 1979 et ne l'a ouvert au public qu'en 1980, sous le nom de parc Jacques Brel. Le chêne, déjà âgé de trois siècles et demi, n'a guère prêté attention à la paperasse. Haut d'une vingtaine de mètres, avec un houppier façonné par des siècles de croissance sans hâte, il partage aujourd'hui son parc avec des joggeurs, une plaine de jeux et les logements récents de Bruxelles : le chêne public d'une commune populaire, plus vieux que la plupart des bâtiments qui l'entourent réunis."
+    },
+    "bru_002": {
+      "name": "Le Kasterlinde",
+      "species": "Tilleul à grandes feuilles (Tilia platyphyllos)",
+      "age_estimate": "plus de 200 ans",
+      "access": "Gratuit, coin de rue public",
+      "transport": "Bus jusqu'à la limite Berchem-Sainte-Agathe / Dilbeek",
+      "story": "Un seul tilleul marque le point exact où trois communes bruxelloises se rejoignent, et il occupe ce poste depuis 1777 au moins, quand la carte de Ferraris, premier levé détaillé des Pays-Bas autrichiens, l'a relevé à la borne entre Molenbeek-Saint-Jean, Berchem-Sainte-Agathe et Dilbeek. Les cartes suivantes le suivent par son nom : un levé de 1821 le montre à côté d'une chapelle démolie dans la même décennie, et une carte de Bruxelles et de ses environs de 1858 nomme simplement l'endroit Kaster Linde. Son tronc est passé de 2,75 mètres de tour au début des années 1900, quand le botaniste belge Chalon l'a mesuré pour son livre sur les arbres du pays, à 3,15 mètres aujourd'hui, une croissance qui place son âge réel bien au-delà de deux siècles, avant même de compter la trace documentaire. Une rue et un café voisin, In de Linde, lui doivent leur nom. Contrairement à un sujet de jardin choisi pour son allure, cet arbre existe parce que des générations d'arpenteurs avaient besoin d'un point fixe qui ne bougerait pas, et un tilleul à croissance lente, borne de limite avant même que la Belgique existe comme pays, s'est révélé exactement cela."
+    },
+    "bru_003": {
+      "name": "Le Platane d'Orient du parc Léopold",
+      "species": "Platane d'Orient (Platanus orientalis)",
+      "age_estimate": "200 ans",
+      "access": "Gratuit, parc public",
+      "transport": "Métro Maelbeek ou Schuman, quelques minutes à pied",
+      "story": "Le plus gros arbre de son espèce à Bruxelles pousse dans un parc bâti sur un ruisseau disparu. Ce platane d'Orient, mesuré à 6,48 mètres de tour en 2023, n'est entré à l'inventaire légal du patrimoine régional qu'en août 2024, une reconnaissance officielle arrivée environ deux siècles après l'arbre lui-même. Les platanes signalent l'eau depuis l'Antiquité, quand les Grecs les plantaient près des sources et des puits pour ombrager les voyageurs, et celui-ci perpétue la tradition sans que personne l'ait voulu : le Maelbeek coule toujours sous terre à proximité, sous la chaussée d'Etterbeek, et une petite tour au pied de la butte du parc a servi de maison d'étang de pêcherie au XVIIe siècle, bien avant que le platane existe. Haut d'environ 33 mètres, avec un houppier de 38 mètres d'envergure, l'arbre ombrage aujourd'hui un parc dessiné dans les années 1850 autour d'une propriété privée, plus tard absorbée par le quartier qui entoure le Parlement européen. Par la circonférence, c'est le plus grand sujet de son espèce de toute la Région de Bruxelles-Capitale : un arbre de deux cents ans, tranquille derrière des institutions bien plus jeunes que lui."
+    },
+    "bru_004": {
+      "name": "Les Chênes et Hêtres des étangs du Bois de la Cambre",
+      "species": "Chêne pédonculé (Quercus robur)",
+      "age_estimate": "peuplement ancien, non daté",
+      "access": "Gratuit, parc public",
+      "transport": "Tram jusqu'au terminus du Bois de la Cambre",
+      "story": "Le parc le plus mondain de Bruxelles est aussi un fragment de forêt plus ancien que les remparts qui entouraient jadis la ville. Quand les paysagistes de Léopold II ont taillé le Bois de la Cambre dans la lisière nord de la Forêt de Soignes, en 1861 et 1862, et l'ont relié au centre par la nouvelle avenue Louise, ils ont laissé debout une bonne part du couvert existant plutôt que de tout replanter. Autour des étangs poussent aujourd'hui des chênes pédonculés, des hêtres, des merisiers et des pins noirs d'Autriche assez vieux pour que plus de quatre-vingts d'entre eux figurent à l'inventaire officiel bruxellois des arbres remarquables, sur environ soixante-dix sujets de ce type répartis dans les 124 hectares du parc. Aucun de ces arbres de bord d'étang ne porte de date de plantation documentée, aucun âge n'est donc avancé ici, seulement qu'il s'agit de vestiges d'un boisement bien plus vaste : la Forêt de Soignes se poursuit vers le sud à partir de cette même ligne d'arbres, et une section de 270 hectares strictement protégée, plus loin, a été inscrite au patrimoine mondial de l'UNESCO en 2017 pour ses vieilles hêtraies, rappel de ce dans quoi ce parc a été découpé plutôt qu'affirmation sur ce coin-ci."
+    },
+    "bru_005": {
+      "name": "Le Séquoia géant du parc de Woluwe",
+      "species": "Séquoia géant (Sequoiadendron giganteum)",
+      "age_estimate": "125 à 135 ans",
+      "access": "Gratuit, parc public",
+      "transport": "Tram jusqu'au parc de Woluwe, ou bus depuis la station de métro Montgomery",
+      "story": "Le plus gros arbre de Bruxelles par le tour de tronc n'est pas européen du tout. Ce séquoia géant, mesuré à 8,66 mètres de circonférence en 2017, plus épais que tout autre arbre relevé dans la région, pousse dans un parc qui n'existait pas avant les années 1890, quand le paysagiste Émile Lainé l'a dessiné pour Léopold II en corridor vert reliant le site de l'Exposition universelle de 1897 au Cinquantenaire à un second site d'exposition à Tervueren. Le séquoia n'a donc, au plus, guère plus d'un siècle, ce qui le rend remarquable par la masse qu'un arbre véritablement jeune peut prendre : les séquoias géants vivent deux mille ans et davantage dans leur Californie natale, et atteignent 50 à 60 mètres même sous le climat plus frais et plus humide de la Belgique. Planté comme pièce d'apparat pour une exposition internationale plutôt que rescapé d'une forêt ancienne, il a passé à peine un dixième de sa durée de vie naturelle à atteindre une taille qu'il faudrait plusieurs siècles à la plupart des espèces indigènes belges pour égaler. Le parc qui l'entoure compte aujourd'hui quelque 180 espèces d'arbres, et celui-ci est de loin le plus épais de toutes."
+    },
+    "bru_006": {
+      "name": "Le Hêtre pourpre du parc Tournay-Solvay",
+      "species": "Hêtre pourpre (Fagus sylvatica f. purpurea)",
+      "age_estimate": "150 à 200 ans",
+      "access": "Gratuit, parc public",
+      "transport": "Bus jusqu'à la chaussée de La Hulpe, Watermael-Boitsfort",
+      "story": "Alfred Solvay, frère du chimiste industriel Ernest Solvay, fit bâtir un manoir de campagne à la lisière de la Forêt de Soignes en 1878, et le parc qui l'entoure porte toujours le nom de sa famille. Sa fille Thérèse Tournay-Solvay agrandit ensuite le domaine, et au début du XXe siècle le paysagiste Jules Buyssens le redessina dans la composition qui subsiste aujourd'hui, mêlant plantations exotiques et restes de la végétation forestière d'origine. Parmi les survivants figure un hêtre pourpre, dont le feuillage rouge presque noir tranche délibérément sur les hêtres verts ordinaires voisins, membre d'un groupe de grands arbres du parc assez âgés pour que plusieurs, celui-ci compris, figurent à l'inventaire officiel du patrimoine naturel de la Région bruxelloise. Aucune source ne donne d'âge propre à cet arbre précis, seulement que les arbres de ce type dans le parc vont d'environ un siècle et demi à deux siècles, une fourchette assez large pour être honnête plutôt que précise. Le parc s'appuie directement contre la Forêt de Soignes, à Watermael-Boitsfort, il est gratuit, et bien plus calme que les grands espaces verts connus de Bruxelles."
+    },
+    "bru_007": {
+      "name": "Le Douglas de l'Hippodrome",
+      "species": "Sapin de Douglas (Pseudotsuga menziesii)",
+      "age_estimate": "jusqu'à 150 ans",
+      "access": "Gratuit, parc public (ancien hippodrome, en cours de réaménagement)",
+      "transport": "Tram ou bus jusqu'à Boitsfort, quelques minutes à pied",
+      "story": "Le plus haut arbre de Bruxelles pousse sur un ancien champ de courses. Ce douglas, haut de 33 mètres, s'est enraciné quelque temps après 1875, l'année où la Ville de Bruxelles a loué environ 25 hectares de lisière forestière à la Société royale d'encouragement pour l'amélioration des races de chevaux, qui y a bâti un hippodrome à deux tribunes dès 1878. L'espèce elle-même ne pouvait pas pousser ici plus tôt : le douglas n'a atteint l'Europe depuis la côte pacifique américaine qu'en 1827, rapporté par le botaniste écossais dont il porte le nom, si bien que le plus vieux sujet possible en Belgique n'atteint pas deux siècles. Celui-ci, dressé au-dessus d'un hippodrome qui a fonctionné bien plus d'un siècle avant de fermer aux chevaux, a eu tout au plus un siècle et demi pour dépasser en hauteur toutes les espèces indigènes alentour, et c'est sa hauteur, non son âge, qui constitue son record. Le site de l'hippodrome est en cours de réaménagement en parc public et en campus universitaire, et l'arbre, comme une bonne part du couvert boisé qui l'entoure, doit rester exactement là où il est pendant cette transition."
+    },
+    "bru_008": {
+      "name": "Le Sophora de l'Abbaye de la Cambre",
+      "species": "Sophora du Japon (Styphnolobium japonicum)",
+      "age_estimate": "inconnu, arbre adulte",
+      "access": "Gratuit, jardin public",
+      "transport": "Tram jusqu'à l'arrêt Abbaye ou Bois de la Cambre",
+      "story": "Un sophora du Japon pousse dans le jardin d'un monastère qui a abrité des cisterciennes pendant près de six cents ans. L'abbaye de la Cambre a été fondée en 1201 et supprimée en 1796 sous l'occupation française, et si ses pierres les plus anciennes, l'église abbatiale et une partie du cloître, remontent aux XIIIe et XIVe siècles, l'essentiel du dessin des jardins autour de cet arbre date du XVIIIe. Le sophora est bien plus jeune que tout cela : l'espèce n'a atteint les jardins européens qu'au milieu des années 1700 et a mis plus longtemps encore à devenir un ornement courant. Son tronc, mesuré à 3,08 mètres de tour en 2012, en fait pourtant le sixième plus gros de son espèce relevé dans la région bruxelloise. Un feuillage léger, presque plumeux, le distingue des arbres plus lourds et plus vieux de l'abbaye, et à la fin de l'été il produit de longues gousses charnues plutôt que les fleurs qu'on attend d'un arbre d'ornement. Les bâtiments abritent aujourd'hui une école et des bureaux communaux, mais les jardins restent ouverts au public, gratuits, en plein Ixelles."
+    },
+    "bru_009": {
+      "name": "Le Mûrier noir du Jardin botanique",
+      "species": "Mûrier noir (Morus nigra)",
+      "age_estimate": "peut-être 200 ans",
+      "access": "Gratuit, parc public",
+      "transport": "Métro Botanique, 2 min à pied",
+      "story": "Un mûrier peut-être plus vieux que la Belgique pousse dans un jardin qui précède le pays de quatre ans. Le Jardin botanique de l'État a ouvert sur ce site en 1826, sur une parcelle en terrasses de 6,4 hectares à l'angle de l'actuelle rue Royale et du boulevard du Jardin Botanique, et ce mûrier noir, au tronc de plus de deux mètres de tour, est assez vieux pour dater vraisemblablement des plantations d'origine des années 1820, même si aucun document conservé n'en nomme l'année exacte. Le mûrier noir est une espèce méditerranéenne, lente à fructifier et réputée pour teindre en noir violacé tout ce qui se trouve sous lui quand ses fruits tombent à la fin de l'été, une habitude domestique qui en a fait pendant des siècles un habitué des jardins de monastères et de manoirs européens, bien avant que celui-ci n'arrive dans une collection botanique publique. Le jardin a cessé d'être une collection scientifique active il y a des décennies et n'est plus qu'un parc public appelé simplement le Botanique, sa serre du XIXe siècle reconvertie en salle de concert, mais les arbres plantés pour la recherche sont restés exactement là où les botanistes les avaient laissés."
+    },
+    "bru_010": {
+      "name": "L'Allée de marronniers du Cinquantenaire",
+      "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+      "age_estimate": "peut-être près de 200 ans",
+      "access": "Gratuit, parc public",
+      "transport": "Métro Schuman ou Mérode, quelques minutes à pied",
+      "story": "Quand Bruxelles a construit le parc du Cinquantenaire en 1880 pour les cinquante ans de la Belgique, elle a triché sur les arbres. Plutôt que de planter de jeunes sujets et d'attendre des décennies qu'un parc neuf ait l'air installé, les jardiniers de la ville ont transplanté des arbres déjà adultes, venus de l'ancien cimetière du quartier Léopold, du Bois de la Cambre et de la lisière même de la Forêt de Soignes. Les marronniers d'Inde qui bordent l'une des allées principales du parc comptent parmi les témoins les plus nets de ce tour de passe-passe : adultes à leur arrivée, ils sont plus vieux que le parc de toutes les décennies qu'ils avaient déjà poussé avant le déménagement, soit peut-être près de deux siècles aujourd'hui, même si aucun acte de plantation ne confirme un chiffre précis pour un arbre de la rangée. Une quinzaine d'arbres de l'ensemble du Cinquantenaire figurent au registre officiel bruxellois des arbres remarquables, marronniers compris, aux côtés de robiniers faux-acacias, d'un érable argenté et d'un rare aulne de Corse, mais l'allée de marronniers est celle sous laquelle passe le plus de visiteurs sans savoir que ces arbres sont plus vieux que l'arc de triomphe au centre du parc."
+    },
+    "bru_011": {
+      "name": "Le Chêne de Turner du parc d'Egmont",
+      "species": "Chêne de Turner (Quercus x turneri)",
+      "age_estimate": "environ 125 ans",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "Tout registre commence quelque part, et Bruxelles a commencé ici. Quand la région a ouvert son inventaire scientifique des arbres remarquables, ce chêne trapu et persistant a été la toute première entrée, en 1999, avant chaque séquoia géant et chaque chêne de quatre cents ans ajouté depuis. Il l'a mérité sans être ni vieux ni haut. Il monte à dix mètres et étale un houppier de dix-sept mètres, une silhouette qui tient plus du parasol que de l'arbre, et son tronc fait 2,90 mètres de tour, deuxième de son espèce dans toute la région. Le chêne de Turner est une invention de jardin plutôt qu'une espèce sauvage, un croisement entre le chêne pédonculé commun et le chêne vert méditerranéen obtenu dans une pépinière de l'Essex et nommé d'après le pépiniériste qui l'a élevé. Il a gardé les feuilles coriaces de son parent méridional : il reste vert tout l'hiver bruxellois et ne se dénude brièvement qu'au printemps, quand la pousse nouvelle chasse les vieilles feuilles, l'inverse de tous les chênes qui l'entourent. Le paysagiste Edmond Galoppin l'a très probablement planté lorsqu'il a refait ces jardins de palais en parc à l'anglaise, en 1901. Un second chêne de Turner, plus haut, pousse à quelques minutes de là, sur les mêmes pelouses."
+    },
+    "bru_012": {
+      "name": "Le Ginkgo du parc d'Egmont",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "environ 120 ans",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "Ce ginkgo est lentement abîmé par ceux qui l'aiment. C'est le septième plus gros de son espèce relevé dans la région bruxelloise, 3,27 mètres de tour et vingt mètres de haut, et il se dresse en pleine pelouse dans le seul parc public de l'ancienne enceinte à occuper tout un intérieur d'îlot, invisible depuis chacune des rues qui l'entourent. C'est donc l'endroit évident où s'allonger par un après-midi chaud, et assez de gens se sont couchés sous cet arbre-ci pour que le sol au-dessus de ses racines soit tassé dur, raison pour laquelle les experts régionaux notent son état comme légèrement défectueux alors qu'il est, pour un ginkgo, extrêmement jeune. Les ginkgos sont les derniers survivants d'une lignée déjà ancienne quand sont apparues les premières plantes à fleurs, et ils sont réputés se moquer de la pollution, des maladies et des radiations. Le sol tassé est la seule chose dont ils ne se moquent pas. La récompense, si l'on se tient à deux mètres, arrive en novembre, quand les feuilles en éventail virent à un jaune de beurre uniforme puis lâchent presque toutes d'un coup, posant un cercle jaune sur l'herbe. Un noyer, de l'autre côté de la pelouse, tourne au même moment, si bien que toute la clairière jaunit ensemble."
+    },
+    "bru_013": {
+      "name": "Le Tulipier du parc d'Egmont",
+      "species": "Tulipier de Virginie (Liriodendron tulipifera)",
+      "age_estimate": "environ 120 ans",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "À l'automne 2018, un institut d'art bruxellois a adopté cet arbre. L'ISELP, dont le bâtiment se trouve à quelques rues, a choisi le tulipier du parc d'Egmont comme pièce vivante d'une exposition intitulée A Forest, au motif qu'un monument dont on peut faire le tour, dans un parc qui relie le haut et le bas de la ville, fait ce qu'un mur de galerie ne fait pas : il ralentit le passant. L'arbre est un bon candidat pour ce rôle. Il fait 3,06 mètres de tour et vingt-sept mètres de haut, c'est le seul sujet de cette liste que les experts régionaux notent en franche bonne santé, et il porte la feuille la plus étrange du parc, coupée à plat au bout comme si quelqu'un l'avait taillée aux ciseaux. Ses fleurs expliquent son nom et expliquent aussi pourquoi presque personne ne les voit : vert jaune, en forme de tulipe, produites haut dans le houppier en juin, où elles restent au-dessus du regard jusqu'à ce qu'une bourrasque en dépose une sur le chemin. Les Européens voulaient tant cet arbre américain au XVIIIe siècle qu'on en a passé les graines en contrebande. Trois cents ans plus tard, l'enthousiasme est revenu, sous la forme d'une exposition d'art."
+    },
+    "bru_014": {
+      "name": "Le Grand Érable sycomore du parc d'Egmont",
+      "species": "Érable sycomore (Acer pseudoplatanus)",
+      "age_estimate": "120 à 190 ans",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée de la rue aux Laines ou celle du boulevard de Waterloo",
+      "story": "Personne ne plante plus d'érable sycomore volontairement. Il se ressème dans les gouttières et les talus de chemin de fer partout en Europe, pousse vite, et se fait abattre bien avant de devenir quoi que ce soit, ce qui rend le plus grand arbre de ce parc digne d'un regard vers le haut : 32 mètres, avec un fût net de six mètres avant la première branche et une circonférence de 3,97 mètres mesurée en 2026. Les experts régionaux le classent troisième érable sycomore le plus épais relevé à Bruxelles. C'est aussi pourquoi le parc paraît plus grand que son hectare et demi. Le parc d'Egmont est fermé sur ses quatre côtés par des immeubles, seul espace vert public de l'ancienne enceinte sans aucune façade sur rue, et un arbre de cette taille pousse la perception du lieu vers le haut plutôt que vers l'extérieur. L'érable sycomore est en Belgique depuis si longtemps que la plupart des gens le croient indigène, alors qu'il est venu des montagnes d'Europe centrale il y a des siècles et s'y est installé aussi complètement que n'importe quelle espèce locale. Ses samares tombent en vrille en septembre, en quantités qui rempliraient le parc entier de semis si les jardiniers les laissaient faire."
+    },
+    "bru_015": {
+      "name": "Le Cèdre du Liban du parc d'Egmont",
+      "species": "Cèdre du Liban (Cedrus libani)",
+      "age_estimate": "120 à 160 ans",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée de la rue aux Laines",
+      "story": "Ce cèdre a passé sa vie à se faire passer pour un feuillu. Au lieu de la colonne droite et unique que son espèce bâtit d'ordinaire, son tronc se divise bas en deux membres énormes, l'un penché au-dessus des jardins arrière de la rue du Grand Cerf, l'autre plongeant dans le coin boisé du parc, et la silhouette qui en résulte évoque bien plus un vieux hêtre qu'un conifère. Approchez et le déguisement tombe aussitôt : l'odeur de résine ne trompe pas, les aiguilles poussent en rosettes serrées plutôt qu'une à une, et les cônes se tiennent droit sur les branches comme de petits tonneaux aux écailles bien plaquées. Il mesure 2,98 mètres de tour et se tient à la limite du parc plutôt que sur ses pelouses, à demi visible depuis la rue, ce qui explique sans doute qu'il soit le moins photographié des arbres inventoriés du parc. Les cèdres du Liban ont gagné les jardins d'Europe occidentale au XVIIe siècle, et les domaines qui pouvaient se les offrir les plantaient comme des déclarations. Celui-ci a survécu à la déclaration. Le palais voisin a brûlé en 1892 et a été reconstruit, les jardins ont été redessinés deux fois, la ville a acheté l'ensemble en 1918, et le cèdre a continué de se fendre en deux directions."
+    },
+    "bru_016": {
+      "name": "Le Chêne rouge du parc d'Egmont",
+      "species": "Chêne rouge d'Amérique (Quercus rubra)",
+      "age_estimate": "environ 120 ans",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "Le parcours de promenade de Bruxelles Environnement dans ce parc renonce à décrire cet arbre et dit simplement qu'en automne on le remarquera avant de lire le panneau. C'est justice. Le chêne rouge d'Amérique prend un écarlate profond qu'aucun chêne européen ne sait produire, le tient une quinzaine de jours en octobre, et le fait ici environ un mois avant que le ginkgo, à trente mètres, ne passe à l'or, si bien que la même clairière joue deux fois par saison. L'arbre mesure 3,42 mètres de tour et atteint 24 mètres, avec un houppier de dix-huit mètres d'envergure. Ses feuilles sont l'identification la plus facile du parc : larges, minces, avec une pointe en soie au bout de chaque lobe, rien à voir avec les lobes arrondis des chênes pédonculés que la Belgique produit naturellement. Il vient de l'est de l'Amérique du Nord, où il est un arbre de forêt et non un sujet de parc, et il a gagné les jardins européens au XVIIIe siècle comme une nouveauté poussant plus vite que tout ce qui était local. Cette croissance rapide explique aussi qu'il n'ait jamais atteint ici l'âge d'un vrai chêne vétéran, et qu'un arbre d'âge moyen paraisse déjà imposant."
+    },
+    "bru_017": {
+      "name": "Le Platane commun du parc d'Egmont",
+      "species": "Platane commun (Platanus x acerifolia)",
+      "age_estimate": "non documenté",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée de la rue aux Laines",
+      "story": "Le deuxième arbre le plus épais de ce parc n'est que 98e de son espèce à Bruxelles, ce qui en dit plus sur la ville que sur l'arbre. La région a mesuré tant de gros platanes communs qu'un tronc de 3,67 mètres de tour se classe à peine, et celui-ci tient pourtant un houppier de vingt mètres au-dessus des pelouses d'Egmont, seul le grand érable sycomore le battant à la circonférence.\n\nLe platane commun est un hybride que personne n'avait prévu. Un platane d'Orient et un platane d'Amérique se sont croisés dans un jardin européen au XVIIe siècle et ont donné un arbre plus solide que ses deux parents, qui a fini par border plus de rues que quoi que ce soit d'autre sur le continent. Il supporte les racines tassées, la sécheresse et l'air sale, et il perd son écorce par plaques, l'habitude qui le garde propre dans une ville qui ne l'est pas.\n\nLe cadre est la partie curieuse. Le parc d'Egmont fait un hectare et demi enfermé de tous côtés par les immeubles du Sablon, et on y entre par des passages plutôt que par des grilles : voilà comment un arbre de cette taille se dresse à cinq minutes de l'avenue Louise en restant inconnu de ceux qui y font leurs courses chaque semaine.\n\nL'inventaire légal bruxellois enregistre pour celui-ci la circonférence et le houppier et, fait rare pour un registre aussi minutieux, aucune hauteur."
+    },
+    "bru_018": {
+      "name": "Le Marronnier du parc d'Egmont",
+      "species": "Marronnier d'Inde (Aesculus hippocastanum)",
+      "age_estimate": "non documenté",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée de la rue aux Laines",
+      "story": "Le marronnier d'Inde est l'un des arbres les plus plantés d'Europe et l'un des plus rares à l'état sauvage. Son aire naturelle se réduit à quelques ravins de montagne du nord de la Grèce, d'Albanie et de Macédoine du Nord, quelques milliers d'arbres dans des gorges, d'où des collectionneurs du XVIe siècle l'ont emporté vers Istanbul, puis Vienne, puis partout. Les marrons en ont fait une institution enfantine sur tout un continent ; la population sauvage est assez réduite pour être classée menacée.\n\nCelui-ci fait 3,08 mètres de tour, avec un houppier de quinze mètres, sur des pelouses fermées de tous côtés par les immeubles du Sablon. Bruxelles le classe quatre-vingt-dixième de son espèce dans la région, ce qui, pour un arbre aussi répandu, est une place honorable.\n\nÊtre planté partout lui a coûté. Depuis les années 1990, la mineuse du marronnier s'est répandue à travers l'Europe, un papillon dont les larves creusent les feuilles jusqu'à les brunir et les recroqueviller dès août, si bien que la plupart des marronniers du continent paraissent à moitié morts deux mois avant l'automne sans être réellement malades. Le chancre bactérien est le sérieux, et celui qui tue.\n\nLes fleurs montent en chandelles blanches en mai. Les marrons tombent fin septembre, seule quinzaine de l'année où quelqu'un regarde le sol sous cet arbre."
+    },
+    "bru_019": {
+      "name": "Le Platane d'Orient du parc d'Egmont",
+      "species": "Platane d'Orient (Platanus orientalis)",
+      "age_estimate": "non documenté",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "Soixante-dix mètres séparent cet arbre de son propre hybride. Le platane d'Orient est l'un des deux parents du platane commun, et les deux poussent dans le parc d'Egmont à portée de vue l'un de l'autre, le parent à 2,72 mètres de tour et le descendant à 3,67, ce qui résume assez bien le comportement de ce croisement partout : plus rapide, plus solide, plus épais que l'arbre dont il vient.\n\nPlatanus orientalis est le platane de la Méditerranée orientale, l'arbre des places de marché grecques et des jardins persans, l'espèce sous laquelle Hippocrate aurait enseigné à Kos et celle que Xerxès aurait fait couvrir d'or en arrêtant son armée. Il diffère de son descendant par la feuille, découpée bien plus profondément en lobes étroits, et par le tempérament : il veut de l'eau et de la chaleur, et pousse lentement quand il n'en a pas.\n\nCelui-ci atteint vingt-deux mètres, avec un houppier de douze mètres, et le panneau d'information du parc le nomme, ce à quoi la plupart des 582 arbres de l'inventaire légal régional n'ont jamais droit. Bruxelles le classe vingt et unième de son espèce.\n\nLe champion régional se trouve à un kilomètre et demi à l'est, au parc Léopold : le platane d'Orient le plus épais relevé dans la ville, bonne raison de marcher de l'un à l'autre."
+    },
+    "bru_020": {
+      "name": "Le Chicot du Canada du parc d'Egmont",
+      "species": "Chicot du Canada (Gymnocladus dioica)",
+      "age_estimate": "non documenté",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "En néerlandais, cet arbre est le doodsbeenderenboom, l'arbre des ossements. Le nom parle de son hiver. Le chicot du Canada se met en feuilles plus tard que presque tout le reste dans un parc belge, souvent pas avant la fin mai, se dénude tôt en automne, et passe les mois intermédiaires en gros rameaux gris épais et nus, dont quelqu'un a un jour décidé qu'ils ressemblaient à des os.\n\nIl figure au registre légal bruxellois des arbres remarquables avec une circonférence de soixante-treize centimètres, ce qui n'est rien, et il est malgré tout le quatrième de son espèce dans la région. Cela dit quelque chose de Bruxelles plutôt que de cet arbre. Gymnocladus dioica pousse à l'état sauvage dans les vallées de l'Ohio et du Mississippi, y reste peu commun, et l'Europe ne l'a jamais planté en quantité.\n\nSon nom commun vient des colons du Kentucky qui torréfiaient et moulaient les graines comme succédané de café. La torréfaction comptait : crues, les graines et les gousses sont toxiques. L'espèce est dioïque, ce que dit le dioica, donc fleurs mâles et femelles poussent sur des arbres séparés et seul un pied femelle porte les lourdes gousses coriaces.\n\nC'est un jeune arbre au houppier de six mètres, ici pour la botanique plutôt que pour le spectacle, et il vaut deux minutes sur le chemin de l'érable sycomore."
+    },
+    "bru_021": {
+      "name": "Le Second Chêne de Turner du parc d'Egmont",
+      "species": "Chêne de Turner (Quercus x turneri)",
+      "age_estimate": "",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "Le parc d'Egmont compte deux chênes de Turner, et l'atlas des arbres de la région mélange discrètement leurs mesures depuis des années. Celui-ci est le plus haut et le plus épais des deux, 264 centimètres de tour et 23 mètres de haut, contre 10 mètres pour l'autre. Tous deux sont le même hybride de jardin, obtenu dans une pépinière anglaise en croisant le chêne pédonculé commun et le chêne vert méditerranéen, ce qui explique qu'ils gardent tous deux leurs feuilles coriaces pendant l'hiver bruxellois et ne les perdent brièvement qu'au printemps, quand la pousse nouvelle chasse les anciennes.\n\nL'inventaire régional des arbres remarquables classe celui-ci troisième de son espèce dans toute la région, sur un relevé officiel et non sur une estimation. Aucune date de plantation ne subsiste pour lui en particulier, même si les jardins du palais qui l'entourent ont été refaits en parc à l'anglaise en 1901 par Edmond Galoppin, époque probable pour les deux chênes même sans document nommant l'un ou l'autre.\n\nLes deux arbres se tiennent à quelques minutes de marche l'un de l'autre sur les mêmes pelouses, ce qui en fait une paire facile à voir ensemble : le plus petit, inscrit le premier, près des grilles du palais, et celui-ci, plus haut, plus près de la porte du Passage de Milan."
+    },
+    "bru_022": {
+      "name": "Les Mûriers blancs de la porte du Passage de Milan",
+      "species": "Mûrier blanc (Morus alba)",
+      "age_estimate": "",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "Deux mûriers blancs encadrent la porte du Passage de Milan, à l'entrée du parc d'Egmont, un de chaque côté, assez épais pour que l'inventaire régional des arbres range la paire parmi les huitièmes plus gros de leur espèce à Bruxelles. Le mûrier blanc est un autre arbre que le mûrier noir que Bruxelles protège déjà au Jardin botanique : écorce plus claire, fruit plus doux et plus fade, et une espèce cultivée en Europe pendant des siècles non pour ce qu'on en mange mais pour ses feuilles, seule nourriture que les vers à soie acceptent avec régularité.\n\nAucun des deux arbres n'a de date de plantation documentée. Ce qui est certain, c'est la paire elle-même, plantée assez serré pour se lire comme un ensemble assorti marquant une entrée plutôt que comme deux arbres sans rapport arrivés là par hasard, et une circonférence de 130 centimètres chacun qui les place bien au-delà de l'âge d'un jeune plant de jardin.\n\nLes mûriers fructifient en juillet, sombres et tachants à maturité, et une paire de parc public comme celle-ci garde rarement sa récolte : les oiseaux dépouillent un mûrier vite. Libre d'accès à toute heure, sur les mêmes pelouses que les deux chênes de Turner et le ginkgo du parc."
+    },
+    "bru_023": {
+      "name": "Le Noisetier de Byzance du Grand Sablon",
+      "species": "Noisetier de Byzance (Corylus colurna)",
+      "age_estimate": "",
+      "access": "Gratuit, place publique, ouverte à toute heure",
+      "transport": "Métro Louise ou Gare Centrale, quelques minutes à pied",
+      "story": "Le Grand Sablon est plus connu pour son marché aux antiquités et ses chocolatiers que pour un arbre, ce qui explique justement qu'on passe sans voir le noisetier de Byzance qui s'y dresse. L'inventaire officiel régional des arbres remarquables le classe onzième de son espèce à Bruxelles : 17 mètres de haut, un houppier de 16 mètres et un tronc de 208 centimètres de tour, en pleine santé et occupant, selon les mots du registre, une position centrale dans le paysage de la place.\n\nLe noisetier de Byzance est le seul noisetier qui pousse en véritable arbre plutôt qu'en buisson à tiges multiples, avec un fût droit et un houppier pyramidal bien tenu qui en ont fait un favori des places européennes bien avant qu'on songe à protéger des sujets individuels. Il fleurit à la fin de l'hiver, petit et facile à manquer, et porte ses noix tout l'été dans une bogue hérissée qui ne ressemble en rien à une noisette de supermarché.\n\nSeul le registre officiel documente cet arbre précis pour l'instant, ce qui est dit ici plutôt que passé sous silence. Ce que donne le registre est exact et cohérent, le rang, les dimensions, un contrôle sanitaire, une confiance d'une autre nature qu'une seconde source écrite, et cette page le dit franchement."
+    },
+    "bru_024": {
+      "name": "Le Chêne pédonculé du Mont des Arts",
+      "species": "Chêne pédonculé (Quercus robur)",
+      "age_estimate": "",
+      "access": "Gratuit, jardin public, ouvert à toute heure",
+      "transport": "Mont des Arts, centre de Bruxelles ; quelques minutes à pied de la Gare Centrale",
+      "story": "Le jardin du Mont des Arts n'est pas ce qu'il paraît : cette terrasse formelle de deux hectares, d'ifs et de buis taillés, qui offre l'une des plus belles vues panoramiques sur le centre de Bruxelles, est en réalité une toiture, construite en 1957 et 1958 au-dessus d'un parking souterrain, dessinée par le paysagiste belge René Pêchère en ce que la profession appelle un jardin suspendu. Ce chêne pédonculé, d'une circonférence de 166 centimètres et légalement inscrit au registre régional des arbres remarquables, pousse dans ce sol artificiel entre la Bibliothèque royale et l'avenue des Arts.\n\nL'histoire du lieu remonte plus loin que le jardin lui-même : une première version avait été aménagée pour l'Exposition universelle de 1910 afin de masquer, selon les mots de son paysagiste français Jules Vacherot, l'état misérable du coteau sous un manteau de verdure et de fleurs. Ce qui s'y trouve aujourd'hui est la deuxième tentative de la même idée, des décennies plus tard et nettement plus ambitieuse. L'inventaire officiel bruxellois relève la circonférence et le statut légal du chêne sans date de plantation, si bien que son âge est non documenté plutôt qu'estimé. Il pousse en plein air, gratuitement, sur l'un des points de vue les plus photographiés de la ville."
+    },
+    "bru_025": {
+      "name": "L'Ailante du Mont des Arts",
+      "species": "Ailante glanduleux (Ailanthus altissima)",
+      "age_estimate": "",
+      "access": "Gratuit, espace public, ouvert à toute heure",
+      "transport": "Mont des Arts, centre de Bruxelles ; quelques minutes à pied de la Gare Centrale",
+      "story": "La plupart des villes qui ont un ailante l'ont sans que personne l'ait planté : Ailanthus altissima se propage si volontiers dans les pavés fendus et les terrains vagues qu'il est traité en mauvaise herbe dans une grande partie de l'Europe et de l'Amérique du Nord. Celui-ci fait exception : 321 centimètres de circonférence, l'un des troncs les plus larges de toute cette liste, et une inscription formelle au registre légal régional des arbres remarquables, soit un passe-droit rare accordé pour sa taille et sa stature à une espèce qu'on arrache d'ordinaire à vue.\n\nIl pousse près du Mont des Arts, la terrasse-jardin surélevée entre le haut et le bas de la ville, bâtie au-dessus d'un parking souterrain dans les années 1950, sur un site qui porte une forme de verdure ornementale depuis l'Exposition universelle de 1910. L'ailante a été importé de Chine en Europe au XVIIIe siècle comme curiosité ornementale et hôte possible du bombyx de l'ailante, avant que quiconque anticipe l'agressivité de sa naturalisation. Qu'un sujet aussi grand et aussi âgé obtienne un statut de protection au lieu d'être supprimé est l'exception plutôt que la règle. Il se tient en plein air, gratuitement, à quelques pas du chêne du jardin et de son ptérocaryer."
+    },
+    "bru_026": {
+      "name": "Le Ptérocaryer du Mont des Arts",
+      "species": "Ptérocaryer du Caucase (Pterocarya fraxinifolia)",
+      "age_estimate": "",
+      "access": "Gratuit, espace public, ouvert à toute heure",
+      "transport": "Mont des Arts, centre de Bruxelles ; quelques minutes à pied de la Gare Centrale",
+      "story": "Le ptérocaryer du Caucase tire son nom de ce qu'il fait de ses graines plutôt que de son allure : de longs chapelets pendants de fruits ailés, suspendus aux branches jusqu'à la fin de l'été, trait sans équivoque pour un arbre que la plupart des visiteurs prendraient sinon pour un noyer surdimensionné. Originaire des forêts du Caucase occidental, il a gagné les jardins européens au début du XIXe siècle, parmi les nombreux exotiques que les jardins urbains du continent rivalisaient d'acquérir.\n\nCe sujet, d'une circonférence de 173 centimètres et d'un houppier de 13 mètres, est légalement inscrit au registre officiel bruxellois des arbres remarquables et pousse près du Mont des Arts, la terrasse-jardin surélevée entre le haut et le bas de la ville, bâtie au-dessus d'un parking souterrain dans les années 1950. L'espèce drageonne volontiers depuis ses racines et forme souvent de petits bosquets plutôt que des troncs uniques à l'état sauvage, même si celui-ci est relevé et protégé comme sujet individuel. Il se tient en plein air, gratuitement, sur une courte promenade qui prend aussi le chêne du jardin et son ailante bien plus grand."
+    },
+    "bru_027": {
+      "name": "Le Houx pyramidal du parc d'Egmont",
+      "species": "Houx pyramidal (Ilex aquifolium 'Pyramidalis')",
+      "age_estimate": "",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "Le houx est une haie dans presque tout Bruxelles, et une branchette sur une carte en décembre. Laissé sans taille, il devient un arbre, et voici à quoi cela ressemble : un tronc de 1,40 mètre de tour sur les pelouses ouest du parc d'Egmont, que l'inventaire régional des arbres remarquables classe deuxième de son cultivar à Bruxelles.\n\nLe cultivar est 'Pyramidalis', une sélection étroite et dressée du houx commun européen. Un cultivar n'est pas une chose qui surgit dans un bois et se reproduit fidèlement par graine. Chaque 'Pyramidalis' est une bouture de bouture d'un plant unique, si bien que cet arbre et ceux qui poussent dans les jardins d'ailleurs en Europe sont le même individu, élevé dans une autre terre.\n\nLe houx fabrique son bois très lentement, seule raison pour laquelle 140 centimètres valent une place sur un registre officiel quand l'érable sycomore de la même pelouse en porte 397 et n'arrive que troisième de son espèce. Personne n'a daté celui-ci et le registre n'essaie pas. Il mesure, il classe, et il laisse les années tranquilles. Si vous connaissez les archives de plantation du parc, nous prenons la correction.\n\nLe parc le signale sur son propre panneau, ce qui épargne la recherche : de loin, un houx de cette taille se lit encore comme un buisson, jusqu'à ce qu'on soit assez près pour voir le tronc."
+    },
+    "bru_028": {
+      "name": "Le Sophora du parc d'Egmont",
+      "species": "Sophora du Japon (Styphnolobium japonicum)",
+      "age_estimate": "",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "Bruxelles classe cet arbre sous un nom et une nationalité qui sont faux tous les deux. Le registre l'inscrit comme Sophora japonica. Les botanistes ont déplacé l'espèce dans le genre Styphnolobium il y a un moment déjà et la plupart des registres n'ont pas suivi ; et il n'a jamais été japonais, puisqu'il est originaire de Chine et de Corée et a gagné l'Europe par les jardins japonais, d'où une épithète qui a maintenant survécu à deux corrections.\n\nEn Chine, c'était l'arbre de la cour impériale, planté aux palais et aux tombeaux, et la tradition veut que ce soit à un sophora de la colline de Charbon, à Pékin, que le dernier empereur Ming se soit pendu en 1644, les armées rebelles déjà dans la ville.\n\nCelui-ci est plus discret. Des experts ont parcouru le parc d'Egmont en juillet 2019 et l'ont porté à l'inventaire régional des arbres remarquables, où il figure dans les trente premiers de son espèce pour Bruxelles. Il n'y en a pas beaucoup à classer : le sophora n'a jamais été planté ici en quantité, et c'est exactement ainsi qu'un sujet sans grande taille se retrouve sur une liste officielle.\n\nCe relevé a enregistré un seul point sur les pelouses pour les arbres qu'il ajoutait, plutôt qu'une coordonnée par tronc, si bien que le repère vous met dans le bon coin d'un parc qu'on traverse en trois minutes, pas plus près. Personne n'a noté son âge."
+    },
+    "bru_029": {
+      "name": "Le Frêne pleureur du parc d'Egmont",
+      "species": "Frêne pleureur (Fraxinus excelsior 'Pendula')",
+      "age_estimate": "",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "Un frêne pleureur n'a pas de cime à lui. Le port pleureur est une mutation qui ne pousse pas de flèche, si bien que ces arbres sont presque toujours greffés sur la tête d'un frêne ordinaire : le tronc monte jusqu'au point de greffe puis s'arrête, et tout ce qui est au-dessus retombe en dôme. Trouvez le changement d'écorce quelque part à hauteur de tête et vous regardez la couture entre deux plantes différentes.\n\nCelui-ci pousse sur les pelouses du parc d'Egmont et est entré à l'inventaire régional des arbres remarquables après un relevé de juillet 2019. Il figure dans les trente premiers de son espèce à Bruxelles.\n\nL'espèce sous la greffe traverse un mauvais siècle. La chalarose du frêne, un champignon venu d'Asie orientale, a gagné toute la Belgique en une quinzaine d'années et tue les frênes à un rythme auquel la sylviculture européenne n'a pas de réponse. Personne ne peut promettre ce que cela signifie pour celui-ci, ce qui est un argument pour aller le voir plutôt que contre.\n\nLe relevé de juillet a enregistré une seule coordonnée pour les arbres ajoutés plutôt qu'une par tronc, si bien que le repère marque le groupe et non ce tronc-ci. Aucun âge n'est enregistré, ici ni ailleurs : l'inventaire mesure et classe, et laisse les années tranquilles."
+    },
+    "bru_030": {
+      "name": "Le Févier sans épines du parc d'Egmont",
+      "species": "Févier d'Amérique sans épines (Gleditsia triacanthos var. inermis)",
+      "age_estimate": "",
+      "access": "Gratuit, parc public, ouvert tous les jours de 8h à 20h",
+      "transport": "Métro Louise, environ 5 min à pied par l'entrée du boulevard de Waterloo",
+      "story": "L'inermis de la fiche de registre de cet arbre veut dire sans armes, et le mot travaille beaucoup. Un févier d'Amérique sauvage fait pousser des épines ramifiées à même son tronc, jusqu'à vingt centimètres de long et assez dures pour traverser un pneu, raison pour laquelle la forme sans épines est la seule que l'on mette dans un parc urbain.\n\nL'explication habituelle de ces épines est qu'elles ont environ treize mille ans de retard. Elles sont calibrées pour des animaux qui n'existent plus, les paresseux terrestres géants et les mastodontes qui broutaient les bois d'Amérique du Nord jusqu'à la fin de la dernière glaciation, mangeaient les longues gousses torsadées de l'arbre pour la pulpe sucrée et en emportaient la graine dans leurs entrailles. Les gousses tombent toujours chaque automne. Elles pourrissent maintenant sur place.\n\nDes experts ont inscrit ce sujet à l'inventaire régional des arbres remarquables après un passage dans le parc d'Egmont en juillet 2019, et il figure dans les trente premiers de son espèce pour Bruxelles. Aucun des trois arbres ajoutés par ce relevé n'est grand : le plus épais mesure 164 centimètres de tour.\n\nLe relevé a donné une seule coordonnée pour le groupe au lieu d'un repère par arbre, si bien que l'emplacement exact dans le parc n'est pas consigné. Cherchez le feuillage le plus fin d'Egmont, des folioles assez petites pour que l'ombre sous un févier soit à peine une ombre. Personne ne l'a daté."
+    }
+  }
+}

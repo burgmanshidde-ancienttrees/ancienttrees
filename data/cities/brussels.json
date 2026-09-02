@@ -1,1086 +1,1086 @@
 {
-  "city": "Brussels",
-  "country": "Belgium",
-  "status": "needs_curation",
-  "intro": "Brussels is the rare city that has kept a formal, scientific register of its own remarkable trees since 2002, cataloguing more than a thousand specimens by age, rarity and historical weight. That bureaucratic thoroughness is why ages and girths on this list are unusually exact. It also explains an odd trick the city played on itself: when Brussels built the Cinquantenaire park in 1880 for Belgium's fiftieth anniversary, it did not plant saplings. It transplanted fully grown trees from an old cemetery and the edge of the Sonian Forest, so the new park looked centuries old on its opening day.",
-  "meta_description": "Brussels has run an official register of its remarkable trees since 2002. Thirty verified locations, real stories, and how to reach each one.",
-  "question_answer": "Brussels' oldest documented tree is the Chene Josephine, a pedunculate oak in Parc Jacques Brel in Forest, estimated at close to 400 years old from a trunk just over six metres around. Brussels' own heritage inventory calls it probably the oldest oak in the entire Brussels-Capital Region. It stands in a public park that only opened in 1980, though the tree itself long predates it.",
-  "question_meta": "The Chene Josephine, a roughly 400 year old oak in Parc Jacques Brel, Forest, is Brussels' oldest documented tree. Where it stands, and twenty-nine more.",
-  "question_context": "Chene Josephine's age comes from its girth rather than any planting record: at 6.05 metres in circumference, measured at chest height, foresters use growth-rate tables for pedunculate oak to arrive at a figure close to four centuries, old enough that Brussels' own heritage inventory calls it probably the oldest oak anywhere in the region. No document names a planting date, since the ground it grows on was still part of the Kersbeekbosch, a wood already recorded under that name in 1648, long before anyone thought to write down individual trees within it. The clearest challenger for oldest is the Kasterlinde, a lime tree marking the exact point where three communes meet, documented on maps since 1777 and therefore provably at least two and a half centuries old, though its estimated true age, worked out from girth, comes out younger than the oak's. Parc Jacques Brel itself is a recent public space, only opened by the commune of Forest in 1980 after decades as a private estate, but the oak inside it is the oldest living thing within reach of a Brussels metro station. It costs nothing to visit.",
-  "faq": [
-    {
-      "q": "What is the oldest tree in Brussels?",
-      "a": "Most likely the Chene Josephine, a pedunculate oak in Parc Jacques Brel, Forest, estimated at close to 400 years from its girth. Brussels' own heritage inventory calls it probably the oldest oak in the region."
-    },
-    {
-      "q": "Are Brussels' remarkable trees free to visit?",
-      "a": "Yes, all thirty stand in public parks, gardens and streets with no admission charge, unusual compared to cities where the oldest trees sit behind a castle or palace gate."
-    },
-    {
-      "q": "Why does Brussels know so much about the age of its own trees?",
-      "a": "Since 2002, the region's heritage department has run a formal scientific inventory of remarkable trees, measuring circumference, checking rarity and recording historical association. That is why girths and ages here are unusually precise compared to most cities."
-    },
-    {
-      "q": "Why are some of Brussels' most impressive trees not its oldest?",
-      "a": "Brussels has transplanted mature trees before rather than waiting for saplings to grow. When Parc du Cinquantenaire was built in 1880, city gardeners moved in fully grown trees from an old cemetery and the Sonian Forest, so several of its most striking trees are older than the park but younger than genuine centuries-old specimens elsewhere on this list."
-    }
-  ],
-  "trees": [
-    {
-      "id": "bru_001",
-      "name": "The Chene Josephine",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "close to 400 years",
-      "age_min": 350,
-      "age_max": 420,
-      "location": {
-        "address": "Parc Jacques Brel, Avenue Besme, 1190 Forest, Brussels",
-        "latitude": 50.8033,
-        "longitude": 4.3228,
-        "neighbourhood": "Forest"
-      },
-      "story": "Brussels' own heritage inventory calls this oak probably the oldest tree of any kind in the entire region, and its evidence is a single number: 6.05 metres around the trunk, measured at chest height. That circumference translates, through standard oak growth tables, to an age close to four hundred years, since no planting record exists for a tree this old growing in what was once simply called the Kersbeekbosch, a wood already named in a document from 1648, a full century before anyone thought to record individual trees within it. A 20th century industrialist built a chateau and pleasure pavilion on the land and renamed it Parc des Eperons d'Or, but the commune of Forest only acquired the grounds in 1979 and opened them to the public in 1980, as Parc Jacques Brel. The oak, already three and a half centuries old by then, barely noticed the paperwork. At roughly 20 metres tall with a canopy shaped by centuries of unhurried growth, it now shares its park with joggers, a playground and Brussels' newer housing developments, a working class commune's public oak older than most of the buildings standing around it put together.",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "kind": "fruit",
-        "label": "acorns drop, and a good mast year buries the ground in them"
-      },
-      "verified_sources": [
-        "https://www.woodwideweb.be/fr/atlas/12.html",
-        "https://sites.heritage.brussels/fr/sites/169"
-      ],
-      "access": "Free, public park",
-      "transport": "Tram or bus to Forest Centre, short walk into the park",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Age is a girth-based estimate, not a documented planting date; the Kersbeekbosch reference (1648) establishes the wood existed, not this specific tree's age. Called 'probably the oldest oak' in the region by the Wood Wide Web heritage source, softened from an absolute claim per hard rule 8. No open licensed photo found this run. Pin was genuinely wrong, not just approximate: the stored coordinates sat about 1.5km from the actual park, seemingly a geocoding slip from an early research pass. Corrected 2026-07-27 directly from this entry's own already-cited source (woodwideweb.be's atlas entry for this exact tree, ID 1139, which states its own GPS reading), independently cross-checked against Nominatim's geocode of Parc Jacques Brel itself, which lands within 70m of the same point. Set to confirmed.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "bru_002",
-      "name": "The Kasterlinde",
-      "species": "Large-leaved Lime (Tilia platyphyllos)",
-      "age_estimate": "200+ years",
-      "age_min": 200,
-      "age_max": 260,
-      "best_time": {
-        "months": [
-          6,
-          7
-        ],
-        "label": "late June, when its flowers scent the whole street corner"
-      },
-      "location": {
-        "address": "Kasterlindenstraat, opposite Cafe In de Linde, Dilbeek, Brussels",
-        "latitude": 50.8557989,
-        "longitude": 4.2898155,
-        "neighbourhood": "Berchem-Sainte-Agathe / Molenbeek-Saint-Jean border"
-      },
-      "story": "A single lime tree marks the exact spot where three Brussels communes meet, and it has been doing the job since at least 1777, when the Ferraris map, the first detailed survey of the Austrian Netherlands, recorded it at the boundary point of Molenbeek-Saint-Jean, Berchem-Sainte-Agathe and Dilbeek. Later maps track it by name: an 1821 survey shows it beside a chapel demolished that same decade, and an 1858 map of Brussels and its surroundings labels the spot simply Kaster Linde. Its trunk has thickened from 2.75 metres around in the early 1900s, when the Belgian botanist Chalon first measured it for his book on the country's trees, to 3.15 metres today, growth that puts its real age comfortably past two centuries even before the documentary trail is counted. A street and a nearby cafe, In de Linde, both take their name from it. Unlike a garden specimen chosen for its looks, this tree exists because generations of surveyors needed a fixed point that would not move, and a slow growing lime, marking a boundary since before Belgium existed as a country, turned out to be exactly that.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/400",
-        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles"
-      ],
-      "access": "Free, public street corner",
-      "transport": "Bus to the Berchem-Sainte-Agathe / Dilbeek border",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Dilbeek_Kasterlindenstraat_Grensboom_%281%29_-_235489_-_onroerenderfgoed.jpg",
-        "license": "CC BY 4.0",
-        "attribution": "Geert Van der Linden / Flanders Immovable Heritage Agency, via Wikimedia Commons",
-        "status": "approved",
-        "width": 1440,
-        "height": 1080
-      },
-      "curation_status": "ai_generated",
-      "notes": "Documentary trail (1777 Ferraris map, 1821 and 1858 surveys, Chalon's early 20th century measurement) is unusually solid for a single tree, corroborated across the official heritage inventory and an independent citizen blog. Photo verified on Commons: Flanders Immovable Heritage Agency's own inventory photo of the Dilbeek Kasterlindenstraat boundary tree, matching the described location precisely. Pin corrected 2026-07-28: the stored coordinate (50.8672, 4.2965) turned out to be about 1.3km from the real Kasterlindenstraat, discovered while Nominatim-geocoding the street named in this entry's own sources. Triangulated three independent ways: Kasterlindenstraat's own OSM geocode, neighbouring Kerselaarstraat's, and a direct name match for 'In De Linde' (a real cafe at 177 Kasterlindenstraat, exactly the landmark this entry's own story already names), all converging on the same spot. The heritage inventory page (inventaris.onroerenderfgoed.be/erfgoedobjecten/302035) confirms the crossroads/cemetery description but its own precise coordinate isn't exposed through this session's tooling; Brussels' own remarkable-tree register (sites.heritage.brussels) is blocked (403) for the same reason prior passes found, still true 2026-07-29. Resolved to confirmed 2026-07-29: an OpenStreetMap node individually named \"Kasterlinde\" (this entry's exact tree name, not just a street or landmark match) sits 15m from the prior anchor, at 50.8557989, 4.2898155. Treated as a surveyed point for the tree itself rather than another nearby anchor, since the node's name is the tree, not a building or street.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "bru_003",
-      "name": "The Oriental Plane of Parc Leopold",
-      "species": "Oriental Plane (Platanus orientalis)",
-      "age_estimate": "200 years",
-      "age_min": 190,
-      "age_max": 210,
-      "location": {
-        "address": "Parc Leopold, Rue Belliard, 1000 Brussels",
-        "latitude": 50.837462,
-        "longitude": 4.378534,
-        "neighbourhood": "European Quarter"
-      },
-      "story": "The thickest tree of its kind anywhere in Brussels stands in a park built over a vanished stream. This oriental plane, measured at 6.48 metres around in 2023, only joined the region's legal heritage inventory in August 2024, a formal recognition that arrived roughly two centuries after the tree itself. Plane trees have marked water since antiquity, when Greeks planted them by springs and wells to shade travellers, and this one keeps the tradition without anyone intending it to: the Maelbeek stream still runs underground nearby, beneath the Chaussee d'Etterbeek, and a small tower at the foot of the park's hill once operated as a 17th century fishery pond house long before the plane tree existed. At around 33 metres tall with a crown spreading 38 metres wide, the tree now shades a park built in the 1850s around a private estate, later absorbed into the district that today surrounds the European Parliament. It is, by circumference, the largest specimen of its species in the entire Brussels-Capital Region, a two hundred year old tree standing quietly behind institutions considerably younger than it is.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/794",
-        "https://www.monumentaltrees.com/fr/bel/bruxelles/bruxelles/1074_parcleopold/4033/"
-      ],
-      "access": "Free, public park",
-      "transport": "Metro to Maelbeek or Schuman, short walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Parc_L%C3%A9opold-Bruxelles_%2Cplatane_d%27OrientP5070020.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Ben2~commonswiki, via Wikimedia Commons",
-        "status": "approved",
-        "width": 1920,
-        "height": 2560
-      },
-      "curation_status": "ai_generated",
-      "notes": "Circumference and 2024 legal inventory listing corroborated by the official heritage inventory; monumentaltrees.com used for cross-check only, per hard rule 1, not copied. Photo verified on Commons, captioned in French as this exact tree: 'notable tree, bicentennial oriental plane, Parc Leopold, Brussels'.",
-      "location_precision": "confirmed",
-      "girth_cm": 648
-    },
-    {
-      "id": "bru_004",
-      "name": "The Pond Oaks and Beeches of the Bois de la Cambre",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "old growth, undated",
-      "age_min": 100,
-      "age_max": 220,
-      "best_time": {
-        "months": [
-          10,
-          11
-        ],
-        "label": "late October, when the beech turn copper over the ponds"
-      },
-      "location": {
-        "address": "Bois de la Cambre, near the ponds and Chalet Robinson, 1000 Brussels",
-        "latitude": 50.8058,
-        "longitude": 4.3775,
-        "neighbourhood": "Ixelles / Uccle border"
-      },
-      "story": "Brussels' most fashionable park is also a fragment of a forest older than the city walls that once surrounded it. When Leopold II's landscapers carved the Bois de la Cambre out of the northern edge of the Sonian Forest in 1861 and 1862, connecting it to the city centre by the new Avenue Louise, they left much of the existing tree cover standing rather than replanting from scratch. Around its ponds today grow pedunculate oaks, beeches, wild cherries and Austrian black pines old enough that more than eighty of them made Brussels' own official inventory of remarkable trees, out of roughly seventy such specimens spread across the whole 124 hectare park. None of these individual pond side trees carries a documented planting date of its own, so no single age is claimed here, only that they are old growth remnants of a much larger woodland: the Sonian Forest continues south from this same tree line, and a separate, strictly protected 270 hectare section of it further out was inscribed on the UNESCO World Heritage List in 2017 for its ancient beech stands, a reminder of what this park was cut from rather than a claim about this particular corner of it.",
-      "verified_sources": [
-        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
-        "https://en.wikipedia.org/wiki/Forest_of_Soignes"
-      ],
-      "access": "Free, public park",
-      "transport": "Tram to the Bois de la Cambre terminus",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Le_bois_de_la_Cambre5.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "GdML, via Wikimedia Commons",
-        "status": "approved",
-        "width": 2448,
-        "height": 3264
-      },
-      "curation_status": "flagged",
-      "notes": "Presented deliberately as an ensemble, not one dated specimen: no individual tree here has a documented planting date. The UNESCO designation applies to a separate, protected 270 hectare section of the wider Sonian Forest, not to Bois de la Cambre itself; the story is careful to say so rather than implying this park is inside the listed zone. Photo shows the pond and Chalet Robinson area framed by mature deciduous canopy, a fair representative shot for this ensemble entry.",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "bru_005",
-      "name": "The Giant Sequoia of Parc de Woluwe",
-      "species": "Giant Sequoia (Sequoiadendron giganteum)",
-      "age_estimate": "125-135 years",
-      "age_min": 125,
-      "age_max": 135,
-      "location": {
-        "address": "Parc de Woluwe, near Avenue de Tervueren, 1150 Woluwe-Saint-Pierre, Brussels",
-        "latitude": 50.826431,
-        "longitude": 4.428151,
-        "neighbourhood": "Woluwe-Saint-Pierre"
-      },
-      "story": "The single largest tree in Brussels by trunk girth is not native to Europe at all. This giant sequoia, measured at 8.66 metres around in 2017, thicker than any other tree recorded in the region, grows in a park that did not exist until the 1890s, when the landscape architect Emile Laine laid it out for Leopold II as a green corridor linking the 1897 World's Fair site at the Cinquantenaire to a second exhibition site at Tervuren. That makes the sequoia, at most, only a little over a century old, remarkable for how much girth a genuinely young tree can put on: giant sequoias can live two thousand years and more in their native California, and reach 50 to 60 metres even in Belgium's cooler, wetter climate. Planted as an ornamental statement piece for an international exposition rather than surviving from an older forest, it has spent barely a tenth of its natural lifespan reaching a size that would take most Belgian native species several centuries to match. The park around it now holds some 180 different tree species, and this one is, by a wide margin, the thickest of all of them.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/2851",
-        "https://www.woluwe1150.be/culture-et-loisirs/histoire-patrimoine/bespaces-verts/parc-parmentier/"
-      ],
-      "access": "Free, public park",
-      "transport": "Tram to Parc de Woluwe, or bus from Montgomery metro station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "notes": "Girth (866cm, measured 2017) and 'largest tree in Brussels' claim corroborated by the official heritage inventory and the park's own design history (Laine, 1890s, for Leopold II). Exact planting year not found, so age is inferred from the park's founding decade. Pin corrected 2026-07-26: the prior coordinate was about 1.1km away, outside the tree's actual position. Bruxelles Environnement's own managed-tree WFS layer (ows.environnement.brussels/green) has exactly one Sequoiadendron giganteum in the park with a circumference this large (840cm, close to this entry's own sourced 866cm within plausible remeasurement drift); a second, much smaller sequoia (503cm) also exists in the park but is clearly not 'the single largest tree in Brussels' this entry describes.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "bru_006",
-      "name": "The Purple Beech of Parc Tournay-Solvay",
-      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-      "age_estimate": "150-200 years",
-      "age_min": 150,
-      "age_max": 200,
-      "best_time": {
-        "months": [
-          4,
-          5
-        ],
-        "label": "April and May, when the new leaves are brightest red-purple"
-      },
-      "location": {
-        "address": "Parc Tournay-Solvay, Chaussee de La Hulpe, 1170 Watermael-Boitsfort, Brussels",
-        "latitude": 50.793916,
-        "longitude": 4.411531,
-        "neighbourhood": "Watermael-Boitsfort"
-      },
-      "story": "Alfred Solvay, brother of the industrial chemist Ernest Solvay, built a country manor at the edge of the Sonian Forest in 1878, and the park around it still carries his family's name today. His daughter Therese Tournay-Solvay later expanded the grounds, and in the early 20th century the landscape architect Jules Buyssens redesigned them into the layout that survives now, mixing exotic plantings with remnants of the original forest vegetation. Among the survivors is a purple beech, its almost black red foliage a deliberate contrast against the ordinary green beeches nearby, part of a group of large trees in the park old enough that several, this one included, appear in the official inventory of the Brussels region's natural heritage. No source gives this specific tree an individual age, only that trees of its kind in the park run from roughly a century and a half to two centuries old, a range wide enough to be honest rather than precise. The park sits directly against the edge of the Sonian Forest in Watermael-Boitsfort, free to enter, and considerably quieter than Brussels' larger, better known green spaces.",
-      "verified_sources": [
-        "https://bruxelles.natagora.be/idees-de-balades-et-observations/le-parc-tournay-solvay-a-watermael-boitsfort",
-        "https://fr.wikipedia.org/wiki/Parc_Tournay-Solvay"
-      ],
-      "access": "Free, public park",
-      "transport": "Bus to Chaussee de La Hulpe, Watermael-Boitsfort",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Age range (150-200 years) is sourced to the park's trees generally, not confirmed for this individual purple beech specifically; flagged as an estimate rather than a measurement. Pin corrected 2026-07-26 via Bruxelles Environnement's managed-tree WFS layer: the only Fagus sylvatica 'Atropunicea' (the purple beech cultivar) recorded in the park, moved about 500m from the prior estimate.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "bru_007",
-      "name": "The Douglas Fir of the Hippodrome",
-      "species": "Douglas Fir (Pseudotsuga menziesii)",
-      "age_estimate": "up to 150 years",
-      "age_min": 100,
-      "age_max": 150,
-      "location": {
-        "address": "Hippodrome de Boitsfort, Chaussee de La Hulpe, 1170 Watermael-Boitsfort, Brussels",
-        "latitude": 50.8009,
-        "longitude": 4.4106,
-        "neighbourhood": "Watermael-Boitsfort"
-      },
-      "story": "The tallest tree in Brussels grows on what used to be a racecourse. This Douglas fir, standing 33 metres, took root sometime after 1875, the year the City of Brussels leased roughly 25 hectares of forest edge to the Royal Society for the Improvement of Horse Breeds, which built a hippodrome with two grandstands here by 1878. The species itself could not have grown here any earlier: Douglas fir only reached Europe from the American Pacific coast in 1827, brought back by the Scottish botanist after whom it is named, so even the oldest possible specimen anywhere in Belgium falls short of two centuries. This one, rising above a racecourse that operated for well over a century before closing to horses, has had roughly a century and a half at most to outclimb every native species around it, and its height, not its age, is the record it holds. The hippodrome grounds are now being redeveloped as a mixed public park and university site, and the tree, along with much of the surrounding tree cover, is intended to stay exactly where it is through that transition.",
-      "verified_sources": [
-        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
-        "https://usquare.brussels/en/sites/hippodrome"
-      ],
-      "access": "Free, public park (former racecourse, under redevelopment)",
-      "transport": "Tram or bus to Boitsfort, short walk",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "A source describing the hippodrome mentions some trees on the wider grounds are over 250 years old; that figure cannot apply to the Douglas fir itself, since the species was only introduced to Europe in 1827, so this entry's age range is capped accordingly and the 250 year figure is not repeated here to avoid a biologically impossible claim.",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "bru_008",
-      "name": "The Sophora of the Abbaye de la Cambre",
-      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
-      "age_estimate": "unknown, mature",
-      "age_min": 100,
-      "age_max": 180,
-      "best_time": {
-        "months": [
-          8
-        ],
-        "label": "August, when it is one of the last trees in the city to flower"
-      },
-      "location": {
-        "address": "Jardins de l'Abbaye de la Cambre, Avenue Emile Duray, 1050 Ixelles, Brussels",
-        "latitude": 50.819676,
-        "longitude": 4.3799,
-        "neighbourhood": "Ixelles"
-      },
-      "story": "A Japanese pagoda tree grows in the garden of a monastery that housed Cistercian nuns for nearly six hundred years. The Abbaye de la Cambre was founded in 1201 and suppressed in 1796 during the French occupation, and while its oldest surviving stonework, the abbey church and parts of the cloister, dates to the 13th and 14th centuries, most of the garden layout around this tree is 18th century. The sophora itself is considerably younger than any of that, a species that only reached European gardens in the mid 1700s and was slower still to become a common ornamental choice, but its trunk, measured at 3.08 metres around in 2012, makes it the sixth largest of its kind recorded anywhere in the Brussels region. Light, almost feathery foliage sets it apart from the abbey's heavier, older trees, and in late summer it produces long fleshy seed pods rather than the flowers most people expect from an ornamental tree. The abbey buildings now house a school and municipal offices, but the gardens remain open to the public, free, in the middle of Ixelles.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/1233",
-        "https://fr.wikipedia.org/wiki/Abbaye_de_la_Cambre"
-      ],
-      "access": "Free, public garden",
-      "transport": "Tram to Abbaye or Bois de la Cambre stop",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Girth and regional size ranking (6th largest of its species) sourced to the official heritage inventory; no planting date found for this specific tree, so age range is a broad estimate. Pin resolved 2026-07-27 via Bruxelles Environnement's managed-tree WFS: of three Sophora japonica within the abbey grounds bounding box (208cm, 330cm and 313cm circumference), the 313cm specimen is a tight match for this entry's own sourced 308cm (2012) measurement, close enough to reflect a few years' further growth. Moved about 700m to the exact match, a real correction, not just tightening.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "bru_009",
-      "name": "The Black Mulberry of the Botanical Garden",
-      "species": "Black Mulberry (Morus nigra)",
-      "age_estimate": "possibly 200 years",
-      "age_min": 120,
-      "age_max": 200,
-      "best_time": {
-        "months": [
-          8
-        ],
-        "label": "August, when the fruit drops and stains the path"
-      },
-      "location": {
-        "address": "Jardin Botanique (Le Botanique), Rue Royale, 1210 Saint-Josse-ten-Noode, Brussels",
-        "latitude": 50.855198,
-        "longitude": 4.36434,
-        "neighbourhood": "Saint-Josse-ten-Noode"
-      },
-      "story": "A mulberry tree possibly older than Belgium itself grows in a garden that predates the country by four years. The State Botanical Garden of Brussels opened on this site in 1826, on a 6.4 hectare terraced plot at the corner of what is now Rue Royale and the Boulevard du Jardin Botanique, and this black mulberry, its trunk over two metres around, is old enough that it plausibly dates to those original 1820s plantings, though no surviving record names its exact planting year. Black mulberry is a Mediterranean species, slow to fruit and famous for staining anything beneath it a deep purple black when its berries drop in late summer, a domestic habit that made it a fixture of European monastery and manor gardens for centuries before this one arrived in a public botanical collection. The garden itself stopped functioning as a working scientific collection decades ago and is now a public park known simply as Le Botanique, its 19th century glasshouse repurposed as a concert venue, but the trees planted for research have stayed exactly where the botanists left them.",
-      "verified_sources": [
-        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
-        "https://en.wikipedia.org/wiki/Botanical_Garden_of_Brussels"
-      ],
-      "access": "Free, public park",
-      "transport": "Metro to Botanique, 2 min walk",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "No source gives this tree a confirmed planting date; the 1826 garden founding date is used as a plausible upper bound, not a documented fact about this specific mulberry, and the story states that caveat directly. Pin resolved 2026-07-27 via Bruxelles Environnement's own managed-tree WFS (ows.environnement.brussels/green, layer 'tree', the same source used for bru_005/bru_006 on 2026-07-26): exactly one Morus nigra recorded within Le Botanique's grounds (id_arb 20337), circumference 265cm, matching this entry's own sourced 'over two metres around' almost exactly. Moved about 100m to the exact match.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "bru_010",
-      "name": "The Chestnut Avenue of the Cinquantenaire",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "age_estimate": "possibly close to 200 years",
-      "age_min": 140,
-      "age_max": 190,
-      "best_time": {
-        "months": [
-          5
-        ],
-        "label": "May, when its candle-shaped flowers bloom along the avenue"
-      },
-      "location": {
-        "address": "Parc du Cinquantenaire, 1000 Brussels / 1040 Etterbeek",
-        "latitude": 50.8414,
-        "longitude": 4.4005,
-        "neighbourhood": "European Quarter / Etterbeek"
-      },
-      "story": "When Brussels built Parc du Cinquantenaire in 1880 to mark Belgium's fiftieth year as a country, it cheated on the trees. Rather than planting saplings and waiting decades for a new park to look established, city gardeners transplanted trees that were already fully grown, moved in from the old Leopold Quarter cemetery, the Bois de la Cambre and the edge of the Sonian Forest itself. The common horse chestnuts that line one of the park's principal avenues are among the clearest survivors of that trick: mature when they arrived, they are older than the park itself by however many decades they had already grown before the move, plausibly close to two centuries old today, though no individual planting record confirms a precise figure for any single tree in the row. Around fifteen trees across the wider Cinquantenaire park made it onto Brussels' official register of remarkable trees, chestnuts among them alongside false acacias, a silver maple and a rare Italian alder, but the chestnut avenue is the one most visitors walk beneath without knowing they are standing under trees older than the triumphal arch at the park's centre.",
-      "verified_sources": [
-        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
-        "https://sites.heritage.brussels/files/pages/77/documents/BXL-Arbres-catRecto.pdf"
-      ],
-      "access": "Free, public park",
-      "transport": "Metro to Schuman or Merode, short walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dreef_in_Jubelpark_Brussel.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Sam.Donvil, via Wikimedia Commons",
-        "status": "approved",
-        "width": 4912,
-        "height": 3264
-      },
-      "curation_status": "flagged",
-      "notes": "The transplanting story (mature trees moved from the old Leopold Quarter cemetery, Bois de la Cambre and the Sonian Forest when the park was built in 1880) is well corroborated, but no individual chestnut in the avenue has a confirmed age; the range given assumes a plausible age at transplanting plus the 146 years since 1880. Photo shows a tree-lined avenue in Cinquantenaire/Jubelpark, a fair representative shot for this ensemble entry. Pin tightened 2026-07-27 via Bruxelles Environnement's managed-tree WFS: 11 Aesculus hippocastanum recorded across the park's grounds, consistent with the source's count of about fifteen registered remarkable trees there; moved about 210m to the centroid of that cluster, the same honest-ensemble treatment as Amsterdam's Amstelveld wingnuts.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "bru_011",
-      "name": "The Turner's Oak of Parc d'Egmont",
-      "species": "Turner's Oak (Quercus x turneri)",
-      "age_estimate": "around 125 years",
-      "age_min": 115,
-      "age_max": 145,
-      "location": {
-        "address": "Parc d'Egmont, by the palace railings at the end of the Passage de Milan, 1000 Brussels",
-        "latitude": 50.838109,
-        "longitude": 4.357707,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "Every register starts somewhere, and Brussels started here. When the region opened its scientific inventory of remarkable trees, this squat evergreen oak was the first entry made, in 1999, ahead of every giant sequoia and four hundred year old oak that has been added since. It earned the place without being old or tall. It stands ten metres high and spreads its crown seventeen metres wide, a shape that reads more like a parasol than a tree, and its trunk is 2.90 metres around, second thickest of its kind in the whole region. Turner's oak is a garden invention rather than a wild species, a cross between the common pedunculate oak and the Mediterranean holm oak raised in an Essex nursery and named after the nurseryman who raised it. It kept the southern parent's leathery leaves, so it stays green through a Brussels winter and only goes briefly bare in spring when the new growth pushes the old leaves off, the reverse of every other oak around it. The landscape architect Edmond Galoppin most likely planted it when he remade these palace gardens as an English park in 1901. A second, taller Turner's oak grows a few minutes away on the same lawns.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/648",
-        "https://www.woodwideweb.be/fr/atlas/120.html",
-        "https://gardens.brussels/fr/espaces-verts/parc-degmont"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "notes": "Girth 290cm measured 2019, height 10m, crown 17m, health recorded as 'Sain', and the ranking as second thickest of its species in the region all come from the region's own per-tree record (heritage.brussels tree 648, legally inventoried 19 August 2024). The 1999 first-entry fact and the Galoppin 1901 planting attribution come from Wood Wide Web, Brussels Environment's published tree atlas, which gives a GPS reading of 50.8381, 4.3577 for this tree, matching the register coordinate exactly. Wood Wide Web's own card mixes this tree's data with the park's second Turner's oak (register 649, 264cm, 23m tall), so only the figures confirmed by the register are used here. Age is inferred from the 1901 park remaking rather than a planting record, hence the range. Wood Wide Web dates the hybrid's creation to the late 19th century, which conflicts with the standard account of an 18th century Essex origin, so the story names the nursery and the parentage but claims no date. No open licensed photograph of this individual tree found: heritage.brussels publishes photographs of it but states no licence beyond a blanket site copyright, and Wikimedia Commons has park views only, none identifiable as this tree.",
-      "location_precision": "confirmed",
-      "girth_cm": 290
-    },
-    {
-      "id": "bru_012",
-      "name": "The Ginkgo of Parc d'Egmont",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "around 120 years",
-      "age_min": 100,
-      "age_max": 140,
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "November, when it drops the whole crown of gold in a few days",
-        "kind": "autumn colour"
-      },
-      "location": {
-        "address": "Parc d'Egmont, on the lawn facing the Egmont Palace railings, 1000 Brussels",
-        "latitude": 50.838262,
-        "longitude": 4.356713,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "This ginkgo is being slowly harmed by people who like it. It is the seventh thickest of its species recorded anywhere in the Brussels region, 3.27 metres around and twenty metres tall, and it stands on open grass in the only public park inside the old city walls that sits entirely in the middle of a block, invisible from every street around it. That makes it the obvious place to lie down on a warm afternoon, and enough people have lain under this particular tree that the soil over its roots is packed hard, which is why the region's surveyors record its condition as slightly defective despite it being, for a ginkgo, extremely young. Ginkgos are the last survivors of a lineage that was already ancient when the first flowering plants appeared, and they are famous for shrugging off pollution, disease and radiation. Compacted ground is the one thing they do not shrug off. The reward for keeping a couple of metres back is in November, when the fan shaped leaves turn a uniform butter gold and then let go almost all at once, laying a circle of yellow on the grass. A walnut across the lawn turns at the same time, so the whole clearing goes yellow together.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/637",
-        "https://www.woodwideweb.be/fr/atlas/3698.html"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "notes": "Girth 327cm measured 2019, height 20m, crown 18m and the health rating 'Legers defauts' come from the region's per-tree record (heritage.brussels tree 637, legally inventoried 19 August 2024). The soil compaction diagnosis and the paired autumn colour with the walnut opposite come from Wood Wide Web (atlas 3698), Brussels Environment's published tree atlas, whose GPS reading of 50.8383, 4.3567 lands within about 5 metres of the register coordinate. The two sources disagree by one place on the regional size ranking, sixth on Wood Wide Web against seventh on the register; the register's own figure is used. No planting record exists, so the age follows the park's 1901 remaking under Edmond Galoppin. No open licensed photograph of this individual tree found.",
-      "location_precision": "confirmed",
-      "girth_cm": 327
-    },
-    {
-      "id": "bru_013",
-      "name": "The Tulip Tree of Parc d'Egmont",
-      "species": "Tulip Tree (Liriodendron tulipifera)",
-      "age_estimate": "around 120 years",
-      "age_min": 100,
-      "age_max": 140,
-      "best_time": {
-        "months": [
-          6
-        ],
-        "label": "June, when the tulip flowers open high in the crown",
-        "kind": "flowers"
-      },
-      "location": {
-        "address": "Parc d'Egmont, beside the ginkgo on the palace lawn, 1000 Brussels",
-        "latitude": 50.838127,
-        "longitude": 4.356685,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "In autumn 2018 a Brussels art institute adopted this tree. The ISELP, whose building stands a few streets away, chose the tulip tree of Parc d'Egmont as the living centrepiece of an exhibition called A Forest, on the argument that a monument you can walk around, in a park that joins the upper and lower city, does something a gallery wall cannot: it makes a passerby slow down. The tree is a good candidate for the job. It is 3.06 metres around and twenty seven metres tall, the only specimen on this list the region's surveyors record as being in outright good health, and it carries the strangest leaf in the park, cut off flat at the tip as though someone had trimmed it with scissors. Its flowers are the reason for the name and the reason most people miss them: greenish yellow, tulip shaped, and produced high in the crown in June, where they sit above eye level until a storm drops one on the path. Europeans wanted this American tree so badly in the eighteenth century that its seeds were smuggled. Three hundred years later the enthusiasm has come back around, in the form of an art exhibition.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/642",
-        "https://www.woodwideweb.be/fr/atlas/154.html"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "notes": "Girth 306cm measured 2019, height 27m, crown 20m, health 'Sain' and the ranking of nineteenth thickest of its species in the region come from heritage.brussels tree 642, legally inventoried 19 August 2024. The ISELP sponsorship during the exhibition A Forest, 21 September to 15 December 2018, and the eighteenth century seed trade are recorded on Wood Wide Web (atlas 154), Brussels Environment's published tree atlas, whose GPS reading of 50.8381, 4.3567 lands within about 5 metres of the register coordinate. Wood Wide Web files this tree under the address Boulevard de Waterloo 31, which is the park's street entrance rather than a separate location. No planting record exists, so the age follows the park's 1901 remaking under Edmond Galoppin. No open licensed photograph of this individual tree found.",
-      "location_precision": "confirmed",
-      "girth_cm": 306
-    },
-    {
-      "id": "bru_014",
-      "name": "The Great Sycamore of Parc d'Egmont",
-      "species": "Sycamore (Acer pseudoplatanus)",
-      "age_estimate": "120-190 years",
-      "age_min": 120,
-      "age_max": 190,
-      "location": {
-        "address": "Parc d'Egmont, on the western lawns near the Rue aux Laines side, 1000 Brussels",
-        "latitude": 50.837759,
-        "longitude": 4.356415,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "Nobody plants a sycamore on purpose any more. It seeds itself into gutters and railway banks across Europe, grows fast, and gets cut down long before it can become anything, which is what makes the largest tree in this park worth looking up at: 32 metres of it, with a clean trunk running six metres before the first branch and a girth of 3.97 metres measured in 2026. The region's surveyors rank it the third thickest sycamore recorded anywhere in Brussels. It is also the reason the park feels bigger than its one and a half hectares. Parc d'Egmont is sealed on all four sides by buildings, the only public green space inside the old city walls with no street frontage at all, and a tree this tall pushes the sense of the place upward instead of outward. The sycamore has been in Belgium so long that most people take it for a native, though it arrived from the mountains of central Europe centuries ago and settled in as thoroughly as any local species. Its winged seeds spin down in September in numbers that would fill the whole park with seedlings if the gardeners let them.",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "kind": "fruit",
-        "label": "winged seeds that spin down in pairs"
-      },
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/6357",
-        "https://www.woodwideweb.be/fr/atlas/3700.html"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Rue aux Laines or Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Girth 397cm measured in 2026, height 32m, crown 20m, bole 6m, health 'Legers defauts' and the ranking of third thickest of its species in the region come from heritage.brussels tree 6357, legally inventoried 19 August 2024. This is the freshest measurement of any tree in the cluster. Flagged on age: no source dates this tree, and its girth is large enough that it may predate the 1901 Galoppin remaking and belong to Tilman-Francois Suys' 1830 layout instead, so the range is deliberately wide. Deliberately claims no height record: brussels.json already credits the Douglas Fir of the Hippodrome as the tallest tree in the city at 33m, and this one is a metre short of that, so only the species-level girth ranking is claimed. Wood Wide Web (atlas 3700) confirms the tree's existence, species and presence on Brussels Environment's own Egmont walk, but places it about 38 metres from the register coordinate; the register's position is used because it carries a surveyed Lambert grid reference per tree while the atlas coordinates are hand placed along a walking route.",
-      "location_precision": "confirmed",
-      "girth_cm": 397
-    },
-    {
-      "id": "bru_015",
-      "name": "The Cedar of Lebanon of Parc d'Egmont",
-      "species": "Cedar of Lebanon (Cedrus libani)",
-      "age_estimate": "120-160 years",
-      "age_min": 120,
-      "age_max": 160,
-      "location": {
-        "address": "Parc d'Egmont, at the southern edge against the Rue du Grand Cerf gardens, 1000 Brussels",
-        "latitude": 50.837129,
-        "longitude": 4.355564,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "This cedar has spent its life pretending to be a broadleaf. Instead of the single straight column its species normally builds, its trunk divides low down into two enormous limbs, one leaning out over the back gardens of the Rue du Grand Cerf, the other reaching into the wooded corner of the park, and the resulting silhouette looks far more like an old beech than a conifer. Walk up to it and the disguise fails immediately: the resin smell is unmistakable, the needles come in tight rosettes rather than singly, and the cones sit upright on the branches like small barrels with their scales pressed flat. It measures 2.98 metres around and stands at the park's boundary rather than on its lawns, half visible from the street, which is probably why it is the least photographed of the park's registered trees. Cedars of Lebanon reached western European gardens in the seventeenth century, and the estates that could afford them planted them as statements. This one has outlived the statement. The palace beside it burned in 1892 and was rebuilt, the gardens were redrawn twice, the city bought the whole thing in 1918, and the cedar carried on splitting itself in two directions.",
-      "best_time": {
-        "months": [
-          9,
-          10,
-          11
-        ],
-        "kind": "fruit",
-        "label": "upright barrel cones that sit on the branches like eggs"
-      },
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/629",
-        "https://www.woodwideweb.be/fr/atlas/36.html",
-        "https://fr.wikipedia.org/wiki/Parc_d'Egmont"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Rue aux Laines entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Girth 298cm measured 2019, crown 17m, bole 6m and health 'Legers defauts' come from heritage.brussels tree 629, legally inventoried 19 August 2024; the register records no height for this tree. The two-limbed form, the false broadleaf silhouette and the needle and cone description come from Wood Wide Web (atlas 36), Brussels Environment's published tree atlas, whose GPS reading of 50.8371, 4.3556 lands within about 5 metres of the register coordinate; French Wikipedia's Parc d'Egmont article independently lists a cedar of Lebanon among the park's notable trees, as does the park's own on-site information panel. Flagged on age: no source dates this individual, so the range is inferred from the park's 1830 and 1901 redesigns. The 1892 fire that destroyed part of the Egmont Palace is documented on Wikimedia Commons' record of the surviving columns now standing in the park, and is context for the tree rather than a claim about it.",
-      "location_precision": "confirmed",
-      "girth_cm": 298
-    },
-    {
-      "id": "bru_016",
-      "name": "The Red Oak of Parc d'Egmont",
-      "species": "Northern Red Oak (Quercus rubra)",
-      "age_estimate": "around 120 years",
-      "age_min": 100,
-      "age_max": 140,
-      "best_time": {
-        "months": [
-          10
-        ],
-        "label": "October, when it turns scarlet a few weeks before the ginkgo turns gold",
-        "kind": "autumn colour"
-      },
-      "location": {
-        "address": "Parc d'Egmont, across the path from the ginkgo, 1000 Brussels",
-        "latitude": 50.838217,
-        "longitude": 4.356486,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "Brussels Environment's own walking route through this park gives up on describing this tree and simply says that in autumn you will notice it before you read the sign. That is fair. The northern red oak turns a deep scarlet that no European oak can produce, holds it for a couple of weeks in October, and does it here about a month before the ginkgo thirty metres away goes gold, so the same clearing performs twice in one season. The tree measures 3.42 metres around and reaches 24 metres, with a crown eighteen metres across. Its leaves are the easiest identification in the park: broad, thin, with bristle tipped points at the end of every lobe, nothing like the rounded lobes of the pedunculate oaks Belgium grows natively. It comes from eastern North America, where it is a forest tree rather than a park specimen, and it arrived in European gardens in the eighteenth century as a novelty that grew faster than anything local. Faster growth is also why it has never reached the age of a real veteran oak here, and why it is a middle aged tree that already looks substantial.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/647",
-        "https://www.woodwideweb.be/fr/atlas/3699.html"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "notes": "Girth 342cm measured 2019, height 24m, crown 18m, health 'Legers defauts' and the ranking of twenty sixth thickest of its species in the region come from heritage.brussels tree 647, legally inventoried 19 August 2024. Wood Wide Web (atlas 3699) confirms species and location and carries the line about autumn colour announcing the tree before its label does; its GPS reading of 50.8383, 4.3565 lands within about 10 metres of the register coordinate. The park's own trilingual information panel at the Boulevard de Waterloo entrance lists a Northern Red oak among the remarkable trees it signposts. No planting record exists, so the age follows the park's 1901 remaking under Edmond Galoppin. No open licensed photograph of this individual tree found.",
-      "location_precision": "confirmed",
-      "girth_cm": 342
-    },
-    {
-      "id": "bru_017",
-      "name": "The London Plane of Parc d'Egmont",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Parc d'Egmont, on the lawns below the Rue aux Laines side, 1000 Brussels",
-        "latitude": 50.83766882849192,
-        "longitude": 4.35571961498593,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "The second thickest tree in this park ranks ninety eighth of its species across Brussels, which says more about the city than about the tree. The region has measured so many big London planes that a trunk 3.67 metres round barely places, and this one still holds a crown twenty metres wide over the Egmont lawns with only the great sycamore beating it for girth.\n\nThe London plane is a hybrid nobody planned. An oriental plane and an American plane crossed in a European garden in the seventeenth century and produced a tree tougher than either parent, which went on to line more streets than anything else on the continent. It tolerates compacted roots, drought and filthy air, and it sheds its bark in plates, which is the habit that keeps it looking clean in a city that is not.\n\nThe setting is the odd part. Parc d'Egmont is a hectare and a half boxed in on every side by the buildings of the Sablon, entered through passages rather than gates, which is how a tree this size stands five minutes from the Avenue Louise and stays unknown to people who shop there weekly.\n\nBrussels' legal inventory records the girth and the crown for this one, and, unusually for a register this thorough, no height at all.",
-      "verified_sources": [
-        "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables (heritage.brussels remarkable-tree register, CC BY 4.0, entry 646: Platane a feuille d'erable, Platanus x hispanica, girth 367 cm, crown 20 m, inscribed on the legal inventory)",
-        "https://sites.heritage.brussels/fr/trees/646 (the region's per-tree record for this entry, which carries no height figure and gives its ranking as 98th of its species in the Brussels-Capital Region)"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Rue aux Laines entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed",
-      "notes": "Girth 367 cm, crown 20 m and the coordinate come from the region's own CC BY export of its legal inventory; the ranking of 98th of its species in the region and the absence of a height figure were read from the per-tree page during the 2026-08-05 pass. That page returned a database error when re-fetched on 2026-08-14, so nothing new was taken from it. The register carries no age, and none is inferred here. No open licensed photograph of this individual tree found: heritage.brussels publishes images under a blanket site copyright with no reusable licence.",
-      "girth_cm": 367
-    },
-    {
-      "id": "bru_018",
-      "name": "The Horse Chestnut of Parc d'Egmont",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Parc d'Egmont, on the western lawns, 1000 Brussels",
-        "latitude": 50.837569928583065,
-        "longitude": 4.3555776751718565,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "The horse chestnut is one of the most planted trees in Europe and one of the rarest in the wild. Its entire natural range is a scatter of mountain ravines in northern Greece, Albania and North Macedonia, a few thousand trees in gorges, out of which sixteenth century collectors carried it to Istanbul, then to Vienna, then to everywhere. Conkers turned it into a children's institution across a continent; the wild population is small enough to be listed as threatened.\n\nThis one is 3.08 metres round with a crown fifteen metres across, on lawns closed in on all sides by the buildings of the Sablon. Brussels ranks it ninetieth of its species in the region, which for a tree this common is a respectable place to sit.\n\nBeing planted everywhere has cost it. Since the 1990s the horse chestnut leaf miner has spread across Europe, a moth whose larvae tunnel the leaves until they brown and curl by August, so most chestnuts on the continent now look half dead two months before autumn without actually being ill. Bleeding canker is the serious one, and the one that kills.\n\nThe flowers go up like white candles in May. The conkers come down in late September, which is the only fortnight of the year anybody looks at the ground under this tree.",
-      "best_time": {
-        "months": [
-          5
-        ],
-        "kind": "flowers",
-        "label": "white candles stand upright over the whole crown"
-      },
-      "verified_sources": [
-        "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables (heritage.brussels remarkable-tree register, CC BY 4.0, entry 628: Marronnier commun, Aesculus hippocastanum, girth 308 cm, crown 15 m, inscribed on the legal inventory, coordinate inside Parc d'Egmont)",
-        "https://sites.heritage.brussels/fr/trees/628 (the region's per-tree record, which gives its ranking as 90th of its species in the Brussels-Capital Region)"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Rue aux Laines entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "notes": "Flagged on attribution rather than on the tree: this is the one entry in the Egmont cluster whose per-tree page failed to render its site block when the 2026-08-05 pass fetched it, so the placing of the tree inside Parc d'Egmont rests on the open dataset's coordinate alone rather than on the region's own site statement. A re-fetch on 2026-08-14 returned a database error. Girth, crown and coordinate are from the CC BY export; the regional ranking was read from the per-tree page. No age recorded and none inferred. The species' threatened status in the wild is IUCN's, its distribution and introduction history standard botany, neither a claim about this individual.",
-      "girth_cm": 308
-    },
-    {
-      "id": "bru_019",
-      "name": "The Oriental Plane of Parc d'Egmont",
-      "species": "Oriental Plane (Platanus orientalis)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Parc d'Egmont, signposted on the park's information panel, 1000 Brussels",
-        "latitude": 50.838136348337265,
-        "longitude": 4.356344149195539,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "Seventy metres separate this tree from its own hybrid offspring. The oriental plane is one of the two parents of the London plane, and both grow in Parc d'Egmont within sight of each other, the parent 2.72 metres round and the descendant 3.67, which is roughly how that cross behaves everywhere: faster, tougher, thicker than the tree it came from.\n\nPlatanus orientalis is the plane of the eastern Mediterranean, the tree of Greek market squares and Persian gardens, the species Hippocrates is said to have taught under on Kos and the one Xerxes reportedly stopped his army to hang with gold. It differs from its descendant in the leaf, cut far more deeply into narrow lobes, and in temperament: it wants water and warmth, and grows slowly when it does not get them.\n\nThis one stands twenty two metres with a crown twelve metres across, and the park's own information panel names it, which most of the 582 trees on the region's legal inventory never get. Brussels ranks it twenty first of its species.\n\nThe regional champion is a kilometre and a half east in Parc Leopold, the thickest oriental plane recorded anywhere in the city, which is a fair reason to walk between the two.",
-      "verified_sources": [
-        "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables (heritage.brussels remarkable-tree register, CC BY 4.0, entry 645: Platane d'Orient, Platanus orientalis, girth 272 cm, crown 12 m, inscribed on the legal inventory; entry 646, the London plane 70 m away, girth 367 cm)",
-        "https://sites.heritage.brussels/fr/trees/645 (the region's per-tree record: height 22 m, 21st of its species in the Brussels-Capital Region, and named on the park's own information panel)"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed",
-      "notes": "Girth, crown and coordinate from the region's CC BY export; height, regional ranking and the information-panel mention were read from the per-tree page during the 2026-08-05 pass, which returned a database error when re-fetched on 2026-08-14. The 70 metre figure is the distance between the two register coordinates, entries 645 and 646. No crown is claimed for this tree: bru_003, the Parc Leopold oriental plane, holds the regional record and the story points at it rather than competing with it. The Hippocrates and Xerxes stories are given as tradition, which is what they are.",
-      "girth_cm": 272
-    },
-    {
-      "id": "bru_020",
-      "name": "The Kentucky Coffeetree of Parc d'Egmont",
-      "species": "Kentucky Coffeetree (Gymnocladus dioica)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Parc d'Egmont, near the Passage de Milan end, 1000 Brussels",
-        "latitude": 50.83789372083049,
-        "longitude": 4.357281190257318,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "In Dutch this tree is the doodsbeenderenboom, the dead men's bones tree. The name is about its winter. The Kentucky coffeetree comes into leaf later than almost anything else in a Belgian park, often not before late May, drops early in autumn, and spends the months between as a set of thick blunt grey twigs with nothing on them, which somebody once decided looked like bones.\n\nIt sits on Brussels' legal register of remarkable trees at a girth of seventy three centimetres, which is nothing, and it is still the fourth largest of its kind in the region. That is a comment on Brussels rather than on this tree. Gymnocladus dioica grows wild in the Ohio and Mississippi valleys, is uncommon even there, and Europe has never planted it in any quantity.\n\nThe common name comes from settlers in Kentucky who roasted and ground the seeds as a coffee substitute. The roasting mattered: raw, the seeds and pods are toxic. The species is dioecious, which is what the dioica means, so male and female flowers grow on separate trees and only a female sets the heavy leathery pods.\n\nIt is a young tree with a six metre crown, here for the botany rather than the spectacle, and worth two minutes on the way to the sycamore.",
-      "verified_sources": [
-        "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables (heritage.brussels remarkable-tree register, CC BY 4.0, entry 7112: Chicot du Canada / Doodsbeenderenboom, Gymnocladus dioica, girth 73 cm, crown 6 m, inscribed on the legal inventory)",
-        "https://sites.heritage.brussels/fr/trees/7112 (the region's per-tree record, which ranks it fourth largest of its species in the Brussels-Capital Region)"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed",
-      "notes": "The Dutch name doodsbeenderenboom is the register's own name_nl for this entry. Girth 73 cm, crown 6 m and the coordinate come from the CC BY export; the ranking of fourth largest in the region was read from the per-tree page during the 2026-08-05 pass, and that page returned a database error when re-fetched on 2026-08-14. Published deliberately as a small tree and described as one in the story: the ranking measures how rare the species is in Brussels, not how big this specimen is. No age recorded; the entry belongs to the batch of Egmont trees surveyed in July 2019, which is a survey date rather than a planting date, so no age is inferred from it. No best_time: the bare winter frame is the species' character, but the 'bare silhouette' peak is for veterans with real architecture, not a young tree.",
-      "girth_cm": 73
-    },
-    {
-      "id": "bru_021",
-      "name": "The Second Turner's Oak of Parc d'Egmont",
-      "species": "Turner's Oak (Quercus x turneri)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 264,
-      "location": {
-        "address": "Parc d'Egmont, near the Passage de Milan end, 1000 Brussels",
-        "latitude": 50.837435,
-        "longitude": 4.356075,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "Parc d'Egmont has two Turner's oaks, and the region's own tree atlas has spent years quietly mixing up their measurements. This is the taller and thicker of the pair, 264 centimetres around and 23 metres high, against the other tree's 10 metres. Both are the same garden hybrid, bred in an English nursery by crossing the common pedunculate oak with the evergreen Mediterranean holm oak, which is why both keep their leathery leaves through a Brussels winter and only drop them briefly in spring when new growth pushes the old ones off.\n\nBrussels region's inventory of remarkable trees lists this one as the third thickest of its kind anywhere in the region, ranked by an official survey rather than a guess. No planting date survives for it specifically, though the palace grounds around it were remade as an English landscape park in 1901 by Edmond Galoppin, the likely era for both oaks even without a record naming either one.\n\nThe two trees stand a few minutes' walk apart on the same lawns, which makes them an easy pair to see together: the smaller, older-registered oak near the palace railings, this taller one closer to the Passage de Milan gate.",
-      "verified_sources": [
-        "https://www.woodwideweb.be/fr/atlas/id_120.html",
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Girth 264cm and height 23m from the region's official remarkable-trees inventory (register id 649), the same dataset already used for bru_011. Wood Wide Web's atlas page for this species (id_120) conflates the two Egmont Turner's oaks' measurements in its prose, a conflation already flagged in bru_011's own notes; only the register-sourced figures for 649 are used here, not the page's own attribution of them. No age estimate: no planting record for this specific tree, and no growth factor for this garden hybrid was found this pass; the 1901 park remaking is stated as context only, not bridged into an age.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "bru_022",
-      "name": "The White Mulberries of the Passage de Milan Gate",
-      "species": "White Mulberry (Morus alba)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 130,
-      "location": {
-        "address": "Parc d'Egmont, flanking the Passage de Milan gate, 1000 Brussels",
-        "latitude": 50.837489,
-        "longitude": 4.35677,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "A pair of white mulberries flanks the Passage de Milan gate into Parc d'Egmont, one on each side, thick enough that the region's own tree inventory ranks the pair among the eighth-thickest of their species anywhere in Brussels. White mulberry is a different tree from the black mulberry Brussels already protects at the Botanical Garden: paler bark, sweeter and blander fruit, and a species grown across Europe for centuries not for eating but for its leaves, the only food silkworms will reliably take.\n\nNeither tree has a documented planting date. What is certain is the pair itself, planted close enough to read as a matched set marking an entrance rather than as two unrelated trees that happened to end up near each other, and a trunk girth of 130 centimetres each that puts them well past a garden sapling's age.\n\nMulberries fruit in July, dark and staining when ripe, and a public park pair like this one rarely gets to keep its harvest: birds strip a mulberry fast. Free to walk past at any hour, on the same lawns as the park's two Turner's oaks and its ginkgo.",
-      "verified_sources": [
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
-        "https://gardens.brussels/fr/espaces-verts/parc-degmont"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Girth 130cm and the region's ranking (eighth thickest white mulberry in the region) from the official remarkable-trees inventory (register id 644). A specific claim about a failed Belgian silk industry tied to this species, present in the leads file, was not independently corroborated this pass and is left out of the story rather than repeated unverified. No age estimate: no planting record and no published growth factor for white mulberry in this climate was found this pass.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          6,
-          7
-        ],
-        "label": "June to July: pale sweet fruit, the leaves that fed the silk trade",
-        "kind": "fruit"
-      }
-    },
-    {
-      "id": "bru_023",
-      "name": "The Turkish Hazel of the Grand Sablon",
-      "species": "Turkish Hazel (Corylus colurna)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 208,
-      "location": {
-        "address": "Place du Grand Sablon, 1000 Brussels",
-        "latitude": 50.841,
-        "longitude": 4.3557,
-        "neighbourhood": "Sablon"
-      },
-      "story": "The Grand Sablon is better known for its antiques market and its chocolate shops than for a tree, which is exactly why the Turkish hazel standing in it is easy to walk past. The region's official inventory of remarkable trees ranks it eleventh of its species anywhere in Brussels, 17 metres tall with a 16 metre crown and a trunk 208 centimetres around, recorded as fully healthy and holding, in the register's own words, a central position in the square's landscape.\n\nTurkish hazel is the one hazel that grows as a proper tree rather than a multi-stemmed shrub, with a straight trunk and a tidy, pyramidal crown that made it a favourite for European city squares long before anyone thought to protect individual specimens. It flowers in late winter, small and easy to miss, and carries its nuts through summer inside a spiky husk that looks nothing like a supermarket hazelnut.\n\nOnly the official register documents this specific tree so far, which is stated here rather than smoothed over. What the register gives is precise and consistent (rank, dimensions, a health check), which is a different kind of confidence than a second written source, and one this page is honest about.",
-      "verified_sources": [
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables"
-      ],
-      "access": "Free, public square, open at all hours",
-      "transport": "Metro to Louise or Gare Centrale, short walk",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3429) names this tree; no second independent source found this pass, exactly as the leads file recorded. Shipped flagged per CLAUDE.md Step 2 (a tree with only one source ships flagged rather than waiting). No age estimate: no published growth factor for Corylus colurna in this climate was found this pass.",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "bru_024",
-      "name": "The Pedunculate Oak of Mont des Arts",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Jardin du Mont des Arts, Brussels",
-        "latitude": 50.844173,
-        "longitude": 4.356876,
-        "neighbourhood": "Mont des Arts"
-      },
-      "story": "The Mont des Arts garden is not what it looks like: a formal, two-hectare terrace of clipped yew and box hedges offering one of the best panoramic views over central Brussels, it is actually a roof, built in 1957 to 1958 over an underground car park, designed by the Belgian landscape architect Rene Pechere as what the profession calls a suspended garden. This pedunculate oak, girthed at 166 centimetres and legally inscribed on the region's official remarkable-trees register, grows in that engineered ground between the Royal Library and the Avenue des Arts.\n\nThe site's own history goes back further than the garden itself: an earlier version was laid out for the 1910 World's Fair to hide, in the words of its own French landscape architect Jules Vacherot, the shabby state of the hillside beneath a cloak of greenery and flowers. What stands today is the second attempt at the same idea, decades later and considerably more ambitious. Brussels' official inventory records the oak's girth and legal status without a planting date, so the tree's age is undocumented rather than estimated. It grows in the open, free, on one of the city's most photographed viewpoints.",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "kind": "fruit",
-        "label": "September and October, when the acorns drop and a good mast year buries the ground in them"
-      },
-      "verified_sources": [
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
-        "https://opendata.brussels.be/explore/dataset/bruxelles_arbres_remarquables/"
-      ],
-      "access": "Free, public garden, open at all hours",
-      "transport": "Mont des Arts, central Brussels; short walk from Gare Centrale",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3438) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates (which carry no address text of their own) rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
-      "location_precision": "confirmed",
-      "girth_cm": 166
-    },
-    {
-      "id": "bru_025",
-      "name": "The Ailanthus of Mont des Arts",
-      "species": "Tree of Heaven (Ailanthus altissima)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Near the Jardin du Mont des Arts, Brussels",
-        "latitude": 50.84655,
-        "longitude": 4.354837,
-        "neighbourhood": "Mont des Arts"
-      },
-      "story": "Most cities that have a Tree of Heaven at all have one nobody planted, since Ailanthus altissima spreads through cracked pavement and vacant lots so readily that it is treated as a weed across much of Europe and North America. This one is different: girthed at 321 centimetres, one of the widest trunks on this whole list, and formally inscribed on the region's legal register of remarkable trees, a species usually pulled out on sight given a rare pass because of its size and standing.\n\nIt grows near the Mont des Arts, the raised garden terrace between Brussels' upper and lower town, built over an underground car park in the 1950s on a site that has carried some form of ornamental greenery since the 1910 World's Fair. Ailanthus was imported to Europe from China in the 18th century as an ornamental curiosity and a potential silk-moth host before anyone anticipated how aggressively it would naturalise; a specimen this large and this old getting protected status rather than removed is the exception rather than the rule. It stands free, in the open, a short walk from the garden's oak and its Caucasian wingnut.",
-      "verified_sources": [
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
-        "https://opendata.brussels.be/explore/dataset/bruxelles_arbres_remarquables/"
-      ],
-      "access": "Free, public area, open at all hours",
-      "transport": "Mont des Arts, central Brussels; short walk from Gare Centrale",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3440) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
-      "location_precision": "confirmed",
-      "girth_cm": 321
-    },
-    {
-      "id": "bru_026",
-      "name": "The Caucasian Wingnut of Mont des Arts",
-      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Near the Jardin du Mont des Arts, Brussels",
-        "latitude": 50.844842,
-        "longitude": 4.355576,
-        "neighbourhood": "Mont des Arts"
-      },
-      "story": "Caucasian wingnut takes its name from what it does with its seeds rather than what it looks like: long, pendulous strings of winged fruit that hang from the branches through late summer, an unmistakable trait for a tree most visitors would otherwise mistake for an oversized walnut. Native to the forests of the western Caucasus, it reached European gardens in the early 19th century as one of many exotic imports that formal city gardens across the continent competed to acquire.\n\nThis specimen, girthed at 173 centimetres with a 13 metre crown, is legally inscribed on Brussels' official register of remarkable trees and grows near the Mont des Arts, the raised terrace garden between the city's upper and lower halves, built over an underground car park in the 1950s. The species suckers readily from its roots, often forming small groves rather than single trunks in the wild, though this one is recorded and protected as an individual specimen. It stands in the open, free, on a short walk that also takes in the garden's oak and its far larger ailanthus.",
-      "best_time": {
-        "months": [
-          7,
-          8,
-          9
-        ],
-        "kind": "fruit",
-        "label": "high summer, when long strings of winged fruit hang from every branch"
-      },
-      "verified_sources": [
-        "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
-        "https://opendata.brussels.be/explore/dataset/bruxelles_arbres_remarquables/"
-      ],
-      "access": "Free, public area, open at all hours",
-      "transport": "Mont des Arts, central Brussels; short walk from Gare Centrale",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 7292) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
-      "location_precision": "confirmed",
-      "girth_cm": 173
-    },
-    {
-      "id": "bru_027",
-      "name": "The Pyramidal Holly of Parc d'Egmont",
-      "species": "Pyramidal Holly (Ilex aquifolium 'Pyramidalis')",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Parc d'Egmont, on the western lawns towards the Rue aux Laines side, 1000 Brussels",
-        "latitude": 50.837912,
-        "longitude": 4.356373,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "Holly is a hedge in most of Brussels, and a sprig on a card in December. Left uncut it becomes a tree, and this is what that looks like: a trunk 1.40 metres round on the western lawns of Parc d'Egmont, which the region's inventory of remarkable trees ranks as the second largest of its cultivar anywhere in Brussels.\n\nThe cultivar is 'Pyramidalis', a narrow, upright selection of the common European holly. A cultivar is not something that turns up in a wood and comes back true from seed. Every 'Pyramidalis' is a cutting of a cutting of one original plant, so this tree and the ones standing in gardens elsewhere in Europe are the same individual, grown on in different soil.\n\nHolly lays down wood very slowly, which is the whole reason 140 centimetres earns a place on an official register while the sycamore on the same lawn carries 397 centimetres and ranks only third of its kind. Nobody has dated this one and the register does not try. It measures, it ranks, and it leaves the years alone. If you know the park's planting records, we would take the correction.\n\nThe park signposts it on its own panel, which spares you the hunt: at a distance a holly this size still reads as a shrub, right up until you are close enough to see the trunk.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/638",
-        "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 638 (Ilex aquifolium 'Pyramidalis', girth 140 cm, recorded as the second largest of its cultivar in the Brussels region; signposted on the park's own interpretive panel)"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 638), which gives the girth of 140 cm, the ranking as second largest of its cultivar in the Brussels-Capital Region, and the fact that the park's interpretive panel names it. That is a government register, which the register-layer rule accepts as the source for a tree of this kind, but no independent second source names this specific holly, so the entry is flagged. Coordinates are the register's, hence confirmed precision. No age: the inventory records size and rank and carries no planting date, and no growth-rate basis was available, so none was derived. The sycamore girth of 397 cm quoted in the story is our own bru_014, sourced to the same inventory.",
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "girth_cm": 140
-    },
-    {
-      "id": "bru_028",
-      "name": "The Pagoda Tree of Parc d'Egmont",
-      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
-        "latitude": 50.83777,
-        "longitude": 4.35714,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "Brussels files this tree under a name and a nationality that are both wrong. The register lists it as Sophora japonica. Botanists moved the species to Styphnolobium some time ago and most registers have not caught up, and it was never Japanese in the first place: it is native to China and Korea, and reached Europe by way of Japanese gardens, which is how it collected an epithet that has now outlived two corrections.\n\nIn China it was the tree of the imperial court, planted at palaces and tombs, and by tradition it was a pagoda tree on Coal Hill in Beijing that the last Ming emperor hanged himself from in 1644, with rebel armies already inside the city.\n\nThis one is a quieter proposition. Surveyors walked Parc d'Egmont in July 2019 and entered it on the region's inventory of remarkable trees, where it ranks inside the top thirty of its species for Brussels. There are not many to rank. The pagoda tree has never been planted here in quantity, which is exactly how a specimen of no great size ends up on an official list.\n\nThat survey logged one point on the lawns for the trees it added rather than a coordinate per trunk, so the pin puts you in the right corner of a park you can cross in three minutes and no closer. Nobody has recorded its age.",
-      "best_time": {
-        "months": [
-          8,
-          9
-        ],
-        "kind": "flowers",
-        "label": "late summer, when it flowers cream white in the weeks almost nothing else does"
-      },
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/7111",
-        "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 7111 (listed as Sophora japonica, Parc d'Egmont, surveyed July 2019, ranked in the top thirty of its species in the Brussels region)"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7111), one of three trees the July 2019 Egmont survey added. That register is a government source and is accepted as such under the register-layer rule; no independent second source names this tree, so the entry is flagged. Location_precision is approximate on purpose: the survey recorded a single shared coordinate (50.83777, 4.35714) for the three trees it entered rather than pinning each trunk, and the story says so in plain words. Girth is recorded for the group at up to 164 cm and is not attributed per tree here, because the source does not attribute it per tree either. No age in the register and no growth-rate basis, so none was derived. Deliberately shares no claim with bru_008, the region's sixth-thickest pagoda tree at the Abbaye de la Cambre: different specimen, different ranking, no overlapping content.",
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "Light, open, pinnate foliage on a modest trunk, on the lawns towards the Passage de Milan gate. The pin is the survey's shared point for three trees rather than this trunk, so expect to look around once you are through the gate."
-    },
-    {
-      "id": "bru_029",
-      "name": "The Weeping Ash of Parc d'Egmont",
-      "species": "Weeping Ash (Fraxinus excelsior 'Pendula')",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
-        "latitude": 50.83777,
-        "longitude": 4.35714,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "A weeping ash has no top of its own. The weeping habit is a mutation that will not throw a leading shoot, so these trees are almost always grafted onto the head of an ordinary ash stem: the trunk rises as far as the grafter's join and then stops, and everything above it falls back down in a dome. Find the change in the bark somewhere around head height and you are looking at the seam between two different plants.\n\nThis one grows on the lawns of Parc d'Egmont and went onto the region's inventory of remarkable trees after a survey in July 2019. It ranks inside the top thirty of its kind recorded in Brussels.\n\nThe species underneath the graft is having a bad century. Ash dieback, a fungus out of east Asia, has worked its way across Belgium over the past fifteen years and killed ash trees at a rate European forestry has no answer to. Nobody can promise what that means for this one, which is an argument for going to look at it rather than against.\n\nThe July survey logged a single coordinate for the trees it added rather than one per trunk, so the pin marks the group and not this stem. No age is recorded, here or anywhere: the inventory measures and ranks, and lets the years alone.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/7109",
-        "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 7109 (Fraxinus excelsior f. pendula, Parc d'Egmont, surveyed July 2019, ranked in the top thirty of its species in the Brussels region)"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7109), one of three trees the July 2019 Egmont survey added, and flagged for that reason; the register is a government source and is accepted as such under the register-layer rule. Location_precision is approximate: the survey recorded one shared coordinate (50.83777, 4.35714) for the three 2019 additions instead of pinning each trunk, and the story states that plainly. The register writes the name as Fraxinus excelsior f. pendula; the species field uses the cultivar form 'Pendula' to match the convention already live in the corpus (arn_006, yor_001). Girth for the 2019 group is recorded at up to 164 cm and is not attributed to this tree, because the source does not attribute it either. No age and no growth-rate basis, so none was derived. Nothing in the story asserts anything about this tree's own health: ash dieback is named as a fact about the species in Belgium, not as a diagnosis of this specimen.",
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "A small domed tree whose branches all curve back towards the ground, with a straight trunk that stops abruptly at the graft. The pin is the 2019 survey's shared point for three trees, so look around the lawns near the Passage de Milan gate."
-    },
-    {
-      "id": "bru_030",
-      "name": "The Thornless Honey Locust of Parc d'Egmont",
-      "species": "Thornless Honey Locust (Gleditsia triacanthos var. inermis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
-        "latitude": 50.83777,
-        "longitude": 4.35714,
-        "neighbourhood": "Sablon / Bruxelles-Ville"
-      },
-      "story": "The inermis on this tree's register entry means unarmed, and it is doing a lot of work. A wild honey locust grows branched spikes straight out of its own trunk, up to twenty centimetres long and hard enough to go through a tyre, which is why the thornless form is the only one anybody puts in a city park.\n\nThe usual explanation for those spikes is that they are about thirteen thousand years out of date. They are sized for animals that no longer exist, the giant ground sloths and mastodons that browsed North American woodland until the end of the last ice age, ate the tree's long twisted pods for the sweet pulp inside and carried the seed off in their guts. The pods still drop every autumn. Now they rot where they land.\n\nSurveyors entered this specimen on the region's inventory of remarkable trees after a pass through Parc d'Egmont in July 2019, and it sits inside the top thirty of its species for Brussels. None of the three trees that survey added is big: the thickest of them measures 164 centimetres round.\n\nThe survey gave one coordinate for the group instead of a pin per tree, so the exact spot inside the park is not on record. Look for the finest leaves in Egmont, leaflets small enough that the shade under a honey locust is barely shade. Nobody has dated it.",
-      "verified_sources": [
-        "https://sites.heritage.brussels/fr/trees/7110",
-        "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 7110 (Gleditsia triacanthos var. inermis, Parc d'Egmont, surveyed July 2019, ranked in the top thirty of its species in the Brussels region, group girth recorded up to 164 cm)"
-      ],
-      "access": "Free, public park, open daily 08:00 to 20:00",
-      "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7110), the third of the three trees the July 2019 Egmont survey added, and flagged for that reason; the register is a government source, accepted as such under the register-layer rule. Location_precision is approximate: the survey recorded one shared coordinate (50.83777, 4.35714) for all three 2019 additions rather than pinning each trunk, and the story says so. The 164 cm figure is the register's maximum for the 2019 group and is stated in the story as exactly that, a group maximum, not as this tree's own girth. No age in the register and no growth-rate basis available, so none was derived. The megafauna account of the thorns is presented in the story as the usual explanation rather than as settled fact, because it is a hypothesis about the species and not a claim about this tree. Common name follows the corpus convention of giving a distinct variant its own common name (compare arn_006 Weeping Japanese Pagoda Tree, yor_001 Narrow-Leaved Ash 'Lentiscifolia'); plain Gleditsia triacanthos is already live as Honey Locust in five other cities and is untouched.",
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "Very fine, doubly pinnate foliage that casts almost no shadow, on a smooth trunk with no thorns on it. The pin is the 2019 survey's shared point for three trees, so look across the lawns near the Passage de Milan gate."
-    }
-  ],
-  "hero_tree_id": "bru_003"
+ "city": "Brussels",
+ "country": "Belgium",
+ "status": "needs_curation",
+ "intro": "Brussels is the rare city that has kept a formal, scientific register of its own remarkable trees since 2002, cataloguing more than a thousand specimens by age, rarity and historical weight. That bureaucratic thoroughness is why ages and girths on this list are unusually exact. It also explains an odd trick the city played on itself: when Brussels built the Cinquantenaire park in 1880 for Belgium's fiftieth anniversary, it did not plant saplings. It transplanted fully grown trees from an old cemetery and the edge of the Sonian Forest, so the new park looked centuries old on its opening day.",
+ "meta_description": "Brussels has run an official register of its remarkable trees since 2002. Thirty verified locations, real stories, and how to reach each one.",
+ "question_answer": "Brussels' oldest documented tree is the Chene Josephine, a pedunculate oak in Parc Jacques Brel in Forest, estimated at close to 400 years old from a trunk just over six metres around. Brussels' own heritage inventory calls it probably the oldest oak in the entire Brussels-Capital Region. It stands in a public park that only opened in 1980, though the tree itself long predates it.",
+ "question_meta": "The Chene Josephine, a roughly 400 year old oak in Parc Jacques Brel, Forest, is Brussels' oldest documented tree. Where it stands, and twenty-nine more.",
+ "question_context": "Chene Josephine's age comes from its girth rather than any planting record: at 6.05 metres in circumference, measured at chest height, foresters use growth-rate tables for pedunculate oak to arrive at a figure close to four centuries, old enough that Brussels' own heritage inventory calls it probably the oldest oak anywhere in the region. No document names a planting date, since the ground it grows on was still part of the Kersbeekbosch, a wood already recorded under that name in 1648, long before anyone thought to write down individual trees within it. The clearest challenger for oldest is the Kasterlinde, a lime tree marking the exact point where three communes meet, documented on maps since 1777 and therefore provably at least two and a half centuries old, though its estimated true age, worked out from girth, comes out younger than the oak's. Parc Jacques Brel itself is a recent public space, only opened by the commune of Forest in 1980 after decades as a private estate, but the oak inside it is the oldest living thing within reach of a Brussels metro station. It costs nothing to visit.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Brussels?",
+   "a": "Most likely the Chene Josephine, a pedunculate oak in Parc Jacques Brel, Forest, estimated at close to 400 years from its girth. Brussels' own heritage inventory calls it probably the oldest oak in the region."
+  },
+  {
+   "q": "Are Brussels' remarkable trees free to visit?",
+   "a": "Yes, all thirty stand in public parks, gardens and streets with no admission charge, unusual compared to cities where the oldest trees sit behind a castle or palace gate."
+  },
+  {
+   "q": "Why does Brussels know so much about the age of its own trees?",
+   "a": "Since 2002, the region's heritage department has run a formal scientific inventory of remarkable trees, measuring circumference, checking rarity and recording historical association. That is why girths and ages here are unusually precise compared to most cities."
+  },
+  {
+   "q": "Why are some of Brussels' most impressive trees not its oldest?",
+   "a": "Brussels has transplanted mature trees before rather than waiting for saplings to grow. When Parc du Cinquantenaire was built in 1880, city gardeners moved in fully grown trees from an old cemetery and the Sonian Forest, so several of its most striking trees are older than the park but younger than genuine centuries-old specimens elsewhere on this list."
+  }
+ ],
+ "trees": [
+  {
+   "id": "bru_001",
+   "name": "The Chene Josephine",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "close to 400 years",
+   "age_min": 350,
+   "age_max": 420,
+   "location": {
+    "address": "Parc Jacques Brel, Avenue Besme, 1190 Forest, Brussels",
+    "latitude": 50.8033,
+    "longitude": 4.3228,
+    "neighbourhood": "Forest"
+   },
+   "story": "Brussels' own heritage inventory calls this oak probably the oldest tree of any kind in the entire region, and its evidence is a single number: 6.05 metres around the trunk, measured at chest height. That circumference translates, through standard oak growth tables, to an age close to four hundred years, since no planting record exists for a tree this old growing in what was once simply called the Kersbeekbosch, a wood already named in a document from 1648, a full century before anyone thought to record individual trees within it. A 20th century industrialist built a chateau and pleasure pavilion on the land and renamed it Parc des Eperons d'Or, but the commune of Forest only acquired the grounds in 1979 and opened them to the public in 1980, as Parc Jacques Brel. The oak, already three and a half centuries old by then, barely noticed the paperwork. At roughly 20 metres tall with a canopy shaped by centuries of unhurried growth, it now shares its park with joggers, a playground and Brussels' newer housing developments, a working class commune's public oak older than most of the buildings standing around it put together.",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "kind": "fruit",
+    "label": "acorns drop, and a good mast year buries the ground in them"
+   },
+   "verified_sources": [
+    "https://www.woodwideweb.be/fr/atlas/12.html",
+    "https://sites.heritage.brussels/fr/sites/169"
+   ],
+   "access": "Free, public park",
+   "transport": "Tram or bus to Forest Centre, short walk into the park",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Age is a girth-based estimate, not a documented planting date; the Kersbeekbosch reference (1648) establishes the wood existed, not this specific tree's age. Called 'probably the oldest oak' in the region by the Wood Wide Web heritage source, softened from an absolute claim per hard rule 8. No open licensed photo found this run. Pin was genuinely wrong, not just approximate: the stored coordinates sat about 1.5km from the actual park, seemingly a geocoding slip from an early research pass. Corrected 2026-07-27 directly from this entry's own already-cited source (woodwideweb.be's atlas entry for this exact tree, ID 1139, which states its own GPS reading), independently cross-checked against Nominatim's geocode of Parc Jacques Brel itself, which lands within 70m of the same point. Set to confirmed.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "bru_002",
+   "name": "The Kasterlinde",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "age_estimate": "200+ years",
+   "age_min": 200,
+   "age_max": 260,
+   "best_time": {
+    "months": [
+     6,
+     7
+    ],
+    "label": "late June, when its flowers scent the whole street corner"
+   },
+   "location": {
+    "address": "Kasterlindenstraat, opposite Cafe In de Linde, Dilbeek, Brussels",
+    "latitude": 50.8557989,
+    "longitude": 4.2898155,
+    "neighbourhood": "Berchem-Sainte-Agathe / Molenbeek-Saint-Jean border"
+   },
+   "story": "A single lime tree marks the exact spot where three Brussels communes meet, and it has been doing the job since at least 1777, when the Ferraris map, the first detailed survey of the Austrian Netherlands, recorded it at the boundary point of Molenbeek-Saint-Jean, Berchem-Sainte-Agathe and Dilbeek. Later maps track it by name: an 1821 survey shows it beside a chapel demolished that same decade, and an 1858 map of Brussels and its surroundings labels the spot simply Kaster Linde. Its trunk has thickened from 2.75 metres around in the early 1900s, when the Belgian botanist Chalon first measured it for his book on the country's trees, to 3.15 metres today, growth that puts its real age comfortably past two centuries even before the documentary trail is counted. A street and a nearby cafe, In de Linde, both take their name from it. Unlike a garden specimen chosen for its looks, this tree exists because generations of surveyors needed a fixed point that would not move, and a slow growing lime, marking a boundary since before Belgium existed as a country, turned out to be exactly that.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/400",
+    "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles"
+   ],
+   "access": "Free, public street corner",
+   "transport": "Bus to the Berchem-Sainte-Agathe / Dilbeek border",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Dilbeek_Kasterlindenstraat_Grensboom_%281%29_-_235489_-_onroerenderfgoed.jpg",
+    "license": "CC BY 4.0",
+    "attribution": "Geert Van der Linden / Flanders Immovable Heritage Agency, via Wikimedia Commons",
+    "status": "approved",
+    "width": 1440,
+    "height": 1080
+   },
+   "curation_status": "ai_generated",
+   "notes": "Documentary trail (1777 Ferraris map, 1821 and 1858 surveys, Chalon's early 20th century measurement) is unusually solid for a single tree, corroborated across the official heritage inventory and an independent citizen blog. Photo verified on Commons: Flanders Immovable Heritage Agency's own inventory photo of the Dilbeek Kasterlindenstraat boundary tree, matching the described location precisely. Pin corrected 2026-07-28: the stored coordinate (50.8672, 4.2965) turned out to be about 1.3km from the real Kasterlindenstraat, discovered while Nominatim-geocoding the street named in this entry's own sources. Triangulated three independent ways: Kasterlindenstraat's own OSM geocode, neighbouring Kerselaarstraat's, and a direct name match for 'In De Linde' (a real cafe at 177 Kasterlindenstraat, exactly the landmark this entry's own story already names), all converging on the same spot. The heritage inventory page (inventaris.onroerenderfgoed.be/erfgoedobjecten/302035) confirms the crossroads/cemetery description but its own precise coordinate isn't exposed through this session's tooling; Brussels' own remarkable-tree register (sites.heritage.brussels) is blocked (403) for the same reason prior passes found, still true 2026-07-29. Resolved to confirmed 2026-07-29: an OpenStreetMap node individually named \"Kasterlinde\" (this entry's exact tree name, not just a street or landmark match) sits 15m from the prior anchor, at 50.8557989, 4.2898155. Treated as a surveyed point for the tree itself rather than another nearby anchor, since the node's name is the tree, not a building or street.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "bru_003",
+   "name": "The Oriental Plane of Parc Leopold",
+   "species": "Oriental Plane (Platanus orientalis)",
+   "age_estimate": "200 years",
+   "age_min": 190,
+   "age_max": 210,
+   "location": {
+    "address": "Parc Leopold, Rue Belliard, 1000 Brussels",
+    "latitude": 50.837462,
+    "longitude": 4.378534,
+    "neighbourhood": "European Quarter"
+   },
+   "story": "The thickest tree of its kind anywhere in Brussels stands in a park built over a vanished stream. This oriental plane, measured at 6.48 metres around in 2023, only joined the region's legal heritage inventory in August 2024, a formal recognition that arrived roughly two centuries after the tree itself. Plane trees have marked water since antiquity, when Greeks planted them by springs and wells to shade travellers, and this one keeps the tradition without anyone intending it to: the Maelbeek stream still runs underground nearby, beneath the Chaussee d'Etterbeek, and a small tower at the foot of the park's hill once operated as a 17th century fishery pond house long before the plane tree existed. At around 33 metres tall with a crown spreading 38 metres wide, the tree now shades a park built in the 1850s around a private estate, later absorbed into the district that today surrounds the European Parliament. It is, by circumference, the largest specimen of its species in the entire Brussels-Capital Region, a two hundred year old tree standing quietly behind institutions considerably younger than it is.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/794",
+    "https://www.monumentaltrees.com/fr/bel/bruxelles/bruxelles/1074_parcleopold/4033/"
+   ],
+   "access": "Free, public park",
+   "transport": "Metro to Maelbeek or Schuman, short walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Parc_L%C3%A9opold-Bruxelles_%2Cplatane_d%27OrientP5070020.JPG",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Ben2~commonswiki, via Wikimedia Commons",
+    "status": "approved",
+    "width": 1920,
+    "height": 2560
+   },
+   "curation_status": "ai_generated",
+   "notes": "Circumference and 2024 legal inventory listing corroborated by the official heritage inventory; monumentaltrees.com used for cross-check only, per hard rule 1, not copied. Photo verified on Commons, captioned in French as this exact tree: 'notable tree, bicentennial oriental plane, Parc Leopold, Brussels'.",
+   "location_precision": "confirmed",
+   "girth_cm": 648
+  },
+  {
+   "id": "bru_004",
+   "name": "The Pond Oaks and Beeches of the Bois de la Cambre",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "old growth, undated",
+   "age_min": 100,
+   "age_max": 220,
+   "best_time": {
+    "months": [
+     10,
+     11
+    ],
+    "label": "late October, when the beech turn copper over the ponds"
+   },
+   "location": {
+    "address": "Bois de la Cambre, near the ponds and Chalet Robinson, 1000 Brussels",
+    "latitude": 50.8058,
+    "longitude": 4.3775,
+    "neighbourhood": "Ixelles / Uccle border"
+   },
+   "story": "Brussels' most fashionable park is also a fragment of a forest older than the city walls that once surrounded it. When Leopold II's landscapers carved the Bois de la Cambre out of the northern edge of the Sonian Forest in 1861 and 1862, connecting it to the city centre by the new Avenue Louise, they left much of the existing tree cover standing rather than replanting from scratch. Around its ponds today grow pedunculate oaks, beeches, wild cherries and Austrian black pines old enough that more than eighty of them made Brussels' own official inventory of remarkable trees, from a park of 124 hectares. None of these individual pond side trees carries a documented planting date of its own, so no single age is claimed here, only that they are old growth remnants of a much larger woodland: the Sonian Forest continues south from this same tree line, and a separate, strictly protected 270 hectare section of it further out was inscribed on the UNESCO World Heritage List in 2017 for its ancient beech stands, a reminder of what this park was cut from rather than a claim about this particular corner of it.",
+   "verified_sources": [
+    "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
+    "https://en.wikipedia.org/wiki/Forest_of_Soignes"
+   ],
+   "access": "Free, public park",
+   "transport": "Tram to the Bois de la Cambre terminus",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Le_bois_de_la_Cambre5.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "GdML, via Wikimedia Commons",
+    "status": "approved",
+    "width": 2448,
+    "height": 3264
+   },
+   "curation_status": "flagged",
+   "notes": "Presented deliberately as an ensemble, not one dated specimen: no individual tree here has a documented planting date. The UNESCO designation applies to a separate, protected 270 hectare section of the wider Sonian Forest, not to Bois de la Cambre itself; the story is careful to say so rather than implying this park is inside the listed zone. Photo shows the pond and Chalet Robinson area framed by mature deciduous canopy, a fair representative shot for this ensemble entry.",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "bru_005",
+   "name": "The Giant Sequoia of Parc de Woluwe",
+   "species": "Giant Sequoia (Sequoiadendron giganteum)",
+   "age_estimate": "125-135 years",
+   "age_min": 125,
+   "age_max": 135,
+   "location": {
+    "address": "Parc de Woluwe, near Avenue de Tervueren, 1150 Woluwe-Saint-Pierre, Brussels",
+    "latitude": 50.826431,
+    "longitude": 4.428151,
+    "neighbourhood": "Woluwe-Saint-Pierre"
+   },
+   "story": "The single largest tree in Brussels by trunk girth is not native to Europe at all. This giant sequoia, measured at 8.66 metres around in 2017, thicker than any other tree recorded in the region, grows in a park that did not exist until the 1890s, when the landscape architect Emile Laine laid it out for Leopold II as a green corridor linking the 1897 World's Fair site at the Cinquantenaire to a second exhibition site at Tervuren. That makes the sequoia, at most, only a little over a century old, remarkable for how much girth a genuinely young tree can put on: giant sequoias can live two thousand years and more in their native California, and reach 50 to 60 metres even in Belgium's cooler, wetter climate. Planted as an ornamental statement piece for an international exposition rather than surviving from an older forest, it has spent barely a tenth of its natural lifespan reaching a size that would take most Belgian native species several centuries to match. The park around it now holds some 180 different tree species, and this one is, by a wide margin, the thickest of all of them.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/2851",
+    "https://www.woluwe1150.be/culture-et-loisirs/histoire-patrimoine/bespaces-verts/parc-parmentier/"
+   ],
+   "access": "Free, public park",
+   "transport": "Tram to Parc de Woluwe, or bus from Montgomery metro station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "notes": "Girth (866cm, measured 2017) and 'largest tree in Brussels' claim corroborated by the official heritage inventory and the park's own design history (Laine, 1890s, for Leopold II). Exact planting year not found, so age is inferred from the park's founding decade. Pin corrected 2026-07-26: the prior coordinate was about 1.1km away, outside the tree's actual position. Bruxelles Environnement's own managed-tree WFS layer (ows.environnement.brussels/green) has exactly one Sequoiadendron giganteum in the park with a circumference this large (840cm, close to this entry's own sourced 866cm within plausible remeasurement drift); a second, much smaller sequoia (503cm) also exists in the park but is clearly not 'the single largest tree in Brussels' this entry describes.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "bru_006",
+   "name": "The Purple Beech of Parc Tournay-Solvay",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "150-200 years",
+   "age_min": 150,
+   "age_max": 200,
+   "best_time": {
+    "months": [
+     4,
+     5
+    ],
+    "label": "April and May, when the new leaves are brightest red-purple"
+   },
+   "location": {
+    "address": "Parc Tournay-Solvay, Chaussee de La Hulpe, 1170 Watermael-Boitsfort, Brussels",
+    "latitude": 50.793916,
+    "longitude": 4.411531,
+    "neighbourhood": "Watermael-Boitsfort"
+   },
+   "story": "Alfred Solvay, brother of the industrial chemist Ernest Solvay, built a country manor at the edge of the Sonian Forest in 1878, and the park around it still carries his family's name today. His daughter Therese Tournay-Solvay later expanded the grounds, and in the early 20th century the landscape architect Jules Buyssens redesigned them into the layout that survives now, mixing exotic plantings with remnants of the original forest vegetation. Among the survivors is a purple beech, its almost black red foliage a deliberate contrast against the ordinary green beeches nearby, part of a group of large trees in the park old enough that several, this one included, appear in the official inventory of the Brussels region's natural heritage. No source gives this specific tree an individual age, only that trees of its kind in the park run from roughly a century and a half to two centuries old, a range wide enough to be honest rather than precise. The park sits directly against the edge of the Sonian Forest in Watermael-Boitsfort, free to enter, and considerably quieter than Brussels' larger, better known green spaces.",
+   "verified_sources": [
+    "https://bruxelles.natagora.be/idees-de-balades-et-observations/le-parc-tournay-solvay-a-watermael-boitsfort",
+    "https://fr.wikipedia.org/wiki/Parc_Tournay-Solvay"
+   ],
+   "access": "Free, public park",
+   "transport": "Bus to Chaussee de La Hulpe, Watermael-Boitsfort",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Age range (150-200 years) is sourced to the park's trees generally, not confirmed for this individual purple beech specifically; flagged as an estimate rather than a measurement. Pin corrected 2026-07-26 via Bruxelles Environnement's managed-tree WFS layer: the only Fagus sylvatica 'Atropunicea' (the purple beech cultivar) recorded in the park, moved about 500m from the prior estimate.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "bru_007",
+   "name": "The Douglas Fir of the Hippodrome",
+   "species": "Douglas Fir (Pseudotsuga menziesii)",
+   "age_estimate": "up to 150 years",
+   "age_min": 100,
+   "age_max": 150,
+   "location": {
+    "address": "Hippodrome de Boitsfort, Chaussee de La Hulpe, 1170 Watermael-Boitsfort, Brussels",
+    "latitude": 50.8009,
+    "longitude": 4.4106,
+    "neighbourhood": "Watermael-Boitsfort"
+   },
+   "story": "The tallest tree in Brussels grows on what used to be a racecourse. This Douglas fir, standing 33 metres, took root sometime after 1875, the year the City of Brussels leased roughly 25 hectares of forest edge to the Royal Society for the Improvement of Horse Breeds, which built a hippodrome with two grandstands here by 1878. The species itself could not have grown here any earlier: Douglas fir only reached Europe from the American Pacific coast in 1827, brought back by the Scottish botanist after whom it is named, so even the oldest possible specimen anywhere in Belgium falls short of two centuries. This one, rising above a racecourse that operated for well over a century before closing to horses, has had roughly a century and a half at most to outclimb every native species around it, and its height, not its age, is the record it holds. The hippodrome grounds are now being redeveloped as a mixed public park and university site, and the tree, along with much of the surrounding tree cover, is intended to stay exactly where it is through that transition.",
+   "verified_sources": [
+    "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
+    "https://usquare.brussels/en/sites/hippodrome"
+   ],
+   "access": "Free, public park (former racecourse, under redevelopment)",
+   "transport": "Tram or bus to Boitsfort, short walk",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "A source describing the hippodrome mentions some trees on the wider grounds are over 250 years old; that figure cannot apply to the Douglas fir itself, since the species was only introduced to Europe in 1827, so this entry's age range is capped accordingly and the 250 year figure is not repeated here to avoid a biologically impossible claim.",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "bru_008",
+   "name": "The Sophora of the Abbaye de la Cambre",
+   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+   "age_estimate": "unknown, mature",
+   "age_min": 100,
+   "age_max": 180,
+   "best_time": {
+    "months": [
+     8
+    ],
+    "label": "August, when it is one of the last trees in the city to flower"
+   },
+   "location": {
+    "address": "Jardins de l'Abbaye de la Cambre, Avenue Emile Duray, 1050 Ixelles, Brussels",
+    "latitude": 50.819676,
+    "longitude": 4.3799,
+    "neighbourhood": "Ixelles"
+   },
+   "story": "A Japanese pagoda tree grows in the garden of a monastery that housed Cistercian nuns for nearly six hundred years. The Abbaye de la Cambre was founded in 1201 and suppressed in 1796 during the French occupation, and while its oldest surviving stonework, the abbey church and parts of the cloister, dates to the 13th and 14th centuries, most of the garden layout around this tree is 18th century. The sophora itself is considerably younger than any of that, a species that only reached European gardens in the mid 1700s and was slower still to become a common ornamental choice, but its trunk, measured at 3.08 metres around in 2012, makes it the sixth largest of its kind recorded anywhere in the Brussels region. Light, almost feathery foliage sets it apart from the abbey's heavier, older trees, and in late summer it produces long fleshy seed pods rather than the flowers most people expect from an ornamental tree. The abbey buildings now house a school and municipal offices, but the gardens remain open to the public, free, in the middle of Ixelles.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/1233",
+    "https://fr.wikipedia.org/wiki/Abbaye_de_la_Cambre"
+   ],
+   "access": "Free, public garden",
+   "transport": "Tram to Abbaye or Bois de la Cambre stop",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Girth and regional size ranking (6th largest of its species) sourced to the official heritage inventory; no planting date found for this specific tree, so age range is a broad estimate. Pin resolved 2026-07-27 via Bruxelles Environnement's managed-tree WFS: of three Sophora japonica within the abbey grounds bounding box (208cm, 330cm and 313cm circumference), the 313cm specimen is a tight match for this entry's own sourced 308cm (2012) measurement, close enough to reflect a few years' further growth. Moved about 700m to the exact match, a real correction, not just tightening.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "bru_009",
+   "name": "The Black Mulberry of the Botanical Garden",
+   "species": "Black Mulberry (Morus nigra)",
+   "age_estimate": "possibly 200 years",
+   "age_min": 120,
+   "age_max": 200,
+   "best_time": {
+    "months": [
+     8
+    ],
+    "label": "August, when the fruit drops and stains the path"
+   },
+   "location": {
+    "address": "Jardin Botanique (Le Botanique), Rue Royale, 1210 Saint-Josse-ten-Noode, Brussels",
+    "latitude": 50.855198,
+    "longitude": 4.36434,
+    "neighbourhood": "Saint-Josse-ten-Noode"
+   },
+   "story": "A mulberry tree possibly older than Belgium itself grows in a garden that predates the country by four years. The State Botanical Garden of Brussels opened on this site in 1826, on a 6.4 hectare terraced plot at the corner of what is now Rue Royale and the Boulevard du Jardin Botanique, and this black mulberry, its trunk over two metres around, is old enough that it plausibly dates to those original 1820s plantings, though no surviving record names its exact planting year. Black mulberry is a Mediterranean species, slow to fruit and famous for staining anything beneath it a deep purple black when its berries drop in late summer, a domestic habit that made it a fixture of European monastery and manor gardens for centuries before this one arrived in a public botanical collection. The garden itself stopped functioning as a working scientific collection decades ago and is now a public park known simply as Le Botanique, its 19th century glasshouse repurposed as a concert venue, but the trees planted for research have stayed exactly where the botanists left them.",
+   "verified_sources": [
+    "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
+    "https://en.wikipedia.org/wiki/Botanical_Garden_of_Brussels"
+   ],
+   "access": "Free, public park",
+   "transport": "Metro to Botanique, 2 min walk",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "No source gives this tree a confirmed planting date; the 1826 garden founding date is used as a plausible upper bound, not a documented fact about this specific mulberry, and the story states that caveat directly. Pin resolved 2026-07-27 via Bruxelles Environnement's own managed-tree WFS (ows.environnement.brussels/green, layer 'tree', the same source used for bru_005/bru_006 on 2026-07-26): exactly one Morus nigra recorded within Le Botanique's grounds (id_arb 20337), circumference 265cm, matching this entry's own sourced 'over two metres around' almost exactly. Moved about 100m to the exact match.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "bru_010",
+   "name": "The Chestnut Avenue of the Cinquantenaire",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "possibly close to 200 years",
+   "age_min": 140,
+   "age_max": 190,
+   "best_time": {
+    "months": [
+     5
+    ],
+    "label": "May, when its candle-shaped flowers bloom along the avenue"
+   },
+   "location": {
+    "address": "Parc du Cinquantenaire, 1000 Brussels / 1040 Etterbeek",
+    "latitude": 50.8414,
+    "longitude": 4.4005,
+    "neighbourhood": "European Quarter / Etterbeek"
+   },
+   "story": "When Brussels built Parc du Cinquantenaire in 1880 to mark Belgium's fiftieth year as a country, it cheated on the trees. Rather than planting saplings and waiting decades for a new park to look established, city gardeners transplanted trees that were already fully grown, moved in from the old Leopold Quarter cemetery, the Bois de la Cambre and the edge of the Sonian Forest itself. The common horse chestnuts that line one of the park's principal avenues are among the clearest survivors of that trick: mature when they arrived, they are older than the park itself by however many decades they had already grown before the move, plausibly close to two centuries old today, though no individual planting record confirms a precise figure for any single tree in the row. Around fifteen trees across the wider Cinquantenaire park made it onto Brussels' official register of remarkable trees, chestnuts among them alongside false acacias, a silver maple and a rare Italian alder, but the chestnut avenue is the one most visitors walk beneath without knowing they are standing under trees older than the triumphal arch at the park's centre.",
+   "verified_sources": [
+    "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
+    "https://sites.heritage.brussels/files/pages/77/documents/BXL-Arbres-catRecto.pdf"
+   ],
+   "access": "Free, public park",
+   "transport": "Metro to Schuman or Merode, short walk",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Dreef_in_Jubelpark_Brussel.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Sam.Donvil, via Wikimedia Commons",
+    "status": "approved",
+    "width": 4912,
+    "height": 3264
+   },
+   "curation_status": "flagged",
+   "notes": "The transplanting story (mature trees moved from the old Leopold Quarter cemetery, Bois de la Cambre and the Sonian Forest when the park was built in 1880) is well corroborated, but no individual chestnut in the avenue has a confirmed age; the range given assumes a plausible age at transplanting plus the 146 years since 1880. Photo shows a tree-lined avenue in Cinquantenaire/Jubelpark, a fair representative shot for this ensemble entry. Pin tightened 2026-07-27 via Bruxelles Environnement's managed-tree WFS: 11 Aesculus hippocastanum recorded across the park's grounds, consistent with the source's count of about fifteen registered remarkable trees there; moved about 210m to the centroid of that cluster, the same honest-ensemble treatment as Amsterdam's Amstelveld wingnuts.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "bru_011",
+   "name": "The Turner's Oak of Parc d'Egmont",
+   "species": "Turner's Oak (Quercus x turneri)",
+   "age_estimate": "around 125 years",
+   "age_min": 115,
+   "age_max": 145,
+   "location": {
+    "address": "Parc d'Egmont, by the palace railings at the end of the Passage de Milan, 1000 Brussels",
+    "latitude": 50.838109,
+    "longitude": 4.357707,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "Every register starts somewhere, and Brussels started here. When the region opened its scientific inventory of remarkable trees, this squat evergreen oak was the first entry made, in 1999, ahead of every giant sequoia and four hundred year old oak that has been added since. It earned the place without being old or tall. It stands ten metres high and spreads its crown seventeen metres wide, a shape that reads more like a parasol than a tree, and its trunk is 2.90 metres around, second thickest of its kind in the whole region. Turner's oak is a garden invention rather than a wild species, a cross between the common pedunculate oak and the Mediterranean holm oak raised in an Essex nursery and named after the nurseryman who raised it. It kept the southern parent's leathery leaves, so it stays green through a Brussels winter and only goes briefly bare in spring when the new growth pushes the old leaves off, the reverse of every other oak around it. The landscape architect Edmond Galoppin most likely planted it when he remade these palace gardens as an English park in 1901. A second, taller Turner's oak grows a few minutes away on the same lawns.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/648",
+    "https://www.woodwideweb.be/fr/atlas/120.html",
+    "https://gardens.brussels/fr/espaces-verts/parc-degmont"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "notes": "Girth 290cm measured 2019, height 10m, crown 17m, health recorded as 'Sain', and the ranking as second thickest of its species in the region all come from the region's own per-tree record (heritage.brussels tree 648, legally inventoried 19 August 2024). The 1999 first-entry fact and the Galoppin 1901 planting attribution come from Wood Wide Web, Brussels Environment's published tree atlas, which gives a GPS reading of 50.8381, 4.3577 for this tree, matching the register coordinate exactly. Wood Wide Web's own card mixes this tree's data with the park's second Turner's oak (register 649, 264cm, 23m tall), so only the figures confirmed by the register are used here. Age is inferred from the 1901 park remaking rather than a planting record, hence the range. Wood Wide Web dates the hybrid's creation to the late 19th century, which conflicts with the standard account of an 18th century Essex origin, so the story names the nursery and the parentage but claims no date. No open licensed photograph of this individual tree found: heritage.brussels publishes photographs of it but states no licence beyond a blanket site copyright, and Wikimedia Commons has park views only, none identifiable as this tree.",
+   "location_precision": "confirmed",
+   "girth_cm": 290
+  },
+  {
+   "id": "bru_012",
+   "name": "The Ginkgo of Parc d'Egmont",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "around 120 years",
+   "age_min": 100,
+   "age_max": 140,
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "November, when it drops the whole crown of gold in a few days",
+    "kind": "autumn colour"
+   },
+   "location": {
+    "address": "Parc d'Egmont, on the lawn facing the Egmont Palace railings, 1000 Brussels",
+    "latitude": 50.838262,
+    "longitude": 4.356713,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "This ginkgo is being slowly harmed by people who like it. It is the seventh thickest of its species recorded anywhere in the Brussels region, 3.27 metres around and twenty metres tall, and it stands on open grass in the only public park inside the old city walls that sits entirely in the middle of a block, invisible from every street around it. That makes it the obvious place to lie down on a warm afternoon, and enough people have lain under this particular tree that the soil over its roots is packed hard, which is why the region's surveyors record its condition as slightly defective despite it being, for a ginkgo, extremely young. Ginkgos are the last survivors of a lineage that was already ancient when the first flowering plants appeared, and they are famous for shrugging off pollution, disease and radiation. Compacted ground is the one thing they do not shrug off. The reward for keeping a couple of metres back is in November, when the fan shaped leaves turn a uniform butter gold and then let go almost all at once, laying a circle of yellow on the grass. A walnut across the lawn turns at the same time, so the whole clearing goes yellow together.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/637",
+    "https://www.woodwideweb.be/fr/atlas/3698.html"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "notes": "Girth 327cm measured 2019, height 20m, crown 18m and the health rating 'Legers defauts' come from the region's per-tree record (heritage.brussels tree 637, legally inventoried 19 August 2024). The soil compaction diagnosis and the paired autumn colour with the walnut opposite come from Wood Wide Web (atlas 3698), Brussels Environment's published tree atlas, whose GPS reading of 50.8383, 4.3567 lands within about 5 metres of the register coordinate. The two sources disagree by one place on the regional size ranking, sixth on Wood Wide Web against seventh on the register; the register's own figure is used. No planting record exists, so the age follows the park's 1901 remaking under Edmond Galoppin. No open licensed photograph of this individual tree found.",
+   "location_precision": "confirmed",
+   "girth_cm": 327
+  },
+  {
+   "id": "bru_013",
+   "name": "The Tulip Tree of Parc d'Egmont",
+   "species": "Tulip Tree (Liriodendron tulipifera)",
+   "age_estimate": "around 120 years",
+   "age_min": 100,
+   "age_max": 140,
+   "best_time": {
+    "months": [
+     6
+    ],
+    "label": "June, when the tulip flowers open high in the crown",
+    "kind": "flowers"
+   },
+   "location": {
+    "address": "Parc d'Egmont, beside the ginkgo on the palace lawn, 1000 Brussels",
+    "latitude": 50.838127,
+    "longitude": 4.356685,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "In autumn 2018 a Brussels art institute adopted this tree. The ISELP, whose building stands a few streets away, chose the tulip tree of Parc d'Egmont as the living centrepiece of an exhibition called A Forest, on the argument that a monument you can walk around, in a park that joins the upper and lower city, does something a gallery wall cannot: it makes a passerby slow down. The tree is a good candidate for the job. It is 3.06 metres around and twenty seven metres tall, the only specimen on this list the region's surveyors record as being in outright good health, and it carries the strangest leaf in the park, cut off flat at the tip as though someone had trimmed it with scissors. Its flowers are the reason for the name and the reason most people miss them: greenish yellow, tulip shaped, and produced high in the crown in June, where they sit above eye level until a storm drops one on the path. Europeans wanted this American tree so badly in the eighteenth century that its seeds were smuggled. Three hundred years later the enthusiasm has come back around, in the form of an art exhibition.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/642",
+    "https://www.woodwideweb.be/fr/atlas/154.html"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "notes": "Girth 306cm measured 2019, height 27m, crown 20m, health 'Sain' and the ranking of nineteenth thickest of its species in the region come from heritage.brussels tree 642, legally inventoried 19 August 2024. The ISELP sponsorship during the exhibition A Forest, 21 September to 15 December 2018, and the eighteenth century seed trade are recorded on Wood Wide Web (atlas 154), Brussels Environment's published tree atlas, whose GPS reading of 50.8381, 4.3567 lands within about 5 metres of the register coordinate. Wood Wide Web files this tree under the address Boulevard de Waterloo 31, which is the park's street entrance rather than a separate location. No planting record exists, so the age follows the park's 1901 remaking under Edmond Galoppin. No open licensed photograph of this individual tree found.",
+   "location_precision": "confirmed",
+   "girth_cm": 306
+  },
+  {
+   "id": "bru_014",
+   "name": "The Great Sycamore of Parc d'Egmont",
+   "species": "Sycamore (Acer pseudoplatanus)",
+   "age_estimate": "120-190 years",
+   "age_min": 120,
+   "age_max": 190,
+   "location": {
+    "address": "Parc d'Egmont, on the western lawns near the Rue aux Laines side, 1000 Brussels",
+    "latitude": 50.837759,
+    "longitude": 4.356415,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "Nobody plants a sycamore on purpose any more. It seeds itself into gutters and railway banks across Europe, grows fast, and gets cut down long before it can become anything, which is what makes the largest tree in this park worth looking up at: 32 metres of it, with a clean trunk running six metres before the first branch and a girth of 3.97 metres measured in 2026. The region's surveyors rank it the third thickest sycamore recorded anywhere in Brussels. It is also the reason the park feels bigger than its one and a half hectares. Parc d'Egmont is sealed on all four sides by buildings, the only public green space inside the old city walls with no street frontage at all, and a tree this tall pushes the sense of the place upward instead of outward. The sycamore has been in Belgium so long that most people take it for a native, though it arrived from the mountains of central Europe centuries ago and settled in as thoroughly as any local species. Its winged seeds spin down in September in numbers that would fill the whole park with seedlings if the gardeners let them.",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "kind": "fruit",
+    "label": "winged seeds that spin down in pairs"
+   },
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/6357",
+    "https://www.woodwideweb.be/fr/atlas/3700.html"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Rue aux Laines or Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Girth 397cm measured in 2026, height 32m, crown 20m, bole 6m, health 'Legers defauts' and the ranking of third thickest of its species in the region come from heritage.brussels tree 6357, legally inventoried 19 August 2024. This is the freshest measurement of any tree in the cluster. Flagged on age: no source dates this tree, and its girth is large enough that it may predate the 1901 Galoppin remaking and belong to Tilman-Francois Suys' 1830 layout instead, so the range is deliberately wide. Deliberately claims no height record: brussels.json already credits the Douglas Fir of the Hippodrome as the tallest tree in the city at 33m, and this one is a metre short of that, so only the species-level girth ranking is claimed. Wood Wide Web (atlas 3700) confirms the tree's existence, species and presence on Brussels Environment's own Egmont walk, but places it about 38 metres from the register coordinate; the register's position is used because it carries a surveyed Lambert grid reference per tree while the atlas coordinates are hand placed along a walking route.",
+   "location_precision": "confirmed",
+   "girth_cm": 397
+  },
+  {
+   "id": "bru_015",
+   "name": "The Cedar of Lebanon of Parc d'Egmont",
+   "species": "Cedar of Lebanon (Cedrus libani)",
+   "age_estimate": "120-160 years",
+   "age_min": 120,
+   "age_max": 160,
+   "location": {
+    "address": "Parc d'Egmont, at the southern edge against the Rue du Grand Cerf gardens, 1000 Brussels",
+    "latitude": 50.837129,
+    "longitude": 4.355564,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "This cedar has spent its life pretending to be a broadleaf. Instead of the single straight column its species normally builds, its trunk divides low down into two enormous limbs, one leaning out over the back gardens of the Rue du Grand Cerf, the other reaching into the wooded corner of the park, and the resulting silhouette looks far more like an old beech than a conifer. Walk up to it and the disguise fails immediately: the resin smell is unmistakable, the needles come in tight rosettes rather than singly, and the cones sit upright on the branches like small barrels with their scales pressed flat. It measures 2.98 metres around and stands at the park's boundary rather than on its lawns, half visible from the street, which is probably why it is the least photographed of the park's registered trees. Cedars of Lebanon reached western European gardens in the seventeenth century, and the estates that could afford them planted them as statements. This one has outlived the statement. The palace beside it burned in 1892 and was rebuilt, the gardens were redrawn twice, the city bought the whole thing in 1918, and the cedar carried on splitting itself in two directions.",
+   "best_time": {
+    "months": [
+     9,
+     10,
+     11
+    ],
+    "kind": "fruit",
+    "label": "upright barrel cones that sit on the branches like eggs"
+   },
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/629",
+    "https://www.woodwideweb.be/fr/atlas/36.html",
+    "https://fr.wikipedia.org/wiki/Parc_d'Egmont"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Rue aux Laines entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Girth 298cm measured 2019, crown 17m, bole 6m and health 'Legers defauts' come from heritage.brussels tree 629, legally inventoried 19 August 2024; the register records no height for this tree. The two-limbed form, the false broadleaf silhouette and the needle and cone description come from Wood Wide Web (atlas 36), Brussels Environment's published tree atlas, whose GPS reading of 50.8371, 4.3556 lands within about 5 metres of the register coordinate; French Wikipedia's Parc d'Egmont article independently lists a cedar of Lebanon among the park's notable trees, as does the park's own on-site information panel. Flagged on age: no source dates this individual, so the range is inferred from the park's 1830 and 1901 redesigns. The 1892 fire that destroyed part of the Egmont Palace is documented on Wikimedia Commons' record of the surviving columns now standing in the park, and is context for the tree rather than a claim about it.",
+   "location_precision": "confirmed",
+   "girth_cm": 298
+  },
+  {
+   "id": "bru_016",
+   "name": "The Red Oak of Parc d'Egmont",
+   "species": "Northern Red Oak (Quercus rubra)",
+   "age_estimate": "around 120 years",
+   "age_min": 100,
+   "age_max": 140,
+   "best_time": {
+    "months": [
+     10
+    ],
+    "label": "October, when it turns scarlet a few weeks before the ginkgo turns gold",
+    "kind": "autumn colour"
+   },
+   "location": {
+    "address": "Parc d'Egmont, across the path from the ginkgo, 1000 Brussels",
+    "latitude": 50.838217,
+    "longitude": 4.356486,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "Brussels Environment's own walking route through this park gives up on describing this tree and simply says that in autumn you will notice it before you read the sign. That is fair. The northern red oak turns a deep scarlet that no European oak can produce, holds it for a couple of weeks in October, and does it here about a month before the ginkgo thirty metres away goes gold, so the same clearing performs twice in one season. The tree measures 3.42 metres around and reaches 24 metres, with a crown eighteen metres across. Its leaves are the easiest identification in the park: broad, thin, with bristle tipped points at the end of every lobe, nothing like the rounded lobes of the pedunculate oaks Belgium grows natively. It comes from eastern North America, where it is a forest tree rather than a park specimen, and it arrived in European gardens in the eighteenth century as a novelty that grew faster than anything local. Faster growth is also why it has never reached the age of a real veteran oak here, and why it is a middle aged tree that already looks substantial.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/647",
+    "https://www.woodwideweb.be/fr/atlas/3699.html"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "notes": "Girth 342cm measured 2019, height 24m, crown 18m, health 'Legers defauts' and the ranking of twenty sixth thickest of its species in the region come from heritage.brussels tree 647, legally inventoried 19 August 2024. Wood Wide Web (atlas 3699) confirms species and location and carries the line about autumn colour announcing the tree before its label does; its GPS reading of 50.8383, 4.3565 lands within about 10 metres of the register coordinate. The park's own trilingual information panel at the Boulevard de Waterloo entrance lists a Northern Red oak among the remarkable trees it signposts. No planting record exists, so the age follows the park's 1901 remaking under Edmond Galoppin. No open licensed photograph of this individual tree found.",
+   "location_precision": "confirmed",
+   "girth_cm": 342
+  },
+  {
+   "id": "bru_017",
+   "name": "The London Plane of Parc d'Egmont",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the lawns below the Rue aux Laines side, 1000 Brussels",
+    "latitude": 50.83766882849192,
+    "longitude": 4.35571961498593,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "The second thickest tree in this park ranks ninety eighth of its species across Brussels, which says more about the city than about the tree. The region has measured so many big London planes that a trunk 3.67 metres round barely places, and this one still holds a crown twenty metres wide over the Egmont lawns with only the great sycamore beating it for girth.\n\nThe London plane is a hybrid nobody planned. An oriental plane and an American plane crossed in a European garden in the seventeenth century and produced a tree tougher than either parent, which went on to line more streets than anything else on the continent. It tolerates compacted roots, drought and filthy air, and it sheds its bark in plates, which is the habit that keeps it looking clean in a city that is not.\n\nThe setting is the odd part. Parc d'Egmont is a hectare and a half boxed in on every side by the buildings of the Sablon, entered through passages rather than gates, which is how a tree this size stands five minutes from the Avenue Louise and stays unknown to people who shop there weekly.\n\nBrussels' legal inventory records the girth and the crown for this one, and, unusually for a register this thorough, no height at all.",
+   "verified_sources": [
+    "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables (heritage.brussels remarkable-tree register, CC BY 4.0, entry 646: Platane a feuille d'erable, Platanus x hispanica, girth 367 cm, crown 20 m, inscribed on the legal inventory)",
+    "https://sites.heritage.brussels/fr/trees/646 (the region's per-tree record for this entry, which carries no height figure and gives its ranking as 98th of its species in the Brussels-Capital Region)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Rue aux Laines entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed",
+   "notes": "Girth 367 cm, crown 20 m and the coordinate come from the region's own CC BY export of its legal inventory; the ranking of 98th of its species in the region and the absence of a height figure were read from the per-tree page during the 2026-08-05 pass. That page returned a database error when re-fetched on 2026-08-14, so nothing new was taken from it. The register carries no age, and none is inferred here. No open licensed photograph of this individual tree found: heritage.brussels publishes images under a blanket site copyright with no reusable licence.",
+   "girth_cm": 367
+  },
+  {
+   "id": "bru_018",
+   "name": "The Horse Chestnut of Parc d'Egmont",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the western lawns, 1000 Brussels",
+    "latitude": 50.837569928583065,
+    "longitude": 4.3555776751718565,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "The horse chestnut is one of the most planted trees in Europe and one of the rarest in the wild. Its entire natural range is a scatter of mountain ravines in northern Greece, Albania and North Macedonia, a few thousand trees in gorges, out of which sixteenth century collectors carried it to Istanbul, then to Vienna, then to everywhere. Conkers turned it into a children's institution across a continent; the wild population is small enough to be listed as threatened.\n\nThis one is 3.08 metres round with a crown fifteen metres across, on lawns closed in on all sides by the buildings of the Sablon. Brussels ranks it ninetieth of its species in the region, which for a tree this common is a respectable place to sit.\n\nBeing planted everywhere has cost it. Since the 1990s the horse chestnut leaf miner has spread across Europe, a moth whose larvae tunnel the leaves until they brown and curl by August, so most chestnuts on the continent now look half dead two months before autumn without actually being ill. Bleeding canker is the serious one, and the one that kills.\n\nThe flowers go up like white candles in May. The conkers come down in late September, which is the only fortnight of the year anybody looks at the ground under this tree.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "flowers",
+    "label": "white candles stand upright over the whole crown"
+   },
+   "verified_sources": [
+    "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables (heritage.brussels remarkable-tree register, CC BY 4.0, entry 628: Marronnier commun, Aesculus hippocastanum, girth 308 cm, crown 15 m, inscribed on the legal inventory, coordinate inside Parc d'Egmont)",
+    "https://sites.heritage.brussels/fr/trees/628 (the region's per-tree record, which gives its ranking as 90th of its species in the Brussels-Capital Region)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Rue aux Laines entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "notes": "Flagged on attribution rather than on the tree: this is the one entry in the Egmont cluster whose per-tree page failed to render its site block when the 2026-08-05 pass fetched it, so the placing of the tree inside Parc d'Egmont rests on the open dataset's coordinate alone rather than on the region's own site statement. A re-fetch on 2026-08-14 returned a database error. Girth, crown and coordinate are from the CC BY export; the regional ranking was read from the per-tree page. No age recorded and none inferred. The species' threatened status in the wild is IUCN's, its distribution and introduction history standard botany, neither a claim about this individual.",
+   "girth_cm": 308
+  },
+  {
+   "id": "bru_019",
+   "name": "The Oriental Plane of Parc d'Egmont",
+   "species": "Oriental Plane (Platanus orientalis)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, signposted on the park's information panel, 1000 Brussels",
+    "latitude": 50.838136348337265,
+    "longitude": 4.356344149195539,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "Seventy metres separate this tree from its own hybrid offspring. The oriental plane is one of the two parents of the London plane, and both grow in Parc d'Egmont within sight of each other, the parent 2.72 metres round and the descendant 3.67, which is roughly how that cross behaves everywhere: faster, tougher, thicker than the tree it came from.\n\nPlatanus orientalis is the plane of the eastern Mediterranean, the tree of Greek market squares and Persian gardens, the species Hippocrates is said to have taught under on Kos and the one Xerxes reportedly stopped his army to hang with gold. It differs from its descendant in the leaf, cut far more deeply into narrow lobes, and in temperament: it wants water and warmth, and grows slowly when it does not get them.\n\nThis one stands twenty two metres with a crown twelve metres across, and the park's own information panel names it, which most of the 582 trees on the region's legal inventory never get. Brussels ranks it twenty first of its species.\n\nThe regional champion is a kilometre and a half east in Parc Leopold, the thickest oriental plane recorded anywhere in the city, which is a fair reason to walk between the two.",
+   "verified_sources": [
+    "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables (heritage.brussels remarkable-tree register, CC BY 4.0, entry 645: Platane d'Orient, Platanus orientalis, girth 272 cm, crown 12 m, inscribed on the legal inventory; entry 646, the London plane 70 m away, girth 367 cm)",
+    "https://sites.heritage.brussels/fr/trees/645 (the region's per-tree record: height 22 m, 21st of its species in the Brussels-Capital Region, and named on the park's own information panel)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed",
+   "notes": "Girth, crown and coordinate from the region's CC BY export; height, regional ranking and the information-panel mention were read from the per-tree page during the 2026-08-05 pass, which returned a database error when re-fetched on 2026-08-14. The 70 metre figure is the distance between the two register coordinates, entries 645 and 646. No crown is claimed for this tree: bru_003, the Parc Leopold oriental plane, holds the regional record and the story points at it rather than competing with it. The Hippocrates and Xerxes stories are given as tradition, which is what they are.",
+   "girth_cm": 272
+  },
+  {
+   "id": "bru_020",
+   "name": "The Kentucky Coffeetree of Parc d'Egmont",
+   "species": "Kentucky Coffeetree (Gymnocladus dioica)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, near the Passage de Milan end, 1000 Brussels",
+    "latitude": 50.83789372083049,
+    "longitude": 4.357281190257318,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "In Dutch this tree is the doodsbeenderenboom, the dead men's bones tree. The name is about its winter. The Kentucky coffeetree comes into leaf later than almost anything else in a Belgian park, often not before late May, drops early in autumn, and spends the months between as a set of thick blunt grey twigs with nothing on them, which somebody once decided looked like bones.\n\nIt sits on Brussels' legal register of remarkable trees at a girth of seventy three centimetres, which is nothing, and it is still the fourth largest of its kind in the region. That is a comment on Brussels rather than on this tree. Gymnocladus dioica grows wild in the Ohio and Mississippi valleys, is uncommon even there, and Europe has never planted it in any quantity.\n\nThe common name comes from settlers in Kentucky who roasted and ground the seeds as a coffee substitute. The roasting mattered: raw, the seeds and pods are toxic. The species is dioecious, which is what the dioica means, so male and female flowers grow on separate trees and only a female sets the heavy leathery pods.\n\nIt is a young tree with a six metre crown, here for the botany rather than the spectacle, and worth two minutes on the way to the sycamore.",
+   "verified_sources": [
+    "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/bruxelles_arbres_remarquables (heritage.brussels remarkable-tree register, CC BY 4.0, entry 7112: Chicot du Canada / Doodsbeenderenboom, Gymnocladus dioica, girth 73 cm, crown 6 m, inscribed on the legal inventory)",
+    "https://sites.heritage.brussels/fr/trees/7112 (the region's per-tree record, which ranks it fourth largest of its species in the Brussels-Capital Region)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed",
+   "notes": "The Dutch name doodsbeenderenboom is the register's own name_nl for this entry. Girth 73 cm, crown 6 m and the coordinate come from the CC BY export; the ranking of fourth largest in the region was read from the per-tree page during the 2026-08-05 pass, and that page returned a database error when re-fetched on 2026-08-14. Published deliberately as a small tree and described as one in the story: the ranking measures how rare the species is in Brussels, not how big this specimen is. No age recorded; the entry belongs to the batch of Egmont trees surveyed in July 2019, which is a survey date rather than a planting date, so no age is inferred from it. No best_time: the bare winter frame is the species' character, but the 'bare silhouette' peak is for veterans with real architecture, not a young tree.",
+   "girth_cm": 73
+  },
+  {
+   "id": "bru_021",
+   "name": "The Second Turner's Oak of Parc d'Egmont",
+   "species": "Turner's Oak (Quercus x turneri)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 264,
+   "location": {
+    "address": "Parc d'Egmont, near the Passage de Milan end, 1000 Brussels",
+    "latitude": 50.837435,
+    "longitude": 4.356075,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "Parc d'Egmont has two Turner's oaks, and the region's own tree atlas has spent years quietly mixing up their measurements. This is the taller and thicker of the pair, 264 centimetres around and 23 metres high, against the other tree's 10 metres. Both are the same garden hybrid, bred in an English nursery by crossing the common pedunculate oak with the evergreen Mediterranean holm oak, which is why both keep their leathery leaves through a Brussels winter and only drop them briefly in spring when new growth pushes the old ones off.\n\nBrussels region's inventory of remarkable trees lists this one as the third thickest of its kind anywhere in the region, ranked by an official survey rather than a guess. No planting date survives for it specifically, though the palace grounds around it were remade as an English landscape park in 1901 by Edmond Galoppin, the likely era for both oaks even without a record naming either one.\n\nThe two trees stand a few minutes' walk apart on the same lawns, which makes them an easy pair to see together: the smaller, older-registered oak near the palace railings, this taller one closer to the Passage de Milan gate.",
+   "verified_sources": [
+    "https://www.woodwideweb.be/fr/atlas/id_120.html",
+    "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Girth 264cm and height 23m from the region's official remarkable-trees inventory (register id 649), the same dataset already used for bru_011. Wood Wide Web's atlas page for this species (id_120) conflates the two Egmont Turner's oaks' measurements in its prose, a conflation already flagged in bru_011's own notes; only the register-sourced figures for 649 are used here, not the page's own attribution of them. No age estimate: no planting record for this specific tree, and no growth factor for this garden hybrid was found this pass; the 1901 park remaking is stated as context only, not bridged into an age.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "bru_022",
+   "name": "The White Mulberries of the Passage de Milan Gate",
+   "species": "White Mulberry (Morus alba)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 130,
+   "location": {
+    "address": "Parc d'Egmont, flanking the Passage de Milan gate, 1000 Brussels",
+    "latitude": 50.837489,
+    "longitude": 4.35677,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "A pair of white mulberries flanks the Passage de Milan gate into Parc d'Egmont, one on each side, thick enough that the region's own tree inventory ranks the pair among the eighth-thickest of their species anywhere in Brussels. White mulberry is a different tree from the black mulberry Brussels already protects at the Botanical Garden: paler bark, sweeter and blander fruit, and a species grown across Europe for centuries not for eating but for its leaves, the only food silkworms will reliably take.\n\nNeither tree has a documented planting date. What is certain is the pair itself, planted close enough to read as a matched set marking an entrance rather than as two unrelated trees that happened to end up near each other, and a trunk girth of 130 centimetres each that puts them well past a garden sapling's age.\n\nMulberries fruit in July, dark and staining when ripe, and a public park pair like this one rarely gets to keep its harvest: birds strip a mulberry fast. Free, on the same lawns as the park's two Turner's oaks and its ginkgo.",
+   "verified_sources": [
+    "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
+    "https://gardens.brussels/fr/espaces-verts/parc-degmont"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Girth 130cm and the region's ranking (eighth thickest white mulberry in the region) from the official remarkable-trees inventory (register id 644). A specific claim about a failed Belgian silk industry tied to this species, present in the leads file, was not independently corroborated this pass and is left out of the story rather than repeated unverified. No age estimate: no planting record and no published growth factor for white mulberry in this climate was found this pass.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     6,
+     7
+    ],
+    "label": "June to July: pale sweet fruit, the leaves that fed the silk trade",
+    "kind": "fruit"
+   }
+  },
+  {
+   "id": "bru_023",
+   "name": "The Turkish Hazel of the Grand Sablon",
+   "species": "Turkish Hazel (Corylus colurna)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 208,
+   "location": {
+    "address": "Place du Grand Sablon, 1000 Brussels",
+    "latitude": 50.841,
+    "longitude": 4.3557,
+    "neighbourhood": "Sablon"
+   },
+   "story": "The Grand Sablon is better known for its antiques market and its chocolate shops than for a tree, which is exactly why the Turkish hazel standing in it is easy to walk past. The region's official inventory of remarkable trees ranks it eleventh of its species anywhere in Brussels, 17 metres tall with a 16 metre crown and a trunk 208 centimetres around, recorded as fully healthy and holding, in the register's own words, a central position in the square's landscape.\n\nTurkish hazel is the one hazel that grows as a proper tree rather than a multi-stemmed shrub, with a straight trunk and a tidy, pyramidal crown that made it a favourite for European city squares long before anyone thought to protect individual specimens. It flowers in late winter, small and easy to miss, and carries its nuts through summer inside a spiky husk that looks nothing like a supermarket hazelnut.\n\nOnly the official register documents this specific tree so far, which is stated here rather than smoothed over. What the register gives is precise and consistent (rank, dimensions, a health check), which is a different kind of confidence than a second written source, and one this page is honest about.",
+   "verified_sources": [
+    "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables"
+   ],
+   "access": "Free, public square, open at all hours",
+   "transport": "Metro to Louise or Gare Centrale, short walk",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3429) names this tree; no second independent source found this pass, exactly as the leads file recorded. Shipped flagged per CLAUDE.md Step 2 (a tree with only one source ships flagged rather than waiting). No age estimate: no published growth factor for Corylus colurna in this climate was found this pass.",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "bru_024",
+   "name": "The Pedunculate Oak of Mont des Arts",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Jardin du Mont des Arts, Brussels",
+    "latitude": 50.844173,
+    "longitude": 4.356876,
+    "neighbourhood": "Mont des Arts"
+   },
+   "story": "The Mont des Arts garden is not what it looks like: a formal, two-hectare terrace of clipped yew and box hedges offering one of the best panoramic views over central Brussels, it is actually a roof, built in 1957 to 1958 over an underground car park, designed by the Belgian landscape architect Rene Pechere as what the profession calls a suspended garden. This pedunculate oak, girthed at 166 centimetres and legally inscribed on the region's official remarkable-trees register, grows in that engineered ground between the Royal Library and the Avenue des Arts.\n\nThe site's own history goes back further than the garden itself: an earlier version was laid out for the 1910 World's Fair to hide, in the words of its own French landscape architect Jules Vacherot, the shabby state of the hillside beneath a cloak of greenery and flowers. What stands today is the second attempt at the same idea, decades later and considerably more ambitious. Brussels' official inventory records the oak's girth and legal status without a planting date, so the tree's age is undocumented rather than estimated. It grows in the open, free, on one of the city's most photographed viewpoints.",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "kind": "fruit",
+    "label": "September and October, when the acorns drop and a good mast year buries the ground in them"
+   },
+   "verified_sources": [
+    "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
+    "https://opendata.brussels.be/explore/dataset/bruxelles_arbres_remarquables/"
+   ],
+   "access": "Free, public garden, open at all hours",
+   "transport": "Mont des Arts, central Brussels; short walk from Gare Centrale",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3438) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates (which carry no address text of their own) rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
+   "location_precision": "confirmed",
+   "girth_cm": 166
+  },
+  {
+   "id": "bru_025",
+   "name": "The Ailanthus of Mont des Arts",
+   "species": "Tree of Heaven (Ailanthus altissima)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Near the Jardin du Mont des Arts, Brussels",
+    "latitude": 50.84655,
+    "longitude": 4.354837,
+    "neighbourhood": "Mont des Arts"
+   },
+   "story": "Most cities that have a Tree of Heaven at all have one nobody planted, since Ailanthus altissima spreads through cracked pavement and vacant lots so readily that it is treated as a weed across much of Europe and North America. This one is different: girthed at 321 centimetres, one of the widest trunks on this whole list, and formally inscribed on the region's legal register of remarkable trees, a species usually pulled out on sight given a rare pass because of its size and standing.\n\nIt grows near the Mont des Arts, the raised garden terrace between Brussels' upper and lower town, built over an underground car park in the 1950s on a site that has carried some form of ornamental greenery since the 1910 World's Fair. Ailanthus was imported to Europe from China in the 18th century as an ornamental curiosity and a potential silk-moth host before anyone anticipated how aggressively it would naturalise; a specimen this large and this old getting protected status rather than removed is the exception rather than the rule. It stands free, in the open, a short walk from the garden's oak and its Caucasian wingnut.",
+   "verified_sources": [
+    "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
+    "https://opendata.brussels.be/explore/dataset/bruxelles_arbres_remarquables/"
+   ],
+   "access": "Free, public area, open at all hours",
+   "transport": "Mont des Arts, central Brussels; short walk from Gare Centrale",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 3440) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
+   "location_precision": "confirmed",
+   "girth_cm": 321
+  },
+  {
+   "id": "bru_026",
+   "name": "The Caucasian Wingnut of Mont des Arts",
+   "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Near the Jardin du Mont des Arts, Brussels",
+    "latitude": 50.844842,
+    "longitude": 4.355576,
+    "neighbourhood": "Mont des Arts"
+   },
+   "story": "Caucasian wingnut takes its name from what it does with its seeds rather than what it looks like: long, pendulous strings of winged fruit that hang from the branches through late summer, an unmistakable trait for a tree most visitors would otherwise mistake for an oversized walnut. Native to the forests of the western Caucasus, it reached European gardens in the early 19th century as one of many exotic imports that formal city gardens across the continent competed to acquire.\n\nThis specimen, girthed at 173 centimetres with a 13 metre crown, is legally inscribed on Brussels' official register of remarkable trees and grows near the Mont des Arts, the raised terrace garden between the city's upper and lower halves, built over an underground car park in the 1950s. The species suckers readily from its roots, often forming small groves rather than single trunks in the wild, though this one is recorded and protected as an individual specimen. It stands in the open, free, on a short walk that also takes in the garden's oak and its far larger ailanthus.",
+   "best_time": {
+    "months": [
+     7,
+     8,
+     9
+    ],
+    "kind": "fruit",
+    "label": "high summer, when long strings of winged fruit hang from every branch"
+   },
+   "verified_sources": [
+    "https://patrimoine.brussels/liens/inventaires/liste-de-linventaire-legal-des-arbres-remarquables",
+    "https://opendata.brussels.be/explore/dataset/bruxelles_arbres_remarquables/"
+   ],
+   "access": "Free, public area, open at all hours",
+   "transport": "Mont des Arts, central Brussels; short walk from Gare Centrale",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Single-sourced: only the region's official remarkable-trees inventory (register id 7292) names this tree. The exact garden identification is inferred from OpenStreetMap reverse geocoding of the register's coordinates rather than stated directly by the register, so location_precision is approximate. No age estimate: the register gives girth and legal status but no planting date or growth-rate basis.",
+   "location_precision": "confirmed",
+   "girth_cm": 173
+  },
+  {
+   "id": "bru_027",
+   "name": "The Pyramidal Holly of Parc d'Egmont",
+   "species": "Pyramidal Holly (Ilex aquifolium 'Pyramidalis')",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the western lawns towards the Rue aux Laines side, 1000 Brussels",
+    "latitude": 50.837912,
+    "longitude": 4.356373,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "Holly is a hedge in most of Brussels, and a sprig on a card in December. Left uncut it becomes a tree, and this is what that looks like: a trunk 1.40 metres round on the western lawns of Parc d'Egmont, which the region's inventory of remarkable trees ranks as the second largest of its cultivar anywhere in Brussels.\n\nThe cultivar is 'Pyramidalis', a narrow, upright selection of the common European holly. A cultivar is not something that turns up in a wood and comes back true from seed. Every 'Pyramidalis' is a cutting of a cutting of one original plant, so this tree and the ones standing in gardens elsewhere in Europe are the same individual, grown on in different soil.\n\nHolly lays down wood very slowly, which is the whole reason 140 centimetres earns a place on an official register while the sycamore on the same lawn carries 397 centimetres and ranks only third of its kind. Nobody has dated this one and the register does not try. It measures, it ranks, and it leaves the years alone. If you know the park's planting records, we would take the correction.\n\nThe park signposts it on its own panel, which spares you the hunt: at a distance a holly this size still reads as a shrub, right up until you are close enough to see the trunk.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/638",
+    "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 638 (Ilex aquifolium 'Pyramidalis', girth 140 cm, recorded as the second largest of its cultivar in the Brussels region; signposted on the park's own interpretive panel)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 638), which gives the girth of 140 cm, the ranking as second largest of its cultivar in the Brussels-Capital Region, and the fact that the park's interpretive panel names it. That is a government register, which the register-layer rule accepts as the source for a tree of this kind, but no independent second source names this specific holly, so the entry is flagged. Coordinates are the register's, hence confirmed precision. No age: the inventory records size and rank and carries no planting date, and no growth-rate basis was available, so none was derived. The sycamore girth of 397 cm quoted in the story is our own bru_014, sourced to the same inventory.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "girth_cm": 140
+  },
+  {
+   "id": "bru_028",
+   "name": "The Pagoda Tree of Parc d'Egmont",
+   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
+    "latitude": 50.83777,
+    "longitude": 4.35714,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "Brussels files this tree under a name and a nationality that are both wrong. The register lists it as Sophora japonica. Botanists moved the species to Styphnolobium some time ago and most registers have not caught up, and it was never Japanese in the first place: it is native to China and Korea, and reached Europe by way of Japanese gardens, which is how it collected an epithet that has now outlived two corrections.\n\nIn China it was the tree of the imperial court, planted at palaces and tombs, and by tradition it was a pagoda tree on Coal Hill in Beijing that the last Ming emperor hanged himself from in 1644, with rebel armies already inside the city.\n\nThis one is a quieter proposition. Surveyors walked Parc d'Egmont in July 2019 and entered it on the region's inventory of remarkable trees, where it ranks inside the top thirty of its species for Brussels. There are not many to rank. The pagoda tree has never been planted here in quantity, which is exactly how a specimen of no great size ends up on an official list.\n\nThat survey logged one point on the lawns for the trees it added rather than a coordinate per trunk, so the pin puts you in the right corner of a park you can cross in three minutes and no closer. Nobody has recorded its age.",
+   "best_time": {
+    "months": [
+     8,
+     9
+    ],
+    "kind": "flowers",
+    "label": "late summer, when it flowers cream white in the weeks almost nothing else does"
+   },
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/7111",
+    "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 7111 (listed as Sophora japonica, Parc d'Egmont, surveyed July 2019, ranked in the top thirty of its species in the Brussels region)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7111), one of three trees the July 2019 Egmont survey added. That register is a government source and is accepted as such under the register-layer rule; no independent second source names this tree, so the entry is flagged. Location_precision is approximate on purpose: the survey recorded a single shared coordinate (50.83777, 4.35714) for the three trees it entered rather than pinning each trunk, and the story says so in plain words. Girth is recorded for the group at up to 164 cm and is not attributed per tree here, because the source does not attribute it per tree either. No age in the register and no growth-rate basis, so none was derived. Deliberately shares no claim with bru_008, the region's sixth-thickest pagoda tree at the Abbaye de la Cambre: different specimen, different ranking, no overlapping content.",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "how_to_recognise": "Light, open, pinnate foliage on a modest trunk, on the lawns towards the Passage de Milan gate. The pin is the survey's shared point for three trees rather than this trunk, so expect to look around once you are through the gate."
+  },
+  {
+   "id": "bru_029",
+   "name": "The Weeping Ash of Parc d'Egmont",
+   "species": "Weeping Ash (Fraxinus excelsior 'Pendula')",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
+    "latitude": 50.83777,
+    "longitude": 4.35714,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "A weeping ash has no top of its own. The weeping habit is a mutation that will not throw a leading shoot, so these trees are almost always grafted onto the head of an ordinary ash stem: the trunk rises as far as the grafter's join and then stops, and everything above it falls back down in a dome. Find the change in the bark somewhere around head height and you are looking at the seam between two different plants.\n\nThis one grows on the lawns of Parc d'Egmont and went onto the region's inventory of remarkable trees after a survey in July 2019. It ranks inside the top thirty of its kind recorded in Brussels.\n\nThe species underneath the graft is having a bad century. Ash dieback, a fungus out of east Asia, has worked its way across Belgium over the past fifteen years and killed ash trees at a rate European forestry has no answer to. Nobody can promise what that means for this one, which is an argument for going to look at it rather than against.\n\nThe July survey logged a single coordinate for the trees it added rather than one per trunk, so the pin marks the group and not this stem. No age is recorded, here or anywhere: the inventory measures and ranks, and lets the years alone.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/7109",
+    "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 7109 (Fraxinus excelsior f. pendula, Parc d'Egmont, surveyed July 2019, ranked in the top thirty of its species in the Brussels region)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7109), one of three trees the July 2019 Egmont survey added, and flagged for that reason; the register is a government source and is accepted as such under the register-layer rule. Location_precision is approximate: the survey recorded one shared coordinate (50.83777, 4.35714) for the three 2019 additions instead of pinning each trunk, and the story states that plainly. The register writes the name as Fraxinus excelsior f. pendula; the species field uses the cultivar form 'Pendula' to match the convention already live in the corpus (arn_006, yor_001). Girth for the 2019 group is recorded at up to 164 cm and is not attributed to this tree, because the source does not attribute it either. No age and no growth-rate basis, so none was derived. Nothing in the story asserts anything about this tree's own health: ash dieback is named as a fact about the species in Belgium, not as a diagnosis of this specimen.",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "how_to_recognise": "A small domed tree whose branches all curve back towards the ground, with a straight trunk that stops abruptly at the graft. The pin is the 2019 survey's shared point for three trees, so look around the lawns near the Passage de Milan gate."
+  },
+  {
+   "id": "bru_030",
+   "name": "The Thornless Honey Locust of Parc d'Egmont",
+   "species": "Thornless Honey Locust (Gleditsia triacanthos var. inermis)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Parc d'Egmont, on the lawns towards the Passage de Milan gate, 1000 Brussels",
+    "latitude": 50.83777,
+    "longitude": 4.35714,
+    "neighbourhood": "Sablon / Bruxelles-Ville"
+   },
+   "story": "The inermis on this tree's register entry means unarmed, and it is doing a lot of work. A wild honey locust grows branched spikes straight out of its own trunk, up to twenty centimetres long and hard enough to go through a tyre, which is why the thornless form is the only one anybody puts in a city park.\n\nThe usual explanation for those spikes is that they are about thirteen thousand years out of date. They are sized for animals that no longer exist, the giant ground sloths and mastodons that browsed North American woodland until the end of the last ice age, ate the tree's long twisted pods for the sweet pulp inside and carried the seed off in their guts. The pods still drop every autumn. Now they rot where they land.\n\nSurveyors entered this specimen on the region's inventory of remarkable trees after a pass through Parc d'Egmont in July 2019, and it sits inside the top thirty of its species for Brussels. None of the three trees that survey added is big: the thickest of them measures 164 centimetres round.\n\nThe survey gave one coordinate for the group instead of a pin per tree, so the exact spot inside the park is not on record. Look for the finest leaves in Egmont, leaflets small enough that the shade under a honey locust is barely shade. Nobody has dated it.",
+   "verified_sources": [
+    "https://sites.heritage.brussels/fr/trees/7110",
+    "Inventaire du patrimoine arbore remarquable, Region de Bruxelles-Capitale, entry 7110 (Gleditsia triacanthos var. inermis, Parc d'Egmont, surveyed July 2019, ranked in the top thirty of its species in the Brussels region, group girth recorded up to 164 cm)"
+   ],
+   "access": "Free, public park, open daily 08:00 to 20:00",
+   "transport": "Metro to Louise, about 5 minutes on foot through the Boulevard de Waterloo entrance",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "notes": "Single-sourced on the region's own remarkable-trees inventory (entry 7110), the third of the three trees the July 2019 Egmont survey added, and flagged for that reason; the register is a government source, accepted as such under the register-layer rule. Location_precision is approximate: the survey recorded one shared coordinate (50.83777, 4.35714) for all three 2019 additions rather than pinning each trunk, and the story says so. The 164 cm figure is the register's maximum for the 2019 group and is stated in the story as exactly that, a group maximum, not as this tree's own girth. No age in the register and no growth-rate basis available, so none was derived. The megafauna account of the thorns is presented in the story as the usual explanation rather than as settled fact, because it is a hypothesis about the species and not a claim about this tree. Common name follows the corpus convention of giving a distinct variant its own common name (compare arn_006 Weeping Japanese Pagoda Tree, yor_001 Narrow-Leaved Ash 'Lentiscifolia'); plain Gleditsia triacanthos is already live as Honey Locust in five other cities and is untouched.",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "how_to_recognise": "Very fine, doubly pinnate foliage that casts almost no shadow, on a smooth trunk with no thorns on it. The pin is the 2019 survey's shared point for three trees, so look across the lawns near the Passage de Milan gate."
+  }
+ ],
+ "hero_tree_id": "bru_003"
 }
