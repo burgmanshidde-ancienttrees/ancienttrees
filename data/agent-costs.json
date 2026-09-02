@@ -4724,6 +4724,15 @@
     "note": "Opened a zero city. The join that carried it: de.wikipedia wikitext for the Naturdenkmal list against the city's own designation ordinance PDF (stuttgart.de/medien/ibs/3-8.pdf), which gives Flurstueck numbers and a protection reason per tree. New technique worth keeping: where a designated tree has no independent write-up, a dated Commons photograph captioned with the exact register number is real evidence the tree stood on that date, and the register itself carries the species. No walkable cluster: Stuttgart's designated specimens sit 8 to 15 km apart across the city.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "freiburg",
+    "kind": "verify",
+    "tokens": 232000,
+    "trees": 4,
+    "note": "Zero city opened to the floor on the same German route as Stuttgart: de.wikipedia Naturdenkmal wikitext joined to freiburg.de and the city's Amtsblatt. All four pins confirmed, 11 leads banked. The pass corrected two claims in its own brief (Waldtraut stands in the Guenterstaeler Stadtwald, not the Mooswald, and no source mentions a viewing platform), caught a girth figure it had copied from the wrong tree and removed it before delivery, and discarded a WebSearch summary placing a conifer group in the Alter Friedhof 3 km from its real coordinates.",
+    "wasted": 0,
+    "brief_wrong": true
    }
   ]
  }

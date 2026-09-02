@@ -1,0 +1,100 @@
+[
+  {
+    "id": "frb_001",
+    "name": "Waldtraut vom Mühlwald",
+    "species": "Douglas Fir (Pseudotsuga menziesii)",
+    "age_estimate": "about 116 years",
+    "age_min": 115,
+    "age_max": 117,
+    "girth_cm": 338,
+    "height_m": 67.85,
+    "location": {
+      "address": "Mühlwald, Günterstäler Stadtwald (city forest), Freiburg im Breisgau",
+      "latitude": 47.953365,
+      "longitude": 7.861127,
+      "neighbourhood": "Günterstal / Mühlwald"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Waldtraut_vom_M%C3%BChlwald",
+      "https://www.freiburg.de/pb/1658162.html"
+    ],
+    "access": "Free, in the public city forest (Stadtwald). No ticket, no gate; reached by a signed forest trail.",
+    "transport": "Line 21 (bus) to the 'Kyburg' stop in Günterstal, then a signed 2.5 km forest hike (about 150 m of ascent) along the Mühlwaldweg following 'Höchster Baum Deutschlands' signs; or a 4.5 km hike from Waldhaus Freiburg at Wonnhalde. Not a quick stop, a proper forest walk of an hour or more each way from the tram network.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Germany's tallest tree, a coastal Douglas fir. Planted 1913 as a 3-year sapling from an early German forestry trial with North American species (Douglasien have been planted in the Freiburg Stadtwald since 1896); age ~116 years as of 2026, a documented planting date rather than an estimate. Height 67.85 m per de.wikipedia (citing a measurement dated April 2024, footnoted); freiburg.de's own page (last major update citing a 2019 monumentaltrees.com measurement of 67.10 m) gives girth 3.38 m at 1.30 m height and confirms the same planting history and location. Still actively growing (~15-30 cm/year per the two sources, which differ slightly on the current rate; not worth resolving, both agree it is still vigorous). Named by Freiburg city foresters. Surrounded by several other Douglas firs of the same age from the same 1913 planting. CORRECTION TO THE LEAD: the brief described this as standing in the 'Mooswald' with 'a viewing platform'; neither source found here supports either claim. Both de.wikipedia and freiburg.de place it in the Mühlwald district of the Günterstäler Stadtwald near Günterstal (south of the Altstadt, not northwest), and no viewing platform is mentioned anywhere; visitors read wooden info boards at the tree itself instead. This looks like a mix-up with a different site. Coordinates from freiburg.de's own GPS reference (N47.9533/E7.8609 WGS84) match de.wikipedia's infobox (47.953365,7.861127) almost exactly and match the Wikidata lead Q112057419, so the pin is solid despite the location-description discrepancy. Wikidata id: Q112057419."
+  },
+  {
+    "id": "frb_002",
+    "name": "The Sedanquartier Weeping Beech",
+    "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Corner of Wilhelmstraße and Moltkestraße, Sedanquartier, Freiburg im Breisgau",
+      "latitude": 47.993437,
+      "longitude": 7.842848,
+      "neighbourhood": "Sedanquartier"
+    },
+    "verified_sources": [
+      "https://www.freiburg.de/pb/1829585.html",
+      "https://www.badische-zeitung.de/bauplatz-contra-baumriese-stadt-und-land-streiten-um-haengebuche--181056950.html",
+      "https://www.spd-kv-freiburg.de/meldungen/haengebuche-im-sedanquartier-rolland-unterschutzstellung-dringend-geboten/"
+    ],
+    "access": "Free, on a publicly reachable plot at a street corner. Stands on land owned by the State of Baden-Württemberg (Landesgrund) rather than a private owner, beside the public sculpture 'Kaichina Doll' by Peter Zimmermann; a city celebration for the designation was held right at the tree in November 2021.",
+    "transport": "In the Sedanquartier, roughly 1 km south of the Altstadt centre; reachable on foot or by tram/bus to a Wiehre-area stop.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A splendid weeping beech at the corner of Wilhelmstrasse and Moltkestrasse that became a genuine local cause. It stands on a state-government-owned plot the state also wanted to develop; SPD state parliament member Gabi Rolland raised a formal parliamentary question in 2020 pressing for its protection (badische-zeitung report of 6 January 2020, referenced in the SPD press release of 13 October 2020), and the state government's own response acknowledged the tree's ecological value while noting the plot's development value was also significant. The city ultimately designated it a Naturdenkmal (natural monument) on 2021-10-29, one of 30 announced together (freiburg.de, 'Neuausweisung' pushing Freiburg's total to 130), and marked it with a small public ceremony at the tree on 6 November 2021 attended by the city's environment mayor, organised by the local Bürgerforum Sedanquartier residents' group. No age or girth measurement found in any source; described only as 'ein prächtiger Laubbaum' (a splendid deciduous tree) and 'Baumriese' (tree giant) in the press coverage. LUBW register ID 83110000150 (RIPS steckbrief id 3119013000241), joined via de.wikipedia's 'Liste der Naturdenkmale in Freiburg im Breisgau' (fetched as wikitext), gives the exact coordinates. Species recorded only as 'Hängebuche' (weeping beech) in every source; likely Fagus sylvatica 'Pendula', the standard weeping cultivar of European beech, but no source names the cultivar explicitly."
+  },
+  {
+    "id": "frb_003",
+    "name": "The Bernhardstraße Ginkgo",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Bernhardstraße, near the corner with Habsburgerstraße, Freiburg im Breisgau",
+      "latitude": 47.999208,
+      "longitude": 7.854247,
+      "neighbourhood": "Bernhardstraße / Habsburgerstraße"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Freiburg_im_Breisgau",
+      "https://www.regiotrends.de/de/regiomix/index.news.123642.html"
+    ],
+    "access": "Free, a street tree on a former parking lot in an ordinary residential and commercial street; freely visible and reachable, no gate or ticket.",
+    "transport": "Central Freiburg, on Bernhardstraße near Habsburgerstraße, easy walking distance of the Altstadt.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A distinctively gnarled, fan-shaped ginkgo standing on a former car park on Bernhardstraße, towards Habsburgerstraße, in an ordinary residential and commercial stretch of the city. Regiotrends.de (syndicated local news, covering the city council's designation of ten new Naturdenkmale, session of 26 October, likely 2010 given the register's own registration date below) describes it as a 'markanter knorriger Ginkgo' whose golden-yellow autumn foliage is a local eye-catcher. Designated a Naturdenkmal by the City of Freiburg on 2011-01-28 (LUBW register id 83110000128, RIPS steckbrief 3119013000218), joined via de.wikipedia's 'Liste der Naturdenkmale in Freiburg im Breisgau' (fetched as wikitext) for the exact coordinates. No age, girth or planting date found in either source; leave for the reader. Note: this is one of at least three ginkgos registered as Naturdenkmale in Freiburg (ids 83110000056 and 83110000042 are unrelated trees elsewhere in the city), so the street name in the id matters if cross-checking."
+  },
+  {
+    "id": "frb_004",
+    "name": "The Alexandereiche",
+    "species": "Oak (Quercus sp.)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Corner of Einsteinstraße and Hermann-Mitsch-Straße, Freiburg im Breisgau",
+      "latitude": 48.028492,
+      "longitude": 7.83535,
+      "neighbourhood": "Zähringen / Landwasser area, northern Freiburg"
+    },
+    "verified_sources": [
+      "https://www.freiburg.de/pb/site/Freiburg/get/documents_E-1847784871/freiburg/daten/news/amtsblatt/pdf/SS711_Naturdenkmale.pdf",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Freiburg_im_Breisgau"
+    ],
+    "access": "Free, an ordinary street-corner tree, not on any private or institutional grounds mentioned in either source.",
+    "transport": "Northern Freiburg, roughly 3.9 km from the Altstadt centre; a separate outing rather than part of a single Altstadt walk, reachable by tram/bus.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Despite the name, this oak does not commemorate the naturalist Alexander von Humboldt. Freiburg's own Amtsblatt article on the city's Naturdenkmale (Umweltschutzamt, 'Geschichte und Natur: Einhundert geschützte Naturdenkmale gibt es in Freiburg') explains it is named for Alexander Wasmer, the city's chief forester (Oberförster) who carried out the first forest management plan of the Freiburg Stadtwald in 1842. Designated a Naturdenkmal on 1974-05-02 (LUBW register id 83110000053, RIPS steckbrief 3119013000146), joined via de.wikipedia's 'Liste der Naturdenkmale in Freiburg im Breisgau' (fetched as wikitext) for coordinates. BRIDGE-CLAIM CAUTION: the source names the tree after Wasmer's 1842 achievement but never states the tree itself was planted in 1842 or dates from that period; no source gives a planting date, age or exact species (pedunculate vs sessile oak). Do not infer an 1842 planting. No girth recorded for this tree. The Amtsblatt article's 'über 2 Meter Stammumfang' (over 2 m) figure belongs to a DIFFERENT tree in the same piece (the Bergahorn at Hildastraße/Urachstraße) and must not be reused here."
+  }
+]
