@@ -2,30 +2,30 @@
   "city": "Bamberg",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Bamberg's protected trees are not headline giants: none carries a measured age, and the city's own register describes each in a single line. What they have is genuine public ground: a spring path climbing into the wooded hills above Wildensorg, a roadside lane, the site of a demolished manor, a riverbank a few kilometres downstream. Four trees, two neighbourhoods, one honest gap where the ages should be. If you carry a tape measure, we would like to hear from you.",
-  "meta_description": "Four protected Bamberg trees, none dated: two limes by a hillside spring, a roadside oak, and a lime on the site of a demolished manor.",
-  "question_answer": "None of Bamberg's four protected trees has a measured age, so there is no confirmed oldest. The strongest circumstantial case belongs to the Linden of the Old Rothof, a small-leaved lime standing where a manor demolished in the mid-1960s once stood, on the hillside above Wildensorg. That is a place, not a date: nobody has cored the trunk or found a planting record, and the city's own register gives only a location and a protected status. If you know how old any of Bamberg's four actually are, tell us.",
-  "question_meta": "Bamberg's register protects four trees and dates none of them; the strongest circumstantial case is a lime on the site of a demolished manor, Wildensorg.",
-  "question_context": "Bamberg's Naturdenkmal-Verordnung, passed in November 1995 and amended in 2007, protects trees across the city and its outskirts and dates almost none of them. Each register entry carries a number, a common name, a location and the fact of protection: enough to stop a tree being felled, nothing about when it was planted or how old it has grown. The four trees on this page were cross-checked against Wikipedia's own reproduction of the register and against independently dated, geotagged photographs on Wikimedia Commons, which confirm each tree alive as recently as 2017 to 2023 and pin its position to within a few metres. Three stand within about a kilometre and a half of each other on the wooded hillside above Wildensorg: two limes by a spring, an oak on a lane the register calls the Teufelsgraben, and a third lime on the site of a demolished manor. The fourth stands alone by the Regnitz, a few kilometres downstream in the village of Bug. None carries a girth measurement either. A tape measure would tell us more than the register ever will.",
+  "intro": "Bamberg's protected trees are not headline giants: four of the five carry no measured age at all, and the city's register describes most in a single line. What they have is genuine public ground: a spring path above Wildensorg, a roadside lane, a demolished manor's site, a riverbank downstream, and further out toward Teuchatz, a lime thick enough that people once thought it was three trees fused together. If you carry a tape measure, we would like to hear from you.",
+  "meta_description": "Five protected Bamberg trees: two limes by a hillside spring, a roadside oak, a lime on a demolished manor's site, and a legend-dated lime near Teuchatz.",
+  "question_answer": "The closest thing to a dated tree is the Great Lime of Teuchatz, well outside the city itself, whose girth points to something like 350 to 400 years if a local legend about its planting is right: soldiers buried here during the Thirty Years' War, sometime in the 1630s. None of Bamberg's other four protected trees carries any age estimate at all. The city's own register gives only a location and a protected status for those four. If you know how old any of Bamberg's five actually are, tell us.",
+  "question_meta": "Bamberg's register protects five trees; the closest to a dated one is a lime near Teuchatz, its girth suggesting 350 to 400 years by legend.",
+  "question_context": "Bamberg's Naturdenkmal-Verordnung, passed in November 1995 and amended in 2007, protects trees across the city and its outskirts and dates almost none of them. Each register entry carries a number, a common name, a location and the fact of protection, nothing about planting dates or growth. The five trees here were cross-checked against Wikipedia's reproduction of the register and geotagged Commons photographs. Three of the first four stand within a kilometre and a half of each other on the hillside above Wildensorg: two limes by a spring, an oak on the Teufelsgraben, and a lime on a demolished manor's site. The fourth stands alone by the Regnitz in Bug. None of those four carries a girth measurement. The fifth, the Great Lime of Teuchatz, stands sixteen kilometres out on a road with no rail and no confirmed bus, documented instead by a dedicated Wikipedia article citing published dendrology surveys, and it is the only one of the five anyone has ever measured: 770 centimetres round in 1990, 822 in 2008.",
   "faq": [
     {
       "q": "What is the oldest tree in Bamberg?",
-      "a": "Nobody has dated any of the four. The Linden of the Old Rothof has the best story, standing where a manor demolished in the mid-1960s once stood, but that is circumstantial rather than measured."
+      "a": "The best estimate belongs to the Great Lime of Teuchatz, a satellite tree well outside Bamberg, whose girth points to somewhere between 350 and 400 years if a local legend about its planting during the Thirty Years' War is right. None of the trees standing within the city itself has been dated at all."
     },
     {
-      "q": "Can I see all four trees in one walk?",
-      "a": "No. Three, the Ottobrunnen lindens, the Teufelsgraben oak and the Rothof linden, sit within about a kilometre and a half of each other on the Wildensorg hillside. The fourth, the Buger Hof linden, is a separate trip a few kilometres away on the Regnitz."
+      "q": "Can I see all five trees in one walk?",
+      "a": "No. Three, the Ottobrunnen lindens, the Teufelsgraben oak and the Rothof linden, sit within about a kilometre and a half of each other on the Wildensorg hillside. The Buger Hof linden is a separate trip a few kilometres away on the Regnitz. The Great Lime of Teuchatz is sixteen kilometres out and needs a car; it has no public transport connection to the city at all."
     },
     {
       "q": "Are they free to visit?",
-      "a": "Three stand in the open with no gate: a footpath, a roadside verge, and open ground by the road. The fourth stands at the edge of a riverside hotel's grounds; the view from the public towpath is free, and whether the ground directly beneath it is open was not confirmed."
+      "a": "Four stand in the open with no gate: a footpath, two roadside verges and a quiet country road near Teuchatz. The Buger Hof linden stands at the edge of a riverside hotel's grounds; the view from the public towpath is free, and whether the ground directly beneath it is open was not confirmed."
     },
     {
-      "q": "Why does none of Bamberg's protected trees carry an age?",
-      "a": "The city's Naturdenkmal register records a number, a name, a location and the fact of protection, nothing about planting dates or ring counts. None of these four has been separately studied, so the field stays honestly empty."
+      "q": "Why do so few of Bamberg's protected trees carry an age?",
+      "a": "The city's Naturdenkmal register records a number, a name, a location and the fact of protection, nothing about planting dates or ring counts, and that covers four of the five. The fifth, the Great Lime of Teuchatz, is documented separately in published dendrology surveys that give an actual girth history, which is where its rough age estimate comes from."
     }
   ],
-  "oldest_tree_id": "bam_004",
+  "oldest_tree_id": "bam_005",
   "trees": [
     {
       "id": "bam_001",
@@ -162,6 +162,37 @@
         "height": 4610
       },
       "how_to_recognise": "A lime standing alone by the road on Wildensorger Strasse, on open ground where the Rothof once stood. There is no building left to mark the spot beyond the tree itself."
+    },
+    {
+      "id": "bam_005",
+      "name": "The Great Lime of Teuchatz",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 350 to 400 years, if a local legend about its planting holds",
+      "age_min": 350,
+      "age_max": 400,
+      "girth_cm": 787,
+      "location": {
+        "address": "On the road (Kreisstrasse) from Teuchatz to Burggrub, Markt Heiligenstadt in Oberfranken, Landkreis Bamberg",
+        "latitude": 49.87235,
+        "longitude": 11.10251,
+        "neighbourhood": "Teuchatz"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Linde_bei_Teuchatz",
+        "https://commons.wikimedia.org/wiki/Category:Gro%C3%9Fe_Linde_bei_Teuchatz"
+      ],
+      "access": "Free. Stands immediately beside the public road between Teuchatz and Burggrub, no gate or fence.",
+      "transport": "About 16 km from Bamberg centre in the Fraenkische Schweiz, roughly 25 minutes by car. No rail (the branch line to Heiligenstadt closed in 1968) and no confirmed public bus reaches Teuchatz, so this one needs a car rather than the city's transit network.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Local legend ties this lime to the Thirty Years' War: soldiers from the Swedish army, the story goes, were buried here in the 1630s and the tree grew from their graves. Nobody can prove the burial, but the tree's girth roughly fits that timeline, tracked at 770 centimetres round in 1990 and 822 centimetres in 2008, which is honest grounds for guessing it is nearing four centuries old if the legend holds and nothing more precise if it does not.\n\nThe trunk is thick enough that a separate story grew up around it too, that it is really three trees fused into one. Look closely and the case falls apart. Dendrologists who have studied the tree describe a single continuous trunk, heavily buttressed and studded with burls at the base rather than three obvious stems. What has needed real intervention is the crown, cut back hard in recent years and now held together with steel cables above the point, about four metres up, where it forks into several broad limbs. It once spread 26 metres wide.\n\nTeuchatz has no railway; the branch line that served it closed in 1968, and no confirmed bus makes the trip either. Getting here from Bamberg means a car and about 25 minutes on quiet roads, at the end of which the tree stands directly on the roadside with nothing between the pavement and the trunk. A war grave for a legend and a trunk that still argues about how many trees it started as.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The one large lime standing directly on the roadside between Teuchatz and Burggrub, its crown visibly cut back and braced with steel cables; there is no other tree of its size on this stretch of road."
     }
   ]
 }
