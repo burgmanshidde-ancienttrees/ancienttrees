@@ -999,7 +999,7 @@ def print_wikidata_global(centre, pub_pts, already_shown=frozenset(), radius_km=
         img = "img" if t.get("commons_image") else "no-img"
         des = f"  [{t['designation']}]" if t.get("designation") else ""
         sp = f"  ({t['species']})" if t.get("species") else ""
-        print(f"  {t['qid']}  {t.get('name','?')[:40]:<42} "
+        print(f"  {t['qid']}  {(t.get('name') or '?')[:40]:<42} "
               f"({t['latitude']:.5f},{t['longitude']:.5f}) {img}{sp}{des}")
     if len(fresh) > 12:
         print(f"  ...and {len(fresh)-12} more; re-run scout_next.py or filter "
