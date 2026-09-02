@@ -9,6 +9,7 @@
 //     equivalent of build_site.py's ERRORS.append(), which collected and
 //     reported at the very end of the build instead).
 import { STYLE_HREF } from "../lib/asset-hash";
+import { ui } from "../lib/ui-strings";
 import AppModal from "../components/AppModal.astro";
 import {
   AUTH_ENABLED,
@@ -37,6 +38,10 @@ export interface Props {
 }
 
 const { title, description, canonical, ogType = "article", headExtra = "", footer = true, lang = "en" } = Astro.props;
+// The interface in the page's own language. A translated page used to serve
+// its stories in Spanish or Japanese inside an English frame; see
+// site/src/lib/ui-strings.ts for the measurement and the convention behind it.
+const t = ui(lang);
 
 if (title.length > TITLE_MAX) {
   throw new Error(`${canonical}: title exceeds ${TITLE_MAX} chars (${title.length}): ${JSON.stringify(title)}`);
@@ -101,29 +106,29 @@ const year = new Date().getFullYear();
       The only-mobile/only-desktop pair is what swaps them; nothing is dropped
       at either width. */}
   <nav class="bar-links">
-    <a href="/explore" class="bar-map only-desktop">Map</a>
+    <a href="/explore" class="bar-map only-desktop">{t.map}</a>
     <details class="nav-drop">
-      <summary aria-label="Menu"><span class="sum-desktop">Explore</span><span class="sum-mobile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span></summary>
+      <summary aria-label={t.menu}><span class="sum-desktop">{t.explore}</span><span class="sum-mobile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span></summary>
       <div class="nav-drop-menu">
-        <p class="nav-group">Browse</p>
-        <a href="/explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>Map</a>
-        <a href="/cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a>
-        <a href="/countries"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>Countries</a>
-        <a href="/species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a>
-        <a href="/parks"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 12c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/></svg></span>Parks</a>
-        <a href="/collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a>
+        <p class="nav-group">{t.browse}</p>
+        <a href="/explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>{t.map}</a>
+        <a href="/cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>{t.cities}</a>
+        <a href="/countries"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>{t.countries}</a>
+        <a href="/species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>{t.species}</a>
+        <a href="/parks"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 12c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/></svg></span>{t.parks}</a>
+        <a href="/collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>{t.collections}</a>
         {AUTH_ENABLED && (
           <Fragment>
-            <p class="nav-group only-mobile">Yours</p>
-            <a href="/account#saved" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span><span>Saved trees</span></a>
-            <a href="/account" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>Your account</span></a>
+            <p class="nav-group only-mobile">{t.yours}</p>
+            <a href="/account#saved" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span><span>{t.savedTrees}</span></a>
+            <a href="/account" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>{t.yourAccount}</span></a>
           </Fragment>
         )}
-        <a href="/contribute" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>
+        <a href="/contribute" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>{t.suggestTree}</a>
         {/* Directly under it and in the same shape (Hidde, 2026-08-26). The two
             belong together: they are the two ways somebody who likes this can
             do something about it, one with a tree and one with money. */}
-        {SPONSOR_URL ? <a href="/sponsor" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>Sponsor this project</a> : null}
+        {SPONSOR_URL ? <a href="/sponsor" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>{t.sponsor}</a> : null}
         <!-- "Get the app", not "Get early access" (Hidde, 2026-08-24: "why
              would you do that - change it back"). It became early access on
              08-23 because five of these pointed at a page saying Coming soon,
@@ -138,7 +143,7 @@ const year = new Date().getFullYear();
              oude landingspagina in een keer"). His hunch, his call, and it is
              one attribute either way. The overlay is still what the city map's
              own walks CTA opens, so both are still in the building. -->
-        <a href="/app" class="nav-cta only-mobile" data-ev="app-cta">Get the app</a>
+        <a href="/app" class="nav-cta only-mobile" data-ev="app-cta">{t.getApp}</a>
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
@@ -148,15 +153,15 @@ const year = new Date().getFullYear();
         the site and the account is where you find your own things. */}
     {AUTH_ENABLED && (
       <details class="nav-drop nav-acct only-desktop">
-        <summary id="bar-login" aria-label="Account"><span class="mi acct-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span class="acct-word">Account</span></summary>
+        <summary id="bar-login" aria-label={t.account}><span class="mi acct-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span class="acct-word">{t.account}</span></summary>
         <div class="nav-drop-menu">
-          <p class="nav-group">Yours</p>
-          <a href="/account#saved"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span>Saved trees</a>
-          <a href="/account"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>Your account</span></a>
+          <p class="nav-group">{t.yours}</p>
+          <a href="/account#saved"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span>{t.savedTrees}</a>
+          <a href="/account"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>{t.yourAccount}</span></a>
         </div>
       </details>
     )}
-    <a href="/app" class="bar-cta only-desktop" data-ev="app-cta">Get the app</a>
+    <a href="/app" class="bar-cta only-desktop" data-ev="app-cta">{t.getApp}</a>
   </nav>
 </header>
 <slot />
@@ -165,24 +170,29 @@ const year = new Date().getFullYear();
   <div class="footer-cols">
     <div class="footer-col footer-about">
       <span class="footer-logo">Ancient Trees</span>
-      <p>We are on a mission to map every remarkable tree in the world, and we could use your help. If you know a good tree, or spot a mistake on one of these pages, <a href="/contribute">tell us</a>. We work on this database every day.</p>
+      {/* One sentence with a link inside it, so it is stored with a {link}
+          placeholder rather than as three fragments: a translator who can only
+          see "If you know a good tree, or spot a mistake" and "We work on this
+          database every day" as separate strings cannot put the clause where
+          the grammar of their language wants it. */}
+      <p set:html={t.footerAbout.replace("{link}", `<a href="/contribute">${t.tellUs}</a>`)} />
     </div>
     <div class="footer-col">
-      <h4>Explore</h4>
-      <a href="/explore">Map</a>
-      <a href="/cities">Cities</a>
-      <a href="/countries">Countries</a>
-      <a href="/species">Species</a>
-      <a href="/collections">Collections</a>
+      <h4>{t.explore}</h4>
+      <a href="/explore">{t.map}</a>
+      <a href="/cities">{t.cities}</a>
+      <a href="/countries">{t.countries}</a>
+      <a href="/species">{t.species}</a>
+      <a href="/collections">{t.collections}</a>
     </div>
     <div class="footer-col">
       <h4>Ancient Trees</h4>
-      <a href="/app" data-ev="app-cta">The app</a>
-      <a href="/contribute">Suggest a tree</a>
-      {SPONSOR_URL ? <a href="/sponsor">Sponsor this project</a> : null}
-      <a href="/support">Support</a>
-      <a href="/privacy">Privacy</a>
-      <a href="/terms">Terms</a>
+      <a href="/app" data-ev="app-cta">{t.theApp}</a>
+      <a href="/contribute">{t.suggestTree}</a>
+      {SPONSOR_URL ? <a href="/sponsor">{t.sponsor}</a> : null}
+      <a href="/support">{t.support}</a>
+      <a href="/privacy">{t.privacy}</a>
+      <a href="/terms">{t.terms}</a>
     </div>
   </div>
   <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Walking routes by Valhalla via FOSSGIS, on OpenStreetMap data. Photos carry their own credits and open licences.</span>

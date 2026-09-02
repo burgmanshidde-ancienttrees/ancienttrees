@@ -366,6 +366,12 @@
    "what": "403 to curl.",
    "workaround": "unknown; the Brighton pass used the council, Brighton & Hove Museums and the Ancient Yew Group instead",
    "date": "2026-09-02"
+  },
+  "gz.gov.cn": {
+   "behaviour": "hangs on curl -m 20 (exit 1, no connection within timeout) and on WebFetch (socket hang up), on a 2020 batch-designation notice page",
+   "seen": "2026-09-02",
+   "cost": "one fetch attempt each via curl and WebFetch, during the China register scouting pass",
+   "workaround": "the bureau own subdomain lyylj.gz.gov.cn answered normally in under a second; route around the gz.gov.cn main portal via bureau subdomains where one exists"
   }
  }
 }
