@@ -86,6 +86,34 @@ const canonical = `${BASE_URL}/account`;
          and conclude we lost it. -->
     <p class="acct-fine">Your trees are kept under this address. Signing in with a different one starts a separate collection. To use a different address, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a> and we will move your collection across.</p>
 
+  </section>
+
+  <section class="acct-lanes" id="lanes">
+    <div class="lane-picker" role="tablist" aria-label="Your lists">
+      <button type="button" id="lane-mine" class="lane on" role="tab" aria-selected="true" aria-controls="pane-mine">My trees</button>
+      <button type="button" id="lane-saved" class="lane" role="tab" aria-selected="false" aria-controls="pane-saved">Saved</button>
+    </div>
+
+    <div id="pane-mine" role="tabpanel" aria-labelledby="lane-mine">
+      <ul id="mine-list" class="saved-list" hidden></ul>
+      <p id="mine-empty" hidden>You can add a tree in the app by photographing it and filling in what you know. <a href="/app">Get the app</a>.</p>
+      <p id="mine-signedout" hidden>Sign in above and the trees you photographed appear here.</p>
+    </div>
+
+    <div id="pane-saved" role="tabpanel" aria-labelledby="lane-saved" hidden>
+      <p class="prose-block" id="saved-sub">The trees you tapped Save on. Sign in above to see them here and on any other device.</p>
+      <ul id="saved-list" class="saved-list" hidden></ul>
+      <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
+    </div>
+  </section>
+
+  <!-- SETTINGS AFTER THE TREES, which is the app's order (Hidde,
+       2026-09-02). The first version of this page put the lanes below the
+       whole settings card, so a signed-in person met their own name, the
+       about rows, sign out and the delete panel before reaching a single
+       tree. In the app the trees ARE the screen and the settings sit behind
+       a gear; on the web the honest equivalent is further down the page. -->
+  <section id="st-settings" class="acct-card" hidden>
     <p class="acct-group">Settings</p>
     <div class="acct-rows">
       <!-- THE NAME OTHER PEOPLE SEE. The app has had a profile editor since the
@@ -137,36 +165,6 @@ const canonical = `${BASE_URL}/account`;
       </div>
     </details>
   </section>
-
-  <!-- TWO LANES, BUILT LIKE THE APP'S MY TREES SCREEN (Hidde, 2026-09-02: "de
-       web account pagina moet veel meer de opbouw van app gaan krijgen"). The
-       app has held these as two independent lists since 2026-08-26, opening on
-       your own trees rather than on the wishlist, because the page is called
-       My trees and the trees that are yours are the ones you photographed; a
-       list of things you have not seen yet is the second question.
-
-       The picker is a tab pair rather than the app's segmented control: same
-       behaviour, and the design is per surface (CLAUDE.md's both-surfaces
-       rule). It sits outside the signed-in card because the saved lane works
-       signed out, from this device alone, and always has. -->
-  <section class="acct-lanes" id="lanes">
-    <div class="lane-picker" role="tablist" aria-label="Your lists">
-      <button type="button" id="lane-mine" class="lane on" role="tab" aria-selected="true" aria-controls="pane-mine">My trees</button>
-      <button type="button" id="lane-saved" class="lane" role="tab" aria-selected="false" aria-controls="pane-saved">Saved</button>
-    </div>
-
-    <div id="pane-mine" role="tabpanel" aria-labelledby="lane-mine">
-      <ul id="mine-list" class="saved-list" hidden></ul>
-      <p id="mine-empty" hidden>You can add a tree in the app by photographing it and filling in what you know. <a href="/app">Get the app</a>.</p>
-      <p id="mine-signedout" hidden>Sign in above and the trees you photographed appear here.</p>
-    </div>
-
-    <div id="pane-saved" role="tabpanel" aria-labelledby="lane-saved" hidden>
-      <p class="prose-block" id="saved-sub">The trees you tapped Save on. Sign in above to see them here and on any other device.</p>
-      <ul id="saved-list" class="saved-list" hidden></ul>
-      <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
-    </div>
-  </section>
   <SignInModal />
 </main>
 <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + SAVED_LIST_JS + MY_TREES_JS + `
@@ -177,6 +175,11 @@ const canonical = `${BASE_URL}/account`;
   var states = ["st-signin", "st-sent", "st-expired", "st-in"];
   function show(id) {
     states.forEach(function(x) { document.getElementById(x).hidden = (x !== id); });
+    // The settings card is the second half of the signed-in state and lives
+    // below the lanes, so it is not one of the four states; it simply follows
+    // st-in.
+    var set = document.getElementById("st-settings");
+    if (set) set.hidden = (id !== "st-in");
   }
   function mask(e) {
     var at = e.indexOf("@");
