@@ -88,7 +88,7 @@ const canonical = `${BASE_URL}/account`;
 
   </section>
 
-  <section class="acct-lanes" id="lanes">
+  <section class="acct-lanes" id="saved">
     <div class="lane-picker" role="tablist" aria-label="Your lists">
       <button type="button" id="lane-mine" class="lane on" role="tab" aria-selected="true" aria-controls="pane-mine">My trees</button>
       <button type="button" id="lane-saved" class="lane" role="tab" aria-selected="false" aria-controls="pane-saved">Saved</button>
@@ -330,17 +330,22 @@ const canonical = `${BASE_URL}/account`;
   // The lane picker. Two panes, one visible, and the tab that is on says so
   // to a screen reader as well as in ink.
   var lanes = [["lane-mine", "pane-mine"], ["lane-saved", "pane-saved"]];
-  lanes.forEach(function(pair) {
-    document.getElementById(pair[0]).addEventListener("click", function() {
-      lanes.forEach(function(other) {
-        var on = other[0] === pair[0];
-        var tab = document.getElementById(other[0]);
-        tab.classList.toggle("on", on);
-        tab.setAttribute("aria-selected", on ? "true" : "false");
-        document.getElementById(other[1]).hidden = !on;
-      });
+  function lane(id) {
+    lanes.forEach(function(other) {
+      var on = other[0] === id;
+      var tab = document.getElementById(other[0]);
+      tab.classList.toggle("on", on);
+      tab.setAttribute("aria-selected", on ? "true" : "false");
+      document.getElementById(other[1]).hidden = !on;
     });
+  }
+  lanes.forEach(function(pair) {
+    document.getElementById(pair[0]).addEventListener("click", function() { lane(pair[0]); });
   });
+  // The nav's heart, the footer and /saved have all pointed at /account#saved
+  // for weeks. The anchor still lands on this block, and now it opens the lane
+  // it names rather than the other one.
+  if (location.hash === "#saved") lane("lane-saved");
 
   document.getElementById("signout").addEventListener("click", function() {
     try {
