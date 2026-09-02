@@ -1,0 +1,114 @@
+{
+ "leads": [
+  {
+   "name": "Ginkgo biloba Hauptstrasse",
+   "register_id": "82210001222",
+   "coordinates": [
+    49.4099583,
+    8.699005
+   ],
+   "reason": "Register-confirmed Naturdenkmal (LUBW, designated 1981-04-15) but only one source found. A WebSearch AI summary claimed it stands in a courtyard reached through a passage at Plöck Nr. 63, but this could NOT be corroborated: direct fetches of the two most likely pages (a Plöck courtyard walking tour, the Wikipedia Hauptstrasse article) contain no mention of a Ginkgo at all. Per the search-summary-is-a-lead-never-a-source rule, that detail is not usable. Without it, the exact spot on the roughly 1.6km Hauptstrasse and whether it sits on private/courtyard ground is unknown, so both location precision and public access are unresolved. Needs either a direct sighting/photo, a local source naming the courtyard, or a reader tip."
+  },
+  {
+   "name": "2 Zypressen (Nutka- und Scheinzypresse) Bergstrasse",
+   "register_id": "82210001228",
+   "coordinates": [
+    49.4183033,
+    8.692185
+   ],
+   "reason": "Sits at essentially the same point as the delivered Krimlinde Bergstrasse (hei_005), on the same street. Not researched this pass for time; a natural companion/second entry on a return visit to that address, or could be folded into the Krimlinde entry if a future pass confirms they stand together as one visitable spot."
+  },
+  {
+   "name": "Schlosspark Wieblingen (49 Baeume)",
+   "register_id": "82210001205",
+   "coordinates": [
+    49.4255533,
+    8.649015
+   ],
+   "reason": "A 2.7ha park-level Naturdenkmal covering 49 trees, not a single collectible point. Worth a dedicated look in a future pass to see whether one or two individual trees inside it stand out (a park's own veteran, a champion specimen); not pursued this round because it needs on-site or park-specific research, not just the register line."
+  },
+  {
+   "name": "2 Kastanien, 1 Platane, 1 Magnolie Ploeck 45-49",
+   "register_id": "82210001223",
+   "coordinates": [
+    49.409445,
+    8.6972
+   ],
+   "reason": "Register gives an address matching two real, publicly-accessible courtyard-tour stops (Tagespflege St. Anna, Ploeck 45, and Cafe Manna, Ploeck 49, both confirmed freely open to the public via vielmehr.heidelberg.de's own Hinterhoefe tour). Genuinely promising: central Altstadt, public access confirmed, four trees of three species at one address. Not delivered this pass only because the tour page describes the courtyards, not these specific four trees, so species-level confirmation for each tree individually is still needed. Strong candidate for the next Heidelberg pass.",
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Stieleiche am Aukopf / Stieleiche Muenchelstrasse (1) and (2) / Stieleiche Orthopaedie",
+   "register_id": "82210001220 / 82210001208 / 82210001209 / 82210001218",
+   "coordinates": null,
+   "reason": "Four separately registered pedunculate oaks (explicitly 'Stieleiche', unlike Eiche Ringstrasse which is delivered as species-uncertain). Not researched this pass for time. The two Muenchelstrasse oaks sit close together in Ziegelhausen (roughly 49.417,8.774) and could form their own small eastern cluster with Linde Muenchelstrasse below; worth a focused look next time."
+  },
+  {
+   "name": "Linde Muenchelstrasse",
+   "register_id": "82210001211",
+   "coordinates": [
+    49.4181767,
+    8.7746633
+   ],
+   "reason": "Not researched this pass. Sits in Ziegelhausen near the two Muenchelstrasse oaks above; could anchor a second, separate eastern-Heidelberg cluster in a future pass."
+  },
+  {
+   "name": "Pyramidenpappel Wilhelmstrasse",
+   "register_id": "82210001224",
+   "coordinates": [
+    49.403005,
+    8.6852433
+   ],
+   "reason": "Lombardy poplar, Weststadt. Not researched this pass; no time to search for a second source or confirm access."
+  },
+  {
+   "name": "2 Ginkgo biloba Amalienstrasse / Weymouthskiefer Schmitthenner Str. / 2 Lärchen and 2 Rotbuchen Ochsenlagerweg",
+   "register_id": "82210001204 / 82210001219 / 82210001210 / 82210001213",
+   "coordinates": null,
+   "reason": "Kirchheim (Amalienstrasse, Schmitthenner Strasse) and far-east Schlierbach/Ziegelhausen (Ochsenlagerweg) individual-tree Naturdenkmale, not researched this pass for time. Register-confirmed to exist; no second source sought yet."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Riesenstein Stadtwald",
+   "register_id": "82210001103",
+   "reason": "Not a tree. Confirmed via heidelberg.de's own Schutzgebiete page: 'Sandsteinblöcke oberhalb der Altstadt' (sandstone rock blocks above the Altstadt), a geological Naturdenkmal. Excluded on the not-a-tree test."
+  },
+  {
+   "name": "Dolinen Emmertsgrund",
+   "register_id": "82210001102",
+   "reason": "Sinkholes (Dolinen), a geological feature, not a tree. heidelberg.de confirms these are earth sinkholes in Emmertsgrund."
+  },
+  {
+   "name": "Meutersloch",
+   "register_id": "82210001101",
+   "reason": "A cave/depression formation in Ziegelhausen per heidelberg.de, not a tree."
+  },
+  {
+   "name": "Lindenbaumreihe Buergerstrasse",
+   "register_id": "82210003001",
+   "reason": "A row/avenue of lime trees, not one collectible point. Fails the ensemble test (an avenue is explicitly excluded)."
+  },
+  {
+   "name": "Stechpalmen (Gaisbergturmweg, Speyrerhofweg, Posseltslust, Sprunghoehe, Dreieichenweg)",
+   "register_id": "82210001202",
+   "reason": "One Naturdenkmal object covering hollies (Ilex) scattered across five separate named locations in the forest. No single obvious place to stand; fails the collectible-point test as registered."
+  },
+  {
+   "name": "Garten Einzelbaeume Neue Schlossstr. 42 / Garten Schloss-Wolfsbrunnenweg / Gartengelaende Bergstrasse 29a (12 Baeume)",
+   "register_id": "82210001215 / 82210001221 / 82210003002",
+   "reason": "Register names each explicitly as a 'Garten' (private garden) at a specific residential address, with no evidence of public access found or sought this pass. Excluded per hard rule 10 (not somebody's home) unless a future pass finds concrete evidence the grounds are genuinely open to the public."
+  },
+  {
+   "name": "Baumbestand Karl-Ludwig-Strasse",
+   "register_id": "82210001203",
+   "reason": "A 0.2ha 'Baumbestand' (tree stand/grove), not one named individual tree; also possibly the site of the larger Ginkgo mentioned near the Providenzkirche in unverified search summaries. Not pursued this pass; worth checking specifically for a single standout Ginkgo next time, per the same search hint that could not be corroborated for the Hauptstrasse Ginkgo."
+  }
+ ],
+ "searched_but_no_result": [
+  "monumentaltrees.com Heidelberg page: 403s automated fetch and a live Browser session did not clear the Cloudflare 'Just a moment' challenge within ~10 seconds this pass; not chased further under the time box. A future pass with more patience for the challenge could cross-check several candidates at once (its index page lists Arboretum 1/2, Philosophenweg and sweet-chestnut entries for Heidelberg).",
+  "Stadt Heidelberg's own Naturdenkmal page (heidelberg.de/hd/HD/Leben/Schutzgebiete.html) gives only summary counts (28 individual monuments as of that page) and points to the same LUBW map service rather than a richer independent list.",
+  "No German municipal or Rhein-Neckar-Kreis register beyond the LUBW state Naturdenkmal list and its Wikipedia reproduction was found for Heidelberg; both point to the identical underlying LUBW dataset, so they count as one official register source throughout, per the brief's own rule."
+ ]
+}
