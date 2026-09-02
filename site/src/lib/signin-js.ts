@@ -66,7 +66,6 @@ export const SIGNIN_JS = `
             expires_at: Math.floor(Date.now() / 1000) + (j.expires_in || 3600)
           }));
         } catch (e) {}
-        try { sessionStorage.removeItem('at_saves_synced'); } catch (e) {}
         if (window.atSyncSaves) window.atSyncSaves();
       })
       .catch(function() {});

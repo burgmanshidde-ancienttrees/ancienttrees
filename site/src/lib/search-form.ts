@@ -93,17 +93,15 @@ export const SEARCH_WIDGET_JS = `
   // visitor to already know what we hold, and nobody arriving knows we have
   // Cadiz. Order is theirs too: what you looked at last, then where you are,
   // then somewhere to start.
-  var RECENT = 'at_recent_v1';
-  function recents() {
-    try { return (JSON.parse(localStorage.getItem(RECENT)) || []).slice(0, 3); } catch (e) { return []; }
-  }
-  function remember(name, sub, url) {
-    try {
-      var list = (JSON.parse(localStorage.getItem(RECENT)) || []).filter(function(r) { return r.u !== url; });
-      list.unshift({ n: name, s: sub, u: url });
-      localStorage.setItem(RECENT, JSON.stringify(list.slice(0, 5)));
-    } catch (e) {}
-  }
+  // WHAT YOU LOOKED AT LAST IS GONE (2026-09-02). It was three rows of
+  // history kept in localStorage, and Hidde's rule leaves the browser holding
+  // nothing but the session token. The rest of the empty state is unchanged
+  // and is the half that was doing the work anyway: cities near you, then
+  // somewhere to start. An account-backed history is a real feature and can
+  // be built the day it is asked for; a browser-local one is exactly the kind
+  // of thing this rule is about.
+  function recents() { return []; }
+  function remember() {}
   function row(name, sub, url, cls) {
     return '<a class="ats-row' + (cls ? ' ' + cls : '') + '" href="' + url + '">' +
            '<b>' + escT(name) + '</b><span>' + sub + '</span></a>';

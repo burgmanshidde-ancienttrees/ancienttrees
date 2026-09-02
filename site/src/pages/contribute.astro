@@ -89,7 +89,11 @@ const headExtra = ldScript(graph);
   var f = document.getElementById('suggest'), note = document.getElementById('sg-note');
   if (!f) return;
   var FIELDS = ['sg-kind', 'sg-city', 'sg-tree', 'sg-where', 'sg-why', 'sg-name'];
-  var DRAFT = 'at_contribute_draft';
+  // The one thing still kept on the device, and deliberately: text somebody
+  // has typed and not yet sent is not a saved tree, it is an unfinished
+  // sentence, and losing it to a mis-tap helps nobody. Written as a literal
+  // rather than through a constant so scripts/qa.py's allowlist can see it.
+  // Everything a person COLLECTS lives in their account (2026-09-02).
   function session() {
     try {
       var s = JSON.parse(localStorage.getItem('ancienttrees_session'));
@@ -113,7 +117,7 @@ const headExtra = ldScript(graph);
   // page, and eating a paragraph someone typed would be the worst possible
   // answer to "please sign in".
   try {
-    var d = JSON.parse(localStorage.getItem(DRAFT));
+    var d = JSON.parse(localStorage.getItem('at_contribute_draft'));
     if (d) FIELDS.forEach(function(id) {
       var el = document.getElementById(id);
       if (el && d[id] && !el.value) el.value = d[id];
@@ -135,7 +139,7 @@ const headExtra = ldScript(graph);
     if (!s && kindNow !== 'privacy') {
       var draft = {};
       FIELDS.forEach(function(id) { draft[id] = document.getElementById(id).value; });
-      try { localStorage.setItem(DRAFT, JSON.stringify(draft)); } catch (e) {}
+      try { localStorage.setItem('at_contribute_draft', JSON.stringify(draft)); } catch (e) {}
       note.textContent = 'Almost there: sign in and press send again. What you typed is kept.';
       if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback');
       return;
@@ -162,7 +166,7 @@ const headExtra = ldScript(graph);
     }).then(function(r) {
       if (r.ok) {
         f.hidden = true;
-        try { localStorage.removeItem(DRAFT); } catch (e) {}
+        try { localStorage.removeItem('at_contribute_draft'); } catch (e) {}
         note.textContent = kindNow === 'privacy'
           ? 'Received. It reaches the people who run this site.'
           : 'Thank you. Everything sent in is verified against independent sources; confirmed trees go live, and you will hear what your tip changed.';

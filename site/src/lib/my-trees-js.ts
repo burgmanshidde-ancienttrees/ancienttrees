@@ -75,8 +75,7 @@ export const MY_TREES_JS = `
     list.hidden = true;
     if (empty) empty.hidden = true;
     if (out) out.hidden = false;
-    var n = document.getElementById('n-mine');
-    if (n) n.textContent = '0';
+    if (window.atMineCounted) window.atMineCounted(0);
   }
 
   function load(token) {
@@ -87,14 +86,8 @@ export const MY_TREES_JS = `
       .then(function(rows) {
         if (!rows) return;
         if (out) out.hidden = true;
-        var n = document.getElementById('n-mine');
-        if (n) n.textContent = rows.length;
-        if (!rows.length) {
-          list.hidden = true;
-          if (empty) empty.hidden = false;
-          return;
-        }
-        if (empty) empty.hidden = true;
+        if (window.atMineCounted) window.atMineCounted(rows.length);
+        if (!rows.length) { list.hidden = true; return; }
         list.innerHTML = rows.map(function(row) { return '<li>' + card(row) + '</li>'; }).join('');
         list.hidden = false;
         rows.forEach(function(row) {

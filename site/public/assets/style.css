@@ -518,6 +518,28 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .acct-danger { margin-top: 1rem; padding: 0.9rem; border: 1px solid #E3C7C0;
   border-radius: 10px; background: #FCF6F4; }
 .acct-danger .acct-link { min-height: 44px; display: inline-flex; align-items: center; }
+/* THE PROFILE HEAD (2026-09-02), the app's My trees screen and a Polarsteps
+   profile as the references: avatar, name, follow counts, a row of counts, one
+   action, then the lists. Settings are not on it; the gear in the corner is
+   the only way there, which is the whole point of "settings een knop dieper".
+   Per-surface design, same order and same behaviour as the app. */
+.profile-head { margin-bottom: 1.6rem; }
+.profile-top { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1.1rem; }
+.profile-avatar { flex: none; width: 56px; height: 56px; border-radius: 50%;
+  background: var(--moss-light) center/cover no-repeat; color: var(--moss);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--sans); font-weight: 700; font-size: 1.4rem; }
+.profile-who { min-width: 0; flex: 1; }
+.profile-who h1 { margin: 0; font-size: 1.5rem; overflow-wrap: anywhere; }
+.profile-follow { margin: 0.15rem 0 0; font-size: 13px; color: var(--ink-mid); }
+.profile-follow b { color: var(--ink); }
+/* 44px, Apple's own minimum, which the first sweep of the app found broken in
+   four places. A gear is the easiest control on a page to under-size. */
+.profile-gear { flex: none; width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--ink-mid); background: var(--cream); text-decoration: none; }
+.profile-gear:hover { background: var(--cream-dark); color: var(--ink); }
+.profile-add { display: inline-flex; margin-top: 0.2rem; }
 /* THE TWO LANES on /account, the web form of the app's segmented control
    (2026-09-02). Same behaviour, per-surface design: a tab pair reads as tabs
    on a page, where a segmented control reads as iOS. */
