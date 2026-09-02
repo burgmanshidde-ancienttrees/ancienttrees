@@ -4733,6 +4733,15 @@
     "note": "Zero city opened to the floor on the same German route as Stuttgart: de.wikipedia Naturdenkmal wikitext joined to freiburg.de and the city's Amtsblatt. All four pins confirmed, 11 leads banked. The pass corrected two claims in its own brief (Waldtraut stands in the Guenterstaeler Stadtwald, not the Mooswald, and no source mentions a viewing platform), caught a girth figure it had copied from the wrong tree and removed it before delivery, and discarded a WebSearch summary placing a conifer group in the Alter Friedhof 3 km from its real coordinates.",
     "wasted": 0,
     "brief_wrong": true
+   },
+   {
+    "target": "heidelberg",
+    "kind": "verify",
+    "tokens": 226000,
+    "trees": 6,
+    "note": "Third zero city on the German route. de.wikipedia's Naturdenkmal list reproduces the LUBW state register in full for Heidelberg, 42 objects of which 33 are trees with names, coordinates and designation dates; every delivered tree was cross-checked against its own LUBW steckbrief. Only the Molkenkur Linden found a genuinely independent second source (an RNZ feature), so five of six ship flagged and single-sourced, every pin approximate, no ages. Dropped a Ginkgo whose courtyard location came from a search summary neither underlying page carried.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
