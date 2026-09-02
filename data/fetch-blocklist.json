@@ -372,6 +372,42 @@
    "seen": "2026-09-02",
    "cost": "one fetch attempt each via curl and WebFetch, during the China register scouting pass",
    "workaround": "the bureau own subdomain lyylj.gz.gov.cn answered normally in under a second; route around the gz.gov.cn main portal via bureau subdomains where one exists"
+  },
+  "blog.xuite.net": {
+   "behaviour": "DNS does not resolve at all (getaddrinfo ENOTFOUND), to curl and WebFetch alike. Fast fail rather than a hang. The platform appears to be gone rather than blocking us",
+   "seen": "2026-09-02",
+   "cost": "the 228 Peace Memorial Park banyan lead could not be confirmed on a Taipei verify pass, and it was the one tree that would have given the city a central cluster",
+   "workaround": "unknown; try the Wayback Machine, which is where a dead blogging platform's posts survive"
+  },
+  "crgis.rchss.sinica.edu.tw": {
+   "behaviour": "DNS does not resolve (getaddrinfo ENOTFOUND). Academia Sinica's temple and cultural-resources GIS database",
+   "seen": "2026-09-02",
+   "cost": "would have been a good independent second source for temple-adjacent trees across Taiwan, not only for one park",
+   "workaround": "unknown this pass"
+  },
+  "guide.cc.ntu.edu.tw": {
+   "behaviour": "connection refused (ECONNREFUSED). National Taiwan University's own campus building guide",
+   "seen": "2026-09-02",
+   "cost": "the NTU Geology Building ginkgo fell back to a personal blog as its only source, which is why it is held as a lead rather than published",
+   "workaround": "unknown; zh.wikipedia carries NTU's Twelve Scenic Spots and served for the Common Three Pines"
+  },
+  "parks.gov.taipei": {
+   "behaviour": "connection refused (ECONNREFUSED), and parks.taipei behaves the same. Taipei's own parks department",
+   "seen": "2026-09-02",
+   "cost": "no official source for named trees in any Taipei park",
+   "workaround": "unknown; worth retrying, a refused connection is often temporary"
+  },
+  "blog.udn.com": {
+   "behaviour": "403 Forbidden to WebFetch on every path tried. udn's blog platform blocks plain fetchers",
+   "seen": "2026-09-02",
+   "cost": "fast fail, so a second rather than a window",
+   "workaround": "unknown this pass"
+  },
+  "eculture.gov.taipei": {
+   "behaviour": "SPLIT, and the split is the whole point. Individual records at /trees/zh-tw/tree/<id> fetch fine through WebFetch and return a full protected-tree record (species, address, measurements). The backing API at eculturedata.gov.taipei/api/site/module/tree answers 403 權限不足 to plain curl, so the 3,905 records CANNOT be enumerated or searched. From this Mac the host is worse than that: curl exits 35 on TLS and urllib gets a connection reset, so a scripted import cannot run here at all, only WebFetch reaches it",
+   "seen": "2026-09-02",
+   "cost": "Taipei's official Protected Trees platform holds 3,905 designated trees and we can read them one at a time by id and no other way. That is a register we can cite but not import",
+   "workaround": "for a handful of known trees, WebFetch /trees/zh-tw/tree/<id> directly. For an import, try from a different network first (the CI runner reaches hosts this Mac does not), and look for the same data on data.taipei, whose dataset download errored on every path tried this pass"
   }
  }
 }
