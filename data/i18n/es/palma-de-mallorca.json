@@ -1,0 +1,72 @@
+{
+ "_note": "Spanish overlay for Palma de Mallorca, hand-written 2026-09-02 under Contract J. Chosen because /palma-de-mallorca takes 88 impressions on only 5 trees in the ten-day window, the best impressions-per-tree ratio of anything left untranslated, and sits at position 7.1 with zero clicks: the page is being seen and not clicked. 5 trees, full set: city page, question page and 5 tree pages under /es/. Castilian Spanish, because that is the language area our other Spanish sets serve and the one a searcher outside the islands types in; place names stay in their official Catalan form (Placa de Cort, Passeig de Sagrera, Castell de Bellver, Cementiri Municipal, Parc Forestal de Bellver), which is what the signage, the maps and the ajuntament use. Faithful to the English facts, never machine-patched (the accent disaster of 2026-08-09 is the standing warning). Two deliberate departures from the English, both reported for correction on the canonical side: the English FAQ enumerates the five free sites as 'two public squares, a seafront promenade, a municipal cemetery and a free forest park', but the Misericordia fig stands in the garden of a cultural centre rather than on a square, so the Spanish lists what a visitor actually meets; and the register's own name is the Cataleg d'Arbres Singulars, which the English city file spells 'Catalec'.",
+ "city": "Palma de Mallorca",
+ "title": "Árboles singulares de Palma de Mallorca: 5 ejemplares",
+ "meta_description": "Los cinco árboles singulares de Palma: un olivo de 600 años frente al ayuntamiento, dos ficus gigantes y un lentisco hecho árbol en el Castell de Bellver.",
+ "intro": "Los cinco árboles singulares de Palma van de un icono de plaza a una rareza forestal. S'Olivera de Cort, un olivo de cinco o seis siglos, se levantó entero de una finca de Pollença y se replantó frente al Ajuntament en 1989. Cerca, dos ficus de Moreton Bay gigantes, uno en el jardín de un centro cultural y otro en el cementerio, son de los mayores de su especie en Baleares. Un hibisco de la isla de Norfolk crece en el paseo marítimo junto a la Llotja gótica, y en Bellver un arbusto corriente lleva un siglo haciéndose árbol.",
+ "question_title": "¿Cuál es el árbol más antiguo de Palma de Mallorca?",
+ "question_meta": "El árbol más antiguo de Palma es S'Olivera de Cort, un olivo de 500 a 600 años trasplantado en 1989 desde una finca de Pollença a la Plaça de Cort.",
+ "question_answer": "El árbol más antiguo de Palma es S'Olivera de Cort, un olivo estimado en 500 a 600 años. Creció la mayor parte de ese tiempo en la finca de Pedruixella Petit, cerca de Pollença, antes de ser levantado entero y replantado en la Plaça de Cort, justo delante del Ajuntament, el 3 de mayo de 1989. Los dos ficus de Moreton Bay gigantes de esta lista, uno en el centro cultural de la Misericòrdia y otro en el cementerio municipal, son mucho más jóvenes en comparación, de 150 a 200 años, plantados ambos a mediados o finales del siglo XIX.",
+ "question_context": "El Catàleg d'Arbres Singulars del Govern de les Illes Balears, que recoge los cinco árboles de esta lista, anota perímetro, altura y una franja de edad aproximada para cada ficha en lugar de una fecha de plantación precisa, salvo donde la historia local cubre el hueco. S'Olivera de Cort es la excepción: su trasplante de 1989 fue un acto civil bien documentado, cubierto por la prensa local y señalado al final con una placa, así que tanto su fecha de llegada a la plaza como la edad que se le estimaba entonces, de 500 a 600 años, están registradas. Los dos ficus comparten una historia parecida entre sí más que una fecha documentada: los dos se plantaron dentro de proyectos de jardín del siglo XIX, el de la Misericòrdia cuando el antiguo Hospital General trazó allí un jardín botánico hacia 1827 y el del cementerio en un periodo similar, y el registro sitúa hoy a ambos entre los 150 y los 200 años. La lagunaria de La Llotja y el lentisco de Bellver llevan medidas pero ninguna estimación de edad en el registro de origen; la del lentisco se da solo como aproximadamente un siglo, a partir del tiempo que la especie necesita para alcanzar porte de árbol.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Palma de Mallorca?",
+   "a": "S'Olivera de Cort, un olivo de 500 a 600 años que creció cerca de Pollença antes de ser replantado en 1989 delante del ayuntamiento de Palma. Es mucho más viejo que cualquier otro árbol de esta página."
+  },
+  {
+   "q": "¿Se pueden ver gratis los árboles singulares de Palma?",
+   "a": "Sí, los cinco están en suelo abierto: una plaza pública, el jardín de un centro cultural de entrada libre, un paseo marítimo, un cementerio municipal abierto a diario sin entrada y el parque forestal gratuito que rodea el Castell de Bellver (el interior del castillo sí se paga, aparte)."
+  },
+  {
+   "q": "¿Cuál es el árbol más grande de Palma?",
+   "a": "El Ficus de la Misericòrdia, un ficus de Moreton Bay con un tronco de más de dos metros de diámetro, más de veinte metros de altura y una copa de unos treinta y cinco metros de ancho, en el jardín del centro cultural de la Misericòrdia. Los autores locales lo llaman sin más el árbol más grande de la ciudad."
+  },
+  {
+   "q": "¿Se pueden ver todos en un mismo paseo?",
+   "a": "Tres de los cinco, S'Olivera de Cort, el ficus de la Misericòrdia y la lagunaria de La Llotja, están a unos 700 metros unos de otros en el casco antiguo. El ficus del cementerio y el lentisco de Bellver quedan más lejos y conviene tomarlos como paradas aparte."
+  }
+ ],
+ "strings_note": "Per-tree fields: name, species (Spanish common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Empty English fields stay empty here.",
+ "trees": {
+  "plm_001": {
+   "name": "S'Olivera de Cort",
+   "species": "Olivo (Olea europaea)",
+   "age_estimate": "de 500 a 600 años",
+   "access": "Gratuito, en la plaza pública abierta delante del ayuntamiento de Palma, sin verja ni horario",
+   "transport": "En el casco antiguo, a unos 10 minutos a pie de la Plaça d'Espanya (Metro de Mallorca y nudo principal de autobuses EMT)",
+   "story": "Este olivo es más viejo que la plaza en la que está, y solo lleva ahí desde 1989. Creció durante siglos en Pedruixella Petit, una finca cerca de Pollença con unos dos mil olivos, hasta que un jardinero municipal y el jefe de obras públicas se presentaron ante su propietario, el hotelero Jaime Batle, y le pidieron comprarlo para la plaza del ayuntamiento. Batle se negó a venderlo. Cuando supo adónde iba a ir, lo regaló.\n\nEl 3 de mayo de 1989 lo levantaron entero y lo replantaron en la Plaça de Cort, justo enfrente del Ajuntament de Palma. El tronco mide unos siete metros de perímetro y dos metros y medio de alto hasta la primera de sus cuatro ramas principales, en un árbol de solo seis metros de altura total, la forma clásica de un olivo que ha pasado cinco o seis siglos ensanchándose en vez de crecer hacia arriba.\n\nEl ayuntamiento le prometió a Batle una placa con su nombre. Pasaron cuatro alcaldes antes de que se colocara por fin, treinta años después del regalo. Para entonces el árbol no necesitaba presentación: se había convertido en una de las cosas más fotografiadas de Palma, un símbolo de paz y arraigo de seiscientos años aparcado delante de la sede del gobierno municipal, exactamente donde un jardinero pensó una vez que tenía que estar."
+  },
+  "plm_002": {
+   "name": "El Ficus de la Misericòrdia",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "de 150 a 200 años",
+   "access": "Gratuito, en el jardín de un centro cultural público (Consell de Mallorca); la sala de exposiciones tiene un horario reducido los sábados, pero los patios y el jardín abren más ampliamente, conviene consultarlo antes de ir",
+   "transport": "En el casco antiguo, a unos 10 minutos a pie de la Plaça d'Espanya (Metro de Mallorca y nudo principal de autobuses EMT)",
+   "story": "Los autores naturalistas de la isla lo llaman sin matices el árbol más grande de Palma, y las cifras respaldan la afirmación: un tronco de más de dos metros de diámetro, más de veinte metros de altura y una copa que se cita en torno a los treinta y cinco metros, plantado hacia 1827, cuando el antiguo Hospital General trazó aquí un jardín botánico. El edificio junto al que crece, la Casa de la Misericòrdia, acogió a los pobres de Palma desde 1565; hoy es un centro cultural del Consell de Mallorca, con entrada libre a sus dos patios y a este jardín.\n\nEl árbol se ha salido de su parterre en más de una dirección. Cuando la ciudad levantó la Rambla vecina por unas obras, encontró las raíces del ficus corriendo bajo la calle, mucho más allá del muro de jardín que debía contenerlas. En la base sobrevive todavía un anillo de piedras decorativas del parterre original del siglo XIX, hoy medio tragado por el tronco que lleva dos siglos engrosando a su alrededor.\n\nJunto con un segundo ficus gigante en el cementerio municipal de Palma, plantado más o menos por las mismas fechas, es uno de los dos mayores Ficus macrophylla de las Islas Baleares, y según la mayoría de las medidas el mayor de los dos."
+  },
+  "plm_003": {
+   "name": "La Lagunària de la Llotja",
+   "species": "Lagunaria (Lagunaria patersonii)",
+   "age_estimate": "sin documentar individualmente",
+   "access": "Gratuito, en el paseo marítimo público, sin verja ni horario",
+   "transport": "En el casco antiguo, a unos 12 minutos a pie de la Plaça d'Espanya (Metro de Mallorca y nudo principal de autobuses EMT)",
+   "story": "Aquí lo llaman pica-pica, y el nombre es un aviso más que un insulto. Lagunaria patersonii viene de una sola isla pequeña del mar de Tasmania, la isla de Norfolk, y llena sus cápsulas de semillas de pelos finos como vidrio que pican durante horas si se abre una sin cuidado. En inglés la especie se conoce por lo mismo como el árbol bomba de picor. En verano florece en copas de un rosa pálido que pasan por un hibisco pequeño, de donde viene la mitad amable de su nombre.\n\nEste ejemplar crece en el Passeig de Sagrera, el paseo marítimo, justo delante de La Llotja, la lonja gótica de mercaderes del siglo XV que es uno de los edificios medievales más conocidos de Palma. Con 2,6 metros de perímetro y 18 metros de altura, es un ejemplar considerable de una especie que suele mantenerse más pequeña como árbol de calle o de jardín, y el Govern balear lo catalogó entre los árboles singulares de la isla precisamente por eso.\n\nEs la entrada más callejera y sociable de esta página: sin muro de jardín, sin entrada, solo un árbol grande haciendo su trabajo de sombra y adorno en un paseo lleno de gente, enfrente de un edificio que fue central para el comercio mallorquín desde antes de que Colón zarpara."
+  },
+  "plm_004": {
+   "name": "El Ficus del Cementeri",
+   "species": "Ficus de Moreton Bay (Ficus macrophylla)",
+   "age_estimate": "de 150 a 200 años",
+   "access": "Gratuito, dentro del Cementiri Municipal de Palma; abierto a diario de 8:30 a 19:30",
+   "transport": "Autobús urbano EMT en dirección al Camí de Jesús; unos 2 km, 25 minutos a pie, desde el casco antiguo",
+   "story": "El otro ficus gigante de Palma, plantado más o menos en las mismas décadas que el del jardín de la Misericòrdia, crece dentro del cementerio municipal de la ciudad, donde ha tenido siglo y medio para extender cinco ramas enormes desde un cuello de siete metros y diez centímetros de perímetro, medido a la altura del pecho en 2011. No es tan alto como su primo del otro lado de la ciudad, unos quince metros frente a veinte, pero lo que le falta en altura lo compensa en alcance: las raíces superficiales salen del tronco en todas direcciones, lo bastante gruesas como para romper el pavimento y apartar lápidas.\n\nUn cementerio puede parecer un sitio raro al que mandar a alguien que busca un árbol notable, pero el de Palma está ajardinado y no es solo funcional, y este ficus es uno de los dos Ficus macrophylla enormes que dan sombra a su parte antigua y convierten lo que podría ser un lugar desangelado en un sitio de sombra tranquila.\n\nJunto con el ficus de la Misericòrdia, está entre los mayores ejemplares de su especie de todas las Islas Baleares. El cementerio abre a diario a los visitantes, no cobra entrada y solo pide la cortesía normal de cualquier camposanto."
+  },
+  "plm_005": {
+   "name": "La Mata de Bellver",
+   "species": "Lentisco (Pistacia lentiscus)",
+   "age_estimate": "aproximadamente un siglo",
+   "access": "Gratuito, en el Parc Forestal de Bellver, público, que rodea el castillo; el interior del castillo es de pago, el parque forestal no",
+   "transport": "Líneas 4, 20 o 46 de autobús EMT hasta la Plaça Gomila y después una subida señalizada (o por escalera) hasta el parque; unos 35 a 40 minutos a pie desde el casco antiguo",
+   "story": "Pistacia lentiscus es un arbusto en casi todos los sitios donde crece, una presencia baja y densa del matorral mediterráneo por la que la mayoría de los paseantes pasa sin mirar. Si se le deja un siglo en paz, en el suelo adecuado, puede hacer algo muy distinto: este ejemplar, que crece justo al sur del muro exterior del Castell de Bellver, ha levantado cuatro troncos verticales y ha tomado el tamaño y la forma de un árbol hecho y derecho, que es exactamente por lo que el Govern balear lo catalogó entre los ejemplares singulares de las islas.\n\nEstá en el Parc Forestal de Bellver, el pinar que envuelve el castillo circular del siglo XIV en su colina sobre la ciudad. El castillo tiene taquilla y horario; el bosque que lo rodea, señalizado con senderos, no, así que la mata se puede ver gratis se entre o no en el recinto amurallado.\n\nNo hay nada espectacular en sus cifras, ningún récord de altura ni de perímetro. Su interés está entero en la excepción que representa: el arbusto mediterráneo corriente que tuvo el terreno y el tiempo para convertirse en otra cosa."
+  }
+ }
+}
