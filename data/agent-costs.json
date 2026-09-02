@@ -4688,6 +4688,15 @@
     "note": "scripts/photo_hunt.py --recheck, free API sweep, restocked queue to 1471 trees swept / 776 with candidates. No agent dispatched.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "dubai",
+    "kind": "verify",
+    "tokens": 159000,
+    "trees": 0,
+    "note": "Time-boxed pass to settle whether Dubai has any supply at all, one of the 17 cities Hidde named. VERDICT: none. Its tree-heritage effort is a bulk municipal barcoding project (10,000+ ghaf trees numbered and GPS-tagged as a population) rather than a body that names individual specimens, so nothing clears the two-source or exact-spot bar. Two leads and one blocked entry recorded in data/leads/dubai.json with the verdict, so no future pass repeats the hunt from zero. Not wasted: a checked negative on a named city is the output this pass was asked for.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

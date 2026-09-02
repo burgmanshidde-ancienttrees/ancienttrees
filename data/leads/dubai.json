@@ -1,0 +1,52 @@
+{
+ "note": "Verification pass, 2026-09-02, ~30 minutes, time-boxed per BRIEF_RESEARCH.md. VERDICT: Dubai has no publishable supply right now. Zero trees verified. This matches the pattern in BRIEF_RESEARCH.md's naming-body section: Dubai's tree culture is bulk municipal protection (a 2014-16 project numbered 10,000+ ghaf trees emirate-wide with barcodes and GPS tags) rather than individually storied specimens, so nobody has distinguished ONE tree from its neighbours the way a heritage decree or champion register does elsewhere. Checked: Dubai Municipality's Aged Trees Numbering Project (Gulf News 2014/2016/2016, Arabic press), the Zabeel 1 'first tagged' ghaf tree, Al Fahidi historical district (Local House restaurant courtyard sidr tree), Mushrif Park/Forest ghaf population, the Shabhana tree and Al Bateen Sidra tree (both turned out to be in Abu Dhabi, out of scope), Al Qudra/desert ghaf stands (out of reach without a car and permission, not searched further per the brief's own steer), Dubai Miracle Garden and Safa Park (not searched in depth: ornamental, near-certainly too young per the brief). Arabic search (شجرة الغاف دبي معمرة, أقدم شجرة غاف الزعبيل) surfaced the same municipal bulk-numbering story and no additional named specimen. Two candidates below are real leads worth a future pass revisiting IF Dubai Municipality's tree database (data.dubai.ae or a FOI request) ever becomes fetchable and gives per-tree coordinates; www.dubaipulse.gov.ae is on the blocklist (hangs) and was not attempted.",
+ "leads": [
+  {
+   "name": "The Zabeel 1 ghaf tree",
+   "species": "Ghaf (Prosopis cineraria)",
+   "age_estimate": "about 100 years as of 2014, so roughly 110-115 today",
+   "age_min": 100,
+   "age_max": 130,
+   "girth_cm": null,
+   "location": {
+    "address": "Near a mosque in the Zabeel 1 area of Dubai, exact plot not published; possibly near the Grand Zabeel Mosque, 25 Street, Zabeel 1, but that identification is this pass's inference, not sourced",
+    "latitude": null,
+    "longitude": null,
+    "neighbourhood": "Zabeel 1"
+   },
+   "verified_sources": [
+    "https://gulfnews.com/uae/environment/dubai-municipality-moves-to-protect-endangered-trees-1.1297912"
+   ],
+   "access": "Unknown, likely a public street or mosque-adjacent area, not confirmed",
+   "status": "lead",
+   "reason": "Only one source found, a single 2014 Gulf News article on the Dubai Municipality Aged Trees Numbering Project, describing this tree as 'the first' ghaf to receive a barcode plaque with GPS coordinates. No second independent source names this specific tree (later Gulf News/Arabic-press pieces describe the same bulk project, not this individual tree again), and no precise coordinate or street address was found, only 'near a mosque in Zabeel 1 area'. Fails both the two-source bar and the exact-spot bar. Worth revisiting only if the municipality's own tree database (referenced in the article as GPS-tagged and barcoded) becomes accessible; it would settle the pin in one lookup."
+  },
+  {
+   "name": "The Local House sidr tree, Al Fahidi",
+   "species": "Sidr / Christ's thorn jujube (Ziziphus spina-christi), one blog source calls it a \"buckthorn\" which is likely a loose translation, not confirmed against a botanical source",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Local House Restaurant, 51 Al Fahidi Historical Neighbourhood, near Al Fahidi Roundabout, opposite Al Mussallah Post Office, Bur Dubai",
+    "latitude": null,
+    "longitude": null,
+    "neighbourhood": "Al Fahidi Historical Neighbourhood, Bur Dubai"
+   },
+   "verified_sources": [
+    "https://focus.hidubai.com/guide-al-fahidi-neighborhood/"
+   ],
+   "access": "Uncertain. The tree stands in the courtyard of Local House, a restaurant inside a historic 1997-restored house; unclear whether it can be seen without dining there, which would make it paid-entry-equivalent rather than a free public tree",
+   "status": "lead",
+   "reason": "Single source (a tourism blog), which calls it 'the oldest buckthorn tree in Dubai' with no age, no measurement and no second source to corroborate the claim or the species. Access is unresolved: whether it stands in a semi-public heritage-house courtyard (like a museum garden) or strictly inside a paying restaurant was not settled in this pass. Fails the two-source bar outright; would need a second source (a heritage-site listing, Dubai Culture / Dubai Museum material, or an on-the-ground access check) plus an age or girth figure before it could verify."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Mushrif Park / Mushrif Forest ghaf population",
+   "species": "Ghaf (Prosopis cineraria)",
+   "reason": "Not a collectible point: this is a population of over 43,000 ghaf trees (some individually 20 to 150+ years old per The National/Gulf News) inside a forest area, with no single specimen distinguished from the rest by any source found. Also access-restricted: the forest was fenced off to the public in 1992 specifically to protect the trees from human pressure, so even if one tree could be singled out it would not clear hard rule 10's public-access test as it stands. Would need a source naming ONE specific tree within the forest, with a reason a visitor could actually reach and identify it, to become a lead rather than blocked."
+  }
+ ]
+}
