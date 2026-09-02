@@ -1,170 +1,186 @@
 {
-  "leads": [
-    {
-      "name_pt": "metrosídero (33 e 55)",
-      "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
-      "location": {
-        "address": "Avenida de Montevideu, Porto (two points: near Castelo do Queijo, and Jardim do Homem do Leme)",
-        "latitude": 41.16589999,
-        "longitude": -8.687699988
-      },
-      "reason": "Register entries (ICNF processos KNJ3/045 girth 3.85m age 77, and KNJ3/046 girth unrecorded age 50), both tipo 'Alameda' about 550m apart along Avenida de Montevideu. Not researched further this pass: unclear whether each is a genuine standalone collectible point or part of a longer roadside planting, and no independent source was checked. Worth a closer look, ideally with a site photo or streetview check."
-    },
-    {
-      "name_pt": "yulan",
-      "species": "Yulan Magnolia (Magnolia denudata)",
-      "location": {
-        "address": "Rua de São Vicente, Porto",
-        "latitude": 41.177164,
-        "longitude": -8.629603
-      },
-      "reason": "Register entry (ICNF processo AIP131211131I) has a corrupted or implausible age field: age_register 16 but last_measured recorded as '45', which is not a valid year (register pitfall: a field holding something other than what its name says). A 4m girth on a 16-year-old magnolia is also physically implausible. Needs the ICNF source record checked directly to establish the real age before this can be verified, and needs an access check for a street-tree location on Rua de São Vicente."
-    },
-    {
-      "name_pt": "podocarpo-de-madeira-amarela",
-      "species": "African Fern Pine (Afrocarpus falcatus)",
-      "location": {
-        "address": "Palácio do Freixo (Pestana Pousada), Estrada Nacional 108, Porto",
-        "latitude": 41.14255555,
-        "longitude": -8.575166662
-      },
-      "reason": "Register entry (ICNF processo AIP13120359I, no age or measurements recorded). The palace is now a 5-star hotel/pousada, and 5.1km from the city centre, so both public access to the 10,000 sqm gardens for non-guests and the 30-minute transport-time rule need confirming before this can ship. Not researched further this pass for time."
-    },
-    {
-      "name_pt": "cedro-do-himalaia",
-      "species": "Himalayan Cedar (Cedrus deodara)",
-      "location": {
-        "address": "Jardim do Palacete Burmester ('Casa dos Livros'), grounds of the Faculdade de Ciências, Universidade do Porto, Rua do Campo Alegre, Porto",
-        "latitude": 41.152561,
-        "longitude": -8.640989
-      },
-      "reason": "Register entry (ICNF processo AIP13121886I, girth 3.4m, no age on file) and confirmed as one of four classified specimens at Palacete Burmester per https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico. Held back only because Porto already publishes a Himalayan Cedar (por_008, The Himalayan Cedar of the Palácio de Cristal) and this pass capped the Palacete Burmester additions at two (por_016 horse chestnut, por_017 yew) to avoid crowding the page with a second same-species entry; not a quality failure. Ready to verify and add if a future pass wants a fuller Palacete Burmester cluster."
-    },
-    {
-      "name_pt": "tulipeiro-da-virgínia (FCUP)",
-      "species": "Tulip Tree (Liriodendron tulipifera)",
-      "location": {
-        "address": "Jardim do Palacete Burmester ('Casa dos Livros'), grounds of the Faculdade de Ciências, Universidade do Porto, Rua do Campo Alegre, Porto",
-        "latitude": 41.153222,
-        "longitude": -8.641428
-      },
-      "reason": "Register entry (ICNF processo AIP13121887I, girth 4.9m, no age on file), confirmed via the same municipal article as the Palacete Burmester quartet. Held back because this pass already delivers two other tulip trees for Porto (por_001 Casa Tait, por_014 Quinta Primo Madeira) and capped Palacete Burmester at two additions; genuinely a different individual, not a duplicate. Good candidate for a future depth pass."
-    }
-  ],
-  "blocked": [
-    {
-      "name_pt": "tulipeiro-da-virgínia (Escola Municipal João de Deus)",
-      "species": "Tulip Tree (Liriodendron tulipifera)",
-      "location": {
-        "address": "Escola Municipal João de Deus, R. João de Deus, 399, Porto",
-        "latitude": 41.16174976,
-        "longitude": -8.638243735
-      },
-      "reason": "Register entry (ICNF processo KNJ1/009, girth 8.8m, age recorded 300 at last measurement 2006, one of Porto's oldest classified trees) stands in the yard of an operating municipal primary school. No source found confirming public visiting access to a working school's grounds, and none is expected. Blocked under hard rule 10. This is NOT the same tree as the Casa Allen tulipeiro (por_020, different processo, different address); do not confuse the two."
-    },
-    {
-      "name_pt": "tulipeiro-da-virgínia ou árvore-do-ponto / cedro-do-atlas (Ordem dos Médicos)",
-      "species": "Tulip Tree (Liriodendron tulipifera) and Atlas Cedar (Cedrus atlantica)",
-      "location": {
-        "address": "Jardim da Secção Regional Norte, Ordem dos Médicos, Rua Delfim Maia, Porto",
-        "latitude": 41.17259999,
-        "longitude": -8.610699988
-      },
-      "reason": "Register entries (ICNF processos KNJ1/612 tulipeiro girth 4.3m age 100, and KNJ1/611 cedro-do-atlas girth 3.4m age 100, both classified 2011) stand in the private garden of the medical association's regional headquarters. The Ordem's Centro de Cultura e Congressos next door hosts public cultural events, but no source found confirms the garden itself, as opposed to the event spaces, is open for casual visits. Same shape of problem as the already-blocked CCDR-N camphor tree below; left out per hard rule 10 until public garden access is confirmed."
-    },
-    {
-      "name_pt": "araucária-de-norfolk (28)",
-      "species": "Norfolk Island Pine (Araucaria heterophylla)",
-      "location": {
-        "address": "Jardim do Passeio Alegre, Porto",
-        "latitude": 41.14819999,
-        "longitude": -8.670699988
-      },
-      "reason": "Register entry (ICNF processo KNJ3/047, tipo 'Conjunto arbóreo') covers roughly three dozen Norfolk Araucaria specimens scattered through the 41,000 sqm Jardim do Passeio Alegre. Not a collectible point: there is no single obvious place to stand, unlike the compact Alameda dos Plátanos (por_026) or the seven fan palms (por_024) in the same city. Fails the ensemble test the way Barcelona's La Rambla plane trees did."
-    },
-    {
-      "name_pt": "palmeira-das-canárias (63)",
-      "species": "Canary Island Date Palm (Phoenix canariensis)",
-      "location": {
-        "address": "Jardim do Passeio Alegre, Porto",
-        "latitude": 41.14749999,
-        "longitude": -8.669799988
-      },
-      "reason": "Register entry (ICNF processo KNJ3/048, tipo 'Alameda') covers 63 Canary palm specimens across the same 41,000 sqm garden as the Norfolk araucaria set above. Same failure: an avenue spread across a large park rather than one destination. Blocked for the same reason, not for lack of remarkableness."
-    },
-    {
-      "name_pt": "canforeira",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "location": {
-        "address": "CCDR-N headquarters garden, Rua Rainha D. Estefânia nº251, Porto",
-        "latitude": 41.152075,
-        "longitude": -8.6316
-      },
-      "reason": "Register entry (ICNF processo AIP13121884I, girth 5.75m, no age on file) well sourced independently (ambiente.cm-porto.pt, viva-porto.pt, JN, and ccdr-n.pt itself all cover the classification), but the tree stands on the private grounds of a regional government headquarters (Comissão de Coordenação e Desenvolvimento Regional do Norte). No source confirms genuine public access to the garden itself; the only access detail found was the agency's office hours (business days 14:00-18:00), which govern administrative business, not visiting a tree. Per hard rule 10, left out rather than assumed open. Worth re-checking if CCDR-N is confirmed to allow casual garden access."
-    },
-    {
-      "id": "por_028",
-      "name": "The Elephant's-Foot Plane Avenue of the Cordoaria",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "about 160 years, planted around 1866 when the garden was laid out",
-      "age_min": 150,
-      "age_max": 165,
-      "girth_cm": 540,
-      "height_m": 19,
-      "location": {
-        "address": "Jardim da Cordoaria (Jardim de Joao Chagas), Praca Coronel Pacheco, Porto",
-        "latitude": 41.14559999,
-        "longitude": -8.617099988,
-        "neighbourhood": "Cordoaria, Cedofeita"
-      },
-      "verified_sources": [
-        "Portugal's national register of trees of public interest (ICNF), processo KNJ3/050, 'Alameda de Platanos', Jardim da Cordoaria, classified D.R. n.o 6, II Serie, 10/01/2005",
-        "100 Mil Arvores project, 'Arvores de Cedofeita: segredos bem guardados' (100milarvores.pt, June 2017): confirms 37 London planes forming one classified ensemble, physiognomy singular due to a disease that deformed the trunk bases into an 'elephant paw' shape, trees reported perfectly healthy"
-      ],
-      "access": "Free, public garden (Jardim da Cordoaria, also called Jardim de Joao Chagas), triangular and unfenced, open at all hours.",
-      "transport": "Central Porto, about a 5-10 minute walk from Sao Bento railway station.",
-      "location_precision": "approximate",
-      "curation_status": "ai_generated",
-      "story": "Thirty-seven plane trees line one avenue in the Jardim da Cordoaria, and every one of them has the same strange deformity: a disease swelled their bases into something that looks, unmistakably, like an elephant's foot. The trees are perfectly healthy. Portugal's monumental tree register classifies the whole avenue as one entry, the Alameda dos Platanos, rather than splitting it into 37 separate trunks, because that is how a visitor actually experiences it: one long, uniform, oddly-footed colonnade.\n\nThe garden itself predates the plane trees by centuries in name only. Rope-makers worked this ground for two hundred years, which is where Cordoaria comes from, until the council cleared them out in the 1860s and hired the landscape architect Emile David, who also laid out the gardens of the nearby Palacio de Cristal, to build a proper garden in their place. The planes went in around 1866. A cyclone tore through in 1941 and reshaped the garden's canopy, but the avenue survived it and was formally classified a tree of public interest in 2005.\n\nThe garden is triangular, unfenced and free, a short walk from Sao Bento station. Walk the length of the avenue once and every trunk repeats the same swollen, elephantine base.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "reason": "Retired 2026-08-26: a duplicate page for a tree already published as por_026. Both entries cite the same ICNF processo at identical coordinates, so this was one physical tree with two tree pages splitting its own search demand (the 'alameda dos platanos' query sat at position 8 with two of our pages competing for it). Everything this entry measured or sourced was folded into por_026 before it was pulled; the story is kept here in full. Slug redirected via RENAMED_TREE_SLUGS. Never re-publish as a separate entry."
-    },
-    {
-      "id": "por_029",
-      "name": "The Bunya-Bunya of the Cordoaria",
-      "species": "Bunya Pine (Araucaria bidwillii)",
-      "age_estimate": "about 150 years",
-      "age_min": 140,
-      "age_max": 160,
-      "girth_cm": 360,
-      "height_m": 40,
-      "location": {
-        "address": "Jardim da Cordoaria (Jardim de Joao Chagas), Praca Coronel Pacheco, Porto",
-        "latitude": 41.14595304,
-        "longitude": -8.616813246,
-        "neighbourhood": "Cordoaria, Cedofeita"
-      },
-      "verified_sources": [
-        "Portugal's national register of trees of public interest (ICNF), processo KNJ1/450, 'araucaria-da-queenslandia ou bunya-bunya', Jardim da Cordoaria, classified D.R. n.o 6, II Serie, 10/01/2005",
-        "100 Mil Arvores project, 'Arvores de Cedofeita: segredos bem guardados' (100milarvores.pt, June 2017): confirms it stands by the garden's lake beside a Cedar of Lebanon and a Cedar of Atlas, calls it the tallest tree in the garden and one of the tallest in Porto at 40 metres, 'mais de 140 anos', native to Australia"
-      ],
-      "access": "Free, public garden (Jardim da Cordoaria, also called Jardim de Joao Chagas), triangular and unfenced, open at all hours.",
-      "transport": "Central Porto, about a 5-10 minute walk from Sao Bento railway station.",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "story": "At 40 metres this bunya pine is the tallest tree in the Jardim da Cordoaria and one of the tallest anywhere in Porto, a conifer from Queensland's rainforests standing beside a Cedar of Lebanon and a Cedar of Atlas at the garden's lake, close enough together that a local tree-walking group uses the three of them to teach visitors how to tell the different conifers apart.\n\nAraucaria bidwillii belongs to a genus that once grew across the ancient supercontinent Gondwana and now survives as a handful of species scattered from Australia to South America, most of them, like this one, planted deliberately as curiosities far from where they evolved. Portugal's monumental tree register measured this specimen at 3.6 metres round, 40 metres tall with a 12-metre crown, and classified it a tree of public interest in the same 2005 notice that protects the garden's plane tree avenue nearby.\n\nIt has stood in this triangular, unfenced garden for roughly a century and a half, since not long after the ground stopped being a rope-makers' yard and became a public park. Free to see at any hour, a short walk from Sao Bento station.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "reason": "Retired 2026-08-26: a duplicate page for a tree already published as por_019. Both entries cite the same ICNF processo at identical coordinates, so this was one physical tree with two tree pages splitting its own search demand (the 'alameda dos platanos' query sat at position 8 with two of our pages competing for it). Everything this entry measured or sourced was folded into por_019 before it was pulled; the story is kept here in full. Slug redirected via RENAMED_TREE_SLUGS. Never re-publish as a separate entry."
-    }
-  ]
+ "leads": [
+  {
+   "name_pt": "metrosídero (33 e 55)",
+   "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
+   "location": {
+    "address": "Avenida de Montevideu, Porto (two points: near Castelo do Queijo, and Jardim do Homem do Leme)",
+    "latitude": 41.16589999,
+    "longitude": -8.687699988
+   },
+   "reason": "Register entries (ICNF processos KNJ3/045 girth 3.85m age 77, and KNJ3/046 girth unrecorded age 50), both tipo 'Alameda' about 550m apart along Avenida de Montevideu. Not researched further this pass: unclear whether each is a genuine standalone collectible point or part of a longer roadside planting, and no independent source was checked. Worth a closer look, ideally with a site photo or streetview check."
+  },
+  {
+   "name_pt": "yulan",
+   "species": "Yulan Magnolia (Magnolia denudata)",
+   "location": {
+    "address": "Rua de São Vicente, Porto",
+    "latitude": 41.177164,
+    "longitude": -8.629603
+   },
+   "reason": "Register entry (ICNF processo AIP131211131I) has a corrupted or implausible age field: age_register 16 but last_measured recorded as '45', which is not a valid year (register pitfall: a field holding something other than what its name says). A 4m girth on a 16-year-old magnolia is also physically implausible. Needs the ICNF source record checked directly to establish the real age before this can be verified, and needs an access check for a street-tree location on Rua de São Vicente."
+  },
+  {
+   "name_pt": "podocarpo-de-madeira-amarela",
+   "species": "African Fern Pine (Afrocarpus falcatus)",
+   "location": {
+    "address": "Palácio do Freixo (Pestana Pousada), Estrada Nacional 108, Porto",
+    "latitude": 41.14255555,
+    "longitude": -8.575166662
+   },
+   "reason": "Register entry (ICNF processo AIP13120359I, no age or measurements recorded). The palace is now a 5-star hotel/pousada, and 5.1km from the city centre, so both public access to the 10,000 sqm gardens for non-guests and the 30-minute transport-time rule need confirming before this can ship. Not researched further this pass for time."
+  },
+  {
+   "name_pt": "cedro-do-himalaia",
+   "species": "Himalayan Cedar (Cedrus deodara)",
+   "location": {
+    "address": "Jardim do Palacete Burmester ('Casa dos Livros'), grounds of the Faculdade de Ciências, Universidade do Porto, Rua do Campo Alegre, Porto",
+    "latitude": 41.152561,
+    "longitude": -8.640989
+   },
+   "reason": "Register entry (ICNF processo AIP13121886I, girth 3.4m, no age on file) and confirmed as one of four classified specimens at Palacete Burmester per https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico. Held back only because Porto already publishes a Himalayan Cedar (por_008, The Himalayan Cedar of the Palácio de Cristal) and this pass capped the Palacete Burmester additions at two (por_016 horse chestnut, por_017 yew) to avoid crowding the page with a second same-species entry; not a quality failure. Ready to verify and add if a future pass wants a fuller Palacete Burmester cluster."
+  },
+  {
+   "name_pt": "tulipeiro-da-virgínia (FCUP)",
+   "species": "Tulip Tree (Liriodendron tulipifera)",
+   "location": {
+    "address": "Jardim do Palacete Burmester ('Casa dos Livros'), grounds of the Faculdade de Ciências, Universidade do Porto, Rua do Campo Alegre, Porto",
+    "latitude": 41.153222,
+    "longitude": -8.641428
+   },
+   "reason": "Register entry (ICNF processo AIP13121887I, girth 4.9m, no age on file), confirmed via the same municipal article as the Palacete Burmester quartet. Held back because this pass already delivers two other tulip trees for Porto (por_001 Casa Tait, por_014 Quinta Primo Madeira) and capped Palacete Burmester at two additions; genuinely a different individual, not a duplicate. Good candidate for a future depth pass."
+  },
+  {
+   "name": "The Bischofia of the Jardim Botanico do Porto",
+   "species": "Bischofia javanica",
+   "city": "Porto",
+   "source": "Paulo V. Araujo, Dias com Arvores, photograph sent 2026-09-01",
+   "why_not_yet": "A tree we do not publish and had never heard of. He photographed it, so it exists and he thinks it is worth photographing, which is a recommendation from the best-placed person in the city. Needs the usual verification before it can ship: age, exact position, and whether the botanical garden's ticket applies. His photograph measures POOR on photo_light (flat, no separation from the background), so it would need a better one anyway.",
+   "photo_available": "Yes, from Paulo, under 'use as fotos como quiser'."
+  },
+  {
+   "name": "The Camellia Walk of Casa Tait",
+   "species": "Camellia japonica",
+   "city": "Porto",
+   "source": "Paulo V. Araujo, Dias com Arvores, photograph sent 2026-09-01",
+   "why_not_yet": "His photograph is of the camellia path at Casa Tait, benches and all, and it is a PLACE rather than a tree: no single trunk to stand in front of, which is the collectible-point rule that also kept the Rambla planes off the site. Casa Tait already gives us its tulip tree and its magnolia. Worth reconsidering only if one camellia there is itself the destination.",
+   "photo_available": "Yes, and it measures OK on light; held for the reason above, not for quality."
+  }
+ ],
+ "blocked": [
+  {
+   "name_pt": "tulipeiro-da-virgínia (Escola Municipal João de Deus)",
+   "species": "Tulip Tree (Liriodendron tulipifera)",
+   "location": {
+    "address": "Escola Municipal João de Deus, R. João de Deus, 399, Porto",
+    "latitude": 41.16174976,
+    "longitude": -8.638243735
+   },
+   "reason": "Register entry (ICNF processo KNJ1/009, girth 8.8m, age recorded 300 at last measurement 2006, one of Porto's oldest classified trees) stands in the yard of an operating municipal primary school. No source found confirming public visiting access to a working school's grounds, and none is expected. Blocked under hard rule 10. This is NOT the same tree as the Casa Allen tulipeiro (por_020, different processo, different address); do not confuse the two."
+  },
+  {
+   "name_pt": "tulipeiro-da-virgínia ou árvore-do-ponto / cedro-do-atlas (Ordem dos Médicos)",
+   "species": "Tulip Tree (Liriodendron tulipifera) and Atlas Cedar (Cedrus atlantica)",
+   "location": {
+    "address": "Jardim da Secção Regional Norte, Ordem dos Médicos, Rua Delfim Maia, Porto",
+    "latitude": 41.17259999,
+    "longitude": -8.610699988
+   },
+   "reason": "Register entries (ICNF processos KNJ1/612 tulipeiro girth 4.3m age 100, and KNJ1/611 cedro-do-atlas girth 3.4m age 100, both classified 2011) stand in the private garden of the medical association's regional headquarters. The Ordem's Centro de Cultura e Congressos next door hosts public cultural events, but no source found confirms the garden itself, as opposed to the event spaces, is open for casual visits. Same shape of problem as the already-blocked CCDR-N camphor tree below; left out per hard rule 10 until public garden access is confirmed."
+  },
+  {
+   "name_pt": "araucária-de-norfolk (28)",
+   "species": "Norfolk Island Pine (Araucaria heterophylla)",
+   "location": {
+    "address": "Jardim do Passeio Alegre, Porto",
+    "latitude": 41.14819999,
+    "longitude": -8.670699988
+   },
+   "reason": "Register entry (ICNF processo KNJ3/047, tipo 'Conjunto arbóreo') covers roughly three dozen Norfolk Araucaria specimens scattered through the 41,000 sqm Jardim do Passeio Alegre. Not a collectible point: there is no single obvious place to stand, unlike the compact Alameda dos Plátanos (por_026) or the seven fan palms (por_024) in the same city. Fails the ensemble test the way Barcelona's La Rambla plane trees did."
+  },
+  {
+   "name_pt": "palmeira-das-canárias (63)",
+   "species": "Canary Island Date Palm (Phoenix canariensis)",
+   "location": {
+    "address": "Jardim do Passeio Alegre, Porto",
+    "latitude": 41.14749999,
+    "longitude": -8.669799988
+   },
+   "reason": "Register entry (ICNF processo KNJ3/048, tipo 'Alameda') covers 63 Canary palm specimens across the same 41,000 sqm garden as the Norfolk araucaria set above. Same failure: an avenue spread across a large park rather than one destination. Blocked for the same reason, not for lack of remarkableness."
+  },
+  {
+   "name_pt": "canforeira",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "location": {
+    "address": "CCDR-N headquarters garden, Rua Rainha D. Estefânia nº251, Porto",
+    "latitude": 41.152075,
+    "longitude": -8.6316
+   },
+   "reason": "Register entry (ICNF processo AIP13121884I, girth 5.75m, no age on file) well sourced independently (ambiente.cm-porto.pt, viva-porto.pt, JN, and ccdr-n.pt itself all cover the classification), but the tree stands on the private grounds of a regional government headquarters (Comissão de Coordenação e Desenvolvimento Regional do Norte). No source confirms genuine public access to the garden itself; the only access detail found was the agency's office hours (business days 14:00-18:00), which govern administrative business, not visiting a tree. Per hard rule 10, left out rather than assumed open. Worth re-checking if CCDR-N is confirmed to allow casual garden access."
+  },
+  {
+   "id": "por_028",
+   "name": "The Elephant's-Foot Plane Avenue of the Cordoaria",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "about 160 years, planted around 1866 when the garden was laid out",
+   "age_min": 150,
+   "age_max": 165,
+   "girth_cm": 540,
+   "height_m": 19,
+   "location": {
+    "address": "Jardim da Cordoaria (Jardim de Joao Chagas), Praca Coronel Pacheco, Porto",
+    "latitude": 41.14559999,
+    "longitude": -8.617099988,
+    "neighbourhood": "Cordoaria, Cedofeita"
+   },
+   "verified_sources": [
+    "Portugal's national register of trees of public interest (ICNF), processo KNJ3/050, 'Alameda de Platanos', Jardim da Cordoaria, classified D.R. n.o 6, II Serie, 10/01/2005",
+    "100 Mil Arvores project, 'Arvores de Cedofeita: segredos bem guardados' (100milarvores.pt, June 2017): confirms 37 London planes forming one classified ensemble, physiognomy singular due to a disease that deformed the trunk bases into an 'elephant paw' shape, trees reported perfectly healthy"
+   ],
+   "access": "Free, public garden (Jardim da Cordoaria, also called Jardim de Joao Chagas), triangular and unfenced, open at all hours.",
+   "transport": "Central Porto, about a 5-10 minute walk from Sao Bento railway station.",
+   "location_precision": "approximate",
+   "curation_status": "ai_generated",
+   "story": "Thirty-seven plane trees line one avenue in the Jardim da Cordoaria, and every one of them has the same strange deformity: a disease swelled their bases into something that looks, unmistakably, like an elephant's foot. The trees are perfectly healthy. Portugal's monumental tree register classifies the whole avenue as one entry, the Alameda dos Platanos, rather than splitting it into 37 separate trunks, because that is how a visitor actually experiences it: one long, uniform, oddly-footed colonnade.\n\nThe garden itself predates the plane trees by centuries in name only. Rope-makers worked this ground for two hundred years, which is where Cordoaria comes from, until the council cleared them out in the 1860s and hired the landscape architect Emile David, who also laid out the gardens of the nearby Palacio de Cristal, to build a proper garden in their place. The planes went in around 1866. A cyclone tore through in 1941 and reshaped the garden's canopy, but the avenue survived it and was formally classified a tree of public interest in 2005.\n\nThe garden is triangular, unfenced and free, a short walk from Sao Bento station. Walk the length of the avenue once and every trunk repeats the same swollen, elephantine base.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "reason": "Retired 2026-08-26: a duplicate page for a tree already published as por_026. Both entries cite the same ICNF processo at identical coordinates, so this was one physical tree with two tree pages splitting its own search demand (the 'alameda dos platanos' query sat at position 8 with two of our pages competing for it). Everything this entry measured or sourced was folded into por_026 before it was pulled; the story is kept here in full. Slug redirected via RENAMED_TREE_SLUGS. Never re-publish as a separate entry."
+  },
+  {
+   "id": "por_029",
+   "name": "The Bunya-Bunya of the Cordoaria",
+   "species": "Bunya Pine (Araucaria bidwillii)",
+   "age_estimate": "about 150 years",
+   "age_min": 140,
+   "age_max": 160,
+   "girth_cm": 360,
+   "height_m": 40,
+   "location": {
+    "address": "Jardim da Cordoaria (Jardim de Joao Chagas), Praca Coronel Pacheco, Porto",
+    "latitude": 41.14595304,
+    "longitude": -8.616813246,
+    "neighbourhood": "Cordoaria, Cedofeita"
+   },
+   "verified_sources": [
+    "Portugal's national register of trees of public interest (ICNF), processo KNJ1/450, 'araucaria-da-queenslandia ou bunya-bunya', Jardim da Cordoaria, classified D.R. n.o 6, II Serie, 10/01/2005",
+    "100 Mil Arvores project, 'Arvores de Cedofeita: segredos bem guardados' (100milarvores.pt, June 2017): confirms it stands by the garden's lake beside a Cedar of Lebanon and a Cedar of Atlas, calls it the tallest tree in the garden and one of the tallest in Porto at 40 metres, 'mais de 140 anos', native to Australia"
+   ],
+   "access": "Free, public garden (Jardim da Cordoaria, also called Jardim de Joao Chagas), triangular and unfenced, open at all hours.",
+   "transport": "Central Porto, about a 5-10 minute walk from Sao Bento railway station.",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "At 40 metres this bunya pine is the tallest tree in the Jardim da Cordoaria and one of the tallest anywhere in Porto, a conifer from Queensland's rainforests standing beside a Cedar of Lebanon and a Cedar of Atlas at the garden's lake, close enough together that a local tree-walking group uses the three of them to teach visitors how to tell the different conifers apart.\n\nAraucaria bidwillii belongs to a genus that once grew across the ancient supercontinent Gondwana and now survives as a handful of species scattered from Australia to South America, most of them, like this one, planted deliberately as curiosities far from where they evolved. Portugal's monumental tree register measured this specimen at 3.6 metres round, 40 metres tall with a 12-metre crown, and classified it a tree of public interest in the same 2005 notice that protects the garden's plane tree avenue nearby.\n\nIt has stood in this triangular, unfenced garden for roughly a century and a half, since not long after the ground stopped being a rope-makers' yard and became a public park. Free to see at any hour, a short walk from Sao Bento station.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "reason": "Retired 2026-08-26: a duplicate page for a tree already published as por_019. Both entries cite the same ICNF processo at identical coordinates, so this was one physical tree with two tree pages splitting its own search demand (the 'alameda dos platanos' query sat at position 8 with two of our pages competing for it). Everything this entry measured or sourced was folded into por_019 before it was pulled; the story is kept here in full. Slug redirected via RENAMED_TREE_SLUGS. Never re-publish as a separate entry."
+  }
+ ]
 }
