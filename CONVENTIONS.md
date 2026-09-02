@@ -669,3 +669,41 @@ second size, for the day somebody asks.
 Read 2026-09-02:
 - https://support.strava.com/hc/en-us/articles/221089587-Sharing-Your-Strava-Activities
 - https://forum.inaturalist.org/t/getting-creating-a-link-to-your-observations-so-they-can-be-shared-etc/49896
+
+---
+
+## A page for something a person added, and who may see it (2026-09-02)
+
+**Looked up when Hidde asked the obvious next question about the share card:
+"kunnen we niet een pagina maken van de boom die wel deelbaar is?"**
+
+**Reference: Strava.** Every activity has a URL, and every activity carries a
+visibility of its own: Everyone, Followers, or Only You, settable per activity
+and as a default. Map visibility is a SEPARATE control on top of that, so
+somebody can share the ride and hide where it started.
+
+**Reference: iNaturalist.** Every observation has a public page and the default
+is open, because the whole product is sharing. What is not open by default is
+the LOCATION: observations of at-risk taxa are obscured automatically to a
+0.2 degree cell, and only the observer and people they trust see the real
+coordinates. The precision of the location is treated as a separate question
+from whether the record is public.
+
+**Reference: Google Maps.** A place somebody adds gets its page only after
+review. Until then it lives in Your contributions, visible to them alone.
+
+**So the convention is three decisions, not one:** does the record have a page,
+who may open it, and how precise is the position on it. Every reference answers
+them separately, and the two that publish user records both hold something back
+about WHERE.
+
+**What that means here, where the whole product is a map of exact trunks.**
+Hard rule 10 already says we never undo a location a source withheld and never
+send strangers to somebody's home, and a tree a person photographed may be
+either. So a page for one of these carries the same three answers, and the
+location one is not a detail: a garden tree is the case, not the exception.
+
+Read 2026-09-02:
+- https://support.strava.com/en-us/articles/15401987-Activity-Privacy-Controls
+- https://www.inaturalist.org/pages/geoprivacy
+- https://support.google.com/maps/answer/6320846
