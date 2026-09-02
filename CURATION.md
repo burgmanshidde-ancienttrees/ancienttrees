@@ -10,6 +10,42 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-02 - Beijing opened (6 trees); three Japanese cherries published as single-tree destinations; Brighton collided with a concurrent session
+
+Finished a write pass an earlier attempt had claimed and left unfinished: 15 verified trees
+across three research files (beijing-verified.json, brighton-verified.json,
+famousjapan-verified.json), all fully written.
+
+**Beijing** (rank 181, 0 trees before today): 6 trees, all in imperial parks and temples
+(Temple of Heaven, Ditan, Zhongshan, Beihai, Wuta, Bolin). 5 of 6 are behind paid entry (83%),
+flagged by preflight.py as a NOTE. No free-tree candidates were available in leads/beijing.json
+to balance the ratio (empty). Per CLAUDE.md, the fix is free trees added, not paid ones removed;
+left as an honest gap for a future pass, register or reader tip to close.
+
+**Brighton was published twice, independently, from the same source.** A concurrent session
+("Gothenburg and Brighton open...") wrote and pushed its own version of the same 6 trees from
+the same brighton-verified.json while this pass was still writing stories; both pushes named
+the same tree ids and facts with different prose, a race the claim system (data/in-flight.json)
+is supposed to prevent but did not catch here, since both sessions apparently held the claim at
+overlapping times. On rebase, kept the other session's already-live version rather than
+overwrite it, and dropped this pass's Brighton draft entirely; nothing was lost, since both
+drew from the same verified research. Worth a look at why the claim did not block the second
+writer.
+
+**Three single-tree Japan pages**, using the 2026-08-31 single-tree-destination exception:
+Hokuto (Jindai-zakura), Miharu (Miharu Takizakura) and Motosu (Usuzumi-zakura), together
+Japan's "Three Great Cherry Trees", all designated National Natural Monuments on the same day
+in 1922, each drawing real pilgrimage crowds in April. Fixed two build-time conflicts on merge:
+all three research entries shared one id prefix (fjp_), which would have had each city's build
+overwrite the others' trees, so renamed to hok_/mhr_/mtz_ per place; and the two non-weeping
+Edo-higan trees (Jindai-zakura, Usuzumi-zakura) used the same common name as the site's existing
+weeping-cultivar species page, so split them onto their own species entry, "Higan Cherry (Prunus
+subhirtella var. ascendens)", distinct from "Weeping Higan Cherry (Prunus subhirtella)".
+
+Also updated the Japan and United Kingdom country page meta_description/intro counts, both
+stale before this pass (Japan said 14 cities, UK said 8 in the intro and 11 in the meta;
+actual counts are now 17 and 12).
+
 ## 2026-09-02 - Submission 58 (Amsterdam, GPS only): not a tree, the canal-quay bomencamping
 
 Row 58, kind `tree`, city Amsterdam, GPS 52.39743,4.87408, no tree name, no `why`, page

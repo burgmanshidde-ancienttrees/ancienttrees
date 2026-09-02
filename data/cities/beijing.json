@@ -1,0 +1,197 @@
+{
+ "city": "Beijing",
+ "country": "China",
+ "status": "needs_curation",
+ "intro": "Beijing's oldest trees grew up with its temples and imperial rites: cypresses planted for an altar, a scholar tree Qianlong liked well enough to build a pavilion just to look at, ginkgos that queue photographers every November. The city has graded its ancient trees by class since the imperial era and named ten ancient tree kings in 2018; five of that shortlist make this list, spanning roughly six hundred to twelve hundred years. Most stand behind a park or temple gate rather than a house door, and one, at Bolin Temple, costs nothing at all.",
+ "meta_description": "Beijing's oldest trees: a Tang-dynasty scholar tree an emperor built a pavilion to watch, and twin ginkgos crowds queue for every November.",
+ "question_answer": "Beijing's oldest tree, by tradition, is the Tang Scholar Tree in Beihai Park, given an age of roughly 1,200 years. The figure comes from a long-repeated register entry rather than a fresh count, and the tree stands beside the Huafangzhai pavilion in the park's northwest, a spot the Qianlong Emperor liked well enough to build a pavilion specifically for looking at it.",
+ "question_meta": "Beijing's oldest tree is the Tang Scholar Tree in Beihai Park, traditionally dated to about 1,200 years. Full list of 6.",
+ "question_context": "Six trees make this list, all inside temples and imperial parks rather than free-standing on a street. Beihai Park's Tang Scholar Tree, traditionally dated to around 1,200 years, is the oldest by the tradition each of these trees carries, and it earned an emperor's own pavilion, built by Qianlong specifically so he could sit and look at it. The Seven Liao Cypresses at Zhongshan Park run it close, said to predate the Ming altar built around them in 1420 by several centuries, which would put them past a thousand years, though that is a temple-succession story rather than a dated finding. Most of these figures work the same way: a register entry, repeated for decades, standing in for a measurement nobody has actually taken, since none of Beijing's own listings carry a real dating method. What is firmer is the paperwork: the city graded these trees by class and named ten of them ancient tree kings in 2018, and five of the six here made that shortlist. Entry is free at Bolin Temple; the rest sit behind a park or garden ticket, usually a few yuan.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Beijing?",
+   "a": "The Tang Scholar Tree in Beihai Park, traditionally dated to around 1,200 years old. Qianlong Emperor liked the tree enough to build a pavilion beside it just for looking, and the courtyard still carries his name for it, Guke Ting, the Court of the Ancient Bole."
+  },
+  {
+   "q": "Do I need to pay to see Beijing's ancient trees?",
+   "a": "Usually, yes. Five of the six trees on this list stand inside parks or temple grounds that charge entry, from a nominal 2 or 3 yuan at Ditan and Zhongshan to a proper ticket at the Temple of Heaven. The Butterfly Scholar Tree at Bolin Temple is free."
+  },
+  {
+   "q": "Why are so many of Beijing's oldest trees inside temples and parks?",
+   "a": "Because that is where they were planted on purpose, for altars, temple courtyards and imperial gardens, and then protected for centuries as those grounds stayed in official or religious hands. Street trees and ordinary gardens rarely survived the dynasties in between; consecrated and palace ground did."
+  },
+  {
+   "q": "What is an \"ancient tree king\"?",
+   "a": "In 2018 Beijing's municipal government named ten trees the city's most beautiful ancient tree kings, a shortlist drawn from its wider register of Grade 1 ancient trees (over 300 years old). Five of the six trees here made that shortlist; the Butterfly Scholar Tree at Bolin Temple did not."
+  }
+ ],
+ "trees": [
+  {
+   "id": "bjs_001",
+   "name": "The Nine Dragon Cypress",
+   "species": "Chinese Juniper (Juniperus chinensis)",
+   "age_estimate": "roughly 600 years",
+   "age_min": 500,
+   "age_max": 620,
+   "girth_cm": 368,
+   "location": {
+    "address": "Temple of Heaven, northwest of the Echo Wall (Huiyinbi), Dongcheng District, Beijing",
+    "latitude": 39.8799,
+    "longitude": 116.4029,
+    "neighbourhood": "Temple of Heaven Park"
+   },
+   "story": "The bark on this juniper twists hard enough that people counted nine dragons in it. Hence the name, and the older epithet Nine Dragons Greeting the Sage, earned because emperors passed the tree on their way to the Circular Mound Altar for the winter solstice sacrifice. In 2018 the city government named it one of Beijing's ten most beautiful ancient tree kings.\n\nIt is not a big tree. The municipal register gives a trunk 3.68 metres round, a height of 11.5 metres and a canopy only 6.7 metres across: dense and knotted rather than towering. It is graded one, the class reserved for trees over three hundred years old. Tradition puts the planting in 1420, the eighteenth year of the Yongle reign, and that is where the round figure of six hundred years comes from, an official date repeated down the centuries rather than a ring count. Read it as a wide band, not a birthday.\n\nThe tree stands northwest of the Echo Wall, inside the Temple of Heaven's inner enclosure, which needs a second ticket on top of the park entry. Our pin marks the park rather than the trunk: the sources agree on the direction and none of them gives a coordinate. They also both trace back to the same 2018 municipal survey, so the figures come from one count rather than two.",
+   "verified_sources": [
+    "https://www.beijing.gov.cn/renwen/sy/whkb/201812/t20181220_1864970.html",
+    "https://www.visitbeijing.com.cn/article/47c1v4kQlmK"
+   ],
+   "access": "Paid entry to Temple of Heaven Park (and a further inner-park ticket to reach the Echo Wall area); open daily",
+   "transport": "Tiantan Dongmen (Temple of Heaven East Gate) station, Line 5, then a short walk inside the park to the Echo Wall",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "paid_entry": true
+  },
+  {
+   "id": "bjs_002",
+   "name": "The General Cypresses of Ditan",
+   "species": "Chinese Arborvitae (Platycladus orientalis)",
+   "age_estimate": "roughly 400 to 500 years",
+   "age_min": 400,
+   "age_max": 500,
+   "girth_cm": 515,
+   "location": {
+    "address": "Around the Fangze Altar (方泽坛), Ditan Park, Andingmenwai Street, Dongcheng District, Beijing",
+    "latitude": 39.9531,
+    "longitude": 116.4089,
+    "neighbourhood": "Ditan Park (Temple of Earth)"
+   },
+   "story": "Three cypresses around the Fangze Altar hold military ranks. The Great General stands south of the altar's south gate, 5.15 metres round and still vigorous. The Old General is west of it at 4.8 metres. The One-Armed General, outside the west perimeter wall, has lost every major limb but one and is still alive.\n\nTradition dates the trio to 1530, when the Jiajing Emperor raised the Temple of Earth's altar here. A Shaanxi official is said to have sent the saplings, invoking the cypress the Yellow Emperor supposedly planted. Their official tags read about four hundred years, but a 2026 investigation by the city paper argues the trees predate the altar and may be Yuan or early Ming work, which is why the age band here is broad rather than exact. The same piece dismantles a local tradition that Sun Yat-sen named them; the records suggest he never planted anything on this ground.\n\nThe species is contested too. Older park sources call all three Chinese arborvitae; the 2026 article reclassifies two of them as junipers. Nobody disputes that they are old, and all three were described as green and standing in that same report.\n\nEntry to Ditan Park costs two yuan, a formality rather than a fee. Walk to the altar and they are around you, in three directions.",
+   "verified_sources": [
+    "https://xinwen.bjd.com.cn/content/s6a093534d5de97bd745555f8.html",
+    "https://wap.bjd.com.cn/read/2020/12/14/36343t270.html"
+   ],
+   "access": "Nominal entry fee to Ditan Park (2 RMB as of recent listings, effectively free); open daily 6:00-21:30 in summer, 6:00-20:30 in winter",
+   "transport": "Yonghegong-Lama Temple or Andingmen station, Line 2/5, short walk to the park's south gate",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "girth_cm_note": "515cm belongs to the tallest of the three, the Great General Cypress; the others measure 480cm (Old General) and 390cm (One-Armed General)",
+   "paid_entry": true
+  },
+  {
+   "id": "bjs_003",
+   "name": "The Butterfly Scholar Tree of Bolin Temple",
+   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+   "age_estimate": "roughly 250 years",
+   "age_min": 250,
+   "age_max": 270,
+   "girth_cm": 180,
+   "height_m": 15,
+   "location": {
+    "address": "Weimo Pavilion courtyard, Bolin Temple, 1 Xilou Hutong, Yonghegong Street, Dongcheng District, Beijing",
+    "latitude": 39.9448,
+    "longitude": 116.4137,
+    "neighbourhood": "Bolin Temple (Yonghegong area)"
+   },
+   "story": "A scholar tree's leaf usually runs to a dozen or more leaflets. This one carries seven, small and loosely hung, and in wind the whole crown moves like a cloud of butterflies. That is where the name comes from: the butterfly scholar tree, a rare cultivar of which only two or three others are known anywhere in Beijing, at Guangji Temple and Jingshan Park. This is the oldest and largest of them.\n\nIt went in during the renovation of Bolin Temple in 1758, the twenty-third year of the Qianlong reign, which puts it at roughly 250 years. Fifteen metres tall, 1.8 metres round. The temple around it is older still, founded in 1347, and takes its name from its trees: Bolin means cypress forest. Old cypresses, pines and a ginkgo share the grounds with it, and the tree stands in the Weimo Pavilion courtyard rather than out front.\n\nEntry is free and the gates are open through the middle of the day. The temple has been a nationally protected relic since 2006, which is some reassurance, because there is a gap in what we know: we found no dated sighting of this particular tree after 2020. If you get there and it is standing in its sevens, tell us. The pin marks the temple building, not the courtyard within it.",
+   "verified_sources": [
+    "https://s.visitbeijing.com.cn/attraction/118453",
+    "https://upimg.baike.so.com/doc/7614590-7888685.html"
+   ],
+   "access": "Free entry to Bolin Temple; open 9:00-16:30",
+   "transport": "Yonghegong Lama Temple station, Line 2/5, short walk",
+   "location_precision": "approximate",
+   "curation_status": "flagged"
+  },
+  {
+   "id": "bjs_004",
+   "name": "The Ginkgos of the Five Pagoda Temple",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "roughly 600 years",
+   "age_min": 550,
+   "age_max": 620,
+   "girth_cm": 500,
+   "location": {
+    "address": "Flanking the Diamond Throne (Jin'gang Baozuo) pagoda, Beijing Stone Carving Art Museum (Wuta Temple / Zhenjue Temple site), 24 Wutasi Village, Baishiqiao, Haidian District, Beijing",
+    "latitude": 39.9436,
+    "longitude": 116.3238,
+    "neighbourhood": "Wuta Temple (Five Pagoda Temple)"
+   },
+   "story": "Two female ginkgos stand either side of the Diamond Throne pagoda, and every November people queue to photograph them. A 2026 city paper feature described visitors waiting their turn at the best spots while the gold came down on the carved stone.\n\nThe pair went in when the temple, then called Zhenjue, was built in the Yongle era of the Ming dynasty, which gives them roughly six hundred years. They are not identical. The east tree stands about 17 metres; the west one reaches about 20 and is the stouter, with a trunk near five metres round. The Qing poet Hong Liangji wrote a line about the pair that still reads accurately: two trees stand strange by Wuta's gate. That is six centuries of somebody bothering to write them down.\n\nThe pagoda between them gives the place its common name, five stone spires on one carved base, and the site now doubles as the Beijing Stone Carving Art Museum. Twenty yuan gets you in, free for the first two hundred visitors each Wednesday, closed Mondays.\n\nOur pin marks the temple grounds rather than the trees, which stand at the pagoda itself. In the second half of November that hardly matters. The trees are the loudest thing on the site, and the cameras will show you where to stand.",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "kind": "autumn colour",
+    "label": "November, when both ginkgos turn gold and the queues form at the pagoda"
+   },
+   "verified_sources": [
+    "https://xinwen.bjd.com.cn/content/s636cb59ee4b0b60bbc5e688e.html",
+    "https://www.visitbeijing.com.cn/article/4OYDXjIzpWC"
+   ],
+   "access": "Paid entry, 20 RMB, includes the Beijing Stone Carving Art Museum; free for the first 200 visitors each Wednesday; open 9:00-17:00, closed Mondays",
+   "transport": "Baishiqiao South station, Line 16, short walk; also reachable from Weigongcun on Line 4",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "paid_entry": true
+  },
+  {
+   "id": "bjs_005",
+   "name": "The Seven Liao Cypresses",
+   "species": "Chinese Arborvitae (Platycladus orientalis)",
+   "age_estimate": "roughly 1,000 years",
+   "age_min": 900,
+   "age_max": 1100,
+   "girth_cm": 590,
+   "location": {
+    "address": "Outside the south gate of the Sheji Altar (社稷坛), Zhongshan Park, Dongcheng District, Beijing",
+    "latitude": 39.9091,
+    "longitude": 116.3869,
+    "neighbourhood": "Zhongshan Park"
+   },
+   "story": "The altar came second. Seven cypresses stand outside the south gate of the Sheji Altar, and local tradition holds them to be survivors of the Liao-dynasty Xinguo Temple that occupied this ground before the Ming laid out the altar in 1420. That would put them past a thousand years. It is a temple-succession story rather than a dated planting, so read the figure as the tradition it is and not as a measurement.\n\nThe thickest of the seven runs close to six metres round, which the local description puts at four adults with arms outstretched, only just meeting. Another divides into nine major limbs that then divide again, and the comparison people reach for is a thousand-armed Guanyin. The city keeps a file on each tree in the grove and monitors them individually; recent reporting describes all seven as thriving.\n\nA few steps away is the thing most visitors photograph: a scholar tree over two hundred years old growing out of a split in one of the cypresses, known locally as the cypress and scholar tree embrace.\n\nThe ground is Zhongshan Park now, beside the Forbidden City, three yuan to enter. Ming and Qing emperors made their offerings for land and grain here. Our pin marks the park rather than the grove, because no source gives a coordinate for the trees themselves.",
+   "verified_sources": [
+    "https://xinwen.bjd.com.cn/content/s66cc9606e4b07fbcccaf4895.html",
+    "https://peking.bjd.com.cn/content/s60c43b43e4b0b843ec207871.html"
+   ],
+   "access": "Paid entry to Zhongshan Park, 3 RMB (half-price 1.5 RMB); open daily",
+   "transport": "Tian'anmen West station, Line 1, short walk to the park's east gate",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "paid_entry": true
+  },
+  {
+   "id": "bjs_006",
+   "name": "The Tang Scholar Tree",
+   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+   "age_estimate": "roughly 1,200 years",
+   "age_min": 1100,
+   "age_max": 1300,
+   "girth_cm": 596,
+   "height_m": 13,
+   "location": {
+    "address": "Southwest corner of the Guke Courtyard, Huafangzhai, Beihai Park, Xicheng District, Beijing",
+    "latitude": 39.9264,
+    "longitude": 116.3825,
+    "neighbourhood": "Beihai Park"
+   },
+   "story": "The Qianlong Emperor built a pavilion so he could sit and look at this tree, then named the courtyard after it: Guke Ting, the Court of the Ancient Bole. A rockery went in beside it at the same time, partly to protect the tree. Not many trees anywhere have had that much imperial attention paid to their comfort.\n\nIt is a scholar tree, traditionally dated to the Tang dynasty, which is where the figure of roughly 1,200 years comes from. That is a registered and long-repeated age rather than a fresh count, so the band around it is wide. What the municipal survey does measure is concrete enough: a trunk 5.96 metres round, 13 metres of height, a canopy nine metres across, grade one on the ancient-tree register, and a place on the city's 2018 list of its ten most beautiful ancient tree kings.\n\nThe shape is the real distinction. Beijing's own description calls it a massive potted landscape, which is fair. Centuries of training have left something deliberately sculpted rather than wild, and the whole frame of it reads most clearly in winter once the leaves are down.\n\nIt stands in the northwest quadrant of Beihai Park, beside the Huafangzhai pavilion, and our pin marks the park rather than the courtyard, so allow yourself a walk. The newest record we found of the tree is that 2018 survey.",
+   "best_time": {
+    "months": [
+     1,
+     2
+    ],
+    "kind": "bare silhouette",
+    "label": "January and February, when the leaves are down and the trained frame shows"
+   },
+   "verified_sources": [
+    "https://www.beijing.gov.cn/renwen/sy/whkb/201812/t20181220_1864961.html",
+    "https://www.beijing.gov.cn/renwen/sy/whkb/201812/t20181220_1864970.html"
+   ],
+   "access": "Paid entry to Beihai Park: 10 RMB in high season (Apr 1-Oct 31), 5 RMB in low season (Nov 1-Mar 31); combined ticket with inner sites 20/15 RMB",
+   "transport": "Beihai North station, Line 6, or Ping'anli station, Line 4/6, both a short walk",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "paid_entry": true
+  }
+ ]
+}
