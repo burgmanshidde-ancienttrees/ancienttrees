@@ -3240,6 +3240,44 @@
    ],
    "trees": 4,
    "logged": true
+  },
+  {
+   "started": "2026-09-02T06:45:53+00:00",
+   "date": "2026-09-02",
+   "run_id": "33599539742",
+   "minutes": 14.3,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 113,
+   "denials": 10,
+   "denials_source": "permission_denials: Bash(cat), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(mkdir), Bash(printenv), Bash(test)",
+   "ended": "success",
+   "tokens": 4500958,
+   "claims_held": [
+    "_famous-japan"
+   ],
+   "commits": 10,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "curinga",
+     "trees": 1
+    },
+    {
+     "city": "fara-in-sabina",
+     "trees": 1
+    },
+    {
+     "city": "gutau",
+     "trees": 1
+    },
+    {
+     "city": "ramsau-am-dachstein",
+     "trees": 1
+    }
+   ],
+   "trees": 4,
+   "logged": true
   }
  ],
  "schedule_changes": [
