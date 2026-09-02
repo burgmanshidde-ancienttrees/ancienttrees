@@ -4679,6 +4679,15 @@
     "note": "CAUGHT AN ID COLLISION THAT WOULD HAVE OVERWRITTEN THREE LIVE BRAGA TREES: my brief named prefix brg_, which is Braga's, because I wrote it by hand instead of generating it with passcheck.py --brief. Reassigned to bge_ before a word was written.",
     "wasted": 0,
     "brief_wrong": true
+   },
+   {
+    "target": "site-wide photo API sweep",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "scripts/photo_hunt.py --recheck, free API sweep, restocked queue to 1471 trees swept / 776 with candidates. No agent dispatched.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
