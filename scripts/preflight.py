@@ -894,6 +894,46 @@ def check_no_sender_names():
 
 
 
+
+def check_translated_components_are_neutral():
+    """A component that renders every language must not have one typed into it.
+
+    Found 2026-09-02 by LOOKING at a German tree page, which no check caught and
+    no grep would have: every translated tree page in all seven languages was
+    serving SPANISH labels. A Japanese reader got "Especie", "Edad estimada",
+    "Ubicacion", "Acceso" and "Como llegar" above Japanese prose. It had been
+    live since the seven-language rollout on 2026-08-22, because
+    TranslatedTreePage.astro was written during the one-city Spanish test and
+    its labels were never lifted into the string table when six more languages
+    landed.
+
+    The test is narrow and therefore trustworthy: these three components render
+    for every language, so any Spanish-specific character in a literal inside
+    them is by definition wrong. Comments are exempt, since the corpus explains
+    itself in prose and several of those explanations quote Spanish.
+    """
+    out = []
+    files = ["TranslatedTreePage.astro", "TranslatedQuestionPage.astro",
+             "TranslatedCityPage.astro"]
+    spanish = re.compile(r"[\u00e1\u00e9\u00ed\u00f3\u00fa\u00f1\u00bf\u00a1]")
+    for name in files:
+        path = os.path.join("site", "src", "components", name)
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as fh:
+            lines = fh.readlines()
+        for n, line in enumerate(lines, 1):
+            stripped = line.strip()
+            if stripped.startswith(("//", "*", "/*", "{/*")):
+                continue
+            if spanish.search(line):
+                out.append("%s:%d has Spanish typed into a component that renders "
+                           "every language, so it shows on the Japanese and German "
+                           "pages too. Put it in UIStrings in site/src/lib/i18n.ts "
+                           "and read it through ui(lang): %s"
+                           % (name, n, stripped[:70]))
+    return out
+
 def check_chrome_is_translated():
     """The navigation and footer must read from the string table, not be typed.
 
@@ -994,7 +1034,8 @@ def main():
                 + check_phenology() + check_register_licences()
                 + check_access_permission() + check_no_sender_names()
                 + check_collection_targets() + check_overlay_coverage()
-                + check_chrome_is_translated())
+                + check_chrome_is_translated()
+                + check_translated_components_are_neutral())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)

@@ -141,6 +141,6 @@ export const UI: Record<Lang, UiStrings> = {
 /** The strings for a page's language, falling back to English for anything we
  *  do not publish content in. A fallback is never a mixed nav: it returns the
  *  whole English set rather than filling gaps string by string. */
-export function ui(lang: string | undefined): UiStrings {
+export function chrome(lang: string | undefined): UiStrings {
   return UI[(lang ?? "en") as Lang] ?? UI.en;
 }
