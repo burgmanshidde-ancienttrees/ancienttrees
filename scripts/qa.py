@@ -814,9 +814,20 @@ def check_sheet_integrity():
 # what ships is what matters and a new template would have to be remembered.
 # Photo credits are deliberately not caught: "Photo: X (CC BY)" names a
 # photographer whose licence obliges the credit, which is a different thing.
+#
+# "con su nombre" is deliberately NOT on this list, though it once was. Spanish
+# "su" is both third-person ("his/her/their") and formal second-person
+# ("your"), and the site's own copy always addresses the reader informally
+# ("tu", see TranslatedTreePage.astro), so "su" in translated prose is
+# essentially always someone else's "his/her", not a promise to the reader.
+# It fired on Palma de Mallorca's Spanish story on 2026-09-02, a documented
+# 1989 civic gift ("le prometió a Batle una placa con su nombre", the city
+# promised Batle, the tree's donor, a plaque with HIS name) and failed the
+# deploy gate twice on a sentence that was never a privacy problem. The
+# original 2026-08-16 violation this check exists for used "con tu nombre"
+# specifically, which "su" was only ever a guessed formal-register variant of.
 NAME_PROMISES = (
     "con tu nombre",
-    "con su nombre",
     "with your name",
     "met je naam",
     "met jouw naam",
