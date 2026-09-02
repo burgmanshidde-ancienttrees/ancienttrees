@@ -1,0 +1,229 @@
+{
+ "city": "Hamburg",
+ "country": "Germany",
+ "status": "needs_curation",
+ "oldest_tree_id": "hbg_002",
+ "intro": "Two fires shaped this list. The fire of 1842 and the firestorm of July 1943 took whole districts, and the old trees that survive stand away from both, in the estate parks strung along the Elbe. The pick of them is an oak 8.30 metres round with a hollow you can look up through, and a second oak 500 metres away carrying a full-grown birch inside its open trunk. Closer in, a pagoda tree on the Alster promenade holds a world record for its species, and a plane in Planten un Blomen was planted on a recorded day in 1821.",
+ "meta_description": "Hamburg's oldest trees stand out along the Elbe: an oak 8.30 metres round with a hollow trunk, and another with a full-grown birch living inside it.",
+ "question_answer": "The oldest tree on this page is the Hollow Oak of Jenischpark, a pedunculate oak in the public park above the Elbe at Othmarschen, and its age is an estimate rather than a record. Nobody wrote down when it was planted. German arboriculture dates a tree like this from its trunk instead, and at 8.30 metres round it comes out at about 1600 give or take fifty years, so roughly 375 to 475 years old. That girth also makes it the thickest pedunculate oak in Hamburg: it was taped in April 2020 and two independent German tree registers agree on the figure to the centimetre. It stands about 100 metres east of the Jenischhaus, free to reach, with no gate at any hour. If you know of a dated study that narrows any of these ages, tell us.",
+ "question_meta": "The Hollow Oak of Jenischpark, 8.30 metres round and dated by girth to about 1600, is the oldest tree on this Hamburg page. Where to find it.",
+ "question_context": "Hamburg dates most of its notable trees by measuring them rather than by consulting records, which is why nearly every age here arrives as a band rather than a number. The citywide list of marked and old trees gives a planting year with a tolerance attached, 1600 plus or minus fifty for the Jenischpark oak and 1700 plus or minus twenty for its neighbour, and the independent register at baumkunde.de agrees with the girths behind those figures to the centimetre. That agreement is the strongest cross-check available on this page. One tree escapes the estimating altogether: the plane in Planten un Blomen was put in the ground on 6 November 1821 as the first tree of Hamburg's botanical garden, so its age is known exactly, about 205 years. The pagoda tree on the Alsterufer sits between the two conventions, with the city's environment authority giving it around 150 years in an announcement of April 2026. The two oldest trees on the page stand 500 metres apart in the same park, which makes the oldest of them an afternoon rather than an expedition.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Hamburg?",
+   "a": "The Hollow Oak of Jenischpark is the oldest on this list, dated from its 8.30 metre girth to around 1600, give or take fifty years. Hamburg dates its old trees by measuring them, so that is an estimate rather than a planting record."
+  },
+  {
+   "q": "Can I see several of these trees in one walk?",
+   "a": "Two of them, easily. The hollow oak and the birch-in-oak stand 500 metres apart in Jenischpark, about ten minutes on foot. The copper beech and the pagoda tree are a couple of minutes apart on the Alster promenade, across town. Hirschpark is a further 3 km west along the Elbchaussee."
+  },
+  {
+   "q": "Are Hamburg's remarkable trees free to visit?",
+   "a": "All six are. They stand in public parks, on an open lawn and on the Alster promenade, with no ticket and no gate."
+  },
+  {
+   "q": "What is a Nationalerbe-Baum?",
+   "a": "A German national heritage tree, chosen by the Deutsche Dendrologische Gesellschaft, of which there are only about a hundred in the whole country. Hamburg has two and both are on this page: the sycamore maple in Hirschpark, named in October 2020, and the pagoda tree on the Alsterufer, named in April 2026."
+  }
+ ],
+ "trees": [
+  {
+   "id": "hbg_002",
+   "name": "The Hollow Oak of Jenischpark",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 400 to 450 years",
+   "age_min": 375,
+   "age_max": 475,
+   "girth_cm": 830,
+   "location": {
+    "address": "Jenischpark, about 100 m east of the Jenischhaus, Baron-Voght-Straße, 22609 Hamburg-Othmarschen",
+    "latitude": 53.552889,
+    "longitude": 9.867611,
+    "neighbourhood": "Othmarschen"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+    "https://www.baumkunde.de/baumregister/1617-hohle_eiche_im_jenischpark/",
+    "https://www.monumentale-eichen.de/hamburg/othmarschen/"
+   ],
+   "access": "Free, public park (Jenischpark), open year-round, no gates.",
+   "transport": "S1/S11 Hamburg-Klein Flottbek or Bus 15x to Jenischpark; roughly 10-15 min walk to the tree",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "Hamburg's thickest oak has a hole in it big enough to stand in. The opening runs up one side of the trunk from just above the ground to more than four metres, and the tree simply carries on around it: 8.30 metres of girth when it was last taped in April 2020, agreed to the centimetre by two separate German tree registers, and wider than any other pedunculate oak in the city.\n\nNobody recorded the planting. German arboriculture dates a tree like this from its trunk instead, which puts it at about 1600 with fifty years of tolerance either way, so somewhere between 375 and 475 years old. Either end of that band leaves it standing here long before the ground around it became a park. Jenischpark was laid out as an English landscape garden above the Elbe in the early 1800s, and the oak was already a large tree when that work began.\n\nIt has had help staying upright. In 1972 the tree surgeon Michael Maurer restored the trunk and braced the opening with iron rods, which are still in place and visible from several metres away. The park is free, open and ungated, and the oak stands about 100 metres east of the Jenischhaus, the villa that gives the place its name.",
+   "how_to_recognise": "The trunk is open on one side, from just above the ground to over four metres up, with iron rods bracing the gap. It is the thickest oak in the park, about 100 metres east of the Jenischhaus."
+  },
+  {
+   "id": "hbg_003",
+   "name": "The Birch-in-Oak of Jenischpark",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 300 to 350 years",
+   "age_min": 300,
+   "age_max": 350,
+   "girth_cm": 674,
+   "location": {
+    "address": "Jenischpark, southeast corner near the Elbchaussee, 22609 Hamburg-Othmarschen",
+    "latitude": 53.548081,
+    "longitude": 9.871666,
+    "neighbourhood": "Othmarschen"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+    "https://www.baumkunde.de/baumregister/5444-birken_eichenpaar_im_jenischpark_in_hamburg/"
+   ],
+   "access": "Free, public park (Jenischpark), open year-round, no gates.",
+   "transport": "S1/S11 Hamburg-Klein Flottbek or Bus 15x to Jenischpark; short walk to the park's southeast corner near the Elbchaussee",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "A birch is growing inside this oak, and has been for decades. The oak's trunk is open along one side, a birch of roughly a hundred years took root in the gap, and neither has given way since; the two crowns have grown together overhead, so from underneath it reads as one canopy with two kinds of leaf in it.\n\nThe oak is the older half by two centuries, put at roughly 300 to 350 years by both sources that record it, and 6.74 metres round when it was measured in 2017. It leans badly enough to need a metal frame holding it up. That the two independent registers agree on the age and on the arrangement is worth noting, because a tree whose main feature is a curiosity rather than a measurement usually collects contradictions instead.\n\nIt stands in the southeast corner of Jenischpark, close to the Elbchaussee and about 500 metres from the hollow oak that is the thickest in the city. The park was laid out above the Elbe in the early 1800s as an English landscape garden, all sweeping lawns and arranged views. This is the arrangement nobody planned. Free, open, no gate, and the walk between the two oaks takes about ten minutes.",
+   "how_to_recognise": "The leaning oak in the park's southeast corner, held by a metal frame, with a birch trunk rising out of the open side of it."
+  },
+  {
+   "id": "hbg_004",
+   "name": "The Copper Beech of Alsterufer",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "roughly 135 to 175 years",
+   "age_min": 135,
+   "age_max": 175,
+   "girth_cm": 721,
+   "location": {
+    "address": "Rasenfläche Alsterufer / Klein Fontenay, 20144 Hamburg-Rotherbaum",
+    "latitude": 53.562983,
+    "longitude": 9.99723,
+    "neighbourhood": "Rotherbaum"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+    "https://www.baumkunde.de/baumregister/7498-maechtige_blutbuche_in_hamburg_rotherbaum/"
+   ],
+   "access": "Free, public lawn on the Alster promenade (Alsterufer), open at all times.",
+   "transport": "U1 Hallerstraße or bus to Rothenbaumchaussee; roughly 5-10 min walk along the Alsterufer",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "Ask how thick this beech is and you get three answers, all of them correct. Taped at waist height in November 2018 it came to 7.21 metres, a figure the citywide tree list and the independent register at baumkunde.de match to the centimetre. Measured again on 31 July 2025 it gave 7.32 metres across the buttresses at the base and 6.92 metres a metre higher up. The trunk is swollen, buttressed and covered in the raised tissue an old tree grows over its own wounds, so where you put the tape decides the number.\n\nNobody recorded when it was planted. The estimate from its girth is 1870 with twenty years either way, so roughly 135 to 175 years, which is a band rather than a date and is stated here as one.\n\nIt stands on the open lawn between the Alsterufer and Klein Fontenay, on the promenade along the Aussenalster, with grass and a footpath between it and the water. What the 2025 re-measurement really records is that somebody is still checking on it: this beech is monitored, healthy, and free to walk up to at any hour.",
+   "how_to_recognise": "The big beech standing alone on the lawn between Alsterufer and Klein Fontenay, its base swollen and buttressed where it meets the grass. Dark purple leaves in season."
+  },
+  {
+   "id": "hbg_005",
+   "name": "The Japanese Pagoda Tree of Alsterufer",
+   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+   "age_estimate": "roughly 150 years",
+   "age_min": 140,
+   "age_max": 160,
+   "girth_cm": 600,
+   "location": {
+    "address": "Alsterufer 27/28, 20354 Hamburg-Rotherbaum",
+    "latitude": 53.561759,
+    "longitude": 9.997411,
+    "neighbourhood": "Rotherbaum"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+    "https://www.baumkunde.de/baumregister/4410-japanischer_schnurbaum_an_der_alster_hamburg_rotherbaum/",
+    "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/aktuelles/pressemeldungen/nationalerbe-baum-japanischer-schnurbaum-an-der-aussenalster-wird-ausgezeichnet-1165572"
+   ],
+   "access": "Free, public ground on the Alster promenade (Alsterufer), open at all times.",
+   "transport": "U1 Hallerstraße; roughly 5-10 min walk along the Alsterufer promenade",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "There is no stronger Japanese pagoda tree known anywhere in the world than this one, according to the city that owns the ground it stands on. Hamburg's environment authority said so on 16 April 2026, naming it a Nationalerbe-Baum, a German national heritage tree, of which there are only about a hundred in the country. It is Hamburg's second, after the sycamore maple in Hirschpark.\n\nThe measurements track that claim. The registers recorded 5.50 metres of girth in 2016; the 2026 announcement puts the trunk at over six metres, which is a generous decade. Age is given as around 150 years, matching the citywide list's estimate of a planting around 1880. The authority's own wording describes exceptional vitality, and the work that came with the honour was practical rather than ceremonial: ivy stripped off the trunk, the crown cabled. It had been protected as a Naturdenkmal long before any of that.\n\nStyphnolobium japonicum is Chinese despite both of its names, and it does its one loud thing in late summer, hanging cream flowers over the Alster in August and September when almost nothing else is in flower. The tree stands free of anything else on the promenade, on open public ground.",
+   "how_to_recognise": "A single large tree standing clear of its neighbours on the Alsterufer promenade at numbers 27 to 28, with a cabled crown and no ivy on the trunk.",
+   "best_time": {
+    "months": [
+     8,
+     9
+    ],
+    "kind": "flowers",
+    "label": "August and September, when it hangs cream flowers over the water and almost nothing else is flowering"
+   }
+  },
+  {
+   "id": "hbg_006",
+   "name": "The Sycamore Maple of Hirschpark",
+   "species": "Sycamore (Acer pseudoplatanus)",
+   "age_estimate": "roughly 200 to 270 years",
+   "age_min": 200,
+   "age_max": 270,
+   "girth_cm": 550,
+   "height_m": 22,
+   "location": {
+    "address": "Hirschpark, south of the Lindenallee, 22609 Hamburg-Nienstedten",
+    "latitude": 53.557306,
+    "longitude": 9.827916,
+    "neighbourhood": "Nienstedten"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+    "https://www.baumkunde.de/baumregister/677-bergahorn_im_hamburger_hirschpark__nationalerbe_baum/"
+   ],
+   "access": "Free, public park (Hirschpark), open year-round, no gates.",
+   "transport": "S1/S11 Hamburg-Klein Flottbek or bus, then roughly 15-20 min walk; about 3 km west along the Elbchaussee from Jenischpark (hbg_002-004), a longer riverside walk rather than the same stroll",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "This maple was the sixth tree in Germany to be made a national heritage tree, and the first in Hamburg. The Deutsche Dendrologische Gesellschaft gave it that status on 23 October 2020, six years before the pagoda tree on the Alsterufer became the city's second.\n\nWhat earns it is the shape. The crown domes down almost to the ground on every side, roughly 35 metres across, so the tree finishes as a wall of leaf rather than tapering into open trunk the way a park specimen usually does. It is 22 metres tall with 5.50 metres of girth measured at the waist in 2020, which is large for a sycamore maple but not the point; two trees on this page are thicker, and none of them looks like this.\n\nIt stands in Hirschpark, a free public landscape park on the Elbe at Nienstedten, south of the Lindenallee. Jenischpark and its two old oaks are about 3 km east along the Elbchaussee, which makes a long riverside walk rather than a single afternoon's stroll. No planting record survives; the estimate from the trunk gives roughly 200 to 270 years.",
+   "how_to_recognise": "The one tree in the park whose crown sweeps down to ground level all the way round, standing south of the Lindenallee."
+  },
+  {
+   "id": "hbg_007",
+   "name": "The Lehmann Plane of Planten un Blomen",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "about 205 years",
+   "age_min": 205,
+   "age_max": 205,
+   "girth_cm": 615,
+   "height_m": 29,
+   "location": {
+    "address": "Alter Botanischer Garten, Planten un Blomen, near the exit to the CCH, 20355 Hamburg-St. Pauli",
+    "latitude": 53.56062,
+    "longitude": 9.98681,
+    "neighbourhood": "St. Pauli / Wallanlagen"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+    "https://www.baumkunde.de/baumregister/3064-platane_in_planten_und_blomen/"
+   ],
+   "access": "Free, public park (Planten un Blomen), open daily during park hours.",
+   "transport": "U-Bahn Stephansplatz or Messehallen; short walk within Planten un Blomen",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "Most old trees are dated by argument. This one has a date: 6 November 1821, when Professor Johann Georg Christian Lehmann put it in the ground as the first tree of Hamburg's new botanical garden, which he had founded and would direct. That makes it about 205 years old, and it is one of the few trees in this city whose age needs no tolerance attached to it.\n\nThe garden it was planted to open has since moved on and the ground around it has become Planten un Blomen, a public park in the old ramparts on the edge of the centre. The plane stayed put and kept growing: 29 metres tall and 6.15 metres round when it was measured on 1 November 2020, with a trunk that leans slightly out of true and throws its first branch off low and steeply, at about three metres.\n\nHamburgers call it the Lehmann-Platane. The botanical garden's own history describes it as its living founding document, which is unusually good phrasing for an institution writing about itself, and accurate: the paperwork of 1821 is filed somewhere, and the tree is standing where you can walk up to it for nothing.",
+   "how_to_recognise": "A tall plane with a slightly crooked trunk and one heavy branch angling off low, at about three metres, near the park exit toward the CCH congress centre."
+  }
+ ]
+}

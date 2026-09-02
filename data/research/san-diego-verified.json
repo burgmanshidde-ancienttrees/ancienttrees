@@ -74,5 +74,30 @@
     "location_precision": "approximate",
     "curation_status": "flagged",
     "verify_notes": "One of Kate Sessions' own plantings from her 1892 lease of park land at Sixth and Upas, in exchange for planting 100 trees a year (the same lease documented for sdg_002 and the cork oaks below). The Nat's own Sessions biography and San Diego Magazine (2020, 'What's the Oldest Tree in San Diego?') both independently name this species and location, describing it as 'enormously tall' and among the oldest confirmed Sessions plantings still standing, San Diego Magazine giving 'approximately 128 years old' as of 2020 (so roughly 134 by 2026; used a slightly broader band here to stay honest about the rough age). Guadalupe Island cypress is critically rare in the wild on its native Isla Guadalupe (threatened historically by feral goats), which makes a mainland specimen this size and age unusual. No girth or height measurement found in either source. Coordinates are my own estimate of the Sixth Avenue/Ivy Street area by the chess and horseshoe clubs (address 2225 6th Ave, confirmed by the chess club's own site) rather than a sourced tree-level position, hence approximate precision; a future pass should confirm the exact spot on the ground or via a mapped photo. sandiegoreader.com's 2017 'top ten trees of Balboa Park' piece likely covers this tree too but the host returned HTTP 403 (Cloudflare) on every fetch attempt (direct WebFetch, curl with browser UA, Wayback Machine copy, and a reader-proxy), so it could not be used; worth flagging for the blocklist."
+  },
+  {
+    "id": "sdg_004",
+    "name": "The Kauri by the Mingei Museum",
+    "species": "Kauri (Agathis australis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "height_m": null,
+    "location": {
+      "address": "Beside the Mingei International Museum (House of Charm), Plaza de Panama, Balboa Park, San Diego, CA",
+      "latitude": 32.731356,
+      "longitude": -117.151108,
+      "neighbourhood": "Balboa Park"
+    },
+    "verified_sources": [
+      "https://www.inaturalist.org/observations/342689280",
+      "https://www.sandiegoreader.com/news/2017/nov/22/cover-top-ten-trees-balboa-park/ (existence/species corroborated only via search result summary, page itself returned HTTP 403; treat with the caution below)"
+    ],
+    "access": "Free, in the open plaza outside the Mingei International Museum. No admission needed to see the tree itself; the museum charges for entry to its galleries.",
+    "transport": "Central Balboa Park, on the Plaza de Panama; served by MTS bus route 7 to the Prado, about a 10 minute walk.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Kauri (Agathis australis) is a New Zealand species almost never seen in Southern California cultivation, which is what makes a specimen here notable regardless of its exact size. Existence, species and approximate position confirmed directly via a geotagged, photographed iNaturalist observation (id 342689280, 2016-07-09, 'Balboa Park, San Diego, CA', coordinates 32.7313561, -117.1511082, single observation, no other Agathis australis records found near San Diego on iNaturalist), which sits right beside the Mingei/House of Charm building as the press reports describe. CAUTION on everything else: multiple outlets (San Diego Reader's 2017 'top ten trees of Balboa Park', a Pacific Horticulture piece on New Zealand plants) independently discuss what is almost certainly this same tree and call it possibly 'the most valuable plant in the park', but both hosts returned HTTP 403 on every fetch attempt (direct fetch, browser-UA curl, Wayback Machine, and a reader proxy), so their specific numbers (a height around 65 ft per one source, 52 ft measured in 1994 per another, a planting estimate of 'late 1930s or early 1940s') come only from search-result summaries, not from the page itself, and per this project's own rule on search-summary figures they are NOT recorded as facts here. A future session that can browse past Cloudflare should re-verify age, height and the 'Agnes' nickname mentioned in search results before a writer uses any of them. Age and height left empty rather than guessed. Both blocked hosts are worth adding to the fetch blocklist: sandiegoreader.com and pacifichorticulture.org."
   }
 ]

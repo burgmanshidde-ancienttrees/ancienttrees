@@ -1,0 +1,210 @@
+{
+ "city": "San Francisco",
+ "country": "United States",
+ "status": "needs_curation",
+ "oldest_tree_id": "sfo_001",
+ "intro": "San Francisco was a town of a few hundred people in 1848 and Golden Gate Park was bare dunes into the 1870s, so every tree here was put where it stands on purpose, and 150 years counts as old. Five of the six carry the city's own Landmark Tree designation, granted one tree at a time by ordinance: a cork oak at the top of a stairway street, an Australian fig outside a hospital, two flowering ash at a library door, palms in the middle of Dolores Street. The sixth is the tree the city lights every Christmas.",
+ "meta_description": "Every tree in San Francisco was planted on purpose. The city's Landmark Trees, plus the cypress it has lit as its Christmas tree since 1929.",
+ "question_answer": "Nobody has dated most of San Francisco's remarkable trees, so the honest answer is a planting era rather than an age. The oldest here is Uncle John's Tree, the Monterey cypress on the lawn outside McLaren Lodge at the eastern end of Golden Gate Park, which the park's historians put at planted around 1880, so roughly 135 to 155 years old. It is named for John McLaren, the park's long-serving superintendent, who died in 1943, and it has been lit as the city's Christmas tree since 1929. None of the other five trees on this page carries a documented planting date at all, and the city's Landmark Tree register does not record one. If you know a date, or have a photograph old enough to help, tell us.",
+ "question_meta": "Uncle John's Tree, a Monterey cypress planted around 1880 outside McLaren Lodge, is the oldest tree on this San Francisco page. Where to find it.",
+ "question_context": "San Francisco keeps a Landmark Tree register rather than an ancient-tree register, and the difference explains this page. Trees are designated one at a time under Article 16 of the Public Works Code, on grounds of size, rarity or the part they play in a street, and the list runs to roughly twenty-five trees citywide. Five of the six here come off it. What that register does not record is age, and neither does anything else within reach: not the 2005 Board of Supervisors resolution that landmarked the bay laurel outside the Customs House, not the city's own entry for the Dolores Street palms, not Mike Sullivan's Trees of San Francisco, which is the standard reference for this city. That leaves the dating to circumstance. The gold rush arrived in 1849, Golden Gate Park was sand dunes until the 1870s, and the Mission and Bernal Heights streets these trees stand on were laid out later still, so a tree of 150 years is an early one by local reckoning. If you can date any of the six, that is the gap this page would most like closed.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in San Francisco?",
+   "a": "Uncle John's Tree, the Monterey cypress outside McLaren Lodge in Golden Gate Park, planted around 1880 according to the park's historians. None of the other trees on this page carries a documented planting date."
+  },
+  {
+   "q": "What is a San Francisco Landmark Tree?",
+   "a": "A tree given individual protection by the city under Article 16 of the Public Works Code, designated one at a time and numbered. There are roughly twenty-five citywide, and five of them are on this page."
+  },
+  {
+   "q": "Are these trees free to visit?",
+   "a": "All six stand on public ground: a park lawn, two sidewalks, a street median, a library entrance and a public stairway garden. No tickets and no gates."
+  },
+  {
+   "q": "Can I see them all in one walk?",
+   "a": "Four of them, at a stretch. The cork oak, the Dolores Street palms, the Moreton Bay fig and the flowering ash at the Bernal Heights library form a chain of about three kilometres downhill across Dolores Heights, the Mission and Bernal Heights. Golden Gate Park and the Financial District are separate trips."
+  }
+ ],
+ "trees": [
+  {
+   "id": "sfo_001",
+   "name": "Uncle John's Tree",
+   "species": "Monterey Cypress (Cupressus macrocarpa)",
+   "age_estimate": "roughly 145 years",
+   "age_min": 135,
+   "age_max": 155,
+   "girth_cm": null,
+   "location": {
+    "address": "McLaren Lodge, 501 Stanyan Street, Golden Gate Park",
+    "latitude": 37.7717,
+    "longitude": -122.4547,
+    "neighbourhood": "Golden Gate Park (Panhandle / east end)"
+   },
+   "verified_sources": [
+    "https://goldengatepark.substack.com/p/two-christmas-trees (Susan Freinkel, fetched directly: 'Uncle John's Tree... Monterey cypress... Outside McLaren Lodge... planted around 1880; described as one of the oldest in the park')",
+    "https://richmondsunsetnews.com/2021/12/02/press-release-tree-lighting-ceremony-in-golden-gate-park-dec-2-2021/ (republished San Francisco Recreation and Park Department press release, fetched directly: 'Known as Uncle John's Tree in honor of Golden Gate Park's designer and first park superintendent John McLaren, the giant cypress was first illuminated with 800 bulbs on McLaren's 84th birthday'; caption confirms location 'at McLaren Lodge in Golden Gate Park')",
+    "https://en.wikipedia.org/wiki/McLaren_Lodge (coordinates for McLaren Lodge building, fetched directly)"
+   ],
+   "access": "Free, always open. Stands on the public lawn immediately outside McLaren Lodge, the SF Recreation and Parks headquarters building at the east end of Golden Gate Park.",
+   "transport": "MUNI bus lines on Fell/Oak or the N-Judah/5-Fulton corridor stop within a few minutes' walk; the tree stands right at the Panhandle entrance to the park.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "story": "San Francisco's Christmas tree has roots. The Monterey cypress on the lawn outside McLaren Lodge was first strung with 800 bulbs in 1929, on the birthday of John McLaren, the park superintendent the lodge is named for, and it has been lit almost every December since. McLaren asked on his deathbed that the lighting go on. He died in 1943, and it has.\n\nThe tree took his name too. Park historians put its planting at around 1880, which makes it roughly 135 to 155 years old and one of the oldest things growing in a park that was bare sand dunes when the city started work on it in the 1870s. Monterey cypress grows wild on a couple of headlands of the California coast and nowhere else on earth, which means a large one in a city park is a planted tree by definition rather than a survivor of anything.\n\nNo girth or height has been published for it, and no register carries a coordinate for the trunk, so the pin here marks McLaren Lodge, the parks department's own headquarters building at the Stanyan Street corner of the park. Walk to the front entrance and the cypress is the big one on the lawn.",
+   "how_to_recognise": "The large cypress on the open lawn directly in front of the McLaren Lodge entrance, at the Stanyan Street end of the park. In December it is the one carrying the lights."
+  },
+  {
+   "id": "sfo_002",
+   "name": "The Landmark Palms of Dolores Street",
+   "species": "Canary Island Date Palm (Phoenix canariensis)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Dolores Street median at 730 Dolores Street (between 19th and Liberty Streets)",
+    "latitude": 37.7577,
+    "longitude": -122.426,
+    "neighbourhood": "Dolores Heights / Mission"
+   },
+   "verified_sources": [
+    "https://www.sfenvironment.org/landmark-tree-program (San Francisco Department of the Environment, official Landmark Tree list, fetched directly: lists 'Canary Island date palms (Phoenix canariensis), 730 Dolores Street median' and 'Cliff date palms (Phoenix rupicola), 730 Dolores Street median' as two of the city's officially designated Landmark Trees under Article 16 of the Public Works Code)",
+    "https://sfstandard.com/2023/01/18/could-sfs-iconic-palm-trees-disappear/ (The San Francisco Standard, fetched directly: 'Those beautiful palms lining Dolores Street? They are Canary Island date palms, beloved enough for the city to officially designate them as trees with landmark status.')"
+   ],
+   "access": "Free, always visible from the sidewalk on either side of Dolores Street; the trees stand in the raised median that runs down the centre of the street, so they are seen rather than walked among.",
+   "transport": "J-Church Muni Metro runs the length of Dolores Street; the 33 and 24 bus lines cross it nearby. Street parking and a wide sidewalk on both sides.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "sfo_003",
+   "name": "The Flowering Ash of Bernal Heights Library",
+   "species": "Flowering Ash (Fraxinus ornus)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "500 Cortland Avenue (Bernal Heights Branch Library)",
+    "latitude": 37.7389,
+    "longitude": -122.4161,
+    "neighbourhood": "Bernal Heights"
+   },
+   "verified_sources": [
+    "https://www.sfenvironment.org/landmark-tree-program (San Francisco Department of the Environment, official Landmark Tree list, fetched directly: 'Flowering ash (Fraxinus ornus), 500 Cortland Street (Bernal Heights Library)')",
+    "http://www.sftrees.com/blog/2023/1/30/bernal-heights-south-tree-tour (Mike Sullivan, author of 'The Trees of San Francisco', fetched directly: '1. 500 Cortland ... Flowering ash trees (Fraxinus ornus), Spain to Austria, Lebanon, & Armenia (2 trees flanking the main entry to the library; official SF city landmark trees)')"
+   ],
+   "access": "Free, always visible; the pair stands right at the main entrance of the Bernal Heights Branch Library, a public building open during library hours, on the public sidewalk edge regardless.",
+   "transport": "On Cortland Avenue, Bernal Heights' main commercial street; the 24-Divisadero and 67-Bernal Heights Muni bus lines run along or near Cortland.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "sfo_004",
+   "name": "The Cork Oak of 20th Street",
+   "species": "Cork Oak (Quercus suber)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Public right-of-way stairway garden on 20th Street at Noe Street (top of the Cork Oak Tree Community Garden)",
+    "latitude": 37.758,
+    "longitude": -122.4327,
+    "neighbourhood": "Dolores Heights / Eureka Valley"
+   },
+   "verified_sources": [
+    "https://www.sfenvironment.org/landmark-tree-program (San Francisco Department of the Environment, official Landmark Tree list, fetched directly: 'Cork Oak (Quercus suber), Public right-of-way on 20th Street at Noe Street')",
+    "https://doloresheights.org/2025/10/13/cork-oak-tree-garden-at-20th-noe-streets/ (Dolores Heights Improvement Club, neighbourhood association, fetched directly: 'The hillside garden at 20th and Noe Streets is renamed the \"Cork Oak Tree Community Garden\" in recognition and celebration of its official San Francisco Landmark Tree No. 15 (Quercus suber), at the top of the garden.')"
+   ],
+   "access": "Free, always open. Stands at the top of a public hillside stairway garden in the street's own public right-of-way, tended by the neighbourhood association with city (SFDPW) support; not on private land at any point.",
+   "transport": "In the Castro/Noe Valley/Dolores Heights hillside; the 24-Divisadero and 33-Ashbury/18th bus lines pass nearby, and it is a walkable hill climb from either Church Street or Castro Street Muni stops.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "sfo_005",
+   "name": "The Moreton Bay Fig of St. Luke's",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Valencia Street, south of Cesar Chavez Street, west side, near CPMC Mission Bernal (formerly St. Luke's Hospital), 3555 Cesar Chavez Street",
+    "latitude": 37.7478,
+    "longitude": -122.4206,
+    "neighbourhood": "Bernal Heights / Mission"
+   },
+   "verified_sources": [
+    "https://www.sfenvironment.org/landmark-tree-program (San Francisco Department of the Environment, official Landmark Tree list, fetched directly: 'Moreton Bay fig (Ficus macrophylla), 3555 Cesar Chavez Street')",
+    "http://www.sftrees.com/landmark-trees (Mike Sullivan, author of 'The Trees of San Francisco', fetched directly: 'Ficus macrophylla (Moreton Bay Fig): Valencia Street south of Cesar Chavez, west side of street near St. Luke's Hospital (very large specimen)')",
+    "https://burritojustice.com/2009/07/31/know-your-trees/ (fetched directly, corroborating: 'the huge Moreton Bay fig in front of St. Luke's on Valencia', described as protected/landmarked, with a photo of 'our Valencia Street moreton bay fig in all its glory')"
+   ],
+   "access": "Free, always visible from the public sidewalk on Valencia Street; stands on hospital grounds fronting the street rather than inside a fenced garden.",
+   "transport": "On Valencia Street at Cesar Chavez, in the Mission/Bernal Heights border; the 14, 49 and 67 Muni bus lines all pass within a couple of blocks.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "sfo_006",
+   "name": "The Sweet Bay at the Customs House",
+   "species": "Bay Laurel (Laurus nobilis)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "555 Battery Street, northwest corner of Battery and Jackson Streets (United States Customs House)",
+    "latitude": 37.7963,
+    "longitude": -122.4009,
+    "neighbourhood": "Financial District / Jackson Square"
+   },
+   "verified_sources": [
+    "https://www.sfenvironment.org/landmark-tree-program (San Francisco Department of the Environment, official Landmark Tree list, fetched directly: 'Sweet bay (Laurus nobilis), 555 Battery Street')",
+    "http://www.sftrees.com/landmark-trees (Mike Sullivan, author of 'The Trees of San Francisco', fetched directly: 'Laurus nobilis (sweet bay, Grecian laurel): 555 Battery/Jackson (NW corner Washington/Battery) in the Financial District')",
+    "https://sfbos.org/ftp/uploadedfiles/bdsupvrs/resolutions05/r0670-05.pdf (San Francisco Board of Supervisors Resolution No. 670-05, the formal 2005 landmark designation; found via search and the PDF was fetched but its text is encoded with a non-standard font mapping that could not be extracted cleanly with the tools available this pass, so it is listed as evidence of the resolution's existence but not quoted from)"
+   ],
+   "access": "Free, always visible. Stands on the public sidewalk at the corner of the United States Customs House, a federal government building; the tree itself is on the public right-of-way.",
+   "transport": "Financial District / Jackson Square, a short walk from the Embarcadero BART/Muni station and several Financial District bus lines.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}

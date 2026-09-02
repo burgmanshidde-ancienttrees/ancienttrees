@@ -7,13 +7,44 @@
     "age_min": 400,
     "age_max": 1000,
     "girth_cm": 550,
-    "location": {"address": "Calderstones Park, Calderstones Road, Liverpool L18 3JB", "latitude": 53.3825, "longitude": -2.892778, "neighbourhood": "Calderstones Park, Allerton"},
-    "verified_sources": ["https://en.wikipedia.org/wiki/Allerton_Oak", "https://historic-liverpool.co.uk/allerton-oak-ancient-and-award-winning-tree/"],
+    "location": {
+      "address": "Calderstones Park, Calderstones Road, Liverpool L18 3JB",
+      "latitude": 53.3825,
+      "longitude": -2.892778,
+      "neighbourhood": "Calderstones Park, Allerton"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Allerton_Oak",
+      "https://historic-liverpool.co.uk/allerton-oak-ancient-and-award-winning-tree/"
+    ],
     "access": "Free, public park, open daily during park hours. The tree stands behind a protective double fence and cannot be approached to touch, but is fully visible.",
     "transport": "Mossley Hill or West Allerton rail station, about a 15-20 minute walk; bus routes 61A, 75, 76, 86C stop near the park entrance on Menlove Avenue.",
     "location_precision": "confirmed",
     "curation_status": "flagged",
-    "verify_notes": "Girth 5.5m (18ft), independently reported by Historic Liverpool and Wikipedia (citing BBC/Woodland Trust Tree of the Year coverage). The '~1,000 years old' figure (seeded c.1000 AD) is repeated across every source found but is a traditional/popular figure, not a ring count or documented planting date; treat as legend-derived, hence the wide age band. It is commonly called the oldest oak in North West England. Reputed to have been the meeting place of a medieval 'hundred court' under its branches, though Historic Liverpool notes some historians think the nearby Calderstones (a neolithic burial monument) is the more likely court site; state as disputed legend, not fact. Split down the middle and largely hollow; local story attributes this to the shockwave of the Lottie Sleigh gunpowder ship explosion on the Mersey, 15 Feb 1864 (11 tonnes of gunpowder, felt across Liverpool), but Historic Liverpool explicitly says 'no one can really say' the explosion caused the split. Metal crutches have propped its heavy limbs since 1907; an ~GBP80,000 project (underway as of 2019) is replacing them with modern adjustable supports. Produces roughly 100,000 acorns a year and was reported thriving as of 2014, despite a 1970s Liverpool Echo prediction it would be dead by 2020. Won England's Tree of the Year in 2014 and again in 2019 (34% of ~11,000 votes), then represented England in the 2020 European Tree of the Year. A sapling grown from its acorns, 'Allerton Oak the Younger', is being raised elsewhere in the park.",
+    "verify_notes": "Girth 5.5m (18ft), independently reported by Historic Liverpool and Wikipedia (citing BBC/Woodland Trust Tree of the Year coverage). The '~1,000 years old' figure (seeded c.1000 AD) is repeated across every source found but is a traditional/popular figure, not a ring count or documented planting date; treat as legend-derived, hence the wide age band. It is commonly called the oldest oak in North West England. Reputed to have been the meeting place of a medieval 'hundred court' under its branches, though Historic Liverpool notes some historians think the nearby Calderstones (a neolithic burial monument) is the more likely court site; state as disputed legend, not fact. Split down the middle and largely hollow; local story attributes this to the shockwave of the Lottie Sleigh gunpowder ship explosion on the Mersey, 15 Feb 1864 (11 tonnes of gunpowder, felt across Liverpool), but Historic Liverpool explicitly says 'no one can really say' the explosion caused the split. Metal crutches have propped its heavy limbs since 1907; an ~GBP80,000 project (underway as of 2019) is replacing them with modern adjustable supports. Produces roughly 100,000 acorns a year and was reported thriving as of 2014, despite a 1970s Liverpool Echo prediction it would be dead by 2020. Won England's Tree of the Year in 2014 and again in 2019 (34% of ~11,000 votes), then represented England in the 2020 European Tree of the Year. A sapling grown from its acorns, 'Allerton Oak the Younger', is being raised elsewhere in the park. Also known locally as 'The Law Oak'. During WWII, acorns and leaves from the tree were reportedly sent to Liverpool servicemen for good luck (Liverpool Echo, via search summary; not independently fetched, treat as a nice-to-have anecdote rather than a hard fact).",
     "girth_note": "5.5m girth confirmed by two sources; do not use as the sole basis to sharpen the age claim, since no published growth-rate calculation for this specimen was found."
+  },
+  {
+    "id": "lvp_002",
+    "name": "The Calderstones Sweet Chestnut",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "roughly 280 years (derived from girth)",
+    "age_min": 230,
+    "age_max": 330,
+    "girth_cm": 683,
+    "location": {
+      "address": "Calderstones Park, Calderstones Road, Liverpool L18 3JB",
+      "latitude": 53.3822,
+      "longitude": -2.8967,
+      "neighbourhood": "Calderstones Park, Allerton"
+    },
+    "verified_sources": [
+      "https://www.livbotsoc.org/blog/calrderstones-park"
+    ],
+    "access": "Free, public park, open daily during park hours.",
+    "transport": "Mossley Hill or West Allerton rail station, about a 15-20 minute walk; bus routes 61A, 75, 76, 86C stop near the park entrance on Menlove Avenue.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Single source only: a Liverpool Botanical Society field-trip report (walk led by Maria Knowles, 31 October 2015, group of 15), which is a credible organised survey but not a register or a second independent publication; flagged for that reason, and a second source should be sought before this ships with full confidence. Girth measured at 683cm (over 22 feet), described as 'a huge tree with characteristic spiralled bark and lots of fruit.' The society derived its age from girth using a stated growth-rate assumption for a tree in good condition with a full crown of 2.5cm/year (683/2.5 = 273 years, as of Oct 2015; add roughly 11 years to bring to 2026, hence the estimate here of roughly 280-290 years). This is a girth-derived estimate per a stated method, not a ring count or documented planting date, so the age band here is kept broad. Location within the park is not pinned in the source beyond 'Calderstones Park' (the same walk also examined Sequoiadendron giganteum planted 1964 at 487cm girth nearby, and dozens of other exotic specimens), so location_precision is approximate pending a more exact fix. Stands in the same park as the Allerton Oak (lvp_001), so the two form a single walkable stop rather than two separate visits. 683cm is a genuinely large girth for the species in the UK (national UK champion sweet chestnuts run roughly 900-1400cm), so this is a notable but not record specimen."
   }
 ]

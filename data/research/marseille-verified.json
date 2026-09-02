@@ -1,0 +1,27 @@
+[
+  {
+    "id": "mrs_001",
+    "name": "The Bald Cypress of Parc Borely",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Parc Borely, near the lake, Avenue du Prado / Avenue Clot-Bey, 13008 Marseille",
+      "latitude": 43.260329,
+      "longitude": 5.3835936,
+      "neighbourhood": "Bonneveine, 8th arrondissement"
+    },
+    "verified_sources": [
+      "https://www.provence7.com/portails/nature/forets-de-provence/arbres-remarquables-en-provence/",
+      "https://www.graines-et-plantes.com/index.php?visite=jardins&visiter=Le-Parc-Borely-de-Marseille",
+      "OSM natural=tree node 2365945745, species=Taxodium distichum, at 43.260329,5.3835936 (reverse-geocodes to Avenue Clot-Bey / Grand Saint-Giniez, immediately beside Parc Borely, matching the Direction des Parcs et Jardins own address of 48 avenue Clot-Bey)"
+    ],
+    "access": "Free, public park, open daily (typically 6:30am-8:30/9:30pm depending on season)",
+    "transport": "Tram T3 or Bus, Rond-Point du Prado stop, then short walk; Parc Borely metro is not direct, nearest is Castellane then tram",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Bald cypress (Taxodium distichum, cypres chauve or cypres de Louisiane) growing beside the lake in Parc Borely, Marseille 8e. Distinctive aerial roots (pneumatophores) rise from the ground around the trunk, a Louisiana swamp adaptation for waterlogged soil, and are the tree's main visual draw. Two independent OSM tree nodes tag Taxodium distichum right beside the lake at 43.2603/5.3836 and 43.2600/5.3828, both reverse-geocoding to ground immediately adjacent to Parc Borely (Avenue Clot-Bey, Grand Saint-Giniez/Bonneveine), matching the park's own administrative address. Species introduced to France mid-18th century; provence7.com states this specimen was labelled Arbre remarquable by the A.R.B.R.E.S. association in 2009, but that is a SINGLE source for the label claim and could not be independently confirmed (arbres.org label-validation lists checked only cover 2024 batches; no dedicated arbres.org fiche for this tree was found). FLAGGED for that reason: species and existence are corroborated by multiple independent sources, but the 2009 label date rests on one source only. No age or girth is documented anywhere found; do not use the species' native-range lifespan potential (600-1200 years, quoted by provence7.com) as an age estimate for this individual specimen, that figure describes what the species CAN reach in its native swamp habitat, not this tree's actual age, and repeating it would be a bridge claim. Ask the reader for a trunk girth if anyone has one."
+  }
+]
