@@ -1,5 +1,62 @@
 # Decisions
 
+## 2026-09-02 - Walks leave the website, nothing lives on the device, and the profile is the app's profile
+
+Four rulings in one morning, and three of them turned out to have one cause.
+
+**Every walk control on the website opens the app overlay, and the walks page
+is retired.** Hidde: "eigenlijk hebben we besloten dat walks in de app komen en
+in de app plus worden. Dus ik denk dat het beter is dat we voor nu, altijd als
+iemand op een walk klikt, we ze naar de app versturen." And on the page that
+showed them: "er moet dus niet een dieper liggende pagina zijn waar je die
+walks kan lezen." Contract K, live from 2026-08-24, is retired at blueprint
+v1.16; every `/[city]/walks` URL still resolves and lands on the city page.
+
+The change is also the measurement, which is why he chose it over waiting:
+"dan kunnen we zien hoe vaak het wordt geklikt en gaan we dan maar snel die
+walks in de app maken." `walks-app` now counts every walk intention on the site
+instead of the fraction that fell on cities with no walks page. What did not
+loosen: `hasWalksPage()` still gates whether a page may say "walk" at all, so
+we never advertise a route the app does not have.
+
+**Nothing is stored on the device any more.** "Ik wil dat je ervoor zorgt dat
+er niets meer lokaal wordt opgeslagen. Alles wat wordt opgeslagen, moet op je
+account zijn. Dus zodra je iets liket of wat dan ook, moet dat achter een
+account staan." This finishes the 2026-08-30 gate rather than replacing it:
+saving already needed an account, and a localStorage cache sat behind the gate
+anyway, merged into the account as a union on every sign-in. That is what
+filled his own account with trees he had never kept, and a union cannot tell a
+deliberate save from a leftover.
+
+Gone with it: the check-in log (`ancienttrees_seen`), the saved cache
+(`at_saved_v1`), the worth-it vote memory, the recent-search list, and the
+`#trees=` transfer link, which let an unauthenticated url write into somebody's
+collection. The browser holds the session token, the privacy opt-out and an
+unsent contribute draft, and that is the whole list; `check_nothing_is_stored_locally()`
+in scripts/qa.py refuses anything else.
+
+**A saved tree looks like a tree.** Two of his other complaints, and the same
+root: "ik weet zeker dat hier bomen tussen staan die wel een foto hebben die we
+nu niet tonen" and "we hebben volgens mij een soort van boomcomponenten
+gemaakt ... die ik helemaal niet zie terugkomen op saved trees." The list drew
+each card from the snapshot taken when the heart was tapped, in hand-written
+markup beside TreeCard.astro. Now the account holds WHICH trees and
+`/api/cards.json` holds WHAT THEY ARE, composed by the same helpers the rest of
+the site uses. This is the answer-versus-rule split of 2026-08-25 applied to
+our own client-side code rather than to the app.
+
+**The profile page is the app's profile, with Polarsteps beside it.** "Laten we
+deze opzet aanhouden voor je profielpagina - daar alle functionaliteiten
+inbouwen die we ook in de app hebben gebouwd en dan settings een knop dieper",
+and then, having put the two side by side: "kun je het helemaal gelijk trekken
+met polarsteps - dat je dus ook een persoonlijke kaart naast je account krijgt
+met jouw bomen." So /account moved onto the same `.split` skeleton the city page
+and /explore share: your own map on one side, and on the other your name, the
+three counts Collect.swift computes, one action, and the two lanes. Settings
+live at /account/settings behind the gear. The map's pins cannot be baked at
+build time, so it starts empty and the account fills it; collected trees are
+filled in and favourites hollow, the same language the heart uses.
+
 ## 2026-09-02 - A photograph somebody sends us is publishable, and every change ships in seven languages
 
 Two rulings in one conversation, both marked "onthou dit".
