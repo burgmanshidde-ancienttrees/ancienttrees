@@ -1,0 +1,98 @@
+[
+ {
+  "id": "brg_001",
+  "name": "The Peace Limes of Gentpoort",
+  "species": "Silver Lime (Tilia tomentosa)",
+  "age_estimate": "about 98 years (planted 1928)",
+  "age_min": 95,
+  "age_max": 100,
+  "girth_cm": 328,
+  "height_m": 35,
+  "location": {
+   "address": "Gentpoortvest, Brugge",
+   "latitude": 51.202521,
+   "longitude": 3.23383,
+   "neighbourhood": "the city ramparts (de Vesten), at the Gentpoort gate"
+  },
+  "verified_sources": [
+   "https://id.erfgoed.net/erfgoedobjecten/305834"
+  ],
+  "access": "Free, on the public walking path along Bruges' historic city ramparts (de Vesten), open at all times",
+  "transport": "About 15-20 minutes on foot from Brugge railway station, along the ramparts path",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Three silver limes (Tilia tomentosa) planted in 1928 at the Gentpoort, part of the landscaped city ramparts, ten years after WWI's end, as 'vredesbomen' (peace trees) commemorating Bruges' liberation. Register (Flanders' Onroerend Erfgoed, inventoried 2018) gives the thickest of the three a girth of 328cm and total height 35m, measured on the same basis as the register's other entries (omtrek op 1.5m). Ensemble judged as one collectible entry: three trees planted together at one spot for one commemorative reason, one obvious place to stand. FLAGGED: single-sourced, the Flanders heritage inventory is the only source found in the time available; no second independent source (press, city history page) located. Location precision confirmed via the register's own tree-level Lambert72 polygon geometry, converted to WGS84. Source URL is the id.erfgoed.net object id; the fuller record with photo lives at inventaris.onroerenderfgoed.be/erfgoedobjecten/305834. Text and data licensed CC BY-SA 4.0 equivalent, attribution: agentschap Onroerend Erfgoed. No inventory photograph used (image rights not established)."
+ },
+ {
+  "id": "brg_002",
+  "name": "The Black Poplar of the Ramparts",
+  "species": "Black Poplar (Populus nigra)",
+  "age_estimate": "about 173 years (planted 1853)",
+  "age_min": 170,
+  "age_max": 175,
+  "girth_cm": 464,
+  "height_m": 22,
+  "location": {
+   "address": "Gentpoortvest, near Katelijnestraat, Brugge",
+   "latitude": 51.19989,
+   "longitude": 3.229788,
+   "neighbourhood": "the city ramparts (de Vesten), near Katelijnepoort/Gentpoort"
+  },
+  "verified_sources": [
+   "https://id.erfgoed.net/erfgoedobjecten/131537"
+  ],
+  "access": "Free, on the public walking path along Bruges' historic city ramparts (de Vesten), open at all times",
+  "transport": "About 10-15 minutes on foot from Brugge railway station",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Planted 1853 during the landscaping of Bruges' city ramparts (stadsomwalling). Register (Flanders' Onroerend Erfgoed, inventoried 2017, measured 2009) gives a stem girth of 464cm at 1.5m, total height 22m, crown diameter 13m. Notable for its species: true wild black poplar (Populus nigra, not a cultivar/hybrid) has effectively vanished from the natural landscape in Flanders; surviving specimens are almost always old pollards found in hedgerows near ponds, streams and farmland, not in landscaped parks, which the register calls this planting unusual for. 400m from brg_001 (the Gentpoort peace limes) on the same ramparts path, so the two form one short walk. FLAGGED: single-sourced, only the Flanders heritage inventory found in the time available. Location precision confirmed via the register's tree-level Lambert72 polygon geometry, converted to WGS84. Licensed CC BY-SA 4.0 equivalent, attribution: agentschap Onroerend Erfgoed. No inventory photograph used (image rights not established)."
+ },
+ {
+  "id": "brg_003",
+  "name": "Den Olifant",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "roughly 250 years or more",
+  "age_min": 250,
+  "age_max": 350,
+  "girth_cm": 273,
+  "height_m": 10,
+  "location": {
+   "address": "Paalbos, Assebroek, Brugge",
+   "latitude": 51.200282,
+   "longitude": 3.270725,
+   "neighbourhood": "Assebroek"
+  },
+  "verified_sources": [
+   "https://id.erfgoed.net/erfgoedobjecten/302182"
+  ],
+  "access": "Free, in the public Paalbos woodland; part of West Flanders' waymarked walking-node network (wandelknooppunten), confirmed by independent hiking-route sites (Wandelknooppunt.be, Komoot, RouteYou) that route walks through it. The tree itself is a legally protected monument (beschermd monument, designated 2016).",
+  "transport": "About 3.5km southeast of Bruges centre, in Assebroek; roughly 45 minutes on foot, faster by bus or bike",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "A pollarded pedunculate oak standing at the corner of four cadastral parcels in the Paalbos, most likely tracing an old parish boundary (some of which was also marked with boundary stones nearby) -- a genuine boundary tree ('grensboom'). Register (Onroerend Erfgoed, inventoried 2015) states the tree's age is 'not excluded' to be 250 years or older, based on comparing its girth to other specimens in the Paalbos -- this is the source's own vague estimate, repeated as given rather than sharpened; age_min/age_max set as a broad band accordingly. Measured 2015-04-22: stem girth 273cm at 1.5m, total height 10.0m (low for the age because it is pollarded), crown diameter 6.0m. After pollard-cutting stopped, one large limb that was never cut back to the pollard knuckle grew out at a strong horizontal angle, giving the tree its local name 'Den Olifant' (The Elephant) -- presumably for the limb's tusk- or trunk-like look. Legally protected as a 'beschermd monument' since 2016 (two designation dates recorded: 11-04-2016 and 02-12-2016), which is a stronger, separate legal act beyond the general heritage inventory listing. FLAGGED: the Onroerend Erfgoed inventory record is the only source with the tree's own facts; independent hiking-route sites corroborate that Paalbos is public and walked, but not the tree's age or measurements specifically. Location precision confirmed via the register's tree-level Lambert72 polygon geometry, converted to WGS84. Licensed CC BY-SA 4.0 equivalent, attribution: agentschap Onroerend Erfgoed. No inventory photograph used (image rights not established)."
+ },
+ {
+  "id": "brg_004",
+  "name": "The Canada Tree",
+  "species": "Silver Maple (Acer saccharinum)",
+  "age_estimate": "about 79 years (planted 1947)",
+  "age_min": 75,
+  "age_max": 80,
+  "girth_cm": 244,
+  "height_m": 20,
+  "location": {
+   "address": "Canadaplein, Brugge",
+   "latitude": 51.203655,
+   "longitude": 3.209456,
+   "neighbourhood": "Sint-Andries, just west of the historic centre"
+  },
+  "verified_sources": [
+   "https://id.erfgoed.net/erfgoedobjecten/305832"
+  ],
+  "access": "Free, on a public square",
+  "transport": "About 10-15 minutes on foot from Brugge railway station",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Planted in 1947 on Canadaplein together with a war memorial (designed by Gustaaf Pickery) commemorating Bruges' liberation by Canadian forces; the maple was chosen as a symbol of Canada because a maple leaf appears on the Canadian flag. Register (Onroerend Erfgoed, inventoried 2017-2018) records stem girth 244cm at 1.5m, total height 20m, trunk damage noted at 70cm. Species discrepancy worth flagging for the writer: the register's own descriptive text calls it a 'suikeresdoorn', the Dutch common name that normally means Sugar Maple (Acer saccharum), but the register's own species field lists Acer saccharinum, which is Silver Maple, a different species. Recorded here as Silver Maple per the register's scientific-name field (also the convention already used on this site for Acer saccharinum), but the text's own Canada-flag reasoning technically calls for Acer saccharum -- the writer should treat this as an open discrepancy in the register rather than resolve it silently. FLAGGED for that reason and because the inventory is the only source found in the time available. Location precision confirmed via the register's tree-level Lambert72 polygon geometry, converted to WGS84. Licensed CC BY-SA 4.0 equivalent, attribution: agentschap Onroerend Erfgoed. No inventory photograph used (image rights not established)."
+ }
+]

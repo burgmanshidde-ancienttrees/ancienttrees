@@ -1,0 +1,50 @@
+[
+ {
+  "id": "ypr_001",
+  "name": "The Liberty Tree of Voormezele",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "roughly 105 years",
+  "age_min": 100,
+  "age_max": 110,
+  "girth_cm": null,
+  "location": {
+   "address": "Sint-Elooisweg, next to Onze-Lieve-Vrouwkerk, Voormezele, Ieper",
+   "latitude": 50.816962,
+   "longitude": 2.876011,
+   "neighbourhood": "Voormezele (Ieper)"
+  },
+  "verified_sources": [
+   "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/305358",
+   "http://www.wo1.be/nl/db-items/gedenkplaat-voor-de-vrijheidsboom-te-voormezele"
+  ],
+  "access": "Free. Stands in the churchyard beside Onze-Lieve-Vrouwkerk in Voormezele, a village within Ieper municipality, open ground.",
+  "transport": "Voormezele village, roughly 4 km / a 10-minute drive south-west of Ieper centre; De Lijn bus service runs along the N375 nearby.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "A lime (linde) planted beside Voormezele's church as a 'vrijheidsboom' (Liberty Tree), one of several First World War relics clustered around this churchyard (a British war grave, civilian/military memorial stones, a Japanese peace pole nearby). A rectangular white marble plaque at its foot reads 'Vryheidsboom 1918-1968', placed in 1968, 50 years after the Armistice; the '1918' names the tree's origin year but no source states an exact planting date beyond that inscription, so treat the 105-year estimate as implied by the plaque rather than independently dated. Two independent sources agree on the tree, its species (lime) and its location: the Flemish heritage inventory (Onroerend Erfgoed, object 305358, citing Jacobs M. 1996 'Zij, die vielen als helden') and the WWI heritage database wo1.be, which gives its own GPS reference (50.816962N, 2.876011E) matching the register's polygon closely. Flagged because no source gives an exact planting date, a girth, or independent recent photographic confirmation of the tree still standing (both sources describe the plaque rather than confirm current vitality); Voormezele church itself is intact and actively used, which supports the churchyard still being maintained. Village of Voormezele sits within Ieper municipality; the church itself was rebuilt after WWI destruction like everything else in the area, which is the honest context for how a 1918 tree survived when so little else did: it postdates the war entirely rather than surviving it."
+ },
+ {
+  "id": "ypr_002",
+  "name": "The Peace Tree of Vlamertinge",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "not documented; a young replacement tree",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "location": {
+   "address": "Sixplein, in front of the town hall (behind the wayside cross), Vlamertinge, Ieper",
+   "latitude": 50.85519,
+   "longitude": 2.820253,
+   "neighbourhood": "Vlamertinge (Ieper)"
+  },
+  "verified_sources": [
+   "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/306476",
+   "https://www.erfgoedhaltes.be/erfgoedhalte/vlamertinge"
+  ],
+  "access": "Free. Stands in a planted bed on the public Sixplein square in front of Vlamertinge's town hall.",
+  "transport": "Vlamertinge village, roughly 3.5 km / a 10-minute drive west of Ieper centre, on the N308; De Lijn buses run through the village.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "This is deliberately a young tree, and the story should say so rather than imply age. The ORIGINAL peace tree (vredesboom) on this spot was planted 30 November 1919 behind a wayside cross on the Sixplein, as a village-wide gesture marking Belgium's liberation; two independent sources agree on that date and the gesture (Flemish heritage inventory, object 306476, citing De Poperinghenaar newspaper of 7 December 1919, and the municipal heritage-trail site erfgoedhaltes.be). That original tree is gone; the register states plainly the tree now standing there is a comparatively recent replacement planted 'in the same spot, behind the calvary/cross,' with no date given for the replanting. So the honest entry is: a young lime standing in the exact spot a village planted its peace tree in 1919, replacing the original, not a 107-year-old tree itself. No girth or planting date recorded anywhere found; do not imply an age for the current tree. Worth telling: this is one of several 'vredesbomen' the register lists around Ieper from the same wave of post-Armistice civic planting (see ypr_001 at Voormezele), which is the real story for this whole city: nothing here is ancient because nothing here survived the war, and these plantings are the deliberate, documented answer to that."
+ }
+]
