@@ -1,0 +1,49 @@
+{
+ "city": "Ypres",
+ "leads": [
+  {
+   "candidate": "Wegkapelletje met knotlinde, Casselstraat/Sint-Pietersstraat/Lindegoedstraat crossroads (register object 31361)",
+   "species": "Lime (Tilia sp.)",
+   "location": {
+    "latitude": 50.841685,
+    "longitude": 2.77072,
+    "address": "Casselstraat / Sint-Pietersstraat / Lindegoedstraat crossroads, near Hoeve Lindegoed"
+   },
+   "reason": "The register's own location data (locatie.elementen) places all three named streets and the deelgemeente in Poperinge, not Ieper, even though the ensemble is described as marking 'de grens tussen Ieper en Poperinge' (the boundary between the two towns) and sits roughly 8 km from Ypres centre. This belongs more honestly to a future Poperinge pass. Separately: the register gives a dated chapel building (jaarsteen 1855, corrected by a local historian to 1885) but no age, girth or planting date for the lime tree itself, only that pollarding is still practised. A protected wayside chapel with a working pollard, publicly reachable at a rural crossroads, worth revisiting if Poperinge is opened, or if a source naming the tree's own age turns up."
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Opgaande populier als grensboom, Molenstraat/Kemmelbeek boundary (register object 130619)",
+   "species": "Poplar (Populus x canadensis)",
+   "location": {
+    "latitude": 50.800504,
+    "longitude": 2.827484,
+    "address": "Molenstraat (Heuvelland) / Kerkstraat (Ieper), on the Kemmelbeek bank"
+   },
+   "reason": "DEAD. The register's own text states plainly: 'Onroerend Erfgoed heeft vastgesteld dat de populier verdwenen is' (Onroerend Erfgoed has established that the poplar has disappeared). Also straddled Heuvelland municipality rather than sitting in Ieper. Never publish; kept here only so a future pass does not re-research it."
+  },
+  {
+   "candidate": "Esdoorndreef of 'Maple Avenue' als vredesdreef, Canadalaan (register object 305870)",
+   "species": "Maple avenue (Acer sp.)",
+   "location": {
+    "latitude": null,
+    "longitude": null,
+    "address": "Canadalaan, Ieper, running to Hill 62"
+   },
+   "reason": "Not a collectible point: an avenue of maples planted along the old second Allied defence line to commemorate Canadian soldiers, winding roughly a kilometre to Hill 62. Moving history, but there is no single tree to stand at. Per the hard-list rule on ensembles, an avenue is blocked, not an entry. Could resurface as a walk/story element rather than a tree record."
+  },
+  {
+   "candidate": "Demarcatiepaal nummer 6, Diksmuidseweg (register object 201102)",
+   "species": null,
+   "location": {"latitude": null, "longitude": null, "address": "Diksmuidseweg, Ieper"},
+   "reason": "Not a tree. A 1920s stone marker post (Touring Club de Belgique) marking a WWI front-line site. Listed in the brief explicitly to avoid."
+  },
+  {
+   "candidate": "Demarcatiepaal nummer 22, Pilkemseweg (register object 201104)",
+   "species": null,
+   "location": {"latitude": null, "longitude": null, "address": "Pilkemseweg, Ieper"},
+   "reason": "Not a tree. Same as object 201102, a stone marker post, not a specimen."
+  }
+ ]
+}
