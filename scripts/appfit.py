@@ -556,6 +556,14 @@ def run_test(device, scratch):
              # taking the file with it. The test passed three times and left
              # nothing behind before this line existed.
              "-parallel-testing-enabled", "NO",
+             # testmanagerd drops the connection to the app under way on this
+             # runner sometimes ("Lost connection to the application (pid
+             # ...)"), same as the flake the main test job already retries
+             # for with this exact flag pair (2026-09-01, CI run 33551233001:
+             # the whole floor job's layout step died on this with no code
+             # change anywhere near it). One retry is the standard mitigation
+             # for a dropped XCTest connection, not a real second failure.
+             "-retry-tests-on-failure", "-test-iterations", "2",
              # The CI runner has no signing identity and does not need one to run a
              # simulator test.
              "CODE_SIGNING_ALLOWED=NO", "CODE_SIGNING_REQUIRED=NO",
