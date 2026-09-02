@@ -1,0 +1,128 @@
+{
+  "_note": "Overlay italiano per Bologna, scritto a mano il 2026-09-02. Reso da data/cities/bologna.json, che resta la fonte di verità: coordinate, foto, licenze, età e note di accesso vivono lì e qui non cambia nulla. I termini di ricerca sono l'unica cosa che non è una traduzione: il termine legale e quotidiano in Italia è 'alberi monumentali', quindi titolo, meta description e campi della domanda sono scritti come li cercherebbe un lettore italiano. Una correzione di conteggio rispetto alla pagina inglese: la question_meta inglese promette 'ten more trees' quando la città ne ha dodici, e l'italiano scrive undici. Una contraddizione dell'inglese è invece riportata com'è, perché riguarda il registro italiano e non il nostro conteggio: l'intro inglese dice nove esemplari monumentali dentro le mura, mentre question_context e la scheda bol_004 ne dicono otto. Va risolta sul file inglese, non qui.",
+  "city": "Bologna",
+  "title": "Alberi monumentali di Bologna: 12 giganti da vedere",
+  "meta_description": "I 12 alberi più notevoli di Bologna: i platani napoleonici della Montagnola e il cipresso che sta sopra la tomba di Giosue Carducci.",
+  "intro": "Gli alberi più antichi di Bologna rispondono quasi tutti agli stessi due secoli: il ridisegno breve ma decisivo degli spazi pubblici voluto da Napoleone dopo il 1805, e i giardini privati delle famiglie bolognesi dell'Ottocento, che li riempirono di cedri e ginkgo importati come segno di gusto. Una città di portici, famosa per nascondere il cielo, raramente viene ricordata per i suoi alberi, eppure entro le mura crescono nove esemplari del registro monumentale italiano, più che in gran parte delle città italiane della stessa taglia, sparsi da un cimitero pubblico al giardino di un ospedale alla tomba di un poeta.",
+  "question_title": "Qual è l'albero più antico di Bologna? (206 anni)",
+  "question_meta": "L'albero più antico di Bologna è un platano di 206 anni del Parco della Montagnola, piantato nel ridisegno napoleonico. La storia, e altri undici.",
+  "question_answer": "L'albero più antico di Bologna con una data precisa è uno dei platani monumentali del Parco della Montagnola, piantato intorno al 1820 durante il ridisegno del primo parco pubblico cittadino firmato in epoca napoleonica da Giovanni Battista Martinetti, quindi di circa 206 anni. È gratuito e sta nel centro storico, a pochi passi da Via Indipendenza.",
+  "question_context": "Gli alberi monumentali di Bologna sono documentati dal registro nazionale italiano (l'elenco degli Alberi Monumentali d'Italia, istituito con la legge del 2013) e dal catalogo parallelo della Regione Emilia-Romagna, che insieme coprono otto esemplari dentro la città. Fra questi, il più vecchio con un impianto databile con precisione è uno dei grandi platani del Parco della Montagnola, il primo parco pubblico cittadino, disegnato dal 1805 su indicazioni arrivate per via dell'amministrazione napoleonica e rivisto dall'architetto Giovanni Battista Martinetti. Diversi platani del parco di quell'epoca sono ancora in piedi con tronchi che superano i quattro metri di circonferenza, e hanno all'incirca l'età di un secondo platano della stessa stagione che oggi sta da solo in Piazza Minghetti, a pochi minuti di distanza. Una sequoia sempreverde dei Giardini Margherita, piantata decenni più tardi con la sistemazione ottocentesca di quel parco, non è molto indietro come dimensione ma non porta una data altrettanto precisa. La Montagnola è gratuita e aperta ogni giorno, a pochi minuti a piedi dalla stazione di Bologna Centrale.",
+  "faq": [
+    {
+      "q": "Qual è l'albero più antico di Bologna?",
+      "a": "Uno dei platani monumentali del Parco della Montagnola, piantato intorno al 1820 con il ridisegno napoleonico del parco, quindi di circa 206 anni. Il parco è gratuito, vicino a Via Indipendenza, nel centro storico."
+    },
+    {
+      "q": "Perché uno degli alberi notevoli di Bologna sta in un cimitero?",
+      "a": "La Certosa di Bologna, cimitero in funzione dal 1801 e uno dei più grandi musei all'aperto di scultura funeraria d'Europa, ha piantato cipressi in tutte le sue parti storiche, compreso uno che sta esattamente sopra la tomba del poeta Giosue Carducci, primo italiano a vincere il Nobel per la Letteratura. Il cimitero è gratuito e aperto ai visitatori."
+    },
+    {
+      "q": "Gli alberi notevoli di Bologna si vedono gratis?",
+      "a": "Quasi tutti sì: stanno in parchi, piazze pubbliche e alla Certosa. Il cedro del Rizzoli cresce nel giardino di un ospedale in funzione, accessibile negli orari di visita, e l'Orto Botanico chiede un piccolo biglietto d'ingresso."
+    },
+    {
+      "q": "Ci sono a Bologna alberi legati a persone famose?",
+      "a": "Due. Il ginkgo di Piazza Cavour è strettamente associato al cantautore bolognese Lucio Dalla, che abitava affacciato sulla piazza, e il cipresso della Certosa sta sopra la tomba di Giosue Carducci, primo italiano a vincere il premio Nobel per la Letteratura."
+    }
+  ],
+  "strings_note": "Campi per albero: name, species (nome comune italiano, stesso nome latino), age_estimate, access, transport, story. Storie da 150 a 250 parole, stesso standard dell'inglese, nessun trattino lungo.",
+  "trees": {
+    "bol_001": {
+      "name": "I platani monumentali della Montagnola",
+      "species": "Platano comune (Platanus x acerifolia)",
+      "age_estimate": "circa 200-206 anni",
+      "access": "Gratuito, parco pubblico",
+      "transport": "5 minuti a piedi dalla stazione di Bologna Centrale",
+      "story": "Il primo parco pubblico di Bologna è nato come una discarica. Il rilievo della Montagnola veniva usato fin dal Medioevo per scaricare macerie, e diventò spazio pubblico solo nel 1662, piantato prima a frutteti e gelsi, finché Napoleone, passando per la città nel 1805, ne ordinò il ridisegno secondo i principi del giardino francese all'architetto Giovanni Battista Martinetti. I platani che danno al parco il suo carattere ombroso e formale risalgono a quel ridisegno, e una decina di loro, su una cinquantina piantati nei sei ettari del parco, contano ancora come davvero monumentali: tronchi da uno a un metro e mezzo di diametro, diversi dei quali accertati oltre i quattro metri di circonferenza. La scenografica scalinata d'ingresso da Via Indipendenza, del 1896, soprannominata il Pincio di Bologna sul modello del parco romano, è arrivata decenni dopo, ma gli alberi lungo i due viali concentrici sono l'elemento più antico rimasto dello schema originale di Martinetti: sani e ancora in crescita più di due secoli dopo che degli amministratori napoleonici decisero che un cumulo di rifiuti meritava di meglio."
+    },
+    "bol_002": {
+      "name": "La sequoia dei Giardini Margherita",
+      "species": "Sequoia sempreverde (Sequoia sempervirens)",
+      "age_estimate": "non datata, matura",
+      "access": "Gratuito, parco pubblico",
+      "transport": "15 minuti a piedi dal centro di Bologna, oppure autobus fino a Viale Gozzadini",
+      "story": "Una sequoia della costa californiana è una vera stranezza in un giardino cittadino italiano, e questa è diventata una delle cose vive più alte di Bologna: 37,4 metri, un tronco di 520 cm di circonferenza, accanto al lago artificiale attorno a cui ruota il disegno all'inglese dei Giardini Margherita. Sequoia sempervirens è originaria di una stretta fascia di costa fra la California e l'Oregon meridionale, dove la tiene in vita la nebbia marina di cui la specie ha bisogno per superare i mesi secchi, condizioni che non hanno nulla a che vedere con il clima interno di Bologna, il che rende la salute di questo esemplare dopo più di un secolo più una curiosità che una certezza. I giardini aprirono nel 1879 su terreni comprati da un'ex tenuta conventuale, disegnati come il primo parco pubblico davvero all'inglese della città, con dentro una necropoli etrusca i cui resti si vedono ancora vicino all'area. Fra le altre conifere, querce e ippocastani del parco, la sequoia si riconosce per la sola scala: visibilmente più alta di tutto quello che ha intorno molto prima che si arrivi al lago accanto a cui cresce."
+    },
+    "bol_003": {
+      "name": "Il platano di Piazza Minghetti",
+      "species": "Platano comune (Platanus x acerifolia)",
+      "age_estimate": "circa 200 anni",
+      "access": "Gratuito, piazza pubblica",
+      "transport": "5 minuti a piedi da Piazza Maggiore",
+      "story": "Con i suoi 39,5 metri, questo platano è il più alto fra tutti gli alberi monumentali censiti nella provincia di Bologna, e si alza proprio dietro la statua in bronzo dello statista ottocentesco Marco Minghetti, che dà il nome alla piazza e il soprannome all'albero, il guardiano della piazza. Il tronco misura 455 cm di circonferenza, rispettabile ma non eccezionale per un platano di questa età, il che fa dell'altezza il dato davvero notevole: due secoli di crescita in una piazza chiusa, a contendere la luce agli edifici intorno invece di allargarsi come farebbe un esemplare di parco. La statua che oggi ombreggia, scolpita da Giulio Monteverde e inaugurata nel 1896, ricorda un politico che fu presidente del Consiglio negli anni Sessanta dell'Ottocento, memoria civica parecchio più giovane dell'albero che le sta sopra. Piazza Minghetti sta dentro il Quadrilatero, la maglia stretta di strade e banchi di mercato subito a est di Piazza Maggiore, il che ne fa uno degli alberi monumentali più facili da infilare in una passeggiata qualsiasi per il centro storico."
+    },
+    "bol_004": {
+      "name": "Il platano orientale di Piazza Malpighi",
+      "species": "Platano orientale (Platanus orientalis)",
+      "age_estimate": "circa 200 anni",
+      "access": "Gratuito, piazza giardino pubblica",
+      "transport": "5 minuti a piedi da Piazza Maggiore, vicino alla Basilica di San Francesco",
+      "story": "Questo platano cresce in un giardino sollevato di più di quattro metri sopra la piazza, una stranezza geografica con un'origine precisa: il terreno era la Cavallerizza, campo usato dal 1612 per l'equitazione e le manifestazioni pubbliche, prima che la famiglia nobile Rusconi lo trasformasse in giardino privato intorno al 1825 e ci piantasse, fra gli altri, questo platano orientale. Due secoli dopo è diventato, secondo la maggior parte dei racconti locali, l'albero più imponente di tutto il centro storico di Bologna: 36 metri di altezza, un tronco di 520 cm di circonferenza, a due passi dal palazzo della stessa famiglia Rusconi. La posizione rialzata si è rivelata un'eredità a doppio taglio: il giardino sopraelevato e l'alto muro di contenimento che lo separa dalla piazza sottostante hanno quasi certamente limitato l'espansione dell'apparato radicale, eppure l'albero non mostra segni chiari di declino generazioni dopo la probabile data di impianto. Resta uno degli otto alberi del registro monumentale italiano dentro i confini comunali di Bologna, un gigante timido, per usare le parole di chi in città scrive di alberi, infilato in un giardino in cui quasi nessuno, dalla piazza sotto, pensa di alzare lo sguardo."
+    },
+    "bol_005": {
+      "name": "Il cedro dell'Himalaya del Rizzoli",
+      "species": "Cedro dell'Himalaya (Cedrus deodara)",
+      "age_estimate": "piantato nel 1896 o poco prima",
+      "access": "Gratuito, giardino di un ospedale (verificare gli orari di visita)",
+      "transport": "10 minuti a piedi in salita da Porta San Mamolo",
+      "story": "Questo cedro cresce nel giardino di un ospedale ortopedico in funzione, su un terreno che è già stato monastero, residenza reale e parco pubblico prima di diventare un luogo di medicina. San Michele in Bosco nacque come monastero olivetano ricostruito nel 1437, fu brevemente Villa Reale quando il re Vittorio Emanuele II vi soggiornò intorno all'Unità d'Italia, nel 1860, e diventò ospedale solo nel 1896, quando l'Istituto Ortopedico Rizzoli aprì qui alla presenza della famiglia reale, finanziato da un lascito del chirurgo Francesco Rizzoli. Il cedro, piantato attorno a quel passaggio, ha raggiunto quasi 30 metri, con un tronco di 520 cm di circonferenza, in un giardino sistemato apposta per fare da cornice alla nuova struttura sanitaria il giorno dell'apertura. Il cedro dell'Himalaya, originario delle foreste d'alta quota che vanno dall'Afghanistan al Nepal, era una scelta di moda nei grandi giardini istituzionali italiani dell'epoca, apprezzato per la taglia e per le punte dei rami ricadenti, e questo esemplare ha avuto ben più di un secolo per guadagnarsi il posto nel registro nazionale degli alberi monumentali."
+    },
+    "bol_006": {
+      "name": "Il ginkgo di Piazza Cavour",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "circa 150 anni",
+      "access": "Gratuito, piazza pubblica",
+      "transport": "5 minuti a piedi da Piazza Maggiore",
+      "story": "Piazza Cavour è stata la prima piazza giardino progettata di proposito a Bologna, disegnata dall'architetto torinese Pietro Ceri negli anni in cui l'Unità apriva strade nuove nel tessuto medievale, e questo ginkgo ci sta da quell'impianto originario, quindi da circa 150 anni. Secondo le misure del registro ufficiale è il più basso fra gli alberi monumentali bolognesi, 29,5 metri contro platani e cedri più alti sparsi per la città, e il tronco misura 338 cm di circonferenza, ma nessun altro albero di questa lista prende lo stesso colore: ogni autunno le foglie a ventaglio virano a un giallo uniforme e quasi luminoso nel giro di pochi giorni l'una dall'altra, un cambio sincronizzato che poche altre specie riescono a fare. La piazza ha anche un motivo di affetto più recente. Il cantautore bolognese Lucio Dalla ha abitato per gran parte della vita affacciato su Piazza Cavour, e questo ginkgo, visibile dalle sue finestre per decenni, dalla sua morte nel 2012 è informalmente legato a lui: un albero civico con dentro un filo personale insolitamente preciso."
+    },
+    "bol_007": {
+      "name": "Il ginkgo dell'Orto Botanico",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "non datato, maturo",
+      "access": "Piccolo biglietto d'ingresso, Orto Botanico ed Erbario",
+      "transport": "10 minuti a piedi da Piazza Maggiore",
+      "story": "L'Orto Botanico di Bologna fa risalire la propria fondazione al 1568, quando il naturalista Ulisse Aldrovandi lo istituì come uno dei primi giardini del genere in Europa, decenni prima che il ginkgo arrivasse nel continente. Questo esemplare, una vecchia pianta femmina con un tronco di 80 cm di diametro, è venuto dopo, fra i primi ginkgo piantati in Italia una volta che la specie era entrata nella coltivazione europea nel Settecento, portata da una sacca montuosa della Cina sudorientale dove era sopravvissuta, sostanzialmente immutata, per circa 200 milioni di anni. Oggi domina la parte anteriore del giardino lungo Via Irnerio, ed è compreso nell'elenco regionale dell'Emilia-Romagna degli alberi monumentali protetti per dimensione ed età, dentro una collezione costruita soprattutto attorno alle gimnosperme, le piante che portano coni, di Europa e Asia. Ginkgo biloba resiste notoriamente alle malattie, all'inquinamento e perfino al fuoco come pochi altri alberi di questa taglia, una resistenza che questo esemplare condivide con ogni ginkgo della lista senza aver avuto bisogno di un episodio specifico per dimostrarla."
+    },
+    "bol_008": {
+      "name": "Il cipresso della tomba di Carducci",
+      "species": "Cipresso comune (Cupressus sempervirens)",
+      "age_estimate": "non datato, maturo",
+      "access": "Gratuito, cimitero pubblico",
+      "transport": "Autobus fino alla Certosa, oppure 20 minuti a piedi da Porta Saragozza",
+      "story": "Un cipresso sta esattamente sopra la tomba di granito di Giosue Carducci, alla Certosa di Bologna, ed è uno degli alberi più alti e più riconoscibili di un campo altrimenti dominato da monumenti funebri bassi: lo chiamano semplicemente il cipresso del poeta. Carducci, primo italiano a vincere il Nobel per la Letteratura nel 1906, è sepolto in una sezione della Certosa riservata alla sua memoria, con il cognome inciso su un solo blocco di pietra e nessun altro ornamento, un'austerità voluta che il cipresso alle spalle rende molto più teatrale di quanto riuscirebbe al monumento da solo. La Certosa, cimitero in funzione dal 1801 sul sito di un monastero certosino del Trecento, è considerata uno dei grandi musei all'aperto di scultura funeraria d'Europa, una trentina di ettari con circa 6.000 opere di interesse storico e artistico, e i cipressi corrono per tutte le sue parti più antiche, compreso un doppio filare che porta all'ingresso originale del monastero. Questo albero si guadagna un nome proprio perché sta sopra l'unica tomba di tutto il complesso che attira lettori invece che storici dell'arte."
+    },
+    "bol_009": {
+      "name": "Il cedro dell'Himalaya di Villa Ghigi",
+      "species": "Cedro dell'Himalaya (Cedrus deodara)",
+      "age_estimate": "non datato, maturo",
+      "access": "Gratuito, parco pubblico",
+      "transport": "15 minuti a piedi in salita da Porta San Mamolo",
+      "story": "Questo cedro lo piantò Callisto Ghigi in persona quando acquistò la proprietà collinare che porta ancora il nome della sua famiglia, e oggi domina il prato davanti alla villa, alto abbastanza che i fotografi locali lo trattino come il soggetto più affidabile del parco. Villa Ghigi sta appena fuori Porta San Mamolo, sui colli a sud di Bologna, aperta al pubblico dal Comune nel 1974 e oggi estesa su una trentina di ettari di ex terreni agricoli, con i vecchi filari di ciliegi, peri, meli e fichi ancora leggibili nel paesaggio accanto a faggete centenarie e roverelle. Il cedro è stato misurato in 159 cm di diametro e circa 24 metri di altezza, e porta cicatrici visibili da fulmine su una parte della chioma, un danno che ha retto invece di soccombere. La sua posizione sul prato aperto davanti alla villa offre una delle viste più libere e pulite su un singolo albero di tutta questa lista, con dietro il panorama collinare sul centro storico per cui il parco è conosciuto."
+    },
+    "bol_010": {
+      "name": "La canfora di San Michele in Bosco",
+      "species": "Canfora (Cinnamomum camphora)",
+      "age_estimate": "non datata, matura",
+      "access": "Gratuito, parco dell'ospedale (verificare gli orari di visita)",
+      "transport": "10 minuti a piedi in salita da Porta San Mamolo",
+      "story": "Il giardino attorno all'ospedale Rizzoli si divide in due caratteri distinti, e questa canfora cresce nel più mite dei due: la parte occidentale, che mescola vecchie querce, lecci, cipressi, tigli e ippocastani in qualcosa di più simile a un bosco informale che a un giardino disegnato, all'opposto della fitta pineta di cedri e pini neri che copre il versante orientale. Cinnamomum camphora viene dall'Asia orientale ed è arrivata nei giardini istituzionali italiani con la stessa ondata ottocentesca di acclimatazione che riempì Napoli, Roma e altre città di sempreverdi importati appena diventati di moda, apprezzata per l'olio di canfora che si ricava dal legno e dalle foglie e per una chioma densa e lucida che tiene il colore per tutto l'inverno bolognese. La data esatta di impianto non è registrata, confusa nella sistemazione generale che i fondatori dell'ospedale realizzarono intorno al 1896 e non documentata albero per albero, ma condivide la stessa storia collinare del cedro dell'Himalaya di San Michele in Bosco: terreno di monastero, per poco reale, oggi sanitario, con gli alberi come unica costante attraverso ogni cambio d'uso."
+    },
+    "bol_011": {
+      "name": "Il noce cinerino dell'Orto Botanico",
+      "species": "Noce cinerino (Juglans cinerea)",
+      "age_estimate": "non documentata",
+      "access": "Piccolo biglietto d'ingresso, Orto Botanico ed Erbario",
+      "transport": "10 minuti a piedi da Piazza Maggiore",
+      "story": "Il noce cinerino di Bologna è l'unico Juglans cinerea registrato in tutto il registro nazionale italiano degli alberi monumentali: un esemplare su oltre 4.500 schede. Cresce nell'Orto Botanico dell'università, in Via Irnerio, vicino al ginkgo della parte anteriore del giardino, ed è alto 32 metri, statura seria per una specie originaria delle valli fluviali degli Stati Uniti orientali e del Canada e non dell'Italia. Il registro regionale misura la circonferenza in 4,2 metri; la stampa che ha seguito un progetto universitario di conservazione del 2025 la dà più vicina a 4,7, e qui le due cifre non sono state conciliate, quindi sono riportate entrambe invece di inventare un vincitore.\n\nQuel progetto è la vera storia dell'albero adesso. Il professor Alberto Minelli, del dipartimento di scienze agroalimentari dell'ateneo, ha avviato nel febbraio 2025 un programma quinquennale di monitoraggio su un esemplare che il curatore del giardino, Umberto Mossetti, descrive in equilibrio estremamente delicato con quello che lo circonda: entrato in quella che l'università chiama una fase di invecchiamento irreversibile, esposto a parassiti e malattie, e sotto la pressione aggiuntiva di un clima che cambia. Nessuno ha registrato quando è stato piantato. Quello che è agli atti è che l'università tratta la sua sopravvivenza come una domanda aperta e non come un fatto risolto."
+    },
+    "bol_012": {
+      "name": "Il cedro dell'Atlante di Villa delle Rose",
+      "species": "Cedro dell'Atlante (Cedrus atlantica)",
+      "age_estimate": "non documentata",
+      "access": "Giardini pubblici gratuiti, orari della galleria (Galleria d'Arte Moderna, Villa delle Rose)",
+      "transport": "Via Saragozza; autobus 13 oppure a piedi in salita da Porta Saragozza",
+      "story": "Cinque metri e quarantacinque di circonferenza, trentadue metri di altezza, e cresce nel giardino di una galleria d'arte. Villa delle Rose sta in Via Saragozza, la lunga strada che esce dalla città verso il portico che sale a San Luca, e oggi la villa è una delle due sedi della Galleria d'Arte Moderna di Bologna. I giardini si attraversano gratuitamente, ma seguono gli orari della galleria e non quelli di un parco, quindi questo è un albero con un orario di apertura.\n\nIl cedro è la cosa più grande che ci sia dentro. Cedrus atlantica viene dai monti dell'Atlante, in Marocco e in Algeria, foresta fredda su suolo magro sopra i mille metri, dove i popolamenti rimasti si stanno riducendo e la specie è oggi classificata come in pericolo nel suo stesso areale. In un giardino murato bolognese non ha avuto nessuna di quelle difficoltà, e la taglia si vede. Porta i palchi di fogliame piatti e appena ascendenti che un cedro fa solo quando ha avuto spazio, quindi la chioma si legge come una pila di ripiani scuri.\n\nNiente lo data. Il registro nazionale degli alberi monumentali riporta circonferenza e altezza e nessuna età, e nessuna seconda fonte lo nomina, quindi la risposta onesta è che è abbastanza grande da essere protetto e che nessuno ha pubblicato un numero. Gli altri due cedri registrati a Bologna sono entrambi deodara, sui colli a sud del centro. A questo ci si arriva in autobus."
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "_note": "Overlay italiano per Venezia, scritto a mano il 2026-09-02. Reso da data/cities/venice.json, che resta la fonte di verità: coordinate, foto, licenze, età e note di accesso vivono lì e qui non cambia nulla. I termini di ricerca sono l'unica cosa che non è una traduzione: il termine legale e quotidiano in Italia è 'alberi monumentali', quindi titolo, meta description e campi della domanda sono scritti come li cercherebbe un lettore italiano. Due correzioni di conteggio rispetto alla pagina inglese, entrambe nella FAQ. La FAQ inglese sull'accesso dice 'seven of the eleven' gratuiti, ma le sole eccezioni che elenca sono tre (San Lazzaro, San Francesco del Deserto, Ca' Zenobio), quindi i gratuiti sono otto e l'italiano scrive otto. E la FAQ sulle isole elenca San Michele, San Lazzaro, la Certosa e San Francesco del Deserto ma dimentica San Servolo, che tiene due alberi di questa lista, quindi l'italiano lo nomina. Vanno sistemate anche sul file inglese.",
+  "city": "Venezia",
+  "title": "Alberi monumentali di Venezia: gli 11 più notevoli",
+  "meta_description": "A Venezia non c'è spazio perché un albero invecchi per caso. I cipressi, i cedri e gli alberi dei giardini piantati sulle isole dal 1717.",
+  "intro": "Le isole storiche di Venezia stanno sull'acqua e sono stipate di pietra: quasi nessun albero ci invecchia per caso. Ognuno è qui perché qualcuno gli ha fatto posto: gli ingegneri di Napoleone che prosciugano la palude per un giardino pubblico nel 1810, i monaci armeni che alzano un giardino di monastero dal 1717, un cimitero piantato a cipressi l'anno dell'apertura. I più vecchi stanno sulle isole e dietro i muri dei giardini, non lungo le strade, e la cosa più simile a un bosco è a Mestre. Il verde di Venezia sta in giardini e viali, non in primati.",
+  "question_title": "Qual è l'albero più antico di Venezia?",
+  "question_meta": "Gli alberi più antichi di Venezia stanno nei Giardini napoleonici del 1810. Perché la città non ha un primatista, e undici alberi che valgono il giro.",
+  "question_answer": "Venezia non ha un singolo albero più antico datato uno per uno come lo hanno altre città. Gli impianti antichi meglio documentati sono gli alberi dei Giardini della Biennale, i Giardini napoleonici di Castello, disegnati da Giannantonio Selva per l'apertura del 1810, il che porta alcuni dei suoi tigli, bagolari e platani fino a circa 216 anni, anche se nessun esemplare è stato lì misurato o datato a parte.",
+  "question_context": "I conteggi degli anelli e le stime di accrescimento funzionano male nel caso di Venezia, perché qui quasi nulla è stato misurato come lo è un albero monumentale a Milano o a Roma. Quello che la città ha sono date documentate di impianto e di costruzione dei giardini: i Giardini della Biennale a Castello disegnati nel 1810, l'isola cimiteriale di San Michele completata nel 1813, il giardino del monastero di San Lazzaro degli Armeni avviato nel 1717. Quelle date fissano un limite massimo all'età che può avere un albero oggi in piedi lì, ma non provano che un singolo albero risalga davvero a quel momento, perché i reimpianti sono frequenti e quasi mai documentati. Lo scarto fra la data di fondazione di un giardino e l'età reale di un albero è detto apertamente in ogni scheda di questa lista invece di essere lisciato in una falsa precisione. Ai Giardini della Biennale si arriva a piedi dalla fermata vaporetto Giardini (linee 1, 4.1, 4.2), a pochi minuti dall'ingresso della Biennale sulla Riva dei Sette Martiri.",
+  "faq": [
+    {
+      "q": "Qual è l'albero più antico di Venezia?",
+      "a": "Nessun albero di Venezia porta un'età verificata uno per uno. Gli impianti documentati più antichi sono gli alberi dei Giardini della Biennale del 1810, che potrebbero arrivare a circa 216 anni, anche se nessun esemplare lì ha una misura pubblicata propria."
+    },
+    {
+      "q": "Perché Venezia ha così pochi alberi antichi rispetto ad altre città?",
+      "a": "Le isole storiche sono costruite su palude bonificata e stipate di edifici in pietra e di canali, e non lasciano quasi terreno libero perché un albero invecchi indisturbato. Ogni albero di questa lista sta in un giardino, un cimitero o un parco che qualcuno ha creato di proposito, in gran parte dal Settecento in poi."
+    },
+    {
+      "q": "Gli alberi notevoli di Venezia si visitano gratis?",
+      "a": "Quasi tutti. Otto degli undici stanno in parchi e giardini pubblici gratuiti. San Lazzaro degli Armeni chiede una piccola quota per la sua visita guidata, San Francesco del Deserto chiede un'offerta e si raggiunge solo con una barca privata, e il giardino di Ca' Zenobio apre soprattutto durante le mostre in calendario."
+    },
+    {
+      "q": "Dove si vedono alberi sulle isole della laguna invece che in città?",
+      "a": "San Michele (l'isola del cimitero), San Lazzaro degli Armeni, la Certosa, San Francesco del Deserto e San Servolo tengono tutte alberi di questa lista, e ognuna si raggiunge con il vaporetto pubblico o, per San Francesco del Deserto, con una breve traversata in barca privata da Burano."
+    }
+  ],
+  "strings_note": "Campi per albero: name, species (nome comune italiano, stesso nome latino), age_estimate, access, transport, story. Storie da 150 a 250 parole, stesso standard dell'inglese, nessun trattino lungo.",
+  "trees": {
+    "ven_001": {
+      "name": "Gli alberi originari dei Giardini della Biennale",
+      "species": "Specie miste (giardino pubblico napoleonico)",
+      "age_estimate": "non datati, giardino fondato nel 1810",
+      "access": "Gratuito, giardini pubblici; le aree espositive della Biennale richiedono un biglietto durante le stagioni della Biennale Arte e Architettura",
+      "transport": "5 minuti a piedi dalla fermata vaporetto Giardini (linee 1, 4.1, 4.2)",
+      "story": "Il più grande spazio verde di Venezia esiste perché Napoleone doveva mettere un parco da qualche parte e non aveva scrupoli su cosa ci fosse in mezzo. Nel 1807 un suo decreto ordinò alla città di creare giardini pubblici e, per fare spazio, gli ingegneri demolirono un gruppo di chiese e conventi su terreno paludoso al margine orientale di Castello, fra cui San Domenico e Sant'Antonio Abate, e prosciugarono l'area. L'architetto Giannantonio Selva, insieme al botanico Pietro Antonio Zorzi, disegnò un giardino neoclassico formale di viali diritti, inaugurato nel 1810. Verso metà Ottocento la moda era cambiata, e quella geometria fu rifatta nei percorsi sinuosi e nei boschetti irregolari che si vedono oggi. Oggi ci crescono più di cento specie arboree, con tigli, bagolari e platani fra le più comuni, anche se nessun esemplare qui è mai stato datato o misurato a parte. Dal 1895 due terzi del terreno ospitano i padiglioni internazionali della Biennale, il che ne fa insieme il giardino pubblico più antico della città e la sua sede d'arte contemporanea più conosciuta, con dei gatti che fra gli habitué si sono fatti una fama tutta loro."
+    },
+    "ven_002": {
+      "name": "I cipressi del cimitero di San Michele",
+      "species": "Cipresso comune (Cupressus sempervirens)",
+      "age_estimate": "non datati, isola completata nel 1813",
+      "access": "Gratuito, aperto tutti i giorni (orari variabili secondo la stagione, in genere dalla mattina al tardo pomeriggio)",
+      "transport": "Fermata vaporetto Cimitero (linee 4.1, 4.2, 5.1, 5.2)",
+      "story": "I morti di Venezia hanno un'isola tutta per sé, e i cipressi che la cingono sono la prima cosa che si vede attraversando la laguna verso di lei. L'idea era di Napoleone: il suo editto di Saint-Cloud del 1804 vietò le sepolture dentro le città per ragioni di igiene pubblica, e Venezia, che non poteva seppellire i suoi morti su una terra che non aveva, scelse l'isola di San Cristoforo della Pace, unendola per gradi all'isolotto vicino di San Michele fra il 1813 e il 1839. L'architetto Giannantonio Selva, che pochi anni prima aveva disegnato i Giardini napoleonici dall'altra parte della laguna, firmò il piano originale del cimitero, e il cipresso ne diventò l'albero simbolo, con una tradizione funeraria che risale all'antichità. Nessun albero qui porta una data di impianto o una misura pubblicata, quindi l'età esatta di qualsiasi esemplare oggi in piedi non è verificata, ma le guglie scure che spuntano sopra i muri di mattoni fanno parte dell'arrivo a Venezia da quasi due secoli. Ezra Pound, Igor Stravinskij e Iosif Brodskij sono sepolti fra loro."
+    },
+    "ven_003": {
+      "name": "I cedri di Bcharre di San Lazzaro degli Armeni",
+      "species": "Cedro del Libano (Cedrus libani)",
+      "age_estimate": "piantati nel gennaio 2008",
+      "access": "Ingresso a pagamento (8 euro), solo visita guidata, tutti i giorni alle 15:25 (circa 90 minuti)",
+      "transport": "Vaporetto linea 20 da San Zaccaria (Riva degli Schiavoni), circa 25 minuti",
+      "story": "Questi tre cedri su quest'isola non ci sono cresciuti, ci sono stati portati. Il 21 gennaio 2008 una studentessa dell'Accademia di Belle Arti di Venezia arrivò con tre giovani cedri del Libano presi dal suo paese natale, Bcharre, e dai Cedri di Dio, la foresta sacra tutelata dall'UNESCO nelle montagne sopra il paese, e li piantò a San Lazzaro degli Armeni come pellegrinaggio artistico: l'offerta di una piccola comunità di montagna a un monastero costruito su un'isola da un altro popolo che era anch'esso fuggito per sopravvivere. Mechitar di Sebaste, monaco armeno cacciato dall'avanzata ottomana, ricevette nel 1717 quest'isola abbandonata di lebbrosario e passò decenni a trasformarla in monastero, biblioteca e giardino per l'ordine armeno cattolico mechitarista, che la cura ancora oggi. Il cedro è l'albero nazionale del Libano, stampato sulla sua bandiera, e la scelta di piantarne tre invece di uno è deliberata in tutti i racconti dell'episodio, un'eco della storia stratificata di esilio e ricostruzione dell'isola. Chi fa la visita guidata del monastero, l'unico modo per mettere piede sull'isola, passa accanto ai giovani cedri dentro un giardino che tiene anche una palma delle Canarie, pini d'Aleppo piegati dal vento e roseti secolari da cui si raccoglie ancora il vartanush, la marmellata di petali di rosa."
+    },
+    "ven_004": {
+      "name": "L'anello di cipressi di San Francesco del Deserto",
+      "species": "Cipresso comune (Cupressus sempervirens)",
+      "age_estimate": "non datati, definiti antichi senza un dato preciso",
+      "access": "Ingresso gratuito, offerta gradita; visite guidate da martedì a domenica 9:00-11:00 e 15:00-17:00, chiuso il lunedì",
+      "transport": "Vaporetto linea 12 fino a Burano, poi barca privata o taxi acqueo (circa 15 minuti)",
+      "story": "Francesco d'Assisi sarebbe sbarcato su quest'isola di quattro ettari nel 1220, tornando dalla quinta crociata, e una leggenda locale racconta che piantò nel terreno il suo bastone da cammino, che diventò un pino sopravvissuto fino al 1701, quando il tronco secco fu intagliato in una statua del santo. Quell'albero non c'è più, ma i cipressi che oggi cingono il perimetro dell'isola, visibili dall'acqua come una fascia verde e fitta attorno ai muri del convento, sono abbastanza vecchi che ogni fonte che li descrive usa la parola antichi senza mai offrire una data di impianto o una misura, quindi la loro età esatta qui non è verificata. Sull'isola vivono ancora sei frati francescani, uno dei quali guida le uniche visite disponibili, portando i visitatori davanti a chiostri del Quattrocento e a orti che i frati lavorano ancora da soli. Non c'è una fermata pubblica del vaporetto: arrivarci significa prendere la linea per Burano e poi una barca privata o un taxi acqueo per l'ultimo breve tratto, una deviazione vera che tiene il posto silenzioso come dice il suo nome."
+    },
+    "ven_005": {
+      "name": "Il pioppo nero della Certosa",
+      "species": "Pioppo nero (Populus nigra)",
+      "age_estimate": "non datato, descritto come uno degli esemplari più grandi dell'isola",
+      "access": "Gratuito, parco pubblico, dall'alba al tramonto",
+      "transport": "Vaporetto linee 41/42, fermata Certosa (fermata a richiesta)",
+      "story": "Questo pioppo sta da solo in mezzo a quella che di fatto è una riserva naturale nata per caso. La Certosa prende il nome da un monastero certosino fondato qui nel 1424, abbandonato sotto Napoleone e poi usato per oltre un secolo come deposito militare e poligono di tiro, finché l'esercito italiano se ne andò definitivamente nel 1997. Lasciata a sé stessa per decenni, l'isola di 22 ettari è cresciuta selvatica: boschetti di pioppo bianco, pioppo nero e frassino coprono oggi il terreno su cui marciavano i soldati, e la letteratura di conservazione del sito lo descrive come uno dei pochi posti in cui si può ancora studiare direttamente la vegetazione originaria dei suoli sabbiosi della laguna. Il pioppo nero che cresce nel cuore di questo bosco spontaneo è indicato più volte dalle fonti locali come uno dei più grandi della sua specie radicati nella sabbia dell'isola, ma nessuna gli dà un'età o una misura del tronco, quindi la sua età esatta non è verificata. Su una parte dell'isola nel 2013 ha aperto un parco urbano pubblico, e oggi tutto il sito è aperto dall'alba al tramonto, un contrasto quieto con la folla che sta a dieci minuti di barca."
+    },
+    "ven_006": {
+      "name": "L'olivo di San Servolo",
+      "species": "Olivo (Olea europaea)",
+      "age_estimate": "secolare (senza datazione più precisa)",
+      "access": "Gratuito, parco pubblico; biglietto a parte a pagamento per il Museo del Manicomio",
+      "transport": "Vaporetto linea 20 da San Zaccaria, circa 10 minuti",
+      "story": "Questo olivo cresce in un giardino nato per rifornire una farmacia, su un'isola il cui passato più recente è stato il più grande manicomio criminale d'Italia. I monaci benedettini sono documentati a San Servolo almeno dall'VIII secolo, e il giardino che loro e gli ordini religiosi successivi hanno costruito in mille anni porta oggi più di 400 specie arboree, fra cui palme delle Canarie, agavi e una palma di Chusan accanto all'olivo secolare, piantato in origine per uso medicinale, quando l'isola forniva rimedi ai militari veneziani. Il manicomio ha funzionato dal Settecento fino alla chiusura del 1978, una storia oggi documentata nel Museo del Manicomio dell'isola stessa, e il contrasto fra quel passato clinico e il giardino liberamente percorribile che lo circonda è parte di ciò che rende insolita una visita. Nessuna fonte dà a questo olivo una data di impianto esatta, quindi la sua età precisa non è verificata, ma la definizione di secolare è coerente in tutti i documenti controllati. Gran parte dell'isola è oggi occupata dalla Venice International University."
+    },
+    "ven_007": {
+      "name": "Gli alberi dei Giardini Papadopoli",
+      "species": "Specie miste (giardino pubblico dell'Ottocento)",
+      "age_estimate": "non datati, giardino fondato nel 1834-35",
+      "access": "Gratuito, giardino pubblico",
+      "transport": "2 minuti a piedi da Piazzale Roma e dalla stazione di Venezia Santa Lucia",
+      "story": "Questa è la prima macchia di verde che quasi tutti i visitatori di Venezia vedono, ed è anche il pezzo più piccolo di quello che era. Il conte Spiridione Papadopoli commissionò il giardino nel 1834-35 al disegnatore Francesco Bagnara per la moglie Teresa Mosconi, con percorsi a terrazze e alberi d'ombra su quello che era terreno aperto ai margini della città. Marco Quignon rifece le piantumazioni nel 1863, e il giardino arrivò al massimo a circa 12.000 metri quadrati. Quella misura non è sopravvissuta al Novecento: la costruzione di Piazzale Roma nel 1933 si mangiò il terzo occidentale per una strada e un parcheggio, e il Rio Novo ne prese dell'altro, lasciando circa 7.500 metri quadrati del disegno originale. Quel che resta tiene ancora platani maturi, lecci, cipressi e ippocastani che formano i vialetti ombrosi per cui il giardino era stato pensato, anche se nessun albero qui ha un'età documentata a parte, quindi qualsiasi cifra sarebbe una stima e non un fatto verificato. Oggi è la prima e l'ultima tappa di quasi tutti, fra la stazione dei treni e il terminal degli autobus, un passaggio quieto prima o dopo la folla del centro storico."
+    },
+    "ven_008": {
+      "name": "I bagolari di Villa Groggia",
+      "species": "Bagolaro (Celtis australis)",
+      "age_estimate": "non datati, parco costruito a fine Ottocento",
+      "access": "Gratuito, parco pubblico",
+      "transport": "Fermata vaporetto Sant'Alvise (linee 4.1, 4.2, 5.1, 5.2), poi pochi passi",
+      "story": "Due bagolari, la specie che a Milano chiamano spaccasassi per radici capaci di spaccare la pavimentazione, fiancheggiano il vialetto che porta a un piccolo teatro sopravvissuto a ogni edificio che gli stava intorno. Il terreno faceva parte della tenuta cinquecentesca di Palazzo Donà, poi frutteto e orto in attività, prima che il palazzo stesso venisse demolito nel 1823 per recuperarne il materiale da costruzione. Giuseppe Groggia costruì la villa e il suo parco romantico verso la fine dell'Ottocento, con colline artificiali e un teatrino neogotico del 1913 circa, e quando la famiglia in seguito donò la proprietà, il Comune ne prese in carico la manutenzione. Il giardino è oggi uno dei pochi a Venezia con accesso pubblico davvero libero e senza limiti, il contrario dei giardini di palazzo di questa lista, che aprono solo a calendario o su appuntamento. I due Celtis australis lungo il viale principale non hanno una data di impianto documentata singolarmente, quindi la loro età esatta non è verificata, ma la taglia suggerisce che appartengano all'impianto originale ottocentesco della villa e non a un'aggiunta successiva."
+    },
+    "ven_009": {
+      "name": "Il giardino di Ca' Zenobio degli Armeni",
+      "species": "Specie miste (giardino romantico)",
+      "age_estimate": "non datati, giardino rifatto nell'Ottocento",
+      "access": "Gratuito quando è aperto; il giardino ospita mostre ed eventi temporanei, controllare il calendario prima di andare",
+      "transport": "10 minuti a piedi dalla fermata vaporetto Ca' Rezzonico, passando per Campo Santa Margherita",
+      "story": "Uno degli ultimi grandi giardini privati di Venezia sopravvive attaccato a un palazzo che ha cambiato proprietario tre volte senza mai perdere il giardino. Ca' Zenobio fu completato nel 1690 per la famiglia Zenobio, di Verona, passò poi agli Albrizzi e infine diventò un collegio per i monaci armeni mechitaristi con il nome di Moorat-Raphael. Il giardino ha preso l'assetto romantico attuale nell'Ottocento, quando la geometria barocca venne rifatta in percorsi sinuosi, piccole colline artificiali e ponticelli, piantati a tassi, allori, cipressi, bagolari e con un filare di robinie che porta a una loggia neoclassica. Nessun albero qui porta un'età o una misura documentata, quindi qualsiasi cifra è una stima e non un fatto verificato, ma il rifacimento ottocentesco dà un limite superiore ragionevole. L'accesso non è continuo: il giardino apre soprattutto durante mostre ed eventi temporanei ospitati nel palazzo, comprese in certi anni le manifestazioni collaterali della Biennale, quindi la visita va programmata e non si risolve entrando e basta."
+    },
+    "ven_010": {
+      "name": "Gli alberi secolari di Forte Marghera",
+      "species": "Specie miste (parco di un forte)",
+      "age_estimate": "secolari (senza datazione più precisa)",
+      "access": "Gratuito, parco pubblico",
+      "transport": "15 minuti a piedi dalla stazione di Mestre, oppure autobus urbano",
+      "story": "Questo forte ha passato quasi tutta la sua vita operativa a difendere Venezia dal lato della terraferma, una minaccia di cui la città lagunare non aveva mai dovuto preoccuparsi finché il ponte ferroviario non la collegò all'asciutto nel 1846. Costruito a partire dal 1805 con una combinazione di ingegneria napoleonica e austriaca, Forte Marghera ha retto la difesa di terra di Venezia durante l'assedio del 1848-49 e fino al Novecento, prima di essere dismesso e lasciato al Comune. Le sue piazze d'armi e i suoi bastioni sono oggi piantati con grandi pioppi, tigli, platani e bagolari che le fonti locali descrivono semplicemente come secolari, senza dare a nessun albero una data di impianto o una misura, quindi la loro età esatta non è verificata. Quello che resta non è tanto un singolo esemplare monumentale quanto l'equivalente più vicino, in terraferma, ai viali alberati e ai giardini che alle isole veneziane in gran parte mancano, gestito oggi da una fondazione che ha trasformato il forte in sede di mostre e di padiglioni della Biennale, accanto alla colonia di gatti che ci abita."
+    },
+    "ven_011": {
+      "name": "La palma di San Servolo",
+      "species": "Palma di Creta (Phoenix theophrasti)",
+      "age_estimate": "non datata singolarmente; descritta fra gli alberi 'molto antichi' dell'isola",
+      "access": "Gratuito, parco pubblico; biglietto a parte a pagamento per il Museo del Manicomio",
+      "transport": "Vaporetto linea 20 da San Zaccaria, circa 10 minuti",
+      "story": "Si scende dalla barca a San Servolo e la prima cosa che si incontra è una palma. L'associazione italiana dei giardini storici la descrive proprio così, una palma che accoglie i visitatori appena sbarcati, e il punto che il registro nazionale assegna a questo albero sta accanto all'approdo. È alta 10,5 metri, con un tronco di 188 centimetri di circonferenza, ed è contata fra le cose più vecchie che crescano sull'isola.\n\nIl suo nome si contraddice da solo, e la contraddizione è nei documenti ufficiali. Il registro la chiama palma delle Canarie, quella che chiunque riconosce da un lungomare. Nella stessa scheda le dà il nome scientifico Phoenix theophrasti, che è un'altra pianta: la palma di Creta, che sopravvive spontanea in poche decine di gole e spiagge fra Creta e la costa turca, e da nessuna parte vicino alle Canarie. O Venezia ha per le mani un esemplare insolito, o qualcuno ha scritto un nome italiano familiare accanto al latino sbagliato. Qui è lasciata come la registra lo Stato, senza scegliere di nascosto una parte, e l'albero non risolverà la questione al posto vostro.\n\nL'isola è stata per generazioni il manicomio di Venezia, e il museo di quella storia è ancora aperto, con un biglietto proprio. Il parco intorno non costa niente. L'olivo di San Servolo sta a 184 metri, il che mette due alberi vecchi a breve distanza dallo stesso approdo."
+    }
+  }
+}
