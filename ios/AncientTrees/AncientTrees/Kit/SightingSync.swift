@@ -157,7 +157,8 @@ enum SightingSync {
     // LANDED, which is what forgetting a sighting on sign-out turns on: dropping
     // one we only HOPED had arrived would lose it for good.
 
-    private static func upload(_ path: String, data: Data, token: String) async -> Bool {
+    private static func upload(_ path: String, data: Data, token: String,
+                               bucket: String = SightingSync.bucket) async -> Bool {
         var r = Supa.request("/storage/v1/object/\(bucket)/\(path)", token: token)
         r.setValue("image/jpeg", forHTTPHeaderField: "Content-Type")
         // Replace rather than refuse when it is already there.
@@ -208,5 +209,58 @@ enum SightingSync {
               let j = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
         else { return [] }
         return j.compactMap { $0["name"] as? String }
+    }
+
+    // MARK: - sharing one of them
+
+    /// The unlisted page for a tree of yours, made the moment somebody asks
+    /// for it and not before.
+    ///
+    /// Hidde, 2026-09-02: "kunnen we niet een pagina maken van de boom die wel
+    /// deelbaar is?" Unlisted was his answer to the question the references
+    /// raise (CONVENTIONS.md, "A page for something a person added, and who
+    /// may see it"), and it is the whole of what this does: one row is flipped,
+    /// one photograph is copied into a public bucket, and the address carries
+    /// the sighting's own uuid so nothing else leads to it.
+    ///
+    /// Nothing is shared by opening a page, only by tapping the button. The
+    /// position never travels: `shared_trees` does not select it.
+    private static let sharedBucket = "shared-sightings"
+
+    static func publish(_ sighting: Sightings.Sighting, account: Account,
+                        sightings: Sightings) async -> URL? {
+        guard let s = await account.freshSession() else { return nil }
+        // The picture first, so a page never exists pointing at a file that is
+        // not there. Same order as push(), and for the same reason.
+        if let image = sightings.image(sighting), let data = Sightings.downsized(image) {
+            let path = "\(s.userId)/\(sighting.id.uuidString).jpg"
+            _ = await upload(path, data: data, token: s.accessToken, bucket: sharedBucket)
+        }
+        let ok = await Supa.ok(Supa.request(
+            "/rest/v1/sightings?user_id=eq.\(s.userId)&id=eq.\(sighting.id.uuidString)",
+            method: "PATCH", token: s.accessToken, body: ["shared": true],
+            prefer: "return=minimal"))
+        guard ok else { return nil }
+        await MainActor.run { sightings.setShared(sighting.id, true) }
+        return url(for: sighting.id)
+    }
+
+    /// Taking it back: the row stops being readable and the public copy goes.
+    /// The private one is untouched, so the tree itself is not lost.
+    static func unpublish(_ sighting: Sightings.Sighting, account: Account,
+                          sightings: Sightings) async {
+        guard let s = await account.freshSession() else { return }
+        _ = await Supa.ok(Supa.request(
+            "/rest/v1/sightings?user_id=eq.\(s.userId)&id=eq.\(sighting.id.uuidString)",
+            method: "PATCH", token: s.accessToken, body: ["shared": false],
+            prefer: "return=minimal"))
+        let r = Supa.request("/storage/v1/object/\(sharedBucket)/\(s.userId)/\(sighting.id.uuidString).jpg",
+                             method: "DELETE", token: s.accessToken)
+        _ = try? await Net.data(for: r)
+        await MainActor.run { sightings.setShared(sighting.id, false) }
+    }
+
+    static func url(for id: UUID) -> URL? {
+        URL(string: "https://ancienttrees.app/t/?id=" + id.uuidString.lowercased())
     }
 }

@@ -1,0 +1,75 @@
+---
+// A tree somebody added, on an unlisted page they can hand to anybody.
+//
+// Hidde, 2026-09-02: "kunnen we niet een pagina maken van de boom die wel
+// deelbaar is?" This is that page, and unlisted rather than public was his
+// call: the address carries the sighting's own uuid, nothing links to it, and
+// it is noindex, so it exists for the people the person sends it to and for
+// nobody else. supabase/shared-sightings.sql carries the whole reasoning and
+// the view this reads.
+//
+// It is rendered in the browser rather than at build time because the site is
+// a static build that deploys a few times a day, and a link that starts
+// working tomorrow is not a link somebody can share today.
+//
+// WHAT IT DOES NOT SHOW: where the tree is. Hard rule 10 exists because a tree
+// can be harmed by visitors and because somebody's garden is nobody's
+// destination, and a tree a person photographed may be either. They are
+// showing a tree, not sending strangers to it.
+import Base from "../../layouts/Base.astro";
+import { BASE_URL } from "../../lib/schema";
+import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
+const canonical = `${BASE_URL}/t/`;
+---
+<Base
+  title="A tree on Ancient Trees"
+  description="A tree somebody photographed and added to the map."
+  canonical={canonical}
+  headExtra='<meta name="robots" content="noindex, nofollow">'
+>
+  <main class="content-page shared-tree">
+    <article id="shared" hidden>
+      <div class="shared-photo" id="shared-photo" hidden><img id="shared-img" alt="" /></div>
+      <h1 id="shared-name">A tree</h1>
+      <p class="tree-meta" id="shared-meta"></p>
+      <p class="prose-block" id="shared-note"></p>
+      <p class="prose-block shared-foot">Added by somebody who walked to it. You can add the trees you find too, on <a href="/app">the app</a>, or start with <a href="/explore">the remarkable trees near you</a>.</p>
+    </article>
+    <p id="shared-missing" hidden>This link does not lead to a tree. It may have been taken down by the person who shared it. <a href="/explore">Find a tree near you</a>.</p>
+  </main>
+<Fragment slot="scripts" set:html={`
+<script>
+(function() {
+  var SB = "${SUPABASE_URL}", KEY = "${SUPABASE_KEY}";
+  var id = new URLSearchParams(location.search).get('id') || '';
+  var box = document.getElementById('shared');
+  var gone = document.getElementById('shared-missing');
+  // A uuid or nothing: anything else never reaches the network.
+  if (!/^[0-9a-f-]{36}$/i.test(id)) { gone.hidden = false; return; }
+  fetch(SB + '/rest/v1/shared_trees?select=*&id=eq.' + encodeURIComponent(id), {
+    headers: { 'apikey': KEY } })
+    .then(function(r) { return r.ok ? r.json() : null; })
+    .then(function(rows) {
+      var t = rows && rows[0];
+      if (!t) { gone.hidden = false; return; }
+      document.getElementById('shared-name').textContent = t.name || 'A tree';
+      var when = '';
+      var d = new Date(t.taken_at);
+      if (!isNaN(d)) when = d.toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
+      var meta = [t.species, when].filter(Boolean).join(' \\u00b7 ');
+      document.getElementById('shared-meta').textContent = meta;
+      if (t.note) document.getElementById('shared-note').textContent = t.note;
+      if (t.photo) {
+        var img = document.getElementById('shared-img');
+        img.src = SB + '/storage/v1/object/public/shared-sightings/' + t.photo;
+        img.alt = t.name || 'A tree';
+        document.getElementById('shared-photo').hidden = false;
+      }
+      document.title = (t.name || 'A tree') + ' - Ancient Trees';
+      box.hidden = false;
+    })
+    .catch(function() { gone.hidden = false; });
+})();
+</script>
+`} />
+</Base>

@@ -91,6 +91,15 @@ final class Sightings {
         /// not know it arrived.
         var syncedAt: Date?
 
+        /// Whether this one has an unlisted page anybody with the link can
+        /// open. Optional for the same reason `syncedAt` is: a file written
+        /// before 2026-09-02 has no such key, and a synthesised decoder throws
+        /// on a missing non-optional whatever default it carries.
+        ///
+        /// Nil and false mean the same thing here, which is the honest reading:
+        /// nothing is shared until somebody taps Share.
+        var shared: Bool?
+
         /// The id this sighting wears wherever the app talks about TREES: the
         /// heart on its page saves under it, so anything asking whether you
         /// hearted your own tree has to ask with this exact string. Written
@@ -354,6 +363,14 @@ final class Sightings {
     /// Written from the sync, never guessed. It is not persisted through
     /// `Self.syncOne` on purpose: telling the server that we know it has the
     /// row would be a second write for nothing.
+    /// Remember that this one is (or is no longer) shared, so its own page can
+    /// say so without asking the server every time it is opened.
+    func setShared(_ id: UUID, _ on: Bool) {
+        guard let i = all.firstIndex(where: { $0.id == id }) else { return }
+        all[i].shared = on
+        persist()
+    }
+
     func markSynced(_ id: UUID, at when: Date = Date()) {
         guard let i = all.firstIndex(where: { $0.id == id }) else { return }
         all[i].syncedAt = when
