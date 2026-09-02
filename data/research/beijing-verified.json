@@ -1,100 +1,154 @@
 [
-  {
-    "id": "bjs_001",
-    "name": "The Nine Dragon Cypress",
-    "species": "Chinese Juniper (Juniperus chinensis)",
-    "age_estimate": "roughly 600 years",
-    "age_min": 500,
-    "age_max": 620,
-    "girth_cm": 368,
-    "location": {
-      "address": "Temple of Heaven, northwest of the Echo Wall (Huiyinbi), Dongcheng District, Beijing",
-      "latitude": 39.8799,
-      "longitude": 116.4029,
-      "neighbourhood": "Temple of Heaven Park"
-    },
-    "verified_sources": [
-      "https://www.beijing.gov.cn/renwen/sy/whkb/201812/t20181220_1864970.html",
-      "https://www.visitbeijing.com.cn/article/47c1v4kQlmK"
-    ],
-    "access": "Paid entry to Temple of Heaven Park (and a further inner-park ticket to reach the Echo Wall area); open daily",
-    "transport": "Tiantan Dongmen (Temple of Heaven East Gate) station, Line 5, then a short walk inside the park to the Echo Wall",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Officially named one of Beijing's 'Ten Most Beautiful Ancient Tree Kings' by the municipal government in 2018 (beijing.gov.cn). Grade-1 ancient tree (300+ years), registered id format 110101A#####, girth 368cm, height 11.5m, canopy 6.7m per municipal listing. Traditionally dated to planting in the 18th year of the Yongle reign (1420 CE), giving 'roughly 600 years' as of the 2018 official listing; used a broad band (500-620) rather than a sharpened figure since the underlying source is a round number, not a measurement. Named for the trunk's deeply grooved, twisting bark said to resemble nine coiling dragons; emperors passed it en route to the Circular Mound Altar (Yuanqiu) for the winter solstice sacrifice, giving it the alternate epithet 'Nine Dragons Greeting the Sage' (九龙迎圣). Location is approximate: sources agree it stands northwest of the Echo Wall but no tree-level coordinate was found; pin uses the park centroid. Both sources likely trace to the same 2018 municipal survey rather than being fully independent measurements, so flagged; the tree remains a currently signposted stop on the park's own official visitor walking route as of 2025-2026 tour guide listings, with no reports of decline or removal found."
+ {
+  "id": "bjs_001",
+  "name": "The Nine Dragon Cypress",
+  "species": "Chinese Juniper (Juniperus chinensis)",
+  "age_estimate": "roughly 600 years",
+  "age_min": 500,
+  "age_max": 620,
+  "girth_cm": 368,
+  "location": {
+   "address": "Temple of Heaven, northwest of the Echo Wall (Huiyinbi), Dongcheng District, Beijing",
+   "latitude": 39.8799,
+   "longitude": 116.4029,
+   "neighbourhood": "Temple of Heaven Park"
   },
-  {
-    "id": "bjs_002",
-    "name": "The General Cypresses of Ditan",
-    "species": "Chinese Arborvitae (Platycladus orientalis)",
-    "age_estimate": "roughly 400 to 500 years",
-    "age_min": 400,
-    "age_max": 500,
-    "girth_cm": 515,
-    "location": {
-      "address": "Around the Fangze Altar (方泽坛), Ditan Park, Andingmenwai Street, Dongcheng District, Beijing",
-      "latitude": 39.9531,
-      "longitude": 116.4089,
-      "neighbourhood": "Ditan Park (Temple of Earth)"
-    },
-    "verified_sources": [
-      "https://xinwen.bjd.com.cn/content/s6a093534d5de97bd745555f8.html",
-      "https://wap.bjd.com.cn/read/2020/12/14/36343t270.html"
-    ],
-    "access": "Nominal entry fee to Ditan Park (2 RMB as of recent listings, effectively free); open daily 6:00-21:30 in summer, 6:00-20:30 in winter",
-    "transport": "Yonghegong-Lama Temple or Andingmen station, Line 2/5, short walk to the park's south gate",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "girth_cm_note": "515cm belongs to the tallest of the three, the Great General Cypress; the others measure 480cm (Old General) and 390cm (One-Armed General)",
-    "verify_notes": "Three individually named cypresses standing around the Fangze Altar (the Ming/Qing 'Temple of Earth' altar), planted in 1530 under the Jiajing Emperor when the altar was built, per a Shaanxi official's gift of saplings invoking the legendary Yellow Emperor's 'Xuanyuan Cypress' (source: bjd.com.cn, 2020-12-14, wap.bjd.com.cn/read/2020/12/14/36343t270.html). A 2026-05-17 bjd.com.cn feature ('地坛老将军柏的身世之谜') gives the individual stats: Old General Cypress (老将军柏, Chinese Arborvitae/Platycladus orientalis), southwest of the altar's west Lingxing Gate, girth 480cm, labelled 'about 400 years' on its official tree tag though the article argues the trio likely predates the 1530 altar and may be Yuan or early Ming in origin; Great General Cypress (大将军柏, Chinese Juniper/Juniperus chinensis per that article though older park sources call all three arborvitae), south of the altar's south Lingxing Gate, girth 515cm, 'over 500 years, still green and vigorous'; One-Armed General Cypress (独臂将军柏), outside the west perimeter wall northwest of the altar, girth 390cm, has lost all but one major limb but is still alive. Species given inconsistently across sources as 侧柏 (Platycladus orientalis) for all three vs. 桧柏 (Juniperus chinensis) for two of them; recorded here as Platycladus orientalis, the species named for the group as a whole and for the Old General specifically, and this discrepancy is flagged for the writer. Age given on official tags as 'about 400 years' but the 2026 source questions this as an underestimate; used a broad band. Local tradition (recalled by a park elder, disputed by the same 2026 article) credited Sun Yat-sen with naming the trio, though records show he likely never visited to plant here; naming may instead trace to other republican-era officials. All three are described as currently standing and green in the cited 2026 source. Entry fee to the park is nominal (2 RMB), making this a functionally free destination."
+  "verified_sources": [
+   "https://www.beijing.gov.cn/renwen/sy/whkb/201812/t20181220_1864970.html",
+   "https://www.visitbeijing.com.cn/article/47c1v4kQlmK"
+  ],
+  "access": "Paid entry to Temple of Heaven Park (and a further inner-park ticket to reach the Echo Wall area); open daily",
+  "transport": "Tiantan Dongmen (Temple of Heaven East Gate) station, Line 5, then a short walk inside the park to the Echo Wall",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Officially named one of Beijing's 'Ten Most Beautiful Ancient Tree Kings' by the municipal government in 2018 (beijing.gov.cn). Grade-1 ancient tree (300+ years), registered id format 110101A#####, girth 368cm, height 11.5m, canopy 6.7m per municipal listing. Traditionally dated to planting in the 18th year of the Yongle reign (1420 CE), giving 'roughly 600 years' as of the 2018 official listing; used a broad band (500-620) rather than a sharpened figure since the underlying source is a round number, not a measurement. Named for the trunk's deeply grooved, twisting bark said to resemble nine coiling dragons; emperors passed it en route to the Circular Mound Altar (Yuanqiu) for the winter solstice sacrifice, giving it the alternate epithet 'Nine Dragons Greeting the Sage' (九龙迎圣). Location is approximate: sources agree it stands northwest of the Echo Wall but no tree-level coordinate was found; pin uses the park centroid. Both sources likely trace to the same 2018 municipal survey rather than being fully independent measurements, so flagged; the tree remains a currently signposted stop on the park's own official visitor walking route as of 2025-2026 tour guide listings, with no reports of decline or removal found.",
+  "paid_entry": true
+ },
+ {
+  "id": "bjs_002",
+  "name": "The General Cypresses of Ditan",
+  "species": "Chinese Arborvitae (Platycladus orientalis)",
+  "age_estimate": "roughly 400 to 500 years",
+  "age_min": 400,
+  "age_max": 500,
+  "girth_cm": 515,
+  "location": {
+   "address": "Around the Fangze Altar (方泽坛), Ditan Park, Andingmenwai Street, Dongcheng District, Beijing",
+   "latitude": 39.9531,
+   "longitude": 116.4089,
+   "neighbourhood": "Ditan Park (Temple of Earth)"
   },
-  {
-    "id": "bjs_003",
-    "name": "The Butterfly Scholar Tree of Bolin Temple",
-    "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
-    "age_estimate": "roughly 250 years",
-    "age_min": 250,
-    "age_max": 270,
-    "girth_cm": 180,
-    "height_m": 15,
-    "location": {
-      "address": "Weimo Pavilion courtyard, Bolin Temple, 1 Xilou Hutong, Yonghegong Street, Dongcheng District, Beijing",
-      "latitude": 39.9448,
-      "longitude": 116.4137,
-      "neighbourhood": "Bolin Temple (Yonghegong area)"
-    },
-    "verified_sources": [
-      "https://s.visitbeijing.com.cn/attraction/118453",
-      "https://upimg.baike.so.com/doc/7614590-7888685.html"
-    ],
-    "access": "Free entry to Bolin Temple; open 9:00-16:30",
-    "transport": "Yonghegong Lama Temple station, Line 2/5, short walk",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "A rare seven-leaflet cultivar of the Chinese scholar tree/Japanese Pagoda Tree, whose small leaves cluster in sevens and flutter like butterflies in the wind, earning it the name 'butterfly scholar tree' (蝴蝶槐, also 七叶槐). Planted during the 23rd year of the Qianlong reign (1758) when Bolin Temple was renovated, making it roughly 250 years old at the time of these sources (both undated but describing it as living and standing); height 15m, trunk girth 1.8m (180cm). Widely described as the oldest and largest surviving specimen of this cultivar in Beijing (only two or three others are known citywide, at Guangji Temple and Jingshan Park). Location is approximate: pin marks the temple building, not the exact tree within the Weimo Pavilion courtyard. Temple itself is a national-level protected cultural relic (2006) built in 1347 (Yuan dynasty), known for its abundance of old cypresses, from which it takes its name ('cypress forest temple'); other ancient cypresses, pines and a ginkgo stand in the grounds but were not individually verified this pass. No specific recent (post-2020) dated sighting found confirming the tree is still alive, though the temple itself remains an active, open, well-documented site; flagged for that gap rather than for the age or measurements, which two independent sources agree on."
+  "verified_sources": [
+   "https://xinwen.bjd.com.cn/content/s6a093534d5de97bd745555f8.html",
+   "https://wap.bjd.com.cn/read/2020/12/14/36343t270.html"
+  ],
+  "access": "Nominal entry fee to Ditan Park (2 RMB as of recent listings, effectively free); open daily 6:00-21:30 in summer, 6:00-20:30 in winter",
+  "transport": "Yonghegong-Lama Temple or Andingmen station, Line 2/5, short walk to the park's south gate",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "girth_cm_note": "515cm belongs to the tallest of the three, the Great General Cypress; the others measure 480cm (Old General) and 390cm (One-Armed General)",
+  "verify_notes": "Three individually named cypresses standing around the Fangze Altar (the Ming/Qing 'Temple of Earth' altar), planted in 1530 under the Jiajing Emperor when the altar was built, per a Shaanxi official's gift of saplings invoking the legendary Yellow Emperor's 'Xuanyuan Cypress' (source: bjd.com.cn, 2020-12-14, wap.bjd.com.cn/read/2020/12/14/36343t270.html). A 2026-05-17 bjd.com.cn feature ('地坛老将军柏的身世之谜') gives the individual stats: Old General Cypress (老将军柏, Chinese Arborvitae/Platycladus orientalis), southwest of the altar's west Lingxing Gate, girth 480cm, labelled 'about 400 years' on its official tree tag though the article argues the trio likely predates the 1530 altar and may be Yuan or early Ming in origin; Great General Cypress (大将军柏, Chinese Juniper/Juniperus chinensis per that article though older park sources call all three arborvitae), south of the altar's south Lingxing Gate, girth 515cm, 'over 500 years, still green and vigorous'; One-Armed General Cypress (独臂将军柏), outside the west perimeter wall northwest of the altar, girth 390cm, has lost all but one major limb but is still alive. Species given inconsistently across sources as 侧柏 (Platycladus orientalis) for all three vs. 桧柏 (Juniperus chinensis) for two of them; recorded here as Platycladus orientalis, the species named for the group as a whole and for the Old General specifically, and this discrepancy is flagged for the writer. Age given on official tags as 'about 400 years' but the 2026 source questions this as an underestimate; used a broad band. Local tradition (recalled by a park elder, disputed by the same 2026 article) credited Sun Yat-sen with naming the trio, though records show he likely never visited to plant here; naming may instead trace to other republican-era officials. All three are described as currently standing and green in the cited 2026 source. Entry fee to the park is nominal (2 RMB), making this a functionally free destination.",
+  "paid_entry": true
+ },
+ {
+  "id": "bjs_003",
+  "name": "The Butterfly Scholar Tree of Bolin Temple",
+  "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+  "age_estimate": "roughly 250 years",
+  "age_min": 250,
+  "age_max": 270,
+  "girth_cm": 180,
+  "height_m": 15,
+  "location": {
+   "address": "Weimo Pavilion courtyard, Bolin Temple, 1 Xilou Hutong, Yonghegong Street, Dongcheng District, Beijing",
+   "latitude": 39.9448,
+   "longitude": 116.4137,
+   "neighbourhood": "Bolin Temple (Yonghegong area)"
   },
-  {
-    "id": "bjs_004",
-    "name": "The Ginkgos of the Five Pagoda Temple",
-    "species": "Ginkgo (Ginkgo biloba)",
-    "age_estimate": "roughly 600 years",
-    "age_min": 550,
-    "age_max": 620,
-    "girth_cm": 500,
-    "location": {
-      "address": "Flanking the Diamond Throne (Jin'gang Baozuo) pagoda, Beijing Stone Carving Art Museum (Wuta Temple / Zhenjue Temple site), 24 Wutasi Village, Baishiqiao, Haidian District, Beijing",
-      "latitude": 39.9436,
-      "longitude": 116.3238,
-      "neighbourhood": "Wuta Temple (Five Pagoda Temple)"
-    },
-    "verified_sources": [
-      "https://xinwen.bjd.com.cn/content/s636cb59ee4b0b60bbc5e688e.html",
-      "https://www.visitbeijing.com.cn/article/4OYDXjIzpWC"
-    ],
-    "access": "Paid entry, 20 RMB, includes the Beijing Stone Carving Art Museum; free for the first 200 visitors each Wednesday; open 9:00-17:00, closed Mondays",
-    "transport": "Baishiqiao South station, Line 16, short walk; also reachable from Weigongcun on Line 4",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "A pair of female ginkgo trees standing on either side of the Diamond Throne pagoda (Jin'gang Baozuo Ta), planted when the temple (originally Zhenjue Temple) was built in the Yongle era of the Ming dynasty, giving roughly 600 years of age as of these sources. Reported measurements (visitbeijing.com.cn): height about 25m combined description though the two trees differ, east tree 17m tall and west tree 20m tall and stouter, girth about 5m (500cm) for the larger; recorded girth_cm as the rounder, more heavily cited figure and flagged the height discrepancy between the two trees for the writer. A Qing-dynasty poet, Hong Liangji, wrote verses about these two trees ('two trees stand strange by Wuta's gate'), giving continuity of documentation back centuries. Currently a major autumn photography destination as of a 2026 bjd.com.cn feature describing queues for photo spots when the leaves turn gold in November, which is strong recent alive-and-standing evidence. Location is approximate: pin marks the temple site; the trees stand at the specific pagoda structure within it, not pinned individually. Entry fee is a modest paid ticket (20 RMB), included here to balance the pass's free-heavy candidate set with one very well documented, currently popular specimen pair."
-  }
+  "verified_sources": [
+   "https://s.visitbeijing.com.cn/attraction/118453",
+   "https://upimg.baike.so.com/doc/7614590-7888685.html"
+  ],
+  "access": "Free entry to Bolin Temple; open 9:00-16:30",
+  "transport": "Yonghegong Lama Temple station, Line 2/5, short walk",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "A rare seven-leaflet cultivar of the Chinese scholar tree/Japanese Pagoda Tree, whose small leaves cluster in sevens and flutter like butterflies in the wind, earning it the name 'butterfly scholar tree' (蝴蝶槐, also 七叶槐). Planted during the 23rd year of the Qianlong reign (1758) when Bolin Temple was renovated, making it roughly 250 years old at the time of these sources (both undated but describing it as living and standing); height 15m, trunk girth 1.8m (180cm). Widely described as the oldest and largest surviving specimen of this cultivar in Beijing (only two or three others are known citywide, at Guangji Temple and Jingshan Park). Location is approximate: pin marks the temple building, not the exact tree within the Weimo Pavilion courtyard. Temple itself is a national-level protected cultural relic (2006) built in 1347 (Yuan dynasty), known for its abundance of old cypresses, from which it takes its name ('cypress forest temple'); other ancient cypresses, pines and a ginkgo stand in the grounds but were not individually verified this pass. No specific recent (post-2020) dated sighting found confirming the tree is still alive, though the temple itself remains an active, open, well-documented site; flagged for that gap rather than for the age or measurements, which two independent sources agree on."
+ },
+ {
+  "id": "bjs_004",
+  "name": "The Ginkgos of the Five Pagoda Temple",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "roughly 600 years",
+  "age_min": 550,
+  "age_max": 620,
+  "girth_cm": 500,
+  "location": {
+   "address": "Flanking the Diamond Throne (Jin'gang Baozuo) pagoda, Beijing Stone Carving Art Museum (Wuta Temple / Zhenjue Temple site), 24 Wutasi Village, Baishiqiao, Haidian District, Beijing",
+   "latitude": 39.9436,
+   "longitude": 116.3238,
+   "neighbourhood": "Wuta Temple (Five Pagoda Temple)"
+  },
+  "verified_sources": [
+   "https://xinwen.bjd.com.cn/content/s636cb59ee4b0b60bbc5e688e.html",
+   "https://www.visitbeijing.com.cn/article/4OYDXjIzpWC"
+  ],
+  "access": "Paid entry, 20 RMB, includes the Beijing Stone Carving Art Museum; free for the first 200 visitors each Wednesday; open 9:00-17:00, closed Mondays",
+  "transport": "Baishiqiao South station, Line 16, short walk; also reachable from Weigongcun on Line 4",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "A pair of female ginkgo trees standing on either side of the Diamond Throne pagoda (Jin'gang Baozuo Ta), planted when the temple (originally Zhenjue Temple) was built in the Yongle era of the Ming dynasty, giving roughly 600 years of age as of these sources. Reported measurements (visitbeijing.com.cn): height about 25m combined description though the two trees differ, east tree 17m tall and west tree 20m tall and stouter, girth about 5m (500cm) for the larger; recorded girth_cm as the rounder, more heavily cited figure and flagged the height discrepancy between the two trees for the writer. A Qing-dynasty poet, Hong Liangji, wrote verses about these two trees ('two trees stand strange by Wuta's gate'), giving continuity of documentation back centuries. Currently a major autumn photography destination as of a 2026 bjd.com.cn feature describing queues for photo spots when the leaves turn gold in November, which is strong recent alive-and-standing evidence. Location is approximate: pin marks the temple site; the trees stand at the specific pagoda structure within it, not pinned individually. Entry fee is a modest paid ticket (20 RMB), included here to balance the pass's free-heavy candidate set with one very well documented, currently popular specimen pair.",
+  "paid_entry": true
+ },
+ {
+  "id": "bjs_005",
+  "name": "The Seven Liao Cypresses",
+  "species": "Chinese Arborvitae (Platycladus orientalis)",
+  "age_estimate": "roughly 1,000 years",
+  "age_min": 900,
+  "age_max": 1100,
+  "girth_cm": 590,
+  "location": {
+   "address": "Outside the south gate of the Sheji Altar (社稷坛), Zhongshan Park, Dongcheng District, Beijing",
+   "latitude": 39.9091,
+   "longitude": 116.3869,
+   "neighbourhood": "Zhongshan Park"
+  },
+  "verified_sources": [
+   "https://xinwen.bjd.com.cn/content/s66cc9606e4b07fbcccaf4895.html",
+   "https://peking.bjd.com.cn/content/s60c43b43e4b0b843ec207871.html"
+  ],
+  "access": "Paid entry to Zhongshan Park, 3 RMB (half-price 1.5 RMB); open daily",
+  "transport": "Tian'anmen West station, Line 1, short walk to the park's east gate",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Seven ancient cypresses standing outside the south gate of the Sheji Altar (the Ming/Qing 'Altar of Land and Grain', now Zhongshan Park), said to be relics of the Liao-dynasty Xinguo Temple that stood on the site before the altar was built in 1420, giving a traditional age of 'over 1,000 years'. This is a temple-succession tradition rather than a measured planting date, so treated as a broad estimate. The thickest of the seven has a trunk girth approaching 6 metres (recorded as 590cm, description says needs four adults with arms outstretched to encircle it); another has nine major branches subdividing further, compared in local description to a thousand-armed Guanyin statue. Both sources (bjd.com.cn, recent 2026 pieces) describe the grove as currently thriving, under an active one-tree-one-file conservation and monitoring programme, which is strong current-alive evidence. A separate, well-known feature stands nearby: an over-200-year-old scholar tree growing out of a crack in one of the cypresses ('槐柏合抱', cypress-and-scholartree embrace), not verified as a separate entry this pass. Location is approximate: sources agree on 'south gate of the Sheji Altar' but no individual tree-level coordinate was found; pin uses the park centroid.",
+  "paid_entry": true
+ },
+ {
+  "id": "bjs_006",
+  "name": "The Tang Scholar Tree",
+  "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+  "age_estimate": "roughly 1,200 years",
+  "age_min": 1100,
+  "age_max": 1300,
+  "girth_cm": 596,
+  "height_m": 13,
+  "location": {
+   "address": "Southwest corner of the Guke Courtyard, Huafangzhai, Beihai Park, Xicheng District, Beijing",
+   "latitude": 39.9264,
+   "longitude": 116.3825,
+   "neighbourhood": "Beihai Park"
+  },
+  "verified_sources": [
+   "https://www.beijing.gov.cn/renwen/sy/whkb/201812/t20181220_1864961.html",
+   "https://www.beijing.gov.cn/renwen/sy/whkb/201812/t20181220_1864970.html"
+  ],
+  "access": "Paid entry to Beihai Park: 10 RMB in high season (Apr 1-Oct 31), 5 RMB in low season (Nov 1-Mar 31); combined ticket with inner sites 20/15 RMB",
+  "transport": "Beihai North station, Line 6, or Ping'anli station, Line 4/6, both a short walk",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "One of Beijing's officially named 'Ten Most Beautiful Ancient Tree Kings' (2018 municipal listing). Traditionally dated to the Tang dynasty, giving roughly 1,200 years as of the 2018 listing; this is a traditional/registered age rather than a fresh measurement, so given as a broad band. Grade-1 ancient tree, girth 596cm, height 13m, canopy 9m. Stands in the Guke Courtyard beside the Huafangzhai pavilion; the Qianlong Emperor is said to have built a pavilion and rockery beside it specifically to view and protect the tree, naming the courtyard 'Guke Ting' (Ancient Bole Court) for it. Described in the source as shaped like 'a massive potted landscape' (a deliberately trained, sculptural form), which is its main visual distinction. Both sources trace to the same 2018 municipal 'ten tree kings' survey and are not fully independent measurements, flagged for that reason; no separate recent (post-2020) sighting was found in the time available, though Beihai remains one of the city's most visited and maintained parks. Location is approximate: no tree-level coordinate found; pin uses the park centroid, not the actual courtyard, which sits in the park's northwest quadrant near Huafangzhai.",
+  "paid_entry": true
+ }
 ]

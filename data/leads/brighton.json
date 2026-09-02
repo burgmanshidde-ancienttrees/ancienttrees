@@ -1,0 +1,36 @@
+{
+  "leads": [
+    {
+      "name": "Elm '260' (rare DED-resistance clone)",
+      "location": "Royal Pavilion Garden, Brighton",
+      "reason": "One of only 20 known specimens in the world per Brighton & Hove Museums, part of the National Elm Collection. Not pursued to publication because it reads as scientifically rare rather than genuinely old or visually spectacular (a disease-resistance test clone, not a veteran tree), and no age/size figures were found. Worth a second look if a source ever gives it a story beyond rarity."
+    },
+    {
+      "name": "TROBI champion Ulmus x hollandica 'Wredei' (golden elm)",
+      "location": "Blakers Park, Brighton",
+      "reason": "TROBI-registered champion, measured 2009 at 17m height, 57cm dbh (~179cm girth). Modest size for a champion and no story or age found beyond the register entry; girth suggests a young-to-middle-aged ornamental cultivar rather than an ancient specimen. Parked rather than blocked: worth revisiting with a fresh TROBI pull or a Blakers Park-specific search."
+    },
+    {
+      "name": "Old Steine elms (general)",
+      "location": "Old Steine, central Brighton",
+      "reason": "The brief named Old Steine as a candidate cluster. Multiple sources describe Old Steine's elms collectively (\"the Old Steine War Memorial would look very barren if it wasn't for the elms\") but no source found names or measures an individual specimen there, which is exactly the 'nobody named it' pattern this project's own research notes flag as low-yield. Worth a targeted revisit (council tree survey, TROBI search by postcode) rather than a generic sweep."
+    },
+    {
+      "name": "Three mature Wych elms, tennis pavilion path, Queen's Park",
+      "location": "Queen's Park, Brighton",
+      "reason": "Friends of Queen's Park describes these as 'probably aged over 100 years old' but does not name or measure them individually, and they are distinct from the champion Wych Elm already shipped as bhm_005. Population description, not a single collectible point; leave for a future pass with a site visit or a named source."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Extra-Mural Cemetery yews and oaks (general)",
+      "location": "Extra-Mural Cemetery, Lewes Road, Brighton",
+      "reason": "Sources describe the cemetery's tree population collectively ('the cemetery contains many yew trees along with oaks, beech, rowan, holly') with no individual specimen ever named, dated or measured anywhere found. Fails the collectible-point test: there is no one obvious place to stand. Blocked rather than left as a lead because the brief explicitly named this site and it was checked and came up empty; a future pass should not re-run this exact search without a new angle (e.g. a council tree survey PDF, if one exists, comparable to the Stanmer Park one)."
+    },
+    {
+      "name": "Woodvale Cemetery specimen trees (general)",
+      "location": "Woodvale Cemetery, Lewes Road, Brighton",
+      "reason": "Council and heritage sources describe the cemetery's 'many fine specimen trees' in general terms only; no individual tree found named, aged or measured. Same failure mode as the Extra-Mural Cemetery. Blocked for now; a council arboriculture survey, if one exists, would be the way back in."
+    }
+  ]
+}

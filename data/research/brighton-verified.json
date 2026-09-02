@@ -120,5 +120,26 @@
     "location_precision": "approximate",
     "curation_status": "flagged",
     "verify_notes": "A Wych elm (Ulmus glabra, the only elm truly native to Britain) in Queen's Park, registered with the Tree Register of the British Isles (TROBI) as the Sussex County Champion for its species on girth: 389cm circumference, the widest Wych elm girth recorded in Sussex, measured June 2020. Height given as 23m. Estimated about 200 years old by Friends of Queen's Park (FQP), the group that surveys and reports on it; the same source says it has survived Dutch elm disease, both World Wars and the Great Storm of 1987. Located in the dog exercise area just above the playground. FQP's separate article on the park's elms independently describes several elms in the same part of the park estimated at 100 to 150+ years old, consistent with a mature elm population here, though it names a \"playground elm\" and \"oldest in the park\" without giving the same 389cm figure, so it cannot be treated as full independent confirmation of the champion measurement itself. Both pages are published by the same group (Friends of Queen's Park), so this ships as a single fully-sourced figure rather than two independent ones, flagged for that reason. Queen's Park elms are part of the wider National Elm Collection and benefit from the same council sanitation programme protecting Brighton's elms generally. No news of this specific tree's loss found in later searches. Worth checking TROBI's own database directly in a future pass for a more recent official measurement."
+  },
+  {
+    "id": "bhm_006",
+    "name": "The Cemetery Gateway Elm",
+    "species": "Elm, listed as Lombarts' Elm (Ulmus 'Lombartsii'), identification disputed",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Entrance to Brighton and Preston Cemetery, Hartington Road, Brighton",
+      "latitude": 50.8336,
+      "longitude": -0.1195,
+      "neighbourhood": "Bevendean / Hartington Road"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Ulmus_%27Lombartsii%27",
+      "https://thestreettree.substack.com/p/11-brighton-cemetery-lombartsii"
+    ],
+    "access": "Free, public cemetery, open during daylight hours",
+    "transport": "Bus routes along Bear Road/Hartington Road; about 25-30 min walk from Brighton station",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A corky-barked field elm standing at the entrance to Brighton and Preston Cemetery on Hartington Road, beside a gothic terracotta gateway; a matching tree once stood on the other side of the gate and was lost to Dutch elm disease, leaving this one alone. SPECIES DISPUTE, stated plainly rather than resolved: Brighton and Hove City Council listed the tree as Ulmus 'Lombartsii' in 2022, a rare Dutch nursery cultivar raised at Lombarts of Zundert around 1910 and now very rare in Europe (Wikipedia says this Brighton tree may be the last one, though that claim traces to the same identification). Wikipedia's own cultivar page notes the identification is uncertain: the leaves are close to herbarium 'Lombartsii' specimens but the tree lacks the pendulous branch habit that defines the cultivar, so it may be a different suberose (corky-barked) field elm rather than true 'Lombartsii'. Ship the tree as real and remarkable either way (a rare corky-elm survivor at a historic cemetery gate is worth the visit regardless of the exact cultivar name), state the disputed identification on the page rather than picking a winner, and invite a reader/dendrologist correction. No age, girth or height figure found in either source. No independent evidence checked for continued survival beyond the 2022 council listing; worth a fresh photo check on a future pass. Public cemetery, open access, no restriction found."
   }
 ]

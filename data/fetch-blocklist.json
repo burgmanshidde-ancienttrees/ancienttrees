@@ -361,6 +361,11 @@
    "what": "Fails to resolve or connect entirely, curl exit 1, HTTP 000.",
    "workaround": "unknown; the KL pass used FRIM's own site and tourism sources instead",
    "date": "2026-09-02"
+  },
+  "mybrightonandhove.org.uk": {
+   "what": "403 to curl.",
+   "workaround": "unknown; the Brighton pass used the council, Brighton & Hove Museums and the Ancient Yew Group instead",
+   "date": "2026-09-02"
   }
  }
 }
