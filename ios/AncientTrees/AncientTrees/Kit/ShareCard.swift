@@ -62,18 +62,28 @@ enum ShareCard {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                 } else {
+                    // A DESIGNED CARD, not the page's grey placeholder blown up
+                    // to 1080 points. On the page a pale mark on a muted ground
+                    // reads as an honest gap next to the words explaining it;
+                    // alone in somebody's Instagram story the same picture reads
+                    // as a screenshot of something that failed to load. So the
+                    // ground is the brand's dark green and the mark is large.
                     ZStack {
-                        Brand.surfaceMuted
-                        SpeciesMark(species: species ?? "", color: Brand.inkSoft.opacity(0.5))
-                            .frame(width: 320, height: 320)
+                        Brand.canopy
+                        SpeciesMark(species: species ?? "", color: .white.opacity(0.22))
+                            .frame(width: 560, height: 560)
+                            .offset(y: -80)
                     }
                 }
                 // The words sit on the photograph, so they need their own
                 // ground: a dark gradient rather than a bar, which is what
                 // every card of this kind does and what keeps the picture
                 // whole.
+                // From below the middle rather than from it: at .center the
+                // gradient darkened half the photograph, and the photograph is
+                // the thing being shared.
                 LinearGradient(colors: [.clear, .black.opacity(0.75)],
-                               startPoint: .center, endPoint: .bottom)
+                               startPoint: UnitPoint(x: 0.5, y: 0.62), endPoint: .bottom)
                 VStack(alignment: .leading, spacing: 14) {
                     Text(name)
                         .font(.brand(76, .bold))
