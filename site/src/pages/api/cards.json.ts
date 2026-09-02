@@ -59,6 +59,12 @@ export async function GET() {
         // rule that quietly disagrees with the app's.
         ...(tree.species ? { sp: tree.species } : {}),
         k: city.data.country,
+        // The pin, so a profile can draw somebody's own map without a second
+        // request. Two numbers per tree against the 700 KB this file already
+        // is, and it is the only place the coordinates could come from: the
+        // account stores a tree id and nothing else, deliberately.
+        y: tree.location.latitude,
+        x: tree.location.longitude,
         ...(meta ? { m: meta } : {}),
         ...(photo?.url
           ? { p: thumbUrl(photo.url, 500), p9: thumbUrl(photo.url, 900) }

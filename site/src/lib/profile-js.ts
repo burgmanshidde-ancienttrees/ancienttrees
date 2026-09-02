@@ -86,10 +86,33 @@ export const PROFILE_JS = `
     if (window.atPaintSaves) window.atPaintSaves();
   }
 
+  // YOUR OWN MAP, the Polarsteps half of the profile (2026-09-02). Both lists
+  // go on it, drawn differently: a tree you have stood in front of is done and
+  // is filled in, a tree you saved is still ahead of you and is hollow. Same
+  // filled-versus-hollow language the heart itself uses.
+  function pins(saves, visited, cards) {
+    if (!window.atSetMyTrees) return;
+    var got = {};
+    visited.forEach(function(id) { got[id] = true; });
+    var all = visited.concat(saves.filter(function(id) { return !got[id]; }));
+    var features = [];
+    all.forEach(function(id) {
+      var c = cards[id];
+      if (!c || typeof c.x !== 'number' || typeof c.y !== 'number') return;
+      features.push({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [c.x, c.y] },
+        properties: { name: c.n, city: c.c || '', url: c.u, got: got[id] ? 1 : 0 }
+      });
+    });
+    window.atSetMyTrees(features);
+  }
+
   function load(token) {
     identity(token);
     Promise.all([C.saves(), C.visited(), C.catalogue()]).then(function(r) {
       var saves = r[0], visited = r[1], cards = r[2];
+      pins(saves, visited, cards);
       list(el('saved-list'), el('saved-empty'), saves, cards, true);
       // My trees holds what you checked in at. The trees you ADDED are
       // rendered under it by my-trees-js, from a different table and behind a

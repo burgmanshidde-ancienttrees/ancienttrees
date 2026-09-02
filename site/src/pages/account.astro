@@ -30,6 +30,8 @@ import { MY_TREES_JS } from "../lib/my-trees-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import SignInModal from "../components/SignInModal.astro";
 import { SIGNIN_JS } from "../lib/signin-js";
+import { myTreesMapScript, mapHead } from "../lib/map";
+import { SHEET_JS } from "../lib/sheet-js";
 
 const canonical = `${BASE_URL}/account`;
 ---
@@ -37,9 +39,16 @@ const canonical = `${BASE_URL}/account`;
   title="Your trees"
   description="Keep your tree collection on every device."
   canonical={canonical}
-  headExtra='<meta name="robots" content="noindex, nofollow">'
+  headExtra={'<meta name="robots" content="noindex, nofollow">' + mapHead()}
+  footer={false}
 >
-<main class="content-page account-page">
+{/* THE SHARED MAP-PAGE SKELETON, the one the city page and /explore already
+    use: panel on the left, map filling the rest. Not a third layout, per the
+    rule this project has had to learn twice (one layout for map pages: fix
+    the shared piece, never one page). */}
+<div class="split">
+  <aside class="panel" id="sheet">
+  <div class="sheet-grab"><div class="panel-head">
 
   <section id="st-signin" class="acct-card">
     <p class="hero-kicker">Your tree collection</p>
@@ -103,6 +112,9 @@ const canonical = `${BASE_URL}/account`;
         the screen. */}
     <a class="go-btn profile-add" href="/contribute?kind=tree">Add a tree</a>
   </section>
+  </div></div>
+
+  <div class="sheet-body">
 
   <!-- TWO LANES, THE APP'S TWO LANES, in the app's order and with the app's
        words (Hidde, 2026-08-26: "ik zou daar op openen, niet op favourites").
@@ -126,9 +138,14 @@ const canonical = `${BASE_URL}/account`;
       <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
     </div>
   </section>
-  <SignInModal />
-</main>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + PROFILE_JS + MY_TREES_JS + `
+  </div>
+  </aside>
+  <div class="stage">
+    <div id="map" class="map"></div>
+  </div>
+</div>
+<SignInModal />
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + myTreesMapScript() + PROFILE_JS + MY_TREES_JS + SHEET_JS + `
 <script>
 (function() {
   var SB = "${SUPABASE_URL}";

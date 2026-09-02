@@ -327,6 +327,110 @@ renderPanel();
 }
 
 /** "the Netherlands" in a sentence, "The Netherlands" at its start. */
+/** YOUR OWN MAP, on your own profile.
+ *
+ * Hidde, 2026-09-02, having put the Polarsteps profile beside ours: "kun je
+ * het helemaal gelijk trekken met polarsteps - dat je dus ook een persoonlijke
+ * kaart naast je account krijgt met jouw bomen - zoals op de app account
+ * pagina." Polarsteps gives half the profile to a world map of where you have
+ * been; our own app puts the map above the profile sheet with your trees
+ * pinned on it. Both make the same point, which is that a collection is a
+ * shape rather than a list.
+ *
+ * It is the SAME map as everywhere else: the same style, the same wrapper, the
+ * same .split skeleton the city and explore pages share, because the one thing
+ * this project has learned twice about maps is that a second implementation
+ * drifts (CLAUDE.md, one layout for map pages).
+ *
+ * What differs is where the pins come from. Every other map bakes its features
+ * at build time; this one cannot, because whose trees they are is only known
+ * once somebody signs in. So it starts empty and profile-js hands it the
+ * features through atSetMyTrees() once the account has answered. An empty map
+ * is the honest first frame: it is what a collection with nothing in it looks
+ * like.
+ */
+export function myTreesMapScript(): string {
+  return mapScript(`
+var map = new maplibregl.Map({
+  container: 'map', style: '${MAP_STYLE}',
+  center: [8, 48], zoom: 2.6, minZoom: 1.3,
+  renderWorldCopies: false,
+  attributionControl: {compact: true}
+});
+map.addControl(new maplibregl.NavigationControl());
+new ResizeObserver(function() { map.resize(); }).observe(document.getElementById('map'));
+
+var EMPTY = { type: 'FeatureCollection', features: [] };
+var pending = null;
+
+function initMine() {
+  if (map.getSource('mine')) { return; }
+  map.addSource('mine', { type: 'geojson', data: EMPTY, cluster: true,
+                          clusterMaxZoom: 11, clusterRadius: 42 });
+  map.addLayer({id: 'mine-clusters', type: 'circle', source: 'mine',
+    filter: ['has', 'point_count'],
+    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
+            'circle-radius': ['step', ['get', 'point_count'], 14, 10, 18, 30, 24],
+            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
+  map.addLayer({id: 'mine-count', type: 'symbol', source: 'mine',
+    filter: ['has', 'point_count'],
+    layout: {'text-field': ['get', 'point_count_abbreviated'],
+             'text-font': ['Noto Sans Regular'], 'text-size': 12},
+    paint: {'text-color': '#F6F2E9'}});
+  // TWO KINDS OF PIN, because the profile holds two independent lists and
+  // they mean opposite things: a tree you have stood in front of is done, a
+  // tree you saved is still ahead of you. Filled moss for collected, hollow
+  // for a favourite, which is the same filled-versus-hollow language the
+  // heart itself uses.
+  map.addLayer({id: 'mine-tree', type: 'circle', source: 'mine',
+    filter: ['!', ['has', 'point_count']],
+    paint: {'circle-color': ['case', ['==', ['get', 'got'], 1], '#4A6B2A', 'rgba(0,0,0,0)'],
+            'circle-radius': 7,
+            'circle-stroke-width': 2.5,
+            'circle-stroke-color': ['case', ['==', ['get', 'got'], 1], '#F6F2E9', '#4A6B2A']}});
+  map.on('click', 'mine-tree', function(e) {
+    var p = e.features[0].properties;
+    new maplibregl.Popup({offset: 12})
+      .setLngLat(e.features[0].geometry.coordinates)
+      .setHTML('<strong>' + p.name + '</strong><br>' + p.city +
+               '<br><a href="' + p.url + '">See this tree &rarr;</a>')
+      .addTo(map);
+  });
+  map.on('click', 'mine-clusters', function(e) {
+    var f = map.queryRenderedFeatures(e.point, {layers: ['mine-clusters']})[0];
+    map.getSource('mine').getClusterExpansionZoom(f.properties.cluster_id).then(function(z) {
+      map.easeTo({center: f.geometry.coordinates, zoom: z + 0.5, duration: 700});
+    });
+  });
+  ['mine-clusters', 'mine-tree'].forEach(function(l) {
+    map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', l, function() { map.getCanvas().style.cursor = ''; });
+  });
+  if (pending) { paint(pending); pending = null; }
+}
+
+function paint(features) {
+  map.getSource('mine').setData({ type: 'FeatureCollection', features: features });
+  if (!features.length) { return; }
+  // Frame the whole collection. One tree gets a city-level zoom rather than
+  // a bounding box of nothing.
+  var b = new maplibregl.LngLatBounds();
+  features.forEach(function(f) { b.extend(f.geometry.coordinates); });
+  if (features.length === 1) { map.easeTo({ center: features[0].geometry.coordinates, zoom: 12 }); }
+  else { map.fitBounds(b, { padding: 70, maxZoom: 12, duration: 700 }); }
+}
+
+// Called by profile-js once the account has said which trees are yours. It
+// may arrive before or after the style loads, so both orders work.
+window.atSetMyTrees = function(features) {
+  if (map.getSource('mine')) { paint(features); } else { pending = features; }
+};
+
+map.on('style.load', initMine);
+if (map.isStyleLoaded()) { initMine(); }
+`);
+}
+
 export function countryName(intro: { country: string; article?: string }, capital = false): string {
   const art = intro.article;
   if (!art) return intro.country;
