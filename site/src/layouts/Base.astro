@@ -9,7 +9,7 @@
 //     equivalent of build_site.py's ERRORS.append(), which collected and
 //     reported at the very end of the build instead).
 import { STYLE_HREF } from "../lib/asset-hash";
-import { ui } from "../lib/ui-strings";
+import { chrome } from "../lib/ui-strings";
 import AppModal from "../components/AppModal.astro";
 import {
   AUTH_ENABLED,
@@ -41,7 +41,7 @@ const { title, description, canonical, ogType = "article", headExtra = "", foote
 // The interface in the page's own language. A translated page used to serve
 // its stories in Spanish or Japanese inside an English frame; see
 // site/src/lib/ui-strings.ts for the measurement and the convention behind it.
-const t = ui(lang);
+const t = chrome(lang);
 
 if (title.length > TITLE_MAX) {
   throw new Error(`${canonical}: title exceeds ${TITLE_MAX} chars (${title.length}): ${JSON.stringify(title)}`);
