@@ -1,0 +1,52 @@
+name: Monday mail
+
+# The only thing in this project that reaches Hidde rather than waiting for
+# him. Written 2026-09-02 because he is in Japan for the coming months and
+# asked how the machine keeps going without him. Every alarm here fires into a
+# file that only a session reads, which is why the fresh-eyes review could fail
+# three mornings running in August and the weekly analysis could be dead for a
+# week before anybody noticed.
+#
+# One screen, Monday morning. The alarm at the top, the machine's seven days
+# under it, then DATA.md's newest entry passed through unchanged.
+#
+# WEEKLY_TO is a repository secret because this repository is public. Without
+# it the job prints the mail and sends nothing, which is also how to preview it:
+# gh workflow run weekly-mail.yml
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      send:
+        description: "Actually send it (otherwise it only prints)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  mail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compose and send
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WEEKLY_TO: ${{ secrets.WEEKLY_TO }}
+          OUTREACH_SMTP_HOST: ${{ secrets.OUTREACH_SMTP_HOST }}
+          OUTREACH_SMTP_PORT: ${{ secrets.OUTREACH_SMTP_PORT }}
+          OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
+          OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
+          OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.send }}" = "true" ]; then
+            python3 scripts/weekly_mail.py --send
+          else
+            python3 scripts/weekly_mail.py
+          fi
