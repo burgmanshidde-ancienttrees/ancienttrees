@@ -36,6 +36,11 @@ struct TreeDetail: View {
     @State private var reportOpening: String?
     @State private var placing = false
 
+    private func stopSharing() {
+        guard let m = mine else { return }
+        Task { await SightingSync.unpublish(m, account: account, sightings: sightings) }
+    }
+
     private func report(_ opening: String) {
         reportOpening = opening
         reporting = true
@@ -48,7 +53,17 @@ struct TreeDetail: View {
     /// The picture the share sheet hands on, drawn once when a tree of yours
     /// is opened. Nil until then, and only ever set on your own trees: ours
     /// have a page on the web and share that instead, from the toolbar.
-    @State private var shareCard: Image?
+    /// The picture the share sheet hands on beside the link, drawn once when a
+    /// tree of yours is opened. Only ever set on your own trees: ours have a
+    /// page on the web and share that, from the toolbar.
+    @State private var shareImage: UIImage?
+    /// Set while the page is being made, so the button says something is
+    /// happening rather than looking dead on a slow connection.
+    @State private var preparing = false
+    /// What the sheet hands on, and whether it is up.
+    @State private var shareItems: [Any] = []
+    @State private var sharing = false
+    @State private var shareFailed = false
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -274,6 +289,14 @@ struct TreeDetail: View {
                         Button { placing = true } label: {
                             Label("Move the pin", systemImage: "mappin.and.ellipse")
                         }
+                        // TAKING THE LINK BACK, in the same menu as removing,
+                        // because it is the same kind of act. It only appears
+                        // once there is something to take back.
+                        if mine?.shared == true {
+                            Button { stopSharing() } label: {
+                                Label("Stop sharing the link", systemImage: "link.slash")
+                            }
+                        }
                         Divider()
                         Button(role: .destructive) { removing = true } label: {
                             Label("Remove this tree", systemImage: "trash")
@@ -286,6 +309,12 @@ struct TreeDetail: View {
                     .accessibilityLabel("More")
                 }
             }
+        }
+        .sheet(isPresented: $sharing) { ShareSheet(items: shareItems) }
+        .alert("That did not send", isPresented: $shareFailed) {
+            Button("All right", role: .cancel) {}
+        } message: {
+            Text("Your tree is safe here. Try the link again when you have signal.")
         }
         .confirmationDialog("Remove \(tree.name) from your trees?",
                             isPresented: $removing, titleVisibility: .visible) {
@@ -322,12 +351,13 @@ struct TreeDetail: View {
             // only if it has not been drawn already: this runs again when the
             // view comes back and redrawing 1080 by 1350 pixels for nothing is
             // the kind of waste nobody ever sees and everybody's battery pays.
-            if let m = mine, shareCard == nil {
-                shareCard = Image(uiImage: ShareCard.render(
+            if let m = mine, shareImage == nil {
+                let drawn = ShareCard.render(
                     photo: sightings.image(m),
                     name: tree.name,
                     species: tree.species.isEmpty ? nil : tree.commonName,
-                    date: m.date))
+                    date: m.date)
+                shareImage = drawn
             }
             Measure.event("tree_opened", ["tree": mine == nil ? tree.id : "own"])
             // Debug scaffolding, same family as -tab, -select and -collected:
@@ -1154,15 +1184,38 @@ struct TreeDetail: View {
                 // The button appears when the card has been drawn, a few
                 // milliseconds after the page does. A button that is there but
                 // does nothing until then would be worse.
-                if let card = shareCard {
-                    ShareLink(item: card,
-                              preview: SharePreview(tree.name, image: card)) {
+                // IT SHARES A LINK NOW, not only a picture (Hidde,
+                // 2026-09-02: "kunnen we niet een pagina maken van de boom die
+                // wel deelbaar is?"). The page is unlisted and it does not
+                // exist until this button is tapped, which is why this is a
+                // button and a sheet rather than a ShareLink: a ShareLink needs
+                // its item before anybody has asked for one, and nothing of
+                // somebody's should be published by opening a page.
+                //
+                // The picture goes in beside the link, so Instagram takes the
+                // card and Messages takes both. See Kit/ShareSheet.swift.
+                Button {
+                    guard let m = mine, !preparing else { return }
+                    preparing = true
+                    Task {
+                        let url = await SightingSync.publish(m, account: account,
+                                                             sightings: sightings)
+                        preparing = false
+                        guard let url else { shareFailed = true; return }
+                        var items: [Any] = [url]
+                        if let img = shareImage { items.append(img) }
+                        shareItems = items
+                        sharing = true
+                    }
+                } label: {
+                    HStack(spacing: 8) {
+                        if preparing { ProgressView().tint(.white) }
                         Label("Share this tree", systemImage: "square.and.arrow.up")
                             .lineLimit(1)
                     }
-                    .buttonStyle(BrandButtonStyle())
-                    .accessibilityIdentifier("mine-share")
                 }
+                .buttonStyle(BrandButtonStyle())
+                .accessibilityIdentifier("mine-share")
             } else {
                 Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
                     Label("Take me there", systemImage: "arrow.turn.up.right")
