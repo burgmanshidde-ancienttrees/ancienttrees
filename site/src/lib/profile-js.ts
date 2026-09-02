@@ -41,7 +41,6 @@ export const PROFILE_JS = `
       .then(function(r) { return r.ok ? r.json() : null; })
       .then(function(u) {
         if (!u) return;
-        if (u.email) setText('in-email', u.email);
         var fallback = u.email ? u.email.split('@')[0] : 'Your trees';
         setText('in-handle', fallback);
         var av = el('in-avatar');
@@ -96,8 +95,6 @@ export const PROFILE_JS = `
       // rendered under it by my-trees-js, from a different table and behind a
       // signed url, because those photographs are private.
       list(el('visited-list'), null, visited, cards, false);
-      var out = el('mine-signedout');
-      if (out) out.hidden = true;
 
       // The app's three numbers, from the app's own definitions. Trees adds
       // the sightings count that my-trees-js reports separately.
