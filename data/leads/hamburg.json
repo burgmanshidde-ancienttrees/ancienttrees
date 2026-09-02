@@ -2,19 +2,27 @@
  "leads": [
   {
    "name": "Schiefe Eiche im Jenischpark (Leaning Oak, Jenischpark)",
-   "reason": "Only one source cited by Wikipedia's city tree list (monumentaltrees.com, which 403s automated fetches and could not be verified this pass). No age given. A WebSearch AI summary produced details that actually belong to the neighbouring Hollow Oak / Birch-in-Oak entries (same park, different coordinates), which is exactly the search-summary conflation risk this project has been burned by before, so those details were discarded rather than used. Needs a session that can browse monumentaltrees.com directly, or another independent source, before it can ship."
+   "reason": "Only one source cited by Wikipedia's city tree list (monumentaltrees.com, which 403s automated fetches and could not be verified this pass). No age given. A WebSearch AI summary produced details that actually belong to the neighbouring Hollow Oak / Birch-in-Oak entries (same park, different coordinates), which is exactly the search-summary conflation risk this project has been burned by before, so those details were discarded rather than used. Needs a session that can browse monumentaltrees.com directly, or another independent source, before it can ship.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Alte Linde im Hammer Park (Hamm)",
-   "reason": "Not reached this pass (time-boxed). Wikipedia's citywide tree list calls it the oldest and thickest lime in Hamburg, planted 1616 +/- 50, girth 5.30 m (2016), coordinates given. Cross-checked by baumkunde.de and monumentaltrees.com per the list's own footnotes. Strong candidate for a future pass; would need baumkunde.de fetched directly to confirm since monumentaltrees.com cannot be curled."
+   "reason": "Not reached this pass (time-boxed). Wikipedia's citywide tree list calls it the oldest and thickest lime in Hamburg, planted 1616 +/- 50, girth 5.30 m (2016), coordinates given. Cross-checked by baumkunde.de and monumentaltrees.com per the list's own footnotes. Strong candidate for a future pass; would need baumkunde.de fetched directly to confirm since monumentaltrees.com cannot be curled.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Fontenay-Platane in Rotherbaum (Mittelweg 185)",
-   "reason": "BLOCKED, not merely unreached: stands on the grounds of the Egyptian Consulate General Hamburg (Gartenhaus Fontenay, Mittelweg 183/185), described in its own source as \"hinten\" (at the back of the property). No source states it is visible from public ground, and a foreign consulate is not a place the public may enter without invitation. Fails hard rule 10's access test."
+   "reason": "BLOCKED, not merely unreached: stands on the grounds of the Egyptian Consulate General Hamburg (Gartenhaus Fontenay, Mittelweg 183/185), described in its own source as \"hinten\" (at the back of the property). No source states it is visible from public ground, and a foreign consulate is not a place the public may enter without invitation. Fails hard rule 10's access test.",
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Eiche am Licentiatenberg (Harvestehude)",
-   "reason": "Not reached this pass. Wikipedia notes it is \"Halbinvalide, Sanierung eingestellt\" (half-invalid, restoration work discontinued), which raises a real vitality question that would need checking against a recent source before it could ship as alive and healthy."
+   "reason": "Not reached this pass. Wikipedia notes it is \"Halbinvalide, Sanierung eingestellt\" (half-invalid, restoration work discontinued), which raises a real vitality question that would need checking against a recent source before it could ship as alive and healthy.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Tibarg-Eiche in Niendorf",
