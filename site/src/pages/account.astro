@@ -10,6 +10,7 @@ import Base from "../layouts/Base.astro";
 import { BASE_URL } from "../lib/schema";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { SAVED_LIST_JS } from "../lib/saved-list-js";
+import { MY_TREES_JS } from "../lib/my-trees-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import SignInModal from "../components/SignInModal.astro";
 import { SIGNIN_JS } from "../lib/signin-js";
@@ -73,11 +74,12 @@ const canonical = `${BASE_URL}/account`;
     <div class="acct-identity">
       <strong id="in-email"></strong>
       <div class="stat-row">
-        <div class="stat"><b id="n-trees">0</b><span>saved trees</span></div>
-        <div class="stat alt"><b id="n-cities">0</b><span>cities</span></div>
+        <div class="stat"><b id="n-mine">0</b><span>your trees</span></div>
+        <div class="stat alt"><b id="n-trees">0</b><span>saved</span></div>
+        <div class="stat"><b id="n-cities">0</b><span>cities</span></div>
       </div>
     </div>
-    <p class="acct-sub" id="in-note">Your saved trees follow this account to any device. The trees you have stood in front of live in the app, and it brings those too.</p>
+    <p class="acct-sub" id="in-note">The trees you photographed and the ones you saved follow this account to any device.</p>
     <!-- Said plainly because Google and Apple hand out different addresses, and
          Apple's is a private relay by default. Somebody who signs in with Apple
          on the phone and Google here would otherwise see an empty collection
@@ -136,15 +138,38 @@ const canonical = `${BASE_URL}/account`;
     </details>
   </section>
 
-  <section class="acct-saved" id="saved">
-    <h2>Saved trees</h2>
-    <p class="prose-block" id="saved-sub">The trees you tapped Save on. Sign in above to see them here and on any other device.</p>
-    <ul id="saved-list" class="saved-list" hidden></ul>
-    <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
+  <!-- TWO LANES, BUILT LIKE THE APP'S MY TREES SCREEN (Hidde, 2026-09-02: "de
+       web account pagina moet veel meer de opbouw van app gaan krijgen"). The
+       app has held these as two independent lists since 2026-08-26, opening on
+       your own trees rather than on the wishlist, because the page is called
+       My trees and the trees that are yours are the ones you photographed; a
+       list of things you have not seen yet is the second question.
+
+       The picker is a tab pair rather than the app's segmented control: same
+       behaviour, and the design is per surface (CLAUDE.md's both-surfaces
+       rule). It sits outside the signed-in card because the saved lane works
+       signed out, from this device alone, and always has. -->
+  <section class="acct-lanes" id="lanes">
+    <div class="lane-picker" role="tablist" aria-label="Your lists">
+      <button type="button" id="lane-mine" class="lane on" role="tab" aria-selected="true" aria-controls="pane-mine">My trees</button>
+      <button type="button" id="lane-saved" class="lane" role="tab" aria-selected="false" aria-controls="pane-saved">Saved</button>
+    </div>
+
+    <div id="pane-mine" role="tabpanel" aria-labelledby="lane-mine">
+      <ul id="mine-list" class="saved-list" hidden></ul>
+      <p id="mine-empty" hidden>You can add a tree in the app by photographing it and filling in what you know. <a href="/app">Get the app</a>.</p>
+      <p id="mine-signedout" hidden>Sign in above and the trees you photographed appear here.</p>
+    </div>
+
+    <div id="pane-saved" role="tabpanel" aria-labelledby="lane-saved" hidden>
+      <p class="prose-block" id="saved-sub">The trees you tapped Save on. Sign in above to see them here and on any other device.</p>
+      <ul id="saved-list" class="saved-list" hidden></ul>
+      <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
+    </div>
   </section>
   <SignInModal />
 </main>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + SAVED_LIST_JS + `
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + VISITED_SYNC_JS + SAVED_LIST_JS + MY_TREES_JS + `
 <script>
 (function() {
   var SB = "${SUPABASE_URL}";
@@ -192,6 +217,7 @@ const canonical = `${BASE_URL}/account`;
       })
       .catch(function() {});
     localStats();
+    if (window.atLoadMine) window.atLoadMine(session.access_token);
     show("st-in");
   }
 
@@ -298,6 +324,21 @@ const canonical = `${BASE_URL}/account`;
     });
   });
 
+  // The lane picker. Two panes, one visible, and the tab that is on says so
+  // to a screen reader as well as in ink.
+  var lanes = [["lane-mine", "pane-mine"], ["lane-saved", "pane-saved"]];
+  lanes.forEach(function(pair) {
+    document.getElementById(pair[0]).addEventListener("click", function() {
+      lanes.forEach(function(other) {
+        var on = other[0] === pair[0];
+        var tab = document.getElementById(other[0]);
+        tab.classList.toggle("on", on);
+        tab.setAttribute("aria-selected", on ? "true" : "false");
+        document.getElementById(other[1]).hidden = !on;
+      });
+    });
+  });
+
   document.getElementById("signout").addEventListener("click", function() {
     try {
       var s = JSON.parse(localStorage.getItem("ancienttrees_session"));
@@ -305,6 +346,7 @@ const canonical = `${BASE_URL}/account`;
         headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } }).catch(function() {});
     } catch (e) {}
     try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
+    if (window.atClearMine) window.atClearMine();
     show("st-signin");
   });
   // Account deletion: calls the delete_user() SECURITY DEFINER function in
@@ -328,6 +370,7 @@ const canonical = `${BASE_URL}/account`;
       .then(function(r) {
         if (r.ok) {
           try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
+          if (window.atClearMine) window.atClearMine();
           delArmed = false;
           delBtn.textContent = "Delete my account";
           show("st-signin");
