@@ -1,0 +1,28 @@
+[
+ {
+  "id": "ngn_001",
+  "name": "The Jindai-zakura of Suzakura Shrine",
+  "species": "Edohigan Cherry (Prunus itosakura, syn. Prunus spachiana f. ascendens)",
+  "age_estimate": "about 1,200 years",
+  "age_min": 1000,
+  "age_max": 1400,
+  "girth_cm": 1130,
+  "location": {
+   "address": "513 Izumidaira, Nagano City, Nagano Prefecture (長野県長野市泉平513, 素桜神社/Suzakura-jinja)",
+   "latitude": 36.680364,
+   "longitude": 138.162017,
+   "neighbourhood": "Izumidaira, Nagano City"
+  },
+  "verified_sources": [
+   "https://online.bunka.go.jp/heritages/detail/216449",
+   "https://ja.wikipedia.org/wiki/%E7%B4%A0%E6%A1%9C%E7%A5%9E%E7%A4%BE",
+   "https://www.nagano-cvb.or.jp/modules/sightseeing/page/374",
+   "https://article.yahoo.co.jp/detail/158e70b3ae028c3322ac382bd3c1ece26a00f02a"
+  ],
+  "access": "Free, no ticket, shrine grounds open to the public like any Shinto shrine precinct. No parking at the site. Reached only by bus/taxi plus a real walk (see transport); a genuinely rural approach, not a doorstep visit.",
+  "transport": "About 40 minutes by car from Nagano IC. By public transport (weekdays only): bus from JR Nagano Station (about 5 min) to 'Hana no Komichi', then a shared taxi (about 21 min) to 'Sakagaku', then about a 30-minute walk. An alternative cited route is roughly 30 minutes by bus from Nagano Station followed by a 30-minute walk.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "IMPORTANT NAME COLLISION, exactly as the brief warned: this is a DIFFERENT tree from the already-published Jindai-zakura in Hokuto, Yamanashi (35.780798, 138.367517). 'Jindai-zakura' is a generic type-name ('ancient/age-of-the-gods cherry') used for several famous old cherries around Japan, not a unique proper name. This one stands at Suzakura Shrine (素桜神社), Izumidaira, Nagano City, Nagano Prefecture -- a different prefecture, about 100km from Hokuto's tree. Do not merge or confuse the two records; recommend the id/slug for this one explicitly include 'Suzakura' or 'Nagano' to avoid collision with the Hokuto tree in the database and on any collection page. National Natural Monument, designated 1935-12 (the exact day varies by source: online.bunka.go.jp says the 24th, ja.wikipedia and a search-aggregated summary say the 14th; both agree on December 1935, so treat only the day as uncertain and say 'December 1935'). Species is Edohigan-zakura (a wild cherry, Prunus itosakura, sometimes cited under the older synonym Prunus spachiana f. ascendens); it is described as the only nationally-designated natural monument cherry tree in Nagano Prefecture, and the Noh play 'Suzakura' is said to be based on it, with a legend that the god Susanoo-no-Mikoto planted his walking staff here and it grew into this tree. Measurements disagree across sources in the normal register-pitfall way: trunk girth at breast height 11.3m per one detailed source, 'root circumference' given separately as approximately 9m to 9.8m by others -- these are two different measurement points on the same tree, not a contradiction; used the breast-height figure (1130cm) for girth_cm and noted both in this field. Height is not clearly documented anywhere I found (one source guesses 'roughly 10m'); left out of the record rather than guessed. Damage history: the southern of what were originally three major trunks broke in a Taisho-era (1912-1926) windstorm, weakening the remaining two, which now stand on supports; a tree doctor treated it in 1992 after it had visibly weakened. ALIVE evidence is strong and recent: a Yahoo News guide article dated 2026-04-08/09 (five months before this research) describes it as a current seasonal destination with a stated late-April-to-early-May bloom window, meaning it was being actively written about as a living, blooming tree this same year. Access: ordinary open shrine grounds, no fee, no appointment; genuinely rural with no parking and a real walk from the nearest transit stop, which the access/transport fields say honestly rather than implying a doorstep visit."
+ }
+]

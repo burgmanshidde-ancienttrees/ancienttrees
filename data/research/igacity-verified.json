@@ -1,0 +1,26 @@
+[
+ {
+  "id": "iga_001",
+  "name": "Takakura Jinja no Shibunashigaya",
+  "species": "Japanese Torreya, Shibunashi variety (Torreya nucifera var. shibunashi)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 305,
+  "location": {
+   "address": "Takakura Shrine, Nishi-Takakura 1050-2, Iga City, Mie Prefecture",
+   "latitude": 34.795445,
+   "longitude": 136.090822,
+   "neighbourhood": "Nishi-Takakura, Iga City"
+  },
+  "verified_sources": [
+   "https://ja.wikipedia.org/wiki/高倉神社のシブナシガヤ",
+   "https://online.bunka.go.jp/heritages/detail/205593"
+  ],
+  "access": "Free, on Takakura Shrine's open grounds; Wikipedia notes the tree is deliberately left unsignposted (to protect it, as its rare seeds were historically valuable), so it takes some looking but nothing blocks entry.",
+  "transport": "Iga Railway to Ueno-ichi Station, then a bus toward Toriiide (get off at Toriiide, about 6 minutes' walk to the shrine); or about 10 minutes by car from the regional highway.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "IMPORTANT PLACEMENT FLAG: this tree is NOT in Nara Prefecture and not part of the Uda cluster. It is in Iga City, Mie Prefecture, roughly 35-40km north-northeast of the Uda trees (tmpb_001-003), across a prefecture line. The brief guessed 'further south in the same prefecture' (Nara); that is wrong on both counts, confirmed by two sources giving the address as Nishi-Takakura, Iga City, Mie Prefecture, and by the tree's own Wikipedia coordinates (34d47'46.0\"N 136d5'25.6\"E, matching the given lead coordinate to within about 50m). This should NOT be folded into an 'Uda' page; it needs its own placement decision (an Iga City page, or held as a lead until one exists). National Natural Monument, designated 25 July 1932 (the same tier and same year as the Yatsufusa Sugi cedar above, both from the first wave of Taisho/early-Showa era natural monument designations). Height about 21m, forks into two main limbs about 2m up, then into 6 (west side, showing decay) and 5 (east side) branches roughly 10m higher. Girth figures given oddly (breast-height circumference 305cm reported alongside a SMALLER 'base' circumference of 2.5m/250cm, which is physically backwards since base is normally wider than breast height; likely a translation or transcription issue in the source, flagged as a register-pitfall-style number rather than silently corrected, girth_cm uses the breast-height 305cm figure as the more standard measurement). Species is a rare variety of Torreya nucifera (Japanese torreya, called 'kaya') whose seeds lack the normal bitter/astringent skin around the kernel, prized historically and called 'bee-larva kaya' or 'white-rice kaya'; presented to feudal lords in the Edo period. Only two or three such nationally-designated Shibunashigaya specimens exist in Japan (one other, at Kakoji temple, also Mie; a third was delisted after it died), which is itself a strong rarity/significance signal independent of age. No age figure exists in any source found; left empty per the brief's own instruction rather than guess, good candidate for a reader question."
+ }
+]
