@@ -3394,6 +3394,53 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-02T17:29:32+00:00",
+   "date": "2026-09-02",
+   "run_id": "33661365369",
+   "minutes": 50.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 380,
+   "denials": 47,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(find), Bash(for), Bash(git), Bash(grep), Bash(if), Bash(ls), Bash(mkdir), Bash(pip3), Bash(python3), Bash(rm), Bash(timeout), Bash(type)",
+   "ended": "success",
+   "tokens": 12367027,
+   "claims_held": [
+    "funchal --as session-a4caaf53",
+    "hilo --as night-run"
+   ],
+   "commits": 40,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "alicante",
+     "trees": 0
+    },
+    {
+     "city": "bologna",
+     "trees": 0
+    },
+    {
+     "city": "mexico-city",
+     "trees": 0
+    },
+    {
+     "city": "sardinia",
+     "trees": 0
+    },
+    {
+     "city": "valencia",
+     "trees": 0
+    },
+    {
+     "city": "venice",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
   }
  ],
  "schedule_changes": [
