@@ -20,12 +20,6 @@
       "claimed_at": "2026-09-02T17:52:59+00:00"
     },
     {
-      "target": "matera",
-      "kind": "verify",
-      "by": "session-1b4787ca",
-      "claimed_at": "2026-09-02T17:54:46+00:00"
-    },
-    {
       "target": "stuttgart",
       "kind": "verify",
       "by": "session-1b4787ca",
@@ -42,6 +36,12 @@
       "kind": "verify",
       "by": "night-run",
       "claimed_at": "2026-09-02T17:57:04+00:00"
+    },
+    {
+      "target": "heidelberg",
+      "kind": "verify",
+      "by": "session-1b4787ca",
+      "claimed_at": "2026-09-02T18:01:47+00:00"
     }
   ]
 }
