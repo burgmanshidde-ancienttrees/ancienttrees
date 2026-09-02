@@ -23,5 +23,30 @@
     "location_precision": "confirmed",
     "curation_status": "flagged",
     "verify_notes": "Bald cypress (Taxodium distichum, cypres chauve or cypres de Louisiane) growing beside the lake in Parc Borely, Marseille 8e. Distinctive aerial roots (pneumatophores) rise from the ground around the trunk, a Louisiana swamp adaptation for waterlogged soil, and are the tree's main visual draw. Two independent OSM tree nodes tag Taxodium distichum right beside the lake at 43.2603/5.3836 and 43.2600/5.3828, both reverse-geocoding to ground immediately adjacent to Parc Borely (Avenue Clot-Bey, Grand Saint-Giniez/Bonneveine), matching the park's own administrative address. Species introduced to France mid-18th century; provence7.com states this specimen was labelled Arbre remarquable by the A.R.B.R.E.S. association in 2009, but that is a SINGLE source for the label claim and could not be independently confirmed (arbres.org label-validation lists checked only cover 2024 batches; no dedicated arbres.org fiche for this tree was found). FLAGGED for that reason: species and existence are corroborated by multiple independent sources, but the 2009 label date rests on one source only. No age or girth is documented anywhere found; do not use the species' native-range lifespan potential (600-1200 years, quoted by provence7.com) as an age estimate for this individual specimen, that figure describes what the species CAN reach in its native swamp habitat, not this tree's actual age, and repeating it would be a bridge claim. Ask the reader for a trunk girth if anyone has one."
+  },
+  {
+    "id": "mrs_002",
+    "name": "The Southern Magnolia of Parc Borely",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "about a century, planted in 1929",
+    "age_min": 90,
+    "age_max": 100,
+    "girth_cm": 222,
+    "height_m": 20,
+    "location": {
+      "address": "Parc Borely, 8th arrondissement, Marseille (exact tree within the park not pinpointed)",
+      "latitude": 43.2597652,
+      "longitude": 5.383882,
+      "neighbourhood": "Bonneveine, 8th arrondissement"
+    },
+    "verified_sources": [
+      "https://www.jardinsdefrance.org/le-magnolia-grandiflora/",
+      "https://www.graines-et-plantes.com/index.php?visite=jardins&visiter=Le-Parc-Borely-de-Marseille"
+    ],
+    "access": "Free, public park, open daily",
+    "transport": "Tram T3 or bus, Rond-Point du Prado stop, then short walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Southern Magnolia (Magnolia grandiflora) at Parc Borely, Marseille 8e. jardinsdefrance.org (Societe Nationale d Horticulture de France), in a roundup of exceptional Magnolia grandiflora specimens across France by trunk girth and crown height, lists it exactly as: \"Marseille, Parc Borely, plante en 1929 : 2,22 m/20 m\" (2.22m circumference measured at 1m above ground, 20m crown height). CAUTION: an earlier WebSearch AI summary of the same page mis-attributed a different row in that same list (Grasse, planted 1956, 2.7m/18m) to Marseille; the figures used here were confirmed by fetching and reading the raw page text directly, per the search-summary-is-a-lead-never-a-source rule. graines-et-plantes.com independently corroborates a Magnolia grandiflora as a standout, remarkable specimen with ivory-coloured flowers in the park, without giving measurements. Documented planting date (1929) is the basis for the age figure, not a growth-rate estimate; roughly 95-97 years old as of 2026. LOCATION_PRECISION IS APPROXIMATE: neither source gives which part of the 17-hectare park it stands in. One Magnolia grandiflora is tagged as an OSM natural=tree node (id 2365945739) at 43.2597652,5.383882, inside/immediately adjacent to Parc Borely near the same spot as the bald cypresses (mrs_001), but this is supporting evidence only, not proof it is the same 1929 specimen, since ordinary magnolias also grow in the park. A future pass should look for the park s own tree-trail signage (a 1995 pedagogical circuit exists per marseille-autrement.fr, walking about twenty remarkable trees) to pin the exact spot."
   }
 ]
