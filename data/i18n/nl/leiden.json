@@ -1,0 +1,128 @@
+{
+  "_note": "Dutch overlay for Leiden, hand-written 2026-09-02. Text only: every coordinate, photo, licence, best_time and walk stays in data/cities/leiden.json. The search term is 'monumentale bomen', which is what Dutch readers type and what the Bomenstichting itself uses; 'oude bomen' is a translation, not a query. Nothing here is researched: every fact, age, hedge and dispute comes from the English file and is rendered, never sharpened.",
+  "city": "Leiden",
+  "title": "Monumentale bomen in Leiden: de 12 mooiste",
+  "meta_description": "Twaalf monumentale bomen in Leiden, acht ervan in de Hortus botanicus uit 1590, waaronder de eerste zelkova's die Japan ooit verlieten.",
+  "intro": "Acht van de twaalf bijzondere bomen van Leiden staan in één tuin. De Hortus botanicus, gesticht in 1590, heeft een tulpenboom die professor Herman Boerhaave in 1716 zaaide, een dadelpruim met gaten in de stam waar ooit een esdoorn in groeide, de eerste zelkova's die Japan ooit verlieten, de dikste paardenkastanje van Nederland en een trompetboom die met kabels uit de gracht wordt gehouden. Buiten de tuinmuur: een beuk op de Burcht die naar een student-schrijver is genoemd, de dikste beuk van Zuid-Holland op een begraafplaats, en twee oude platanen in het Plantsoen langs de Singel.",
+  "question_title": "Wat is de oudste boom van Leiden? (310 jaar)",
+  "question_meta": "De tulpenboom die Herman Boerhaave in 1716 zelf zaaide, is de oudste boom van Leiden. Alle twaalf, waaronder één die voor zijn leven vecht.",
+  "question_answer": "De oudste gedocumenteerde boom van Leiden is de tulpenboom van Boerhaave in de Hortus botanicus, op 12 oktober 1716 gezaaid door professor Herman Boerhaave uit zaad dat vanuit Virginia was verscheept, en dus ongeveer 310 jaar oud. De tuin zelf noemt hem de oudste boom van zijn soort op het Europese vasteland. Een dadelpruim in dezelfde tuin, gedateerd op 1740, komt daarna.",
+  "question_context": "De claim op de oudste boom van Leiden rust op ongewoon goed papierwerk: de Hortus botanicus heeft een gedateerde plantaantekening waarin Herman Boerhaave wordt genoemd, de herkomst van het zaad in Virginia en zelfs de Londense handelaar die het verscheepte, en daarom ankert de tulpenboom van Boerhaave deze pagina met meer zekerheid dan de meeste Europese steden kunnen bieden voor iets in de buurt van 300 jaar oud. De dadelpruim van de tuin, geregistreerd op 1740, komt daarna, en de goudenregen scheelde weinig of hij had ze allebei verslagen: een populair verhaal dateerde hem ooit op 1601, tot het eigen archiefonderzoek van de Hortus daar in de jaren dertig een streep door zette en op de jaren 1720 uitkwam, een zeldzaam geval waarin een instelling haar eigen legende naar beneden bijstelt in plaats van hem te laten staan. De meeste andere bomen komen uit het landelijke register van monumentale bomen, dat een plantdecennium noteert en geen jaartal, dus verschillende leeftijden op deze pagina staan als banden van twintig tot vijftig jaar in plaats van als één datum. Twee bomen zijn er eerlijk gezegd slecht aan toe: de Beetsbeuk op de Burcht en de beuk op begraafplaats Groenesteeg vechten allebei tegen een wortelschimmel, de tweede onder actieve behandeling van zijn beheerders. Dat verandert niets aan wat ze allebei al hebben meegemaakt.",
+  "faq": [
+    {
+      "q": "Wat is de oudste boom van Leiden?",
+      "a": "De tulpenboom van Boerhaave in de Hortus botanicus, in 1716 gezaaid door professor Herman Boerhaave uit zaad uit Virginia, ruwweg 310 jaar oud en volgens de tuin zelf de oudste van zijn soort in Europa. De dadelpruim van de tuin, uit 1740, is de op een na oudste."
+    },
+    {
+      "q": "Zijn de monumentale bomen van Leiden gratis te bezoeken?",
+      "a": "Acht van de twaalf staan in de Hortus botanicus, waar je entree voor de tuin betaalt (ongeveer 14 euro). De Burchtheuvel, begraafplaats Groenesteeg en het Plantsoen langs de Singel zijn allemaal gratis en het hele jaar open."
+    },
+    {
+      "q": "Wat is de dikste boom van Leiden?",
+      "a": "Een geënte beuk op begraafplaats Groenesteeg, met een omtrek van 6,5 meter, officieel de dikste boom van de hele provincie Zuid-Holland."
+    },
+    {
+      "q": "Leeft de Beetsbeuk op de Burcht nog?",
+      "a": "Ja, al beschadigt een wortelschimmel hem ernstig en noemt de gemeente zijn voortbestaan op de lange termijn onzeker. Bij de laatste controle voor deze pagina stond hij er nog."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (Dutch common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes.",
+  "trees": {
+    "lei_001": {
+      "name": "De tulpenboom van Boerhaave",
+      "species": "Tulpenboom (Liriodendron tulipifera)",
+      "age_estimate": "ongeveer 310 jaar",
+      "access": "Betaalde toegang tot de Hortus botanicus Leiden (ongeveer 14 euro voor volwassenen)",
+      "transport": "15 minuten lopen vanaf station Leiden Centraal",
+      "story": "Deze boom bestaat omdat een Londense apotheker een zaadje uit Virginia op de post deed. Op 1 oktober 1716 verscheepte botanicus Isaac Rand zaad van een Amerikaanse soort die in Europa nauwelijks bekend was naar Leiden; elf dagen later, op 12 oktober 1716, zaaide professor Herman Boerhaave van de Hortus botanicus het uit in de tuin waar de boom vandaag nog staat. Boerhaave was niet in de eerste plaats botanicus. Hij geldt als een van de grondleggers van de moderne klinische geneeskunde, die artsen uit heel Europa leerde de patiënt aan het bed te onderzoeken in plaats van te redeneren uit oude teksten, en datzelfde vertrouwen op eigen waarneming boven overgeleverd gezag spreekt uit zijn nette aantekening over deze boom, de reden dat zijn leeftijd ongewoon zeker is voor iets van drie eeuwen oud. De Hortus noemt hem de oudste tulpenboom van het Europese vasteland; de soort kwam pas in 1663 in Engelse kwekerijen terecht en had daarna nog decennia nodig om verder te komen. De geelgroene, kelkvormige bloemen verschijnen pas als een boom echt volwassen is, makkelijk te missen bij een jong exemplaar en onmiskenbaar bij een van dit formaat. Hij staat bij de ingang van de tuin, een klein stukje lopen van het Rapenburg, drie eeuwen ver in een leven dat als vracht begon."
+    },
+    "lei_002": {
+      "name": "De ginkgo van de Hortus",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "ongeveer 240 jaar",
+      "access": "Betaalde toegang tot de Hortus botanicus Leiden (ongeveer 14 euro voor volwassenen)",
+      "transport": "15 minuten lopen vanaf station Leiden Centraal",
+      "story": "Deze ginkgo werd in 1785 geplant en bracht anderhalve eeuw door als wat botanici zonder veel romantiek een mannelijk exemplaar noemen: alleen de kleine katjes, nooit zaad. In 1935 entten tuinlieden er een paar vrouwelijke twijgen op, gesneden van een ginkgo op Huis ten Donck, een landgoed bij Rotterdam. Één ent sloeg aan. Die leeft nog steeds, één genetisch vrouwelijke tak uitgegroeid in een verder mannelijke boom, en elk najaar levert alleen die tak de kenmerkende pruimachtige zaden van de soort, waarvan het vlezige omhulsel eerder naar ranzige boter ruikt dan naar fruit, een lokmiddel voor insecten en geen gebrek. Ginkgo biloba is de enige overlevende van een hele plantenorde, met een stamboom die in het fossielenbestand terugloopt tot ruwweg 270 miljoen jaar geleden, lang voordat er bloeiende planten bestonden, en dat maakt de operatie van halverwege de jaren dertig aan juist deze boom een vreemde botsing van tijdperken: een levend fossiel, bijgewerkt met de enttechniek van een twintigste-eeuwse boomgaard. De Hortus bouwde het kassencomplex in 1938 om de boom heen, zo dicht erop dat de ginkgo de hele kassenvleugel eerder verankert dan er los van staat."
+    },
+    "lei_003": {
+      "name": "De treurbeuk van de Hortus",
+      "species": "Treurbeuk (Fagus sylvatica 'Pendula')",
+      "age_estimate": "ongeveer 185 jaar",
+      "access": "Betaalde toegang tot de Hortus botanicus Leiden (ongeveer 14 euro voor volwassenen)",
+      "transport": "15 minuten lopen vanaf station Leiden Centraal",
+      "story": "Een Engelsman zorgde voor het eerste papieren spoor van deze boom. George Loddiges, een Londense kweker uit een familie die een van de grote handelstuinen van Europa dreef, beschreef hem in 1836, en de Hortus dateert de boom zelf op ongeveer 1840. Het is een treurbeuk, een cultivar met zware hoofdtakken die bijna horizontaal blijven en zijtakken die tot op de grond hangen, geënt op gewone beukenonderstam, want de treurvorm komt niet zaadvast terug. Hij staat pal naast de vijver van de tuin, naast een even oude varenbeuk; samen vormen ze een van de meest gefotografeerde hoeken van de Hortus, dichte groene tenten waar een bezoeker onderdoor kan lopen in plaats van er alleen langs. De ouderdom laat zich de laatste tijd voelen: zijn conditie gaat al jaren achteruit, genoeg om de Hortus er in 1982 een jongere treurbeuk naast te zetten, een geschenk nadat die jonge boom dat jaar op de Floriade in Amsterdam had gestaan, bewust neergezet als opvolger en niet als tweede bezienswaardigheid. Niemand doet hier alsof de oude boom er altijd zal staan. Hij heeft de kweker die hem als eerste opschreef inmiddels ruim een eeuw overleefd, en voorlopig is hij degene die de wandeling waard is."
+    },
+    "lei_004": {
+      "name": "De goudenregen van de Hortus",
+      "species": "Goudenregen (Laburnum anagyroides)",
+      "age_estimate": "ongeveer 300 jaar",
+      "access": "Betaalde toegang tot de Hortus botanicus Leiden (ongeveer 14 euro voor volwassenen)",
+      "transport": "15 minuten lopen vanaf station Leiden Centraal",
+      "story": "Deze boom werd decennialang verkocht met een verhaal waar zijn eigen tuin niet meer in gelooft. Een populaire lezing hield het op 1601, geplant in de tijd van de grote botanicus Carolus Clusius, en die mythe kreeg in 1931 een soort bewijs toen een hovenier genaamd Veendorp meerdere vergroeide stammen aantrof met heel veel jaarringen erin en dat als bevestiging las. Later archiefonderzoek van de Hortus zelf concludeerde iets anders: de vergroeide stammen bliezen het aantal ringen op, en de gedocumenteerde aanwijzingen wijzen op de jaren 1720, gezaaid door Herman Boerhaave, dezelfde professor die een paar jaar eerder de tulpenboom van de tuin zaaide. Ruwweg 300 jaar oud dus in plaats van 400, en voor die leeftijd blijft hij bescheiden van formaat, een kleine, onopvallende boom naast de tulpenboom en de ginkgo waar hij de tuin mee deelt. De felgele bloemtrossen uit de vlinderbloemenfamilie zijn in het late voorjaar de enige echte hint dat er onder die gewone stam iets bijzonders zit. Wat het verhaal de moeite waard maakt is niet de statuur van de boom maar de correctie zelf: een instelling met alle reden om het romantischere getal aan te houden, publiceerde juist het minder indrukwekkende dat beter onderbouwd was."
+    },
+    "lei_005": {
+      "name": "De Beetsbeuk op de Burcht",
+      "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+      "age_estimate": "ongeveer 185 jaar",
+      "access": "Gratis, openbaar park, altijd toegankelijk",
+      "transport": "15 minuten lopen vanaf station Leiden Centraal",
+      "story": "Deze boom is genoemd naar een student die een van de geliefdste boeken van Nederland schreef toen de boom zelf nog jong was. Nicolaas Beets studeerde in de jaren dertig van de negentiende eeuw theologie in Leiden en publiceerde in 1839, hetzelfde jaar dat deze rode beuk op de helling van de middeleeuwse Burcht werd geplant, de Camera Obscura onder het pseudoniem Hildebrand, een boek dat op Nederlandse scholen nog altijd wordt gelezen. Beets bracht een groot deel van zijn studententijd rond de Burcht door, een elfde-eeuwse ringmuurburcht die de stad in 1651 kocht en tot openbaar park maakte, en in 1989 noemde de gemeente de boom officieel naar hem, met dezelfde dag een bank ernaast. Met een stamomtrek van 4,72 meter is het de dikste boom op de heuvel, een van de handvol veteranen die de winter van 1945 doorkwamen, toen bijna elke andere boom in Leiden in de Hongerwinter voor brandstof werd gekapt maar de oudste exemplaren op de Burcht bewust werden gespaard. Dat voortbestaan staat nu opnieuw op het spel, van een andere kant: een wortelrotschimmel maakt het wortelgestel langzaam tot pulp, en bij de laatste inspectie onderzocht de gemeente of er nog iets te doen viel om zijn leven te rekken in plaats van af te wachten tot hij omvalt."
+    },
+    "lei_006": {
+      "name": "De beuk van Groenesteeg",
+      "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+      "age_estimate": "ongeveer 200 jaar, waarschijnlijk geplant rond de stichting van de begraafplaats in 1813",
+      "access": "Gratis, begraafplaats het hele jaar overdag open voor bezoekers",
+      "transport": "20 minuten lopen, of een klein stukje fietsen, vanaf station Leiden Centraal",
+      "story": "Twee beukenvariëteiten die op elkaar geënt zijn en twee eeuwen lang verschillend hard groeiden: daarom lijkt deze nergens op een gewone beuk. Een rode beuk werd laag geënt op een onderstam van gewone groene beuk, standaardpraktijk omdat rode beuk niet zaadvast is, maar de ongelijke groeisnelheden leverden een ongewoon brede, knoestige voet op, met takken die al op nauwelijks twee meter beginnen en een betrekkelijk slanke kroon van 15 meter hoog die toch 24 meter breed uitwaaiert. Begraafplaats Groenesteeg werd in 1813 aangelegd op een van de gesloopte vestingwerken van Leiden, en de boom is waarschijnlijk rond die stichting geplant, wat hem ruwweg 200 jaar oud maakt, een echte zeldzaamheid omdat weinig beuken waar dan ook zo oud worden. Met een gemeten omtrek van 6,5 meter is het officieel de dikste beuk van Nederland en de dikste boom van de hele provincie Zuid-Holland, breed genoeg dat het woord groot tekortschiet zodra je voor de stam staat. In oktober 2025 werd hij vierde in de landelijke publieksverkiezing Boom van het Jaar, met ruim duizend stemmen op alleen zijn eigenaardigheid en formaat, alleen verslagen door een mammoetboom in Enschede en twee andere regionale finalisten. Net als zijn buurman op de Burcht vecht hij tegen een wortelschimmel, al wordt hij hier actief behandeld door de beheerders van de begraafplaats, met jaarlijkse voedingsinjecties en het beleid om gevallen blad te laten liggen om de bodem rond zijn voet te voeden."
+    },
+    "lei_007": {
+      "name": "De dadelpruim van de Hortus",
+      "species": "Dadelpruim (Diospyros lotus)",
+      "age_estimate": "geplant tussen 1700 en 1750, dus tussen de 275 en 325 jaar",
+      "access": "Betaalde toegang tot de Hortus botanicus Leiden (ongeveer 14 euro voor volwassenen)",
+      "transport": "15 minuten lopen vanaf station Leiden Centraal",
+      "story": "Kinderen noemen deze de halloweenboom, en de gaten in de stam hebben een vreemdere geschiedenis dan die bijnaam doet vermoeden. Laat in de negentiende eeuw zaaide een esdoorn zichzelf uit binnen in de stam van de dadelpruim en groeide daar verder. Niemand haalde hem eruit, ruim veertig jaar lang, tot 1931, en de holtes die achterbleven werden toen volgestort met beton. Er gingen nog eens veertig jaar overheen voordat de boomverzorgers van Copijn dat beton weer weghaalden, en zo ontstonden de openingen die je nu ziet. In wat er van de stam over was zijn ijzeren pennen gezet om het geheel bijeen te houden, en dat werk doen ze nog steeds. Het landelijke register van monumentale bomen dateert de boom op 1740, wat hem na de tulpenboom die Herman Boerhaave in 1716 zaaide de op een na oudste van de Hortus botanicus zou maken. Zijn geregistreerde plantperiode is ruimer, 1700 tot 1750, dus lees de leeftijd als ergens tussen de 275 en 325 jaar in hetzelfde bed. Dadelpruimen zijn mannelijk of vrouwelijk, en dit is een mannelijke, dus hij draagt nooit vrucht. De blauwzwarte vrucht waar de soort naar heet, hangt aan een jonger vrouwelijk exemplaar dat de tuin in de varentuin heeft staan. Deze boom biedt een holle stam die door ijzerwerk overeind wordt gehouden en een bijnaam die hij eerlijk heeft verdiend."
+    },
+    "lei_009": {
+      "name": "De oude plataan van het Plantsoen",
+      "species": "Gewone plataan (Platanus x acerifolia)",
+      "age_estimate": "geplant tussen 1800 en 1850, dus tussen de 175 en 225 jaar",
+      "access": "Gratis, openbaar stadspark, altijd open",
+      "transport": "20 minuten lopen vanaf station Leiden Centraal",
+      "story": "Deze plataan stond er al voordat het park eromheen bestond. Het Plantsoen werd tussen 1835 en 1842 aangelegd als werkverschaffing, een Engels landschapspark op de gesloopte bolwerken van Leiden, de aarden wallen die de stad hadden verdedigd tot ze hun nut verloren. Salomon van der Paauw ontwierp het, en daarom zijn er geen rechte paden, daarom blijven de zichtlijnen opengaan naar het water van de Singel, en daarom staat er sinds 1867 een volière. Het register dateert deze plataan op de jaren 1820 en noemt hem de oudste boom van het park, ouder dan de aanleg waarin hij staat. Zijn formele plantperiode is ruimer, 1800 tot 1850, dus zijn leeftijd ligt ergens tussen de 175 en 225 jaar. Platanen werden het werkpaard van de Europese stadsparken omdat ze verdichte grond verdragen, lucht waar een beuk aan bezwijkt, en hard snoeien, en daarom staan er uit precies deze periode van gemeentelijke parkaanleg nog zoveel overeind. De meeste gingen als jonge kweek de nieuwe grond in. Deze was er volgens de datering van het register al toen de grondwerkers kwamen. Ga bij Plantsoen nummer 1 staan en kijk langs de stam omhoog: de afschilferende bast verraadt de soort, en daarboven zit een kroon die twee eeuwen de tijd heeft gehad om vol te groeien."
+    },
+    "lei_010": {
+      "name": "De paardenkastanje van de Witte Singel",
+      "species": "Paardenkastanje (Aesculus hippocastanum)",
+      "age_estimate": "geplant tussen 1800 en 1850, dus tussen de 175 en 225 jaar",
+      "access": "Betaalde toegang tot de Hortus botanicus Leiden (ongeveer 14 euro voor volwassenen)",
+      "transport": "15 minuten lopen vanaf station Leiden Centraal",
+      "story": "Met 5,8 meter omtrek is dit de dikste paardenkastanje van Nederland, volgens de meting van het landelijke register van monumentale bomen zelf. Hij staat aan de rand van de Hortus botanicus met zijn wortels bijna in het water van de Witte Singel, en de notitie bij het register dateert hem op 1841, binnen een geregistreerde plantperiode van 1800 tot 1850. Aan de waterkant zit een holte in de stam, met ijzeren pennen erin om te voorkomen dat het overgebleven hout uit elkaar trekt, de standaardbehandeling voor een veteraan die over zijn eigen constructieve marge heen is gegroeid. Hij heeft een probleem dat elke paardenkastanje in Noord-Europa inmiddels deelt. De paardenkastanjemineermot, waarvan de rupsen het weefsel tussen de boven- en onderkant van een blad opeten, bereikte Nederland eind jaren negentig en kleurt het blad vanaf midden in de zomer bruin. Het ontsiert zonder meestal te doden, dus een kastanje ziet er in augustus veel slechter uit dan hij eraan toe is. Kom in mei, als de bloemkaarsen omhoogstaan en daar nog niets van begonnen is. Paardenkastanjes gingen in precies deze periode bij duizenden de Nederlandse steden in, vooral langs lanen en grachten, en bijna geen enkele haalde deze omvang. In september vallen hier de kastanjes, op een oever waar het water het rapen half voor je doet."
+    },
+    "lei_011": {
+      "name": "De Sieboldzelkova",
+      "species": "Japanse zelkova (Zelkova serrata)",
+      "age_estimate": "de band van het register zegt 1800 tot 1850 terwijl de eigen notitie 1858 noemt, dus tussen de 165 en 225 jaar",
+      "access": "Betaalde toegang tot de Hortus botanicus Leiden (ongeveer 14 euro voor volwassenen)",
+      "transport": "15 minuten lopen vanaf station Leiden Centraal",
+      "story": "Dit zijn de eerste zelkova's die Japan ooit verlieten. Philipp Franz von Siebold, de arts die de jaren twintig van de negentiende eeuw op de Nederlandse handelspost Deshima doorbracht en meer Japanse planten naar huis stuurde dan welke Europeaan voor hem ook, nam in 1830 zelkova's mee. Twee ervan kwamen hier terecht. De ene groeide op één stam en staat midden in de Japanse tuin; deze kwam met vijf stammen op, dus meet het register de omtrek van de dikste daarvan, ongeveer twee meter, wat de massa van het geheel flink tekortdoet. De datering moet je hier gewoon benoemen, want het register spreekt zichzelf tegen. De plantperiode zet de boom tussen 1800 en 1850, terwijl de eigen notitie zegt dat de twee Leidse zelkova's in 1858 en 1860 de grond in gingen. Houd de leeftijd op ergens tussen de 165 en 225 jaar, en weet jij welke klopt, laat het ons weten. Zelkova serrata is een verwant van de iep die grotendeels bestand bleek tegen de iepziekte, en dat verklaart voor een groot deel waarom hij na de jaren zeventig op Europese plantlijsten opdook, toen in elke stad van het continent de iepen doodgingen. Deze boom is meer dan een eeuw ouder dan die mode, en hij staat hier omdat één man Japan in een Nederlandse tuin wilde hebben."
+    },
+    "lei_016": {
+      "name": "De scheve trompetboom van de Hortus",
+      "species": "Trompetboom (Catalpa sp.)",
+      "age_estimate": "geplant tussen 1820 en 1830, dus tussen de 196 en 206 jaar",
+      "access": "Betaalde toegang tot de Hortus botanicus Leiden (ongeveer 14 euro voor volwassenen)",
+      "transport": "15 minuten lopen vanaf station Leiden Centraal",
+      "story": "Deze trompetboom wordt uit de gracht gehouden door kabels die aan een andere boom op deze lijst vastzitten. Hij staat pal op de rand van de singel achter de kassen, en op enig moment helde hij zo ver over dat hij in het water zou eindigen. Het antwoord was verankering, met kabels naar de zelkova in de Japanse tuin, en die constructie houdt hem nog altijd overeind. Twee monumentale bomen, waarvan de een de ander draagt. Het register dateert hem op 1820, binnen een geregistreerde periode van 1820 tot 1830, en rekent hem tot de vijf dikste trompetbomen van Nederland. De trompetbomen die in Europa geplant werden kwamen grotendeels uit het Amerikaanse zuiden en arriveerden in de achttiende eeuw om precies de reden waarom mensen ze nog steeds planten: overmaatse hartvormige bladeren die laat komen en vroeg vallen, rechtopstaande trossen witte bloemen met paars en geel in de keel, en daarna lange dunne zaadpeulen die de hele winter blijven hangen als vergeten touw. Het is een zachthoutige, brosse boom, nooit gemaakt voor twee eeuwen Nederlandse wind op een open oever, en dat maakt de bekabeling minder een vernedering dan de reden dat er hier nog iets te zien is. Loop achter de kassen langs en volg de waterlijn tot je degene vindt die niet recht staat."
+    },
+    "lei_018": {
+      "name": "De plataan aan Plantsoen 11",
+      "species": "Gewone plataan (Platanus x acerifolia)",
+      "age_estimate": "geplant tussen 1850 en 1860, dus tussen de 166 en 176 jaar",
+      "access": "Gratis, openbaar stadspark, altijd open",
+      "transport": "20 minuten lopen vanaf station Leiden Centraal",
+      "story": "De gewone plataan is een kruising die niemand van plan was. Ergens in de zeventiende eeuw kruiste een oosterse plataan uit het oostelijke Middellandse Zeegebied met een Amerikaanse, waarschijnlijk in een kwekerij, en het toeval groeide harder dan allebei de ouders, trok zich niets aan van kolenrook en verdroeg wortels onder de bestrating. Europa plantte hem daarna in elke stad die het had. Deze ging in de jaren 1850 het Plantsoen in, op het stuk park bij nummer 11, ruim tien jaar nadat het park zelf in 1842 klaar was. Het Plantsoen was het eerste echte openbare park van Leiden, tussen 1835 en 1842 in de lijn van de oude bolwerken uitgesneden als werk voor werklozen, naar een ontwerp van Salomon van der Paauw, en het maakt nu deel uit van het Singelpark, de groene ring die de stad om haar historische centrum weer aan elkaar naait. Het register merkt op dat geen ander deel van die ring zoveel verschillende oude bomen telt. De bast is hier het kijken waard. Platanen laten die in onregelmatige platen los, mede daardoor kunnen ze tegen vuile stadslucht, en een oude stam ziet er daardoor uit als camouflage in crème, olijf en grijs. Deze schilfert al zo'n 170 jaar, en hij staat aan het water, het uitzicht waar het hele park omheen is getekend."
+    }
+  }
+}
