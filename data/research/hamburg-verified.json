@@ -1,26 +1,150 @@
 [
-  {
-    "id": "ham_001",
-    "name": "Maiboom'sche Liebesbuche",
-    "species": "European Beech (Fagus sylvatica)",
-    "age_estimate": "",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 500,
-    "location": {
-      "address": "Corner of Eilenau and Lessingstraße, Hamburg-Hohenfelde, at the edge of the Kuhmühlenteich",
-      "latitude": 53.565783,
-      "longitude": 10.030496,
-      "neighbourhood": "Hohenfelde"
-    },
-    "verified_sources": [
-      "https://de.wikipedia.org/wiki/Maiboomsche_Liebesbuche",
-      "https://commons.wikimedia.org/wiki/File:Hamburg-kuhm%C3%BChlenteich-maiboomsche-liebesbuche-stammumfang.JPG"
-    ],
-    "access": "Free. Stands on a private corner property, but right at the street edge by the Kuhmühlenteich; a public pinboard is fixed in front of the tree where visitors pin love notes, which only works if the tree is reachable from the pavement without asking anyone. Flagged so a later pass double-checks this reading before the story asserts it.",
-    "transport": "U3 Mundsburg, about 5 minutes on foot",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Wikidata Q56027123. European beech (Fagus sylvatica / Rotbuche) at the corner of Eilenau and Lessingstraße in Hamburg-Hohenfelde, at the edge of the Kuhmühlenteich. Two sources fetched directly (both text confirmed, not from search summaries): de.wikipedia.org/wiki/Maiboomsche_Liebesbuche (coordinate 53.565783,10.030496 via its own {{Coordinate}} template, matches Wikidata's 53.565778,10.0305 closely) and the Commons file description for File:Hamburg-kuhmuhlenteich-maiboomsche-liebesbuche-stammumfang.JPG, a dated own-work photo by Roland.h.bueb, 2021-03-20, CC BY 3.0, stating trunk circumference approx. 5 metres (500 cm) in March 2021. HISTORY (from de.wikipedia, citing a since-dead Hohenfelder Buergerverein Rundschau 4/2018 PDF that 404s today and has no Wayback snapshot, so treat as local legend rather than a hard date): a garden house of the Hamburg merchant family Maiboom stood on this plot 1795-1845; during the Napoleonic-era French occupation of Hamburg, Clemens Maiboom (Patriotic Circle) and Clothilde Gauthier (daughter of a French envoy) met here secretly and, in old age, planted this beech as a symbol of their love. NO explicit planting year or age is given by either fetched source. A WebSearch AI summary claimed 'planted around 1890, approximately 136 years old as of 2018' but that figure appears on neither de.wikipedia nor the Commons file page as fetched, so per the search-summary-is-a-lead-never-a-source rule it is NOT used here; left age_estimate empty rather than repeat an unconfirmed number. Commons category tags the tree only as 'Trees planted in the 19th century', itself an editor tag rather than a cited fact. A crude girth-based growth estimate (500cm x typical beech factors of 1.0-1.5) yields 500-750 years, which contradicts the documented 1795-1845 garden-house history, so growth-rate dating is unreliable here (likely fast open-grown urban growth) and was not used; leave the age question for the reader/a tape measure. A well-known local curiosity: a bulletin board in front of the tree collects handwritten notes of love wishes and thanks for fulfilled love, tended by the property owner; covered in local lifestyle roundups (mitvergnuegen.com, condor.com blog) as a known Hamburg spot for couples, which supports it being a real, currently visited, publicly reachable point despite standing on private ground."
-  }
+ {
+  "id": "hbg_002",
+  "name": "The Hollow Oak of Jenischpark",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "roughly 400 to 450 years",
+  "age_min": 375,
+  "age_max": 475,
+  "girth_cm": 830,
+  "location": {
+   "address": "Jenischpark, about 100 m east of the Jenischhaus, Baron-Voght-Straße, 22609 Hamburg-Othmarschen",
+   "latitude": 53.552889,
+   "longitude": 9.867611,
+   "neighbourhood": "Othmarschen"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+   "https://www.baumkunde.de/baumregister/1617-hohle_eiche_im_jenischpark/",
+   "https://www.monumentale-eichen.de/hamburg/othmarschen/"
+  ],
+  "access": "Free, public park (Jenischpark), open year-round, no gates.",
+  "transport": "S1/S11 Hamburg-Klein Flottbek or Bus 15x to Jenischpark; roughly 10-15 min walk to the tree",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "The thickest pedunculate oak in Hamburg (\"Stärkste Stiel-Eiche in Hamburg\"/\"dickste Eiche Hamburgs\"). Girth 8.30 m measured April 2020, matching exactly between German Wikipedia's citywide tree list and baumkunde.de's independent register entry, so treated as confirmed. Trunk is hollow with a large opening on one side running from just above ground level to over 4 m high; the surgeon Michael Maurer restored the tree in 1972 and braced the opening with iron rods, per baumkunde.de. Planting date estimated by the Wikipedia list at 1600 ± 50 (i.e. roughly 375-475 years old as of 2026); no single documented planting record, this is the standard German arboricultural girth-based dating convention used across this list, not our own derivation. Located about 100 m east of the Jenischhaus within Jenischpark, an early-1800s English landscape park on the Elbe. Other notable old trees are separately recorded nearby in the same park (see hbg_003, hbg_004)."
+ },
+ {
+  "id": "hbg_003",
+  "name": "The Birch-in-Oak of Jenischpark",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "roughly 300 to 350 years",
+  "age_min": 300,
+  "age_max": 350,
+  "girth_cm": 674,
+  "location": {
+   "address": "Jenischpark, southeast corner near the Elbchaussee, 22609 Hamburg-Othmarschen",
+   "latitude": 53.548081,
+   "longitude": 9.871666,
+   "neighbourhood": "Othmarschen"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+   "https://www.baumkunde.de/baumregister/5444-birken_eichenpaar_im_jenischpark_in_hamburg/"
+  ],
+  "access": "Free, public park (Jenischpark), open year-round, no gates.",
+  "transport": "S1/S11 Hamburg-Klein Flottbek or Bus 15x to Jenischpark; short walk to the park's southeast corner near the Elbchaussee",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "A genuine curiosity, not just an old tree: a roughly 300-year-old pedunculate oak with a trunk open on one side, inside which a roughly 100-year-old birch has grown for decades, per baumkunde.de. The crowns of the two trees have grown together (\"verseilt\"). The lopsided oak is braced with a metal frame. Girth 6.74 m (2017) per the Wikipedia city tree list. Both sources independently agree the oak is roughly 300 years old (Wikipedia: planted 1700 +/- 20, i.e. about 300-350 years old today; baumkunde.de: \"ca. 300-jährige Eiche\"). Located in the park's southeast corner near the Elbchaussee, about 500 m from the Hollow Oak (hbg_002) and the Leaning Oak (hbg_004), all walkable within the same park visit."
+ },
+ {
+  "id": "hbg_004",
+  "name": "The Copper Beech of Alsterufer",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "roughly 135 to 175 years",
+  "age_min": 135,
+  "age_max": 175,
+  "girth_cm": 721,
+  "location": {
+   "address": "Rasenfläche Alsterufer / Klein Fontenay, 20144 Hamburg-Rotherbaum",
+   "latitude": 53.562983,
+   "longitude": 9.99723,
+   "neighbourhood": "Rotherbaum"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+   "https://www.baumkunde.de/baumregister/7498-maechtige_blutbuche_in_hamburg_rotherbaum/"
+  ],
+  "access": "Free, public lawn on the Alster promenade (Alsterufer), open at all times.",
+  "transport": "U1 Hallerstraße or bus to Rothenbaumchaussee; roughly 5-10 min walk along the Alsterufer",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "A large copper beech on the public lawn between Alsterufer and Klein Fontenay, on the Aussenalster promenade in Rotherbaum. Girth 7.21 m (Nov 2018) confirmed independently and to the centimetre by both German Wikipedia's citywide tree list and baumkunde.de's own register. baumkunde.de notes a swollen, buttressed trunk with pronounced overgrowth (Überwallungen) and gives later re-measurements (7.32 m over the buttresses, 6.92 m one metre up, 31 July 2025), evidence the tree keeps being actively monitored, i.e. still alive and healthy. Planting date estimated at 1870 +/- 20 by the Wikipedia list, i.e. roughly 135-175 years old as of 2026; standard German arboricultural girth-based dating, not our own derivation. Genuinely public ground: an open lawn beside the Alster promenade, not a private plot."
+ },
+ {
+  "id": "hbg_005",
+  "name": "The Japanese Pagoda Tree of Alsterufer",
+  "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+  "age_estimate": "roughly 150 years",
+  "age_min": 140,
+  "age_max": 160,
+  "girth_cm": 600,
+  "location": {
+   "address": "Alsterufer 27/28, 20354 Hamburg-Rotherbaum",
+   "latitude": 53.561759,
+   "longitude": 9.997411,
+   "neighbourhood": "Rotherbaum"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+   "https://www.baumkunde.de/baumregister/4410-japanischer_schnurbaum_an_der_alster_hamburg_rotherbaum/",
+   "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/aktuelles/pressemeldungen/nationalerbe-baum-japanischer-schnurbaum-an-der-aussenalster-wird-ausgezeichnet-1165572"
+  ],
+  "access": "Free, public ground on the Alster promenade (Alsterufer), open at all times.",
+  "transport": "U1 Hallerstraße; roughly 5-10 min walk along the Alsterufer promenade",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "A large, free-standing Japanese pagoda tree on the Aussenalster promenade, and per Hamburg's environment authority (BUKEA) press release of 16 April 2026, officially the world's strongest known specimen of its species (\"den weltweit stärksten Japanischen Schnurbaum\"). Named a Nationalerbe-Baum (German National Heritage Tree, one of roughly 100 nationwide, selected by the Deutsche Dendrologische Gesellschaft) on that date, the second Hamburg tree to receive the honour after the Bergahorn in Hirschpark. Age given as \"rund 150 Jahre\" (about 150 years) directly by the BUKEA press release, consistent with Wikipedia's citywide tree list estimate of planted 1880 +/- 10. Girth: Wikipedia/baumkunde.de recorded 5.50 m in 2016; the 2026 press release states the trunk is now \"über sechs Metern\" (over six metres), consistent with a decade of growth; recorded girth_cm as 600 (the more recent, rounder official figure) with the earlier 550 cm measurement noted here rather than in the field. Already Naturdenkmal-protected; the 2026 works removed ivy and cabled the crown as part of the heritage-tree care programme. Government source explicitly describes \"außergewöhnliche Vitalität\" (exceptional vitality), i.e. confirmed alive and thriving as of April 2026. Public promenade tree, no access restriction."
+ },
+ {
+  "id": "hbg_006",
+  "name": "The Sycamore Maple of Hirschpark",
+  "species": "Sycamore (Acer pseudoplatanus)",
+  "age_estimate": "roughly 200 to 270 years",
+  "age_min": 200,
+  "age_max": 270,
+  "girth_cm": 550,
+  "height_m": 22,
+  "location": {
+   "address": "Hirschpark, south of the Lindenallee, 22609 Hamburg-Nienstedten",
+   "latitude": 53.557306,
+   "longitude": 9.827916,
+   "neighbourhood": "Nienstedten"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+   "https://www.baumkunde.de/baumregister/677-bergahorn_im_hamburger_hirschpark__nationalerbe_baum/"
+  ],
+  "access": "Free, public park (Hirschpark), open year-round, no gates.",
+  "transport": "S1/S11 Hamburg-Klein Flottbek or bus, then roughly 15-20 min walk; about 3 km west along the Elbchaussee from Jenischpark (hbg_002-004), a longer riverside walk rather than the same stroll",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "A sycamore maple with a dome-shaped crown that arches down almost to the ground (\"wölbt sich kuppelartig bis zum Boden hinab\"), per baumkunde.de. Crown diameter about 35-36 m per Wikipedia's citywide tree list. Girth 5.50 m (waist height, 2020), height 22 m, per that same list. Designated Nationalerbe-Baum Nr. 6 (German National Heritage Tree) by the Deutsche Dendrologische Gesellschaft on 23 October 2020, confirmed independently by baumkunde.de's own register entry, which is dedicated specifically to this heritage-tree status. Stands in Hirschpark, a free public landscape park in Nienstedten on the Elbe, south of the Lindenallee. Roughly 3 km from the Jenischpark cluster (hbg_002-004) along the Elbchaussee, a popular riverside walking route but a separate stop from that cluster rather than the same short stroll."
+ },
+ {
+  "id": "hbg_007",
+  "name": "The Lehmann Plane of Planten un Blomen",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "about 205 years",
+  "age_min": 205,
+  "age_max": 205,
+  "girth_cm": 615,
+  "height_m": 29,
+  "location": {
+   "address": "Alter Botanischer Garten, Planten un Blomen, near the exit to the CCH, 20355 Hamburg-St. Pauli",
+   "latitude": 53.56062,
+   "longitude": 9.98681,
+   "neighbourhood": "St. Pauli / Wallanlagen"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
+   "https://www.baumkunde.de/baumregister/3064-platane_in_planten_und_blomen/"
+  ],
+  "access": "Free, public park (Planten un Blomen), open daily during park hours.",
+  "transport": "U-Bahn Stephansplatz or Messehallen; short walk within Planten un Blomen",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "A documented planting, not an estimate: planted as the first tree on 6 November 1821 by Prof. Dr. Johann Georg Christian Lehmann, founder and director of Hamburg's Botanical Garden, in the Wallanlagen, per baumkunde.de, confirmed independently by German Wikipedia's citywide tree list (\"erster Baum des Parks, anlässlich der Gründung des Botanischen Gartens gepflanzt\"). Age as of 2026 is therefore exactly known: about 205 years. Girth 6.15 m (1 Nov 2020), height 29 m, agreeing between both sources. Grows in what was the Alter Botanischer Garten and is now part of Planten un Blomen, near the exit to the CCH congress centre. Trunk grows slightly crooked with a characteristically low, steeply angled first branch at 3 m height. Known locally as the Lehmann-Platane, described by the botanical garden's own history as its living founding document."
+ }
 ]

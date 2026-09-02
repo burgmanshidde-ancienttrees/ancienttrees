@@ -14,6 +14,16 @@ What does is **the Funchal PDM's `Relatorio de Fundamentacao`, Volume II, March 
 
 **Caveat carried from the pass:** the coordinates around it are park-level rather than tree-level. Two different species sat at an identical lat/long inside the Jardim Municipal, which is the tell, so everything from this source ships `approximate` unless a second source pins the trunk.
 
+## Germany, second Wikipedia source class: "Liste markanter und alter Baumexemplare in <city>" (found on Hamburg, 2026-09-02)
+
+**A second, better German list class, and it is not the Naturdenkmal mirror already documented below.** A Hamburg pass went looking for the city's own Naturdenkmal register, as the Regensburg finding says to. Hamburg's official register holds **eleven entries and exactly one real tree candidate**: the rest is a boulder, four flood-breach ponds, two moors, a ditch, a clay pit and a garden meadow. The semantic filter ate the whole source.
+
+What produced all six shipped trees was a different German Wikipedia article class: **"Liste markanter und alter Baumexemplare in Hamburg"**, a citywide table of notable and old trees carrying coordinates, girths and planting-date estimates. It is not a mirror of a protected-object register, it is a dendrological list, so it includes trees no ordinance protects and skips the ponds and rocks that an ordinance does. Cross-checked against baumkunde.de and, twice, official hamburg.de and BUKEA press releases.
+
+**So for a German city, ask for BOTH articles**: "Liste der Naturdenkmale in X" for what is legally protected, and "Liste markanter und alter Baumexemplare in X" for what is actually a notable tree. The second is the better starting point for our purpose and it is the one nobody had looked for. Same registry-join technique either way: fetch the WIKITEXT and join on the id or the coordinates.
+
+**What it does not solve, and Hamburg is the worked example:** a dendrological list has no access field, so hard rule 10 is a per-tree check afterwards. Hamburg's single most famous entry, the yew of Neulander Deich, is widely called the city's oldest tree and stands on a private residential plot; it is blocked and stays blocked.
+
 ## Germany: the STATE Naturdenkmal register misses the CITY's own designations (found on Regensburg, 2026-09-01)
 
 **A transferable finding rather than a new source, and it applies to every German city in the queue.** A Regensburg pass was staged with 27 rows from `data/registers/bayern-naturdenkmale.json`, the Bavarian LfU state dataset, filtered to 20 km. Of Regensburg's roughly fifteen individually designated Naturdenkmal TREES, that state dataset carried **one**. All five trees the pass shipped came from somewhere else.

@@ -1,0 +1,76 @@
+{
+ "leads": [
+  {
+   "name": "Schiefe Eiche im Jenischpark (Leaning Oak, Jenischpark)",
+   "reason": "Only one source cited by Wikipedia's city tree list (monumentaltrees.com, which 403s automated fetches and could not be verified this pass). No age given. A WebSearch AI summary produced details that actually belong to the neighbouring Hollow Oak / Birch-in-Oak entries (same park, different coordinates), which is exactly the search-summary conflation risk this project has been burned by before, so those details were discarded rather than used. Needs a session that can browse monumentaltrees.com directly, or another independent source, before it can ship."
+  },
+  {
+   "name": "Alte Linde im Hammer Park (Hamm)",
+   "reason": "Not reached this pass (time-boxed). Wikipedia's citywide tree list calls it the oldest and thickest lime in Hamburg, planted 1616 +/- 50, girth 5.30 m (2016), coordinates given. Cross-checked by baumkunde.de and monumentaltrees.com per the list's own footnotes. Strong candidate for a future pass; would need baumkunde.de fetched directly to confirm since monumentaltrees.com cannot be curled."
+  },
+  {
+   "name": "Fontenay-Platane in Rotherbaum (Mittelweg 185)",
+   "reason": "BLOCKED, not merely unreached: stands on the grounds of the Egyptian Consulate General Hamburg (Gartenhaus Fontenay, Mittelweg 183/185), described in its own source as \"hinten\" (at the back of the property). No source states it is visible from public ground, and a foreign consulate is not a place the public may enter without invitation. Fails hard rule 10's access test."
+  },
+  {
+   "name": "Eiche am Licentiatenberg (Harvestehude)",
+   "reason": "Not reached this pass. Wikipedia notes it is \"Halbinvalide, Sanierung eingestellt\" (half-invalid, restoration work discontinued), which raises a real vitality question that would need checking against a recent source before it could ship as alive and healthy."
+  },
+  {
+   "name": "Tibarg-Eiche in Niendorf",
+   "reason": "Not reached this pass (time-boxed, and Niendorf is a separate district from the clusters researched, would need its own access/vitality check). Wikipedia gives girth 8.07 m (2018), planted 1600 +/- 50, on a private garden plot (Garstedter Weg 9) per monumentaltrees.com's title, so access would need checking before this could ship."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Alter Schwede (Övelgönne)",
+   "reason": "Not a tree. Hamburg's Naturdenkmal register lists it as a protected glacial erratic boulder (Findling), a granite rock 4.5m tall found in the Elbe riverbed in 1999. Confirmed via German Wikipedia article, which categorises it as Geotop, not Einzelbaum."
+  },
+  {
+   "name": "Callabrack, Gutsbrack, Papenbrack, Uhlenbuschbracks (Wilhelmsburg/Francop)",
+   "reason": "Not trees. \"Brack\" entries in Hamburg's Naturdenkmal register are flood-breach ponds/backwaters, protected as wetland habitat, not tree monuments."
+  },
+  {
+   "name": "Kiebitzmoor, Timmermoor (Volksdorf/Bergstedt)",
+   "reason": "Not trees. Protected moor/bog areas in the Naturdenkmal register."
+  },
+  {
+   "name": "Poppenbüttler Graben",
+   "reason": "Not a tree. A protected drainage ditch (Graben) in the Naturdenkmal register."
+  },
+  {
+   "name": "Sievertsche Tongrube (Hummelsbüttel)",
+   "reason": "Not a tree. A protected former clay pit (Tongrube) in the Naturdenkmal register."
+  },
+  {
+   "name": "Garten de l'Aigle (Eppendorf)",
+   "reason": "Naturdenkmal register entry covers a protected meadow (Wiese) within a garden, not an individual tree or tree ensemble. No single collectible tree identified from the register description."
+  },
+  {
+   "id": "hbg_001",
+   "name": "The Yew of Neuländer Deich",
+   "species": "European Yew (Taxus baccata)",
+   "age_estimate": "disputed: roughly 200 to 1000 years",
+   "age_min": 200,
+   "age_max": 1000,
+   "girth_cm": 290,
+   "location": {
+    "address": "Neuländer Elbdeich 198, 21129 Hamburg-Neuland",
+    "latitude": 53.470347,
+    "longitude": 10.026604,
+    "neighbourhood": "Neuland"
+   },
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Eibe_am_Neul%C3%A4nder_Deich",
+    "https://harburg-aktuell.de/news/vermischtes/hamburgs-aeltester-baum-850-jahre-alte-eibe-steht-am-neulaender-elbdeich.html",
+    "https://www.monumentaltrees.com/de/deu/hamburg/hamburg/13446_neulnderelbdeich198/"
+   ],
+   "access": "On private grounds at Neuländer Elbdeich 198, close to the street; visible from the public road (Neuländer Elbdeich), not enterable.",
+   "transport": "Neuland, Hamburg; nearest public transport is the bus network in Hamburg-Harburg, roughly 15-20 min walk from Neuland stops (no S/U-Bahn in Neuland itself)",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Widely called Hamburg's oldest tree. Protected as Naturdenkmal since 3 Nov 1936 (Verordnung zur Sicherung von Naturdenkmalen im Kreise Harburg). SOURCES CONFLICT ON AGE: German Wikipedia says age is often quoted as 800-1000 years, but cites the official Hamburg Umweltatlas as more cautiously saying only \"over 200 years\". Local paper harburg-aktuell.de (2018, author Zand-Vakili) gives 850 years and explicitly ties that figure to the first Elbe embankment (Eindeichung) of 1168, i.e. the source itself makes that connection, not an inference of ours. Girth: \"fast drei Meter\" (almost 3 metres) per Wikipedia and the same local paper, recorded as girth_cm 290 (approximate, source gives it as prose not a precise figure). Trunk is hollow, held together with metal rings/a metal corset; still alive and reported by the 2018 article to have good chances of surviving coming generations. Tree stands on a private residential plot at Neuländer Elbdeich 198, close to the road, and can be seen from the street per Wikipedia (\"kann von der Straße aus eingesehen werden\"). Not enterable. monumentaltrees.com carries a corroborating record at the same address (cross-check only, not used as sole source).",
+   "blocked_reason": "HARD RULE 10, the half that does not bend. Fully verified, three sources, and it is widely called Hamburg's oldest tree, but the verify pass established it stands on A PRIVATE RESIDENTIAL PLOT at Neulander Elbdeich 198. The rule allows a view-only tree when it is visible from public ground, and that allowance is about a wall between a visitor and a trunk, not about pointing strangers at somebody's house: 'front gardens, courtyards of dwellings, private houses and their grounds stay out, whatever the register says and however fine the tree... the person we would be sending strangers to never asked for any of it.' Publishing it would also publish a private address. Do not re-verify and do not reopen without the resident's own invitation. Age is disputed anyway: German Wikipedia notes the official Hamburg Umweltatlas says only 'over 200 years' against the 800 to 1000 commonly quoted."
+  }
+ ]
+}
