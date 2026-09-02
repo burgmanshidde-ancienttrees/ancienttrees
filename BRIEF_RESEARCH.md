@@ -199,6 +199,46 @@ versus 10 m for one laurel. Sources are wrong often enough that the physical
 sanity check in the register-pitfalls section above applies to everything, not
 only to registers.
 
+## What actually predicts a city's yield: does anybody NAME its trees (measured over ten cities, 2026-09-02)
+
+Ten cities were opened from zero in one day and the results split cleanly in a way
+that has nothing to do with how many old trees a city has, how big it is, or how
+hard the pass worked. It comes down to one question, and it is worth asking BEFORE
+a brief is written rather than discovering it forty minutes in.
+
+**Does some body publish a list that names individual trees?**
+
+| Named by somebody | Trees | Who named them |
+|---|---|---|
+| Hamburg | 6 | de.wikipedia's "Liste markanter und alter Baumexemplare" |
+| San Francisco | 6 | the city's Landmark Tree ordinance, tree by tree |
+| Rio de Janeiro | 6 | tombamento and *imune ao corte* decrees, with numbers |
+| Manchester | 5 | an RHS-funded survey the council published |
+| Belfast, San Diego | 4 each | NIEA and TROBI; Balboa Park's own documentation |
+
+| Nobody named them | Trees | What the sources say instead |
+|---|---|---|
+| Marseille | 3 | six parks, all "old trees present", no specimen named |
+| Miami | 3 | collective hammock and garden descriptions |
+| Charleston | 2 | four sites, all "ancient live oaks", not one named |
+| Sarajevo | 0 | two famous avenues, nothing to stand at |
+
+**The rule that follows.** This project's whole method rests on somebody else having
+already distinguished one tree from its neighbours. Where a culture writes about a
+park's tree POPULATION rather than about specimens, a from-zero pass returns two or
+three however well it is briefed, and the shortfall is not the pass's fault.
+
+**So the first fifteen minutes of any from-zero city go to finding the naming body**,
+not to the parks: a council survey, a heritage decree, a champion register, an
+association's label, a Wikipedia list. Find one and the city works. Find none and
+expect three, brief for three, and say so in advance rather than aiming at six and
+reporting a miss. Manchester is the proof in both directions: it returned ONE tree
+until its council's own survey was found, then five.
+
+**The corollary for the queue:** a city's demand tells you nothing about its yield.
+San Francisco at 361k pageviews and Charleston at a fraction of that both had real
+old trees; only one of them had anybody who had written them down.
+
 ## Why passes stall, and the four rules that came out of it
 
 Three verification passes died on 2026-08-17 with the same message, "no progress

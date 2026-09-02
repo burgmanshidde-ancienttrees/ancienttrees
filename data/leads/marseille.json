@@ -1,9 +1,141 @@
 {
-  "leads": [],
-  "blocked": [
-    {
-      "name": "Centenarian trees of Parc Longchamp (collective)",
-      "reason": "Palais Longchamp and its 8.5ha gardens were classified Monument Historique in 1998-1999 partly for remarkable/venerable trees; association-lac.com (fetched 2026-09-02) lists a dozen centenarian species present (pin d Alep, grenadier, pin noir, orme de Siberie, chene vert, copalme d Amerique, platane, frene a feuilles aigues, peuplier blanc, cedre de l Atlas, cedre du Liban, if commun, marronnier) and Alphonse Daudet (1851) wrote of saying goodbye to the plane trees and a pomegranate. No single individually-identifiable specimen with a specific location, girth or age was found within the pass window; the veteran trees are described collectively across three separate garden areas (jardin du plateau, jardin de l Observatoire, former zoo garden), not one obvious place to stand. Fails the one-collectible-point rule as currently documented. Worth a return pass to find whether a specific named cedar or pin d Alep has its own record (association-lac.com or the Ville de Marseille parks department may hold one)."
-    }
-  ]
+ "leads": [
+  {
+   "name": "ARF-labelled pine (Pin), Marseille, labelled Nov/Dec 2024",
+   "note": "arbres.org own validated-labels list (labels-valides.htm, fetched 2026-09-02) confirms a Pin in Marseille, Bouches-du-Rhone, received the official Arbre remarquable de France label in the November/December 2024 batch. This is a real, officially confirmed designation but no source found in this pass names the specific pine species, its exact address, age, or size. arbres.org own interactive map (la-carte-interactive-des-arbres-remarquables-labellises-en-france.htm) is JS-rendered and could not be queried by curl within this pass; a session with a real browser could likely locate the pin on that map. Worth a targeted follow-up."
+  },
+  {
+   "name": "Place des Moulins plane trees, Le Panier (highest point of the Panier)",
+   "note": "Multiple sources (tourisme-marseille.com, pariszigzag.fr, francerent.com) describe Place des Moulins, the historic highest point of Le Panier (former windmill site, 16th c.), as shaded by plane trees (platanes), with no individual specimen singled out, no age or size figure found. Weaker than the confirmed Place des Augustines plane tree (mrs_003): here it is several trees, not clearly one collectible point, and no source calls them notably old. Worth a look if a future pass can find a specific age/girth or narrow to one tree."
+  },
+  {
+   "name": "Cedre du Liban, Parc du 26e Centenaire (denotation=park in OSM)",
+   "note": "OSM tags one Cedrus libani at 43.2825157,5.39189 with denotation=park, confirmed via Overpass is_in() to fall inside Grand parc du XXVIeme centenaire - Jean-Claude Gaudin. REJECTED for this pass: the whole park was built from scratch in 2001 on the former Gare du Prado site (competition won 1998, built by Bernard Huet, opened 2001), so nothing there can be more than ~25 years old; a cedar of that age is not yet visually spectacular and no source gives it individual attention. Caution: an early WebSearch AI summary wrongly attributed Parc Longchamp s centenarian-species list to this park; verified false by direct Overpass is_in() check before rejecting."
+  },
+  {
+   "name": "Bald cypress ARBRES label date (2009) for Parc Borely (mrs_001)",
+   "note": "Single-sourced claim (provence7.com) that the Parc Borely bald cypresses were labelled Arbre remarquable by A.R.B.R.E.S. in 2009. Could not find this specific labelling event on arbres.org itself (only checked their Nov/Dec 2024 validated-labels page, not a full historical archive). A future pass could search arbres.org s labelling-ceremony archive (remises-de-label.htm and its older entries) for 2009 Marseille to confirm or correct."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Centenarian trees of Parc Longchamp (collective)",
+   "reason": "Palais Longchamp and its 8.5ha gardens were classified Monument Historique in 1998-1999 partly for remarkable/venerable trees; association-lac.com (fetched 2026-09-02) lists a dozen centenarian species present (pin d Alep, grenadier, pin noir, orme de Siberie, chene vert, copalme d Amerique, platane, frene a feuilles aigues, peuplier blanc, cedre de l Atlas, cedre du Liban, if commun, marronnier) and Alphonse Daudet (1851) wrote of saying goodbye to the plane trees and a pomegranate. No single individually-identifiable specimen with a specific location, girth or age was found within the pass window; the veteran trees are described collectively across three separate garden areas (jardin du plateau, jardin de l Observatoire, former zoo garden), not one obvious place to stand. Fails the one-collectible-point rule as currently documented. Worth a return pass to find whether a specific named cedar or pin d Alep has its own record (association-lac.com or the Ville de Marseille parks department may hold one)."
+  },
+  {
+   "name": "Olivier (olive tree), Plan-de-Cuques town hall",
+   "reason": "Widely repeated online (unjourunolivier.fr and others, though that specific site turned out to be a commercial nursery selling unrelated olive trees, not a real source about this specimen) as one of the oldest olive trees in Europe, standing in front of the town hall of Plan-de-Cuques. Plan-de-Cuques is its OWN commune, not Marseille (it borders Marseille to the north-east), so this is out of scope for a Marseille city page under the day-trip/administrative rule unless a future Plan-de-Cuques pass verifies it properly with real sources (the only sources found in this pass were nursery marketing pages with no real facts about this specific tree)."
+  },
+  {
+   "name": "Grand Platane d Orient (Great Oriental Plane), Gemenos",
+   "reason": "Named OSM tree node (id 1300152897), height 30m, genus Platanus, at 43.2907154,5.6616309. Reverse-geocoded: this is in Gemenos (postcode 13420), a separate commune roughly 20km east of Marseille on the D2 near Parc de Saint-Pons, not in the city of Marseille and beyond the ~30 minute public transport day-trip boundary. Genuinely interesting (individually named on OSM, real height given) for a future Gemenos or Aubagne-area pass, not this one."
+  },
+  {
+   "name": "Liberty Tree (Arbre de la Liberte), Memorial de la Marseillaise, 25 rue Thubaneau",
+   "reason": "Planted 1792 by the Club des Amis de la Constitution on the site of the former jeu de paume. Historically significant subject, but no source found confirms the ORIGINAL 1792 tree is still alive today (most French Revolutionary Liberty Trees were destroyed, especially during the Restoration); tourisme-marseille.com explicitly does not confirm current survival. Fails the alive-now bar; would need a dated recent photo/observation or a source stating explicitly it is the original tree (or a documented, honestly-labelled replanting) before it could ship."
+  },
+  {
+   "name": "Arbre de l Esperance (Tree of Hope), Parc du 26e Centenaire entrance",
+   "reason": "NOT A LIVING TREE. Multiple sources (tourisme-marseille.com, madeinmarseille.net renovation article) confirm this is a sculptural monument by sculptor Daniel Chotard (landscape design by Dominique Le Fur), inaugurated 14 December 2000, with 500,000 names of Marseille residents engraved on surrounding marble slabs (an idea to use real or metal leaves was explicitly rejected in favour of engraved marble). Out of scope entirely, not eligible even as blocked-tree-species, since it is public art rather than a tree."
+  },
+  {
+   "name": "Individual specimens at Parc du Pharo / Jardin Emile-Duclaux",
+   "reason": "Extensive searching found only generic descriptions of the 5.7ha garden (mid-19th century, laid out for Napoleon III s never-occupied Palais du Pharo) with no individual tree named, dated, or measured. Candidate site named in the brief; genuinely searched but came up empty within this pass."
+  },
+  {
+   "name": "Individual specimens at Parc Valmer",
+   "reason": "Extensive searching found only generic descriptions (Aleppo pines, palms - Trachycarpus fortunei, Phoenix canariensis, Washingtonia filifera, Butia capitata - olives, holm oaks, mastic and strawberry trees) with no individual specimen named, dated or measured. Candidate site named in the brief; genuinely searched but came up empty within this pass."
+  },
+  {
+   "name": "Jardin des Vestiges",
+   "reason": "This is an archaeological garden (Greek ramparts, Roman-era port remains, excavated 1967 for the Centre Bourse) at 2 Rue Henri Barbusse. No sources describe it as containing notable trees at all; it is a ruins garden, not a tree destination. Candidate site named in the brief; searched, found to be the wrong kind of site."
+  },
+  {
+   "name": "Individual specimens at/near Abbaye Saint-Victor",
+   "reason": "The abbey (5th century) sits on a 4-hectare wooded domain per one source, and hosted Marseille s first botanical garden centuries ago, but no source found names, dates, or measures any specific tree there today. Candidate site named in the brief; genuinely searched but came up empty within this pass."
+  },
+  {
+   "name": "Cedars and magnolias at Chateau de la Buzine / Parc des Sept Collines",
+   "reason": "Marcel Pagnol s Chateau de ma mere, in the 11th arrondissement. Sources describe majestic cedars of Lebanon and century-old strawberry trees (arbousiers centenaires) in general terms only; no individual specimen named, dated, or measured. Not one of the brief s four candidates but investigated as a promising lead; came up empty within this pass."
+  }
+ ],
+ "verified_but_unpublished": [
+  {
+   "id": "mrs_001",
+   "name": "The Bald Cypress of Parc Borely",
+   "species": "Bald Cypress (Taxodium distichum)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Parc Borely, near the lake, Avenue du Prado / Avenue Clot-Bey, 13008 Marseille",
+    "latitude": 43.260329,
+    "longitude": 5.3835936,
+    "neighbourhood": "Bonneveine, 8th arrondissement"
+   },
+   "verified_sources": [
+    "https://www.provence7.com/portails/nature/forets-de-provence/arbres-remarquables-en-provence/",
+    "https://www.graines-et-plantes.com/index.php?visite=jardins&visiter=Le-Parc-Borely-de-Marseille",
+    "OSM natural=tree node 2365945745, species=Taxodium distichum, at 43.260329,5.3835936 (reverse-geocodes to Avenue Clot-Bey / Grand Saint-Giniez, immediately beside Parc Borely, matching the Direction des Parcs et Jardins own address of 48 avenue Clot-Bey)"
+   ],
+   "access": "Free, public park, open daily (typically 6:30am-8:30/9:30pm depending on season)",
+   "transport": "Tram T3 or Bus, Rond-Point du Prado stop, then short walk; Parc Borely metro is not direct, nearest is Castellane then tram",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Bald cypress (Taxodium distichum, cypres chauve or cypres de Louisiane) growing beside the lake in Parc Borely, Marseille 8e. Distinctive aerial roots (pneumatophores) rise from the ground around the trunk, a Louisiana swamp adaptation for waterlogged soil, and are the tree's main visual draw. Two independent OSM tree nodes tag Taxodium distichum right beside the lake at 43.2603/5.3836 and 43.2600/5.3828, both reverse-geocoding to ground immediately adjacent to Parc Borely (Avenue Clot-Bey, Grand Saint-Giniez/Bonneveine), matching the park's own administrative address. Species introduced to France mid-18th century; provence7.com states this specimen was labelled Arbre remarquable by the A.R.B.R.E.S. association in 2009, but that is a SINGLE source for the label claim and could not be independently confirmed (arbres.org label-validation lists checked only cover 2024 batches; no dedicated arbres.org fiche for this tree was found). FLAGGED for that reason: species and existence are corroborated by multiple independent sources, but the 2009 label date rests on one source only. No age or girth is documented anywhere found; do not use the species' native-range lifespan potential (600-1200 years, quoted by provence7.com) as an age estimate for this individual specimen, that figure describes what the species CAN reach in its native swamp habitat, not this tree's actual age, and repeating it would be a bridge claim. Ask the reader for a trunk girth if anyone has one."
+  },
+  {
+   "id": "mrs_002",
+   "name": "The Southern Magnolia of Parc Borely",
+   "species": "Southern Magnolia (Magnolia grandiflora)",
+   "age_estimate": "about a century, planted in 1929",
+   "age_min": 90,
+   "age_max": 100,
+   "girth_cm": 222,
+   "height_m": 20,
+   "location": {
+    "address": "Parc Borely, 8th arrondissement, Marseille (exact tree within the park not pinpointed)",
+    "latitude": 43.2597652,
+    "longitude": 5.383882,
+    "neighbourhood": "Bonneveine, 8th arrondissement"
+   },
+   "verified_sources": [
+    "https://www.jardinsdefrance.org/le-magnolia-grandiflora/",
+    "https://www.graines-et-plantes.com/index.php?visite=jardins&visiter=Le-Parc-Borely-de-Marseille"
+   ],
+   "access": "Free, public park, open daily",
+   "transport": "Tram T3 or bus, Rond-Point du Prado stop, then short walk",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "verify_notes": "Southern Magnolia (Magnolia grandiflora) at Parc Borely, Marseille 8e. jardinsdefrance.org (Societe Nationale d Horticulture de France), in a roundup of exceptional Magnolia grandiflora specimens across France by trunk girth and crown height, lists it exactly as: \"Marseille, Parc Borely, plante en 1929 : 2,22 m/20 m\" (2.22m circumference measured at 1m above ground, 20m crown height). CAUTION: an earlier WebSearch AI summary of the same page mis-attributed a different row in that same list (Grasse, planted 1956, 2.7m/18m) to Marseille; the figures used here were confirmed by fetching and reading the raw page text directly, per the search-summary-is-a-lead-never-a-source rule. graines-et-plantes.com independently corroborates a Magnolia grandiflora as a standout, remarkable specimen with ivory-coloured flowers in the park, without giving measurements. Documented planting date (1929) is the basis for the age figure, not a growth-rate estimate; roughly 95-97 years old as of 2026. LOCATION_PRECISION IS APPROXIMATE: neither source gives which part of the 17-hectare park it stands in. One Magnolia grandiflora is tagged as an OSM natural=tree node (id 2365945739) at 43.2597652,5.383882, inside/immediately adjacent to Parc Borely near the same spot as the bald cypresses (mrs_001), but this is supporting evidence only, not proof it is the same 1929 specimen, since ordinary magnolias also grow in the park. A future pass should look for the park s own tree-trail signage (a 1995 pedagogical circuit exists per marseille-autrement.fr, walking about twenty remarkable trees) to pin the exact spot."
+  },
+  {
+   "id": "mrs_003",
+   "name": "The Plane Tree of Place des Augustines",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "several centuries (vague, undocumented)",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Place des Augustines, Le Panier, 13002 Marseille",
+    "latitude": 43.2973337,
+    "longitude": 5.3686195,
+    "neighbourhood": "Le Panier, 2nd arrondissement"
+   },
+   "verified_sources": [
+    "https://www.la-table-d-augustine-restaurant-marseille.com/",
+    "https://marseille.love-spots.com/en/spots/eating-out/restaurants/104282-la-table-daugustine.html",
+    "https://croquisurbains.fr/les-places-du-panier-a-marseille",
+    "OSM natural=tree node 1346333315 at 43.2973337,5.3686195, tagged denotation=natural_monument, species=Platanus hispanica, reverse-geocoding to Place des Augustines, Le Panier, Marseille 2e"
+   ],
+   "access": "Free, standing in a public square in Le Panier, always visible/accessible",
+   "transport": "Metro line 1 or 2, Vieux-Port or Colbert stop, short walk into Le Panier",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "A large London Plane (Platanus x hispanica/acerifolia) standing in Place des Augustines, the small square at the heart of Le Panier, Marseille s oldest quarter, on the site of a former Ursuline (1636) then Augustine (1748) convent. Multiple independent tourism/lifestyle sources describe it consistently as the dominant, shading feature of the square: love-spots.com calls it \"the great plane tree\"; croquisurbains.fr notes \"son bar du platane d une certaine epoque aussi\" (a bar named for the plane tree, itself of some age); the restaurant La Table d Augustine, which opened on the square in 2023 and sits directly beneath it, describes it on its own site as \"le plus vieux platane du centre-ville, temoin silencieux des siecles passes\" (the oldest plane tree in the city centre, silent witness to centuries past). FLAGGED because the only source giving an age figure at all is the restaurant s own promotional copy (an interested party, and \"oldest in the city centre\" is an unverified superlative); other sources agree only that it is old and large, not by how much. Using the vague plural (\"centuries\", \"siecles passes\") rather than sharpening to a number, per the rule against turning a vague source into a precise one. OSM tags a single London Plane node right at this square s coordinates with denotation=natural_monument, a legal/heritage-protection style tag, which is corroborating but crowd-sourced and not itself verified against a French official register. No canker-stain (Ceratocystis platani) news or dieback reports found for this specific tree; the restaurant opening beneath it in 2023 and the square s tourism write-ups being current implies the tree is alive and healthy as of recently, though no dated photo/observation was directly viewed. Ask a reader for a trunk girth or a more precise planting record if anyone in Le Panier has one."
+  }
+ ],
+ "note": "\n\nNOT PUBLISHED 2026-09-02. Three trees verified, under the four-tree floor, and the single-destination-tree exception does not rescue them: a bald cypress and a magnolia in Parc Borely and a plane on Place des Augustines are trees you meet once you are already there, not reasons to come. All three are done and sourced; do not re-verify. Two more with a placeable position open the city under the normal floor. THE REASON IS NOT THIN EFFORT AND IT IS WORTH READING: French municipal parks here describe their tree POPULATIONS collectively and almost never name a specimen. Longchamp, Pharo, Valmer, the Jardin des Vestiges, Saint-Victor and Chateau de la Buzine all came back as 'old trees present' with nobody named. THE ONE CONCRETE LEAD LEFT: arbres.org's own validated-labels list confirms an officially labelled Arbre Remarquable de France PINE somewhere in Marseille. Its location is on their interactive map, which is JS-rendered, and their main site sits behind a Cloudflare bot challenge that was correctly not bypassed. That is a browser-session job and it would probably close this city on its own."
 }
