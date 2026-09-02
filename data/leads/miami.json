@@ -1,0 +1,43 @@
+{
+  "leads": [
+    {
+      "site": "The Kampong (National Tropical Botanic Garden), Coconut Grove, Miami",
+      "candidate": "The Kaffir Orange (Strychnos spinosa)",
+      "reason": "Documented in a 1938 first-person memoir (USDA ARS 'Reminiscences of Early Plant Introduction in South Florida') as the very first tree Ed Simmonds planted on what became The Kampong, on a bayfront property Fairchild acquired before the garden's formal 1916 founding date. Strong historical provenance but no source found in this pass states the tree is still alive today; Strychnos spinosa is described elsewhere as a 'low, spiny, bushlike' species, so longevity is uncertain. Needs a Kampong-focused pass (NTBG's own current plant records, or a site visit report) to confirm survival before it can ship. Paid, reservation-encouraged entry (Tue-Sat 9am-3pm)."
+    },
+    {
+      "site": "Vizcaya Museum and Gardens",
+      "candidate": "The 'Florida Challenger' Royal Palm (Roystonea regia)",
+      "reason": "vizcaya.org/collections/gardens/about-gardens/ states one surviving Royal Palm among ~100 brought from Cuba by Deering is recognised as a Florida Challenger, the fourth-largest Royal Palm in the state. Only one source found (Vizcaya's own site); no independent corroboration located in this pass's time budget. Worth a second search pass specifically for Florida's champion palm register or a news piece."
+    },
+    {
+      "site": "Vizcaya Museum and Gardens",
+      "candidate": "Vizcaya's 8 unnamed national champion trees",
+      "reason": "vizcaya.org states the property's forest holds 8 documented national champion trees, 'the largest of their kind in the United States', but does not name species or locations. Worth a dedicated pass or a direct enquiry to Vizcaya's horticulture staff to identify individual specimens."
+    },
+    {
+      "site": "Simpson Park Hammock",
+      "candidate": "The living Gulf Licaria (Licaria triandra) near the pond",
+      "reason": "The park's own 2022 brochure says the country's oldest/largest Gulf Licaria at Simpson Park was toppled by Hurricane Katrina in 2005, but also notes a different, living specimen near the pond was observed fruiting for the first time in February 2012. That second tree could be a candidate in its own right but has no size, age or recent (2018+) confirmation; needs its own verification."
+    },
+    {
+      "site": "Miami-Dade County (unnamed specific park)",
+      "candidate": "Florida's National Champion Florida Strangler Fig (Ficus aurea)",
+      "reason": "fufc.org (Florida's Champion Tree program) states the largest National Champion tree in Florida is a native Florida Strangler Fig in Miami-Dade County: 342in circumference, 69ft tall, 72ft average crown spread. No specific park, address or coordinates found in this pass. High value if the exact site can be found (a genuinely enormous, free-to-see native tree would balance the city's paid-site-heavy candidate list). Worth a dedicated search of the Florida Forest Service / UF champion tree database, which is JavaScript-driven and needs a different fetch approach."
+    }
+  ],
+  "blocked": [
+    {
+      "site": "110 Phoenetia Avenue, Coral Gables ('Garden of Our Lord' live oak)",
+      "reason": "A live oak locally estimated at 100-200 years old (Montgomery Botanical Center: 100-155y; Vizcaya's own horticulturalists quoted as 'easily 200 years old'), canopy over 100ft, on a privately-owned 1.5-acre lot purchased in 2021 by a developer (Century Homebuilders) planning a nine-story, 200-unit building; approved by Coral Gables' Board of Architects in 2023. Private land under active redevelopment threat with no public access (hard rule 10). Also the tree's own survival is in doubt: the developer proposes relocating it, which horticultural experts warn would likely kill it. Source: Yahoo News, 9 Aug 2025, 'Development could kill a tree older than Coral Gables.'"
+    },
+    {
+      "site": "King's Highway Banyan Trees, SW 304th St between SW 167th and SW 174th Ave",
+      "reason": "Formally a Miami-Dade County historic site (designated 18 April 2007), Ficus benghalensis planted in the 1940s. Blocked for two reasons: (1) location is in the Homestead/Leisure City area, roughly 32km / well over 30 minutes from downtown Miami, outside the day-trip boundary for a Miami city page; (2) it is a multi-block roadside canopy corridor, not one collectible point with an obvious place to stand (an avenue, per the hard rules)."
+    },
+    {
+      "site": "333 SE 2nd Avenue, downtown Miami (Royal Palm Gardens banyan)",
+      "reason": "The last surviving tree of the historic Royal Palm Hotel gardens, a banyan planted circa 1897-1903, survived the 1926 hurricane and the hotel's demolition, but was itself removed on 10 December 1955 to add parking spaces. The site is now the Wells Fargo Center (completed 2010). Dead/gone; nothing to visit."
+    }
+  ]
+}

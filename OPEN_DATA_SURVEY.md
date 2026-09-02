@@ -1219,6 +1219,19 @@ the Street Tree List (~125,000 public trees, all of them, via
 "Landmark Trees" subset or designation flag was found in this pass. Not
 recommended on what was found.
 
+> **CORRECTED 2026-09-02, and the correction matters more than the verdict.**
+> The verdict above is right about the DATASET and wrong about the city. San
+> Francisco does keep a curated Landmark Tree list, designated tree by tree
+> with a numbered ordinance, published by SF Environment at sfenvironment.org
+> as WEBPAGES rather than as data. A from-zero pass found it in minutes and
+> shipped six trees off it, including Landmark Tree No. 15. **So "no usable
+> dataset" is not the same finding as "no curated list", and this file conflated
+> them twice.** A scouting pass looks for something machine-readable and stops;
+> a research pass reads the ordinance. Both US scouting rounds ended with "not
+> recommended" on cities that may well have a list on a webpage, so Seattle,
+> Philadelphia, Charleston, Savannah and San Diego are worth one look at their
+> ordinance pages before anyone treats those NOs as closed.
+
 **City of Melbourne**: `trees-with-species-and-dimensions-urban-forest` on
 `data.melbourne.vic.gov.au` (Opendatasoft platform, CC BY per its own licence
 field) is again the full municipal inventory (80,000+ trees), not the

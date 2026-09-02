@@ -1,5 +1,10 @@
 {
-  "leads": [],
+  "leads": [
+    {
+      "candidate": "Giant Sequoia of Garfield Square (Harrison and 25th Streets)",
+      "reason": "A genuinely public giant sequoia (sequoiadendron giganteum) in a city park, possibly dating to the founding of Garfield Square in 1884 per a 2012 SF Recreation and Parks communication (Rec and Park staff quoted disagreeing on exact age, some saying 200 years which the reporter calls likely hyperbole; oldest photo evidence found by Rec and Park dates only to 1938). Source: missionlocal.org, \"Wind splits giant sequoia that may date to 1884\", fetched directly, 2023-02-23. NOT verified alive today: the article reports the multi-trunked tree snapped one of its three trunks off entirely in a February 2023 windstorm, showed abundant grey fungus in the trunk, and SF Rec and Park staff on scene speculated it would \"likely have to be removed entirely.\" No later source was found confirming either survival or removal as of this pass (2026-09), and the time budget did not allow a further search. A future pass should check for post-2023 news, a recent photo, or satellite/street-level imagery of the Harrison/25th corner before verifying this one alive; do not ship without that check, per the alive-now bar."
+    }
+  ],
   "blocked": [
     {
       "candidate": "Presidio/Strybing Arboretum Moon Tree",
@@ -8,6 +13,10 @@
     {
       "candidate": "Mission Dolores cemetery/garden trees",
       "reason": "Searched for an individually old or notable tree in the Mission Dolores cemetery/garden. Multiple sources agree the garden was substantially restored in 1994 with mostly newer plantings from the 1791-period plant list, and the only tree-age claim found (cypresses planted in the cemetery, from a secondary genealogy source) was vague, undated and not about a specific identifiable specimen. No individually named or documented old tree turned up in two searches. Not pursued further given the time budget; the ground itself (founded 1776, oldest intact building in SF) is exactly the kind of place this project looks, so a future pass with more time could recheck for a specific dated cypress or palm."
+    },
+    {
+      "candidate": "Giant Sequoia at 3066 Market Street",
+      "reason": "Officially a Landmark Tree (sfenvironment.org register), but multiple sources (socketsite.com, the 2014 landmark petition itself) confirm it stands in the REAR YARD of a private residential property at 3066 Market Street, a backyard tree saved from removal by a landmark designation rather than a publicly accessible one. The official register itself warns \"many trees are in private backyards and are not available for public viewing,\" and this is one of them. Fails hard rule 10 (private garden). Not the same tree as the Garfield Square giant sequoia below."
     }
   ]
 }
