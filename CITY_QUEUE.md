@@ -380,7 +380,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 183 | Brno | 3.82 | 63,714 | 8 | 2 | 2 | 34 | 20 | measured |
 | 184 | Alice Springs | 5.71 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 185 | Aarhus | 5.59 | 52,722 | 7 | 1 | 1 | - | 30 | measured |
-| 186 | Bruges | 5.60 | 106,902 | 4 | - | - | - | 10 | predicted (travel demand) |
+| 186 | Bruges | 5.60 | 106,902 | 4 | - | 1 | - | 10 | predicted (travel demand) |
 | 187 | Cambridge | 5.59 | 97,974 | 5 | 2 | 1 | - | 20 | measured |
 | 188 | Avignon | 5.54 | 64,047 | - | - | - | - | 10 | predicted (travel demand) |
 | 189 | Galway | 3.65 | 88,162 | - | - | - | - | 10 | predicted (travel demand) |

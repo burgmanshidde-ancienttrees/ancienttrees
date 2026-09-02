@@ -2554,7 +2554,11 @@
    "ease": 1.12,
    "slug": "jersey-city",
    "impressions_10d": 0,
-   "clicks_10d": 0
+   "clicks_10d": 0,
+   "covered_by": {
+    "city": "New York",
+    "trees": 9
+   }
   },
   {
    "rank": 111,
@@ -4076,7 +4080,11 @@
    "ease": 1.66,
    "work_score": 6.26,
    "travel": 3769,
-   "wikidata": 8
+   "wikidata": 8,
+   "covered_by": {
+    "city": "Madeira",
+    "trees": 8
+   }
   },
   {
    "rank": 177,
@@ -4297,7 +4305,7 @@
    "status": "published",
    "trees": 4,
    "photos": 0,
-   "walks": 0,
+   "walks": 1,
    "register": 0,
    "ready": 0,
    "supply": 0,
