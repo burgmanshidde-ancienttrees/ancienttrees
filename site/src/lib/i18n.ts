@@ -138,6 +138,11 @@ export interface UIStrings {
   cityHasMore: (city: string) => string;
   withWalkingRoute: string;
   distanceAway: (d: string) => string;
+  /** The factual opening of a tree page's meta description: what it is,
+   *  how old, where. Contract B's "answer" half, per language, because
+   *  the word order differs and a template cannot be translated word for
+   *  word. `age` is already a bare number and may be empty. */
+  metaLead: (species: string, age: string, where: string) => string;
   labelSpecies: string;
   labelAge: string;
   labelLocation: string;
@@ -202,6 +207,13 @@ const EN: UIStrings = {
   cityHasMore: (c) => `${c} has more trees worth the visit:`,
   withWalkingRoute: ", with a walking route that passes several of them.",
   distanceAway: (d) => `${d} away`,
+  metaLead: (sp, age, where) => {
+    const vowel = age ? /^(8|11|18|8\d)$/.test(age) : /^[AEIOU]/.test(sp);
+    const a = vowel ? "An" : "A";
+    const head = age && sp ? `${a} ${age}-year-old ${sp}` : sp ? `${a} ${sp}`
+      : age ? `${a} ${age}-year-old tree` : "A remarkable tree";
+    return `${head} in ${where}.`;
+  },
   labelSpecies: "Species",
   labelAge: "Age estimate",
   labelLocation: "Location",
@@ -228,6 +240,8 @@ const EN: UIStrings = {
 
 const TABLE: Record<string, Partial<UIStrings>> = {
   es: {
+    metaLead: (sp, age, where) => sp && age ? `${sp} de unos ${age} años en ${where}.`
+      : sp ? `${sp} en ${where}.` : age ? `Árbol de unos ${age} años en ${where}.` : `Árbol singular en ${where}.`,
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Especie",
     labelAge: "Edad estimada",
@@ -288,6 +302,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     withWalkingRoute: ", con un recorrido a pie que pasa por varios de ellos.",
   },
   it: {
+    metaLead: (sp, age, where) => sp && age ? `${sp} di circa ${age} anni a ${where}.`
+      : sp ? `${sp} a ${where}.` : age ? `Albero di circa ${age} anni a ${where}.` : `Albero monumentale a ${where}.`,
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Specie",
     labelAge: "Età stimata",
@@ -348,6 +364,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     withWalkingRoute: ", con un percorso a piedi che ne tocca diversi.",
   },
   nl: {
+    metaLead: (sp, age, where) => sp && age ? `${sp} van ongeveer ${age} jaar in ${where}.`
+      : sp ? `${sp} in ${where}.` : age ? `Boom van ongeveer ${age} jaar in ${where}.` : `Monumentale boom in ${where}.`,
     distanceAway: (d) => `${d} verderop`,
     labelSpecies: "Soort",
     labelAge: "Geschatte leeftijd",
@@ -408,6 +426,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     withWalkingRoute: ", met een wandelroute die er verschillende aandoet.",
   },
   de: {
+    metaLead: (sp, age, where) => sp && age ? `${sp}, rund ${age} Jahre alt, in ${where}.`
+      : sp ? `${sp} in ${where}.` : age ? `Baum, rund ${age} Jahre alt, in ${where}.` : `Bemerkenswerter Baum in ${where}.`,
     distanceAway: (d) => `${d} entfernt`,
     labelSpecies: "Art",
     labelAge: "Geschätztes Alter",
@@ -468,6 +488,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     withWalkingRoute: ", mit einem Spaziergang, der an mehreren vorbeif\u00fchrt.",
   },
   pt: {
+    metaLead: (sp, age, where) => sp && age ? `${sp} com cerca de ${age} anos em ${where}.`
+      : sp ? `${sp} em ${where}.` : age ? `Árvore com cerca de ${age} anos em ${where}.` : `Árvore notável em ${where}.`,
     distanceAway: (d) => `a ${d}`,
     labelSpecies: "Espécie",
     labelAge: "Idade estimada",
@@ -528,6 +550,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     withWalkingRoute: ", com um percurso a p\u00e9 que passa por v\u00e1rias delas.",
   },
   fr: {
+    metaLead: (sp, age, where) => sp && age ? `${sp} d'environ ${age} ans à ${where}.`
+      : sp ? `${sp} à ${where}.` : age ? `Arbre d'environ ${age} ans à ${where}.` : `Arbre remarquable à ${where}.`,
     distanceAway: (d) => `\u00e0 ${d}`,
     labelSpecies: "Espèce",
     labelAge: "Âge estimé",
@@ -588,6 +612,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     withWalkingRoute: ", avec un itin\u00e9raire \u00e0 pied qui en relie plusieurs.",
   },
   ja: {
+    metaLead: (sp, age, where) => sp && age ? `${where}にある樹齢約${age}年の${sp}。`
+      : sp ? `${where}にある${sp}。` : age ? `${where}にある樹齢約${age}年の木。` : `${where}にある巨木。`,
     distanceAway: (d) => `${d}\u5148`,
     labelSpecies: "樹種",
     labelAge: "推定樹齢",
