@@ -56,6 +56,12 @@ public enum Photos {
     /// rule now and the feed carries its output.
     public static func credit(_ p: Photo) -> String? {
         guard p.creditRequired else { return nil }
+        // The feed carries the finished line since 2026-09-02. Joining name and
+        // licence here was right for "Nikolau · CC BY-SA 3.0" and wrong for a
+        // photograph somebody gave us, whose licence field is a sentence naming
+        // the giver again. The join stays only for a catalogue bundled before
+        // the field existed.
+        if let line = p.creditLine, !line.isEmpty { return line }
         return [p.name, p.license].compactMap { $0 }.joined(separator: " \u{00B7} ")
     }
 }

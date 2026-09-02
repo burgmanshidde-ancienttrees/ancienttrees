@@ -265,6 +265,24 @@ export function buildRedirectStubs(): RedirectStub[] {
     });
   }
 
+  // /<city>/walks, Contract K, public from 2026-08-24 to 2026-09-02. Hidde
+  // took the walks off the website and back into the app ("er moet niet een
+  // dieper liggende pagina zijn waar je die walks kan lezen ... stuur ze maar
+  // gewoon naar de app"), so the page is gone and every walk control on the
+  // site opens the app overlay instead.
+  //
+  // The URL keeps resolving, which is hard rule 3 and not a nicety: these
+  // pages were in the sitemap for nine days and Google fetched them. It lands
+  // on the city page, which is where the trees of that walk actually are, so
+  // an arrival gets the thing rather than an apology. Both filename forms,
+  // for the trailing-slash reason this file's header explains.
+  for (const slug of published) {
+    const canonical = `${BASE_URL}/${slug}`;
+    const title = `Moved: Ancient Trees in ${cityName(slug)}`;
+    stubs.push({ outputPath: `${slug}/walks.html`, targetRelative: `../${slug}`, canonical, title });
+    stubs.push({ outputPath: `${slug}/walks/index.html`, targetRelative: `../../${slug}`, canonical, title });
+  }
+
   for (const [citySlug, oldSlug, treeId] of RENAMED_TREE_SLUGS) {
     const slugs = treeSlugsForCity(citySlug);
     const newSlug = slugs[treeId];

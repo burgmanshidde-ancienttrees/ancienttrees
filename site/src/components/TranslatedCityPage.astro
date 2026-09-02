@@ -101,7 +101,6 @@ const qslug = QUESTION_SLUG[lang] ?? "oldest-tree";
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
           <span class="passport-total" id="passport-total"></span>
-          <button type="button" class="passport-save" id="passport-save">{U.saveOrTransfer}</button>
         </p>
       </div>
       {trees.map((t, i) => {

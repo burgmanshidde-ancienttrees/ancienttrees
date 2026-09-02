@@ -16,13 +16,14 @@ import { haversineKm } from "../../lib/walks";
 // that has never existed. Hidde found it on Oahu (2026-08-28).
 //
 // Contract K put the walks back on the web on 2026-08-24 at /[city]/walks, and
-// nothing updated this line to follow them. It counts them from the same helper
-// the walks page itself uses, so the two cannot disagree, and it says nothing
-// when a city has no walk.
+// took them off again on 2026-09-02: the walks are the Plus product and every
+// walk control on the website now opens the app overlay. The line stays, says
+// plainly that the route is in the app, counts the walks from the same helper
+// that feeds the app, and says nothing at all when a city has no walk.
 import { pageWalksFor, hasWalksPage } from "../../lib/city-walks";
 import { speciesCommon, speciesPageSlugs } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
-import { usablePhoto, imgSrcset, photoDims, thumbUrl, creditRequired, creditName, metaImageUrls, ogImageUrl } from "../../lib/images";
+import { usablePhoto, imgSrcset, photoDims, thumbUrl, creditRequired, creditText, metaImageUrls, ogImageUrl } from "../../lib/images";
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
@@ -105,11 +106,11 @@ const parkPage = parkName ? (parkPages as Map<string, any>).get(parkGroupKey(cit
 const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
-// Gated on hasWalksPage(), the exact test /[city]/walks itself uses to decide
-// whether it gets built (WALKS_PAGE_MIN_TREES total trees across its walks),
-// so a city with one thin 2-4 tree walk cannot link to a page that never
-// exists. cityWalkCount (the number of walks, not trees) only picks the
-// wording once that gate has already passed.
+// Whether this city has walks worth mentioning at all: the same
+// WALKS_PAGE_MIN_TREES test that used to decide whether /[city]/walks got
+// built, kept after that page was retired because it is still the honest gate
+// on saying the word "walk" to a reader. cityWalkCount (the number of walks,
+// not trees) only picks the wording once that gate has already passed.
 const cityHasWalksPage = hasWalksPage(city);
 const cityWalkCount = pageWalksFor(city).length;
 const tslugs = treeSlugsForCity(city);
@@ -224,7 +225,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
     {photo && photo.url ? (
       <figure class="tree-photo">
         <img {...imgSrcset(photo.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px", photoDims(photo).width, photoDims(photo).height)} alt={tree.name} loading="lazy" />
-        {creditRequired(photo.license) && <figcaption>Photo: {creditName(photo.attribution)} ({photo.license})</figcaption>}
+        {creditRequired(photo.license) && <figcaption>Photo: {creditText(photo.attribution, photo.license)}</figcaption>}
       </figure>
     ) : (
       <figure class="tree-noph">
@@ -242,11 +243,17 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <a class="tb-primary dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
       <a class="tb-secondary" href="/app" data-app-modal data-ev="app-cta">Get the app</a>
     </div>
+    {/* Opens the app overlay rather than a page, since 2026-09-02 (Hidde:
+        "stuur ze maar gewoon naar de app"). The count stays, because it says
+        what is actually there and is read off the same walks the app serves;
+        what changed is that the website stops promising to show the route.
+        Still gated on hasWalksPage(), so we only mention a walk in a city that
+        has one. */}
     {cityHasWalksPage && (
-      <p class="under-bar-link"><a href={`/${cslug}/walks`}>
+      <p class="under-bar-link"><a href="/app" data-app-modal data-ev="walks-app">
         {cityWalkCount === 1
-          ? `See the walk past ${cityName}'s other trees →`
-          : `See the ${cityWalkCount} walks past ${cityName}'s other trees →`}
+          ? `See the walk past ${cityName}'s other trees in the app →`
+          : `See the ${cityWalkCount} walks past ${cityName}'s other trees in the app →`}
       </a></p>
     )}
     {tree.how_to_recognise && (

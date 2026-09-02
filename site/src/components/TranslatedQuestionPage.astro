@@ -65,7 +65,7 @@ const scripts = singlePinScript(oldest.location.latitude!, oldest.location.longi
       <a class="go-btn ghost" href={`https://www.google.com/maps/dir/?api=1&destination=${oldest.location.latitude},${oldest.location.longitude}`} target="_blank" rel="noopener">{U.takeMeThere}</a>
     </div>
     <div class="cta">
-      {U.cityHasMore(tr.city)} <a href={`/${lang}/${cslug}`}>{U.allTreesLink(trees.length, tr.city)}</a>{U.withWalkingRoute}
+      {U.cityHasMore(tr.city)} <a href={`/${lang}/${cslug}`}>{U.allTreesLink(trees.length, tr.city)}</a>{U.sentenceEnd}
     </div>
     <div class="report">
       <strong>{U.knowMoreThanUs}</strong>

@@ -270,8 +270,51 @@ export function creditRequired(licenseStr?: string | null): boolean {
   const lic = (licenseStr ?? "").toLowerCase();
   if (!lic) return false;
   if (lic.includes("cc0") || lic.includes("public domain") || lic.includes("publicdomain")) return false;
+  if (isAGift(lic)) return true;
   return /\bcc[ -]?by\b/.test(lic) || lic.includes("attribution")
       || lic.includes("share-alike") || lic.includes("sharealike");
+}
+
+/** A photograph somebody GAVE us, rather than one a licence let us take.
+ *
+ * The licence half of this file asks what we are OBLIGED to print, and a gift
+ * obliges nothing: Paulo Araujo's words were "use as fotos como quiser". So
+ * for a fortnight his eight photographs of Porto carried no name on the page,
+ * three from the Fundacao Mata do Bucaco and one from the Orto botanico di
+ * Firenze likewise, and the thank-you mail we had already sent him said "com o
+ * seu nome em cada uma".
+ *
+ * Hidde, 2026-09-02, shown the gap: "ik vind het prima om zijn naam er klein
+ * bij te zetten." Obligation was the wrong question for this case. Somebody who
+ * hands you a photograph of a tree they walked to is a contributor, and naming
+ * them is the whole of what they get. Twelve photographs as of that day.
+ *
+ * The name-publishing rule is untouched and this is not an exception to it: a
+ * SUBMITTER's name never appears (Hidde, 2026-08-11), and what appears here is
+ * a photographer beside their own photograph, which is the case that rule
+ * already carved out. */
+function isAGift(lowercaseLicence: string): boolean {
+  return lowercaseLicence.startsWith("provided by")
+      || lowercaseLicence.includes("with permission")
+      || lowercaseLicence.includes("by permission");
+}
+
+/** The whole credit, name and terms, as one string a page can print.
+ *
+ * Three templates built this themselves as `name (licence)`, which is right
+ * for "Nikolau (CC BY-SA 3.0)" and absurd for a gift, where the licence field
+ * is a sentence rather than a label: "Paulo V. Araujo, Dias com Arvores
+ * (Provided by Paulo V. Araujo (Dias com Arvores), all rights reserved)". A
+ * gift prints the name alone.
+ *
+ * It returns the credit without any "Photo:" prefix, because that word is the
+ * one part that differs per language. */
+export function creditText(attribution?: string | null, licenseStr?: string | null): string | null {
+  const name = creditName(attribution);
+  if (!name) return null;
+  const lic = (licenseStr ?? "").trim();
+  if (!lic || isAGift(lic.toLowerCase())) return name;
+  return `${name} (${lic})`;
 }
 
 /** The photographer's name as it should be PRINTED, with the host dropped.
