@@ -1337,11 +1337,17 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    guidelines want the official asset or their exact spec, and a hand-drawn
    approximation of somebody else's logo is worse than none. Text until the real
    asset is dropped in. */
-.oauth-btn { display: block; width: 100%; text-align: center; border-radius: 999px;
+/* The mark sits left and the words stay centred in the remaining space,
+   which is what Google's own guidelines show and what AllTrails ships
+   (its Google, Facebook and Apple buttons all carry the coloured mark on
+   the left). Read 2026-09-02. */
+.oauth-btn { display: flex; align-items: center; gap: 0.6rem; width: 100%; border-radius: 999px;
   font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
   min-height: 44px; padding: 0.75rem 1.5rem; margin: 0.25rem 0 0.5rem;
   background: var(--cream); color: var(--ink); border: 1.5px solid var(--cream-dark); }
 .oauth-btn:hover { border-color: var(--ink-light); }
+.oauth-btn .oauth-mark { flex: 0 0 18px; }
+.oauth-btn > span { flex: 1 1 auto; text-align: center; }
 .account-page .oauth-btn { max-width: 22rem; }
 /* The dialog centres its own text, the account page does not, so the separator
    between the two ways in was hanging off to the left under a full-width
