@@ -1,0 +1,155 @@
+{
+ "city": "Ypres",
+ "country": "Belgium",
+ "status": "needs_curation",
+ "intro": "Ypres has no ancient trees, and the reason is the reason people come here. The town and the country around it were shelled to rubble between 1914 and 1918, and the trees went with everything else. What grows here now was put here deliberately. The villages around Ieper planted limes as peace trees and liberty trees in the years straight after the armistice, and one oak on the edge of a golf course was reduced to a stump twice, by two different wars, and came back both times.",
+ "meta_description": "Ypres was shelled flat between 1914 and 1918 and replanted on purpose. Start with the Christusboom, an oak that came back from a stump twice.",
+ "question_meta": "The Liberty Tree of Voormezele, dated 1918 by the plaque at its foot, is the oldest tree in Ypres. Nothing here is older, and the war is why.",
+ "question_answer": "The oldest tree in Ypres is the Liberty Tree of Voormezele, a lime in the churchyard of Onze-Lieve-Vrouwkerk about four kilometres southwest of the centre, dated to 1918 by the marble plaque at its foot reading Vryheidsboom 1918-1968. That puts it at roughly 105 years, and nothing in Ypres is older, because the shelling of 1914 to 1918 left nothing that could be. The Christusboom at Hollebeke grows on ground planted around 1830, but the wood standing there today is regrowth from a stump the Second World War left behind.",
+ "question_context": "Every tree on this page postdates the First World War, and that is the answer rather than a hole in it. Ieper and its villages were shelled to rubble between 1914 and 1918 and the trees went with the buildings, so the tree history of this place restarts at the armistice.\n\nWhat follows is a documented wave of civic planting. Voormezele put a lime beside its church as a vrijheidsboom, a liberty tree, and in 1968 set a marble plaque at its foot reading Vryheidsboom 1918-1968, which is the only thing dating the tree: no source records the day it went in. Vlamertinge planted a vredesboom, a peace tree, behind the wayside cross on its square on 30 November 1919, and the local paper reported it a week later; that first tree is gone and a young lime stands in its place today.\n\nThe exception proves the rule. The Christusboom at Hollebeke grows on ground planted around 1830, resprouted after 1918, was cut down to a stump the height of a man again in May 1940 and resprouted a second time. The site is old. The wood is not.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Ypres?",
+   "a": "The Liberty Tree of Voormezele, a lime in the churchyard of Onze-Lieve-Vrouwkerk, dated to 1918 by the marble plaque at its foot reading Vryheidsboom 1918-1968. No source records the actual planting day, so roughly 105 years is as precise as anyone can honestly be."
+  },
+  {
+   "q": "Why are there no old trees in Ypres?",
+   "a": "The town and the country around it were shelled to rubble between 1914 and 1918, and the trees went with everything else. Every tree here was planted after that, most of them deliberately, as peace trees and liberty trees marking the end of the war."
+  },
+  {
+   "q": "Are these trees free to visit?",
+   "a": "Yes, all four. The Liberty Tree stands in an open churchyard and the Peace Tree on a public square. The Christusboom is reached on a public foot path that crosses the golf course and passes about twenty metres away, so no membership and no green fee. The Boezinge limes are looked at from the road, since the farmyard behind them is private."
+  },
+  {
+   "q": "Can I see them all in one trip?",
+   "a": "Not on foot. The four stand in four villages around Ieper, each roughly 3.5 to 4.5 kilometres out and in different directions: Voormezele and Hollebeke to the south, Vlamertinge west, Boezinge north. By bike or car it is an easy half day, and the Palingbeek domain around the Christusboom is worth the walk on its own."
+  }
+ ],
+ "oldest_tree_id": "ypr_001",
+ "trees": [
+  {
+   "id": "ypr_003",
+   "name": "The Christusboom",
+   "species": "Oak (Quercus sp.)",
+   "age_estimate": "not established for the living wood; the site has been planted since roughly 1830",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Golf & Country Club De Palingbeek, edge of the course near the Kasteel Mahieu ruins, Hollebeke",
+    "latitude": 50.810614,
+    "longitude": 2.924454,
+    "neighbourhood": "Hollebeke (Ieper)"
+   },
+   "story": "Two wars cut this oak down to nothing, and it grew back from the stump both times. It was planted around 1830, when the park around Kasteel Mahieu was laid out; the castle itself is long demolished. The First World War stripped the site bare and the tree resprouted after the armistice. In May 1940, during the British retreat to Dunkirk, it was hit again and left as a stump about the height of a man, and it resprouted a second time into the shape it holds now.\n\nPeople read that shape as a crucified figure, and they have made the reading explicit. Nails have been driven into the wood, a white ribbon tied across it to sharpen the outline, and memorial plaques added at the foot. Flanders' heritage inventory files it as a spijkerboom, a nail tree, which is a known Belgian custom. Local tradition holds that two Scottish soldiers killed in 1940 were buried here, and a simple cross marks where the grave was.\n\nNobody has aged the living wood, and nobody should. Whatever the date of the planting, what stands today is at most 85 years of regrowth off a stump.\n\nThe oak sits at the edge of a golf course, and a public foot path crosses the course and passes about twenty metres from it. You do not need to be a member, only to stay on the path and let the golfers play through.",
+   "best_time": {
+    "months": [
+     12,
+     1,
+     2
+    ],
+    "kind": "bare silhouette",
+    "label": "midwinter, when the leaves are off and the shape people come for reads clearest"
+   },
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/305361"
+   ],
+   "access": "Free to view via the public Palingbeek provincial domain: a permissive, foot-designated path crosses the golf course itself and passes within about 20 metres of the tree (confirmed via OpenStreetMap way 907005343, tagged access=permissive, foot=designated, golf=path). Stay on the marked path and give way to golfers; the wider course beyond the path belongs to Golf & Country Club De Palingbeek (green fee required to play).",
+   "transport": "Hollebeke, roughly 4.5 km / a 10-minute drive south of Ieper centre; the Palingbeek visitor centre car park on Vaartstraat, Zillebeke, is the usual starting point for the walk in.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "ypr_001",
+   "name": "The Liberty Tree of Voormezele",
+   "species": "Lime (Tilia sp.)",
+   "age_estimate": "roughly 105 years",
+   "age_min": 100,
+   "age_max": 110,
+   "location": {
+    "address": "Sint-Elooisweg, next to Onze-Lieve-Vrouwkerk, Voormezele, Ieper",
+    "latitude": 50.816962,
+    "longitude": 2.876011,
+    "neighbourhood": "Voormezele (Ieper)"
+   },
+   "story": "A slab of white marble at the foot of this lime reads Vryheidsboom 1918-1968, and that inscription is the only thing dating the tree. The village set the plaque in 1968, fifty years after the armistice, and the 1918 names the year the tree belongs to rather than a day anybody wrote down. So call it roughly 105 years and leave the number loose, because no source will do better.\n\nIt stands in the churchyard of Onze-Lieve-Vrouwkerk in Voormezele, a village four kilometres southwest of Ieper, among a small crowd of things marking the same few years: a British war grave, memorial stones for the civilian and military dead, a Japanese peace pole nearby. Planting a liberty tree is an old European habit, marking a political turn with something living instead of another block of stone.\n\nIt is worth being plain about what this tree is, because in this landscape the assumption runs the other way. It did not survive the war. The church behind it was rebuilt afterwards like everything else here, and the lime went into ground the shelling had already cleared. That is exactly what makes it the oldest tree in Ypres: it starts at the moment the shelling stopped.\n\nIf you have stood under it lately, tell us how it is doing.",
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/305358",
+    "http://www.wo1.be/nl/db-items/gedenkplaat-voor-de-vrijheidsboom-te-voormezele"
+   ],
+   "access": "Free. Stands in the churchyard beside Onze-Lieve-Vrouwkerk in Voormezele, a village within Ieper municipality, open ground.",
+   "transport": "Voormezele village, roughly 4 km / a 10-minute drive south-west of Ieper centre; De Lijn bus service runs along the N375 nearby.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "ypr_002",
+   "name": "The Peace Tree of Vlamertinge",
+   "species": "Lime (Tilia sp.)",
+   "age_estimate": "not documented; a young replacement tree",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Sixplein, in front of the town hall (behind the wayside cross), Vlamertinge, Ieper",
+    "latitude": 50.85519,
+    "longitude": 2.820253,
+    "neighbourhood": "Vlamertinge (Ieper)"
+   },
+   "story": "The peace tree on this square is not the peace tree. The original went in on 30 November 1919, behind the wayside cross on the Sixplein in front of Vlamertinge's town hall, and what grows in its place today is a young lime of no recorded age.\n\nThe 1919 planting is documented twice, which is more than most things around here manage. Flanders' heritage inventory records it, citing the newspaper De Poperinghenaar of 7 December 1919, a week after the event, and the municipal heritage trail records it separately. It was a village gesture rather than a state one: a vredesboom, a peace tree, marking Belgium's liberation, put in behind the calvary where the whole village walked past it.\n\nAt some point the first tree went. The inventory says only that the one standing now was planted comparatively recently, in the same spot, behind the same cross, and gives no date at all for the replanting. So the age here belongs to the place and not to the wood, and the honest description is a young lime holding a spot a village chose in 1919.\n\nIf you know when the replacement went in, or remember the tree before it, that is exactly the sort of thing we would like to be told.",
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/306476",
+    "https://www.erfgoedhaltes.be/erfgoedhalte/vlamertinge"
+   ],
+   "access": "Free. Stands in a planted bed on the public Sixplein square in front of Vlamertinge's town hall.",
+   "transport": "Vlamertinge village, roughly 3.5 km / a 10-minute drive west of Ieper centre, on the N308; De Lijn buses run through the village.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "ypr_004",
+   "name": "The Farm Cross Limes of Boezinge",
+   "species": "Lime (Tilia sp.)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Ravestraat 26, Boezinge, Ieper",
+    "latitude": 50.908269,
+    "longitude": 2.836544,
+    "neighbourhood": "Boezinge (Ieper)"
+   },
+   "story": "Three limes at a farm gate in Boezinge are cut into candelabra, and somebody is still doing the cutting. Leiboom pruning means training a tree flat and holding it to a frame year after year; leave it a decade and the shape is gone for good. These three are being kept up, which is the fact worth the detour.\n\nThey stand either side of a rustic concrete cross carrying a figure of Christ, at the hofgat, the gated entrance to a working farm on Ravestraat. Flanders' heritage inventory files them under two headings at once, welkomstboom, a tree planted to be seen by whoever is arriving, and kapelboom, a shrine tree, and both are right. This is a small roadside shrine using trees as its architecture.\n\nWhat nobody has recorded is anything else. No planting date, no girth, no age. The inventory describes the shape and the cross and stops there, which leaves this entry thin on history and unusually clear about what you actually see.\n\nYou look from the road. Ravestraat is an ordinary public road and the trees and the cross stand at the farm's frontage; the yard past the gate is private and stays that way. If anyone knows when these three went in, we would like to hear it.",
+   "how_to_recognise": "Three limes trained flat into a candelabra frame, standing either side of a concrete cross with a figure of Christ on it, at the farm gate on Ravestraat.",
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/308476"
+   ],
+   "access": "Free to view from the public road. Three limes trained into candelabra shapes flank a concrete wayside cross that marks the gated entrance to a working farm on Ravestraat; OpenStreetMap confirms Ravestraat as an ordinary public road running past the site. The trees and cross stand at the farm's frontage, viewable from the roadside; the farmyard beyond the gate is private land, not open to visitors.",
+   "transport": "Boezinge village, roughly 4 km / a 10-minute drive north of Ieper centre, off the N369 towards Diksmuide.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}

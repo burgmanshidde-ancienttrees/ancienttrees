@@ -1,0 +1,161 @@
+{
+ "city": "Bruges",
+ "country": "Belgium",
+ "status": "needs_curation",
+ "intro": "Bruges turned its old defences into a park, and two of these four trees stand on the result. The ring that once held the city in is a walking path now, carrying a black poplar planted in 1853 while that landscaping was under way, still the thickest tree here, and three silver limes put in at the Gentpoort in 1928 as peace trees. A maple on Canadaplein went in for the Canadians in 1947. The oldest is none of them: a pollarded boundary oak out in the woods at Assebroek, called Den Olifant for a limb that got away.",
+ "meta_description": "Bruges turned its ramparts into a walking path and planted along it. Start with Den Olifant, a pollarded boundary oak out in the woods at Assebroek.",
+ "question_meta": "Den Olifant, a pollarded boundary oak at Assebroek, is likely Bruges' oldest tree: the register says 250 years or more is not out of the question.",
+ "question_answer": "The oldest tree in Bruges is most likely Den Olifant, a pollarded pedunculate oak standing where four parcels of land meet in the Paalbos woodland at Assebroek, about 3.5 kilometres southeast of the centre. Flanders' heritage inventory will not date it outright: it says only that 250 years or more is not out of the question, judged by comparing its girth with other oaks in the same wood. The oldest tree here with an actual date on it is the black poplar on the ramparts, planted in 1853.",
+ "question_context": "Bruges is stone in the middle and trees around the edge, which is why nothing on this list stands on the Markt. The old ones are out where somebody had a use for them. Den Olifant was cut back to the same knuckle for generations at the corner of four parcels in the Paalbos, most likely on a parish boundary, and that pollarding is why it has stayed ten metres tall while its trunk reached 273 centimetres round. Flanders' heritage inventory measured it in April 2015 and declined to date it, saying only that 250 years or more is not out of the question by comparison with other oaks in the same wood; Flanders protected it as a monument the following year.\n\nThe trees here that do carry dates are all deliberate plantings, which is the other half of the story. The ramparts were landscaped from the middle of the nineteenth century, and the black poplar went in during that work in 1853. Three silver limes followed at the Gentpoort in 1928, ten years after the armistice, planted as peace trees. A maple went into Canadaplein in 1947. Every one of those dates comes from the same heritage inventory.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Bruges?",
+   "a": "Den Olifant, a pollarded oak in the Paalbos at Assebroek. Flanders' heritage inventory will not put a year on it and says only that 250 years or more is not out of the question, judged from its girth against other oaks in the same wood. The oldest tree here with a date is the black poplar on the ramparts, planted in 1853."
+  },
+  {
+   "q": "Are these trees free to visit?",
+   "a": "Yes, all of them. Two stand on the public rampart path, which is open at all times, the Canada Tree is on a public square, and Den Olifant is in the Paalbos, public woodland on West Flanders' waymarked walking-node network."
+  },
+  {
+   "q": "Can I see them all in one walk?",
+   "a": "Three of them, comfortably. The peace limes and the black poplar sit 400 metres apart on the rampart path, and the Canada Tree is on the other side of the centre in Sint-Andries. Den Olifant is a separate trip, 3.5 kilometres southeast in Assebroek, about 45 minutes on foot or a short ride by bus or bike."
+  },
+  {
+   "q": "Why is Den Olifant only ten metres tall if it is that old?",
+   "a": "Because it was pollarded. Cutting the head back to the same point every few years keeps a tree short while the trunk goes on thickening, which is why its girth reads much older than its height. One limb escaped the cutting after the pollarding stopped, grew out sideways, and gave the tree its name."
+  }
+ ],
+ "oldest_tree_id": "bge_003",
+ "trees": [
+  {
+   "id": "bge_003",
+   "name": "Den Olifant",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 250 years or more",
+   "age_min": 250,
+   "age_max": 350,
+   "girth_cm": 273,
+   "height_m": 10,
+   "location": {
+    "address": "Paalbos, Assebroek, Brugge",
+    "latitude": 51.200282,
+    "longitude": 3.270725,
+    "neighbourhood": "Assebroek"
+   },
+   "story": "Den Olifant is ten metres tall and may have passed 250 years, and those two facts are the same fact. Somebody pollarded this oak for generations, cutting the head back to the same knuckle every few years, which is how an old tree ends up the height of a young one while its trunk keeps thickening.\n\nIt stands where four cadastral parcels meet in the Paalbos, most likely along an old parish boundary, with boundary stones surviving nearby. Before it was scenery it was a legal instrument, a thing you could point at when the argument was about where one parish stopped and the next began.\n\nThen the cutting stopped. One limb that had never been taken back to the knuckle carried on growing and went out almost horizontally, which is where the local name comes from: the Elephant, presumably for a limb that reads as a trunk or a tusk.\n\nFlanders' heritage inventory measured it in April 2015 at 273 centimetres round and ten metres tall, with a crown only six metres across, and will go no further on its age than to say that 250 years or more is not out of the question, judged by setting its girth against other oaks in the same wood. Flanders protected it outright as a monument the following year.",
+   "best_time": {
+    "months": [
+     12,
+     1,
+     2
+    ],
+    "kind": "bare silhouette",
+    "label": "midwinter, when the bare frame shows the limb it is named for"
+   },
+   "verified_sources": [
+    "https://id.erfgoed.net/erfgoedobjecten/302182"
+   ],
+   "access": "Free, in the public Paalbos woodland; part of West Flanders' waymarked walking-node network (wandelknooppunten), confirmed by independent hiking-route sites (Wandelknooppunt.be, Komoot, RouteYou) that route walks through it. The tree itself is a legally protected monument (beschermd monument, designated 2016).",
+   "transport": "About 3.5km southeast of Bruges centre, in Assebroek; roughly 45 minutes on foot, faster by bus or bike",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "bge_002",
+   "name": "The Black Poplar of the Ramparts",
+   "species": "Black Poplar (Populus nigra)",
+   "age_estimate": "about 173 years (planted 1853)",
+   "age_min": 170,
+   "age_max": 175,
+   "girth_cm": 464,
+   "height_m": 22,
+   "location": {
+    "address": "Gentpoortvest, near Katelijnestraat, Brugge",
+    "latitude": 51.19989,
+    "longitude": 3.229788,
+    "neighbourhood": "the city ramparts (de Vesten), near Katelijnepoort/Gentpoort"
+   },
+   "story": "True wild black poplar has all but disappeared from the Flemish landscape, and what survives of it is mostly old pollards in hedgerows, beside ponds and streams and field edges. This one was put into a landscaped park on purpose, which the heritage inventory itself flags as an odd place to find the species.\n\nIt went in during 1853, while Bruges was converting the ring of its old defences into the walking circuit that still goes round the town. A survey in 2009 recorded the stem at 464 centimetres round at chest height, the tree at 22 metres tall, and the crown at 13 metres across. That girth makes it comfortably the thickest tree on this page, and at 173 years it is the oldest one here carrying a date.\n\nPopulus nigra is a riverside tree and behaves like one. It grows fast on soft wood, hollows early and starts shedding limbs at an age when an oak is still filling out, so old ones are scarce even where the species is not. Across Europe most of what looks like black poplar is now hybrid, bred for timber and planted in rows.\n\nOnly Flanders' heritage inventory records any of this, the 1853 planting included, so the whole entry rests on one source.",
+   "verified_sources": [
+    "https://id.erfgoed.net/erfgoedobjecten/131537"
+   ],
+   "access": "Free, on the public walking path along Bruges' historic city ramparts (de Vesten), open at all times",
+   "transport": "About 10-15 minutes on foot from Brugge railway station",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "bge_001",
+   "name": "The Peace Limes of Gentpoort",
+   "species": "Silver Lime (Tilia tomentosa)",
+   "age_estimate": "about 98 years (planted 1928)",
+   "age_min": 95,
+   "age_max": 100,
+   "girth_cm": 328,
+   "height_m": 35,
+   "location": {
+    "address": "Gentpoortvest, Brugge",
+    "latitude": 51.202521,
+    "longitude": 3.23383,
+    "neighbourhood": "the city ramparts (de Vesten), at the Gentpoort gate"
+   },
+   "story": "Bruges planted its peace trees ten years after the peace. Three silver limes went into the ground at the Gentpoort in 1928 as vredesbomen, marking the city's liberation, on the ring of landscaped ramparts that replaced the medieval defences. Flanders' heritage inventory, the only source that records them, measured the thickest at 328 centimetres round and 35 metres tall, which is a great deal of lime for a tree not yet a century old.\n\nSilver lime is a good tree to choose when you want the planting noticed. Tilia tomentosa carries a dense white felt on the underside of every leaf, so the crown turns pale and changes colour whenever wind gets into it, and in July it flowers hard enough that you smell it before you have picked out which trees it is coming from.\n\nThe ramparts path is what turns these three from a glance into a detour. Four hundred metres along it stands a black poplar planted in 1853, when the city was busy turning its defences into a park, so the two entries make one short walk instead of two separate errands.\n\nWhat the inventory does not say is which of the three carries the 328 centimetres. They went in together and have grown together, and from the path they read as one thing.",
+   "how_to_recognise": "Three limes standing together at the Gentpoort, on the rampart side of the road. The leaves are white-felted underneath, so the whole crown pales and flickers when the wind turns them.",
+   "verified_sources": [
+    "https://id.erfgoed.net/erfgoedobjecten/305834"
+   ],
+   "access": "Free, on the public walking path along Bruges' historic city ramparts (de Vesten), open at all times",
+   "transport": "About 15-20 minutes on foot from Brugge railway station, along the ramparts path",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "bge_004",
+   "name": "The Canada Tree",
+   "species": "Silver Maple (Acer saccharinum)",
+   "age_estimate": "about 79 years (planted 1947)",
+   "age_min": 75,
+   "age_max": 80,
+   "girth_cm": 244,
+   "height_m": 20,
+   "location": {
+    "address": "Canadaplein, Brugge",
+    "latitude": 51.203655,
+    "longitude": 3.209456,
+    "neighbourhood": "Sint-Andries, just west of the historic centre"
+   },
+   "story": "This tree was planted for a flag, and it may be the wrong species for the flag. A maple went into Canadaplein in 1947 alongside a memorial by the sculptor Gustaaf Pickery, commemorating the liberation of Bruges by Canadian forces, and the heritage inventory says the species was picked because a maple leaf appears on the Canadian flag.\n\nWhich maple is where it gets awkward. The inventory's own description calls the tree a suikeresdoorn, the Dutch name for sugar maple, Acer saccharum, which is the maple of the emblem. Its species field says Acer saccharinum, silver maple, a different tree from different ground. Both sit in the same record and nobody has reconciled them. This page follows the scientific name, which leaves a silver maple standing in for a sugar maple on a square named after Canada.\n\nThe tree is not troubled by any of this. The inventory puts it at 244 centimetres round and 20 metres tall, with damage recorded low on the trunk. Silver maple grows fast and turns the pale undersides of its leaves up at the smallest wind, which is the easiest way to pick it out from the far side of the square.\n\nIf you can settle which maple this actually is, tell us and we will correct it.",
+   "verified_sources": [
+    "https://id.erfgoed.net/erfgoedobjecten/305832"
+   ],
+   "access": "Free, on a public square",
+   "transport": "About 10-15 minutes on foot from Brugge railway station",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}
