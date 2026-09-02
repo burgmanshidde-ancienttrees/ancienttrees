@@ -2,9 +2,9 @@
   "city": "Nuremberg",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Nine of Nuremberg's ten protected trees stand within about a kilometre of the old town, and six of those share a single park of under two hectares. The Kontumazgarten takes its name from a quarantine station, and it now holds planes, beeches and a chestnut protected individually by city ordinance. The tenth, a lime in the Stadtpark with a trunk eight metres round, is the best documented of the lot and reckoned at around four hundred years.",
-  "meta_description": "Ten protected trees in Nuremberg, nine of them in one walk: a 400-year lime, six in a former quarantine garden, and beeches on the Hallerwiese.",
-  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus nine more.",
+  "intro": "Nine of Nuremberg's twelve protected trees stand within a kilometre of the old town, and six share a single park of under two hectares. The Kontumazgarten takes its name from a quarantine station, and now holds planes, beeches and a chestnut protected individually by city ordinance. Three more stand apart in Woehrd: a Stadtpark lime with a trunk eight metres round, the best documented of the lot at around four hundred years, and a pair of beeches eighty metres apart in Cramer-Klett-Park, each with its own registration number and neither one dated.",
+  "meta_description": "Twelve protected Nuremberg trees, nine in one walk: a 400-year lime, six in a former quarantine garden, beeches on the Hallerwiese, a pair in Woehrd.",
+  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus eleven more.",
   "question_answer": "The oldest tree in Nuremberg is the large-leaved lime in the Stadtpark, reckoned at around four hundred years with a trunk about eight metres round, which makes it both the oldest and the thickest tree on this page. It stands in a free public park about fifteen minutes' walk from the Kontumazgarten cluster. It is also the best documented: two independent sources describe it, where most of the city's protected trees rest on the ordinance alone.",
   "question_context": "Nuremberg protects individual trees by city ordinance rather than through a state heritage list, and the Bavarian register that carries them gives a number, a German name and a coordinate, with no species column, no girth and no age. So the species on this page were established from the city's own 2020 ordinance and from local sources, and several are identified at genus level or inferred from the tree's German name rather than confirmed outright; each of those says so in its own story. The same thinness cuts the other way too. Cross-checking the state layer against the current city ordinance turned up two protected trees that the state still lists as current and that the ordinance no longer carries, both at addresses where German sources record monuments lost to fungal infection. Those are absent here. Four more are on private ground, one is a seventy-nine tree avenue with nowhere to stand, and two are in institutional courtyards.",
   "faq": [
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can I see Nuremberg's protected trees in one walk?",
-      "a": "Nine of the ten, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime is a further fifteen minutes on foot."
+      "a": "Nine of the twelve, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime and the Cramer-Klett-Park pair are separate stops in Woehrd, a further fifteen to twenty minutes on foot from the old town."
     },
     {
       "q": "Are they free to visit?",
@@ -360,6 +360,41 @@
         "https://de.wikipedia.org/wiki/Cramer-Klett-Park"
       ],
       "access": "Free, public city park (Cramer-Klett-Park, Wöhrd district; city-owned since 1929, opened to the public in 1931, renovated 2019)",
+      "transport": "Short walk from the Wöhrd district, roughly 15-20 min from Nuremberg Hauptbahnhof/Altstadt",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nbg_012",
+      "name": "ND Nr. 28 Rotbuche im Cramer Klett Park",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Cramer-Klett-Park, Gärten bei Wöhrd",
+        "latitude": 49.454806,
+        "longitude": 11.0904672,
+        "neighbourhood": "Gärten bei Wöhrd / Wöhrd"
+      },
+      "story": "This beech and its neighbour eighty metres away are the two survivors of a trio. A copper beech elsewhere in the same Cramer-Klett-Park was designated in 1996 with a four-metre trunk and a 23-metre crown, and died of fungal disease around 2009. This tree, registered separately as Naturdenkmal Nr. 28, carries no comparable measurements in either the state or the city record, and none of the dead tree's numbers belong to it, whatever a quick read of the park's history might suggest.\n\nWhat the record does confirm is that it is alive and current in Bavaria's state register, standing in a park laid out for the Cramer-Klett family before the city bought the grounds in 1929 and opened them to the public two years later. The war damage and the 2019 renovation both belong to the park's history rather than to this tree specifically, since the sources never narrate it on its own. A beech surviving quietly enough that nobody has measured its girth or dated it is, in a park that has already lost one of its beeches to disease, the more ordinary story, and ordinary is not the same as unremarkable here.\n\nNobody has published this tree's size or age. If you have stood under it and can say how it compares to its sibling eighty metres away, tell us.",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "autumn colour",
+        "label": "late October and November, turning alongside its neighbour eighty metres away"
+      },
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+        "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=natur_wfsschutzgebiete:naturdenkmal_punktfoermig&srsName=EPSG:4326"
+      ],
+      "access": "Free, public city park (Cramer-Klett-Park, Woehrd district; same grounds as its neighbour ND 29 / nbg_011)",
       "transport": "Short walk from the Wöhrd district, roughly 15-20 min from Nuremberg Hauptbahnhof/Altstadt",
       "photo": {
         "url": null,

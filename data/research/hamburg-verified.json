@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ham_001",
+    "name": "Maiboom'sche Liebesbuche",
+    "species": "European Beech (Fagus sylvatica)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 500,
+    "location": {
+      "address": "Corner of Eilenau and Lessingstraße, Hamburg-Hohenfelde, at the edge of the Kuhmühlenteich",
+      "latitude": 53.565783,
+      "longitude": 10.030496,
+      "neighbourhood": "Hohenfelde"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Maiboomsche_Liebesbuche",
+      "https://commons.wikimedia.org/wiki/File:Hamburg-kuhm%C3%BChlenteich-maiboomsche-liebesbuche-stammumfang.JPG"
+    ],
+    "access": "Free. Stands on a private corner property, but right at the street edge by the Kuhmühlenteich; a public pinboard is fixed in front of the tree where visitors pin love notes, which only works if the tree is reachable from the pavement without asking anyone. Flagged so a later pass double-checks this reading before the story asserts it.",
+    "transport": "U3 Mundsburg, about 5 minutes on foot",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Wikidata Q56027123. European beech (Fagus sylvatica / Rotbuche) at the corner of Eilenau and Lessingstraße in Hamburg-Hohenfelde, at the edge of the Kuhmühlenteich. Two sources fetched directly (both text confirmed, not from search summaries): de.wikipedia.org/wiki/Maiboomsche_Liebesbuche (coordinate 53.565783,10.030496 via its own {{Coordinate}} template, matches Wikidata's 53.565778,10.0305 closely) and the Commons file description for File:Hamburg-kuhmuhlenteich-maiboomsche-liebesbuche-stammumfang.JPG, a dated own-work photo by Roland.h.bueb, 2021-03-20, CC BY 3.0, stating trunk circumference approx. 5 metres (500 cm) in March 2021. HISTORY (from de.wikipedia, citing a since-dead Hohenfelder Buergerverein Rundschau 4/2018 PDF that 404s today and has no Wayback snapshot, so treat as local legend rather than a hard date): a garden house of the Hamburg merchant family Maiboom stood on this plot 1795-1845; during the Napoleonic-era French occupation of Hamburg, Clemens Maiboom (Patriotic Circle) and Clothilde Gauthier (daughter of a French envoy) met here secretly and, in old age, planted this beech as a symbol of their love. NO explicit planting year or age is given by either fetched source. A WebSearch AI summary claimed 'planted around 1890, approximately 136 years old as of 2018' but that figure appears on neither de.wikipedia nor the Commons file page as fetched, so per the search-summary-is-a-lead-never-a-source rule it is NOT used here; left age_estimate empty rather than repeat an unconfirmed number. Commons category tags the tree only as 'Trees planted in the 19th century', itself an editor tag rather than a cited fact. A crude girth-based growth estimate (500cm x typical beech factors of 1.0-1.5) yields 500-750 years, which contradicts the documented 1795-1845 garden-house history, so growth-rate dating is unreliable here (likely fast open-grown urban growth) and was not used; leave the age question for the reader/a tape measure. A well-known local curiosity: a bulletin board in front of the tree collects handwritten notes of love wishes and thanks for fulfilled love, tended by the property owner; covered in local lifestyle roundups (mitvergnuegen.com, condor.com blog) as a known Hamburg spot for couples, which supports it being a real, currently visited, publicly reachable point despite standing on private ground."
+  }
+]

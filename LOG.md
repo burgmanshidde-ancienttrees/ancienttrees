@@ -9,6 +9,65 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-02 (continuation) - Bamberg and Nuremberg deepen by one tree each; iOS CI diagnosed further; a leads.py false-positive found
+
+Picked up after an earlier attempt in the same window stopped at 15 minutes with
+nothing shipped, three standing verify claims (hamburg, bamberg, nuremberg) and
+three research files already on disk.
+
+**Rung 2 (iOS CI, still red on health.py) got a real answer this time rather than
+a repeat of yesterday's "infra flakiness, can't confirm further".** Read the two
+newest failed runs' logs directly. The regression health.py is actually pointing
+at, a 34pt-wide tap target on the Collect screen's account-name button
+(`Button 'mytrees-who'`, caught by appfit across four device/OS combinations in
+run 33536608699), was already fixed by commit `ebea31dd` at 18:45 UTC yesterday
+(`minWidth: 44` added). The two runs since that fix (19:04 and 19:44 UTC) never
+got back to a clean appfit pass: one died on a boringssl CERTIFICATE_VERIFY_FAILED
+during the network-dependent UI tests, the other on "Lost connection to the
+application" inside SweepFrames, both before appfit could run again. So the real
+bug is fixed and unverified; what's failing now is unrelated CI flakiness. This
+bot token still gets a 403 dispatching `ios.yml` by hand, so there's nothing to
+do but wait for the next scheduled run (05:00 or 17:00 UTC) or Hidde's own retry.
+
+**Merged the two legitimate deepen passes.** Bamberg's `bam_005` (the Great Lime
+of Teuchatz, a large-leaved lime with a girth history back to 1990 and a Thirty
+Years' War planting legend, 787cm round, 16km outside the city with no public
+transport) and Nuremberg's `nbg_012` (ND Nr. 28, a European beech in
+Cramer-Klett-Park, alive but otherwise undated, 80m from its already-published
+sibling ND 29). Wrote both stories, updated both cities' intro/meta/FAQ/oldest-tree
+copy for the new counts (Bamberg 4 to 5, Nuremberg 11 to 12, the latter also
+fixing a pre-existing stale "ten trees" claim that predated nbg_011 and was
+never caught), trimmed two over-length fields the build's own contract checks
+caught, dropped a `how_to_recognise` line preflight correctly flagged for
+describing our own register-matching method instead of a visible feature. Build,
+qa.py, preflight.py and superlatives.py all clean afterward.
+
+**Released all three verify claims.** Bamberg and Nuremberg are done. Hamburg
+stays below the four-tree floor at one verified candidate (Maiboom'sche
+Liebesbuche, a beech with a real love-note tradition but no dated age); its
+research file is committed rather than lost, and the claim is released rather
+than continued, because reaching four trees there is a real verification job,
+not a five-minute write pass, and the window did not have room for both that and
+what was already sitting ready.
+
+**Found a false positive in `leads.py --ready`'s classification, worth flagging
+rather than acting on blind.** The run brief pointed at 6 Regensburg leads and
+1 Matera lead as "fully verified, needs only a story". Reading the actual lead
+files: every Regensburg entry's own `reason` field says things like "not
+researched this pass for time" and gives distances of 5.5 to 19.5km with
+unconfirmed transit and unconfirmed access, register-only single-sourced
+generic names ("Naturdenkmal Linde", no address). The Matera lead
+("Gelso bianco of Altamura") is explicitly noted in its own `why` field as
+belonging to Altamura, a different comune 19km away, not Matera at all. Writing
+stories from either would have meant inventing access/description details the
+sources don't give, so both were skipped rather than written. `leads.py`'s
+READY bucket appears to trust the presence of any `reason`/`why` text as
+evidence of verification, even when that text itself says the opposite; worth
+a look by whoever next touches that script, since it is exactly the kind of
+finding this file's "check the evidence before acting on it" rule exists for.
+
+No new submissions (checked directly against Supabase, 0 since id 57).
+
 ## 2026-09-01 (night run) - Auckland opens, 5 trees; iOS CI flakiness checked and left alone
 
 Rung 2 first: `health.py` flagged the iOS app workflow as failing on its schedule. Read both

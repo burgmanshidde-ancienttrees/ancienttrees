@@ -809,9 +809,10 @@
     "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_1.jpg",
     "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_10.jpg"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "verified",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by de.wikipedia's dedicated article, which calls it a Sommerlinde (Tilia platyphyllos), not a genus guess",
+   "reason": "Delivered to data/research/bamberg-verified.json as bam_005. Matches Bavaria's own Naturdenkmal register (ND-03920, 'Naturdenkmal 1 Linde \"Große Linde\"', status aktuell, 49.87235,11.10251, ~50m from this lead's coordinate: same tree) plus a dedicated de.wikipedia article (pageid 2927371) citing published dendrology literature (Froehlich, 'Wege zu alten Baeumen - Bayern' 1990 and 'Alte liebenswerte Baeume in Deutschland' 2000): girth 770cm at 1.3m height (1990), 787cm at its narrowest point (2012), 822cm at 1m height (2008), height 26m, crown diameter 26m, literature age estimate 350-400 years. Stands immediately beside the public road from Teuchatz to Burggrub (Markt Heiligenstadt i.OFr., Landkreis Bamberg), so access is free and unrestricted. Alive evidence: dated Commons photos from 2015-2016 (CC BY-SA 4.0, photographer Ermell) plus the register's own 'aktuell' status. One caveat for whoever places this on a city page: it is ~16km from Bamberg centre in a rural part of the Fraenkische Schweiz with NO passenger rail (the branch line to Heiligenstadt closed in 1968); it is reachable by car in roughly 25 minutes but not confirmed within CLAUDE.md's ~30-minute public-transport day-trip boundary, so label the travel time honestly rather than presenting it as an easy add-on to the Wildensorg walk."
   },
   {
    "name": "Riesenlinde zu Heede",
