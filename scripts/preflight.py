@@ -1021,6 +1021,69 @@ def check_no_two_language_switch():
                                % (os.path.relpath(path), n, stripped[:70]))
     return out
 
+TYPED_TEXT_IS_CODE = re.compile(
+    r"^(const|let|var|return|if|for|while|switch|case|else|await|import)\b"
+    r"|;\s*$|=>\s*\(?\s*$")
+
+
+def check_translated_components_have_no_typed_text():
+    """A word typed into a component that renders in seven languages.
+
+    The general form of the check above, and it exists because that one only
+    catches SPANISH. On 2026-09-02 the photo credit under every tree read
+    "Foto:" on the Japanese, French and German pages, and "Photo:" on every
+    card in all seven, because both labels were typed into the markup. Neither
+    carries an accent, so nothing fired.
+
+    Hidde the same day, making it a standing rule rather than a bug report:
+    "vanaf nu verwacht ik dat je al je aanpassingen ook verbetert voor alle
+    talen, alle paginas en talen moeten consistent blijven." A rule that has to
+    be remembered on every edit fails on the edit nobody remembers, so this is
+    the check instead.
+
+    It reads what a VISITOR sees: tags go first (across line breaks, since an
+    attribute list is often several lines), then every {expression}, and
+    whatever text survives was typed rather than looked up. A translated
+    component should have no bare text in it at all, which is what makes this
+    quiet: it finds nothing in any of the four today, and finds both of the
+    labels above the moment either is typed back in. Lines that are plainly
+    JavaScript inside a map block are skipped, because those are not read by
+    anybody.
+    """
+    out = []
+    files = ["TranslatedTreePage.astro", "TranslatedQuestionPage.astro",
+             "TranslatedCityPage.astro", "TreeCard.astro"]
+    for name in files:
+        path = os.path.join("site", "src", "components", name)
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as fh:
+            src = fh.read()
+        parts = src.split("---", 2)
+        body = parts[2] if len(parts) > 2 else src
+        body = re.sub(r"\{/\*[\s\S]*?\*/\}", " ", body)
+        body = re.sub(r"<[^>]*>", " ", body, flags=re.S)
+        for line in body.split("\n"):
+            text, prev = line, None
+            while prev != text:
+                prev = text
+                text = re.sub(r"\{[^{}]*\}", " ", text)
+            text = re.sub(r"\{.*$", " ", text)
+            text = re.sub(r"^[^{}]*\}", " ", text)
+            text = text.strip()
+            if not re.search(r"[A-Za-z]{3}", text):
+                continue
+            if TYPED_TEXT_IS_CODE.search(text):
+                continue
+            if text in ("Ancient Trees",):
+                continue
+            out.append("%s: %r is typed into a component that renders in seven "
+                       "languages, so every reader gets it in English. Add a key "
+                       "to UIStrings in site/src/lib/i18n.ts, fill it for every "
+                       "language, and read it through ui(lang)." % (name, text[:60]))
+    return out
+
+
 def check_chrome_is_translated():
     """The navigation and footer must read from the string table, not be typed.
 
@@ -1258,6 +1321,7 @@ def main():
                 + check_access_permission() + check_no_sender_names()
                 + check_collection_targets() + check_overlay_coverage()
                 + check_chrome_is_translated()
+                + check_translated_components_have_no_typed_text()
                 + check_translated_components_are_neutral()
                 + check_no_two_language_switch())
     files = sorted(glob.glob("data/cities/*.json"))

@@ -1,5 +1,58 @@
 # Decisions
 
+## 2026-09-02 - A photograph somebody sends us is publishable, and every change ships in seven languages
+
+Two rulings in one conversation, both marked "onthou dit".
+
+**A user's photograph may go on the page.** Hidde: "het hele idee is dat als
+mensen fotos indienen dat hij potentieel voor het grote publiek word gebruikt",
+and then the half that removes the distinction I had drawn: "ook als de boom er
+al is en geen foto heeft of de foto van de gebruiker is beter gaan we die
+gebruiken." So both camera paths in the app feed one pool. A photograph attached
+to a tree we do not map yet, and a photograph taken while ticking off a tree we
+already map, are both candidates for the tree's page.
+
+What this collided with, and it is why the ruling was needed: the app promises
+the opposite at the exact moment somebody sends one. `describeForm` in
+CollectSheet.swift reads "Your photograph is yours and nobody else sees it."
+The website had already drawn Hidde's line rather than mine, in two places:
+privacy.astro says a sighting stays yours "unless you offer the tree to the
+map", and contribute.astro says we can only publish photos that are yours to
+share.
+
+**The condition, which is not a hedge but the thing that makes it safe.** No
+user photograph is published until the app SAYS so where somebody sends it. A
+photograph sent under the old sentence was given under a promise, and a rule
+written afterwards does not reach backwards. The proposed line, his to reword:
+"Your photograph can appear on the tree's page, with your name under it. We read
+every word you send." No toggle beside it, per his 2026-08-24 ruling that the
+reader should not carry a choice that is ours. Credit is the display name, never
+the email. Account deletion keeps its promise and takes the published copy with
+it.
+
+Timing: the sentence lives in the app binary, so it travels with the next build.
+The version at App Review today is unaffected, because nothing is published yet
+and its notes are therefore still true.
+
+**And every change ships in every language.** Hidde: "vanaf nu en onthou dit
+verwacht ik je dat je al je aanpassingen die je maakt ook verbeterd voor alle
+talen - alle paginas en talen moeten consistent blijven."
+
+Two failures the same day earned it. Every translated tree page served SPANISH
+field labels for eleven days, in all seven languages. And the photo credit I
+shipped that afternoon read "Foto:" on the Japanese and French pages and
+"Photo:" on every card everywhere, because both labels were typed into markup
+that renders for everybody.
+
+`check_translated_components_have_no_typed_text()` in scripts/preflight.py is
+the ratchet: it strips tags and expressions from the four components that render
+for all seven languages and fails on any text left standing, which is text
+somebody typed rather than looked up. It finds nothing today and finds either
+label the moment it is typed back in. The label itself now lives in `UIStrings`
+as `photoCredit`, filled per language, because punctuation is part of a
+language: French wants a space before its colon and Japanese a full-width one.
+
+
 ## 2026-09-01 - A booking is paid entry with a timetable, not an appointment
 
 Hidde, shown two verified Menorca trees held off the site because the Illa del
