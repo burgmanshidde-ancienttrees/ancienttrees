@@ -936,6 +936,48 @@ def check_translated_components_are_neutral():
     return out
 
 
+
+def check_tree_labels_are_translated():
+    """A tree's editorial label must exist in every language it renders in.
+
+    Found 2026-09-02 by reading a Portuguese page rather than by any scan: the
+    card label on /pt/porto said "Ensemble" and /it/naples said "Young
+    replacement". The 756-page sweep run an hour earlier missed both, because a
+    scan can only find the words somebody thought to look for and nobody had
+    thought of these.
+
+    The lookup falls back to English rather than dropping the label, so a new
+    one never breaks a page. This is the NOTE that makes the fallback visible,
+    because a graceful failure nobody sees is how these last a fortnight.
+    """
+    out = []
+    labels = set()
+    for path in sorted(glob.glob(os.path.join("data", "cities", "*.json"))):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                city = json.load(fh)
+        except Exception:
+            continue
+        for t in city.get("trees", []):
+            if t.get("label"):
+                labels.add(t["label"])
+    if not labels:
+        return out
+    i18n = os.path.join("site", "src", "lib", "i18n.ts")
+    if not os.path.exists(i18n):
+        return out
+    with open(i18n, encoding="utf-8") as fh:
+        src = fh.read()
+    for label in sorted(labels):
+        # every language block should carry the key; count the occurrences of
+        # the quoted English label, one per language plus none for en itself.
+        n = src.count('"%s":' % label)
+        if n < 7:
+            out.append("the tree label %r is translated in %d of 7 languages, "
+                       "so it renders in English on the rest. Add it to treeLabels "
+                       "in site/src/lib/i18n.ts." % (label, n))
+    return out
+
 def check_no_two_language_switch():
     """No component may choose between Spanish and English and call that i18n.
 
@@ -1228,7 +1270,8 @@ def main():
     for line in problems:
         print("FAIL " + line)
     for line in (check_stacked_pins() + check_search_names() + check_paid_share()
-                 + check_country_counts() + check_leads_already_published()):
+                 + check_country_counts() + check_leads_already_published()
+                 + check_tree_labels_are_translated()):
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0

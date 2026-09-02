@@ -141,12 +141,21 @@ export interface UIStrings {
    *  "with a walking route that passes several of them", which stopped being
    *  true on 2026-09-02 when the walks left the website for the app. */
   sentenceEnd: string;
+  /** The photo credit line, label and name together, because the label's
+   *  punctuation is part of the language: French wants a space before its
+   *  colon and Japanese a full-width one. */
+  photoCredit: (credit: string) => string;
   distanceAway: (d: string) => string;
   /** The factual opening of a tree page's meta description: what it is,
    *  how old, where. Contract B's "answer" half, per language, because
    *  the word order differs and a template cannot be translated word for
    *  word. `age` is already a bare number and may be empty. */
   metaLead: (species: string, age: string, where: string) => string;
+  /** The short editorial tag beside a tree's name on a card. Keyed by the
+   *  English value in data/cities, because that is what the canonical file
+   *  holds; an unlisted label falls back to the English rather than
+   *  disappearing, which is what it did before this existed. */
+  treeLabels: Record<string, string>;
   labelSpecies: string;
   labelAge: string;
   labelLocation: string;
@@ -209,7 +218,9 @@ const EN: UIStrings = {
   fullStory: "The full story of this tree",
   cityHasMore: (c) => `${c} has more trees worth the visit:`,
   sentenceEnd: ".",
+  photoCredit: (credit) => `Photo: ${credit}`,
   distanceAway: (d) => `${d} away`,
+  treeLabels: {},
   metaLead: (sp, age, where) => {
     const vowel = age ? /^(8|11|18|8\d)$/.test(age) : /^[AEIOU]/.test(sp);
     const a = vowel ? "An" : "A";
@@ -243,6 +254,16 @@ const EN: UIStrings = {
 
 const TABLE: Record<string, Partial<UIStrings>> = {
   es: {
+    treeLabels: {
+      "Youngest tree": "El más joven",
+      "Urban curiosity": "Curiosidad urbana",
+      "Continuously renewed": "Renovado continuamente",
+      "Young regrowth": "Rebrote joven",
+      "Deliberately planted, not inherited": "Plantado a propósito, no heredado",
+      "Young replacement": "Reemplazo joven",
+      "Ensemble": "Conjunto",
+      "Recent planting, ancient provenance": "Plantación reciente, origen antiguo",
+    },
     metaLead: (sp, age, where) => sp && age ? `${sp} de unos ${age} años en ${where}.`
       : sp ? `${sp} en ${where}.` : age ? `Árbol de unos ${age} años en ${where}.` : `Árbol singular en ${where}.`,
     distanceAway: (d) => `a ${d}`,
@@ -302,8 +323,19 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     fullStory: "La historia completa de este \u00e1rbol",
     cityHasMore: (c) => `${c} tiene m\u00e1s \u00e1rboles que merecen la visita:`,
     sentenceEnd: ".",
+    photoCredit: (credit) => `Foto: ${credit}`,
   },
   it: {
+    treeLabels: {
+      "Youngest tree": "Il più giovane",
+      "Urban curiosity": "Curiosità urbana",
+      "Continuously renewed": "Rinnovato di continuo",
+      "Young regrowth": "Ricaccio giovane",
+      "Deliberately planted, not inherited": "Piantato apposta, non ereditato",
+      "Young replacement": "Sostituto giovane",
+      "Ensemble": "Insieme",
+      "Recent planting, ancient provenance": "Impianto recente, origine antica",
+    },
     metaLead: (sp, age, where) => sp && age ? `${sp} di circa ${age} anni a ${where}.`
       : sp ? `${sp} a ${where}.` : age ? `Albero di circa ${age} anni a ${where}.` : `Albero monumentale a ${where}.`,
     distanceAway: (d) => `a ${d}`,
@@ -363,8 +395,19 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     fullStory: "La storia completa di questo albero",
     cityHasMore: (c) => `${c} ha altri alberi che meritano la visita:`,
     sentenceEnd: ".",
+    photoCredit: (credit) => `Foto: ${credit}`,
   },
   nl: {
+    treeLabels: {
+      "Youngest tree": "Jongste boom",
+      "Urban curiosity": "Stadscuriositeit",
+      "Continuously renewed": "Steeds vernieuwd",
+      "Young regrowth": "Jonge opslag",
+      "Deliberately planted, not inherited": "Bewust geplant, niet geërfd",
+      "Young replacement": "Jonge vervanger",
+      "Ensemble": "Ensemble",
+      "Recent planting, ancient provenance": "Recent geplant, oude herkomst",
+    },
     metaLead: (sp, age, where) => sp && age ? `${sp} van ongeveer ${age} jaar in ${where}.`
       : sp ? `${sp} in ${where}.` : age ? `Boom van ongeveer ${age} jaar in ${where}.` : `Monumentale boom in ${where}.`,
     distanceAway: (d) => `${d} verderop`,
@@ -424,8 +467,19 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     fullStory: "Het volledige verhaal van deze boom",
     cityHasMore: (c) => `${c} heeft meer bomen die de moeite waard zijn:`,
     sentenceEnd: ".",
+    photoCredit: (credit) => `Foto: ${credit}`,
   },
   de: {
+    treeLabels: {
+      "Youngest tree": "Jüngster Baum",
+      "Urban curiosity": "Stadtkuriosität",
+      "Continuously renewed": "Fortlaufend erneuert",
+      "Young regrowth": "Junger Stockausschlag",
+      "Deliberately planted, not inherited": "Bewusst gepflanzt, nicht geerbt",
+      "Young replacement": "Junger Ersatz",
+      "Ensemble": "Ensemble",
+      "Recent planting, ancient provenance": "Junge Pflanzung, alte Herkunft",
+    },
     metaLead: (sp, age, where) => sp && age ? `${sp}, rund ${age} Jahre alt, in ${where}.`
       : sp ? `${sp} in ${where}.` : age ? `Baum, rund ${age} Jahre alt, in ${where}.` : `Bemerkenswerter Baum in ${where}.`,
     distanceAway: (d) => `${d} entfernt`,
@@ -485,8 +539,19 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     fullStory: "Die ganze Geschichte dieses Baumes",
     cityHasMore: (c) => `${c} hat weitere B\u00e4ume, die den Weg lohnen:`,
     sentenceEnd: ".",
+    photoCredit: (credit) => `Foto: ${credit}`,
   },
   pt: {
+    treeLabels: {
+      "Youngest tree": "A mais nova",
+      "Urban curiosity": "Curiosidade urbana",
+      "Continuously renewed": "Renovada continuamente",
+      "Young regrowth": "Rebento jovem",
+      "Deliberately planted, not inherited": "Plantada de propósito, não herdada",
+      "Young replacement": "Substituta jovem",
+      "Ensemble": "Conjunto",
+      "Recent planting, ancient provenance": "Plantação recente, origem antiga",
+    },
     metaLead: (sp, age, where) => sp && age ? `${sp} com cerca de ${age} anos em ${where}.`
       : sp ? `${sp} em ${where}.` : age ? `Árvore com cerca de ${age} anos em ${where}.` : `Árvore notável em ${where}.`,
     distanceAway: (d) => `a ${d}`,
@@ -546,8 +611,19 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     fullStory: "A hist\u00f3ria completa desta \u00e1rvore",
     cityHasMore: (c) => `${c} tem mais \u00e1rvores que valem a visita:`,
     sentenceEnd: ".",
+    photoCredit: (credit) => `Foto: ${credit}`,
   },
   fr: {
+    treeLabels: {
+      "Youngest tree": "Le plus jeune",
+      "Urban curiosity": "Curiosité urbaine",
+      "Continuously renewed": "Renouvelé en continu",
+      "Young regrowth": "Jeune rejet",
+      "Deliberately planted, not inherited": "Planté exprès, non hérité",
+      "Young replacement": "Jeune remplaçant",
+      "Ensemble": "Ensemble",
+      "Recent planting, ancient provenance": "Plantation récente, origine ancienne",
+    },
     metaLead: (sp, age, where) => sp && age ? `${sp} d'environ ${age} ans à ${where}.`
       : sp ? `${sp} à ${where}.` : age ? `Arbre d'environ ${age} ans à ${where}.` : `Arbre remarquable à ${where}.`,
     distanceAway: (d) => `\u00e0 ${d}`,
@@ -607,8 +683,19 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     fullStory: "L'histoire compl\u00e8te de cet arbre",
     cityHasMore: (c) => `${c} compte d'autres arbres qui valent le d\u00e9tour :`,
     sentenceEnd: ".",
+    photoCredit: (credit) => `Photo\u00a0: ${credit}`,
   },
   ja: {
+    treeLabels: {
+      "Youngest tree": "最も若い木",
+      "Urban curiosity": "街の変わり種",
+      "Continuously renewed": "更新され続けている",
+      "Young regrowth": "若い萌芽",
+      "Deliberately planted, not inherited": "受け継いだのではなく植えられた",
+      "Young replacement": "若い後継",
+      "Ensemble": "群",
+      "Recent planting, ancient provenance": "植えたのは最近、血筋は古い",
+    },
     metaLead: (sp, age, where) => sp && age ? `${where}にある樹齢約${age}年の${sp}。`
       : sp ? `${where}にある${sp}。` : age ? `${where}にある樹齢約${age}年の木。` : `${where}にある巨木。`,
     distanceAway: (d) => `${d}\u5148`,
@@ -668,6 +755,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     fullStory: "\u3053\u306e\u6a39\u6728\u306e\u8a73\u3057\u3044\u8a71",
     cityHasMore: (c) => `${c}\u306b\u306f\u8a2a\u308c\u308b\u4fa1\u5024\u306e\u3042\u308b\u6a39\u6728\u304c\u307e\u3060\u3042\u308a\u307e\u3059\u3002`,
     sentenceEnd: "\u3002",
+    photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
   },
 };
 
