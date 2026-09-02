@@ -1029,6 +1029,36 @@ SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 # number that includes us flatters us, so ours are excluded by id.
 TEST_SUBMISSION_IDS = {1, 2, 3}
 
+# Our own accounts, keyed by sha1 of the Supabase user id. Hidde, 2026-09-02,
+# reading that morning's digest: "im the user who addes something to baarn".
+# The entry had announced a tree submission and two new accounts as if readers
+# had arrived; one account and the whole submission were his. At this volume
+# that is not a rounding error, it is the difference between traction and an
+# empty day, and this file's standing rule is that noise is never narrated as
+# trend.
+#
+# Hashes rather than ids or addresses, because DATA.md is public and carries
+# this output; the feedback table has printed a four-character marker since
+# 2026-08-22 for the same reason. Add a line when another account of ours turns
+# up. Never add a stranger, because everything listed here is subtracted from
+# the only numbers that count people.
+OURS = {
+    "cc6a542385091392e455911c0d7e351bf0148a4b",  # his own account
+    "ef98f5dbe51e86e6236031d19bdce2364272c6b6",  # his +1 address, for testing
+    # 44 rows, all of them Baarn trees typed "Test" and worth-it votes toggled
+    # nine times on one tree inside one minute. The account itself is gone, so
+    # this one is recognisable only by the hash.
+    "d4e6c578be12fd0916a6277fa7bba4b482405484",
+}
+
+
+def is_ours(uid):
+    """True when a row was made by us rather than by a reader."""
+    if not uid:
+        return False
+    return hashlib.sha1(str(uid).encode()).hexdigest() in OURS
+
+
 # Anything a block thinks should reach Hidde today. The verdict line at the top
 # of the entry is built from this, and an empty list is the good case and says
 # so in words. Without it the report has no front door: fifteen true blocks and
@@ -1213,10 +1243,17 @@ def product_section(today):
         # button was pressed. Worth-it votes (kind feedback) are exempt: two
         # readers giving the same thumb on the same tree the same day are two
         # people, and the vote control carries no text to tell them apart.
-        rows_, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,city,tree,why", key)
+        rows_, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,city,"
+                         "tree,why,user_id", key)
         seen_sub = set()
+        ours_n = {"trees": 0, "feedback": 0, "accounts": 0}
         for r in rows_:
             if r.get("id") in TEST_SUBMISSION_IDS:
+                continue
+            if is_ours(r.get("user_id")):
+                if not (r.get("why") or "").startswith("vote undone"):
+                    ours_n["trees" if r.get("kind") in ("tree", "city")
+                           else "feedback"] += 1
                 continue
             if (r.get("why") or "").startswith("vote undone"):
                 continue  # a cancelled vote is bookkeeping, not feedback
@@ -1234,6 +1271,9 @@ def product_section(today):
             bump(str(r.get("created_at"))[:10], "saves")
         users, _ = _supa("/auth/v1/admin/users?page=1&per_page=1000", key)
         for u in ((users or {}).get("users") or []):
+            if is_ours(u.get("id")):
+                ours_n["accounts"] += 1
+                continue
             bump(str(u.get("created_at"))[:10], "accounts")
         days_ = [(since + datetime.timedelta(days=i)).isoformat() for i in range(15)]
         if any(series.get(d) for d in days_):
@@ -1250,6 +1290,10 @@ def product_section(today):
             out.append("| **14 days** | **%d** | **%d** | **%d** | **%d** | **%d** |" % (
                 tot["accounts"], tot["waitlist"], tot["saves"],
                 tot["trees"], tot["feedback"]))
+            if any(ours_n.values()):
+                out.append("- Our own rows are not in this table: %s. They are "
+                           "testing, and counting them reads as traction."
+                           % ", ".join("%d %s" % (v, k) for k, v in ours_n.items() if v))
         else:
             out.append("- Nothing signed up, saved a tree or was submitted in 14 days.")
     except Exception as e:
@@ -1266,11 +1310,12 @@ def product_section(today):
             out.append("- %s: unreadable (%s)" % (label, str(e)[:60]))
             continue
         try:
-            sel = ("?select=id,created_at,kind,city,tree,why"
+            sel = ("?select=id,created_at,kind,city,tree,why,user_id"
                    if label == "Submissions" else "?select=id,created_at")
             allrows, _ = _supa(path + sel, key)
             if label == "Submissions":
                 allrows = [r for r in allrows if r.get("id") not in TEST_SUBMISSION_IDS]
+                allrows = [r for r in allrows if not is_ours(r.get("user_id"))]
                 allrows = [r for r in allrows
                            if not (r.get("why") or "").startswith("vote undone")]
                 # Same double-submit dedupe as the table above, votes exempt.
@@ -1321,6 +1366,7 @@ def product_section(today):
         while page <= 10:
             users, _ = _supa("/auth/v1/admin/users?page=%d&per_page=1000" % page, key)
             users = (users or {}).get("users") or []
+            users = [u for u in users if not is_ours(u.get("id"))]
             acc += len(users)
             for u in users:
                 c = u.get("created_at")
@@ -1380,6 +1426,8 @@ def feedback_section(today):
         uid = r.get("user_id")
         if not uid:
             return "no acct"
+        if is_ours(uid):
+            return "us"
         return hashlib.sha1(str(uid).encode()).hexdigest()[:4]
 
     out = ["**What readers told us** (14 days, structure only; the words stay in the database)",
@@ -1415,12 +1463,26 @@ def feedback_section(today):
         per_acct[w] = per_acct.get(w, 0) + 1
         out.append("| %s | %s | %s | %s | %s | %s |" % (
             str(r.get("created_at"))[5:10], tree[:34], what, note, w, r.get("outcome") or "-"))
-    lead = max(per_acct.items(), key=lambda x: x[1])
-    if len(rows) >= 5 and lead[1] > len(rows) / 2:
-        out += ["", "- %d of these %d came from one account (%s). At this volume that is "
-                    "almost certainly our own testing rather than readers, and it should be "
-                    "read that way until somebody checks the rows." % (lead[1], len(rows), lead[0])]
-    else:
+    ours = per_acct.pop("us", 0)
+    # Signed-out rows predate the account gate of 2026-08-21 and carry no
+    # marker at all, so they cannot be attributed to anybody, one person or
+    # forty. Naming "no acct" as the leading ACCOUNT was the old line's way of
+    # saying that, and it read as a finding.
+    anon = per_acct.pop("no acct", 0)
+    rest = len(rows) - ours - anon
+    if ours:
+        out += ["", "- %d of these %d rows are ours, marked us. The rest is the reader "
+                    "traffic." % (ours, len(rows))]
+    if anon:
+        out += ["- %d arrived signed out, so they cannot be told apart." % anon]
+    if per_acct:
+        lead = max(per_acct.items(), key=lambda x: x[1])
+        if rest >= 5 and lead[1] > rest / 2:
+            out += ["- %d of the other %d came from one account (%s), which is one "
+                    "person rather than a pattern." % (lead[1], rest, lead[0])]
+        else:
+            out += ["- %d rows from %d accounts." % (rest, len(per_acct))]
+    elif not ours and not anon:
         out += ["", "- %d rows from %d accounts." % (len(rows), len(per_acct))]
     return "\n".join(out)
 
