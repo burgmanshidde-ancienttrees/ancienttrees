@@ -1,0 +1,49 @@
+{
+  "leads": [
+    {
+      "candidate": "Bundelboom van gewone plataan (bundle-trunk London plane)",
+      "register_id": 131500,
+      "location": "Near Pastoor Bellonstraat / Weggevoerdenstraat, Wijgmaal, Leuven",
+      "coordinates": {"latitude": 50.92625, "longitude": 4.70682},
+      "reason": "Strong candidate on paper: a plane tree formed of six stems fused from one planting hole, combined girth 920cm, height 20m, crown 20m, on a site the register tags 'versterkte sites' and 'rivieren' (a former motte/moated-castle site on the Dijle, near the Ymeria sports and redevelopment site in Wijgmaal, demolished 1828). Not shipped because public access to this specific spot could not be confirmed in the time available: nearby search results mix it with the Ymeria sports complex (bookable facilities, not obviously open ground) and an active 'Herontwikkeling Ymeria' redevelopment project. Worth a return visit or a satellite check once the redevelopment status is clearer."
+    },
+    {
+      "candidate": "Kruidtuin champion trees (Gewone plataan 5.47m girth / 33.8m; Tulpenboom 4.88m girth / 29.2m; Moerascipres; Mammoetboom)",
+      "location": "Stedelijke Kruidtuin, Kapucijnenvoer 30, Leuven",
+      "coordinates": {"latitude": 50.8783, "longitude": 4.6906},
+      "reason": "The Kruidtuin is confirmed free and open year-round (site is a protected heritage garden itself, entry 42252) and is Belgium's oldest botanical garden (1738), a strong candidate site. Figures for its champion trees only turned up via search-engine AI summaries citing monumentaltrees.com; monumentaltrees.com itself 403'd every curl attempt and its Cloudflare challenge did not clear in a live browser session either, so per the rulebook ('a search summary is a lead, never a source') none of those girth/height figures were used. The garden's own centuries-old elm (planted at its 1826 opening) fell in a June 2026 storm and is confirmed dead, so it cannot be used. No individual Kruidtuin specimen is separately listed in the Onroerend Erfgoed inventory. Worth a return pass: view monumentaltrees.com's Kruidtuin page in a real browser session (their disclaimer permits verification-only use), or find the garden's own tree list/audio guide script."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Japanse honingboom 'Boom van 't Groot Verdriet' (Japanese pagoda tree, Styphnolobium japonicum)",
+      "register_id": 302651,
+      "location": "Courtyard of the Atrechtcollege, Naamsestraat 63, Leuven",
+      "reason": "Genuinely remarkable and locally famous (a KU Leuven economists' study valued it at EUR 1.3-2.5 million, protected as a monument since 1974, one of the first two specimens of the species grown in Belgium from Japanese seed circa 1800) but stands on the inner courtyard (binnenkoer) of the Atrechtcollege, now KU Leuven's International Office. Both a direct fetch of a Leuven Actueel article and the register's own wording confirm it is on the courtyard, not visible from or reachable from Naamsestraat. No source found stating the courtyard is open to visitors. Fails hard rule 10 / the 'can they get in without asking anyone's permission' test. Revisit only if evidence of open courtyard access to the public turns up."
+    },
+    {
+      "candidate": "Twee opgaande beuken 'Quercoides' (two rare bark-oak beeches, Fagus sylvatica 'Quercoides')",
+      "register_id": 133352,
+      "location": "Restant van park Bodart, behind Parking Bodart, Veilingweg, Leuven",
+      "reason": "The rarest find of the pass (the thicker of the two, girth 404cm, is recorded as the thickest of its rare variety in Flanders) but the register's own context tag for this record is 'private parken' (private parks), and the site is described as an overgrown remnant of a demolished 1889 villa's park, with its more accessible northern half already paved over as a car park in the 1990s. No source found describing public access to the remaining fragment. Blocked on the register's own private-land classification, not merely on doubt."
+    },
+    {
+      "candidate": "Ginkgo biloba 'Pendula' bij herenhuis / Twee Robinia's bij herenhuis",
+      "register_id": [307877, 307917],
+      "location": "Brusselsestraat 190, Leuven",
+      "reason": "Register's own wording places both 'bij herenhuis' (at a private mansion/townhouse); no evidence of public grounds or visiting access found."
+    },
+    {
+      "candidate": "Ginkgo biloba in tuin Blauwe Schuit",
+      "register_id": 307867,
+      "location": "Vismarkt 16, Leuven",
+      "reason": "Register's own wording places it 'in tuin' (in a garden), i.e. a private garden behind a Vismarkt address; no evidence of public access found."
+    },
+    {
+      "candidate": "Plataan bij Sint-Annacollege",
+      "register_id": 42174,
+      "location": "Naamsestraat 37-39 / Sint-Michielsstraat 7-11, Leuven",
+      "reason": "Another KU Leuven college site of the same type as the blocked Atrechtcollege tree; no evidence found that its grounds are open to the public. Not researched further given the pass's four-candidate limit; worth checking on a future pass rather than assumed blocked."
+    }
+  ]
+}

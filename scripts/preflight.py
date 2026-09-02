@@ -17,6 +17,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 DESC_MAX = 155          # site/src/lib/site-config.ts
 INTRO_MIN, INTRO_MAX = 60, 100   # Contract C, site/src/pages/[city].astro
@@ -1028,6 +1029,122 @@ def check_overlay_coverage():
     return out
 
 
+LEAD_SAME_TREE_RADIUS_M = 60
+_LEAD_STOP = {"the", "of", "a", "an", "and", "do", "da", "de", "di", "du", "des", "del",
+              "der", "die", "das", "el", "la", "le", "les", "los", "en", "in", "at", "on",
+              "no", "na", "dos", "tree", "trees", "walk", "old", "great", "big"}
+
+
+def _fold(s):
+    """Lowercase, strip accents, keep letters and digits. Botanico == Botanico."""
+    s = unicodedata.normalize("NFKD", s or "")
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
+
+
+def _genus(species):
+    """The genus out of either 'Bishop Wood (Bischofia javanica)' or 'Bischofia javanica'."""
+    s = species or ""
+    m = re.search(r"\(([^)]*)\)", s)
+    if m:
+        s = m.group(1)
+    m = re.match(r"([A-Z][a-z]+)", s.strip())
+    return m.group(1).lower() if m else ""
+
+
+def _place_bigrams(text):
+    w = [x for x in _fold(text).split() if x not in _LEAD_STOP]
+    return {" ".join(w[i:i + 2]) for i in range(len(w) - 1)}
+
+
+def check_leads_already_published():
+    """A lead that is a tree we already publish.
+
+    The fourth appearance of one class, and the first time it cost a
+    contributor rather than a run. passcheck.py was written when three briefs
+    went out to "open" cities that were already live, and backlog.py exists
+    because those were matched by name. Same error, one layer down: on
+    2026-09-02 Paulo Araujo's eight photographs of Porto were matched only
+    against trees WITHOUT a photograph, so the two of trees that already had
+    one were filed as trees we do not publish, and the mail asked him whether
+    his Bischofia deserved a place on a page it has been on since July. He
+    wrote back with a link to our own list.
+
+    A NOTE, not a FAIL: a leads file is never rendered, so nothing on the site
+    is broken by one. What it breaks is the next thing we say to somebody.
+
+    Two ways to match, and never on the name alone. Distance where the lead
+    carries a coordinate, because no language can fool it. Where it does not,
+    the genus plus a place phrase both texts share, accent-folded, which is
+    what "Bischofia / Jardim Botanico" and "Camellia / Casa Tait" both were.
+    """
+    import math
+    published = {}
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        slug = os.path.basename(path)[:-5]
+        rows = []
+        for t in d.get("trees") or []:
+            loc = t.get("location") or {}
+            rows.append({
+                "id": t.get("id"),
+                "name": t.get("name") or "",
+                "genus": _genus(t.get("species")),
+                "lat": loc.get("latitude"),
+                "lon": loc.get("longitude"),
+                "words": _place_bigrams((t.get("name") or "") + " " + (loc.get("address") or "")),
+            })
+        published[slug] = rows
+
+    out = []
+    for path in sorted(glob.glob("data/leads/*.json")):
+        slug = os.path.basename(path)[:-5]
+        rows = published.get(slug)
+        if not rows:                      # a city we do not publish, or a country file
+            continue
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for lead in (d.get("leads") or []):
+            if not isinstance(lead, dict):
+                continue
+            name = lead.get("name") or lead.get("name_pt") or ""
+            genus = _genus(lead.get("species"))
+            loc = lead.get("location") or {}
+            # A leads file is hand-written and `location` is a dict in some and
+            # a plain address string in others; both are readable, so read both.
+            if not isinstance(loc, dict):
+                loc = {"address": str(loc)}
+            lat = lead.get("lat", loc.get("latitude"))
+            lon = lead.get("lng", loc.get("longitude"))
+            hit = None
+            if lat is not None and lon is not None:
+                for t in rows:
+                    if t["lat"] is None or t["lon"] is None:
+                        continue
+                    dlat = (lat - t["lat"]) * 111320
+                    dlon = (lon - t["lon"]) * 111320 * math.cos(math.radians((lat + t["lat"]) / 2))
+                    dist = math.hypot(dlat, dlon)
+                    if dist <= LEAD_SAME_TREE_RADIUS_M and (not genus or genus == t["genus"]):
+                        hit = "%s (%r) stands %.0fm away" % (t["id"], t["name"], dist)
+                        break
+            if hit is None and genus:
+                words = _place_bigrams(name + " " + (loc.get("address") or lead.get("place") or ""))
+                for t in rows:
+                    if genus != t["genus"]:
+                        continue
+                    shared = words & t["words"]
+                    if shared:
+                        hit = "%s (%r) is the same genus at %r" % (
+                            t["id"], t["name"], sorted(shared)[0])
+                        break
+            if hit:
+                out.append("%s: lead %r may already be published, %s. "
+                           "Check before treating it as a tree we do not have."
+                           % (slug, name or lead.get("species") or "?", hit))
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
@@ -1045,7 +1162,8 @@ def main():
             problems += check_contract_b(os.path.basename(p)[:-5], json.load(fh2))
     for line in problems:
         print("FAIL " + line)
-    for line in check_stacked_pins() + check_search_names() + check_paid_share() + check_country_counts():
+    for line in (check_stacked_pins() + check_search_names() + check_paid_share()
+                 + check_country_counts() + check_leads_already_published()):
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0

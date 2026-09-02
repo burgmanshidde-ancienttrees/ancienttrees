@@ -14,6 +14,20 @@ What does is **the Funchal PDM's `Relatorio de Fundamentacao`, Volume II, March 
 
 **Caveat carried from the pass:** the coordinates around it are park-level rather than tree-level. Two different species sat at an identical lat/long inside the Jardim Municipal, which is the tell, so everything from this source ships `approximate` unless a second source pins the trunk.
 
+## Flanders: the heritage inventory is an open tree register for the whole region (imported 2026-09-02)
+
+**USABLE, licence proven, and it covers 293 municipalities at once.** The Agentschap Onroerend Erfgoed inventories individual trees as *erfgoedobjecten* under the typology *opgaande bomen*, and its API answers JSON with no key and no account:
+
+    https://inventaris.onroerenderfgoed.be/erfgoedobjecten?typologie=opgaande+bomen&per_pagina=50&pagina=N
+
+with `Accept: application/json`. **2,336 trees, 293 municipalities, 2,307 of them carrying a photograph** on the agency's own site. Imported to `data/registers/flanders-onroerend-erfgoed.json`. Gent has 62, Aalst 63, Brugge 30, Leuven 19, Antwerpen 13, Mechelen 7, and the biggest single holding is Voeren with 135.
+
+**Licence, read verbatim at the source** (`inventaris.onroerenderfgoed.be/hergebruik`, 2026-09-02) and checked twice, once by the pass and once directly: two licences apply, a *Modellicentie voor gratis hergebruik* and *Naamsvermelding-GelijkDelen 4.0 Internationaal*, which is CC BY-SA 4.0. Both say *"je mag de tekst wel voor eender welk doel gebruiken"*, you may use the text for any purpose, free, with *verplichte naamsvermelding*, mandatory attribution, and share-alike on adapted text. **No non-commercial clause**, so it clears this project's bar.
+
+**Five caveats, all in the register file's own block.** The list carries no coordinates, only a municipality, so the Lambert72 geometry comes from the per-tree page and that is one request per tree: fetch the city you are working, not all 2,336. There is no age or girth field, though the prose description usually gives both. Inventoried is not the same as legally protected, which is a separate *aanduidingsobject*. **The photographs are NOT covered**: the reuse page is titled *Hergebruik van teksten* and governs texts, and image rights were not established, so do not attach an inventory photograph without settling that.
+
+**And the fifth caveat is the one that decides yields: the tree names are the access warning.** Entries reading *bij herenhuis*, *in tuin*, *op binnenkoer* or tagged *private parken* are private ground and never ship under hard rule 10. A Leuven pass had 26 named trees and delivered three, because most of the rest stand in private courtyards and mansion gardens, including the city's most famous tree, a pagoda tree valued in the millions, in a college's inner courtyard. **So in Flanders the bottleneck is not naming, it is access**, which is the opposite of the Marseille and Charleston problem and needs a different brief: expect to lose a large share of every city and plan for it.
+
 ## Sweden: the national endpoint is dead and the designations are alive as documents (Gothenburg, 2026-09-02)
 
 **A pass that should have failed and did not, because it went looking for the DECISION rather than the dataset.** Naturvardsverket's national naturvardsregistret is shut on every route: WFS disabled, both REST paths 403, and the GetCapabilities answers 200 with an error document inside so a status check reads it as working. On the old reading that closed Sweden.
