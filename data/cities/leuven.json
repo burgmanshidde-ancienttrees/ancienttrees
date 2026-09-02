@@ -1,0 +1,169 @@
+{
+  "city": "Leuven",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Leuven's oldest tree was drawn before anyone measured it. A London plane in Arenbergpark appears on the late eighteenth century design for the park it still stands in, and its trunk has since reached 7.43 metres round. The rest are stranger. A black mulberry leans on the wine press house of a vanished abbey and carries a twenty metre legal protection zone of its own. Three limes gave a roadside chapel at a Wilsele crossroads its name. And out at Wijgmaal a plane sits hollow enough at the base to park a bicycle inside, probably several trees fused into one.",
+  "meta_description": "Leuven's oldest tree, a plane in Arenbergpark, was drawn onto the park's own 18th century plan. Plus a protected mulberry and a hollow bundle plane.",
+  "question_answer": "The oldest tree in Leuven is a London plane in Arenbergpark in Heverlee, roughly 230 to 250 years old, standing in the open grounds around Arenberg castle, which is now KU Leuven's engineering faculty. Flanders' heritage inventory dates it to possibly the end of the eighteenth century, because the tree already appears on the design drawn for the park when it was recut in landscape style for the Duke of Arenberg between 1775 and 1778.",
+  "question_meta": "A London plane drawn onto Arenbergpark's own 18th century plan is Leuven's oldest tree. Where it stands, and three more.",
+  "question_context": "Possibly is the register's own word, and it is doing real work. Flanders' heritage inventory holds no planting record for the Arenbergpark plane. What it holds is the tree's appearance on a design made for the park when the Duke of Arenberg had his formal grounds recut in the English landscape style between 1775 and 1778, which places the tree in that period without dating it to a year. The measurements come from the inventory's own survey of woody heritage: 7.43 metres round at chest height, a crown 34.5 metres across, and no neighbour anywhere near it in size. Nothing else in Leuven competes on a documented date, and that says more about the records than about the trees. The three limes at the Drie Linden chapel in Wilsele carry no age, no girth and no species beyond the genus. The bundle plane at Wijgmaal is thicker than either, 9.20 metres round, and cannot be dated from that at all, because it is several trunks fused into one. Arenbergpark itself is free and unfenced, walked through daily by students. The bus stop is Heverlee Arenberg, roughly twenty minutes out from the centre of Leuven.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Leuven?",
+      "a": "The London plane in Arenbergpark, Heverlee, roughly 230 to 250 years old. It appears on the late eighteenth century design for the park, which is the closest anyone has come to a date for it."
+    },
+    {
+      "q": "Are Leuven's remarkable trees free to visit?",
+      "a": "All of them. Arenbergpark is open and unfenced, the chapel lindens stand on a public plot at a Wilsele crossroads, and the mulberry and the Wijgmaal plane are both on street corners."
+    },
+    {
+      "q": "Why does the Ymeria plane at Wijgmaal have no age?",
+      "a": "Because it is probably not one tree. The heritage inventory records it as a bundelboom, several young planes put into a single hole and left to fuse, so its 9.20 metre girth is the sum of several trunks and cannot be read against a growth rate the way a single stem can."
+    },
+    {
+      "q": "Where in Leuven are these trees?",
+      "a": "Spread out. One in Heverlee to the south, one in the centre at the Wijnpersstraat corner, and two north of the city in Wilsele and Wijgmaal, each roughly twenty minutes out."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lvn_001",
+      "name": "The Arenbergpark Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 230 to 250 years",
+      "age_min": 200,
+      "age_max": 250,
+      "girth_cm": 743,
+      "location": {
+        "address": "Arenbergpark, near Kasteelpark Arenberg, Heverlee, Leuven",
+        "latitude": 50.86368,
+        "longitude": 4.6845,
+        "neighbourhood": "Heverlee"
+      },
+      "story": "This plane is on the drawing. It already appears on the late eighteenth century design for Arenbergpark, made when the Duke of Arenberg had his formal grounds recut in the English landscape style between 1775 and 1778, which is why Flanders' heritage inventory dates it, in its own careful wording, to possibly the end of the eighteenth century. Roughly 230 to 250 years is the honest reading of that, and it is an estimate off a period rather than a planting record. The register's own survey puts the trunk at 7.43 metres round at chest height and the crown at 34.5 metres across, wider than most streets in Leuven.\n\nIt stands alone, which is unusual at that size. Planes are normally avenue trees, planted in rows and squeezed into shape by their neighbours. This one had the lawn to itself and spent two centuries using it.\n\nThe castle it was laid out for belongs to KU Leuven now, and the engineering faculty works in the buildings, so the park is crossed by students all day and stays open, unfenced and free. Under either end of the register's date the tree was already mature when the German army burned the centre of Leuven in August 1914, and again when the city was bombed in May 1940. It has outlasted both.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/309647",
+        "https://www.kuleuven.be/erfgoed/gebouwen-en-monumenten/arenbergkasteel"
+      ],
+      "access": "Free, open public park (KU Leuven's Arenbergpark, open grounds around the castle)",
+      "transport": "Bus stop Heverlee Arenberg, short walk; roughly 20 minutes from Leuven centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Onroerend Erfgoed inventory entry 309647 (Vlaanderen heritage inventory, 'vastgesteld' 2026-07-22): a solitary London plane in Arenbergpark, the landscaped park around the Duke of Arenberg's castle (now KU Leuven's engineering faculty grounds), possibly dating from the end of the 18th century. Already visible on a late-18th-century design of the park when it was laid out in landscape style (between 1775-1778 the park was redesigned in landscape style for the Duke of Arenberg). Measured girth 743cm at 1.5m height, crown diameter 34.5m, from the inventory's own 'Inventarisatie Houtige Beplantingen' woody-heritage survey (no survey date field given on this record). Age flagged: 'possibly end of 18th century' (mogelijk uit het einde van de 18de eeuw) is the register's own wording, a documented-period claim rather than a measured age; treat as roughly 230-250 years and say so is an estimate. Second source (KU Leuven's own heritage page for Arenbergkasteel) confirms the park's landscape redesign history but does not itself name the tree; count the register as the primary source and the park history as corroborating context, not a second confirming source for the individual tree, hence flagged rather than confirmed on the two-source bar. The park itself carries two protection statuses (protected village view since 1980, vastgesteld bouwkundig erfgoed 2021). Arenbergpark is open, unfenced parkland around KU Leuven's engineering campus in Heverlee, walked through daily by students and the public.",
+      "location_precision": "confirmed",
+      "how_to_recognise": "It stands on its own in the park. Nothing else there comes near a trunk 7.43 metres round or a crown 34 metres wide."
+    },
+    {
+      "id": "lvn_002",
+      "name": "The Drie Linden Chapel Lindens",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "not documented; the chapel beside them dates to the late 18th century",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Kapel Drie Linden, corner of Albert Woutersstraat / Panoramalaan / Kapellelaan, Wilsele, Leuven",
+        "latitude": 50.89277,
+        "longitude": 4.69881,
+        "neighbourhood": "Wilsele"
+      },
+      "story": "The chapel is named after the trees. Kapel Drie Linden, the chapel of the three lindens, stands on a sharp triangle of ground at a Wilsele crossroads with a lime on each flank, and it was raised in honour of Onze-Lieve-Vrouw ter Linde, Our Lady of the Linden. Whether these three are the trees it was named for, nobody has established.\n\nThe chapel is thought to date from the last quarter of the eighteenth century, built by Dominicus Jozef Hyacint Nelis, a professor who bought the Bleydenberg estate across the road in 1773. It was damaged during the French Revolution years and reconsecrated in 1829 with a new statue of Mary. It reached the land registry only in 1865, by which time the municipality of Wilsele owned it. In 1951 a road adjustment rounded off the sharp point of the plot and brought the chapel closer to passing traffic than its builder can have intended.\n\nThe lindens themselves are recorded as Tilia and nothing further. No age, no girth, no species beyond the genus, no planting record anywhere. This is an entry you visit as one thing, a small roadside chapel with three trees standing around it. If anyone in Wilsele knows when the limes went in, we would like to hear it.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/309644",
+        "https://www.vrt.be/vrtnws/nl/2025/11/08/leerlingen-van-basisschool-bleydenberg-in-wilsele-krijgen-les-in/"
+      ],
+      "access": "Free, a roadside chapel on public ground at a street corner (a triangular public plot), always visible/reachable",
+      "transport": "Wilsele-Dorp, roughly 15-20 minutes by bus from Leuven centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Onroerend Erfgoed inventory entry 309644: three lime trees flank the small 18th-century Kapel Drie Linden (Chapel of the Three Lindens), on a sharp triangular plot at a Wilsele crossroads, opposite the historic Bleydenberg estate. Chapel presumably built last quarter of the 18th century by Professor Dominicus Jozef Hyacint Nelis, who bought Bleydenberg in 1773, in honour of Our Lady of the Linden ('Onze-Lieve-Vrouw ter Linde'); damaged during the French Revolution period and reconsecrated 1829 with a new Mary statue. Only cadastrally registered in 1865, owned then by the Wilsele municipality; the plot's sharp point was rounded off in a 1951 road adjustment, bringing the chapel closer to the street. No age or girth is recorded for the lindens themselves; the ensemble is the collectible point (the chapel with its three flanking trees), not an individually dated specimen, so age_estimate is left empty rather than guessed. Second source is a 2025 VRT news piece about the neighbouring Bleydenberg chapel/estate becoming a school classroom, confirming the site's public, roadside character and local historical standing; it does not itself measure the trees, so this ships flagged on age/species-detail rather than confirmed on every field. Species given as Tilia (genus) in the register with no species epithet; common lime is the usual planting for a Flemish chapel avenue of this date, stated honestly as an inference in age_estimate/species rather than the register's own word.",
+      "location_precision": "confirmed",
+      "how_to_recognise": "The three limes around the small roadside chapel on the triangular plot at the crossroads. There is one chapel and one group of three."
+    },
+    {
+      "id": "lvn_003",
+      "name": "The Sint-Geertrui Wine Press Mulberry",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 244,
+      "height_m": null,
+      "location": {
+        "address": "Corner of Wijnpersstraat and Donkerstraat, a few metres south of the former Wijnpershuis of the Sint-Geertrui abbey, Leuven",
+        "latitude": 50.88517,
+        "longitude": 4.69111,
+        "neighbourhood": "Leuven city centre"
+      },
+      "story": "Belgium protects this mulberry the way it protects a building. A decree signed on 12 July 2010 put a twenty metre radius of legal protection around it, ground included, because the tree has grown into the corner of the former wine press house of the Sint-Geertrui abbey and the register treats the two as one thing: a mulberry that forms a unity with the protected Wijnpershuis it leans on.\n\nThe measurements explain the leaning. A survey in October 2013 recorded 244 centimetres round the trunk and only 60 centimetres of that trunk before it forks, with a crown spreading 17 metres. Black mulberry does this with age. It sags, splits low and props itself on whatever is there rather than standing upright, so an old one looks like it is going over and usually is not.\n\nThe Wijnpershuis was listed as a monument in 1938 and now houses De Wijnpers, the provincial horticulture school, which has worked on the site for over a century. A school for growers, with a legally protected mulberry leaning on the wall of its oldest building.\n\nNobody has dated the tree. Girth alone cannot settle it on a low, multi-stemmed species like this one, so the age field is empty rather than invented. If a Leuven record holds the year, we would like to see it.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/131504",
+        "https://inventaris.onroerenderfgoed.be/aanduidingsobjecten/944"
+      ],
+      "access": "Free, standing at a public street corner (Wijnpersstraat/Donkerstraat); the register locates it at the corner rather than inside the neighbouring school's grounds. The Wijnpershuis itself is now the Provinciale School voor Moes- en Tuinbouw (De Wijnpers), a working horticultural school; the tree itself is not stated to be behind its gate.",
+      "transport": "Central Leuven, short walk from Grote Markt, roughly 10 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Onroerend Erfgoed inventory entry 131504 plus its own legal protection decree (aanduidingsobject 944, definitief beschermingsbesluit signed 2010-07-12): a black mulberry (Morus nigra) at the corner of Wijnpersstraat and Donkerstraat, a few metres south of the monument-protected former Wijnpershuis (wine press house) of the Sint-Geertrui abbey (protected 1938), now home to the provincial horticulture school De Wijnpers (over 110 years on the site, per the school's own history). Measured girth 244cm at 1.5m height (survey dated 2013-10-23), short trunk (hoogte_stam 0.6m) before it forks, which is the species' normal older-age habit of leaning/sprawling rather than standing tall; crown diameter 17m. The register's own description says the tree 'forms a unity with the protected Wijnpershuis it leans on' (vormt een eenheid met het beschermde Wijnpershuis waarop hij steunt), so it stands close to the building. Protection covers a 20m radius zone around the tree. FLAGGED: single-sourced beyond the register and its own protection decree (both from the same agency, Onroerend Erfgoed); no independent second source found confirming existence, species or age. No age given anywhere; girth alone (244cm) is not enough for a confident derived age for a multi-stemmed, ground-hugging species like black mulberry, so age_estimate is left empty rather than guessed. The exact boundary between public street and the school's own frontage was not independently confirmed by a mapped photo; the register's wording ('op de hoek van' = at the corner of two streets) is the basis for treating it as street-corner public land.",
+      "location_precision": "confirmed",
+      "how_to_recognise": "Low and leaning at the corner of Wijnpersstraat and Donkerstraat, forking barely half a metre above the pavement and propped towards the old wine press house.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "fruit",
+        "label": "July and August, when the fruit turns black and stains the ground under it"
+      }
+    },
+    {
+      "id": "lvn_004",
+      "name": "The Ymeria Bundle Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 920,
+      "height_m": null,
+      "location": {
+        "address": "Beside the Ymeria community house (ontmoetingshuis Ymeria) and sports grounds, at the corner of Pastoor Bellonstraat and Weggevoerdenstraat, Wijgmaal, Leuven",
+        "latitude": 50.926247,
+        "longitude": 4.706905,
+        "neighbourhood": "Wijgmaal (Wilsele boundary)"
+      },
+      "story": "A bicycle rack stands inside this tree, or did when Flanders' heritage agency last reported on it. The base is hollow and roomy enough for that, and the trunk measures 9.20 metres round at chest height, which the agency calls one of the thickest planes in the country. It is probably also not one tree. The inventory records it as a bundelboom, a bundle tree: several young planes dropped into a single planting hole and left to fuse, a nineteenth century shortcut to a thick trunk without waiting a century for one. A local reading disagrees and says it was simply pollarded hard when young. The agency's own account leaves both open.\n\nWhich is why there is no age here. The usual method reads a girth against a species' growth rate and assumes one stem did the growing; several stems grown together would return a number far too old, and an invented century is worse than an empty field.\n\nIt probably stands on a filled-in arm of the Dijle that once marked the boundary between Wilsele and Wijgmaal. It has been protected as a monument since 2010. In 2015 the city and the heritage agency had its stability assessed and pruned it back as a precaution, and the report described the heavy limbs as still growing strongly.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/131500",
+        "https://www.onroerenderfgoed.be/blog/preventieve-snoeiwerken-aan-de-ymeria-plataan-leuven"
+      ],
+      "access": "Free, public. Stands beside the Ymeria community meeting house (ontmoetingshuis) and sports grounds in Wijgmaal, at a street corner rather than inside the fenced pitches. Onroerend Erfgoed's own 2015 field report calls it 'this busy, publicly visited location' (deze druk bezochte publieke locatie). The football pitches themselves are bookable by reservation (confirmed via leuven.be/voetbalterreinen-ymeria), but the tree itself stands at the community-house/street side, not on the enclosed playing surface.",
+      "transport": "Wijgmaal, Leuven; roughly 20-25 minutes from Leuven centre by bus toward Wilsele/Wijgmaal",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Onroerend Erfgoed inventory entry 131500 ('Bundelboom van gewone plataan'): a bundle-trunk common plane formed by several individual trees fused after being planted together in one hole, a 19th-century technique to obtain a thick-looking tree quickly. Second, independent source: Onroerend Erfgoed's own blog post (19 November 2015, 'Preventieve snoeiwerken aan de Ymeria-plataan in Leuven'), a field report rather than a register listing, fetched directly and quoted here (not taken from a search summary). It gives the measured figure directly: 'omtrek op borsthoogte van 9,20 m' (girth at breast height 9.20m = 920cm), calls it 'een van de dikste platanen van het land' (one of the thickest plane trees in the country), and confirms legal protection as a monument since 2010. Likely planted on a filled-in former arm of the Dijle marking the old Wilsele/Wijgmaal boundary; an alternative local theory is that it was once pollarded rather than a true bundle-planting, both cited honestly as unresolved by the source itself. The trunk is hollow at the base (a bike rack literally stands inside it per the source) with a stability review in 2015 leading to preventive pruning by a specialist crew (Bioom Boombeheer, under Onafhankelijk Boomtechnisch Advies De Linde) working with the City of Leuven and Onroerend Erfgoed; the source describes the remaining wood as still vigorous ('de zware takken groeien nog sterk en lijken heel vitaal'). GIRTH IS EXPLICITLY A FUSED BUNDLE OF MULTIPLE STEMS, NOT ONE TRUNK: no age estimate is derived from it, because the standard girth-to-age growth-rate method assumes a single stem and would badly overstate age here; age_estimate is left empty rather than guessed, exactly the trap the rulebook warns about. FLAGGED for two reasons: (1) direct field confirmation of vitality dates to 2015, eleven years old; search-engine summaries (not independently fetched, so not used as fact here) suggest an active 2024-2026 Wijgmaal masterplan explicitly keeps this tree, but that could not be confirmed by directly fetching a dated primary source in the time available, so treat 'still standing' as likely but not freshly verified. (2) The tree sits adjacent to the Ymeria sports grounds, which ARE bookable by reservation for football use (leuven.be/voetbalterreinen-ymeria); the tree itself is described by the source as being at a busy public spot near the community house rather than inside the reserved pitch, but a future pass should confirm this distinction on the ground or via a recent street-level photo before treating it as fully settled.",
+      "location_precision": "confirmed",
+      "how_to_recognise": "Impossible to mistake: one hollow-based trunk over nine metres round beside the Ymeria community house, on the street corner rather than inside the sports grounds."
+    }
+  ],
+  "oldest_tree_id": "lvn_001"
+}

@@ -4616,6 +4616,42 @@
     "note": "4 Linda Hall Library arboretum stories, ~8.3k tokens per tree. brief_wrong: brief said no tree had a dated age, all four had documented planting dates in verify_notes. Defused a girth superlative collision between kcm_002 (231cm) and kcm_003 stale largest-girth note (216cm).",
     "wasted": 0,
     "brief_wrong": true
+   },
+   {
+    "target": "leuven",
+    "kind": "verify",
+    "tokens": 190000,
+    "trees": 4,
+    "note": "two passes. The bottleneck was ACCESS, not naming: 26 inventoried trees and most in private courtyards, including the city's most famous, a pagoda tree valued in the millions, blocked. The second pass refused to derive an age from a fused multi-stem girth and left the thickest grey alder in Belgium unpublished because its access road is tagged private.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "gent",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 6,
+    "note": "register-led and cheap because the candidates were staged from the Flanders API for free first. All six pins CONFIRMED from the register's own Lambert72 geometry, which is unusual for us. Kept a 1841-46 versus 1869 dating disagreement rather than settling it.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Flanders register import",
+    "kind": "scout",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session, deterministic, no agent: 2,336 inventoried Flemish trees across 293 municipalities pulled from the Onroerend Erfgoed API, licence read verbatim at source and verified twice. Opens Gent 62, Aalst 63, Brugge 30, Leuven 19, Antwerpen 13 and every other Flemish city.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Ghent + Leuven",
+    "kind": "write",
+    "tokens": 145000,
+    "trees": 10,
+    "note": "two new city pages. Caught that a superlatives collision between Beijing and Kyoto was a matcher artifact on the pronoun 'them' and refused to rewrite two unrelated live stories to silence it; the dispatching session anchored both pronouns instead, which fixed the warning and the prose.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

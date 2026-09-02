@@ -1,0 +1,236 @@
+{
+ "city": "Ghent",
+ "country": "Belgium",
+ "status": "needs_curation",
+ "intro": "Ghent's best tree walk is about a hundred metres long. A weeping silver lime, a ginkgo and a common ash stand together in Muinkpark, and all three belong to the first planting of ground the city's natural history society bought in 1851 to build a zoo on. The zoo went. The planting stayed. Everything else here runs outward from that park: a copper beech holding the middle of a roundabout in the Zuid that nobody has been able to date, and two young trees in the outer districts that earn their place by what they were planted to remember.",
+ "meta_description": "Muinkpark keeps three trees from the zoo grounds Ghent bought in 1851: a weeping silver lime, a ginkgo and an ash, a hundred metres apart.",
+ "question_answer": "The oldest trees in Ghent are three that share a date: a weeping silver lime, a ginkgo and a common ash, standing within a hundred metres of each other in Muinkpark, south of the historic centre, and all roughly 170 years old. Flanders' heritage inventory records the three as belonging to the first planting of that park, ground the city's natural history society bought in 1851 to build a zoo on, so none of them is older than the others and the lime is simply where this list starts.",
+ "question_meta": "Three trees in Ghent's Muinkpark, planted for a zoo begun in 1851, are the city's oldest. Where they stand, and five more.",
+ "question_context": "Ghent's answer is a trio rather than a single tree, and the reason sits in the register's wording. Flanders' heritage inventory does not date these three individually. It records each as belonging to the first planting generation of Muinkpark, the 3.3 hectares of meadow the Gentse Maatschappij voor Natuurlijke Historie bought in 1851 and turned into zoo grounds, and each as carrying a trunk over three metres round. A generation is not a planting year, which is why the age here is a band of roughly 150 to 185 years rather than a figure. The largest trunk on this list is not among them. The copper beech in the middle of Sint-Annaplein measures 4.26 metres round and has no date at all: the register suggests it may go back to the square's construction in the 1840s, while a separate account of the square records chestnuts planted there in 1869, and neither is talking about this beech specifically. Muinkpark is free, open and small, roughly twenty minutes on foot from Gent-Sint-Pieters station. Start with the weeping lime at the southern end; the ginkgo and the ash are a short walk north of it.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Ghent?",
+   "a": "Three trees share the answer: the weeping silver lime, the ginkgo and the common ash in Muinkpark, all recorded as belonging to the park's first planting generation, which puts them at roughly 170 years."
+  },
+  {
+   "q": "Are Ghent's remarkable trees free to visit?",
+   "a": "All of them. They stand in a public park, on a public square, on a canal-side green and on a village green beside a churchyard, and none needs a ticket or an opening time."
+  },
+  {
+   "q": "Why does this list include trees planted in 1920 and 1988?",
+   "a": "For what they were planted to mark. The red oak on the Vroonstalledries went in as a peace tree beside Wondelgem's war memorial two years after the First World War ended, and the tree of heaven on the Lindenlei stands inside the Michael Lustig monument to Ghent's deported Jews, whose granite floor is cut in the shape of the tree's own shadow."
+  },
+  {
+   "q": "Why do so few of Ghent's trees carry a documented age?",
+   "a": "Flanders' heritage inventory records species, girth and the reason a tree was listed far more often than a planting date, so most ages here come from the period the register names rather than from a document. The copper beech on Sint-Annaplein has no date at all, and two accounts of how that square was planted disagree with each other."
+  }
+ ],
+ "trees": [
+  {
+   "id": "gnt_001",
+   "name": "The Weeping Silver Lime of Muinkpark",
+   "species": "Weeping Silver Lime (Tilia tomentosa 'Pendula')",
+   "age_estimate": "roughly 170 years",
+   "age_min": 150,
+   "age_max": 185,
+   "girth_cm": 300,
+   "location": {
+    "address": "Muinkpark, Gent",
+    "latitude": 51.042427,
+    "longitude": 3.730507,
+    "neighbourhood": "Muinkpark"
+   },
+   "story": "This lime was planted for a zoo. In 1851 the Ghent natural history society bought 3.3 hectares of meadow south of the old city to keep animals on, and Flanders' heritage inventory records this weeping silver lime as belonging to the first planting generation that went into the ground with them. The zoo is gone. The planting outlived it, and a fragment of those grounds is now Muinkpark, a small public park in the university quarter, with three of the original trees still standing within about a hundred metres of each other.\n\nA weeping silver lime is not a wild tree. It is a grafted cultivar of Tilia tomentosa, trained to send its branches back down towards the ground, so the crown reads as a dome you walk under rather than a canopy you stand beneath. The register puts the trunk at over three metres round. The leaves are dark green above and white-felted below, which means the whole tree turns pale and flickers whenever there is wind, and that is the easiest way to pick it out from the ash and the ginkgo nearby.\n\nWhat the register gives is a generation rather than a year, so the age here is a band of roughly a century and a half and not a measurement. Nobody has counted its rings. If a planting record for Muinkpark exists, we would like to see it.",
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/133048",
+    "http://muinkparkwijk.be/muinkpark%20zoo.html"
+   ],
+   "access": "Free, public park, open daylight hours",
+   "transport": "Ghent-Sint-Pieters railway station, roughly 20-25 minutes on foot; De Lijn buses serve the surrounding Sint-Pietersnieuwstraat/Kortrijksepoortstraat area but the exact nearest stop was not confirmed this pass",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Single source (Flanders heritage inventory, agentschap Onroerend Erfgoed, object 133048; CC BY-SA 4.0, attribution '(c) agentschap Onroerend Erfgoed'), corroborated only by a local history page (muinkparkwijk.be) on the park's history, not on this specific tree, so flag as single-sourced on the tree itself. Register: 'stamomtrek van meer dan 3 meter' (trunk girth more than 3m) and 'behoort tot de eerste aanplantgeneratie in het Muinkpark' (belongs to the first planting generation of Muinkpark). Muinkpark is a remnant of the Ghent zoo grounds acquired in 1851 by the Gentse Maatschappij voor Natuurlijke Historie (3.3 ha of meadow). The register directly attributes this individual tree to that first planting generation, which is the basis for the age estimate; it is not an exact planting-year record for this specimen, hence the broad band. Girth recorded as '>300cm' per source; used 300 as the floor value. Park is open, free, public green space in central Ghent near the university quarter. Location precision confirmed from the register's own tree-level polygon (stated accuracy 'tot op 15m').",
+   "location_precision": "confirmed",
+   "how_to_recognise": "The southernmost of the three Muinkpark trees, and the only domed one, with branches hanging to the ground and leaves that flash white underneath in wind."
+  },
+  {
+   "id": "gnt_002",
+   "name": "The Ginkgo of Muinkpark",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "roughly 170 years",
+   "age_min": 150,
+   "age_max": 185,
+   "girth_cm": 300,
+   "location": {
+    "address": "Muinkpark, Gent",
+    "latitude": 51.042664,
+    "longitude": 3.730438,
+    "neighbourhood": "Muinkpark"
+   },
+   "story": "Flanders' heritage inventory still files this tree under its old Dutch name, Japanse notenboom, the Japanese nut tree, which gets it wrong twice. Ginkgo biloba comes from China, and the thing it drops in autumn is a seed, not a nut. The name stuck anyway, which is more or less what happened to the tree. It belongs to the first planting generation of the ground the Ghent natural history society bought in 1851 to build a zoo on. The zoo went. The ginkgo stayed exactly where it was put, and the register records its trunk at over three metres round.\n\nGinkgo is the last surviving species of an order otherwise known from fossils, with no close living relatives anywhere, and the leaf shows it: a flat green fan with a notch in the middle, unlike anything else growing in this park. For most of the year that is the only reason to look twice. Then late November arrives, the whole crown turns hard yellow at once, holds for a week or so, and comes down almost in a single day.\n\nThe register names a planting generation rather than a year, so the age is a band rather than a figure. It stands roughly a hundred metres from the ash and the weeping lime that went into the ground with it.",
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/133049",
+    "http://muinkparkwijk.be/muinkpark%20zoo.html"
+   ],
+   "access": "Free, public park, open daylight hours",
+   "transport": "Ghent-Sint-Pieters railway station, roughly 20-25 minutes on foot; De Lijn buses serve the surrounding Sint-Pietersnieuwstraat/Kortrijksepoortstraat area but the exact nearest stop was not confirmed this pass",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Single source on the specific tree (Flanders heritage inventory, agentschap Onroerend Erfgoed, object 133049; CC BY-SA 4.0, attribution '(c) agentschap Onroerend Erfgoed'); the local history page (muinkparkwijk.be) corroborates the park's history, not this individual tree, so flag as single-sourced. Register calls it 'Japanse notenboom', the old Dutch common name for Ginkgo biloba (confirmed against nl.wikipedia's Ginkgo article, which uses 'Japanse notenboom' as the Dutch name throughout). Girth 'meer dan 3 meter' (more than 3m), and the register states this tree 'behoort tot de eerste aanplantgeneratie in het Muinkpark', the same first-generation planting of the park acquired in 1851 as gnt_001 and gnt_003, three trees from one planting campaign. Broad age band because the source names a generation, not an exact year. Same park, same free public access, third of a walkable trio inside Muinkpark alongside the weeping silver lime (gnt_001) and the common ash (gnt_003).",
+   "location_precision": "confirmed",
+   "how_to_recognise": "The fan-leaved tree in the middle of the Muinkpark trio, with the weeping lime just south of it and the ash to the north.",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "kind": "autumn colour",
+    "label": "late November, when the whole crown turns gold and then drops almost at once"
+   }
+  },
+  {
+   "id": "gnt_003",
+   "name": "The Common Ash of Muinkpark",
+   "species": "European Ash (Fraxinus excelsior)",
+   "age_estimate": "roughly 170 years",
+   "age_min": 150,
+   "age_max": 185,
+   "girth_cm": 300,
+   "location": {
+    "address": "Muinkpark, Gent",
+    "latitude": 51.042975,
+    "longitude": 3.731131,
+    "neighbourhood": "Muinkpark"
+   },
+   "story": "Europe is losing its ash trees, which is what makes a trunk like this one worth the short walk. Ash dieback, a fungal disease that arrived from east Asia and has been moving across the continent since the 1990s, kills young Fraxinus excelsior faster than the species can replace itself. This one measures over three metres round and belongs to the first planting generation of Muinkpark, the ground the Ghent natural history society bought in 1851 and stocked with animals. The register lists it, the weeping lime and the ginkgo as three survivors of the same planting.\n\nAsh is the plainest of the three and by far the most useful. The wood splits clean and bends without snapping, which is why Europe made tool handles, cart wheels and oars out of it for centuries, and why nobody has ever planted one for the view. It is also the last tree in a park to come into leaf and among the first to let go, so for a good stretch of the year you are looking at bare grey branches and hard black buds while everything around it has already turned green.\n\nThe heritage inventory dates it to a planting generation rather than a year. Roughly a century and a half is the register's own margin, not ours, and it is as close as anyone has got.",
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/133052",
+    "http://muinkparkwijk.be/muinkpark%20zoo.html"
+   ],
+   "access": "Free, public park, open daylight hours",
+   "transport": "Ghent-Sint-Pieters railway station, roughly 20-25 minutes on foot; De Lijn buses serve the surrounding Sint-Pietersnieuwstraat/Kortrijksepoortstraat area but the exact nearest stop was not confirmed this pass",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Single source on the specific tree (Flanders heritage inventory, agentschap Onroerend Erfgoed, object 133052; CC BY-SA 4.0, attribution '(c) agentschap Onroerend Erfgoed'); the local history page (muinkparkwijk.be) corroborates the park's history, not this individual tree, so flag as single-sourced. Register: 'Gewone es' (common/European ash, Fraxinus excelsior), 'stamomtrek van meer dan 3 meter', 'behoort tot de eerste aanplantgeneratie in het Muinkpark' (same first planting generation as gnt_001 and gnt_002, park acquired 1851). Muinkpark is a remnant of the former Ghent zoo grounds. Third tree of a compact, walkable trio inside one small public park, all inside roughly 100 metres of each other per the register's own coordinates: the weeping silver lime (gnt_001), the ginkgo (gnt_002) and this ash.",
+   "location_precision": "confirmed",
+   "how_to_recognise": "The northernmost and plainest of the three Muinkpark trees, still bare and grey-branched in May when the lime and the ginkgo are in full leaf."
+  },
+  {
+   "id": "gnt_004",
+   "name": "The Copper Beech of Sint-Annaplein",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 426,
+   "location": {
+    "address": "Sint-Annaplein, Gent",
+    "latitude": 51.049402,
+    "longitude": 3.73463,
+    "neighbourhood": "Sint-Annaplein / Zuid"
+   },
+   "story": "This beech has a trunk 4.26 metres round and no birthday. Two records describe how the square around it was planted, and they do not agree. Flanders' heritage inventory calls it an imposing copper beech standing centrally on Sint-Annaplein and says it possibly still dates from the original layout, the square built between 1841 and 1846 to a design by the city architect Lodewijk Roelandt. The register hedges that itself, because the evidence it leans on is an aerial photograph from 1952 and an Albert Sugg photograph from 1953, both showing the central green already planted. That is proof of trees, not of this tree's age. The Dutch Wikipedia entry on the square records something else entirely: chestnuts planted here in 1869. Chestnut is not beech, and 1869 is not the 1840s.\n\nSo the age field stays empty. Neither source dates this individual beech, and joining the square's construction to the tree standing on it would be an answer nobody actually gave.\n\nThe trunk is not in doubt. Sint-Annaplein is a traffic roundabout now, with a green centre you can walk onto and a Sacred Heart war memorial raised in 1926, and the beech holds the middle of it, in leaf a deep purple-brown from spring until it drops. If a Ghent planting record settles the date, we would like to see it.",
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/308285",
+    "https://nl.wikipedia.org/wiki/Sint-Annaplein_(Gent)"
+   ],
+   "access": "Free, public square, open at all times",
+   "transport": "De Lijn bus stops on Keizer Karelstraat and Nieuwebosstraat, on the square itself; Woodrow Wilsonplein stop about 150m away; Gent-Sint-Pieters station roughly 15-20 minutes on foot",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Two independent sources, and they disagree on the planting story, so both are kept rather than one chosen. Register (agentschap Onroerend Erfgoed, object 308285): 'imposante bruine beuk' (imposing copper beech), girth 426cm, standing centrally on the square, and the register HEDGES the dating itself: 'dateert mogelijk nog van deze oorspronkelijke aanleg' (possibly still dates from the original layout), citing the square's construction 1841-1846 and a 1952 aerial photo plus a 1953 Albert Sugg photo showing the central green area already planted with trees at that time. Dutch Wikipedia's 'Sint-Annaplein (Gent)' article independently confirms the square's 1841-1846 layout by city architect Lodewijk Roelandt, but states a DIFFERENT planting fact: 'In 1869 werden er kastanjebomen op de square gepland' (in 1869 chestnut trees were planted on the square), which names chestnuts, not beeches, and a later year. Neither source states a planting date FOR THIS SPECIFIC BEECH, so age_estimate is left undocumented rather than picking either the 1840s layout or the 1869 planting as the tree's origin; a bridge from either date to this individual tree would be exactly the kind of unsupported join this project avoids. The square itself is real, public and precisely located (Wikipedia's own coordinates, 51.049417N 3.734472E, sit about 15m from the register's tree-level polygon centroid, consistent with the register's stated 15m accuracy). Girth 426cm is large and plausible for an old copper beech; recorded as given. Square hosts a war memorial (Sacred Heart statue, 1926) and is fully public, a traffic roundabout with the green centre open on foot.",
+   "location_precision": "confirmed",
+   "how_to_recognise": "The one large purple-leaved tree in the green centre of the roundabout. Nothing else on the square comes close to its size."
+  },
+  {
+   "id": "gnt_005",
+   "name": "The Tree of Heaven of the Michael Lustig Monument",
+   "species": "Tree of Heaven (Ailanthus altissima)",
+   "age_estimate": "planted in 1988",
+   "age_min": 37,
+   "age_max": 39,
+   "girth_cm": null,
+   "location": {
+    "address": "Lindenlei, Gent",
+    "latitude": 51.047142,
+    "longitude": 3.720237,
+    "neighbourhood": "Lindenlei / Patershol area"
+   },
+   "story": "The memorial beside this tree is a drawing of its shadow. The tree went in first, planted in 1988 on the park strip along the Lindenlei; the monument followed ten years later, inaugurated on 8 May 1998, and its floor is black granite laid out in the shape the tree casts on the ground. Daniel Dutrieux designed it. Set into and around that shadow are a copper dreidel two metres across, a Star of David, granite blocks carrying the names of Jews deported from Ghent, and a Hebrew inscription taken from the first chapter of Lamentations.\n\nIt is named for Michael Lustig, a rabbi arrested near this spot in 1943 together with his wife and their two children, and deported. Every November since 1999 the city and Ghent's Jewish community have gathered here to mark Kristallnacht.\n\nNone of that makes the tree old, and it is not on this list pretending to be. A hemelboom planted in 1988 is young, and Ailanthus altissima is not a species anyone plants for permanence: it grows fast, seeds itself into gutters and railway embankments across Europe, and is usually cut down long before it amounts to anything. This one was left alone, grew, and a sculptor took the shape it throws on the pavement and cut it in stone.",
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/305826"
+   ],
+   "access": "Free, public park strip along the Lindenlei canal, open at all times",
+   "transport": "Central Ghent, within the historic centre; roughly 10-15 minutes' walk from Gent-Sint-Pieters via the centre, or a short ride on any De Lijn line serving Korenmarkt",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Single source this pass (Flanders heritage inventory, agentschap Onroerend Erfgoed, object 305826; CC BY-SA 4.0). A second, independent web source (Dutch Wikipedia, general news search) was tried twice and returned nothing usable in the time available; not blocked, just unfound this pass. The register itself credits its information to 'Stad Gent' (16.10.2017), the city government, which is a distinct origin from the inventory agency's own fieldwork even though it reaches us through one written record. This is not a tree valued for age: it is a young hemelboom (Tree of Heaven) planted in 1988 as a memorial tree, in the small park along the Lindenlei. Beside it stands the Michael Lustig Monument (artist Daniel Dutrieux), inaugurated 8 May 1998, commemorating Ghent's Holocaust victims: a black granite floor representing the tree's shadow, a copper dreidel two metres across, a Star of David, and granite blocks naming deported Jews, with a Hebrew inscription from Lamentations 1:16. Rabbi Michael Lustig was arrested with his wife and two children near this spot in 1943 and deported. The City of Ghent and the Jewish Community of Ghent hold a Kristallnacht commemoration here each November since 1999. The tree qualifies on historical significance rather than age or size; the entry should say plainly that it is young and that its value is what stands beside it.",
+   "location_precision": "confirmed",
+   "how_to_recognise": "The tree standing in the black granite floor of the monument, on the green strip along the Lindenlei canal. The two-metre copper dreidel is at its foot."
+  },
+  {
+   "id": "gnt_006",
+   "name": "The Peace Oak of Vroonstalledries",
+   "species": "Northern Red Oak (Quercus rubra)",
+   "age_estimate": "planted in 1920",
+   "age_min": 105,
+   "age_max": 107,
+   "girth_cm": null,
+   "location": {
+    "address": "Vroonstalledries, Gent",
+    "latitude": 51.08869,
+    "longitude": 3.711244,
+    "neighbourhood": "Wondelgem"
+   },
+   "story": "Wondelgem planted this oak in 1920 and put it between the church and the stone that lists its dead. Flanders' heritage inventory files it as a vredesboom, a peace tree, standing on the Vroonstalledries beside the war memorial, two years after the armistice and while the village was still counting what the First World War had taken from it.\n\nA dries is a village green, common ground a parish kept undivided, and this one still reads as one: hedge-enclosed, open on all sides, with the seventeenth-century Sint-Catharina church and its churchyard along one edge. Against that hedge stand the stations of a pilgrimage route, put up in 1915 while the war was still running, five years before anybody here planted anything for peace.\n\nThe tree is a northern red oak, an American species Europe had been planting for well over a century by then. It grows fast and it colours, which is the one promise this entry can make on a fixed date: late October takes the whole crown to scarlet and then rust, and it holds for a fortnight.\n\nAt just over a hundred years old this is one of the younger trees on the list, and one of only two here whose age comes from a document rather than an estimate. Wondelgem is a district of Ghent, a few kilometres north of the centre.",
+   "verified_sources": [
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/300260",
+    "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/26940"
+   ],
+   "access": "Free, on a public village green (dries) beside the parish churchyard, open at all times",
+   "transport": "In the Wondelgem district of Ghent, roughly 4-5km north of the historic centre; De Lijn buses connect Wondelgem to central Ghent, exact stop not confirmed this pass",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Two register entries used together: the tree itself (object 300260, 'Opgaande Amerikaanse eik als vredesboom bij oorlogsgedenkteken') and the adjacent listed church (object 26940, 'Parochiekerk Sint-Catharina met kerkhof'), both agentschap Onroerend Erfgoed, CC BY-SA 4.0. Register: the Northern Red Oak ('Amerikaanse eik') was planted in 1920 between the Sint-Catharina parish church and a stone war memorial on the Vroonstalledries, as a peace tree commemorating the First World War. Single written source strictly on the tree itself; the church entry corroborates the site (a 17th-century church with its churchyard, on the village green called a 'dries', hedge-enclosed, with 1915 pilgrimage-route stations against the hedge) rather than the tree specifically, so flagged as thin on independent corroboration for the tree. Deelgemeente is Wondelgem, not the Oostakker area a similarly-worded nearby register entry (300258, a chestnut peace tree) sits in; do not conflate the two. Age is a documented planting year (1920), giving a precise age rather than an estimate. No girth recorded by the source. Site is a public churchyard/village green, which this project's access rules treat as open ground in practice.",
+   "location_precision": "confirmed",
+   "how_to_recognise": "The large oak on the open green between the Sint-Catharina church and the stone war memorial.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "autumn colour",
+    "label": "late October, when the crown goes scarlet and then rust"
+   }
+  }
+ ],
+ "oldest_tree_id": "gnt_001"
+}
