@@ -1,258 +1,272 @@
 {
- "country": "Italy",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Quercia centorami (Forenza)",
-   "lat": 40.85643,
-   "lng": 15.775368,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Quercia_Centorami_dopo_lo_schianto_di_una_delle_due_branche_principali.jpg",
-    "https://commons.wikimedia.org/wiki/File:Quercia_Centorami_prima_del_crollo_di_un_delle_due_branche_principali.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Monumental linden in Gschnon",
-   "lat": 46.304127,
-   "lng": 11.309633,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Casignano_-_Tiglio_monumentale.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gschnon_-_Ehemaliges_Kapuzinerkloster_-_05.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gschnon_-_Linde_-_ID_052_G05_-_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sant'Orso (Aosta) - Tilia",
-   "lat": 45.739098,
-   "lng": 7.324937,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2068AostaTiglioSOrso.jpg",
-    "https://commons.wikimedia.org/wiki/File:2079AostaTiglioSOrso.jpg",
-    "https://commons.wikimedia.org/wiki/File:Aosta_-_Tiglio_nostrale_-_2023-09-13_19-12-30_001.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tiglio secolare (Macugnaga)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Chiesa_Vecchia_nel_Dorf.jpg",
-    "https://commons.wikimedia.org/wiki/File:Macugnaga,_Chiesa_Vecchia_e_Tiglio_secolare.jpg",
-    "https://commons.wikimedia.org/wiki/File:Macugnaga_-_Vecchio_Tiglio_-_202209031655.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Insieme omogeneo di Liquidambar styracyflua L.",
-   "lat": 45.33071944,
-   "lng": 8.42192778,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Albero_monumentale_danneggiato.jpg",
-    "https://commons.wikimedia.org/wiki/File:Albero_monumentale_danneggiato_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Dettagli_tronchi_Liquidambar_di_Vercelli.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Quercia castagnara",
-   "lat": 44.738433,
-   "lng": 8.821525,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Quercia_castagnara_centenaria_a_Novi_Ligure_vista_da_lontano.jpg",
-    "https://commons.wikimedia.org/wiki/File:Quercia_castagnara_centenaria_a_Novi_Ligure_vista_da_sotto.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Rul d' la Costa",
-   "lat": 45.221081,
-   "lng": 8.253744,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Guidepost_and_board_Rul_d%27_la_Costa.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rul_d%27_la_Costa.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rul_d%27_la_Costa_2.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Avez del Prinzipe",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Avez_del_Prinzipe.jpg",
-    "https://commons.wikimedia.org/wiki/File:Avez_del_prinzipe.jpg",
-    "https://commons.wikimedia.org/wiki/File:DSCF2749_avez_del_prinzipe.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "L'Eterno",
-   "lat": 46.17778,
-   "lng": 11.448977,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:L%27Eterno_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:L%27eternamente_fotografato,_albero_monumentale_di_Fiemme,in_piedi_da_pi%C3%B9_di_1000_anni_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:L%27eterno_-_panoramio.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Mitterbad beech",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bagni_di_Mezzo,_chiesa_dei_Santi_Cosma_e_Damiano_e_faggio_monumentale_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bagni_di_Mezzo,_chiesa_dei_Santi_Cosma_e_Damiano_e_faggio_monumentale_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Faggio_dei_Bagni_di_Mezzo_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Monumental linden in Gschnon",
-   "lat": 46.304127,
-   "lng": 11.309633,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Casignano_-_Tiglio_monumentale.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gschnon_-_Ehemaliges_Kapuzinerkloster_-_05.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gschnon_-_Linde_-_ID_052_G05_-_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Re Leone (tree)",
-   "lat": 46.183203,
-   "lng": 11.46271,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Il_Re_Leone_,_albero_monumentale_della_Val_di_Fiemme_di_600_anni_circonferenza_alla_base_7,10_m_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Le_possenti_radici_del_Re_Leone_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Re_Leone_-_rami_come_tronchi_-_panoramio.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Urrebe Margreid",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Margreid,_Anwesen_mit_Urrebe.JPG",
-    "https://commons.wikimedia.org/wiki/File:Margreid-S%C3%BCdtirol_013.jpg",
-    "https://commons.wikimedia.org/wiki/File:Margreid-S%C3%BCdtirol_016.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Castagno Miraglia",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Castagno_Miraglia,_Parco_nazionale_delle_foreste_Casentinesi.JPG",
-    "https://commons.wikimedia.org/wiki/File:Castagno_di_Miraglia_inizio_900.PNG"
-   ],
-   "status": "lead",
-   "species": "Sweet Chestnut (Castanea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Cipressi di San Quirico d'Orcia",
-   "lat": 43.06079,
-   "lng": 11.55853,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Abstract-nature.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ai_cipressi.jpg",
-    "https://commons.wikimedia.org/wiki/File:BXL_4490.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Cerro (Cerro Veronese)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cerro_-_cerro_veronese.jpg",
-    "https://commons.wikimedia.org/wiki/File:Il_cerro.jpg",
-    "https://commons.wikimedia.org/wiki/File:Il_cerro_a_cerro.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Roverella (Pedara)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_001.jpeg",
-    "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_002.jpeg",
-    "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_003.jpeg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "L'Olivo di Canneto Sabino",
-   "lat": 42.18424,
-   "lng": 12.72445,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2015_Olive_Tree_from_Canneto_Sabino_IT.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ulivone_di_Canneto_Sabino.jpg"
-   ],
-   "status": "lead",
-   "species": "Olive (Olea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Platano di Curinga",
-   "lat": 38.82351,
-   "lng": 16.3327,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2021_Curinga_plane_IT.jpg",
-    "https://commons.wikimedia.org/wiki/File:Curinga_albero_monumentale_platano_millenario_di_Vrisi.jpg",
-    "https://commons.wikimedia.org/wiki/File:Il_Gigante_Buono_di_Curinga_-_Platano_di_Vrisi.jpg"
-   ],
-   "status": "lead",
-   "species": "Plane (Platanus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Roverella del Santuario di Fonte Colombo",
-   "lat": 42.37836,
-   "lng": 12.82803,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2014_The_Tree_of_Perfect_Gaiety_IT.jpg",
-    "https://commons.wikimedia.org/wiki/File:Giardino_del_Santuario.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Vallonea of Tricase",
-   "lat": 39.92793,
-   "lng": 18.37875,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2020_Oak_Vallonea_of_Tricase_IT.jpg",
-    "https://commons.wikimedia.org/wiki/File:QUERCIA_VALLONEA_TRICASE.jpg",
-    "https://commons.wikimedia.org/wiki/File:Quercia_Vallonea_di_Tricase.jpg"
-   ],
-   "status": "lead"
-  }
- ]
+  "country": "Italy",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Quercia centorami (Forenza)",
+      "lat": 40.85643,
+      "lng": 15.775368,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Quercia_Centorami_dopo_lo_schianto_di_una_delle_due_branche_principali.jpg",
+        "https://commons.wikimedia.org/wiki/File:Quercia_Centorami_prima_del_crollo_di_un_delle_due_branche_principali.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Monumental linden in Gschnon",
+      "lat": 46.304127,
+      "lng": 11.309633,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Casignano_-_Tiglio_monumentale.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gschnon_-_Ehemaliges_Kapuzinerkloster_-_05.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gschnon_-_Linde_-_ID_052_G05_-_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Sant'Orso (Aosta) - Tilia",
+      "lat": 45.739098,
+      "lng": 7.324937,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2068AostaTiglioSOrso.jpg",
+        "https://commons.wikimedia.org/wiki/File:2079AostaTiglioSOrso.jpg",
+        "https://commons.wikimedia.org/wiki/File:Aosta_-_Tiglio_nostrale_-_2023-09-13_19-12-30_001.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tiglio secolare (Macugnaga)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Chiesa_Vecchia_nel_Dorf.jpg",
+        "https://commons.wikimedia.org/wiki/File:Macugnaga,_Chiesa_Vecchia_e_Tiglio_secolare.jpg",
+        "https://commons.wikimedia.org/wiki/File:Macugnaga_-_Vecchio_Tiglio_-_202209031655.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Insieme omogeneo di Liquidambar styracyflua L.",
+      "lat": 45.33071944,
+      "lng": 8.42192778,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Albero_monumentale_danneggiato.jpg",
+        "https://commons.wikimedia.org/wiki/File:Albero_monumentale_danneggiato_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Dettagli_tronchi_Liquidambar_di_Vercelli.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Quercia castagnara",
+      "lat": 44.738433,
+      "lng": 8.821525,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Quercia_castagnara_centenaria_a_Novi_Ligure_vista_da_lontano.jpg",
+        "https://commons.wikimedia.org/wiki/File:Quercia_castagnara_centenaria_a_Novi_Ligure_vista_da_sotto.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Rul d' la Costa",
+      "lat": 45.221081,
+      "lng": 8.253744,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Guidepost_and_board_Rul_d%27_la_Costa.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rul_d%27_la_Costa.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rul_d%27_la_Costa_2.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Avez del Prinzipe",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Avez_del_Prinzipe.jpg",
+        "https://commons.wikimedia.org/wiki/File:Avez_del_prinzipe.jpg",
+        "https://commons.wikimedia.org/wiki/File:DSCF2749_avez_del_prinzipe.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "L'Eterno",
+      "lat": 46.17778,
+      "lng": 11.448977,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:L%27Eterno_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:L%27eternamente_fotografato,_albero_monumentale_di_Fiemme,in_piedi_da_pi%C3%B9_di_1000_anni_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:L%27eterno_-_panoramio.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Mitterbad beech",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bagni_di_Mezzo,_chiesa_dei_Santi_Cosma_e_Damiano_e_faggio_monumentale_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bagni_di_Mezzo,_chiesa_dei_Santi_Cosma_e_Damiano_e_faggio_monumentale_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Faggio_dei_Bagni_di_Mezzo_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Beech (Fagus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Monumental linden in Gschnon",
+      "lat": 46.304127,
+      "lng": 11.309633,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Casignano_-_Tiglio_monumentale.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gschnon_-_Ehemaliges_Kapuzinerkloster_-_05.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gschnon_-_Linde_-_ID_052_G05_-_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Re Leone (tree)",
+      "lat": 46.183203,
+      "lng": 11.46271,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Il_Re_Leone_,_albero_monumentale_della_Val_di_Fiemme_di_600_anni_circonferenza_alla_base_7,10_m_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Le_possenti_radici_del_Re_Leone_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Re_Leone_-_rami_come_tronchi_-_panoramio.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Urrebe Margreid",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Margreid,_Anwesen_mit_Urrebe.JPG",
+        "https://commons.wikimedia.org/wiki/File:Margreid-S%C3%BCdtirol_013.jpg",
+        "https://commons.wikimedia.org/wiki/File:Margreid-S%C3%BCdtirol_016.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Castagno Miraglia",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Castagno_Miraglia,_Parco_nazionale_delle_foreste_Casentinesi.JPG",
+        "https://commons.wikimedia.org/wiki/File:Castagno_di_Miraglia_inizio_900.PNG"
+      ],
+      "status": "lead",
+      "species": "Sweet Chestnut (Castanea sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Cipressi di San Quirico d'Orcia",
+      "lat": 43.06079,
+      "lng": 11.55853,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Abstract-nature.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ai_cipressi.jpg",
+        "https://commons.wikimedia.org/wiki/File:BXL_4490.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Cerro (Cerro Veronese)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cerro_-_cerro_veronese.jpg",
+        "https://commons.wikimedia.org/wiki/File:Il_cerro.jpg",
+        "https://commons.wikimedia.org/wiki/File:Il_cerro_a_cerro.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Roverella (Pedara)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_001.jpeg",
+        "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_002.jpeg",
+        "https://commons.wikimedia.org/wiki/File:Pedara_-_Roverella_-_2025-09-07_19-16-25_003.jpeg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "L'Olivo di Canneto Sabino",
+      "lat": 42.1842,
+      "lng": 12.724294,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2015_Olive_Tree_from_Canneto_Sabino_IT.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ulivone_di_Canneto_Sabino.jpg"
+      ],
+      "status": "lead",
+      "species": "Olive (Olea europaea)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "location_precision": "confirmed",
+      "girth_cm": 640,
+      "curation_status": "flagged",
+      "why": "Verified. Stands in an olive grove at Casale Bertini, comune of Fara in Sabina (Rieti province, Lazio), not Poggio Moiano despite the 'Sabino' name overlap; no city file exists yet for Fara in Sabina in data/cities/. Alive: still an active local landmark, festivals are held under it and it is a stop on the Via di Francesco pilgrim route (viadifrancescolazio.it, GPS 42 11'01.9\"N 12 43'26.7\"E, matches). Three independent sources agree on rough size (girth roughly 6.4-7.2m, height ~10m): it.wikipedia.org/wiki/Canneto_Sabino (7m circumference, ~10m tall, 'over 1000 years'), renneritalia.com/olivo-millenario-storie-sotto-albero (560cm at narrowest / 720cm at midpoint, hollow trunk used to hide supplies in WWII, still highly productive), and the register entry ilregistrodeglialberi.it/8605 (6.40m girth at 130cm height, 10.00m tall, coordinates 42.1842/12.724294 which is a near-exact match to the pin already on file, so confirmed at tree level). AGE IS DISPUTED and does not clear a clean single figure: legend credits it to Numa Pompilius (8th-7th c. BC, i.e. ~2000+ years, dismissed by the sources themselves), the register's own dendrological estimate says approx. 2005 years, Wikipedia and renneritalia both say experts estimate 'around a thousand years' tied to the 11th-century Benedictine land reclamation, and the University of Tuscia's own field analysis (cited by renneritalia) suggests it is probably younger still, perhaps only 700-800 years. Also note ilregistrodeglialberi.it explicitly debunks the tourist claim that this is 'the largest olive tree in Europe' or even in Lazio, so any story should not repeat that superlative uncritically. A single, unmistakable named tree, one obvious place to stand (it stands alone in the middle of a grove), and reached along a public pilgrim path, so it clears the collectible-point and access bars. Sources: https://it.wikipedia.org/wiki/Canneto_Sabino, https://renneritalia.com/olivo-millenario-storie-sotto-albero/, https://ilregistrodeglialberi.it/8605-olivone-di-canneto-olivo-fara-in-sabina-rieti-lazio, https://www.viadifrancescolazio.it/20-cosa-vedere/256-canneto-sabino.html",
+      "age_estimate": "disputed: roughly 700 to 2000 years",
+      "age_min": 700,
+      "age_max": 2000
+    },
+    {
+      "name": "Platano di Curinga",
+      "lat": 38.8235,
+      "lng": 16.3327,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2021_Curinga_plane_IT.jpg",
+        "https://commons.wikimedia.org/wiki/File:Curinga_albero_monumentale_platano_millenario_di_Vrisi.jpg",
+        "https://commons.wikimedia.org/wiki/File:Il_Gigante_Buono_di_Curinga_-_Platano_di_Vrisi.jpg"
+      ],
+      "status": "lead",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "location_precision": "confirmed",
+      "girth_cm": 1475,
+      "curation_status": "flagged",
+      "age_estimate": "roughly 800 to over 1,000 years, estimates vary",
+      "age_min": 600,
+      "age_max": 1200,
+      "why": "Verified. Also known as the Platano di Vrisi, standing in the Vrisi locality (SP 91), comune of Curinga, province of Catanzaro, Calabria. No city file exists yet for Curinga or Lamezia Terme in data/cities/. Alive and actively visited: reached by 'un percorso attrezzato' (a maintained path), came second in the 2021 European Tree of the Year contest, and is on Calabria's regional monumental-tree register plus the national MASAF list. Two independent sources agree closely on the main figures: it.wikipedia.org/wiki/Platano_di_Vrisi (31.5m tall, 14.75m circumference, measured scientifically by GTF [Gruppo dendrologico] on 28 Jan 2021, hollow trunk with an opening over 3m wide, big enough inside to shelter a dozen people or historically 100 sheep) and fondoambiente.it (FAI, Fondo Ambiente Italiano)'s own page, which corroborates the species, hollow trunk and legend but gives different, rougher figures (up to 20m tall, 18m circumference, and names the locality 'Loc. Corda' rather than 'Loc. Vrisi', likely an older or looser measurement/name than the dated 2021 survey). SANITY CHECK: girth_cm above uses the precise, dated 14.75m measurement rather than FAI's rounder 18-20m figures, since a scientific survey with a date beats an undated tourist-page figure, but both are recorded here for the writer. Species is Platanus orientalis (Oriental Plane, native to Armenia/Western Asia), not the London Plane hybrid. AGE IS DISPUTED: most sources say botanists established 'over 1000 years', tied to a legend that Basilian monks planted it in the 11th century while building the nearby Eremo di Sant'Elia; other coverage cites a professional estimate of approximately 800 +/- 200 years. Neither figure is a precise derivation from girth, both are dendrologists' field estimates, so age_estimate/age_min/age_max here span both. Coordinates cross-checked against Wikidata Q56258721 ('plane tree of Curinga', 38 49'24.64\"N 16 19'57.72\"E = 38.8235, 16.3327), an exact match to the pin already on file, so confirmed at tree level. Single unmistakable named tree, one obvious place to stand, publicly reached via a marked path: clears the collectible-point and access bars. Sources: https://it.wikipedia.org/wiki/Platano_di_Vrisi, https://fondoambiente.it/luoghi/il-platano-di-vrisi, https://www.wikidata.org/wiki/Q56258721, https://www.calabriaportal.com/curinga/4969-platano-curinga.html"
+    },
+    {
+      "name": "Roverella del Santuario di Fonte Colombo",
+      "lat": 42.37836,
+      "lng": 12.82803,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2014_The_Tree_of_Perfect_Gaiety_IT.jpg",
+        "https://commons.wikimedia.org/wiki/File:Giardino_del_Santuario.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Vallonea of Tricase",
+      "lat": 39.92793,
+      "lng": 18.37875,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2020_Oak_Vallonea_of_Tricase_IT.jpg",
+        "https://commons.wikimedia.org/wiki/File:QUERCIA_VALLONEA_TRICASE.jpg",
+        "https://commons.wikimedia.org/wiki/File:Quercia_Vallonea_di_Tricase.jpg"
+      ],
+      "status": "lead"
+    }
+  ]
 }
