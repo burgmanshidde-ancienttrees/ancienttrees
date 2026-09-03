@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 - Night run 2026-09-03 06:30 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 20.6 minutes of its 120 minute window, 166 turns, 38 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree. Claims left behind: _famous-japan, _famous-germany, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-03 - Continuation run: finished the standing German+Lithuanian claims, 10 new places, 17 trees
 
 Resumed a window a prior attempt had stopped early on with 88 of 120 minutes still unspent. `passcheck.py --claims` showed two standing verify claims from that attempt, `_famous-germany` and `_famous-lithuania`, each with a fully-verified `data/research/*batch-verified.json` file on disk (17 trees total, no stories yet). Finished rather than re-researched: dispatched one write-stories pass across both files together (within the 15-20 batch size), with one correction flagged going in (Braziūkai's notes wrongly claimed it shared Raudonė's 2018 Lithuanian Tree of the Year title; confirmed by search that Raudonė alone won, Braziūkai is independently notable as the country's thickest lime).
