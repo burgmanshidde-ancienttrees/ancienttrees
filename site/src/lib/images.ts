@@ -75,6 +75,29 @@ function localCopy(url: string, width: number): string | null {
   return w ? `/photos/${hit.base}-${w}.jpg` : null;
 }
 
+/** The url a CARD should load: the largest copy we host ourselves up to `max`,
+ * and otherwise the 500 a card has always had.
+ *
+ * Why this is not just thumbUrl(url, 1000). A card is what a shelf loads by the
+ * dozen, and the reason cards are vendored at all is that Wikimedia rate-limits
+ * a burst (2026-08-27: 24 thumbnails, 13 of them HTTP 429). Asking thumbUrl for
+ * 1000 would find no vendored copy for a Wikimedia photograph and fall through
+ * to Wikimedia's own 1280, which is the burst we removed, arriving again and
+ * bigger.
+ *
+ * So the rule is "the best we host, never somebody else's server", which lets a
+ * photograph somebody gave us be sharp on a card today without waiting on the
+ * 326 MB decision about vendoring a second width for all 374 Wikimedia files.
+ */
+export function cardUrl(url: string, max = 1000): string {
+  const hit = vendored()[url];
+  if (hit) {
+    const w = hit.widths.filter((x) => x <= max).sort((a, b) => b - a)[0];
+    if (w) return `/photos/${hit.base}-${w}.jpg`;
+  }
+  return thumbUrl(url, 500);
+}
+
 /** A right-sized image URL for the big three sources, original otherwise. */
 export function thumbUrl(url: string, width: number): string {
   // Our own copy wins whenever we have one: same picture, a host that does

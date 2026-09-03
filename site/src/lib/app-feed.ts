@@ -20,7 +20,7 @@
 import type { CityEntry } from "./trees";
 import { peakFor } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
-import { usablePhoto, thumbUrl, creditRequired, creditName, creditText } from "./images";
+import { usablePhoto, thumbUrl, cardUrl, creditRequired, creditName, creditText } from "./images";
 import { BASE_URL } from "./schema";
 
 /** The feed is read by an app on somebody's phone, which has no page to
@@ -135,7 +135,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
               height: (p as any).height ?? null,
               // Card size and full-width size, resolved here so no client
               // needs to know how Wikimedia names a thumbnail.
-              thumb: absolute(thumbUrl(p.url, 500)),
+              thumb: absolute(cardUrl(p.url)),
               // 1280, not 960. A hero fills the width of the phone, which is
               // about 1180 physical pixels on a 3x screen, and 960 was not a
               // considered choice: it was the largest Wikimedia width anyone
