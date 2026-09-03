@@ -2,11 +2,11 @@
   "city": "Leeuwarden",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Five of these seven stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The seventh is the oldest and the one to see first: a copper beech by the Westerkerk that the register says will eventually have to come down.",
-  "meta_description": "Seven remarkable trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
+  "intro": "Five of these eight stand in the Prinsentuin, which has been an open public walking park for more than two hundred years and is one of the first in the Netherlands. It was laid out between 1822 and 1824 on the old northern ramparts by Lucas Pieters Roodbaard, the Frisian garden architect who also designed the city cemetery a few streets north, where herons now nest in the crowns of his plane trees. The oldest, and the one to see first, is a copper beech by the Westerkerk that the register says will eventually have to come down.",
+  "meta_description": "Eight remarkable trees in Leeuwarden: five in the two-hundred-year-old Prinsentuin, a heron colony in a Roodbaard cemetery, and a beech on borrowed time.",
   "question_meta": "Leeuwarden's oldest tree is a copper beech by the Westerkerk, banded 1750 to 1800, and the register expects it will have to be felled.",
   "question_answer": "The oldest tree in Leeuwarden is a copper beech standing by the Westerkerk on the Sint Anthonystraat, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It is also the one tree here with a warning attached. The register records that its rooting ground was compacted in the 1990s, that the tree took a blow from which it never recovered, and that although the ground has since been improved its condition has not come back, so it will in time have to be felled. It is standing now. If you want to see the oldest tree in Leeuwarden, this is an argument for going this year rather than in ten.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for these trees, which is why they are all flagged. It is a careful source: for several of these it records the tree's condition as well as its age, which is where the note about the Westerkerk beech comes from and why we have passed it on rather than quietly leaving it out. The Prinsentuin trees are dated indirectly, because the register reasons from the park's own history that the oldest trees in it must come from between 1830 and 1880 rather than from a record of any individual planting. Pins are as the register surveyed them; where one is marked approximate we know the park and not the trunk.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for most of these trees, which is why they are flagged. It is a careful source: for several of these it records the tree's condition as well as its age, which is where the note about the Westerkerk beech comes from and why we have passed it on rather than quietly leaving it out. The Prinsentuin trees are dated indirectly, because the register reasons from the park's own history that the oldest trees in it must come from between 1830 and 1880 rather than from a record of any individual planting. Pins are as the register surveyed them; where one is marked approximate we know the park and not the trunk.",
   "hero_tree_id": "lee_001",
   "oldest_tree_id": "lee_002",
   "faq": [
@@ -257,6 +257,36 @@
         "status": "missing"
       },
       "how_to_recognise": "Centrally in the park by the canal, the tree with a deeply furrowed trunk covered in large woody burrs.",
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lee_008",
+      "name": "The Feather Elms of Molenstraat",
+      "species": "Wych Elm 'Exoniensis' (Ulmus glabra 'Exoniensis')",
+      "age_estimate": "about 90 to 95 years (planted 1930 to 1940)",
+      "age_min": 86,
+      "age_max": 96,
+      "location": {
+        "address": "Molenstraat, opposite house numbers 29 and 35, Leeuwarden",
+        "latitude": 53.202434,
+        "longitude": 5.781438,
+        "neighbourhood": "Molenstraat, near the city centre"
+      },
+      "story": "The graft on this street elm has swollen into a collar of scar tissue with a circumference of more than five metres, wider at that single point than the trunk of almost anything else on this list.\n\nTwo feather elms, a narrow, upright cultivar of wych elm, stand about ten metres apart in an ordinary two by two metre planting pit on a residential street. Both were grafted roughly 1.5 metres above the ground when they were planted, a standard way to propagate this cultivar, and in the ninety-odd years since, the graft union on the larger of the two has ballooned far beyond the trunk it sits on.\n\nAn oak fern has taken root in the crown of that same tree, an epiphyte quietly living in the canopy of a street planting that most passersby probably read as unremarkable. The Dutch national register of monumental trees lists the pair under its dendrological category: official recognition for two elms that most of Molenstraat likely walks past without a second look.",
+      "verified_sources": [
+        "Landelijk Register Monumentale Bomen (LRMB), entry nr 1682944, 'Pluimiepen Molenstraat'",
+        "https://bomenbieb.nl/bijzondere-bomen/pluimiep-leeuwarden/"
+      ],
+      "access": "Free. Public street, always accessible.",
+      "transport": "About 1.2 km north of Leeuwarden station, on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Two tall, narrow elms opposite house numbers 29 and 35. The larger of the pair carries a huge swollen collar about 1.5 metres up the trunk, where it was grafted.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
     }

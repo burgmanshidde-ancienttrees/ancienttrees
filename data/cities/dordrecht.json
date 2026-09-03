@@ -3,10 +3,10 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "In September 2020 the city of Dordrecht worked out how old the black locust in Park Merwestein actually is, and came back with 300 to 325 years. That makes it one of the few trees in the country with a municipal investigation behind its age instead of a guess. The rest of this page is a plane in a charity courtyard built in 1625 by a man trying to fix his reputation, a beech where a synagogue used to stand, and a tree of heaven surviving on nothing but paving.",
-  "meta_description": "Seven remarkable trees in Dordrecht: a black locust the city dated to over 300 years, a plane in a 1625 almshouse court, and the oldest tree of heaven.",
-  "question_meta": "Dordrecht's oldest tree is the black locust in Park Merwestein, which the city dated to 300 to 325 years in 2020. Where it stands, and six more.",
+  "meta_description": "Eight remarkable trees in Dordrecht: a black locust the city dated to 300 years, a plane in a 1625 almshouse court, and a rare pond cypress in Weizigtpark.",
+  "question_meta": "Dordrecht's oldest tree is the black locust in Park Merwestein, which the city dated to 300 to 325 years in 2020. Where it stands, and seven more.",
   "question_answer": "The oldest tree in Dordrecht is a black locust near the S. van Hoogstratensingel entrance of Park Merwestein. This one does not need estimating: research carried out by the municipality in September 2020 put it at 300 to 325 years old, which matches the national register's planting band of 1700 to 1750. That is unusually solid ground for an age on this site, where most figures are a decade-wide band from a register and nothing more. Black locust is a North American species that reached Europe in the early seventeenth century, so a tree planted here around 1700 was among the first generation of them in the country.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements. The Merwestein black locust is the exception and says so: the city investigated it in September 2020 and arrived at 300 to 325 years. The register is the 2024 edition and is the single source for the other six, which is why they are flagged. Several of these trees are recorded as older than the ground they stand in, which is a pattern rather than a coincidence: the silver maple in the Weizigtpark was standing in a meadow before the park was laid out around it in 1947, and the plane at Dordwijk belongs to a country estate begun about 1635. Read the access line on the Sorghvliet plane before setting out: Dordwijk is private ground south of the city, even though the register records it as visitable. Where a pin is marked approximate we know the park and not the trunk, which on an estate of that size is a real difference.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so most figures on this page are bands rather than measurements. The Merwestein black locust is the exception and says so: the city investigated it in September 2020 and arrived at 300 to 325 years. The register is the 2024 edition and is the single source for most of the rest, which is why they are flagged. Several of these trees are recorded as older than the ground they stand in, which is a pattern rather than a coincidence: the silver maple in the Weizigtpark was standing in a meadow before the park was laid out around it in 1947, and the plane at Dordwijk belongs to a country estate begun about 1635. Read the access line on the Sorghvliet plane before setting out: Dordwijk is private ground south of the city, even though the register records it as visitable. Where a pin is marked approximate we know the park and not the trunk, which on an estate of that size is a real difference.",
   "hero_tree_id": "dor_001",
   "oldest_tree_id": "dor_001",
   "faq": [
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "Six of the seven are freely reachable: Park Merwestein, the Weizigtpark, the Van Baerleplantsoen and the street trees are all public, and the Arend Maartenshof is an open courtyard. The plane at Dordwijk stands on a private estate south of the city and is recorded as visitable in the register; check before you set out."
+      "a": "Seven of the eight are freely reachable: Park Merwestein, the Weizigtpark, the Van Baerleplantsoen and the street trees are all public, and the Arend Maartenshof is an open courtyard. The plane at Dordwijk stands on a private estate south of the city and is recorded as visitable in the register; check before you set out."
     }
   ],
   "trees": [
@@ -263,6 +263,36 @@
         "kind": "flowers",
         "label": "late June, when it flowers and the park hums"
       },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dor_008",
+      "name": "The Pond Cypress of Weizigtpark",
+      "species": "Pond Cypress (Taxodium ascendens)",
+      "age_estimate": "roughly 125 to 135 years",
+      "age_min": 126,
+      "age_max": 136,
+      "location": {
+        "address": "Weizigtpark, in a planting bed by the entrance, near the former coach house (Van Baerleplantsoen)",
+        "latitude": 51.806708,
+        "longitude": 4.663508,
+        "neighbourhood": "Weizigt"
+      },
+      "story": "A swamp tree from the American South is quietly thriving by a Dutch park entrance, more than a century after somebody decided a cypress relative was worth the gamble.\n\nThe pond cypress standing near the old coach house at Weizigtpark went into the ground somewhere between 1890 and 1900, making it over 125 years old and, according to the tree registry that tracks it, genuinely rare in the Netherlands: few pond cypresses here have had this long to grow. Unlike its swamp-dwelling relatives back home in Florida and the Carolinas, it needs no flooded ground to get through a Dutch winter, just ordinary parkland soil by the entrance path.\n\nThe coach house behind it, built in 1886 to serve the estate that later became this park, is older than the tree by only a few years, so the two have effectively grown old side by side.\n\nAbout 350 metres away, the park's Silver Maple already stands on this list, so Weizigtpark now holds two entries from two different continents, planted decades apart by people who evidently liked their trees unusual.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/vijvercipres-dordrecht/",
+        "https://www.bomenriddersdordrecht.nl/monumentale-bomen/"
+      ],
+      "access": "Free. Public park, open daily.",
+      "transport": "About 700 m west of Dordrecht station, at the Weizigtpark entrance.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "A conifer with soft, feathery, upward-curving foliage in a planting bed right by the park entrance, next to the old coach house building.",
       "curation_status": "flagged",
       "location_precision": "confirmed"
     }

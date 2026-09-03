@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "oldest_tree_id": "brn_005",
-  "intro": "Baarn is a villa village that royalty, bankers and a university all planted for their own reasons, and the trees outlasted every one of those reasons. The Cantonspark spent seven decades as Utrecht University's botanical garden, which is why a dawn redwood and a giant sequoia stand in a free village park. Kasteel Groeneveld's lanes are Staatsbosbeheer ground now, open to anyone. And in the Pekingtuin stands a red oak from around 1850 that the village likes enough to have given its own protective ring. All five are free.",
-  "meta_description": "Baarn's remarkable trees: a red oak from 1850 the village ringed in honour, exotics from a former university botanical garden, and estate veterans.",
-  "question_meta": "Baarn's best-documented old tree is the American oak of the Pekingtuin, around 1850. Its story, and four more remarkable trees a walk apart.",
+  "intro": "Baarn is a villa village that royalty, bankers and a university all planted for their own reasons, and the trees outlasted every one of those reasons. The Cantonspark spent seven decades as a university botanical garden, which is why a dawn redwood and a giant sequoia stand in a free village park. In the Pekingtuin stands a red oak the village ringed in honour, and in the grounds of Paleis Soestdijk lies a catalpa a 1973 storm knocked flat, left there on a queen's own order. Five of the six trees are free.",
+  "meta_description": "Baarn's remarkable trees: a red oak the village ringed in honour, a university's old botanical garden, and a catalpa a storm felled and a queen kept lying.",
+  "question_meta": "Baarn's best-documented old tree is the American oak of the Pekingtuin, around 1850. Its story, and five more remarkable trees a walk apart.",
   "question_answer": "The best-documented old tree in Baarn is the American oak of the Pekingtuin, planted around 1850, with a trunk of 5.52 metres around. The copper beech by the south pond at Kasteel Groeneveld may be older still, at an estimated 150 to 200 years, but its age is inferred from girth rather than recorded.",
   "question_context": "Baarn's trees are the residue of three different ambitions. The Pekingtuin was the garden of a vanished villa named Peking, and its red oak predates the park that formed around it; in October 2021 the municipality placed a protective ring around the trunk and invited villagers to submit inscriptions for it, which is the kind of honour most towns reserve for statues. The Cantonspark explains itself differently: from 1920 to 1987 it was Utrecht University's botanical garden, and when the university left, the exotics stayed, so a village of thirty thousand keeps a dawn redwood and a giant sequoia the way other towns keep a war memorial. Kasteel Groeneveld's tulip tree grove and copper beech belong to the estate-building era, when a good lane of trees was how you showed the neighbours you intended to stay. The ages here are honest rather than uniform: the oak's is well documented, the beech's is an estimate from girth, and each page says which is which.",
   "faq": [
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Baarn's remarkable trees free to visit?",
-      "a": "All five are free. The Pekingtuin and Cantonspark are public parks in the village itself, and Kasteel Groeneveld is a Staatsbosbeheer estate with open grounds. Paleis Soestdijk's park, which holds more old trees, currently opens on a paid and limited basis and is not on this list."
+      "a": "Five of the six are free. The Pekingtuin and Cantonspark are public parks in the village itself, and Kasteel Groeneveld is a Staatsbosbeheer estate with open grounds. The one exception is the fallen catalpa in the grounds of Paleis Soestdijk, where the palace garden charges a small entry fee and opens Friday to Sunday."
     },
     {
       "q": "What happened to the Kronkelbeuk in the Pekingtuin?",
@@ -210,6 +210,41 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "how_to_recognise": "The very large oak standing alone on the lawn, with a trunk over five metres round. Not the smaller tree inside the steel ring with the poem on it, which stands about sixty metres west."
+    },
+    {
+      "id": "brn_006",
+      "name": "Juliana's Trumpet Tree",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "age_estimate": "about 150 to 160 years (planted around 1870)",
+      "age_min": 150,
+      "age_max": 160,
+      "location": {
+        "address": "Paleistuin, Paleis Soestdijk, Amsterdamsestraatweg 1, Baarn",
+        "latitude": 52.194421,
+        "longitude": 5.278512,
+        "neighbourhood": "Soestdijk"
+      },
+      "story": "In April 1973 a storm knocked this catalpa flat in the grounds of Paleis Soestdijk, and Queen Juliana told her gardener to leave it exactly where it fell.\n\nThe roots held. Rather than dying, the tree kept growing sideways, and new vertical trunks rose up along its horizontal length, the way a fallen willow sometimes resprouts. Guides at the palace gardens still point visitors to what they simply call the fallen trumpet tree, a catalpa planted around 1870 that turned storm damage into its main attraction.\n\nTrumpet trees rarely age gracefully in the Dutch climate. Their root systems tend to stay shallow, and mature specimens often topple in exactly this way. Most get cleared afterwards. This one got a royal reprieve instead, and half a century on it still flowers white in July from a trunk that runs along the ground rather than up from it.\n\nThe palace garden charges a small entry fee and opens Friday to Sunday. Past the flower garden Juliana kept for herself is this: a tree that fell over and simply refused to stop growing.",
+      "best_time": {
+        "months": [7],
+        "kind": "flowers",
+        "label": "July, when it flowers white along its fallen trunk"
+      },
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/juliana-trompetboom/",
+        "https://vandijktuinen.nl/onze-tuinen/overzicht/10-bedrijfstuinen/16-tuinherstel-bij-paleis-soestdijk (independent confirmation that palace garden guides tell visitors the story of this fallen trumpet tree)"
+      ],
+      "access": "Paid entry to the palace garden, EUR 2.50. Open Friday to Sunday, 11:00 to 19:00 (shorter hours from October).",
+      "transport": "About 1.9 km / 20-25 minute walk from Baarn railway station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The tree lying along the ground with several trunks growing upward from its length, not standing upright like the rest of the garden's trees.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ]
 }
