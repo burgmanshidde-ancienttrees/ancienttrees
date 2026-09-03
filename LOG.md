@@ -9,6 +9,36 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (session) - App Store screenshots: fixed the hero blur, fixed the 6.5-inch upload rejection
+
+Hidde flagged the screenshots on the live App Store listing as low quality.
+Measured rather than guessed: the pipeline itself loses nothing (Apple stores
+our upload at 1284x2778, sharper than the three reference apps checked), the
+loss is upstream. Two separate causes, both already partly fixed by other
+sessions today before this one started:
+
+**The tree-detail hero photo was capped at 960px** against a phone that wants
+about 1180, fixed this morning by another session (960->1280, the
+`thumbUrl`/`Photos.swift` bucket list). Rebuilt the app in a worktree
+(`/tmp/at-shots`, the main checkout was mid-run and the worktree guard said
+so) and re-shot all seven App Store panels: the tree-detail panel is visibly
+sharper, side by side with the live one. The Discover/city shelf cards stay
+at 500px on purpose (they are vendored onto our own domain to dodge
+Wikimedia's rate limit, and widening that is a real repo-size decision,
+measured at ~68 MB for the 127 city-face photos alone, not the ~32 MB first
+guessed out loud). Left open for Hidde: worth the 68 MB or not.
+
+**Uploading the new set hit "Screenshots dimensions should be: 1242x2688,
+1284x2778, ..." on 1320x2868 files.** Root cause: this exact failure already
+happened once, 2026-08-29, and the fix (a `SIZES` dict and a `resized()`
+helper in `scripts/appstore_frames.py`) was written but never called from
+`main()`, so the script went on producing only the native 6.9-inch size and
+the same upload was rejected the same way five days later. Wired it in:
+every panel now renders at 1320x2868 as before AND at 1284x2778 in a
+`6.5-inch/` subfolder, so whichever slot the upload lands in fits. Fixed and
+pushed (`appstore_frames.py: actually write the 6.5-inch fallback it already
+had`, 2894b6a0). New 1284x2778 set sent to Hidde to upload.
+
 ## 2026-09-03 (continuation run 2) - Finished two stale claims, dispatched a famous-Japan verify pass
 
 Picked up where an earlier attempt in this window stopped early with the clock
