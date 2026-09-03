@@ -9,6 +9,30 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 - The lane walked: six new places, seven famous trees, every one in a ranking
+
+The first pass of rung (0c), dispatched the same afternoon it was written.
+
+**Live now**: Fortingall (the Fortingall Yew), Fulufjället (Old Tjikko), Santa María del Tule (El Árbol del Tule), Waipoua Forest (Tāne Mahuta and Te Matua Ngahere), Jægerspris Nordskov (Kongeegen), Stelmužė (the Stelmužė Oak). Five hold one tree each, which is the single-famous-tree exception of 2026-08-31 doing what it was written for.
+
+**The thesis, tested on the batch instead of argued.**
+
+| | this batch | the site |
+|---|---:|---:|
+| in at least one generated ranking | 7 of 7 | 29% |
+| in two | 6 of 7 | |
+| in all three | 2 of 7 | |
+
+**Blocked with evidence, not guessed at**: Four Sisters (the Department of Conservation's own page says the track is closed under kauri dieback protection), Storkeegen (dead 1980) and Snoegen (dead 1991), both confirmed by the Jægerspris estate foundation. The last two came from a technique worth keeping: check the managing body's own site for the named tree's SIBLINGS before assuming they are all standing.
+
+**Two errors caught in session, and one of them is the serious kind.** The verify pass delivered both New Zealand kauri without the minus sign on the latitude, which puts a Northland kauri in the Pacific east of Japan, and marked them `confirmed`. Corrected, and preflight now refuses any tree sitting more than 800 km from every other tree in its own country: a dropped sign moves a pin between seven and fifteen thousand kilometres, ordinary spread never comes close, and 2,379 published trees across 46 countries produce zero hits. It cannot see a country where we publish one tree, which is exactly the case this rung creates, so it is the cheap ninety percent and not the whole answer. The second was mine: the writing brief asked for a 100 to 200 word question_context where Contract B requires 150 to 200, and two came back short.
+
+**Old Tjikko now tops the oldest-trees list, and carries a note saying why that is a technicality**: the 9,550 years belong to the root system, the spruce above it is a few hundred years old, and every other tree on that page is one organism of its stated age above ground.
+
+**Cost**: 252k for the verify pass, 177k for the writing pass, 429k for seven trees and six full page sets. That is 61k a tree against the 15k target, and the honest reading is that the write pass carried thirteen written units rather than seven, at roughly 13k each. The verify half is the expensive half and it is where the next saving is.
+
+**Also**: the claim cap in passcheck.py went from three to six. It was sized when a place meant a city; a pass on eight single-tree places is smaller than one city pass and was refused at three.
+
 ## 2026-09-03 - The famous-tree lane, ranked by what people look up, and a broken deploy fixed
 
 **The deploy was red and had been since 07:21.** One photograph had been added by hand without its pixel dimensions, and /api/trees.json carries photo.width and photo.height, so feedshape.py refused the build: a null there stops every installed app updating, silently. Measured the Robenhausen file at Commons (4928 x 3264) and wrote it in. qa.py used to tolerate up to ten unmeasured photographs while the feed tolerates none; it now tolerates none either, so this fails early with a message that names the command instead of failing at the last step with a message about phones.
