@@ -1,424 +1,424 @@
 {
- "city": "Boston",
- "country": "United States",
- "status": "needs_curation",
- "intro": "Boston lost its two most famous trees long ago: the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is stranger. Two English elms have flanked the Shaw Memorial since around 1800, and the Arnold Arboretum keeps accession cards on its trees like a library catalogue. The eleven below split into a Common and Public Garden pair, an Arboretum six including a bonsai begun in 1737, and two across the river in Cambridge; all are free.",
- "meta_description": "Boston's remarkable trees, from the elms flanking the Shaw Memorial to a tree extinct in the wild at the Arnold Arboretum. Locations, stories, sources.",
- "question_meta": "Boston's oldest documented trees are the Shaw Memorial elms on the Common, planted between 1772 and 1812. Their story, and nine more remarkable trees.",
- "question_answer": "The oldest documented landscape trees in Boston are the two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812. The oldest living thing on this list is older still and fits on a table: the Larz Anderson Hinoki Cypress at the Arnold Arboretum, a bonsai begun in 1737.",
- "question_context": "Boston's relationship with its trees is a long ledger of documented losses, and that is precisely what makes the survivors verifiable. The Liberty Tree, the elm under which the Sons of Liberty gathered, was felled by Loyalists in August 1775 and the city has marked the spot ever since. The Great Elm of the Common, once called the city's oldest inhabitant, blew down in 1876 and was mourned in print. The Public Garden's lagoon willow, the most photographed tree in the city, collapsed as recently as July 2026. Each loss was recorded, which means each survivor stands in an unusually well-documented landscape. Six of them stand in the Arnold Arboretum, which keeps an accession-level GIS with a coordinate, a condition and a last-inspection date for every plant it holds. That is better than any tree register on this site, and it moved two pins here: the Franklin tree by 315 metres and the Wilson paperbark maple by 255, both to the exact accession our own sources already named. Where it offers two candidates and nothing separates them, as with the white oak on Peters Hill, the pin stays approximate rather than guessing.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Boston?",
-   "a": "The two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812, are the oldest documented trees growing in Boston ground. The oldest living thing on the list is the Larz Anderson Hinoki Cypress at the Arnold Arboretum, a bonsai begun in Japan in 1737."
-  },
-  {
-   "q": "Is the Liberty Tree still standing?",
-   "a": "No. The Liberty Tree, the elm where Boston's revolutionary protests gathered, was felled by Loyalists in August 1775. A plaque and a bas-relief mark the site at Washington and Essex Streets; no tree on this list claims its mantle."
-  },
-  {
-   "q": "Are Boston's remarkable trees free to visit?",
-   "a": "All eleven are free. Two stand on Boston Common and in the Public Garden, six in the Arnold Arboretum (open free daily, Orange Line to Forest Hills), and two across the river in Cambridge, at the Longfellow House and on Brattle Street."
-  },
-  {
-   "q": "What is a Franklinia and why does Boston have one?",
-   "a": "Franklinia alatamaha is a small flowering tree that has been extinct in the wild since the early 1800s; every living one descends from seeds collected in Georgia before then. The Arnold Arboretum's specimen, accessioned in 1905, flowers in late summer."
-  }
- ],
- "trees": [
-  {
-   "id": "bos_001",
-   "name": "The Shaw Memorial Elms",
-   "species": "English Elm (Ulmus procera)",
-   "age_estimate": "planted between 1772 and 1812, so roughly 214 to 254 years old",
-   "age_min": 214,
-   "age_max": 254,
-   "location": {
-    "address": "Boston Common, opposite 24 Beacon Street (flanking the Robert Gould Shaw Memorial, corner of Beacon and Park Streets)",
-    "latitude": 42.3575,
-    "longitude": -71.0635,
-    "neighbourhood": "Beacon Hill / Boston Common"
-   },
-   "story": "Augustus Saint-Gaudens's memorial to Robert Gould Shaw and the Massachusetts 54th was built around these two elms, not the other way round. The trees came first, planted somewhere between 1772 and 1812, probably under the 1780 permission to plant elms across from John Hancock's mansion while he was governor. The bronze arrived in 1897 and sits on a vault designed to spare their roots. The Boston Globe calls them the oldest English elms in the Western Hemisphere. One caveat on the species. Two institutional sources and the memorial's own conservation record call them English elm; a single minority account describes them as American elm. The weight of evidence sits with English elm, but the disagreement is real. Their survival is not luck. In 1927 they were written off as close to dead. The arborist Henry Davis began treating them free of charge in the 1970s and the care has never stopped: bricks packed inside the hollow trunks for stability, six to eight feet taken off the crowns in 2013, inspections every fortnight. That retrenchment pruning is what gives them the blunt, cut back outline they carry through winter. Even the cramped root vault helps, densifying the wood against Dutch elm disease. Prunings have been turned into pens and sold. The two of them stand where the Freedom Trail meets Beacon and Park, shading the regiment they now outlive by more than a century.",
-   "verified_sources": [
-    "https://apps.bostonglobe.com/boston-revealed/series/shaw-elms/",
-    "https://www.universalhub.com/2020/two-oldest-trees-common (citing New England Folklore, https://newenglandfolklore.blogspot.com/2020/01/strange-old-trees-in-boston-and-beyond.html)",
-    "https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/"
-   ],
-   "access": "Free, public park (Boston Common), directly on the Freedom Trail",
-   "transport": "Park Street MBTA station (Red/Green Line), roughly 3-5 minute walk",
-   "photo": {
-    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/644130068/large.jpg",
-    "license": "CC0",
-    "attribution": "Karen McCabe (umamimomma), via iNaturalist",
-    "status": "approved",
-    "width": 768,
-    "height": 1024
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "notes": "Photo verified 2026-08-11: iNaturalist observation 352989499, Ulmus americana, Boston Common, 33 m from our pin, photo 644130068 licensed CC0 (no rights reserved). Viewed before approval: single elm filling the frame, trunk and crown readable, spring daylight, burred base clearly visible. Was held with no recorded reason; the hold does not survive the coordinate check."
-  },
-  {
-   "id": "bos_002",
-   "name": "The Peters Hill White Oak",
-   "species": "White Oak (Quercus alba)",
-   "age_estimate": "roughly 195 to 220 years, core-sampled in 2018 to a germination date in the early 1800s",
-   "age_min": 195,
-   "age_max": 220,
-   "location": {
-    "address": "Arnold Arboretum of Harvard University, northeast slope of Peters Hill, above the crabapple (Malus) collection",
-    "latitude": 42.2935,
-    "longitude": -71.1275,
-    "neighbourhood": "Peters Hill, Arnold Arboretum, Jamaica Plain"
-   },
-   "story": "Harvard's Arnold Arboretum has been cataloguing plants since 1872 and did not get round to this one until 2010. It shows up on an 1894 city survey of Peters Hill, already growing wild on ground the Arboretum later absorbed, so when it was finally accessioned it went into the books as found growing in place rather than planted. It may be the oldest tree in the entire landscape. In 2018 a core taken from the southwest stem gave 142 countable rings, with perhaps 60 more lost in a hollow centre, putting germination in the early 1800s. It is double leadered, two stems fused near the base with the seam still visible, roughly 17 metres tall and spreading 28 metres over the crabapple collection below it. A 1927 bird's eye map of the Arboretum drew it as a lone shepherd guarding an endless flock, the flock at the time being hawthorns that have since been replaced. Two honest notes. Everything known about this tree comes from the Arboretum itself, rigorous work with published ring counts, but we found nothing independent of the institution. And no coordinates are published, so the pin is the northeast slope of Peters Hill above the crabapples rather than the trunk. Walk up the slope and look for the widest crown on the hill. At that spread it is not a difficult hunt.",
-   "verified_sources": [
-    "https://arboretum.harvard.edu/arnoldia-stories/existing-through-change-quercus-alba/ (Dosmann, Michael S. 2018. 'Existing through change: Quercus alba.' Arnoldia, 76(1): 44-45.)",
-    "https://arboretum.harvard.edu/events/2025-11-15/ (Arnold Arboretum 'Tree Mob' event page, describing it as possibly the oldest accessioned tree in the landscape)"
-   ],
-   "access": "Free, public arboretum, open dawn to dusk",
-   "transport": "Forest Hills MBTA station (Orange Line) roughly 15-20 minute walk, or bus to the Arborway/Peters Hill Gate entrance",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "bos_003",
-   "name": "The Franklin Tree of the Explorers Garden",
-   "species": "Franklin Tree (Franklinia alatamaha)",
-   "age_estimate": "roughly 121 years (accessioned as a rooted cutting in 1905)",
-   "age_min": 120,
-   "age_max": 122,
-   "location": {
-    "address": "Arnold Arboretum of Harvard University, Explorers Garden (grid EG-8), Bussey Hill",
-    "latitude": 42.299226,
-    "longitude": -71.122551,
-    "neighbourhood": "Bussey Hill, Arnold Arboretum, Jamaica Plain"
-   },
-   "story": "There is no wild Franklinia anywhere on earth and there has not been for about two hundred years. John Bartram found the species growing on a few acres beside the Altamaha River in Georgia in 1765, his son William collected seed around 1776, and within roughly fifty years the wild population was gone and never seen again. Every Franklin tree alive today, in every garden in the world, descends from that one collection. This is one of the oldest of them. The Arnold Arboretum took it in as a rooted cutting in 1905 from a Pennsylvania nursery, on a line traceable back to material from 1884. The International Dendrology Society, which has no stake in Harvard's reputation, calls it the largest and oldest known example of the species anywhere, and photographed it standing in October 2025. It is a small tree in the tea family and the only member of its genus, and it flowers on an odd schedule. Large cream white flowers with a boss of yellow stamens open late in the season, so the last of them are still out while the leaves around them are turning red. Seeing both at once on the same branch is the reason to come. It grows in the Explorers Garden on Bussey Hill. No coordinates are published for the individual plant, so the pin is the garden and the labels there take you the rest of the way.",
-   "best_time": {
-    "months": [
-     9
-    ],
-    "kind": "flowers",
-    "label": "September, when the cream flowers open while the leaves are already turning red"
-   },
-   "verified_sources": [
-    "https://arboretum.harvard.edu/plant-bios/franklin-tree/ (accession 2428-3*A, accessioned 1905)",
-    "https://www.treesandshrubsonline.org/articles/franklinia/franklinia-alatamaha/ (International Dendrology Society reference site, independent of Harvard; photo dated 2025-10-27 calling it 'the largest and oldest known example of Franklinia alatamaha anywhere in the world', confirming it standing and photographed recently)",
-    "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0 (Arnold Arboretum plant inventory GIS, accession-level coordinates, condition and last check date)"
-   ],
-   "access": "Free, public arboretum, open dawn to dusk",
-   "transport": "Forest Hills MBTA station (Orange Line) roughly 15-20 minute walk, or bus to the Arborway entrance near Bussey Hill",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed",
-   "how_to_recognise": ""
-  },
-  {
-   "id": "bos_004",
-   "name": "The Dawn Redwood of the Public Garden",
-   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
-   "age_estimate": "roughly 63 years (planted 1963)",
-   "age_min": 62,
-   "age_max": 64,
-   "location": {
-    "address": "Boston Public Garden, near the Charles Street / Beacon Street corner of the Lagoon",
-    "latitude": 42.3555,
-    "longitude": -71.0715,
-    "neighbourhood": "Beacon Hill / Public Garden"
-   },
-   "story": "Until 1944 this species was known only from fossils and assumed to have been extinct for millions of years. Then living Metasequoia turned up in Sichuan, and in early 1948 the first seeds to leave China arrived at Harvard's Arnold Arboretum in Jamaica Plain, a few miles from where this tree stands, just ahead of the door closing on scientific exchange with China for decades. The Arboretum raised seedlings and sent them around the world. This one was planted in the Public Garden in 1963, one of four here. It is not old, and it is not pretending to be. At about 63 it earns its place on what it is rather than how long it has stood. Dawn redwood is a deciduous conifer, which most people meet for the first time in autumn, when a tree that plainly looks like a redwood turns foxy orange and drops every needle it has. The trunk is fluted and deeply hollowed under each branch, another oddity of the species, and a younger 'Gold Rush' cultivar stands across the path for comparison. One note on sourcing: the 1963 planting date and the exact placement come from the Friends of the Public Garden, whose own people care for the tree, and we found no record of this specimen independent of them.",
-   "best_time": {
-    "months": [
-     10,
-     11
-    ],
-    "kind": "autumn colour",
-    "label": "late October into November, when the needles turn foxy orange and fall"
-   },
-   "verified_sources": [
-    "https://friendsofthepublicgarden.org/2020/04/14/meet-the-trees-the-dawn-redwood-april-13-2020/"
-   ],
-   "access": "Free, public park, open dawn to dusk",
-   "transport": "Arlington MBTA station (Green Line), roughly 2-3 minute walk",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "bos_005",
-   "name": "The Original Dawn Redwood of the Arboretum",
-   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
-   "age_estimate": "roughly 77 years, grown from seed collected in Hubei, China in 1948",
-   "age_min": 75,
-   "age_max": 78,
-   "location": {
-    "address": "Arnold Arboretum of Harvard University, near the Hunnewell Visitor Center, opposite the Arborway Gate",
-    "latitude": 42.3068,
-    "longitude": -71.1202,
-    "neighbourhood": "Arborway, Arnold Arboretum, Jamaica Plain"
-   },
-   "story": "This tree grew from the seed shipment that put a fossil back into the ground. In 1948 the Arnold Arboretum took delivery of seed collected in Hubei, China, from a species that had been known to science only from fossils until living trees turned up in the interior a few years earlier. The seed was raised here, and the Arboretum's own account of what came up is worth quoting: the first of its kind to grow in North America in over two million years. The accession number is 524-48. From that lot and its siblings, dawn redwoods went out to gardens across the world, which is how a tree that was a rumour inside living memory became an ordinary sight on ordinary streets.\n\nIt stands near the Hunnewell Visitor Center, opposite the Arborway Gate, so it is the first thing worth walking to once you are through. It is also fifteen years older than the dawn redwood in the Public Garden across town, and its senior in the plainest sense: same species, same 1948 seed, one generation up.\n\nOne honest note on the record. A separately numbered 1948 accession is described elsewhere as the Arboretum's oldest dawn redwood, out along Conifer Path, and we could not establish whether that is this tree under a second label or a sibling raised from the same seed. Both came off the same shipment.",
-   "best_time": {
-    "months": [
-     10,
-     11
-    ],
-    "kind": "autumn colour",
-    "label": "late October into November, when a conifer this size turns rust orange and drops every needle it has"
-   },
-   "verified_sources": [
-    "https://arboretum.harvard.edu/plant-bios/dawn-redwood/",
-    "https://arboretum.harvard.edu/arnoldia-stories/metasequoia-glyptostroboides/",
-    "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0 (Arnold Arboretum plant inventory GIS, accession-level coordinates, condition and last check date)"
-   ],
-   "access": "Free, public arboretum, open dawn to dusk",
-   "transport": "Forest Hills MBTA station (Orange Line), roughly 20 minute walk to the Arborway Gate and Hunnewell Visitor Center, or the 39 bus to the Arborway stop",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "how_to_recognise": "A tall conical conifer with fluted, buttressed bark and soft feathery needles that go rust before dropping. Two of the 1948 accession stand within sixty metres of each other here, so either trunk you reach is one of the originals."
-  },
-  {
-   "id": "bos_006",
-   "name": "The Wilson Paperbark Maple",
-   "species": "Paperbark Maple (Acer griseum)",
-   "age_estimate": "roughly 119 years (collected as a wild seedling in 1907)",
-   "age_min": 118,
-   "age_max": 120,
-   "location": {
-    "address": "Arnold Arboretum of Harvard University, Maple Collection (grid 12-SW), off Meadow Road",
-    "latitude": 42.303004,
-    "longitude": -71.119487,
-    "neighbourhood": "Meadow Road, Arnold Arboretum, Jamaica Plain"
-   },
-   "story": "Almost every paperbark maple in America descends from two seedlings one man dug out of a Chinese wood in the autumn of 1907. The plant collector Ernest Henry Wilson found them in forest north of Yichang, in Hubei, lifted them and shipped them to the Arnold Arboretum. Both survived. This is one of the two, accession 12488, and by the Arboretum's record the pair are the first and the oldest paperbark maples on the continent and the genetic source of most of the ones planted in the country since.\n\nThe species has gone the other way at home. Acer griseum is now endangered in the wild in China, its remaining stands small and scattered, which makes a specimen tree in Jamaica Plain a piece of conservation as much as a piece of horticulture.\n\nCome in winter. The bark is what the tree is named for and it is the reason to make the walk: it lifts off the trunk in thin cinnamon and copper curls that stay attached rather than falling, and with the leaves gone and low sun on it the trunk is the whole show.\n\nOne note on the record. All of the above traces back to the Arboretum, including a published feature written out of its own history, so this is one institution's account, thorough and public, but not independently corroborated. No coordinates exist for the individual tree. The pin is the maple collection off Meadow Road, about ten minutes up from the Forest Hills gate.",
-   "best_time": {
-    "months": [
-     1,
-     2
-    ],
-    "kind": "bare silhouette",
-    "label": "January and February, when the leaves are off and low winter sun catches the peeling cinnamon bark"
-   },
-   "verified_sources": [
-    "https://arboretum.harvard.edu/plant-bios/paperbark-maple/",
-    "https://artsandculture.google.com/story/the-introduction-of-paperbark-maple-to-the-united-states-the-arnold-arboretum-of-harvard-university/2wWBbqmESAfdIQ",
-    "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0 (Arnold Arboretum plant inventory GIS, accession-level coordinates, condition and last check date)"
-   ],
-   "access": "Free, public arboretum, open dawn to dusk",
-   "transport": "Forest Hills MBTA station (Orange Line), roughly 10-12 minute walk via the Forest Hills Gate and Meadow Road",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "bos_007",
-   "name": "The Larz Anderson Hinoki Cypress",
-   "species": "Hinoki Cypress bonsai (Chamaecyparis obtusa)",
-   "age_estimate": "roughly 289 years (started 1737)",
-   "age_min": 288,
-   "age_max": 290,
-   "location": {
-    "address": "Bonsai and Penjing Pavilion, Dana Greenhouses, Arnold Arboretum of Harvard University, 1050 Centre Street",
-    "latitude": 42.3031491,
-    "longitude": -71.1243292,
-    "neighbourhood": "Dana Greenhouses, Arnold Arboretum, Jamaica Plain"
-   },
-   "story": "This tree is 289 years old and it fits on a table. It was started in 1737, when Boston was still a colonial port, and it has spent every one of those years in a pot, watered and pruned by somebody, without a gap. Larz Anderson, a Harvard graduate and American ambassador to Japan, bought it from the Yokohama Nursery Company around 1913 with roughly 39 other bonsai and shipped the lot home to his estate in Brookline, where it stood on his terraces for 24 years. After he and his wife Isabel died, the collection passed to the Arnold Arboretum, which eventually built a pavilion to house it. A cutting taken in 2017 is displayed beside it, the same tree at nine years old and at 289. Two things to know before you go. The 1737 date comes from Anderson's own records rather than from any independent dating, so it is one careful line of evidence repeated by everyone since, not two. And the pavilion rotates around 30 trees through its display every two or three weeks from mid April to late October, so this particular one is not guaranteed to be out on the day you arrive; the pavilion posts what is currently on view. It is ten minutes on foot from Forest Hills, and the Arboretum around it is worth the trip whatever is in the display that week.",
-   "verified_sources": [
-    "https://en.wikipedia.org/wiki/Larz_Anderson_Bonsai_Collection (citing Larz Anderson's own records: 'the oldest of these Hinoki Cypress was started in 1737')",
-    "https://www.wbur.org/news/2026/04/23/boston-arnold-arboretum-bonsai-trees-spring (WBUR News, 2026-04-23, independent of the Arboretum, confirms the '289-year-old hinoki cypress' on display this season and quotes curator Chris Copeland calling it one of the oldest cultivated bonsai in North America, second only to three at the Brooklyn Botanic Garden)",
-    "https://jamaicaplainnews.com/2024/04/16/nearly-three-centuries-old-bonsai-cypress-lives-at-arnold-arboretum/666645 (Jamaica Plain News, 2024-04-16, local outlet independent of the Arboretum, corroborates the 1737 origin and confirms it alive and maintained by bonsai master Jun Imabayashi)"
-   ],
-   "access": "Free, public arboretum. The bonsai itself is on view only mid-April through late October at the Bonsai and Penjing Pavilion, and staff rotate roughly 30 trees through the display every two to three weeks, so this specific specimen is not guaranteed to be out on any given visit; the pavilion posts what is currently on view.",
-   "transport": "Forest Hills MBTA station (Orange Line), roughly 10 minute walk to the Centre Street Gate, then a further 5 minute walk to the Dana Greenhouses",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "bos_008",
-   "name": "The Sapporo Katsuras",
-   "species": "Katsura (Cercidiphyllum japonicum)",
-   "age_estimate": "roughly 148 years (seed arrived 1878)",
-   "age_min": 147,
-   "age_max": 149,
-   "location": {
-    "address": "Arnold Arboretum of Harvard University, along Meadow Road",
-    "latitude": 42.3005,
-    "longitude": -71.1215,
-    "neighbourhood": "Meadow Road, Arnold Arboretum, Jamaica Plain"
-   },
-   "story": "These two trees began as seed in a packet posted from Sapporo. William S. Clark, president of Massachusetts Agricultural College and the man who left his Japanese students the parting line \"Boys, be ambitious\", went to Hokkaido in 1876 to help found what is now Hokkaido University. He collected katsura seed there and sent a share to his friend Charles Sprague Sargent, the Arnold Arboretum's first director. It arrived in 1878, six years after the Arboretum itself existed at all, and the two multi stemmed trees on Meadow Road are what grew from it. They are the oldest katsuras in a collection of 35 and among the oldest documented anywhere in North America. Come in October. Katsura leaves turn apricot and gold, and as they fall and dry they give off a smell most people read as burnt sugar or candy floss; you often catch it before you find the tree. Winter is worth a different look, the silvery grey bark peeling away in narrow rectangular sheets and curved seed follicles hanging on into the cold before the wind takes the seed. Sargent went to Hokkaido himself in 1892 and wrote about katsura as a defining tree of the island's wet lowland woods. One note on sourcing: both accounts here are the Arboretum's own, a plant record and an Arnoldia article rather than two unconnected institutions, though the article's author visited and describes both trees alive and in health.",
-   "best_time": {
-    "months": [
-     10
-    ],
-    "kind": "autumn colour",
-    "label": "October, when the falling leaves turn apricot gold and smell of burnt sugar"
-   },
-   "verified_sources": [
-    "https://arboretum.harvard.edu/plant-bios/katsura/ (accessions 882*A and 882*B, seed from Professor W. S. Clark, arrived 1878)",
-    "https://arboretum.harvard.edu/arnoldia-stories/katsura-in-winter (Arnoldia, confirms both trees living 'along Meadow Road', describes their winter bark and persistent seed follicles firsthand)"
-   ],
-   "access": "Free, public arboretum, open dawn to dusk",
-   "transport": "Forest Hills MBTA station (Orange Line), roughly 15-20 minute walk via the Forest Hills Gate to Meadow Road, or the Arborway entrance",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "bos_009",
-   "name": "The Longfellow Linden",
-   "species": "Small-leaved Lime (Tilia cordata)",
-   "age_estimate": "roughly 220 years",
-   "age_min": 200,
-   "age_max": 230,
-   "location": {
-    "address": "Longfellow House-Washington's Headquarters National Historic Site, 105 Brattle Street, Cambridge, MA",
-    "latitude": 42.3757,
-    "longitude": -71.1211,
-    "neighbourhood": "Cambridge (within the day-trip boundary of Boston, roughly 20-25 minutes via Red Line to Harvard Square then a short walk)"
-   },
-   "story": "In the summer of 1844 Henry Wadsworth Longfellow came home to find that workmen had \"lopped away the long low branches of my Linden tree, misunderstanding my directions\", and he wrote it up in his journal as a small catastrophe. The tree outlived him. It went into the ground around 1800 to 1810, planted by Andrew Craigie, who owned the Brattle Street estate before the poet came to it in 1843, and it stands on the East Lawn of a house that had served as George Washington's headquarters during the siege of Boston a generation before the linden existed. Fanny Longfellow wrote in 1843 of wanting \"a linden avenue in which my poet intends to pace in his old age\". This is the only tree of that avenue still standing. By 1846 he was describing her reading Heine underneath it. The National Park Service puts it at 82 feet, against roughly 60 for the species, with a trunk 84 inches through, and rates its condition fair to poor: the trunk cavity is filled, cables carry the branches, heavy pruning comes round every five years. Since the early 2000s the park has been growing a genetically identical cutting against the day it goes. The grounds are free and open in daylight; only the house tours are ticketed.",
-   "best_time": {
-    "months": [
-     6,
-     7
-    ],
-    "kind": "flowers",
-    "label": "late June into July, when the lime flowers and the whole East Lawn smells of it"
-   },
-   "verified_sources": [
-    "https://www.nps.gov/articles/000/long-littleleaf-linden-plant-story.htm",
-    "https://designingtheparksoclp.wordpress.com/2020/09/04/if-plants-could-speak-a-tour-of-historic-plantings-at-the-longfellow-house-washingtons-headquarters-national-historic-site/",
-    "https://emptymassave.wordpress.com/2018/06/07/famous-trees-of-cambridge/"
-   ],
-   "access": "Free; National Historic Site grounds are open to the public daily during daylight hours (house tours are separately ticketed but the East Lawn where the tree stands is publicly accessible)",
-   "transport": "MBTA Red Line to Harvard Square, then about 8-10 minutes on foot down Brattle Street",
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "bos_010",
-   "name": "The Houghton Beech",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "age_estimate": "roughly 240 years",
-   "age_min": 220,
-   "age_max": 250,
-   "location": {
-    "address": "1000-1008 Massachusetts Avenue, Cambridge, MA (between Harvard Square and Central Square, on the site of the former Houghton estate, now part of MIT/University Park land)",
-    "latitude": 42.3654,
-    "longitude": -71.1047,
-    "neighbourhood": "Cambridge, Mid-Cambridge/University Park (within the day-trip boundary; on the Red Line corridor)"
-   },
-   "story": "This is Cambridge's only living Historic Landmark, and it was made one in 1985 to stop a building. A developer's plans for the site would have taken a third of the copper beech's crown and finished it off, so about thirty neighbours formed a group called the Friends of the Beech Tree and petitioned the city; the Historical Commission designated the tree itself, the legal instrument normally reserved for buildings. The Harvard Crimson, reporting from the October 1985 hearing, called it 203 years old, which puts its planting around 1782 and makes it roughly 240 now. That figure carries more weight than the biography printed around it in the same article, which has Henry O. Houghton serving as mayor decades before he founded the Riverside Press. A 2018 local survey of Cambridge trees offers a looser \"planted 150+ years ago\", a lower bound rather than a contradiction. Houghton planted three beeches on his family estate here. This is the one left. MIT bought the property in the 1970s and took down the buildings, and the tree stayed, which is how a private estate specimen ended up standing on a public sidewalk on Massachusetts Avenue between Central and Harvard. Most of Boston's notable trees sit inside curated collections. This one you walk past on the way to the bus.",
-   "best_time": {
-    "months": [
-     5
-    ],
-    "kind": "fresh leaves",
-    "label": "May, when the new leaves open translucent red before they darken to purple-black"
-   },
-   "verified_sources": [
-    "https://www.thecrimson.com/article/1985/10/22/tree-to-be-landmark-pharvard-students/",
-    "https://emptymassave.wordpress.com/2018/06/07/famous-trees-of-cambridge/",
-    "https://www.cambridgema.gov/~/media/Files/historicalcommission/pdf/Landmark_reports/lm_mass_ave_1000.pdf"
-   ],
-   "access": "Free; stands beside a public sidewalk on Massachusetts Avenue, fully visible and reachable at any time",
-   "transport": "MBTA Red Line to Central Square, then about 8 minutes on foot along Mass Ave toward Harvard Square",
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "bos_011",
-   "name": "Newton's Apple Tree at MIT",
-   "species": "Apple (Malus domestica)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "girth_cm": null,
-   "location": {
-    "address": "The President's Garden, off the Infinite Corridor, MIT campus, 77 Massachusetts Avenue, Cambridge, MA",
-    "latitude": 42.3597,
-    "longitude": -71.09257,
-    "neighbourhood": "MIT campus, Cambridge (day-trip distance from central Boston, ~2.9km)"
-   },
-   "verified_sources": [
-    "https://facts.mit.edu/surprise/newtons-apple-tree/",
-    "https://now.tufts.edu/2009/06/16/isaac-newtons-apple-tree-grows-tufts",
-    "https://www.cambridgeday.com/2022/12/03/acknowledging-survey-mit-resets-public-access-closer-to-open-campus-policy-from-before-covid/"
-   ],
-   "access": "Free, no ticket. Stands in the President's Garden off the Infinite Corridor, inside MIT's Main Group of buildings, which a December 2022 Cambridge Day news report (citing an MIT provost/EVP communication) says are open to the general public on weekdays, 6am-7pm, as part of MIT's reopened, historically-open-campus policy; this reopening is dated (Dec 2022) and campus access rules can and do change, so treat the exact hours as indicative rather than guaranteed on the day.",
-   "transport": "MIT campus, Cambridge, MA; MBTA Red Line to Kendall/MIT station, then a short walk across campus (roughly 10-15 minutes to the Infinite Corridor/President's Garden area).",
-   "location_precision": "approximate",
-   "curation_status": "flagged",
-   "story": "This is not the tree Newton sat under. It is a living descendant of that one, the apple at Woolsthorpe Manor in Lincolnshire, and it stands in the President's Garden off MIT's Infinite Corridor, where it bears fruit like any other apple tree.\n\nMIT's own facts page records it as a gift from Ed Vetter, class of 1942, and gives no planting date. Nobody appears to have written one down. If you know when it went in, tell us.\n\nWhat is documented is the morning somebody came to take a piece of it. In 2009 the Tufts cosmologist Alexander Vilenkin asked the MIT physicist Alan Guth about the tree, MIT's president Susan Hockfield gave her permission, and a Tufts grounds manager drove over and cut three branches off it. Those are now a tree in Medford. An apple cultivar only travels by hand, one graft at a time.\n\nThe cultivar is worth a sentence. Descendants of the Woolsthorpe tree are 'Flower of Kent' wherever they turn up, a big, coarse cooking apple nobody grows for flavour any more, which is why it is named that way here; MIT's own page does not say so.\n\nMIT's Main Group buildings were reported open to the public on weekdays, 6am to 7pm, in December 2022. That was a few years ago and campus rules move, so treat the hours as a good bet rather than a promise.",
-   "best_time": {
-    "months": [
-     9,
-     10
-    ],
-    "kind": "fruit",
-    "label": "September and October, when the apples ripen and drop"
-   },
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  }
- ],
- "oldest_tree_id": "bos_001"
+  "city": "Boston",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Boston lost its two most famous trees long ago: the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is stranger. Two English elms have flanked the Shaw Memorial since around 1800, and the Arnold Arboretum keeps accession cards on its trees like a library catalogue. The eleven below split into a Common and Public Garden pair, an Arboretum six including a bonsai begun in 1737, and two across the river in Cambridge; all are free.",
+  "meta_description": "Boston's remarkable trees, from the elms flanking the Shaw Memorial to a tree extinct in the wild at the Arnold Arboretum. Locations, stories, sources.",
+  "question_meta": "Boston's oldest documented trees are the Shaw Memorial elms on the Common, planted between 1772 and 1812. Their story, and nine more remarkable trees.",
+  "question_answer": "The oldest documented landscape trees in Boston are the two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812. The oldest living thing on this list is older still and fits on a table: the Larz Anderson Hinoki Cypress at the Arnold Arboretum, a bonsai begun in 1737.",
+  "question_context": "Boston's relationship with its trees is a long ledger of documented losses, and that is precisely what makes the survivors verifiable. The Liberty Tree, the elm under which the Sons of Liberty gathered, was felled by Loyalists in August 1775 and the city has marked the spot ever since. The Great Elm of the Common, once called the city's oldest inhabitant, blew down in 1876 and was mourned in print. The Public Garden's lagoon willow, the most photographed tree in the city, collapsed as recently as July 2026. Each loss was recorded, which means each survivor stands in an unusually well-documented landscape. Six of them stand in the Arnold Arboretum, which keeps an accession-level GIS with a coordinate, a condition and a last-inspection date for every plant it holds. That is better than any tree register on this site, and it moved two pins here: the Franklin tree by 315 metres and the Wilson paperbark maple by 255, both to the exact accession our own sources already named. Where it offers two candidates and nothing separates them, as with the white oak on Peters Hill, the pin stays approximate rather than guessing.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Boston?",
+      "a": "The two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812, are the oldest documented trees growing in Boston ground. The oldest living thing on the list is the Larz Anderson Hinoki Cypress at the Arnold Arboretum, a bonsai begun in Japan in 1737."
+    },
+    {
+      "q": "Is the Liberty Tree still standing?",
+      "a": "No. The Liberty Tree, the elm where Boston's revolutionary protests gathered, was felled by Loyalists in August 1775. A plaque and a bas-relief mark the site at Washington and Essex Streets; no tree on this list claims its mantle."
+    },
+    {
+      "q": "Are Boston's remarkable trees free to visit?",
+      "a": "All eleven are free. Two stand on Boston Common and in the Public Garden, six in the Arnold Arboretum (open free daily, Orange Line to Forest Hills), and two across the river in Cambridge, at the Longfellow House and on Brattle Street."
+    },
+    {
+      "q": "What is a Franklinia and why does Boston have one?",
+      "a": "Franklinia alatamaha is a small flowering tree that has been extinct in the wild since the early 1800s; every living one descends from seeds collected in Georgia before then. The Arnold Arboretum's specimen, accessioned in 1905, flowers in late summer."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bos_001",
+      "name": "The Shaw Memorial Elms",
+      "species": "English Elm (Ulmus procera)",
+      "age_estimate": "planted between 1772 and 1812, so roughly 214 to 254 years old",
+      "age_min": 214,
+      "age_max": 254,
+      "location": {
+        "address": "Boston Common, opposite 24 Beacon Street (flanking the Robert Gould Shaw Memorial, corner of Beacon and Park Streets)",
+        "latitude": 42.3575,
+        "longitude": -71.0635,
+        "neighbourhood": "Beacon Hill / Boston Common"
+      },
+      "story": "Augustus Saint-Gaudens's memorial to Robert Gould Shaw and the Massachusetts 54th was built around these two elms, not the other way round. The trees came first, planted somewhere between 1772 and 1812, probably under the 1780 permission to plant elms across from John Hancock's mansion while he was governor. The bronze arrived in 1897 and sits on a vault designed to spare their roots. The Boston Globe calls them the oldest English elms in the Western Hemisphere. One caveat on the species. Two institutional sources and the memorial's own conservation record call them English elm; a single minority account describes them as American elm. The weight of evidence sits with English elm, but the disagreement is real. Their survival is not luck. In 1927 they were written off as close to dead. The arborist Henry Davis began treating them free of charge in the 1970s and the care has never stopped: bricks packed inside the hollow trunks for stability, six to eight feet taken off the crowns in 2013, inspections every fortnight. That retrenchment pruning is what gives them the blunt, cut back outline they carry through winter. Even the cramped root vault helps, densifying the wood against Dutch elm disease. Prunings have been turned into pens and sold. The two of them stand where the Freedom Trail meets Beacon and Park, shading the regiment they now outlive by more than a century.",
+      "verified_sources": [
+        "https://apps.bostonglobe.com/boston-revealed/series/shaw-elms/",
+        "https://www.universalhub.com/2020/two-oldest-trees-common (citing New England Folklore, https://newenglandfolklore.blogspot.com/2020/01/strange-old-trees-in-boston-and-beyond.html)",
+        "https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/"
+      ],
+      "access": "Free, public park (Boston Common), directly on the Freedom Trail",
+      "transport": "Park Street MBTA station (Red/Green Line), roughly 3-5 minute walk",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/644130068/large.jpg",
+        "license": "CC0",
+        "attribution": "Karen McCabe (umamimomma), via iNaturalist",
+        "status": "approved",
+        "width": 768,
+        "height": 1024
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Photo verified 2026-08-11: iNaturalist observation 352989499, Ulmus americana, Boston Common, 33 m from our pin, photo 644130068 licensed CC0 (no rights reserved). Viewed before approval: single elm filling the frame, trunk and crown readable, spring daylight, burred base clearly visible. Was held with no recorded reason; the hold does not survive the coordinate check."
+    },
+    {
+      "id": "bos_002",
+      "name": "The Peters Hill White Oak",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "roughly 195 to 220 years, core-sampled in 2018 to a germination date in the early 1800s",
+      "age_min": 195,
+      "age_max": 220,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, northeast slope of Peters Hill, above the crabapple (Malus) collection",
+        "latitude": 42.2935,
+        "longitude": -71.1275,
+        "neighbourhood": "Peters Hill, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "Harvard's Arnold Arboretum has been cataloguing plants since 1872 and did not get round to this one until 2010. It shows up on an 1894 city survey of Peters Hill, already growing wild on ground the Arboretum later absorbed, so when it was finally accessioned it went into the books as found growing in place rather than planted. It may be the oldest tree in the entire landscape. In 2018 a core taken from the southwest stem gave 142 countable rings, with perhaps 60 more lost in a hollow centre, putting germination in the early 1800s. It is double leadered, two stems fused near the base with the seam still visible, roughly 17 metres tall and spreading 28 metres over the crabapple collection below it. A 1927 bird's eye map of the Arboretum drew it as a lone shepherd guarding an endless flock, the flock at the time being hawthorns that have since been replaced. Two honest notes. Everything known about this tree comes from the Arboretum itself, rigorous work with published ring counts, but we found nothing independent of the institution. And no coordinates are published, so the pin is the northeast slope of Peters Hill above the crabapples rather than the trunk. Walk up the slope and look for the widest crown on the hill. At that spread it is not a difficult hunt.",
+      "verified_sources": [
+        "https://arboretum.harvard.edu/arnoldia-stories/existing-through-change-quercus-alba/ (Dosmann, Michael S. 2018. 'Existing through change: Quercus alba.' Arnoldia, 76(1): 44-45.)",
+        "https://arboretum.harvard.edu/events/2025-11-15/ (Arnold Arboretum 'Tree Mob' event page, describing it as possibly the oldest accessioned tree in the landscape)"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line) roughly 15-20 minute walk, or bus to the Arborway/Peters Hill Gate entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bos_003",
+      "name": "The Franklin Tree of the Explorers Garden",
+      "species": "Franklin Tree (Franklinia alatamaha)",
+      "age_estimate": "roughly 121 years (accessioned as a rooted cutting in 1905)",
+      "age_min": 120,
+      "age_max": 122,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, Explorers Garden (grid EG-8), Bussey Hill",
+        "latitude": 42.299226,
+        "longitude": -71.122551,
+        "neighbourhood": "Bussey Hill, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "There is no wild Franklinia anywhere on earth and there has not been for about two hundred years. John Bartram found the species growing on a few acres beside the Altamaha River in Georgia in 1765, his son William collected seed around 1776, and within roughly fifty years the wild population was gone and never seen again. Every Franklin tree alive today, in every garden in the world, descends from that one collection. This is one of the oldest of them. The Arnold Arboretum took it in as a rooted cutting in 1905 from a Pennsylvania nursery, on a line traceable back to material from 1884. The International Dendrology Society, which has no stake in Harvard's reputation, calls it the largest and oldest known example of the species anywhere, and photographed it standing in October 2025. It is a small tree in the tea family and the only member of its genus, and it flowers on an odd schedule. Large cream white flowers with a boss of yellow stamens open late in the season, so the last of them are still out while the leaves around them are turning red. Seeing both at once on the same branch is the reason to come. It grows in the Explorers Garden on Bussey Hill. No coordinates are published for the individual plant, so the pin is the garden and the labels there take you the rest of the way.",
+      "best_time": {
+        "months": [
+          9
+        ],
+        "kind": "flowers",
+        "label": "September, when the cream flowers open while the leaves are already turning red"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/franklin-tree/ (accession 2428-3*A, accessioned 1905)",
+        "https://www.treesandshrubsonline.org/articles/franklinia/franklinia-alatamaha/ (International Dendrology Society reference site, independent of Harvard; photo dated 2025-10-27 calling it 'the largest and oldest known example of Franklinia alatamaha anywhere in the world', confirming it standing and photographed recently)",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0 (Arnold Arboretum plant inventory GIS, accession-level coordinates, condition and last check date)"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line) roughly 15-20 minute walk, or bus to the Arborway entrance near Bussey Hill",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "how_to_recognise": ""
+    },
+    {
+      "id": "bos_004",
+      "name": "The Dawn Redwood of the Public Garden",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "roughly 63 years (planted 1963)",
+      "age_min": 62,
+      "age_max": 64,
+      "location": {
+        "address": "Boston Public Garden, near the Charles Street / Beacon Street corner of the Lagoon",
+        "latitude": 42.3555,
+        "longitude": -71.0715,
+        "neighbourhood": "Beacon Hill / Public Garden"
+      },
+      "story": "Until 1944 this species was known only from fossils and assumed to have been extinct for millions of years. Then living Metasequoia turned up in Sichuan, and in early 1948 the first seeds to leave China arrived at Harvard's Arnold Arboretum in Jamaica Plain, a few miles from where this tree stands, just ahead of the door closing on scientific exchange with China for decades. The Arboretum raised seedlings and sent them around the world. This one was planted in the Public Garden in 1963, one of four here. It is not old, and it is not pretending to be. At about 63 it earns its place on what it is rather than how long it has stood. Dawn redwood is a deciduous conifer, which most people meet for the first time in autumn, when a tree that plainly looks like a redwood turns foxy orange and drops every needle it has. The trunk is fluted and deeply hollowed under each branch, another oddity of the species, and a younger 'Gold Rush' cultivar stands across the path for comparison. One note on sourcing: the 1963 planting date and the exact placement come from the Friends of the Public Garden, whose own people care for the tree, and we found no record of this specimen independent of them.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the needles turn foxy orange and fall"
+      },
+      "verified_sources": [
+        "https://friendsofthepublicgarden.org/2020/04/14/meet-the-trees-the-dawn-redwood-april-13-2020/"
+      ],
+      "access": "Free, public park, open dawn to dusk",
+      "transport": "Arlington MBTA station (Green Line), roughly 2-3 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bos_005",
+      "name": "The Original Dawn Redwood of the Arboretum",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "roughly 77 years, grown from seed collected in Hubei, China in 1948",
+      "age_min": 75,
+      "age_max": 78,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, near the Hunnewell Visitor Center, opposite the Arborway Gate",
+        "latitude": 42.3068,
+        "longitude": -71.1202,
+        "neighbourhood": "Arborway, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "This tree grew from the seed shipment that put a fossil back into the ground. In 1948 the Arnold Arboretum took delivery of seed collected in Hubei, China, from a species that had been known to science only from fossils until living trees turned up in the interior a few years earlier. The seed was raised here, and the Arboretum's own account of what came up is worth quoting: the first of its kind to grow in North America in over two million years. The accession number is 524-48. From that lot and its siblings, dawn redwoods went out to gardens across the world, which is how a tree that was a rumour inside living memory became an ordinary sight on ordinary streets.\n\nIt stands near the Hunnewell Visitor Center, opposite the Arborway Gate, so it is the first thing worth walking to once you are through. It is also fifteen years older than the dawn redwood in the Public Garden across town, and its senior in the plainest sense: same species, same 1948 seed, one generation up.\n\nOne honest note on the record. A separately numbered 1948 accession is described elsewhere as the Arboretum's oldest dawn redwood, out along Conifer Path, and we could not establish whether that is this tree under a second label or a sibling raised from the same seed. Both came off the same shipment.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when a conifer this size turns rust orange and drops every needle it has"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/dawn-redwood/",
+        "https://arboretum.harvard.edu/arnoldia-stories/metasequoia-glyptostroboides/",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0 (Arnold Arboretum plant inventory GIS, accession-level coordinates, condition and last check date)"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line), roughly 20 minute walk to the Arborway Gate and Hunnewell Visitor Center, or the 39 bus to the Arborway stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "A tall conical conifer with fluted, buttressed bark and soft feathery needles that go rust before dropping. Two of the 1948 accession stand within sixty metres of each other here, so either trunk you reach is one of the originals."
+    },
+    {
+      "id": "bos_006",
+      "name": "The Wilson Paperbark Maple",
+      "species": "Paperbark Maple (Acer griseum)",
+      "age_estimate": "roughly 119 years (collected as a wild seedling in 1907)",
+      "age_min": 118,
+      "age_max": 120,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, Maple Collection (grid 12-SW), off Meadow Road",
+        "latitude": 42.303004,
+        "longitude": -71.119487,
+        "neighbourhood": "Meadow Road, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "Almost every paperbark maple in America descends from two seedlings one man dug out of a Chinese wood in the autumn of 1907. The plant collector Ernest Henry Wilson found them in forest north of Yichang, in Hubei, lifted them and shipped them to the Arnold Arboretum. Both survived. This is one of the two, accession 12488, and by the Arboretum's record the pair are the first and the oldest paperbark maples on the continent and the genetic source of most of the ones planted in the country since.\n\nThe species has gone the other way at home. Acer griseum is now endangered in the wild in China, its remaining stands small and scattered, which makes a specimen tree in Jamaica Plain a piece of conservation as much as a piece of horticulture.\n\nCome in winter. The bark is what the tree is named for and it is the reason to make the walk: it lifts off the trunk in thin cinnamon and copper curls that stay attached rather than falling, and with the leaves gone and low sun on it the trunk is the whole show.\n\nOne note on the record. All of the above traces back to the Arboretum, including a published feature written out of its own history, so this is one institution's account, thorough and public, but not independently corroborated. No coordinates exist for the individual tree. The pin is the maple collection off Meadow Road, about ten minutes up from the Forest Hills gate.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and low winter sun catches the peeling cinnamon bark"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/paperbark-maple/",
+        "https://artsandculture.google.com/story/the-introduction-of-paperbark-maple-to-the-united-states-the-arnold-arboretum-of-harvard-university/2wWBbqmESAfdIQ",
+        "https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Sci_Name_and_Acc_Num/FeatureServer/0 (Arnold Arboretum plant inventory GIS, accession-level coordinates, condition and last check date)"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line), roughly 10-12 minute walk via the Forest Hills Gate and Meadow Road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bos_007",
+      "name": "The Larz Anderson Hinoki Cypress",
+      "species": "Hinoki Cypress bonsai (Chamaecyparis obtusa)",
+      "age_estimate": "roughly 289 years (started 1737)",
+      "age_min": 288,
+      "age_max": 290,
+      "location": {
+        "address": "Bonsai and Penjing Pavilion, Dana Greenhouses, Arnold Arboretum of Harvard University, 1050 Centre Street",
+        "latitude": 42.3031491,
+        "longitude": -71.1243292,
+        "neighbourhood": "Dana Greenhouses, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "This tree is 289 years old and it fits on a table. It was started in 1737, when Boston was still a colonial port, and it has spent every one of those years in a pot, watered and pruned by somebody, without a gap. Larz Anderson, a Harvard graduate and American ambassador to Japan, bought it from the Yokohama Nursery Company around 1913 with roughly 39 other bonsai and shipped the lot home to his estate in Brookline, where it stood on his terraces for 24 years. After he and his wife Isabel died, the collection passed to the Arnold Arboretum, which eventually built a pavilion to house it. A cutting taken in 2017 is displayed beside it, the same tree at nine years old and at 289. Two things to know before you go. The 1737 date comes from Anderson's own records rather than from any independent dating, so it is one careful line of evidence repeated by everyone since, not two. And the pavilion rotates around 30 trees through its display every two or three weeks from mid April to late October, so this particular one is not guaranteed to be out on the day you arrive; the pavilion posts what is currently on view. It is ten minutes on foot from Forest Hills, and the Arboretum around it is worth the trip whatever is in the display that week.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Larz_Anderson_Bonsai_Collection (citing Larz Anderson's own records: 'the oldest of these Hinoki Cypress was started in 1737')",
+        "https://www.wbur.org/news/2026/04/23/boston-arnold-arboretum-bonsai-trees-spring (WBUR News, 2026-04-23, independent of the Arboretum, confirms the '289-year-old hinoki cypress' on display this season and quotes curator Chris Copeland calling it one of the oldest cultivated bonsai in North America, second only to three at the Brooklyn Botanic Garden)",
+        "https://jamaicaplainnews.com/2024/04/16/nearly-three-centuries-old-bonsai-cypress-lives-at-arnold-arboretum/666645 (Jamaica Plain News, 2024-04-16, local outlet independent of the Arboretum, corroborates the 1737 origin and confirms it alive and maintained by bonsai master Jun Imabayashi)"
+      ],
+      "access": "Free, public arboretum. The bonsai itself is on view only mid-April through late October at the Bonsai and Penjing Pavilion, and staff rotate roughly 30 trees through the display every two to three weeks, so this specific specimen is not guaranteed to be out on any given visit; the pavilion posts what is currently on view.",
+      "transport": "Forest Hills MBTA station (Orange Line), roughly 10 minute walk to the Centre Street Gate, then a further 5 minute walk to the Dana Greenhouses",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bos_008",
+      "name": "The Sapporo Katsuras",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "roughly 148 years (seed arrived 1878)",
+      "age_min": 147,
+      "age_max": 149,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, along Meadow Road",
+        "latitude": 42.3005,
+        "longitude": -71.1215,
+        "neighbourhood": "Meadow Road, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "These two trees began as seed in a packet posted from Sapporo. William S. Clark, president of Massachusetts Agricultural College and the man who left his Japanese students the parting line \"Boys, be ambitious\", went to Hokkaido in 1876 to help found what is now Hokkaido University. He collected katsura seed there and sent a share to his friend Charles Sprague Sargent, the Arnold Arboretum's first director. It arrived in 1878, six years after the Arboretum itself existed at all, and the two multi stemmed trees on Meadow Road are what grew from it. They are the oldest katsuras in a collection of 35 and among the oldest documented anywhere in North America. Come in October. Katsura leaves turn apricot and gold, and as they fall and dry they give off a smell most people read as burnt sugar or candy floss; you often catch it before you find the tree. Winter is worth a different look, the silvery grey bark peeling away in narrow rectangular sheets and curved seed follicles hanging on into the cold before the wind takes the seed. Sargent went to Hokkaido himself in 1892 and wrote about katsura as a defining tree of the island's wet lowland woods. One note on sourcing: both accounts here are the Arboretum's own, a plant record and an Arnoldia article rather than two unconnected institutions, though the article's author visited and describes both trees alive and in health.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the falling leaves turn apricot gold and smell of burnt sugar"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/katsura/ (accessions 882*A and 882*B, seed from Professor W. S. Clark, arrived 1878)",
+        "https://arboretum.harvard.edu/arnoldia-stories/katsura-in-winter (Arnoldia, confirms both trees living 'along Meadow Road', describes their winter bark and persistent seed follicles firsthand)"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line), roughly 15-20 minute walk via the Forest Hills Gate to Meadow Road, or the Arborway entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bos_009",
+      "name": "The Longfellow Linden",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 220 years",
+      "age_min": 200,
+      "age_max": 230,
+      "location": {
+        "address": "Longfellow House-Washington's Headquarters National Historic Site, 105 Brattle Street, Cambridge, MA",
+        "latitude": 42.3757,
+        "longitude": -71.1211,
+        "neighbourhood": "Cambridge (within the day-trip boundary of Boston, roughly 20-25 minutes via Red Line to Harvard Square then a short walk)"
+      },
+      "story": "In the summer of 1844 Henry Wadsworth Longfellow came home to find that workmen had \"lopped away the long low branches of my Linden tree, misunderstanding my directions\", and he wrote it up in his journal as a small catastrophe. The tree outlived him. It went into the ground around 1800 to 1810, planted by Andrew Craigie, who owned the Brattle Street estate before the poet came to it in 1843, and it stands on the East Lawn of a house that had served as George Washington's headquarters during the siege of Boston a generation before the linden existed. Fanny Longfellow wrote in 1843 of wanting \"a linden avenue in which my poet intends to pace in his old age\". This is the only tree of that avenue still standing. By 1846 he was describing her reading Heine underneath it. The National Park Service puts it at 82 feet, against roughly 60 for the species, with a trunk 84 inches through, and rates its condition fair to poor: the trunk cavity is filled, cables carry the branches, heavy pruning comes round every five years. Since the early 2000s the park has been growing a genetically identical cutting against the day it goes. The grounds are free and open in daylight; only the house tours are ticketed.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers and the whole East Lawn smells of it"
+      },
+      "verified_sources": [
+        "https://www.nps.gov/articles/000/long-littleleaf-linden-plant-story.htm",
+        "https://designingtheparksoclp.wordpress.com/2020/09/04/if-plants-could-speak-a-tour-of-historic-plantings-at-the-longfellow-house-washingtons-headquarters-national-historic-site/",
+        "https://emptymassave.wordpress.com/2018/06/07/famous-trees-of-cambridge/"
+      ],
+      "access": "Free; National Historic Site grounds are open to the public daily during daylight hours (house tours are separately ticketed but the East Lawn where the tree stands is publicly accessible)",
+      "transport": "MBTA Red Line to Harvard Square, then about 8-10 minutes on foot down Brattle Street",
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_010",
+      "name": "The Houghton Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 240 years",
+      "age_min": 220,
+      "age_max": 250,
+      "location": {
+        "address": "1000-1008 Massachusetts Avenue, Cambridge, MA (between Harvard Square and Central Square, on the site of the former Houghton estate, now part of MIT/University Park land)",
+        "latitude": 42.3654,
+        "longitude": -71.1047,
+        "neighbourhood": "Cambridge, Mid-Cambridge/University Park (within the day-trip boundary; on the Red Line corridor)"
+      },
+      "story": "This is Cambridge's only living Historic Landmark, and it was made one in 1985 to stop a building. A developer's plans for the site would have taken a third of the copper beech's crown and finished it off, so about thirty neighbours formed a group called the Friends of the Beech Tree and petitioned the city; the Historical Commission designated the tree itself, the legal instrument normally reserved for buildings. The Harvard Crimson, reporting from the October 1985 hearing, called it 203 years old, which puts its planting around 1782 and makes it roughly 240 now. That figure carries more weight than the biography printed around it in the same article, which has Henry O. Houghton serving as mayor decades before he founded the Riverside Press. A 2018 local survey of Cambridge trees offers a looser \"planted 150+ years ago\", a lower bound rather than a contradiction. Houghton planted three beeches on his family estate here. This is the one left. MIT bought the property in the 1970s and took down the buildings, and the tree stayed, which is how a private estate specimen ended up standing on a public sidewalk on Massachusetts Avenue between Central and Harvard. Most of Boston's notable trees sit inside curated collections. This one you walk past on the way to the bus.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "fresh leaves",
+        "label": "May, when the new leaves open translucent red before they darken to purple-black"
+      },
+      "verified_sources": [
+        "https://www.thecrimson.com/article/1985/10/22/tree-to-be-landmark-pharvard-students/",
+        "https://emptymassave.wordpress.com/2018/06/07/famous-trees-of-cambridge/",
+        "https://www.cambridgema.gov/~/media/Files/historicalcommission/pdf/Landmark_reports/lm_mass_ave_1000.pdf"
+      ],
+      "access": "Free; stands beside a public sidewalk on Massachusetts Avenue, fully visible and reachable at any time",
+      "transport": "MBTA Red Line to Central Square, then about 8 minutes on foot along Mass Ave toward Harvard Square",
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bos_011",
+      "name": "Newton's Apple Tree at MIT",
+      "species": "Apple (Malus domestica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "The President's Garden, off the Infinite Corridor, MIT campus, 77 Massachusetts Avenue, Cambridge, MA",
+        "latitude": 42.3597,
+        "longitude": -71.09257,
+        "neighbourhood": "MIT campus, Cambridge (day-trip distance from central Boston, ~2.9km)"
+      },
+      "verified_sources": [
+        "https://facts.mit.edu/surprise/newtons-apple-tree/",
+        "https://now.tufts.edu/2009/06/16/isaac-newtons-apple-tree-grows-tufts",
+        "https://www.cambridgeday.com/2022/12/03/acknowledging-survey-mit-resets-public-access-closer-to-open-campus-policy-from-before-covid/"
+      ],
+      "access": "Free, no ticket. Stands in the President's Garden off the Infinite Corridor, inside MIT's Main Group of buildings, which a December 2022 Cambridge Day news report (citing an MIT provost/EVP communication) says are open to the general public on weekdays, 6am-7pm, as part of MIT's reopened, historically-open-campus policy; this reopening is dated (Dec 2022) and campus access rules can and do change, so treat the exact hours as indicative rather than guaranteed on the day.",
+      "transport": "MIT campus, Cambridge, MA; MBTA Red Line to Kendall/MIT station, then a short walk across campus (roughly 10-15 minutes to the Infinite Corridor/President's Garden area).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This is not the tree Newton sat under. It is a living descendant of that one, the apple at Woolsthorpe Manor in Lincolnshire, and it stands in the President's Garden off MIT's Infinite Corridor, where it bears fruit like any other apple tree.\n\nMIT's own facts page records it as a gift from Ed Vetter, class of 1942, and gives no planting date. Nobody appears to have written one down. If you know when it went in, tell us.\n\nWhat is documented is the morning somebody came to take a piece of it. In 2009 the Tufts cosmologist Alexander Vilenkin asked the MIT physicist Alan Guth about the tree, MIT's president Susan Hockfield gave her permission, and a Tufts grounds manager drove over and cut three branches off it. Those are now a tree in Medford. An apple cultivar only travels by hand, one graft at a time.\n\nThe cultivar is worth a sentence. Descendants of the Woolsthorpe tree are 'Flower of Kent' wherever they turn up, a big, coarse cooking apple nobody grows for flavour any more, which is why it is named that way here; MIT's own page does not say so.\n\nMIT's Main Group buildings were reported open to the public on weekdays, 6am to 7pm, in December 2022. That was a few years ago and campus rules move, so treat the hours as a good bet rather than a promise.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when the apples ripen and drop"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ],
+  "oldest_tree_id": "bos_001"
 }

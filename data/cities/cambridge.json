@@ -1,202 +1,202 @@
 {
- "city": "Cambridge",
- "country": "United Kingdom",
- "status": "needs_curation",
- "oldest_tree_id": "cam_002",
- "intro": "Cambridge's remarkable trees live almost entirely inside college walls: a mulberry that grew back from its own roots after a 1795 storm, still fruiting from the tree Milton knew as a student, an apple tree grafted in 1954 from the specimen behind Newton's theory of gravity, and a plane grown from a seed a don carried home from the battlefield of Thermopylae. The Botanic Garden adds a redwood from the first seed shipped out of California and an oak that may be a one-off hybrid, all within a compact, walkable city.",
- "meta_description": "Cambridge's most remarkable trees: Christ's College's Milton Mulberry, Trinity's Newton apple graft, and a redwood grown from the first Californian seed.",
- "question_answer": "Cambridge's oldest tree by documented lineage is the Milton Mulberry at Christ's College, grown from the root of a tree planted in 1608 or 1609, the year after John Milton's birth, and still fruiting today despite being uprooted by a storm in 1795. It stands in the Fellows' Garden, viewable as part of a visit to Christ's College in the city centre.",
- "question_meta": "The Milton Mulberry at Christ's College, regrown from a tree planted in 1608-1609, is Cambridge's oldest tree by documented lineage, still fruiting today.",
- "question_context": "Christ's College planted a mulberry tree in 1608 or 1609, the year after the poet John Milton was born, as part of King James I's push to build an English silk industry by planting mulberries nationwide for silkworms to feed on. Milton studied at Christ's from 1625 to 1629, by which point the tree was already tall, and tradition holds he spent time beneath it, though no record proves he did. The silk scheme failed everywhere, since the species James's advisors chose feeds silkworms poorly, but the mulberry itself survived over a century after the industry died. In 1795 a storm uprooted the tree entirely. Rather than replace it, the college's gardeners let it regrow from its own root, propped on wooden posts ever since, and it still produces a real crop of mulberries each summer, harvested by the college's own gardeners and turned into jam for the kitchens. What stands in the Fellows' Garden today is not, strictly, the tree Milton studied under, but it grew from the same root, in the same spot, without a single year's gap.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Cambridge?",
-   "a": "The Milton Mulberry at Christ's College, grown from the root of a tree planted in 1608 or 1609. A 1795 storm uprooted the original, but it regrew from the same root rather than being replaced, and still fruits today."
-  },
-  {
-   "q": "Is Newton's apple tree in Cambridge real?",
-   "a": "The Trinity College tree, planted in 1954, is a genuine graft from the actual apple tree at Newton's childhood home, Woolsthorpe Manor in Lincolnshire, reputed to be the tree that inspired his theory of gravity. It is not the original tree, but it is a direct vegetative descendant of it."
-  },
-  {
-   "q": "Where did the plane tree at Jesus College come from?",
-   "a": "A seed collected in 1802 at Thermopylae, Greece, the site of the ancient battle, by Jesus College fellow Edward Daniel Clarke during his travels. It was planted in the college's Fellows' Garden and now stands over 25 metres tall."
-  },
-  {
-   "q": "Is Cambridge University Botanic Garden free to visit?",
-   "a": "No, the Botanic Garden charges admission, with free entry for University of Cambridge students, staff and card-carrying members. It is open daily except Christmas Day and Boxing Day."
-  }
- ],
- "trees": [
-  {
-   "id": "cam_001",
-   "name": "Newton's Apple Tree",
-   "species": "Apple (Malus domestica)",
-   "age_estimate": "72 years",
-   "age_min": 70,
-   "age_max": 72,
-   "location": {
-    "address": "Outside the main gate, Trinity College, Trinity Street, Cambridge CB2 1TQ",
-    "latitude": 52.207236,
-    "longitude": 0.117671,
-    "neighbourhood": "City centre"
-   },
-   "story": "This is not Newton's apple tree, and it is genetically the same tree. The one he described stood at his family home, Woolsthorpe Manor in Lincolnshire, and the falling-apple story comes from accounts he gave late in life rather than from anything in Cambridge. That original died around 1815 to 1820. Before it did, cuttings and grafts were taken and propagated onward as a genetically identical line, and in 1954 Trinity College planted one of them outside its main gate, directly below the room Newton lived in as a student.\n\nSo the tree in front of you is 72 years old and its tissue traces back, graft by graft, to the actual tree behind one of science's most famous stories. That is the whole reason to stop.\n\nIt is a 'Flower of Kent', an old English cooking variety, which means the fruit is edible and unremarkable: tart, disease-prone, nobody's choice for flavour. Newton would have known it as a kitchen apple rather than anything special.\n\nIt stands fenced for protection on Trinity Street, visible from the pavement outside the gate at any hour, and it is a five-minute walk from the older tree on this list, the Milton Mulberry at Christ's College, which was already grown when Newton arrived.",
-   "verified_sources": [
-    "https://www.botanic.cam.ac.uk/the-garden/gardens-plantings/trees/isaac-newtons-apple-tree/",
-    "https://www.atlasobscura.com/places/newtons-apple-tree-trinity-college"
-   ],
-   "access": "Free, visible from Trinity Street outside the college gate at any time",
-   "transport": "8 min walk from Cambridge railway station",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/%22Newton%27s%22_apple_tree%2C_Trinity_College_-_geograph.org.uk_-_5599349.jpg",
-    "license": "CC BY-SA 2.0",
-    "attribution": "N Chadwick, via Geograph/Wikimedia Commons",
-    "status": "approved",
-    "width": 640,
-    "height": 426
-   },
-   "curation_status": "flagged",
-   "notes": "Distinguished carefully in research from a separate, similarly-named tree: Cambridge University Botanic Garden had its own Woolsthorpe-grafted 'Newton's Apple Tree' on Brookside lawn, which was blown down by Storm Eunice in February 2022 and has not been replaced with a mature specimen (young grafted clones are still in the garden's nursery). This entry is the Trinity College specimen, a separate tree at a separate site, planted 1954, confirmed alive and visitor-accessible as recently as June 2025 per multiple visitor reports checked this run. Age calculated from the 1954 planting date to 2026. Woolsthorpe Manor itself (Newton's family home, where the original tree stood) is in Lincolnshire, well outside Cambridge, and is not this entry's subject. Photo: Wikimedia Commons file '\"Newton's\" apple tree, Trinity College - geograph.org.uk - 5599349.jpg' (N Chadwick, CC BY-SA 2.0), part of the dedicated Commons category for this specific tree, no identity ambiguity.",
-   "location_precision": "confirmed",
-   "best_time": {
-    "months": [
-     9
-    ],
-    "label": "September, when the historic 'Flower of Kent' apples ripen",
-    "kind": "fruit"
-   },
-   "how_to_recognise": "A small fenced apple tree on the pavement outside Trinity's main gate on Trinity Street, directly below Newton's old room. It is the only apple tree there.",
-   "verify_notes": "Pin corrected 2026-08-22 from 52.20689, 0.115113, which was an exact six-decimal match for Nominatim's centroid of Trinity College as a whole rather than the tree. Moved ~180 m east to the geotag of our own approved photograph of this tree (Geograph 5599349), 52.207236, 0.117671, which agrees with the CB2 1TQ postcode centroid of our own address line (52.206938, 0.117524) to within 60 m. Found by the verify pass on the most-visited tree pages; it was marked confirmed while being false precision, which is the one error this site cannot afford."
-  },
-  {
-   "id": "cam_002",
-   "name": "The Milton Mulberry",
-   "species": "Black Mulberry (Morus nigra)",
-   "age_estimate": "417 years",
-   "age_min": 231,
-   "age_max": 417,
-   "location": {
-    "address": "Fellows' Garden, Christ's College, Saint Andrew's Street, Cambridge CB2 3BU",
-    "latitude": 52.206171,
-    "longitude": 0.122749,
-    "neighbourhood": "City centre"
-   },
-   "story": "James I wanted England to have a silk industry to rival France and Italy, and in the early 1600s ordered mulberry trees planted nationwide to feed silkworms. Christ's College planted one in its Fellows' Garden in 1608 or 1609, the year after the poet John Milton was born; by the time Milton arrived as a student in 1625, the tree was already established, and college tradition holds he spent time beneath it, though no contemporary record proves it directly. The silk scheme collapsed everywhere in England, partly because James's advisors specified the wrong species for silkworms to thrive on, but the mulberry outlived the industry it was planted for by well over a century. In 1795 a storm uprooted it completely. Rather than replace it with a sapling, the college's gardeners let it regrow from its own root system, and what stands today, propped on wooden posts, low and sprawling with trunks and branches poking out at odd angles from a raised mound, has been growing continuously from that same root for well over two centuries since. It still produces a real crop of mulberries each summer, which the college's gardeners harvest and turn into jam for the kitchens.",
-   "verified_sources": [
-    "https://www.christs.cam.ac.uk/visiting-christs/mulberry",
-    "https://www.moruslondinium.org/research/cambridge-mulberries"
-   ],
-   "access": "Christ's College Fellows' Garden, limited public visiting hours (check college website)",
-   "transport": "12 min walk from Cambridge railway station",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Milton%27s_Mulberry_Tree_-_geograph.org.uk_-_8115998.jpg",
-    "license": "CC BY-SA 2.0",
-    "attribution": "Mr Ignavy, via Geograph/Wikimedia Commons",
-    "status": "approved",
-    "width": 4032,
-    "height": 3024
-   },
-   "curation_status": "flagged",
-   "notes": "Corroborated by Christ's College's own official page (which itself notes the 1608 vs 1609 discrepancy between popular retellings and the college archives, resolved here in favour of the college's own archival figure, 1609) and Morus Londinium, a dedicated mulberry-tracking research project. Age range spans both the technically-accurate 'grown from the same root since 1795' figure (231 years) and the popularly-cited 'planted 1609' figure (417 years) that the college itself uses in visitor-facing material, since the tree is honestly a continuous regrowth of the original root rather than either a new planting or literally the same trunk Milton saw. Presented in the story as a living continuation, the same honest framing precedent used for Paris's Elm of Saint-Gervais. Photo: Wikimedia Commons file 'Milton's Mulberry Tree - geograph.org.uk - 8115998.jpg' (Mr Ignavy, CC BY-SA 2.0, photographed 17 April 2025), filed in the Fellows' Garden category and tagged 'Morus nigra', a recent, clearly identified photo of this exact tree. Viewed directly 2026-07-31: shows a wider Fellows' Garden view with several bare-season trees, a church spire and a greenhouse visible; one low, spreading, gnarled tree near the centre is plausibly the propped mulberry by its habit, but no supporting post or plaque is visible to confirm it against the other trees in frame with certainty. Kept at found_needs_check rather than approved, since the filename/category is a strong identity signal but this session couldn't visually confirm which specific tree in the frame it names, per the Cadiz standard's own rule against approving from a filename or description alone.",
-   "location_precision": "approximate",
-   "best_time": {
-    "months": [
-     8,
-     9
-    ],
-    "label": "August into September, when the mulberries ripen",
-    "kind": "fruit"
-   }
-  },
-  {
-   "id": "cam_003",
-   "name": "The Oriental Plane of Jesus College",
-   "species": "Oriental Plane (Platanus orientalis)",
-   "age_estimate": "224 years",
-   "age_min": 222,
-   "age_max": 226,
-   "location": {
-    "address": "Fellows' Garden, Jesus College, Jesus Lane, Cambridge CB5 8BL",
-    "latitude": 52.209566,
-    "longitude": 0.123592,
-    "neighbourhood": "City centre"
-   },
-   "story": "Edward Daniel Clarke, a Jesus College fellow and later Cambridge's first professor of mineralogy, spent the years around 1800 travelling through Greece, Egypt and the Ottoman Empire, a journey that eventually filled six published volumes and made him one of the era's best-known explorer-scholars. In 1802, at Thermopylae, the narrow pass where three hundred Spartans and their allies held off the Persian army in 480 BC, Clarke collected seed from the plane trees growing there. He brought it home to Jesus College and had it raised into seedlings; one of them was planted in the Fellows' Garden the same year. Oriental Planes are long-lived, broad-crowned trees native across the eastern Mediterranean, and this one has had well over two centuries in an English college garden to put on size, now standing more than 25 metres tall. It is a genuinely unusual case among Cambridge's collected trees: not a symbolic gift or a scientific graft, but a seed one traveller happened to pick up at one of the most storied battle sites in Western history and carry home in his luggage.",
-   "verified_sources": [
-    "https://www.treesandshrubsonline.org/articles/platanus/platanus-orientalis/",
-    "https://capturingcambridge.org/centre/jesus-lane/oriental-plane-fellows-garden-jesus-college/"
-   ],
-   "access": "Jesus College Fellows' Garden, limited public visiting hours (check college website)",
-   "transport": "10 min walk from Cambridge railway station",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "notes": "Corroborated by Trees and Shrubs Online (International Dendrology Society's reference site, independent horticultural authority) and Capturing Cambridge (a local history archive project), both giving the same account: seed collected by Edward Daniel Clarke at Thermopylae in 1802, planted the same year in the Fellows' Garden. Height (over 25m) and the '11 seedlings raised, this one planted' detail from the same two sources. Age calculated from 1802 planting to 2026.",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "cam_004",
-   "name": "The Giant Redwood of the Botanic Garden",
-   "species": "Giant Sequoia (Sequoiadendron giganteum)",
-   "age_estimate": "171 years",
-   "age_min": 170,
-   "age_max": 173,
-   "location": {
-    "address": "Main Walk, Cambridge University Botanic Garden, Cambridge CB2 1JE",
-    "latitude": 52.1925,
-    "longitude": 0.1287,
-    "neighbourhood": "Newtown"
-   },
-   "story": "In 1852, the Cornish plant collector William Lobb reached Calaveras Grove in California and became one of the first Europeans to see Giant Redwoods growing wild, trees already thousands of years old and taller than anything in Britain. Recognising what he had found, he cut his expedition short and raced seed back to England for the Veitch nursery in Exeter, which was selling seedlings within a year, an unusually fast turnaround for a tree nobody in Europe had grown before. Cambridge University Botanic Garden was among the very first customers, planting out its own seedlings around 1855. Two of that original planting still stand on opposite sides of the garden's Main Walk near the fountain, and a third, at the junction with Henslow Walk, has grown into the tallest tree in the entire garden at just over 30 metres. Redwoods take centuries to reach the scale they are famous for in California, so at under two hundred years old this specimen is, by the standards of its own species, still young, a fast-growing adolescent rather than anything close to the giants Lobb originally found.",
-   "verified_sources": [
-    "https://www.botanic.cam.ac.uk/the-garden/gardens-plantings/trees/giant-redwood/",
-    "https://en.wikipedia.org/wiki/William_Lobb"
-   ],
-   "access": "Paid admission (modest fee, free for University of Cambridge students, staff and members), daily except Christmas Day and Boxing Day",
-   "transport": "15 min walk from Cambridge railway station",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "notes": "Cambridge University Botanic Garden's own detailed page gives planting date (~1855), heights (25.7m and 30.7m for the two Main Walk specimens), and the William Lobb/Veitch nursery sourcing story in full; Wikipedia's William Lobb page independently corroborates his 1852 Calaveras Grove trip and role introducing the species commercially to Britain. Entry describes the tallest of the garden's three original-planting redwoods (the Henslow Walk junction specimen, 30.7m) as the headline figure, consistent with how the project handles 'family of trees, one headline specimen' cases elsewhere. Age calculated from ~1855 planting to 2026.",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "cam_005",
-   "name": "The Cambridge Oak",
-   "species": "Hybrid Oak (Quercus x warburgii)",
-   "age_estimate": "152 years",
-   "age_min": 151,
-   "age_max": 153,
-   "location": {
-    "address": "Near the Terrace Garden, Cambridge University Botanic Garden, Cambridge CB2 1JE",
-    "latitude": 52.1929,
-    "longitude": 0.1282,
-    "neighbourhood": "Newtown"
-   },
-   "story": "Most oaks on this site are one of a small handful of well-known species. The Cambridge Oak is not: it is a hybrid, most likely a cross between the evergreen Quercus rugosa, native to Mexico and the southwestern United States, and Britain's own native Pedunculate Oak, a pairing that should not naturally occur an ocean apart and that appears to exist, in this precise combination, only here. It came from the Worcester nursery of Messrs Smith sometime between 1873 and 1875 and was planted in Cambridge University Botanic Garden soon after. By 1910, the tree had already earned a place in Elwes and Henry's authoritative survey The Trees of Great Britain and Ireland, which singled it out as the finest specimen of its kind in the entire country, a claim about a tree that may have been, functionally, one of a kind to begin with. It has grown considerably since, from under 12 metres tall in 1910 to nearly 17 metres with a 19.5 metre crown spread by a 2005 measurement, though a butt-decaying fungus now regularly fruits on its trunk each autumn, a visible sign of age and decline rather than imminent death. The garden has already grafted a younger replacement, planted near the Terrace Garden in 1991, as insurance for whenever the original eventually goes.",
-   "verified_sources": [
-    "https://www.botanic.cam.ac.uk/the-garden/gardens-plantings/trees/the-cambridge-oak/",
-    "https://en.wikipedia.org/wiki/Quercus_%C3%97_warburgii"
-   ],
-   "access": "Paid admission (modest fee, free for University of Cambridge students, staff and members), daily except Christmas Day and Boxing Day",
-   "transport": "15 min walk from Cambridge railway station",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "notes": "Cambridge University Botanic Garden's own page is the primary and most detailed source: hybrid parentage (Quercus rugosa x Quercus robur, both hedged as 'likely'), Worcester nursery origin (1873-75), the 1910 Elwes and Henry 'finest in the country' quote, the 1910 and 2005 measurements, the butt-decaying fungus noting current decline, and the 1991 grafted replacement. A Wikipedia page for the hybrid taxon Quercus x warburgii was checked to confirm the hybrid name and general species-pairing account independently. Exact current health status beyond 'decline visible via fungus' not found for 2026 specifically; described honestly as alive but declining rather than claimed to be in full health. Coordinates are the garden's general Terrace Garden area, not a surveyed trunk position.",
-   "location_precision": "approximate"
-  }
- ]
+  "city": "Cambridge",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "oldest_tree_id": "cam_002",
+  "intro": "Cambridge's remarkable trees live almost entirely inside college walls: a mulberry that grew back from its own roots after a 1795 storm, still fruiting from the tree Milton knew as a student, an apple tree grafted in 1954 from the specimen behind Newton's theory of gravity, and a plane grown from a seed a don carried home from the battlefield of Thermopylae. The Botanic Garden adds a redwood from the first seed shipped out of California and an oak that may be a one-off hybrid, all within a compact, walkable city.",
+  "meta_description": "Cambridge's most remarkable trees: Christ's College's Milton Mulberry, Trinity's Newton apple graft, and a redwood grown from the first Californian seed.",
+  "question_answer": "Cambridge's oldest tree by documented lineage is the Milton Mulberry at Christ's College, grown from the root of a tree planted in 1608 or 1609, the year after John Milton's birth, and still fruiting today despite being uprooted by a storm in 1795. It stands in the Fellows' Garden, viewable as part of a visit to Christ's College in the city centre.",
+  "question_meta": "The Milton Mulberry at Christ's College, regrown from a tree planted in 1608-1609, is Cambridge's oldest tree by documented lineage, still fruiting today.",
+  "question_context": "Christ's College planted a mulberry tree in 1608 or 1609, the year after the poet John Milton was born, as part of King James I's push to build an English silk industry by planting mulberries nationwide for silkworms to feed on. Milton studied at Christ's from 1625 to 1629, by which point the tree was already tall, and tradition holds he spent time beneath it, though no record proves he did. The silk scheme failed everywhere, since the species James's advisors chose feeds silkworms poorly, but the mulberry itself survived over a century after the industry died. In 1795 a storm uprooted the tree entirely. Rather than replace it, the college's gardeners let it regrow from its own root, propped on wooden posts ever since, and it still produces a real crop of mulberries each summer, harvested by the college's own gardeners and turned into jam for the kitchens. What stands in the Fellows' Garden today is not, strictly, the tree Milton studied under, but it grew from the same root, in the same spot, without a single year's gap.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Cambridge?",
+      "a": "The Milton Mulberry at Christ's College, grown from the root of a tree planted in 1608 or 1609. A 1795 storm uprooted the original, but it regrew from the same root rather than being replaced, and still fruits today."
+    },
+    {
+      "q": "Is Newton's apple tree in Cambridge real?",
+      "a": "The Trinity College tree, planted in 1954, is a genuine graft from the actual apple tree at Newton's childhood home, Woolsthorpe Manor in Lincolnshire, reputed to be the tree that inspired his theory of gravity. It is not the original tree, but it is a direct vegetative descendant of it."
+    },
+    {
+      "q": "Where did the plane tree at Jesus College come from?",
+      "a": "A seed collected in 1802 at Thermopylae, Greece, the site of the ancient battle, by Jesus College fellow Edward Daniel Clarke during his travels. It was planted in the college's Fellows' Garden and now stands over 25 metres tall."
+    },
+    {
+      "q": "Is Cambridge University Botanic Garden free to visit?",
+      "a": "No, the Botanic Garden charges admission, with free entry for University of Cambridge students, staff and card-carrying members. It is open daily except Christmas Day and Boxing Day."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cam_001",
+      "name": "Newton's Apple Tree",
+      "species": "Apple (Malus domestica)",
+      "age_estimate": "72 years",
+      "age_min": 70,
+      "age_max": 72,
+      "location": {
+        "address": "Outside the main gate, Trinity College, Trinity Street, Cambridge CB2 1TQ",
+        "latitude": 52.207236,
+        "longitude": 0.117671,
+        "neighbourhood": "City centre"
+      },
+      "story": "This is not Newton's apple tree, and it is genetically the same tree. The one he described stood at his family home, Woolsthorpe Manor in Lincolnshire, and the falling-apple story comes from accounts he gave late in life rather than from anything in Cambridge. That original died around 1815 to 1820. Before it did, cuttings and grafts were taken and propagated onward as a genetically identical line, and in 1954 Trinity College planted one of them outside its main gate, directly below the room Newton lived in as a student.\n\nSo the tree in front of you is 72 years old and its tissue traces back, graft by graft, to the actual tree behind one of science's most famous stories. That is the whole reason to stop.\n\nIt is a 'Flower of Kent', an old English cooking variety, which means the fruit is edible and unremarkable: tart, disease-prone, nobody's choice for flavour. Newton would have known it as a kitchen apple rather than anything special.\n\nIt stands fenced for protection on Trinity Street, visible from the pavement outside the gate at any hour, and it is a five-minute walk from the older tree on this list, the Milton Mulberry at Christ's College, which was already grown when Newton arrived.",
+      "verified_sources": [
+        "https://www.botanic.cam.ac.uk/the-garden/gardens-plantings/trees/isaac-newtons-apple-tree/",
+        "https://www.atlasobscura.com/places/newtons-apple-tree-trinity-college"
+      ],
+      "access": "Free, visible from Trinity Street outside the college gate at any time",
+      "transport": "8 min walk from Cambridge railway station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/%22Newton%27s%22_apple_tree%2C_Trinity_College_-_geograph.org.uk_-_5599349.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "N Chadwick, via Geograph/Wikimedia Commons",
+        "status": "approved",
+        "width": 640,
+        "height": 426
+      },
+      "curation_status": "flagged",
+      "notes": "Distinguished carefully in research from a separate, similarly-named tree: Cambridge University Botanic Garden had its own Woolsthorpe-grafted 'Newton's Apple Tree' on Brookside lawn, which was blown down by Storm Eunice in February 2022 and has not been replaced with a mature specimen (young grafted clones are still in the garden's nursery). This entry is the Trinity College specimen, a separate tree at a separate site, planted 1954, confirmed alive and visitor-accessible as recently as June 2025 per multiple visitor reports checked this run. Age calculated from the 1954 planting date to 2026. Woolsthorpe Manor itself (Newton's family home, where the original tree stood) is in Lincolnshire, well outside Cambridge, and is not this entry's subject. Photo: Wikimedia Commons file '\"Newton's\" apple tree, Trinity College - geograph.org.uk - 5599349.jpg' (N Chadwick, CC BY-SA 2.0), part of the dedicated Commons category for this specific tree, no identity ambiguity.",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9
+        ],
+        "label": "September, when the historic 'Flower of Kent' apples ripen",
+        "kind": "fruit"
+      },
+      "how_to_recognise": "A small fenced apple tree on the pavement outside Trinity's main gate on Trinity Street, directly below Newton's old room. It is the only apple tree there.",
+      "verify_notes": "Pin corrected 2026-08-22 from 52.20689, 0.115113, which was an exact six-decimal match for Nominatim's centroid of Trinity College as a whole rather than the tree. Moved ~180 m east to the geotag of our own approved photograph of this tree (Geograph 5599349), 52.207236, 0.117671, which agrees with the CB2 1TQ postcode centroid of our own address line (52.206938, 0.117524) to within 60 m. Found by the verify pass on the most-visited tree pages; it was marked confirmed while being false precision, which is the one error this site cannot afford."
+    },
+    {
+      "id": "cam_002",
+      "name": "The Milton Mulberry",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "417 years",
+      "age_min": 231,
+      "age_max": 417,
+      "location": {
+        "address": "Fellows' Garden, Christ's College, Saint Andrew's Street, Cambridge CB2 3BU",
+        "latitude": 52.206171,
+        "longitude": 0.122749,
+        "neighbourhood": "City centre"
+      },
+      "story": "James I wanted England to have a silk industry to rival France and Italy, and in the early 1600s ordered mulberry trees planted nationwide to feed silkworms. Christ's College planted one in its Fellows' Garden in 1608 or 1609, the year after the poet John Milton was born; by the time Milton arrived as a student in 1625, the tree was already established, and college tradition holds he spent time beneath it, though no contemporary record proves it directly. The silk scheme collapsed everywhere in England, partly because James's advisors specified the wrong species for silkworms to thrive on, but the mulberry outlived the industry it was planted for by well over a century. In 1795 a storm uprooted it completely. Rather than replace it with a sapling, the college's gardeners let it regrow from its own root system, and what stands today, propped on wooden posts, low and sprawling with trunks and branches poking out at odd angles from a raised mound, has been growing continuously from that same root for well over two centuries since. It still produces a real crop of mulberries each summer, which the college's gardeners harvest and turn into jam for the kitchens.",
+      "verified_sources": [
+        "https://www.christs.cam.ac.uk/visiting-christs/mulberry",
+        "https://www.moruslondinium.org/research/cambridge-mulberries"
+      ],
+      "access": "Christ's College Fellows' Garden, limited public visiting hours (check college website)",
+      "transport": "12 min walk from Cambridge railway station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Milton%27s_Mulberry_Tree_-_geograph.org.uk_-_8115998.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Mr Ignavy, via Geograph/Wikimedia Commons",
+        "status": "approved",
+        "width": 4032,
+        "height": 3024
+      },
+      "curation_status": "flagged",
+      "notes": "Corroborated by Christ's College's own official page (which itself notes the 1608 vs 1609 discrepancy between popular retellings and the college archives, resolved here in favour of the college's own archival figure, 1609) and Morus Londinium, a dedicated mulberry-tracking research project. Age range spans both the technically-accurate 'grown from the same root since 1795' figure (231 years) and the popularly-cited 'planted 1609' figure (417 years) that the college itself uses in visitor-facing material, since the tree is honestly a continuous regrowth of the original root rather than either a new planting or literally the same trunk Milton saw. Presented in the story as a living continuation, the same honest framing precedent used for Paris's Elm of Saint-Gervais. Photo: Wikimedia Commons file 'Milton's Mulberry Tree - geograph.org.uk - 8115998.jpg' (Mr Ignavy, CC BY-SA 2.0, photographed 17 April 2025), filed in the Fellows' Garden category and tagged 'Morus nigra', a recent, clearly identified photo of this exact tree. Viewed directly 2026-07-31: shows a wider Fellows' Garden view with several bare-season trees, a church spire and a greenhouse visible; one low, spreading, gnarled tree near the centre is plausibly the propped mulberry by its habit, but no supporting post or plaque is visible to confirm it against the other trees in frame with certainty. Kept at found_needs_check rather than approved, since the filename/category is a strong identity signal but this session couldn't visually confirm which specific tree in the frame it names, per the Cadiz standard's own rule against approving from a filename or description alone.",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "label": "August into September, when the mulberries ripen",
+        "kind": "fruit"
+      }
+    },
+    {
+      "id": "cam_003",
+      "name": "The Oriental Plane of Jesus College",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "224 years",
+      "age_min": 222,
+      "age_max": 226,
+      "location": {
+        "address": "Fellows' Garden, Jesus College, Jesus Lane, Cambridge CB5 8BL",
+        "latitude": 52.209566,
+        "longitude": 0.123592,
+        "neighbourhood": "City centre"
+      },
+      "story": "Edward Daniel Clarke, a Jesus College fellow and later Cambridge's first professor of mineralogy, spent the years around 1800 travelling through Greece, Egypt and the Ottoman Empire, a journey that eventually filled six published volumes and made him one of the era's best-known explorer-scholars. In 1802, at Thermopylae, the narrow pass where three hundred Spartans and their allies held off the Persian army in 480 BC, Clarke collected seed from the plane trees growing there. He brought it home to Jesus College and had it raised into seedlings; one of them was planted in the Fellows' Garden the same year. Oriental Planes are long-lived, broad-crowned trees native across the eastern Mediterranean, and this one has had well over two centuries in an English college garden to put on size, now standing more than 25 metres tall. It is a genuinely unusual case among Cambridge's collected trees: not a symbolic gift or a scientific graft, but a seed one traveller happened to pick up at one of the most storied battle sites in Western history and carry home in his luggage.",
+      "verified_sources": [
+        "https://www.treesandshrubsonline.org/articles/platanus/platanus-orientalis/",
+        "https://capturingcambridge.org/centre/jesus-lane/oriental-plane-fellows-garden-jesus-college/"
+      ],
+      "access": "Jesus College Fellows' Garden, limited public visiting hours (check college website)",
+      "transport": "10 min walk from Cambridge railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Corroborated by Trees and Shrubs Online (International Dendrology Society's reference site, independent horticultural authority) and Capturing Cambridge (a local history archive project), both giving the same account: seed collected by Edward Daniel Clarke at Thermopylae in 1802, planted the same year in the Fellows' Garden. Height (over 25m) and the '11 seedlings raised, this one planted' detail from the same two sources. Age calculated from 1802 planting to 2026.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cam_004",
+      "name": "The Giant Redwood of the Botanic Garden",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "171 years",
+      "age_min": 170,
+      "age_max": 173,
+      "location": {
+        "address": "Main Walk, Cambridge University Botanic Garden, Cambridge CB2 1JE",
+        "latitude": 52.1925,
+        "longitude": 0.1287,
+        "neighbourhood": "Newtown"
+      },
+      "story": "In 1852, the Cornish plant collector William Lobb reached Calaveras Grove in California and became one of the first Europeans to see Giant Redwoods growing wild, trees already thousands of years old and taller than anything in Britain. Recognising what he had found, he cut his expedition short and raced seed back to England for the Veitch nursery in Exeter, which was selling seedlings within a year, an unusually fast turnaround for a tree nobody in Europe had grown before. Cambridge University Botanic Garden was among the very first customers, planting out its own seedlings around 1855. Two of that original planting still stand on opposite sides of the garden's Main Walk near the fountain, and a third, at the junction with Henslow Walk, has grown into the tallest tree in the entire garden at just over 30 metres. Redwoods take centuries to reach the scale they are famous for in California, so at under two hundred years old this specimen is, by the standards of its own species, still young, a fast-growing adolescent rather than anything close to the giants Lobb originally found.",
+      "verified_sources": [
+        "https://www.botanic.cam.ac.uk/the-garden/gardens-plantings/trees/giant-redwood/",
+        "https://en.wikipedia.org/wiki/William_Lobb"
+      ],
+      "access": "Paid admission (modest fee, free for University of Cambridge students, staff and members), daily except Christmas Day and Boxing Day",
+      "transport": "15 min walk from Cambridge railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Cambridge University Botanic Garden's own detailed page gives planting date (~1855), heights (25.7m and 30.7m for the two Main Walk specimens), and the William Lobb/Veitch nursery sourcing story in full; Wikipedia's William Lobb page independently corroborates his 1852 Calaveras Grove trip and role introducing the species commercially to Britain. Entry describes the tallest of the garden's three original-planting redwoods (the Henslow Walk junction specimen, 30.7m) as the headline figure, consistent with how the project handles 'family of trees, one headline specimen' cases elsewhere. Age calculated from ~1855 planting to 2026.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cam_005",
+      "name": "The Cambridge Oak",
+      "species": "Hybrid Oak (Quercus x warburgii)",
+      "age_estimate": "152 years",
+      "age_min": 151,
+      "age_max": 153,
+      "location": {
+        "address": "Near the Terrace Garden, Cambridge University Botanic Garden, Cambridge CB2 1JE",
+        "latitude": 52.1929,
+        "longitude": 0.1282,
+        "neighbourhood": "Newtown"
+      },
+      "story": "Most oaks on this site are one of a small handful of well-known species. The Cambridge Oak is not: it is a hybrid, most likely a cross between the evergreen Quercus rugosa, native to Mexico and the southwestern United States, and Britain's own native Pedunculate Oak, a pairing that should not naturally occur an ocean apart and that appears to exist, in this precise combination, only here. It came from the Worcester nursery of Messrs Smith sometime between 1873 and 1875 and was planted in Cambridge University Botanic Garden soon after. By 1910, the tree had already earned a place in Elwes and Henry's authoritative survey The Trees of Great Britain and Ireland, which singled it out as the finest specimen of its kind in the entire country, a claim about a tree that may have been, functionally, one of a kind to begin with. It has grown considerably since, from under 12 metres tall in 1910 to nearly 17 metres with a 19.5 metre crown spread by a 2005 measurement, though a butt-decaying fungus now regularly fruits on its trunk each autumn, a visible sign of age and decline rather than imminent death. The garden has already grafted a younger replacement, planted near the Terrace Garden in 1991, as insurance for whenever the original eventually goes.",
+      "verified_sources": [
+        "https://www.botanic.cam.ac.uk/the-garden/gardens-plantings/trees/the-cambridge-oak/",
+        "https://en.wikipedia.org/wiki/Quercus_%C3%97_warburgii"
+      ],
+      "access": "Paid admission (modest fee, free for University of Cambridge students, staff and members), daily except Christmas Day and Boxing Day",
+      "transport": "15 min walk from Cambridge railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Cambridge University Botanic Garden's own page is the primary and most detailed source: hybrid parentage (Quercus rugosa x Quercus robur, both hedged as 'likely'), Worcester nursery origin (1873-75), the 1910 Elwes and Henry 'finest in the country' quote, the 1910 and 2005 measurements, the butt-decaying fungus noting current decline, and the 1991 grafted replacement. A Wikipedia page for the hybrid taxon Quercus x warburgii was checked to confirm the hybrid name and general species-pairing account independently. Exact current health status beyond 'decline visible via fungus' not found for 2026 specifically; described honestly as alive but declining rather than claimed to be in full health. Coordinates are the garden's general Terrace Garden area, not a surveyed trunk position.",
+      "location_precision": "approximate"
+    }
+  ]
 }

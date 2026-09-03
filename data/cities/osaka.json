@@ -1,181 +1,181 @@
 {
- "city": "Osaka",
- "country": "Japan",
- "status": "needs_curation",
- "intro": "Osaka's oldest trees keep unusually good company. Three of the four that clear this list are camphors rooted in shrine courtyards, ground that has hosted continuous worship, not redevelopment, for over a thousand years. One survived a direct lightning strike and grew back around its own wound. Another shares a name with Bunraku, the puppet theatre that first opened in its shade. None of them are Osaka's famous sights. All of them are older than anything else standing near them.",
- "meta_description": "Osaka's oldest trees are shrine camphors, led by the 1,000-year-old Sennen-kusu at Sumiyoshi Taisha and a camphor that regrew after a lightning strike.",
- "question_answer": "The oldest tree in Osaka is the Sennen-kusu, a camphor tree at Nankunsha shrine within Sumiyoshi Taisha, estimated at around 1,000 years old. Its trunk measures nearly ten metres around, and Osaka City lists it as a protected tree.",
- "question_meta": "Sumiyoshi Taisha's 1,000-year-old Sennen-kusu is Osaka's oldest tree. Its exact location, shrine history, and four more remarkable trees nearby.",
- "question_context": "Osaka's claim to its oldest tree has real competition. Achihayao Shrine's camphor in Tsurumi Ward carries the same traditional age, close to 1,000 years, and its Osaka Prefecture natural monument designation, dating to 1970, is older and more formally documented than anything covering the Sennen-kusu. But that tree lost most of its main trunk to a lightning strike sometime in the Taisho era, and what stands today grew back from the surviving third with a tree doctor's help, a genuine recovery story but a complicated one to call simply the oldest. The Sennen-kusu at Sumiyoshi Taisha's Nankunsha shrine carries no such asterisk: a single, undamaged trunk nearly ten metres around, an Osaka City preserved-tree designation, and a consistent age estimate across independent sources. It also anchors hattatsu-mairi, a four-year pilgrimage cycle in which worshippers collect 48 small cat charms at its base, which makes it one of the most visited individual trees in the city even though its age is rarely the reason people show up. Getting there: Sumiyoshitaisha Station on the Nankai Main Line, three minutes on foot, or the Sumiyoshi-Torii-mae tram stop right at the gate.",
- "oldest_tree_id": "osa_001",
- "faq": [
-  {
-   "q": "What is the oldest tree in Osaka?",
-   "a": "The Sennen-kusu, a camphor tree at Nankunsha shrine within Sumiyoshi Taisha, estimated at around 1,000 years old and designated an Osaka City preserved tree. A similarly aged camphor at Achihayao Shrine is sometimes cited as a rival, but it lost most of its trunk to a lightning strike and grew back from what survived."
-  },
-  {
-   "q": "Why are so many of Osaka's oldest trees camphors growing at shrines?",
-   "a": "Camphor is a long-lived evergreen commonly planted as a shrine's sacred tree, and shrine grounds are some of the only land in a dense, frequently rebuilt city that has never been cleared for redevelopment, which is exactly the kind of undisturbed ground an old tree needs."
-  },
-  {
-   "q": "Are Osaka's ancient trees free to visit?",
-   "a": "Yes. All of them stand on grounds that are free and open daily, from the busy central precinct of Namba Shrine to the quieter suburban courtyard of Achihayao Shrine."
-  },
-  {
-   "q": "Are there older trees near Osaka that just did not make this list?",
-   "a": "Yes, several. Nationally protected giant camphors and a 1,000-year-old zelkova stand in nearby Sakai, Kadoma, Nose and Neyagawa, all separate municipalities within Osaka Prefecture rather than Osaka City itself, and worth their own future pages."
-  }
- ],
- "trees": [
-  {
-   "id": "osa_001",
-   "name": "The Thousand-Year Camphor of Nankunsha",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "age_estimate": "1,000 years",
-   "age_min": 950,
-   "age_max": 1050,
-   "location": {
-    "address": "Nankunsha, Sumiyoshi Taisha, 2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka 558-0045",
-    "latitude": 34.613379,
-    "longitude": 135.493023,
-    "neighbourhood": "Sumiyoshi, Sumiyoshi-ku"
-   },
-   "story": "Once a month, on the shrine calendar's first day of the earthly-branch cycle, pilgrims climb the steps to Nankunsha and buy a small ceramic cat. Miss a month and a four-year cycle called hattatsu-mairi starts over: 48 cats, one paw raised for household safety, the other for business luck, collected at the foot of this camphor tree until a full set earns a trade-up to a bigger cat. The custom has made Nankunsha, a small shrine tucked behind Sumiyoshi Taisha's main hall, one of the most visited corners of Osaka's oldest and most revered shrine complex, even though the tree itself predates the ritual by centuries. The Sennen-kusu, literally the Thousand-Year Camphor, has a trunk measuring nearly ten metres around and stands roughly as old as its name claims, a start somewhere around the late Heian period. Osaka City has designated it a preserved tree. Sumiyoshi Taisha's own founding legend reaches back roughly 1,800 years, to Empress Jingu's return from a campaign on the Korean peninsula, and this camphor is one of the oldest living things still standing on ground that has hosted continuous worship since. Visitors rarely come for the tree alone. They come for the cats, then notice, almost as an afterthought, what has been growing over their heads the whole time.",
-   "verified_sources": [
-    "https://www.woodtec.co.jp/lab/wood/praise-of-wood/049/",
-    "https://4travel.jp/travelogue/10260013",
-    "http://sumiyoshitaisha.net/kankou_jp/nankunsha.html"
-   ],
-   "access": "Free, shrine grounds open daily",
-   "transport": "3 min walk from Sumiyoshitaisha Station (Nankai Main Line); Sumiyoshi-Torii-mae tram stop (Hankai Line) is right at the gate",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "osa_002",
-   "name": "The Married Camphor of Nankunsha",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "age_estimate": "800 years",
-   "age_min": 750,
-   "age_max": 850,
-   "location": {
-    "address": "Nankunsha, Sumiyoshi Taisha, 2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka 558-0045",
-    "latitude": 34.613379,
-    "longitude": 135.493023,
-    "neighbourhood": "Sumiyoshi, Sumiyoshi-ku"
-   },
-   "story": "At ground level this camphor splits cleanly into two trunks rising from one root, and that accident of growth turned it into a wedding-day landmark. The Meoto-kusu, literally the Married Couple Camphor, stands at the gate of Nankunsha inside Sumiyoshi Taisha, roughly 800 years old and nearly eight metres around at its widest trunk. Couples visiting the shrine for a ceremony, or hoping to arrange one, stop here before anywhere else, and the tree shows up on more Sumiyoshi Taisha souvenirs than any of the shrine's own buildings. It shares its small precinct with an older, single-trunked neighbour, the Sennen-kusu, and the two are usually mentioned in the same breath, though sources agree they are separate trees with distinct measurements and roughly two centuries between their ages. Like its neighbour, the Meoto-kusu carries an Osaka City preserved-tree designation. Both grow on ground that has hosted Shinto worship since Sumiyoshi Taisha's legendary third-century founding, the kind of continuously used shrine land that let a tree like this get old in the first place, never cleared for redevelopment the way so much of the rest of the city has been. What the couples actually want is simpler than any of that history: a photograph beside the split trunk, and whatever luck a shrine can offer on the way to the altar.",
-   "verified_sources": [
-    "https://www.woodtec.co.jp/lab/wood/praise-of-wood/049/",
-    "https://4travel.jp/travelogue/10260013"
-   ],
-   "access": "Free, shrine grounds open daily",
-   "transport": "3 min walk from Sumiyoshitaisha Station (Nankai Main Line); Sumiyoshi-Torii-mae tram stop (Hankai Line) is right at the gate",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "osa_003",
-   "name": "The Achihayao Shrine Camphor",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "age_estimate": "1,000 years",
-   "age_min": 900,
-   "age_max": 1050,
-   "location": {
-    "address": "Achihayao Shrine, 3-31-18 Hanaten-higashi, Tsurumi-ku, Osaka",
-    "latitude": 34.68861,
-    "longitude": 135.56472,
-    "neighbourhood": "Hanaten-higashi, Tsurumi-ku"
-   },
-   "story": "Lightning found this camphor sometime during the Taisho era, between 1912 and 1926, and burned out most of its main trunk. What survived was roughly a third of the original tree, its supporting limbs still living beneath a long dead spar from the original trunk, enough that a tree doctor could eventually nurse it back into something recognisably whole. What stands today at Achihayao Shrine is that survivor: about six metres around, sixteen metres tall, and by tradition close to 1,000 years old. Osaka Prefecture designated it a natural monument in 1970 under the plain name the Camphor of Achihayao Shrine, one of the few individually protected trees left in Tsurumi Ward. The shrine itself appears in the Engishiki, the 10th-century register of officially recognised shrines, which places worship on this exact spot at least a thousand years back, roughly matching the tree's own traditional age. Unlike Sumiyoshi Taisha's better-known camphors across the city, Achihayao draws a quieter crowd: local families and anyone who has read that this is one of the only trees in Osaka that visibly carries its own near-death on its trunk. Most ancient trees hide their age. This one wears it as a scar, three minutes from a suburban train station most visitors to Osaka never have a reason to use.",
-   "verified_sources": [
-    "https://www.city.osaka.lg.jp/tsurumi/page/0000001385.html",
-    "https://ja.wikipedia.org/wiki/%E9%98%BF%E9%81%85%E9%80%9F%E9%9B%84%E7%A5%9E%E7%A4%BE"
-   ],
-   "access": "Free, shrine grounds open daily",
-   "transport": "3 min walk from Hanaten Station (JR Gakken Toshi Line / Osaka Metro Imazatosuji Line)",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "osa_004",
-   "name": "The Namba Shrine Camphor",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "age_estimate": "400 years",
-   "age_min": 380,
-   "age_max": 420,
-   "location": {
-    "address": "Namba Shrine, 4-1-3 Bakuromachi, Chuo-ku, Osaka",
-    "latitude": 34.6789694,
-    "longitude": 135.4995611,
-    "neighbourhood": "Bakuromachi, Chuo-ku"
-   },
-   "story": "In 1811 a theatre manager named Uemura Bunrakuken opened a puppet theatre in Namba Shrine's courtyard, and the venue's nickname eventually gave its name to an entire art form: Bunraku, Japan's classical puppet theatre, is named for the man who staged it here, under this camphor's shade. The tree itself predates that history by two centuries or more, close to 400 years old today, and it holds a distinction unrelated to puppetry: it was the first tree ever named to Osaka City's official preserved-tree register. Shrine buildings around it did not fare as well. Namba Shrine burned completely in the March 1945 Osaka air raids and was not rebuilt until 1974. The four-hundred-year age given to this camphor today only works if it is the same tree that came through that fire still standing, on a plot that briefly had nothing else left. It grows a five-minute walk from Shinsaibashi, one of central Osaka's busiest shopping streets, largely unnoticed by a crowd with somewhere else to be. The shrine's own history reaches back further still, to a legendary founding under the fifth-century Emperor Hanzei, though the current site dates only to a 1597 relocation. Whatever the exact count, this camphor has outlasted every structure that has ever stood beside it.",
-   "verified_sources": [
-    "https://ja.wikipedia.org/wiki/%E9%9B%A3%E6%B3%A2%E7%A5%9E%E7%A4%BE",
-    "https://note.com/little_ree/n/n6de02d14d328"
-   ],
-   "access": "Free, shrine grounds open daily",
-   "transport": "5 min walk from Shinsaibashi Station (Osaka Metro Midosuji Line)",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Nanba-jinjya_Kusunoki.jpg",
-    "license": "CC BY-SA 3.0",
-    "attribution": "Yanajin33, Wikimedia Commons",
-    "status": "approved",
-    "width": 3096,
-    "height": 4128
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "osa_005",
-   "name": "Noma no Okeyaki",
-   "species": "Saw-leaf Zelkova (Zelkova serrata)",
-   "age_estimate": "over 1,000 years",
-   "age_min": null,
-   "age_max": null,
-   "girth_cm": 1301,
-   "height_m": 27.37,
-   "location": {
-    "address": "Noma-Inaji 251-1, Nose-cho, Toyono-gun, Osaka Prefecture, beside the Noma-Inaji intersection on National Route 477",
-    "latitude": 34.946052,
-    "longitude": 135.45068,
-    "neighbourhood": "Nose-cho, Toyono-gun, Osaka Prefecture (a rural mountain town roughly 28km from central Osaka, not Osaka City itself)"
-   },
-   "verified_sources": [
-    "https://ja.wikipedia.org/wiki/%E9%87%8E%E9%96%93%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD",
-    "http://www.town.nose.osaka.jp/soshiki/syougaigakusyuuka/shogaikyoiku/shisetsu/912.html"
-   ],
-   "access": "Free, no gate. Stands right beside National Route 477 at the Noma-Inaji intersection; the town's free Keyaki Museum stands just east of it (open 10:00-17:00 Mar-Oct, 10:00-16:00 Nov-Feb, closed Tuesdays and Wednesdays). Public transport is now limited: the bus that once served it was replaced in FY2024 with a ride-share taxi restricted to town residents, commuters and students, so visitors without a car face a walk of 5km or more from the nearest station.",
-   "transport": "Nosedentetsu Myoken-guchi Station is the nearest station but is over 5km away with no general-public bus connection since 2024; reaching the tree in practice means a car or taxi",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "story": "The shrine this tree served was closed in 1912. The tree is still here, and the descendants of its old parish are still looking after it. Noma no Okeyaki is the largest zelkova in Osaka Prefecture and is said to be the largest in western Japan: 27.37 metres tall with a trunk 13.01 metres round on the town's current figures, splitting into seven main limbs and throwing a crown almost forty metres across. An interpretive sign the board of education put up in 1998 says thirty metres and fourteen, so read the numbers as a range rather than a verdict.\n\nIts age is given as over a thousand years, with no measured basis behind that. It was made a National Natural Monument in January 1948, after a survey by the botanist Honda Masaji, and it had stood as the sacred tree of Arinashi-gu, a shrine founded by tradition in 1220. Farmers here used to read the strength of its spring budding as a forecast of the coming harvest.\n\nEvery early summer brown hawk-owls nest in the canopy and the photographers turn up. A heavy mistletoe infestation nearly finished the tree off before tree doctors began stripping it out in 1994, after which it recovered.\n\nOne warning. This is Nose Town, twenty-eight kilometres out into the mountains from central Osaka, and in 2024 the bus that served it became a ride-share taxi for residents only. Without a car it is a walk of five kilometres or more from the nearest station.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  }
- ]
+  "city": "Osaka",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Osaka's oldest trees keep unusually good company. Three of the four that clear this list are camphors rooted in shrine courtyards, ground that has hosted continuous worship, not redevelopment, for over a thousand years. One survived a direct lightning strike and grew back around its own wound. Another shares a name with Bunraku, the puppet theatre that first opened in its shade. None of them are Osaka's famous sights. All of them are older than anything else standing near them.",
+  "meta_description": "Osaka's oldest trees are shrine camphors, led by the 1,000-year-old Sennen-kusu at Sumiyoshi Taisha and a camphor that regrew after a lightning strike.",
+  "question_answer": "The oldest tree in Osaka is the Sennen-kusu, a camphor tree at Nankunsha shrine within Sumiyoshi Taisha, estimated at around 1,000 years old. Its trunk measures nearly ten metres around, and Osaka City lists it as a protected tree.",
+  "question_meta": "Sumiyoshi Taisha's 1,000-year-old Sennen-kusu is Osaka's oldest tree. Its exact location, shrine history, and four more remarkable trees nearby.",
+  "question_context": "Osaka's claim to its oldest tree has real competition. Achihayao Shrine's camphor in Tsurumi Ward carries the same traditional age, close to 1,000 years, and its Osaka Prefecture natural monument designation, dating to 1970, is older and more formally documented than anything covering the Sennen-kusu. But that tree lost most of its main trunk to a lightning strike sometime in the Taisho era, and what stands today grew back from the surviving third with a tree doctor's help, a genuine recovery story but a complicated one to call simply the oldest. The Sennen-kusu at Sumiyoshi Taisha's Nankunsha shrine carries no such asterisk: a single, undamaged trunk nearly ten metres around, an Osaka City preserved-tree designation, and a consistent age estimate across independent sources. It also anchors hattatsu-mairi, a four-year pilgrimage cycle in which worshippers collect 48 small cat charms at its base, which makes it one of the most visited individual trees in the city even though its age is rarely the reason people show up. Getting there: Sumiyoshitaisha Station on the Nankai Main Line, three minutes on foot, or the Sumiyoshi-Torii-mae tram stop right at the gate.",
+  "oldest_tree_id": "osa_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Osaka?",
+      "a": "The Sennen-kusu, a camphor tree at Nankunsha shrine within Sumiyoshi Taisha, estimated at around 1,000 years old and designated an Osaka City preserved tree. A similarly aged camphor at Achihayao Shrine is sometimes cited as a rival, but it lost most of its trunk to a lightning strike and grew back from what survived."
+    },
+    {
+      "q": "Why are so many of Osaka's oldest trees camphors growing at shrines?",
+      "a": "Camphor is a long-lived evergreen commonly planted as a shrine's sacred tree, and shrine grounds are some of the only land in a dense, frequently rebuilt city that has never been cleared for redevelopment, which is exactly the kind of undisturbed ground an old tree needs."
+    },
+    {
+      "q": "Are Osaka's ancient trees free to visit?",
+      "a": "Yes. All of them stand on grounds that are free and open daily, from the busy central precinct of Namba Shrine to the quieter suburban courtyard of Achihayao Shrine."
+    },
+    {
+      "q": "Are there older trees near Osaka that just did not make this list?",
+      "a": "Yes, several. Nationally protected giant camphors and a 1,000-year-old zelkova stand in nearby Sakai, Kadoma, Nose and Neyagawa, all separate municipalities within Osaka Prefecture rather than Osaka City itself, and worth their own future pages."
+    }
+  ],
+  "trees": [
+    {
+      "id": "osa_001",
+      "name": "The Thousand-Year Camphor of Nankunsha",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "1,000 years",
+      "age_min": 950,
+      "age_max": 1050,
+      "location": {
+        "address": "Nankunsha, Sumiyoshi Taisha, 2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka 558-0045",
+        "latitude": 34.613379,
+        "longitude": 135.493023,
+        "neighbourhood": "Sumiyoshi, Sumiyoshi-ku"
+      },
+      "story": "Once a month, on the shrine calendar's first day of the earthly-branch cycle, pilgrims climb the steps to Nankunsha and buy a small ceramic cat. Miss a month and a four-year cycle called hattatsu-mairi starts over: 48 cats, one paw raised for household safety, the other for business luck, collected at the foot of this camphor tree until a full set earns a trade-up to a bigger cat. The custom has made Nankunsha, a small shrine tucked behind Sumiyoshi Taisha's main hall, one of the most visited corners of Osaka's oldest and most revered shrine complex, even though the tree itself predates the ritual by centuries. The Sennen-kusu, literally the Thousand-Year Camphor, has a trunk measuring nearly ten metres around and stands roughly as old as its name claims, a start somewhere around the late Heian period. Osaka City has designated it a preserved tree. Sumiyoshi Taisha's own founding legend reaches back roughly 1,800 years, to Empress Jingu's return from a campaign on the Korean peninsula, and this camphor is one of the oldest living things still standing on ground that has hosted continuous worship since. Visitors rarely come for the tree alone. They come for the cats, then notice, almost as an afterthought, what has been growing over their heads the whole time.",
+      "verified_sources": [
+        "https://www.woodtec.co.jp/lab/wood/praise-of-wood/049/",
+        "https://4travel.jp/travelogue/10260013",
+        "http://sumiyoshitaisha.net/kankou_jp/nankunsha.html"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "3 min walk from Sumiyoshitaisha Station (Nankai Main Line); Sumiyoshi-Torii-mae tram stop (Hankai Line) is right at the gate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "osa_002",
+      "name": "The Married Camphor of Nankunsha",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "800 years",
+      "age_min": 750,
+      "age_max": 850,
+      "location": {
+        "address": "Nankunsha, Sumiyoshi Taisha, 2-9-89 Sumiyoshi, Sumiyoshi-ku, Osaka 558-0045",
+        "latitude": 34.613379,
+        "longitude": 135.493023,
+        "neighbourhood": "Sumiyoshi, Sumiyoshi-ku"
+      },
+      "story": "At ground level this camphor splits cleanly into two trunks rising from one root, and that accident of growth turned it into a wedding-day landmark. The Meoto-kusu, literally the Married Couple Camphor, stands at the gate of Nankunsha inside Sumiyoshi Taisha, roughly 800 years old and nearly eight metres around at its widest trunk. Couples visiting the shrine for a ceremony, or hoping to arrange one, stop here before anywhere else, and the tree shows up on more Sumiyoshi Taisha souvenirs than any of the shrine's own buildings. It shares its small precinct with an older, single-trunked neighbour, the Sennen-kusu, and the two are usually mentioned in the same breath, though sources agree they are separate trees with distinct measurements and roughly two centuries between their ages. Like its neighbour, the Meoto-kusu carries an Osaka City preserved-tree designation. Both grow on ground that has hosted Shinto worship since Sumiyoshi Taisha's legendary third-century founding, the kind of continuously used shrine land that let a tree like this get old in the first place, never cleared for redevelopment the way so much of the rest of the city has been. What the couples actually want is simpler than any of that history: a photograph beside the split trunk, and whatever luck a shrine can offer on the way to the altar.",
+      "verified_sources": [
+        "https://www.woodtec.co.jp/lab/wood/praise-of-wood/049/",
+        "https://4travel.jp/travelogue/10260013"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "3 min walk from Sumiyoshitaisha Station (Nankai Main Line); Sumiyoshi-Torii-mae tram stop (Hankai Line) is right at the gate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "osa_003",
+      "name": "The Achihayao Shrine Camphor",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "1,000 years",
+      "age_min": 900,
+      "age_max": 1050,
+      "location": {
+        "address": "Achihayao Shrine, 3-31-18 Hanaten-higashi, Tsurumi-ku, Osaka",
+        "latitude": 34.68861,
+        "longitude": 135.56472,
+        "neighbourhood": "Hanaten-higashi, Tsurumi-ku"
+      },
+      "story": "Lightning found this camphor sometime during the Taisho era, between 1912 and 1926, and burned out most of its main trunk. What survived was roughly a third of the original tree, its supporting limbs still living beneath a long dead spar from the original trunk, enough that a tree doctor could eventually nurse it back into something recognisably whole. What stands today at Achihayao Shrine is that survivor: about six metres around, sixteen metres tall, and by tradition close to 1,000 years old. Osaka Prefecture designated it a natural monument in 1970 under the plain name the Camphor of Achihayao Shrine, one of the few individually protected trees left in Tsurumi Ward. The shrine itself appears in the Engishiki, the 10th-century register of officially recognised shrines, which places worship on this exact spot at least a thousand years back, roughly matching the tree's own traditional age. Unlike Sumiyoshi Taisha's better-known camphors across the city, Achihayao draws a quieter crowd: local families and anyone who has read that this is one of the only trees in Osaka that visibly carries its own near-death on its trunk. Most ancient trees hide their age. This one wears it as a scar, three minutes from a suburban train station most visitors to Osaka never have a reason to use.",
+      "verified_sources": [
+        "https://www.city.osaka.lg.jp/tsurumi/page/0000001385.html",
+        "https://ja.wikipedia.org/wiki/%E9%98%BF%E9%81%85%E9%80%9F%E9%9B%84%E7%A5%9E%E7%A4%BE"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "3 min walk from Hanaten Station (JR Gakken Toshi Line / Osaka Metro Imazatosuji Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "osa_004",
+      "name": "The Namba Shrine Camphor",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "400 years",
+      "age_min": 380,
+      "age_max": 420,
+      "location": {
+        "address": "Namba Shrine, 4-1-3 Bakuromachi, Chuo-ku, Osaka",
+        "latitude": 34.6789694,
+        "longitude": 135.4995611,
+        "neighbourhood": "Bakuromachi, Chuo-ku"
+      },
+      "story": "In 1811 a theatre manager named Uemura Bunrakuken opened a puppet theatre in Namba Shrine's courtyard, and the venue's nickname eventually gave its name to an entire art form: Bunraku, Japan's classical puppet theatre, is named for the man who staged it here, under this camphor's shade. The tree itself predates that history by two centuries or more, close to 400 years old today, and it holds a distinction unrelated to puppetry: it was the first tree ever named to Osaka City's official preserved-tree register. Shrine buildings around it did not fare as well. Namba Shrine burned completely in the March 1945 Osaka air raids and was not rebuilt until 1974. The four-hundred-year age given to this camphor today only works if it is the same tree that came through that fire still standing, on a plot that briefly had nothing else left. It grows a five-minute walk from Shinsaibashi, one of central Osaka's busiest shopping streets, largely unnoticed by a crowd with somewhere else to be. The shrine's own history reaches back further still, to a legendary founding under the fifth-century Emperor Hanzei, though the current site dates only to a 1597 relocation. Whatever the exact count, this camphor has outlasted every structure that has ever stood beside it.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E9%9B%A3%E6%B3%A2%E7%A5%9E%E7%A4%BE",
+        "https://note.com/little_ree/n/n6de02d14d328"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "5 min walk from Shinsaibashi Station (Osaka Metro Midosuji Line)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Nanba-jinjya_Kusunoki.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Yanajin33, Wikimedia Commons",
+        "status": "approved",
+        "width": 3096,
+        "height": 4128
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "osa_005",
+      "name": "Noma no Okeyaki",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "over 1,000 years",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 1301,
+      "height_m": 27.37,
+      "location": {
+        "address": "Noma-Inaji 251-1, Nose-cho, Toyono-gun, Osaka Prefecture, beside the Noma-Inaji intersection on National Route 477",
+        "latitude": 34.946052,
+        "longitude": 135.45068,
+        "neighbourhood": "Nose-cho, Toyono-gun, Osaka Prefecture (a rural mountain town roughly 28km from central Osaka, not Osaka City itself)"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E9%87%8E%E9%96%93%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD",
+        "http://www.town.nose.osaka.jp/soshiki/syougaigakusyuuka/shogaikyoiku/shisetsu/912.html"
+      ],
+      "access": "Free, no gate. Stands right beside National Route 477 at the Noma-Inaji intersection; the town's free Keyaki Museum stands just east of it (open 10:00-17:00 Mar-Oct, 10:00-16:00 Nov-Feb, closed Tuesdays and Wednesdays). Public transport is now limited: the bus that once served it was replaced in FY2024 with a ride-share taxi restricted to town residents, commuters and students, so visitors without a car face a walk of 5km or more from the nearest station.",
+      "transport": "Nosedentetsu Myoken-guchi Station is the nearest station but is over 5km away with no general-public bus connection since 2024; reaching the tree in practice means a car or taxi",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The shrine this tree served was closed in 1912. The tree is still here, and the descendants of its old parish are still looking after it. Noma no Okeyaki is the largest zelkova in Osaka Prefecture and is said to be the largest in western Japan: 27.37 metres tall with a trunk 13.01 metres round on the town's current figures, splitting into seven main limbs and throwing a crown almost forty metres across. An interpretive sign the board of education put up in 1998 says thirty metres and fourteen, so read the numbers as a range rather than a verdict.\n\nIts age is given as over a thousand years, with no measured basis behind that. It was made a National Natural Monument in January 1948, after a survey by the botanist Honda Masaji, and it had stood as the sacred tree of Arinashi-gu, a shrine founded by tradition in 1220. Farmers here used to read the strength of its spring budding as a forecast of the coming harvest.\n\nEvery early summer brown hawk-owls nest in the canopy and the photographers turn up. A heavy mistletoe infestation nearly finished the tree off before tree doctors began stripping it out in 1994, after which it recovered.\n\nOne warning. This is Nose Town, twenty-eight kilometres out into the mountains from central Osaka, and in 2024 the bus that served it became a ride-share taxi for residents only. Without a car it is a walk of five kilometres or more from the nearest station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
 }

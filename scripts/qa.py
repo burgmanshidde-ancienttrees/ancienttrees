@@ -326,7 +326,13 @@ def check_photo_resolution():
     if small_heroes:
         out.append("%d city hero photo(s) soft while a bigger one is available: %s"
                    % (len(small_heroes), "; ".join(small_heroes[:4])))
-    if total and unmeasured > max(10, total // 20):
+    if unmeasured:
+        # Zero tolerance rather than a share, because /api/trees.json carries
+        # photo.width and photo.height and feedshape.py refuses a null there:
+        # one hand-written photo block without them fails the deploy at the
+        # very last step with a message about installed apps. Robenhausen did
+        # exactly that on 2026-09-03 while this check let it through, so the
+        # two now agree. The remedy is one command.
         out.append("%d of %d photographs have no measured width; run "
                    "`python3 scripts/photo_res.py` (the digest runs it daily)"
                    % (unmeasured, total))
