@@ -52,16 +52,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Kiidk'yaas",
-   "lat": 53.624535,
-   "lng": -132.206726,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:GoldenSpruceSapling.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kiidk%27yaas_in_1984.jpg"
-   ],
-   "status": "lead"
-  },
-  {
    "name": "Red Creek Fir",
    "lat": 48.579743,
    "lng": -124.220776,
@@ -86,17 +76,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Hollow Tree",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_big_visitor_to_the_big_tree_in_Stanley_Park,_Vancouver_B.C..jpg",
-    "https://commons.wikimedia.org/wiki/File:Canadian_National_Exhibition,_1913_No_3_(HS85-10-35743).jpg",
-    "https://commons.wikimedia.org/wiki/File:Canadian_National_Exhibition,_1913_No_3_(HS85-10-35743)_original.tif"
-   ],
-   "status": "lead"
-  },
-  {
    "name": "L'arbre avec un boulet",
    "lat": 46.810974,
    "lng": -71.208679,
@@ -106,6 +85,20 @@
     "https://commons.wikimedia.org/wiki/File:57-63_rue_Saint-Louis_Quebec_-_16.jpg"
    ],
    "status": "lead"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Kiidk'yaas (the Golden Spruce)",
+   "lat": 53.624535,
+   "lng": -132.206726,
+   "reason": "Dead. This rare golden Sitka spruce on the Yakoun River, Haida Gwaii, was deliberately felled by Grant Hadwin on 20-21 January 1997 (deep cuts left it standing weakened, it fell in a wind two days later) and never regrew; the site is now a stump/memorial. Confirmed by en.wikipedia.org/wiki/Kiidk%27yaas and en.wikipedia.org/wiki/Grant_Hadwin, both describing the 1997 felling as final. Hard rule: never publish a dead tree as a collectible. Note for a later pass: cloned saplings grown from cuttings/scions exist at a few BC locations (e.g. a planting near Port Clements and one at UBC Botanical Garden); a genuine, named, visitable living successor could be researched as a separate, different lead, but it is not this tree and was not chased here."
+  },
+  {
+   "name": "Hollow Tree",
+   "lat": null,
+   "lng": null,
+   "reason": "Dead. A c.800-year-old western redcedar stump in Stanley Park, Vancouver, hollowed by fire long ago; it lost its crown and became a stump-only landmark decades ago, was slated for removal after a December 2006 windstorm, and was structurally saved in 2011 with a concrete foundation and concealed steel supports funded by ~$100,000 in private donations (reopened October 2011). It is a preserved dead stump/heritage structure, not a living tree. Confirmed by en.wikipedia.org/wiki/Hollow_Tree and globalnews.ca coverage of the 2011 reopening. Hard rule: never publish a dead tree as a collectible, however famous."
   }
  ]
 }
