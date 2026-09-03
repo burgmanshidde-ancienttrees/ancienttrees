@@ -750,6 +750,11 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .app-getter[data-device="desktop"] .app-getter-android { display: none; }
 .app-getter[data-device="desktop"] .app-getter-desktop { display: block; }
 .app-getter-form { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; }
+/* [hidden] loses to the class's own `display: flex` on specificity order
+   otherwise, since both are one class/attribute selector and this stylesheet
+   loads after the browser's UA sheet. Caught live: the form and its "you are
+   on the list" confirmation both stayed visible at once after a submit. */
+.app-getter-form[hidden] { display: none; }
 .app-getter-form input { flex: 1 1 12rem; min-width: 0; border: 1px solid var(--cream-dark);
   border-radius: 999px; padding: 0.75rem 1.1rem; font-family: var(--sans); font-size: 14px;
   background: #fff; }
