@@ -1,81 +1,81 @@
 [
-  {
-    "id": "mat_001",
-    "name": "The Pine of Viale Aldo Moro",
-    "species": "Stone Pine (Pinus pinea)",
-    "age_estimate": "",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 290,
-    "height_m": 22.0,
-    "location": {
-      "address": "Viale Aldo Moro, Matera",
-      "latitude": 40.664333,
-      "longitude": 16.598019,
-      "neighbourhood": "Centro, near Matera Centrale station"
-    },
-    "verified_sources": [
-      "MASAF/Basilicata regional register of monumental trees, sheet 03/F052/MT/17, comune di Matera, locality Viale Aldo Moro, girth 290 cm, height 22 m, flagged urban",
-      "https://www.wikidata.org/wiki/Q55740945 (matches the same coordinate)",
-      "https://commons.wikimedia.org/wiki/File:Pino_Matera.jpg (Wiki Loves Monuments Italia 2018 entry, wiki-ID 17F05203F052MT17, camera location 40.664333,16.598019, photographed 21 September 2018, so alive and standing as of that date)",
-      "OpenStreetMap node 2505619685, tagged natural=tree, name \"Il Pino\", Viale Aldo Moro, Centro, Matera (40.664378, 16.598034)"
-    ],
-    "access": "Free. Street tree on Viale Aldo Moro, a public road; no gate or permission needed.",
-    "transport": "Matera Centrale railway station, about 5 minutes on foot along Viale Aldo Moro. Piazza Vittorio Veneto and the edge of the Sassi are about 10 minutes on foot.",
-    "location_precision": "confirmed",
-    "curation_status": "ai_generated",
-    "story": "On the map it carries the shortest name available: Il Pino. The Pine, definite article, nothing after it. It is a stone pine on Viale Aldo Moro, 22 metres tall with a trunk 290 centimetres round, standing about five minutes on foot from the platforms at Matera Centrale. Most people who arrive here by train walk under it on their way to the Sassi without noticing that it is on the regional register of monumental trees.\n\nIt earns that listing on shape as much as on size. Pinus pinea builds the umbrella crown you see along every Italian coast road, a wide flat canopy on a long bare trunk, and this one holds it over a busy urban avenue instead of a pine grove. In a city made almost entirely of pale limestone, where the oldest quarter is carved into the rock rather than planted on it, 22 metres of dark green counts as an event. A photographer recorded it for Wiki Loves Monuments in September 2018, crown full and intact, still throwing shade across the pavement.\n\nNobody has dated it. There is no planting record, no core sample, and a stone pine puts on girth too unevenly across its life for anyone to work an honest age back from 290 centimetres. If you know when it went in, tell us."
+ {
+  "id": "mat_001",
+  "name": "The Pine of Viale Aldo Moro",
+  "species": "Stone Pine (Pinus pinea)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 290,
+  "height_m": 22.0,
+  "location": {
+   "address": "Viale Aldo Moro, Matera",
+   "latitude": 40.664333,
+   "longitude": 16.598019,
+   "neighbourhood": "Centro, near Matera Centrale station"
   },
-  {
-    "id": "mat_002",
-    "name": "The Black Poplar of Timmari",
-    "species": "Black Poplar (Populus nigra)",
-    "age_estimate": "",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 420,
-    "height_m": 22.0,
-    "location": {
-      "address": "Localita Fontana della Madonna, Colle di Timmari, Matera",
-      "latitude": 40.650694,
-      "longitude": 16.489722,
-      "neighbourhood": "Timmari, on the Apulian-Greek archaeological park hill, about 9.5 km west of central Matera"
-    },
-    "verified_sources": [
-      "MASAF/Basilicata regional register of monumental trees, sheet 07/F052/MT/17, comune di Matera, locality Colle Timmari - Fontana della Madonna, girth 420 cm, height 22 m",
-      "https://www.wikidata.org/wiki/Q55740951 (pioppo nero, same coordinate)",
-      "https://www.caimatera.it/escursione/sentiero-del-pioppo-nero-di-timmari/ (CAI Matera hiking-club excursion, run 26 January 2025, whose stated route goes to Fontana della Madonna specifically \"per ammirare il pioppo nero, albero monumentale censito nel catasto regionale\", i.e. an independent, non-register source confirming both the tree and this exact spot)"
-    ],
-    "access": "Free, on open hillside within the Timmari archaeological area. No gate, no ticket. It sits well off the beaten path: reachable on foot via forest tracks and part-paved roads through the Parco Archeologico Appulo-Greco di Timmari, and a local hiking club (CAI Matera) runs an 11 km loop trail that passes directly by it. This pass could not confirm whether a shorter direct approach by car exists; treat it as a countryside walk rather than a stroll from the Sassi.",
-    "transport": "About 9.5 km / roughly a 20 minute drive west of central Matera; no public transport reaches Timmari directly. On foot from the nearest road it is a rural walk of at least an hour through the archaeological park.",
-    "location_precision": "confirmed",
-    "curation_status": "ai_generated",
-    "story": "Matera's hiking club walks an eleven kilometre loop to stand in front of this tree. The Black Poplar of Timmari grows at Fontana della Madonna, a spring on a hill 9.5 kilometres west of the city, and CAI Matera routes a whole day around reaching it. Its trunk measures 420 centimetres round and it stands 22 metres tall, a substantial size for Populus nigra, a species most of us meet as thin ranks of riverside trees.\n\nThe spring is the reason. Black poplar is a water tree, native to floodplains and river gravels, and in the dry limestone country around Matera it can only reach that girth where water comes up to the surface. Water brought people to the hill as well: the springs here supported settlement from the Neolithic onward, and the ridge holds an Apulo-Greek site excavated by Domenico Ridola, whose finds are in Matera's archaeology museum. The San Giuliano reservoir lies below.\n\nGetting there is a walk and not a stroll. No gate and no ticket, but forest tracks and part-paved roads through the archaeological park, and almost no signposting. Plan it as an afternoon in the countryside.\n\nNobody has dated the tree. Black poplars grow fast when young and slowly later, which makes girth a poor clock, and we would rather leave the field empty than invent a number. If you know its age, tell us."
+  "verified_sources": [
+   "MASAF/Basilicata regional register of monumental trees, sheet 03/F052/MT/17, comune di Matera, locality Viale Aldo Moro, girth 290 cm, height 22 m, flagged urban",
+   "https://www.wikidata.org/wiki/Q55740945 (matches the same coordinate)",
+   "https://commons.wikimedia.org/wiki/File:Pino_Matera.jpg (Wiki Loves Monuments Italia 2018 entry, wiki-ID 17F05203F052MT17, camera location 40.664333,16.598019, photographed 21 September 2018, so alive and standing as of that date)",
+   "OpenStreetMap node 2505619685, tagged natural=tree, name \"Il Pino\", Viale Aldo Moro, Centro, Matera (40.664378, 16.598034)"
+  ],
+  "access": "Free. Street tree on Viale Aldo Moro, a public road; no gate or permission needed.",
+  "transport": "Matera Centrale railway station, about 5 minutes on foot along Viale Aldo Moro. Piazza Vittorio Veneto and the edge of the Sassi are about 10 minutes on foot.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "story": "On the map it carries the shortest name available: Il Pino. The Pine, definite article, nothing after it. It is a stone pine on Viale Aldo Moro, 22 metres tall with a trunk 290 centimetres round, standing about five minutes on foot from the platforms at Matera Centrale. Most people who arrive here by train walk under it on their way to the Sassi without noticing that it is on the regional register of monumental trees.\n\nIt earns that listing on shape as much as on size. Pinus pinea builds the umbrella crown you see along every Italian coast road, a wide flat canopy on a long bare trunk, and this one holds it over a busy urban avenue instead of a pine grove. In a city made almost entirely of pale limestone, where the oldest quarter is carved into the rock rather than planted on it, 22 metres of dark green counts as an event. A photographer recorded it for Wiki Loves Monuments in September 2018, crown full and intact, still throwing shade across the pavement.\n\nNobody has dated it. There is no planting record, no core sample, and a stone pine puts on girth too unevenly across its life for anyone to work an honest age back from 290 centimetres. If you know when it went in, tell us."
+ },
+ {
+  "id": "mat_002",
+  "name": "The Black Poplar of Timmari",
+  "species": "Black Poplar (Populus nigra)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 420,
+  "height_m": 22.0,
+  "location": {
+   "address": "Localita Fontana della Madonna, Colle di Timmari, Matera",
+   "latitude": 40.650694,
+   "longitude": 16.489722,
+   "neighbourhood": "Timmari, on the Apulian-Greek archaeological park hill, about 9.5 km west of central Matera"
   },
-  {
-    "id": "mat_003",
-    "name": "The Mahaleb Cherry of Contrada La Vaglia",
-    "species": "Mahaleb Cherry / St Lucie Cherry (Prunus mahaleb)",
-    "age_estimate": "",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": null,
-    "height_m": 5.0,
-    "location": {
-      "address": "Contrada La Vaglia, near Strada Statale 7 Appia, Matera",
-      "latitude": 40.681978,
-      "longitude": 16.598133,
-      "neighbourhood": "San Pardo / La Vaglia, on the SS7 Appia north of the centre, about 1.7 km from Piazza Vittorio Veneto"
-    },
-    "verified_sources": [
-      "MASAF/Basilicata regional register of monumental trees, sheet 09/F052/MT/17, comune di Matera, locality Contrada La Vaglia, height 5 m, girth not recorded, flagged urban (the same 'urban' flag carried by the already-published Pino of Viale Aldo Moro, and distinct from the six masseria/jazzo entries in the same register, which are all flagged rural/non-urban)",
-      "https://www.wikidata.org/wiki/Q55740953 (ciliegio canino, matching coordinate 40.681944,16.598119)",
-      "OpenStreetMap raw data API (api.openstreetmap.org/api/0.6/map, bbox around the point, fetched 2026-09-03, not the Overpass endpoint that had twice timed out on earlier passes): the point sits about 45 m from a mapped junction of Strada Statale 7 Appia (way 243600167, highway=primary, ref SS7, 'Strada Statale 7 Appia', asphalt, 2 lanes) with a local road (way 144380406, highway=unclassified). No building, fence, barrier or private-landuse polygon is mapped over the tree's coordinate itself; the only landuse polygon nearby is a quarry, 'Cava del Sole', which does not overlap the point."
-    ],
-    "access": "Not confirmed in detail, but the evidence points to a roadside/urban setting rather than private farmland: unlike this register's six masseria and jazzo entries (all flagged non-urban and blocked as private working farms), this tree is flagged 'urban' in the same register, sits right beside the SS7 Appia state road on the northern edge of town, and OSM shows no building or private-land polygon over the spot. No fence or gate is recorded either way. Treat as likely visible/reachable from the public roadside on the SS7 Appia near Contrada La Vaglia; a reader who visits is the best way to settle it precisely.",
-    "transport": "About 1.7 km / roughly a 20-25 minute walk, or a short drive, north of Piazza Vittorio Veneto along the SS7 Appia (the historic road into Matera from the north). No dedicated public transport stop confirmed at this exact point.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Third look at this candidate across three passes (2026-09-01, 2026-09-02, 2026-09-03); the first two left it as a lead because no source described the actual site and two Overpass queries timed out. This pass used the raw OSM Planet API (api.openstreetmap.org/api/0.6/map) instead of Overpass and got a clean read: the tree's register/Wikidata coordinate sits about 45 m from where the SS7 Appia (tagged highway=primary, name 'Strada Statale 7 Appia') meets a minor road, with no building or private-landuse polygon mapped over the point itself. That is consistent with, but not proof of, a public roadside tree. Combined with the register's own 'urban' flag (shared with the already-published, definitely-public Pino of Viale Aldo Moro, and NOT shared with any of the six masseria/jazzo trees blocked elsewhere in this file), it tips the balance from 'unknown' to 'probably public', which is why this ships flagged rather than staying a lead. It does not meet the higher bar for 'confirmed': no tree-level OSM node, mapped photo or descriptive source pins the exact trunk, so location_precision is approximate and the register/Wikidata point is the best available. SPECIES: Prunus mahaleb, Mahaleb or St Lucie cherry, a small wild cherry native to this limestone country; Matera's Lanera district takes its name from this variety, which is a neighbourhood fact rather than a fact about this individual tree and should not be bridged into one. Only 5 m tall per the register, no girth recorded (do not infer one). No age source of any kind; leave age fields empty and let the page ask the reader. No death/decline signal found either way; this pass found no dated photo or recent mention confirming the tree is alive today, which is a real gap the writer should flag honestly (last positive evidence is the register listing itself, undated growth). HONEST CAVEAT FOR THE STORY: this is the thinnest-evidenced tree in the city's set. State plainly on the page that its exact spot and current condition are our best reading of the register and OSM, not a confirmed site visit, and invite a reader who knows Contrada La Vaglia to tell us more."
-  }
+  "verified_sources": [
+   "MASAF/Basilicata regional register of monumental trees, sheet 07/F052/MT/17, comune di Matera, locality Colle Timmari - Fontana della Madonna, girth 420 cm, height 22 m",
+   "https://www.wikidata.org/wiki/Q55740951 (pioppo nero, same coordinate)",
+   "https://www.caimatera.it/escursione/sentiero-del-pioppo-nero-di-timmari/ (CAI Matera hiking-club excursion, run 26 January 2025, whose stated route goes to Fontana della Madonna specifically \"per ammirare il pioppo nero, albero monumentale censito nel catasto regionale\", i.e. an independent, non-register source confirming both the tree and this exact spot)"
+  ],
+  "access": "Free, on open hillside within the Timmari archaeological area. No gate, no ticket. It sits well off the beaten path: reachable on foot via forest tracks and part-paved roads through the Parco Archeologico Appulo-Greco di Timmari, and a local hiking club (CAI Matera) runs an 11 km loop trail that passes directly by it. This pass could not confirm whether a shorter direct approach by car exists; treat it as a countryside walk rather than a stroll from the Sassi.",
+  "transport": "About 9.5 km / roughly a 20 minute drive west of central Matera; no public transport reaches Timmari directly. On foot from the nearest road it is a rural walk of at least an hour through the archaeological park.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "story": "Matera's hiking club walks an eleven kilometre loop to stand in front of this tree. The Black Poplar of Timmari grows at Fontana della Madonna, a spring on a hill 9.5 kilometres west of the city, and CAI Matera routes a whole day around reaching it. Its trunk measures 420 centimetres round and it stands 22 metres tall, a substantial size for Populus nigra, a species most of us meet as thin ranks of riverside trees.\n\nThe spring is the reason. Black poplar is a water tree, native to floodplains and river gravels, and in the dry limestone country around Matera it can only reach that girth where water comes up to the surface. Water brought people to the hill as well: the springs here supported settlement from the Neolithic onward, and the ridge holds an Apulo-Greek site excavated by Domenico Ridola, whose finds are in Matera's archaeology museum. The San Giuliano reservoir lies below.\n\nGetting there is a walk and not a stroll. No gate and no ticket, but forest tracks and part-paved roads through the archaeological park, and almost no signposting. Plan it as an afternoon in the countryside.\n\nNobody has dated the tree. Black poplars grow fast when young and slowly later, which makes girth a poor clock, and we would rather leave the field empty than invent a number. If you know its age, tell us."
+ },
+ {
+  "id": "mat_003",
+  "name": "The Mahaleb Cherry of Contrada La Vaglia",
+  "species": "Mahaleb Cherry / St Lucie Cherry (Prunus mahaleb)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": null,
+  "height_m": 5.0,
+  "location": {
+   "address": "Contrada La Vaglia, near Strada Statale 7 Appia, Matera",
+   "latitude": 40.681978,
+   "longitude": 16.598133,
+   "neighbourhood": "San Pardo / La Vaglia, on the SS7 Appia north of the centre, about 1.7 km from Piazza Vittorio Veneto"
+  },
+  "verified_sources": [
+   "MASAF/Basilicata regional register of monumental trees, sheet 09/F052/MT/17, comune di Matera, locality Contrada La Vaglia, height 5 m, girth not recorded, flagged urban (the same 'urban' flag carried by the already-published Pino of Viale Aldo Moro, and distinct from the six masseria/jazzo entries in the same register, which are all flagged rural/non-urban)",
+   "https://www.wikidata.org/wiki/Q55740953 (ciliegio canino, matching coordinate 40.681944,16.598119)",
+   "OpenStreetMap raw data API (api.openstreetmap.org/api/0.6/map, bbox around the point, fetched 2026-09-03, not the Overpass endpoint that had twice timed out on earlier passes): the point sits about 45 m from a mapped junction of Strada Statale 7 Appia (way 243600167, highway=primary, ref SS7, 'Strada Statale 7 Appia', asphalt, 2 lanes) with a local road (way 144380406, highway=unclassified). No building, fence, barrier or private-landuse polygon is mapped over the tree's coordinate itself; the only landuse polygon nearby is a quarry, 'Cava del Sole', which does not overlap the point."
+  ],
+  "access": "Not confirmed in detail, but the evidence points to a roadside/urban setting rather than private farmland: unlike this register's six masseria and jazzo entries (all flagged non-urban and blocked as private working farms), this tree is flagged 'urban' in the same register, sits right beside the SS7 Appia state road on the northern edge of town, and OSM shows no building or private-land polygon over the spot. No fence or gate is recorded either way. Treat as likely visible/reachable from the public roadside on the SS7 Appia near Contrada La Vaglia; a reader who visits is the best way to settle it precisely.",
+  "transport": "About 1.7 km / roughly a 20-25 minute walk, or a short drive, north of Piazza Vittorio Veneto along the SS7 Appia (the historic road into Matera from the north). No dedicated public transport stop confirmed at this exact point.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "story": "This is the thinnest evidenced tree on our list, and the story says so plainly rather than dressing it up. A Mahaleb cherry, also called St Lucie cherry, stands somewhere near the junction of the SS7 Appia and a minor road on Matera's northern edge, in Contrada La Vaglia. The regional register lists it as a monumental tree, five metres tall, no girth recorded, no age given. Nobody has photographed it recently, and this pass could not confirm it is even still standing.\n\nWhat tips it from unlisted to published is a small piece of evidence: the register flags this tree urban, the same flag it gives Matera's roadside stone pine on Viale Aldo Moro, and different from the flag on the eleven masseria and jazzo trees nearby that sit on private working farms and stay off this list. Mapping data shows no building or private land over the coordinate, only open ground near the old road into Matera from the north, which points toward a public roadside tree rather than one behind a farm gate.\n\nThe species itself has left its mark on the city: Matera's Lanera district takes its name from this cherry. That is a fact about the neighbourhood, not about this individual tree, and the two should not be confused.\n\nIf you have stood in Contrada La Vaglia and seen this tree, or know it is gone, tell us. This entry exists to be corrected."
+ }
 ]
