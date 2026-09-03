@@ -48,7 +48,12 @@
       ],
       "access": "Free, in a public council park beside the Devonport Library. Fully open, no restrictions.",
       "transport": "Devonport ferry terminal, about 8 minutes walk (or the short ferry crossing from downtown Auckland, ~12 minutes, then the walk)",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
     },
@@ -73,9 +78,22 @@
       ],
       "access": "Stands on the school's street frontage beside the War Memorial Gates; visible from the public footpath on Anzac Street. The school grounds themselves are not open to the public outside school events, so treat this as a view-from-the-street tree rather than one to walk up to.",
       "transport": "Takapuna town centre, a few minutes walk; buses run along Lake Road nearby",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          2,
+          3
+        ],
+        "label": "February to March: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "akl_003",
@@ -98,9 +116,22 @@
       ],
       "access": "Stands on the school's street frontage beside the War Memorial Gates and its sibling Edward VII oak; visible from the public footpath on Anzac Street. The school grounds themselves are not open to the public outside school events, so treat this as a view-from-the-street tree rather than one to walk up to.",
       "transport": "Takapuna town centre, a few minutes walk; buses run along Lake Road nearby",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          2,
+          3
+        ],
+        "label": "February to March: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "akl_004",
@@ -123,7 +154,12 @@
       ],
       "access": "Free, in a public Auckland Council park. Fully open, standing a short distance from the old homestead.",
       "transport": "Local buses run along Hillsborough Road; about 7km / a short bus or drive from the city centre",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
     },
@@ -148,7 +184,12 @@
       ],
       "access": "Free, in Cornwall Park, a large public heritage park open at all times.",
       "transport": "Buses run along Manukau Road and Green Lane; about 4km / a short bus ride from the city centre",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
     }

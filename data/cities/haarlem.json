@@ -214,7 +214,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "haa_007",
@@ -305,7 +313,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "haa_010",
@@ -336,6 +352,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November: the whole crown turns butter gold, then drops in a day or two",
+        "kind": "autumn colour"
       }
     },
     {
@@ -397,6 +420,15 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          7,
+          8,
+          9
+        ],
+        "label": "July to September: long green catkins of winged nutlets hang from every branch",
+        "kind": "fruit"
       }
     },
     {
@@ -427,6 +459,14 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
       }
     },
     {
@@ -624,7 +664,15 @@
       "transport": "About 20-25 minute walk from Haarlem Centraal Station, or a short bus ride to Houtplein",
       "location_precision": "approximate",
       "curation_status": "flagged",
-      "story": "Two pedunculate oaks stand together on the west side of the Frederikspark, and on the register's own dating they are the oldest things in it. The planting band is 1840 to 1850, so roughly 180 to 190 years, a couple of decades ahead of the big plane at the Houtplein end. Old oaks are scarce in Dutch cities for an unromantic reason: Quercus robur was the timber tree of the Republic, worth more felled than standing, and anything straight enough went into ships, locks and sluice gates. These two were left alone long enough to stop being timber and start being furniture for a park. A pair planted close grows into a single argument about light. Each crown leans away from the other and the branches on the facing sides stay short, so from a distance the two read as one lopsided tree and only resolve into two when you walk round them. In a good mast year the grass beneath is covered in acorns by October. The national register is the only source we have found for either tree, so the age is its estimate rather than a measured figure, and nobody has published a girth for them. If you get a tape around a trunk here, we would like to hear the number."
+      "story": "Two pedunculate oaks stand together on the west side of the Frederikspark, and on the register's own dating they are the oldest things in it. The planting band is 1840 to 1850, so roughly 180 to 190 years, a couple of decades ahead of the big plane at the Houtplein end. Old oaks are scarce in Dutch cities for an unromantic reason: Quercus robur was the timber tree of the Republic, worth more felled than standing, and anything straight enough went into ships, locks and sluice gates. These two were left alone long enough to stop being timber and start being furniture for a park. A pair planted close grows into a single argument about light. Each crown leans away from the other and the branches on the facing sides stay short, so from a distance the two read as one lopsided tree and only resolve into two when you walk round them. In a good mast year the grass beneath is covered in acorns by October. The national register is the only source we have found for either tree, so the age is its estimate rather than a measured figure, and nobody has published a girth for them. If you get a tape around a trunk here, we would like to hear the number.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "haa_021",

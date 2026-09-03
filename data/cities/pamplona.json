@@ -89,7 +89,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Declared a Natural Monument of Navarra in 2009. The register publishes no height, girth or age, and the millenary description comes from popular and local accounts rather than a measurement, which is why the band here is very wide and the story says so. The pollarding and root-buttress description is from those same local accounts."
+      "notes": "Declared a Natural Monument of Navarra in 2009. The register publishes no height, girth or age, and the millenary description comes from popular and local accounts rather than a measurement, which is why the band here is very wide and the story says so. The pollarding and root-buttress description is from those same local accounts.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "pam_003",
@@ -120,7 +128,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Declared a Natural Monument of Navarra in 1991, listed as number 10. The register publishes species, place, declaration year and coordinate only. The over 26 metres, the near two metre base, the lightning strike and the escape from felling come from Navarrese walking and heritage accounts rather than from the register, so height is carried and girth is not. No age published anywhere."
+      "notes": "Declared a Natural Monument of Navarra in 1991, listed as number 10. The register publishes species, place, declaration year and coordinate only. The over 26 metres, the near two metre base, the lightning strike and the escape from felling come from Navarrese walking and heritage accounts rather than from the register, so height is carried and girth is not. No age published anywhere.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "pam_004",
@@ -150,7 +166,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Two separate Natural Monument declarations of 1991, Roble de Jauntsarats I and II, 585 m apart by the register's own coordinates; this entry is the first, and the story says the second stands nearby. No measurements, no age and no vitality field in the register."
+      "notes": "Two separate Natural Monument declarations of 1991, Roble de Jauntsarats I and II, 585 m apart by the register's own coordinates; this entry is the first, and the story says the second stands nearby. No measurements, no age and no vitality field in the register.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "pam_005",

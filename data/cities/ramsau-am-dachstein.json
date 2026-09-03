@@ -57,7 +57,15 @@
         "status": "missing"
       },
       "girth_cm": null,
-      "height_m": null
+      "height_m": null,
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: winged seeds that spin down in pairs",
+        "kind": "fruit"
+      }
     }
   ]
 }

@@ -49,7 +49,12 @@
       ],
       "access": "Free, public viewpoint area at Molkenkur; no ticket needed to reach or stand by the tree.",
       "transport": "Heidelberg funicular (Bergbahn) from Kornmarkt to the Molkenkur stop, a few minutes; also reachable on foot via the Klingentor path from the castle, roughly 15-20 minutes uphill.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "location_precision": "approximate"
     },
@@ -73,9 +78,22 @@
       ],
       "access": "Free. The Schlossgarten (castle garden and terraces) is open to the public daily in daylight hours at no charge; only the castle courtyard itself, the Grosses Fass and the Apothecary Museum need the paid Schlossticket.",
       "transport": "Short uphill walk from Kornmarkt via Kurzer Buckel, or the Bergbahn funicular from Kornmarkt to the Schloss stop.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "hei_003",
@@ -97,10 +115,21 @@
       ],
       "access": "Free. A street tree on Neuenheimer Landstrasse, a public riverside road with a pavement/cycle path; viewable at any time.",
       "transport": "Short walk along the Neckar's north bank from the Alte Bruecke (Old Bridge), Neuenheim side; also served by Neuenheim bus and tram stops.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when the needles turn rust orange before dropping" }
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the needles turn rust orange before dropping"
+      }
     },
     {
       "id": "hei_004",
@@ -122,10 +151,21 @@
       ],
       "access": "Free. Zwingerstrasse is an ordinary public street in the Altstadt, a few minutes' walk from Kornmarkt and the Bergbahn funicular's lower station.",
       "transport": "A few minutes' walk from Kornmarkt or the Bergbahn Talstation.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "best_time": { "months": [5], "kind": "flowers", "label": "early May, when the flower spikes stand up like candles across the whole crown" }
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "early May, when the flower spikes stand up like candles across the whole crown"
+      }
     },
     {
       "id": "hei_005",
@@ -147,7 +187,12 @@
       ],
       "access": "Free. Bergstrasse is an ordinary public residential street in Neuenheim; the tree stands as a street tree, viewable from the pavement.",
       "transport": "A short walk from Neuenheim's Bergstrasse/Blumenthalstrasse bus stops.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "approximate"
     },
@@ -171,7 +216,12 @@
       ],
       "access": "Free. Ringstrasse is a public street served by tram line 26 (Ringstrasse stop); the tree is a street tree, viewable at any time.",
       "transport": "Tram line 26 to the Ringstrasse stop, then on foot.",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "location_precision": "approximate"
     }

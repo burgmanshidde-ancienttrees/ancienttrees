@@ -125,7 +125,14 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "The single horse chestnut outside Am Gries 30, on the plot of the former Zum Goldenen Loewen inn, with the remains of a second tree beside it. The protected group at number 18 is a cluster of several trunks."
+      "how_to_recognise": "The single horse chestnut outside Am Gries 30, on the plot of the former Zum Goldenen Loewen inn, with the remains of a second tree beside it. The protected group at number 18 is a cluster of several trunks.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "rgb_004",

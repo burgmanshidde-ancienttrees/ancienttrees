@@ -128,7 +128,15 @@
       },
       "how_to_recognise": "The oak standing close to the house, taller and narrower in the crown than the one out in the field.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "ede_004",
@@ -260,7 +268,15 @@
       },
       "how_to_recognise": "The large oak on the Dorpstraat by number 25, with a crown leaning away from the buildings.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

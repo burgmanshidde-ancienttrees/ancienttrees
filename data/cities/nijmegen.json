@@ -258,7 +258,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "label": "May to June, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "nij_008",
@@ -287,7 +295,14 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October: chestnuts in spiny burs, ripe and gatherable in October",
+        "kind": "fruit"
+      }
     },
     {
       "id": "nij_009",
@@ -321,7 +336,14 @@
       },
       "how_to_recognise": "An enormous hollow chestnut with a trunk you could stand inside, far thicker than anything else in the valley.",
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October: chestnuts in spiny burs, ripe and gatherable in October",
+        "kind": "fruit"
+      }
     },
     {
       "id": "nij_010",
@@ -352,7 +374,15 @@
       },
       "how_to_recognise": "A tight group of very old limes on the highest point, at the top of the avenue, with the view opening north over the river.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "nij_011",
@@ -383,7 +413,16 @@
       },
       "how_to_recognise": "A dark, dense yew among the headstones beside the small white church, thicker in the trunk than its height suggests.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "nij_012",
@@ -474,7 +513,14 @@
       },
       "how_to_recognise": "The chestnut on the church forecourt, rectory to its north, on Pastoor van Laakstraat in Lent.",
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "nij_015",
@@ -618,6 +664,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when it flowers",
+        "kind": "flowers"
       }
     },
     {
@@ -648,6 +701,14 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
       }
     },
     {

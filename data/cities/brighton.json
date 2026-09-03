@@ -124,7 +124,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Species string normalised from \"Yew (Taxus baccata)\" to the site's canonical \"European Yew (Taxus baccata)\" (34 live trees). Age_max 1000 carries the local Saxon folklore band; the sourced estimate the council and the Ancient Yew Group agree on is over 500."
+      "notes": "Species string normalised from \"Yew (Taxus baccata)\" to the site's canonical \"European Yew (Taxus baccata)\" (34 live trees). Age_max 1000 carries the local Saxon folklore band; the sourced estimate the council and the Ancient Yew Group agree on is over 500.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bhm_004",
@@ -154,7 +163,16 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bhm_005",

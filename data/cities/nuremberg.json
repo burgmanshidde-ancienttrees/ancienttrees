@@ -368,7 +368,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "nbg_012",
@@ -385,7 +393,10 @@
       },
       "story": "This beech and its neighbour eighty metres away are the two survivors of a trio. A copper beech elsewhere in the same Cramer-Klett-Park was designated in 1996 with a four-metre trunk and a 23-metre crown, and died of fungal disease around 2009. This tree, registered separately as Naturdenkmal Nr. 28, carries no comparable measurements in either the state or the city record, and none of the dead tree's numbers belong to it, whatever a quick read of the park's history might suggest.\n\nWhat the record does confirm is that it is alive and current in Bavaria's state register, standing in a park laid out for the Cramer-Klett family before the city bought the grounds in 1929 and opened them to the public two years later. The war damage and the 2019 renovation both belong to the park's history rather than to this tree specifically, since the sources never narrate it on its own. A beech surviving quietly enough that nobody has measured its girth or dated it is, in a park that has already lost one of its beeches to disease, the more ordinary story, and ordinary is not the same as unremarkable here.\n\nNobody has published this tree's size or age. If you have stood under it and can say how it compares to its sibling eighty metres away, tell us.",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "kind": "autumn colour",
         "label": "late October and November, turning alongside its neighbour eighty metres away"
       },

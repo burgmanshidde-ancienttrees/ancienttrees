@@ -56,7 +56,16 @@
         "status": "missing"
       },
       "girth_cm": 190,
-      "height_m": 11
+      "height_m": 11,
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     }
   ]
 }

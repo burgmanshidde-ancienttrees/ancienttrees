@@ -447,7 +447,15 @@
       "how_to_recognise": "A very large beech with smooth grey bark closing off the end of the street, its crown far wider than the road.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 704
+      "girth_cm": 704,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "ptl_014",
