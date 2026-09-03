@@ -1,1357 +1,1366 @@
 {
- "country": "Germany",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Nationalerbe-Baum",
-   "lat": 49.099083,
-   "lng": 13.23,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bremen_Riensberger_Friedhof_Mammutbaum.jpg",
-    "https://commons.wikimedia.org/wiki/File:Burglinde_(Sommer_Linde)_32._Nationalerbe_Baum_Deutschland_Homberg_Ohms.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eiche_F%C3%BCrst_P%C3%BCckler_Park.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Pücklersche Blutbuche (Muskau Park)",
-   "lat": 51.54715,
-   "lng": 14.7239,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_Bad_Muskau...2H1A1303WI.jpg",
-    "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_Bad_Muskau_81.JPG",
-    "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_in_Bad_Muskau...2H1A1117WI.jpg"
-   ],
-   "status": "lead",
-   "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Riesenbuche bei Altmugl",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:ALTMUGL1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Altmugl7.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Hraniční buk (Cínovec)",
-   "lat": 50.732796,
-   "lng": 13.767946,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:C%C3%ADnovec_(Dub%C3%AD)_-_Hrani%C4%8Dn%C3%AD_buk,_2024-06,_obr01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ehemalige_Grenze_Cinovec-Zinnwald.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hrani%C4%8Dn%C3%AD_buk_-_C%C3%ADnovec,_cca_1920-1930.jpg"
-   ],
-   "status": "lead",
-   "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Hutbuche bei Frauenroth",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Buche_Frauenroth,_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hutbuche_April2009.JPG",
-    "https://commons.wikimedia.org/wiki/File:Hutbuche_April2009_HF1.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kanzelbuche",
-   "lat": 49.039975,
-   "lng": 8.87275556,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Alte_Kanzelbuche_im_Schnee.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_junge_Kanzelbuche_am_6._Januar_2020.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_junge_Kanzelbuche_am_6._Januar_2020_im_Naturpark_Stromberg-Heuchelberg.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Blutbuche in Pillnitz",
-   "lat": 51.00936,
-   "lng": 13.869502,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-011.jpg",
-    "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-012.jpg",
-    "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-014.jpg"
-   ],
-   "status": "blocked",
-   "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "why": "DEAD. Both copper beeches at the entrance to the Schlosspark Pillnitz, planted 1895, have been felled: the first on the Bergpalais side in 2021, the second after an assessment found fungal infection and a high risk of branch failure, its crown taken off for visitor safety. Cuttings taken in 2023, 2024 and 2025 to keep the genetics alive did not root, the shoots being too weak. Never ship."
-  },
-  {
-   "name": "Urbuche",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2020-08_Urbuche_Mitgenfeld.jpg",
-    "https://commons.wikimedia.org/wiki/File:2020-08_Urbuche_Mitgenfeld_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Buche_Mitgenfeld,_1.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Symbolic oaks in Germany",
-   "lat": 52.14319444,
-   "lng": 8.48315556,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20040727_1027_1133-Spenge-Memoschild_Flugplatz_Nagelsholz_auf_dem_Rathausplatz.JPG",
-    "https://commons.wikimedia.org/wiki/File:Die_Eiche.jpg",
-    "https://commons.wikimedia.org/wiki/File:Doberlug_2013_(Alter_Fritz)_06.JPG"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Adam und Eva (Wieseck)",
-   "lat": 50.62953333,
-   "lng": 8.704375,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-Wieseck,_Adam_und_Eva_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-Wieseck,_Adam_und_Eva_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-Wieseck,_Adam_und_Eva_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Alte Eiche (Rödgen)",
-   "lat": 50.59074444,
-   "lng": 8.75022778,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Eiche_R%C3%B6dgen.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Alte_Eiche_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Alte_Eiche_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Beckmannshagen-Eiche",
-   "lat": 51.219475,
-   "lng": 7.183075,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_033.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_034.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_035.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Betteleiche (Hainich)",
-   "lat": 51.08617,
-   "lng": 10.403403,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Betteleiche,_Hainich_National_Park.jpg",
-    "https://commons.wikimedia.org/wiki/File:Betteleiche,_Nahansicht_im_Winter.jpg",
-    "https://commons.wikimedia.org/wiki/File:Betteleiche-Nationalpark-Hainich.jpg"
-   ],
-   "status": "verified",
-   "reason": "Delivered to data/research/famousgermany-verified.json as hai_001, single-tree-destination exception (flagship landmark of Nationalpark Hainich with its own dedicated hiking trail). Two independent sources (de.wikipedia, official national park page). Species left as genus-only oak (sources say 'Eiche' without settling robur vs petraea); girth conflict between sources (5.90m vs 5.6m) recorded and flagged rather than resolved."
-  },
-  {
-   "name": "Bärenwaldeiche bei Niederholzklau",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau1.JPG",
-    "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau11.JPG",
-    "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau12.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Denkstein und Eiche zur Mahnung für Nachhaltigkeit in den Ronsdorfer Anlagen",
-   "lat": 51.23502,
-   "lng": 7.207558,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_048.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_049.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_050.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Dr. August Köster-Eiche",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_075.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_076.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_077.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Eiche am Forsthaus Grüner Jäger",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:700YearOak_GruenerJaeger_Stapel_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:700YearOak_GruenerJaeger_Stapel_3.jpg",
-    "https://commons.wikimedia.org/wiki/File:700YearOak_GruenerJaeger_Stapel_4.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Eiche an der Kirche (Münzenberg)",
-   "lat": 50.45213306,
-   "lng": 8.77619806,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Kirche_(M%C3%BCnzenberg)_01.JPG",
-    "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Kirche_(M%C3%BCnzenberg)_02.JPG",
-    "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Kirche_(M%C3%BCnzenberg)_03.JPG"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Eiche Schillershöhe",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Schillersh%C3%B6he_I.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Schillersh%C3%B6he_II.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Schillersh%C3%B6he_III.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Eichenniederwald Darlingerode (NDM)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Eichenniederwald_Darlingerode_(Harz)_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eichenniederwald_Darlingerode_(Harz)_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eichenniederwald_Darlingerode_(Harz)_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Erinnerungseiche an die Völkerschlacht bei Leipzig (Berga/Elster)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Berga_Elster_Naturdenkmal_V%C3%B6lkerschlachteiche_1863_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Berga_Elster_Naturdenkmal_V%C3%B6lkerschlachteiche_1863_02.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Everseiche",
-   "lat": 52.303587,
-   "lng": 8.013266,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Freundschaftseiche in Rudolstadt",
-   "lat": 50.718573,
-   "lng": 11.338517,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Freundschaftseiche_2015,_Pflanzung,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Freundschaftseiche_2015,_Pflanzung,_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Freundschaftseiche_2024,_Sp%C3%A4tsommer,_01.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Hans-Bilstein-Eiche",
-   "lat": 51.233245,
-   "lng": 7.205755,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_021.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_022.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_023.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Hitler-Eiche (Wuppertal)",
-   "lat": 51.235563,
-   "lng": 7.206322,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_059.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_061.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_063.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Hunneneiche (Untermerzbach)",
-   "lat": 50.12281,
-   "lng": 10.8535,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hunneneiche,_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hunneneiche,_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:ND-05478_Hunneneiche_bei_Untermerzbach.jpg"
-   ],
-   "status": "verified",
-   "reason": "Delivered to data/research/famousgermany-verified.json as utb_001, single-tree-destination exception. Officially protected Naturdenkmal since 1963 (ND-05478), species confirmed as Quercus robur by monumentale-eichen.de, girth 6.61m. Age sources disagree (500y per Naturpark Hassberge tourism page vs c.220-420y per dendrologist's planting-date estimate); both recorded and flagged rather than resolved."
-  },
-  {
-   "name": "Hüter des Feldes",
-   "lat": 50.12184867,
-   "lng": 10.96154267,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Called_The_natural_monument_%22guardians_of_the_field%22_or_%22Rasierpinselbaum%22,_is_a_1,000-year-old_oak_tree_at_Nedensdorf_district_Lichtenfels_in_Upper_Franconia,_Bavaria,_Germany.JPG",
-    "https://commons.wikimedia.org/wiki/File:Der_%22H%C3%BCter_des_Feldes%22_auch_%22Rasierpinselbaum%22_genannt,_im_Sommer_2014_mit_Teilsch%C3%A4den_an_der_Krone..JPG",
-    "https://commons.wikimedia.org/wiki/File:Hueter_des_Feldes.jpg"
-   ],
-   "status": "verified",
-   "reason": "Delivered to data/research/famousgermany-verified.json as ned_001, single-tree-destination exception. Featured in the 2003 film 'Luther', a Bavarian TV documentary and a dedicated 2023 photo book; has its own de.wikipedia article. Alive but visibly declining (confirmed via a 23 June 2026 field observation logged on baumkunde.de/monumentale-eichen.de: 'vital, trunk completely hollow, crown partly green'); regional conservation authority has stopped active preservation. Age sources disagree sharply (300-500y dendrology estimate vs 'over 1000 years' per press/authority); both recorded and flagged rather than resolved."
-  },
-  {
-   "name": "Jahrhunderteiche",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Barmer_Wald_0006.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Barmer_Wald_0007.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Barmer_Wald_0008.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Lieveneiche",
-   "lat": 51.196958,
-   "lng": 6.957193,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_231.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_232.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_233.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Pius-Eiche (Haren)",
-   "lat": 52.79027778,
-   "lng": 7.24166667,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Haren,_die_Sankt_Martinus_Kirche_IMG_7309_2020-08-08_16.23.jpg",
-    "https://commons.wikimedia.org/wiki/File:Haren_(Ems)_katedralo_Emsland-Dom_somere_1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Haren_(Ems)_katedralo_Emsland-Dom_somere_2.JPG"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Schlosseiche bei Eisolzried",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Schlosseiche_Eisolzried,_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Schlosseiche_Eisolzried,_St%C3%BCtzer.jpg",
-    "https://commons.wikimedia.org/wiki/File:Schlosseiche_Eisolzried.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tausendjährige Eiche in Bötersheim",
-   "lat": 53.32119,
-   "lng": 9.74675,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000j%C3%A4hrige_Eiche_B%C3%B6tersheim_Hamburg_Harburg,_nahe_L%C3%BCneburger_Heide.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tausendjaehrige_Eiche_Boetersheim.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tausendj%C3%A4hrige_Eiche_B%C3%B6tersheim.png"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Volkenrodaer Eiche",
-   "lat": 51.252031,
-   "lng": 10.571594,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Japanischer Schnurbaum am Alsterufer Hamburg",
-   "lat": 53.561528,
-   "lng": 9.997528,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg.jpg",
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Pagoda Tree (Styphnolobium sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Japanischer Schnurbaum (Schillerplatz, Mannheim)",
-   "lat": 49.48638824,
-   "lng": 8.46216023,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20171119Styphnolobium_japonicum1.jpg",
-    "https://commons.wikimedia.org/wiki/File:20171119Styphnolobium_japonicum2.jpg",
-    "https://commons.wikimedia.org/wiki/File:20171119Styphnolobium_japonicum3.jpg"
-   ],
-   "status": "lead",
-   "species": "Pagoda Tree (Styphnolobium sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Japanischer Schnurbaum an der Franz-Josef-Röder-Straße (Saarbrücken)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20120806Styphnolobium_japonicum.jpg",
-    "https://commons.wikimedia.org/wiki/File:20120827Styphnolobium_japonicum1.jpg",
-    "https://commons.wikimedia.org/wiki/File:20120827Styphnolobium_japonicum2.jpg"
-   ],
-   "status": "lead",
-   "species": "Pagoda Tree (Styphnolobium sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sophora japonica 9-1/B",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Schnurbaum-Sophora_japonica._9-1-B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sophora_japonica_9-1_B_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sophora_japonica_9-1_B_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Pagoda Tree (Styphnolobium sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gerichtslinden Bad Bentheim",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bad_Bentheim_-_Schlo%C3%9Fstra%C3%9Fe_-_Gerichtslinden_01_ies.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bad_Bentheim_-_Schlo%C3%9Fstra%C3%9Fe_-_Gerichtslinden_02_ies.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bad_Bentheim_-_Schlo%C3%9Fstra%C3%9Fe_-_Gerichtslinden_03_ies.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Franzosenlinde (Bargischow)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:BargischowFranzosenlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:BargischowFranzosenlinde1.jpg",
-    "https://commons.wikimedia.org/wiki/File:BargischowFranzosenlinde2.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Belsener Linde",
-   "lat": 48.392066,
-   "lng": 9.039757,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Belsener_Linde_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Belsener_Linde_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Belsener_Linde_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Königslinde (Invalidenfriedhof Berlin)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Invalidenfriedhof,_Friedhofsmauer_mit_K%C3%B6nigslinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Invalidenfriedhof,_K%C3%B6nigslinde_1897.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Bordesholm Gerichtslinde",
-   "lat": 54.17672222,
-   "lng": 10.01130556,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bordesholm,_the_old_limetree.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde_(Court_Tree)_2010.jpg"
-   ],
-   "status": "blocked",
-   "species": "Winter Lime (Tilia cordata)",
-   "species_basis": "confirmed by de.wikipedia's dedicated article",
-   "why": "DEAD. de.wikipedia's dedicated article ('Bordesholmer Linde') and arboristik.de's article 'Das Ende der Bordesholmer Linde' both confirm the tree could not be saved: on 29 May 2018 a large branch broke off and the tree threatened to topple, with a strong honey fungus (Hallimasch) infestation visible in dying branches. It was removed. Never ship."
-  },
-  {
-   "name": "Collmer Linde",
-   "lat": 51.30276,
-   "lng": 13.01867,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm,_Infotafel.jpg",
-    "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(3).jpg"
-   ],
-   "status": "verified",
-   "species": "Large-leaved Lime (Tilia platyphyllos)",
-   "species_basis": "confirmed by Nationalerbe-Baeume register and de.wikipedia as Sommerlinde",
-   "reason": "Delivered to data/research/famousgermany-verified.json as col_001, single-tree-destination exception. Official Nationalerbe-Baum since Oct 2022, Saxony's reputed oldest linden, historic Gerichtslinde/Dingplatz site. Alive, professionally inspected May 2022 with vigorous new growth documented. Popular 'thousand years' claim flagged as folklore against an expert estimate of ~800 years."
-  },
-  {
-   "name": "Peter-Linde (Coppenbrügge)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Burg_Coppenbr%C3%BCgge_Peterlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Peter-Linde_Burg_Coppenbr%C3%BCgge.jpg",
-    "https://commons.wikimedia.org/wiki/File:Peter_linde.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Dorflinde in Aua (Neuenstein)",
-   "lat": 50.915651,
-   "lng": 9.570436,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2015-10-24_Dorflinde_in_Neuenstein-Aua_(Hessen)_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015-10-24_Dorflinde_in_Neuenstein-Aua_(Hessen)_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:2016-11-28_Dorflinde_in_Neuenstein-Aua_(Hessen)_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Dorflinde Lischeid",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Lischeid,_Dorflinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Lischeid2_-_Kirche_und_Dorflinde.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Dorflinde Sebbeterode",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Sebbeterode,_Dorflinde_mit_Gerichtsstein.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sebbeterode-Gerichtsplatz_im_S%C3%BCdwesten_der_Kirche)-Gerichtslinde_mit_Holzst%C3%BCtzenkranz_und_Steineinfassung_von_Ortsseite-26062013.JPG",
-    "https://commons.wikimedia.org/wiki/File:Sebbeterode-Gerichtsplatz_im_S%C3%BCdwesten_der_Kirche-Gerichtslinde_mit_Holzst%C3%BCtzenkranz_und_Steineinfassung_in_%C3%9Cbersicht-26062013.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Einheitslinde in Haunstetten (Augsburg)",
-   "lat": 48.304717,
-   "lng": 10.898034,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Haunstetten,_Einheitslinde_2022,_Fr%C3%BChling,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Haunstetten,_Einheitslinde_2022,_Fr%C3%BChling,_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Haunstetten,_Einheitslinde_2022,_Fr%C3%BChling,_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Einheitslinde in Rudolstadt",
-   "lat": 50.719006,
-   "lng": 11.335441,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Einheitslinde,_Gedenkstein,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Einheitslinde,_Gedenkstein_2010,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Einheitslinde,_Gedenkstein_2010,_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Einheitslinde in Ruhla",
-   "lat": 50.893826,
-   "lng": 10.365141,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ruhla,_Friedensplatz,_Einheitslinde,_Schild,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ruhla,_Friedensplatz,_Einheitslinde,_Schild,_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ruhla,_Friedensplatz,_Einheitslinde,_Sommer,_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Einheitslinden in Bayreuth",
-   "lat": 49.945723,
-   "lng": 11.577187,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bayreuth,_Einheitslinde_1990,_Pflanzung,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bayreuth,_Luitpoldplatz,_Einheitslinden,_Schild,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bayreuth,_Luitpoldplatz,_Einheitslinden,_Schild,_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Emil-Zatopek-Linde",
-   "lat": 51.235892,
-   "lng": 7.204445,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_084.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_087.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_089.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Freiheitslinde Lindaufeld",
-   "lat": 54.595933,
-   "lng": 9.815023,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Freiheitslinde_Lindaufeld_(Boren).Gedenkstein.1.ajb.jpg",
-    "https://commons.wikimedia.org/wiki/File:Freiheitslinde_Lindaufeld_(Boren).Gedenkstein.2.ajb.jpg",
-    "https://commons.wikimedia.org/wiki/File:Freiheitslinde_Lindaufeld_(Boren).ajb.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Friedenslinde (Passau)",
-   "lat": 48.571887,
-   "lng": 13.460958,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Friedenslinde_(Passau)_im_Winter_2000x3000.JPG",
-    "https://commons.wikimedia.org/wiki/File:Friedenslinde_2015.JPG",
-    "https://commons.wikimedia.org/wiki/File:Friedenslinde_Passau_01.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Fünffingerlinde",
-   "lat": 54.149448,
-   "lng": 9.220072,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Besichtigung_der_F%C3%BCnffingerlinde_im_Riesewohld_in_Albersdorf.jpg",
-    "https://commons.wikimedia.org/wiki/File:Fuenf-Fingerlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:F%C3%BCnffingerlinde_Albersdorf_Baum_Schleswig-Holstein.jpg"
-   ],
-   "status": "verified",
-   "species": "Small-leaved Lime (Tilia cordata)",
-   "species_basis": "confirmed by baumkunde.de and monumentaltrees.com as Winterlinde",
-   "reason": "Delivered to data/research/famousgermany-verified.json as alb_001, single-tree-destination exception. A single specimen of five fused stems shaped like an open hand, protected Naturdenkmal since 1938, own de.wikipedia article. Vital per baumkunde.de's 2020 survey, girth 4.90m."
-  },
-  {
-   "name": "Galenbecker Tanzlinde",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Tanzlinde.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Geleitete Linden Berndshausen",
-   "lat": 51.04336692,
-   "lng": 9.48038947,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2015-04_Doppellinde_Kn%C3%BCllwald-Berndshausen_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015-04_Doppellinde_Kn%C3%BCllwald-Berndshausen_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015-04_Doppellinde_Kn%C3%BCllwald-Berndshausen_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Geleitete Linden Dagobertshausen",
-   "lat": 51.08062987,
-   "lng": 9.5088761,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2015-05_ND-Dagobertshausen_3-Linden_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015-05_ND-Dagobertshausen_3-Linden_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Dagobertshausen.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gerichtslinde Erdmannrode",
-   "lat": 50.812168,
-   "lng": 9.786739,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gerichtslinde Göttingen",
-   "lat": 51.534946,
-   "lng": 9.91229,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Alte_Gerichtslinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gerichtslinde,_1,_Groner_Landstra%C3%9Fe,_Weststadt,_G%C3%B6ttingen,_Landkreis_G%C3%B6ttingen.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Goettingen_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gerichtslinde in Alfeld (Leine)",
-   "lat": 51.9907615,
-   "lng": 9.8253568,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1917_aufgelassener_Alter_Friedhof_Alfeld,_doppelseitige_Infotafel_zwischen_Gerichtslinde_und_Lapidarium.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Gerichtslinde_in_Alfeld_an_der_Leine.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Gerichtslinde_in_Alfeld_an_der_Leine_(19782).jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gerichtslinde Klingenberg",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Die_800_Jahre_alte_Gerichtslinde_in_Klingenberg_am_Main.jpg",
-    "https://commons.wikimedia.org/wiki/File:Spaziergang_durch_Klingenberg_am_Main._Die_Gerichtslinde.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gerichtslinde Scheeßel",
-   "lat": 53.16922805,
-   "lng": 9.48220468,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2015-05_ND-Gerichtslinde-Scheessel_Niedersachsen_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015-05_ND-Gerichtslinde-Scheessel_Niedersachsen_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:2015-05_ND-Gerichtslinde-Scheessel_Niedersachsen_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gerichtslinde Wehren (Fritzlar)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wehren_bei_Fritzlar,_Gerichtslinde_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Wehren_bei_Fritzlar,_Gerichtslinde_(2)_mit_Kirche.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wehren_bei_Fritzlar,_Gerichtslinde_(3)_Wurzelstock.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gerichtslinde Zehdenick",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Zehdenick.JPG",
-    "https://commons.wikimedia.org/wiki/File:Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Große Linde bei Teuchatz",
-   "lat": 49.87194167,
-   "lng": 11.10243333,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_Teuchatz,_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_10.jpg"
-   ],
-   "status": "verified",
-   "species": "Large-leaved Lime (Tilia platyphyllos)",
-   "species_basis": "confirmed by de.wikipedia's dedicated article, which calls it a Sommerlinde (Tilia platyphyllos), not a genus guess",
-   "reason": "Delivered to data/research/bamberg-verified.json as bam_005. Matches Bavaria's own Naturdenkmal register (ND-03920, 'Naturdenkmal 1 Linde \"Große Linde\"', status aktuell, 49.87235,11.10251, ~50m from this lead's coordinate: same tree) plus a dedicated de.wikipedia article (pageid 2927371) citing published dendrology literature (Froehlich, 'Wege zu alten Baeumen - Bayern' 1990 and 'Alte liebenswerte Baeume in Deutschland' 2000): girth 770cm at 1.3m height (1990), 787cm at its narrowest point (2012), 822cm at 1m height (2008), height 26m, crown diameter 26m, literature age estimate 350-400 years. Stands immediately beside the public road from Teuchatz to Burggrub (Markt Heiligenstadt i.OFr., Landkreis Bamberg), so access is free and unrestricted. Alive evidence: dated Commons photos from 2015-2016 (CC BY-SA 4.0, photographer Ermell) plus the register's own 'aktuell' status. One caveat for whoever places this on a city page: it is ~16km from Bamberg centre in a rural part of the Fraenkische Schweiz with NO passenger rail (the branch line to Heiligenstadt closed in 1968); it is reachable by car in roughly 25 minutes but not confirmed within CLAUDE.md's ~30-minute public-transport day-trip boundary, so label the travel time honestly rather than presenting it as an easy add-on to the Wildensorg walk."
-  },
-  {
-   "name": "Riesenlinde zu Heede",
-   "lat": 52.993194,
-   "lng": 7.29508,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2011-04_Riesenlinde_Heede_(Niedersachsen).jpg",
-    "https://commons.wikimedia.org/wiki/File:2016_Millennial_Lime_Tree_of_Heede_DE.jpg",
-    "https://commons.wikimedia.org/wiki/File:20221224_Linde_te_Heede_(dtsl)_08b.jpg"
-   ],
-   "status": "verified",
-   "species": "Large-leaved Lime (Tilia platyphyllos)",
-   "species_basis": "confirmed by de.wikipedia's dedicated article as Sommerlinde",
-   "reason": "Delivered to data/research/famousgermany-verified.json as hed_001, single-tree-destination exception. Official Nationalerbe-Baum (National Heritage Tree), widely reported as the thickest lime in Europe, own de.wikipedia article, on Heede's coat of arms. Girth sources disagree (15.39m per wikipedia vs 17.50m per a dated Dec 2018 register measurement); recorded the dated figure and flagged. NOTE: this name appears twice in this leads file (duplicate entries); both are the same tree and both are marked verified here."
-  },
-  {
-   "name": "Heinrichslinde",
-   "lat": 52.26390833,
-   "lng": 10.52403611,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Brunnen-Domplatz_BS-Img01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1885)_241.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1885)_b_241.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tanzlinde (Himmelsberg)",
-   "lat": 50.859197,
-   "lng": 8.914344,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Himmelsberg-Gerichtsplatz_nahe_der_Kirche_mit_Linde_(Alter_gesch%C3%A4tzt_750_Jahre)-20062013-06.JPG",
-    "https://commons.wikimedia.org/wiki/File:Linde_Himmelsberg_(Kirchhain).jpg",
-    "https://commons.wikimedia.org/wiki/File:Linde_in_Himmelsberg_bei_Nacht_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Horner Linde",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Horner_Kirche_-_Linde_(Infotafel)_jh.jpg",
-    "https://commons.wikimedia.org/wiki/File:Horner_Kirche_-_Linde_(Stamm)_jh.jpg",
-    "https://commons.wikimedia.org/wiki/File:Horner_Kirche_-_Linde_jh.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kaditzer Linde",
-   "lat": 51.0833473,
-   "lng": 13.6714672,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20140327220DR_Dresden-Kaditz_Emmauskirchhof_Sommerlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:20140327225DR_Dresden-Kaditz_Emmauskirchhof_Sommerlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1890)_b_130.jpg"
-   ],
-   "status": "RESOLVED 2026-08-29, delivered as dre_005",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kaiser-Lothar-Linde (Königslutter)",
-   "lat": 52.24404167,
-   "lng": 10.81562778,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kaiser-Lothar-Linde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kaiser-Lothar-Linde_K%C3%B6nigslutter.jpg",
-    "https://commons.wikimedia.org/wiki/File:KaiserLotharLindeKoenigslutter2019_04_13.jpg"
-   ],
-   "status": "verified",
-   "species": "Large-leaved Lime (Tilia platyphyllos)",
-   "species_basis": "confirmed by baumkunde.de's tree register as Sommerlinde",
-   "reason": "Delivered to data/research/famousgermany-verified.json as klu_001, single-tree-destination exception. Stands beside the Kaiserdom Koenigslutter, own dedicated de.wikipedia article, legendary 1135 planting by Emperor Lothar III. Alive and 'vital' per baumkunde.de's most recent survey. Girth sources disagree slightly (13.32m 2021 register measurement vs an older 12.50m public figure); recorded the dated register figure and flagged the discrepancy."
-  },
-  {
-   "name": "Kaiserlinde (Elversberg)",
-   "lat": 49.317032,
-   "lng": 7.124023,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2021_Elv.,neue_Kaiserlinde_am_28.01.21-3.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kreisel_Elversberg_Kaiserlinde_(1).JPG",
-    "https://commons.wikimedia.org/wiki/File:Kreisel_Elversberg_Kaiserlinde_(2).JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kaiserlinde (Schloss Burg)",
-   "lat": 51.13767,
-   "lng": 7.15285,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2020-01-01_Kaiserlinde_Schloss_Burg_in_Solingen-Burg_(NRW).jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_November_2019.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_Sommer_2021.jpg"
-   ],
-   "status": "verified",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "sources disagree (Tilia x europaea 'Pallida' per de.wikipedia vs Tilia cordata per Naturpark Bergisches Land); published genus-only, ask the reader",
-   "reason": "Delivered to data/research/famousgermany-verified.json as sol_001, single-tree-destination exception (protected Naturdenkmal No. 51 at the popular Schloss Burg site). A living arbour pruned into shape by monks over generations; girth not measurable per de.wikipedia due to irregular growth. Free access confirmed by Naturpark Bergisches Land."
-  },
-  {
-   "name": "Kandelaberlinde Dorla",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Dorla8.jpg",
-    "https://commons.wikimedia.org/wiki/File:Dorla_Friedhofskandelaberlinde.JPG",
-    "https://commons.wikimedia.org/wiki/File:Dorla_Friedhofslinde.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Körnerlinde",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Eichigt_K%C3%B6rnerlinde_Vogtland_2012_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eichigt_K%C3%B6rnerlinde_Vogtland_2012_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eichigt_K%C3%B6rnerlinde_Vogtland_2012_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Königslinde Linderhof",
-   "lat": 47.57022222,
-   "lng": 10.96084722,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:K%C3%B6nigslinde_Schloss_Linderhof.jpg",
-    "https://commons.wikimedia.org/wiki/File:Schlosspark_Linderhof_-_K%C3%B6nigslinde_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Schlosspark_Linderhof_-_Terrasseng%C3%A4rten_-_Wasserparterre_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Langenstadt Tanzlinde",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Langenstadt_Tanzlinde.JPG",
-    "https://commons.wikimedia.org/wiki/File:Langenstadt_Tanzlinde_2013_.JPG",
-    "https://commons.wikimedia.org/wiki/File:Langenstadt_Tanzlinde_2024.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Linde (Ransbach, Hohenroda)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ransbach-Gerichtsplatz_mit_Linde_(Steineinfassung_und_Holzst%C3%BCtzen)_im_Vorfeld_der_Kirche-20072012.JPG",
-    "https://commons.wikimedia.org/wiki/File:Ransbach_(Hohenroda),_Hauptstra%C3%9Fe_18_und_Linde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ransbach_(Hohenroda),_Kirche_und_Linde.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Linde bei Burg Gleichenstein",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gleichenstein_Linde_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Gleichenstein_Linde_(2).jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Linde bei Michaelskapelle, Bruchsal",
-   "lat": 49.087829,
-   "lng": 8.5603,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Deutschland_Baden-Wuerttemberg_Untergrombach_Naturdenkmal_Linde_Foto_Lividus.jpg",
-    "https://commons.wikimedia.org/wiki/File:Michaelskapelle_auf_dem_Michaelsberg,_Bruchsal-Untergrombach_(Baden)_-_panoramio_(1).jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Linde in Reinborn",
-   "lat": 50.26213853,
-   "lng": 8.35814089,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hre_Linde_Reinborn_2025-08-20.jpg",
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hre_Linde_Reinborn_2025-08-20_B2.jpg",
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hre_Linde_Reinborn_2025-08-20_B3.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Marienlinde (Linden, Wessobrunn)",
-   "lat": 47.842695,
-   "lng": 11.025778,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Marienlinde_(Linden,_Wessobrunn)_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Marienlinde_(Linden,_Wessobrunn)_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Marienlinde_(Linden,_Wessobrunn)_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Lindengruppe an der Lindbachquelle (Lützellinden)",
-   "lat": 50.54189167,
-   "lng": 8.59998889,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-L%C3%BCtzellinden,_Lindengruppe_an_der_Lindbachquelle_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-L%C3%BCtzellinden,_Lindengruppe_an_der_Lindbachquelle_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-L%C3%BCtzellinden,_Lindengruppe_an_der_Lindbachquelle_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Marienlinde Telgte",
-   "lat": 51.985581,
-   "lng": 7.78179,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2013-08_Marienlinde_TelgteNRW.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bildstock,_1,_M%C3%BCnstertor,_Telgte,_Landkreis_Warendorf.jpg",
-    "https://commons.wikimedia.org/wiki/File:Carsten_Marienlinde.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tanzlinde (Niedenstein)",
-   "lat": 51.288051,
-   "lng": 7.518602,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2012-01-14_Tanzlinde_Niedenstein_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:2012-01-14_Tanzlinde_Niedenstein_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Niedenstein,_Fu%C3%9F_der_Tanzlinde.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Neuenrader Gerichtslinde",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde-1-Asio.JPG",
-    "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde1-Bubo.JPG",
-    "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde2-Bubo.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Peesten dance lime tree",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Peesten_dance_lime_tree_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Peesten_dance_lime_tree_(10).jpg",
-    "https://commons.wikimedia.org/wiki/File:Peesten_dance_lime_tree_(11).jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Pfarrlinde (Frankenthal, Sachsen)",
-   "lat": 51.127316,
-   "lng": 14.134039,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Frankenthal_(Sachsen),_Pfarrlinde,_Pfarrberg.jpg",
-    "https://commons.wikimedia.org/wiki/File:Pfarr-_mit_Schwesterlinde_(1).JPG",
-    "https://commons.wikimedia.org/wiki/File:Pfarr-_mit_Schwesterlinde_(2).JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Polchower Linde",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Polchower_Sommerlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Polchower_Sommerlinde_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Polchower_Sommerlinde_Stamm.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Hindenburglinde (Ramsau)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hindenburglinde,_1900.PNG",
-    "https://commons.wikimedia.org/wiki/File:Hindenburglinde,_1900.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hindenburglinde.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Linde (Schenklengsfeld)",
-   "lat": 50.81894,
-   "lng": 9.844984,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Die_1000-j%C3%A4hrige_Dorflinde_in_Schenklengsfeld_(September_2009)_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Linde-schenklengsfeld.jpg",
-    "https://commons.wikimedia.org/wiki/File:Linde_(Schenklengsfeld)_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Schillerlinde (Rödgen)",
-   "lat": 50.59433333,
-   "lng": 8.74895556,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Schillerlinde_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Schillerlinde_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Schillerlinde_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Gerichtslinde in Schlagsdorf",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:GerichtslindeSchlagsdorf312.JPG",
-    "https://commons.wikimedia.org/wiki/File:GerichtslindeSchlagsdorf37.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Schlosslinde (Schlettau)",
-   "lat": 50.561191,
-   "lng": 12.951286,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2018-05-22_Schlosslinde_Schlettau_(Sachsen)_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:2018-05-22_Schlosslinde_Schlettau_(Sachsen)_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:2018-05-22_Schlosslinde_Schlettau_(Sachsen)_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Naturdenkmal Winterlinde (Schönfeld im Barnim)",
-   "lat": 52.680806,
-   "lng": 13.739581,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Sch%C3%B6nfeld_(Barnim)_church_2016_NW.JPG",
-    "https://commons.wikimedia.org/wiki/File:Sch%C3%B6nfeld_(Barnim)_church_2016_SW.JPG",
-    "https://commons.wikimedia.org/wiki/File:Sch%C3%B6nfeld_Winterlinde_lub_2025-01-02.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Schillerlinde (Schulau)",
-   "lat": 53.57613,
-   "lng": 9.706047,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Schillerlinde_(Wedel-Schulau).Gedenkstein.ajb.jpg",
-    "https://commons.wikimedia.org/wiki/File:Schillerlinde_(Wedel-Schulau).ajb.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Schwedenlinde",
-   "lat": 52.460028,
-   "lng": 12.541694,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Beetzsee-Brielow,_Schwedenlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Schwedenlinde.JPG",
-    "https://commons.wikimedia.org/wiki/File:Schwedenlinde_(3).JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "St.-Marinus-Linde",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:St.-Marinus-Linde_Wilparting_Irschenberg-1.jpg",
-    "https://commons.wikimedia.org/wiki/File:St.-Marinus-Linde_Wilparting_Irschenberg-2.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tanzlinde (Baldenhain)",
-   "lat": 50.9107806,
-   "lng": 12.2066833,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34199.JPG",
-    "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34200.JPG",
-    "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34201.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tanzlinde (Effeltrich)",
-   "lat": 49.659611,
-   "lng": 11.092833,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000j%C3%A4hrige_Linde_(Tanzlinde)_vor_der_Wehrkirche_in_Effeltrich_im_Winter.jpg",
-    "https://commons.wikimedia.org/wiki/File:Effeltrich,_Dorflinde-20160515-001.jpg",
-    "https://commons.wikimedia.org/wiki/File:Effeltrich,_Dorflinde-20160515-002.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tanzlinde (Hilgershausen)",
-   "lat": 51.10284137,
-   "lng": 9.47335168,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2007_Januar38.JPG",
-    "https://commons.wikimedia.org/wiki/File:2015-04_ND-3-Stufen-Linde_Hilgershausen(Hessen).jpg",
-    "https://commons.wikimedia.org/wiki/File:2015-04_ND-3-Stufen-Linde_Hilgershausen(Hessen)_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tanzlinde (Limmersdorf)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Limmersdorf_Tanzlinde.JPG",
-    "https://commons.wikimedia.org/wiki/File:Limmersdorf_Tanzlinde_2014_(1).JPG",
-    "https://commons.wikimedia.org/wiki/File:Limmersdorf_Tanzlinde_2014_(2).JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tanzlinde Neudrossenfeld",
-   "lat": null,
-   "lng": null,
-   "photos": [],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tanzlinde Sachsenbrunn",
-   "lat": 50.444085,
-   "lng": 10.944448,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Sachsenbrunn_1992-06-08_03.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tanzlinde_Sachsenbrunn,_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tanzlinde_Sachsenbrunn,_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Türkenlinde (Ottendorf)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ottendorf,_Dorflinde-001.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tuerkenlinde_(1).JPG",
-    "https://commons.wikimedia.org/wiki/File:T%C3%BCrkenlinde_3.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tassilolinde (Wessobrunn)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Die_Tassilolinde_in_Wessobrunn_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Tassilolinde_in_Wessobrunn_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Tassilolinde_in_Wessobrunn_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Winterlinde am Friedhof",
-   "lat": 49.317062,
-   "lng": 8.865476,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Leichenhalle_Eschelbronn.jpg",
-    "https://commons.wikimedia.org/wiki/File:Mahnmal_Friedhof_Eschelbronn.jpg",
-    "https://commons.wikimedia.org/wiki/File:Winterlinde_am_Friedhof_Eschelbronn_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Riesenlinde zu Heede",
-   "lat": 52.993194,
-   "lng": 7.29508,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2011-04_Riesenlinde_Heede_(Niedersachsen).jpg",
-    "https://commons.wikimedia.org/wiki/File:2016_Millennial_Lime_Tree_of_Heede_DE.jpg",
-    "https://commons.wikimedia.org/wiki/File:20221224_Linde_te_Heede_(dtsl)_08b.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  }
- ]
+  "country": "Germany",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "leads": [
+    {
+      "name": "Nationalerbe-Baum",
+      "lat": 49.099083,
+      "lng": 13.23,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bremen_Riensberger_Friedhof_Mammutbaum.jpg",
+        "https://commons.wikimedia.org/wiki/File:Burglinde_(Sommer_Linde)_32._Nationalerbe_Baum_Deutschland_Homberg_Ohms.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eiche_F%C3%BCrst_P%C3%BCckler_Park.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Pücklersche Blutbuche (Muskau Park)",
+      "lat": 51.54715,
+      "lng": 14.7239,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_Bad_Muskau...2H1A1303WI.jpg",
+        "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_Bad_Muskau_81.JPG",
+        "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_in_Bad_Muskau...2H1A1117WI.jpg"
+      ],
+      "status": "lead",
+      "species": "Beech (Fagus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Riesenbuche bei Altmugl",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:ALTMUGL1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Altmugl7.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Hraniční buk (Cínovec)",
+      "lat": 50.732796,
+      "lng": 13.767946,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:C%C3%ADnovec_(Dub%C3%AD)_-_Hrani%C4%8Dn%C3%AD_buk,_2024-06,_obr01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ehemalige_Grenze_Cinovec-Zinnwald.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hrani%C4%8Dn%C3%AD_buk_-_C%C3%ADnovec,_cca_1920-1930.jpg"
+      ],
+      "status": "lead",
+      "species": "Beech (Fagus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Hutbuche bei Frauenroth",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Buche_Frauenroth,_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hutbuche_April2009.JPG",
+        "https://commons.wikimedia.org/wiki/File:Hutbuche_April2009_HF1.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kanzelbuche",
+      "lat": 49.039975,
+      "lng": 8.87275556,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Alte_Kanzelbuche_im_Schnee.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_junge_Kanzelbuche_am_6._Januar_2020.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_junge_Kanzelbuche_am_6._Januar_2020_im_Naturpark_Stromberg-Heuchelberg.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Blutbuche in Pillnitz",
+      "lat": 51.00936,
+      "lng": 13.869502,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-011.jpg",
+        "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-012.jpg",
+        "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-014.jpg"
+      ],
+      "status": "blocked",
+      "species": "Beech (Fagus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "why": "DEAD. Both copper beeches at the entrance to the Schlosspark Pillnitz, planted 1895, have been felled: the first on the Bergpalais side in 2021, the second after an assessment found fungal infection and a high risk of branch failure, its crown taken off for visitor safety. Cuttings taken in 2023, 2024 and 2025 to keep the genetics alive did not root, the shoots being too weak. Never ship."
+    },
+    {
+      "name": "Urbuche",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2020-08_Urbuche_Mitgenfeld.jpg",
+        "https://commons.wikimedia.org/wiki/File:2020-08_Urbuche_Mitgenfeld_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Buche_Mitgenfeld,_1.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Symbolic oaks in Germany",
+      "lat": 52.14319444,
+      "lng": 8.48315556,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20040727_1027_1133-Spenge-Memoschild_Flugplatz_Nagelsholz_auf_dem_Rathausplatz.JPG",
+        "https://commons.wikimedia.org/wiki/File:Die_Eiche.jpg",
+        "https://commons.wikimedia.org/wiki/File:Doberlug_2013_(Alter_Fritz)_06.JPG"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Adam und Eva (Wieseck)",
+      "lat": 50.62953333,
+      "lng": 8.704375,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-Wieseck,_Adam_und_Eva_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-Wieseck,_Adam_und_Eva_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-Wieseck,_Adam_und_Eva_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Alte Eiche (Rödgen)",
+      "lat": 50.59074444,
+      "lng": 8.75022778,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Eiche_R%C3%B6dgen.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Alte_Eiche_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Alte_Eiche_02.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Beckmannshagen-Eiche",
+      "lat": 51.219475,
+      "lng": 7.183075,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_033.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_034.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_035.jpg"
+      ],
+      "status": "verified",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Delivered as wup_004 in data/research/germanybatch-verified.json. Note: located ~2.4km from the Ronsdorfer Anlagen cluster (near Ronsdorfer Talsperre dam), confirmed via its own photo geotag; not part of the same walkable cluster as the other three Wuppertal trees."
+    },
+    {
+      "name": "Betteleiche (Hainich)",
+      "lat": 51.08617,
+      "lng": 10.403403,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Betteleiche,_Hainich_National_Park.jpg",
+        "https://commons.wikimedia.org/wiki/File:Betteleiche,_Nahansicht_im_Winter.jpg",
+        "https://commons.wikimedia.org/wiki/File:Betteleiche-Nationalpark-Hainich.jpg"
+      ],
+      "status": "verified",
+      "reason": "Delivered to data/research/famousgermany-verified.json as hai_001, single-tree-destination exception (flagship landmark of Nationalpark Hainich with its own dedicated hiking trail). Two independent sources (de.wikipedia, official national park page). Species left as genus-only oak (sources say 'Eiche' without settling robur vs petraea); girth conflict between sources (5.90m vs 5.6m) recorded and flagged rather than resolved."
+    },
+    {
+      "name": "Bärenwaldeiche bei Niederholzklau",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau1.JPG",
+        "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau11.JPG",
+        "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau12.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Denkstein und Eiche zur Mahnung für Nachhaltigkeit in den Ronsdorfer Anlagen",
+      "lat": 51.23502,
+      "lng": 7.207558,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_048.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_049.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_050.jpg"
+      ],
+      "status": "verified",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Delivered as wup_003 in data/research/germanybatch-verified.json."
+    },
+    {
+      "name": "Dr. August Köster-Eiche",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_075.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_076.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_077.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Eiche am Forsthaus Grüner Jäger",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:700YearOak_GruenerJaeger_Stapel_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:700YearOak_GruenerJaeger_Stapel_3.jpg",
+        "https://commons.wikimedia.org/wiki/File:700YearOak_GruenerJaeger_Stapel_4.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Eiche an der Kirche (Münzenberg)",
+      "lat": 50.45213306,
+      "lng": 8.77619806,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Kirche_(M%C3%BCnzenberg)_01.JPG",
+        "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Kirche_(M%C3%BCnzenberg)_02.JPG",
+        "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Kirche_(M%C3%BCnzenberg)_03.JPG"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Eiche Schillershöhe",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Schillersh%C3%B6he_I.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Schillersh%C3%B6he_II.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Schillersh%C3%B6he_III.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Eichenniederwald Darlingerode (NDM)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Eichenniederwald_Darlingerode_(Harz)_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eichenniederwald_Darlingerode_(Harz)_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eichenniederwald_Darlingerode_(Harz)_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Erinnerungseiche an die Völkerschlacht bei Leipzig (Berga/Elster)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Berga_Elster_Naturdenkmal_V%C3%B6lkerschlachteiche_1863_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Berga_Elster_Naturdenkmal_V%C3%B6lkerschlachteiche_1863_02.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Everseiche",
+      "lat": 52.303587,
+      "lng": 8.013266,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:20250709_101441_Everseiche_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Freundschaftseiche in Rudolstadt",
+      "lat": 50.718573,
+      "lng": 11.338517,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Freundschaftseiche_2015,_Pflanzung,_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Freundschaftseiche_2015,_Pflanzung,_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Freundschaftseiche_2024,_Sp%C3%A4tsommer,_01.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Hans-Bilstein-Eiche",
+      "lat": 51.233245,
+      "lng": 7.205755,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_021.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_022.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_023.jpg"
+      ],
+      "status": "verified",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Delivered as wup_001 in data/research/germanybatch-verified.json."
+    },
+    {
+      "name": "Hitler-Eiche (Wuppertal)",
+      "lat": 51.235563,
+      "lng": 7.206322,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_059.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_061.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_063.jpg"
+      ],
+      "status": "blocked",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Existence of an oak at this Ronsdorfer Anlagen spot (51.235563, 7.206322) confirmed by a geotagged 2015 Commons photo, but the Hitler-Eiche identification and 1930s planting date rest on a single source: the Commons category page / Wikidata item (Q105661013), which is category metadata rather than a documented account. It does NOT appear in the German Wikipedia Liste der Gedenkbaeume in Wuppertal (which does list the other four Ronsdorf memorial trees precisely, with dates). No independent narrative source found tying this specific tree to a 1933 Hitler-oak planting; the one well-documented Wuppertal Hitler-Eiche found in sources stands at the zoo stadium, a different location. Fails the two-independent-source bar on the fact that actually matters here (the historically loaded identification). Delivered as a lead rather than blocked outright would risk shipping an unverified claim about a sensitive subject; recorded as blocked pending a second independent source (e.g. a local history article, a Stolpersteine/NS-history project, or a council record) that specifically documents this tree."
+    },
+    {
+      "name": "Hunneneiche (Untermerzbach)",
+      "lat": 50.12281,
+      "lng": 10.8535,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hunneneiche,_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hunneneiche,_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:ND-05478_Hunneneiche_bei_Untermerzbach.jpg"
+      ],
+      "status": "verified",
+      "reason": "Delivered to data/research/famousgermany-verified.json as utb_001, single-tree-destination exception. Officially protected Naturdenkmal since 1963 (ND-05478), species confirmed as Quercus robur by monumentale-eichen.de, girth 6.61m. Age sources disagree (500y per Naturpark Hassberge tourism page vs c.220-420y per dendrologist's planting-date estimate); both recorded and flagged rather than resolved."
+    },
+    {
+      "name": "Hüter des Feldes",
+      "lat": 50.12184867,
+      "lng": 10.96154267,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Called_The_natural_monument_%22guardians_of_the_field%22_or_%22Rasierpinselbaum%22,_is_a_1,000-year-old_oak_tree_at_Nedensdorf_district_Lichtenfels_in_Upper_Franconia,_Bavaria,_Germany.JPG",
+        "https://commons.wikimedia.org/wiki/File:Der_%22H%C3%BCter_des_Feldes%22_auch_%22Rasierpinselbaum%22_genannt,_im_Sommer_2014_mit_Teilsch%C3%A4den_an_der_Krone..JPG",
+        "https://commons.wikimedia.org/wiki/File:Hueter_des_Feldes.jpg"
+      ],
+      "status": "verified",
+      "reason": "Delivered to data/research/famousgermany-verified.json as ned_001, single-tree-destination exception. Featured in the 2003 film 'Luther', a Bavarian TV documentary and a dedicated 2023 photo book; has its own de.wikipedia article. Alive but visibly declining (confirmed via a 23 June 2026 field observation logged on baumkunde.de/monumentale-eichen.de: 'vital, trunk completely hollow, crown partly green'); regional conservation authority has stopped active preservation. Age sources disagree sharply (300-500y dendrology estimate vs 'over 1000 years' per press/authority); both recorded and flagged rather than resolved."
+    },
+    {
+      "name": "Jahrhunderteiche",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Barmer_Wald_0006.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Barmer_Wald_0007.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Barmer_Wald_0008.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Lieveneiche",
+      "lat": 51.196958,
+      "lng": 6.957193,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_231.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_232.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hildener_Heide_2016_233.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Pius-Eiche (Haren)",
+      "lat": 52.79027778,
+      "lng": 7.24166667,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Haren,_die_Sankt_Martinus_Kirche_IMG_7309_2020-08-08_16.23.jpg",
+        "https://commons.wikimedia.org/wiki/File:Haren_(Ems)_katedralo_Emsland-Dom_somere_1.JPG",
+        "https://commons.wikimedia.org/wiki/File:Haren_(Ems)_katedralo_Emsland-Dom_somere_2.JPG"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Schlosseiche bei Eisolzried",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Schlosseiche_Eisolzried,_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Schlosseiche_Eisolzried,_St%C3%BCtzer.jpg",
+        "https://commons.wikimedia.org/wiki/File:Schlosseiche_Eisolzried.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tausendjährige Eiche in Bötersheim",
+      "lat": 53.32119,
+      "lng": 9.74675,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:1000j%C3%A4hrige_Eiche_B%C3%B6tersheim_Hamburg_Harburg,_nahe_L%C3%BCneburger_Heide.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tausendjaehrige_Eiche_Boetersheim.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tausendj%C3%A4hrige_Eiche_B%C3%B6tersheim.png"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Volkenrodaer Eiche",
+      "lat": 51.252031,
+      "lng": 10.571594,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Japanischer Schnurbaum am Alsterufer Hamburg",
+      "lat": 53.561528,
+      "lng": 9.997528,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg.jpg",
+        "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg_02.jpg"
+      ],
+      "status": "verified",
+      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Delivered as hbg_008 (species Styphnolobium japonicum confirmed, not just genus) in data/research/germanybatch-verified.json, meant to be added to existing Hamburg city file."
+    },
+    {
+      "name": "Japanischer Schnurbaum (Schillerplatz, Mannheim)",
+      "lat": 49.48638824,
+      "lng": 8.46216023,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20171119Styphnolobium_japonicum1.jpg",
+        "https://commons.wikimedia.org/wiki/File:20171119Styphnolobium_japonicum2.jpg",
+        "https://commons.wikimedia.org/wiki/File:20171119Styphnolobium_japonicum3.jpg"
+      ],
+      "status": "lead",
+      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Japanischer Schnurbaum an der Franz-Josef-Röder-Straße (Saarbrücken)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20120806Styphnolobium_japonicum.jpg",
+        "https://commons.wikimedia.org/wiki/File:20120827Styphnolobium_japonicum1.jpg",
+        "https://commons.wikimedia.org/wiki/File:20120827Styphnolobium_japonicum2.jpg"
+      ],
+      "status": "lead",
+      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Sophora japonica 9-1/B",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Schnurbaum-Sophora_japonica._9-1-B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sophora_japonica_9-1_B_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sophora_japonica_9-1_B_02.jpg"
+      ],
+      "status": "lead",
+      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gerichtslinden Bad Bentheim",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bad_Bentheim_-_Schlo%C3%9Fstra%C3%9Fe_-_Gerichtslinden_01_ies.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bad_Bentheim_-_Schlo%C3%9Fstra%C3%9Fe_-_Gerichtslinden_02_ies.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bad_Bentheim_-_Schlo%C3%9Fstra%C3%9Fe_-_Gerichtslinden_03_ies.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Franzosenlinde (Bargischow)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:BargischowFranzosenlinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:BargischowFranzosenlinde1.jpg",
+        "https://commons.wikimedia.org/wiki/File:BargischowFranzosenlinde2.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Belsener Linde",
+      "lat": 48.392066,
+      "lng": 9.039757,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Belsener_Linde_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Belsener_Linde_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Belsener_Linde_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Königslinde (Invalidenfriedhof Berlin)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Invalidenfriedhof,_Friedhofsmauer_mit_K%C3%B6nigslinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Invalidenfriedhof,_K%C3%B6nigslinde_1897.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Bordesholm Gerichtslinde",
+      "lat": 54.17672222,
+      "lng": 10.01130556,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bordesholm,_the_old_limetree.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde_(Court_Tree)_2010.jpg"
+      ],
+      "status": "blocked",
+      "species": "Winter Lime (Tilia cordata)",
+      "species_basis": "confirmed by de.wikipedia's dedicated article",
+      "why": "DEAD. de.wikipedia's dedicated article ('Bordesholmer Linde') and arboristik.de's article 'Das Ende der Bordesholmer Linde' both confirm the tree could not be saved: on 29 May 2018 a large branch broke off and the tree threatened to topple, with a strong honey fungus (Hallimasch) infestation visible in dying branches. It was removed. Never ship."
+    },
+    {
+      "name": "Collmer Linde",
+      "lat": 51.30276,
+      "lng": 13.01867,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm,_Infotafel.jpg",
+        "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(3).jpg"
+      ],
+      "status": "verified",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "species_basis": "confirmed by Nationalerbe-Baeume register and de.wikipedia as Sommerlinde",
+      "reason": "Delivered to data/research/famousgermany-verified.json as col_001, single-tree-destination exception. Official Nationalerbe-Baum since Oct 2022, Saxony's reputed oldest linden, historic Gerichtslinde/Dingplatz site. Alive, professionally inspected May 2022 with vigorous new growth documented. Popular 'thousand years' claim flagged as folklore against an expert estimate of ~800 years."
+    },
+    {
+      "name": "Peter-Linde (Coppenbrügge)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Burg_Coppenbr%C3%BCgge_Peterlinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Peter-Linde_Burg_Coppenbr%C3%BCgge.jpg",
+        "https://commons.wikimedia.org/wiki/File:Peter_linde.JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Dorflinde in Aua (Neuenstein)",
+      "lat": 50.915651,
+      "lng": 9.570436,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2015-10-24_Dorflinde_in_Neuenstein-Aua_(Hessen)_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015-10-24_Dorflinde_in_Neuenstein-Aua_(Hessen)_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:2016-11-28_Dorflinde_in_Neuenstein-Aua_(Hessen)_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Dorflinde Lischeid",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Lischeid,_Dorflinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Lischeid2_-_Kirche_und_Dorflinde.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Dorflinde Sebbeterode",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Sebbeterode,_Dorflinde_mit_Gerichtsstein.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sebbeterode-Gerichtsplatz_im_S%C3%BCdwesten_der_Kirche)-Gerichtslinde_mit_Holzst%C3%BCtzenkranz_und_Steineinfassung_von_Ortsseite-26062013.JPG",
+        "https://commons.wikimedia.org/wiki/File:Sebbeterode-Gerichtsplatz_im_S%C3%BCdwesten_der_Kirche-Gerichtslinde_mit_Holzst%C3%BCtzenkranz_und_Steineinfassung_in_%C3%9Cbersicht-26062013.JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Einheitslinde in Haunstetten (Augsburg)",
+      "lat": 48.304717,
+      "lng": 10.898034,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Haunstetten,_Einheitslinde_2022,_Fr%C3%BChling,_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Haunstetten,_Einheitslinde_2022,_Fr%C3%BChling,_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Haunstetten,_Einheitslinde_2022,_Fr%C3%BChling,_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Einheitslinde in Rudolstadt",
+      "lat": 50.719006,
+      "lng": 11.335441,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Einheitslinde,_Gedenkstein,_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Einheitslinde,_Gedenkstein_2010,_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Einheitslinde,_Gedenkstein_2010,_02.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Einheitslinde in Ruhla",
+      "lat": 50.893826,
+      "lng": 10.365141,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ruhla,_Friedensplatz,_Einheitslinde,_Schild,_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ruhla,_Friedensplatz,_Einheitslinde,_Schild,_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ruhla,_Friedensplatz,_Einheitslinde,_Sommer,_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Einheitslinden in Bayreuth",
+      "lat": 49.945723,
+      "lng": 11.577187,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bayreuth,_Einheitslinde_1990,_Pflanzung,_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bayreuth,_Luitpoldplatz,_Einheitslinden,_Schild,_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bayreuth,_Luitpoldplatz,_Einheitslinden,_Schild,_02.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Emil-Zatopek-Linde",
+      "lat": 51.235892,
+      "lng": 7.204445,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_084.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_087.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_089.jpg"
+      ],
+      "status": "verified",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Delivered as wup_002 in data/research/germanybatch-verified.json."
+    },
+    {
+      "name": "Freiheitslinde Lindaufeld",
+      "lat": 54.595933,
+      "lng": 9.815023,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Freiheitslinde_Lindaufeld_(Boren).Gedenkstein.1.ajb.jpg",
+        "https://commons.wikimedia.org/wiki/File:Freiheitslinde_Lindaufeld_(Boren).Gedenkstein.2.ajb.jpg",
+        "https://commons.wikimedia.org/wiki/File:Freiheitslinde_Lindaufeld_(Boren).ajb.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Friedenslinde (Passau)",
+      "lat": 48.571887,
+      "lng": 13.460958,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Friedenslinde_(Passau)_im_Winter_2000x3000.JPG",
+        "https://commons.wikimedia.org/wiki/File:Friedenslinde_2015.JPG",
+        "https://commons.wikimedia.org/wiki/File:Friedenslinde_Passau_01.JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Fünffingerlinde",
+      "lat": 54.149448,
+      "lng": 9.220072,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Besichtigung_der_F%C3%BCnffingerlinde_im_Riesewohld_in_Albersdorf.jpg",
+        "https://commons.wikimedia.org/wiki/File:Fuenf-Fingerlinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:F%C3%BCnffingerlinde_Albersdorf_Baum_Schleswig-Holstein.jpg"
+      ],
+      "status": "verified",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "species_basis": "confirmed by baumkunde.de and monumentaltrees.com as Winterlinde",
+      "reason": "Delivered to data/research/famousgermany-verified.json as alb_001, single-tree-destination exception. A single specimen of five fused stems shaped like an open hand, protected Naturdenkmal since 1938, own de.wikipedia article. Vital per baumkunde.de's 2020 survey, girth 4.90m."
+    },
+    {
+      "name": "Galenbecker Tanzlinde",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Tanzlinde.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Geleitete Linden Berndshausen",
+      "lat": 51.04336692,
+      "lng": 9.48038947,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2015-04_Doppellinde_Kn%C3%BCllwald-Berndshausen_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015-04_Doppellinde_Kn%C3%BCllwald-Berndshausen_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015-04_Doppellinde_Kn%C3%BCllwald-Berndshausen_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Geleitete Linden Dagobertshausen",
+      "lat": 51.08062987,
+      "lng": 9.5088761,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Dagobertshausen_3-Linden_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Dagobertshausen_3-Linden_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Dagobertshausen.JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gerichtslinde Erdmannrode",
+      "lat": 50.812168,
+      "lng": 9.786739,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:2017-01-16_Gerichtslinde_Erdmannrode_(Hessen)_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gerichtslinde Göttingen",
+      "lat": 51.534946,
+      "lng": 9.91229,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Alte_Gerichtslinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gerichtslinde,_1,_Groner_Landstra%C3%9Fe,_Weststadt,_G%C3%B6ttingen,_Landkreis_G%C3%B6ttingen.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Goettingen_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gerichtslinde in Alfeld (Leine)",
+      "lat": 51.9907615,
+      "lng": 9.8253568,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:1917_aufgelassener_Alter_Friedhof_Alfeld,_doppelseitige_Infotafel_zwischen_Gerichtslinde_und_Lapidarium.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Gerichtslinde_in_Alfeld_an_der_Leine.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Gerichtslinde_in_Alfeld_an_der_Leine_(19782).jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gerichtslinde Klingenberg",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Die_800_Jahre_alte_Gerichtslinde_in_Klingenberg_am_Main.jpg",
+        "https://commons.wikimedia.org/wiki/File:Spaziergang_durch_Klingenberg_am_Main._Die_Gerichtslinde.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gerichtslinde Scheeßel",
+      "lat": 53.16922805,
+      "lng": 9.48220468,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Gerichtslinde-Scheessel_Niedersachsen_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Gerichtslinde-Scheessel_Niedersachsen_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Gerichtslinde-Scheessel_Niedersachsen_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gerichtslinde Wehren (Fritzlar)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wehren_bei_Fritzlar,_Gerichtslinde_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Wehren_bei_Fritzlar,_Gerichtslinde_(2)_mit_Kirche.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wehren_bei_Fritzlar,_Gerichtslinde_(3)_Wurzelstock.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gerichtslinde Zehdenick",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Gerichtslinde_Zehdenick.JPG",
+        "https://commons.wikimedia.org/wiki/File:Zehdenick_Friedrich-Ebert-Platz_Gerichtslinde.JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Große Linde bei Teuchatz",
+      "lat": 49.87194167,
+      "lng": 11.10243333,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_Teuchatz,_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_10.jpg"
+      ],
+      "status": "verified",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "species_basis": "confirmed by de.wikipedia's dedicated article, which calls it a Sommerlinde (Tilia platyphyllos), not a genus guess",
+      "reason": "Delivered to data/research/bamberg-verified.json as bam_005. Matches Bavaria's own Naturdenkmal register (ND-03920, 'Naturdenkmal 1 Linde \"Große Linde\"', status aktuell, 49.87235,11.10251, ~50m from this lead's coordinate: same tree) plus a dedicated de.wikipedia article (pageid 2927371) citing published dendrology literature (Froehlich, 'Wege zu alten Baeumen - Bayern' 1990 and 'Alte liebenswerte Baeume in Deutschland' 2000): girth 770cm at 1.3m height (1990), 787cm at its narrowest point (2012), 822cm at 1m height (2008), height 26m, crown diameter 26m, literature age estimate 350-400 years. Stands immediately beside the public road from Teuchatz to Burggrub (Markt Heiligenstadt i.OFr., Landkreis Bamberg), so access is free and unrestricted. Alive evidence: dated Commons photos from 2015-2016 (CC BY-SA 4.0, photographer Ermell) plus the register's own 'aktuell' status. One caveat for whoever places this on a city page: it is ~16km from Bamberg centre in a rural part of the Fraenkische Schweiz with NO passenger rail (the branch line to Heiligenstadt closed in 1968); it is reachable by car in roughly 25 minutes but not confirmed within CLAUDE.md's ~30-minute public-transport day-trip boundary, so label the travel time honestly rather than presenting it as an easy add-on to the Wildensorg walk."
+    },
+    {
+      "name": "Riesenlinde zu Heede",
+      "lat": 52.993194,
+      "lng": 7.29508,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2011-04_Riesenlinde_Heede_(Niedersachsen).jpg",
+        "https://commons.wikimedia.org/wiki/File:2016_Millennial_Lime_Tree_of_Heede_DE.jpg",
+        "https://commons.wikimedia.org/wiki/File:20221224_Linde_te_Heede_(dtsl)_08b.jpg"
+      ],
+      "status": "done",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "species_basis": "confirmed by de.wikipedia's dedicated article as Sommerlinde",
+      "reason": "Same tree as the already-published Riesenlinde, Heede (verified/written 2026-09-03).",
+      "published_as": "hed_001"
+    },
+    {
+      "name": "Heinrichslinde",
+      "lat": 52.26390833,
+      "lng": 10.52403611,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Brunnen-Domplatz_BS-Img01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1885)_241.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1885)_b_241.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tanzlinde (Himmelsberg)",
+      "lat": 50.859197,
+      "lng": 8.914344,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Himmelsberg-Gerichtsplatz_nahe_der_Kirche_mit_Linde_(Alter_gesch%C3%A4tzt_750_Jahre)-20062013-06.JPG",
+        "https://commons.wikimedia.org/wiki/File:Linde_Himmelsberg_(Kirchhain).jpg",
+        "https://commons.wikimedia.org/wiki/File:Linde_in_Himmelsberg_bei_Nacht_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Horner Linde",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Horner_Kirche_-_Linde_(Infotafel)_jh.jpg",
+        "https://commons.wikimedia.org/wiki/File:Horner_Kirche_-_Linde_(Stamm)_jh.jpg",
+        "https://commons.wikimedia.org/wiki/File:Horner_Kirche_-_Linde_jh.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kaditzer Linde",
+      "lat": 51.0833473,
+      "lng": 13.6714672,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:20140327220DR_Dresden-Kaditz_Emmauskirchhof_Sommerlinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:20140327225DR_Dresden-Kaditz_Emmauskirchhof_Sommerlinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1890)_b_130.jpg"
+      ],
+      "status": "RESOLVED 2026-08-29, delivered as dre_005",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kaiser-Lothar-Linde (Königslutter)",
+      "lat": 52.24404167,
+      "lng": 10.81562778,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kaiser-Lothar-Linde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kaiser-Lothar-Linde_K%C3%B6nigslutter.jpg",
+        "https://commons.wikimedia.org/wiki/File:KaiserLotharLindeKoenigslutter2019_04_13.jpg"
+      ],
+      "status": "verified",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "species_basis": "confirmed by baumkunde.de's tree register as Sommerlinde",
+      "reason": "Delivered to data/research/famousgermany-verified.json as klu_001, single-tree-destination exception. Stands beside the Kaiserdom Koenigslutter, own dedicated de.wikipedia article, legendary 1135 planting by Emperor Lothar III. Alive and 'vital' per baumkunde.de's most recent survey. Girth sources disagree slightly (13.32m 2021 register measurement vs an older 12.50m public figure); recorded the dated register figure and flagged the discrepancy."
+    },
+    {
+      "name": "Kaiserlinde (Elversberg)",
+      "lat": 49.317032,
+      "lng": 7.124023,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2021_Elv.,neue_Kaiserlinde_am_28.01.21-3.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kreisel_Elversberg_Kaiserlinde_(1).JPG",
+        "https://commons.wikimedia.org/wiki/File:Kreisel_Elversberg_Kaiserlinde_(2).JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kaiserlinde (Schloss Burg)",
+      "lat": 51.13767,
+      "lng": 7.15285,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2020-01-01_Kaiserlinde_Schloss_Burg_in_Solingen-Burg_(NRW).jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_November_2019.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_Sommer_2021.jpg"
+      ],
+      "status": "verified",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "sources disagree (Tilia x europaea 'Pallida' per de.wikipedia vs Tilia cordata per Naturpark Bergisches Land); published genus-only, ask the reader",
+      "reason": "Delivered to data/research/famousgermany-verified.json as sol_001, single-tree-destination exception (protected Naturdenkmal No. 51 at the popular Schloss Burg site). A living arbour pruned into shape by monks over generations; girth not measurable per de.wikipedia due to irregular growth. Free access confirmed by Naturpark Bergisches Land."
+    },
+    {
+      "name": "Kandelaberlinde Dorla",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Dorla8.jpg",
+        "https://commons.wikimedia.org/wiki/File:Dorla_Friedhofskandelaberlinde.JPG",
+        "https://commons.wikimedia.org/wiki/File:Dorla_Friedhofslinde.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Körnerlinde",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Eichigt_K%C3%B6rnerlinde_Vogtland_2012_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eichigt_K%C3%B6rnerlinde_Vogtland_2012_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eichigt_K%C3%B6rnerlinde_Vogtland_2012_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Königslinde Linderhof",
+      "lat": 47.57022222,
+      "lng": 10.96084722,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:K%C3%B6nigslinde_Schloss_Linderhof.jpg",
+        "https://commons.wikimedia.org/wiki/File:Schlosspark_Linderhof_-_K%C3%B6nigslinde_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Schlosspark_Linderhof_-_Terrasseng%C3%A4rten_-_Wasserparterre_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Langenstadt Tanzlinde",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Langenstadt_Tanzlinde.JPG",
+        "https://commons.wikimedia.org/wiki/File:Langenstadt_Tanzlinde_2013_.JPG",
+        "https://commons.wikimedia.org/wiki/File:Langenstadt_Tanzlinde_2024.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Linde (Ransbach, Hohenroda)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ransbach-Gerichtsplatz_mit_Linde_(Steineinfassung_und_Holzst%C3%BCtzen)_im_Vorfeld_der_Kirche-20072012.JPG",
+        "https://commons.wikimedia.org/wiki/File:Ransbach_(Hohenroda),_Hauptstra%C3%9Fe_18_und_Linde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ransbach_(Hohenroda),_Kirche_und_Linde.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Linde bei Burg Gleichenstein",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Gleichenstein_Linde_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Gleichenstein_Linde_(2).jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Linde bei Michaelskapelle, Bruchsal",
+      "lat": 49.087829,
+      "lng": 8.5603,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Deutschland_Baden-Wuerttemberg_Untergrombach_Naturdenkmal_Linde_Foto_Lividus.jpg",
+        "https://commons.wikimedia.org/wiki/File:Michaelskapelle_auf_dem_Michaelsberg,_Bruchsal-Untergrombach_(Baden)_-_panoramio_(1).jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Linde in Reinborn",
+      "lat": 50.26213853,
+      "lng": 8.35814089,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hre_Linde_Reinborn_2025-08-20.jpg",
+        "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hre_Linde_Reinborn_2025-08-20_B2.jpg",
+        "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hre_Linde_Reinborn_2025-08-20_B3.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Marienlinde (Linden, Wessobrunn)",
+      "lat": 47.842695,
+      "lng": 11.025778,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Marienlinde_(Linden,_Wessobrunn)_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Marienlinde_(Linden,_Wessobrunn)_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Marienlinde_(Linden,_Wessobrunn)_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Lindengruppe an der Lindbachquelle (Lützellinden)",
+      "lat": 50.54189167,
+      "lng": 8.59998889,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-L%C3%BCtzellinden,_Lindengruppe_an_der_Lindbachquelle_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-L%C3%BCtzellinden,_Lindengruppe_an_der_Lindbachquelle_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-L%C3%BCtzellinden,_Lindengruppe_an_der_Lindbachquelle_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Marienlinde Telgte",
+      "lat": 51.985581,
+      "lng": 7.78179,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2013-08_Marienlinde_TelgteNRW.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bildstock,_1,_M%C3%BCnstertor,_Telgte,_Landkreis_Warendorf.jpg",
+        "https://commons.wikimedia.org/wiki/File:Carsten_Marienlinde.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tanzlinde (Niedenstein)",
+      "lat": 51.288051,
+      "lng": 7.518602,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2012-01-14_Tanzlinde_Niedenstein_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:2012-01-14_Tanzlinde_Niedenstein_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Niedenstein,_Fu%C3%9F_der_Tanzlinde.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Neuenrader Gerichtslinde",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde-1-Asio.JPG",
+        "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde1-Bubo.JPG",
+        "https://commons.wikimedia.org/wiki/File:Neuenrade-Gerichtslinde2-Bubo.JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Peesten dance lime tree",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Peesten_dance_lime_tree_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Peesten_dance_lime_tree_(10).jpg",
+        "https://commons.wikimedia.org/wiki/File:Peesten_dance_lime_tree_(11).jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Pfarrlinde (Frankenthal, Sachsen)",
+      "lat": 51.127316,
+      "lng": 14.134039,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Frankenthal_(Sachsen),_Pfarrlinde,_Pfarrberg.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pfarr-_mit_Schwesterlinde_(1).JPG",
+        "https://commons.wikimedia.org/wiki/File:Pfarr-_mit_Schwesterlinde_(2).JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Polchower Linde",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Polchower_Sommerlinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Polchower_Sommerlinde_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Polchower_Sommerlinde_Stamm.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Hindenburglinde (Ramsau)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hindenburglinde,_1900.PNG",
+        "https://commons.wikimedia.org/wiki/File:Hindenburglinde,_1900.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hindenburglinde.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Linde (Schenklengsfeld)",
+      "lat": 50.81894,
+      "lng": 9.844984,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Die_1000-j%C3%A4hrige_Dorflinde_in_Schenklengsfeld_(September_2009)_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Linde-schenklengsfeld.jpg",
+        "https://commons.wikimedia.org/wiki/File:Linde_(Schenklengsfeld)_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Schillerlinde (Rödgen)",
+      "lat": 50.59433333,
+      "lng": 8.74895556,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Schillerlinde_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Schillerlinde_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Schillerlinde_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Gerichtslinde in Schlagsdorf",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:GerichtslindeSchlagsdorf312.JPG",
+        "https://commons.wikimedia.org/wiki/File:GerichtslindeSchlagsdorf37.JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Schlosslinde (Schlettau)",
+      "lat": 50.561191,
+      "lng": 12.951286,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2018-05-22_Schlosslinde_Schlettau_(Sachsen)_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:2018-05-22_Schlosslinde_Schlettau_(Sachsen)_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:2018-05-22_Schlosslinde_Schlettau_(Sachsen)_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Naturdenkmal Winterlinde (Schönfeld im Barnim)",
+      "lat": 52.680806,
+      "lng": 13.739581,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Sch%C3%B6nfeld_(Barnim)_church_2016_NW.JPG",
+        "https://commons.wikimedia.org/wiki/File:Sch%C3%B6nfeld_(Barnim)_church_2016_SW.JPG",
+        "https://commons.wikimedia.org/wiki/File:Sch%C3%B6nfeld_Winterlinde_lub_2025-01-02.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Schillerlinde (Schulau)",
+      "lat": 53.57613,
+      "lng": 9.706047,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Schillerlinde_(Wedel-Schulau).Gedenkstein.ajb.jpg",
+        "https://commons.wikimedia.org/wiki/File:Schillerlinde_(Wedel-Schulau).ajb.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Schwedenlinde",
+      "lat": 52.460028,
+      "lng": 12.541694,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Beetzsee-Brielow,_Schwedenlinde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Schwedenlinde.JPG",
+        "https://commons.wikimedia.org/wiki/File:Schwedenlinde_(3).JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "St.-Marinus-Linde",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:St.-Marinus-Linde_Wilparting_Irschenberg-1.jpg",
+        "https://commons.wikimedia.org/wiki/File:St.-Marinus-Linde_Wilparting_Irschenberg-2.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tanzlinde (Baldenhain)",
+      "lat": 50.9107806,
+      "lng": 12.2066833,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34199.JPG",
+        "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34200.JPG",
+        "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34201.JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tanzlinde (Effeltrich)",
+      "lat": 49.659611,
+      "lng": 11.092833,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:1000j%C3%A4hrige_Linde_(Tanzlinde)_vor_der_Wehrkirche_in_Effeltrich_im_Winter.jpg",
+        "https://commons.wikimedia.org/wiki/File:Effeltrich,_Dorflinde-20160515-001.jpg",
+        "https://commons.wikimedia.org/wiki/File:Effeltrich,_Dorflinde-20160515-002.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tanzlinde (Hilgershausen)",
+      "lat": 51.10284137,
+      "lng": 9.47335168,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2007_Januar38.JPG",
+        "https://commons.wikimedia.org/wiki/File:2015-04_ND-3-Stufen-Linde_Hilgershausen(Hessen).jpg",
+        "https://commons.wikimedia.org/wiki/File:2015-04_ND-3-Stufen-Linde_Hilgershausen(Hessen)_02.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tanzlinde (Limmersdorf)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Limmersdorf_Tanzlinde.JPG",
+        "https://commons.wikimedia.org/wiki/File:Limmersdorf_Tanzlinde_2014_(1).JPG",
+        "https://commons.wikimedia.org/wiki/File:Limmersdorf_Tanzlinde_2014_(2).JPG"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tanzlinde Neudrossenfeld",
+      "lat": null,
+      "lng": null,
+      "photos": [],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tanzlinde Sachsenbrunn",
+      "lat": 50.444085,
+      "lng": 10.944448,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Sachsenbrunn_1992-06-08_03.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tanzlinde_Sachsenbrunn,_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tanzlinde_Sachsenbrunn,_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Türkenlinde (Ottendorf)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ottendorf,_Dorflinde-001.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tuerkenlinde_(1).JPG",
+        "https://commons.wikimedia.org/wiki/File:T%C3%BCrkenlinde_3.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tassilolinde (Wessobrunn)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Die_Tassilolinde_in_Wessobrunn_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Tassilolinde_in_Wessobrunn_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Die_Tassilolinde_in_Wessobrunn_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Winterlinde am Friedhof",
+      "lat": 49.317062,
+      "lng": 8.865476,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Leichenhalle_Eschelbronn.jpg",
+        "https://commons.wikimedia.org/wiki/File:Mahnmal_Friedhof_Eschelbronn.jpg",
+        "https://commons.wikimedia.org/wiki/File:Winterlinde_am_Friedhof_Eschelbronn_01.jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Riesenlinde zu Heede",
+      "lat": 52.993194,
+      "lng": 7.29508,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2011-04_Riesenlinde_Heede_(Niedersachsen).jpg",
+        "https://commons.wikimedia.org/wiki/File:2016_Millennial_Lime_Tree_of_Heede_DE.jpg",
+        "https://commons.wikimedia.org/wiki/File:20221224_Linde_te_Heede_(dtsl)_08b.jpg"
+      ],
+      "status": "done",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "published_as": "hed_001",
+      "reason": "Same tree as the already-published Riesenlinde, Heede (verified/written 2026-09-03)."
+    }
+  ]
 }
