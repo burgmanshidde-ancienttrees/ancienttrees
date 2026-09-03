@@ -1,0 +1,60 @@
+{
+  "city": "Higashine",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Japan's largest zelkova grows in a primary school playground. The Great Zelkova of Higashine, the healthiest of Japan's three great zelkovas, measures 16 metres round at chest height and stands on the site of a 14th-century castle keep. Local schoolchildren, called keyaki-kko, try to catch three falling leaves before they touch the ground for a wish. Sources put its age between 1,000 and 1,500 years, undecided. A Special Natural Monument, free, open to the public despite standing on school grounds.",
+  "meta_description": "The Great Zelkova of Higashine, Yamagata: Japan's largest zelkova, 16m round, 1,000 to 1,500 years old, in a school playground. Free to visit.",
+  "question_meta": "Higashine's mapped tree is the Great Zelkova of Higashine, Japan's largest zelkova, put at 1,000 to 1,500 years old.",
+  "question_answer": "Higashine's mapped tree is the Great Zelkova of Higashine, one of Japan's three great zelkovas and the only one graded a Special Natural Monument, a tier above the other two. Its age is disputed between experts: one assessment puts it over 1,000 years, a later one over 1,500, and neither has given way.",
+  "question_context": "The tree measures 16 metres round at chest height and 24 metres at the roots, forking into two stems about 5.5 metres up, and a 1980 ranking of Japan's zelkovas gave it the country's top rank, East Yokozuna, the sumo term for the highest grade. It grows in the playground of Higashine Elementary School, on the site of Odajima Castle's main keep, built in 1347; the tree was already substantial when the walls went up. It once had a partner, called the mother and father trees, and the father died in 1885. A storm took a major north-facing bough in 1902, why the crown is thin on that side, and the recorded height has fallen from 35 metres at the 1957 designation to about 28 today. The base is hollow, large enough for two tatami mats, and people once crawled through it hoping for a child; it is fenced off now for the tree's protection, though the grounds remain genuinely open, listed on the city's own tourism pages and visited on weekends when school is out. Local children, called keyaki-kko, are taught that catching three falling leaves before they land earns a wish.",
+  "hero_tree_id": "hgn_001",
+  "oldest_tree_id": "hgn_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is Japan's largest zelkova and one of the Three Great Zelkovas of Japan, the only one of the trio graded a Special Natural Monument. It stands on the site of a 1347 castle keep."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. One expert assessment puts it over 1,000 years, a later one over 1,500, and neither figure has been settled."
+    },
+    {
+      "q": "Can I really visit a tree in a school playground?",
+      "a": "Yes. The city itself lists it as an open tourist attraction, and visitors describe walking in freely, including on weekends when school is out. The tree's own hollow base is fenced off for its protection, though the grounds are open."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About 20 minutes on foot from JR Sakuranbo-Higashine Station on the Ou Main Line, or about 8 minutes by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hgn_001",
+      "name": "The Great Zelkova of Higashine",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "1,000 to 1,500+ years (sources disagree)",
+      "age_min": 1000,
+      "age_max": 1500,
+      "girth_cm": 1600,
+      "location": {
+        "address": "1-1-1 Honmaru-minami, Higashine, Yamagata Prefecture 999-3783, in the yard of Higashine Municipal Higashine Elementary School",
+        "latitude": 38.441657,
+        "longitude": 140.401998,
+        "neighbourhood": "Honmaru-minami, Higashine"
+      },
+      "story": "Japan's largest zelkova grows in a primary school playground. The children of Higashine Elementary are called keyaki-kko, zelkova children, and are taught that catching three falling leaves before they touch the ground earns a wish. The tree they chase measures 16 metres round at chest height and 24 at the roots, and forks into two stems five and a half metres up. Of the three great zelkovas of Japan it is the only Special Natural Monument, a grade above the other two, and the only one still described as robust rather than ageing; a 1980 ranking of the country's zelkovas gave it the top sumo rank on the east side, East Yokozuna.\n\nThe playground was the main keep of Odajima Castle, built in 1347, and the tree was already substantial when the walls went up around it. It had a partner: two zelkovas stood here, the mother tree and the father tree, and the father died in 1885. A storm took a great north-facing bough in 1902, which is why the crown is thin on that side, and the recorded height has come down from 35 metres at the 1957 designation to 28 now. The base is hollow, with room for about two tatami mats; people once crawled through it hoping for a child, though it is fenced off today. On the age the experts split: one assessment put it over a thousand years, a later one over fifteen hundred, and neither has given way.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%A0%B9%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD",
+        "https://www.city.higashine.yamagata.jp/tourism/asobu/39",
+        "https://kyoju.biodic.go.jp/?_action=gtcontents&_command=column042",
+        "https://www.jalan.net/kankou/spt_06211ac2100126538/"
+      ],
+      "access": "Free, no ticket. It stands in the yard of a working elementary school, but the tree is treated as an open tourist attraction by the city itself and visitors describe walking in and viewing it, including on weekends when school is out. The base used to be open to crawl through but is now fenced off and closed to entry, so visitors view it rather than touch it.",
+      "transport": "About 20 minutes on foot from JR Sakuranbo-Higashine Station (Ou Main Line), or about 8 minutes by car / 3 km",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when the leaves come down and the schoolchildren chase them" }
+    }
+  ]
+}

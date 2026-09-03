@@ -1,6 +1,6 @@
 {
  "country": "Japan",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown.",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown. 2026-09-03 verify pass (1 agent, 4 candidates): all 4 verified and delivered to data/research/{higashiagatsuma,higashine,takayama,ofunato}-verified.json. None blocked. Entries removed from this leads list now that they are delivered elsewhere.",
  "leads": [
   {
    "name": "Narao Akō Tree",
@@ -212,18 +212,6 @@
    "reason": "Already on the site as kan_001. Found on 2026-09-01 when a verify pass re-researched it from this list: the famous-tree leads carry no marker for what we already map, so five of nineteen Japanese candidates were trees we already had. Marked here so no pass pays for it a third time."
   },
   {
-   "name": "Dokonjo Poplar",
-   "lat": 39.1175,
-   "lng": 141.81361111,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Dokonjo_Poplar_Square.jpg",
-    "https://commons.wikimedia.org/wiki/File:Dokonjo_poplar.jpg"
-   ],
-   "status": "lead",
-   "species": "Poplar (Populus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Eimeiji no Kinmokusei",
    "lat": 36.261642,
    "lng": 139.463007,
@@ -298,30 +286,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Haramachi no Okeyaki",
-   "lat": 36.574839,
-   "lng": 138.83189,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Haramachi-no-O-Keyaki_201907_001.jpg",
-    "https://commons.wikimedia.org/wiki/File:Haramachi-no-O-Keyaki_202206_001.jpg",
-    "https://commons.wikimedia.org/wiki/File:Haramachi-no-O-Keyaki_202206_002.jpg"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Hida-kokubunji no Ōichō",
-   "lat": 36.14311111,
-   "lng": 137.25381389,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Big_Ginkgo_Tree_in_Hida_Kokubun-ji.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Hida_Kokubunji_Temple.jpg",
-    "https://commons.wikimedia.org/wiki/File:Grand_ginkgo_tree_and_Bell_Tower_Gate_of_Hida-Kokubunji_Temple_in_a_snowy_day.jpg"
-   ],
-   "status": "lead"
-  },
-  {
    "name": "Higashi Akuragawa Inunashi Jiseichi",
    "lat": 34.988348,
    "lng": 136.62461,
@@ -331,19 +295,6 @@
     "https://commons.wikimedia.org/wiki/File:Higashi_Akuragawa_Pyrus_calleryna_habitat._Photographed_April_29,_1934.jpg"
    ],
    "status": "lead"
-  },
-  {
-   "name": "Higashine no Okeyaki",
-   "lat": 38.441657,
-   "lng": 140.401998,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Great_zelkova_of_Higashine._January_2022_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Great_zelkova_of_Higashine._January_2022_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Great_zelkova_of_Higashine._January_2022_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Higashiuchi no Shidare Enoki",

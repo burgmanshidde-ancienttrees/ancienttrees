@@ -1,0 +1,60 @@
+{
+  "city": "Nagano",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "One tree, not to be confused with its famous namesake. The Jindai-zakura of Suzakura Shrine is the only nationally designated natural monument cherry tree in Nagano Prefecture, put at roughly 1,200 years and standing on legend and repaired limbs since a windstorm broke one nearly a century ago. It is a genuinely rural visit, a bus, a shared taxi and a thirty-minute walk, with no parking at the shrine itself. Free, open, and still flowering every spring.",
+  "meta_description": "The Jindai-zakura of Suzakura Shrine, Nagano: a 1,200-year cherry, the only nationally designated cherry monument in the prefecture. Free.",
+  "question_meta": "Nagano's mapped tree is the Jindai-zakura of Suzakura Shrine, put at roughly 1,200 years, a National Natural Monument since 1935.",
+  "question_answer": "Nagano's mapped tree is the Jindai-zakura of Suzakura Shrine, an Edo-higan cherry put at roughly 1,200 years, a broad tradition rather than a ring count. It has been a National Natural Monument since December 1935 and is the only nationally designated natural monument cherry tree in Nagano Prefecture.",
+  "question_context": "This tree shares its name with a more famous Jindai-zakura in Hokuto, Yamanashi, about 100 kilometres away; Jindai-zakura just means age-of-the-gods cherry, a type-name several old cherries across Japan carry, and the two trees are unrelated. This one has its own legend, that the god Susanoo-no-Mikoto planted his walking staff here and it grew into the tree standing today, and a Noh play, Suzakura, is said to be based on it. Its trunk once carried three major limbs; the southern one broke in a windstorm sometime in the 1910s or 1920s, and the two remaining now stand on supports, treated by a tree doctor in 1992 after visibly weakening. Measurements vary with where the tape goes: 11.3 metres round at breast height, 9 to 9.8 metres nearer the roots, two different points on the same tree rather than a disagreement. The age, roughly 1,200 years, is kept as a broad tradition rather than sharpened into a figure. Reaching it means a bus from Nagano Station, then a shared taxi, then a thirty-minute walk, with no parking at the shrine; a rural approach rather than a doorstep visit. It still flowers every spring, late April into early May.",
+  "hero_tree_id": "ngn_001",
+  "oldest_tree_id": "ngn_001",
+  "faq": [
+    {
+      "q": "Is this the same Jindai-zakura as the famous one in Yamanashi?",
+      "a": "No. Jindai-zakura is a type-name several old Japanese cherries carry. This one stands at Suzakura Shrine in Nagano City, about 100 kilometres from the well-known tree in Hokuto, and the two are unrelated."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Put at roughly 1,200 years by tradition rather than a ring count. This page keeps that as a broad estimate rather than a precise figure."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, the shrine grounds are open to the public with no fee. There is no parking at the site itself."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By public transport it takes a bus from Nagano Station, then a shared taxi, then about a 30-minute walk. By car it is roughly 40 minutes from Nagano interchange. This is a genuinely rural outing, not a quick stop."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ngn_001",
+      "name": "The Jindai-zakura of Suzakura Shrine",
+      "species": "Edo-higan Cherry (Prunus itosakura)",
+      "age_estimate": "about 1,200 years",
+      "age_min": 1000,
+      "age_max": 1400,
+      "girth_cm": 1130,
+      "location": {
+        "address": "513 Izumidaira, Nagano City, Nagano Prefecture",
+        "latitude": 36.680364,
+        "longitude": 138.162017,
+        "neighbourhood": "Izumidaira, Nagano City"
+      },
+      "story": "This is not the famous Jindai-zakura. Japan has several trees carrying that name, which just means age-of-the-gods cherry, and this one stands in a different prefecture from the well-known tree in Hokuto, about 100 kilometres away. It has its own legend: that the god Susanoo-no-Mikoto planted his walking staff here on his way through, and it grew into this cherry. A Noh play, Suzakura, is said to be based on it.\n\nIt has been a National Natural Monument since December 1935, the only nationally designated natural monument cherry tree in Nagano Prefecture. Its trunk once had three major limbs; the southern one broke in a windstorm sometime in the 1910s or 1920s, and the two that remain now stand on supports. A tree doctor treated it in 1992 after it had visibly weakened.\n\nMeasurements vary with where the tape goes. At breast height the trunk runs 11.3 metres round; nearer the roots, separate sources give 9 to 9.8 metres, which is the same tree measured at two different points rather than a disagreement. Its age is put at roughly 1,200 years, a broad tradition rather than a ring count, and this page keeps it that wide.\n\nGetting there means committing to it: a bus, then a shared taxi, then a thirty-minute walk, with no parking at the shrine itself. It still flowers every spring, from late April into early May, and a guide published this same year confirms it as a current, blooming destination.",
+      "verified_sources": [
+        "https://online.bunka.go.jp/heritages/detail/216449",
+        "https://ja.wikipedia.org/wiki/%E7%B4%A0%E6%A1%9C%E7%A5%9E%E7%A4%BE",
+        "https://www.nagano-cvb.or.jp/modules/sightseeing/page/374",
+        "https://article.yahoo.co.jp/detail/158e70b3ae028c3322ac382bd3c1ece26a00f02a"
+      ],
+      "access": "Free, no ticket, shrine grounds open to the public like any Shinto shrine precinct. No parking at the site. Reached only by bus/taxi plus a real walk (see transport); a genuinely rural approach, not a doorstep visit.",
+      "transport": "About 40 minutes by car from Nagano IC. By public transport (weekdays only): bus from JR Nagano Station (about 5 min) to 'Hana no Komichi', then a shared taxi (about 21 min) to 'Sakagaku', then about a 30-minute walk. An alternative cited route is roughly 30 minutes by bus from Nagano Station followed by a 30-minute walk.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": { "months": [4, 5], "kind": "flowers", "label": "late April into early May, when the old, supported crown flowers again" }
+    }
+  ]
+}

@@ -3,22 +3,17 @@
     {
       "candidate": "Speierling im Kräherwald bei Kräherwaldstr. 190 a",
       "coordinates": [48.79003, 9.14863],
-      "reason": "Official Naturdenkmal (register no. 81110000505, ordinance entry 5/5, Stadtbezirk West, Flurstuck 9546/1), designated 24-06-2003 for rarity (Seltenheit) and landscape character. Only one source confirmed this pass (the register itself, via LUBW steckbrief and the city's own ordinance PDF); no independent second source found (search results returned only the register content restated, and a komoot highlight page for a Speierling in this area returned no readable article text). Needs a second source (news, local hiking-society write-up, or a dated photo) before it can ship."
+      "reason": "Official Naturdenkmal (register no. 81110000505, ordinance entry 5/5, Stadtbezirk West, Flurstuck 9546/1), designated 24-06-2003 for rarity (Seltenheit) and landscape character. Re-checked 2026-09-03: still only one source (the register/LUBW steckbrief, restated verbatim by the city ordinance PDF and by de.wikipedia's 'Liste der Naturdenkmale in Stuttgart', which is not independent since it is sourced from the same register). Searched baumkunde.de, komoot highlights (2836920, 2596561, 2661655, all unrelated: a dead Speierling in Bavaria and two generic Kräherwald-forest highlights with no tree content), and Stuttgart forestry-office pages; nothing further found. Two search attempts made per BRIEF_RESEARCH.md's stall rule; stopping here. Still needs a second, independent descriptive source before it can ship."
     },
     {
       "candidate": "Speierling im Kräherwald (plain, without street address)",
       "coordinates": null,
-      "reason": "A second, separately numbered Naturdenkmal (register no. 81110000208, ordinance entry 2/8, Stadtbezirk Nord, Flurstuck 9546/14, a different Flurstuck and a different Stadtbezirk than the Kräherwaldstr. 190a tree). The Wikipedia/Wikitext infobox gives it the IDENTICAL coordinates to the Kräherwaldstr. 190a tree (48.79003, 9.14863), which cannot be right for two objects in different city districts; this looks like a copy-paste error in the Wikipedia source rather than a real duplicate location. Not used this pass because the true coordinate is unknown. Needs its own coordinate, e.g. from the LUBW map viewer or an on-the-ground source, before it can be verified or folded with the other Speierling."
-    },
-    {
-      "candidate": "Platane am Spielhaus (Wikidata Q131947999)",
-      "coordinates": [48.71019, 9.20743],
-      "reason": "Supplied in the brief's Wikidata sweep, not researched this pass for time. London Plane near a 'Spielhaus' (playhouse); needs a first pass to find what site this is (park, palace grounds, school) and a second source."
+      "reason": "A second, separately numbered Naturdenkmal (register no. 81110000208, ordinance entry 2/8, Stadtbezirk Nord, Flurstuck 9546/14, a different Flurstuck and a different Stadtbezirk than the Kräherwaldstr. 190a tree). The Wikipedia/Wikitext infobox gives it the IDENTICAL coordinates to the Kräherwaldstr. 190a tree (48.79003, 9.14863), which cannot be right for two objects in different city districts; this looks like a copy-paste error in the Wikipedia source rather than a real duplicate location. Re-checked 2026-09-03, same wikitext fetch, coordinates still identical to the other Speierling and no independent coordinate found. Needs its own coordinate (e.g. the LUBW map viewer or an on-the-ground source) before it can be verified or folded with the other Speierling."
     },
     {
       "candidate": "Baumgruppe vor Schloss Solitude, the two Bergahorn (sycamore maples)",
       "coordinates": [48.78743, 9.08391],
-      "reason": "Same official Naturdenkmal group as stu_006 (the ash). The two accompanying sycamore maples were not individually measured or described by any source found this pass; the ash alone was well enough documented (baumkunde.de) to ship. If a source is later found describing the maples specifically, they belong to the same entry rather than a new one."
+      "reason": "Same official Naturdenkmal group as stu_006 (the ash). Re-checked 2026-09-03: searched baumkunde.de and general web for a Bergahorn/Solitude description; nothing found beyond the register's ash entry. The two accompanying sycamore maples are still not individually measured or described by any source. The ash alone remains well enough documented (baumkunde.de) to ship on its own. If a source is later found describing the maples specifically, they belong to stu_006's entry rather than a new one."
     }
   ],
   "blocked": [
@@ -31,6 +26,16 @@
       "candidate": "Dicke Eiche im Mietholz (Wikidata Q58020248)",
       "coordinates": [48.73628, 9.04887],
       "reason": "Location uncertain: the Mietholz is a strictly protected Bannwald forest reserve described as separated from the Sindelfingen forest by the A8/A81 motorway and as the forest reserve closest to Stuttgart, which suggests it may sit outside Stuttgart's own municipal boundary (unconfirmed either way this pass). Access is also a concern independent of the boundary question: sources describe the oak as 'deep within the forest, hidden off marked trails', and a Bannwald (strict forest nature reserve) commonly restricts visitors to marked paths, which would put the tree itself off-limits even if the general area is open. Needs a boundary check and an access answer (does a permissive path reach it, per the OSM-access technique in BRIEF_RESEARCH.md) before it can be verified either way."
+    },
+    {
+      "candidate": "Eiche am Schafweideweg (Wikidata Q108744770)",
+      "coordinates": [48.71838, 8.99515],
+      "reason": "Checked 2026-09-03: Wikidata's own location data places this oak in Sindelfingen (Böblingen district), a separate town roughly 15 km from Stuttgart's centre, the same as the already-blocked Dronfieldpark willow. Not in Stuttgart; a candidate for a future Sindelfingen page, not this one."
+    },
+    {
+      "candidate": "Linde am Steinbaß (Wikidata Q1430583)",
+      "coordinates": [48.66160, 9.0683],
+      "reason": "Checked 2026-09-03: Wikidata's own location data places this lime in Schönaich (Böblingen district), a separate municipality roughly 15 km south of Stuttgart's centre, protected under its own LUBW entry (81150440002). Not in Stuttgart; a candidate for a future Schönaich page, not this one."
     }
   ]
 }
