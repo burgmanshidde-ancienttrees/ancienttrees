@@ -5,7 +5,7 @@
       "name": "Bodhi/Peepul Tree",
       "species": "Ficus religiosa",
       "locality": "Old Riverside School",
-      "reason": "Girth 9.1m, height 70ft, vitality Excellent per register; a Ficus religiosa on Big Island soil is a strong candidate. Blocked for now under hard rule 10's school-grounds test: could not find evidence this pass that the former Riverside Elementary School grounds are genuinely open to the public (it appears tied to the historic Riverside/Hilo High School site along the Wailuku River; a 'Riverside Park' name surfaces in passing but was not confirmed as the same open ground). Needs a source stating the grounds are open (a public path, weekend access, or similar) before it can ship."
+      "reason": "[RESOLVED 2026-09-03: still not shippable] Girth 9.1m, height 70ft, vitality Excellent per register, a genuinely strong candidate on paper. Confirmed this pass: the former Riverside Elementary School site at 450 Waianuenue Avenue is now the East Hawai'i Regional Special Education Office, a working Department of Education administrative building, not a school children attend and not a park. No source found stating its grounds are open to casual visitors (no public path, no weekend hours, nothing like the churchyard or open-campus exceptions in hard rule 10). No second source (news, tourism, university extension, Wikipedia, iNaturalist) names or describes this specific tree at all, despite a genuine search. Stays a lead: it needs either evidence the grounds are open, or a source that independently corroborates the tree, before it can ship. A phone call to the DOE office or a reader tip would settle it."
     },
     {
       "register_id": "1177",
@@ -19,35 +19,35 @@
       "name": "Weeping Fig",
       "species": "Ficus benjamina",
       "locality": "Kilauea Ave.",
-      "reason": "Girth 5.4m per register. Not researched this pass; time-boxed out. Worth a search pass of its own."
+      "reason": "[RESOLVED 2026-09-03: researched, not shippable yet] Girth 5.4m, height 38.5ft, vitality Good per register. Land_use_raw 'I' (institutional) and owner 'State of Hawai'i', the same combination as the Gold Tree entry (1167) at the Forestry Arboretum, and Kilauea Ave. is indeed where the state-run Hilo Nursery Arboretum sits (confirmed public, see 1167 below), which makes the arboretum a plausible home for this tree. But the register's own locality text says 'Kilauea Ave.', not 'Forestry Arboretum' the way 1167 does, so asserting it stands inside the arboretum would be a bridge claim the sources do not make. No second source (news, arboretum inventory, iNaturalist, Wikipedia) names a weeping fig on Kilauea Ave. specifically. Also worth checking: a large banyan on Kilauea Ave was itself an exceptional tree that fell across the road in July 2025 (Hawaii Tribune-Herald), a reminder that this stretch of road has real tree news coverage, so a more targeted search of that outlet's archive may surface this fig too."
     },
     {
       "register_id": "1187",
       "name": "Monkeypod",
       "species": "Albizia saman",
       "locality": "Kamehameha Ave. and Pauahi St.",
-      "reason": "No girth recorded. Not researched this pass. A near-duplicate register row at the same rounded coordinate (excellent vitality, no locality text) may be the same tree double-entered; check for a register twin before verifying."
+      "reason": "[RESOLVED 2026-09-03: researched, not shippable yet] No girth recorded. Land_use_raw 'P' and owner 'County of Hawai'i' place this squarely on public park land: Kamehameha Ave. and Pauahi St. is the Hilo Bayfront Park / Park-and-Ride area bordering the Waiolama Canal, a couple of hundred metres from hbi_006 (the Coconut of Waiolama Canal, shipped this pass) and genuinely open, free, no gate. But monkeypod is a common park and street tree across Hawaii and no source found this pass names or distinguishes this specific specimen from the park's other trees, so it does not yet clear 'genuinely old OR visually spectacular OR historically significant' on real evidence rather than assumption. The near-duplicate register row noted previously (excellent vitality, no locality text, same rounded coordinate) was not re-checked this pass; still worth confirming it is not a double-entry of this same tree before any future verification."
     },
     {
       "register_id": "1186",
       "name": "Monkeypod",
       "species": "Albizia saman",
       "locality": "85 Lihiwai Street",
-      "reason": "Fair vitality, no girth. Not researched this pass."
+      "reason": "Fair vitality, no girth. Owner is Suisan Company (a private fish-market business at the Ice Pond/Lihiwai Street area), land_use_raw 'SC'. Not researched this pass beyond reading the register row; likely private commercial land unless it proves visible/accessible from the public street. Lower priority than the park-owned candidates."
     },
     {
       "register_id": "1164",
       "name": "Coconut",
       "species": "Cocos nucifera",
       "locality": "Waiolama Canal, Hilo",
-      "reason": "No girth/height. Not researched; coconut palms are common island-wide and this specimen would need a specific story (age, planting history) to clear the collectible-point bar rather than reading as an ordinary palm."
+      "reason": "[RESOLVED 2026-09-03: VERIFIED AND SHIPPED as hbi_006, 'The Coconut of Waiolama Canal'.] Confirmed the Waiolama Canal sits within/beside the Wailoa River State Recreation Area (free, state-run, open daily, land_use_raw 'P' matching Kalakaua Park's own coding), and found a genuinely independent second source, kaahelehawaii.com's history of Pi'opi'o/Waiolama, which documents a specific coconut-grove history at this exact place (an 1864 chant, the old place name 'Waiolama Niu', and tsunami-survivor stories about people climbing the surviving coconut trees). Shipped flagged and approximate: no source pins which individual palm among the canal's tree cover is the designated one, only that the place and species are well documented."
     },
     {
       "register_id": "1167",
       "name": "Gold Tree",
       "species": "Roseodendron donnell-smithii",
       "locality": "Forestry Arboretum",
-      "reason": "Not researched this pass. The Hilo Forestry (Ho'olulu) Arboretum is a genuine public site and worth checking; a flowering gold tree is visually striking when in bloom."
+      "reason": "[RESOLVED 2026-09-03: researched, not shippable yet] Confirmed the Hilo Forestry (Ho'olulu) Arboretum is real and genuinely public: it is the Hilo Nursery Arboretum on Kilauea Ave (office access via East Kawili St), 19.4 acres, over 50 trees, free, self-guided, but visitors check in at the DOFAW office (7:30am-3:30pm) for a numbered plant-tag list; became a public park in 1964, still state-run. That resolves the access half in the arboretum's favour (a check-in during posted hours reads closer to the paid-entry/booking exception than to a private gatekeeper). CAUTION for whoever picks this up next: a WebSearch AI summary claimed 'an exceptional specimen of this tree grows in the Hilo Arboretum', but the actual cited page (marinelifephotography.com) does not contain that sentence anywhere and never mentions Hilo at all, a caught case of the search-summary-invents-facts trap BRIEF_RESEARCH.md warns about. No genuine second source was found naming a Gold Tree at this arboretum specifically; the register's own accessibility_raw field for this row reads 'N/A?', suggesting the register itself was unsure. Needs a source (the arboretum's own numbered plant list, a visitor account, a flowering-season photo) that actually names this tree before it can ship."
     }
   ],
   "blocked": [
