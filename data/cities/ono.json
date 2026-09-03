@@ -1,0 +1,55 @@
+{
+ "city": "Ono",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Ono, a town in Fukushima's hill country, has one thing worth the trip: a matched pair of cedars flanking the approach to Suwa Shrine, known locally as Grandpa and Grandma. Shrine tradition dates them to 780. A government botanist surveyed them in 1936, and Japan declared them a National Natural Monument the year after, on the strength of a couple that has stood together, unbroken, for well over a thousand years. Five minutes from the station, and both trees in good health.",
+ "meta_description": "Ono's Grandpa and Grandma cedars flank Suwa Shrine, planted together by tradition around 780 and named a National Natural Monument in 1937.",
+ "question_answer": "The oldest tree in Ono is Jiji Sugi, Grandpa Cedar, one of a matched pair of Japanese cedars flanking the approach to Suwa Shrine that shrine tradition dates to the year 780, alongside its partner Baba Sugi, Grandma Cedar, about 1.4 metres away. That planting date is tradition rather than a recorded fact, but both trees have stood, unbroken, since at least a 1936 government survey confirmed their size.",
+ "question_meta": "Jiji Sugi, Grandpa Cedar, one of Ono's paired Suwa Shrine cedars, is dated by tradition to the year 780 and named a National Natural Monument since 1937.",
+ "question_context": "Jiji Sugi and Baba Sugi, Grandpa and Grandma, stand 1.37 metres apart on the approach to Suwa Shrine in Ono, a small town in Fukushima Prefecture, five minutes on foot from Natsui Station. Ono Town treats them as a married couple, a meoto-sugi, which is why they count as one thing to see rather than two: there is a single obvious place to stand, between them. Grandpa runs 48.5 metres tall with a trunk 9.2 metres round; Grandma is 47.8 metres tall and 9.5 metres round, so the taller tree carries the grandfather's name while the thicker trunk belongs to the grandmother. Botanist Manabu Miyoshi surveyed the pair on 10 October 1936, and Japan declared them a National Natural Monument in December 1937. Shrine tradition holds that Fujiwara no Tsuguna planted the pair as saplings in 780, the year he is said to have founded the shrine to pray for victory in a northern campaign. Both trees remain in good health today, with no visible major damage or decline on either trunk.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Ono?",
+   "a": "Jiji Sugi, Grandpa Cedar, one half of a paired cedar at Suwa Shrine that local tradition dates to the year 780. Its partner, Baba Sugi, Grandma Cedar, stands 1.4 metres away and is treated as the same age."
+  },
+  {
+   "q": "Why are they called Grandpa and Grandma?",
+   "a": "Ono Town treats the pair as a married couple, a meoto-sugi. The taller, thinner tree facing the shrine hall on the right is Jiji-sugi, Grandpa; the shorter, thicker one on the left is Baba-sugi, Grandma."
+  },
+  {
+   "q": "Is Suwa Shrine free to visit?",
+   "a": "Yes. The shrine grounds are open to the public with no gate, ticket or appointment needed, five minutes on foot from Natsui Station."
+  },
+  {
+   "q": "How old are the cedars really?",
+   "a": "Shrine tradition puts their planting at 780, which would make them over 1,200 years old, but that date comes from the shrine's own founding story rather than a ring count or any independent record. Treat it as tradition, not measurement."
+  }
+ ],
+ "trees": [
+  {
+   "id": "tmr_001",
+   "name": "Jiji Sugi and Baba Sugi of Suwa Shrine",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "age_estimate": "roughly 1,100 to 1,200 years",
+   "age_min": 1100,
+   "age_max": 1200,
+   "girth_cm": 920,
+   "location": {
+    "address": "137 Machiya, Natsui, Ono Town, Tamura District, Fukushima Prefecture, within the grounds of Suwa Shrine",
+    "latitude": 37.255027,
+    "longitude": 140.66016,
+    "neighbourhood": "Natsui, Ono"
+   },
+   "verified_sources": [
+    "https://www.town.ono.fukushima.jp/soshiki/7/meotosugi.html",
+    "https://ja.wikipedia.org/wiki/%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE%E3%81%AE%E7%BF%81%E3%82%B9%E3%82%AE%E5%AA%BC%E3%82%B9%E3%82%AE"
+   ],
+   "access": "Free, shrine grounds, flanking the approach path (Jiji-sugi on the right/east facing the main hall, Baba-sugi on the left/west). 5-minute walk from Natsui Station (JR Ban'etsu East Line); about 15 min by car from Ono IC (Ban'etsu Expressway), or a 10-minute taxi from Ono-Shinmachi Station.",
+   "transport": "Natsui Station (JR Ban'etsu East Line), 5-minute walk.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Two cedars stand about 1.37 metres apart on the approach to Suwa Shrine, and each has its own name. The one to the right as you face the hall is Jiji-sugi, Grandpa. The one to the left is Baba-sugi, Grandma. Ono Town treats them as a married couple, a meoto-sugi, which is why they count as one thing to go and see: there is a single obvious place to stand, and it is between them.\n\nGrandpa runs to 48.5 metres tall, with a trunk 9.2 metres round at breast height and a root girth near 10.6 metres. Grandma is 47.8 metres, 9.5 metres round, roots near 10.85. So the taller tree carries the grandfather's name and the thicker trunk belongs to the grandmother.\n\nThey were made a National Natural Monument in December 1937, after the botanist Manabu Miyoshi came out to survey them on 10 October 1936. Shrine tradition holds that Fujiwara no Tsuguna planted the pair as saplings in 780, the year he is said to have founded the shrine to pray for victory in a campaign in the north. That is the tradition rather than a recorded planting, and the age usually quoted, 1,100 to 1,200 years, rests on it.\n\nBoth trees are in good health, with no visible major damage or decline on either trunk. Natsui Station is a five-minute walk away, which for a pair of trees of this size is unusually little effort."
+  }
+ ],
+ "oldest_tree_id": "tmr_001"
+}

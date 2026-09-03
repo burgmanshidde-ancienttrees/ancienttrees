@@ -1,0 +1,63 @@
+{
+ "city": "Otama",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Otama Village has one tree worth the detour: a thousand-year-old cherry that a 2018 gale knocked flat at the base. Villagers cut back the broken trunk, hauled what was left upright, and it still flowers each April from the young branches it has left. Local tradition names it for a general's riding whip, said to have rooted where he pushed it into the ground. Farmers once timed their rice sowing by its bloom, which is why it is also called the seed-sowing cherry.",
+ "meta_description": "Baba Zakura, Otama Village's thousand-year cherry, was toppled by a 2018 gale and pulled back upright. It still flowers each April.",
+ "question_answer": "The oldest tree in Otama is Baba Zakura, an Edo-higan cherry inside the grounds of Fukumitsu Kokuzo-do temple that the village puts at around a thousand years old, though that figure is tradition rather than a measurement. A gale toppled it at the base in March 2018, and villagers cut back the broken trunk and hauled what remained upright again; it still flowers each April.",
+ "question_meta": "Baba Zakura, Otama's only mapped tree, is a cherry the village dates to around a thousand years, toppled by a 2018 gale and pulled upright again.",
+ "question_context": "Baba Zakura grows in the grounds of Fukumitsu Kokuzo-do temple in Otama Village, Fukushima Prefecture, about ten minutes by car from Motomiya Station. It has been a National Natural Monument since 1936 and a Fukushima Green Cultural Property since 1983. Otama Village puts its age at around a thousand years, a figure carried down locally rather than derived from any measurement. The name means the cherry of the riding ground: local tradition holds that the general Minamoto no Yoshiie, campaigning in the north, pushed a cherry-wood riding whip into the earth to tether his horses, and the whip took root. Farmers later timed their rice sowing by its bloom, which is why it also carries the name seed-sowing cherry. On 1 March 2018 a gale broke the tree at its base. A local preservation society cut back the shattered upper trunk, packed the roots, and hauled what remained standing again. A 1936 survey measured it at 21 metres tall with a trunk 7.45 metres round; the village's own figures today are 15 metres and 7 metres, the difference being what the storm and the intervening decades took.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Otama?",
+   "a": "Baba Zakura, the village's only mapped tree, an Edo-higan cherry the village dates to around a thousand years old, though that is tradition rather than a measurement."
+  },
+  {
+   "q": "What happened to Baba Zakura in 2018?",
+   "a": "A gale broke the tree at its base on 1 March 2018. A local preservation society cut back the shattered upper trunk and hauled what remained standing upright again, and it still flowers each spring."
+  },
+  {
+   "q": "Why is it called Baba Zakura?",
+   "a": "The name means the cherry of the riding ground. Local tradition credits the general Minamoto no Yoshiie with pushing a cherry-wood riding whip into the ground here, which is said to have rooted and grown."
+  },
+  {
+   "q": "Is Baba Zakura free to visit?",
+   "a": "Yes, it stands in the open grounds of Fukumitsu Kokuzo-do temple, about ten minutes by car from Motomiya Station, with no gate or ticket needed."
+  }
+ ],
+ "trees": [
+  {
+   "id": "ota_001",
+   "name": "Baba Zakura",
+   "species": "Edo-higan Cherry (Cerasus itosakura, shiro-higan form)",
+   "age_estimate": "roughly 1,000 years (traditional/legendary figure repeated by the village and prefecture, not a growth-rate dating)",
+   "age_min": 800,
+   "age_max": 1000,
+   "girth_cm": 700,
+   "location": {
+    "address": "Ishibashi, Tamai, Otama Village, Adachi District, Fukushima Prefecture (within the grounds of Fukumitsu Kokuzo-do temple)",
+    "latitude": 37.531008,
+    "longitude": 140.365022,
+    "neighbourhood": "Otama Village"
+   },
+   "verified_sources": [
+    "https://www.vill.otama.fukushima.jp/kankou_shiseki/spot/shizen/babazakura/",
+    "https://ja.wikipedia.org/wiki/%E9%A6%AC%E5%A0%B4%E3%82%B6%E3%82%AF%E3%83%A9",
+    "https://www.arukikata.co.jp/tokuhain/244409/"
+   ],
+   "access": "Free. Stands within the grounds of Fukumitsu Kokuzo-do temple, Otama Village; temple grounds are open. 15 min by car from Motomiya IC (Tohoku Expwy) or 10 min by car from Motomiya Station.",
+   "transport": "Motomiya Station (JR Tohoku Main Line), about 10 minutes by car; no direct public transit noted to the site itself.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "On 1 March 2018 a gale pushed this cherry over at the base. Villagers and a local preservation society cut back the broken upper trunk and hauled what was left upright again, packed the roots and went to work on it. It is still standing, and it still flowers each April, sparsely, from the young branches it has left.\n\nBaba Zakura is an Edo-higan cherry in the grounds of Fukumitsu Kokuzo-do temple, a National Natural Monument since December 1936 and a Fukushima Green Cultural Property since 1983. Otama Village puts its age at around a thousand years. That is a figure carried down locally rather than one derived from a measurement, so take it as tradition.\n\nThe name means the cherry of the riding ground. The story told here is that Minamoto no Yoshiie, campaigning north during the Later Three Years' War, pushed a cherry-wood riding whip into the earth to tether his horses, and the whip rooted; the field around it was where his cavalry trained. Farmers put the tree to plainer use. When it bloomed, it was time to sow rice, which is why it is also known as the seed-sowing cherry.\n\nThe 1936 survey found it 21 metres tall with a trunk 7.45 metres round. The village's own figures today are 15 metres and 7 metres. The difference is what the last ninety years took.",
+   "best_time": {
+    "months": [
+     4
+    ],
+    "kind": "flowers",
+    "label": "late April, when the surviving branches flower"
+   }
+  }
+ ],
+ "oldest_tree_id": "ota_001"
+}
