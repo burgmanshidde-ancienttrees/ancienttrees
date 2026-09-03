@@ -63,7 +63,8 @@
       "name": "Ficus de Benalua",
       "species": "Ficus macrophylla",
       "reason": "The largest-girth tree in the whole candidate set (14.69m) and individually named in the register, but secondary sources (benaluense.es) place it at or beside the Centro de Salud (health centre) of Benalua, which may be institutional/restricted grounds rather than genuinely open public ground. Needs a street-level or access-specific check before it can clear hard rule 10; too promising to block outright, so held as a lead for the next pass.",
-      "status": "RESOLVED 2026-08-15, delivered as ali_008"
+      "status": "RESOLVED 2026-08-15, delivered as ali_008",
+      "note": "RESOLVED: shipped as ali_008 ('The Ficus de Benalua'), 2026-08-xx pass. The access question this entry raised (institutional grounds at the Centro de Salud) was checked and cleared: the Ayuntamiento's own 2026 press release ('Urbanismo preserva el Ficus y desplaza el aparcamiento del centro de salud de Benalua') confirms the tree stands in an open free space between Calle San Agatangelo and the building, not inside restricted clinic grounds, no gate or opening hours. Re-verified 2026-09-03, no change needed; this entry is kept only as a record and should not be re-researched."
     },
     {
       "register_ids": [
@@ -129,7 +130,13 @@
       "reason": "Not pursued this pass, per the brief's own steer toward the walkable named centre cluster over these: a scattered group of named-estate trees 8.0-9.5km from centre (Fincas Maxara, El Conde o La Pau, Santa Ana, L'Abril, Espinos, and unnamed others), all in Sant Joan d'Alacant/Mutxamel rather than Alicante itself. A quick check of 'Finca El Conde o La Pau' (register_id 1247's site) found a local heritage blog (anticalicante.blogspot.com) describing it as a ruin: 'irrigation no longer exists, the few remaining trees barely survive in the razed garden, and no one inhabits the house anymore', which reads as private and likely fails the access test outright. The others were not checked individually. Any future pass on these should expect private agricultural estates rather than public ground, and check access before spending time on names or ages."
     },
     {
-      "register_ids": [85, 2709, 2711, 3561, 29],
+      "register_ids": [
+        85,
+        2709,
+        2711,
+        3561,
+        29
+      ],
       "species": "Olea europaea / Ceratonia siliqua / Phoenix dactylifera",
       "reason": "CHECKED 2026-08-28 (this pass): the last five register candidates within 20km of Alicante centre that no earlier pass had touched, at 12.2-19.9km, all isolated single specimens with no cluster. Register_id 3561 ('Garrofera del Escondite', a named Ceratonia siliqua, height 13.8m, canopy 11.9m) is the one worth flagging specifically: a web search places it in the pedania of Daimes, which belongs to the MUNICIPALITY OF ELCHE, not Alicante, roughly 100 years old per the source, protected under Valencian Law 4/2006 (Prezi deck citing the regional catalogue; not independently fetched/confirmed as a second source this pass). It is a different city's page candidate, not Alicante's, and at 13.35km plus a rural pedania location it would fail this project's day-trip boundary for Alicante regardless. Register_ids 85, 2709 and 2711 (three unnamed Olea europaea, 12.2-12.7km) and 29 ('Palmera imperial', 19.9km) were not individually researched: all sit far past the ~30-minute transit boundary from Alicante centre, none clusters with another candidate or with any published tree, and the pattern set by every other finca-adjacent candidate already checked in this file (private agricultural land, often a ruin) makes a further look low-yield. None of the five is a good next step for Alicante; 3561 may be worth a future Elche pass instead."
     }
