@@ -1,0 +1,63 @@
+{
+  "city": "Collm",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Collm maps one tree: the Collmer Linde, Saxony's oldest linden, standing on the green beside the village's small Romanesque church where the regional court is thought to have sat more than 800 years ago. A 2022 arborist's inspection found it in vigorous health and home to a colony of long-eared bats. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "The Collmer Linde, Saxony's oldest linden: a Nationerbe-Baum on a former assembly green, roughly 700 to 900 years old.",
+  "question_meta": "Collm's mapped tree is the Collmer Linde, called Saxony's oldest linden, roughly 700 to 900 years old.",
+  "question_answer": "The Collmer Linde, on the churchyard green (Kirchanger) beside Collm's small Romanesque church. Called Saxony's oldest linden. A century of local tradition says a thousand years; a botanist's assessment puts it nearer 800, so the honest band is 700 to 900. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "Justice for the Meissen region was handed down under this lime. The green beside the small Romanesque church at Collm was in all probability the Dingplatz, the assembly site where the court sat, more than 800 years ago, and the tree on it is the tree that was there. Saxony calls it the oldest linden in the state; people here have said a thousand years for the better part of a century, but a forestry botanist's assessment puts the real figure nearer 800, so the honest band is 700 to 900 and the millennium stays a habit rather than a measurement. Arborists went over it properly in May 2022, recording vigorous secondary stems, documented new growth and a population of long-eared bats living in it, and the plan that came out of it was future crown maintenance rather than removal. That October the trunk measured 11.05 metres round, and on 22 October 2022 the tree was declared a Nationalerbe-Baum, one of the federal register of Germany's most outstanding specimens. Its recorded height wanders between 15 and 32 metres depending on the year, what repeated crown work does to a number rather than a miscount; it stands about 25 metres now.",
+  "hero_tree_id": "col_001",
+  "oldest_tree_id": "col_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Collm?",
+      "a": "The Collmer Linde, called Saxony's oldest linden, put at roughly 700 to 900 years by a botanist's assessment rather than the thousand years of local tradition."
+    },
+    {
+      "q": "Is the tree in good health?",
+      "a": "Yes. A May 2022 arborist's inspection found vigorous secondary stems and documented new growth, and recommended ongoing crown maintenance rather than removal. It is also home to a colony of long-eared bats."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on the churchyard green at the centre of the village, a public square, free and open."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Collm has no rail station; the nearest larger town is Oschatz. It is reached by road, not a public-transport day trip from a city."
+    }
+  ],
+  "trees": [
+    {
+      "id": "col_001",
+      "name": "The Collmer Linde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 800 years",
+      "age_min": 700,
+      "age_max": 900,
+      "girth_cm": 1105,
+      "location": {
+        "address": "Kirchanger am Dorfplatz/Kirchberg, directly beside the small Romanesque church in Collm, Gemeinde Wermsdorf, Landkreis Nordsachsen",
+        "latitude": 51.302758,
+        "longitude": 13.018747,
+        "neighbourhood": "Collm, Wermsdorf, Nordsachsen"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Tausendj%C3%A4hrige_Linde",
+        "https://nationalerbe-baeume.de/project/collmer-linde-landkreis-nordsachsen/",
+        "https://www.wermsdorf.de/seite/675088/1.000-j%C3%A4hrige-linde.html"
+      ],
+      "access": "Free and open, standing on the churchyard green (Kirchanger) beside the village church at the centre of Collm, a public village square.",
+      "transport": "Rural Saxon village; nearest larger town is Oschatz. No rail station at Collm itself. Not a public-transport day trip from a city.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Justice for the Meissen region was handed down under this lime. The green beside the small Romanesque church at Collm was in all probability the Dingplatz, the assembly site where the court sat, more than 800 years ago, and the tree on it is the tree that was there.\n\nSaxony calls it the oldest linden in the state. People here have said a thousand years for the better part of a century, but a forestry botanist's assessment puts the real figure nearer 800, so the honest band is 700 to 900 and the millennium stays a habit rather than a measurement.\n\nArborists went over it properly in May 2022. Their inspection recorded vigorous secondary stems, documented new growth and a population of long-eared bats living in it, and what came out of it was a plan for future crown maintenance rather than removal. That October the trunk measured 11.05 metres round at 1.3 metres, and on 22 October 2022 the tree was declared a Nationalerbe-Baum, one of the federal register of Germany's most outstanding specimens.\n\nIts recorded height wanders between 15 and 32 metres depending on the year, which is what repeated crown work does to a number rather than a sign anybody miscounted. It stands about 25 metres now.\n\nThe tree is on the churchyard green at the centre of the village, on a public square, free and open.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

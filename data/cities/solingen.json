@@ -1,0 +1,62 @@
+{
+  "city": "Solingen",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Solingen maps one tree: the Kaiserlinde at Schloss Burg, a lime pruned by a religious order into a living room, its branches trained into a bower with a hut-like platform inside, once reached by ladder. Nobody can even agree which lime it is, let alone measure a girth on a trunk this irregular. Published alone here because it is the destination, not because the city's research is finished.",
+  "meta_description": "The Kaiserlinde at Schloss Burg, Solingen: a lime pruned into a living room by monks, roughly 250 years old, free to visit any time.",
+  "question_meta": "Solingen's mapped tree is the Kaiserlinde at Schloss Burg, a shaped lime roughly 250 years old.",
+  "question_answer": "The Kaiserlinde at Schloss Burg, beside the Seilbahn Burg cable car's mountain station. Estimated at roughly 250 years, inside a band of 200 to 300. Its exact species is disputed between sources. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "Members of a religious order pruned this lime into a room. Over generations they trained its branches into a living bower with a hut-like platform inside, reached by a ladder, and climbed up there to pray the breviary out of everyone's way. The tree stood at the centre of the Catholic rectory garden at Schloss Burg, a far larger garden then than the open ground it occupies now. The shaping has consequences: nobody publishes a girth for it, because there is no ordinary trunk to put a tape around, German Wikipedia states outright that the circumference cannot be measured meaningfully on a form this irregular. Age is given as roughly 250 years, inside a band of 200 to 300. Which lime it actually is has not been settled either: German Wikipedia calls it a Tilia x europaea 'Pallida', the Naturpark Bergisches Land calls it a Tilia cordata, and we publish it as a lime and leave the species open. Since 1952 the tree has belonged to the cable car company, standing beside the mountain station of the Seilbahn Burg, outside the ticketed part of the castle, natural monument number 51 in the city's 2007 ordinance.",
+  "hero_tree_id": "sol_001",
+  "oldest_tree_id": "sol_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Solingen?",
+      "a": "The Kaiserlinde at Schloss Burg, estimated at roughly 250 years, the only tree mapped here."
+    },
+    {
+      "q": "Why was it shaped like a room?",
+      "a": "Members of a religious order pruned it over generations into a living bower with a hut-like platform inside, reached by a ladder, so they could pray the breviary away from the busy rectory garden below."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, accessible at any time, standing in the open grounds around Schloss Burg outside the ticketed castle museum."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Reach it by the Seilbahn Burg cable car from the Wupper valley, or on foot; local buses run from Solingen Hbf to the Schloss Burg area."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sol_001",
+      "name": "The Kaiserlinde at Schloss Burg",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 200,
+      "age_max": 300,
+      "location": {
+        "address": "Beside the Seilbahn Burg cable car's mountain station, Schlossplatz, Schloss Burg, Solingen, North Rhine-Westphalia",
+        "latitude": 51.13767,
+        "longitude": 7.15285,
+        "neighbourhood": "Schloss Burg an der Wupper, Solingen"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Kaiserlinde_(Schloss_Burg)",
+        "https://www.naturparkbergischesland.de/en/poi/kaiserlinde",
+        "https://entdecke.dein-nrw.de/de/dein-nrw/streaming/detail/POI/p_100165624/kaiserlinde"
+      ],
+      "access": "Free, accessible at any time (naturparkbergischesland.de: 'kostenfrei / jederzeit zugaenglich'), standing in the open grounds around Schloss Burg next to the cable car's mountain station, outside the paid castle museum itself.",
+      "transport": "Reached by the Seilbahn Burg cable car from the Wupper valley, or on foot; Solingen and the Schloss Burg area are served by local bus routes from Solingen Hbf.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Members of a religious order pruned this lime into a room. Over generations they trained its branches into a living bower with a hut-like platform inside, reached by a ladder, and climbed up there to pray the breviary out of everyone's way. The tree stood at the centre of the Catholic rectory garden at Schloss Burg, which was a far larger garden then than the open ground it occupies now.\n\nThe shaping has consequences. Nobody publishes a girth for it, because there is no ordinary trunk to put a tape around: German Wikipedia states outright that the circumference cannot be measured meaningfully on a form this irregular. Age is given as roughly 250 years, inside a band of 200 to 300.\n\nWhich lime it is has not been settled either. German Wikipedia calls it a Tilia x europaea 'Pallida'. The Naturpark Bergisches Land calls it a Tilia cordata. We publish it as a lime and leave the species open; if you can settle it, tell us.\n\nSince 1952 the tree has belonged to the cable car company. It stands beside the mountain station of the Seilbahn Burg, outside the ticketed part of the castle, and Solingen coordinates care work on it roughly every three years. It is natural monument number 51 in the city's 2007 ordinance. Free, at any hour, and you can arrive by cable car.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

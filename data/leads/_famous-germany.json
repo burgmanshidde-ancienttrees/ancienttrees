@@ -155,7 +155,8 @@
     "https://commons.wikimedia.org/wiki/File:Betteleiche,_Nahansicht_im_Winter.jpg",
     "https://commons.wikimedia.org/wiki/File:Betteleiche-Nationalpark-Hainich.jpg"
    ],
-   "status": "lead"
+   "status": "verified",
+   "reason": "Delivered to data/research/famousgermany-verified.json as hai_001, single-tree-destination exception (flagship landmark of Nationalpark Hainich with its own dedicated hiking trail). Two independent sources (de.wikipedia, official national park page). Species left as genus-only oak (sources say 'Eiche' without settling robur vs petraea); girth conflict between sources (5.90m vs 5.6m) recorded and flagged rather than resolved."
   },
   {
    "name": "Bärenwaldeiche bei Niederholzklau",
@@ -311,7 +312,8 @@
     "https://commons.wikimedia.org/wiki/File:Hunneneiche,_2.jpg",
     "https://commons.wikimedia.org/wiki/File:ND-05478_Hunneneiche_bei_Untermerzbach.jpg"
    ],
-   "status": "lead"
+   "status": "verified",
+   "reason": "Delivered to data/research/famousgermany-verified.json as utb_001, single-tree-destination exception. Officially protected Naturdenkmal since 1963 (ND-05478), species confirmed as Quercus robur by monumentale-eichen.de, girth 6.61m. Age sources disagree (500y per Naturpark Hassberge tourism page vs c.220-420y per dendrologist's planting-date estimate); both recorded and flagged rather than resolved."
   },
   {
    "name": "Hüter des Feldes",
@@ -322,7 +324,8 @@
     "https://commons.wikimedia.org/wiki/File:Der_%22H%C3%BCter_des_Feldes%22_auch_%22Rasierpinselbaum%22_genannt,_im_Sommer_2014_mit_Teilsch%C3%A4den_an_der_Krone..JPG",
     "https://commons.wikimedia.org/wiki/File:Hueter_des_Feldes.jpg"
    ],
-   "status": "lead"
+   "status": "verified",
+   "reason": "Delivered to data/research/famousgermany-verified.json as ned_001, single-tree-destination exception. Featured in the 2003 film 'Luther', a Bavarian TV documentary and a dedicated 2023 photo book; has its own de.wikipedia article. Alive but visibly declining (confirmed via a 23 June 2026 field observation logged on baumkunde.de/monumentale-eichen.de: 'vital, trunk completely hollow, crown partly green'); regional conservation authority has stopped active preservation. Age sources disagree sharply (300-500y dendrology estimate vs 'over 1000 years' per press/authority); both recorded and flagged rather than resolved."
   },
   {
    "name": "Jahrhunderteiche",
@@ -506,9 +509,10 @@
     "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde.jpg",
     "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde_(Court_Tree)_2010.jpg"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "blocked",
+   "species": "Winter Lime (Tilia cordata)",
+   "species_basis": "confirmed by de.wikipedia's dedicated article",
+   "why": "DEAD. de.wikipedia's dedicated article ('Bordesholmer Linde') and arboristik.de's article 'Das Ende der Bordesholmer Linde' both confirm the tree could not be saved: on 29 May 2018 a large branch broke off and the tree threatened to topple, with a strong honey fungus (Hallimasch) infestation visible in dying branches. It was removed. Never ship."
   },
   {
    "name": "Collmer Linde",
@@ -519,9 +523,10 @@
     "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(1).jpg",
     "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(3).jpg"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "verified",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by Nationalerbe-Baeume register and de.wikipedia as Sommerlinde",
+   "reason": "Delivered to data/research/famousgermany-verified.json as col_001, single-tree-destination exception. Official Nationalerbe-Baum since Oct 2022, Saxony's reputed oldest linden, historic Gerichtslinde/Dingplatz site. Alive, professionally inspected May 2022 with vigorous new growth documented. Popular 'thousand years' claim flagged as folklore against an expert estimate of ~800 years."
   },
   {
    "name": "Peter-Linde (Coppenbrügge)",
@@ -672,7 +677,10 @@
     "https://commons.wikimedia.org/wiki/File:Fuenf-Fingerlinde.jpg",
     "https://commons.wikimedia.org/wiki/File:F%C3%BCnffingerlinde_Albersdorf_Baum_Schleswig-Holstein.jpg"
    ],
-   "status": "lead"
+   "status": "verified",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "species_basis": "confirmed by baumkunde.de and monumentaltrees.com as Winterlinde",
+   "reason": "Delivered to data/research/famousgermany-verified.json as alb_001, single-tree-destination exception. A single specimen of five fused stems shaped like an open hand, protected Naturdenkmal since 1938, own de.wikipedia article. Vital per baumkunde.de's 2020 survey, girth 4.90m."
   },
   {
    "name": "Galenbecker Tanzlinde",
@@ -823,9 +831,10 @@
     "https://commons.wikimedia.org/wiki/File:2016_Millennial_Lime_Tree_of_Heede_DE.jpg",
     "https://commons.wikimedia.org/wiki/File:20221224_Linde_te_Heede_(dtsl)_08b.jpg"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "verified",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by de.wikipedia's dedicated article as Sommerlinde",
+   "reason": "Delivered to data/research/famousgermany-verified.json as hed_001, single-tree-destination exception. Official Nationalerbe-Baum (National Heritage Tree), widely reported as the thickest lime in Europe, own de.wikipedia article, on Heede's coat of arms. Girth sources disagree (15.39m per wikipedia vs 17.50m per a dated Dec 2018 register measurement); recorded the dated figure and flagged. NOTE: this name appears twice in this leads file (duplicate entries); both are the same tree and both are marked verified here."
   },
   {
    "name": "Heinrichslinde",
@@ -886,9 +895,10 @@
     "https://commons.wikimedia.org/wiki/File:Kaiser-Lothar-Linde_K%C3%B6nigslutter.jpg",
     "https://commons.wikimedia.org/wiki/File:KaiserLotharLindeKoenigslutter2019_04_13.jpg"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "verified",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by baumkunde.de's tree register as Sommerlinde",
+   "reason": "Delivered to data/research/famousgermany-verified.json as klu_001, single-tree-destination exception. Stands beside the Kaiserdom Koenigslutter, own dedicated de.wikipedia article, legendary 1135 planting by Emperor Lothar III. Alive and 'vital' per baumkunde.de's most recent survey. Girth sources disagree slightly (13.32m 2021 register measurement vs an older 12.50m public figure); recorded the dated register figure and flagged the discrepancy."
   },
   {
    "name": "Kaiserlinde (Elversberg)",
@@ -912,9 +922,10 @@
     "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_November_2019.jpg",
     "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_Sommer_2021.jpg"
    ],
-   "status": "lead",
+   "status": "verified",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "sources disagree (Tilia x europaea 'Pallida' per de.wikipedia vs Tilia cordata per Naturpark Bergisches Land); published genus-only, ask the reader",
+   "reason": "Delivered to data/research/famousgermany-verified.json as sol_001, single-tree-destination exception (protected Naturdenkmal No. 51 at the popular Schloss Burg site). A living arbour pruned into shape by monks over generations; girth not measurable per de.wikipedia due to irregular growth. Free access confirmed by Naturpark Bergisches Land."
   },
   {
    "name": "Kandelaberlinde Dorla",

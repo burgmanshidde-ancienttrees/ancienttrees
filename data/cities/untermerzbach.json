@@ -1,0 +1,63 @@
+{
+  "city": "Untermerzbach",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Untermerzbach maps one tree: the Hunneneiche, a column of an oak standing alone on a meadow at the village edge, so well known locally that the inn beside it took the tree's name. Two experts disagree about its age by nearly three centuries, and the page states both figures rather than picking a winner. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "The Hunneneiche, Untermerzbach: a hollow oak 6.61 metres round, protected since 1963, its age disputed by nearly 300 years.",
+  "question_meta": "Untermerzbach's mapped tree is the Hunneneiche, an oak whose age is disputed between about 220 and 500 years.",
+  "question_answer": "The Hunneneiche, standing alone on a meadow at the western edge of the village, beside the Gasthaus Hunneneiche. Its age is a real disagreement: the Naturpark Hassberge says about 500 years, a dendrologist's planting-derived estimate says 220 to 420. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "Nobody has cored the Hunneneiche, so its age depends on which source you read. The Naturpark Hassberge, which lists it for visitors, gives about 500 years. The dendrologist Rainer Lippert, working from a recorded planting around 1700 give or take a century, puts it at 220 to 420. Both figures are published and neither has given way. What has actually been measured is less arguable: 6.61 metres round in 2014, climbing about ten metres as a near cylinder before releasing into limbs, 21 metres tall overall, and hollow inside behind a few small openings. It grows alone on open ground off the Schlossweg at the village's western edge, a legally protected natural monument since 31 July 1963. The inn beside it, the Gasthaus Hunneneiche, took the tree's name rather than the other way round, and is what most drivers coming off the B4 notice first. There is no gate, no ticket and no opening hour.",
+  "hero_tree_id": "utb_001",
+  "oldest_tree_id": "utb_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Untermerzbach?",
+      "a": "The Hunneneiche, an oak whose age is genuinely disputed: about 500 years by one register, 220 to 420 by a dendrologist's estimate."
+    },
+    {
+      "q": "Why is the inn next to it called Gasthaus Hunneneiche?",
+      "a": "The restaurant took its name from the tree, not the other way round. It is what most drivers coming off the B4 notice first."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands unfenced on an open meadow at the village edge, no gate, ticket or opening hour."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Untermerzbach has no rail station; it is a car-accessible destination just off the B4 highway, with the tree reachable without a detour."
+    }
+  ],
+  "trees": [
+    {
+      "id": "utb_001",
+      "name": "The Hunneneiche",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 to 500 years",
+      "age_min": 220,
+      "age_max": 500,
+      "girth_cm": 661,
+      "location": {
+        "address": "Schlossweg, 96190 Untermerzbach, Bavaria (western edge of the village, beside the Gasthaus Hunneneiche)",
+        "latitude": 50.12281,
+        "longitude": 10.8535,
+        "neighbourhood": "Untermerzbach, Landkreis Hassberge"
+      },
+      "verified_sources": [
+        "https://www.naturpark-hassberge.de/detail/id=600ebb14d251661603bda232",
+        "https://www.monumentale-eichen.de/bayern/2-kategorie/untermerzbach/",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ha%C3%9Fberge"
+      ],
+      "access": "Free, open around the clock. Free-standing on a meadow at the edge of the village next to a restaurant of the same name (Gasthaus Hunneneiche), reachable without a detour from the B4 highway.",
+      "transport": "Rural village with no rail station; nearest bus stops serve Untermerzbach itself. Realistically a car-accessible destination rather than a public-transport day trip from a city.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two sources disagree about this oak's age by nearly three centuries, and neither has given way. The Naturpark Hassberge, which lists it for visitors, says about 500 years. The dendrologist Rainer Lippert, who documents Bavaria's monumental oaks one specimen at a time, works from a recorded planting around 1700 give or take a hundred years, which puts the tree somewhere between 220 and 420. Both figures are published. Nobody has cored the trunk to close the gap.\n\nWhat has been measured is less arguable. The trunk was 6.61 metres round in 2014 and climbs about ten metres as a near cylinder before it releases into limbs, which is why the oak reads as a column from the road. It stands 21 metres tall and is hollow inside, betrayed only by a few small openings.\n\nIt grows alone on a meadow at the western edge of Untermerzbach, on open ground off the Schlossweg, and has been a legally protected natural monument since 31 July 1963. The inn beside it took the tree's name rather than the other way round: the Gasthaus Hunneneiche is what most drivers coming off the B4 notice first, and this oak is the reason it is called that.\n\nThere is no gate, no ticket and no opening hour. The meadow is simply there, at any time of day or year.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

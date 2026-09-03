@@ -1,0 +1,63 @@
+{
+  "city": "Heede",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Heede maps one tree: the Riesenlinde, widely reported as the thickest lime in Europe, standing at the entrance to a village small enough to have put the tree on its own coat of arms. Two published measurements of its girth sit nearly two metres apart, and the page states both rather than choosing. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "The Riesenlinde zu Heede, widely reported as Europe's thickest lime: a Nationalerbe-Baum roughly 600 to 800 years old.",
+  "question_meta": "Heede's mapped tree is the Riesenlinde, reported as Europe's thickest lime, roughly 600 to 800 years old.",
+  "question_answer": "The Riesenlinde zu Heede, at the village entrance off the Hauptstrasse. Widely reported as the thickest lime tree in Europe, with published girths of 15.39 and about 17.50 metres. Estimated at 600 to 800 years, not the thousand the local nickname claims. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "The two published figures for this lime's waist sit nearly two metres apart. German Wikipedia says 15.39 metres. The Nationalerbe-Baeume programme, measuring in December 2018 at 1.30 metres above the ground, gives about 17.50. Take either figure and there is still nothing comparable in a village this size. Heede put the tree on its coat of arms. It stands at the entrance to the place, off a side lane from the Hauptstrasse, and remains the point where processions form and open-air services are held, the work a village lime has always done here. People call it the thousand-year lime; no expert will sign that off, and the sourced estimate is 600 to 800 years, the nickname affection rather than dendrology. Its formal status is Nationalerbe-Baum, the federal designation reserved for Germany's most outstanding individual trees, which buys it support structures and continuous care; that programme's own documentation, last noting a maintenance visit in March 2020, called the tree completely healthy. Height is put at 20 metres, or roughly 24 by estimate.",
+  "hero_tree_id": "hed_001",
+  "oldest_tree_id": "hed_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Heede?",
+      "a": "The Riesenlinde, widely reported as the thickest lime in Europe, estimated at 600 to 800 years despite its local 'thousand-year' nickname."
+    },
+    {
+      "q": "Is it really the thickest lime in Europe?",
+      "a": "It is widely reported as such. The two published girth figures, 15.39 and about 17.50 metres, disagree by nearly two metres, but both are large enough that nothing comparable stands in a village this size."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands at the village entrance with no gate, ticket or opening hour, and remains the village's traditional gathering point for processions and open-air services."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Heede has no railway station. Papenburg, the nearest town with rail access, is 20 to 25 minutes away by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hed_001",
+      "name": "The Riesenlinde zu Heede (Giant Lime of Heede)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 600 to 800 years",
+      "age_min": 600,
+      "age_max": 800,
+      "girth_cm": 1750,
+      "location": {
+        "address": "At the village entrance to Heede, off a side lane (Pinnincksallee) from the Hauptstrasse, Landkreis Emsland, Lower Saxony",
+        "latitude": 52.993271,
+        "longitude": 7.295812,
+        "neighbourhood": "Heede, Samtgemeinde Doerpen, Emsland"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Riesenlinde_zu_Heede",
+        "https://nationalerbe-baeume.de/project/sommer-linde-heede-emsland/",
+        "https://www.emsland.com/poi/1000-jaehrige-linde-champions-tree"
+      ],
+      "access": "Free and open, standing at the village entrance and used as the village's traditional gathering point for religious services, processions and ceremonies.",
+      "transport": "Rural Emsland village with no rail station; nearest town with rail access is Papenburg, roughly 20-25 minutes by car. Not a public-transport day trip.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is widely reported as the thickest lime tree in Europe, and the two published figures for its waist sit nearly two metres apart. German Wikipedia says 15.39 metres. The Nationalerbe-Baeume programme, measuring in December 2018 at 1.30 metres above the ground, gives about 17.50. Take either one and there is still nothing comparable in a village this size.\n\nHeede put the tree on its coat of arms. It stands at the entrance to the place, off a side lane from the Hauptstrasse, and remains the point where processions form and open-air services are held, which is the work a village lime has always done here.\n\nPeople call it the thousand-year lime. No expert will sign that off, and the sourced estimate is 600 to 800 years. The nickname is affection rather than dendrology.\n\nIts formal status is Nationalerbe-Baum, the federal designation reserved for Germany's most outstanding individual trees, which buys it support structures and continuous care. That programme's own documentation, from 2019 and 2020 with the last noted maintenance visit in March 2020, called the tree still completely healthy. Height is put at 20 metres, or roughly 24 by estimate.\n\nHeede has no station. Papenburg, the nearest town on the railway, is 20 to 25 minutes away by car. At the tree itself there is no gate, no ticket and no hour.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

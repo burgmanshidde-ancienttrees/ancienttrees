@@ -1,0 +1,63 @@
+{
+  "city": "Hainich National Park",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Hainich National Park maps one tree: the Betteleiche, the begging oak, split into two fused shells you can walk through where medieval friars once collected alms from travellers crossing the forest. It is the symbol of the park, with a waymarked trail named after it, reached only on foot, 45 minutes or more from the nearest trailhead. Published alone here because it is the destination, not because the park's research is finished.",
+  "meta_description": "The Betteleiche, Hainich National Park: a split, walk-through oak 600 to 800 years old where medieval friars once collected alms.",
+  "question_meta": "Hainich's mapped tree is the Betteleiche, an oak 600 to 800 years old that travellers once left alms beside.",
+  "question_answer": "The Betteleiche (begging oak), at the crossing of the Rennstieg and Hohe Strasse near Ihlefeld. Sources agree on 600 to 800 years, though nobody has cored it. It is the only tree mapped here, published alone under the single-tree exception because it is the reason to come, not a list.",
+  "question_context": "The Betteleiche takes its name from a Franciscan mendicant house that stood nearby at Ihlefeld from 1442 to 1525, an annex of the St Catherine's monastery at Eisenach. Travellers crossing the forest left coins and prayer requests for the friars at the tree rather than at the door, and monks are said to have cut a hollow into the oak so the alms would stay dry. What draws people now is the shape: the trunk stands as two shells that fuse again about four metres up, a gateway wide enough to step through, widened over centuries of weather. It is short for its bulk, 13 metres tall, and measures about 5.9 metres round a metre up, though one summary gives 5.6. It is the symbol of the national park, with the waymarked Betteleichenweg trail named after it and the Rennstieg and Hainichlandweg crossing at the same point. Reaching it means 45 minutes of walking or more from the nearest trailhead. Which oak it actually is remains unsettled, sessile or pedunculate; if you know, tell us.",
+  "hero_tree_id": "hai_001",
+  "oldest_tree_id": "hai_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Hainich National Park?",
+      "a": "The Betteleiche, put at 600 to 800 years, the park's best-known tree and the only one mapped here."
+    },
+    {
+      "q": "Why is it called the begging oak?",
+      "a": "A Franciscan mendicant house stood nearby from 1442 to 1525, and travellers crossing the forest left alms for the friars at the tree instead of at the monastery door."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, no ticket or booking is needed, but it is a walk-in forest destination reached only by hiking trail, not a roadside stop."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "There is no rail or bus stop nearby. Reach a national park trailhead near Kammerforst or Weberstedt by car, then walk 45 minutes to over an hour on waymarked trails, including the dedicated Betteleichenweg."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hai_001",
+      "name": "The Betteleiche",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "roughly 600 to 800 years",
+      "age_min": 600,
+      "age_max": 800,
+      "girth_cm": 590,
+      "location": {
+        "address": "At the crossing of the Rennstieg and the Hohe Strasse near Ihlefeld, Nationalpark Hainich, Thuringia",
+        "latitude": 51.08617,
+        "longitude": 10.403403,
+        "neighbourhood": "Nationalpark Hainich (Kammerforst/Muehlhausen area)"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Betteleiche",
+        "https://www.nationalpark-hainich.de/de/ausflugsziele/historische-orte/betteleiche.html",
+        "https://www.baumkunde.de/baumregister/1870-betteleiche_am_ihlefeld_bei_kammerforst/"
+      ],
+      "access": "Free. Inside Nationalpark Hainich, reached by several waymarked hiking trails including the dedicated Betteleichenweg, plus the Waagebalkenweg, Hainichlandweg and Rennstieg long-distance trails. No ticket or booking needed, but it is a walk-in forest destination rather than a roadside stop.",
+      "transport": "No rail or bus stop nearby; reached on foot from national park trailheads near Kammerforst or Weberstedt, typically 45 minutes to over an hour of walking depending on the trailhead. Not a public-transport day trip; visitors normally drive to a trailhead car park and walk in.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Monks are said to have cut a hollow into this oak so that the alms would stay dry. From 1442 to 1525 a Franciscan mendicant house stood at nearby Ihlefeld, an annex of the St Catherine's monastery at Eisenach, and travellers crossing the forest left coins and prayer requests for the friars at the tree rather than at the door. The name stuck: Betteleiche, the begging oak.\n\nWhat people walk in to see now is the shape. The trunk stands as two shells that fuse again about four metres up, a gateway you can step through, and centuries of weather have widened the gap. The tree is 13 metres tall, short for an oak of this weight, and about 5.9 metres round at a metre above the ground, though one summary puts it nearer 5.6. Sources agree on 600 to 800 years, and none of them cored it to find out.\n\nIt is the symbol of Nationalpark Hainich, with a waymarked trail named after it, the Betteleichenweg, and the Rennstieg and Hainichlandweg crossing at the same point. Reaching it means 45 minutes of walking or more from the nearest trailhead, in whatever the weather is doing. Which oak it is remains open: the sources say only Eiche, sessile or pedunculate unsettled. If you know, tell us.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

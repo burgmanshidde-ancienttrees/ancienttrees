@@ -1,0 +1,63 @@
+{
+  "city": "Königslutter am Elm",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Königslutter am Elm maps one tree: the Kaiser-Lothar-Linde, a lime lined inside with brickwork from 1975 surgery, standing on the meadow beside the town's great Romanesque cathedral. Legend gives it an emperor for a planter; dendrology gives it 850 to 900 years and leaves the emperor as a story. Published alone here because it is the destination, not because the town's research is finished.",
+  "meta_description": "The Kaiser-Lothar-Linde, Königslutter: a court lime 13.32 metres round beside the Kaiserdom, roughly 850 to 900 years old.",
+  "question_meta": "Königslutter's mapped tree is the Kaiser-Lothar-Linde, a lime roughly 850 to 900 years old beside the Kaiserdom.",
+  "question_answer": "The Kaiser-Lothar-Linde, on the meadow beside the Kaiserdom collegiate church. Dendrology puts it at 850 to 900 years; legend names Emperor Lothar III as its planter in 1135, which is a story rather than a record. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "There is brickwork inside this lime. When tree surgeons treated the hollow trunk in 1975 they lined the cavity with masonry, fitted grilles over the openings and hung the crown from wire cables, ordinary veteran-tree care rather than a sign of decline; the register still lists its health as vital. The girth explains the effort: 13.32 metres round on a 2021 measurement, against an older, rounder 12.50 that still circulates in print, and about 20 metres tall. Legend hands the tree both a planter and a date, Emperor Lothar III at the groundbreaking of the Kaiserdom beside it in 1135, which is where the name comes from and why people here still say thousand-year linden. Dendrology puts it at 850 to 900 years, an estimate rather than a planting record, so the emperor stays a story. What is documented is the work it did: a Gerichts- und Tanzlinde, the lime under which the court sat and the village danced, on the green beside one of Lower Saxony's great Romanesque churches, under legal protection since 1956.",
+  "hero_tree_id": "klu_001",
+  "oldest_tree_id": "klu_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Königslutter?",
+      "a": "The Kaiser-Lothar-Linde, put at roughly 850 to 900 years by dendrology, standing beside the town's Kaiserdom."
+    },
+    {
+      "q": "Did Emperor Lothar III really plant it?",
+      "a": "That is legend rather than record, tied to the 1135 groundbreaking of the Kaiserdom beside it. The dated estimate, 850 to 900 years, treats the emperor as a story rather than a fact."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on open ground next to the Kaiserdom, a major visited monument in its own right, with no ticket needed for the tree itself."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Königslutter am Elm has its own railway station on the Braunschweig to Helmstedt line, and the tree is a short walk from the town centre."
+    }
+  ],
+  "trees": [
+    {
+      "id": "klu_001",
+      "name": "The Kaiser-Lothar-Linde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 850 to 900 years",
+      "age_min": 850,
+      "age_max": 900,
+      "girth_cm": 1332,
+      "location": {
+        "address": "On the meadow beside the Kaiserdom (Stiftskirche) collegiate church, Königslutter am Elm, Lower Saxony",
+        "latitude": 52.24404167,
+        "longitude": 10.81562778,
+        "neighbourhood": "Königslutter am Elm town centre, beside the Kaiserdom"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Kaiser-Lothar-Linde",
+        "https://www.baumkunde.de/baumregister/65-kaiser_lothar_linde_in_koenigslutter/",
+        "https://www.helmstedt-wiki.de/wiki/Kaiser-Lothar-Linde"
+      ],
+      "access": "Free and publicly accessible (baumkunde.de states 'oeffentlich zugaenglich'), standing on open ground next to the Kaiserdom, a major visited monument in its own right.",
+      "transport": "Königslutter am Elm has its own railway station on the Braunschweig-Helmstedt line; the tree stands a short walk from the town centre beside the Kaiserdom.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "There is brickwork inside this lime. When tree surgeons treated the hollow trunk in 1975 they lined the cavity with masonry, fitted grilles over the openings and hung the crown from wire cables. That is ordinary veteran-tree care rather than a sign of a tree on its way out: the register still lists its health as vital.\n\nThe girth explains the effort. Baumkunde measured 13.32 metres round on 31 August 2021, against an older and rounder 12.50 that still circulates in print. Height is given as about 20 metres.\n\nLegend hands the tree both a planter and a date: Emperor Lothar III, at the groundbreaking of the Kaiserdom beside it in 1135, which is where the name comes from and why people here say thousand-year linden. Dendrology puts it at 850 to 900 years, an estimate rather than a planting record, so the emperor stays a story.\n\nWhat is documented is the work it did. This was a Gerichts- und Tanzlinde, the lime under which the court sat and the village danced, on the green beside one of Lower Saxony's great Romanesque churches. It has been under legal protection since 1956.\n\nKönigslutter am Elm has its own station on the Braunschweig to Helmstedt line, and the tree stands a short walk away on open ground, free, with a cathedral for a neighbour.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
