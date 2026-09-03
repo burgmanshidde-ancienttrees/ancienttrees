@@ -1760,6 +1760,11 @@
       "species": "Cherry (Prunus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "reason": "Hitome Senbon Zakura is a roughly 1,200-tree cherry planting along ~8km of the Shiroishi River embankment in Miyagi, not a single tree; not a collectible point."
+    },
+    {
+      "name": "Batch E stray candidates (Kamo no Okusu/Kagoshima, Yougou no Matsu/Tokyo, Nago no Hinpun Gajumaru, Nomanji no Sotetsu)",
+      "reason": "A 2026-09-03 verification pass was briefed on these four as new candidates from a stale leads snapshot; all four are already published (kag_010 in kagoshima.json, tok_016 in tokyo.json, nag_001 in nago.json, yos_001 in yoshida.json, coordinates match exactly). Nothing delivered. Left here as a flag for a future cleanup pass to remove any remaining stray unsourced entries for these four names; do not re-research or re-add any of them under a new id.",
+      "coordinate": null
     }
   ]
 }

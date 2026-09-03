@@ -215,6 +215,43 @@ def km(lat1, lon1, lat2, lon2):
         * math.sin((lon2 - lon1) * p / 2) ** 2))
 
 
+# Same fix as scripts/famous_map.py's SAME_TREE_M, applied here too: a famous
+# tree already published under a different id still carries status "lead" in
+# its own leads file (nobody flips it, because the write pass edits a city
+# file and a leads file in one sitting and this specific field is easy to
+# miss), so --next kept re-surfacing already-shipped trees as candidates.
+# Measured 2026-09-03: an entire 12-candidate Japan batch turned out to be 5
+# duplicates (kag_010, tok_016, nag_001, yos_001, hok_001), three verify
+# passes burning tokens to rediscover what was already live.
+SAME_TREE_M = 0.06  # km, i.e. 60 metres
+
+
+def already_published_trees():
+    """Every live tree as (lat, lng), for the same-tree de-dup."""
+    out = []
+    for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        doc = json.load(open(path, encoding="utf-8"))
+        for t in doc.get("trees", []):
+            loc = t.get("location") or {}
+            if loc.get("latitude") is not None:
+                out.append((loc["latitude"], loc["longitude"]))
+    return out
+
+
+def drop_already_published(rows, live_trees):
+    """Leads within 60m of a tree we already publish: not candidates."""
+    keep = []
+    for r in rows:
+        if r.get("lat") is None:
+            keep.append(r)
+            continue
+        if any(km(r["lat"], r["lng"], t[0], t[1]) <= SAME_TREE_M
+               for t in live_trees):
+            continue
+        keep.append(r)
+    return keep
+
+
 # The day-trip boundary of CLAUDE.md, in kilometres. Inside it a famous tree
 # joins the place that already exists; outside it the tree IS the place, under
 # the single-famous-tree exception of 2026-08-31.
@@ -311,6 +348,7 @@ def main():
         cache = count_views(cache, args.limit)
 
     open_rows = [r for r in rows if r.get("status") == "lead"]
+    open_rows = drop_already_published(open_rows, already_published_trees())
     if args.country:
         open_rows = [r for r in open_rows
                      if r["country"] == args.country.lower().replace(" ", "-")]
