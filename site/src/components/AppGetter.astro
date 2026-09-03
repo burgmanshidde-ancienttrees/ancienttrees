@@ -43,7 +43,7 @@ interface Props {
 const { lang = "en", ev = "app-cta", source = "app-getter" } = Astro.props;
 const t = ui(lang);
 ---
-<div class="app-getter" data-device="ios">
+<div class="app-getter" data-device="ios" data-source={source}>
   <div class="app-getter-ios">
     <AppStoreBadge lang={lang} ev={ev} />
   </div>
@@ -60,11 +60,18 @@ const t = ui(lang);
     <p class="app-getter-note">{t.scanToOpen}</p>
   </div>
 </div>
-<script define:vars={{ SB: SUPABASE_URL, SBK: SUPABASE_KEY, source }}>
+<script define:vars={{ SB: SUPABASE_URL, SBK: SUPABASE_KEY }}>
   (function () {
     // Runs once per page: Astro dedupes an identical non-inline script even
-    // when the component is used more than once, so every .app-getter on the
-    // page is updated by this one pass.
+    // when the component is used more than once. `source` used to be baked
+    // in here too, which meant an instance with a different source produced
+    // a DIFFERENT script body, defeating the dedup: two listeners ended up
+    // registered on /app (its own widget plus the walks overlay's, which
+    // Base.astro renders hidden on every page), racing on which `source`
+    // landed in the database. `source` now lives on the element's own
+    // data attribute instead, so the script is identical everywhere and
+    // Astro collapses it back to one listener, found by driving an actual
+    // submit in the browser rather than trusting this on paper.
     var ua = navigator.userAgent || "";
     var isIOS = /iPhone|iPad|iPod/.test(ua)
       || (ua.indexOf("Macintosh") > -1 && navigator.maxTouchPoints > 1);
@@ -83,6 +90,7 @@ const t = ui(lang);
       if (!email) return;
       var btn = form.querySelector("button");
       btn.disabled = true;
+      var source = form.closest(".app-getter").dataset.source || "app-getter";
       try { at.track("waitlist-submit"); } catch (err) {}
       fetch(SB + "/rest/v1/waitlist", {
         method: "POST",
