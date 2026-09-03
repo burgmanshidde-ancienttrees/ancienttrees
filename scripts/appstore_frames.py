@@ -323,12 +323,21 @@ def main():
     ground = GROUNDS[name_of_ground]
     out_dir = OUT / name_of_ground
     out_dir.mkdir(parents=True, exist_ok=True)
+    # SIZES was written on 2026-08-29, the day the 6.5-inch slot refused a
+    # 6.9-inch upload, and never actually called: main() went on writing the
+    # native size only, so the exact same rejection happened again on
+    # 2026-09-03. Every panel now gets both, because either slot on its own
+    # has to be enough.
+    alt_dir = out_dir / "6.5-inch"
+    alt_dir.mkdir(parents=True, exist_ok=True)
+    alt_size = SIZES["6.5-inch"]
 
     photo = RAW / "0-hero.jpg"
     if photo.exists():
-        out = out_dir / "0-hero.png"
-        hero(photo, HERO_LINE, ground).save(out)
-        print(f"  {'0-hero':12} {out.stat().st_size // 1024} KB  \"{HERO_LINE}\"")
+        im = hero(photo, HERO_LINE, ground)
+        im.save(out_dir / "0-hero.png")
+        resized(im, alt_size).save(alt_dir / "0-hero.png")
+        print(f"  {'0-hero':12} \"{HERO_LINE}\"")
 
     made = 0
     for position, (name, caption) in enumerate(PANELS, start=1):
@@ -338,11 +347,14 @@ def main():
             continue
         # Numbered by POSITION rather than by source, because the file order
         # is the order they go up in and his order is not the shooting order.
-        out = out_dir / f"{position}-{name.split('-', 1)[1]}.png"
-        panel(raw, caption, ground).save(out)
-        print(f"  {name:12} {out.stat().st_size // 1024} KB  \"{caption.replace(chr(10), ' ')}\"")
+        fname = f"{position}-{name.split('-', 1)[1]}.png"
+        im = panel(raw, caption, ground)
+        im.save(out_dir / fname)
+        resized(im, alt_size).save(alt_dir / fname)
+        print(f"  {name:12} {caption.replace(chr(10), ' ')}")
         made += 1
-    print(f"\n{made} panels in {out_dir}")
+    print(f"\n{made} panels in {out_dir}, and again at {alt_size[0]}x{alt_size[1]} "
+          f"in {alt_dir} for the 6.5-inch slot.")
     print("LOOK at them before uploading. A caption is marketing, and a wrong "
           "one is a promise the app has to keep.")
 
