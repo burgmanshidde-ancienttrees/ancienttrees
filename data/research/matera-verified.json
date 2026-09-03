@@ -77,5 +77,30 @@
   "location_precision": "approximate",
   "curation_status": "flagged",
   "story": "This is the thinnest evidenced tree on our list, and the story says so plainly rather than dressing it up. A Mahaleb cherry, also called St Lucie cherry, stands somewhere near the junction of the SS7 Appia and a minor road on Matera's northern edge, in Contrada La Vaglia. The regional register lists it as a monumental tree, five metres tall, no girth recorded, no age given. Nobody has photographed it recently, and this pass could not confirm it is even still standing.\n\nWhat tips it from unlisted to published is a small piece of evidence: the register flags this tree urban, the same flag it gives Matera's roadside stone pine on Viale Aldo Moro, and different from the flag on the eleven masseria and jazzo trees nearby that sit on private working farms and stay off this list. Mapping data shows no building or private land over the coordinate, only open ground near the old road into Matera from the north, which points toward a public roadside tree rather than one behind a farm gate.\n\nThe species itself has left its mark on the city: Matera's Lanera district takes its name from this cherry. That is a fact about the neighbourhood, not about this individual tree, and the two should not be confused.\n\nIf you have stood in Contrada La Vaglia and seen this tree, or know it is gone, tell us. This entry exists to be corrected."
+ },
+ {
+  "id": "mat_004",
+  "name": "The Date Palm of Borgo La Martella",
+  "species": "Date Palm (Phoenix dactylifera)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 204,
+  "height_m": 7.0,
+  "location": {
+   "address": "Via Monte Bianco, Borgo La Martella, Matera",
+   "latitude": 40.660004,
+   "longitude": 16.533612,
+   "neighbourhood": "La Martella, a planned village about 5.7 km west of central Matera, built 1951-54 to rehouse families from the Sassi"
+  },
+  "verified_sources": [
+   "RAMI (Registro degli Alberi Monumentali Italiani), record #11911, https://ilregistrodeglialberi.it/11911-palma-da-datteri-matera-mt-basilicata: Phoenix dactylifera L., locality 'Borgo la Martella, via Monte Bianco', GPS 40.660004,16.533612, circumference 2.04 m at 130 cm height, height 7.00 m, altitude 220 m, registered 14 October 2021, last updated 29 December 2024, noted 'Accessibile' (accessible)",
+   "OpenStreetMap raw data (Overpass query, fetched 2026-09-03): the coordinate sits inside an ordinary residential landuse polygon in Borgo La Martella, no building, private-land or access-restriction tag over the point itself; tuttocitta.it independently maps a numbered address 'Via Monte Bianco, 3, Matera' at this same street, corroborating that the register's locality is a genuine public residential street rather than an invented one"
+  ],
+  "access": "Not independently confirmed beyond the register, but the evidence points to an ordinary public residential street: the register itself flags this tree 'Accessibile', it sits on Via Monte Bianco in Borgo La Martella, a numbered residential street rather than a private estate or farm name, and OpenStreetMap shows no building or private-land polygon over the coordinate. Unlike this comune's masseria and jazzo entries, nothing here names a private working farm.",
+  "transport": "About 5.7 km / roughly a 10-15 minute drive west of central Matera. No public transport route to Via Monte Bianco confirmed this pass; Borgo La Martella is a distinct village-neighbourhood of the comune, not the historic centre.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Only one source found for this tree, so it ships flagged rather than held back (BRIEF_RESEARCH.md: one register counts as one source; deliver on one source with a note, never hold back). The source is RAMI, Registro degli Alberi Monumentali Italiani (ilregistrodeglialberi.it), a volunteer tree-conservation registry founded by Valido Capodarca and Franco Tassi. It is NOT the same body as Italy's national MASAF register: comune Matera's 9 MASAF-listed monumental trees (imported in full in data/registers/italy-masaf.json, fetched 2026-08-05, already exhausted by earlier passes: mat_001-003 plus 6 blocked masseria/jazzo trees) do not include this palm, nor a tamarisk or a Mediterranean buckthorn that RAMI also lists for Matera. The two datasets diverge rather than one mirroring the other, which is why this is treated as ONE source rather than corroborating an existing MASAF row.\n\nBorgo La Martella is independently well documented as a planned rural village built 1951-1954 by architect Ludovico Quaroni and collaborators, backed by Adriano Olivetti's UNRRA-Casas programme, to rehouse families displaced from the Sassi di Matera; it is a widely cited case study in Italian post-war urban planning (it.wikipedia.org/wiki/La_Martella and multiple architecture-history sources). That establishes the PLACE is real and documented; no source found ties this specific palm to the village's founding or history, so the writer should not join the two into a claim neither source makes (the bridge-claim trap).\n\nNo age given by the source, and none should be derived from the 204 cm girth: Phoenix dactylifera is a monocot palm and its trunk does not add secondary growth rings or reliably widen with age the way a dicot tree's does, so a girth-based growth-rate estimate would not be honest dendrology here. Leave age_estimate empty and let the page ask the reader.\n\nRegistered 14 October 2021, record last updated 29 December 2024, which is some evidence of continued tracking into recent years, but no photo or dated field observation was found confirming the tree stands today; this pass could not view an image of it. If a reader has stood on Via Monte Bianco and seen it, or knows it is gone, that closes the gap. This tree clears Matera's four-tree floor alongside mat_001-003; none of the four individually would justify the 2026-08-31 single-destination exception on its own, but four honestly sourced trees together clear the ordinary floor."
  }
 ]
