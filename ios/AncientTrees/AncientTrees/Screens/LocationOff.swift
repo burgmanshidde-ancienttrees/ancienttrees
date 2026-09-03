@@ -72,7 +72,7 @@ struct LocationOffChip: View {
                 Text("Location off")
                 Text("·").foregroundStyle(.secondary)
                 Text(location.denied ? "Turn on location" : "Use my location")
-                    .foregroundStyle(Color(red: 0.20, green: 0.35, blue: 0.20))
+                    .foregroundStyle(Brand.moss)
             }
             .font(.subheadline.weight(.semibold))
             .padding(.horizontal, 14).padding(.vertical, 8)

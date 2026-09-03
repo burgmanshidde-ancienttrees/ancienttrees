@@ -918,7 +918,10 @@ struct TreeDetail: View {
         }
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color.orange.opacity(0.12), in: .rect(cornerRadius: 10))
+        // Our own gold rather than the system orange. At 12 percent on a
+        // near-black ground the system colour makes a muddy brown panel, and
+        // this is the one note on the page a person has to read before walking.
+        .background(Brand.gold.opacity(0.12), in: .rect(cornerRadius: 10))
     }
 
     /// Whole, always. It used to stop at six lines behind a "read the whole

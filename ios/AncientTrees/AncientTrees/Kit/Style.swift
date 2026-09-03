@@ -39,21 +39,51 @@ public enum Brand {
     /// stands on white, and transplanting the web ground here read as dirty
     /// rather than warm. The identity lives in moss, gold, ink and Gabarito,
     /// not in tinting the page.
-    public static let ground = Color(light: 0xFFFFFF, dark: 0x14180F)
+    public static let ground = Color(light: 0xFFFFFF, dark: 0x121410)
     /// A card, a sheet, anything sitting on the ground; on the white ground
     /// the card shadow does the separating, the AllTrails way.
-    public static let surface = Color(light: 0xFFFFFF, dark: 0x1E241A)
+    public static let surface = Color(light: 0xFFFFFF, dark: 0x1D211B)
     /// A quieter surface, for a row inside a card. Neutral grey, not cream,
     /// same ruling as the ground.
-    public static let surfaceMuted = Color(light: 0xF2F2F2, dark: 0x262D20)
+    public static let surfaceMuted = Color(light: 0xF2F2F2, dark: 0x262A24)
     public static let ink = Color(light: 0x26301E, dark: 0xECEFE4)
-    public static let inkSoft = Color(light: 0x5C6350, dark: 0xA3AC93)
+    public static let inkSoft = Color(light: 0x5C6350, dark: 0xA7AE9E)
     /// The one colour that means "press this".
-    public static let moss = Color(light: 0x4A6B2A, dark: 0x86A34D)
-    public static let canopy = Color(light: 0x3A5222, dark: 0x5B7F35)
+    ///
+    /// LIGHTER IN THE DARK, and that is the convention rather than a taste. A
+    /// dark theme's accent is taken from the light end of a ramp (Material puts
+    /// it at tone 200; Google's own dark products press in #8AB4F8 rather than
+    /// in their daylight blue), because a mid-tone green on a near-black ground
+    /// has too little contrast to read as a control.
+    public static let moss = Color(light: 0x4A6B2A, dark: 0x96B863)
+    /// The deeper green, and it goes DARKER in the dark where moss goes
+    /// lighter, because the two are used for opposite jobs. Moss is a control
+    /// and has to stand out; canopy is a fill behind white text (the "Seen"
+    /// badge, an active filter, the tile a tree with no photograph wears) and
+    /// has to sit back. It was lighter than the light value for a while and
+    /// white on it measured 3.67:1.
+    public static let canopy = Color(light: 0x3A5222, dark: 0x33491F)
     /// Reserved for the season badge, so "at its best now" stays scarce.
     public static let gold = Color(light: 0xD9A13F, dark: 0xE0B463)
-    public static let hairline = Color(light: 0xE6E6E6, dark: 0x333B29)
+    /// The same gold, WRITTEN rather than filled.
+    ///
+    /// Found by scripts/darkcheck.py on the day it was written, and it is a
+    /// daylight fault rather than a dark one: the Plus chip and the season line
+    /// set gold as text, and gold on white measures 2.30:1, half of what small
+    /// text needs. In the dark the ordinary gold is already 8.5:1 on a card, so
+    /// only the light value moves and the badge keeps the colour it has.
+    public static let goldInk = Color(light: 0x8F6210, dark: 0xE0B463)
+    public static let hairline = Color(light: 0xE6E6E6, dark: 0x363B31)
+    /// What is WRITTEN on a filled moss control, which is not white in the dark.
+    ///
+    /// This is the other half of the rule above and the two only work together.
+    /// A light accent takes dark text: white on the dark palette's moss measured
+    /// 2.85:1, under half the 4.5:1 a body of text needs, and it looked it. It
+    /// was the loudest thing on the tree page and on the camera sheet, a
+    /// highlighter slab with pale text on it. Dark ink on the same green is
+    /// 8.9:1. Material's dark FAB and Google Maps' own dark buttons both do
+    /// exactly this: light fill, dark label.
+    public static let onMoss = Color(light: 0xFFFFFF, dark: 0x10160A)
 }
 
 extension Color {
@@ -138,7 +168,7 @@ public struct BrandButtonStyle: ButtonStyle {
             // shouting, which is most of why the old control looked heavy
             // (Hidde, 2026-08-22).
             .font(.system(size: 16, weight: .semibold))
-            .foregroundStyle(prominent ? Color.white : Brand.ink)
+            .foregroundStyle(prominent ? Brand.onMoss : Brand.ink)
             .frame(maxWidth: .infinity)
             .frame(height: 54)
             // A ROUNDED RECTANGLE rather than a capsule. Airbnb, Booking and
@@ -183,6 +213,23 @@ extension View {
         self.background(Brand.ground.ignoresSafeArea())
     }
 }
+
+/// The tile a tree or a city with no photograph wears.
+///
+/// ONE gradient rather than one per screen, which is the shared-component rule
+/// in CLAUDE.md applied to a thing that was written out three times: the card,
+/// the city shelf and the tree page each had their own greens, and when the
+/// dark palette arrived two of the three came out as a lit slab the size of a
+/// photograph while the third had already been made neutral.
+///
+/// It stays GREEN in the dark rather than going grey, because in a shelf the
+/// green tile with a species drawn on it is how a tree with no photograph is
+/// told apart from one whose picture has not loaded yet. It is simply dark
+/// enough to be a tile rather than the brightest thing on the page, which is
+/// Material's dark-theme rule for decorative imagery.
+public let leafTile = LinearGradient(colors: [Color(light: 0x3A5222, dark: 0x2A3A1C),
+                            Color(light: 0x597A4D, dark: 0x1E2A16)],
+                   startPoint: .topLeading, endPoint: .bottomTrailing)
 
 /// The header over a shelf. Large and bold, with the count doing the work a
 /// subtitle would: AllTrails writes "347 routes" and it tells you more than a

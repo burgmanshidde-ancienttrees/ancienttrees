@@ -109,7 +109,7 @@ struct WalkDetail: View {
                                 Text("\(i + 1)")
                                     .font(.caption.bold()).foregroundStyle(.white)
                                     .frame(width: 24, height: 24)
-                                    .background(Color(red: 0.20, green: 0.35, blue: 0.20), in: .circle)
+                                    .background(Brand.canopy, in: .circle)
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text(t.name).font(.subheadline.weight(.medium))
                                     Text(t.commonName).font(.caption).foregroundStyle(.secondary)
@@ -160,7 +160,7 @@ struct WalkDetail: View {
             }
             .accessibilityIdentifier("walk-begin")
             .buttonStyle(.borderedProminent)
-            .tint(Color(red: 0.20, green: 0.35, blue: 0.20))
+            .tint(Brand.canopy)
 
             VStack(alignment: .trailing, spacing: 1) {
                 Text(walk.duration).font(.subheadline.weight(.semibold))

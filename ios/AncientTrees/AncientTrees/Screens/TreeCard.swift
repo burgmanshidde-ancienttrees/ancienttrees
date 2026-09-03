@@ -119,11 +119,9 @@ struct TreeCard: View {
         }
     }
 
-    private var placeholder: some View {
-        LinearGradient(colors: [Brand.canopy,
-                                Color(red: 0.35, green: 0.48, blue: 0.30)],
-                       startPoint: .topLeading, endPoint: .bottomTrailing)
-    }
+    /// See leafTile in Style.swift: one tile for every card in the app that has
+    /// to stand in for a photograph.
+    private var placeholder: some View { leafTile }
 
     /// The honest empty state: the species, drawn, plus the ask.
     private var noPhoto: some View {

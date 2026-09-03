@@ -377,8 +377,17 @@ struct MapTab: View {
                     Label("Map", systemImage: "map.fill")
                         .font(.brand(15, .bold))
                         .padding(.horizontal, 18).frame(minHeight: 44)
-                        .background(Capsule().fill(Brand.ink))
-                        .foregroundStyle(Brand.ground)
+                        // THE SAME MATERIAL THE TAB BAR WEARS, not an inverted
+                        // fill. It was Brand.ink filled with Brand.ground text,
+                        // which in daylight is a dark pill on a pale sheet and
+                        // in the dark is a WHITE one: the brightest thing on
+                        // the screen, and it is a secondary control. A material
+                        // is what every map app floats over content, because it
+                        // blurs whatever it lands on and therefore separates
+                        // from a photograph and from the sheet alike.
+                        .background(Capsule().fill(.regularMaterial))
+                        .foregroundStyle(Brand.ink)
+                        .shadow(color: .black.opacity(0.18), radius: 8, y: 2)
                 }
                 .buttonStyle(.plain)
                 .padding(.bottom, 70)
@@ -596,11 +605,11 @@ struct MapTab: View {
                     .frame(maxWidth: .infinity).padding(.vertical, 13)
             }
             .buttonStyle(.borderedProminent)
-            .tint(saved.isVisited(t.id) ? .gray : Color(red: 0.20, green: 0.35, blue: 0.20))
+            .tint(saved.isVisited(t.id) ? Color(Brand.inkSoft) : Brand.canopy)
             .sensoryFeedback(.success, trigger: saved.isVisited(t.id)) { _, now in now }
         }
         .padding(16)
-        .background(Color(.secondarySystemBackground), in: .rect(cornerRadius: 14))
+        .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
         .padding(.horizontal, 16).padding(.bottom, 6)
     }
 
@@ -763,7 +772,11 @@ struct MapTab: View {
                     Text("Location off")
                     Text("·").foregroundStyle(.secondary)
                     Text(locationDenied ? "Turn on location" : "Use my location")
-                        .foregroundStyle(Color(red: 0.20, green: 0.35, blue: 0.20))
+                        // Brand.moss, which lightens in the dark. It was a
+                        // fixed dark green, and this chip sits on a material:
+                        // in the dark that is dark green on dark grey, which is
+                        // the one word on the chip you are meant to tap.
+                        .foregroundStyle(Brand.moss)
                 }
                 .font(.subheadline.weight(.semibold))
                 .padding(.horizontal, 14).padding(.vertical, 8)
@@ -974,7 +987,7 @@ struct MapTab: View {
                                  + " near here")
                                 .font(.subheadline).foregroundStyle(Brand.ink)
                             Spacer()
-                            Chip(text: "Plus", tint: Brand.gold)
+                            Chip(text: "Plus", tint: Brand.goldInk)
                         }
                     }
                 }

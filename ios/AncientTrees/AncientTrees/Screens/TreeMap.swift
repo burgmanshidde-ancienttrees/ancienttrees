@@ -426,6 +426,19 @@ struct TreeMap: UIViewRepresentable {
             // local Debug build waves this through, which is the whole reason
             // that job exists.
             MainActor.assumeIsolated {
+            // A RELOAD rather than the first load, which happens when the
+            // appearance changes under a live map. The new style carries none
+            // of our sources, and the bookkeeping below remembers what it drew
+            // on the OLD one, so without this the map comes back with a dark
+            // basemap and no trees on it at all.
+            if styleReady {
+                drawnTreeIDs = []
+                drawnMineIDs = []
+                drawnRoute = 0
+                pending = (trees: parent.trees, mine: parent.mine,
+                           route: parent.route, routeIsReal: parent.routeIsReal,
+                           clusters: parent.clusters)
+            }
             MapLayers.install(on: style, clustered: parent.clusters)
             styleReady = true
             if let p = pending {
@@ -827,6 +840,16 @@ final class MapWithControls: UIView {
         map.frame = bounds
         map.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(map)
+        // Follow the phone into dark mode while the map is on screen, which is
+        // what happens at sunset with Appearance set to Automatic. Setting
+        // styleURL makes MapLibre reload, which fires didFinishLoading again,
+        // which is where our own layers and their data go back on: see the
+        // reload branch there, without which the trees would come back as an
+        // empty map.
+        registerForTraitChanges([UITraitUserInterfaceStyle.self]) { (view: MapWithControls, _) in
+            let wanted = MapStyle.url(for: view.traitCollection.userInterfaceStyle)
+            if view.map.styleURL != wanted { view.map.styleURL = wanted }
+        }
     }
 
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
@@ -844,8 +867,29 @@ final class LaidOutMapView: MLNMapView {
 /// Where the style comes from. The same file the website renders, so a change to
 /// the palette lands on both surfaces at once, which is the whole reason the map
 /// moved off MapKit's closed basemap.
+///
+/// TWO FILES SINCE 2026-09-03, one per appearance. The app shipped with one, and
+/// the first thing anybody in dark mode met was a cream-white map filling the
+/// screen. It is also why the sheet over it was grey, the "Map" pill white and
+/// the tree page's inset a lit stamp on a black page: every one of those is a
+/// translucent material, and a material samples what is behind it, so a bright
+/// map made four things bright. One cause, four symptoms.
+///
+/// Every map app that has a dark mode darkens the MAP: Google publish a night
+/// style array, Apple Maps switches its own, and OpenFreeMap serve a dark style
+/// over the same tiles we use. The dark file is generated from the light one by
+/// scripts/map_style_dark.py rather than kept by hand, because two styles
+/// maintained separately drift and nobody opens the dark one in daylight.
 enum MapStyle {
-    static let url = URL(string: "https://ancienttrees.app/assets/map-style.json")!
+    static let light = URL(string: "https://ancienttrees.app/assets/map-style.json")!
+    static let dark = URL(string: "https://ancienttrees.app/assets/map-style-dark.json")!
+
+    static func url(for style: UIUserInterfaceStyle) -> URL {
+        style == .dark ? dark : light
+    }
+
+    /// The one for the appearance in force right now.
+    static var url: URL { url(for: UITraitCollection.current.userInterfaceStyle) }
 }
 
 /// Everything the map draws, in one place: the sources, the layers and the
@@ -1673,7 +1717,11 @@ final class RecentreButton: UIButton {
         layer.shadowOpacity = 0.15
         layer.shadowRadius = 5
         layer.shadowOffset = CGSize(width: 0, height: 2)
-        tintColor = UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 1)
+        // UIColor(Brand.moss), not a second copy of the hex. A dynamic Color
+        // survives that conversion, so this arrow follows the appearance the
+        // way everything drawn in SwiftUI does; as a fixed mid green it was
+        // 2.5:1 on the near-black button this control wears in the dark.
+        tintColor = UIColor(Brand.moss)
         setImage(UIImage(systemName: "location.fill"), for: .normal)
         accessibilityLabel = "Back to my location"
         accessibilityIdentifier = "map-recentre"
