@@ -5011,6 +5011,42 @@
     "tokens": 179234,
     "trees": 1,
     "note": "Wikipedia-registry-join found 1 clean ship (Oak of Palac Szustra, extends the existing free Morskie Oko cluster); 4 named candidates held as leads on unresolved access or a caught search-summary mismatch"
+   },
+   {
+    "target": "_famous-japan batch D",
+    "kind": "verify",
+    "tokens": 118295,
+    "trees": 0,
+    "note": "all 4 candidates already published under other ids (mor_001/kit_001/iwt_001/blocked stump); confirmed no duplicates, delivered nothing",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "_famous-japan batch E",
+    "kind": "verify",
+    "tokens": 153876,
+    "trees": 0,
+    "note": "all 4 candidates already published (kag_010/tok_016/nag_001/yos_001); stale leads snapshot, root cause fixed in famous_demand.py same session",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "_famous-japan batch F",
+    "kind": "verify",
+    "tokens": 149362,
+    "trees": 2,
+    "note": "delivered hmy_001, shg_001 (both shipped as new single-tree places this session); 2 more candidates correctly held/blocked",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "session: famous_demand.py de-dup fix + Higashimiyoshi/Shingu assembly",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 2,
+    "note": "fixed famous_demand.py's missing same-tree filter (root cause of batches D/E's waste), built full page sets for hmy_001/shg_001 by hand, answered a stale REVIEW.md WARN",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

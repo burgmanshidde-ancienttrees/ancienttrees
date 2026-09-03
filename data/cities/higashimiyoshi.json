@@ -1,0 +1,63 @@
+{
+  "city": "Higashimiyoshi",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Higashimiyoshi maps one tree: the Great Camphor of Kamo, a Special Natural Monument with a trunk nearly 17 metres round and a crown the town's own literature calls the most beautiful in Japan. It stands alone in farmland on the Yoshino River, inside a park built around it. Published alone here because the tree itself is the destination, not because Higashimiyoshi's research is finished.",
+  "meta_description": "The Great Camphor of Kamo, Higashimiyoshi: a 1,000-year Special Natural Monument with a 52m crown, free in a riverside park in Tokushima, Japan.",
+  "question_meta": "Higashimiyoshi's oldest and only mapped tree is the Great Camphor of Kamo, a thousand-year-old camphor free to visit in a riverside park in Tokushima.",
+  "question_answer": "Higashimiyoshi's only mapped tree, and its oldest, is the Great Camphor of Kamo (Kamo no Okusu), a camphor tree (Cinnamomum camphora) roughly 1,000 years old with a trunk measured at 16.72 metres round. It stands alone in a public park on the north bank of the Yoshino River in Tokushima Prefecture, on the former site of Wakamiya Shrine.",
+  "question_context": "Designated a national Natural Monument in 1926 and upgraded thirty years later to Special Natural Monument, the rarer of Japan's two tiers and held by only a small number of trees nationwide, the tree is best known for its shape rather than its size: its crown spreads 52 metres east to west and 42 metres north to south, close to a perfect circle, standing alone in flat farmland with nothing nearby to compete with it. By simple trunk girth it does not rank among Japan's largest camphors, its trunk waisted and irregular rather than a clean cylinder, but the town's own literature calls it the most beautiful tree in the country for exactly that shape. It is listed in New Japan's 100 Famous Trees and among Shikoku's 88 Views. Storms, lightning strikes and encroaching farmland thinned its crown through the mid-20th century, down from a recorded 70 metres across, before the town began buying back the surrounding fields from 1970 and replanting them as a park; the trunk measured 13 metres round in 1988 and nearly 17 by 2007. Free, with a rest house and toilet on site, about 10 to 15 minutes on foot from JR Awa-Kamo Station.",
+  "hero_tree_id": "hmy_001",
+  "oldest_tree_id": "hmy_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Higashimiyoshi?",
+      "a": "The Great Camphor of Kamo, a camphor tree with a trunk 16.72 metres round, standing alone in a riverside park on the Yoshino River."
+    },
+    {
+      "q": "Why is it a Special Natural Monument?",
+      "a": "Japan designates very few trees at this tier, the higher of two grades. This camphor was named an ordinary Natural Monument in 1926 and upgraded to Special Natural Monument in 1956."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Around 1,000 years, based on its designation records and size; no planting date survives."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in a public park with a rest house and toilet, about 10 to 15 minutes on foot from JR Awa-Kamo Station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hmy_001",
+      "name": "The Great Camphor of Kamo",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 1,000 years",
+      "age_min": 900,
+      "age_max": 1100,
+      "girth_cm": 1672,
+      "location": {
+        "address": "1482 Kamo, Higashimiyoshi, Miyoshi District, Tokushima 779-4701, Japan",
+        "latitude": 34.04084,
+        "longitude": 133.93203,
+        "neighbourhood": "Kamo, Higashimiyoshi"
+      },
+      "verified_sources": [
+        "https://www.town.higashimiyoshi.lg.jp/docs/559.html",
+        "https://ja.wikipedia.org/wiki/%E5%8A%A0%E8%8C%82%E3%81%AE%E5%A4%A7%E3%82%AF%E3%82%B9"
+      ],
+      "access": "Free, public park (the surrounding farmland was bought by the town from 1970 and converted into a park around the tree, with a public toilet and a rest house, Ookusu House); no permission or ticket needed.",
+      "transport": "About 10-15 minutes walk (roughly 500m) northeast from JR Awa-Kamo Station on the JR Tokushima Line.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Not the same tree as kag_010 (Kagoshima's Kamo no Okusu at Kamo Hachiman Shrine, Aira, 31.766,130.570); this one stands roughly 380km away in Tokushima. Trunk girth is measured over a fused, buttressed, irregular trunk (Ministry of Environment giant-tree method, 2007 survey): 16.72m at the method's standard point, a stricter measurement excluding surface undulations gives 14.10m, root-spread circumference is 23.35m. A 1988 survey recorded 13.0-13.8m at the same point. No dated recent (post-2020) photo confirming current health located this pass, only 2007 survey data and undated tourism-site photos; treat as a long-established, actively protected monument rather than a freshly re-confirmed sighting.",
+      "story": "Its own town says this is the most beautiful tree in Japan, and makes the case on shape rather than size. The Great Camphor of Kamo stands alone in flat farmland on the north bank of the Yoshino River, and its crown spreads 52 metres east to west and 42 north to south, close enough to a perfect circle that the whole tree reads as one gesture. Nothing nearby competes with it for attention.\n\nBy simple trunk girth it does not rank in Japan's top twenty. The trunk waists inward before flaring out again, buttressed and irregular rather than a clean cylinder, measuring 16.72 metres around by the government's own giant-tree method. What has never wavered is how the tree looks from a distance, which is why it became a Special Natural Monument in 1956, a tier Japan gives to only a small number of trees nationwide, thirty years after its first, lesser designation.\n\nIt nearly lost that shape. Mid-century storms, lightning and encroaching farmland thinned a crown that once reached 70 metres across. From 1970 the town bought back the surrounding fields, replanted them and reopened them as a park, and the tree recovered: a 1988 survey measured its trunk at 13 metres round, a 2007 survey put it at nearly 17.\n\nFree to visit, a short walk from Awa-Kamo station, with nothing to see nearby but the tree itself and the river it has always stood beside.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
