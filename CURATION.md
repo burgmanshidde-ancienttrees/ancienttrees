@@ -10,6 +10,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-03 - Submission 60: a fig tree in Baarn, GPS resolves to a house
+
+Row 60 (`kind: tree`, city "Baarn", tree blank, `why: "Figtree"`, GPS 52.21395,5.29701 "standing at the tree", from `page: app:collect`). Unlike row 59's bare "Test", this reads as a genuine report: a species name, a real coordinate, submitted from the tree itself. Reverse-geocoded via Nominatim to 13 Paulus Potterlaan, Baarn, a residential house address, not a park or public ground. Per hard rule 10's "not somebody's home" test this cannot ship as-is, but a fig overhanging a garden wall onto the pavement is a real and common case in Dutch towns, so rather than close it out as private land on a coordinate alone, set `outcome: open_question` and asked the contributor whether the tree is visible from the public street. If they confirm street-visibility, this becomes a normal verify target (still needs a second source for species/age). Appended to `data/submissions-processed.json`.
+
 ## 2026-09-03 (continuation run) - Submission 59: another app-collect test, Hilversum
 
 Row 59 (`kind: tree`, city "Hilversum", tree blank, `why: "Test"`, GPS 52.22837,5.17493 from `page: app:collect`) is the same shape as row 41's Baarn test: no tree name, no species, just the word "Test" and a coordinate. The `user_id` resolves via the admin API to gielkeburgmans@gmail.com, not Hidde's own account, so this reads as a family member or tester exercising the app's collect-photo submission flow rather than a reader report. The point reverse-geocodes to a house at 16 Gerardus Gullaan, Hilversum, a residential address, not a park or known tree site, so it is not treated as a lead regardless. Set `outcome: holds` via the service key, no reply needed. Appended to `data/submissions-processed.json`.

@@ -1,0 +1,67 @@
+{
+  "city": "Okuizumo",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Okuizumo maps one tree: Takezaki no Katsura, a National Natural Monument on the slope above the Hii River in Japan's old tatara iron-smelting country. What stands is a cluster of stems grown from an original trunk long since decayed, revered because a smelting deity is said to have settled in a katsura here. Published alone here because the tree itself is the destination, not because Okuizumo's research is finished.",
+  "meta_description": "Takezaki no Katsura, Okuizumo: a sacred multi-stemmed katsura roughly 1,300 years old above the Hii River, free to see, gold in autumn.",
+  "question_meta": "Okuizumo's oldest and only mapped tree is Takezaki no Katsura, a katsura put at roughly 1,300 years, free above the Hii River.",
+  "question_answer": "Okuizumo's only mapped tree, and its oldest, is Takezaki no Katsura, a katsura put at roughly 1,300 years old as an organism. It grows on the slope above the Hii River in Takasu, Okuizumo, Shimane Prefecture.",
+  "question_context": "The trunk that started this tree is gone. What stands on the slope above the Hii River is a cluster of heavy stems that grew from the old base and root once the original decayed away, each now a substantial tree in its own right, which is the ordinary fate of a very old katsura. The age given here, roughly 1,300 years, belongs to the organism rather than to any single stem. It has been a National Natural Monument since 1933 and reaches 32 metres; no source checked has ever taped its girth, an awkward measurement on a tree this shape. Iron is why the species matters here: Okuizumo was the heart of Japan's tatara country, where sand iron was smelted in clay furnaces, and Kanayago-kami, the deity of the furnace, is said to have come down riding a white heron and settled in a katsura. That made the tree sacred across the district, and this is the specimen the district kept. It is free and publicly viewable on the hillside, reached by car in rural Okuizumo Town. Go in autumn: katsura turn a clear butter yellow, and the fallen leaves smell of burnt sugar.",
+  "hero_tree_id": "okz_001",
+  "oldest_tree_id": "okz_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Okuizumo?",
+      "a": "Takezaki no Katsura, put at roughly 1,300 years old as an organism, growing on the slope above the Hii River in Takasu."
+    },
+    {
+      "q": "Why does it look like several trees at once?",
+      "a": "The original trunk decayed away long ago. What grew back is a cluster of stems from the old base and root, each now substantial in its own right, which is the ordinary fate of a very old katsura."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it is publicly viewable on the hillside with no charge."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "October and November, when the leaves turn butter yellow and the fallen ones smell of burnt sugar."
+    }
+  ],
+  "trees": [
+    {
+      "id": "okz_001",
+      "name": "Takezaki no Katsura",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "roughly 1,300 years",
+      "age_min": 1000,
+      "age_max": 1500,
+      "girth_cm": null,
+      "location": {
+        "address": "Takasu, Okuizumo, Nita District, Shimane Prefecture (right bank of the Hii River)",
+        "latitude": 35.187333,
+        "longitude": 133.177687,
+        "neighbourhood": "Takasu"
+      },
+      "verified_sources": [
+        "https://www.kankou-shimane.com/destination/20946",
+        "https://www.pref.shimane.lg.jp/ringyo/index.data/kyoboku.pdf"
+      ],
+      "access": "Free, publicly viewable on the hillside above the Hii River.",
+      "transport": "Rural Okuizumo Town, Shimane Prefecture; reached by car.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The trunk that started this tree is gone. What stands on the slope above the Hii River is a cluster of heavy stems that grew from the old base and root once the original decayed away, and each of them has since become a substantial tree in its own right. That is the ordinary fate of a very old katsura rather than a sign of failure, and it is why the age given here, roughly 1,300 years, belongs to the organism rather than to any single stem you can put a hand on.\n\nIt has been a National Natural Monument since 1933 and reaches 32 metres. No source we checked has ever taped its girth, which on a tree this shape is an awkward measurement in the first place. If somebody has the number, we would like it.\n\nIron is why the species matters here. Okuizumo was the heart of Japan's tatara country, where sand iron was smelted in clay furnaces, and Kanayago-kami, the deity of the furnace, is said to have come down riding a white heron and settled in a katsura. That made the tree sacred across the district, and this is the specimen the district kept.\n\nGo in autumn. Katsura turn a clear butter yellow, and the fallen leaves smell of burnt sugar.",
+      "best_time": {
+        "months": [10, 11],
+        "kind": "autumn colour",
+        "label": "October and November, when the leaves turn butter yellow and the fallen ones smell of burnt sugar"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

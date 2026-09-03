@@ -9,6 +9,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (continuation run) - Rung 2 checked, submission 60 answered, six single-tree pages shipped
+
+7-day visits (visitors.py): 650 visits, 1159 views, climbing (48→106→108→93 the last four days). Started at health.py's rung 2 (Build and deploy failure): the `<figure class="tree-photo">` QA regex broke when today's light-box feature wrapped the thumbnail in a `<button>`, and a concurrent live session (Hidde, from the commits) was already fixing the same thing and a follow-on self-inflicted false-positive (the new personal-address check flagging its own commit's comment) faster than this run could push; pulled their fixes rather than duplicating, confirmed clean with a local build + `qa.py`. Also checked the day's REVIEW.md WARN (Home.swift hero tagline colour): already fixed upstream too (`Brand.gold`, matching HeroCover.swift).
+
+**Rung 1: submission 60**, a fig tree in Baarn submitted via the app's Collect flow with GPS "standing at the tree". Reverse-geocoded to a house at 13 Paulus Potterlaan, a residential address rather than a park, so it fails hard rule 10 as-is; set `outcome: open_question` and asked whether it's visible from the public street rather than closing it out on the coordinate alone (CURATION.md has the reasoning). Not published.
+
+**prepare.py**: 11 verified-but-unpublished trees on the shelf. Claimed and dispatched a write-stories pass on 6 of them (neba, okuizumo, otoyo, reinborn, schenklengsfeld, takahagi; the claim cap is 6 open claims per session), all single-famous-tree destinations under the 2026-08-31 exception (four Japanese National Natural Monuments, two of Germany's thickest-trunk limes). Matera's other 3 verified trees stay deliberately unmerged, per yesterday's entry: still below the 4-tree floor and none passes the single-tree-destination test on its own.
+
+Merged all 6: built each place's full page set by hand (intro, meta_description, question page, FAQ) following the Aga/Otama template, since the write-stories brief only fills `story`/`best_time`. Fixed one preflight NOTE (Otoyo's `paid_entry` flag was missing despite its access text saying paid) and refreshed Germany's and Japan's country-page counts (28→30 cities/159→161 trees; 36→40 cities). `city_names.py`, `tree_index.py`, `preflight.py` (0 problems), `npm run build` and `qa.py` all clean; deleted the 6 now-stale `-verified.json` files per passcheck's own list. Cost logged to `data/agent-costs.json`.
+
+Two remaining single-tree leads (tamba, toga) still need stories written; left for the next pass.
+
 ## 2026-09-03 - The domain has a mailbox, and hello@ never existed
 
 `info@ancienttrees.app` receives. Confirmed end to end at 13:40 today: a mail

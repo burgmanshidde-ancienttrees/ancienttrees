@@ -1,0 +1,63 @@
+{
+  "city": "Otoyo",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Otoyo maps one tree: Sugi no Osugi, a Special Natural Monument at Yasaka Shrine so famous it gave its name to the railway station. Two cedar trunks rise from one base, locally called the Meoto Sugi, the married-couple cedar, credited by legend to the storm god Susanoo. Published alone here because the tree itself is the destination, not because Otoyo's research is finished.",
+  "meta_description": "Sugi no Osugi, Otoyo: a twin-trunked cedar at Yasaka Shrine, legend says 3,000 years old, a Special Natural Monument named for its station.",
+  "question_meta": "Otoyo's oldest and only mapped tree is Sugi no Osugi, a twin cedar credited by legend to 3,000 years, at Yasaka Shrine.",
+  "question_answer": "Otoyo's only mapped tree, and its oldest, is Sugi no Osugi, a twin-trunked Japanese cedar that local legend credits with an age of roughly 3,000 years. It stands on the grounds of Yasaka Shrine in Sugi, Otoyo, Kochi Prefecture, 800 metres from the station named after it.",
+  "question_context": "The railway station is named after the tree. Get off at Osugi on JR Shikoku's Dozan Line, walk 800 metres, and there it is on the grounds of Yasaka Shrine: two cedar trunks rising from one base, the southern about 60 metres tall and roughly 20 metres around at root level, the northern a little under that at 56. Locally they are the Meoto Sugi, the married-couple cedar. Japan made it a National Natural Monument in 1924 and upgraded it to Special Natural Monument in 1952, among the highest designations the country gives a tree, and in 1990 it went onto the New Japan Famous Trees 100 list. The age everyone quotes, 3,000 years, is legend rather than dendrology; the same tradition credits the planting to Susanoo, the storm god of the old chronicles, and nobody has dated the wood. Entry costs 200 yen, which funds conservation against the real threat, ground compacted by decades of visitors standing exactly where you are about to stand.",
+  "hero_tree_id": "oty_001",
+  "oldest_tree_id": "oty_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Otoyo?",
+      "a": "Sugi no Osugi, a twin-trunked Japanese cedar that local legend credits with an age of roughly 3,000 years, at Yasaka Shrine."
+    },
+    {
+      "q": "Is it really 3,000 years old?",
+      "a": "That figure is legend, not dendrology: tradition credits its planting to the storm god Susanoo, and nobody has dated the wood, so read it as a measure of reverence rather than age."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No, entry costs 200 yen per adult, which funds the tree's own conservation against ground compaction from visitors."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is 800 metres on foot from Osugi Station on JR Shikoku's Dozan Line, a station named after the tree itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "oty_001",
+      "name": "Sugi no Osugi",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 3,000 years",
+      "age_min": 2000,
+      "age_max": 3000,
+      "girth_cm": 2000,
+      "location": {
+        "address": "Yasaka Shrine, Sugi, Otoyo, Nagaoka District, Kochi Prefecture",
+        "latitude": 33.75496833,
+        "longitude": 133.66257333,
+        "neighbourhood": "Sugi"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E6%9D%89%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE",
+        "https://jumokui.jp/tree-data/%E6%9D%89%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE/"
+      ],
+      "access": "Paid entry, 200 yen per adult, which funds the tree's own protection; free for the walk to the shrine grounds otherwise. Roughly 800 metres on foot from Osugi Station on JR Shikoku's Dozan Line.",
+      "paid_entry": true,
+      "transport": "800 metres on foot from JR Shikoku Dozan Line's Osugi Station, named after the tree itself.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The railway station is named after the tree. Get off at Osugi on JR Shikoku's Dozan Line, walk 800 metres, and there it is on the grounds of Yasaka Shrine: two cedar trunks rising from one base, the southern about 60 metres tall and roughly 20 metres around at root level, the northern a little under that at 56. Locally they are the Meoto Sugi, the married-couple cedar.\n\nJapan made it a National Natural Monument in 1924 and upgraded it to Special Natural Monument in 1952, which is among the highest designations the country gives a tree. In 1990 it went onto the New Japan Famous Trees 100 list.\n\nThe age everyone quotes is 3,000 years, and it is legend rather than dendrology. The same tradition credits the planting to Susanoo, the storm god of the old chronicles. Nobody has dated the wood, so read the number as a measure of how long this cedar has been revered rather than as an age.\n\nEntry costs 200 yen, and the charge is not incidental. What threatens the tree now is not disease but the ground itself, compacted by decades of visitors standing exactly where you are about to stand. Otoyo Town runs the conservation work with prefectural and national support, and the entry fee pays for part of it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

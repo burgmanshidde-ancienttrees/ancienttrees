@@ -1,0 +1,68 @@
+{
+  "city": "Reinborn",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Reinborn maps one tree: the 1000-jahrige Linde, a lime split into three trunk sections held together by a steel column and cables, standing beside the parish church and cemetery on the Kirchberg. At 14.34 metres round it is among the thickest limes recorded in Germany, though its true age is disputed rather than the folklore thousand years its name claims. Published alone here because the tree itself is the destination, not because Reinborn's research is finished.",
+  "meta_description": "The Thousand-Year Lime, Reinborn: 14.34m round, held together by a steel column, free beside the village church. Age disputed, 700-1000 years.",
+  "question_meta": "Reinborn's oldest and only mapped tree is the 1000-jahrige Linde, a lime 14.34m round, disputed at 700 to 1000 years, free to visit.",
+  "question_answer": "Reinborn's only mapped tree, and its oldest, is the 1000-jahrige Linde, a large-leaved lime measured at 14.34 metres round and estimated at somewhere between 700 and 1,000 years old, despite its popular name. It stands on the Kirchberg beside the parish church and cemetery in Reinborn, a hamlet of Waldems.",
+  "question_context": "Fourteen point three four metres around puts this among the thickest lime trees recorded in Germany, but the name is the least reliable thing about it. Reinborn calls it the 1000-year lime and the municipality repeats the figure on its own tourism page, yet nobody has dated the wood. Baumkunde's dendrological estimate is 700 to 1000 years; a separate reading of its growth suggests germination between 1200 and 1500, nearer 500 to 800 years. What you actually meet is a tree in three pieces: the old stem has split into three trunk sections, carried by a steel column driven up the middle and cables out to the limbs. At 17 metres it reads as broad rather than tall. The ironwork is deliberate care rather than neglect, and the tree has been protected as a Naturdenkmal and Baumveteran since 1928. It stands on the Kirchberg in front of the cemetery, beside the church, probably once a Gerichtslinde, one of the trees a village held its court under. Free and public, in the small hamlet of Reinborn in the Taunus hills; reachable by car, with no rail connection nearby.",
+  "hero_tree_id": "rbn_001",
+  "oldest_tree_id": "rbn_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Reinborn?",
+      "a": "The 1000-jahrige Linde, a large-leaved lime measured at 14.34 metres round, standing beside the parish church and cemetery on the Kirchberg."
+    },
+    {
+      "q": "Is it really a thousand years old?",
+      "a": "That is disputed. Baumkunde's dendrological estimate is 700 to 1,000 years, and a separate growth reading suggests nearer 500 to 800; the round thousand is folklore that stuck to a good tree."
+    },
+    {
+      "q": "Why is it held together with metal?",
+      "a": "The old stem split into three trunk sections. A steel column driven up the middle and cables out to the limbs have been holding the tree together deliberately since at least 1928."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in public beside the parish church and cemetery in Reinborn village."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rbn_001",
+      "name": "1000-jährige Linde in Reinborn",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "several hundred years, popularly called \"the 1000-year lime\"",
+      "age_min": 700,
+      "age_max": 1000,
+      "girth_cm": 1434,
+      "height_m": 17,
+      "location": {
+        "address": "Auf dem Kirchberg, in front of the cemetery, beside the church, Reinborn (Waldems), Rheingau-Taunus-Kreis",
+        "latitude": 50.26213853,
+        "longitude": 8.35814089,
+        "neighbourhood": "Reinborn, Waldems"
+      },
+      "verified_sources": [
+        "https://gemeinde-waldems.de/tourismus/sehenswuerdigkeiten/1000-jaehrige-linde-in-reinborn/",
+        "https://www.baumkunde.de/baumregister/98-1000_jaehrige_linde_in_reinborn/"
+      ],
+      "access": "Free, public, beside the parish church and cemetery in Reinborn village.",
+      "transport": "Not verified; no confirmed public transport stop found. Reinborn is a small hamlet in the Taunus hills, reachable by car; no rail connection nearby.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Fourteen point three four metres around, which puts this among the thickest lime trees recorded in Germany. The name is the least reliable thing about it.\n\nReinborn calls it the 1000-year lime and the municipality repeats the figure on its own tourism page, but nobody has dated the wood. Baumkunde's dendrological estimate is 700 to 1000 years. A separate reading of its growth puts germination somewhere between 1200 and 1500, which would make it nearer 500 to 800. Several hundred years is the honest answer, and the round thousand is folklore that stuck to a good tree.\n\nWhat you actually meet is a tree in three pieces. The old stem has split into three trunk sections, carried by a steel column driven up the middle and a set of cables out to the limbs. At 17 metres it reads as broad rather than tall. The ironwork is not neglect: somebody has been holding this thing together deliberately, and it has been protected as a Naturdenkmal and a Baumveteran since 1928. The 14.34 metre figure was taped on 27 March 2022, and an earlier record has 14.25.\n\nIt stands on the Kirchberg in front of the cemetery, beside the church, and was probably a Gerichtslinde, one of the trees a village held its court under. Probably is the word its sources use, and it is the word we are keeping.",
+      "best_time": {
+        "months": [1, 2],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the three trunk sections and their steel column stand fully exposed"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
