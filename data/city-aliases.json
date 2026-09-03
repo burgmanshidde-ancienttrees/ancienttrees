@@ -810,6 +810,18 @@
       "Frankfurt ob Majni",
       "Frankfurt na Majni"
     ],
+    "freiburg": [
+      "Freiburg im Breisgau",
+      "Fribourg-en-Brisgau",
+      "Friburgo de Brisgovia",
+      "Friburgo in Brisgovia",
+      "Friburgo na Brisgóvia",
+      "Friburg de Brisgòvia",
+      "Fryburg Bryzgowijski",
+      "Breisgau Freiburgas",
+      "Freiburga",
+      "Friburgo"
+    ],
     "fukuoka": [
       "Fukuok",
       "Fukuoka Shi",
@@ -996,6 +1008,16 @@
       "Hearlen",
       "Heële"
     ],
+    "heidelberg": [
+      "Heidelbergas",
+      "Heidelberga",
+      "Hajdelberg",
+      "Heidelbarg",
+      "Heidelberch",
+      "Heidlbeag",
+      "Heydelberq",
+      "Héydélbérg"
+    ],
     "helmond": [
       "Helmondas",
       "Helmonda",
@@ -1013,6 +1035,12 @@
       "Helsingia",
       "Elisinki",
       "Elsingki"
+    ],
+    "higashiagatsuma": [
+      "Higashiagatsuma Machi"
+    ],
+    "higashine": [
+      "Higasine-chhī"
     ],
     "hilo": [
       "Hilas"
@@ -1077,6 +1105,10 @@
       "Hūhetene",
       "Hūsestūn",
       "Youstòn"
+    ],
+    "iga": [
+      "Iga-chhī",
+      "Iga-shi"
     ],
     "istanbul": [
       "Estambul",
@@ -1415,6 +1447,18 @@
       "Mediolanum",
       "Megelan"
     ],
+    "minamialps": [
+      "Akaishigebergte",
+      "Akaishi-Gebirge",
+      "Monts Akaishi",
+      "Montañas Akaishi",
+      "Monti Akaishi",
+      "Montanhas de Akaishi",
+      "Muntanyes Akaishi",
+      "Akaishibergen",
+      "Góry Akaishi",
+      "Akaišio kalnai"
+    ],
     "miyazaki": [
       "Präfektur Miyazaki",
       "Préfecture de Miyazaki",
@@ -1460,6 +1504,13 @@
       "Miunchenas",
       "Minhene",
       "Mynihu"
+    ],
+    "nagano": [
+      "Naganas",
+      "Lungsod ng Nagano",
+      "Nagano Shi",
+      "Nagano-chhī",
+      "Naqano"
     ],
     "nagoya": [
       "Nagoia",
@@ -1534,6 +1585,12 @@
       "Nis",
       "Nissa"
     ],
+    "nihonmatsu": [
+      "Nihommatsu",
+      "Nihonmacu",
+      "Nihonmatsu Shi",
+      "Nihonmatu-chhī"
+    ],
     "nijmegen": [
       "Nimègue",
       "Nimega",
@@ -1560,6 +1617,11 @@
     ],
     "oahu": [
       "ma lili Owaju"
+    ],
+    "ofunato": [
+      "Ofunatas",
+      "Ôhunato-chhī",
+      "Ōfunato-shi"
     ],
     "oklahoma-city": [
       "Oklahoma Sitis",
@@ -1601,6 +1663,9 @@
       "Oss i Nederland",
       "Osas",
       "Gemeente Oss"
+    ],
+    "otama": [
+      "Ōtama-mura"
     ],
     "ottawa": [
       "Otava",
@@ -2098,6 +2163,18 @@
       "Strasbūra",
       "Strasbwrg"
     ],
+    "stuttgart": [
+      "Stoccarda",
+      "Estugarda",
+      "Štutgartas",
+      "Štutgarte",
+      "Shtutgarti",
+      "Stutgardia",
+      "Shtutgart",
+      "Stocarda",
+      "Stuagart",
+      "Stuccarda"
+    ],
     "sunderland-massachusetts": [
       "Sunderland"
     ],
@@ -2112,6 +2189,22 @@
       "Senē",
       "Serene",
       "Sidinee"
+    ],
+    "taipei": [
+      "Taipeh",
+      "Taipé",
+      "Tajpej",
+      "Tchaj-pej",
+      "Taibėjus",
+      "Taibei",
+      "Taipeia",
+      "Daizbaek",
+      "Dài-báe̤k",
+      "Tajbej"
+    ],
+    "takayama": [
+      "Takajama",
+      "Takayama-chhī"
     ],
     "tallinn": [
       "Tallin",
@@ -2244,6 +2337,10 @@
       "Augusta Taurinorum",
       "ITurin",
       "Torine"
+    ],
+    "uda": [
+      "Uda Shi",
+      "Uda-chhī"
     ],
     "utrecht": [
       "Utreque",
@@ -2518,6 +2615,7 @@
     "florence": "Florence",
     "fort-worth": "Fort Worth, Texas",
     "frankfurt": "Frankfurt",
+    "freiburg": "Freiburg im Breisgau",
     "fukuoka": "Fukuoka",
     "gdansk": "Gdańsk",
     "geneva": "Geneva",
@@ -2539,8 +2637,11 @@
     "hamburg": "Hamburg",
     "hampton-virginia": "Hampton, Virginia",
     "heerlen": "Heerlen",
+    "heidelberg": "Heidelberg",
     "helmond": "Helmond",
     "helsinki": "Helsinki",
+    "higashiagatsuma": "Higashiagatsuma, Gunma",
+    "higashine": "Higashine",
     "hilo": "Hilo, Hawaii",
     "hilversum": "Hilversum",
     "hiroshima": "Hiroshima",
@@ -2549,6 +2650,7 @@
     "hong-kong": "Hong Kong",
     "hoorn": "Hoorn",
     "houston": "Houston",
+    "iga": "Iga, Mie",
     "istanbul": "Istanbul",
     "kagoshima": "Kagoshima",
     "kamakura": "Kamakura",
@@ -2585,11 +2687,13 @@
     "mexico-city": "Mexico City",
     "miharu": "Miharu, Fukushima",
     "milan": "Milan",
+    "minamialps": "Akaishi Mountains",
     "miyazaki": "Miyazaki Prefecture",
     "modena": "Modena",
     "montreal": "Montreal",
     "motosu": "Motosu, Gifu",
     "munich": "Munich",
+    "nagano": "Nagano (city)",
     "nagoya": "Nagoya",
     "naha": "Naha",
     "naples": "Naples",
@@ -2597,13 +2701,16 @@
     "new-orleans": "New Orleans",
     "new-york": "New York City",
     "nice": "Nice",
+    "nihonmatsu": "Nihonmatsu, Fukushima",
     "nijmegen": "Nijmegen",
     "nuremberg": "Nuremberg",
     "oahu": "Oʻahu",
+    "ofunato": "Ōfunato",
     "oklahoma-city": "Oklahoma City",
     "osaka": "Osaka",
     "oslo": "Oslo",
     "oss": "Oss",
+    "otama": "Ōtama, Fukushima",
     "ottawa": "Ottawa",
     "oxford": "Oxford",
     "padua": "Padua",
@@ -2657,8 +2764,11 @@
     "split": "Split, Croatia",
     "stockholm": "Stockholm",
     "strasbourg": "Strasbourg",
+    "stuttgart": "Stuttgart",
     "sunderland-massachusetts": "Sunderland, Massachusetts",
     "sydney": "Sydney",
+    "taipei": "Taipei",
+    "takayama": "Takayama, Gifu",
     "tallinn": "Tallinn",
     "tarragona": "Tarragona",
     "tenerife": "Tenerife",
@@ -2672,6 +2782,7 @@
     "trento": "Trento",
     "trieste": "Trieste",
     "turin": "Turin",
+    "uda": "Uda, Nara",
     "utrecht": "Utrecht",
     "valencia": "Valencia",
     "vancouver": "Vancouver",
@@ -2707,6 +2818,7 @@
   },
   "unresolved_names": {
     "hawaii": "no article within 40 km, tried Hawaii (Hawaii, 312 km away); Hawaii, United States (Hawaii, 312 km away); search: List of United States cities by population; search: Honolulu; search: 2026 United States House of Representatives elections in Hawaii",
-    "olympic-national-park": "no article within 40 km, tried Olympic National Park (Olympic National Park, 75 km away); Olympic National Park, United States; search: Park City, Utah; search: List of national parks of the United States; search: Olympic National Park"
+    "olympic-national-park": "no article within 40 km, tried Olympic National Park (Olympic National Park, 75 km away); Olympic National Park, United States; search: Park City, Utah; search: List of national parks of the United States; search: Olympic National Park",
+    "ono": "no article within 40 km, tried Ono (Ono, no coordinates, disambiguation page); Ono, Japan (Ono, Hyōgo, 580 km away); search: Jiro Ono; search: Masanosuke Ono; search: Yoko Ono"
   }
 }
