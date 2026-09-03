@@ -9,6 +9,24 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (continuation run 3) - Refilled the shelf: 6 new single-tree Japan places, Tokyo +1
+
+7-day visits (visitors.py): 680 visits, 1210 views, still climbing (48→106→108→123 the last four days). `prepare.py` said REFILL THE SHELF FIRST (writable pile under 60), so per this run's own instructions that came before anything else. Rung 2 (health.py) was clear; no new reader submissions beyond 61/62 (processed below).
+
+**Refilled the shelf on `_famous-japan`**, split into 3 parallel verify agents of 3/3/4 candidates each (BRIEF_RESEARCH.md's exposure rule: a prior attempt in this window had already died trying all 10 in one pass). Net result: **6 new trees published**, all single-tree destinations under the 2026-08-31 exception, plus one addition to an existing city:
+
+- **tok_016**, the Yōgō Pine of Zenyoji, merged into Tokyo (16 trees now). Japan's widest-known pine canopy, over 800 sqm on an 8m-tall tree, National Natural Monument since 2011, survived near-death by root asphyxiation.
+- **Morioka** (mor_001), **Kitamoto** (kit_001), **Iwata** (iwt_001), **Nago** (nag_001), **Yoshida** (yos_001): five brand-new single-tree places, each a National Natural Monument with a real "would someone travel for this" case (a cherry rooted inside a split boulder, the world's only known cherry hybrid of its kind, a wisteria named for a Noh play, Okinawa's symbol banyan, one of Japan's Three Great Cycads).
+- Two more (Goshogawara, Kumamoto) were fully verified but held back as leads: the verifying agent itself flagged the destination test as unclear rather than deciding it, and I agreed rather than override that judgement call.
+
+Built full page sets by hand (intro/meta/question/FAQ, Otoyo template) for all 5 new places, fixed preflight's word-count and hard-rule-9 (species naming) failures, fixed Japan's stale country-page count (42→47), added the Japanese overlay entry for tok_016. `preflight.py` clean, `npm run build` and `qa.py` clean (one lastmod NOTE is a shallow-clone sandbox artifact, confirmed harmless against `deploy.yml`).
+
+**Also dispatched two staged deepening passes** (Alicante, Catania) from prepare.py's 47-city shelf to use the rest of the window; both came back honestly empty (Alicante's near cluster is exhausted after 4 passes now; Catania's near cluster is already published/blocked, the rest fail day-trip distance or access), recorded as leads/blocked so neither gets re-researched. All 5 passes' costs logged to `data/agent-costs.json`.
+
+**Also processed submissions 61 and 62**: both from Hidde's own account (burgmans.hidde@gmail.com), testing the app's collect flow at a Baarn house address, five minutes and two metres apart. Set `outcome: holds`, no reply needed, logged in CURATION.md.
+
+Stopped here: build/QA/commit cycle for the above took the window past the two-hour pacing mark. Next run should pick up `city_queue.py --next`'s stage-1 openable cities or continue register-backed deepening on a fresher city than Alicante/Catania.
+
 ## 2026-09-03 (session) - App Store screenshots: fixed the hero blur, fixed the 6.5-inch upload rejection
 
 Hidde flagged the screenshots on the live App Store listing as low quality.

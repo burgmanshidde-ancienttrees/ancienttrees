@@ -1,0 +1,63 @@
+{
+ "city": "Nago",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Nago maps one tree: Hinpun Gajumaru, a banyan in the middle of the city whose fused aerial roots have grown too wide to measure as a single trunk. It was already old enough to appear in Ryukyuan poetry by the 1690s, and a stone marker placed at its base in 1750 gave it its modern name. A National Natural Monument since 1997, it is the acknowledged symbol of Nago City. Published alone here because the tree itself is the destination, not because Nago's research is finished.",
+ "meta_description": "Hinpun Gajumaru, Nago: a giant banyan in central Okinawa, a National Natural Monument since 1997 and the symbol of Nago City.",
+ "question_meta": "Nago's oldest and only mapped tree is Hinpun Gajumaru, a giant banyan standing beside a public road in the city centre.",
+ "question_answer": "Nago's only mapped tree is Hinpun Gajumaru, a giant banyan whose aerial-root mass runs nearly 12 metres round, a National Natural Monument since 1997 and the acknowledged symbol of Nago City.",
+ "question_context": "The tree stands beside a public road and small plaza in central Nago, near the Anada Bridge over the Saichi River, free to visit at any time. It was already old enough to appear in Ryukyuan poetry by the 1690s, growing beside a large pine that it gradually swallowed as its aerial roots spread. In 1750 the statesman and feng-shui scholar Sai On placed a stone marker at its base, the Hinpun-ishi, named for the traditional Okinawan screen wall that stands between a house's gate and its entrance, and that stone gave the tree its modern name. A 2002 typhoon tore branches from the crown, and a 2010 conservation prune removed nearly a tonne of damaged wood. Okinawa Prefecture protected it in 1956, and Japan made it a National Natural Monument in 1997. Central Nago is about 85 minutes by car from Naha Airport, with local bus service but no direct train.",
+ "hero_tree_id": "nag_001",
+ "oldest_tree_id": "nag_001",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Nago?",
+   "a": "Hinpun Gajumaru, a giant banyan judged to be roughly 240 to 320 years old, a National Natural Monument since 1997."
+  },
+  {
+   "q": "Why is its trunk not measured directly?",
+   "a": "A banyan's above-ground mass at breast height is a fusion of aerial roots rather than a single stem; the recorded figure of nearly 12 metres describes that root mass, not one trunk."
+  },
+  {
+   "q": "Is it free to visit?",
+   "a": "Yes. It stands in the open beside a public road and plaza in central Nago, visible and reachable at any time."
+  },
+  {
+   "q": "How do I get there?",
+   "a": "Central Nago is about 85 minutes by car from Naha Airport via the Okinawa Expressway; local buses also serve the town, but Okinawa's only rail line does not reach Nago."
+  }
+ ],
+ "trees": [
+  {
+   "id": "nag_001",
+   "name": "Nago no Hinpun Gajumaru",
+   "species": "Fig (Ficus sp.)",
+   "age_estimate": "roughly 300 years",
+   "age_min": 240,
+   "age_max": 320,
+   "girth_cm": 1180,
+   "height_m": 17,
+   "location": {
+    "address": "1 Daito 1-chome, Nago, Okinawa Prefecture, Japan",
+    "latitude": 26.587349,
+    "longitude": 127.985938,
+    "neighbourhood": "Central Nago"
+   },
+   "verified_sources": [
+    "https://ja.wikipedia.org/wiki/%E3%81%B2%E3%82%93%E3%81%B7%E3%82%93%E3%82%AC%E3%82%B8%E3%83%A5%E3%83%9E%E3%83%AB",
+    "https://kyoju.biodic.go.jp/?_action=gtcontents&_command=column047"
+   ],
+   "access": "Free, no permission needed. Stands beside a public road/small plaza in central Nago near the Anada Bridge over the Saichi River, flanked by Route 84; visible and reachable at any time.",
+   "transport": "About 85 minutes by car from Naha Airport via the Okinawa Expressway; central Nago also has local bus service, but no train.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Okinawa's only railway, the Naha monorail, does not reach anywhere near this tree, and yet it is one of the most visited individual trees on the island. Hinpun Gajumaru stands beside a small plaza in the middle of Nago, a banyan whose fused mass of aerial roots has grown so wide that its exact trunk cannot be measured, only the mass itself, which comes in at nearly 12 metres around.\n\nIt was already old enough to appear in Ryukyuan poetry by the 1690s, growing beside a large pine that it gradually swallowed as its aerial roots spread and thickened around it. In 1750 the Ryukyuan statesman and feng-shui scholar Sai On placed a stone marker at its base, the Hinpun-ishi, named for the traditional Okinawan screen wall that stands between a house's gate and its entrance, and that stone gave the tree its modern name. A 2002 typhoon tore branches from the crown, and a 2010 conservation prune removed nearly a tonne of damaged wood to keep the tree stable.\n\nOkinawa Prefecture protected it in 1956, and Japan made it a National Natural Monument in 1997, one of the country's highest tiers of heritage protection. It is the acknowledged symbol of Nago City today, and unlike almost everything else this far south in Okinawa, you do not need a car once you are in town: it stands in the open, beside a public road, visible to anyone who walks past.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}

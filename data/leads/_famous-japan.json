@@ -1,6 +1,6 @@
 {
  "country": "Japan",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown. 2026-09-03 verify pass (1 agent, 4 candidates): all 4 verified and delivered to data/research/{higashiagatsuma,higashine,takayama,ofunato}-verified.json. None blocked. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 2 (1 agent, 13 candidates): 10 verified and delivered to data/research/{kaga,takahagi,otoyo,tamba,neba,toga,aga,biei,okuizumo,fujikawaguchiko}-verified.json (all National/Prefectural Natural Monuments or, for the Ken and Mary Tree, a culturally famous single specimen); 3 blocked (Miracle Pine Tree, died of saltwater intrusion post-2011 tsunami, now a preserved non-living monument; Tsurugaoka Hachimangu ginkgo tree, original 1000-year trunk toppled in a 2010 storm, root regrowth may be a separate future lead; Tree of philosophy, felled by its landowner in February 2016). Entries removed from this leads list now that they are delivered elsewhere.",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown. 2026-09-03 verify pass (1 agent, 4 candidates): all 4 verified and delivered to data/research/{higashiagatsuma,higashine,takayama,ofunato}-verified.json. None blocked. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 2 (1 agent, 13 candidates): 10 verified and delivered to data/research/{kaga,takahagi,otoyo,tamba,neba,toga,aga,biei,okuizumo,fujikawaguchiko}-verified.json (all National/Prefectural Natural Monuments or, for the Ken and Mary Tree, a culturally famous single specimen); 3 blocked (Miracle Pine Tree, died of saltwater intrusion post-2011 tsunami, now a preserved non-living monument; Tsurugaoka Hachimangu ginkgo tree, original 1000-year trunk toppled in a 2010 storm, root regrowth may be a separate future lead; Tree of philosophy, felled by its landowner in February 2016). Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 3 (3 agents, batches A/B/C dispatched on the remaining refill batch): batch A found 1 tree that joins Tokyo (delivered to data/research/famousjapan-batch-a-verified.json, tok_016) and 2 that fail the day-trip boundary for the city they were thought to join (Shokawa-zakura, too far from Takayama; Kamo no Okusu, administratively in Aira City not Kagoshima, and over an hour by transit from either) but read as strong single-tree-destination candidates on their own; recorded as leads below rather than re-researched from scratch by a future pass. Batch B (3 agents) delivered 3 fully verified single-tree-destination places, all shipped: Morioka (mor_001, Ishiwari-zakura), Kitamoto (kit_001, Ishito no Kaba-zakura), Iwata (iwt_001, Yuya no Naga Fuji). Batch C delivered 4 verified trees; 2 clearly pass the single-tree-destination test and shipped (Nago, nag_001, Hinpun Gajumaru; Yoshida, yos_001, Nomanji Cycad), 2 are honestly ambiguous on that test per the verifying agent's own flag and are held as leads below rather than shipped alone (Goshogawara's Junihon-yasu, Kumamoto's Jakushin-san no Kusu): both are real, alive, officially designated trees with good research already done, just not clearly a reason-for-the-trip on the evidence found. A future pass or Hidde's own judgement could still ship either.",
  "leads": [
   {
    "name": "Narao Akō Tree",
@@ -1657,23 +1657,72 @@
    "status": "lead",
    "species": "Japanese Cedar (Cryptomeria sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Shokawa-zakura",
+   "lat": 36.07914,
+   "lng": 136.94625,
+   "place": "Shokawa-cho, Takayama (merged 2005, but ~28.5km from Takayama centre)",
+   "species": "Edohigan Cherry (Prunus itosakura)",
+   "species_basis": "confirmed by ja.wikipedia and Gifu prefecture tourism site",
+   "status": "lead",
+   "reason": "Two ~450-year-old cherries, Gifu Prefecture Designated Natural Monument, moved in a famous 1960 engineering effort to save them from the Miboro Dam reservoir (documented on NHK's Project X, ~50,000 visitors/year). Height ~20m, girth ~600cm. Fails the day-trip boundary for Takayama (no honest 30-minute public-transit description; ~30-40 min by car via expressway, or highway bus plus a 6km walk). Reads as its own place (Shokawa / Miboro-ko) under the 2026-08-31 single-tree exception rather than a Takayama stretch. Sources: ja.wikipedia.org/wiki/%E8%8D%98%E5%B7%9D%E6%A1%9C, kankou-gifu.jp/spot/detail_1249.html. Needs a dedicated verify pass to finalise the record (this note is pre-verification research, not a delivered entry)."
+  },
+  {
+   "name": "Kamo no Okusu",
+   "lat": 31.765764,
+   "lng": 130.569442,
+   "place": "Aira City, Kagoshima Prefecture (not Kagoshima City)",
+   "species": "Camphor Tree (Camphora sp.)",
+   "species_basis": "confirmed by ja.wikipedia (蒲生のクス)",
+   "status": "lead",
+   "reason": "Japan's largest-girth tree by measurement: trunk circumference 24.2m at 1.3m height, root circumference 33.5m, height ~30m, estimated age ~1,500 years, Special Natural Monument since 1952, at Kamo Hachiman Shrine. Administratively in Aira City, a separate municipality from Kagoshima City, and roughly 64 minutes by bus from Kagoshima Chuo Station, so it does not join Kagoshima's page honestly. Nationally famous (\"Japan's biggest tree\") and reads as a strong single-tree-destination candidate on its own (its own place, Aira), stronger than most already-published single-tree exceptions. Sources: ja.wikipedia.org/wiki/%E8%92%B2%E7%94%9F%E3%81%AE%E3%82%AF%E3%82%B9, kagoshima-kankou.com/guide/11083 (prefecture tourism board), jataff.jp. Needs a dedicated verify pass to finalise the record."
+  },
+  {
+   "name": "Jūnihon-yasu",
+   "lat": 40.9174882,
+   "lng": 140.5137034,
+   "place": "Kanagi, Goshogawara, Aomori Prefecture",
+   "species": "Hiba (Thujopsis dolabrata)",
+   "species_basis": "confirmed by ja.wikipedia and aomori-tourism.com",
+   "status": "lead",
+   "reason": "Fully verified (two independent sources, alive, pinned from a geotagged Commons photo) but held below the single-tree-destination bar rather than shipped alone: a Goshogawara City natural monument (a 2003 national Natural Monument bid was dropped for lack of landowner consent), 'New Japan 100 Famous Trees' listing (1990), a distinctive 12-branch fork resembling a fish-spear with its own local legend, and real evidence of enthusiast pilgrimage (multiple independent Japanese blog/trip reports from people who drove out specifically to see it). Against: no English-language coverage found beyond monumentaltrees.com (which 403'd to this pass, so its girth figure of 7.30m is unverified) and Commons/Wikidata scaffolding; sits down a forest road with nothing else nearby. Full verified record (age 300-800 years contested between sources, girth 800cm per the higher council-record figure, height 34m) is in data/research/famousjapan-batch-c-verified.json, gsg_001, ready to ship if a future pass or Hidde judges the destination bar cleared."
+  },
+  {
+   "name": "Jakushin-san no Kusu",
+   "lat": 32.871569,
+   "lng": 130.684819,
+   "place": "Kitazako, Kita Ward, Kumamoto City",
+   "species": "Camphor Tree (Camphora officinarum)",
+   "species_basis": "confirmed by kyoju.biodic.go.jp (Ministry of Environment giant-tree database)",
+   "status": "lead",
+   "reason": "Fully verified (two independent sources, alive, pinned from a geotagged Commons photo) but held below the single-tree-destination bar rather than shipped alone: an exceptionally large trunk (1710cm girth), a purpose-built public park around it since 1989, an active annual community ritual on the anniversary of the death of Kanokogi Chikakazu (the Sengoku-era lord the tree is named for, said to be buried at its base), and a 'New Japan 100 Famous Trees' listing (1990). Against: only a prefectural natural monument (since 1974, not national), no English-language tourism coverage found beyond a government film-location directory, and it competes for attention with several other very large Kyushu camphors (Kamo no Okusu, Takeo's giant camphor). Full verified record (age ~500-800 years by local tradition, girth 1710cm, height 30m) is in data/research/famousjapan-batch-c-verified.json, kum_001, ready to ship if a future pass or Hidde judges the destination bar cleared."
   }
  ],
  "blocked": [
   {
    "name": "Miracle Pine Tree",
    "reason": "Checked 2026-09-03. The original pine died from saltwater intrusion after the 2011 tsunami's ground subsidence let seawater into its roots. What stands today at the Takata Matsubara Tsunami Recovery Memorial Park is a preserved monument built from much of the original wood plus a steel core and artificial replica parts, not a living tree. Never ships as an entry per the never-dead rule; may be mentioned as context inside a different living-tree story about the region.",
-   "coordinate": [39.00425988, 141.62433939]
+   "coordinate": [
+    39.00425988,
+    141.62433939
+   ]
   },
   {
    "name": "Tsurugaoka Hachimangu ginkgo tree",
    "reason": "Checked 2026-09-03. The original roughly 1,000-year-old ginkgo trunk toppled in a storm on 10 March 2010 (confirmed by multiple Japanese news sources including Kanagawa Shimbun). The felled section was cut down and replanted 7m from the original spot, and new shoots (hikobae) sprouted from the surviving root a month later, so there may be a living regrowth from the same root system today, comparable to the Elm of Saint-Gervais precedent. Not delivered this pass because the current height/condition of that regrowth 16 years on was not established within the time box; a future pass could verify it as a living-succession entry rather than presenting the felled 1000-year trunk as still standing.",
-   "coordinate": [35.32569167, 139.55596722]
+   "coordinate": [
+    35.32569167,
+    139.55596722
+   ]
   },
   {
    "name": "Tree of philosophy",
    "reason": "Checked 2026-09-03. This Biei, Hokkaido poplar was felled by its landowner on 24 February 2016 (multiple Japanese news sources, e.g. Nikkei and ITmedia), due to age-related collapse risk and damage tourists were causing to the surrounding farmland. Dead/gone, never ships per the never-dead rule.",
-   "coordinate": [null, null]
+   "coordinate": [
+    null,
+    null
+   ]
   },
   {
    "name": "Wilson's Stump",

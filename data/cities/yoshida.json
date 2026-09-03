@@ -1,0 +1,64 @@
+{
+ "city": "Yoshida",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Yoshida maps one tree: the Nomanji Cycad, a multi-stemmed sago palm at Nomanji Temple wrapped in Heian-period legend, said to have been planted around the year 1000 by the diviner Abe no Seimei. It is counted among Japan's Three Great Cycads and has held National Natural Monument status since 1924, one of the earliest tree designations under the country's original heritage law. Published alone here because the tree itself is the destination, not because Yoshida's research is finished.",
+ "meta_description": "The Nomanji Cycad, Yoshida: one of Japan's Three Great Cycads, a National Natural Monument since 1924, tied to the legend of Abe no Seimei.",
+ "question_meta": "Yoshida's oldest and only mapped tree is the Nomanji Cycad, a multi-stemmed sago palm at Nomanji Temple.",
+ "question_answer": "Yoshida's only mapped tree is the Nomanji Cycad (Nomanji no Sotetsu), a multi-stemmed sago palm at Nomanji Temple, a National Natural Monument since 1924 and one of Japan's Three Great Cycads.",
+ "question_context": "The plant grows on the grounds of Nomanji Temple in Kataoka, open daily from 9:00 to 17:00 with parking on site; the nearest stations are JR Kikugawa or Fujieda, followed by a short taxi ride, since no train reaches the temple directly. Legend credits its planting around the year 1000 to Abe no Seimei, the Heian-era diviner said to have sealed a serpent spirit beneath its roots, and holds that Tokugawa Ieyasu once had it transplanted to his castle at Sumpu, only for it to wither with longing until he had it moved back. What stands today is a clump of roughly ninety branching stems rather than one trunk, the largest measuring about 2.5 metres round on its own. It is counted among the Three Great Cycads of Japan and the folklore list known as the Seven Wonders of Enshu, and has held National Natural Monument status since 1924, one of Japan's earliest heritage-tree designations.",
+ "hero_tree_id": "yos_001",
+ "oldest_tree_id": "yos_001",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Yoshida?",
+   "a": "The Nomanji Cycad, a sago palm by temple tradition said to be roughly 1,000 years old, though that figure is legend rather than a measured age; it has been a National Natural Monument since 1924."
+  },
+  {
+   "q": "Is it really one trunk?",
+   "a": "No. What stands at the temple today is a clump of roughly ninety branching stems rising from one base, the largest of which measures about 2.5 metres round on its own."
+  },
+  {
+   "q": "Is it free to visit?",
+   "a": "Yes. Nomanji Temple's grounds are open daily from 9:00 to 17:00, with parking on site."
+  },
+  {
+   "q": "How do I get there?",
+   "a": "The nearest stations are JR Kikugawa or Fujieda, followed by a short taxi ride; there is no direct train to the temple."
+  }
+ ],
+ "trees": [
+  {
+   "id": "yos_001",
+   "name": "Nomanji no Sotetsu",
+   "species": "Sago Palm (Cycas revoluta)",
+   "age_estimate": "roughly 1,000 years, by temple tradition",
+   "age_min": 500,
+   "age_max": 1000,
+   "girth_cm": 333,
+   "height_m": 6,
+   "location": {
+    "address": "Nomanji Temple, 2517-1 Kataoka, Yoshida-cho, Haibara-gun, Shizuoka Prefecture, Japan",
+    "latitude": 34.778917,
+    "longitude": 138.248139,
+    "neighbourhood": "Kataoka, Yoshida"
+   },
+   "verified_sources": [
+    "https://www.pref.shizuoka.jp/kankosports/bunkageijutsu/bunkazai/1002825/1041003/1041891/1004962/1020837.html",
+    "https://www.town.yoshida.shizuoka.jp/7422.htm",
+    "https://ja.wikipedia.org/wiki/%E8%83%BD%E6%BA%80%E5%AF%BA%E3%81%AE%E3%82%BD%E3%83%86%E3%83%84"
+   ],
+   "access": "Free entry to the temple grounds; open daily 9:00 to 17:00 with parking available. A working Buddhist temple rather than a ticketed garden.",
+   "transport": "Nearest station is JR Kikugawa or Fujieda on the Tokaido Line, then a short taxi/drive; no direct train to the temple.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "When Tokugawa Ieyasu had this cycad dug up and moved to his castle at Sumpu, the story goes, it wept every night for its old temple until he gave up and had it replanted where it started. That legend, along with one crediting its planting around the year 1000 to Abe no Seimei, the Heian-era diviner famous for sealing a serpent spirit beneath its roots, is why this plant carries more folklore than most trees twice its official age.\n\nIt is not really one trunk. What stands at Nomanji Temple today is a clump of roughly ninety branching stems rising from one base, the largest of which measures about 2.5 metres round on its own, with the whole clump's base running to roughly 3.3 metres. It stands only about 6 metres tall, low and dense rather than towering, which is normal for Cycas revoluta, a sago palm rather than a conifer or broadleaf.\n\nJapan named it a National Natural Monument in 1924, one of the earliest tree designations under the country's original 1919 heritage law, and it is counted among the Three Great Cycads of Japan alongside specimens in Osaka and Shimizu. It also appears on the folklore list known as the Seven Wonders of Enshu. The temple opens its grounds daily from 9 to 5, with parking on site, for a plant that supposedly once refused to grow anywhere else.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}

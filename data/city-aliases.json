@@ -1186,6 +1186,10 @@
       "Stambolli",
       "Istanboel"
     ],
+    "iwata": [
+      "Ivata",
+      "Iwata-chhī"
+    ],
     "kaga": [
       "Kaga-chhī"
     ],
@@ -1233,6 +1237,9 @@
       "Kauns",
       "Kawnas",
       "Kaŭno"
+    ],
+    "kitamoto": [
+      "Kitamoto-chhī"
     ],
     "koenigslutter": [
       "Königslutter",
@@ -1581,6 +1588,10 @@
       "Montrealo",
       "Moriak"
     ],
+    "morioka": [
+      "Morioka-chhī",
+      "Morioka-shi"
+    ],
     "motosu": [
       "Motosu",
       "Motosu-chhī"
@@ -1603,6 +1614,10 @@
       "Nagano Shi",
       "Nagano-chhī",
       "Naqano"
+    ],
+    "nago": [
+      "Nago Shi",
+      "Nago-chhī"
     ],
     "nagoya": [
       "Nagoia",
@@ -2630,6 +2645,9 @@
       "Evrek",
       "Ioka"
     ],
+    "yoshida": [
+      "Jošida"
+    ],
     "ypres": [
       "Ieper",
       "Ypern",
@@ -2814,6 +2832,7 @@
     "houston": "Houston",
     "iga": "Iga, Mie",
     "istanbul": "Istanbul",
+    "iwata": "Iwata, Shizuoka",
     "kaga": "Kaga, Ishikawa",
     "kagoshima": "Kagoshima",
     "kamakura": "Kamakura",
@@ -2821,6 +2840,7 @@
     "kansas-city": "Kansas City, Missouri",
     "kauai": "Kauaʻi",
     "kaunas": "Kaunas",
+    "kitamoto": "Kitamoto, Saitama",
     "koenigslutter": "Königslutter",
     "koriyama": "Kōriyama",
     "krakow": "Kraków",
@@ -2858,9 +2878,11 @@
     "miyazaki": "Miyazaki Prefecture",
     "modena": "Modena",
     "montreal": "Montreal",
+    "morioka": "Morioka",
     "motosu": "Motosu, Gifu",
     "munich": "Munich",
     "nagano": "Nagano (city)",
+    "nago": "Nago",
     "nagoya": "Nagoya",
     "naha": "Naha",
     "naples": "Naples",
@@ -2980,6 +3002,7 @@
     "wye-mills-maryland": "Wye Mills, Maryland",
     "yakushima": "Yakushima",
     "york": "York",
+    "yoshida": "Yoshida",
     "ypres": "Ypres",
     "zaanstad": "Zaanstad",
     "zaragoza": "Zaragoza",
@@ -3011,10 +3034,10 @@
     "olympic-national-park": "no article within 40 km, tried Olympic National Park (Olympic National Park, 75 km away); Olympic National Park, United States; search: Park City, Utah; search: List of national parks of the United States; search: Olympic National Park",
     "ono": "no article within 40 km, tried Ono (Ono, no coordinates, disambiguation page); Ono, Japan (Ono, Hyōgo, 580 km away); search: Jiro Ono; search: Masanosuke Ono; search: Yoko Ono",
     "reinborn": "no article within 40 km, tried Reinborn; Reinborn, Germany; search: List of mountains and hills of the Taunus",
+    "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess.",
     "trainiskis": "no article within 40 km, tried Trainiškis; Trainiškis, Lithuania",
     "vainiai": "no article within 40 km, tried Vainiai; Vainiai, Lithuania; search: Do Architects; search: Gilma Teodora Gylytė",
     "volkenroda": "no article within 40 km, tried Volkenroda; Volkenroda, Germany; search: Loccum; search: Pilgrims' way; search: Kamp Abbey",
-    "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany",
-    "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess."
+    "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany"
   }
 }
