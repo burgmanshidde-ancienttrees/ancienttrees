@@ -66,7 +66,7 @@ const speciesSlugs = [...qualifying].map((common) => [common, slugify(common)] a
 
 // --- Directory block (the four-column "anywhere" grid) ---
 const rankedCities = [...published].sort((a, b) => b.count - a.count);
-const citiesCol = rankedCities.slice(0, 10).map((p) => `<a href="/${p.slug}">${esc(p.city)}</a>`).join("");
+const citiesCol = rankedCities.slice(0, 10).map((p) => `<a href="/${p.slug}" data-ev="home-dir-city" data-detail="${esc(p.slug)}">${esc(p.city)}</a>`).join("");
 // Ten, like every other column in this block. It used to print every
 // qualifying species, which was 30 when the site had 13 species pages and
 // would have been 84 the moment the catch-up batch landed: one column three
@@ -74,12 +74,12 @@ const citiesCol = rankedCities.slice(0, 10).map((p) => `<a href="/${p.slug}">${e
 // somewhere below the fold. Hidde, 2026-08-13: "it would make sense to cut off
 // the footer at about the same height."
 const speciesCol =
-  speciesSlugs.slice(0, 10).map(([cn, sl]) => `<a href="/species/${sl}">${esc(cn)}</a>`).join("") +
+  speciesSlugs.slice(0, 10).map(([cn, sl]) => `<a href="/species/${sl}" data-ev="home-dir-species" data-detail="${esc(sl)}">${esc(cn)}</a>`).join("") +
   `<a class="dir-morelink" href="/species">All ${speciesSlugs.length} species</a>`;
 const collCol =
   // Seven, not ten: these titles run to 48 characters and wrap, so seven of them
   // already stand as tall as ten single-line entries beside them.
-  collections.slice(0, 7).map((c) => `<a href="/collections/${esc(c.data.slug)}">${esc(c.data.title)}</a>`).join("") +
+  collections.slice(0, 7).map((c) => `<a href="/collections/${esc(c.data.slug)}" data-ev="home-dir-collection" data-detail="${esc(c.data.slug)}">${esc(c.data.title)}</a>`).join("") +
   '<a class="dir-morelink" href="/collections">All collections</a>';
 
 // Unfiltered trees (entry.data.trees, not renderableTrees), matching the
@@ -92,7 +92,7 @@ for (const entry of renderable) {
   }
 }
 oldest.sort((a, b) => b.ageMax - a.ageMax);
-const treesCol = oldest.slice(0, 9).map((o) => `<a href="/${o.citySlug}/${o.treeSlug}">${esc(o.name)}</a>`).join("") +
+const treesCol = oldest.slice(0, 9).map((o) => `<a href="/${o.citySlug}/${o.treeSlug}" data-ev="home-dir-tree" data-detail="${esc(o.citySlug)}/${esc(o.treeSlug)}">${esc(o.name)}</a>`).join("") +
   '<a class="dir-morelink" href="/collections/trees-older-than-400-years">The oldest of all</a>';
 
 // One link out per column, no expander. A directory block is a signpost, not
@@ -185,9 +185,15 @@ function mosaic(urls: string[]): string {
     urls.map((u) => `<img ${cardImg(u, "(max-width: 800px) 36vw, 10vw", [400])} alt="" loading="lazy">`).join("") +
     `</span>`;
 }
-function shelfCard(href: string, photoUrl: string, title: string, meta: string): string {
+// ev/detail feed the homepage click instrumentation (2026-09-03, Hidde:
+// "ik wil vooral zien of degene die er staan worden geklikt en dan testen
+// met andere"): before swapping or adding a shelf, know whether the one
+// there now gets clicked at all. Reuses the existing data-ev/data-detail
+// pipe (Base.astro), so this is an attribute, not a new tracking script.
+function shelfCard(href: string, photoUrl: string, title: string, meta: string, ev?: string, detail?: string): string {
+  const evAttrs = ev ? ` data-ev="${ev}" data-detail="${esc(detail ?? "")}"` : "";
   return (
-    `<a class="shelf-card" href="${href}">` +
+    `<a class="shelf-card" href="${href}"${evAttrs}>` +
     `<span class="shelf-ph"><img ${cardImg(photoUrl, "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
     `<b>${esc(title)}</b>` +
     `<span class="shelf-meta">${meta}</span></a>`
@@ -226,7 +232,7 @@ const oldestCards = renderable
     const url = usablePhoto(o.t)!.url;
     usedPhotos.add(url);
     return shelfCard(`/${o.slug}/${slugify(o.t.name)}`, url, o.t.name,
-      `${shortAge(o.t)} &middot; ${esc(o.city)}`);
+      `${shortAge(o.t)} &middot; ${esc(o.city)}`, "home-oldest", o.t.id);
   });
 const oldestShelf = wideShelf("The oldest trees we map", "/collections/trees-older-than-400-years", "The oldest of all", oldestCards);
 
@@ -262,7 +268,7 @@ for (const cs of FAVOURITE_CITIES) {
   if (!photo) continue;
   usedPhotos.add(photo.url);
   favCards.push(
-    `<a class="shelf-card" href="/${cs}">` +
+    `<a class="shelf-card" href="/${cs}" data-ev="home-fav" data-detail="${esc(cs)}">` +
       `<span class="shelf-ph"><img ${cardImg(photo.url, "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
       `<b>${esc(e.data.city)}</b>` +
       `<span class="shelf-meta">${e.data.trees.length} trees &middot; ${esc(e.data.country)}</span></a>`,
@@ -318,8 +324,8 @@ const countryCards = countryIntros
     if (urls.length === 0) return null;
     const meta = `${cities.length} ${cities.length === 1 ? "city" : "cities"} &middot; ${trees} trees`;
     const html = urls.length === 4
-      ? `<a class="shelf-card" href="/${esc(intro.data.slug)}">${mosaic(urls)}<b>${esc(intro.data.country)}</b><span class="shelf-meta">${meta}</span></a>`
-      : shelfCard(`/${esc(intro.data.slug)}`, urls[0], intro.data.country, meta);
+      ? `<a class="shelf-card" href="/${esc(intro.data.slug)}" data-ev="home-country" data-detail="${esc(intro.data.slug)}">${mosaic(urls)}<b>${esc(intro.data.country)}</b><span class="shelf-meta">${meta}</span></a>`
+      : shelfCard(`/${esc(intro.data.slug)}`, urls[0], intro.data.country, meta, "home-country", intro.data.slug);
     return { trees, html };
   })
   .filter((c): c is { trees: number; html: string } => c !== null)
@@ -341,7 +347,7 @@ const speciesCards = speciesSlugs
     const trees = treesBySpecies.get(common) ?? [];
     const photo = pinnedSpeciesPhoto.get(common) ?? firstPhoto(trees);
     if (!photo) return null;
-    return { n: trees.length, html: shelfCard(`/species/${slug}`, photo, common, `${trees.length} trees`) };
+    return { n: trees.length, html: shelfCard(`/species/${slug}`, photo, common, `${trees.length} trees`, "home-species", slug) };
   })
   .filter((c): c is { n: number; html: string } => c !== null)
   .sort((x, y) => y.n - x.n)
@@ -359,7 +365,7 @@ const parkCards = [...groupTreesByPark(renderable).values()]
     const photo = firstPhoto(g.trees);
     if (!photo) return null;
     return { n: g.trees.length, html: shelfCard(`/parks/${esc(intro.data.slug)}`, photo, intro.data.name || intro.data.park,
-      `${g.trees.length} trees &middot; ${esc(g.city.data.city)}`) };
+      `${g.trees.length} trees &middot; ${esc(g.city.data.city)}`, "home-park", intro.data.slug) };
   })
   .filter((c): c is { n: number; html: string } => c !== null)
   .sort((x, y) => y.n - x.n)

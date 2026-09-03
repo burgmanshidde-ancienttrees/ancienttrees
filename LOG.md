@@ -9,6 +9,34 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (session) - Homepage shelves now report clicks; Hidde asked "worden ze wel geklikt" before we add more
+
+He asked whether the lists already on the homepage (favourites, oldest trees,
+countries, species, parks, and all four directory columns) get clicked at
+all, before discussing adding tallest/thickest/islands shelves. There was no
+way to answer that: every card was a plain `<a href>`, and the beacon only
+knows pageviews and referrer path, not which shelf sent someone.
+
+Wired every homepage list into the existing events pipe rather than building
+anything new: `data-ev`/`data-detail` attributes (the same mechanism
+`app-cta`, `sponsor-open` etc already use) on every shelf card and every
+directory-column link, and a two-line change to the generic click listener
+in Base.astro so it forwards `data-detail` through to `at.track()` (it
+already accepts a detail argument; nothing was reading the attribute).
+Event names: `home-fav`, `home-oldest`, `home-country`, `home-species`,
+`home-park`, `home-dir-city`, `home-dir-species`, `home-dir-collection`,
+`home-dir-tree`, each carrying the slug clicked as `detail`. No new
+dependency, no new script tag, no digest change needed: `daily_digest.py`'s
+"Did the product happen" table already lists whatever names show up in the
+events table, so these appear on their own once they start firing.
+
+Not yet built: swapping the hardcoded FAVOURITE_CITIES list (currently
+barcelona/rome/paris/berlin/amsterdam/london/new-york/lisbon/vienna/
+edinburgh; Berlin, New York and Edinburgh are the weakest by Search Console
+impressions) or adding tallest/thickest/islands shelves. That waits for a
+couple of weeks of home-* data in DATA.md, per his explicit ask: measure
+what's there before testing alternatives.
+
 ## 2026-09-03 (continuation run 5) - Malsfeld: finished the standing _famous-germany claim, a new 4-tree German place
 
 An earlier attempt in this window stopped after 88 min with 32 unspent; picked up its in-flight `_famous-germany` verify claim rather than starting fresh (per the instruction: a claim nobody finishes is the strongest predictor of a wasted night). `leads.py --ready` had only 2 READY (below a write pass's minimum), so went straight to the claim.
