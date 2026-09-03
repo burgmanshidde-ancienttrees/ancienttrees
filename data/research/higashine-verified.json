@@ -1,0 +1,35 @@
+[
+ {
+  "id": "hgn_001",
+  "name": "The Great Zelkova of Higashine (Higashine no Okeyaki)",
+  "species": "Saw-leaf Zelkova (Zelkova serrata)",
+  "age_estimate": "1,000 to 1,500+ years (sources disagree)",
+  "age_min": 1000,
+  "age_max": 1500,
+  "girth_cm": 1600,
+  "location": {
+   "address": "1-1-1 Honmaru-minami, Higashine, Yamagata Prefecture 999-3783, in the yard of Higashine Municipal Higashine Elementary School",
+   "latitude": 38.441657,
+   "longitude": 140.401998,
+   "neighbourhood": "Honmaru-minami, Higashine"
+  },
+  "verified_sources": [
+   "https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%A0%B9%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD",
+   "https://www.city.higashine.yamagata.jp/tourism/asobu/39",
+   "https://kyoju.biodic.go.jp/?_action=gtcontents&_command=column042",
+   "https://www.jalan.net/kankou/spt_06211ac2100126538/"
+  ],
+  "access": "Free, no ticket (jalan.net review page lists 料金: 無料). It stands in the yard of a working elementary school, but the tree is treated as an open tourist attraction by the city itself (listed on the city's own tourism pages under 'Enjoying Higashine') and real visitor reviews on jalan.net describe walking in and viewing it, including on a Sunday when school was out. Note the honest limit: the Ministry of Environment's own writeup (kyoju.biodic.go.jp) says the base used to be open to touch and to crawl through the hollow, but is now fenced off and closed to entry, so visitors view it rather than touch it. Treat as the school exception in CLAUDE.md hard rule 10: real evidence the grounds are genuinely open to the public, not merely bordering a public area.",
+  "transport": "About 20 minutes on foot from JR Sakuranbo-Higashine Station (Ou Main Line), or about 8 minutes by car / 3 km",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "Japan's largest zelkova grows in a primary school playground. The children of Higashine Elementary are called keyaki-kko, zelkova children, and are taught that catching three falling leaves before they touch the ground earns a wish. The tree they chase measures 16 metres round at chest height and 24 at the roots, and forks into two stems five and a half metres up. Of the three great zelkovas of Japan it is the only Special Natural Monument, a grade above the other two, and the only one still described as robust rather than ageing; a 1980 ranking of the country's zelkovas gave it the top sumo rank on the east side, East Yokozuna.\n\nThe playground was the main keep of Odajima Castle, built in 1347, and the tree was already substantial when the walls went up around it. It had a partner: two zelkovas stood here, the mother tree and the father tree, and the father died in 1885. A storm took a great north-facing bough in 1902, which is why the crown is thin on that side, and the recorded height has come down from 35 metres at the 1957 designation to 28 now. The base is hollow, with room for about two tatami mats; people once crawled through it hoping for a child, though it is fenced off today. On the age the experts split: one assessment put it over a thousand years, a later one over fifteen hundred, and neither has given way.",
+  "best_time": {
+   "months": [
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "November, when the leaves come down and the schoolchildren chase them"
+  }
+ }
+]

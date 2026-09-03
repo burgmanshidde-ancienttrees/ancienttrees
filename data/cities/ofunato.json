@@ -1,0 +1,57 @@
+{
+  "city": "Ofunato",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "One tree, and its age is not the point. The Dokonjo Poplar, planted around 1934 in a shop's backyard, stood half-submerged when the 2011 tsunami hit Okirai and survived. It had already outlasted the 1933 Showa Sanriku tsunami and the 1960 Chile earthquake tsunami. Unlike Rikuzentakata's famous lone pine nearby, which died and stands today as a treated replica, this poplar is genuinely alive. Ofunato built a public plaza around it in 2018. Free, on the national 3.11 memorial route.",
+  "meta_description": "The Dokonjo Poplar, Ofunato: survived the 1933, 1960 and 2011 tsunamis, unlike its famous dead neighbour, the Miracle Pine. Free, memorial site.",
+  "question_meta": "Ofunato's mapped tree is the Dokonjo Poplar, roughly 90 years old, which survived the 2011 tsunami half-submerged. A national memorial site.",
+  "question_answer": "Ofunato's mapped tree is the Dokonjo Poplar, planted around 1934 and roughly 90 years old, which is not old for a tree but is exactly the point: it survived the 1933 Showa Sanriku tsunami, the 1960 Chile earthquake tsunami and the 2011 Tohoku tsunami, which put it half underwater.",
+  "question_context": "The proprietor's mother planted the poplar behind a shop and home in Okirai shortly after the 1933 Showa Sanriku tsunami; a local paper reckoned in 2018 that an ordinary poplar manages around sixty years and that this one had already passed eighty, the basis for calling it about ninety today. It survived the 1960 Chile earthquake tsunami too, and around 1992 neighbours discussed felling it over lightning risk, a plan that lapsed for want of a budget. Okirai took the worst tsunami damage anywhere in Sanriku-cho on 11 March 2011, and the water rose to roughly half the tree's 25 metres; it stayed standing. Afterwards people began calling it the Do-konjo Poplar, close to gutsy in English. The coast's better known survivor, the lone pine at Rikuzentakata, died from the salt and stands today as a treated, preserved replica; this poplar has no such asterisk, it is simply still alive. When the landowner handed the site to Ofunato City, he made keeping the tree a condition of the gift, and the city opened a public plaza around it in 2018, with a gazebo and benches, now a stop on the national 3.11 memorial route.",
+  "hero_tree_id": "ofn_001",
+  "oldest_tree_id": "ofn_001",
+  "faq": [
+    {
+      "q": "Why is this tree remarkable if it's not that old?",
+      "a": "It qualifies on what it survived rather than its age: the 1933 tsunami, the 1960 Chile earthquake tsunami, and the 2011 Tohoku tsunami, which put it half underwater in one of the worst-hit parts of the coast."
+    },
+    {
+      "q": "How does it compare to the Miracle Pine at Rikuzentakata?",
+      "a": "The Miracle Pine died from salt exposure after the 2011 tsunami and stands today as a preserved, treated replica. The Dokonjo Poplar is genuinely still alive."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. Ofunato built a public plaza around it in 2018, with a gazebo and benches, and it hosts public events. Nothing to book or ask permission for."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About 10 minutes on foot from Sanriku Station on the Sanriku Railway Rias Line."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ofn_001",
+      "name": "The Dokonjo Poplar",
+      "species": "Poplar (Populus sp.)",
+      "age_estimate": "roughly 90 years",
+      "age_min": 88,
+      "age_max": 95,
+      "girth_cm": null,
+      "location": {
+        "address": "24 Sugishita, Okirai, Sanriku-cho, Ofunato, Iwate Prefecture 022-0101, at the centre of Urahama District Green Space Plaza",
+        "latitude": 39.117278,
+        "longitude": 141.814031,
+        "neighbourhood": "Urahama, Okirai, Sanriku-cho, Ofunato"
+      },
+      "story": "The 2011 tsunami put this poplar half under seawater and it stayed standing. It is not an old tree, and its age is not the point. The proprietor's mother planted it in the backyard of a shop and home in Okirai shortly after the Showa Sanriku tsunami of 1933, which makes it about ninety; a local paper reckoned in 2018 that an ordinary poplar manages around sixty years and that this one had already passed eighty. It came through the Chile earthquake tsunami of 1960 as well. Around 1992 the neighbours discussed felling it because they were worried about lightning, and nothing happened, for want of a budget.\n\nOkirai took the worst tsunami damage anywhere in Sanriku-cho on 11 March 2011 and was very nearly erased. The water rose to roughly half the tree's 25 metres. Afterwards people began calling it the Do-konjo Poplar, which comes out in English as something close to gutsy. The better known survivor of this coast, the lone pine at Rikuzentakata, died of the salt and stands today as a treated replica of itself; this one is simply still alive. When the landowner handed the ground to Ofunato City he made keeping the tree a condition of the gift, and the city built a public plaza around it, opened in 2018, with benches and a gazebo. It is a registered site on the national 3.11 memorial route. No source we found names which poplar it is, so if you know, tell us.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E3%81%A9%E6%A0%B9%E6%80%A7%E3%83%9D%E3%83%97%E3%83%A9",
+        "https://www.thr.mlit.go.jp/shinsaidensho/facility/iwate-2-010.html"
+      ],
+      "access": "Free, open public plaza (Urahama District Green Space Plaza, 2,400 sqm, opened 2018-05-01, with a gazebo, toilets and benches, built specifically around this tree after the landowner handed the site to the city on condition the poplar be preserved). Nothing to book, nothing to ask permission for; it hosts public events.",
+      "transport": "About 10 minutes on foot from Sanriku Station on the Sanriku Railway Rias Line",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

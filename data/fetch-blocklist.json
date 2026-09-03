@@ -2,6 +2,30 @@
  "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
  "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
  "hosts": {
+  "hidakokubunji.jp": {
+   "behaviour": "does not respond at all (curl -m 20, HTTP 000) on both http and https, to /html/ginkgo.html and the bare domain",
+   "seen": "2026-09-03",
+   "cost": "cheap once known; one fetch during the Takayama (Hida Kokubunji great ginkgo) verify pass",
+   "workaround": "Wayback Machine has a recent snapshot (2026-01-20) that loads fine via curl: http://web.archive.org/web/20260120082107/https://hidakokubunji.jp/html/ginkgo.html"
+  },
+  "pref.gifu.lg.jp": {
+   "behaviour": "does not respond at all (curl -m 20, HTTP 000)",
+   "seen": "2026-09-03",
+   "cost": "one fetch during the Takayama verify pass; left a height figure (37m) from a WebSearch AI summary unverifiable, so it was not used per the search-summary-is-a-lead-never-a-source rule",
+   "workaround": "unknown this pass; www.kankou-gifu.jp (the prefecture's own tourism site, a different host) covers the same tree and loaded fine"
+  },
+  "ofunato.jp": {
+   "behaviour": "does not respond at all (curl -m 20, HTTP 000)",
+   "seen": "2026-09-03",
+   "cost": "one fetch during the Ofunato (Dokonjo Poplar) verify pass; not chased further since ja.wikipedia and the MLIT disaster-memorial registry already cleared the two-source bar",
+   "workaround": "unknown this pass"
+  },
+  "www.tripadvisor.jp": {
+   "behaviour": "403 to curl with a browser user agent",
+   "seen": "2026-09-03",
+   "cost": "cheap, fails fast; one fetch during the Higashine verify pass",
+   "workaround": "jalan.net review pages carried the same kind of first-person visitor evidence and loaded fine"
+  },
   "texasescapes.com": {
    "behaviour": "hangs; WebFetch ran past 60s and returned nothing",
    "seen": "2026-09-01",

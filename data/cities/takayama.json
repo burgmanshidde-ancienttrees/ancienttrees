@@ -1,0 +1,59 @@
+{
+  "city": "Takayama",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "When this ginkgo drops its last leaf, Hida expects snow the next day. The Great Ginkgo of Hida Kokubunji, roughly 1,200 to 1,300 years old and about ten metres round, grows between the main hall and bell-tower gate of a temple founded in 737. The temple's own legend says it marks the grave of a murdered carpenter's daughter, and its aerial roots draw women hoping for an easy birth. A National Natural Monument, free to view, five minutes from Takayama Station.",
+  "meta_description": "The Great Ginkgo of Hida Kokubunji, Takayama: roughly 1,200 to 1,300 years old, a folk weather-teller and fertility tree. Free, near the station.",
+  "question_meta": "Takayama's mapped tree is the Great Ginkgo of Hida Kokubunji, put at roughly 1,200 to 1,300 years, one of Japan's largest ginkgos.",
+  "question_answer": "Takayama's mapped tree is the Great Ginkgo of Hida Kokubunji, put at roughly 1,200 to 1,300 years by sources that differ on the exact figure. The temple's own account says the monk Gyoki planted it in 737, the year Hida Kokubunji was founded by imperial decree; the prefecture's tourism board gives the lower end of the range.",
+  "question_context": "The tree measures roughly ten metres round and stands 27 to 28 metres tall, from two sources that agree; a higher 37-metre figure online traces only to an AI-generated search summary and is not used here. It grows between the main hall and bell-tower gate of Hida Kokubunji, and Hida's own tradition treats its last leaf-fall as a weather sign, expecting snow the next day. A grimmer story is attached: a carpenter building a pagoda here cut his pillars too short, and his daughter Yaegiku's fix, adding bracket blocks, saved it. Afraid she would tell others, he is said to have killed her, buried her at the site and planted this ginkgo over the grave. Its aerial roots, which look like breasts, gave it the name Chichi Icho, and women have come to it for an easy birth and a healthy child, with stone jizo figures of a parent and child at its base. It is a male tree and has never produced a nut, a question the temple fields often enough that the answer sits in its own FAQ. Typhoons and lightning have taken pieces of it over the last century, kept standing on public and donated funds.",
+  "hero_tree_id": "tky_001",
+  "oldest_tree_id": "tky_001",
+  "faq": [
+    {
+      "q": "How old is the Great Ginkgo of Hida Kokubunji?",
+      "a": "Roughly 1,200 to 1,300 years. The temple's own account credits the monk Gyoki with planting it in 737, when the temple was founded."
+    },
+    {
+      "q": "Why is it called the breast ginkgo?",
+      "a": "Its aerial roots hang down looking like breasts, and women have long come to it hoping for an easy birth and a healthy child."
+    },
+    {
+      "q": "Does it produce any fruit?",
+      "a": "No. It is a male tree and has never borne a nut, a question the temple is asked often enough that it answers it in its own visitor FAQ."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, the temple grounds are open daily, roughly 9:00 to 16:00, with no charge to view the tree."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tky_001",
+      "name": "The Great Ginkgo of Hida Kokubunji",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 1,200 to 1,300 years",
+      "age_min": 1200,
+      "age_max": 1300,
+      "girth_cm": 1000,
+      "location": {
+        "address": "1-83 Sowa-cho, Takayama, Gifu Prefecture 506-0007, within the grounds of Hida Kokubunji temple, between the main hall and the bell-tower gate",
+        "latitude": 36.143306,
+        "longitude": 137.253833,
+        "neighbourhood": "Sowa-cho, Takayama"
+      },
+      "story": "When this ginkgo drops its last leaf, Hida expects its first snow the next day. The town treats it as its own herald of winter. It stands between the main hall and the bell-tower gate of Hida Kokubunji, roughly ten metres round and 27 to 28 metres tall. Sources put its age between 1,200 and 1,300 years, the temple claiming the higher figure and the prefecture the lower. By the temple's own account the monk Gyoki planted it in 737, when Hida Kokubunji was founded by decree of Emperor Shomu.\n\nThe other story attached to it is grimmer. A master carpenter raising a seven-storey pagoda here cut his pillars too short. His daughter Yaegiku saw that bracket blocks would make up the difference, which corrected the mistake and made the pagoda famous. Afraid she would tell, he killed her, buried her in the grounds and planted a ginkgo over the grave. The tree hangs aerial roots that look like breasts, which is why it is called Chichi Icho, the breast ginkgo, and why women have come to it for milk, an easy birth and a healthy child; stone jizo of a parent and child sit at its base. It is a male tree and has never borne a single nut, a question the temple is asked so often that the answer is in its FAQ. Typhoons and lightning took pieces of it through the last century. Public money and local donations have kept the rest.",
+      "verified_sources": [
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/1276",
+        "https://www.kankou-gifu.jp/spot/detail_1039.html",
+        "https://ja.wikipedia.org/wiki/%E9%A3%9B%E9%A8%A8%E5%9B%BD%E5%88%86%E5%AF%BA%E3%81%AE%E5%A4%A7%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6"
+      ],
+      "access": "Free to view; the tree stands in the open temple grounds of Hida Kokubunji, a working temple whose grounds are open to worshippers/visitors daily 9:00-16:00. The temple posts visitor etiquette rules confirming it is a place the public is expected to walk into, not a closed precinct.",
+      "transport": "About 5 minutes on foot from JR Takayama Station",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": { "months": [11, 12], "kind": "autumn colour", "label": "late November into early December, when it goes gold and lets the whole crown go at once" }
+    }
+  ]
+}
