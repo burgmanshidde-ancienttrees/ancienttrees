@@ -9,6 +9,48 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (session) - Backlinks: 0 after ~240 outreach mails, so batch-010-app-launch re-contacts everyone with real news
+
+He asked why impressions have flattened (921/860 the last two days after climbing
+through August) and floated more collections as the fix. Checked DATA.md's
+search window instead of guessing: the plateau is real (roughly 900-1150/day
+since 08-24, no further growth despite 195 cities now vs fewer in August), and
+it lines up with CLAUDE.md's own "Reason from distribution first" diagnosis
+(zero real backlinks) rather than a content-type gap. Collections already
+exist (3 generated rankings, 15 hand-curated) so the fix isn't more of those;
+it's `famous_demand.py --next` and `langcheck.py --next`, the existing ladder.
+
+He then asked directly how we get backlinks. `outreach_stats.py` showed the
+real number: 240 mails sent since 08-08, 30 human replies, several warm
+threads (Cambridge, Blarney, Park Guell, Bomenstichting Amsterdam, Sydney)
+and he confirmed by hand in Search Console's links report: **0 backlinks.**
+Worth recording since drafts/OUTREACH.md's "no-link-ask" rule was already
+reversed once (2026-08-22) on a reply-rate argument; this says the ask itself
+still hasn't converted to anything Google can see, weeks later, even from
+people who replied warmly.
+
+His fix: re-contact almost everyone with a genuine reason, the iOS app
+launching. Built **batch-010-app-launch** (drafts/batches/, full account in
+drafts/OUTREACH.md's Log section): 212 recipients, excluding Paulo, today's
+Oslo reply, and 4 addresses that turned out to be Hidde's own contributor-form
+test accounts (flagged to him, not asked). 10 people who actually corresponded
+got a short personal note instead of the template. Everyone else got one of
+9 language templates built from the city and URL already stored in the
+original batch files, with city names localised (Rome to Roma, Munich to
+Munchen). Sent 46 today before the 50/day cap closed (4 already used by an
+unrelated reply); **166 remain queued, status approved_by_hidde, for the next
+session or run with mail creds to continue** at 50/day over the following
+days, per his standing go-ahead ("je hebt akkoord om dit de komende dagen te
+doen"). Committed data/outreach-sent.json and the batch file in the same
+commit as instructed by outreach_send.py.
+
+**FOR HIDDE, nothing needed unless you want to watch it:** re-run
+`source ~/.ancienttrees-mail.env && python3 scripts/outreach_send.py drafts/batches/batch-010-app-launch.json --send`
+on your Mac (or wait for the next session that has the env file) until it
+reports no more SENT lines. Whether any of this produces a real backlink
+this time is worth checking again in a couple of weeks, the same way you just
+did.
+
 ## 2026-09-03 (session) - Homepage shelves now report clicks; Hidde asked "worden ze wel geklikt" before we add more
 
 He asked whether the lists already on the homepage (favourites, oldest trees,
