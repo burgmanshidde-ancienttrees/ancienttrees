@@ -1,0 +1,64 @@
+{
+  "city": "Shingu",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Shingu maps one tree: the Sacred Nagi of Kumano Hayatama Taisha, reportedly the largest tree of its kind in Japan and reputedly planted by a Heike-era samurai in 1159. It stands on the shrine's own approach path, inside a UNESCO World Heritage pilgrimage site. Published alone here because the tree itself is the destination, not because Shingu's research is finished.",
+  "meta_description": "The Sacred Nagi of Kumano Hayatama Taisha, Shingu: Japan's largest Nagi tree, planted by legend in 1159, free inside a UNESCO shrine.",
+  "question_meta": "Shingu's oldest and only mapped tree is the Sacred Nagi at Kumano Hayatama Taisha, reportedly Japan's largest Nagi, free on the shrine's approach path.",
+  "question_answer": "Shingu's only mapped tree, and its oldest, is the Sacred Nagi of Kumano Hayatama Taisha, a Nagi tree (Nageia nagi) reportedly the largest of its kind in Japan, about 17.6 metres tall with a trunk 4.45 metres round at chest height. It stands on the public approach path inside Kumano Hayatama Taisha, one of the three grand shrines of Kumano Sanzan in Wakayama Prefecture, part of the Kumano Kodo pilgrimage network.",
+  "question_context": "Tradition credits the tree to Taira no Shigemori, a Heike-clan samurai said to have planted it in 1159 after praying at the shrine for victory before marching to suppress the Heiji Rebellion, using its own leaves as a battle charm. Designated a national Natural Monument in 1940, it is one of only a handful of Nagi trees so designated individually rather than as part of a grove. Nagi is a broad-leafed conifer unrelated to the pines and cedars common on Japanese shrine grounds, and this specimen is male. Up close the trunk does not read as one clean cylinder: deep grooves run its length, and from most angles it looks like several stems fused together, though all are confirmed to be one tree. Named to New Japan's 100 Famous Trees in 1990. In 1972 a sapling grown from it was planted in Okinawa to mark the prefecture's return to Japan, a living link rather than only an old legend. The shrine is a core constituent of the Kumano Kodo pilgrimage network, which carries UNESCO World Heritage status. Free to see on the approach path, about 15 minutes on foot from JR Shingu Station.",
+  "hero_tree_id": "shg_001",
+  "oldest_tree_id": "shg_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Shingu?",
+      "a": "The Sacred Nagi of Kumano Hayatama Taisha, reportedly the largest Nagi tree in Japan, standing on the shrine's own approach path."
+    },
+    {
+      "q": "Who planted it?",
+      "a": "Tradition credits Taira no Shigemori, a 12th-century samurai said to have planted it in 1159 after praying at the shrine before a military campaign."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 1,000 years by tradition and the shrine's own account; official designation records put it a little more cautiously, from about 850 years."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the shrine's public approach path, open during normal daylight hours, about 15 minutes on foot from JR Shingu Station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "shg_001",
+      "name": "The Sacred Nagi of Kumano Hayatama Taisha",
+      "species": "Nagi (Nageia nagi)",
+      "age_estimate": "about 1,000 years",
+      "age_min": 850,
+      "age_max": 1100,
+      "girth_cm": 445,
+      "height_m": 17.6,
+      "location": {
+        "address": "1 Shingu, Shingu, Wakayama 647-0081, Japan (within the grounds of Kumano Hayatama Taisha, on the approach path to the shrine gate, opposite the Kumano Shinpokan treasure hall)",
+        "latitude": 33.73185,
+        "longitude": 135.98398,
+        "neighbourhood": "Shingu, within Kumano Hayatama Taisha shrine grounds"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E9%80%9F%E7%8E%89%E7%A5%9E%E7%A4%BE%E3%81%AE%E3%83%8A%E3%82%AE",
+        "https://kumanohayatama.jp/?page_id=16"
+      ],
+      "access": "Free. Stands on the public approach path (sando) inside the grounds of Kumano Hayatama Taisha, a working Shinto shrine open to visitors during normal daylight hours; no ticket needed to see the tree itself (a separate treasure hall/museum on site, Kumano Shinpokan, charges its own admission unrelated to viewing the tree).",
+      "transport": "About 15 minutes on foot, or about 5 minutes by car/taxi, from JR Shingu Station (JR West/JR Central Kisei Main Line).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Girth figures differ by measurement point: 445cm at breast height (about 1.2m, the figure used here) versus 545cm root-spread circumference. Height (17.6m) and breast-height girth come from Japanese Wikipedia citing the Agency for Cultural Affairs designation record; the shrine's own site gives only a vaguer description. A search-engine AI summary separately surfaced an unsourced '850 years' figure not found on either fetched source page; not used as a claim, but age_min widened to 850 to cover it rather than silently discarding it.",
+      "story": "A samurai on his way to put down a rebellion stopped here to pray, and the story says he planted this tree afterward with leaves taken from its own branches as a battle charm. That was 1159, according to the tradition attached to the Sacred Nagi of Kumano Hayatama Taisha, and whether or not Taira no Shigemori's hands were the ones that did it, the tree he is credited with has stood on this approach path ever since.\n\nNagi is Nageia nagi, a broad-leafed conifer unrelated to the pines and cedars that dominate most Japanese shrine grounds, and this is reportedly the largest example in the country: about 17.6 metres tall, its trunk running 4.45 metres round at chest height. Look closely and the trunk does not read as one clean cylinder. Grooves run the length of it, and from most angles it appears to be several stems grown together rather than a single trunk, all confirmed to be the same tree.\n\nIt stands inside Kumano Hayatama Taisha, one of the three grand shrines of Kumano Sanzan and part of the Kumano Kodo, the pilgrimage network that carries UNESCO World Heritage status across the Kii mountains. In 1972 a sapling grown from this tree was planted in Okinawa to mark the prefecture's return to Japan, a small, live continuation of a thousand-year-old tree rather than only a legend about one.\n\nFree to see on the shrine's public approach, a short walk from Shingu station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
