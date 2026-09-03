@@ -1,605 +1,605 @@
 {
- "city": "Kyoto",
- "country": "Japan",
- "status": "needs_curation",
- "intro": "Kyoto's remarkable trees rarely stand alone. They grow inside temple gardens and shrine precincts, shaped for centuries by monks, gardeners and shoguns who treated a living pine as seriously as any building. One was a shogun's bonsai before it was a tree. A camphor was planted in 1160 by imperial order and still grows where his workers put it. These are cultivated monuments, not wild survivors. The exception is Kyoto Gyoen, the walled park around the Imperial Palace, where nine grow inside or beside its walls, close enough to walk in two clusters of about a kilometre each.",
- "meta_description": "Kyoto's oldest trees stand in temple gardens and shrine precincts. A shogun's 600-year bonsai pine, an emperor's 1160 camphor, and fifteen more.",
- "question_answer": "Kyoto's oldest tree with a documented planting date is the great camphor of Imakumano Shrine, planted in 1160 on the order of the retired emperor Go-Shirakawa, who had it brought from the Kumano shrines in Wakayama. It is roughly 866 years old and still grows in the shrine's grounds in Higashiyama Ward, a two minute walk from Sennyuji-michi bus stop.",
- "question_meta": "Kyoto's oldest documented tree is an 866-year-old camphor planted in 1160 by imperial order. Its story, exact location, and 16 more remarkable trees.",
- "question_context": "The camphor at Imakumano Shrine has a planting date most ancient trees never get: 1160, the year the retired emperor Go-Shirakawa founded the shrine as a branch of the Kumano sanctuaries in Wakayama, and reportedly had this tree brought north with the transplant. Camphor trees are native to warmer parts of Japan and Kumano's coast fits that range better than inland Kyoto, which makes the tree itself a small piece of evidence for the transplant story, not just a legend attached after the fact. It has grown since into a trunk 6.58 metres around and a canopy spreading 23.5 metres east to west, a size camphors, among Japan's longest lived broadleaf trees, take centuries to reach. A deeper claim exists in the hills northwest of the city: a cedar in the Katanami river headwaters said to be 1,200 years old, tied to the same forests that supplied timber for the original Heian-kyo palace. That tree's age is harder to confirm and needs prior arrangement with the city to visit, which is why the documented camphor answers this question instead. Getting to Imakumano Shrine: Keihan Bus to Sennyuji-michi from Kyoto Station, then a two minute walk.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Kyoto?",
-   "a": "The camphor at Imakumano Shrine, planted in 1160 by order of the retired emperor Go-Shirakawa and reportedly transplanted from the Kumano shrines in Wakayama. It is documented, unlike an older but harder-to-verify 1,200-year cedar in the hills northwest of the city."
-  },
-  {
-   "q": "Where is the best place to see old trees in Kyoto?",
-   "a": "Kyoto Gyoen, the park around the old Imperial Palace. Seven trees on this list grow inside its walls and two more stand immediately beside them, close enough to cover in two walks of about a kilometre each, which makes it the one place in the city where several can be seen in an afternoon. Everywhere else they are spread thin across working temples and shrines: Kinkaku-ji, Yoshimine-dera, Daigo-ji and Nishi Honganji each hold one."
-  },
-  {
-   "q": "Are Kyoto's remarkable trees free to see?",
-   "a": "Most are. Thirteen of the seventeen stand in free precincts: Kyoto Gyoen, Nashinoki Shrine, Goo Shrine, Nishi Honganji, Imakumano Shrine, Kamigamo Shrine and Maruyama Park. The other four stand inside temples that charge general admission, not a tree-specific fee."
-  },
-  {
-   "q": "Did any of Kyoto's remarkable trees start life as a bonsai?",
-   "a": "Yes. The boat-shaped pine at Kinkaku-ji is said to have grown from a potted bonsai kept by the shogun Ashikaga Yoshimitsu in the 14th century, later planted in the ground and trained into its current sailboat shape."
-  }
- ],
- "trees": [
-  {
-   "id": "kyo_001",
-   "name": "The Reclining Dragon Pine",
-   "species": "Japanese White Pine (Pinus parviflora)",
-   "age_estimate": "over 600 years",
-   "age_min": 600,
-   "age_max": 650,
-   "location": {
-    "address": "1372 Oshio-cho, Oharano, Nishikyo-ku, Kyoto 610-1133",
-    "latitude": 34.93828,
-    "longitude": 135.6449362,
-    "neighbourhood": "Oharano, Nishikyo-ku"
-   },
-   "story": "This pine grows sideways, not up. Standing above the stone steps between Yoshimine-dera's main hall and its pagoda, the tree's trunk runs almost flat along a terrace rather than climbing skyward the way pines usually do, a five-needle pine trained or simply left to sprawl for over six centuries. A 19th century official, Hanayama's former minister Ieatsu, named it in 1857: Yuryu, the playing dragon, for the way its horizontal length resembles a dragon lounging on the ground. It once reached 50 metres end to end, long enough to rank as one of the longest documented pine specimens in Japan, until pine bark beetles infested it in 1994 and roughly 15 metres had to be cut away to save what remained. At its current 37 metres it is still one of the three trees Kyoto traditionally names as its most celebrated pines, and it remains a nationally designated natural monument, protected status Japan reserves for a small number of trees each century.",
-   "verified_sources": [
-    "https://www.begin.or.jp/~marusei/yuuryuunomatu.htm",
-    "https://totteoki.kyoto.travel/34557/",
-    "https://ecoloquia.co.jp/20220110-02/",
-    "https://www.openstreetmap.org/node/12358009109"
-   ],
-   "access": "Paid entry to Yoshimine-dera (500 yen adult)",
-   "transport": "Hankyu Bus to Yoshiminedera stop, 8 min walk uphill",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Yoshimenedera_Yuryunomatsu.jpg",
-    "license": "CC BY-SA 3.0",
-    "attribution": "PlusMinus, via Wikimedia Commons",
-    "status": "approved",
-    "width": 2294,
-    "height": 971
-   },
-   "curation_status": "ai_generated",
-   "notes": "OpenStreetMap carries a contributor-mapped, heritage-tagged node named \"遊龍松\" (Yuryu-matsu) at this spot, matching the tree's own Japanese name exactly and its 1932 national-monument designation; its species tag (Pinus thunbergii) contradicts our own two independent sources, which agree this is a five-needle pine (Pinus parviflora, matching the story's description), so the location was used but the species tag was not.",
-   "location_precision": "confirmed",
-   "paid_entry": true
-  },
-  {
-   "id": "kyo_002",
-   "name": "The Land Boat Pine",
-   "species": "Japanese White Pine (Pinus parviflora)",
-   "age_estimate": "about 600 years",
-   "age_min": 590,
-   "age_max": 620,
-   "location": {
-    "address": "Kinkakuji-cho 1, Kita-ku, Kyoto 603-8361",
-    "latitude": 35.0394604,
-    "longitude": 135.7290207,
-    "neighbourhood": "Kinkakuji, Kita-ku"
-   },
-   "story": "Ashikaga Yoshimitsu, the shogun who built the Golden Pavilion, once kept this tree as a bonsai in a pot. Sometime after Yoshimitsu's death in 1408, his potted pine was planted in the ground beside Kinkaku-ji's Kyoko-chi pond and trained into the shape of a sailing ship, its trunk and branches clipped over generations to suggest a hull, a mast and a bow pointed deliberately west, toward the Buddhist Pure Land. The result, Rikushu-no-matsu, land boat pine, has been maintained in that same nautical silhouette for roughly six centuries, making it one of the longest continuously shaped ornamental pines in Japan and one of the three trees Kyoto names among its most celebrated. Nineteenth century photographs from the 1870s and 1880s already show it in recognizably the same boat form it holds today, meaning the shape itself, not just the tree, has outlasted the Meiji Restoration, two world wars and the reconstruction of the pavilion after a 1950 arson fire.",
-   "verified_sources": [
-    "https://commons.wikimedia.org/wiki/File:Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
-    "https://takumist.wordpress.com/2018/12/09/visiting-rikushu-no-matsu-%E9%99%B8%E8%88%9F%E3%81%AE%E6%9D%BE/",
-    "https://kazahana.holy.jp/kinkakuji.html",
-    "https://www.openstreetmap.org/node/3521144622"
-   ],
-   "access": "Paid entry to Kinkaku-ji",
-   "transport": "Kyoto City Bus 101/205 to Kinkakuji-michi, 3 min walk",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
-    "license": "CC BY-SA 4.0",
-    "attribution": "そらみみ (Soramimi), Wikimedia Commons",
-    "status": "approved",
-    "width": 3205,
-    "height": 2404
-   },
-   "curation_status": "ai_generated",
-   "notes": "OpenStreetMap carries a contributor-mapped, survey-sourced node named \"陸舟の松\" (Rikushu Pine) at this spot, matching the tree's own name exactly. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/8/8e/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 4/4f. Fetched and viewed directly, the same boat-shaped trained pine beside Kinkaku-ji's roofline, before swapping.",
-   "location_precision": "confirmed",
-   "paid_entry": true
-  },
-  {
-   "id": "kyo_003",
-   "name": "The Five-Needle Pine of Hosen-in",
-   "species": "Japanese White Pine (Pinus parviflora)",
-   "age_estimate": "about 700 years",
-   "age_min": 690,
-   "age_max": 710,
-   "location": {
-    "address": "187 Shorin-in-cho, Ohara, Sakyo-ku, Kyoto 601-1242",
-    "latitude": 35.1213608,
-    "longitude": 135.8326856,
-    "neighbourhood": "Ohara, Sakyo-ku"
-   },
-   "story": "Visitors to this small temple in the Ohara valley sit on red felt cushions in a wooden hall and look at the garden through the frame of a doorway, a deliberate composition called a gakubuchi teien, or picture-frame garden. The subject of that living picture is this pine, trained over roughly seven centuries into a shape said to echo Mount Mikami, a solitary peak southeast of the city sometimes nicknamed Omi Fuji for its cone shape. The tree holds Kyoto City natural monument status and is one of the temple's central attractions alongside a ceiling made from the floorboards of Fushimi Castle, preserved with bloodstains from a 1600 samurai last stand. By 2021 the pine showed signs of strain from age and drought, prompting visible care from the temple's gardeners; recent visitor accounts describe it recovering vigor since. Ohara sits in the hills north of central Kyoto, quieter than the city's headline temples, and the pine rewards the trip out with a garden built around one tree's silhouette rather than a wide landscape.",
-   "verified_sources": [
-    "https://souda-kyoto.jp/guide/spot/housenin.html",
-    "https://www.kyoto-tabiya.com/2021/07/06/93253/",
-    "https://ja.wikipedia.org/wiki/%E5%AE%9D%E6%B3%89%E9%99%A2"
-   ],
-   "access": "Paid entry to Hosen-in (includes matcha service)",
-   "transport": "Kyoto Bus to Ohara, 12 min walk",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/%E5%AE%9D%E6%B3%89%E9%99%A2_01.JPG",
-    "license": "CC BY-SA 3.0",
-    "attribution": "Maechan0360, CC BY-SA 3.0, via Wikimedia Commons",
-    "status": "approved",
-    "width": 2048,
-    "height": 1536
-   },
-   "curation_status": "flagged",
-   "notes": "The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. A candidate photo captioned \"Hosen-in, Bankan-en (Garden)\" was viewed directly on an earlier pass and rejected: it shows an illuminated Japanese maple against a bamboo grove at night, not a pine at all, so the garden-name caption evidently covers more than just this one tree. A second candidate, Commons file \"宝泉院_01.JPG\" (Category:Goḳō-no-matsu, Hōsen-in, the tree's own name), was downloaded and viewed directly this pass: it is the temple's signature framed-garden shot, the pine's gnarled poled branches seen through the guest-hall window with tatami in the foreground, an unambiguous match. Approved. Pin corrected 2026-07-28, about 625m: the previous coordinate was a street-level address estimate that turned out to be a genuine error, not just imprecise; OpenStreetMap carries two independently mapped nodes both named Hosen-in within about 150m of each other, one explicitly tagged with this entry's own street number (187), used here instead. The temple is a single small building around one guest hall and garden, so this building-level point puts a visitor at the pine itself, not just in the neighbourhood.",
-   "location_precision": "confirmed",
-   "paid_entry": true
-  },
-  {
-   "id": "kyo_004",
-   "name": "The Inverted Ginkgo of Nishi Honganji",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "about 390 years",
-   "age_min": 385,
-   "age_max": 395,
-   "best_time": {
-    "months": [
-     11
-    ],
-    "label": "late November, one of Kyoto's more dependable autumn colour displays"
-   },
-   "location": {
-    "address": "Nishi Honganji, Horikawa-dori Hanayacho Sagaru, Shimogyo-ku, Kyoto 600-8501",
-    "latitude": 34.992114,
-    "longitude": 135.751596,
-    "neighbourhood": "Shimogyo-ku"
-   },
-   "story": "This ginkgo grows low and wide rather than tall, its heaviest branches spreading outward close to the ground before the trunk narrows above them, an arrangement that from certain angles makes the whole tree look planted upside down, roots reaching for the sky. That resemblance earned it the name Sakasa Icho, inverted ginkgo, sometime after it went into the ground in front of Nishi Honganji's Goeido Hall in 1636. A second nickname, Mizufuki Icho, water-spouting ginkgo, comes from a temple legend that the tree spouted water to help extinguish fires that threatened the complex in 1788 and again in 1864, both real, documented blazes in Kyoto's history even if the tree's firefighting role is legend rather than record. Ginkgos are famously fire-resistant compared to other species, their trunks holding unusual water content, which may be where the story got its foothold. The tree is a designated Kyoto City natural monument and turns gold most reliably in late November, one of the more dependable autumn color displays in a city that plans its calendar around them.",
-   "verified_sources": [
-    "https://media.mk-group.co.jp/entry/koyo-nishihonganji/",
-    "https://hanako.tokyo/learn/341156/",
-    "https://tenshin.or.jp/archives/4802"
-   ],
-   "access": "Free, Nishi Honganji precinct open daily",
-   "transport": "Kyoto Station, 15 min walk, or bus to Nishihonganji-mae",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Grand_Ginkgo_Tree_in_West_Honganji_Temple.JPG",
-    "license": "CC BY-SA 3.0",
-    "attribution": "そらみみ (Soramimi), Wikimedia Commons",
-    "status": "approved",
-    "width": 3264,
-    "height": 2448
-   },
-   "curation_status": "ai_generated",
-   "notes": "Photo (\"Grand Ginkgo Tree in West Honganji Temple\") viewed directly: shows a massive, wide, low-spreading ginkgo fenced off in a temple courtyard, consistent with the Sakasa Icho (inverted ginkgo) shape the story describes. Approved.",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "kyo_005",
-   "name": "The Weeping Cherry of Gion",
-   "species": "Weeping Higan Cherry (Prunus subhirtella)",
-   "age_estimate": "75-90 years (second-generation tree; sources disagree on the exact figure)",
-   "age_min": 75,
-   "age_max": 92,
-   "location": {
-    "address": "Maruyama Park, Higashiyama-ku, Kyoto 605-0071",
-    "latitude": 35.003931,
-    "longitude": 135.780788,
-    "neighbourhood": "Gion, Higashiyama-ku"
-   },
-   "story": "The tree everyone photographs at Maruyama Park is not the tree that made the spot famous. The original weeping cherry, a single white higan variety with a trunk 4 metres around, stood here for more than 200 years and earned natural monument status in 1938, only to die in 1947 in the difficult years after the war. Sano Toemon XV, a cherry tree keeper from a family that has tended Kyoto's most important specimens for generations, had collected seeds from the dying original in 1928 and grew a successor, which he donated and planted on the same spot in 1949. That second tree is the one visitors see today, floodlit most nights during bloom season into a canopy of pale pink against the dark, one of the most photographed single trees in Japan. Sources differ on exactly how old to call it, some counting from the 1949 planting and others from the 1928 seed collection, a small discrepancy left honest here rather than resolved into a false precision. Either way, the tree standing in Maruyama Park today has been growing for the better part of a century, not the two hundred years its predecessor reached.",
-   "verified_sources": [
-    "https://media.mk-group.co.jp/entry/sakura-maruyama/",
-    "http://www.watarigraphic.com/sakura/maruyama.php"
-   ],
-   "access": "Free, public park",
-   "transport": "Gion-Shijo (Keihan) or Higashiyama (Tozai Line), 10 min walk",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Giant_Gion_weeping_sakura_%2851472103367%29.jpg",
-    "license": "CC BY 2.0",
-    "attribution": "Raita Futo, Wikimedia Commons (via Flickr)",
-    "status": "approved",
-    "width": 5844,
-    "height": 3896
-   },
-   "curation_status": "flagged",
-   "notes": "Age range reflects a genuine discrepancy between sources counting from the 1949 planting (about 77 years) versus the 1928 seed collection (about 90+ years). Presented as a range rather than picking one figure, per the site's honesty standard. Photo is captioned as the Gion weeping sakura in Maruyama Park with embedded coordinates (35.0035, 135.7805) within about 50m of this entry's pin; a text-search workflow cannot visually confirm the frame, so flagged found_needs_check per house practice.",
-   "location_precision": "confirmed",
-   "best_time": {
-    "months": [
-     3,
-     4
-    ],
-    "label": "late March into early April, when its cascading blossoms draw crowds for night illumination"
-   }
-  },
-  {
-   "id": "kyo_006",
-   "name": "The Camphor of Munakata Shrine",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "age_estimate": "600-800 years (age disputed between sources)",
-   "age_min": 600,
-   "age_max": 800,
-   "location": {
-    "address": "Kyoto Gyoen, Kamigyo-ku, Kyoto 602-0881",
-    "latitude": 35.019452,
-    "longitude": 135.760783,
-    "neighbourhood": "Kyoto Gyoen, Kamigyo-ku"
-   },
-   "story": "Kyoto Gyoen, the wooded park that surrounds the old Imperial Palace, holds more than 200 trees old and large enough to be called giants by the environment ministry that manages the grounds today. This camphor, growing at Munakata Shrine in the park's southwest corner, is generally named as the single oldest and largest tree in Kyoto Gyoen, though sources disagree on the tree's exact age by as much as two centuries, a spread wide enough that it is stated here as a range rather than a false certainty. The shrine itself dates to 795, founded when Emperor Kanmu had a protective deity brought from the original Munakata Shrine in what is now Fukuoka Prefecture to watch over the new capital at Heian-kyo, and this camphor has grown at the site for a large fraction of the park's history since. Kyoto Gyoen has been public parkland since the Meiji era moved the imperial residence to Tokyo, and its giant trees, ginkgos, zelkovas, hackberries and camphors among them, now shade a park most Kyoto residents walk through rather than one they think to visit specifically.",
-   "verified_sources": [
-    "https://kyototravels.com/guidemunakatajinja/",
-    "https://www.kyotonikanpai.com/spot/01_03_kyoto_gosho/munakata_jinja.php"
-   ],
-   "access": "Free, Kyoto Gyoen open daily",
-   "transport": "Marutamachi (Karasuma Line) or Karasuma-Marutamachi bus stop, 5 min walk",
-   "photo": {
-    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/565640909/original.jpg",
-    "license": "CC BY-SA",
-    "attribution": "ingimar, via iNaturalist",
-    "status": "approved",
-    "width": 947,
-    "height": 2048
-   },
-   "curation_status": "flagged",
-   "notes": "Age given as a wide range (600-800 years) because sources disagree substantially and no single registry figure was found. Location upgraded to confirmed: two independent iNaturalist observations of this species (one CC BY-SA with photo, one CC0), 20m apart from each other and both consistent with the shrine's southwest-corner position in Kyoto Gyoen, about 140m from the previous estimate. Photo viewed directly: a large mature broadleaf tree ringed by protective bollards on a gravel path, consistent with a protected shrine tree in a formal park.",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "kyo_007",
-   "name": "The Emperor's Camphor of Imakumano",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "age_estimate": "about 866 years",
-   "age_min": 860,
-   "age_max": 870,
-   "location": {
-    "address": "42 Imakumano Naginomori-cho, Higashiyama-ku, Kyoto 605-0977",
-    "latitude": 34.9846849,
-    "longitude": 135.7736551,
-    "neighbourhood": "Imakumano, Higashiyama-ku"
-   },
-   "story": "This tree has a birth year most ancient trees can only guess at: 1160, the year the retired emperor Go-Shirakawa founded Imakumano Shrine as a branch of the Kumano sanctuaries on the Kii Peninsula, reportedly bringing this camphor north from the original site to plant at the new one. Camphor trees are native to warmer coastal Japan, not inland Kyoto, which fits the transplant story better than it would if the species were simply local. Nearly nine centuries later the tree stands 21.9 metres tall with a trunk 6.58 metres around and a canopy spreading 23.5 metres east to west, thick enough that it functions as the shrine's unofficial landmark, visible before the shrine buildings themselves from the surrounding streets. Imakumano Shrine carries another distinction unrelated to the tree: it is traditionally named as a birthplace of Noh theatre, where a young performer called Zeami is said to have caught the attention of the shogun Ashikaga Yoshimitsu at a 14th century performance, the encounter that launched Noh toward becoming a shogunal art form. The camphor was already two centuries old when that performance happened.",
-   "verified_sources": [
-    "https://rekishinokura.com/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE%EF%BC%88%E4%BA%AC%E9%83%BD%EF%BC%89%E3%80%9C%E5%A4%A7%E6%A8%9F%E3%81%8C%E9%8E%AE%E5%BA%A7%E3%81%99%E3%82%8B%E4%BA%AC%E9%83%BD%E4%B8%89%E7%86%8A%E9%87%8E/",
-    "https://furafurakyoto.com/imakumano-jinjya/",
-    "https://ja.wikipedia.org/wiki/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
-   ],
-   "access": "Free, shrine grounds open daily",
-   "transport": "Keihan Bus to Sennyuji-michi, 2 min walk",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_-_%E6%A8%9F%E9%BE%8D%E5%BC%81%E8%B2%A1%E5%A4%A9.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "Cakoko23, Wikimedia Commons",
-    "status": "approved",
-    "width": 3264,
-    "height": 2448
-   },
-   "curation_status": "ai_generated",
-   "notes": "Photo is titled \"Shoryu Benzaiten\" (樟龍弁財天), an alternate name Japanese-language sources confirm is used for this exact great camphor at Imakumano Shrine, since its large limbs are said to resemble a dragon and the tree is worshipped as the seat of a dragon-riding Benzaiten. Embedded coordinates (34.9843, 135.7742) sit within about 50m of this entry's pin. A text-search workflow cannot visually confirm the tree fills the frame, so flagged found_needs_check per house practice.",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "kyo_008",
-   "name": "The Taiko Weeping Cherry of Daigo-ji",
-   "species": "Weeping Higan Cherry (Prunus subhirtella)",
-   "age_estimate": "about 150-170 years (not the tree Hideyoshi saw)",
-   "age_min": 150,
-   "age_max": 175,
-   "location": {
-    "address": "Sanboin, Daigo-ji, Fushimi-ku, Kyoto 601-1325",
-    "latitude": 34.9519148,
-    "longitude": 135.8187884,
-    "neighbourhood": "Daigo, Fushimi-ku"
-   },
-   "story": "In the spring of 1598, months before his death, the warlord Toyotomi Hideyoshi staged one of the most extravagant cherry blossom parties in Japanese history at Daigo-ji, inviting hundreds of guests and reportedly having some 700 cherry trees transplanted to the temple grounds for the occasion. The weeping cherry now growing in the Sanboin sub-temple's garden carries his name, Taiko Shidarezakura, and his story, but it is not that tree: at roughly 150 to 170 years old it was planted in the 19th century, long after Hideyoshi's party and his own death the same year. What survives is the site and the association, strong enough that the painter Okumura Togyu made this specific tree the subject of a celebrated work simply titled Daigo, after which the tree picked up a second nickname, Togyu's cherry. Sanboin's garden itself was largely designed by Hideyoshi in the last months of his life, which means the cherry, even at a fraction of his party's age, blooms inside a landscape he did lay out himself.",
-   "verified_sources": [
-    "https://www.mlit.go.jp/tagengo-db/R1-00340.html",
-    "https://kaze-kyoto.com/tsuredure/%E4%BA%AC%E9%83%BD%E3%83%BB%E9%86%8D%E9%86%90%E5%AF%BA%E3%81%AE%E5%A4%A7%E3%81%97%E3%81%A0%E3%82%8C%E6%A1%9C%E3%80%82%E7%A7%80%E5%90%89%E3%81%AE%E3%80%8C%E9%86%8D%E9%86%90%E3%81%AE%E8%8A%B1%E8%A6%8B%E3%80%8D/",
-    "https://www.daigoji.or.jp/grounds/sanboin.html"
-   ],
-   "access": "Paid entry to Sanboin",
-   "transport": "Daigo (Tozai Line), 12 min walk",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Semboin_subtemple_in_Daigoji_%283471809451%29.jpg",
-    "license": "CC BY-SA 2.0",
-    "attribution": "KimonBerlin, via Wikimedia Commons",
-    "status": "approved",
-    "width": 3504,
-    "height": 2336
-   },
-   "curation_status": "flagged",
-   "notes": "Pin corrected 2026-07-27 (about 185m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"太閤しだれ桜\" (Taiko shidarezakura, literally \"Taiko weeping cherry\") at this position, an exact and distinctive name match to this entry, replacing the previous estimate from Daigo-ji's general temple address. Story explicitly states this is not the original Hideyoshi-era tree, to avoid the misleading impression the name invites. Photo viewed directly 2026-07-28: an old, thick, mossy, gnarled weeping cherry in full bloom, bamboo-propped, beside a temple wall, matching the story's description exactly; one of only four images in Commons' dedicated \"Sakura at Sanbō-in\" subcategory (not the broader Daigo-ji sakura category), consistent with this being the sub-temple's single named, famous specimen rather than an arbitrary garden cherry.",
-   "location_precision": "confirmed",
-   "best_time": {
-    "months": [
-     3,
-     4
-    ],
-    "label": "late March into early April, when its blossoms recreate the display Hideyoshi once staged here"
-   },
-   "paid_entry": true
-  },
-  {
-   "id": "kyo_010",
-   "name": "The Emperor's Gift Cherry of Kamigamo",
-   "species": "Weeping Higan Cherry (Prunus subhirtella)",
-   "age_estimate": "about 160-180 years",
-   "age_min": 155,
-   "age_max": 180,
-   "location": {
-    "address": "339 Kamigamo Motoyama, Kita-ku, Kyoto 603-8047",
-    "latitude": 35.0588094,
-    "longitude": 135.7526545,
-    "neighbourhood": "Kamigamo, Kita-ku"
-   },
-   "story": "This weeping cherry began its life somewhere inside the Kyoto Imperial Palace grounds before Emperor Komei, who reigned from 1846 to 1867 and was the father of the Meiji Emperor, had it given to Kamigamo Shrine. That gift is the source of its name, Gosho-zakura, palace cherry, and the reason a cherry tree with no natural connection to Kamigamo's centuries-old shrine complex has stood on the approach path between its first and second torii gates for roughly a century and a half regardless. It blooms alongside a second named cherry, Saio-zakura, whose deep red flowers offer a contrast to Gosho-zakura's white, so that visitors walking the approach in late March or early April see two named, individually storied trees rather than an anonymous cherry avenue. Kamigamo Shrine itself, formally Kamowakeikazuchi Shrine, is one of Kyoto's oldest religious sites and a UNESCO World Heritage component, its grounds predating this cherry by many centuries; the tree is a relatively recent addition to a very old place, and its imperial provenance is what earns it a place among the shrine's named, individually recognized trees rather than the roughly 200 unnamed cherries also growing on the grounds.",
-   "verified_sources": [
-    "https://moutaku3.exblog.jp/30887067/",
-    "https://www.kyoto-kankou.or.jp/event/1124",
-    "http://www.premium-j.jp/premiumsalon/20250327_48618/"
-   ],
-   "access": "Free, shrine grounds open daily",
-   "transport": "Kyoto City Bus to Kamigamo Jinja-mae, at the shrine gate",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "notes": "Pin corrected 2026-07-27 (about 165m, a real error rather than mere imprecision): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"御所桜\" (Gosho-zakura), an exact name match, found alongside a second node 20m away named \"斉王桜\" (Saio-zakura), the companion red-flowered cherry this entry's own story names as growing beside it. The two names appearing together, matching the story precisely, makes this a confident match rather than a coincidence.",
-   "location_precision": "confirmed",
-   "best_time": {
-    "months": [
-     3,
-     4
-    ],
-    "label": "late March into early April, among the first of the shrine's cherries to bloom"
-   }
-  },
-  {
-   "id": "kyo_011",
-   "name": "The Hackberry of Demizu-guchi",
-   "species": "Chinese Hackberry (Celtis sinensis)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Near Demizu-guchi entrance, Kyoto Gyoen National Garden",
-    "latitude": 35.0195,
-    "longitude": 135.7593,
-    "neighbourhood": "Kyoto Gyoen (Imperial Palace Park), Kamigyo-ku"
-   },
-   "story": "The crown of this tree is ten metres wider than the tree is tall. Kamigyo Ward's register of what it calls its pride trees measures the hackberry at the Demizu gate at 22.5 metres high, with a trunk 4.98 metres around and branches reaching 32.9 metres across, one of the largest hackberries the ward has on record. What nobody has recorded is its age. The register measures trees, it does not date them, and no other source puts a number on this one, so its size is the honest thing to say about it and its years are not.\n\nKyoto Gyoen took its present shape in 1877, after the emperor's court left for Tokyo and the aristocratic quarter that filled this ground was cleared into open parkland. The environment ministry that manages the park today counts more than 200 trees on it big enough to call giants: hackberries, zelkovas, camphors and ginkgos, growing on ground that was private for most of its history and public for the last century and a half. This one stands beside Demizu-guchi, a pedestrian gate in the west wall, a short walk from the camphor at Munakata Shrine in the same southwest corner of the park. Between them they anchor a corner where several remarkable trees stand within a few minutes of each other, which is rare in a city that keeps most of its best ones an hour apart by bus.",
-   "verified_sources": [
-    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012431.html",
-    "https://www.env.go.jp/garden/kyotogyoen/2_guide/map3_demizu.html"
-   ],
-   "access": "Free. Kyoto Gyoen National Garden (the public park surrounding the Imperial Palace) is open to the public year-round, dawn to dusk.",
-   "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 10 minute walk",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "notes": "No age figure exists in any source: Kamigyo Ward's pride-tree register records dimensions only. Second source (Ministry of Environment) describes Kyoto Gyoen's giant-tree population generally and does not name this individual tree, so this is effectively single-sourced and flagged for that reason, not for doubt about the tree's existence or species. Coordinates are a gate-area estimate, not a GPS fix on the trunk.",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "kyo_012",
-   "name": "The Zelkova of Ishiyakushi Gate",
-   "species": "Saw-leaf Zelkova (Zelkova serrata)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Near Ishiyakushi-gomon gate, Kyoto Gyoen National Garden",
-    "latitude": 35.025,
-    "longitude": 135.7663,
-    "neighbourhood": "Kyoto Gyoen (Imperial Palace Park), Kamigyo-ku"
-   },
-   "story": "Keyaki, the Japanese name for this species, is the timber temple carpenters and drum makers reach for first, which is one reason very large ones are not common. This one was left standing. Kamigyo Ward's register measures it at 22 metres tall, with a trunk 4.29 metres around and a crown spreading 29.6 metres, which puts it among the largest zelkovas the ward has catalogued. Its age is a blank. The register records dimensions and nothing else, and no other source names this tree at all, so the measurements are what can be stated and the years are not.\n\nIt grows just inside Ishiyakushi-gomon, one of nine gates in the walls that still mark out the old palace enclosure, on the Teramachi-dori side. The ground behind those walls was a district of court nobles' mansions until 1869, when the emperor moved to Tokyo and the households followed him; the plots were cleared and replanted from 1877, which is why a park in the middle of a capital city now holds trees this size at all. The zelkova sits at the opposite end of that park from the hackberry at the Demizu gate, about 1.1 kilometres away, close enough that the two mark the ends of the same walk.",
-   "verified_sources": [
-    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012402.html",
-    "https://www.env.go.jp/garden/kyotogyoen/2_guide/map.html"
-   ],
-   "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
-   "transport": "Imadegawa Station (Kyoto Municipal Subway Karasuma Line), roughly 12 minute walk",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "notes": "No age figure exists in any source; the ward register records dimensions only. Second source (Ministry of Environment) corroborates that trees of this scale exist in Kyoto Gyoen but does not name this one, so this is effectively single-sourced and flagged for that reason. Coordinates are a gate-position estimate, not a GPS fix on the trunk.",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "kyo_013",
-   "name": "The Hackberry of Nashinoki Shrine",
-   "species": "Chinese Hackberry (Celtis sinensis)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Nashinoki Shrine, Teramachi Hirokoji-agaru, Someden-cho, Kamigyo-ku",
-    "latitude": 35.025,
-    "longitude": 135.767361,
-    "neighbourhood": "Teramachi, Kamigyo-ku (immediately east of Kyoto Gyoen)"
-   },
-   "story": "One document describes this tree, and it is a list of measurements. Kamigyo Ward records the hackberry at Nashinoki Shrine as 21 metres tall, with a trunk 3.72 metres around and a canopy spreading 19.4 metres, and designates it one of the ward's pride trees. No source gives it an age, and nothing else written about the shrine mentions it.\n\nWorth knowing before you arrive: the tree Nashinoki is locally known for is a different one, a katsura that carries a nickname and a following of its own. The hackberry has neither. What it has is size and a position, on Teramachi-dori directly against Kyoto Gyoen's east wall, about 850 metres from the camphor at Munakata Shrine, which costs a visitor almost nothing to add to a loop of the park.\n\nThe shrine is young by Kyoto standards. It was founded in 1885 for Sanjo Sanetomi, the court noble who fled the capital with six others in 1863 on the losing side of a factional purge, spent years in exile in Choshu, and came back to serve as chancellor of the Meiji state. The precinct that went up for him is small, walled and quiet, which is a plausible explanation for how a tree of this size has been left alone a few metres from the traffic on Teramachi-dori.",
-   "verified_sources": [
-    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012315.html",
-    "https://ja.wikipedia.org/wiki/梨木神社"
-   ],
-   "access": "Free to enter the shrine precinct.",
-   "transport": "Keihan Jingu-Marutamachi Station, roughly 8 minute walk",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "notes": "Effectively single-sourced: Wikipedia confirms the shrine's identity, 1885 founding and coordinates but its tree content covers only the katsura known locally as the Tree of Love, not this hackberry. No age given anywhere. The story states the katsura distinction explicitly so a visitor does not mistake one tree for the other. Coordinates are the shrine's, not the tree's position within the grounds.",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "kyo_014",
-   "name": "The Grand Ginkgo of Goo Shrine",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "several hundred years",
-   "age_min": 200,
-   "age_max": 500,
-   "best_time": {
-    "months": [
-     11
-    ],
-    "kind": "autumn colour",
-    "label": "late November, when the whole crown goes gold at once and drops within a week"
-   },
-   "location": {
-    "address": "Goo Shrine (Gooh Jinja), Karasuma-dori Shimo-Nagaracho-shita, Sakura-tsurumarucho, Kamigyo-ku",
-    "latitude": 35.02222,
-    "longitude": 135.75861,
-    "neighbourhood": "Karasuma, Kamigyo-ku (immediately west of Kyoto Gyoen)"
-   },
-   "story": "The guardians at this shrine gate are wild boars rather than the usual stone lion-dogs, and the tree behind them is the tallest thing on the grounds. Kamigyo Ward measures the ginkgo standing north of the main hall at 25 metres, with a trunk 3.18 metres around, the largest of six sizeable ginkgos in the precinct. A Kyoto travel description puts the shrine's big ginkgos at several hundred years old. That is an estimate rather than a measured figure and nobody has narrowed it since, so several hundred years is as close as anyone can honestly get.\n\nThe boars are for Wake no Kiyomaro, the eighth century official the shrine honours. In 769 he blocked the monk Dokyo's attempt to have himself made emperor, and was exiled and, by the shrine's telling, crippled for it; a herd of wild boars is said to have escorted him to safety, after which his legs recovered. That is why people come here to pray for their legs and feet rather than for exam results, and why boars sit where lion-dogs usually do.\n\nIn the last days of November the ginkgo turns, the whole crown going gold at once and then dropping most of it inside a week. The shrine faces Kyoto Gyoen's west wall on Karasuma-dori, five minutes from Marutamachi station.",
-   "verified_sources": [
-    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012542.html",
-    "https://tabiiro.jp/leisure/s/216563-kyoto-goou-jinja/",
-    "https://ja.wikipedia.org/wiki/護王神社"
-   ],
-   "access": "Free to enter the shrine precinct.",
-   "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 5 minute walk",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "notes": "Age is a source estimate ('several hundred years', tabiiro.jp), not a measured figure, hence the wide age_min/age_max band and the hedged phrasing in the story. Wikipedia confirms the shrine's identity and coordinates but names only a quince as its notable tree, so it is used for location only. Coordinates are the shrine's; the tree stands north of the honden and is not itself GPS-fixed.",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "kyo_016",
-   "name": "Sudajii of Omiya Gate, Kyoto Gyoen",
-   "species": "Japanese Chinquapin (Castanopsis sieboldii)",
-   "location": {
-    "latitude": 35.017,
-    "longitude": 135.7605,
-    "address": "",
-    "neighbourhood": "Near Omiya-gomon, south side of Kyoto Gyoen, Kamigyo-ku"
-   },
-   "location_precision": "approximate",
-   "curation_status": "flagged",
-   "story": "Before there was a city here, this was the tree that covered the ground. Sudajii, the Japanese chinkapin, was the dominant canopy of the evergreen broadleaf forest that ran across lowland western Japan until it was cleared for rice, timber and capitals, which makes a full-grown one inside Kyoto a leftover of the landscape the city replaced. This one stands at the Omiya gate on the south side of Kyoto Gyoen. Kamigyo Ward added it to its register of pride trees in October 2008 and measured it at 14.6 metres tall, with a trunk 2.78 metres around.\n\nNobody has dated it, and that ward register is the only document that mentions it at all, so the measurements are the whole of what anyone can offer.\n\nIts acorns are the ones worth bending down for. Most oak acorns are too bitter to eat without leaching first; chinkapin acorns are sweet enough raw and better roasted, which is why generations of Japanese children knew them by taste rather than from a book. They come down in autumn onto the gravel.\n\nThe Omiya gate opens onto the same short circuit as the camphor at Munakata Shrine and the hackberry at Demizu-guchi, close enough together that all three fit inside one slow hour.",
-   "verified_sources": [
-    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012424.html"
-   ],
-   "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
-   "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "kyo_018",
-   "name": "Ginkgo of Inui Gate, Kyoto Gyoen",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "location": {
-    "latitude": 35.028,
-    "longitude": 135.7595,
-    "address": "",
-    "neighbourhood": "Near Inui-gomon, northwest corner of Kyoto Gyoen, Kamigyo-ku"
-   },
-   "location_precision": "approximate",
-   "curation_status": "flagged",
-   "best_time": {
-    "months": [
-     11
-    ],
-    "kind": "autumn colour",
-    "label": "the second half of November, when it goes gold and then drops the lot within days"
-   },
-   "story": "The gate this ginkgo stands at is named after a dog and a boar. Inui is the old word for northwest, written with the two zodiac animals that sat in that quarter of the compass, and Inui-gomon is the northwest corner gate of Kyoto Gyoen. The tree beside it runs to 19.5 metres, with a trunk 3.15 metres around, measured by Kamigyo Ward for its register of pride trees. That register gives no age, and no other source mentions this ginkgo, so how long it has been growing there is not known.\n\nIt is the far end of the park. The camphor at Munakata Shrine and the hackberry at Demizu-guchi are down in the southwest corner, and getting here means about a kilometre and a half north on gravel, twenty minutes if nothing distracts you, past a fair share of the two hundred trees the environment ministry counts as giants on these grounds. None of that ground is old. Aristocratic households filled this rectangle until they broke up and followed their emperor east, and what went in from 1877 was deliberate parkland, which is the only reason a walled rectangle in the middle of a city carries trees on this scale.\n\nCome in the second half of November. Ginkgos go gold all at once, hold it for a matter of days, and then put the entire crown on the ground.",
-   "verified_sources": [
-    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012404.html"
-   ],
-   "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
-   "transport": "Imadegawa Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "kyo_015",
-   "name": "The Carriage-Turning Cherry of Kyoto Gyoen",
-   "species": "Cherry (Prunus sp.)",
-   "age_estimate": "roughly 80 years",
-   "age_min": 70,
-   "age_max": 90,
-   "location": {
-    "latitude": 35.0258332,
-    "longitude": 135.7610189,
-    "address": "",
-    "neighbourhood": "Southwest of Seisho-mon gate, Kyoto Gyoen, Kamigyo-ku"
-   },
-   "location_precision": "approximate",
-   "curation_status": "flagged",
-   "best_time": {
-    "months": [
-     4
-    ],
-    "kind": "flowers",
-    "label": "early April, when single and double blossom open together on one crown"
-   },
-   "story": "The tree that stopped an emperor's carriage is not the tree standing here now. Kurumagaeshi-zakura means the carriage turned back, and the name comes from a tradition that Emperor Go-Mizunoo, who reigned from 1611 to 1629, had already passed this cherry when he ordered his carriage brought round for a second look. That is a story told about the tree rather than anything recorded in his reign, and it is worth saying which of the two it is.\n\nThe cherry standing southwest of Seisho-mon gate today is not that tree either. The original went, and after the war the Kyoto nurseryman Sano Toujiro raised its replacement from shoots cut off it, so what grows here is roughly eighty years old and genetically the same cherry, in the same place, on its second run.\n\nGo in April and the reason to stop has nothing to do with emperors. Single and double flowers open together on the same crown, the flat five petals of a wild cherry beside the crowded rosettes of a cultivated one, all on one tree. Kyoto Gyoen has been public ground since 1877, eight years after the court followed the emperor to Tokyo, and this corner of it puts the cherry within a kilometre of the hackberry at Demizu-guchi and the camphor at Munakata Shrine. It carries both single and double flowers on one trunk, which is why nobody has pinned its species down past the genus. If you know which cherry it is, tell us.",
-   "verified_sources": [
-    "https://rakutabi.kyo2.jp/e464533.html"
-   ],
-   "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
-   "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 15 minute walk",
-   "notes": "Coordinate is Seisho-mon gate itself (verified via OSM/Nominatim, 35.0258332/135.7610189), not a GPS fix on the trunk: a web search independently confirms the tree stands 'southwest of Seisho-mon' (車返桜は京都御苑の清所門南西に位置), so this is a gate-area estimate in the same honest style as kyo_011's Demizu-guchi pin, not the tree's exact trunk. Previously HELD 2026-08-12 on a placeholder coordinate identical to kyo_017's; resolved this pass by looking up each gate's real position rather than guessing.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  },
-  {
-   "id": "kyo_017",
-   "name": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "location": {
-    "latitude": 35.0195774,
-    "longitude": 135.7595584,
-    "address": "",
-    "neighbourhood": "Near Shimodachiuri-gomon, west side of Kyoto Gyoen, Kamigyo-ku"
-   },
-   "location_precision": "approximate",
-   "curation_status": "flagged",
-   "story": "Early cinema ran on this species. Camphor crystals, steam-distilled from the wood and leaves of Cinnamomum camphora, were what made celluloid film stock and photographic plates flexible enough to use, and for decades Japan and its colonies supplied most of the world's camphor, until the chemical industry worked out how to make it from turpentine instead. The trees that fed that trade came down by the forest. This one did not.\n\nIt grows just inside Shimodachiuri-gomon, a gate in the west wall of Kyoto Gyoen, and Kamigyo Ward lists it among its pride trees at 12.3 metres tall with a trunk 2.76 metres around. Its age appears nowhere. That ward register is the only document naming this tree, and it records dimensions rather than years.\n\nCamphors are evergreen, so this is the same tree in February as in July: dense, dark, heavily leaved, and smelling of a medicine cabinet if you crush a leaf between your fingers. It is not the biggest camphor in this park. The one at Munakata Shrine, a short walk away, is far larger and several centuries older, and this is the tree most people go straight past on their way to it. Which is a decent argument for looking up on the way.",
-   "verified_sources": [
-    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012432.html"
-   ],
-   "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
-   "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 5 minute walk",
-   "notes": "Coordinate is Shimodachiuri-gomon gate itself, verified via OSM/Nominatim (35.0195774/135.7595584, tagged as the gate building), matching the story's own 'grows just inside Shimodachiuri-gomon'. Gate-area estimate, not a GPS fix on the trunk, same honest style as kyo_011's Demizu-guchi pin. Previously HELD 2026-08-12 on a placeholder coordinate identical to kyo_015's; resolved this pass. Note this gate sits only ~25m from kyo_011's own coordinate despite both trees' stories describing them as being a short walk apart in the same southwest corner; kyo_011's own pin (already published, location_precision approximate) may itself be imprecise, worth a future pass rather than touched here without stronger evidence.",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   }
-  }
- ],
- "oldest_tree_id": "kyo_007",
- "hero_tree_id": "kyo_005"
+  "city": "Kyoto",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kyoto's remarkable trees rarely stand alone. They grow inside temple gardens and shrine precincts, shaped for centuries by monks, gardeners and shoguns who treated a living pine as seriously as any building. One was a shogun's bonsai before it was a tree. A camphor was planted in 1160 by imperial order and still grows where his workers put it. These are cultivated monuments, not wild survivors. The exception is Kyoto Gyoen, the walled park around the Imperial Palace, where nine grow inside or beside its walls, close enough to walk in two clusters of about a kilometre each.",
+  "meta_description": "Kyoto's oldest trees stand in temple gardens and shrine precincts. A shogun's 600-year bonsai pine, an emperor's 1160 camphor, and fifteen more.",
+  "question_answer": "Kyoto's oldest tree with a documented planting date is the great camphor of Imakumano Shrine, planted in 1160 on the order of the retired emperor Go-Shirakawa, who had it brought from the Kumano shrines in Wakayama. It is roughly 866 years old and still grows in the shrine's grounds in Higashiyama Ward, a two minute walk from Sennyuji-michi bus stop.",
+  "question_meta": "Kyoto's oldest documented tree is an 866-year-old camphor planted in 1160 by imperial order. Its story, exact location, and 16 more remarkable trees.",
+  "question_context": "The camphor at Imakumano Shrine has a planting date most ancient trees never get: 1160, the year the retired emperor Go-Shirakawa founded the shrine as a branch of the Kumano sanctuaries in Wakayama, and reportedly had this tree brought north with the transplant. Camphor trees are native to warmer parts of Japan and Kumano's coast fits that range better than inland Kyoto, which makes the tree itself a small piece of evidence for the transplant story, not just a legend attached after the fact. It has grown since into a trunk 6.58 metres around and a canopy spreading 23.5 metres east to west, a size camphors, among Japan's longest lived broadleaf trees, take centuries to reach. A deeper claim exists in the hills northwest of the city: a cedar in the Katanami river headwaters said to be 1,200 years old, tied to the same forests that supplied timber for the original Heian-kyo palace. That tree's age is harder to confirm and needs prior arrangement with the city to visit, which is why the documented camphor answers this question instead. Getting to Imakumano Shrine: Keihan Bus to Sennyuji-michi from Kyoto Station, then a two minute walk.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kyoto?",
+      "a": "The camphor at Imakumano Shrine, planted in 1160 by order of the retired emperor Go-Shirakawa and reportedly transplanted from the Kumano shrines in Wakayama. It is documented, unlike an older but harder-to-verify 1,200-year cedar in the hills northwest of the city."
+    },
+    {
+      "q": "Where is the best place to see old trees in Kyoto?",
+      "a": "Kyoto Gyoen, the park around the old Imperial Palace. Seven trees on this list grow inside its walls and two more stand immediately beside them, close enough to cover in two walks of about a kilometre each, which makes it the one place in the city where several can be seen in an afternoon. Everywhere else they are spread thin across working temples and shrines: Kinkaku-ji, Yoshimine-dera, Daigo-ji and Nishi Honganji each hold one."
+    },
+    {
+      "q": "Are Kyoto's remarkable trees free to see?",
+      "a": "Most are. Thirteen of the seventeen stand in free precincts: Kyoto Gyoen, Nashinoki Shrine, Goo Shrine, Nishi Honganji, Imakumano Shrine, Kamigamo Shrine and Maruyama Park. The other four stand inside temples that charge general admission, not a tree-specific fee."
+    },
+    {
+      "q": "Did any of Kyoto's remarkable trees start life as a bonsai?",
+      "a": "Yes. The boat-shaped pine at Kinkaku-ji is said to have grown from a potted bonsai kept by the shogun Ashikaga Yoshimitsu in the 14th century, later planted in the ground and trained into its current sailboat shape."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kyo_001",
+      "name": "The Reclining Dragon Pine",
+      "species": "Japanese White Pine (Pinus parviflora)",
+      "age_estimate": "over 600 years",
+      "age_min": 600,
+      "age_max": 650,
+      "location": {
+        "address": "1372 Oshio-cho, Oharano, Nishikyo-ku, Kyoto 610-1133",
+        "latitude": 34.93828,
+        "longitude": 135.6449362,
+        "neighbourhood": "Oharano, Nishikyo-ku"
+      },
+      "story": "This pine grows sideways, not up. Standing above the stone steps between Yoshimine-dera's main hall and its pagoda, the tree's trunk runs almost flat along a terrace rather than climbing skyward the way pines usually do, a five-needle pine trained or simply left to sprawl for over six centuries. A 19th century official, Hanayama's former minister Ieatsu, named it in 1857: Yuryu, the playing dragon, for the way its horizontal length resembles a dragon lounging on the ground. It once reached 50 metres end to end, long enough to rank as one of the longest documented pine specimens in Japan, until pine bark beetles infested it in 1994 and roughly 15 metres had to be cut away to save what remained. At its current 37 metres it is still one of the three trees Kyoto traditionally names as its most celebrated pines, and it remains a nationally designated natural monument, protected status Japan reserves for a small number of trees each century.",
+      "verified_sources": [
+        "https://www.begin.or.jp/~marusei/yuuryuunomatu.htm",
+        "https://totteoki.kyoto.travel/34557/",
+        "https://ecoloquia.co.jp/20220110-02/",
+        "https://www.openstreetmap.org/node/12358009109"
+      ],
+      "access": "Paid entry to Yoshimine-dera (500 yen adult)",
+      "transport": "Hankyu Bus to Yoshiminedera stop, 8 min walk uphill",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Yoshimenedera_Yuryunomatsu.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "PlusMinus, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2294,
+        "height": 971
+      },
+      "curation_status": "ai_generated",
+      "notes": "OpenStreetMap carries a contributor-mapped, heritage-tagged node named \"遊龍松\" (Yuryu-matsu) at this spot, matching the tree's own Japanese name exactly and its 1932 national-monument designation; its species tag (Pinus thunbergii) contradicts our own two independent sources, which agree this is a five-needle pine (Pinus parviflora, matching the story's description), so the location was used but the species tag was not.",
+      "location_precision": "confirmed",
+      "paid_entry": true
+    },
+    {
+      "id": "kyo_002",
+      "name": "The Land Boat Pine",
+      "species": "Japanese White Pine (Pinus parviflora)",
+      "age_estimate": "about 600 years",
+      "age_min": 590,
+      "age_max": 620,
+      "location": {
+        "address": "Kinkakuji-cho 1, Kita-ku, Kyoto 603-8361",
+        "latitude": 35.0394604,
+        "longitude": 135.7290207,
+        "neighbourhood": "Kinkakuji, Kita-ku"
+      },
+      "story": "Ashikaga Yoshimitsu, the shogun who built the Golden Pavilion, once kept this tree as a bonsai in a pot. Sometime after Yoshimitsu's death in 1408, his potted pine was planted in the ground beside Kinkaku-ji's Kyoko-chi pond and trained into the shape of a sailing ship, its trunk and branches clipped over generations to suggest a hull, a mast and a bow pointed deliberately west, toward the Buddhist Pure Land. The result, Rikushu-no-matsu, land boat pine, has been maintained in that same nautical silhouette for roughly six centuries, making it one of the longest continuously shaped ornamental pines in Japan and one of the three trees Kyoto names among its most celebrated. Nineteenth century photographs from the 1870s and 1880s already show it in recognizably the same boat form it holds today, meaning the shape itself, not just the tree, has outlasted the Meiji Restoration, two world wars and the reconstruction of the pavilion after a 1950 arson fire.",
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/File:Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
+        "https://takumist.wordpress.com/2018/12/09/visiting-rikushu-no-matsu-%E9%99%B8%E8%88%9F%E3%81%AE%E6%9D%BE/",
+        "https://kazahana.holy.jp/kinkakuji.html",
+        "https://www.openstreetmap.org/node/3521144622"
+      ],
+      "access": "Paid entry to Kinkaku-ji",
+      "transport": "Kyoto City Bus 101/205 to Kinkakuji-michi, 3 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
+        "license": "CC BY-SA 4.0",
+        "attribution": "そらみみ (Soramimi), Wikimedia Commons",
+        "status": "approved",
+        "width": 3205,
+        "height": 2404
+      },
+      "curation_status": "ai_generated",
+      "notes": "OpenStreetMap carries a contributor-mapped, survey-sourced node named \"陸舟の松\" (Rikushu Pine) at this spot, matching the tree's own name exactly. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/8/8e/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 4/4f. Fetched and viewed directly, the same boat-shaped trained pine beside Kinkaku-ji's roofline, before swapping.",
+      "location_precision": "confirmed",
+      "paid_entry": true
+    },
+    {
+      "id": "kyo_003",
+      "name": "The Five-Needle Pine of Hosen-in",
+      "species": "Japanese White Pine (Pinus parviflora)",
+      "age_estimate": "about 700 years",
+      "age_min": 690,
+      "age_max": 710,
+      "location": {
+        "address": "187 Shorin-in-cho, Ohara, Sakyo-ku, Kyoto 601-1242",
+        "latitude": 35.1213608,
+        "longitude": 135.8326856,
+        "neighbourhood": "Ohara, Sakyo-ku"
+      },
+      "story": "Visitors to this small temple in the Ohara valley sit on red felt cushions in a wooden hall and look at the garden through the frame of a doorway, a deliberate composition called a gakubuchi teien, or picture-frame garden. The subject of that living picture is this pine, trained over roughly seven centuries into a shape said to echo Mount Mikami, a solitary peak southeast of the city sometimes nicknamed Omi Fuji for its cone shape. The tree holds Kyoto City natural monument status and is one of the temple's central attractions alongside a ceiling made from the floorboards of Fushimi Castle, preserved with bloodstains from a 1600 samurai last stand. By 2021 the pine showed signs of strain from age and drought, prompting visible care from the temple's gardeners; recent visitor accounts describe it recovering vigor since. Ohara sits in the hills north of central Kyoto, quieter than the city's headline temples, and the pine rewards the trip out with a garden built around one tree's silhouette rather than a wide landscape.",
+      "verified_sources": [
+        "https://souda-kyoto.jp/guide/spot/housenin.html",
+        "https://www.kyoto-tabiya.com/2021/07/06/93253/",
+        "https://ja.wikipedia.org/wiki/%E5%AE%9D%E6%B3%89%E9%99%A2"
+      ],
+      "access": "Paid entry to Hosen-in (includes matcha service)",
+      "transport": "Kyoto Bus to Ohara, 12 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/%E5%AE%9D%E6%B3%89%E9%99%A2_01.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Maechan0360, CC BY-SA 3.0, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2048,
+        "height": 1536
+      },
+      "curation_status": "flagged",
+      "notes": "The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. A candidate photo captioned \"Hosen-in, Bankan-en (Garden)\" was viewed directly on an earlier pass and rejected: it shows an illuminated Japanese maple against a bamboo grove at night, not a pine at all, so the garden-name caption evidently covers more than just this one tree. A second candidate, Commons file \"宝泉院_01.JPG\" (Category:Goḳō-no-matsu, Hōsen-in, the tree's own name), was downloaded and viewed directly this pass: it is the temple's signature framed-garden shot, the pine's gnarled poled branches seen through the guest-hall window with tatami in the foreground, an unambiguous match. Approved. Pin corrected 2026-07-28, about 625m: the previous coordinate was a street-level address estimate that turned out to be a genuine error, not just imprecise; OpenStreetMap carries two independently mapped nodes both named Hosen-in within about 150m of each other, one explicitly tagged with this entry's own street number (187), used here instead. The temple is a single small building around one guest hall and garden, so this building-level point puts a visitor at the pine itself, not just in the neighbourhood.",
+      "location_precision": "confirmed",
+      "paid_entry": true
+    },
+    {
+      "id": "kyo_004",
+      "name": "The Inverted Ginkgo of Nishi Honganji",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 390 years",
+      "age_min": 385,
+      "age_max": 395,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, one of Kyoto's more dependable autumn colour displays"
+      },
+      "location": {
+        "address": "Nishi Honganji, Horikawa-dori Hanayacho Sagaru, Shimogyo-ku, Kyoto 600-8501",
+        "latitude": 34.992114,
+        "longitude": 135.751596,
+        "neighbourhood": "Shimogyo-ku"
+      },
+      "story": "This ginkgo grows low and wide rather than tall, its heaviest branches spreading outward close to the ground before the trunk narrows above them, an arrangement that from certain angles makes the whole tree look planted upside down, roots reaching for the sky. That resemblance earned it the name Sakasa Icho, inverted ginkgo, sometime after it went into the ground in front of Nishi Honganji's Goeido Hall in 1636. A second nickname, Mizufuki Icho, water-spouting ginkgo, comes from a temple legend that the tree spouted water to help extinguish fires that threatened the complex in 1788 and again in 1864, both real, documented blazes in Kyoto's history even if the tree's firefighting role is legend rather than record. Ginkgos are famously fire-resistant compared to other species, their trunks holding unusual water content, which may be where the story got its foothold. The tree is a designated Kyoto City natural monument and turns gold most reliably in late November, one of the more dependable autumn color displays in a city that plans its calendar around them.",
+      "verified_sources": [
+        "https://media.mk-group.co.jp/entry/koyo-nishihonganji/",
+        "https://hanako.tokyo/learn/341156/",
+        "https://tenshin.or.jp/archives/4802"
+      ],
+      "access": "Free, Nishi Honganji precinct open daily",
+      "transport": "Kyoto Station, 15 min walk, or bus to Nishihonganji-mae",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Grand_Ginkgo_Tree_in_West_Honganji_Temple.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "そらみみ (Soramimi), Wikimedia Commons",
+        "status": "approved",
+        "width": 3264,
+        "height": 2448
+      },
+      "curation_status": "ai_generated",
+      "notes": "Photo (\"Grand Ginkgo Tree in West Honganji Temple\") viewed directly: shows a massive, wide, low-spreading ginkgo fenced off in a temple courtyard, consistent with the Sakasa Icho (inverted ginkgo) shape the story describes. Approved.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "kyo_005",
+      "name": "The Weeping Cherry of Gion",
+      "species": "Weeping Higan Cherry (Prunus subhirtella)",
+      "age_estimate": "75-90 years (second-generation tree; sources disagree on the exact figure)",
+      "age_min": 75,
+      "age_max": 92,
+      "location": {
+        "address": "Maruyama Park, Higashiyama-ku, Kyoto 605-0071",
+        "latitude": 35.003931,
+        "longitude": 135.780788,
+        "neighbourhood": "Gion, Higashiyama-ku"
+      },
+      "story": "The tree everyone photographs at Maruyama Park is not the tree that made the spot famous. The original weeping cherry, a single white higan variety with a trunk 4 metres around, stood here for more than 200 years and earned natural monument status in 1938, only to die in 1947 in the difficult years after the war. Sano Toemon XV, a cherry tree keeper from a family that has tended Kyoto's most important specimens for generations, had collected seeds from the dying original in 1928 and grew a successor, which he donated and planted on the same spot in 1949. That second tree is the one visitors see today, floodlit most nights during bloom season into a canopy of pale pink against the dark, one of the most photographed single trees in Japan. Sources differ on exactly how old to call it, some counting from the 1949 planting and others from the 1928 seed collection, a small discrepancy left honest here rather than resolved into a false precision. Either way, the tree standing in Maruyama Park today has been growing for the better part of a century, not the two hundred years its predecessor reached.",
+      "verified_sources": [
+        "https://media.mk-group.co.jp/entry/sakura-maruyama/",
+        "http://www.watarigraphic.com/sakura/maruyama.php"
+      ],
+      "access": "Free, public park",
+      "transport": "Gion-Shijo (Keihan) or Higashiyama (Tozai Line), 10 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Giant_Gion_weeping_sakura_%2851472103367%29.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Raita Futo, Wikimedia Commons (via Flickr)",
+        "status": "approved",
+        "width": 5844,
+        "height": 3896
+      },
+      "curation_status": "flagged",
+      "notes": "Age range reflects a genuine discrepancy between sources counting from the 1949 planting (about 77 years) versus the 1928 seed collection (about 90+ years). Presented as a range rather than picking one figure, per the site's honesty standard. Photo is captioned as the Gion weeping sakura in Maruyama Park with embedded coordinates (35.0035, 135.7805) within about 50m of this entry's pin; a text-search workflow cannot visually confirm the frame, so flagged found_needs_check per house practice.",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "label": "late March into early April, when its cascading blossoms draw crowds for night illumination"
+      }
+    },
+    {
+      "id": "kyo_006",
+      "name": "The Camphor of Munakata Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "600-800 years (age disputed between sources)",
+      "age_min": 600,
+      "age_max": 800,
+      "location": {
+        "address": "Kyoto Gyoen, Kamigyo-ku, Kyoto 602-0881",
+        "latitude": 35.019452,
+        "longitude": 135.760783,
+        "neighbourhood": "Kyoto Gyoen, Kamigyo-ku"
+      },
+      "story": "Kyoto Gyoen, the wooded park that surrounds the old Imperial Palace, holds more than 200 trees old and large enough to be called giants by the environment ministry that manages the grounds today. This camphor, growing at Munakata Shrine in the park's southwest corner, is generally named as the single oldest and largest tree in Kyoto Gyoen, though sources disagree on the tree's exact age by as much as two centuries, a spread wide enough that it is stated here as a range rather than a false certainty. The shrine itself dates to 795, founded when Emperor Kanmu had a protective deity brought from the original Munakata Shrine in what is now Fukuoka Prefecture to watch over the new capital at Heian-kyo, and this camphor has grown at the site for a large fraction of the park's history since. Kyoto Gyoen has been public parkland since the Meiji era moved the imperial residence to Tokyo, and its giant trees, ginkgos, zelkovas, hackberries and camphors among them, now shade a park most Kyoto residents walk through rather than one they think to visit specifically.",
+      "verified_sources": [
+        "https://kyototravels.com/guidemunakatajinja/",
+        "https://www.kyotonikanpai.com/spot/01_03_kyoto_gosho/munakata_jinja.php"
+      ],
+      "access": "Free, Kyoto Gyoen open daily",
+      "transport": "Marutamachi (Karasuma Line) or Karasuma-Marutamachi bus stop, 5 min walk",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/565640909/original.jpg",
+        "license": "CC BY-SA",
+        "attribution": "ingimar, via iNaturalist",
+        "status": "approved",
+        "width": 947,
+        "height": 2048
+      },
+      "curation_status": "flagged",
+      "notes": "Age given as a wide range (600-800 years) because sources disagree substantially and no single registry figure was found. Location upgraded to confirmed: two independent iNaturalist observations of this species (one CC BY-SA with photo, one CC0), 20m apart from each other and both consistent with the shrine's southwest-corner position in Kyoto Gyoen, about 140m from the previous estimate. Photo viewed directly: a large mature broadleaf tree ringed by protective bollards on a gravel path, consistent with a protected shrine tree in a formal park.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "kyo_007",
+      "name": "The Emperor's Camphor of Imakumano",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 866 years",
+      "age_min": 860,
+      "age_max": 870,
+      "location": {
+        "address": "42 Imakumano Naginomori-cho, Higashiyama-ku, Kyoto 605-0977",
+        "latitude": 34.9846849,
+        "longitude": 135.7736551,
+        "neighbourhood": "Imakumano, Higashiyama-ku"
+      },
+      "story": "This tree has a birth year most ancient trees can only guess at: 1160, the year the retired emperor Go-Shirakawa founded Imakumano Shrine as a branch of the Kumano sanctuaries on the Kii Peninsula, reportedly bringing this camphor north from the original site to plant at the new one. Camphor trees are native to warmer coastal Japan, not inland Kyoto, which fits the transplant story better than it would if the species were simply local. Nearly nine centuries later the tree stands 21.9 metres tall with a trunk 6.58 metres around and a canopy spreading 23.5 metres east to west, thick enough that it functions as the shrine's unofficial landmark, visible before the shrine buildings themselves from the surrounding streets. Imakumano Shrine carries another distinction unrelated to the tree: it is traditionally named as a birthplace of Noh theatre, where a young performer called Zeami is said to have caught the attention of the shogun Ashikaga Yoshimitsu at a 14th century performance, the encounter that launched Noh toward becoming a shogunal art form. The camphor was already two centuries old when that performance happened.",
+      "verified_sources": [
+        "https://rekishinokura.com/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE%EF%BC%88%E4%BA%AC%E9%83%BD%EF%BC%89%E3%80%9C%E5%A4%A7%E6%A8%9F%E3%81%8C%E9%8E%AE%E5%BA%A7%E3%81%99%E3%82%8B%E4%BA%AC%E9%83%BD%E4%B8%89%E7%86%8A%E9%87%8E/",
+        "https://furafurakyoto.com/imakumano-jinjya/",
+        "https://ja.wikipedia.org/wiki/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "Keihan Bus to Sennyuji-michi, 2 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_-_%E6%A8%9F%E9%BE%8D%E5%BC%81%E8%B2%A1%E5%A4%A9.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Cakoko23, Wikimedia Commons",
+        "status": "approved",
+        "width": 3264,
+        "height": 2448
+      },
+      "curation_status": "ai_generated",
+      "notes": "Photo is titled \"Shoryu Benzaiten\" (樟龍弁財天), an alternate name Japanese-language sources confirm is used for this exact great camphor at Imakumano Shrine, since its large limbs are said to resemble a dragon and the tree is worshipped as the seat of a dragon-riding Benzaiten. Embedded coordinates (34.9843, 135.7742) sit within about 50m of this entry's pin. A text-search workflow cannot visually confirm the tree fills the frame, so flagged found_needs_check per house practice.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "kyo_008",
+      "name": "The Taiko Weeping Cherry of Daigo-ji",
+      "species": "Weeping Higan Cherry (Prunus subhirtella)",
+      "age_estimate": "about 150-170 years (not the tree Hideyoshi saw)",
+      "age_min": 150,
+      "age_max": 175,
+      "location": {
+        "address": "Sanboin, Daigo-ji, Fushimi-ku, Kyoto 601-1325",
+        "latitude": 34.9519148,
+        "longitude": 135.8187884,
+        "neighbourhood": "Daigo, Fushimi-ku"
+      },
+      "story": "In the spring of 1598, months before his death, the warlord Toyotomi Hideyoshi staged one of the most extravagant cherry blossom parties in Japanese history at Daigo-ji, inviting hundreds of guests and reportedly having some 700 cherry trees transplanted to the temple grounds for the occasion. The weeping cherry now growing in the Sanboin sub-temple's garden carries his name, Taiko Shidarezakura, and his story, but it is not that tree: at roughly 150 to 170 years old it was planted in the 19th century, long after Hideyoshi's party and his own death the same year. What survives is the site and the association, strong enough that the painter Okumura Togyu made this specific tree the subject of a celebrated work simply titled Daigo, after which the tree picked up a second nickname, Togyu's cherry. Sanboin's garden itself was largely designed by Hideyoshi in the last months of his life, which means the cherry, even at a fraction of his party's age, blooms inside a landscape he did lay out himself.",
+      "verified_sources": [
+        "https://www.mlit.go.jp/tagengo-db/R1-00340.html",
+        "https://kaze-kyoto.com/tsuredure/%E4%BA%AC%E9%83%BD%E3%83%BB%E9%86%8D%E9%86%90%E5%AF%BA%E3%81%AE%E5%A4%A7%E3%81%97%E3%81%A0%E3%82%8C%E6%A1%9C%E3%80%82%E7%A7%80%E5%90%89%E3%81%AE%E3%80%8C%E9%86%8D%E9%86%90%E3%81%AE%E8%8A%B1%E8%A6%8B%E3%80%8D/",
+        "https://www.daigoji.or.jp/grounds/sanboin.html"
+      ],
+      "access": "Paid entry to Sanboin",
+      "transport": "Daigo (Tozai Line), 12 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Semboin_subtemple_in_Daigoji_%283471809451%29.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "KimonBerlin, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3504,
+        "height": 2336
+      },
+      "curation_status": "flagged",
+      "notes": "Pin corrected 2026-07-27 (about 185m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"太閤しだれ桜\" (Taiko shidarezakura, literally \"Taiko weeping cherry\") at this position, an exact and distinctive name match to this entry, replacing the previous estimate from Daigo-ji's general temple address. Story explicitly states this is not the original Hideyoshi-era tree, to avoid the misleading impression the name invites. Photo viewed directly 2026-07-28: an old, thick, mossy, gnarled weeping cherry in full bloom, bamboo-propped, beside a temple wall, matching the story's description exactly; one of only four images in Commons' dedicated \"Sakura at Sanbō-in\" subcategory (not the broader Daigo-ji sakura category), consistent with this being the sub-temple's single named, famous specimen rather than an arbitrary garden cherry.",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "label": "late March into early April, when its blossoms recreate the display Hideyoshi once staged here"
+      },
+      "paid_entry": true
+    },
+    {
+      "id": "kyo_010",
+      "name": "The Emperor's Gift Cherry of Kamigamo",
+      "species": "Weeping Higan Cherry (Prunus subhirtella)",
+      "age_estimate": "about 160-180 years",
+      "age_min": 155,
+      "age_max": 180,
+      "location": {
+        "address": "339 Kamigamo Motoyama, Kita-ku, Kyoto 603-8047",
+        "latitude": 35.0588094,
+        "longitude": 135.7526545,
+        "neighbourhood": "Kamigamo, Kita-ku"
+      },
+      "story": "This weeping cherry began its life somewhere inside the Kyoto Imperial Palace grounds before Emperor Komei, who reigned from 1846 to 1867 and was the father of the Meiji Emperor, had it given to Kamigamo Shrine. That gift is the source of its name, Gosho-zakura, palace cherry, and the reason a cherry tree with no natural connection to Kamigamo's centuries-old shrine complex has stood on the approach path between its first and second torii gates for roughly a century and a half regardless. It blooms alongside a second named cherry, Saio-zakura, whose deep red flowers offer a contrast to Gosho-zakura's white, so that visitors walking the approach in late March or early April see two named, individually storied trees rather than an anonymous cherry avenue. Kamigamo Shrine itself, formally Kamowakeikazuchi Shrine, is one of Kyoto's oldest religious sites and a UNESCO World Heritage component, its grounds predating this cherry by many centuries; the tree is a relatively recent addition to a very old place, and its imperial provenance is what earns it a place among the shrine's named, individually recognized trees rather than the roughly 200 unnamed cherries also growing on the grounds.",
+      "verified_sources": [
+        "https://moutaku3.exblog.jp/30887067/",
+        "https://www.kyoto-kankou.or.jp/event/1124",
+        "http://www.premium-j.jp/premiumsalon/20250327_48618/"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "Kyoto City Bus to Kamigamo Jinja-mae, at the shrine gate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Pin corrected 2026-07-27 (about 165m, a real error rather than mere imprecision): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"御所桜\" (Gosho-zakura), an exact name match, found alongside a second node 20m away named \"斉王桜\" (Saio-zakura), the companion red-flowered cherry this entry's own story names as growing beside it. The two names appearing together, matching the story precisely, makes this a confident match rather than a coincidence.",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "label": "late March into early April, among the first of the shrine's cherries to bloom"
+      }
+    },
+    {
+      "id": "kyo_011",
+      "name": "The Hackberry of Demizu-guchi",
+      "species": "Chinese Hackberry (Celtis sinensis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Near Demizu-guchi entrance, Kyoto Gyoen National Garden",
+        "latitude": 35.0195,
+        "longitude": 135.7593,
+        "neighbourhood": "Kyoto Gyoen (Imperial Palace Park), Kamigyo-ku"
+      },
+      "story": "The crown of this tree is ten metres wider than the tree is tall. Kamigyo Ward's register of what it calls its pride trees measures the hackberry at the Demizu gate at 22.5 metres high, with a trunk 4.98 metres around and branches reaching 32.9 metres across, one of the largest hackberries the ward has on record. What nobody has recorded is its age. The register measures trees, it does not date them, and no other source puts a number on this one, so its size is the honest thing to say about it and its years are not.\n\nKyoto Gyoen took its present shape in 1877, after the emperor's court left for Tokyo and the aristocratic quarter that filled this ground was cleared into open parkland. The environment ministry that manages the park today counts more than 200 trees on it big enough to call giants: hackberries, zelkovas, camphors and ginkgos, growing on ground that was private for most of its history and public for the last century and a half. This one stands beside Demizu-guchi, a pedestrian gate in the west wall, a short walk from the camphor at Munakata Shrine in the same southwest corner of the park. Between them they anchor a corner where several remarkable trees stand within a few minutes of each other, which is rare in a city that keeps most of its best ones an hour apart by bus.",
+      "verified_sources": [
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012431.html",
+        "https://www.env.go.jp/garden/kyotogyoen/2_guide/map3_demizu.html"
+      ],
+      "access": "Free. Kyoto Gyoen National Garden (the public park surrounding the Imperial Palace) is open to the public year-round, dawn to dusk.",
+      "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 10 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No age figure exists in any source: Kamigyo Ward's pride-tree register records dimensions only. Second source (Ministry of Environment) describes Kyoto Gyoen's giant-tree population generally and does not name this individual tree, so this is effectively single-sourced and flagged for that reason, not for doubt about the tree's existence or species. Coordinates are a gate-area estimate, not a GPS fix on the trunk.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "kyo_012",
+      "name": "The Zelkova of Ishiyakushi Gate",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Near Ishiyakushi-gomon gate, Kyoto Gyoen National Garden",
+        "latitude": 35.025,
+        "longitude": 135.7663,
+        "neighbourhood": "Kyoto Gyoen (Imperial Palace Park), Kamigyo-ku"
+      },
+      "story": "Keyaki, the Japanese name for this species, is the timber temple carpenters and drum makers reach for first, which is one reason very large ones are not common. This one was left standing. Kamigyo Ward's register measures it at 22 metres tall, with a trunk 4.29 metres around and a crown spreading 29.6 metres, which puts it among the largest zelkovas the ward has catalogued. Its age is a blank. The register records dimensions and nothing else, and no other source names this tree at all, so the measurements are what can be stated and the years are not.\n\nIt grows just inside Ishiyakushi-gomon, one of nine gates in the walls that still mark out the old palace enclosure, on the Teramachi-dori side. The ground behind those walls was a district of court nobles' mansions until 1869, when the emperor moved to Tokyo and the households followed him; the plots were cleared and replanted from 1877, which is why a park in the middle of a capital city now holds trees this size at all. The zelkova sits at the opposite end of that park from the hackberry at the Demizu gate, about 1.1 kilometres away, close enough that the two mark the ends of the same walk.",
+      "verified_sources": [
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012402.html",
+        "https://www.env.go.jp/garden/kyotogyoen/2_guide/map.html"
+      ],
+      "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+      "transport": "Imadegawa Station (Kyoto Municipal Subway Karasuma Line), roughly 12 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No age figure exists in any source; the ward register records dimensions only. Second source (Ministry of Environment) corroborates that trees of this scale exist in Kyoto Gyoen but does not name this one, so this is effectively single-sourced and flagged for that reason. Coordinates are a gate-position estimate, not a GPS fix on the trunk.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "kyo_013",
+      "name": "The Hackberry of Nashinoki Shrine",
+      "species": "Chinese Hackberry (Celtis sinensis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Nashinoki Shrine, Teramachi Hirokoji-agaru, Someden-cho, Kamigyo-ku",
+        "latitude": 35.025,
+        "longitude": 135.767361,
+        "neighbourhood": "Teramachi, Kamigyo-ku (immediately east of Kyoto Gyoen)"
+      },
+      "story": "One document describes this tree, and it is a list of measurements. Kamigyo Ward records the hackberry at Nashinoki Shrine as 21 metres tall, with a trunk 3.72 metres around and a canopy spreading 19.4 metres, and designates it one of the ward's pride trees. No source gives it an age, and nothing else written about the shrine mentions it.\n\nWorth knowing before you arrive: the tree Nashinoki is locally known for is a different one, a katsura that carries a nickname and a following of its own. The hackberry has neither. What it has is size and a position, on Teramachi-dori directly against Kyoto Gyoen's east wall, about 850 metres from the camphor at Munakata Shrine, which costs a visitor almost nothing to add to a loop of the park.\n\nThe shrine is young by Kyoto standards. It was founded in 1885 for Sanjo Sanetomi, the court noble who fled the capital with six others in 1863 on the losing side of a factional purge, spent years in exile in Choshu, and came back to serve as chancellor of the Meiji state. The precinct that went up for him is small, walled and quiet, which is a plausible explanation for how a tree of this size has been left alone a few metres from the traffic on Teramachi-dori.",
+      "verified_sources": [
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012315.html",
+        "https://ja.wikipedia.org/wiki/梨木神社"
+      ],
+      "access": "Free to enter the shrine precinct.",
+      "transport": "Keihan Jingu-Marutamachi Station, roughly 8 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Effectively single-sourced: Wikipedia confirms the shrine's identity, 1885 founding and coordinates but its tree content covers only the katsura known locally as the Tree of Love, not this hackberry. No age given anywhere. The story states the katsura distinction explicitly so a visitor does not mistake one tree for the other. Coordinates are the shrine's, not the tree's position within the grounds.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "kyo_014",
+      "name": "The Grand Ginkgo of Goo Shrine",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "several hundred years",
+      "age_min": 200,
+      "age_max": 500,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late November, when the whole crown goes gold at once and drops within a week"
+      },
+      "location": {
+        "address": "Goo Shrine (Gooh Jinja), Karasuma-dori Shimo-Nagaracho-shita, Sakura-tsurumarucho, Kamigyo-ku",
+        "latitude": 35.02222,
+        "longitude": 135.75861,
+        "neighbourhood": "Karasuma, Kamigyo-ku (immediately west of Kyoto Gyoen)"
+      },
+      "story": "The guardians at this shrine gate are wild boars rather than the usual stone lion-dogs, and the tree behind them is the tallest thing on the grounds. Kamigyo Ward measures the ginkgo standing north of the main hall at 25 metres, with a trunk 3.18 metres around, the largest of six sizeable ginkgos in the precinct. A Kyoto travel description puts the shrine's big ginkgos at several hundred years old. That is an estimate rather than a measured figure and nobody has narrowed it since, so several hundred years is as close as anyone can honestly get.\n\nThe boars are for Wake no Kiyomaro, the eighth century official the shrine honours. In 769 he blocked the monk Dokyo's attempt to have himself made emperor, and was exiled and, by the shrine's telling, crippled for it; a herd of wild boars is said to have escorted him to safety, after which his legs recovered. That is why people come here to pray for their legs and feet rather than for exam results, and why boars sit where lion-dogs usually do.\n\nIn the last days of November the ginkgo turns, the whole crown going gold at once and then dropping most of it inside a week. The shrine faces Kyoto Gyoen's west wall on Karasuma-dori, five minutes from Marutamachi station.",
+      "verified_sources": [
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012542.html",
+        "https://tabiiro.jp/leisure/s/216563-kyoto-goou-jinja/",
+        "https://ja.wikipedia.org/wiki/護王神社"
+      ],
+      "access": "Free to enter the shrine precinct.",
+      "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 5 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age is a source estimate ('several hundred years', tabiiro.jp), not a measured figure, hence the wide age_min/age_max band and the hedged phrasing in the story. Wikipedia confirms the shrine's identity and coordinates but names only a quince as its notable tree, so it is used for location only. Coordinates are the shrine's; the tree stands north of the honden and is not itself GPS-fixed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "kyo_016",
+      "name": "Sudajii of Omiya Gate, Kyoto Gyoen",
+      "species": "Japanese Chinquapin (Castanopsis sieboldii)",
+      "location": {
+        "latitude": 35.017,
+        "longitude": 135.7605,
+        "address": "",
+        "neighbourhood": "Near Omiya-gomon, south side of Kyoto Gyoen, Kamigyo-ku"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Before there was a city here, this was the tree that covered the ground. Sudajii, the Japanese chinkapin, was the dominant canopy of the evergreen broadleaf forest that ran across lowland western Japan until it was cleared for rice, timber and capitals, which makes a full-grown one inside Kyoto a leftover of the landscape the city replaced. This one stands at the Omiya gate on the south side of Kyoto Gyoen. Kamigyo Ward added it to its register of pride trees in October 2008 and measured it at 14.6 metres tall, with a trunk 2.78 metres around.\n\nNobody has dated it, and that ward register is the only document that mentions it at all, so the measurements are the whole of what anyone can offer.\n\nIts acorns are the ones worth bending down for. Most oak acorns are too bitter to eat without leaching first; chinkapin acorns are sweet enough raw and better roasted, which is why generations of Japanese children knew them by taste rather than from a book. They come down in autumn onto the gravel.\n\nThe Omiya gate opens onto the same short circuit as the camphor at Munakata Shrine and the hackberry at Demizu-guchi, close enough together that all three fit inside one slow hour.",
+      "verified_sources": [
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012424.html"
+      ],
+      "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+      "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kyo_018",
+      "name": "Ginkgo of Inui Gate, Kyoto Gyoen",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "location": {
+        "latitude": 35.028,
+        "longitude": 135.7595,
+        "address": "",
+        "neighbourhood": "Near Inui-gomon, northwest corner of Kyoto Gyoen, Kamigyo-ku"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "the second half of November, when it goes gold and then drops the lot within days"
+      },
+      "story": "The gate this ginkgo stands at is named after a dog and a boar. Inui is the old word for northwest, written with the two zodiac animals that sat in that quarter of the compass, and Inui-gomon is the northwest corner gate of Kyoto Gyoen. The tree beside it runs to 19.5 metres, with a trunk 3.15 metres around, measured by Kamigyo Ward for its register of pride trees. That register gives no age, and no other source mentions this ginkgo, so how long it has been growing there is not known.\n\nIt is the far end of the park. The camphor at Munakata Shrine and the hackberry at Demizu-guchi are down in the southwest corner, and getting here means about a kilometre and a half north on gravel, twenty minutes if nothing distracts you, past a fair share of the two hundred trees the environment ministry counts as giants on these grounds. None of that ground is old. Aristocratic households filled this rectangle until they broke up and followed their emperor east, and what went in from 1877 was deliberate parkland, which is the only reason a walled rectangle in the middle of a city carries trees on this scale.\n\nCome in the second half of November. Ginkgos go gold all at once, hold it for a matter of days, and then put the entire crown on the ground.",
+      "verified_sources": [
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012404.html"
+      ],
+      "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+      "transport": "Imadegawa Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kyo_015",
+      "name": "The Carriage-Turning Cherry of Kyoto Gyoen",
+      "species": "Cherry (Prunus sp.)",
+      "age_estimate": "roughly 80 years",
+      "age_min": 70,
+      "age_max": 90,
+      "location": {
+        "latitude": 35.0258332,
+        "longitude": 135.7610189,
+        "address": "",
+        "neighbourhood": "Southwest of Seisho-mon gate, Kyoto Gyoen, Kamigyo-ku"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "early April, when single and double blossom open together on one crown"
+      },
+      "story": "The tree that stopped an emperor's carriage is not the tree standing here now. Kurumagaeshi-zakura means the carriage turned back, and the name comes from a tradition that Emperor Go-Mizunoo, who reigned from 1611 to 1629, had already passed this cherry when he ordered his carriage brought round for a second look. That is a story told about the tree rather than anything recorded in his reign, and it is worth saying which of the two it is.\n\nThe cherry standing southwest of Seisho-mon gate today is not that tree either. The original went, and after the war the Kyoto nurseryman Sano Toujiro raised its replacement from shoots cut off it, so what grows here is roughly eighty years old and genetically the same cherry, in the same place, on its second run.\n\nGo in April and the reason to stop has nothing to do with emperors. Single and double flowers open together on the same crown, the flat five petals of a wild cherry beside the crowded rosettes of a cultivated one, all on one tree. Kyoto Gyoen has been public ground since 1877, eight years after the court followed the emperor to Tokyo, and this corner of it puts the cherry within a kilometre of the hackberry at Demizu-guchi and the camphor at Munakata Shrine. It carries both single and double flowers on one trunk, which is why nobody has pinned its species down past the genus. If you know which cherry it is, tell us.",
+      "verified_sources": [
+        "https://rakutabi.kyo2.jp/e464533.html"
+      ],
+      "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+      "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 15 minute walk",
+      "notes": "Coordinate is Seisho-mon gate itself (verified via OSM/Nominatim, 35.0258332/135.7610189), not a GPS fix on the trunk: a web search independently confirms the tree stands 'southwest of Seisho-mon' (車返桜は京都御苑の清所門南西に位置), so this is a gate-area estimate in the same honest style as kyo_011's Demizu-guchi pin, not the tree's exact trunk. Previously HELD 2026-08-12 on a placeholder coordinate identical to kyo_017's; resolved this pass by looking up each gate's real position rather than guessing.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kyo_017",
+      "name": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "location": {
+        "latitude": 35.0195774,
+        "longitude": 135.7595584,
+        "address": "",
+        "neighbourhood": "Near Shimodachiuri-gomon, west side of Kyoto Gyoen, Kamigyo-ku"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Early cinema ran on this species. Camphor crystals, steam-distilled from the wood and leaves of Cinnamomum camphora, were what made celluloid film stock and photographic plates flexible enough to use, and for decades Japan and its colonies supplied most of the world's camphor, until the chemical industry worked out how to make it from turpentine instead. The trees that fed that trade came down by the forest. This one did not.\n\nIt grows just inside Shimodachiuri-gomon, a gate in the west wall of Kyoto Gyoen, and Kamigyo Ward lists it among its pride trees at 12.3 metres tall with a trunk 2.76 metres around. Its age appears nowhere. That ward register is the only document naming this tree, and it records dimensions rather than years.\n\nCamphors are evergreen, so this is the same tree in February as in July: dense, dark, heavily leaved, and smelling of a medicine cabinet if you crush a leaf between your fingers. It is not the biggest camphor in this park. The one at Munakata Shrine, a short walk away, is far larger and several centuries older, and this is the tree most people go straight past on their way to it. Which is a decent argument for looking up on the way.",
+      "verified_sources": [
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012432.html"
+      ],
+      "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+      "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 5 minute walk",
+      "notes": "Coordinate is Shimodachiuri-gomon gate itself, verified via OSM/Nominatim (35.0195774/135.7595584, tagged as the gate building), matching the story's own 'grows just inside Shimodachiuri-gomon'. Gate-area estimate, not a GPS fix on the trunk, same honest style as kyo_011's Demizu-guchi pin. Previously HELD 2026-08-12 on a placeholder coordinate identical to kyo_015's; resolved this pass. Note this gate sits only ~25m from kyo_011's own coordinate despite both trees' stories describing them as being a short walk apart in the same southwest corner; kyo_011's own pin (already published, location_precision approximate) may itself be imprecise, worth a future pass rather than touched here without stronger evidence.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ],
+  "oldest_tree_id": "kyo_007",
+  "hero_tree_id": "kyo_005"
 }

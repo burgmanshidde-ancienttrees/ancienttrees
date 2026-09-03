@@ -1,435 +1,435 @@
 {
- "city": "Bologna",
- "country": "Italy",
- "status": "needs_curation",
- "intro": "Bologna's oldest trees mostly answer to the same two centuries: Napoleon's brief but consequential redesign of the city's public spaces after 1805, and the private estates of 19th century Bolognese families who filled their gardens with imported cedars and ginkgos as a mark of taste. A porticoed city famous for hiding its sky rarely gets credit for its trees, but eight of Italy's official monumental specimens grow within its walls, more than in most Italian cities its size, scattered from a public cemetery to a hospital garden to a poet's tomb.",
- "meta_description": "Bologna's most remarkable trees, from Napoleonic-era planes in a public park to a cypress standing over poet Giosue Carducci's own grave.",
- "question_answer": "Bologna's oldest precisely dated tree is one of the monumental plane trees of the Parco della Montagnola, planted around 1820 during Giovanni Battista Martinetti's Napoleonic-era redesign of the city's first public park, making it roughly 206 years old. It stands free to visit in the historic centre, a short walk from Via Indipendenza.",
- "question_meta": "Bologna's oldest tree is a roughly 206-year-old plane in Parco della Montagnola, planted in the Napoleonic-era redesign. Its story and eleven more trees.",
- "question_context": "Bologna's monumental trees are documented through Italy's national register (the Alberi Monumentali d'Italia list, created under a 2013 law) and the Emilia-Romagna region's own parallel catalogue, together covering eight specimens within the city itself. Among those, the oldest with a precisely traceable planting is one of the large plane trees in the Parco della Montagnola, the city's first public park, laid out from 1805 under instructions passed down through Napoleonic administration and redesigned by the architect Giovanni Battista Martinetti. Several of the park's planes from that era survive today with trunks exceeding four metres around, roughly matching the age of a second Montagnola-era plane now standing alone in Piazza Minghetti a short walk away. A coast redwood in the Giardini Margherita, planted decades later as part of that park's own 19th century landscaping, is not far behind in size but carries no comparably precise date. The Montagnola park is free and open daily, a few minutes' walk from Bologna Centrale station.",
- "faq": [
-  {
-   "q": "What is the oldest tree in Bologna?",
-   "a": "One of the monumental plane trees of Parco della Montagnola, planted around 1820 during the park's Napoleonic-era redesign, roughly 206 years old. The park is free to visit, near Via Indipendenza in the historic centre."
-  },
-  {
-   "q": "Why does a cemetery have one of Bologna's notable trees?",
-   "a": "The Certosa di Bologna, a working cemetery since 1801 and one of Europe's largest open-air museums of funerary sculpture, plants cypresses throughout its historic sections, including one standing directly over the tomb of poet Giosue Carducci, Italy's first Nobel laureate in Literature. The cemetery is free and open to visitors."
-  },
-  {
-   "q": "Are Bologna's remarkable trees free to see?",
-   "a": "Most are, standing in free public parks, squares and the Certosa cemetery. The Cedro del Rizzoli grows in a working hospital's garden with public access during visiting hours, and the Orto Botanico charges a small entry fee."
-  },
-  {
-   "q": "Does Bologna have any trees tied to famous residents?",
-   "a": "Two. The ginkgo of Piazza Cavour is closely associated with the Bolognese singer-songwriter Lucio Dalla, who lived facing the square, and the cypress of the Certosa cemetery stands over the grave of Giosue Carducci, Italy's first Nobel Prize winner in Literature."
-  }
- ],
- "trees": [
-  {
-   "id": "bol_001",
-   "name": "The Monumental Planes of the Montagnola",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "approximately 200-206 years",
-   "age_min": 200,
-   "age_max": 206,
-   "location": {
-    "address": "Parco della Montagnola, Piazza VIII Agosto, 40121 Bologna",
-    "latitude": 44.5023,
-    "longitude": 11.3466,
-    "neighbourhood": "Centro Storico"
-   },
-   "story": "Bologna's first public park started as a rubbish tip. The raised ground of the Montagnola had been used since medieval times to dump debris, and only became public space in 1662, planted first with orchards and mulberries before Napoleon, passing through the city in 1805, ordered it redesigned along French garden principles by the architect Giovanni Battista Martinetti. The plane trees that give the park its shaded, formal character today date from that redesign, and roughly ten of them, out of some fifty planted across the park's six hectares, still count as genuinely monumental: trunks running one to one and a half metres across, several confirmed to exceed four metres in circumference. A dramatic 1896 entrance staircase from Via Indipendenza, nicknamed the Pincio of Bologna after Rome's own hillside park, was added decades later, but the trees along the park's two concentric paths are the oldest surviving element of Martinetti's original scheme, healthy and still growing more than two centuries after Napoleonic administrators decided a rubbish heap deserved better.",
-   "verified_sources": [
-    "https://www.bolognawelcome.com/it/luoghi/parchi-e-giardini/parco-della-montagnola",
-    "https://www.originebologna.com/strade/piazza-della-montagnola/"
-   ],
-   "access": "Free, public park",
-   "transport": "5 min walk from Bologna Centrale train station",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Montagnola_%2C.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "Aneta Malinowska, via Wikimedia Commons",
-    "status": "approved",
-    "width": 3944,
-    "height": 2736
-   },
-   "curation_status": "flagged",
-   "notes": "Ensemble entry describing the park's surviving Napoleonic-era plane trees rather than one dated individual specimen, consistent with how the sources themselves describe the planting (roughly ten monumental specimens among fifty total). 1805 redesign and circumference figures (1-1.5m diameter, several over 4m circumference) corroborated across two independent sources. 2026-07-29: found via the same Wiki Loves Monuments Italia photographer (Aneta Malinowska) already used for bol_002's sequoia and bol_006's ginkgo, who shot a dedicated series of Bologna's monumental/veteran trees. File:Montagnola ,.jpg, geotagged 44.5026,11.3464 (about 40m from this entry's own pin), described on its own Commons page as an autumn shot of mature trees in the park. 2026-07-29 (later session): downloaded and personally viewed the file. Shows plane trunks with the species' characteristic pale, patchy bark in the foreground, alongside the park's own 1896-dated ironwork and balustrade visible in frame, confirming both the species and the specific park. Approved.",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "bol_002",
-   "name": "The Sequoia of the Giardini Margherita",
-   "species": "Coast Redwood (Sequoia sempervirens)",
-   "age_estimate": "undated, mature",
-   "age_min": 100,
-   "age_max": 145,
-   "location": {
-    "address": "Giardini Margherita, Viale Giovanni Gozzadini, 40125 Bologna",
-    "latitude": 44.483888,
-    "longitude": 11.351909,
-    "neighbourhood": "Santo Stefano"
-   },
-   "story": "A coast redwood is a genuine oddity in an Italian city garden, and this one has grown into one of the tallest living things in Bologna: 37.4 metres, a trunk 520cm around, standing near the artificial lake that anchors the Giardini Margherita's English-style landscape design. Sequoia sempervirens is native to a narrow strip of California and southern Oregon coastline, kept alive there by coastal fog the species depends on to survive the dry summer months, conditions nothing like Bologna's own inland climate, which makes this specimen's continued health after more than a century something closer to a curiosity than a certainty. The gardens themselves opened in 1879 on land bought from a former convent estate, laid out as Bologna's first genuinely English-style public park, complete with an Etruscan necropolis whose remains are still visible near the grounds. Among the park's other conifers, oaks and horse chestnuts, the sequoia is unmistakable purely by scale, visibly taller than everything around it long before a visitor reaches the lake it stands beside.",
-   "verified_sources": [
-    "https://www.residencegmabologna.com/2023/11/gli-alberi-monumentali-di-bologna/",
-    "https://en.wikipedia.org/wiki/Giardini_Margherita"
-   ],
-   "access": "Free, public park",
-   "transport": "15 min walk from Bologna city centre, or bus to Viale Gozzadini",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Giardini_margherita_albero_monumentale.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "Aneta Malinowska, via Wikimedia Commons",
-    "status": "approved",
-    "width": 2976,
-    "height": 3968
-   },
-   "curation_status": "flagged",
-   "notes": "Dimensions (37.4m height, 520cm circumference) from a dedicated Bologna monumental-trees article, corroborated by Wikipedia's sourced article on the gardens' history and general species collection. No individual planting date documented. Photo found 2026-07-28, filename 'Giardini margherita albero monumentale' (monumental tree), Italian caption naming the species directly as 'sequoia sempreverde', an exact match to this entry's own Coast Redwood identification, the only sequoia species this park is sourced as holding. Viewed directly: a dramatic upward shot of the massive, deeply fissured fibrous red bark and multi-stemmed trunk unmistakable as Sequoia sempervirens, with an official monument tag visible attached to the bark. Approved. Pin corrected ~110m via Italy's national monumental tree registry (RAMI), whose own entry for this exact tree records an identical 37.40m height and 5.20m circumference.",
-   "location_precision": "confirmed",
-   "height_m": 37.5,
-   "verify_notes": "Height 37.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-   "girth_cm": 520
-  },
-  {
-   "id": "bol_003",
-   "name": "The Plane Tree of Piazza Minghetti",
-   "species": "London Plane (Platanus x acerifolia)",
-   "age_estimate": "approximately 200 years",
-   "age_min": 195,
-   "age_max": 205,
-   "location": {
-    "address": "Piazza Minghetti, 40124 Bologna",
-    "latitude": 44.492053,
-    "longitude": 11.345308,
-    "neighbourhood": "Quadrilatero"
-   },
-   "story": "At 39.5 metres, this plane is the tallest of any monumental tree catalogued anywhere in Bologna's province, rising directly behind the bronze statue of the 19th century statesman Marco Minghetti that gives the square its name and its own local nickname for the tree, the guardian of the piazza. Its trunk measures 455cm around, respectable but not exceptional for a plane tree this old, which makes the height the genuinely remarkable figure: two centuries of growth in a confined city square, competing for light against surrounding buildings rather than spreading wide the way an open-park specimen might. The statue it now shades, sculpted by Giulio Monteverde and unveiled in 1896, commemorates a politician who served as Italy's Prime Minister in the 1860s, a piece of civic memory considerably younger than the tree standing over it. Piazza Minghetti sits inside Bologna's Quadrilatero, the tight medieval grid of streets and market stalls just east of Piazza Maggiore, making this one of the easiest monumental trees in the city to combine with an ordinary walk through the historic centre.",
-   "verified_sources": [
-    "https://www.loquis.com/en/loquis/1083965/Il+platano+di+Piazza+Minghetti+a+Bologna",
-    "https://www.residencegmabologna.com/2023/11/gli-alberi-monumentali-di-bologna/"
-   ],
-   "access": "Free, public square",
-   "transport": "5 min walk from Piazza Maggiore",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Statua_Minghetti_e_Platano.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "via Wikimedia Commons",
-    "status": "approved",
-    "width": 1000,
-    "height": 750
-   },
-   "curation_status": "flagged",
-   "notes": "Height (39.5m) and circumference (455cm) corroborated across two independent sources, including the 'tallest monumental tree in the province' superlative, presented as sourced rather than independently verified against a full provincial register. Photo verified directly: shows the Minghetti statue directly in front of the described plane tree canopy, an exact match to the square and story. Pin tightened 2026-07-27: the only Platanus tree node OpenStreetMap maps in the piazza sits about 17m from the prior address-level estimate; kept `approximate` since the node itself carried no name or registry reference tying it individually to this tree. Upgraded to confirmed: Italy's official AMI national monumental-trees register lists a 'Platano comune' at Piazza Minghetti itself (record naming the exact square, species matching London Plane), read with a purpose-built binary XLS parser and independently landing about 11m from the already-tightened OSM node, two independent sources converging on the same point.",
-   "location_precision": "confirmed",
-   "height_m": 39.5,
-   "verify_notes": "Height 39.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-   "girth_cm": 455
-  },
-  {
-   "id": "bol_004",
-   "name": "The Oriental Plane of Piazza Malpighi",
-   "species": "Oriental Plane (Platanus orientalis)",
-   "age_estimate": "approximately 200 years",
-   "age_min": 195,
-   "age_max": 205,
-   "location": {
-    "address": "Piazza Malpighi, 40123 Bologna",
-    "latitude": 44.4937,
-    "longitude": 11.3364,
-    "neighbourhood": "Malpighi"
-   },
-   "story": "This plane tree grows in a garden raised more than four metres above the surrounding piazza, a quirk of geography with a specific origin: the ground was once known as the Cavallerizza, a riding ground used from 1612 for horsemanship and public events, before the noble Rusconi family converted it into a private garden around 1825 and planted, among other trees, this Oriental plane. Two centuries on it has become, by most local accounts, the single most imposing tree standing anywhere in Bologna's historic centre, 36 metres tall with a trunk 520cm around, close by the Rusconi family's own palazzo. Its elevated setting has become something of a double-edged inheritance: the raised garden and the tall retaining wall separating it from the piazza below have almost certainly limited how far its root system can spread, yet the tree shows no clear sign of decline generations after its likely planting date. It remains one of eight trees on Italy's official monumental register within Bologna city limits, a shy giant, in the words of one local tree writer, tucked into a garden most passersby in the piazza below never think to look up into.",
-   "verified_sources": [
-    "https://selvatc.it/blog/alberi-importanti-il-platano-di-piazza-malpighi/",
-    "https://arte-4-you.com/2020/12/12/il-gigante-timido-platano-orientale-di-piazza-malpighi/"
-   ],
-   "access": "Free, public garden square",
-   "transport": "5 min walk from Piazza Maggiore, near the Basilica di San Francesco",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Piazza_malpighi-platano_orientale.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "Aneta Malinowska, via Wikimedia Commons",
-    "status": "approved",
-    "width": 3000,
-    "height": 4496
-   },
-   "curation_status": "flagged",
-   "notes": "Dimensions (36m height, 520cm circumference), the Cavallerizza/Rusconi origin story and the ~1825 planting estimate corroborated across two independent dedicated tree-history sources. Photo verified directly: coordinates in the file's own metadata match the geocoded address closely, and the image clearly shows a large plane canopy over the same elevated garden setting described in the story. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 14/A944/BO/08, \"Palazzo Rusconi - Piazza Malpighi 16\", Platano orientale), read identically across two independent fetches of the source spreadsheet; moved 15m to the registry point.",
-   "location_precision": "confirmed",
-   "height_m": 36.0,
-   "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (4 m away).",
-   "girth_cm": 520
-  },
-  {
-   "id": "bol_005",
-   "name": "The Himalayan Cedar of the Rizzoli",
-   "species": "Himalayan Cedar (Cedrus deodara)",
-   "age_estimate": "planted 1896 or shortly before",
-   "age_min": 125,
-   "age_max": 135,
-   "location": {
-    "address": "Istituto Ortopedico Rizzoli, Via Giulio Cesare Pupilli 1, 40136 Bologna",
-    "latitude": 44.4809,
-    "longitude": 11.3408,
-    "neighbourhood": "San Michele in Bosco"
-   },
-   "story": "This cedar grows in the garden of a working orthopaedic hospital, on ground that has already been a monastery, a royal residence and a public park before it became a place of medicine. San Michele in Bosco started as an Olivetan monastery rebuilt in 1437, later served briefly as Villa Reale when King Victor Emmanuel II stayed there around Italian unification in 1860, and only became a hospital in 1896, when the Istituto Ortopedico Rizzoli opened here in the presence of Italy's royal family, funded by a bequest from the surgeon Francesco Rizzoli. The cedar, planted around that same transition, has reached nearly 30 metres, its trunk 520cm around, standing in a garden landscaped specifically to frame the new medical facility when it opened. Himalayan cedar, native to high-altitude forests stretching from Afghanistan to Nepal, was a fashionable choice for grand Italian institutional gardens of the period, valued for its size and its distinctive drooping branch tips, and this specimen has had well over a century to earn its place on Italy's official monumental tree register.",
-   "verified_sources": [
-    "https://arte-4-you.com/2020/09/03/albero-della-vita-bellissimo-cedro-monumentale-di-ospedale-rizzoli/",
-    "https://www.bibliotecasalaborsa.it/bolognaonline/objects/istituto_rizzoli_villa_putti"
-   ],
-   "access": "Free, hospital garden (check visiting hours)",
-   "transport": "10 min walk uphill from Porta San Mamolo",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/4.rizzoli_cedro_dell%27himalaya_%2812%29.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "Aneta Malinowska, via Wikimedia Commons",
-    "status": "approved",
-    "width": 3344,
-    "height": 2508
-   },
-   "curation_status": "flagged",
-   "notes": "Dimensions (29.2m height, 520cm circumference) and AMI listing from a dedicated tree article; the 1896 institutional history corroborated independently by a city archive/library source. Planting date is an estimate tied to the hospital's 1896 opening rather than a documented planting record. 2026-07-29: found via the same photographer (Aneta Malinowska, Wiki Loves Monuments Italia) whose dedicated Bologna monumental-tree series also supplied bol_001, bol_002 and bol_006's photos. File:4.rizzoli cedro dell'himalaya (12).jpg, filename naming this exact tree, geotagged 44.4811,11.3408, essentially identical to this entry's own AMI-registry pin. 2026-07-29 (later session): downloaded and personally viewed the file, plus confirmed via the Commons API that its own description reads 'cedro dell'Himalaya'. Shows a single-stemmed conifer with the species' characteristic weeping, cascading branch tips beside a garden bust on a plinth, consistent with an institutional garden setting. Approved. Pin corrected by about 130m to Italy's national monumental tree registry point (MASAF, AMI code 03/A944/BO/08, \"Istituto Ortopedico Rizzoli - Via Pupilli 1\", Cedro dell'Himalaya), read identically across two independent fetches of the source spreadsheet.",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "bol_006",
-   "name": "The Ginkgo of Piazza Cavour",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "approximately 150 years",
-   "age_min": 145,
-   "age_max": 155,
-   "best_time": {
-    "months": [
-     11
-    ],
-    "label": "November, when its fan-shaped leaves turn gold"
-   },
-   "location": {
-    "address": "Piazza Cavour, 40124 Bologna",
-    "latitude": 44.4911,
-    "longitude": 11.3439,
-    "neighbourhood": "Galvani"
-   },
-   "story": "Piazza Cavour was Bologna's first deliberately designed public garden-square, laid out by the Turin architect Pietro Ceri in the years after Italian unification cut new streets through the city's medieval fabric, and this ginkgo has stood in it since roughly that original planting, around 150 years now. It is, by the official register's own measurements, the smallest of Bologna's monumental trees by height, 29.5 metres against taller planes and cedars elsewhere in the city, and its trunk runs 338cm around, but no other tree on this list turns quite the same colour: every autumn its fan-shaped leaves shift to a uniform, near-luminous yellow within days of each other, a synchronised display few other species manage. The square has a more recent claim to local affection too. Bolognese singer-songwriter Lucio Dalla lived facing Piazza Cavour for much of his life, and this ginkgo, visible from his own windows for decades, has become informally associated with him since his death in 2012, a civic tree with an unusually specific personal thread running through its more official designation.",
-   "verified_sources": [
-    "https://arte-4-you.com/2020/11/08/albero-monumentale-di-lucio-dalla-ginkgo-biloba-di-piazza-cavour/",
-    "https://ilregistrodeglialberi.it/4237-ginko-di-piazza-cavour-ginkgo-bologna-bo-emilia-romagna"
-   ],
-   "access": "Free, public square",
-   "transport": "5 min walk from Piazza Maggiore",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Piazza_cavour%2C.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "Aneta Malinowska, via Wikimedia Commons",
-    "status": "approved",
-    "width": 3000,
-    "height": 4496
-   },
-   "curation_status": "flagged",
-   "notes": "Height (29.5m) and circumference (338cm) corroborated across the official RAMI registry entry and an independent local-history article covering the Lucio Dalla connection. A same-named 'Ginkgo di piazza Cavour' Wikimedia Commons category exists but documents a different tree entirely, in Turin, not Bologna; not used here to avoid the wrong-city mixup. 2026-07-29: found via the correct Bologna-specific source this time, File:Piazza cavour,.jpg by Aneta Malinowska (Wiki Loves Monuments Italia 2020, part of her dedicated Bologna monumental/veteran-tree series), whose own Commons page explicitly describes a Ginkgo biloba in Piazza Cavour, Bologna, geotagged 44.4913,11.3439, essentially this entry's own pin. 2026-07-29 (later session): downloaded and personally viewed the file; the square's own CAVOUR and TAXI signage is legible in frame, confirming the location beyond the geotag alone. Approved. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 12/A944/BO/08, \"Piazza Cavour\", Ginco), read identically across two independent fetches of the source spreadsheet; moved 22m to the registry point.",
-   "location_precision": "confirmed",
-   "height_m": 29.5,
-   "verify_notes": "Height 29.5 m from the italy-masaf register, matched on our own pin (6 m away).",
-   "girth_cm": 338
-  },
-  {
-   "id": "bol_007",
-   "name": "The Ginkgo of the Botanical Garden",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "undated, mature",
-   "age_min": 100,
-   "age_max": 200,
-   "best_time": {
-    "months": [
-     11
-    ],
-    "label": "November, when its old canopy along Via Irnerio turns a single uniform gold"
-   },
-   "location": {
-    "address": "Orto Botanico ed Erbario, Via Irnerio 42, 40126 Bologna",
-    "latitude": 44.4994086,
-    "longitude": 11.3527316,
-    "neighbourhood": "Irnerio"
-   },
-   "story": "Bologna's botanical garden traces its founding to 1568, when the naturalist Ulisse Aldrovandi established it as one of the earliest such gardens anywhere in Europe, decades before ginkgo itself had even reached the continent. This specimen, an old female tree with a trunk 80cm across, came later, among the first ginkgos planted anywhere in Italy after the species reached European cultivation in the 18th century, brought from a mountainous pocket of southeast China where it had survived, essentially unchanged, for some 200 million years. It now dominates the garden's front section along Via Irnerio, included on the Emilia-Romagna region's own list of protected monumental trees for its size and age within a collection built primarily around gymnosperms, cone-bearing trees, from across Europe and Asia. Ginkgo biloba is famously resistant to disease, pollution and even fire in a way few other large trees can match, a resilience this specimen shares with every ginkgo on this list without needing any specific incident to prove it.",
-   "verified_sources": [
-    "https://ortobotanicobologna.wordpress.com/1-giardino-anteriore/",
-    "https://ortobotanicobologna.wordpress.com/g-come-ginko-e-b-come-banano/"
-   ],
-   "access": "Small entry fee, Orto Botanico ed Erbario",
-   "transport": "10 min walk from Piazza Maggiore",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "notes": "Existence and front-garden location corroborated by the garden's own dedicated blog page; regional monumental-tree listing mentioned in general coverage of Bologna's botanical garden. No individual planting date or precise dimensions found for this specimen. Pin tightened 2026-07-27: the only Ginkgo biloba tree node OpenStreetMap maps near the garden sits right at its southern boundary; kept `approximate` since it isn't tied to an individual accession record from the garden's own collection. 2026-07-29: three iNaturalist Ginkgo biloba observations found within about 100m of the pin, but two are CC-BY-NC and one has no license set at all (null, meaning all-rights-reserved by default); genuine dead end on license grounds.",
-   "location_precision": "approximate",
-   "paid_entry": true
-  },
-  {
-   "id": "bol_008",
-   "name": "The Cypress of Carducci's Tomb",
-   "species": "Mediterranean Cypress (Cupressus sempervirens)",
-   "age_estimate": "undated, mature",
-   "age_min": 100,
-   "age_max": 150,
-   "location": {
-    "address": "Certosa di Bologna, Via della Certosa 18, 40133 Bologna",
-    "latitude": 44.4956629,
-    "longitude": 11.3098311,
-    "neighbourhood": "Saragozza"
-   },
-   "story": "A cypress stands directly over the granite tomb of Giosue Carducci in the Certosa di Bologna, one of the tallest and most immediately recognisable trees within a cemetery field otherwise dominated by low funerary monuments, and it has become known simply as the poet's own cypress. Carducci, who became the first Italian to win the Nobel Prize in Literature in 1906, is buried in a section of the Certosa reserved for his memory, his surname cut into a single block of stone with no other ornament, a deliberate austerity that the cypress towering behind it makes considerably more dramatic than the monument alone would manage. The Certosa itself, a working cemetery since 1801 built on the site of a 14th century Carthusian monastery, is regarded as one of Europe's great open-air museums of funerary sculpture, some 30 hectares holding roughly 6,000 works of historic and artistic interest, and cypress plantings run throughout its oldest sections, including a double row leading to the monastery's original entrance. This particular tree earns its own name for standing over the one grave in the entire complex that draws readers rather than art historians.",
-   "verified_sources": [
-    "https://www.bolognawelcome.com/it/luoghi/piazze-vie-monumenti/certosa-di-bologna---cimitero-storico-monumentale",
-    "https://it.wikipedia.org/wiki/Cimitero_monumentale_della_Certosa_di_Bologna"
-   ],
-   "access": "Free, public cemetery",
-   "transport": "Bus to Certosa, or 20 min walk from Porta Saragozza",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "notes": "Carducci's burial location and the Certosa's own history corroborated across two independent sources. No individual age or planting date documented for the specific cypress; presented as a broad mature estimate. Photo verified directly: shows Carducci's named tomb flanked by tall columnar cypresses, a clear match to the described setting. Pin corrected by about 550m 2026-07-27: the prior coordinate was just the cemetery's main-gate address, not the grave itself, inside a 30-hectare complex. Moved to the tomb's own Wikidata-sourced coordinate (rank \"preferred\", cross-referenced to an OSM node named `Tomba di Giosue Carducci`), which this entry's own already-cited sources describe the cypress as standing directly over; the cypress itself isn't independently geotagged, but its position relative to the tomb was already an established, sourced fact before this pass.",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "bol_009",
-   "name": "The Himalayan Cedar of Villa Ghigi",
-   "species": "Himalayan Cedar (Cedrus deodara)",
-   "age_estimate": "undated, mature",
-   "age_min": 80,
-   "age_max": 140,
-   "location": {
-    "address": "Parco di Villa Ghigi, Via San Mamolo 105, 40136 Bologna",
-    "latitude": 44.4764907,
-    "longitude": 11.3289668,
-    "neighbourhood": "Colli Bolognesi"
-   },
-   "story": "This cedar was planted by Callisto Ghigi himself when he first acquired the hillside property that still carries his family's name, and it now dominates the meadow directly in front of the villa, tall enough that local photographers treat it as the park's single most reliable subject. Villa Ghigi sits just outside Porta San Mamolo on Bologna's southern hills, opened to the public by the city in 1974 and now spanning some 30 hectares of former agricultural land, old orchard rows of cherry, pear, apple and fig trees still legible in the landscape alongside century-old beech groves and native downy oaks. The cedar itself has been measured at 159cm in diameter and roughly 24 metres tall, and shows visible lightning-strike scarring on part of its crown, damage it has carried rather than been felled by. Its position on the open lawn in front of the villa gives visitors one of the clearest unobstructed views of any single tree on this list, framed against the hillside panorama over Bologna's historic centre that the whole park is known for.",
-   "verified_sources": [
-    "https://www.ilrestodelcarlino.it/bologna/cosa-fare/sch-foliage-mappa-luoghi-magici-drcxqcwa/villa-ghigi-e-il-cedro-dellhimalaya-da-immortalare-in-uno-scatto",
-    "https://commons.wikimedia.org/wiki/Category:Villa_Ghigi_(Bologna)_-_Cedro_dell%27Himalaya"
-   ],
-   "access": "Free, public park",
-   "transport": "15 min walk uphill from Porta San Mamolo",
-   "photo": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Cedro_dell%27Himalaya_nel_Parco_di_Villa_Ghigi.jpg",
-    "license": "CC BY-SA 4.0",
-    "attribution": "Ugeorge, via Wikimedia Commons",
-    "status": "approved",
-    "width": 3000,
-    "height": 2000
-   },
-   "curation_status": "flagged",
-   "notes": "Callisto Ghigi planting attribution and general park history from a dedicated local-press feature; dimensions (159cm diameter, 24m height) and lightning-damage detail from the tree's own Wikimedia Commons category structured data. No individual planting date documented. Photo found 2026-07-28, correctly inside the dedicated 'Villa Ghigi (Bologna) - Cedro dell'Himalaya' Commons category this entry already cites as a source (unlike the earlier search-surfaced candidates that turned out to be the Vallerano mixup, flagged and avoided). Viewed directly: a single large Cedrus deodara with the species' characteristic drooping habit, standing on an open lawn behind the same split-rail wooden fence visible in the park's other confirmed photos, with a hilltop villa in the distance, matching the story's own description of its position on the open lawn. Approved. Location confirmed 2026-07-27: an OpenStreetMap tree node tagged `denotation=natural_monument` with a MASAF national-registry reference (`ref:masaf=08/A944/BO/08`) and the same Commons category name, resolving the Vallerano mixup: this node is unambiguously the Bologna specimen, not the same-species tree elsewhere.",
-   "location_precision": "confirmed"
-  },
-  {
-   "id": "bol_010",
-   "name": "The Camphor of San Michele in Bosco",
-   "species": "Camphor Tree (Cinnamomum camphora)",
-   "age_estimate": "undated, mature",
-   "age_min": 80,
-   "age_max": 130,
-   "location": {
-    "address": "Parco di San Michele in Bosco, Via Giulio Cesare Pupilli 1, 40136 Bologna",
-    "latitude": 44.4795,
-    "longitude": 11.3411,
-    "neighbourhood": "San Michele in Bosco"
-   },
-   "story": "The garden surrounding the Rizzoli hospital splits into two distinct characters, and this camphor grows in the gentler of the two: a western section mixing old oaks, holm oaks, cypresses, lindens and horse chestnuts into something closer to an informal woodland than a designed garden, in contrast to the dense conifer forest of cedars and black pines covering the site's eastern slope. Cinnamomum camphora is native to East Asia and reached Italian institutional gardens through the same 19th century acclimatisation wave that filled Naples, Rome and other cities with newly fashionable evergreen imports, valued for the camphor oil its wood and leaves produce and for a dense, glossy canopy that holds its colour through the Bolognese winter. Its exact planting date is not recorded, folded into the general landscaping the hospital's founders carried out around 1896 rather than documented tree by tree, but it shares the same hillside history as San Michele in Bosco's Himalayan cedar: monastery ground, briefly royal, now medical, with the trees the one constant through every change of use.",
-   "verified_sources": [
-    "https://turismo.bologna.it/il-parco-di-san-michele-in-bosco/",
-    "https://www.bolognawelcome.com/it/luoghi/parchi-e-giardini/parco-di-san-michele-in-bosco"
-   ],
-   "access": "Free, hospital park (check visiting hours)",
-   "transport": "10 min walk uphill from Porta San Mamolo",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "notes": "General presence of camphor and mixed evergreen planting in the park's western section corroborated across two independent tourism-authority sources; neither names one specific individual camphor tree with its own measurements, so this entry describes the species' documented presence in the park rather than a singled-out specimen, the honest framing used elsewhere on this site for similar cases. 2026-07-29: checked the full upload history of Aneta Malinowska, the Wiki Loves Monuments photographer whose dedicated Bologna monumental-tree series supplied photos for bol_001, bol_002, bol_005 and bol_006 this same session; no camphor or San Michele in Bosco park file in her uploads. Genuine dead end for now.",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "bol_011",
-   "name": "The Grey Walnut of the Botanical Garden",
-   "species": "Butternut (Juglans cinerea)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Orto Botanico ed Erbario, Via Irnerio 42, 40126 Bologna",
-    "latitude": 44.501272,
-    "longitude": 11.354117,
-    "neighbourhood": "Irnerio"
-   },
-   "story": "Bologna's grey walnut is the only Juglans cinerea recorded anywhere on Italy's national register of monumental trees, one specimen among more than 4,500 entries. It grows in the university's botanical garden on Via Irnerio, close to the ginkgo at the garden's front section, and stands 32 metres tall, a serious height for a species native to the river valleys of the eastern United States and Canada rather than to Italy. The regional register measures its girth at 4.2 metres; university-cited press coverage of a 2025 conservation project puts it nearer 4.7, and neither figure has been reconciled here, so both are recorded rather than one invented winner.\n\nThat conservation project is the tree's real story right now. Professor Alberto Minelli of the university's agro-food science department began a five-year programme in February 2025 to monitor a specimen the garden's own curator, Umberto Mossetti, describes as living in an extremely delicate balance with what surrounds it: reached what the university calls an irreversible aging phase, vulnerable to parasites and disease, and under added pressure from a changing climate. Nobody has recorded when it was planted. What is on record is that the university is treating its survival as a live question rather than a settled fact, five years of advanced diagnostics and soil analysis aimed at keeping the only tree of its kind on Italy's whole register standing a while longer.",
-   "verified_sources": [
-    "Emilia-Romagna regional monumental trees register (Cedro dell'Atlante file adjacent; walnut sheet locality Via Irnerio, girth 420cm, height 32.5m, urban)",
-    "https://sestopotere.com/salvate-il-noce-cenerino-lalma-mater-lancia-un-progetto-speciale-per-la-cura-del-suo-albero-monumentale/",
-    "https://visitupbologna.com/2025/02/18/noce-cenerino-il-progetto-di-salvaguardia-nellorto-botanico-di-bologna/"
-   ],
-   "access": "Small entry fee, Orto Botanico ed Erbario",
-   "transport": "10 min walk from Piazza Maggiore",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "notes": "Surfaced 2026-08-12 via the italy-masaf.json register (sheet Via Irnerio, name_it 'Noce grigio'), coordinate ~230m from the already-published bol_007 ginkgo, both inside the same Orto Botanico. Two independent press sources (Sestopotere, a Bologna news site, and Visitupbologna, an independent tourism guide) both citing university staff (curator Umberto Mossetti, professor Alberto Minelli) corroborate the tree's existence, species, 32m height and the ongoing conservation project, confirming it is alive now (an 'irreversible aging phase' under active five-year monitoring to preserve it, not a dead tree). GIRTH DISCREPANCY, stated honestly rather than resolved: the region's register gives 420cm, the two press sources both give approximately 471cm (independently matching each other, likely both citing the same university figure, distinct from the register's own survey). No age or planting date found anywhere. Access/transport copied from bol_007 for consistency, same location.",
-   "location_precision": "approximate",
-   "height_m": 32.5,
-   "verify_notes": "Height 32.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-   "paid_entry": true,
-   "girth_cm": 420
-  },
-  {
-   "id": "bol_012",
-   "name": "The Atlas Cedar of Villa delle Rose",
-   "species": "Atlas Cedar (Cedrus atlantica)",
-   "age_estimate": "not documented",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Villa delle Rose, Via Saragozza 228/230, Bologna",
-    "latitude": 44.489817,
-    "longitude": 11.314267,
-    "neighbourhood": "Saragozza"
-   },
-   "story": "Five metres forty-five around the trunk, thirty-two metres tall, and it grows in the garden of an art gallery. Villa delle Rose stands on Via Saragozza, the long road running out of the city towards the portico that climbs to San Luca, and the villa is now one of the two homes of Bologna's Galleria d'Arte Moderna. Its gardens are free to walk into, but they keep the gallery's hours rather than a park's, so this is a tree with an opening time.\n\nThe cedar is the largest thing in them. Cedrus atlantica comes from the Atlas Mountains of Morocco and Algeria, cold forest on thin soil above a thousand metres, where the remaining stands are shrinking and the species is now listed as endangered in its own range. In a walled Bolognese garden it has had none of that difficulty, and the size shows. It carries the flat, slightly ascending plates of foliage that a cedar only makes when it has been given room, so the crown reads as a stack of dark tiers.\n\nNothing dates it. The national monumental tree register carries the girth and the height and no age at all, and no second source names it, so the honest answer is that it is large enough to be protected and nobody has published a number. Bologna's two other registered cedars are both deodars, up on the hills south of the centre. This one you can reach on a bus.",
-   "verified_sources": [
-    "data/registers/italy-masaf.json (sheet 05/A944/BO/08, CC BY 4.0)"
-   ],
-   "access": "Free public gardens, gallery hours (Galleria d'Arte Moderna, Villa delle Rose)",
-   "transport": "Via Saragozza; bus 13 or a walk up from Porta Saragozza",
-   "location_precision": "confirmed",
-   "curation_status": "flagged",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "height_m": 32.0,
-   "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-   "girth_cm": 545
-  }
- ]
+  "city": "Bologna",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Bologna's oldest trees mostly answer to the same two centuries: Napoleon's brief but consequential redesign of the city's public spaces after 1805, and the private estates of 19th century Bolognese families who filled their gardens with imported cedars and ginkgos as a mark of taste. A porticoed city famous for hiding its sky rarely gets credit for its trees, but eight of Italy's official monumental specimens grow within its walls, more than in most Italian cities its size, scattered from a public cemetery to a hospital garden to a poet's tomb.",
+  "meta_description": "Bologna's most remarkable trees, from Napoleonic-era planes in a public park to a cypress standing over poet Giosue Carducci's own grave.",
+  "question_answer": "Bologna's oldest precisely dated tree is one of the monumental plane trees of the Parco della Montagnola, planted around 1820 during Giovanni Battista Martinetti's Napoleonic-era redesign of the city's first public park, making it roughly 206 years old. It stands free to visit in the historic centre, a short walk from Via Indipendenza.",
+  "question_meta": "Bologna's oldest tree is a roughly 206-year-old plane in Parco della Montagnola, planted in the Napoleonic-era redesign. Its story and eleven more trees.",
+  "question_context": "Bologna's monumental trees are documented through Italy's national register (the Alberi Monumentali d'Italia list, created under a 2013 law) and the Emilia-Romagna region's own parallel catalogue, together covering eight specimens within the city itself. Among those, the oldest with a precisely traceable planting is one of the large plane trees in the Parco della Montagnola, the city's first public park, laid out from 1805 under instructions passed down through Napoleonic administration and redesigned by the architect Giovanni Battista Martinetti. Several of the park's planes from that era survive today with trunks exceeding four metres around, roughly matching the age of a second Montagnola-era plane now standing alone in Piazza Minghetti a short walk away. A coast redwood in the Giardini Margherita, planted decades later as part of that park's own 19th century landscaping, is not far behind in size but carries no comparably precise date. The Montagnola park is free and open daily, a few minutes' walk from Bologna Centrale station.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Bologna?",
+      "a": "One of the monumental plane trees of Parco della Montagnola, planted around 1820 during the park's Napoleonic-era redesign, roughly 206 years old. The park is free to visit, near Via Indipendenza in the historic centre."
+    },
+    {
+      "q": "Why does a cemetery have one of Bologna's notable trees?",
+      "a": "The Certosa di Bologna, a working cemetery since 1801 and one of Europe's largest open-air museums of funerary sculpture, plants cypresses throughout its historic sections, including one standing directly over the tomb of poet Giosue Carducci, Italy's first Nobel laureate in Literature. The cemetery is free and open to visitors."
+    },
+    {
+      "q": "Are Bologna's remarkable trees free to see?",
+      "a": "Most are, standing in free public parks, squares and the Certosa cemetery. The Cedro del Rizzoli grows in a working hospital's garden with public access during visiting hours, and the Orto Botanico charges a small entry fee."
+    },
+    {
+      "q": "Does Bologna have any trees tied to famous residents?",
+      "a": "Two. The ginkgo of Piazza Cavour is closely associated with the Bolognese singer-songwriter Lucio Dalla, who lived facing the square, and the cypress of the Certosa cemetery stands over the grave of Giosue Carducci, Italy's first Nobel Prize winner in Literature."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bol_001",
+      "name": "The Monumental Planes of the Montagnola",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "approximately 200-206 years",
+      "age_min": 200,
+      "age_max": 206,
+      "location": {
+        "address": "Parco della Montagnola, Piazza VIII Agosto, 40121 Bologna",
+        "latitude": 44.5023,
+        "longitude": 11.3466,
+        "neighbourhood": "Centro Storico"
+      },
+      "story": "Bologna's first public park started as a rubbish tip. The raised ground of the Montagnola had been used since medieval times to dump debris, and only became public space in 1662, planted first with orchards and mulberries before Napoleon, passing through the city in 1805, ordered it redesigned along French garden principles by the architect Giovanni Battista Martinetti. The plane trees that give the park its shaded, formal character today date from that redesign, and roughly ten of them, out of some fifty planted across the park's six hectares, still count as genuinely monumental: trunks running one to one and a half metres across, several confirmed to exceed four metres in circumference. A dramatic 1896 entrance staircase from Via Indipendenza, nicknamed the Pincio of Bologna after Rome's own hillside park, was added decades later, but the trees along the park's two concentric paths are the oldest surviving element of Martinetti's original scheme, healthy and still growing more than two centuries after Napoleonic administrators decided a rubbish heap deserved better.",
+      "verified_sources": [
+        "https://www.bolognawelcome.com/it/luoghi/parchi-e-giardini/parco-della-montagnola",
+        "https://www.originebologna.com/strade/piazza-della-montagnola/"
+      ],
+      "access": "Free, public park",
+      "transport": "5 min walk from Bologna Centrale train station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Montagnola_%2C.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Aneta Malinowska, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3944,
+        "height": 2736
+      },
+      "curation_status": "flagged",
+      "notes": "Ensemble entry describing the park's surviving Napoleonic-era plane trees rather than one dated individual specimen, consistent with how the sources themselves describe the planting (roughly ten monumental specimens among fifty total). 1805 redesign and circumference figures (1-1.5m diameter, several over 4m circumference) corroborated across two independent sources. 2026-07-29: found via the same Wiki Loves Monuments Italia photographer (Aneta Malinowska) already used for bol_002's sequoia and bol_006's ginkgo, who shot a dedicated series of Bologna's monumental/veteran trees. File:Montagnola ,.jpg, geotagged 44.5026,11.3464 (about 40m from this entry's own pin), described on its own Commons page as an autumn shot of mature trees in the park. 2026-07-29 (later session): downloaded and personally viewed the file. Shows plane trunks with the species' characteristic pale, patchy bark in the foreground, alongside the park's own 1896-dated ironwork and balustrade visible in frame, confirming both the species and the specific park. Approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bol_002",
+      "name": "The Sequoia of the Giardini Margherita",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "undated, mature",
+      "age_min": 100,
+      "age_max": 145,
+      "location": {
+        "address": "Giardini Margherita, Viale Giovanni Gozzadini, 40125 Bologna",
+        "latitude": 44.483888,
+        "longitude": 11.351909,
+        "neighbourhood": "Santo Stefano"
+      },
+      "story": "A coast redwood is a genuine oddity in an Italian city garden, and this one has grown into one of the tallest living things in Bologna: 37.4 metres, a trunk 520cm around, standing near the artificial lake that anchors the Giardini Margherita's English-style landscape design. Sequoia sempervirens is native to a narrow strip of California and southern Oregon coastline, kept alive there by coastal fog the species depends on to survive the dry summer months, conditions nothing like Bologna's own inland climate, which makes this specimen's continued health after more than a century something closer to a curiosity than a certainty. The gardens themselves opened in 1879 on land bought from a former convent estate, laid out as Bologna's first genuinely English-style public park, complete with an Etruscan necropolis whose remains are still visible near the grounds. Among the park's other conifers, oaks and horse chestnuts, the sequoia is unmistakable purely by scale, visibly taller than everything around it long before a visitor reaches the lake it stands beside.",
+      "verified_sources": [
+        "https://www.residencegmabologna.com/2023/11/gli-alberi-monumentali-di-bologna/",
+        "https://en.wikipedia.org/wiki/Giardini_Margherita"
+      ],
+      "access": "Free, public park",
+      "transport": "15 min walk from Bologna city centre, or bus to Viale Gozzadini",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Giardini_margherita_albero_monumentale.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Aneta Malinowska, via Wikimedia Commons",
+        "status": "approved",
+        "width": 2976,
+        "height": 3968
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (37.4m height, 520cm circumference) from a dedicated Bologna monumental-trees article, corroborated by Wikipedia's sourced article on the gardens' history and general species collection. No individual planting date documented. Photo found 2026-07-28, filename 'Giardini margherita albero monumentale' (monumental tree), Italian caption naming the species directly as 'sequoia sempreverde', an exact match to this entry's own Coast Redwood identification, the only sequoia species this park is sourced as holding. Viewed directly: a dramatic upward shot of the massive, deeply fissured fibrous red bark and multi-stemmed trunk unmistakable as Sequoia sempervirens, with an official monument tag visible attached to the bark. Approved. Pin corrected ~110m via Italy's national monumental tree registry (RAMI), whose own entry for this exact tree records an identical 37.40m height and 5.20m circumference.",
+      "location_precision": "confirmed",
+      "height_m": 37.5,
+      "verify_notes": "Height 37.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 520
+    },
+    {
+      "id": "bol_003",
+      "name": "The Plane Tree of Piazza Minghetti",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "approximately 200 years",
+      "age_min": 195,
+      "age_max": 205,
+      "location": {
+        "address": "Piazza Minghetti, 40124 Bologna",
+        "latitude": 44.492053,
+        "longitude": 11.345308,
+        "neighbourhood": "Quadrilatero"
+      },
+      "story": "At 39.5 metres, this plane is the tallest of any monumental tree catalogued anywhere in Bologna's province, rising directly behind the bronze statue of the 19th century statesman Marco Minghetti that gives the square its name and its own local nickname for the tree, the guardian of the piazza. Its trunk measures 455cm around, respectable but not exceptional for a plane tree this old, which makes the height the genuinely remarkable figure: two centuries of growth in a confined city square, competing for light against surrounding buildings rather than spreading wide the way an open-park specimen might. The statue it now shades, sculpted by Giulio Monteverde and unveiled in 1896, commemorates a politician who served as Italy's Prime Minister in the 1860s, a piece of civic memory considerably younger than the tree standing over it. Piazza Minghetti sits inside Bologna's Quadrilatero, the tight medieval grid of streets and market stalls just east of Piazza Maggiore, making this one of the easiest monumental trees in the city to combine with an ordinary walk through the historic centre.",
+      "verified_sources": [
+        "https://www.loquis.com/en/loquis/1083965/Il+platano+di+Piazza+Minghetti+a+Bologna",
+        "https://www.residencegmabologna.com/2023/11/gli-alberi-monumentali-di-bologna/"
+      ],
+      "access": "Free, public square",
+      "transport": "5 min walk from Piazza Maggiore",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Statua_Minghetti_e_Platano.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "via Wikimedia Commons",
+        "status": "approved",
+        "width": 1000,
+        "height": 750
+      },
+      "curation_status": "flagged",
+      "notes": "Height (39.5m) and circumference (455cm) corroborated across two independent sources, including the 'tallest monumental tree in the province' superlative, presented as sourced rather than independently verified against a full provincial register. Photo verified directly: shows the Minghetti statue directly in front of the described plane tree canopy, an exact match to the square and story. Pin tightened 2026-07-27: the only Platanus tree node OpenStreetMap maps in the piazza sits about 17m from the prior address-level estimate; kept `approximate` since the node itself carried no name or registry reference tying it individually to this tree. Upgraded to confirmed: Italy's official AMI national monumental-trees register lists a 'Platano comune' at Piazza Minghetti itself (record naming the exact square, species matching London Plane), read with a purpose-built binary XLS parser and independently landing about 11m from the already-tightened OSM node, two independent sources converging on the same point.",
+      "location_precision": "confirmed",
+      "height_m": 39.5,
+      "verify_notes": "Height 39.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 455
+    },
+    {
+      "id": "bol_004",
+      "name": "The Oriental Plane of Piazza Malpighi",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "approximately 200 years",
+      "age_min": 195,
+      "age_max": 205,
+      "location": {
+        "address": "Piazza Malpighi, 40123 Bologna",
+        "latitude": 44.4937,
+        "longitude": 11.3364,
+        "neighbourhood": "Malpighi"
+      },
+      "story": "This plane tree grows in a garden raised more than four metres above the surrounding piazza, a quirk of geography with a specific origin: the ground was once known as the Cavallerizza, a riding ground used from 1612 for horsemanship and public events, before the noble Rusconi family converted it into a private garden around 1825 and planted, among other trees, this Oriental plane. Two centuries on it has become, by most local accounts, the single most imposing tree standing anywhere in Bologna's historic centre, 36 metres tall with a trunk 520cm around, close by the Rusconi family's own palazzo. Its elevated setting has become something of a double-edged inheritance: the raised garden and the tall retaining wall separating it from the piazza below have almost certainly limited how far its root system can spread, yet the tree shows no clear sign of decline generations after its likely planting date. It remains one of eight trees on Italy's official monumental register within Bologna city limits, a shy giant, in the words of one local tree writer, tucked into a garden most passersby in the piazza below never think to look up into.",
+      "verified_sources": [
+        "https://selvatc.it/blog/alberi-importanti-il-platano-di-piazza-malpighi/",
+        "https://arte-4-you.com/2020/12/12/il-gigante-timido-platano-orientale-di-piazza-malpighi/"
+      ],
+      "access": "Free, public garden square",
+      "transport": "5 min walk from Piazza Maggiore, near the Basilica di San Francesco",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Piazza_malpighi-platano_orientale.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Aneta Malinowska, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3000,
+        "height": 4496
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (36m height, 520cm circumference), the Cavallerizza/Rusconi origin story and the ~1825 planting estimate corroborated across two independent dedicated tree-history sources. Photo verified directly: coordinates in the file's own metadata match the geocoded address closely, and the image clearly shows a large plane canopy over the same elevated garden setting described in the story. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 14/A944/BO/08, \"Palazzo Rusconi - Piazza Malpighi 16\", Platano orientale), read identically across two independent fetches of the source spreadsheet; moved 15m to the registry point.",
+      "location_precision": "confirmed",
+      "height_m": 36.0,
+      "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (4 m away).",
+      "girth_cm": 520
+    },
+    {
+      "id": "bol_005",
+      "name": "The Himalayan Cedar of the Rizzoli",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "planted 1896 or shortly before",
+      "age_min": 125,
+      "age_max": 135,
+      "location": {
+        "address": "Istituto Ortopedico Rizzoli, Via Giulio Cesare Pupilli 1, 40136 Bologna",
+        "latitude": 44.4809,
+        "longitude": 11.3408,
+        "neighbourhood": "San Michele in Bosco"
+      },
+      "story": "This cedar grows in the garden of a working orthopaedic hospital, on ground that has already been a monastery, a royal residence and a public park before it became a place of medicine. San Michele in Bosco started as an Olivetan monastery rebuilt in 1437, later served briefly as Villa Reale when King Victor Emmanuel II stayed there around Italian unification in 1860, and only became a hospital in 1896, when the Istituto Ortopedico Rizzoli opened here in the presence of Italy's royal family, funded by a bequest from the surgeon Francesco Rizzoli. The cedar, planted around that same transition, has reached nearly 30 metres, its trunk 520cm around, standing in a garden landscaped specifically to frame the new medical facility when it opened. Himalayan cedar, native to high-altitude forests stretching from Afghanistan to Nepal, was a fashionable choice for grand Italian institutional gardens of the period, valued for its size and its distinctive drooping branch tips, and this specimen has had well over a century to earn its place on Italy's official monumental tree register.",
+      "verified_sources": [
+        "https://arte-4-you.com/2020/09/03/albero-della-vita-bellissimo-cedro-monumentale-di-ospedale-rizzoli/",
+        "https://www.bibliotecasalaborsa.it/bolognaonline/objects/istituto_rizzoli_villa_putti"
+      ],
+      "access": "Free, hospital garden (check visiting hours)",
+      "transport": "10 min walk uphill from Porta San Mamolo",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/4.rizzoli_cedro_dell%27himalaya_%2812%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Aneta Malinowska, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3344,
+        "height": 2508
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (29.2m height, 520cm circumference) and AMI listing from a dedicated tree article; the 1896 institutional history corroborated independently by a city archive/library source. Planting date is an estimate tied to the hospital's 1896 opening rather than a documented planting record. 2026-07-29: found via the same photographer (Aneta Malinowska, Wiki Loves Monuments Italia) whose dedicated Bologna monumental-tree series also supplied bol_001, bol_002 and bol_006's photos. File:4.rizzoli cedro dell'himalaya (12).jpg, filename naming this exact tree, geotagged 44.4811,11.3408, essentially identical to this entry's own AMI-registry pin. 2026-07-29 (later session): downloaded and personally viewed the file, plus confirmed via the Commons API that its own description reads 'cedro dell'Himalaya'. Shows a single-stemmed conifer with the species' characteristic weeping, cascading branch tips beside a garden bust on a plinth, consistent with an institutional garden setting. Approved. Pin corrected by about 130m to Italy's national monumental tree registry point (MASAF, AMI code 03/A944/BO/08, \"Istituto Ortopedico Rizzoli - Via Pupilli 1\", Cedro dell'Himalaya), read identically across two independent fetches of the source spreadsheet.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bol_006",
+      "name": "The Ginkgo of Piazza Cavour",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "approximately 150 years",
+      "age_min": 145,
+      "age_max": 155,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when its fan-shaped leaves turn gold"
+      },
+      "location": {
+        "address": "Piazza Cavour, 40124 Bologna",
+        "latitude": 44.4911,
+        "longitude": 11.3439,
+        "neighbourhood": "Galvani"
+      },
+      "story": "Piazza Cavour was Bologna's first deliberately designed public garden-square, laid out by the Turin architect Pietro Ceri in the years after Italian unification cut new streets through the city's medieval fabric, and this ginkgo has stood in it since roughly that original planting, around 150 years now. It is, by the official register's own measurements, the smallest of Bologna's monumental trees by height, 29.5 metres against taller planes and cedars elsewhere in the city, and its trunk runs 338cm around, but no other tree on this list turns quite the same colour: every autumn its fan-shaped leaves shift to a uniform, near-luminous yellow within days of each other, a synchronised display few other species manage. The square has a more recent claim to local affection too. Bolognese singer-songwriter Lucio Dalla lived facing Piazza Cavour for much of his life, and this ginkgo, visible from his own windows for decades, has become informally associated with him since his death in 2012, a civic tree with an unusually specific personal thread running through its more official designation.",
+      "verified_sources": [
+        "https://arte-4-you.com/2020/11/08/albero-monumentale-di-lucio-dalla-ginkgo-biloba-di-piazza-cavour/",
+        "https://ilregistrodeglialberi.it/4237-ginko-di-piazza-cavour-ginkgo-bologna-bo-emilia-romagna"
+      ],
+      "access": "Free, public square",
+      "transport": "5 min walk from Piazza Maggiore",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Piazza_cavour%2C.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Aneta Malinowska, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3000,
+        "height": 4496
+      },
+      "curation_status": "flagged",
+      "notes": "Height (29.5m) and circumference (338cm) corroborated across the official RAMI registry entry and an independent local-history article covering the Lucio Dalla connection. A same-named 'Ginkgo di piazza Cavour' Wikimedia Commons category exists but documents a different tree entirely, in Turin, not Bologna; not used here to avoid the wrong-city mixup. 2026-07-29: found via the correct Bologna-specific source this time, File:Piazza cavour,.jpg by Aneta Malinowska (Wiki Loves Monuments Italia 2020, part of her dedicated Bologna monumental/veteran-tree series), whose own Commons page explicitly describes a Ginkgo biloba in Piazza Cavour, Bologna, geotagged 44.4913,11.3439, essentially this entry's own pin. 2026-07-29 (later session): downloaded and personally viewed the file; the square's own CAVOUR and TAXI signage is legible in frame, confirming the location beyond the geotag alone. Approved. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 12/A944/BO/08, \"Piazza Cavour\", Ginco), read identically across two independent fetches of the source spreadsheet; moved 22m to the registry point.",
+      "location_precision": "confirmed",
+      "height_m": 29.5,
+      "verify_notes": "Height 29.5 m from the italy-masaf register, matched on our own pin (6 m away).",
+      "girth_cm": 338
+    },
+    {
+      "id": "bol_007",
+      "name": "The Ginkgo of the Botanical Garden",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "undated, mature",
+      "age_min": 100,
+      "age_max": 200,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when its old canopy along Via Irnerio turns a single uniform gold"
+      },
+      "location": {
+        "address": "Orto Botanico ed Erbario, Via Irnerio 42, 40126 Bologna",
+        "latitude": 44.4994086,
+        "longitude": 11.3527316,
+        "neighbourhood": "Irnerio"
+      },
+      "story": "Bologna's botanical garden traces its founding to 1568, when the naturalist Ulisse Aldrovandi established it as one of the earliest such gardens anywhere in Europe, decades before ginkgo itself had even reached the continent. This specimen, an old female tree with a trunk 80cm across, came later, among the first ginkgos planted anywhere in Italy after the species reached European cultivation in the 18th century, brought from a mountainous pocket of southeast China where it had survived, essentially unchanged, for some 200 million years. It now dominates the garden's front section along Via Irnerio, included on the Emilia-Romagna region's own list of protected monumental trees for its size and age within a collection built primarily around gymnosperms, cone-bearing trees, from across Europe and Asia. Ginkgo biloba is famously resistant to disease, pollution and even fire in a way few other large trees can match, a resilience this specimen shares with every ginkgo on this list without needing any specific incident to prove it.",
+      "verified_sources": [
+        "https://ortobotanicobologna.wordpress.com/1-giardino-anteriore/",
+        "https://ortobotanicobologna.wordpress.com/g-come-ginko-e-b-come-banano/"
+      ],
+      "access": "Small entry fee, Orto Botanico ed Erbario",
+      "transport": "10 min walk from Piazza Maggiore",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Existence and front-garden location corroborated by the garden's own dedicated blog page; regional monumental-tree listing mentioned in general coverage of Bologna's botanical garden. No individual planting date or precise dimensions found for this specimen. Pin tightened 2026-07-27: the only Ginkgo biloba tree node OpenStreetMap maps near the garden sits right at its southern boundary; kept `approximate` since it isn't tied to an individual accession record from the garden's own collection. 2026-07-29: three iNaturalist Ginkgo biloba observations found within about 100m of the pin, but two are CC-BY-NC and one has no license set at all (null, meaning all-rights-reserved by default); genuine dead end on license grounds.",
+      "location_precision": "approximate",
+      "paid_entry": true
+    },
+    {
+      "id": "bol_008",
+      "name": "The Cypress of Carducci's Tomb",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "undated, mature",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Certosa di Bologna, Via della Certosa 18, 40133 Bologna",
+        "latitude": 44.4956629,
+        "longitude": 11.3098311,
+        "neighbourhood": "Saragozza"
+      },
+      "story": "A cypress stands directly over the granite tomb of Giosue Carducci in the Certosa di Bologna, one of the tallest and most immediately recognisable trees within a cemetery field otherwise dominated by low funerary monuments, and it has become known simply as the poet's own cypress. Carducci, who became the first Italian to win the Nobel Prize in Literature in 1906, is buried in a section of the Certosa reserved for his memory, his surname cut into a single block of stone with no other ornament, a deliberate austerity that the cypress towering behind it makes considerably more dramatic than the monument alone would manage. The Certosa itself, a working cemetery since 1801 built on the site of a 14th century Carthusian monastery, is regarded as one of Europe's great open-air museums of funerary sculpture, some 30 hectares holding roughly 6,000 works of historic and artistic interest, and cypress plantings run throughout its oldest sections, including a double row leading to the monastery's original entrance. This particular tree earns its own name for standing over the one grave in the entire complex that draws readers rather than art historians.",
+      "verified_sources": [
+        "https://www.bolognawelcome.com/it/luoghi/piazze-vie-monumenti/certosa-di-bologna---cimitero-storico-monumentale",
+        "https://it.wikipedia.org/wiki/Cimitero_monumentale_della_Certosa_di_Bologna"
+      ],
+      "access": "Free, public cemetery",
+      "transport": "Bus to Certosa, or 20 min walk from Porta Saragozza",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Carducci's burial location and the Certosa's own history corroborated across two independent sources. No individual age or planting date documented for the specific cypress; presented as a broad mature estimate. Photo verified directly: shows Carducci's named tomb flanked by tall columnar cypresses, a clear match to the described setting. Pin corrected by about 550m 2026-07-27: the prior coordinate was just the cemetery's main-gate address, not the grave itself, inside a 30-hectare complex. Moved to the tomb's own Wikidata-sourced coordinate (rank \"preferred\", cross-referenced to an OSM node named `Tomba di Giosue Carducci`), which this entry's own already-cited sources describe the cypress as standing directly over; the cypress itself isn't independently geotagged, but its position relative to the tomb was already an established, sourced fact before this pass.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bol_009",
+      "name": "The Himalayan Cedar of Villa Ghigi",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "undated, mature",
+      "age_min": 80,
+      "age_max": 140,
+      "location": {
+        "address": "Parco di Villa Ghigi, Via San Mamolo 105, 40136 Bologna",
+        "latitude": 44.4764907,
+        "longitude": 11.3289668,
+        "neighbourhood": "Colli Bolognesi"
+      },
+      "story": "This cedar was planted by Callisto Ghigi himself when he first acquired the hillside property that still carries his family's name, and it now dominates the meadow directly in front of the villa, tall enough that local photographers treat it as the park's single most reliable subject. Villa Ghigi sits just outside Porta San Mamolo on Bologna's southern hills, opened to the public by the city in 1974 and now spanning some 30 hectares of former agricultural land, old orchard rows of cherry, pear, apple and fig trees still legible in the landscape alongside century-old beech groves and native downy oaks. The cedar itself has been measured at 159cm in diameter and roughly 24 metres tall, and shows visible lightning-strike scarring on part of its crown, damage it has carried rather than been felled by. Its position on the open lawn in front of the villa gives visitors one of the clearest unobstructed views of any single tree on this list, framed against the hillside panorama over Bologna's historic centre that the whole park is known for.",
+      "verified_sources": [
+        "https://www.ilrestodelcarlino.it/bologna/cosa-fare/sch-foliage-mappa-luoghi-magici-drcxqcwa/villa-ghigi-e-il-cedro-dellhimalaya-da-immortalare-in-uno-scatto",
+        "https://commons.wikimedia.org/wiki/Category:Villa_Ghigi_(Bologna)_-_Cedro_dell%27Himalaya"
+      ],
+      "access": "Free, public park",
+      "transport": "15 min walk uphill from Porta San Mamolo",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Cedro_dell%27Himalaya_nel_Parco_di_Villa_Ghigi.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ugeorge, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3000,
+        "height": 2000
+      },
+      "curation_status": "flagged",
+      "notes": "Callisto Ghigi planting attribution and general park history from a dedicated local-press feature; dimensions (159cm diameter, 24m height) and lightning-damage detail from the tree's own Wikimedia Commons category structured data. No individual planting date documented. Photo found 2026-07-28, correctly inside the dedicated 'Villa Ghigi (Bologna) - Cedro dell'Himalaya' Commons category this entry already cites as a source (unlike the earlier search-surfaced candidates that turned out to be the Vallerano mixup, flagged and avoided). Viewed directly: a single large Cedrus deodara with the species' characteristic drooping habit, standing on an open lawn behind the same split-rail wooden fence visible in the park's other confirmed photos, with a hilltop villa in the distance, matching the story's own description of its position on the open lawn. Approved. Location confirmed 2026-07-27: an OpenStreetMap tree node tagged `denotation=natural_monument` with a MASAF national-registry reference (`ref:masaf=08/A944/BO/08`) and the same Commons category name, resolving the Vallerano mixup: this node is unambiguously the Bologna specimen, not the same-species tree elsewhere.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bol_010",
+      "name": "The Camphor of San Michele in Bosco",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "undated, mature",
+      "age_min": 80,
+      "age_max": 130,
+      "location": {
+        "address": "Parco di San Michele in Bosco, Via Giulio Cesare Pupilli 1, 40136 Bologna",
+        "latitude": 44.4795,
+        "longitude": 11.3411,
+        "neighbourhood": "San Michele in Bosco"
+      },
+      "story": "The garden surrounding the Rizzoli hospital splits into two distinct characters, and this camphor grows in the gentler of the two: a western section mixing old oaks, holm oaks, cypresses, lindens and horse chestnuts into something closer to an informal woodland than a designed garden, in contrast to the dense conifer forest of cedars and black pines covering the site's eastern slope. Cinnamomum camphora is native to East Asia and reached Italian institutional gardens through the same 19th century acclimatisation wave that filled Naples, Rome and other cities with newly fashionable evergreen imports, valued for the camphor oil its wood and leaves produce and for a dense, glossy canopy that holds its colour through the Bolognese winter. Its exact planting date is not recorded, folded into the general landscaping the hospital's founders carried out around 1896 rather than documented tree by tree, but it shares the same hillside history as San Michele in Bosco's Himalayan cedar: monastery ground, briefly royal, now medical, with the trees the one constant through every change of use.",
+      "verified_sources": [
+        "https://turismo.bologna.it/il-parco-di-san-michele-in-bosco/",
+        "https://www.bolognawelcome.com/it/luoghi/parchi-e-giardini/parco-di-san-michele-in-bosco"
+      ],
+      "access": "Free, hospital park (check visiting hours)",
+      "transport": "10 min walk uphill from Porta San Mamolo",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "General presence of camphor and mixed evergreen planting in the park's western section corroborated across two independent tourism-authority sources; neither names one specific individual camphor tree with its own measurements, so this entry describes the species' documented presence in the park rather than a singled-out specimen, the honest framing used elsewhere on this site for similar cases. 2026-07-29: checked the full upload history of Aneta Malinowska, the Wiki Loves Monuments photographer whose dedicated Bologna monumental-tree series supplied photos for bol_001, bol_002, bol_005 and bol_006 this same session; no camphor or San Michele in Bosco park file in her uploads. Genuine dead end for now.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bol_011",
+      "name": "The Grey Walnut of the Botanical Garden",
+      "species": "Butternut (Juglans cinerea)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Orto Botanico ed Erbario, Via Irnerio 42, 40126 Bologna",
+        "latitude": 44.501272,
+        "longitude": 11.354117,
+        "neighbourhood": "Irnerio"
+      },
+      "story": "Bologna's grey walnut is the only Juglans cinerea recorded anywhere on Italy's national register of monumental trees, one specimen among more than 4,500 entries. It grows in the university's botanical garden on Via Irnerio, close to the ginkgo at the garden's front section, and stands 32 metres tall, a serious height for a species native to the river valleys of the eastern United States and Canada rather than to Italy. The regional register measures its girth at 4.2 metres; university-cited press coverage of a 2025 conservation project puts it nearer 4.7, and neither figure has been reconciled here, so both are recorded rather than one invented winner.\n\nThat conservation project is the tree's real story right now. Professor Alberto Minelli of the university's agro-food science department began a five-year programme in February 2025 to monitor a specimen the garden's own curator, Umberto Mossetti, describes as living in an extremely delicate balance with what surrounds it: reached what the university calls an irreversible aging phase, vulnerable to parasites and disease, and under added pressure from a changing climate. Nobody has recorded when it was planted. What is on record is that the university is treating its survival as a live question rather than a settled fact, five years of advanced diagnostics and soil analysis aimed at keeping the only tree of its kind on Italy's whole register standing a while longer.",
+      "verified_sources": [
+        "Emilia-Romagna regional monumental trees register (Cedro dell'Atlante file adjacent; walnut sheet locality Via Irnerio, girth 420cm, height 32.5m, urban)",
+        "https://sestopotere.com/salvate-il-noce-cenerino-lalma-mater-lancia-un-progetto-speciale-per-la-cura-del-suo-albero-monumentale/",
+        "https://visitupbologna.com/2025/02/18/noce-cenerino-il-progetto-di-salvaguardia-nellorto-botanico-di-bologna/"
+      ],
+      "access": "Small entry fee, Orto Botanico ed Erbario",
+      "transport": "10 min walk from Piazza Maggiore",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Surfaced 2026-08-12 via the italy-masaf.json register (sheet Via Irnerio, name_it 'Noce grigio'), coordinate ~230m from the already-published bol_007 ginkgo, both inside the same Orto Botanico. Two independent press sources (Sestopotere, a Bologna news site, and Visitupbologna, an independent tourism guide) both citing university staff (curator Umberto Mossetti, professor Alberto Minelli) corroborate the tree's existence, species, 32m height and the ongoing conservation project, confirming it is alive now (an 'irreversible aging phase' under active five-year monitoring to preserve it, not a dead tree). GIRTH DISCREPANCY, stated honestly rather than resolved: the region's register gives 420cm, the two press sources both give approximately 471cm (independently matching each other, likely both citing the same university figure, distinct from the register's own survey). No age or planting date found anywhere. Access/transport copied from bol_007 for consistency, same location.",
+      "location_precision": "approximate",
+      "height_m": 32.5,
+      "verify_notes": "Height 32.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "paid_entry": true,
+      "girth_cm": 420
+    },
+    {
+      "id": "bol_012",
+      "name": "The Atlas Cedar of Villa delle Rose",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Villa delle Rose, Via Saragozza 228/230, Bologna",
+        "latitude": 44.489817,
+        "longitude": 11.314267,
+        "neighbourhood": "Saragozza"
+      },
+      "story": "Five metres forty-five around the trunk, thirty-two metres tall, and it grows in the garden of an art gallery. Villa delle Rose stands on Via Saragozza, the long road running out of the city towards the portico that climbs to San Luca, and the villa is now one of the two homes of Bologna's Galleria d'Arte Moderna. Its gardens are free to walk into, but they keep the gallery's hours rather than a park's, so this is a tree with an opening time.\n\nThe cedar is the largest thing in them. Cedrus atlantica comes from the Atlas Mountains of Morocco and Algeria, cold forest on thin soil above a thousand metres, where the remaining stands are shrinking and the species is now listed as endangered in its own range. In a walled Bolognese garden it has had none of that difficulty, and the size shows. It carries the flat, slightly ascending plates of foliage that a cedar only makes when it has been given room, so the crown reads as a stack of dark tiers.\n\nNothing dates it. The national monumental tree register carries the girth and the height and no age at all, and no second source names it, so the honest answer is that it is large enough to be protected and nobody has published a number. Bologna's two other registered cedars are both deodars, up on the hills south of the centre. This one you can reach on a bus.",
+      "verified_sources": [
+        "data/registers/italy-masaf.json (sheet 05/A944/BO/08, CC BY 4.0)"
+      ],
+      "access": "Free public gardens, gallery hours (Galleria d'Arte Moderna, Villa delle Rose)",
+      "transport": "Via Saragozza; bus 13 or a walk up from Porta Saragozza",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "height_m": 32.0,
+      "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "girth_cm": 545
+    }
+  ]
 }
