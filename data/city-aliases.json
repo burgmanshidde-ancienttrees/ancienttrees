@@ -152,6 +152,10 @@
       "Asizo",
       "Assizi"
     ],
+    "atami": [
+      "Atamis",
+      "Atami-chhī"
+    ],
     "athens": [
       "Athene",
       "Athen",
@@ -1173,6 +1177,9 @@
       "Hūsestūn",
       "Youstòn"
     ],
+    "ichinohe": [
+      "Ichinohe-machi"
+    ],
     "iga": [
       "Iga-chhī",
       "Iga-shi"
@@ -1624,6 +1631,9 @@
       "Nagano-chhī",
       "Naqano"
     ],
+    "nagi": [
+      "Nagi-chō"
+    ],
     "nago": [
       "Nago Shi",
       "Nago-chhī"
@@ -1737,6 +1747,11 @@
     ],
     "oahu": [
       "ma lili Owaju"
+    ],
+    "odawara": [
+      "Odavara",
+      "Odawara-chhī",
+      "Odaŭara"
     ],
     "ofunato": [
       "Ofunatas",
@@ -2724,6 +2739,7 @@
     "arnhem": "Arnhem",
     "assen": "Assen",
     "assisi": "Assisi",
+    "atami": "Atami",
     "athens": "Athens",
     "athens-georgia": "Athens, Georgia",
     "auckland": "Auckland",
@@ -2843,6 +2859,7 @@
     "hong-kong": "Hong Kong",
     "hoorn": "Hoorn",
     "houston": "Houston",
+    "ichinohe": "Ichinohe, Iwate",
     "iga": "Iga, Mie",
     "istanbul": "Istanbul",
     "iwata": "Iwata, Shizuoka",
@@ -2899,6 +2916,7 @@
     "motosu": "Motosu, Gifu",
     "munich": "Munich",
     "nagano": "Nagano (city)",
+    "nagi": "Nagi, Okayama",
     "nago": "Nago",
     "nagoya": "Nagoya",
     "naha": "Naha",
@@ -2912,6 +2930,7 @@
     "nikaho": "Nikaho, Akita",
     "nuremberg": "Nuremberg",
     "oahu": "Oʻahu",
+    "odawara": "Odawara",
     "ofunato": "Ōfunato",
     "oklahoma-city": "Oklahoma City",
     "okuizumo": "Okuizumo",
@@ -3058,6 +3077,7 @@
     "neba": "no article within 40 km, tried Neba (Neba, no coordinates, disambiguation page); Neba, Japan; search: Toyota, Aichi; search: New Japan Cup; search: List of villages in Japan",
     "olympic-national-park": "no article within 40 km, tried Olympic National Park (Olympic National Park, 75 km away); Olympic National Park, United States; search: Park City, Utah; search: List of national parks of the United States; search: Olympic National Park",
     "ono": "no article within 40 km, tried Ono (Ono, no coordinates, disambiguation page); Ono, Japan (Ono, Hyōgo, 580 km away); search: Jiro Ono; search: Masanosuke Ono; search: Yoko Ono",
+    "ora": "no article within 40 km, tried Ora (Ora, no coordinates, disambiguation page); Ora, Japan; search: Rita Ora; search: Ora (Rita Ora album); search: Phoenix (Rita Ora album)",
     "reinborn": "no article within 40 km, tried Reinborn; Reinborn, Germany; search: List of mountains and hills of the Taunus",
     "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess.",
     "trainiskis": "no article within 40 km, tried Trainiškis; Trainiškis, Lithuania",
