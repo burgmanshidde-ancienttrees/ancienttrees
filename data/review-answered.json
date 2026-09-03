@@ -38,8 +38,8 @@
       "at": "2026-09-02T11:25:10+00:00"
     },
     "2026-09-03": {
-      "note": "Fixed both: two country meta_descriptions (Denmark 167, UK 162 chars) that broke the smoke test build, and the Home.swift hero tagline goldInk/gold contrast regression, reverted to match HeroCover.swift",
-      "at": "2026-09-03T11:53:51+00:00"
+      "note": "Home.swift hero tagline WARN: already fixed upstream before this run, line 274 is Brand.gold (verified in source), matching HeroCover.swift as the finding recommended",
+      "at": "2026-09-03T13:16:08+00:00"
     }
   }
 }
