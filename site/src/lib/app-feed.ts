@@ -136,7 +136,17 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
               // Card size and full-width size, resolved here so no client
               // needs to know how Wikimedia names a thumbnail.
               thumb: absolute(thumbUrl(p.url, 500)),
-              hero: absolute(thumbUrl(p.url, 960)),
+              // 1280, not 960. A hero fills the width of the phone, which is
+              // about 1180 physical pixels on a 3x screen, and 960 was not a
+              // considered choice: it was the largest Wikimedia width anyone
+              // here had probed. 1280 and 1920 are served too (re-probed
+              // 2026-09-03), so the cap was ours rather than theirs.
+              //
+              // Only the hero moves. A hero is one image on one screen and
+              // never bursts, which is why it may come straight from Wikimedia;
+              // the card is what a shelf loads by the dozen and it stays on our
+              // own domain at the width we host.
+              hero: absolute(thumbUrl(p.url, 1280)),
               credit_required: creditRequired(p.license),
               // The name as it should be PRINTED, host dropped. The trimming
               // rule lived in Swift and the website printed the long form, so

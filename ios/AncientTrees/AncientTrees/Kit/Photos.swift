@@ -19,8 +19,9 @@
 import Foundation
 
 public enum Photos {
-    /// The buckets Wikimedia actually serves. 400 and 800 are 400s.
-    private static let wikimediaBuckets = [250, 330, 500, 960]
+    /// The buckets Wikimedia actually serves, re-probed 2026-09-03:
+    /// 320/400/640/800/1000/1024/1600/2000/2560 all return 400.
+    private static let wikimediaBuckets = [250, 330, 500, 960, 1280, 1920]
 
     public static func thumb(_ url: String, width: Int) -> URL? {
         if url.contains("upload.wikimedia.org/wikipedia/commons/"), !url.contains("/thumb/"),
