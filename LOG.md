@@ -9,6 +9,37 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 - Oslo kommune answers, and the answer was inside a PDF
+
+Bymiljoetaten replied to the 2026-08-10 mail (case 22/35801-52, Bianca
+Soyland, Parkforvaltning). The mail body is two words, "Se vedlegg", and
+everything is in the attachments: a formal letter and three photographs of
+Birkelunden. That is why it read as empty. `outreach_inbox.py --read` now
+prints the attachment names under a body, because a public agency answering
+by letter is normal rather than rare, and printing "Se vedlegg" alone said
+nothing at all.
+
+WHAT THEY SAID. No photographs of Munch-eika, and it is not managed by their
+department, which is a lead about who does. For Birkelunden, three
+photographs we are welcome to use, with the caveat that matters: they did
+not take them, and the photographer's name is in the file name. Two are by
+Ingar Sorensen, one is credited VisitOSLO / Tord Baklund.
+
+WHY NOTHING IS PUBLISHED YET. They are passing on photographs they do not
+own, so their permission is not the rights holder's permission, and hard
+rule 4 wants a verified licence and attribution. The files are held in
+`drafts/incoming/oslo-bymiljoetaten/` and the reply asks the one question
+that settles it: may we credit Ingar Sorensen, or should we ask him
+ourselves. Oslo publishes four trees and has no photograph at all, so this
+would be its first.
+
+Looked at all three. The Sorensen path shot and the VisitOSLO one score OK
+on `photo_light.py`; the closer Sorensen frame, which is the better
+composition for an ensemble entry, scores POOR on flatness, an overcast day
+rather than a dark one.
+
+FOR HIDDE: `drafts/reply-oslo-bymiljoetaten.md` is ready to send.
+
 ## 2026-09-03 - The map opens where you are, on the FIRST launch too
 
 Hidde, from the app: "op de eerste open toen ik mn locatie had gedeeld bleef

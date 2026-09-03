@@ -98,6 +98,24 @@ def decode(s):
         return s or ""
 
 
+def attachment_names(msg):
+    """The file names hanging off a message.
+
+    Added 2026-09-03, because a reply arrived whose entire body was "Se
+    vedlegg". Oslo kommune answers by formal letter: the mail carries two
+    words and a PDF, and the PDF held the answer plus three photographs of
+    Birkelunden we had asked for. Printing the body alone said nothing at
+    all, and a public agency writing that way is normal rather than rare."""
+    out = []
+    if not msg.is_multipart():
+        return out
+    for part in msg.walk():
+        fn = part.get_filename()
+        if fn:
+            out.append(decode(fn))
+    return out
+
+
 def body_of(msg, limit=4000):
     if msg.is_multipart():
         for part in msg.walk():
@@ -201,9 +219,15 @@ def main():
         if read_bodies:
             ok, raw = d.fetch(i, "(BODY.PEEK[])")
             if ok == "OK" and raw and raw[0]:
+                msg = email.message_from_bytes(raw[0][1])
                 print("    ---")
-                for line in body_of(email.message_from_bytes(raw[0][1])).splitlines():
+                for line in body_of(msg).splitlines():
                     print("    " + line)
+                names = attachment_names(msg)
+                if names:
+                    print(f"    ATTACHMENTS ({len(names)}), not read here:")
+                    for n in names:
+                        print(f"      {n}")
         print()
     # WHAT HE ALREADY ANSWERED HIMSELF. Added 2026-08-23 because the first
     # version read INBOX only, so every thread Hidde had replied to by hand
