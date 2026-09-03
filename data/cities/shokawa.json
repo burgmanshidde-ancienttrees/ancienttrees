@@ -1,0 +1,64 @@
+{
+  "city": "Shokawa",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Shokawa maps two trees that are really one story: the Shokawa-zakura, a pair of Edohigan cherries moved here whole in 1960 to save them from a dam. The operation was called unprecedented in the world's tree-planting history at the time, and both cherries took root and are still blooming together. Published alone here because the trees themselves are the destination, not because Shokawa's research is finished.",
+  "meta_description": "Shokawa-zakura: two 450-year-old cherries saved from a dam by moving them whole in 1960, free above Miboro Lake, Gifu, Japan.",
+  "question_meta": "Shokawa's oldest mapped trees are the Shokawa-zakura, two centuries-old cherries moved whole to save them from a dam, free above Miboro Lake.",
+  "question_answer": "Shokawa's oldest mapped trees are the Shokawa-zakura, two Edohigan cherries (Prunus itosakura) roughly 450 to 500 years old. They stand together on a viewpoint above Miboro Lake in Shokawa, a district of Takayama, Gifu Prefecture, having been transplanted here whole in 1960 from two temple grounds the reservoir was about to flood.",
+  "question_context": "The two cherries once stood at separate temples, Shoren-ji and Koren-ji, in a valley due to disappear under the Miboro Dam's reservoir. Jpower's first president pushed to save them rather than let them drown, and the gardener who agreed, after initially refusing, moved both mature trees intact to this new viewpoint above the future lake. Contemporary accounts called the scale of the operation unprecedented anywhere in the world, and it drew sharp criticism at the time for how brutal the process looked. Both trees took root in spring 1961 and were formally named Shokawa-zakura the following year. They still bloom together every late April into early May, with evening illumination during the season, and draw roughly 50,000 visitors a year, a genuine destination rather than a roadside curiosity. Girth runs about 6 metres each and height about 20 metres. The site fails the day-trip boundary from Takayama itself, roughly 30 to 40 minutes by car via the Tokai-Hokuriku Expressway, which is why it is mapped as its own place rather than folded into a future Takayama page. Free admission, parking on site, no bus route confirmed.",
+  "hero_tree_id": "sho_001",
+  "oldest_tree_id": "sho_001",
+  "faq": [
+    {
+      "q": "What are the oldest trees in Shokawa?",
+      "a": "The Shokawa-zakura, two Edohigan cherries roughly 450 to 500 years old, standing together on a viewpoint above Miboro Lake."
+    },
+    {
+      "q": "Why were they moved?",
+      "a": "Both stood at temples due to be flooded by the Miboro Dam's reservoir. In 1960 they were transplanted whole to higher ground rather than left to drown, an operation called unprecedented in scale at the time."
+    },
+    {
+      "q": "When do they bloom?",
+      "a": "Late April into early May, with evening illumination during the flowering period. About 50,000 people visit each year."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The park is free with on-site parking, about 30 to 40 minutes by car from central Takayama."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sho_001",
+      "name": "The Shokawa-zakura",
+      "species": "Edo-higan Cherry (Prunus itosakura)",
+      "age_estimate": "roughly 450 to 500 years",
+      "age_min": 450,
+      "age_max": 500,
+      "girth_cm": 600,
+      "height_m": 20,
+      "location": {
+        "address": "Shokawa-zakura Park, 770-1 Nakano, Shokawa-cho, Takayama, Gifu Prefecture, Japan",
+        "latitude": 36.078891,
+        "longitude": 136.946762,
+        "neighbourhood": "Shokawa, overlooking Miboro Lake"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E8%8D%98%E5%B7%9D%E6%A1%9C",
+        "https://www.kankou-gifu.jp/spot/detail_1249.html",
+        "https://www.city.takayama.lg.jp/shisetsu/1004139/1000036/1001612.html"
+      ],
+      "access": "Free, no permission needed. A public park (Shokawa-zakura Park) on a viewpoint above Miboro Lake, open all day, with on-site parking. No confirmed public bus route to the site.",
+      "transport": "About 30 to 40 minutes by car from central Takayama via the Tokai-Hokuriku Expressway (Shokawa IC) and National Routes 158/156; no rail connection.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two cherry trees stand together on a bluff above Miboro Lake, and neither one grew here. Both were transplanted whole in 1960, roots and all, from temple grounds a few kilometres away that were about to disappear under a new dam's reservoir.\n\nThe man who pushed for it was Jpower's first president, and the gardener he needed, Shintaro Sasabe, turned him down at first. He changed his mind, found a second tree to save alongside the first, and set out to move two mature Edohigan cherries, each with a trunk about six metres round, without killing them. Contemporary accounts describe the scale of the operation as unprecedented anywhere in the world, and the sight of two centuries-old trees being hauled to new ground drew real criticism for how brutal it looked in progress.\n\nBoth took root in the spring of 1961. In June the following year they were given a joint name, Shokawa-zakura, and the valley they came from is now underwater. They still bloom together every year in late April, lit in the evenings through the flowering weeks, and around fifty thousand people make the trip to see them.\n\nAt roughly 450 to 500 years old, they were already grown trees when they were young by dam standards. Moving them did not stop them from being old.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
