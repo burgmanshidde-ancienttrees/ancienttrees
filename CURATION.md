@@ -10,6 +10,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-03 (continuation run 7) - Submission #63: a "worth it" vote on Utrecht's Oude Hortus Ginkgo, no action needed
+
+Same shape as the Amsterdam #40, Sardinia #39 and Rome precedents already in this file: a plain positive vote (`kind: feedback`, `why: "worth it"`, from the app) on utr_002, no free-text complaint and nothing to check against sources. Set `outcome: holds`, no reply sent, nothing changed in `data/cities/utrecht.json`. Marked processed in `data/submissions-processed.json`.
+
 ## 2026-09-03 (continuation run 7, following an attempt that shipped 3 trees and stopped after 55 min with 65 unspent) - Oahu +3 (paid ratio 75% to 55%), Llangernyw and Matera open
 
 Followed the harness's own order: released nothing standing (one live `oahu` verify claim from the prior attempt in this window, picked up rather than released). Dispatched three parallel/sequential verify passes across the window rather than one, since each was independently bounded and cheap to check.
