@@ -38,7 +38,7 @@ import mvt  # noqa: E402
 
 OUT = os.path.join(ROOT, "data", "registers", "lithuania-stvk-gpo.json")
 TILE = "https://stvk.lt/tiles/maps/stvk/%d/%d/%d.pbf"
-UA = "AncientTrees/1.0 (https://ancienttrees.app; burgmans.hidde@gmail.com)"
+UA = "AncientTrees/1.0 (https://ancienttrees.app; info@ancienttrees.app)"
 Z = 11
 # Lithuania's bounding box, generous at the edges.
 BBOX = (53.80, 20.85, 56.55, 26.95)   # south, west, north, east

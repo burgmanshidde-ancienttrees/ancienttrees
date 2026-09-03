@@ -56,6 +56,7 @@ Usage:
 import datetime
 import json
 import os
+import re
 import smtplib
 import sys
 from email.message import EmailMessage
@@ -101,6 +102,38 @@ def main():
         missing = [k for k, v in creds.items() if not v]
         print(f"REFUSED: missing environment: {', '.join('OUTREACH_' + m for m in missing)}")
         return 1
+
+    # NOTHING GOES OUT UNDER HIS PERSONAL ADDRESS (Hidde, 2026-09-03: "ik wil
+    # nooit meer burgmans.hidde ergens zien"). PRINCIPLES.md #10 has said since
+    # July that contact runs through a brand address, and until today the
+    # domain had no mailbox, so every outreach mail carried his private Gmail
+    # into a stranger's address book. info@ancienttrees.app receives as of
+    # 2026-09-03, so the excuse is gone and this is a refusal rather than a
+    # note. Deliberately checked against the DOMAIN and not one address, so a
+    # second alias needs no edit here.
+    #
+    # What this cannot see: Gmail silently rewrites From to the account it
+    # authenticated as, unless that alias is verified under "Send mail as".
+    # So a green run here is not proof; the proof is one delivered mail read
+    # back, which is why the first batch after a From change gets looked at.
+    if really:
+        # Read the RAW string rather than trusting parseaddr, because the
+        # value that was live when this was written, "Hidde, Ancient Trees
+        # burgmans.hidde@gmail.com", has an unquoted comma in the display
+        # name and parseaddr returns nothing at all for it. That still fails
+        # shut, which is the right direction, but it printed an empty address
+        # back and made the refusal unreadable. Every address in the string
+        # has to be on the domain, so a stray second one cannot slip past.
+        found = re.findall(r"[\w.+-]+@[\w.-]+", creds["FROM"] or "")
+        addr = ", ".join(found) or (creds["FROM"] or "").strip()
+        if not found or not all(a.lower().endswith("@ancienttrees.app")
+                                for a in found):
+            print(f"REFUSED: OUTREACH_FROM is {addr!r}. Outreach goes out from "
+                  f"the domain, never a personal address. Fix the FROM line in "
+                  f"~/.ancienttrees-mail.env, and check that Gmail has that "
+                  f"alias verified under Settings, Accounts, 'Send mail as', "
+                  f"or it will rewrite the From back without telling anyone.")
+            return 1
 
     server = None
     results = []

@@ -280,6 +280,20 @@ def main():
               % ", ".join(k for k, v in creds.items() if not v))
         really = False
 
+    # THE BRAND ADDRESS, NEVER HIS OWN (Hidde, 2026-09-03: "ik wil nooit meer
+    # burgmans.hidde ergens zien"). A reader who sends a tree gets an answer
+    # from Ancient Trees, not from a private Gmail, which is PRINCIPLES.md #10
+    # and was simply impossible until info@ancienttrees.app started receiving
+    # today. It degrades to a dry run rather than raising, for the reason the
+    # comment further down gives: this runs inside the digest workflow, and a
+    # mail problem must never take the day's numbers with it.
+    _from_addrs = re.findall(r"[\w.+-]+@[\w.-]+", creds["FROM"] or "")
+    if really and not (_from_addrs and all(
+            a.lower().endswith("@ancienttrees.app") for a in _from_addrs)):
+        print("contributor_reply: OUTREACH_FROM is not an @ancienttrees.app "
+              "address; dry run only. Replies go out as Ancient Trees.")
+        really = False
+
     try:
         sent_log = json.load(open(SENT_PATH))
     except Exception:

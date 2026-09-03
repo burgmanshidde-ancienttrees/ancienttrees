@@ -40,7 +40,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 OUT = os.path.join(ROOT, "data", "research", "arcgis-register-sweep.json")
 SEARCH = "https://www.arcgis.com/sharing/rest/search"
-UA = "AncientTrees/1.0 (https://ancienttrees.app; burgmans.hidde@gmail.com)"
+UA = "AncientTrees/1.0 (https://ancienttrees.app; info@ancienttrees.app)"
 
 # The words a government actually uses on a tree register, in the languages
 # where ArcGIS is common. Deliberately NOT "tree" alone: that returns street
