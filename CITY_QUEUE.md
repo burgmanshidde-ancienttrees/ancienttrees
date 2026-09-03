@@ -268,7 +268,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 71 | Melbourne | 11.85 | 267,898 | 12 | - | 2 | 397 | 30 | measured |
 | 72 | Sydney | 17.32 | 305,304 | 6 | - | - | - | 30 | measured |
 | 73 | Daytona Beach | 17.66 | - | - | - | - | - | 10 | predicted (travel demand) |
-| 74 | Porto | 8.81 | 120,415 | 27 | 10 | 2 | 40 | 20 | measured |
+| 74 | Porto | 8.81 | 120,415 | 27 | 14 | 2 | 40 | 20 | measured |
 | 75 | Sorrento | 8.51 | 40,049 | 6 | - | 1 | 20 | 20 | measured |
 | 76 | Bordeaux | 11.24 | 156,201 | 10 | - | 2 | 211 | 20 | measured |
 | 77 | Chattanooga | 16.68 | - | - | - | - | - | 10 | predicted (travel demand) |
