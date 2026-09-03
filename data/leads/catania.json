@@ -1,6 +1,57 @@
 {
-  "leads": [],
+  "leads": [
+    {
+      "name": "Quercia Dante (Quercia castagnara, Piazza Dante Alighieri)",
+      "species": "Quercus virgiliana (Ten.) Ten.",
+      "girth_cm": 350,
+      "height_m": 12,
+      "location": {
+        "latitude": 37.573611,
+        "longitude": 15.0575,
+        "address": "Piazza Dante Alighieri, Mascalucia, CT"
+      },
+      "source": "italy-masaf register (sheet_id 01/F005/CT/19, girth 350cm, height 12m); corroborated by https://www.etnanatura.it/paginasentiero.php?nome=Quercia_Dante",
+      "reason": "verified as real, alive-and-visited (etnanatura.it shows ongoing 2026 visit traffic) and on genuinely public ground (a town-centre piazza), but held as a lead rather than delivered: Mascalucia is 7.2km from Catania's centre and the AST bus route between them runs 35-40 minutes, over the ~30 minute day-trip boundary this project applies before presenting an out-of-town tree as part of a city's page. Mascalucia is not on our city queue at all, so this is the raw material for a future stand-alone Mascalucia entry rather than a Catania addition. No age documented; none invented."
+    },
+    {
+      "name": "Olivo di Contrada Gebbia (the millennial olive)",
+      "species": "Olea europaea L.",
+      "girth_cm": 830,
+      "height_m": 8,
+      "location": {
+        "latitude": 37.508335,
+        "longitude": 14.970475,
+        "address": "Via dell'Ulivo Millenario, Contrada Gebbia, Motta Sant'Anastasia, CT"
+      },
+      "source": "italy-masaf register (sheet_id 01/F781/CT/19, girth 830cm); corroborated by https://www.lasiciliainrete.it/directory-tangibili/listing/olivo-di-contrada-gebbia/ and https://luoghi.italianbotanicalheritage.com/en/the-centuries-old-olive-tree-in-motta-santanastasia/ (age given only as \"supposed to be between 1,000 and 1,200 years old\", no basis stated, so repeated as vaguely as the source gives it and not sharpened)",
+      "reason": "held as a lead on two independent grounds, either one enough on its own. (1) Distance/transport: Motta Sant'Anastasia is 10km from Catania's centre with no passenger rail connection and roughly a 1-hour bus trip, well past the ~30 minute day-trip boundary. (2) Access is not confirmed: italianbotanicalheritage.com places it \"inside the almond and olive grove outside Contrada Gebbia\" and gives only driving directions to the vicinity, with no stated public path or visiting arrangement, so 'can a visitor get in without asking anyone's permission' cannot be answered honestly yet. Motta Sant'Anastasia is not on our city queue; this is raw material for a future stand-alone entry, contingent on an access answer, not a Catania addition."
+    },
+    {
+      "name": "Other Etna-foothill register trees near Catania (unresearched this pass)",
+      "species": "various (Quercus pubescens x2 Trecastagni, Tipuana tipu + Ficus australis Paternò, Quercus pubescens Santa Venerina, Fagus sylvatica Zafferana Etnea)",
+      "location": {
+        "latitude": null,
+        "longitude": null,
+        "address": "Trecastagni, Paternò, Santa Venerina and Zafferana Etnea, Catania province"
+      },
+      "source": "italy-masaf register, sheet_ids 02/L355/CT/19, 01/G371/CT/19, 02/G371/CT/19, 02/I314/CT/19, 01/L355/CT/19 (13.3-19.2 km from Catania centre); not fetched this pass",
+      "reason": "not worked in depth: this verification pass's exposure budget (max 4 named candidates) went to the three nearer candidates above and the Acireale plane tree below. All five sit 13-19km from Catania in separate comuni, clearly past any honest day-trip framing for a Catania page, and none of these towns are on our city queue. Left as an unresearched pointer into the register rather than a judged lead; a future pass would need to verify each on its own two-source and access merits before it is even a lead."
+    }
+  ],
   "blocked": [
+    {
+      "name": "Platano di La Timpa",
+      "species": "Platanus x acerifolia (Aiton) Willd.",
+      "girth_cm": 350,
+      "height_m": 8,
+      "location": {
+        "latitude": 37.620189,
+        "longitude": 15.17354,
+        "address": "Via Santa Maria della Scala 21, Acireale, CT"
+      },
+      "source": "italy-masaf register (sheet_id 01/A028/CT/19, girth 350cm); detail record at https://www.lasiciliainrete.it/directory-tangibili/listing/platano-di-la-timpa-via-santa-maria-della-scala/ which states outright \"Proprieta: privata\" (property: private) with its own access-route field left blank",
+      "reason": "blocked: access. The register's own detail page states the tree stands on private property and gives no access route, so it fails the 'can they get in without asking anyone's permission' test outright, per the source itself rather than a guess. (Acireale's own transport is otherwise fine, a 10-16 minute direct regional train from Catania Centrale, so distance is not the issue here, access is.) Revisit only if a source later documents a public path or visiting arrangement."
+    },
     {
       "name": "Fico magnolioide of Villa San Saverio (Scuola Superiore di Catania)",
       "species": "Ficus macrophylla",

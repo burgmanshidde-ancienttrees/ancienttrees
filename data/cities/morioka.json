@@ -1,0 +1,63 @@
+{
+ "city": "Morioka",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Morioka maps one tree: Ishiwari-zakura, the Rock-Splitting Cherry, rooted directly inside a crack in a granite boulder on the grounds of the city's district court. Legend says lightning split the stone and a cherry seed later caught in the crack; what is measured rather than legend is a trunk forcing its way out of solid rock, judged to be 350 to 420 years old. It has held National Natural Monument status since 1923, survived a 1932 fire, and still blooms every April. Published alone here because the tree itself is the destination, not because Morioka's research is finished.",
+ "meta_description": "Ishiwari-zakura, Morioka: a cherry tree growing out of a split granite boulder at the district court, a National Natural Monument since 1923.",
+ "question_meta": "Morioka's oldest and only mapped tree is Ishiwari-zakura, the Rock-Splitting Cherry, growing from a granite boulder at the district court.",
+ "question_answer": "Morioka's only mapped tree, and its oldest, is Ishiwari-zakura, the Rock-Splitting Cherry, an Edo Higan cherry rooted directly inside a crack in a large granite boulder on the grounds of Morioka District Court, judged to be roughly 350 to 420 years old.",
+ "question_context": "The tree stands about 15 to 20 minutes on foot from JR Morioka Station, on the public grounds in front of the district courthouse, free to visit daily (dogs must stay outside). Legend says lightning split the boulder and a cherry seed later caught in the crack; what is measured rather than legend is a trunk about 4.3 metres round where it meets the stone. Japan designated it a National Natural Monument in 1923, among the earliest trees to receive that status. In 1932 a fire reached part of the courthouse and threatened the tree; a gardener, Fujimura Jitaro, wrapped the trunk in his own wet coat rather than let it burn, and it bloomed again the following spring. It flowers for roughly ten days each April, and the court adds bus parking for the crowds who come to see it. The tree is judged to be somewhere between 350 and 420 years old, a range rather than a fixed figure, because no source has settled on a single number.",
+ "hero_tree_id": "mor_001",
+ "oldest_tree_id": "mor_001",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Morioka?",
+   "a": "Ishiwari-zakura, the Rock-Splitting Cherry, an Edo Higan cherry judged to be roughly 350 to 420 years old, at Morioka District Court."
+  },
+  {
+   "q": "Why does it grow out of a rock?",
+   "a": "Legend says lightning split the granite boulder and a cherry seed later lodged in the crack; nobody has established exactly how the tree ended up rooted there, but the trunk now measures about 4.3 metres round at the point where it meets the stone."
+  },
+  {
+   "q": "Is it free to visit?",
+   "a": "Yes. It stands on the public grounds of Morioka District Court and is open to visitors daily; dogs must stay outside the grounds."
+  },
+  {
+   "q": "How do I get there?",
+   "a": "It is about 15 to 20 minutes on foot from JR Morioka Station."
+  }
+ ],
+ "trees": [
+  {
+   "id": "mor_001",
+   "name": "Ishiwari-zakura (The Rock-Splitting Cherry)",
+   "species": "Edo Higan Cherry (Prunus itosakura, syn. Cerasus spachiana)",
+   "age_estimate": "roughly 380 years",
+   "age_min": 350,
+   "age_max": 420,
+   "girth_cm": 430,
+   "location": {
+    "address": "Uchimaru 9-1, grounds of Morioka District Court, Morioka, Iwate Prefecture, Japan",
+    "latitude": 39.7039,
+    "longitude": 141.1512,
+    "neighbourhood": "Uchimaru"
+   },
+   "verified_sources": [
+    "https://www.city.morioka.iwate.jp/kankou/kankou/1037106/rekishi/1009335/1009340/1009348.html",
+    "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%89%B2%E6%A1%9C",
+    "https://www.city.morioka.iwate.jp/kankou/kankou/1037103/1037212/sakura/1007959.html"
+   ],
+   "access": "Free, on the public grounds of the Morioka District Court in front of the courthouse building; open to visitors daily, dogs must stay outside the grounds. No ticket, appointment or reception needed.",
+   "transport": "About 15-20 minutes on foot from JR Morioka Station.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "In 1932, fire tore through part of the Morioka District Court, and it looked as though it would take the cherry tree growing in the boulder in front of the building with it. A gardener named Fujimura Jitaro wrapped the trunk in his own wet coat rather than let it burn. It bloomed again the following spring.\n\nThe tree was already unusual before the fire. Legend says lightning split the granite boulder it grows from, and a cherry seed caught in the crack afterward, though nobody knows for certain how a tree ended up rooted half inside solid rock. What is certain is the result: a trunk about 4.3 metres round at the point where it meets the stone, forcing its way out of a fissure that offers it almost no soil.\n\nJapan designated it a National Natural Monument in 1923, one of the earliest trees to receive that status, and the courthouse still keeps the grounds open daily so the public can walk up and see it, dogs excepted. It is judged to be somewhere between 350 and 420 years old, and every April, for the roughly ten days it is in bloom, the court adds bus parking for the crowds. A functioning court of law that also runs a car park for cherry blossoms is not a common combination, and it says something about how seriously the tree is taken here.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}

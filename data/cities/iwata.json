@@ -1,0 +1,63 @@
+{
+ "city": "Iwata",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Iwata maps one tree: Yuya no Naga Fuji, a wisteria at Gyokoji Temple whose kanji name is usually read Kumano but is read locally as Yuya, after a court lady from the centuries-old Noh play named for her. Legend says she planted the vine herself in the late Heian period. It has held National Natural Monument status since 1932 and is the centre of an annual spring festival. Published alone here because the tree itself is the destination, not because Iwata's research is finished.",
+ "meta_description": "Yuya no Naga Fuji, Iwata: a centuries-old wisteria at Gyokoji Temple, named for the Noh play Yuya, a National Natural Monument since 1932.",
+ "question_meta": "Iwata's oldest and only mapped tree is Yuya no Naga Fuji, a wisteria at Gyokoji Temple tied to the Noh play Yuya.",
+ "question_answer": "Iwata's only mapped tree is Yuya no Naga Fuji, the Long Wisteria of Yuya, at Gyokoji Temple, judged to be roughly 800 to 850 years old and a National Natural Monument since 1932.",
+ "question_context": "The vine grows on the grounds of Gyokoji Temple in Ikeda, reached by bus or taxi from JR Iwata or Fukude station, since no rail line reaches the temple directly. Free to visit; the city runs an annual wisteria festival with night illumination and temporary parking during the mid-to-late April bloom. Its kanji name is usually read Kumano, but is read locally as Yuya, after Yuya Gozen, a court lady from the Noh play named for her, who local legend says planted the vine herself before leaving for Kyoto in the late Heian period. Its trellis has grown from roughly 400 square metres in 1907 to about 1,600 today, and its flower clusters typically reach over a metre long, with a recorded maximum of 1.5 metres. Five younger wisterias on the same temple grounds carry their own separate designation, each roughly 250 years old, but this is the vine the temple, the town and the festival are named for.",
+ "hero_tree_id": "iwt_001",
+ "oldest_tree_id": "iwt_001",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Iwata?",
+   "a": "Yuya no Naga Fuji, a wisteria at Gyokoji Temple judged to be roughly 800 to 850 years old, a National Natural Monument since 1932."
+  },
+  {
+   "q": "Why is it called Yuya rather than Kumano?",
+   "a": "Its kanji is usually read Kumano, but here it is read Yuya, after Yuya Gozen, a court lady from the Noh play Yuya, who legend says planted the vine herself in the late Heian period."
+  },
+  {
+   "q": "Is it free to visit?",
+   "a": "Yes. It stands on the grounds of Gyokoji Temple, with an annual wisteria festival and night illumination during the April bloom."
+  },
+  {
+   "q": "How do I get there?",
+   "a": "By bus or taxi from JR Iwata or Fukude station; there is no direct rail access to Ikeda."
+  }
+ ],
+ "trees": [
+  {
+   "id": "iwt_001",
+   "name": "Yuya no Naga Fuji (the Long Wisteria of Yuya)",
+   "species": "Japanese Wisteria (Wisteria floribunda)",
+   "age_estimate": "roughly 800 to 850 years",
+   "age_min": 700,
+   "age_max": 850,
+   "girth_cm": 180,
+   "location": {
+    "address": "330 Ikeda, grounds of Gyokoji Temple, Iwata, Shizuoka Prefecture, Japan",
+    "latitude": 34.73704,
+    "longitude": 137.81474,
+    "neighbourhood": "Ikeda"
+   },
+   "verified_sources": [
+    "https://online.bunka.go.jp/db/heritages/detail/210280",
+    "https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E3%81%AE%E9%95%B7%E3%83%95%E3%82%B8",
+    "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002051.html"
+   ],
+   "access": "Free, on the grounds of Gyokoji Temple, Ikeda, Iwata. The city runs a wisteria festival with temporary riverside parking during the mid-to-late April bloom window; the temple garden is otherwise open to visitors.",
+   "transport": "Bus or taxi from JR Iwata or Fukude station; no direct rail access to Ikeda.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The kanji in this wisteria's name is usually read Kumano. Here, at Gyokoji Temple in Iwata, it is read Yuya instead, after Yuya Gozen, a court lady from a centuries-old Noh play named for her. Local legend holds she planted this vine herself in the late Heian period before leaving for Kyoto, and the reading has stuck for as long as anyone has written the tree down. It is not a mistake to correct.\n\nWhat has grown from that planting is now judged around 800 to 850 years old and covers a trellis that has expanded from roughly 400 square metres in 1907 to about 1,600 today, folding in the neighbouring memorial park as it spread. Its flower clusters typically reach over a metre long, with a recorded maximum of 1.5 metres and older reports of clusters twice that. Five younger wisterias on the same temple grounds carry their own separate designation, each roughly 250 years old, but this is the one the temple, the town and the festival are named for.\n\nIwata has run an annual wisteria festival around the vine for as long as anyone has logged the date, with night illumination extending viewing hours through the mid-to-late April bloom. It has held National Natural Monument status since 1932. A wisteria old enough to outlive the play written about the woman who planted it is a tree people build a spring trip around, not one they pass without noticing.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "tok_016",
+    "name": "The Yōgō Pine of Zenyoji",
+    "species": "Japanese Black Pine (Pinus thunbergii)",
+    "age_estimate": "over 600 years",
+    "age_min": 600,
+    "age_max": 700,
+    "girth_cm": 450,
+    "location": {
+      "address": "2-24-2 Higashi-Koiwa, Edogawa-ku, Tokyo (Zenyoji Temple grounds)",
+      "latitude": 35.72753,
+      "longitude": 139.89356,
+      "neighbourhood": "Higashi-Koiwa, Edogawa Ward"
+    },
+    "verified_sources": [
+      "https://kunishitei.bunka.go.jp/heritage/detail/401/00003727",
+      "https://www.city.edogawa.tokyo.jp/e004/kuseijoho/kohokocho/promotion/bunka/zenyoji_yogo_matsu.html",
+      "https://ja.wikipedia.org/wiki/%E5%BD%B1%E5%90%91%E3%81%AE%E3%83%9E%E3%83%84"
+    ],
+    "access": "Free. Stands on the grounds of Zenyoji Temple (善養寺), open to visitors in daylight hours; no parking on site.",
+    "transport": "JR Sobu Line to Koiwa Station, then a Keisei bus toward Mizue/Kasai to the \"Edogawa Byōin-mae\" stop (4 stops from Koiwa), then about a 3-minute walk. Well within Tokyo, not a day-trip case.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Full official designation name is 善養寺影向のマツ (Zenyoji Yōgō no Matsu). Designated a Tokyo-metropolitan natural monument in April 1926 and upgraded to a National Natural Monument on 2011-09-21 (Japan Agency for Cultural Affairs database, kunishitei.bunka.go.jp, is the primary source and gives the government's own coordinate 35.727528,139.893565, which I used as the pin). Not tall for a famous tree (about 8m) but has the largest crown-spread area of any pine recorded in Japan: the government listing gives an east-west spread of about 28m and a north-south spread of about 31m; Edogawa City's own page reverses these two figures (28m north-south, 31m east-west) so there is a live disagreement over which axis is longer, not over the total spread (both agree it exceeds 800 sqm and is Japan's largest). Trunk measurement given is base/root circumference (根元周囲) of about 4.5m, not a breast-height girth; recorded as girth_cm 450 but flagged as base measurement, not trunk-at-1.3m. Age is given only as '600 years or more' by every source (temple itself said to date to around 1500, tree reportedly predates the temple); no source offers a narrower figure, so I left age_max open at 700 as a rough ceiling rather than a sourced number. Good anecdote for the story: from the 1970s to 1993 this tree was locked in a famous nationally covered 'Japan's number one pine' rivalry with the Okano Matsu of Shido, Kagawa; the dispute over whose crown was larger went unresolved for over a year until a sumo chief referee (tategyōji) ruled both trees joint yokozuna in 1980, and a commemorative plaque naming both trees co-champions still stands under this tree. The rival tree died in 1993. This tree itself nearly died from root asphyxiation after a nearby pond was filled in (diagnosed 2001), and underwent a decade-long soil replacement and drainage recovery project completed in July 2011, shortly before its national designation. Continued existence into 2025 corroborated by recent visitor blog and video posts (a walking-blog post dated 2023 and a YouTube visit video dated 2025-09-07 found in search results, both showing the tree standing and supported by its 82 props)."
+  }
+]

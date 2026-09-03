@@ -1,0 +1,63 @@
+{
+ "city": "Kitamoto",
+ "country": "Japan",
+ "status": "needs_curation",
+ "intro": "Kitamoto maps one tree: Ishito no Kaba-zakura, the only known specimen anywhere of a natural hybrid between two common Japanese cherries, Edo Higan and Yamazakura. This exact cross happened once, in the wild, sometime in the medieval period, and has never been found or bred again. It stands at Tokoji Temple, holds National Natural Monument status since 1922, and is counted among Japan's Five Great Cherry Trees. Published alone here because the tree itself is the destination, not because Kitamoto's research is finished.",
+ "meta_description": "Ishito no Kaba-zakura, Kitamoto: the world's only known Kaba-zakura hybrid cherry, one of Japan's Five Great Cherry Trees since 1922.",
+ "question_meta": "Kitamoto's oldest and only mapped tree is Ishito no Kaba-zakura, a one-of-a-kind hybrid cherry at Tokoji Temple.",
+ "question_answer": "Kitamoto's only mapped tree is Ishito no Kaba-zakura, a natural hybrid of Edo Higan and Yamazakura cherries at Tokoji Temple, the only known specimen of this cross anywhere and one of Japan's Five Great Cherry Trees.",
+ "question_context": "The tree stands on the grounds of Tokoji Temple in Ishito-shuku, reached by bus or taxi from JR Kita-Kounosu or Kitamoto Station, since no rail line reaches the temple directly. Free to visit, with festival parking added during the April bloom. Legend credits its planting to Minamoto no Noriyori, a 12th-century warrior nicknamed Kaba no Kanja, which gives the tree its name. It once had four trunks, but decades of soil compaction and the weight of ten stone memorial tablets placed at its roots reduced it to one by the 1960s and 70s; after the tablets were removed in 1973 the tree stopped flowering for ten years before blooming again in 1977. Kitamoto has treated the soil with liquid fertiliser since 2004 and expanded the protected ground around the tree in 2022 by buying the neighbouring plot outright. It has held National Natural Monument status since 1922, and it is counted among Japan's Five Great Cherry Trees.",
+ "hero_tree_id": "kit_001",
+ "oldest_tree_id": "kit_001",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Kitamoto?",
+   "a": "Ishito no Kaba-zakura, a natural hybrid cherry at Tokoji Temple, believed to be roughly 800 years old, though the figure is a long-repeated estimate rather than a precise measurement."
+  },
+  {
+   "q": "What makes this cherry unique?",
+   "a": "It is the only known specimen anywhere of a natural hybrid between Edo Higan and Yamazakura cherries; this exact cross has never been found or bred a second time."
+  },
+  {
+   "q": "Is it free to visit?",
+   "a": "Yes. It stands on the grounds of Tokoji Temple, with a city-run festival and parking during the April bloom."
+  },
+  {
+   "q": "How do I get there?",
+   "a": "By bus or taxi from JR Kita-Kounosu or Kitamoto Station; there is no direct rail access to Ishito-shuku."
+  }
+ ],
+ "trees": [
+  {
+   "id": "kit_001",
+   "name": "Ishito no Kaba-zakura",
+   "species": "Kaba-zakura, a natural hybrid of Edo Higan and Yamazakura cherries (Cerasus x kabazakura)",
+   "age_estimate": "roughly 800 years",
+   "age_min": 700,
+   "age_max": 850,
+   "girth_cm": 710,
+   "location": {
+    "address": "Ishito-shuku 3-119, grounds of Tokoji Temple, Kitamoto, Saitama Prefecture, Japan",
+    "latitude": 36.00666,
+    "longitude": 139.51236,
+    "neighbourhood": "Ishito-shuku"
+   },
+   "verified_sources": [
+    "https://www.city.kitamoto.lg.jp/kanko/leisure_services/sakura/1419505898684.html",
+    "https://ja.wikipedia.org/wiki/%E7%9F%B3%E6%88%B8%E8%92%B2%E3%82%B6%E3%82%AF%E3%83%A9",
+    "https://www.saitama-np.co.jp/articles/20403/postDetail"
+   ],
+   "access": "Free, on the grounds of Tokoji Temple; the city runs an on-site cherry-blossom festival with 120 parking spaces during the bloom window. No ticket or appointment needed.",
+   "transport": "Bus or taxi from JR Kita-Kounosu or Kitamoto Station; no direct rail access to Ishito-shuku.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "There is exactly one of these trees in the world. Kaba-zakura is a natural hybrid between two common Japanese cherry species, Edo Higan and Yamazakura, and this cross happened once, in the wild, at some point in the medieval period, and has never been found or bred again anywhere else. Legend credits the planting to Minamoto no Noriyori, a 12th-century warrior nicknamed Kaba no Kanja, which is where the tree gets its name.\n\nIt nearly did not survive to be studied. The tree once had four trunks, but decades of soil compaction and the weight of ten stone memorial tablets placed at its roots reduced it to one by the 1960s and 70s. After the tablets were finally removed in 1973, the tree stopped flowering altogether for ten years. It bloomed again in 1977, and the city of Kitamoto has been actively treating the soil with liquid fertiliser since 2004, expanding the protected ground around it as recently as 2022 by buying the neighbouring plot outright.\n\nIt has held National Natural Monument status since 1922 and is counted among Japan's Five Great Cherry Trees. In April 2023, on the temple grounds at Tokoji, it bloomed for its own hundredth anniversary as a designated monument, drawing crowds who came to see a hybrid nobody has ever managed to grow a second copy of.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
+}
