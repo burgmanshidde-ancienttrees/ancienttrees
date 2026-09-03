@@ -271,7 +271,7 @@ struct HomeView: View {
                 Text("Trees worth the walk,")
                     .foregroundStyle(.white)
                 Text("wherever you are.")
-                    .foregroundStyle(Brand.goldInk)
+                    .foregroundStyle(Brand.gold)
             }
             .font(.brand(26, .bold, relativeTo: .title2))
             .shadow(color: .black.opacity(0.35), radius: 8, y: 2)
