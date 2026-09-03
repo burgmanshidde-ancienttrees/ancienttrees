@@ -70,7 +70,12 @@ enum MapThumb {
     /// because its size meant something different.
     static func snapshot(lat: Double, lng: Double, size: CGSize,
                          meters: CLLocationDistance = 500) async -> UIImage? {
-        let key = "\(lat),\(lng),\(Int(size.width)),\(Int(size.height))"
+        // THE APPEARANCE IS PART OF THE KEY. Without it the first thumbnail
+        // rendered wins for the rest of the launch, so a phone that goes dark at
+        // sunset keeps a cream stamp in the corner of every dark tree page, and
+        // one that starts dark keeps a dark one all morning.
+        let dark = UITraitCollection.current.userInterfaceStyle == .dark
+        let key = "\(lat),\(lng),\(Int(size.width)),\(Int(size.height)),\(dark ? "d" : "l")"
         if let hit = cached(key) { return hit }
 
         let centre = CLLocationCoordinate2D(latitude: lat, longitude: lng)
@@ -81,7 +86,8 @@ enum MapThumb {
         // sitting across the map. Attribution for these tiles lives on the map
         // screen itself, where there is room to read it.
         let full = CGSize(width: size.width, height: size.height + attributionStrip)
-        let options = MLNMapSnapshotOptions(styleURL: MapStyle.url, camera: camera, size: full)
+        let options = MLNMapSnapshotOptions(
+            styleURL: MapStyle.url(for: dark ? .dark : .light), camera: camera, size: full)
         // The same conversion the live map uses, told how wide THIS view is: a
         // thumbnail borrowing the full-screen width opens five times too close.
         options.zoomLevel = TreeMap.zoom(forMeters: meters, latitude: lat,
@@ -109,10 +115,19 @@ enum MapThumb {
                                  height: size.height + attributionStrip))
             let c = CGPoint(x: size.width / 2, y: size.height / 2)
             let r: CGFloat = 5
-            ctx.cgContext.setFillColor(UIColor.white.cgColor)
+            // The ring is white on the daylight map and the map's own ground in
+            // the dark, for the same reason the live map's pins wear a white
+            // ring: the ring exists to separate the dot from the map under it,
+            // and a white ring on a near-black map is a bright speck rather
+            // than a separator.
+            // 0x0D0F0C is the dark map's own ground, from
+            // scripts/map_style_dark.py. It is the one colour here that belongs
+            // to the map rather than to the palette.
+            ctx.cgContext.setFillColor(dark ? UIColor(hex: 0x0D0F0C).cgColor
+                                            : UIColor.white.cgColor)
             ctx.cgContext.fillEllipse(in: CGRect(x: c.x - r - 2, y: c.y - r - 2,
                                                  width: (r + 2) * 2, height: (r + 2) * 2))
-            ctx.cgContext.setFillColor(UIColor(red: 0.20, green: 0.35, blue: 0.20, alpha: 1).cgColor)
+            ctx.cgContext.setFillColor(UIColor(dark ? Brand.moss : Brand.canopy).cgColor)
             ctx.cgContext.fillEllipse(in: CGRect(x: c.x - r, y: c.y - r, width: r * 2, height: r * 2))
         }
         cache.setObject(out, forKey: key as NSString)

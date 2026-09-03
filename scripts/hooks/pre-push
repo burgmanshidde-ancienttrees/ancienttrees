@@ -19,6 +19,12 @@
 #   convention  a NEW screen or component names the product its interaction was
 #               copied from, so a design from somebody's own head cannot ship
 #               unnoticed (2026-08-28)
+#   darkcheck   every colour pair in the palette can be read, in BOTH
+#               appearances. The app shipped with white text on the dark
+#               palette's moss at 2.85:1, on the primary button, because
+#               nobody had ever done the arithmetic (2026-09-03)
+#   map style   the dark map style is what the light one generates, so the two
+#               cannot drift while nobody looks at the dark one in daylight
 #
 # It only runs when the push actually touches the app, so a night run pushing
 # trees never sees it.
@@ -45,14 +51,16 @@ while read -r _local_ref local_sha _remote_ref remote_sha; do
 $(git diff --name-only "$base" "$local_sha" 2>/dev/null)"
 done
 
-echo "$CHANGED" | grep -qE '^(ios/|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck))' || exit 0
+echo "$CHANGED" | grep -qE '^(ios/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|darkcheck|map_style_dark))' || exit 0
 
 fail=0
 for check in \
     "scripts/netcheck.py" \
     "scripts/appsweep.py --check-lists" \
     "scripts/icon_check.py" \
-    "scripts/conventioncheck.py"
+    "scripts/conventioncheck.py" \
+    "scripts/darkcheck.py" \
+    "scripts/map_style_dark.py --check"
 do
     # shellcheck disable=SC2086
     if ! out=$(python3 $check 2>&1); then

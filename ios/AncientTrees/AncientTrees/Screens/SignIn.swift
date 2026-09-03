@@ -41,7 +41,13 @@ struct SignInSheet: View {
     @FocusState private var focus: Field?
 
     private enum Field { case email, code }
-    private let brand = Color(red: 0.20, green: 0.35, blue: 0.20)
+    /// The green this screen presses in, and the deeper one it FILLS with. They
+    /// used to be one fixed value written out here, which is fine in daylight
+    /// and wrong twice over in the dark: a mid green as text on a near-black
+    /// ground is 2.5:1, and a filled button needs a green that white still
+    /// reads on. Brand carries both and each follows the appearance.
+    private let brand = Brand.moss
+    private let brandFill = Brand.canopy
 
     var body: some View {
         ScrollView {
@@ -198,7 +204,7 @@ struct SignInSheet: View {
                 }
                 .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 15)
             }
-            .buttonStyle(.borderedProminent).tint(brand).clipShape(.capsule)
+            .buttonStyle(.borderedProminent).tint(brandFill).clipShape(.capsule)
             .disabled(account.state == .working)
 
             problemLine

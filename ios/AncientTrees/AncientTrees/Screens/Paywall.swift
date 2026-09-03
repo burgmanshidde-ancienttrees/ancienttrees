@@ -70,7 +70,7 @@ struct PaywallView: View {
     private var headline: some View {
         VStack(alignment: .leading, spacing: 10) {
             SpeciesMark(species: "Cedar of Lebanon",
-                        color: Color(red: 0.20, green: 0.35, blue: 0.20))
+                        color: Brand.moss)
                 .frame(width: 54, height: 54)
             Text(feature.ask).font(.largeTitle.bold())
             Text(feature.detail).font(.subheadline).foregroundStyle(.secondary)
@@ -103,7 +103,7 @@ struct PaywallView: View {
                     id: \.rawValue) { f in
                 HStack(alignment: .top, spacing: 10) {
                     Image(systemName: "checkmark").font(.caption.weight(.bold))
-                        .foregroundStyle(Color(red: 0.20, green: 0.35, blue: 0.20))
+                        .foregroundStyle(Brand.moss)
                         .frame(width: 18)
                         .padding(.top, 3)
                     VStack(alignment: .leading, spacing: 1) {
@@ -159,7 +159,7 @@ struct PaywallView: View {
                     .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 15)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(Color(red: 0.20, green: 0.35, blue: 0.20))
+                .tint(Brand.canopy)
                 .clipShape(.capsule)
                 .disabled(sending)
                 Text(failed

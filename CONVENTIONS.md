@@ -858,3 +858,59 @@ it is what times the work in the app.
 mention the feature where it genuinely exists. `hasWalksPage()` gates whether
 the word "walk" appears at all, so we never advertise a route the app does not
 have. Enforced by `check_walks_go_to_the_app()` in scripts/qa.py.
+
+---
+
+## Dark mode, and what a map app darkens (2026-09-03)
+
+Looked up the day the app shipped, because two of the first people to open it
+were in dark mode and it was not nice. Half the app's surface had never been
+photographed once: a simulator boots light and nothing had ever told it
+otherwise, so every screenshot the sweep had taken in two weeks was daylight.
+
+**Reference: Google Maps, Apple Maps, and OpenFreeMap's own dark style.** All
+three darken the MAP, not only the chrome around it. Google publish their night
+style array as a worked example, and two of its rules are structural rather than
+decorative:
+
+- **Water is DARKER than the land**, so it recedes at night: their land is
+  `#242f3e` and their water `#17263c`. Ours had never been asked the question,
+  because in daylight water is lighter than land and the instinct is to keep
+  that relation.
+- **Every label's halo is the background colour**, so a place name reads as a
+  gap cut around the letters rather than as an outline drawn on top of the map.
+
+OpenFreeMap serve a dark style over the same OpenMapTiles source and on the same
+layer ids we use, which is what makes ours a colour mapping rather than a rebuild.
+
+**Reference: Material's dark theme, for what a filled control does.** A dark
+theme takes its accent from the LIGHT end of the ramp, tone 200 rather than the
+daylight 500, and the label on it is DARK. Google's own dark products press in
+`#8AB4F8` with near-black text, not in their daylight blue with white. This is
+the rule we had half of: our moss did lighten in the dark and the label stayed
+white, which measured 2.85:1 and looked like a highlighter.
+
+**Reference: Apple's HIG, for depth.** In the dark the system uses two sets of
+backgrounds, base and elevated, and a thing in front is LIGHTER than the thing
+behind it. Nothing is separated by a shadow, because a shadow is invisible on a
+dark ground. So the order in this app is map, then screen, then card, then sheet,
+each a step up.
+
+**What we got wrong and would get wrong again: a translucent material samples
+what is behind it.** The bottom sheet, the floating "Map" pill and the round
+buttons on the tree page are all `.regularMaterial`. On a cream map they render
+light grey and white, which reads as a foreign panel dropped on a dark app. None
+of those three was a bug in the chrome. Fixing the map fixed all of them, and
+the general form is worth keeping: on a screen where something floats over
+content, judge the floating thing against the content it will actually sample.
+
+**What does NOT change in the dark: photographs.** Apple treat a photograph as
+content and leave it alone, and AllTrails, Airbnb and Google all run full-bleed
+pictures at full strength on a dark ground. Material's advice to cut luminance
+applies to decorative imagery, which for us is the green tile a tree with no
+photograph wears; that one is dimmed, the photographs are not.
+
+Read 2026-09-03:
+- https://developers.google.com/maps/documentation/javascript/examples/style-array
+- https://tiles.openfreemap.org/styles/dark
+- https://developer.apple.com/design/human-interface-guidelines/dark-mode

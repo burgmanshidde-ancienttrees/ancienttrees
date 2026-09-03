@@ -324,7 +324,7 @@ struct ProfileView: View {
                         // chip on a row that cannot be bought reads as a thing
                         // you are missing out on rather than a thing being built.
                         Text("Coming soon").font(.caption).foregroundStyle(Brand.inkSoft)
-                        Chip(text: "Plus", tint: Brand.gold)
+                        Chip(text: "Plus", tint: Brand.goldInk)
                     }
                     .padding(.horizontal, 16).frame(height: 48)
                 }
@@ -341,7 +341,7 @@ struct ProfileView: View {
                         Text("Offline maps").font(.callout).foregroundStyle(Brand.ink)
                         Spacer()
                         Text("Coming soon").font(.caption).foregroundStyle(Brand.inkSoft)
-                        Chip(text: "Plus", tint: Brand.gold)
+                        Chip(text: "Plus", tint: Brand.goldInk)
                     }
                     .padding(.horizontal, 16).frame(height: 48)
                 }

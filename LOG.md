@@ -9,6 +9,65 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 - Dark mode, which the app shipped without anybody ever looking at it
+
+Hidde, on the day the app went out: two of the first people to open it were in
+dark mode and it was not nice. He asked for a benchmark and a design.
+
+**The reason nobody had seen it is the first finding.** A simulator boots light
+and nothing had ever told it otherwise, so every screenshot the sweep has taken
+since 2026-08-20 was daylight. Half the app's surface had never been
+photographed once. `scripts/appsweep.py --dark` fixes that in four lines, which
+is how long it took to find the rest.
+
+**One cause explained most of it: the map never darkened.** The app fetched one
+style file and it was the cream daylight one, so in dark mode the map was a
+white slab filling the screen, and the tree page wore a lit postage stamp in
+the corner of a black page. It also made three things nobody would have looked
+for: the bottom sheet went grey, the floating "Map" pill went white and the
+round map buttons went pale, because all three are translucent materials and a
+material samples what is behind it. Fixing the map fixed all of them.
+
+The dark style is GENERATED from the light one by `scripts/map_style_dark.py`,
+17 colours mapped, and an unmapped colour is an error rather than a
+pass-through: two styles kept by hand drift, and nobody opens the dark one in
+daylight. It follows two rules read off Google's own night style: water darker
+than the land so it recedes, and every label's halo the colour of the
+background. The app now swaps styles when the phone does, mid-session, which
+needed the map's own layers put back on the reloaded style.
+
+**The primary button was the loudest thing on every screen and it measured
+2.85:1.** The dark palette lightened moss, which is right and is what Material
+and Google's own dark products do, and left the label white, which is not: a
+light accent takes a DARK label. It read as a highlighter slab with pale text.
+It is 8.2:1 now. `scripts/darkcheck.py` measures every pair in both
+appearances and is in the pre-push hook, because this is arithmetic nobody does
+by eye. It found a second one on its first run, in DAYLIGHT: gold set as text
+(the Plus chip) is 2.30:1 on white, and there is now a darker `goldInk` for
+gold used as words. The badge keeps the colour it has.
+
+**A fixed green written out in nine places, from before the palette existed.**
+It never adapted, so in the dark it was a mid green on near-black: 2.5:1 for
+"Use my location", the Paywall's checkmarks, the sign-in marks and the map's
+recentre arrow. Each site now takes the palette by ROLE, moss where it is text
+and canopy where it is a fill under white, and canopy goes darker in the dark
+where moss goes lighter, because the two are used for opposite jobs.
+
+**And the greens that were tiles.** The green slab a tree with no photograph
+wears was a fixed mid green, so on a dark city page it was the brightest thing
+on the screen and it was the tile that says we have no picture. It was written
+out three times, so it is one `leafTile` now, dark enough in the dark to sit
+back and still green, because in a shelf that green tile is how a tree with no
+photograph is told apart from one whose picture has not loaded.
+
+The benchmark itself is in CONVENTIONS.md, with what Google, Apple and
+OpenFreeMap actually do and the three rules worth keeping.
+
+Not touched: photographs, which Apple treat as content and every reference app
+runs at full strength on a dark ground; and the website, which has no dark mode
+at all and is unaffected. The dark style file is served from the site but
+nothing on the web reads it yet, so whether the website gets a dark mode is a
+separate decision.
 ## 2026-09-03 - A deleted account now takes its published photograph with it
 
 The gap the protection pass found, closed the same afternoon on Hidde's

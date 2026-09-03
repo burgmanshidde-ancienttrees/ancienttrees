@@ -271,7 +271,7 @@ struct HomeView: View {
                 Text("Trees worth the walk,")
                     .foregroundStyle(.white)
                 Text("wherever you are.")
-                    .foregroundStyle(Brand.gold)
+                    .foregroundStyle(Brand.goldInk)
             }
             .font(.brand(26, .bold, relativeTo: .title2))
             .shadow(color: .black.opacity(0.35), radius: 8, y: 2)
@@ -449,7 +449,7 @@ struct HomeView: View {
             HStack {
                 Text(w.name).font(.cardTitle).foregroundStyle(Brand.ink).lineLimit(2)
                 Spacer(minLength: 6)
-                if locked { Chip(text: "Plus", tint: Brand.gold) }
+                if locked { Chip(text: "Plus", tint: Brand.goldInk) }
             }
             Text(w.city).font(.footnote).foregroundStyle(Brand.inkSoft)
             Spacer(minLength: 0)
@@ -503,14 +503,12 @@ struct HomeView: View {
             ZStack(alignment: .bottomLeading) {
                 if let url = cover?.photo?.card {
                     TreePhoto(url: url) {
-                        LinearGradient(colors: [Brand.canopy, Brand.moss],
-                                       startPoint: .topLeading, endPoint: .bottomTrailing)
+                        leafTile
                     }
                     .frame(width: 172, height: 120).clipped()
                 } else {
                     ZStack {
-                        LinearGradient(colors: [Brand.canopy, Brand.moss],
-                                       startPoint: .topLeading, endPoint: .bottomTrailing)
+                        leafTile
                         SpeciesMark(species: cover?.species ?? "Pedunculate Oak",
                                     color: .white.opacity(0.85))
                             .frame(width: 46, height: 46)
@@ -744,7 +742,7 @@ struct CityWalkCard: View {
             HStack {
                 Text(walk.name).font(.cardTitle).foregroundStyle(Brand.ink).lineLimit(2)
                 Spacer(minLength: 6)
-                if locked { Chip(text: "Plus", tint: Brand.gold) }
+                if locked { Chip(text: "Plus", tint: Brand.goldInk) }
             }
             Text("\(walk.count) trees · \(walk.duration)")
                 .font(.caption).foregroundStyle(Brand.inkSoft)
