@@ -1,0 +1,132 @@
+{
+  "city": "Taipei",
+  "country": "Taiwan",
+  "status": "needs_curation",
+  "intro": "Taipei's oldest tree stands over a mass grave. The Great Camphor of Zhishan Rock, put at roughly 300 to 320 years, shelters six Japanese schoolteachers killed on the hill in 1895. Elsewhere in the city, National Taiwan University recessed a teaching building's floor plan around three century-old Ryukyu pines, and Chiang Kai-shek planted a pair of junipers by hand at the Confucius Temple on Arbor Day 1962. All four trees are free to visit.",
+  "meta_description": "Taipei's remarkable trees: a 300-year camphor over a 1895 grave, century-old campus pines, and junipers Chiang Kai-shek planted by hand.",
+  "question_meta": "Taipei's oldest tree is the Great Camphor of Zhishan Rock, put at roughly 300 to 320 years, standing over the graves of six 1895 victims.",
+  "question_answer": "Taipei's oldest tree is the Great Camphor of Zhishan Rock, put at roughly 300 to 320 years depending on the source. No girth has been published to settle the exact figure, so this page carries it as a range. A local hiking record calls it the oldest tree in the city.",
+  "question_context": "The camphor's age comes from two sources that disagree slightly, a Taipei heritage account giving roughly 300 years and a hiking record putting it closer to 320 and calling it outright the oldest tree in the city; neither publishes a girth, so this page keeps the range rather than a number. It stands in Zhishan Rock Cultural History Park, a hillside designated protected forest under Japanese administration, why old growth survives here when camphor elsewhere on the island was felled at industrial scale for its oil. The tree has a darker history: six Japanese schoolteachers killed in the Zhishan Rock Incident of 1895, in the first months of Japanese rule, are said to have been buried beneath it. Nothing else here comes close to that age. The Common Three Pines at National Taiwan University are estimated at under a century, arithmetic on a circa-2010 estimate rather than a fresh measurement, and the Confucius Temple's junipers carry an actual planting date, 12 March 1962, by Chiang Kai-shek himself, young but exactly dated. The Ginkgo of the Geology Building carries no age at all; circulating figures do not hold up, so the field stays empty.",
+  "hero_tree_id": "tpe_001",
+  "oldest_tree_id": "tpe_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Taipei?",
+      "a": "The Great Camphor of Zhishan Rock, put at roughly 300 to 320 years. Sources disagree slightly and no girth has been published, so this page carries it as a range."
+    },
+    {
+      "q": "Why is a camphor tree linked to a 1895 killing?",
+      "a": "Six Japanese schoolteachers were killed on Zhishan Rock in 1895, in the first months of Japanese rule over Taiwan, and a local hiking record states they were buried beneath the big camphor."
+    },
+    {
+      "q": "Did Chiang Kai-shek really plant a tree here?",
+      "a": "Yes. He and his vice president Chen Cheng planted a pair of junipers at the Confucius Temple by hand on Arbor Day, 12 March 1962, a recorded date rather than an estimate."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all four stand on open, free ground: a public park, a university campus and temple grounds. No ticket is needed for any of them."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tpe_001",
+      "name": "The Great Camphor of Zhishan Rock",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 300,
+      "age_max": 320,
+      "girth_cm": null,
+      "location": {
+        "address": "Zhishan Rock Cultural History Park, near Yunong Library, Zhicheng Rd Sec 2 area, Shilin District, Taipei",
+        "latitude": 25.1038,
+        "longitude": 121.5303,
+        "neighbourhood": "Zhishan Rock, Shilin"
+      },
+      "story": "Six Japanese schoolteachers are buried under this camphor. They were killed on this hill in the Zhishan Rock Incident of 1895, in the first months of Japanese rule over Taiwan, and a local hiking record states that the bodies were laid together beneath the big camphor. If the tree's age is anywhere near right, it was already well past its first century when that happened.\n\nHow near right is the open question. A Taipei heritage account calls it roughly three hundred years old. The hiking record puts it closer to three hundred and twenty and says flatly that it is the oldest tree in Taipei. Nobody has published a girth to settle the difference, so the honest answer is the range rather than a single figure.\n\nIt survived for a reason that finished off most of its relatives. Camphor was an industrial crop on this island, felled and distilled for camphor oil at scale, and Zhishan Rock was designated protected forest under the Japanese administration. That boundary line is why old growth is still standing on a hill inside the city.\n\nLook for it near the Yunong Library, on the open trail rather than inside the ticketed ecology garden alongside it. Our pin marks the hill rather than the trunk, so give yourself a few minutes to find it.",
+      "verified_sources": [
+        "https://www.hopeintw.org.tw/story-content/b14525a93D7E",
+        "https://hiking.biji.co/index.php?act=info&q=review&review_id=21696"
+      ],
+      "access": "Free entry. Inside Zhishan Rock Cultural History Park, a public hillside park and historic site open daily with no admission fee (the adjacent ticketed Zhishan Culture and Ecology Garden, NT$50, is a separate enclosed section; this tree stands in the free trail/park area near Yunong Library).",
+      "transport": "Zhishan MRT Station (Red Line, Danshui-Xinyi), exit 1, roughly 8-10 minute walk via Zhicheng Rd and the trail entrance; alternatively via the Yunong Bridge riverside parking area and the 120-step Bai'erkan staircase.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "tpe_002",
+      "name": "The Common Three Pines",
+      "species": "Ryukyu Pine (Pinus luchuensis)",
+      "age_estimate": "about a century",
+      "age_min": 90,
+      "age_max": 105,
+      "girth_cm": null,
+      "location": {
+        "address": "In front of the Common Teaching Building, National Taiwan University main campus, near Zhoushan Road, Da'an District, Taipei",
+        "latitude": 25.0177,
+        "longitude": 121.5385,
+        "neighbourhood": "National Taiwan University campus"
+      },
+      "story": "The building came second. When National Taiwan University put up its Common Teaching Building, the floor plan was recessed to leave these three Ryukyu pines standing where they already were, and the campus later laid an elevated wooden deck around their feet so people could sit under them without treading the roots flat.\n\nNobody has cored them. An estimate published around 2010 put the trio at roughly eighty years old, which lands them a little short of a century now, and that is arithmetic on an estimate rather than a measurement. Two of the three carry their own numbers on Taipei's protected tree register, 10615-00047 and 10615-00048, according to the account that lists them.\n\nOn campus they are the Common Three Pines, and in a 2005 student poll they were voted one of the twelve scenic spots of the university. That is an odd honour for three conifers on a teaching plaza, and it says something about how many people have sat under them. They still do. The food carts are close, the deck is shaded, and these trees are the reason anyone stops at that particular corner of Zhoushan Road rather than walking on.\n\nThe pin comes off the building rather than off the trunks, so aim for the plaza in front of the Common Teaching Building; three tall pines on a wooden platform are hard to mistake for anything else.",
+      "verified_sources": [
+        "https://zh.wikipedia.org/zh-tw/%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8%E5%85%B1%E5%90%8C%E4%B8%89%E6%9D%BE",
+        "https://raywang1016.pixnet.net/blog/posts/9441993434"
+      ],
+      "access": "Free. Open university campus with no gate or admission fee; the pines stand on a public plaza in front of a teaching building that students, staff and visitors walk through freely.",
+      "transport": "NTU main campus; roughly 10-15 minute walk from Gongguan MRT Station (Songshan-Xindian Line) or Taipower Building MRT Station.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "tpe_003",
+      "name": "The Presidential Junipers of Taipei Confucius Temple",
+      "species": "Chinese Juniper (Juniperus chinensis)",
+      "age_estimate": "planted 1962, roughly 64 years",
+      "age_min": 63,
+      "age_max": 65,
+      "girth_cm": null,
+      "location": {
+        "address": "Qingyun Road, between the Pan Pond and the Lingxing Gate, Taipei Confucius Temple, 275 Dalong St, Datong District, Taipei",
+        "latitude": 25.07292,
+        "longitude": 121.516611,
+        "neighbourhood": "Dalongdong, Datong District"
+      },
+      "story": "Chiang Kai-shek planted these two junipers himself, on Arbor Day, 12 March 1962. His vice president, Chen Cheng, planted the other one alongside him. They stand on Qingyun Road, the short path between the Pan Pond and the Lingxing Gate, which is the ceremonial approach visitors walk in on and about as public a place to put a tree as the temple offers.\n\nThey are not old and there is no point pretending otherwise. Sixty-four years, from a recorded date rather than an estimate, which is rarer than it sounds: most trees worth walking to arrive with a range and an argument attached. These arrived with a ceremony and a diary entry.\n\nThey have been moved once. During work on the Ming Lun Hall in 2011 the pair were lifted and reset roughly a metre from where they had stood, and both survived the move. Accounts also describe inscribed stones beside them recording that the president and the vice president planted these by hand in the fifty-first year of the Republic. That detail is not confirmed from a primary source, so treat the stones as something to look for rather than something promised. The same two men had planted another pair here in 1955.\n\nEntry is free, and Bao'an Temple stands next door, which turns this into a two-stop afternoon rather than one.",
+      "verified_sources": [
+        "https://zh.wikipedia.org/zh-tw/%E8%87%BA%E5%8C%97%E5%AD%94%E5%AD%90%E5%BB%9F",
+        "https://wenshuh2004.pixnet.net/blog/post/556382695"
+      ],
+      "access": "Free entry. Taipei Confucius Temple is a public temple and municipal historic monument open to visitors daily (typical hours morning to early evening; confirm current hours locally). Sits directly beside Bao'an Temple in the Dalongdong cultural district, an easy joint walk.",
+      "transport": "Roughly 10 minute walk from Yuanshan MRT Station (Red Line); several bus routes stop at Hami St / Dalongdong.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "tpe_004",
+      "name": "The Ginkgo of the Geology Building",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "In front of the Geology Science Building, National Taiwan University main campus, near Zhoushan Road, Da'an District, Taipei",
+        "latitude": 25.018,
+        "longitude": 121.539,
+        "neighbourhood": "National Taiwan University campus"
+      },
+      "story": "This ginkgo does not turn gold until January. In cooler countries the species is bare by late November, but this one stands at sea level in a subtropical city, and the warmth holds its leaves green for weeks longer, so the colour arrives in deep winter when nobody is looking up.\n\nIt grows outside the Geology Science Building at National Taiwan University, beside a dawn redwood. Somebody chose that pairing on purpose. Both trees get called living fossils, which is a dry joke to plant at the door of a building where people spend their days reading rock.\n\nGinkgo is uncommon in lowland Taiwan, and a full grown one on an open campus with nothing between you and it is worth the walk on its own. The campus keeps that walk short: the Common Three Pines stand a few minutes away on the same road, so the two stops read as one afternoon.\n\nThe age is the gap in this entry. Figures circulate, from a few decades to a planting under Japanese rule, and none of them holds up when you go looking for the source behind it, so the field stays empty rather than filled with whichever number we like best. If you know when this tree went in, tell us and it goes on the page.",
+      "verified_sources": [
+        "https://raywang1016.pixnet.net/blog/posts/9441993434"
+      ],
+      "access": "Free. Open university campus with no gate or admission fee.",
+      "transport": "NTU main campus; roughly 10-15 minute walk from Gongguan MRT Station (Songshan-Xindian Line) or Taipower Building MRT Station. Close to the Common Three Pines, an easy joint stop on the same campus walk.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": { "months": [1], "kind": "autumn colour", "label": "January, when the lowland heat finally lets it turn gold" }
+    }
+  ]
+}

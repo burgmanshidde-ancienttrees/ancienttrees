@@ -4798,6 +4798,15 @@
     "note": "Single-tree write, done in session rather than dispatching a whole agent for one tree: wrote ngn_001 story directly from its verify_notes (already reviewed in full), built the city page, merged, built and pushed. Canonicalised species to Edo-higan Cherry (Prunus itosakura), a new binomial not colliding with existing corpus entries.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "taipei",
+    "kind": "write",
+    "tokens": 34000,
+    "trees": 4,
+    "note": "Opened Taipei (ranked #152, target 10, was at zero) from already-verified research: write-stories agent wrote all 4 stories in one pass, main session built the city page and merged. All flagged, all location_precision approximate, hedges preserved (camphor age range, pine estimate arithmetic, ginkgo age left empty).",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
