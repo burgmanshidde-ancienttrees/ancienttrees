@@ -56,6 +56,19 @@ UA = "AncientTrees/1.0 (https://ancienttrees.app; info@ancienttrees.app) photo-v
 # rendering, is 62 MB and fixes the thing that is actually broken.
 WIDTHS = (500,)
 
+# The widths the MANIFEST may record, which is not the same list. Fetching a
+# second width from Wikimedia for all 374 of them would add roughly 326 MB to
+# this repository (measured 2026-09-03 over six files: their 1280 renderings
+# average 5.1x the bytes of their 500, and re-encoding buys nothing because
+# those files are already efficiently encoded). So nothing here fetches a 1280.
+#
+# What DOES exist at 1280 is our own photographs, the ones somebody sent us,
+# resized from the original we hold. thumbUrl() has to be told about those or
+# it falls through to the original, which is how a 6.6 MB file ended up being
+# the hero on a phone. The manifest is built from what is on disk, so listing a
+# width here is a permission to notice it, never a promise that it exists.
+KNOWN_WIDTHS = (500, 1280)
+
 # A licence that does not permit us to host a copy. Matched on the recorded
 # licence string, and anything unrecognised is skipped rather than assumed.
 def may_rehost(lic):
@@ -93,16 +106,17 @@ def slugify(s):
 def wikimedia_at(url, width):
     """Wikimedia's own thumbnail URL at this width, or None if not Wikimedia.
 
-    Only the buckets Wikimedia actually serves: probed 2026-07-31 and recorded
-    in images.ts, 250/330/500/960 are live and 400/800 return 400s."""
+    Only the buckets Wikimedia actually serves: re-probed 2026-09-03 on two
+    different files, 250/330/500/960/1280/1920 are live and 320/400/640/800/
+    1000/1024/1600/2000/2560 all return 400."""
     if "upload.wikimedia.org/wikipedia/commons/" not in url or "/thumb/" in url:
         return None
     head, _, tail = url.partition("/wikipedia/commons/")
     fname = tail.split("/")[-1]
     if not re.search(r"\.(jpe?g|png|gif)$", fname, re.I):
         return None
-    buckets = [250, 330, 500, 960]
-    w = next((b for b in buckets if width <= b), 960)
+    buckets = [250, 330, 500, 960, 1280, 1920]
+    w = next((b for b in buckets if width <= b), 1920)
     return "%s/wikipedia/commons/thumb/%s/%dpx-%s" % (head, tail, w, fname)
 
 
@@ -144,7 +158,7 @@ def write_manifest():
             if not p.get("url"):
                 continue
             base = "%s-%s" % (t["id"], slugify(t.get("name")))
-            widths = [w for w in WIDTHS if "%s-%d.jpg" % (base, w) in on_disk]
+            widths = [w for w in KNOWN_WIDTHS if "%s-%d.jpg" % (base, w) in on_disk]
             if widths:
                 man[p["url"]] = {"base": base, "widths": widths}
     out = os.path.join(ROOT, "data", "photo-manifest.json")

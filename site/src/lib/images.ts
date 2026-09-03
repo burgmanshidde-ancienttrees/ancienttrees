@@ -86,11 +86,17 @@ export function thumbUrl(url: string, width: number): string {
       const [head, tail] = splitOnce(url, "/wikipedia/commons/");
       const fname = tail.split("/").pop() ?? "";
       if (!/\.(jpe?g|png|gif)$/i.test(fname)) return url;
-      // Wikimedia only serves fixed thumbnail buckets since 2024 (probed
-      // 2026-07-31: 250/330/500/960 are live, 400/800 are 400s).
-      const buckets = [250, 330, 500, 960];
+      // Wikimedia only serves fixed thumbnail buckets since 2024. Re-probed
+      // 2026-09-03 on two different files: 250/330/500/960/1280/1920 are live,
+      // and 320/400/640/800/1000/1024/1600/2000/2560 all return 400.
+      //
+      // The list here stopped at 960 from 2026-07-31 until then, which capped
+      // every Wikimedia hero on both surfaces at 960px while 1280 sat there
+      // being served. Third time a probed verdict about Wikimedia has outlived
+      // the fact; re-probe before trusting this line.
+      const buckets = [250, 330, 500, 960, 1280, 1920];
       let w = buckets.find((b) => width <= b);
-      if (w === undefined) w = 960; // cap: largest bucket Wikimedia serves
+      if (w === undefined) w = 1920; // cap: largest bucket Wikimedia serves
       return `${head}/wikipedia/commons/thumb/${tail}/${w}px-${fname}`;
     }
     if (url.includes("images.unsplash.com/")) {
