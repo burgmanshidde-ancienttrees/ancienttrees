@@ -1,0 +1,36 @@
+{
+  "leads": [
+    {
+      "register_id": "3",
+      "species": "Baobab (Adansonia digitata)",
+      "locality": "Ala Moana Beach Park",
+      "reason": "The register lists one baobab here, but independent sources (a Honolulu blog, WebSearch snippets) describe a grove of about 11 baobabs at Ala Moana Regional Park with no single standout specimen named or described anywhere found. Fails the one-collectible-point test as investigated. A future pass with more time could try to find whether one specific baobab in the grove (e.g. the largest, or one nearest a landmark) is individually described somewhere, which would unblock it."
+    },
+    {
+      "register_id": "72,73",
+      "species": "Kamani (Calophyllum inophyllum)",
+      "locality": "Kualoa Regional Park, near fishpond",
+      "reason": "Not investigated this pass. Kualoa Regional Park is a genuine free public park, but it is on the windward/Koolauloa side of Oahu, roughly 30-40km from downtown Honolulu, a real stretch beyond the 30-minute transit day-trip framing this city page otherwise uses (all 8 published trees plus this pass's 3 additions cluster in central Honolulu / UH Manoa / Nuuanu). Worth a dedicated look, but likely needs honest 'about an hour's drive' framing rather than a day-trip label, per the island rules in BRIEF_RESEARCH.md."
+    },
+    {
+      "register_id": "1207",
+      "species": "Chinese Banyan (Ficus microcarpa)",
+      "locality": "Nuuanu Park",
+      "reason": "Register girth is 1332cm (13.3m circumference), which if accurate would be an exceptional specimen, but I could not find any independent write-up describing or naming this specific banyan (as opposed to the monkeypods at the same park, which are documented and shipped this pass as hnl_011). Worth a targeted search pass; the park itself (Nuuanu Valley Park, 2925 Pali Highway) is confirmed free and public."
+    }
+  ],
+  "blocked": [
+    {
+      "register_id": "389, 16, 921",
+      "species": "Indian Banyan / Queensland Kauri / Tamarind",
+      "locality": "Judiciary Bldg. (Aliiolani Hale), 417 S. King St, Downtown",
+      "reason": "A large banyan tree at Aliiolani Hale (the state Judiciary / Supreme Court building) was cut down on 2026-02-10 after storm damage (cracked branches, partially uprooted, leaning toward the building), per courts.state.hi.us and KITV news. Neither source names the tree precisely enough to confirm whether it is register id 389 (the Indian Banyan) or a different, unregistered banyan on the same property, and the site had public tours suspended around the removal. Given that ambiguity and the very real chance the registered banyan is the one that came down, none of the three Judiciary Building register trees are shipped this pass. A future pass should call or check courts.hawaii.gov / DAGS for which specific tree was removed before using any of these three."
+    },
+    {
+      "register_id": "499, 500",
+      "species": "Chinese Banyan / Weeping Fig",
+      "locality": "Ala Wai Canal",
+      "reason": "These are two of 58 banyans forming a continuous double-row colonnade along the Ala Wai Promenade, planted by the Outdoor Circle in 1937 as a single avenue-planting scheme. This is exactly the avenue/whole-wood case BRIEF_RESEARCH.md blocks: there is no single obvious tree to stand at and no way to individually distinguish register ids 499 and 500 from their 56 neighbours. Blocked as a collectible point, not as a quality or access problem; the promenade itself might make a fine mention in a future 'walk' feature but not as a single tree entry."
+    }
+  ]
+}

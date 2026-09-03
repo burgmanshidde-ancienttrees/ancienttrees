@@ -2,11 +2,11 @@
   "city": "Oahu",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Oahu's most remarkable trees cluster in four places. Foster Botanical Garden in downtown Honolulu holds five: a baobab, a Bodhi tree descended from the one in Bodh Gaya, a kapok older than the garden itself, a cannonball tree, and a soft-wooded quipo, all within a five minute walk behind one modest entrance fee. Moanalua Gardens keeps the Hitachi Tree, the rain tree famous from Japanese television. Thomas Square, Honolulu's oldest public park, keeps its banyans free to walk, and Ala Moana Beach Park keeps a tiered, geometric Black Olive free among its picnic lawns.",
+  "intro": "Oahu's most remarkable trees cluster in six places. Foster Botanical Garden in downtown Honolulu holds five, a baobab, a Bodhi tree from the Bodh Gaya lineage, a kapok older than the garden, a cannonball tree and a quipo, within a five minute walk behind one modest entrance fee. Moanalua Gardens keeps the Hitachi Tree, famous from Japanese television. Thomas Square and Ala Moana Beach Park keep their trees free, UH Manoa keeps a second baobab and cannonball tree on open campus, and Nuuanu Valley Park keeps a monkeypod children climb on.",
   "meta_description": "Oahu's most remarkable trees: a baobab and a Bodhi tree in one Honolulu garden, the Hitachi Tree at Moanalua, free banyans and a Black Olive.",
-  "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 8.",
+  "question_meta": "Oahu's oldest confirmed tree is a kapok planted around 1851 in Foster Botanical Garden, roughly 175 years old. Full list of 11.",
   "question_answer": "Oahu's oldest documented tree is the Hillebrand Kapok in Foster Botanical Garden, planted around 1851 by the garden's founder, William Hillebrand, on what was then his own homestead. That makes it roughly 175 years old, older than the garden itself.",
-  "question_context": "Foster Botanical Garden holds five of the eight trees on this page, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before the property became a public botanical garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, depending on which of two disagreeing sources you read. Two more of the garden's trees carry documented arrival dates: a Bodhi tree grown from a cutting of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s with a trunk already thirteen metres around. A cannonball tree and a quipo round out the five, both flagged for gaps rather than disputes. The other three trees on this page stand elsewhere, and all cost nothing to visit: the Indian banyans of Thomas Square, Honolulu's oldest public park, and the Geometry Tree of Ala Moana Beach Park, a Black Olive grown into flat, stacked tiers. The Hitachi Tree, a rain tree famous across Japan as a company emblem, is the one paid exception, eight kilometres away at Moanalua Gardens under a ticket of its own.",
+  "question_context": "Foster Botanical Garden holds five of the eleven trees on this page, and its own founding is younger than its oldest tree. William Hillebrand planted a kapok on his Honolulu homestead around 1851, decades before the property became a public botanical garden; it now stands about 27 metres tall with a trunk somewhere between four and seven metres around, depending on which of two disagreeing sources you read. Two more of the garden's trees carry documented arrival dates: a Bodhi tree grown from a cutting of the Bodh Gaya lineage, given to Mary Foster in 1913, and a baobab planted in the 1930s with a trunk already thirteen metres around. The other six trees on this page stand elsewhere and cost nothing to visit: the banyans of Thomas Square, Honolulu's oldest public park; the Geometry Tree of Ala Moana Beach Park; a second baobab and a cannonball tree on the University of Hawaii at Manoa campus; and a monkeypod in Nuuanu Valley Park, up Pali Highway from downtown. The Hitachi Tree, a rain tree famous across Japan as a company emblem, is the one paid exception, at Moanalua Gardens under a ticket of its own.",
   "faq": [
     {
       "q": "What is the oldest tree in Oahu?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Where are Oahu's most remarkable trees?",
-      "a": "Five stand inside Foster Botanical Garden in downtown Honolulu, on the edge of Chinatown, within a five minute walk of each other. The other three stand apart: the Hitachi Tree at Moanalua Gardens, and the free trees of Thomas Square and Ala Moana Beach Park."
+      "a": "Five stand inside Foster Botanical Garden in downtown Honolulu, on the edge of Chinatown, within a five minute walk of each other. The rest stand apart: the Hitachi Tree at Moanalua Gardens, the free trees of Thomas Square and Ala Moana Beach Park, a second baobab and a cannonball tree on the UH Manoa campus, and a monkeypod in Nuuanu Valley Park."
     },
     {
       "q": "Is Foster Botanical Garden free to visit?",
@@ -285,6 +285,101 @@
       },
       "verify_notes": "Species, girth (320cm, checked consistent with the recorded 101.6cm diameter) and height (47ft/14.3m) come from the City and County of Honolulu's Exceptional Trees register (Act 105 of 1975, CC0), cross-checked against the department's own earlier printed survey of the same designation. Both are the same city program rather than fully independent sources, and no age is recorded anywhere, so this stays flagged. The register's coordinates are only grid-rounded to about 1.1km, so the pin marks the park itself (Wikipedia's own coordinate for the park matches the register's rounded point) rather than the tree's exact spot within it.",
       "story": "Ala Moana Beach Park has roughly forty banyans planted for its 1937 Banyan Garden, and one tree in the park belongs to none of them. Officially it is a Black Olive, Bucida buceras, but it earned its nickname, the Geometry Tree, from the way it grows: branches stack outward in flat, level tiers rather than the tangled shape most trees settle into. Some Black Olives are pruned hard to force that look; this one has done most of the work on its own.\n\nThe species is native to the Caribbean and Central America and arrived in Hawaii as a landscaping ornamental, prized for exactly this tiered habit. The City and County of Honolulu designated it an Exceptional Tree under the state's 1975 tree-protection law, recording a trunk just over three metres round and a crown reaching about fourteen metres, rated in excellent health at its last survey.\n\nAla Moana itself has been public land since the 1930s, built from reclaimed wetland into Honolulu's busiest beach park, free to enter every day between four in the morning and ten at night. No ticket, no gate, and the tree stands among the park's open lawns rather than off any marked path, worth hunting down once you know the odd, stacked shape to look for."
+    },
+    {
+      "id": "hnl_009",
+      "name": "The UH Manoa Art Building Baobab",
+      "species": "Baobab (Adansonia digitata)",
+      "age_estimate": "about 80 years",
+      "age_min": 75,
+      "age_max": 95,
+      "girth_cm": null,
+      "location": {
+        "address": "University of Hawaii at Manoa, Art Building, 2535 McCarthy Mall, Honolulu, HI 96822",
+        "latitude": 21.2994,
+        "longitude": -157.81798,
+        "neighbourhood": "Manoa (UH Manoa campus)"
+      },
+      "verified_sources": [
+        "https://www.hawaii.edu/news/2023/04/21/grow-for-it-explore-uh-manoa-plants/",
+        "https://www.ilind.net/2019/01/29/huge-baobab-tree-tucked-into-one-side-of-the-uh-art-building/",
+        "https://www.edohawaii.com/baobab/uh.html"
+      ],
+      "access": "Free, public university campus. UH Manoa's outdoor grounds and campus walkways (including McCarthy Mall) are open to the public without admission; the tree stands beside the Art Building's exterior, not inside it.",
+      "transport": "On the UH Manoa campus; nearest TheBus stops on University Ave/Dole St, short walk (about 10 minutes) onto campus to McCarthy Mall.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "verify_notes": "Register: Hawaii Exceptional Trees list, id 1294, species Adansonia digitata, locality 'UHM campus near Art building', vitality Excellent, no girth/height recorded in that row. UH's own 2023 arboretum news piece says UH Manoa is home to 'the largest Baobab tree in the United States', located at the Art Building, 2535 McCarthy Mall, and that the building was designed around the then-30-year-old tree when Gilmore Hall (built 1935) was demolished in 1973, implying the tree predates 1943 and was already established by 1935. ilind.net (2019, local Honolulu civic blogger) independently corroborates: a photo from around 1972 shows the tree already mature beside old Gilmore Hall before demolition; UH art faculty and students insisted the tree be saved and the new building built around it. edohawaii.com gives a tree-specific coordinate (21.2994, -157.81798) and photos of people at the base for scale. Age: 'the then 30-year-old tree' in 1973 is UH's own figure via secondary sources, not a planting record; treated loosely as circa-1943 planting giving roughly 80-90 years by 2026, kept broad rather than sharpened. No measured girth found in any source. Distinct from the Ala Moana Beach Park baobab grove (an ensemble with no single standout specimen, set aside as not a collectible point) and from Foster Botanical Garden's baobab (already published as hnl_001). Alive-now evidence: UH's own arboretum feature, published 2023-04-21, describes the tree in the present tense as a current campus landmark.",
+      "story": "When the University of Hawaii tore down Gilmore Hall in 1973, one thing did not move. Art faculty and students had grown fond of the baobab already standing beside the old building, and when its replacement went up, the tree stayed exactly where it was and the new Art Building was built around it. More than fifty years later it still stands pressed against the exterior wall, close enough that photographs make it look almost part of the structure.\n\nThe University calls it the largest baobab in the United States, and the claim is plausible: baobabs are native to Africa and Madagascar and rarely reach this size far outside the tropics they evolved in, let alone on a university campus in the middle of the Pacific. The tree was already about 30 years old when the building rose around it, which puts its planting somewhere in the early 1940s, before Hawaii became a state.\n\nNobody has taped its girth for the record, and no register lists one. What survives instead is the story everyone on campus already knows: a tree stubborn enough, and loved enough, that an entire building changed shape to keep it standing."
+    },
+    {
+      "id": "hnl_010",
+      "name": "The Sinclair Cannonball Tree",
+      "species": "Cannon Ball Tree (Couroupita guianensis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 313.9,
+      "location": {
+        "address": "University of Hawaii at Manoa campus, near Bachman Hall / the visitor parking area, makai of Sinclair Library, Honolulu, HI 96822",
+        "latitude": 21.2972,
+        "longitude": -157.82,
+        "neighbourhood": "Manoa (UH Manoa campus)"
+      },
+      "verified_sources": [
+        "http://web.archive.org/web/20260521170130/http://www.botany.hawaii.edu/faculty/carr/page8.htm",
+        "http://web.archive.org/web/20251214222745/http://www.botany.hawaii.edu/faculty/carr/page14.htm",
+        "http://web.archive.org/web/20260410164739/https://www.hawaii.edu/news/2025/01/15/image-of-the-week-cannonball-flower/"
+      ],
+      "access": "Free, public university campus. UH Manoa's outdoor grounds are open to the public without admission; the tree stands in open campus landscaping near Bachman Hall / Sinclair Library, not inside any building.",
+      "transport": "On the UH Manoa campus; nearest TheBus stops on University Ave/Dole St, short walk (about 10 minutes) onto campus.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "verify_notes": "Register: Hawaii Exceptional Trees list, id 119, locality 'University of Hawaii - Manoa, Sinclair Library', girth 313.9cm, height ~18m, vitality Good. hawaii.edu itself unreachable from this environment; used the Wayback Machine's archived copies of UH Botany faculty member G. Carr's 'Campus Plants' pages instead (independently fetchable, UH's own primary source): page8.htm places it 'Makai of visitor's parking kiosk, Ewa-mauka of Bachman'; page14.htm cross-references it as a landmark between Bachman Hall and Sinclair Library, consistent with the register locality. Alive-now: UH News's own 'Image of the Week: Cannonball flower' (archived, dated 2025-01-15) is recent, dated, first-party evidence of blooming. A widely repeated claim that it was planted in 1933 by playwright Thornton Wilder appears only in search-summary form on unreachable hawaii.edu pages and is not used per the search-summary-is-a-lead rule; age left empty. No tree-level coordinate exists; pin anchored on Bachman Hall's geocoded building coordinate as the nearest fixed point and marked approximate.",
+      "story": "Its flowers grow straight out of the trunk, and so, eventually, does fruit the size of cannonballs. Couroupita guianensis is native to the rainforests of Guiana, and on the UH Manoa campus, tucked between Bachman Hall and Sinclair Library near the visitor parking kiosk, one specimen has grown a trunk 314 centimetres round with the species' strange, tangled flower stems still running down its bark.\n\nThe flowers themselves are large, fragrant and short-lived, which is presumably why UH's own news office photographed one in bloom for its January 2025 'Image of the Week'. The fruit that follows is genuinely cannonball-sized, round and hard-shelled, and it drops rather than clings, so anyone standing directly underneath should keep half an eye up.\n\nNo age is recorded for this tree anywhere UH has published. A widely repeated claim online says it was planted in 1933 by the playwright Thornton Wilder during a stint teaching at the university; it could not be independently confirmed this pass, so it is left out rather than repeated on faith. Free to see, on open campus ground, a short walk from Sinclair Library."
+    },
+    {
+      "id": "hnl_011",
+      "name": "The Nuuanu Valley Monkeypod",
+      "species": "Rain Tree (Samanea saman)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 585.2,
+      "location": {
+        "address": "Nuuanu Valley Park, 2925 Pali Highway, Honolulu, HI 96817",
+        "latitude": 21.33595,
+        "longitude": -157.83962,
+        "neighbourhood": "Nuuanu"
+      },
+      "verified_sources": [
+        "https://www.honolulumagazine.com/playground-guide-nuuanu-valley-park-in-honolulu/",
+        "https://www.honolulumagazine.com/see-photos-of-some-of-honolulus-exceptional-trees/"
+      ],
+      "access": "Free, public city park. Nuuanu Valley Park is a public playground and picnic park on Pali Highway, open to all, with its own parking lot.",
+      "transport": "About 3-4 km from downtown Honolulu up Pali Highway; TheBus route 4 runs along Pali Highway, or roughly 10-15 minutes by car from downtown.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "verify_notes": "Register: Hawaii Exceptional Trees list, id 1208, locality 'Nuuanu Park', girth 585.2cm, height ~15.5m, vitality Excellent. A second, adjacent register entry (id 1207, Chinese Banyan, same locality, 1332cm girth) is a lead, not shipped: no independent write-up naming that specific banyan was found. honolulumagazine.com's Playground Guide to Nuuanu Valley Park independently confirms the address as a free public park with 'enormous monkeypod trees', describing gigantic lower branches low enough that children climb them, with a rock placed underneath one to help access it. A separate honolulumagazine.com exceptional-trees gallery independently corroborates the park as a real, current Exceptional Tree site (naming a different registered mango there). Alive-now: a 2026-09-01 Hawaii Public Radio storm-damage roundup on Oahu's exceptional trees named other sites with storm losses and did not mention Nuuanu Park, the best available signal though not proof. Species named 'Monkeypod' locally, matched to Rain Tree (Samanea saman) per hard rule 9's canonical-name convention already used for Kauai and Singapore. No age or planting record found; girth alone cannot fix one honestly for a fast-growing species, so left empty.",
+      "story": "Someone has wedged a rock under one of the low branches here, presumably to help visitors reach it, because the rain trees of Nuuanu Valley Park, known locally as monkeypods, grow their canopy close enough to the ground that children climb, sit and walk along the branches themselves. The largest carries a trunk 585 centimetres round, registered by the City and County of Honolulu as an Exceptional Tree and rated in excellent health.\n\nThe rain tree, Samanea saman, is native to Central and South America and was brought to Hawaii as shade. It grows fast and wide rather than tall, which is exactly what makes its low, spreading branches so easy to reach. Nuuanu Valley Park itself sits a short drive up Pali Highway from downtown Honolulu, an ordinary public playground and picnic ground with its own parking lot, and a second Exceptional Tree, an enormous banyan more than thirteen metres round, grows in the same park.\n\nNo age or planting record survives, and girth alone cannot fix one honestly for a fast-growing species like this. Free, open, no ticket, and the shade is the point."
     }
   ]
 }
