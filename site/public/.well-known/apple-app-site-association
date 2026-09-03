@@ -4,20 +4,7 @@
       {
         "appIDs": ["5EWWC3M8L2.app.ancienttrees.AncientTrees"],
         "components": [
-          { "/": "/account*", "exclude": true, "comment": "signing in and deleting an account stay on the web" },
-          { "/": "/contribute*", "exclude": true },
-          { "/": "/privacy*", "exclude": true },
-          { "/": "/terms*", "exclude": true },
-          { "/": "/support*", "exclude": true },
-          { "/": "/sponsor*", "exclude": true },
-          { "/": "/press*", "exclude": true },
-          { "/": "/sources*", "exclude": true },
-          { "/": "/app*", "exclude": true, "comment": "the page telling you to get the app must not open the app" },
-          { "/": "/t/*", "exclude": true, "comment": "an unlisted shared sighting; the app has no screen for it" },
-          { "/": "/api/*", "exclude": true },
-          { "/": "/assets/*", "exclude": true },
-          { "/": "/photos/*", "exclude": true },
-          { "/": "/*", "comment": "the map, the cities, the trees: what the app is for" }
+          { "/": "/t", "comment": "a shared sighting (SharedTreeView.swift, since 2026-09-03): the thank-you mail links straight to it, and the app is the better place to open it in" }
         ]
       }
     ]
