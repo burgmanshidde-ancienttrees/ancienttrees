@@ -1,6 +1,6 @@
 {
   "country": "Japan",
-  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown. 2026-09-03 verify pass (1 agent, 4 candidates): all 4 verified and delivered to data/research/{higashiagatsuma,higashine,takayama,ofunato}-verified.json. None blocked. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 2 (1 agent, 13 candidates): 10 verified and delivered to data/research/{kaga,takahagi,otoyo,tamba,neba,toga,aga,biei,okuizumo,fujikawaguchiko}-verified.json (all National/Prefectural Natural Monuments or, for the Ken and Mary Tree, a culturally famous single specimen); 3 blocked (Miracle Pine Tree, died of saltwater intrusion post-2011 tsunami, now a preserved non-living monument; Tsurugaoka Hachimangu ginkgo tree, original 1000-year trunk toppled in a 2010 storm, root regrowth may be a separate future lead; Tree of philosophy, felled by its landowner in February 2016). Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 3 (3 agents, batches A/B/C dispatched on the remaining refill batch): batch A found 1 tree that joins Tokyo (delivered to data/research/famousjapan-batch-a-verified.json, tok_016) and 2 that fail the day-trip boundary for the city they were thought to join (Shokawa-zakura, too far from Takayama; Kamo no Okusu, administratively in Aira City not Kagoshima, and over an hour by transit from either) but read as strong single-tree-destination candidates on their own; recorded as leads below rather than re-researched from scratch by a future pass. Batch B (3 agents) delivered 3 fully verified single-tree-destination places, all shipped: Morioka (mor_001, Ishiwari-zakura), Kitamoto (kit_001, Ishito no Kaba-zakura), Iwata (iwt_001, Yuya no Naga Fuji). Batch C delivered 4 verified trees; 2 clearly pass the single-tree-destination test and shipped (Nago, nag_001, Hinpun Gajumaru; Yoshida, yos_001, Nomanji Cycad), 2 are honestly ambiguous on that test per the verifying agent's own flag and are held as leads below rather than shipped alone (Goshogawara's Junihon-yasu, Kumamoto's Jakushin-san no Kusu): both are real, alive, officially designated trees with good research already done, just not clearly a reason-for-the-trip on the evidence found. A future pass or Hidde's own judgement could still ship either. 2026-09-03: Junihon-yasu and Jakushin-san no Kusu, both previously verified and held pending a single-tree-destination judgement, were judged to clear the bar (documented enthusiast pilgrimage and a distinctive legend for the former; an active annual community rite and a purpose-built park for the latter) and published as their own single-tree places, data/cities/kanagi.json (kng_001) and data/cities/ueki.json (uek_001). Removed from this leads list. 2026-09-03 second pass: Shokawa-zakura (two 450-500y Edohigan cherries moved whole in 1960 to escape the Miboro Dam reservoir) was freshly verified against its own primary sources and clearly clears the single-tree-destination bar. Published as data/cities/shokawa.json (sho_001). Kamo no Okusu, the other candidate this pass looked at, turned out to be a duplicate: it is already published as kag_010, The Great Camphor of Kamo, inside Kagoshima's own city file (same coordinates, same Aira shrine). Nothing new was needed there; it is simply removed from this leads list.",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown. 2026-09-03 verify pass (1 agent, 4 candidates): all 4 verified and delivered to data/research/{higashiagatsuma,higashine,takayama,ofunato}-verified.json. None blocked. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 2 (1 agent, 13 candidates): 10 verified and delivered to data/research/{kaga,takahagi,otoyo,tamba,neba,toga,aga,biei,okuizumo,fujikawaguchiko}-verified.json (all National/Prefectural Natural Monuments or, for the Ken and Mary Tree, a culturally famous single specimen); 3 blocked (Miracle Pine Tree, died of saltwater intrusion post-2011 tsunami, now a preserved non-living monument; Tsurugaoka Hachimangu ginkgo tree, original 1000-year trunk toppled in a 2010 storm, root regrowth may be a separate future lead; Tree of philosophy, felled by its landowner in February 2016). Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 3 (3 agents, batches A/B/C dispatched on the remaining refill batch): batch A found 1 tree that joins Tokyo (delivered to data/research/famousjapan-batch-a-verified.json, tok_016) and 2 that fail the day-trip boundary for the city they were thought to join (Shokawa-zakura, too far from Takayama; Kamo no Okusu, administratively in Aira City not Kagoshima, and over an hour by transit from either) but read as strong single-tree-destination candidates on their own; recorded as leads below rather than re-researched from scratch by a future pass. Batch B (3 agents) delivered 3 fully verified single-tree-destination places, all shipped: Morioka (mor_001, Ishiwari-zakura), Kitamoto (kit_001, Ishito no Kaba-zakura), Iwata (iwt_001, Yuya no Naga Fuji). Batch C delivered 4 verified trees; 2 clearly pass the single-tree-destination test and shipped (Nago, nag_001, Hinpun Gajumaru; Yoshida, yos_001, Nomanji Cycad), 2 are honestly ambiguous on that test per the verifying agent's own flag and are held as leads below rather than shipped alone (Goshogawara's Junihon-yasu, Kumamoto's Jakushin-san no Kusu): both are real, alive, officially designated trees with good research already done, just not clearly a reason-for-the-trip on the evidence found. A future pass or Hidde's own judgement could still ship either. 2026-09-03: Junihon-yasu and Jakushin-san no Kusu, both previously verified and held pending a single-tree-destination judgement, were judged to clear the bar (documented enthusiast pilgrimage and a distinctive legend for the former; an active annual community rite and a purpose-built park for the latter) and published as their own single-tree places, data/cities/kanagi.json (kng_001) and data/cities/ueki.json (uek_001). Removed from this leads list. 2026-09-03 second pass: Shokawa-zakura (two 450-500y Edohigan cherries moved whole in 1960 to escape the Miboro Dam reservoir) was freshly verified against its own primary sources and clearly clears the single-tree-destination bar. Published as data/cities/shokawa.json (sho_001). Kamo no Okusu, the other candidate this pass looked at, turned out to be a duplicate: it is already published as kag_010, The Great Camphor of Kamo, inside Kagoshima's own city file (same coordinates, same Aira shrine). Nothing new was needed there; it is simply removed from this leads list. 2026-09-03 write pass (session, following verify batches d1/d2/d3): 5 verified trees published as new single-tree places under the 2026-08-31 exception (Atami ata_001, Nagi ngi_001, Odawara oda_001, Ora ora_001, Ichinohe ich_001), each with strong documented fame evidence (national designation plus an annual festival, founding legend with DNA corroboration, or an active town tourism programme). Removed from this leads list. 3 further verified trees held rather than published (Isunoki of Hachiman Shrine shm_001, Great Cedar of Hirakawa hrk_001, Atsunai Elm urh_001): real, alive, sourced, but none clearly clears the single-tree-destination bar on the evidence found (no festival, rite or documented following), per the verifying agents' own honest flags. 1 verified tree blocked outright (Great Muku of Futami goj_001): the trunk stands in a private residence's garden per the city's own source, which hard rule 10 does not bend for regardless of canopy visibility from the road.",
   "leads": [
     {
       "name": "Narao Akō Tree",
@@ -60,59 +60,8 @@
         "https://commons.wikimedia.org/wiki/File:Atsunai-no-Harunire_2010-10-30_-_panoramio.jpg",
         "https://commons.wikimedia.org/wiki/File:Atsunai-no-Harunire_2014-08-16_-_panoramio.jpg"
       ],
-      "status": "lead"
-    },
-    {
-      "name": "Azusawakejinja-no-Okusu",
-      "lat": 35.10065,
-      "lng": 139.067629,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Azusawake_Jinja_no_Okusu_-01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Azusawake_Jinja_no_Okusu_-02.jpg",
-        "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora_20100612_(Kinomiya_Shrine)_(A).jpg"
-      ],
-      "status": "lead",
-      "species": "Camphor Tree (Camphora sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Bodaiji no Icho",
-      "lat": 35.15612,
-      "lng": 134.203647,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Bodaiji_no_Icho_A.jpg",
-        "https://commons.wikimedia.org/wiki/File:Bodaiji_no_Icho_B.jpg",
-        "https://commons.wikimedia.org/wiki/File:Bodaiji_no_Icho_C.jpg"
-      ],
-      "status": "lead",
-      "species": "Ginkgo (Ginkgo sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Cedrus deodara (Yanaka, Tokyo)",
-      "lat": 35.721667,
-      "lng": 139.767333,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Cedrus_deodara_at_yanaka_4_chome_taito_tokyo_2009.JPG",
-        "https://commons.wikimedia.org/wiki/File:Cedrus_deodara_near_Myokoji,_1_Chome-7-37,_Yanaka,_Tait%C5%8D,_Tokyo_110-0001,_Japan_-_DSC08939.JPG",
-        "https://commons.wikimedia.org/wiki/File:Cedrus_deodara_near_Myokoji,_1_Chome-7-37,_Yanaka,_Tait%C5%8D,_Tokyo_110-0001,_Japan_DSC08946.JPG"
-      ],
-      "status": "lead",
-      "species": "Cedar (Cedrus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Chokozan Shidare-zakura",
-      "lat": 35.243757,
-      "lng": 139.115383,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Chokozan_no_Shidarezakura_20080329.jpg",
-        "https://commons.wikimedia.org/wiki/File:Shotaiji-5.jpg",
-        "https://commons.wikimedia.org/wiki/File:Shotaiji-6.jpg"
-      ],
-      "status": "lead",
-      "species": "Cherry (Prunus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "held",
+      "reason": "Verified 2026-09-03 as a real, sizeable old elm (girth 640cm, height 24m, estimated 300+ years), independently geotagged since at least 2005. Held rather than published: carries no natural monument designation of any kind (stated explicitly by the source), no legend, no annual rite, no visitor infrastructure, a large tree glimpsed from a highway near a tunnel portal. Also 190km from Sapporo, the nearest published city, so it cannot join an existing page under the day-trip rule either. Possible future Urahoro/Tokachi-coast cluster. Full record in data/research/famousjapan-batch-d1-verified.json (id urh_001)."
     },
     {
       "name": "Chujohimeseigan Zakura",
@@ -140,32 +89,6 @@
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
-      "name": "Eimeiji no Kinmokusei",
-      "lat": 36.261642,
-      "lng": 139.463007,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Eimeiji%27s_osmanthus,_main_stem.jpg",
-        "https://commons.wikimedia.org/wiki/File:Eimeiji_Osmanthus._Around_the_root._A.jpg",
-        "https://commons.wikimedia.org/wiki/File:Eimeiji_Osmanthus._Around_the_root._B.jpg"
-      ],
-      "status": "lead",
-      "species": "Osmanthus (Osmanthus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Fujishima no Fuji",
-      "lat": 40.166383,
-      "lng": 141.3049,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._A.jpg",
-        "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._B.jpg",
-        "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._C.jpg"
-      ],
-      "status": "lead",
-      "species": "Wisteria (Wisteria sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
       "name": "Futami no Omuku",
       "lat": 34.34428,
       "lng": 135.686578,
@@ -174,7 +97,8 @@
         "https://commons.wikimedia.org/wiki/File:Futami_no_Omuku_Aphananthe_aspera_tree._B.jpg",
         "https://commons.wikimedia.org/wiki/File:Futami_no_Omuku_Aphananthe_aspera_tree._C.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Verified 2026-09-03 as a real, alive, well-documented Aphananthe aspera (girth and species confirmed, National designation likely). BLOCKED under hard rule 10: Gojo City's own official page states the trunk stands in a private residence's garden; only the canopy overhangs the public road. \"Private houses and their grounds stay out, whatever the register says and however fine the tree. This one does not bend\" (CLAUDE.md). Full record in data/research/famousjapan-batch-d2-verified.json (id goj_001, not delivered as a live tree, kept for the record only)."
     },
     {
       "name": "Hachimanjinja no Isunoki",
@@ -185,7 +109,8 @@
         "https://commons.wikimedia.org/wiki/File:Branches_and_Leaves_of_Distylium_racemosum_tree_of_Kisami_Hachiman_Jinja_Shrine._A.jpg",
         "https://commons.wikimedia.org/wiki/File:Branches_and_Leaves_of_Distylium_racemosum_tree_of_Kisami_Hachiman_Jinja_Shrine._B.jpg"
       ],
-      "status": "lead"
+      "status": "held",
+      "reason": "Verified 2026-09-03 (National Natural Monument since 1941, two independent sources, girth 395cm, age 650-800 years, tree-level OSM pin confirmed). Held rather than published as its own place: no evidence found of pilgrimage-level individual fame, an annual rite or a purpose-built visitor site, so it does not clearly clear the 2026-08-31 single-tree-destination bar versus simply being a fine, well-documented monument tree. Full record in data/research/famousjapan-batch-d3-verified.json (id shm_001, unused prefix 'shm' reserved if a stronger fame signal turns up)."
     },
     {
       "name": "Higashiuchi no Shidare Enoki",
@@ -196,9 +121,10 @@
         "https://commons.wikimedia.org/wiki/File:Higashiuchi_no_Shidare_Enoki._of_the_Enomi_no_Ie_community_center._Southern_side.jpg",
         "https://commons.wikimedia.org/wiki/File:Higashiuchi_no_Shidare_Enoki._of_the_Maruko_Folk_Museum._A.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Hackberry (Celtis sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "The 1920/1926-designated original tree (approx 300 years old) died of old age in 1977. What remains are 12 offspring (5 seed-grown, 7 grafted), young trees scattered across two locations, a private Enomi family residence garden and the Maruko Town Local Museum garden. Fails both the alive-as-an-ancient-tree bar (offspring are post-1977, not old) and the one-collectible-point rule (diffuse across sites, one on private land). Source: museum.umic.jp/bunkazai/document/dot129.php"
     },
     {
       "name": "Hihayotenjinja-no-Horutonoki",
@@ -208,7 +134,8 @@
         "https://commons.wikimedia.org/wiki/File:Elaeocarpus_sylvestris_20100612_(a).jpg",
         "https://commons.wikimedia.org/wiki/File:Elaeocarpus_sylvestris_20100612_(b).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "Confirmed dead: the prefecturally-designated Horutonoki (Elaeocarpus sylvestris) at Hihayo-Ten Shrine, Ito, Shizuoka, fell after years of insect damage and its designation was formally removed in January 2024. Source: ja.wikipedia.org/wiki/比波預天神社 (\"長年の虫害による倒木によって2024年1月に指定解除\")."
     },
     {
       "name": "Hirakawa no O Sugi",
@@ -218,9 +145,10 @@
         "https://commons.wikimedia.org/wiki/File:%E5%B9%B3%E5%B7%9D%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE.jpg",
         "https://commons.wikimedia.org/wiki/File:%E5%B9%B3%E5%B7%9D%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE2.jpg"
       ],
-      "status": "lead",
+      "status": "held",
       "species": "Japanese Cedar (Cryptomeria sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Verified 2026-09-03 (National Natural Monument since 1928, two independent sources, girth 850cm, real hiking trail confirmed via YAMAP logs). Held rather than published as its own place: no age figure found, and no evidence of mass tourist fame or an annual rite, only specialist giant-tree-enthusiast documentation. Full record in data/research/famousjapan-batch-d3-verified.json (id hrk_001, unused prefix 'hrk' reserved if a stronger fame signal turns up)."
     },
     {
       "name": "Hodashi no Keyaki",
