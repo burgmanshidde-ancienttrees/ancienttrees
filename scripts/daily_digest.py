@@ -13,6 +13,7 @@ import hashlib
 import glob
 import json
 import os
+import re
 import subprocess
 import sys
 import unicodedata
@@ -1914,6 +1915,44 @@ def _posthog(query, key, project):
     return out.get("results") or []
 
 
+def _ph_ours():
+    """The SQL that cuts our own testing out of the app numbers.
+
+    Hidde, 2026-09-03, the morning the app went live: "everything you see
+    before was me testing - maybe you can cancel my behaviour out of the data".
+
+    The rule is FIRST SEEN, not a date range, and that distinction is the whole
+    design. Cutting events before a timestamp would drop the testing and then
+    count his next tap on the same phone as a stranger, which is worse than not
+    filtering at all: it hides a known person inside a number whose only job is
+    to say whether unknown people exist. An install whose first event predates
+    go-live is ours for good.
+
+    Returns (sql, config). The sql is a WHERE fragment, empty when there is no
+    config, because a missing file must leave the numbers unfiltered and honest
+    rather than silently drop everything.
+    """
+    path = os.path.join(ROOT, "data", "app-measure.json")
+    try:
+        cfg = json.load(open(path, encoding="utf-8"))
+    except Exception:
+        return "", None
+    live = str(cfg.get("live_at") or "").replace("T", " ").replace("Z", "")
+    if not live:
+        return "", None
+    clauses = ["""distinct_id NOT IN (
+            SELECT distinct_id FROM events GROUP BY distinct_id
+            HAVING min(timestamp) < toDateTime('%s'))""" % live]
+    # Ids come from a file we write, and are still filtered to what an install
+    # id can contain. A quote reaching a query string is how a config file
+    # becomes an injection.
+    ids = [re.sub(r"[^A-Za-z0-9-]", "", str(i)) for i in (cfg.get("excluded_installs") or [])]
+    ids = [i for i in ids if i]
+    if ids:
+        clauses.append("distinct_id NOT IN (%s)" % ", ".join("'%s'" % i for i in ids))
+    return " AND ".join(clauses), cfg
+
+
 def app_section(today):
     """What people did in the APP, and it is its own table on Hidde's ruling
     (2026-08-30, "eigen tabel").
@@ -1943,6 +1982,9 @@ def app_section(today):
                 "- Tried: %s" % why)
 
     yday = (today - datetime.timedelta(days=1)).isoformat()
+    ours, cfg = _ph_ours()
+    where = ("WHERE " + ours) if ours else ""
+    and_ours = ("AND " + ours) if ours else ""
     out = ["**What people did in the app**"]
 
     # Named explicitly, so an event that has NEVER fired still gets a line.
@@ -1959,9 +2001,10 @@ def app_section(today):
                count() AS ever,
                max(timestamp) AS last
         FROM events
+        %s
         GROUP BY event
         ORDER BY ever DESC
-        """ % yday, key, project)
+        """ % (yday, where), key, project)
 
     seen = {r[0]: r for r in rows}
     order = [e for e in known] + [e for e in seen if e not in known]
@@ -1987,11 +2030,28 @@ def app_section(today):
         SELECT count(DISTINCT distinct_id),
                countIf(timestamp >= now() - INTERVAL 14 DAY)
         FROM events
-        """, key, project)
+        %s
+        """ % where, key, project)
     n_phones = int(phones[0][0]) if phones else 0
     out.append("- Measuring since 2026-08-30, when Measure.swift went in. "
                "Unlinked to any account by design: an install id, the app "
                "version and the OS, nothing else.")
+    if cfg:
+        # What we cut, said out loud. The website's signup table names its own
+        # test rows for the same reason: a number that quietly dropped rows is
+        # a number nobody can check.
+        cut = _posthog("""
+            SELECT count(DISTINCT distinct_id), count()
+            FROM events
+            WHERE NOT (%s)
+            """ % ours, key, project)
+        if cut:
+            out.append("- Ours is not in this table: %d install(s), %d events, "
+                       "the testing before the app went live on %s. Any install "
+                       "first seen before that stays excluded, so testing on the "
+                       "same phone never reads as a stranger."
+                       % (int(cut[0][0]), int(cut[0][1]),
+                          str(cfg.get("live_at"))[:10]))
     # INSTALLS, not people, and the distinction is not pedantry: the id is a
     # UUID made on first launch and thrown away with the app, so every
     # reinstall and every TestFlight update that wipes the container counts
@@ -2011,9 +2071,9 @@ def app_section(today):
         """
         SELECT properties.tab, count()
         FROM events
-        WHERE event = 'tab' AND timestamp >= now() - INTERVAL 14 DAY
+        WHERE event = 'tab' AND timestamp >= now() - INTERVAL 14 DAY %s
         GROUP BY 1 ORDER BY 2 DESC
-        """, key, project)
+        """ % and_ours, key, project)
     if tabs:
         out.append("- Tabs opened (14d): " + "; ".join(
             "%s %d" % (t[0] or "?", int(t[1])) for t in tabs))

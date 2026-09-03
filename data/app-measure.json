@@ -1,0 +1,7 @@
+{
+  "_note": "Which app installs are OURS, so the digest can count strangers rather than testing. Hidde, 2026-09-03, on the app going live: 'everything you see before was me testing - maybe you can cancel my behaviour out of the data'.",
+  "live_at": "2026-09-03T08:30:00Z",
+  "live_at_note": "Any install whose FIRST event predates this is ours, and stays excluded forever after, so testing on the same phone never counts. Set to the moment the exclusion was built rather than the App Store release time, which nothing here can read. If the release was earlier today, correct this field and the next digest re-counts from it; the only cost of it being late is that a stranger who installed in those hours reads as us.",
+  "excluded_installs": [],
+  "excluded_installs_note": "Install ids to exclude by hand. Needed only for a REINSTALL after live_at, which makes a fresh id that would otherwise read as a new person. Find it in PostHog under a session that is obviously ours."
+}
