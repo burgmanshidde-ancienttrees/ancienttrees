@@ -34,7 +34,7 @@ interface Props {
 const { photo, alt, lang = "en", widths = [700, 1100, 1600],
         sizes = "(max-width: 800px) 100vw, 760px" } = Astro.props;
 const t = ui(lang);
-const dims = photoDims(photo as any);
+const dims = photoDims(photo);
 const credit = creditRequired(photo.license)
   ? t.photoCredit(creditText(photo.attribution, photo.license) ?? "")
   : null;
@@ -48,7 +48,11 @@ const credit = creditRequired(photo.license)
   <dialog class="photo-view" aria-label={alt}>
     <button type="button" class="pv-close" aria-label={t.photoClose}>&times;</button>
     <div class="pv-frame">
-      <img {...imgSrcset(photo.url, [960, 1280, 1920], "100vw", dims.width, dims.height)} alt={alt} loading="lazy" />
+      {/* Capped at 1280 deliberately. A wider candidate finds no vendored copy
+          and falls through to the raw original, which for a photograph somebody
+          sent us is several megabytes; the original is what the link below is
+          for, which is also where Media Viewer puts it. */}
+      <img {...imgSrcset(photo.url, [960, 1280], "100vw", dims.width, dims.height)} alt={alt} loading="lazy" />
     </div>
     <div class="pv-bar">
       {credit && <span class="pv-credit">{credit}</span>}
@@ -81,24 +85,30 @@ const credit = creditRequired(photo.license)
   // Drag down to dismiss. The gesture a thumb reaches for first, and the one
   // complaint every viewer that lacks it gets.
   let y0: number | null = null;
-  document.addEventListener("touchstart", (e) => {
-    const d = (e.target as HTMLElement).closest("dialog.photo-view");
-    y0 = d ? e.touches[0].clientY : null;
+  let dragging: HTMLDialogElement | null = null;
+  const viewerAt = (t: EventTarget | null): HTMLDialogElement | null =>
+    (t instanceof Element ? t.closest("dialog.photo-view") : null) as HTMLDialogElement | null;
+
+  document.addEventListener("touchstart", (ev) => {
+    const e = ev as TouchEvent;
+    dragging = viewerAt(e.target);
+    y0 = dragging ? e.touches[0].clientY : null;
   }, { passive: true });
-  document.addEventListener("touchmove", (e) => {
-    if (y0 === null) return;
+  document.addEventListener("touchmove", (ev) => {
+    const e = ev as TouchEvent;
+    if (y0 === null || !dragging) return;
     const dy = e.touches[0].clientY - y0;
-    const d = (e.target as HTMLElement).closest("dialog.photo-view") as HTMLDialogElement | null;
-    if (!d) return;
-    if (dy > 0) d.style.transform = `translateY(${Math.min(dy, 240)}px)`;
+    if (dy > 0) dragging.style.transform = `translateY(${Math.min(dy, 240)}px)`;
   }, { passive: true });
-  document.addEventListener("touchend", (e) => {
-    const d = (e.target as HTMLElement).closest("dialog.photo-view") as HTMLDialogElement | null;
-    if (d) {
-      const moved = d.style.transform ? parseFloat(d.style.transform.replace(/[^0-9.]/g, "")) : 0;
-      d.style.transform = "";
-      if (moved > 90) d.close();
+  document.addEventListener("touchend", (ev) => {
+    const e = ev as TouchEvent;
+    if (dragging) {
+      const moved = e.changedTouches.length && y0 !== null
+        ? e.changedTouches[0].clientY - y0 : 0;
+      dragging.style.transform = "";
+      if (moved > 90) dragging.close();
     }
+    dragging = null;
     y0 = null;
   }, { passive: true });
 </script>
