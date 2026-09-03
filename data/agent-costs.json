@@ -4888,6 +4888,15 @@
     "note": "all reachable register candidates already dispositioned by earlier passes (avenue/ensemble, twice-exhausted access, or already-blocked private land); caught a WebSearch city-name conflation (Caceres vs Alicante Calvo Sotelo) before it became a fabrication; zero new trees verified",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "site-wide photo API sweep",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "scripts/photo_hunt.py --recheck, free API sweep. Queue now 1472 trees swept / 777 with candidates. No agent dispatched.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
