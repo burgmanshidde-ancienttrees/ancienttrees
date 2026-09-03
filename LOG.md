@@ -9,6 +9,43 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (session with Hidde) - Digest: Waitlist relabeled Android-only, real App Store download numbers added
+
+He noticed the signup table still said "Waitlist" with no qualifier, the
+morning the app table's own entry recorded that /app now sends iOS to the
+store and only Android to that form. Two changes, both in
+`scripts/daily_digest.py`.
+
+**The label**: "Waitlist" to "Android waitlist" everywhere it appears in the
+digest, data unchanged, since the Supabase table only ever fills from Android
+visitors now.
+
+**Real downloads**: PostHog's app table only sees installs that actually
+open the app, so a download that never launches it (or launches once
+offline) was invisible. Added `scripts/asc_auth.py` (ES256 JWT signing for
+App Store Connect, the one dependency needing `cryptography` rather than
+stdlib) and `scripts/asc_downloads.py` (walks the Analytics Reports API's
+async request/report/instance/segment chain, caches the two stable ids in
+`data/asc-report-ids.json`). New table in the app section, sourced from
+Apple's own "App Downloads Standard" report rather than our own tracking.
+
+Credentials: `~/.ancienttrees-appstoreconnect.{env,p8}` locally (same pattern
+as the Supabase/mail creds), `ASC_KEY_ID`/`ASC_ISSUER_ID`/`ASC_PRIVATE_KEY`
+as GitHub secrets for the CI digest, which now also runs `pip install
+cryptography` as its one new step.
+
+**Verified end to end**, not just locally: triggered `data-digest.yml`
+manually with `force=true` after pushing, watched it go green, then read
+today's DATA.md entry back and confirmed both the relabeled table and the
+new "App Store downloads" block rendered.
+
+**The honest gap, not a bug**: the report request was only created today, so
+it shows "no report instances yet" rather than a number. Apple's own docs
+say a brand-new request can take up to 48h to produce its first instance;
+tomorrow's or the day after's digest is the one that should show a real
+count. If it still says "nothing yet" after 48h, that is worth a look rather
+than another 48h of waiting.
+
 ## 2026-09-03 (session) - Backlinks: 0 after ~240 outreach mails, so batch-010-app-launch re-contacts everyone with real news
 
 He asked why impressions have flattened (921/860 the last two days after climbing
