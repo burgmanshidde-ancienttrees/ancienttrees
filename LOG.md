@@ -25,7 +25,13 @@ Built full page sets by hand (intro/meta/question/FAQ, Otoyo template) for all 5
 
 **Also processed submissions 61 and 62**: both from Hidde's own account (burgmans.hidde@gmail.com), testing the app's collect flow at a Baarn house address, five minutes and two metres apart. Set `outcome: holds`, no reply needed, logged in CURATION.md.
 
-Stopped here: build/QA/commit cycle for the above took the window past the two-hour pacing mark. Next run should pick up `city_queue.py --next`'s stage-1 openable cities or continue register-backed deepening on a fresher city than Alicante/Catania.
+**The next push broke the deploy for ~7 minutes**: `i18ncheck.py` (which only runs in CI, not in this run's own preflight/build checks) caught a stale tree-count in Tokyo's Japanese overlay ("14" surrounding trees, then also "15" in the title/meta left over from before tok_016) that three consecutive pushes carried before `health.py` on the next cycle caught it. Fixed and confirmed green (`gh run view` on the deploy run: success).
+
+**Also opened a species page** (`data/species/sago-palm.json`): Yoshida's new Nomanji Cycad brought Cycas revoluta to 3 mapped trees, the page-gap threshold, alongside Kagoshima's cycad (the one 1896 sperm was first discovered in, a real landmark in botany) and Seville's Alcazar specimen. `pagegaps.py` now clear.
+
+**Dispatched one more verify pass, Warsaw** (rank 115, 18/30 trees, 1445+44 register/wikidata candidates on hand), using the Polish-Wikipedia-registry-join technique BRIEF_RESEARCH.md documents for this exact city. Delivered 1 clean tree (war_020, the Oak of Palac Szustra, a separately-registered oak from 1973 sitting 30m from the already-published Szustra Oaks group) and 4 leads held on access or a caught search-summary mismatch. Merged, wrote its story in-session, fixed the resulting FAQ count promise (18->19 trees, free-tree count 14->15) and Poland's country-page count (73->74). All builds/preflight/qa clean.
+
+Stopped here: five verify passes, six new trees plus one deepening tree plus a species page, in one continuous window. Next run should pick up `city_queue.py --next`'s stage-1 openable cities, continue Warsaw's remaining leads with fresh access research, or refill the shelf further from `_famous-germany`/`_bomenbieb-netherlands`.
 
 ## 2026-09-03 (session) - App Store screenshots: fixed the hero blur, fixed the 6.5-inch upload rejection
 

@@ -5004,6 +5004,13 @@
     "tokens": 151423,
     "trees": 0,
     "note": "0.1-0.3km cluster already published/blocked; 4 of 9 unmined candidates worked, all failed day-trip distance or access; recorded as leads/blocked"
+   },
+   {
+    "target": "warsaw",
+    "kind": "verify",
+    "tokens": 179234,
+    "trees": 1,
+    "note": "Wikipedia-registry-join found 1 clean ship (Oak of Palac Szustra, extends the existing free Morskie Oko cluster); 4 named candidates held as leads on unresolved access or a caught search-summary mismatch"
    }
   ]
  }
