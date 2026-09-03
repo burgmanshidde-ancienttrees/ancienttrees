@@ -4807,6 +4807,15 @@
     "note": "Opened Taipei (ranked #152, target 10, was at zero) from already-verified research: write-stories agent wrote all 4 stories in one pass, main session built the city page and merged. All flagged, all location_precision approximate, hedges preserved (camphor age range, pine estimate arithmetic, ginkgo age left empty).",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "crimean-linden species page",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Page-gap fill (rung 7): wrote the Crimean Linden (Tilia x euchlora) species intro from its own 4 trees (Heidelberg, Manchester, Rotterdam, Vilnius), each contributing a real fact rather than a templated line. Session work, no agent dispatched.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
