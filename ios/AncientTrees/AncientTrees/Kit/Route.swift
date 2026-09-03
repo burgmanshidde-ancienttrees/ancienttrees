@@ -23,6 +23,12 @@ public enum Route: Hashable {
     case tree(String)                          // tree id
     /// One of YOURS, which has no tree id because it is in nobody's catalogue.
     case mine(UUID)
+    /// Somebody's shared sighting, opened from its unlisted link
+    /// (ancienttrees.app/t?id=) rather than from your own collection. When
+    /// the uuid IS yours, `destination(_:_:)` shows the same editable page
+    /// `.mine` does; this case exists for everybody else, and for you on a
+    /// device that has not seen this sighting yet. See SharedTreeView.swift.
+    case shared(UUID)
     case walk(city: String, name: String)      // a walk is only unique per city
     case city(String)                          // city slug
     case collection(String)                    // collection slug

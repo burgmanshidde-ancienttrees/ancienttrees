@@ -28,8 +28,19 @@
 --
 -- Paste this in the Supabase SQL editor. It is safe to run twice.
 
+-- DEFAULT true since 2026-09-03 (Hidde, on the thank-you mail: "standaard
+-- shared bij toevoegen"): the mail that thanks somebody for a tree they just
+-- added links straight to its unlisted page, and that link has to work the
+-- moment the mail sends rather than only once they have separately found and
+-- tapped Share. The app now sets this explicitly on every sighting it writes
+-- (Kit/Sightings.swift, Kit/SightingSync.swift), so the column default below
+-- is a safety net rather than the live mechanism; it still has to match, or a
+-- row written by anything else silently reverts to the old opt-in reading.
+-- "Stop sharing the link" in the app's own menu is how somebody takes it back.
 alter table public.sightings
-  add column if not exists shared boolean not null default false;
+  add column if not exists shared boolean not null default true;
+alter table public.sightings
+  alter column shared set default true;
 
 -- Only the owner may set it, which the existing "own sightings" policy already
 -- enforces: it is their row, and nobody else can write it.

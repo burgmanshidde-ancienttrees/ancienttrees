@@ -143,12 +143,29 @@ struct ContentView: View {
         // A tree of YOURS, which was the last screen here no argument could
         // open. Sightings.demoIDs are the two that -mine-demo always creates.
         case "mine": return UUID(uuidString: value).map { Route.mine($0) }
+        // The read-only page a shared link opens for anybody who is not you.
+        // Reuses the same demo ids as "mine" so -mine-demo seeds something to
+        // point at.
+        case "shared": return UUID(uuidString: value).map { Route.shared($0) }
         case "walk":
             let parts = value.split(separator: "|", maxSplits: 1).map(String.init)
             guard parts.count == 2 else { return nil }
             return .walk(city: parts[0], name: parts[1])
         default: return nil
         }
+    }
+
+    /// A tapped Universal Link, turned into a Route. Only /t is wired (see the
+    /// .onOpenURL comment above): anything else returns nil and the app opens
+    /// without navigating, which is honest given nothing else parses a URL
+    /// back into a screen yet.
+    static func route(for url: URL) -> Route? {
+        guard let comps = URLComponents(url: url, resolvingAgainstBaseURL: false),
+              comps.path == "/t",
+              let idStr = comps.queryItems?.first(where: { $0.name == "id" })?.value,
+              let id = UUID(uuidString: idStr)
+        else { return nil }
+        return .shared(id)
     }
 
     private var origin: (lat: Double, lng: Double) {
@@ -284,6 +301,16 @@ struct ContentView: View {
                 TreeDetail(tree: sightings.asTree(s), mine: s, catalogue: cat, origin: origin)
             } else {
                 ContentUnavailableView("That tree is gone", systemImage: "leaf")
+            }
+        case .shared(let id):
+            // Yours, on this device: the real, editable page, same as .mine.
+            // Somebody who opens a link to their own tree from the thank-you
+            // mail should land where "Change the name" and "Stop sharing the
+            // link" actually live, not on a read-only copy of it.
+            if let s = sightings.all.first(where: { $0.id == id }) {
+                TreeDetail(tree: sightings.asTree(s), mine: s, catalogue: cat, origin: origin)
+            } else {
+                SharedTreeView(id: id)
             }
         case .profile:
             ProfileView(catalogue: cat)
@@ -425,6 +452,23 @@ struct ContentView: View {
                     guard let new else { return }
                     path(tab).wrappedValue.append(new)
                     navigator.push = nil
+                }
+                // A REAL LINK, not a launch argument: the app's half of
+                // Universal Links (AncientTrees.entitlements carries
+                // applinks:ancienttrees.app, 2026-09-03). The associated
+                // domain was added the same day as this handler; before that
+                // the app had no way to receive one at all, whatever the
+                // site's own apple-app-site-association implied. Kept to the
+                // one path that actually goes anywhere: the site's AASA
+                // lists only /t, a shared sighting, which is what the
+                // thank-you mail now links to (contributor_reply.py). Every
+                // other path this app COULD show a page for (a tree, a city)
+                // is deliberately not in the site's AASA yet, so tapping one
+                // still opens Safari with the real page rather than the app
+                // sitting on whatever tab it last had open.
+                .onOpenURL { url in
+                    guard let route = Self.route(for: url) else { return }
+                    navigator.push = route
                 }
                 .onChange(of: navigator.selectTab) { _, new in
                     // ONLY A TAB THAT EXISTS. A selection matching no tag

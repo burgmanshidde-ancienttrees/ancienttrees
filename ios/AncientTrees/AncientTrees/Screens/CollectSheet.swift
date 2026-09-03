@@ -79,6 +79,7 @@ struct CollectSheet: View {
         case identify          // photograph taken, more than one candidate
         case ticked(String)    // tree id, matched and claimed
         case describe          // a tree we do not map
+        case added(UUID)       // a tree we do not map, just written and sent
     }
 
     /// Where the coordinate on this record came from. Kept because it changes
@@ -177,6 +178,7 @@ struct CollectSheet: View {
                         case .ticked(let id): if let t = catalogue.tree(id) { tickedState(t) }
                         case .identify: identifyState
                         case .describe: describeForm
+                        case .added(let id): addedState(id)
                         case .intro, .place: EmptyView()
                         }
                     }
@@ -271,6 +273,9 @@ struct CollectSheet: View {
     private var hasWork: Bool {
         if case .intro = stage { return false }
         if case .ticked = stage { return false }
+        // Already recorded and sent by the time this stage shows: nothing left
+        // for the X button to throw away, same reasoning as .ticked above.
+        if case .added = stage { return false }
         return shot != nil
     }
 
@@ -673,6 +678,20 @@ struct CollectSheet: View {
                     .fixedSize(horizontal: false, vertical: true)
             }
 
+            // THE PRIVATE LINK, said before the tap rather than only after it
+            // (Hidde, 2026-09-03: sharing is now on from the moment a tree is
+            // added, so somebody can open theirs from the thank-you mail
+            // without a separate step). Consent belongs at the moment it is
+            // decided, the same reasoning as the sentence above, not buried in
+            // a menu item three screens later.
+            HStack(spacing: 8) {
+                Image(systemName: "link")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                Text("We also make a private page for it that only somebody with the link can open, so you can find your own tree again. Turn that off any time from the tree's own menu.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+
             Button { keepMine() } label: {
                 HStack { Spacer()
                     if sending { ProgressView().tint(.white) }
@@ -713,17 +732,55 @@ struct CollectSheet: View {
                                  note: why, lat: here.lat, lng: here.lng, image: shot,
                                  date: taken ?? Date())
         shot = nil
-        dismiss()
-        // Straight to the tree you just made, because that is where you finish
-        // the job: the same page ours get, with the fields you have not filled
-        // in yet open (Hidde, 2026-08-24: "als ik uit die flow kom van
-        // toegevoegde boom wil ik eindigen op de diepere boompagina van de boom
-        // die ik net heb gemaakt").
-        navigator.push = .mine(s.id)
+        // The payoff beat this path was missing (Hidde, 2026-09-03: "ik mis
+        // ook een vink bevestiging na het nemen van de foto dat de tree is
+        // toegevoegd"). tickedState already gives the matched-tree path a
+        // checkmark and a sentence; this path went straight to the tree's own
+        // page with nothing in between, so the moment somebody presses "Add
+        // this tree" had no answer of its own. addedState is that answer, and
+        // the trip to the tree's page happens when they press its own button.
+        withAnimation(.snappy) { stage = .added(s.id) }
         // And it reaches us on its own, with no second step to remember. The
         // queue-until-sign-in branch that used to be here is gone with the
         // signed-out route that created it.
         Task { await transmit(s.id) }
+    }
+
+    /// The payoff for a tree we did not already have. Mirrors tickedState:
+    /// same icon, same shape, because both answer the same question (did
+    /// this work?) and a reader should not have to learn two answers to it.
+    private func addedState(_ id: UUID) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Image(systemName: "checkmark.seal.fill")
+                .font(.system(size: 44))
+                .foregroundStyle(Brand.moss)
+            Text("You added it")
+                .font(.brand(24, .heavy))
+                .foregroundStyle(Brand.ink)
+            Text("It is in your trees now, with your photograph.")
+                .font(.subheadline)
+                .foregroundStyle(Brand.inkSoft)
+            Text("Your photograph can appear on the tree's page, with your name under it. We read every word you send.")
+                .font(.footnote)
+                .foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Button {
+                dismiss()
+                // Straight to the tree you just made, because that is where
+                // you finish the job: the same page ours get, with the fields
+                // you have not filled in yet open (Hidde, 2026-08-24: "als ik
+                // uit die flow kom van toegevoegde boom wil ik eindigen op de
+                // diepere boompagina van de boom die ik net heb gemaakt").
+                navigator.push = .mine(id)
+            } label: {
+                HStack { Spacer(); Text("See it").font(.brand(17, .bold)); Spacer() }
+                    .padding(.vertical, 15)
+                    .background(Brand.moss, in: .rect(cornerRadius: 15))
+                    .foregroundStyle(.white)
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("collect-added-done")
+        }
     }
 
     /// Sends the WORDS, and nothing else.
@@ -737,6 +794,11 @@ struct CollectSheet: View {
         var d = Submission.Draft()
         d.kind = .tree
         d.why = why
+        // The sighting's own id, so the thank-you mail can link straight to
+        // its unlisted page instead of printing the raw coordinate below.
+        // Nothing else in `tree` for a kind:tree row ever looks like a uuid,
+        // so contributor_reply.py tells the two shapes apart on sight.
+        d.tree = id.uuidString
         // Say which of the three ways this coordinate arrived. A run reading
         // the submission treats a hand-placed pin differently from a device
         // fix, and until 2026-08-28 this line called all of them GPS.

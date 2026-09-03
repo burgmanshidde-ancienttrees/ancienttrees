@@ -96,8 +96,13 @@ final class Sightings {
         /// before 2026-09-02 has no such key, and a synthesised decoder throws
         /// on a missing non-optional whatever default it carries.
         ///
-        /// Nil and false mean the same thing here, which is the honest reading:
-        /// nothing is shared until somebody taps Share.
+        /// TRUE from the moment a tree is added, since 2026-09-03 (Hidde, on
+        /// the thank-you mail wanting a working link the moment it sends
+        /// rather than only once somebody has separately tapped Share):
+        /// "standaard shared bij toevoegen". `record()` sets it explicitly.
+        /// Nil means only a file written before that date, read honestly as
+        /// not yet shared rather than defaulted forward. "Stop sharing the
+        /// link" in the menu is how somebody takes it back.
         var shared: Bool?
 
         /// The id this sighting wears wherever the app talks about TREES: the
@@ -333,6 +338,10 @@ final class Sightings {
                 date: Date = Date(), status: Status = .mine) -> Sighting {
         var s = Sighting(treeId: treeId, name: name, note: note,
                          lat: lat, lng: lng, date: date, photo: nil, status: status)
+        // Shared from the start (see the property's own comment): the mail
+        // that thanks somebody for this tree links straight to it, and that
+        // only works if the page is already live by the time the mail sends.
+        s.shared = true
         if let image, let data = Self.downsized(image) {
             let file = s.id.uuidString + ".jpg"
             try? data.write(to: folder.appendingPathComponent(file))

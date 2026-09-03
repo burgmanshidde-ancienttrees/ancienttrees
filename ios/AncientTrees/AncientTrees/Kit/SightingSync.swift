@@ -55,6 +55,7 @@ enum SightingSync {
             made.syncedAt = Date()
             if let st = row["status"] as? String,
                let k = Sightings.Status(rawValue: st) { made.status = k }
+            made.shared = row["shared"] as? Bool
 
             // The picture comes back too, or the row arrives without one and
             // the page says so, which is the same honest gap as a tree of ours
@@ -112,6 +113,16 @@ enum SightingSync {
            let data = Sightings.downsized(image) {
             let path = "\(s.userId)/\(sighting.id.uuidString).jpg"
             if await upload(path, data: data, token: s.accessToken) { stored = path }
+            // AND to the public bucket, when this one is shared, so the
+            // unlisted page has something to show the moment the row does.
+            // Sightings are shared by default now (see Sightings.record()),
+            // so this is the ordinary path rather than the rare one; a
+            // sighting somebody explicitly unshared keeps `shared == false`
+            // and this is skipped, matching unpublish()'s own deletion of the
+            // public file so a later edit cannot quietly bring it back.
+            if sighting.shared == true {
+                _ = await upload(path, data: data, token: s.accessToken, bucket: sharedBucket)
+            }
         }
 
         var row: [String: Any] = [
@@ -129,6 +140,11 @@ enum SightingSync {
         row["species"] = sighting.species
         row["age"] = sighting.age
         row["photo"] = stored
+        // Explicit, like every other field here, rather than left to the
+        // column's own default: the LOCAL value is the one somebody may have
+        // just changed by tapping "Stop sharing the link", and omitting the
+        // key would let a later edit silently re-share a tree they turned off.
+        if let shared = sighting.shared { row["shared"] = shared }
         let landed = await Supa.post("/rest/v1/sightings?on_conflict=user_id,id",
                                 token: s.accessToken, body: [row])
         // ONLY when the photograph went too, where there is one. A row without

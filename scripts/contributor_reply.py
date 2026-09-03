@@ -41,6 +41,9 @@ import tempfile
 import urllib.request
 from email.message import EmailMessage
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from mailcheck import NO_APP_LINK, APP_STORE_URL  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 SENT_PATH = os.path.join(ROOT, "data", "outreach-sent.json")
@@ -87,6 +90,12 @@ SITE = "https://ancienttrees.app"
 FEED = SITE + "/api/trees.json"
 TREE_ID = re.compile(r"^([a-z]{2,6}_\d{2,4})\b", re.I)
 COORDS = re.compile(r"(-?\d{1,3}\.\d+),\s*(-?\d{1,3}\.\d+)")
+# A tree added through the app carries the sighting's own uuid in `tree`
+# since 2026-09-03 (CollectSheet.swift's transmit()), so the mail can link to
+# its unlisted page (SightingSync.url(for:)) rather than printing the raw
+# coordinate below. Sightings are shared by default now, so the page is live
+# by the time this mail sends.
+UUID_RE = re.compile(r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", re.I)
 _feed = {}
 
 
@@ -121,15 +130,21 @@ def tree_pages():
 def tip_link(row):
     """The page of the tree this row is about, or "" when there is not one.
 
-    Two routes in, because the rows arrive from three surfaces. The worth-it
-    control names the tree by id and sends page "app" or a bare path; the
-    contribute form sends the referrer, which is a full URL when the reader
-    came from a tree page and something useless when they did not. A path is
-    only used when the feed confirms it is a tree page, so a referrer of
-    /contribute or google.com never becomes a link.
+    Three routes in, because the rows arrive from three surfaces. The
+    worth-it control names the tree by id and sends page "app" or a bare
+    path; the contribute form sends the referrer, which is a full URL when
+    the reader came from a tree page and something useless when they did
+    not; a tree added through the app sends the sighting's own uuid, which
+    has an unlisted page of its own the moment it is written (sightings are
+    shared by default, CollectSheet.swift). A path is only used when the
+    feed confirms it is a tree page, so a referrer of /contribute or
+    google.com never becomes a link.
     """
     by_id, paths = tree_pages()
-    m = TREE_ID.match((row.get("tree") or "").strip())
+    raw = (row.get("tree") or "").strip()
+    if UUID_RE.match(raw):
+        return SITE + "/t?id=" + raw.lower()
+    m = TREE_ID.match(raw)
     if m and m.group(1).lower() in by_id:
         return SITE + by_id[m.group(1).lower()]
     path = (row.get("page") or "").strip()
@@ -148,6 +163,10 @@ def tip_link(row):
 def tip_name(row):
     """What to call the tree, as the reader would recognise it."""
     t = (row.get("tree") or "").strip()
+    if UUID_RE.match(t):
+        # A sighting id names nothing a reader would recognise; fall through
+        # to the same "no name" handling a blank tree field gets.
+        t = ""
     m = re.match(r"^[a-z]{2,6}_\d{2,4}\s*\((.+)\)$", t, re.I)
     if m:
         t = m.group(1).strip()
@@ -159,14 +178,19 @@ def tip_name(row):
 def tip_lines(row):
     """Name and link one tip, as the lines it gets in the mail.
 
-    A tree added in the app has no page yet and never gets a fake one: what
-    identifies it there is the place and the coordinate the phone sent, which
-    is also all we hold.
+    Once there is a link, real or the sighting's own unlisted page, it
+    replaces the raw coordinate rather than sitting beside it: a pair of
+    numbers tells a reader nothing a tap does not tell them better. Only a
+    tree with neither a name nor any page at all, which is now just the
+    rows written before 2026-09-03, falls back to the coordinate the phone
+    sent, which is honestly all we hold for those.
     """
     name, url = tip_name(row), tip_link(row)
     city = (row.get("city") or "").strip()
     if name:
         head = "%s, %s" % (name, city) if city and city.lower() not in name.lower() else name
+    elif url:
+        head = "The tree you added near %s" % city if city else "The tree you added"
     else:
         here = COORDS.search(row.get("location_hint") or "")
         head = "The tree you added near %s" % city if city else "The tree you added"
@@ -175,7 +199,7 @@ def tip_lines(row):
     return [head] + ([url] if url else [])
 
 
-def thanks_body(rows_for_addr):
+def thanks_body(rows_for_addr, addr=None):
     """The thank-you, saying which tree it is about.
 
     Hidde, 2026-09-02, on receiving his second "thank you, we received your
@@ -195,17 +219,23 @@ def thanks_body(rows_for_addr):
         tips += tip_lines(r) + [""]
     if tips:
         out += ["What you sent us:", ""] + tips
+    # A LINK TO OPEN IN THE APP, when one of the tips above is the sighting's
+    # own unlisted page rather than a published tree (Hidde, 2026-09-03: the
+    # mail should link to the tree instead of printing coordinates, and say
+    # plainly that it can be adjusted). Opening it there, signed in, lands on
+    # the same page the app already gives you for a tree of your own, fields
+    # and all; opened anywhere else it is the read-only page, which still
+    # proves we understood what was sent.
+    if any(tip_link(r).startswith(SITE + "/t?id=") for r in rows_for_addr):
+        out += ["Open a link above in the app and you land on the tree's own "
+                "page: you can change the name, the species, the pin, or turn "
+                "the link off, any time, from its menu.", ""]
     # WHERE THEIR OWN TREES ARE (Hidde, 2026-09-02: "deze link ook toevoegen in
     # de bedank voor het toevoegen van een boom mail zodat mensen hun eigen
     # boom kunnen zien en delen"). Only to somebody with an account, because
     # /account shows what that account holds and shows an empty page to
     # anybody else, and only where a tree was actually added: a correction is
     # not a tree of theirs.
-    #
-    # It says SEE and not share, which is the honest half today. Sharing a tree
-    # of yours is the share card in the app; a link anybody can open is the
-    # unlisted page that comes next, and this line points at it the day it
-    # exists.
     if (any(r.get("user_id") for r in rows_for_addr)
             and any(r.get("kind") in ("tree", "city") for r in rows_for_addr)):
         out += ["You can see the trees you added, with your own photographs, "
@@ -214,15 +244,21 @@ def thanks_body(rows_for_addr):
             "a photograph. Every one of them makes the map better, and a real "
             "person telling us about a real tree is the best thing this "
             "project receives.", ""]
-    # Not to somebody who is already holding it. Both of the tips that
-    # prompted this were sent FROM the app, and both mails invited the sender
-    # to join a waiting list for the thing they had just used.
-    if not all((r.get("page") or "").startswith("app") for r in rows_for_addr):
-        out += ["We are also building an iPhone app. It is not live yet, and "
-                "it will make this much easier: you photograph a tree standing "
-                "in front of it and it reaches us with the location attached. "
-                "You can put your name down here and we will tell you when it "
-                "is out:", "", SITE + "/app", ""]
+    # THE APP IS LIVE, SO SAY SO (Hidde, 2026-09-03: "onze app staat live dus
+    # vertel dat en we zijn beniewud wat ie er van vindt", then "stuur dat nu
+    # altijd maar mee met de komende mailtjes"). Standing instruction on every
+    # outbound mail, mailcheck.py's check_app_link enforces it, and the exact
+    # two lines are HIS_VOICE.md's own. Somebody already using the app gets
+    # the shorter form: telling them it exists would be telling them what they
+    # are holding.
+    if addr and addr.lower() in NO_APP_LINK:
+        pass
+    elif all((r.get("page") or "").startswith("app") for r in rows_for_addr):
+        out += ["We would like to know what you think of the app:", "",
+                APP_STORE_URL, ""]
+    else:
+        out += ["Our app is also live now. We would like to know what you "
+                "think of it:", "", APP_STORE_URL, ""]
     out += ["Ancient Trees", SITE]
     return "\n".join(out) + "\n"
 
@@ -364,7 +400,7 @@ def main():
             continue
         if only != "answers" and not r.get("thanked_at") and addr not in thanked_addrs:
             subj = THANKS_SUBJECT.get(r.get("kind"), THANKS_SUBJECT["feedback"])
-            jobs.append((r, subj, thanks_body(unthanked.get(addr, [r])),
+            jobs.append((r, subj, thanks_body(unthanked.get(addr, [r]), addr),
                          "thanked_at"))
             thanked_addrs.add(addr)
         if only == "thanks":
