@@ -1,0 +1,58 @@
+{
+  "city": "Vainiai",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Vainiai, a hamlet in Jonava district, maps one tree: a white poplar among the largest recorded in Lithuania, standing in the overgrown remains of a former manor park. Declared a nature monument in 1960, it has outlived the manor around it by decades. A dedicated footpath still leads visitors to it from the road. Published alone here because it is the destination, not because the hamlet's research is finished.",
+  "meta_description": "The Vainiai Poplar: one of the largest white poplars recorded in Lithuania, in the wild remains of a former manor park, protected since 1960.",
+  "question_meta": "Vainiai's mapped tree is a white poplar among the largest recorded in Lithuania, protected since 1960.",
+  "question_answer": "A white poplar standing in the overgrown remains of the former Vainiai manor park. Its girth of 6.85 metres and height of 35.5 metres make it one of the largest white poplars recorded in Lithuania. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "The Vainiai Poplar was first declared a nature monument in 1960 and re-confirmed as a state-protected natural landscape object in 1999. The manor park it once stood in as an ornamental planting has since gone wild; the buildings are gone, and what remains reads as overgrown parkland rather than a maintained estate. No source found describes when the tree was planted, and white poplar growth rates vary too widely by site to derive an honest estimate from its girth alone, so the age is left open here. If you know it, tell us.\n\nA dedicated footpath leads to the tree from the nearby road, visible in photographs of the site, suggesting genuine, informal public access rather than a fenced or posted-private site. Populus alba is native to Lithuania's floodplains and old parkland, and specimens of this size are rare; at 6.85 metres round, this is among the largest examples the country's records hold.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Vainiai?",
+      "a": "The Vainiai Poplar's age isn't documented. It has been protected since 1960, and by size it's among the largest white poplars recorded in Lithuania."
+    },
+    {
+      "q": "How big is the tree?",
+      "a": "6.85 metres round and 35.5 metres tall."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, a dedicated footpath leads to it from the nearby road with no fee."
+    },
+    {
+      "q": "What was here before?",
+      "a": "The former Vainiai manor park. The buildings and formal grounds are gone; the poplar has outlived them in what is now overgrown parkland."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vni_001",
+      "name": "Vainiai Poplar",
+      "species": "White Poplar (Populus alba)",
+      "age_estimate": "not documented",
+      "girth_cm": 685,
+      "location": {
+        "address": "Vainių dvaro parkas (Vainiai manor park), Vainiai homestead, Šilai seniūnija, Jonava district, about 1.4 km north of Konceptas village",
+        "latitude": 55.128416,
+        "longitude": 24.284005,
+        "neighbourhood": "Vainiai, Jonava district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Vaini%C5%B3_tuopa",
+        "https://evendo.com/locations/lithuania/jonava/landmark/vainiu-tuopa"
+      ],
+      "access": "Free, in the remains of a former manor park; a footpath leads to the tree from the nearby road",
+      "transport": "In Vainiai, Jonava district, near the KK224 road; rural, best reached by car, no public transport identified",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The manor is gone and its park has gone back to scrub, and the poplar is still standing in the middle of it: 6.85 metres around at chest height, 35.5 metres tall, among the largest white poplars recorded in Lithuania. Poplars grow fast and are rarely left alone long enough to reach anything like this size, which is most of the reason this one is protected. It was declared a nature monument in 1960 and reconfirmed as a state-protected natural landscape object in 1999.\n\nNobody has put an age on it, and we are not going to derive one. White poplar growth rates vary too widely for a trunk measurement to be read backwards into years with any honesty. If a record exists somewhere in the Jonava district archives, or somebody has counted rings, tell us and the number goes on the page.\n\nWhat is left of Vainiai manor park is the sort of place that only survives because nobody got round to clearing it. A footpath leads in from the road to the tree, so the way is obvious once you are there, though getting there means a car: this is open country north of the KK224, a little over a kilometre from the nearest village, in the part of Lithuania where an old estate leaves a poplar behind and not much else.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

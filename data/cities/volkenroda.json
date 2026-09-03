@@ -1,0 +1,61 @@
+{
+  "city": "Volkenroda",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Volkenroda, a small village in Thuringia, maps one tree: the Koenigseiche, one of the thickest oaks in Germany at 9.8 metres round. Locals call it the Tausendjährige Eiche, the thousand-year oak, though the tree's own register calls that an exaggeration and dates it nearer 500 to 600 years, using a 1992 core sample and 19th-century circumference records. It is thought to be a relic of the wood pasture kept by the nearby Cistercian monastery, Kloster Volkenroda, in the centuries before. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "The Koenigseiche of Volkenroda: one of Germany's thickest oaks at 9.8 metres round, popularly called the thousand-year oak, dated nearer 500-600 years.",
+  "question_meta": "Volkenroda's mapped tree is the Koenigseiche, one of the thickest oaks in Germany at 9.8 metres round, roughly 500-600 years old.",
+  "question_answer": "The Koenigseiche, also called the Dicke Eiche (thick oak), on open ground at the edge of Volkenroda. Its girth of 9.8 metres makes it one of the thickest oaks recorded anywhere in Germany. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "The Koenigseiche's nickname, Tausendjährige Eiche, promises a thousand years, and the tree's own register calls that an exaggeration. A 1992 core sample combined with 19th-century circumference records instead puts the real age at roughly 500 to 600 years, which is still old enough to have stood through the working life of the nearby Cistercian monastery, Kloster Volkenroda. Sources disagree on whether that connection reaches back to the 10th or the 12th century; either way, this is thought to be a relic of the wood pasture the monks once kept here, a single survivor of a managed grazing landscape that has otherwise disappeared.\n\nIts girth was last measured at 9.8 metres in June 2019, making it one of the thickest oaks recorded in Germany. A lightning strike in 1989 broke a main branch, and the exposed wood inside is what let dendrologists read its age directly rather than estimate it from girth alone. Conservation work happened in 1955 and 1991; both times, a note was left in a bottle sealed inside the tree. It carries Germany's Naturdenkmal (natural monument) protection and is registered as a Baumveteran. It was last checked as vital in September 2022.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Volkenroda?",
+      "a": "The Koenigseiche, dated by a core sample and old circumference records to roughly 500-600 years, despite its 'thousand-year oak' nickname."
+    },
+    {
+      "q": "How thick is the tree?",
+      "a": "9.8 metres round, measured in June 2019, making it one of the thickest oaks recorded in Germany."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on open ground at the edge of the village with no gate or fee."
+    },
+    {
+      "q": "Is the tree still healthy?",
+      "a": "Yes, last checked as vital in September 2022, though a lightning strike in 1989 broke a main branch and repairs have been carried out twice."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vlk_001",
+      "name": "The Volkenrodaer Koenigseiche",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 600 years (locally called the \"1000-year oak\", which the tree register itself calls popular exaggeration)",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 980,
+      "height_m": 23,
+      "location": {
+        "address": "Am Pfingstrasen, edge of Volkenroda, a district of Koerner, Unstrut-Hainich district, Thuringia",
+        "latitude": 51.252031,
+        "longitude": 10.571594,
+        "neighbourhood": "Volkenroda"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/1565-koenigseiche_in_volkenroda/",
+        "https://www.monumentale-eichen.de/th%C3%BCringen/volkenroda/"
+      ],
+      "access": "Free, on public/open ground at the edge of the village.",
+      "transport": "No station nearby; Volkenroda is a small village reached by road, walkable from the village centre and the former Kloster Volkenroda monastery grounds.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Lightning did this oak an odd favour. A strike in 1989 broke off one of its main limbs, and the broken wood made it possible to date the tree properly for the first time. A core sample taken in 1992, read against nineteenth-century records of its girth, put the age at roughly 500 to 600 years. That is a serious oak and it is also about half of what the village had been calling it. Everyone here knows it as the Tausendjährige Eiche, the thousand-year oak, and the tree register that carries it says plainly that the thousand years are local exaggeration.\n\nThe trunk needs no help from folklore. It measured 9.8 metres around on 30 June 2019, which puts it among the thickest oaks in Germany, under a crown reaching 23 metres. A check in September 2022 found it still in good health.\n\nIt is thought to be a relic of wood pasture from the heyday of the Cistercian abbey at Volkenroda, whose grounds sit a short walk away. How far back the site is documented is unresolved: one account says the twelfth century, the register says the tenth, and neither has been checked against the original charter.\n\nThe tree has been patched up twice, in 1955 and again in 1991. Both times the people doing the work left a note in a bottle inside the trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "city": "Liškiava",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Liškiava, a village in Dzūkija National Park, maps one tree: a multi-stemmed lime with no clear top, split by lightning decades ago and regrown into a wide, topless silhouette. It stands at the foot of a hillfort, beside a viewing platform looking up at Liškiava's well-known Holy Trinity Church and monastery, and travellers once stopped here to bow at a roadside shrine nailed to the trunk. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "The Liškiava Lime: a topless, lightning-split lime over 400 years old, at the foot of a hillfort below Liškiava's Holy Trinity Church.",
+  "question_meta": "Liškiava's mapped tree is the Liškiava Lime, a multi-stemmed lime over 400 years old, at the foot of the village hillfort.",
+  "question_answer": "The Liškiava Lime, locally called Paklėštarės liepa, a multi-stemmed small-leaved lime at the foot of the Liškiava hillfort. An arborist assessment dates it to over 400 years. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "Lightning once split the tree's main trunk roughly in half; a 2014 arborist assessment dated the break to about two decades earlier and put the tree's age at over 400 years. Since the strike, dense clonal shoots have grown up around the mother stem, giving the tree the wide, topless silhouette that the naturalist Henrikas Gudavičius described as looking like it has no clear trunk at all. No height is recorded, because there is no clear top to measure to.\n\nBefore the Second World War, a small roadside shrine holding an image of the Virgin Mary was nailed to the trunk, and travellers passing by would stop and bow; it was removed during the Soviet period. The tree stands on a stepped slope beside a viewing platform, looking across at the Krūčius river bridge and up at Liškiava's Holy Trinity Church and monastery on the hilltop above, a well-known destination in its own right that most visitors combine with the tree below it.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Liškiava?",
+      "a": "The Liškiava Lime, dated by a 2014 arborist assessment to over 400 years, standing at the foot of the village hillfort."
+    },
+    {
+      "q": "Why does the tree look like it has no trunk?",
+      "a": "Lightning split the main stem decades ago, and dense clonal shoots have grown up around it since, giving it the wide, topless shape a local naturalist described as having no clear trunk."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands beside a public viewing platform with no fee, within Dzūkija National Park."
+    },
+    {
+      "q": "What else is nearby?",
+      "a": "Liškiava's Holy Trinity Church and monastery, on the hilltop directly above the tree, and the Krūčius river bridge about 100 metres away."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lsk_001",
+      "name": "Liškiava Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "over 400 years",
+      "age_min": 400,
+      "age_max": 500,
+      "girth_cm": 650,
+      "location": {
+        "address": "At the foot of Liškiavos alkakalnis (Liškiava hillfort), beside a viewing platform next to the RK2519 road, Liškiava, Merkinė seniūnija, Varėna district",
+        "latitude": 54.081989,
+        "longitude": 24.050129,
+        "neighbourhood": "Liškiava, within Dzūkijos nacionalinis parkas (Dzūkija National Park)"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Li%C5%A1kiavos_liepa",
+        "https://www.bernardinai.lt/liepa-bitininku-ir-dievdirbiu-medis/"
+      ],
+      "access": "Free, beside a public road and viewing platform within Dzūkija National Park; marked with an information sign",
+      "transport": "In the village of Liškiava on the Nemunas, Varėna district; walkable from the well-known Liškiava Holy Trinity Church and former monastery, which stand on the same hillfort",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Lightning split this lime roughly down the middle and the tree answered by growing back around itself. An arborist who assessed it in 2014 dated the strike to about twenty years before that. Since then dense shoots have come up and closed in around the old mother stem, so the thing standing at the foot of the Liškiava hillfort has no top and no obvious trunk; the naturalist Henrikas Gudavičius described it as looking as though it has no clear trunk at all.\n\nThe mother stem still measures 6.5 metres round at chest height. No height is recorded, because there is no crown to measure up to. The 2014 assessment put the tree at over 400 years old, and it has been state-protected since 8 February 2016.\n\nBefore the war a small shrine holding an image of the Virgin was nailed to the trunk, and travellers on the road would stop and bow to it. It was taken down under Soviet rule. Locals do not call it the Liškiava lime but Paklėštarės liepa, from the Polish word for monastery, because a church once stood on the hill it grows beneath.\n\nIt sits on a stepped slope beside a viewing platform on the road, with the Krūčius bridge a hundred metres southeast and the Holy Trinity church and former monastery on the hilltop above. Most people come to Liškiava for those. Go for both.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and the split stem inside the thicket of shoots is readable"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

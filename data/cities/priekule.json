@@ -1,0 +1,177 @@
+{
+  "city": "Priekulė",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Priekulė, a small town in Klaipėda district, protects five trees across two neighbouring parks: three oaks and a copper beech in and around Vingis Park, and a beech and fir sharing a wilder former manor park a kilometre away. All five were designated in a single 2018 ministerial order. One stands in the garden of a writer's house-museum; the rest are reachable on public paths.",
+  "meta_description": "Priekulė's five protected trees: two oaks near Vingis Park, a writer's memorial beech, and a record-sized beech and fir sharing a wild manor park.",
+  "question_meta": "Priekulė's oldest tree by size is the Vingis Park Oak, girth 5.45m, one of five trees the town protects under a single 2018 order.",
+  "question_answer": "By girth, the Vingis Park Oak, 5.45 metres round and 31.5 metres tall, in a cleared woodland patch off the main path through Vingis Park. No age has been documented for any of Priekulė's five protected trees; all were declared state-protected on the same day in 2018.",
+  "question_context": "All five of Priekulė's mapped trees were designated botanical natural heritage objects by a single Lithuanian Environment Ministry order on 16 April 2018, five separate finds identified around the town the year before. Three stand in or near Vingis Park: two oaks (one beside the park's main path, one off-path in a cleared patch, both over five metres round) and a copper beech in the garden of the Ieva Simonaitytė Memorial Museum, the summer house of the Lithuanian writer, now a public institution.\n\nA kilometre away, Kliošų parkas, a former manor landscape park that has grown wild into ordinary-looking forest, holds two more: a beech recorded by a local heritage trail as among the largest of its kind in Lithuania, and a European silver fir (kėnis) with a slightly disputed height measurement, standing close to a path that continues to a small forest cemetery and a footbridge across to the next village.\n\nNone of the five carries a documented age. Species on two of the oaks is recorded only as generic 'ąžuolas' in the source register; Quercus robur, the native pedunculate oak, is presumed rather than confirmed.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Priekulė?",
+      "a": "No age has been documented for any of Priekulė's five protected trees. By size, the Vingis Park Oak and the Kliošai Park Beech are the largest."
+    },
+    {
+      "q": "Can I visit the beech in the museum garden?",
+      "a": "It stands in the garden of the Ieva Simonaitytė Memorial Museum, a public institution; whether viewing it requires the museum's opening hours or is visible from the street was not confirmed by this pass."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all five stand on public park or heritage-trail land with no entry fee, aside from the museum-garden caveat above."
+    },
+    {
+      "q": "How are the trees connected?",
+      "a": "All five were designated on the same day, 16 April 2018, and cluster into two walkable groups about a kilometre apart: Vingis Park and Kliošų parkas."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pri_001",
+      "name": "Šperberiai Oak",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented",
+      "girth_cm": 503,
+      "location": {
+        "address": "Vingio parkas (Vingis Park), Priekulė, about 120 m northeast of the park's main entrance gate, near the Minija riverbank",
+        "latitude": 55.555108,
+        "longitude": 21.324779,
+        "neighbourhood": "Priekulė, Klaipėda district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/%C5%A0perberi%C5%B3_%C4%85%C5%BEuolas",
+        "https://ve.lt/naujienos/lietuva/vakaru-lietuva/priekules-seniunijoje-rasti-5-gamtos-paveldo-objektai-1574961"
+      ],
+      "access": "Free, in a public park (Vingio parkas), beside the main path near the entrance",
+      "transport": "In Vingio parkas in the small town of Priekulė, about 15 km south of Klaipėda; walkable from the town centre",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Oaks in this part of Europe usually spread rather than climb. This one is 32.5 metres tall, a height you would expect from a spruce, over a trunk 5.03 metres round. It takes its name from the Šperberiai family, who owned the Priekulė manor and the ground it grows on.\n\nOfficial recognition came late. A survey of the Priekulė district in 2017 turned up five natural heritage objects nobody had on the books, and on 16 April 2018 the environment minister's order No. D1-300 protected this oak among them. Four other trees on this list carry that same order, all of them within a walk of this one, in a town of a few thousand people.\n\nIt stands on a slope in Vingis Park, roughly 120 metres in from the main gate, sixty metres from the Minija. When the river comes up the ground around the trunk floods, and the park keeps the spot cleared and maintained.\n\nTwo things nobody has written down. There is no age on record, and the register says only ąžuolas, oak, without naming the species. Pedunculate oak is the overwhelming default in Lithuania and that is our assumption rather than a fact on file. If you know this tree, or you can tell a pedunculate from a sessile oak at a glance, tell us and we will correct the page.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "pri_002",
+      "name": "Vingis Park Oak",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented",
+      "girth_cm": 545,
+      "location": {
+        "address": "Vingio parkas (Vingis Park), Priekulė, about 400 m northeast of the park's main gate (near the Ieva Simonaitytė memorial museum), off the main path in a wooded area",
+        "latitude": 55.55641,
+        "longitude": 21.32878,
+        "neighbourhood": "Priekulė, Klaipėda district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Vingio_parko_%C4%85%C5%BEuolas",
+        "https://ve.lt/naujienos/lietuva/vakaru-lietuva/priekules-seniunijoje-rasti-5-gamtos-paveldo-objektai-1574961"
+      ],
+      "access": "Free, in a public park (Vingio parkas); cleared area and information sign mark the tree, reached via the park's main walking path",
+      "transport": "In Vingio parkas in the small town of Priekulė, about 15 km south of Klaipėda; walkable from the town centre",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "To reach this oak you walk past a dead one. Roughly 400 metres northeast of the main gate of Vingis Park the path goes by the remains of the fallen Priekulė Oak; a little further on, off the path in a patch of deciduous woodland, stands the one still going. It measures 5.45 metres around at chest height and 31.5 metres tall. The ground beneath it has been cleared of undergrowth and a sign put up, and on 16 April 2018 it was protected by the same ministerial order that covers four other trees on this list.\n\nOur pin is honest rather than exact, and it is worth saying why. The Lithuanian Wikipedia entry and the geotag on the photograph filed with it give a coordinate identical, to six decimal places, to the one recorded for the fallen oak further back along the path. Those same sources say the two trees stand in different spots, so one of the pins is a copy of the other. We have marked this one approximate, at park level, until a fresh geotagged photograph settles it. The park is small and the tree is signposted, so you will not be hunting for long.\n\nNo age has been recorded, and the register says only ąžuolas, oak, without naming which. Pedunculate is our assumption, not a fact on file.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "pri_003",
+      "name": "Simonaitytė's Beech",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "not documented",
+      "girth_cm": 345,
+      "location": {
+        "address": "In the garden of the Ieva Simonaitytė Memorial Museum, Vingio gatvė 11, Priekulė",
+        "latitude": 55.554486,
+        "longitude": 21.322875,
+        "neighbourhood": "Priekulė, Klaipėda district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Ievos_Simonaityt%C4%97s_bukas",
+        "https://www.pamatyklietuvoje.lt/lankytinos-vietos/i-simonaitytes-memorialinis-muziejus/26497"
+      ],
+      "access": "In the garden of a house museum (Ieva Simonaitytė Memorial Museum); visible from Vingio gatvė and reachable on the museum grounds, likely during museum opening hours (opening hours and any entry fee not independently confirmed by this pass)",
+      "transport": "On Vingio gatvė in the small town of Priekulė, about 15 km south of Klaipėda, on the edge of Vingio parkas",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The writer Ieva Simonaitytė spent her summers in the house this beech stands beside, and that house is now her memorial museum. The tree was the ornamental centrepiece of the garden then and it still is: red-leaved, 3.45 metres round at chest height, 20 metres tall, sharing the plot with a rose garden and a walnut. There is an information sign next to it and a bench in its shade, which tells you how the place is used.\n\nOn 16 April 2018 the environment minister's order No. D1-300 made it a state-protected natural heritage object, one of five trees on this list covered by that single order. It sits at Vingio gatvė 11, on the edge of the park where two of the others grow, so the whole set is one afternoon on foot.\n\nTwo gaps worth stating. Nobody has recorded an age for it. And the access is a museum garden rather than open ground: the museum is a public institution and not anyone's home, but we could not confirm whether the tree can be reached from the street or whether it means the museum's opening hours and whatever it charges. Assume the second, check before you set off, and if you have been, tell us how it works so we can put the answer here.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "pri_004",
+      "name": "Kliošai Park Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "not documented",
+      "girth_cm": 427,
+      "location": {
+        "address": "Kliošų (Kliošių) parkas, a former manor landscape park now grown wild as woodland, on the left bank of the Minija river, southern outskirts of Priekulė, about 120 m northwest of the informational stand at Parko gatvė 6",
+        "latitude": 55.543662,
+        "longitude": 21.326311,
+        "neighbourhood": "Priekulė, Klaipėda district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Klio%C5%A1%C5%B3_parko_bukas",
+        "https://www.gargzdumuziejus.lt/naujienos/kulturinis-pazintinis-marsrutas-eves-takais/"
+      ],
+      "access": "Free, in a former manor park now overgrown as woodland, open to walkers; a marked signpost at a nearby crossroads directs visitors, and the tree stands beside a footpath 120 m into the wood",
+      "transport": "In Kliošai, on the southern edge of Priekulė (about 15 km south of Klaipėda), roughly 1.2-1.5 km / 15-20 min walk from Priekulė's Vingio parkas cluster",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "At 37 metres this is one of the tallest trees on this list, on a trunk 4.27 metres round at chest height, and the local heritage trail claims the beeches in this old park run to the largest dimensions of their kind in Lithuania. It became a state-protected natural heritage object on 16 April 2018.\n\nThe park it grows in has quietly stopped being a park. Kliošai was a manor landscape park, laid out to be walked through and looked at; a feature on Lithuania's old estate parks describes what is there now as functioning like ordinary forest. Nobody sweeps it, nothing is mown, and a beech of these proportions turns up in what a visitor reads as plain woodland on the left bank of the Minija.\n\nGetting to it takes a little navigation. From the Šilutė to Priekulė road, turn south at the town boundary marker; a signpost at the crossroads points the way; at the end of Parko gatvė an information stand beside the block of flats at number 6 gives the local history, and the tree stands about 120 metres further along a footpath. The park's protected silver fir is another 150 to 200 metres on, so the pair make one walk.\n\nNo age is recorded anywhere we looked. If somebody has dated this beech, tell us and we will put the number on the page.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the beech turns copper and the whole old park goes with it"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "pri_005",
+      "name": "Kliošai Park Fir",
+      "species": "Silver Fir (Abies alba)",
+      "age_estimate": "not documented",
+      "girth_cm": 385,
+      "location": {
+        "address": "Kliošų (Kliošių) parkas, near the end of Parko gatvė (close to no. 11), left bank of the Minija river, southern outskirts of Priekulė",
+        "latitude": 55.542407,
+        "longitude": 21.327766,
+        "neighbourhood": "Priekulė, Klaipėda district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Klio%C5%A1%C5%B3_parko_k%C4%97nis",
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai"
+      ],
+      "access": "Free, in a former manor park now overgrown as woodland; a signpost at a nearby crossroads ('Europinis kėnis', 1 km) specifically directs visitors to it",
+      "transport": "In Kliošai, on the southern edge of Priekulė (about 15 km south of Klaipėda), roughly 1.2-1.5 km / 15-20 min walk from Priekulė's Vingio parkas cluster and about 150-200 m from the Kliošai Park Beech (pri_004)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A signpost at a crossroads outside Priekulė points down a side road and reads Europinis kėnis, one kilometre. A town that signposts a single fir is telling you something about the fir. This one measures 3.85 metres round at chest height and became a state-protected natural heritage object on 16 April 2018, under the same ministerial order as the beech a couple of hundred metres away.\n\nIts height is disputed, and we would rather say so than choose. The Lithuanian entry's infobox gives 32.8 metres. The body of the same article says the state cadastre and the information board on site both record 37 metres, which is exactly the figure recorded for the neighbouring beech, and that coincidence looks like a number that has wandered from one record into the other. The girth is the same in every source, so the tree is not in doubt, only the top of it. If you are standing at the board, read the number and tell us.\n\nNo age has been recorded either.\n\nIt grows at the edge of the old manor park near the end of Parko gatvė, by house number 11 and a farm building. The footpath alongside carries on to a small forest cemetery and a suspension bridge across to the village of Gropiškiai, so the fir is a stop on a walk rather than the end of one.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
