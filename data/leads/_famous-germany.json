@@ -1,6 +1,6 @@
 {
   "country": "Germany",
-  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03 verify pass: 3 Giessen candidates (Adam und Eva, Alte Eiche Roedgen, Schillerlinde Roedgen) and 2 Rudolstadt candidates (Freundschaftseiche, Einheitslinde) verified but held below the 4-tree floor; full write-ups in data/leads/giessen.json and data/leads/rudolstadt.json. Symbolic oaks in Germany blocked as a category, not a single tree. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 follow-up verify pass: found the 4th Giessen tree, Lindengruppe an der Lindbachquelle (Lützellinden, also a Gießen district), which clears Giessen to the 4-tree floor; all 4 delivered to data/research/giessen-verified.json (gie_001-gie_004), and data/leads/giessen.json emptied accordingly. No fourth Rudolstadt candidate was found. Three further candidates verified and delivered as single-tree-destination exceptions (2026-08-31 ruling), each a nationally or regionally famous named lime with official protection and a real reason someone would travel specifically for it: Linde in Reinborn (data/research/reinborn-verified.json, rbn_001, 14.34m girth), Tanzlinde (Effeltrich) (data/research/effeltrich-verified.json, eff_001, Nationalerbe-Baum No. 39), and Schenklengsfelder Dorflinde (data/research/schenklengsfeld-verified.json, sfd_001, 17.91m girth, possibly Germany's oldest deciduous tree). One candidate, Gerichtslinde (Klingenberg am Main), verified as alive and existing but judged NOT to clear the single-tree exception (modest 4.22m girth, no official protection found, folk age claim of 800y unsupported by its own register's 325y dendrological estimate); written up in data/leads/klingenberg-am-main.json. All 5 of these entries removed from this leads list now that they are handled. 2026-09-03 second follow-up verify pass: two further single candidates verified and held below the 4-tree floor (neither clearly clears the single-tree-destination exception), written up as data/leads/munzenberg.json (Eiche an der Kirche, WEAK) and data/leads/passau.json (Friedenslinde, UNCLEAR, recommended as a future Passau city seed instead). Both removed from this leads list.",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03 verify pass: 3 Giessen candidates (Adam und Eva, Alte Eiche Roedgen, Schillerlinde Roedgen) and 2 Rudolstadt candidates (Freundschaftseiche, Einheitslinde) verified but held below the 4-tree floor; full write-ups in data/leads/giessen.json and data/leads/rudolstadt.json. Symbolic oaks in Germany blocked as a category, not a single tree. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 follow-up verify pass: found the 4th Giessen tree, Lindengruppe an der Lindbachquelle (Lützellinden, also a Gießen district), which clears Giessen to the 4-tree floor; all 4 delivered to data/research/giessen-verified.json (gie_001-gie_004), and data/leads/giessen.json emptied accordingly. No fourth Rudolstadt candidate was found. Three further candidates verified and delivered as single-tree-destination exceptions (2026-08-31 ruling), each a nationally or regionally famous named lime with official protection and a real reason someone would travel specifically for it: Linde in Reinborn (data/research/reinborn-verified.json, rbn_001, 14.34m girth), Tanzlinde (Effeltrich) (data/research/effeltrich-verified.json, eff_001, Nationalerbe-Baum No. 39), and Schenklengsfelder Dorflinde (data/research/schenklengsfeld-verified.json, sfd_001, 17.91m girth, possibly Germany's oldest deciduous tree). One candidate, Gerichtslinde (Klingenberg am Main), verified as alive and existing but judged NOT to clear the single-tree exception (modest 4.22m girth, no official protection found, folk age claim of 800y unsupported by its own register's 325y dendrological estimate); written up in data/leads/klingenberg-am-main.json. All 5 of these entries removed from this leads list now that they are handled. 2026-09-03 second follow-up verify pass: two further single candidates verified and held below the 4-tree floor (neither clearly clears the single-tree-destination exception), written up as data/leads/munzenberg.json (Eiche an der Kirche, WEAK) and data/leads/passau.json (Friedenslinde, UNCLEAR, recommended as a future Passau city seed instead). Both removed from this leads list. 2026-09-03 third follow-up verify pass (cluster check): geographic analysis flagged three 'geleitete Linden' (guided/trained lime tree, a recognised regional folk-tree type) as a possible tight cluster in the Malsfeld/Felsberg/Knüllwald corner of Schwalm-Eder-Kreis, Hessen: Geleitete Linden Berndshausen, Geleitete Linden Dagobertshausen and Tanzlinde (Hilgershausen). All three verified alive and confirmed via baumkunde.de plus a second source each (LAGIS Hessen's historic-sites register for Berndshausen; the Wikimedia Commons gallery page 'Geleitete Linden im Schwalm-Eder-Kreis' for the other two), and genuinely close together (Berndshausen-Dagobertshausen 4.6km, Dagobertshausen-Hilgershausen 3.5km, Berndshausen-Hilgershausen 6.6km). That Commons gallery page turned out to be a real, named regional grouping (12 surviving 'geleitete Linden' across the district) rather than an invented theme, and it named a fourth specimen, the Tanzlinde of Ostheim (Malsfeld), which sits 2.0-4.0km from the other three and was independently verified the same way; it was not previously in this leads file. All four cleared the 4-tree floor as a genuine walkable-by-car cluster and were delivered to data/research/schwalm-eder-linden-verified.json (sel_001 to sel_004). The three that had lead entries here (Berndshausen, Dagobertshausen, Hilgershausen) are removed from this leads list accordingly. Other district members of the same named grouping (Dorflinde Lischeid, Dorflinde Sebbeterode, Kandelaberlinde Dorla, Tanzlinde Niedenstein) were checked for distance and are 18 to 35km from this cluster, too far to join it; they remain as separate leads. Two other Hessian lime candidates in this file, Dorflinde in Aua (Neuenstein) and Gerichtslinde Erdmannrode, were checked and are 15.5km and 33.5km from the cluster respectively, also too far to join it; left as leads. Tanzlinde (Himmelsberg), also in this file, is a different tree from Tanzlinde (Hilgershausen) despite the similar name, and sits about 45km away; left as a lead, flagged in sel_003's verify_notes to avoid future confusion between the two.",
   "leads": [
     {
       "name": "Riesenbuche bei Altmugl",
@@ -357,32 +357,6 @@
       "lng": null,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Tanzlinde.jpg"
-      ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Geleitete Linden Berndshausen",
-      "lat": 51.04336692,
-      "lng": 9.48038947,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2015-04_Doppellinde_Kn%C3%BCllwald-Berndshausen_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:2015-04_Doppellinde_Kn%C3%BCllwald-Berndshausen_02.jpg",
-        "https://commons.wikimedia.org/wiki/File:2015-04_Doppellinde_Kn%C3%BCllwald-Berndshausen_03.jpg"
-      ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Geleitete Linden Dagobertshausen",
-      "lat": 51.08062987,
-      "lng": 9.5088761,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Dagobertshausen_3-Linden_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:2015-05_ND-Dagobertshausen_3-Linden_02.jpg",
-        "https://commons.wikimedia.org/wiki/File:Dagobertshausen.JPG"
       ],
       "status": "lead",
       "species": "Lime (Tilia sp.)",
@@ -777,19 +751,6 @@
         "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34199.JPG",
         "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34200.JPG",
         "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34201.JPG"
-      ],
-      "status": "lead",
-      "species": "Lime (Tilia sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Tanzlinde (Hilgershausen)",
-      "lat": 51.10284137,
-      "lng": 9.47335168,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2007_Januar38.JPG",
-        "https://commons.wikimedia.org/wiki/File:2015-04_ND-3-Stufen-Linde_Hilgershausen(Hessen).jpg",
-        "https://commons.wikimedia.org/wiki/File:2015-04_ND-3-Stufen-Linde_Hilgershausen(Hessen)_02.jpg"
       ],
       "status": "lead",
       "species": "Lime (Tilia sp.)",

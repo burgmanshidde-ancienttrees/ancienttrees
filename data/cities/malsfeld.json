@@ -1,0 +1,158 @@
+{
+  "city": "Malsfeld",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Malsfeld maps a scattered custom rather than a town: four \"geleitete Linden\", lime trees trained for centuries into wooden frames and stone-table court sites, standing in four Hessian villages within a few kilometres of each other. Guided lindens like these once hosted a village's dances, trials and gatherings under one shaped crown; most of the type has died out. These four are still alive, still pruned to shape, and reachable inside a short drive through the Schwalm-Eder countryside.",
+  "meta_description": "Four centuries-old guided lime trees near Malsfeld, Hessen: shaped village court and dance trees, free to visit, still alive and pruned.",
+  "question_meta": "Malsfeld's oldest mapped tree is the Guided Linden of Berndshausen, a pair of shaped lime trees roughly 400 years old beside a 18th-century court site.",
+  "question_answer": "The oldest tree mapped in the Malsfeld area is the larger of the Guided Lindens of Berndshausen, a pair of trained lime trees estimated at roughly 400 years old. It stands on an open square before the fortified church in Berndshausen, part of the municipality of Knüllwald, in Hessen's Schwalm-Eder district.",
+  "question_context": "The Berndshausen pair, a summer lime and a winter lime, were grown into a wooden support frame over a sandstone table once used as a village court, a use recorded on cadastral maps from 1756 and a tithe map from 1778. That combination, a shaped lime tree standing over a stone table for judgment or assembly, is a recognised Hessian folk-tree type called a \"geleitete Linde\" or guided linden, and the Schwalm-Eder district still has a working cluster of them. Three others survive within a few kilometres: at Dagobertshausen, a group of three younger lindens before another fortified church; at Hilgershausen, a three-tiered lime trained into an octagonal frame with a seating area inside its own trunk, among the best documented guided lindens in Germany; and at Ostheim, a single hollow but vital lime on a sandstone common by the church. All four carry Naturdenkmal protection and sit on Hessen's Tanzlinden-Route. None has a train station nearby; a car is the practical way to see more than one in a visit.",
+  "hero_tree_id": "mls_003",
+  "oldest_tree_id": "mls_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Malsfeld?",
+      "a": "The larger lime of the Guided Lindens of Berndshausen, estimated at roughly 400 years old, standing before the fortified church in Berndshausen."
+    },
+    {
+      "q": "What is a \"geleitete Linde\"?",
+      "a": "A guided or trained lime tree: a lime pruned and trained over a wooden frame into a wide, flat-topped shape, historically grown over a village's court table or dance floor. Once common across Hessen, most examples have since died or been removed."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes. All four stand on open village squares, in front of a church or on a common, with no entry fee or restriction."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "None of the four villages has a train station. The nearest towns are Melsungen, Homberg (Efze) and Felsberg, each roughly 10 to 20 minutes away by car; visiting more than one tree in a day means driving between villages."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mls_001",
+      "name": "The Guided Lindens of Berndshausen",
+      "species": "Lime (Tilia sp.); a paired summer lime and winter lime",
+      "species_basis": "baumkunde.de and LAGIS Hessen both describe the pair as one summer lime and one winter lime without giving Latin binomials; ask the reader to confirm on the ground",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": 278,
+      "location": {
+        "address": "Lindenstraße 5, in front of the gate of the fortified church (Wehrkirche), 34593 Berndshausen, Gemeinde Knüllwald, Hessen, Germany",
+        "latitude": 51.04336692,
+        "longitude": 9.48038947,
+        "neighbourhood": "Berndshausen, Gemeinde Knüllwald"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/1718-2_geleitete_linden_in_berndshausen/",
+        "https://www.lagis-hessen.de/de/subjects/rsrec/sn/gst/register/ort/entry/berndshausen"
+      ],
+      "access": "Free, no permission needed. The trees stand on an open square before the walled churchyard gate, in the middle of the village.",
+      "transport": "Rural Hessen, no train station nearby. Homberg (Efze) and Neukirchen are each roughly 15-20 minutes away by car.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "A sandstone table once stood under this pair of limes, and villagers gathered around it to settle disputes. Cadastral maps from 1756 and a tithe map from 1778 both mark the spot: two trees, community lindens, beside what the records call a court site. Nobody meets there for judgment anymore, but the trees are still shaped the way a court tree was meant to be shaped, trained over a wooden frame into a wide, level canopy a village could stand under together.\n\nOne is a summer lime, the other a winter lime, planted or grown together so long ago that the pairing itself became part of the tradition. The larger, measured at 2.78 metres round and 6.5 metres tall, is put at roughly 400 years old. Both carry double protection, as a Naturdenkmal and as a registered \"Baumveteran\", and both are part of Hessen's Tanzlinden-Route, a trail linking the region's surviving trained dance and court lindens.\n\nThe type is dying out. Berndshausen's pair is one of a handful left in the Schwalm-Eder district where a village still keeps its guided linden alive, still pruned into shape, standing exactly where the old maps say it always has.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mls_002",
+      "name": "The Guided Lindens of Dagobertshausen",
+      "species": "Lime (Tilia sp., a cultivated form locally recorded as \"Holländische Linde\"/Dutch Lime)",
+      "species_basis": "baumkunde.de records the cultivar name 'Holländische Linde' without a Latin binomial; usually Tilia x europaea but not independently confirmed, ask the reader",
+      "age_estimate": "at least 120 years, likely 120 to 150 years",
+      "age_min": 120,
+      "age_max": 160,
+      "girth_cm": 188,
+      "location": {
+        "address": "In front of the fortified church (Wehrkirche), Dagobertshausen, Gemeinde Malsfeld, 34323 Hessen, Germany",
+        "latitude": 51.08062987,
+        "longitude": 9.5088761,
+        "neighbourhood": "Dagobertshausen, Gemeinde Malsfeld"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/5414-geleitete_linden_in_dagobertshausen/",
+        "https://commons.wikimedia.org/wiki/Geleitete_Linden_im_Schwalm-Eder-Kreis"
+      ],
+      "access": "Free, no permission needed. The trees stand on an open square before the fortified church, in the middle of the village.",
+      "transport": "Rural Hessen, no train station nearby. Melsungen is roughly 15 minutes away by car.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Three lindens grow as one group here, trained and pruned together beside a historic stone table once used for village assembly, in front of Dagobertshausen's fortified church. Hollowed out by age and cut back hard and often, they are still, by the local environmental authority's own account, vital.\n\nThat authority placed the group under Naturdenkmal protection in 2008, estimating the trees were already at least 120 years old at the time, which puts them past 140 today. A 2017 survey measured the recorded specimen at 1.88 metres round and 5.5 metres tall, a cultivated lime the register lists locally as \"Holländische Linde\", Dutch lime, rather than a wild-growing tree.\n\nThe group is younger than its neighbours in Berndshausen and Hilgershausen, both a few kilometres away, but it belongs to the same practice: a Hessian village growing its meeting tree into a shape rather than simply letting it stand, so that people could gather under a canopy trained wide and low enough to shelter a crowd underneath it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mls_003",
+      "name": "The Tanzlinde of Hilgershausen",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "species_basis": "baumkunde.de records it as 'Winter-Linde', which in German dendrology usually denotes Tilia cordata; not independently confirmed beyond the source's own naming",
+      "age_estimate": "roughly 300 to 380 years; sources disagree on the planting date",
+      "age_min": 280,
+      "age_max": 380,
+      "girth_cm": 291,
+      "height_m": 9,
+      "location": {
+        "address": "An der Linde, corner of Schulberg, Hilgershausen, Stadt Felsberg, 34587 Hessen, Germany",
+        "latitude": 51.10284137,
+        "longitude": 9.47335168,
+        "neighbourhood": "Hilgershausen, Stadt Felsberg"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/3244-tanzlinde_in_felsberg_hilgershausen/",
+        "https://commons.wikimedia.org/wiki/Category:Tanzlinde_(Hilgershausen)"
+      ],
+      "access": "Free, no permission needed. The tree stands on an open square in the village, a former dance and court site.",
+      "transport": "Rural Hessen, no train station nearby. Felsberg is roughly 6km, about 10 minutes, away by car.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Step inside the trunk of this lime and there is a seat waiting: a square bench built into the hollow centre, framed by three tiers of branches trained out over an octagonal wooden support. Locals call it a Dreistufenlinde, a three-tiered linden, and rank it among the best documented guided lime trees in Germany. A new oak frame went up under it in June 2022, the latest in centuries of upkeep that kept its shape from collapsing under its own weight.\n\nThe village itself is not sure exactly when it was planted. The municipality's own estimate lands around 1748; a sign on site claims 1640, a century earlier. Nobody has resolved the gap, so both dates stand, giving the tree an age put loosely at 300 to 380 years by whichever is right. A 2021 survey found it 2.91 metres round, 9 metres tall, and healthy.\n\nThe square beneath it once hosted the village's dances and, before that, its court, the same double purpose that shaped guided lindens across this stretch of Hessen. It carries both Naturdenkmal and Baumveteran protection today.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mls_004",
+      "name": "The Tanzlinde of Ostheim",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "species_basis": "baumkunde.de records it as 'Winter-Linde', which in German dendrology usually denotes Tilia cordata; not independently confirmed beyond the source's own naming",
+      "age_estimate": "roughly 300 to 350 years",
+      "age_min": 300,
+      "age_max": 350,
+      "girth_cm": 334,
+      "height_m": 5,
+      "location": {
+        "address": "Lindenring, in front of the church, Ostheim, Gemeinde Malsfeld, 34323 Hessen, Germany",
+        "latitude": 51.07938,
+        "longitude": 9.47858,
+        "neighbourhood": "Ostheim, Gemeinde Malsfeld"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/4901-tanzlinde_ostheim/",
+        "https://commons.wikimedia.org/wiki/Geleitete_Linden_im_Schwalm-Eder-Kreis"
+      ],
+      "access": "Free, no permission needed. The tree stands on a small sandstone common before the church, in the middle of the village; the Elisabethpfad pilgrimage route passes nearby.",
+      "transport": "Rural Hessen, no train station nearby. Melsungen is roughly 10-15 minutes away by car.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This lime is the thickest of Malsfeld's four guided lindens, 3.34 metres round, and by some distance the shortest, cropped back so hard and so often that it stands just 5 metres tall. What is missing in height it makes up in girth: a hollow, heavily pruned trunk that a 2017 survey still rated vital.\n\nIt stands on a small sandstone common before Ostheim's church, on ground once used as a court site, the same combination of dance floor and judgment seat that runs through every guided linden in this corner of Hessen. The Elisabethpfad, a pilgrimage route named for the 13th-century Landgravine Elisabeth of Thuringia, passes close by.\n\nOstheim's tree was not on any list until a Wikimedia contributor's survey of the district's surviving guided lindens turned it up alongside its neighbours in Berndshausen, Dagobertshausen and Hilgershausen, all within a few kilometres. Together the four are what is left of a custom that used to be common across the region and now mostly is not.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
