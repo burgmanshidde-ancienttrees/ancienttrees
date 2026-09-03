@@ -292,9 +292,12 @@ document.addEventListener("click", function (e) {
 <script>
 // One listener tracks every element carrying data-ev, so adding a funnel
 // step is an attribute, never a new script (FUNNELS.md, 2026-08-14).
+// data-detail is optional and rides along as the event's detail column
+// (homepage shelves use it to say which card, 2026-09-03), same field
+// search-home already writes typed queries into.
 document.addEventListener('click', function(e) {
   var t = e.target.closest('[data-ev]');
-  if (t) { try { at.track(t.getAttribute('data-ev')); } catch (err) {} }
+  if (t) { try { at.track(t.getAttribute('data-ev'), t.getAttribute('data-detail')); } catch (err) {} }
 });
 // The nav must know who you are (2026-08-14 consistency pass): AllTrails
 // swaps Log in for your avatar; ours swaps the word, which is the honest
