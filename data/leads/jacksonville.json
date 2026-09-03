@@ -1,0 +1,14 @@
+{
+  "city": "jacksonville",
+  "leads": [
+    {
+      "candidate": "Tough Bumelia (Sideroxylon tenax), National Champion, Florida Champion Tree Register id 1060",
+      "register_id": "Florida Champion Tree Register (ffs.fdacs.gov/ChampionTrees), PK 1060",
+      "why_not_shipped": "Found scouting Jacksonville (register-scouting.json entry, 2026-09-03) for a register to support rung 4/5 of the research workflow. Real coordinates (30.36989, -81.4855) and location text ('Next to HQ Driveway adjacent from the Curatorial Building') since Ownership Type is Public, unlike most of the register's Duval County rows, which withhold location for private trees. 29.5in circumference, 34ft height, 17ft crown spread. Not pursued to a verified entry this pass: the 'HQ' and 'Curatorial Building' have not been identified (likely a state agency or museum facility), so genuine public access is unconfirmed, and only one source exists so far. A future pass should identify the site (search the coordinates against known Jacksonville institutions), confirm walk-up access, and find a second independent source before this can verify.",
+      "source": "Wayback snapshot 2023-05-02 of https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1060 (live host unreachable from this sandbox, see data/fetch-blocklist.json)"
+    }
+  ],
+  "notes_2026_09_03_register_scout": [
+    "The Florida Champion Tree Register holds only 8 Duval County rows out of 577 statewide, and only this one has public coordinates; the rest (a Florida Champion American Elm id 32, a National Co-Champion Slash Pine id 29, two Emeritus Loblolly-Bay entries, a discontinued Live Oak and Longleaf Pine) are either private-ownership with location withheld or no longer current titleholders. This register will not supply Jacksonville's other trees; a from-zero web research pass (city parks, historic churchyards, cemeteries, per CLAUDE.md's named-places-first technique) is the route for the rest. Full scouting note in data/register-scouting.json."
+  ]
+}
