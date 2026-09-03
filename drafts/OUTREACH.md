@@ -853,3 +853,80 @@ Coimbra alone to Coimbra or any other Portuguese city.
 **The thread rule held and is worth restating**: the ask that survives a
 correction is a tree. He has now been asked four times and answered four times,
 and every answer has arrived with either a photograph or a fact.
+
+## University of Illinois Extension, the Illinois Big Tree Register, drafted 2026-09-03 (NOT SENT)
+
+**Why this one is worth sending.** 147 champion trees statewide, one per
+species, each carrying scientific and common name, county, a free-text
+location, nominator, year listed/measured, DBH, circumference, height, spread,
+a points total AND a photograph, all sitting behind one open ArcGIS endpoint
+that needs no key: `https://univofillinois.maps.arcgis.com/sharing/rest/
+content/items/0d740d4ce00c4d3e8e2b6fbe6b7ba46c/data?f=json`. It is a
+nomination-based champion register, the right shape by this project's own
+rule, run by a public university extension programme, the same shape as the
+Cal Poly ask above. Found while scouting for Chicago (#43, currently zero
+supply); it does not solve Chicago on its own (only 3 of 147 rows sit in Cook
+County, all 27 to 37 km from the Loop), but it is real supply for whichever
+other Illinois cities the queue reaches, and it is a small, clean yes to ask
+for while we are already asking Cal Poly for the same kind of thing.
+
+**The only thing missing is a licence.** The ArcGIS item's own metadata
+(`licenseInfo`, `accessInformation`, `accessTemplate`) is empty; "access:
+public" only means the map is viewable, not that the data may be reused.
+
+**To:** extension@illinois.edu (general Illinois Extension contact; the Big
+Tree Register page names no individual coordinator). Ask them to route it to
+whoever runs the forestry programme's Big Tree Register.
+
+**Draft, for Hidde to send or rewrite:**
+
+> Hello,
+>
+> I run ancienttrees.app, a map of remarkable old trees you can go and visit, live with about 2,400 trees across 320-odd places, and I'm building an iOS app alongside it.
+>
+> I found the Illinois Big Tree Register's map (go.illinois.edu/championtrees) while looking for a proper register in Illinois rather than a generic street-tree inventory, and it's exactly the kind of source I look for: real coordinates, real measurements, a photo per tree.
+>
+> I couldn't find any stated terms of use for the underlying data, so I'd rather ask than assume. Would you be happy for me to use the register on the map, crediting the University of Illinois Extension forestry program on every tree that comes from it? Happy to link back wherever helpful.
+>
+> Thanks,
+> Hidde
+
+**Notes for whoever sends it.** Do not send it as anything but Hidde. Run
+`python3 scripts/mailcheck.py` first. Tree/place counts checked against
+`scripts/stats.py` on 2026-09-03 (2,421 trees, 326 published places).
+
+## Alabama Forestry Commission, the Champion Tree Program, drafted 2026-09-03 (NOT SENT)
+
+**Why this one is smaller and worth sending anyway.** Found while scouting for
+Birmingham (#33, zero supply). Alabama's Champion Tree Program (since 1970)
+lists the state's largest known specimen per species, but unlike Illinois or
+Cal Poly it publishes only as a PDF
+(`forestry.alabama.gov/Pages/Management/Forms/Champion_Trees_2025.pdf`, ~6.8MB)
+with no API and, on this pass, no text extractable from it without a proper
+PDF library (its content streams decompress but the embedded font has no
+recoverable character map in this environment). No licence is stated anywhere
+either. So this ask does two things at once: permission, and a request for the
+list in a plainer format (a spreadsheet or CSV) if one exists internally.
+
+**To:** Dale.Dickens@forestry.alabama.gov (named contact for the programme on
+its own page).
+
+**Draft, for Hidde to send or rewrite:**
+
+> Hi Dale,
+>
+> I run ancienttrees.app, a map of remarkable old trees you can go and visit, live with about 2,400 trees across 320-odd places.
+>
+> I came across Alabama's Champion Tree Program while looking for a real tree register in Alabama rather than a generic inventory, and it's exactly the kind of curated list I look for. I found the PDF report but no stated terms of use for the data in it. Would you be happy for me to use it on the map, crediting the Alabama Forestry Commission on every tree that comes from it?
+>
+> One more thing, only if it's easy: is there a spreadsheet or CSV version of the champion tree list behind the PDF? That would save me re-typing it by hand.
+>
+> Thanks,
+> Hidde
+
+**Notes for whoever sends it.** Do not send it as anything but Hidde. Run
+`python3 scripts/mailcheck.py` first. One real lead already in hand regardless
+of this reply: a green hawthorn (Crataegus viridis) at Red Mountain Park,
+newly named state champion (Nov 2025, per jeffcogreenways.org and
+bhamnow.com), which is close enough to Birmingham to verify as a normal
+two-source lead whatever the licence answer turns out to be.
