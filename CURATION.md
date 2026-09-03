@@ -10,7 +10,17 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
-## 2026-09-03 (continuation run 3) - Refilled the shelf: 6 new single-tree Japan places, Tokyo +1; Alicante and Catania stay stuck
+## 2026-09-03 (continuation run 4) - Malsfeld: a new 4-tree place from the _famous-germany claim, guided lindens of the Schwalm-Eder district
+
+Picked up the standing `_famous-germany` verify claim (in-flight from an earlier attempt this window, 141 min left, not expired). A geographic check of the 71 uncoordinated/coordinated leads found three named lime trees clustering tightly in Hesse (Berndshausen, Dagobertshausen, Hilgershausen, all within ~7km of each other). Dispatched a time-boxed (~20 min) verify pass on the cluster.
+
+The cluster turned out to be a real, named regional grouping: Wikimedia Commons' gallery "Geleitete Linden im Schwalm-Eder-Kreis" documents surviving guided/trained lime trees (a recognised German folk-tree type, grown into wooden frames over historic village court and dance sites) across the district. The pass found a fourth specimen, Tanzlinde Ostheim, not previously in our leads file, closing the 4-tree floor. All four verified alive via baumkunde.de (a German tree register with dated site visits) plus a second independent source each (LAGIS Hessen's historic-sites register, or the Commons gallery page itself).
+
+Published as **Malsfeld** (mls_001-mls_004, Germany), a new place under the region model (villages/parks as containers, not just cities): the Guided Lindens of Berndshausen (~400y, in front of a fortified church, on an 18th-century court site), the Guided Lindens of Dagobertshausen (~120-160y, a group of three), the Tanzlinde of Hilgershausen (a three-tiered lime trained into an octagonal frame with a seat inside its own trunk, 300-380y with sources disagreeing on planting date by roughly a century, both recorded), and the Tanzlinde of Ostheim (thickest of the four at 3.34m girth, shortest at 5m tall from heavy pruning). All free, no train station nearby, a car is the practical way to see more than one. Updated Germany's country page meta_description and intro, which had drifted stale (30 cities/161 trees and 28/159 respectively, actual now 31/165).
+
+Checked and left as leads, too far to join the cluster: Dorflinde in Aua/Neuenstein (15.5km away), Gerichtslinde Erdmannrode (33.5km away). The rest of the Schwalm-Eder guided-linden gallery (Lischeid, Sebbeterode, Dorla, Niedenstein) sits 18-35km out, too spread to cluster; left in the leads file. Removed the 4 delivered entries from `data/leads/_famous-germany.json` and appended a dated note there. Claim released.
+
+: 6 new single-tree Japan places, Tokyo +1; Alicante and Catania stay stuck
 
 **prepare.py said REFILL THE SHELF FIRST** (writable pile under 60, 1097 unsourced leads). Claimed `_famous-japan` and dispatched 3 parallel verify agents on the 10 remaining ranked candidates from `famous_demand.py --next` (split into batches of 3/3/4 per BRIEF_RESEARCH.md's exposure rule, since a prior attempt in this window had already died trying to chase all 10 in one pass). All three finished cleanly:
 
