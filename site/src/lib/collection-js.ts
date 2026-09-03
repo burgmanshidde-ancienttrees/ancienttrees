@@ -72,11 +72,11 @@ window.atCollection = (function() {
   // component's own data: the meta line arrives composed, the photograph
   // arrives at the two widths TreeCard asks for, and the credit arrives only
   // when the licence obliges one. Nothing here decides any of that.
-  // `visited` adds the "Seen" badge over the photo, the same per-tree signal
-  // TreeCard.swift's own `ticked` view draws (a filled checkmark-seal capsule,
-  // top left) whenever `saved.isVisited(tree.id)` is true, regardless of
+  // "visited" adds the "Seen" badge over the photo, the same per-tree signal
+  // TreeCard.swift's own "ticked" view draws (a filled checkmark-seal capsule,
+  // top left) whenever saved.isVisited(tree.id) is true, regardless of
   // which list the card happens to render in. Web had no such badge and
-  // `hearted` used to be one blanket value for a WHOLE list rather than each
+  // "hearted" used to be one blanket value for a WHOLE list rather than each
   // card's own true state, so My trees and Favourites read as the same
   // unmarked card everywhere (Hidde, 2026-09-03).
   function card(id, c, hearted, visited) {

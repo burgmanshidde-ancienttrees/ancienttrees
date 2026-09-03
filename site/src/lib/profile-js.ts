@@ -126,7 +126,7 @@ export const PROFILE_JS = `
       // 2026-09-03: "ik zie op web geen verschil tussen de favourites rij en
       // de my trees rij - graag dezelfde logica als op app", where a card
       // always carries its own true heart state plus a "Seen" badge, per
-      // tree, per TreeCard.swift's own `ticked` view).
+      // tree, per TreeCard.swift's own "ticked" view).
       var savedSet = {}, visitedSet = {};
       saves.forEach(function(id) { savedSet[id] = true; });
       visited.forEach(function(id) { visitedSet[id] = true; });
