@@ -19,7 +19,9 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 Merged all 6: built each place's full page set by hand (intro, meta_description, question page, FAQ) following the Aga/Otama template, since the write-stories brief only fills `story`/`best_time`. Fixed one preflight NOTE (Otoyo's `paid_entry` flag was missing despite its access text saying paid) and refreshed Germany's and Japan's country-page counts (28→30 cities/159→161 trees; 36→40 cities). `city_names.py`, `tree_index.py`, `preflight.py` (0 problems), `npm run build` and `qa.py` all clean; deleted the 6 now-stale `-verified.json` files per passcheck's own list. Cost logged to `data/agent-costs.json`.
 
-Two remaining single-tree leads (tamba, toga) still need stories written; left for the next pass.
+**Two more, written in-session:** tamba and toga were the only leads left on the shelf (2 trees, below the batch size that justifies a whole write-stories agent), so wrote both stories directly from their `verify_notes` and merged: Kinone-bashi, a zelkova whose root arches underground across a river in Tamba, and Wakidani no Tochinoki, a hollow horse chestnut in Toga that lost major limbs to two heavy-snow winters. `city_names.py` mismatched "tamba" to Tamba-Sasayama, a genuinely different Hyogo municipality from Tamba City where the tree stands (caught by reverse-geocoding the tree's own coordinate); removed the wrong alias entries rather than let them stand. Japan's country-page count refreshed again (40→42 cities). Same pipeline clean (preflight 0 problems, build, qa.py).
+
+8 single-tree destinations shipped this run in total. The shelf now holds only Matera's 3 (still below the floor) and the 47 cities staged for verify; nothing left in the writable pile.
 
 ## 2026-09-03 (session with Hidde) - The app is in the store, and the website had never mentioned it
 

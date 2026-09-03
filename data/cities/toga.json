@@ -1,0 +1,62 @@
+{
+  "city": "Toga",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Toga maps one tree: Wakidani no Tochinoki, one of Japan's largest horse chestnuts, hollow through much of its trunk after losing major branches to two heavy-snow winters, 1981 and 1988. A National Natural Monument since 1926, standing free in the mountain district of Nanto, Toyama Prefecture, roughly an hour by car from the nearest expressway. Published alone here because the tree itself is the destination, not because Toga's research is finished.",
+  "meta_description": "Wakidani no Tochinoki, Toga: one of Japan's largest horse chestnuts, roughly 800 years old, hollow and free in a mountain valley.",
+  "question_meta": "Toga's oldest and only mapped tree is Wakidani no Tochinoki, a horse chestnut roughly 800 years old, free in a mountain valley.",
+  "question_answer": "Toga's only mapped tree, and its oldest, is Wakidani no Tochinoki, a Japanese Horse Chestnut estimated at roughly 800 years old on the more conservative modern reading. It stands in the Wakidani hollow of Toga, a mountain district of Nanto City, Toyama Prefecture.",
+  "question_context": "Two winters of heavy snow, 1981 and 1988, broke off major branches and visibly reduced this horse chestnut's crown, and it has not fully recovered since. What survives is one of Japan's largest tochinoki, hollow through much of its trunk, unusually smooth-barked for a species that typically knots heavily with age. The girth runs about 11.8 metres at the widest point near the ground, narrowing to 9.7 metres measured 1.5 metres up. Japan designated it a National Natural Monument on 20 October 1926. Its age carries a real disagreement worth stating plainly: local tradition puts it at roughly 1,000 years, the more recent scientific estimate is closer to 800, and neither is a ring count, so both are estimates rather than measurements; this page uses the more conservative figure. No health survey since 2020 turned up in searching, so its current condition is not fully known. What is documented is a tree that has lost real mass to weather and kept standing anyway. It is free to see, in rural mountain country roughly an hour by car from the Tonami Interchange on the Hokuriku Expressway.",
+  "hero_tree_id": "tga_001",
+  "oldest_tree_id": "tga_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Toga?",
+      "a": "Wakidani no Tochinoki, a Japanese Horse Chestnut estimated at roughly 800 years old, one of Japan's largest horse chestnuts."
+    },
+    {
+      "q": "How old is it really?",
+      "a": "Local tradition says roughly 1,000 years; the more recent scientific estimate is closer to 800. Neither is a ring count, and this page uses the more conservative figure."
+    },
+    {
+      "q": "Why is the trunk hollow?",
+      "a": "Heavy snow in the winters of 1981 and 1988 broke off major branches, and the trunk has been hollow through much of its cross-section since."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it is publicly viewable with no charge, in rural mountain country roughly an hour by car from the Tonami Interchange."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tga_001",
+      "name": "Wakidani no Tochinoki",
+      "species": "Japanese Horse Chestnut (Aesculus turbinata)",
+      "age_estimate": "roughly 800 years",
+      "age_min": 700,
+      "age_max": 1000,
+      "girth_cm": 1180,
+      "location": {
+        "address": "Wakidani, Kurigata, Toga, Nanto, Toyama Prefecture",
+        "latitude": 36.534306,
+        "longitude": 137.025444,
+        "neighbourhood": "Toga"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E8%84%87%E8%B0%B7%E3%81%AE%E3%83%88%E3%83%81%E3%83%8E%E3%82%AD",
+        "https://kunishitei.bunka.go.jp/bsys/maindetails/401/949"
+      ],
+      "access": "Free, publicly viewable.",
+      "transport": "Roughly one hour by car from the Tonami Interchange on the Hokuriku Expressway; the Toga district of Nanto City is rural mountain country.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two winters of heavy snow, 1981 and 1988, broke off major branches and visibly reduced this horse chestnut's crown, and it has not fully recovered since. What survives is one of Japan's largest tochinoki, hollow through much of its trunk, unusually smooth-barked for a species that typically knots heavily with age.\n\nThe girth runs about 11.8 metres at the widest point near the ground, narrowing to 9.7 metres measured 1.5 metres up, in the Wakidani hollow of Toga, a mountain district of Nanto City in Toyama Prefecture. Japan designated it a National Natural Monument on 20 October 1926.\n\nIts age carries a real disagreement worth stating plainly. Local tradition puts it at roughly 1,000 years; the more recent scientific estimate is closer to 800. Neither is a ring count, so both are estimates rather than measurements, and this page uses the more conservative figure.\n\nNo health survey since 2020 turned up in searching, so its current condition is not fully known. What is documented is a tree that has lost real mass to weather and kept standing anyway: hollow, hardly pristine, still there.\n\nIt is free to see, in rural mountain country roughly an hour by car from the Tonami Interchange on the Hokuriku Expressway.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

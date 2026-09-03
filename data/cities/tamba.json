@@ -1,0 +1,63 @@
+{
+  "city": "Tamba",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Tamba maps one tree: Kinone-bashi, whose name means the tree-root bridge, for the root that grew thick enough to arch underground across the Okumura River. It stands beside the approach to an 11th-century shrine in Kashiwara, under active treatment for a root-rot fungus since 2002. Published alone here because the tree itself is the destination, not because Tamba's research is finished.",
+  "meta_description": "Kinone-bashi, Tamba: a zelkova whose root arches underground across a river, roughly 1,000 years old, free beside an 11th-century shrine.",
+  "question_meta": "Tamba's oldest and only mapped tree is Kinone-bashi, a zelkova roughly 1,000 years old whose root bridges the Okumura River.",
+  "question_answer": "Tamba's only mapped tree, and its oldest, is Kinone-bashi, a Saw-leaf Zelkova estimated at roughly 1,000 years old. It stands beside the approach to Kashiwara Hachiman Shrine in Kashiwara, Tamba City, Hyogo Prefecture.",
+  "question_context": "A root did what no engineer asked it to do: one of this zelkova's roots grew thick enough to span the Okumura River underground, arching about ten metres beneath a riverbed roughly six metres wide, so the ground on either bank is connected by living wood rather than a bridge. The name follows the shape, Kinone-bashi, the tree-root bridge. The tree stands beside the approach to Kashiwara Hachiman Shrine, founded in 1024, and at 6.4 metres round and about 21 metres tall, with a crown spreading some 25 metres in every direction, it is the largest zelkova in Tamba City. Hyogo Prefecture designated it a Natural Monument in March 1970. It is not currently a healthy tree: Armillaria tabescens, a root-rot fungus, entered through damage left by past road and bridge construction nearby, and the city has been treating the infection since 2002, cutting out decayed wood and applying antagonistic fungi to slow it. It stands a short walk from JR Kashiwara Station on the Fukuchiyama Line, free and open, the root bridge visible from the path.",
+  "hero_tree_id": "tmb_001",
+  "oldest_tree_id": "tmb_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Tamba?",
+      "a": "Kinone-bashi, a Saw-leaf Zelkova estimated at roughly 1,000 years old, standing beside the approach to Kashiwara Hachiman Shrine."
+    },
+    {
+      "q": "What does the name Kinone-bashi mean?",
+      "a": "Tree-root bridge. One of the zelkova's roots grew thick enough to span the Okumura River underground, arching about ten metres beneath the riverbed."
+    },
+    {
+      "q": "Is the tree healthy?",
+      "a": "No, not currently. A root-rot fungus, Armillaria tabescens, entered through construction damage nearby, and Tamba City has been treating the infection since 2002."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in public beside the shrine approach, a short walk from JR Kashiwara Station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tmb_001",
+      "name": "Kinone-bashi (the Kashiwara Great Zelkova)",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 640,
+      "height_m": 21,
+      "location": {
+        "address": "Kashiwara-cho, Kashiwara 1, Tamba City, Hyogo Prefecture",
+        "latitude": 35.1297831,
+        "longitude": 135.0766079,
+        "neighbourhood": "Kashiwara"
+      },
+      "verified_sources": [
+        "https://www.city.tamba.lg.jp/soshiki/shakaikyoikubunkazaika/gyomuannai/7/1/2560.html",
+        "https://tambacity-kankou.jp/spot/hanameguri_kinone-bashi"
+      ],
+      "access": "Free. Stands beside the approach to Kashiwara Hachiman Shrine near the Tamba City Kashiwara branch office, open to the public.",
+      "transport": "Short walk from JR Kashiwara Station on the JR Fukuchiyama Line.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A root did what no engineer asked it to do. One of this zelkova's roots grew thick enough to span the Okumura River underground, arching about ten metres beneath a riverbed roughly six metres wide, so that the ground on either bank is connected by living wood rather than a bridge. The name follows the shape: Kinone-bashi, the tree-root bridge.\n\nThe tree stands beside the approach to Kashiwara Hachiman Shrine, founded in 1024, in the Hyogo town of Kashiwara. At 6.4 metres round and about 21 metres tall, with a crown spreading some 25 metres in every direction, it is the largest zelkova in Tamba City. Hyogo Prefecture designated it a Natural Monument in March 1970.\n\nIt is not currently a healthy tree, and the story should say so rather than look away from it. Armillaria tabescens, a root-rot fungus, entered through damage left by past road and bridge construction nearby, and the city has been treating the infection since 2002, cutting out decayed wood and applying antagonistic fungi to slow it. The tree is roughly 1,000 years old by local estimate, though nobody has cored it.\n\nIt stands a short walk from JR Kashiwara Station on the Fukuchiyama Line, free and open, the root bridge visible from the path.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
