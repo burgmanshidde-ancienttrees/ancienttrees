@@ -218,7 +218,17 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .content-page .tree-card:first-of-type { padding-top: 0.5rem; }
 .tree-card:hover { background: #fbf9f5; }
 .tree-card.active { box-shadow: inset 3px 0 0 var(--moss); background: #fbf9f5; }
-.tree-card-photo { margin: 0 0 1rem; border-radius: 8px; overflow: hidden; aspect-ratio: 3 / 2; background: var(--cream-dark); }
+.tree-card-photo { position: relative; margin: 0 0 1rem; border-radius: 8px; overflow: hidden; aspect-ratio: 3 / 2; background: var(--cream-dark); }
+/* The "Seen" badge (collection-js.ts, 2026-09-03), a per-tree signal, not a
+   per-list one: it shows on a card wherever that card renders, in Favourites
+   as much as in My trees, matching TreeCard.swift's own `ticked` view (a
+   filled checkmark-seal capsule, top left, whenever the app's own
+   `saved.isVisited` says so for THAT tree). */
+.tree-card-seen { position: absolute; top: 10px; left: 10px; z-index: 1;
+  display: inline-flex; align-items: center; gap: 5px; background: var(--moss);
+  color: #fff; font-size: 12px; font-weight: 600; padding: 5px 9px 5px 7px;
+  border-radius: 999px; }
+.tree-card-seen svg { width: 14px; height: 14px; flex-shrink: 0; }
 .tree-card-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
 .tree-card:hover .tree-card-photo img { transform: scale(1.04); }
 .tree-card-credit { font-size: 10px; color: var(--ink-light); margin: -0.6rem 0 0.85rem; }

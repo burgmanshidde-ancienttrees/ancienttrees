@@ -72,7 +72,14 @@ window.atCollection = (function() {
   // component's own data: the meta line arrives composed, the photograph
   // arrives at the two widths TreeCard asks for, and the credit arrives only
   // when the licence obliges one. Nothing here decides any of that.
-  function card(id, c, hearted) {
+  // `visited` adds the "Seen" badge over the photo, the same per-tree signal
+  // TreeCard.swift's own `ticked` view draws (a filled checkmark-seal capsule,
+  // top left) whenever `saved.isVisited(tree.id)` is true, regardless of
+  // which list the card happens to render in. Web had no such badge and
+  // `hearted` used to be one blanket value for a WHOLE list rather than each
+  // card's own true state, so My trees and Favourites read as the same
+  // unmarked card everywhere (Hidde, 2026-09-03).
+  function card(id, c, hearted, visited) {
     var meta = c.m || '';
     if (c.c) meta = meta ? meta + ' \\u00b7 ' + c.c : c.c;
     if (c.bt && c.bt.indexOf(new Date().getMonth() + 1) !== -1) {
@@ -80,7 +87,11 @@ window.atCollection = (function() {
     }
     var on = hearted !== false;
     return '<article class="tree-card tree-card-nonum tree-card-link" data-tree-id="' + esc(id) + '">'
-      + (c.p ? '<div class="tree-card-photo"><img src="' + esc(c.p) + '" srcset="'
+      + (c.p ? '<div class="tree-card-photo">'
+               + (visited ? '<span class="tree-card-seen">'
+                   + '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12.5l2.2 2.2L16 9.8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9.4" fill="none" stroke="#fff" stroke-width="1.6" opacity="0.6"/></svg>'
+                   + '<span>Seen</span></span>' : '')
+               + '<img src="' + esc(c.p) + '" srcset="'
                + esc(c.p) + ' 500w, ' + esc(c.p9 || c.p) + ' 900w" '
                + 'sizes="(max-width: 800px) 100vw, 560px" alt="' + esc(c.n)
                + '" loading="lazy"></div>' : '')
