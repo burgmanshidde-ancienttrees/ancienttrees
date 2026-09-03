@@ -1,0 +1,62 @@
+{
+  "city": "Biei",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Biei maps one tree: the Ken and Mary Tree, a lone poplar on the Patchwork Road that a 1972 Nissan Skyline commercial made one of the most photographed trees in Hokkaido. It was planted as a boundary marker between two farm fields, not as scenery, and the strips of crop around it are still working farmland. Half a century after the advert, people still drive out to see it, while two other once-famous trees on the same route, felled and thinned, did not last. Published alone here because the tree is the destination, not because Biei's research is finished.",
+  "meta_description": "Ken and Mary Tree, Biei: the poplar from a 1972 Nissan Skyline ad, still standing on the Patchwork Road, free to see from the roadside.",
+  "question_meta": "Biei's only mapped tree is the Ken and Mary Tree, a poplar famous from a 1972 car ad, still standing on the Patchwork Road.",
+  "question_answer": "Biei's only mapped tree is the Ken and Mary Tree, a lone poplar over a century old on the Patchwork Road, planted originally as a boundary marker between two farm fields.",
+  "question_context": "A car advertisement gave this poplar its name and made it one of the most photographed single trees in Hokkaido. In 1972 Nissan filmed a Skyline commercial in the Biei hills starring two young characters nicknamed Ken and Mary, and the lone poplar standing in that shot has carried their names ever since. It was not planted to be looked at. It went in as a boundary marker between two farm fields, which is why it stands alone on an open slope instead of in a shelterbelt, and the strips of crop laid out around it are still working farmland rather than scenery. The tree is roughly 30 metres tall and over a century old; nobody has recorded the exact planting year or confirmed which poplar it is. Two other famous trees on the same route have not fared as well: the Tree of Philosophy was felled, and the poplar avenue on the Mild Seven Hills was thinned. This one is free to see from the roadside and was still reported healthy in 2024.",
+  "hero_tree_id": "bie_001",
+  "oldest_tree_id": "bie_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Biei?",
+      "a": "The Ken and Mary Tree, a poplar over a century old, standing alone on the Patchwork Road."
+    },
+    {
+      "q": "Why is it called the Ken and Mary Tree?",
+      "a": "A 1972 Nissan Skyline television commercial, filmed in the Biei hills, starred two characters nicknamed Ken and Mary standing near this poplar, and the name stuck."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands beside a working farm field and is viewable from the roadside, with no entry restriction."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is reached by car or rental bicycle along Biei's Patchwork Road, roughly 20 to 30 minutes from central Biei."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bie_001",
+      "name": "Ken and Mary Tree",
+      "species": "Poplar (Populus sp.)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 130,
+      "girth_cm": null,
+      "location": {
+        "address": "Patchwork Road area, Biei, Kamikawa District, Hokkaido",
+        "latitude": 43.609195,
+        "longitude": 142.463373,
+        "neighbourhood": "Biei hills (Patchwork Road)"
+      },
+      "verified_sources": [
+        "https://www.biei-hokkaido.jp/ja/facility/ken-merry-tree",
+        "https://tabi-mag.jp/skylinecm-biei/"
+      ],
+      "access": "Free. Stands beside a farm field on the open hillside; viewable from the roadside, no entry restriction.",
+      "transport": "Reached by car or rental bicycle along Biei's 'Patchwork Road', roughly 20 to 30 minutes from central Biei.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A car advertisement gave this poplar its name and made it one of the most photographed single trees in Hokkaido. In 1972 Nissan filmed a Skyline commercial in the Biei hills starring two young characters nicknamed Ken and Mary. The lone poplar standing in the shot took their names, and half a century later people still drive the Patchwork Road to see it.\n\nIt was not planted to be looked at. It went in as a boundary marker between two farm fields, which is why it stands by itself on an open slope instead of in a shelterbelt, and the strips of crop laid out around it are still working farmland rather than scenery. The tree is about 30 metres tall and over a century old. Nobody has recorded the exact planting year, and the sources checked do not establish which poplar it is, which is why it is listed here as Populus and nothing more. If you know either answer, tell us.\n\nTwo other famous trees on the same route have not fared as well. The Tree of Philosophy was felled, and the poplar avenue on the Mild Seven Hills was thinned. This one is still standing and still reported healthy in local sources from 2024.\n\nIt is free to see and there is nothing to enter: the field is somebody's living, so the view is from the roadside.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
