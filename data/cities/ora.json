@@ -1,0 +1,62 @@
+{
+  "city": "Ora",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Ora maps one tree: the Eimeiji Osmanthus, a National Natural Monument that regrew from a stump after a 1966 typhoon felled the original 16 metre tree. The town's own education board photographs its bloom every autumn, the strongest proof this centuries-old regrowth is still alive. Published alone here because the tree itself is the destination, not because Ora's research is finished.",
+  "meta_description": "The Eimeiji Osmanthus, Ora: a National Natural Monument regrown from a stump after a 1966 typhoon, over 700 years old, free at a Gunma temple.",
+  "question_meta": "Ora's oldest and only mapped tree is the Eimeiji Osmanthus, a National Natural Monument that regrew after a 1966 typhoon, free at a Gunma temple.",
+  "question_answer": "Ora's only mapped tree, and its oldest, is the Eimeiji Osmanthus (Osmanthus fragrans), a National Natural Monument likely over 700 years old, standing on the grounds of Eimeiji temple in Nakano, Gunma Prefecture.",
+  "question_context": "The tree was designated a National Natural Monument in 1937, an unusually high protection tier for an osmanthus, which is normally given to giant conifers or camphors instead. A typhoon in 1966 felled the original 16 metre tree, and what stands today regrew from its stump. Two sources disagree on how tall the regrowth now stands, one giving 7 metres and another 5, most likely reflecting different survey years rather than a real dispute; the recorded girth of 3.3 metres and crown spread of 18 by 14 metres describe the original pre-1966 trunk, not the current regrowth. Its age is similarly unsettled: Ora's own town page gives 750 years with no stated basis, while the national tourism federation instead dates it to the year 1331, which works out to roughly 695 years. Both agree on the shape of the answer, several centuries and likely past 700 years, and neither figure is sharpened into false precision here. What is not in doubt is that it still flowers: the town's education board keeps a photographed record of its bloom every autumn, late September into early October, including years with a rare second flowering. Free to visit, on open temple grounds.",
+  "hero_tree_id": "ora_001",
+  "oldest_tree_id": "ora_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Ora?",
+      "a": "The Eimeiji Osmanthus (Osmanthus fragrans), a National Natural Monument on the grounds of Eimeiji temple in Nakano, likely over 700 years old."
+    },
+    {
+      "q": "Why is it smaller than the recorded measurements?",
+      "a": "A typhoon felled the original 16 metre tree in 1966. What stands today regrew from the stump, so the recorded girth and crown spread describe the tree before the storm, not the current regrowth."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Sources disagree on a precise figure: the town gives 750 years, a national tourism source dates it to 1331, roughly 695 years. Both agree it is several centuries old, likely past 700 years."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open grounds at Eimeiji temple, an active flower-viewing spot documented by the town every autumn."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ora_001",
+      "name": "The Eimeiji Osmanthus",
+      "species": "Sweet Osmanthus (Osmanthus fragrans)",
+      "age_estimate": "roughly 700 to 750 years",
+      "age_min": 690,
+      "age_max": 760,
+      "girth_cm": 330,
+      "location": {
+        "address": "Nakano 2933, Ora, Ora District, Gunma Prefecture, Japan",
+        "latitude": 36.2620412,
+        "longitude": 139.4628099,
+        "neighbourhood": "Nakano"
+      },
+      "verified_sources": [
+        "https://www.town.ora.gunma.jp/s051/010/010/002/004/eimeizi.kinmokusei.html",
+        "https://www.nihon-kankou.or.jp/gunma/105252/detail/10525ac2102080182"
+      ],
+      "access": "Free; on the grounds of Eimeiji, a Soto Zen temple that Ora town's own education board actively documents as a public flower-viewing spot every September to October, open in daylight hours.",
+      "transport": "Honnakano Station, about 10 minutes on foot (1km); Shinozuka Station is a further alternative, about 22 minutes on foot (1.7km).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "A typhoon felled the original tree in 1966. What stands today at Eimeiji temple grew back from its stump, and it is still protected as a National Natural Monument, a designation tier normally reserved for giant conifers and camphors, rarely handed to an osmanthus.\n\nBefore the storm it stood 16 metres tall. Two sources disagree on how far the regrowth has climbed back, one giving 7 metres and the other 5, a gap that likely reflects different survey years rather than a real dispute; both figures are recorded here rather than picked. The 3.3 metre girth and 18 metre crown spread on record describe the original pre-1966 trunk, not the regrowth, so anyone with a tape measure today would find smaller numbers, and that distinction is worth knowing before comparing this tree to any other on this site.\n\nIts age is similarly unsettled. Ora's own town page gives 750 years with no stated basis; the national tourism federation instead dates it to 1331, which works out to about 695 years. Both agree on the shape of the answer: several centuries, likely past 700 years.\n\nWhat is not in doubt is that it still flowers. The town's own education board keeps a photographed record of its bloom every autumn, late September into early October, including years with a rare second flowering, the closest thing this tree has to proof of life.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

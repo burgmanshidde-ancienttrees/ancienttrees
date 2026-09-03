@@ -1,0 +1,64 @@
+{
+  "city": "Odawara",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Odawara maps one tree: the Choukouzan Weeping Cherry, the last thing standing on the site of a clan temple that burned twice, and one of the region's best-known spring flowering trees. Cloned in the 2000s as insurance against losing it, it still draws queues from the station every bloom season. Published alone here because the tree itself is the destination, not because Odawara's research is finished.",
+  "meta_description": "The Choukouzan Weeping Cherry, Odawara: a roughly 350-year-old cherry on a burned temple's site, cloned as insurance, free near Iriuda Station.",
+  "question_meta": "Odawara's oldest and only mapped tree is the Choukouzan Weeping Cherry, a city Natural Monument on a burned clan temple's site, free near Iriuda Station.",
+  "question_answer": "Odawara's only mapped tree, and its oldest, is the Choukouzan Weeping Cherry (Prunus itosakura, weeping form), an Odawara City Natural Monument roughly 350 years old, standing on the former grounds of Shotaiji temple in Iryuda.",
+  "question_context": "Shotaiji, the family temple of the Inaba clan, burned in the 1850s and again in 1915; what remains on the site today is 360 stone steps, eight Inaba-clan graves, and this weeping cherry, now the reason people climb the hill. Odawara designated it a city Natural Monument in 1957, and Kanagawa Prefecture named it one of its hundred most famous trees in 1984. A 2007 survey measured it at 12.7 metres tall with a trunk 4.66 metres round at chest height, widening to 8 metres at the base. No documented planting date exists, but Japanese Wikipedia notes a presumption it went in around 1669 when the temple relocated here, putting it at roughly 350 years old; other sources round to 300 years or more. Concerns over its vigour in the 1980s and 90s led Sumitomo Forestry to begin cloning it in 2003, succeeding by 2009; the clones now grow both at the temple and at a nearby children's park. None of that has slowed the spring crowds: late March into early April, visitors queue from Iriuda Station, a twenty minute climb below, to see it in bloom. Free, on a signposted public walking course, no gate or fee.",
+  "hero_tree_id": "oda_001",
+  "oldest_tree_id": "oda_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Odawara?",
+      "a": "The Choukouzan Weeping Cherry (Prunus itosakura, weeping form), an Odawara City Natural Monument on the former grounds of Shotaiji temple in Iryuda."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Roughly 350 years by one account, tied to a presumed 1669 planting date when the temple relocated here; other sources give a looser 300 years or more. No precise documented date exists."
+    },
+    {
+      "q": "Why was it cloned?",
+      "a": "Concerns over its vigour in the 1980s and 90s led Sumitomo Forestry to begin cloning it in 2003. The cloning succeeded by 2009, and genetic copies now grow at the temple and at a nearby children's park as insurance against losing the original."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on a signposted public walking course through the former temple grounds, about a 20 minute uphill walk from Iriuda Station, with no gate or entry fee."
+    }
+  ],
+  "trees": [
+    {
+      "id": "oda_001",
+      "name": "The Choukouzan Weeping Cherry",
+      "species": "Weeping Cherry (Prunus itosakura, weeping form)",
+      "age_estimate": "roughly 350 years",
+      "age_min": 300,
+      "age_max": 370,
+      "girth_cm": 466,
+      "location": {
+        "address": "Iryuda 303, Odawara, Kanagawa Prefecture, Japan",
+        "latitude": 35.243806,
+        "longitude": 139.115361,
+        "neighbourhood": "Iryuda"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E9%95%B7%E8%88%88%E5%B1%B1%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%82%B6%E3%82%AF%E3%83%A9",
+        "https://www.city.odawara.kanagawa.jp/kanko/Flower/sidaresakura.html",
+        "https://www.kanagawa-kankou.or.jp/spot/232",
+        "https://sp.jorudan.co.jp/hanami/spot_164.html"
+      ],
+      "access": "Free, on a public walking course through the former Shotaiji temple grounds (the temple's main halls were lost to fire in the 1850s and again in 1915); no gate or entry fee.",
+      "transport": "Iriuda Station (Hakone Tozan Line), about 20 minutes uphill on foot.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Only the cherry tree remembers the temple that used to stand here. Shotaiji, the Inaba clan's family temple, burned in the 1850s and again in 1915, and today its site is 360 stone steps, eight Inaba graves, and this weeping cherry, now the whole reason anyone climbs the hill.\n\nOdawara named it a city Natural Monument in 1957, and Kanagawa Prefecture put it on a list of its hundred most famous trees in 1984. A 2007 survey measured it at 12.7 metres tall with a trunk 4.66 metres round at chest height, widening to 8 metres at the base. Its planting date is not documented, but Japanese Wikipedia notes a presumption that it went in around 1669, when the temple relocated here, which would put it at roughly 350 years old; other sources simply call it 300 years or more.\n\nThe tree struggled through the late twentieth century. Concerns over its vigour in the 1980s and 90s led Sumitomo Forestry to begin cloning it in 2003, and by 2009 the cloning had succeeded; genetic copies now grow both at the temple and in a nearby children's park, a hedge against the original ever being lost.\n\nNone of that dims the spring rush. Late March into early April, the cherry draws crowds queuing from Iriuda Station, a twenty minute climb below, for a tree that has outlasted the buildings around it twice over.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

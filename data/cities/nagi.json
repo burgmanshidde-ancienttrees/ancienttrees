@@ -1,0 +1,64 @@
+{
+  "city": "Nagi",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Nagi maps one tree: the Great Ginkgo of Bodaiji, said to have grown from the walking stick a young Honen, founder of Jodo Buddhism, planted at the temple gate. DNA testing in 2013 linked it to two other ginkgos nearby, corroborating a legend that has held for centuries. Published alone here because the tree itself is the destination, not because Nagi's research is finished.",
+  "meta_description": "The Great Ginkgo of Bodaiji, Nagi: grown, tradition says, from Honen's walking stick, DNA-linked to two nearby trees, free on Mount Nagi, Okayama.",
+  "question_meta": "Nagi's oldest and only mapped tree is the Great Ginkgo of Bodaiji, a National Natural Monument on Mount Nagi tied to the founding legend of Jodo Buddhism.",
+  "question_answer": "Nagi's only mapped tree, and its oldest, is the Great Ginkgo of Bodaiji (Ginkgo biloba), a National Natural Monument roughly 800 to 1000 years old, standing in the grounds of Bodaiji Temple on the southeast slope of Mount Nagi, Okayama Prefecture.",
+  "question_context": "Tradition holds that Honen, who would go on to found Jodo (Pure Land) Buddhism, studied at Bodaiji between the ages of nine and thirteen and used a ginkgo branch as a walking stick on the climb up the mountain. Reaching the gate, he is said to have planted the branch and told it to take root once his learning was complete. In 2013, Nagi's education board ran DNA testing that found a genetic link between this tree, a second ginkgo at the foot of the mountain where legend has Honen first cutting the branch, and a third that grew from a piece of this tree's own crown broken off by heavy snow roughly two centuries ago. The tests do not date the tree, but they corroborate the legend. At 42.5 metres tall with an 11-metre trunk, it is the largest ginkgo in Okayama Prefecture and one of only twenty ginkgos nationwide with National Natural Monument status, held since 1928. It is male and bears no fruit. A 1955 fire and 1989 typhoon damage are both still visible, though neither slowed the tree. Free to visit, with a dedicated illumination event run by the town.",
+  "hero_tree_id": "ngi_001",
+  "oldest_tree_id": "ngi_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Nagi?",
+      "a": "The Great Ginkgo of Bodaiji (Ginkgo biloba), a National Natural Monument on the southeast slope of Mount Nagi, the largest ginkgo in Okayama Prefecture."
+    },
+    {
+      "q": "What is the story behind it?",
+      "a": "Tradition says Honen, who founded Jodo Buddhism, used a ginkgo branch as a walking stick while studying at Bodaiji as a boy, and planted it at the temple gate. In 2013, DNA testing linked this tree to two others nearby, corroborating the story."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Estimated at roughly 800 to 1000 years, consistent with the legend, though no single documented planting date exists."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open grounds of Bodaiji Temple, a signposted stop on Mount Nagi, with no gate or entry fee."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ngi_001",
+      "name": "The Great Ginkgo of Bodaiji",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 900 years",
+      "age_min": 800,
+      "age_max": 1000,
+      "girth_cm": 1100,
+      "height_m": 42,
+      "location": {
+        "address": "1528 Koen, Nagi, Katsuta District, Okayama Prefecture, Japan",
+        "latitude": 35.15606,
+        "longitude": 134.20389,
+        "neighbourhood": "Bodaiji Temple, Mount Nagi"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E8%8F%A9%E6%8F%90%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+        "https://www.town.nagi.okayama.jp/kankou/kankou_spot/shizen/bodaiji_ichou.html",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/2254"
+      ],
+      "access": "Free, within the grounds of Bodaiji Temple (Jodo sect), a signposted tourist stop on the southeast slope of Mount Nagi; open to visitors, no gate or fee mentioned by either source.",
+      "transport": "From JR Tsuyama Station: local bus toward Mukuwa/Namekata, alight at Nagi-cho Yakuba-mae, then about 15 minutes by taxi. By car: about 20 minutes from Tsuyama Interchange on the Chugoku Expressway.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "As a boy, the story goes, Honen used a ginkgo branch as a walking stick on his climb up Mount Nagi to study at Bodaiji temple. Reaching the gate, he planted the stick in the ground and told it to take root once his learning was complete. He grew up to found Jodo, Pure Land Buddhism, one of Japan's largest schools, and the branch grew into this tree.\n\nIt is not just a good story. In 2013, Nagi's own education board ran DNA tests linking this ginkgo to two others nearby: one at the foot of the mountain, where tradition says Honen first cut the branch, and a third grown from a piece of this tree's own crown, broken off by snow about two centuries ago. The genetics do not date the tree, but they corroborate the chain the legend describes.\n\nAt 42.5 metres tall with an 11-metre trunk, it is the largest ginkgo in Okayama Prefecture and one of only twenty ginkgos nationwide to hold National Natural Monument status, since 1928. It is male and produces no fruit, so none of the smell that marks autumn ginkgo season elsewhere. A 1955 fire, started by someone trying to smoke a marten out of its hollow trunk, and a 1989 typhoon both left marks it has since grown past.\n\nThe temple that grew up around it still lights it for visitors after dark.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
