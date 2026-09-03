@@ -1,0 +1,62 @@
+{
+  "city": "Neba",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Neba maps one tree: Tsukize no Osugi, the largest tree in Nagano Prefecture and, by the count most often quoted, the sixth largest cedar in Japan. The village has built it a park of its own, free to enter, with parking and a viewing pavilion. Published alone here because the tree itself is the destination, not because Neba's research is finished.",
+  "meta_description": "Tsukize no Osugi, Neba: Nagano Prefecture's largest tree, a 13.8m-round cedar put at 1,500 to 1,800 years, free in its own park.",
+  "question_meta": "Neba's oldest and only mapped tree is Tsukize no Osugi, a cedar 13.8 metres round, put at 1,500 to 1,800 years, free to visit.",
+  "question_answer": "Neba's only mapped tree, and its oldest, is Tsukize no Osugi, a Japanese cedar put at roughly 1,500 to 1,800 years old by local tradition. It stands in a purpose-built park in Tsukize, Neba Village, in the southern hills of Nagano Prefecture.",
+  "question_context": "Thirteen point eight metres around and forty metres tall, Tsukize no Osugi is the largest tree in Nagano Prefecture and, on the count most often cited, the sixth largest cedar in Japan. Neba Village has given it a park of its own: parking, restrooms and a viewing pavilion, free to enter. Its age is tradition rather than measurement, somewhere between 1,500 and 1,800 years by local reckoning, since nobody has cored it. Nagano Prefecture made it a prefectural natural monument in 1928, and on 13 November 1944 the national government raised it to National Natural Monument as an exceptionally rare giant sugi. It has not gone untouched: heavy snow in February 2014 took a branch off it. Since 2017 the village has been propagating saplings from this tree and planting them nearby, a bet that somebody will still be driving out here to look at a Neba cedar long after this one has gone. It is roughly 60 to 75 minutes by car from the nearest major highway interchange, with limited daily bus service also reaching the site.",
+  "hero_tree_id": "neb_001",
+  "oldest_tree_id": "neb_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Neba?",
+      "a": "Tsukize no Osugi, a Japanese cedar put at roughly 1,500 to 1,800 years old by local tradition, standing in a park of its own in Tsukize, Neba Village."
+    },
+    {
+      "q": "Is it really the largest tree in Nagano?",
+      "a": "Yes, by the measurements most often cited: 13.8 metres round and 40 metres tall, making it the largest tree in Nagano Prefecture and, by one common count, the sixth largest cedar in Japan."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in a purpose-built park with parking, restrooms and a viewing pavilion, no charge."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car, roughly 60 to 75 minutes from the nearest major highway interchange. Limited daily bus service also reaches the site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "neb_001",
+      "name": "Tsukize no Osugi",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 1,500 to 1,800 years",
+      "age_min": 1500,
+      "age_max": 1800,
+      "girth_cm": 1380,
+      "location": {
+        "address": "Tsukize, Taira, Neba Village, Shimoina District, Nagano Prefecture",
+        "latitude": 35.258034,
+        "longitude": 137.566641,
+        "neighbourhood": "Tsukize"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E6%9C%88%E7%80%AC%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE",
+        "https://msnav.com/nav/tsukiseosugi/"
+      ],
+      "access": "Free. Stands in the purpose-built Tsukize no Osugi Park, with parking, restrooms and a viewing pavilion, open to the public.",
+      "transport": "Roughly 60 to 75 minutes by car from the nearest major highway interchange; limited daily bus service also reaches the site.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Thirteen point eight metres around and forty metres up, this is the largest tree in Nagano Prefecture and, by the count most often quoted, the sixth largest cedar in Japan. It stands in Neba, a village in the southern Nagano hills that has built the tree a park of its own: parking, restrooms, a viewing pavilion, no charge.\n\nThe age is tradition rather than measurement. Local reckoning puts it somewhere between 1,500 and 1,800 years, and nobody has cored it, so the figure is inherited rather than dated. Read it as a statement about how long this cedar has been old to the people living under it.\n\nThe protection is documented. Nagano Prefecture made it a prefectural natural monument in 1928, and on 13 November 1944, with the country deep in a war it was losing, the national government raised it to National Natural Monument as an exceptionally rare giant sugi.\n\nIt is not untouched. Heavy snow in February 2014 took a branch off it. Since 2017 the village has been propagating saplings from this tree and planting them nearby, which is a local government placing a bet several centuries long: that somebody will still be driving out here to look at a Neba cedar long after this one has gone.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "city": "Takahagi",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Takahagi maps one tree: Arakawa no Jii Sugi, the largest and oldest known tree in Ibaraki Prefecture, kept alive by wires and a shortened crown after a lightning strike hollowed its base. It stands free and open at Arakawa Hachimangu Shrine, a National Natural Monument for a full century. Published alone here because the tree itself is the destination, not because Takahagi's research is finished.",
+  "meta_description": "Arakawa no Jii Sugi, Takahagi: Ibaraki's largest, oldest tree, a hollowed 1,000-year cedar held up by wires, free at a shrine.",
+  "question_meta": "Takahagi's oldest and only mapped tree is Arakawa no Jii Sugi, a cedar put at roughly 1,000 years, free at Arakawa Hachimangu Shrine.",
+  "question_answer": "Takahagi's only mapped tree, and its oldest, is Arakawa no Jii Sugi, a Japanese cedar put at roughly 1,000 years old and recorded as the largest and oldest known tree in Ibaraki Prefecture. It stands within the grounds of Arakawa Hachimangu Shrine in Arakawa, Takahagi.",
+  "question_context": "About a fifth of this trunk is still living tissue. The rest of the cross-section is hollow, and the cedar is standing anyway, recorded at 42 metres and roughly 10 metres round. The damage appears to have come from a lightning strike: the base hollowed out, and to take weight off what was left the authorities cut the top 10 metres from the trunk, with wires on three sides now holding the rest against the wind. It is a very old tree kept alive on purpose, by national, prefectural and municipal effort, rather than an untroubled giant. Locally it is the Jii Sugi, the grandfather cedar, and it has been a National Natural Monument since 1924, meaning the Japanese state has formally looked after it for a full century. The age usually given, roughly 1,000 years, is an estimate rather than a count; nobody has dated the wood, and the hollowing has taken away most of what could have been read. It stands free and open in the grounds of Arakawa Hachimangu Shrine, about fifteen minutes by car or taxi from JR Takahagi Station on the Joban Line.",
+  "hero_tree_id": "tkh_001",
+  "oldest_tree_id": "tkh_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Takahagi?",
+      "a": "Arakawa no Jii Sugi, a Japanese cedar put at roughly 1,000 years old, recorded as the largest and oldest known tree in Ibaraki Prefecture."
+    },
+    {
+      "q": "Why is the tree wrapped in wires?",
+      "a": "A lightning strike appears to have hollowed the base. The top 10 metres of trunk were cut to reduce weight, and wires on three sides now hold the remaining tree against the wind."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands within the grounds of Arakawa Hachimangu Shrine, open to the public."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About 15 minutes by car or taxi from JR Takahagi Station on the Joban Line."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tkh_001",
+      "name": "Arakawa no Jii Sugi",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 1000,
+      "location": {
+        "address": "Arakawa Hachimangu Shrine, 1173 Arakawa, Takahagi, Ibaraki Prefecture",
+        "latitude": 36.714893,
+        "longitude": 140.703422,
+        "neighbourhood": "Arakawa"
+      },
+      "verified_sources": [
+        "https://online.bunka.go.jp/heritages/detail/138027",
+        "https://kyoiku.pref.ibaraki.jp/bunkazai/kuni-127/"
+      ],
+      "access": "Free. Stands within the grounds of Arakawa Hachimangu Shrine, open to the public.",
+      "transport": "Roughly 15 minutes by car or taxi from JR Takahagi Station on the Joban Line.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "About a fifth of this trunk is still living tissue. The rest of the cross-section is hollow, and the cedar is standing anyway, recorded at 42 metres and roughly 10 metres round: the largest and oldest known tree in Ibaraki Prefecture.\n\nThe damage appears to have come from a lightning strike. The base hollowed out, and to take weight off what was left the authorities cut the top 10 metres from the trunk; wires on three sides now hold the rest against the wind. It is not a thriving giant. It is a very old tree kept alive on purpose, by national, prefectural and municipal effort, and standing in front of that is a different experience from standing in front of an untroubled one.\n\nLocally it is the Jii Sugi, the grandfather cedar. It has been a National Natural Monument since 1924, the thirteenth year of Taisho, which means the Japanese state has been formally looking after it for a full century. The age usually given is roughly 1,000 years, an estimate rather than a count; nobody has dated the wood, and the hollowing has taken away most of what could have been read.\n\nIt stands in the grounds of Arakawa Hachimangu Shrine, free and open, about fifteen minutes by car from Takahagi station on the Joban Line. Go and look at it while the wires are holding.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

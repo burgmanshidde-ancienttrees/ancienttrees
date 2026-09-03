@@ -1,0 +1,68 @@
+{
+  "city": "Schenklengsfeld",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Schenklengsfeld maps one tree: the Dorflinde on its Marktplatz, the largest trunk circumference of any tree in Germany and possibly the country's oldest broadleaf. Four surviving trunk sections stand on a wooden scaffold of roughly 80 beams, having held the village's court from 1557 to 1796. Published alone here because the tree itself is the destination, not because Schenklengsfeld's research is finished.",
+  "meta_description": "Schenklengsfelder Dorflinde: Germany's thickest tree trunk at 17.91m round, held up by an 80-beam scaffold, free on the village market square.",
+  "question_meta": "Schenklengsfeld's oldest and only mapped tree is the Dorflinde, 17.91m round, disputed at 600 to 1300 years, free on the market square.",
+  "question_answer": "Schenklengsfeld's only mapped tree, and its oldest, is the Dorflinde, a large-leaved lime measured at 17.91 metres round, the largest trunk circumference of any tree recorded in Germany. It stands on the Marktplatz in the centre of Schenklengsfeld village, Hesse.",
+  "question_context": "In the heatwave of 2018 the village fire brigade pumped 100,000 litres of water onto this tree, and the water was not sentiment: at 17.91 metres round, measured on 15 July 2007, it may be the country's oldest broadleaf as well as its thickest trunk. It is also only about 10 metres tall, the crown having come down over centuries. What stands now is four separate living trunk sections around the rim of what was once a single stem, carried by a wooden scaffold of some 80 beams running roughly 65 metres. The age is genuinely unsettled: a twentieth-century stone marker claims a planting date of 760, roughly 1,270 years, while published dendrological estimates range from 600 to over 1,300 years, and none of them is treated here as the winner. What is documented is the work it did: Schenklengsfeld held its court under this lime without a break from 1557 to 1796 and intermittently afterwards, with the market and dancing happening here too. Restoration crews came in 1976, 2009 and 2020. It stands free on the village market square, roughly 10km southeast of Bad Hersfeld, Hesse, reachable by car or regional bus with no rail station in the village.",
+  "hero_tree_id": "sfd_001",
+  "oldest_tree_id": "sfd_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Schenklengsfeld?",
+      "a": "The Schenklengsfelder Dorflinde, a large-leaved lime measured at 17.91 metres round, standing on the village's Marktplatz."
+    },
+    {
+      "q": "Is it really Germany's largest tree?",
+      "a": "By trunk circumference, yes: 17.91 metres is the largest of any tree recorded in Germany, and it may also be the country's oldest broadleaf, though its exact age is disputed."
+    },
+    {
+      "q": "Why is it held up by wooden beams?",
+      "a": "The old crown collapsed over the centuries, leaving four separate living trunk sections around the rim of the original stem. A wooden scaffold of roughly 80 beams, running about 65 metres, supports what remains."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in public on the village market square in the centre of Schenklengsfeld."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sfd_001",
+      "name": "Schenklengsfelder Dorflinde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "widely disputed, roughly 600-1300 years; a stone inscription claims a planting date of 760 CE",
+      "age_min": 600,
+      "age_max": 1300,
+      "girth_cm": 1791,
+      "height_m": 10,
+      "location": {
+        "address": "Marktplatz / Straße an der Linde, Schenklengsfeld, Landkreis Hersfeld-Rotenburg",
+        "latitude": 50.8192,
+        "longitude": 9.84472,
+        "neighbourhood": "Schenklengsfeld village centre"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Schenklengsfelder_Dorflinde",
+        "https://www.baumkunde.de/baumregister/1598-dorflinde_in_schenklengsfeld/"
+      ],
+      "access": "Free, public market square in the village centre.",
+      "transport": "Not verified; no confirmed public transport stop found. Schenklengsfeld is roughly 10km southeast of Bad Hersfeld, Hessen; reachable by car or regional bus, no rail station in the village.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "In the heatwave of 2018 the village fire brigade pumped 100,000 litres of water onto this tree. At 17.91 metres round, measured on 15 July 2007, it has the largest trunk circumference of any tree in Germany, and it may be the country's oldest broadleaf, so the water was not sentiment.\n\nIt is also only about 10 metres tall, the crown having come down over centuries. What stands now is four separate living trunk sections around the rim of what was once a single stem, like the wall of a ruined tower, carried by a wooden scaffold of some 80 beams running roughly 65 metres. The scaffold is half the reason to come.\n\nThe age is genuinely unsettled and we are not going to settle it here. A stone marker added in the twentieth century gives a planting date of 760, which would mean about 1,270 years and which is a claim rather than a dating. Published estimates run from 600 years to over 1,300: Froehlich in 1990 said over a thousand, Lenzing in 2005 said 1,200 to 1,300, other literature 600 to 1,000.\n\nWhat is documented is the work it did. Schenklengsfeld held its court under this lime without a break from 1557 to 1796 and intermittently afterwards, and the market and the dancing happened here too, with a pillory once standing nearby. Restoration crews came in 1976, 2009 and 2020.",
+      "best_time": {
+        "months": [6],
+        "kind": "flowers",
+        "label": "June, when the lime comes into flower and the scent fills the market square"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
