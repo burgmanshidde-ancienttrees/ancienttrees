@@ -23,9 +23,11 @@ Thanks, this helps a lot. Oslo has no photograph on our page at all yet, so the 
 
 One thing before I use one: you say they were not taken by you. May I publish it credited to Ingar Sørensen, or should I ask him myself first?
 
+Our app is also live now, with Oslo in it. I would like to know what you think of it.
+https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
+
 And is there an Oslo tree we should not be missing? We publish four.
 
 Thanks either way,
 Hidde
-ancienttrees.app
 https://ancienttrees.app/oslo

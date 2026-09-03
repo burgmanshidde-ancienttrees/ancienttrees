@@ -192,3 +192,25 @@ a change that had already shipped: the lorry out of the Olifantsiep, the five
 Amsterdam trees pulled, Park Guell's access corrected, the cedar photograph
 live. "Fixed, here it is" is worth more than any paragraph of intent.
 
+
+## The app is live, so say so (Hidde, 2026-09-03)
+
+"onze app staat live dus vertel dat en we zijn beniewud wat ie er van vindt",
+and then, so it is not one mail: "stuur dat nu altijd maar mee met de komende
+mailtjes."
+
+So every outbound mail from here carries two things: that the app is live, and
+that we want to know what they think of it.
+
+https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
+
+Note it is a real question rather than a second ask, which is why it survives
+the one-ask rule: we are not asking them to do anything, we are asking what
+they made of it. Keep it to one line and let the link stand on its own.
+
+**One exception so far, and he named it himself the same hour: "behalve naar
+paulo die heeft gezegd dat ie geen tel heeft."** Paulo Araujo told us on
+2026-09-02 that he has no smartphone, cheerfully, and inviting him again would
+read as not having listened. The exceptions live in `NO_APP_LINK` in
+scripts/mailcheck.py, which fails any draft written from today without the
+link and skips anybody on that list.
