@@ -1,0 +1,30 @@
+{
+  "country": "Germany",
+  "note": "Researched 2026-09-03 as part of a _famous-germany.json batch verification pass. Both trees verify against the two-source bar but are recent civic memorial trees, not ancient or spectacular specimens, and neither individually clears the 2026-08-31 single-tree-destination exception. Only two candidates found (below the 4-tree floor) and no third notable Rudolstadt tree turned up while searching. Held here for a future pass.",
+  "leads": [
+    {
+      "name": "Freundschaftseiche in Rudolstadt",
+      "species": "Red Oak (Quercus rubra)",
+      "location": {"address": "Platz der Opfer des Faschismus, Rudolstadt", "latitude": 50.718573, "longitude": 11.338517, "neighbourhood": "Rudolstadt city centre"},
+      "age_estimate": "11 years (documented planting date)",
+      "age_min": 11, "age_max": 11,
+      "verified_sources": ["https://www.rudolstadt.de/stadt/aktuelles/meldung/1837-1837-in-rudolstadt-wurden-umfangreich-neue-baeume-gepflanzt", "https://commons.wikimedia.org/wiki/Category:Rudolstadt"],
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "verify_notes": "Planted 3 October 2015 on the Platz der Opfer des Faschismus, commemorating Rudolstadt's city partnership with Bayreuth. A young red oak (about 11 years old), not remarkable on its own merits yet. Coordinates from the given lead, consistent with a Commons photo location for the same square. Only ~250m from the Einheitslinde. GOOD CANDIDATE to revisit in a few decades, or if a third/fourth Rudolstadt tree turns up.",
+      "access": "Free, public square."
+    },
+    {
+      "name": "Einheitslinde in Rudolstadt",
+      "species": "Lime (Tilia sp.)",
+      "location": {"address": "Forecourt of the Thueringer Landestheater, Rudolstadt", "latitude": 50.719006, "longitude": 11.335441, "neighbourhood": "Rudolstadt city centre"},
+      "age_estimate": "36 years (documented planting date)",
+      "age_min": 36, "age_max": 36,
+      "verified_sources": ["https://de.wikipedia.org/wiki/Geschwister-Scholl-Turm", "https://commons.wikimedia.org/wiki/Category:Memorial_trees_to_the_Unity_of_Germany_in_Germany"],
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "verify_notes": "Planted 3 October 1990, the day of German reunification, on the forecourt of the Thueringer Landestheater. A memorial stone of Thuringian slate marking the city partnership with Bayreuth was added 2 October 2010. A civic reunification memorial tree, not remarkable on size or age; species only identified to genus (Tilia sp., following the lead file's own basis). About 250m from the Freundschaftseiche. GOOD CANDIDATE to revisit in a few decades, or if a third/fourth Rudolstadt tree turns up.",
+      "access": "Free, public square in front of the theatre."
+    }
+  ]
+}
