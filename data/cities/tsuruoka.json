@@ -1,0 +1,63 @@
+{
+  "city": "Tsuruoka",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Tsuruoka maps one tree: Hagurosan no Jiji Sugi, the grandfather cedar, the oldest and thickest tree on Mt Haguro and older than every cedar in the famous avenue it stands beside. His partner, the grandmother cedar, fell in an 1902 storm and he has kept the spot alone since. He stands directly on the pilgrims' stone stairway to the Dewa Sanzan summit shrine, free to anyone climbing it. Published alone here because he is the destination, not because Tsuruoka's research is finished.",
+  "meta_description": "Hagurosan no Jiji Sugi, Tsuruoka: the oldest cedar on Mt Haguro, over 1,000 years, 8.25 metres round, beside the Dewa Sanzan pilgrim stairway.",
+  "question_meta": "Tsuruoka's mapped tree is Hagurosan no Jiji Sugi, a cedar over 1,000 years old beside the Mt Haguro pilgrim stairway.",
+  "question_answer": "Hagurosan no Jiji Sugi, the grandfather cedar, standing directly beside the stone sando climbing Mt Haguro to the Dewa Sanzan summit shrine. Put at over 1,000 years, 43 metres tall and 8.25 metres round, it is the oldest and thickest cedar on the mountain, including every cedar in the famous avenue beside it. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "Jiji Sugi used to be half of a pair. Baba Sugi, the grandmother cedar, stood beside him until an 1902 storm brought her down, and he has kept the spot alone since. He is the oldest and largest tree on Mt Haguro, over 1,000 years, 43 metres tall, a trunk 8.25 metres round and roots flaring to 10.5 metres where they grip the slope. That distinction matters because Mt Haguro is covered in old cedars: the Sugi Namiki avenue lining the stone stairway is famous in its own right, and this tree, standing beside it rather than in its ranks, is older and thicker than any cedar in that row, easy to mistake for the best specimen in the avenue if you walk past quickly. He stands directly on the sando between the Zuishinmon gate and the summit shrine of the Dewa Sanzan pilgrimage, so every pilgrim climbing the steps passes within a few metres, no detour and no ticket needed. The bus from Tsuruoka Station stops at Zuishinmon-mae, and from there it is stone steps under cedar shade until the grandfather appears partway up.",
+  "hero_tree_id": "trk_001",
+  "oldest_tree_id": "trk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Tsuruoka?",
+      "a": "Hagurosan no Jiji Sugi, the grandfather cedar on Mt Haguro, put at over 1,000 years and the oldest and thickest cedar on the mountain."
+    },
+    {
+      "q": "Is Jiji Sugi part of the famous cedar avenue on Mt Haguro?",
+      "a": "No. He stands beside the Sugi Namiki avenue rather than in its ranks, a separately named and older tree, easy to mistake for the best specimen in the row if you walk past quickly."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, he stands directly beside the public stone stairway (sando) to the Dewa Sanzan summit shrine, no ticket or detour needed."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Take the bus from Tsuruoka Station to the Haguro Zuishinmon-mae stop, then climb the stone-step sando under cedar shade; the tree stands partway up."
+    }
+  ],
+  "trees": [
+    {
+      "id": "trk_001",
+      "name": "Hagurosan no Jiji Sugi",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "over 1,000 years",
+      "age_min": 1000,
+      "age_max": 1000,
+      "girth_cm": 825,
+      "location": {
+        "address": "Sando approach path, Mt Haguro (Hagurosan), Tsuruoka, Yamagata Prefecture",
+        "latitude": 38.705243,
+        "longitude": 139.966992,
+        "neighbourhood": "Mt Haguro, Dewa Sanzan"
+      },
+      "story": "This tree used to be half of a couple. Baba Sugi, the grandmother cedar, stood beside it until a storm brought her down in 1902, and Jiji Sugi, the grandfather, has kept the spot alone ever since.\n\nHe is the oldest and the largest tree on Mt Haguro: put at over a thousand years, 43 metres tall, a trunk 8.25 metres round, and roots flaring to a girth of 10.5 metres where they take hold of the slope. That distinction matters here, because Mt Haguro is covered in old cedars. The avenue lining the stone stairway, the Sugi Namiki, is famous in its own right, and this trunk is older and thicker than any tree in it. Walk past quickly and you take it for the best specimen in the row. It is a separately named tree with its own designation and its own history.\n\nIt stands directly beside the sando, the pilgrimage path climbing from the Zuishinmon gate to the summit shrine of the Dewa Sanzan, so everyone working up the steps passes within a few metres of it. Nobody has to leave the path or pay anything to stand at the base.\n\nThe bus from Tsuruoka Station stops at Zuishinmon-mae. From there it is stone steps under cedar shade, and the grandfather waits partway up.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E7%BE%BD%E9%BB%92%E5%B1%B1%E3%81%AE%E3%82%B9%E3%82%AE%E4%B8%A6%E6%9C%A8",
+        "https://online.bunka.go.jp/db/heritages/detail/171465",
+        "https://www.pref.yamagata.jp/cgi-bin/yamagata-takara/?m=detail&id=1159"
+      ],
+      "access": "Free, stands directly beside the public sando (pilgrimage path) between the Zuishinmon gate and the summit of Mt Haguro",
+      "transport": "Bus from Tsuruoka Station to the Haguro Zuishinmon-mae stop, then on foot up the stone-step sando; the tree stands partway up",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

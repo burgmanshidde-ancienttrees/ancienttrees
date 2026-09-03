@@ -22,7 +22,9 @@
     "https://commons.wikimedia.org/wiki/File:Agariko-daiou_001.jpg",
     "https://commons.wikimedia.org/wiki/File:Agariko-daiou_002.jpg"
    ],
-   "status": "lead"
+   "status": "done",
+   "published_as": "nkh_001",
+   "reason": "Verified 2026-09-03 and delivered to data/research/famousjapan-verified.json as nkh_001."
   },
   {
    "name": "Aizen-katsura",
@@ -32,9 +34,11 @@
     "https://commons.wikimedia.org/wiki/File:Aizenkatsura_Tree.jpg",
     "https://commons.wikimedia.org/wiki/File:Kitamuki-kannon_aizen-katura.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Katsura (Cercidiphyllum sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "published_as": "bsh_001",
+   "reason": "Verified 2026-09-03 and delivered to data/research/famousjapan-verified.json as bsh_001."
   },
   {
    "name": "Akatsu no Katsura",
@@ -44,9 +48,11 @@
     "https://commons.wikimedia.org/wiki/File:KoriyamaAkatsuNoKatsura.jpg",
     "https://commons.wikimedia.org/wiki/File:%E8%B5%A4%E6%B4%A5%E3%81%AE%E3%82%AB%E3%83%84%E3%83%A9_-_panoramio.jpg"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Katsura (Cercidiphyllum sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "published_as": "kna_001",
+   "reason": "Verified 2026-09-03 and delivered to data/research/famousjapan-verified.json as kna_001."
   },
   {
    "name": "Akiba no Kuromatsu",
@@ -268,9 +274,11 @@
     "https://commons.wikimedia.org/wiki/File:Hagurosan_no_Jiji_Sugi_January_2022_B.jpg",
     "https://commons.wikimedia.org/wiki/File:Hagurosan_no_Jiji_Sugi_January_2022_C.jpg"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "published_as": "trk_001",
+   "reason": "Verified 2026-09-03 and delivered to data/research/famousjapan-verified.json as trk_001."
   },
   {
    "name": "Hagurosan no Sugi Namiki",
@@ -281,9 +289,10 @@
     "https://commons.wikimedia.org/wiki/File:Cedar_trees_on_Mt._Haguro_covered_in_snow._January_2022._A.jpg",
     "https://commons.wikimedia.org/wiki/File:Cedar_trees_on_Mt._Haguro_covered_in_snow._January_2022._B.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Not a single tree: this is the collective cedar avenue (Sugi Namiki) along the 1.8km stone sando up Mt Haguro, itself designated a special natural monument as a group of 500+ cedars 350-500 years old. All Commons photos show the avenue/path in snow, not one named specimen. The one individually famous tree among them, Jiji Sugi ('Grandpa Cedar', 1000+ years, the largest and oldest), is a distinct named tree and is delivered separately (see Hagurosan no Jiji Sugi, published as trk_001). This avenue entry fails the collectible-point rule (avenue/wood, CLAUDE.md La Rambla precedent). Sources: https://ja.wikipedia.org/wiki/%E7%BE%BD%E9%BB%92%E5%B1%B1%E3%81%AE%E3%82%B9%E3%82%AE%E4%B8%A6%E6%9C%A8"
   },
   {
    "name": "Higashi Akuragawa Inunashi Jiseichi",
@@ -294,7 +303,8 @@
     "https://commons.wikimedia.org/wiki/File:Aerial_photograph_image_of_Inunashi_habit_in_Higashi_Akuragawa_and_Ainashi_habit_in_Nishi_Akuragawa.jpg",
     "https://commons.wikimedia.org/wiki/File:Higashi_Akuragawa_Pyrus_calleryna_habitat._Photographed_April_29,_1934.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "Not a single tree: this is a national Natural Monument habitat site (jiseichi) protecting the wild population of Pyrus calleryana var. (Inu-Nashi), designated 1922 as the type locality where botanist Makino Tomitaro described the species. It is a scientific/botanical reserve covering a population of wild pear trees, not one named specimen; Commons photos are aerial habitat photographs and a 1921 government sketch of the habitat, not a tree portrait. Fails the collectible-point rule (habitat site, not a single tree). Source: https://ja.wikipedia.org/wiki/%E6%9D%B1%E9%98%BF%E5%80%89%E5%B7%9D%E3%82%A4%E3%83%8C%E3%83%8A%E3%82%B7%E8%87%AA%E7%94%9F%E5%9C%B0"
   },
   {
    "name": "Higashiuchi no Shidare Enoki",

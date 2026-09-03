@@ -1,0 +1,63 @@
+{
+  "city": "Ueda",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Ueda maps one tree: Aizen Katsura, a katsura in the grounds of Kitamuki Kannon temple at Bessho Onsen, on the hillside above the city. A 1938 novel and film took their name from it, and couples still walk up to touch its heart-shaped leaves for luck. Nagano Prefecture protected it as a natural monument the year after the film came out. It stands alone on this map because it is the destination, not because Ueda's research is finished.",
+  "meta_description": "Aizen Katsura at Bessho Onsen, Ueda: the katsura a 1938 film was named after, protected since 1939, several hundred years old.",
+  "question_meta": "Ueda's mapped tree is Aizen Katsura, a katsura several hundred years old at Kitamuki Kannon temple, Bessho Onsen.",
+  "question_answer": "Aizen Katsura, in the grounds of Kitamuki Kannon temple at Bessho Onsen. Its age is genuinely disputed: published figures run from over 300 years to around 1,200, and none of them comes with a measurement attached. It is the only tree mapped here, published alone under the single-tree exception because the tree itself, not a list, is the reason to come.",
+  "question_context": "Aizen Katsura takes its name from Kawaguchi Matsutaro's 1938 novel Aizen Katsura, filmed the same year, whose heart-shaped-leaf romance was set at this tree. Nagano Prefecture listed it as a natural monument in 1939, a year after the story made it famous, and the city of Ueda re-listed it as one of its own in 1974. It reaches 22 metres on a trunk 5.8 metres round, splitting upward into the crowd of vertical stems old katsura grow instead of one clean bole. What nobody has pinned down is the age: sources give over 300 years, 600 to 650, over 1,000 and about 1,200, agreeing only on 'several hundred'. The heart shape of its leaves is why couples still make the walk up, treating a botanical accident as a promise of luck in love, a tradition the film only amplified rather than started. It stands out in the open, in the temple grounds rather than behind anything, free to anyone who arrives during daylight, about a quarter of an hour on foot up from Bessho Onsen Station. If you know what actually dates it, tell us.",
+  "hero_tree_id": "bsh_001",
+  "oldest_tree_id": "bsh_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Ueda?",
+      "a": "Aizen Katsura at Kitamuki Kannon temple, Bessho Onsen. Its age is disputed, with published figures from over 300 to about 1,200 years and no measurement behind any of them."
+    },
+    {
+      "q": "Why is it called Aizen Katsura?",
+      "a": "After Kawaguchi Matsutaro's 1938 novel and film of the same name, whose love story was set at this tree. Its heart-shaped leaves are still said to bring luck in love."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in the open grounds of Kitamuki Kannon temple, free to anyone who arrives during daylight hours."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Take the Ueda Dentetsu Bessho Line to Bessho Onsen Station, then walk about 10 to 15 minutes up to Kitamuki Kannon."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bsh_001",
+      "name": "Aizen Katsura",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "several hundred years (sources disagree, from 300 to over 1,000)",
+      "age_min": 300,
+      "age_max": 1200,
+      "girth_cm": 580,
+      "location": {
+        "address": "Kitamuki Kannon precinct, Bessho Onsen, Ueda, Nagano Prefecture",
+        "latitude": 36.3501,
+        "longitude": 138.1562,
+        "neighbourhood": "Bessho Onsen"
+      },
+      "story": "A novel and a film were named after this tree. Kawaguchi Matsutaro's Aizen Katsura came out in 1938 and reached the screen the same year, and the katsura behind the title stands in the grounds of Kitamuki Kannon at Bessho Onsen. Its leaves are heart-shaped, said to bring luck in love, which is why couples still walk up to it.\n\nThe official recognition came a year after the novel. Nagano Prefecture listed the tree as a natural monument in 1939, and the city of Ueda re-listed it as one of its own in 1974. It reaches 22 metres on a trunk 5.8 metres round, breaking upward into the crowd of vertical stems that old katsura grow instead of one clean bole.\n\nIts age is a genuine argument. Published estimates run at over 300 years, at 600 to 650, at over 1,000 and at about 1,200, and none of them arrives with a measurement attached. Several hundred years is the part every source agrees on. Beyond that, the number you get depends on who is telling you.\n\nThe tree stands out in the open in the temple grounds rather than behind anything, free to anyone who gets there in daylight, about a quarter of an hour on foot up from Bessho Onsen station. If you know what actually dates it, tell us.",
+      "verified_sources": [
+        "https://japan-heritage.bunka.go.jp/ja/culturalproperties/result/5061/",
+        "https://ja.wikipedia.org/wiki/%E6%84%9B%E6%9F%93%E3%82%AB%E3%83%84%E3%83%A9_(%E6%9C%A8)",
+        "https://www.82bunka.or.jp/bunkazai/detail.php?no=490&seq=0"
+      ],
+      "access": "Free, stands in the grounds of Kitamuki Kannon temple, open to visitors during daylight hours",
+      "transport": "Ueda Dentetsu Bessho Line to Bessho Onsen Station, then about 10-15 minute walk to Kitamuki Kannon",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

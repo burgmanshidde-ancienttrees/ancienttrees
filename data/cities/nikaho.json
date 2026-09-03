@@ -1,0 +1,62 @@
+{
+  "city": "Nikaho",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Nikaho maps one tree: Agarikodaio, a Japanese beech in the Nakajimadai forest whose whole shape comes from being cut for charcoal, generation after generation, above the snowline. The cuts stopped long enough ago that the regrown stems have thickened into a squat candelabra 7.62 metres round. It is a working tree that outlived its work, listed among Japan's hundred Forest Giants, and it stands alone on this map because it is the reason to come, not because the city is done being researched.",
+  "meta_description": "Agarikodaio, a beech shaped by generations of charcoal-cutting in Nikaho's Nakajimadai forest, Akita: over 300 years old, 7.62 metres round.",
+  "question_meta": "Nikaho's mapped tree is Agarikodaio, a coppiced beech over 300 years old in the Nakajimadai forest, Akita Prefecture.",
+  "question_answer": "Agarikodaio, a Japanese beech in the Nakajimadai forest within Chokai Quasi-National Park. Japan's Forestry Agency dates it at over 300 years and lists it among its hundred Forest Giants. It is the only tree mapped here, published alone because the tree itself is the destination.",
+  "question_context": "Agarikodaio's age comes from a Forestry Agency survey rather than a ring count, and the figure it gives is a floor, over 300 years, not a settled number. What is not in doubt is how the tree got its shape: generations of charcoal burners cut it back above the snowpack, and each cut sent up a fresh crop of stems from the same living base. In the local dialect that makes it an agariko, a risen-up child, and this one is the daio, the king of them, a trunk 7.62 metres round breaking into a candelabra of limbs 25 metres up. Nobody has cut it in a very long time, and the stems left standing at that last cut have thickened into trunks of their own. Unlike most old trees that survive in Japan, this is not a temple or shrine tree kept for its sanctity; it is a working tree that outlived its work. It stands on a marked forest path from the Nakajimadai trailhead, in Chokai Quasi-National Park, free and open, with no train station within reach. In leaf its strange frame vanishes into the canopy; before the leaves come, the whole shape is visible at once.",
+  "hero_tree_id": "nkh_001",
+  "oldest_tree_id": "nkh_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Nikaho?",
+      "a": "Agarikodaio, a Japanese beech in the Nakajimadai forest, dated by Japan's Forestry Agency at over 300 years. It is the only tree mapped here."
+    },
+    {
+      "q": "Why is Agarikodaio shaped like a candelabra?",
+      "a": "Charcoal burners cut it back above the snowline for generations, and each cut sent up a fresh crop of stems from the same base. That repeated coppicing is what gives it the squat, many-limbed shape."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in Chokai Quasi-National Park, reached on a marked forest path from the Nakajimadai trailhead, no ticket needed."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "There is no train station nearby. Reach the Nakajimadai trailhead near Kisakata by car, then walk the short marked forest path."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nkh_001",
+      "name": "Agarikodaio",
+      "species": "Japanese Beech (Fagus crenata)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 762,
+      "location": {
+        "address": "Nakajimadai, Kisakata, Nikaho, Akita Prefecture",
+        "latitude": 39.16098333,
+        "longitude": 140.02321667,
+        "neighbourhood": "Nakajimadai forest, Chokai Quasi-National Park"
+      },
+      "story": "Its shape is the work of axes. For generations charcoal burners in the Nakajimadai forest cut this beech off above the winter snowpack, and each cut sent up a new crop of stems from the same living base. In local dialect a tree treated that way is an agariko, a risen-up child. This one is the daio, the king of them: a squat trunk 7.62 metres round splitting into a candelabra of limbs that reach 25 metres.\n\nJapan's Forestry Agency surveyed it, listed it among its hundred Forest Giants and dates it at over three hundred years. Nobody has cut it in a very long time, and the stems left standing at that last cut have had generations to thicken into trunks of their own.\n\nThis is not a temple tree or a shrine tree, which is how most old trees in Japan came through the centuries. It is a working tree that outlived its work. The beech woods around it were fuel, and the deep snow that decided where the woodsmen swung their axes still buries the ground here for months.\n\nIt stands in Chokai Quasi-National Park, reached on a marked forest path from the Nakajimadai trailhead, and it is now one of the most photographed trees in northern Japan. In leaf, the candelabra vanishes into its own canopy. Before the leaves come, you can read the whole strange frame of it.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%8C%E3%82%8A%E3%81%93%E5%A4%A7%E7%8E%8B",
+        "https://www.rinya.maff.go.jp/tohoku/sidou/kyoboku/20agariko.html"
+      ],
+      "access": "Free, reached via a marked forest trail in Nakajimadai within Chokai Quasi-National Park",
+      "transport": "No train station nearby; reached by car to the Nakajimadai trailhead near Kisakata, then a short walk on the marked forest path",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
