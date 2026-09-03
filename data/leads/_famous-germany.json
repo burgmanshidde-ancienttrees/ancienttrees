@@ -1,33 +1,7 @@
 {
  "country": "Germany",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03 verify pass: 3 Giessen candidates (Adam und Eva, Alte Eiche Roedgen, Schillerlinde Roedgen) and 2 Rudolstadt candidates (Freundschaftseiche, Einheitslinde) verified but held below the 4-tree floor; full write-ups in data/leads/giessen.json and data/leads/rudolstadt.json. Symbolic oaks in Germany blocked as a category, not a single tree. Entries removed from this leads list now that they are delivered elsewhere.",
  "leads": [
-  {
-   "name": "Nationalerbe-Baum",
-   "lat": 49.099083,
-   "lng": 13.23,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bremen_Riensberger_Friedhof_Mammutbaum.jpg",
-    "https://commons.wikimedia.org/wiki/File:Burglinde_(Sommer_Linde)_32._Nationalerbe_Baum_Deutschland_Homberg_Ohms.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eiche_F%C3%BCrst_P%C3%BCckler_Park.jpg"
-   ],
-   "status": "verified",
-   "reason": "Identified: this is the Waldhaustanne, a silver fir near Zwieslerwaldhaus in Nationalpark Bayerischer Wald (coordinates match nationalerbe-baeume.de's own GPS to ~50m). Delivered as zwi_001 in data/research/germanybatch-verified.json. The Commons category behind this lead mixed in photos from at least two other, unrelated Nationalerbe-Baeume (a Bremen mammoth tree and a Homberg/Ohm lime) which do NOT belong at these coordinates and were not researched or delivered."
-  },
-  {
-   "name": "Pücklersche Blutbuche (Muskau Park)",
-   "lat": 51.54715,
-   "lng": 14.7239,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_Bad_Muskau...2H1A1303WI.jpg",
-    "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_Bad_Muskau_81.JPG",
-    "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_in_Bad_Muskau...2H1A1117WI.jpg"
-   ],
-   "status": "blocked",
-   "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "DEAD. The original copper beech, transplanted to Bad Muskau by Fuerst Pueckler in 1826 (already 40 years old then, so roughly 250 years old total), died of fungal disease; baumkunde.de records it under the heading † Fuerst-Pueckler-Blutbuche am Schloss Muskau (the dagger denotes deceased in German tree registers). A cutting was planted into the dead trunk/torso and is reportedly growing (baumkunde.de also separately lists a \"tote Buche, die noch lebt\" entry for the same spot), but that successor is a young, unmeasured sapling with no independent verification of size or age, so it does not itself meet this project's bar yet. No other individually named, verifiable remarkable tree was found in Fuerst-Pueckler-Park Bad Muskau on this pass beyond a row of three unnamed Canadian poplars (planted 1830, not a single collectible point); a Bad Muskau cluster was NOT assembled. A future pass could revisit the successor beech once it has some age/size to verify, or search harder for other named Muskau Park specimens."
-  },
   {
    "name": "Riesenbuche bei Altmugl",
    "lat": null,
@@ -63,32 +37,6 @@
    "status": "lead"
   },
   {
-   "name": "Kanzelbuche",
-   "lat": 49.039975,
-   "lng": 8.87275556,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Alte_Kanzelbuche_im_Schnee.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_junge_Kanzelbuche_am_6._Januar_2020.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_junge_Kanzelbuche_am_6._Januar_2020_im_Naturpark_Stromberg-Heuchelberg.jpg"
-   ],
-   "status": "blocked",
-   "reason": "DEAD. The original Kanzelbuche (a Suentelbuche/snake-branched beech near Zaberfeld-Sternenfels, Baden-Wuerttemberg, protected since a hunting visit by King Wilhelm/Friedrich of Wuerttemberg around 1810 and entered in the Schwaebische Baumbuch) collapsed on 20 August 2001 after fungal decay, per de.wikipedia.org/wiki/Kanzelbuche. Two young offspring now grow at the same spot but are unmeasured and far too young to be a remarkable entry in their own right. Never ship the original; a future pass could reconsider the site once the offspring have real size."
-  },
-  {
-   "name": "Blutbuche in Pillnitz",
-   "lat": 51.00936,
-   "lng": 13.869502,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-011.jpg",
-    "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-012.jpg",
-    "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-014.jpg"
-   ],
-   "status": "blocked",
-   "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "why": "DEAD. Both copper beeches at the entrance to the Schlosspark Pillnitz, planted 1895, have been felled: the first on the Bergpalais side in 2021, the second after an assessment found fungal infection and a high risk of branch failure, its crown taken off for visitor safety. Cuttings taken in 2023, 2024 and 2025 to keep the genetics alive did not root, the shoots being too weak. Never ship."
-  },
-  {
    "name": "Urbuche",
    "lat": null,
    "lng": null,
@@ -100,71 +48,6 @@
    "status": "lead"
   },
   {
-   "name": "Symbolic oaks in Germany",
-   "lat": 52.14319444,
-   "lng": 8.48315556,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20040727_1027_1133-Spenge-Memoschild_Flugplatz_Nagelsholz_auf_dem_Rathausplatz.JPG",
-    "https://commons.wikimedia.org/wiki/File:Die_Eiche.jpg",
-    "https://commons.wikimedia.org/wiki/File:Doberlug_2013_(Alter_Fritz)_06.JPG"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Adam und Eva (Wieseck)",
-   "lat": 50.62953333,
-   "lng": 8.704375,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-Wieseck,_Adam_und_Eva_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-Wieseck,_Adam_und_Eva_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-Wieseck,_Adam_und_Eva_03.jpg"
-   ],
-   "status": "lead",
-   "reason": "Verified: twin sessile oaks (Quercus petraea, not just genus), ca. 300-330y, girths 420-595cm depending on source, Naturdenkmal + Baumveteran. Genuinely impressive but not individually a single-tree-destination case, and only 2 other Giessen candidates exist (5.4km away), below the 4-tree floor. Full write-up in data/leads/giessen.json, held for a future pass to find a 4th Giessen tree."
-  },
-  {
-   "name": "Alte Eiche (Rödgen)",
-   "lat": 50.59074444,
-   "lng": 8.75022778,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Eiche_R%C3%B6dgen.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Alte_Eiche_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Alte_Eiche_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Verified: pedunculate oak, protected since 1906, ca. 275-350y, girth ~610-629cm, condition declining but vital. Not individually destination-level. Full write-up in data/leads/giessen.json alongside Schillerlinde (410m away) and Adam und Eva (5.4km away); below the 4-tree floor, held for a future pass."
-  },
-  {
-   "name": "Beckmannshagen-Eiche",
-   "lat": 51.219475,
-   "lng": 7.183075,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_033.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_034.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_035.jpg"
-   ],
-   "status": "blocked",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Delivered as wup_004 in data/research/germanybatch-verified.json. Note: located ~2.4km from the Ronsdorfer Anlagen cluster (near Ronsdorfer Talsperre dam), confirmed via its own photo geotag; not part of the same walkable cluster as the other three Wuppertal trees. MERGE DECISION 2026-09-03: declined, not published. All four Ronsdorfer Anlagen/Talsperre trees are young (16-30yr) civic memorial plantings, not genuinely old or spectacular specimens; does not clear the remarkability bar for a Wuppertal page. Full write-up kept in data/leads/wuppertal.json."
-  },
-  {
-   "name": "Betteleiche (Hainich)",
-   "lat": 51.08617,
-   "lng": 10.403403,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Betteleiche,_Hainich_National_Park.jpg",
-    "https://commons.wikimedia.org/wiki/File:Betteleiche,_Nahansicht_im_Winter.jpg",
-    "https://commons.wikimedia.org/wiki/File:Betteleiche-Nationalpark-Hainich.jpg"
-   ],
-   "status": "verified",
-   "reason": "Delivered to data/research/famousgermany-verified.json as hai_001, single-tree-destination exception (flagship landmark of Nationalpark Hainich with its own dedicated hiking trail). Two independent sources (de.wikipedia, official national park page). Species left as genus-only oak (sources say 'Eiche' without settling robur vs petraea); girth conflict between sources (5.90m vs 5.6m) recorded and flagged rather than resolved."
-  },
-  {
    "name": "Bärenwaldeiche bei Niederholzklau",
    "lat": null,
    "lng": null,
@@ -174,20 +57,6 @@
     "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau12.JPG"
    ],
    "status": "lead"
-  },
-  {
-   "name": "Denkstein und Eiche zur Mahnung für Nachhaltigkeit in den Ronsdorfer Anlagen",
-   "lat": 51.23502,
-   "lng": 7.207558,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_048.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_049.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_050.jpg"
-   ],
-   "status": "blocked",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Delivered as wup_003 in data/research/germanybatch-verified.json. MERGE DECISION 2026-09-03: declined, not published. All four Ronsdorfer Anlagen/Talsperre trees are young (16-30yr) civic memorial plantings, not genuinely old or spectacular specimens; does not clear the remarkability bar for a Wuppertal page. Full write-up kept in data/leads/wuppertal.json."
   },
   {
    "name": "Dr. August Köster-Eiche",
@@ -274,70 +143,6 @@
    "status": "lead"
   },
   {
-   "name": "Freundschaftseiche in Rudolstadt",
-   "lat": 50.718573,
-   "lng": 11.338517,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Freundschaftseiche_2015,_Pflanzung,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Freundschaftseiche_2015,_Pflanzung,_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Freundschaftseiche_2024,_Sp%C3%A4tsommer,_01.jpg"
-   ],
-   "status": "lead",
-   "reason": "Verified: red oak planted 3 Oct 2015, city-partnership memorial (Bayreuth). Not individually destination-level; only 1 other Rudolstadt candidate found (Einheitslinde, ~250m away), below the 4-tree floor. Full write-up in data/leads/rudolstadt.json."
-  },
-  {
-   "name": "Hans-Bilstein-Eiche",
-   "lat": 51.233245,
-   "lng": 7.205755,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_021.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_022.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_023.jpg"
-   ],
-   "status": "blocked",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Delivered as wup_001 in data/research/germanybatch-verified.json. MERGE DECISION 2026-09-03: declined, not published. All four Ronsdorfer Anlagen/Talsperre trees are young (16-30yr) civic memorial plantings, not genuinely old or spectacular specimens; does not clear the remarkability bar for a Wuppertal page. Full write-up kept in data/leads/wuppertal.json."
-  },
-  {
-   "name": "Hitler-Eiche (Wuppertal)",
-   "lat": 51.235563,
-   "lng": 7.206322,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_059.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_061.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_063.jpg"
-   ],
-   "status": "blocked",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Existence of an oak at this Ronsdorfer Anlagen spot (51.235563, 7.206322) confirmed by a geotagged 2015 Commons photo, but the Hitler-Eiche identification and 1930s planting date rest on a single source: the Commons category page / Wikidata item (Q105661013), which is category metadata rather than a documented account. It does NOT appear in the German Wikipedia Liste der Gedenkbaeume in Wuppertal (which does list the other four Ronsdorf memorial trees precisely, with dates). No independent narrative source found tying this specific tree to a 1933 Hitler-oak planting; the one well-documented Wuppertal Hitler-Eiche found in sources stands at the zoo stadium, a different location. Fails the two-independent-source bar on the fact that actually matters here (the historically loaded identification). Delivered as a lead rather than blocked outright would risk shipping an unverified claim about a sensitive subject; recorded as blocked pending a second independent source (e.g. a local history article, a Stolpersteine/NS-history project, or a council record) that specifically documents this tree."
-  },
-  {
-   "name": "Hunneneiche (Untermerzbach)",
-   "lat": 50.12281,
-   "lng": 10.8535,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hunneneiche,_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hunneneiche,_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:ND-05478_Hunneneiche_bei_Untermerzbach.jpg"
-   ],
-   "status": "verified",
-   "reason": "Delivered to data/research/famousgermany-verified.json as utb_001, single-tree-destination exception. Officially protected Naturdenkmal since 1963 (ND-05478), species confirmed as Quercus robur by monumentale-eichen.de, girth 6.61m. Age sources disagree (500y per Naturpark Hassberge tourism page vs c.220-420y per dendrologist's planting-date estimate); both recorded and flagged rather than resolved."
-  },
-  {
-   "name": "Hüter des Feldes",
-   "lat": 50.12184867,
-   "lng": 10.96154267,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Called_The_natural_monument_%22guardians_of_the_field%22_or_%22Rasierpinselbaum%22,_is_a_1,000-year-old_oak_tree_at_Nedensdorf_district_Lichtenfels_in_Upper_Franconia,_Bavaria,_Germany.JPG",
-    "https://commons.wikimedia.org/wiki/File:Der_%22H%C3%BCter_des_Feldes%22_auch_%22Rasierpinselbaum%22_genannt,_im_Sommer_2014_mit_Teilsch%C3%A4den_an_der_Krone..JPG",
-    "https://commons.wikimedia.org/wiki/File:Hueter_des_Feldes.jpg"
-   ],
-   "status": "verified",
-   "reason": "Delivered to data/research/famousgermany-verified.json as ned_001, single-tree-destination exception. Featured in the 2003 film 'Luther', a Bavarian TV documentary and a dedicated 2023 photo book; has its own de.wikipedia article. Alive but visibly declining (confirmed via a 23 June 2026 field observation logged on baumkunde.de/monumentale-eichen.de: 'vital, trunk completely hollow, crown partly green'); regional conservation authority has stopped active preservation. Age sources disagree sharply (300-500y dendrology estimate vs 'over 1000 years' per press/authority); both recorded and flagged rather than resolved."
-  },
-  {
    "name": "Jahrhunderteiche",
    "lat": null,
    "lng": null,
@@ -360,20 +165,6 @@
    "status": "lead"
   },
   {
-   "name": "Pius-Eiche (Haren)",
-   "lat": 52.79027778,
-   "lng": 7.24166667,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Haren,_die_Sankt_Martinus_Kirche_IMG_7309_2020-08-08_16.23.jpg",
-    "https://commons.wikimedia.org/wiki/File:Haren_(Ems)_katedralo_Emsland-Dom_somere_1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Haren_(Ems)_katedralo_Emsland-Dom_somere_2.JPG"
-   ],
-   "status": "blocked",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "DEAD/REMOVED. Search results (Denkmalatlas Niedersachsen entry, 403'd on direct fetch this pass) indicate the original Pius-Eiche at the Kirchplatz in Haren (Ems), a memorial oak for Pope Pius IX, had to be removed due to old age and was replaced with a newly planted oak in 2017. The 2017 replacement is only c.9 years old and not independently verified on this pass; not a remarkable entry yet. Worth rechecking the Denkmalatlas record directly (it 403'd for automated fetch, may need a browser session) before fully closing this out."
-  },
-  {
    "name": "Schlosseiche bei Eisolzried",
    "lat": null,
    "lng": null,
@@ -383,48 +174,6 @@
     "https://commons.wikimedia.org/wiki/File:Schlosseiche_Eisolzried.jpg"
    ],
    "status": "lead"
-  },
-  {
-   "name": "Tausendjährige Eiche in Bötersheim",
-   "lat": 53.32119,
-   "lng": 9.74675,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000j%C3%A4hrige_Eiche_B%C3%B6tersheim_Hamburg_Harburg,_nahe_L%C3%BCneburger_Heide.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tausendjaehrige_Eiche_Boetersheim.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tausendj%C3%A4hrige_Eiche_B%C3%B6tersheim.png"
-   ],
-   "status": "verified",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Delivered as bot_001 (single-tree exception) in data/research/germanybatch-verified.json. Species confirmed Quercus robur; age conflict between sources (600-800y per two registers) flagged in verify_notes."
-  },
-  {
-   "name": "Volkenrodaer Eiche",
-   "lat": 51.252031,
-   "lng": 10.571594,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_03.jpg"
-   ],
-   "status": "verified",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Delivered as vlk_001 (single-tree exception) in data/research/germanybatch-verified.json, aka Koenigseiche/Dicke Eiche."
-  },
-  {
-   "name": "Japanischer Schnurbaum am Alsterufer Hamburg",
-   "lat": 53.561528,
-   "lng": 9.997528,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg.jpg",
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg_02.jpg"
-   ],
-   "status": "verified",
-   "species": "Pagoda Tree (Styphnolobium sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Delivered as hbg_008 (species Styphnolobium japonicum confirmed, not just genus) in data/research/germanybatch-verified.json, meant to be added to existing Hamburg city file."
   },
   {
    "name": "Japanischer Schnurbaum (Schillerplatz, Mannheim)",
@@ -515,34 +264,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Bordesholm Gerichtslinde",
-   "lat": 54.17672222,
-   "lng": 10.01130556,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bordesholm,_the_old_limetree.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde_(Court_Tree)_2010.jpg"
-   ],
-   "status": "blocked",
-   "species": "Winter Lime (Tilia cordata)",
-   "species_basis": "confirmed by de.wikipedia's dedicated article",
-   "why": "DEAD. de.wikipedia's dedicated article ('Bordesholmer Linde') and arboristik.de's article 'Das Ende der Bordesholmer Linde' both confirm the tree could not be saved: on 29 May 2018 a large branch broke off and the tree threatened to topple, with a strong honey fungus (Hallimasch) infestation visible in dying branches. It was removed. Never ship."
-  },
-  {
-   "name": "Collmer Linde",
-   "lat": 51.30276,
-   "lng": 13.01867,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm,_Infotafel.jpg",
-    "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(3).jpg"
-   ],
-   "status": "verified",
-   "species": "Large-leaved Lime (Tilia platyphyllos)",
-   "species_basis": "confirmed by Nationalerbe-Baeume register and de.wikipedia as Sommerlinde",
-   "reason": "Delivered to data/research/famousgermany-verified.json as col_001, single-tree-destination exception. Official Nationalerbe-Baum since Oct 2022, Saxony's reputed oldest linden, historic Gerichtslinde/Dingplatz site. Alive, professionally inspected May 2022 with vigorous new growth documented. Popular 'thousand years' claim flagged as folklore against an expert estimate of ~800 years."
-  },
-  {
    "name": "Peter-Linde (Coppenbrügge)",
    "lat": null,
    "lng": null,
@@ -607,20 +328,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Einheitslinde in Rudolstadt",
-   "lat": 50.719006,
-   "lng": 11.335441,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Einheitslinde,_Gedenkstein,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Einheitslinde,_Gedenkstein_2010,_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Rudolstadt,_Einheitslinde,_Gedenkstein_2010,_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Verified: lime planted 3 Oct 1990 (reunification), memorial stone added 2010. Not individually destination-level; only 1 other Rudolstadt candidate found (Freundschaftseiche, ~250m away), below the 4-tree floor. Full write-up in data/leads/rudolstadt.json."
-  },
-  {
    "name": "Einheitslinde in Ruhla",
    "lat": 50.893826,
    "lng": 10.365141,
@@ -647,20 +354,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Emil-Zatopek-Linde",
-   "lat": 51.235892,
-   "lng": 7.204445,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_084.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_087.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_089.jpg"
-   ],
-   "status": "blocked",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Delivered as wup_002 in data/research/germanybatch-verified.json. MERGE DECISION 2026-09-03: declined, not published. All four Ronsdorfer Anlagen/Talsperre trees are young (16-30yr) civic memorial plantings, not genuinely old or spectacular specimens; does not clear the remarkability bar for a Wuppertal page. Full write-up kept in data/leads/wuppertal.json."
-  },
-  {
    "name": "Freiheitslinde Lindaufeld",
    "lat": 54.595933,
    "lng": 9.815023,
@@ -683,20 +376,6 @@
    "status": "lead",
    "species": "Lime (Tilia sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Fünffingerlinde",
-   "lat": 54.149448,
-   "lng": 9.220072,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Besichtigung_der_F%C3%BCnffingerlinde_im_Riesewohld_in_Albersdorf.jpg",
-    "https://commons.wikimedia.org/wiki/File:Fuenf-Fingerlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:F%C3%BCnffingerlinde_Albersdorf_Baum_Schleswig-Holstein.jpg"
-   ],
-   "status": "verified",
-   "species": "Small-leaved Lime (Tilia cordata)",
-   "species_basis": "confirmed by baumkunde.de and monumentaltrees.com as Winterlinde",
-   "reason": "Delivered to data/research/famousgermany-verified.json as alb_001, single-tree-destination exception. A single specimen of five fused stems shaped like an open hand, protected Naturdenkmal since 1938, own de.wikipedia article. Vital per baumkunde.de's 2020 survey, girth 4.90m."
   },
   {
    "name": "Galenbecker Tanzlinde",
@@ -825,35 +504,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Große Linde bei Teuchatz",
-   "lat": 49.87194167,
-   "lng": 11.10243333,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_Teuchatz,_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_10.jpg"
-   ],
-   "status": "verified",
-   "species": "Large-leaved Lime (Tilia platyphyllos)",
-   "species_basis": "confirmed by de.wikipedia's dedicated article, which calls it a Sommerlinde (Tilia platyphyllos), not a genus guess",
-   "reason": "Delivered to data/research/bamberg-verified.json as bam_005. Matches Bavaria's own Naturdenkmal register (ND-03920, 'Naturdenkmal 1 Linde \"Große Linde\"', status aktuell, 49.87235,11.10251, ~50m from this lead's coordinate: same tree) plus a dedicated de.wikipedia article (pageid 2927371) citing published dendrology literature (Froehlich, 'Wege zu alten Baeumen - Bayern' 1990 and 'Alte liebenswerte Baeume in Deutschland' 2000): girth 770cm at 1.3m height (1990), 787cm at its narrowest point (2012), 822cm at 1m height (2008), height 26m, crown diameter 26m, literature age estimate 350-400 years. Stands immediately beside the public road from Teuchatz to Burggrub (Markt Heiligenstadt i.OFr., Landkreis Bamberg), so access is free and unrestricted. Alive evidence: dated Commons photos from 2015-2016 (CC BY-SA 4.0, photographer Ermell) plus the register's own 'aktuell' status. One caveat for whoever places this on a city page: it is ~16km from Bamberg centre in a rural part of the Fraenkische Schweiz with NO passenger rail (the branch line to Heiligenstadt closed in 1968); it is reachable by car in roughly 25 minutes but not confirmed within CLAUDE.md's ~30-minute public-transport day-trip boundary, so label the travel time honestly rather than presenting it as an easy add-on to the Wildensorg walk."
-  },
-  {
-   "name": "Riesenlinde zu Heede",
-   "lat": 52.993194,
-   "lng": 7.29508,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2011-04_Riesenlinde_Heede_(Niedersachsen).jpg",
-    "https://commons.wikimedia.org/wiki/File:2016_Millennial_Lime_Tree_of_Heede_DE.jpg",
-    "https://commons.wikimedia.org/wiki/File:20221224_Linde_te_Heede_(dtsl)_08b.jpg"
-   ],
-   "status": "done",
-   "species": "Large-leaved Lime (Tilia platyphyllos)",
-   "species_basis": "confirmed by de.wikipedia's dedicated article as Sommerlinde",
-   "reason": "Same tree as the already-published Riesenlinde, Heede (verified/written 2026-09-03).",
-   "published_as": "hed_001"
-  },
-  {
    "name": "Heinrichslinde",
    "lat": 52.26390833,
    "lng": 10.52403611,
@@ -891,33 +541,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Kaditzer Linde",
-   "lat": 51.0833473,
-   "lng": 13.6714672,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:20140327220DR_Dresden-Kaditz_Emmauskirchhof_Sommerlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:20140327225DR_Dresden-Kaditz_Emmauskirchhof_Sommerlinde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1890)_b_130.jpg"
-   ],
-   "status": "RESOLVED 2026-08-29, delivered as dre_005",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kaiser-Lothar-Linde (Königslutter)",
-   "lat": 52.24404167,
-   "lng": 10.81562778,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kaiser-Lothar-Linde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kaiser-Lothar-Linde_K%C3%B6nigslutter.jpg",
-    "https://commons.wikimedia.org/wiki/File:KaiserLotharLindeKoenigslutter2019_04_13.jpg"
-   ],
-   "status": "verified",
-   "species": "Large-leaved Lime (Tilia platyphyllos)",
-   "species_basis": "confirmed by baumkunde.de's tree register as Sommerlinde",
-   "reason": "Delivered to data/research/famousgermany-verified.json as klu_001, single-tree-destination exception. Stands beside the Kaiserdom Koenigslutter, own dedicated de.wikipedia article, legendary 1135 planting by Emperor Lothar III. Alive and 'vital' per baumkunde.de's most recent survey. Girth sources disagree slightly (13.32m 2021 register measurement vs an older 12.50m public figure); recorded the dated register figure and flagged the discrepancy."
-  },
-  {
    "name": "Kaiserlinde (Elversberg)",
    "lat": 49.317032,
    "lng": 7.124023,
@@ -929,20 +552,6 @@
    "status": "lead",
    "species": "Lime (Tilia sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kaiserlinde (Schloss Burg)",
-   "lat": 51.13767,
-   "lng": 7.15285,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2020-01-01_Kaiserlinde_Schloss_Burg_in_Solingen-Burg_(NRW).jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_November_2019.jpg",
-    "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_Sommer_2021.jpg"
-   ],
-   "status": "verified",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "sources disagree (Tilia x europaea 'Pallida' per de.wikipedia vs Tilia cordata per Naturpark Bergisches Land); published genus-only, ask the reader",
-   "reason": "Delivered to data/research/famousgermany-verified.json as sol_001, single-tree-destination exception (protected Naturdenkmal No. 51 at the popular Schloss Burg site). A living arbour pruned into shape by monks over generations; girth not measurable per de.wikipedia due to irregular growth. Free access confirmed by Naturpark Bergisches Land."
   },
   {
    "name": "Kandelaberlinde Dorla",
@@ -1165,20 +774,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Schillerlinde (Rödgen)",
-   "lat": 50.59433333,
-   "lng": 8.74895556,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Schillerlinde_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Schillerlinde_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-R%C3%B6dgen,_Schillerlinde_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Verified: winter lime, documented planting 11 Nov 1859 (Schiller centennial), girth 197cm, Naturdenkmal. Modest size, not individually destination-level. Full write-up in data/leads/giessen.json; below the 4-tree floor, held for a future pass."
-  },
-  {
    "name": "Gerichtslinde in Schlagsdorf",
    "lat": null,
    "lng": null,
@@ -1357,6 +952,334 @@
    "status": "lead",
    "species": "Lime (Tilia sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Nationalerbe-Baum",
+   "lat": 49.099083,
+   "lng": 13.23,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Bremen_Riensberger_Friedhof_Mammutbaum.jpg",
+    "https://commons.wikimedia.org/wiki/File:Burglinde_(Sommer_Linde)_32._Nationalerbe_Baum_Deutschland_Homberg_Ohms.jpg",
+    "https://commons.wikimedia.org/wiki/File:Eiche_F%C3%BCrst_P%C3%BCckler_Park.jpg"
+   ],
+   "status": "verified",
+   "reason": "Identified: this is the Waldhaustanne, a silver fir near Zwieslerwaldhaus in Nationalpark Bayerischer Wald (coordinates match nationalerbe-baeume.de's own GPS to ~50m). Delivered as zwi_001 in data/research/germanybatch-verified.json. The Commons category behind this lead mixed in photos from at least two other, unrelated Nationalerbe-Baeume (a Bremen mammoth tree and a Homberg/Ohm lime) which do NOT belong at these coordinates and were not researched or delivered."
+  },
+  {
+   "name": "Pücklersche Blutbuche (Muskau Park)",
+   "lat": 51.54715,
+   "lng": 14.7239,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_Bad_Muskau...2H1A1303WI.jpg",
+    "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_Bad_Muskau_81.JPG",
+    "https://commons.wikimedia.org/wiki/File:F%C3%BCrst-P%C3%BCckler-Park_in_Bad_Muskau...2H1A1117WI.jpg"
+   ],
+   "status": "blocked",
+   "species": "Beech (Fagus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "DEAD. The original copper beech, transplanted to Bad Muskau by Fuerst Pueckler in 1826 (already 40 years old then, so roughly 250 years old total), died of fungal disease; baumkunde.de records it under the heading † Fuerst-Pueckler-Blutbuche am Schloss Muskau (the dagger denotes deceased in German tree registers). A cutting was planted into the dead trunk/torso and is reportedly growing (baumkunde.de also separately lists a \"tote Buche, die noch lebt\" entry for the same spot), but that successor is a young, unmeasured sapling with no independent verification of size or age, so it does not itself meet this project's bar yet. No other individually named, verifiable remarkable tree was found in Fuerst-Pueckler-Park Bad Muskau on this pass beyond a row of three unnamed Canadian poplars (planted 1830, not a single collectible point); a Bad Muskau cluster was NOT assembled. A future pass could revisit the successor beech once it has some age/size to verify, or search harder for other named Muskau Park specimens."
+  },
+  {
+   "name": "Kanzelbuche",
+   "lat": 49.039975,
+   "lng": 8.87275556,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Alte_Kanzelbuche_im_Schnee.jpg",
+    "https://commons.wikimedia.org/wiki/File:Die_junge_Kanzelbuche_am_6._Januar_2020.jpg",
+    "https://commons.wikimedia.org/wiki/File:Die_junge_Kanzelbuche_am_6._Januar_2020_im_Naturpark_Stromberg-Heuchelberg.jpg"
+   ],
+   "status": "blocked",
+   "reason": "DEAD. The original Kanzelbuche (a Suentelbuche/snake-branched beech near Zaberfeld-Sternenfels, Baden-Wuerttemberg, protected since a hunting visit by King Wilhelm/Friedrich of Wuerttemberg around 1810 and entered in the Schwaebische Baumbuch) collapsed on 20 August 2001 after fungal decay, per de.wikipedia.org/wiki/Kanzelbuche. Two young offspring now grow at the same spot but are unmeasured and far too young to be a remarkable entry in their own right. Never ship the original; a future pass could reconsider the site once the offspring have real size."
+  },
+  {
+   "name": "Blutbuche in Pillnitz",
+   "lat": 51.00936,
+   "lng": 13.869502,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-011.jpg",
+    "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-012.jpg",
+    "https://commons.wikimedia.org/wiki/File:20221023.Schlosspark-Pillnitz.Blutbuche.-014.jpg"
+   ],
+   "status": "blocked",
+   "species": "Beech (Fagus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "why": "DEAD. Both copper beeches at the entrance to the Schlosspark Pillnitz, planted 1895, have been felled: the first on the Bergpalais side in 2021, the second after an assessment found fungal infection and a high risk of branch failure, its crown taken off for visitor safety. Cuttings taken in 2023, 2024 and 2025 to keep the genetics alive did not root, the shoots being too weak. Never ship."
+  },
+  {
+   "name": "Beckmannshagen-Eiche",
+   "lat": 51.219475,
+   "lng": 7.183075,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_033.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_034.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Talsperre_2015_035.jpg"
+   ],
+   "status": "blocked",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Delivered as wup_004 in data/research/germanybatch-verified.json. Note: located ~2.4km from the Ronsdorfer Anlagen cluster (near Ronsdorfer Talsperre dam), confirmed via its own photo geotag; not part of the same walkable cluster as the other three Wuppertal trees. MERGE DECISION 2026-09-03: declined, not published. All four Ronsdorfer Anlagen/Talsperre trees are young (16-30yr) civic memorial plantings, not genuinely old or spectacular specimens; does not clear the remarkability bar for a Wuppertal page. Full write-up kept in data/leads/wuppertal.json."
+  },
+  {
+   "name": "Betteleiche (Hainich)",
+   "lat": 51.08617,
+   "lng": 10.403403,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Betteleiche,_Hainich_National_Park.jpg",
+    "https://commons.wikimedia.org/wiki/File:Betteleiche,_Nahansicht_im_Winter.jpg",
+    "https://commons.wikimedia.org/wiki/File:Betteleiche-Nationalpark-Hainich.jpg"
+   ],
+   "status": "verified",
+   "reason": "Delivered to data/research/famousgermany-verified.json as hai_001, single-tree-destination exception (flagship landmark of Nationalpark Hainich with its own dedicated hiking trail). Two independent sources (de.wikipedia, official national park page). Species left as genus-only oak (sources say 'Eiche' without settling robur vs petraea); girth conflict between sources (5.90m vs 5.6m) recorded and flagged rather than resolved."
+  },
+  {
+   "name": "Denkstein und Eiche zur Mahnung für Nachhaltigkeit in den Ronsdorfer Anlagen",
+   "lat": 51.23502,
+   "lng": 7.207558,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_048.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_049.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_050.jpg"
+   ],
+   "status": "blocked",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Delivered as wup_003 in data/research/germanybatch-verified.json. MERGE DECISION 2026-09-03: declined, not published. All four Ronsdorfer Anlagen/Talsperre trees are young (16-30yr) civic memorial plantings, not genuinely old or spectacular specimens; does not clear the remarkability bar for a Wuppertal page. Full write-up kept in data/leads/wuppertal.json."
+  },
+  {
+   "name": "Hans-Bilstein-Eiche",
+   "lat": 51.233245,
+   "lng": 7.205755,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_021.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_022.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_023.jpg"
+   ],
+   "status": "blocked",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Delivered as wup_001 in data/research/germanybatch-verified.json. MERGE DECISION 2026-09-03: declined, not published. All four Ronsdorfer Anlagen/Talsperre trees are young (16-30yr) civic memorial plantings, not genuinely old or spectacular specimens; does not clear the remarkability bar for a Wuppertal page. Full write-up kept in data/leads/wuppertal.json."
+  },
+  {
+   "name": "Hitler-Eiche (Wuppertal)",
+   "lat": 51.235563,
+   "lng": 7.206322,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_059.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_061.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_063.jpg"
+   ],
+   "status": "blocked",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Existence of an oak at this Ronsdorfer Anlagen spot (51.235563, 7.206322) confirmed by a geotagged 2015 Commons photo, but the Hitler-Eiche identification and 1930s planting date rest on a single source: the Commons category page / Wikidata item (Q105661013), which is category metadata rather than a documented account. It does NOT appear in the German Wikipedia Liste der Gedenkbaeume in Wuppertal (which does list the other four Ronsdorf memorial trees precisely, with dates). No independent narrative source found tying this specific tree to a 1933 Hitler-oak planting; the one well-documented Wuppertal Hitler-Eiche found in sources stands at the zoo stadium, a different location. Fails the two-independent-source bar on the fact that actually matters here (the historically loaded identification). Delivered as a lead rather than blocked outright would risk shipping an unverified claim about a sensitive subject; recorded as blocked pending a second independent source (e.g. a local history article, a Stolpersteine/NS-history project, or a council record) that specifically documents this tree."
+  },
+  {
+   "name": "Hunneneiche (Untermerzbach)",
+   "lat": 50.12281,
+   "lng": 10.8535,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Hunneneiche,_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hunneneiche,_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:ND-05478_Hunneneiche_bei_Untermerzbach.jpg"
+   ],
+   "status": "verified",
+   "reason": "Delivered to data/research/famousgermany-verified.json as utb_001, single-tree-destination exception. Officially protected Naturdenkmal since 1963 (ND-05478), species confirmed as Quercus robur by monumentale-eichen.de, girth 6.61m. Age sources disagree (500y per Naturpark Hassberge tourism page vs c.220-420y per dendrologist's planting-date estimate); both recorded and flagged rather than resolved."
+  },
+  {
+   "name": "Hüter des Feldes",
+   "lat": 50.12184867,
+   "lng": 10.96154267,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Called_The_natural_monument_%22guardians_of_the_field%22_or_%22Rasierpinselbaum%22,_is_a_1,000-year-old_oak_tree_at_Nedensdorf_district_Lichtenfels_in_Upper_Franconia,_Bavaria,_Germany.JPG",
+    "https://commons.wikimedia.org/wiki/File:Der_%22H%C3%BCter_des_Feldes%22_auch_%22Rasierpinselbaum%22_genannt,_im_Sommer_2014_mit_Teilsch%C3%A4den_an_der_Krone..JPG",
+    "https://commons.wikimedia.org/wiki/File:Hueter_des_Feldes.jpg"
+   ],
+   "status": "verified",
+   "reason": "Delivered to data/research/famousgermany-verified.json as ned_001, single-tree-destination exception. Featured in the 2003 film 'Luther', a Bavarian TV documentary and a dedicated 2023 photo book; has its own de.wikipedia article. Alive but visibly declining (confirmed via a 23 June 2026 field observation logged on baumkunde.de/monumentale-eichen.de: 'vital, trunk completely hollow, crown partly green'); regional conservation authority has stopped active preservation. Age sources disagree sharply (300-500y dendrology estimate vs 'over 1000 years' per press/authority); both recorded and flagged rather than resolved."
+  },
+  {
+   "name": "Pius-Eiche (Haren)",
+   "lat": 52.79027778,
+   "lng": 7.24166667,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Haren,_die_Sankt_Martinus_Kirche_IMG_7309_2020-08-08_16.23.jpg",
+    "https://commons.wikimedia.org/wiki/File:Haren_(Ems)_katedralo_Emsland-Dom_somere_1.JPG",
+    "https://commons.wikimedia.org/wiki/File:Haren_(Ems)_katedralo_Emsland-Dom_somere_2.JPG"
+   ],
+   "status": "blocked",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "DEAD/REMOVED. Search results (Denkmalatlas Niedersachsen entry, 403'd on direct fetch this pass) indicate the original Pius-Eiche at the Kirchplatz in Haren (Ems), a memorial oak for Pope Pius IX, had to be removed due to old age and was replaced with a newly planted oak in 2017. The 2017 replacement is only c.9 years old and not independently verified on this pass; not a remarkable entry yet. Worth rechecking the Denkmalatlas record directly (it 403'd for automated fetch, may need a browser session) before fully closing this out."
+  },
+  {
+   "name": "Tausendjährige Eiche in Bötersheim",
+   "lat": 53.32119,
+   "lng": 9.74675,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:1000j%C3%A4hrige_Eiche_B%C3%B6tersheim_Hamburg_Harburg,_nahe_L%C3%BCneburger_Heide.jpg",
+    "https://commons.wikimedia.org/wiki/File:Tausendjaehrige_Eiche_Boetersheim.jpg",
+    "https://commons.wikimedia.org/wiki/File:Tausendj%C3%A4hrige_Eiche_B%C3%B6tersheim.png"
+   ],
+   "status": "verified",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Delivered as bot_001 (single-tree exception) in data/research/germanybatch-verified.json. Species confirmed Quercus robur; age conflict between sources (600-800y per two registers) flagged in verify_notes."
+  },
+  {
+   "name": "Volkenrodaer Eiche",
+   "lat": 51.252031,
+   "lng": 10.571594,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_02.jpg",
+    "https://commons.wikimedia.org/wiki/File:2018-01-14_K%C3%B6nigseiche,_Volkenroda_03.jpg"
+   ],
+   "status": "verified",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Delivered as vlk_001 (single-tree exception) in data/research/germanybatch-verified.json, aka Koenigseiche/Dicke Eiche."
+  },
+  {
+   "name": "Japanischer Schnurbaum am Alsterufer Hamburg",
+   "lat": 53.561528,
+   "lng": 9.997528,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg.jpg",
+    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum_am_Alsterufer_Hamburg_02.jpg"
+   ],
+   "status": "verified",
+   "species": "Pagoda Tree (Styphnolobium sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Delivered as hbg_008 (species Styphnolobium japonicum confirmed, not just genus) in data/research/germanybatch-verified.json, meant to be added to existing Hamburg city file."
+  },
+  {
+   "name": "Bordesholm Gerichtslinde",
+   "lat": 54.17672222,
+   "lng": 10.01130556,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Bordesholm,_the_old_limetree.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bordesholm_Gerichtslinde_(Court_Tree)_2010.jpg"
+   ],
+   "status": "blocked",
+   "species": "Winter Lime (Tilia cordata)",
+   "species_basis": "confirmed by de.wikipedia's dedicated article",
+   "why": "DEAD. de.wikipedia's dedicated article ('Bordesholmer Linde') and arboristik.de's article 'Das Ende der Bordesholmer Linde' both confirm the tree could not be saved: on 29 May 2018 a large branch broke off and the tree threatened to topple, with a strong honey fungus (Hallimasch) infestation visible in dying branches. It was removed. Never ship."
+  },
+  {
+   "name": "Collmer Linde",
+   "lat": 51.30276,
+   "lng": 13.01867,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm,_Infotafel.jpg",
+    "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(1).jpg",
+    "https://commons.wikimedia.org/wiki/File:1000-J%C3%A4hrige_Linde_in_Collm_(3).jpg"
+   ],
+   "status": "verified",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by Nationalerbe-Baeume register and de.wikipedia as Sommerlinde",
+   "reason": "Delivered to data/research/famousgermany-verified.json as col_001, single-tree-destination exception. Official Nationalerbe-Baum since Oct 2022, Saxony's reputed oldest linden, historic Gerichtslinde/Dingplatz site. Alive, professionally inspected May 2022 with vigorous new growth documented. Popular 'thousand years' claim flagged as folklore against an expert estimate of ~800 years."
+  },
+  {
+   "name": "Emil-Zatopek-Linde",
+   "lat": 51.235892,
+   "lng": 7.204445,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_084.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_087.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_089.jpg"
+   ],
+   "status": "blocked",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Delivered as wup_002 in data/research/germanybatch-verified.json. MERGE DECISION 2026-09-03: declined, not published. All four Ronsdorfer Anlagen/Talsperre trees are young (16-30yr) civic memorial plantings, not genuinely old or spectacular specimens; does not clear the remarkability bar for a Wuppertal page. Full write-up kept in data/leads/wuppertal.json."
+  },
+  {
+   "name": "Fünffingerlinde",
+   "lat": 54.149448,
+   "lng": 9.220072,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Besichtigung_der_F%C3%BCnffingerlinde_im_Riesewohld_in_Albersdorf.jpg",
+    "https://commons.wikimedia.org/wiki/File:Fuenf-Fingerlinde.jpg",
+    "https://commons.wikimedia.org/wiki/File:F%C3%BCnffingerlinde_Albersdorf_Baum_Schleswig-Holstein.jpg"
+   ],
+   "status": "verified",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "species_basis": "confirmed by baumkunde.de and monumentaltrees.com as Winterlinde",
+   "reason": "Delivered to data/research/famousgermany-verified.json as alb_001, single-tree-destination exception. A single specimen of five fused stems shaped like an open hand, protected Naturdenkmal since 1938, own de.wikipedia article. Vital per baumkunde.de's 2020 survey, girth 4.90m."
+  },
+  {
+   "name": "Große Linde bei Teuchatz",
+   "lat": 49.87194167,
+   "lng": 11.10243333,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_Teuchatz,_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Linde_bei_Teuchatz,_10.jpg"
+   ],
+   "status": "verified",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by de.wikipedia's dedicated article, which calls it a Sommerlinde (Tilia platyphyllos), not a genus guess",
+   "reason": "Delivered to data/research/bamberg-verified.json as bam_005. Matches Bavaria's own Naturdenkmal register (ND-03920, 'Naturdenkmal 1 Linde \"Große Linde\"', status aktuell, 49.87235,11.10251, ~50m from this lead's coordinate: same tree) plus a dedicated de.wikipedia article (pageid 2927371) citing published dendrology literature (Froehlich, 'Wege zu alten Baeumen - Bayern' 1990 and 'Alte liebenswerte Baeume in Deutschland' 2000): girth 770cm at 1.3m height (1990), 787cm at its narrowest point (2012), 822cm at 1m height (2008), height 26m, crown diameter 26m, literature age estimate 350-400 years. Stands immediately beside the public road from Teuchatz to Burggrub (Markt Heiligenstadt i.OFr., Landkreis Bamberg), so access is free and unrestricted. Alive evidence: dated Commons photos from 2015-2016 (CC BY-SA 4.0, photographer Ermell) plus the register's own 'aktuell' status. One caveat for whoever places this on a city page: it is ~16km from Bamberg centre in a rural part of the Fraenkische Schweiz with NO passenger rail (the branch line to Heiligenstadt closed in 1968); it is reachable by car in roughly 25 minutes but not confirmed within CLAUDE.md's ~30-minute public-transport day-trip boundary, so label the travel time honestly rather than presenting it as an easy add-on to the Wildensorg walk."
+  },
+  {
+   "name": "Riesenlinde zu Heede",
+   "lat": 52.993194,
+   "lng": 7.29508,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2011-04_Riesenlinde_Heede_(Niedersachsen).jpg",
+    "https://commons.wikimedia.org/wiki/File:2016_Millennial_Lime_Tree_of_Heede_DE.jpg",
+    "https://commons.wikimedia.org/wiki/File:20221224_Linde_te_Heede_(dtsl)_08b.jpg"
+   ],
+   "status": "done",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by de.wikipedia's dedicated article as Sommerlinde",
+   "reason": "Same tree as the already-published Riesenlinde, Heede (verified/written 2026-09-03).",
+   "published_as": "hed_001"
+  },
+  {
+   "name": "Kaditzer Linde",
+   "lat": 51.0833473,
+   "lng": 13.6714672,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:20140327220DR_Dresden-Kaditz_Emmauskirchhof_Sommerlinde.jpg",
+    "https://commons.wikimedia.org/wiki/File:20140327225DR_Dresden-Kaditz_Emmauskirchhof_Sommerlinde.jpg",
+    "https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1890)_b_130.jpg"
+   ],
+   "status": "RESOLVED 2026-08-29, delivered as dre_005",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Kaiser-Lothar-Linde (Königslutter)",
+   "lat": 52.24404167,
+   "lng": 10.81562778,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Kaiser-Lothar-Linde.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kaiser-Lothar-Linde_K%C3%B6nigslutter.jpg",
+    "https://commons.wikimedia.org/wiki/File:KaiserLotharLindeKoenigslutter2019_04_13.jpg"
+   ],
+   "status": "verified",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "species_basis": "confirmed by baumkunde.de's tree register as Sommerlinde",
+   "reason": "Delivered to data/research/famousgermany-verified.json as klu_001, single-tree-destination exception. Stands beside the Kaiserdom Koenigslutter, own dedicated de.wikipedia article, legendary 1135 planting by Emperor Lothar III. Alive and 'vital' per baumkunde.de's most recent survey. Girth sources disagree slightly (13.32m 2021 register measurement vs an older 12.50m public figure); recorded the dated register figure and flagged the discrepancy."
+  },
+  {
+   "name": "Kaiserlinde (Schloss Burg)",
+   "lat": 51.13767,
+   "lng": 7.15285,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2020-01-01_Kaiserlinde_Schloss_Burg_in_Solingen-Burg_(NRW).jpg",
+    "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_November_2019.jpg",
+    "https://commons.wikimedia.org/wiki/File:Die_Kaiserlinde_im_Sommer_2021.jpg"
+   ],
+   "status": "verified",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "sources disagree (Tilia x europaea 'Pallida' per de.wikipedia vs Tilia cordata per Naturpark Bergisches Land); published genus-only, ask the reader",
+   "reason": "Delivered to data/research/famousgermany-verified.json as sol_001, single-tree-destination exception (protected Naturdenkmal No. 51 at the popular Schloss Burg site). A living arbour pruned into shape by monks over generations; girth not measurable per de.wikipedia due to irregular growth. Free access confirmed by Naturpark Bergisches Land."
   },
   {
    "name": "Riesenlinde zu Heede",
@@ -1372,6 +1295,20 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species",
    "published_as": "hed_001",
    "reason": "Same tree as the already-published Riesenlinde, Heede (verified/written 2026-09-03)."
+  },
+  {
+   "name": "Symbolic oaks in Germany",
+   "lat": 52.14319444,
+   "lng": 8.48315556,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:20040727_1027_1133-Spenge-Memoschild_Flugplatz_Nagelsholz_auf_dem_Rathausplatz.JPG",
+    "https://commons.wikimedia.org/wiki/File:Die_Eiche.jpg",
+    "https://commons.wikimedia.org/wiki/File:Doberlug_2013_(Alter_Fritz)_06.JPG"
+   ],
+   "status": "blocked",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Commons category name for a general topic, not a single collectible point (multiple symbolic oaks across Germany, no one specific tree at these coordinates)."
   }
  ]
 }
