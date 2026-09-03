@@ -21,6 +21,12 @@
  * iOS device navigates straight to the App Store instead (Hidde's original
  * "met ios naar de appstore"): a modal would only be one more tap between an
  * iOS visitor and the thing they already decided to do.
+ *
+ * The QR itself encodes the App Store link directly, not this site's own
+ * /app (Hidde, 2026-09-03: "ik wil dat die gelijk naar de appstore
+ * doorstuurt"): one tap after scanning, matching what iOS visitors already
+ * get without a modal at all. The shared SVG asset is where the round-trip
+ * decode proof lives (AppGetter.astro).
  */
 import { APP_STORE_URL, SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { ui } from "../lib/i18n";

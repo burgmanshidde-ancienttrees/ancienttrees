@@ -21,13 +21,16 @@
  * block shows, because it is the only one of the three that is a plain
  * working link with nothing to detect.
  *
- * The QR encodes /app rather than the App Store link directly, so scanning
- * it is not a bet on the scanning phone being an iPhone: it lands the phone
- * on this exact widget, which then shows that phone's own iOS badge or
- * Android waitlist. Generated with the `qrcode` Python library and decoded
- * back with OpenCV before being committed, the same round-trip a phone's
- * camera performs, because a QR code that merely looks right is not the
- * same claim as one that scans right.
+ * The QR encodes the App Store link directly (Hidde, 2026-09-03: "ik wil dat
+ * die gelijk naar de appstore doorstuurt"), which used to point at /app
+ * instead so a scanning phone always landed on a working destination
+ * whatever its OS. That safety net is gone on purpose: one tap to the store
+ * beats a safe intermediate page, and Android scanning this now reaches an
+ * App Store listing it cannot install, which is the accepted cost. Generated
+ * with the `qrcode` Python library and decoded back with OpenCV before being
+ * committed, the same round-trip a phone's camera performs, because a QR
+ * code that merely looks right is not the same claim as one that scans
+ * right.
  */
 import AppStoreBadge from "./AppStoreBadge.astro";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
