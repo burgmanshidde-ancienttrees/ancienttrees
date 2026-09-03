@@ -9,6 +9,35 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 - The domain has a mailbox, and hello@ never existed
+
+`info@ancienttrees.app` receives. Confirmed end to end at 13:40 today: a mail
+from hidde@koos.agency landed in the Gmail inbox via mx1.improvmx.com with
+SPF pass and DKIM pass, and it is visibly "via improvmx.net" in Gmail. That
+address is the one published everywhere (privacy page, Settings in the app,
+the App Store listing, LICENSE, support), so the published contact is real
+for the first time since it was written down.
+
+WHAT LOOKED BROKEN AND WAS NOT. Two morning tests to `hello@` bounced with
+`550 5.1.1 Recipient not found`, and the two "Delivery Status Notification
+(Failure)" mails in the inbox are those. `hello@` is not an alias and there
+is no catch-all; only `info@` exists. `hello@` appears nowhere current, only
+in the July archive, so nothing on the site points at a dead address.
+
+The other reason a test can look dead: a mail sent from his own Gmail to an
+alias that forwards back to that Gmail is deduplicated on Message-ID and
+never appears. ImprovMX says so itself. So the forwarding test has to come
+from a different sender, which is what settled it.
+
+FOR HIDDE, still open, unchanged from 2026-08-21. Sending still goes out as
+burgmans.hidde@gmail.com, because `OUTREACH_FROM` in `~/.ancienttrees-mail.env`
+is the Gmail address. Every recipient of an outreach mail therefore sees the
+personal address, which PRINCIPLES.md #10 exists to prevent. The route is
+Gmail, Settings, Accounts, "Send mail as", add info@ancienttrees.app and
+verify (the verification code now arrives, which is the piece that was
+missing when this failed with a 405 in August). Say the word afterwards and
+the env line changes in one edit.
+
 ## 2026-09-03 - Oslo kommune answers, and the answer was inside a PDF
 
 Bymiljoetaten replied to the 2026-08-10 mail (case 22/35801-52, Bianca
