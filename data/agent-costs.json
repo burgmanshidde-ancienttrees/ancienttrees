@@ -5047,6 +5047,33 @@
     "note": "fixed famous_demand.py's missing same-tree filter (root cause of batches D/E's waste), built full page sets for hmy_001/shg_001 by hand, answered a stale REVIEW.md WARN",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "oahu",
+    "kind": "verify",
+    "tokens": 293731,
+    "trees": 4,
+    "note": "two verify passes on Oahu's paid-entry ratio: first delivered hnl_009 (UH Manoa baobab), second (full window) delivered hnl_009-011 (baobab, cannonball tree, Nuuanu monkeypod); paid ratio 75% to 55%. Merged, wrote stories, rebuilt city intro/faq for 11 trees, committed.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "llangernyw",
+    "kind": "verify",
+    "tokens": 115919,
+    "trees": 1,
+    "note": "new single-tree place (Llangernyw Yew, Wales), single-famous-tree exception. Built full page (intro/question/FAQ) by hand from verify_notes, published.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "matera",
+    "kind": "verify",
+    "tokens": 188843,
+    "trees": 1,
+    "note": "4th-tree hunt to clear Matera's floor (3 trees already verified from an earlier pass). Delivered mat_004 (Date Palm, RAMI registry) clearing the 4-tree floor. Built full city page by hand, published.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

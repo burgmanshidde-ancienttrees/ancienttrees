@@ -2,6 +2,12 @@
  "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
  "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
  "hosts": {
+  "hawaii.edu": {
+   "behaviour": "the whole domain and its subdomains (www.hawaii.edu, botany.hawaii.edu, manoa.hawaii.edu) are unreachable from this environment: mostly connect ECONNREFUSED via WebFetch, and curl -m 20 timed out (exit 28) on manoa.hawaii.edu and serv.biokic.asu.edu (a related UH-hosted checklist). Seen across at least 5 separate attempts on 4 different pages during an Oahu verify pass.",
+   "seen": "2026-09-03",
+   "cost": "several fetch attempts across an Oahu verify pass, all wasted; forced falling back to Wayback Machine snapshots for anything that had to be confirmed on a hawaii.edu page",
+   "workaround": "the Wayback Machine (web.archive.org) has recent snapshots of most hawaii.edu pages and loads fine via curl (though WebFetch itself refuses web.archive.org URLs directly, so fetch archive.org snapshots with curl and parse the HTML, not with WebFetch). Check availability first with curl 'https://archive.org/wayback/available?url=<page>'."
+  },
   "hidakokubunji.jp": {
    "behaviour": "does not respond at all (curl -m 20, HTTP 000) on both http and https, to /html/ginkgo.html and the bare domain",
    "seen": "2026-09-03",

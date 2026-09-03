@@ -212,7 +212,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 15 | Malaga | 40.23 | 117,780 | 9 | 5 | 1 | - | 30 | measured |
 | 16 | New York | 52.21 | 1,124,326 | 20 | 5 | 2 | - | 30 | measured |
 | 17 | Madeira | 33.17 | - | 10 | 1 | 1 | - | 20 | measured |
-| 18 | Hilo | 40.54 | - | 5 | - | 1 | 16 | 20 | measured |
+| 18 | Hilo | 40.54 | - | 6 | - | 1 | 16 | 20 | measured |
 | 19 | Paris | 35.63 | 524,268 | 31 | 9 | 4 | 129 | 30 | measured |
 | 20 | Portland | 35.01 | 217,222 | 20 | 1 | 2 | 301 | 20 | measured |
 | 21 | Alicante | 24.26 | 77,454 | 14 | 3 | 2 | 44 | 20 | measured |
@@ -241,7 +241,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 44 | Munich | 18.12 | 224,067 | 45 | 14 | 6 | 80 | 30 | measured |
 | 45 | Berlin | 17.81 | 412,181 | 19 | 11 | 1 | 195 | 30 | measured |
 | 46 | Sintra | 13.21 | 46,889 | 5 | 3 | - | 6 | 20 | measured |
-| 47 | Oahu | 17.20 | - | 8 | 1 | - | 133 | 20 | measured |
+| 47 | Oahu | 17.20 | - | 11 | 1 | - | 160 | 20 | measured |
 | 48 | Utrecht | 12.59 | 67,963 | 33 | 4 | 2 | 345 | 20 | measured |
 | 49 | Cagliari | 13.21 | 51,351 | 10 | 1 | 2 | 15 | 20 | measured |
 | 50 | Seoul | 22.73 | 206,265 | 8 | 5 | 1 | - | 30 | measured |
@@ -506,10 +506,10 @@ so qa.py fails the deploy when the table and the json disagree.
 | 309 | Stirling | 1.78 | 43,558 | - | - | - | - | 10 | predicted (travel demand) |
 | 310 | Killarney | 1.20 | 28,763 | - | - | - | - | 10 | predicted (travel demand) |
 | 311 | Buenos Aires | 1.69 | 333,331 | 4 | 1 | - | - | 30 | measured |
-| 312 | Matera | 1.00 | 67,033 | - | - | - | 2 | 10 | predicted (travel demand) |
-| 313 | Dijon | 1.72 | 43,526 | - | - | - | - | 10 | predicted (travel demand) |
-| 314 | Trier | 1.56 | 69,369 | - | - | - | - | 10 | predicted (travel demand) |
-| 315 | Annecy | 1.69 | 56,859 | - | - | - | - | 10 | predicted (travel demand) |
+| 312 | Dijon | 1.72 | 43,526 | - | - | - | - | 10 | predicted (travel demand) |
+| 313 | Trier | 1.56 | 69,369 | - | - | - | - | 10 | predicted (travel demand) |
+| 314 | Annecy | 1.69 | 56,859 | - | - | - | - | 10 | predicted (travel demand) |
+| 315 | Matera | 1.00 | 67,033 | 4 | - | - | 2 | 10 | predicted (travel demand) |
 | 316 | Middletown | 1.64 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 317 | Canterbury | 1.59 | 53,301 | - | - | - | - | 10 | predicted (travel demand) |
 | 318 | Freiburg | 1.54 | 92,752 | 7 | - | 1 | - | 10 | published, never ranked (may be uncrawled) |
