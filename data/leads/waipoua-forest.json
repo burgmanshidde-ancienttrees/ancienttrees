@@ -1,0 +1,17 @@
+{
+  "city": "Waipoua Forest",
+  "country": "New Zealand",
+  "city_slug": "waipoua-forest",
+  "note": "Candidates found during the famous-trees batch1 verification pass, 2026-09-03. Tane Mahuta and Te Matua Ngahere shipped to data/research/famous-batch1-verified.json.",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "Four Sisters",
+      "species": "Kauri (Agathis australis), a cluster of four trees",
+      "lat": -35.60021,
+      "lng": 173.52721,
+      "status": "blocked",
+      "why": "Currently unreachable, not a hard-rule access refusal but a real-time closure: the Department of Conservation's own live visitor page for the neighbouring Te Matua Ngahere Walk (doc.govt.nz, fetched 2026-09-03) states plainly, 'Note: Four Sisters and Yakas Kauri walks are currently closed.' Reason for the closure not stated on the page itself; consistent with the kauri dieback biosecurity works (the Rakau Rangatira project) that closed and reopened the Tane Mahuta track through late 2024. Re-check DOC's Waipoua Forest pages on any future pass before publishing; if it reopens, also weigh the destination-test / collectible-point question the brief raised: a compact cluster of four kauri growing together, similar in spirit to the Lomanstraat tunnel or a named avenue exception, could pass as one ensemble entry with one obvious place to stand (the viewing point at the cluster), but this was not resolved because the track closure made it moot this pass."
+    }
+  ]
+}

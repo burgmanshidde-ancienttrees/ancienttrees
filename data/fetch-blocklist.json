@@ -432,6 +432,12 @@
    "seen": "2026-09-02",
    "cost": "Taipei's official Protected Trees platform holds 3,905 designated trees and we can read them one at a time by id and no other way. That is a register we can cite but not import",
    "workaround": "for a handful of known trees, WebFetch /trees/zh-tw/tree/<id> directly. For an import, try from a different network first (the CI runner reaches hosts this Mac does not), and look for the same data on data.taipei, whose dataset download errored on every path tried this pass"
+  },
+  "oaxaca.gob.mx": {
+   "behaviour": "connection refused / hangs (curl -m 20 exit 28, timeout; also ECONNREFUSED via WebFetch)",
+   "seen": "2026-09-03",
+   "cost": "one fetch during the famous-trees batch1 verify pass (Arbol del Tule)",
+   "workaround": "unknown this pass; ciudadania-express.com and sinembargo.mx covered the same certification story and loaded fine"
   }
  }
 }

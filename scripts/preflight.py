@@ -12,8 +12,10 @@ the Astro build wins and this file is the thing that is wrong.
 
 Usage: python3 scripts/preflight.py
 """
+import collections
 import glob
 import json
+import math
 import os
 import re
 import sys
@@ -1397,6 +1399,64 @@ def check_leads_already_published():
     return out
 
 
+def check_pin_is_in_its_own_country():
+    """A pin thousands of kilometres from every other tree in its country.
+
+    Written 2026-09-03, the day a verify pass delivered two New Zealand kauri
+    with the minus sign missing from the latitude, which put them in the
+    Pacific east of Japan and marked them `confirmed`. It was caught by eye
+    before publication, and eyes are not a mechanism.
+
+    The test needs no table of country boxes, which is the point: the trees we
+    already publish ARE the box. A dropped sign moves a tree between seven and
+    fifteen thousand kilometres, a swapped latitude and longitude moves it
+    about as far, and both land far outside any cluster. Ordinary spread does
+    not: the widest legitimate gap on the site is well under the threshold,
+    and 2,379 trees across 46 countries produced zero hits the day this was
+    written.
+
+    What it cannot see is a country where we publish one tree, and that is
+    exactly the single-famous-tree case rung (0c) creates. It is the cheap
+    ninety percent rather than the whole answer, and it fails LOUD, because a
+    wrong pin is the one error a reader cannot forgive: they are standing in
+    the wrong place before any correction can reach them.
+    """
+    FAR_KM = 800
+    by_country = collections.defaultdict(list)
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+        for t in doc.get("trees", []):
+            loc = t.get("location") or {}
+            if loc.get("latitude") is None or loc.get("longitude") is None:
+                continue
+            by_country[doc.get("country")].append(
+                (loc["latitude"], loc["longitude"], doc["city"], t.get("name"),
+                 t.get("id")))
+    out = []
+    for country, rows in by_country.items():
+        if len(rows) < 2:
+            continue
+        for i, r in enumerate(rows):
+            nearest = min(_haversine(r[0], r[1], s[0], s[1])
+                          for j, s in enumerate(rows) if j != i)
+            if nearest > FAR_KM:
+                out.append("%s (%s, %s) sits %.0f km from the nearest other "
+                           "tree in %s, at %.5f,%.5f. A dropped minus sign or "
+                           "a swapped latitude and longitude looks exactly "
+                           "like this."
+                           % (r[3], r[4], r[2], nearest, country, r[0], r[1]))
+    return out
+
+
+def _haversine(lat1, lon1, lat2, lon2):
+    R, p = 6371.0, math.pi / 180
+    return 2 * R * math.asin(math.sqrt(
+        math.sin((lat2 - lat1) * p / 2) ** 2
+        + math.cos(lat1 * p) * math.cos(lat2 * p)
+        * math.sin((lon2 - lon1) * p / 2) ** 2))
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
@@ -1407,7 +1467,8 @@ def main():
                 + check_translated_components_have_no_typed_text()
                 + check_ui_strings_cover_every_language()
                 + check_translated_components_are_neutral()
-                + check_no_two_language_switch())
+                + check_no_two_language_switch()
+                + check_pin_is_in_its_own_country())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
