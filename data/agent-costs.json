@@ -4769,6 +4769,15 @@
     "note": "Session work, not a dispatched agent: story already existed in data/research/tamura-verified.json (famous-trees verify batch), but the town is actually Ono in Tamura District, so the city file was renamed data/cities/ono.json to avoid colliding with a future Tamura City page. One entry, a paired meoto-sugi cedar counted as one collectible ensemble, National Natural Monument, single-tree-destination exception. Fixed a hard-rule-9 species-name collision (Cryptomeria japonica) caught by the build.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "stuttgart+freiburg+heidelberg",
+    "kind": "write",
+    "tokens": 180000,
+    "trees": 16,
+    "note": "write-stories agent wrote all 16 stories in one context; main session then built the three city pages (intro/faq/question fields), fixed two hard-rule-9 species collisions the build caught (Tilia cordata common name, Tilia sp. Linden vs Lime), fixed a title-length overflow, updated germany.json country-page counts (12->15 cities, 123->139 trees), merged, built and pushed.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
