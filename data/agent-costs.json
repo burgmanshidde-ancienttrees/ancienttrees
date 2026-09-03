@@ -4879,6 +4879,15 @@
     "note": "write-stories agent on the 8 verified _famous-germany trees; session built eight new single-tree place pages, fixed umlaut-transliteration typos the passes introduced (Konigslutter, Fuenffingerlinde, Hueter), updated Germany country page count promise (15 to 23 cities, 143 to 151 trees), merged, built, QA, pushed.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "Alicante",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "all reachable register candidates already dispositioned by earlier passes (avenue/ensemble, twice-exhausted access, or already-blocked private land); caught a WebSearch city-name conflation (Caceres vs Alicante Calvo Sotelo) before it became a fabrication; zero new trees verified",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
