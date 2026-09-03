@@ -118,9 +118,11 @@ def main():
     # back, which is why the first batch after a From change gets looked at.
     if really:
         # Read the RAW string rather than trusting parseaddr, because the
-        # value that was live when this was written, "Hidde, Ancient Trees
-        # burgmans.hidde@gmail.com", has an unquoted comma in the display
-        # name and parseaddr returns nothing at all for it. That still fails
+        # value that was live when this was written, a display name reading
+        # "Hidde, Ancient Trees" followed by a bare Gmail address, has an
+        # unquoted comma in that display name and parseaddr returns nothing
+        # at all for it. (The address itself is not written out here: the
+        # qa check further down refuses any file that carries it.) It still fails
         # shut, which is the right direction, but it printed an empty address
         # back and made the refusal unreadable. Every address in the string
         # has to be on the domain, so a stray second one cannot slip past.
