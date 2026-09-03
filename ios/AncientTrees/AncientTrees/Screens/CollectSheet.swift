@@ -298,9 +298,23 @@ struct CollectSheet: View {
 
     /// THE CAMERA PATH. You are standing there, so the device fix is the
     /// answer and there is nothing to ask.
+    ///
+    /// UNLESS `origin` is not actually a fix. Found 2026-09-03: with location
+    /// off or refused, `origin` quietly falls back to the last fix this phone
+    /// ever had, or to Dam square (LocationOff.swift), and this used to record
+    /// that as `.device`, "GPS, standing at the tree". A confident lie is
+    /// worse than the honest gap the library path already has for exactly
+    /// this case, so an unknown origin routes here the same way a photograph
+    /// with no embedded location does: drag the pin, fix `.placed`.
     private func resolve(_ image: UIImage?) {
         guard let image else { return }
         taken = nil
+        guard location.known else {
+            shot = image
+            placing = .init(latitude: origin.lat, longitude: origin.lng)
+            withAnimation(.snappy) { stage = .place }
+            return
+        }
         settle(image, at: origin, fix: .device)
     }
 
