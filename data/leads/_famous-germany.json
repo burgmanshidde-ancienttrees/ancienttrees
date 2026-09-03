@@ -1,6 +1,6 @@
 {
  "country": "Germany",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03 verify pass: 3 Giessen candidates (Adam und Eva, Alte Eiche Roedgen, Schillerlinde Roedgen) and 2 Rudolstadt candidates (Freundschaftseiche, Einheitslinde) verified but held below the 4-tree floor; full write-ups in data/leads/giessen.json and data/leads/rudolstadt.json. Symbolic oaks in Germany blocked as a category, not a single tree. Entries removed from this leads list now that they are delivered elsewhere.",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03 verify pass: 3 Giessen candidates (Adam und Eva, Alte Eiche Roedgen, Schillerlinde Roedgen) and 2 Rudolstadt candidates (Freundschaftseiche, Einheitslinde) verified but held below the 4-tree floor; full write-ups in data/leads/giessen.json and data/leads/rudolstadt.json. Symbolic oaks in Germany blocked as a category, not a single tree. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 follow-up verify pass: found the 4th Giessen tree, Lindengruppe an der Lindbachquelle (Lützellinden, also a Gießen district), which clears Giessen to the 4-tree floor; all 4 delivered to data/research/giessen-verified.json (gie_001-gie_004), and data/leads/giessen.json emptied accordingly. No fourth Rudolstadt candidate was found. Three further candidates verified and delivered as single-tree-destination exceptions (2026-08-31 ruling), each a nationally or regionally famous named lime with official protection and a real reason someone would travel specifically for it: Linde in Reinborn (data/research/reinborn-verified.json, rbn_001, 14.34m girth), Tanzlinde (Effeltrich) (data/research/effeltrich-verified.json, eff_001, Nationalerbe-Baum No. 39), and Schenklengsfelder Dorflinde (data/research/schenklengsfeld-verified.json, sfd_001, 17.91m girth, possibly Germany's oldest deciduous tree). One candidate, Gerichtslinde (Klingenberg am Main), verified as alive and existing but judged NOT to clear the single-tree exception (modest 4.22m girth, no official protection found, folk age claim of 800y unsupported by its own register's 325y dendrological estimate); written up in data/leads/klingenberg-am-main.json. All 5 of these entries removed from this leads list now that they are handled.",
  "leads": [
   {
    "name": "Riesenbuche bei Altmugl",
@@ -454,18 +454,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Gerichtslinde Klingenberg",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Die_800_Jahre_alte_Gerichtslinde_in_Klingenberg_am_Main.jpg",
-    "https://commons.wikimedia.org/wiki/File:Spaziergang_durch_Klingenberg_am_Main._Die_Gerichtslinde.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Gerichtslinde Scheeßel",
    "lat": 53.16922805,
    "lng": 9.48220468,
@@ -639,19 +627,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Linde in Reinborn",
-   "lat": 50.26213853,
-   "lng": 8.35814089,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hre_Linde_Reinborn_2025-08-20.jpg",
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hre_Linde_Reinborn_2025-08-20_B2.jpg",
-    "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hre_Linde_Reinborn_2025-08-20_B3.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Marienlinde (Linden, Wessobrunn)",
    "lat": 47.842695,
    "lng": 11.025778,
@@ -663,17 +638,6 @@
    "status": "lead",
    "species": "Lime (Tilia sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Lindengruppe an der Lindbachquelle (Lützellinden)",
-   "lat": 50.54189167,
-   "lng": 8.59998889,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-L%C3%BCtzellinden,_Lindengruppe_an_der_Lindbachquelle_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-L%C3%BCtzellinden,_Lindengruppe_an_der_Lindbachquelle_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen-L%C3%BCtzellinden,_Lindengruppe_an_der_Lindbachquelle_03.jpg"
-   ],
-   "status": "lead"
   },
   {
    "name": "Marienlinde Telgte",
@@ -761,19 +725,6 @@
    "status": "lead"
   },
   {
-   "name": "Linde (Schenklengsfeld)",
-   "lat": 50.81894,
-   "lng": 9.844984,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Die_1000-j%C3%A4hrige_Dorflinde_in_Schenklengsfeld_(September_2009)_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Linde-schenklengsfeld.jpg",
-    "https://commons.wikimedia.org/wiki/File:Linde_(Schenklengsfeld)_01.jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Gerichtslinde in Schlagsdorf",
    "lat": null,
    "lng": null,
@@ -852,19 +803,6 @@
     "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34199.JPG",
     "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34200.JPG",
     "https://commons.wikimedia.org/wiki/File:Tanzlinde_Baldenhain_34201.JPG"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tanzlinde (Effeltrich)",
-   "lat": 49.659611,
-   "lng": 11.092833,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:1000j%C3%A4hrige_Linde_(Tanzlinde)_vor_der_Wehrkirche_in_Effeltrich_im_Winter.jpg",
-    "https://commons.wikimedia.org/wiki/File:Effeltrich,_Dorflinde-20160515-001.jpg",
-    "https://commons.wikimedia.org/wiki/File:Effeltrich,_Dorflinde-20160515-002.jpg"
    ],
    "status": "lead",
    "species": "Lime (Tilia sp.)",

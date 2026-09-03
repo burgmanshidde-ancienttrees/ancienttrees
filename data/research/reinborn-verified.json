@@ -1,0 +1,27 @@
+[
+  {
+    "id": "rbn_001",
+    "name": "1000-jährige Linde in Reinborn",
+    "species": "Large-leaved Lime (Tilia platyphyllos)",
+    "age_estimate": "several hundred years, popularly called \"the 1000-year lime\"",
+    "age_min": 700,
+    "age_max": 1000,
+    "girth_cm": 1434,
+    "height_m": 17,
+    "location": {
+      "address": "Auf dem Kirchberg, in front of the cemetery, beside the church, Reinborn (Waldems), Rheingau-Taunus-Kreis",
+      "latitude": 50.26213853,
+      "longitude": 8.35814089,
+      "neighbourhood": "Reinborn, Waldems"
+    },
+    "verified_sources": [
+      "https://gemeinde-waldems.de/tourismus/sehenswuerdigkeiten/1000-jaehrige-linde-in-reinborn/",
+      "https://www.baumkunde.de/baumregister/98-1000_jaehrige_linde_in_reinborn/"
+    ],
+    "access": "Free, public, beside the parish church and cemetery in Reinborn village.",
+    "transport": "Not verified; no confirmed public transport stop found. Reinborn is a small hamlet in the Taunus hills, reachable by car; no rail connection nearby.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Single-tree-destination exception (2026-08-31 ruling): a genuinely famous named tree with its own municipal tourism page and its own baumkunde.de registry entry, not just a good regional specimen. Coordinates from the two sources agree closely (baumkunde E8 21.487/N50 15.721 = 8.35812,50.26202; matches the lead's own coordinate almost exactly), so tree-level confirmed. One of the thickest lime trees recorded in Germany: girth 14.34m measured 27 March 2022 by baumkunde (an earlier figure of 14.25m is also on record), height 17m. Protected as Naturdenkmal and Baumveteran since 1928. Split into three trunk sections held together by a central steel column and steel cables, a dramatic, visibly ancient structure. Likely served as an old Gerichtslinde (a village court/assembly tree) though this is described as probable rather than documented ('vermutlich ein alter Gerichtsbaum'). AGE: the popular name claims 1000 years; the municipal tourism page repeats the 1000-year figure; baumkunde's own dendrological estimate is 700-1000 years, and a separate web summary (from an outdooractive/local source, not independently re-fetched this pass) put the likely germination window at 1200-1500 CE, i.e. an actual age closer to 500-800 years. Record this disagreement plainly in the story: the name is folklore, repeat it as a nickname, and give the real estimate as several hundred years without inventing false precision. Alive and vital per baumkunde's most recent visit; the steel bracing itself is evidence of active, ongoing arboricultural care rather than neglect."
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "country": "Germany",
+  "note": "Researched 2026-09-03 as part of a _famous-germany.json batch verification pass. One candidate found, the Gerichtslinde, which verifies as alive and existing but is judged not to clear the single-tree-destination exception: no state/national protection status was found for it, its girth is modest (4.22m) and its own register source dates it to only about 325 years despite a popular claim of 800+. Held here below the 4-tree floor; no other named remarkable tree was found for Klingenberg am Main on this pass.",
+  "leads": [
+    {
+      "name": "Gerichtslinde (Klingenberg am Main)",
+      "species": "Lime (Tilia sp., probably Tilia platyphyllos per baumkunde.de)",
+      "species_basis": "baumkunde.de register entry gives 'Tilia spec. (bestimmt platyphyllus)', i.e. probable but not certain; ask the reader",
+      "location": {"address": "Lindenstraße 17, Klingenberg am Main, Landkreis Miltenberg, Bavaria", "latitude": 49.781857, "longitude": 9.181148, "neighbourhood": "Klingenberg am Main"},
+      "age_estimate": "disputed: local tradition says over 800 years (600 years as a court tree); baumkunde.de's own dendrological estimate from girth is only roughly 325 years",
+      "age_min": 325,
+      "age_max": 800,
+      "girth_cm": 422,
+      "verified_sources": [
+        "https://www.baumkunde.de/forum/viewtopic.php?t=25538",
+        "https://kulturdb.de/einobjekt.php?id=1420"
+      ],
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "verify_notes": "A Gerichtslinde (court lime) standing in front of Lindenstraße 17, publicly accessible on the street. Local tradition holds the Centgericht (a historic county/district court) sat here for 600 years, which is a real and appealing history if it can be corroborated by a second, independent local-history source (a municipal or Bavarian-state Naturdenkmal listing was searched for but not found on this pass). No protection status (Naturdenkmal or similar) turned up in any source checked, which is unusual for a tree of this claimed age and history and is itself worth a second look. Girth measured 4.20m (Oct 2022) and 4.22m (Mar 2025) by baumkunde.de; that measurement implies a dendrological age estimate of roughly 325 years, well short of the 800-year folk claim, and the two figures should not be reconciled, only both reported. Trunk has been reinforced with masonry, two main branches braced, one sealed with concrete; still described as vital. NOT delivered as the single-tree exception on this pass: modest size, no official designation found, and a real, unresolved age gap between the folk story and the dendrological read make it a good regional tree rather than a clear would-travel-for-this destination. Revisit if a state Naturdenkmal record turns up, or if a fourth Klingenberg-area tree is found to clear the ordinary 4-tree floor instead.",
+      "access": "Free, on a public street (Lindenstraße) in the town."
+    }
+  ],
+  "blocked": []
+}

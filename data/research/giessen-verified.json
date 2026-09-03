@@ -1,0 +1,102 @@
+[
+  {
+    "id": "gie_001",
+    "name": "Adam und Eva",
+    "species": "Sessile Oak (Quercus petraea)",
+    "age_estimate": "roughly 300-330 years",
+    "age_min": 300,
+    "age_max": 330,
+    "girth_cm": 595,
+    "height_m": 33,
+    "location": {
+      "address": "Badenburger Wald, Wieseck, Gießen",
+      "latitude": 50.630715,
+      "longitude": 8.703859,
+      "neighbourhood": "Wieseck"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Gie%C3%9Fen",
+      "https://www.monumentale-eichen.de/hessen/3-kategorie/wieseck",
+      "https://www.baumkunde.de/baumregister/1737-adam_und_eva_bei_wieseck/"
+    ],
+    "access": "Free, public forest (Badenburger Wald); no access restriction found.",
+    "transport": "Not verified; no confirmed nearby stop. Wieseck is a district on Gießen's northeast edge, reachable by car or bicycle from the city centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Twin sessile oaks (a pair, both counted as one designated monument), officially a Naturdenkmal and Baumveteran-registered pair, documented in Hans Joachim Froehlich's 1990 book on historic trees. Girth figures disagree slightly between sources: the official Giessen Naturdenkmal register (via de.wikipedia) gives approx. 420cm and 520cm for the two trees, heights approx. 25m and 30m; monumentale-eichen.de and baumkunde.de (2020 measurement) give 442cm and 595cm, height 33m for the larger of the two. Recorded the larger/more recent figures; both sets are real disagreement, not error, and should be flagged for the reader. One tree has a striking, monumental unbranched trunk over 10m tall before the first branch. Part of the Giessen cluster: 5.4km from the Rödgen pair (gie_002/gie_003) and roughly 9km from the Lützellinden group (gie_004), so a Giessen page reads as three separate district stops rather than one walk."
+  },
+  {
+    "id": "gie_002",
+    "name": "Alte Eiche",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 275-350 years",
+    "age_min": 275,
+    "age_max": 350,
+    "girth_cm": 629,
+    "height_m": 15,
+    "location": {
+      "address": "Corner of Geiselweg/Seeweg, Rödgen, Gießen, on a former forest picnic clearing",
+      "latitude": 50.590839,
+      "longitude": 8.750423,
+      "neighbourhood": "Rödgen"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Gie%C3%9Fen",
+      "https://www.monumentale-eichen.de/hessen/3-kategorie/r%C3%B6dgen/"
+    ],
+    "access": "Free, public clearing off Seeweg; no restriction found.",
+    "transport": "Not verified; no confirmed nearby stop. Rödgen is a district on Gießen's south edge, reachable by car or bicycle from the city centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Under state protection since 3 September 1906, one of the oldest protection dates found in this batch. Official Giessen Naturdenkmal register gives ca. 275-300 years, 16m tall, 610cm girth; monumentale-eichen.de gives ca. 350 years, 15m, 629cm girth (measured 2018); recorded the more recent measured figure and flagged the disagreement. Trunk shows real decline: a triangular opening sealed with a grating on one side, bark missing on the other, a horizontal branch propped on two steel tubes; still described as vital overall. Roughly 410m from the Schillerlinde (gie_003), walkable together as one stop of the Giessen page."
+  },
+  {
+    "id": "gie_003",
+    "name": "Schillerlinde",
+    "species": "Winter Lime (Tilia cordata)",
+    "age_estimate": "167 years (documented planting date)",
+    "age_min": 167,
+    "age_max": 167,
+    "girth_cm": 197,
+    "location": {
+      "address": "Geiselstrauchkopf, edge of Rödgen, Gießen, near the sports field",
+      "latitude": 50.594506,
+      "longitude": 8.749328,
+      "neighbourhood": "Rödgen"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Gie%C3%9Fen",
+      "http://www.giessener-zeitung.de/giessen/beitrag/43597/grenzgang-in-roedgen-die-schillerlinde-wurde-anlaesslich-des-100-geburtstags-von-friedrich-von-schiller-gepflanzt"
+    ],
+    "access": "Free, on municipal ground near the sports field; no restriction found.",
+    "transport": "Not verified; no confirmed nearby stop. Rödgen is a district on Gießen's south edge, reachable by car or bicycle from the city centre.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Planted 11 November 1859 for the 100th birthday of Friedrich von Schiller, one of hundreds planted across German towns that Schiller year; officially a Naturdenkmal. Rare case in this batch with a genuinely documented planting date, so the age is exact rather than estimated (167 years as of 2026). Modest size for its age (197cm girth): a memorial tree rather than a giant, which the story should say plainly rather than oversell. A local page (spd-roedgen.de) reportedly ties it to a historical village protest tradition (Grenzgang) but that page 403'd on this and an earlier pass and was not independently confirmed; leave that detail out or mark it unconfirmed. Only ~410m from the Alte Eiche (gie_002), walkable together as one stop."
+  },
+  {
+    "id": "gie_004",
+    "name": "Lindengruppe an der Lindbachquelle",
+    "species": "Winter Lime (Tilia cordata)",
+    "age_estimate": "roughly 200-400 years",
+    "age_min": 200,
+    "age_max": 400,
+    "girth_cm": 579,
+    "height_m": 15,
+    "location": {
+      "address": "At the Lindbach spring source, Lützellinden, Gießen",
+      "latitude": 50.542265,
+      "longitude": 8.60068,
+      "neighbourhood": "Lützellinden"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Gie%C3%9Fen",
+      "https://www.baumkunde.de/baumregister/1925-lindengruppe_an_der_lindbachquelle_in_giessen_luetzellinden/"
+    ],
+    "access": "Free, public spring/parkland site in Lützellinden; no restriction found.",
+    "transport": "Not verified; no confirmed nearby stop. Lützellinden is a district on Gießen's southwest edge, reachable by car or bicycle from the city centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Officially designated Naturdenkmal, 'landschaftsbildprägend' (landscape-defining), a small group of winter lindens standing together at the source of the Lindbach: originally three, now two survive after one fell in a storm, plus a young replacement planted by NABU after the spring area was renaturalised. Both sources agree the pair is 200-400 years old (register gives that as a range for the group; baumkunde's individual measurement is of the older, larger tree: 579cm girth, 15m tall, measured 30 May 2020). The oldest of the pair has been damaged by fire twice and by repeated storm and lightning strikes; baumkunde's most recent visit (10 Feb 2021) still describes it as vital though partially hollow. Coordinates from the two sources agree almost exactly (baumkunde E8 36.031/N50 32.537 = 8.60052,50.54228; Wikipedia's Naturdenkmal register 50.542265,8.600680), so this is tree-level confirmed. Completes the Giessen cluster to four verified trees across three district stops (Wieseck, Rödgen x2, Lützellinden), clearing the 4-tree floor for a Giessen page. NOTE FOR WRITER: the three stops are several km apart within Gießen (not one walk); label honestly as a city page with multiple stops rather than a single afternoon walk."
+  }
+]
