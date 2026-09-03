@@ -340,11 +340,19 @@ def check_photo_resolution():
 
 
 # A tree page's photograph, as it landed. Tolerant of extra attributes and of
-# whatever whitespace the generator leaves between the figure and the img,
-# because the point is to notice the ATTRIBUTES going missing, not to fail the
-# day somebody adds a class.
+# whatever the generator puts between the figure and the img, because the point
+# is to notice the ATTRIBUTES going missing, not to fail the day somebody adds a
+# class or a wrapper. It once demanded the img immediately after the figure and
+# that is exactly what broke it: PhotoFigure.astro wrapped the thumbnail in a
+# <button> when the light box landed (2026-09-03), the count fell to zero and
+# the deploy went red on a check that was measuring nothing.
+#
+# It takes the FIRST img in the figure, which is the thumbnail. The figure now
+# also holds the light box's own copy, and counting both would double every
+# total for no gain.
 TREE_PHOTO_IMG = re.compile(
-    r'<figure[^>]*\bclass="[^"]*\btree-photo\b[^"]*"[^>]*>\s*<img\b([^>]*)>', re.S)
+    r'<figure[^>]*\bclass="[^"]*\btree-photo\b[^"]*"[^>]*>'
+    r'(?:(?!<img\b|</figure).)*?<img\b([^>]*)>', re.S)
 
 
 def check_tree_photo_dimensions(pages):
