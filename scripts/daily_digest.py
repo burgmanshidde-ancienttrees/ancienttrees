@@ -2060,9 +2060,13 @@ def app_section(today):
                "fresh on each install, so this is an upper bound on people, "
                "not a count of them." % (
                    n_phones, "" if n_phones == 1 else "s"))
-    if n_phones <= 2:
-        out.append("- At one or two installs this is us, not an audience. "
-                   "Read nothing into a single tap.")
+    if n_phones == 0:
+        out.append("- Nobody outside our own testing has opened the app yet. "
+                   "Zeros here are the honest answer, not a broken query: the "
+                   "line above shows the events that were counted and cut.")
+    elif n_phones <= 2:
+        out.append("- At one or two installs this is a person or two, not an "
+                   "audience. Read nothing into a single tap.")
 
     # Which tabs people move to. The one breakdown worth its own query,
     # because it says whether the map is the product in practice as well as
