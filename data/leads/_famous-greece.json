@@ -46,9 +46,11 @@
     "https://commons.wikimedia.org/wiki/File:Olive_tree_of_Vouves.jpg",
     "https://commons.wikimedia.org/wiki/File:Olive_tree_of_Vouves_2021-10-16.jpg"
    ],
-   "status": "lead",
+   "status": "published",
    "species": "Olive (Olea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "tree_id": "crt_001",
+   "reason": "Already live as crt_001, The Olive Tree of Vouves in Crete, at the same coordinate. Caught 2026-09-03 before a verify pass was briefed on it."
   },
   {
    "name": "The Plane of Agia Paraskevi, Tsagarada (Pelion)",
