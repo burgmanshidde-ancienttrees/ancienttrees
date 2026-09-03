@@ -9,6 +9,35 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (continuation run 2) - Finished two stale claims, dispatched a famous-Japan verify pass
+
+Picked up where an earlier attempt in this window stopped early with the clock
+still open. Two standing claims from that attempt: **`_famous-japan`** (verify)
+had produced nothing, both its delivery files empty arrays, from-zero web
+research with no register coordinates, so released it rather than continue a
+lane the file itself discourages. **`prague`** had produced one fully verified
+tree sitting unmerged (`prg_018`, the Elm of Zatory, a register-confirmed
+white elm at a Holesovice bus terminus, the last survivor of a demolished
+street cleared for a metro/bus depot): wrote its story in-session (one tree,
+not worth a whole write-stories agent), merged it (Prague now 18 trees),
+fixed the resulting count promises on the city page and the Czech Republic
+country page (17->18, 31->32), and released the claim. No unprocessed reader
+submissions. Rung 2 clear (smoke test's last run was cancelled by this
+session's own push, not a failure); REVIEW.md's one WARN (Home.swift hero
+tagline colour) was already fixed and answered twice over by earlier
+attempts today, confirmed still true in source.
+
+**Re-claimed `_famous-japan`** with a properly staged batch this time:
+`famous_demand.py --next` ranked 12 Japanese leads from `data/leads/_famous-japan.json`
+by cross-language Wikipedia demand, of which 2 were already known-bad (Wilson's
+Stump is a dead stump per the never-dead rule; the Tado Pyrus habitat is a
+population, not one collectible point) and excluded from the brief. Dispatched
+a verify agent on the remaining 10 (three joining existing published cities
+within the day-trip boundary: Takayama, Kagoshima, Tokyo; seven candidate
+single-tree destinations under the 2026-08-31 exception), running in the
+background at the point this entry was written. A follow-up entry will report
+what it delivered.
+
 ## 2026-09-03 (continuation run) - Rung 2 checked, submission 60 answered, six single-tree pages shipped
 
 7-day visits (visitors.py): 650 visits, 1159 views, climbing (48→106→108→93 the last four days). Started at health.py's rung 2 (Build and deploy failure): the `<figure class="tree-photo">` QA regex broke when today's light-box feature wrapped the thumbnail in a `<button>`, and a concurrent live session (Hidde, from the commits) was already fixing the same thing and a follow-on self-inflicted false-positive (the new personal-address check flagging its own commit's comment) faster than this run could push; pulled their fixes rather than duplicating, confirmed clean with a local build + `qa.py`. Also checked the day's REVIEW.md WARN (Home.swift hero tagline colour): already fixed upstream too (`Brand.gold`, matching HeroCover.swift).
