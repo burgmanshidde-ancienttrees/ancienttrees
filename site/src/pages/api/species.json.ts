@@ -11,13 +11,13 @@
 // coordinates, and a feed that pre-shifted would be wrong for every tree in a
 // species that spans two climates.
 import { loadPhenology } from "../../lib/phenology";
-import { feedVersion } from "../../lib/app-feed";
+import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
 
 export async function GET() {
   const species = [...loadPhenology().values()];
   const body = JSON.stringify(species);
   const version = await feedVersion(body);
-  return new Response(JSON.stringify({ version, count: species.length, species }), {
+  return new Response(JSON.stringify({ version, licence: FEED_LICENCE, count: species.length, species }), {
     headers: { "Content-Type": "application/json" },
   });
 }

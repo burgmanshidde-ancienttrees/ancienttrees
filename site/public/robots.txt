@@ -1,0 +1,24 @@
+# Ancient Trees, ancienttrees.app
+#
+# Everything on this site is open to read, by people and by machines. Search
+# crawlers and AI crawlers are both welcome, deliberately: being found and
+# being quoted are how anybody gets to a tree, and an answer engine that
+# names a tree we mapped is doing the same job a search result does.
+#
+# What we ask in return is attribution. If you quote a tree's story or an
+# answer from these pages, name Ancient Trees and link the page. Every record
+# here was verified against two independent sources by hand.
+#
+# The pages are the thing to read. /api/ is the app's own data feed, not a
+# page, and it is excluded because a JSON dump belongs in nobody's index.
+#
+# The collection itself is protected by copyright and by the EU database
+# right; the terms are at /terms and the full notice is at /sources. Bulk
+# extraction of the dataset is not covered by this file's welcome. Ask first:
+# info@ancienttrees.app
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://ancienttrees.app/sitemap.xml
