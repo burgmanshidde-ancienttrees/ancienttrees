@@ -9,6 +9,33 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 - The famous-tree lane, ranked by what people look up, and a broken deploy fixed
+
+**The deploy was red and had been since 07:21.** One photograph had been added by hand without its pixel dimensions, and /api/trees.json carries photo.width and photo.height, so feedshape.py refused the build: a null there stops every installed app updating, silently. Measured the Robenhausen file at Commons (4928 x 3264) and wrote it in. qa.py used to tolerate up to ten unmeasured photographs while the feed tolerates none; it now tolerates none either, so this fails early with a message that names the command instead of failing at the last step with a message about phones.
+
+**Then Hidde's route: leave cities aside for a while and work the famous trees.** His argument was that they land straight in the oldest-trees list, arrive with photographs, and carry names people actually google. Checked all three:
+
+| | famous trees we publish | the site as a whole |
+|---|---:|---:|
+| qualify for a generated ranking | 71% | 29% |
+
+That is not luck. A tree gets a name because it is old, thick or tall, so it clears the thresholds on arrival and lands on three list pages for no extra work.
+
+**The stock, which is the thing he asked about: 901 open leads across 50 countries, 898 with a photograph already attached, 605 with a coordinate.** It has produced 62 published trees in three weeks and then sat still.
+
+**What was missing was order, so nothing could be handed to a night run.** The file runs from Old Tjikko (an article in 32 languages) to an apple tree in Bosaca (none anywhere), and nothing separated them. `scripts/famous_demand.py` resolves each Commons category to its Wikidata item, counts the language Wikipedias that wrote about the tree and what those articles are read, and prints the batch to take:
+
+- `python3 scripts/famous_demand.py` the ranking
+- `--next` the next batch in brief shape, container already decided
+- `--gap` read elsewhere, unwritten in English: the thin-competition end
+- `--resolve` fills the cache from the network, re-runnable after a 429
+
+**The container is the genuinely new part, and it is already running.** Only 137 of the open leads sit inside the 30 km day-trip boundary of a place we publish. 468 are their own place under the single-famous-tree exception of 2026-08-31, and 66 published places already hold one or two trees, most of them exactly that.
+
+Rung (0c) added to CLAUDE.md's supply ladder so night runs take this without being told again.
+
+**Not done, and worth saying plainly:** nothing has been verified or published from this list today. The lane is built and stocked, not walked. The reads-per-month column is still filling in (about 500 leads to count, the pageviews API refuses bursts); the language count is complete and is the sturdier of the two numbers anyway.
+
 ## 2026-09-03 - Continuation run: cleared two stranded claims, refilled the shelf on three countries
 
 Resumed a window a prior attempt had stopped early on with 113 of 120 minutes still unspent, per this file's own entry above.
