@@ -1,0 +1,31 @@
+{
+  "country": "Germany",
+  "note": "Researched 2026-09-03 as part of a _famous-germany.json batch verification pass. One candidate found, the Friedenslinde at Karolinenplatz, verified as alive and officially designated but judged UNCLEAR against the single-tree-destination exception: young by this project's ancient-tree standard (roughly 150 years) and the war memorial it stands beside may be the actual draw rather than the tree itself. Held here below the 4-tree floor. Passau is a real, well-visited city we do not yet publish; worth a normal multi-tree research pass later rather than forcing this one tree onto its own page now.",
+  "leads": [
+    {
+      "id": "pas_001",
+      "name": "The Friedenslinde of Passau",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 150 years",
+      "age_min": 150,
+      "age_max": 160,
+      "girth_cm": null,
+      "location": {
+        "address": "Karolinenplatz, Passau, Bavaria, Germany",
+        "latitude": 48.571887,
+        "longitude": 13.460958,
+        "neighbourhood": "Altstadt, Passau"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Passau",
+        "https://commons.wikimedia.org/wiki/Category:Friedenslinde_(Passau)"
+      ],
+      "access": "Free, no permission needed. Stands in Karolinenplatz, a public square in Passau's old town, open at all times.",
+      "transport": "Central Passau, short walk from Passau Hauptbahnhof / the old town",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "A lime (Tilia) tree standing at Karolinenplatz in Passau's old town, forming part of the city's Kriegerdenkmal (war memorial) for the Franco-Prussian War of 1870/71. de.wikipedia's own official list of Passau's Naturdenkmäler lists it as an Einzelbaum, owned by the city of Passau, 'Bestandteil des Denkmals am Karolinenplatz', and gives its age as 'ca. 150 Jahre alt'; that list carries no exact planting date, girth or height. Independently, Wikimedia Commons documents the tree under the title 'Kriegerdenkmal am Karolinenplatz in Passau - Die Friedenslinde' and its own photo captions call it the 'Tilia of Peace' at Karolinenplatz, consistent with a peace/war-memorial planting; several Commons files at the same monument show memorial plaques naming Franco-Prussian War battle and siege locations (Wörth, Beaugency, Lailly), corroborating that the memorial (and by extension the tree beside it) dates from the 1870/71 war. A WebSearch summary (source page niederbayern-wiki.de, which blocked automated fetching with a bot-check page and could NOT be independently verified) additionally claimed a precise planting date of 29 March 1871 and specific species 'Winter-Linde' (Tilia cordata) with the memorial dedicated 2 September 1873; per the search-summary-is-a-lead-never-a-source rule those specifics are NOT used as verified facts and are flagged for a future pass with access to that page. Location confirmed: a geotagged Commons photo (File:Friedenslinde Passau 01.JPG) gives coordinates 48.571887/13.460958, matching the candidate coordinates exactly. No girth or height found in any source reached. SINGLE-FAMOUS-TREE TEST (would somebody travel specifically for this tree?): UNCLEAR. In favour: stands in an actual well-visited city (Passau, the 'Dreiflüssestadt'), is officially designated a Naturdenkmal by the city, and is physically inseparable from a documented public war memorial with named plaques, giving it real historical substance. Against: at roughly 150 years it is young by this project's usual ancient-tree standard, and the memorial itself (the ironwork, the plaques, the fallen soldiers' names) is plausibly what draws attention rather than the tree specifically; no trip reports, tourism-board write-ups or listicles naming the tree itself (as opposed to the monument) were found. NOT delivered as the single-tree exception on this pass. Recommend holding for a later pass that researches Passau properly as a city (it is not yet published and could plausibly earn a normal multi-tree page), with this tree as its first verified candidate."
+    }
+  ],
+  "blocked": []
+}

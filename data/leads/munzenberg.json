@@ -1,0 +1,33 @@
+{
+  "country": "Germany",
+  "note": "Researched 2026-09-03 as part of a _famous-germany.json batch verification pass. One candidate found, the Eiche an der Kirche, verified as alive and officially designated but judged not to clear the single-tree-destination exception: the protection reason is about townscape appearance rather than remarkability, and no age, girth or documented history was found. Held here below the 4-tree floor; no other named remarkable tree was found for Münzenberg on this pass (the register lists only 4 designated trees in the whole municipality, none within walking distance of each other).",
+  "leads": [
+    {
+      "id": "mzb_001",
+      "name": "Eiche an der Kirche (Münzenberg)",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Churchyard south of the Evangelische Kirche, Eichergasse, Münzenberg, Hesse, Germany",
+        "latitude": 50.45213306,
+        "longitude": 8.77619806,
+        "neighbourhood": "Münzenberg old town (Flur 1, Flurstück 4)"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnzenberg",
+        "https://wetteraukreis.de/fileadmin/2_Service/natur_landschaft/ND_2020_05.pdf",
+        "https://de.wikipedia.org/wiki/Evangelische_Kirche_(M%C3%BCnzenberg)",
+        "https://commons.wikimedia.org/wiki/File:Eiche_an_der_Kirche_(M%C3%BCnzenberg)_02.JPG"
+      ],
+      "access": "Free. Stands in the churchyard beside the Evangelische Kirche, in Münzenberg's small, densely built historic old town centre; churchyards of this kind are open to the public in daylight and the church itself is a listed monument people already visit.",
+      "transport": "Small town, walkable from anywhere in the old centre; Münzenberg has no train station, nearest is Nieder-Weisel or Butzbach, both several km away with connecting bus.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Officially designated Naturdenkmal ND 440.282, listed by name (\"Eiche an der Kirche\") in both the Wetteraukreis county's own official Naturdenkmale register (Stand 5/2020, PDF, no measurements given for any entry in that register) and in de.wikipedia's Liste der Naturdenkmäler in Münzenberg, which independently corroborates the ND number, exact plot (Flur 1, Flurstück 4) and coordinates (50°27'8.3\"N 8°46'34.2\"O, matching the candidate coordinate). Protection reason given verbatim by the register/Wikipedia: 'sehr ortsbildprägender und großer Einzelbaum im eng bebauten alten, kulturhistorischen Ortskern' (a large, place-defining specimen tree in the densely built old, culturally historic town centre), a description of streetscape prominence, not of age or fame. Species: only ever called 'Eiche' (oak) in every source; no source names Quercus robur vs petraea, so species stays genus-level and a future page should ask the reader. Alive as of at least one dated photo (Commons, 21 April 2015, geotagged 50.4518,8.7762, ~35m from the register coordinate, consistent with photographer position vs trunk); no more recent confirmation found this pass. No age, girth or height figure exists in any source found (register has no measurement columns at all, confirmed by reading all 6 pages of the Wetteraukreis PDF). Checked for other Münzenberg-area candidate trees: the same Wikipedia list and the same official register both show only 4 designated trees in the whole Münzenberg municipality (Gambach oak ND 440.175, two Speierling/service trees at Trais-Münzenberg ND 440.219/440.220, and this one), none within walking distance of this oak, so there is no cluster to build here. SINGLE-FAMOUS-TREE TEST: WEAK. In favour: genuine official Naturdenkmal protection, stands in a historic town centre next to a landmark church. Against: no documented age, no girth, no legend or historic event tied to the specific tree, no trip reports or tourism-board coverage found, and the protection reason is about townscape appearance rather than remarkability. Münzenberg's actual visitor draw is the Burg Münzenberg castle ruin nearby, which this tree is not part of. NOT delivered as the single-tree exception: reads as a fine, protected village tree rather than a would-travel-for-it destination. Revisit if a fourth Münzenberg-area tree turns up to build an ordinary cluster instead, or if a source naming age/history is found."
+    }
+  ],
+  "blocked": []
+}
