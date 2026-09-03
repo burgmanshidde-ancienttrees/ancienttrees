@@ -6,7 +6,7 @@
 import Base from "../layouts/Base.astro";
 import { BASE_URL } from "../lib/schema";
 import { imgSrcset } from "../lib/images";
-import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import AppStoreBadge from "../components/AppStoreBadge.astro";
 
 const canonical = `${BASE_URL}/app`;
 const applandImg = imgSrcset(
@@ -15,24 +15,21 @@ const applandImg = imgSrcset(
   "100vw",
 );
 ---
-<Base title="The Ancient Trees app" description="The iOS app we are building for the walk itself." canonical={canonical}>
+<Base title="The Ancient Trees app" description="The iOS app for the walk itself: the old trees near you, and the ones you have stood in front of." canonical={canonical}>
 <div class="appland">
   <!-- Taylor Cole, Unsplash License (no on-page credit required; recorded here
        per hard rule 4). -->
   <img class="appland-bg" {...applandImg} alt="">
   <div class="appland-card">
     <div class="appland-left">
-      <span class="chip gold">Coming soon</span>
+      <span class="chip gold">Free on the App Store</span>
       <h1>Every ancient tree, in your pocket</h1>
       <p class="appland-sub">Open it wherever you happen to be and it finds the remarkable old trees within walking distance, strings the good ones into one afternoon, and tells you what you are standing in front of when you get there. Every tree you visit is one you keep.</p>
-      <form class="waitlist" id="waitlist">
-        <input type="email" id="wl-email" placeholder="you@example.com" aria-label="Your email address" required>
-        <button type="submit" class="appland-cta">Tell me first</button>
-      </form>
-      <p class="waitlist-note" id="wl-note">Leave your email and you are on the list we write to the day it opens. One email. Nothing else.</p>
+      <AppStoreBadge class="appland-badge" ev="app-page-badge" />
+      <p class="waitlist-note">You need an iPhone running iOS 18 or later. The Android version does not exist yet.</p>
     </div>
     <div class="appland-right">
-      <h2>What you will be able to do</h2>
+      <h2>What you can do</h2>
       <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="14" fill="none" stroke="#4A6B2A" stroke-width="3"/><circle cx="24" cy="22" r="4" fill="#D9A13F"/><path d="M24 4 v6 M24 34 v6 M6 22 h6 M36 22 h6" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>Find the ones near you</h3><p>It opens on where you are and shows the remarkable old trees around you, closest first, with the walk to each.</p></div></div>
       <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="19" rx="12" ry="10" fill="#3A5222"/><circle cx="17" cy="18" r="7" fill="#4A6B2A"/><circle cx="31" cy="18" r="7" fill="#4A6B2A"/><circle cx="24" cy="11" r="7" fill="#5B7F35"/><path d="M22.9 40h2.4l-.6-13h-1.2z" fill="#6B4F33"/><circle cx="36" cy="34" r="8" fill="#D9A13F"/><path d="M32.5 34 l2.5 2.5 5 -5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Collect the ones you visit</h3><p>Stand in front of a tree, tick it off, and watch a collection build itself city by city and country by country.</p></div></div>
       <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 30 a10 10 0 0 1 2 -19 a12 12 0 0 1 22 3 a8 8 0 0 1 0 16 z" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M18 36 l-3 5 M26 36 l-3 5 M34 36 l-3 5" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>Keep going without a signal</h3><p>Save a city before you set off, so the map still works in the middle of a park with one bar.</p></div></div>
@@ -40,34 +37,4 @@ const applandImg = imgSrcset(
     </div>
   </div>
 </div>
-<Fragment slot="scripts" set:html={`
-<script>
-(function() {
-  var f = document.getElementById('waitlist'), note = document.getElementById('wl-note');
-  if (!f) return;
-  f.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var email = document.getElementById('wl-email').value.trim();
-    if (!email) return;
-    note.textContent = 'Sending...';
-    at.track('waitlist-submit');
-    fetch('${SUPABASE_URL}/rest/v1/waitlist', {
-      method: 'POST',
-      headers: {'apikey': '${SUPABASE_KEY}', 'Content-Type': 'application/json',
-                'Prefer': 'return=minimal'},
-      body: JSON.stringify({email: email, source: 'app'})
-    }).then(function(r) {
-      if (r.ok || r.status === 409) {
-        f.hidden = true;
-        note.textContent = 'You are on the list. We will email you when the app is ready.';
-      } else {
-        note.textContent = 'That did not go through. Try again in a moment.';
-      }
-    }).catch(function() {
-      note.textContent = 'No connection. Try again in a moment.';
-    });
-  });
-})();
-</script>
-`} />
 </Base>

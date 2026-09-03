@@ -149,6 +149,10 @@ export interface UIStrings {
    *  photograph itself becomes, `photoFull` is the step Wikipedia's Media
    *  Viewer puts one click further in: the original file at full resolution. */
   photoOpen: string;
+  /** The alt text on Apple's App Store badge, added 2026-09-03. It says what
+   * the control DOES, because a screen reader announcing "Download on the App
+   * Store badge" describes a picture rather than an action. */
+  appStoreBadge: string;
   photoClose: string;
   photoFull: string;
   distanceAway: (d: string) => string;
@@ -226,6 +230,7 @@ const EN: UIStrings = {
   sentenceEnd: ".",
   photoCredit: (credit) => `Photo: ${credit}`,
   photoOpen: "Open the photograph",
+  appStoreBadge: "Get Ancient Trees on the App Store",
   photoClose: "Close",
   photoFull: "See it at full size",
   distanceAway: (d) => `${d} away`,
@@ -334,6 +339,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir la fotografía",
+    appStoreBadge: "Consigue Ancient Trees en el App Store",
     photoClose: "Cerrar",
     photoFull: "Verla a tamaño completo",
   },
@@ -409,6 +415,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Apri la fotografia",
+    appStoreBadge: "Scarica Ancient Trees su App Store",
     photoClose: "Chiudi",
     photoFull: "Vedila a dimensione intera",
   },
@@ -484,6 +491,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Open de foto",
+    appStoreBadge: "Download Ancient Trees in de App Store",
     photoClose: "Sluiten",
     photoFull: "Bekijk hem op volledige grootte",
   },
@@ -559,6 +567,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Foto öffnen",
+    appStoreBadge: "Ancient Trees im App Store laden",
     photoClose: "Schließen",
     photoFull: "In voller Größe ansehen",
   },
@@ -634,6 +643,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir a fotografia",
+    appStoreBadge: "Obter Ancient Trees na App Store",
     photoClose: "Fechar",
     photoFull: "Ver em tamanho real",
   },
@@ -709,6 +719,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: ".",
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
     photoOpen: "Ouvrir la photographie",
+    appStoreBadge: "Télécharger Ancient Trees sur l'App Store",
     photoClose: "Fermer",
     photoFull: "La voir en taille réelle",
   },
@@ -784,6 +795,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     sentenceEnd: "\u3002",
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
     photoOpen: "写真を開く",
+    appStoreBadge: "App StoreでAncient Treesを入手",
     photoClose: "閉じる",
     photoFull: "原寸で見る",
   },

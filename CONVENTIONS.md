@@ -914,3 +914,60 @@ Read 2026-09-03:
 - https://developers.google.com/maps/documentation/javascript/examples/style-array
 - https://tiles.openfreemap.org/styles/dark
 - https://developer.apple.com/design/human-interface-guidelines/dark-mode
+
+## Sending a mobile visitor to the app (2026-09-03)
+
+Hidde, on the AllTrails sheet that had just interrupted him on his own phone:
+"zijn we al zover dat we net als bij alltrails een overlay willen doen op de
+mobiele website om mensen naar de app te sturen", and then the question that
+decided it: "of gaan we daar seo mee killen?"
+
+**Measured rather than remembered.** Each site below was fetched on 2026-09-03
+with an iPhone Safari user agent and read for what it actually ships.
+
+| Site | Apple's `apple-itunes-app` meta | Its own banner |
+|---|---|---|
+| komoot | yes, with `app-argument` | yes, an `AppBanner` component |
+| iNaturalist | yes on the homepage, **none on a deep taxon page** | yes |
+| Strava | no | yes, its own `SmartBanner` |
+| Marktplaats | no | yes, its own `SmartBanner` |
+| AllTrails | no | yes, the full-screen sheet |
+| Reddit, Pinterest | no | yes, their own overlays |
+| TripAdvisor | `app-id=-1`, which is the tag deliberately switched off | |
+| Wikipedia | no | nothing at all |
+
+**Four things that table says.**
+
+1. **There are two schools and almost nobody abstains.** Apple's native meta
+   tag, or a banner of their own. Only Wikipedia ships neither, and Wikipedia
+   depends on search more completely than anybody else on the list.
+2. **The nearest neighbour does both.** komoot is our shape exactly: outdoors,
+   routes, a large SEO surface, European. It ships Apple's tag AND a component
+   of its own, which is the answer to "which one" being "both, in that order".
+3. **`app-argument` is the piece worth copying.** komoot hands the app the URL
+   the person is standing on, so opening the app lands on that route. Without
+   it the app opens on its own home screen and the reader has to find their way
+   back to what they were reading.
+4. **iNaturalist puts the banner on the homepage and not on the content page.**
+   That is the cautious reading of the same worry Hidde had, and it is worth
+   knowing somebody made that call deliberately.
+
+**What we do, and why it is not the sheet from his screenshot.** Google names
+an interstitial that covers the content on arrival from search as an intrusive
+interstitial, and names a banner using a reasonable amount of screen space as
+the exception, with Apple's smart app banner as its own example. AllTrails can
+carry the cost because a large share of their traffic types "alltrails" into
+the box. Ours is long-tail search with no referring domain a human made, so the
+one channel we have is the one the sheet puts at risk. We take Apple's banner.
+
+**What Apple's banner cannot do, which is the whole of the remaining gap.**
+Safari draws it; Chrome on iOS and every in-app browser (Instagram, the Google
+app) do not, and the screenshot Hidde sent was one of those. So a banner of our
+own still has a job, and its shape is settled by the same reasoning: a bar at
+the top of the page that pushes the content down rather than covering it, one
+dismissal that sticks, iOS only, and never a dimmed backdrop.
+
+**The badge is Apple's own artwork**, localised per language from Apple's badge
+service, one file per language in `site/public/assets/appstore/`. A store
+button is the most convention-bound control there is and drawing our own pill
+with the words typed into it is the exact failure of 2026-08-20.
