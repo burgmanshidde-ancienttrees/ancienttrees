@@ -2399,6 +2399,13 @@
       "Tilburgu",
       "Tilburq"
     ],
+    "toga": [
+      "Toge",
+      "Tooga",
+      "Pretesta",
+      "Togo",
+      "Toqa"
+    ],
     "tokyo": [
       "Tokio",
       "Präfektur Tokio",
@@ -2947,6 +2954,7 @@
     "thessaloniki": "Thessaloniki",
     "tilburg": "Tilburg",
     "tillamook": "Tillamook, Oregon",
+    "toga": "Toga",
     "tokyo": "Tokyo",
     "toronto": "Toronto",
     "toulouse": "Toulouse",
@@ -3006,6 +3014,7 @@
     "trainiskis": "no article within 40 km, tried Trainiškis; Trainiškis, Lithuania",
     "vainiai": "no article within 40 km, tried Vainiai; Vainiai, Lithuania; search: Do Architects; search: Gilma Teodora Gylytė",
     "volkenroda": "no article within 40 km, tried Volkenroda; Volkenroda, Germany; search: Loccum; search: Pilgrims' way; search: Kamp Abbey",
-    "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany"
+    "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany",
+    "tamba": "city_names.py matched Tamba-Sasayama (formerly Sasayama), a DIFFERENT Hyogo municipality from Tamba City where tmb_001 actually stands (confirmed by reverse-geocoding the tree's own coordinate, 35.1297831, 135.0766079, to Tamba, Hyogo Prefecture, not Tamba-Sasayama). Removed the wrong match rather than keep it; left unresolved rather than guess."
   }
 }

@@ -4960,6 +4960,15 @@
         "note": "Reader submission via app Collect flow: GPS resolved to a private house address (13 Paulus Potterlaan, Baarn) via Nominatim reverse geocode, not a park or public ground. Held per hard rule 10; outcome set to open_question, reply asks whether the fig is visible from the public street. Not published. Tokens not tracked for session-level work.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "tamba+toga",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 2,
+        "note": "Written in-session rather than dispatching an agent for two trees (below the batch-size threshold): both stories from verify_notes already on file. Also caught and fixed a wrong Wikipedia match in city_names.py's output (tamba resolved to Tamba-Sasayama, a different Hyogo municipality from the tree's actual city, Tamba; confirmed by reverse-geocoding the tree's own coordinate). Tokens not tracked for session-level work.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
