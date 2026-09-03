@@ -1,0 +1,51 @@
+[
+  {
+    "id": "frb_005",
+    "name": "The Starkenstraße Giant Sequoia",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "roughly 130-150 years",
+    "age_min": 125,
+    "age_max": 150,
+    "girth_cm": 690,
+    "height_m": 30,
+    "location": {
+      "address": "Side street off Starkenstraße, near Starkenstraße 26",
+      "latitude": 48.001885,
+      "longitude": 7.860245,
+      "neighbourhood": "Neuburg"
+    },
+    "verified_sources": [
+      "LUBW/RIPS Naturdenkmal register, id 83110000094 (RIPS steckbrief 3119013000188), designated 1979-04-24: https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=3119013000188",
+      "Badische Zeitung, Andreas Braun, Mammutbaum in FR-Starkenstrasse aus dem 19. Jahrhundert, 22.2.2007, reproduced at https://www.freiburg-schwarzwald.de/naturdenkmal.htm"
+    ],
+    "access": "Free, on a public residential street (a side arm of Starkenstraße near house no. 26); visible and reachable from the pavement.",
+    "transport": "VAG tram/bus toward Josefskirche/Hauptfriedhof, then short walk (Neuburg district, north of the city centre).",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Register coordinate (48.001885, 7.860245) sits about 15m from Starkenstrasse 26 (geocoded via Nominatim, which also turns up a dental practice 'Doelle & Frank' at that address; the BZ article names a resident Klaus Doelle whose father filed the protection request, a strong corroborating match). Designated Naturdenkmal 1979-04-24 (matches both register and BZ article's '1979'). BZ article: about 30m tall, 'knapp sieben Metern' (just under 7m) girth, planted late 19th century (Gruenderzeit) when the first giant sequoias were introduced to Freiburg as an exotic fashion tree. Root zone protected: parking areas were removed and bollards installed to protect the trunk base and roots. Only a few genuinely old sequoias like this stand on public ground in Freiburg (the article names sister trees on Karlstrasse and Waldhofstrasse). Anecdote: resident Klaus Doelle recalls building small treasure boxes into the thick bark as a child; his father petitioned for the tree's protection, which the city granted in 1979."
+  },
+  {
+    "id": "frb_006",
+    "name": "The Lindens of the Kapellenweg",
+    "species": "Large-leaved Lime (Tilia platyphyllos)",
+    "age_estimate": "roughly 380 years",
+    "age_min": 370,
+    "age_max": 390,
+    "location": {
+      "address": "On the Lorettoberg, beside the path to the Lorettokapelle (Kapellenweg)",
+      "latitude": 47.981395,
+      "longitude": 7.838447,
+      "neighbourhood": "Wiehre (Unterwiehre-Sued)"
+    },
+    "verified_sources": [
+      "LUBW/RIPS Naturdenkmal register, id 83110000009, '2 Sommerlinden', designated 1954-07-28 (Freiburg's very first Naturdenkmal batch): https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=3119013000158",
+      "Badische Zeitung / Simone Lutz, 'Nasenzwickerle unter Denkmalschutz', 28.8.2009, reproduced at https://www.freiburg-schwarzwald.de/naturdenkmal.htm: 'Die aeltesten sind die Linden am Kapellenweg: Sie stammen von 1645, aus Zeiten des Dreissigjaehrigen Kriegs.'",
+      "De.wikipedia.org, Lorettokapelle (Freiburg im Breisgau): the chapel at Kapellenweg 1 was built in 1657 to give thanks for the end of the Thirty Years' War, corroborating the era the BZ article assigns to the lindens"
+    ],
+    "access": "Free, on the public paths and green space of the Lorettoberg around the Lorettokapelle; open at all times.",
+    "transport": "Short walk uphill from central Wiehre / Guenterstalstrasse; about 20-25 minutes on foot from the Altstadt.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Identification chain, flagged because it is inferential rather than a named plaque: the BZ/freiburg-schwarzwald.de piece names 'die Linden am Kapellenweg' (plural, i.e. more than one linden) as Freiburg's oldest Naturdenkmal, from 1645. Register id 83110000009 is a matching plural entry, '2 Sommerlinden' (two large-leaved limes), and carries the earliest designation date in Freiburg's whole register, 1954-07-28, consistent with being a landmark pair singled out first. Its coordinate (confirmed independently via a geotagged Wikimedia Commons photo, 47.981403/7.838427, essentially identical to the register's own 47.981395/7.838447) sits right on the Lorettoberg beside the Lorettokapelle, whose own address is literally 'Kapellenweg 1' and whose chapel was built in 1657 to mark the end of the Thirty Years' War, the same conflict the BZ piece ties the lindens to. No source gives a plaque-level statement tying the exact 1645 date to this specific register id, so the age is carried as the BZ's own broad figure rather than sharpened. Freiburg's other 1954-07-28 entry (83110000003, 'a single Linde', 2km away near the city centre) is a weaker fit since the source says 'Linden' plural."
+  }
+]

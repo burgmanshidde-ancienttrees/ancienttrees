@@ -10,6 +10,12 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-03 - Matera: stuck at 3, register exhausted, general search unfruitful
+
+Matera had 2 trees fully verified and written (mat_001 the Pine of Viale Aldo Moro, mat_002 the Black Poplar of Timmari) sitting in `data/research/matera-verified.json` from an earlier pass, one short of the two needed to clear the four-tree floor. A verify pass found a third: mat_003, the Mahaleb Cherry of Contrada La Vaglia, a register entry two earlier passes had left as an unshippable lead because Overpass timed out on the access question. Querying the raw OSM Planet API instead (not Overpass) confirmed no building or private-landuse polygon over the point, corroborating the register's own "urban" flag (shared with the already-shippable Pino, not shared with any of the six blocked masseria/jazzo rows). Shipped as `flagged`/`approximate` since nothing pins the exact trunk or confirms it alive today.
+
+That leaves the comune's own MASAF register fully exhausted: 9 rows total, 2 shippable, 6 blocked (private masseria/jazzo land), 1 now shipped flagged. A second verify pass and two of my own searches for a fourth tree (Matera's rupestrian churches, historic parks/villas, "albero secolare") found nothing usable: the rupestrian churches are bare rock with no vegetation angle, and general web searches returned either nothing specific to Matera or an unrelated hallucinated result (an AI search summary attached a Monza villa's "secular oak" to a Matera query; discarded per the search-summary-is-a-lead-never-a-source rule). Leaving Matera at 3, held below the floor, rather than padding with a weak fourth entry. Claim released; a future pass should try a genuinely new angle (a local newspaper's own tree feature, if one exists) rather than repeating this search.
+
 ## 2026-09-02 - Otama, Nihonmatsu, Tamura: verified and written, held below the four-tree floor
 
 Finished a stranded write pass from the famous-japan lead pile (data/leads/_famous-japan.json):
