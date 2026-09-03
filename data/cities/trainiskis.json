@@ -1,0 +1,57 @@
+{
+  "city": "Trainiškis",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Trainiškis, in Aukštaitija National Park, maps one tree: the living successor to one of Lithuania's oldest known oaks, which fell in a 2016 windstorm after roughly 800 years and was removed from the state register the year after. Park authorities planted a genetic clone of the original beside its fallen trunk in 2017, and deliberately left the old trunk in place, home now to a rare fungus. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "Trainiškis Oak: a genetic clone planted in 2017 beside the fallen trunk of Lithuania's roughly 800-year-old original, lost in a 2016 storm.",
+  "question_meta": "Trainiškis's mapped tree is a young clone of the historic 800-year Trainiškis Oak, planted in 2017 beside the original's fallen trunk.",
+  "question_answer": "A young oak planted in 2017 beside the fallen trunk of the original Trainiškis Oak, one of Lithuania's oldest known trees before it fell in a 2016 windstorm at an estimated 800 years. The new tree is a genetic clone, grafted from the original at a nursery, but is still young: expect a sapling, not a giant.",
+  "question_context": "The original Trainiškis Oak stood for an estimated 800 years, one of the oldest known trees in Lithuania, protected since 1960, until it fell in a windstorm on the night of 5 October 2016. It was formally removed from the state register of protected objects the following year. This site now maps its honest successor rather than the vanished tree.\n\nOn 12 May 2017, Aukštaitija National Park and neighbouring Labanoras Regional Park authorities held a public planting ceremony beside the fallen trunk: a young oak grown at the Kėdainiai nursery from a graft of the original, genetically its clone though grown on separate rootstock. As of 2026 it remains a young tree, nowhere near the size or presence of the giant it replaces, and this page describes it as what it is rather than borrowing the original's measurements.\n\nPark officials deliberately left the fallen original trunk in place rather than clearing it, citing its value for biodiversity: it now hosts a rare fungus, kurapkinis storplutis. Visitors see both, the fallen giant and its young clone standing beside it, within Aukštaitija National Park.",
+  "faq": [
+    {
+      "q": "Is this an ancient tree?",
+      "a": "Not yet. The tree here is a young clone planted in 2017. The original Trainiškis Oak, roughly 800 years old, fell in a 2016 storm and is no longer alive."
+    },
+    {
+      "q": "Why publish a young tree?",
+      "a": "Because it's a genetic clone of a genuinely historic tree, planted deliberately at the same spot beside the original's preserved trunk, and honestly described as young rather than dressed up as ancient."
+    },
+    {
+      "q": "What happened to the original tree?",
+      "a": "It fell in a windstorm on the night of 5 October 2016, after an estimated 800 years, and was removed from Lithuania's register of protected trees in 2017."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands within Aukštaitija National Park, marked with directional signs from the village road."
+    }
+  ],
+  "trees": [
+    {
+      "id": "trn_001",
+      "name": "Trainiškis Oak (successor)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "planted 2017, a genetic clone of the fallen original",
+      "location": {
+        "address": "Beside the preserved trunk of the fallen original oak, near the southeastern shore of Lake Baluošas, about 100 m south of the main village road, Trainiškis, Ignalina district",
+        "latitude": 55.388917,
+        "longitude": 26.043633,
+        "neighbourhood": "Trainiškis, within Aukštaitijos nacionalinis parkas (Aukštaitija National Park)"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Traini%C5%A1kio_%C4%85%C5%BEuolas",
+        "https://anp.lrv.lt/lt/naujienos/trainiskio-azuolai-senolis-ir-jauniklis/"
+      ],
+      "access": "Free, in Aukštaitija National Park; marked with directional signs from the village road",
+      "transport": "In Trainiškis village on Lake Baluošas, Ignalina district; rural, best reached by car",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is the youngest tree on this list and genetically it is one of the oldest. The original Trainiškis oak, reckoned at around 800 years, 6.15 metres round and protected since 1960, came down in a windstorm on the night of 5 October 2016 and was struck off the state register the year after. A graft of it was raised at the nursery in Kėdainiai, and on 12 May 2017 the Aukštaitija and Labanoras park authorities planted that clone beside the fallen trunk at a public ceremony. Same genes, different roots, nine growing seasons in the ground.\n\nSo be clear about what you will find: a young oak, not an ancient one. It has none of the old tree's dimensions and none of its history, and we are not lending it either.\n\nThe old trunk is still lying where it fell, deliberately. The park refused to clear it, because deadwood of that age is habitat, and a rare bracket fungus listed in Lithuania's Red Data Book was found growing on it. The park calls the site the elder and the young one, and both are signposted from the village road near the southeastern shore of Lake Baluošas.\n\nWhich makes this a visit about time rather than size. Standing beside the wreck of an 800-year-old oak while its copy gets on with year nine is worth the detour off the lake road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

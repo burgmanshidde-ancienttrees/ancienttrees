@@ -1,0 +1,148 @@
+{
+  "city": "Kaunas",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Kaunas keeps its oldest trees inside its parks rather than its streets: a linden with a fenced trunk in Vytautas Park, part of the vast Ąžuolynas oak forest; a golden willow leaning over the Nemunas-Neris confluence, now visibly failing; a 600-year-old oak in the pine woods above the Kaunas reservoir, carrying a name once given to a different, already-lost tree; and a multi-trunked lime on the far bank in Vilijampolė, still uncertain of its own age. Four trees, four different kinds of survival.",
+  "meta_description": "Kaunas's oldest trees: a 270-year linden, a declining golden willow, a 600-year oak above the reservoir, and a multi-trunk lime in Vilijampolė.",
+  "question_meta": "Kaunas's oldest confirmed tree is the Peace Hill Oak above Kaunas marios, estimated at roughly 600 years. Full list of 4.",
+  "question_answer": "The Peace Hill Oak (Taikos kalno ąžuolas), a pedunculate oak in the pine woods of Pažaislio šilas above the Kaunas reservoir, estimated at roughly 600 years. It carries a name and role handed down from an older oak nearby that was lost to arson in 2007.",
+  "question_context": "Kaunas's Peace Hill Oak is not the original bearer of its own name. An older oak, roughly 800 years old by some estimates, stood nearby and was already dying from storm damage when a 2001 memorial installation was placed beside it; a further arson attack in 2007 finished it off, and it was removed. This living oak, judged healthy enough to carry the name and the city's 2001 natural-monument designation forward, has done that job since. It stands in Pažaislio šilas, a pine wood beside the Kauno marios reservoir and the Pažaislis Monastery, kept alive today with periodic treatment for internal rot.\n\nThe other three trees span very different parts of Kaunas: a 270-year linden confirmed by growth-ring count in Vytautas Park, within the city's Ąžuolynas oak forest; a golden willow by the Nemunas-Neris confluence that a 2016 environment ministry order protected for its unusual colouring, now showing signs of fungal decline in 2026 photographs; and an unusually thick, multi-trunked lime in the Vilijampolė district whose age nobody has recorded.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kaunas?",
+      "a": "The Peace Hill Oak above the Kaunas reservoir, estimated at roughly 600 years, though the tree that first carried this name and title was lost in 2007."
+    },
+    {
+      "q": "Are all of Kaunas's mapped trees healthy?",
+      "a": "Mostly. The golden willow in Santaka Park shows signs of fungal decline in a 2026 photograph and should be treated as a tree in decline rather than a certain survivor."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all four stand in public parks with no entry fee."
+    },
+    {
+      "q": "Is there a tree in Kaunas without a documented age?",
+      "a": "Yes, the Lampėdžiai Beauty Linden in Vilijampolė, a multi-trunked lime nicknamed 'Gražuolė' (the Beauty). Its unusual five-trunk form makes a simple age estimate unreliable; if you know it, tell us."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kun_001",
+      "name": "Vytautas Park Linden",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 270 years",
+      "age_min": 250,
+      "age_max": 290,
+      "girth_cm": 550,
+      "location": {
+        "address": "Vytauto parkas (Vytautas Park), on the slope above Parodos gatvė, within Kauno ąžuolynas, Kaunas",
+        "latitude": 54.897939,
+        "longitude": 23.92904,
+        "neighbourhood": "Žaliakalnis"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Vytauto_parko_liepa",
+        "https://archive.ph/SFREz"
+      ],
+      "access": "Free, in a public park (Vytautas Park, part of the Kaunas Ąžuolynas oak forest); fenced with an information board",
+      "transport": "Within Kaunas Ąžuolynas park in the Žaliakalnis district, roughly 2 km / 25-30 min walk from the city centre",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Most tree ages on this site are estimates. This one was counted. Somebody bored a core out of the trunk and read the growth rings, which came to about 270 years, so the linden was a seedling here around the 1750s and has stood through every version of Kaunas since.\n\nIt measures 5.50 metres around at chest height, 1.73 metres through the trunk, and 23 metres to the top. The crown is 18 metres deep and roughly 25 by 16 metres across, noticeably lopsided; the tree stands on a northwest-facing slope with the ground falling away at twelve degrees. The state register describes its condition as good. There is some wood-boring insect damage in the trunk and one dead skeletal branch, but no rot and no splits in the bark, which for a tree of this age is a better report than most.\n\nThe setting is the surprise. This is not a solemn tree in a churchyard: it sits on the slope above Parodos gatvė inside Vytautas Park, at the edge of the Ąžuolynas oak wood, with the fairground close by and a dirt path running three and a half metres from the trunk. Kaunas city council made it a protected natural heritage object on 10 April 2008. It is fenced now, with a board beside it. Twenty-five minutes on foot from the centre, uphill into Žaliakalnis, the green hill.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kun_002",
+      "name": "Santaka Golden Willow",
+      "species": "White Willow, golden form (Salix alba subsp. vitellina)",
+      "age_estimate": "at least 100 years",
+      "age_min": 100,
+      "age_max": 150,
+      "girth_cm": 699,
+      "location": {
+        "address": "Santakos parkas (Santaka Park), near the Neris riverbank, about 0.5 km west of Kaunas Castle, Kaunas Old Town",
+        "latitude": 54.898581,
+        "longitude": 23.877406,
+        "neighbourhood": "Senamiestis (Old Town)"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Santakos_gluosnis",
+        "http://kauno.diena.lt/naujienos/kaunas/miesto-pulsas/santakos-parke-ispudingas-olivios-gluosnis-674571"
+      ],
+      "access": "Free, in a public riverside park (Santaka Park) right next to the pedestrian/cycle path",
+      "transport": "In Santaka Park at the Nemunas-Neris confluence, about 1 km / 15 min walk from Kaunas Old Town / Town Hall Square",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A willow with a trunk very nearly seven metres round stood on nobody's list until January 2014, in a public park ten minutes from the Kaunas town hall. The arborist Leonardas Mekionis noticed it. Measured, it came to 6.99 metres at chest height and 21.2 metres tall, the trunk dividing into three about two metres up, with two small hollows. On 8 February 2016 the environment ministry made it a state-protected natural heritage object. It is a golden form of the white willow, named for the colour its branches carry.\n\nNobody has dated it beyond \"at least a hundred years\", which is an estimate rather than a count, and willows are short-lived by the standards of the trees on this site.\n\nWhich brings up the thing to say plainly: this one may be near the end. A photograph taken in the park in the summer of 2026 is captioned by its own author as a withered, dying willow, and another notes fungus and a trunk full of hollows and cavities. It was still standing in that picture. A plaque in Santaka Park reads, in translation, that old trees and dead wood alike are essential for biodiversity, which reads like a decision already taken about how this tree ends. Go and look at the confluence of the Nemunas and the Neris while you are there, and tell us what state you find it in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kun_003",
+      "name": "Peace Hill Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 600 years",
+      "age_min": 500,
+      "age_max": 650,
+      "girth_cm": 515,
+      "location": {
+        "address": "Pažaislio šilas (Pažaislis pine wood), on the cycle path between the Kaunas Reservoir (Kauno marios) shore and the south side of Pažaislis Monastery, Kaunas",
+        "latitude": 54.87427,
+        "longitude": 24.02287,
+        "neighbourhood": "Pažaislis, within Kauno marios regioninis parkas (Kaunas Lagoon Regional Park)"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Taikos_kalno_%C4%85%C5%BEuolas",
+        "http://kauno.diena.lt/dienrastis/kita/storiausias-medis-liepa-10455"
+      ],
+      "access": "Free, in a public regional park (Kauno marios regioninis parkas), directly beside a public cycle/footpath",
+      "transport": "In Pažaislio šilas near Pažaislis Monastery, about 8-9 km east of central Kaunas; reachable by public bus toward Pažaislis then a short walk into the wood",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The oldest and thickest tree in Kaunas inherited the job from one that was burned down. The original Peace Hill Oak, about 800 years old and 6.7 metres round, was already failing from storm damage in 2001 when an arsonist got to it. The park left it standing to die rather than felling it, and in that same year the sculptor Juozas Šlivinskas set a metal cross-section of a trunk beside it, its rings marked with dates from Lithuanian history. A second arson attack in 2007 finished the old tree off and it was taken away. A sapling stands on its spot.\n\nThe name and the role went, on 25 October 2001, to this oak: a neighbour of roughly 600 years, made a Kaunas natural monument on that date. It measures 5.15 metres round at chest height and 21 metres tall, which makes it the largest and oldest tree both in the city and in the Kaunas Lagoon Regional Park around it.\n\nIt gets looked after like a listed building. Internal rot is the ongoing problem, so the trunk is treated and disinfected periodically, damaged openings are covered over and dead branches are cut out. You will find it beside the cycle path through the Pažaislis wood, between the reservoir shore and the Pažaislis monastery, eight or nine kilometres east of the centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kun_004",
+      "name": "Lampėdžiai Beauty Linden",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "not documented",
+      "girth_cm": 720,
+      "location": {
+        "address": "Romuvos gatvė 57, Lampėdžiai, Vilijampolė district, Kaunas",
+        "latitude": 54.90791,
+        "longitude": 23.81845,
+        "neighbourhood": "Vilijampolė"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Lamp%C4%97d%C5%BEi%C5%B3_liepa_Gra%C5%BEuol%C4%97",
+        "https://www.turistopasaulis.lt/lampedziu-liepa-grazuole-lankytina-vieta-kaune/"
+      ],
+      "access": "Free, publicly visible and listed as a visitor site (lankytina vieta) at Romuvos gatvė 57",
+      "transport": "In the Vilijampolė district on the north bank of the Nemunas, about 4 km / a short bus ride from central Kaunas",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Four trunks, five crown tops, and by local tradition it began as five lime saplings planted together in one spot. However it got that way, the result measures 7.20 metres around at chest height, which is a coppice measurement rather than one clean trunk, stands 23 metres tall and carries a crown 22 metres deep. Lithuania made it a gamtos paminklas, a nature monument, in 1968, the country's highest tier of protection, and the journal Miškai later put it among the ten most distinctive trees in the land. Locally it is simply Gražuolė, the Beauty.\n\nIts age is an open question and we are not going to invent one. The usual method, girth read against a growth rate for the species, falls apart on a four-stemmed tree, because each trunk may be regrowth of a different age around a much older stool. No source we found gives a figure. If you know of one, or somebody has taken a core, tell us and we will put it on the page.\n\nThe state description says it has passed its natural maturity and entered decline, which is a life stage rather than an emergency; it is still listed locally as a place worth going to see. It stands at Romuvos gatvė 57 in Vilijampolė, on the north bank of the Nemunas about four kilometres from central Kaunas.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

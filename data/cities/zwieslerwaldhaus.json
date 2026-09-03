@@ -1,0 +1,61 @@
+{
+  "city": "Zwieslerwaldhaus",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Zwieslerwaldhaus maps one tree: the Waldhaustanne, Germany's tallest, thickest and oldest documented silver fir, standing deep in the Bavarian Forest a mile and a half from the Czech border. A family out walking found it by chance in 2020; a TU Dresden dendrologist confirmed the record, and in 2023 it became Germany's National Heritage Tree No. 26. A later survey counted 274 species living in and on it. A boardwalk keeps visitors off its roots. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "The Waldhaustanne: Germany's tallest and oldest documented silver fir, found by chance in 2020 in the Bavarian Forest, National Heritage Tree No. 26.",
+  "question_meta": "Zwieslerwaldhaus's mapped tree is the Waldhaustanne, Germany's tallest documented silver fir at about 53 metres, roughly 605 years old.",
+  "question_answer": "The Waldhaustanne, a silver fir in the Bayerischer Wald National Park near Zwieslerwaldhaus. At about 53 metres it is Germany's tallest known silver fir, and at roughly 605 years old, its oldest documented one too. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "A family out walking in the Bavarian Forest in 2020 noticed a fir that looked implausibly large, and reported it. Prof. Dr. Andreas Roloff of TU Dresden went out to measure it for the Deutsche Dendrologische Gesellschaft's national register of heritage trees, and confirmed what the family had guessed: at about 53 metres tall and 6.93 metres round, it is Germany's tallest and thickest documented silver fir, and at roughly 605 years old, also its oldest. On 23 June 2023 it became National Heritage Tree No. 26.\n\nIt stands in an old-growth fir stand inside the Bayerischer Wald National Park, Germany's oldest national park and, joined to Czech territory across the border, one of central Europe's largest stretches of protected forest. A 2023 biodiversity survey found 274 species living in and on the tree itself, from lichens to insects to the birds that nest in its upper branches.\n\nThe tree is reached on a forest path about 500 metres from the Brechhäuslau car park. A wooden boardwalk carries visitors past it rather than up to the trunk, built specifically to keep foot traffic off the root zone that has kept the tree alive for six centuries.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Zwieslerwaldhaus?",
+      "a": "The Waldhaustanne, a silver fir roughly 605 years old, dated by a TU Dresden dendrologist and confirmed as Germany's oldest documented silver fir."
+    },
+    {
+      "q": "How tall is it?",
+      "a": "About 53 metres, which also makes it Germany's tallest known silver fir."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands inside Bayerischer Wald National Park on a marked forest path, about 500 metres from the Brechhäuslau car park, with no entry fee."
+    },
+    {
+      "q": "Can I get close to the trunk?",
+      "a": "No, and that's deliberate: a boardwalk keeps visitors on a path beside the tree rather than on its roots, which is part of how it has survived six centuries."
+    }
+  ],
+  "trees": [
+    {
+      "id": "zwi_001",
+      "name": "The Waldhaustanne (Zwieslerwaldhaus Silver Fir)",
+      "species": "Silver Fir (Abies alba)",
+      "age_estimate": "roughly 605 years",
+      "age_min": 580,
+      "age_max": 630,
+      "girth_cm": 693,
+      "height_m": 53,
+      "location": {
+        "address": "Bayerischer Wald National Park, near Zwieslerwaldhaus, on the forest path from the Brechhaeuslau car park towards Schwellhaeusl, about 1,360m elevation below the Grosser Rachel summit",
+        "latitude": 49.099083,
+        "longitude": 13.23,
+        "neighbourhood": "Zwieslerwaldhaus, Nationalpark Bayerischer Wald"
+      },
+      "verified_sources": [
+        "https://nationalerbe-baeume.de/project/weiss-tanne-bei-bayerisch-eisenstein-im-nationalpark-bayerischer-wald-landkreis-regen-im-regierungsbezirk-niederbayern/",
+        "https://www.nationalpark-bayerischer-wald.bayern.de/aktuelles/pressemitteilung/detailansicht.htm?ID=A+s3RgSTi2TtQXpRfZkO%2Fg%3D%3D"
+      ],
+      "access": "Free. Inside Bayerischer Wald National Park (Germany's oldest national park), on a forest path roughly 500m from the Brechhaeuslau car park; a wooden boardwalk protects the root zone, so visitors stay on the walkway rather than approaching the trunk directly.",
+      "transport": "No train/bus station nearby; reached via the Brechhaeuslau car park near Zwieslerwaldhaus, then a c. 500m walk on a marked forest path.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Germany's tallest, thickest and oldest documented silver fir went unrecorded until 2020, when a family out walking reported it. Andreas Roloff of TU Dresden verified the measurements for the German Dendrological Society, and on 23 June 2023 the tree was entered as National Heritage Tree No. 26. The figures earn it: 6.93 metres around the trunk when measured in January 2023, about 53 metres tall, and roughly 605 years old, which puts its first summers in the early 1400s. A survey in 2023 counted 274 species living in and on it. At that point a tree is less an organism than an address.\n\nIt stands at about 1,360 metres in an old-growth fir stand roughly a kilometre and a half from the Czech border, inside the Bayerischer Wald National Park. That park is Germany's oldest, and the protected forest simply carries on across the border as the Czech Šumava, so the trees here have spent the last half century inside one of the largest wild woodlands in central Europe.\n\nGetting to it is about 500 metres of marked forest path from the nearest car park. A wooden boardwalk carries visitors past the trunk to keep boots off the root plate, so this is a tree you look up at from a walkway rather than one you put a hand on.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": "Braziūkai",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Braziūkai, a small village in Kaunas district, maps one tree: Motinėlė, the Little Mother, the single-trunked small-leaved lime with the thickest trunk in Lithuania. The village itself is said to have grown up around it roughly 300 years ago. Insurgents against Russian rule gathered here in the 1863 Uprising, and up to seven people could once hide inside its hollow. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "Motinėlė of Braziūkai: the thickest single-trunked lime trunk in Lithuania, roughly 300 years old, a gathering place for 1863 Uprising insurgents.",
+  "question_meta": "Braziūkai's mapped tree is Motinėlė (Little Mother), the thickest single-trunked lime in Lithuania, roughly 300 years old.",
+  "question_answer": "Motinėlė, a small-leaved lime standing beside the village street in Braziūkai. Sources give its girth as 8.1 to 8.6 metres, the thickest single lime trunk recorded in Lithuania. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "The village of Braziūkai is said to have grown up around this tree roughly 300 years ago, one of several lindens original to the site where owls once nested; it is now the only one still standing. During the 1863 Uprising against Russian rule, insurgents gathered here, with graves from the fighting still in the nearby forest, and up to seven people could hide inside the tree's hollow, watching the countryside through an opening near the top. That hollow was later filled with concrete, and locals have long hung crosses and dated plaques on the trunk; a small cross remains fixed there today.\n\nIts exact girth is unsettled: the state cadastre gives 8.10 metres, a separate record claims 8.4, and the Lithuanian Arboriculture Centre's own 2018 page gives 8.60. All agree it is the thickest single-trunked lime trunk in the country. The state register describes the tree as past its natural maturity, with cavities and some fungal traces near the base, but tended, fenced and still alive.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Braziūkai?",
+      "a": "Motinėlė, a small-leaved lime roughly 300 years old and the thickest single lime trunk recorded in Lithuania."
+    },
+    {
+      "q": "Why is it called Motinėlė?",
+      "a": "It means 'Little Mother' in Lithuanian. The village is said to have grown up around this tree, the last survivor of several original lindens on the site."
+    },
+    {
+      "q": "Is the tree healthy?",
+      "a": "It is alive, tended and fenced, though the state register describes it as past natural maturity with some cavities and fungal traces near the base."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands beside the public village street with no fee."
+    }
+  ],
+  "trees": [
+    {
+      "id": "brz_001",
+      "name": "Braziūkai Mother Linden",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 280,
+      "age_max": 320,
+      "girth_cm": 810,
+      "location": {
+        "address": "Beside the main street through Braziūkai village, Zapyškis seniūnija, Kaunas district",
+        "latitude": 54.901432,
+        "longitude": 23.485007,
+        "neighbourhood": "Braziūkai, Kaunas district"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Liepa_Motin%C4%97l%C4%97",
+        "http://alkas.lt/2010/12/29/zurnalas-%E2%80%9Emiskai%E2%80%9C-isskirtiniausiu-lietuvos-medziu-desimtukas-2/"
+      ],
+      "access": "Free, standing beside the public village street, fenced with a small wooden fence and two information signs; listed as a visitor attraction by the Kaunas district municipality and local tourism sites",
+      "transport": "In Braziūkai village, Kaunas district, about 20 km southwest of Kaunas; best reached by car, no public transport identified",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Seven people could hide inside this lime, and an opening near the top of the hollow let whoever was in there look out over the fields. Insurgents of the 1863 uprising against Russian rule gathered at this tree, and the graves from that rising are in the forest nearby. The hollow has since been filled with concrete.\n\nThe tree is called Motinėlė, little mother. By the state register and the Lithuanian Arboriculture Centre it is the thickest single-trunked small-leaved lime in the country, and how thick depends on who did the measuring: the state cadastre records 8.10 metres at 1.1 metres up, another account gives 8.4, and the arboriculture centre 8.60 at the standard height of 1.3 metres. The height is unsettled the same way, 12 metres by one account against the register's 18. Its age is put at about 300 years, from a 1995 catalogue of Lithuanian natural monuments, and the village is said to have grown up around the tree in roughly that span.\n\nSeveral lindens once stood here, the ones the owls nested in. This is the last. People have hung crosses on it for generations and fixed plaques marking dates that mattered to them, and a small cross is still on the trunk.\n\nThe register calls it past maturity and stagnating: cavities at the base, fungus near the ground, cracks higher in the crown. It is fenced, tended and signposted, twenty kilometres southwest of Kaunas.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

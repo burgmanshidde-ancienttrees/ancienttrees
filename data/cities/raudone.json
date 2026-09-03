@@ -1,0 +1,60 @@
+{
+  "city": "Raudonė",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Raudonė, a village on the Nemunas beside a 16th-century castle, maps one tree: a seven-trunked lime in the castle park, voted Lithuania's Tree of the Year 2018 and put forward for the European title the year after. Local legend, told by the regional park itself as folklore rather than fact, says it split into seven trunks after seven serfs were once chained and whipped to death against it. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "The Raudonė Castle Lime: a seven-trunked lime voted Lithuania's Tree of the Year 2018, in the park of a 16th-century Nemunas riverside castle.",
+  "question_meta": "Raudonė's mapped tree is the Raudonė Castle Lime, a seven-trunked lime roughly 400 years old, voted Lithuania's Tree of the Year 2018.",
+  "question_answer": "The Raudonė Castle Lime, a small-leaved lime with seven trunks growing in the park of Raudonė Castle, estimated at about 400 years old by the state register. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "In 2018 the Lithuanian Arboriculture Centre named this lime the country's Tree of the Year, nominated by the Panemunė Regional Park administration, and it went on to represent Lithuania in the European Tree of the Year 2019 contest. Its seven trunks spread into an egg-shaped canopy 20 metres tall and 19 metres wide, covering some 220 square metres of the castle park.\n\nA metal rod is embedded between two of the trunks about three metres up, and local legend, retold by the regional park's own website as folklore rather than history, says seven serfs were once chained to it and whipped to death, and that the tree split into seven trunks from the horror of it. The state register puts its actual age at roughly 400 years.\n\nThe castle building itself now houses a primary school, but the surrounding park and the castle tower are an established, ticketed visitor attraction, listed by regional tourism guides, so the tree is reachable despite the school on site.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Raudonė?",
+      "a": "The Raudonė Castle Lime, a seven-trunked lime estimated at roughly 400 years old, in the park of Raudonė Castle."
+    },
+    {
+      "q": "Why does the tree have seven trunks?",
+      "a": "Nobody knows for certain. A local legend, told as folklore rather than fact by the regional park itself, links the split to a story of seven serfs whipped to death against the trunk."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "The castle park is free to walk; the castle tower itself is a ticketed attraction."
+    },
+    {
+      "q": "Has this tree won any awards?",
+      "a": "Yes. It was voted Lithuania's Tree of the Year in 2018 and went on to the European Tree of the Year 2019 contest."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rdn_001",
+      "name": "Raudonė Castle Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": 620,
+      "location": {
+        "address": "Raudonė Castle park, about 40 m east of the castle building, Raudonė, Jurbarkas district",
+        "latitude": 55.096575,
+        "longitude": 23.131456,
+        "neighbourhood": "Raudonė, within Panemunių regioninis parkas (Panemunė Regional Park)"
+      },
+      "verified_sources": [
+        "https://lt.wikipedia.org/wiki/Raudon%C4%97s_liepa",
+        "https://www.treeoftheyear.org/previous-years/2019/Lipa-na-zamku-v-Raudone"
+      ],
+      "access": "Free to walk in the castle park where the tree stands; the castle building itself (now a primary school) has a tower open to paying visitors (around EUR 1.50), but the park and the tree require no ticket",
+      "transport": "In Raudonė village on the Nemunas, in Jurbarkas district; reachable by regional bus from Jurbarkas town",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Seven trunks, and a legend that accounts for them in the worst way available. A metal rod sits embedded between two of the stems about three metres up, and local tradition holds that seven serfs were once chained to that rod and whipped to death, and that the lime split into seven from the horror of it. The Panemunė Regional Park repeats the story on its own pages as folklore rather than as record, which is exactly how to take it.\n\nStrip the legend away and the tree still earns the drive. The state register puts it at about 400 years old. It measures 6.2 metres round at chest height and 31 metres tall, under an egg-shaped crown 20 metres deep and 19 across that shades some 220 square metres of ground. In 2018 the Lithuanian Arboriculture Centre named it Lithuania's Tree of the Year, on a nomination from the regional park, and in 2019 it went forward to the European Tree of the Year contest.\n\nIt stands about forty metres east of Raudonė Castle, beside a Soviet-era memorial to the Second World War. The castle itself is a primary school now, with a tower open to visitors for around a euro and a half; the park where the lime grows costs nothing and needs no ticket. The Nemunas runs below, and the regional park along with it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

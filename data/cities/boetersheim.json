@@ -1,0 +1,69 @@
+{
+  "city": "Boetersheim",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Boetersheim, a hamlet of about 150 people in Lower Saxony's Heide country, maps one tree: a hollow, fissured oak beside the village war memorial, one of the largest in the region. Called the Tausendjährige Eiche locally, though neither register that measured it treats that as a documented age; both put it at roughly 600 to 800 years. Lightning smouldered inside it for weeks in the early 1900s, and the trunk burst open in 1959, leaving the cavernous, cable-braced hollow that stands there today. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "The Tausendjährige Eiche of Boetersheim: a hollow, storm-battered veteran oak roughly 600-800 years old, one of the largest in Lower Saxony's Heide.",
+  "question_meta": "Boetersheim's mapped tree is a veteran oak beside the village war memorial, roughly 600-800 years old and among the largest in the region.",
+  "question_answer": "A large hollow oak beside the war memorial in Boetersheim, a tiny hamlet in Lower Saxony. Two independent tree registers put its girth at 7.1 to 7.3 metres and its age at roughly 600 to 800 years. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "Boetersheim's oak has taken more damage than most trees survive. An old local account times a lightning strike to around 1904, after which the tree reportedly smouldered inside for weeks. In 1959 the trunk burst open and a large branch broke away. What is left today is completely hollow, heavily fissured, and full of decayed wood, stabilised with steel cables and props near the top so the crown can keep standing over the cavity below.\n\nBoth registers that have measured it, baumkunde.de and the local Alte Bäume der Heide project, agree the tree is still alive and holding on rather than declining sharply, based on their most recent surveys. Its girth is recorded at 7.1 to 7.3 metres and its height at 21 to 23 metres, with a crown spreading about 14 metres. The locally popular name, Tausendjährige Eiche, promises a thousand years; both registers that measured it call that a nickname rather than a dated fact, and put the real figure at roughly 600 to 800 years.\n\nIt stands next to Boetersheim's war memorial, in a hamlet that also keeps an old watermill and smithy, reached by road rather than any station.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Boetersheim?",
+      "a": "A veteran oak beside the war memorial, put at roughly 600-800 years by two independent tree registers, despite its 'thousand-year oak' nickname."
+    },
+    {
+      "q": "Why is the trunk hollow?",
+      "a": "A lightning strike smouldered inside it for weeks around 1904, and the trunk burst open in 1959. The hollow is now stabilised with steel cables and props."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in the open next to the village war memorial with no gate or fee."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "Yes. Both registers that have surveyed it describe it as alive and holding on, though clearly a veteran showing its age."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bot_001",
+      "name": "The Tausendjaehrige Eiche of Boetersheim",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 600-800 years (the \"1000-year\" name is a local nickname, not a documented age)",
+      "age_min": 600,
+      "age_max": 800,
+      "girth_cm": 710,
+      "height_m": 21,
+      "location": {
+        "address": "Beside Esteweg 1, next to the war memorial (Kriegerdenkmal), Boetersheim, a hamlet of Kakenstorf, Landkreis Harburg, Lower Saxony",
+        "latitude": 53.32119,
+        "longitude": 9.74675,
+        "neighbourhood": "Boetersheim"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/1262-eiche_in_boetersheim/",
+        "https://www.alte-baeume-der-heide.de/boetersheim.html"
+      ],
+      "access": "Free, publicly accessible next to the village war memorial.",
+      "transport": "No station nearby; Boetersheim is a small hamlet (roughly 150 residents) reached by road, on the Bahndamm-route cycling/walking trail from the Landkreis Harburg.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This oak once caught fire and smouldered for weeks. An old local account dates the burning bark to around 1904, after a lightning strike. It survived. In 1959 the trunk burst and a large limb came down, and it survived that too. What stands beside the war memorial today is completely hollow, deeply fissured, packed with rotted wood, and held together at the top with steel cables and props.\n\nThe trunk measures 7.10 metres around in the most recent survey and 7.3 metres in a measurement taken on 10 August 2016, which either way makes it one of the largest oaks in Lower Saxony. Height is recorded as 21 to 23 metres depending on the survey, under a crown about 14 metres across. Both registers that carry it give the age as 600 to 800 years. As with half the veteran oaks in Germany it is known locally as the Tausendjährige Eiche, and as with most of them the thousand years are a nickname rather than a measurement.\n\nHollow does not mean finished. Both sources describe it as alive, declining slowly, which is roughly what a 700-year-old oak is supposed to be doing. Boetersheim is a hamlet of about 150 people with an old watermill and a smithy, walkable end to end in ten minutes, and this tree is the reason to stop.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are down and the hollow, cabled frame of it is fully visible"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
