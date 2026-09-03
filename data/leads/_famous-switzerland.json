@@ -1,156 +1,128 @@
 {
- "country": "Switzerland",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
- "leads": [
-  {
-   "name": "Alte Eibe Hasenmatt",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Alte_Eibe_Hasenmatt_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Alte_Eibe_Hasenmatt_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Alte_Eibe_Hasenmatt_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Alte Eiche (Marthalen)",
-   "lat": 47.640408,
-   "lng": 8.648343,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio_(2).jpg"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Erlebnisbaum (Rotkreuz ZG)",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Erlebnisbaum.jpg",
-    "https://commons.wikimedia.org/wiki/File:Erlebnisbaum1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Erlebnisbaum2.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Grand châtaignier d'Antagnes",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Antagnes,_gros_ch%C3%A2taignier.JPG",
-    "https://commons.wikimedia.org/wiki/File:Antagnes-Ch%C3%A2taignier_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Antagnes-Ch%C3%A2taignier_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Sweet Chestnut (Castanea sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Île de Peilz",
-   "lat": 46.397505,
-   "lng": 6.923854,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2009_0308_(02)zoom.jpg",
-    "https://commons.wikimedia.org/wiki/File:After_the_Storm,_Villeneuve_-_Calm_view_with_Sunset_and_Jetty_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Boom_in_het_Meer_van_Geneve_-_panoramio.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Linner Linde",
-   "lat": 47.470833,
-   "lng": 8.133333,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Holder_an_der_Linner_Linde.jpg",
-    "https://commons.wikimedia.org/wiki/File:Linde_von_Linn.jpg",
-    "https://commons.wikimedia.org/wiki/File:Linde_von_Linn_(1).jpg"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Messikomer Eich",
-   "lat": 47.336281,
-   "lng": 8.778806,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%27Messikommer_Eich%27_-_Robenhauser_Riet_2012-10-13_16-48-21.JPG",
-    "https://commons.wikimedia.org/wiki/File:ETH-BIB-Messikommer_Denkstein_im_Robenhauser_Ried-Dia_247-14860.tif",
-    "https://commons.wikimedia.org/wiki/File:ETH-BIB-Messikommer_Denkstein_im_Robenhauser_Ried-Dia_247-14861.tif"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "why": "Verified and NOT shipped, 2026-08-29, on the day-trip boundary rather than on the tree. Over 500 years, girth over 6 m, protected by the Seegraeben council in 1914 and named for Jakob Messikommer in 1927; struck by lightning in 2005, and a tomography reported in the Zuercher Oberlaender on 4 August 2011 concluded it could stand for years yet, with follow-up testing every two or three years. Sources: wetzipedia.ch and zo-online.ch. It sits at Robenhausen by the Pfaeffikersee, which is roughly 50 minutes from Zurich by S-Bahn plus a walk, so it fails CLAUDE.md's roughly-30-minutes test for the Zurich page. Ship it if Wetzikon ever gets its own page, or if the boundary is reconsidered. Species not established."
-  },
-  {
-   "name": "Noyer de Vilmorin de Meinier",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Noyer_de_Meinier_2025.jpg"
-   ],
-   "status": "lead",
-   "species": "Walnut (Juglans sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Old Yew in Crémines",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:If_mill%C3%A9naire_Cr%C3%A9mines_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:If_mill%C3%A9naire_Cr%C3%A9mines_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:If_mill%C3%A9naire_Cr%C3%A9mines_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Yew (Taxus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tilleul de Morat à Fribourg",
-   "lat": 46.805847,
-   "lng": 7.160877,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Blick_%C3%BCber_den_Nova-Friburgo-Platz_die_Murtenlinde_und_das_Rathaus_in_Freiburg_Schweiz.jpg",
-    "https://commons.wikimedia.org/wiki/File:CH-NB-La_Suisse_en_miniature-19522-page097.tif",
-    "https://commons.wikimedia.org/wiki/File:ETH-BIB-Fribourg,_Hotel_de_Ville_et_Tilleul_de_Morat-PK_017083.tif"
-   ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Die Wappeneiche von Würenlingen",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:W%C3%BCrenlingen,_Die_Eiche_im_Gegenlicht.JPG",
-    "https://commons.wikimedia.org/wiki/File:W%C3%BCrenlingen,_Die_Eiche_im_Guggich.JPG",
-    "https://commons.wikimedia.org/wiki/File:W%C3%BCrenlingen,_Kr%C3%A4ftig_im_Boden_verankert.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Messikomer Eich",
-   "lat": 47.336281,
-   "lng": 8.778806,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%27Messikommer_Eich%27_-_Robenhauser_Riet_2012-10-13_16-48-21.JPG",
-    "https://commons.wikimedia.org/wiki/File:ETH-BIB-Messikommer_Denkstein_im_Robenhauser_Ried-Dia_247-14860.tif",
-    "https://commons.wikimedia.org/wiki/File:ETH-BIB-Messikommer_Denkstein_im_Robenhauser_Ried-Dia_247-14861.tif"
-   ],
-   "status": "lead",
-   "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "why": "Verified and NOT shipped, 2026-08-29, on the day-trip boundary rather than on the tree. Over 500 years, girth over 6 m, protected by the Seegraeben council in 1914 and named for Jakob Messikommer in 1927; struck by lightning in 2005, and a tomography reported in the Zuercher Oberlaender on 4 August 2011 concluded it could stand for years yet, with follow-up testing every two or three years. Sources: wetzipedia.ch and zo-online.ch. It sits at Robenhausen by the Pfaeffikersee, which is roughly 50 minutes from Zurich by S-Bahn plus a walk, so it fails CLAUDE.md's roughly-30-minutes test for the Zurich page. Ship it if Wetzikon ever gets its own page, or if the boundary is reconsidered. Species not established."
-  }
- ]
+  "country": "Switzerland",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03: Messikomer Eich (duplicate entry also removed this pass) shipped as rbh_001 in the new single-tree page Robenhausen (data/cities/robenhausen.json), not Wetzikon as this file's earlier note guessed: the tree itself sits in Seegraben municipality on the path to Robenhausen, and Robenhausen is the more useful place name given its own fame (the Neolithic Robenhausian period is named after it, part of a UNESCO pile-dwelling listing). Entry removed from this leads list now that it is shipped.",
+  "leads": [
+    {
+      "name": "Alte Eibe Hasenmatt",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Alte_Eibe_Hasenmatt_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Alte_Eibe_Hasenmatt_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Alte_Eibe_Hasenmatt_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Alte Eiche (Marthalen)",
+      "lat": 47.640408,
+      "lng": 8.648343,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Alte_Eiche_in_Marthalen_-_panoramio_(2).jpg"
+      ],
+      "status": "lead",
+      "species": "Oak (Quercus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Erlebnisbaum (Rotkreuz ZG)",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Erlebnisbaum.jpg",
+        "https://commons.wikimedia.org/wiki/File:Erlebnisbaum1.JPG",
+        "https://commons.wikimedia.org/wiki/File:Erlebnisbaum2.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Grand châtaignier d'Antagnes",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Antagnes,_gros_ch%C3%A2taignier.JPG",
+        "https://commons.wikimedia.org/wiki/File:Antagnes-Ch%C3%A2taignier_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Antagnes-Ch%C3%A2taignier_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Sweet Chestnut (Castanea sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Île de Peilz",
+      "lat": 46.397505,
+      "lng": 6.923854,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2009_0308_(02)zoom.jpg",
+        "https://commons.wikimedia.org/wiki/File:After_the_Storm,_Villeneuve_-_Calm_view_with_Sunset_and_Jetty_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Boom_in_het_Meer_van_Geneve_-_panoramio.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Linner Linde",
+      "lat": 47.470833,
+      "lng": 8.133333,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Holder_an_der_Linner_Linde.jpg",
+        "https://commons.wikimedia.org/wiki/File:Linde_von_Linn.jpg",
+        "https://commons.wikimedia.org/wiki/File:Linde_von_Linn_(1).jpg"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Noyer de Vilmorin de Meinier",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Noyer_de_Meinier_2025.jpg"
+      ],
+      "status": "lead",
+      "species": "Walnut (Juglans sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Old Yew in Crémines",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:If_mill%C3%A9naire_Cr%C3%A9mines_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:If_mill%C3%A9naire_Cr%C3%A9mines_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:If_mill%C3%A9naire_Cr%C3%A9mines_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Yew (Taxus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tilleul de Morat à Fribourg",
+      "lat": 46.805847,
+      "lng": 7.160877,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Blick_%C3%BCber_den_Nova-Friburgo-Platz_die_Murtenlinde_und_das_Rathaus_in_Freiburg_Schweiz.jpg",
+        "https://commons.wikimedia.org/wiki/File:CH-NB-La_Suisse_en_miniature-19522-page097.tif",
+        "https://commons.wikimedia.org/wiki/File:ETH-BIB-Fribourg,_Hotel_de_Ville_et_Tilleul_de_Morat-PK_017083.tif"
+      ],
+      "status": "lead",
+      "species": "Lime (Tilia sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Die Wappeneiche von Würenlingen",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:W%C3%BCrenlingen,_Die_Eiche_im_Gegenlicht.JPG",
+        "https://commons.wikimedia.org/wiki/File:W%C3%BCrenlingen,_Die_Eiche_im_Guggich.JPG",
+        "https://commons.wikimedia.org/wiki/File:W%C3%BCrenlingen,_Kr%C3%A4ftig_im_Boden_verankert.JPG"
+      ],
+      "status": "lead"
+    }
+  ]
 }

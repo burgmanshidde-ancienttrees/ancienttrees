@@ -1,0 +1,64 @@
+{
+  "city": "Robenhausen",
+  "country": "Switzerland",
+  "status": "needs_curation",
+  "intro": "Robenhausen maps one tree: the Messikommer Eiche, an oak of more than 500 years standing on the marshy shore of the Pfaffikersee where a mid-19th-century find gave a whole period of European prehistory its name. A local peat-cutter's dig here uncovered a Stone Age lakeside village so well preserved that the period is still called the Robenhausian, and the settlement is now part of a UNESCO World Heritage listing. Published alone here because the tree, and the ground beneath it, is the destination, not because the wider area's research is finished.",
+  "meta_description": "The Messikommer Eiche, a 500-plus-year-old oak beside the Pfaffikersee, on the site where finds named the Neolithic Robenhausian period.",
+  "question_meta": "Robenhausen's mapped tree is the Messikommer Eiche, an oak of more than 500 years beside the Pfaffikersee.",
+  "question_answer": "The Messikommer Eiche, beside the footpath through the Robenhauser Ried nature reserve on the southern shore of the Pfaffikersee. Over 500 years old and more than six metres round, protected since 1914 and named for the archaeologist who dug up the Stone Age lakeside village nearby. It is the only tree mapped here, published alone under the single-tree exception: the archaeology, not the town, is why people already come.",
+  "question_context": "In 1858, workmen cutting a drainage channel near this oak turned up waterlogged timber from a Stone Age settlement, preserved so well in the wet peat that finds nobody expected to survive, textiles, tools, seeds, came up whole. The discovery was significant enough that archaeology now names an entire Neolithic period after the place: the Robenhausian. Jakob Messikommer, the local peat-cutter turned self-taught archaeologist who made it, had the oak beside his dig named for him in 1927, and the settlement is now part of a UNESCO World Heritage listing for prehistoric pile dwellings around the Alps. The tree was already centuries old when he found his timbers. Seegraben's council placed it under protection in 1914, its first conservation act, and bolted a plaque into the trunk in 1927. A 2005 lightning strike opened the hollow now visible at its base; a tomography ordered afterward found the wood sound enough to stand for years yet, with a recheck due within two or three years. No report since says the tree came down, though no newer scan has surfaced either, so treat that health record as dated and tell us what you find.",
+  "hero_tree_id": "rbh_001",
+  "oldest_tree_id": "rbh_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Robenhausen?",
+      "a": "The Messikommer Eiche, an oak of more than 500 years, the only tree mapped here."
+    },
+    {
+      "q": "Is the tree in good health?",
+      "a": "As of the last public record, a 2011 tree tomography following a 2005 lightning strike, yes: sound enough to stand for years. No newer assessment has been published, so if you visit and see something different, tell us."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands beside a public footpath through the Robenhauser Ried nature reserve, no gate or opening hours. Stay on the path, since the reserve around it is protected marshland."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Roughly 25 minutes on foot from Wetzikon railway station (S3/S5), along the path around the Pfaffikersee. No closer public transport stop."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rbh_001",
+      "name": "The Messikommer Eiche",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "over 500 years",
+      "age_min": 500,
+      "age_max": 700,
+      "girth_cm": 600,
+      "location": {
+        "address": "Beside the footpath through the Robenhauser Ried nature reserve, on the southern shore of the Pfaffikersee, on the boundary of Seegraben and Wetzikon",
+        "latitude": 47.336281,
+        "longitude": 8.778806,
+        "neighbourhood": "Robenhausen, Zurich Oberland"
+      },
+      "verified_sources": [
+        "https://www.wetzipedia.ch/index.php/Messikommer_Eiche (over 500 years old, girth over 6m, 1914 protection by Seegraben's municipal council, 1927 memorial plaque, 2005 lightning strike, 2011 tomography)",
+        "https://www.zo-online.ch/bezirk-hinwil/seegraben/hoffnung-fuer-die-messikommer-eiche/145861 (Seegraben council's spring 2011 tomography, first-ever conservation measure by the council in 1914, tree stands beside a public walking path)",
+        "https://en.wikipedia.org/wiki/Robenhausen and https://en.wikipedia.org/wiki/Jakob_Messikommer (1858 pile-dwelling discovery, UNESCO listing, Messikommer's biography)"
+      ],
+      "access": "Free, beside a public footpath through the Robenhauser Ried nature reserve; no gate or opening hours. Stay on the marked path, since the surrounding reserve is protected marshland.",
+      "transport": "Roughly 25 minutes on foot from Wetzikon railway station (S3/S5 lines), via the path around the Pfaffikersee. No closer public transport stop.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "how_to_recognise": "A gnarled, hollow-based oak standing alone beside the lakeside path, a rounded memorial stone at its foot and a wooden marker post beside it.",
+      "story": "In 1858, labourers cutting a drainage channel near this oak's roots turned up the first waterlogged timbers of a Stone Age lakeside village, preserved so well in the peat that organic finds nobody expected to survive, textiles, wooden tools, seeds and grain, came up whole. The discovery was significant enough that European prehistory now names an entire Neolithic period after the place: the Robenhausian. Jakob Messikommer, the local peat-cutter turned self-taught archaeologist who found it, later had this oak named for him, and the settlement he uncovered is now one of the constituent sites in a UNESCO World Heritage listing for prehistoric pile dwellings around the Alps.\n\nThe tree itself was already centuries old when Messikommer found his timbers. Seegraben's municipal council placed it under protection in 1914, its first conservation act ever, and bolted a memorial plaque into the trunk in 1927, at the point where it forks into crown.\n\nIt took a lightning strike in 2005, which opened the deep hollow still visible at the base today. A tree tomography ordered afterward found the wood sound enough to stand for years yet, with a recheck recommended within two or three years. Nothing since has reported the tree down, though no newer scan has surfaced either.\n\nOver 500 years old and more than six metres round, it stands alone beside the footpath through the Robenhauser Ried, a protected marsh, with Wetzikon's rooftops visible across the fields behind it.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%27Messikommer_Eich%27_-_Robenhauser_Riet_2012-10-13_16-48-21.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Roland zh",
+        "status": "approved"
+      }
+    }
+  ]
+}
