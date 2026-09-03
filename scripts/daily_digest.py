@@ -1280,7 +1280,7 @@ def product_section(today):
         days_ = [(since + datetime.timedelta(days=i)).isoformat() for i in range(15)]
         if any(series.get(d) for d in days_):
             out.append("")
-            out.append("| Day | Accounts | Waitlist | Saves | Trees sent | Feedback |")
+            out.append("| Day | Accounts | Android waitlist | Saves | Trees sent | Feedback |")
             out.append("|---|---:|---:|---:|---:|---:|")
             for d in days_:
                 v = series.get(d, {})
@@ -1301,7 +1301,7 @@ def product_section(today):
     except Exception as e:
         out.append("- Sign-up series unreadable (%s)" % str(e)[:60])
 
-    for label, path in (("Waitlist", "/rest/v1/waitlist"),
+    for label, path in (("Android waitlist", "/rest/v1/waitlist"),
                         ("Submissions", "/rest/v1/submissions")):
         try:
             head, hd = _supa(path + "?select=id&limit=1", key)
@@ -1358,8 +1358,10 @@ def product_section(today):
                 label + ":", total, trees_n, total - trees_n, _ago(since)))
             continue
         if since is not None and since <= 1:
-            ATTENTION.append("a %s arrived %s (%d total)"
-                             % (label.rstrip("s").lower(), _ago(since), total))
+            name_ = label.rstrip("s").lower()
+            article = "an" if name_[:1] in "aeiou" else "a"
+            ATTENTION.append("%s %s signup arrived %s (%d total)"
+                             % (article, name_, _ago(since), total))
         out.append("- %-12s %d total, newest %s" % (
             label + ":", total, _ago(since)))
 
