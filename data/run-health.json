@@ -4312,6 +4312,60 @@
    ],
    "trees": 14,
    "logged": true
+  },
+  {
+   "started": "2026-09-03T17:22:36+00:00",
+   "date": "2026-09-03",
+   "run_id": "33784154409",
+   "minutes": 99.7,
+   "minutes_basis": "measured",
+   "attempts": 3,
+   "turns": 602,
+   "denials": 52,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(grep), Bash(ls), Bash(mkdir), Bash(mv), Bash(pip), Bash(python3), Bash(rm), Bash(sleep)",
+   "ended": "success",
+   "tokens": 57712321,
+   "claims_held": [
+    "_famous-australia"
+   ],
+   "commits": 43,
+   "cities_touched": 8,
+   "cities": [
+    {
+     "city": "matera",
+     "trees": 4
+    },
+    {
+     "city": "oahu",
+     "trees": 3
+    },
+    {
+     "city": "higashimiyoshi",
+     "trees": 1
+    },
+    {
+     "city": "hilo",
+     "trees": 1
+    },
+    {
+     "city": "llangernyw",
+     "trees": 1
+    },
+    {
+     "city": "shingu",
+     "trees": 1
+    },
+    {
+     "city": "assisi",
+     "trees": 0
+    },
+    {
+     "city": "kauai",
+     "trees": 0
+    }
+   ],
+   "trees": 11,
+   "logged": true
   }
  ],
  "schedule_changes": [
