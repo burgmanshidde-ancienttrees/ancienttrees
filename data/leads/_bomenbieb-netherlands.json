@@ -78,7 +78,9 @@
    "nearest_ours_km": 0.01,
    "nearest_ours": "hag_023 The Plane of Park Hoekenburg (The Hague)",
    "status": "possibly_mapped",
-   "reason": "Within 10 m of hag_023. Proximity is not identity: check species and name before treating it as the same tree."
+   "reason": "Within 10 m of hag_023. Proximity is not identity: check species and name before treating it as the same tree.",
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "het leidse bosje amsterdam",
@@ -108,7 +110,9 @@
    "nearest_ours_km": 0.01,
    "nearest_ours": "dor_002 The Plane of the Arend Maartenshof (Dordrecht)",
    "status": "possibly_mapped",
-   "reason": "Within 10 m of dor_002. Proximity is not identity: check species and name before treating it as the same tree."
+   "reason": "Within 10 m of dor_002. Proximity is not identity: check species and name before treating it as the same tree.",
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "plataan heerlen",
@@ -123,7 +127,9 @@
    "nearest_ours_km": 0.01,
    "nearest_ours": "hee_006 The Plane of Terworm (Heerlen)",
    "status": "possibly_mapped",
-   "reason": "Within 10 m of hee_006. Proximity is not identity: check species and name before treating it as the same tree."
+   "reason": "Within 10 m of hee_006. Proximity is not identity: check species and name before treating it as the same tree.",
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "vleugelnoot rijksmuseum",
@@ -153,7 +159,9 @@
    "nearest_ours_km": 0.01,
    "nearest_ours": "ams_021 The Oudemanhuispoort Elm (Amsterdam)",
    "status": "possibly_mapped",
-   "reason": "Within 10 m of ams_021. Proximity is not identity: check species and name before treating it as the same tree."
+   "reason": "Within 10 m of ams_021. Proximity is not identity: check species and name before treating it as the same tree.",
+   "species": "Elm (Ulmus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "honingboom maastricht",
@@ -168,7 +176,9 @@
    "nearest_ours_km": 0.01,
    "nearest_ours": "maa_011 The Pagoda Tree of Harrie van Haaren (Maastricht)",
    "status": "possibly_mapped",
-   "reason": "Within 10 m of maa_011. Proximity is not identity: check species and name before treating it as the same tree."
+   "reason": "Within 10 m of maa_011. Proximity is not identity: check species and name before treating it as the same tree.",
+   "species": "Pagoda Tree (Styphnolobium sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "postzegelboom noordeinde",
@@ -198,7 +208,9 @@
    "nearest_ours_km": 0.01,
    "nearest_ours": "lei_006 The Groenesteeg Beech (Leiden)",
    "status": "possibly_mapped",
-   "reason": "Within 10 m of lei_006. Proximity is not identity: check species and name before treating it as the same tree."
+   "reason": "Within 10 m of lei_006. Proximity is not identity: check species and name before treating it as the same tree.",
+   "species": "Beech (Fagus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "de poortwachters gulden bodem",
@@ -258,7 +270,9 @@
    "nearest_ours_km": 0.02,
    "nearest_ours": "utr_001 The Uithof Linden (Utrecht)",
    "status": "possibly_mapped",
-   "reason": "Within 20 m of utr_001. Proximity is not identity: check species and name before treating it as the same tree."
+   "reason": "Within 20 m of utr_001. Proximity is not identity: check species and name before treating it as the same tree.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "duizendjarige linde heede",
@@ -273,7 +287,9 @@
    "nearest_ours_km": 0.02,
    "nearest_ours": "hed_001 The Riesenlinde zu Heede (Giant Lime of Heede) (Heede)",
    "status": "possibly_mapped",
-   "reason": "Within 20 m of hed_001. Proximity is not identity: check species and name before treating it as the same tree."
+   "reason": "Within 20 m of hed_001. Proximity is not identity: check species and name before treating it as the same tree.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "oudste goudenregen leiden",
@@ -303,7 +319,9 @@
    "nearest_ours_km": 0.07,
    "nearest_ours": "utr_002 The Oude Hortus Ginkgo (Utrecht)",
    "status": "possibly_mapped",
-   "reason": "Within 70 m of utr_002. Proximity is not identity: check species and name before treating it as the same tree."
+   "reason": "Within 70 m of utr_002. Proximity is not identity: check species and name before treating it as the same tree.",
+   "species": "Ginkgo (Ginkgo sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "ruwe iep amelisweerd",
@@ -403,7 +421,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 0.44,
    "nearest_ours": "apd_005 The Copper Beech by the Pond (Apeldoorn)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Alder (Alnus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "pluimiep leeuwarden",
@@ -445,7 +465,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 0.61,
    "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Maple (Acer sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "linde op de heuvel",
@@ -474,7 +496,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 0.72,
    "nearest_ours": "hag_029 The Copper Beech at the Voorburg Cemetery Gate (The Hague)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Elm (Ulmus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "tulpenboom jagtlust",
@@ -503,7 +527,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 1.17,
    "nearest_ours": "bre_003 The Caucasian Wingnut of Valkenberg (Breda)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Sweet Chestnut (Castanea sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "sierkers amsterdam",
@@ -531,7 +557,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 1.96,
    "nearest_ours": "brn_005 The American Oak of the Pekingtuin (Baarn)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Catalpa (Catalpa sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "de monnikenboom van chartroise",
@@ -604,7 +632,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 3.43,
    "nearest_ours": "maa_001 The Sweet Chestnut of Molenweg (Maastricht)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Tulip Tree (Liriodendron sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "lobbendijkse knotes",
@@ -632,7 +662,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 3.98,
    "nearest_ours": "lee_003 The Beech at the Pier Pander Temple (Leeuwarden)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Horse Chestnut (Aesculus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "trompetboom wilp",
@@ -646,7 +678,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 4.14,
    "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Catalpa (Catalpa sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "dorpslinde nuenen",
@@ -660,7 +694,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 4.18,
    "nearest_ours": "ein_002 De Gevlekte Zuiderling (Eindhoven)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "paardenkastanje zusterplein",
@@ -703,7 +739,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 5.13,
    "nearest_ours": "dbo_004 The Poplar of Zuiderpark (Den Bosch)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "philemon en baucis",
@@ -789,7 +827,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 6.9,
    "nearest_ours": "arn_003 The Huissensedijk Plane (Arnhem)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Black Locust (Robinia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "gebodenlinde hilvarenbeek",
@@ -831,7 +871,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 7.65,
    "nearest_ours": "ede_004 The Oak in the Hoekelum Meadow (Ede)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "heilige eik den hout",
@@ -845,7 +887,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 7.72,
    "nearest_ours": "bre_003 The Caucasian Wingnut of Valkenberg (Breda)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "knoteiken koningstafel",
@@ -873,7 +917,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 8.85,
    "nearest_ours": "nij_011 The Yew of the Bartholomeuskerkje (Nijmegen)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "dikke boom oele",
@@ -917,7 +963,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 10.3,
    "nearest_ours": "arn_002 The Dalweg Oak (Arnhem)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Yew (Taxus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "kasteellinden nijenrode",
@@ -1001,7 +1049,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 12.13,
    "nearest_ours": "ame_005 The Weeping Silver Lime of Park Schothorst (Amersfoort)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "hemelboom zutphen",
@@ -1029,7 +1079,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 13.32,
    "nearest_ours": "emm_007 The Oak of Erica (Emmen)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Maple (Acer sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "zomereik beilen",
@@ -1071,7 +1123,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 14.83,
    "nearest_ours": "ede_007 The Oak on the Dorpstraat (Ede)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "linde aken",
@@ -1085,7 +1139,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 15.01,
    "nearest_ours": "hee_001 The Oak of Imstenrade (Heerlen)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "bruine beuk doesburg",
@@ -1129,7 +1185,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 16.62,
    "nearest_ours": "lon_006 The Mulberry of Charlton House (London)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Hornbeam (Carpinus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "zwarte moerbei wijk bij duurstede",
@@ -1143,7 +1201,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 16.81,
    "nearest_ours": "utr_001 The Uithof Linden (Utrecht)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Mulberry (Morus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "zomerlinde wedde",
@@ -1199,7 +1259,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 19.11,
    "nearest_ours": "hed_001 The Riesenlinde zu Heede (Giant Lime of Heede) (Heede)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "hollandse iep dokkum",
@@ -1242,7 +1304,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 19.9,
    "nearest_ours": "lux_002 The Ginkgo of Place Dargent (Luxembourg City)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "beuk de wijk",
@@ -1299,7 +1363,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 21.48,
    "nearest_ours": "nij_003 The Beech Circle of Sterrenbos (Nijmegen)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "lindelaan fogelsanghstate",
@@ -1355,7 +1421,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 24.44,
    "nearest_ours": "ame_005 The Weeping Silver Lime of Park Schothorst (Amersfoort)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Ginkgo (Ginkgo sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "zwarte populier heiligerlee",
@@ -1369,7 +1437,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 26.09,
    "nearest_ours": "gro_001 The Linden of De Rollen (Groningen)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Poplar (Populus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "kroezeboom ruurlo",
@@ -1440,7 +1510,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 29.2,
    "nearest_ours": "dev_005 The Copper Beech at the Bandstand (Deventer)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Holly (Ilex sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "oosterse plataan zierikzee",
@@ -1454,7 +1526,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 38.07,
    "nearest_ours": "roo_010 The Dutch Lime of Emile van Loonpark (Roosendaal)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Plane (Platanus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "iep schiermonnikoog",
@@ -1468,7 +1542,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 38.53,
    "nearest_ours": "gro_004 The Duck's Foot Tree of Noorderplantsoen (Groningen)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Elm (Ulmus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "bruine beuk goes",
@@ -1482,7 +1558,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 39.13,
    "nearest_ours": "roo_010 The Dutch Lime of Emile van Loonpark (Roosendaal)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Beech (Fagus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "treurbeuk heinkenszand",
@@ -1510,7 +1588,9 @@
    "alive_per_source": "Ja",
    "nearest_ours_km": 44.64,
    "nearest_ours": "bge_003 Den Olifant (Bruges)",
-   "status": "lead"
+   "status": "lead",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ]
 }

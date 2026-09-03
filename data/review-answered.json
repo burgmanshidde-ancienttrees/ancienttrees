@@ -36,6 +36,10 @@
     "2026-09-02": {
       "note": "Fixed: reworded the Palma ES story to avoid the literal 'con su nombre' match (commit 29d06f47) and narrowed check_no_name_promise() in scripts/qa.py to drop the ambiguous 'con su nombre' pattern entirely, keeping only the unambiguous 'con tu nombre' (commit eb028824). Deploy unblocked and rebuilding clean.",
       "at": "2026-09-02T11:25:10+00:00"
+    },
+    "2026-09-03": {
+      "note": "Fixed both: two country meta_descriptions (Denmark 167, UK 162 chars) that broke the smoke test build, and the Home.swift hero tagline goldInk/gold contrast regression, reverted to match HeroCover.swift",
+      "at": "2026-09-03T11:53:51+00:00"
     }
   }
 }
