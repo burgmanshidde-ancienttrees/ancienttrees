@@ -238,6 +238,30 @@ jobs:
             git push
           fi
 
+      - name: Take down a photograph whose account is gone
+        # /terms and /privacy promise that deleting an account removes what was
+        # published with it. The database keeps that promise by cascade; a
+        # PUBLISHED photograph is the one thing outside it, a copy in
+        # data/cities and a file in site/public/photos that no cascade reaches.
+        # This sweep asks whether each contributing account still exists and
+        # takes the photograph off when it does not. It costs one request per
+        # contributing account and exits in a line while there are none, which
+        # is why it sits before the budget gate rather than inside the agent's
+        # window: a promise in the terms people accept at sign-in should not
+        # wait on there being minutes left to research a city.
+        continue-on-error: true
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          python3 scripts/photo_takedown.py
+          if ! git diff --quiet; then
+            git config user.name "claude[bot]"
+            git config user.email "41898282+claude[bot]@users.noreply.github.com"
+            git add -A data/cities data/photo-manifest.json site/public/photos
+            git commit -m "A reader deleted their account, so their photograph came off"
+            git push
+          fi
+
       # Is there any budget to spend before we spend any orienting? Added
       # 2026-09-01. The budget check already existed, and it ran in the wrong
       # place: only BETWEEN attempts, never before the first. So a knock
