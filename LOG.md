@@ -9,6 +9,42 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 - The map opens where you are, on the FIRST launch too
+
+Hidde, from the app: "op de eerste open toen ik mn locatie had gedeeld bleef
+ik op Amsterdam staan. Maar na re-open opende de app wel mooi op Leuven."
+
+Two faults in one report, and the second only became visible once the first
+was fixed.
+
+THE CAMERA. `origin` always has a value: a live fix, then the last one this
+phone had, then Dam square. A cold first launch has neither of the first
+two, so the map takes its opening shot at Amsterdam, and settle() aims ONCE.
+The real fix lands a second later, `focus` changes, updateUIView runs, and
+the guard sends it home. The second launch is right because
+LocationProvider.remembered now holds Leuven, so the single shot is taken at
+the right place. The map now knows whether what it is aimed at came from the
+phone or from a guess, and that flip buys exactly one more shot: not on a
+fix that merely moved, so walking never drags the camera about, and never
+after a finger has touched the map or while a tree is open. The decision is
+a pure function with tests, because a simulator cannot hand a map a late fix
+and does not have to: what went wrong is a boolean. That is the same shape
+as the camera-permission fix, and it is becoming the pattern here.
+
+THE LIST. With the camera moving, the sheet under it went on saying "24
+trees you can see" over Leuven, with Amsterdam's cards. MapLibre calls
+regionDidChange synchronously from setCenter, and settle() calls setCenter
+from updateUIView, so reporting the region back was a write to SwiftUI state
+in the middle of a SwiftUI update. The log said so in as many words and the
+value was dropped. Every camera move a FINGER makes happens outside an
+update, which is why this had never shown. One runloop hop.
+
+Verified the way the report was made rather than by reading the diff:
+installed fresh with no remembered fix, launched, photographed Amsterdam
+with its list of 24, delivered a Leuven fix, photographed again. Camera
+Leuven, list 3, matching what a relaunch shows, and no state warning left in
+the log. The sweep found nothing new on 120 screens across four phones.
+
 ## 2026-09-03 - Dark mode, which the app shipped without anybody ever looking at it
 
 Hidde, on the day the app went out: two of the first people to open it were in
