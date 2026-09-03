@@ -1,57 +1,6 @@
 {
   "country": "Germany",
-  "note": "Researched 2026-09-03 as part of a _famous-germany.json batch verification pass. All three trees verify against the two-source bar and have confirmed tree-level coordinates, but only three candidates exist and none individually clears the 2026-08-31 single-tree-destination exception (a good regional monumental tree, not a would-travel-for-this-one destination). Below the 4-tree floor, so held here rather than published. A future pass should look for a fourth Giessen tree (city itself, Schiffenberg monastery grounds, botanical garden) to complete the cluster; Adam und Eva sits 5.4km from the Roedgen pair (Alte Eiche + Schillerlinde, which are ~410m apart and walkable together), so a real Giessen page would be two stops rather than one.",
-  "leads": [
-    {
-      "name": "Adam und Eva (Wieseck)",
-      "species": "Sessile Oak (Quercus petraea)",
-      "species_basis": "Two independent sources (Giessen's own Naturdenkmal register via German Wikipedia; monumentale-eichen.de / baumkunde.de) both call these Trauben-Eiche (sessile oak), not Quercus robur despite the genus-only lead entry saying Oak (Quercus sp.)",
-      "location": {"address": "Badenburger Wald, Wieseck, Giessen", "latitude": 50.630715, "longitude": 8.703859, "neighbourhood": "Wieseck"},
-      "age_estimate": "roughly 300-330 years (sources disagree)",
-      "age_min": 300, "age_max": 330,
-      "girth_cm": "conflicting: official Giessen Naturdenkmal register (via de.wikipedia Liste der Naturdenkmaeler in Giessen) gives approx. 420cm and 520cm for the two trees, heights approx. 25m and 30m; monumentale-eichen.de and baumkunde.de (2020 measurement) give 442cm and 595cm, height 33m for the pair. Both describe a monumental, unbranched trunk over 10m on the larger tree.",
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Gie%C3%9Fen",
-        "https://www.monumentale-eichen.de/hessen/3-kategorie/wieseck",
-        "https://www.baumkunde.de/baumregister/1737-adam_und_eva_bei_wieseck/"
-      ],
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "verify_notes": "Twin sessile oaks in the Badenburger Wald, officially designated Naturdenkmal and (per baumkunde) also a Baumveteran-registered pair; documented in Hans Joachim Froehlich's 1990 book on historic trees. Genuinely old and one has a striking >10m unbranched monumental trunk, but this is a solid regional monumental-tree pair rather than a singular famous destination, so it does not clear the single-tree exception on its own. Access: public forest, Badenburger Wald, no restriction found. GOOD CANDIDATE if a 4th Giessen tree turns up.",
-      "access": "Free, public forest (Badenburger Wald); no access restriction found."
-    },
-    {
-      "name": "Alte Eiche (Rödgen)",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "location": {"address": "Corner of Geiselweg/Seeweg, Rödgen, Giessen, on a former forest picnic clearing", "latitude": 50.590839, "longitude": 8.750423, "neighbourhood": "Rödgen"},
-      "age_estimate": "roughly 275-350 years (sources disagree)",
-      "age_min": 275, "age_max": 350,
-      "girth_cm": 610,
-      "height_m": 15,
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Gie%C3%9Fen",
-        "https://www.monumentale-eichen.de/hessen/3-kategorie/r%C3%B6dgen/"
-      ],
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "verify_notes": "Under state protection since 3 September 1906 (one of the oldest protection dates found in this batch), per monumentale-eichen.de. Official Giessen Naturdenkmal register gives ca. 275-300 years, 16m tall, 610cm girth; monumentale-eichen.de gives ca. 350 years, 15m, 629cm girth (measured 2018). Trunk shows real decline: a triangular opening sealed with grating on one side, bark missing on the other, a horizontal branch propped on two steel tubes. Still described as vital overall. Roughly 410m from the Schillerlinde, walkable together. GOOD CANDIDATE if a 4th Giessen tree turns up.",
-      "access": "Free, public clearing off Seeweg; no restriction found."
-    },
-    {
-      "name": "Schillerlinde (Rödgen)",
-      "species": "Winter Lime (Tilia cordata)",
-      "location": {"address": "Geiselstrauchkopf, edge of Rödgen, Giessen, near the sports field", "latitude": 50.594506, "longitude": 8.749328, "neighbourhood": "Rödgen"},
-      "age_estimate": "167 years (documented planting date)",
-      "age_min": 167, "age_max": 167,
-      "girth_cm": 197,
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Gie%C3%9Fen",
-        "http://www.giessener-zeitung.de/giessen/beitrag/43597/grenzgang-in-roedgen-die-schillerlinde-wurde-anlaesslich-des-100-geburtstags-von-friedrich-von-schiller-gepflanzt"
-      ],
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed",
-      "verify_notes": "Planted 11 November 1859 for the 100th birthday of Friedrich von Schiller, one of hundreds planted across 400-500 German towns in that Schiller year; officially a Naturdenkmal. This is the rare case in the batch with a genuinely documented planting date, so age is exact rather than estimated (167 years as of 2026). Modest size for its age (197cm girth), a memorial tree rather than a giant. A local SPD-Roedgen page (spd-roedgen.de) reportedly connects it to a historical protest against local nobility during the village's Grenzgang tradition, but that page 403'd on this pass and was not independently confirmed; worth another attempt. GOOD CANDIDATE if a 4th Giessen tree turns up; only ~410m from Alte Eiche.",
-      "access": "Free, on municipal ground near the sports field; no restriction found."
-    }
-  ]
+  "note": "Researched 2026-09-03 as part of a _famous-germany.json batch verification pass. Held below the 4-tree floor with only 3 candidates (Adam und Eva, Alte Eiche Rödgen, Schillerlinde Rödgen). A same-day follow-up pass verified a 4th candidate, Lindengruppe an der Lindbachquelle in Lützellinden (another Gießen district), which clears the floor. All 4 trees delivered to data/research/giessen-verified.json (gie_001-gie_004), ready for a write pass. This leads file is kept for the record; nothing remains here to research.",
+  "leads": [],
+  "blocked": []
 }
