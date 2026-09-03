@@ -1847,6 +1847,131 @@ def fetch_machine(today):
     return line
 
 
+def _posthog(query, key, project=None):
+    """One HogQL query against our own PostHog project on their EU cloud.
+
+    No SDK and no client library, for the same reason Measure.swift ships
+    none: this is one HTTP POST of a JSON object, and a dependency that only
+    ever formats a URL is a dependency that can break the digest.
+    """
+    base = "https://eu.posthog.com"
+    if project is None:
+        project = os.environ.get("POSTHOG_PROJECT_ID")
+    if not project:
+        # Discovered rather than configured, so nobody has to paste a second
+        # secret. Either path returns the same shape; the @current one is what
+        # newer scoped keys are allowed to read.
+        listing = None
+        for path in ("/api/projects/", "/api/organizations/@current/projects/"):
+            try:
+                listing = api(base + path, token=key)
+                break
+            except Exception:
+                continue
+        if not listing or not listing.get("results"):
+            raise RuntimeError("no PostHog project readable with this key")
+        project = listing["results"][0]["id"]
+    out = api(
+        "%s/api/projects/%s/query/" % (base, project),
+        {"query": {"kind": "HogQLQuery", "query": query}},
+        token=key,
+    )
+    return out.get("results") or []
+
+
+def app_section(today):
+    """What people did in the APP, and it is its own table on Hidde's ruling
+    (2026-08-30, "eigen tabel").
+
+    It sits here beside the website's product numbers rather than down with
+    the machine, because site and app are different people at different
+    moments: the beacon says what somebody did on a page, this says what
+    somebody did while standing outside holding the thing.
+
+    Written 2026-09-03. The secret had been in place since 2026-08-30 and
+    nothing read it, so the table Hidde asked for had never once been printed
+    while Measure.swift was sending its seven events into the dark.
+
+    The honesty rule the whole file runs on applies harder here than anywhere:
+    for a long while this is one phone, and a single tap is never a trend.
+    """
+    key = os.environ.get("POSTHOG_READ_KEY")
+    if not key:
+        return "What people did in the app: PostHog key absent, cannot say."
+
+    yday = (today - datetime.timedelta(days=1)).isoformat()
+    out = ["**What people did in the app**"]
+
+    # Named explicitly, so an event that has NEVER fired still gets a line.
+    # Same reasoning as the website's list above: a missing row is the loudest
+    # signal here and an empty result hides it.
+    known = ["app_open", "tab", "tree_opened", "directions",
+             "tree_saved", "tree_visited", "sighting_recorded"]
+
+    rows = _posthog(
+        """
+        SELECT event,
+               countIf(toDate(timestamp) = toDate('%s')) AS yday,
+               countIf(timestamp >= now() - INTERVAL 14 DAY) AS d14,
+               count() AS ever,
+               max(timestamp) AS last
+        FROM events
+        GROUP BY event
+        ORDER BY ever DESC
+        """ % yday, key)
+
+    seen = {r[0]: r for r in rows}
+    order = [e for e in known] + [e for e in seen if e not in known]
+    out.append("")
+    out.append("| What | Yesterday | 14 days | Ever | Last |")
+    out.append("|---|---:|---:|---:|---|")
+    totals = [0, 0, 0]
+    for name in order:
+        r = seen.get(name)
+        if not r:
+            out.append("| %s | 0 | 0 | 0 | never |" % name)
+            continue
+        totals = [totals[i] + int(r[i + 1]) for i in range(3)]
+        out.append("| %s | %d | %d | %d | %s |" % (
+            name, int(r[1]), int(r[2]), int(r[3]),
+            _ago(_days_since(str(r[4]), today))))
+    out.append("| **all** | **%d** | **%d** | **%d** | |" % tuple(totals))
+
+    # How many phones those taps came from. The number that decides whether
+    # anything above may be read as behaviour at all.
+    phones = _posthog(
+        """
+        SELECT count(DISTINCT distinct_id),
+               countIf(timestamp >= now() - INTERVAL 14 DAY)
+        FROM events
+        """, key)
+    n_phones = int(phones[0][0]) if phones else 0
+    out.append("- Measuring since 2026-08-30, when Measure.swift went in. "
+               "Unlinked to any account by design: an install id, the app "
+               "version and the OS, nothing else.")
+    out.append("- %d phone%s have ever sent anything." % (
+        n_phones, "" if n_phones == 1 else "s"))
+    if n_phones <= 2:
+        out.append("- At one or two installs this is us, not an audience. "
+                   "Read nothing into a single tap.")
+
+    # Which tabs people move to. The one breakdown worth its own query,
+    # because it says whether the map is the product in practice as well as
+    # on paper.
+    tabs = _posthog(
+        """
+        SELECT properties.tab, count()
+        FROM events
+        WHERE event = 'tab' AND timestamp >= now() - INTERVAL 14 DAY
+        GROUP BY 1 ORDER BY 2 DESC
+        """, key)
+    if tabs:
+        out.append("- Tabs opened (14d): " + "; ".join(
+            "%s %d" % (t[0] or "?", int(t[1])) for t in tabs))
+
+    return "\n".join(out)
+
+
 def build_entry(days, today, gsc_text):
     yday = today - datetime.timedelta(days=1)
     by_date = {d["dimensions"]["date"]: d for d in days}
@@ -2001,6 +2126,7 @@ def main():
     block(product_section, today)
     block(feedback_section, today)
     block(funnel_section, today, token)
+    block(app_section, today)
 
     gsc_latest = None
     gsc_data = None
