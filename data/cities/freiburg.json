@@ -1,159 +1,234 @@
 {
-  "city": "Freiburg",
-  "country": "Germany",
-  "status": "needs_curation",
-  "intro": "Germany's tallest tree grows in Freiburg's city forest: Waldtraut vom Mühlwald, a Douglas fir planted in 1913 and measured at 67.85 metres in 2024, a proper forest walk from the tram network. Closer to the centre, a weeping beech that survived a fight with the state government, a protected ginkgo on a former car park, and an oak named for a nineteenth-century forester stand on their own street corners. All four are designated natural monuments, free to visit, no ticket needed.",
-  "meta_description": "Freiburg's ancient trees: Germany's tallest tree, a Douglas fir at 67.85m, plus a saved weeping beech, a car-park ginkgo and a forester's oak.",
-  "question_meta": "The tallest tree in Freiburg, and Germany, is Waldtraut vom Mühlwald, a Douglas fir measured at 67.85m in 2024. Where it stands and how to reach it.",
-  "question_answer": "Freiburg's most notable tree by measurement is Waldtraut vom Mühlwald, a coastal Douglas fir in the Günterstäler Stadtwald, Germany's tallest tree at 67.85 metres as of an April 2024 survey. It is also the one tree here with a documented age, planted in 1913, about 116 years old. The other three trees on this page carry no recorded age at all, so none can honestly be called older or younger than it.",
-  "question_context": "Waldtraut's height is well documented (67.85 metres in April 2024, up from 67.10 in an earlier measurement) and its age is a written planting date rather than a guess: a three-year sapling put in during a 1913 forestry trial that had been testing North American conifers in the Freiburg city forest since 1896. That makes it, at around 116 years, almost certainly the youngest of the four trees on this page by trunk, not the oldest. The Sedanquartier Weeping Beech, the Bernhardstraße Ginkgo and the Alexandereiche all carry no age or girth in any source found, and this page says so plainly rather than guessing. The Alexandereiche has the oldest designation date, 1974, which speaks to how long it has been protected rather than how old the tree itself is. Reaching Waldtraut means a signed 2.5 km forest walk from the Kyburg tram stop in Günterstal, about 150 metres of climbing, an hour or more each way with no viewing platform, just wooden information boards at the foot of the tree. The other three stand on ordinary Freiburg streets and squares, reachable on foot or by tram in minutes.",
-  "hero_tree_id": "frb_001",
-  "oldest_tree_id": "frb_001",
-  "faq": [
-    {
-      "q": "What is the tallest tree in Freiburg?",
-      "a": "Waldtraut vom Mühlwald, a Douglas fir in the Günterstäler Stadtwald measured at 67.85 metres in 2024, which also makes it Germany's tallest tree."
-    },
-    {
-      "q": "Is Waldtraut the oldest tree here too?",
-      "a": "No, and it is the only one of the four with a documented age: about 116 years, from a written 1913 planting record. The other three carry no recorded age at all."
-    },
-    {
-      "q": "Are these trees free to visit?",
-      "a": "Yes, all four. Waldtraut needs a proper forest walk from the tram network; the other three are ordinary street and square trees, reachable in minutes."
-    },
-    {
-      "q": "How do I get to Waldtraut vom Mühlwald?",
-      "a": "Take bus line 21 to the Kyburg stop in Günterstal, then follow the signed 'Höchster Baum Deutschlands' trail about 2.5 km into the forest, roughly 150 metres of climbing. Plan an hour or more each way."
-    }
-  ],
-  "trees": [
-    {
-      "id": "frb_001",
-      "name": "Waldtraut vom Mühlwald",
-      "species": "Douglas Fir (Pseudotsuga menziesii)",
-      "age_estimate": "about 116 years",
-      "age_min": 115,
-      "age_max": 117,
-      "girth_cm": 338,
-      "height_m": 67.85,
-      "location": {
-        "address": "Mühlwald, Günterstäler Stadtwald (city forest), Freiburg im Breisgau",
-        "latitude": 47.953365,
-        "longitude": 7.861127,
-        "neighbourhood": "Günterstal / Mühlwald"
-      },
-      "story": "The tallest tree in Germany is not a German species and it is only 116 years old. Waldtraut vom Mühlwald is a coastal Douglas fir, planted in 1913 as a three-year-old sapling in a forestry trial that had been putting North American conifers into the Freiburg city forest since 1896. The age comes from a written planting date rather than a guess. The height, measured in April 2024, is 67.85 metres.\n\nIt is still going up. Five years earlier it was measured at 67.10 metres, and the two sources that track it differ slightly on the current rate, somewhere between 15 and 30 centimetres a year. Both call it vigorous. The trunk is 3.38 metres round at chest height, which for that height is slender. Freiburg's own foresters gave it the name.\n\nThe experiment it belongs to is still standing around it: several more Douglas firs of the same 1913 planting, none of which won the title. A century-old test of whether an American conifer would take in the hills above Freiburg, with the answer visible from a long way off.\n\nBe realistic about getting there. It is a signed forest walk of about 2.5 kilometres from the Kyburg stop in Günterstal, roughly 150 metres of climb, an hour or more each way. There is no viewing platform. There are wooden information boards at the foot of the tree, and a lot of looking straight up.",
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Waldtraut_vom_M%C3%BChlwald",
-        "https://www.freiburg.de/pb/1658162.html"
-      ],
-      "access": "Free, in the public city forest (Stadtwald). No ticket, no gate; reached by a signed forest trail.",
-      "transport": "Line 21 (bus) to the 'Kyburg' stop in Günterstal, then a signed 2.5 km forest hike (about 150 m of ascent) along the Mühlwaldweg following 'Höchster Baum Deutschlands' signs; or a 4.5 km hike from Waldhaus Freiburg at Wonnhalde. Not a quick stop, a proper forest walk of an hour or more each way from the tram network.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "frb_002",
-      "name": "The Sedanquartier Weeping Beech",
-      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "location": {
-        "address": "Corner of Wilhelmstraße and Moltkestraße, Sedanquartier, Freiburg im Breisgau",
-        "latitude": 47.993437,
-        "longitude": 7.842848,
-        "neighbourhood": "Sedanquartier"
-      },
-      "story": "The State of Baden-Württemberg owned the plot, wanted to build on it, and lost to the tree. This weeping beech stands on the corner of Wilhelmstraße and Moltkestraße on state-owned land in the Sedanquartier, and in 2020 a member of the state parliament, Gabi Rolland, filed a formal question pressing for its protection. The government's answer acknowledged the tree's ecological value and noted, in the same breath, that the plot's development value was considerable too.\n\nThe tree won. Freiburg designated it a natural monument on 29 October 2021, one of thirty announced together, which took the city's total to 130. A week later the neighbourhood's residents' group held a small ceremony at the trunk with the environment mayor present. Very few trees anywhere get a party.\n\nThe press covering the row never called it anything more precise than a splendid deciduous tree and a giant, which is the useful part of the record and also its limit. Nobody has measured its girth or dated it, and no source names the cultivar; it is almost certainly the standard weeping form of the European beech, but that is a reasonable assumption rather than a documented one. If you can tell us how thick it is, we will put the number on this page.\n\nIt shares its corner with a public sculpture, the Kaichina Doll by Peter Zimmermann, so the walk gives you two things to stand in front of.",
-      "verified_sources": [
-        "https://www.freiburg.de/pb/1829585.html",
-        "https://www.badische-zeitung.de/bauplatz-contra-baumriese-stadt-und-land-streiten-um-haengebuche--181056950.html",
-        "https://www.spd-kv-freiburg.de/meldungen/haengebuche-im-sedanquartier-rolland-unterschutzstellung-dringend-geboten/"
-      ],
-      "access": "Free, on a publicly reachable plot at a street corner. Stands on land owned by the State of Baden-Württemberg (Landesgrund) rather than a private owner, beside the public sculpture 'Kaichina Doll' by Peter Zimmermann; a city celebration for the designation was held right at the tree in November 2021.",
-      "transport": "In the Sedanquartier, roughly 1 km south of the Altstadt centre; reachable on foot or by tram/bus to a Wiehre-area stop.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "frb_003",
-      "name": "The Bernhardstraße Ginkgo",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "location": {
-        "address": "Bernhardstraße, near the corner with Habsburgerstraße, Freiburg im Breisgau",
-        "latitude": 47.999208,
-        "longitude": 7.854247,
-        "neighbourhood": "Bernhardstraße / Habsburgerstraße"
-      },
-      "story": "The car park is gone and the ginkgo is protected. This gnarled, fan-crowned tree stands on a former parking lot on Bernhardstraße towards Habsburgerstraße, in a perfectly ordinary stretch of shops and flats, and Freiburg's council made it a natural monument on 28 January 2011, in a batch of ten. The local report on that decision called it markant and knorrig, striking and gnarled, and singled out the golden autumn foliage as something the street watches for.\n\nGinkgo biloba is the last survivor of an order of trees that was widespread when dinosaurs were, and the fossil leaves are close enough to the living ones that you can match them by eye. It is also one of the toughest trees a European city can plant, largely indifferent to exhaust fumes, road salt and compacted ground, which is why so many end up on pavements and, evidently, car parks.\n\nNobody has recorded when this one was planted or how thick it is. That is a genuine gap rather than a hedge, and it is the sort of thing a person with a tape measure could close in a minute. If that is you, tell us.\n\nOne warning for cross-checkers: Freiburg has at least three registered ginkgos, so go by the street rather than the species. This is the Bernhardstraße one.",
-      "verified_sources": [
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Freiburg_im_Breisgau",
-        "https://www.regiotrends.de/de/regiomix/index.news.123642.html"
-      ],
-      "access": "Free, a street tree on a former parking lot in an ordinary residential and commercial street; freely visible and reachable, no gate or ticket.",
-      "transport": "Central Freiburg, on Bernhardstraße near Habsburgerstraße, easy walking distance of the Altstadt.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [11],
-        "kind": "autumn colour",
-        "label": "November, when the leaves turn gold and then drop almost all at once"
-      }
-    },
-    {
-      "id": "frb_004",
-      "name": "The Alexandereiche",
-      "species": "Oak (Quercus sp.)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "location": {
-        "address": "Corner of Einsteinstraße and Hermann-Mitsch-Straße, Freiburg im Breisgau",
-        "latitude": 48.028492,
-        "longitude": 7.83535,
-        "neighbourhood": "Zähringen / Landwasser area, northern Freiburg"
-      },
-      "story": "The Alexandereiche is not named after Alexander von Humboldt, which is the first thing almost everyone assumes. Freiburg's own environment office says the oak carries the name of Alexander Wasmer, the city's chief forester, who drew up the first management plan for the Freiburg city forest in 1842. A forester's paperwork is a thin sort of immortality, and a street-corner oak is more than most of them get.\n\nNote what that does not tell us. The city names the tree for what Wasmer did in 1842; no source anywhere says the tree was planted then, or gives it an age at all, and we are not going to turn a commemoration into a birth date. Nobody has published a girth for it either. Even the species is only recorded as oak: the register does not say whether it is a pedunculate or a sessile oak, and the two are easy to tell apart on the ground, since one hangs its acorns on stalks and the other sits them tight against the twig. If you go and look, tell us which it is, and we will correct the page.\n\nIt has been a protected natural monument since 2 May 1974, which puts it among the older designations on Freiburg's list. It stands on the corner of Einsteinstraße and Hermann-Mitsch-Straße in northern Freiburg, a separate outing from the old town rather than a stop on one.",
-      "verified_sources": [
-        "https://www.freiburg.de/pb/site/Freiburg/get/documents_E-1847784871/freiburg/daten/news/amtsblatt/pdf/SS711_Naturdenkmale.pdf",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Freiburg_im_Breisgau"
-      ],
-      "access": "Free, an ordinary street-corner tree, not on any private or institutional grounds mentioned in either source.",
-      "transport": "Northern Freiburg, roughly 3.9 km from the Altstadt centre; a separate outing rather than part of a single Altstadt walk, reachable by tram/bus.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    }
-  ]
+ "city": "Freiburg",
+ "country": "Germany",
+ "status": "needs_curation",
+ "intro": "Germany's tallest tree grows in Freiburg's city forest: Waldtraut vom Mühlwald, a Douglas fir planted in 1913 and measured at 67.85 metres in 2024, a proper forest walk from the tram network. Closer to the centre, a weeping beech that survived a fight with the state government, a protected ginkgo on a former car park, and an oak named for a nineteenth-century forester stand on their own street corners. Every one of these is a designated natural monument, free to visit, no ticket needed.",
+ "meta_description": "Freiburg's ancient trees: Germany's tallest tree, a Douglas fir at 67.85m, plus a saved weeping beech, a car-park ginkgo and a forester's oak.",
+ "question_meta": "The tallest tree in Freiburg, and Germany, is Waldtraut vom Mühlwald, a Douglas fir measured at 67.85m in 2024. Where it stands and how to reach it.",
+ "question_answer": "Freiburg's most notable tree by measurement is Waldtraut vom Mühlwald, a coastal Douglas fir in the Günterstäler Stadtwald, Germany's tallest tree at 67.85 metres as of an April 2024 survey. It is also the one tree here with a documented age, planted in 1913, about 116 years old. The other three trees on this page carry no recorded age at all, so none can honestly be called older or younger than it.",
+ "question_context": "Waldtraut's height is well documented (67.85 metres in April 2024, up from 67.10 in an earlier measurement) and its age is a written planting date rather than a guess: a three-year sapling put in during a 1913 forestry trial that had been testing North American conifers in the Freiburg city forest since 1896. That makes it, at around 116 years, almost certainly one of the youngest trees on this page by trunk, not the oldest. The Sedanquartier Weeping Beech, the Bernhardstraße Ginkgo and the Alexandereiche all carry no age or girth in any source found, and this page says so plainly rather than guessing. The Alexandereiche has the oldest designation date, 1974, which speaks to how long it has been protected rather than how old the tree itself is. Reaching Waldtraut means a signed 2.5 km forest walk from the Kyburg tram stop in Günterstal, about 150 metres of climbing, an hour or more each way with no viewing platform, just wooden information boards at the foot of the tree. The other three stand on ordinary Freiburg streets and squares, reachable on foot or by tram in minutes.",
+ "hero_tree_id": "frb_001",
+ "oldest_tree_id": "frb_001",
+ "faq": [
+  {
+   "q": "What is the tallest tree in Freiburg?",
+   "a": "Waldtraut vom Mühlwald, a Douglas fir in the Günterstäler Stadtwald measured at 67.85 metres in 2024, which also makes it Germany's tallest tree."
+  },
+  {
+   "q": "Is Waldtraut the oldest tree here too?",
+   "a": "No, and it is the only one of the four with a documented age: about 116 years, from a written 1913 planting record. The other three carry no recorded age at all."
+  },
+  {
+   "q": "Are these trees free to visit?",
+   "a": "Yes, every tree on this page is free to visit. Waldtraut needs a proper forest walk from the tram network; the rest are ordinary street and square trees, reachable in minutes."
+  },
+  {
+   "q": "How do I get to Waldtraut vom Mühlwald?",
+   "a": "Take bus line 21 to the Kyburg stop in Günterstal, then follow the signed 'Höchster Baum Deutschlands' trail about 2.5 km into the forest, roughly 150 metres of climbing. Plan an hour or more each way."
+  }
+ ],
+ "trees": [
+  {
+   "id": "frb_001",
+   "name": "Waldtraut vom Mühlwald",
+   "species": "Douglas Fir (Pseudotsuga menziesii)",
+   "age_estimate": "about 116 years",
+   "age_min": 115,
+   "age_max": 117,
+   "girth_cm": 338,
+   "height_m": 67.85,
+   "location": {
+    "address": "Mühlwald, Günterstäler Stadtwald (city forest), Freiburg im Breisgau",
+    "latitude": 47.953365,
+    "longitude": 7.861127,
+    "neighbourhood": "Günterstal / Mühlwald"
+   },
+   "story": "The tallest tree in Germany is not a German species and it is only 116 years old. Waldtraut vom Mühlwald is a coastal Douglas fir, planted in 1913 as a three-year-old sapling in a forestry trial that had been putting North American conifers into the Freiburg city forest since 1896. The age comes from a written planting date rather than a guess. The height, measured in April 2024, is 67.85 metres.\n\nIt is still going up. Five years earlier it was measured at 67.10 metres, and the two sources that track it differ slightly on the current rate, somewhere between 15 and 30 centimetres a year. Both call it vigorous. The trunk is 3.38 metres round at chest height, which for that height is slender. Freiburg's own foresters gave it the name.\n\nThe experiment it belongs to is still standing around it: several more Douglas firs of the same 1913 planting, none of which won the title. A century-old test of whether an American conifer would take in the hills above Freiburg, with the answer visible from a long way off.\n\nBe realistic about getting there. It is a signed forest walk of about 2.5 kilometres from the Kyburg stop in Günterstal, roughly 150 metres of climb, an hour or more each way. There is no viewing platform. There are wooden information boards at the foot of the tree, and a lot of looking straight up.",
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Waldtraut_vom_M%C3%BChlwald",
+    "https://www.freiburg.de/pb/1658162.html"
+   ],
+   "access": "Free, in the public city forest (Stadtwald). No ticket, no gate; reached by a signed forest trail.",
+   "transport": "Line 21 (bus) to the 'Kyburg' stop in Günterstal, then a signed 2.5 km forest hike (about 150 m of ascent) along the Mühlwaldweg following 'Höchster Baum Deutschlands' signs; or a 4.5 km hike from Waldhaus Freiburg at Wonnhalde. Not a quick stop, a proper forest walk of an hour or more each way from the tram network.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "frb_002",
+   "name": "The Sedanquartier Weeping Beech",
+   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Corner of Wilhelmstraße and Moltkestraße, Sedanquartier, Freiburg im Breisgau",
+    "latitude": 47.993437,
+    "longitude": 7.842848,
+    "neighbourhood": "Sedanquartier"
+   },
+   "story": "The State of Baden-Württemberg owned the plot, wanted to build on it, and lost to the tree. This weeping beech stands on the corner of Wilhelmstraße and Moltkestraße on state-owned land in the Sedanquartier, and in 2020 a member of the state parliament, Gabi Rolland, filed a formal question pressing for its protection. The government's answer acknowledged the tree's ecological value and noted, in the same breath, that the plot's development value was considerable too.\n\nThe tree won. Freiburg designated it a natural monument on 29 October 2021, one of thirty announced together, which took the city's total to 130. A week later the neighbourhood's residents' group held a small ceremony at the trunk with the environment mayor present. Very few trees anywhere get a party.\n\nThe press covering the row never called it anything more precise than a splendid deciduous tree and a giant, which is the useful part of the record and also its limit. Nobody has measured its girth or dated it, and no source names the cultivar; it is almost certainly the standard weeping form of the European beech, but that is a reasonable assumption rather than a documented one. If you can tell us how thick it is, we will put the number on this page.\n\nIt shares its corner with a public sculpture, the Kaichina Doll by Peter Zimmermann, so the walk gives you two things to stand in front of.",
+   "verified_sources": [
+    "https://www.freiburg.de/pb/1829585.html",
+    "https://www.badische-zeitung.de/bauplatz-contra-baumriese-stadt-und-land-streiten-um-haengebuche--181056950.html",
+    "https://www.spd-kv-freiburg.de/meldungen/haengebuche-im-sedanquartier-rolland-unterschutzstellung-dringend-geboten/"
+   ],
+   "access": "Free, on a publicly reachable plot at a street corner. Stands on land owned by the State of Baden-Württemberg (Landesgrund) rather than a private owner, beside the public sculpture 'Kaichina Doll' by Peter Zimmermann; a city celebration for the designation was held right at the tree in November 2021.",
+   "transport": "In the Sedanquartier, roughly 1 km south of the Altstadt centre; reachable on foot or by tram/bus to a Wiehre-area stop.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "frb_003",
+   "name": "The Bernhardstraße Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Bernhardstraße, near the corner with Habsburgerstraße, Freiburg im Breisgau",
+    "latitude": 47.999208,
+    "longitude": 7.854247,
+    "neighbourhood": "Bernhardstraße / Habsburgerstraße"
+   },
+   "story": "The car park is gone and the ginkgo is protected. This gnarled, fan-crowned tree stands on a former parking lot on Bernhardstraße towards Habsburgerstraße, in a perfectly ordinary stretch of shops and flats, and Freiburg's council made it a natural monument on 28 January 2011, in a batch of ten. The local report on that decision called it markant and knorrig, striking and gnarled, and singled out the golden autumn foliage as something the street watches for.\n\nGinkgo biloba is the last survivor of an order of trees that was widespread when dinosaurs were, and the fossil leaves are close enough to the living ones that you can match them by eye. It is also one of the toughest trees a European city can plant, largely indifferent to exhaust fumes, road salt and compacted ground, which is why so many end up on pavements and, evidently, car parks.\n\nNobody has recorded when this one was planted or how thick it is. That is a genuine gap rather than a hedge, and it is the sort of thing a person with a tape measure could close in a minute. If that is you, tell us.\n\nOne warning for cross-checkers: Freiburg has at least three registered ginkgos, so go by the street rather than the species. This is the Bernhardstraße one.",
+   "verified_sources": [
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Freiburg_im_Breisgau",
+    "https://www.regiotrends.de/de/regiomix/index.news.123642.html"
+   ],
+   "access": "Free, a street tree on a former parking lot in an ordinary residential and commercial street; freely visible and reachable, no gate or ticket.",
+   "transport": "Central Freiburg, on Bernhardstraße near Habsburgerstraße, easy walking distance of the Altstadt.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "kind": "autumn colour",
+    "label": "November, when the leaves turn gold and then drop almost all at once"
+   }
+  },
+  {
+   "id": "frb_004",
+   "name": "The Alexandereiche",
+   "species": "Oak (Quercus sp.)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Corner of Einsteinstraße and Hermann-Mitsch-Straße, Freiburg im Breisgau",
+    "latitude": 48.028492,
+    "longitude": 7.83535,
+    "neighbourhood": "Zähringen / Landwasser area, northern Freiburg"
+   },
+   "story": "The Alexandereiche is not named after Alexander von Humboldt, which is the first thing almost everyone assumes. Freiburg's own environment office says the oak carries the name of Alexander Wasmer, the city's chief forester, who drew up the first management plan for the Freiburg city forest in 1842. A forester's paperwork is a thin sort of immortality, and a street-corner oak is more than most of them get.\n\nNote what that does not tell us. The city names the tree for what Wasmer did in 1842; no source anywhere says the tree was planted then, or gives it an age at all, and we are not going to turn a commemoration into a birth date. Nobody has published a girth for it either. Even the species is only recorded as oak: the register does not say whether it is a pedunculate or a sessile oak, and the two are easy to tell apart on the ground, since one hangs its acorns on stalks and the other sits them tight against the twig. If you go and look, tell us which it is, and we will correct the page.\n\nIt has been a protected natural monument since 2 May 1974, which puts it among the older designations on Freiburg's list. It stands on the corner of Einsteinstraße and Hermann-Mitsch-Straße in northern Freiburg, a separate outing from the old town rather than a stop on one.",
+   "verified_sources": [
+    "https://www.freiburg.de/pb/site/Freiburg/get/documents_E-1847784871/freiburg/daten/news/amtsblatt/pdf/SS711_Naturdenkmale.pdf",
+    "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Freiburg_im_Breisgau"
+   ],
+   "access": "Free, an ordinary street-corner tree, not on any private or institutional grounds mentioned in either source.",
+   "transport": "Northern Freiburg, roughly 3.9 km from the Altstadt centre; a separate outing rather than part of a single Altstadt walk, reachable by tram/bus.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "frb_005",
+   "name": "The Starkenstraße Giant Sequoia",
+   "species": "Giant Sequoia (Sequoiadendron giganteum)",
+   "age_estimate": "roughly 130-150 years",
+   "age_min": 125,
+   "age_max": 150,
+   "girth_cm": 690,
+   "height_m": 30,
+   "location": {
+    "address": "Side street off Starkenstraße, near Starkenstraße 26",
+    "latitude": 48.001885,
+    "longitude": 7.860245,
+    "neighbourhood": "Neuburg"
+   },
+   "verified_sources": [
+    "LUBW/RIPS Naturdenkmal register, id 83110000094 (RIPS steckbrief 3119013000188), designated 1979-04-24: https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=3119013000188",
+    "Badische Zeitung, Andreas Braun, 'Ein Zeuge verflossener Zeit' (Naturdenkmal des Monats: Mammutbaum in der Starkenstrasse aus dem 19. Jahrhundert), published 2007-02-22: https://www.badische-zeitung.de/ein-zeuge-verflossener-zeit (also reproduced in full at https://www.freiburg-schwarzwald.de/naturdenkmal.htm)"
+   ],
+   "access": "Free, on a public residential street (a side arm of Starkenstraße near house no. 26); visible and reachable from the pavement.",
+   "transport": "VAG tram/bus toward Josefskirche/Hauptfriedhof, then short walk (Neuburg district, north of the city centre).",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "A boy named Klaus Doelle used to press small treasures into the soft bark of this sequoia and seal them back up, sure nobody would ever find them. Decades later, grown up, he still lives across the street, and it was his father who got the tree protected in 1979.\n\nThe Starkenstrasse Giant Sequoia went in during Freiburg's Gruenderzeit, the building boom of the late 1800s, when a handful of exotic sequoias reached the city as a fashion tree for new villa gardens. Only a few of that generation still stand on public ground; this one and its sisters on Karlstrasse and Waldhofstrasse are what is left. At roughly 30 metres tall and just under seven metres round, it now fills a quiet side street off Starkenstrasse with a red-brown, fire-resistant bark soft enough to sink a small metal box into without hurting the tree, which is exactly what Doelle did as a boy.\n\nThe city has since removed the parking that once pressed against its base and installed bollards to keep vehicles off the roots. It stands on open pavement, free to walk past any time.\n\nNobody has measured its exact age. The estimate, roughly 130 to 150 years, comes from the Gruenderzeit planting window the newspaper account places it in, not from a ring count."
+  },
+  {
+   "id": "frb_006",
+   "name": "The Lindens of the Kapellenweg",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "age_estimate": "roughly 380 years",
+   "age_min": 370,
+   "age_max": 390,
+   "location": {
+    "address": "On the Lorettoberg, beside the path to the Lorettokapelle (Kapellenweg)",
+    "latitude": 47.981395,
+    "longitude": 7.838447,
+    "neighbourhood": "Wiehre (Unterwiehre-Sued)"
+   },
+   "verified_sources": [
+    "LUBW/RIPS Naturdenkmal register, id 83110000009, '2 Sommerlinden', designated 1954-07-28 (Freiburg's very first Naturdenkmal batch): https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=3119013000158",
+    "Badische Zeitung / Simone Lutz, 'Nasenzwickerle unter Denkmalschutz', 28.8.2009, reproduced at https://www.freiburg-schwarzwald.de/naturdenkmal.htm: 'Die aeltesten sind die Linden am Kapellenweg: Sie stammen von 1645, aus Zeiten des Dreissigjaehrigen Kriegs.'",
+    "De.wikipedia.org, Lorettokapelle (Freiburg im Breisgau): the chapel at Kapellenweg 1 was built in 1657 to give thanks for the end of the Thirty Years' War, corroborating the era the BZ article assigns to the lindens"
+   ],
+   "access": "Free, on the public paths and green space of the Lorettoberg around the Lorettokapelle; open at all times.",
+   "transport": "Short walk uphill from central Wiehre / Guenterstalstrasse; about 20-25 minutes on foot from the Altstadt.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "These two limes are the oldest protected trees in Freiburg, first on the city's Naturdenkmal register when it opened in 1954, and local tradition puts their planting in 1645, during the last years of the Thirty Years' War.\n\nThey stand on the Lorettoberg beside the path to the Lorettokapelle, a chapel built in 1657 specifically to give thanks that the war was over. A pair of Sommerlinden, large-leaved limes, growing together beside a chapel raised for peace: the dates line up closely enough that the connection is hard to resist, even though no single source ties this exact pair to that exact chapel foundation. Take the 1645 figure as the tradition it is rather than a measurement.\n\nAt roughly 380 years old they would have been young trees when Freiburg itself was still recovering from decades of war passing through the region. The path up to the chapel is open at all times, a twenty to twenty-five minute walk uphill from the Altstadt through Wiehre, and the pair still shades the last stretch of it."
+  },
+  {
+   "id": "frb_007",
+   "name": "The Kartaus Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "height_m": 38,
+   "location": {
+    "address": "Kartauserstrasse, by the Kartause (former Carthusian monastery), Waldsee",
+    "latitude": 47.994312,
+    "longitude": 7.882963,
+    "neighbourhood": "Waldsee"
+   },
+   "verified_sources": [
+    "LUBW/RIPS Naturdenkmal register, id 83110000015, '1 Platane', designated 1955-08-17: https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=3119013000114",
+    "freiburg-schwarzwald.de, reproducing Badische Zeitung / Simone Lutz, 'Nasenzwickerle unter Denkmalschutz', 28.8.2009: names it the tallest Naturdenkmal in Freiburg, 'mindestens 38 Meter hohe Platane an der Kartaus', with a dedicated page https://www.freiburg-schwarzwald.de/littenweiler/kartaus.htm and three dated photographs (2007, 2009, 2010) captioned 'Die 38 m hohe Naturdenkmal-Platane'"
+   ],
+   "access": "Free, visible from the public pavement on Kartauserstrasse at any time. The tree stands at the edge of the historic Kartause monastery garden (Klostergarten Kartause), whose interior also opens for casual visiting on Friday afternoons from three to six, without registration.",
+   "transport": "Freiburg tram/bus to the Littenweiler/Waldsee area, then a short walk along Kartauserstrasse.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "At 38 metres this London plane is the tallest protected tree in Freiburg, by a margin nobody has bothered to measure the runner up against.\n\nIt grows at the edge of the Kartause, a former Carthusian monastery in the Waldsee district whose garden still keeps the shape of the order that built it: a walled, cultivated plot, tended rather than left to itself, which is likely part of why a plane tree here had the room and the care to run this tall. Planes tolerate poor soil and pollution better than almost any other species, which is why cities plant them along roads and squares; this one had a monastery garden instead, and used the advantage.\n\nThe garden keeps limited public hours, open for casual visiting on Friday afternoons from three to six without booking, and by arranged tour at other times, so this is not a tree to detour past on a whim. The tree itself is visible from Kartauserstrasse regardless.\n\nNobody has recorded its age or the size of its trunk. A tree this tall on grounds this settled could plausibly be read either way, decades or a century plus, and without a plaque or a girth measurement we would rather leave the number blank than guess at it."
+  }
+ ]
 }
