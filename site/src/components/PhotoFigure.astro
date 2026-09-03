@@ -1,0 +1,104 @@
+---
+/* A tree's photograph, and the viewer behind it.
+ *
+ * Convention: Wikipedia's Media Viewer (CONVENTIONS.md 2026-09-03), which has
+ * our exact content problem, photographs under a licence that obliges a credit.
+ * Clicking the thumbnail opens a LIGHT BOX over the page rather than a new
+ * page; the image sits there at a screen-sized version with the credit along
+ * the bottom; and reaching the original at full resolution is one step further
+ * in, never the first click. Linking the thumbnail straight at the original is
+ * the tempting shortcut and it hands somebody several megabytes with no credit
+ * attached to it.
+ *
+ * Native <dialog>, so Escape, the backdrop, focus trapping and the top layer
+ * are the browser's job rather than ours. Swipe down to dismiss is added by
+ * hand because that is the gesture a thumb reaches for first on a phone and no
+ * element gives it for free.
+ *
+ * Shared component on purpose. Hearts, the sign-in dialog and the vote control
+ * each render on up to nine page types in two languages, and the one that was
+ * wired by hand is the one that silently missed the Spanish city page. Every
+ * string comes from UIStrings so the seven translated page sets get this too.
+ */
+import { imgSrcset, photoDims, creditRequired, creditText } from "../lib/images";
+import { ui } from "../lib/i18n";
+
+interface Props {
+  photo: { url: string; license?: string | null; attribution?: string | null };
+  alt: string;
+  lang?: string;
+  /** The widths the page itself lays the picture out at. */
+  widths?: number[];
+  sizes?: string;
+}
+const { photo, alt, lang = "en", widths = [700, 1100, 1600],
+        sizes = "(max-width: 800px) 100vw, 760px" } = Astro.props;
+const t = ui(lang);
+const dims = photoDims(photo as any);
+const credit = creditRequired(photo.license)
+  ? t.photoCredit(creditText(photo.attribution, photo.license) ?? "")
+  : null;
+---
+<figure class="tree-photo">
+  <button type="button" class="photo-open" aria-label={t.photoOpen}>
+    <img {...imgSrcset(photo.url, widths, sizes, dims.width, dims.height)} alt={alt} loading="lazy" />
+  </button>
+  {credit && <figcaption>{credit}</figcaption>}
+
+  <dialog class="photo-view" aria-label={alt}>
+    <button type="button" class="pv-close" aria-label={t.photoClose}>&times;</button>
+    <div class="pv-frame">
+      <img {...imgSrcset(photo.url, [960, 1280, 1920], "100vw", dims.width, dims.height)} alt={alt} loading="lazy" />
+    </div>
+    <div class="pv-bar">
+      {credit && <span class="pv-credit">{credit}</span>}
+      <a class="pv-full" href={photo.url} target="_blank" rel="noopener">{t.photoFull}</a>
+    </div>
+  </dialog>
+</figure>
+
+<script>
+  // Delegated, so a page may carry one figure or twenty and this runs once.
+  document.addEventListener("click", (e) => {
+    const target = e.target as HTMLElement;
+    const open = target.closest(".photo-open");
+    if (open) {
+      const d = open.closest("figure")?.querySelector("dialog.photo-view");
+      if (d instanceof HTMLDialogElement) d.showModal();
+      return;
+    }
+    const close = target.closest(".pv-close");
+    if (close) {
+      (close.closest("dialog") as HTMLDialogElement | null)?.close();
+      return;
+    }
+    // The backdrop is the dialog element itself: anything inside sits in
+    // .pv-frame or .pv-bar, so a click landing ON the dialog is a click beside
+    // the picture, which every viewer treats as "close".
+    if (target instanceof HTMLDialogElement && target.classList.contains("photo-view")) target.close();
+  });
+
+  // Drag down to dismiss. The gesture a thumb reaches for first, and the one
+  // complaint every viewer that lacks it gets.
+  let y0: number | null = null;
+  document.addEventListener("touchstart", (e) => {
+    const d = (e.target as HTMLElement).closest("dialog.photo-view");
+    y0 = d ? e.touches[0].clientY : null;
+  }, { passive: true });
+  document.addEventListener("touchmove", (e) => {
+    if (y0 === null) return;
+    const dy = e.touches[0].clientY - y0;
+    const d = (e.target as HTMLElement).closest("dialog.photo-view") as HTMLDialogElement | null;
+    if (!d) return;
+    if (dy > 0) d.style.transform = `translateY(${Math.min(dy, 240)}px)`;
+  }, { passive: true });
+  document.addEventListener("touchend", (e) => {
+    const d = (e.target as HTMLElement).closest("dialog.photo-view") as HTMLDialogElement | null;
+    if (d) {
+      const moved = d.style.transform ? parseFloat(d.style.transform.replace(/[^0-9.]/g, "")) : 0;
+      d.style.transform = "";
+      if (moved > 90) d.close();
+    }
+    y0 = null;
+  }, { passive: true });
+</script>

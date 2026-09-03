@@ -145,6 +145,12 @@ export interface UIStrings {
    *  punctuation is part of the language: French wants a space before its
    *  colon and Japanese a full-width one. */
   photoCredit: (credit: string) => string;
+  /** The photo viewer, added 2026-09-03. `photoOpen` labels the button the
+   *  photograph itself becomes, `photoFull` is the step Wikipedia's Media
+   *  Viewer puts one click further in: the original file at full resolution. */
+  photoOpen: string;
+  photoClose: string;
+  photoFull: string;
   distanceAway: (d: string) => string;
   /** The factual opening of a tree page's meta description: what it is,
    *  how old, where. Contract B's "answer" half, per language, because
@@ -219,6 +225,9 @@ const EN: UIStrings = {
   cityHasMore: (c) => `${c} has more trees worth the visit:`,
   sentenceEnd: ".",
   photoCredit: (credit) => `Photo: ${credit}`,
+  photoOpen: "Open the photograph",
+  photoClose: "Close",
+  photoFull: "See it at full size",
   distanceAway: (d) => `${d} away`,
   treeLabels: {},
   metaLead: (sp, age, where) => {
@@ -324,6 +333,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} tiene m\u00e1s \u00e1rboles que merecen la visita:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    photoOpen: "Abrir la fotografía",
+    photoClose: "Cerrar",
+    photoFull: "Verla a tamaño completo",
   },
   it: {
     treeLabels: {
@@ -396,6 +408,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} ha altri alberi che meritano la visita:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    photoOpen: "Apri la fotografia",
+    photoClose: "Chiudi",
+    photoFull: "Vedila a dimensione intera",
   },
   nl: {
     treeLabels: {
@@ -468,6 +483,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} heeft meer bomen die de moeite waard zijn:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    photoOpen: "Open de foto",
+    photoClose: "Sluiten",
+    photoFull: "Bekijk hem op volledige grootte",
   },
   de: {
     treeLabels: {
@@ -540,6 +558,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} hat weitere B\u00e4ume, die den Weg lohnen:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    photoOpen: "Foto öffnen",
+    photoClose: "Schließen",
+    photoFull: "In voller Größe ansehen",
   },
   pt: {
     treeLabels: {
@@ -612,6 +633,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} tem mais \u00e1rvores que valem a visita:`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Foto: ${credit}`,
+    photoOpen: "Abrir a fotografia",
+    photoClose: "Fechar",
+    photoFull: "Ver em tamanho real",
   },
   fr: {
     treeLabels: {
@@ -684,6 +708,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c} compte d'autres arbres qui valent le d\u00e9tour :`,
     sentenceEnd: ".",
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
+    photoOpen: "Ouvrir la photographie",
+    photoClose: "Fermer",
+    photoFull: "La voir en taille réelle",
   },
   ja: {
     treeLabels: {
@@ -756,6 +783,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     cityHasMore: (c) => `${c}\u306b\u306f\u8a2a\u308c\u308b\u4fa1\u5024\u306e\u3042\u308b\u6a39\u6728\u304c\u307e\u3060\u3042\u308a\u307e\u3059\u3002`,
     sentenceEnd: "\u3002",
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
+    photoOpen: "写真を開く",
+    photoClose: "閉じる",
+    photoFull: "原寸で見る",
   },
 };
 
