@@ -3460,6 +3460,98 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-09-02T23:35:35+00:00",
+   "date": "2026-09-03",
+   "run_id": "33695768480",
+   "minutes": 95.1,
+   "minutes_basis": "measured",
+   "attempts": 2,
+   "turns": 483,
+   "denials": 45,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(wc)",
+   "ended": "success",
+   "tokens": 25337148,
+   "claims_held": [
+    "freiburg",
+    "stuttgart",
+    "matera"
+   ],
+   "commits": 19,
+   "cities_touched": 17,
+   "cities": [
+    {
+     "city": "heidelberg",
+     "trees": 6
+    },
+    {
+     "city": "stuttgart",
+     "trees": 6
+    },
+    {
+     "city": "freiburg",
+     "trees": 4
+    },
+    {
+     "city": "taipei",
+     "trees": 4
+    },
+    {
+     "city": "uda",
+     "trees": 3
+    },
+    {
+     "city": "minamialps",
+     "trees": 2
+    },
+    {
+     "city": "nihonmatsu",
+     "trees": 2
+    },
+    {
+     "city": "higashiagatsuma",
+     "trees": 1
+    },
+    {
+     "city": "higashine",
+     "trees": 1
+    },
+    {
+     "city": "iga",
+     "trees": 1
+    },
+    {
+     "city": "nagano",
+     "trees": 1
+    },
+    {
+     "city": "ofunato",
+     "trees": 1
+    },
+    {
+     "city": "ono",
+     "trees": 1
+    },
+    {
+     "city": "otama",
+     "trees": 1
+    },
+    {
+     "city": "takayama",
+     "trees": 1
+    },
+    {
+     "city": "enschede",
+     "trees": 0
+    },
+    {
+     "city": "hiroshima",
+     "trees": 0
+    }
+   ],
+   "trees": 35,
+   "logged": true
   }
  ],
  "schedule_changes": [
