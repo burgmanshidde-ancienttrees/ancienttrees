@@ -512,6 +512,13 @@ def main():
                          "installed runtime is walked, floor included.")
     ap.add_argument("--check-lists", action="store_true",
                     help="only check that appsweep and SweepFrames agree")
+    # DARK MODE, added 2026-09-03, the day the app shipped and two of the first
+    # people to open it were in it. Every screenshot this command has ever taken
+    # was light, because a simulator boots light and nothing here said otherwise,
+    # so half the app's surface had never been photographed once. simctl can set
+    # the appearance and always could; nobody had asked it to.
+    ap.add_argument("--dark", action="store_true",
+                    help="photograph in dark mode (writes to <out>-dark)")
     args = ap.parse_args()
 
     drift = check_lists()
@@ -524,7 +531,7 @@ def main():
         return 0
 
     scratch = os.environ.get("CLAUDE_SCRATCHPAD", "/tmp")
-    out = pathlib.Path(args.out or f"{scratch}/appsweep")
+    out = pathlib.Path(args.out or f"{scratch}/appsweep{'-dark' if args.dark else ''}")
     dd = pathlib.Path(scratch) / "dd"
     out.mkdir(parents=True, exist_ok=True)
 
@@ -563,6 +570,12 @@ def main():
         slug = name.replace(" ", "-").replace("(", "").replace(")", "")
         print(f"\n{name}")
         boot(udid)
+        # Set on the DEVICE rather than on the app, because that is what a
+        # person's phone does: the app inherits the system appearance and every
+        # material, sheet and keyboard follows. Always set explicitly, light
+        # included, since a simulator remembers what the last run left it in.
+        sh("xcrun", "simctl", "ui", udid, "appearance",
+           "dark" if args.dark else "light", check=False)
         sh("xcrun", "simctl", "install", udid, str(app))
         # Wipe the device's folder first. A screen that leaves the sweep list
         # leaves its LAST PNG behind, and a stale screenshot in a folder you
