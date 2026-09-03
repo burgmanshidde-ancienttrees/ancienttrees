@@ -84,6 +84,21 @@ not introduced. `gh run list` showed another session had already pushed a
 fix (`5c06dc12`) minutes earlier; pulled it and moved on rather than
 duplicating the fix.
 
+**Addendum, same run:** went on to verify two more promising _famous-japan
+leads directly (Shokawa-zakura, Kamo no Okusu) since only these two remained
+pre-researched but unverified. Shokawa-zakura checked out cleanly against
+three primary sources (ja.wikipedia, the prefecture tourism site, Takayama
+city's own facility page) and shipped as `data/cities/shokawa.json` (sho_001):
+two Edohigan cherries moved whole in 1960 to escape the Miboro Dam reservoir,
+still blooming together, ~50,000 visitors/year. Kamo no Okusu almost shipped
+as a second new place (`aira.json`) before a routine superlatives check
+surfaced that it is ALREADY published, as kag_010 inside Kagoshima's own city
+file, same tree, same coordinates, a day-trip extension shipped in an earlier
+pass. Caught and deleted before the commit, corrected in the leads note. The
+near-miss is worth naming: I should have run `scripts/famous_map.py` (built
+for exactly this "do we already map this" check) before writing a new page,
+not after. Next run researching a _famous-* lead should run it first.
+
 The two catania and two remaining _famous-japan "READY" leads that
 `leads.py --ready` listed this run were checked individually and are NOT
 actually ready: both Catania entries (Mascalucia, Motta Sant'Anastasia) are
