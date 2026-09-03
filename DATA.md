@@ -153,6 +153,8 @@ event on the list is unaffected.
 - Pages per visit: 1.7 (1580 visits, 2720 pageviews since 2026-08-08)
 - Visits that did something: 11.0% (174 actions on 1580 visits)
 
+app_section: failed today (no PostHog project readable with this key).
+
 **Where demand is going to waste**
 
 Search Console, the last 10 days Google will give us (its data lags 2-3 days, so the newest row is never yesterday). The newest row is also still FILLING: Google backfills for days and backfills impressions harder than clicks, so it reads as an unusually good day and is not one (08-22 arrived as 12/769 and settled at 17/1030). Position is an average across every query, so it dips whenever we start ranking for something new:
