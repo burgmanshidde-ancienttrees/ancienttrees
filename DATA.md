@@ -153,7 +153,22 @@ event on the list is unaffected.
 - Pages per visit: 1.7 (1580 visits, 2720 pageviews since 2026-08-08)
 - Visits that did something: 11.0% (174 actions on 1580 visits)
 
-app_section: failed today (no PostHog project readable with this key).
+**What people did in the app**
+
+| What | Yesterday | 14 days | Ever | Last |
+|---|---:|---:|---:|---|
+| app_open | 6 | 47 | 48 | today |
+| tab | 8 | 71 | 72 | yesterday |
+| tree_opened | 11 | 56 | 56 | yesterday |
+| directions | 1 | 9 | 9 | yesterday |
+| tree_saved | 0 | 4 | 4 | 3 days ago |
+| tree_visited | 0 | 0 | 0 | never |
+| sighting_recorded | 1 | 4 | 4 | yesterday |
+| setup_check | 0 | 1 | 1 | 4 days ago |
+| **all** | **27** | **192** | **194** | |
+- Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
+- 16 phones have ever sent anything.
+- Tabs opened (14d): My trees 34; Discover 24; Map 13
 
 **Where demand is going to waste**
 
