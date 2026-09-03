@@ -1,0 +1,62 @@
+{
+  "city": "Koriyama",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Koriyama maps one tree: Akatsu no Katsura, a national natural monument since 1941 that has been shrinking ever since. Typhoons have taken limbs and soil has washed from under its roots, and it still stands 25 metres tall with fourteen stems climbing from a single trunk 3.5 metres through. It is published alone here because it is the destination, not because Koriyama's research is finished.",
+  "meta_description": "Akatsu no Katsura, a national natural monument since 1941 near Koriyama, Fukushima: fourteen stems from one trunk, over 350 years old.",
+  "question_meta": "Koriyama's mapped tree is Akatsu no Katsura, a katsura designated a national natural monument in 1941, over 350 years old.",
+  "question_answer": "Akatsu no Katsura, standing beside a rural road toward Aizu-Nunobikiyama west of the city. Japan designated it a national natural monument in 1941 and dated it at over 350 years, a floor rather than a settled figure. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "The 1941 designation record is also the clearest evidence of what Akatsu no Katsura has lost since. It described a tree over 30 metres tall with a crown spreading about as wide; typhoons and root erosion have since taken it down to 25 metres and a 20 metre spread. What survives is still one of the largest katsura in Japan: a trunk 3.5 metres through at chest height that stops being a single stem about 1.2 metres up, where fourteen trunks of wildly different sizes climb out of it. Old katsura routinely split into multiple stems near the base; very few do it on this scale, or keep doing it while visibly shrinking from storm damage. Its age, over 350 years, comes with no published basis, so treat it as a floor rather than a verdict. It stands unfenced on a rural road toward Aizu-Nunobikiyama, west of the city, with no station within reach; our coordinates mark the area rather than the exact trunk, so expect a short hunt on arrival. If you know what actually dates it, tell us.",
+  "hero_tree_id": "kna_001",
+  "oldest_tree_id": "kna_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Koriyama?",
+      "a": "Akatsu no Katsura, a national natural monument since 1941, dated at over 350 years with no published basis for the figure."
+    },
+    {
+      "q": "Why does it have fourteen trunks?",
+      "a": "Old katsura routinely split into multiple stems from low on the trunk. Akatsu no Katsura does it on an unusual scale, fourteen stems climbing out of the trunk about 1.2 metres up."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands unfenced beside a rural road toward Aizu-Nunobikiyama, publicly viewable at any time."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "There is no nearby train station. Reach it by car, roughly 8km from Konan-machi Akatsu toward Aizu-Nunobikiyama; the pin marks the area rather than the exact trunk."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kna_001",
+      "name": "Akatsu no Katsura",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "over 350 years",
+      "age_min": 350,
+      "age_max": 450,
+      "girth_cm": null,
+      "location": {
+        "address": "Konan-machi Akatsu, Koriyama, Fukushima Prefecture",
+        "latitude": 37.342458,
+        "longitude": 140.058174,
+        "neighbourhood": "Konan-machi, near Aizu-Nunobikiyama"
+      },
+      "story": "Japan made this katsura a national natural monument on 27 January 1941, and it has been getting smaller ever since. The record made at the designation describes a tree over 30 metres tall with a crown spreading about as wide. Typhoons have taken limbs since then and soil has washed out from under its roots, leaving 25 metres of height and a 20 metre spread. It is still one of the largest katsura in the country.\n\nThe trunk measures 3.5 metres through at chest height, and at roughly 1.2 metres above the ground it stops pretending to be a single tree: fourteen stems, some huge and some slight, climb out of it from that point. Old katsura routinely do this. Very few do it on this scale.\n\nThat 1941 survey is also the only reason anyone can say what the tree has lost. Its age is put at over 350 years, with nothing published about what the figure rests on, so read three and a half centuries as a floor rather than a verdict. If you know what dates it, tell us.\n\nIt stands unfenced on a rural road toward Aizu-Nunobikiyama, west of Koriyama, with no station within reach. Our coordinates mark the area rather than the trunk, so expect a short hunt when you arrive.",
+      "verified_sources": [
+        "https://www.kanko-koriyama.gr.jp/tourism/detail7-1-400.html",
+        "https://adeac.jp/koriyama-city/viewer/ct00000070/bunkazai058/"
+      ],
+      "access": "Free, standing beside a rural road/trail area, publicly viewable",
+      "transport": "No nearby train station; reached by car, roughly 8km from Konan-machi Akatsu toward Aizu-Nunobikiyama",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
