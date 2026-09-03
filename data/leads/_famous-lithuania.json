@@ -10,9 +10,10 @@
     "https://commons.wikimedia.org/wiki/File:Agluonos_%C4%85%C5%BEuolas.JPG",
     "https://commons.wikimedia.org/wiki/File:V%C4%97%C5%BEalaukis,_Agluonos_%C4%85%C5%BEuolas.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as vez_001 (Agluona Oak). Forms a small 2-tree cluster with Vezalaukis oak, about 300m away, both in Vezalaukis village."
   },
   {
    "name": "Bagrėnas linden",
@@ -58,7 +59,8 @@
    ],
    "status": "lead",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Not researched in depth this pass beyond a distance check: about 14km from the Agluona/Vezalaukis cluster (vez_001/vez_002), too far to join on foot though within an easy day's drive of the same district (Tauragė). Remains a standalone candidate for a future pass."
   },
   {
    "name": "Karpio tuopa, Paštuva",
@@ -79,9 +81,10 @@
     "https://commons.wikimedia.org/wiki/File:Klio%C5%A1%C5%B3_parko_bukas.JPG",
     "https://commons.wikimedia.org/wiki/File:Klio%C5%A1%C5%B3_parko_bukas._Kamienas.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as pri_004 (Kliošai Park Beech, Priekulė cluster). Confirmed by lt.wikipedia + Gargždai museum heritage-trail source."
   },
   {
    "name": "Kliošų parko kėnis",
@@ -92,7 +95,8 @@
     "https://commons.wikimedia.org/wiki/File:Klio%C5%A1%C5%B3_parko_k%C4%97nis_2.JPG",
     "https://commons.wikimedia.org/wiki/File:Klio%C5%A1%C5%B3_parko_k%C4%97nis_3.JPG"
    ],
-   "status": "lead"
+   "status": "done",
+   "reason": "Verified and delivered as pri_005 (Kliošai Park Fir, Priekulė cluster), flagged: the lt.wikipedia article's infobox (32.8m) and body text (37m) disagree on height."
   },
   {
    "name": "Latežeris oak",
@@ -115,9 +119,10 @@
     "https://commons.wikimedia.org/wiki/File:Brazi%C5%ABkai,_liepa.JPG",
     "https://commons.wikimedia.org/wiki/File:Brazi%C5%ABk%C5%B3_liepa_(Motin%C4%97l%C4%97)_-_panoramio.jpg"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as brz_001 (Braziukai Mother Linden), the thickest small-leaved lime in Lithuania, Tree of the Year 2018. COORDINATE CORRECTED: this lead's coordinate (54.89231, 23.48614) is about 1km off; the confirmed lt.wikipedia/Commons coordinate is 54.901432, 23.485007."
   },
   {
    "name": "Liškiavos liepa",
@@ -127,9 +132,10 @@
     "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiava,_liepa.JPEG",
     "https://commons.wikimedia.org/wiki/File:Li%C5%A1kiavos_liepa.JPEG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as lsk_001 (Liskiava Lime), locally called Pakleštarės liepa. Stands beside the well-known Liskiava church/monastery hillfort, a joint destination."
   },
   {
    "name": "Netiesos I oak",
@@ -139,9 +145,10 @@
     "https://commons.wikimedia.org/wiki/File:2024,_Netiesos,_I_%C4%85%C5%BEuolas.JPG",
     "https://commons.wikimedia.org/wiki/File:Neties%C5%B3_I_%C4%85%C5%BEuolas.jpg"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "BLOCKED, private land. Lt.wikipedia states explicitly the tree 'grows on private property' (auga privačioje valdoje), 7km down a forest gravel road from Merkine, Dzukija National Park. Fails hard rule 10."
   },
   {
    "name": "Netiesos II oak",
@@ -150,9 +157,10 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Netiesos,_II_%C4%85%C5%BEuolas.JPG"
    ],
-   "status": "lead",
+   "status": "blocked",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "BLOCKED, private land. Lt.wikipedia states the tree grows 'in the vicinity of homestead houses, in a fenced plot' (sodybiniu namu kaimynystėje, aptvertame sklype), 80m from Netiesos I oak. Fails hard rule 10. Note: do NOT fold Netiesos I and II into one published entry as register twins; both are individually blocked on access, so folding is moot."
   },
   {
    "name": "Oaks and lime of January 13",
@@ -224,9 +232,10 @@
     "https://commons.wikimedia.org/wiki/File:Raudon%C4%97,_parko_liepa.JPG",
     "https://commons.wikimedia.org/wiki/File:Raudon%C4%97,_parko_liepos_kamienas.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as rdn_001 (Raudone Castle Lime). CONFIRMED DUPLICATE of the 'Tilia cordata in Lithuania' lead below (identical coordinates 55.09663/23.13137): both are the same physical seven-trunked lime in Raudone Castle park, Lithuania's Tree of the Year 2018."
   },
   {
    "name": "Renavas spruce",
@@ -249,7 +258,8 @@
     "https://commons.wikimedia.org/wiki/File:Kauno_Santaka,_gluosnis.jpg",
     "https://commons.wikimedia.org/wiki/File:Santaka,_gluosnis_2019.JPG"
    ],
-   "status": "lead"
+   "status": "done",
+   "reason": "Verified and delivered as kun_002 (Santaka Golden Willow, Kaunas), curation_status flagged: a July 2026 Commons photo caption describes the tree as 'withered, dying' (nudžiūvęs nykstantis) and fungus-afflicted. Still standing per that same photo; a fresh visual check is recommended before this goes live."
   },
   {
    "name": "Simonaitytės bukas",
@@ -259,9 +269,10 @@
     "https://commons.wikimedia.org/wiki/File:Simonaityt%C4%97s_bukas,_vasar%C4%85.JPG",
     "https://commons.wikimedia.org/wiki/File:Simonaityt%C4%97s_bukas.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as pri_003 (Simonaitytė's Beech, Priekulė cluster). Grows in the Ieva Simonaitytė memorial museum's garden, about 1.2-1.5km from the Kliošai pair, joining the same walkable Priekulė cluster along with two oaks found in Vingio parkas (pri_001, pri_002) during this pass."
   },
   {
    "name": "Tilia cordata in Lithuania",
@@ -272,9 +283,10 @@
     "https://commons.wikimedia.org/wiki/File:Antakalnio_liepa.JPG",
     "https://commons.wikimedia.org/wiki/File:Bir%C5%BE%C5%B3_Laukas._Liepa_2.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "DUPLICATE, resolved to the same tree as 'Raudones liepa' above (identical coordinates). Delivered once as rdn_001. Do not create a second entry for this lead."
   },
   {
    "name": "Trainiškis oak",
@@ -283,9 +295,10 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Traini%C5%A1kio_%C4%85%C5%BEuolas.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "The famous ~800-year-old original FELL in a 2016-10-05 windstorm and was delisted in 2017; never publish it as a living entry. A genetic-clone successor sapling was planted 2017-05-12 beside the preserved trunk and the site remains an active Aukstaitija National Park feature. Delivered as trn_001, explicitly framed as the young successor tree with the fallen original as context only, per the fallen-original-honestly-succeeded rule (Elm of Saint-Gervais precedent)."
   },
   {
    "name": "Vainiai poplar",
@@ -295,9 +308,10 @@
     "https://commons.wikimedia.org/wiki/File:Vaini%C5%B3_parko_tuopa.JPG",
     "https://commons.wikimedia.org/wiki/File:Vaini%C5%B3_tuopa.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Poplar (Populus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as vni_001 (Vainiai Poplar). Flagged only for missing age data (none found in any source)."
   },
   {
    "name": "Visbarai pine",
@@ -320,9 +334,10 @@
     "https://commons.wikimedia.org/wiki/File:Liepa,_Vytauto_parkas.jpg",
     "https://commons.wikimedia.org/wiki/File:Ma%C5%BEalap%C4%97_liepa_Kaune_ant_Parodos_kalno.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered to data/research/lithuaniabatch-verified.json as kun_001 (Vytautas Park Linden, Kaunas). Two sources: lt.wikipedia + 2008 government gazette decree."
   },
   {
    "name": "Vėžalaukis oak",
@@ -332,9 +347,10 @@
     "https://commons.wikimedia.org/wiki/File:V%C4%97%C5%BEalaukio%C4%84%C5%BEuolas.JPG",
     "https://commons.wikimedia.org/wiki/File:V%C4%97%C5%BEalaukis,_%C4%85%C5%BEuolas.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as vez_002 (Vezalaukis Oak), flagged: source describes rural farmland surroundings but does not explicitly confirm the field track is a public right of way (unlike the nearby Netiesos oaks, which explicitly said private). A future pass should check via OSM access tags before this ships."
   },
   {
    "name": "Akmenynė oak",
@@ -1015,9 +1031,10 @@
     "https://commons.wikimedia.org/wiki/File:Raudon%C4%97,_parko_liepa.JPG",
     "https://commons.wikimedia.org/wiki/File:Raudon%C4%97,_parko_liepos_kamienas.JPG"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as rdn_001 (Raudone Castle Lime). CONFIRMED DUPLICATE of the 'Tilia cordata in Lithuania' lead below (identical coordinates 55.09663/23.13137): both are the same physical seven-trunked lime in Raudone Castle park, Lithuania's Tree of the Year 2018."
   },
   {
    "name": "Stelmužė oak",
@@ -1031,6 +1048,64 @@
    "status": "lead",
    "species": "Oak (Quercus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Senoji Kauno obelis",
+   "lat": 54.86852,
+   "lng": 23.8714,
+   "photos": [],
+   "status": "blocked",
+   "reason": "BLOCKED, private land. Lt.wikipedia states the tree stands 'on a private plot next to a residential house' (privaciame sklype salia gyvenamojo namo) at Senosios Obels g. 18, Kazliskiai, Kaunas. Lithuania's only protected apple tree (Malus sylvestris), ~360 years old, girth 285cm -- a shame to lose but fails hard rule 10. Found via the Kaunas protected-areas Wikipedia template, not the original Commons sweep.",
+   "species": "Wild Apple (Malus sylvestris)",
+   "species_basis": "explicitly named in the source, not a genus guess"
+  },
+  {
+   "name": "Taikos kalno ąžuolas",
+   "lat": 54.87427,
+   "lng": 24.02287,
+   "photos": [],
+   "status": "done",
+   "reason": "Verified and delivered as kun_003 (Peace Hill Oak, Kaunas), in Pazaislio silas within Kauno marios regional park, public. Found via the Kaunas protected-areas Wikipedia template, not the original Commons sweep. Note: this is a distinct living tree that took over the name/role from an older oak (~800yo) that died from arson in 2007; do not confuse the two.",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "species_basis": "genus commonly used generically in Lithuanian registers; presumed robur as the dominant native oak"
+  },
+  {
+   "name": "Lampėdžių liepa Gražuolė",
+   "lat": 54.90791,
+   "lng": 23.81845,
+   "photos": [],
+   "status": "done",
+   "reason": "Verified and delivered as kun_004 (Lampedziai Beauty Linden, Kaunas), a national-level nature monument since 1968, 4-trunked. Found via the Kaunas protected-areas Wikipedia template, not the original Commons sweep.",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "species_basis": "explicitly named in the source"
+  },
+  {
+   "name": "Priekulės ąžuolas",
+   "lat": 55.55641,
+   "lng": 21.32878,
+   "photos": [],
+   "status": "blocked",
+   "reason": "BLOCKED, dead. Fell in 1993; only the trunk remnant is preserved in Vingio parkas, Priekule, with a young oak planted at the old stump. Historically significant (featured in Ieva Simonaityte's novel 'Auksttuju Simoniu likimas'), so may appear as CONTEXT within the story of the living Vingis Park Oak (pri_002) or Simonaityte's Beech (pri_003), never as its own collectible entry. Found while researching the Klosai/Priekule cluster, not the original Commons sweep."
+  },
+  {
+   "name": "Vingio parko ąžuolas",
+   "lat": 55.556541,
+   "lng": 21.328723,
+   "photos": [],
+   "status": "done",
+   "reason": "Verified and delivered as pri_002 (Vingis Park Oak, Priekule cluster), location_precision approximate: its coordinate is duplicated exactly from the separate fallen Priekules azuolas's article, likely a copy-paste error in the source rather than two trees at one spot. Found while researching the Klosai/Priekule cluster, not the original Commons sweep.",
+   "species": "Oak (Quercus robur, presumed)",
+   "species_basis": "genus commonly used generically in Lithuanian registers; presumed robur as the dominant native oak"
+  },
+  {
+   "name": "Šperberių ąžuolas",
+   "lat": 55.555108,
+   "lng": 21.324779,
+   "photos": [],
+   "status": "done",
+   "reason": "Verified and delivered as pri_001 (Sperberiai Oak, Priekule cluster). Found while researching the Klosai/Priekule cluster, not the original Commons sweep.",
+   "species": "Oak (Quercus robur, presumed)",
+   "species_basis": "genus commonly used generically in Lithuanian registers; presumed robur as the dominant native oak"
   }
  ]
 }

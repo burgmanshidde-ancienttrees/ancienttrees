@@ -1,0 +1,28 @@
+{
+ "city": "Vezalaukis",
+ "leads": [
+  {
+   "name": "Agluona Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "location": {
+    "address": "Forest edge above the Agluona river valley, near Vėžalaukis village, Mažonai seniūnija, Tauragė district",
+    "latitude": 55.37049,
+    "longitude": 22.43983,
+    "neighbourhood": "Vėžalaukis, Tauragė district"
+   },
+   "reason": "Fully verified (state-protected, real girth/sourcing) in the 2026-09-03 Lithuania famous-tree batch, but only 2 trees exist 300m apart in rural farmland near Vezalaukis village, below the 4-tree floor, and neither is individually a clear single-tree-destination case (solid protected oaks, girths 460 and 730cm, but not a national/dendrological record-holder like the trees that did clear the exception this batch). Gaure oak (~15km away) was also considered and left too far to join on foot. Kept as leads for a future pass that finds a third nearby tree or stronger fame case. Girth/sourcing: A tall, thick oak (girth 7.30 m at 1.3 m, height 33.5 m) on a steep slope above the Agluona river, on the edge of the Tauragė forest district's Batakiai forestry area. State-protected since 1960, one of Lithuania's older continuously-protected trees. Species explicitly confirmed as Quercus robur by the source (not just a genus guess). Reached via a crossroads signposted toward Uosvietis, then a bridge over the Agluona, then across pasture from the gravel road. Sits in the same village as the Vėžalaukis Oak (vez_002), about 300 m away, making a small two-tree cluster; the wider Gaurė oak (about 14 km away) is a separate standalone tree in a different area of the same district and too far to join this cluster on foot, though within an easy day's drive."
+  },
+  {
+   "name": "Vėžalaukis Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "location": {
+    "address": "In farmland between the Agluona river and Gryblaukis forest, about 150 m south of a farmstead, beside a field track, Vėžalaukis village, Mažonai seniūnija, Tauragė district",
+    "latitude": 55.367744,
+    "longitude": 22.440777,
+    "neighbourhood": "Vėžalaukis, Tauragė district"
+   },
+   "reason": "Fully verified (state-protected, real girth/sourcing) in the 2026-09-03 Lithuania famous-tree batch, but only 2 trees exist 300m apart in rural farmland near Vezalaukis village, below the 4-tree floor, and neither is individually a clear single-tree-destination case (solid protected oaks, girths 460 and 730cm, but not a national/dendrological record-holder like the trees that did clear the exception this batch). Gaure oak (~15km away) was also considered and left too far to join on foot. Kept as leads for a future pass that finds a third nearby tree or stronger fame case. Girth/sourcing: Species explicitly confirmed as Quercus robur. Girth 4.60 m at 1.3 m, height 20 m. Declared state-protected by Environment Minister's order No. D1-88 on 2016-02-08. Stands alone in cultivated fields between the Agluona (a tributary of the Šešuvis) and Gryblaukis forest, 150 m south of a single farmstead, beside a passing field track; not marked with directional signs. Sits in the same village as the Agluona Oak (vez_001), about 300 m away. FLAGGED because, unlike the Netiesos oaks this pass also researched (explicitly on private land and fenced, and blocked for that reason), this article does not use the word 'private' but also does not confirm the field track is a public right of way; a future pass should check via OSM tags or a local call before this ships, per the access technique in BRIEF_RESEARCH.md."
+  }
+ ],
+ "blocked": []
+}
