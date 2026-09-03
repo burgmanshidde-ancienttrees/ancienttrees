@@ -4852,6 +4852,33 @@
     "note": "session write pass on 5 trees left in the shelf after the collision merge: 3 more Freiburg (7 total), 1 more Stuttgart (7 total), 1 more Matera (still 3, one short of the floor). Fixed a Platanus x hispanica/x acerifolia species-name collision and an appointment-only access line on the Kartaus Plane.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "nikaho+ueda+koriyama+tsuruoka",
+    "kind": "write",
+    "tokens": 41000,
+    "trees": 4,
+    "note": "write-stories agent on 4 already-verified _famous-japan trees; session built four new single-tree place pages (Nikaho, Ueda, Koriyama, Tsuruoka), fixed two question_context word counts under Contract B's 150 minimum, updated Japan country page count promise (28 to 32), merged, built, QA, pushed.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "_famous-germany",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 8,
+    "note": "verify pass on a batch of roughly 15 promising _famous-germany leads: 8 verified (a Nationalerbe-Baum, several Naturdenkmal oaks and limes), 1 confirmed dead and blocked (Bordesholm Gerichtslinde), 97 of 109 leads still untouched for a future pass. Delivered to data/research/famousgermany-verified.json.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "hainich+untermerzbach+badstaffelstein+koenigslutter+albersdorf+heede+collm+solingen",
+    "kind": "write",
+    "tokens": 48000,
+    "trees": 8,
+    "note": "write-stories agent on the 8 verified _famous-germany trees; session built eight new single-tree place pages, fixed umlaut-transliteration typos the passes introduced (Konigslutter, Fuenffingerlinde, Hueter), updated Germany country page count promise (15 to 23 cities, 143 to 151 trees), merged, built, QA, pushed.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
