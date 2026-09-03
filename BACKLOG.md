@@ -107,7 +107,7 @@ His framing, verbatim in spirit: AllTrails is clear, you go hiking and need a ro
 
 ## A nicer sign-in email (Hidde, 2026-07-28, explicitly not important now)
 
-The magic-link mail is currently Supabase's plain default template from their default sender. Fine for the quiet launch; his words: "voor nu niet belangrijk". When it matters: restyle the template in the brand voice and identity (Supabase dashboard, Authentication > Email Templates: subject plus HTML, a session job with Hidde logged in), and optionally send from an @ancienttrees.app address, which additionally needs SMTP config and remains his infrastructure call.
+The magic-link mail is currently Supabase's plain default template from their default sender. Fine for the quiet launch; his words: "voor nu niet belangrijk". When it matters: restyle the template in the brand voice and identity (Supabase dashboard, Authentication > Email Templates: subject plus HTML, a session job with Hidde logged in), and optionally send from an @ancienttrees.app address, which additionally needs SMTP config and remains his infrastructure call. **Half of that landed on 2026-09-03:** `info@ancienttrees.app` now RECEIVES, forwarded to his Gmail by ImprovMX (MX plus an SPF include on the domain), confirmed by a mail from an outside sender. Only `info@` exists, no catch-all, so `hello@` and `press@` bounce. Sending as the domain address is still open and still his: it needs Gmail's "Send mail as" verification, after which `OUTREACH_FROM` changes.
 
 **Trigger:** before the login ever links publicly (natural moment: the same session that builds the delete function), or earlier if Hidde asks.
 

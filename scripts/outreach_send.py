@@ -41,7 +41,13 @@ his app password; the machine never stores them):
   OUTREACH_SMTP_PORT  e.g. 587
   OUTREACH_SMTP_USER  the account that authenticates
   OUTREACH_SMTP_PASS  an app password, never his real one
-  OUTREACH_FROM       e.g. "Hidde, Ancient Trees <press@ancienttrees.app>"
+  OUTREACH_FROM       e.g. "Hidde, Ancient Trees <info@ancienttrees.app>"
+                      info@ is the only address that exists on the domain
+                      (ImprovMX forwarding, live 2026-09-03); press@ and
+                      hello@ bounce, so a reply to one of those is lost.
+                      Gmail only sends AS an address it has verified under
+                      "Send mail as", so this stays the Gmail address until
+                      Hidde does that once.
 
 Usage:
   python3 scripts/outreach_send.py drafts/batches/batch-001-nl-regio.json
