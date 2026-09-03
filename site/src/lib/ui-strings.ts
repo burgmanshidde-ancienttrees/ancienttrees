@@ -57,7 +57,7 @@ export const UI: Record<Lang, UiStrings> = {
     countries: "Countries", species: "Species", parks: "Parks",
     collections: "Collections", yours: "Yours", savedTrees: "Saved trees",
     yourAccount: "Your account", suggestTree: "Suggest a tree",
-    sponsor: "Sponsor this project", getApp: "Get the app", theApp: "The app",
+    sponsor: "Sponsor this project", getApp: "Download the app", theApp: "The app",
     account: "Account", menu: "Menu", support: "Support", privacy: "Privacy",
     terms: "Terms",
     sources: "Sources",

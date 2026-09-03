@@ -153,6 +153,15 @@ export interface UIStrings {
    * the control DOES, because a screen reader announcing "Download on the App
    * Store badge" describes a picture rather than an action. */
   appStoreBadge: string;
+  /** The three-way "get the app" widget, added 2026-09-03 on Hidde's ask: an
+   * Android visitor sees a waitlist (there is no Android app), a desktop
+   * visitor sees a QR code (the AllTrails convention), an iOS visitor sees
+   * the badge above and needs none of these. */
+  androidNote: string;
+  emailLabel: string;
+  notifyMe: string;
+  waitlistSent: string;
+  scanToOpen: string;
   photoClose: string;
   photoFull: string;
   distanceAway: (d: string) => string;
@@ -231,6 +240,11 @@ const EN: UIStrings = {
   photoCredit: (credit) => `Photo: ${credit}`,
   photoOpen: "Open the photograph",
   appStoreBadge: "Get Ancient Trees on the App Store",
+  androidNote: "There is no Android app yet. Leave your email and we will write to you the day there is one.",
+  emailLabel: "Email address",
+  notifyMe: "Notify me",
+  waitlistSent: "You are on the list. We will write to you the day it opens.",
+  scanToOpen: "Scan this with your phone to open it there.",
   photoClose: "Close",
   photoFull: "See it at full size",
   distanceAway: (d) => `${d} away`,
@@ -340,6 +354,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir la fotografía",
     appStoreBadge: "Consigue Ancient Trees en el App Store",
+    androidNote: "Todavía no hay una app para Android. Deja tu correo y te escribiremos el día que la haya.",
+    emailLabel: "Correo electrónico",
+    notifyMe: "Avísame",
+    waitlistSent: "Ya estás en la lista. Te escribiremos el día que esté lista.",
+    scanToOpen: "Escanéalo con tu teléfono para abrirlo ahí.",
     photoClose: "Cerrar",
     photoFull: "Verla a tamaño completo",
   },
@@ -416,6 +435,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Apri la fotografia",
     appStoreBadge: "Scarica Ancient Trees su App Store",
+    androidNote: "Non c'è ancora una app per Android. Lascia la tua email e ti scriveremo il giorno in cui ci sarà.",
+    emailLabel: "Indirizzo email",
+    notifyMe: "Avvisami",
+    waitlistSent: "Sei in lista. Ti scriveremo il giorno in cui sarà pronta.",
+    scanToOpen: "Scansionalo con il telefono per aprirlo lì.",
     photoClose: "Chiudi",
     photoFull: "Vedila a dimensione intera",
   },
@@ -492,6 +516,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Open de foto",
     appStoreBadge: "Download Ancient Trees in de App Store",
+    androidNote: "Er is nog geen Android-app. Laat je e-mailadres achter en we schrijven je op de dag dat hij er is.",
+    emailLabel: "E-mailadres",
+    notifyMe: "Laat het me weten",
+    waitlistSent: "Je staat op de lijst. We schrijven je op de dag dat hij opengaat.",
+    scanToOpen: "Scan dit met je telefoon om hem daar te openen.",
     photoClose: "Sluiten",
     photoFull: "Bekijk hem op volledige grootte",
   },
@@ -568,6 +597,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Foto öffnen",
     appStoreBadge: "Ancient Trees im App Store laden",
+    androidNote: "Es gibt noch keine Android-App. Hinterlasse deine E-Mail-Adresse und wir schreiben dir, sobald es sie gibt.",
+    emailLabel: "E-Mail-Adresse",
+    notifyMe: "Benachrichtige mich",
+    waitlistSent: "Du stehst auf der Liste. Wir schreiben dir, sobald es losgeht.",
+    scanToOpen: "Scanne dies mit deinem Telefon, um es dort zu öffnen.",
     photoClose: "Schließen",
     photoFull: "In voller Größe ansehen",
   },
@@ -644,6 +678,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir a fotografia",
     appStoreBadge: "Obter Ancient Trees na App Store",
+    androidNote: "Ainda não existe uma app para Android. Deixe o seu email e escrevemos-lhe no dia em que houver.",
+    emailLabel: "Endereço de email",
+    notifyMe: "Avisem-me",
+    waitlistSent: "Já está na lista. Escrevemos-lhe no dia em que abrir.",
+    scanToOpen: "Digitalize isto com o seu telefone para o abrir aí.",
     photoClose: "Fechar",
     photoFull: "Ver em tamanho real",
   },
@@ -720,6 +759,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
     photoOpen: "Ouvrir la photographie",
     appStoreBadge: "Télécharger Ancient Trees sur l'App Store",
+    androidNote: "Il n'y a pas encore d'application Android. Laissez votre email et nous vous écrirons le jour où elle existera.",
+    emailLabel: "Adresse email",
+    notifyMe: "Prévenez-moi",
+    waitlistSent: "Vous êtes sur la liste. Nous vous écrirons le jour de l'ouverture.",
+    scanToOpen: "Scannez ceci avec votre téléphone pour l'ouvrir là-bas.",
     photoClose: "Fermer",
     photoFull: "La voir en taille réelle",
   },
@@ -796,6 +840,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
     photoOpen: "写真を開く",
     appStoreBadge: "App StoreでAncient Treesを入手",
+    androidNote: "Android版はまだありません。メールアドレスを残していただければ、公開日にお知らせします。",
+    emailLabel: "メールアドレス",
+    notifyMe: "知らせてほしい",
+    waitlistSent: "リストに登録されました。公開日にお知らせします。",
+    scanToOpen: "スマートフォンでスキャンすると、そちらで開けます。",
     photoClose: "閉じる",
     photoFull: "原寸で見る",
   },

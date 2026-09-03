@@ -61,7 +61,7 @@ import { roundedTrees } from "../lib/tree-count";
 // It used to be a second ternary (`es ? "es-ES" : "en-US"`), which gave every
 // other language American thousands separators under its own sentences.
 import type { Lang } from "../lib/ui-strings";
-import AppStoreBadge from "./AppStoreBadge.astro";
+import AppGetter from "./AppGetter.astro";
 
 interface AppModalStrings {
   /** Takes the formatted count, because the number sits inside the sentence
@@ -185,7 +185,7 @@ const title = T.title(rounded.toLocaleString(T.locale));
       <li><b>{T.f3n}</b> {T.f3}</li>
       <li><b>{T.f4n}</b> {T.f4}</li>
     </ul>
-    <AppStoreBadge lang={lang} ev="walks-app-badge" class="app-dialog-badge" />
+    <AppGetter lang={lang} ev="walks-app-badge" source="walks-modal" />
     <a class="go-btn ghost signin-more" href="/app" data-ev="app-cta">{T.more}</a>
   </div>
 </dialog>
