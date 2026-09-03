@@ -44,6 +44,7 @@ jobs:
           GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          POSTHOG_READ_KEY: ${{ secrets.POSTHOG_READ_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/daily_digest.py ${{ inputs.force && '--force' || '' }}
 
