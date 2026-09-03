@@ -37,6 +37,13 @@ jobs:
         with:
           fetch-depth: 300
 
+      # cryptography is the one dependency this workflow installs: ES256
+      # JWT signing for the App Store Connect API (scripts/asc_auth.py) has
+      # no stdlib path, unlike every other fetch in daily_digest.py, which
+      # sticks to urllib on purpose.
+      - name: Install the one dependency App Store Connect auth needs
+        run: pip install --quiet cryptography
+
       - name: Build the digest entry
         env:
           CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
@@ -45,6 +52,9 @@ jobs:
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           POSTHOG_READ_KEY: ${{ secrets.POSTHOG_READ_KEY }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/daily_digest.py ${{ inputs.force && '--force' || '' }}
 
