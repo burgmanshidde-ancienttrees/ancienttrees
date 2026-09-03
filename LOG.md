@@ -9,6 +9,55 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (continuation run 4) - Finished the in-flight _famous-germany claim, shipped 2 more Japan single-tree places
+
+Picked up where an earlier attempt in this window stopped early with 61 min
+still unspent. Found a standing `_famous-germany` verify claim with two
+partially-verified candidates sitting uncommitted (Münzenberg's Eiche an der
+Kirche, Passau's Friedenslinde). Both are real, alive, officially designated
+Naturdenkmäler, but neither clears the single-tree-destination bar with
+confidence (WEAK and UNCLEAR respectively, per the verifying notes
+themselves): no documented age/girth/legend for Münzenberg, and Passau's
+memorial plausibly draws the attention rather than the 150-year-old tree
+beside it. Wrote both up properly in `data/leads/munzenberg.json` and
+`data/leads/passau.json` (following the klingenberg-am-main.json precedent)
+rather than forcing either onto a thin page, and released the claim.
+
+**Also found and merged 3 already-written Matera stories** (mat_001-003)
+sitting in `data/research/matera-verified.json` from an earlier write pass.
+Matera stays unpublished: three verify passes already exhausted its register
+and it is stuck at 3 trees, one short of the 4-tree floor, none of the three
+clearing the single-tree exception. Recorded that in `data/leads/matera.json`
+so a future pass does not re-litigate it.
+
+**Made the single-tree-destination call on two Japan candidates** that an
+earlier pass had verified and explicitly left as "ready to ship if a future
+pass or Hidde judges the destination bar cleared": Jūnihon-yasu (12-branch
+hiba with a real legend and documented enthusiast pilgrimage trip reports)
+and Jakushin-san no Kusu (17.1m camphor, a purpose-built 1989 park, an active
+annual community rite every 11 January). Judged both clear the bar and
+published them as new single-tree places, `data/cities/kanagi.json` (kng_001)
+and `data/cities/ueki.json` (uek_001), full page sets built by hand. Fixed
+Japan's country-page count (47→49) that this raised. `preflight.py`,
+`superlatives.py` and `npm run build` all clean (one lastmod NOTE in `qa.py`
+is the usual shallow-clone sandbox artifact).
+
+One collision handled cleanly along the way: mid-session, `npx astro build`
+started failing on a syntax error in `site/src/lib/profile-js.ts` that I had
+not introduced. `gh run list` showed another session had already pushed a
+fix (`5c06dc12`) minutes earlier; pulled it and moved on rather than
+duplicating the fix.
+
+The two catania and two remaining _famous-japan "READY" leads that
+`leads.py --ready` listed this run were checked individually and are NOT
+actually ready: both Catania entries (Mascalucia, Motta Sant'Anastasia) are
+explicitly held on the day-trip boundary or unconfirmed access for a future
+standalone place, not a Catania addition; Shokawa-zakura and the Aira
+Kamo no Okusu (Japan's largest-girth tree, a strong future candidate) are
+pre-verification research notes, not delivered records, and need a dedicated
+verify pass before anyone judges them. Left all four alone rather than
+writing stories on unverified or already-declined material.
+
 ## 2026-09-03 (continuation run 3) - Refilled the shelf: 6 new single-tree Japan places, Tokyo +1
 
 7-day visits (visitors.py): 680 visits, 1210 views, still climbing (48→106→108→123 the last four days). `prepare.py` said REFILL THE SHELF FIRST (writable pile under 60), so per this run's own instructions that came before anything else. Rung 2 (health.py) was clear; no new reader submissions beyond 61/62 (processed below).
