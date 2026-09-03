@@ -1,0 +1,56 @@
+[
+ {
+  "id": "prv_001",
+  "name": "Big Lonely Doug",
+  "species": "Coast Douglas-fir (Pseudotsuga menziesii var. menziesii)",
+  "age_estimate": "roughly 1,000 years",
+  "age_min": 800,
+  "age_max": 1200,
+  "girth_cm": 1191,
+  "height_m": 66.0,
+  "location": {
+   "address": "Gordon Main logging road, Gordon River Valley, about 10 km north of Port Renfrew, Vancouver Island, BC",
+   "latitude": 48.64626,
+   "longitude": -124.45063,
+   "neighbourhood": "Gordon River Valley (Tree Farm Licence 46, Pacheedaht traditional territory)"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Big_Lonely_Doug",
+   "https://ancientforestalliance.org/big-lonely-doug-officially-measured-and-confirmed-as-canadas-2nd-largest-douglas-fir-tree/",
+   "https://happiestoutdoors.ca/avatar-grove-big-lonely-doug/"
+  ],
+  "access": "Free, on Crown land within Tree Farm Licence 46; the tree itself was marked with a green 'Leave Tree' ribbon by the logger who found it and left standing when the surrounding stand was clearcut in 2012, so there is no gate or permission needed. Reaching it needs a vehicle: the logging road is fine for a standard car up to the Gordon River bridge, then gets rough and steep, with 4WD/high clearance recommended beyond it (2WD drivers can park at the bridge and walk about 1.5 km up the road). From the road pullout a flagged, fairly steep trail (about 250 m round trip) drops through clearcut debris to the tree's base; the best full view is actually from the road itself.",
+  "transport": "No public transit. Drive from Port Renfrew via the Gordon Main logging road (roughly 15-20 minutes); high-clearance or 4WD recommended past the Gordon River bridge.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Discovered in 2011 by logger Dennis Cronin during a timber cruise, who wrapped it in ribbon reading 'Leave Tree' repeatedly; the surrounding old-growth stand was clearcut around it in 2012, leaving it standing alone in a bare clearcut, which is the whole story and the image the tree is famous for. Named in 2014 by photographer/activist T.J. Watt (Ancient Forest Alliance), a play on the species name and its isolation. Officially measured 18 April 2014 by forest ecologist Andy MacKinnon: height 66.0 m, circumference 11.91 m (girth_cm above), diameter 3.79-3.91 m depending on source (sources give both 3.79m and 3.91m for diameter; girth of 11.91m is consistent across sources so treat that as the reliable figure), canopy spread 18.33 m. Ranked Canada's 2nd-largest Douglas-fir by volume (701 AFA BC Big Tree Registry points). Age given as 'seeded around 1000 CE' by Wikipedia/AFA; no ring count cited, so treated here as a broad vague estimate rather than a precise dendrochronological reading. Single-tree-destination test: clearly passes, it is an internationally known symbol of old-growth logging and conservation (subject of a 2014 viral photo, a 2019 book 'Big Lonely Doug' by Harley Rustad, and steady visitor traffic documented on AllTrails/guidebooks) and people drive a rough logging road specifically for this one tree. Two independent sources agree on existence, species, dimensions and story (Wikipedia, Ancient Forest Alliance); access description corroborated by a third (happiestoutdoors.ca).",
+  "container": "new:Port Renfrew"
+ },
+ {
+  "id": "prv_002",
+  "name": "Red Creek Fir",
+  "species": "Coast Douglas-fir (Pseudotsuga menziesii var. menziesii)",
+  "age_estimate": "roughly 1,000 years",
+  "age_min": 800,
+  "age_max": 1200,
+  "girth_cm": 1330,
+  "height_m": 74.0,
+  "location": {
+   "address": "Red Creek Fir Forest Service Recreation Site, San Juan River valley, about 15 km / 45 minutes' drive east of Port Renfrew, Vancouver Island, BC",
+   "latitude": 48.579743,
+   "longitude": -124.220776,
+   "neighbourhood": "San Juan River valley (often loosely called 'the Walbran' by visitors, but it sits in the San Juan valley, not the Walbran Valley proper)"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Red_Creek_Fir",
+   "https://www.alltrails.com/trail/canada/british-columbia/red-creek-fir",
+   "https://happiestoutdoors.ca/wp-content/uploads/2018/04/2017-Tall-Tree-Driving-Directions.pdf"
+  ],
+  "access": "Free, Crown land within a designated Forest Service Recreation Site and Old-Growth Management Area, no gate or permission needed. Reached via rough, largely unmaintained industrial logging roads (high-clearance vehicle essential, 4WD preferable, roughly a 45-minute drive from Port Renfrew), then an easy, well-used trail of about 1 km return (10-15 minutes) passing several large old cedars. Road conditions vary year to year with storm damage and active logging in the area; a 2026 pass should check current conditions before sending a reader (recent reports mention detours around bridge work and, separately, a logging-protest blockade on a nearby Walbran-area road in early 2026), so state that plainly rather than assuming the road is always open.",
+  "transport": "No public transit. High-clearance vehicle required, driving from Port Renfrew via industrial logging roads (about 45 minutes), followed by a short signed hiking trail.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "World's largest known Douglas-fir by volume (349 cubic metres of trunk), 'the highest tree score of any known tree in Canada' per the BC Big Tree Registry lineage behind these figures. Diameter 4.23 m at 1.37 m above the base, girth about 13.3 m (girth_cm above), crown spread averaging 23 m. Height is reported inconsistently across sources: 73.8 m in some tourism/guide sources versus 74.0 m on Wikipedia; both are close enough to be the same measurement rounded differently, recorded 74.0 m here, flag the discrepancy for the writer. The tree has evidently lost its top to storms at least twice historically (visible scarring/regrowth pattern), meaning it may once have been taller still. As of the most recent source reviewed (2016-era), it lacked permanent statutory old-growth protection despite sitting inside a Recreation Site/OGMA, which a writer should phrase carefully (protected in practice via land designation, not by a species-specific order). Age given as 'seeded around 1000 CE' with no ring count cited; treated as a broad vague estimate, not a precise reading. Single-tree-destination test: clearly passes, it is a standing item on Vancouver Island big-tree itineraries specifically because it is the largest known Douglas-fir on Earth by volume, with dedicated trip reports, an AllTrails page (33 reviews) and guidebook driving directions built around this one tree alone. Two independent sources agree on existence, species, dimensions (Wikipedia, AllTrails/trip reports); coordinates cross-checked between the brief's figure and Wikipedia's stated 48°34'46\"N 124°13'15\"W, which converts to the same point.",
+  "container": "new:Port Renfrew"
+ }
+]

@@ -216,17 +216,6 @@
       "status": "lead"
     },
     {
-      "name": "Separation Tree",
-      "lat": -37.829326,
-      "lng": 144.983463,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Separation_Tree.jpg",
-        "https://commons.wikimedia.org/wiki/File:Separation_Tree_20180726-019.jpg",
-        "https://commons.wikimedia.org/wiki/File:Separation_Tree_Rest_House_exterior_20180726-018.jpg"
-      ],
-      "status": "lead"
-    },
-    {
       "name": "The Old Gum Tree",
       "lat": null,
       "lng": null,
@@ -296,6 +285,18 @@
       "species": "Fig (Ficus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "reason": "not a collectible point: the Queensland Heritage listing covers three separate fig groupings (5 trees at Normanby Fiveways, 7 at Marshall Park, 3 at Prospect Terrace) strung along a full kilometre of Kelvin Grove Road, with no single obvious place to stand, the same 'avenue' shape as the rejected Plane Trees of La Rambla precedent (checked 2026-09-01, source: en.wikipedia.org/wiki/Kelvin_Grove_Fig_Trees_and_Air_Raid_Shelter). If wanted later, the Prospect Terrace corner alone (3 weeping figs plus the WWII air raid shelter, now a bus shelter, with a fig branch grown onto its roof) is a narrower, genuinely compact candidate that was not separately researched in this pass."
+    },
+    {
+      "name": "Separation Tree",
+      "lat": -37.829326,
+      "lng": 144.983463,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Separation_Tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:Separation_Tree_20180726-019.jpg",
+        "https://commons.wikimedia.org/wiki/File:Separation_Tree_Rest_House_exterior_20180726-018.jpg"
+      ],
+      "status": "blocked",
+      "reason": "CONFIRMED DEAD, never publish as a collectible entry. This 400-year-old river red gum (Eucalyptus camaldulensis) on Tennyson Lawn, Royal Botanic Gardens Victoria, was ringbarked by vandals in 2010 (about 90% of cambial tissue removed) and again in 2013 (the remaining 10% destroyed); Melbourne Gardens' own director confirmed it dead, and the canopy plus parts of the trunk were lopped in 2015 for safety, leaving only the main trunk and three scaffold limbs standing by July 2015 as a monument, not a living tree (checked 2026-09-03, sources: en.wikipedia.org/wiki/Separation_Tree, abc.net.au/news/2015-01-06/separation-tree-in-melbournes-botanic-gardens-unlikely-to-survive/6001782, gardendrum.com/2015/03/02/historic-separation-tree-lost-forever). NOTE FOR A FUTURE PASS: 26 saplings propagated from the original's seed have been planted around Victoria, including one back in the Royal Botanic Gardens itself and one at Parliament House Gardens (per Wikipedia, citing Royal Botanic Gardens Victoria sources); per CLAUDE.md's rule that a fallen original honestly succeeded by a living replanting may pass when the entry describes the LIVING tree, one of these specific saplings could in principle become a Melbourne entry, but none was individually located, aged or verified in this pass, so this remains a lead rather than a publishable tree."
     }
   ]
 }

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pem_001",
+    "name": "The Gloucester Tree",
+    "species": "Karri (Eucalyptus diversicolor)",
+    "age_estimate": "at least 250 years",
+    "age_min": 250,
+    "age_max": null,
+    "girth_cm": 730,
+    "location": {
+      "address": "Gloucester National Park, Pemberton, Western Australia 6260",
+      "latitude": -34.447653,
+      "longitude": 116.059522,
+      "neighbourhood": "Gloucester National Park, ~3km from Pemberton town centre"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Gloucester_Tree",
+      "https://www.abc.net.au/news/2025-04-16/gloucester-tree-climb-wa-to-be-rebuilt-lower-height/105183702",
+      "https://www.pembertonvisitor.com.au/nature-national-park/gloucester-tree",
+      "https://www.pembertondiscoverytours.com.au/post/climbing-the-gloucester-tree-pemberton"
+    ],
+    "access": "Free to view; DPaW national park day-use entry fee applies for vehicle entry to Gloucester National Park. Open daylight hours. The climb itself (pegs spiralling the trunk) reopened 1 July 2026 after a 3-year safety closure, now restricted to a new 37m platform (was 53m) after the crown was trimmed 7m for rot; no harness provided, climb at own risk.",
+    "transport": "No public transport to the park; ~5 minute drive / 3km from Pemberton town, which itself is rural and has limited coach/bus service. Car is the practical way in.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "One of WA's most iconic trees: a 61m karri (crown now ~54m after 2026 trim) in Gloucester National Park, selected in 1947 as a fire-lookout tree, one of 8 built in the SW 1937-1952. Climbed first by forester Jack Watson (Gallipoli veteran, later Kings Park superintendent) in a 6-hour test climb; pegged by George Reynolds. Named for Prince Henry, Duke of Gloucester, who visited in 1946/47 and personally bored climbing-peg holes with an auger. World's second-tallest fire-lookout tree (after the nearby Dave Evans Bicentennial Tree, part of the same trio with the Diamond Tree). Girth at climbing zone recorded as 7.3m (24ft) in the 1947 test climb account (Wikipedia, citing forestry history) -> girth_cm 730. Age: several tourism/press sources (Lonely Planet, WA tourism sites) independently give 'estimated at least 250 years old' as a floor with no stated upper bound; karri as a species can live to ~350 years per Eucalyptus diversicolor sources, but that upper figure is about the species not this specimen, so age_max left null rather than bridged. Alive and current: climb closed Nov 2023 over safety/rot concerns (opposed publicly by local MP Louise Kingston over tourism impact), crown trimmed 7m, reopened 1 July 2026 with a lower 37m viewing platform -- this is very recent, strong evidence of continued life and active management. Location: brief's coordinate (-34.447653, 116.059522) matches an OSM node tagged tourism=attraction with wikidata=Q257151 within ~150m (OSM node at -34.4477824, 116.0574797); Wikipedia/Wikidata's own infobox coordinate is a looser ~500m off, likely park-level, so the brief's figure is the better one and is used here. Single-tree-destination test: clearly passes -- a named, guidebook-covered, nationally reported tourist attraction that people specifically visit Pemberton for.",
+    "container": "new:Pemberton"
+  }
+]
