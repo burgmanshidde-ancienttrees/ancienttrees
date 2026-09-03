@@ -536,7 +536,7 @@ setTimeout(function(){
             ("rest/v1/submissions", "form posts to our backend"),
         ]),
         (f"{base}/app.html", "app page", [
-            ('id="waitlist"', "waitlist form"),
+            ('class="appstore-badge', "App Store badge (the app shipped 2026-09-03, page is a download page now)"),
         ]),
     ]
 
