@@ -1,11 +1,11 @@
 {
  "_note": "Japanese overlay for Tokyo, written 2026-08-22 from data/cities/tokyo.json. Text only: every coordinate, photo, licence, age range and best_time stays in the English source file. COUNTING NOTE for the checker: Japanese does not put spaces between words, so a whitespace-token word count returns 1 for a whole paragraph. Counted in CHARACTERS instead, on the convention agreed with the brief: intro 150-250 characters (the equivalent of the 60-100 word rule), each story 350-600 characters (the equivalent of 150-250 words). Titles and meta descriptions are inside the English character caps as written. Search terms follow Japanese usage rather than a literal translation of 'ancient trees': 巨木 (giant tree), 古木 (old tree), 巨樹, 天然記念物 (Natural Monument). Three judgement calls are recorded in the pass report: the Kamakura wording in the intro, the Meiji Jingu Gaien designer's name in kanji, and a dropped '1930s landmark' clause in tok_005.",
  "city": "東京",
- "title": "東京の巨木と古木15選：樹齢750年の善福寺のイチョウから",
- "meta_description": "東京最古の木は、善福寺の樹齢約750年のイチョウ。周囲の街を焼き尽くした火災を生き延びた巨木と古木15本を、場所と行き方とともに紹介します。",
+ "title": "東京の巨木と古木16選：樹齢750年の善福寺のイチョウから",
+ "meta_description": "東京最古の木は、善福寺の樹齢約750年のイチョウ。周囲の街を焼き尽くした火災を生き延びた巨木と古木16本を、場所と行き方とともに紹介します。",
  "intro": "東京は、ほとんどどの首都よりも多く焼けてきた。1657年の明暦の大火、1868年の上野戦争、1923年の関東大震災、そして1945年3月の東京大空襲が、そのたびに街区ごと消し去っている。それでも古木が残ったのは、運だけでなく樹木の性質による。イチョウは樹皮も材も水分を多く含み、火がつきにくい。ここに挙げた15本のうち5本がイチョウで、いずれも寺社の境内に幹の傷を残したまま立っている。最も古い一本は鎌倉時代にさかのぼり、最も新しいのは写真で誰もが見たことのある樹齢100年ほどの並木である。",
  "question_title": "東京で最も古い木は？善福寺の樹齢約750年のイチョウ",
- "question_meta": "東京最古の木は、善福寺の「逆さイチョウ」。樹齢約750年、1926年から国の天然記念物。その伝説と正確な場所、そして周辺の巨木14本を紹介します。",
+ "question_meta": "東京最古の木は、善福寺の「逆さイチョウ」。樹齢約750年、1926年から国の天然記念物。その伝説と正確な場所、そして周辺の巨木15本を紹介します。",
  "question_answer": "東京で最も古い木は、港区元麻布の善福寺にあるイチョウで、樹齢は約750年と推定され、1926年から国の天然記念物に指定されている。低い枝から気根が垂れ下がる姿から「逆さイチョウ」と呼ばれ、麻布十番駅から徒歩7分のところに立っている。",
  "question_context": "東京の「最も古い木」には、他の多くの首都よりも競合が多い。浅草の浅草寺にも幹を焼かれたイチョウがあり、12世紀の源頼朝に結びつけられた伝説から、通常は樹齢約800年とされている。善福寺の一本より古いことになる。ただしその年数はすべて口伝によるもので、この木は1945年の焼損の後に天然記念物の指定を失っている。一方で善福寺のイチョウは1926年に指定された国の天然記念物であり今も有効で、年輪からの推定もおよそ750年を裏付けている。ガイドブックも港区の観光部門もこれを東京最古の生きている木と呼び、浅草寺の一本は、惜しいが検証の弱い二番手として扱っている。二本には共通点がある。1945年3月の同じ空襲を、どちらも生き延びた。イチョウの材は、ほかの多くの樹木と違って火がつきにくいからである。善福寺の木にはさらに自分の伝説があり、1229年に親鸞が地面に挿した杖から育ったと伝えられている。行き方は、南北線または大江戸線の麻布十番駅から徒歩7分。",
  "faq": [
