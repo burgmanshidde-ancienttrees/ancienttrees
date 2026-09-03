@@ -81,6 +81,28 @@ a private repo needs one. The cheaper version, if he wants it, is moving the
 strategy documents to a private repo and leaving code and data public: those
 files are the lek, not the trees.
 
+## 2026-09-03 - A photograph on every one of the seven
+
+21 Commons candidates rendered and looked at against the Cadiz standard. Seven approved, one per tree, fourteen rejected, none held. All seven verified loading from the live feed at their stored dimensions.
+
+| tree | licence | photographer |
+|---|---|---|
+| Fortingall Yew | CC BY-SA 3.0 | Paul Hermans |
+| Old Tjikko | CC BY-SA 3.0 | Karl Brodowsky |
+| El Arbol del Tule | CC BY-SA 3.0 | boskimano |
+| Tane Mahuta | CC BY-SA 4.0 | W. Bulach |
+| Te Matua Ngahere | CC BY 4.0 | Pseudopanax |
+| Kongeegen | public domain | Leif Bolding |
+| Stelmuze Oak | CC BY-SA 4.0 | Algimantas Navickas and others |
+
+**The risk was the two kauri**, which stand in the same forest and could have been attached to the wrong trunk. Looked at rather than read about, they are not alike at all: Tane Mahuta is a smooth pale column, Te Matua Ngahere is squat and crusted with a broken top, and each approval is corroborated by a second independent file of the same trunk. That is what made an approval honest instead of a `held`.
+
+**The rejections are recorded, which is half the value**: two of Stelmuze's three candidates were a two-litas coin and a sheet of postage stamps, Te Matua Ngahere's archival plate is black and white, and Kongeegen's winter shot is aimed into the sun so the tree reads as a silhouette against blown sky. An unrecorded reject is an image the next pass pays to judge again.
+
+**A merge bug worth knowing about, because the lane will run again.** The candidates went into the queue with a doubled `File:File:` prefix, url-encoded titles and no licence, author or thumbnail, so the first fetch downloaded nothing at all and reported success. Resolved from the Commons API, which is where the credits have to come from anyway. Whoever automates this merge should resolve the metadata at queue time rather than at fetch time.
+
+**Left alone deliberately**: these seven sit on `thumb.wikimedia.org`, where fourteen existing photographs already sit, and `img_srcset()` only recognises `upload.wikimedia.org`. So they render at one fixed 960px instead of a srcset. Both hosts serve the same bytes, but rewriting 21 live photo urls on the strength of checks Wikimedia was rate-limiting is a speculative change to working pages. It is an optimisation, not a fault.
+
 ## 2026-09-03 - The lane walked: six new places, seven famous trees, every one in a ranking
 
 The first pass of rung (0c), dispatched the same afternoon it was written.
