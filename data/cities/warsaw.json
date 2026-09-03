@@ -1,652 +1,682 @@
 {
-  "city": "Warsaw",
-  "country": "Poland",
-  "status": "needs_curation",
-  "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left around Janusz Korczak's orphanage. Royal parks add two more: a pair of oaks in the king's own Lazienki garden, and a lime named for the king who built Wilanow.",
-  "meta_description": "Warsaw's remarkable trees carry wartime, royal and Enlightenment history: a 600-year oak, a WWII poplar, Korczak's orphanage oak, royal park oaks.",
-  "question_answer": "Warsaw's oldest tree is Dab Mieszko I (King Mieszko I's Oak), a pedunculate oak on Nowoursynowska Street in Ursynow, estimated at 600 to 640 years old depending on the survey cited. It stands at the edge of Natolin Forest, one of the last fragments of the wild woodland that covered this ground before the city existed.",
-  "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 17, and the history each carries.",
-  "question_context": "Warsaw's tree ages are harder to pin down than in cities with continuous records, because the city's own archives and much of its built and natural heritage were destroyed between 1939 and 1945. Dab Mieszko I is the exception precisely because it predates that entire period by centuries: even the more conservative age estimates put its origin well before Poland's partitions, let alone the Second World War, and successive surveys since its 1962 protection have each revised the figure without ever seriously challenging its status as the region's oldest oak. Its main rival for the title of Warsaw's most storied tree is not a contest of age at all. The Poplar of the Defenders, roughly a century old, and Dr Korczak's Oak, undated but standing beside a building that survived the war intact, both carry more concentrated history in fewer decades than the Mieszko oak accumulated in centuries, a reminder that this city's remarkable trees earn their place by two different measures, sometimes separately, occasionally both at once.",
-  "faq": [
-    {
-      "q": "What is the oldest tree in Warsaw?",
-      "a": "Dab Mieszko I, a pedunculate oak on the edge of Natolin Forest in Ursynow, estimated at 600 to 640 years old."
-    },
-    {
-      "q": "Are Warsaw's remarkable trees free to visit?",
-      "a": "14 of the 18 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
-    },
-    {
-      "q": "Why does Warsaw have so few very old trees?",
-      "a": "The city was almost entirely destroyed between 1939 and 1945. Most trees standing today, like most buildings, date from after the war; the handful that survived carry unusually concentrated history."
-    },
-    {
-      "q": "Which Warsaw tree is linked to Janusz Korczak?",
-      "a": "A Hungarian oak at the corner of Karolkowa and Jaktorowska streets, beside the surviving building of the orphanage Korczak ran until he and the children in his care were deported to Treblinka in 1942."
-    }
-  ],
-  "trees": [
-    {
-      "id": "war_001",
-      "name": "Dab Mieszko I (King Mieszko I's Oak)",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "600-640 years",
-      "age_min": 600,
-      "age_max": 640,
-      "location": {
-        "address": "Nowoursynowska Street, edge of Natolin Forest, Ursynow",
-        "latitude": 52.142222,
-        "longitude": 21.069444,
-        "neighbourhood": "Ursynow"
-      },
-      "story": "Warsaw's oldest tree survived six centuries of Polish history only to be set on fire by a person, not a storm, in June 2019. The oak, named for Poland's first recorded ruler though it began growing roughly two and a half centuries after his death around 992, stands at the edge of Natolin Forest on the city's southern edge, one of the last fragments of the wild Mazovian woodland that once covered this ground before Warsaw existed at all. Most of its crown has died back over the decades; steel cables and supports now hold the one thick surviving branch upright, and a cavity in the trunk has been filled with brick and cement, an old-fashioned repair meant to keep vandals and rot out rather than to look convincing. The arson attack in 2019 might have finished a lesser tree; this one produced leaves again the following spring. Its exact age has shifted across different surveys and plaques over the decades, estimates ranging from roughly 600 to 640 years depending on which measurement is cited, and an older on-site plaque is now known to have understated it. Whatever the precise figure, it remains the region's oldest documented oak and the clearest living link this city has to the forest it was built on top of.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/D%C4%85b_Mieszko_I",
-        "https://otwartawarszawa.pl/przewodnik/dab-mieszko-i",
-        "https://warszawawpigulce.pl/warszawskie-drzewa-ktore-sa-najstarsze-a-z-ktorymi-zwiazana-jest-niezwykla-historia/"
-      ],
-      "access": "Free, public street/forest edge, open at any time",
-      "transport": "Bus or metro to Ursynow, then a short walk, roughly 30-40 minutes from the centre",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/D%C4%85b_Mieszko_1993.jpg",
-        "license": "Public domain",
-        "attribution": "Radoslaw Botev, via Wikimedia Commons",
-        "status": "approved",
-        "width": 507,
-        "height": 628
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-        "kind": "fruit"
-      }
-    },
-    {
-      "id": "war_002",
-      "name": "The Poplar of the Defenders",
-      "species": "Canadian Poplar (Populus x canadensis)",
-      "age_estimate": "about 99 years",
-      "age_min": 95,
-      "age_max": 100,
-      "location": {
-        "address": "ul. Grojecka 95, beside the Barykada Wrzesnia monument, Ochota",
-        "latitude": 52.209992,
-        "longitude": 20.97615,
-        "neighbourhood": "Ochota"
-      },
-      "story": "A mass grave was reportedly dug beneath this tree in August 1944, according to testimony from survivors of the transit camp that once stood around it. The poplar was already mature by then, planted in the mid-1920s in what was still open ground on Warsaw's western edge, and stood inside the barricaded defense line that Polish forces held here during the September 1939 siege of the city, growing up alongside genuine combat rather than merely outliving it at a distance. Five years later the same patch of ground became Zieleniak, a market square the Germans converted into a transit camp for tens of thousands of Ochota residents rounded up during the 1944 Warsaw Uprising, a place survivors would later describe as a site of mass killing before deportation. Remains were exhumed from beneath the poplar after the war ended. None of that history shows on the tree itself today: at roughly 25 metres tall with a 453-centimetre trunk, it was named Warsaw's Tree of the Year in 2025 and reached the national final the following year, recognised now for its size and condition rather than for what the ground beneath it once held. The Barykada Wrzesnia monument stands beside it, the closest thing the site has to an explanation.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/Topola_Obro%C5%84c%C3%B3w",
-        "https://zzw.waw.pl/2026/03/02/warszawska-topola-w-finale-konkursu-drzewo-roku-2026/",
-        "https://warszawawpigulce.pl/warszawskie-drzewa-ktore-sa-najstarsze-a-z-ktorymi-zwiazana-jest-niezwykla-historia/"
-      ],
-      "access": "Free, public street, open at any time",
-      "transport": "Tram or bus to Ochota, then a short walk, roughly 15-20 minutes from the centre",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Topola_obro%C5%84c%C3%B3w_zima.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Via Wikimedia Commons",
-        "status": "approved",
-        "width": 3344,
-        "height": 2728
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "war_004",
-      "name": "Dr Korczak's Oak",
-      "species": "Hungarian Oak (Quercus frainetto)",
-      "age_estimate": "not documented",
-      "age_min": 100,
-      "age_max": 180,
-      "location": {
-        "address": "Corner of ul. Karolkowa and ul. Jaktorowska, Wola",
-        "latitude": 52.234378,
-        "longitude": 20.977128,
-        "neighbourhood": "Wola"
-      },
-      "story": "Janusz Korczak ran his orphanage from this corner for 29 years, until German soldiers marched him and roughly 200 children from the building to a train bound for Treblinka in August 1942, where all were murdered. He was offered a chance to walk away alone, by then already a well-known pediatrician and radio personality; he refused, choosing to stay with the children rather than abandon them, and that refusal is most of why his name is still known today far beyond Poland. The orphanage building itself, designed in 1911 for the Jewish charity Pomoc dla Sierot and completed the following year, is the only structure on this stretch of what was then Krochmalna Street to survive the district's wartime destruction; everything burned around it, then everything else standing was cleared after the war, leaving Korczak's building alone on ground later renamed Jaktorowska Street in 1970. The Hungarian oak growing at its corner, protected as one of Warsaw's natural monuments and formally named for Korczak, stands roughly 22 metres tall with a trunk 440 centimetres around. No record fixes exactly when it was planted, so it may or may not have already stood here while the orphanage still operated, but it has grown up beside the one building in the neighbourhood old enough to remember.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
-        "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
-      ],
-      "access": "Free, public street corner, open at any time",
-      "transport": "Tram or bus to Wola, then a short walk, roughly 15 minutes from the centre",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/D%C4%85b_korczaka.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Panek, via Wikimedia Commons",
-        "status": "approved",
-        "width": 2735,
-        "height": 3695
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "war_005",
-      "name": "Ciechomski's Pear",
-      "species": "European Pear (Pyrus communis)",
-      "age_estimate": "disputed, possibly younger than the 1870 legend claims",
-      "age_min": 60,
-      "age_max": 156,
-      "location": {
-        "address": "Corner of ul. Raclawicka and ul. Baluckiego, Stary Mokotow",
-        "latitude": 52.2018726,
-        "longitude": 21.0204314,
-        "neighbourhood": "Stary Mokotow"
-      },
-      "story": "A pear tree is a strange choice for a memorial, which is exactly why this one has stayed interesting long after the man it supposedly honours. Walenty Ciechomski was the last soltys, the village administrator, of Mokotow before the settlement was absorbed into Warsaw, and a veteran of the failed 1863 uprising against Russian rule; his gravestone at Sluzew cemetery still identifies him by that title alone. Local tradition holds that the pear was planted in 1870 to mark his settling on this corner, and the story has been repeated long enough to earn the tree informal protected status under his name. Historians examining the claim more recently have pushed back on most of it: a pear is an unusual and impractical species to plant as a personal memorial, the tree's apparent age does not obviously match an 1870 planting, and the likelier explanation is that it simply seeded itself on the corner sometime later, with Ciechomski's name attached to it afterward rather than at the root. Nobody disputes that Ciechomski himself was real, or that he fought in an uprising that cost Poland dearly and gained it nothing immediate. What is genuinely uncertain is whether this particular tree has anything to do with him at all, and this entry says so rather than repeating the tidier version of the story.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/Walenty_Ciechomski",
-        "https://warszawa.naszemiasto.pl/grusza-ciechanowskiego-sprzed-130-lat-czy-zasadzil-ja/ar/c1-8265208",
-        "https://odkrywcawarszawy.blogspot.com/2016/02/ciekawostka-grusza-skrzyzowanie-ul.html"
-      ],
-      "access": "Free, public street corner, open at any time",
-      "transport": "Tram or bus to Stary Mokotow, then a short walk, roughly 15-20 minutes from the centre",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate"
-    },
-    {
-      "id": "war_006",
-      "name": "The Royal Oaks of Lazienki",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "about 200 years",
-      "age_min": 180,
-      "age_max": 220,
-      "girth_cm": 450,
-      "location": {
-        "address": "Lazienki Krolewskie park, near the New Orangery, west side of the Chinska Droga path, Srodmiescie",
-        "latitude": 52.212386581207795,
-        "longitude": 21.032272068224383,
-        "neighbourhood": "Srodmiescie (Lazienki Krolewskie)"
-      },
-      "story": "For almost two centuries, two pedunculate oaks have grown side by side in the Romantic Garden of Lazienki Krolewskie, the park Poland's last king built for himself in the 18th century. The palace museum's own page on the park's oldest trees states it plainly: both oaks measure 450 centimetres round and 28 metres tall, and both hold protected natural-monument status. That girth on a pedunculate oak points to real age, roughly two hundred years, old enough that the pair were already substantial trees when Poland was partitioned off the map of Europe entirely, decades before the country existed again to protect them. Lazienki is the most visited royal park in the country, its lake, palace and open-air theatre drawing crowds who mostly walk past two more oaks without a glance. These stand near the New Orangery, on the western side of the path called Chinska Droga, close enough together that a visitor can take in both in one stop. The garden itself is free every day, no ticket needed beyond the museum buildings and the odd ticketed pavilion, making this the easiest stop on the whole Warsaw list to fold into an ordinary afternoon in the park.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.2994, designated 1974-08-20)",
-        "https://www.lazienki-krolewskie.pl/en/aktualnosci/najstarsze-drzewa-lazienek-krolewskich"
-      ],
-      "access": "Free, the park gardens are open daily to the public at no charge (only some buildings/museum interiors are ticketed)",
-      "transport": "Bus or tram to Lazienki Krolewskie, short walk within the park to the New Orangery area",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Two oaks, both protected, both at this spot per register + Lazienki Museum's own page (girth 450cm, height 28m, 'almost two centuries'). Museum page says 'Romantic Garden', register says 'near the New Orangery'; both real, closely-sited features inside the same park, very likely the same pair, not asserted as identical beyond that since no single source states it explicitly.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-        "kind": "fruit"
-      }
-    },
-    {
-      "id": "war_007",
-      "name": "King Jan's Linden",
-      "species": "Small-leaved Lime (Tilia cordata)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Wilanow palace park, south side of the main avenue leading to the palace, ul. Stanislawa Kostki Potockiego 10/16, Wilanow",
-        "latitude": 52.1649957493684,
-        "longitude": 21.08697415082122,
-        "neighbourhood": "Wilanow"
-      },
-      "story": "Local and museum tradition names this lime for King Jan III Sobieski, who built Wilanow Palace in the late 17th century and is documented, in general accounts of the gardens, as having planted lindens on the grounds himself. No source ties this specific tree to that planting, so its age stays undocumented here rather than borrowed from a king's biography, but the name has stuck regardless, one linden singled out among the palace's roughly two dozen protected monument trees. Wilanow's own inventory of its monument trees records 27 of 28 as living in good condition, with only a single dead specimen elsewhere in the gardens, its crown already removed, nothing like the healthy tree this one is described as. It grows on the south side of the main avenue leading up to the palace, close enough to the approach that anyone walking in sees it before they see the building. Wilanow is Warsaw's grandest surviving baroque residence, spared the destruction that levelled most of the city in 1944, and its gardens charge an entry fee, a rare exception among the free public parks the rest of this page favours.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.3470, designated 1975-01-31)",
-        "https://wilanow-palac.pl/drzewa-pomnikowe-w-wilanowie"
-      ],
-      "access": "Paid entry to the Wilanow palace park grounds",
-      "transport": "Bus to Wilanow, short walk into the palace park grounds",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Register + Wilanow's own monument-tree inventory (27 of 28 living, none matching this description as the dead one) confirm the tree is alive and protected. The Sobieski-planting legend is named but not dated to this specific tree (bridge-claim avoided): no source ties this individual specimen to his tenure, so age stays undocumented. A reported girth 'over 4m' could not be independently confirmed this pass (the specific subpage 404'd); treat as unconfirmed.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          6,
-          7
-        ],
-        "label": "June to July, when it flowers",
-        "kind": "flowers"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "war_008",
-      "name": "Niemcewicz's Walnut",
-      "species": "Black Walnut (Juglans nigra)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Grounds of the Krasinski Palace, ul. Nowoursynowska 166, SGGW campus, Ursynow",
-        "latitude": 52.16445651385054,
-        "longitude": 21.05077825090984,
-        "neighbourhood": "Ursynow"
-      },
-      "story": "A black walnut, a species more at home on the eastern seaboard of North America, grows by a Polish palace named for a man who spent time in exile there. Julian Ursyn Niemcewicz, writer, playwright and a companion of Tadeusz Kosciuszko through Poland's failed 18th century uprisings, owned this estate from 1822 and built a library on it; the poet Juliusz Slowacki visited in 1830 and admired what he found. Polish Wikipedia's own article on the palace, citing Warsaw city hall's register of natural monuments, confirms the walnut by name as a protected specimen, and a 2023 photograph on Wikimedia Commons shows it still standing that year. No source dates its planting to Niemcewicz's own tenure, so this page states the naming rather than inventing a birth year to match it. The building passed through several owners after him and has belonged to Warsaw's agricultural university since 1956, its grounds closed to outsiders for decades until the terraced garden behind the palace reopened to the public in 2025, free, after nine years of local campaigning. The tree that outlasted every one of those owners is now something almost nobody who planted it could have counted on: visible again.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.3472)",
-        "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Krasi%C5%84skich_w_Warszawie_(Ursyn%C3%B3w) (citing Warsaw city hall's BIP register of natural monuments)"
-      ],
-      "access": "Free. The palace's terraced garden, where the tree stands, has been open to the public daily April-October, 8am-6pm, since 2025",
-      "transport": "Metro or bus to Ursynow (SGGW campus, Nowoursynowska 166), short walk to the Krasinski Palace",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Register + Polish Wikipedia's dedicated Krasinski Palace article (citing Warsaw city hall's BIP register) independently confirm the tree by name. A 2023-dated Wikimedia Commons photo shows it standing that year. Named for Julian Ursyn Niemcewicz, a former owner (from 1822), but no source dates the planting to his tenure, so age stays undocumented rather than bridged from his biography.",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "war_009",
-      "name": "The Szustra Oaks",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Park Promenada-Morskie Oko, beside Palac Szustra, off ul. Pulawska, Mokotow, Warszawa",
-        "latitude": 52.204592852861396,
-        "longitude": 21.025444837929808,
-        "neighbourhood": "Mokotow (Park Morskie Oko)"
-      },
-      "story": "Five pedunculate oaks stand together near Palac Szustra, the neoclassical villa at the heart of Park Morskie Oko, registered as one natural monument in 1978. Princess Izabela Lubomirska commissioned the palace and its grounds in the 1770s, designed by the architects Szymon Boguslaw Zug and Efraim Szreger; the estate passed to Anna Potocka in 1820, and in 1845 the banker Franciszek Szuster bought it and opened the lower part of the grounds to the public as a promenade, which is where the district gets its name. The palace burned during the 1944 Warsaw Uprising and was rebuilt after the war. Warsaw's own environmental department lists a pedunculate oak next to the palace among the park's protected natural monuments, though the register gives no age or measurements for any of the five, only their 1978 designation date. Park Morskie Oko, also called Park Promenada-Morskie Oko, is one of Mokotow's most visited green spaces, its ponds and paths busy on any warm weekend, and the oaks stand a short walk from the palace steps, easy to overlook next to a building with so much of its own history on display. Nobody has measured them yet: if you know how old they are, this is the page to tell us on.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.2969, designated 1978-04-10)",
-        "https://zabytek.pl/en/obiekty/warszawa-park-promenada-morskie-oko-teren-dawnego-parku-szustra"
-      ],
-      "access": "Free, the park is open daily to the public at no charge",
-      "transport": "Tram or bus to Dolna/Pulawska, short walk into the park",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Register (INSPIRE PL.ZIPOP.1393.PP.1465011.2969) designates five oaks as one 1978 listing at Palac Szustra / Park Morskie Oko; single coordinate covers the group. Warsaw's own park page (eko.um.warszawa.pl) and zabytek.pl's heritage record independently confirm a protected oak stands beside the palace within the public park, which is the second, tree-relevant source. No age or girth documented anywhere found; access is not in question, the palace sits inside a public municipal park.",
-      "location_precision": "approximate",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-        "kind": "fruit"
-      }
-    },
-    {
-      "id": "war_010",
-      "name": "The SGGW Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Aleja Niepodleglosci, on the edge of SGGW's former Mokotow campus, Stary Mokotow, Warszawa",
-        "latitude": 52.20846275188966,
-        "longitude": 21.007381057320774,
-        "neighbourhood": "Mokotow (Stary Mokotow)"
-      },
-      "story": "An oak stands on Aleja Niepodleglosci, on the edge of what was once the main campus of SGGW, the Warsaw University of Life Sciences. The school received this land in 1923, carved from the old Pola Mokotowskie exercise fields, and spent the interwar years raising pavilions, a library and student housing on the site. In 1956 Warsaw swapped that land for territory further south in Ursynow, and SGGW has been based there ever since; nothing agricultural remains in Mokotow except this avenue and its name. The oak was declared a protected natural monument in 1974, by which point the university it once fronted had already left the neighbourhood behind. No source beyond the city's own register of protected trees has produced an age or a girth for it, so both stay open questions, exactly the kind a passer-by with a tape measure could close in a minute. Aleja Niepodleglosci is a wide public avenue, walked and cycled every day, with no gate anywhere near the tree and nothing to buy a ticket for. It is easy to find and, once you know which side of the street to look on, impossible to miss.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.2999, designated 1974-08-20)",
-        "https://www.sggw.edu.pl/uczelnia/historia/"
-      ],
-      "access": "Free, stands on a public avenue with open pavement access",
-      "transport": "Tram or bus to Aleja Niepodleglosci / Rakowiecka, Mokotow",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Register (INSPIRE PL.ZIPOP.1393.PP.1465011.2999) is the primary source for the tree itself; SGGW's own history page corroborates that the university's original Mokotow campus stood on this ground 1923-1956, which is the second source used, for setting rather than for the tree's own age or girth. No independent tree-specific source (girth, age, dedicated writeup) found this pass.",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-        "kind": "fruit"
-      }
-    },
-    {
-      "id": "war_011",
-      "name": "The Ginkgo of the Botanical Garden",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "age_estimate": "about 200 years (planted 1824)",
-      "age_min": 195,
-      "age_max": 205,
-      "location": {
-        "address": "Ogrod Botaniczny Uniwersytetu Warszawskiego (Warsaw University Botanical Garden), Aleje Ujazdowskie 4",
-        "latitude": 52.2171948572466,
-        "longitude": 21.027035486683594,
-        "neighbourhood": "Srodmiescie"
-      },
-      "verified_sources": [
-        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.2968",
-        "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Botaniczny_Uniwersytetu_Warszawskiego",
-        "https://zielonyogrodek.pl/ogrod/wizyty-w-ogrodach/930-ogrod-botaniczny-uw-uniwersytetu-warszawskiego"
-      ],
-      "access": "Paid entry to the Botanical Garden. Open March to October; in winter only the greenhouses open, so the outdoor grounds where this tree stands are seasonal.",
-      "transport": "Tram or bus to Plac Na Rozdrozu, right by the garden gate on Aleje Ujazdowskie; also walkable from Metro Politechnika (M1 line)",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "The Warsaw University Botanical Garden protects twenty three trees as natural monuments under one legal designation from 1974, and this ginkgo is one of them, planted in 1824 in a garden that had already existed for six years by then. Ginkgo biloba had barely reached European gardens a generation earlier, brought from China as a curiosity that turned out to outlive nearly everything planted around it, and this tree has now stood through two centuries of a garden that itself survived the war that flattened most of the city around it.\n\nIt shares its 1974 designation with two common beeches elsewhere in the garden, and one of those beeches was blown down by wind in 2020, according to a news report at the time. That loss does not touch this ginkgo, a separate tree under the same paperwork, but it is a reminder that a shared designation protects individuals, not a group's survival as a whole.\n\nNo girth or height has been recorded for it in what is available so far, unusual for a tree this documented. It stands a few hundred metres from the Royal Oaks of Lazienki, close enough to fold into the same walk through central Warsaw's parks. The garden charges admission and closes its outdoor grounds over winter, opening again each March.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true,
-      "best_time": {
-        "months": [
-          11
-        ],
-        "label": "November: the whole crown turns butter gold, then drops in a day or two",
-        "kind": "autumn colour"
-      }
-    },
-    {
-      "id": "war_012",
-      "name": "The Maple and Elm of the Botanical Garden Gate",
-      "species": "Norway Maple and European White Elm (Acer platanoides and Ulmus laevis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Ogrod Botaniczny Uniwersytetu Warszawskiego, vehicle gate, Aleje Ujazdowskie 4",
-        "latitude": 52.21711,
-        "longitude": 21.02632,
-        "neighbourhood": "Srodmiescie"
-      },
-      "verified_sources": [
-        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3279 (Polish Central Register of Nature Forms, designated 1988-08-29)"
-      ],
-      "access": "Paid entry to the Botanical Garden. Open March to October; in winter only the greenhouses open.",
-      "transport": "Tram or bus to Plac Na Rozdrozu, right by the garden gate on Aleje Ujazdowskie; also walkable from Metro Politechnika (M1 line)",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "A maple and an elm share one protection order at the vehicle gate of Warsaw University's Botanical Garden, designated together in 1988 rather than as two separate trees. They stand close enough to touch, sixty metres from the garden's famous 1824 ginkgo, at the entrance most visitors walk straight past on their way to the more famous specimen.\n\nAcer platanoides, the Norway maple, is common enough across the city that Warsaw plants it as an ordinary street tree; what earns this specimen its own designation is simply standing at this gate long enough to outgrow the ordinary. Ulmus laevis, the European white elm, is a rarer thing to see reach old age anywhere in Europe: Dutch elm disease has killed most mature elms on the continent since the 1970s, and a surviving specimen this size is itself a small piece of evidence about which trees a city's beetles never quite reached.\n\nBoth stand inside the garden's grounds on Aleje Ujazdowskie, so the ticket that gets a visitor to the ginkgo gets them here first.",
-      "verify_notes": "Single official source (Polish Central Register of Nature Forms / CRFOP, kodinspire PL.ZIPOP.1393.PP.1465011.3279, gids 147450/147451, designated 1988-08-29). No independent second source found this pass. Sits ~60m from the already-published war_011 (1824 ginkgo, same garden); shipped as a distinct collectible point (a different gate, different species, its own protection order) rather than folded in, matching the corpus's established pattern of multiple separate entries within one botanical garden (e.g. Naples' Orto Botanico). Earlier pass held this back only for lacking a second source, which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "war_013",
-      "name": "The Columnar Oaks of the Observatory Entrance",
-      "species": "Pedunculate Oak, columnar form (Quercus robur 'Fastigiata')",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 340,
-      "height_m": 19.5,
-      "location": {
-        "address": "Ogrod Botaniczny Uniwersytetu Warszawskiego, observatory entrance, Aleje Ujazdowskie 4",
-        "latitude": 52.2172,
-        "longitude": 21.0275,
-        "neighbourhood": "Srodmiescie"
-      },
-      "verified_sources": [
-        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.5185 (Polish Central Register of Nature Forms, designated 2024-10-01, gid 237628: height 19m girth 335cm; gid 237629: height 20m girth 345cm)"
-      ],
-      "access": "Paid entry to the Botanical Garden. Open March to October; in winter only the greenhouses open.",
-      "transport": "Tram or bus to Plac Na Rozdrozu, right by the garden gate on Aleje Ujazdowskie; also walkable from Metro Politechnika (M1 line)",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "Two columnar oaks stand either side of the entrance nearest the garden's astronomical observatory, upright and narrow in a way ordinary pedunculate oaks never grow on their own: Quercus robur 'Fastigiata' is a cultivated form, bred to stay compact rather than spread the wide crown the species is known for. Warsaw designated the pair as protected natural monuments only in October 2024, one of the university garden's newest additions to a collection that also protects trees three centuries older.\n\nThe two are individually measured rather than treated as a single unit: one stands 19 metres tall with a trunk 335 centimetres round, the other 20 metres and 345 centimetres, close enough in size to read as a matched pair from the path but genuinely two different trees with two different numbers.\n\nThey stand about fifty metres from the garden's celebrated 1824 ginkgo, the same stop on the same visit, though a Warsaw institution's habit of taking its oldest trees seriously by cataloguing its youngest as well is the more unusual thing about them.",
-      "verify_notes": "Single official source (Polish Central Register of Nature Forms / CRFOP, kodinspire PL.ZIPOP.1393.PP.1465011.5185, gids 237628/237629, designated 2024-10-01). No independent second source found this pass (a very recent designation). Sits ~50m from the already-published war_011; shipped as a distinct collectible point per the same reasoning as war_012 above. Earlier pass held this back only for lacking a second source and recency, neither a publish blocker under CLAUDE.md's 2026-08-10 ruling.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "paid_entry": true
-    },
-    {
-      "id": "war_014",
-      "name": "The Puławska Street Pear",
-      "species": "European Pear (Pyrus communis)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 153,
-      "location": {
-        "address": "ul. Puławska 8a, Mokotów, standing on the public sidewalk",
-        "latitude": 52.21024,
-        "longitude": 21.02066,
-        "neighbourhood": "Mokotów"
-      },
-      "verified_sources": [
-        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3130",
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
-        "https://commons.wikimedia.org/wiki/File:Pomnikowa_grusza_przy_pu%C5%82awskiej.jpg",
-        "https://www.wikidata.org/wiki/Q107362311"
-      ],
-      "access": "Free, unrestricted; the tree stands on the public sidewalk of ul. Puławska",
-      "transport": "Rakowiecka tram/bus stop on ul. Puławska, under 1 min walk",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "Warsaw protects a pear tree that grows out of a pavement. It stands at ul. Pulawska 8a in Mokotow, on one of the city's main southern arteries, set in the sidewalk itself rather than behind any wall or railing, and the national register of natural monuments has listed it since 12 December 2001. A pear is a domestic fruit tree. It belongs to gardens and orchards, and how this one came to be standing in front of four lanes of traffic is not recorded anywhere. Mokotow is unusual in carrying two protected pears at once: this one, and Ciechomski's a kilometre to the south, whose supposed origin story historians have spent years picking apart.\n\nNobody has dated this tree. The register gives the year it was protected and nothing about the tree's own years, and Wikidata lists it at 11 metres tall with a trunk 153 centimetres round, both figures carrying no source attached to them at all, which makes them a starting point rather than a measurement. The most recent hard proof it is standing is a photograph taken on the pavement beside it in May 2021. If you have a planting date, or a tape measure and five minutes, tell us and the numbers go on the page.",
-      "best_time": {
-        "months": [
-          4
-        ],
-        "kind": "flowers",
-        "label": "late April, when it flowers white over the pavement"
-      }
-    },
-    {
-      "id": "war_015",
-      "name": "The Sophora of Aleja Niepodległości",
-      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "location": {
-        "address": "Al. Niepodległości, corner with ul. G. Bruna, Mokotów, directly across from the fenced Park SGGW",
-        "latitude": 52.20917,
-        "longitude": 21.0069,
-        "neighbourhood": "Mokotów"
-      },
-      "verified_sources": [
-        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3037",
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
-        "https://commons.wikimedia.org/wiki/File:Pere%C5%82kowiec_japo%C5%84ski_przed_parkiem_sggw.jpg"
-      ],
-      "access": "Free, unrestricted; stands on the pavement of a public avenue (al. Niepodległości), not inside the fenced Park SGGW behind it",
-      "transport": "Pole Mokotowskie metro station (M2), under 5 min walk; also on several tram/bus lines along al. Niepodległości",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "This tree stands in front of a park nobody is allowed to enter. Behind it, on the far side of a fence on Aleja Niepodleglosci, lies Park SGGW, the grounds of the Warsaw University of Life Sciences, shut to the public since the university moved south to Ursynow and still shut today, with Mokotow residents publicly campaigning to have it opened. The pagoda tree is on the useful side of the fence, on the open pavement of the avenue, which is the only reason it appears here at all.\n\nPoland's register of natural monuments has protected it since 22 October 1976 and cannot quite settle on what to call it: the paperwork carries both sofora chinska and sofora japonska, Chinese sophora and Japanese sophora. Chinese is the accurate half. The species is native to China and took its Japanese name from the cultivated trees Europeans met first, in Japan.\n\nNo source found so far gives an age or a girth, which leaves the two things people usually ask about entirely open; if you know either, tell us. What is not in doubt is the timing. It flowers cream in August, several weeks after almost everything else in Warsaw has finished, and drops the petals on the pavement underneath. The SGGW Oak stands 85 metres away, on the other side of the avenue.",
-      "best_time": {
-        "months": [
-          8
-        ],
-        "kind": "flowers",
-        "label": "August, when it flowers cream weeks after the rest of the city has finished"
-      }
-    },
-    {
-      "id": "war_016",
-      "name": "The Lime of Park Morskie Oko",
-      "species": "Small-leaved Lime (Tilia cordata)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "location": {
-        "address": "Park Promenada-Morskie Oko, near the corner of ul. Promenady and ul. Belwederskiej, Mokotów",
-        "latitude": 52.20418,
-        "longitude": 21.03139,
-        "neighbourhood": "Mokotów"
-      },
-      "verified_sources": [
-        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3258",
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
-        "https://zzw.waw.pl/2022/02/20/park-promenada-morskie-oko-ogrod-na-wzgorzu-i-malownicze-stawy/"
-      ],
-      "access": "Free, public park (Park Promenada-Morskie Oko, managed by Zarząd Zieleni m.st. Warszawy), open during normal park hours",
-      "transport": "Bus/tram stops on ul. Belwederska or ul. Spacerowa, roughly 5-10 min walk into the park",
-      "location_precision": "approximate",
-      "curation_status": "flagged",
-      "story": "Warsaw has protected this lime since 27 December 1990 and has never written down exactly where it is. The register gives its address as the corner of ul. Promenady and ul. Belwederska, which is a junction at the edge of the park rather than a place inside it, and the city's own parks department gets no closer: its guide to Park Promenada-Morskie Oko says only that a monument small-leaved lime grows near the pond. So the pin here marks the way in, not the trunk. Come in from Belwederska, keep the water on your side and look for the big lime above the bank; the hunt takes a few minutes and the park is worth them.\n\nThe ground it grows on was Princess Izabela Lubomirska's private garden in the 1770s and only became a public one in 1845, when the banker Franciszek Szuster bought the estate and opened its lower half as a promenade, which is where the district's Promenada takes its name. The lime shares the park with five protected oaks by Palac Szustra, higher up the slope.\n\nNo age and no girth have been recorded for it by anyone. Late June and July are when it pays for the walk regardless: the flowers open small and yellow-green, and the smell reaches much further than the tree looks capable of.",
-      "best_time": {
-        "months": [
-          6,
-          7
-        ],
-        "kind": "flowers",
-        "label": "late June into July, when the lime flowers and the scent carries across the pond"
-      }
-    },
-    {
-      "id": "war_017",
-      "name": "The Grey Poplar of Madalinskiego",
-      "species": "Gray Poplar (Populus canescens)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 358,
-      "height_m": 21,
-      "location": {
-        "address": "Corner of ul. gen. J. A. Madalinskiego and ul. Kazimierzowskiej, Mokotow, Warsaw",
-        "latitude": 52.20427,
-        "longitude": 21.01487,
-        "neighbourhood": "Mokotow"
-      },
-      "story": "Poland protects this tree by name and by number. It holds an entry in the national register of natural monuments, PL.ZIPOP.1393.PP.1465011.3363, granted on 10 October 2012, and it grows on a pavement corner where Madalinskiego meets Kazimierzowska, between parked cars and a pedestrian crossing.\n\nThe designation came with a survey, which is the useful part: 21 metres tall, 3.58 metres round the trunk. Populus canescens is a natural cross between white poplar and aspen, its leaves felted grey underneath and hung so loosely that the whole crown changes shade when a gust comes down the street. It also grows fast, which is why a trunk that size is not the proof of great age it would be on an oak.\n\nNobody has dated this one, and in Mokotow that gap has a particular shape. The obvious question about any big tree in this district is whether it was standing through the 1944 uprising and the demolition that followed, and none of the sources answer it. We are not going to guess. If you know when it went in, tell us.\n\nIt is a walk of five to ten minutes from the oaks of Park Morskie Oko and the old pear on Pulawska, which makes it something to add to a Mokotow afternoon rather than a trip of its own.",
-      "verified_sources": [
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (Polish Wikipedia's reproduction of Warsaw's GDOS natural-monument register, entry PL.ZIPOP.1393.PP.1465011.3363, designated 2012-10-10)"
-      ],
-      "access": "Free, on a public street corner",
-      "transport": "0.7km from war_009 and 0.5km from war_005, in the Mokotow cluster",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "war_018",
-      "name": "The Chestnut of Pulawska and Merliniego",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "location": {
-        "address": "Corner of ul. Pulawska 107 and ul. Merliniego, Mokotow, Warsaw",
-        "latitude": 52.19534,
-        "longitude": 21.02458,
-        "neighbourhood": "Mokotow"
-      },
-      "story": "This chestnut has outlasted the government that protected it. Poland listed it as a natural monument on 28 December 1988, ten months before the Round Table talks that ended communist rule, and it has stood through everything since on an ordinary pavement corner where ulica Pulawska meets ulica Merliniego in Mokotow.\n\nAesculus hippocastanum is not native to Poland. It came from the mountains of the Balkans by way of Vienna's gardens in the sixteenth century and spread across Central Europe as a street and park tree, valued for shade rather than for age, which makes a chestnut still standing at a road junction after decades of protection worth noticing. In May its whole crown lights up with upright white flower spikes, candles rising above the leaves, visible from the traffic waiting at the corner.\n\nThe register that protects it gives no age and no girth, only the date it was designated and the coordinates of the corner. Two more searches this year turned up nothing beyond the same official listing. If you know how old this tree really is, or have ever measured its trunk, tell us; right now the record only says it has stood, protected, since before Poland's own transition away from communist rule.",
-      "best_time": {
-        "months": [
-          5
-        ],
-        "kind": "flowers",
-        "label": "May, when the white candle-flowers cover the crown"
-      },
-      "verified_sources": [
-        "GDOS national register of natural monuments (poland-gdos-pomniki-przyrody.json), kodinspire PL.ZIPOP.1393.PP.1465011.3271, gid 177754, designated 1988-12-28, reproduced with the same address at https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
-      ],
-      "access": "Free, genuinely public street corner (Mokotow, corner of ul. Pulawska 107 and ul. Merliniego)",
-      "transport": "Mokotow cluster; roughly 0.5-0.7km from war_005, war_009 and war_017",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
-      "id": "war_019",
-      "name": "The Karol Oak",
-      "name_pl": "Dąb Karol",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": null,
-      "height_m": 24.0,
-      "location": {
-        "address": "ul. ks. Jerzego Popiełuszki 15, Żoliborz, Warsaw",
-        "latitude": 52.267858,
-        "longitude": 20.975847,
-        "neighbourhood": "Żoliborz"
-      },
-      "verified_sources": [
-        "GDOS national register of natural monuments (poland-gdos-pomniki-przyrody.json), gid 147249, kodinspire PL.ZIPOP.1393.PP.1465011.3089, name_pl \"Karol\", Quercus robur, jednoobiektowy (single-object) designation, designated 1982-10-22, coordinates 52.267858,20.975847",
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (fetched wikitext directly, not the rendered table): independently lists the same tree, \"[[Dąb szypułkowy]] pn. „Karol”\", Żoliborz ul. Popiełuszki 15, designated 1982-10-22, same CRFOP id, with its own photo file Dąb_karol.jpg and Commons category",
-        "https://commons.wikimedia.org/wiki/Category:Oak_Karol -> Wikidata Q72167972 (fetched directly, read the raw Wikidata infobox HTML rather than trusting a search summary): label \"Oak Karol\" / \"dąb Karol\", height (P2048) 24m, coordinates (P625) 52.26788,20.97586 (within 3m of the register point), categorised under \"Street trees in Warsaw\" and \"Natural monuments in Warsaw (trees)\""
-      ],
-      "access": "Free, public street tree in Żoliborz on ul. Popiełuszki; Wikimedia Commons categorises it explicitly as a \"street tree in Warsaw\". It stands near (not necessarily inside) Żłobek nr 24, a public nursery at the same street address which has its own separately-registered oak (a different, unnamed tree, kodinspire ...3078) -- the two should not be confused",
-      "transport": "Żoliborz district, roughly 4-5km north of Warsaw city centre and about 4.5km from the nearest currently-published Warsaw tree (war_003, Wola); would start a new cluster rather than join the existing one",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "Warsaw's register of natural monuments gives this oak a first name. Karol is a pedunculate oak of 24 metres, and it is not a park tree: it grows on the pavement of ul. Popiełuszki in Żoliborz, four or five kilometres north of the centre.\n\nThe state protected it on 22 October 1982, registered on its own rather than as one of a group, which means the monument is this single tree and nothing around it. More than forty years later it is still standing on the same stretch of pavement.\n\nGet the address right when you go. Number 15 holds two protected oaks. The public nursery at that address has its own, entered in the register separately and never given a name, so the pair are easy to mix up on the ground. Karol is the one with the name; its neighbour carries only a code.\n\nThe height is on record and almost nothing else is. No published source we could find gives a girth or an age, which for a named oak on a Warsaw street is a strange gap. If you have put a tape measure around it, or you know when it was planted, tell us.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-        "kind": "fruit"
-      }
-    }
-  ]
+ "city": "Warsaw",
+ "country": "Poland",
+ "status": "needs_curation",
+ "intro": "Warsaw rebuilt itself almost entirely after 1945, which is the quiet reason so few of its trees are genuinely old: whatever grew here before the war mostly burned with everything else. What survived instead carries weight beyond its years. A poplar stood inside a 1939 barricade and later grew beside a wartime transit camp. An oak marks the one building left around Janusz Korczak's orphanage. Royal parks add two more: a pair of oaks in the king's own Lazienki garden, and a lime named for the king who built Wilanow.",
+ "meta_description": "Warsaw's remarkable trees carry wartime, royal and Enlightenment history: a 600-year oak, a WWII poplar, Korczak's orphanage oak, royal park oaks.",
+ "question_answer": "Warsaw's oldest tree is Dab Mieszko I (King Mieszko I's Oak), a pedunculate oak on Nowoursynowska Street in Ursynow, estimated at 600 to 640 years old depending on the survey cited. It stands at the edge of Natolin Forest, one of the last fragments of the wild woodland that covered this ground before the city existed.",
+ "question_meta": "A 600-640 year old oak on the edge of Natolin Forest, older than Warsaw itself, is the city's oldest tree. The full 17, and the history each carries.",
+ "question_context": "Warsaw's tree ages are harder to pin down than in cities with continuous records, because the city's own archives and much of its built and natural heritage were destroyed between 1939 and 1945. Dab Mieszko I is the exception precisely because it predates that entire period by centuries: even the more conservative age estimates put its origin well before Poland's partitions, let alone the Second World War, and successive surveys since its 1962 protection have each revised the figure without ever seriously challenging its status as the region's oldest oak. Its main rival for the title of Warsaw's most storied tree is not a contest of age at all. The Poplar of the Defenders, roughly a century old, and Dr Korczak's Oak, undated but standing beside a building that survived the war intact, both carry more concentrated history in fewer decades than the Mieszko oak accumulated in centuries, a reminder that this city's remarkable trees earn their place by two different measures, sometimes separately, occasionally both at once.",
+ "faq": [
+  {
+   "q": "What is the oldest tree in Warsaw?",
+   "a": "Dab Mieszko I, a pedunculate oak on the edge of Natolin Forest in Ursynow, estimated at 600 to 640 years old."
+  },
+  {
+   "q": "Are Warsaw's remarkable trees free to visit?",
+   "a": "15 of the 19 stand on public streets or in public parks and gardens, open at any time. Four sit behind a paid entrance gate: King Jan's Linden in the Wilanow palace grounds, and three more trees in the Botanical Garden, including the ginkgo, which also closes its outdoor grounds over winter."
+  },
+  {
+   "q": "Why does Warsaw have so few very old trees?",
+   "a": "The city was almost entirely destroyed between 1939 and 1945. Most trees standing today, like most buildings, date from after the war; the handful that survived carry unusually concentrated history."
+  },
+  {
+   "q": "Which Warsaw tree is linked to Janusz Korczak?",
+   "a": "A Hungarian oak at the corner of Karolkowa and Jaktorowska streets, beside the surviving building of the orphanage Korczak ran until he and the children in his care were deported to Treblinka in 1942."
+  }
+ ],
+ "trees": [
+  {
+   "id": "war_001",
+   "name": "Dab Mieszko I (King Mieszko I's Oak)",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "600-640 years",
+   "age_min": 600,
+   "age_max": 640,
+   "location": {
+    "address": "Nowoursynowska Street, edge of Natolin Forest, Ursynow",
+    "latitude": 52.142222,
+    "longitude": 21.069444,
+    "neighbourhood": "Ursynow"
+   },
+   "story": "Warsaw's oldest tree survived six centuries of Polish history only to be set on fire by a person, not a storm, in June 2019. The oak, named for Poland's first recorded ruler though it began growing roughly two and a half centuries after his death around 992, stands at the edge of Natolin Forest on the city's southern edge, one of the last fragments of the wild Mazovian woodland that once covered this ground before Warsaw existed at all. Most of its crown has died back over the decades; steel cables and supports now hold the one thick surviving branch upright, and a cavity in the trunk has been filled with brick and cement, an old-fashioned repair meant to keep vandals and rot out rather than to look convincing. The arson attack in 2019 might have finished a lesser tree; this one produced leaves again the following spring. Its exact age has shifted across different surveys and plaques over the decades, estimates ranging from roughly 600 to 640 years depending on which measurement is cited, and an older on-site plaque is now known to have understated it. Whatever the precise figure, it remains the region's oldest documented oak and the clearest living link this city has to the forest it was built on top of.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/D%C4%85b_Mieszko_I",
+    "https://otwartawarszawa.pl/przewodnik/dab-mieszko-i",
+    "https://warszawawpigulce.pl/warszawskie-drzewa-ktore-sa-najstarsze-a-z-ktorymi-zwiazana-jest-niezwykla-historia/"
+   ],
+   "access": "Free, public street/forest edge, open at any time",
+   "transport": "Bus or metro to Ursynow, then a short walk, roughly 30-40 minutes from the centre",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/D%C4%85b_Mieszko_1993.jpg",
+    "license": "Public domain",
+    "attribution": "Radoslaw Botev, via Wikimedia Commons",
+    "status": "approved",
+    "width": 507,
+    "height": 628
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+    "kind": "fruit"
+   }
+  },
+  {
+   "id": "war_002",
+   "name": "The Poplar of the Defenders",
+   "species": "Canadian Poplar (Populus x canadensis)",
+   "age_estimate": "about 99 years",
+   "age_min": 95,
+   "age_max": 100,
+   "location": {
+    "address": "ul. Grojecka 95, beside the Barykada Wrzesnia monument, Ochota",
+    "latitude": 52.209992,
+    "longitude": 20.97615,
+    "neighbourhood": "Ochota"
+   },
+   "story": "A mass grave was reportedly dug beneath this tree in August 1944, according to testimony from survivors of the transit camp that once stood around it. The poplar was already mature by then, planted in the mid-1920s in what was still open ground on Warsaw's western edge, and stood inside the barricaded defense line that Polish forces held here during the September 1939 siege of the city, growing up alongside genuine combat rather than merely outliving it at a distance. Five years later the same patch of ground became Zieleniak, a market square the Germans converted into a transit camp for tens of thousands of Ochota residents rounded up during the 1944 Warsaw Uprising, a place survivors would later describe as a site of mass killing before deportation. Remains were exhumed from beneath the poplar after the war ended. None of that history shows on the tree itself today: at roughly 25 metres tall with a 453-centimetre trunk, it was named Warsaw's Tree of the Year in 2025 and reached the national final the following year, recognised now for its size and condition rather than for what the ground beneath it once held. The Barykada Wrzesnia monument stands beside it, the closest thing the site has to an explanation.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Topola_Obro%C5%84c%C3%B3w",
+    "https://zzw.waw.pl/2026/03/02/warszawska-topola-w-finale-konkursu-drzewo-roku-2026/",
+    "https://warszawawpigulce.pl/warszawskie-drzewa-ktore-sa-najstarsze-a-z-ktorymi-zwiazana-jest-niezwykla-historia/"
+   ],
+   "access": "Free, public street, open at any time",
+   "transport": "Tram or bus to Ochota, then a short walk, roughly 15-20 minutes from the centre",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Topola_obro%C5%84c%C3%B3w_zima.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Via Wikimedia Commons",
+    "status": "approved",
+    "width": 3344,
+    "height": 2728
+   },
+   "curation_status": "ai_generated",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "war_004",
+   "name": "Dr Korczak's Oak",
+   "species": "Hungarian Oak (Quercus frainetto)",
+   "age_estimate": "not documented",
+   "age_min": 100,
+   "age_max": 180,
+   "location": {
+    "address": "Corner of ul. Karolkowa and ul. Jaktorowska, Wola",
+    "latitude": 52.234378,
+    "longitude": 20.977128,
+    "neighbourhood": "Wola"
+   },
+   "story": "Janusz Korczak ran his orphanage from this corner for 29 years, until German soldiers marched him and roughly 200 children from the building to a train bound for Treblinka in August 1942, where all were murdered. He was offered a chance to walk away alone, by then already a well-known pediatrician and radio personality; he refused, choosing to stay with the children rather than abandon them, and that refusal is most of why his name is still known today far beyond Poland. The orphanage building itself, designed in 1911 for the Jewish charity Pomoc dla Sierot and completed the following year, is the only structure on this stretch of what was then Krochmalna Street to survive the district's wartime destruction; everything burned around it, then everything else standing was cleared after the war, leaving Korczak's building alone on ground later renamed Jaktorowska Street in 1970. The Hungarian oak growing at its corner, protected as one of Warsaw's natural monuments and formally named for Korczak, stands roughly 22 metres tall with a trunk 440 centimetres around. No record fixes exactly when it was planted, so it may or may not have already stood here while the orphanage still operated, but it has grown up beside the one building in the neighbourhood old enough to remember.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+    "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+   ],
+   "access": "Free, public street corner, open at any time",
+   "transport": "Tram or bus to Wola, then a short walk, roughly 15 minutes from the centre",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/D%C4%85b_korczaka.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Panek, via Wikimedia Commons",
+    "status": "approved",
+    "width": 2735,
+    "height": 3695
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "war_005",
+   "name": "Ciechomski's Pear",
+   "species": "European Pear (Pyrus communis)",
+   "age_estimate": "disputed, possibly younger than the 1870 legend claims",
+   "age_min": 60,
+   "age_max": 156,
+   "location": {
+    "address": "Corner of ul. Raclawicka and ul. Baluckiego, Stary Mokotow",
+    "latitude": 52.2018726,
+    "longitude": 21.0204314,
+    "neighbourhood": "Stary Mokotow"
+   },
+   "story": "A pear tree is a strange choice for a memorial, which is exactly why this one has stayed interesting long after the man it supposedly honours. Walenty Ciechomski was the last soltys, the village administrator, of Mokotow before the settlement was absorbed into Warsaw, and a veteran of the failed 1863 uprising against Russian rule; his gravestone at Sluzew cemetery still identifies him by that title alone. Local tradition holds that the pear was planted in 1870 to mark his settling on this corner, and the story has been repeated long enough to earn the tree informal protected status under his name. Historians examining the claim more recently have pushed back on most of it: a pear is an unusual and impractical species to plant as a personal memorial, the tree's apparent age does not obviously match an 1870 planting, and the likelier explanation is that it simply seeded itself on the corner sometime later, with Ciechomski's name attached to it afterward rather than at the root. Nobody disputes that Ciechomski himself was real, or that he fought in an uprising that cost Poland dearly and gained it nothing immediate. What is genuinely uncertain is whether this particular tree has anything to do with him at all, and this entry says so rather than repeating the tidier version of the story.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Walenty_Ciechomski",
+    "https://warszawa.naszemiasto.pl/grusza-ciechanowskiego-sprzed-130-lat-czy-zasadzil-ja/ar/c1-8265208",
+    "https://odkrywcawarszawy.blogspot.com/2016/02/ciekawostka-grusza-skrzyzowanie-ul.html"
+   ],
+   "access": "Free, public street corner, open at any time",
+   "transport": "Tram or bus to Stary Mokotow, then a short walk, roughly 15-20 minutes from the centre",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate"
+  },
+  {
+   "id": "war_006",
+   "name": "The Royal Oaks of Lazienki",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "about 200 years",
+   "age_min": 180,
+   "age_max": 220,
+   "girth_cm": 450,
+   "location": {
+    "address": "Lazienki Krolewskie park, near the New Orangery, west side of the Chinska Droga path, Srodmiescie",
+    "latitude": 52.212386581207795,
+    "longitude": 21.032272068224383,
+    "neighbourhood": "Srodmiescie (Lazienki Krolewskie)"
+   },
+   "story": "For almost two centuries, two pedunculate oaks have grown side by side in the Romantic Garden of Lazienki Krolewskie, the park Poland's last king built for himself in the 18th century. The palace museum's own page on the park's oldest trees states it plainly: both oaks measure 450 centimetres round and 28 metres tall, and both hold protected natural-monument status. That girth on a pedunculate oak points to real age, roughly two hundred years, old enough that the pair were already substantial trees when Poland was partitioned off the map of Europe entirely, decades before the country existed again to protect them. Lazienki is the most visited royal park in the country, its lake, palace and open-air theatre drawing crowds who mostly walk past two more oaks without a glance. These stand near the New Orangery, on the western side of the path called Chinska Droga, close enough together that a visitor can take in both in one stop. The garden itself is free every day, no ticket needed beyond the museum buildings and the odd ticketed pavilion, making this the easiest stop on the whole Warsaw list to fold into an ordinary afternoon in the park.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.2994, designated 1974-08-20)",
+    "https://www.lazienki-krolewskie.pl/en/aktualnosci/najstarsze-drzewa-lazienek-krolewskich"
+   ],
+   "access": "Free, the park gardens are open daily to the public at no charge (only some buildings/museum interiors are ticketed)",
+   "transport": "Bus or tram to Lazienki Krolewskie, short walk within the park to the New Orangery area",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Two oaks, both protected, both at this spot per register + Lazienki Museum's own page (girth 450cm, height 28m, 'almost two centuries'). Museum page says 'Romantic Garden', register says 'near the New Orangery'; both real, closely-sited features inside the same park, very likely the same pair, not asserted as identical beyond that since no single source states it explicitly.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+    "kind": "fruit"
+   }
+  },
+  {
+   "id": "war_007",
+   "name": "King Jan's Linden",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Wilanow palace park, south side of the main avenue leading to the palace, ul. Stanislawa Kostki Potockiego 10/16, Wilanow",
+    "latitude": 52.1649957493684,
+    "longitude": 21.08697415082122,
+    "neighbourhood": "Wilanow"
+   },
+   "story": "Local and museum tradition names this lime for King Jan III Sobieski, who built Wilanow Palace in the late 17th century and is documented, in general accounts of the gardens, as having planted lindens on the grounds himself. No source ties this specific tree to that planting, so its age stays undocumented here rather than borrowed from a king's biography, but the name has stuck regardless, one linden singled out among the palace's roughly two dozen protected monument trees. Wilanow's own inventory of its monument trees records 27 of 28 as living in good condition, with only a single dead specimen elsewhere in the gardens, its crown already removed, nothing like the healthy tree this one is described as. It grows on the south side of the main avenue leading up to the palace, close enough to the approach that anyone walking in sees it before they see the building. Wilanow is Warsaw's grandest surviving baroque residence, spared the destruction that levelled most of the city in 1944, and its gardens charge an entry fee, a rare exception among the free public parks the rest of this page favours.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.3470, designated 1975-01-31)",
+    "https://wilanow-palac.pl/drzewa-pomnikowe-w-wilanowie"
+   ],
+   "access": "Paid entry to the Wilanow palace park grounds",
+   "transport": "Bus to Wilanow, short walk into the palace park grounds",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Register + Wilanow's own monument-tree inventory (27 of 28 living, none matching this description as the dead one) confirm the tree is alive and protected. The Sobieski-planting legend is named but not dated to this specific tree (bridge-claim avoided): no source ties this individual specimen to his tenure, so age stays undocumented. A reported girth 'over 4m' could not be independently confirmed this pass (the specific subpage 404'd); treat as unconfirmed.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     6,
+     7
+    ],
+    "label": "June to July, when it flowers",
+    "kind": "flowers"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "war_008",
+   "name": "Niemcewicz's Walnut",
+   "species": "Black Walnut (Juglans nigra)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Grounds of the Krasinski Palace, ul. Nowoursynowska 166, SGGW campus, Ursynow",
+    "latitude": 52.16445651385054,
+    "longitude": 21.05077825090984,
+    "neighbourhood": "Ursynow"
+   },
+   "story": "A black walnut, a species more at home on the eastern seaboard of North America, grows by a Polish palace named for a man who spent time in exile there. Julian Ursyn Niemcewicz, writer, playwright and a companion of Tadeusz Kosciuszko through Poland's failed 18th century uprisings, owned this estate from 1822 and built a library on it; the poet Juliusz Slowacki visited in 1830 and admired what he found. Polish Wikipedia's own article on the palace, citing Warsaw city hall's register of natural monuments, confirms the walnut by name as a protected specimen, and a 2023 photograph on Wikimedia Commons shows it still standing that year. No source dates its planting to Niemcewicz's own tenure, so this page states the naming rather than inventing a birth year to match it. The building passed through several owners after him and has belonged to Warsaw's agricultural university since 1956, its grounds closed to outsiders for decades until the terraced garden behind the palace reopened to the public in 2025, free, after nine years of local campaigning. The tree that outlasted every one of those owners is now something almost nobody who planted it could have counted on: visible again.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.3472)",
+    "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Krasi%C5%84skich_w_Warszawie_(Ursyn%C3%B3w) (citing Warsaw city hall's BIP register of natural monuments)"
+   ],
+   "access": "Free. The palace's terraced garden, where the tree stands, has been open to the public daily April-October, 8am-6pm, since 2025",
+   "transport": "Metro or bus to Ursynow (SGGW campus, Nowoursynowska 166), short walk to the Krasinski Palace",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Register + Polish Wikipedia's dedicated Krasinski Palace article (citing Warsaw city hall's BIP register) independently confirm the tree by name. A 2023-dated Wikimedia Commons photo shows it standing that year. Named for Julian Ursyn Niemcewicz, a former owner (from 1822), but no source dates the planting to his tenure, so age stays undocumented rather than bridged from his biography.",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "war_009",
+   "name": "The Szustra Oaks",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Park Promenada-Morskie Oko, beside Palac Szustra, off ul. Pulawska, Mokotow, Warszawa",
+    "latitude": 52.204592852861396,
+    "longitude": 21.025444837929808,
+    "neighbourhood": "Mokotow (Park Morskie Oko)"
+   },
+   "story": "Five pedunculate oaks stand together near Palac Szustra, the neoclassical villa at the heart of Park Morskie Oko, registered as one natural monument in 1978. Princess Izabela Lubomirska commissioned the palace and its grounds in the 1770s, designed by the architects Szymon Boguslaw Zug and Efraim Szreger; the estate passed to Anna Potocka in 1820, and in 1845 the banker Franciszek Szuster bought it and opened the lower part of the grounds to the public as a promenade, which is where the district gets its name. The palace burned during the 1944 Warsaw Uprising and was rebuilt after the war. Warsaw's own environmental department lists a pedunculate oak next to the palace among the park's protected natural monuments, though the register gives no age or measurements for any of the five, only their 1978 designation date. Park Morskie Oko, also called Park Promenada-Morskie Oko, is one of Mokotow's most visited green spaces, its ponds and paths busy on any warm weekend, and the oaks stand a short walk from the palace steps, easy to overlook next to a building with so much of its own history on display. Nobody has measured them yet: if you know how old they are, this is the page to tell us on.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.2969, designated 1978-04-10)",
+    "https://zabytek.pl/en/obiekty/warszawa-park-promenada-morskie-oko-teren-dawnego-parku-szustra"
+   ],
+   "access": "Free, the park is open daily to the public at no charge",
+   "transport": "Tram or bus to Dolna/Pulawska, short walk into the park",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Register (INSPIRE PL.ZIPOP.1393.PP.1465011.2969) designates five oaks as one 1978 listing at Palac Szustra / Park Morskie Oko; single coordinate covers the group. Warsaw's own park page (eko.um.warszawa.pl) and zabytek.pl's heritage record independently confirm a protected oak stands beside the palace within the public park, which is the second, tree-relevant source. No age or girth documented anywhere found; access is not in question, the palace sits inside a public municipal park.",
+   "location_precision": "approximate",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+    "kind": "fruit"
+   }
+  },
+  {
+   "id": "war_010",
+   "name": "The SGGW Oak",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "not documented",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Aleja Niepodleglosci, on the edge of SGGW's former Mokotow campus, Stary Mokotow, Warszawa",
+    "latitude": 52.20846275188966,
+    "longitude": 21.007381057320774,
+    "neighbourhood": "Mokotow (Stary Mokotow)"
+   },
+   "story": "An oak stands on Aleja Niepodleglosci, on the edge of what was once the main campus of SGGW, the Warsaw University of Life Sciences. The school received this land in 1923, carved from the old Pola Mokotowskie exercise fields, and spent the interwar years raising pavilions, a library and student housing on the site. In 1956 Warsaw swapped that land for territory further south in Ursynow, and SGGW has been based there ever since; nothing agricultural remains in Mokotow except this avenue and its name. The oak was declared a protected natural monument in 1974, by which point the university it once fronted had already left the neighbourhood behind. No source beyond the city's own register of protected trees has produced an age or a girth for it, so both stay open questions, exactly the kind a passer-by with a tape measure could close in a minute. Aleja Niepodleglosci is a wide public avenue, walked and cycled every day, with no gate anywhere near the tree and nothing to buy a ticket for. It is easy to find and, once you know which side of the street to look on, impossible to miss.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (INSPIRE code PL.ZIPOP.1393.PP.1465011.2999, designated 1974-08-20)",
+    "https://www.sggw.edu.pl/uczelnia/historia/"
+   ],
+   "access": "Free, stands on a public avenue with open pavement access",
+   "transport": "Tram or bus to Aleja Niepodleglosci / Rakowiecka, Mokotow",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "notes": "Register (INSPIRE PL.ZIPOP.1393.PP.1465011.2999) is the primary source for the tree itself; SGGW's own history page corroborates that the university's original Mokotow campus stood on this ground 1923-1956, which is the second source used, for setting rather than for the tree's own age or girth. No independent tree-specific source (girth, age, dedicated writeup) found this pass.",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+    "kind": "fruit"
+   }
+  },
+  {
+   "id": "war_011",
+   "name": "The Ginkgo of the Botanical Garden",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "about 200 years (planted 1824)",
+   "age_min": 195,
+   "age_max": 205,
+   "location": {
+    "address": "Ogrod Botaniczny Uniwersytetu Warszawskiego (Warsaw University Botanical Garden), Aleje Ujazdowskie 4",
+    "latitude": 52.2171948572466,
+    "longitude": 21.027035486683594,
+    "neighbourhood": "Srodmiescie"
+   },
+   "verified_sources": [
+    "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.2968",
+    "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Botaniczny_Uniwersytetu_Warszawskiego",
+    "https://zielonyogrodek.pl/ogrod/wizyty-w-ogrodach/930-ogrod-botaniczny-uw-uniwersytetu-warszawskiego"
+   ],
+   "access": "Paid entry to the Botanical Garden. Open March to October; in winter only the greenhouses open, so the outdoor grounds where this tree stands are seasonal.",
+   "transport": "Tram or bus to Plac Na Rozdrozu, right by the garden gate on Aleje Ujazdowskie; also walkable from Metro Politechnika (M1 line)",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The Warsaw University Botanical Garden protects twenty three trees as natural monuments under one legal designation from 1974, and this ginkgo is one of them, planted in 1824 in a garden that had already existed for six years by then. Ginkgo biloba had barely reached European gardens a generation earlier, brought from China as a curiosity that turned out to outlive nearly everything planted around it, and this tree has now stood through two centuries of a garden that itself survived the war that flattened most of the city around it.\n\nIt shares its 1974 designation with two common beeches elsewhere in the garden, and one of those beeches was blown down by wind in 2020, according to a news report at the time. That loss does not touch this ginkgo, a separate tree under the same paperwork, but it is a reminder that a shared designation protects individuals, not a group's survival as a whole.\n\nNo girth or height has been recorded for it in what is available so far, unusual for a tree this documented. It stands a few hundred metres from the Royal Oaks of Lazienki, close enough to fold into the same walk through central Warsaw's parks. The garden charges admission and closes its outdoor grounds over winter, opening again each March.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true,
+   "best_time": {
+    "months": [
+     11
+    ],
+    "label": "November: the whole crown turns butter gold, then drops in a day or two",
+    "kind": "autumn colour"
+   }
+  },
+  {
+   "id": "war_012",
+   "name": "The Maple and Elm of the Botanical Garden Gate",
+   "species": "Norway Maple and European White Elm (Acer platanoides and Ulmus laevis)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Ogrod Botaniczny Uniwersytetu Warszawskiego, vehicle gate, Aleje Ujazdowskie 4",
+    "latitude": 52.21711,
+    "longitude": 21.02632,
+    "neighbourhood": "Srodmiescie"
+   },
+   "verified_sources": [
+    "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3279 (Polish Central Register of Nature Forms, designated 1988-08-29)"
+   ],
+   "access": "Paid entry to the Botanical Garden. Open March to October; in winter only the greenhouses open.",
+   "transport": "Tram or bus to Plac Na Rozdrozu, right by the garden gate on Aleje Ujazdowskie; also walkable from Metro Politechnika (M1 line)",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "A maple and an elm share one protection order at the vehicle gate of Warsaw University's Botanical Garden, designated together in 1988 rather than as two separate trees. They stand close enough to touch, sixty metres from the garden's famous 1824 ginkgo, at the entrance most visitors walk straight past on their way to the more famous specimen.\n\nAcer platanoides, the Norway maple, is common enough across the city that Warsaw plants it as an ordinary street tree; what earns this specimen its own designation is simply standing at this gate long enough to outgrow the ordinary. Ulmus laevis, the European white elm, is a rarer thing to see reach old age anywhere in Europe: Dutch elm disease has killed most mature elms on the continent since the 1970s, and a surviving specimen this size is itself a small piece of evidence about which trees a city's beetles never quite reached.\n\nBoth stand inside the garden's grounds on Aleje Ujazdowskie, so the ticket that gets a visitor to the ginkgo gets them here first.",
+   "verify_notes": "Single official source (Polish Central Register of Nature Forms / CRFOP, kodinspire PL.ZIPOP.1393.PP.1465011.3279, gids 147450/147451, designated 1988-08-29). No independent second source found this pass. Sits ~60m from the already-published war_011 (1824 ginkgo, same garden); shipped as a distinct collectible point (a different gate, different species, its own protection order) rather than folded in, matching the corpus's established pattern of multiple separate entries within one botanical garden (e.g. Naples' Orto Botanico). Earlier pass held this back only for lacking a second source, which CLAUDE.md's 2026-08-10 ruling forbids as a publish blocker.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "war_013",
+   "name": "The Columnar Oaks of the Observatory Entrance",
+   "species": "Pedunculate Oak, columnar form (Quercus robur 'Fastigiata')",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 340,
+   "height_m": 19.5,
+   "location": {
+    "address": "Ogrod Botaniczny Uniwersytetu Warszawskiego, observatory entrance, Aleje Ujazdowskie 4",
+    "latitude": 52.2172,
+    "longitude": 21.0275,
+    "neighbourhood": "Srodmiescie"
+   },
+   "verified_sources": [
+    "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.5185 (Polish Central Register of Nature Forms, designated 2024-10-01, gid 237628: height 19m girth 335cm; gid 237629: height 20m girth 345cm)"
+   ],
+   "access": "Paid entry to the Botanical Garden. Open March to October; in winter only the greenhouses open.",
+   "transport": "Tram or bus to Plac Na Rozdrozu, right by the garden gate on Aleje Ujazdowskie; also walkable from Metro Politechnika (M1 line)",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Two columnar oaks stand either side of the entrance nearest the garden's astronomical observatory, upright and narrow in a way ordinary pedunculate oaks never grow on their own: Quercus robur 'Fastigiata' is a cultivated form, bred to stay compact rather than spread the wide crown the species is known for. Warsaw designated the pair as protected natural monuments only in October 2024, one of the university garden's newest additions to a collection that also protects trees three centuries older.\n\nThe two are individually measured rather than treated as a single unit: one stands 19 metres tall with a trunk 335 centimetres round, the other 20 metres and 345 centimetres, close enough in size to read as a matched pair from the path but genuinely two different trees with two different numbers.\n\nThey stand about fifty metres from the garden's celebrated 1824 ginkgo, the same stop on the same visit, though a Warsaw institution's habit of taking its oldest trees seriously by cataloguing its youngest as well is the more unusual thing about them.",
+   "verify_notes": "Single official source (Polish Central Register of Nature Forms / CRFOP, kodinspire PL.ZIPOP.1393.PP.1465011.5185, gids 237628/237629, designated 2024-10-01). No independent second source found this pass (a very recent designation). Sits ~50m from the already-published war_011; shipped as a distinct collectible point per the same reasoning as war_012 above. Earlier pass held this back only for lacking a second source and recency, neither a publish blocker under CLAUDE.md's 2026-08-10 ruling.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "paid_entry": true
+  },
+  {
+   "id": "war_014",
+   "name": "The Puławska Street Pear",
+   "species": "European Pear (Pyrus communis)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 153,
+   "location": {
+    "address": "ul. Puławska 8a, Mokotów, standing on the public sidewalk",
+    "latitude": 52.21024,
+    "longitude": 21.02066,
+    "neighbourhood": "Mokotów"
+   },
+   "verified_sources": [
+    "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3130",
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+    "https://commons.wikimedia.org/wiki/File:Pomnikowa_grusza_przy_pu%C5%82awskiej.jpg",
+    "https://www.wikidata.org/wiki/Q107362311"
+   ],
+   "access": "Free, unrestricted; the tree stands on the public sidewalk of ul. Puławska",
+   "transport": "Rakowiecka tram/bus stop on ul. Puławska, under 1 min walk",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Warsaw protects a pear tree that grows out of a pavement. It stands at ul. Pulawska 8a in Mokotow, on one of the city's main southern arteries, set in the sidewalk itself rather than behind any wall or railing, and the national register of natural monuments has listed it since 12 December 2001. A pear is a domestic fruit tree. It belongs to gardens and orchards, and how this one came to be standing in front of four lanes of traffic is not recorded anywhere. Mokotow is unusual in carrying two protected pears at once: this one, and Ciechomski's a kilometre to the south, whose supposed origin story historians have spent years picking apart.\n\nNobody has dated this tree. The register gives the year it was protected and nothing about the tree's own years, and Wikidata lists it at 11 metres tall with a trunk 153 centimetres round, both figures carrying no source attached to them at all, which makes them a starting point rather than a measurement. The most recent hard proof it is standing is a photograph taken on the pavement beside it in May 2021. If you have a planting date, or a tape measure and five minutes, tell us and the numbers go on the page.",
+   "best_time": {
+    "months": [
+     4
+    ],
+    "kind": "flowers",
+    "label": "late April, when it flowers white over the pavement"
+   }
+  },
+  {
+   "id": "war_015",
+   "name": "The Sophora of Aleja Niepodległości",
+   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Al. Niepodległości, corner with ul. G. Bruna, Mokotów, directly across from the fenced Park SGGW",
+    "latitude": 52.20917,
+    "longitude": 21.0069,
+    "neighbourhood": "Mokotów"
+   },
+   "verified_sources": [
+    "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3037",
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+    "https://commons.wikimedia.org/wiki/File:Pere%C5%82kowiec_japo%C5%84ski_przed_parkiem_sggw.jpg"
+   ],
+   "access": "Free, unrestricted; stands on the pavement of a public avenue (al. Niepodległości), not inside the fenced Park SGGW behind it",
+   "transport": "Pole Mokotowskie metro station (M2), under 5 min walk; also on several tram/bus lines along al. Niepodległości",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "This tree stands in front of a park nobody is allowed to enter. Behind it, on the far side of a fence on Aleja Niepodleglosci, lies Park SGGW, the grounds of the Warsaw University of Life Sciences, shut to the public since the university moved south to Ursynow and still shut today, with Mokotow residents publicly campaigning to have it opened. The pagoda tree is on the useful side of the fence, on the open pavement of the avenue, which is the only reason it appears here at all.\n\nPoland's register of natural monuments has protected it since 22 October 1976 and cannot quite settle on what to call it: the paperwork carries both sofora chinska and sofora japonska, Chinese sophora and Japanese sophora. Chinese is the accurate half. The species is native to China and took its Japanese name from the cultivated trees Europeans met first, in Japan.\n\nNo source found so far gives an age or a girth, which leaves the two things people usually ask about entirely open; if you know either, tell us. What is not in doubt is the timing. It flowers cream in August, several weeks after almost everything else in Warsaw has finished, and drops the petals on the pavement underneath. The SGGW Oak stands 85 metres away, on the other side of the avenue.",
+   "best_time": {
+    "months": [
+     8
+    ],
+    "kind": "flowers",
+    "label": "August, when it flowers cream weeks after the rest of the city has finished"
+   }
+  },
+  {
+   "id": "war_016",
+   "name": "The Lime of Park Morskie Oko",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Park Promenada-Morskie Oko, near the corner of ul. Promenady and ul. Belwederskiej, Mokotów",
+    "latitude": 52.20418,
+    "longitude": 21.03139,
+    "neighbourhood": "Mokotów"
+   },
+   "verified_sources": [
+    "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1465011.3258",
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+    "https://zzw.waw.pl/2022/02/20/park-promenada-morskie-oko-ogrod-na-wzgorzu-i-malownicze-stawy/"
+   ],
+   "access": "Free, public park (Park Promenada-Morskie Oko, managed by Zarząd Zieleni m.st. Warszawy), open during normal park hours",
+   "transport": "Bus/tram stops on ul. Belwederska or ul. Spacerowa, roughly 5-10 min walk into the park",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "story": "Warsaw has protected this lime since 27 December 1990 and has never written down exactly where it is. The register gives its address as the corner of ul. Promenady and ul. Belwederska, which is a junction at the edge of the park rather than a place inside it, and the city's own parks department gets no closer: its guide to Park Promenada-Morskie Oko says only that a monument small-leaved lime grows near the pond. So the pin here marks the way in, not the trunk. Come in from Belwederska, keep the water on your side and look for the big lime above the bank; the hunt takes a few minutes and the park is worth them.\n\nThe ground it grows on was Princess Izabela Lubomirska's private garden in the 1770s and only became a public one in 1845, when the banker Franciszek Szuster bought the estate and opened its lower half as a promenade, which is where the district's Promenada takes its name. The lime shares the park with five protected oaks by Palac Szustra, higher up the slope.\n\nNo age and no girth have been recorded for it by anyone. Late June and July are when it pays for the walk regardless: the flowers open small and yellow-green, and the smell reaches much further than the tree looks capable of.",
+   "best_time": {
+    "months": [
+     6,
+     7
+    ],
+    "kind": "flowers",
+    "label": "late June into July, when the lime flowers and the scent carries across the pond"
+   }
+  },
+  {
+   "id": "war_017",
+   "name": "The Grey Poplar of Madalinskiego",
+   "species": "Gray Poplar (Populus canescens)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 358,
+   "height_m": 21,
+   "location": {
+    "address": "Corner of ul. gen. J. A. Madalinskiego and ul. Kazimierzowskiej, Mokotow, Warsaw",
+    "latitude": 52.20427,
+    "longitude": 21.01487,
+    "neighbourhood": "Mokotow"
+   },
+   "story": "Poland protects this tree by name and by number. It holds an entry in the national register of natural monuments, PL.ZIPOP.1393.PP.1465011.3363, granted on 10 October 2012, and it grows on a pavement corner where Madalinskiego meets Kazimierzowska, between parked cars and a pedestrian crossing.\n\nThe designation came with a survey, which is the useful part: 21 metres tall, 3.58 metres round the trunk. Populus canescens is a natural cross between white poplar and aspen, its leaves felted grey underneath and hung so loosely that the whole crown changes shade when a gust comes down the street. It also grows fast, which is why a trunk that size is not the proof of great age it would be on an oak.\n\nNobody has dated this one, and in Mokotow that gap has a particular shape. The obvious question about any big tree in this district is whether it was standing through the 1944 uprising and the demolition that followed, and none of the sources answer it. We are not going to guess. If you know when it went in, tell us.\n\nIt is a walk of five to ten minutes from the oaks of Park Morskie Oko and the old pear on Pulawska, which makes it something to add to a Mokotow afternoon rather than a trip of its own.",
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (Polish Wikipedia's reproduction of Warsaw's GDOS natural-monument register, entry PL.ZIPOP.1393.PP.1465011.3363, designated 2012-10-10)"
+   ],
+   "access": "Free, on a public street corner",
+   "transport": "0.7km from war_009 and 0.5km from war_005, in the Mokotow cluster",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  },
+  {
+   "id": "war_018",
+   "name": "The Chestnut of Pulawska and Merliniego",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "location": {
+    "address": "Corner of ul. Pulawska 107 and ul. Merliniego, Mokotow, Warsaw",
+    "latitude": 52.19534,
+    "longitude": 21.02458,
+    "neighbourhood": "Mokotow"
+   },
+   "story": "This chestnut has outlasted the government that protected it. Poland listed it as a natural monument on 28 December 1988, ten months before the Round Table talks that ended communist rule, and it has stood through everything since on an ordinary pavement corner where ulica Pulawska meets ulica Merliniego in Mokotow.\n\nAesculus hippocastanum is not native to Poland. It came from the mountains of the Balkans by way of Vienna's gardens in the sixteenth century and spread across Central Europe as a street and park tree, valued for shade rather than for age, which makes a chestnut still standing at a road junction after decades of protection worth noticing. In May its whole crown lights up with upright white flower spikes, candles rising above the leaves, visible from the traffic waiting at the corner.\n\nThe register that protects it gives no age and no girth, only the date it was designated and the coordinates of the corner. Two more searches this year turned up nothing beyond the same official listing. If you know how old this tree really is, or have ever measured its trunk, tell us; right now the record only says it has stood, protected, since before Poland's own transition away from communist rule.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "flowers",
+    "label": "May, when the white candle-flowers cover the crown"
+   },
+   "verified_sources": [
+    "GDOS national register of natural monuments (poland-gdos-pomniki-przyrody.json), kodinspire PL.ZIPOP.1393.PP.1465011.3271, gid 177754, designated 1988-12-28, reproduced with the same address at https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie"
+   ],
+   "access": "Free, genuinely public street corner (Mokotow, corner of ul. Pulawska 107 and ul. Merliniego)",
+   "transport": "Mokotow cluster; roughly 0.5-0.7km from war_005, war_009 and war_017",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed"
+  },
+  {
+   "id": "war_019",
+   "name": "The Karol Oak",
+   "name_pl": "Dąb Karol",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": null,
+   "height_m": 24.0,
+   "location": {
+    "address": "ul. ks. Jerzego Popiełuszki 15, Żoliborz, Warsaw",
+    "latitude": 52.267858,
+    "longitude": 20.975847,
+    "neighbourhood": "Żoliborz"
+   },
+   "verified_sources": [
+    "GDOS national register of natural monuments (poland-gdos-pomniki-przyrody.json), gid 147249, kodinspire PL.ZIPOP.1393.PP.1465011.3089, name_pl \"Karol\", Quercus robur, jednoobiektowy (single-object) designation, designated 1982-10-22, coordinates 52.267858,20.975847",
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie (fetched wikitext directly, not the rendered table): independently lists the same tree, \"[[Dąb szypułkowy]] pn. „Karol”\", Żoliborz ul. Popiełuszki 15, designated 1982-10-22, same CRFOP id, with its own photo file Dąb_karol.jpg and Commons category",
+    "https://commons.wikimedia.org/wiki/Category:Oak_Karol -> Wikidata Q72167972 (fetched directly, read the raw Wikidata infobox HTML rather than trusting a search summary): label \"Oak Karol\" / \"dąb Karol\", height (P2048) 24m, coordinates (P625) 52.26788,20.97586 (within 3m of the register point), categorised under \"Street trees in Warsaw\" and \"Natural monuments in Warsaw (trees)\""
+   ],
+   "access": "Free, public street tree in Żoliborz on ul. Popiełuszki; Wikimedia Commons categorises it explicitly as a \"street tree in Warsaw\". It stands near (not necessarily inside) Żłobek nr 24, a public nursery at the same street address which has its own separately-registered oak (a different, unnamed tree, kodinspire ...3078) -- the two should not be confused",
+   "transport": "Żoliborz district, roughly 4-5km north of Warsaw city centre and about 4.5km from the nearest currently-published Warsaw tree (war_003, Wola); would start a new cluster rather than join the existing one",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Warsaw's register of natural monuments gives this oak a first name. Karol is a pedunculate oak of 24 metres, and it is not a park tree: it grows on the pavement of ul. Popiełuszki in Żoliborz, four or five kilometres north of the centre.\n\nThe state protected it on 22 October 1982, registered on its own rather than as one of a group, which means the monument is this single tree and nothing around it. More than forty years later it is still standing on the same stretch of pavement.\n\nGet the address right when you go. Number 15 holds two protected oaks. The public nursery at that address has its own, entered in the register separately and never given a name, so the pair are easy to mix up on the ground. Karol is the one with the name; its neighbour carries only a code.\n\nThe height is on record and almost nothing else is. No published source we could find gives a girth or an age, which for a named oak on a Warsaw street is a strange gap. If you have put a tape measure around it, or you know when it was planted, tell us.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+    "kind": "fruit"
+   }
+  },
+  {
+   "id": "war_020",
+   "name": "The Oak of Palac Szustra",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Park Promenada-Morskie Oko, roughly 30 metres east of Palac Szustra, Mokotow",
+    "latitude": 52.2043225172637,
+    "longitude": 21.026203818064612,
+    "neighbourhood": "Mokotow (Park Morskie Oko)"
+   },
+   "verified_sources": [
+    "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Warszawie",
+    "https://commons.wikimedia.org/wiki/File:Dab_szypulkowy_pomnik_przyrody_Morskie_Oko_Warszawa_palac_Szustra.jpg",
+    "https://zabytek.pl/en/obiekty/warszawa-park-promenada-morskie-oko-teren-dawnego-parku-szustra"
+   ],
+   "access": "Free, the park (Park Promenada-Morskie Oko / Park Morskie Oko) is open daily to the public at no charge.",
+   "transport": "Tram or bus to Dolna/Pulawska, short walk into the park; about 90m from the Szustra Oaks (war_009).",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "Warsaw's register gives this oak a date five years older than its five famous neighbours. The Szustra Oaks, a group of five pedunculate oaks registered together in 1978, stand right beside Palac Szustra in Park Morskie Oko. This one, thirty metres further east, was designated on its own in 1973, which makes it the earliest protected tree found in the whole park, and yet it has no name of its own beyond a line in a register.\n\nWhy it was split out from a group registration nobody has explained. It may simply have been protected first, alone, before somebody later decided the palace's other five oaks deserved the same status as a set. Whatever the reason, the city treats it as a genuinely separate monument, with its own designation number rather than a line inside the Szustra group's listing.\n\nNobody has measured its girth or estimated its age, only recorded that it stands and that it is protected. A photograph taken in 2022 shows it in leaf at the stated spot, thirty metres from the palace, the most recent confirmation this pass could find that the earliest-registered tree in Park Morskie Oko is still there. If you know its age or have stood beside it, tell us: the reader is the one most likely to fill in what the register left out.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   }
+  }
+ ]
 }
