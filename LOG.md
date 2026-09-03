@@ -9,6 +9,47 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 - A deleted account now takes its published photograph with it
+
+The gap the protection pass found, closed the same afternoon on Hidde's
+"punt 1 doe nu".
+
+/terms and /privacy both promise that deleting an account removes everything
+attached to it, and the database keeps that promise properly: delete_user()
+takes the auth row and the foreign keys take saves, visited, profiles, follows,
+blocks, reports and the sightings. A PUBLISHED photograph is the one thing
+outside the database. The moment a reader's picture goes on a tree's page it
+becomes a copy in data/cities and a file in site/public/photos, in a static
+site no cascade can reach, so an account could be deleted in full while the
+person's photograph stayed on the internet credited to a name belonging to
+somebody who had just asked us to forget them.
+
+Built before the first one is published, which is the only moment it is cheap.
+
+| Piece | What it is |
+|---|---|
+| The field | `photo.source: "contributor"` and `photo.contributor_user_id`, named in content.config.ts because zod strips what it does not name |
+| The sweep | `scripts/photo_takedown.py` asks Supabase whether the account still exists and takes the photograph off when it does not |
+| The guard | `check_contributor_photos_are_traceable()` in preflight refuses either field without the other |
+| The wiring | Runs on every knock, before the budget gate |
+
+**A sweep rather than a queue, deliberately.** A queue needs a table, a
+migration Hidde has to paste, and a delete_user() that knows about the
+website. A sweep needs only the id we already record, and it also catches an
+account removed by any other route, including by hand in the dashboard. The
+price is latency, so the copy says a day rather than pretending otherwise.
+
+**Two things it refuses to get wrong.** A network failure reads as "could not
+tell" and never as "gone", because the action on the other side is deleting
+somebody's photograph. And a reader's photograph with no id is refused at
+preflight rather than discovered later: it would be a photograph we could
+never take down, and the promise would break silently on the one page nobody
+would think to check.
+
+Verified by making a synthetic contributor photo and watching preflight fail
+on it, then restoring the file. Terms and privacy are live with the honest
+wording, including the day of lag.
+
 ## 2026-09-03 - Say who this belongs to, and pay the attribution debt we had been carrying
 
 Hidde asked whether it is written down anywhere that this is ours, and whether
