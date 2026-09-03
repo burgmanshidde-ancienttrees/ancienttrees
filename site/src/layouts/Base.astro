@@ -11,6 +11,7 @@
 import { STYLE_HREF } from "../lib/asset-hash";
 import { chrome } from "../lib/ui-strings";
 import AppModal from "../components/AppModal.astro";
+import AppDownloadModal from "../components/AppDownloadModal.astro";
 import {
   AUTH_ENABLED,
   SUPABASE_URL,
@@ -160,7 +161,7 @@ const year = new Date().getFullYear();
              oude landingspagina in een keer"). His hunch, his call, and it is
              one attribute either way. The overlay is still what the city map's
              own walks CTA opens, so both are still in the building. -->
-        <a href="/app" class="nav-cta only-mobile" data-ev="app-cta">{t.getApp}</a>
+        <a href="/app" class="nav-cta only-mobile" data-app-download data-ev="app-cta">{t.getApp}</a>
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
@@ -178,7 +179,7 @@ const year = new Date().getFullYear();
         </div>
       </details>
     )}
-    <a href="/app" class="bar-cta only-desktop" data-ev="app-cta">{t.getApp}</a>
+    <a href="/app" class="bar-cta only-desktop" data-app-download data-ev="app-cta">{t.getApp}</a>
   </nav>
 </header>
 <slot />
@@ -204,7 +205,7 @@ const year = new Date().getFullYear();
     </div>
     <div class="footer-col">
       <h4>Ancient Trees</h4>
-      <a href="/app" data-ev="app-cta">{t.theApp}</a>
+      <a href="/app" data-app-download data-ev="app-cta">{t.theApp}</a>
       <a href="/contribute">{t.suggestTree}</a>
       {SPONSOR_URL ? <a href="/sponsor">{t.sponsor}</a> : null}
       <a href="/support">{t.support}</a>
@@ -222,6 +223,7 @@ const year = new Date().getFullYear();
     [data-app-modal] link, and the pages that used to render their own must
     not, or two dialogs share one id. */}
 <AppModal lang={lang} />
+<AppDownloadModal lang={lang} />
 <script define:vars={{ SB_URL: SUPABASE_URL, SB_KEY: SUPABASE_KEY }}>
 window.at = window.at || {};
 at.track = function (name, detail) {

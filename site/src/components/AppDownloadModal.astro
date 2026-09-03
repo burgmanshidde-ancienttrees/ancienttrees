@@ -1,0 +1,110 @@
+---
+/* The "Download the app" overlay, rebuilt 2026-09-03 on Hidde's ask: "kun je
+ * op de website exact alltrails namaken - dus niet een dieperliggende pagina
+ * maar een overlay met de qr code met precies hetzelfde design als zij,
+ * alleen niet bij android als de app niet beschikbaar is."
+ *
+ * Convention: AllTrails' own desktop dialog, screenshotted and read directly
+ * rather than approximated (CONVENTIONS.md, 2026-09-03): a centred white
+ * card, a circular grey close button top right, the QR code alone in the
+ * middle with nothing else competing with it, a bold title under it, one
+ * grey line under that. We copy that shape exactly for the QR case.
+ *
+ * What we do not copy is AllTrails showing this same card to a phone: theirs
+ * is desktop-only in practice (a phone gets the OS's own "open in app"
+ * prompt instead, which is Apple's smart-banner meta tag on our side, not
+ * this component). And Android gets a DIFFERENT card, not this one at all,
+ * because there is nothing to scan into: no Android build exists yet, so
+ * that state is a waitlist, not AllTrails' pattern wearing different words.
+ *
+ * iOS never opens this dialog. A tap on a [data-app-download] control on an
+ * iOS device navigates straight to the App Store instead (Hidde's original
+ * "met ios naar de appstore"): a modal would only be one more tap between an
+ * iOS visitor and the thing they already decided to do.
+ */
+import { APP_STORE_URL, SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import { ui } from "../lib/i18n";
+
+interface Props { lang?: string; }
+const { lang = "en" } = Astro.props;
+const t = ui(lang);
+---
+<dialog id="app-download-dialog" class="collect-dialog app-download-dialog" data-device="desktop">
+  <button type="button" class="signin-close" id="app-download-close" aria-label={t.photoClose}>&#10005;</button>
+
+  <div class="app-download-qr">
+    <img src="/assets/appstore/qr-app.svg" width="180" height="180" alt="" class="app-getter-qr">
+    <h3>{t.openInApp}</h3>
+    <p>{t.scanToOpen}</p>
+  </div>
+
+  <div class="app-download-android" hidden>
+    <p class="signin-mark" aria-hidden="true">&#127795;</p>
+    <h3>{t.androidTitle}</h3>
+    <p>{t.androidNote}</p>
+    <form class="app-getter-form" data-app-download-waitlist autocomplete="email">
+      <input type="email" class="ag-email" placeholder="you@example.com" aria-label={t.emailLabel} required>
+      <button type="submit" class="go-btn">{t.notifyMe}</button>
+    </form>
+    <p class="app-getter-sent" hidden>{t.waitlistSent}</p>
+  </div>
+</dialog>
+<script define:vars={{ STORE: APP_STORE_URL, SB: SUPABASE_URL, SBK: SUPABASE_KEY }}>
+  (function () {
+    if (window.__appDownloadInit) return;
+    window.__appDownloadInit = true;
+
+    var dlg = document.getElementById("app-download-dialog");
+    if (!dlg) return;
+    var qrBlock = dlg.querySelector(".app-download-qr");
+    var androidBlock = dlg.querySelector(".app-download-android");
+
+    var ua = navigator.userAgent || "";
+    var isIOS = /iPhone|iPad|iPod/.test(ua)
+      || (ua.indexOf("Macintosh") > -1 && navigator.maxTouchPoints > 1);
+    var isAndroid = /Android/.test(ua);
+
+    window.atOpenAppDownload = function () {
+      if (isIOS) { location.href = STORE; return; }
+      dlg.dataset.device = isAndroid ? "android" : "desktop";
+      qrBlock.hidden = isAndroid;
+      androidBlock.hidden = !isAndroid;
+      if (dlg.showModal) dlg.showModal(); else location.href = "/app";
+    };
+
+    document.getElementById("app-download-close").addEventListener("click", function () { dlg.close(); });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+
+    document.addEventListener("click", function (e) {
+      var t = e.target.closest("[data-app-download]");
+      if (!t) return;
+      e.preventDefault();
+      window.atOpenAppDownload();
+    });
+
+    document.addEventListener("submit", function (e) {
+      var form = e.target.closest("[data-app-download-waitlist]");
+      if (!form || !dlg.contains(form)) return;
+      e.preventDefault();
+      var input = form.querySelector(".ag-email");
+      var email = input.value.trim();
+      if (!email) return;
+      var btn = form.querySelector("button");
+      btn.disabled = true;
+      try { at.track("waitlist-submit"); } catch (err) {}
+      fetch(SB + "/rest/v1/waitlist", {
+        method: "POST",
+        headers: { "apikey": SBK, "Content-Type": "application/json",
+                   "Prefer": "return=minimal" },
+        body: JSON.stringify({ email: email, source: "app-download-modal" }),
+      }).then(function (r) {
+        if (r.ok || r.status === 409) {
+          form.hidden = true;
+          form.nextElementSibling.hidden = false;
+        } else {
+          btn.disabled = false;
+        }
+      }).catch(function () { btn.disabled = false; });
+    });
+  })();
+</script>
