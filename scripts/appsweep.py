@@ -296,6 +296,7 @@ def screens(sub):
         # fixed ids so this can address one.
         ("own-tree",      ["-tab=0", "-signed-in", "-mine-demo",
                            "-open=mine:00000000-0000-0000-0000-0000000000a1"], 6),
+        ("photo-viewer",  ["-tab=0", f'-open=tree:{sub["tree"]}', "-photo"], 8),
         ("species-pick",  ["-tab=0", f'-open=tree:{sub["tree"]}', "-speciespick"], 8),
         # The which-maps-app question, which is a dialog and still a screen:
         # it is the first thing a person meets after tapping Take me there.

@@ -50,6 +50,9 @@ struct TreeDetail: View {
     /// The hero shows the map instead of the photograph. A swap rather than a
     /// jump to the Map tab, so the reader keeps their place.
     @State private var showingMap = false
+    /// The photograph, full screen (Hidde, 2026-09-03: the picture should open
+    /// at its original size, on web and in the app). Kit/PhotoViewer.swift.
+    @State private var showingPhoto = false
     /// The picture the share sheet hands on, drawn once when a tree of yours
     /// is opened. Nil until then, and only ever set on your own trees: ours
     /// have a page on the web and share that instead, from the toolbar.
@@ -310,6 +313,11 @@ struct TreeDetail: View {
                 }
             }
         }
+        .fullScreenCover(isPresented: $showingPhoto) {
+            if let p = tree.photo {
+                PhotoViewer(photo: p, title: tree.name, isPresented: $showingPhoto)
+            }
+        }
         .sheet(isPresented: $sharing) { ShareSheet(items: shareItems) }
         .alert("That did not send", isPresented: $shareFailed) {
             Button("All right", role: .cancel) {}
@@ -368,6 +376,9 @@ struct TreeDetail: View {
             // commit as the picker.
             if ProcessInfo.processInfo.arguments.contains("-placepin") { placing = true }
             if ProcessInfo.processInfo.arguments.contains("-speciespick") { choosingSpecies = true }
+            // A screen no argument can open is a screen that ships unseen, and
+            // the viewer is a screen (appsweep.py says so in its own comment).
+            if ProcessInfo.processInfo.arguments.contains("-photo") { showingPhoto = true }
         }
     }
 
@@ -473,6 +484,16 @@ struct TreeDetail: View {
                         TreePhoto(url: url) { heroFallback }
                     }
                     .clipped()
+                    // Tapping the photograph opens it, which is what every
+                    // photograph in every app does and what this one did not.
+                    // .contentShape first, because an overlay draws outside the
+                    // frame's own hit area and a bare gesture here would take
+                    // taps meant for the story below it, which is the fault
+                    // TreeCard records at the top of this file's sibling.
+                    .contentShape(.rect)
+                    .onTapGesture { showingPhoto = true }
+                    .accessibilityAddTraits(.isButton)
+                    .accessibilityIdentifier("tree-photo-open")
                     // The way to the map, in the corner a card already trained
                     // people to look at. It replaces the 150 point map card
                     // that used to sit between the facts and the story and
