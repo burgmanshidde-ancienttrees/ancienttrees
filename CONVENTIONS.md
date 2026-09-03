@@ -768,6 +768,49 @@ problem from ours.
 
 ---
 
+## Opening a photograph at full size (2026-09-03)
+
+**Reference: Wikipedia's Media Viewer**, and it is the closest reference we have
+because it has our exact content problem: photographs under a licence that
+obliges a credit. Clicking a thumbnail opens a LIGHT BOX over the page, not a new
+page. The image is shown at a screen-sized version, with the caption, the author,
+the source and the licence along the bottom. Clicking the image INSIDE the viewer
+is what goes to the original at full resolution. Escape closes it, an X sits top
+right, arrow keys move between the images of a page.
+
+That is the two-step Hidde described before either of us had looked it up: a
+standard size on the page, the whole photograph one click further. It is worth
+naming because the tempting shortcut is to link the thumbnail straight at the
+original file, and that hands somebody a 6 MB image with no credit attached to it.
+
+**Reference: Apple Photos, and every iOS viewer copying it.** The gestures are
+not ours to invent and people arrive already trained: pinch to zoom and pan,
+double tap to zoom in and out at once, drag DOWN to dismiss, single tap to hide
+the chrome and leave only the picture. A viewer missing swipe-down is the one
+people complain about, because it is the gesture the hand reaches for first.
+
+**The size half, which is the part that actually bit us.** The convention is one
+picture at several widths and the surface picking, `srcset` on the web and the
+right url per view in the app. What it means in practice is that there has to be
+something BETWEEN the card size and the raw original. We had 500px and then a
+3008px, 6.6 MB file and nothing in between, so every card was a 500px image
+stretched over a 1170px phone screen, and every hero was either capped or
+enormous.
+
+**Wikimedia's live thumbnail widths, re-probed 2026-09-03 on two different files:
+250, 330, 500, 960, 1280, 1920.** 320, 400, 640, 800, 1000, 1024, 1600, 2000 and
+2560 all return 400. The list written down here on 2026-07-31 stopped at 960 and
+was incomplete, which had capped every Wikimedia hero in the app and on the web
+at 960px since. This is the third time a probed verdict about Wikimedia has
+outlived the fact; re-probe before trusting one.
+
+Read 2026-09-03:
+- https://www.mediawiki.org/wiki/Help:Extension:Media_Viewer
+- https://en.wikipedia.org/wiki/Wikipedia:Media_Viewer
+- https://www.lightgalleryjs.com/ (escape to close, arrows to move: the same two on every web lightbox library)
+
+---
+
 ## A profile page, and where settings sit (2026-09-02)
 
 **Reference: Polarsteps' own profile, and our app's My trees screen.** Hidde
