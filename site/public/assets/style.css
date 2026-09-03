@@ -194,8 +194,14 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    border it pushed every card's text 3px right of the heading above it on
    every page that carries cards, which is the drift Hidde kept seeing and
    nobody could name. Same bar, same colour, no layout cost. */
-.tree-card { padding: var(--gutter); border-bottom: 1px solid var(--cream-dark); transition: box-shadow 0.2s, background 0.2s; }
-.panel .tree-card { cursor: pointer; }
+/* A real card, not a list row with a hairline under it (Hidde, 2026-09-03:
+   the tree cards read as "los" next to .near-card/.season-card/.shelf-ph,
+   which all define their box with a background + radius). Matched to the
+   app's TreeCard.swift rather than the site's own shadow-based cards: a
+   14px radius and a 1px hairline border, no box-shadow. */
+.tree-card { background: #fff; border: 1px solid var(--cream-dark); border-radius: 14px;
+  padding: var(--gutter); margin: 0 0 0.75rem; transition: box-shadow 0.2s, background 0.2s, border-color 0.2s; }
+.panel .tree-card { cursor: pointer; margin-left: var(--gutter); margin-right: var(--gutter); }
 /* The stretched link: everywhere except the city page's map-linked list, the
    whole card is the click target, which is what its hover state has always
    promised. The Save button and any credit link sit above the overlay so they
@@ -214,8 +220,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    2026-08-18, on /saved, "de foto view is echt horendous". Capping the card
    at the panel's own width is what "follow the component" means here: same
    card, same proportions, every page. */
-.content-page .tree-card { padding: 1.5rem 0; max-width: 30rem; }
-.content-page .tree-card:first-of-type { padding-top: 0.5rem; }
+.content-page .tree-card { max-width: 30rem; }
 .tree-card:hover { background: #fbf9f5; }
 .tree-card.active { box-shadow: inset 3px 0 0 var(--moss); background: #fbf9f5; }
 .tree-card-photo { position: relative; margin: 0 0 1rem; border-radius: 8px; overflow: hidden; aspect-ratio: 3 / 2; background: var(--cream-dark); }
