@@ -210,8 +210,37 @@ HELD_MARKER = re.compile(
 # future page, not Matera's") filed under Matera's leads file by the sweep that
 # found it. Checked against the full corpus: 7 hits (6 Regensburg, 1 Matera), 0
 # count-doctrine collisions.
+#
+# Widened a seventh time 2026-09-03, after a session dispatched leads.py
+# --ready and read all 11 entries (Freiburg's 4, _famous-germany's 3,
+# Wuppertal's 2, Vezalaukis' 1, _famous-lithuania's 1) before writing
+# anything, per this file's own established methodology. Every one turned
+# out to be a decline in a phrasing none of the six prior widenings catch.
+# Freiburg's four are register rows a pass explicitly could not find a
+# second source for ("no second source... was found this pass", "still
+# needs a second source", "no second source found", "not searched this
+# pass for a second source"). Wuppertal's two (and two more not offered as
+# READY but sharing the same file) are memorial trees a write pass itself
+# rejected at merge time as too young to qualify ("declined at merge...
+# NOT an ancient tree"). Vezalaukis' pair and two of _famous-germany's
+# three (Giessen's Alte Eiche and Schillerlinde, Rudolstadt's
+# Einheitslinde) are single/paired trees explicitly held below the
+# four-tree floor for lack of a cluster ("below the 4-tree floor... held
+# for a future pass", "not individually destination-level... below the
+# 4-tree floor"). _famous-lithuania's Gaurë oak is a distance check only,
+# no actual research ("not researched in depth this pass beyond a distance
+# check"). Checked against the full corpus: 145 hits, 1 "collision" that is
+# not real (a Baarn candidate entry with no `name` field, so readiness()
+# already excludes it on a different ground; the word "target" there is
+# incidental prose, "good target for a next Baarn pass", not a
+# count-doctrine claim).
 NOT_READY_MARKER = re.compile(
-    r"\[SKIPPED\b[^\]]*\]|\b(?:not pursued|left unverified|left undelivered|"
+    r"\[SKIPPED\b[^\]]*\]|\bdeclined at merge\b|"
+    r"\bbelow the 4-tree floor\b|\bbelow the four-tree floor\b|"
+    r"\bno second source\b|\bneeds a second source\b|\bfor a second source\b|"
+    r"\bnot individually destination-level\b|"
+    r"\bnot researched in depth this pass\b|"
+    r"\b(?:not pursued|left unverified|left undelivered|"
     r"ship once|not delivered on|removed from protection|"
     r"survival is a genuine question|identity unresolved|unresolved conflict|"
     r"could be a genuine second|almost certainly beyond|likely beyond|"
