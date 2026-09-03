@@ -1569,8 +1569,25 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
 .sponsor-page .go-btn { margin: 0.25rem 0 0.5rem; }
 /* The unlisted page for a tree somebody added and shared (2026-09-02). One
    picture, one name, one paragraph: it is a page for looking at a tree, not a
-   page for finding one, which is why it carries no map. */
-.shared-tree { max-width: 620px; }
-.shared-photo { margin: 0 0 1.2rem; border-radius: 16px; overflow: hidden; background: var(--cream); }
-.shared-photo img { display: block; width: 100%; height: auto; }
-.shared-foot { margin-top: 1.6rem; color: var(--ink-mid); font-size: 0.92rem; }
+   page for finding one, which is why it carries no map.
+
+   Redesigned 2026-09-03 (Hidde: "niet de mooitste landingspagina, kijk je ook
+   af bij alltrails"). AllTrails leads a page like this with a big cropped
+   photo and closes it with a real call-to-action card rather than a link
+   buried in a sentence, so the photo gets a fixed frame and a shadow instead
+   of whatever aspect ratio the phone happened to shoot, and the app pitch
+   gets the same card treatment as the appland hero (.shared-cta), reusing
+   AppGetter rather than a plain link. */
+.shared-tree { max-width: 640px; }
+.shared-photo { margin: 0 0 1.25rem; border-radius: 20px; overflow: hidden;
+  background: var(--surface); box-shadow: var(--shadow); aspect-ratio: 4 / 3; }
+.shared-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.shared-tree .chip-row { margin: 0.15rem 0 1.35rem; }
+.shared-cta { margin-top: 2rem; padding: 1.85rem 1.5rem; border-radius: 20px;
+  background: var(--moss-light); text-align: center; }
+.shared-cta h2 { font-family: var(--sans); font-weight: 400; letter-spacing: -0.015em;
+  font-size: 1.3rem; margin: 0 0 0.5rem; }
+.shared-cta > p { font-size: 14px; color: var(--ink-mid); line-height: 1.6;
+  max-width: 28rem; margin: 0 auto 1.1rem; }
+.shared-foot { margin-top: 1.1rem; color: var(--ink-mid); font-size: 0.85rem; }
+.shared-foot a { color: var(--moss); font-weight: 600; }
