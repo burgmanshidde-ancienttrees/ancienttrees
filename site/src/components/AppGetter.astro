@@ -62,16 +62,20 @@ const t = ui(lang);
 </div>
 <script define:vars={{ SB: SUPABASE_URL, SBK: SUPABASE_KEY }}>
   (function () {
-    // Runs once per page: Astro dedupes an identical non-inline script even
-    // when the component is used more than once. `source` used to be baked
-    // in here too, which meant an instance with a different source produced
-    // a DIFFERENT script body, defeating the dedup: two listeners ended up
-    // registered on /app (its own widget plus the walks overlay's, which
-    // Base.astro renders hidden on every page), racing on which `source`
-    // landed in the database. `source` now lives on the element's own
-    // data attribute instead, so the script is identical everywhere and
-    // Astro collapses it back to one listener, found by driving an actual
-    // submit in the browser rather than trusting this on paper.
+    // Astro does NOT collapse this into one script when the component is
+    // used more than once on a page (checked directly against the deployed
+    // /app page rather than assumed: two <script> tags land in the HTML,
+    // because /app carries its own widget plus the walks overlay's, which
+    // Base.astro renders hidden on every page of the site). So this guards
+    // itself: the second copy of this script sees the flag and stops before
+    // registering a second submit listener. Without the guard, `source` used
+    // to be baked into each copy directly (define:vars), so the two listeners
+    // disagreed and raced on which value reached the database; now they would
+    // agree (source lives on the element instead) but still both fire, one
+    // real write and one wasted duplicate request the 409 silently absorbs.
+    if (window.__appGetterInit) return;
+    window.__appGetterInit = true;
+
     var ua = navigator.userAgent || "";
     var isIOS = /iPhone|iPad|iPod/.test(ua)
       || (ua.indexOf("Macintosh") > -1 && navigator.maxTouchPoints > 1);
