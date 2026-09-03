@@ -93,7 +93,15 @@
       },
       "how_to_recognise": "An enormous short-trunked lime with an old pollarded, flat-trained crown, set back at an angle behind the fire station. There is a bench.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "apd_003",
@@ -259,7 +267,15 @@
       },
       "how_to_recognise": "A very heavy old lime by the estate buildings, likely with multiple stems or an irregular hollowing trunk.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "apd_008",

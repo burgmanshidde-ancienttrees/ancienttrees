@@ -227,7 +227,14 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "Registered as N11a19-01 at 1,120 m, not transplanted. No age, girth or height published. The pin is the temple. The ginkgo fire-resistance point is general species behaviour and a known reason for temple planting in Japan, not a sourced claim about this tree."
+      "notes": "Registered as N11a19-01 at 1,120 m, not transplanted. No age, girth or height published. The pin is the temple. The ginkgo fire-resistance point is general species behaviour and a known reason for temple planting in Japan, not a sourced claim about this tree.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October: the whole crown turns butter gold, then drops in a day or two",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "hir_007",

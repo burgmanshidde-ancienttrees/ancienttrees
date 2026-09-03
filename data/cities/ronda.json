@@ -125,7 +125,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Measurements and the age reasoning both from sheet Arb_1011: 19 m height, 1.70 m clear trunk, 4.50 m girth at 1.30 m, 5.40 m at the base, crown 16.0 by 12.7 m. Ownership public. The age is derived by the register itself from published yew growth rates and stated as a possibility, which is why the band here is wide."
+      "notes": "Measurements and the age reasoning both from sheet Arb_1011: 19 m height, 1.70 m clear trunk, 4.50 m girth at 1.30 m, 5.40 m at the base, crown 16.0 by 12.7 m. Ownership public. The age is derived by the register itself from published yew growth rates and stated as a possibility, which is why the band here is wide.",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: red arils on female trees, the only part that is not poisonous",
+        "kind": "fruit"
+      }
     },
     {
       "id": "rnd_004",
@@ -157,7 +166,14 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Measurements from sheet Arb_995: 24.5 m height, 2.50 m clear trunk, 14.65 m girth at 1.30 m, 21.50 m at the base, crown 27.4 by 23.7 m, crown area 510 m2. Ownership recorded as private, with the sheet noting the tree stands a few metres from a bridle path; the access line says so. Age is the sheet's own possibly around 800 years. Proposed for Natural Monument status, not yet declared at the time of the sheet."
+      "notes": "Measurements from sheet Arb_995: 24.5 m height, 2.50 m clear trunk, 14.65 m girth at 1.30 m, 21.50 m at the base, crown 27.4 by 23.7 m, crown area 510 m2. Ownership recorded as private, with the sheet noting the tree stands a few metres from a bridle path; the access line says so. Age is the sheet's own possibly around 800 years. Proposed for Natural Monument status, not yet declared at the time of the sheet.",
+      "best_time": {
+        "months": [
+          9
+        ],
+        "label": "September: chestnuts in spiny burs, ripe and gatherable in October",
+        "kind": "fruit"
+      }
     },
     {
       "id": "rnd_005",

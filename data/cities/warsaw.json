@@ -372,7 +372,14 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November: the whole crown turns butter gold, then drops in a day or two",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "war_012",
@@ -631,6 +638,14 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
       }
     }
   ]

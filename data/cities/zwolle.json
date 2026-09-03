@@ -194,7 +194,15 @@
       },
       "how_to_recognise": "One of the pair of large smooth-barked beeches standing either side of the park entrance.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "zwo_006",

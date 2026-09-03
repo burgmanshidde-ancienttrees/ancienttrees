@@ -193,7 +193,15 @@
       },
       "how_to_recognise": "A broad old oak on the left of the path leading to the Wilhelmina monument, heavier in the trunk than the trees planted around it.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "ein_006",
@@ -259,7 +267,15 @@
       },
       "how_to_recognise": "The one free-standing oak in the green strip along the Diepmeerven, opposite numbers 30 to 32. In winter it is the one with the lights.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

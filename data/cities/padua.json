@@ -440,7 +440,14 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November: the whole crown turns butter gold, then drops in a day or two",
+        "kind": "autumn colour"
+      }
     }
   ]
 }

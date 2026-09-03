@@ -312,7 +312,15 @@
       },
       "how_to_recognise": "A single very broad low crown filling one corner of the square, on a short hollow trunk ringed by an iron fence, with a stone cross beside it and the pub terrace under the branches.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }

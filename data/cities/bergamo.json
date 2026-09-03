@@ -119,7 +119,16 @@
       },
       "height_m": 16.0,
       "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 355
+      "girth_cm": 355,
+      "best_time": {
+        "months": [
+          10,
+          11,
+          12
+        ],
+        "label": "October to December: the fruit takes a full twelve months to ripen, so last year's crop turns scarlet on the same branches that are flowering now: white bells and red berries on one tree, which almost nothing else does",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bgm_004",

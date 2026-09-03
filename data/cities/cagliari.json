@@ -354,7 +354,15 @@
         "status": "missing"
       },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "label": "May to June, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }

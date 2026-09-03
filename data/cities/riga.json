@@ -48,9 +48,22 @@
       ],
       "access": "Free, public island park with walking trails (Rigas Meži recreation area); reachable on foot",
       "transport": "Bus/tram to Kipsala or Torņakalns then walk across the Lucavsala footbridge, approx 15-20 min walk from nearest stop",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "July to August, when it flowers",
+        "kind": "flowers"
+      }
     },
     {
       "id": "rig_002",
@@ -73,9 +86,22 @@
       ],
       "access": "Free, stands in a public park (former manor grounds); no restriction noted",
       "transport": "Ziepniekkalns district, Pārdaugava; nearest stop not independently verified this pass",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "rig_003",
@@ -98,9 +124,22 @@
       ],
       "access": "Free, stands beside a former/current social care centre ('Ezerkrasti') by the lake; publicly reachable, no gate or entry fee noted in sources",
       "transport": "Eastern edge of Riga administrative territory (roughly 13km from the city centre by straight line); address is within Riga city limits, but nearest stop/route not independently verified this pass",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     },
     {
       "id": "rig_004",
@@ -123,9 +162,22 @@
       ],
       "access": "Free, grows beside a historic wooden tenement building in the Kalnciema Quarter (Kalnciema kvartāls), a public heritage and market district; visible from the street",
       "transport": "Zasulauks neighbourhood, close to Riga centre; nearest stop not independently verified this pass",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          11,
+          12
+        ],
+        "label": "November to December: clear yellow, sometimes red",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "rig_005",
@@ -148,9 +200,22 @@
       ],
       "access": "Free, stands in Riga's central public canal-park (Kanālmalas apstādījumi), open at all times, no restriction",
       "transport": "In the very centre of Riga, a few minutes' walk from the Freedom Monument; any central bus/tram/trolleybus stop serves it",
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "location_precision": "confirmed",
-      "curation_status": "flagged"
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

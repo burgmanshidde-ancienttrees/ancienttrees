@@ -144,7 +144,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "story": "This beech stands behind Restaurant Vrouwenhof, banded by the national register to a planting around 1840, roughly 190 years old. Left alone behind a building rather than beside a road, a beech this age has usually had the easiest kind of life the species can have: no pruning against traffic, no root compaction from foot or vehicle traffic, room enough to build the wide, low, dome-shaped crown that beeches produce when nothing crowds them.\n\nA beech's bark stays smooth and grey its entire life, never cracking into plates the way an oak's does, which is part of why old beeches are the trees most often carved with initials that never grow over. At nearly two centuries this one has likely accumulated its share, along with the deep leaf litter underneath that beech woodland is known for, since almost nothing grows in the permanent shade a mature beech casts.\n\nThe register describes nothing of the tree's own history beyond species and decade, which is typical for a tree valued for standing rather than for any single event attached to it. If you know more, tell us."
+      "story": "This beech stands behind Restaurant Vrouwenhof, banded by the national register to a planting around 1840, roughly 190 years old. Left alone behind a building rather than beside a road, a beech this age has usually had the easiest kind of life the species can have: no pruning against traffic, no root compaction from foot or vehicle traffic, room enough to build the wide, low, dome-shaped crown that beeches produce when nothing crowds them.\n\nA beech's bark stays smooth and grey its entire life, never cracking into plates the way an oak's does, which is part of why old beeches are the trees most often carved with initials that never grow over. At nearly two centuries this one has likely accumulated its share, along with the deep leaf litter underneath that beech woodland is known for, since almost nothing grows in the permanent shade a mature beech casts.\n\nThe register describes nothing of the tree's own history beyond species and decade, which is typical for a tree valued for standing rather than for any single event attached to it. If you know more, tell us.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "roo_007",
@@ -258,7 +266,15 @@
       "curation_status": "flagged",
       "notes": "LRMB register nr 1680922 ('Hollandse linde'), owner category gemeente, setting park, listed as publicly visitable. The register's own history notes for this location mention a much earlier tree at the same spot declared dead in 1998; that note describes the PLACE's older history, not this currently registered tree, and is not carried into the story to avoid a bridge claim. Single source; a second is wanted.",
       "location_precision": "approximate",
-      "story": "Roosendaal's Dutch lime in Emile van Loonpark carries a planting band rather than a single year: the Netherlands' national register of monumental trees puts it somewhere between 1750 and 1800. That makes it older than the park around it, which the mayor of the same name only began laying out in 1883, roughly a century after this lime was already growing on the site.\n\nThe register lists it as municipal property standing on open parkland, one of the smaller number of Roosendaal's trees old enough to carry the monumental designation at all. Its current girth and condition are not recorded in what we could find so far.\n\nA common lime this old has usually been pollarded, coppiced or propped at some point, since the species tends to hollow at the base long before it dies outright. Whether this one carries that history is worth a look on the ground. It rests on one source for now, the register itself: if you have stood under it, tell us what you saw."
+      "story": "Roosendaal's Dutch lime in Emile van Loonpark carries a planting band rather than a single year: the Netherlands' national register of monumental trees puts it somewhere between 1750 and 1800. That makes it older than the park around it, which the mayor of the same name only began laying out in 1883, roughly a century after this lime was already growing on the site.\n\nThe register lists it as municipal property standing on open parkland, one of the smaller number of Roosendaal's trees old enough to carry the monumental designation at all. Its current girth and condition are not recorded in what we could find so far.\n\nA common lime this old has usually been pollarded, coppiced or propped at some point, since the species tends to hollow at the base long before it dies outright. Whether this one carries that history is worth a look on the ground. It rests on one source for now, the register itself: if you have stood under it, tell us what you saw.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      }
     }
   ]
 }

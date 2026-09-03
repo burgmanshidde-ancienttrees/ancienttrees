@@ -390,7 +390,16 @@
         "attribution": null,
         "status": "missing"
       },
-      "height_m": 25.0
+      "height_m": 25.0,
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "September to November: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     }
   ]
 }

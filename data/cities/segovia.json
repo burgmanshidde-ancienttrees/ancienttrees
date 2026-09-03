@@ -215,7 +215,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Register id AS-SG-29, height 32.5 m, ORDEN MAM/1156/2006; the register leaves the name field empty for this entry. Single-sourced. No age published, and the story states plainly that it is probably not old enough to belong to the original layout."
+      "notes": "Register id AS-SG-29, height 32.5 m, ORDEN MAM/1156/2006; the register leaves the name field empty for this entry. Single-sourced. No age published, and the story states plainly that it is probably not old enough to belong to the original layout.",
+      "best_time": {
+        "months": [
+          8,
+          9,
+          10
+        ],
+        "label": "August to October: upright barrel cones that sit on the branches like eggs",
+        "kind": "fruit"
+      }
     }
   ]
 }
