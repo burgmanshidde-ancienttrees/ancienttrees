@@ -10,6 +10,18 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-03 (continuation run 6) - Hilo +1 (5 to 6); Krakow's two remaining leads resolved, zero shipped
+
+Picked up the standing `krakow` verify claim left by an earlier attempt this window (register candidates already fetched to disk). Chased the two unresolved leads in `data/leads/krakow.json`: the Debniki elm micro-cluster turned out to sit on the private grounds of a guesthouse (OSM tags the exact address `leisure=garden, access=private`, with adjacent footways flagged `access=private` by OSM's own mappers), so it moved to blocked. The Park przy Zawilej cluster (tulip tree, plane, ash, ~5.8km out) has no direct transit line from the centre, everything found needs a transfer, so it stays an unconfirmed lead rather than being forced through. Zero trees delivered, but both questions are now answered rather than sitting open.
+
+Also claimed and finished `hilo` (rank #20, `scout_next.py --target` had incorrectly called it supply-less; it already has an imported register and 7 unpursued leads). Verified and shipped **hbi_006, the Coconut of Waiolama Canal**: a State-owned coconut palm in the Hawaii Exceptional Trees register (CC0), corroborated by a Hawaiian cultural-history site documenting an 1864 chant naming "the coconut grove of Piʻopiʻo" at this exact shoreline (old name Waiolama Niu, niu = coconut) and local accounts crediting the canal's coconut/banyan/mango trees with saving people during the 1946 and 1960 tsunamis. No girth or age: a coconut palm has no growth rings and no source gives a planting date, so both fields ship empty rather than guessed. Location is honestly approximate: the register's coordinates are rounded to ~1.1km and no source pins which specific palm among the canal's tree cover was designated, so the `how_to_recognise` text says so and invites correction. Updated Hilo's intro, meta_description, question_context and two FAQ answers from "five" to "six" trees (Contract C word/char limits enforced via preflight, which caught the first drafts running over).
+
+Four other chased Hilo leads (Bodhi/Peepul Tree, Weeping Fig, Gold Tree, a second Monkeypod) stay open: real institutional-access or no-second-source gaps, not dead ends, recorded with `[RESOLVED 2026-09-03 ...]` notes in `data/leads/hilo.json`.
+
+Also ran the free, deterministic `girths.py`/`heights.py` sweep against registers already on disk: 1 girth filled (Kauai), 3 heights filled (Assisi), zero tokens.
+
+Build and QA both clean (the sitemap-lastmod QA warning is the shallow-clone sandbox artifact noted in earlier entries, not a content problem). Both claims released.
+
 ## 2026-09-03 (continuation run 4) - Malsfeld: a new 4-tree place from the _famous-germany claim, guided lindens of the Schwalm-Eder district
 
 Picked up the standing `_famous-germany` verify claim (in-flight from an earlier attempt this window, 141 min left, not expired). A geographic check of the 71 uncoordinated/coordinated leads found three named lime trees clustering tightly in Hesse (Berndshausen, Dagobertshausen, Hilgershausen, all within ~7km of each other). Dispatched a time-boxed (~20 min) verify pass on the cluster.

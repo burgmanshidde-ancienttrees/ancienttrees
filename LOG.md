@@ -9,6 +9,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (continuation run 6, following an attempt that stopped after 26 min with 94 unspent) - Hilo +1, Krakow's leads closed out, two free girth/height fills
+
+Followed the harness's start order: pulled, found a standing `krakow` verify claim from the earlier attempt in this window (already had register candidates fetched), and a "READY" pair for Catania that turned out to be exactly the trap CLAUDE.md warns about ("never trust the READY count blind"): both were deliberately held for real, current reasons (7-10km past the day-trip boundary; unconfirmed access to a private grove), not superseded rules, so I left them alone.
+
+Dispatched two parallel verify agents:
+- **Krakow**: chased its two remaining open leads. The Debniki elm cluster sits on a guesthouse's private grounds (OSM tags the address `access=private`, and its own mappers flagged the same doubt); moved to blocked. The Park przy Zawilej cluster (5.8km out) has no direct transit from the centre; left as an unconfirmed lead rather than forced through. Zero trees delivered, but a real question closed either way.
+- **Hilo** (rank #20): `scout_next.py --target` said it had no supply, which was wrong, it already has an imported register and 7 leads sitting unpursued from an earlier scouting pass. Verified and shipped **hbi_006, the Coconut of Waiolama Canal**, a State-registered palm on a shoreline an 1864 chant already names as a coconut grove, tied by local sources to tsunami-survivor stories from 1946 and 1960. No age or girth (a palm has no growth rings, no source gives a planting date), and location is honestly approximate since the register can't say which specific trunk it designated among the canal's tree cover. Updated Hilo's intro/meta_description/FAQ from five to six trees.
+
+Also ran `girths.py`/`heights.py` against registers already on disk: 1 girth (Kauai), 3 heights (Assisi), zero tokens, zero research.
+
+Build and QA clean throughout (the recurring sitemap-lastmod QA warning is this sandbox's shallow git clone, not a content issue). Both claims released, everything committed and pushed. Full detail in CURATION.md.
+
 ## 2026-09-03 (session with Hidde) - Digest: Waitlist relabeled Android-only, real App Store download numbers added
 
 He noticed the signup table still said "Waitlist" with no qualifier, the
