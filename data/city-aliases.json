@@ -1189,6 +1189,17 @@
       "Kaway",
       "ma lili Kawawi"
     ],
+    "kaunas": [
+      "Caunas",
+      "Kowno",
+      "Kauņa",
+      "Cawnas",
+      "Couna",
+      "Kaune",
+      "Kauns",
+      "Kawnas",
+      "Kaŭno"
+    ],
     "koenigslutter": [
       "Königslutter",
       "Luttera Regalis"
@@ -1297,6 +1308,10 @@
       "Lisabona",
       "Lizbon",
       "Liospóin"
+    ],
+    "liskiava": [
+      "Liszkowo",
+      "Lėškiava"
     ],
     "liverpool": [
       "Liverpulis",
@@ -1887,6 +1902,9 @@
       "Praghe",
       "Prago"
     ],
+    "priekule": [
+      "Prīkolė"
+    ],
     "princeton-new-jersey": [
       "Princeton",
       "Prinstona",
@@ -1908,6 +1926,10 @@
     "ramsau-am-dachstein": [
       "Gemeinde Ramsau am Dachstein",
       "Romsau am Dochstoa"
+    ],
+    "raudone": [
+      "Raudań",
+      "Rauduonė"
     ],
     "regensburg": [
       "Ratisbonne",
@@ -2722,6 +2744,7 @@
     "kanazawa": "Kanazawa",
     "kansas-city": "Kansas City, Missouri",
     "kauai": "Kauaʻi",
+    "kaunas": "Kaunas",
     "koenigslutter": "Königslutter",
     "koriyama": "Kōriyama",
     "krakow": "Kraków",
@@ -2734,6 +2757,7 @@
     "leuven": "Leuven",
     "lima": "Lima",
     "lisbon": "Lisbon",
+    "liskiava": "Liškiava",
     "liverpool": "Liverpool",
     "ljubljana": "Ljubljana",
     "logan-ohio": "Logan, Ohio",
@@ -2796,9 +2820,11 @@
     "potsdam": "Potsdam",
     "poznan": "Poznań",
     "prague": "Prague",
+    "priekule": "Priekulė, Lithuania",
     "princeton-new-jersey": "Princeton, New Jersey",
     "quebec-city": "Quebec City",
     "ramsau-am-dachstein": "Ramsau am Dachstein",
+    "raudone": "Raudonė",
     "regensburg": "Regensburg",
     "reykjavik": "Reykjavík",
     "riga": "Riga",
@@ -2890,8 +2916,14 @@
     "wye-mills-maryland": "Wye Mills, Maryland"
   },
   "unresolved_names": {
+    "boetersheim": "no article within 40 km, tried Boetersheim; Boetersheim, Germany",
+    "braziukai": "no article within 40 km, tried Braziūkai; Braziūkai, Lithuania",
     "hawaii": "no article within 40 km, tried Hawaii (Hawaii, 312 km away); Hawaii, United States (Hawaii, 312 km away); search: List of United States cities by population; search: Honolulu; search: 2026 United States House of Representatives elections in Hawaii",
     "olympic-national-park": "no article within 40 km, tried Olympic National Park (Olympic National Park, 75 km away); Olympic National Park, United States; search: Park City, Utah; search: List of national parks of the United States; search: Olympic National Park",
-    "ono": "no article within 40 km, tried Ono (Ono, no coordinates, disambiguation page); Ono, Japan (Ono, Hyōgo, 580 km away); search: Jiro Ono; search: Masanosuke Ono; search: Yoko Ono"
+    "ono": "no article within 40 km, tried Ono (Ono, no coordinates, disambiguation page); Ono, Japan (Ono, Hyōgo, 580 km away); search: Jiro Ono; search: Masanosuke Ono; search: Yoko Ono",
+    "trainiskis": "no article within 40 km, tried Trainiškis; Trainiškis, Lithuania",
+    "vainiai": "no article within 40 km, tried Vainiai; Vainiai, Lithuania; search: Do Architects; search: Gilma Teodora Gylytė",
+    "volkenroda": "no article within 40 km, tried Volkenroda; Volkenroda, Germany; search: Loccum; search: Pilgrims' way; search: Kamp Abbey",
+    "zwieslerwaldhaus": "no article within 40 km, tried Zwieslerwaldhaus; Zwieslerwaldhaus, Germany"
   }
 }
