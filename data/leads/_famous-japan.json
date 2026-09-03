@@ -1,6 +1,6 @@
 {
  "country": "Japan",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown. 2026-09-03 verify pass (1 agent, 4 candidates): all 4 verified and delivered to data/research/{higashiagatsuma,higashine,takayama,ofunato}-verified.json. None blocked. Entries removed from this leads list now that they are delivered elsewhere.",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown. 2026-09-03 verify pass (1 agent, 4 candidates): all 4 verified and delivered to data/research/{higashiagatsuma,higashine,takayama,ofunato}-verified.json. None blocked. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 2 (1 agent, 13 candidates): 10 verified and delivered to data/research/{kaga,takahagi,otoyo,tamba,neba,toga,aga,biei,okuizumo,fujikawaguchiko}-verified.json (all National/Prefectural Natural Monuments or, for the Ken and Mary Tree, a culturally famous single specimen); 3 blocked (Miracle Pine Tree, died of saltwater intrusion post-2011 tsunami, now a preserved non-living monument; Tsurugaoka Hachimangu ginkgo tree, original 1000-year trunk toppled in a 2010 storm, root regrowth may be a separate future lead; Tree of philosophy, felled by its landowner in February 2016). Entries removed from this leads list now that they are delivered elsewhere.",
  "leads": [
   {
    "name": "Narao Akō Tree",
@@ -33,19 +33,6 @@
    "photos": [
     "https://commons.wikimedia.org/wiki/File:Annaka_haraichi_no_suginamiki(1934).jpg",
     "https://commons.wikimedia.org/wiki/File:Annaka_haraichi_no_suginamiki.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Arakawa no Jii Sugi",
-   "lat": 36.714893,
-   "lng": 140.703422,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Arakawa_Jii_cedar_tree._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Arakawa_Jii_cedar_tree._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Arakawa_Jii_cedar_tree._C.jpg"
    ],
    "status": "lead",
    "species": "Japanese Cedar (Cryptomeria sp.)",
@@ -498,19 +485,6 @@
    "status": "lead"
   },
   {
-   "name": "Kaibara-no-Ōkeyaki",
-   "lat": 35.1297831,
-   "lng": 135.0766079,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:230502_Kinonebashi_Tamba_Hyogo_pref_Japan01s3.jpg",
-    "https://commons.wikimedia.org/wiki/File:230502_Kinonebashi_Tamba_Hyogo_pref_Japan02s3.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kinone-bashi3794.JPG"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Kamo-no-Okusu",
    "lat": 34.040836,
    "lng": 133.93203,
@@ -576,19 +550,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Kayano no Ōsugi",
-   "lat": 36.2275471,
-   "lng": 136.3599068,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Great_sugi_of_Kayano_in_1915.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hirohito_gaze_at_Great_sugi_of_Kayano.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kayano_%C5%8Csugi_(Rosanjin).png"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Kechimyaku Zakura",
    "lat": 41.431518,
    "lng": 140.106045,
@@ -613,17 +574,6 @@
    "status": "lead",
    "species": "Cherry (Prunus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ken & Marry tree",
-   "lat": 43.609195,
-   "lng": 142.463373,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Biei-tree1_2003.jpg",
-    "https://commons.wikimedia.org/wiki/File:Biei-tree2_2003.jpg",
-    "https://commons.wikimedia.org/wiki/File:Biei_landscape_(7662408868).jpg"
-   ],
-   "status": "lead"
   },
   {
    "name": "Kenchō-ji no Byakushin",
@@ -807,19 +757,6 @@
    ],
    "status": "lead",
    "species": "Hackberry (Celtis sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Miracle Pine Tree",
-   "lat": 39.00425988,
-   "lng": 141.62433939,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Collapsed_Rikuzentakata_Youth_Hostel_and_a_Pine_Tree_of_Hope.jpg",
-    "https://commons.wikimedia.org/wiki/File:Gin_reverse.gif",
-    "https://commons.wikimedia.org/wiki/File:Ipponmatsu_Chaya.jpg"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
@@ -1357,32 +1294,6 @@
    "status": "lead"
   },
   {
-   "name": "Shogun sugi",
-   "lat": 37.72055194,
-   "lng": 139.3609825,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Shogunsugi,_Aga,_Niigata,_Japan.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sh%C5%8Dgun-sugi_20100704_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%B0%86%E8%BB%8D%E6%9D%89%E3%81%A8%E5%B9%B3%E7%B6%AD%E8%8C%82%E5%A2%93%E7%A2%91.JPG"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Shoji no osugi",
-   "lat": 35.495967,
-   "lng": 138.60979,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Shoji%27s_Big_Cedar_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shoji%27s_Big_Cedar_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shoji%27s_Big_Cedar_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Shokawa zakura",
    "lat": 36.090077,
    "lng": 136.939507,
@@ -1393,19 +1304,6 @@
    ],
    "status": "lead",
    "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sugi no Osugi",
-   "lat": 33.75496833,
-   "lng": 133.66257333,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Oosugi_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Oosugi_03.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sugi_no_Osugi,_gaikan-1.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
@@ -1454,19 +1352,6 @@
    ],
    "status": "lead",
    "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Takezaki no Katsura",
-   "lat": 35.187333,
-   "lng": 133.177687,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_of_Takezaki_no_Katsura.jpg",
-    "https://commons.wikimedia.org/wiki/File:Takezaki_no_Katsura_Cercidphylluum_japonicum_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Takezaki_no_Katsura_Cercidphylluum_japonicum_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Katsura (Cercidiphyllum sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
@@ -1562,16 +1447,6 @@
    "status": "lead"
   },
   {
-   "name": "Tree of philosophy",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:P1010220%E5%93%B2%E5%AD%A6%E3%81%AE%E6%9C%A8.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tree_of_philosophy.jpg"
-   ],
-   "status": "lead"
-  },
-  {
    "name": "Tsukazaki no Kusu",
    "lat": 31.33872,
    "lng": 130.971065,
@@ -1585,19 +1460,6 @@
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
-   "name": "Tsukize no Osugi",
-   "lat": 35.258034,
-   "lng": 137.566641,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Nagano-Tsukise-no-Osugi.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tsukize-no-Osugi_ac_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Tsukize-no-Osugi_ac_(2).jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
    "name": "Tsunekami no Sotetsu",
    "lat": 35.637767,
    "lng": 135.820198,
@@ -1608,19 +1470,6 @@
    ],
    "status": "lead",
    "species": "Sago Palm (Cycas sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tsurugaoka Hachimangu ginkgo tree",
-   "lat": 35.32569167,
-   "lng": 139.55596722,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2_Chome-1_Yukinoshita,_Kamakura-shi,_Kanagawa-ken_248-0005,_Japan_-_panoramio_(5).jpg",
-    "https://commons.wikimedia.org/wiki/File:2_Chome-1_Yukinoshita,_Kamakura-shi,_Kanagawa-ken_248-0005,_Japan_-_panoramio_(6).jpg",
-    "https://commons.wikimedia.org/wiki/File:Death_of_a_tree.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
@@ -1694,17 +1543,6 @@
     "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_Kiyosato_highland.A.JPG",
     "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_Kiyosato_highland.B.JPG",
     "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_Kiyosato_highland_forest.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Wakidani no Tochinoki",
-   "lat": 36.534335,
-   "lng": 137.025917,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Wakidani_no_Tochinoki_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wakidani_no_Tochinoki_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Wakidani_no_Tochinoki_03.jpg"
    ],
    "status": "lead"
   },
@@ -1822,6 +1660,21 @@
   }
  ],
  "blocked": [
+  {
+   "name": "Miracle Pine Tree",
+   "reason": "Checked 2026-09-03. The original pine died from saltwater intrusion after the 2011 tsunami's ground subsidence let seawater into its roots. What stands today at the Takata Matsubara Tsunami Recovery Memorial Park is a preserved monument built from much of the original wood plus a steel core and artificial replica parts, not a living tree. Never ships as an entry per the never-dead rule; may be mentioned as context inside a different living-tree story about the region.",
+   "coordinate": [39.00425988, 141.62433939]
+  },
+  {
+   "name": "Tsurugaoka Hachimangu ginkgo tree",
+   "reason": "Checked 2026-09-03. The original roughly 1,000-year-old ginkgo trunk toppled in a storm on 10 March 2010 (confirmed by multiple Japanese news sources including Kanagawa Shimbun). The felled section was cut down and replanted 7m from the original spot, and new shoots (hikobae) sprouted from the surviving root a month later, so there may be a living regrowth from the same root system today, comparable to the Elm of Saint-Gervais precedent. Not delivered this pass because the current height/condition of that regrowth 16 years on was not established within the time box; a future pass could verify it as a living-succession entry rather than presenting the felled 1000-year trunk as still standing.",
+   "coordinate": [35.32569167, 139.55596722]
+  },
+  {
+   "name": "Tree of philosophy",
+   "reason": "Checked 2026-09-03. This Biei, Hokkaido poplar was felled by its landowner on 24 February 2016 (multiple Japanese news sources, e.g. Nikkei and ITmedia), due to age-related collapse risk and damage tourists were causing to the surrounding farmland. Dead/gone, never ships per the never-dead rule.",
+   "coordinate": [null, null]
+  },
   {
    "name": "Wilson's Stump",
    "reason": "Stump of a yakusugi felled roughly 500 years ago (named for E.H. Wilson who documented it in 1914); dead, not a living tree. Never ships as an entry per the never-dead rule. May be mentioned as context inside a living Yakushima tree story (its three living descendants growing nearby could be a separate future lead).",
