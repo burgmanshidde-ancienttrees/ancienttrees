@@ -67,7 +67,7 @@ WIDTHS = (500,)
 # it falls through to the original, which is how a 6.6 MB file ended up being
 # the hero on a phone. The manifest is built from what is on disk, so listing a
 # width here is a permission to notice it, never a promise that it exists.
-KNOWN_WIDTHS = (500, 1280)
+KNOWN_WIDTHS = (500, 1000, 1280)
 
 # A licence that does not permit us to host a copy. Matched on the recorded
 # licence string, and anything unrecognised is skipped rather than assumed.
