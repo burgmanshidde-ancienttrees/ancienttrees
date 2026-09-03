@@ -1,0 +1,26 @@
+[
+  {
+    "id": "aga_001",
+    "name": "Shogun Sugi",
+    "species": "Japanese Cedar (Cryptomeria japonica)",
+    "age_estimate": "roughly 1,400 years",
+    "age_min": 1000,
+    "age_max": 1800,
+    "girth_cm": 1931,
+    "location": {
+      "address": "2242 Iwatani, Mikawa, Aga, Higashikanbara District, Niigata Prefecture (east of Byodo-ji temple)",
+      "latitude": 37.72055194,
+      "longitude": 139.3609825,
+      "neighbourhood": "Iwatani"
+    },
+    "verified_sources": [
+      "https://www.town.aga.niigata.jp/agamachi_soshiki/shakai_kyoiku/rekishi_bunkazai/382.html",
+      "https://n-story.jp/localculture/%E5%B0%86%E8%BB%8D%E6%9D%89/"
+    ],
+    "access": "Free, publicly viewable on town-owned land beside Byodo-ji temple.",
+    "transport": "Rural Aga Town, Niigata Prefecture; reached by car, roughly an hour from Niigata city.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Standalone destination tree and a major superlative claim: at 19.31m trunk girth it was measured as Japan's single largest-girth cedar in the Ministry of the Environment's national giant-tree follow-up survey (FY2000-2001), overtaking Yakushima's Jomon Sugi (16.1m girth), though Jomon Sugi is usually cited as older. Height 38m, estimated age roughly 1,400 years. Name comes from a legend that the Heian-period general Taira no Koremochi spent his later years nearby. Designated National Natural Monument on 8 April 1926 (one source's parenthetical Showa-era date does not match this, so the Aga town official page's Taisho/Showa-15 date of 1926 is used as the more authoritative municipal source). No explicit recent health statement found in the sources fetched, so flagged for that; nothing found suggests decline or death."
+  }
+]

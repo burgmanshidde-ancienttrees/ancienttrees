@@ -1,0 +1,26 @@
+[
+  {
+    "id": "kag_001",
+    "name": "Kayano no Osugi",
+    "species": "Japanese Cedar (Cryptomeria japonica)",
+    "age_estimate": "roughly 2,300 years",
+    "age_min": 2000,
+    "age_max": 2500,
+    "girth_cm": 960,
+    "location": {
+      "address": "Sugawara Shrine, Kayano-cho, Yamanaka Onsen, Kaga, Ishikawa Prefecture",
+      "latitude": 36.2275471,
+      "longitude": 136.3599068,
+      "neighbourhood": "Yamanaka Onsen"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E6%A0%A2%E9%87%8E%E5%A4%A7%E6%9D%89",
+      "https://kunishitei.bunka.go.jp/heritage/detail/201/10374"
+    ],
+    "access": "Free. Stands within the grounds of Sugawara Shrine, open to the public.",
+    "transport": "Roughly 20 minutes by car or taxi from Daishoji Station on the JR Hokuriku Main Line; the shrine is in the Yamanaka Onsen hot-spring district of Kaga City.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Standalone destination tree, National Natural Monument since November 1928 (Agency for Cultural Affairs / kunishitei.bunka.go.jp record 201-10374). Age of roughly 2,300 years assessed in 1928 by botanist Manabu Miyoshi (Tokyo University); root-base circumference 11.5m, chest-height girth 9.6m (used as girth_cm), height approx 54.8m, among the largest sugi in Japan. Nicknamed 'Tenran no Osugi' (the Great Sugi Viewed by the Emperor) after Emperor Showa examined it closely during the 1947 National Sports Festival in Ishikawa (he was a trained biologist). The artist/potter Rosanjin sketched it in sumi-e in 1915 while staying at a nearby inn. A 2016 acoustic-wave health assessment by certified arborists found no signs of vigor decline and no branch-fall hazard, so alive-and-healthy evidence is recent. Flagged only because the age is a 1928 estimate rather than a fresh measurement; add roughly a century to any 1928 figure quoted elsewhere. Coordinates from the lead file match the shrine location."
+  }
+]
