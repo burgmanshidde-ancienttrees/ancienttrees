@@ -21,6 +21,53 @@ Merged all 6: built each place's full page set by hand (intro, meta_description,
 
 Two remaining single-tree leads (tamba, toga) still need stories written; left for the next pass.
 
+## 2026-09-03 (session with Hidde) - The app is in the store, and the website had never mentioned it
+
+He asked whether we should put an AllTrails-style overlay on the mobile site,
+and whether that would kill our SEO. Checking it turned up something worse than
+the missing overlay: **nothing on ancienttrees.app linked to the App Store at
+all.** /app still said "Coming soon" and collected email addresses for a
+waitlist to an app people can already download, and the walks overlay did the
+same in eight languages. The store id is 6806177833.
+
+**The answer to his question, measured rather than felt.** Eight reference
+sites were fetched with an iPhone user agent and read for what they actually
+ship. komoot and iNaturalist ship Apple's `apple-itunes-app` tag; AllTrails,
+Reddit and Pinterest ship a full-screen sheet of their own; Wikipedia ships
+nothing. Google names a sheet that covers the content on arrival from search as
+an intrusive interstitial and names Apple's banner as its own exception, and
+search is the only channel this site has, so we take Apple's. The table and the
+reasoning are in CONVENTIONS.md.
+
+**What shipped:** /app is a download page, the walks overlay drops its form for
+the same badge (which also deleted a fetch, a script and six copy keys per
+language), Apple's smart app banner is on every page with `app-argument`
+carrying the URL the reader is standing on, and the badge is Apple's own
+artwork localised into all eight languages rather than a pill of ours.
+
+**The AASA file is live and Apple has already read it**, which was the open
+question: GitHub Pages serves an extensionless file as `application/octet-stream`
+and Apple's documentation asks for `application/json`.
+`app-site-association.cdn-apple.com/a/v1/ancienttrees.app` returns our file
+parsed, so the hosting is not the blocker anybody would assume it is. Worth
+knowing before somebody spends a session moving the site.
+
+**Also fixed: the deploy, red since this morning.** `check_tree_photo_dimensions()`
+demanded the `<img>` immediately after the `<figure>`, and PhotoFigure.astro
+wrapped the thumbnail in a `<button>` when the light box landed. The check
+matched nothing, its own canary fired and every push since died on it.
+
+**FOR HIDDE, two things that are yours.** The 16 people on the waitlist were
+promised a mail the day it opened, and it opened; the draft is mine, the send
+is yours. And the walks overlay still lists Stadswandelingen and Season Radar
+as things the app does, which is your August copy against the paywall list; I
+have not verified either against the shipped build.
+
+**Next, and it needs an app release rather than a deploy:** universal links.
+The web half is live, the app half is the Associated Domains entitlement plus
+routing an incoming URL to the tree, and the app has no link handling at all
+today.
+
 ## 2026-09-03 - The domain has a mailbox, and hello@ never existed
 
 `info@ancienttrees.app` receives. Confirmed end to end at 13:40 today: a mail
