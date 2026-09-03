@@ -21,12 +21,12 @@
       "why": "[RESOLVED, delivered as prg_017 \"The Plane of Nove Mlyny\"] Pamatny strom, 342 cm in 2017, on the corner of Nove Mlyny and Klimentska opposite the church of St Clement, on a public street. It stands 250 metres from the Rasnovka oak (prg_016), so the two make a genuine two-tree pocket in the Petrska quarter and it would be the cheapest possible eleventh tree. Failed on the count and on repetition: the page already carries four London planes and a fifth adds a species, not a reason to walk. Its register note claims nothing beyond being a local dominant of above average size and age, so it needs a story before it needs a pin."
     },
     {
-      "name": "Turecka liska na Petrine",
-      "species": "Corylus colurna",
-      "lat": 50.0814,
-      "lng": 14.3974,
-      "status": "lead",
-      "why": "A Turkish hazel of 256 cm by the Stefanik Observatory on Petrin, inside the Seminarska zahrada and Kinsky cluster where we already publish three trees. Its memorial-tree status was revoked on 28 February 2007 and the register does not say why, which is the whole lead: revocation usually means the tree died or was felled, but sometimes it means a boundary or ownership change. One check of whether it still stands, and of the reason given in the revocation decision, either kills it or produces a well placed fourth tree for the Petrin walk."
+      "name": "Jilm Na Zatorach v Holesovicich",
+      "species": "Ulmus laevis",
+      "lat": 50.1086122,
+      "lng": 14.4399208,
+      "status": "resolved",
+      "why": "[RESOLVED 2026-09-03, delivered as prg_018 \"The Elm of Zatory\"] Vyznamny strom 28, confirmed alive, girth 226 cm (2016, per the register itself, not the 266 cm this note previously recorded, which was a transcription slip)."
     },
     {
       "name": "Lipa srdcita u krizovniku",
@@ -78,6 +78,13 @@
     }
   ],
   "blocked": [
+    {
+      "name": "Turecka liska na Petrine",
+      "species": "Corylus colurna",
+      "lat": 50.0813889,
+      "lng": 14.3973611,
+      "reason": "Confirmed dead. Czech Wikipedia (via drusop.nature.cz, the AOPK CR register of memorial trees, entry 104323): crown dieback reached 75% by 2003, the tree was recorded as lifeless (health status 5) in 2004, and its protected status was formally ended 28 February 2007 due to the safety hazard of falling dead branches. It stood at the same age (planted 1920s) and appears to have died of the same unidentified disease as the Turkish hazel at Strahov monastery (already blocked below) and one at Trojsky zamek. Never ship; do not re-research."
+    },
     {
       "name": "Frantiskansky tis (the Franciscan yew)",
       "species": "Taxus baccata",

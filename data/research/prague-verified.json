@@ -1,0 +1,27 @@
+[
+  {
+    "id": "prg_018",
+    "name": "The Elm of Zatory",
+    "species": "European White Elm (Ulmus laevis)",
+    "age_estimate": "roughly 190 years",
+    "age_min": 170,
+    "age_max": 210,
+    "girth_cm": 226,
+    "location": {
+      "address": "Bus terminus at the south exit of Nadrazi Holesovice metro station (Praha 7, Holesovice)",
+      "latitude": 50.1086122,
+      "longitude": 14.4399208,
+      "neighbourhood": "Holesovice"
+    },
+    "verified_sources": [
+      "https://cs.wikipedia.org/wiki/Jilm_na_Z%C3%A1tor%C3%A1ch_v_Hole%C5%A1ovic%C3%ADch",
+      "http://web.archive.org/web/20200807054956/http://www.prazskestromy.cz/stromy/vyznamne-stromy/28-jilm-na-zatorach-v-holesovicich/"
+    ],
+    "access": "Free, standing on public ground at a bus turning circle beside the metro station",
+    "transport": "Nadrazi Holesovice metro station (line C), at the exit",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "An elm marks a bus terminus outside Nadrazi Holesovice, and it is the last thing standing from a street. Na Zatorach once ran through old Holesovice, cleared in stages from the 1950s into the late 1970s: first for a concrete plant, then for the railway yard, then for the metro station and bus depot that occupy the ground today. One house, kept for its old street number, and this elm are what is left of it.\n\nPrague's register of significant trees measured the trunk at 2.26 metres round in 2016 and put the tree at about 180 years old that year, which puts it near 190 now. The write-ups behind that figure trace back to the same 2016 survey rather than to two separate measurements, so treat the age as an estimate carried from one source, not a settled fact.\n\nThe species explains why it is the one tree that made it. European white elm tolerates wet, disturbed ground better than most trees, which is exactly what a rail yard and a bus turning circle produce, and it carries more resistance to Dutch elm disease than the common elm that wiped out most of the continent's street elms in the twentieth century. It stands where a demolished neighbourhood ends and a metro line begins, four kilometres north of the old town, ringed by the bus turning circle that is now the closest thing Zatory has to an address.",
+    "verify_notes": "Vyznamny strom (Prague's city-level significant-tree register) entry 28, entered 2014. Girth 226 cm as measured in 2016; age estimated by the register at 180 years as of 2016 (so roughly 190 now, stated broadly). Only one true source line found this pass: the Czech Wikipedia article, which itself directly reproduces the prazskestromy.cz register entry (Ing. Ales Rudl, 2016) and the same author's 2016 book 'Vyznamne stromy, ziva historie nasich obci a mest' -- same underlying register, not independent of each other, hence flagged rather than confirmed on sourcing. A second, genuinely independent source was not found this pass. Discrepancy: data/leads/prague.json's existing lead entry for this tree recorded the girth as 266 cm; the primary Wikipedia/register source gives 226 cm as of 2016 -- trust 226 cm, the lead note appears to be a transcription slip. Story hook: this is the last surviving tree of a demolished street/quarter called 'Zatory' (old Holesovice), levelled in stages between the 1950s and late 1970s for a concrete plant, then the railway station, metro station and bus depot; only this elm and one nearby house with an old housenumber remain of the vanished neighbourhood. It stands 4 km north of the city centre; would join prg_006 (Stromovka ginkgo) and prg_007 (Cisarsky ostrov oak) into a northern three-stop cluster, all reachable via the same metro line."
+  }
+]

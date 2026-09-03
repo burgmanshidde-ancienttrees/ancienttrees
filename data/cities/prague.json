@@ -3,7 +3,7 @@
   "country": "Czech Republic",
   "status": "needs_curation",
   "intro": "Prague protects its old trees the same way it protects buildings: since 1992, national law lets the city legally register individual specimens as pamatne stromy, memorial trees, each with its own protection order and a fineable offence for damaging one. Roughly 200 trees currently hold that status across the city. Most of what follows are London planes planted in aristocratic gardens two centuries ago, alongside a monastery ash, an island oak tamed by imperial flood engineers, and a beech that split into two trunks on a 17th century battlefield. All of them are free to visit.",
-  "meta_description": "Prague protects its old trees by law. Seventeen remarkable trees, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
+  "meta_description": "Prague protects its old trees by law. Eighteen remarkable trees, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
   "question_answer": "The oldest tree in Prague that anyone can actually go and see is the Beethoven Plane, a London plane growing in the garden of the Grand Priory Palace on Velkoprevorske namesti in Mala Strana, estimated at somewhere between 200 and 300 years old. Its exact planting date is disputed, but its trunk, seven and a half metres around, is the thickest of any protected tree in the city, and it towers over the wall where tourists photograph the Lennon Wall without ever looking up.",
   "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and sixteen more remarkable trees.",
   "question_context": "Prague has an older tree than this one, but nobody can visit it. Dub Karel, a 550 year old oak in a private castle park at Kolodeje, is Prague's oldest tree by a wide margin, and its own official record calls it the most massive tree in the city. The land is privately owned and closed to visitors, so per this site's rule on withheld locations it is left off the list rather than published as a destination nobody can reach. That leaves the Beethoven Plane as the oldest tree anyone can actually walk up to. It grows in the garden of the Grand Priory Palace, once the Prague seat of the Order of Malta, on Velkoprevorske namesti in Mala Strana, its trunk towering above the same wall famous today as the Lennon Wall. The romantic story, that a young Beethoven sat dreaming beneath it during his 1796 visit, does not survive contact with the calendar: he was in Prague in February, an unlikely month for garden reveries. Its real age is disputed among Czech sources, ranging from around 200 to nearly 300 years, but no other protected tree in the city comes close to its girth.",
@@ -652,6 +652,36 @@
       "transport": "Petrska ctvrt, Nove Mesto; tram 3, 8 or 24 to Prazska trznice or Revolucni, short walk",
       "girth_cm": 342,
       "how_to_recognise": "On the street corner opposite the Church of St Clement, 3.42 metres round, its bark shedding in plates of cream, olive and grey."
+    },
+    {
+      "id": "prg_018",
+      "name": "The Elm of Zatory",
+      "species": "European White Elm (Ulmus laevis)",
+      "age_estimate": "roughly 190 years",
+      "age_min": 170,
+      "age_max": 210,
+      "girth_cm": 226,
+      "location": {
+        "address": "Bus terminus at the south exit of Nadrazi Holesovice metro station (Praha 7, Holesovice)",
+        "latitude": 50.1086122,
+        "longitude": 14.4399208,
+        "neighbourhood": "Holesovice"
+      },
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Jilm_na_Z%C3%A1tor%C3%A1ch_v_Hole%C5%A1ovic%C3%ADch",
+        "http://web.archive.org/web/20200807054956/http://www.prazskestromy.cz/stromy/vyznamne-stromy/28-jilm-na-zatorach-v-holesovicich/"
+      ],
+      "access": "Free, standing on public ground at a bus turning circle beside the metro station",
+      "transport": "Nadrazi Holesovice metro station (line C), at the exit",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "An elm marks a bus terminus outside Nadrazi Holesovice, and it is the last thing standing from a street. Na Zatorach once ran through old Holesovice, cleared in stages from the 1950s into the late 1970s: first for a concrete plant, then for the railway yard, then for the metro station and bus depot that occupy the ground today. One house, kept for its old street number, and this elm are what is left of it.\n\nPrague's register of significant trees measured the trunk at 2.26 metres round in 2016 and put the tree at about 180 years old that year, which puts it near 190 now. The write-ups behind that figure trace back to the same 2016 survey rather than to two separate measurements, so treat the age as an estimate carried from one source, not a settled fact.\n\nThe species explains why it is the one tree that made it. European white elm tolerates wet, disturbed ground better than most trees, which is exactly what a rail yard and a bus turning circle produce, and it carries more resistance to Dutch elm disease than the common elm that wiped out most of the continent's street elms in the twentieth century. It stands where a demolished neighbourhood ends and a metro line begins, four kilometres north of the old town, ringed by the bus turning circle that is now the closest thing Zatory has to an address.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
