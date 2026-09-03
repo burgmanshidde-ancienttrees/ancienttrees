@@ -58,6 +58,19 @@ struct TreeMap: UIViewRepresentable {
     /// camera and leave you on the map, which is his 2026-08-24 ruling.
     var onSelectTree: ((String) -> Void)? = nil
     var focus: CLLocationCoordinate2D?
+    /// Whether what this map is aimed at came from the phone or from a guess.
+    ///
+    /// `origin` always has a value: a live fix, then the last one this phone
+    /// had, then Dam square. So a cold first launch aims at Amsterdam and the
+    /// real answer arrives a second or two later, by which time settle() has
+    /// already taken its single shot (Hidde, 2026-09-03: "op de eerste open
+    /// toen ik mn locatie had gedeeld bleef ik op Amsterdam staan"). This flips
+    /// false to true exactly once per launch, and that flip buys one more shot.
+    ///
+    /// Left false on every map aimed at something that is not you: a tree, a
+    /// city, a walk, your own collection. Those have their answer from the
+    /// start and must never be re-aimed.
+    var focusIsFix = false
     /// A walk's line. Real when route_walks.py cached a routed shape, otherwise
     /// the order the trees are visited, which is NOT the path a walker takes.
     var route: [CLLocationCoordinate2D] = []
@@ -324,6 +337,29 @@ struct TreeMap: UIViewRepresentable {
         // was broken and it was arithmetic.
         let metresPerPointAtZoomZero = (40_075_017.0 / 512.0) * cos(latitude * .pi / 180)
         return max(1, min(20, log2(metresPerPointAtZoomZero * width / max(m, 1))))
+    }
+
+    /// Whether the opening shot should be taken, or taken again.
+    ///
+    /// A pure answer rather than a condition buried in settle(), because the
+    /// case it exists for cannot be staged on a simulator: a map cannot be
+    /// handed a late location fix by a test, and it does not need to be, since
+    /// what goes wrong is a boolean. Same shape as the camera-permission fix.
+    ///
+    /// Three shots at most, in this order, and never after a finger has moved
+    /// the camera: the first one, a retake once the sheet has finally said how
+    /// much of the map it covers, and one when a guessed position turns into a
+    /// real one. See MapAimTests.
+    static func shouldAim(userMoved: Bool, aimed: Bool, selecting: Bool,
+                          coverage: CGFloat, aimedCoverage: CGFloat,
+                          hasFix: Bool, aimedWithFix: Bool) -> Bool {
+        if userMoved { return false }
+        if !aimed { return true }
+        // The camera belongs to the pager while a tree is open, and yanking it
+        // away from the pin somebody just tapped is worse than opening wrong.
+        if selecting { return false }
+        if hasFix && !aimedWithFix { return true }
+        return abs(coverage - aimedCoverage) > 1 && aimedCoverage <= 0
     }
 
     /// The smallest box holding every one of these, or nil when there are none.
@@ -597,6 +633,9 @@ struct TreeMap: UIViewRepresentable {
         /// before the sheet had reported its height can be retaken once and
         /// only once. See settle().
         var aimedCoverage: CGFloat = -1
+        /// Whether the shot on screen was taken at a real fix or at a fallback.
+        /// See TreeMap.focusIsFix and shouldAim().
+        var aimedWithFix = false
         /// Set the moment a finger moves the camera. After that the map belongs
         /// to whoever is holding the phone and nothing here aims it again.
         var userMoved = false
@@ -666,9 +705,13 @@ struct TreeMap: UIViewRepresentable {
             // every drag re-framed the camera under somebody's thumb, and a map
             // that jumps while you are reading the list under it is worse than
             // a map that opened slightly wrong.
-            guard !userMoved, !aimed || abs(coverage - aimedCoverage) > 1 && aimedCoverage <= 0
+            guard TreeMap.shouldAim(userMoved: userMoved, aimed: aimed,
+                                    selecting: parent.selected != nil,
+                                    coverage: coverage, aimedCoverage: aimedCoverage,
+                                    hasFix: parent.focusIsFix, aimedWithFix: aimedWithFix)
             else { return }
             aimedCoverage = coverage
+            aimedWithFix = parent.focusIsFix
 
             // The set, when the caller asked for the set. Padding on three
             // sides for air, and the sheet's own coverage under it so nothing
@@ -744,7 +787,22 @@ struct TreeMap: UIViewRepresentable {
                             > now.span.latitudeDelta * 0.2
                 else { return }
             }
-            binding.wrappedValue = now
+            // NEXT TICK, NEVER THIS ONE.
+            //
+            // MapLibre calls this delegate synchronously from setCenter, and
+            // settle() calls setCenter from updateUIView, so a direct write
+            // here is a write to SwiftUI state in the middle of a SwiftUI
+            // update: "Modifying state during view update, this will cause
+            // undefined behavior", and the value is lost. Every camera move a
+            // FINGER makes lands outside an update and was fine, which is why
+            // this never showed until the map started re-aiming itself
+            // (2026-09-03): the map flew from Amsterdam to Leuven and the list
+            // under it went on describing Amsterdam, twenty-four trees and all.
+            //
+            // The hop costs one runloop turn, which nobody can see, and it is
+            // the documented way out: let the update finish, then change the
+            // state that starts the next one.
+            DispatchQueue.main.async { binding.wrappedValue = now }
         }
     }
 }

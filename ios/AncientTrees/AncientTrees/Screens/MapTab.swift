@@ -306,6 +306,10 @@ struct MapTab: View {
                     onSelectMine: { navigator.push = .mine($0) },
                     onSelectTree: { navigator.push = .tree($0) },
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
+                    // So the map can tell a fix from Dam square and retake its
+                    // opening shot when the phone finally answers. See
+                    // TreeMap.focusIsFix.
+                    focusIsFix: located,
                     route: walkRoute,
                     routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
                     // Not while the sheet covers the map. It is a control on a
