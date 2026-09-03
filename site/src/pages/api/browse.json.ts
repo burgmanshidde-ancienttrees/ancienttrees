@@ -32,7 +32,7 @@ import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../.
 import { cityFaceTree, speciesFaceTree, parkFaceTree, usablePhoto } from "../../lib/images";
 import { groupTreesBySpecies } from "../../lib/species";
 import { groupTreesByPark, parkGroupKey } from "../../lib/parks";
-import { feedVersion } from "../../lib/app-feed";
+import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -144,7 +144,7 @@ export async function GET() {
   const payload = { cities: cityFacets, collections, parks, countries, species };
   const body = JSON.stringify(payload);
   return new Response(
-    JSON.stringify({ version: await feedVersion(body), ...payload }),
+    JSON.stringify({ version: await feedVersion(body), licence: FEED_LICENCE, ...payload }),
     { headers: { "content-type": "application/json; charset=utf-8" } },
   );
 }

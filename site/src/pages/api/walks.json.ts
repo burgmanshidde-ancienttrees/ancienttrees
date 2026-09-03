@@ -18,7 +18,7 @@ import { cityIsRenderable, walkableTrees } from "../../lib/trees";
 import { planWalks, walkRouteFor, humanDuration, kmLabel, type WalkMarker } from "../../lib/walks";
 import { speciesIcon } from "../../lib/species-icons";
 import { usablePhoto } from "../../lib/images";
-import { feedVersion } from "../../lib/app-feed";
+import { FEED_LICENCE, feedVersion } from "../../lib/app-feed";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -78,7 +78,7 @@ export async function GET() {
   out.sort((a, b) => (a.city_slug < b.city_slug ? -1 : a.city_slug > b.city_slug ? 1 : b.count - a.count));
   const body = JSON.stringify(out);
   const version = await feedVersion(body);
-  return new Response(JSON.stringify({ version, count: out.length, walks: out }), {
+  return new Response(JSON.stringify({ version, licence: FEED_LICENCE, count: out.length, walks: out }), {
     headers: { "Content-Type": "application/json" },
   });
 }

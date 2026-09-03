@@ -31,6 +31,16 @@ function absolute(u: string): string {
   return u.startsWith("/") ? `${BASE_URL}${u}` : u;
 }
 
+/** The one line every feed carries, because a JSON file travels further than
+ *  a page does and arrives with no footer attached to it. It says who the
+ *  records belong to and where the terms are, so nobody can take the dataset
+ *  for open data by accident. Records, not facts: a fact about a tree belongs
+ *  to nobody, the checked collection of them is ours. */
+export const FEED_LICENCE =
+  "(c) Ancient Trees, ancienttrees.app. Verified records, not open data: " +
+  "reuse by permission, see ancienttrees.app/terms and ancienttrees.app/sources. " +
+  "Photographs carry their own licences and credits, given per tree.";
+
 export interface FeedTree {
   id: string;
   name: string;

@@ -1,0 +1,73 @@
+---
+// The credits page. Written 2026-09-03, because forty of the registers this
+// project has imported are published under a licence that obliges attribution
+// and the site named none of them anywhere. That is a debt, not an omission,
+// and it was owed from the first import.
+//
+// Convention check (CONVENTIONS.md, "Crediting open data"): OpenStreetMap,
+// iNaturalist and Wikimedia all do the same thing, a single credits page
+// listing each source with its licence and a link back, reached from the
+// footer. Nobody invents a format for this and neither do we.
+//
+// Generated from the register files rather than typed, so importing a
+// register credits it and a licence cannot drift from what was recorded at
+// import time.
+import Base from "../layouts/Base.astro";
+import { BASE_URL } from "../lib/schema";
+import { creditsByCountry } from "../lib/sources";
+
+const groups = creditsByCountry();
+const total = groups.reduce((n, g) => n + g.sources.length, 0);
+const shareAlike = groups.flatMap((g) => g.sources).filter((s) => s.shareAlike);
+const canonical = `${BASE_URL}/sources`;
+---
+<Base title="Sources and credits" description="Every official tree register, map and photo source behind Ancient Trees, with its licence and attribution." canonical={canonical}>
+<main class="content-page">
+  <h1>Sources and credits</h1>
+  <div class="prose-block">
+    <p>Every tree on this site was verified against at least two independent sources before it was published. Many of those sources are official registers of protected trees, published by governments and city councils under open licences. This page names all {total} of them, with the licence each one is published under, because most of those licences ask to be credited and because you should be able to check us.</p>
+
+    <h2>How we use a register</h2>
+    <p>A register tells us which trees a public authority has designated, and often their species, girth and position. It is where research starts, never where it ends: a designation says protected, not worth the walk, and no register anywhere records whether a tree is still standing. So every entry that reaches the map was checked again by hand against a second, independent source, given a pin with its precision stated honestly, and written up in our own words.</p>
+    <p>We do not republish these registers. There is no bulk copy of anybody's dataset on this site, and the register layer that would have shown their entries as raw dots is switched off. What we publish is our own records about individual trees.</p>
+
+    {shareAlike.length > 0 && (
+      <>
+        <h2>Share-alike sources</h2>
+        <p>{shareAlike.length} of the registers below are published under a share-alike licence (ODbL, or Creative Commons BY-SA), which asks that a database built substantially out of theirs be released on the same terms. Our records are researched and written independently and take facts rather than structure from these, which is why they are used the same way as the rest and credited here by name. If you maintain one of these registers and read that differently, write to us and we will fix it: <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
+      </>
+    )}
+
+    <h2>Photographs</h2>
+    <p>Every photograph on this site carries an open licence and its photographer's credit, shown on the page it appears on. Most come from Wikimedia Commons, with others from iNaturalist, Openverse and Flickr under CC0, CC BY or CC BY-SA. Where no properly licensed photograph of a tree exists, the page says so and shows a drawing instead. We never use a photograph without a verified licence, and never one from a source that forbids reuse.</p>
+
+    <h2>Maps and routes</h2>
+    <p>Map tiles come from OpenFreeMap and OpenMapTiles, on OpenStreetMap data, © OpenStreetMap contributors, available under the Open Database License. Walking routes are calculated by Valhalla, hosted by FOSSGIS, on the same OpenStreetMap data.</p>
+
+    <h2>Encyclopaedias and local history</h2>
+    <p>Wikipedia and Wikimedia Commons are used throughout as one of the two sources a tree needs, alongside municipal parks departments, regional heritage bodies, dendrological societies, local newspapers and the tree trails that many councils publish themselves. Each tree page lists the exact sources used for that tree.</p>
+
+    <h2>Our own work</h2>
+    <p>The stories, the selection, the verification and this database are ours, © Ancient Trees. Facts about a tree belong to nobody. The collection, and the work of assembling and checking it, is protected by copyright and by the database right. If you would like to use any of it, ask: <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>. Research, conservation bodies and anyone linking to us can expect a yes.</p>
+
+    <h2>The registers</h2>
+    {groups.map((g) => (
+      <>
+        <h3>{g.country}</h3>
+        <ul>
+          {g.sources.map((s) => (
+            <li>
+              {s.url ? <a href={s.url} rel="noopener">{s.name}</a> : <span>{s.name}</span>}
+              {s.attribution ? <span>. {s.attribution}</span> : null}
+              <span>. Licence: {s.licence}.</span>
+              {s.count > 0 ? <span> {s.count.toLocaleString("en-GB")} designated trees.</span> : null}
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
+
+    <p>Something credited wrongly, or missing? <a href="/contribute?kind=correction">Tell us</a> and we correct it.</p>
+  </div>
+</main>
+</Base>

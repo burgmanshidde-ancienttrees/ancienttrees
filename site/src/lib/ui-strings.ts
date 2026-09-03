@@ -39,6 +39,10 @@ export interface UiStrings {
   support: string;
   privacy: string;
   terms: string;
+  /** The credits page. Forty of our registers are published under a licence
+   *  that obliges attribution, so this link is an obligation rather than a
+   *  courtesy, and it belongs in every language the footer speaks. */
+  sources: string;
   /** The footer's own paragraph. A sentence rather than a label, and it is the
    *  one piece of chrome that says what this site is for, so it is worth
    *  saying in the reader's language rather than only in ours. */
@@ -56,6 +60,7 @@ export const UI: Record<Lang, UiStrings> = {
     sponsor: "Sponsor this project", getApp: "Get the app", theApp: "The app",
     account: "Account", menu: "Menu", support: "Support", privacy: "Privacy",
     terms: "Terms",
+    sources: "Sources",
     footerAbout: "We are on a mission to map every remarkable tree in the world, and we could use your help. If you know a good tree, or spot a mistake on one of these pages, {link}. We work on this database every day.",
     tellUs: "tell us",
   },
@@ -67,6 +72,7 @@ export const UI: Record<Lang, UiStrings> = {
     sponsor: "Apoya este proyecto", getApp: "Descarga la app", theApp: "La app",
     account: "Cuenta", menu: "Menú", support: "Ayuda", privacy: "Privacidad",
     terms: "Términos",
+    sources: "Fuentes",
     footerAbout: "Queremos cartografiar todos los árboles notables del mundo, y nos vendría bien tu ayuda. Si conoces un buen árbol, o ves un error en alguna de estas páginas, {link}. Trabajamos en esta base de datos todos los días.",
     tellUs: "cuéntanoslo",
   },
@@ -78,6 +84,7 @@ export const UI: Record<Lang, UiStrings> = {
     sponsor: "Sostieni il progetto", getApp: "Scarica l'app", theApp: "L'app",
     account: "Account", menu: "Menu", support: "Assistenza", privacy: "Privacy",
     terms: "Termini",
+    sources: "Fonti",
     footerAbout: "Vogliamo mappare tutti gli alberi monumentali del mondo, e ci serve una mano. Se conosci un albero che merita, o trovi un errore in queste pagine, {link}. Lavoriamo a questo archivio ogni giorno.",
     tellUs: "scrivicelo",
   },
@@ -89,6 +96,7 @@ export const UI: Record<Lang, UiStrings> = {
     sponsor: "Steun dit project", getApp: "Download de app", theApp: "De app",
     account: "Account", menu: "Menu", support: "Hulp", privacy: "Privacy",
     terms: "Voorwaarden",
+    sources: "Bronnen",
     footerAbout: "We willen elke bijzondere boom ter wereld in kaart brengen, en daar kunnen we hulp bij gebruiken. Ken je een goede boom, of zie je een fout op een van deze pagina's, {link}. We werken elke dag aan deze database.",
     tellUs: "laat het ons weten",
   },
@@ -100,6 +108,7 @@ export const UI: Record<Lang, UiStrings> = {
     sponsor: "Projekt unterstützen", getApp: "App laden", theApp: "Die App",
     account: "Konto", menu: "Menü", support: "Hilfe", privacy: "Datenschutz",
     terms: "AGB",
+    sources: "Quellen",
     footerAbout: "Wir wollen jeden bemerkenswerten Baum der Welt kartieren, und dabei können wir Hilfe gebrauchen. Wenn du einen guten Baum kennst oder auf einer dieser Seiten einen Fehler siehst, {link}. Wir arbeiten jeden Tag an dieser Datenbank.",
     tellUs: "schreib uns",
   },
@@ -111,6 +120,7 @@ export const UI: Record<Lang, UiStrings> = {
     sponsor: "Apoiar o projeto", getApp: "Obter a app", theApp: "A app",
     account: "Conta", menu: "Menu", support: "Ajuda", privacy: "Privacidade",
     terms: "Termos",
+    sources: "Fontes",
     footerAbout: "Queremos mapear todas as árvores notáveis do mundo, e damos jeito a ajuda. Se conhece uma boa árvore, ou encontra um erro numa destas páginas, {link}. Trabalhamos nesta base de dados todos os dias.",
     tellUs: "diga-nos",
   },
@@ -122,6 +132,7 @@ export const UI: Record<Lang, UiStrings> = {
     sponsor: "Soutenir le projet", getApp: "Télécharger l'app", theApp: "L'app",
     account: "Compte", menu: "Menu", support: "Aide", privacy: "Confidentialité",
     terms: "Conditions",
+    sources: "Sources",
     footerAbout: "Nous voulons cartographier tous les arbres remarquables du monde, et un coup de main ne serait pas de refus. Si vous connaissez un bel arbre, ou repérez une erreur sur l'une de ces pages, {link}. Nous travaillons sur cette base tous les jours.",
     tellUs: "dites-le-nous",
   },
@@ -133,6 +144,7 @@ export const UI: Record<Lang, UiStrings> = {
     sponsor: "このプロジェクトを支援", getApp: "アプリを入手", theApp: "アプリ",
     account: "アカウント", menu: "メニュー", support: "ヘルプ", privacy: "プライバシー",
     terms: "利用規約",
+    sources: "出典",
     footerAbout: "世界じゅうの見に行く価値のある木を地図にしたいと思っている。力を貸してほしい。よい木を知っている場合や、このページに誤りを見つけた場合は、{link}。このデータベースは毎日更新している。",
     tellUs: "知らせてほしい",
   },
