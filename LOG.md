@@ -9,7 +9,24 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-02 - Night run 2026-09-02 20:15 UTC ended without saying anything
+## 2026-09-03 - A stocked shelf, cleared: 11 new cities, 31 trees, all writing rather than researching
+
+7-day visits (visitors.py): 651 visits, 1192 views, climbing each of the last three days (48, 106, 108). prepare.py opened on rung 1 of "the course after the fortnight": trees already verified and awaiting a writer, no research needed. Dispatched write-stories passes and merged as each came back, four rounds:
+
+- **Stuttgart (6), Freiburg (4), Heidelberg (6)**, all zero-supply German cities opened from a prior verify pass on the de.wikipedia Naturdenkmal register. All flagged, mostly undated (German municipal registers name and protect a tree without ever measuring it), pins mostly approximate. Fixed two hard-rule-9 species collisions the build caught (Tilia cordata common name, Tilia sp. Linden vs Lime already "Lime" elsewhere) and a tree-page title over 60 chars.
+- **Nihonmatsu (2), Otama (1), Ono/Tamura (1)**: three Japanese National Natural Monument trees from a same-day famous-trees verify batch, each below the 4-tree floor and published under the 2026-08-31 single-tree-destination exception (all three are individually National Natural Monuments, 780 to 1200 years old). Renamed the "Tamura" research file to `ono.json`: the town is Ono, in Tamura District, and Tamura City is a real separate municipality elsewhere in Fukushima that could otherwise collide with the slug later.
+- **Iga (1), Minami-Alps (2), Uda (3), Nagano (1)**: seven more from the same famous-trees batch, same exception, all National or Prefectural Natural Monuments (a rare shibunashi torreya, one of the Three Great Zelkovas of Japan, two illuminated April cherries plus a disputed fused-cedar cluster, and a cherry sharing its generic "Jindai-zakura" name with an already-published Hokuto tree three prefectures away, kept carefully unconflated). Nagano's single story was written in-session rather than dispatching a whole agent for one tree.
+- **Taipei (4)**: opened a real zero-supply ranked city (#152, target 10) from its own already-verified research file, rather than another famous-tree exception. A camphor over the graves of six 1895 killings, a pair of junipers Chiang Kai-shek planted by hand in 1962, a professor-poll-favourite pine trio a building was redesigned around, an undated ginkgo that turns gold in January instead of November because the city is subtropical.
+
+Every batch: preflight clean, `npm run build` clean (one race between two overlapping background builds produced a spurious missing-chunk error; a single build afterward was clean), `tree_index.py` re-run, cost logged to `data/agent-costs.json` per pass. Updated Germany's and Japan's country-page city/tree counts twice each as the numbers moved (12→15→cities unchanged after that, 20→23→24 for Japan); both were already stale before tonight, which is worth someone eventually adding to preflight's own watch list rather than catching by hand.
+
+**Cleanup:** 16 fully-merged `data/research/*-verified.json` files deleted per passcheck's own "safe to delete" list, five of them pre-dating this session.
+
+**Page gap:** wrote the Crimean Linden (Tilia x euchlora) species intro, the one real (non-genus-placeholder) gap `pagegaps.py` surfaced, from its own four trees across Heidelberg, Manchester, Rotterdam and Vilnius.
+
+**Left on the shelf, deliberately:** Matera's 2 verified, already-written trees (`data/research/matera-verified.json`) sit unmerged. Matera is a ranked city (#307, target 10, 12 register trees on file) rather than a famous-tree exception candidate, and neither of its two trees clearly passes the "would somebody travel specifically for this one tree" test, so publishing at 2 would be padding a page that should wait for a verify pass to reach the real 4-tree floor from its own register supply.
+
+268 city files now on disk (`stats.py`); the session-start count of "188 live" uses a stricter status filter this entry did not check before writing, so read the file-count delta (+11 cities, +31 trees this session) as the reliable number rather than either total. Site: 651 visits / 7d, 1192 views, still climbing.
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.
 
