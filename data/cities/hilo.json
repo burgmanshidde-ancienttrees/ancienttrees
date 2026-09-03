@@ -2,11 +2,11 @@
   "city": "Hilo",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Three of these five stand in one small park in downtown Hilo, and the other two are a short walk away. Hawaii protects individual trees by law rather than the ground they stand on, and Kalakaua Park holds three of them: a banyan planted in 1882 whose aerial roots have grown into props, a divi-divi from the dry Caribbean that has no business in a town with three metres of rain a year, and an endangered native palm found nowhere but these islands. A tropical almond of about 206 years stands outside a church on Haili Street.",
-  "meta_description": "Five protected trees in Hilo, three in one downtown park: an 1882 banyan on aerial roots, a Caribbean divi-divi, and an endangered native palm.",
+  "intro": "Three of these six stand in one small park in downtown Hilo, two more are a short walk away, and the sixth marks a shoreline named for coconuts before anyone registered one. Hawaii protects individual trees by law rather than the ground they stand on. Kalakaua Park holds a banyan planted in 1882, a Caribbean divi-divi, and an endangered native palm. A tropical almond of about 206 years stands outside a church on Haili Street, and a coconut palm on the Waiolama Canal recalls a grove an 1864 chant already sang about.",
+  "meta_description": "Six protected trees in Hilo: an 1882 banyan, a Caribbean divi-divi, an endangered native palm, and a coconut shoreline sung about in 1864.",
   "question_meta": "Hilo's oldest tree is the kamani outside Haili Congregational Church, about 206 years. Its story, and four more protected trees a short walk apart.",
   "question_answer": "The oldest tree in Hilo is the kamani at the corner of Haili Street and Ululani Street, on the pavement outside Haili Congregational Church. The Hawaii Tribune-Herald put its age at 194 years in 2014, which makes it about 206 now, so it was standing here before the church beside it and before Hilo was a town of any size. Hawaii's exceptional-tree register records it at 12.2 metres round and rates its condition good.\n\nOne caution about its name, because the register and the town disagree. The register files it as a False Kamani, Terminalia catappa, the tropical almond. Local usage, including that newspaper piece, drops the qualifier and calls it a kamani, which botanically means a different tree altogether, Calophyllum inophyllum. This page follows the register on the species and the newspaper on the age.\n\nWhat makes it visible from across the street: Terminalia catappa throws its branches out in flat horizontal whorls that stack up the trunk, so it reads as a series of green plates rather than a dome, and its leaves turn red and drop in a place where almost nothing else changes colour.",
-  "question_context": "Hawaii protects trees in an unusual way and it shapes this whole page. Act 105 of 1975 lets each county designate individual specimens as exceptional trees, and the designation attaches to the tree rather than to the land, which is why the register names single trunks in car parks and on street corners instead of naming woodland. The City and County of Honolulu publishes the resulting database under a public-domain dedication, and despite its title it covers all four counties.\n\nTwo things about that source govern what this page can say. It carries no age field at all, so every year given here comes from a newspaper or a local history rather than from the register, and where nobody has published one the page says so instead of estimating. And its coordinates are rounded to about a kilometre, with several Kalakaua Park trees sharing a single point between them, so every pin here is marked approximate and each entry describes what to look for once you are standing in the right park. See the full list of five on the Hilo page.",
+  "question_context": "Hawaii protects trees in an unusual way and it shapes this whole page. Act 105 of 1975 lets each county designate individual specimens as exceptional trees, and the designation attaches to the tree rather than to the land, which is why the register names single trunks in car parks and on street corners instead of naming woodland. The City and County of Honolulu publishes the resulting database under a public-domain dedication, and despite its title it covers all four counties.\n\nTwo things about that source govern what this page can say. It carries no age field at all, so every year given here comes from a newspaper or a local history rather than from the register, and where nobody has published one the page says so instead of estimating. And its coordinates are rounded to about a kilometre, with several Kalakaua Park trees sharing a single point between them, so every pin here is marked approximate and each entry describes what to look for once you are standing in the right park. See the full list of six on the Hilo page.",
   "faq": [
     {
       "q": "What is the oldest tree in Hilo?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Yes, comfortably. Three of the five share Kalakaua Park in the middle of downtown, the kamani is a few minutes away on Haili Street, and the fifth is in Wailuku River State Park at Rainbow Falls, about two kilometres out and worth the detour for the falls as much as the tree."
+      "a": "Mostly. Three of the six share Kalakaua Park in the middle of downtown, the kamani is a few minutes away on Haili Street, the coconut palm is a short walk from downtown along the Waiolama Canal, and the sixth is in Wailuku River State Park at Rainbow Falls, about two kilometres out and worth the detour for the falls as much as the tree."
     },
     {
       "q": "Are they free to visit?",
-      "a": "Yes, all five. Kalakaua Park is a public square open daily, the kamani stands on a public pavement, and Wailuku River State Park is free and open from sunrise to sunset."
+      "a": "Yes, all six. Kalakaua Park is a public square open daily, the kamani stands on a public pavement, the coconut palm is inside the free Wailoa River State Recreation Area, and Wailuku River State Park is free and open from sunrise to sunset."
     },
     {
       "q": "Why are the pins marked approximate?",
@@ -179,6 +179,37 @@
         "status": "missing"
       },
       "how_to_recognise": "A fan palm in Kalakaua Park, not one of the feather-leaved coconuts. It is the only palm among the park's three protected trees.",
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hbi_006",
+      "name": "The Coconut of Waiolama Canal",
+      "species": "Coconut Palm (Cocos nucifera)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Wailoa River State Recreation Area, along the Waiolama Canal near Pauahi Street, Hilo",
+        "latitude": 19.72,
+        "longitude": -155.08,
+        "neighbourhood": "Waiolama, Hilo"
+      },
+      "story": "This shoreline was named for coconuts a century before anyone thought to register one. Waiolama's older name is Waiolama Niu, niu meaning coconut, and an 1864 chant already sings of the coconut grove of Piʻopiʻo standing on these banks, now inside the Wailoa River State Recreation Area. A local history of the area describes the mid-1800s shore as luxuriant with coconut trees, so whichever specimen the state's exceptional-tree register singles out today stands where a much older grove once did.\n\nIt has survived worse than time passing. Hilo's tsunamis of 1946 and 1960 tore through this exact stretch of shoreline, and local accounts credit the coconut, banyan and mango trees along the canal with saving lives, people caught in the wave climbing into their limbs and holding on until the water dropped. The register lists this palm's condition as good and its owner as the State of Hawaii, inside what is now a 132-acre park.\n\nNobody has measured its girth or dated it, and a coconut palm would not tell you either way, it carries no growth rings. The register also does not say exactly which trunk along the canal it designated, so look for a mature, substantial palm near the water rather than a marked one, and if you know which it is, tell us.",
+      "verified_sources": [
+        "https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=2000",
+        "https://www.kaahelehawaii.com/pi%CA%BBopi%CA%BBo-on-the-shores-of-the-wailoa/"
+      ],
+      "access": "Free, within Wailoa River State Recreation Area (Division of State Parks), open daily during daylight hours, no entrance fee, no check-in required",
+      "transport": "A short walk from downtown Hilo; the recreation area borders Kamehameha Avenue and Pauahi Street, a few minutes from Kalakaua Park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Along the Waiolama Canal in Wailoa River State Recreation Area, near Pauahi Street; look for a mature palm near the water, since the register does not pin the exact trunk.",
       "curation_status": "flagged",
       "location_precision": "approximate"
     }
