@@ -19,6 +19,7 @@
 import Base from "../../layouts/Base.astro";
 import { BASE_URL } from "../../lib/schema";
 import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
+import AppGetter from "../../components/AppGetter.astro";
 const canonical = `${BASE_URL}/t`;
 ---
 <Base
@@ -30,10 +31,16 @@ const canonical = `${BASE_URL}/t`;
   <main class="content-page shared-tree">
     <article id="shared" hidden>
       <div class="shared-photo" id="shared-photo" hidden><img id="shared-img" alt="" /></div>
+      <p class="eyebrow">A tree someone found</p>
       <h1 id="shared-name">A tree</h1>
-      <p class="tree-meta" id="shared-meta"></p>
+      <p class="chip-row" id="shared-chips" hidden></p>
       <p class="prose-block" id="shared-note"></p>
-      <p class="prose-block shared-foot">Added by somebody who walked to it. You can add the trees you find too, on <a href="/app">the app</a>, or start with <a href="/explore">the remarkable trees near you</a>.</p>
+      <div class="shared-cta">
+        <h2>Find the trees near you</h2>
+        <p>You can find the remarkable old trees near you in the app, and collect the ones you visit.</p>
+        <AppGetter ev="shared-tree-badge" source="shared-tree" />
+        <p class="shared-foot">Every tree is free to explore on <a href="/explore">the map</a> too, no account needed.</p>
+      </div>
     </article>
     <p id="shared-missing" hidden>This link does not lead to a tree. It may have been taken down by the person who shared it. <a href="/explore">Find a tree near you</a>.</p>
   </main>
@@ -56,8 +63,14 @@ const canonical = `${BASE_URL}/t`;
       var when = '';
       var d = new Date(t.taken_at);
       if (!isNaN(d)) when = d.toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
-      var meta = [t.species, when].filter(Boolean).join(' \\u00b7 ');
-      document.getElementById('shared-meta').textContent = meta;
+      var chipsEl = document.getElementById('shared-chips');
+      [t.species, when].filter(Boolean).forEach(function (label) {
+        var span = document.createElement('span');
+        span.className = 'chip';
+        span.textContent = label;
+        chipsEl.appendChild(span);
+      });
+      if (chipsEl.children.length) chipsEl.hidden = false;
       if (t.note) document.getElementById('shared-note').textContent = t.note;
       if (t.photo) {
         var img = document.getElementById('shared-img');
