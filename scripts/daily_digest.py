@@ -23,6 +23,7 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_MD = os.path.join(ROOT, "DATA.md")
 ZONE_NAME = "ancienttrees.app"
+PH_BASE = "https://eu.posthog.com"
 ACCOUNT_TAG = "949aa102070e5f296c9cc0d5bc1e1891"  # Cloudflare account for Web Analytics (RUM)
 
 PREAMBLE = """# DATA — the daily numbers, and what they mean
@@ -1847,32 +1848,66 @@ def fetch_machine(today):
     return line
 
 
-def _posthog(query, key, project=None):
+def _ph_get(url, key):
+    """GET with the error BODY kept. PostHog says exactly what a key may not do
+    ("This action requires the following scopes: query:read"), and
+    urllib throws that sentence away unless it is read off the exception."""
+    req = urllib.request.Request(url, headers={
+        "Authorization": "Bearer %s" % key,
+        "Content-Type": "application/json",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r), None
+    except urllib.error.HTTPError as e:
+        try:
+            detail = json.loads(e.read().decode()).get("detail", "")
+        except Exception:
+            detail = ""
+        return None, "%s %s" % (e.code, detail[:120])
+    except Exception as e:
+        return None, str(e)[:120]
+
+
+def _ph_project(key):
+    """Which project this key can read, discovered rather than configured so
+    nobody has to paste a second secret.
+
+    Four paths, because which one answers depends on how the key was made. A
+    key scoped to one project answers @current and is forbidden the listing; a
+    legacy unscoped personal key answers the listing. The first version tried
+    only the listings, and the key we have is the scoped kind, so the table
+    failed on its first morning with "no project readable".
+    """
+    fixed = os.environ.get("POSTHOG_PROJECT_ID")
+    if fixed:
+        return fixed, None
+    tried = []
+    for path, dig in (
+        ("/api/projects/@current/", lambda d: d.get("id")),
+        ("/api/users/@me/", lambda d: (d.get("team") or {}).get("id")),
+        ("/api/projects/", lambda d: (d.get("results") or [{}])[0].get("id")),
+        ("/api/organizations/@current/projects/",
+         lambda d: (d.get("results") or [{}])[0].get("id")),
+    ):
+        doc, err = _ph_get(PH_BASE + path, key)
+        if doc:
+            got = dig(doc)
+            if got:
+                return got, None
+        tried.append("%s: %s" % (path, err or "no id in reply"))
+    return None, "; ".join(tried)
+
+
+def _posthog(query, key, project):
     """One HogQL query against our own PostHog project on their EU cloud.
 
     No SDK and no client library, for the same reason Measure.swift ships
     none: this is one HTTP POST of a JSON object, and a dependency that only
     ever formats a URL is a dependency that can break the digest.
     """
-    base = "https://eu.posthog.com"
-    if project is None:
-        project = os.environ.get("POSTHOG_PROJECT_ID")
-    if not project:
-        # Discovered rather than configured, so nobody has to paste a second
-        # secret. Either path returns the same shape; the @current one is what
-        # newer scoped keys are allowed to read.
-        listing = None
-        for path in ("/api/projects/", "/api/organizations/@current/projects/"):
-            try:
-                listing = api(base + path, token=key)
-                break
-            except Exception:
-                continue
-        if not listing or not listing.get("results"):
-            raise RuntimeError("no PostHog project readable with this key")
-        project = listing["results"][0]["id"]
     out = api(
-        "%s/api/projects/%s/query/" % (base, project),
+        "%s/api/projects/%s/query/" % (PH_BASE, project),
         {"query": {"kind": "HogQLQuery", "query": query}},
         token=key,
     )
@@ -1899,6 +1934,14 @@ def app_section(today):
     if not key:
         return "What people did in the app: PostHog key absent, cannot say."
 
+    project, why = _ph_project(key)
+    if not project:
+        return ("**What people did in the app**\n\n"
+                "- The read key cannot reach the project, so nothing can be "
+                "counted. It needs the `query:read` scope and either "
+                "`project:read` or a `POSTHOG_PROJECT_ID` secret beside it.\n"
+                "- Tried: %s" % why)
+
     yday = (today - datetime.timedelta(days=1)).isoformat()
     out = ["**What people did in the app**"]
 
@@ -1918,7 +1961,7 @@ def app_section(today):
         FROM events
         GROUP BY event
         ORDER BY ever DESC
-        """ % yday, key)
+        """ % yday, key, project)
 
     seen = {r[0]: r for r in rows}
     order = [e for e in known] + [e for e in seen if e not in known]
@@ -1944,7 +1987,7 @@ def app_section(today):
         SELECT count(DISTINCT distinct_id),
                countIf(timestamp >= now() - INTERVAL 14 DAY)
         FROM events
-        """, key)
+        """, key, project)
     n_phones = int(phones[0][0]) if phones else 0
     out.append("- Measuring since 2026-08-30, when Measure.swift went in. "
                "Unlinked to any account by design: an install id, the app "
@@ -1964,7 +2007,7 @@ def app_section(today):
         FROM events
         WHERE event = 'tab' AND timestamp >= now() - INTERVAL 14 DAY
         GROUP BY 1 ORDER BY 2 DESC
-        """, key)
+        """, key, project)
     if tabs:
         out.append("- Tabs opened (14d): " + "; ".join(
             "%s %d" % (t[0] or "?", int(t[1])) for t in tabs))
