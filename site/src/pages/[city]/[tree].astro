@@ -24,6 +24,7 @@ import { pageWalksFor, hasWalksPage } from "../../lib/city-walks";
 import { speciesCommon, speciesPageSlugs } from "../../lib/species";
 import { parkKey, groupTreesByPark, parkGroupKey, PARK_MIN_TREES } from "../../lib/parks";
 import { usablePhoto, imgSrcset, photoDims, thumbUrl, creditRequired, creditText, metaImageUrls, ogImageUrl } from "../../lib/images";
+import PhotoFigure from "../../components/PhotoFigure.astro";
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
@@ -223,10 +224,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
 
     </p>
     {photo && photo.url ? (
-      <figure class="tree-photo">
-        <img {...imgSrcset(photo.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px", photoDims(photo).width, photoDims(photo).height)} alt={tree.name} loading="lazy" />
-        {creditRequired(photo.license) && <figcaption>{ui("en").photoCredit(creditText(photo.attribution, photo.license) ?? "")}</figcaption>}
-      </figure>
+      <PhotoFigure photo={photo} alt={tree.name} lang="en" />
     ) : (
       <figure class="tree-noph">
         <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>

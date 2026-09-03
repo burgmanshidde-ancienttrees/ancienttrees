@@ -14,6 +14,7 @@ import { SIGNIN_JS } from "../lib/signin-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../lib/trees";
 import { haversineKm } from "../lib/walks";
 import { usablePhoto, imgSrcset, photoDims, thumbUrl, creditRequired, creditText } from "../lib/images";
+import PhotoFigure from "./PhotoFigure.astro";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { locationIsApproximate, metaForTree } from "../lib/tree-copy";
@@ -108,10 +109,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
       {isApprox && <span class="chip approx">{U.approxLocationChip}</span>}
     </p>
     {photo && photo.url ? (
-      <figure class="tree-photo">
-        <img {...imgSrcset(photo.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px", photoDims(photo).width, photoDims(photo).height)} alt={x.name} loading="lazy" />
-        {creditRequired(photo.license) && <figcaption>{U.photoCredit(creditText(photo.attribution, photo.license) ?? "")}</figcaption>}
-      </figure>
+      <PhotoFigure photo={photo} alt={x.name} lang={lang} />
     ) : (
       <figure class="tree-noph">
         <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
