@@ -23,7 +23,7 @@ Thanks, this helps a lot. Oslo has no photograph on our page at all yet, so the 
 
 One thing before I use one: you say they were not taken by you. May I publish it credited to Ingar Sørensen, or should I ask him myself first?
 
-And since Munch-eika is not yours, do you know who looks after it?
+And is there an Oslo tree we should not be missing? We publish four.
 
 Thanks either way,
 Hidde

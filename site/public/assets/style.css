@@ -290,6 +290,31 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    paints 343 wide and 4928 tall. */
 .tree-photo img { width: 100%; height: auto; display: block; border-radius: 4px; }
 .tree-photo figcaption { font-size: 11px; color: var(--ink-light); margin-top: 0.45rem; }
+/* The photograph is a button, and has to keep looking like a photograph: a
+   button element brings its own border, padding and background on every
+   engine. cursor:zoom-in is the one visible hint that it opens, which is what
+   every image viewer on the web uses. */
+.photo-open { display: block; width: 100%; padding: 0; border: 0; background: none;
+  cursor: zoom-in; border-radius: 4px; }
+.photo-open:focus-visible { outline: 3px solid var(--moss); outline-offset: 3px; }
+/* The viewer. Native <dialog>, so Escape and the top layer are the browser's;
+   what is ours is that it fills the screen and the picture never crops. */
+.photo-view { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh;
+  margin: 0; padding: 0; border: 0; background: #101010; color: #fff;
+  transition: transform 0.18s ease-out; }
+.photo-view::backdrop { background: rgba(0,0,0,0.82); }
+.pv-frame { display: flex; align-items: center; justify-content: center;
+  height: calc(100dvh - 64px); padding: 8px; }
+.pv-frame img { max-width: 100%; max-height: 100%; width: auto; height: auto;
+  object-fit: contain; border-radius: 2px; }
+.pv-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  min-height: 64px; padding: 0 1rem; font-size: 12px; }
+.pv-credit { color: #cfcfcf; }
+.pv-full { color: #fff; text-decoration: underline; font-weight: 600;
+  display: inline-flex; align-items: center; min-height: 44px; }
+.pv-close { position: absolute; top: 8px; right: 8px; width: 44px; height: 44px;
+  border: 0; border-radius: 999px; background: rgba(0,0,0,0.45); color: #fff;
+  font-size: 26px; line-height: 1; cursor: pointer; }
 /* 44 is the floor, not the padding's business: at 0.75rem the pill came out
    41 tall, which is three points under what every phone platform asks of a
    primary button. inline-flex so the min-height can centre its own label. */
