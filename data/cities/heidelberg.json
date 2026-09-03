@@ -1,0 +1,179 @@
+{
+  "city": "Heidelberg",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Heidelberg protects six designated trees, from a hollow, cable-strapped linden by the funicular's upper station to a stand of horse chestnuts on the way up to the castle. Most carry no recorded age, only a designation date, so this page says so plainly rather than guessing. The Molkenkur Linden is the closest to a documented age, put at roughly 200 years by the local paper. All six are free to visit, and five of six pins are approximate rather than fixed at the trunk.",
+  "meta_description": "Heidelberg's ancient trees: a hollow, cable-strapped linden above the castle, horse chestnuts, a rare hybrid linden, oaks and more. All free.",
+  "question_meta": "Heidelberg's best-documented old tree is the Molkenkur Linden above the castle, put at roughly 200 years by the local paper. Where it stands.",
+  "question_answer": "The closest thing to a documented age among Heidelberg's designated trees belongs to the Molkenkur Linden, hollow inside and held together with cables, put at roughly 200 years by the Rhein-Neckar-Zeitung. It stands at the Molkenkur viewpoint above Heidelberg Castle. The other five trees on this page carry no recorded age at all, only the date they were designated a natural monument.",
+  "question_context": "The 200-year figure for the Molkenkur Linden comes from a newspaper feature rather than a growth-rate reading or a ring count, and this page carries it as a loose middle point, 150 to 250 years, rather than a precise number. The trunk is genuinely hollow, and the crown has been held together with steel cables for twenty years, a maintenance choice the city has committed to rather than felling it. Nothing else here has comparable evidence. The Schlossberg Beech, the Neuenheimer Landstrasse Swamp Cypress, the Zwingerstrasse Horse Chestnuts, the Bergstrasse Crimean Linden and the Ringstrasse Oak are each documented only by a state register entry giving a name, a coordinate and a designation date between 1939 and 1986, with no age, girth or description attached to any. Five of the six pins here come from that register's own coordinate rather than a reading at the trunk, hence approximate: expect the right stretch of street or garden rather than the exact spot. Where a tree's age or position is unknown, this page states that rather than inventing a number, and asks a visitor who can measure or place it more precisely to tell us.",
+  "hero_tree_id": "hei_001",
+  "oldest_tree_id": "hei_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Heidelberg?",
+      "a": "The Molkenkur Linden above the castle is the best-documented, put at roughly 200 years by the local paper. The other five designated trees here carry no recorded age at all."
+    },
+    {
+      "q": "Why is the Molkenkur Linden hollow?",
+      "a": "Age and decay rather than damage. The trunk is empty but the tree is described as completely vital, and its crown has been held together with steel cables for the last twenty years so it can keep standing."
+    },
+    {
+      "q": "Are the pins for these trees exact?",
+      "a": "Five of the six are approximate: the coordinate comes from the state register's own map rather than a GPS reading taken at the trunk, so expect the right street or garden rather than the exact spot."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all six stand on open public ground: a viewpoint, a castle garden, streets and a tram stop. No ticket needed for any of them, though the castle courtyard itself is separately ticketed."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hei_001",
+      "name": "The Molkenkur Linden",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "location": {
+        "address": "Molkenkur, Heidelberg (below the Schlosshotel Molkenkur, on the Königstuhl slope above the castle)",
+        "latitude": 49.4071,
+        "longitude": 8.71269,
+        "neighbourhood": "Molkenkur, above Heidelberg Castle"
+      },
+      "story": "Hollow inside and completely vital. That is the local paper's verdict on this linden, and the two halves of it are both true: the trunk is empty, the tree is in no trouble, and for the last twenty years its crown has been held together with cables so that it stays that way. The city has no intention of felling it.\n\nIt stands at the Molkenkur, the shoulder of the Königstuhl directly above Heidelberg Castle, where the funicular makes its stop and where people come for one of Heidelberg's best-known views. The linden has been a protected natural monument since October 1958, so it has spent the whole postwar life of the city on a register.\n\nIts age is given as roughly two hundred years by the newspaper that wrote it up, and nobody has done better than that. No ring count, no girth measurement, and the register does not even settle which linden it is, large-leaved or small-leaved. Treat two hundred as the middle of a wide band rather than a fact.\n\nOne thing to know before you climb. Our pin comes from the register's map tile rather than a reading taken at the trunk, so it puts you in the right place at the Molkenkur and not on the exact spot. Look for the cables: a hollow veteran wearing steel is not hard to pick out.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Heidelberg",
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000010",
+        "https://www.rnz.de/region/heidelberg_artikel,-Heidelberger-Baumgeschichten-Die-Molkenkur-Linde-ist-seit-20-Jahren-festgezurrt-_arid,1647024.html"
+      ],
+      "access": "Free, public viewpoint area at Molkenkur; no ticket needed to reach or stand by the tree.",
+      "transport": "Heidelberg funicular (Bergbahn) from Kornmarkt to the Molkenkur stop, a few minutes; also reachable on foot via the Klingentor path from the castle, roughly 15-20 minutes uphill.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hei_002",
+      "name": "The Schlossberg Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Schlossberg, in the Heidelberg Schlossgarten (castle garden), below/around the castle terraces",
+        "latitude": 49.4094467,
+        "longitude": 8.7138633,
+        "neighbourhood": "Schlossberg / Schlossgarten"
+      },
+      "story": "This beech was made a protected natural monument on 17 November 1939, ten weeks into the war, which is a curious moment to be filing paperwork about a tree. The register entry reads simply Rotbuche Schlossberg, red beech on the castle hill, and it has carried that one line ever since without acquiring a further sentence of description.\n\nThat is the honest problem with this one. The state register confirms the designation, the name and the coordinate, and then stops: no age, no girth, not a word of text, its own file noting that no document exists for the object. A separate piece on beeches in the state's castle gardens describes fourteen mature red beeches at the Scheffelterrasse, on the edge of this same garden, which tells you old beeches genuinely grow here but does not pick out the designated one. So we can send you to the right corner of the Schlossgarten and not to the exact trunk.\n\nIt is worth the walk anyway, because the setting does the work. The Schlossgarten is the terraced garden below Heidelberg Castle, free and open in daylight, and a mature European beech there is standing in ground that has been laid out, ruined and replanted more than once since the castle above it was still a palace. Grey trunk, smooth bark, a canopy that keeps the ground beneath it bare.\n\nIf you can tell which beech carries the designation, we would like to know.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Heidelberg",
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000015"
+      ],
+      "access": "Free. The Schlossgarten (castle garden and terraces) is open to the public daily in daylight hours at no charge; only the castle courtyard itself, the Grosses Fass and the Apothecary Museum need the paid Schlossticket.",
+      "transport": "Short uphill walk from Kornmarkt via Kurzer Buckel, or the Bergbahn funicular from Kornmarkt to the Schloss stop.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hei_003",
+      "name": "The Neuenheimer Landstrasse Swamp Cypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Neuenheimer Landstrasse, Neuenheim, along the north bank of the Neckar",
+        "latitude": 49.41489,
+        "longitude": 8.7051167,
+        "neighbourhood": "Neuenheim, Neckar north bank"
+      },
+      "story": "A tree from the swamps of the American southeast has been protected on a Heidelberg riverside road since 28 July 1942. The register calls it Sumpfzypresse Neuenheimer Landstrasse and gives nothing else: no age, no girth, no description. The designation itself is the whole record, and it is a long one, because eighty-four years of protection on a public road is not nothing.\n\nBald cypress is the conifer that behaves like a broadleaf. It grows in standing water in Louisiana and the Carolinas, throws up woody knees from its roots when the ground is wet, and drops every needle each winter after turning a deep rust orange. A specimen doing that on the north bank of the Neckar, in a line of ordinary street trees, is a peculiar and rather good thing to come across.\n\nTwo honest notes. The register does not print a binomial, so the species here is the reading that German registers almost always mean by Sumpfzypresse; if you can tell a true bald cypress from a pond cypress on the ground, we would like your verdict. And our pin is the register's own coordinate rather than a fix taken at the trunk, so it puts you on the right stretch of the Neuenheimer Landstrasse rather than at the tree.\n\nDo not confuse it with the swamp cypresses at the Tertiärgärtchen in the Neuenheimer Feld. Different site, several hundred metres away.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Heidelberg",
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000005"
+      ],
+      "access": "Free. A street tree on Neuenheimer Landstrasse, a public riverside road with a pavement/cycle path; viewable at any time.",
+      "transport": "Short walk along the Neckar's north bank from the Alte Bruecke (Old Bridge), Neuenheim side; also served by Neuenheim bus and tram stops.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when the needles turn rust orange before dropping" }
+    },
+    {
+      "id": "hei_004",
+      "name": "The Zwingerstrasse Horse Chestnuts",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Zwingerstrasse, Altstadt, between Kettengasse and Burgweg, near the funicular's Talstation",
+        "latitude": 49.4106017,
+        "longitude": 8.7098033,
+        "neighbourhood": "Altstadt, near the Bergbahn Talstation"
+      },
+      "story": "Heidelberg protects a whole small stand of horse chestnuts here as one object, not a single trunk. The register lists them as Rosskastanien Zwingerstrasse, designated on 3 February 1986, and treats the group as the thing worth keeping. Stand at the corner of the Zwingerstrasse and you take them in at once, which is exactly why they were listed together.\n\nThey stand a couple of minutes from the Kornmarkt and the bottom station of the castle funicular, on the strip of street that runs under the Schlossberg. Almost everyone who walks up to the castle from the old town passes them, which is the modest sort of witnessing an urban tree does: not events, but everybody.\n\nThe horse chestnut is not native to Germany either. It came out of the Balkan mountains and spread across Europe through beer gardens and avenues, planted for the dense shade it throws. In early May the flower spikes go up like candles all over the crown, white with a yellow throat that turns red once the flower has been pollinated, which is the tree telling the bees not to bother twice. In autumn the conkers come down on the pavement.\n\nNeither the register nor anything else we found gives an age or a girth for these trees, and the coordinate is the register's own rather than a reading taken under them. If you know how old they are, tell us.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Heidelberg",
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000017"
+      ],
+      "access": "Free. Zwingerstrasse is an ordinary public street in the Altstadt, a few minutes' walk from Kornmarkt and the Bergbahn funicular's lower station.",
+      "transport": "A few minutes' walk from Kornmarkt or the Bergbahn Talstation.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": { "months": [5], "kind": "flowers", "label": "early May, when the flower spikes stand up like candles across the whole crown" }
+    },
+    {
+      "id": "hei_005",
+      "name": "The Bergstrasse Crimean Linden",
+      "species": "Crimean Linden (Tilia x euchlora)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Bergstrasse, Neuenheim",
+        "latitude": 49.4180783,
+        "longitude": 8.6922633,
+        "neighbourhood": "Neuenheim"
+      },
+      "story": "A Crimean linden is a garden hybrid. Tilia x euchlora appeared in cultivation around 1860, a cross of the small-leaved linden with a Caucasian relative, and it was planted across Europe for one reason: its leaves are glossy dark green and it shrugs off city air better than its parents. That is the tree standing on the Bergstrasse in Neuenheim, and Heidelberg has protected it as a natural monument since 4 August 1986.\n\nWhich makes the designation the interesting part. Registers usually protect trees for being old, and a hybrid that first appeared around 1860 gives no specimen anywhere much more than a century and a half to work with. Something about this particular specimen persuaded the state to list it, and the register does not say what: it gives the name, Krimlinde Bergstrasse, the date and the coordinate, and then nothing at all. No age, no girth, no description.\n\nSo this is a tree to go and judge for yourself, on a quiet residential street on the north side of the Neckar, and to tell us about. How thick is it? How tall? The species usually tops out around 15 to 18 metres, and if this one is well past that you are looking at one of the larger ones anywhere.\n\nOur pin is the register's coordinate rather than a fix at the trunk, so expect the right stretch of pavement rather than the exact spot. A second monument, two cypresses, sits at almost the same point.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Heidelberg",
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000024"
+      ],
+      "access": "Free. Bergstrasse is an ordinary public residential street in Neuenheim; the tree stands as a street tree, viewable from the pavement.",
+      "transport": "A short walk from Neuenheim's Bergstrasse/Blumenthalstrasse bus stops.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hei_006",
+      "name": "The Ringstrasse Oak",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Ringstrasse, near the Ringstrasse tram stop, Kirchheim/Bahnstadt",
+        "latitude": 49.4039433,
+        "longitude": 8.683275,
+        "neighbourhood": "Kirchheim/Bahnstadt border"
+      },
+      "story": "The register calls this one simply Eiche, oak, and that omission is deliberate rather than sloppy. The same list names three other Heidelberg oaks precisely as Stieleiche, pedunculate oak, so when it declines to do so here it is telling us that nobody established which oak this is. We have kept it that way rather than tidying it up. Go and look: a pedunculate oak hangs its acorns on long stalks and has almost no leaf stalk, a sessile oak does the exact opposite. Whichever you find, tell us, and the page changes.\n\nIt has been a protected natural monument since 14 October 1958, standing on the Ringstrasse where the number 26 tram stops, on the border between Kirchheim and the Bahnstadt. The Bahnstadt beside it has since been rebuilt from a railway goods yard into a residential district, so the ground on one side of this oak is entirely new.\n\nNothing has ever been published about its age or its girth, and the pin comes from the register's coordinate rather than a reading at the trunk, so aim for the tram stop and look around.\n\nIt sits a good two kilometres from the old town, so treat it as its own short trip rather than a stop on a castle walk.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Heidelberg",
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000004"
+      ],
+      "access": "Free. Ringstrasse is a public street served by tram line 26 (Ringstrasse stop); the tree is a street tree, viewable at any time.",
+      "transport": "Tram line 26 to the Ringstrasse stop, then on foot.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

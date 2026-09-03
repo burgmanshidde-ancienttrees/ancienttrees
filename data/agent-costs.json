@@ -4742,6 +4742,98 @@
     "note": "Third zero city on the German route. de.wikipedia's Naturdenkmal list reproduces the LUBW state register in full for Heidelberg, 42 objects of which 33 are trees with names, coordinates and designation dates; every delivered tree was cross-checked against its own LUBW steckbrief. Only the Molkenkur Linden found a genuinely independent second source (an RNZ feature), so five of six ship flagged and single-sourced, every pin approximate, no ages. Dropped a Ginkgo whose courtyard location came from a search summary neither underlying page carried.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "nihonmatsu",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 2,
+    "note": "Session work, not a dispatched agent: stories already existed in data/research/nihonmatsu-verified.json from the same-day famous-trees verify batch (see leads/_famous-japan.json). Built the city page (intro, question fields, faq) and merged. Below the 4-tree floor but qualifies for the single-tree-destination exception: both are individually National Natural Monuments (780-800yr and ~1000yr cedars).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "otama",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "Session work, not a dispatched agent: story already existed in data/research/otama-verified.json (famous-trees verify batch). Built the city page and merged. One tree, National Natural Monument, single-tree-destination exception.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "ono (Tamura research file)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "Session work, not a dispatched agent: story already existed in data/research/tamura-verified.json (famous-trees verify batch), but the town is actually Ono in Tamura District, so the city file was renamed data/cities/ono.json to avoid colliding with a future Tamura City page. One entry, a paired meoto-sugi cedar counted as one collectible ensemble, National Natural Monument, single-tree-destination exception. Fixed a hard-rule-9 species-name collision (Cryptomeria japonica) caught by the build.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "stuttgart+freiburg+heidelberg",
+    "kind": "write",
+    "tokens": 180000,
+    "trees": 16,
+    "note": "write-stories agent wrote all 16 stories in one context; main session then built the three city pages (intro/faq/question fields), fixed two hard-rule-9 species collisions the build caught (Tilia cordata common name, Tilia sp. Linden vs Lime), fixed a title-length overflow, updated germany.json country-page counts (12->15 cities, 123->139 trees), merged, built and pushed.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
+  ],
+  "2026-09-03": [
+   {
+    "target": "igacity+minamialps+udacity",
+    "kind": "write",
+    "tokens": 62000,
+    "trees": 6,
+    "note": "write-stories agent output (see report); main session built city pages for Iga, Minami-Alps and Uda, fixed two hard-rule-9 species collisions (Zelkova serrata already used, Prunus sp. generic-genus collision on uda_002), set paid_entry flag on uda_002, merged, built and pushed.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "nagano",
+    "kind": "write",
+    "tokens": 8000,
+    "trees": 1,
+    "note": "Single-tree write, done in session rather than dispatching a whole agent for one tree: wrote ngn_001 story directly from its verify_notes (already reviewed in full), built the city page, merged, built and pushed. Canonicalised species to Edo-higan Cherry (Prunus itosakura), a new binomial not colliding with existing corpus entries.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "taipei",
+    "kind": "write",
+    "tokens": 34000,
+    "trees": 4,
+    "note": "Opened Taipei (ranked #152, target 10, was at zero) from already-verified research: write-stories agent wrote all 4 stories in one pass, main session built the city page and merged. All flagged, all location_precision approximate, hedges preserved (camphor age range, pine estimate arithmetic, ginkgo age left empty).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "crimean-linden species page",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Page-gap fill (rung 7): wrote the Crimean Linden (Tilia x euchlora) species intro from its own 4 trees (Heidelberg, Manchester, Rotterdam, Vilnius), each contributing a real fact rather than a templated line. Session work, no agent dispatched.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "_famous-japan (4 candidates: Haramachi, Higashine, Takayama, Ofunato)",
+    "kind": "verify",
+    "tokens": 145000,
+    "trees": 4,
+    "note": "Refilled the shelf per prepare.py instruction: verified 4 candidates from the famous-trees leads file, each resolving to its own new place. Two are independently-measured members of the Three Great Zelkovas of Japan trio (third already published as mna_002). from-zero web research, no register, hence the higher per-tree cost.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "higashiagatsuma+higashine+takayama+ofunato",
+    "kind": "write",
+    "tokens": 42000,
+    "trees": 4,
+    "note": "Wrote and merged the 4 trees verified above into 4 new city pages (single-tree-destination exception, each a National/Special Natural Monument). Fixed one species collision (Ginkgo biloba, a male tree qualifier folded into prose). Updated Japan country-page counts 24->28 cities.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ],
   "2026-09-03": [

@@ -17,37 +17,19 @@
       "name": "1 Kaukasische Flügelnuss",
       "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
       "location": {"latitude": 47.989976, "longitude": 7.848369},
-      "reason": "Confirmed as a real, current LUBW register entry (id 83110000161, RIPS steckbrief 3119013000252, designated 2021-10-29, verified by fetching the RIPS page directly). A rare, distinctive species and close to the Altstadt (~0.7 km). No second source with descriptive facts, address or access details found this pass; the RIPS steckbrief itself carries no description text ('kein Dokument zu diesem Objekt vorhanden'). Worth a dedicated search next time, possibly for the exact street via the Amtsblatt vom 5.11.2021 announcement."
+      "reason": "Still only a register entry (id 83110000161, RIPS steckbrief 3119013000252, designated 2021-10-29; RIPS itself carries no description). Confirmed 2026-09-03 pass: reverse-geocodes to Dreisamuferweg, Mittelwiehre (a path along the Dreisam river). Targeted searches for the Amtsblatt vom 5.11.2021 announcement and for 'Freiburg 30 neue Naturdenkmale 2021' (freiburg.de/pb/1829585.html, the city's own press release on that batch of 30) found only generic species lists, no tree-specific description. Still needs a second source; the Amtsblatt PDF itself (freiburg.de/pb/site/Freiburg/get/documents_E-1847784871/freiburg/daten/news/amtsblatt/pdf/SS711_Naturdenkmale.pdf) was found in search results but not fetched this pass, worth trying directly next time."
     },
     {
       "name": "1 Mammutbaum, Schubertstraße / Franz-Liszt-Straße",
       "species": "Giant Sequoia (Sequoiadendron giganteum)",
       "location": {"latitude": 48.01289, "longitude": 7.859815},
-      "reason": "Register entry only (id 83110000129, RIPS 3119013000219, designated 2011-01-28), ~2 km north of centre. Not searched this pass for a second source due to the time box; a promising named-street candidate for a follow-up."
+      "reason": "Register entry only (id 83110000129, RIPS 3119013000219, designated 2011-01-28), ~2 km north of centre. Searched 2026-09-03: no second source found; distinct from the well-documented Mammutbaum an der Starkenstraße (now published as frb_005, a different tree/different register id/different designation year, 1979 not 2011). Do not confuse the two on a future pass."
     },
     {
       "name": "1 Tulpenbaum, Kartäuserstraße",
       "species": "Tulip Tree (Liriodendron tulipifera)",
       "location": {"latitude": 47.99258, "longitude": 7.8687},
-      "reason": "Register entry only (id 83110000132, RIPS 3119013000222, designated 2011-01-28), ~1.7 km east of centre. Not searched this pass for a second source; follow-up candidate."
-    },
-    {
-      "name": "Linden am Kapellenweg (Wiehre)",
-      "species": "Lime/Linden (Tilia)",
-      "location": null,
-      "reason": "freiburg-schwarzwald.de (reproducing a 2009 badische-zeitung piece) names these as Freiburg's OLDEST Naturdenkmal trees, dating from 1645 in the Thirty Years' War era, on the Kapellenweg in the Wiehre district. Could not match a specific register entry/coordinate to this address in the time available; several 'Linde'/'Sommerlinde' entries in the LUBW list sit in the general Wiehre area (e.g. ids 83110000003, 83110000017) and one of them is very likely this. Worth resolving with a targeted RIPS steckbrief check or a direct search for 'Kapellenweg Freiburg' street location next pass; this is potentially the single best find in the whole city given its documented age."
-    },
-    {
-      "name": "Platane an der Kartaus",
-      "species": "Plane (Platanus)",
-      "location": null,
-      "reason": "freiburg-schwarzwald.de: Freiburg's TALLEST Naturdenkmal, at least 38 m, in the Kartaus/Littenweiler area on the eastern edge of the city. A direct RIPS steckbrief URL was found in search results (id=2229013000033, a different id prefix from the rest of Freiburg's register, suggesting it may sit just over the municipal boundary in a neighbouring Gemeinde such as Ebnet or Kirchzarten and needs its Gemeinde field checked before treating it as a Freiburg tree). Not fetched this pass; follow-up candidate, but check the municipality first."
-    },
-    {
-      "name": "Mammutbaum an der Starkenstraße",
-      "species": "Giant Sequoia (Sequoiadendron giganteum)",
-      "location": null,
-      "reason": "freiburg-schwarzwald.de: Freiburg's MOST MASSIVE Naturdenkmal by girth, 7 m trunk circumference, from the 19th century, on Starkenstraße. Not matched to a register coordinate or searched for a second source this pass; strong follow-up candidate given the girth figure alone would support a solid age estimate."
+      "reason": "Register entry only (id 83110000132, RIPS 3119013000222, designated 2011-01-28), ~1.7 km east of centre, on the same street as the now-published Kartaus Plane (frb_007) but a different spot further along Kartäuserstraße. Not searched this pass for a second source; follow-up candidate."
     },
     {
       "name": "Bergahorn auf dem Kybfelsen",
