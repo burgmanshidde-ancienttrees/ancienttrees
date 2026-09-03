@@ -4248,6 +4248,70 @@
    ],
    "trees": 18,
    "logged": true
+  },
+  {
+   "started": "2026-09-03T15:13:22+00:00",
+   "date": "2026-09-03",
+   "run_id": "33771344279",
+   "minutes": 101.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 565,
+   "denials": 51,
+   "denials_source": "permission_denials: Bash, Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(grep), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm), Bash(until), Bash(wc)",
+   "ended": "success",
+   "tokens": 8140876,
+   "claims_held": [],
+   "commits": 26,
+   "cities_touched": 11,
+   "cities": [
+    {
+     "city": "malsfeld",
+     "trees": 4
+    },
+    {
+     "city": "iwata",
+     "trees": 1
+    },
+    {
+     "city": "kanagi",
+     "trees": 1
+    },
+    {
+     "city": "kitamoto",
+     "trees": 1
+    },
+    {
+     "city": "morioka",
+     "trees": 1
+    },
+    {
+     "city": "nago",
+     "trees": 1
+    },
+    {
+     "city": "shokawa",
+     "trees": 1
+    },
+    {
+     "city": "tokyo",
+     "trees": 1
+    },
+    {
+     "city": "ueki",
+     "trees": 1
+    },
+    {
+     "city": "warsaw",
+     "trees": 1
+    },
+    {
+     "city": "yoshida",
+     "trees": 1
+    }
+   ],
+   "trees": 14,
+   "logged": true
   }
  ],
  "schedule_changes": [
