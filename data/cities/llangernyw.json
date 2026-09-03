@@ -1,0 +1,65 @@
+{
+  "city": "Llangernyw",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Llangernyw maps one tree: a yew in a small North Wales churchyard that the Woodland Trust logs as one of the oldest living things in Britain, its trunk 10.9 metres round and long since split into several thick stems. Local tradition puts it at 4,000 to 5,000 years; the Woodland Trust's own reading is more careful, roughly as old as the 1,500-year-old church it stands beside. Free, open every day, no ticket. Published alone here because the tree itself is the destination, not because Llangernyw's research is finished.",
+  "meta_description": "The Llangernyw Yew: one of Britain's oldest trees, girth 10.9m, in a Welsh churchyard. Age disputed, 1,500 to 5,000 years. Free, open daily.",
+  "question_meta": "Llangernyw's oldest and only mapped tree is the Llangernyw Yew, a churchyard yew whose age is genuinely disputed, free to visit year round.",
+  "question_answer": "Llangernyw's only mapped tree, and its oldest, is the Llangernyw Yew, a European Yew (Taxus baccata) in the churchyard of St Digain's Church in the village of Llangernyw, Conwy, North Wales. Its age is disputed: the widely repeated figure is 4,000 to 5,000 years, but the Woodland Trust itself offers a more conservative estimate of roughly 1,500 years, about as old as the church it stands beside.",
+  "question_context": "The girth from the Woodland Trust's most recent survey is 10.90 metres, taken low on a trunk that split long ago into several large stems; Wikipedia's own figure (10.75m) and an older 1998 record (10.36m) reflect the same irregular trunk measured on different occasions, not a real disagreement. The Tree Council named it one of Fifty Great British Trees for the Queen's Golden Jubilee in June 2002, and a certificate to that effect still hangs at the churchyard gate; that same certificate is the source of the popular 4,000 to 5,000 year figure, credited to the botanist David Bellamy. Local folklore holds that a spirit called the Angelystor speaks from the tree every 31 October to name the parishioners who will die in the year ahead. The churchyard holds eight other, younger yews; this is the one people come to see. It is rural North Wales: a car is the practical way to arrive, roughly 15 to 20 minutes' drive from Abergele on the North Wales coast line, with no direct public transport to the village.",
+  "hero_tree_id": "lgy_001",
+  "oldest_tree_id": "lgy_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Llangernyw?",
+      "a": "The Llangernyw Yew, a European Yew in the churchyard of St Digain's Church, with a trunk 10.9 metres round."
+    },
+    {
+      "q": "How old is it really?",
+      "a": "Genuinely disputed. The popular figure is 4,000 to 5,000 years; the Woodland Trust's own estimate is closer to 1,500 years, about the age of the church beside it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in a public churchyard with open access, no fee, no gate and no booking."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car. It is roughly 15 to 20 minutes' drive from Abergele on the North Wales coast line; there is no direct public transport to Llangernyw."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lgy_001",
+      "name": "The Llangernyw Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "disputed: roughly 1,500 to 5,000 years",
+      "age_min": 1500,
+      "age_max": 5000,
+      "girth_cm": 1090,
+      "location": {
+        "address": "St Digain's Church, Llangernyw, Conwy LL22 8PW, Wales",
+        "latitude": 53.1922,
+        "longitude": -3.685,
+        "neighbourhood": "Llangernyw village"
+      },
+      "story": "A spirit is said to speak from this tree once a year. Every 31 October, Welsh folklore holds, a voice called the Angelystor, the Recording Angel, calls out from inside the trunk the names of parishioners who will die before the next Halloween. The tree behind the story is a yew in the churchyard of St Digain's, in the small Conwy valley village of Llangernyw, and whatever you make of the legend, its size is not in doubt: a trunk 10.9 metres round, split so long ago into several thick stems that a first glance reads it as a stand of trees rather than one.\n\nIts age is where the honesty has to sit. A 2002 certificate, still displayed at the churchyard gate, put it at 4,000 to 5,000 years and helped win it a place among the Tree Council's Fifty Great British Trees that year. The Woodland Trust is more careful: it calls that figure disputed and suggests the tree may instead be roughly as old as the church beside it, founded some 1,500 years ago. Yew wood rots from the inside as it ages, erasing the growth rings that would settle the question, so nobody has.\n\nEight younger yews share the churchyard. This is the one people come for, and it costs nothing to see.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Llangernyw_Yew",
+        "https://ati.woodlandtrust.org.uk/tree-search/tree?treeid=5126",
+        "https://www.ancient-yew.org/yew_tree_database/llangernyw/",
+        "https://www.woodlandtrust.org.uk/blog/2025/08/ancient-yew-trees/"
+      ],
+      "access": "Free. Public churchyard, open access with no restriction (Woodland Trust Ancient Tree Inventory records it explicitly as 'Public - open access'). No fee, no gate, no booking.",
+      "transport": "Rural North Wales; a car is the practical way to reach it. Llangernyw sits on the A548 in the Conwy valley, roughly 6 miles (15-20 min drive) from Abergele and its mainline rail station, and about 10 miles from Llanrwst. No regular public transport serves the village directly; the nearest useful railheads are Abergele & Pensarn or Colwyn Bay on the North Wales coast line.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "verify_notes": "AGE - genuine disagreement, not smoothed over: the commonly repeated 4,000-5,000 year figure traces to a 2002 certificate from the Yew Tree Campaign (David Bellamy), the same figure displayed at the churchyard gate. The Woodland Trust's own 2025 article frames this as 'alleged by some' and offers a competing, more conservative theory: the tree may be roughly as old as the church itself, founded about 1,500 years ago. No method has settled it; ageing yews is notoriously hard because internal rot erases growth rings, worsened here because dead wood inside the trunk was cleared out in the mid-1990s when a church oil tank was briefly installed nearby (later relocated once the tree's significance was recognised). GIRTH: Woodland Trust ATI gives 10.90m (most recent survey, used here); Wikipedia cites 10.75m; ancient-yew.org's 1998 record gives 10.36m. Treated as measurement-date variation on an irregular fragmented trunk, not contradiction. LOCATION: three independent geocodings (Wikidata Q4463960, Wikipedia's own coordinate, ancient-yew.org's OS grid reference SH8751567464) agree to within metres; the churchyard holds nine yews total (this plus eight younger male yews), and this coordinate marks the named specimen specifically. ALIVE: Woodland Trust ATI logs it 'standing and alive', last formally visited 2020-08-19; no decline signal found. DESTINATION TEST: passes on more than repetition, cross-language demand (3,463 monthly enwiki reads plus six other-language Wikipedias per famous-demand data), official recognition (Tree Council 50 Great British Trees 2002, Wales Tree of the Year shortlist 2015), a distinctive folklore hook (the Angelystor), and no comparable published tree within 56.7 km. Photos not yet hunted: three CC-licensed candidates sit in Commons' 'Category:Llangernyw Yew' and were confirmed as depicting this tree (not a lookalike), but licence/attribution and the Cadiz photo standard still need a dedicated photo pass."
+    }
+  ]
+}
