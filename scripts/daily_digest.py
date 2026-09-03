@@ -2084,7 +2084,49 @@ def app_section(today):
         out.append("- Tabs opened (14d): " + "; ".join(
             "%s %d" % (t[0] or "?", int(t[1])) for t in tabs))
 
+    out += app_store_downloads_lines()
+
     return "\n".join(out)
+
+
+def app_store_downloads_lines():
+    """Real App Store download counts, from Apple's own Analytics Reports
+    API rather than PostHog: a download that never opens the app, or opens
+    it once offline before the first event fires, is invisible to the table
+    above and is exactly the gap this closes. Added 2026-09-03, the day the
+    app went live and 'Waitlist' in the signup table stopped meaning
+    pre-launch interest and started meaning Android only (CLAUDE.md,
+    2026-09-03 entry). Read-only reporting gear per hard rule 5's carve-out;
+    scripts/asc_auth.py and scripts/asc_downloads.py do the actual work.
+
+    Apple's own docs say a brand-new report request can take up to 48h to
+    produce its first instance, so an empty result for the first day or two
+    is expected, not broken, and is reported as exactly that rather than
+    silently dropped."""
+    if not (os.environ.get("ASC_KEY_ID") and os.environ.get("ASC_ISSUER_ID")
+            and (os.environ.get("ASC_PRIVATE_KEY") or os.environ.get("ASC_PRIVATE_KEY_PATH"))):
+        return []
+    try:
+        sys.path.insert(0, os.path.dirname(__file__))
+        from asc_downloads import daily_download_totals
+        totals, note = daily_download_totals(days=14)
+    except Exception as e:
+        return ["", "**App Store downloads**", "- Unreadable (%s)" % str(e)[:100]]
+    out = ["", "**App Store downloads** (Apple's own count, not PostHog)"]
+    if note:
+        out.append("- %s" % note)
+        return out
+    if not totals:
+        out.append("- Nothing in the report yet.")
+        return out
+    days_sorted = sorted(totals)
+    out.append("")
+    out.append("| Day | Downloads |")
+    out.append("|---|---:|")
+    for d in days_sorted:
+        out.append("| %s | %d |" % (d, totals[d]))
+    out.append("| **%d days** | **%d** |" % (len(days_sorted), sum(totals.values())))
+    return out
 
 
 def build_entry(days, today, gsc_text):
