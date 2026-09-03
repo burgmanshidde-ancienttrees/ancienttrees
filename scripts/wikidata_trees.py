@@ -42,7 +42,7 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 OUT = os.path.join(ROOT, "data", "research", "wikidata-remarkable-trees.json")
 QUEUE = os.path.join(ROOT, "data", "city-queue.json")
 ENDPOINT = "https://query.wikidata.org/sparql"
-UA = "AncientTrees/1.0 (https://ancienttrees.app; burgmans.hidde@gmail.com)"
+UA = "AncientTrees/1.0 (https://ancienttrees.app; info@ancienttrees.app)"
 
 # P31/P279* Q811534 is the whole point: "remarkable tree" and everything
 # subclassed under it (heritage tree, natural monument tree), which is what

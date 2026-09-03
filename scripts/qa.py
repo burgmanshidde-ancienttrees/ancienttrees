@@ -1145,6 +1145,53 @@ def check_robots_is_the_file_we_wrote():
     return []
 
 
+def check_no_personal_address():
+    """The fourteenth ratchet check, from 2026-09-03.
+
+    Hidde: "ik wil nooit meer burgmans.hidde ergens zien." It is the same rule
+    as PRINCIPLES.md #10 and as check_no_owner_name() one line up, applied to
+    the address rather than the name, and it is a check now because the thing
+    it guards only became possible today: info@ancienttrees.app started
+    receiving, so there is finally a brand address to use.
+
+    What it caught the day it was written: four scripts sent his private Gmail
+    as their User-Agent contact to Wikidata, Overpass, the EU register hosts
+    and the Lithuanian register, which puts it in a stranger's server log every
+    time a sweep runs. Nothing rendered has ever carried it.
+
+    Scoped to files that TRANSMIT the address rather than record it. The prose
+    files keep their history: LOG.md, CURATION.md and REVIEW.md are the record
+    of what happened, data/outreach-sent.json is the ledger of what was sent
+    under it, and rewriting either would be forgetting rather than fixing.
+    """
+    out = []
+    roots = [ROOT / "scripts", ROOT / ".github", ROOT / "site" / "src",
+             ROOT / "ios", ROOT / "supabase"]
+    exts = {".py", ".yml", ".yaml", ".ts", ".js", ".astro", ".swift", ".sql",
+            ".html", ".json", ".sh"}
+    hits = []
+    for root in roots:
+        if not root.exists():
+            continue
+        for f in sorted(root.rglob("*")):
+            if not f.is_file() or f.suffix not in exts:
+                continue
+            if "node_modules" in f.parts or f.name == "qa.py":
+                continue
+            try:
+                body = f.read_text(encoding="utf-8", errors="ignore")
+            except Exception:
+                continue
+            if "burgmans.hidde@" in body:
+                hits.append(str(f.relative_to(ROOT)))
+    if hits:
+        out.append("%d file(s) carry the owner's personal email address, which "
+                   "never leaves this machine: contact runs through "
+                   "info@ancienttrees.app (PRINCIPLES.md #10). %s"
+                   % (len(hits), ", ".join(hits[:5])))
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -1171,6 +1218,7 @@ def main():
     failures += check_one_tree_card()
     failures += check_one_owner_per_event()
     failures += check_no_owner_name()
+    failures += check_no_personal_address()
     failures += check_walks_go_to_the_app()
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()

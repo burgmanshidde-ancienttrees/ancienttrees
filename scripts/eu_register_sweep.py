@@ -30,7 +30,7 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "data", "research", "eu-register-sweep.json")
 API = "https://data.europa.eu/api/hub/search/search"
-UA = "AncientTrees/1.0 (https://ancienttrees.app; burgmans.hidde@gmail.com)"
+UA = "AncientTrees/1.0 (https://ancienttrees.app; info@ancienttrees.app)"
 
 # The phrase each country's own administration uses. Generic words are left out
 # on purpose: "Baumkataster", "tree cadastre" and "arbres" alone return street
