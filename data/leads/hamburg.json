@@ -27,6 +27,14 @@
   {
    "name": "Tibarg-Eiche in Niendorf",
    "reason": "Not reached this pass (time-boxed, and Niendorf is a separate district from the clusters researched, would need its own access/vitality check). Wikipedia gives girth 8.07 m (2018), planted 1600 +/- 50, on a private garden plot (Garstedter Weg 9) per monumentaltrees.com's title, so access would need checking before this could ship."
+  },
+  {
+   "name": "The Japanese Pagoda Tree on the Alsterufer",
+   "species": "Pagoda Tree (Styphnolobium japonicum)",
+   "lat": 53.561528,
+   "lng": 9.997528,
+   "status": "duplicate",
+   "why": "DUPLICATE, found 2026-09-03: same tree as already-published hbg_005 (The Japanese Pagoda Tree of Alsterufer), 26m away, both the Aussenalster promenade Japanese Pagoda Tree that was named Nationalerbe-Baum No. 56/57 on 2026-04-16. Independently verified as hbg_008 in a _famous-germany batch pass, which used a different GPS reading (53.561528/9.997528 vs the published tree GPS) for the same trunk. Not merged. Full verify_notes preserved: MEANT TO BE ADDED TO EXISTING HAMBURG (data/cities/hamburg.json), not a new place. Hamburg's current tree ids run hbg_002 through hbg_007 (six trees); this is the next free id, hbg_008. A Japanese pagoda tree (Styphnolobium japonicum, syn. Sophora japonica) on the Aussenalster promenade at Alsterufer 27/28, opposite the former US Consulate. On 16 April 2026 it was named Germany's Nationalerbe-Baum (National Heritage Tree) No. 56/57 in the federal registry of roughly 100 nationally significant trees, Hamburg's second after a sycamore maple in Altona's Hirschpark. Girth 6.25m measured under a thick ivy cover in May 2025 (baumkunde.de, consistent with the nationalerbe-baeume.de project page); the dendrologist Prof. Dr. Andreas Roloff is quoted saying no stronger specimen of the species is known even in its native China, where the thickest is 5.6m. Height approximately 20m. Age is an ESTIMATE, not a documented planting record: derived by the register itself from the landscaping history of the Aussenalster shoreline in the second half of the 19th century, given as roughly 150 years (baumkunde.de brackets it 125-175). Three independent sources agree closely: baumkunde.de's tree register, the official nationalerbe-baeume.de project page (with its own GPS reading, 53.561710/9.997401, about 25m from this record's coordinate but the same tree), and local news coverage (Eimsbuetteler Nachrichten) of the April 2026 designation. hamburg.de's own press release on the designation could not be fetched directly from this pass (connection refused / ECONNRESET on www.hamburg.de), so it is not among the cited sources though it corroborates the same facts per the search summary; treat www.hamburg.de as a host worth retrying on a future pass. Species is Styphnolobium japonicum specifically (not just genus-level), which is firmer than most leads in this batch."
   }
  ],
  "blocked": [
