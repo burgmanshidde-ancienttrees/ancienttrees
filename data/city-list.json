@@ -1533,6 +1533,20 @@
    "trees": 1
   },
   {
+   "city": "Fortingall",
+   "country": "United Kingdom",
+   "slug": "fortingall",
+   "status": "published",
+   "trees": 1
+  },
+  {
+   "city": "Fulufjället",
+   "country": "Sweden",
+   "slug": "fulufjallet",
+   "status": "published",
+   "trees": 1
+  },
+  {
    "city": "Guerneville",
    "country": "United States",
    "slug": "guerneville",
@@ -1586,6 +1600,13 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
+  },
+  {
+   "city": "Jægerspris Nordskov",
+   "country": "Denmark",
+   "slug": "jaegerspris-nordskov",
+   "status": "published",
+   "trees": 1
   },
   {
    "city": "Kagoshima",
@@ -1691,6 +1712,13 @@
    "trees": 1
   },
   {
+   "city": "Santa María del Tule",
+   "country": "Mexico",
+   "slug": "santa-maria-del-tule",
+   "status": "published",
+   "trees": 1
+  },
+  {
    "city": "Sequoia National Park",
    "country": "United States",
    "slug": "sequoia-national-park",
@@ -1704,6 +1732,13 @@
    "slug": "simsbury",
    "status": "published",
    "demand_views_90d": null,
+   "trees": 1
+  },
+  {
+   "city": "Stelmužė",
+   "country": "Lithuania",
+   "slug": "stelmuze",
+   "status": "published",
    "trees": 1
   },
   {
@@ -1723,46 +1758,11 @@
    "trees": 1
   },
   {
-   "city": "Fortingall",
-   "country": "United Kingdom",
-   "slug": "fortingall",
-   "status": "published",
-   "trees": 1
-  },
-  {
-   "city": "Fulufjället",
-   "country": "Sweden",
-   "slug": "fulufjallet",
-   "status": "published",
-   "trees": 1
-  },
-  {
-   "city": "Santa María del Tule",
-   "country": "Mexico",
-   "slug": "santa-maria-del-tule",
-   "status": "published",
-   "trees": 1
-  },
-  {
    "city": "Waipoua Forest",
    "country": "New Zealand",
    "slug": "waipoua-forest",
    "status": "published",
    "trees": 2
-  },
-  {
-   "city": "Jægerspris Nordskov",
-   "country": "Denmark",
-   "slug": "jaegerspris-nordskov",
-   "status": "published",
-   "trees": 1
-  },
-  {
-   "city": "Stelmužė",
-   "country": "Lithuania",
-   "slug": "stelmuze",
-   "status": "published",
-   "trees": 1
   }
  ]
 }

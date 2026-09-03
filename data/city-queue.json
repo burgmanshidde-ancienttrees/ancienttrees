@@ -1709,7 +1709,7 @@
    "basis": "measured",
    "status": "published",
    "trees": 27,
-   "photos": 10,
+   "photos": 14,
    "walks": 2,
    "register": 40,
    "ready": 0,
@@ -8044,7 +8044,11 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "travel": 1893,
-   "wikidata": 1
+   "wikidata": 1,
+   "covered_by": {
+    "city": "Santa María del Tule",
+    "trees": 1
+   }
   },
   {
    "rank": 348,
