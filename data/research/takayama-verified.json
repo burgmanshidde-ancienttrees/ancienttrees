@@ -1,0 +1,36 @@
+[
+ {
+  "id": "tky_001",
+  "name": "The Great Ginkgo of Hida Kokubunji (Hida-kokubunji no Oicho)",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "roughly 1,200 to 1,300 years",
+  "age_min": 1200,
+  "age_max": 1300,
+  "girth_cm": 1000,
+  "location": {
+   "address": "1-83 Sowa-cho, Takayama, Gifu Prefecture 506-0007, within the grounds of Hida Kokubunji temple, between the main hall and the bell-tower gate",
+   "latitude": 36.143306,
+   "longitude": 137.253833,
+   "neighbourhood": "Sowa-cho, Takayama"
+  },
+  "verified_sources": [
+   "https://kunishitei.bunka.go.jp/heritage/detail/401/1276",
+   "https://hidakokubunji.jp/html/ginkgo.html (fetched via Wayback Machine snapshot, 2026-01-20: http://web.archive.org/web/20260120082107/https://hidakokubunji.jp/html/ginkgo.html; the live domain would not connect from this sandbox)",
+   "https://www.kankou-gifu.jp/spot/detail_1039.html",
+   "https://ja.wikipedia.org/wiki/%E9%A3%9B%E9%A8%A8%E5%9B%BD%E5%88%86%E5%AF%BA%E3%81%AE%E5%A4%A7%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6"
+  ],
+  "access": "Free to view; the tree stands in the open temple grounds of Hida Kokubunji, a working temple whose grounds are open to worshippers/visitors daily 9:00-16:00 (per the prefecture's own tourism listing). The temple posts visitor etiquette rules (no smoking or open flames, no littering, no eating or drinking alcohol, no damage to buildings, no commercial photography without prior permission) confirming it is a place the public is expected to walk into, not a closed precinct. A temple/shrine precinct is treated as public ground per CLAUDE.md hard rule 10.",
+  "transport": "About 5 minutes on foot from JR Takayama Station",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "When this ginkgo drops its last leaf, Hida expects its first snow the next day. The town treats it as its own herald of winter. It stands between the main hall and the bell-tower gate of Hida Kokubunji, roughly ten metres round and 27 to 28 metres tall. Sources put its age between 1,200 and 1,300 years, the temple claiming the higher figure and the prefecture the lower. By the temple's own account the monk Gyoki planted it in 737, when Hida Kokubunji was founded by decree of Emperor Shomu.\n\nThe other story attached to it is grimmer. A master carpenter raising a seven-storey pagoda here cut his pillars too short. His daughter Yaegiku saw that bracket blocks would make up the difference, which corrected the mistake and made the pagoda famous. Afraid she would tell, he killed her, buried her in the grounds and planted a ginkgo over the grave. The tree hangs aerial roots that look like breasts, which is why it is called Chichi Icho, the breast ginkgo, and why women have come to it for milk, an easy birth and a healthy child; stone jizo of a parent and child sit at its base. It is a male tree and has never borne a single nut, a question the temple is asked so often that the answer is in its FAQ. Typhoons and lightning took pieces of it through the last century. Public money and local donations have kept the rest.",
+  "best_time": {
+   "months": [
+    11,
+    12
+   ],
+   "kind": "autumn colour",
+   "label": "late November into early December, when it goes gold and lets the whole crown go at once"
+  }
+ }
+]

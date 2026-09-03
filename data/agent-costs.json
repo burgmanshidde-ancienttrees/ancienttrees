@@ -4816,6 +4816,24 @@
     "note": "Page-gap fill (rung 7): wrote the Crimean Linden (Tilia x euchlora) species intro from its own 4 trees (Heidelberg, Manchester, Rotterdam, Vilnius), each contributing a real fact rather than a templated line. Session work, no agent dispatched.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "_famous-japan (4 candidates: Haramachi, Higashine, Takayama, Ofunato)",
+    "kind": "verify",
+    "tokens": 145000,
+    "trees": 4,
+    "note": "Refilled the shelf per prepare.py instruction: verified 4 candidates from the famous-trees leads file, each resolving to its own new place. Two are independently-measured members of the Three Great Zelkovas of Japan trio (third already published as mna_002). from-zero web research, no register, hence the higher per-tree cost.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "higashiagatsuma+higashine+takayama+ofunato",
+    "kind": "write",
+    "tokens": 42000,
+    "trees": 4,
+    "note": "Wrote and merged the 4 trees verified above into 4 new city pages (single-tree-destination exception, each a National/Special Natural Monument). Fixed one species collision (Ginkgo biloba, a male tree qualifier folded into prose). Updated Japan country-page counts 24->28 cities.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
