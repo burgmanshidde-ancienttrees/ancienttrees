@@ -1,0 +1,25 @@
+{
+  "city": "Jægerspris Nordskov",
+  "country": "Denmark",
+  "city_slug": "jaegerspris-nordskov",
+  "note": "Candidates found during the famous-trees batch1 verification pass, 2026-09-03. Kongeegen shipped to data/research/famous-batch1-verified.json (fam_006).",
+  "leads": [],
+  "blocked": [
+    {
+      "name": "Storkeegen",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "lat": 55.91130,
+      "lng": 11.98165,
+      "status": "blocked",
+      "why": "DEAD. Confirmed directly by Kong Frederik den Syvendes Stiftelse (the foundation that owns and manages Jaegerspris Slot and Nordskoven), on its own website, page last modified 2026-09-02: 'Den sidste levende gren af Storkeegen faldt i efteraaret 1980. I dag vidner stubben stadig om, hvor stort traeet har vaeret. Storkeegen blev ca. 800 aar' (The last living branch of Storkeegen fell in autumn 1980. Today the stump still testifies to how big the tree once was. Storkeegen reached about 800 years old). Only a stump remains today; no candidate to publish under hard rule 2 (we do not publish dead trees)."
+    },
+    {
+      "name": "Snoegen",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "DEAD. Same source (kongfrederik.dk, page modified 2026-09-02): 'Snoegens sidste blade visnede i efteraaret 1991. Udspringet var blevet mindre og mindre, og den var angrebet af svampen Oksetunge, som angriber aeldre egetraeer. Snoegen blev 600-700 aar' (Snoegen's last leaves withered in autumn 1991; its leafing had grown smaller and smaller, and it had been attacked by the fungus Fistulina hepatica/beefsteak fungus, which attacks older oaks. Snoegen reached 600-700 years old). No coordinate was captured for this pass since it is not being delivered as a living entry; the 1863 Vaupell survey (cited on the same page) put its girth at 8 m when alive."
+    }
+  ]
+}
