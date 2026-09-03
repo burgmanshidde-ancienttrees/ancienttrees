@@ -1,0 +1,86 @@
+{
+  "city": "Minami-Alps",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Two National Natural Monuments stand 3.6 kilometres apart in Minami-Alps City, Yamanashi. Four Chinese junipers planted around 1316 at the four corners of a Zen temple courtyard, said to represent the Four Heavenly Kings, and the Great Zelkova of Mitsue, over 1,000 years old and ranked one of the Three Great Zelkovas of Japan. Both are free to visit and both survived recent storm damage under active municipal care.",
+  "meta_description": "Minami-Alps, Japan: four 700-year junipers at a Zen temple and the Great Zelkova of Mitsue, one of the Three Great Zelkovas of Japan.",
+  "question_meta": "Minami-Alps' oldest tree is the Great Zelkova of Mitsue, over 1,000 years old, one of the Three Great Zelkovas of Japan.",
+  "question_answer": "The oldest tree in Minami-Alps is the Great Zelkova of Mitsue, put at over 1,000 years by both the national and city registers and ranked one of the Three Great Zelkovas of Japan. The four junipers of Kochozenji, about 3.6 kilometres away, are younger at roughly 700 years, dated from the temple's own 1316 founding.",
+  "question_context": "The Great Zelkova's age comes from two official sources, the national Agency for Cultural Affairs database and the city's own heritage page, both giving 'over 1,000 years' without a sharper figure; this page keeps that vagueness rather than inventing precision. Its trunk girth is recorded as 14.2 to 14.35 metres at breast height, though an older source gives 14.7, and height is disputed between 20 and 25 metres. A lightning-caused fire once hollowed its core, why the trunk looks split into two from outside though it is confirmed to be one tree. Typhoon Hagibis snapped a major limb in October 2019; the city completed cabling and wound treatment by February 2020, and the tree was already sprouting new growth from the base soon after. The four junipers at Kochozenji temple are dated from a documented founding year, 1316, attributed to founder Muso Kokushi, giving roughly 700 years as of today. Designated a single National Natural Monument in 1953, they stand about 10 metres apart at the four corners of the former guest hall's courtyard, said locally to represent the Four Heavenly Kings. Both sites are free, publicly reachable, and under active local preservation.",
+  "hero_tree_id": "mna_002",
+  "oldest_tree_id": "mna_002",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Minami-Alps?",
+      "a": "The Great Zelkova of Mitsue, over 1,000 years old and ranked one of the Three Great Zelkovas of Japan."
+    },
+    {
+      "q": "What are the four junipers at Kochozenji?",
+      "a": "Four Chinese junipers planted about 700 years ago at the four corners of the temple's guest-hall courtyard, said to represent the Four Heavenly Kings, and designated together as one National Natural Monument."
+    },
+    {
+      "q": "Are both trees free to visit?",
+      "a": "Yes. The junipers stand in Kochozenji's open temple grounds, and the zelkova stands on municipal land, the site of a former shrine. No ticket is needed for either."
+    },
+    {
+      "q": "Is the Great Zelkova of Mitsue easy to find?",
+      "a": "It stands on a narrow residential lane with no dedicated parking, among houses. The land is public, but visitors should be quiet and considerate of residents on the approach."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mna_001",
+      "name": "The Junipers of Kochozenji",
+      "species": "Chinese Juniper (Juniperus chinensis)",
+      "age_estimate": "about 700 years",
+      "age_min": 650,
+      "age_max": 750,
+      "girth_cm": 390,
+      "location": {
+        "address": "505 Ayusawa, Minami-Alps City, Yamanashi Prefecture",
+        "latitude": 35.595778,
+        "longitude": 138.4705,
+        "neighbourhood": "Ayusawa, Minami-Alps City"
+      },
+      "story": "There are four of them, one at each corner of the courtyard, and the tradition holds that they stand for the Four Heavenly Kings.\n\nKochozenji is a Rinzai Zen temple founded in 1316 by Muso Kokushi, and the planting of these Chinese junipers is attributed to him at that founding. That is where the figure of about 700 years comes from: a date on the temple, carried across to the trees, rather than anything measured in the wood. Locals call them the Yotsu-byakushin, the four byakushin. They sit roughly ten metres apart around the front court of what used to be the guest hall, and the state lists them as one thing, a single National Natural Monument since 14 November 1953.\n\nThey are not matching specimens. Girth at 1.5 metres runs from 2.00 to 3.90 metres across the four, and height from 11.20 to 17.70 metres, so the corners of the courtyard are visibly unequal.\n\nThe temple was the family temple of Oi-fujin, mother of Takeda Shingen, the warlord whose cavalry decided the shape of this province in the sixteenth century. If the founding tradition holds, the junipers were already two centuries into their growth when she came here to pray.\n\nThe courtyard is open nine to five, every day of the year. There is nothing to pay and nobody to ask.",
+      "verified_sources": [
+        "https://www.city.minami-alps.yamanashi.jp/docs/byakushin.html",
+        "https://online.bunka.go.jp/heritages/detail/216419",
+        "https://commons.wikimedia.org/wiki/Category:Kochozenji_no_Byakushin"
+      ],
+      "access": "Free, temple grounds open daily 9:00-17:00 year-round. Public Zen temple courtyard, no appointment needed.",
+      "transport": "About 40 minutes by bus from Kofu Station",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mna_002",
+      "name": "The Great Zelkova of Mitsue",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "over 1,000 years",
+      "age_min": 900,
+      "age_max": 1200,
+      "girth_cm": 1420,
+      "location": {
+        "address": "1509 Terabe, Minami-Alps City, Yamanashi Prefecture, on the site of a former shrine, now municipal land",
+        "latitude": 35.621636,
+        "longitude": 138.494122,
+        "neighbourhood": "Terabe, Minami-Alps City"
+      },
+      "story": "It looks like two trees leaning together. It is one, and the space between them is where lightning burned out its heart.\n\nThe Great Zelkova of Mitsue is counted among the Three Great Zelkovas of Japan, with Haramachi's in Gunma and Higashine's in Yamagata. A lightning fire hollowed and destroyed the central core long ago, leaving a trunk that reads as a pair from any distance; the base settles it as one tree. Around that trunk at chest height the national heritage database and the city's own page both give about 14.2 to 14.35 metres. An older source says 14.7. At the roots it swells to roughly 17.28 metres. Height is 20 metres in some accounts and 25 in the city's, and nobody has reconciled the two.\n\nIt was designated a National Natural Monument on 30 November 1928, one of the earliest listings in the country, on size alone. Its age is given as over a thousand years, and neither official source narrows that, so neither will we.\n\nIn October 2019 Typhoon Hagibis snapped a major limb off the north side. The city dressed and disinfected the wound and braced what was left on cables, finishing the work in February 2020, by which point the tree was already throwing new shoots from the base.\n\nA shrine stood here once. It has gone; the tree outlasted it. The lane in is narrow and residential, so come quietly.",
+      "verified_sources": [
+        "https://kunishitei.bunka.go.jp/bsys/maindetails/401/1100",
+        "https://www.city.minami-alps.yamanashi.jp/docs/mitsue_no_ookeyaki.html",
+        "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%81%B5%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD",
+        "https://sannichi.lekumo.biz/minamialps/2020/03/post-4eed.html"
+      ],
+      "access": "Free, no ticket. Stands on municipal land (the site of a former shrine), reached by public residential streets/alleys. The lane in is narrow with no dedicated parking, and it sits among houses, so visitors should be quiet and considerate of residents.",
+      "transport": "About 30 minutes by bus from JR Kofu Station to Nakajo-iriguchi stop, then about 15 minutes on foot; about 10 minutes by car from the Chubu-Odan Expressway's Minami-Alps IC",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when a crown this wide turns rust and drops inside a fortnight" }
+    }
+  ]
+}

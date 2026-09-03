@@ -4779,6 +4779,26 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-09-03": [
+   {
+    "target": "igacity+minamialps+udacity",
+    "kind": "write",
+    "tokens": 62000,
+    "trees": 6,
+    "note": "write-stories agent output (see report); main session built city pages for Iga, Minami-Alps and Uda, fixed two hard-rule-9 species collisions (Zelkova serrata already used, Prunus sp. generic-genus collision on uda_002), set paid_entry flag on uda_002, merged, built and pushed.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "nagano",
+    "kind": "write",
+    "tokens": 8000,
+    "trees": 1,
+    "note": "Single-tree write, done in session rather than dispatching a whole agent for one tree: wrote ngn_001 story directly from its verify_notes (already reviewed in full), built the city page, merged, built and pushed. Canonicalised species to Edo-higan Cherry (Prunus itosakura), a new binomial not colliding with existing corpus entries.",
+    "wasted": 0,
+    "brief_wrong": false
+   }
   ]
  }
 }
