@@ -68,7 +68,14 @@ export const PROFILE_JS = `
       }).catch(function() {});
   }
 
-  function list(node, empty, ids, cards, hearted) {
+  // savedSet and visitedSet are the account's TRUE state, plain {id: true}
+  // maps read once in load() and passed to both lists. Each card asks both
+  // maps about ITSELF rather than the list handing every card in it the same
+  // blanket answer, which is the bug this replaced: a tree that was both
+  // visited and hearted showed an empty heart on its My trees card, because
+  // that whole list was rendered with hearted=false regardless of what the
+  // tree actually was.
+  function list(node, empty, ids, cards, savedSet, visitedSet) {
     if (!node) return;
     var known = ids.filter(function(id) { return cards[id]; });
     if (!known.length) {
@@ -80,7 +87,7 @@ export const PROFILE_JS = `
     if (empty) empty.hidden = true;
     known.sort(function(a, b) { return cards[a].n < cards[b].n ? -1 : 1; });
     node.innerHTML = known.map(function(id) {
-      return '<li>' + C.card(id, cards[id], hearted) + '</li>';
+      return '<li>' + C.card(id, cards[id], savedSet[id] === true, visitedSet[id] === true) + '</li>';
     }).join('');
     node.hidden = false;
     if (window.atPaintSaves) window.atPaintSaves();
@@ -113,11 +120,21 @@ export const PROFILE_JS = `
     Promise.all([C.saves(), C.visited(), C.catalogue()]).then(function(r) {
       var saves = r[0], visited = r[1], cards = r[2];
       pins(saves, visited, cards);
-      list(el('saved-list'), el('saved-empty'), saves, cards, true);
+      // The two sets a card is judged against, independent of which list it
+      // happens to render in: a tree can be saved, visited, both or neither,
+      // and its card says so accurately wherever it appears (Hidde,
+      // 2026-09-03: "ik zie op web geen verschil tussen de favourites rij en
+      // de my trees rij - graag dezelfde logica als op app", where a card
+      // always carries its own true heart state plus a "Seen" badge, per
+      // tree, per TreeCard.swift's own `ticked` view).
+      var savedSet = {}, visitedSet = {};
+      saves.forEach(function(id) { savedSet[id] = true; });
+      visited.forEach(function(id) { visitedSet[id] = true; });
+      list(el('saved-list'), el('saved-empty'), saves, cards, savedSet, visitedSet);
       // My trees holds what you checked in at. The trees you ADDED are
       // rendered under it by my-trees-js, from a different table and behind a
       // signed url, because those photographs are private.
-      list(el('visited-list'), null, visited, cards, false);
+      list(el('visited-list'), null, visited, cards, savedSet, visitedSet);
 
       // The app's three numbers, from the app's own definitions. Trees adds
       // the sightings count that my-trees-js reports separately.
