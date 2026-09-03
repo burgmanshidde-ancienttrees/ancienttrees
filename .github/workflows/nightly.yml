@@ -254,7 +254,11 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
           python3 scripts/photo_takedown.py
-          if ! git diff --quiet; then
+          # Path-limited, and it has to match what the commit stages below.
+          # A bare `git diff --quiet` would see any unrelated change the run
+          # had left in the tree, stage none of it, and then fail on "nothing
+          # to commit" under bash -e.
+          if ! git diff --quiet -- data/cities data/photo-manifest.json site/public/photos; then
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"
             git add -A data/cities data/photo-manifest.json site/public/photos
