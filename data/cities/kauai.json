@@ -1,212 +1,213 @@
 {
- "city": "Kauai",
- "country": "United States",
- "status": "needs_curation",
- "intro": "Every tree on this list arrived with somebody. Monkeypod only reached Hawaii in the 1840s, and the two thickest of them on the island's register stand behind a shopkeeper's store and in the front yard of a missionary house. The men of a governor of Kauai planted a banyan for him in the 1880s that now measures close to twenty metres round. A plantation owner emptied his leftover nursery stock along a mile of road and made a tunnel out of it. There is an African baobab behind a church in Koloa.",
- "meta_description": "Kauai's remarkable trees all arrived with somebody: a shopkeeper's monkeypod, a governor's banyan twenty metres round, and a mile of eucalyptus.",
- "question_answer": "The oldest tree on Kauai that anybody can actually date is the Kanoa Banyan at Niumalu, planted for Paul P. Kanoa, governor of the island, at some point in his 1882 to 1886 term, which makes it about 140 years old. It stands roughly 84 feet east of Hulemanu Road on the way down to the Menehune Fishpond, and its trunk and root mass together measure close to twenty metres round, the largest figure recorded for any tree on Kauai in the state's exceptional trees register.",
- "question_meta": "The Kanoa Banyan at Niumalu, planted for a governor of Kauai in the 1880s, is the island's oldest datable tree. Where it stands and what is near it.",
- "question_context": "Kauai has no thousand-year-old trees, and the dates explain why: the island's designated trees are overwhelmingly species people carried here, and the oldest of them went into the ground during the sugar era. The Kanoa Banyan has the firmest window of any of them. The Garden Island, the local paper, records that it was planted by the men of Paul P. Kanoa, governor of Kauai from 1882 to 1886, in his honour and on his own land, that it still flourishes at Niumalu, and that Kauai County declared it an exceptional tree in 1990 at the request of the family who owned the property by then. That puts it at roughly 140 years. One tree could in principle beat it and cannot prove it: the monkeypod at the Gulick-Rowell House in Waimea, which local tradition dates to 200 years, a figure that fails because monkeypod is generally recorded as arriving in Hawaii around 1847. The Wilcox Banyan at Nawiliwili is the documented runner-up, planted in 1895.",
- "faq": [
-  {
-   "q": "What is the oldest tree on Kauai?",
-   "a": "The Kanoa Banyan at Niumalu, planted for Governor Paul P. Kanoa during his 1882 to 1886 term, so about 140 years old. The monkeypod at the Gulick-Rowell House in Waimea may well be older, but nobody has dated it."
-  },
-  {
-   "q": "Can you walk the Tree Tunnel on Maluhia Road?",
-   "a": "There is a shoulder and it is narrow. Maluhia Road is the main way between the highway and the south shore, so most people take the canopy slowly by car or by bike. It runs for the better part of a mile."
-  },
-  {
-   "q": "Are these trees free to visit?",
-   "a": "All of them. They stand on public roads, in a church yard, in Old Koloa Town and on the grounds of a resort at Nawiliwili. The Gulick-Rowell House in Waimea is closed for restoration, but its monkeypod fills the front yard and is in full view from Huakai Road."
-  },
-  {
-   "q": "What did Hurricane Iniki do to them?",
-   "a": "Iniki crossed Kauai in 1992 and stripped the Tree Tunnel on Maluhia Road back to bare branches. Residents said it would come back, and within a few years it had. The eucalyptus standing there now are the same trees, not a replanting."
-  }
- ],
- "trees": [
-  {
-   "id": "kau_001",
-   "name": "The Yamamoto Monkeypod",
-   "species": "Rain Tree (Samanea saman)",
-   "age_estimate": "about 100 years",
-   "age_min": 95,
-   "age_max": 110,
-   "location": {
-    "address": "5330 Koloa Road, Koloa, HI 96756 (behind the former Yamamoto Store site, Waikomo Stream side)",
-    "latitude": 21.903779,
-    "longitude": -159.46596,
-    "neighbourhood": "Old Koloa Town"
-   },
-   "story": "The man who planted this tree ran the shop in front of it. Howard Yamamoto's family took over the Koloa general store in the early 1920s, and he put a monkeypod in the ground on the Waikomo Stream side of the building, back when the water was still called Koloa Stream. The trunk now measures just under seven metres round, and the county register, which lists it as an exceptional tree, rates its condition as good.\n\nThe store it shades was built in 1898 and rebuilt in 1983, so the tree has already outlived one version of the building it was planted behind. It is the shade in the yard where Old Koloa Town does its business, and it has been that since the shop was still a shop.\n\nIts age is the one thing the sources argue about. The store's own history dates the planting to the early 1920s, which makes the tree about a hundred years old. A tourist photography site says 130 and confuses it with a famous monkeypod on Oahu, which is a different tree on a different island. We have gone with the store, on the grounds that the store was there.",
-   "verified_sources": [
-    "https://www.oldkoloa.com/history/the-yamamoto-store/",
-    "https://fotospot.com/attractions/hawaii-kauai/the-yamamoto-monkeypod-tree",
-    "Hawaii Exceptional Trees register (data.honolulu.gov), register_id 1149"
-   ],
-   "access": "Free, standing in the open courtyard/streetside area of Old Koloa Town behind the historic Yamamoto Store building",
-   "transport": "In Old Koloa Town, walkable from anywhere on Koloa Road",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "girth_cm": 691.9
-  },
-  {
-   "id": "kau_002",
-   "name": "The Koloa Baobab",
-   "species": "Baobab (Adansonia sp.)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Koloa Missionary Church, 3370 Poipu Road, Koloa, HI 96756 (behind the church yard, near the southeast corner)",
-    "latitude": 21.9,
-    "longitude": -159.47,
-    "neighbourhood": "Old Koloa Town"
-   },
-   "story": "A baobab is not what anybody expects to find behind a church in Hawaii. This one stands near the southeast corner of the yard at Koloa Missionary Church, and it sits on the county's register of exceptional trees, which records its condition as excellent and then stops. No girth, no assessment date, no planting record. The register does not even fix the species: it lists the tree as Adansonia, the baobab genus, without saying which baobab it is.\n\nYou will not mistake it for anything else. The genus carries an enormous swollen trunk and a crown of thin branches that look like roots held up in the air, which is worth the short walk over from the rest of Old Koloa Town on its own.\n\nThe most recent independent confirmation we could find is from 2016, when the Outdoor Circle featured it in a series on favourite trees. That is a long gap for a tree we are sending people to, and the pin marks the church rather than the trunk, because the register's coordinate is a grid point rather than a position. If you have stood in front of it lately, or you know which baobab it is or who put it there, tell us.",
-   "verified_sources": [
-    "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1121",
-    "https://www.outdoorcircle.org/my-favorite-tree-entries/baobab-koloa-kauai"
-   ],
-   "access": "Free, in the church yard; a baobab is unmistakable and visible from the grounds",
-   "transport": "In Old Koloa Town on Poipu Road, walkable from the rest of the cluster",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "kau_003",
-   "name": "The Kanoa Banyan Tree",
-   "species": "Indian Banyan (Ficus benghalensis)",
-   "age_estimate": "about 140 years",
-   "age_min": 135,
-   "age_max": 145,
-   "location": {
-    "address": "Niumalu, along Hulemanu Road on the way to the Menehune (Alekoko) Fishpond, approximately 84 feet east of Hulemanu Road",
-    "latitude": 21.9514,
-    "longitude": -159.3629,
-    "neighbourhood": "Niumalu"
-   },
-   "story": "Twenty metres round is not a normal measurement for a tree. This banyan comes to 19.87 at the county's assessment, the largest figure recorded against any Kauai entry in the exceptional trees register, and it gets there the way banyans do: by dropping aerial roots that thicken into extra trunks until one tree becomes a grove of itself. Height 64 feet, condition excellent.\n\nIt was planted for a politician. The men of Paul P. Kanoa, governor of Kauai from 1882 to 1886, put it in on his own land in his honour, which makes the tree about 140 years old and the oldest on this list anybody can actually date. The property later passed to the Achi family, and in 1990, at their request, Kauai County declared it exceptional. The island's newspaper looked in on it again this year and reported that it still flourishes.\n\nIt stands roughly 84 feet east of Hulemanu Road, on the way down to the Menehune Fishpond, and that sentence is as precise as the record gets. The register describes rather than plots, so our pin marks the road and not the trunk. In practice that is enough. Look for the largest thing in sight.",
-   "verified_sources": [
-    "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1142",
-    "https://www.thegardenisland.com/2026/08/22/lifestyles/island-history-the-historic-banyan-trees-at-niumalu-and-nawiliwili-kauai/"
-   ],
-   "access": "Free, visible from the public road to the Menehune Fishpond overlook",
-   "transport": "Niumalu, about 10-15 min drive/short bike from Lihue town centre",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "approximate",
-   "girth_cm": 1987.3
-  },
-  {
-   "id": "kau_004",
-   "name": "The Wilcox Banyan Tree",
-   "species": "Indian Laurel Fig (Ficus microcarpa)",
-   "age_estimate": "about 130 years",
-   "age_min": 125,
-   "age_max": 135,
-   "location": {
-    "address": "Banyan Harbor Resort, 3411 Wilcox Road, Lihue (Nawiliwili), HI 96766, on the former Papalinahoa Road descending from Kuhiau Ridge",
-    "latitude": 21.9586,
-    "longitude": -159.3551,
-    "neighbourhood": "Nawiliwili"
-   },
-   "story": "The road this tree was planted beside no longer exists. George N. Wilcox of Grove Farm put it in in 1895 on a curve of the Papalinahoa Road, which came down off Kuhiau Ridge to Nawiliwili. The tree stayed and the road went. What grew up around it instead is the Banyan Harbor Resort, so it now spends its days on the grounds of a working condo complex rather than in a park. The drive in is open and the tree is impossible to miss, but go knowing that this is somebody's address.\n\nBy the local paper's account it covers about two acres and has put down more than a thousand aerial roots. Its height is genuinely disputed and nobody has reconciled the figures: the county register recorded 38 feet, the newspaper says about 110. The trunk measurement they agree on is 6.58 metres.\n\nKauai County declared it an exceptional tree in 1976, after the cultural guardian Sarah Kailikea argued its case. The same newspaper column that told its story in 2013 went back to it this year and found it still flourishing. That makes 130 years, in the course of which its road vanished and a resort was built around it.",
-   "verified_sources": [
-    "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1145",
-    "https://www.thegardenisland.com/2013/01/20/lifestyles/island-history-papalinahoa-and-george-wilcoxs-banyan-tree/",
-    "https://www.thegardenisland.com/2026/08/22/lifestyles/island-history-the-historic-banyan-trees-at-niumalu-and-nawiliwili-kauai/"
-   ],
-   "access": "Free. The tree stands on the grounds of Banyan Harbor Resort at Nawiliwili, a working condo resort rather than a park. The drive in is open and the tree is visible from it; be aware you are on residential resort ground, not public parkland.",
-   "transport": "Nawiliwili, a few minutes from Lihue town centre",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate",
-   "girth_cm": 658.4
-  },
-  {
-   "id": "kau_005",
-   "name": "The Tree Tunnel (Maluhia Road)",
-   "species": "Swamp Mahogany (Eucalyptus robusta)",
-   "age_estimate": "roughly 115 years",
-   "age_min": 100,
-   "age_max": 130,
-   "location": {
-    "address": "Maluhia Road, from Knudsen Gap northward for about 3/4 mile toward Koloa, Kauai",
-    "latitude": 21.95,
-    "longitude": -159.466,
-    "neighbourhood": "Between Lawai/Kaumualii Highway and Koloa"
-   },
-   "story": "In 1992 Hurricane Iniki took every leaf off this mile of road and left a corridor of bare poles. Residents said it would grow back. Within a few years it had, and the canopy over Maluhia Road today is those same trees rather than a replanting.\n\nThere are more than 500 of them, swamp mahogany eucalyptus, standing along both sides of the road that runs from Knudsen Gap up toward Koloa and closing overhead for about three quarters of a mile. Kauai County has recognised the tunnel since 1976, as one thing rather than as 500 things, which is also how anybody driving through it experiences the place.\n\nWho planted it is not settled. The version you will hear most often credits Walter Duncan McBryde, said to have run leftover nursery stock from his Kukuiolono estate down the lane around 1911. A competing local account credits the Knudsen family, planting to firm up a marshy track and break the wind coming across it. Nobody has produced a document that closes the argument, so both are worth knowing.\n\nIt is the gateway to the south shore, which means it is a working road. The shoulder is narrow. Most people take it slowly and look up.",
-   "verified_sources": [
-    "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1138",
-    "https://alohastatedaily.com/2025/07/23/vanishing-lights-in-the-tunnel-of-trees/",
-    "https://www.parrishkauai.com/15685/the-tree-tunnel-a-grand-gateway-to-kauais-south-shore/"
-   ],
-   "access": "Free, a public road; drive or walk under the canopy (there is a narrow shoulder, most people experience it from a car or bike)",
-   "transport": "On Maluhia Road (Hwy 520), the gateway between Lihue/Kaumualii Highway and Koloa/Poipu; no public transit stop, a car or bike is the practical way to reach it",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "approximate"
-  },
-  {
-   "id": "kau_006",
-   "name": "The Gulick-Rowell Monkeypod",
-   "species": "Rain Tree (Samanea saman)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "location": {
-    "address": "Gulick-Rowell House, 9567 Huakai Road, Waimea, HI 96796",
-    "latitude": 21.95962,
-    "longitude": -159.6714,
-    "neighbourhood": "Waimea"
-   },
-   "story": "Local tradition says this monkeypod is 200 years old and arrived as a gift from an Indian prince, the first of its kind planted on the Garden Isle. The arithmetic does not hold. Monkeypod is generally recorded as reaching Hawaii around 1847, which is 179 years ago, so a 200-year-old specimen would predate its own species' arrival by two decades. It is a fine story about the tree and a poor fact about its age, which is why the age field here is empty.\n\nWhat is measured is the trunk: 8.53 metres round, the largest monkeypod figure on Kauai in the exceptional trees register, holding up a crown that covers the entire front yard of the Gulick-Rowell House.\n\nThe house is the reason the address matters. Reverend Peter Johnson Gulick began building it in 1829 and Reverend George Rowell finished it by 1846, and the restoration project now working on it calls it the oldest house on Kauai. It is closed while that work goes on. The tree is in full view from Huakai Road, and the pin marks where to stand. Wood from one pruned limb has already been made into tables at Kokee Lodge.\n\nNobody has dated it. If you know who put it in, tell us.",
-   "verified_sources": [
-    "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1148",
-    "https://bigislandnow.com/2024/04/08/hale-puna-restoring-oldest-house-on-kauai/",
-    "https://www.kauai.com/blog/the-gulick-rowell-house-a-historic-kauai-treasure"
-   ],
-   "access": "Free, from the street. The monkeypod stands in the front yard of the Gulick-Rowell House on Huakai Road, a historic house under restoration and not open to visitors. The tree fills the yard and is in full view from the public road; the pin marks where to stand.",
-   "transport": "In Waimea town, walkable from the town centre",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "flagged",
-   "location_precision": "confirmed",
-   "girth_cm": 853.4
-  }
- ]
+  "city": "Kauai",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Every tree on this list arrived with somebody. Monkeypod only reached Hawaii in the 1840s, and the two thickest of them on the island's register stand behind a shopkeeper's store and in the front yard of a missionary house. The men of a governor of Kauai planted a banyan for him in the 1880s that now measures close to twenty metres round. A plantation owner emptied his leftover nursery stock along a mile of road and made a tunnel out of it. There is an African baobab behind a church in Koloa.",
+  "meta_description": "Kauai's remarkable trees all arrived with somebody: a shopkeeper's monkeypod, a governor's banyan twenty metres round, and a mile of eucalyptus.",
+  "question_answer": "The oldest tree on Kauai that anybody can actually date is the Kanoa Banyan at Niumalu, planted for Paul P. Kanoa, governor of the island, at some point in his 1882 to 1886 term, which makes it about 140 years old. It stands roughly 84 feet east of Hulemanu Road on the way down to the Menehune Fishpond, and its trunk and root mass together measure close to twenty metres round, the largest figure recorded for any tree on Kauai in the state's exceptional trees register.",
+  "question_meta": "The Kanoa Banyan at Niumalu, planted for a governor of Kauai in the 1880s, is the island's oldest datable tree. Where it stands and what is near it.",
+  "question_context": "Kauai has no thousand-year-old trees, and the dates explain why: the island's designated trees are overwhelmingly species people carried here, and the oldest of them went into the ground during the sugar era. The Kanoa Banyan has the firmest window of any of them. The Garden Island, the local paper, records that it was planted by the men of Paul P. Kanoa, governor of Kauai from 1882 to 1886, in his honour and on his own land, that it still flourishes at Niumalu, and that Kauai County declared it an exceptional tree in 1990 at the request of the family who owned the property by then. That puts it at roughly 140 years. One tree could in principle beat it and cannot prove it: the monkeypod at the Gulick-Rowell House in Waimea, which local tradition dates to 200 years, a figure that fails because monkeypod is generally recorded as arriving in Hawaii around 1847. The Wilcox Banyan at Nawiliwili is the documented runner-up, planted in 1895.",
+  "faq": [
+    {
+      "q": "What is the oldest tree on Kauai?",
+      "a": "The Kanoa Banyan at Niumalu, planted for Governor Paul P. Kanoa during his 1882 to 1886 term, so about 140 years old. The monkeypod at the Gulick-Rowell House in Waimea may well be older, but nobody has dated it."
+    },
+    {
+      "q": "Can you walk the Tree Tunnel on Maluhia Road?",
+      "a": "There is a shoulder and it is narrow. Maluhia Road is the main way between the highway and the south shore, so most people take the canopy slowly by car or by bike. It runs for the better part of a mile."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "All of them. They stand on public roads, in a church yard, in Old Koloa Town and on the grounds of a resort at Nawiliwili. The Gulick-Rowell House in Waimea is closed for restoration, but its monkeypod fills the front yard and is in full view from Huakai Road."
+    },
+    {
+      "q": "What did Hurricane Iniki do to them?",
+      "a": "Iniki crossed Kauai in 1992 and stripped the Tree Tunnel on Maluhia Road back to bare branches. Residents said it would come back, and within a few years it had. The eucalyptus standing there now are the same trees, not a replanting."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kau_001",
+      "name": "The Yamamoto Monkeypod",
+      "species": "Rain Tree (Samanea saman)",
+      "age_estimate": "about 100 years",
+      "age_min": 95,
+      "age_max": 110,
+      "location": {
+        "address": "5330 Koloa Road, Koloa, HI 96756 (behind the former Yamamoto Store site, Waikomo Stream side)",
+        "latitude": 21.903779,
+        "longitude": -159.46596,
+        "neighbourhood": "Old Koloa Town"
+      },
+      "story": "The man who planted this tree ran the shop in front of it. Howard Yamamoto's family took over the Koloa general store in the early 1920s, and he put a monkeypod in the ground on the Waikomo Stream side of the building, back when the water was still called Koloa Stream. The trunk now measures just under seven metres round, and the county register, which lists it as an exceptional tree, rates its condition as good.\n\nThe store it shades was built in 1898 and rebuilt in 1983, so the tree has already outlived one version of the building it was planted behind. It is the shade in the yard where Old Koloa Town does its business, and it has been that since the shop was still a shop.\n\nIts age is the one thing the sources argue about. The store's own history dates the planting to the early 1920s, which makes the tree about a hundred years old. A tourist photography site says 130 and confuses it with a famous monkeypod on Oahu, which is a different tree on a different island. We have gone with the store, on the grounds that the store was there.",
+      "verified_sources": [
+        "https://www.oldkoloa.com/history/the-yamamoto-store/",
+        "https://fotospot.com/attractions/hawaii-kauai/the-yamamoto-monkeypod-tree",
+        "Hawaii Exceptional Trees register (data.honolulu.gov), register_id 1149"
+      ],
+      "access": "Free, standing in the open courtyard/streetside area of Old Koloa Town behind the historic Yamamoto Store building",
+      "transport": "In Old Koloa Town, walkable from anywhere on Koloa Road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 691.9
+    },
+    {
+      "id": "kau_002",
+      "name": "The Koloa Baobab",
+      "species": "Baobab (Adansonia sp.)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Koloa Missionary Church, 3370 Poipu Road, Koloa, HI 96756 (behind the church yard, near the southeast corner)",
+        "latitude": 21.9,
+        "longitude": -159.47,
+        "neighbourhood": "Old Koloa Town"
+      },
+      "story": "A baobab is not what anybody expects to find behind a church in Hawaii. This one stands near the southeast corner of the yard at Koloa Missionary Church, and it sits on the county's register of exceptional trees, which records its condition as excellent and then stops. No girth, no assessment date, no planting record. The register does not even fix the species: it lists the tree as Adansonia, the baobab genus, without saying which baobab it is.\n\nYou will not mistake it for anything else. The genus carries an enormous swollen trunk and a crown of thin branches that look like roots held up in the air, which is worth the short walk over from the rest of Old Koloa Town on its own.\n\nThe most recent independent confirmation we could find is from 2016, when the Outdoor Circle featured it in a series on favourite trees. That is a long gap for a tree we are sending people to, and the pin marks the church rather than the trunk, because the register's coordinate is a grid point rather than a position. If you have stood in front of it lately, or you know which baobab it is or who put it there, tell us.",
+      "verified_sources": [
+        "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1121",
+        "https://www.outdoorcircle.org/my-favorite-tree-entries/baobab-koloa-kauai"
+      ],
+      "access": "Free, in the church yard; a baobab is unmistakable and visible from the grounds",
+      "transport": "In Old Koloa Town on Poipu Road, walkable from the rest of the cluster",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "girth_cm": 725
+    },
+    {
+      "id": "kau_003",
+      "name": "The Kanoa Banyan Tree",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "about 140 years",
+      "age_min": 135,
+      "age_max": 145,
+      "location": {
+        "address": "Niumalu, along Hulemanu Road on the way to the Menehune (Alekoko) Fishpond, approximately 84 feet east of Hulemanu Road",
+        "latitude": 21.9514,
+        "longitude": -159.3629,
+        "neighbourhood": "Niumalu"
+      },
+      "story": "Twenty metres round is not a normal measurement for a tree. This banyan comes to 19.87 at the county's assessment, the largest figure recorded against any Kauai entry in the exceptional trees register, and it gets there the way banyans do: by dropping aerial roots that thicken into extra trunks until one tree becomes a grove of itself. Height 64 feet, condition excellent.\n\nIt was planted for a politician. The men of Paul P. Kanoa, governor of Kauai from 1882 to 1886, put it in on his own land in his honour, which makes the tree about 140 years old and the oldest on this list anybody can actually date. The property later passed to the Achi family, and in 1990, at their request, Kauai County declared it exceptional. The island's newspaper looked in on it again this year and reported that it still flourishes.\n\nIt stands roughly 84 feet east of Hulemanu Road, on the way down to the Menehune Fishpond, and that sentence is as precise as the record gets. The register describes rather than plots, so our pin marks the road and not the trunk. In practice that is enough. Look for the largest thing in sight.",
+      "verified_sources": [
+        "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1142",
+        "https://www.thegardenisland.com/2026/08/22/lifestyles/island-history-the-historic-banyan-trees-at-niumalu-and-nawiliwili-kauai/"
+      ],
+      "access": "Free, visible from the public road to the Menehune Fishpond overlook",
+      "transport": "Niumalu, about 10-15 min drive/short bike from Lihue town centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate",
+      "girth_cm": 1987.3
+    },
+    {
+      "id": "kau_004",
+      "name": "The Wilcox Banyan Tree",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "about 130 years",
+      "age_min": 125,
+      "age_max": 135,
+      "location": {
+        "address": "Banyan Harbor Resort, 3411 Wilcox Road, Lihue (Nawiliwili), HI 96766, on the former Papalinahoa Road descending from Kuhiau Ridge",
+        "latitude": 21.9586,
+        "longitude": -159.3551,
+        "neighbourhood": "Nawiliwili"
+      },
+      "story": "The road this tree was planted beside no longer exists. George N. Wilcox of Grove Farm put it in in 1895 on a curve of the Papalinahoa Road, which came down off Kuhiau Ridge to Nawiliwili. The tree stayed and the road went. What grew up around it instead is the Banyan Harbor Resort, so it now spends its days on the grounds of a working condo complex rather than in a park. The drive in is open and the tree is impossible to miss, but go knowing that this is somebody's address.\n\nBy the local paper's account it covers about two acres and has put down more than a thousand aerial roots. Its height is genuinely disputed and nobody has reconciled the figures: the county register recorded 38 feet, the newspaper says about 110. The trunk measurement they agree on is 6.58 metres.\n\nKauai County declared it an exceptional tree in 1976, after the cultural guardian Sarah Kailikea argued its case. The same newspaper column that told its story in 2013 went back to it this year and found it still flourishing. That makes 130 years, in the course of which its road vanished and a resort was built around it.",
+      "verified_sources": [
+        "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1145",
+        "https://www.thegardenisland.com/2013/01/20/lifestyles/island-history-papalinahoa-and-george-wilcoxs-banyan-tree/",
+        "https://www.thegardenisland.com/2026/08/22/lifestyles/island-history-the-historic-banyan-trees-at-niumalu-and-nawiliwili-kauai/"
+      ],
+      "access": "Free. The tree stands on the grounds of Banyan Harbor Resort at Nawiliwili, a working condo resort rather than a park. The drive in is open and the tree is visible from it; be aware you are on residential resort ground, not public parkland.",
+      "transport": "Nawiliwili, a few minutes from Lihue town centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "girth_cm": 658.4
+    },
+    {
+      "id": "kau_005",
+      "name": "The Tree Tunnel (Maluhia Road)",
+      "species": "Swamp Mahogany (Eucalyptus robusta)",
+      "age_estimate": "roughly 115 years",
+      "age_min": 100,
+      "age_max": 130,
+      "location": {
+        "address": "Maluhia Road, from Knudsen Gap northward for about 3/4 mile toward Koloa, Kauai",
+        "latitude": 21.95,
+        "longitude": -159.466,
+        "neighbourhood": "Between Lawai/Kaumualii Highway and Koloa"
+      },
+      "story": "In 1992 Hurricane Iniki took every leaf off this mile of road and left a corridor of bare poles. Residents said it would grow back. Within a few years it had, and the canopy over Maluhia Road today is those same trees rather than a replanting.\n\nThere are more than 500 of them, swamp mahogany eucalyptus, standing along both sides of the road that runs from Knudsen Gap up toward Koloa and closing overhead for about three quarters of a mile. Kauai County has recognised the tunnel since 1976, as one thing rather than as 500 things, which is also how anybody driving through it experiences the place.\n\nWho planted it is not settled. The version you will hear most often credits Walter Duncan McBryde, said to have run leftover nursery stock from his Kukuiolono estate down the lane around 1911. A competing local account credits the Knudsen family, planting to firm up a marshy track and break the wind coming across it. Nobody has produced a document that closes the argument, so both are worth knowing.\n\nIt is the gateway to the south shore, which means it is a working road. The shoulder is narrow. Most people take it slowly and look up.",
+      "verified_sources": [
+        "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1138",
+        "https://alohastatedaily.com/2025/07/23/vanishing-lights-in-the-tunnel-of-trees/",
+        "https://www.parrishkauai.com/15685/the-tree-tunnel-a-grand-gateway-to-kauais-south-shore/"
+      ],
+      "access": "Free, a public road; drive or walk under the canopy (there is a narrow shoulder, most people experience it from a car or bike)",
+      "transport": "On Maluhia Road (Hwy 520), the gateway between Lihue/Kaumualii Highway and Koloa/Poipu; no public transit stop, a car or bike is the practical way to reach it",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "kau_006",
+      "name": "The Gulick-Rowell Monkeypod",
+      "species": "Rain Tree (Samanea saman)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Gulick-Rowell House, 9567 Huakai Road, Waimea, HI 96796",
+        "latitude": 21.95962,
+        "longitude": -159.6714,
+        "neighbourhood": "Waimea"
+      },
+      "story": "Local tradition says this monkeypod is 200 years old and arrived as a gift from an Indian prince, the first of its kind planted on the Garden Isle. The arithmetic does not hold. Monkeypod is generally recorded as reaching Hawaii around 1847, which is 179 years ago, so a 200-year-old specimen would predate its own species' arrival by two decades. It is a fine story about the tree and a poor fact about its age, which is why the age field here is empty.\n\nWhat is measured is the trunk: 8.53 metres round, the largest monkeypod figure on Kauai in the exceptional trees register, holding up a crown that covers the entire front yard of the Gulick-Rowell House.\n\nThe house is the reason the address matters. Reverend Peter Johnson Gulick began building it in 1829 and Reverend George Rowell finished it by 1846, and the restoration project now working on it calls it the oldest house on Kauai. It is closed while that work goes on. The tree is in full view from Huakai Road, and the pin marks where to stand. Wood from one pruned limb has already been made into tables at Kokee Lodge.\n\nNobody has dated it. If you know who put it in, tell us.",
+      "verified_sources": [
+        "Hawaii Exceptional Trees register (data.honolulu.gov, CC0), register_id 1148",
+        "https://bigislandnow.com/2024/04/08/hale-puna-restoring-oldest-house-on-kauai/",
+        "https://www.kauai.com/blog/the-gulick-rowell-house-a-historic-kauai-treasure"
+      ],
+      "access": "Free, from the street. The monkeypod stands in the front yard of the Gulick-Rowell House on Huakai Road, a historic house under restoration and not open to visitors. The tree fills the yard and is in full view from the public road; the pin marks where to stand.",
+      "transport": "In Waimea town, walkable from the town centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 853.4
+    }
+  ]
 }
