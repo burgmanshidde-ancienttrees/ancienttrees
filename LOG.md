@@ -21,6 +21,14 @@ Also ran `girths.py`/`heights.py` against registers already on disk: 1 girth (Ka
 
 Build and QA clean throughout (the recurring sitemap-lastmod QA warning is this sandbox's shallow git clone, not a content issue). Both claims released, everything committed and pushed. Full detail in CURATION.md.
 
+**Then found and fixed a real bug in `scout_next.py`.** With Hilo done, `--target` kept recommending "SCOUT Hilo" a second time, still wrong: the register-scouting ledger's Hawaii entries (Oahu, Maui, Kauai, Big Island) never listed which ranked cities they answer for, so the join that is supposed to let a place-level verdict cover a city by name (`covers`) had nothing to match "Hilo" or "Hawaii" against. Added `covers` to the Big Island entry; committed separately with the reasoning, since this would have kept misdirecting every future run otherwise.
+
+Continued down the corrected target list, which is real scouting work (rung 5), not deepening:
+- **Birmingham (#33)**: Alabama's Champion Tree Program is real but publishes only a PDF with no stated licence, and the PDF's text is not recoverable in this sandbox (custom font encoding, no ToUnicode map). Recorded stalled, drafted a permission-and-format-request email in `drafts/OUTREACH.md` (NOT SENT, needs Hidde), and logged one concrete lead regardless of licence: a state-champion green hawthorn at Red Mountain Park.
+- **Chicago (#43)**: found the Illinois Big Tree Register (University of Illinois Extension), 147 statewide trees with coordinates, measurements and photos, sitting behind an open ArcGIS endpoint that needed no scraping. Rich data, but stalled on licence (same shape as the existing Cal Poly stall) and doesn't actually solve Chicago: only 3 of 147 rows are in Cook County, all 27-37km from the Loop, past the day-trip boundary. Drafted a second permission email. Both new ledger entries carry `covers` so they answer for their cities going forward.
+
+**Claimed Oahu next** (#47): `scout_next.py --target` correctly called BUILD there, 133 unjudged register trees already in hand. But Oahu is already 75% paid entry (6 of 8 trees, 5 from Foster Botanical Garden, 1 from Moanalua Gardens), a ratio CLAUDE.md flags directly ("ik heb liever 34 goede bereikbare dan 39"). The register itself has the fix on hand: 42 candidates at the free, always-open Ala Moana Beach Park alone. Dispatched a verify pass targeted specifically at free sites (Ala Moana, Thomas Square, UH Manoa, downtown government grounds) with instructions to skip Foster/Moanalua entirely and skip several register rows that read as private residential estates. Result not in yet; will follow up.
+
 ## 2026-09-03 (session with Hidde) - Digest: Waitlist relabeled Android-only, real App Store download numbers added
 
 He noticed the signup table still said "Waitlist" with no qualifier, the
