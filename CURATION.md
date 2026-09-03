@@ -10,6 +10,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-03 (continuation run) - Submissions 61/62: Hidde's own account, testing the collect flow at a Baarn house
+
+Two rows five minutes apart (`kind: tree`, city "Baarn", `page: app:collect`), both with empty `tree` and `why` fields, GPS 52.20707/52.20709,5.28865/5.28866, two metres apart. The `user_id` resolves via the admin API to burgmans.hidde@gmail.com, i.e. Hidde's own account, not a reader. Reverse-geocoded to 31 Bilderdijklaan, Baarn, a house. No species, no description, nothing to verify: this reads as him exercising the app's collect flow in person rather than a report, same shape as row 59 (a different tester at a different house). Set `outcome: holds` via the service key on both rows, no reply needed. Appended to `data/submissions-processed.json`.
+
 ## 2026-09-03 - Submission 60: a fig tree in Baarn, GPS resolves to a house
 
 Row 60 (`kind: tree`, city "Baarn", tree blank, `why: "Figtree"`, GPS 52.21395,5.29701 "standing at the tree", from `page: app:collect`). Unlike row 59's bare "Test", this reads as a genuine report: a species name, a real coordinate, submitted from the tree itself. Reverse-geocoded via Nominatim to 13 Paulus Potterlaan, Baarn, a residential house address, not a park or public ground. Per hard rule 10's "not somebody's home" test this cannot ship as-is, but a fig overhanging a garden wall onto the pavement is a real and common case in Dutch towns, so rather than close it out as private land on a coordinate alone, set `outcome: open_question` and asked the contributor whether the tree is visible from the public street. If they confirm street-visibility, this becomes a normal verify target (still needs a second source for species/age). Appended to `data/submissions-processed.json`.
