@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ata_001",
+    "name": "The Great Camphor of Kinomiya Shrine",
+    "species": "Camphor Tree (Cinnamomum camphora)",
+    "age_estimate": "traditionally said to be about 2000 years",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 1565,
+    "height_m": 36,
+    "location": {
+      "address": "43-1 Nishiyama-cho, Atami, Shizuoka Prefecture, Japan",
+      "latitude": 35.10050,
+      "longitude": 139.06782,
+      "neighbourhood": "Kinomiya Shrine, Atami"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E9%98%BF%E8%B1%86%E4%BD%90%E5%92%8C%E6%B0%97%E7%A5%9E%E7%A4%BE%E3%81%AE%E5%A4%A7%E3%82%AF%E3%82%B9",
+      "https://www.ataminews.gr.jp/spot/115/",
+      "https://kunishitei.bunka.go.jp/heritage/detail/401/1330"
+    ],
+    "access": "Free, within the grounds of Kinomiya Shrine, open to the public; the shrine and the tree are illuminated nightly from 17:00 to 23:00.",
+    "transport": "5 minute walk from Kinomiya Station (JR Ito Line).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Officially designated name is 'Azusawakejinja no Okusu' (the shrine's Meiji-era name), but it is universally known and signposted today as the Okusu (Great Camphor) of Kinomiya Shrine. National Natural Monument since 1933-02-28. One of 'Japan's Three Great Camphors' (Nihon Sandai Kusu), and was ranked the second-largest tree in Japan by the Environment Agency's national giant-tree survey (Showa 63, 1988), after the Kamou Okusu in Kagoshima. Coordinates confirmed via the article's own Coord template (35 06 01.8 N, 139 04 04.15 E), which converts to almost exactly the lead's given coordinates. Legend: the shrine was founded in 710 after a fisherman's net repeatedly caught a wooden idol that told him in a dream to found a shrine where seven great camphors grew; local tradition holds circling the tree once adds a year to your life, and it is an annual pilgrimage/festival site: the Okusu Festival (Okusu-sai) is held every May 5, with a ceremonial dance composed for it. The tree was originally a single trunk that split into two (north and south) after a partial felling attempt around the Meiji Restoration for timber; the south trunk broke off about 5m up in a 1974 typhoon and the break is now capped with sheet metal. Measurements vary by which trunk/point is measured: combined base circumference (treating both trunks as one) is about 15.65m (used here as girth_cm); the north trunk alone measures about 14.70m at the base and 12.50m at breast height; the south trunk about 10.85m at the base and 8.25m at breast height. Age of 'about 2000 years' is explicitly a tradition/legend repeated in secondary literature and by the shrine itself, not a scientific dating; no growth-rate-derived figure was found, so age_min/age_max are left empty rather than invented, and this is flagged for the reader. Alive and actively maintained: shrine underwent a landscaping renewal completed 2018 (new approach path, 'Komichi'), and the annual festival was reported as recently as 2018 news coverage referring to it as '2100 years old' that year, consistent with ongoing active veneration. Second source for the north trunk breast-height figure and the National Natural Monument designation is the Bunka-cho (Agency for Cultural Affairs) national register database entry. Container judgement: Atami is a well-known resort city on the Izu coast, roughly 100km from Tokyo (well beyond day-trip range, though reachable by Shinkansen), and this tree is a major, independently famous tourist destination in its own right (annual festival, nightly illumination, national monument status, 'Three Great Camphors' ranking) -- it clears the single-tree-destination bar clearly rather than marginally. Ships as its own place, Atami, prefix 'ata' (unused as of this pass).",
+    "container": "new:Atami"
+  },
+  {
+    "id": "ngi_001",
+    "name": "The Great Ginkgo of Bodaiji",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "about 900 years",
+    "age_min": 800,
+    "age_max": 1000,
+    "girth_cm": 1100,
+    "height_m": 42,
+    "location": {
+      "address": "1528 Koen, Nagi, Katsuta District, Okayama Prefecture, Japan",
+      "latitude": 35.15606,
+      "longitude": 134.20389,
+      "neighbourhood": "Bodaiji Temple, Mount Nagi"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E8%8F%A9%E6%8F%90%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+      "https://www.town.nagi.okayama.jp/kankou/kankou_spot/shizen/bodaiji_ichou.html",
+      "https://kunishitei.bunka.go.jp/heritage/detail/401/2254"
+    ],
+    "access": "Free, within the grounds of Bodaiji Temple (Jodo sect), a signposted tourist stop on the southeast slope of Mount Nagi; open to visitors, no gate or fee mentioned by either source.",
+    "transport": "From JR Tsuyama Station: local bus toward Mukuwa/Namekata, alight at 'Nagi-cho Yakuba-mae', then about 15 minutes by taxi. By car: about 20 minutes from Tsuyama Interchange on the Chugoku Expressway.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A male (non-fruiting) ginkgo, the largest in Okayama Prefecture, National Natural Monument since 1928-01-18, one of only 20 ginkgos nationwide with that designation, and listed among Japan's '100 Famous Trees' (Zenkoku Meiboku Hyakusen). Legend: Honen, founder of Jodo (Pure Land) Buddhism, is said to have studied at Bodaiji as a boy (ages 9-13) and to have used a ginkgo branch as a walking stick on his way up the mountain, planting it at the temple gate saying 'take root when learning is achieved'; this grew into the present tree. DNA testing commissioned by Nagi's education board in 2013 confirmed a genetic link between this tree, the nearby 'Amidado no Icho' (a Prefectural Natural Monument 1.8km down the mountain, at the foot where the legend has Honen cutting the original branch) and a third tree ('Tenmei no Icho') that grew from a branch of this tree broken off by heavy snow roughly 200+ years ago -- corroborating the transplant tradition, though the DNA link does not itself date the tree. Coordinates confirmed via the Wikipedia article's Coord template (35 09 21.8 N, 134 12 14.0 E), matching the lead's coordinates closely. Measurements disagree slightly between sources and both are recorded rather than picked: an academic source (Nakagoshi, 1995) gives height 42.5m and breast-height girth 11.0m (root-base girth 11.8m), which is what girth_cm/height_m use here; Nagi Town's own tourism page instead rounds to 'about 40m tall, about 13m round'. Crown spread is 31.95m east-west by 35.2m north-south. Survived a 1955 fire (started while smoking a marten out of the trunk's hollow) and 1989 typhoon damage; town's own page still promotes it as a current attraction with a dedicated illumination event, which is the best 'alive now' evidence. Container judgement: no published Ancient Trees city sits anywhere near Nagi (Okayama and Tottori area cities are all unpublished); this is a National Natural Monument tied to the founding legend of a major Buddhist sect, DNA-corroborated, actively promoted by its town with a dedicated illumination event -- clears the single-tree-destination bar. Ships as its own place, Nagi, prefix 'ngi' (unused as of this pass).",
+    "container": "new:Nagi"
+  },
+  {
+    "id": "urh_001",
+    "name": "The Atsunai Elm",
+    "species": "Japanese Elm (Ulmus davidiana var. japonica)",
+    "age_estimate": "over 300 years",
+    "age_min": 300,
+    "age_max": null,
+    "girth_cm": 640,
+    "height_m": 24,
+    "location": {
+      "address": "Atsunai, Urahoro, Tokachi District, Hokkaido, Japan, beside National Route 38 near the Kami-Atsunai Tunnel",
+      "latitude": 42.839972,
+      "longitude": 143.779194,
+      "neighbourhood": "Atsunai, Urahoro"
+    },
+    "verified_sources": [
+      "http://www.hitozato-kyoboku.com/atsunai-nire.htm",
+      "https://commons.wikimedia.org/wiki/Category:Atsunai-no-Harunire"
+    ],
+    "access": "Appears open, roadside beside National Route 38, about 350m from the northeast portal of the Kami-Atsunai Tunnel; ownership and any formal public-access designation not independently confirmed. It is explicitly NOT a National or Prefectural Natural Monument (hitozato-kyoboku.com states this plainly).",
+    "transport": "No rail station nearby (the former Atsunai Station on the JR Hiroo Line closed in 1987); reachable only by car along Route 38.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "SINGLE-TREE-DESTINATION JUDGEMENT UNCERTAIN, and leaning no: this appears to be a genuine, sizeable old elm (girth 6.4m per the book 'Nihon no Kyoju Kyoboku', height 24m, age estimated 300+ years per the Ministry of Environment's giant-tree database, both cited secondhand by hitozato-kyoboku.com, a citizen giant-tree enthusiast site) documented by a photo visit dated 2019-06-12, and independently geotagged by Commons/Panoramio contributors at matching coordinates since at least 2005 (three dated photos, 2005/2010/2014, suggesting it survived at least that span). But it carries NO natural monument designation of any kind (stated explicitly by the source), no named legend, no annual rite, no visitor infrastructure -- it is a large tree glimpsed from a highway near a tunnel portal, the kind hitozato-kyoboku.com itself describes as easy to miss from a moving car. It does not clearly clear the 'would somebody travel specifically for THIS ONE TREE' bar. It also sits roughly 190km from Sapporo, the nearest published Ancient Trees city (Hokkaido), so it cannot join an existing city page under the day-trip rule either. A 2001 measurement cited on the same page recorded 644cm girth versus 640cm used here (from the 'Nihon no Kyoju Kyoboku' book); the site's own 2019 visitor speculates it may now exceed 650cm. Recommend holding this as a lead (a possible future Urahoro/Tokachi-coast cluster, alongside the well-documented Toyokoro elm and the Arima elm pair, both separate trees found during this same search and NOT this one) rather than publishing alone, pending a session decision.",
+    "container": "uncertain"
+  }
+]
