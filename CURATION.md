@@ -10,6 +10,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-03 (continuation run) - Submission 59: another app-collect test, Hilversum
+
+Row 59 (`kind: tree`, city "Hilversum", tree blank, `why: "Test"`, GPS 52.22837,5.17493 from `page: app:collect`) is the same shape as row 41's Baarn test: no tree name, no species, just the word "Test" and a coordinate. The `user_id` resolves via the admin API to gielkeburgmans@gmail.com, not Hidde's own account, so this reads as a family member or tester exercising the app's collect-photo submission flow rather than a reader report. The point reverse-geocodes to a house at 16 Gerardus Gullaan, Hilversum, a residential address, not a park or known tree site, so it is not treated as a lead regardless. Set `outcome: holds` via the service key, no reply needed. Appended to `data/submissions-processed.json`.
+
 ## 2026-09-03 - Matera: stuck at 3, register exhausted, general search unfruitful
 
 Matera had 2 trees fully verified and written (mat_001 the Pine of Viale Aldo Moro, mat_002 the Black Poplar of Timmari) sitting in `data/research/matera-verified.json` from an earlier pass, one short of the two needed to clear the four-tree floor. A verify pass found a third: mat_003, the Mahaleb Cherry of Contrada La Vaglia, a register entry two earlier passes had left as an unshippable lead because Overpass timed out on the access question. Querying the raw OSM Planet API instead (not Overpass) confirmed no building or private-landuse polygon over the point, corroborating the register's own "urban" flag (shared with the already-shippable Pino, not shared with any of the six blocked masseria/jazzo rows). Shipped as `flagged`/`approximate` since nothing pins the exact trunk or confirms it alive today.
