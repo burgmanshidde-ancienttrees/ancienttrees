@@ -734,7 +734,38 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .appstore-badge img { width: 135px; height: 45px; }
 .appstore-badge:focus-visible { outline: 2px solid var(--moss); outline-offset: 3px; }
 .waitlist-note { font-size: 12px; color: var(--ink-light); margin-top: 0.5rem; }
-.app-dialog-badge { margin-top: 0.9rem; }
+.app-getter { margin-top: 0.6rem; }
+.app-dialog .app-getter { margin-top: 0.9rem; }
+
+/* The three-way "get the app" widget (AppGetter.astro, 2026-09-03). All three
+   states are in the markup; data-device, set by the component's own script,
+   is what shows one and hides the other two. Default (no JS yet, or JS off)
+   is iOS, the only one of the three that is a plain link needing nothing
+   detected. */
+.app-getter-android, .app-getter-desktop { display: none; }
+.app-getter[data-device="android"] .app-getter-ios,
+.app-getter[data-device="android"] .app-getter-desktop { display: none; }
+.app-getter[data-device="android"] .app-getter-android { display: block; }
+.app-getter[data-device="desktop"] .app-getter-ios,
+.app-getter[data-device="desktop"] .app-getter-android { display: none; }
+.app-getter[data-device="desktop"] .app-getter-desktop { display: block; }
+.app-getter-form { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.app-getter-form input { flex: 1 1 12rem; min-width: 0; border: 1px solid var(--cream-dark);
+  border-radius: 999px; padding: 0.75rem 1.1rem; font-family: var(--sans); font-size: 14px;
+  background: #fff; }
+.app-getter-form input:focus { outline: 2px solid var(--moss); outline-offset: 1px; }
+.app-getter-note { font-size: 13px; color: var(--ink-light); margin: 0; }
+.app-getter-sent { font-size: 14px; color: var(--ink); margin-top: 0.4rem; }
+.app-getter-desktop { text-align: center; }
+.app-getter-qr { border: 1px solid var(--cream-dark); border-radius: 10px; padding: 8px;
+  background: #fff; }
+.app-getter-desktop .app-getter-note { margin-top: 0.6rem; }
+/* A page-specific line that follows the widget rather than living inside it
+   (app.astro's iOS version requirement). Shown only in the iOS state, via the
+   sibling combinator, since it says nothing useful under the Android or
+   desktop blocks. */
+.app-getter-ios-note { display: none; }
+.app-getter[data-device="ios"] + .app-getter-ios-note { display: block; }
 .appland-right h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: var(--ink-light); margin-bottom: 0.4rem; }
 .appland-feat { display: flex; gap: 1rem; align-items: flex-start; padding: 1.05rem 0; border-bottom: 1px solid var(--cream-dark); }
 .appland-feat:last-child { border-bottom: none; }

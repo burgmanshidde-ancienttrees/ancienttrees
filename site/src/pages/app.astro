@@ -6,7 +6,7 @@
 import Base from "../layouts/Base.astro";
 import { BASE_URL } from "../lib/schema";
 import { imgSrcset } from "../lib/images";
-import AppStoreBadge from "../components/AppStoreBadge.astro";
+import AppGetter from "../components/AppGetter.astro";
 
 const canonical = `${BASE_URL}/app`;
 const applandImg = imgSrcset(
@@ -25,8 +25,8 @@ const applandImg = imgSrcset(
       <span class="chip gold">Free on the App Store</span>
       <h1>Every ancient tree, in your pocket</h1>
       <p class="appland-sub">Open it wherever you happen to be and it finds the remarkable old trees within walking distance, strings the good ones into one afternoon, and tells you what you are standing in front of when you get there. Every tree you visit is one you keep.</p>
-      <AppStoreBadge class="appland-badge" ev="app-page-badge" />
-      <p class="waitlist-note">You need an iPhone running iOS 18 or later. The Android version does not exist yet.</p>
+      <AppGetter ev="app-page-badge" source="app-page" />
+      <p class="waitlist-note app-getter-ios-note">Needs an iPhone running iOS 18 or later.</p>
     </div>
     <div class="appland-right">
       <h2>What you can do</h2>
