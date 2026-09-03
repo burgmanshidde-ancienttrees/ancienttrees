@@ -1,0 +1,94 @@
+{
+  "city": "Waipoua Forest",
+  "country": "New Zealand",
+  "status": "needs_curation",
+  "intro": "Waipoua Forest on the west coast of Northland is what survived the kauri trade, which took nearly every large tree of the species in the country during the nineteenth century. Two of the biggest kauri alive stand four kilometres apart here, each at the end of a short walk from State Highway 12: Tāne Mahuta, the tallest, and Te Matua Ngahere, the thickest. The forest is under active protection against kauri dieback, so every walk begins at a shoe-cleaning station and stays on raised boardwalk the whole way.",
+  "meta_description": "Waipoua Forest in Northland holds Tāne Mahuta and Te Matua Ngahere, the two largest living kauri, each a short boardwalk off State Highway 12.",
+  "question_meta": "Te Matua Ngahere in Waipoua Forest is reckoned the oldest at over 2,000 years, with Tāne Mahuta estimated at 1,250 to 2,500 years.",
+  "question_answer": "The oldest tree in Waipoua Forest is Te Matua Ngahere, which the Department of Conservation estimates at over 2,000 years, ahead of its more famous neighbour Tāne Mahuta at somewhere between 1,250 and 2,500. Neither number is measured: coring a living kauri is not an option, so every figure here is an estimate, and the published spread for Te Matua Ngahere alone runs from 1,200 to 4,000 years.\n\nThey are different trees to stand in front of. Tāne Mahuta is the size claim, 45.2 metres tall and 15.44 metres round by Dr Robert Van Pelt's 2002 measurement, the largest living kauri known, reached by a 166 metre boardwalk. Te Matua Ngahere is shorter at 29.9 metres and thicker at 16.41 metres round, a barrel of a trunk at the end of a 730 metre walk from a different car park four kilometres down the road.\n\nA third named group, the Four Sisters, leaves that same car park and is currently closed. Kauri dieback is a soil-borne disease with no cure, it has been found in this forest, and closing tracks is one of the few things that slows it. It is also why both open walks have wash stations at the entrance and decking the whole way to the tree.",
+  "question_context": "Both walks leave State Highway 12 and both are free. The Tāne Mahuta boardwalk is 166 metres, about five minutes each way, flat and usable with a wheelchair or a buggy, open 9am to 3pm. Te Matua Ngahere is 730 metres and around twenty minutes each way from the Kauri Walks car park, open 9am to 4pm, ending at a platform about ten metres from the trunk. The two car parks are four kilometres apart, so you drive between them, roughly three minutes, rather than walking through the forest.\n\nClean your shoes at the station at each entrance and stay on the boardwalk the whole way. Kauri roots run wide and shallow just under the leaf litter, and dieback spreads in the soil on footwear. The Four Sisters walk from the Kauri Walks car park is closed for the same reason. The Tāne Mahuta track reopened in December 2024 with a new boardwalk, bridge and platform, blessed at dawn by Te Roroa, the tree's guardians. There is no public transport out here: the forest is reached by car, about an hour north of Dargaville.",
+  "faq": [
+    {
+      "q": "Which tree in Waipoua Forest is the oldest?",
+      "a": "Te Matua Ngahere, which the Department of Conservation estimates at over 2,000 years, though published figures for it run from 1,200 to 4,000. Tāne Mahuta is put at 1,250 to 2,500. A living kauri cannot be cored, so every number is an estimate."
+    },
+    {
+      "q": "How big are they?",
+      "a": "Tāne Mahuta is the largest known kauri, 45.2 metres tall and 15.44 metres round, measured in 2002. Te Matua Ngahere is shorter at 29.9 metres and thicker at 16.41 metres, from a 1971 survey the department still quotes."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Both walks are free and signposted off State Highway 12, from car parks four kilometres apart. Tāne Mahuta opens 9am to 3pm, Te Matua Ngahere 9am to 4pm. There is no public transport; Dargaville is about an hour south."
+    },
+    {
+      "q": "What are the cleaning stations for, and is the Four Sisters walk open?",
+      "a": "They stop kauri dieback, a soil-borne disease with no cure that travels on footwear. Scrub on the way in and stay on the decking. The Four Sisters walk, from the same car park as Te Matua Ngahere, is closed for the same reason."
+    }
+  ],
+  "oldest_tree_id": "wai_001",
+  "trees": [
+    {
+      "id": "wai_001",
+      "name": "Tāne Mahuta",
+      "species": "Kauri (Agathis australis)",
+      "age_estimate": "estimated 1,250 to 2,500 years old; age is not precisely measurable",
+      "age_min": 1250,
+      "age_max": 2500,
+      "location": {
+        "address": "Tāne Mahuta Walk car park, State Highway 12, Waipoua Forest, Northland, New Zealand",
+        "latitude": -35.60111,
+        "longitude": 173.5272,
+        "neighbourhood": "Waipoua Forest, signposted directly off SH12"
+      },
+      "story": "Everyone who walks to the largest known kauri in New Zealand scrubs their shoes first. The boardwalk is 166 metres long, takes five minutes, and never touches the ground, because kauri dieback disease travels in the soil people carry on their soles and this tree's roots run wide and shallow just under the leaf litter.\n\nTāne Mahuta means Lord of the Forest. Dr Robert Van Pelt measured it in 2002 at 15.44 metres round and 45.2 metres tall, with 255 cubic metres of trunk. The Department of Conservation's own page gives 13.77 metres round and 51.2 metres tall and does not say when that was taken, so read the figures as a range rather than a record. The age is an estimate by necessity, since nobody is going to core a tree like this: the usual published span is 1,250 to 2,500 years.\n\nEither way it was mature long before the first European ship appeared off Northland, and it stood through the nineteenth-century kauri trade that took almost every other tree of its size in the country. What is left of that forest is largely what is around it.\n\nThe track closed in late 2024 for a new boardwalk, bridge and viewing platform, and reopened that December with a dawn blessing by Te Roroa, who hold guardianship over the tree. Free, open 9am to 3pm, signposted straight off State Highway 12.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/T%C4%81ne_Mahuta",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/northland/places/waipoua-forest/things-to-do/tane-mahuta-walk/",
+        "https://www.doc.govt.nz/news/media-releases/2024-media-releases/tane-mahuta-reopens-with-blessing/"
+      ],
+      "access": "Free. A short, easy, wheelchair- and buggy-accessible boardwalk (166 m, about 5 minutes one way) from a roadside car park directly off State Highway 12, open 9am-3pm daily (hours can shift seasonally, check DOC's page). A mandatory shoe/gear cleaning station sits at the entrance to stop kauri dieback disease spreading; visitors must stay on the boardwalk at all times to protect the tree's shallow, disease-vulnerable roots.",
+      "transport": "No public transport; reached by car on SH12. Roughly 65 km / under an hour from Dargaville to the south, 18 km from Omapere to the north.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 1544,
+      "height_m": 45.2
+    },
+    {
+      "id": "wai_002",
+      "name": "Te Matua Ngahere",
+      "species": "Kauri (Agathis australis)",
+      "age_estimate": "commonly cited as exceeding 2,000 years; published estimates range much wider and are unverifiable",
+      "age_min": 1200,
+      "age_max": 4000,
+      "location": {
+        "address": "Te Matua Ngahere Walk, accessed from the Kauri Walks car park, State Highway 12, Waipoua Forest, Northland, New Zealand",
+        "latitude": -35.6075,
+        "longitude": 173.52861,
+        "neighbourhood": "Waipoua Forest, about 4 km / 3 minutes' drive south of the Tane Mahuta car park"
+      },
+      "story": "In July 2007 a storm brought down a tree that had been growing on top of this one. A rātā had established itself as an epiphyte in the crown of Te Matua Ngahere, and when it went it took the kauri's central leader and several branches with it. The New Zealand Herald ran the story as Storm takes heart of forest king, and foresters reckoned it had shortened the tree's life by a few hundred years. It is still standing and still draws roughly 50,000 people a year.\n\nThe name means Father of the Forest, and the shape is the point. It is not tall: 29.9 metres against Tāne Mahuta's 45. But the trunk measures 16.41 metres round, thicker than any other tree in New Zealand, a barrel that stops rather than tapers. Those figures come from a 1971 Forest Service survey and the Department of Conservation still prints them, which makes them the best anyone has, not the newest.\n\nIts age is out of reach. DOC says over 2,000 years; other published estimates run from 1,200 to 4,000, and no one is going to core a living kauri to find out.\n\nThe walk is 730 metres from the Kauri Walks car park, about twenty minutes, ending at a platform ten metres short of the trunk. The Four Sisters walk leaves the same car park and is closed to keep dieback out. Tāne Mahuta is four kilometres up the road, a three-minute drive rather than a forest path.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Te_Matua_Ngahere",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/northland/places/waipoua-forest/things-to-do/te-matua-ngahere-walk/"
+      ],
+      "access": "Free. A 730 m, roughly 20-minute walk on a well-maintained, partly boardwalked track from the Kauri Walks car park off SH12, open 9am-4pm daily. Ends at a viewing platform about 10 m from the trunk; visitors must stay on the track and use the mandatory boot-cleaning wash stations to protect the tree from kauri dieback disease.",
+      "transport": "No public transport; reached by car on SH12, about 61 km from Dargaville and 21 km from Omapere. Shares the same car park area as the Four Sisters and Yakas Kauri walks, though those two are currently closed (see fam blocked note).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 1641,
+      "height_m": 29.9
+    }
+  ]
+}

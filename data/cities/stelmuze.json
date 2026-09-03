@@ -1,0 +1,62 @@
+{
+  "city": "Stelmužė",
+  "country": "Lithuania",
+  "status": "needs_curation",
+  "intro": "Stelmužė is a village of a few houses in Zarasai district, in the north-eastern corner of Lithuania near the Latvian border. It has two things worth the drive, and they stand a few steps apart: the oldest surviving wooden church in the country, built in the 17th century, and in the old manor park beside it, the oldest oak in Lithuania. The oak is a national monument in the literal sense, printed on coins and on stamps, and it is why anyone comes out this far.",
+  "meta_description": "Stelmužė in north-east Lithuania holds the country's oldest oak, at least 1,500 years old, beside the oldest wooden church in Lithuania.",
+  "question_meta": "The Stelmužė Oak is Lithuania's oldest tree: at least 1,500 years, possibly 2,000, and too hollow for anyone to count its rings.",
+  "question_answer": "The oldest tree in Stelmužė is its oak, and it is the oldest in Lithuania: at least 1,500 years, possibly as much as 2,000. Nobody can be more precise than that, because the inside of the trunk decayed away long ago and there are no rings left to count.\n\nThe hollow is large enough to have hidden things. During restoration work a rifle and a human skeleton were found inside it, believed to be a French soldier from Napoleon's retreat from Russia in 1812. Measurements depend on where the tape goes: 13 metres around at the widest point of the trunk, 9.58 metres at chest height, which is the standard forestry measurement. Total height is about 23 metres.\n\nThis is a veteran being kept alive rather than a thriving oak. Fungi and moss have colonised what is left of the outer wood, the crown is long gone, and only side branches still leaf out. A Czech arborist, Martin Němec, has monitored it since 2005 under a long-term maintenance plan, new supports went in during March 2021, and a branch broke off at the end of that same month. Lithuania has put the tree on a commemorative coin and on postage stamps, and an oak raised from its acorns grows in the National Revival grove beside the birthplace of Jonas Basanavičius.",
+  "question_context": "The oak stands in the old manor park beside the wooden church, in the open, in the middle of a very small village. It is a protected national natural monument and reads as an open-air village landmark rather than a ticketed site. Nothing we can find lists an entry fee or opening hours; if you meet a gate or a charge, tell us and we will fix it here.\n\nGetting there means a car. Stelmužė sits in Zarasai district in north-eastern Lithuania, close to the Latvian border, with no station and no regular bus, and Zarasai town is the nearest place to base yourself. Give the church its ten minutes while you are there: it is the oldest wooden church in the country and stands a few paces from the tree. The oak has supports under its remaining limbs and a fence around it, so the visit is a slow walk around and a long look rather than anything closer.",
+  "faq": [
+    {
+      "q": "How old is the Stelmužė Oak?",
+      "a": "At least 1,500 years and possibly 2,000, which makes it the oldest oak in Lithuania. That is a standing assessment rather than a ring count: the interior of the trunk decayed away long ago and there is nothing left to count."
+    },
+    {
+      "q": "How big is it?",
+      "a": "Thirteen metres round at the widest point of the trunk, and 9.58 metres at chest height, which is the standard forestry measurement. Both figures get quoted, and both are right. It stands about 23 metres tall."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "By car. Stelmužė is a small village in Zarasai district near the Latvian border, with no station and no regular bus. Nothing we can find lists a fee or opening hours, and it reads as an open village landmark. If you meet a gate, tell us."
+    },
+    {
+      "q": "Was a skeleton really found inside the trunk?",
+      "a": "A rifle and human remains were found in the hollow during restoration work, and the accepted reading is a French soldier from Napoleon's retreat in 1812. The hollow is simply the result of the whole interior rotting out."
+    }
+  ],
+  "oldest_tree_id": "ste_001",
+  "trees": [
+    {
+      "id": "ste_001",
+      "name": "The Stelmužė Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "at least 1,500 years old, possibly as much as 2,000",
+      "age_min": 1500,
+      "age_max": 2000,
+      "location": {
+        "address": "Former Stelmužė Manor park, next to the Stelmužė Church of St Anne, Stelmužė village, Zarasai district, Lithuania",
+        "latitude": 55.82986,
+        "longitude": 26.2173,
+        "neighbourhood": "Stelmužė village, in the old manor park beside the wooden church"
+      },
+      "story": "Restorers working on the trunk found a rifle and a human skeleton inside it, thought to belong to a French soldier left behind by Napoleon's retreat from Russia in 1812. The Stelmužė Oak is hollow enough to hide a man, and has been for a long time: the whole interior has rotted away, which is exactly why nobody can count its rings and nobody ever will.\n\nThe standing estimate is at least 1,500 years and possibly 2,000, making it the oldest oak in Lithuania and one of the oldest in Europe. Measured at its widest the trunk is 13 metres round; measured at chest height, the way foresters normally work, it is 9.58 metres. Both numbers are correct and they describe the same tree. It stands about 23 metres tall.\n\nThis is not a healthy oak and has not been for centuries. Fungi and moss have taken the outer wood, the crown is gone, and only side branches still carry leaves. A Czech arborist, Martin Němec, has monitored and maintained it since 2005 under a long-term plan; new supports went in during March 2021, and a branch came down at the end of that same month regardless.\n\nLithuania puts the tree on coins and stamps, and an oak raised from its acorns grows in the National Revival grove beside the birthplace of Jonas Basanavičius. It stands in the old manor park next to a 17th-century wooden church, the oldest in the country.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Stelmu%C5%BE%C4%97_Oak",
+        "https://www.treeoftheyear.org/news/the-stelmuze-oak-a-living-elder-at-the-edge-of-time"
+      ],
+      "access": "A protected national natural monument standing in a public village setting beside a historic church (Lithuania's oldest surviving wooden church, built in the 17th century); no source found in this pass mentions an entry fee or restricted hours, consistent with it being an open-air village landmark rather than a ticketed site. Not independently confirmed with opening hours from an official tourism page this pass (visitzarasai.lt's specific page returned a 404 and lithuania.travel's page did not yield fetchable content in the time available); flagging this as a gap for a future pass or the writer to double check rather than asserting hours we do not have.",
+      "transport": "No train station; Stelmužė is a small village in Zarasai district, north-eastern Lithuania, reached by car. Zarasai town is the nearest larger centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 1300,
+      "height_m": 23
+    }
+  ]
+}

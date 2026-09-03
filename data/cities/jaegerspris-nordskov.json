@@ -1,0 +1,71 @@
+{
+  "city": "Jægerspris Nordskov",
+  "country": "Denmark",
+  "status": "needs_curation",
+  "intro": "Jægerspris Nordskov is old forest on the north coast of Hornsherred in Zealand, owned by the foundation that runs Jægerspris castle. It is known for three oaks so old they were given a collective name, De tusindårige ege, the thousand-year oaks. Two of them are dead, Storkeegen since 1980 and Snoegen since 1991. The third, Kongeegen, is still alive: hollow, propped up, estimated at 1,500 to 2,000 years, and the reason people walk into this forest at all.",
+  "meta_description": "Jægerspris Nordskov in Zealand holds Kongeegen, the King Oak, hollow and propped and estimated at 1,500 to 2,000 years. Free forest, fenced tree.",
+  "question_meta": "Kongeegen, the King Oak, is the oldest tree in Jægerspris Nordskov: a 1965 tree-ring study estimated 1,500 to 2,000 years.",
+  "question_answer": "The oldest tree in Jægerspris Nordskov is Kongeegen, the King Oak, estimated at 1,500 to 2,000 years by a tree-ring investigation in 1965. That makes it, by most accounts, the oldest oak in northern Europe, and the estate foundation that owns the forest still writes about it in the present tense: the oldest tree, still alive.\n\nIt is the survivor of three. The forest's famous group, De tusindårige ege, also held Storkeegen and Snoegen, and the foundation records both as dead, in 1980 and 1991. Kongeegen itself is a hollow shell standing on supports. At its largest the trunk was four metres across and fourteen metres round; the last main branch broke off in 1973, and half the shell and a side branch have gone since, so the Danish Dendrological Society's measurement of 12.55 metres describes a tree already past its own maximum. The crown, for something this age, is in surprisingly good order.\n\nThe name comes from Frederik VII, who lived at Jægerspris Slot from 1854 and had the first supports put under it. The story locally is that the king and Countess Danner could sit side by side on horseback inside the trunk. A graft taken from the oak was planted in the castle park in 1986.",
+  "question_context": "The forest is public, free and open, reached from Strandvejen north of Jægerspris town. There is no station in Jægerspris; the nearest is Frederikssund, a short drive away, and most people arrive by car or bicycle and walk in from there. Signs in the forest point to De tusindårige ege.\n\nThe tree itself is fenced. The foundation that manages the forest does not allow anyone to walk or ride up to the trunk, so you look from outside the fence, which is close enough to see the props underneath it and the open side of the shell. That fence is the reason there is still something to look at: an oak in this condition does not survive people leaning on it. Give it an easy afternoon, and if you want the rest of the story, the castle and its park are a short distance away, with the 1986 graft of the oak growing there.",
+  "faq": [
+    {
+      "q": "How old is Kongeegen?",
+      "a": "A tree-ring investigation in 1965 estimated 1,500 to 2,000 years, and both Wikipedia and the estate foundation quote that same range. It would make this the oldest oak in northern Europe, though the figure rests on one study rather than several."
+    },
+    {
+      "q": "How big is it?",
+      "a": "The Danish Dendrological Society measures the trunk at 12.55 metres round. At its largest it was four metres across and fourteen metres round, before the last main limb came down in 1973 and more of the shell followed."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free. The forest is public, reached from Strandvejen north of Jægerspris town by car or bicycle and then on foot; the nearest station is Frederikssund. The tree is fenced, so you look from outside rather than walking up to the trunk."
+    },
+    {
+      "q": "Are the other famous oaks still standing?",
+      "a": "No. Storkeegen died in 1980 and Snoegen in 1991, so of the three thousand-year oaks only Kongeegen is left. A graft taken from it grows in the castle park, planted there in 1986."
+    }
+  ],
+  "oldest_tree_id": "jae_001",
+  "trees": [
+    {
+      "id": "jae_001",
+      "name": "Kongeegen (the King Oak)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "estimated 1,500 to 2,000 years old, based on a 1965 tree-ring investigation",
+      "age_min": 1500,
+      "age_max": 2000,
+      "location": {
+        "address": "Jægerspris Nordskov (Jægerspris North Forest), north of Strandvejen, near Jægerspris, Sjælland, Denmark",
+        "latitude": 55.91035,
+        "longitude": 11.98927,
+        "neighbourhood": "Jægerspris Nordskov forest, managed by Kong Frederik den Syvendes Stiftelse (the Jægerspris Slot estate foundation)"
+      },
+      "story": "Three ancient oaks made this forest famous. Two of them are dead, Storkeegen since 1980 and Snoegen since 1991, and the third is the reason to come. Kongeegen, the King Oak, is a hollow shell held upright by supports, and the foundation that owns the forest still writes about it in the present tense: the oldest tree, still alive.\n\nA tree-ring investigation in 1965 put it at 1,500 to 2,000 years, which would make it the oldest oak in northern Europe. The estate's own page enjoys the thought that it may have sprouted around year zero.\n\nIt was larger once. At its peak the trunk was four metres across and fourteen metres round. The last main limb broke off in 1973, and half the shell and a side branch have gone since, so the Danish Dendrological Society's figure of 12.55 metres describes a tree already past its own maximum. The crown, for something this old, is in surprisingly good order.\n\nThe name comes from Frederik VII, who lived at Jægerspris Slot from 1854 and had the first props installed under it. Local telling has the king and Countess Danner sitting side by side on horseback inside the hollow trunk. In 1986 Prince Henrik planted a graft taken from it in the castle park, so there is a young copy of this tree a short distance away.\n\nThe forest is open and free. The tree is fenced, and you look at it from outside.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Kongeegen",
+        "https://kongfrederik.dk/skov/de-tusindaarige-ege/",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=418"
+      ],
+      "access": "Free, publicly accessible forest, but the tree itself is fenced off: visitors may not walk or ride up to the trunk, only view it from outside the protective fence, per the managing foundation's own current website. Reachable on foot through the North Forest; no ticket or booking needed.",
+      "transport": "No train station in Jægerspris; reached by car or bicycle via Strandvejen north of the town, then on foot into the forest. Nearest larger town/station is Frederikssund, a short drive away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 1255,
+      "best_time": {
+        "months": [
+          12,
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "midwinter, when the leaves are off and the props and the open trunk are fully visible"
+      }
+    }
+  ]
+}

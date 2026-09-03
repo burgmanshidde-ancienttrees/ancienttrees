@@ -1,0 +1,62 @@
+{
+  "city": "Fortingall",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Fortingall is a handful of thatched cottages in a Perthshire glen twenty minutes west of Aberfeldy, with a church, a hotel and one of the oldest living things in Britain. The yew in the churchyard was ancient long before the church went up beside it, and the village has spent two centuries protecting it: the stone wall around it dates from 1785, when visitors were cutting souvenirs off the trunk. There is one tree here worth the drive, and it is enough.",
+  "meta_description": "The Fortingall Yew stands in a Perthshire churchyard, somewhere between 2,000 and 5,000 years old and walled off since 1785 against souvenir hunters.",
+  "question_meta": "Fortingall's oldest tree is its churchyard yew: estimates run from 2,000 to 5,000 years, and no ring count is possible because the heartwood is gone.",
+  "question_answer": "The oldest tree in Fortingall is the yew in the churchyard, and it is old enough that serious sources disagree by three thousand years. Forestry and Land Scotland puts it at 5,000; Bevan-Jones, the standard reference on ancient yews, gives 2,000 to 3,000 and notes it could date from a post-Roman Christian site here, which would make it about 1,500.\n\nNobody can close that gap. Yews hollow as they age, and this one's heartwood was already rotting in the 1770s, so there are no rings left to count and never will be. What the record does hold is size. Daines Barrington measured a single continuous trunk at 52 feet round in 1769, roughly 15.8 metres, and Thomas Pennant made it more shortly after. That trunk has since split, and what a visitor sees now is a ring of separate stems that are all one tree.\n\nIt is still growing and still changing. In 2015 the Royal Botanic Garden Edinburgh reported that a branch on this male yew had begun bearing berries, a partial change of sex that made news well beyond Perthshire. Nothing else in the village comes close in age, and nothing needs to: people drive up the glen for this one tree.",
+  "question_context": "The churchyard sits in the middle of the village, open in daylight, with no ticket and nobody to ask. The yew is behind a low stone wall put up in 1785 after visitors took to cutting pieces off it, and the gate in that wall stays locked, so you cannot touch the tree. You can stand a couple of metres away on the churchyard path and see the whole of it, which is what people come for.\n\nReaching Fortingall takes a car. It is about eight miles west of Aberfeldy, twenty to twenty-five minutes on narrow roads at the mouth of Glen Lyon, and no regular bus serves the village. There is parking by the church. Bring waterproofs: this is highland Perthshire and the glen makes its own weather. The church itself, Fortingall Kirk, is usually open, and the churchyard also holds a set of early Christian carved stones worth a minute of anyone's time. Do not expect an interpretation centre or a shop: the village is a row of thatched cottages, a hotel and the kirk, and that is all of it.",
+  "faq": [
+    {
+      "q": "How old is the Fortingall Yew really?",
+      "a": "Nobody can say, and the honest answer is a spread. Forestry and Land Scotland puts it at 5,000 years; the standard academic reference on ancient yews gives 2,000 to 3,000, with a low case near 1,500. The heartwood is long gone, so no ring count is possible."
+    },
+    {
+      "q": "How big is it?",
+      "a": "The single trunk was measured at 52 feet round, about 15.8 metres, in 1769. Decay has since split it into separate stems, so nothing standing there today measures anything like that on its own."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free, open in daylight, nobody to ask. Fortingall is eight miles west of Aberfeldy in Perthshire, twenty to twenty-five minutes by car, with parking at the church. No regular bus serves the village."
+    },
+    {
+      "q": "Was Pontius Pilate really born here?",
+      "a": "No. It is a local legend that historians dismissed long ago, and it has no bearing on the tree. It does still bring people up the glen, which is the only reason it is worth mentioning."
+    }
+  ],
+  "oldest_tree_id": "for_001",
+  "trees": [
+    {
+      "id": "for_001",
+      "name": "The Fortingall Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "estimates range from roughly 2,000 to 5,000 years",
+      "age_min": 2000,
+      "age_max": 5000,
+      "location": {
+        "address": "Fortingall churchyard, Fortingall, Perthshire PH15 2NQ, Scotland",
+        "latitude": 56.59823,
+        "longitude": -4.05093,
+        "neighbourhood": "Fortingall village churchyard"
+      },
+      "story": "In 2015 a tree that had been male for as long as anyone had recorded it grew berries on a single branch. The Royal Botanic Garden Edinburgh reported the change, and beyond the novelty it was proof that the Fortingall Yew is a working organism rather than a standing relic.\n\nIts age is genuinely disputed and always will be. Forestry and Land Scotland says 5,000 years. Bevan-Jones, the standard academic reference on ancient yews, gives 2,000 to 3,000 and allows that the tree may only date from a post-Roman Christian site here, which would make it around 1,500. Nobody can settle it, because the heartwood rotted out centuries ago and there are no rings left to count.\n\nThere was once a single trunk, and it was enormous. Daines Barrington measured it at 52 feet round in 1769, about 15.8 metres, and Thomas Pennant made it more a few years later. By 1770 the decay was already splitting it apart. What stands today reads as a small grove of separate stems, all of them one tree.\n\nThe wall around it went up in 1785 because visitors kept cutting pieces off for souvenirs, and they have not entirely stopped: the local tree warden was complaining about it in 2019. Village tradition makes this the birthplace of Pontius Pilate, which historians dismissed long ago, and which still brings people up the glen.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Fortingall_Yew",
+        "https://scotlands-yew-trees.org/yewtree/fortingall/",
+        "https://stories.rbge.org.uk/archives/17622"
+      ],
+      "access": "Free. Stands inside the churchyard, behind a low wall erected in 1785 to protect it from souvenir-taking; the gate in the wall is kept locked so it cannot be touched, but it is easily viewed and photographed from the churchyard path, which is open in daylight hours.",
+      "transport": "No station; Fortingall is a small village about 8 miles / 20-25 minutes by car west of Aberfeldy, Perthshire. No regular public bus serves the village itself.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 1585
+    }
+  ]
+}

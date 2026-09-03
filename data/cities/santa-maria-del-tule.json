@@ -1,0 +1,62 @@
+{
+  "city": "Santa María del Tule",
+  "country": "Mexico",
+  "status": "needs_curation",
+  "intro": "Santa María del Tule is a small town nine kilometres east of Oaxaca city on the road to Mitla, and its whole reputation stands in the church courtyard. The Montezuma cypress there has the stoutest trunk ever measured on any tree, wide enough that botanists once assumed it had to be several trees grown into one. Second-class buses run out from the city every ten minutes, the town has arranged itself around the visit, and the tree is close enough to walk a full circle around.",
+  "meta_description": "Santa María del Tule, nine km from Oaxaca city, holds the stoutest tree trunk ever measured: a Montezuma cypress of 42 to 54 metres around.",
+  "question_meta": "El Árbol del Tule is the oldest tree in Santa María del Tule, estimated at 1,400 to 1,600 years, with published claims running from 1,200 to 3,000.",
+  "question_answer": "The oldest tree in Santa María del Tule is El Árbol del Tule, the Montezuma cypress in the church courtyard, and the most defensible estimate puts it at roughly 1,400 to 1,600 years. That figure comes from growth-rate work going back to Conzatti in 1921 and agrees with Zapotec oral history; published estimates elsewhere run from 1,200 to 3,000 years, and popular accounts round it up to over two thousand without saying how they arrived there.\n\nIts fame is really about width rather than age. A laser-assisted survey in 2005 measured the circumference at 42 metres. Planeta's visitor guide gives 54. Neither is wrong: the trunk is a mass of buttresses and lobes, and a tape that follows every fold reads much longer than one stretched across them, which is why the Gymnosperm Database smooths it to a 9.38 metre diameter when setting it against the giant sequoias that contest the title.\n\nFor a long time botanists assumed a trunk like that had to be several trees fused together. DNA testing in the 1990s showed one individual. The same 2005 survey put the height at 35.4 metres, lower than the 41 to 43 metres quoted before it, which says something about how much of the older reporting was estimate rather than measurement.",
+  "question_context": "The tree stands in the courtyard of the parish church in the middle of town. There is a small charge to enter the courtyard itself, and it is open daily like any other town-centre attraction. From Oaxaca city, second-class buses leave for Tule every ten minutes from the second-class terminal; a taxi or colectivo takes about twenty minutes, and it is a comfortable half-hour bike ride if you would rather.\n\nWalk around it rather than standing in front of it. The trunk changes completely as you move, and local children make a business of pointing out the animals people read in the buttresses. The town holds its festival for the tree on the second Monday of October. One thing worth knowing before you go: the aquifer under it can drop more than six metres in the dry season, and keeping this tree alive is active, funded and sometimes contested local work rather than a settled matter.",
+  "faq": [
+    {
+      "q": "How old is El Árbol del Tule?",
+      "a": "Growth-rate work and Zapotec oral history both land around 1,400 to 1,600 years. Published estimates run from 1,200 to 3,000, with an outlier claim of 6,000 that nothing supports. Popular accounts tend to say over two thousand without giving a method."
+    },
+    {
+      "q": "How wide is the trunk?",
+      "a": "Between 42 and 54 metres round, depending on the source and on whether the tape follows the buttresses. The 2005 laser survey gives 42 metres, and put the height at 35.4 metres against the 41 to 43 quoted before it."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "There is a small charge for the church courtyard it stands in, open daily. Second-class buses leave Oaxaca city for Tule every ten minutes, a taxi or colectivo takes about twenty, and the nine kilometres are an easy half-hour by bike."
+    },
+    {
+      "q": "Is it one tree or several grown together?",
+      "a": "One. The deeply lobed trunk kept a fusion theory alive for decades, and DNA testing in the 1990s ruled it out. It is a single Montezuma cypress."
+    }
+  ],
+  "oldest_tree_id": "tul_001",
+  "trees": [
+    {
+      "id": "tul_001",
+      "name": "El Árbol del Tule",
+      "species": "Montezuma Cypress (Taxodium mucronatum)",
+      "age_estimate": "widely reported as roughly 1,400 to 1,600 years old on growth-rate grounds, though popular sources often round it to 'over 2,000'",
+      "age_min": 1200,
+      "age_max": 3000,
+      "location": {
+        "address": "Church grounds (atrio of the Templo de Santa María de la Asunción), town center of Santa María del Tule, Oaxaca, Mexico, on the road toward Mitla, about 9 km east of Oaxaca city",
+        "latitude": 17.04662,
+        "longitude": -96.63346,
+        "neighbourhood": "Santa María del Tule town center, church courtyard"
+      },
+      "story": "Its trunk is so wide that botanists long assumed it had to be several trees fused together. DNA work in the 1990s settled the argument: one Montezuma cypress, one individual, standing in a church courtyard in a small Oaxacan town.\n\nHow wide depends on who measured and how. A laser-assisted survey in 2005 put the circumference at 42 metres. Planeta's visitor guide gives 54. The gap is not carelessness. The trunk is a mass of buttresses and lobes, so a tape that follows every fold reads far longer than one pulled across them, and the Gymnosperm Database smooths the buttressing out to a diameter of 9.38 metres in order to compare it fairly with the giant sequoias that contest the same title.\n\nThe age is disputed too. Growth-rate work going back to Conzatti in 1921, and Zapotec oral history, both land around 1,400 to 1,600 years. Published estimates elsewhere run from 1,200 to 3,000, and the local press tends to round it up to over two thousand without saying how it got there. The same 2005 survey measured the tree at 35.4 metres tall, well under the 41 to 43 metres cited before anyone brought a laser.\n\nThe live story now is water. The aquifer beneath it can drop more than six metres in the dry season, worsened by a highway and by irrigation. In October 2025 state officials held a ceremony at the tree, ran sonic tomography on its trunk and certified it as protected.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/%C3%81rbol_del_Tule",
+        "https://www.planeta.com/tule-tree/",
+        "https://www.ciudadania-express.com/2025/medio-ambiente/certifican-a-30-arboles-nobles-e-historicos-de-oaxaca-"
+      ],
+      "access": "Small paid entrance fee to the church courtyard where the tree stands (per Planeta.com's visitor guide); open daily as a standard tourist site in the town center, not restricted. Local festivities are held around it, notably the second Monday of October.",
+      "transport": "Second-class buses run every 10 minutes from Oaxaca city's second-class bus station direct to Santa María del Tule; also reachable by a roughly half-hour bike ride or short taxi/collectivo from Oaxaca city centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "girth_cm": 4200
+    }
+  ]
+}
