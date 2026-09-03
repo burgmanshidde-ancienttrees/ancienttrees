@@ -275,10 +275,58 @@ def body_of(text):
     return parts[1] if len(parts) > 1 else text
 
 
+APP_LINK_RULED = 1788386400  # 2026-09-03 00:00, the day he ruled it
+APP_STORE_URL = "https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB"
+
+# People who have told us the app is not for them. Hidde, 2026-09-03, adding
+# the standing App Store line: "behalve naar paulo die heeft gezegd dat ie geen
+# tel heeft." Paulo Araujo said so himself on 2026-09-02, cheerfully, and a mail
+# that invites him again reads as not having listened. A name comes off this
+# list only when the person says otherwise.
+NO_APP_LINK = {
+    "dias.com.arvores@sapo.pt": "has no smartphone, said so on 2026-09-02",
+}
+
+
+def check_app_link(path, text, body):
+    """Every outbound mail carries the App Store link from 2026-09-03.
+
+    Hidde, that day: "onze app staat live dus vertel dat en we zijn beniewud
+    wat ie er van vindt", then "stuur dat nu altijd maar mee met de komende
+    mailtjes". It is a standing instruction rather than one mail, so it is a
+    check: a rule I have to remember is a rule that survives two drafts.
+
+    Only a real letter is measured (a file with no --- separator is a
+    reference or a template collection), and the link counts however it is
+    written, since the id is the part that cannot be typed wrong. Anyone in
+    NO_APP_LINK is exempt: they have already told us they cannot use it."""
+    if not BODY_SPLIT.search(text):
+        return []
+    if "6806177833" in body:
+        return []
+    for addr in NO_APP_LINK:
+        if addr in text:
+            return []
+    # The instruction is dated, so it cannot apply backwards, and the ledger
+    # cannot tell us which old drafts still owe a send: his_reply_date is
+    # filled on 22 of 31 rows and Sonsbeek is undated while sitting in
+    # outreach-sent.json. So the file's own date decides, and anything written
+    # before that morning is history.
+    try:
+        if os.path.getmtime(path) < APP_LINK_RULED:
+            return []
+    except OSError:
+        pass
+    return [("NO APP STORE LINK", "missing",
+             "his standing instruction of 2026-09-03: the app is live, say so "
+             "and ask what they think. " + APP_STORE_URL)]
+
+
 def check(path):
     text = open(path, encoding="utf-8").read()
     body = body_of(text)
     hits = list(check_reply_length(path, body))
+    hits += check_app_link(path, text, body)
     for label, patterns in CHECKS:
         for pat in patterns:
             for m in re.finditer(pat, body, re.I):
