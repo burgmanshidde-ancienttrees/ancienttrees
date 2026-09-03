@@ -1,0 +1,38 @@
+---
+/* The App Store button, which is Apple's own artwork and never ours.
+ *
+ * Convention: Apple publishes this badge and the rules for it (CONVENTIONS.md
+ * 2026-09-03). A sign-in or store button is the most convention-bound control
+ * there is, because its whole job is to be recognised in a tenth of a second
+ * by somebody who has seen it a thousand times elsewhere. Hidde, 2026-08-20:
+ * "altijd conventies volgen geen eigen ideeen." So we ship the file Apple
+ * serves rather than a pill of our own with the words typed into it.
+ *
+ * Localised per language, from Apple's own badge service, because the badge
+ * carries its own text: a Dutch page with an English badge is the same
+ * half-translated fault the site already fixed once in its own components.
+ *
+ * Apple's rules that the markup has to honour: the badge keeps its aspect
+ * ratio, nothing is drawn over it, and it is at least 40 points tall on a
+ * phone. The alt text says what the control does rather than describing the
+ * picture.
+ */
+import { APP_STORE_URL } from "../lib/site-config";
+import { ui } from "../lib/i18n";
+
+interface Props {
+  lang?: string;
+  /** The analytics event, so a badge in the walks overlay and one on /app do
+   *  not become the same row. */
+  ev?: string;
+  class?: string;
+}
+const { lang = "en", ev = "app-cta", class: klass = "" } = Astro.props;
+const badges = new Set(["en", "es", "it", "nl", "de", "pt", "fr", "ja"]);
+const file = badges.has(lang) ? lang : "en";
+const t = ui(lang);
+---
+<a class:list={["appstore-badge", klass]} href={APP_STORE_URL} data-ev={ev}
+   target="_blank" rel="noopener">
+  <img src={`/assets/appstore/${file}.svg`} alt={t.appStoreBadge} width="120" height="40" />
+</a>

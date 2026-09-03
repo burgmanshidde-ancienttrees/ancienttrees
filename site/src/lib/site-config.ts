@@ -30,6 +30,19 @@ export const CONTACT_EMAIL = "info@ancienttrees.app";
 // sponsor page and no footer link, so nothing half-built ever faces a reader.
 export const SPONSOR_URL = "https://ko-fi.com/ancienttrees";
 
+// The iOS app, live in the App Store since 2026-09-03 (id looked up through
+// Apple's own iTunes lookup rather than remembered). Two things read this: the
+// smart app banner in Base.astro, and every download button on the site.
+//
+// The team id is the other half of the pair and it belongs to the universal
+// links rather than to any page: it is what
+// site/public/.well-known/apple-app-site-association hands Apple so the OS
+// knows this domain and that app are the same product.
+export const APP_STORE_ID = "6806177833";
+export const APP_STORE_URL = `https://apps.apple.com/app/id${APP_STORE_ID}`;
+export const APP_BUNDLE_ID = "app.ancienttrees.AncientTrees";
+export const APPLE_TEAM_ID = "5EWWC3M8L2";
+
 export const TITLE_MAX = 60;
 export const DESC_MAX = 155;
 // The floor a generated description should reach before it is allowed to stop

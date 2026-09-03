@@ -17,6 +17,7 @@ import {
   SUPABASE_KEY,
   ANALYTICS_TOKEN,
   SPONSOR_URL,
+  APP_STORE_ID,
   TITLE_MAX,
   DESC_MAX,
 } from "../lib/site-config";
@@ -61,6 +62,22 @@ const year = new Date().getFullYear();
 <title>{title}</title>
 <meta name="description" content={description}>
 <link rel="canonical" href={canonical}>
+{/* Apple's smart app banner. Safari on iOS draws it itself, above the page,
+    at a height Apple chooses, and a person can dismiss it for good.
+
+    Convention, measured on 2026-09-03 rather than remembered (CONVENTIONS.md,
+    "Sending a mobile visitor to the app"): komoot and iNaturalist ship exactly
+    this tag; AllTrails, Reddit and Pinterest ship a full-screen sheet of their
+    own instead. We take Apple's, because the sheet is the one thing Google
+    names as an intrusive interstitial and search is the only channel this site
+    has. Apple's banner is Google's own stated exception to that rule.
+
+    app-argument carries the page the person is standing on, which is the piece
+    komoot gets right: with it the app opens on THIS tree, without it on its own
+    home screen and the reader has to find their way back. It only does anything
+    once the app claims the domain, which is what the AASA file and the
+    Associated Domains entitlement are for. */}
+<meta name="apple-itunes-app" content={`app-id=${APP_STORE_ID}, app-argument=${canonical}`}>
 <link rel="alternate" type="application/atom+xml" title="Ancient Trees: newest trees" href="https://ancienttrees.app/feed.xml">
 <meta property="og:title" content={title}>
 <meta property="og:description" content={description}>

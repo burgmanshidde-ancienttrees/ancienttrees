@@ -725,12 +725,16 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .appland-steps strong { color: var(--ink); }
 .step-ico { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: var(--moss-light); color: var(--moss); flex-shrink: 0; }
 .step-ico svg { width: 17px; height: 17px; }
-.waitlist { display: flex; gap: 0.5rem; margin-top: 0.4rem; flex-wrap: wrap; }
-.waitlist input { flex: 1 1 12rem; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 999px;
-  padding: 0.75rem 1.1rem; font-family: var(--sans); font-size: 14px; background: #fff; }
-.waitlist input:focus { outline: 2px solid var(--moss); outline-offset: 1px; }
+/* Apple's App Store badge. Apple's rules: the artwork keeps its own aspect
+   ratio, nothing is drawn over it, and it is at least 40 points tall on a
+   phone. 45 rather than 40 so the tap target clears the 44 in Apple's own
+   guidelines, which our layout gate measures everywhere else. */
+.appstore-badge { display: inline-block; line-height: 0; margin-top: 0.6rem;
+  border-radius: 8px; }
+.appstore-badge img { width: 135px; height: 45px; }
+.appstore-badge:focus-visible { outline: 2px solid var(--moss); outline-offset: 3px; }
 .waitlist-note { font-size: 12px; color: var(--ink-light); margin-top: 0.5rem; }
-.appland-cta { display: inline-block; background: var(--ink); color: #fff; font-weight: 700; font-size: 15px; text-decoration: none; border-radius: 999px; padding: 0.95rem 2.4rem; }
+.app-dialog-badge { margin-top: 0.9rem; }
 .appland-right h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: var(--ink-light); margin-bottom: 0.4rem; }
 .appland-feat { display: flex; gap: 1rem; align-items: flex-start; padding: 1.05rem 0; border-bottom: 1px solid var(--cream-dark); }
 .appland-feat:last-child { border-bottom: none; }
