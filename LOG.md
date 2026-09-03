@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (second session, overlapping the one below) - Collided with the run below, discarded and merged
+
+Started from `fc09df1` (before the session below existed) and independently did the same rung-1 work: dispatched a write-stories agent on Freiburg/Heidelberg/Stuttgart (claimed from the same commit), and by hand merged Nihonmatsu/Otama/Ono (renaming "tamura"→"ono" for the same reason) since their stories were already written. Pushed, got rejected non-fast-forward, and found the session below had already published all of it (plus Iga/Minami-Alps/Uda/Nagano/Taipei) independently and better. Stopped the write-stories agent mid-Heidelberg (`aef928dcc4d896cb2`), discarded my duplicate local commit and the agent's in-flight output, and merged `origin/main`, resolving the handful of real conflicts (nihonmatsu/ono/otama.json, city-aliases.json, japan.json, tree-index.json, all add/add or count-drift) by taking origin's independently-written version throughout. Preflight, build and QA all clean on the merged state; pushed as `18b514c6`.
+
+No claim conflict was visible because both sessions started from the same pre-claim commit and pushed their claims minutes apart, the exact "minutes apart, not seconds apart" collision the claim file is built to catch and cannot when both sides claim before either has pulled the other's push. Worth a note for whoever reads this: two autonomous runs were live on this repo at once tonight. Continuing from here with a fresh `prepare.py`/`city_queue.py --next` read rather than trusting anything decided earlier in this transcript, since the shelf state has moved twice under me already.
+
 ## 2026-09-03 - A stocked shelf, cleared: 11 new cities, 31 trees, all writing rather than researching
 
 7-day visits (visitors.py): 651 visits, 1192 views, climbing each of the last three days (48, 106, 108). prepare.py opened on rung 1 of "the course after the fortnight": trees already verified and awaiting a writer, no research needed. Dispatched write-stories passes and merged as each came back, four rounds:
