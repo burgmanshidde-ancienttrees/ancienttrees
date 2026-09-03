@@ -63,6 +63,9 @@
       "Orxus",
       "Årousse"
     ],
+    "aga": [
+      "Aga Machi"
+    ],
     "albersdorf": [
       "Albersdörp"
     ],
@@ -302,6 +305,9 @@
       "Beirlín",
       "Berlini",
       "Berlyn"
+    ],
+    "biei": [
+      "Biei-chō"
     ],
     "bilbao": [
       "Bilbau",
@@ -807,6 +813,9 @@
       "Fort Uert",
       "Fort-Uort"
     ],
+    "fortingall": [
+      "Fartairchill"
+    ],
     "frankfurt": [
       "Frankfurt am Main",
       "Francfort-sur-le-Main",
@@ -831,11 +840,26 @@
       "Freiburga",
       "Friburgo"
     ],
+    "fujikawaguchiko": [
+      "Fudzsikavagucsiko"
+    ],
     "fukuoka": [
       "Fukuok",
       "Fukuoka Shi",
       "Hukuoka-chhī",
       "Whukuoka"
+    ],
+    "fulufjallet": [
+      "Nationaal park Fulufjället",
+      "Nationalpark Fulufjället",
+      "Parc national de Fulufjället",
+      "Parque nacional de Fulufjället",
+      "Parco nazionale Fulufjället",
+      "Parc Nacional de Fulufjället",
+      "Fulufjället Nationalpark",
+      "Fulufjällets nationalpark",
+      "Fulufjälletin kansallispuisto",
+      "Park Narodowy Fulufjället"
     ],
     "gdansk": [
       "Danzig",
@@ -896,6 +920,13 @@
       "Gandavum",
       "Ganti",
       "Gento"
+    ],
+    "giessen": [
+      "Gysenas",
+      "Gīsene",
+      "Gieseni",
+      "Giessa",
+      "Gissen"
     ],
     "girona": [
       "Gérone",
@@ -1154,6 +1185,9 @@
       "Istanbwl",
       "Stambolli",
       "Istanboel"
+    ],
+    "kaga": [
+      "Kaga-chhī"
     ],
     "kagoshima": [
       "Kagošima",
@@ -2076,6 +2110,10 @@
       "Kapalakiko",
       "Khiu-kîm-sân"
     ],
+    "santa-maria-del-tule": [
+      "Municipio de Santa María del Tule",
+      "Opština Santa María del Tule"
+    ],
     "santalfio": [
       "Fanum Sancti Alphii ad Varam",
       "Sand'Alfio",
@@ -2216,6 +2254,9 @@
       "Splitas",
       "Splita",
       "Spalatum"
+    ],
+    "stelmuze": [
+      "Stelmožė"
     ],
     "stockholm": [
       "Estocolmo",
@@ -2513,6 +2554,13 @@
       "Vilno",
       "Vilnyus"
     ],
+    "waipoua-forest": [
+      "Forêt de Waipoua",
+      "Bosque de Waipoua",
+      "Waipouaskogen",
+      "Las Waipoua",
+      "Waipoua-erdő"
+    ],
     "warsaw": [
       "Warschau",
       "Varsovie",
@@ -2618,6 +2666,7 @@
   },
   "wikipedia_titles": {
     "aarhus": "Aarhus",
+    "aga": "Aga, Niigata",
     "albersdorf": "Albersdorf",
     "alicante": "Alicante",
     "alkmaar": "Alkmaar",
@@ -2644,6 +2693,7 @@
     "belgrade": "Belgrade",
     "bergamo": "Bergamo",
     "berlin": "Berlin",
+    "biei": "Biei, Hokkaido",
     "bilbao": "Bilbao",
     "bologna": "Bologna",
     "bordeaux": "Bordeaux",
@@ -2694,6 +2744,7 @@
     "dubrovnik": "Dubrovnik",
     "ede": "Ede, Netherlands",
     "edinburgh": "Edinburgh",
+    "effeltrich": "Effeltrich",
     "eindhoven": "Eindhoven",
     "emmen": "Emmen, Netherlands",
     "enschede": "Enschede",
@@ -2702,14 +2753,18 @@
     "fish-lake-utah": "Fish Lake (Utah)",
     "florence": "Florence",
     "fort-worth": "Fort Worth, Texas",
+    "fortingall": "Fortingall",
     "frankfurt": "Frankfurt",
     "freiburg": "Freiburg im Breisgau",
+    "fujikawaguchiko": "Fujikawaguchiko",
     "fukuoka": "Fukuoka",
+    "fulufjallet": "Fulufjället National Park",
     "gdansk": "Gdańsk",
     "geneva": "Geneva",
     "genoa": "Genoa",
     "gent": "Ghent",
     "ghent": "Ghent",
+    "giessen": "Giessen",
     "girona": "Girona",
     "glasgow": "Glasgow",
     "gonzales-texas": "Gonzales, Texas",
@@ -2742,6 +2797,7 @@
     "houston": "Houston",
     "iga": "Iga, Mie",
     "istanbul": "Istanbul",
+    "kaga": "Kaga, Ishikawa",
     "kagoshima": "Kagoshima",
     "kamakura": "Kamakura",
     "kanazawa": "Kanazawa",
@@ -2843,6 +2899,7 @@
     "san-antonio": "San Antonio",
     "san-diego": "San Diego",
     "san-francisco": "San Francisco",
+    "santa-maria-del-tule": "Santa María del Tule",
     "santalfio": "Sant'Alfio",
     "sapporo": "Sapporo",
     "sardinia": "Sardinia",
@@ -2861,6 +2918,7 @@
     "solingen": "Solingen",
     "sorrento": "Sorrento",
     "split": "Split, Croatia",
+    "stelmuze": "Stelmužė",
     "stockholm": "Stockholm",
     "strasbourg": "Strasbourg",
     "stuttgart": "Stuttgart",
@@ -2893,6 +2951,7 @@
     "verona": "Verona",
     "vienna": "Vienna",
     "vilnius": "Vilnius",
+    "waipoua-forest": "Waipoua Forest",
     "warsaw": "Warsaw",
     "washington-dc": "Washington, D.C.",
     "wroclaw": "Wrocław",
@@ -2910,6 +2969,7 @@
     "breda": "Breda",
     "chadds-ford": "Chadds Ford, Pennsylvania",
     "curinga": "Curinga",
+    "effeltrich": "Effeltrich",
     "guerneville": "Guerneville, California",
     "gutau": "Gutau",
     "lebec": "Lebec, California",
@@ -2923,6 +2983,7 @@
     "boetersheim": "no article within 40 km, tried Boetersheim; Boetersheim, Germany",
     "braziukai": "no article within 40 km, tried Braziūkai; Braziūkai, Lithuania",
     "hawaii": "no article within 40 km, tried Hawaii (Hawaii, 312 km away); Hawaii, United States (Hawaii, 312 km away); search: List of United States cities by population; search: Honolulu; search: 2026 United States House of Representatives elections in Hawaii",
+    "jaegerspris-nordskov": "no article within 40 km, tried Jægerspris Nordskov; Jægerspris Nordskov, Denmark; search: List of individual trees",
     "olympic-national-park": "no article within 40 km, tried Olympic National Park (Olympic National Park, 75 km away); Olympic National Park, United States; search: Park City, Utah; search: List of national parks of the United States; search: Olympic National Park",
     "ono": "no article within 40 km, tried Ono (Ono, no coordinates, disambiguation page); Ono, Japan (Ono, Hyōgo, 580 km away); search: Jiro Ono; search: Masanosuke Ono; search: Yoko Ono",
     "trainiskis": "no article within 40 km, tried Trainiškis; Trainiškis, Lithuania",

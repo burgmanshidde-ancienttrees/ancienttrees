@@ -4924,6 +4924,24 @@
     "note": "21 candidates rendered and looked at, 7 approved (one per tree), 14 rejected, 0 held. Both Waipoua kauri were separable on sight and each approval is corroborated by a second independent file of the same trunk, which is why they were approved rather than held.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "aga+biei+effeltrich+fujikawaguchiko+giessen+kaga",
+    "kind": "write",
+    "tokens": 127000,
+    "trees": 9,
+    "note": "write-stories agent wrote 9 stories (127k tokens per its own report); main session built the 6 place/city page sets (intro, meta, question page, FAQ) for 5 single-famous-tree destinations plus the 4-tree Giessen city, fixed a hard-rule-9 species collision (Tilia cordata: Winter Lime vs the established Small-leaved Lime), refreshed Germany/Japan/Switzerland country-page counts, ran city_queue.py and tree_index.py, build clean.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "smoke test fix (denmark/uk meta_description) + Home.swift hero colour",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Main session work, not agent-dispatched: fixed the failing smoke test (UK meta_description at 162 chars, Denmark already fixed by a concurrent run), and reverted Home.swift's hero tagline from Brand.goldInk back to Brand.gold (REVIEW.md 2026-09-03 WARN, matching HeroCover.swift's working version). Tokens not tracked for session-level work.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

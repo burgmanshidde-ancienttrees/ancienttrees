@@ -1,0 +1,62 @@
+{
+  "city": "Aga",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Aga maps one tree: Shogun Sugi, a Japanese cedar on town land beside Byodo-ji temple in rural Niigata. At 19.31 metres round the trunk, it measured thicker than any other cedar in Japan's own 2000 to 2001 national giant-tree survey, including Yakushima's more famous Jomon Sugi. It takes its name from a legend that the Heian general Taira no Koremochi spent his later years nearby. Published alone here because the tree itself is the destination, not because Aga's research is finished.",
+  "meta_description": "Shogun Sugi, Aga: Japan's thickest cedar at 19.31m round, roughly 1,400 years old, free to see beside Byodo-ji temple in rural Niigata.",
+  "question_meta": "Aga's oldest and only mapped tree is Shogun Sugi, a 1,400-year-old cedar and Japan's thickest by trunk girth, free to visit.",
+  "question_answer": "Aga's only mapped tree, and its oldest, is Shogun Sugi, a Japanese cedar estimated at roughly 1,400 years old and measured as Japan's thickest cedar by trunk girth. It stands on town land beside Byodo-ji temple in Iwatani, Aga Town, Niigata Prefecture.",
+  "question_context": "When Japan's Ministry of the Environment re-surveyed the country's giant trees in 2000 and 2001, Shogun Sugi came out ahead of every other cedar on trunk girth: 19.31 metres round, beating Yakushima's far more famous Jomon Sugi at 16.1 metres, though Jomon Sugi is usually cited as the older of the two. Shogun Sugi rises 38 metres on town-owned land east of Byodo-ji temple, in a rural fold of Niigata Prefecture reached by car in about an hour from Niigata city. Its age, put at roughly 1,400 years, is an estimate rather than a ring count, so read it as a broad claim about the Heian era rather than a date. The name itself comes from legend: the Heian-period general Taira no Koremochi is said to have spent his later years nearby, and the tree has carried his rank ever since. Aga town's own heritage page dates its designation as a National Natural Monument to 8 April 1926. The site is free and open to the public, with nothing between a visitor and the trunk.",
+  "hero_tree_id": "aga_001",
+  "oldest_tree_id": "aga_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Aga?",
+      "a": "Shogun Sugi, a Japanese cedar estimated at roughly 1,400 years old, standing on town land beside Byodo-ji temple in Iwatani."
+    },
+    {
+      "q": "Is Shogun Sugi really Japan's thickest cedar?",
+      "a": "By trunk girth, yes: the Ministry of the Environment's 2000-2001 national survey measured it at 19.31 metres round, ahead of Yakushima's better-known Jomon Sugi at 16.1 metres. Jomon Sugi is usually cited as the older tree."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on town-owned land beside Byodo-ji temple with no ticket or restriction."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Aga is rural Niigata Prefecture, roughly an hour by car from Niigata city. There is no rail or bus stop at the tree itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "aga_001",
+      "name": "Shogun Sugi",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 1,400 years",
+      "age_min": 1000,
+      "age_max": 1800,
+      "girth_cm": 1931,
+      "location": {
+        "address": "2242 Iwatani, Mikawa, Aga, Higashikanbara District, Niigata Prefecture (east of Byodo-ji temple)",
+        "latitude": 37.72055194,
+        "longitude": 139.3609825,
+        "neighbourhood": "Iwatani"
+      },
+      "verified_sources": [
+        "https://www.town.aga.niigata.jp/agamachi_soshiki/shakai_kyoiku/rekishi_bunkazai/382.html",
+        "https://n-story.jp/localculture/%E5%B0%86%E8%BB%8D%E6%9D%89/"
+      ],
+      "access": "Free, publicly viewable on town-owned land beside Byodo-ji temple.",
+      "transport": "Rural Aga Town, Niigata Prefecture; reached by car, roughly an hour from Niigata city.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Japan's thickest cedar is not the famous one. When the Ministry of the Environment re-surveyed the country's giant trees in 2000 and 2001, the Shogun Sugi measured 19.31 metres around the trunk, well ahead of Yakushima's Jomon Sugi at 16.1 metres, which is the cedar every guidebook names. Jomon Sugi is still usually cited as the older of the two. On girth there is no argument.\n\nIt rises 38 metres on town land east of Byodo-ji temple, in a fold of rural Niigata about an hour from the city by car. Its age is put at roughly 1,400 years, which is an estimate rather than a count of rings, so read it as a broad claim about the Heian era and earlier rather than a date.\n\nThe name comes from a story instead of a record. The Heian-period general Taira no Koremochi is said to have spent his later years nearby, and the tree has held the rank ever since. Aga town's own heritage page dates its designation as a National Natural Monument to 8 April 1926; another account gives a later Showa year, and the municipal date is the one recorded here.\n\nNo recent inspection of its health turned up in the sources we reached, and nothing in them points to decline. If you have stood under it lately, tell us what you saw.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

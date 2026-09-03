@@ -1,0 +1,62 @@
+{
+  "city": "Fujikawaguchiko",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Fujikawaguchiko maps one tree: Shoji no Osugi, a Japanese cedar kept as the sacred tree of Suwa Shrine beside Lake Shoji, one of the Fuji Five Lakes. Twelve metres round the trunk and forty metres tall, it is among the largest cedars in Yamanashi Prefecture, and shrine ground is why it survived that long in a valley people have farmed for centuries. Locally it is Sennen-sugi, the Thousand-Year Cedar, though the sourced estimate is closer to 1,200 years. Published alone here because the tree is the destination, not because Fujikawaguchiko's research is finished.",
+  "meta_description": "Shoji no Osugi, Fujikawaguchiko: a sacred cedar at Suwa Shrine by Lake Shoji, roughly 1,200 years old, free to visit.",
+  "question_meta": "Fujikawaguchiko's only mapped tree is Shoji no Osugi, a sacred cedar roughly 1,200 years old at Suwa Shrine.",
+  "question_answer": "Fujikawaguchiko's only mapped tree is Shoji no Osugi, a Japanese cedar estimated at roughly 1,200 years old, standing as the sacred tree of Suwa Shrine in the Shoji district by Lake Shoji.",
+  "question_context": "Twelve metres round the trunk and forty metres tall, this is one of the largest cedars in Yamanashi, and it stands in a shrine yard rather than deep forest. Suwa Shrine keeps it as its goshinboku, the sacred tree of the place. Shrine trees get left alone, which is how a cedar reaches this size in a valley people have lived in for centuries. Locally it goes by Sennen-sugi, the Thousand-Year Cedar. The estimate behind that name is roughly 1,200 years, a broad figure arrived at from the tree's size rather than from anything counted, so treat the nickname as the rounder version of an already round number. On 31 January 1928 the state made the protection official and designated it a National Natural Monument. The setting is the other half of the appeal: Shoji is one of the Fuji Five Lakes, so the tree stands inside one of the most photographed landscapes in Japan while the mountain takes the attention. The shrine grounds are open and free, and there is nothing between a visitor and the trunk.",
+  "hero_tree_id": "fjk_001",
+  "oldest_tree_id": "fjk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Fujikawaguchiko?",
+      "a": "Shoji no Osugi, a Japanese cedar estimated at roughly 1,200 years old, standing at Suwa Shrine in the Shoji district by Lake Shoji."
+    },
+    {
+      "q": "Why does the tree stand at a shrine?",
+      "a": "Suwa Shrine keeps it as its goshinboku, the sacred tree of the place. Shrine trees are left alone, which is how it reached this size in a valley people have farmed for centuries."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands within the grounds of Suwa Shrine, open to the public with no ticket or restriction."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It is in the Shoji district by Lake Shoji, one of the Fuji Five Lakes, reached by car or local bus from Kawaguchiko or Fujinomiya."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fjk_001",
+      "name": "Shoji no Osugi",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 1,200 years",
+      "age_min": 1000,
+      "age_max": 1400,
+      "girth_cm": 1200,
+      "location": {
+        "address": "Suwa Shrine, Shoji, Fujikawaguchiko, Minamitsuru District, Yamanashi Prefecture",
+        "latitude": 35.495967,
+        "longitude": 138.60979,
+        "neighbourhood": "Shoji (Lake Shoji area, Fuji Five Lakes)"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E7%B2%BE%E9%80%B2%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE",
+        "https://www.pref.yamanashi.jp/bunka/bunkazaihogo/bunkazai_data/yamanashinobunkazai_tennenkinenbutu009.html"
+      ],
+      "access": "Free. Stands within the grounds of Suwa Shrine, open to the public.",
+      "transport": "In the Shoji district by Lake Shoji, one of the Fuji Five Lakes; reached by car or local bus from Kawaguchiko or Fujinomiya.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Twelve metres round the trunk and forty metres tall, this is one of the largest cedars in Yamanashi, and it stands in a shrine yard rather than deep forest. Suwa Shrine keeps it as its goshinboku, the sacred tree of the place. Shrine trees get left alone, which is how a cedar reaches this size in a valley people have lived in for centuries.\n\nLocally it goes by Sennen-sugi, the Thousand-Year Cedar. The estimate behind that name is roughly 1,200 years, a broad figure arrived at from the tree's size rather than from anything counted, so treat the nickname as the rounder version of an already round number. On 31 January 1928 the state made the protection official and designated it a National Natural Monument.\n\nThe setting is the other half of the appeal. Shoji is one of the Fuji Five Lakes, so the tree stands inside one of the most photographed landscapes in Japan while the mountain takes the attention. The shrine grounds are open and free, and there is nothing between a visitor and the trunk.\n\nNo recent assessment of its health turned up in the sources we reached, and nothing in them points to decline. If you have been there lately, tell us how it looked.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

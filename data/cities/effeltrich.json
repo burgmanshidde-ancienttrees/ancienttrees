@@ -1,0 +1,63 @@
+{
+  "city": "Effeltrich",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Effeltrich maps one tree: the Tanzlinde, a lime on the village square whose crown has been trained flat over centuries onto a scaffold of oak beams and stone walls, twenty metres across at eight metres up. Estimated at 600 to 800 years old, though the village calls it the thousand-year lime. In August 2024 it was named National Heritage Tree number 39, one of a short national list. Published alone here because the tree is the destination, not because Effeltrich's research is finished.",
+  "meta_description": "Tanzlinde, Effeltrich: a lime trained flat on oak scaffolding for centuries, 600-800 years old, National Heritage Tree since 2024.",
+  "question_meta": "Effeltrich's only mapped tree is the Tanzlinde, a lime trained flat over centuries, estimated at 600 to 800 years old.",
+  "question_answer": "Effeltrich's only mapped tree is the Tanzlinde, a large-leaved lime estimated at 600 to 800 years old on the village square beside the fortified church of St. Georg, its crown trained flat over a scaffold of oak.",
+  "question_context": "The crown of this lime sits eight metres up and runs twenty metres across, flat as a table, and none of that is an accident. Generation after generation trained the branches out sideways onto a scaffold of oak: two concentric ring beams carried on 24 posts, the whole structure standing on a stone wall 49 metres long and 90 centimetres high that circles the trunk. It is still pruned every second year to hold the form. This is a Tanzlinde, a dance lime. The square beside the fortified church of St. Georg served Effeltrich as court and assembly ground as well as dance floor, and music and processions still take place under the disc of leaves. Estimates based on trunk structure put the tree at 600 to 800 years old, though the village calls it the thousand-year lime, a name handed down at the site rather than a figure anyone measured. The trunk runs a little over eight metres round. In August 2024 it was named National Heritage Tree number 39, one of a short national list, and a 2025 visit found it vital.",
+  "hero_tree_id": "eff_001",
+  "oldest_tree_id": "eff_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Effeltrich?",
+      "a": "The Tanzlinde, a large-leaved lime estimated at 600 to 800 years old, on the village square beside the fortified church of St. Georg."
+    },
+    {
+      "q": "Why is its crown so flat?",
+      "a": "Generations trained the branches sideways onto a scaffold of oak beams on 24 posts, standing on a stone wall that circles the trunk. It is still pruned every second year to keep the shape."
+    },
+    {
+      "q": "Is it really a thousand years old?",
+      "a": "That is the village's own name for it, but the sourced estimate from trunk structure is 600 to 800 years. Treat the nickname as folklore rather than a measurement."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on the public village square beside the church, with no ticket or restriction."
+    }
+  ],
+  "trees": [
+    {
+      "id": "eff_001",
+      "name": "Tanzlinde (Effeltrich)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 600-800 years, popularly called the \"1000-year lime\"",
+      "age_min": 600,
+      "age_max": 800,
+      "girth_cm": 802,
+      "height_m": 8,
+      "location": {
+        "address": "Village square (Dorfplatz) beside the Wehrkirche St. Georg, Effeltrich, Landkreis Forchheim",
+        "latitude": 49.659544,
+        "longitude": 11.092795,
+        "neighbourhood": "Effeltrich village centre"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/1458-tausendjaehrige_linde_in_effeltrich/",
+        "https://nationalerbe-baeume.de/project/tanzlinde-effeltrich-landkreis-forchheim-oberfranken/"
+      ],
+      "access": "Free, public village square beside the fortified church.",
+      "transport": "Not verified; no confirmed public transport stop found. Effeltrich lies in the Franconian Switzerland foothills near Forchheim/Erlangen, reachable by car; no rail station in the village itself.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The crown of this lime sits eight metres up and runs twenty metres across, flat as a table, and none of that is an accident. Generation after generation trained the branches out sideways onto a scaffold of oak: two concentric ring beams carried on 24 posts, the whole structure standing on a stone wall 49 metres long and 90 centimetres high that circles the trunk. It is still pruned every second year to hold the form.\n\nThis is a Tanzlinde, a dance lime. The square beside the fortified church of St. Georg served Effeltrich as court and assembly ground as well as dance floor, and music and processions still take place under the disc of leaves.\n\nEstimates based on trunk structure and growth habit put the tree at 600 to 800 years old. The village calls it the thousand-year lime, a name handed down at the site rather than a figure anyone arrived at, and it is worth hearing in that spirit. The trunk measures a little over eight metres round: 8.02 metres when Nationalerbe-Baeume took it in May 2024, 7.89 when baumkunde came in July 2025.\n\nIn August 2024 it was named National Heritage Tree number 39, one of a short national list. Baumkunde's visit the following summer found it vital. The square is open, free, and the tree is unmistakable from the church door.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

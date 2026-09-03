@@ -1,0 +1,62 @@
+{
+  "city": "Kaga",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kaga maps one tree: Kayano no Osugi, a Japanese cedar at Sugawara Shrine above the hot-spring town of Yamanaka Onsen. At 54.8 metres tall and 9.6 metres round, it is among the largest sugi in Japan, estimated at roughly 2,300 years old from a 1928 assessment by the botanist Manabu Miyoshi. Emperor Showa, a trained biologist, stopped to examine it in 1947, which gave it the name Tenran no Osugi, the cedar the Emperor viewed. Published alone here because the tree is the destination, not because Kaga's research is finished.",
+  "meta_description": "Kayano no Osugi, Kaga: a cedar Emperor Showa stopped to examine in 1947, roughly 2,300 years old, free at Sugawara Shrine.",
+  "question_meta": "Kaga's only mapped tree is Kayano no Osugi, a cedar roughly 2,300 years old at Sugawara Shrine, free to visit.",
+  "question_answer": "Kaga's only mapped tree is Kayano no Osugi, a Japanese cedar estimated at roughly 2,300 years old, standing in the grounds of Sugawara Shrine above Yamanaka Onsen.",
+  "question_context": "Emperor Showa was a trained biologist, and in 1947, in Ishikawa for the National Sports Festival, he stopped at this cedar and examined it closely. It has been Tenran no Osugi, the great cedar viewed by the Emperor, ever since. On the paperwork it is Kayano no Osugi, and it stands in the grounds of Sugawara Shrine above the hot-spring town of Yamanaka Onsen. The tree is 54.8 metres tall, 9.6 metres round at chest height and 11.5 metres where the roots flare into the ground, which puts it among the largest sugi in Japan. Its age of roughly 2,300 years comes from an assessment the botanist Manabu Miyoshi of Tokyo University made in 1928, so it is an estimate with a date attached: any figure quoted from Miyoshi wants another hundred years added to reach the present. The Emperor was not the first to give it a long look. In 1915 the artist and potter Rosanjin, staying at an inn nearby, drew it in ink. In 2016 certified arborists ran an acoustic-wave assessment of the trunk and found no loss of vigour. The grounds are free and open, about twenty minutes by car from Daishoji station.",
+  "hero_tree_id": "kga_001",
+  "oldest_tree_id": "kga_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kaga?",
+      "a": "Kayano no Osugi, a Japanese cedar estimated at roughly 2,300 years old, standing in the grounds of Sugawara Shrine above Yamanaka Onsen."
+    },
+    {
+      "q": "Why is it called the Emperor's cedar?",
+      "a": "Emperor Showa, a trained biologist, stopped to examine it closely in 1947 while in Ishikawa for the National Sports Festival, which gave it the name Tenran no Osugi, the cedar the Emperor viewed."
+    },
+    {
+      "q": "Is it in good health?",
+      "a": "A 2016 acoustic-wave assessment by certified arborists found no loss of vigour and no branch-fall hazard."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands within the grounds of Sugawara Shrine, open to the public, about twenty minutes by car from Daishoji Station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kga_001",
+      "name": "Kayano no Osugi",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 2,300 years",
+      "age_min": 2000,
+      "age_max": 2500,
+      "girth_cm": 960,
+      "location": {
+        "address": "Sugawara Shrine, Kayano-cho, Yamanaka Onsen, Kaga, Ishikawa Prefecture",
+        "latitude": 36.2275471,
+        "longitude": 136.3599068,
+        "neighbourhood": "Yamanaka Onsen"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E6%A0%A2%E9%87%8E%E5%A4%A7%E6%9D%89",
+        "https://kunishitei.bunka.go.jp/heritage/detail/201/10374"
+      ],
+      "access": "Free. Stands within the grounds of Sugawara Shrine, open to the public.",
+      "transport": "Roughly 20 minutes by car or taxi from Daishoji Station on the JR Hokuriku Main Line; the shrine is in the Yamanaka Onsen hot-spring district of Kaga City.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Emperor Showa was a trained biologist, and in 1947, in Ishikawa for the National Sports Festival, he stopped at this cedar and examined it closely. It has been Tenran no Osugi, the great cedar viewed by the Emperor, ever since. On the paperwork it is Kayano no Osugi, and it stands in the grounds of Sugawara Shrine above the hot-spring town of Yamanaka Onsen.\n\nThe tree is 54.8 metres tall, 9.6 metres round at chest height and 11.5 metres where the roots flare into the ground, which puts it among the largest sugi in Japan. Its age of roughly 2,300 years comes from an assessment the botanist Manabu Miyoshi of Tokyo University made in 1928, so it is an estimate with a date attached: any figure quoted from Miyoshi wants another hundred years added to reach the present.\n\nThe Emperor was not the first to give it a long look. In 1915 the artist and potter Rosanjin, staying at an inn nearby, drew it in ink. Japan designated it a National Natural Monument in November of the same year Miyoshi dated it, 1928.\n\nSize here is not the same as frailty. In 2016 certified arborists ran an acoustic-wave assessment of the trunk and found no loss of vigour and no branch-fall hazard. The grounds are free and open, about twenty minutes by car from Daishoji station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
