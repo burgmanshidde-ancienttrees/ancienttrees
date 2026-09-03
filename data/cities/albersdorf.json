@@ -1,0 +1,63 @@
+{
+  "city": "Albersdorf",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Albersdorf maps one tree: the Fünffingerlinde, five stems grown together into the shape of an open hand, in a forest clearing a few minutes from the village. Regional legend ties the shape to a wrongly hanged wanderer; the recorded facts are a protection order from 1938 and a girth that has grown just 90 centimetres in 88 years. Published alone here because it is the destination, not because the village's research is finished.",
+  "meta_description": "The Fünffingerlinde near Albersdorf: five fused stems shaped like a hand, protected since 1938, roughly 250 to 300 years old.",
+  "question_meta": "Albersdorf's mapped tree is the Fünffingerlinde, a hand-shaped lime roughly 250 to 300 years old in the Riesewohld forest.",
+  "question_answer": "The Fünffingerlinde, in a clearing in the Riesewohld forest near Odderade. Estimated at 250 to 300 years and a protected natural monument since 1938, on the strength of its shape rather than its size. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "Five stems, one tree, and the shape of an open hand. The Fünffingerlinde grew its trunks together over the centuries into a form people read as a palm with fingers, one lower branch pushed forward as the thumb, and it has been a protected natural monument since 1938 on the strength of that shape rather than its size. The story attached to it is a hanging: a wanderer executed nearby for something he had not done, the hand in the tree said to stand for his innocence, regional legend rather than record, and what brings most people down the track regardless. The measurements are modest and the growth curve is honest: just under 4 metres round in 1932, 4.90 metres by a 2020 survey, 90 centimetres in 88 years. The estimate is 250 to 300 years, young beside the court limes of central Germany and no less odd to stand beneath. It grows in a clearing in the Riesewohld forest near Odderade, benches set around it, marked hiking trails leading in, health recorded as vital at the 2020 survey.",
+  "hero_tree_id": "alb_001",
+  "oldest_tree_id": "alb_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Albersdorf?",
+      "a": "The Fünffingerlinde, estimated at 250 to 300 years, the only tree mapped here."
+    },
+    {
+      "q": "Why does it look like a hand?",
+      "a": "Five stems grew together over the centuries into a shape people read as an open palm, one lower branch forward as the thumb. Regional legend ties the shape to a wrongly hanged wanderer, a story rather than a record."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, open year-round with benches around the tree and marked hiking trails into the clearing."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "There is no rail or bus stop at the site. It is a few minutes' drive from Albersdorf, then a walk from a forest car park in the Riesewohld."
+    }
+  ],
+  "trees": [
+    {
+      "id": "alb_001",
+      "name": "The Fünffingerlinde",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "roughly 250 to 300 years",
+      "age_min": 250,
+      "age_max": 300,
+      "girth_cm": 490,
+      "location": {
+        "address": "A clearing in the Riesewohld forest, about 500m south of Quellental and the A23 motorway, near Odderade, Kreis Dithmarschen, Schleswig-Holstein",
+        "latitude": 54.149448,
+        "longitude": 9.220072,
+        "neighbourhood": "Riesewohld forest, near Odderade and Albersdorf"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/F%C3%BCnffingerlinde",
+        "https://www.baumkunde.de/baumregister/4690-fuenffingerlinde_im_riesewohld_bei_odderade/",
+        "https://www.echt-dithmarschen.de/typisch/poi/fuenffingerlinde/"
+      ],
+      "access": "Free, open year-round. Benches are placed around the tree and marked hiking trails lead to the clearing in the Riesewohld forest.",
+      "transport": "Rural forest location a few minutes' drive from Albersdorf; no rail or bus stop at the site itself. Reached on foot from a forest car park, not a public-transport day trip.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Five stems, one tree, and the shape of an open hand. The Fünffingerlinde grew its trunks together over the centuries into a form people read as a palm with fingers, one lower branch pushed forward as the thumb, and it has been a protected natural monument since 1938 on the strength of that shape rather than its size.\n\nThe story attached to it is a hanging. A wanderer was executed nearby for something he had not done, and the hand in the tree is said to stand for his innocence, so that nobody could tidy the case away. That is regional legend rather than record, and it is what brings most people down the track.\n\nThe measurements are modest and the growth curve is honest. Just under 4 metres round in 1932, 4.90 metres when baumkunde measured it on 21 June 2020: 90 centimetres in 88 years. The estimate is 250 to 300 years, young beside the court limes of central Germany and no less odd to stand beneath.\n\nIt grows in a clearing in the Riesewohld forest near Odderade, with benches set around it and marked hiking trails leading in. The same 2020 survey recorded its health as vital. Free, open all year, a few minutes' drive from Albersdorf and then a walk from the forest car park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

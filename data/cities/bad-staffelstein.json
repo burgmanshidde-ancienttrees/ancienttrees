@@ -1,0 +1,63 @@
+{
+  "city": "Bad Staffelstein",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Bad Staffelstein maps one tree: Hüter des Feldes, the oak the 2003 film Luther filmed as a young monk's shelter, standing where the camera found it beside the road to Nedensdorf. It is dying by degrees, fungal disease and drought since 2013, and the conservation authority has chosen to let it go naturally rather than intervene further. Published alone here because it is the destination, not because the town's research is finished.",
+  "meta_description": "Hüter des Feldes, near Bad Staffelstein: the oak filmed in Luther (2003), hollow and declining, several hundred to over 1,000 years old.",
+  "question_meta": "Bad Staffelstein's mapped tree is Hüter des Feldes, an ageing oak filmed in the 2003 film Luther.",
+  "question_answer": "Hüter des Feldes (guardian of the field), also called the Rasierpinselbaum, standing beside the road to Nedensdorf. Its age is a genuine open question, sources ranging from 300 to over 1,000 years, and the tree is visibly declining. It is the only tree mapped here, published alone under the single-tree exception.",
+  "question_context": "The 2003 feature film Luther put its young monk under this oak to shelter from a thunderstorm, and it still stands where the camera found it, in open fields with a stone bench at its base. Its two nicknames both describe the crown: Hüter des Feldes, guardian of the field, and Rasierpinselbaum, shaving-brush tree, for the bristled shape generations of pollarding left behind. Its age depends entirely on who is asked: a dendrology register says 300 to 500 years, while German Wikipedia, the local press and the Bayreuth conservation authority all speak of more than a thousand. That is the real spread, and narrowing it would be inventing precision nobody has. The condition matters before anyone travels: fungal disease has been killing parts of the crown since about 2013, droughts pushed it further, the trunk walls run as thin as 20 centimetres, one side is bare, and it has stopped setting acorns. Bayreuth has decided against further preservation. A June 2026 visit still recorded it vital, hollow, crown partly green.",
+  "hero_tree_id": "ned_001",
+  "oldest_tree_id": "ned_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Bad Staffelstein?",
+      "a": "Hüter des Feldes, an oak whose age is genuinely disputed between 300 and over 1,000 years, standing beside the road to Nedensdorf."
+    },
+    {
+      "q": "Is the tree from the film Luther still alive?",
+      "a": "Yes, but declining. Fungal disease and drought have hollowed the trunk and killed parts of the crown since around 2013, and the conservation authority has chosen to let it go naturally rather than intervene further."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands in open fields beside a public road with a stone bench at its base, no ticket or restriction."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "There is no rail or bus stop at the tree itself. It is a rural roadside location near Bad Staffelstein, reached by car."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ned_001",
+      "name": "Hüter des Feldes (the Rasierpinselbaum)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "sources disagree, several hundred to over a thousand years",
+      "age_min": 300,
+      "age_max": 1000,
+      "girth_cm": 616,
+      "location": {
+        "address": "Beside the road to Nedensdorf, about 500m south of the junction near Gleussen, Bad Staffelstein, Landkreis Lichtenfels, Bavaria",
+        "latitude": 50.12184867,
+        "longitude": 10.96154267,
+        "neighbourhood": "Nedensdorf, near Bad Staffelstein"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/H%C3%BCter_des_Feldes",
+        "https://www.baumkunde.de/baumregister/975-eiche_bei_nedensdorf_hueter_des_feldes/",
+        "https://www.infranken.de/regional/lichtenfels/1000-jaehrige-eiche-muss-bald-weichen;art220,499751"
+      ],
+      "access": "Free, standing in open fields beside a public road, with a stone bench at its base for visitors. No ticket or restriction.",
+      "transport": "Rural location near Bad Staffelstein; no rail or bus stop at the tree itself, reached by road. Not a public-transport day trip from a city.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The 2003 feature film Luther put its young monk under this oak to shelter from a thunderstorm. It still stands where the camera found it, in open fields beside the road to Nedensdorf, with a stone bench at its back for whoever walks out.\n\nBoth of its nicknames describe the crown. Hüter des Feldes, guardian of the field. Rasierpinselbaum, shaving-brush tree, for the bristled shape that generations of pollarding left behind.\n\nIts age depends entirely on who is asked, and the gap is enormous. Baumkunde's dendrology puts it at 300 to 500 years. German Wikipedia, the local press and the Bayreuth conservation authority all speak of more than a thousand, the authority phrasing it as a tree ready to die after roughly 1000 years. That is the real spread, and narrowing it would be an invention.\n\nThe condition matters before anyone travels. Fungal disease has been killing parts of the crown since about 2013, and the droughts of 2018 and 2019 pushed it further. The trunk is completely hollow, its walls as thin as 20 centimetres in places. One side is bare, the surviving leaves come smaller than they should, and the tree has stopped setting acorns. Bayreuth has decided against further preservation and is letting it go naturally. A visit in June 2026 still recorded it as vital, hollow, crown partly green. At 6.16 metres round in 2025 against 6.14 in 2011, it has essentially stopped growing.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
