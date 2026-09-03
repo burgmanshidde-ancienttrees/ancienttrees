@@ -9,7 +9,27 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-03 - Night run 2026-09-03 06:30 UTC ended without saying anything
+## 2026-09-03 - Continuation run: cleared two stranded claims, refilled the shelf on three countries
+
+Resumed a window a prior attempt had stopped early on with 113 of 120 minutes still unspent, per this file's own entry above.
+
+**Claims first, per prepare.py's instructions.** Two stranded verify claims from the earlier attempt: `alicante` and `hallstatt`. Hallstatt (rank #286, effectively no register or Wikidata supply near it) matched the exact low-value pattern CLAUDE.md documents as a past mistake (chasing thin Austrian register leads while higher-ranked cities sit untouched), so released rather than pursued. Alicante's brief showed every unmined register candidate already judged by earlier passes (avenue trees, duplicates, private fincas 7-12km out, or a twice-exhausted single-source hunt); the one lead that looked genuinely open, the Ficus de Benalua's access question, turned out to already be resolved and shipped as ali_008 weeks ago, just never marked resolved in the leads file. Fixed that bookkeeping and released the claim.
+
+**Rung 2 (health.py) and rung 1 (submissions) both clear**, nothing to do there.
+
+**`prepare.py` flagged the writable-lead shelf under 60 and named the refill priority: three unsourced famous-tree country batches (Japan 148, Germany 78, Poland 68), from Commons category sweeps nobody had verified.** Dispatched three verify passes in parallel, one per country, each following the pattern an earlier run established (data/leads/_famous-*.json note fields carry the history): confirm alive, get species with two sources (a national/prefectural Natural Monument designation counts as one), pin coordinates, and where a tree stands alone rather than near a city we publish, treat it as its own single-tree destination under the 2026-08-31 exception when it clears that bar on its own fame.
+
+- **Japan: 10 verified**, delivered as 10 new place slugs (kaga, takahagi, otoyo, tamba, neba, toga, aga, biei, okuizumo, fujikawaguchiko), all National/Prefectural Natural Monuments. 3 blocked: the Miracle Pine (Rikuzentakata, non-living monument after tsunami saltwater intrusion), the Tsurugaoka Hachimangu ginkgo (original trunk fell in a 2010 storm, regrowth unverified), and Biei's "tree of philosophy" (felled by its landowner in 2016). 149→136 leads remaining.
+- **Germany: 7 verified.** Giessen cleared to its 4-tree floor (a 4th candidate, a lime pair at a spring source, joined the 3 an earlier pass had already verified). Three more cleared the single-tree exception on their own fame: Reinborn's 14.34m-girth lime, Effeltrich's Tanzlinde (a Nationalerbe-Baum with a supported disc crown), and the Schenklengsfelder Dorflinde (17.91m girth, possibly Germany's oldest deciduous tree). One held rather than shipped: Klingenberg am Main's Gerichtslinde, alive but modest (4.22m girth, no official protection, a folk-claimed 800 years against a dendrological ~325). 78→73 leads remaining.
+- **Poland: dispatched, still running** at the point this entry was written; results not yet known.
+
+**Caught and fixed before merging: an id collision.** Kaga's sugi (Ishikawa) had been assigned `kag_001`, already Kagoshima's prefix. Reassigned to `kga_001` before any write pass could touch it; `passcheck.py --pending` is what caught it; the same check should always run before briefing a writer, per BRIEF_WRITING.md's own instruction, which this run followed rather than skipped.
+
+**Also opened one page directly, by hand rather than dispatching an agent, since it was a single bounded verification:** researching the Ficus de Benalua's access question surfaced a stale duplicate entry in `data/leads/_famous-switzerland.json` for the Messikommer Eiche (a 500-plus-year oak at Robenhausen, on the Pfaffikersee, standing on the site where the 1858 pile-dwelling find that named the Neolithic Robenhausian period was made). Verified it directly (wetzipedia.ch, zo-online.ch, the English Wikipedia articles on Robenhausen and Jakob Messikommer), confirmed a geotagged CC BY-SA 3.0 Commons photo matches the tree's own coordinates exactly, and published **Robenhausen** as a new single-tree city. Build failed twice on word-count gates (question_context over 200 words, then intro under 60) before passing clean.
+
+Dispatched a write-stories pass on all 17 verified-but-unpublished trees from the Japan and Germany batches (matera's 3 stay deliberately unpublished, still below its floor, per the standing note on that file). Not yet returned at the point this entry was written; a follow-up entry will report what published.
+
+3 commits so far this run, all pushed. Both original claims resolved. Full builds clean at each step.
 
 Written by the workflow's Run health step, not by the run. 20.6 minutes of its 120 minute window, 166 turns, 38 commands refused by the allowlist, ended clean (success). 4 commit(s), none of them a published tree. Claims left behind: _famous-japan, _famous-germany, which block the top of the queue until they expire.
 
