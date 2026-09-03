@@ -387,7 +387,9 @@ def classify(entry, blocking):
     # back as READY the same afternoon, folded twin included. A status field
     # someone deliberately set is not a lead waiting for prose.
     status = str(entry.get("status") or "").strip().lower()
-    if status in ("folded", "blocked", "held", "duplicate", "resolved"):
+    if status in ("folded", "blocked", "held", "duplicate", "resolved",
+                  "done", "possibly_mapped", "promoted", "published",
+                  "resolved_duplicate"):
         return {"label": "held by an earlier pass (status: %s)" % status}
     # A tree carrying `pulled_from_city` was not merely unattended, it was
     # DEMOTED from a published page by name, on Hidde's own paid-entry-ratio
