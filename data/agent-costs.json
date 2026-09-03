@@ -4897,6 +4897,24 @@
     "note": "scripts/photo_hunt.py --recheck, free API sweep. Queue now 1472 trees swept / 777 with candidates. No agent dispatched.",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "famous-batch1 (7 trees, 6 new places)",
+    "kind": "verify",
+    "tokens": 252000,
+    "trees": 7,
+    "note": "First pass of the famous-tree lane (rung 0c). 7 delivered with dated alive-evidence, 3 blocked: Four Sisters track closed, Storkeegen dead 1980, Snoegen dead 1991. Delivered both NZ kauri without the minus sign on the latitude; corrected in session and preflight now catches it.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "famous-batch1 (7 stories, 6 place page sets)",
+    "kind": "write",
+    "tokens": 177000,
+    "trees": 7,
+    "note": "Carried the place copy and the faq blocks on top of the stories: 13 written units at roughly 13k each, because each famous tree is its own place and needs a full page set rather than a story.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

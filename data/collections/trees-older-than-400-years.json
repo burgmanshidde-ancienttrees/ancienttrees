@@ -1,36 +1,41 @@
 {
-  "slug": "trees-older-than-400-years",
-  "title": "The Oldest Trees We Have Mapped",
-  "status": "hidde_approved",
-  "meta_description": "Every tree we map whose age clears four hundred years, ranked oldest first, from the millennial olives of Crete and Sardinia down.",
-  "intro": "Four hundred years is a useful threshold. Older than that and a tree predates nearly everything around it: the streets, the houses, usually the city's entire modern shape. This page ranks every tree we have mapped that clears it, oldest first, and it re-ranks itself the moment we add an older one. One rule keeps it honest, and it costs us entries: a tree qualifies on the LOW end of its estimate, so a tree recorded as one hundred to five hundred years old is not here, however tempting the upper number looks. Where the age is a range, the range is what you see, because that is what the sources say. Start at the top with olives that were already ancient when Rome was a village, and work down to oaks that were merely standing when the printing press arrived.",
-  "entries": [
-    {
-      "city_slug": "london",
-      "tree_id": "lon_001",
-      "note": "The oldest entry by a distance: estimates run from 1,000 to 2,000 years, and even the low end predates every building in London. The 13th century church beside it is the junior partner on the plot."
-    },
-    {
-      "city_slug": "london",
-      "tree_id": "lon_002",
-      "note": "Already centuries old when Charles I walled Richmond Park around it in 1637. A hollow pollard wide enough to shelter a small football team, still surrounded by grazing deer."
-    },
-    {
-      "city_slug": "london",
-      "tree_id": "lon_007",
-      "note": "Five centuries old partly because people kept cutting it back: coppicing paradoxically resets a tree's clock. It grows in the gardens of the Bishop of London's former palace."
-    },
-    {
-      "city_slug": "london",
-      "tree_id": "lon_006",
-      "note": "A survivor of James I's failed silk industry: the king ordered the wrong mulberry species, silkworms refused the leaves, and the tree outlived the whole scheme by four centuries."
-    },
-    {
-      "city_slug": "paris",
-      "tree_id": "par_001",
-      "note": "The oldest tree in Paris, planted in 1601 by the king's herbalist and still flowering opposite Notre-Dame. The entire Robinia genus is named after the man who planted it."
-    }
-  ],
-  "seo_title": "Trees Older Than 400 Years You Can Actually Visit",
-  "generated": "oldest"
+ "slug": "trees-older-than-400-years",
+ "title": "The Oldest Trees We Have Mapped",
+ "status": "hidde_approved",
+ "meta_description": "Every tree we map whose age clears four hundred years, ranked oldest first, from the millennial olives of Crete and Sardinia down.",
+ "intro": "Four hundred years is a useful threshold. Older than that and a tree predates nearly everything around it: the streets, the houses, usually the city's entire modern shape. This page ranks every tree we have mapped that clears it, oldest first, and it re-ranks itself the moment we add an older one. One rule keeps it honest, and it costs us entries: a tree qualifies on the LOW end of its estimate, so a tree recorded as one hundred to five hundred years old is not here, however tempting the upper number looks. Where the age is a range, the range is what you see, because that is what the sources say. Start at the top with olives that were already ancient when Rome was a village, and work down to oaks that were merely standing when the printing press arrived.",
+ "entries": [
+  {
+   "city_slug": "london",
+   "tree_id": "lon_001",
+   "note": "The oldest entry by a distance: estimates run from 1,000 to 2,000 years, and even the low end predates every building in London. The 13th century church beside it is the junior partner on the plot."
+  },
+  {
+   "city_slug": "london",
+   "tree_id": "lon_002",
+   "note": "Already centuries old when Charles I walled Richmond Park around it in 1637. A hollow pollard wide enough to shelter a small football team, still surrounded by grazing deer."
+  },
+  {
+   "city_slug": "london",
+   "tree_id": "lon_007",
+   "note": "Five centuries old partly because people kept cutting it back: coppicing paradoxically resets a tree's clock. It grows in the gardens of the Bishop of London's former palace."
+  },
+  {
+   "city_slug": "london",
+   "tree_id": "lon_006",
+   "note": "A survivor of James I's failed silk industry: the king ordered the wrong mulberry species, silkworms refused the leaves, and the tree outlived the whole scheme by four centuries."
+  },
+  {
+   "city_slug": "paris",
+   "tree_id": "par_001",
+   "note": "The oldest tree in Paris, planted in 1601 by the king's herbalist and still flowering opposite Notre-Dame. The entire Robinia genus is named after the man who planted it."
+  },
+  {
+   "city_slug": "fulufjallet",
+   "tree_id": "ful_001",
+   "note": "Top of this list on a technicality worth knowing about. The 9,550 years belong to the root system, carbon dated, which has kept cloning itself since not long after the ice left Dalarna. The spruce standing above it is a few hundred years old at most. Every other tree here is one organism of that age above ground."
+  }
+ ],
+ "seo_title": "Trees Older Than 400 Years You Can Actually Visit",
+ "generated": "oldest"
 }

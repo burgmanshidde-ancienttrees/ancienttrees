@@ -1,0 +1,61 @@
+{
+  "city": "Fulufjället",
+  "country": "Sweden",
+  "status": "needs_curation",
+  "intro": "Fulufjället is a flat-topped mountain on the Norwegian border in northern Dalarna, a national park of bare fell, birch forest and Njupeskär, the tallest waterfall in Sweden. Trails climb from the visitor centre onto the plateau, where the ground is thin heath over rock and the weather turns fast. Somewhere up there, marked by nothing grand at all, stands a spruce whose root system has been alive since the ice retreated. It is a half-day walk and no part of it is a stroll.",
+  "meta_description": "Fulufjället National Park in Dalarna holds Old Tjikko, a spruce whose roots carbon-date to 9,550 years. A half-day hike onto open fell reaches it.",
+  "question_meta": "Old Tjikko on the Fulufjället plateau is the oldest: its root system dates to 9,550 years, though the trunk you see is only a few centuries old.",
+  "question_answer": "The oldest tree at Fulufjället, and by one measure the oldest in the world, is Old Tjikko, a Norway spruce on the mountain plateau whose root system carbon-dates to about 9,550 years. The trunk standing over those roots is not that old: it is a few hundred years, and the Swedish national park authority says so plainly on its own page.\n\nThe two facts fit together through cloning. A spruce stem in this climate lives around six centuries, dies, and the root system pushes up a replacement carrying the same genes. Samples taken at the site returned ages of 375, 5,660, 9,000 and 9,550 years, published by Umeå University in 2008. What has survived here since not long after the retreat of the ice is a continuous organism rather than a continuous tree, and the thing you photograph is the current edition of it.\n\nIt is a small, wind-scoured spruce roughly five metres tall and it looks like nothing much. That is most of the point, and it is why nobody noticed it until researchers from Umeå went looking. It is also still losing arguments with the weather: a storm in February 2023 broke about a metre off its top, and that piece is now on show at the Naturum visitor centre at the foot of the trail.",
+  "question_context": "Fulufjället National Park charges nothing and needs no booking, but Old Tjikko is not a roadside stop. No public transport reaches the trailhead. You drive to the Naturum Fulufjället visitor centre and the Njupeskär car park, then walk: the marked route onto the plateau runs roughly seven to nine kilometres round trip depending on where you start, climbing out of birch forest onto open fell. Allow half a day.\n\nFollow the orange markers and stay on the path. The mountain heath here takes decades to recover from footfall, which is part of why the tree stood unnoticed for so long. Snow lies on the route into early summer, so the practical season runs from midsummer into early autumn. Boots, wind and rain gear, and a look at the forecast before you set off: the plateau is exposed and there is nothing to shelter behind. Njupeskar, Sweden's highest waterfall at 93 metres, sits on the same trail network from the same car park, which is what most visitors come for and why the path exists at all. The visitor centre can tell you the current snow line before you commit to the climb.",
+  "faq": [
+    {
+      "q": "How old is Old Tjikko?",
+      "a": "The root system carbon-dates to about 9,550 years, from material sampled at the site and published by Umeå University in 2008. The trunk growing out of those roots is only a few hundred years old, which the national park states on its own page."
+    },
+    {
+      "q": "How big is it?",
+      "a": "Small. About five metres tall and slender, which is much of why it went unnoticed for so long. No trunk girth has been published anywhere we can find. If you know of a measured one, tell us."
+    },
+    {
+      "q": "How do I get there, and is it free?",
+      "a": "Free and no booking, but no public transport either. Drive to the Naturum Fulufjället visitor centre and the Njupeskär car park, then walk: a marked trail onto the plateau, seven to nine kilometres round trip, half a day, under snow into early summer."
+    },
+    {
+      "q": "So is it really 9,550 years old?",
+      "a": "Not in the way people usually mean. Nothing visible is that old. A spruce stem here lasts around six centuries and the roots then send up a replacement, so the age belongs to a continuous organism rather than to any wood above ground."
+    }
+  ],
+  "oldest_tree_id": "ful_001",
+  "trees": [
+    {
+      "id": "ful_001",
+      "name": "Old Tjikko",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "root system approximately 9,550 years old; the visible trunk is only a few centuries old",
+      "age_min": 9550,
+      "age_max": 9550,
+      "location": {
+        "address": "Fulufjället National Park, on the mountain plateau above Njupeskär, Älvdalen Municipality, Dalarna, Sweden",
+        "latitude": 61.63931,
+        "longitude": 12.67633,
+        "neighbourhood": "Fulufjället mountain plateau, reached via the Njupeskär trail"
+      },
+      "story": "Sweden's claim to the oldest tree in the world is a scrappy spruce about five metres tall, and the part you can see is only a few hundred years old. The 9,550 years belong to the root system underneath it. Carbon dating of material from the site returned ages of 375, 5,660, 9,000 and 9,550 years, work published by Umeå University in 2008.\n\nThe mechanism is worth understanding before you make the climb. A Norway spruce trunk up on this plateau lasts something like six centuries, then dies, and the roots send up a new one from the same genetic material. Layering rather than growth. So nothing about Old Tjikko is 9,550 years old the way an oak is 800 years old. What has persisted here since not long after the ice left Dalarna is the organism. The timber in front of you is the current edition.\n\nIt is still going. A winter storm in February 2023 snapped about a metre off its top, and that piece is now on display at the Naturum Fulufjället visitor centre at the bottom of the trail. In 2024 a Stockholm art studio grew a clone from twigs cut off its upper branches for an installation in Malmö.\n\nReaching it is a half-day. A marked trail climbs from the Njupeskär car park onto open fell, seven to nine kilometres round trip, under snow into early summer. No bus, no ticket, no guide. Stay on the markers: the mountain heath does not recover.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Old_Tjikko",
+        "https://www.sverigesnationalparker.se/sv/upptack-nationalparkerna/fulufjallets-nationalpark/att-gora-i-parken/sevardheter/old-tjikko"
+      ],
+      "access": "Free (Swedish national parks charge no entry fee). Reached only on foot: a marked, self-guided hiking trail (orange markers on stones and signage) climbs from the Njupeskärsstugan area up onto the mountain plateau, roughly 7-9 km round trip depending on the route chosen, gaining real elevation onto open fell terrain. No guide or booking is required, but hikers must stay on the marked path because the mountain heath vegetation is fragile, and the route can still be under snow into early summer. Not a casual stroll: sturdy footwear and weather-appropriate clothing for exposed alpine terrain are needed.",
+      "transport": "No public transport reaches the trailhead. Nearest access is by car to the Naturum Fulufjället visitor centre / Njupeskär car park (near Sarna/Mora area, Dalarna), then the hike above. Allow a full half-day round trip from the car park.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "height_m": 5
+    }
+  ]
+}
