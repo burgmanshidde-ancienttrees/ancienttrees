@@ -262,6 +262,25 @@ The web half is live, the app half is the Associated Domains entitlement plus
 routing an incoming URL to the tree, and the app has no link handling at all
 today.
 
+## 2026-09-03 - Outreach goes out as Ancient Trees now, not as him
+
+Closes the item opened earlier today. `OUTREACH_FROM` in
+`~/.ancienttrees-mail.env` is now `Ancient Trees <info@ancienttrees.app>`,
+verified end to end: a test mail sent through Gmail's SMTP relay arrived back
+with `From: Ancient Trees <info@ancienttrees.app>`, not the Gmail address.
+Every outreach mail, contributor reply and thank-you note goes out under the
+brand from here, per Hidde's "ik wil nooit meer burgmans.hidde ergens zien"
+and PRINCIPLES.md #10.
+
+WHAT TOOK THE TIME. Gmail's own "Send mail as" verification mail to info@
+took about 40 minutes to arrive, once, for reasons neither ImprovMX's
+dashboard nor Gmail's UI explained; a second attempt (the "Resend" link)
+landed at the same moment as the first, so both showed up together instead of
+one replacing the other. Nothing was actually broken: ImprovMX's own usage
+dashboard showed real received mail the whole time, and two independent
+external test mails (from hidde@koos.agency) had already proven inbound
+delivery before this. Only Gmail's own confirmation mail was slow.
+
 ## 2026-09-03 - The domain has a mailbox, and hello@ never existed
 
 `info@ancienttrees.app` receives. Confirmed end to end at 13:40 today: a mail
