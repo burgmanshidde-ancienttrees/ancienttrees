@@ -1,1840 +1,1798 @@
 {
- "country": "Japan",
- "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown. 2026-09-03 verify pass (1 agent, 4 candidates): all 4 verified and delivered to data/research/{higashiagatsuma,higashine,takayama,ofunato}-verified.json. None blocked. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 2 (1 agent, 13 candidates): 10 verified and delivered to data/research/{kaga,takahagi,otoyo,tamba,neba,toga,aga,biei,okuizumo,fujikawaguchiko}-verified.json (all National/Prefectural Natural Monuments or, for the Ken and Mary Tree, a culturally famous single specimen); 3 blocked (Miracle Pine Tree, died of saltwater intrusion post-2011 tsunami, now a preserved non-living monument; Tsurugaoka Hachimangu ginkgo tree, original 1000-year trunk toppled in a 2010 storm, root regrowth may be a separate future lead; Tree of philosophy, felled by its landowner in February 2016). Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 3 (3 agents, batches A/B/C dispatched on the remaining refill batch): batch A found 1 tree that joins Tokyo (delivered to data/research/famousjapan-batch-a-verified.json, tok_016) and 2 that fail the day-trip boundary for the city they were thought to join (Shokawa-zakura, too far from Takayama; Kamo no Okusu, administratively in Aira City not Kagoshima, and over an hour by transit from either) but read as strong single-tree-destination candidates on their own; recorded as leads below rather than re-researched from scratch by a future pass. Batch B (3 agents) delivered 3 fully verified single-tree-destination places, all shipped: Morioka (mor_001, Ishiwari-zakura), Kitamoto (kit_001, Ishito no Kaba-zakura), Iwata (iwt_001, Yuya no Naga Fuji). Batch C delivered 4 verified trees; 2 clearly pass the single-tree-destination test and shipped (Nago, nag_001, Hinpun Gajumaru; Yoshida, yos_001, Nomanji Cycad), 2 are honestly ambiguous on that test per the verifying agent's own flag and are held as leads below rather than shipped alone (Goshogawara's Junihon-yasu, Kumamoto's Jakushin-san no Kusu): both are real, alive, officially designated trees with good research already done, just not clearly a reason-for-the-trip on the evidence found. A future pass or Hidde's own judgement could still ship either.",
- "leads": [
-  {
-   "name": "Narao Akō Tree",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Great_Tree_of_Akou_Shinkamigoto.JPG",
-    "https://commons.wikimedia.org/wiki/File:IMG_narao.JPG",
-    "https://commons.wikimedia.org/wiki/File:IMG_narao1.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Amidaji no Keyaki",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15310888693).jpg",
-    "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15503409120).jpg",
-    "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(23353240079).jpg"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Annaka haraichi no Sugi Namiki",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Annaka_haraichi_no_suginamiki(1934).jpg",
-    "https://commons.wikimedia.org/wiki/File:Annaka_haraichi_no_suginamiki.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Arita no Icho",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Arita_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Arita_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Arita_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Atsunai-no-Harunire",
-   "lat": 42.838717,
-   "lng": 143.77902,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Atsunai-no-Harunire_2005-11-21_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Atsunai-no-Harunire_2010-10-30_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Atsunai-no-Harunire_2014-08-16_-_panoramio.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Azusawakejinja-no-Okusu",
-   "lat": 35.10065,
-   "lng": 139.067629,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Azusawake_Jinja_no_Okusu_-01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Azusawake_Jinja_no_Okusu_-02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora_20100612_(Kinomiya_Shrine)_(A).jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Bodaiji no Icho",
-   "lat": 35.15612,
-   "lng": 134.203647,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bodaiji_no_Icho_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bodaiji_no_Icho_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bodaiji_no_Icho_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Cedrus deodara (Yanaka, Tokyo)",
-   "lat": 35.721667,
-   "lng": 139.767333,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cedrus_deodara_at_yanaka_4_chome_taito_tokyo_2009.JPG",
-    "https://commons.wikimedia.org/wiki/File:Cedrus_deodara_near_Myokoji,_1_Chome-7-37,_Yanaka,_Tait%C5%8D,_Tokyo_110-0001,_Japan_-_DSC08939.JPG",
-    "https://commons.wikimedia.org/wiki/File:Cedrus_deodara_near_Myokoji,_1_Chome-7-37,_Yanaka,_Tait%C5%8D,_Tokyo_110-0001,_Japan_DSC08946.JPG"
-   ],
-   "status": "lead",
-   "species": "Cedar (Cedrus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Chokozan Shidare-zakura",
-   "lat": 35.243757,
-   "lng": 139.115383,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Chokozan_no_Shidarezakura_20080329.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shotaiji-5.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shotaiji-6.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Chujohimeseigan Zakura",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ganjoji-Gifu06.JPG",
-    "https://commons.wikimedia.org/wiki/File:Ganjoji-Gifu2008-3.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Daio sugi",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Dai-O-Sugi.jpg",
-    "https://commons.wikimedia.org/wiki/File:Daio_Sugi_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Daio_Sugi_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Eimeiji no Kinmokusei",
-   "lat": 36.261642,
-   "lng": 139.463007,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Eimeiji%27s_osmanthus,_main_stem.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eimeiji_Osmanthus._Around_the_root._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Eimeiji_Osmanthus._Around_the_root._B.jpg"
-   ],
-   "status": "lead",
-   "species": "Osmanthus (Osmanthus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Fujishima no Fuji",
-   "lat": 40.166383,
-   "lng": 141.3049,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._C.jpg"
-   ],
-   "status": "lead",
-   "species": "Wisteria (Wisteria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Futami no Omuku",
-   "lat": 34.34428,
-   "lng": 135.686578,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Futami_no_Omuku_Aphananthe_aspera_tree._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Futami_no_Omuku_Aphananthe_aspera_tree._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Futami_no_Omuku_Aphananthe_aspera_tree._C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Hachimanjinja no Isunoki",
-   "lat": 34.65926,
-   "lng": 138.915003,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Around_the_base_of_Distylium_racemosum_tree_of_Kisami_Hachiman_Jinja_Shrine.jpg",
-    "https://commons.wikimedia.org/wiki/File:Branches_and_Leaves_of_Distylium_racemosum_tree_of_Kisami_Hachiman_Jinja_Shrine._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Branches_and_Leaves_of_Distylium_racemosum_tree_of_Kisami_Hachiman_Jinja_Shrine._B.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Higashiuchi no Shidare Enoki",
-   "lat": 36.315447,
-   "lng": 138.245813,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Higashiuchi_no_Shidare_Enoki._of_the_Enomi_no_Ie_community_center._Northern_side.jpg",
-    "https://commons.wikimedia.org/wiki/File:Higashiuchi_no_Shidare_Enoki._of_the_Enomi_no_Ie_community_center._Southern_side.jpg",
-    "https://commons.wikimedia.org/wiki/File:Higashiuchi_no_Shidare_Enoki._of_the_Maruko_Folk_Museum._A.jpg"
-   ],
-   "status": "lead",
-   "species": "Hackberry (Celtis sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Hihayotenjinja-no-Horutonoki",
-   "lat": 35.010438,
-   "lng": 139.083095,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Elaeocarpus_sylvestris_20100612_(a).jpg",
-    "https://commons.wikimedia.org/wiki/File:Elaeocarpus_sylvestris_20100612_(b).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Hirakawa no O Sugi",
-   "lat": 34.132103,
-   "lng": 131.475236,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%E5%B9%B3%E5%B7%9D%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%B9%B3%E5%B7%9D%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE2.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Hodashi no Keyaki",
-   "lat": 38.76543,
-   "lng": 139.851178,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hodashi_no_Keyaki_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hodashi_no_Keyaki_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hodashi_no_Keyaki_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Hongokuji no Ohatsuki Icho",
-   "lat": 35.413825,
-   "lng": 138.441118,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_seeds_of_Hongokuji_no_Ohatsuki_Icho.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hongokuji_no_Ohatsuki_Icho_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hongokuji_no_Ohatsuki_Icho_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Hongō-yumimachi no Kusu",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Camphor_tree_in_Hong%C5%8D,_Tokyo_201504_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Camphor_tree_in_Hong%C5%8D,_Tokyo_201504_02.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ibi Nido Zakura",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ibi_Nido_Zakura2008-1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ibi_Nido_Zakura2008-2.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ibuki Yama Ibuki Juso",
-   "lat": 36.692953,
-   "lng": 140.71611,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_footnote_to_an_aerial_photograph_image_of_Juniperus_chinensis_trees_grove_of_Ibuki_Yama.jpg",
-    "https://commons.wikimedia.org/wiki/File:An_old_tree_of_Juniperus_chinensis_grove_of_Ibuki_Yama.jpg",
-    "https://commons.wikimedia.org/wiki/File:Embankment_on_the_sea_side_of_Juniperus_chinensis_grove_of_Ibuki_Yama.jpg"
-   ],
-   "status": "lead",
-   "species": "Juniper (Juniperus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ikiki no Gomon",
-   "lat": 34.247753,
-   "lng": 133.008042,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Grand_Camphor_Tree_%22Ikiki_no_Gomon%22_near_Oyamazumi_Shrine.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hole_on_Grand_Camphor_Tree_%22Ikiki_no_Gomon%22_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hole_on_Grand_Camphor_Tree_%22Ikiki_no_Gomon%22_2.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Isazawa no Kubo zakura",
-   "lat": 38.0941658,
-   "lng": 140.06700134,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E4%BD%90%E6%B2%A2%E3%81%AE%E4%B9%85%E4%BF%9D%E6%A1%9C_Kubo-zakura_Cherry_Blossom_of_Isazawa_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E4%BD%90%E6%B2%A2%E3%81%AE%E4%B9%85%E4%BF%9D%E6%A1%9C%E3%83%A9%E3%82%A4%E3%83%88%E3%82%A2%E3%83%83%E3%83%97.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ishito Kaba Zakura",
-   "lat": 36.006663,
-   "lng": 139.512355,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ishito-Kaba-Zakura_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ishito_Ishitokabazakura_1923_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ishito_Ishitokabazakura_1923_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ishiwari-zakura",
-   "lat": 39.703895,
-   "lng": 141.151204,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ishiwari-zakura_(4095787388).jpg",
-    "https://commons.wikimedia.org/wiki/File:Ishiwari-zakura_(4573650095).jpg",
-    "https://commons.wikimedia.org/wiki/File:Ishiwari-zakura_(4573704625).jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Isshingyō-no-Ōzakura",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Isshingyo_big_cherry_tree_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Isshingyo_big_cherry_tree_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Isshingyo_big_cherry_tree_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Itoi-no-Okatsura",
-   "lat": 35.411643,
-   "lng": 134.920983,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Itoi-no-Okatsura_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Itoi-no-Okatsura_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Itoi-no-Okatsura_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Katsura (Cercidiphyllum sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Itoshiro no ōsugi",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Entrance_of_mountain_climbing_trail_Itoshiro_2010_5_3.jpg",
-    "https://commons.wikimedia.org/wiki/File:Itoshiro_no_%C5%8Dsugi.JPG",
-    "https://commons.wikimedia.org/wiki/File:Itoshiro_no_%C5%8Dsugi_from_north.JPG"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Itō Hirobumi-kō Kinen Kusunoki",
-   "lat": 34.248233,
-   "lng": 133.005189,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Grand_camphor_tree_planted_by_Ito_Hirobumi_in_Oyamazumi_Shrine.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%E4%BC%8A%E8%97%A4%E5%8D%9A%E6%96%87%E5%85%AC%E8%A8%98%E5%BF%B5%E6%A5%A0%E6%A8%B9.JPG",
-    "https://commons.wikimedia.org/wiki/File:%E6%A5%A0_(%E4%BC%8A%E8%97%A4%E5%8D%9A%E6%96%87).jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Jakushin-san no Kusu",
-   "lat": 32.871569,
-   "lng": 130.684819,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%E5%AF%82%E5%BF%83%E3%81%95%E3%82%93%E3%81%AE%E6%A8%9F_-_panoramio.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Jindai-zakura, Hokuto",
-   "lat": 35.780798,
-   "lng": 138.367517,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hokuto_Yamanashi_Yamatakajindaizakura_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hokuto_Yamanashi_Yamatakajindaizakura_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Jindai-zakura.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Jissoji no Icho",
-   "lat": 40.22125,
-   "lng": 141.300139,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Jissoji.jpg",
-    "https://commons.wikimedia.org/wiki/File:Jissoji_no_Icho_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Jissoji_no_Icho_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Joganji no Byakushin",
-   "lat": 35.147223,
-   "lng": 139.102297,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Juniperus_chinensis_at_Joganji_temple._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Juniperus_chinensis_at_Joganji_temple._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Juniperus_chinensis_at_Joganji_temple._C.jpg"
-   ],
-   "status": "lead",
-   "species": "Juniper (Juniperus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Jonichiji no Icho",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Aginkgo_tree_of_Zy%C3%B4nitizi.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_at_Jyonichiji_temple.JPG",
-    "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E6%97%A5%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6_(4989225413).jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Jotakuji no Ohatsuki Icho",
-   "lat": 35.420097,
-   "lng": 138.444387,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_seeds_of_Jotakuji_no_Ohatsuki_Icho_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_seeds_of_Jotakuji_no_Ohatsuki_Icho_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Jotakuji_no_Ohatsuki_Icho_July_2019_A.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Jūnihon-yasu",
-   "lat": 40.9174882,
-   "lng": 140.5137034,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:FileZyunihonYasu_20160925_IMG_2720_stitch_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Junihonyasu_kiraichi_kanagi_goshogawara_aomori_japan.jpg",
-    "https://commons.wikimedia.org/wiki/File:Junihonyasu_kiraichi_kanagi_goshogawara_aomori_japan02.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kagoji no Shibunashigaya",
-   "lat": 34.791525,
-   "lng": 136.08075,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kagoji_no_Shibunashigaya_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kagoji_no_Shibunashigaya_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kagoji_no_Shibunashigaya_C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kamo-no-Okusu",
-   "lat": 34.040836,
-   "lng": 133.93203,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Camphortree_Awa-kamo.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kamo-no-Okusu-1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kamo-no-Okusu-2.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kamō no Kusu",
-   "lat": 31.765757,
-   "lng": 130.569538,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Big_Japanese_cinnamon_Kamo_hachiman_shrine.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kamo_no_Okusu_2023-August.JPG",
-    "https://commons.wikimedia.org/wiki/File:Kamoucho_Kamigyutoku,_Aira,_Kagoshima_Prefecture_899-5302,_Japan_-_panoramio.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kasa sugi",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_Kasasugi.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_Kasasugi_s2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_Kasasugi_s3.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kawadana no Kusu no Mori",
-   "lat": 34.170135,
-   "lng": 130.958391,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kawatana-no-Kusunomori_Aerial_photograph.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%B7%9D%E6%A3%9A%E3%81%AE%E3%82%AF%E3%82%B9%E3%81%AE%E6%A3%AE_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%B7%9D%E6%A3%9A%E3%81%AE%E3%82%AF%E3%82%B9%E3%81%AE%E6%A3%AE_-_panoramio_(1).jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kawago no kusu",
-   "lat": 33.25186,
-   "lng": 129.99354,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kawago_no_kusu_old_camphor_tree_Park_front.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kawako_camphor_tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%B7%9D%E5%8F%A4%E3%81%AE%E5%A4%A7%E6%A5%A0%E3%81%AE%E7%A5%A0.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kechimyaku Zakura",
-   "lat": 41.431518,
-   "lng": 140.106045,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kechimyaku_Zakura20080920-1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Kechimyaku_Zakura20080920-2.JPG",
-    "https://commons.wikimedia.org/wiki/File:%E8%A1%80%E8%84%88%E6%A1%9C_-_panoramio.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kega-Kuyoto-no-Shidarezakura",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kega-Kutoyo-no-Shidarezakura_ac_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Kega-Kutoyo-no-Shidarezakura_ac_(2).jpg",
-    "https://commons.wikimedia.org/wiki/File:Kega-Kutoyo-no-Shidarezakura_ac_(3).jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kenchō-ji no Byakushin",
-   "lat": 35.331167,
-   "lng": 139.5545,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kencho-ji_Temple_@_Kamakura_(13897798016).jpg",
-    "https://commons.wikimedia.org/wiki/File:Kenchoji_no_byakushin.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%BB%BA%E9%95%B7%E5%AF%BA_-_panoramio_(2).jpg"
-   ],
-   "status": "lead",
-   "species": "Juniper (Juniperus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kezoji no Kinmokusei",
-   "lat": 36.341013,
-   "lng": 139.199622,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kezoji%27s_osmanthus,_main_stem.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kezoji_Osmanthus._Around_the_root._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kezoji_Osmanthus._Around_the_root._B.jpg"
-   ],
-   "status": "lead",
-   "species": "Osmanthus (Osmanthus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kiire no ryukyukogai sanchi",
-   "lat": 31.321645,
-   "lng": 130.564992,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Aerial_photographs_of_Kiire_Kandelia_obovata_plant_community.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kandelia_obovata_most_North_area.JPG",
-    "https://commons.wikimedia.org/wiki/File:Kiire_Kandelia_obovata_plant_community.A.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kitahama no Okayanoki",
-   "lat": 34.81273,
-   "lng": 137.800542,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Around_the_root_of_Torreya_in_Kitahama_no_Okayanoki_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Around_the_root_of_Torreya_in_Kitahama_no_Okayanoki_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Around_the_root_of_Torreya_in_Kitahama_no_Okayanoki_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Torreya (Torreya sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kitahanazawa no hananoki",
-   "lat": 35.12943,
-   "lng": 136.260352,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Kitahanazawa_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Kitahanazawa_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Kitahanazawa_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Maple (Acer sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kosugi no Ōsugi",
-   "lat": 38.82005,
-   "lng": 140.187263,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Country_Roads_(2596494589).jpg",
-    "https://commons.wikimedia.org/wiki/File:Kosugi_no_Oosugi_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kosugi_no_Oosugi_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kozaki no Okusu",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:2024-kasai_Kozaki_Shrine_and_Kozaki_no_O-kusu_Katori-JPN.jpg",
-    "https://commons.wikimedia.org/wiki/File:2024-kasai_Kozaki_no_O-kusu_from_the_east_Katori-JPN.jpg",
-    "https://commons.wikimedia.org/wiki/File:2024-kasai_Kozaki_no_O-kusu_from_the_south_Katori-JPN.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kozoji no Kotsubugaya",
-   "lat": 34.44844,
-   "lng": 136.819523,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kozoji_no_Kotsubugaya._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kozoji_no_Kotsubugaya._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kozoji_no_Kotsubugaya._C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kuchioya no O-Abemaki",
-   "lat": 35.341053,
-   "lng": 134.70861,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Entrance_sign_to_Kuchioya_no_O-Abemaki.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_B.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kumano Hayatama Jinja no Nagi",
-   "lat": 33.731853,
-   "lng": 135.983978,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kumano_Hayatama_Jinja_no_Nagi._August_2019_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kumano_Hayatama_Jinja_no_Nagi._August_2019_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kumano_Hayatama_Jinja_no_Nagi._August_2019_C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kumano no Hidarimakigaya",
-   "lat": 34.996885,
-   "lng": 136.331405,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kumano_no_Hidarimakigaya_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kumano_no_Hidarimakigaya_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kumano_no_Hidarimakigaya_C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Kyushaku-fuji in Byakugoji, Tamba",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Byakugo-ji,_Wisteria_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Byakugo-ji,_Wisteria_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Byakugo-ji,_Wisteria_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Wisteria (Wisteria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Kōno Michiari Kabutogake no Kusunoki",
-   "lat": 34.24765,
-   "lng": 133.005494,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Stock_of_grand_camphor_tree_for_helmet_hanging_of_Kono_Michiari_in_Oyamazumi_Shrine.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%E6%B2%B3%E9%87%8E%E9%80%9A%E6%9C%89%E5%85%9C%E6%8E%9B%E3%81%AE%E6%A5%A0.JPG"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Minamihanazawa no hananoki",
-   "lat": 35.124718,
-   "lng": 136.257957,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Minamihanazawa_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Minamihanazawa_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Minamihanazawa_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Maple (Acer sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Mineyama Jinya Enoki",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD10.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD11.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD%EF%BC%91.jpg"
-   ],
-   "status": "lead",
-   "species": "Hackberry (Celtis sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Mishimajinja no Kinmokusei",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Mishima-taisha-no-Kinmokusei_2011-09-18.jpg",
-    "https://commons.wikimedia.org/wiki/File:Mishima-taisha_kinmokusei.JPG",
-    "https://commons.wikimedia.org/wiki/File:Mishima_taisya_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Osmanthus (Osmanthus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Mochi Tree, Hōgon-ji",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Chikubu_Island_Hougonji_DSCN1926.jpg",
-    "https://commons.wikimedia.org/wiki/File:Chikubu_Island_Hougonji_DSCN1928.jpg",
-    "https://commons.wikimedia.org/wiki/File:Chikubu_Island_Hougonji_DSCN1929.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Mukumoto no Omuku",
-   "lat": 34.807034,
-   "lng": 136.42516,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Aphananthe_aspera_at_Mukumoto_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Mukumoto_no_Omuku_Aphananthe_aspera_tree._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Mukumoto_no_Omuku_Aphananthe_aspera_tree._B.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Mumaya Sanbonmatsu",
-   "lat": 36.061667,
-   "lng": 137.041111,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Unnamed1_-_panoramio_(131).jpg",
-    "https://commons.wikimedia.org/wiki/File:Unnamed1_-_panoramio_(133).jpg",
-    "https://commons.wikimedia.org/wiki/File:Unnamed1_-_panoramio_(134).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Myokoku-Ji no Sotetsu",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:An_aerial_photograph_of_the_cycad_area_of_Myokokuji_Temple._2017.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cycas_revoluta_-_Myokoku-ji,_Sakai,_Japan.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cycas_revoluta_1100_years_-_Japan_oldest_-_in_Myokoku-ji_Osakafu.jpg"
-   ],
-   "status": "lead",
-   "species": "Sago Palm (Cycas sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Nago no Hinpun Gajumaru",
-   "lat": 26.587349,
-   "lng": 127.985938,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hinpun-Gajumaru.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hinpun_Gajumaru.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nago_Banyan_tree.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Nagoya-jo no kaya",
-   "lat": 35.18380278,
-   "lng": 136.89790278,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:An_aerial_photograph_showing_the_location_of_Kaya_in_Nagoya_Castle,_a_natural_monument.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kaya_tree_and_Nishinomaru_Exhibition_Hall_in_Nagoya_Castle.JPG",
-    "https://commons.wikimedia.org/wiki/File:Kaya_tree_in_front_of_Nishinomaru_Exhibition_Hall_in_Nagoya_Castle.JPG"
-   ],
-   "status": "lead",
-   "species": "Japanese Torreya (Torreya sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Nakakamado no Shidare Momiji",
-   "lat": 36.963445,
-   "lng": 140.807478,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Nakakamado%27s_weeping_maple._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nakakamado%27s_weeping_maple._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nakakamado%27s_weeping_maple._C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Natural habitat of Pyrus calleryana in Tado",
-   "lat": 35.133608,
-   "lng": 136.609756,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Check_dam_in_Natural_habitat_of_Pyrus_calleryana_in_Tado.jpg",
-    "https://commons.wikimedia.org/wiki/File:Forest_and_Pyrus_calleryana_in_Tado.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hypsipetes_amaurotis_on_Pyrus_calleryana.jpg"
-   ],
-   "status": "lead",
-   "species": "Pear (Pyrus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Neagarinomatsu at Kenrokuen",
-   "lat": 36.56213889,
-   "lng": 136.6625,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:131109_Kenrokuen_Kanazawa_Ishikawa_pref_Japan03s3.jpg",
-    "https://commons.wikimedia.org/wiki/File:131109_Kenrokuen_Kanazawa_Ishikawa_pref_Japan04s3.jpg",
-    "https://commons.wikimedia.org/wiki/File:Kanazawa_Castle,_Kanazawa_City;_April_2016_(01).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Negoya Jinja no Okeyaki",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E6%8C%87%E5%AE%9A%E5%A4%A9%E7%84%B6%E8%A8%98%E5%BF%B5%E7%89%A9_%E7%94%B0%E6%9C%A8.JPG",
-    "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E6%8C%87%E5%AE%9A%E5%A4%A9%E7%84%B6%E8%A8%98%E5%BF%B5%E7%89%A9_%E7%95%91%E6%9C%A8.JPG",
-    "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E6%8C%87%E5%AE%9A%E5%A4%A9%E7%84%B6%E8%A8%98%E5%BF%B5%E7%89%A9_%E7%95%91%E6%9C%A82.JPG"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Nento-Hiramatsu Pine Tree",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Nento-Hiramatsu_Park_202603_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nento-Hiramatsu_Park_202603_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nento-Hiramatsu_Park_202603_03.jpg"
-   ],
-   "status": "lead",
-   "species": "Pine (Pinus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Nezu no ki",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Juniperus_rigida_Nezunoki.jpg",
-    "https://commons.wikimedia.org/wiki/File:Juniperus_rigida_Nezunoki_2021-07-31.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Nishiuchi no Shidareguri Jiseichi",
-   "lat": 36.297928,
-   "lng": 138.159173,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Nishiuchi_no_Shidareguri_Jiseichi_June_27,_2022._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nishiuchi_no_Shidareguri_Jiseichi_June_27,_2022._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nishiuchi_no_Shidareguri_Jiseichi_June_27,_2022._C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Nomanji no Sotetsu",
-   "lat": 34.778913,
-   "lng": 138.248073,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Airplane_in_the_landing_approach_flight_to_Shizuoka_Airport._And_Nomanji_Temple_Cycad.jpg",
-    "https://commons.wikimedia.org/wiki/File:Noman_ji_Tessho_no_Zu_cropped_Totomi_Koseki_Zue_Frame_24.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nomanji_Temple_Cycad_A.jpg"
-   ],
-   "status": "lead",
-   "species": "Sago Palm (Cycas sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Nōin-hōshi Amagoi no Kusunoki",
-   "lat": 34.24845,
-   "lng": 133.004817,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Oyamazumi_shrine_Noinhoshi-amagoino-kusunoki.jpg",
-    "https://commons.wikimedia.org/wiki/File:Stock_of_grand_camphor_tree_of_Noin_Praying_for_Rain_in_Oyamazumi_Shrine.jpg",
-    "https://commons.wikimedia.org/wiki/File:View_of_grand_camphor_tree_of_Noin_Praying_for_Rain_in_Oyamazumi_Shrine.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ochi-no-mikoto Oteue no Kusunoki",
-   "lat": 34.24825,
-   "lng": 133.005006,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora20050314.jpg",
-    "https://commons.wikimedia.org/wiki/File:Grand_camphor_tree_planted_by_Ochi_no_Mikoto_in_Oyamazumi_Shrine_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Grand_camphor_tree_planted_by_Ochi_no_Mikoto_in_Oyamazumi_Shrine_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Oidani no Otsubaki",
-   "lat": 36.830507,
-   "lng": 136.86187,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Oidani_no_Otsubaki_Camellia_japonica_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Oidani_no_Otsubaki_Camellia_japonica_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Oidani_no_Otsubaki_Camellia_japonica_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Ōkakumaki",
-   "lat": 33.288833,
-   "lng": 130.196061,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Grand_Squared_Buddhist_Pine_in_Ogi_Park_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Grand_Squared_Buddhist_Pine_in_Ogi_Park_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Grand_Squared_Buddhist_Pine_in_Ogi_Park_3.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Okina sugi",
-   "lat": 30.358212,
-   "lng": 130.537663,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Okina_Sugi_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%B1%8B%E4%B9%85%E5%B3%B6_-_panoramio_(22).jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%B1%8B%E4%B9%85%E5%B3%B6_-_panoramio_(29).jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Okkazuma-no Shidarezakura",
-   "lat": 35.762023,
-   "lng": 138.709307,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_Back_side.JPG",
-    "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_East_side.A.JPG",
-    "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_East_side.B.JPG"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Okuteshinmeijinja no ōsugi",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_(bark)_of_Okuteshinmei-jinja.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_(bark)_of_Okuteshinmei-jinja_s2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Okuteshinmei-jinja.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ono no shidare-guri jiseichi",
-   "lat": 36.051025,
-   "lng": 137.996483,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Weeping_Type_Japanese_Chestnut_Habitat_in_Ono_District_A.JPG",
-    "https://commons.wikimedia.org/wiki/File:Weeping_Type_Japanese_Chestnut_Habitat_in_Ono_District_B.JPG",
-    "https://commons.wikimedia.org/wiki/File:Weeping_Type_Japanese_Chestnut_Habitat_in_Ono_District_C.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Renchakuji no Yamamomo",
-   "lat": 34.883028,
-   "lng": 139.130668,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_map_from_around_the_1930s_of_Tajima_Village%27s_large_bayberry_colony.jpg",
-    "https://commons.wikimedia.org/wiki/File:Around_the_base_of_the_Bayberry_tree_at_Renchakuji_Temple.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bayberry_tree_and_main_hall_of_Renchakuji_temple.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Ryotokuji no Ohatsuki Icho",
-   "lat": 35.328258,
-   "lng": 136.348308,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ohatsuki_Icho_of_Ryotokuji.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ryotokuji_no_Ohatsuki_Icho_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ryotokuji_no_Ohatsuki_Icho_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ryuge-Ji no Sotetsu",
-   "lat": 34.990357,
-   "lng": 138.484698,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cycads_of_Ryuge-ji_Temple_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cycads_of_Ryuge-ji_Temple_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cycads_of_Ryuge-ji_Temple_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Sago Palm (Cycas sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Saikaku, Terukuni-jinja",
-   "lat": 31.594308,
-   "lng": 130.551194,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_otara_at_Kagoshima_-_panoramio_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Terukuni-jinja_(Terukuni-ch%C5%8D,_Kagoshima)_VLux5_hdsr_04.jpg",
-    "https://commons.wikimedia.org/wiki/File:Terukuni-jinja_(Terukuni-ch%C5%8D,_Kagoshima)_VLux5_hdsr_x10.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Sajigami jinja no shidare akashide",
-   "lat": 35.743977,
-   "lng": 139.228921,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Sajigami_shrines_Shidare-Akashide_A.JPG",
-    "https://commons.wikimedia.org/wiki/File:Sajigami_shrines_Shidare-Akashide_B.JPG",
-    "https://commons.wikimedia.org/wiki/File:Sajigami_shrines_Shidare-Akashide_C.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Sawatari no Kaya no Ki",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:SawatariFunagata.JPG",
-    "https://commons.wikimedia.org/wiki/File:Sawatarinokayanokiyoshida.JPG",
-    "https://commons.wikimedia.org/wiki/File:Swatarinokayanoki.JPG"
-   ],
-   "status": "lead",
-   "species": "Japanese Torreya (Torreya sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Senbon Icho",
-   "lat": 31.48857,
-   "lng": 130.742443,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba,_nicknamed_Southand_Tree_Trunk_(botany).JPG",
-    "https://commons.wikimedia.org/wiki/File:Katsushika-hachimangu,_keidai.jpg",
-    "https://commons.wikimedia.org/wiki/File:Katsushika8manguuGinkgo.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sennen Bodaiju",
-   "lat": 35.13103861,
-   "lng": 136.27235389,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hyakusai-ji_30.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hyakusai-ji_Sennenbodaiju.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Sentsuzan no Ichii",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Nichinan_ichi_tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E8%88%B9%E9%80%9A%E5%B1%B1%E3%81%AE%E3%82%A4%E3%83%81%E3%82%A401.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E8%88%B9%E9%80%9A%E5%B1%B1%E3%81%AE%E3%82%A4%E3%83%81%E3%82%A402.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Shidare Katsura",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Shidarekatsura2_Takigenji.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shidarekatsura_Kado.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shidarekatsura_Takigenji.jpg"
-   ],
-   "status": "lead",
-   "species": "Katsura (Cercidiphyllum sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Shikishima no Kinmeichiku",
-   "lat": 36.552123,
-   "lng": 139.047893,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Shikishima_no_Kinmeichiku_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shikishima_no_Kinmeichiku_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shikishima_no_Kinmeichiku_C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Shimo'ōse-no-Ōkatsura",
-   "lat": 33.44334,
-   "lng": 130.26053,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Shimo-Ose_no_Okatsura_in_Fuji,_Saga_full_view.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shimo-Ose_no_Okatsura_in_Fuji,_Saga_trunk_back.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shimo-Ose_no_Okatsura_in_Fuji,_Saga_trunk_front.jpg"
-   ],
-   "status": "lead",
-   "species": "Katsura (Cercidiphyllum sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Shimojō no Ōichō",
-   "lat": 33.150233,
-   "lng": 131.055002,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Oguni_Kumamoto02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Oguni_Kumamoto03.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ginkgo_Trees_Oguni_Kumamoto01.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Shimokashiawa no Taihaku",
-   "lat": 33.984399,
-   "lng": 133.558334,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Oohaku01.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E4%B8%8B%E6%9F%8F%E3%81%AE%E5%A4%A7%E6%9F%8F_-_panoramio.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Shimura-Ken-no-ki",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:ShimuraKen_Wood.jpg",
-    "https://commons.wikimedia.org/wiki/File:ShimuraKen_Wood_202008.jpg",
-    "https://commons.wikimedia.org/wiki/File:ShimuraKen_Wood_on_Summer.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Shinden-no Oitozakura",
-   "lat": 35.845722,
-   "lng": 138.346329,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Shinden-no_Oitozakura.JPG",
-    "https://commons.wikimedia.org/wiki/File:Shinden-no_Oitozakura_and_Azusa_express_train.JPG",
-    "https://commons.wikimedia.org/wiki/File:Shinden-no_Oitozakura_and_Mt_Kai-komagatake.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Shingu-Kumano-jinja-no-Oicho",
-   "lat": 37.61890167,
-   "lng": 139.83069722,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Shingu-Kumanojinja_no_%C5%8Cich%C5%8D_20101219_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shrine_Shingu-Kumano-jinja_3.JPG",
-    "https://commons.wikimedia.org/wiki/File:Unnamed2_-_panoramio_(5703).jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Shinmachi no O Sotetsu",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Shinmachi_cycad._Postcards_around_1935.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shinmachi_no_Osotetsu-1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shinmachi_no_Osotetsu-2.jpg"
-   ],
-   "status": "lead",
-   "species": "Sago Palm (Cycas sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Shinmeisha no Oshii",
-   "lat": 34.875553,
-   "lng": 137.113848,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_natural_monument_stone_monument_of_%22Shinmeisha_no_Oshii%22_written_by_Ichiro_Hatoyama,_Minister_of_Education.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shinmeisha_no_Oshii%27s_natural_monument_stele._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shinmeisha_no_Oshii%27s_natural_monument_stele._B.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Shirahatayama Hachimangu no Ohatsuki Icho",
-   "lat": 36.387623,
-   "lng": 140.459803,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Ohatuki-Ichou_(Mito-Hachimangu).JPG",
-    "https://commons.wikimedia.org/wiki/File:Shirahatayama_Hachimangu_no_Ohatsuki_Icho._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shirahatayama_Hachimangu_no_Ohatsuki_Icho._B.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Shiroko Fudan Zakura",
-   "lat": 34.824275,
-   "lng": 136.580083,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Autumn_blooming_Shiroko_Fudan_Zakura_blossom_sketched_on_November_10,_1935.jpg",
-    "https://commons.wikimedia.org/wiki/File:Fudan_Zakura%27s_poetry_stone_monument_built_in_1868.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shiroko_Fudan_Zakura._A.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Shogen-in no sakasa gashiwa",
-   "lat": 39.559933,
-   "lng": 141.166035,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Shogen-in_no_sakasa_gashiwa._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shogen-in_no_sakasa_gashiwa._B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shogen-in_no_sakasa_gashiwa._C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Shokawa zakura",
-   "lat": 36.090077,
-   "lng": 136.939507,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Lake_Miboro02s3s3200.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shokawa_zakura.jpg",
-    "https://commons.wikimedia.org/wiki/File:Shokawa_zakura_2008-05.jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sugihokowakenomikoto-jinja no Ōkusu",
-   "lat": 34.754322,
-   "lng": 138.988885,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora_20100601_(Kawazu)_(A1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora_20100601_(Kawazu)_(A2).jpg",
-    "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora_20100601_(Kawazu)_(B).jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Sugimori Jinja no Ohatsuki Icho",
-   "lat": 35.48305,
-   "lng": 135.474448,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Sugimori_Jinja_no_Ohatsuki_Icho,_natural_monument_of_Japan_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Sugimori_Jinja_no_Ohatsuki_Icho,_natural_monument_of_Japan_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sugimori_Jinja_no_Ohatsuki_Icho_East_side_tree_A.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Takase no Taiboku",
-   "lat": 37.51377778,
-   "lng": 139.89591667,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Takese-no-Keyaki.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Takeo no Ōkusu",
-   "lat": 33.18748,
-   "lng": 130.01921,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Hokora_in_Takeo_no_Okusu.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sacred_tree_%22Takeo_no_Okusu%22_of_Takeo_Shrine_1.jpg",
-    "https://commons.wikimedia.org/wiki/File:Sacred_tree_%22Takeo_no_Okusu%22_of_Takeo_Shrine_2.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Takinoya no Hidarimakigaya",
-   "lat": 35.301378,
-   "lng": 134.737817,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Distant_view_of_Takinoya_no_Hidarimakigaya_tree.jpg",
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Takinoya_no_Hidarimakigaya,_natural_monument_of_Japan.jpg",
-    "https://commons.wikimedia.org/wiki/File:Takinoya_no_Hidarimakigaya_A.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tamatoriyama-no-Ōkatsura",
-   "lat": 33.866122,
-   "lng": 133.53075,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio_(1).jpg"
-   ],
-   "status": "lead",
-   "species": "Katsura (Cercidiphyllum sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tarumi-no-Ozakura",
-   "lat": 35.348044,
-   "lng": 134.711029,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_big_cherry_tree_at_Tarumi_village_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:DSC_0933oozakura3.jpg",
-    "https://commons.wikimedia.org/wiki/File:Oozakura-miagete.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tate-no-Omayumi",
-   "lat": 37.409323,
-   "lng": 140.144754,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Tate-no-Omayumi_(8112790876).jpg",
-    "https://commons.wikimedia.org/wiki/File:%E8%88%98%E3%81%AE%E5%A4%A7%E3%83%9E%E3%83%A6%E3%83%9F_-_panoramio.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tatsuno no Katashibo Chikurin",
-   "lat": 34.864088,
-   "lng": 134.54265,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Tatsuno_no_Katashibo_Chikurin_Bamboo_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tatsuno_no_Katashibo_Chikurin_Bamboo_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tatsuno_no_Katashibo_Chikurin_Bamboo_C.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Teno no Sugi",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Teno_no_Sugi.jpg",
-    "https://commons.wikimedia.org/wiki/File:Teno_no_Sugi_2.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tenonosugi.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "The Great Mulberry of Usune",
-   "lat": 36.67999,
-   "lng": 139.044938,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Usune_no_O-Kuwa,_natural_monument_of_Japan.jpg",
-    "https://commons.wikimedia.org/wiki/File:Usune_no_O-Kuwa_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Usune_no_O-Kuwa_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Mulberry (Morus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Torreya nucifera at Zenyō-ji",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Japanese_nutmeg_in_Zeny%C5%8Dmitsu-ji_201504_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Japanese_nutmeg_in_Zeny%C5%8Dmitsu-ji_201504_02.jpg",
-    "https://commons.wikimedia.org/wiki/File:Japanese_nutmeg_in_Zeny%C5%8Dmitsu-ji_201504_03.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Tsukazaki no Kusu",
-   "lat": 31.33872,
-   "lng": 130.971065,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Camphor_tree_of_Tsukazaki_Kagoshima.JPG",
-    "https://commons.wikimedia.org/wiki/File:Kusu-tukazaki_(Kimotsuki).jpg",
-    "https://commons.wikimedia.org/wiki/File:Tsukazaki_no_Kusu,_zenkei-1.jpg"
-   ],
-   "status": "lead",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tsunekami no Sotetsu",
-   "lat": 35.637767,
-   "lng": 135.820198,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:The_cycad,_the_nothan_end_of_Japan_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tsunekami_district_Cycad_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Tsunekami_district_Cycad_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Sago Palm (Cycas sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Tsutta no Keyaki",
-   "lat": 34.386152,
-   "lng": 135.800913,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:%E5%9C%9F%E7%94%B0%E3%81%AE%E3%82%B1%E3%83%A4%E3%82%AD_2013.3.04_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%9C%9F%E7%94%B0%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD_2012.2.20_-_panoramio.jpg",
-    "https://commons.wikimedia.org/wiki/File:%E5%9C%9F%E7%94%B0%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD_A_zelkova_tree_in_Tsutta_2011.11.12_-_panoramio.jpg"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Uenohara no Okeyaki",
-   "lat": 35.62973,
-   "lng": 139.112863,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Uenohara_no_Okeyaki.jpg",
-    "https://commons.wikimedia.org/wiki/File:Uenohara_no_Okeyaki_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Uenohara_no_Okeyaki_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ushijima no Fuji",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Kasukabe_Wisteria_Floribunda_From_Tokaen_1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Kasukabe_Wisteria_Of_Ushijima_1.JPG",
-    "https://commons.wikimedia.org/wiki/File:Kasukabe_Wisteria_Of_Ushijima_1.jpg"
-   ],
-   "status": "lead",
-   "species": "Wisteria (Wisteria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Ushikubo-no-Nagi",
-   "lat": 34.807465,
-   "lng": 137.380095,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:An_aerial_photograph_showing_the_location_of_Nagi_in_Ushikubo,_a_natural_monument.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nageia_nagi,_at_Shimonagayama,_Toyokawa,_Aichi_(2013.08.28)_01.jpg",
-    "https://commons.wikimedia.org/wiki/File:Nageia_nagi,_at_Shimonagayama,_Toyokawa,_Aichi_(2013.08.28)_02.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Ushio no Katsura",
-   "lat": 35.3325,
-   "lng": 133.012532,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Ushio_no_Katsura,_natural_monument_of_Japan.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ushio_no_Katsura_Cercidphylluum_japonicum_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Ushio_no_Katsura_Cercidphylluum_japonicum_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Katsura (Cercidiphyllum sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Utsukushimori no Oyamatsutsuji",
-   "lat": 35.935745,
-   "lng": 138.416582,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_Kiyosato_highland.A.JPG",
-    "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_Kiyosato_highland.B.JPG",
-    "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_Kiyosato_highland_forest.JPG"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Wilsons Stump",
-   "lat": 30.359715,
-   "lng": 130.557859,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Inside_Wilson_Stump_upward.jpg",
-    "https://commons.wikimedia.org/wiki/File:Inside_the_Cedar_Tree_(52931205586).jpg",
-    "https://commons.wikimedia.org/wiki/File:Wilson_Stump_01.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Yagisawa no Ohatsuki Icho",
-   "lat": 35.4105,
-   "lng": 138.458867,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Minobu-cho_Ohatsuki_Ginkgo_natural_monument_group_area.jpg",
-    "https://commons.wikimedia.org/wiki/File:Yagisawa_no_Ohatsuki_Icho_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Yagisawa_no_Ohatsuki_Icho_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Ginkgo (Ginkgo sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Yamanokami no Fuji",
-   "lat": 35.516108,
-   "lng": 138.830328,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Around_the_Yamanokami_no_Fuji_wisteria_roots.jpg",
-    "https://commons.wikimedia.org/wiki/File:Stone_inscribed_boards_in_Yamanokami_no_Fuji,_natural_monument_of_Japan.jpg",
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yamanokami_no_Fuji,_natural_monument_of_Japan.jpg"
-   ],
-   "status": "lead",
-   "species": "Wisteria (Wisteria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Yashiro-no-Okeyaki",
-   "lat": 35.232255,
-   "lng": 134.785027,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Yashiro-no-Okeyaki_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Yashiro-no-Okeyaki_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Yashiro-no-Okeyaki_C.jpg"
-   ],
-   "status": "lead",
-   "species": "Zelkova (Zelkova sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Yasutomi zakura",
-   "lat": 35.512256,
-   "lng": 137.830536,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(1).jpg",
-    "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(2).jpg",
-    "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(3).jpg"
-   ],
-   "status": "lead",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Yokomuro no o-kaya",
-   "lat": 36.441153,
-   "lng": 139.056147,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Full_view_of_Yokomuro_no_O-Kaya_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Full_view_of_Yokomuro_no_O-Kaya_B.jpg",
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yokomuro_no_Okaya,_natural_monument_of_Japan.jpg"
-   ],
-   "status": "lead",
-   "species": "Japanese Torreya (Torreya sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Yougou no Matsu",
-   "lat": 35.727667,
-   "lng": 139.8935,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Flickr_-_Kabacchi_-_Pinus_-_17.jpg",
-    "https://commons.wikimedia.org/wiki/File:Flickr_-_Kabacchi_-_Pinus_-_18.jpg",
-    "https://commons.wikimedia.org/wiki/File:Flickr_-_Kabacchi_-_Pinus_-_19.jpg"
-   ],
-   "status": "lead"
-  },
-  {
-   "name": "Yuya no Naga Fuji",
-   "lat": 34.737043,
-   "lng": 137.814745,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Red_wisteria_at_Yuya_no_Naga_Fuji_garden.jpg",
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yuya_no_Naga_Fuji,_natural_monument_of_Japan_A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yuya_no_Naga_Fuji,_natural_monument_of_Japan_B.jpg"
-   ],
-   "status": "lead",
-   "species": "Wisteria (Wisteria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Zenshoji no O Sugi",
-   "lat": null,
-   "lng": null,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Zensyouji002.JPG",
-    "https://commons.wikimedia.org/wiki/File:Zensyouji003.JPG"
-   ],
-   "status": "lead",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Shokawa-zakura",
-   "lat": 36.07914,
-   "lng": 136.94625,
-   "place": "Shokawa-cho, Takayama (merged 2005, but ~28.5km from Takayama centre)",
-   "species": "Edohigan Cherry (Prunus itosakura)",
-   "species_basis": "confirmed by ja.wikipedia and Gifu prefecture tourism site",
-   "status": "lead",
-   "reason": "Two ~450-year-old cherries, Gifu Prefecture Designated Natural Monument, moved in a famous 1960 engineering effort to save them from the Miboro Dam reservoir (documented on NHK's Project X, ~50,000 visitors/year). Height ~20m, girth ~600cm. Fails the day-trip boundary for Takayama (no honest 30-minute public-transit description; ~30-40 min by car via expressway, or highway bus plus a 6km walk). Reads as its own place (Shokawa / Miboro-ko) under the 2026-08-31 single-tree exception rather than a Takayama stretch. Sources: ja.wikipedia.org/wiki/%E8%8D%98%E5%B7%9D%E6%A1%9C, kankou-gifu.jp/spot/detail_1249.html. Needs a dedicated verify pass to finalise the record (this note is pre-verification research, not a delivered entry)."
-  },
-  {
-   "name": "Kamo no Okusu",
-   "lat": 31.765764,
-   "lng": 130.569442,
-   "place": "Aira City, Kagoshima Prefecture (not Kagoshima City)",
-   "species": "Camphor Tree (Camphora sp.)",
-   "species_basis": "confirmed by ja.wikipedia (蒲生のクス)",
-   "status": "lead",
-   "reason": "Japan's largest-girth tree by measurement: trunk circumference 24.2m at 1.3m height, root circumference 33.5m, height ~30m, estimated age ~1,500 years, Special Natural Monument since 1952, at Kamo Hachiman Shrine. Administratively in Aira City, a separate municipality from Kagoshima City, and roughly 64 minutes by bus from Kagoshima Chuo Station, so it does not join Kagoshima's page honestly. Nationally famous (\"Japan's biggest tree\") and reads as a strong single-tree-destination candidate on its own (its own place, Aira), stronger than most already-published single-tree exceptions. Sources: ja.wikipedia.org/wiki/%E8%92%B2%E7%94%9F%E3%81%AE%E3%82%AF%E3%82%B9, kagoshima-kankou.com/guide/11083 (prefecture tourism board), jataff.jp. Needs a dedicated verify pass to finalise the record."
-  },
-  {
-   "name": "Jūnihon-yasu",
-   "lat": 40.9174882,
-   "lng": 140.5137034,
-   "place": "Kanagi, Goshogawara, Aomori Prefecture",
-   "species": "Hiba (Thujopsis dolabrata)",
-   "species_basis": "confirmed by ja.wikipedia and aomori-tourism.com",
-   "status": "lead",
-   "reason": "Fully verified (two independent sources, alive, pinned from a geotagged Commons photo) but held below the single-tree-destination bar rather than shipped alone: a Goshogawara City natural monument (a 2003 national Natural Monument bid was dropped for lack of landowner consent), 'New Japan 100 Famous Trees' listing (1990), a distinctive 12-branch fork resembling a fish-spear with its own local legend, and real evidence of enthusiast pilgrimage (multiple independent Japanese blog/trip reports from people who drove out specifically to see it). Against: no English-language coverage found beyond monumentaltrees.com (which 403'd to this pass, so its girth figure of 7.30m is unverified) and Commons/Wikidata scaffolding; sits down a forest road with nothing else nearby. Full verified record (age 300-800 years contested between sources, girth 800cm per the higher council-record figure, height 34m) is in data/research/famousjapan-batch-c-verified.json, gsg_001, ready to ship if a future pass or Hidde judges the destination bar cleared."
-  },
-  {
-   "name": "Jakushin-san no Kusu",
-   "lat": 32.871569,
-   "lng": 130.684819,
-   "place": "Kitazako, Kita Ward, Kumamoto City",
-   "species": "Camphor Tree (Camphora officinarum)",
-   "species_basis": "confirmed by kyoju.biodic.go.jp (Ministry of Environment giant-tree database)",
-   "status": "lead",
-   "reason": "Fully verified (two independent sources, alive, pinned from a geotagged Commons photo) but held below the single-tree-destination bar rather than shipped alone: an exceptionally large trunk (1710cm girth), a purpose-built public park around it since 1989, an active annual community ritual on the anniversary of the death of Kanokogi Chikakazu (the Sengoku-era lord the tree is named for, said to be buried at its base), and a 'New Japan 100 Famous Trees' listing (1990). Against: only a prefectural natural monument (since 1974, not national), no English-language tourism coverage found beyond a government film-location directory, and it competes for attention with several other very large Kyushu camphors (Kamo no Okusu, Takeo's giant camphor). Full verified record (age ~500-800 years by local tradition, girth 1710cm, height 30m) is in data/research/famousjapan-batch-c-verified.json, kum_001, ready to ship if a future pass or Hidde judges the destination bar cleared."
-  }
- ],
- "blocked": [
-  {
-   "name": "Miracle Pine Tree",
-   "reason": "Checked 2026-09-03. The original pine died from saltwater intrusion after the 2011 tsunami's ground subsidence let seawater into its roots. What stands today at the Takata Matsubara Tsunami Recovery Memorial Park is a preserved monument built from much of the original wood plus a steel core and artificial replica parts, not a living tree. Never ships as an entry per the never-dead rule; may be mentioned as context inside a different living-tree story about the region.",
-   "coordinate": [
-    39.00425988,
-    141.62433939
-   ]
-  },
-  {
-   "name": "Tsurugaoka Hachimangu ginkgo tree",
-   "reason": "Checked 2026-09-03. The original roughly 1,000-year-old ginkgo trunk toppled in a storm on 10 March 2010 (confirmed by multiple Japanese news sources including Kanagawa Shimbun). The felled section was cut down and replanted 7m from the original spot, and new shoots (hikobae) sprouted from the surviving root a month later, so there may be a living regrowth from the same root system today, comparable to the Elm of Saint-Gervais precedent. Not delivered this pass because the current height/condition of that regrowth 16 years on was not established within the time box; a future pass could verify it as a living-succession entry rather than presenting the felled 1000-year trunk as still standing.",
-   "coordinate": [
-    35.32569167,
-    139.55596722
-   ]
-  },
-  {
-   "name": "Tree of philosophy",
-   "reason": "Checked 2026-09-03. This Biei, Hokkaido poplar was felled by its landowner on 24 February 2016 (multiple Japanese news sources, e.g. Nikkei and ITmedia), due to age-related collapse risk and damage tourists were causing to the surrounding farmland. Dead/gone, never ships per the never-dead rule.",
-   "coordinate": [
-    null,
-    null
-   ]
-  },
-  {
-   "name": "Wilson's Stump",
-   "reason": "Stump of a yakusugi felled roughly 500 years ago (named for E.H. Wilson who documented it in 1914); dead, not a living tree. Never ships as an entry per the never-dead rule. May be mentioned as context inside a living Yakushima tree story (its three living descendants growing nearby could be a separate future lead).",
-   "coordinate": [
-    30.359715,
-    130.557859
-   ]
-  },
-  {
-   "name": "Natural habitat of Pyrus calleryana in Tado",
-   "reason": "Official designation is \"Tado Inunashi Natural Habitat\" (多度のイヌナシ自生地), a ~0.3ha / 3,000sqm protected wild population of endangered Pyrus calleryana var. dimorphophylla on Mt Tado, Kuwana, Mie, designated National Natural Monument 2010-08-05. A habitat/population, not one identifiable tree or a compact ensemble with one place to stand. Rejected per brief instruction.",
-   "coordinate": [
-    35.133608,
-    136.609756
-   ]
-  },
-  {
-   "name": "Okina sugi",
-   "reason": "Fell on 10 September 2010 (confirmed by two independent Japanese news sources, Nikkei and a Yahoo News/local report): the trunk was roughly 90 percent hollow/decayed internally and could not bear the weight of its own upper 20m. Was the second-largest-girth Yakusugi (12.6m/1260cm) after Jomon Sugi, estimated age about 2,000 years, height 23.7m before falling, standing at about 1000m elevation on the Jomon Sugi trail. Now dead/fallen, so it never ships as an entry per the never-dead rule. The Commons photos in the lead file likely predate the 2010 fall and would misrepresent it as standing today.",
-   "coordinate": [
-    30.358212,
-    130.537663
-   ]
-  },
-  {
-   "name": "Phoenix Trees Exposed to the A-bomb",
-   "reason": "Confirmed mismatch, checked per brief instruction 2026-09-01. The Commons file File:Aogiri_Yokohama_Sakae.jpg carries its own caption and geotag: this is a second-generation aogiri (Firmiana simplex, Chinese Parasol Tree) planted at Earth Plaza (Chikyu Shimin Kanagawa Plaza) in Sakae-ku, YOKOHAMA, photographed 17 August 2025. It is a young sapling grown from the SEED of the trees that survived the Hiroshima bombing 1.3km from the hypocentre, not a tree itself exposed to the bomb, and it does not stand in Hiroshima at all. \"Phoenix\" in the lead name is the English nickname for aogiri (Chinese Parasol Tree), not the palm genus Phoenix; the leads file's own \"Date Palm (Phoenix sp.)\" species guess is a genus misread from that nickname and is wrong on every axis: wrong species, wrong history (second-generation descendant, not an original hibaku tree) and wrong location (Yokohama, not Hiroshima). Never chase this as a bombed original in Hiroshima. It COULD in principle become its own honestly-described lead someday (a peace-memorial aogiri sapling in Sakae-ku, Yokohama, correctly named and species-corrected), but that is a new, separate research question, not this entry, and the tree is very young rather than old.",
-   "coordinate": [
-    35.367167,
-    139.552694
-   ]
-  },
-  {
-   "name": "Hiramatsu no utsukushimatsu jiseichi",
-   "reason": "Checked per brief 2026-09-01. Official designation is Hiramatsu no Utsukushimatsu Jiseichi (平松のウツクシマツ自生地), a National Natural Monument (designated 3 March 1921) in KONAN CITY, SHIGA PREFECTURE (not Kyoto city, though within day-trip range at ~28km), protecting a wild population of Utsukushimatsu, a naturally radial-branching form of Japanese red pine (Pinus densiflora forma umbraculifera) that grows together on the southeast slope of Mt Bishozan. This is the only place this growth form occurs as a natural stand. Confirmed via Japanese Wikipedia and the Agency for Cultural Affairs database (online.bunka.go.jp), both found via search. A HABITAT/POPULATION covering a hillside, not one identifiable tree or a compact ensemble with one obvious place to stand; rejected on the same grounds as the Tado Inunashi habitat already blocked in this file. Also actively declining: multiple sources note rapid pine-wilt-disease losses in recent years despite local conservation efforts, which would make an alive-now claim for any single specimen within it hard to stand behind without visiting. A separate lead already in this file, \"Nento-Hiramatsu Pine Tree\" (Commons category Nento-Hiramatsu Park, no coordinate yet), may be an individually named specimen near or within this habitat and could be worth checking on its own in a future pass; not researched here, out of scope for this brief.",
-   "coordinate": [
-    34.993108,
-    136.075728
-   ]
-  },
-  {
-   "name": "Sawajiri no O Hinoki (Sawara)",
-   "reason": "Verified as real, alive and remarkable (Japan's largest known Sawara cypress, National Natural Monument 1974) but stands on private farmland managed for generations by the Usami family; no source establishes a public viewing point. Blocked under hard rule 10, 2026-09-02. A later pass could call Iwaki's tourism office to check for a public viewpoint.",
-   "status": "blocked"
-  },
-  {
-   "name": "Dogata no Shiinoki",
-   "lat": 36.56208333,
-   "lng": 136.65792778,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG",
-    "https://commons.wikimedia.org/wiki/File:Hirosaka_Ryokuchi_Park,_Kanazawa_-_Ishiinoki_-_01_-_2016-04-16.jpg",
-    "https://commons.wikimedia.org/wiki/File:Hirosaka_Ryokuchi_Park,_Kanazawa_-_Ishiinoki_-_02_-_2016-04-16.jpg"
-   ],
-   "status": "done",
-   "published_as": "kan_001",
-   "reason": "Already on the site as kan_001. Found on 2026-09-01 when a verify pass re-researched it from this list: the famous-tree leads carry no marker for what we already map, so five of nineteen Japanese candidates were trees we already had. Marked here so no pass pays for it a third time."
-  },
-  {
-   "name": "Hagurosan no Sugi Namiki",
-   "lat": 38.706085,
-   "lng": 139.96479,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_stone_monument_buried_in_the_snow_of_the_cedar_trees_Mt._Haguro,_a_natural_monument.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cedar_trees_on_Mt._Haguro_covered_in_snow._January_2022._A.jpg",
-    "https://commons.wikimedia.org/wiki/File:Cedar_trees_on_Mt._Haguro_covered_in_snow._January_2022._B.jpg"
-   ],
-   "status": "blocked",
-   "species": "Japanese Cedar (Cryptomeria sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Not a single tree: this is the collective cedar avenue (Sugi Namiki) along the 1.8km stone sando up Mt Haguro, itself designated a special natural monument as a group of 500+ cedars 350-500 years old. All Commons photos show the avenue/path in snow, not one named specimen. The one individually famous tree among them, Jiji Sugi ('Grandpa Cedar', 1000+ years, the largest and oldest), is a distinct named tree and is delivered separately (see Hagurosan no Jiji Sugi, published as trk_001). This avenue entry fails the collectible-point rule (avenue/wood, CLAUDE.md La Rambla precedent). Sources: https://ja.wikipedia.org/wiki/%E7%BE%BD%E9%BB%92%E5%B1%B1%E3%81%AE%E3%82%B9%E3%82%AE%E4%B8%A6%E6%9C%A8"
-  },
-  {
-   "name": "Higashi Akuragawa Inunashi Jiseichi",
-   "lat": 34.988348,
-   "lng": 136.62461,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:A_sketch_of_the_Higashi_Akuragawa_Pyrus_calleryna._Created_by_the_Ministry_of_Home_Affairs_of_Japan_in_1921.jpg",
-    "https://commons.wikimedia.org/wiki/File:Aerial_photograph_image_of_Inunashi_habit_in_Higashi_Akuragawa_and_Ainashi_habit_in_Nishi_Akuragawa.jpg",
-    "https://commons.wikimedia.org/wiki/File:Higashi_Akuragawa_Pyrus_calleryna_habitat._Photographed_April_29,_1934.jpg"
-   ],
-   "status": "blocked",
-   "reason": "Not a single tree: this is a national Natural Monument habitat site (jiseichi) protecting the wild population of Pyrus calleryana var. (Inu-Nashi), designated 1922 as the type locality where botanist Makino Tomitaro described the species. It is a scientific/botanical reserve covering a population of wild pear trees, not one named specimen; Commons photos are aerial habitat photographs and a 1921 government sketch of the habitat, not a tree portrait. Fails the collectible-point rule (habitat site, not a single tree). Source: https://ja.wikipedia.org/wiki/%E6%9D%B1%E9%98%BF%E5%80%89%E5%B7%9D%E3%82%A4%E3%83%8C%E3%83%8A%E3%82%B7%E8%87%AA%E7%94%9F%E5%9C%B0"
-  },
-  {
-   "name": "Kakunodate no Shidarezakura",
-   "lat": 39.599232,
-   "lng": 140.560874,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20060506.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20180428a.jpg",
-    "https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20180428b.jpg"
-   ],
-   "status": "blocked",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Not a single tree: this is the collective name for the National Natural Monument covering ~147-162 individually designated weeping cherries (Edo-higan cultivar) among roughly 400 total, planted on private samurai-house properties along ~2km of Bukeyashiki-dori. Japanese Wikipedia states outright it is a 'shorthand for about 150 trees' (約150本の総称である), designated as a group in 1974 (153 trees then, ~147 by 1999-2000 after storm losses); Semboku city's own tourism page confirms 162 of ~400 trees hold the designation today. All Commons photos are titled 'Bukeyashiki Street in Kakunodate', i.e. street views of the avenue, not a photo of one named specimen. No single stand-out individually-named tree distinct from the avenue was found in English or Japanese sources. Fails the project's collectible-point rule (CLAUDE.md, the Barcelona/La Rambla precedent): an avenue of ~150-400 trees along a 2km street has no single obvious place to stand. Sources checked: https://ja.wikipedia.org/wiki/%E8%A7%92%E9%A4%A8%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%82%B6%E3%82%AF%E3%83%A9 and https://www.city.semboku.akita.jp/en/sightseeing/spot/07_shidare.html."
-  },
-  {
-   "name": "Hitome-senbon-zakura",
-   "lat": 38.056016,
-   "lng": 140.746526,
-   "photos": [
-    "https://commons.wikimedia.org/wiki/File:Class_EF81-0_Electric_Locomotive.jpg",
-    "https://commons.wikimedia.org/wiki/File:E653-1000_Series_EMU.jpg",
-    "https://commons.wikimedia.org/wiki/File:Funaoka_view.jpg"
-   ],
-   "status": "blocked",
-   "species": "Cherry (Prunus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "Hitome Senbon Zakura is a roughly 1,200-tree cherry planting along ~8km of the Shiroishi River embankment in Miyagi, not a single tree; not a collectible point."
-  }
- ]
+  "country": "Japan",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-02 verify passes (3 agents, 12 candidates): 11 verified and delivered to data/research/{otama,nihonmatsu,tamura,udacity,igacity,minamialps,nagano}-verified.json (all National/Prefectural Natural Monuments in Japan); 1 blocked (Sawajiri no O Hinoki, private land). Entries removed from this leads list now that they are delivered elsewhere; see LOG.md 2026-09-02 for the full breakdown. 2026-09-03 verify pass (1 agent, 4 candidates): all 4 verified and delivered to data/research/{higashiagatsuma,higashine,takayama,ofunato}-verified.json. None blocked. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 2 (1 agent, 13 candidates): 10 verified and delivered to data/research/{kaga,takahagi,otoyo,tamba,neba,toga,aga,biei,okuizumo,fujikawaguchiko}-verified.json (all National/Prefectural Natural Monuments or, for the Ken and Mary Tree, a culturally famous single specimen); 3 blocked (Miracle Pine Tree, died of saltwater intrusion post-2011 tsunami, now a preserved non-living monument; Tsurugaoka Hachimangu ginkgo tree, original 1000-year trunk toppled in a 2010 storm, root regrowth may be a separate future lead; Tree of philosophy, felled by its landowner in February 2016). Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 verify pass 3 (3 agents, batches A/B/C dispatched on the remaining refill batch): batch A found 1 tree that joins Tokyo (delivered to data/research/famousjapan-batch-a-verified.json, tok_016) and 2 that fail the day-trip boundary for the city they were thought to join (Shokawa-zakura, too far from Takayama; Kamo no Okusu, administratively in Aira City not Kagoshima, and over an hour by transit from either) but read as strong single-tree-destination candidates on their own; recorded as leads below rather than re-researched from scratch by a future pass. Batch B (3 agents) delivered 3 fully verified single-tree-destination places, all shipped: Morioka (mor_001, Ishiwari-zakura), Kitamoto (kit_001, Ishito no Kaba-zakura), Iwata (iwt_001, Yuya no Naga Fuji). Batch C delivered 4 verified trees; 2 clearly pass the single-tree-destination test and shipped (Nago, nag_001, Hinpun Gajumaru; Yoshida, yos_001, Nomanji Cycad), 2 are honestly ambiguous on that test per the verifying agent's own flag and are held as leads below rather than shipped alone (Goshogawara's Junihon-yasu, Kumamoto's Jakushin-san no Kusu): both are real, alive, officially designated trees with good research already done, just not clearly a reason-for-the-trip on the evidence found. A future pass or Hidde's own judgement could still ship either. 2026-09-03: Junihon-yasu and Jakushin-san no Kusu, both previously verified and held pending a single-tree-destination judgement, were judged to clear the bar (documented enthusiast pilgrimage and a distinctive legend for the former; an active annual community rite and a purpose-built park for the latter) and published as their own single-tree places, data/cities/kanagi.json (kng_001) and data/cities/ueki.json (uek_001). Removed from this leads list.",
+  "leads": [
+    {
+      "name": "Narao Akō Tree",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Great_Tree_of_Akou_Shinkamigoto.JPG",
+        "https://commons.wikimedia.org/wiki/File:IMG_narao.JPG",
+        "https://commons.wikimedia.org/wiki/File:IMG_narao1.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Amidaji no Keyaki",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15310888693).jpg",
+        "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15503409120).jpg",
+        "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(23353240079).jpg"
+      ],
+      "status": "lead",
+      "species": "Zelkova (Zelkova sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Annaka haraichi no Sugi Namiki",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Annaka_haraichi_no_suginamiki(1934).jpg",
+        "https://commons.wikimedia.org/wiki/File:Annaka_haraichi_no_suginamiki.jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Arita no Icho",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Arita_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Arita_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Arita_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Atsunai-no-Harunire",
+      "lat": 42.838717,
+      "lng": 143.77902,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Atsunai-no-Harunire_2005-11-21_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Atsunai-no-Harunire_2010-10-30_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Atsunai-no-Harunire_2014-08-16_-_panoramio.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Azusawakejinja-no-Okusu",
+      "lat": 35.10065,
+      "lng": 139.067629,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Azusawake_Jinja_no_Okusu_-01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Azusawake_Jinja_no_Okusu_-02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora_20100612_(Kinomiya_Shrine)_(A).jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Bodaiji no Icho",
+      "lat": 35.15612,
+      "lng": 134.203647,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bodaiji_no_Icho_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bodaiji_no_Icho_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bodaiji_no_Icho_C.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Cedrus deodara (Yanaka, Tokyo)",
+      "lat": 35.721667,
+      "lng": 139.767333,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cedrus_deodara_at_yanaka_4_chome_taito_tokyo_2009.JPG",
+        "https://commons.wikimedia.org/wiki/File:Cedrus_deodara_near_Myokoji,_1_Chome-7-37,_Yanaka,_Tait%C5%8D,_Tokyo_110-0001,_Japan_-_DSC08939.JPG",
+        "https://commons.wikimedia.org/wiki/File:Cedrus_deodara_near_Myokoji,_1_Chome-7-37,_Yanaka,_Tait%C5%8D,_Tokyo_110-0001,_Japan_DSC08946.JPG"
+      ],
+      "status": "lead",
+      "species": "Cedar (Cedrus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Chokozan Shidare-zakura",
+      "lat": 35.243757,
+      "lng": 139.115383,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Chokozan_no_Shidarezakura_20080329.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shotaiji-5.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shotaiji-6.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Chujohimeseigan Zakura",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ganjoji-Gifu06.JPG",
+        "https://commons.wikimedia.org/wiki/File:Ganjoji-Gifu2008-3.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Daio sugi",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Dai-O-Sugi.jpg",
+        "https://commons.wikimedia.org/wiki/File:Daio_Sugi_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Daio_Sugi_02.jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Eimeiji no Kinmokusei",
+      "lat": 36.261642,
+      "lng": 139.463007,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Eimeiji%27s_osmanthus,_main_stem.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eimeiji_Osmanthus._Around_the_root._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Eimeiji_Osmanthus._Around_the_root._B.jpg"
+      ],
+      "status": "lead",
+      "species": "Osmanthus (Osmanthus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Fujishima no Fuji",
+      "lat": 40.166383,
+      "lng": 141.3049,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._C.jpg"
+      ],
+      "status": "lead",
+      "species": "Wisteria (Wisteria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Futami no Omuku",
+      "lat": 34.34428,
+      "lng": 135.686578,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Futami_no_Omuku_Aphananthe_aspera_tree._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Futami_no_Omuku_Aphananthe_aspera_tree._B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Futami_no_Omuku_Aphananthe_aspera_tree._C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Hachimanjinja no Isunoki",
+      "lat": 34.65926,
+      "lng": 138.915003,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Around_the_base_of_Distylium_racemosum_tree_of_Kisami_Hachiman_Jinja_Shrine.jpg",
+        "https://commons.wikimedia.org/wiki/File:Branches_and_Leaves_of_Distylium_racemosum_tree_of_Kisami_Hachiman_Jinja_Shrine._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Branches_and_Leaves_of_Distylium_racemosum_tree_of_Kisami_Hachiman_Jinja_Shrine._B.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Higashiuchi no Shidare Enoki",
+      "lat": 36.315447,
+      "lng": 138.245813,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Higashiuchi_no_Shidare_Enoki._of_the_Enomi_no_Ie_community_center._Northern_side.jpg",
+        "https://commons.wikimedia.org/wiki/File:Higashiuchi_no_Shidare_Enoki._of_the_Enomi_no_Ie_community_center._Southern_side.jpg",
+        "https://commons.wikimedia.org/wiki/File:Higashiuchi_no_Shidare_Enoki._of_the_Maruko_Folk_Museum._A.jpg"
+      ],
+      "status": "lead",
+      "species": "Hackberry (Celtis sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Hihayotenjinja-no-Horutonoki",
+      "lat": 35.010438,
+      "lng": 139.083095,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Elaeocarpus_sylvestris_20100612_(a).jpg",
+        "https://commons.wikimedia.org/wiki/File:Elaeocarpus_sylvestris_20100612_(b).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Hirakawa no O Sugi",
+      "lat": 34.132103,
+      "lng": 131.475236,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%E5%B9%B3%E5%B7%9D%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%B9%B3%E5%B7%9D%E3%81%AE%E5%A4%A7%E3%82%B9%E3%82%AE2.jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Hodashi no Keyaki",
+      "lat": 38.76543,
+      "lng": 139.851178,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hodashi_no_Keyaki_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hodashi_no_Keyaki_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hodashi_no_Keyaki_C.jpg"
+      ],
+      "status": "lead",
+      "species": "Zelkova (Zelkova sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Hongokuji no Ohatsuki Icho",
+      "lat": 35.413825,
+      "lng": 138.441118,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_seeds_of_Hongokuji_no_Ohatsuki_Icho.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hongokuji_no_Ohatsuki_Icho_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hongokuji_no_Ohatsuki_Icho_B.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Hongō-yumimachi no Kusu",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Camphor_tree_in_Hong%C5%8D,_Tokyo_201504_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Camphor_tree_in_Hong%C5%8D,_Tokyo_201504_02.jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ibi Nido Zakura",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ibi_Nido_Zakura2008-1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ibi_Nido_Zakura2008-2.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ibuki Yama Ibuki Juso",
+      "lat": 36.692953,
+      "lng": 140.71611,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:A_footnote_to_an_aerial_photograph_image_of_Juniperus_chinensis_trees_grove_of_Ibuki_Yama.jpg",
+        "https://commons.wikimedia.org/wiki/File:An_old_tree_of_Juniperus_chinensis_grove_of_Ibuki_Yama.jpg",
+        "https://commons.wikimedia.org/wiki/File:Embankment_on_the_sea_side_of_Juniperus_chinensis_grove_of_Ibuki_Yama.jpg"
+      ],
+      "status": "lead",
+      "species": "Juniper (Juniperus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ikiki no Gomon",
+      "lat": 34.247753,
+      "lng": 133.008042,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Grand_Camphor_Tree_%22Ikiki_no_Gomon%22_near_Oyamazumi_Shrine.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hole_on_Grand_Camphor_Tree_%22Ikiki_no_Gomon%22_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hole_on_Grand_Camphor_Tree_%22Ikiki_no_Gomon%22_2.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Isazawa no Kubo zakura",
+      "lat": 38.0941658,
+      "lng": 140.06700134,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E4%BD%90%E6%B2%A2%E3%81%AE%E4%B9%85%E4%BF%9D%E6%A1%9C_Kubo-zakura_Cherry_Blossom_of_Isazawa_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E4%BD%90%E6%B2%A2%E3%81%AE%E4%B9%85%E4%BF%9D%E6%A1%9C%E3%83%A9%E3%82%A4%E3%83%88%E3%82%A2%E3%83%83%E3%83%97.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ishito Kaba Zakura",
+      "lat": 36.006663,
+      "lng": 139.512355,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ishito-Kaba-Zakura_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ishito_Ishitokabazakura_1923_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ishito_Ishitokabazakura_1923_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ishiwari-zakura",
+      "lat": 39.703895,
+      "lng": 141.151204,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ishiwari-zakura_(4095787388).jpg",
+        "https://commons.wikimedia.org/wiki/File:Ishiwari-zakura_(4573650095).jpg",
+        "https://commons.wikimedia.org/wiki/File:Ishiwari-zakura_(4573704625).jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Isshingyō-no-Ōzakura",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Isshingyo_big_cherry_tree_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Isshingyo_big_cherry_tree_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Isshingyo_big_cherry_tree_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Itoi-no-Okatsura",
+      "lat": 35.411643,
+      "lng": 134.920983,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Itoi-no-Okatsura_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Itoi-no-Okatsura_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Itoi-no-Okatsura_C.jpg"
+      ],
+      "status": "lead",
+      "species": "Katsura (Cercidiphyllum sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Itoshiro no ōsugi",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Entrance_of_mountain_climbing_trail_Itoshiro_2010_5_3.jpg",
+        "https://commons.wikimedia.org/wiki/File:Itoshiro_no_%C5%8Dsugi.JPG",
+        "https://commons.wikimedia.org/wiki/File:Itoshiro_no_%C5%8Dsugi_from_north.JPG"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Itō Hirobumi-kō Kinen Kusunoki",
+      "lat": 34.248233,
+      "lng": 133.005189,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Grand_camphor_tree_planted_by_Ito_Hirobumi_in_Oyamazumi_Shrine.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%E4%BC%8A%E8%97%A4%E5%8D%9A%E6%96%87%E5%85%AC%E8%A8%98%E5%BF%B5%E6%A5%A0%E6%A8%B9.JPG",
+        "https://commons.wikimedia.org/wiki/File:%E6%A5%A0_(%E4%BC%8A%E8%97%A4%E5%8D%9A%E6%96%87).jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Jindai-zakura, Hokuto",
+      "lat": 35.780798,
+      "lng": 138.367517,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hokuto_Yamanashi_Yamatakajindaizakura_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hokuto_Yamanashi_Yamatakajindaizakura_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Jindai-zakura.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Jissoji no Icho",
+      "lat": 40.22125,
+      "lng": 141.300139,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Jissoji.jpg",
+        "https://commons.wikimedia.org/wiki/File:Jissoji_no_Icho_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Jissoji_no_Icho_B.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Joganji no Byakushin",
+      "lat": 35.147223,
+      "lng": 139.102297,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Juniperus_chinensis_at_Joganji_temple._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Juniperus_chinensis_at_Joganji_temple._B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Juniperus_chinensis_at_Joganji_temple._C.jpg"
+      ],
+      "status": "lead",
+      "species": "Juniper (Juniperus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Jonichiji no Icho",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Aginkgo_tree_of_Zy%C3%B4nitizi.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_at_Jyonichiji_temple.JPG",
+        "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E6%97%A5%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6_(4989225413).jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Jotakuji no Ohatsuki Icho",
+      "lat": 35.420097,
+      "lng": 138.444387,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_seeds_of_Jotakuji_no_Ohatsuki_Icho_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba_seeds_of_Jotakuji_no_Ohatsuki_Icho_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Jotakuji_no_Ohatsuki_Icho_July_2019_A.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kagoji no Shibunashigaya",
+      "lat": 34.791525,
+      "lng": 136.08075,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kagoji_no_Shibunashigaya_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kagoji_no_Shibunashigaya_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kagoji_no_Shibunashigaya_C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kamo-no-Okusu",
+      "lat": 34.040836,
+      "lng": 133.93203,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Camphortree_Awa-kamo.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kamo-no-Okusu-1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kamo-no-Okusu-2.jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kamō no Kusu",
+      "lat": 31.765757,
+      "lng": 130.569538,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Big_Japanese_cinnamon_Kamo_hachiman_shrine.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kamo_no_Okusu_2023-August.JPG",
+        "https://commons.wikimedia.org/wiki/File:Kamoucho_Kamigyutoku,_Aira,_Kagoshima_Prefecture_899-5302,_Japan_-_panoramio.jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kasa sugi",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_Kasasugi.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_Kasasugi_s2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_Kasasugi_s3.jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kawadana no Kusu no Mori",
+      "lat": 34.170135,
+      "lng": 130.958391,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kawatana-no-Kusunomori_Aerial_photograph.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%B7%9D%E6%A3%9A%E3%81%AE%E3%82%AF%E3%82%B9%E3%81%AE%E6%A3%AE_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%B7%9D%E6%A3%9A%E3%81%AE%E3%82%AF%E3%82%B9%E3%81%AE%E6%A3%AE_-_panoramio_(1).jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kawago no kusu",
+      "lat": 33.25186,
+      "lng": 129.99354,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kawago_no_kusu_old_camphor_tree_Park_front.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kawako_camphor_tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%B7%9D%E5%8F%A4%E3%81%AE%E5%A4%A7%E6%A5%A0%E3%81%AE%E7%A5%A0.jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kechimyaku Zakura",
+      "lat": 41.431518,
+      "lng": 140.106045,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kechimyaku_Zakura20080920-1.JPG",
+        "https://commons.wikimedia.org/wiki/File:Kechimyaku_Zakura20080920-2.JPG",
+        "https://commons.wikimedia.org/wiki/File:%E8%A1%80%E8%84%88%E6%A1%9C_-_panoramio.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kega-Kuyoto-no-Shidarezakura",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kega-Kutoyo-no-Shidarezakura_ac_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Kega-Kutoyo-no-Shidarezakura_ac_(2).jpg",
+        "https://commons.wikimedia.org/wiki/File:Kega-Kutoyo-no-Shidarezakura_ac_(3).jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kenchō-ji no Byakushin",
+      "lat": 35.331167,
+      "lng": 139.5545,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kencho-ji_Temple_@_Kamakura_(13897798016).jpg",
+        "https://commons.wikimedia.org/wiki/File:Kenchoji_no_byakushin.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%BB%BA%E9%95%B7%E5%AF%BA_-_panoramio_(2).jpg"
+      ],
+      "status": "lead",
+      "species": "Juniper (Juniperus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kezoji no Kinmokusei",
+      "lat": 36.341013,
+      "lng": 139.199622,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kezoji%27s_osmanthus,_main_stem.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kezoji_Osmanthus._Around_the_root._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kezoji_Osmanthus._Around_the_root._B.jpg"
+      ],
+      "status": "lead",
+      "species": "Osmanthus (Osmanthus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kiire no ryukyukogai sanchi",
+      "lat": 31.321645,
+      "lng": 130.564992,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Aerial_photographs_of_Kiire_Kandelia_obovata_plant_community.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kandelia_obovata_most_North_area.JPG",
+        "https://commons.wikimedia.org/wiki/File:Kiire_Kandelia_obovata_plant_community.A.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kitahama no Okayanoki",
+      "lat": 34.81273,
+      "lng": 137.800542,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Around_the_root_of_Torreya_in_Kitahama_no_Okayanoki_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Around_the_root_of_Torreya_in_Kitahama_no_Okayanoki_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Around_the_root_of_Torreya_in_Kitahama_no_Okayanoki_C.jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Torreya (Torreya sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kitahanazawa no hananoki",
+      "lat": 35.12943,
+      "lng": 136.260352,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Kitahanazawa_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Kitahanazawa_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Kitahanazawa_C.jpg"
+      ],
+      "status": "lead",
+      "species": "Maple (Acer sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kosugi no Ōsugi",
+      "lat": 38.82005,
+      "lng": 140.187263,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Country_Roads_(2596494589).jpg",
+        "https://commons.wikimedia.org/wiki/File:Kosugi_no_Oosugi_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kosugi_no_Oosugi_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kozaki no Okusu",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2024-kasai_Kozaki_Shrine_and_Kozaki_no_O-kusu_Katori-JPN.jpg",
+        "https://commons.wikimedia.org/wiki/File:2024-kasai_Kozaki_no_O-kusu_from_the_east_Katori-JPN.jpg",
+        "https://commons.wikimedia.org/wiki/File:2024-kasai_Kozaki_no_O-kusu_from_the_south_Katori-JPN.jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kozoji no Kotsubugaya",
+      "lat": 34.44844,
+      "lng": 136.819523,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kozoji_no_Kotsubugaya._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kozoji_no_Kotsubugaya._B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kozoji_no_Kotsubugaya._C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kuchioya no O-Abemaki",
+      "lat": 35.341053,
+      "lng": 134.70861,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Entrance_sign_to_Kuchioya_no_O-Abemaki.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kuchioya_no_O-Abemaki_B.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kumano Hayatama Jinja no Nagi",
+      "lat": 33.731853,
+      "lng": 135.983978,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kumano_Hayatama_Jinja_no_Nagi._August_2019_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kumano_Hayatama_Jinja_no_Nagi._August_2019_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kumano_Hayatama_Jinja_no_Nagi._August_2019_C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kumano no Hidarimakigaya",
+      "lat": 34.996885,
+      "lng": 136.331405,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kumano_no_Hidarimakigaya_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kumano_no_Hidarimakigaya_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kumano_no_Hidarimakigaya_C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Kyushaku-fuji in Byakugoji, Tamba",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Byakugo-ji,_Wisteria_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Byakugo-ji,_Wisteria_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Byakugo-ji,_Wisteria_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Wisteria (Wisteria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Kōno Michiari Kabutogake no Kusunoki",
+      "lat": 34.24765,
+      "lng": 133.005494,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Stock_of_grand_camphor_tree_for_helmet_hanging_of_Kono_Michiari_in_Oyamazumi_Shrine.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%E6%B2%B3%E9%87%8E%E9%80%9A%E6%9C%89%E5%85%9C%E6%8E%9B%E3%81%AE%E6%A5%A0.JPG"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Minamihanazawa no hananoki",
+      "lat": 35.124718,
+      "lng": 136.257957,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Minamihanazawa_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Minamihanazawa_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Acer_pycnanthum_of_Minamihanazawa_C.jpg"
+      ],
+      "status": "lead",
+      "species": "Maple (Acer sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Mineyama Jinya Enoki",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD10.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD11.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%B3%B0%E5%B1%B1%E9%99%A3%E5%B1%8B%E8%B7%A1%E3%81%AE%E3%82%A8%E3%83%8E%E3%82%AD%EF%BC%91.jpg"
+      ],
+      "status": "lead",
+      "species": "Hackberry (Celtis sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Mishimajinja no Kinmokusei",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Mishima-taisha-no-Kinmokusei_2011-09-18.jpg",
+        "https://commons.wikimedia.org/wiki/File:Mishima-taisha_kinmokusei.JPG",
+        "https://commons.wikimedia.org/wiki/File:Mishima_taisya_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Osmanthus (Osmanthus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Mochi Tree, Hōgon-ji",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Chikubu_Island_Hougonji_DSCN1926.jpg",
+        "https://commons.wikimedia.org/wiki/File:Chikubu_Island_Hougonji_DSCN1928.jpg",
+        "https://commons.wikimedia.org/wiki/File:Chikubu_Island_Hougonji_DSCN1929.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Mukumoto no Omuku",
+      "lat": 34.807034,
+      "lng": 136.42516,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Aphananthe_aspera_at_Mukumoto_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Mukumoto_no_Omuku_Aphananthe_aspera_tree._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Mukumoto_no_Omuku_Aphananthe_aspera_tree._B.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Mumaya Sanbonmatsu",
+      "lat": 36.061667,
+      "lng": 137.041111,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Unnamed1_-_panoramio_(131).jpg",
+        "https://commons.wikimedia.org/wiki/File:Unnamed1_-_panoramio_(133).jpg",
+        "https://commons.wikimedia.org/wiki/File:Unnamed1_-_panoramio_(134).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Myokoku-Ji no Sotetsu",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:An_aerial_photograph_of_the_cycad_area_of_Myokokuji_Temple._2017.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cycas_revoluta_-_Myokoku-ji,_Sakai,_Japan.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cycas_revoluta_1100_years_-_Japan_oldest_-_in_Myokoku-ji_Osakafu.jpg"
+      ],
+      "status": "lead",
+      "species": "Sago Palm (Cycas sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Nago no Hinpun Gajumaru",
+      "lat": 26.587349,
+      "lng": 127.985938,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hinpun-Gajumaru.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hinpun_Gajumaru.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nago_Banyan_tree.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Nagoya-jo no kaya",
+      "lat": 35.18380278,
+      "lng": 136.89790278,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:An_aerial_photograph_showing_the_location_of_Kaya_in_Nagoya_Castle,_a_natural_monument.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kaya_tree_and_Nishinomaru_Exhibition_Hall_in_Nagoya_Castle.JPG",
+        "https://commons.wikimedia.org/wiki/File:Kaya_tree_in_front_of_Nishinomaru_Exhibition_Hall_in_Nagoya_Castle.JPG"
+      ],
+      "status": "lead",
+      "species": "Japanese Torreya (Torreya sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Nakakamado no Shidare Momiji",
+      "lat": 36.963445,
+      "lng": 140.807478,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Nakakamado%27s_weeping_maple._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nakakamado%27s_weeping_maple._B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nakakamado%27s_weeping_maple._C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Natural habitat of Pyrus calleryana in Tado",
+      "lat": 35.133608,
+      "lng": 136.609756,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Check_dam_in_Natural_habitat_of_Pyrus_calleryana_in_Tado.jpg",
+        "https://commons.wikimedia.org/wiki/File:Forest_and_Pyrus_calleryana_in_Tado.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hypsipetes_amaurotis_on_Pyrus_calleryana.jpg"
+      ],
+      "status": "lead",
+      "species": "Pear (Pyrus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Neagarinomatsu at Kenrokuen",
+      "lat": 36.56213889,
+      "lng": 136.6625,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:131109_Kenrokuen_Kanazawa_Ishikawa_pref_Japan03s3.jpg",
+        "https://commons.wikimedia.org/wiki/File:131109_Kenrokuen_Kanazawa_Ishikawa_pref_Japan04s3.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kanazawa_Castle,_Kanazawa_City;_April_2016_(01).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Negoya Jinja no Okeyaki",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E6%8C%87%E5%AE%9A%E5%A4%A9%E7%84%B6%E8%A8%98%E5%BF%B5%E7%89%A9_%E7%94%B0%E6%9C%A8.JPG",
+        "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E6%8C%87%E5%AE%9A%E5%A4%A9%E7%84%B6%E8%A8%98%E5%BF%B5%E7%89%A9_%E7%95%91%E6%9C%A8.JPG",
+        "https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E6%8C%87%E5%AE%9A%E5%A4%A9%E7%84%B6%E8%A8%98%E5%BF%B5%E7%89%A9_%E7%95%91%E6%9C%A82.JPG"
+      ],
+      "status": "lead",
+      "species": "Zelkova (Zelkova sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Nento-Hiramatsu Pine Tree",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Nento-Hiramatsu_Park_202603_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nento-Hiramatsu_Park_202603_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nento-Hiramatsu_Park_202603_03.jpg"
+      ],
+      "status": "lead",
+      "species": "Pine (Pinus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Nezu no ki",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Juniperus_rigida_Nezunoki.jpg",
+        "https://commons.wikimedia.org/wiki/File:Juniperus_rigida_Nezunoki_2021-07-31.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Nishiuchi no Shidareguri Jiseichi",
+      "lat": 36.297928,
+      "lng": 138.159173,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Nishiuchi_no_Shidareguri_Jiseichi_June_27,_2022._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nishiuchi_no_Shidareguri_Jiseichi_June_27,_2022._B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nishiuchi_no_Shidareguri_Jiseichi_June_27,_2022._C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Nomanji no Sotetsu",
+      "lat": 34.778913,
+      "lng": 138.248073,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Airplane_in_the_landing_approach_flight_to_Shizuoka_Airport._And_Nomanji_Temple_Cycad.jpg",
+        "https://commons.wikimedia.org/wiki/File:Noman_ji_Tessho_no_Zu_cropped_Totomi_Koseki_Zue_Frame_24.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nomanji_Temple_Cycad_A.jpg"
+      ],
+      "status": "lead",
+      "species": "Sago Palm (Cycas sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Nōin-hōshi Amagoi no Kusunoki",
+      "lat": 34.24845,
+      "lng": 133.004817,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Oyamazumi_shrine_Noinhoshi-amagoino-kusunoki.jpg",
+        "https://commons.wikimedia.org/wiki/File:Stock_of_grand_camphor_tree_of_Noin_Praying_for_Rain_in_Oyamazumi_Shrine.jpg",
+        "https://commons.wikimedia.org/wiki/File:View_of_grand_camphor_tree_of_Noin_Praying_for_Rain_in_Oyamazumi_Shrine.jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ochi-no-mikoto Oteue no Kusunoki",
+      "lat": 34.24825,
+      "lng": 133.005006,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora20050314.jpg",
+        "https://commons.wikimedia.org/wiki/File:Grand_camphor_tree_planted_by_Ochi_no_Mikoto_in_Oyamazumi_Shrine_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Grand_camphor_tree_planted_by_Ochi_no_Mikoto_in_Oyamazumi_Shrine_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Oidani no Otsubaki",
+      "lat": 36.830507,
+      "lng": 136.86187,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Oidani_no_Otsubaki_Camellia_japonica_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Oidani_no_Otsubaki_Camellia_japonica_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Oidani_no_Otsubaki_Camellia_japonica_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Ōkakumaki",
+      "lat": 33.288833,
+      "lng": 130.196061,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Grand_Squared_Buddhist_Pine_in_Ogi_Park_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Grand_Squared_Buddhist_Pine_in_Ogi_Park_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Grand_Squared_Buddhist_Pine_in_Ogi_Park_3.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Okina sugi",
+      "lat": 30.358212,
+      "lng": 130.537663,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Okina_Sugi_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%B1%8B%E4%B9%85%E5%B3%B6_-_panoramio_(22).jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%B1%8B%E4%B9%85%E5%B3%B6_-_panoramio_(29).jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Okkazuma-no Shidarezakura",
+      "lat": 35.762023,
+      "lng": 138.709307,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_Back_side.JPG",
+        "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_East_side.A.JPG",
+        "https://commons.wikimedia.org/wiki/File:Okkazuma-no_Shidarezakura_East_side.B.JPG"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Okuteshinmeijinja no ōsugi",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_(bark)_of_Okuteshinmei-jinja.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cryptomeria_japonica_(bark)_of_Okuteshinmei-jinja_s2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Okuteshinmei-jinja.jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ono no shidare-guri jiseichi",
+      "lat": 36.051025,
+      "lng": 137.996483,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Weeping_Type_Japanese_Chestnut_Habitat_in_Ono_District_A.JPG",
+        "https://commons.wikimedia.org/wiki/File:Weeping_Type_Japanese_Chestnut_Habitat_in_Ono_District_B.JPG",
+        "https://commons.wikimedia.org/wiki/File:Weeping_Type_Japanese_Chestnut_Habitat_in_Ono_District_C.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Renchakuji no Yamamomo",
+      "lat": 34.883028,
+      "lng": 139.130668,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:A_map_from_around_the_1930s_of_Tajima_Village%27s_large_bayberry_colony.jpg",
+        "https://commons.wikimedia.org/wiki/File:Around_the_base_of_the_Bayberry_tree_at_Renchakuji_Temple.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bayberry_tree_and_main_hall_of_Renchakuji_temple.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Ryotokuji no Ohatsuki Icho",
+      "lat": 35.328258,
+      "lng": 136.348308,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ohatsuki_Icho_of_Ryotokuji.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ryotokuji_no_Ohatsuki_Icho_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ryotokuji_no_Ohatsuki_Icho_B.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ryuge-Ji no Sotetsu",
+      "lat": 34.990357,
+      "lng": 138.484698,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cycads_of_Ryuge-ji_Temple_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cycads_of_Ryuge-ji_Temple_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cycads_of_Ryuge-ji_Temple_C.jpg"
+      ],
+      "status": "lead",
+      "species": "Sago Palm (Cycas sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Saikaku, Terukuni-jinja",
+      "lat": 31.594308,
+      "lng": 130.551194,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:A_otara_at_Kagoshima_-_panoramio_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Terukuni-jinja_(Terukuni-ch%C5%8D,_Kagoshima)_VLux5_hdsr_04.jpg",
+        "https://commons.wikimedia.org/wiki/File:Terukuni-jinja_(Terukuni-ch%C5%8D,_Kagoshima)_VLux5_hdsr_x10.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Sajigami jinja no shidare akashide",
+      "lat": 35.743977,
+      "lng": 139.228921,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Sajigami_shrines_Shidare-Akashide_A.JPG",
+        "https://commons.wikimedia.org/wiki/File:Sajigami_shrines_Shidare-Akashide_B.JPG",
+        "https://commons.wikimedia.org/wiki/File:Sajigami_shrines_Shidare-Akashide_C.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Sawatari no Kaya no Ki",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:SawatariFunagata.JPG",
+        "https://commons.wikimedia.org/wiki/File:Sawatarinokayanokiyoshida.JPG",
+        "https://commons.wikimedia.org/wiki/File:Swatarinokayanoki.JPG"
+      ],
+      "status": "lead",
+      "species": "Japanese Torreya (Torreya sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Senbon Icho",
+      "lat": 31.48857,
+      "lng": 130.742443,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_biloba,_nicknamed_Southand_Tree_Trunk_(botany).JPG",
+        "https://commons.wikimedia.org/wiki/File:Katsushika-hachimangu,_keidai.jpg",
+        "https://commons.wikimedia.org/wiki/File:Katsushika8manguuGinkgo.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Sennen Bodaiju",
+      "lat": 35.13103861,
+      "lng": 136.27235389,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hyakusai-ji_30.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hyakusai-ji_Sennenbodaiju.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Sentsuzan no Ichii",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Nichinan_ichi_tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E8%88%B9%E9%80%9A%E5%B1%B1%E3%81%AE%E3%82%A4%E3%83%81%E3%82%A401.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E8%88%B9%E9%80%9A%E5%B1%B1%E3%81%AE%E3%82%A4%E3%83%81%E3%82%A402.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Shidare Katsura",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Shidarekatsura2_Takigenji.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shidarekatsura_Kado.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shidarekatsura_Takigenji.jpg"
+      ],
+      "status": "lead",
+      "species": "Katsura (Cercidiphyllum sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Shikishima no Kinmeichiku",
+      "lat": 36.552123,
+      "lng": 139.047893,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Shikishima_no_Kinmeichiku_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shikishima_no_Kinmeichiku_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shikishima_no_Kinmeichiku_C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Shimo'ōse-no-Ōkatsura",
+      "lat": 33.44334,
+      "lng": 130.26053,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Shimo-Ose_no_Okatsura_in_Fuji,_Saga_full_view.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shimo-Ose_no_Okatsura_in_Fuji,_Saga_trunk_back.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shimo-Ose_no_Okatsura_in_Fuji,_Saga_trunk_front.jpg"
+      ],
+      "status": "lead",
+      "species": "Katsura (Cercidiphyllum sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Shimojō no Ōichō",
+      "lat": 33.150233,
+      "lng": 131.055002,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Oguni_Kumamoto02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Oguni_Kumamoto03.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_Trees_Oguni_Kumamoto01.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Shimokashiawa no Taihaku",
+      "lat": 33.984399,
+      "lng": 133.558334,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Oohaku01.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E4%B8%8B%E6%9F%8F%E3%81%AE%E5%A4%A7%E6%9F%8F_-_panoramio.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Shimura-Ken-no-ki",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:ShimuraKen_Wood.jpg",
+        "https://commons.wikimedia.org/wiki/File:ShimuraKen_Wood_202008.jpg",
+        "https://commons.wikimedia.org/wiki/File:ShimuraKen_Wood_on_Summer.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Shinden-no Oitozakura",
+      "lat": 35.845722,
+      "lng": 138.346329,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Shinden-no_Oitozakura.JPG",
+        "https://commons.wikimedia.org/wiki/File:Shinden-no_Oitozakura_and_Azusa_express_train.JPG",
+        "https://commons.wikimedia.org/wiki/File:Shinden-no_Oitozakura_and_Mt_Kai-komagatake.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Shingu-Kumano-jinja-no-Oicho",
+      "lat": 37.61890167,
+      "lng": 139.83069722,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Shingu-Kumanojinja_no_%C5%8Cich%C5%8D_20101219_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shrine_Shingu-Kumano-jinja_3.JPG",
+        "https://commons.wikimedia.org/wiki/File:Unnamed2_-_panoramio_(5703).jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Shinmachi no O Sotetsu",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Shinmachi_cycad._Postcards_around_1935.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shinmachi_no_Osotetsu-1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shinmachi_no_Osotetsu-2.jpg"
+      ],
+      "status": "lead",
+      "species": "Sago Palm (Cycas sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Shinmeisha no Oshii",
+      "lat": 34.875553,
+      "lng": 137.113848,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:A_natural_monument_stone_monument_of_%22Shinmeisha_no_Oshii%22_written_by_Ichiro_Hatoyama,_Minister_of_Education.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shinmeisha_no_Oshii%27s_natural_monument_stele._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shinmeisha_no_Oshii%27s_natural_monument_stele._B.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Shirahatayama Hachimangu no Ohatsuki Icho",
+      "lat": 36.387623,
+      "lng": 140.459803,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Ohatuki-Ichou_(Mito-Hachimangu).JPG",
+        "https://commons.wikimedia.org/wiki/File:Shirahatayama_Hachimangu_no_Ohatsuki_Icho._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shirahatayama_Hachimangu_no_Ohatsuki_Icho._B.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Shiroko Fudan Zakura",
+      "lat": 34.824275,
+      "lng": 136.580083,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Autumn_blooming_Shiroko_Fudan_Zakura_blossom_sketched_on_November_10,_1935.jpg",
+        "https://commons.wikimedia.org/wiki/File:Fudan_Zakura%27s_poetry_stone_monument_built_in_1868.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shiroko_Fudan_Zakura._A.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Shogen-in no sakasa gashiwa",
+      "lat": 39.559933,
+      "lng": 141.166035,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Shogen-in_no_sakasa_gashiwa._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shogen-in_no_sakasa_gashiwa._B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shogen-in_no_sakasa_gashiwa._C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Shokawa zakura",
+      "lat": 36.090077,
+      "lng": 136.939507,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Lake_Miboro02s3s3200.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shokawa_zakura.jpg",
+        "https://commons.wikimedia.org/wiki/File:Shokawa_zakura_2008-05.jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Sugihokowakenomikoto-jinja no Ōkusu",
+      "lat": 34.754322,
+      "lng": 138.988885,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora_20100601_(Kawazu)_(A1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora_20100601_(Kawazu)_(A2).jpg",
+        "https://commons.wikimedia.org/wiki/File:Cinnamomum_camphora_20100601_(Kawazu)_(B).jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Sugimori Jinja no Ohatsuki Icho",
+      "lat": 35.48305,
+      "lng": 135.474448,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Sugimori_Jinja_no_Ohatsuki_Icho,_natural_monument_of_Japan_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Sugimori_Jinja_no_Ohatsuki_Icho,_natural_monument_of_Japan_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sugimori_Jinja_no_Ohatsuki_Icho_East_side_tree_A.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Takase no Taiboku",
+      "lat": 37.51377778,
+      "lng": 139.89591667,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Takese-no-Keyaki.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Takeo no Ōkusu",
+      "lat": 33.18748,
+      "lng": 130.01921,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Hokora_in_Takeo_no_Okusu.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sacred_tree_%22Takeo_no_Okusu%22_of_Takeo_Shrine_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sacred_tree_%22Takeo_no_Okusu%22_of_Takeo_Shrine_2.jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Takinoya no Hidarimakigaya",
+      "lat": 35.301378,
+      "lng": 134.737817,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Distant_view_of_Takinoya_no_Hidarimakigaya_tree.jpg",
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Takinoya_no_Hidarimakigaya,_natural_monument_of_Japan.jpg",
+        "https://commons.wikimedia.org/wiki/File:Takinoya_no_Hidarimakigaya_A.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tamatoriyama-no-Ōkatsura",
+      "lat": 33.866122,
+      "lng": 133.53075,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio_(1).jpg"
+      ],
+      "status": "lead",
+      "species": "Katsura (Cercidiphyllum sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tarumi-no-Ozakura",
+      "lat": 35.348044,
+      "lng": 134.711029,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:A_big_cherry_tree_at_Tarumi_village_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:DSC_0933oozakura3.jpg",
+        "https://commons.wikimedia.org/wiki/File:Oozakura-miagete.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tate-no-Omayumi",
+      "lat": 37.409323,
+      "lng": 140.144754,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Tate-no-Omayumi_(8112790876).jpg",
+        "https://commons.wikimedia.org/wiki/File:%E8%88%98%E3%81%AE%E5%A4%A7%E3%83%9E%E3%83%A6%E3%83%9F_-_panoramio.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tatsuno no Katashibo Chikurin",
+      "lat": 34.864088,
+      "lng": 134.54265,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Tatsuno_no_Katashibo_Chikurin_Bamboo_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tatsuno_no_Katashibo_Chikurin_Bamboo_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tatsuno_no_Katashibo_Chikurin_Bamboo_C.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Teno no Sugi",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Teno_no_Sugi.jpg",
+        "https://commons.wikimedia.org/wiki/File:Teno_no_Sugi_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tenonosugi.jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "The Great Mulberry of Usune",
+      "lat": 36.67999,
+      "lng": 139.044938,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Usune_no_O-Kuwa,_natural_monument_of_Japan.jpg",
+        "https://commons.wikimedia.org/wiki/File:Usune_no_O-Kuwa_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Usune_no_O-Kuwa_B.jpg"
+      ],
+      "status": "lead",
+      "species": "Mulberry (Morus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Torreya nucifera at Zenyō-ji",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Japanese_nutmeg_in_Zeny%C5%8Dmitsu-ji_201504_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Japanese_nutmeg_in_Zeny%C5%8Dmitsu-ji_201504_02.jpg",
+        "https://commons.wikimedia.org/wiki/File:Japanese_nutmeg_in_Zeny%C5%8Dmitsu-ji_201504_03.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Tsukazaki no Kusu",
+      "lat": 31.33872,
+      "lng": 130.971065,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Camphor_tree_of_Tsukazaki_Kagoshima.JPG",
+        "https://commons.wikimedia.org/wiki/File:Kusu-tukazaki_(Kimotsuki).jpg",
+        "https://commons.wikimedia.org/wiki/File:Tsukazaki_no_Kusu,_zenkei-1.jpg"
+      ],
+      "status": "lead",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tsunekami no Sotetsu",
+      "lat": 35.637767,
+      "lng": 135.820198,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:The_cycad,_the_nothan_end_of_Japan_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tsunekami_district_Cycad_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tsunekami_district_Cycad_B.jpg"
+      ],
+      "status": "lead",
+      "species": "Sago Palm (Cycas sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Tsutta no Keyaki",
+      "lat": 34.386152,
+      "lng": 135.800913,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:%E5%9C%9F%E7%94%B0%E3%81%AE%E3%82%B1%E3%83%A4%E3%82%AD_2013.3.04_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%9C%9F%E7%94%B0%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD_2012.2.20_-_panoramio.jpg",
+        "https://commons.wikimedia.org/wiki/File:%E5%9C%9F%E7%94%B0%E3%81%AE%E5%A4%A7%E3%82%B1%E3%83%A4%E3%82%AD_A_zelkova_tree_in_Tsutta_2011.11.12_-_panoramio.jpg"
+      ],
+      "status": "lead",
+      "species": "Zelkova (Zelkova sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Uenohara no Okeyaki",
+      "lat": 35.62973,
+      "lng": 139.112863,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Uenohara_no_Okeyaki.jpg",
+        "https://commons.wikimedia.org/wiki/File:Uenohara_no_Okeyaki_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Uenohara_no_Okeyaki_B.jpg"
+      ],
+      "status": "lead",
+      "species": "Zelkova (Zelkova sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ushijima no Fuji",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Kasukabe_Wisteria_Floribunda_From_Tokaen_1.JPG",
+        "https://commons.wikimedia.org/wiki/File:Kasukabe_Wisteria_Of_Ushijima_1.JPG",
+        "https://commons.wikimedia.org/wiki/File:Kasukabe_Wisteria_Of_Ushijima_1.jpg"
+      ],
+      "status": "lead",
+      "species": "Wisteria (Wisteria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Ushikubo-no-Nagi",
+      "lat": 34.807465,
+      "lng": 137.380095,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:An_aerial_photograph_showing_the_location_of_Nagi_in_Ushikubo,_a_natural_monument.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nageia_nagi,_at_Shimonagayama,_Toyokawa,_Aichi_(2013.08.28)_01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Nageia_nagi,_at_Shimonagayama,_Toyokawa,_Aichi_(2013.08.28)_02.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Ushio no Katsura",
+      "lat": 35.3325,
+      "lng": 133.012532,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Ushio_no_Katsura,_natural_monument_of_Japan.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ushio_no_Katsura_Cercidphylluum_japonicum_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ushio_no_Katsura_Cercidphylluum_japonicum_B.jpg"
+      ],
+      "status": "lead",
+      "species": "Katsura (Cercidiphyllum sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Utsukushimori no Oyamatsutsuji",
+      "lat": 35.935745,
+      "lng": 138.416582,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_Kiyosato_highland.A.JPG",
+        "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_Kiyosato_highland.B.JPG",
+        "https://commons.wikimedia.org/wiki/File:Rhododendron_kaempferi_Kiyosato_highland_forest.JPG"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Wilsons Stump",
+      "lat": 30.359715,
+      "lng": 130.557859,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Inside_Wilson_Stump_upward.jpg",
+        "https://commons.wikimedia.org/wiki/File:Inside_the_Cedar_Tree_(52931205586).jpg",
+        "https://commons.wikimedia.org/wiki/File:Wilson_Stump_01.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Yagisawa no Ohatsuki Icho",
+      "lat": 35.4105,
+      "lng": 138.458867,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Minobu-cho_Ohatsuki_Ginkgo_natural_monument_group_area.jpg",
+        "https://commons.wikimedia.org/wiki/File:Yagisawa_no_Ohatsuki_Icho_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Yagisawa_no_Ohatsuki_Icho_B.jpg"
+      ],
+      "status": "lead",
+      "species": "Ginkgo (Ginkgo sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Yamanokami no Fuji",
+      "lat": 35.516108,
+      "lng": 138.830328,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Around_the_Yamanokami_no_Fuji_wisteria_roots.jpg",
+        "https://commons.wikimedia.org/wiki/File:Stone_inscribed_boards_in_Yamanokami_no_Fuji,_natural_monument_of_Japan.jpg",
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yamanokami_no_Fuji,_natural_monument_of_Japan.jpg"
+      ],
+      "status": "lead",
+      "species": "Wisteria (Wisteria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Yashiro-no-Okeyaki",
+      "lat": 35.232255,
+      "lng": 134.785027,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Yashiro-no-Okeyaki_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Yashiro-no-Okeyaki_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Yashiro-no-Okeyaki_C.jpg"
+      ],
+      "status": "lead",
+      "species": "Zelkova (Zelkova sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Yasutomi zakura",
+      "lat": 35.512256,
+      "lng": 137.830536,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(1).jpg",
+        "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(2).jpg",
+        "https://commons.wikimedia.org/wiki/File:Iida_City_Museum_Yasutomi_Zakura_ac_(3).jpg"
+      ],
+      "status": "lead",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Yokomuro no o-kaya",
+      "lat": 36.441153,
+      "lng": 139.056147,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Full_view_of_Yokomuro_no_O-Kaya_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Full_view_of_Yokomuro_no_O-Kaya_B.jpg",
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yokomuro_no_Okaya,_natural_monument_of_Japan.jpg"
+      ],
+      "status": "lead",
+      "species": "Japanese Torreya (Torreya sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Yougou no Matsu",
+      "lat": 35.727667,
+      "lng": 139.8935,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Flickr_-_Kabacchi_-_Pinus_-_17.jpg",
+        "https://commons.wikimedia.org/wiki/File:Flickr_-_Kabacchi_-_Pinus_-_18.jpg",
+        "https://commons.wikimedia.org/wiki/File:Flickr_-_Kabacchi_-_Pinus_-_19.jpg"
+      ],
+      "status": "lead"
+    },
+    {
+      "name": "Yuya no Naga Fuji",
+      "lat": 34.737043,
+      "lng": 137.814745,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Red_wisteria_at_Yuya_no_Naga_Fuji_garden.jpg",
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yuya_no_Naga_Fuji,_natural_monument_of_Japan_A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Stone_monument_in_Yuya_no_Naga_Fuji,_natural_monument_of_Japan_B.jpg"
+      ],
+      "status": "lead",
+      "species": "Wisteria (Wisteria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Zenshoji no O Sugi",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Zensyouji002.JPG",
+        "https://commons.wikimedia.org/wiki/File:Zensyouji003.JPG"
+      ],
+      "status": "lead",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Shokawa-zakura",
+      "lat": 36.07914,
+      "lng": 136.94625,
+      "place": "Shokawa-cho, Takayama (merged 2005, but ~28.5km from Takayama centre)",
+      "species": "Edohigan Cherry (Prunus itosakura)",
+      "species_basis": "confirmed by ja.wikipedia and Gifu prefecture tourism site",
+      "status": "lead",
+      "reason": "Two ~450-year-old cherries, Gifu Prefecture Designated Natural Monument, moved in a famous 1960 engineering effort to save them from the Miboro Dam reservoir (documented on NHK's Project X, ~50,000 visitors/year). Height ~20m, girth ~600cm. Fails the day-trip boundary for Takayama (no honest 30-minute public-transit description; ~30-40 min by car via expressway, or highway bus plus a 6km walk). Reads as its own place (Shokawa / Miboro-ko) under the 2026-08-31 single-tree exception rather than a Takayama stretch. Sources: ja.wikipedia.org/wiki/%E8%8D%98%E5%B7%9D%E6%A1%9C, kankou-gifu.jp/spot/detail_1249.html. Needs a dedicated verify pass to finalise the record (this note is pre-verification research, not a delivered entry)."
+    },
+    {
+      "name": "Kamo no Okusu",
+      "lat": 31.765764,
+      "lng": 130.569442,
+      "place": "Aira City, Kagoshima Prefecture (not Kagoshima City)",
+      "species": "Camphor Tree (Camphora sp.)",
+      "species_basis": "confirmed by ja.wikipedia (蒲生のクス)",
+      "status": "lead",
+      "reason": "Japan's largest-girth tree by measurement: trunk circumference 24.2m at 1.3m height, root circumference 33.5m, height ~30m, estimated age ~1,500 years, Special Natural Monument since 1952, at Kamo Hachiman Shrine. Administratively in Aira City, a separate municipality from Kagoshima City, and roughly 64 minutes by bus from Kagoshima Chuo Station, so it does not join Kagoshima's page honestly. Nationally famous (\"Japan's biggest tree\") and reads as a strong single-tree-destination candidate on its own (its own place, Aira), stronger than most already-published single-tree exceptions. Sources: ja.wikipedia.org/wiki/%E8%92%B2%E7%94%9F%E3%81%AE%E3%82%AF%E3%82%B9, kagoshima-kankou.com/guide/11083 (prefecture tourism board), jataff.jp. Needs a dedicated verify pass to finalise the record."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Miracle Pine Tree",
+      "reason": "Checked 2026-09-03. The original pine died from saltwater intrusion after the 2011 tsunami's ground subsidence let seawater into its roots. What stands today at the Takata Matsubara Tsunami Recovery Memorial Park is a preserved monument built from much of the original wood plus a steel core and artificial replica parts, not a living tree. Never ships as an entry per the never-dead rule; may be mentioned as context inside a different living-tree story about the region.",
+      "coordinate": [
+        39.00425988,
+        141.62433939
+      ]
+    },
+    {
+      "name": "Tsurugaoka Hachimangu ginkgo tree",
+      "reason": "Checked 2026-09-03. The original roughly 1,000-year-old ginkgo trunk toppled in a storm on 10 March 2010 (confirmed by multiple Japanese news sources including Kanagawa Shimbun). The felled section was cut down and replanted 7m from the original spot, and new shoots (hikobae) sprouted from the surviving root a month later, so there may be a living regrowth from the same root system today, comparable to the Elm of Saint-Gervais precedent. Not delivered this pass because the current height/condition of that regrowth 16 years on was not established within the time box; a future pass could verify it as a living-succession entry rather than presenting the felled 1000-year trunk as still standing.",
+      "coordinate": [
+        35.32569167,
+        139.55596722
+      ]
+    },
+    {
+      "name": "Tree of philosophy",
+      "reason": "Checked 2026-09-03. This Biei, Hokkaido poplar was felled by its landowner on 24 February 2016 (multiple Japanese news sources, e.g. Nikkei and ITmedia), due to age-related collapse risk and damage tourists were causing to the surrounding farmland. Dead/gone, never ships per the never-dead rule.",
+      "coordinate": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "Wilson's Stump",
+      "reason": "Stump of a yakusugi felled roughly 500 years ago (named for E.H. Wilson who documented it in 1914); dead, not a living tree. Never ships as an entry per the never-dead rule. May be mentioned as context inside a living Yakushima tree story (its three living descendants growing nearby could be a separate future lead).",
+      "coordinate": [
+        30.359715,
+        130.557859
+      ]
+    },
+    {
+      "name": "Natural habitat of Pyrus calleryana in Tado",
+      "reason": "Official designation is \"Tado Inunashi Natural Habitat\" (多度のイヌナシ自生地), a ~0.3ha / 3,000sqm protected wild population of endangered Pyrus calleryana var. dimorphophylla on Mt Tado, Kuwana, Mie, designated National Natural Monument 2010-08-05. A habitat/population, not one identifiable tree or a compact ensemble with one place to stand. Rejected per brief instruction.",
+      "coordinate": [
+        35.133608,
+        136.609756
+      ]
+    },
+    {
+      "name": "Okina sugi",
+      "reason": "Fell on 10 September 2010 (confirmed by two independent Japanese news sources, Nikkei and a Yahoo News/local report): the trunk was roughly 90 percent hollow/decayed internally and could not bear the weight of its own upper 20m. Was the second-largest-girth Yakusugi (12.6m/1260cm) after Jomon Sugi, estimated age about 2,000 years, height 23.7m before falling, standing at about 1000m elevation on the Jomon Sugi trail. Now dead/fallen, so it never ships as an entry per the never-dead rule. The Commons photos in the lead file likely predate the 2010 fall and would misrepresent it as standing today.",
+      "coordinate": [
+        30.358212,
+        130.537663
+      ]
+    },
+    {
+      "name": "Phoenix Trees Exposed to the A-bomb",
+      "reason": "Confirmed mismatch, checked per brief instruction 2026-09-01. The Commons file File:Aogiri_Yokohama_Sakae.jpg carries its own caption and geotag: this is a second-generation aogiri (Firmiana simplex, Chinese Parasol Tree) planted at Earth Plaza (Chikyu Shimin Kanagawa Plaza) in Sakae-ku, YOKOHAMA, photographed 17 August 2025. It is a young sapling grown from the SEED of the trees that survived the Hiroshima bombing 1.3km from the hypocentre, not a tree itself exposed to the bomb, and it does not stand in Hiroshima at all. \"Phoenix\" in the lead name is the English nickname for aogiri (Chinese Parasol Tree), not the palm genus Phoenix; the leads file's own \"Date Palm (Phoenix sp.)\" species guess is a genus misread from that nickname and is wrong on every axis: wrong species, wrong history (second-generation descendant, not an original hibaku tree) and wrong location (Yokohama, not Hiroshima). Never chase this as a bombed original in Hiroshima. It COULD in principle become its own honestly-described lead someday (a peace-memorial aogiri sapling in Sakae-ku, Yokohama, correctly named and species-corrected), but that is a new, separate research question, not this entry, and the tree is very young rather than old.",
+      "coordinate": [
+        35.367167,
+        139.552694
+      ]
+    },
+    {
+      "name": "Hiramatsu no utsukushimatsu jiseichi",
+      "reason": "Checked per brief 2026-09-01. Official designation is Hiramatsu no Utsukushimatsu Jiseichi (平松のウツクシマツ自生地), a National Natural Monument (designated 3 March 1921) in KONAN CITY, SHIGA PREFECTURE (not Kyoto city, though within day-trip range at ~28km), protecting a wild population of Utsukushimatsu, a naturally radial-branching form of Japanese red pine (Pinus densiflora forma umbraculifera) that grows together on the southeast slope of Mt Bishozan. This is the only place this growth form occurs as a natural stand. Confirmed via Japanese Wikipedia and the Agency for Cultural Affairs database (online.bunka.go.jp), both found via search. A HABITAT/POPULATION covering a hillside, not one identifiable tree or a compact ensemble with one obvious place to stand; rejected on the same grounds as the Tado Inunashi habitat already blocked in this file. Also actively declining: multiple sources note rapid pine-wilt-disease losses in recent years despite local conservation efforts, which would make an alive-now claim for any single specimen within it hard to stand behind without visiting. A separate lead already in this file, \"Nento-Hiramatsu Pine Tree\" (Commons category Nento-Hiramatsu Park, no coordinate yet), may be an individually named specimen near or within this habitat and could be worth checking on its own in a future pass; not researched here, out of scope for this brief.",
+      "coordinate": [
+        34.993108,
+        136.075728
+      ]
+    },
+    {
+      "name": "Sawajiri no O Hinoki (Sawara)",
+      "reason": "Verified as real, alive and remarkable (Japan's largest known Sawara cypress, National Natural Monument 1974) but stands on private farmland managed for generations by the Usami family; no source establishes a public viewing point. Blocked under hard rule 10, 2026-09-02. A later pass could call Iwaki's tourism office to check for a public viewpoint.",
+      "status": "blocked"
+    },
+    {
+      "name": "Dogata no Shiinoki",
+      "lat": 36.56208333,
+      "lng": 136.65792778,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG",
+        "https://commons.wikimedia.org/wiki/File:Hirosaka_Ryokuchi_Park,_Kanazawa_-_Ishiinoki_-_01_-_2016-04-16.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hirosaka_Ryokuchi_Park,_Kanazawa_-_Ishiinoki_-_02_-_2016-04-16.jpg"
+      ],
+      "status": "done",
+      "published_as": "kan_001",
+      "reason": "Already on the site as kan_001. Found on 2026-09-01 when a verify pass re-researched it from this list: the famous-tree leads carry no marker for what we already map, so five of nineteen Japanese candidates were trees we already had. Marked here so no pass pays for it a third time."
+    },
+    {
+      "name": "Hagurosan no Sugi Namiki",
+      "lat": 38.706085,
+      "lng": 139.96479,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:A_stone_monument_buried_in_the_snow_of_the_cedar_trees_Mt._Haguro,_a_natural_monument.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cedar_trees_on_Mt._Haguro_covered_in_snow._January_2022._A.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cedar_trees_on_Mt._Haguro_covered_in_snow._January_2022._B.jpg"
+      ],
+      "status": "blocked",
+      "species": "Japanese Cedar (Cryptomeria sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Not a single tree: this is the collective cedar avenue (Sugi Namiki) along the 1.8km stone sando up Mt Haguro, itself designated a special natural monument as a group of 500+ cedars 350-500 years old. All Commons photos show the avenue/path in snow, not one named specimen. The one individually famous tree among them, Jiji Sugi ('Grandpa Cedar', 1000+ years, the largest and oldest), is a distinct named tree and is delivered separately (see Hagurosan no Jiji Sugi, published as trk_001). This avenue entry fails the collectible-point rule (avenue/wood, CLAUDE.md La Rambla precedent). Sources: https://ja.wikipedia.org/wiki/%E7%BE%BD%E9%BB%92%E5%B1%B1%E3%81%AE%E3%82%B9%E3%82%AE%E4%B8%A6%E6%9C%A8"
+    },
+    {
+      "name": "Higashi Akuragawa Inunashi Jiseichi",
+      "lat": 34.988348,
+      "lng": 136.62461,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:A_sketch_of_the_Higashi_Akuragawa_Pyrus_calleryna._Created_by_the_Ministry_of_Home_Affairs_of_Japan_in_1921.jpg",
+        "https://commons.wikimedia.org/wiki/File:Aerial_photograph_image_of_Inunashi_habit_in_Higashi_Akuragawa_and_Ainashi_habit_in_Nishi_Akuragawa.jpg",
+        "https://commons.wikimedia.org/wiki/File:Higashi_Akuragawa_Pyrus_calleryna_habitat._Photographed_April_29,_1934.jpg"
+      ],
+      "status": "blocked",
+      "reason": "Not a single tree: this is a national Natural Monument habitat site (jiseichi) protecting the wild population of Pyrus calleryana var. (Inu-Nashi), designated 1922 as the type locality where botanist Makino Tomitaro described the species. It is a scientific/botanical reserve covering a population of wild pear trees, not one named specimen; Commons photos are aerial habitat photographs and a 1921 government sketch of the habitat, not a tree portrait. Fails the collectible-point rule (habitat site, not a single tree). Source: https://ja.wikipedia.org/wiki/%E6%9D%B1%E9%98%BF%E5%80%89%E5%B7%9D%E3%82%A4%E3%83%8C%E3%83%8A%E3%82%B7%E8%87%AA%E7%94%9F%E5%9C%B0"
+    },
+    {
+      "name": "Kakunodate no Shidarezakura",
+      "lat": 39.599232,
+      "lng": 140.560874,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20060506.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20180428a.jpg",
+        "https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20180428b.jpg"
+      ],
+      "status": "blocked",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Not a single tree: this is the collective name for the National Natural Monument covering ~147-162 individually designated weeping cherries (Edo-higan cultivar) among roughly 400 total, planted on private samurai-house properties along ~2km of Bukeyashiki-dori. Japanese Wikipedia states outright it is a 'shorthand for about 150 trees' (約150本の総称である), designated as a group in 1974 (153 trees then, ~147 by 1999-2000 after storm losses); Semboku city's own tourism page confirms 162 of ~400 trees hold the designation today. All Commons photos are titled 'Bukeyashiki Street in Kakunodate', i.e. street views of the avenue, not a photo of one named specimen. No single stand-out individually-named tree distinct from the avenue was found in English or Japanese sources. Fails the project's collectible-point rule (CLAUDE.md, the Barcelona/La Rambla precedent): an avenue of ~150-400 trees along a 2km street has no single obvious place to stand. Sources checked: https://ja.wikipedia.org/wiki/%E8%A7%92%E9%A4%A8%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%82%B6%E3%82%AF%E3%83%A9 and https://www.city.semboku.akita.jp/en/sightseeing/spot/07_shidare.html."
+    },
+    {
+      "name": "Hitome-senbon-zakura",
+      "lat": 38.056016,
+      "lng": 140.746526,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Class_EF81-0_Electric_Locomotive.jpg",
+        "https://commons.wikimedia.org/wiki/File:E653-1000_Series_EMU.jpg",
+        "https://commons.wikimedia.org/wiki/File:Funaoka_view.jpg"
+      ],
+      "status": "blocked",
+      "species": "Cherry (Prunus sp.)",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "Hitome Senbon Zakura is a roughly 1,200-tree cherry planting along ~8km of the Shiroishi River embankment in Miyagi, not a single tree; not a collectible point."
+    }
+  ]
 }

@@ -1,0 +1,63 @@
+{
+  "city": "Ueki",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Ueki maps one tree: Jakushin-san no Kusu, a camphor tree with a trunk 17.1 metres round, grown around the traditional grave of a Sengoku-period lord and still marked every January with a Shinto rite by the neighbourhood that grew up around it. Its own park was cleared from farmland to hold it. Published alone here because the tree itself is the destination, not because Ueki's research is finished.",
+  "meta_description": "Jakushin-san no Kusu, Ueki: a 17.1m camphor grown over a Sengoku lord's grave, marked with an annual rite, free in a Kumamoto park.",
+  "question_meta": "Ueki's oldest and only mapped tree is Jakushin-san no Kusu, a 17.1-metre camphor free to visit in a public park north of Kumamoto City.",
+  "question_answer": "Ueki's only mapped tree, and its oldest, is Jakushin-san no Kusu, a camphor tree (Cinnamomum camphora) with a trunk measured at 17.1 metres round. It stands in Jakushin Ryokuchi, a public park in Kitazako, Kita Ward, on the northern edge of Kumamoto City, and local tradition dates it to roughly 800 years old.",
+  "question_context": "The tree is named for Kanokogi Chikakazu, a Sengoku-period retainer of the Kikuchi clan who took the Buddhist name Jakushin before his death; tradition holds his grave sits at the base of the tree, wrapped into roots grown over it for centuries. Every year on 11 January, the anniversary of his death, residents of the surrounding Kitazako district gather beneath the tree for a Shinto rite marking the new year. At 17.1 metres round it is among the largest camphors in a prefecture known for large camphors, and its above ground roots surface in shapes locals compare to animals and objects, giving it a local reputation as a minor power spot. A public park, Jakushin Ryokuchi, was cleared around it from farmland in 1989 so visitors could stand under the crown rather than view it from outside a fence. It was named to Japan's national ranking of its hundred most famous trees in 1990, and carries a Kumamoto Prefecture natural monument designation since 1974. A 1991 typhoon broke many branches and the tree recovered; a decline from soil compaction around 2010 was reversed by 2016 remediation. Free, about 20 minutes on foot from JR Ueki Station.",
+  "hero_tree_id": "uek_001",
+  "oldest_tree_id": "uek_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Ueki?",
+      "a": "Jakushin-san no Kusu, a camphor tree with a trunk 17.1 metres round, standing in Jakushin Ryokuchi park in Kitazako, on the northern edge of Kumamoto City."
+    },
+    {
+      "q": "Why is it called Jakushin-san no Kusu?",
+      "a": "It is named for Kanokogi Chikakazu, a Sengoku-period lord who took the Buddhist name Jakushin. Tradition holds his grave sits at the base of the tree, wrapped into its roots."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Local tradition puts it at roughly 800 years; sources record it more cautiously as somewhere between 500 and 800."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in Jakushin Ryokuchi, a public park cleared around it in 1989, open ground about 20 minutes on foot from JR Ueki Station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "uek_001",
+      "name": "Jakushin-san no Kusu",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "roughly 800 years, by local tradition",
+      "age_min": 500,
+      "age_max": 800,
+      "girth_cm": 1710,
+      "height_m": 30,
+      "location": {
+        "address": "618 Kitazako-machi, Kita Ward, Kumamoto City, Kumamoto Prefecture, Japan (Jakushin Ryokuchi park)",
+        "latitude": 32.871569,
+        "longitude": 130.684819,
+        "neighbourhood": "Kitazako, Kita Ward, Kumamoto"
+      },
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/?_action=gtcontents&_command=column025",
+        "https://jl-db.nfaj.go.jp/en/location/430300008/"
+      ],
+      "access": "Free, no permission needed. The tree stands in Jakushin Ryokuchi, a public green space and park created around it in 1989, formerly surrounding farmland; open ground, walk in freely.",
+      "transport": "About 20 minutes on foot from JR Ueki Station on the JR Kagoshima Main Line.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A Sengoku-period lord is said to be buried at the base of this camphor tree, his grave wrapped into roots that have grown over it for centuries. He took the Buddhist name Jakushin before he died, and the tree carries his name: Mr Jakushin's camphor. Every year on 11 January, the anniversary of his death, residents of the surrounding Kitazako neighbourhood still gather under it for a Shinto rite marking the new year.\n\nThe trunk measures 17.1 metres round, among the largest camphors in a prefecture that has no shortage of large camphors, and its above ground roots surface in shapes locals compare to animals and everyday objects, enough to earn it a reputation as a minor power spot. A public park, Jakushin Ryokuchi, was cleared around it from farmland in 1989 so people could stand under the crown instead of viewing it across a fence. In 1990 it was named to the Shin Nihon Meiboku Hyakusen, Japan's national ranking of its hundred most famous trees.\n\nIt has taken damage and kept going. A 1991 typhoon broke many of its branches and it recovered. Around 2010 it began declining from soil compaction by a nearby road, and a 2016 remediation, removing and treating the compacted ground, brought it back again.\n\nLocal tradition puts its age at around 800 years. Official sources are more cautious, giving a range of 500 to 800.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
