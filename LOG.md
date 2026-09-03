@@ -9,6 +9,78 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 - Say who this belongs to, and pay the attribution debt we had been carrying
+
+Hidde asked whether it is written down anywhere that this is ours, and whether
+we should protect ourselves in other ways. It was not written down anywhere,
+so five things now are.
+
+**A `LICENSE`.** The repository is public and had no licence file at all, which
+legally means all rights reserved and practically means nobody was told. It
+states the two rights that already existed without anybody claiming them:
+copyright on the writing, and the EU database right on the collection. The
+second is the one that fits this project, because it protects the substantial
+investment in obtaining and verifying a collection rather than the facts
+inside it, and verifying 2,379 trees against two sources each is exactly that.
+It also says what we do NOT claim: the facts, the photographers' pictures, and
+the registers' own data.
+
+**A `robots.txt`, which did not exist.** Search crawlers and AI crawlers both
+welcome, on Hidde's call ("we willen niet ai crawlers blokeren") and for the
+reason the distribution section gives: being quoted is distribution and
+distribution is the binding constraint. It asks for attribution, keeps /api/
+out of the index because a JSON dump belongs in nobody's, and points bulk
+extraction at the terms.
+
+**A `/sources` page, and this was a debt rather than an omission.** Forty of
+the 53 registers imported here are published under a licence that obliges
+attribution, and the site named none of them anywhere, from the first import
+onward. The page is generated from the register files, so importing a register
+credits it and a licence cannot drift from what was recorded at import time.
+Three registers are share-alike (Flanders, Paris, Portland) and the page states
+our position in public rather than leaving it implied: verified facts taken,
+nobody's database republished, register dot layer off. Linked from the footer
+in all eight languages.
+
+**A licence line inside the app feeds**, since a JSON file travels further than
+a page and arrives with no footer attached. Not in cards.json, which is an
+id-keyed map where a stray key reads as a tree.
+
+**And the thing that mattered more than all five: /terms contradicted the app
+about personal data.** It still carried the pre-2026-09-02 line, "Published
+photographs carry no name. Not yours, not anyone's," while /privacy and the
+shipped CollectSheet screen both tell somebody their photograph can appear
+credited to their display name. Two of the three agreed and the terms did not,
+and it is the page people accept at sign-in. Nothing was published under the
+old sentence: zero user photographs have reached a tree page.
+
+**The gate caught my first attempt at that fix**, which is the ratchet working:
+`check_no_name_promise()` in qa.py refuses "with your name" anywhere, from the
+2026-08-16 violation where a submitter's name was rendered. The check is right
+about that case and narrow about the photo-credit exception Hidde ruled on
+2026-09-02. I matched the privacy page's own wording rather than touching the
+check, which is his.
+
+### FOR HIDDE
+
+Three things, and only the first is work.
+
+- **A published user photograph does not come off when somebody deletes their
+  account.** The database cascades, but a published photo is a copy in the repo
+  and on the site, outside it. Today that is theoretical, zero are published, but
+  it breaks the deletion promise the moment the first one ships and it should be
+  built before then. I can do it.
+- **Check the name.** "Ancient Trees" is descriptive, so weak to protect and
+  unlikely to infringe, but an existing mark or App Store app under that name
+  could get a live app pulled on a complaint. EUIPO eSearch and BOIP, five
+  minutes, and it is the only item here that can touch the app.
+- **Supabase DPA and the App Store age rating.** One checkbox and one field.
+
+Making the repo private is not urgent and costs a GitHub plan, because Pages on
+a private repo needs one. The cheaper version, if he wants it, is moving the
+strategy documents to a private repo and leaving code and data public: those
+files are the lek, not the trees.
+
 ## 2026-09-03 - The lane walked: six new places, seven famous trees, every one in a ranking
 
 The first pass of rung (0c), dispatched the same afternoon it was written.
