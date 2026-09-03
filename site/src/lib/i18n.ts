@@ -157,6 +157,10 @@ export interface UIStrings {
    * Android visitor sees a waitlist (there is no Android app), a desktop
    * visitor sees a QR code (the AllTrails convention), an iOS visitor sees
    * the badge above and needs none of these. */
+  /** The AllTrails-style download overlay's own two strings (2026-09-03):
+   * the title above the QR, and the Android variant's headline. */
+  openInApp: string;
+  androidTitle: string;
   androidNote: string;
   emailLabel: string;
   notifyMe: string;
@@ -240,6 +244,8 @@ const EN: UIStrings = {
   photoCredit: (credit) => `Photo: ${credit}`,
   photoOpen: "Open the photograph",
   appStoreBadge: "Get Ancient Trees on the App Store",
+  openInApp: "Open in the app",
+  androidTitle: "There is no Android app",
   androidNote: "There is no Android app yet. Leave your email and we will write to you the day there is one.",
   emailLabel: "Email address",
   notifyMe: "Notify me",
@@ -354,6 +360,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir la fotografía",
     appStoreBadge: "Consigue Ancient Trees en el App Store",
+    openInApp: "Abrir en la app",
+    androidTitle: "Todavía no hay app para Android",
     androidNote: "Todavía no hay una app para Android. Deja tu correo y te escribiremos el día que la haya.",
     emailLabel: "Correo electrónico",
     notifyMe: "Avísame",
@@ -435,6 +443,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Apri la fotografia",
     appStoreBadge: "Scarica Ancient Trees su App Store",
+    openInApp: "Apri nella app",
+    androidTitle: "Non c'è ancora una app per Android",
     androidNote: "Non c'è ancora una app per Android. Lascia la tua email e ti scriveremo il giorno in cui ci sarà.",
     emailLabel: "Indirizzo email",
     notifyMe: "Avvisami",
@@ -516,6 +526,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Open de foto",
     appStoreBadge: "Download Ancient Trees in de App Store",
+    openInApp: "Openen in de app",
+    androidTitle: "Er is nog geen Android-app",
     androidNote: "Er is nog geen Android-app. Laat je e-mailadres achter en we schrijven je op de dag dat hij er is.",
     emailLabel: "E-mailadres",
     notifyMe: "Laat het me weten",
@@ -597,6 +609,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Foto öffnen",
     appStoreBadge: "Ancient Trees im App Store laden",
+    openInApp: "In der App öffnen",
+    androidTitle: "Es gibt noch keine Android-App",
     androidNote: "Es gibt noch keine Android-App. Hinterlasse deine E-Mail-Adresse und wir schreiben dir, sobald es sie gibt.",
     emailLabel: "E-Mail-Adresse",
     notifyMe: "Benachrichtige mich",
@@ -678,6 +692,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Foto: ${credit}`,
     photoOpen: "Abrir a fotografia",
     appStoreBadge: "Obter Ancient Trees na App Store",
+    openInApp: "Abrir na app",
+    androidTitle: "Ainda não há app para Android",
     androidNote: "Ainda não existe uma app para Android. Deixe o seu email e escrevemos-lhe no dia em que houver.",
     emailLabel: "Endereço de email",
     notifyMe: "Avisem-me",
@@ -759,6 +775,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `Photo\u00a0: ${credit}`,
     photoOpen: "Ouvrir la photographie",
     appStoreBadge: "Télécharger Ancient Trees sur l'App Store",
+    openInApp: "Ouvrir dans l'app",
+    androidTitle: "Il n'y a pas encore d'application Android",
     androidNote: "Il n'y a pas encore d'application Android. Laissez votre email et nous vous écrirons le jour où elle existera.",
     emailLabel: "Adresse email",
     notifyMe: "Prévenez-moi",
@@ -840,6 +858,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     photoCredit: (credit) => `\u5199\u771f\uff1a${credit}`,
     photoOpen: "写真を開く",
     appStoreBadge: "App StoreでAncient Treesを入手",
+    openInApp: "アプリで開く",
+    androidTitle: "Android版はまだありません",
     androidNote: "Android版はまだありません。メールアドレスを残していただければ、公開日にお知らせします。",
     emailLabel: "メールアドレス",
     notifyMe: "知らせてほしい",

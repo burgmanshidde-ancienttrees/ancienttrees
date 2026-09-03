@@ -771,6 +771,25 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
    desktop blocks. */
 .app-getter-ios-note { display: none; }
 .app-getter[data-device="ios"] + .app-getter-ios-note { display: block; }
+
+/* The AllTrails-style download overlay (AppDownloadModal.astro, 2026-09-03).
+   Read directly off their own desktop dialog rather than approximated: a
+   generously padded white card, a circular grey close button top right, the
+   QR code alone with nothing beside it, a bold title, one grey line under
+   that. Reuses .collect-dialog for the backdrop and shape and overrides the
+   padding to match what AllTrails' own card actually measures. */
+.app-download-dialog { max-width: 22rem; text-align: center; padding: 2.6rem 2rem 2.2rem; }
+.app-download-dialog .signin-close { top: 1rem; right: 1rem; width: 32px; height: 32px;
+  border-radius: 50%; background: var(--cream); display: flex; align-items: center;
+  justify-content: center; font-size: 14px; }
+.app-download-qr .app-getter-qr { width: 180px; height: 180px; margin: 0 auto; }
+.app-download-qr h3 { font-size: 1.2rem; margin: 1.2rem 0 0.4rem; }
+.app-download-qr p { font-size: 14px; color: var(--ink-light); margin: 0; }
+.app-download-android h3 { font-size: 1.15rem; margin: 0.3rem 0 0.5rem; }
+.app-download-android p { font-size: 14px; color: var(--ink-light); margin: 0 0 0.6rem; }
+.app-download-android .app-getter-form { justify-content: center; }
+.app-download-android .app-getter-form[hidden] { display: none; }
+.app-download-android .app-getter-sent { font-size: 14px; color: var(--ink); }
 .appland-right h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: var(--ink-light); margin-bottom: 0.4rem; }
 .appland-feat { display: flex; gap: 1rem; align-items: flex-start; padding: 1.05rem 0; border-bottom: 1px solid var(--cream-dark); }
 .appland-feat:last-child { border-bottom: none; }
