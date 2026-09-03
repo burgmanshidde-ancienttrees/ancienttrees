@@ -1,0 +1,52 @@
+[
+  {
+    "id": "shm_001",
+    "name": "The Isunoki of Hachiman Shrine",
+    "species": "Isu Tree (Distylium racemosum)",
+    "age_estimate": "650 to 800 years",
+    "age_min": 650,
+    "age_max": 800,
+    "girth_cm": 395,
+    "location": {
+      "address": "1722-1 Kisami, Shimoda, Shizuoka, Japan",
+      "latitude": 34.6591286,
+      "longitude": 138.9151551,
+      "neighbourhood": "Kisami, Shimoda"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E3%81%AE%E3%82%A4%E3%82%B9%E3%83%8E%E3%82%AD",
+      "https://www.pref.shizuoka.jp/kankosports/bunkageijutsu/bunkazai/1002825/1004990/1021654.html"
+    ],
+    "access": "Free, in the grounds of Kisami Hachiman Shrine",
+    "transport": "Kisami is roughly 3.5 km southwest of Shimoda's city centre (Izu peninsula); no rail station nearby, reached by bus or car from Shimoda Station",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Designated a National Natural Monument on 1941-02-28 (Showa 16), confirmed on the Shizuoka prefecture official cultural-property list (address 1722-1 Kisami, Shimoda) and on Japanese Wikipedia's dedicated article. Coordinates confirmed tree-level via an OSM natural=tree node tagged 'natural monument, Distylium racemosum' at 34.6591286/138.9151551 (10m from the lead's own coordinate). Notable as the northeastern limit of Distylium racemosum's natural distribution in Japan; the species does not occur naturally on the Izu peninsula, so local tradition holds it was transplanted from southwestern Japan roughly a century after Minamoto no Yoshinaka's death (1184), which is a tradition, not a documented planting date, and should not be sharpened into a founding year. Height approx 15-17m. Trunk circumference measured at 20cm above ground: 3.95m (395cm, recorded as girth_cm); separately, root-collar circumference is 4.5m (450cm) where visible surface roots spread in a net-like pattern -- do not conflate the two figures. Hosts a locally-named insect gall ('chakarappokara') on leaves and buds, 6-8mm, caused by aphids. CONTAINER JUDGEMENT UNCERTAIN: 138km from Tokyo (our nearest published city), well outside day-trip range, so it cannot join an existing city. It is a genuine National Natural Monument and biogeographically distinctive, but I could not find evidence of pilgrimage-level individual fame (no annual rite, no purpose-built visitor park, no wide non-specialist recognition) that would clearly clear the 2026-08-31 single-tree-destination bar versus simply being a fine, well-documented monument tree. Held pending a decision: either publish as its own place (Kisami or Shimoda, prefix 'shm' is unused as of this pass) or leave as a lead until a stronger fame signal turns up.",
+    "container": "uncertain"
+  },
+  {
+    "id": "hrk_001",
+    "name": "The Great Cedar of Hirakawa",
+    "species": "Japanese Cedar (Cryptomeria japonica)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 850,
+    "location": {
+      "address": "2244 Yoshida, Yamaguchi City, Yamaguchi, Japan (Hiraizu Hachimangu Shrine, Mount Takakura)",
+      "latitude": 34.1431129,
+      "longitude": 131.4708782,
+      "neighbourhood": "Yoshida, Yamaguchi City"
+    },
+    "verified_sources": [
+      "https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1039.html",
+      "https://online.bunka.go.jp/heritages/detail/162198"
+    ],
+    "access": "Free, but reached only on foot via the hiking trail up Mount Takakura from Hiraizu Hachimangu Shrine; not a roadside tree",
+    "transport": "No rail station nearby; the trailhead is at Hiraizu Hachimangu Shrine, roughly 15 km northeast of Yamaguchi city centre, reached by car or bus then a marked hiking route to the summit area",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "National Natural Monument since 1928-01-18, confirmed on both Yamaguchi City's own historical-resources page and the national Cultural Properties Online database (online.bunka.go.jp), which agree on location (Hirakawa, Yoshida, Yamaguchi City, at Hiraizu Hachimangu Shrine / Mount Takakura) and designation date. Species given plainly as Cryptomeria japonica by the national database, not a genus guess. Measurements differ slightly between the two sources: city page gives base circumference 10.5m and breast-height (1.5m) circumference 8.5m, height approx 35m; the national database gives base circumference approx 9.9m and trunk circumference approx 8.6m at 1.5m -- both describe the same tree and the discrepancy is recorded rather than resolved; girth_cm uses the breast-height figure (850cm, splitting the difference is not done, this is the city page's rounder number). Both sources describe it as several cedar trunks grown so closely together they read as one tree from a distance -- a fused/multi-stem specimen, which the Japan Sea-side cedar form is known for; treated here as one collectible point since it is visited and signposted as a single tree. No age figure in either source; do not invent one from girth alone without a documented regional growth-rate source, which I did not find this pass -- left empty per the rules rather than guessed. LOCATION: no tree-level coordinate found (no OSM natural=tree node in the area, an Overpass query for the bounding box returned nothing); pin uses the shrine's own Nominatim-verified coordinates (34.1431129, 131.4708782), which is roughly 1.3km from the lead's own coordinate (34.132103, 131.475236) -- the true tree sits further up the Takakura-san trail from the shrine gate, so this is shrine-level, not tree-level: location_precision approximate. ACCESS: confirmed via hiking-log sources (YAMAP activity reports) that a marked trail runs from the shrine up Takakura-san past the cedar and back down, i.e. a real, walkable, unrestricted public route, not a closed forestry area. CONTAINER JUDGEMENT UNCERTAIN: 95km from Hiroshima (nearest published city), well outside day-trip range. It is a National Natural Monument with real specialist documentation (a dedicated giant-tree enthusiast page, hitozato-kyoboku.com, covers it) but I found no evidence of mass tourist fame, an annual rite or a purpose-built visitor site that would clearly clear the single-tree-destination bar, and it requires a genuine hike rather than a roadside stop. Held pending a decision: either its own place (Yoshida or Takakurayama, Yamaguchi Prefecture; prefix 'hrk' unused as of this pass) or left as a lead.",
+    "container": "uncertain"
+  }
+]

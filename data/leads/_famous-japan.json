@@ -1693,6 +1693,14 @@
       "name": "Batch E stray candidates (Kamo no Okusu/Kagoshima, Yougou no Matsu/Tokyo, Nago no Hinpun Gajumaru, Nomanji no Sotetsu)",
       "reason": "A 2026-09-03 verification pass was briefed on these four as new candidates from a stale leads snapshot; all four are already published (kag_010 in kagoshima.json, tok_016 in tokyo.json, nag_001 in nago.json, yos_001 in yoshida.json, coordinates match exactly). Nothing delivered. Left here as a flag for a future cleanup pass to remove any remaining stray unsourced entries for these four names; do not re-research or re-add any of them under a new id.",
       "coordinate": null
+    },
+    {
+      "name": "Great Muku of Futami",
+      "reason": "Verified 2026-09-03 (National Natural Monument, Gojo City, girth 850cm, age given only as roughly 1,000 years across sources with no cited basis). Blocked, not held: Gojo City's own page states the tree stands 'in the garden of a private residence,' with only its canopy overhanging the municipal road. Hard rule 10's home test does not bend for canopy visibility, whatever the register or a city page says. Full record in data/research/famousjapan-batch-d2-verified.json (id goj_001).",
+      "coordinate": [
+        34.34428,
+        135.686578
+      ]
     }
   ]
 }
