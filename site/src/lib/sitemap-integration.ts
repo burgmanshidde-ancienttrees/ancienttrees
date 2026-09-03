@@ -51,10 +51,15 @@ export default function sitemapIntegration(): AstroIntegration {
           .join("");
         const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries}</urlset>\n`;
         fs.writeFileSync(path.join(distRoot, "sitemap.xml"), sitemap);
-        fs.writeFileSync(
-          path.join(distRoot, "robots.txt"),
-          `User-agent: *\nAllow: /\nSitemap: ${BASE_URL}/sitemap.xml\n`
-        );
+        // robots.txt is NOT written here. It used to be, three lines of it,
+        // and because this hook runs after Astro has copied public/ into dist
+        // it silently overwrote the real file: a robots.txt written to
+        // site/public/ on 2026-09-03 reached the live site as the three-line
+        // stub, with its crawler policy and its /api/ exclusion gone. The file
+        // is prose that gets edited, so it belongs in public/ where it can be
+        // read, and one file can only have one owner. Its Sitemap line points
+        // at the flat sitemap.xml this hook writes, which is the only thing
+        // the two ever had to agree on.
         logger.info(`wrote sitemap.xml with ${urls.length} url(s)`);
       },
     },

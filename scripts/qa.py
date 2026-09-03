@@ -1120,6 +1120,31 @@ def check_sitemap_dates():
             % (next(iter(dates), "none"))]
 
 
+def check_robots_is_the_file_we_wrote():
+    """The built robots.txt is the one in site/public/, byte for byte.
+
+    Written 2026-09-03, the day a real robots.txt reached the live site as a
+    three-line stub. sitemap-integration.ts wrote its own copy in the
+    astro:build:done hook, which runs AFTER Astro has copied public/ into
+    dist, so the file was overwritten every build and nothing said so: the
+    crawler policy and the /api/ exclusion were simply not there. Silent
+    overwrite is the failure mode this check exists for, and it is cheap
+    because the two files either match or they do not.
+    """
+    built = DIST / "robots.txt"
+    source = ROOT / "site" / "public" / "robots.txt"
+    if not source.exists():
+        return ["site/public/robots.txt is missing. It is the crawler policy and "
+                "the only place the sitemap is advertised."]
+    if not built.exists():
+        return ["dist/robots.txt is missing: public/robots.txt did not reach the build."]
+    if built.read_text(encoding="utf-8") != source.read_text(encoding="utf-8"):
+        return ["robots.txt in the build is not the one in site/public/. Something "
+                "overwrites it after the public/ copy (an astro:build:done hook "
+                "is how this happened before). One file, one owner."]
+    return []
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -1148,6 +1173,7 @@ def main():
     failures += check_no_owner_name()
     failures += check_walks_go_to_the_app()
     failures += check_nothing_is_stored_locally()
+    failures += check_robots_is_the_file_we_wrote()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")
