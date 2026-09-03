@@ -13,6 +13,56 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-03
+
+Reviewed commits since the last review (3f36e214, 2026-09-02 11:19 UTC)
+through f66c7324: the dark-mode pass across the app (`351b26c8`), the map's
+first-fix aim bug (`66df3ffc`), account-deletion photo takedown
+(`8adf1248`), Wikimedia's real width buckets (`717da28e`), the dark map
+style (`26242382`), the web account page rebuilt to the app's shape
+(`b67a5f53`), the translated-chrome fix (`70caa23f`, `3ebe658b`), the
+unlisted tree-share page (`16c1bcac`), and the routine digest/re-rank and
+assembly-line commits (Ghent, Leuven, Bruges, Ypres, Stuttgart, Freiburg,
+Taipei, and the famous-tree lane). Ran `python3 scripts/qa.py` (5613 pages,
+clean) and `python3 scripts/health.py` (all green, no BLOCKER) against the
+current build. Spot-checked `/es/seville` for the chrome-translation fix
+(nav, breadcrumb and footer all read in Spanish now, confirmed in the built
+HTML) and `/t` for the new unlisted share page (honest "this link leads
+nowhere" state, noindex, no location exposed, matching hard rule 10).
+
+**WARN, APP — `Home.swift`'s hero tagline swapped to a colour calibrated for
+the wrong background, in the same commit that fixed the real version of this
+bug.** `ios/AncientTrees/AncientTrees/Screens/Home.swift:274`, "wherever you
+are." changed from `Brand.gold` to `Brand.goldInk` in `351b26c8`. `goldInk`
+exists specifically to fix gold-as-text on a *white* surface (measured
+2.30:1 there, per the commit message and `darkcheck.py`'s `PAIRS` list,
+which only checks solid-colour pairs like `goldInk`/`surface`). But this
+text does not sit on a white surface: it sits on a rotating photograph under
+a `.black.opacity(0.62)` gradient (`Home.swift:267-269`), exactly the
+composition `HeroCover.swift:52` uses for the identical line and correctly
+left on plain `Brand.gold` in this same commit (that file isn't even in the
+diff). `goldInk`'s light-mode value is `0x8F6210`, a dark brownish gold
+picked to read on white; over a darkened photo in light mode (the app's
+default appearance) it is duller and lower-contrast than the `Brand.gold`
+it replaced, the opposite of what the commit was trying to achieve
+everywhere else. On today's sample photo (`explore.png` in the rotated
+screenshots, a bright sunlit canopy) it still reads, but the photo rotates
+(`Heroes.image`) and a darker or more uniform frame would make it worse.
+This is a plausible regression, not certain breakage, and not something a
+mechanical check can catch (`darkcheck.py` only measures the fixed palette,
+never a photo overlay), which is exactly the kind of thing this layer
+exists to catch. A session should compare `Home.swift`'s hero band against
+`HeroCover.swift`'s and decide which one is right, since right now the
+identical line of copy is styled two different ways for no stated reason.
+
+Everything else read clean: no em dashes or banned words in the sampled
+pages, no builder-speak toward the visitor, no superlative collisions, the
+account page's two lanes match the app's own state language as the commit
+claims, and the photo-takedown guard (`check_contributor_photos_are_traceable`)
+is correctly wired both directions before any contributor photo has shipped.
+
+---
+
 ## 2026-09-02
 
 Reviewed the last 24 hours (~140 commits): heavy assembly-line work (Rio de
