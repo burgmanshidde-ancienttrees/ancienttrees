@@ -9,6 +9,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (continuation run 7, following an attempt that shipped 3 trees and stopped after 55 min with 65 unspent) - Oahu +3, Llangernyw and Matera open (2 new places, 5 new trees total)
+
+Followed the harness's start order: pulled, found one standing claim (`oahu`, from the immediately prior attempt in this window) and finished it rather than releasing it, since it was already dispatched work worth completing. `leads.py --ready` showed 2 Catania leads, but both were already held for real reasons (Mascalucia/Motta Sant'Anastasia, both outside the day-trip boundary, one also access-unconfirmed) recorded in the leads file's own `reason` fields, not superseded rules; `leads.py`'s READY heuristic doesn't read that field, so it's a known trap rather than new work.
+
+**Oahu**: two verify passes on the standing/re-claimed paid-ratio problem (6 of 8 trees behind Foster/Moanalua tickets, 75%, against CLAUDE.md's "at most about a third"). Delivered 3 free trees: the UH Manoa Art Building Baobab (the largest baobab in the US per UH's own claim; the 1973 building was built around it), the Sinclair Cannonball Tree (UH Manoa campus, flowers and fruit straight from the trunk), and the Nuuanu Valley Monkeypod (a free city park, climbable low branches). Ratio down to 6 of 11 (55%). `hawaii.edu` added to the fetch blocklist (unreachable from this sandbox, Wayback substitutes cleanly).
+
+**Llangernyw (Wales)**: new single-tree place, the Llangernyw Yew, under the 2026-08-31 single-destination exception. 3,463 monthly Wikipedia reads, Tree Council "50 Great British Trees", a folklore hook (the Angelystor). Age genuinely disputed (popular 4,000-5,000 years vs the Woodland Trust's own more careful ~1,500-year reading) and stated as a dispute rather than resolved to one number.
+
+**Matera (Italy)**: new city, 4 trees. Three sat verified-but-unpublished from an earlier pass, one short of the floor; a targeted 4th-tree hunt found the Date Palm of Borgo La Martella via RAMI, an independent Italian register the earlier MASAF import missed. None of the four carries a documented age.
+
+Side effects: `city_queue.py` regenerated the queue files; `preflight.py` caught and this run fixed stale meta_description counts on the Italy, UK and US country pages (opening 2 countries' worth of new cities moved their totals). Build and QA clean. Full detail and sourcing in CURATION.md. All three claims released, agent-costs logged.
+
 ## 2026-09-03 (continuation run 6, following an attempt that stopped after 26 min with 94 unspent) - Hilo +1, Krakow's leads closed out, two free girth/height fills
 
 Followed the harness's start order: pulled, found a standing `krakow` verify claim from the earlier attempt in this window (already had register candidates fetched), and a "READY" pair for Catania that turned out to be exactly the trap CLAUDE.md warns about ("never trust the READY count blind"): both were deliberately held for real, current reasons (7-10km past the day-trip boundary; unconfirmed access to a private grove), not superseded rules, so I left them alone.
