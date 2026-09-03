@@ -9,6 +9,42 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-03 (session with Hidde) - Share button fixed, one fake-precision bug closed, the share page redesigned
+
+**The "Share this tree" button ("That did not send") was never a location bug**, though
+it looked like one. `supabase/shared-sightings.sql` (the 2026-09-02 unlisted
+share-page migration) had never been pasted into production, so the `shared`
+column did not exist and every PATCH failed. Hidde ran it; verified end to end
+by hand (service key query on `sightings`/`shared_trees`/the bucket, then the
+live `/t?id=` page itself in the browser): photo, name and date render, no
+coordinates anywhere. Working now.
+
+**A real, separate bug found along the way: the camera path faked GPS when
+location was off.** `CollectSheet.resolve()` always recorded `origin` as fix
+`.device`, "GPS, standing at the tree," even when location was denied or
+unknown, in which case `origin` silently falls back to the last fix the phone
+ever had or to Dam square (LocationOff.swift). That is exactly the fabricated
+precision hard rule 10 forbids, and it could have auto-claimed a real tree
+near that fallback point nobody stood at. Fixed: an unknown origin now routes
+through the same "drag the pin" `.place` stage the library-photo path already
+uses when a photograph carries no location, so the record becomes an honest
+`.placed` fix instead of an invented one. iOS CI green on the commit.
+
+**The `/t` share page redesigned**, on Hidde's read that it was "niet de
+mooitste landingspagina" and his ask to check AllTrails. Checked a live trail
+page rather than guessing: big cropped photo, a meta/badge row under the
+title, the app pitch as its own card rather than a link in a sentence.
+Applied here with nothing new invented: the photo now sits in a fixed 4:3
+frame with a shadow, species/date became `.chip` pills (already used
+elsewhere), and the app pitch reuses `AppGetter`, the same device-aware
+widget `/app` ships (iOS badge / Android waitlist / desktop QR). Verified
+live at desktop and 375px.
+
+**Still open, not done this session:** the App Store version bump and build
+for the accumulated fixes since release (dark mode, sign-in sheet, delete-
+account confirmation, this location fix). Offered, not actioned; say the word
+and I will prepare it.
+
 ## 2026-09-03 (continuation run 4) - Finished the in-flight _famous-germany claim, shipped 2 more Japan single-tree places
 
 Picked up where an earlier attempt in this window stopped early with 61 min
