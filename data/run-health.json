@@ -3552,6 +3552,144 @@
    ],
    "trees": 35,
    "logged": true
+  },
+  {
+   "started": "2026-09-03T01:11:53+00:00",
+   "date": "2026-09-03",
+   "run_id": "33696142247",
+   "minutes": 73.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 374,
+   "denials": 28,
+   "denials_source": "permission_denials: Bash(cat), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(test)",
+   "ended": "success",
+   "tokens": 1289025,
+   "claims_held": [
+    "_famous-germany"
+   ],
+   "commits": 34,
+   "cities_touched": 29,
+   "cities": [
+    {
+     "city": "freiburg",
+     "trees": 7
+    },
+    {
+     "city": "stuttgart",
+     "trees": 7
+    },
+    {
+     "city": "heidelberg",
+     "trees": 6
+    },
+    {
+     "city": "taipei",
+     "trees": 4
+    },
+    {
+     "city": "uda",
+     "trees": 3
+    },
+    {
+     "city": "minamialps",
+     "trees": 2
+    },
+    {
+     "city": "nihonmatsu",
+     "trees": 2
+    },
+    {
+     "city": "albersdorf",
+     "trees": 1
+    },
+    {
+     "city": "bad-staffelstein",
+     "trees": 1
+    },
+    {
+     "city": "collm",
+     "trees": 1
+    },
+    {
+     "city": "hainich-national-park",
+     "trees": 1
+    },
+    {
+     "city": "heede",
+     "trees": 1
+    },
+    {
+     "city": "higashiagatsuma",
+     "trees": 1
+    },
+    {
+     "city": "higashine",
+     "trees": 1
+    },
+    {
+     "city": "iga",
+     "trees": 1
+    },
+    {
+     "city": "koenigslutter",
+     "trees": 1
+    },
+    {
+     "city": "koriyama",
+     "trees": 1
+    },
+    {
+     "city": "nagano",
+     "trees": 1
+    },
+    {
+     "city": "nikaho",
+     "trees": 1
+    },
+    {
+     "city": "ofunato",
+     "trees": 1
+    },
+    {
+     "city": "ono",
+     "trees": 1
+    },
+    {
+     "city": "otama",
+     "trees": 1
+    },
+    {
+     "city": "solingen",
+     "trees": 1
+    },
+    {
+     "city": "takayama",
+     "trees": 1
+    },
+    {
+     "city": "tsuruoka",
+     "trees": 1
+    },
+    {
+     "city": "ueda",
+     "trees": 1
+    },
+    {
+     "city": "untermerzbach",
+     "trees": 1
+    },
+    {
+     "city": "enschede",
+     "trees": 0
+    },
+    {
+     "city": "hiroshima",
+     "trees": 0
+    }
+   ],
+   "trees": 51,
+   "logged": true
   }
  ],
  "schedule_changes": [
