@@ -9,7 +9,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-09-03 (session with Hidde) - Share button fixed, one fake-precision bug closed, the share page redesigned
+## 2026-09-03 (continuation run 5) - Malsfeld: finished the standing _famous-germany claim, a new 4-tree German place
+
+An earlier attempt in this window stopped after 88 min with 32 unspent; picked up its in-flight `_famous-germany` verify claim rather than starting fresh (per the instruction: a claim nobody finishes is the strongest predictor of a wasted night). `leads.py --ready` had only 2 READY (below a write pass's minimum), so went straight to the claim.
+
+Geographic clustering over the 71 lead candidates in `_famous-germany.json` found three named lime trees within ~7km of each other in Hesse. A time-boxed (~20 min) verify pass confirmed they belong to a real, named regional custom, "Geleitete Linden im Schwalm-Eder-Kreis" (guided/trained village lindens, grown over historic court and dance sites), and turned up a fourth specimen via the Commons gallery page, clearing the 4-tree floor.
+
+Published **Malsfeld** (Germany, mls_001-mls_004): the Guided Lindens of Berndshausen (~400y, before a fortified church on an 18th-century court site), the Guided Lindens of Dagobertshausen (~120-160y, a trio), the Tanzlinde of Hilgershausen (a three-tiered lime with a seat trained into its own trunk, sources disagree on planting date by roughly a century, both recorded honestly), and the Tanzlinde of Ostheim (thickest at 3.34m girth, shortest at 5m from heavy pruning). All free, no train station, a car is the practical way to see more than one. Along the way found and fixed a stale Germany country-page meta_description and intro (still said 30 cities/161 trees; actual was already 31/165 before this run).
+
+Build, QA gate and preflight all clean (preflight's only Germany note, the stale count, is now fixed). Claim released, committed, pushed. Week budget: 2013/5000 min, nowhere near the ceiling.
+
 
 **The "Share this tree" button ("That did not send") was never a location bug**, though
 it looked like one. `supabase/shared-sightings.sql` (the 2026-09-02 unlisted
