@@ -1,0 +1,63 @@
+{
+  "city": "Kanagi",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kanagi maps one tree: Junihon-yasu, a hiba whose trunk forks into twelve major branches about four metres up, in a shape locals compare to the barbed head of a fish spear. Tradition holds the count never changes, and a national ranking of Japan's hundred most famous trees agrees it is worth the drive. Published alone here because the tree itself is the destination, not because Kanagi's research is finished.",
+  "meta_description": "Junihon-yasu, Kanagi: a hiba forking into twelve branches shaped like a fish spear, free on a forest hillside near Goshogawara, Aomori.",
+  "question_meta": "Kanagi's oldest and only mapped tree is Junihon-yasu, a hiba with twelve major branches forking from one trunk, free to visit near Goshogawara, Aomori.",
+  "question_answer": "Kanagi's only mapped tree, and its oldest, is Junihon-yasu, a hiba (Thujopsis dolabrata) whose trunk splits into twelve major branches about four metres up. It stands on a forest hillside near Kanagi, a district of Goshogawara in Aomori Prefecture, estimated at roughly 300 to 800 years old.",
+  "question_context": "Twelve branches fork from one trunk in a shape somebody once likened to a yasu, a barbed fish spear, which is where the tree's name comes from. Local tradition holds the number is fixed: if a thirteenth branch starts to grow, one of the original twelve dies back to keep the count at twelve. A legend explains the planting itself, that a young man named Yashichiro killed a monkey demon terrorising the area and villagers planted this tree in his memory. Around 1912, loggers sent to fell it are said to have refused, and it was left standing instead. In 1990 it was named to Japan's national ranking of its hundred most famous trees, and it carries a Goshogawara city natural monument designation, though a 2003 push for national status stalled when the landowner would not consent. Sources disagree on its age: a council record gives about 800 years, a tourism board a wider 300 to 800. A forest road out of Kanagi leads to a torii gate marking the ground around the trunk, and enthusiasts are documented driving out specifically to see it. Free, about 20 minutes by car from Kanagi Station; the road can close with winter snow.",
+  "hero_tree_id": "kng_001",
+  "oldest_tree_id": "kng_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Kanagi?",
+      "a": "Junihon-yasu, a hiba (Thujopsis dolabrata) whose trunk forks into twelve major branches about four metres up, standing on a forest hillside near Kanagi in Aomori Prefecture."
+    },
+    {
+      "q": "Why does it always have exactly twelve branches?",
+      "a": "Local tradition holds the count never changes: if a thirteenth branch starts to grow, one of the original twelve is said to die back to keep it at twelve."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. A 2008 city council record gives about 800 years; a tourism board gives a wider estimate of 300 to 800 years. Both agree on an 8-metre girth and 34-metre height."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. A forest road leads to a torii gate marking the site, then a short walk to the tree, about 20 minutes by car from Kanagi Station. The road can close in winter snow."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kng_001",
+      "name": "Junihon-yasu",
+      "species": "Hiba (Thujopsis dolabrata)",
+      "age_estimate": "several hundred years, often cited as roughly 800",
+      "age_min": 300,
+      "age_max": 800,
+      "girth_cm": 800,
+      "height_m": 34,
+      "location": {
+        "address": "Kiraichi, Aisonoyama, Kanagi-machi, Goshogawara, Aomori Prefecture, Japan",
+        "latitude": 40.9174882,
+        "longitude": 140.5137034,
+        "neighbourhood": "Kanagi, Goshogawara"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E5%8D%81%E4%BA%8C%E6%9C%AC%E3%83%A4%E3%82%B9",
+        "https://aomori-tourism.com/blog/2019/09/21220.html"
+      ],
+      "access": "Free, no permission needed. A forest road (Kiraichi-gawa Heiyo forest road) leads to a torii gate marking the sacred site, then a short walk to the tree. About 20 minutes by car from Kanagi Station; the forest road can close in winter due to snow.",
+      "transport": "Kanagi Station (Tsugaru Railway) plus approx. 20 minutes by car or taxi; no public transit reaches the tree directly.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Twelve branches fork from this hiba's trunk about four metres up, splayed out like the barbed head of a fish spear, which is where its name comes from: yasu means spear. Local belief holds the number never changes. If a thirteenth branch starts to grow, one of the original twelve is said to die back to keep the count at twelve.\n\nThe shape carries a legend. A young man named Yashichiro is said to have killed a monkey demon terrorising the area, and villagers planted this tree in his memory. Around 1912, loggers arrived to fell it, and the crew is said to have refused. It was left standing, and in 1990 it was named to the Shin Nihon Meiboku Hyakusen, Japan's national ranking of its hundred most famous trees.\n\nIt has never received Japan's highest tree protection. A 2003 push for national Natural Monument status stalled when the landowner would not consent, and it carries only a city designation instead. That has not stopped people finding it. A forest road out of Kanagi leads to a torii gate marking the sacred ground around the trunk, and Japan's giant tree enthusiasts are documented driving out specifically to see it, trip reports and all.\n\nSources disagree on its age: a 2008 city council record says about 800 years, a tourism board gives a wider 300 to 800. Both describe the same eight metre girth and 34 metre height.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
