@@ -1992,8 +1992,14 @@ def app_section(today):
     out.append("- Measuring since 2026-08-30, when Measure.swift went in. "
                "Unlinked to any account by design: an install id, the app "
                "version and the OS, nothing else.")
-    out.append("- %d phone%s have ever sent anything." % (
-        n_phones, "" if n_phones == 1 else "s"))
+    # INSTALLS, not people, and the distinction is not pedantry: the id is a
+    # UUID made on first launch and thrown away with the app, so every
+    # reinstall and every TestFlight update that wipes the container counts
+    # again. During development that is mostly us, several times over.
+    out.append("- %d install%s have ever sent anything. An install id is made "
+               "fresh on each install, so this is an upper bound on people, "
+               "not a count of them." % (
+                   n_phones, "" if n_phones == 1 else "s"))
     if n_phones <= 2:
         out.append("- At one or two installs this is us, not an audience. "
                    "Read nothing into a single tap.")
