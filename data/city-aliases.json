@@ -63,6 +63,9 @@
       "Orxus",
       "Årousse"
     ],
+    "albersdorf": [
+      "Albersdörp"
+    ],
     "alicante": [
       "Alacant",
       "Alikantė",
@@ -191,6 +194,9 @@
       "Baern",
       "Baoren",
       "Gemeente Baarn"
+    ],
+    "bad-staffelstein": [
+      "Staffelsteinium"
     ],
     "bamberg": [
       "Bamberga",
@@ -553,6 +559,9 @@
       "Coinvra",
       "Koimbr",
       "Koimbro"
+    ],
+    "collm": [
+      "Wermsdorf"
     ],
     "cologne": [
       "Keulen",
@@ -986,6 +995,18 @@
       "Haerlemmermeer",
       "Haorlemmermeer"
     ],
+    "hainich-national-park": [
+      "Nationaal Park Hainich",
+      "Nationalpark Hainich",
+      "Parc national de Hainich",
+      "Parque nacional de Hainich",
+      "Parco nazionale di Hainich",
+      "Hainichin kansallispuisto",
+      "Park Narodowy Hainich",
+      "Vườn quốc gia Hainich",
+      "Hainich Kok-ka Kong-hn̂g",
+      "Hainich nasjonalpark"
+    ],
     "hamburg": [
       "Hambourg",
       "Hamburgo",
@@ -1001,6 +1022,18 @@
     "hampton-virginia": [
       "Hampton",
       "Hamptonas"
+    ],
+    "heede": [
+      "Landkreis Emsland",
+      "Arrondissement du Pays de l'Ems",
+      "Distrito de Emsland",
+      "Circondario dell'Emsland",
+      "Emsland",
+      "Powiat Emsland",
+      "Zemský okres Emsland",
+      "Emsland járás",
+      "Emslandi kreis",
+      "Circulus Terrae Emesensis"
     ],
     "heerlen": [
       "Hērlena",
@@ -1155,6 +1188,16 @@
     "kauai": [
       "Kaway",
       "ma lili Kawawi"
+    ],
+    "koenigslutter": [
+      "Königslutter",
+      "Luttera Regalis"
+    ],
+    "koriyama": [
+      "Kórijama",
+      "Ginqsan Si",
+      "Kôriyama-chhī",
+      "Kōriyama Shi"
     ],
     "krakow": [
       "Krakau",
@@ -1602,6 +1645,10 @@
       "Neymeqen",
       "Nimego",
       "Nimwaege"
+    ],
+    "nikaho": [
+      "Nikaho-chhī",
+      "Nikaho-shi"
     ],
     "nuremberg": [
       "Neurenberg",
@@ -2125,6 +2172,12 @@
       "Sofijo",
       "Sofio"
     ],
+    "solingen": [
+      "Zolingenas",
+      "Zolingene",
+      "Salingiacum",
+      "Solich"
+    ],
     "sorrento": [
       "Sorrent",
       "Sorrente",
@@ -2326,6 +2379,10 @@
       "Triesto",
       "Triests"
     ],
+    "tsuruoka": [
+      "Curuoka",
+      "Turuoka-chhī"
+    ],
     "turin": [
       "Turijn",
       "Torino",
@@ -2341,6 +2398,9 @@
     "uda": [
       "Uda Shi",
       "Uda-chhī"
+    ],
+    "ueda": [
+      "Ueda-chhī"
     ],
     "utrecht": [
       "Utreque",
@@ -2533,6 +2593,7 @@
   },
   "wikipedia_titles": {
     "aarhus": "Aarhus",
+    "albersdorf": "Albersdorf",
     "alicante": "Alicante",
     "alkmaar": "Alkmaar",
     "amersfoort": "Amersfoort",
@@ -2547,6 +2608,7 @@
     "auckland": "Auckland",
     "austin": "Austin, Texas",
     "baarn": "Baarn",
+    "bad-staffelstein": "Bad Staffelstein",
     "bamberg": "Bamberg",
     "bangkok": "Bangkok",
     "barcelona": "Barcelona",
@@ -2586,6 +2648,7 @@
     "charleston": "Charleston, South Carolina",
     "chicago": "Chicago",
     "coimbra": "Coimbra",
+    "collm": "Wermsdorf",
     "cologne": "Cologne",
     "columbia-missouri": "Columbia, Missouri",
     "como": "Como",
@@ -2634,8 +2697,10 @@
     "gutau": "Gutau",
     "haarlem": "Haarlem",
     "haarlemmermeer": "Haarlemmermeer",
+    "hainich-national-park": "Hainich National Park",
     "hamburg": "Hamburg",
     "hampton-virginia": "Hampton, Virginia",
+    "heede": "Emsland",
     "heerlen": "Heerlen",
     "heidelberg": "Heidelberg",
     "helmond": "Helmond",
@@ -2657,6 +2722,8 @@
     "kanazawa": "Kanazawa",
     "kansas-city": "Kansas City, Missouri",
     "kauai": "Kauaʻi",
+    "koenigslutter": "Königslutter",
+    "koriyama": "Kōriyama",
     "krakow": "Kraków",
     "kyoto": "Kyoto",
     "las-vegas": "Las Vegas",
@@ -2703,6 +2770,7 @@
     "nice": "Nice",
     "nihonmatsu": "Nihonmatsu, Fukushima",
     "nijmegen": "Nijmegen",
+    "nikaho": "Nikaho, Akita",
     "nuremberg": "Nuremberg",
     "oahu": "Oʻahu",
     "ofunato": "Ōfunato",
@@ -2760,6 +2828,7 @@
     "sintra": "Sintra",
     "sittard-geleen": "Sittard-Geleen",
     "sofia": "Sofia",
+    "solingen": "Solingen",
     "sorrento": "Sorrento",
     "split": "Split, Croatia",
     "stockholm": "Stockholm",
@@ -2781,8 +2850,11 @@
     "toulouse": "Toulouse",
     "trento": "Trento",
     "trieste": "Trieste",
+    "tsuruoka": "Tsuruoka",
     "turin": "Turin",
     "uda": "Uda, Nara",
+    "ueda": "Ueda, Nagano",
+    "untermerzbach": "Untermerzbach",
     "utrecht": "Utrecht",
     "valencia": "Valencia",
     "vancouver": "Vancouver",
@@ -2814,6 +2886,7 @@
     "simsbury": "Simsbury, Connecticut",
     "sintra": "Sintra",
     "tillamook": "Tillamook, Oregon",
+    "untermerzbach": "Untermerzbach",
     "wye-mills-maryland": "Wye Mills, Maryland"
   },
   "unresolved_names": {
