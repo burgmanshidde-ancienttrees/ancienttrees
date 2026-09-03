@@ -823,9 +823,20 @@ def default_holder():
 
 
 # How many places one holder may have open at once. Two is a working pair: a
-# verify running while the previous city's write is merged. Three is already a
-# stretch and four is spraying.
-MAX_OPEN_CLAIMS = 3
+# verify running while the previous city's write is merged. Three was the cap
+# while a place meant a city.
+#
+# Raised to six on 2026-09-03, when rung (0c) made a single famous tree a place
+# of its own: Old Tjikko is one tree, one page and one claim, and a pass on
+# eight of them touches eight places while being far smaller than one city
+# pass. The cap was sized in cities and the unit changed underneath it.
+#
+# What it still guards is untouched, because that was never about the number:
+# a claim nobody finishes fences a place off for up to four hours, and the two
+# days that produced this check (fourteen places claimed for zero published on
+# 2026-08-13, eight on 2026-08-17) were both spraying rather than working.
+# Claim what the window can finish, and release on merge.
+MAX_OPEN_CLAIMS = 6
 
 
 def do_claim(target, kind, by):
