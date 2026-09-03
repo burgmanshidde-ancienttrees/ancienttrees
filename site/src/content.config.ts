@@ -18,6 +18,14 @@ const photoSchema = z
     width: z.number().int().nullable().optional(),
     height: z.number().int().nullable().optional(),
     note: z.string().nullable().optional(),
+    // A photograph a reader sent us, and the account it came from. Both are
+    // named here because zod strips what it does not name, and a stripped
+    // contributor_user_id is a photograph that can never be taken down:
+    // scripts/photo_takedown.py keeps the deletion promise by asking whether
+    // that account still exists, and it can only ask about an id it can see.
+    // preflight refuses one without the other in either direction.
+    source: z.enum(["contributor"]).nullable().optional(),
+    contributor_user_id: z.string().nullable().optional(),
   })
   .partial()
   .optional();

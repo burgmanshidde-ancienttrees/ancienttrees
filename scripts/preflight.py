@@ -898,6 +898,47 @@ def check_no_sender_names():
 
 
 
+def check_contributor_photos_are_traceable():
+    """A reader's photograph must carry the account that sent it.
+
+    Written 2026-09-03, before the first one was published, which is the only
+    moment this could be written cheaply. /terms and /privacy both promise that
+    deleting an account removes what was published with it, and the database
+    keeps that promise properly. A published photograph is the one thing that
+    lives outside the database: a copy in data/cities and a file in
+    site/public/photos, in a static site no cascade can reach.
+
+    scripts/photo_takedown.py keeps the promise by asking Supabase whether the
+    contributing account still exists. It can only ask about an id it can see,
+    so a reader's photograph without one is a photograph that can never be
+    taken down, and the promise would be broken silently by the one page nobody
+    would think to check.
+
+    Hence both directions. A photograph marked as a reader's must name the
+    account, and an id must not sit on a photograph not marked as one, because
+    the sweep would not look at it. Removing this check needs Hidde: it is the
+    mechanism behind a promise in the terms people accept at sign-in.
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            photo = tree.get("photo") or {}
+            uid = photo.get("contributor_user_id")
+            is_contrib = photo.get("source") == "contributor"
+            if is_contrib and not uid:
+                out.append("%s: %s carries a reader's photograph with no "
+                           "contributor_user_id. It could never be taken down when "
+                           "they delete their account, which /terms promises."
+                           % (path, tree.get("id")))
+            if uid and not is_contrib:
+                out.append("%s: %s names a contributor_user_id without "
+                           'photo.source == "contributor", so the takedown sweep '
+                           "will not look at it." % (path, tree.get("id")))
+    return out
+
+
 def check_translated_components_are_neutral():
     """A component that renders every language must not have one typed into it.
 
@@ -1468,7 +1509,8 @@ def main():
                 + check_ui_strings_cover_every_language()
                 + check_translated_components_are_neutral()
                 + check_no_two_language_switch()
-                + check_pin_is_in_its_own_country())
+                + check_pin_is_in_its_own_country()
+                + check_contributor_photos_are_traceable())
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
