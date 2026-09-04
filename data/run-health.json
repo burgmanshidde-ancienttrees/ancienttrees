@@ -4579,6 +4579,176 @@
    ],
    "trees": 3,
    "logged": true
+  },
+  {
+   "started": "2026-09-04T06:03:27+00:00",
+   "date": "2026-09-04",
+   "run_id": "33842790825",
+   "minutes": 95.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 589,
+   "denials": 42,
+   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(grep), Bash(if), Bash(ls), Bash(mkdir), Bash(pip), Bash(printenv), Bash(python3), Bash(rm), Bash(test)",
+   "ended": "success",
+   "tokens": 81276603,
+   "claims_held": [
+    "_famous-gap-batch1"
+   ],
+   "commits": 25,
+   "cities_touched": 37,
+   "cities": [
+    {
+     "city": "allouville-bellefosse",
+     "trees": 1
+    },
+    {
+     "city": "bad-blumau",
+     "trees": 1
+    },
+    {
+     "city": "bansko",
+     "trees": 1
+    },
+    {
+     "city": "concoret",
+     "trees": 1
+    },
+    {
+     "city": "formentera",
+     "trees": 1
+    },
+    {
+     "city": "glastonbury",
+     "trees": 1
+    },
+    {
+     "city": "granit",
+     "trees": 1
+    },
+    {
+     "city": "ibiza",
+     "trees": 1
+    },
+    {
+     "city": "miriam-vale",
+     "trees": 1
+    },
+    {
+     "city": "pirangi",
+     "trees": 1
+    },
+    {
+     "city": "runnymede",
+     "trees": 1
+    },
+    {
+     "city": "tolpuddle",
+     "trees": 1
+    },
+    {
+     "city": "vassununga",
+     "trees": 1
+    },
+    {
+     "city": "wessobrunn",
+     "trees": 1
+    },
+    {
+     "city": "auckland",
+     "trees": 0
+    },
+    {
+     "city": "brighton",
+     "trees": 0
+    },
+    {
+     "city": "brunswick-georgia",
+     "trees": 0
+    },
+    {
+     "city": "columbia-missouri",
+     "trees": 0
+    },
+    {
+     "city": "coos-bay",
+     "trees": 0
+    },
+    {
+     "city": "enschede",
+     "trees": 0
+    },
+    {
+     "city": "fortingall",
+     "trees": 0
+    },
+    {
+     "city": "fulufjallet",
+     "trees": 0
+    },
+    {
+     "city": "guerneville",
+     "trees": 0
+    },
+    {
+     "city": "hampton-virginia",
+     "trees": 0
+    },
+    {
+     "city": "hiroshima",
+     "trees": 0
+    },
+    {
+     "city": "jaegerspris-nordskov",
+     "trees": 0
+    },
+    {
+     "city": "kanazawa",
+     "trees": 0
+    },
+    {
+     "city": "kauai",
+     "trees": 0
+    },
+    {
+     "city": "martinsville-new-jersey",
+     "trees": 0
+    },
+    {
+     "city": "olympic-national-park",
+     "trees": 0
+    },
+    {
+     "city": "santa-maria-del-tule",
+     "trees": 0
+    },
+    {
+     "city": "sequoia-national-park",
+     "trees": 0
+    },
+    {
+     "city": "simsbury",
+     "trees": 0
+    },
+    {
+     "city": "stelmuze",
+     "trees": 0
+    },
+    {
+     "city": "sunderland-massachusetts",
+     "trees": 0
+    },
+    {
+     "city": "tillamook",
+     "trees": 0
+    },
+    {
+     "city": "waipoua-forest",
+     "trees": 0
+    }
+   ],
+   "trees": 14,
+   "logged": true
   }
  ],
  "schedule_changes": [
