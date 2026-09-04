@@ -2,15 +2,20 @@
 
 Fill these into App Store Connect: sidebar > Featuring > Nominations > + > Create Nomination.
 
-## Nomination Name  (40/60)
-Meet the Oldest Living Tree in Your City
+## Nomination Name  (38/60)
+Find the remarkable old trees near you
 
-This field is internal: Apple's own text says it helps you recognise the
-nomination later, and the editorial team judges the description instead. It is
-written in their Today-tab voice anyway (verb first, a promise, no category
-prefix), because the first draft read "New app: find the remarkable old trees
-near you" and Hidde was right that it was dry. "Living" is the word doing the
-work: it says the thing is still standing and you can go now.
+Hidde's own wording, and it is better than what I proposed: this is the app's
+INTRODUCTION, so broad and plain is right, and a narrower angle (the ginkgos in
+November) is what a second nomination is for. It is also almost word for word
+the value proposition in CLAUDE.md, "it shows you the remarkable old trees near
+you". My first draft read "New app: find the remarkable old trees near you" and
+he was right that it was dry: the dryness was the category prefix, not the
+sentence after it.
+
+"near you" rather than "in your city" on purpose. The app works from where you
+are standing, and a large share of what we map is in villages, on islands and
+in parks outside any city.
 
 ## Nomination Type
 App Launch
