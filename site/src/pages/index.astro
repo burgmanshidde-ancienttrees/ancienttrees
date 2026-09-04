@@ -18,7 +18,10 @@ import { SPECIES_ICONS } from "../lib/species-icons";
 import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 // The bar and the footer already say these words; the hero says the SAME ones,
 // from the same table, so one screen never carries two labels for one control.
-import { ui } from "../lib/i18n";
+// chrome(), not ui(): there are two string tables and only this one carries the
+// nav's own labels. The first version reached for ui("en").getApp, which is
+// undefined, and shipped a button with an icon and no words on it.
+import { chrome } from "../lib/ui-strings";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -425,7 +428,7 @@ const scripts = SEARCH_WIDGET_JS;
     <p class="hero-links">
       <a class="hero-link" href="/explore">Explore trees near you</a>
       <a class="hero-app" href="/app" data-app-download data-ev="app-cta">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7.5 11 12 15.5 16.5 11"/><path d="M5 19h14"/></svg>{ui("en").getApp}</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7.5 11 12 15.5 16.5 11"/><path d="M5 19h14"/></svg>{chrome("en").getApp}</a>
     </p>
   </div>
 </div>
