@@ -950,8 +950,14 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 /* The icon sits close to the left edge with the label pushed off the right,
    which is what makes the Polarsteps button read as an app rather than as a
    link: the picture is nearly a badge inset in the pill. 22% is the corner iOS
-   itself draws on a home-screen icon, so the file can stay a plain square. */
-.hero-app img { width: 28px; height: 28px; border-radius: 22%; display: block; }
+   itself draws on a home-screen icon, so the file can stay a plain square.
+
+   The hairline is there because our icon is cream where theirs is a strong red:
+   on a white pill the tile's own edge disappears and the tree looks like it is
+   floating in the button. One 10% line gives it back without touching the
+   artwork. */
+.hero-app img { width: 28px; height: 28px; border-radius: 22%; display: block;
+  box-shadow: 0 0 0 1px rgba(26,32,18,0.10); }
 .home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
 .mission { max-width: 44rem; margin: 2.5rem auto 0; padding: 1.6rem 2rem 0; border-top: 1px solid var(--cream-dark); text-align: center; }
 .mission p { font-family: var(--sans); font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
