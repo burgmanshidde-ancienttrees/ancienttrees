@@ -103,6 +103,17 @@ const headExtra = mapHead() + ogImage + "\n" + hreflangForCity(cslug, "tree", ts
 // heading and the line above them are looked up.
 const sources = treeSources(tree);
 const scripts = singlePinScript(loc.latitude!, loc.longitude!);
+// The bare number, and a cap on the prose fallback. Same rule as the English
+// page: the label carries the unit, and an age_estimate that runs to a
+// sentence is cut at its first clause, because everything after the comma is
+// provenance and belongs in the story (2026-09-04).
+const ageLo = typeof tree.age_min === "number" && tree.age_min > 0 ? tree.age_min : null;
+const ageHi = typeof tree.age_max === "number" && ageLo && tree.age_max > ageLo ? tree.age_max : null;
+const ageNumber = ageLo ? (ageHi ? `${ageLo}-${ageHi}` : `${ageLo}`) : null;
+const ageLabel = ageNumber ? U.factYearsOld : U.factAge;
+const ageText = (x.age_estimate || "").split(/[,;(]/)[0].trim();
+const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownAge;
+
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra} lang={lang}>
   <main class="content-page has-tree-bar">
@@ -129,13 +140,27 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     )}
     <div class="tree-head">
       <h1>{x.name}</h1>
-      <p class="tree-sub">{x.species}</p>
+      {/* The species caption is gone: it named the species a second time, a
+          centimetre above the block that names it (2026-09-04). */}
       <p class="tree-place">{[loc.neighbourhood, tr.city].filter(Boolean).join(", ")}</p>
     </div>
-    <div class="fact-card">
-      <div class="fact"><b>{x.age_estimate || U.unknownAge}</b><span>{U.factAge}</span></div>
-      <div class="fact"><b>{x.species}</b><span>{U.labelSpecies}</span></div>
-      <div class="fact"><b>{isApprox ? U.pinApproximate : U.pinExact}</b><span>{U.factPin}</span></div>
+    {/* The same block the English page carries, in this language. Two columns
+        for the facts that are short, then the lines that need words. Every
+        string comes from UIStrings: a label typed into markup here is not one
+        mistake but seven (2026-09-02). */}
+    <div class="tree-block">
+      <div class="tb-cols">
+        <div class="tb-col tb-age"><span>{ageLabel}</span><b>{ageValue}</b></div>
+        <div class="tb-col tb-species"><span>{U.labelSpecies}</span><b>{x.species}</b></div>
+      </div>
+      {isApprox ? (
+        <p class="tb-loc tb-loc-approx"><b>{U.locApprox}</b></p>
+      ) : (
+        <p class="tb-loc">{U.locExact}</p>
+      )}
+      {tree.paid_entry && (
+        <p class="tb-ticket"><b>{U.ticketNeeded}</b><span>{x.access ?? ""}</span></p>
+      )}
     </div>
     <div class="action-row">
       <a class="go-btn" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">{U.takeMeThere}</a>

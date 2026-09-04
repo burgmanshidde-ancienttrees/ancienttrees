@@ -114,15 +114,15 @@ const year = new Date().getFullYear();
 <body>
 <header class="bar">
   <a href="/" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  {/* Below 800px the bar is the mark and one menu button, and EVERYTHING lives
-      in the panel: Map, the browse facets, the account and the app CTA (Hidde,
-      2026-08-20: "gooi dan alles onder het hamburger menu"). That is the
-      convention rather than an idea of ours: AllTrails, Airbnb and Booking all
-      keep a single control on the right of a phone header and put every
-      destination, the account and the primary CTA inside the panel. Three
-      controls crowded next to a wordmark is what made this bar read as odd.
-      The only-mobile/only-desktop pair is what swaps them; nothing is dropped
-      at either width. */}
+  {/* Below 800px the bar is the mark, the app pill and one menu button, and
+      every DESTINATION lives in the panel: Map, the browse facets and the
+      account (Hidde, 2026-08-20: "gooi dan alles onder het hamburger menu").
+      The pill came back out of the panel on 2026-09-04; the note on it below
+      says why, and it is the only thing that did. So the rule the bar now
+      follows is the one AllTrails, Airbnb, Booking and komoot all follow on a
+      phone: one CTA and one menu button, never a row of links. The
+      only-mobile/only-desktop pair is what swaps them; nothing is dropped at
+      either width. */}
   <nav class="bar-links">
     <a href="/explore" class="bar-map only-desktop">{t.map}</a>
     <details class="nav-drop">
@@ -147,21 +147,6 @@ const year = new Date().getFullYear();
             belong together: they are the two ways somebody who likes this can
             do something about it, one with a tree and one with money. */}
         {SPONSOR_URL ? <a href="/sponsor" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>{t.sponsor}</a> : null}
-        <!-- "Get the app", not "Get early access" (Hidde, 2026-08-24: "why
-             would you do that - change it back"). It became early access on
-             08-23 because five of these pointed at a page saying Coming soon,
-             which is the one promise this label cannot keep. That fault was in
-             the DESTINATION and the destination has moved: these open the
-             waitlist overlay, which says in its own words that we write to you
-             the day it opens. The label can be plain again because the thing
-             behind it is honest. -->
-        <!-- Straight to the page, not the overlay (Hidde, 2026-08-25: "ik heb
-             het vermoeden dat de nieuwe overlay van get the app minder goed
-             converteert dan de voorgaande... doe dan alsjeblieft gewoon die
-             oude landingspagina in een keer"). His hunch, his call, and it is
-             one attribute either way. The overlay is still what the city map's
-             own walks CTA opens, so both are still in the building. -->
-        <a href="/app" class="nav-cta only-mobile" data-app-download data-ev="app-cta">{t.getApp}</a>
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
@@ -179,7 +164,32 @@ const year = new Date().getFullYear();
         </div>
       </details>
     )}
-    <a href="/app" class="bar-cta only-desktop" data-app-download data-ev="app-cta">{t.getApp}</a>
+    {/* The app pill stands in the bar at EVERY width (Hidde, 2026-09-04: "zullen
+        we iig de download app knop uit het menu halen en altijd zichtbaar",
+        with the correction that decides where it matters: "volgens mij doet
+        alltrails het vooral naar voren komen op mobiel niet op desktop"). It
+        used to carry .only-desktop and live inside the panel on a phone, which
+        is 2026-08-20's "gooi dan alles onder het hamburger menu" applied to the
+        one control that pays for itself. This reverses that half deliberately.
+
+        Convention rather than an idea of ours: komoot's own phone header, in
+        the screenshot he sent, is exactly this shape, a filled pill on the
+        right with the hamburger beside it, and AllTrails, Booking and Airbnb
+        all keep one filled CTA visible there. What we do NOT take is the
+        full-screen sheet from the same screenshot, for the reason recorded in
+        CONVENTIONS.md 2026-09-03: search is our only channel and Google names
+        that sheet as the intrusive interstitial it penalises.
+
+        The bar wants about 300px of a 375px screen with the pill back in it,
+        which is why the label is short and the pill is compact below 800px.
+
+        "Get the app", not "Get early access" (Hidde, 2026-08-24: "why would you
+        do that - change it back"): the destination is a live App Store listing,
+        so the plain label is the honest one. And straight to the page rather
+        than the overlay (Hidde, 2026-08-25: "doe dan alsjeblieft gewoon die
+        oude landingspagina in een keer"); /app is device-aware on its own, so
+        an Android or desktop visitor lands on something they can use. */}
+    <a href="/app" class="bar-cta" data-app-download data-ev="app-cta">{t.getApp}</a>
   </nav>
 </header>
 <slot />
