@@ -107,16 +107,14 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra} lang={lang}>
   <main class="content-page has-tree-bar">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{U.home}</a> › <a href={`/${lang}/${cslug}`}>{tr.city}</a> › <span>{x.name}</span></nav>
-    <h1>{x.name}</h1>
-    <p class="chip-row">
-      <span class="chip">{x.age_estimate || U.unknownAge}</span>
-      <span class="chip">{x.species}</span>
-      {isApprox && <span class="chip approx">{U.approxLocationChip}</span>}
-    </p>
+    {/* The app's tree page, ported 2026-09-04, identical to its English twin:
+        picture first and full bleed, facts in one card, the closing paragraph
+        as chips. Only the labels are looked up; the shape is the shape. */}
     {photo && photo.url ? (
-      <PhotoFigure photo={photo} alt={x.name} lang={lang} />
+      <PhotoFigure photo={photo} alt={x.name} lang={lang} variant="hero"
+        widths={[700, 1100, 1600]} sizes="(max-width: 760px) 100vw, 760px" />
     ) : (
-      <figure class="tree-noph">
+      <figure class="tree-noph tree-hero">
         <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
         <figcaption>
           <b>{x.species}</b>
@@ -129,6 +127,16 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
         </figcaption>
       </figure>
     )}
+    <div class="tree-head">
+      <h1>{x.name}</h1>
+      <p class="tree-sub">{x.species}</p>
+      <p class="tree-place">{[loc.neighbourhood, tr.city].filter(Boolean).join(", ")}</p>
+    </div>
+    <div class="fact-card">
+      <div class="fact"><b>{x.age_estimate || U.unknownAge}</b><span>{U.factAge}</span></div>
+      <div class="fact"><b>{x.species}</b><span>{U.labelSpecies}</span></div>
+      <div class="fact"><b>{isApprox ? U.pinApproximate : U.pinExact}</b><span>{U.factPin}</span></div>
+    </div>
     <div class="action-row">
       <a class="go-btn" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">{U.takeMeThere}</a>
       {cityHasWalksPage && (
@@ -136,6 +144,13 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
       )}
     </div>
     <div class="prose-block"><p>{x.story}</p></div>
+    <dl class="facts">
+      <dt>{U.labelSpecies}</dt><dd>{x.species}</dd>
+      <dt>{U.labelAge}</dt><dd>{x.age_estimate}</dd>
+      <dt>{U.labelLocation}</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
+      <dt>{U.labelAccess}</dt><dd>{x.access}</dd>
+      <dt>{U.labelGettingThere}</dt><dd>{x.transport}</dd>
+    </dl>
     <div class="map-embed"><div id="map" class="map"></div></div>
     <p class="go-note">{U.goNote} {x.transport}</p>
     {isApprox && (
@@ -144,13 +159,6 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
         <a href="/contribute?kind=correction">{U.knowExactly}</a>
       </p>
     )}
-    <dl class="facts">
-      <dt>{U.labelSpecies}</dt><dd>{x.species}</dd>
-      <dt>{U.labelAge}</dt><dd>{x.age_estimate}</dd>
-      <dt>{U.labelLocation}</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
-      <dt>{U.labelAccess}</dt><dd>{x.access}</dd>
-      <dt>{U.labelGettingThere}</dt><dd>{x.transport}</dd>
-    </dl>
     {sources.length > 0 && (
       <section class="tree-sources">
         <h2>{U.sourcesHeading}</h2>
@@ -171,9 +179,13 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
         </a>
       ))}
     </div>
-    <div class="cta">
-      {U.whatElseStands(tr.city)} <a href={`/${lang}/${cslug}`}>{U.allTreesLink(allTrees.length, tr.city)}</a> {U.orDiscover} <a href={`/${lang}/${cslug}/${qslug}`}>{U.whichIsOldest(tr.city)}</a>.
-    </div>
+    <section class="discover-more">
+      <h2>{U.discoverMore}</h2>
+      <div class="dm-chips">
+        <a class="dm-chip" href={`/${lang}/${cslug}`}>{U.allTreesLink(allTrees.length, tr.city)}</a>
+        <a class="dm-chip" href={`/${lang}/${cslug}/${qslug}`}>{U.whichIsOldest(tr.city)}</a>
+      </div>
+    </section>
     <div class="report">
       <strong>{U.couldUseHelp}</strong>
       <p class="report-line">{U.researchedRemotely}</p>
