@@ -972,6 +972,26 @@ service, one file per language in `site/public/assets/appstore/`. A store
 button is the most convention-bound control there is and drawing our own pill
 with the words typed into it is the exact failure of 2026-08-20.
 
+**Where the ASK sits, added 2026-09-04 from the same two screenshots.** Hidde:
+"zullen we iig de download app knop uit het menu halen en altijd zichtbaar en
+inderdaad op de homepage ook meer naar voren laten komen", then "volgens mij
+doet alltrails het vooral naar voren komen op mobiel niet op desktop".
+
+| | komoot's phone homepage | AllTrails' phone homepage |
+|---|---|---|
+| Header | mark, a filled pill, a hamburger | the full-screen sheet covers it |
+| Over the photograph | headline, then one filled "Download de App" | search field, then two underlined links |
+
+Two things both of them do, and we now do: **the primary CTA is visible in the
+phone header rather than inside the menu**, and **the hero carries at most one
+filled control besides the search**. What we still refuse is the sheet, for the
+reason above.
+
+Two numbers that fall out of it, measured rather than guessed: the pill is 44
+tall, which is Apple's minimum and what `scripts/layout_rules.py` measures, and
+the wordmark beside the mark drops under 360px, because the bar wants about
+346px in the longest of the eight languages.
+
 ---
 
 ## Asking for an App Store review
