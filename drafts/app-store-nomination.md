@@ -55,38 +55,43 @@ en, nl, es, it, de, pt, fr, ja
 https://ancienttrees.app
 ```
 
-## Description  (886/1000)
+## Description  (956/1000)
 
 Only the App Store team sees this. It is the field that decides.
 
 ```
 Every city has a few trees that were already old when it was built, and almost nobody can tell you where they are.
 
-Ancient Trees does. It shows you the remarkable old trees around you, gives you a walk that strings a few of them together, and tells you what you are standing under. You tick off the ones you have seen.
+Ancient Trees does. It shows the remarkable old trees around you, builds a walk that strings a few together, and tells you what you are standing under. You tick off the ones you have seen, from the Ankerwycke Yew at Runnymede to the giant three streets away.
 
-Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything.
+Every pin is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything.
 
-An old ginkgo turns completely gold for two weeks in November, then drops almost every leaf at once, and the app tells you when yours is turning. That makes late October the moment this is worth putting in front of people.
+An old ginkgo turns completely gold for two weeks in November, then drops nearly every leaf at once. The app shows you which trees near you are turning, which makes late October the moment this is worth putting in front of people.
 
-Photograph an epic tree we do not have and it goes on the map with your name under it, once we have checked it.
+Photograph a tree we do not have and it goes on the map with your name under it, once we have checked it.
 
-Made by Hidde Burgmans, a designer in the Netherlands. 2,472 trees in 362 places, in seven languages.
+Made by Hidde Burgmans, a designer in the Netherlands. 56 trees in Barcelona, 45 in Munich, 2,472 in all, in seven languages.
 ```
 
-Six drafts, the last three judged by an independent reader who saw only the
-text and nothing of the conversation, scoring 5 then 7 out of 10 for whether
-an Apple editor would shortlist it. What that reader caught and I could not:
-an opening promise of "twenty minutes away" that our own 2,472 trees
-contradict; a claim that every tree is researched by hand, which an editor
-multiplies out and reads as generated; a sentence of pure mood; and no visual
-idea for an editor to build a card around. The species-drawn pins fixed the
-last one and are true: 15 drawn shapes in site/src/lib/species-icons.ts.
+Judged blind by an independent reader against Hidde's own bullet-list version,
+which scored 4 against this one's 7. The finding worth keeping: **bullets
+belong in the public App Store listing, not in a nomination.** A bullet
+answers "what does it do", which the editor already has from the listing
+metadata; a nomination has to answer "why this app, why now, who made it", and
+none of those fit in a bullet. His version lost the maker, the craft detail
+and the seasonal timing to the format rather than to the writing.
 
-Two things I could not fix for you. **Your name** is in it because an editor
-cannot write a card about an anonymous maker; cut it if you would rather not.
-And **no iOS platform hook**, because we have no widget, App Intent or Watch
-app to name and I will not invent one. The season radar is the widget that
-should exist, and that is a real product note rather than a copy note.
+Two things taken from his version because they were better: the Ankerwycke Yew
+as an anchor a reader already knows, and naming the season feature plainly.
+The per-city counts replaced the flat total after the reader pointed out that
+2,472 across 362 places divides to seven per place and reads thin.
+
+**One claim removed, and it matters.** His version said "get notified when a
+tree peaks". There is no notification code anywhere in the app: no
+UNUserNotificationCenter, nothing. Season Radar ALERTS are a paid-tier promise
+from 2026-08-18 that is not built. Telling Apple we notify people would be a
+claim about a feature that does not exist, so it now says the app shows you,
+which is what it does.
 
 ## Helpful Details  (485/500)
 
