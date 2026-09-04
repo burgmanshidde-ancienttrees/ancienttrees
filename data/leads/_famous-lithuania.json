@@ -197,9 +197,10 @@
     "https://commons.wikimedia.org/wiki/File:--GFDL-self--Dubininko_azuolas.JPG",
     "https://commons.wikimedia.org/wiki/File:2017_Stelmu%C5%BEe_oak_LT.jpg"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "DUPLICATE of Stelmuze oak (identical coordinates, same Commons photo). Already published as ste_001 (see the Stelmuze oak entry in this file)."
   },
   {
    "name": "Raganos uosis",
@@ -221,7 +222,9 @@
     "https://commons.wikimedia.org/wiki/File:Ragan%C5%B3Egl%C4%97.JPG",
     "https://commons.wikimedia.org/wiki/File:Ragan%C5%B3_egl%C4%97,_aik%C5%A1tel%C4%97.JPG"
    ],
-   "status": "lead"
+   "status": "done",
+   "species": "Norway Spruce (Picea abies)",
+   "reason": "Verified and delivered as rmb_001 (The Witch's Spruce), new single-tree place. Lithuania's Tree of the Year 2017, in Rambynas Regional Park near Vilkyskiai. Two entries in this file share this name/coords, both resolved to the same tree."
   },
   {
    "name": "Raudonės liepa",
@@ -763,9 +766,10 @@
     "https://commons.wikimedia.org/wiki/File:Perk%C5%ABno_%C4%85%C5%BEuolas.jpg",
     "https://commons.wikimedia.org/wiki/File:Perk%C5%ABno_%C4%85%C5%BEuolas_(2).jpg"
    ],
-   "status": "lead",
+   "status": "done",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "reason": "Verified and delivered as plg_001 (Perkūnas Oak), the anchor of a new 4-tree cluster place, Plungė (prefix plg), inside Plungė Manor Park. Republican-significance nature monument since 1987 (protected since 1960), the oldest-protected of the four."
   },
   {
    "name": "Plauginiai oak",
@@ -1020,7 +1024,9 @@
     "https://commons.wikimedia.org/wiki/File:Ragan%C5%B3Egl%C4%97.JPG",
     "https://commons.wikimedia.org/wiki/File:Ragan%C5%B3_egl%C4%97,_aik%C5%A1tel%C4%97.JPG"
    ],
-   "status": "lead"
+   "status": "done",
+   "species": "Norway Spruce (Picea abies)",
+   "reason": "Verified and delivered as rmb_001 (The Witch's Spruce), new single-tree place. Lithuania's Tree of the Year 2017, in Rambynas Regional Park near Vilkyskiai. Two entries in this file share this name/coords, both resolved to the same tree."
   },
   {
    "name": "Raudonės liepa",
@@ -1107,6 +1113,33 @@
    "reason": "Verified and delivered as pri_001 (Sperberiai Oak, Priekule cluster). Found while researching the Klosai/Priekule cluster, not the original Commons sweep.",
    "species": "Oak (Quercus robur, presumed)",
    "species_basis": "genus commonly used generically in Lithuanian registers; presumed robur as the dominant native oak"
+  },
+  {
+   "name": "Aukštasis ąžuolas (Plungė Manor Park)",
+   "lat": 55.917032,
+   "lng": 21.83549,
+   "photos": [],
+   "status": "done",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "reason": "Found this pass while researching Perkūnas Oak (lt.wikipedia's Plungės dvaras article lists 4 state-protected park trees). Verified and delivered as plg_002 (Aukštasis Oak), part of the Plungė cluster. Not from the original famous_trees.py scrape, no Commons category/photo found; added because it forms a real 4-tree walkable cluster with Perkūnas Oak."
+  },
+  {
+   "name": "Mykolo Oginskio liepa (Plungė Manor Park)",
+   "lat": 55.916462,
+   "lng": 21.835868,
+   "photos": [],
+   "status": "done",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "reason": "Found this pass alongside Aukštasis ąžuolas. Verified and delivered as plg_003 (Mykolas Oginskis Linden), part of the Plungė cluster."
+  },
+  {
+   "name": "Laikrodinės ąžuolas (Plungė Manor Park)",
+   "lat": 55.916326,
+   "lng": 21.846508,
+   "photos": [],
+   "status": "done",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "reason": "Found this pass alongside Aukštasis ąžuolas. Verified and delivered as plg_004 (Laikrodinė Oak), part of the Plungė cluster. Flagged as declining/ailing per lt.wikipedia but confirmed alive via a 2026-dated Commons photo."
   }
  ]
 }
