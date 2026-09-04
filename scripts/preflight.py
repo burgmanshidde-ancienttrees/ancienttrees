@@ -942,8 +942,8 @@ def check_contributor_photos_are_traceable():
             is_contrib = photo.get("source") == "contributor"
             if is_contrib and not uid and not photo.get("unlinked"):
                 out.append("%s: %s carries a reader's photograph with no "
-                           "contributor_user_id and no unlinked flag. Their name could "
-                           "never be taken off it when they delete their account, "
+                           "contributor_user_id and no unlinked flag. It could never "
+                           "be taken off the page when they delete their account, "
                            "which /terms promises."
                            % (path, tree.get("id")))
             if uid and not is_contrib:
