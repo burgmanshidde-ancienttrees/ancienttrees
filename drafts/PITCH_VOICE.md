@@ -73,6 +73,21 @@ reader draw the conclusion.
 - YES: say the plain thing. Ornament earns its place only when it carries a
   fact nothing else carries.
 
+**A category word (companion, platform, solution) where a concrete thing belongs** (added 2026-09-04)
+
+- NO: "The app is a companion for tree lovers everywhere."
+- YES: "There is a 400-year-old oak twelve minutes from your door."
+
+**Copying a reference app's SHAPE without checking the question is ours. Merlin's user really is asking which bird that is; ours wants an afternoon outside. Age is a detail on the page, not the reason anybody goes. The four verbs are find, walk, collect, season** (added 2026-09-04)
+
+- NO: "How old is that tree? Most people never find out."
+- YES: "There is a tree worth walking to within twenty minutes of where you are standing."
+
+**A craft claim a reader can multiply out and disbelieve. Show one true visual detail instead of asserting effort** (added 2026-09-04)
+
+- NO: "Every tree is researched and written by hand, one at a time, in seven languages."
+- YES: "Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**

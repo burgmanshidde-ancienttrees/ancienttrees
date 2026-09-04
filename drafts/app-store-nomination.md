@@ -55,26 +55,38 @@ en, nl, es, it, de, pt, fr, ja
 https://ancienttrees.app
 ```
 
-## Description  (906/1000)
+## Description  (886/1000)
 
 Only the App Store team sees this. It is the field that decides.
 
 ```
-How old is that tree? Most people never find out. They walk past something that has been alive for a thousand years, standing in a churchyard, on a campus, or behind a wall on a street they use every week.
+Every city has a few trees that were already old when it was built, and almost nobody can tell you where they are.
 
-Ancient Trees tells you which tree, how old it is and why it is worth the walk. The Ankerwycke Yew was already ancient when Magna Carta was sealed beside it. The Totteridge Yew is the oldest living thing in London. You collect the ones you have seen.
+Ancient Trees does. It shows you the remarkable old trees around you, gives you a walk that strings a few of them together, and tells you what you are standing under. You tick off the ones you have seen.
 
-People add trees themselves. Photograph something epic we do not have and it goes on the map with your name under it.
+Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything.
 
-It also knows when a tree is at its best. An old ginkgo turns completely gold for two weeks in November, then drops almost every leaf at once, and the app tells you when yours is turning.
+An old ginkgo turns completely gold for two weeks in November, then drops almost every leaf at once, and the app tells you when yours is turning. That makes late October the moment this is worth putting in front of people.
 
-2,472 trees in 362 places across 25 countries, each checked against two independent sources. Launched 3 September 2026, in seven languages.
+Photograph an epic tree we do not have and it goes on the map with your name under it, once we have checked it.
+
+Made by Hidde Burgmans, a designer in the Netherlands. 2,472 trees in 362 places, in seven languages.
 ```
 
-Opens on the question the reader already has, which is Merlin Bird ID's shape
-("What's that bird? Ask Merlin"), the strongest of the four reference openings
-in PITCH_VOICE.md. It is also our own biggest search term: "oldest tree in
-[city]" is what brings most people to the website.
+Six drafts, the last three judged by an independent reader who saw only the
+text and nothing of the conversation, scoring 5 then 7 out of 10 for whether
+an Apple editor would shortlist it. What that reader caught and I could not:
+an opening promise of "twenty minutes away" that our own 2,472 trees
+contradict; a claim that every tree is researched by hand, which an editor
+multiplies out and reads as generated; a sentence of pure mood; and no visual
+idea for an editor to build a card around. The species-drawn pins fixed the
+last one and are true: 15 drawn shapes in site/src/lib/species-icons.ts.
+
+Two things I could not fix for you. **Your name** is in it because an editor
+cannot write a card about an anonymous maker; cut it if you would rather not.
+And **no iOS platform hook**, because we have no widget, App Intent or Watch
+app to name and I will not invent one. The season radar is the widget that
+should exist, and that is a real product note rather than a copy note.
 
 ## Helpful Details  (485/500)
 

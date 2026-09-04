@@ -67,6 +67,30 @@ which is the register I write worst. Before drafting a sentence:
 4. RUN `python3 scripts/pitchcheck.py <file>` or `--text "..."` on the draft
    BEFORE showing it to him. It catches the tics; it cannot tell you a
    sentence is dull, so also read it once as a stranger who owes you nothing.
+
+5. IF HE CORRECTS WHAT YOU WROTE, record it before writing the next draft:
+   `python3 scripts/pitchcheck.py --learn "<my line>" "<his line>" "<the habit>"`
+   This is the part that decides whether the layer keeps working. A set of
+   pairs that only grows when I remember to grow it becomes a snapshot of one
+   afternoon, which is the exact failure this corpus already records about
+   notes. One command, while the correction is still on the screen.
+"""
+
+CORRECTION = re.compile(
+    r"\b(klinkt|slecht|slechte|droog|raar|nee dat|niet goed|beter|wtf|"
+    r"sucks?|nobody cares|makes no sense|beside the point|"
+    r"waarom (?:nu|zou|doe je)|liever|schrap|weglaten)\b", re.I)
+
+LEARN = """PITCH CORRECTION (scripts/hooks/pitch_nudge.py)
+
+He appears to be correcting copy you wrote. Before the next draft, record the
+pair while it is still on the screen:
+
+    python3 scripts/pitchcheck.py --learn "<the line I wrote>" "<his line or the fix>" "<the habit in a few words>"
+
+It goes into drafts/PITCH_VOICE.md above "What to do instead". If the bad half
+can be grepped, add it to TICS in scripts/pitchcheck.py as well, which is this
+project's standing ratchet: a lesson that appears twice becomes a check.
 """
 
 
@@ -78,6 +102,12 @@ def main():
     text = (payload.get("prompt") or "")[:4000]
     if PITCH.search(text) and WRITING.search(text):
         print(NUDGE)
+    elif CORRECTION.search(text) and WRITING.search(text):
+        # A correction rarely repeats the word "nomination" or "App Store",
+        # because he is answering a draft that is already on the screen. So
+        # this arm needs no pitch word: a correction plus a word about words is
+        # enough, and the cost of firing on a false positive is one paragraph.
+        print(LEARN)
     return 0
 
 
