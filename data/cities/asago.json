@@ -1,0 +1,62 @@
+{
+  "city": "Asago",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Asago's mapped tree is not really one trunk. The Great Katsura of Itoi decayed into a hollow stump centuries ago and re-grew as a ring of roughly eighty root suckers, a small grove standing in for a single tree, deep in a Hyogo Prefecture gorge. A national natural monument since 1951, reached only by a 90-minute walk from the nearest bus stop.",
+  "meta_description": "The Great Katsura of Itoi: a hollow stump ringed by eighty root suckers, over 1,000 years old. Free, a 90-minute walk up a Hyogo gorge trail.",
+  "question_meta": "Asago's mapped tree is Itoi-no-Okatsura, the Great Katsura of Itoi, a decayed stump ringed by roughly eighty root suckers, over 1,000 years old.",
+  "question_answer": "Asago's mapped tree is Itoi-no-Okatsura (the Great Katsura of Itoi), a katsura whose original trunk decayed into a hollow stump and now stands ringed by roughly eighty root suckers, together measuring over 18 metres around. Japanese sources put its age at over 1,000 years, without a firmer figure. Japan designated it a national natural monument in 1951.",
+  "question_context": "The tree stands in Izushi-Itoi Prefectural Natural Park, along the upper Itoi River in Wadayama-cho, Asago, roughly a 90-minute walk from the nearest bus terminus. Its hollow main stump is large enough inside to hold six tatami mats, and a ring of root suckers around it, numbers vary by source but land near eighty, reads from a distance as a small grove rather than one tree, which is the reason people make the walk. It is a male katsura, so it never sets seed; the suckering has been its way of persisting instead. A local legend holds that a travelling high priest once draped his robe over the tree during a drought and prayed for rain, which is said to have ended the drought; the tree is still called Koromogi, the robe tree, and is revered as a water deity, marked with a sacred shimenawa rope. It nearly did not survive the 20th century: flood-control work along the adjacent river cut off its water source and buried its roots in clay fill, and it declined until arborists carried out an irrigation and soil restoration in December 2001. The trail in has no gate and no fee.",
+  "hero_tree_id": "asg_001",
+  "oldest_tree_id": "asg_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is not one trunk. The original stem decayed into a hollow stump, and a ring of roughly eighty root suckers grew up around it, reading from a distance as a small grove."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Sources put it at over 1,000 years, without a more precise figure. It was designated a national natural monument in 1951."
+    },
+    {
+      "q": "Why is it called the robe tree?",
+      "a": "Local legend says a travelling priest draped his robe over it during a drought and prayed for rain, which is said to have ended the dry spell. It is still marked with a sacred rope as a water deity."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By JR San'in Line to Wadayama Station, then a bus to the Takenouchi terminus, then about 90 minutes on foot up the Itoi Gorge trail. There is no gate or fee."
+    }
+  ],
+  "trees": [
+    {
+      "id": "asg_001",
+      "name": "Itoi-no-Okatsura (The Great Katsura of Itoi)",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "over 1,000 years, some sources say up to 2,000",
+      "age_min": 1000,
+      "age_max": 2000,
+      "girth_cm": 1836,
+      "location": {
+        "address": "216-1 Takenouchi, Wadayama-cho, Asago, Hyogo Prefecture, Japan",
+        "latitude": 35.411722,
+        "longitude": 134.920778,
+        "neighbourhood": "Itoi Gorge, Izushi-Itoi Prefectural Natural Park"
+      },
+      "story": "During a historic drought, a travelling priest is said to have draped his robe over this katsura and prayed for rain. It is said to have worked, and the tree has been called Koromogi, the robe tree, ever since.\n\nWhat stands there today is not one trunk. The original trunk decayed into a hollow stump large enough inside to hold six tatami mats, and around it rose a ring of roughly eighty root suckers that from a distance read as a small grove rather than a single tree, which is the whole reason for the walk. The combined clump measures over 18 metres around. Officials named it a national natural monument in 1951, one of Japan's largest and rarest katsura specimens.\n\nSources put its age at over 1,000 years, some further still, without ever settling on a number. It is a male tree and never sets seed; the suckering is how it has kept itself going across the centuries instead. It nearly did not survive the modern era: flood-control work along the adjacent river sealed off its water and buried its roots in clay fill, and the tree declined until arborists carried out a restoration in 2001.\n\nIt still stands where the priest is said to have stood, in a prefectural park with no gate and no fee, marked with a sacred rope as a water deity. Reaching it takes a 90-minute walk up the gorge from the nearest bus stop, which is exactly why it has never become crowded.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/糸井の大カツラ",
+        "https://online.bunka.go.jp/heritages/detail/172605"
+      ],
+      "access": "Free, but remote: a mountain trail in a prefectural natural park with no gate or fee, roughly 90 minutes on foot from the nearest bus terminus.",
+      "transport": "JR San'in Line to Wadayama Station, then bus to the Takenouchi terminus, then about 90 minutes on foot up the Itoi Gorge trail.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

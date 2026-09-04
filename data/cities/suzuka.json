@@ -1,0 +1,61 @@
+{
+  "city": "Suzuka",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Suzuka's mapped tree gave its name to a cherry cultivar that barely stops flowering. Fudanzakura, the ceaseless cherry, scatters blossoms across its branches nearly year round, pausing mainly in high summer, with a documented spot in a Mie Prefecture temple courtyard going back to the 8th century. One of only 39 cherries Japan has ever named a national natural monument, and free to visit in the temple's walled courtyard.",
+  "meta_description": "Shiroko Fudan Zakura, Suzuka: type tree of a cherry cultivar that blooms nearly year-round. Free, a national monument since 1923.",
+  "question_meta": "Suzuka's mapped tree is the Shiroko Fudan Zakura, the type specimen of the Fudanzakura cherry cultivar, documented at this spot since the 8th century.",
+  "question_answer": "Suzuka's mapped tree is the Shiroko Fudan Zakura, the original type specimen (genbaku) of the Fudanzakura cherry cultivar, one of only 39 cherry trees Japan has ever designated a national natural monument, since 1923. A named cherry has stood at this exact spot since a temple record dated 757 to 765 CE, though the wood growing there today is much younger, roughly 80 years, after repeated fire and storm damage.",
+  "question_context": "The tree stands in the courtyard of Koyasu Kannon-ji Temple, inside a stone-walled enclosure built in 1832, with a poem monument added in 1868. Fudanzakura means roughly ceaseless cherry: it scatters single five-petaled flowers across its branches almost continuously, pausing mainly in high summer, with documented peaks each March and again in autumn into winter, an unusual double season a Mie University study tied to unusually early September leaf drop. The site's literary record runs from a Nara-period temple mention through 16th-century renga poetry, an Edo-period Noh play, and an illustration in the 1797 guidebook Ise Sangu Meisho Zue. The current trunk is not that old: the main stem died back in 1897, storm damage struck in 1925, a temple fire took it again in 1946, and a 1959 typhoon hit, so the wood standing today is put at roughly 80 years, dating from the fire regrowth. The temple has commissioned periodic arborist checks since 2006 and ran a soil and root restoration from 2011. It is free, open temple ground, two minutes on foot from Tsuzumigaura Station on the Kintetsu Nagoya Line, and the temple still holds a memorial for the tree every 17 March.",
+  "hero_tree_id": "suz_001",
+  "oldest_tree_id": "suz_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is the type specimen of the Fudanzakura cherry cultivar, one of only 39 cherry trees ever designated a Japanese national natural monument, and it flowers almost year round."
+    },
+    {
+      "q": "How old is it?",
+      "a": "A named cherry has stood at this spot since a temple record from 757 to 765 CE, but the current trunk is younger, roughly 80 years, after repeated fire and storm damage."
+    },
+    {
+      "q": "When is the best time to see it flower?",
+      "a": "It scatters some blossoms nearly all year, with documented peaks each March and again in autumn into winter, an unusual double season for a cherry."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By Kintetsu Nagoya Line to Tsuzumigaura Station, then about 2 minutes on foot. The temple courtyard is free and open to visitors."
+    }
+  ],
+  "trees": [
+    {
+      "id": "suz_001",
+      "name": "Shiroko Fudan Zakura",
+      "species": "Fudanzakura cherry, believed a Yamazakura x Oshima-zakura hybrid (Cerasus Sato-Zakura Group 'Fudanzakura')",
+      "age_estimate": "current wood roughly 80 years; a named cherry has stood at this site since 757-765 CE",
+      "age_min": 75,
+      "age_max": 85,
+      "location": {
+        "address": "3-2-12 Jike, Suzuka, Mie Prefecture, Japan (within Koyasu Kannon-ji Temple)",
+        "latitude": 34.82425,
+        "longitude": 136.580028,
+        "neighbourhood": "Shiroko, Koyasu Kannon-ji Temple precinct"
+      },
+      "story": "Fudanzakura means roughly ceaseless cherry: this tree scatters a few blossoms across its branches almost year round, pausing mainly in high summer, with documented peaks each March and again in autumn into winter. A 1978 Mie University study found why: unusually early leaf drop each September seems to trigger a second, off-season round of flower buds.\n\nIt is also the tree an entire named cultivar copies from, the type specimen of Fudanzakura, one of only 39 cherry trees Japan has ever designated a national natural monument, since 1923. Written references to a named cherry here reach back to a temple record from 757 to 765 CE, and it turns up again in 16th-century renga poetry, as the subject of an Edo-period Noh play, and illustrated in a 1797 guidebook to the Ise shrines.\n\nThe wood standing today is not that old. This trunk has died back and resprouted repeatedly: in 1897, after storm damage in 1925, a temple fire in 1946, and a typhoon in 1959. The current growth is put at roughly 80 years, dating from that fire. What has survived, unbroken for well over a thousand years, is the spot, the name, and the habit of flowering when nothing else nearby is.\n\nFree, in the walled courtyard of Koyasu Kannon-ji Temple, two minutes on foot from Tsuzumigaura Station. The temple still holds a memorial for it every 17 March.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/白子不断桜",
+        "https://www.kankomie.or.jp/spot/21661"
+      ],
+      "access": "Free, in the courtyard of Koyasu Kannon-ji Temple, open to visitors.",
+      "transport": "Kintetsu Nagoya Line to Tsuzumigaura Station, about 2 minutes on foot.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

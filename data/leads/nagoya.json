@@ -1,0 +1,13 @@
+{
+ "city": "Nagoya",
+ "country": "Japan",
+ "city_slug": "nagoya",
+ "note": "First leads file for Nagoya, started 2026-09-04 from a _famous-japan famous-trees batch (famousjapan-batch1, data/research/_famous-japan-batch1-verified.json).",
+ "leads": [],
+ "blocked": [
+  {
+   "name": "Natural Habitat of Pyrus calleryana (Inunashi/Mamenashi) in Tado",
+   "why": "National Natural Monument designated 2010-08-05: a grove/population of 46 mature Pyrus calleryana var. dimorphophylla trees plus numerous seedlings, spread across roughly 3,000 sq m (170m by 30m) on Tado-yama near Midori-ike pond, Kuwana City, Mie Prefecture. An area/habitat conservation designation for a wild population, not a single named specimen or a compact ensemble with one obvious place to stand; fails the collectible-point test the way an avenue or a whole wood does. About 21.7 km from Nagoya, which would put it outside the day-trip cluster in any case. Sources: ja.wikipedia.org/wiki/多度のイヌナシ自生地, bunka.nii.ac.jp/heritages/detail/199562."
+  }
+ ]
+}
