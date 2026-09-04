@@ -1,0 +1,59 @@
+{
+  "leads": [],
+  "blocked": [
+    {
+      "register_id": 412,
+      "name": "Bellotera de Can Carrero",
+      "species": "Quercus ilex (holm oak)",
+      "latitude": 39.061498,
+      "longitude": 1.465896,
+      "place": "Sant Joan de Labritja, Ibiza",
+      "reason": "Private land. Register itself flags ownership Privada, holder particular, and private: true. Independent sources (CAIB fitxa, periodicodeibiza.es 2016 and 2022 surveys) both describe it as standing in a small triangular grove near the path to Benirras and explicitly note it is on private property, with no evidence of open public access. One of very few holm oaks on Ibiza (7 m tall, 20 m crown), catalogued 2001. Worth re-checking if the owner ever opens access."
+    },
+    {
+      "register_id": 665,
+      "name": "Pi Ver de Can Besoro",
+      "species": "Pinus pinea (stone pine)",
+      "latitude": 39.04765,
+      "longitude": 1.42710,
+      "place": "Sant Joan de Labritja, Ibiza",
+      "reason": "Private land. Register flags ownership Privada, holder particular, private: true. Sources describe it as reached via the path connecting Sant Miquel with the Can Besoro finca (a private estate), explicitly noted as private land. Reputedly the island's largest stone pine (12 m tall, ~25 m crown, trunk needing three men to encircle), with local folk-dance history (Colla de Balansat). Genuinely remarkable but no evidence the finca is open to visitors."
+    },
+    {
+      "register_id": 647,
+      "name": "Olivera de n'Espanya",
+      "species": "Olea europaea (olive)",
+      "latitude": 39.04671,
+      "longitude": 1.54747,
+      "place": "Sant Carles, Santa Eularia des Riu, Ibiza",
+      "reason": "Private land. Register flags ownership Privada, holder particular, private: true. Sources (CAIB fitxa, periodicodeibiza.es 2016/2022) place it between two private terraces near the Can Mila houses in Sant Carles; possibly the largest olive tree in Spain and over 1,000 years old (planted before the 1235 Christian conquest of Ibiza per one source), but multiple sources note the precise location is deliberately kept low-profile to protect the tree, and it sits on private land with no documented visitor access. The single most tempting exclusion of this pass on tree quality alone; genuinely worth another look if an open-access route or owner arrangement is ever documented."
+    },
+    {
+      "register_id": 668,
+      "name": "Pins de sa Venda de Balafia",
+      "species": "Pinus halepensis",
+      "latitude": 39.02631,
+      "longitude": 1.487185,
+      "place": "Sant Joan de Labritja, Ibiza",
+      "reason": "Excluded per brief: group designation (9 specimens catalogued, 7 remaining, one register entry), not a single collectible point. Publicly owned (Consell Insular) but not re-investigated as individual trees since the designation itself is a group of pines rather than one tree."
+    },
+    {
+      "register_id": 669,
+      "name": "Pins de Vicent de na Blaia",
+      "species": "Pinus halepensis",
+      "latitude": 39.027952,
+      "longitude": 1.488028,
+      "place": "Sant Joan de Labritja, Ibiza",
+      "reason": "Excluded per brief: group designation (2 specimens under one register entry), not a single collectible point."
+    },
+    {
+      "register_id": 426,
+      "name": "Ginebres i Savines de sa Rota",
+      "species": "Juniperus oxycedrus and Juniperus phoenicea",
+      "latitude": 39.00543,
+      "longitude": 1.526432,
+      "place": "Santa Eularia des Riu, Ibiza",
+      "reason": "Excluded per brief: group designation (7 specimens, two species, one register entry) and private land (ownership Privada, holder particular, private: true in the register). Fails both the collectible-point test and hard rule 10."
+    }
+  ]
+}

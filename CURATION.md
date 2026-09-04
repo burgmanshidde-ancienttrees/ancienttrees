@@ -10,6 +10,14 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-04 (continuation) - Ibiza register verify pass: 2 verified, both below their floor, and one belongs to Formentera not Ibiza
+
+Dispatched a verify pass on Ibiza's 5 register candidates (balears-arbres-singulars.json). 3 turned out to sit on private land, the register's own `private: true` flag confirmed by independent sources (periodicodeibiza.es); one of them, the Olivera de N'Espanya, a possibly 1,000+-year-old olive and plausibly the largest in Spain, is the single most tempting exclusion of the pass, but its own sources say its exact location is deliberately kept low-profile and it stands on private land. All recorded in `data/leads/ibiza.json` with reasons, alongside the 3 group-designation entries the brief had already excluded.
+
+Of the 2 that verified clean (public land, two independent sources each), only one is actually on Ibiza: **ibz_001, Pi de Can Reiet**, an Aleppo pine on a public road near Santa Eularia, owned by the island council itself. The other, the register's "Savina de Ses Salines" (a Phoenician juniper over 500 years old, likely the oldest sabina in the Balearics), turned out from its own coordinates to stand in Ses Salines Natural Park on **Formentera**, reached from Ibiza only by a 25-35 minute ferry plus a further walk. Folding it into "Ibiza" would have been exactly the out-of-island misattribution CLAUDE.md's day-trip rule forbids (the same shape of error the 2026-09-04 Sakegawa/Tsuruoka case caught). Re-id'd to `fmt_001` and split into its own `data/research/formentera-verified.json`, since Formentera is its own island and municipality and gets the same treatment as Kauai, Menorca and Madeira: a place, not assumed to be part of its larger neighbour.
+
+Both `ibz_001` and `fmt_001` sit below the 4-tree floor alone and stay unpublished, waiting for more candidates (Ibiza's other register rows are exhausted; Formentera has not been scouted at all yet). Claim released.
+
 ## 2026-09-04 (continuation, finishing a standing write pass) - 6 single-tree places published from famous-Japan leads; Alicante's 15th tree
 
 Finished a write-stories pass an earlier attempt in this window left uncommitted (verify_notes already merged by an even earlier attempt, stories never written up). Six verified famous-Japan candidates became their own single-tree places under the 2026-08-31 exception, none near a published city:
