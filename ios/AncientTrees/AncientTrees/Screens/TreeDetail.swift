@@ -8,6 +8,7 @@
 
 import SwiftUI
 import MapKit
+import CoreLocation
 
 struct TreeDetail: View {
     let tree: Tree
@@ -48,6 +49,8 @@ struct TreeDetail: View {
     }
     @State private var removing = false
     @Environment(Navigator.self) private var navigator
+    /// For the count in the summary line, which is the vote button drawn small.
+    @Environment(VoteCounts.self) private var counts
     /// The hero shows the map instead of the photograph. A swap rather than a
     /// jump to the Map tab, so the reader keeps their place.
     @State private var showingMap = false
@@ -68,6 +71,11 @@ struct TreeDetail: View {
     @State private var shareItems: [Any] = []
     @State private var sharing = false
     @State private var shareFailed = false
+    /// The place name for a tree of your own that stands too far from any city
+    /// we publish for a link to lead anywhere. Asked once, of Apple's own
+    /// geocoder, and never stored: there is no page to open, so this is a
+    /// caption rather than a fact about the tree.
+    @State private var geocodedPlace: String?
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -106,31 +114,34 @@ struct TreeDetail: View {
                     // somebody opening this page an hour later has no way to
                     // ask what happened to their tree.
                     if mine != nil { mineStatus }
-                    facts
+                    // ONE BLOCK, because it answers one question: what a
+                    // person needs to know before setting off (2026-09-04,
+                    // after Hidde walked eight drawings of it). Two columns
+                    // for the facts that are short, then the lines that need
+                    // words, in the order they matter: where it is, and
+                    // whether they can get in.
+                    //
                     // A TICKET IS THE FIRST THING TO KNOW (Hidde, 2026-08-26:
                     // "dat betaald is dermate belangrijk dat die informatie
                     // met datzelfde ticketje bovenaan moet staan, boven been
-                    // here worth to visit"). It decides whether somebody sets
-                    // off at all, so it belongs above the question of whether
-                    // the tree was worth it, in the same warning shape the
-                    // approximate pin uses. The access line further down keeps
-                    // the detail and the transport stays where it is.
+                    // here worth to visit"). It stays high, and it keeps its
+                    // own blue rather than gold: gold means paid-by-us
+                    // everywhere in this app, and sharing it made a garden's
+                    // entrance fee read as one of our own tiers (2026-08-25).
+                    factsBlock
+                    story
+                    // THE VOTE COMES AFTER THE STORY, which is where every
+                    // reference puts it: Google Maps' "Rate & Review" sits
+                    // below the description, AllTrails' reviews below the
+                    // trail, Apple Maps' rating low on the card. The count is
+                    // still high, in the summary line under the name, and
+                    // that count is itself the button (2026-09-04).
                     //
-                    // The same blue as the pin's ticket mark, and not gold:
-                    // gold means paid-by-us everywhere in this app, and
-                    // sharing it made a garden's entrance fee read as one of
-                    // our own tiers (2026-08-25).
-                    if mine == nil, tree.paidEntry { ticketNote }
-                    if tree.precision.needsWarning { approximateNote }
-                    // High on the page, under the facts, because it is a
-                    // question about the thing the facts just described
-                    // (Hidde, 2026-08-21).
                     // Not on your own tree: a vote on whether YOUR tree is
                     // worth the visit is a question to nobody, and the access
                     // and transport lines are ours to research, not blanks for
                     // you to fill about a tree you already stood at.
                     if mine == nil { WorthItView(tree: tree) }
-                    story
                     if mine == nil, tree.hasAccessInfo { accessBlock }
                     // The "Nobody has photographed this one" card is gone
                     // (Hidde, 2026-08-26: "die mag helemaal weg"). It was a
@@ -377,6 +388,11 @@ struct TreeDetail: View {
                 shareImage = drawn
             }
             Measure.event("tree_opened", ["tree": mine == nil ? tree.id : "own"])
+            if let m = mine, minePlace == nil, geocodedPlace == nil {
+                let marks = try? await CLGeocoder()
+                    .reverseGeocodeLocation(CLLocation(latitude: m.lat, longitude: m.lng))
+                geocodedPlace = marks?.first?.locality ?? marks?.first?.administrativeArea
+            }
             // Three trees LOOKED AT is the review ask's threshold (Hidde,
             // 2026-09-04). Counted here beside the measurement because this
             // is the same event; only our own catalogue counts, since a
@@ -674,54 +690,96 @@ struct TreeDetail: View {
     }
 
     private var header: some View {
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(alignment: .leading, spacing: 8) {
             Text(tree.name)
                 .font(.brand(30, .bold, relativeTo: .largeTitle))
                 .foregroundStyle(Brand.ink)
-            if tree.species.isEmpty, mine != nil {
-                Button { choosingSpecies = true } label: {
-                    HStack(spacing: 5) {
-                        Image(systemName: "plus.circle")
-                        Text("What kind of tree is it?")
-                    }
-                    .font(.subheadline)
-                    .foregroundStyle(Brand.moss)
+            summaryLine
+        }
+    }
+
+    /// ONE SMALL LINE OF LINKS under the name, which is how AllTrails opens a
+    /// trail page (rating, difficulty, place, every item underlined and
+    /// tappable) and how Google Maps and Apple Maps open a place. Hidde's own
+    /// screenshot of the Klompenpad set this, 2026-09-04, and his point about
+    /// it is the one that made it work: "they have very small clickable stuff
+    /// so apparently it can work."
+    ///
+    /// The species is NOT here. It is in the block below, and a fact belongs
+    /// in one place per page: saying it twice is the fault he caught three
+    /// times in one afternoon (the name plus the caption plus the card, the
+    /// ask in the line plus the ask in the cell, the common name plus the
+    /// Latin name in one cell).
+    private var summaryLine: some View {
+        HStack(spacing: 6) {
+            if mine == nil, counts.up(tree.id) != nil {
+                WorthItCount(tree: tree)
+                dot
+            }
+            placeLink
+        }
+        .font(.subheadline)
+    }
+
+    private var dot: some View {
+        Text("·").foregroundStyle(Brand.inkSoft)
+    }
+
+    /// The city, tappable, on OUR trees and on a tree somebody added
+    /// themselves alike (Hidde, 2026-09-04: "waarom staat hier where you
+    /// photographed it en niet gewoon de stad met link gelijk erin zoals de
+    /// rest?").
+    ///
+    /// This line used to read "Where you photographed it" on a tree of your
+    /// own, on the reasoning that nobody had told us a city and inventing one
+    /// is the thing a location field may never do. That reasoning does not
+    /// hold: we hold the coordinate the photograph was taken at, so naming
+    /// the place is READING it rather than inventing it, and every reference
+    /// does exactly that (Apple Photos, Google Photos, Strava, iNaturalist all
+    /// label a coordinate with a place name).
+    @ViewBuilder private var placeLink: some View {
+        if mine == nil {
+            Button { navigator.push = .city(tree.citySlug) } label: {
+                Text(place)
+                    .underline()
+                    .lineLimit(1)
                     .frame(minHeight: 44)
                     .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-            } else {
-                // The FULL name, botanical and all, stays here as the caption
-                // it always was; the short common name is the tappable fact
-                // in the row below, since 2026-08-26. Two doors to the same
-                // page a centimetre apart is one door too many, and the
-                // caption is the one that carries the Latin.
-                Text(tree.species).font(.subheadline).foregroundStyle(Brand.inkSoft)
             }
-            // The save count used to be a sentence here, "1 person keeps this
-            // tree", and Hidde struck it out on 2026-08-27: "een hele rare zin,
-            // zet gewoon bij thumb hoeveel mensen thumb up of down hebben
-            // gedaan verder niet." He is right about the sentence. A count is a
-            // number, and a number belongs on the control it is about, which is
-            // where every product that shows one puts it. So the figures live
-            // beside the thumbs in WorthItView and nowhere else on this page.
-            // WHERE it is, with the width of the page to say it in.
-            //
-            // It used to be the middle column of the stat row, where "Plantage,
-            // Amsterdam-Centrum" became "Plantage, Amsterdam-C..." A stat row
-            // holds numbers: AllTrails puts length, ascent and time in theirs,
-            // and a place name is a phrase, not a number.
-            if mine != nil {
-                // Where YOU stood. No district, no city, because nobody has
-                // told us one and inventing it is the one thing a location
-                // field may never do.
-                Text("Where you photographed it")
-                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
-            } else {
-                Text(place).font(.subheadline).foregroundStyle(Brand.inkSoft)
+            .buttonStyle(.plain)
+            .foregroundStyle(Brand.ink)
+            .accessibilityLabel("See every tree in \(tree.city)")
+        } else if let found = minePlace {
+            // Near a city we publish, so there is a page to open.
+            Button { navigator.push = .city(found.slug) } label: {
+                Text(found.name)
+                    .underline()
                     .lineLimit(1)
+                    .frame(minHeight: 44)
+                    .contentShape(.rect)
             }
+            .buttonStyle(.plain)
+            .foregroundStyle(Brand.ink)
+            .accessibilityLabel("See every tree in \(found.name)")
+        } else if let named = geocodedPlace {
+            // Too far from anything we map for a link to lead anywhere, so the
+            // name stands on its own rather than promising a page.
+            Text(named).foregroundStyle(Brand.inkSoft).lineLimit(1)
         }
+    }
+
+    /// The nearest city we publish, when the tree of your own stands close
+    /// enough to it for the page to be about the same place. 30 km is the
+    /// day-trip boundary this project already uses everywhere else.
+    private var minePlace: (name: String, slug: String)? {
+        guard let m = mine else { return nil }
+        var best: (tree: Tree, km: Double)?
+        for t in catalogue.trees {
+            let km = t.distanceKm(from: m.lat, m.lng)
+            if best == nil || km < best!.km { best = (t, km) }
+        }
+        guard let b = best, b.km <= 30 else { return nil }
+        return (b.tree.city, b.tree.citySlug)
     }
 
     /// What grows around this tree, so the picker opens on the names somebody
@@ -747,6 +805,15 @@ struct TreeDetail: View {
     /// way our own website already does on a tree page.
     /// The number, where the feed has one, so the row holds a figure rather
     /// than a hedged sentence. The full wording is in the story.
+    /// The bare number, for the column whose label already says "Years old".
+    /// A value that repeats its own label ("Years old / 145-155 years") is the
+    /// same fault as a species named twice, one line lower.
+    private var ageNumber: String? {
+        guard let lo = tree.ageMin, lo > 0 else { return nil }
+        if let hi = tree.ageMax, hi > lo { return "\(lo)-\(hi)" }
+        return "\(lo)"
+    }
+
     private var shortAge: String {
         if let lo = tree.ageMin, lo > 0 {
             if let hi = tree.ageMax, hi > lo { return "\(lo)-\(hi) years" }
@@ -754,93 +821,6 @@ struct TreeDetail: View {
         }
         return tree.age ?? (mine != nil ? "Add it" : "not recorded")
     }
-
-    private var facts: some View {
-        HStack(alignment: .top, spacing: 0) {
-            if mine != nil, tree.age == nil {
-                Button { editing = .age } label: { fact("Add it", "Age") }
-                    .buttonStyle(.plain)
-                    // THE SAME TWO LINES AS THE SPECIES BUTTON BELOW, and for
-                    // the same reason: a label's own frame gives the button no
-                    // hit area, so this measured 62 by 34 against Apple's 44 by
-                    // 44. Its sibling was fixed when the gate could see it; this
-                    // one only appears on a tree you added yourself, which no
-                    // launch argument could open until the own-tree screen was
-                    // added earlier today (d47da72f). The first measurement of
-                    // that screen found this, which is the whole argument for
-                    // adding it.
-                    .frame(minHeight: 44)
-                    .contentShape(.rect)
-            } else {
-                fact(shortAge, "Age")
-            }
-            Divider().frame(height: 34)
-            // THE SPECIES SITS WITH THE FACTS (Hidde, 2026-08-26: "die Wild
-            // Olive, die dermate belangrijk is, onderdeel maken van helemaal
-            // bovenin, naast hoe oud die is en of de pin exact is"). It was a
-            // chip at the bottom among the ways onward, which is where you
-            // put a thing somebody might browse to next; what kind of tree it
-            // is belongs with how old it is, because it is the same kind of
-            // answer. It stays tappable, so it is still the door to the
-            // species page.
-            Button {
-                // ON YOUR OWN TREE THIS NAMES THE SPECIES, it does not browse
-                // to one (Hidde, 2026-08-29: "als ik op specie klik kom ik
-                // hier, dat moet een scherm zijn waar je tussen soorten kan
-                // kiezen"). The chip pushed the read-only species page whatever
-                // the tree was, so on a tree somebody had just added, with no
-                // species on it yet, it opened a page about nothing: no name,
-                // and "0 on the map, photographed first".
-                if mine != nil {
-                    choosingSpecies = true
-                } else {
-                    navigator.push = .species(tree.commonName)
-                }
-            } label: {
-                fact(mine != nil && tree.species.isEmpty ? "Add it" : tree.commonName,
-                     "Species", chevron: true)
-            }
-            .buttonStyle(.plain)
-            // On the BUTTON, not on its label: the label's own frame does not
-            // give the button a hit area, which is why the gate still read
-            // 42 by 34 after the first attempt.
-            .frame(minHeight: 44)
-            .contentShape(.rect)
-            .accessibilityIdentifier("tree-species-fact")
-            Divider().frame(height: 34)
-            fact(tree.precision == .confirmed ? "Exact" : "Approximate", "Pin")
-        }
-        .padding(.vertical, 14)
-        .frame(maxWidth: .infinity)
-        .brandCard(14)
-    }
-
-    private func fact(_ value: String, _ label: String,
-                      chevron: Bool = false) -> some View {
-        // Leading, not centred: a centred value starts wherever its width
-        // puts it, so "up to 1,500 years" sat seven points right of the card
-        // edge and the layout gate read it as a drift. The fourteen matches
-        // the card's own inset elsewhere on the page.
-        VStack(alignment: .leading, spacing: 3) {
-            HStack(spacing: 3) {
-                Text(value).font(.brand(14, .bold, relativeTo: .footnote))
-                    .foregroundStyle(Brand.ink).multilineTextAlignment(.leading)
-                    .lineLimit(2).minimumScaleFactor(0.8)
-                if chevron {
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 9, weight: .semibold))
-                        .foregroundStyle(Brand.inkSoft)
-                }
-            }
-            Text(label).font(.caption2).foregroundStyle(Brand.inkSoft)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.horizontal, 14)
-    }
-
-    // oneTreeWalk() went with the in-app walk to a single tree (2026-08-25).
-    // WalkMode still takes `only:` for a caller that holds its own stops, which
-    // is how a walk to a tree somebody added themselves would work.
 
     /// One sheet for every blank, because four sheets that differ by a
     /// placeholder is four places for them to drift apart.
@@ -900,13 +880,205 @@ struct TreeDetail: View {
         .buttonStyle(.plain)
     }
 
-    /// The one warning this product must never soften. An approximate pin that
-    /// says so sends somebody to the right park knowing they will have to look;
-    /// one that pretends to be exact sends them to a spot where the tree is not.
-    /// The blue the pin's own ticket mark wears.
-    private static let ticketBlue = Color(red: 0.18, green: 0.42, blue: 0.66)
+    /// EVERYTHING A PERSON NEEDS BEFORE SETTING OFF, in one bordered block:
+    /// two columns for the facts that are short, then a line for the location
+    /// and a band for the ticket, both of which need words.
+    ///
+    /// The rule this follows, and it decided every question in the redesign
+    /// (2026-09-04): a column states a short value, a line carries words, a
+    /// panel is for something that decides whether you set off at all, and a
+    /// fact appears exactly once per page.
+    ///
+    /// Reference: AllTrails' trail page, from Hidde's own screenshot of the
+    /// Klompenpad Netelenburchpad, with his amendment that the labels sit on
+    /// top of their values ("ik ben voor labels on top"). AllTrails puts the
+    /// value on top, which works for them because every value in their row is
+    /// a number; the moment one is a word that can wrap, the label has to lead
+    /// or the row loses its baseline. CONVENTIONS.md carries both halves.
+    private var factsBlock: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            columns
+            locationLine
+            if mine == nil, tree.paidEntry { ticketBand }
+        }
+        .brandCard(14)
+    }
 
-    private var ticketNote: some View {
+    /// TWO columns, not three, and it is arithmetic rather than taste: at
+    /// 393 points "Years old 550-830" and "Location Approximate" leave the
+    /// species 46 points, and no species name fits in 46 points. So the
+    /// location became a line and these two stayed (Hidde, 2026-09-04, on
+    /// which two: "hoe oud is welke soort").
+    ///
+    /// Age takes only the width it needs and the species takes the rest,
+    /// which is what lets "Pedunculate Oak" sit on one line where equal
+    /// halves wrapped it.
+    private var columns: some View {
+        HStack(alignment: .top, spacing: 0) {
+            ageColumn.fixedSize(horizontal: true, vertical: false)
+            Divider().frame(height: 44)
+            speciesColumn
+        }
+        .padding(.top, 12)
+        .padding(.bottom, 4)
+        .padding(.horizontal, 16)
+    }
+
+    @ViewBuilder private var ageColumn: some View {
+        if mine != nil, tree.age == nil {
+            column("Age") {
+                Button { editing = .age } label: { addValue }
+                    .buttonStyle(.plain)
+                    .frame(minHeight: 44, alignment: .topLeading)
+                    .contentShape(.rect)
+                    .accessibilityLabel("Add the age")
+            }
+        } else {
+            column(ageNumber != nil ? "Years old" : "Age") {
+                Text(ageNumber ?? shortAge)
+                    .font(.brand(19, .bold, relativeTo: .headline))
+                    .foregroundStyle(Brand.ink)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+            }
+        }
+    }
+
+    @ViewBuilder private var speciesColumn: some View {
+        column("Species") {
+            Button {
+                // ON YOUR OWN TREE THIS NAMES THE SPECIES, it does not browse
+                // to one (Hidde, 2026-08-29): the read-only species page about
+                // a species nobody has named yet is a page about nothing.
+                if mine != nil {
+                    choosingSpecies = true
+                } else {
+                    navigator.push = .species(tree.commonName)
+                }
+            } label: {
+                if mine != nil, tree.species.isEmpty {
+                    addValue
+                } else {
+                    HStack(spacing: 3) {
+                        // The COMMON name only. `tree.species` carries
+                        // "Ginkgo (Ginkgo biloba)" and printing both put one
+                        // fact in this cell twice, four lines high on the
+                        // Leiden Laburnum (Hidde, 2026-09-04: "die species
+                        // worden nog steeds veel te lang, toon minder"). The
+                        // Latin name is on the species page, which is what
+                        // the chevron is for.
+                        Text(tree.commonName)
+                            .font(.brand(16, .bold, relativeTo: .subheadline))
+                            .lineLimit(2)
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 9, weight: .semibold))
+                    }
+                    .foregroundStyle(Brand.moss)
+                }
+            }
+            .buttonStyle(.plain)
+            .frame(minHeight: 44, alignment: .topLeading)
+            .contentShape(.rect)
+            .accessibilityIdentifier("tree-species-fact")
+            .accessibilityLabel(mine != nil && tree.species.isEmpty
+                                ? "Add the species"
+                                : "\(tree.commonName), see every one of them")
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// "Add", never "Add it": Apple's writing guidance drops unnecessary words
+    /// from a button, its own apps write "add phone" and "Add Note" with no
+    /// pronoun, and "it" points at the wrong noun here anyway, since what is
+    /// being added is the species rather than the tree (2026-09-04). The label
+    /// directly above says which field, so the verb stands alone; the
+    /// accessibility label names the field.
+    private var addValue: some View {
+        HStack(spacing: 4) {
+            Image(systemName: "plus.circle")
+                .font(.system(size: 14, weight: .semibold))
+            Text("Add").font(.brand(16, .bold, relativeTo: .subheadline))
+        }
+        .foregroundStyle(Brand.moss)
+    }
+
+    private func column<C: View>(_ label: String,
+                                 @ViewBuilder _ value: () -> C) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(label)
+                .font(.footnote)
+                .foregroundStyle(Brand.inkSoft)
+            value()
+        }
+        .padding(.horizontal, 16)
+        .padding(.leading, -16)   // the first column sits flush with the card
+    }
+
+    /// THE ONE WARNING THIS PRODUCT MUST NEVER SOFTEN, and now in words a
+    /// reader uses. It said "Pin: Approximate", and pin is our database field
+    /// (Hidde, 2026-09-04: "is dat uberhaupt duidelijk? snappen mensen dat?").
+    ///
+    /// Reference: Airbnb, which says "General location" against "Precise
+    /// location" and lets the map carry it; iNaturalist, which draws a
+    /// different marker; Google Maps and AllTrails, which say nothing at all.
+    /// Nobody labels a pin. What a reader wants to know is where they will end
+    /// up, so the word is Location, and the values are a real opposite pair.
+    ///
+    /// An approximate location that says so sends somebody to the right park
+    /// knowing they will have to look; one that pretends to be exact sends
+    /// them to a spot where the tree is not.
+    @ViewBuilder private var locationLine: some View {
+        if tree.precision.needsWarning {
+            Button { placing = true } label: {
+                HStack(alignment: .firstTextBaseline, spacing: 10) {
+                    Image(systemName: "scope")
+                        .foregroundStyle(Brand.inkSoft)
+                    Group {
+                        Text("Approximate location. ").fontWeight(.semibold)
+                        // The ask belongs here rather than three screens away:
+                        // the person reading this line is the one person who
+                        // can answer it. THE MAP, not a form (Hidde,
+                        // 2026-08-25).
+                        + Text("Show us where it is").underline()
+                            .foregroundColor(Brand.moss)
+                    }
+                    .font(.footnote)
+                    .foregroundStyle(Brand.ink)
+                    .multilineTextAlignment(.leading)
+                    Spacer(minLength: 0)
+                }
+                .padding(.horizontal, 16)
+                .frame(minHeight: 44)
+                .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .padding(.bottom, 4)
+            .overlay(alignment: .top) { hairline }
+            .accessibilityIdentifier("tree-location-line")
+            .accessibilityLabel("The location is approximate. Show us where it is")
+        } else {
+            HStack(alignment: .firstTextBaseline, spacing: 10) {
+                Image(systemName: "mappin.and.ellipse")
+                Text("Exact location. The pin marks the trunk.")
+                Spacer(minLength: 0)
+            }
+            .font(.footnote)
+            .foregroundStyle(Brand.inkSoft)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 11)
+            .overlay(alignment: .top) { hairline }
+            .accessibilityIdentifier("tree-location-line")
+        }
+    }
+
+    private var hairline: some View {
+        Rectangle().fill(Brand.hairline).frame(height: 1)
+    }
+
+    /// The blue kept, standing on its own inside the block (Hidde, 2026-09-04:
+    /// "die ticket onder is op zich wel mooi... het verdient een alleen
+    /// staande waarschuwing zoals hij nu is").
+    private var ticketBand: some View {
         Label {
             VStack(alignment: .leading, spacing: 3) {
                 Text("You need a ticket to see this tree")
@@ -921,43 +1093,15 @@ struct TreeDetail: View {
         }
         .foregroundStyle(Brand.ink)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(12)
-        .background(Self.ticketBlue.opacity(0.10), in: .rect(cornerRadius: 12))
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .background(Self.ticketBlue.opacity(0.10))
+        .overlay(alignment: .top) { hairline }
         .accessibilityIdentifier("tree-ticket-note")
     }
 
-    private var approximateNote: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Label {
-                Text("This pin marks the area, not the trunk. You may have to look around once you are there.")
-            } icon: {
-                Image(systemName: "scope")
-            }
-            .font(.footnote)
-            // The ask belongs here rather than three screens away: the person
-            // reading this line is the one person who can answer it, and
-            // location is the field this project cannot afford to get wrong.
-            // THE MAP, not a form (Hidde, 2026-08-25: "help us place this tree
-            // opens a form, but i guess the easiest would be if you open the
-            // map and let someone drop / move a pin"). It used to open the
-            // contribute sheet, which asked the one person who can see the
-            // trunk to describe its position in a sentence.
-            Button { placing = true } label: {
-                Text("Show us where it is")
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(Brand.moss)
-                    .frame(minHeight: 44)
-                    .contentShape(.rect)
-            }
-            .buttonStyle(.plain)
-        }
-        .padding(12)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        // Our own gold rather than the system orange. At 12 percent on a
-        // near-black ground the system colour makes a muddy brown panel, and
-        // this is the one note on the page a person has to read before walking.
-        .background(Brand.gold.opacity(0.12), in: .rect(cornerRadius: 10))
-    }
+    /// The blue the pin's own ticket mark wears.
+    private static let ticketBlue = Color(red: 0.18, green: 0.42, blue: 0.66)
 
     /// Whole, always. It used to stop at six lines behind a "read the whole
     /// story" button, which is a paywall made of nothing: the story IS the
