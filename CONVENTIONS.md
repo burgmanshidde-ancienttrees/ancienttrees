@@ -1114,3 +1114,27 @@ own line.**
 
 Read 2026-09-04:
 - https://forum.inaturalist.org/t/display-both-scientific-and-common-names-in-seek/32834
+
+---
+
+## Naming an empty field somebody can fill (2026-09-04)
+
+**Reference: Apple's Human Interface Guidelines, and Apple's own apps.** The
+rule for a button is a verb or verb phrase that says what it does, with
+unnecessary words and articles left out. Contacts writes "add phone" and "add
+email", Reminders "Add Note", Photos "Add a Caption". None of them uses a
+pronoun.
+
+So an empty field's control is **"Add"**, never "Add it". Hidde asked which it
+should be on 2026-09-04, and "it" fails twice over: it is the kind of word
+Apple tells you to drop, and it points at the wrong noun, since the thing being
+added is the species and "it" reads as the tree.
+
+Bare "Add" rather than "Add species" only because the label sits directly
+above the control in the same cell, and repeating the field name two
+centimetres below itself is noise. Where no label stands beside it, name the
+field, as Contacts does. Either way the accessibility label carries the field
+("Add the species"), because a control has to make sense read aloud on its own.
+
+Read 2026-09-04:
+- https://developers.apple.com/design/human-interface-guidelines/foundations/writing
