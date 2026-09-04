@@ -9,6 +9,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-04 (continuation, following an attempt that shipped 6 trees and stopped after 28 min with 92 unspent) - Finished a standing famous-Japan write pass, released 3 stale claims, opened Ibiza
+
+Followed the harness's start order: pulled (nothing new), found three standing claims (`alicante`, `_famous-japan`, `_famous-global`) and real uncommitted work on disk for the first two, a write-stories pass an earlier attempt had run but never merged. Finished rather than re-picking apart: 6 famous-Japan candidates became new single-tree places (Kawatana, Matsumae, Numata, Omishima, Sakegawa, Shimizu) and Alicante gained a 15th tree (ali_015, a Norfolk Island pine). Full detail in CURATION.md. `_famous-global` had no work product anywhere on disk (only the claim commit existed), so released rather than invented. `leads.py --ready` came up empty (0 READY).
+
+**Ibiza claimed and dispatched.** `city_queue.py --next`'s OPENABLE list is known to overcount (Pisa's candidates turned out to be Lucca's, 2026-08-30); `scripts/openable.py`'s stricter per-candidate nearest-city check found only 3 genuinely openable zero-tree cities today, and Ibiza is the only one with real register supply (5 usable candidates from balears-arbres-singulars.json, 3 more excluded as multi-specimen groups or private land). A verify pass is running in the background against those 5, treated as an island-level place per the Kauai/Menorca precedent rather than a single-walk city, since the candidates sit 10-19km apart.
+
+Build (4194 pages) and `scripts/qa.py` (5987 checked) clean throughout. All resolved claims released and pushed.
+
 ## 2026-09-04 - Night run 2026-09-03 23:32 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 47.7 minutes of its 120 minute window, 374 turns, 33 commands refused by the allowlist, ended clean (success). 6 tree(s) reached data/cities across 6 city file(s), and the run still wrote no log entry of its own. Claims left behind: indianapolis, boise, fort-lauderdale, which block the top of the queue until they expire.

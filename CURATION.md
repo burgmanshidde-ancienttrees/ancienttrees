@@ -10,6 +10,21 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-04 (continuation, finishing a standing write pass) - 6 single-tree places published from famous-Japan leads; Alicante's 15th tree
+
+Finished a write-stories pass an earlier attempt in this window left uncommitted (verify_notes already merged by an even earlier attempt, stories never written up). Six verified famous-Japan candidates became their own single-tree places under the 2026-08-31 exception, none near a published city:
+
+- **Kawatana** (kwt_001, The Camphor Forest of Kawatana): a single tree reading as a wood, National Natural Monument since 1922, dying back since 2017 and tentatively recovering.
+- **Matsumae** (mtm_001, Kechimyaku Zakura): mother tree of the Matsumae-hayazaki cherry cultivar, at Kozenji temple.
+- **Numata** (num_001, The Great Mulberry of Usune): Japan's largest wild mulberry, National Natural Monument since 1956, tied to the Gunma silk story.
+- **Omishima** (omi_001, Ikiki no Gomon): a camphor at Oyamazumi Shrine hollowed into a walkable passage.
+- **Sakegawa** (skg_001, Kosugi no Osugi, "the Totoro Tree"): went internationally viral around 2020 for its ear-shaped twin crowns.
+- **Shimizu** (smz_001, The Great Cycad of Ryuge-ji): largest cultivated cycad in Japan, one of the "three great cycads", paid temple entry (fixed a missing `paid_entry` flag preflight caught).
+
+**Alicante 14 -> 15**: ali_015, a Norfolk Island pine on Plaza de Calvo Sotelo, cleared the two-source bar this pass (a second, independent local-history blog post). Spanish overlay extended to cover it (Contract J), and the leads files for both famous-Japan and Alicante updated to remove the now-published entries.
+
+Two question_context bodies (Kawatana, Sakegawa; Omishima) were widened to clear Contract B's 150-200 word floor, which the write pass had left short. Japan and Spain country-page meta_descriptions corrected for the new counts (57->63 cities, 248->249 trees). Build (4194 pages) and `scripts/qa.py` (5987 checked) clean. All three standing claims from the earlier attempts (_famous-japan, alicante, _famous-global) released; the last had no work product on disk to finish.
+
 ## 2026-09-03 (continuation, finishing a standing claim) - Brisbane fifth deepen attempt: zero trees, two open leads checked and still genuinely unresolved
 
 Finished the standing `brisbane` verify claim left by an earlier attempt in this window (register candidates already fetched: 558 significant-landscape-tree points within 20km, all unnamed coordinates, matching the previous two zero-yield deepen passes' finding that this register requires per-point identification with no name field). Rather than mine that pile again, checked the two most promising open leads in `data/leads/brisbane.json`:
