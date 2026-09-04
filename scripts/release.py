@@ -106,6 +106,57 @@ def uploaded_build():
         return None
 
 
+def released_version():
+    """The version string App Store Connect already has on sale, or None.
+
+    Apple refuses a build whose CFBundleShortVersionString is not HIGHER than
+    the released one, and it refuses any build at all on a "closed train". Both
+    arrive as an upload error AFTER the archive is made and the upload has run,
+    which is the most expensive moment to find out (2026-09-04: Hidde archived
+    1.0 (8) and got 90186 and 90062 back).
+    """
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from asc_auth import bearer_token
+        import urllib.request
+
+        token = bearer_token()
+        url = ("https://api.appstoreconnect.apple.com/v1/apps/6806177833"
+               "/appStoreVersions?limit=10")
+        req = urllib.request.Request(url, headers={"Authorization": "Bearer " + token})
+        with urllib.request.urlopen(req, timeout=25) as r:
+            data = json.load(r)
+        for v in data.get("data", []):
+            a = v.get("attributes", {})
+            if a.get("appStoreState") == "READY_FOR_SALE":
+                return a.get("versionString")
+    except Exception:
+        return None
+    return None
+
+
+def check_marketing_version():
+    """Refuse a marketing version Apple has already released.
+
+    A closed train is not a warning, it is a wall: 1.0 stays closed forever
+    once 1.0 is on sale, so an archive carrying it can never be uploaded.
+    """
+    with open(PBX, encoding="utf-8") as fh:
+        src = fh.read()
+    here = sorted(set(re.findall(r"MARKETING_VERSION = ([\d.]+);", src)))
+    live = released_version()
+    if not here:
+        return
+    if live and live in here:
+        die(f"MARKETING_VERSION is {here[0]} and App Store Connect already has "
+            f"{live} on sale.",
+            "Apple closes a train once its version is released: the upload "
+            "fails with 90186 and 90062 AFTER the archive is built. Raise it "
+            "in the project (1.0 -> 1.0.1) and archive again.")
+    if live:
+        print(f"version {here[0]} here, {live} on sale: clear to upload")
+
+
 def bump_build(explicit=None):
     """Raise the build number past everything Apple already has.
 
@@ -154,6 +205,9 @@ def main():
     args = ap.parse_args()
 
     head = check_current()
+    # Before anything is built: Apple refuses a closed train, and it refuses it
+    # after the archive and the upload, not before.
+    check_marketing_version()
     if args.check:
         return 0
 
