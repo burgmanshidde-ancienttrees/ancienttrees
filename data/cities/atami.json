@@ -2,10 +2,10 @@
   "city": "Atami",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Atami maps one tree: the Great Camphor of Kinomiya Shrine, one of Japan's Three Great Camphors and, by the government's own 1988 survey, the second largest tree in the country. Local tradition says circling it once adds a year to your life, and every May 5 the shrine holds a festival built around it. Published alone here because the tree itself is the destination, not because Atami's research is finished.",
-  "meta_description": "The Great Camphor of Kinomiya Shrine, Atami: one of Japan's Three Great Camphors, ranked the country's second-largest tree, free near Kinomiya Station.",
-  "question_meta": "Atami's oldest and only mapped tree is the Great Camphor of Kinomiya Shrine, one of Japan's Three Great Camphors, free to visit near Kinomiya Station.",
-  "question_answer": "Atami's only mapped tree, and its oldest, is the Great Camphor of Kinomiya Shrine (Cinnamomum camphora), a National Natural Monument traditionally said to be about 2000 years old, standing in the grounds of Kinomiya Shrine a five minute walk from Kinomiya Station.",
+  "intro": "Atami maps two trees, neither of them ordinary. The Great Camphor of Kinomiya Shrine is one of Japan's Three Great Camphors and, by the government's own 1988 survey, the country's second largest tree. A short train ride away in Yugawara stands the Byakushin of Joganji Temple, a Chinese juniper whose trunk has spiralled and leaned south for well over 800 years. Both stand on temple ground, free to visit, and both have outlived the wars and storms that shaped the coast around them.",
+  "meta_description": "Atami's two mapped trees: the Great Camphor of Kinomiya Shrine, Japan's second-largest tree, and the spiralling Byakushin juniper nearby in Yugawara.",
+  "question_meta": "Atami's oldest mapped tree is the Great Camphor of Kinomiya Shrine, one of Japan's Three Great Camphors, free to visit near Kinomiya Station.",
+  "question_answer": "Atami's oldest mapped tree, of two, is the Great Camphor of Kinomiya Shrine (Cinnamomum camphora), a National Natural Monument traditionally said to be about 2000 years old, standing in the grounds of Kinomiya Shrine a five minute walk from Kinomiya Station.",
   "question_context": "The tree and the shrine share one founding legend: in 710, a fisherman's net kept catching a wooden idol until it told him in a dream to found a shrine wherever seven great camphors grew together. Local tradition holds that circling this one once adds a year to a visitor's life, and every May 5 the shrine holds the Okusu Festival, with a ceremonial dance composed specifically for the tree. Ranked the second-largest tree in Japan by the Environment Agency's 1988 national giant-tree survey, after a camphor in Kagoshima, and one of the country's 'Three Great Camphors'. Around the Meiji Restoration, loggers made a partial attempt to fell it for timber and the surviving trunk split into two; a 1974 typhoon then snapped five metres off the south trunk, and the break is still capped with sheet metal today. Combined, the two trunks measure 15.65 metres round. Its traditional age of about 2000 years is a legend the shrine itself repeats rather than a scientifically dated figure, and no growth-rate estimate has been published, so the page states the range honestly rather than picking a number. Free to enter, and lit nightly from 17:00 to 23:00.",
   "hero_tree_id": "ata_001",
   "oldest_tree_id": "ata_001",
@@ -53,6 +53,38 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Circle this camphor once, local tradition says, and you gain a year of life. Kinomiya Shrine's Great Camphor is one of Japan's Three Great Camphors, ranked the second largest tree in the country by the Environment Agency's 1988 giant-tree survey, beaten only by a camphor in Kagoshima. Tradition puts its age at about 2000 years, a figure the shrine itself repeats rather than one any dating has confirmed; no growth-rate estimate exists, so it stays a legend on this page rather than a fact.\n\nThe shrine's founding story and the tree's are the same story. In 710, a fisherman's net kept catching a wooden idol, until it told him in a dream to found a shrine wherever seven great camphors grew together. This is meant to be one of them.\n\nIt has not had an easy few centuries. Around the Meiji Restoration, loggers made a partial attempt to fell it for timber, and the trunk that survived split into two. A 1974 typhoon snapped the south trunk off five metres up; the break is still capped with sheet metal today. Combined, the two trunks measure 15.65 metres round.\n\nNone of it has slowed the crowd. Every May 5 the shrine holds the Okusu Festival, with a ceremonial dance composed specifically for the tree, and the whole site is lit through the evening, 17:00 to 23:00, nightly.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ata_002",
+      "name": "The Byakushin of Joganji Temple",
+      "species": "Chinese Juniper (Juniperus chinensis)",
+      "age_estimate": "over 800 years",
+      "age_min": 800,
+      "age_max": null,
+      "girth_cm": 630,
+      "height_m": 20,
+      "location": {
+        "address": "252 Shirobori, Yugawara, Ashigarashimo District, Kanagawa Prefecture 259-0302, Japan (Joganji Temple grounds)",
+        "latitude": 35.147722,
+        "longitude": 139.102222,
+        "neighbourhood": "Yugawara (a hot-spring town about 6 km from Atami, within the day-trip boundary; not administratively part of Atami)"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E5%9F%8E%E9%A1%98%E5%AF%BA%E3%81%AE%E3%83%93%E3%83%A3%E3%82%AF%E3%82%B7%E3%83%B3",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/795"
+      ],
+      "access": "Free. Inside the grounds of Joganji Temple, a public Soto Zen temple; up the stone steps past the main gate, in the plaza east of the main hall.",
+      "transport": "8 minute walk from JR Yugawara Station (Tokaido Main Line).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "notes": "Trunk grows in a distinctive spiral, leaning south, recorded in a 1938 government field survey. Planting attributed by local tradition to either the Kamakura-era warlord Doi Sanehira or Minamoto no Yoritomo, whose retainer founded the temple; folklore, not a dated planting record. The national register's own coordinate (kunishitei.bunka.go.jp) sits at town-level precision, about 100m off; ja.wikipedia's dedicated article gives its own infobox coordinate matching the mapped pin closely, used here instead. Yugawara is a separate town from Atami (Kanagawa's Ashigarashimo District vs Atami in Shizuoka), about 6km/one train stop away, well inside the day-trip boundary; labelled honestly with its real place name and transport rather than folded into Atami itself.",
+      "story": "A juniper this old should stand straight, and this one does the opposite: its trunk twists into a spiral and leans hard to the south, a shape recorded as far back as a 1938 government survey. At Joganji Temple above Yugawara, one stop by train from Atami, the Byakushin has been growing this way for well over 800 years.\n\nThe temple's own founding is bound up with the tree. Local tradition credits either the Kamakura-period warlord Doi Sanehira or his lord Minamoto no Yoritomo, whose retainer founded Joganji, with the planting, though nothing dates the tree to either man directly, so the story stays a story rather than a measured age. What is measured is the trunk: 6.3 metres round at breast height, 8.5 metres at the base, rising 20 metres into a crown that spreads unevenly, heavier on one side than the other from centuries of leaning the same way.\n\nThe Agency for Cultural Affairs designated it a national Natural Monument in 1939, and photographs from 2024 show the same healthy crown, with only minor dieback on its north side. The stone steps past the temple gate climb to a plaza east of the main hall, where the juniper has been twisting itself into its own shape for the better part of a millennium, free to see, no ticket required.",
       "photo": {
         "url": null,
         "license": null,
