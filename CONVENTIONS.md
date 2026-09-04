@@ -1178,3 +1178,30 @@ field, as Contacts does. Either way the accessibility label carries the field
 
 Read 2026-09-04:
 - https://developers.apple.com/design/human-interface-guidelines/foundations/writing
+
+## Inviting somebody to the app
+
+Looked up 2026-09-04, when Hidde asked for the invite link and said "conventie".
+
+**Reference: Strava, AllTrails and Instagram, which all do the same thing.** An
+"Invite friends" row in the profile or find-people area, opening the SYSTEM
+share sheet with one short line and a link. None of them builds a screen for
+it, and none asks for an email address to send it to: the share sheet already
+holds every way this person contacts anybody, and it is the control they have
+used a thousand times.
+
+**What the link points at is the decision, not the row.** Two shapes exist.
+Instagram and Strava send a link to YOUR PROFILE, so the recipient lands on you
+and the follow is one tap. A plain App Store link brings somebody to the app
+and leaves them to find you.
+
+We send the App Store link, and it is a limit rather than a first version: a
+profile link means a public web page carrying somebody's display name, and this
+site does not publish a person's name (2026-08-11). Changing that is Hidde's
+call, and it is what a follow-on-arrival invitation would cost.
+
+**And email search is NOT the convention**, which is the question that led here.
+It lets anybody test whether an address has an account, and Instagram, Strava
+and Polarsteps have all moved away from it. Search by the name somebody chose,
+plus an invitation, is what the field looks like now.
+
