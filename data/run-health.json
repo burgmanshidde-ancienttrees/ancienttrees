@@ -4939,6 +4939,34 @@
    ],
    "trees": 3,
    "logged": true
+  },
+  {
+   "started": "2026-09-04T12:24:40+00:00",
+   "date": "2026-09-04",
+   "run_id": "33872272950",
+   "minutes": 20.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 169,
+   "denials": 17,
+   "denials_source": "permission_denials: Bash, Bash(curl), Bash(env), Bash(mkdir), Bash(python3), Bash(while)",
+   "ended": "success",
+   "tokens": 7585543,
+   "claims_held": [
+    "_famous-poland",
+    "arnhem",
+    "milan"
+   ],
+   "commits": 19,
+   "cities_touched": 1,
+   "cities": [
+    {
+     "city": "lisbon",
+     "trees": 2
+    }
+   ],
+   "trees": 2,
+   "logged": true
   }
  ],
  "schedule_changes": [
