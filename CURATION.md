@@ -10,7 +10,18 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
-## 2026-09-04 (continuation) - 3 single-tree places from famous-Japan batches 1-3; Boise/Long Beach/Little Rock register scouting
+## 2026-09-04 (continuation) - 6 single-tree places: UK batch 1, Germany batch 1, Formentera, Ibiza
+
+Finished 2 standing verify claims (`_famous-uk-batch1`, `_famous-germany-batch1`) plus 2 orphaned verified-but-unwritten leads (Formentera, Ibiza) with one write-stories pass, one tree each place, all under the 2026-08-31 single-tree-destination exception:
+
+- **Glastonbury** (gls_001, The Glastonbury Thorn): a hawthorn (Crataegus monogyna 'Biflora') in St John the Baptist's churchyard, ~90 years old (planted 1930s by Abbey head gardener George Chislett), flowered twice a year, supplies the sprig cut every December since 1929 and sent to the monarch. Flagged: coordinates are the church's, not a tree-level pin (`location_precision: approximate`).
+- **Runnymede** (ank_001, The Ankerwycke Yew): 2,000-2,500 years (Woodland Trust vs National Trust disagree by 500 years, both carried), 7.98m girth, in the ruined grounds of St Mary's Priory across the Thames from Runnymede meadow. Tradition, not record, ties it to the 1215 Magna Carta sealing and Henry VIII/Anne Boleyn.
+- **Tolpuddle** (tol_001, The Tolpuddle Martyrs Tree): sycamore, ~340 years, 6.06m girth, largest sycamore in Dorset, where six farm labourers founded an agricultural union in 1833 before being transported to Australia. Pollarded 2023 to extend its life.
+- **Wessobrunn** (wes_001, The Tassilolinde): large-leaved lime, 700-900 years (German Dendrological Society, stem-structure estimate), ~14m girth, third-largest lime girth in Bavaria. Legend ties it to Duke Tassilo III's 753 founding dream, which the tree is too young to have witnessed; told as legend, not fact. Naturdenkmal since 1980, Nationalerbe-Baum since October 2023.
+- **Formentera** (fmt_001, Savina de Ses Salines): Phoenician juniper, over 500 years (no upper bound stated by either source), inside Ses Salines Natural Park near Ses Illetes beach. Split out of an earlier Ibiza dispatch (2026-09-03) after the original id turned out to be on the wrong island.
+- **Ibiza** (ibz_001, Pi de Can Reiet): Aleppo pine, 100-150 years, 349cm girth, roadside on the Santa Eularia-Sant Joan road, owned by the island council. Leaning crown, actively managed.
+
+None have photos yet (honest gap, `status: missing`); none are in `data/photo-queue.json`. Also fixed 4 country pages' stale `meta_description` tree/city counts (Germany, Japan, Spain, United Kingdom) caught by `preflight.py` after these went live. Full detail in LOG.md.
 
 Finished a standing famous-Japan verify pass an earlier attempt in this window left uncommitted (verified and written, never merged). Three candidates became single-tree places under the 2026-08-31 exception:
 
