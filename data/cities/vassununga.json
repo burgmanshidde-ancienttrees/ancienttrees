@@ -1,0 +1,63 @@
+{
+  "city": "Vassununga",
+  "country": "Brazil",
+  "status": "needs_curation",
+  "intro": "O Patriarca is routinely called the oldest tree in Brazil, and nobody agrees what that means in years: the published estimates run from 600 to more than 3,000. It is a jequitiba-rosa somewhere between 11.5 and 12.3 metres around, growing in the Pe de Gigante section of Vassununga State Park, 900 hectares of cerrado in the interior of Sao Paulo state. Entry is free, booked in advance through the park's own form, and the walk to it runs on marked trails.",
+  "meta_description": "O Patriarca, widely called Brazil's oldest tree, is a jequitiba-rosa over 11m round in Vassununga State Park. Free entry, booked online in advance.",
+  "question_meta": "O Patriarca in Vassununga State Park is called Brazil's oldest tree, on estimates from 600 to 3,000 years. What is known, and how to book a visit.",
+  "question_answer": "The oldest tree in Vassununga is O Patriarca, a jequitiba-rosa standing in the Pe de Gigante section of the state park and widely reported as the oldest tree in Brazil. Its actual age depends on which source you read: estimates run from 600 years to more than 3,000, and none of them arrives with a method attached. The trunk measures between 11.5 and 12.3 metres round, about four metres through, under roughly 40 metres of height. Entry is free but must be booked in advance through the park's own online form.",
+  "question_context": "The three ages in circulation come from three different places and none of them settles the question. English Wikipedia notes that the 600-year figure was arrived at by carbon dating a neighbouring tree and reasoning across to this one, which is a comparison rather than a dating of the Patriarca itself. The municipality prefers a round 1,000. Several Brazilian outlets repeat a carbon-14 result of over 3,000 years without saying who ran it or when. What every source does agree on is the framing, and the press has used it for years: the oldest tree in the country. The measurements are steadier. Circumference is given as 11.5 metres in one source and 12.3 in another, both of which put the trunk close to four metres through, or about thirteen people with their arms linked. Height is reported at 40 or 42 metres, with a single outlier at 49. The setting surprises most first-time visitors, because this is not rainforest: Pe de Gigante is cerrado, the Brazilian savanna, a low landscape of grass and small twisted trees with one enormous exception standing in it.",
+  "hero_tree_id": "pat_001",
+  "oldest_tree_id": "pat_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Vassununga?",
+      "a": "O Patriarca, a jequitiba-rosa in the Pe de Gigante section of Vassununga State Park, widely reported in Brazil as the oldest tree in the country."
+    },
+    {
+      "q": "How old is O Patriarca really?",
+      "a": "Nobody has settled it. Estimates run from 600 years to more than 3,000. The 600-year figure comes from carbon dating a neighbouring tree and comparing, the municipality claims 1,000, and other reports repeat a carbon-14 result of over 3,000 years without naming its source."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, entry is free, but registration through the park's online form is mandatory in advance. The park opens daily from 8:00 to 16:00, pets are not allowed, and the terrain is not suitable for visitors with limited mobility."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "The park lies at Santa Rita do Passa Quatro, about 244 kilometres from the city of Sao Paulo, reached by car on the SP-348 and then the SP-050. There is no public transport to the park gate."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pat_001",
+      "name": "O Patriarca (Patriarca da Floresta)",
+      "species": "Jequitiba-rosa (Cariniana legalis)",
+      "age_estimate": "sources disagree sharply, 600 to 3,000 years",
+      "age_min": 600,
+      "age_max": 3000,
+      "girth_cm": 1150,
+      "location": {
+        "address": "Pe de Gigante section, Parque Estadual Vassununga, Santa Rita do Passa Quatro, Sao Paulo state, Brazil",
+        "latitude": -21.72250139,
+        "longitude": -47.59641417,
+        "neighbourhood": "Pe de Gigante, Vassununga State Park"
+      },
+      "story": "Brazil's oldest tree cannot tell you how old it is, and nor can anyone else. The estimates for O Patriarca run from 600 years to more than 3,000. The 600 comes from carbon dating a neighbouring tree and reasoning across to this one, which is a comparison rather than a measurement of this trunk. The municipality prefers a round 1,000. Several Brazilian outlets repeat a carbon-14 result of over 3,000 years. Take your pick: not one of the figures arrives with a laboratory, a date or a method attached.\n\nWhat everybody does agree on is the framing. The press has called it the oldest tree in the country for years, and that is why people drive 244 kilometres from Sao Paulo to look at it.\n\nThe trunk is the part nobody argues about. It is a jequitiba-rosa measuring somewhere between 11.5 and 12.3 metres around, close to four metres through, which is roughly thirteen people with their arms linked. Height is given as 40 or 42 metres, with one source claiming 49.\n\nIt grows in the Pe de Gigante section of the park, 900 hectares of cerrado rather than rainforest: savanna, grass and small twisted trees, with one enormous exception standing in it. Entry is free and has to be booked first. Our pin marks the section rather than the trunk, and the marked trails do the last part.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Vassununga_State_Park",
+        "https://quantocustaviajar.com/blog/parque-estadual-vassununga/",
+        "https://catracalivre.com.br/gira/jequitiba-patriarca-parque-vassununga-sp/"
+      ],
+      "access": "Free entry, but advance online registration through the park's own form is mandatory. Open daily 8:00-16:00. Pets not allowed; terrain is not accessible for mobility-limited visitors. Reachable via marked trails, sometimes with environmental monitor guides.",
+      "transport": "In Santa Rita do Passa Quatro, Sao Paulo state, about 244 km from the city of Sao Paulo; reached by car via SP-348 (Rodovia dos Bandeirantes) then SP-050. No public transport to the park gate identified.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

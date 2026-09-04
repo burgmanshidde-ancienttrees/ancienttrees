@@ -1,0 +1,62 @@
+{
+  "city": "Bansko",
+  "country": "Bulgaria",
+  "status": "needs_curation",
+  "intro": "Above the ski town of Bansko, in Pirin National Park, stands a Bosnian pine that Bulgarians say was already growing when their country was founded. Baikushev's Pine is put at about 1,300 years by a figure repeated for generations rather than by any published ring count, which would make it one of the oldest trees in Europe. Its trunk is 7.8 metres round under 24 metres of crown. It is free, fenced, reachable by car in half an hour or on foot in three and a half hours.",
+  "meta_description": "Baikushev's Pine near Bansko is put at about 1,300 years, one of Europe's oldest trees. 7.8m round, free, in Pirin National Park, Bulgaria.",
+  "question_meta": "Baikushev's Pine above Bansko is said to be about 1,300 years old and 7.8m round. Where the age figure comes from, and how to reach it in Pirin.",
+  "question_answer": "The oldest tree near Bansko is Baikushev's Pine, a Bosnian pine in Pirin National Park about 12 to 15 kilometres from the town. It is usually given as roughly 1,300 years old, a figure that comes from the tradition that it was already alive under Khan Asparuh around 681, rather than from any dating method a source names. Its trunk is 7.8 metres round, 2.22 metres through, under a crown 24 metres tall. It is free to visit, with a fence and a wooden staircase built around it.",
+  "question_context": "The age is a repeated figure and worth reading as one. Bulgarian sources describe the pine as a contemporary of Khan Asparuh, who founded the First Bulgarian Empire around 681, and roughly 1,300 years follows from that framing; none of them names a ring count, a core sample or the person who did the work. The measurements are firmer, and for a Bosnian pine they are exceptional: 7.8 metres of circumference, 2.22 metres of diameter, 24 metres of height. Pinus heldreichii is a high-altitude species that grows slowly on thin limestone soil in the Balkan mountains, which is the usual recipe for a tree that outlasts the states around it. The name belongs to Kostadin Baikushev, the forest ranger who identified it. What has grown up around the tree since is a small pilgrimage: a fence to keep feet off the root plate, a wooden staircase, a parking area about 400 metres past the Banderitsa hut, and a bus that runs up from Bansko in season.",
+  "hero_tree_id": "bkp_001",
+  "oldest_tree_id": "bkp_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Bansko?",
+      "a": "Baikushev's Pine, a Bosnian pine in Pirin National Park, usually given as about 1,300 years old and counted among the oldest trees in Europe."
+    },
+    {
+      "q": "How is the 1,300-year age known?",
+      "a": "It is a figure carried by repetition rather than by a published dating. Sources describe the tree as a contemporary of Khan Asparuh, who founded the First Bulgarian Empire around 681, and none of them names a ring count or a core sample behind the number."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands inside Pirin National Park with no permit needed, behind a fence with a wooden staircase built around it to keep visitors off the roots."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It lies about 12 to 15 kilometres from Bansko. The drive up Pirin Street to the Banderitsa hut takes roughly 30 minutes, with parking about 400 metres further on; a bus runs the same route, and the full walk from town is about 12.6 kilometres and three and a half hours."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bkp_001",
+      "name": "Baikushev's Pine (Baikushevata Mura)",
+      "species": "Bosnian Pine (Pinus heldreichii)",
+      "age_estimate": "about 1,300 years",
+      "age_min": 1200,
+      "age_max": 1400,
+      "girth_cm": 780,
+      "location": {
+        "address": "Pirin National Park, near Banderitsa hut, about 12-15 km from Bansko, Blagoevgrad Province, Bulgaria",
+        "latitude": 41.767023,
+        "longitude": 23.423002,
+        "neighbourhood": "Banderitsa, Pirin National Park"
+      },
+      "story": "By the story Bulgarians tell about it, this pine was already standing when their country began. Khan Asparuh founded the First Bulgarian Empire around 681, and Baikushev's Pine is described everywhere as his contemporary, which is where the widely repeated figure of about 1,300 years comes from. No source names a ring count, a core sample or the person who did the work, so read the age as a tradition carried forward rather than a measurement anyone published.\n\nThe trunk is less arguable. It runs 7.8 metres round and 2.22 metres through, under 24 metres of crown, which is exceptional for the species. Pinus heldreichii grows slowly, at altitude, on thin limestone soil in the Balkan mountains, and that is the usual recipe for a tree that outlasts the states around it.\n\nIt carries a forester's name. Kostadin Baikushev identified it, and what has grown up around it since is a small pilgrimage: a fence to keep feet off the root plate, a wooden staircase, a parking area 400 metres past the Banderitsa hut and a bus that will drop you near enough.\n\nThe better way to arrive is on foot. It is about 12.6 kilometres up from Bansko, roughly three and a half hours through Pirin National Park, and there is nothing to pay at the far end.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Baikushev%27s_pine",
+        "https://luckybansko.com/baikushevata-mura-baikushevs-pine/"
+      ],
+      "access": "Free, inside Pirin National Park, no permit needed for this well-established site. Reachable by car (parking area about 400m past Banderitsa hut), on foot (about 3.5 hours / 12.6 km from Bansko for the full hike), by bicycle, or by bus running to Banderitsa hut. A fenced viewing area and wooden stairs are built around the tree.",
+      "transport": "About 12-15 km from Bansko; roughly 30 minutes by car via Pirin Street to Banderitsa hut, or about 3.5 hours on foot from Bansko town",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}
