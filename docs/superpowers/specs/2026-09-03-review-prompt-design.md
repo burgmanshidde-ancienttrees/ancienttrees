@@ -1,5 +1,16 @@
 # Asking for an App Store review
 
+> **SUPERSEDED IN PART, 2026-09-04.** Hidde: "afgevinkte bomen is wel te
+> lang - ik denk naar 3 bomen bekeken in de app". The milestones below
+> counted trees TICKED OFF; they now count DIFFERENT TREE PAGES OPENED,
+> which a tick also counts toward. A second asking moment was added, a
+> tree page closing, and neither screen presents the dialog itself any
+> more: they raise `pending` and `ContentView.reviewAsk` makes the ask,
+> because the screen that notices a milestone is usually the one going
+> away. Everything else here still holds: the native prompt only, no
+> satisfaction gate, no button, the 7-day gap and the cap of 3.
+> Current shape: CONVENTIONS.md and `Kit/ReviewPrompt.swift`.
+
 Written 2026-09-03 for Hidde, who asked to research the convention for
 app-review flows and build it.
 
