@@ -987,6 +987,17 @@ phone header rather than inside the menu**, and **the hero carries at most one
 filled control besides the search**. What we still refuse is the sheet, for the
 reason above.
 
+**Which SIDE, because the first build got it backwards (Hidde, same day: "ik
+zou zweren dat al je conventies je gaan vertellen dat die andersom moeten").**
+The table above already says it, left to right: mark, pill, hamburger. The
+menu button owns the outer corner and the CTA sits inboard of it, and komoot,
+AllTrails, Airbnb and Booking all do that. It is a convention rather than a
+taste because the menu is the one control present on every page, so it must
+never move, while the CTA comes and goes; putting the menu inboard makes the
+fixed thing shift position whenever the movable thing turns up. We shipped the
+mirror image for a few hours because the code comment paraphrased this table
+wrongly and the CSS followed the comment.
+
 Two numbers that fall out of it, measured rather than guessed: the pill is 44
 tall, which is Apple's minimum and what `scripts/layout_rules.py` measures, and
 the wordmark beside the mark drops under 360px, because the bar wants about
