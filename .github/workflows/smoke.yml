@@ -11,13 +11,21 @@ on:
   push:
     branches: [main]
   workflow_dispatch: {}
+  # A push cancels the run before it, and on a busy day that is every run: on
+  # 2026-09-04 35 of the last 40 were cancelled and the brief read that as a
+  # gate that never passes. Same lesson ios.yml learned on 2026-08-27, so the
+  # same answer: two scheduled runs a day in a group of their own that a push
+  # cannot touch, so there is always a recent finished verdict to read.
+  schedule:
+    - cron: '30 4 * * *'
+    - cron: '30 16 * * *'
 
 permissions:
   contents: read
 
 concurrency:
-  group: smoke
-  cancel-in-progress: true
+  group: smoke-${{ github.event_name == 'schedule' && 'scheduled' || 'push' }}
+  cancel-in-progress: ${{ github.event_name != 'schedule' }}
 
 jobs:
   smoke:
