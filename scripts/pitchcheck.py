@@ -55,12 +55,20 @@ TICS = [
     # UNIQUENESS BY DENIAL. Three clauses about other people's products teach
     # the reader what we are not. Show the thing instead and say nothing about
     # the field.
+    # Refined 2026-09-04 after reading Merlin Bird ID, which does exactly this
+    # and gets away with it: "Merlin is unlike any other bird app, it's powered
+    # by eBird, the world's largest database of bird sightings". It earns the
+    # contrast by paying for it with a hard fact in the same breath, and it is
+    # its SECOND paragraph. So the rule is not never contrast. It is never open
+    # on one, and never leave one unpaid. Mine paid nothing: "there are
+    # databases for botanists and there are hiking apps, but nothing that".
     (re.compile(r"\b(nothing else (?:does|comes|is)|no other app|no app that|"
                 r"unlike (?:other|any|every)|but nothing that|"
                 r"there are .{5,60} and there are )\b", re.I),
      "uniqueness by denial",
-     "you are proving we are unique by describing competitors. Show the thing "
-     "nothing else does and leave the field out of it."),
+     "you are proving we are unique by describing competitors. Merlin gets away "
+     "with this by paying for it with a hard fact in the same sentence, in its "
+     "SECOND paragraph. If you cannot do both, show the thing instead."),
 
     # THE CATEGORY PREFIX. "New app: find the remarkable old trees near you."
     # A label glued to the front of a sentence that was fine on its own.
