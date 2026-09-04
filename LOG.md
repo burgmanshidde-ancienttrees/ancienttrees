@@ -9,6 +9,36 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-04 (session) - Batch-010 is finished by the night run from tomorrow; nothing could go out today
+
+Hidde said "1 you can do", meaning finish batch-010-app-launch (163
+addresses left). Today's cap was already spent: 49 from this morning's
+duplicate run plus one contributor reply, so the send script holds every
+remaining address until tomorrow.
+
+Rather than a person re-running a command for four mornings, the night run
+now does it. `scripts/outreach_continue.py` opens every batch file whose
+status is `approved_by_hidde` (only batch-010-app-launch today), runs
+`outreach_send.py --send` on it with every guard intact (50 a day, the
+do-not-contact list, never twice within a batch since this morning's fix,
+never from a personal address), and flips the status to `sent_complete` when
+a run reports nothing sent and nothing held. A batch awaiting his word
+(`drafts/batches/batch-010.json`, 3 hand-scouted addresses, status
+`awaiting_hidde`) is never touched. The step sits in nightly.yml directly
+after the contributor-reply step, same credentials, same continue-on-error
+belt, and commits data/outreach-sent.json when anything went out.
+
+Dry-run checked: every already-sent batch reports 0 sent, 0 held, and the
+app-launch batch reports 163 held for tomorrow. At 50 a day the batch
+completes on 2026-09-08. The first knock after midnight UTC sends the first
+fifty.
+
+Reflection in session, for the record: the 3-month Search Console chart he
+sent shows impressions flat since ~22 August while clicks keep rising on
+improving position. Step 4 (depth on the cities that already earn, judged
+by a weekly cohort-yield table) was explained and not yet started; step 3
+(App Store featuring nomination) is his.
+
 ## 2026-09-04 (session) - Bug: re-running batch-010 duplicate-mailed 46 organisations, fixed by pruning the batch file
 
 You said "sent next batch" and I re-ran the same command from yesterday.

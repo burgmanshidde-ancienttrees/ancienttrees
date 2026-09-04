@@ -238,6 +238,30 @@ jobs:
             git push
           fi
 
+      # An outreach batch Hidde has ALREADY approved is finished by the
+      # machine, fifty a day, rather than by a person re-running a command
+      # every morning (2026-09-04, batch-010-app-launch: 212 addresses, five
+      # mornings). outreach_continue.py opens only batches whose status is
+      # approved_by_hidde and keeps every guard in outreach_send.py; a draft
+      # awaiting his word is never touched. Same belt as the step above.
+      - name: Continue an approved outreach batch
+        continue-on-error: true
+        env:
+          OUTREACH_SMTP_HOST: ${{ secrets.OUTREACH_SMTP_HOST }}
+          OUTREACH_SMTP_PORT: ${{ secrets.OUTREACH_SMTP_PORT }}
+          OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
+          OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
+          OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
+        run: |
+          python3 scripts/outreach_continue.py --send
+          if ! git diff --quiet data/outreach-sent.json drafts/batches; then
+            git config user.name "claude[bot]"
+            git config user.email "41898282+claude[bot]@users.noreply.github.com"
+            git add data/outreach-sent.json drafts/batches
+            git commit -m "Outreach batch continued, log updated"
+            git push
+          fi
+
       - name: Take down a photograph whose account is gone
         # /terms and /privacy promise that deleting an account removes what was
         # published with it. The database keeps that promise by cascade; a
