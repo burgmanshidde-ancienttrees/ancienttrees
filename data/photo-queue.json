@@ -40917,7 +40917,9 @@
      "author": "Unknown authorUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:PD-Art (PD-old-100-expired) Category:PD-Art missing SDC copyright status Category:PD-old-100-expired Category:PD-old missing SDC copyright status Category:Portrait photographs of Wilhelmina of the Netherlands Category:Portrait photographs of women wearing tiaras (diadems) Category:Queen Wilhelmina’s Wedding Gift Tiara Category:Template Unknown (author) Category:Wilhelmina of the Netherlands in 1901"
+     "cats": "Category:CC-PD-Mark Category:PD-Art (PD-old-100-expired) Category:PD-Art missing SDC copyright status Category:PD-old-100-expired Category:PD-old missing SDC copyright status Category:Portrait photographs of Wilhelmina of the Netherlands Category:Portrait photographs of women wearing tiaras (diadems) Category:Queen Wilhelmina’s Wedding Gift Tiara Category:Template Unknown (author) Category:Wilhelmina of the Netherlands in 1901",
+     "judged": "reject",
+     "verdict": "Sepia archival studio portrait of Queen Wilhelmina, not a tree."
     }
    ]
   },
@@ -42111,7 +42113,7 @@
      "lng": null,
      "cats": "Category:August 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2024-08-21 Category:Old ginkgo tree, Old Hortus Utrecht Category:Self-published work",
      "judged": "reject",
-     "verdict": "Also Utrecht, not Groningen. All three gro_013 candidates in this batch are the wrong city's ginkgo."
+     "verdict": "Wrong city: this is Utrecht University's Oude Hortus ginkgo, not Groningen's."
     },
     {
      "title": "File:Old ginkgo tree, old Hortus Botanicus, Utrecht University, August 2024 - 6.jpg",
@@ -42121,7 +42123,9 @@
      "author": "Hansmuller",
      "lat": null,
      "lng": null,
-     "cats": "Category:August 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2024-08-21 Category:Old ginkgo tree, Old Hortus Utrecht Category:Self-published work"
+     "cats": "Category:August 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2024-08-21 Category:Old ginkgo tree, Old Hortus Utrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same wrong-city ginkgo, different frame."
     },
     {
      "title": "File:Old ginkgo tree, old Hortus Botanicus, Utrecht University, August 2024 - 7.jpg",
@@ -42131,7 +42135,9 @@
      "author": "Hansmuller",
      "lat": null,
      "lng": null,
-     "cats": "Category:August 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2024-08-21 Category:Old ginkgo tree, Old Hortus Utrecht Category:Self-published work"
+     "cats": "Category:August 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Netherlands photographs taken on 2024-08-21 Category:Old ginkgo tree, Old Hortus Utrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same wrong-city ginkgo, different frame."
     }
    ]
   },
@@ -45255,7 +45261,7 @@
      "lng": 5.158647,
      "cats": "Category:CC-BY-SA-4.0 Category:Cupressaceae at Pinetum Blijdenstein Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work Category:Sequoiadendron giganteum (cultivated) in the Netherlands",
      "judged": "reject",
-     "verdict": "Wrong specimen and wrong species: labelled as a Giant Sequoia (Mammoetboom), not our Western Red Cedar. Same pinetum's labelled collection, different tree."
+     "verdict": "Fibrous red bark and habit confirm Sequoiadendron giganteum; our tree is Thuja plicata. Wrong tree in the right garden."
     },
     {
      "title": "File:Pinetum Blijdenstein 44 - Mammoetboom (Sequoiadendron giganteum).jpg",
@@ -45265,7 +45271,9 @@
      "author": "Rudolphous",
      "lat": 52.228756,
      "lng": 5.158647,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cupressaceae at Pinetum Blijdenstein Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work Category:Sequoiadendron giganteum (cultivated) in the Netherlands"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cupressaceae at Pinetum Blijdenstein Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work Category:Sequoiadendron giganteum (cultivated) in the Netherlands",
+     "judged": "reject",
+     "verdict": "Same species mismatch: Sequoiadendron, not our Thuja plicata."
     },
     {
      "title": "File:Pinetum Blijdenstein 45 - Mammoetboom (Sequoiadendron giganteum).jpg",
@@ -45275,7 +45283,9 @@
      "author": "Rudolphous",
      "lat": 52.22885,
      "lng": 5.1585,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cupressaceae at Pinetum Blijdenstein Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work Category:Sequoiadendron giganteum (cultivated) in the Netherlands"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cupressaceae at Pinetum Blijdenstein Category:Media from iNaturalist Category:Netherlands photographs taken on 2022-07-02 Category:Photographs by Rudolphous of Nature (Netherlands) Category:Self-published work Category:Sequoiadendron giganteum (cultivated) in the Netherlands",
+     "judged": "reject",
+     "verdict": "Same species mismatch: Sequoiadendron, not our Thuja plicata."
     },
     {
      "title": "File:Pinetum Blijdenstein 52 - Japanse Cipres (Cryptomeria japonica).jpg",
@@ -46549,7 +46559,9 @@
      "author": "FrankOverman",
      "lat": 50.84449,
      "lng": 5.68204,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht",
+     "judged": "reject",
+     "verdict": "A Stolperstein memorial cobblestone, no tree in frame."
     },
     {
      "title": "File:Stolperstein für Hanchen Nussbaum-Goldschmidt (Maastricht).jpg",
@@ -46559,7 +46571,9 @@
      "author": "FrankOverman",
      "lat": 50.84449,
      "lng": 5.68204,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Goldschmidt Stolpersteine Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Goldschmidt Stolpersteine Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht",
+     "judged": "reject",
+     "verdict": "A Stolperstein memorial cobblestone, no tree in frame."
     },
     {
      "title": "File:Stolperstein für Markus Nussbaum (Maastricht).jpg",
@@ -46569,7 +46583,9 @@
      "author": "FrankOverman",
      "lat": 50.84449,
      "lng": 5.68204,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (50° N, 5° E) Category:Nussbaum Stolpersteine Category:Stolpersteine in Maastricht",
+     "judged": "reject",
+     "verdict": "A Stolperstein memorial cobblestone, no tree in frame."
     }
    ]
   },
@@ -48034,7 +48050,9 @@
      "author": "Bjankuloski06",
      "lat": -36.787935,
      "lng": 174.76889,
-     "cats": "Category:CC-BY-4.0 Category:Edward VII Coronation Tree, Takapuna Category:Files with coordinates missing SDC location of creation Category:Quercus robur in New Zealand Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Edward VII Coronation Tree, Takapuna Category:Files with coordinates missing SDC location of creation Category:Quercus robur in New Zealand Category:Self-published work",
+     "judged": "approve",
+     "verdict": "Geotagged ~19m from our pin, category names the tree; bronze plaque and Takapuna Primary School sign both visible in frame, sunlit, in leaf, trunk and limbs readable."
     },
     {
      "title": "File:Edward VII Coronation Tree crown, Takapuna.jpg",
@@ -48426,7 +48444,9 @@
      "author": "Francesco Bini",
      "lat": 39.925045,
      "lng": 116.383113,
-     "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Sailko - Supported by Wikimedia CH Category:Jade Island, Beihai Park Category:Photographs by User:Sailko Category:Self-published work"
+     "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Sailko - Supported by Wikimedia CH Category:Jade Island, Beihai Park Category:Photographs by User:Sailko Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Categorised Jade Island, Beihai Park; our tree is the Guke courtyard at Huafangzhai, a different location. Subject is a modest broad-leaved tree, not the pagoda tree."
     }
    ]
   },
@@ -48717,7 +48737,9 @@
      "author": "Hassocks5489",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Preston Twins, Preston Park Category:Self-published work Category:Unidentified Ulmus"
+     "cats": "Category:CC-Zero Category:Preston Twins, Preston Park Category:Self-published work Category:Unidentified Ulmus",
+     "judged": "hold",
+     "verdict": "Good photo (in leaf, tree fills frame) but Commons files it only as 'Preston Twins'/'Unidentified Ulmus'; the eastern twin was felled Dec 2019 and this cannot be confirmed as the surviving one."
     },
     {
      "title": "File:English Elm Preston Park Brighton.jpg",
@@ -49620,7 +49642,9 @@
      "author": "Wolfgang Stanglmeier",
      "lat": 47.953383,
      "lng": 7.861033,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Self-published work Category:Waldtraut vom Mühlwald (Freiburg im Breisgau)"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Self-published work Category:Waldtraut vom Mühlwald (Freiburg im Breisgau)",
+     "judged": "reject",
+     "verdict": "Photograph is of the carved wooden information sign, not the tree itself."
     },
     {
      "title": "File:Waldtraut vom Muehlwald Info.jpg",
@@ -49930,7 +49954,9 @@
      "author": "Van der Linden, Geert",
      "lat": null,
      "lng": null,
-     "cats": "Category:2013 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Muinkpark (Gent) Category:Onroerend erfgoed in Ghent Category:Onroerend erfgoed with known IDs Category:Trees in Ghent"
+     "cats": "Category:2013 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Muinkpark (Gent) Category:Onroerend erfgoed in Ghent Category:Onroerend erfgoed with known IDs Category:Trees in Ghent",
+     "judged": "reject",
+     "verdict": "Japanse notenboom is Dutch for Ginkgo biloba, matching neither the weeping silver lime nor the common ash entries."
     },
     {
      "title": "File:Gent Muinkpark Oosterse plataan - 180826 - onroerenderfgoed.jpg",
@@ -50806,7 +50832,9 @@
      "author": "Dguendel",
      "lat": 53.56227778,
      "lng": 9.9975,
-     "cats": "Category:Alsterufer Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (53° N, 9° E) Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Canon EOS 450D"
+     "cats": "Category:Alsterufer Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (53° N, 9° E) Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Canon EOS 450D",
+     "judged": "reject",
+     "verdict": "A winter street photograph of a stucco house facade, no beech visible."
     },
     {
      "title": "File:Hamburg-Rotherbaum, the villa 36 Alsterufer.jpg",
@@ -52239,7 +52267,9 @@
      "author": "SOHAFun",
      "lat": 36.561858,
      "lng": 136.663353,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Japan photographs taken on 2018-04-10 Category:May 2018 in Kanazawa Category:Neagarinomatsu at Kenrokuen Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Japan photographs taken on 2018-04-10 Category:May 2018 in Kanazawa Category:Neagarinomatsu at Kenrokuen Category:Self-published work",
+     "judged": "approve",
+     "verdict": "Geotagged ~21m from our pin, Commons category names Neagari-no-matsu; exposed root cage is the subject, moss mound, cherry blossom behind, bright daylight, strong colour."
     },
     {
      "title": "File:Majestic Pine Tree Propped by Support Poles in a Lush Japanese Garden.jpg",
@@ -52684,7 +52714,9 @@
      "author": "Bob Linsdell",
      "lat": 21.941636,
      "lng": -159.467316,
-     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Koloa, Hawaii Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Robert Linsdell Category:Photos from Panoramio Category:Photos from Panoramio ID 7508506 Category:Roads in Kauai"
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Koloa, Hawaii Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Robert Linsdell Category:Photos from Panoramio Category:Photos from Panoramio ID 7508506 Category:Roads in Kauai",
+     "judged": "approve",
+     "verdict": "Geotagged on Maluhia Rd inside the corridor. Eucalyptus tunnel closing overhead, sunlit, saturated green, road down the centre, landscape crop fits a wide card."
     },
     {
      "title": "File:Maluhia Road Tree Tunnel, Maluhia Rd, Koloa - panoramio (1).jpg",
