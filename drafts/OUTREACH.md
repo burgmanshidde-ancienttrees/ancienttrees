@@ -18,6 +18,12 @@ API has no links endpoint, so we cannot measure our backlink count
 automatically. The daily digest now prints external referrers (links somebody
 actually clicked) and links to the Links report for a manual read.
 
+## Sent, and waiting on an answer
+
+| Date | Who | What | State |
+|---|---|---|---|
+| 2026-09-04 | getLISBON (contact@getlisbon.com) | Reply to their own mail offering a mutual link and two jacarandas. Both trees published first (lis_034, lis_035), getLISBON cited with a link on each. Asks which two jacarandas stand in the Ajuda garden, a photograph if they have one, and that their PT article link to /pt/lisbon and the EN one to /lisbon. | **Sent.** First backlink offer in 220 mails. |
+
 ## Tier 1, send first: data we cannot use without them
 
 | # | Who | Email | Unlocks | Draft | Why now |
