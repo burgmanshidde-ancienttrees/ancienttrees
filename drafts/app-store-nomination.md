@@ -2,8 +2,15 @@
 
 Fill these into App Store Connect: sidebar > Featuring > Nominations > + > Create Nomination.
 
-## Nomination Name  (47/60)
-New app: find the remarkable old trees near you
+## Nomination Name  (40/60)
+Meet the Oldest Living Tree in Your City
+
+This field is internal: Apple's own text says it helps you recognise the
+nomination later, and the editorial team judges the description instead. It is
+written in their Today-tab voice anyway (verb first, a promise, no category
+prefix), because the first draft read "New app: find the remarkable old trees
+near you" and Hidde was right that it was dry. "Living" is the word doing the
+work: it says the thing is still standing and you can go now.
 
 ## Nomination Type
 App Launch
