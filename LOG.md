@@ -1,6 +1,55 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 (continuation of a window an earlier attempt stopped early with 99 minutes left) - Finished famous-japan batch H1 (+2 trees), dedup cleanup, released 3 stale claims, Eindhoven verify dispatched
+
+Followed the resume instructions: pulled (nothing new), found four standing
+verify claims left by the earlier attempt in this window (`_famous-japan`,
+`_famous-poland`, `_famous-germany`, `eindhoven`), all "by night-run" and
+well inside their expiry. `leads.py --ready` was empty (that pipeline
+doesn't see the `data/research/*-verified.json` staging files the assembly
+line actually uses), so worked through the claims directly.
+
+**Committed uncommitted dedup cleanup the earlier attempt had left in the
+working tree but never pushed:** 3 `_famous-poland` leads (Pulawska Street
+Pear, the Witness Plane, Marysienka's Oak) marked RESOLVED as duplicates of
+already-published war_014/wro_005/gda_005, and a duplicate Hongokuji lead
+removed from `_famous-japan`.
+
+**Finished `_famous-japan` batch H1: two verified-but-unwritten trees.**
+`data/research/famousjapan-batch-h1-verified.json` held full facts for two
+trees with nothing written yet. **Fujikawaguchiko, 3 -> 4 trees:** fjk_004,
+the Ohatsuki Ginkgo of Hongokuji, a fourth member of the town's leaf-seed
+ginkgo cluster (National Natural Monument since 1929, one of only 7 in
+Japan, age a broad legend-derived estimate). **New single-tree place,
+Arita:** art_001, the Great Ginkgo of Izumiyama Benzaiten Shrine, the first
+ginkgo ever nationally designated in Japan (1926), beside the quarry whose
+kaolin started Japanese porcelain; a nearby house was relocated in 2020
+after an arborist flagged falling branches. Corrected Japan's country-page
+city count while there (67 -> 72, already stale before this run). Full
+build (4298 pages), `qa.py` and `preflight.py` all clean.
+
+**`_famous-poland` batch 1 came back empty** (all candidates resolved as
+duplicates, see above); nothing to write, claim released.
+
+**`_famous-germany` batch H1 released with a gap worth flagging.** Its note
+says "8 candidates" but only 5 outcomes are documented (all blocked: one
+misattributed to Germany, four confirmed dead). No record of the other 3
+survives anywhere (no batch brief, no research file), so they cannot be
+finished without redoing the candidate selection from scratch. Released
+rather than guessed at; a future pass should treat this as an ordinary
+fresh dispatch on `_famous-germany`, not as unfinished work to hunt for.
+
+**Dispatched a verify pass on `eindhoven`'s standing claim** (still valid
+from earlier this window, so not re-claimed): a dense walkable cluster of
+~10 Dutch national-register (LRMB) candidates around the Sint Trudo
+cemetery, 1.1-1.3 km from centre. Register-backed, so cheap; running in the
+background as this entry is written.
+
+Health check clear (`health.py`: RUNG 2 clear; the iOS CI failure the
+session-start brief flagged had already been fixed by an earlier attempt's
+own commit). No BLOCKER pending.
+
 ## 2026-09-04 (continuation of a window an earlier attempt stopped early with 81 minutes left) - Recovered the lost Valencia dispatch: +1 (La Carcasa), second batch running
 
 Picked up where the previous attempt in this window left off. It had claimed
