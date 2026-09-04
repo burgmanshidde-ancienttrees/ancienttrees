@@ -68,6 +68,10 @@ Wrote and shipped all three: **fjk_002** (Ohatsuki Ginkgo of Jotakuji Temple, to
 
 Full local build (6155 pages), `scripts/qa.py` and `scripts/preflight.py` both clean. Claim released. `scripts/health.py` rung 2 clear (0 BLOCKER, 1 WARN that names itself as session-only app-test work, not for a night run).
 
+Also found and fixed a bookkeeping gap while there: the 3 published trees' own lead entries in `data/leads/_famous-japan.json` still carried `status: lead`, which would have sent a future verify pass back over the same three trees. Removed them from the leads list per the file's existing convention (noted in the file's own `note` field).
+
+With the writable shelf empty (`leads.py --ready`: 0) and `prepare.py` flagging it, claimed `_famous-japan` again and dispatched a verify agent (background) on the next 12-candidate batch from `famous_demand.py --next --country Japan` (451 combined monthly reads; 6 join already-published cities, 5 are destination-test candidates for their own place, 1 flagged in the brief as possibly a bamboo grove rather than a single tree). Result not in yet; a future continuation finishes the write pass once it lands.
+
 ## 2026-09-04 (session) - The conifer hero is gone, and the smoke gate gets a run a push cannot cancel
 
 Hidde, from the Discover tab: the conifer cover (hero-4, Paul Yong) was too
