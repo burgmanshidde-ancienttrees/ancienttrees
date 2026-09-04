@@ -707,7 +707,8 @@
     "https://commons.wikimedia.org/wiki/File:Chapelle_Innimont.jpg",
     "https://commons.wikimedia.org/wiki/File:Collonges-l%C3%A8s-B%C3%A9vy_(21)_Tilleul_-_01.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "reason": "not a collectible point: a generic type name for dozens of independently planted village limes/elms ordered by Sully circa 1599-1600, not one famous tree. See data/research/famousfrancebatch1-verified.json's blocked entry, 2026-09-04, for the full verify_notes. 'Le Sully de Pesselieres' is a separate open lead, kept."
   },
   {
    "name": "Arburacellu",
