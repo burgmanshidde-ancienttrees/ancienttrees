@@ -1,6 +1,46 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 (session) - A third copy layer, because the pitch register had no check and it shows
+
+You said my copy sucks and asked for a way to fix it forever rather than one
+more rewrite. There is no skill to download; I searched. What this project has
+proved twice is that a note I must remember is nearly worthless and a check
+that runs is not, so I built the check.
+
+**The diagnosis first, because it is one habit.** I write as though winning an
+argument instead of showing something: defining by denying ("not up a mountain,
+just a tree"), proving we are unique by naming competitors, leading with counts
+because a count feels like evidence. All three are moves you make when you
+expect to be doubted. Nobody doubted anything.
+
+**The gap:** TONE_OF_VOICE.md covers tree stories, PRODUCT_COPY.md and
+copycheck.py cover app strings, mailcheck.py covers mail. A PITCH, meaning
+anything a stranger reads to decide whether we are interesting, had nothing.
+
+- `drafts/PITCH_VOICE.md` is the calibration set: PAIRS, the bad line beside
+  the good one, from today's four rewrites. Pairs rather than rules, the way
+  Paris calibrates tone and Cadiz calibrates photographs, because I can imitate
+  a pair and I can argue my way around a rule.
+- `scripts/pitchcheck.py` greps for the six tics. Run on my own worst draft it
+  found all seven problems including your mountain; run on the rewrite it is
+  clean. It reads fenced blocks as the copy and everything else as notes, and
+  it judges each block separately so a list of locale codes is not read as a
+  bad opening sentence.
+- `scripts/hooks/pitch_nudge.py` fires on a message about pitch copy and puts
+  the calibration in front of the first draft, because this failure happens in
+  conversation before a file exists. Narrow: it needs both a pitch word and a
+  writing word, so it stays silent on tree stories and ordinary questions.
+- The pre-push hook runs pitchcheck on changed files in drafts/.
+
+**The nomination is rewritten with it and is clean.** The description now opens
+on the reader ("Most people have walked past a thousand-year-old tree without
+knowing it"), carries the mission and the fact that people add trees
+themselves, and the counts have moved to the last line.
+
+What none of this can do is tell me a sentence is dull, which is most of the
+problem. The last step stays reading it as a stranger who owes us nothing.
+
 ## 2026-09-04 (session) - getLISBON offered a link, the first in 220 mails; two Lisbon trees and per-tree sources shipped before the reply
 
 **Somebody offered us a backlink for the first time.** getLISBON, a Lisbon city

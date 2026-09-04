@@ -51,6 +51,27 @@ while read -r _local_ref local_sha _remote_ref remote_sha; do
 $(git diff --name-only "$base" "$local_sha" 2>/dev/null)"
 done
 
+# PITCH COPY, checked before it can leave (2026-09-04). The nudge hook puts the
+# calibration in front of a first draft; this is the net under it, because the
+# draft that reaches a stranger is the one in a file. Narrow on purpose:
+# OUTREACH.md is a 900-line ledger of history and batches are generated, so
+# neither is copy anybody is writing now.
+PITCH=$(echo "$CHANGED" | grep -E '^(drafts/|APP_STORE_LISTING\.md)' \
+        | grep -vE '(OUTREACH\.md|batches/|HIS_VOICE\.md|PITCH_VOICE\.md|incoming/)' \
+        | grep -E '\.(md|txt)$' | sort -u)
+for f in $PITCH; do
+    [ -f "$f" ] || continue
+    if ! out=$(python3 scripts/pitchcheck.py "$f" 2>&1); then
+        echo ""
+        echo "pre-push: pitchcheck says no about $f"
+        echo "$out" | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. Rewrite, or 'git push --no-verify' if this is"
+        echo "deliberate (a file quoting the bad version, for instance)."
+        exit 1
+    fi
+done
+
 echo "$CHANGED" | grep -qE '^(ios/|site/public/assets/map-style|site/src/components/|scripts/(app|netcheck|icon_check|layout_rules|conventioncheck|darkcheck|map_style_dark))' || exit 0
 
 fail=0

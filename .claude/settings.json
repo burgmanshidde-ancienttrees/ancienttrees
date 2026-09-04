@@ -117,6 +117,15 @@
             "timeout": 5
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 scripts/hooks/pitch_nudge.py 2>/dev/null || true",
+            "timeout": 5
+          }
+        ]
       }
     ]
   }
