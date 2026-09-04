@@ -645,7 +645,7 @@ struct CollectSheet: View {
             // a photograph taken on this screen can end up on that tree's page
             // when the page has none or this one is better. Somebody who is
             // told that only on the other screen has not been told.
-            Text("Your photograph can appear on the tree's page, with your name under it. Delete your account later and your name comes off it, while the picture stays.")
+            Text("Your photograph can appear on the tree's page.")
                 .font(.footnote)
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
@@ -731,7 +731,20 @@ struct CollectSheet: View {
                 // decides to send it, which is the only moment consent means
                 // anything. No toggle beside it, per his 2026-08-24 ruling that
                 // the reader should not carry a choice that is ours.
-                Text("Your photograph can appear on the tree's page, with your name under it. Delete your account later and your name comes off it, while the picture stays. We read every word you send.")
+                //
+                // NO NAME, AND NOT A WORD ABOUT DELETING AN ACCOUNT (Hidde,
+                // 2026-09-04: "hier staat veel te veel tekst, begin hier niet
+                // over delete account, en laten we niet mensen hun naam noemen,
+                // laten we alleen hun fotos gebruiken als ze goed zijn, het kan
+                // mensen afschrikken als hun naam erbij staat").
+                //
+                // This retires the credit half of the 2026-09-02 decision: a
+                // photograph somebody sends is published without a name on it.
+                // The deletion sentence went with it, because it only existed
+                // to explain what happens to a name that will now never be
+                // there, and it raised losing your account at the moment
+                // somebody is deciding to give us something.
+                Text("Your photograph can appear on the tree's page. We read every word you send.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -745,7 +758,7 @@ struct CollectSheet: View {
             HStack(spacing: 8) {
                 Image(systemName: "link")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
-                Text("We also make a private page for it that only somebody with the link can open, so you can find your own tree again. Turn that off any time from the tree's own menu.")
+                Text("We also make a private page for it that only somebody with the link can open. You can turn that off any time.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -818,7 +831,7 @@ struct CollectSheet: View {
             Text("It is in your trees now, with your photograph.")
                 .font(.subheadline)
                 .foregroundStyle(Brand.inkSoft)
-            Text("Your photograph can appear on the tree's page, with your name under it. Delete your account later and your name comes off it, while the picture stays. We read every word you send.")
+            Text("Your photograph can appear on the tree's page. We read every word you send.")
                 .font(.footnote)
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)

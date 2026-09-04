@@ -129,19 +129,27 @@ struct TreeDetail: View {
                     // everywhere in this app, and sharing it made a garden's
                     // entrance fee read as one of our own tiers (2026-08-25).
                     factsBlock
-                    story
-                    // THE VOTE COMES AFTER THE STORY, which is where every
-                    // reference puts it: Google Maps' "Rate & Review" sits
-                    // below the description, AllTrails' reviews below the
-                    // trail, Apple Maps' rating low on the card. The count is
-                    // still high, in the summary line under the name, and
-                    // that count is itself the button (2026-09-04).
+                    // THE WHOLE VOTE SITS HERE, above the story (Hidde,
+                    // 2026-09-04: "de hele interactie moet daarboven zitten en
+                    // niet meer onderaan qua thumbs").
+                    //
+                    // It spent this morning below the story on the reference
+                    // argument that Google Maps and AllTrails put rating under
+                    // description, with a COUNT high in the summary line
+                    // standing in for it. The flaw is in that stand-in: the
+                    // count renders only where a count exists, which is almost
+                    // nowhere yet, so on nearly every tree the top of the page
+                    // offered nothing at all and the only way to answer the
+                    // question was to scroll past the story. A control that is
+                    // invisible until somebody else has used it cannot collect
+                    // the first vote.
                     //
                     // Not on your own tree: a vote on whether YOUR tree is
                     // worth the visit is a question to nobody, and the access
                     // and transport lines are ours to research, not blanks for
                     // you to fill about a tree you already stood at.
                     if mine == nil { WorthItView(tree: tree) }
+                    story
                     if mine == nil, tree.hasAccessInfo { accessBlock }
                     // The "Nobody has photographed this one" card is gone
                     // (Hidde, 2026-08-26: "die mag helemaal weg"). It was a
@@ -711,11 +719,11 @@ struct TreeDetail: View {
     /// ask in the line plus the ask in the cell, the common name plus the
     /// Latin name in one cell).
     private var summaryLine: some View {
+        // The count that used to stand here is gone with the vote's move back
+        // above the story: a reduced voting control forty points above the
+        // full one is the same fact twice, which is the fault this file keeps
+        // recording.
         HStack(spacing: 6) {
-            if mine == nil, counts.up(tree.id) != nil {
-                WorthItCount(tree: tree)
-                dot
-            }
             placeLink
         }
         .font(.subheadline)
@@ -793,12 +801,40 @@ struct TreeDetail: View {
             .map(\.commonName)
     }
 
-    private var place: String {
-        let n = tree.neighbourhood.trimmingCharacters(in: .whitespaces)
-        guard !n.isEmpty else { return tree.city }
+    /// ONE LINE, AND IT IS A PLACE NAME (Hidde, 2026-09-04, from his own phone
+    /// on Old Tjikko: "tekst veel te lang helemaal kut, daar moet zweden staan
+    /// of een stad niet meer"). It read "Fulufjället mountain plateau, reached
+    /// via the Njupe..." and ran off the edge.
+    ///
+    /// The cause is the data rather than the layout: `neighbourhood` holds a
+    /// district on most trees and a sentence on 396 of 2,416 of them, some with
+    /// a research note in brackets after it. A line under the name cannot
+    /// carry either, so anything that is not short enough to BE a district name
+    /// is dropped rather than truncated, and the city stands on its own.
+    ///
+    /// When it does, the country comes with it. "Fulufjället" alone names a
+    /// place almost nobody knows; "Fulufjället, Sweden" is the answer he asked
+    /// for, and it costs a word.
+    static func placeLine(neighbourhood: String, city: String, country: String) -> String {
+        var n = neighbourhood.trimmingCharacters(in: .whitespaces)
+        if let bracket = n.firstIndex(of: "(") {
+            n = String(n[..<bracket]).trimmingCharacters(in: .whitespaces)
+        }
+        // A district name is short: Palms, Plantage, Ajuda, Campo de Ourique.
+        // Past this it is prose, whatever the field is called.
+        if n.count > 28 { n = "" }
+        if n.isEmpty {
+            return country.isEmpty ? city : "\(city), \(country)"
+        }
         // Many registers write the district as "Amsterdam-Centrum", so adding
         // the city gives "Plantage, Amsterdam-Centrum, Amsterdam".
-        return n.localizedCaseInsensitiveContains(tree.city) ? n : "\(n), \(tree.city)"
+        return n.localizedCaseInsensitiveContains(city) ? n : "\(n), \(city)"
+    }
+
+    private var place: String {
+        Self.placeLine(neighbourhood: tree.neighbourhood,
+                       city: tree.city,
+                       country: tree.country)
     }
 
     /// Four facts with their units labelled, the way AllTrails does it and the
@@ -911,11 +947,33 @@ struct TreeDetail: View {
         .brandCard(14)
     }
 
+    /// TWO EQUAL HALVES, and the divider in the middle of them.
+    ///
+    /// It used to hug: the age column was `fixedSize`, so on a tree of yours
+    /// with nothing filled in yet the whole block sat squeezed into the left
+    /// quarter with the divider a centimetre from "Add", and the right half of
+    /// the card was empty (Hidde, 2026-09-04, from his own phone: "alignment
+    /// helemaal kut bij age en species"). Worse than ugly, it MOVED: the
+    /// divider landed wherever that tree's age string happened to end, so no
+    /// two tree pages lined up with each other. Measured after: every tree
+    /// puts its labels at x=36 and x=203.8, whatever its age says.
+    ///
+    /// THE ARGUMENT FOR HUGGING, kept because it is a real cost and not a
+    /// mistake: it gave the species the whole remainder, which let a long name
+    /// like "Pedunculate Oak" sit on one line where equal halves wrap it. What
+    /// makes the wrap affordable is the labels-on-top decision he made the same
+    /// day ("ik ben voor labels on top"): a value that wraps grows downward and
+    /// the labels stay level, so the row keeps its baseline. A moving divider
+    /// had no such consolation.
     private var columns: some View {
         HStack(alignment: .top, spacing: 0) {
-            ageColumn.fixedSize(horizontal: true, vertical: false)
+            ageColumn
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.trailing, 16)
             Divider().frame(height: 44)
             speciesColumn
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 16)
         }
         .padding(.top, 12)
         .padding(.bottom, 4)
@@ -982,7 +1040,6 @@ struct TreeDetail: View {
                                 ? "Add the species"
                                 : "\(tree.commonName), see every one of them")
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     /// "Add", never "Add it": Apple's writing guidance drops unnecessary words
@@ -1008,8 +1065,6 @@ struct TreeDetail: View {
                 .foregroundStyle(Brand.inkSoft)
             value()
         }
-        .padding(.horizontal, 16)
-        .padding(.leading, -16)   // the first column sits flush with the card
     }
 
     /// THE ONE WARNING THIS PRODUCT MUST NEVER SOFTEN, and now in words a
@@ -1054,19 +1109,17 @@ struct TreeDetail: View {
             .overlay(alignment: .top) { hairline }
             .accessibilityIdentifier("tree-location-line")
             .accessibilityLabel("The location is approximate. Show us where it is")
-        } else {
-            HStack(alignment: .firstTextBaseline, spacing: 10) {
-                Image(systemName: "mappin.and.ellipse")
-                Text("Exact location. The pin marks the trunk.")
-                Spacer(minLength: 0)
-            }
-            .font(.footnote)
-            .foregroundStyle(Brand.inkSoft)
-            .padding(.horizontal, 16)
-            .padding(.vertical, 11)
-            .overlay(alignment: .top) { hairline }
-            .accessibilityIdentifier("tree-location-line")
         }
+        // NOTHING AT ALL WHEN THE PIN IS EXACT (Hidde, 2026-09-04: "die hele
+        // tekst mag weg, mensen moeten er vanuit gaan dat het sowieso helemaal
+        // goed is en alleen als we niet zeker zijn staat er een waarschuwing").
+        //
+        // "Exact location. The pin marks the trunk." spent a row on every tree
+        // to say that nothing was wrong, which is the state a reader already
+        // assumes. It also cost the warning its force: a line that appears
+        // whatever the answer is stops being read. Somebody who finds the pin
+        // wrong anyway still has the report button in the top right, which is
+        // on every one of these pages.
     }
 
     private var hairline: some View {

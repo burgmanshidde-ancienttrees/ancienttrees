@@ -83,12 +83,22 @@ def credit_name(display_name):
 
 def photo_block(entry, width, height, reason, today):
     """The photo dict the tree gets. Pure, so it can be tested without a file."""
-    name = credit_name(entry.get("display_name"))
+    # NO NAME ON IT (Hidde, 2026-09-04: "laten we niet mensen hun naam noemen,
+    # laten we alleen hun fotos gebruiken als ze goed zijn, het kan mensen
+    # afschrikken als hun naam erbij staat"). This retires the credit half of
+    # the 2026-09-02 decision, and it moves in the same direction as the rule
+    # that has stood since 2026-08-11: a person who sends us something is not
+    # published. A named photographer who ASKED to be credited is a different
+    # case and keeps their name (images.ts, isAGift): they were written to,
+    # they answered, and the name is the whole of what they get.
+    #
+    # The account id stays, because the takedown sweep needs it and it is not
+    # a name.
     fname = f"{entry['tree_id']}-{slugify(entry['tree_name'])}.jpg"
     return {
         "url": f"{BASE_URL}/photos/{fname}",
-        "license": f"Provided by {name} through the Ancient Trees app, all rights reserved",
-        "attribution": name,
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": None,
         "status": "approved",
         "width": width,
         "height": height,
@@ -98,8 +108,9 @@ def photo_block(entry, width, height, reason, today):
         "note": (f"Photographed by a reader and sent through the app "
                  f"({(entry.get('taken_at') or '')[:10] or 'date unknown'}); a viewing pass "
                  f"approved it on {today}: {reason.strip() or 'meets the Cadiz standard'}. "
-                 f"Not an open licence: ask before reuse elsewhere. Comes off the page "
-                 f"when the account is deleted (scripts/photo_takedown.py)."),
+                 f"Not an open licence: ask before reuse elsewhere. No name is printed "
+                 f"beside it (2026-09-04). Comes off the page when the account is "
+                 f"deleted (scripts/photo_takedown.py)."),
     }
 
 
