@@ -1666,8 +1666,13 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
 .tree-noph.tree-hero { margin: 0 0 1.75rem; }
 
 @media (max-width: 760px) {
+  /* Full bleed off the CONTAINER's own padding, never off 100vw. vw counts the
+     scrollbar, so on any browser that draws a classic one this hero stood 15px
+     wider than the page and pushed the whole document sideways; the smoke
+     test's 375px fit check is what saw it. iOS overlays its scrollbar, which is
+     why a phone never showed the fault the desktop had. */
   .tree-photo.tree-hero,
-  .tree-noph.tree-hero { margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); width: 100vw; }
+  .tree-noph.tree-hero { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); width: auto; }
   .tree-photo.tree-hero img { border-radius: 0; height: 280px; }
   .tree-photo.tree-hero figcaption { padding: 0 1.1rem; }
 }
