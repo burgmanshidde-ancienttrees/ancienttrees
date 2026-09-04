@@ -1,0 +1,74 @@
+{
+  "city": "Arita",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Arita is the town that started Japanese porcelain, after kaolin clay was found in the hills above it in the early 1600s. One tree predates all of it: the Great Ginkgo of Izumiyama Benzaiten Shrine, the first ginkgo the Japanese government ever designated a National Natural Monument, in 1926. Estimated at 850 to over 1,000 years old, eight metres round at chest height. Free, on open shrine ground beside the old kaolin quarry, ten minutes' walk from Kamiarita Station.",
+  "meta_description": "The Great Ginkgo of Arita, Japan: 850 to 1,000+ years old, the first ginkgo ever nationally protected, beside the quarry that started Japanese porcelain.",
+  "question_meta": "Arita's mapped tree is the Great Ginkgo of Izumiyama Benzaiten Shrine, estimated at 850 to over 1,000 years old.",
+  "question_answer": "Arita's mapped tree is the Great Ginkgo of Izumiyama Benzaiten Shrine (Ichikishima Shrine), estimated at 850 to over 1,000 years old from its size rather than a documented planting date. It was the first ginkgo in Japan ever designated a National Natural Monument, in 1926.",
+  "question_context": "The tree stands on the grounds of Izumiyama Benzaiten Shrine, also called Ichikishima Shrine, directly beside the Izumiyama quarry where the discovery of kaolin clay in the early 1600s started Japan's porcelain industry. The National Natural Monument designation dates to 20 October 1926, the first time the status was ever given to a ginkgo; nineteen more have been designated since. During the Edo period a customs checkpoint stood under its canopy, watching the road for anyone smuggling porcelain out of the district untaxed, and local tradition also credits the tree with shielding neighbouring houses from an 1828 typhoon fire. In September 2020 a house 20 metres away was relocated after a 2018 arborist assessment found branches heavy enough to be a hazard, and the tree is now cable-braced. The trunk measures about 8 metres round at chest height, closer to 11 at the aerial-root-swollen base; the crown rises around 40 metres and spreads 31. Sources disagree on whether the tree is male or female. Shrine grounds are free and open, about 10 minutes' walk from Kamiarita Station, or 10 minutes by car from Arita Interchange.",
+  "hero_tree_id": "art_001",
+  "oldest_tree_id": "art_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It was the first ginkgo in Japan ever designated a National Natural Monument, in 1926, and it stands beside the quarry whose kaolin clay started the Arita porcelain industry in the early 1600s."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Estimated at 850 to over 1,000 years, a broad range derived from the tree's size rather than a documented planting date."
+    },
+    {
+      "q": "Is it male or female?",
+      "a": "Sources disagree. We haven't resolved it; if you know, tell us."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands on the open grounds of Izumiyama Benzaiten Shrine, with no fee or restriction."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About 10 minutes' walk from Kamiarita Station on the JR Sasebo Line, or 10 minutes by car from Arita Interchange."
+    }
+  ],
+  "trees": [
+    {
+      "id": "art_001",
+      "name": "The Great Ginkgo of Arita",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "850 to over 1,000 years",
+      "age_min": 850,
+      "age_max": 1000,
+      "girth_cm": 800,
+      "height_m": 40.0,
+      "location": {
+        "address": "1-13 Izumiyama 1-chome, Arita, Nishimatsuura District, Saga Prefecture, Japan (grounds of Izumiyama Benzaiten Shrine, also known as Ichikishima Shrine)",
+        "latitude": 33.193194,
+        "longitude": 129.905167,
+        "neighbourhood": "Izumiyama, Arita"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/有田のイチョウ",
+        "https://www.town.arita.lg.jp/dynamic/info/pub/detail.aspx?c_id=26&id=64",
+        "https://kunishitei.bunka.go.jp"
+      ],
+      "access": "Free, on the open grounds of Izumiyama Benzaiten Shrine, no fee or restriction.",
+      "transport": "About 10 minutes' walk from Kamiarita Station on the JR Sasebo Line, or 10 minutes by car from Arita Interchange.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "notes": "Girth given two ways in ja.wikipedia: root/base circumference approx 11m (aerial-root-swollen, not the trunk), trunk girth at breast height approx 8m, recorded as girth_cm 800. Gender disputed between sources (male vs female), left as an open question for the page rather than guessed. Coordinates use ja.wikipedia's own corrected reading; the official survey-map pin sits over 100m off.",
+      "story": "In September 2020 the house next door moved twenty metres down the road, because a 2018 arborist survey found this ginkgo dropping branches large enough to worry about. The tree stayed, now cable-braced, and it has stood on this spot since long before Arita became known worldwide for porcelain. In 1926 it earned the very first National Natural Monument designation the Japanese government ever gave to a ginkgo, ahead of nineteen more that have followed since.\n\nIt shades Izumiyama Benzaiten Shrine, right beside the Izumiyama quarry where the discovery of kaolin clay in the early 1600s started Japan's porcelain industry. During the Edo period a customs checkpoint stood under its canopy, watching the road for anyone trying to move porcelain out of the district without paying tax. Local tradition also credits the tree with shielding neighbouring houses from a fire whipped up by an 1828 typhoon.\n\nIts scale has outgrown its own measurements. The trunk runs eight metres round at chest height; the base, swollen with the aerial roots old ginkgos grow, measures closer to eleven. Height is about forty metres, crown spread thirty-one. Sources even disagree on whether it is male or female, an open question for anyone who looks closely enough to settle it. The age, 850 to over 1,000 years, comes from its size rather than any record of planting.",
+      "best_time": {
+        "months": [11],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns gold"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

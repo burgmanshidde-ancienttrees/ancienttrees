@@ -2,8 +2,8 @@
   "city": "Fujikawaguchiko",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Fujikawaguchiko maps three trees, all kept alive by sacred ground rather than a park department. Shoji no Osugi is Suwa Shrine's guardian cedar by Lake Shoji, roughly 1,200 years old and twelve metres round. A short drive south stand two of Japan's seven nationally protected Ohatsuki ginkgos, a leaf-seed mutation: one flattened by a 2018 typhoon and still fruiting, the other the only male of the seven. Three trees so far, each verified on its own merits.",
-  "meta_description": "Fujikawaguchiko's three mapped trees: Shoji no Osugi, a 1,200-year cedar by Lake Shoji, and two of Japan's seven protected Ohatsuki ginkgos nearby.",
+  "intro": "Fujikawaguchiko maps four trees, all kept alive by sacred ground rather than a park department. Shoji no Osugi is Suwa Shrine's guardian cedar by Lake Shoji, roughly 1,200 years old and twelve metres round. A short drive south stand three of Japan's seven nationally protected Ohatsuki ginkgos, a leaf-seed mutation: one flattened by a 2018 typhoon and still fruiting, another the only male of the seven, and a third said to have been planted by the monk Nichiren himself. Four trees so far, each verified on its own merits.",
+  "meta_description": "Fujikawaguchiko's four mapped trees: Shoji no Osugi, a 1,200-year cedar by Lake Shoji, and three of Japan's seven protected Ohatsuki ginkgos nearby.",
   "question_meta": "Fujikawaguchiko's oldest mapped tree is Shoji no Osugi, a sacred cedar roughly 1,200 years old at Suwa Shrine by Lake Shoji.",
   "question_answer": "Fujikawaguchiko's oldest mapped tree, of two, is Shoji no Osugi, a Japanese cedar estimated at roughly 1,200 years old, standing as the sacred tree of Suwa Shrine in the Shoji district by Lake Shoji.",
   "question_context": "Twelve metres round the trunk and forty metres tall, this is one of the largest cedars in Yamanashi, and it stands in a shrine yard rather than deep forest. Suwa Shrine keeps it as its goshinboku, the sacred tree of the place. Shrine trees get left alone, which is how a cedar reaches this size in a valley people have lived in for centuries. Locally it goes by Sennen-sugi, the Thousand-Year Cedar. The estimate behind that name is roughly 1,200 years, a broad figure arrived at from the tree's size rather than from anything counted, so treat the nickname as the rounder version of an already round number. On 31 January 1928 the state made the protection official and designated it a National Natural Monument. The setting is the other half of the appeal: Shoji is one of the Fuji Five Lakes, so the tree stands inside one of the most photographed landscapes in Japan while the mountain takes the attention. The shrine grounds are open and free, and there is nothing between a visitor and the trunk.",
@@ -119,6 +119,44 @@
         "months": [11],
         "kind": "autumn colour",
         "label": "November, when the whole crown turns butter gold and drops in a day or two"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "fjk_004",
+      "name": "The Ohatsuki Ginkgo of Hongokuji",
+      "species": "Ohatsuki Ginkgo, a leaf-seed variant (Ginkgo biloba var. epiphylla)",
+      "age_estimate": "roughly 700 years",
+      "age_min": 600,
+      "age_max": 750,
+      "girth_cm": 540,
+      "height_m": 24.0,
+      "location": {
+        "address": "2271 Shimoyama-honcho, Shimoyama, Minobu, Minami-Koma District, Yamanashi Prefecture, Japan (grounds of Hongokuji Temple, between the guardian gate and the main hall)",
+        "latitude": 35.413825,
+        "longitude": 138.441118,
+        "neighbourhood": "Shimoyama, Minobu, about 750 metres from fjk_002 (Jotakuji) and 1.65 km from fjk_003 (Yagisawa), the same Shimoyama-area cluster of nationally designated Ohatsuki ginkgos"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E6%9C%AC%E5%9B%BD%E5%AF%BA%E3%81%AE%E3%82%AA%E3%83%8F%E3%83%84%E3%82%AD%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+        "https://kunishitei.bunka.go.jp/heritage/detail (Agency for Cultural Affairs national designation database, designated 1929-04-02)",
+        "https://www.jalan.net/kankou/spt_19365ac2100117549/ (access corroboration, Hadakajima Station 20 min walk)"
+      ],
+      "access": "Free, on the grounds of Hongokuji Temple between the guardian gate and main hall; visited as a village landmark alongside the temple.",
+      "transport": "About 20 minutes' walk from Hadakajima Station on the JR Minobu Line.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "notes": "DUPLICATE CHECK: genuinely distinct from fjk_002 (Jotakuji, ~750m away) and fjk_003 (Yagisawa shrine, ~1.65km away), different temple, address and designation record; ja.wikipedia's own article on this tree cross-references the Jotakuji ginkgo as a separate, comparable specimen several hundred metres north. Age is a legend (Nichiren planting the tree in 1282), not a documented record, kept as a broad derived range rather than a precise figure.",
+      "story": "Legend says the monk Nichiren planted this ginkgo himself during an overnight stay in 1282, on his way through the valley that now bears his sect's temples across Minobu. That would put the tree near 750 years old, and it is tradition rather than a planting record, so the age here stays a broad estimate rather than a precise one.\n\nWhat is measured is the mutation. Most ginkgos carry their seeds on a stalk; this one, like only six others in all of Japan, grows them straight out of the leaf blade itself. Botanists first wrote the trait up in July 1891, and the government made the protection official in April 1929. Three of the seven nationally designated Ohatsuki ginkgos in the country stand within two kilometres of each other here in Minobu, an odd concentration nobody has fully explained.\n\nThe trunk runs 5.4 metres round at chest height and 6.42 at the base, rising to a 24-metre crown with comparatively few of the milky, nipple-like growths that mark many old ginkgos. It stands between the guardian gate and the main hall of Hongokuji Temple, directly on the Nichiren pilgrim route, with its two Ohatsuki siblings close enough to visit in the same afternoon: one 750 metres north at Jotakuji, the other a further kilometre on at a shrine in Yagisawa.",
+      "best_time": {
+        "months": [11],
+        "kind": "autumn colour",
+        "label": "November, when the crown turns gold like its two Ohatsuki siblings nearby"
       },
       "photo": {
         "url": null,
