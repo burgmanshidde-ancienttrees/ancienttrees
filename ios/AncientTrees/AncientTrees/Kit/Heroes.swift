@@ -4,6 +4,11 @@
 // Hidde, 2026-08-29, having picked four out of six candidates: "B D E en F zijn
 // heel vet kunnen we die afwisselend tonen als je de app opent", and then, to
 // be exact about it: "als in elke keer als je de app opent toon je een andere".
+// Down to three on 2026-09-04: the conifer (hero-4, Paul Yong) read as a
+// tangle rather than a tree at this size ("deze cover foto van deze den vind
+// ik te rommelig"), so it left both Discover and the opening cover, which
+// share this list. The file is gone from Heroes/ as well; nothing else
+// referenced it.
 //
 // NOT ON THE LAUNCH SCREEN, which is where the words "as you open the app"
 // point first. iOS launch screens are static by design and Apple's own
@@ -14,10 +19,10 @@
 // picture belongs, at the top of the browse tab, which is also exactly what
 // ancienttrees.app does with its own hero.
 //
-// IN ORDER RATHER THAN AT RANDOM. Random repeats: on four images a shuffle
-// shows you the same one twice in a row a quarter of the time, which is the
+// IN ORDER RATHER THAN AT RANDOM. Random repeats: on three images a shuffle
+// shows you the same one twice in a row a third of the time, which is the
 // one thing a rotation is supposed to avoid. A counter in UserDefaults steps
-// through them, so opening the app four times shows all four.
+// through them, so opening the app three times shows all three.
 //
 // The photographs are the free Unsplash License, which asks for no visible
 // credit. The names are recorded here because hard rule 4 says an attribution
@@ -28,7 +33,6 @@
 //   hero-1  Colin Lloyd       unsplash.com/photos/U5pP4ugOhFo
 //   hero-2  Cheng Shi Song    unsplash.com/photos/Uewfi5cV_-w
 //   hero-3  Kaijun Zhu        unsplash.com/photos/GBbLT1HU_IA
-//   hero-4  Paul Yong         unsplash.com/photos/XnnDfVLKrL8
 //
 // They are DECORATION and they are never labelled as a tree we map, which is
 // the line hard rule 2 draws: a photograph beside a tree's name is evidence,
@@ -39,7 +43,7 @@ import Foundation
 import UIKit
 
 public enum Heroes {
-    public static let names = ["hero-1", "hero-2", "hero-3", "hero-4"]
+    public static let names = ["hero-1", "hero-2", "hero-3"]
 
     private static let key = "hero.index.v1"
 
