@@ -43,9 +43,15 @@ def full_image(cand):
 
     Commons thumb urls carry the sweep's own tracking query and a width bucket;
     img_srcset() picks the width at render time, so what belongs in the file is
-    the original. iNaturalist has no such original, so its medium stands."""
+    the original. iNaturalist has no such original, so its medium stands.
+
+    photo_hunt.py's sweep writes the thumb.wikimedia.org CDN hostname (the API's
+    own imageinfo response), not upload.wikimedia.org, so both are recognised
+    here. 25 already-approved trees were stored as a capped 960px thumbnail
+    because this check only matched the second: caught 2026-09-04, worth a
+    one-off sweep to re-derive their originals from the stored url."""
     thumb = cand.get("thumb") or ""
-    if "upload.wikimedia.org" in thumb and "/thumb/" in thumb:
+    if ("upload.wikimedia.org" in thumb or "thumb.wikimedia.org" in thumb) and "/thumb/" in thumb:
         base = thumb.split("?")[0]
         parts = base.split("/thumb/", 1)[1].rsplit("/", 1)[0]
         return "https://upload.wikimedia.org/wikipedia/commons/" + parts
