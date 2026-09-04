@@ -65,6 +65,21 @@ than the page and shoved the document sideways. iOS overlays its scrollbar,
 which is why the phone it was designed on never showed it. Full bleed now comes
 off the container's own padding. Smoke is green.
 
+**Then he looked at it and corrected three things**, all shipped the same
+afternoon. The bar pill was too big, so it is drawn at 36 and tapped at 44
+through a ::before that reaches past its edges, which is what the menu button
+beside it already does and what the smoke test's SMALL check reads on purpose.
+The hero button replaced the explore link instead of standing beside it, and is
+centred, which is komoot's hero exactly. And it says "Get the app" where the
+bar says "Download the app", so one screen no longer carries the same words
+twice.
+
+That retires .hero-link and with it the 2026-08-20 rule that the hero's action
+must be text and never a pill. Worth saying plainly: the rule was not drifted
+past, he removed the control it protected. The CSS records the reversal and
+keeps the half that still holds, which is that this row never becomes two
+controls of competing weight again.
+
 FOR HIDDE: another session or a night run was committing this same checkout
 while I worked, and it swept my half-finished bar and hero edits into its own
 commit (cef107a9, "Website tree page"). Nothing was lost and the CSS followed
