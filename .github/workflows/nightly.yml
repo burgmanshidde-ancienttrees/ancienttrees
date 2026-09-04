@@ -306,6 +306,31 @@ jobs:
             git push
           fi
 
+      - name: Read the photographs readers sent through the app
+        # The middle of the loop, built 2026-09-04. The app has said since
+        # 2026-09-03 that a photograph somebody sends can appear on the tree's
+        # page with their name under it, and the share link lets them see their
+        # own. Nothing read those photographs, so none had ever reached a page.
+        # This fetches them, matches each to a tree we map (the app's tree_id,
+        # else the nearest published tree within 30 m), downloads the file into
+        # out/ where the run can LOOK at it, and files anything matching nothing
+        # as a lead rather than a page. The judging is the run's (rung 1), and
+        # scripts/sightings_publish.py applies its verdicts. Before the budget
+        # gate, like the takedown above: somebody's photograph should not wait
+        # on there being minutes left to research a city.
+        continue-on-error: true
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          python3 scripts/sightings_inbox.py
+          if ! git diff --quiet -- data/sighting-queue.json data/sightings-processed.json data/leads; then
+            git config user.name "claude[bot]"
+            git config user.email "41898282+claude[bot]@users.noreply.github.com"
+            git add -A data/sighting-queue.json data/sightings-processed.json data/leads
+            git commit -m "Photographs readers sent, queued for a look"
+            git push
+          fi
+
       # Is there any budget to spend before we spend any orienting? Added
       # 2026-09-01. The budget check already existed, and it ran in the wrong
       # place: only BETWEEN attempts, never before the first. So a knock

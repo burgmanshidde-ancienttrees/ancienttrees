@@ -1,6 +1,57 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 (session) - The reader-photograph loop is closed: the middle of it exists now
+
+Hidde, shown that no reader photograph had ever reached a page: "We zijn nu
+toch in staat om een share link te maken... Onze AI kijkt ernaar, en als de AI
+vindt dat dit past in het plaatje... dan wordt die totaal gepubliceerd. Is die
+loop nog niet rond?" He was right that both ENDS were closed and I had said
+otherwise: the app has said since 2026-09-03 that a photograph can appear on
+the tree's page with your name under it, the share link works, and
+photo_takedown.py keeps the deletion promise. The middle was empty. Nothing
+read those photographs, so not one had reached a page. Built today, with his
+"go".
+
+**`scripts/sightings_inbox.py`** runs on every knock, before the budget gate
+(a photograph somebody walked to a tree to take should not wait on there being
+minutes left). It fetches each shared sighting carrying a photograph, matches
+it to a tree we map (the app's own tree_id, else the nearest published tree
+within 30 m), downloads the file into out/sightings/ where the run can LOOK at
+it, scores its light where sips exists, and writes data/sighting-queue.json.
+Anything matching nothing we map goes to data/leads/_sightings.json as a lead
+for the normal pipeline, never straight to a page.
+
+**`scripts/sightings_publish.py`** applies a viewing pass's verdicts, one
+process at a time like photo_verdicts.py. An approval rotates the pixels
+upright and drops the EXIF tag, resizes to 1600, writes the block with
+`source: "contributor"` AND `contributor_user_id` (preflight refuses one
+without the other, and that id is the whole of the deletion promise), credits
+the DISPLAY NAME and never an email, removes the vendored copies of whatever
+it replaced, and mails the reader that it is live with one question back about
+the next tree.
+
+**Rung 1 in CLAUDE.md now names it**, and prepare.py prints the queue at the
+top of every run, because the queue is written by a workflow step the run
+never sees.
+
+**Verified end to end, not just built.** 9 unit tests on the matching and the
+photo block. A 3000x2000 file with EXIF orientation 6 comes out 1067x1600 with
+the tag gone (qa refuses a self-hosted file that would turn in the browser).
+A synthetic approval onto a real Amsterdam tree passed preflight with 0
+problems, and photo_takedown.py then SAW it, resolved the account and reported
+"1 photograph, 1 account, 0 to take down". Reverted after.
+
+**One real sighting exists** and the loop handled it correctly: a tree added
+near Baarn on 09-03, 409 m from anything we map, so it is a lead rather than a
+guess.
+
+**A narrow mailcheck exemption**, because the App Store rule of 2026-09-03 does
+not fit a reader writing from inside the app: a draft may declare
+`audience: app user` in its HEADER, above the --- separator, so it never
+reaches the reader. Checked that an ordinary draft still fails without the
+link.
+
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 

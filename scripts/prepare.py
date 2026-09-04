@@ -150,6 +150,24 @@ def pipeline_status():
     staged = sorted(glob.glob(os.path.join(ROOT, "data", "research", "*-register-candidates.json")))
     verified = sorted(glob.glob(os.path.join(ROOT, "data", "research", "*-verified.json")))
     print("\nTHE LINE, stage by stage:")
+    # Rung 1 before any of the stages below it, because a photograph somebody
+    # walked to a tree to take outranks anything the machine found by itself.
+    # Printed here rather than left to memory: the queue is written by a
+    # workflow step the run never sees, so without this line the only way to
+    # learn it is not empty is to think of asking.
+    try:
+        waiting_photos = json.load(open(os.path.join(ROOT, "data", "sighting-queue.json"),
+                                        encoding="utf-8")).get("queue", [])
+    except Exception:
+        waiting_photos = []
+    if waiting_photos:
+        print("  *** %d reader photograph(s) waiting for your eyes (RUNG 1). LOOK at the "
+              "files in out/sightings/, then apply with scripts/sightings_publish.py."
+              % len(waiting_photos))
+        for e in waiting_photos[:10]:
+            print("      %s  %s  match=%s  the tree has: %s"
+                  % (e.get("tree_id"), (e.get("tree_name") or "")[:38],
+                     e.get("match"), e.get("current_photo")))
     print("  staged for verify : %d file(s)  %s" % (
         len(staged), " ".join(os.path.basename(p).split("-register")[0] for p in staged) or "(empty)"))
     # Count TREES that still need a story, not FILES that exist. A verified

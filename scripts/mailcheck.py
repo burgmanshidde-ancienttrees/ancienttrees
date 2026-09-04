@@ -307,6 +307,17 @@ def check_app_link(path, text, body):
     for addr in NO_APP_LINK:
         if addr in text:
             return []
+    # And the other way somebody can have no use for the link: they are
+    # already holding the app. From 2026-09-04 a reader who sends a photograph
+    # through the app gets a mail back saying it is on the tree's page
+    # (scripts/sightings_publish.py), and inviting them to download what they
+    # just used would read as not having noticed who they are. The declaration
+    # sits in the draft's HEADER, above the --- separator, so it never reaches
+    # the reader and a human reading the file can see the claim being made.
+    # Deliberately narrow: it exempts this one line and nothing else in here.
+    header = BODY_SPLIT.split(text, maxsplit=1)[0]
+    if re.search(r"^audience:\s*app user\s*$", header, re.M | re.I):
+        return []
     # The instruction is dated, so it cannot apply backwards, and the ledger
     # cannot tell us which old drafts still owe a send: his_reply_date is
     # filled on 22 of 31 rows and Sonsbeek is undated while sitting in

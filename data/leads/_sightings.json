@@ -1,0 +1,21 @@
+{
+ "_note": "Trees readers added through the app that match nothing we map. Leads for the normal pipeline, never an import: a page needs the bar every tree meets. The photograph sits in the private sightings bucket under the path recorded here; the display name is not recorded, because a lead is not a credit.",
+ "leads": [
+  {
+   "sighting_id": "e3fa3f6b-e016-42f5-999a-e01ce41e82a0",
+   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+   "name": "A tree I found",
+   "species": null,
+   "age": null,
+   "note": "",
+   "latitude": 52.2070715558915,
+   "longitude": 5.28865342686101,
+   "taken_at": "2026-09-03T14:40:37+00:00",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/E3FA3F6B-E016-42F5-999A-E01CE41E82A0.jpg",
+   "nearest_published_m": 409,
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-09-04"
+  }
+ ]
+}
