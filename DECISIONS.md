@@ -1,5 +1,46 @@
 # Decisions
 
+## 2026-09-04 - A published photograph outlives the account, the person does not
+
+Hidde, on being told that deleting an account took a reader's published
+photograph off the page with it: "als de boom een verrijking van de database is
+dan moeten we de info houden maar loskoppelen van een account - de fotos zijn
+van ons." Then, in the same breath: "en dit moet in onze gebruiksvoorwaarden."
+
+**The ruling, and the one correction to it.** Keeping the picture and dropping
+the person is right and is what every comparable platform does. "The photos are
+ours" is not, and I did not write it that way: copyright stays with whoever
+took the photograph, and it cannot move to us by our saying so. What we need,
+and now have, is a LICENCE that survives deletion. /terms says both things in
+the same breath: permission to show a published photograph stays, and "you keep
+ownership of your photographs... we do not become the owner by publishing one."
+Somebody who wants the picture itself gone sends a privacy request and it goes.
+
+**The split is the whole idea.** A name under a photograph is a person, so it
+comes off. A photograph of a tree is not a person; it is often the only picture
+of that tree, on a page that is worse without it. Same for a tree somebody
+added: the tree is a fact and stays, the account behind it goes. This is also
+the cleaner answer under the GDPR than the old one, because what the right of
+erasure reaches is the personal data, and after an unlink there is none left.
+
+**What changed.** /terms and /privacy both rewritten, in three places between
+them, and the sentences that promised the opposite are gone. The app's consent
+line, on all three screens where somebody sends a photograph, now says it
+before they send: "Delete your account later and your name comes off it, while
+the picture stays." photo_takedown.py stopped deleting and now unlinks: the
+name becomes "A reader of Ancient Trees", the account id goes, `unlinked` is
+set so nothing asks Supabase about that account again, and the file stays. It
+sweeps the leads on the same rule, because data/leads sits in this repository
+and an id left there outlives the account exactly the way a name would.
+`unlinked` is in the content schema (zod strips what it does not name) and
+preflight accepts a contributor photograph without an id only when it is set.
+
+**Timing, and why this was free today.** A photograph given under the old
+sentence was given under a promise, and a rule written afterwards does not
+reach backwards, which is the same rule this file recorded on 2026-09-02. There
+are ZERO published reader photographs, so nobody is caught by the change. The
+app's line travels with the next build; the site says it from today.
+
 ## 2026-09-02 - Walks leave the website, nothing lives on the device, and the profile is the app's profile
 
 Four rulings in one morning, and three of them turned out to have one cause.

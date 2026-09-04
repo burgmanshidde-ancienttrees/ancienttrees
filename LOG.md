@@ -1,6 +1,46 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 (session) - A published photograph now outlives the account; the person is unlinked from it
+
+Your ruling, and it changed what deletion does. Until today deleting an
+account DELETED a reader's published photograph, which is what /terms
+promised. Now the picture stays and you come off it.
+
+One correction I did not take silently: the photographs do not become ours.
+Copyright stays with whoever took them, and no wording of ours moves it. What
+/terms now carries is a licence that survives deletion, which gives you exactly
+what you asked for, alongside the sentence that we do not become the owner by
+publishing one. Anyone who wants the picture itself gone asks, and it goes.
+
+**Written into the voorwaarden, as you said.** /terms in three places and
+/privacy in two: the licence on a published photograph survives deletion and is
+the only thing that does; ownership never transfers; deleting takes your
+address, collection, sightings, name and picture, and leaves a published
+photograph with your name off it. The old sentences promising the opposite are
+gone from both pages.
+
+**And in the app, before somebody sends.** All three consent lines now read
+"Delete your account later and your name comes off it, while the picture
+stays." That travels with the next build; the site says it from today.
+
+**The mechanism.** photo_takedown.py unlinks instead of deleting: the credit
+becomes "A reader of Ancient Trees", the account id goes, `unlinked` is set so
+the sweep never asks Supabase about that account again, and the file stays on
+disk. It now sweeps data/leads on the same rule, because an id left in this
+repository outlives the account the way a name on a page would. `unlinked` is
+in the content schema, since zod strips what it does not name, and preflight
+accepts a contributor photograph without an id only when the flag is set.
+
+**Tested, not assumed:** published a synthetic photograph onto a real Amsterdam
+tree, ran the sweep against a deleted-account id, and confirmed the picture and
+its file stayed while the name, the id and any further Supabase question went.
+preflight clean at 362 cities. Reverted after.
+
+**Free today, and only today.** A photograph given under the old sentence was
+given under that promise and a new rule does not reach backwards. There are
+zero published reader photographs, so nobody is caught by the change.
+
 ## 2026-09-04 (session) - The reader-photograph loop is closed: the middle of it exists now
 
 Hidde, shown that no reader photograph had ever reached a page: "We zijn nu

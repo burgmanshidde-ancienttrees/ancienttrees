@@ -26,6 +26,14 @@ const photoSchema = z
     // preflight refuses one without the other in either direction.
     source: z.enum(["contributor"]).nullable().optional(),
     contributor_user_id: z.string().nullable().optional(),
+    // Set when the account behind a published photograph was deleted
+    // (2026-09-04). The picture stays under the licence in /terms and the
+    // person comes off it, so this is the state where a contributor photo
+    // legitimately has no contributor_user_id. Named here for the same reason
+    // as the two above: zod strips what it does not name, and a stripped flag
+    // would send photo_takedown.py back to Supabase every night to ask about
+    // an account that is already gone.
+    unlinked: z.boolean().nullable().optional(),
   })
   .partial()
   .optional();
