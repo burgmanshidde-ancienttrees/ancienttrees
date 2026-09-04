@@ -1159,13 +1159,24 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .walk-pick-name { font-size: 13.5px; font-weight: 600; }
 .walk-pick-meta { font-size: 11.5px; opacity: 0.75; white-space: nowrap; }
 .walk-caret { font-size: 9px; margin-left: 0.25rem; }
-.tree-noph { display: flex; gap: 1.1rem; align-items: center; margin: 0 0 1.5rem;
-  padding: 1.1rem 1.25rem; background: var(--surface); border-radius: 14px; }
-.tree-noph-art { flex-shrink: 0; width: 62px; height: 62px; color: var(--moss);
-  display: inline-flex; align-items: center; justify-content: center; opacity: 0.9; }
-.tree-noph-art svg { width: 100%; height: 100%; fill: currentColor; }
-.tree-noph figcaption { font-size: 13.5px; line-height: 1.45; color: var(--ink-mid); }
-.tree-noph figcaption b { display: block; color: var(--ink); font-size: 15px; margin-bottom: 2px; }
+/* A TREE NOBODY HAS PHOTOGRAPHED, drawn the way the app draws it (Hidde,
+   2026-09-04: "neem app opbouw als voorbeeld, weg met die grijze
+   achtergrond"). It was a grey card with the drawing on the left and a
+   paragraph beside it, which made the top of the page a box of explanation
+   where every other tree opens with a picture.
+
+   Now it takes the hero's own shape and the hero's own space: the species
+   drawn large on the page's ground, and the sentence under it as a caption,
+   which is where a photo credit sits. The drawing is obviously a drawing, and
+   the line under it says in plain words that no photograph exists, so nothing
+   here reads as a substitute for the real thing. */
+.tree-noph { display: block; margin: 0 0 1.5rem; padding: 0; background: none; }
+.tree-noph-art { display: flex; align-items: center; justify-content: center;
+  height: 220px; color: var(--moss); opacity: 0.55; }
+.tree-noph-art svg { width: 120px; height: 120px; fill: currentColor; }
+.tree-noph figcaption { font-size: 13px; line-height: 1.45; color: var(--ink-light);
+  padding: 0.5rem 0 0; }
+.tree-noph figcaption b { display: none; }
 .route-name { display: block; font-size: 12.5px; font-weight: 600; opacity: 0.9; }
 /* Not on the chosen walk: dimmed, never hidden. Every tree stays in the
    document for a reader and a crawler; only the emphasis moves. */
@@ -1664,6 +1675,11 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
 .tree-photo.tree-hero img { height: 300px; object-fit: cover; border-radius: 10px; }
 .tree-photo.tree-hero figcaption { margin-top: 0.4rem; }
 .tree-noph.tree-hero { margin: 0 0 1.75rem; }
+/* The hero's full-bleed treatment applies to the drawing too, so a page with
+   no photograph has the same shape as a page with one. */
+@media (max-width: 760px) {
+  .tree-noph.tree-hero .tree-noph-art { height: 200px; }
+}
 
 @media (max-width: 760px) {
   /* Full bleed off the CONTAINER's own padding, never off 100vw. vw counts the
