@@ -1,6 +1,63 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 (continuation of a window an earlier attempt stopped early with 81 minutes left) - Recovered the lost Valencia dispatch: +1 (La Carcasa), second batch running
+
+Picked up where the previous attempt in this window left off. It had claimed
+`valencia` and dispatched a verify agent, but the agent was a background
+task tied to that attempt's own session: when the attempt ended, the agent
+never delivered and no `data/research/valencia-verified.json` existed on
+disk. The claim was still standing (2.5 hours old, well inside its window),
+so this was the same unfinished job, not a fresh one.
+
+Health check (rung 2) was clear: the iOS CI failure the session-start brief
+flagged had already been fixed by the earlier attempt's own commit
+(f804ef9b). `leads.py --ready` was empty (0 READY), so there was no
+write-pass work waiting either.
+
+**Redispatched the verify pass on 4 named register candidates, chosen to
+avoid the Botanic Garden cluster and the already-blocked hotel/palace
+grounds.** Only **La Carcasa (vlc_026)** cleared the bar: a date palm with
+35+ trunks branching from a shared base, independently named and described
+by the Jardi Botanic's own site. The other three are recorded rather than
+dropped: Palmera Canaria de Gran Via and the Hort de les Camelies fig failed
+on the two-independent-sources rule (the only apparent second source for
+each was an OSM node carrying `reg_ref=` back to the same register row, not
+an independent confirmation, worth flagging as a pitfall of its own).
+Ficus del INVASSAT (11.58m girth, genuinely huge) is blocked under hard rule
+10: it sits on a working Generalitat office's premises with no evidence of
+public access, the same pattern as the already-pulled vlc_012 fig inside the
+regional parliament.
+
+Merged, added the matching Spanish overlay entry (Valencia has a full es/
+translation set), bumped both languages' counts and the paid-share FAQ line
+(9/24 to 10/25). Build, QA and preflight all clean; preflight's paid-share
+note for Valencia (now 40%) is expected and answered by adding free trees
+later, not by cutting a genuinely unusual one.
+
+**Claimed valencia again and dispatched a second batch, running in the
+background as this entry is written.** The register still holds roughly 350
+unmined candidates, so a second pass is cheap relative to opening a new
+city from zero. This batch targets four candidates further from the centre:
+La Pajarera (an olive the register itself flags as over 350 years old) and
+Garrofera del Bovalar (a carob with the same age flag), Llironer del "Oh
+gran Do" (a hackberry carrying the higher "Local Monument of Interest"
+category, most entries are only "Proteccion Generica"), and the unusually
+tall Araucaria de la Vila de Sant Josep. Claim pushed; release it if this
+entry is the last thing this window does.
+
+Checked `city_queue.py --next` for a zero-supply city to open instead, per
+rule 1(0): the only ranked, unopened city with 6+ fresh candidates was
+Taormina, and its brief showed the city has already been tried three times
+(2026-08-30, 08-31, 09-01) and is a documented dead end, every in-town MASAF
+register tree sits on the grounds of one private hotel. Skipped rather than
+re-litigating it. Everything else openable today had 1-2 candidates, below
+the six-candidate floor for a pass, or was already covered under another
+published city's page (Jersey City under New York, Funchal under Madeira).
+
+No BLOCKER, nothing else stale. Commits so far: the merged La Carcasa batch,
+and the second claim.
+
 ## 2026-09-04 (continuation of a window an earlier attempt stopped early with 98 minutes left) - Finished two standing claims: Rotterdam +3, three new Japan single-tree places, Valencia dispatched
 
 Cleared the same three claims the earlier attempt left standing rather than
