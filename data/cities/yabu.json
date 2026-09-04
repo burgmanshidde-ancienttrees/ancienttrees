@@ -1,0 +1,69 @@
+{
+  "city": "Yabu",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "By 1993 Tarumi-no-Ozakura was barely flowering. Root treatment through the 1990s brought it back, and now around 10,000 people climb a forest trail each April to watch a cherry said to exceed a thousand years bloom above the Oya River. A National Natural Monument since 1951, published here as a single-tree place under the 2026-08-31 exception because it stands 20km of mountain road from the nearest city we map.",
+  "meta_description": "Tarumi-no-Ozakura, Yabu: a cherry said to exceed 1,000 years, National Natural Monument since 1951, drawing 10,000 visitors each April.",
+  "question_meta": "Yabu's mapped tree is Tarumi-no-Ozakura, a cherry said to exceed 1,000 years old, a National Natural Monument since 1951.",
+  "question_answer": "Yabu's mapped tree is Tarumi-no-Ozakura, an Edo Higan cherry on a forest trail above the Oya River, said in local sources to exceed a thousand years old, though nobody has counted its rings.",
+  "question_context": "The tree nearly died: its decline set in from 1967 and ran for three decades until treatment began in 1997, improving the soil around the roots and encouraging new adventitious roots to form. By the city's 2020 survey it had recovered substantially, measuring 13.8 metres tall and 6.3 metres round at chest height, among the ten oldest and thickest cherry trees recorded in Japan. It is an Edo Higan, the long-lived species behind most of the country's ancient cherries, and became a National Natural Monument in June 1951. Before that it was a lord's privilege: the feudal rulers of the Izushi Domain came here for their cherry-viewing, and in 1823 the domain's Confucian scholar Sakurai Sekimon named it Sensakura, the hermit's cherry. It now stands on the Silver Wagon Road, a Japan Heritage trail across Harima. Getting there takes a car and a 15-minute walk on a forest trail from a small parking area; in blossom week, usually early to mid April, the approach road runs one way and a temporary restroom goes up for the roughly 10,000 people who make the walk.",
+  "hero_tree_id": "yab_001",
+  "oldest_tree_id": "yab_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It nearly died. A three-decade decline from 1967 was reversed by root treatment started in 1997, and it now draws around 10,000 visitors each April when it blooms."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Local sources say it exceeds a thousand years, but that is tradition rather than a measured figure; nobody has counted its rings."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "Early to mid April, when the blossom pulls thousands of people up the forest trail and the approach road runs one way to cope with them."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car via the prefectural road along the Oya River from Oya Junior High School, then a 15-minute walk on a forest trail. No public transport route reaches it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "yab_001",
+      "name": "Tarumi-no-Ozakura",
+      "species": "Edo Higan Cherry (Prunus itosakura, syn. Prunus subhirtella var. ascendens)",
+      "age_estimate": "over 1,000 years",
+      "age_min": 1000,
+      "age_max": 1300,
+      "girth_cm": 630,
+      "height_m": 13.8,
+      "location": {
+        "address": "Oya-cho Tarumi, Yabu City, Hyogo, Japan (a forest trail off the prefectural road along the Oya River, from Oya Junior High School)",
+        "latitude": 35.347639,
+        "longitude": 134.711056,
+        "neighbourhood": "Oya-cho, Yabu City, roughly 20 km (mountain road, no public transport route found) from Asago, which we already publish; treated as its own single-tree place rather than joined to Asago"
+      },
+      "verified_sources": [
+        "https://www.city.yabu.hyogo.jp/soshiki/kyoikuiinkai/shakaikyoiku/1/4/tarumi/6323.html",
+        "https://ja.wikipedia.org/wiki/%E6%A8%BD%E8%A6%8B%E3%81%AE%E5%A4%A7%E3%82%B6%E3%82%AF%E3%83%A9",
+        "https://www.yabu-kankou.jp/sightseeing/tarumi-sakura"
+      ],
+      "access": "Free, on city-managed land. Reached by a roughly 15-minute walk on a forest trail from a small parking area (about 20 spaces); one-way traffic control and a temporary restroom are put in place for the blossom peak in early-to-mid April, when the site draws around 10,000 visitors. No public transport route found; a car is effectively required.",
+      "transport": "No train or bus stop found serving the site; nearest access is by car via the prefectural road along the Oya River from Oya Junior High School, then a 15-minute walk.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "By 1993 this cherry was barely flowering. Now around 10,000 people come each April to watch it bloom.\n\nThe decline set in from 1967 and ran for three decades, until treatment began in 1997: the soil around the roots was improved and the tree was encouraged to throw out adventitious roots. By the city's 2020 survey it had recovered substantially. That survey measured it at 13.8 metres tall, 6.3 metres round at chest height and 7 metres at the root, which puts it among the ten oldest and thickest cherry trees recorded in Japan.\n\nIt is an Edo Higan, the long-lived species behind most of the country's ancient cherries, and a National Natural Monument since June 1951. Before the designation it was a lord's privilege: the feudal rulers of the Izushi Domain came here for their cherry-viewing, and in 1823 the domain's Confucian scholar Sakurai Sekimon named it Sensakura, the hermit's cherry. It now stands on the Silver Wagon Road, a Japan Heritage trail across Harima.\n\nIts age is tradition rather than record. The sources say only that it is said to exceed a thousand years, and nobody has counted the rings.\n\nGetting there takes a car and then a quarter of an hour on a forest trail. In blossom week the approach road runs one way and someone sets up a temporary toilet, which tells you how many people the walk is worth to.",
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "early to mid April, when the blossom pulls thousands of people up the forest trail"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

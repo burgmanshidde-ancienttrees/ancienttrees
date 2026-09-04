@@ -1,0 +1,65 @@
+{
+  "city": "Shiwa",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Shogen-in no Sakasa Gashiwa looks planted upside down: its trunk divides into four limbs at ground level that run outward before turning up, so the branches read as roots that changed their minds. It is the only Daimyo Oak in Japan under national protection, and the first oak of any species to receive that status, designated in 1929. Published here as a single-tree place under the 2026-08-31 exception because it stands too far from Morioka, the nearest city we map, for a same-day trip.",
+  "meta_description": "Shogen-in no Sakasa Gashiwa, Shiwa: Japan's only nationally protected Daimyo Oak, its limbs running along the ground before turning up.",
+  "question_meta": "Shiwa's mapped tree is Shogen-in no Sakasa Gashiwa, the only nationally protected Daimyo Oak in Japan.",
+  "question_answer": "Shiwa's mapped tree is Shogen-in no Sakasa Gashiwa, a Daimyo Oak at Shogen-in temple whose four limbs run outward along the ground before turning upward, giving it its name: the inverted oak.",
+  "question_context": "It is the only Daimyo Oak in Japan under national protection, and the first oak of any species to be given that status, designated in December 1929 after the botanist Manabu Miyoshi of Tokyo Imperial University surveyed it in 1922. The canopy off its ground-hugging limbs spreads 22 to 28 metres across. Sourced estimates put its age at roughly 300 years; the temple's own legend credits its planting to Minamoto no Yoriyoshi and his son Yoshiie after the Former Nine Years' War in the eleventh century and claims 700 years, which is legend rather than measurement. The measurements themselves disagree across surveys: the town gives 630 cm around the base and 15 metres tall, while a 1983 survey recorded 450 cm at the root and 12.2 metres, different conventions decades apart. It stands within the grounds of Shogen-in, a working Soto Zen temple with its own visitor parking, about 20 minutes' walk from Shiwa-Chuo Station on the IGR Iwate Ginga Railway, itself 20-25 minutes by train from Morioka. Visitors are asked not to step under the canopy, to protect the soil the roots depend on.",
+  "hero_tree_id": "shw_001",
+  "oldest_tree_id": "shw_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Its trunk divides into four limbs at ground level that run outward before turning upward, so the branches look like roots that changed their minds. It is Japan's only nationally protected Daimyo Oak."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Sourced estimates put it at roughly 300 years. A temple legend claims 700 years, tied to an eleventh-century planting story, but nobody has dated the oak by any other method."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it stands within the grounds of Shogen-in, a working Soto Zen temple with its own visitor parking. Visitors are asked not to step under the canopy to protect the roots."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About 20 minutes' walk from Shiwa-Chuo Station on the IGR Iwate Ginga Railway, which is roughly 20-25 minutes by train from Morioka."
+    }
+  ],
+  "trees": [
+    {
+      "id": "shw_001",
+      "name": "Shogen-in no Sakasa Gashiwa",
+      "species": "Daimyo Oak (Quercus dentata)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 630,
+      "height_m": 15.0,
+      "location": {
+        "address": "273 Asahida, Hizume, Shiwa Town, Shiwa District, Iwate 028-3305, Japan (grounds of Shogen-in temple)",
+        "latitude": 39.56,
+        "longitude": 141.165833,
+        "neighbourhood": "Hizume, Shiwa Town, roughly 16 km (about 20-25 minutes by IGR Iwate Ginga Railway plus a 20-minute walk from Shiwa-Chuo Station, so 40-45 minutes door to door) from Morioka, which we already publish; too far to read as the same trip, so treated as its own single-tree place"
+      },
+      "verified_sources": [
+        "https://online.bunka.go.jp/heritages/detail/137797",
+        "https://www.town.shiwa.iwate.jp/soshiki/5_1/2_4_bunkazai_national/2964.html/",
+        "https://ja.wikipedia.org/wiki/%E5%8B%9D%E6%BA%90%E9%99%A2%E3%81%AE%E9%80%86%E3%82%AC%E3%82%B7%E3%83%AF",
+        "https://journeytotrees.com/2025/04/15/kyoju298/"
+      ],
+      "access": "Free, within the grounds (precincts) of Shogen-in, a working Soto Zen temple with its own visitor parking (room for about a dozen cars). Visitors are asked not to step directly under the canopy, to protect the soil the roots depend on.",
+      "transport": "About 20 minutes' walk from Shiwa-Chuo Station on the IGR Iwate Ginga Railway (formerly JR Tohoku Line), which is roughly 20-25 minutes by train from Morioka.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This oak looks as though someone planted it upside down. The trunk divides into four thick limbs at ground level, and rather than climbing they run outward along the earth before turning upward, so the branches read as roots that changed their minds. The name says it plainly: sakasa gashiwa, the inverted oak. The canopy off those limbs spreads 22 to 28 metres across.\n\nIt is the only Daimyo Oak in Japan under national protection, and the first oak of any species to be given that status, designated in December 1929 after the botanist Manabu Miyoshi of Tokyo Imperial University surveyed it in 1922.\n\nThe sourced estimates put it at roughly 300 years. The temple tells a longer story: its legend credits the planting to Minamoto no Yoriyoshi and his son Yoshiie after the Former Nine Years' War in the eleventh century, and claims 700 years for the tree. That is legend, recorded as legend, and nobody has dated the oak by any other method.\n\nThe measurements depend on who took them and when. The town gives 630 cm around the base, 240 cm of trunk and 15 metres of height; a 1983 survey instead recorded 450 cm at the root, four limbs of about 2 metres each, and 12.2 metres tall. Different conventions, decades apart.\n\nA tree enthusiast photographed it in bud in April 2025 and again in 2026. Shogen-in asks visitors not to step under the canopy, because that soil is what the roots live on.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

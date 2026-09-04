@@ -1,0 +1,32 @@
+{
+  "leads": [
+    {
+      "name": "Monumentaaliep",
+      "species": "Elm (Ulmus sp.)",
+      "location": {"address": "Naast basketbalveld, Heemraadssingel, Rotterdam", "latitude": 51.916034, "longitude": 4.454998},
+      "reason": "Only one source found (LRMB register nr 1686293, planted_band 1900-1910, owner_category gemeente, visitable ja, visible onbekend). Two search attempts (general web search and rotterdam.nl's own monumental-trees highlight page) turned up no independent second source naming this specific elm; the municipal highlight page lists a nearby cedar and other trees but not this one. History field in the register is itself 'onbekend' (unknown). Stands beside a public basketball court in what appears to be public parkland along the Heemraadssingel, so access looks fine, but the two-independent-source bar for existence/species/age is not met. Worth a future pass or a reader tip; do not re-run the exhausted general search without a new angle."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Krimlinde Parklaan",
+      "species": "Crimean Linden (Tilia x euchlora)",
+      "reason": "Duplicate of already-published rot_004 (The Wilhelmina Linden). LRMB register nr 1695438 sits ~16m from rot_004's published coordinates and its own history text ('Geplant bij de kroning van Koningin Wilhelmina op 31 augustus 1898') is the identical coronation story rot_004 is named for. Confirmed further by rotterdam.nl's own monumental-trees page, which lists a single 'Wilhelminaboom (Crimean linden), Parklaan, planted 1898 for Princess Wilhelmina's coronation' and no second linden at this spot. Not delivered as a new tree; the register entry (nr 1695438) is recorded here so a future pass does not re-research it as new. It may be useful as an additional corroborating source for rot_004's existing entry."
+    },
+    {
+      "name": "Gewone plataan Park Euromast",
+      "species": "London Plane (Platanus x acerifolia)",
+      "reason": "Probable duplicate of already-published rot_001 (The Park Plane), not delivered as new. LRMB register nr 1690283 sits about 185m from rot_001's published coordinates, described as 'A/d vijver bij voorm. disco' (by the pond near the former disco) versus rot_001's sourced location 'on the grass field near the Westzeedijk'; different named spots within the same 21-hectare Het Park, which on its own would argue for two distinct trees. But the register's own history text for this entry recites the same unusual narrative beats as rot_001's source (hetparkinrotterdam.nl): the two 1850s estates merged into the park, Zocher's design, trees too thick to fell for firewood in WWII, and specifically 'Deze plataan overleefde de overstroming' (survived the 1953 flood) -- the exact same flood-survival detail used for rot_001's tree. Rotterdam's own official monumental-trees highlight page (rotterdam.nl/monumentale-bomen) lists only ONE plane tree for 'Park bij de Euromast' ('one of the thickest trees in the city', matching rot_001), not two. Two attempts to reach monumentaltrees.com's page for this park (which might disambiguate) both returned 403 (site blocks automated fetches, as documented). Given the shared narrative and the absence of a second named plane in either the municipal highlight page or any other source found, treated as the same tree with an imprecise register coordinate rather than a genuinely separate specimen. If a future pass or a reader on the ground confirms Het Park holds two distinct old monumental planes (one at the Westzeedijk grass field, one by the pond near the former disco site), this should be revisited and delivered as a new tree."
+    },
+    {
+      "name": "Ginkgo Heemraadssingel Rotterdam",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "reason": "Private land, hard rule 10. LRMB register nr 1697008 places this tree in the 'achtertuin' (back garden) of a private residential building at Heemraadssingel 289 (owner_category particulier). No independent source found confirming the tree is visible or accessible from the street/canal path, despite two search attempts; the register's own 'visible: ja' likely reflects the register surveyor's own visit rather than public visibility. Register history notes it may be Rotterdam's oldest Ginkgo biloba (planted shortly after the house was built in 1912, survived a 1940 bomb that fell in the garden) -- a good story, but not one we can send visitors to without confirmed public access. Also only one source (the register) was found, short of the two-source bar. Leave as a lead: if a reader or a future pass confirms it is visible over the garden wall from the singel, or the address is now a business/institution rather than a private home, revisit."
+    },
+    {
+      "name": "Hartbladige els",
+      "species": "Heart-leaved Alder (Alnus cordata)",
+      "reason": "Private land and thin evidence, hard rule 10 plus the two-source bar. LRMB register nr 1690281 (opposite Mauritsweg 6, Rotterdam) lists owner_category particulier, visitable 'onbekend', visible 'onbekend', and reason 'potentieel' (a potential/candidate designation, not a confirmed monumental listing), with history 'onbekend'. No independent second source found. Given uncertain ownership, uncertain access and a register status that is itself provisional, this does not clear the bar. Leave as a lead pending a firmer register status or a second source."
+    }
+  ]
+}

@@ -197,7 +197,7 @@ so qa.py fails the deploy when the table and the json disagree.
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
 | 1 | Rome | 183.96 | 358,876 | 30 | 9 | 2 | 32 | 30 | measured |
 | 2 | Amsterdam | 98.99 | 294,030 | 34 | 7 | 3 | 5488 | 30 | measured |
-| 3 | Lisbon | 78.84 | 201,877 | 33 | 10 | 3 | 66 | 30 | measured |
+| 3 | Lisbon | 78.84 | 201,877 | 35 | 10 | 3 | 68 | 30 | measured |
 | 4 | Barcelona | 66.58 | 346,477 | 56 | 12 | 7 | 180 | 30 | measured |
 | 5 | Singapore | 59.57 | 967,821 | 28 | 3 | 3 | 165 | 30 | measured |
 | 6 | Milan | 40.88 | 212,705 | 22 | 9 | 2 | 25 | 30 | measured |
@@ -339,7 +339,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 142 | Graz | 5.55 | 65,717 | 12 | 3 | 1 | 87 | 20 | measured |
 | 143 | Adelaide | 8.14 | 139,166 | - | - | - | - | 10 | predicted (travel demand) |
 | 144 | Helsinki | 6.72 | 148,908 | 8 | 1 | - | 9 | 30 | measured |
-| 145 | Rotterdam | 4.09 | 104,938 | 9 | - | 2 | 83 | 20 | measured |
+| 145 | Rotterdam | 4.09 | 104,938 | 12 | - | 2 | 83 | 20 | measured |
 | 146 | Oxford | 7.88 | 111,583 | 5 | 1 | 1 | - | 20 | measured |
 | 147 | Oslo | 7.01 | 181,113 | 4 | - | - | - | 20 | measured |
 | 148 | Braga | 4.38 | 34,522 | 4 | 1 | - | 8 | 20 | measured |
