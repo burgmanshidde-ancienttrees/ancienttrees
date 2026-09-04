@@ -422,15 +422,26 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   .nav-drop-menu a { padding: 0.65rem 1rem; font-size: 15px; }
   .nav-drop-menu .nav-group { padding: 0 1rem; }
   /* The app pill sits in the bar on a phone too (2026-09-04). Compact, because
-     the wordmark, the pill and the 40px menu button share a 375px row: 13px
-     text in 0.8rem of padding leaves the bar about 60px of slack at 375 and
-     still fits at 320. 36px tall rather than 32, since this is a thumb target
-     on a phone and not a mouse target. */
+     the mark, the pill and the 40px menu button share a 375px row. 36px tall
+     rather than 32, since this is a thumb target on a phone and not a mouse
+     target. */
   .bar-links a.bar-cta { height: 36px; padding: 0 0.8rem; font-size: 13px; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
   .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
 
   .entry.has-thumb { grid-template-columns: 72px 1fr; gap: 0.8rem; }
+}
+@media (max-width: 360px) {
+  /* Under 360 the brand is the MARK and not the word, which is what komoot's
+     own phone header does in the screenshot Hidde sent, and AllTrails with it.
+     The wordmark used to stay at every width, and it could, because the bar
+     carried one control; with the app pill back beside the menu button it
+     cannot on the smallest screens. Measured rather than guessed, in every one
+     of the eight languages: the bar wants about 346px, so 375 keeps the word
+     with 29px to spare and 320 ran 2px off the screen. Hence 360 and not 480,
+     which was the first try and left a lonely leaf on the common phone. The
+     mark still links home, which is the part that has to survive. */
+  .bar-logo span { display: none; }
 }
 .suggest { font-size: 13px; color: var(--ink-light); border-top: 1px solid var(--cream-dark); padding-top: 1.25rem; margin-top: 2.5rem; }
 ul.link-list { list-style: none; }
@@ -903,7 +914,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .hero-center h1 em { color: #F0C876; font-style: normal; }
 .poster-search { width: min(640px, 94vw); padding: 0.35rem 0.6rem 0.35rem 0.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.28); margin-top: 0; }
 .poster-search input { font-size: 16.5px; padding: 0.65rem 0.5rem; }
-.hero-links { display: flex; gap: 1.8rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
+.hero-links { display: flex; align-items: center; gap: 1.4rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
 /* The hero's action is TEXT, not a pill (Hidde, 2026-08-20: "hoezo is dit
    opeens een knop geworden maak er weer dezelfde tekst opmaak van als bij
    alltrails"). A run turned it into a filled green button that morning and
@@ -911,6 +922,22 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    field sit plain white text links, and the only filled control on the poster
    is the search itself. Do not re-promote this to a button. */
 .hero-link { background: none; border: none; cursor: pointer; font-family: inherit; color: #fff; font-size: 15.5px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+/* The one exception to the rule directly above, and it is a DIFFERENT control
+   rather than that one wearing a new shape (2026-09-04). The rule says the
+   hero's own action stays text, and it does: "Explore trees near you" is
+   untouched. This is the app, which Hidde asked to bring forward on the
+   homepage the same day he sent komoot's phone homepage, where the single
+   control over the photograph is exactly this: a filled white pill reading
+   "Download de App". So the poster now carries one filled thing besides the
+   search, deliberately, and the pair reads primary and secondary instead of as
+   two links of equal weight. If it ever reads as two competing buttons, this
+   is the one that goes back to text, not the explore link. */
+.hero-app { display: inline-flex; align-items: center; gap: 0.45rem; height: 44px;
+  padding: 0 1.15rem; border-radius: 999px; background: #fff; color: var(--ink);
+  font-size: 15.5px; font-weight: 700; text-decoration: none;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.22); }
+.hero-app:hover { background: #fff; color: var(--moss); }
+.hero-app svg { width: 18px; height: 18px; }
 .home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
 .mission { max-width: 44rem; margin: 2.5rem auto 0; padding: 1.6rem 2rem 0; border-top: 1px solid var(--cream-dark); text-align: center; }
 .mission p { font-family: var(--sans); font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
@@ -1303,10 +1330,11 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   /* Keep the bar on one line on phones: secondary links stay reachable from
      the homepage and from the pages themselves. */
   header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); flex-wrap: nowrap; }
-  /* The wordmark used to be dropped below 480px, because the bar wanted 412px
-     of a 375px screen and something had to go. With one control on the right
-     instead of three the bar wants about 220px, so the brand stays where every
-     competitor keeps it: beside the mark, at every width. */
+  /* The wordmark drops under 360px again from 2026-09-04, and the arithmetic is
+     the same as the first time: the app pill came back into the bar, so the
+     right-hand side wants roughly 180px and the longest of the eight labels no
+     longer fits beside the word on a narrow phone. The block near the mobile
+     bar rules above is where that is done and measured. */
   .bar-links { display: flex; align-items: center; white-space: nowrap; }
   .bar-links a.bar-secondary { display: none; }
   /* Clamped, and one tap opens it. At full length the intro pushed the first
