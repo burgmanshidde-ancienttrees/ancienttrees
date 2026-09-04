@@ -1,0 +1,64 @@
+{
+  "city": "Flinders Ranges",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Flinders Ranges maps one tree: the river red gum that Harold Cazneaux photographed alone on a bare plateau in 1937 and called The Spirit of Endurance, a picture that made it internationally famous and gave the tree its name. It stands inside Ikara-Flinders Ranges National Park, reached by an easy trail from Flinders Ranges Way. Published alone here because the tree, not a town, is the destination.",
+  "meta_description": "The Cazneaux Tree in Ikara-Flinders Ranges National Park: the river red gum from Harold Cazneaux's 1937 photograph The Spirit of Endurance.",
+  "question_meta": "Flinders Ranges' only mapped tree is the Cazneaux Tree, the river red gum photographed by Harold Cazneaux in 1937, reached via a trail near Wilpena Pound.",
+  "question_answer": "Flinders Ranges' only mapped tree is the Cazneaux Tree, a River Red Gum (Eucalyptus camaldulensis) standing alone on a plateau inside Ikara-Flinders Ranges National Park, near Wilpena Pound Resort in South Australia. Photographer Harold Cazneaux made it famous in May 1937 with an image he called The Spirit of Endurance, and the National Trust of South Australia lists it as significant tree number 239 for its aesthetic quality alone.",
+  "question_context": "The trunk runs 11.4 metres around at the base, and the state gazetteer puts the tree at 29 metres tall, though a recent parks description calls it nearer 25. Cazneaux wrote that the passing years had left it scarred and marked by the elements, and that the tree, unconquered, spoke of a spirit of endurance. That scarring is the tree's own record of storm, fire and water on an exposed plateau with no shelter around it. The naming is credited to George Hunt, the last pastoral leaseholder of Wilpena Station, and Cazneaux's grandson, the entrepreneur Dick Smith, paid for a plaque placed at the site in 1991. Since 2025 the tree has been reachable by the Spirit of Endurance Trail, an easy 90-minute, no-experience-needed walk from Flinders Ranges Way, about 3 kilometres from Wilpena Pound Resort. A South Australian national parks entry pass may be needed for vehicle access to the park, though the trail and the tree carry no separate fee. Nobody has ever put a documented age to it.",
+  "hero_tree_id": "flr_001",
+  "oldest_tree_id": "flr_001",
+  "faq": [
+    {
+      "q": "What is the Cazneaux Tree?",
+      "a": "A River Red Gum in Ikara-Flinders Ranges National Park, made famous by photographer Harold Cazneaux's 1937 image The Spirit of Endurance."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Not documented. Nobody has ever put a measured age to it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "The trail and the tree carry no separate fee, though a South Australian national parks entry pass may be required for vehicle access to the park."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By self-drive via Flinders Ranges Way, then the Spirit of Endurance Trail, an easy 90-minute walk about 3km from Wilpena Pound Resort. There is no public transport."
+    }
+  ],
+  "trees": [
+    {
+      "id": "flr_001",
+      "name": "The Cazneaux Tree",
+      "species": "River Red Gum (Eucalyptus camaldulensis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 1140,
+      "height_m": 29,
+      "location": {
+        "address": "Ikara-Flinders Ranges National Park, west side of Flinders Ranges Way, ~3km north-east of Wilpena Pound Resort, South Australia",
+        "latitude": -31.518867,
+        "longitude": 138.6385,
+        "neighbourhood": "Flinders Ranges, near Wilpena Pound"
+      },
+      "story": "A photograph made this tree famous, and then the photograph named it. In May 1937 Harold Cazneaux, camping in the Flinders with his wife and son, pointed a camera at a river red gum standing by itself on a flat, dry plateau. He called the picture The Spirit of Endurance, it brought him international recognition, and the gum has been the Cazneaux Tree ever since. The naming is credited to George Hunt, the last pastoral leaseholder of Wilpena Station.\n\nIt earns the billing. The trunk runs 11.4 metres around at the base, and the state gazetteer puts the tree at 29 metres tall, though a recent parks description calls it nearer 25. Cazneaux wrote that the passing years had left it \"scarred and marked by the elements\" and that, \"unconquered, it speaks to us of a Spirit of Endurance\". The scarring he described is the tree's own record of storm, fire and water on a plateau with no shelter on it.\n\nThe National Trust of South Australia lists it as significant tree number 239, for its aesthetic quality alone. Cazneaux's grandson, the entrepreneur Dick Smith, paid for the plaque placed here in 1991, and since 2025 an easy 90 minute trail runs out to it from Flinders Ranges Way.\n\nNobody has ever put an age to it. If you know of a measurement, tell us.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Cazneaux_Tree",
+        "https://www.environment.sa.gov.au/goodliving/posts/2025/11/ikara-flinders-spirit-of-endurance",
+        "https://dulkeith.net.au/the-cazneaux-tree-landmark-of-the-flinders-ranges/"
+      ],
+      "access": "Free. Inside Ikara-Flinders Ranges National Park, reached via the Spirit of Endurance Trail (a 90-minute, Grade 2, no-experience-needed walking trail opened as an interpretive trail, easily accessible from Flinders Ranges Way). An SA National Parks entry pass may be required for vehicle entry to the park itself; the walk and the tree carry no separate fee.",
+      "transport": "No public transport; self-drive via Flinders Ranges Way. Nearest services at Wilpena Pound Resort, ~3km away; nearest town Hawker is roughly 60km south.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}

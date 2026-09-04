@@ -1456,13 +1456,25 @@ def check_pin_is_in_its_own_country():
     and 2,379 trees across 46 countries produced zero hits the day this was
     written.
 
+    Widened to 2000km on 2026-09-04, one day after it shipped: Derby's Boab
+    Prison Tree sits 1804km from Pemberton, the nearest other published
+    Australian tree, and that is real geography rather than a bug. Its
+    coordinates (-17.347862, 123.670163) were checked against Wikipedia's
+    infobox (-17.3507, 123.6699, ~300m away) and the WA heritage register's
+    own description before raising the threshold; a dropped sign or a
+    lat/long swap still moves a tree far past 2000km, so the check keeps its
+    whole purpose. Expect this to recur: single-famous-tree destinations
+    (rung 0c) are often chosen for standing alone, and Australia, Canada,
+    Russia and the US are large enough that a genuine outlier over 800km is
+    no longer surprising.
+
     What it cannot see is a country where we publish one tree, and that is
     exactly the single-famous-tree case rung (0c) creates. It is the cheap
     ninety percent rather than the whole answer, and it fails LOUD, because a
     wrong pin is the one error a reader cannot forgive: they are standing in
     the wrong place before any correction can reach them.
     """
-    FAR_KM = 800
+    FAR_KM = 2000
     by_country = collections.defaultdict(list)
     for path in sorted(glob.glob("data/cities/*.json")):
         with open(path, encoding="utf-8") as fh:

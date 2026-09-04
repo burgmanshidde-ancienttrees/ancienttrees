@@ -1,0 +1,64 @@
+{
+  "city": "Cooper Creek",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Cooper Creek maps one tree: a coolibah on a remote outback bank where a single word carved in 1861, DIG, became one of the founding stories of Australian exploration. Burke and Wills died within months of the men who blazed it. Reached only by unsealed road from Innamincka or Thargomindah, and published alone here because the tree itself, not a city, is the destination.",
+  "meta_description": "The Dig Tree on Cooper Creek: the coolibah blazed by Burke and Wills' rear party in 1861. Heritage-listed, reachable by outback road.",
+  "question_meta": "Cooper Creek's only mapped tree is the Dig Tree, the coolibah blazed DIG in 1861 during the Burke and Wills expedition.",
+  "question_answer": "Cooper Creek's only mapped tree, and its oldest, is the Dig Tree, a Coolibah (Eucalyptus microtheca) on the north bank of Cooper Creek at the Dig Tree Reserve, near Nappa Merrie Station in far south-west Queensland. On 21 April 1861, William Brahe's party carved the word DIG into its trunk to mark a buried supply cache before abandoning their depot camp, and Burke and Wills died near this creek within months.",
+  "question_context": "The word DIG was cut into the trunk on 21 April 1861 by William Brahe's rear party, marking a cache of food and supplies buried at its foot after the depot camp, Camp LXV, was abandoned. Burke and Wills, returning from the Gulf of Carpentaria, found the message too late and died near the creek within months; only John King survived. Queensland gazetted a 4,470 square metre reserve around the tree in 1964 and added it to the state heritage register in 2003. The Royal Historical Society of Queensland holds it in trust, and a 2020 refurbishment brought a boardwalk, interpretive signage and a site fee of around eleven dollars, paid at the gate or by QR code. Tourism sources repeat a reputed age of 200 to 250 years, but nobody has measured it, so it is stated here as a range rather than a fact. Getting there means committing to outback driving: about 44 kilometres of unsealed Adventure Way from Innamincka in South Australia, or 377 kilometres from Thargomindah in Queensland, and the road can close after rain. There is no public transport and no fuel or services at the site itself.",
+  "hero_tree_id": "cpc_001",
+  "oldest_tree_id": "cpc_001",
+  "faq": [
+    {
+      "q": "What is the Dig Tree?",
+      "a": "A Coolibah on Cooper Creek carved with the word DIG in 1861 by William Brahe's party during the Burke and Wills expedition, marking a buried supply cache."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Not documented precisely. Tourism sources repeat a reputed 200 to 250 years, but nobody has measured it."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "There is a site management fee, reported around AU$11, payable at the gate or by QR code. The reserve is otherwise open to the public with a boardwalk and interpretive signage."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By self-drive only, on unsealed outback roads: about 44km from Innamincka, South Australia, or 377km from Thargomindah, Queensland. The road can be cut off after rain."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cpc_001",
+      "name": "The Dig Tree",
+      "species": "Coolibah (Eucalyptus microtheca)",
+      "age_estimate": "reputed 200 to 250 years old",
+      "age_min": 200,
+      "age_max": 250,
+      "girth_cm": null,
+      "location": {
+        "address": "Dig Tree Reserve, Nappa Merrie Station, Cooper Creek, Shire of Bulloo, Queensland",
+        "latitude": -27.62285805,
+        "longitude": 141.07527161,
+        "neighbourhood": "Cooper Creek, far south-west Queensland near the South Australian border"
+      },
+      "story": "One word carved into this coolibah in April 1861 made it one of the most famous trees in Australia: DIG. William Brahe's party had held the depot camp on Cooper Creek, Camp LXV, while Burke, Wills, Gray and King pushed north toward the Gulf. On 21 April, forced to abandon the post, Brahe blazed one of two coolibahs on the creek's north bank and cut that instruction over a cache of supplies buried at its foot. Burke and Wills died near this creek within months. Only King survived.\n\nThe tree outlived all of them and still stands on the same bank. Queensland gazetted a 4,470 square metre reserve around it in 1964 and added it to the state heritage register in 2003. The Royal Historical Society of Queensland holds it in trust, and a refurbishment in 2020 brought a boardwalk, interpretive signage and a site fee of around eleven dollars at the gate. The road is the rest of the price: 44 kilometres of unsealed Adventure Way from Innamincka, and it closes after rain.\n\nIts age is guesswork. Tourism sources repeat a reputed 200 to 250 years, and nobody has measured it. If you know the real figure, tell us.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Burke_and_Wills_Dig_Tree",
+        "https://apps.des.qld.gov.au/heritage-register/detail/?id=601073",
+        "https://www.thedigtree.com.au/dig-tree-reserve",
+        "https://www.outbackqueensland.com.au/attractions/burke-and-wills-dig-tree/"
+      ],
+      "access": "Publicly accessible: a fenced 4,470 sqm memorial reserve declared by the Queensland Government in 1964, held in trust for the public by the Royal Historical Society of Queensland, physically inside the Nappa Merrie pastoral property but run as a visitor site with interpretive signage, boardwalk and wheelchair access. A conservation/site-management fee (reported around AU$11) is payable at the gate or by QR code. Reached via unsealed Adventure Way roads: about 44km from Innamincka, SA, or 377km from Thargomindah, QLD; caravan-accessible in good weather, can be cut off after rain.",
+      "transport": "No public transport; self-drive only, on outback dirt roads. Nearest fuel/services at Innamincka, SA (~44km) or Thargomindah, QLD (~377km).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
