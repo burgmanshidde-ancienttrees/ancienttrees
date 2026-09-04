@@ -61,7 +61,7 @@ Apple would be featuring.
 https://ancienttrees.app
 ```
 
-## Description  (609/1000)
+## Description  (840/1000)
 
 Only the App Store team sees this. It is a pitch to Apple's editors, not the
 public listing, so it never repeats the feature list they already have.
@@ -69,12 +69,29 @@ public listing, so it never repeats the feature list they already have.
 ```
 Some of the trees in your city were standing before the city was. Ancient Trees takes you to them.
 
-The map fills with the ones around you, every pin drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything. Tap one and you get what it is, how old it is, why it was left standing while everything around it came down, and directions to the trunk.
+Open it anywhere and the map fills with the ones around you, every pin drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything. Tap one and you get what it is, how old it is, why it was left standing while everything around it came down, and directions to the trunk.
 
-You tick off the ones you have stood in front of. Find one we have missed and you photograph it where you stand; it joins your collection and it reaches us for the map.
+What that buys somebody is an afternoon outside. You walk into a churchyard you had never walked into, ten minutes from your door, and stand under something that has been alive for four hundred years.
+
+The ones you have stood in front of become your collection. You follow other people and see the trees they have found, and one nobody has mapped you photograph where you stand.
 
 Out this month, with 2,474 trees mapped so far.
 ```
+
+**Rewritten 2026-09-04 to argue FOR the app, on Hidde's correction:** "moet
+die niet meer overhalend naar de redactie zijn van super cool we brengen mensen
+naar buiten om de natuur te zien en laten bomen met elkaar delen". The version
+before it described what the app contains and stopped there, which reads as a
+feature list to somebody deciding whether to put it on a shelf. What was
+missing was the third paragraph: what the thing DOES to a person's Saturday.
+
+Two additions, both checked against the shipped build first. The afternoon
+outside is the project's own goal 1 stated plainly, and it shows rather than
+claims, which is the whole of PITCH_VOICE.md. Following other people and seeing
+their trees is real in build 9: `Screens/FindPeople.swift` carries Follow and
+Following, and the profile panel on the store shows followers and following
+counts. What is NOT claimed is sending a tree to somebody by link, which is
+1.0.1.
 
 **Written against the seven screenshots that are on the store**, fetched back
 from Apple rather than from `out/appstore/` (Hidde, 2026-09-04: "baseer t maar
