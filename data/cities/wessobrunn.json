@@ -1,0 +1,63 @@
+{
+  "city": "Wessobrunn",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Wessobrunn is a Bavarian village built around a monastery, and beside its wall grows a lime tree that legend says predates the monastery itself. The Tassilolinde is 700 to 900 years old by the German Dendrological Society's own reading of its stem, roughly 14 metres round, and one of the three largest lime girths recorded anywhere in Bavaria. It is free, signposted from every approach in the village, and was named a national Nationalerbe-Baum in 2023.",
+  "meta_description": "The Tassilolinde, 700 to 900 years old and about 14m round, is one of Bavaria's largest limes. Free, signposted in Wessobrunn village, Germany.",
+  "question_meta": "The Tassilolinde in Wessobrunn is 700 to 900 years old, one of Bavaria's largest limes. Its legend, its true age, and how to find it in the village.",
+  "question_answer": "The oldest tree in Wessobrunn is the Tassilolinde, a large-leaved lime growing beside the wall of the former monastery. The German Dendrological Society dates it at 700 to 900 years, based on the structure of its stem. It is free to visit and signposted from every approach in the village, though visitors now view it from a marked walkway rather than standing directly beneath it.",
+  "question_context": "The legend attached to this lime has an arithmetic problem. Duke Tassilo III is said to have slept beneath it in 753 and founded Kloster Wessobrunn on the strength of the dream. The duke is real and the monastery is real, but the tree is several centuries too young for either: the 700 to 900 year estimate is read from the stem rather than from any record, and the sleeping-under-the-tree part is treated as a later embellishment of the founding story rather than history. The trunk needs no legend to be remarkable: it measures about 14 metres round, the third-largest lime girth recorded in Bavaria after the Wolframslinde and the Kasberger Linde, under a crown roughly 27 metres across. One source wonders whether it was planted around a rebuilding of the abbey in the 1280s, but nobody has a documented planting date for it. Bavaria protected the tree as a Naturdenkmal in 1980, and in October 2023 it was made a Nationalerbe-Baum, a small and prestigious national heritage designation. The path beside it was rerouted to keep feet off the root plate, so visitors today see it from a few metres out rather than standing beneath the crown.",
+  "hero_tree_id": "wes_001",
+  "oldest_tree_id": "wes_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Wessobrunn?",
+      "a": "The Tassilolinde, a large-leaved lime beside the former monastery wall, dated by the German Dendrological Society at 700 to 900 years."
+    },
+    {
+      "q": "Did Duke Tassilo really sleep under this tree?",
+      "a": "That is the local legend, but the tree itself is centuries too young to have existed in 753, when the monastery was founded. Wikipedia treats the story as a later embellishment rather than documented history."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on a public path in the village, signposted from every approach, though the path was moved a few metres out to protect the root plate."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "There is no rail station in Wessobrunn itself. The nearest is Weilheim (Obb.), about 12km away, with a connecting bus service into the village."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wes_001",
+      "name": "The Tassilolinde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "roughly 700 to 900 years",
+      "age_min": 700,
+      "age_max": 900,
+      "girth_cm": 1415,
+      "location": {
+        "address": "Beside the former Kloster Wessobrunn monastery wall, Wessobrunn, Bavaria, Germany",
+        "latitude": 47.875806,
+        "longitude": 11.029992,
+        "neighbourhood": "Wessobrunn village centre, next to the monastery grounds"
+      },
+      "story": "The legend attached to this lime has an arithmetic problem. Duke Tassilo III is said to have slept beneath it in 753 and founded Kloster Wessobrunn on the strength of the dream. The duke is real, the monastery is real, and the tree is several centuries too young for either. The German Dendrological Society puts it at 700 to 900 years, read from the structure of the stem rather than from any record, and the sleeping-under-the-tree part is treated as a later embellishment of the founding story rather than history.\n\nThe trunk needs no legend. It measures about 14 metres round, the third-largest lime girth recorded in Bavaria after the Wolframslinde and the Kasberger Linde, under a crown roughly 27 metres across. Height is where the sources part company, ranging from 17 to 25 metres, which is what happens when a tree this broad gets measured by different people in different decades.\n\nIt grows against the wall of the former monastery, signposted from every approach in the village. One source wonders whether it went in around a rebuilding of the abbey in the 1280s, but nobody has a planting date for it; if you know of one, tell us. Bavaria protected it as a Naturdenkmal in 1980, and in October 2023 it was made a Nationalerbe-Baum, a national heritage designation kept deliberately short.\n\nYou can no longer stand directly under it. The path was moved a few metres out to keep feet off the root plate.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Tassilolinde",
+        "https://nationalerbe-baeume.de/project/tassilolinde-wessobrunn-nahe-ammersee-oberbayern/",
+        "https://www.baumkunde.de/baumregister/92-tassilolinde_wessobrunn_nationalerbe_baum_nr_30/"
+      ],
+      "access": "Free, on a public path in the village, signposted from everywhere in Wessobrunn. The path was rerouted and standing directly under the crown is no longer permitted, to protect the root plate; visitors view it from a marked walkway a few metres off.",
+      "transport": "In the centre of Wessobrunn village, next to the former monastery; no rail station in the village itself, nearest is Weilheim (Obb.) about 12km away with connecting bus service.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

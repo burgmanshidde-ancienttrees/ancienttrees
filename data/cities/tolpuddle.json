@@ -1,0 +1,62 @@
+{
+  "city": "Tolpuddle",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "The British trade union movement has a birthplace with a postcode, and it is a sycamore on the village green in Tolpuddle, Dorset. Six farm labourers met under this tree in 1833 to discuss forming an agricultural union, were tried and transported to Australia for it, and came home after a public campaign overturned their sentences. The tree, roughly 340 years old and the largest sycamore in Dorset, still stands on the open green, free, beside the museum that tells their story.",
+  "meta_description": "The Tolpuddle Martyrs Tree, a 340-year-old sycamore, is where six farm labourers founded a trade union in 1833. Free, on the open village green.",
+  "question_meta": "The Tolpuddle Martyrs Tree, roughly 340 years old, is where Britain's trade union movement began in 1833. Its story, its size, and how to reach it.",
+  "question_answer": "The oldest tree in Tolpuddle is the Tolpuddle Martyrs Tree, a sycamore on the village green in Dorchester, Dorset. A 2005 assessment dated it to approximately 320 years, which puts it near 340 today. It is the largest sycamore in Dorset, at 6.06 metres round, and it is free to see, standing in the open on the public green.",
+  "question_context": "In 1833, six Tolpuddle farm labourers met under this tree to discuss forming an agricultural trade union against falling wages. Six were arrested, tried in 1834 under an anti-mutiny act of 1797 for swearing a secret oath, and transported to Australia for seven years of penal labour. A mass petition and public marches overturned the sentences, and the men returned home after roughly three years; they are remembered as founding figures of the British trade union movement, and Tolpuddle holds an annual festival every July that draws thousands, centred on the village and this tree. The tree itself was about 150 years old on the day the Martyrs met beneath it. It is hollow enough that a television presenter was once lowered inside it for a National Trust documentary, and in 2023 the trunk was pollarded specifically to take weight off the limbs, work expected to extend its life by roughly two more centuries. It was named one of the 50 Great British Trees for the Queen's Golden Jubilee in 2002 and shortlisted for England's Tree of the Year in 2015.",
+  "hero_tree_id": "tol_001",
+  "oldest_tree_id": "tol_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Tolpuddle?",
+      "a": "The Tolpuddle Martyrs Tree, a sycamore on the village green, dated to roughly 320 years in a 2005 assessment, which puts it near 340 today."
+    },
+    {
+      "q": "Why is it called the Martyrs Tree?",
+      "a": "In 1833, six farm labourers met under it to found an agricultural trade union. They were arrested, tried and transported to Australia; a public campaign brought them home, and they are remembered as founders of the British trade union movement."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open on Tolpuddle's public village green, with no gate, ticket or permission needed. The Tolpuddle Martyrs Museum next door is also free entry."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Moreton railway station is nearest, about 3 miles away. A limited local bus service (route CR9) connects Tolpuddle with Dorchester, about 7 miles off."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tol_001",
+      "name": "The Tolpuddle Martyrs Tree",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "roughly 340 years",
+      "age_min": 320,
+      "age_max": 360,
+      "girth_cm": 606,
+      "location": {
+        "address": "The Village Green, Tolpuddle, Dorchester, Dorset, DT2 7EW",
+        "latitude": 50.74943,
+        "longitude": -2.29679,
+        "neighbourhood": "Tolpuddle village green"
+      },
+      "story": "The British trade union movement has a birthplace with a postcode, and it is a sycamore on a village green in Dorset. In 1833 six farm labourers met under this tree to discuss forming an agricultural union as their wages fell. In 1834 they were tried under an anti-mutiny act of 1797, not for the union itself but for swearing a secret oath, and transported to Australia for seven years of penal labour. A mass petition and public marches overturned the sentences, and the men were home after roughly three.\n\nThe tree was about 150 years old on the day they sat under it. A 2005 assessment dated it to approximately 320 years, which puts it near 340 now, though that dating is itself two decades old. At 6.06 metres round at chest height it is the largest sycamore in Dorset, and hollow enough that a television presenter was once lowered inside it for the National Trust.\n\nHollow is not the same as finished. In 2023 the trunk was pollarded to take weight off the limbs, work expected to buy it another two centuries. Every July the village fills for the Tolpuddle Martyrs Festival and several thousand people walk past a tree that was named one of the 50 Great British Trees in 2002 and shortlisted for England's Tree of the Year in 2015. The museum beside it is free, and so is the green.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Tolpuddle_Martyrs_Tree",
+        "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=11766"
+      ],
+      "access": "Free. Stands in the open on Tolpuddle's public village green, owned/managed by the National Trust; no gate, ticket or permission needed. The Tolpuddle Martyrs Museum next door is a separate, free-entry attraction.",
+      "transport": "Moreton railway station is the nearest, about 3 miles away. A limited Damory Coaches bus service (route CR9, a few times a day on weekdays) connects Tolpuddle with Dorchester, about 7 miles off.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}

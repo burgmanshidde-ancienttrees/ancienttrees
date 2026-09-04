@@ -1,0 +1,62 @@
+{
+  "city": "Ibiza",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Ibiza is covered in Aleppo pine, and very little of it reaches real size. The Pi de Can Reiet is the exception, a roadside pine north of Santa Eularia des Riu that the Balearic register dates at 100 to 150 years, its trunk 111 centimetres across at the base. A metal hunting-ban plate once hung from it. It stands at the kilometre 1.6 marker on the road to Sant Joan, owned by the island council, free to see from the roadside, about twenty minutes by car from Ibiza Town.",
+  "meta_description": "The Pi de Can Reiet, a 100 to 150 year old Aleppo pine, stands roadside near Santa Eularia des Riu on Ibiza. Free, visible from the road.",
+  "question_meta": "The Pi de Can Reiet, one of Ibiza's largest Aleppo pines, stands at the roadside near Santa Eularia. Its age, its leaning crown, and how to find it.",
+  "question_answer": "The oldest tree on Ibiza on record is the Pi de Can Reiet, an Aleppo pine at kilometre 1.6 of the road from Santa Eularia des Riu to Sant Joan de Labritja. The Balearic register dates it at 100 to 150 years. It is free to see, visible from the public road, about 20 minutes by car from Ibiza Town.",
+  "question_context": "The official Balearic register gives the tree's trunk diameter as 111 centimetres at the base, which works out to roughly three and a half metres round, and a 2022 island survey of notable trees independently corroborates the species, age band and location. Nobody has narrowed the 100 to 150 year estimate further. The register describes its crown as unbalanced and inclined, which is why the Consell Insular d'Eivissa i Formentera, the island council that owns the tree outright, periodically comes back to take weight out of the branches. A metal plate recording a hunting ban was once fixed to the trunk and has since been removed. It was catalogued as a singular tree on 11 June 1993, one of a short list of individual trees the Balearic government protects by name rather than as part of a wider species or habitat designation. There is no bus stop and no path leading up to it: it is a roadside tree, seen rather than visited at length.",
+  "hero_tree_id": "ibz_001",
+  "oldest_tree_id": "ibz_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree on Ibiza?",
+      "a": "The Pi de Can Reiet, an Aleppo pine at the roadside near Santa Eularia des Riu, dated by the Balearic register at 100 to 150 years."
+    },
+    {
+      "q": "Why does it lean?",
+      "a": "The register describes its crown as unbalanced and inclined, which is why the island council, which owns the tree, regularly removes weight from the heavier side."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, it is visible from a public road and there is no ticket or gate. It is a roadside stop rather than a place to walk around."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car, about 20 minutes from Ibiza Town along the road to Sant Joan de Labritja; the tree stands at the km 1.6 marker. There is no dedicated bus stop; the nearest regular service runs into Santa Eularia des Riu, about 1.6km away."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ibz_001",
+      "name": "Pi de Can Reiet",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "100 to 150 years",
+      "age_min": 100,
+      "age_max": 150,
+      "girth_cm": 349,
+      "location": {
+        "address": "Roadside at km 1.6 of the road from Santa Eularia des Riu to Sant Joan de Labritja",
+        "latitude": 38.985086,
+        "longitude": 1.476783,
+        "neighbourhood": "Santa Eularia des Riu, Ibiza"
+      },
+      "story": "Somebody once nailed a hunting ban to this pine. The metal plate has since been taken off the trunk, but for a while the tree was doing the work of a signpost on the road north out of Santa Eularia des Riu. It still stands at the kilometre 1.6 marker, close enough to see from the road.\n\nAleppo pine is common all over Ibiza and very little of it reaches this size. The trunk measures 111 centimetres across at the base, which works out at roughly three and a half metres round, on a tree the Balearic register dates at 100 to 150 years. Nobody has narrowed that band further, and if you know when it went in, tell us.\n\nIt leans. The register describes the crown as unbalanced and inclined, which is why the island council, which owns the tree outright, keeps coming back to take weight out of the branches. A crown that heavy on one side is not a thing you leave to the next storm.\n\nIt was catalogued as a singular tree on 11 June 1993, on a short list of individual trees the Balearic government protects by name rather than by species. There is no bus stop and no walk up to it. It is a roadside tree about twenty minutes by car from Ibiza Town, and seeing it is a stop rather than an afternoon.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/n/pi_de_can_reiet-21509/",
+        "https://www.periodicodeibiza.es/pitiusas/ibiza/2022/01/21/1690971/arboles-historia-parecen-autenticas-obras-arte.html"
+      ],
+      "access": "Free, visible from a public road. Owned by the Consell Insular d'Eivissa i Formentera (the island council itself), catalogued 1993.",
+      "transport": "By car, roughly 20 minutes from Ibiza Town along the road to Sant Joan; the tree stands at the km 1.6 marker. No specific bus stop identified; nearest regular service runs into Santa Eularia des Riu, about 1.6 km away by road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
