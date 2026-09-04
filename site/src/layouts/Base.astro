@@ -173,9 +173,14 @@ const year = new Date().getFullYear();
         one control that pays for itself. This reverses that half deliberately.
 
         Convention rather than an idea of ours: komoot's own phone header, in
-        the screenshot he sent, is exactly this shape, a filled pill on the
-        right with the hamburger beside it, and AllTrails, Booking and Airbnb
-        all keep one filled CTA visible there. What we do NOT take is the
+        the screenshot he sent, is exactly this shape, mark then filled pill
+        then hamburger, and AllTrails, Booking and Airbnb all keep one filled
+        CTA visible there. This sentence used to say "a filled pill on the
+        right with the hamburger beside it", which is the mirror image of the
+        table it cites, and the CSS followed the sentence rather than the
+        table; Hidde caught it the same day. The menu button owns the outer
+        corner and the pill sits inboard of it, which the mobile block in
+        style.css sets with flex order and explains. What we do NOT take is the
         full-screen sheet from the same screenshot, for the reason recorded in
         CONVENTIONS.md 2026-09-03: search is our only channel and Google names
         that sheet as the intrusive interstitial it penalises.

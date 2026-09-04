@@ -432,7 +432,19 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
      check reads absolutely positioned pseudo-elements exactly so a control can
      look small and still be hittable. Shrinking the box alone would fail that
      gate, and rightly. */
-  .bar-links a.bar-cta { position: relative; height: 36px; padding: 0 0.75rem; font-size: 12.5px; }
+  /* The MENU BUTTON owns the edge, the pill sits inboard of it (Hidde,
+     2026-09-04: "ik zou zweren dat al je conventies je gaan vertellen dat die
+     andersom moeten"). He is right, and CONVENTIONS.md 2026-09-04 already
+     recorded it from his own komoot screenshot, "mark, a filled pill, a
+     hamburger", left to right; the build did it the other way round and the
+     comment in Base.astro then described the mirror image of the table above
+     it. AllTrails, Airbnb and Booking all park the menu button in the outer
+     corner too. The reason it is a convention and not a taste: the menu is the
+     one control on every page, so it must never move, while the CTA comes and
+     goes; putting the menu inboard makes the fixed thing shift whenever the
+     movable thing appears. Flex order rather than a second DOM node, so the
+     tab order still reaches the menu before the ad for our own app. */
+  .bar-links a.bar-cta { position: relative; height: 36px; padding: 0 0.75rem; font-size: 12.5px; order: -1; }
   .bar-links a.bar-cta::before { content: ""; position: absolute; inset: -4px; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
   .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
