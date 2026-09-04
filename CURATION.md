@@ -2,6 +2,40 @@
 
 <!-- archive-index -->
 
+## Lisbon, 2026-09-04: +2 from getLISBON's own writing
+
+getLISBON (contact@getlisbon.com) replied to batch-006 suggesting two jacarandas
+at the Jardim Botanico da Ajuda, and proposed a mutual link. Researched from
+their two published articles rather than by asking them questions.
+
+- **lis_034, The First Jacarandas of Lisbon.** Two surviving originals of the
+  specimens Felix de Avelar Brotero acclimatised from 1811; he distributed seed
+  across the city, which is why Lisbon is a jacaranda city at all. Both sources
+  (getLISBON; A Mensagem 2025 and 2026) say the pair are the LAST in Lisbon to
+  flower, and neither says where in the garden they stand. Published as ONE
+  entry for two trees (the surviving pair is itself the destination), pin at the
+  garden, location_precision approximate, and the page asks the reader which two
+  they are. Age derived from Brotero's directorship, not from a planting date.
+  No photograph: Commons geosearch around the garden returns 50 files, all from
+  one generic Flickr batch, none identifiable as these two.
+- **lis_035, The Paineira of Rua dos Jeronimos.** Named in their public-interest
+  trees article and verified against ICNF processo KNJ1/404: Ceiba crispiflora
+  H.B.et K., arvore isolada, classified D.R. n.o 298 II Serie 27/12/2001, girth
+  4.2 m, height 24 m, crown 22 m, measured 2015, per-tree coordinate. Named
+  "Paineira (Ceiba crispiflora)" under hard rule 9: crispiflora is accepted and
+  distinct from pentandra ("Kapok") and speciosa ("Silk Floss Tree"), so
+  borrowing either name would group three species under one page.
+
+Not resolved and worth a later pass: their article also lists a Ficus
+macrophylla group at Largo Hintze Ribeiro, which ICNF holds as AIP11066601C at
+38.71869,-9.15517. That is a different location from our lis_013 (Jardim Franca
+Borges) and may be a tree we do not have.
+
+Hosts that refused this pass: www.nationalgeographic.pt and www.publico.pt both
+return HTTP 403 to WebFetch. Fast fail, not a hang, so they cost a second
+rather than a window; not added to the blocklist for that reason.
+
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-08](archive/CURATION-2026-08.md)

@@ -1,6 +1,48 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 (session) - getLISBON offered a link, the first in 220 mails; two Lisbon trees and per-tree sources shipped before the reply
+
+**Somebody offered us a backlink for the first time.** getLISBON, a Lisbon city
+blog we already cited on six trees, answered the batch-006 mail: they will
+mention and link ancienttrees.app in their article on Lisbon's public-interest
+trees, in both the Portuguese and English versions, and they suggested two
+jacarandas at the Jardim Botanico da Ajuda. Twenty-two days and 220 mailed
+addresses in, with 30 human replies, nobody had offered a link before this one.
+
+**Their own articles carried more than their mail did, so the questions became
+research.** Rather than write back with a list of things to ask, I read what
+they had published. Both trees are live:
+
+- **The First Jacarandas of Lisbon** (lis_034). Every jacaranda in the city
+  descends from specimens Felix de Avelar Brotero acclimatised in that garden
+  from 1811, and he gave the seed away to anyone who would plant it. Two of the
+  originals survive, and they are the last trees in Lisbon to flower each year,
+  which is the best_time the entry ships with. Second source independent of
+  them: A Mensagem, 2025 and 2026. Nobody says WHERE in the garden the two
+  stand, so the pin is the garden, the precision says approximate, and the page
+  asks the reader which two they are.
+- **The Paineira of Rua dos Jeronimos** (lis_035), from their other article and
+  verified against the ICNF register we already held: classified December 2001,
+  4.2 m round, 24 m tall, per-tree coordinate.
+
+**Tree pages name their sources now, in all eight languages.** /sources has
+claimed since yesterday that "each tree page lists the exact sources used for
+that tree", and no page did. We store verified_sources on 2,470 of 2,472 trees
+and rendered them nowhere, so 1,588 distinct outside websites were used and
+credited to nobody, under licences that mostly oblige attribution. That was a
+debt before anybody asked for a link back, and it is also the thing that makes
+this scale: every one of those 1,588 can now be written to with "we already
+link to you from N pages" instead of a request.
+
+**FOR HIDDE: the reply is drafted and waiting, in `drafts/reply-getlisbon.md`.**
+It gives before it asks, because both trees are already live and getLISBON is
+cited with a link on both pages. It asks two things: which two jacarandas they
+are (and a photograph if they have one), and that their Portuguese article link
+to /pt/lisbon and the English one to /lisbon rather than the homepage, since
+that is where their own readers land on the trees they just read about. Do not
+send it before the deploy is green and both pages load.
+
 ## 2026-09-04 (session) - A published photograph now outlives the account; the person is unlinked from it
 
 Your ruling, and it changed what deletion does. Until today deleting an
