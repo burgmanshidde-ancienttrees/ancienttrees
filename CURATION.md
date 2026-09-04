@@ -10,6 +10,18 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-04 (continuation) - 3 single-tree places from famous-Japan batches 1-3; Boise/Long Beach/Little Rock register scouting
+
+Finished a standing famous-Japan verify pass an earlier attempt in this window left uncommitted (verified and written, never merged). Three candidates became single-tree places under the 2026-08-31 exception:
+
+- **Kawago** (kwg_001, Kawago no Okusu): a hollow camphor with a 21m base girth, 5th-widest tree in Japan, national monument since 1924, a purpose-built park around it since 1995.
+- **Asago** (asg_001, Itoi-no-Okatsura): a decayed katsura stump ringed by roughly 80 root suckers reading as a small grove, national monument since 1951, reached only by a 90-minute walk up a gorge trail.
+- **Suzuka** (suz_001, Shiroko Fudan Zakura): type specimen of the Fudanzakura cherry cultivar (nearly year-round flowering, documented double season), one of only 39 cherries ever designated a national natural monument, a named cherry recorded at the same temple courtyard since 757-765 CE though the current wood is ~80 years old after repeated fire and storm damage.
+
+6 further batch candidates blocked (Wilson's Stump and Noin's Rain-Praying Camphor, both dead; the Tado pear habitat, Ono no Shidare-guri and Shikishima's bamboo, all population/habitat designations rather than single collectible trees; a mis-pinned Senbon Icho candidate corrected in place) and 1 held (Ushikubo-no-Nagi, verified but borderline on the single-tree-destination test). Recorded in `data/leads/_famous-japan.json` and a new `data/leads/nagoya.json` (holding the Tado block, 21.7km from Nagoya). `preflight.py` caught word-count violations on 2 of the 3 new pages (Contract B/C), fixed before commit; `city_names.py` run for all three (Kawago has no Wikipedia article to resolve against, a hamlet too small, reported not stored).
+
+**Register scouting (rung 5): 2 real finds, neither licensed yet.** `scout_next.py --target` walked Boise (empty, Idaho's Big Tree Program has no coordinates), then Long Beach and Little Rock, both real: California's `selectree.calpoly.edu/api/bigtrees/getAllBt` (266 champion trees statewide, found in a webapp's JS bundle, no stated licence anywhere on either Cal Poly site) and Arkansas's ArcGIS "Champion Trees layer" (117 points with a Public/Private flag baked into each description, no stated licence, and the state department's own page 403s to automated fetches via Cloudflare). Both recorded `stalled` in `data/register-scouting.json`, pending a licence ask; full detail in `OPEN_DATA_SURVEY.md`. Stopped before New Orleans (#63, next on the list) to avoid turning scouting into a sweep.
+
 ## 2026-09-04 (continuation) - Cagliari's Italian overlay (Contract J)
 
 `langcheck.py --next` named Cagliari the highest-impression untranslated Italian page (43 impressions, its English twin, over the ten-day window) with no `it` overlay yet. Hand-written full overlay for all 10 trees plus the city and question page, matching the established Italian style (Rome/Palermo/Naples/Florence/Milan/Bologna/Venice overlays, "alberi monumentali" as the search term). Faithful to the English facts throughout, including the honest gaps (Corongiu's lime keeps its unconfirmed trail-access note, the Tintitaco keeps its two disagreeing age figures). `i18ncheck.py` caught a missing `intro` key and two over-length meta fields (174 and 165 chars against the 155 limit), fixed before commit.
