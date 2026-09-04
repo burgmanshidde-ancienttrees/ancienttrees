@@ -404,6 +404,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ancient Trees";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. Your photographs stay on this phone; if you sign in, they sync to your own account so you keep them when you change phones.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Finding your way around happens on the phone; a position is only sent when you record a tree yourself, saved with that record.";
@@ -452,6 +453,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ancient Trees";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To photograph the tree you are standing in front of. Your photographs stay on this phone; if you sign in, they sync to your own account so you keep them when you change phones.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "So the map can open on the remarkable old trees closest to you. Finding your way around happens on the phone; a position is only sent when you record a tree yourself, saved with that record.";
