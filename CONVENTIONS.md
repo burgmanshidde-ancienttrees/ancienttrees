@@ -1061,3 +1061,56 @@ Read 2026-09-04:
 - Hidde's screenshot of the AllTrails app, Klompenpad Netelenburchpad
 - https://support.google.com/maps/answer/6230175 (Rate & Review, five stars, in the Reviews section)
 - https://support.strava.com/hc/en-us/articles/216919067 (kudos)
+
+---
+
+## Saying how precise a location is (2026-09-04)
+
+**Reference: Airbnb, iNaturalist, Google Maps, AllTrails.**
+
+Nobody labels a pin. Airbnb's own words are "General location" against
+"Precise location", and the work is done by the MAP: a shaded circle for the
+general one, a plain pin for the precise one. iNaturalist obscures a location
+by drawing a different marker shape, and calls the state "obscured" only in
+its settings, never on the observation. Google Maps has no such label at all,
+and AllTrails states no precision on a trail.
+
+Two things follow, and Hidde made both points on the same day ("is dat
+uberhaupt duidelijk? snappen mensen dat?"):
+
+**"Pin" is our database field, not a word a reader uses.** The label is
+"Location". What the reader wants to know is where they will end up, not what
+kind of coordinate we hold.
+
+**The values have to be a real opposite pair.** "Exact" against "Approximate"
+is one; "Confirmed" against "Approximate" is not, because the opposite of
+confirmed is unconfirmed, which says something about our records rather than
+about their walk.
+
+What does NOT change is the honesty rule this whole project runs on: an
+approximate location says so, in the block and in the line that asks the
+reader to place it. Airbnb shows it, we say it, and either is honest; what
+neither does is dress an approximate position up as an exact one.
+
+Read 2026-09-04:
+- https://www.airbnb.co.uk/resources/hosting-homes/a/setting-expectations-with-an-accurate-location-491
+- https://www.inaturalist.org/pages/geoprivacy
+
+---
+
+## Setting a species name in a small space (2026-09-04)
+
+**Reference: Seek by iNaturalist, iNaturalist, PictureThis.** The common name
+is the heading and the scientific name sits under it, smaller and italic. Seek
+lets a person choose which of the two leads, which is the tell: they are one
+fact in two registers, never two separate facts to be laid out apart.
+
+The measurement that matters more than the reference, taken 2026-09-04 at
+393 pt: a three-column fact row cannot hold a species name. "Years old
+550-830" and "Location Approximate" leave roughly 46 points for the third
+column, and no species name fits in 46 points. So the choice is not a matter
+of taste, it is arithmetic: **at most two columns, or the species goes on its
+own line.**
+
+Read 2026-09-04:
+- https://forum.inaturalist.org/t/display-both-scientific-and-common-names-in-seek/32834
