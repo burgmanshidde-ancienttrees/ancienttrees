@@ -411,7 +411,8 @@
     "https://commons.wikimedia.org/wiki/File:Urp%C3%ADnska_alej_2023.jpg",
     "https://commons.wikimedia.org/wiki/File:Urp%C3%ADnska_alej_2023b.jpg"
    ],
-   "status": "lead"
+   "status": "blocked",
+   "blocked_reason": "Not a collectible point: sk.wikipedia confirms it is a protected avenue of 52 registered trees (42 large-leaved lime, 9 horse chestnut, 1 field maple) strung along the Calvary path up Urpin hill, Banska Bystrica, protected as one ensemble since 1983. An avenue is blocked per the standing rule; no single specimen singled out as the one to stand at."
   },
   {
    "name": "Gaštan jedlý v Častej",
@@ -422,7 +423,9 @@
     "https://commons.wikimedia.org/wiki/File:456,_Ga%C5%A1tan_jedl%C3%BD_v_%C4%8Castej_-_poh%C4%BEad_z_juhov%C3%BDchodu.jpg",
     "https://commons.wikimedia.org/wiki/File:456,_Ga%C5%A1tan_jedl%C3%BD_v_%C4%8Castej_-_poh%C4%BEad_z_v%C3%BDchodu_1.jpg"
    ],
-   "status": "lead"
+   "status": "lead",
+   "species": "Sweet Chestnut (Castanea sativa)",
+   "note_verify": "Verified real and alive: sk.wikipedia (Gastan jedly v Castej) plus Ekopolis 'Strom roka' coverage agree it is the largest sweet chestnut in Slovakia, roughly 500 years old, girth ~830-866cm, 23-25m tall, protected since Dec 1997/1998 (sources differ by a year), standing on the edge of vineyards above Casta village, Pezinok district. Two-source bar clears. NOT SHIPPED: (1) straight-line distance to Bratislava centre is ~34km, road distance ~32km, and it stands above the village rather than in it, so it does not clear the ~30-minute public-transport day-trip boundary for joining Bratislava as a day-trip tree. (2) As its own single-tree place it is a fine specimen but I found no evidence of the kind of fame (multi-language Wikipedia, real visitor demand) that would pass the 'would somebody travel specifically for this tree' test on its own; it reads as a good regional curiosity rather than a destination. Left as a lead rather than blocked: a future Pezinok-area cluster, or stronger fame evidence, could resurrect it."
   },
   {
    "name": "Grinavský topoľ",
@@ -433,7 +436,9 @@
     "https://commons.wikimedia.org/wiki/File:499,_Grinavsk%C3%BD_topo%C4%BE_-_poh%C4%BEad_z_v%C3%BDchodu_1.jpg",
     "https://commons.wikimedia.org/wiki/File:499,_Grinavsk%C3%BD_topo%C4%BE_-_poh%C4%BEad_z_v%C3%BDchodu_2.jpg"
    ],
-   "status": "lead"
+   "status": "shipped",
+   "species": "Black Poplar (Populus nigra)",
+   "note_shipped": "Verified and shipped as brt_007, joining Bratislava as a day-trip tree (Grinava/Pezinok, reachable via the Pezinok zastavka rail stop). See data/research/famous-slovakia-batch1-verified.json for full sourcing."
   },
   {
    "name": "Drnava oak",
@@ -576,9 +581,9 @@
     "https://commons.wikimedia.org/wiki/File:401,_Lipa_u_Belansk%C3%BDch_-_poh%C4%BEad_z_v%C3%BDchodu.jpg",
     "https://commons.wikimedia.org/wiki/File:401,_Lipa_u_Belansk%C3%BDch_-_poh%C4%BEad_zo_severov%C3%BDchodu.jpg"
    ],
-   "status": "lead",
-   "species": "Lime (Tilia sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "status": "shipped",
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "note_shipped": "Verified and shipped as myj_001, new place 'Myjava' (Turá Lúka), data/research/famous-slovakia-batch1-verified.json. See that record for full sourcing."
   },
   {
    "name": "Lipského lipy",
@@ -639,7 +644,9 @@
     "https://commons.wikimedia.org/wiki/File:375,_Tren%C4%8Dianske_gink%C3%A1_-_informa%C4%8Dn%C3%A1_tabu%C4%BEa_2.jpg",
     "https://commons.wikimedia.org/wiki/File:375,_Tren%C4%8Dianske_gink%C3%A1_-_prostredn%C3%A9_ginko.jpg"
    ],
-   "status": "lead"
+   "status": "lead",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "note_verify": "Verified as three real, alive ginkgo trees (sk.wikipedia gives coordinates matching this lead exactly, ~120 years old each, girths 286/355/221cm; confirmed still standing by a 2023-08-08 standard.sk article on a fourth, unprotected ginkgo that WAS felled in 2008 for a hotel that was never built, which explicitly says 'three other ginkgo trees still stand near the former Slovlik building on Stefanika street'). Two sources agree, alive, compact ensemble on one street corner, protected under one 1990 designation, a real collectible point. NOT SHIPPED as its own place: Trencin is ~120km from Bratislava (no day-trip fold-in possible) and, held against the single-famous-tree exception's own bar (would somebody travel specifically for THIS), three unusually old ornamental street ginkgos with a minor felling controversy read as a good local curiosity rather than a genuine standalone destination, unlike Bojnice's or Myjava's candidates in this same batch. Leave as a lead for a future Trencin cluster (the town has a well-known castle that could anchor a real city page) rather than publish alone."
   },
   {
    "name": "Hraničná hruška, Borský Svätý Júr",
