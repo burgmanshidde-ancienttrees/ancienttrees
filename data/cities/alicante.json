@@ -2,11 +2,11 @@
   "city": "Alicante",
   "country": "Spain",
   "status": "needs_curation",
-  "intro": "Fourteen monumental figs stand across four parts of Alicante. Ten cluster in and around the city centre: four hold Plaza Gabriel Miro, each catalogued separately by the Valencian register, four more in Plaza Portal de Elche and one in Parque de Canalejas, and a tenth faces Postiguet beach in the small Paseito de Ramiro park. A kilometre south in Benalua, two more wait in a second cluster, the widest of three figs stands at the railway station's entrance, and a kilometre north in Carolinas Bajas, the smallest of the fourteen completes the page.",
-  "meta_description": "Fourteen monumental figs across Alicante, from Plaza Gabriel Miro's giant Moreton Bay figs to Benalua's oldest, widest fig, saved twice from the axe.",
+  "intro": "Fifteen monumental trees stand across five parts of Alicante, fourteen of them figs. Ten cluster in the city centre: four hold Plaza Gabriel Miro, four more in Plaza Portal de Elche and Parque de Canalejas, and a tenth faces Postiguet beach. A kilometre south in Benalua, two more wait in a second cluster, the widest of three figs stands at the station entrance, and a kilometre north in Carolinas Bajas, the smallest of the figs stands alone. The fifteenth is different: a Norfolk Island pine on Plaza de Calvo Sotelo, over a century old.",
+  "meta_description": "Fifteen monumental trees in Alicante: giant figs from Plaza Gabriel Miro to Benalua, plus a century-old Norfolk Island pine downtown.",
   "question_meta": "Alicante's oldest tree is the Ficus de Benalua: over 150 years old, and the widest trunk of any fig on this page.",
   "question_answer": "Alicante's oldest tree is the Ficus de Benalua, over 150 years old by the city's own figure and the widest trunk on this page by far. It stands a kilometre south of the city-centre figs, saved twice from removal: once when the city built a health centre next to it and moved the planned car park to protect its roots, and earlier still when a proposal to transplant it across the barrio was fought off by its own neighbours. Among the nine city-centre figs, only Ficus Gabriel Miro II has a published age, about 120 years, the thickest of the four Moreton Bay figs on Plaza Gabriel Miro. The rest carry no individual date.",
-  "question_context": "Ages are the weak part of the record here, and it is worth knowing why. The Valencian catalogue lists most of these fourteen figs with a girth, a height and a crown spread, and no planting date, because it measures trees rather than dates them. Two exceptions exist. The city government's own record for the Ficus de Benalua states an age over 150 years, tied to a documented planting: a sapling taken before 1860 from what is now the Jardin Botanico and replanted in the garden of the old Chalet de Grau, where it has stood since. And local reporting fills the gap for the thickest fig on Plaza Gabriel Miro, which todoalicante puts at about 120 years old on a canopy of almost forty metres, against a rounder 170 with no measurement behind it. For the rest there is only the setting: Parque de Canalejas was designed in 1886, the Gabriel Miro square took its present shape in 1918, and the station forecourt fig stands at what a 2026 report calls a century-old intersection, a fact about the site rather than a date for the tree. All fourteen stand on free, open ground, none of them gated.",
+  "question_context": "Ages are the weak part of the record here, and it is worth knowing why. The Valencian catalogue lists most of these fourteen figs with a girth, a height and a crown spread, and no planting date, because it measures trees rather than dates them. Two exceptions exist. The city government's own record for the Ficus de Benalua states an age over 150 years, tied to a documented planting: a sapling taken before 1860 from what is now the Jardin Botanico and replanted in the garden of the old Chalet de Grau, where it has stood since. And local reporting fills the gap for the thickest fig on Plaza Gabriel Miro, which todoalicante puts at about 120 years old on a canopy of almost forty metres, against a rounder 170 with no measurement behind it. For the rest there is only the setting: Parque de Canalejas was designed in 1886, the Gabriel Miro square took its present shape in 1918, and the station forecourt fig stands at what a 2026 report calls a century-old intersection, a fact about the site rather than a date for the tree. All fifteen stand on free, open ground, none of them gated.",
   "faq": [
     {
       "q": "What is the oldest tree in Alicante?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Alicante's monumental figs free to visit?",
-      "a": "Yes. They stand on open public squares, in Parque de Canalejas, in a health centre garden and a neighbourhood square in Benalua, and in a plaza in Carolinas Bajas. There is no gate, no ticket and no opening hour anywhere on this page. The root plates of the Gabriel Miro figs are fenced, so you walk around them rather than under them."
+      "a": "Yes. They stand on open public squares, in Parque de Canalejas, in a health centre garden and a neighbourhood square in Benalua, in a plaza in Carolinas Bajas, and in the case of the Norfolk Island pine, on the city's own Plaza de Calvo Sotelo. There is no gate, no ticket and no opening hour anywhere on this page. The root plates of the Gabriel Miro figs are fenced, so you walk around them rather than under them."
     },
     {
       "q": "Which is the biggest fig on this walk?",
@@ -461,6 +461,36 @@
       "transport": "Roughly 15-20 minutes on foot from TRAM Luceros (lines L1-L4); several city bus lines serve the Carolinas district nearby",
       "location_precision": "confirmed",
       "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ali_015",
+      "name": "The Araucaria of Plaza de Calvo Sotelo",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "over a century",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Plaza de Calvo Sotelo (Plaza de las Palomas), Alicante",
+        "latitude": 38.343606,
+        "longitude": -0.48818,
+        "neighbourhood": "City centre, between Avenida Doctor Gadea and Avenida Federico Soto"
+      },
+      "verified_sources": [
+        "https://www.alicante.es/sites/default/files/documentos/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante/senderos-centro.pdf (Ayuntamiento de Alicante's own walking-route brochure, stop 8, Plaza de Calvo Sotelo: 'un olmo, un platano de sombra ... y una enorme araucaria'; the companion species fact-sheet PDF at the same URL path (senderos-centro-arboles.pdf) captions a photo 'Araucaria en Plaza Calvo Sotelo')",
+        "https://anticalicante.blogspot.com/2026/05/alicante-ayer-y-hoy-plaza-de-calvo.html (independent local-history 'then and now' blog, fetched directly 2026-09-04, no citation to the Ayuntamiento brochure or Wikipedia in this post: 'La plaza destaca tanto por su arbolado -que incluye una imponente araucaria centenaria- como por ser un nucleo de gran tradicion social y festera')"
+      ],
+      "access": "Free, open public plaza in the city centre (popularly called Plaza de las Palomas), no gate or opening hours",
+      "transport": "TRAM Luceros stop (lines L1-L4) or Plaza de los Luceros, roughly 5-8 minutes on foot; about 350m from the Plaza Gabriel Miro fig cluster",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "A Norfolk Island Pine is neither a pine nor from anywhere near Spain. The species grows wild on one small island in the South Pacific, about eight kilometres end to end, and nineteenth-century gardeners carried it to every warm coast they could reach because it does something no Mediterranean native does. It builds itself in flat horizontal tiers, one stacked above the next, and it holds that shape in salt wind.\n\nAlicante's grows on Plaza de Calvo Sotelo, the square everyone here calls the Plaza de las Palomas after its pigeons. Local historians describe it as centenaria, over a hundred years old, and that is as precise as anybody has been willing to be. There is no planting record and nobody has put a tape around the trunk. If you know either figure, tell us.\n\nThe city's own walking route through the old centre stops on this square and names three trees: an elm, a plane and this one. The araucaria is the only conifer of the three and the easiest to pick out from across the plaza, a dark green spire in a place otherwise built for shade. The square is one of Alicante's social and festival grounds, which means the tree has spent its entire life standing over crowds. It is free, unfenced and open at every hour, five minutes on foot from the trams at Luceros.",
       "photo": {
         "url": null,
         "license": null,

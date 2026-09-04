@@ -1,0 +1,62 @@
+{
+  "city": "Omishima",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "One tree, and a footpath through it. The Living Gate is a camphor at Oyamazumi Shrine whose split, hollowed base forms a passage worshippers once walked to reach the inner sanctuary. Believers nearly killed it stripping bark as a longevity charm; it recovered by throwing new growth from its own roots. Put at 2,000 to 3,000 years old depending on the source, an Ehime Prefecture Natural Monument since 1951, free, open at every hour, a short detour off the Shimanami Kaido cycling route.",
+  "meta_description": "Ikiki no Gomon, the Living Gate: a camphor at Oyamazumi Shrine, Omishima, hollowed into a walkable passage. 2,000 to 3,000 years old. Free.",
+  "question_meta": "Omishima's mapped tree is Ikiki no Gomon, the Living Gate camphor, put at 2,000 to 3,000 years old.",
+  "question_answer": "Omishima's mapped tree is Ikiki no Gomon (The Living Gate), a camphor at Oyamazumi Shrine whose split and hollowed base forms a passage about two metres wide, three high and seven long, that worshippers walked through to reach the shrine's inner sanctuary. Its age is put at 2,000 to 3,000 years, a range that comes from two disagreeing sources rather than one measured figure.",
+  "question_context": "The main trunk's circumference is eleven metres, the trunk union fifteen and a half, and the exposed root mass at ground level, the part the passage runs through, thirty two. Ages disagree by source: the standard reference work on the island gives 2,000 years, the on-site information board gives 3,000, and neither is tied to a dating method anyone can check. The tree nearly died in the Meiji era after believers stripped its bark for use as a longevity charm, and it recovered the only way a camphor can, throwing fresh growth from its own root base; that secondary trunk, four and a half metres round, now carries the crown while the original stands spent beside it. Ehime Prefecture designated it a Natural Monument in 1951, separate from the wider grove of camphors elsewhere on the shrine grounds that carries its own national designation. It stands five minutes on foot from Oyamazumi Shrine's main hall on Omishima Island, reached by car via the Shimanami Kaido or by bus from Imabari Station.",
+  "hero_tree_id": "omi_001",
+  "oldest_tree_id": "omi_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Its hollowed, split base forms a natural passage that worshippers historically walked through on their way to Oyamazumi Shrine's inner sanctuary, which is where its name, the gate of the living tree, comes from."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Sources disagree: the standard local reference gives 2,000 years, the sign at the tree gives 3,000. Neither comes from a dating method that can be checked, so the honest answer is a wide range."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, open year round with no set hours and no ticket needed."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car via the Shimanami Kaido (about 10 minutes from Omishima IC to the shrine), or by bus from Imabari Station, about 65 minutes to the Oyamazumi Shrine stop plus a 5-minute walk."
+    }
+  ],
+  "trees": [
+    {
+      "id": "omi_001",
+      "name": "Ikiki no Gomon (The Living Gate)",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "roughly 2,000 to 3,000 years",
+      "age_min": 2000,
+      "age_max": 3000,
+      "girth_cm": 1100,
+      "location": {
+        "address": "Oku-no-in (inner sanctuary) of Oyamazumi Shrine, Omishima, Imabari, Ehime Prefecture, Japan",
+        "latitude": 34.24775,
+        "longitude": 133.00804,
+        "neighbourhood": "Omishima Island (Shimanami Kaido)"
+      },
+      "story": "There is a footpath through this tree. The split and hollowed base of the camphor forms a passage about two metres wide, three metres high and seven metres long, and worshippers walked through it on their way to the inner sanctuary of Oyamazumi Shrine. The name records exactly that: Ikiki no Gomon, the gate of the living tree.\n\nHow old it is depends on who you ask, and neither answer comes from a dating method anyone can check. The standard reference work on the island says 2,000 years. The board at the tree says 3,000. What has actually been measured is the size: eleven metres around the main trunk, fifteen and a half where the trunks meet, and thirty-two metres around the exposed root mass at ground level, which is the part you walk through.\n\nIt nearly died in the Meiji era, and its own believers were the reason. Bark taken from it was used as a charm for long life, stripped away until the original trunk was failing. The tree recovered the only way a camphor can, throwing fresh growth from its own root base. That second trunk, four and a half metres round, carries the crown today while the original stands spent beside it. One organism, regrown from itself.\n\nEhime Prefecture listed it as a Natural Monument in 1951. It sits five minutes from the shrine's main hall on Omishima, free and open at any hour, a short detour off the Shimanami Kaido.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E7%94%9F%E6%A8%B9%E3%81%AE%E5%BE%A1%E9%96%80",
+        "https://www.city.imabari.ehime.jp/kanko/spot/?a=239"
+      ],
+      "access": "Free, open year round, no set hours. A public path/steps has been built through the hollow root passage itself. About a 5-minute walk from Oyamazumi Shrine's main hall; no dedicated parking at the site (nearest is the free municipal Fuji Park lot).",
+      "transport": "Omishima Island, reached by car via the Shimanami Kaido (Omishima IC, about 10 minutes to the shrine) or by bus from Imabari Station (approx. 65 minutes to the Oyamazumi Shrine stop, then a 5-minute walk).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "city": "Sakegawa",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "One cedar, and a resemblance that made it famous. Seen from the field below, Kosugi no Osugi's two rounded crowns read as a pair of ears, and since about 2020 visitors have arrived with umbrellas to recreate a scene from an animated film. The village knew it first as Meoto-sugi, the married-couple cedar, its trunk split into two cores since a village monument listing in 1986. Somewhere between 700 and 1,000 years old, free, about half an hour by car from Shinjo Station.",
+  "meta_description": "Kosugi no Osugi, the Totoro Tree of Sakegawa: two rounded crowns read as ears. 700 to 1,000 years old, a village monument since 1986. Free.",
+  "question_meta": "Sakegawa's mapped tree is Kosugi no Osugi, known as the Totoro Tree, put at 700 to 1,000 years old.",
+  "question_answer": "Sakegawa's mapped tree is Kosugi no Osugi, a Japanese cedar known internationally as the Totoro Tree because its two rounded crowns, seen from the field below, resemble the ears of the animated character. Its age is genuinely disputed: Japanese Wikipedia gives 700 to over 800 years, while Yamagata Prefecture's own landscape register heads its entry with an estimate of 1,000, and neither source states a method.",
+  "question_context": "The trunk divides into two cores just above the base, which is why the village has long called it Meoto-sugi, the married-couple cedar, and Enmusubi no Sugi, the matchmaking cedar; a mountain deity is enshrined at its foot, and one local story has a lord of Shinjo sheltering under it from a blizzard while deer hunting. From around 2020 the tree's resemblance to a character from a well-known animated film turned it into an international destination, with visitors posing beneath it holding umbrellas. Its age is disputed: Japanese Wikipedia gives 700 to over 800 years, while Yamagata Prefecture's own landscape register heads the entry with an estimate of 1,000, and neither source states a method, so the honest range spans both. Its base measures 6.3 metres round, it stands about 20 metres tall, and its crown spans roughly 17 metres. Sakegawa Village listed it as a natural monument in November 1986. There is a public car park and a marked path from it, about half an hour by car from JR Shinjo Station; the path is not cleared in winter.",
+  "hero_tree_id": "skg_001",
+  "oldest_tree_id": "skg_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Its trunk splits into two rounded crowns that, seen from below, resemble a pair of ears, a resemblance to an animated film character that made it an international destination from around 2020."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. Japanese Wikipedia gives 700 to over 800 years; Yamagata Prefecture's own register estimates 1,000. Neither cites a method, so the honest range spans both."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, a village-designated natural monument with a public car park and marked path, nothing to book."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About half an hour by car or taxi from JR Shinjo Station; there is no direct train or bus, and the path from the car park is not cleared in winter."
+    }
+  ],
+  "trees": [
+    {
+      "id": "skg_001",
+      "name": "Kosugi no Osugi (the Totoro Tree)",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 700 to 1,000+ years (sources disagree)",
+      "age_min": 700,
+      "age_max": 1000,
+      "girth_cm": 630,
+      "height_m": 20,
+      "location": {
+        "address": "108-5 Magarikawa, Sakegawa Village, Mogami District, Yamagata Prefecture",
+        "latitude": 38.82005,
+        "longitude": 140.18726,
+        "neighbourhood": "Magarikawa, Sakegawa Village"
+      },
+      "story": "People arrive at this cedar carrying umbrellas, so they can stand underneath and recreate a scene from an animated film. From the field below, the tree's two rounded crowns read as a pair of ears, and from about 2020 that resemblance turned a cedar in a village of northern Yamagata into a destination people fly in for.\n\nThe village had always read the same shape differently. The trunk divides into two cores just above the base, so the tree has long been Meoto-sugi, the married-couple cedar, and Enmusubi no Sugi, the matchmaking cedar. A mountain deity is enshrined at its foot. One local story has a lord of Shinjo, out hunting deer, sheltering under it from a blizzard.\n\nThe age is genuinely disputed. Japanese Wikipedia gives 700 to over 800 years. Yamagata Prefecture's own landscape register heads the entry with an estimate of 1,000. Neither states a method, so the honest answer is somewhere between seven hundred and a thousand years and nobody has narrowed it. The dimensions are firmer: 6.3 metres around the base, about 20 metres tall, a crown roughly 17 metres across.\n\nSakegawa Village listed it as a natural monument in November 1986. It is free, with a car park and a marked path, about half an hour by car from Shinjo station and no closer by train. The path is not cleared in winter, and this part of Yamagata gets a great deal of snow.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%9D%89%E3%81%AE%E5%A4%A7%E6%9D%89",
+        "https://keikan.pref.yamagata.jp/vp_082/",
+        "https://www.tokyocreative.com/sights/6412-kosugi-no-osugi-totoro-tree",
+        "https://nextshark.com/totoro-cedar-tree-increasing-visitors"
+      ],
+      "access": "Free, a village-designated natural monument with a public car park and marked path; Japanese Wikipedia notes the path from the car park to the tree is not snow-cleared in winter, implying open, unstaffed access the rest of the year",
+      "transport": "No direct train or bus found; nearest station is JR Shinjo (Ou Main Line / Yamagata Shinkansen terminus), about 30 minutes by car or taxi from there",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

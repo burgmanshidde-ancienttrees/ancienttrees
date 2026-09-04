@@ -1,0 +1,62 @@
+{
+  "city": "Kawatana",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "One tree reads as a wood from a distance. The Camphor Forest of Kawatana is a single camphor whose eighteen major limbs spread a crown 58 by 53 metres wide, one of Japan's three great camphors and a National Natural Monument since 1922. It began dying back suddenly in 2017 and is slowly recovering, so the base is now cordoned off. Over a thousand years old by every source, free, no gate, ten minutes by taxi from Kawatana Onsen Station.",
+  "meta_description": "The Camphor Forest of Kawatana: a single tree with a crown 58 metres wide, one of Japan's three great camphors. Over 1,000 years old. Free.",
+  "question_meta": "Kawatana's mapped tree is the Camphor Forest of Kawatana, a single camphor over 1,000 years old.",
+  "question_answer": "Kawatana's mapped tree is Kawatana no Kusu no Mori (The Camphor Forest of Kawatana), a single camphor whose eighteen major limbs and 58 by 53 metre crown make it read as a small wood from a distance. It is counted among Japan's three great camphors and has stood as a National Natural Monument since 1922. Every source gives its age as over 1,000 years, with no upper figure and no stated method.",
+  "question_context": "The trunk measures 11.2 metres round and the tree stands 27 metres tall, with a crown spanning 58 by 53 metres from eighteen limbs branching about five metres up the trunk, which is why it reads from a distance as a small wood rather than one tree. Japan designated it a National Natural Monument in 1922 and counts it among the country's traditionally named Three Great Camphor Trees. In July 2017 it began dying back suddenly, shedding most of its foliage in one season; the city, the prefecture and the national Agency for Cultural Affairs graded it severely poor, its roots largely rotted, from a suspected but unconfirmed cause: fill dirt laid during nearby park development, starving the roots of oxygen. Since around 2021 new shoots and green leaves have been returning, tentatively, while restoration work continues, so the base is now cordoned off and visitors view it from a short distance rather than approach the trunk. The warlord Ouchi Yoshitaka's horse Hibarige is said to be buried nearby and enshrined as a horse deity, remembered every 28 March. The tree stands about 10 minutes by taxi from Kawatana Onsen Station on the JR San-in Main Line.",
+  "hero_tree_id": "kwt_001",
+  "oldest_tree_id": "kwt_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Despite its name, it is one single camphor tree, not a grove: eighteen major limbs branch about five metres up the trunk and spread a crown 58 by 53 metres wide, close to 180 metres around the drip line, which is why it reads as a small wood from a distance."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Every source gives it as over 1,000 years, with no upper bound stated and no dating method named."
+    },
+    {
+      "q": "Is it still alive?",
+      "a": "Yes, but declining and recovering rather than healthy. It began dying back suddenly in 2017 and was graded severely poor; new shoots have been returning since around 2021 while restoration work continues, so expect a survivor rather than a full canopy."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "About 10 minutes by taxi from Kawatana Onsen Station on the JR San-in Main Line. Free, no gate, no set hours, though the base itself is cordoned off during its recovery."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kwt_001",
+      "name": "Kawatana no Kusu no Mori (The Camphor Forest of Kawatana)",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "over 1,000 years",
+      "age_min": 1000,
+      "girth_cm": 1120,
+      "location": {
+        "address": "6895 Kawatana-Shitaono, Toyoura-cho, Shimonoseki, Yamaguchi Prefecture, Japan",
+        "latitude": 34.17025,
+        "longitude": 130.958389,
+        "neighbourhood": "Kawatana, Toyoura-cho"
+      },
+      "story": "It is called the Camphor Forest of Kawatana and it is a single tree. Eighteen major limbs leave the trunk about five metres up, and the crown covers 58 metres east to west by 53 north to south, close to 180 metres around the edge of its own shade. From any distance it reads as a small wood.\n\nJapan designated it a National Natural Monument in 1922 and counts it among the three great camphors of the country. The trunk measures 11.2 metres round, the tree stands 27 metres tall, and every source gives the age as over a thousand years with no method attached and no upper figure, so that is where it is left.\n\nIn July 2017 it began to die. It shed most of its foliage in one season, and the city, the prefecture and the national Agency for Cultural Affairs graded it severely poor, its roots largely rotted. The suspected cause has never been confirmed: fill dirt laid during work on the neighbouring park, starving the roots of oxygen. Since around 2021 new shoots and green leaves have been returning, tentatively, while restoration work continues. Go expecting a survivor rather than a full canopy.\n\nThe base is cordoned off, so you look at it from a few metres back. The warlord Ouchi Yoshitaka's horse Hibarige is said to be buried nearby and is enshrined as a deity, remembered every 28 March. Ten minutes by taxi from Kawatana Onsen station, free, no gate and no hours.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E5%B7%9D%E6%A3%9A%E3%81%AE%E3%82%AF%E3%82%B9%E3%81%AE%E6%A3%AE",
+        "https://yamaguchi-tourism.jp/spot/detail_10702.html",
+        "https://shimonoseki.goguynet.jp/2023/06/21/camphor-tree/"
+      ],
+      "access": "Free, publicly viewable. Reached in about 10 minutes by taxi/car from Kawatana Onsen Station (JR San-in Main Line), or about 20-30 minutes by car from the Chugoku Expressway (Kozuki IC or Shimonoseki IC). No fee or set hours found on the official tourism pages. Note the tree has been fenced/cordoned off around its base during its recovery, so visitors view it from a short distance rather than approach the trunk closely.",
+      "transport": "10 minutes by taxi from Kawatana Onsen Station, JR San-in Main Line.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

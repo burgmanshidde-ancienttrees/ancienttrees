@@ -1,0 +1,69 @@
+{
+  "city": "Matsumae",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Matsumae grows more than 250 cherry cultivars, and one of them began at a single tree. Kechimyaku Zakura, the Blood-Lineage Cherry, is the mother tree of the Matsumae-hayazaki, standing at Kozenji Temple in what became the northernmost castle town in Japan. Put at 200 to 300-plus years depending on the source. Hokkaido designated it a Memorial Tree in 1973. Free, on open temple ground, ten minutes on foot from the Matsushiro-shimo bus stop, best seen late April into early May.",
+  "meta_description": "Kechimyaku Zakura, Matsumae: the mother tree of the Matsumae-hayazaki cherry cultivar, 200 to 300+ years old. Free, at its best in late April.",
+  "question_meta": "Matsumae's mapped tree is Kechimyaku Zakura, the Blood-Lineage Cherry, put at 200 to over 300 years old.",
+  "question_answer": "Matsumae's mapped tree is Kechimyaku Zakura (The Blood-Lineage Cherry), the mother tree of the Matsumae-hayazaki cultivar (also called Naden), from which every tree of that cultivar in Matsumae's 250-plus-cultivar cherry collection descends. Its age is put at somewhere between a little over 200 and a little over 300 years, since sources disagree and none states a method.",
+  "question_context": "The tree stands in the grounds of Kozenji, a temple founded in 1575 in what became the northernmost castle town in Japan. The Matsumae-hayazaki cultivar is thought to be a cross between Takasago and Kasumizakura, believed to have reached Hokkaido via the Kitamae-bune coastal trading route from the Sea of Japan coast. Japanese Wikipedia gives its age as over 200 years in one place and over 280 in another; garden and tourism sources say over 300; none names a method, so the range is carried honestly rather than narrowed. It measures 5.5 metres round and stands 8 metres tall. Hokkaido designated it a Memorial Tree in 1973, and the temple's own name for it, meaning blood lineage, comes from a local story about a maiden and a family line. It is still tracked as an active bloom-forecast site on Japan's national cherry tracker. The temple grounds are free and open, about a 10-minute walk from the Matsushiro-shimo bus stop, reached by Hakodate Bus from JR Kikonai.",
+  "hero_tree_id": "mtm_001",
+  "oldest_tree_id": "mtm_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is the mother tree of the Matsumae-hayazaki cherry cultivar, also called Naden: every tree of that cultivar, in a town that grows more than 250 cherry cultivars, traces back to this one."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Sources disagree, from a little over 200 years to a little over 300, and none names a dating method, so the honest span covers both."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "Late April into early May, when the blossom opens. It is still tracked on Japan's national cherry bloom forecast."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By Hakodate Bus from JR Kikonai station to the Matsushiro-shimo stop, then a 10-minute walk. The temple grounds are free and open to the public."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mtm_001",
+      "name": "Kechimyaku Zakura (The Blood-Lineage Cherry)",
+      "species": "Matsumae Hayazaki Cherry (Prunus sp., cultivar 'Matsumae-hayazaki', presumed Prunus lannesiana x Prunus verecunda hybrid)",
+      "age_estimate": "200 to 300+ years (sources disagree)",
+      "age_min": 200,
+      "age_max": 320,
+      "girth_cm": 550,
+      "height_m": 8,
+      "location": {
+        "address": "Kozenji Temple, Matsushiro, Matsumae, Matsumae District, Hokkaido (address block 松城303)",
+        "latitude": 41.43152,
+        "longitude": 140.10604,
+        "neighbourhood": "Matsushiro, Matsumae"
+      },
+      "story": "Matsumae grows more than 250 cherry cultivars and one of them began here. This is the mother tree of the Matsumae-hayazaki, also known as Naden, thought to be a cross between Takasago and Kasumizakura; every tree of that cultivar traces back to this one.\n\nIt stands in the grounds of Kozenji, a temple founded in 1575 in what became the northernmost castle town in Japan. The cultivar is believed to have reached Hokkaido through the Kitamae-bune trade, the coastal shipping route that carried goods and plants north along the Sea of Japan.\n\nIts age depends on who you read. Japanese Wikipedia gives over 200 years in one place and over 280 in another. Garden and tourism sources say over 300. None of them names a method, so the honest span runs from a little over two hundred years to a little over three hundred. The measurements are not in dispute: eight metres tall, five and a half metres around.\n\nHokkaido designated it a Memorial Tree in 1973. The name comes from a story the temple still tells, about a maiden and a blood lineage, and it is the reason people know this cherry by name rather than as one more tree in a famous blossom town. It is still listed as a bloom-forecast site on the national cherry tracker, which is a plain way of saying it flowered again this spring. Free, on open temple ground, ten minutes on foot from the Matsushiro-shimo bus stop.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/血脈桜",
+        "https://tenki.jp/sakura/1/4/50065.html",
+        "https://garden-guide.jp/spot.php?i=kozenji-matsumae"
+      ],
+      "access": "Free, temple grounds open to the public. JR Kikonai station, then Hakodate Bus approx. 1.5 hours to Matsushiro-shimo stop, then 10 minute walk.",
+      "transport": "Matsushiro-shimo bus stop (Hakodate Bus from JR Kikonai) + 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [4, 5],
+        "kind": "flowers",
+        "label": "late April into early May, when the blossom opens"
+      }
+    }
+  ]
+}

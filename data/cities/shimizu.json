@@ -1,0 +1,65 @@
+{
+  "city": "Shimizu",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "One plant that looks like a thicket. The Great Cycad of Ryuge-ji is a single sago palm, fifty-eight thick trunks fanning out of one base 5.2 metres round, counted among Japan's three great cycads and the largest cultivated cycad in the country. Temple tradition, not science, puts its age near 1,100 years. A National Monument since 1924, on temple grounds twenty minutes from Shimizu Station, open roughly 8:30 to 16:30 for a small entry fee.",
+  "meta_description": "The Great Cycad of Ryuge-ji, Shimizu: one plant, 58 trunks from a single base, the largest cultivated cycad in Japan. A monument since 1924.",
+  "question_meta": "Shimizu's mapped tree is the Great Cycad of Ryuge-ji, put at roughly 1,100 years old by temple tradition.",
+  "question_answer": "Shimizu's mapped tree is the Great Cycad of Ryuge-ji, a single sago palm at Ryuge-ji Temple whose fifty-eight thick trunks fan out of one base 5.2 metres around, making it look like a thicket rather than one plant. It is counted among Japan's three great cycads and, per the botanist Honda Masaji, the largest cultivated cycad in the country. Its age, roughly 1,100 years, comes from temple tradition rather than any dating method.",
+  "question_context": "Japan designated it a Natural Monument on 9 December 1924, one of the first seven cycads in the country to be so listed, and the 1924 register already recorded it as a male specimen. Temple tradition holds it was carried from China and given to Ryuge-ji by Tokugawa Yorinobu and Tokugawa Yorifusa, founders of the Kii and Mito Tokugawa lines, which is where the roughly 1,100-year figure comes from; no dating anybody can check has ever been published, so it is carried as tradition rather than measurement. What has been measured: 2.6 metres round on the north branch, 2.3 in the centre, 1.7 on the south, with the crown spanning about nine metres in each direction and the whole plant standing under four metres tall. The temple sits in Shimizu-ku, the former city merged into Shizuoka in 2003, reached by bus from Shimizu Station or by car from the Tomei Expressway.",
+  "hero_tree_id": "smz_001",
+  "oldest_tree_id": "smz_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It looks like a thicket of small palms but is one plant: fifty-eight thick trunks fan out of a single base 5.2 metres around. It is counted among Japan's three great cycads and reported as the largest cultivated cycad in the country."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Temple tradition puts it at roughly 1,100 years, tied to a story of its donation by two Tokugawa-line founders. No scientific dating has been published, so treat the figure as tradition rather than measurement."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "No, it stands inside Ryuge-ji Temple's grounds, which charge a small entry fee (reported around 400 yen for adults), open roughly 8:30 to 16:30."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By JR to Shimizu Station, then a bus toward Shimizu City Hospital / Chureito (about 20 minutes) to the Ryuge-ji stop, or about 20 minutes by car from the Tomei Expressway's Shimizu interchange."
+    }
+  ],
+  "trees": [
+    {
+      "id": "smz_001",
+      "name": "The Great Cycad of Ryuge-ji",
+      "species": "Sago Palm (Cycas revoluta)",
+      "age_estimate": "about 1,100 years (temple tradition)",
+      "age_min": 900,
+      "age_max": 1300,
+      "girth_cm": 520,
+      "height_m": 3.79,
+      "location": {
+        "address": "Ryuge-ji Temple, 2085 Muramatsu, Shimizu-ku, Shizuoka City, Shizuoka Prefecture",
+        "latitude": 34.99022,
+        "longitude": 138.48478,
+        "neighbourhood": "Shimizu, Shizuoka"
+      },
+      "story": "From the temple path this looks like a thicket of small palms. It is one plant, and fifty-eight thick trunks fan out of a single base 5.2 metres around.\n\nA sago palm is not a palm. It is a cycad, from a lineage that was already ancient when the first flowering plants appeared, and it grows so slowly that all of this stands under four metres tall. Japan made it a Natural Monument on 9 December 1924, one of the first seven cycads in the country to be designated, and the botanist Honda Masaji called it the largest cultivated cycad in Japan. It is counted among the three great cycads, alongside one at Noman-ji and one in Sakai. It is a male specimen, which the 1924 register already recorded.\n\nIts age belongs to the temple rather than to science. The placard says the plant was carried from China and given to Ryuge-ji by Tokugawa Yorinobu and Tokugawa Yorifusa, and puts it at roughly 1,100 years. No dating anybody can check has ever been published, so read that figure as the tradition it is.\n\nWhat has been measured is the shape of it: 2.6 metres round on the north branch, 2.3 in the centre, 1.7 on the south, with the whole crown covering about nine metres in each direction. The temple charges a few hundred yen and the grounds are open roughly 8:30 to 16:30.",
+      "verified_sources": [
+        "https://bunka.nii.ac.jp/heritages/detail/201766",
+        "https://ja.wikipedia.org/wiki/%E9%BE%8D%E8%8F%AF%E5%AF%BA%E3%81%AE%E3%82%BD%E3%83%86%E3%83%84",
+        "https://www.pref.shizuoka.jp/kankosports/bunkageijutsu/bunkazai/1002825/1004990/1021654.html"
+      ],
+      "access": "Paid entry to Ryuge-ji Temple grounds, reported around 400 yen adult / 200 yen child (aggregator source, not the temple's own site), viewing hours approximately 8:30-16:30",
+      "transport": "JR Tokaido Line to Shimizu Station, then Shizutetsu Justline bus toward Shimizu City Hospital / Chureito, about 20 min, alight at the Ryuge-ji stop; or 20 min by car from the Tomei Expressway Shimizu interchange",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "paid_entry": true
+    }
+  ]
+}
