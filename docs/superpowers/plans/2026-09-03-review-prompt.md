@@ -520,6 +520,19 @@ EOF
 
 ---
 
+## Correction made during Task 1 execution
+
+The `ReviewPrompt.init` signature below is stated as originally planned, but
+shipped with one addition: `public init(defaults: UserDefaults = .standard,
+suppressed: Bool? = nil)`. The `suppressed` parameter is a testing seam —
+production code and every real caller leave it `nil` and get the safe
+XCTest-guarded default; `ReviewPromptTests` passes `suppressed: false` in
+the one test that needs `consider()` to actually fire, because the
+`XCTestConfigurationFilePath` environment guard is on for any `xcodebuild
+test` invocation, individual or full-suite, with no environment state a
+test could rely on otherwise. See the Task 1 commit history for the full
+reasoning. This does not change any of Task 2's or Task 3's requirements.
+
 ## Self-review notes (for whoever executes this plan)
 
 - **Spec coverage:** trigger (Task 2 Step 4), milestones and cap (Task 1), native-only call (Task 2 Steps 3-4), test suppression (Task 1, asserted directly in `neverFiresUnderXCTest`), CONVENTIONS.md entry (Task 3). Nothing in the spec is left unaddressed.
