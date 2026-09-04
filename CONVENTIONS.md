@@ -1002,3 +1002,45 @@ Read 2026-09-03:
 - https://developer.apple.com/documentation/storekit/requesting-app-store-reviews
 - https://www.avanderlee.com/swift/skstorereviewcontroller-app-ratings/
 - https://criticalmoments.io/blog/skstorereviewcontroller_guide_with_examples
+
+---
+
+## A detail page's facts, and a count you can tap (2026-09-04)
+
+**Reference: AllTrails' trail page**, from Hidde's own screenshot of the
+Klompenpad Netelenburchpad, plus Google Maps, Apple Maps, Airbnb, Strava and
+the App Store's info strip.
+
+AllTrails builds a trail page as: the name; one small underlined summary line
+(rating, difficulty, place, every item a link); then a stat row where the
+VALUE sits on top and the label under it, thin dividers, columns sized to
+their content; then the description. Reviews come after the description.
+
+Note the correction, because a draft here had it backwards: AllTrails puts the
+value on top, not the label. That works for them because every value in the
+row is short and numeric. The App Store's info strip does the opposite, label
+on top, which is what you need the moment a value is a WORD that can wrap. So
+the rule is not which one is right, it is: **value on top only when no value
+in the row can wrap. Any value that is a word belongs on the summary line, not
+in the row.**
+
+Google Maps and Apple Maps agree on the other half: the count of what people
+thought goes in the summary line under the name, and the control that lets you
+add your own opinion sits lower, after the description.
+
+**A count is the button.** Strava's kudos, Instagram's like, Reddit's upvote
+and YouTube's like all put the number ON the control: one tap casts, the glyph
+fills, a second tap takes it back. Nobody anywhere draws a number that is only
+a number beside a separate button that casts. So the count in the summary line
+and the control after the story are the same control drawn twice, and either
+one takes the vote.
+
+**One direction, not two.** Hidde, 2026-09-04: "i agree that we dont need a
+thumb down." Every reference above offers a single positive act; the negative
+lives in "Report a problem", which this page already has in its toolbar menu
+and in the chips under the vote.
+
+Read 2026-09-04:
+- Hidde's screenshot of the AllTrails app, Klompenpad Netelenburchpad
+- https://support.google.com/maps/answer/6230175 (Rate & Review, five stars, in the Reviews section)
+- https://support.strava.com/hc/en-us/articles/216919067 (kudos)
