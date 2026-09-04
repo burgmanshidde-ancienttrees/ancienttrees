@@ -421,13 +421,19 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
     max-height: calc(100vh - var(--header-h) - 1.5rem); overflow-y: auto; padding: 0.5rem 0; }
   .nav-drop-menu a { padding: 0.65rem 1rem; font-size: 15px; }
   .nav-drop-menu .nav-group { padding: 0 1rem; }
-  /* The app pill sits in the bar on a phone too (2026-09-04). Narrower than on
-     desktop, because the mark, the pill and the menu button share a 375px row,
-     and 44 TALL, because that is the number Apple asks for and the number the
-     smoke test measures: the first version shipped at 36 and the gate caught it
-     on six page types at once, which is exactly what that gate is for. 44 in a
-     56px bar leaves 6px above and below. */
-  .bar-links a.bar-cta { height: 44px; padding: 0 0.85rem; font-size: 13px; }
+  /* The app pill sits in the bar on a phone too (2026-09-04). Narrower and
+     shorter than on desktop, because the mark, the pill and the menu button
+     share a 375px row, and because at a full 44 it read as a banner rather than
+     a control (Hidde, same day: "the mobile app button seems a bit too big").
+
+     36 drawn, 44 TAPPED. The pill keeps Apple's minimum through a ::before that
+     reaches 4px past every edge, which is the same trick the menu button beside
+     it already uses and which the smoke test measures on purpose: its SMALL
+     check reads absolutely positioned pseudo-elements exactly so a control can
+     look small and still be hittable. Shrinking the box alone would fail that
+     gate, and rightly. */
+  .bar-links a.bar-cta { position: relative; height: 36px; padding: 0 0.75rem; font-size: 12.5px; }
+  .bar-links a.bar-cta::before { content: ""; position: absolute; inset: -4px; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
   .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
 
@@ -917,23 +923,25 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .poster-search { width: min(640px, 94vw); padding: 0.35rem 0.6rem 0.35rem 0.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.28); margin-top: 0; }
 .poster-search input { font-size: 16.5px; padding: 0.65rem 0.5rem; }
 .hero-links { display: flex; align-items: center; gap: 1.4rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
-/* The hero's action is TEXT, not a pill (Hidde, 2026-08-20: "hoezo is dit
-   opeens een knop geworden maak er weer dezelfde tekst opmaak van als bij
-   alltrails"). A run turned it into a filled green button that morning and
-   argued AllTrails does the same; AllTrails does not. Under its hero search
-   field sit plain white text links, and the only filled control on the poster
-   is the search itself. Do not re-promote this to a button. */
-.hero-link { background: none; border: none; cursor: pointer; font-family: inherit; color: #fff; font-size: 15.5px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
-/* The one exception to the rule directly above, and it is a DIFFERENT control
-   rather than that one wearing a new shape (2026-09-04). The rule says the
-   hero's own action stays text, and it does: "Explore trees near you" is
-   untouched. This is the app, which Hidde asked to bring forward on the
-   homepage the same day he sent komoot's phone homepage, where the single
-   control over the photograph is exactly this: a filled white pill reading
-   "Download de App". So the poster now carries one filled thing besides the
-   search, deliberately, and the pair reads primary and secondary instead of as
-   two links of equal weight. If it ever reads as two competing buttons, this
-   is the one that goes back to text, not the explore link. */
+/* The poster's one action under the search, and the history matters because it
+   reverses something written here in strong words.
+ *
+ * On 2026-08-20 a run turned the hero's "Explore trees near you" into a filled
+ * green button, argued AllTrails does the same when AllTrails does not, and
+ * Hidde said "hoezo is dit opeens een knop geworden maak er weer dezelfde tekst
+ * opmaak van als bij alltrails". The rule written under it was: the hero's
+ * action is text, the only filled control on the poster is the search, do not
+ * re-promote this to a button.
+ *
+ * On 2026-09-04 he removed that link himself. He asked for the app to come
+ * forward on the homepage, saw the two controls side by side, and said "maybe
+ * the other button should just replace explore trees near you and be centered".
+ * So the poster now carries the search and ONE filled pill, which is komoot's
+ * hero exactly. The 08-20 rule is not being drifted past: the control it
+ * protected is gone, at his word, and .hero-link went with it.
+ *
+ * What survives of that rule, and it is the part worth keeping: never let this
+ * row become two controls of competing weight again. One button, centred. */
 .hero-app { display: inline-flex; align-items: center; gap: 0.45rem; height: 44px;
   padding: 0 1.15rem; border-radius: 999px; background: #fff; color: var(--ink);
   font-size: 15.5px; font-weight: 700; text-decoration: none;
