@@ -9,6 +9,30 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-04 (session) - The conifer hero is gone, and the smoke gate gets a run a push cannot cancel
+
+Hidde, from the Discover tab: the conifer cover (hero-4, Paul Yong) was too
+busy at phone size. Discover and the opening cover share `Heroes.names`, so
+one line drops it from both; the file is deleted and nothing else referenced
+it (the App Store opener uses hero-3). Rotation is three images now.
+
+Then the two red lamps in the session brief, and neither was what it said.
+The Smoke test had "not passed once in its last 7 finished runs" because all
+seven were CANCELLED: the night run pushed seven commits in a quarter of an
+hour and each push cancels the run before it. Over the last 40 runs, 35
+cancelled and 4 passed, the newest pass at 06:43 this morning. That is the
+lesson ios.yml learned on 08-27, appearing a second time, so it becomes the
+same mechanism: smoke.yml now has two scheduled runs a day (04:30 and 16:30
+UTC) in a concurrency group of their own that a push cannot touch.
+
+The iOS gate failed on its schedule last night on one test, StressWalk on
+the iOS 18 floor: `pick.coordinate(...)` re-resolved an element that had
+gone mid-animation (index 21). A night run had already fixed that this
+morning (e2419515, tap the snapshot's own point). One read of the same
+kind was still in the loop, `pick.label` in two lastAction strings, and is
+now `snap.label`. The UI test target compiles; the floor job only runs on
+schedule or dispatch, so the proof arrives with the 17:00 UTC run.
+
 ## 2026-09-04 (session) - Sitemap lastmod is per PAGE now, because half the site claimed to change on one day
 
 Hidde pasted Search Console's "Discovered, currently not indexed" report: 655

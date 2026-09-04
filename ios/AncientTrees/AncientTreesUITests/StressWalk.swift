@@ -106,9 +106,11 @@ final class StressWalk: XCTestCase {
                     lastAction = "off screen"
                     break
                 }
+                // snap.label, never pick.label: the second re-resolves the live
+                // element, which is the same stale read the tap below avoids.
                 let label = snap.label.lowercased()
                 guard !Self.avoid.contains(where: { label.contains($0) }) else {
-                    lastAction = "left '\(pick.label)' alone"
+                    lastAction = "left '\(snap.label)' alone"
                     break
                 }
                 // Tap the POINT the snapshot already found, not the element
@@ -118,7 +120,7 @@ final class StressWalk: XCTestCase {
                 // it had already passed. An absolute screen coordinate needs
                 // no further resolution and cannot go stale between the
                 // snapshot and the tap.
-                lastAction = "tap '\(pick.label)'"
+                lastAction = "tap '\(snap.label)'"
                 app.coordinate(withNormalizedOffset: .zero)
                     .withOffset(CGVector(dx: box.midX, dy: box.midY))
                     .tap()
