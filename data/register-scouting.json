@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Little Rock",
+      "country": "United States",
+      "status": "stalled",
+      "note": "SCOUTED 2026-09-04 (night run), on scout_next.py --target naming Little Rock (#61) next after Long Beach. Found a real ArcGIS Feature Collection, 'Arkansas Champion Trees layer' (arcgis.com/home/item.html?id=6507a75fe6e247d1b7c9ea1bbc8ce02f), a hobbyist-built map of the Arkansas Department of Agriculture's 2018 champion-tree list. Data fetched directly (sharing/rest/content/items/<id>/data?f=json): 117 point features with species, circumference/crown/height, county, a free-text location/directions field, AND, unusually for this project's US finds so far, an explicit Public/Private marker per tree baked into the description HTML (19 public, 93 private, 5 unmarked). Coordinates are Web Mercator (wkid 3857), a one-line reprojection. Only 1 public specimen sits within 30 km of Little Rock itself (a Nutmeg Hickory, 7.8 km out), so this is thin for Little Rock specifically but real for the state as a whole. STALLED, not imported: the ArcGIS item's licenseInfo and accessInformation are both empty (same shape as Toronto's and California's), and the underlying primary source, the Department of Agriculture's own champion-trees page (agriculture.arkansas.gov/forestry/champion-trees/), returned a Cloudflare bot-block (403, wpewaf.com) rather than a licence statement, so the state government's own terms could not be checked either. Next: a licence ask to the Arkansas Forestry Division, or try the department page again from a session with real browser access."
+    },
+    {
       "place": "Long Beach",
       "country": "United States",
       "status": "stalled",
