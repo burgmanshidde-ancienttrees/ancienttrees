@@ -27,6 +27,7 @@ public final class ReviewPrompt {
     private let lastKey = "reviewPrompt.last.v1"
     private let maxAsks = 3
     private let quietDays = 7.0
+    private let suppressedOverride: Bool?
 
     /// Ordered so the first unfired, met threshold wins. Named rather than
     /// indexed so a milestone stays stable if the list ever grows.
@@ -43,15 +44,26 @@ public final class ReviewPrompt {
         set { defaults.set(newValue, forKey: lastKey) }
     }
 
-    public init(defaults: UserDefaults = .standard) {
+    /// `suppressedOverride` exists only for ReviewPromptTests: production
+    /// code (and every other caller) leaves it `nil` and gets the safe
+    /// default below, which cannot be forgotten. A unit test that needs to
+    /// exercise `consider()`'s actual decision-making (rather than confirm
+    /// it is suppressed) passes `suppressed: false` explicitly, because the
+    /// XCTest environment guard is otherwise ALWAYS true for any
+    /// `xcodebuild test` invocation, individual or full-suite alike — there
+    /// is no environment state in which a test could observe `consider()`
+    /// returning `true` without this seam.
+    public init(defaults: UserDefaults = .standard, suppressed: Bool? = nil) {
         self.defaults = defaults
+        self.suppressedOverride = suppressed
     }
 
     /// Off whenever a test runner is attached, so no UI test can forget to
     /// suppress a real system dialog, plus an explicit flag for symmetry
     /// with Nudge's `-no-nudge`.
     private var suppressed: Bool {
-        ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+        if let suppressedOverride { return suppressedOverride }
+        return ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
             || ProcessInfo.processInfo.arguments.contains("-no-review-prompt")
     }
 

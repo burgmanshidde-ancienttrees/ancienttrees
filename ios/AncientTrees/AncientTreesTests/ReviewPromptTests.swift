@@ -63,8 +63,13 @@ struct ReviewPromptTests {
     // MARK: - the instance, and its persistence
 
     @Test func consideringPersistsTheMilestoneSoItDoesNotAskTwice() {
+        // suppressed: false bypasses the XCTest environment guard, which is
+        // otherwise always on during any xcodebuild test run (see
+        // ReviewPrompt.swift's `suppressedOverride`). This test is about
+        // the persistence logic, not the guard — neverFiresUnderXCTest
+        // below covers the guard itself.
         let s = Scratch(); defer { s.clean() }
-        let prompt = ReviewPrompt(defaults: s.defaults)
+        let prompt = ReviewPrompt(defaults: s.defaults, suppressed: false)
         let now = Date()
 
         #expect(prompt.consider(ticked: 3, now: now) == true)
