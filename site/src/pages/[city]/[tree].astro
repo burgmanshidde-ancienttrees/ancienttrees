@@ -29,6 +29,7 @@ import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
 import { ageToken, metaForTree, submitLink, locationIsApproximate } from "../../lib/tree-copy";
+import { treeSources } from "../../lib/tree-sources";
 import WorthIt from "../../components/WorthIt.astro";
 import SignInModal from "../../components/SignInModal.astro";
 import SaveHeart from "../../components/SaveHeart.astro";
@@ -198,6 +199,7 @@ const graph = [
 const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
+const sources = treeSources(tree);
 const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + SIGNIN_JS + SHARE_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
@@ -282,6 +284,17 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <dt>Access</dt><dd>{tree.access ?? ""}</dd>
       <dt>Getting there</dt><dd>{tree.transport ?? ""}</dd>
     </dl>
+    {sources.length > 0 && (
+      <section class="tree-sources">
+        <h2>Sources</h2>
+        <p>Where the facts on this page come from.</p>
+        <ul>
+          {sources.map((s) => (
+            <li>{s.href ? <a href={s.href} target="_blank" rel="noopener">{s.label}</a> : <span>{s.label}</span>}</li>
+          ))}
+        </ul>
+      </section>
+    )}
     {nearby.length > 0 && (
       <Fragment>
         <h2>Trees nearby</h2>

@@ -184,6 +184,8 @@ export interface UIStrings {
   labelLocation: string;
   labelAccess: string;
   labelGettingThere: string;
+  sourcesHeading: string;
+  sourcesLine: string;
   takeMeThere: string;
   nearbyTrees: string;
   somethingWrong: string;
@@ -267,6 +269,8 @@ const EN: UIStrings = {
   labelLocation: "Location",
   labelAccess: "Access",
   labelGettingThere: "Getting there",
+  sourcesHeading: "Sources",
+  sourcesLine: "Where the facts on this page come from.",
   takeMeThere: "Take me there",
   nearbyTrees: "Nearby trees",
   somethingWrong: "Something here is wrong",
@@ -306,6 +310,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     labelLocation: "Ubicación",
     labelAccess: "Acceso",
     labelGettingThere: "Cómo llegar",
+    sourcesHeading: "Fuentes",
+    sourcesLine: "De dónde salen los datos de esta página.",
     takeMeThere: "Cómo llegar",
     nearbyTrees: "Árboles cercanos",
     somethingWrong: "Aquí hay algo mal",
@@ -389,6 +395,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     labelLocation: "Posizione",
     labelAccess: "Accesso",
     labelGettingThere: "Come arrivarci",
+    sourcesHeading: "Fonti",
+    sourcesLine: "Da dove vengono i dati di questa pagina.",
     takeMeThere: "Portami lì",
     nearbyTrees: "Alberi nei dintorni",
     somethingWrong: "Qui c'è un errore",
@@ -472,6 +480,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     labelLocation: "Locatie",
     labelAccess: "Toegang",
     labelGettingThere: "Ernaartoe",
+    sourcesHeading: "Bronnen",
+    sourcesLine: "Waar de gegevens op deze pagina vandaan komen.",
     takeMeThere: "Breng me erheen",
     nearbyTrees: "Bomen in de buurt",
     somethingWrong: "Hier klopt iets niet",
@@ -555,6 +565,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     labelLocation: "Standort",
     labelAccess: "Zugang",
     labelGettingThere: "Anfahrt",
+    sourcesHeading: "Quellen",
+    sourcesLine: "Woher die Angaben auf dieser Seite stammen.",
     takeMeThere: "Route planen",
     nearbyTrees: "Bäume in der Nähe",
     somethingWrong: "Hier stimmt etwas nicht",
@@ -638,6 +650,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     labelLocation: "Localização",
     labelAccess: "Acesso",
     labelGettingThere: "Como chegar",
+    sourcesHeading: "Fontes",
+    sourcesLine: "De onde vêm os dados desta página.",
     takeMeThere: "Como chegar",
     nearbyTrees: "Árvores por perto",
     somethingWrong: "Há aqui um erro",
@@ -721,6 +735,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     labelLocation: "Emplacement",
     labelAccess: "Accès",
     labelGettingThere: "Y aller",
+    sourcesHeading: "Sources",
+    sourcesLine: "D’où viennent les informations de cette page.",
     takeMeThere: "M'y emmener",
     nearbyTrees: "Arbres à proximité",
     somethingWrong: "Il y a une erreur ici",
@@ -804,6 +820,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     labelLocation: "場所",
     labelAccess: "見学",
     labelGettingThere: "行き方",
+    sourcesHeading: "出典",
+    sourcesLine: "このページの情報の出どころ。",
     takeMeThere: "ここへ行く",
     nearbyTrees: "近くの木",
     somethingWrong: "ここに誤りがある",

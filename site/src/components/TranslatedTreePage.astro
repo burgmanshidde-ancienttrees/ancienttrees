@@ -21,6 +21,7 @@ import { locationIsApproximate, metaForTree } from "../lib/tree-copy";
 import { mapHead, singlePinScript } from "../lib/map";
 import { hreflangForCity, QUESTION_SLUG, ui, type CityTranslation, type TreeTranslation } from "../lib/i18n";
 import { hasWalksPage } from "../lib/city-walks";
+import { treeSources } from "../lib/tree-sources";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -97,6 +98,10 @@ const graph = [
   breadcrumbSchema(crumbItems, canonical),
 ];
 const headExtra = mapHead() + ogImage + "\n" + hreflangForCity(cslug, "tree", tslug) + "\n" + ldScript(graph);
+// The sources are facts about the tree, not text about it, so they come from
+// the canonical city file and are identical in every language. Only the
+// heading and the line above them are looked up.
+const sources = treeSources(tree);
 const scripts = singlePinScript(loc.latitude!, loc.longitude!);
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra} lang={lang}>
@@ -146,6 +151,17 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
       <dt>{U.labelAccess}</dt><dd>{x.access}</dd>
       <dt>{U.labelGettingThere}</dt><dd>{x.transport}</dd>
     </dl>
+    {sources.length > 0 && (
+      <section class="tree-sources">
+        <h2>{U.sourcesHeading}</h2>
+        <p>{U.sourcesLine}</p>
+        <ul>
+          {sources.map((s) => (
+            <li>{s.href ? <a href={s.href} target="_blank" rel="noopener">{s.label}</a> : <span>{s.label}</span>}</li>
+          ))}
+        </ul>
+      </section>
+    )}
     <h2>{U.nearbyTrees}</h2>
     <div class="near-cards">
       {nearby.map((t) => (

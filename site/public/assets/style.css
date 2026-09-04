@@ -1606,3 +1606,13 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
   max-width: 28rem; margin: 0 auto 1.1rem; }
 .shared-foot { margin-top: 1.1rem; color: var(--ink-mid); font-size: 0.85rem; }
 .shared-foot a { color: var(--moss); font-weight: 600; }
+
+/* Per-tree source list (2026-09-04). Sits under the facts block and reads as
+   part of the record, not as navigation: same muted register as .facts, and
+   the links wrap rather than overflow on a 375px screen. */
+.tree-sources { margin: 1.5rem 0; }
+.tree-sources h2 { margin-bottom: 0.15rem; }
+.tree-sources > p { font-size: 13px; color: var(--ink-light); margin: 0 0 0.5rem; }
+.tree-sources ul { list-style: none; padding: 0; margin: 0; }
+.tree-sources li { font-size: 13px; color: var(--ink-light); padding: 0.3rem 0; border-top: 1px solid var(--cream-dark); overflow-wrap: anywhere; }
+.tree-sources li a { color: var(--ink); }
