@@ -49,16 +49,16 @@ en, nl, es, it, de, pt, fr, ja
 ## Supplemental Materials
 https://ancienttrees.app
 
-## Description  (996/1000)
-Ancient Trees is for people who love being outdoors. It shows you the remarkable old trees around you, tells you why each one is worth the walk, and lets you collect the ones you have stood in front of.
+## Description  (975/1000)
+Ancient Trees exists to get people outside. Not up a mountain, just to something extraordinary and alive that has been standing for a thousand years, twenty minutes from where they live.
 
-Nothing else does this. There are tree databases written for botanists and there are hiking apps, but nothing that walks you to one extraordinary tree and tells you what you are looking at.
+Most people have walked past one without knowing it: in a churchyard, on a campus, behind a wall on a street they use every week. The app tells you which tree, what you are looking at, and why it is worth the walk. The Ankerwycke Yew was already ancient when Magna Carta was sealed beside it.
 
-We map 2,472 trees in 362 places across 25 countries, every one verified against two independent sources. The Ankerwycke Yew at Runnymede, standing when Magna Carta was sealed. The Totteridge Yew, the oldest living thing in London. El Drago Milenario on Tenerife.
+People add trees themselves. Find something epic we do not have, photograph it, and it goes on the map with your name under it, for whoever stands there next.
 
-The app also knows when a tree is at its best, which makes it something you plan rather than read. There is probably an ancient ginkgo within reach of you now: for two weeks in November it turns completely gold, then drops almost every leaf at once. We map 83 of them across 22 countries.
+It knows when a tree is at its best, too. An old ginkgo turns completely gold for two weeks in November, then drops almost every leaf at once, and the app tells you which week yours is having.
 
-Launched 3 September 2026, in seven languages.
+2,472 trees in 362 places across 25 countries, each checked against two independent sources. Launched 3 September 2026, in seven languages.
 
 ## Why the ginkgo is in paragraph four and not paragraph one
 
