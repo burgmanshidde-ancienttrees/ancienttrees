@@ -3491,3 +3491,48 @@ a hard block.
 One pass, WebSearch and curl/WebFetch only, no agent dispatch, roughly 45
 minutes. No trees delivered (none were sought; this was a scouting pass per
 the brief). Token estimate for the daily retro: ~55k tokens.
+
+## New Orleans, Louisiana: EMPTY, only a bulk street-tree inventory and an unlicensed statewide champion list (2026-09-04)
+
+`scout_next.py --target` named New Orleans (#63) next after Little Rock: no
+supply, no verdict. Two candidates found, neither usable.
+
+**data.nola.gov / gis.nola.gov's TreeCanopy ArcGIS layer** is a genuine City
+of New Orleans dataset, ~105,000+ right-of-way tree records across 352
+species with coordinates and DBH. The DataDriven NOLA portal states a CC0
+policy for its datasets generally. Disqualified anyway: it is a full
+municipal street-tree inventory, and CLAUDE.md's register-layer rule is a
+semantic filter first, licence second ("never full municipal tree
+inventories"). No individual monumental/heritage designation layer exists
+alongside it.
+
+**The Louisiana Champion Tree Program**
+(laforestry.com/champion-trees-in-louisiana) is closer to the right shape: a
+statewide, per-species champion list with circumference, height, crown
+spread and points, filterable by parish. It is run by the Louisiana
+Forestry Association, a trade/professional body rather than a government
+agency. No coordinates anywhere in the listing, and no licence or reuse
+terms stated on the page; new nominations go through an emailed PDF form,
+which suggests the directory itself is not built for programmatic reuse.
+Would need both a licence ask and a separate coordinate hunt per tree even
+if granted.
+
+City Park's named old oaks (McDonogh Oak, Anseman Oak, Suicide Oak, widely
+reported at 750-900 years) are real and well documented, but only by blogs
+and the Old-Growth Forest Network, an NGO; no government register backs
+them.
+
+**Verdict: EMPTY.** No usable official monumental-tree register exists for
+New Orleans under the licence and semantic-filter rules. From-zero web
+research is the only route in, and needs Hidde's yes under rule 1(d) since
+New Orleans is not on his named from-zero list. The Champion Tree program
+stays a secondary lead pending a licence ask, and would still need
+coordinates sourced independently.
+
+### Cost
+
+One scouting pass, WebSearch and WebFetch only, no agent dispatch beyond
+the scouting itself. No trees delivered (scouting only). Two hosts returned
+404/unusable content rather than hanging (`data.nola.gov`'s dataset and API
+metadata pages); `gis.nola.gov`'s ArcGIS REST endpoint failed with a TLS
+certificate verification error from this sandbox, not confirmed as a hang.
