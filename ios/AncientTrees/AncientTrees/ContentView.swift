@@ -15,9 +15,6 @@
 import SwiftUI
 import CoreLocation
 import MapKit
-// For \.requestReview, the native App Store ask. Kit/ReviewPrompt.swift
-// decides when; this file is the only place that presents it.
-import StoreKit
 
 struct ContentView: View {
     @State fileprivate var store = CatalogueStore()
@@ -37,7 +34,6 @@ struct ContentView: View {
     /// rather than remembered by this phone.
     @State fileprivate var myVotes = MyVotes()
     @State private var location = LocationProvider()
-    @Environment(\.requestReview) private var requestReview
     @State fileprivate var account = Account()
     @State fileprivate var nudge = Nudge()
     @State fileprivate var reviewPrompt = ReviewPrompt()
@@ -450,16 +446,7 @@ struct ContentView: View {
 
                 }
                 .appObjects(self)
-                // THE ONE PLACE THE SYSTEM REVIEW DIALOG IS ASKED FOR. The
-                // screens that notice a milestone only raise the flag, because
-                // the screen that notices is usually the one going away: a
-                // tree page asks on the way out. The root is always on screen,
-                // so the ask always lands. See Kit/ReviewPrompt.swift.
-                .onChange(of: reviewPrompt.pending) { _, now in
-                    guard now else { return }
-                    reviewPrompt.pending = false
-                    requestReview()
-                }
+                .reviewAsk(reviewPrompt)
                 .onChange(of: navigator.collectNearby) { _, want in
                     if want { openCollect(); navigator.collectNearby = false }
                 }
