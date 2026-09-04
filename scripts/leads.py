@@ -264,7 +264,10 @@ NOT_READY_MARKER = re.compile(
     r"needs checking before it could ship|"
     r"is not a walk|no independent source found|"
     r"not individually verified this pass|left as a lead rather than|"
-    r"keep as the candidate if|held back for the same reasons)\b",
+    r"keep as the candidate if|held back for the same reasons|"
+    r"held rather than published|outside day-trip range|"
+    r"day-trip boundary|not on our city queue|"
+    r"access is not confirmed|leaning no)\b",
     re.I)
 COUNT_DOCTRINE_WORDS = re.compile(r"\b(?:count|quota|target|overshoot)\b", re.I)
 
