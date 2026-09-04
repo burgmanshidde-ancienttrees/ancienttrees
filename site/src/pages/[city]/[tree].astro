@@ -196,6 +196,22 @@ const graph = [
 ];
 // All languages carrying an overlay for THIS city; a tree slug is identical
 // across languages by contract, so one path shape covers them all.
+// The bare number, for the column whose label says "Years old". A value that
+// repeats its own label ("Years old / roughly 135 years") is the same fault as
+// a species named twice one line lower, and on the web it wrapped to five
+// lines and pushed its own label down (2026-09-04).
+const ageLo = typeof tree.age_min === "number" && tree.age_min > 0 ? tree.age_min : null;
+const ageHi = typeof tree.age_max === "number" && ageLo && tree.age_max > ageLo ? tree.age_max : null;
+const ageNumber = ageLo ? (ageHi ? `${ageLo}-${ageHi}` : `${ageLo}`) : null;
+const ageLabel = ageNumber ? "Years old" : "Age";
+// AND A CAP where there is no number (Hidde, 2026-09-04: "can you please give
+// a max to the age part, this is way too long and fucks up the design"). An
+// age_estimate is prose and can run to a sentence: "roughly 135 years, planted
+// around 1889-1890" wrapped over five lines and pushed its own label down. The
+// first clause is the age; everything after the comma is provenance, and
+// provenance belongs in the story where the sentence has room.
+const ageText = (tree.age_estimate || "").split(/[,;(]/)[0].trim();
+const ageValue = ageNumber ?? (ageText.length > 24 ? "see the story" : (ageText || "not recorded"));
 const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
@@ -245,34 +261,50 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         <h1>{tree.name}{tree.label && <span class="tree-label">{tree.label}</span>}</h1>
         <ShareButton url={canonical} title={tree.name} />
       </div>
-      <p class="tree-sub">{tree.species ?? spCommon}</p>
-      <p class="tree-place">{[loc.neighbourhood, cityName].filter(Boolean).join(", ")}</p>
+      {/* ONE SMALL LINE OF LINKS, the way AllTrails opens a trail page and
+          the way the app does since 2026-09-04. The species caption that stood
+          here is gone: it named the species a second time, a centimetre above
+          the card that names it, and on this tree it read "Moreton Bay Fig
+          (Ficus macrophylla)" over "Moreton Bay Fig". A fact belongs in one
+          place per page. */}
+      <p class="tree-place"><a href={`/${cslug}`}>{[loc.neighbourhood, cityName].filter(Boolean).join(", ")}</a></p>
     </div>
-    {/* Age, species and pin honesty in one card. `||` not `??` on the age: a
-        tree with no age carries age_estimate as an empty string as often as it
-        omits the key, and `??` let "" through, which rendered as a bare pill
-        with nothing in it (the Vilnius trees). */}
-    <div class="fact-card">
-      <div class="fact"><b>{tree.age_estimate || "not recorded"}</b><span>Age</span></div>
-      {spSlug ? (
-        <a class="fact" href={`/species/${spSlug}`}><b>{spCommon} <span class="fact-go" aria-hidden="true">›</span></b><span>Species</span></a>
+    {/* EVERYTHING SOMEBODY NEEDS BEFORE SETTING OFF, in one block: two
+        columns for the facts that are short, then a line for the location and
+        a band for the ticket, both of which need words. Ported from the app,
+        2026-09-04, with the amendments Hidde made while looking at eight
+        drawings of it at real phone size.
+
+        Two columns rather than three is arithmetic and not taste: at 375px
+        "Approximate" leaves the species barely 40px, which is what made the
+        old three-column card wrap its age over five lines and push its own
+        label down. So the location became the line that carries words, and it
+        carries the ask with it.
+
+        The rule the whole block follows: a column states a short value, a line
+        carries words, a panel is for something that decides whether you set
+        off at all, and a fact appears exactly once per page. */}
+    <div class="tree-block">
+      <div class="tb-cols">
+        <div class="tb-col tb-age"><span>{ageLabel}</span><b>{ageValue}</b></div>
+        {spSlug ? (
+          <a class="tb-col tb-species" href={`/species/${spSlug}`}><span>Species</span><b>{spCommon} <span class="fact-go" aria-hidden="true">›</span></b></a>
+        ) : (
+          <div class="tb-col tb-species"><span>Species</span><b>{spCommon}</b></div>
+        )}
+      </div>
+      {isApprox ? (
+        <p class="tb-loc tb-loc-approx">
+          <b>Approximate location.</b>{" "}
+          <a href={submitLink("correction", cityName, tree.name)}>Show us where it is</a>
+        </p>
       ) : (
-        <div class="fact"><b>{spCommon}</b><span>Species</span></div>
+        <p class="tb-loc">Exact location. The pin marks the trunk.</p>
       )}
-      <div class="fact"><b>{isApprox ? "Approximate" : "Exact"}</b><span>Pin</span></div>
+      {tree.paid_entry && (
+        <p class="tb-ticket"><b>You need a ticket to see this tree</b><span>{tree.access}</span></p>
+      )}
     </div>
-    {tree.paid_entry && (
-      // Said HIGH, next to the name, because it changes whether somebody sets
-      // off at all (Hidde, 2026-08-24). The access line further down carries
-      // the detail; this is the fact you need before you read anything else.
-      <p class="ticket-note"><strong>Ticket needed.</strong> {tree.access}</p>
-    )}
-    {isApprox && (
-      <p class="approx-note">
-        The pin marks the right spot roughly, not the tree itself. It stands here, but we have not confirmed the precise position on the ground yet.{" "}
-        <a href={submitLink("correction", cityName, tree.name)}>Know exactly where it is?</a>
-      </p>
-    )}
 
     <div class="tree-bar" aria-label="Actions">
       <SaveHeart treeId={tree.id} treeName={tree.name} />

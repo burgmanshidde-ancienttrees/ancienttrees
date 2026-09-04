@@ -403,8 +403,27 @@ const scripts = SEARCH_WIDGET_JS;
   <div class="hero-center">
     <h1>Trees worth the walk, <em>wherever you are</em>.</h1>
     <Fragment set:html={searchForm("home", "city-q", "hero-search poster-search", true)} />
+    {/* The app is asked for IN THE HERO, not only from the bar (Hidde,
+        2026-09-04: "en inderdaad op de homepage ook meer naar voren laten
+        komen"). Convention: komoot's phone homepage, in the screenshot he
+        sent, is a headline and one filled "Download de App" button over the
+        photograph, and AllTrails' is the search field with its links under it.
+        This page keeps the search field, because the map is the product, and
+        adds the button under it in komoot's shape.
+
+        Filled white against the underlined link beside it, so the two read as
+        primary and secondary rather than as two links of equal weight.
+
+        It carries data-app-download like the bar and the footer, so one tap on
+        an iPhone lands on the App Store, a desktop visitor gets the QR card
+        and an Android visitor gets the waitlist rather than a store page they
+        cannot install from. The href is the no-JS fallback and /app makes the
+        same three splits on its own. */}
     <p class="hero-links">
       <a class="hero-link" href="/explore">Explore trees near you</a>
+      <a class="hero-app" href="/app" data-app-download data-ev="app-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7.5 11 12 15.5 16.5 11"/><path d="M5 19h14"/></svg>
+        Get the app</a>
     </p>
   </div>
 </div>
