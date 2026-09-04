@@ -86,6 +86,19 @@ on 08-28, and this file was missed. It matters more here than anywhere else,
 because these two paragraphs are a statement to Apple in Hidde's name and one
 of them sits in the Review Notes box.
 
+## What's New (version 1.0.1)
+
+Written 2026-09-04 for the second submission, from the app changes since build
+9 went up on 08-31. PRODUCT_COPY.md governs it: the reader is the subject, no
+summary line, and nothing about our machinery. Apple allows 4,000 characters
+and nobody reads that many; the ones people do read are the first two lines.
+
+```
+Dark mode, at last. Tap any photograph to see it full size. You can send a tree you found to a friend with a link, and a photograph you take can now appear on that tree's page with your name under it.
+
+Fixed: adding a tree with location switched off no longer guesses where you were standing, and the map aims at you properly when your phone finally says where that is.
+```
+
 ## What's New (version 1.0)
 
 ```
