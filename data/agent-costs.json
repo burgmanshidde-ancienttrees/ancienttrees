@@ -5145,6 +5145,13 @@
         "tokens": 83000,
         "trees": 4,
         "note": "4 named candidates by combined Wikipedia readership (famous_demand.py --next): 1 joins Fujikawaguchiko, 3 published as new single-tree places (Yabu, Shiwa, Ito) under the 2026-08-31 exception. ~21k/tree."
+      },
+      {
+        "target": "valencia (deepen, 4 named register candidates)",
+        "kind": "verify",
+        "tokens": 174048,
+        "trees": 1,
+        "note": "La Carcasa (vlc_026), a 35+-stemmed date palm in the Jardi Botanic, shipped. Three others failed only on the two-independent-sources bar (Palmera Canaria de Gran Via, Ficus de l'Hort de les Camelies: the only corroborating OSM tree nodes carried reg_ref= back to the same register row, not independent) or on hard rule 10 access (Ficus del INVASSAT, 11.58m girth, sits on a working Generalitat office premises with no evidence of public access, same pattern as the already-pulled vlc_012). Thin yield for the tokens because the pass earned it honestly rather than padding; claim released, register still has 390 unmined candidates for a future pass."
       }
     ]
   }

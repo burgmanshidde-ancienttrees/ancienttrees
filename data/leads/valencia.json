@@ -46,6 +46,27 @@
       "reason": "In the same Botanic Garden cluster as vlc_017-vlc_022 (verified this pass, 2026-08-31), but no independent second source was found: WebSearch's AI summary said this pecan is listed in the garden's Bosque and Escola Botanica collections, but per the search-summary-is-a-lead-never-a-source rule that was not trusted without a direct fetch, and the jardibotanic.org pid guessed from a related search result (2850) turned out to be Viburnum tinus, a different plant entirely. Register-only for now; worth a retry with the garden's own site search or a Wikipedia cross-check."
     },
     {
+      "name": "Palmera Canaria de Gran Via",
+      "species_register": "Phoenix canariensis",
+      "latitude": 39.467696,
+      "longitude": -0.367314,
+      "girth_m": 2.15,
+      "height_m": 24.4,
+      "reason": "Register (register_id 716) names it individually and designates it as a natural monument, on the median of Gran Via del Marques del Turia (which carries 79 palms of five species plus 128 plane trees and other formal planting, laid out 1884, landscaped 1907 per a local blog on the avenue's history). Confirmed as a real, mapped, publicly accessible street tree: it is an OSM natural=tree node (id 13092901321, tagged protected=yes, denotation=natural_monument, circumference 2.15m, height 24.4m) at essentially identical coordinates, but that OSM node explicitly carries reg_ref=716, i.e. it is the SAME register entry re-published on OSM rather than an independently sourced confirmation, so it does not count as the second source under the two-independent-sources bar. Searched the city's own protected-trees page (valenciaverde.es, 472 protected trees citywide, 266 monumental palms), local press (actualidadvalencia.com's piece on the 2026 review of 462 monumental/singular trees, which names four Ficus macrophylla on this same avenue but not this palm), a detailed local-history PDF on the avenue's planting (agroicultura.com, too large to search past its images, general context only: avenue design by architect Francisco Mora, 1907), a Valencia history blog, and iNaturalist and Wikimedia Commons geosearches at this exact point: none named this specific palm. Access is not in question (open median of a public avenue), only the second-source bar. Worth a retry via the Generalitat's own catalogue viewer or a direct call to Valencia's press office/ajuntament open-data portal rather than general web search.",
+      "species": "Canary Island Date Palm (Phoenix canariensis)"
+    },
+    {
+      "name": "Ficus de l'Hort de les Camelies",
+      "species_register": "Ficus macrophylla",
+      "latitude": 39.464908,
+      "longitude": -0.343395,
+      "girth_m": 10.95,
+      "height_m": 22.0,
+      "crown_m": 31.0,
+      "reason": "Register (register_id 672) point falls exactly inside the OSM-mapped 'Hort de les Camelies' (alt_name 'Parque de las Camelias') garden polygon (way 23413077, checked by point-in-polygon), a small public neighbourhood garden in the Aiora/Ayora district of Valencia, tagged with no fee and independently confirmed as a real, public, free municipal garden by a January 2024 citizen-journalism article (noticiasciudadanas.com) describing its (poor) maintenance state, run by the city's Parks and Gardens department. That article does not name or describe the ficus itself, only a weevil-infested palm in the same garden, so it corroborates the LOCATION and access but not the tree. The only source naming the tree, its species and its measurements is the register itself; the matching OSM natural=tree node (id 13092900313) carries reg_ref=672, i.e. it republishes the same register entry rather than confirming it independently, same pattern as the Gran Via palm and the INVASSAT fig in this same file. IMPORTANT: do not confuse this garden with the separate, larger 'Jardi d'Aiora' / Palacete y Jardin de Ayora about 300m away (a Bien de Interes Cultural with its own well documented group of centenarian ficus); a 2019 article about a fallen monumental tree there ('El parque de Ayora olvidado, el ficus caido sigue alli') is about THAT garden, not this one, and does not apply to this candidate. Access looks clean and free (small public garden, no gate or fee found); worth a second pass focused specifically on finding an independent description of this individual tree, e.g. a Valencia city 'ficha arbol monumental' PDF (the naming pattern exists on valencia.es but the one found this pass, for a different id, would not render as text) or local press on this garden's ficus specifically.",
+      "species": "Moreton Bay Fig (Ficus macrophylla)"
+    },
+    {
       "name": "The Ficus of the Corts Valencianes",
       "species": "Moreton Bay Fig (Ficus macrophylla)",
       "lat": 39.47808,
@@ -64,6 +85,15 @@
     }
   ],
   "blocked": [
+    {
+      "name": "Ficus del INVASSAT",
+      "species_register": "Ficus macrophylla",
+      "latitude": 39.503089,
+      "longitude": -0.404051,
+      "girth_m": 11.58,
+      "height_m": 18.2,
+      "reason": "RESTRICTED, hard rule 10. Register point sits at Carrer de Valencia 32, Burjassot (confirmed by reverse geocoding and by an OSM natural=tree node, id 13092900332, itself sourced from the same register entry reg_ref=2377, so not counted as an independent source), the address of INVASSAT's Centro Territorial de Valencia, the Generalitat Valenciana's occupational safety and health institute. This is a working government administrative office, not a museum, park or heritage site with public opening hours: INVASSAT's own contact page gives only phone/fax/address, no visitor information, no mention of a garden or public grounds, and nothing found (Burjassot municipal tree ordinance PDF, general web search on the building's history, OSM building/office tagging around the point) establishes a public path or open courtyard reaching the tree. The register itself even names the tree after the institute that occupies the site, which is the same pattern as the already-pulled vlc_012 (Ficus de la Corts Valencianes, inside the working seat of the regional parliament): a genuinely large specimen (11.58m girth, in the same weight class as El Titan and the Corts fig) standing on a government office's own premises rather than on ground the public may walk onto without anyone's permission. Per the three-test rule in hard rule 10 (can they get in without asking anyone's permission; does access read honestly; is it not somebody's workplace/home-equivalent), this fails the first test on the evidence available. Not deleted: if a future pass finds evidence of a public path, opening hours or a guided-visit programme (the CLAUDE.md booking exception), it can be reconsidered exactly like the Corts fig."
+    },
     {
       "name": "Ficus del Palacio de Raga (interior)",
       "species_register": "Ficus macrophylla",
