@@ -1,66 +1,7 @@
 {
   "country": "Germany",
-  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03 verify pass: 3 Giessen candidates (Adam und Eva, Alte Eiche Roedgen, Schillerlinde Roedgen) and 2 Rudolstadt candidates (Freundschaftseiche, Einheitslinde) verified but held below the 4-tree floor; full write-ups in data/leads/giessen.json and data/leads/rudolstadt.json. Symbolic oaks in Germany blocked as a category, not a single tree. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 follow-up verify pass: found the 4th Giessen tree, Lindengruppe an der Lindbachquelle (Lützellinden, also a Gießen district), which clears Giessen to the 4-tree floor; all 4 delivered to data/research/giessen-verified.json (gie_001-gie_004), and data/leads/giessen.json emptied accordingly. No fourth Rudolstadt candidate was found. Three further candidates verified and delivered as single-tree-destination exceptions (2026-08-31 ruling), each a nationally or regionally famous named lime with official protection and a real reason someone would travel specifically for it: Linde in Reinborn (data/research/reinborn-verified.json, rbn_001, 14.34m girth), Tanzlinde (Effeltrich) (data/research/effeltrich-verified.json, eff_001, Nationalerbe-Baum No. 39), and Schenklengsfelder Dorflinde (data/research/schenklengsfeld-verified.json, sfd_001, 17.91m girth, possibly Germany's oldest deciduous tree). One candidate, Gerichtslinde (Klingenberg am Main), verified as alive and existing but judged NOT to clear the single-tree exception (modest 4.22m girth, no official protection found, folk age claim of 800y unsupported by its own register's 325y dendrological estimate); written up in data/leads/klingenberg-am-main.json. All 5 of these entries removed from this leads list now that they are handled. 2026-09-03 second follow-up verify pass: two further single candidates verified and held below the 4-tree floor (neither clearly clears the single-tree-destination exception), written up as data/leads/munzenberg.json (Eiche an der Kirche, WEAK) and data/leads/passau.json (Friedenslinde, UNCLEAR, recommended as a future Passau city seed instead). Both removed from this leads list. 2026-09-03 third follow-up verify pass (cluster check): geographic analysis flagged three 'geleitete Linden' (guided/trained lime tree, a recognised regional folk-tree type) as a possible tight cluster in the Malsfeld/Felsberg/Knüllwald corner of Schwalm-Eder-Kreis, Hessen: Geleitete Linden Berndshausen, Geleitete Linden Dagobertshausen and Tanzlinde (Hilgershausen). All three verified alive and confirmed via baumkunde.de plus a second source each (LAGIS Hessen's historic-sites register for Berndshausen; the Wikimedia Commons gallery page 'Geleitete Linden im Schwalm-Eder-Kreis' for the other two), and genuinely close together (Berndshausen-Dagobertshausen 4.6km, Dagobertshausen-Hilgershausen 3.5km, Berndshausen-Hilgershausen 6.6km). That Commons gallery page turned out to be a real, named regional grouping (12 surviving 'geleitete Linden' across the district) rather than an invented theme, and it named a fourth specimen, the Tanzlinde of Ostheim (Malsfeld), which sits 2.0-4.0km from the other three and was independently verified the same way; it was not previously in this leads file. All four cleared the 4-tree floor as a genuine walkable-by-car cluster and were delivered to data/research/schwalm-eder-linden-verified.json (sel_001 to sel_004). The three that had lead entries here (Berndshausen, Dagobertshausen, Hilgershausen) are removed from this leads list accordingly. Other district members of the same named grouping (Dorflinde Lischeid, Dorflinde Sebbeterode, Kandelaberlinde Dorla, Tanzlinde Niedenstein) were checked for distance and are 18 to 35km from this cluster, too far to join it; they remain as separate leads. Two other Hessian lime candidates in this file, Dorflinde in Aua (Neuenstein) and Gerichtslinde Erdmannrode, were checked and are 15.5km and 33.5km from the cluster respectively, also too far to join it; left as leads. Tanzlinde (Himmelsberg), also in this file, is a different tree from Tanzlinde (Hilgershausen) despite the similar name, and sits about 45km away; left as a lead, flagged in sel_003's verify_notes to avoid future confusion between the two. 2026-09-04 verify pass (famous-germany batch G1, 1 candidate): Riesenbuche bei Altmugl is a duplicate, already known via the Bavarian Naturdenkmale register as reg_bayern-naturdenkmale_1613 (Naturdenkmal Nr.24 Alte Buche bei Altmugl, Mkt. Neualbenreuth, same coordinates). Not a new find; removed from this leads list, no write-up needed.",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published. 2026-09-03 verify pass: 3 Giessen candidates (Adam und Eva, Alte Eiche Roedgen, Schillerlinde Roedgen) and 2 Rudolstadt candidates (Freundschaftseiche, Einheitslinde) verified but held below the 4-tree floor; full write-ups in data/leads/giessen.json and data/leads/rudolstadt.json. Symbolic oaks in Germany blocked as a category, not a single tree. Entries removed from this leads list now that they are delivered elsewhere. 2026-09-03 follow-up verify pass: found the 4th Giessen tree, Lindengruppe an der Lindbachquelle (Lützellinden, also a Gießen district), which clears Giessen to the 4-tree floor; all 4 delivered to data/research/giessen-verified.json (gie_001-gie_004), and data/leads/giessen.json emptied accordingly. No fourth Rudolstadt candidate was found. Three further candidates verified and delivered as single-tree-destination exceptions (2026-08-31 ruling), each a nationally or regionally famous named lime with official protection and a real reason someone would travel specifically for it: Linde in Reinborn (data/research/reinborn-verified.json, rbn_001, 14.34m girth), Tanzlinde (Effeltrich) (data/research/effeltrich-verified.json, eff_001, Nationalerbe-Baum No. 39), and Schenklengsfelder Dorflinde (data/research/schenklengsfeld-verified.json, sfd_001, 17.91m girth, possibly Germany's oldest deciduous tree). One candidate, Gerichtslinde (Klingenberg am Main), verified as alive and existing but judged NOT to clear the single-tree exception (modest 4.22m girth, no official protection found, folk age claim of 800y unsupported by its own register's 325y dendrological estimate); written up in data/leads/klingenberg-am-main.json. All 5 of these entries removed from this leads list now that they are handled. 2026-09-03 second follow-up verify pass: two further single candidates verified and held below the 4-tree floor (neither clearly clears the single-tree-destination exception), written up as data/leads/munzenberg.json (Eiche an der Kirche, WEAK) and data/leads/passau.json (Friedenslinde, UNCLEAR, recommended as a future Passau city seed instead). Both removed from this leads list. 2026-09-03 third follow-up verify pass (cluster check): geographic analysis flagged three 'geleitete Linden' (guided/trained lime tree, a recognised regional folk-tree type) as a possible tight cluster in the Malsfeld/Felsberg/Knüllwald corner of Schwalm-Eder-Kreis, Hessen: Geleitete Linden Berndshausen, Geleitete Linden Dagobertshausen and Tanzlinde (Hilgershausen). All three verified alive and confirmed via baumkunde.de plus a second source each (LAGIS Hessen's historic-sites register for Berndshausen; the Wikimedia Commons gallery page 'Geleitete Linden im Schwalm-Eder-Kreis' for the other two), and genuinely close together (Berndshausen-Dagobertshausen 4.6km, Dagobertshausen-Hilgershausen 3.5km, Berndshausen-Hilgershausen 6.6km). That Commons gallery page turned out to be a real, named regional grouping (12 surviving 'geleitete Linden' across the district) rather than an invented theme, and it named a fourth specimen, the Tanzlinde of Ostheim (Malsfeld), which sits 2.0-4.0km from the other three and was independently verified the same way; it was not previously in this leads file. All four cleared the 4-tree floor as a genuine walkable-by-car cluster and were delivered to data/research/schwalm-eder-linden-verified.json (sel_001 to sel_004). The three that had lead entries here (Berndshausen, Dagobertshausen, Hilgershausen) are removed from this leads list accordingly. Other district members of the same named grouping (Dorflinde Lischeid, Dorflinde Sebbeterode, Kandelaberlinde Dorla, Tanzlinde Niedenstein) were checked for distance and are 18 to 35km from this cluster, too far to join it; they remain as separate leads. Two other Hessian lime candidates in this file, Dorflinde in Aua (Neuenstein) and Gerichtslinde Erdmannrode, were checked and are 15.5km and 33.5km from the cluster respectively, also too far to join it; left as leads. Tanzlinde (Himmelsberg), also in this file, is a different tree from Tanzlinde (Hilgershausen) despite the similar name, and sits about 45km away; left as a lead, flagged in sel_003's verify_notes to avoid future confusion between the two. 2026-09-04 verify pass (famous-germany batch G1, 1 candidate): Riesenbuche bei Altmugl is a duplicate, already known via the Bavarian Naturdenkmale register as reg_bayern-naturdenkmale_1613 (Naturdenkmal Nr.24 Alte Buche bei Altmugl, Mkt. Neualbenreuth, same coordinates). Not a new find; removed from this leads list, no write-up needed. 2026-09-04 verify pass (famous-germany batch H1, 8 candidates): Hranicni buk (Cinovec) is in the Czech Republic, not Germany (Dubi, Ustecky kraj), and its original tree died in the 1970s (lightning) with only a young 2007 replacement sapling alive today; blocked on both grounds, removed from leads. Hutbuche bei Frauenroth confirmed dead, collapsed in Storm Egon Jan 2017; blocked, removed from leads. Urbuche (Mitgenfeld) confirmed dead, broke apart May 2013; blocked, removed from leads. Baerenwaldeiche bei Niederholzklau confirmed dead, fell in storm April 2024; blocked, removed from leads. Dr. August Köster-Eiche (Wuppertal) is a young 2000s memorial oak honouring a local civic-association chairman, no independent fame or age found; blocked as not remarkable enough, removed from leads.",
   "leads": [
-    {
-      "name": "Hraniční buk (Cínovec)",
-      "lat": 50.732796,
-      "lng": 13.767946,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:C%C3%ADnovec_(Dub%C3%AD)_-_Hrani%C4%8Dn%C3%AD_buk,_2024-06,_obr01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Ehemalige_Grenze_Cinovec-Zinnwald.jpg",
-        "https://commons.wikimedia.org/wiki/File:Hrani%C4%8Dn%C3%AD_buk_-_C%C3%ADnovec,_cca_1920-1930.jpg"
-      ],
-      "status": "lead",
-      "species": "Beech (Fagus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Hutbuche bei Frauenroth",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Buche_Frauenroth,_1.jpg",
-        "https://commons.wikimedia.org/wiki/File:Hutbuche_April2009.JPG",
-        "https://commons.wikimedia.org/wiki/File:Hutbuche_April2009_HF1.JPG"
-      ],
-      "status": "lead"
-    },
-    {
-      "name": "Urbuche",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:2020-08_Urbuche_Mitgenfeld.jpg",
-        "https://commons.wikimedia.org/wiki/File:2020-08_Urbuche_Mitgenfeld_2.jpg",
-        "https://commons.wikimedia.org/wiki/File:Buche_Mitgenfeld,_1.jpg"
-      ],
-      "status": "lead"
-    },
-    {
-      "name": "Bärenwaldeiche bei Niederholzklau",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau1.JPG",
-        "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau11.JPG",
-        "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau12.JPG"
-      ],
-      "status": "lead"
-    },
-    {
-      "name": "Dr. August Köster-Eiche",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_075.jpg",
-        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_076.jpg",
-        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_077.jpg"
-      ],
-      "status": "lead",
-      "species": "Oak (Quercus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
     {
       "name": "Eiche am Forsthaus Grüner Jäger",
       "lat": null,
@@ -1172,6 +1113,66 @@
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
       "reason": "Commons category name for a general topic, not a single collectible point (multiple symbolic oaks across Germany, no one specific tree at these coordinates)."
+    },
+    {
+      "name": "Hraniční buk (Cínovec)",
+      "lat": 50.732796,
+      "lng": 13.767946,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:C%C3%ADnovec_(Dub%C3%AD)_-_Hrani%C4%8Dn%C3%AD_buk,_2024-06,_obr01.jpg",
+        "https://commons.wikimedia.org/wiki/File:Ehemalige_Grenze_Cinovec-Zinnwald.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hrani%C4%8Dn%C3%AD_buk_-_C%C3%ADnovec,_cca_1920-1930.jpg"
+      ],
+      "status": "blocked",
+      "reason": "WRONG COUNTRY plus DEAD. Cinovec/Zinnwald-Georgenfeld is a Czech-German border crossing but the tree itself, per cs.wikipedia.org/wiki/Hranicni_buk_(Cinovec), stands at 50.7330N 13.7686E in Dubi, Teplice district, Ustecky kraj, CZECH REPUBLIC (not Germany); it should not be researched or delivered as a German lead at all, and belongs (if anywhere) in a Czech leads file. Separately and independently disqualifying: the original beech (traditionally dated to a 1537 planting, allegedly rested under by Napoleon) died after 1945, was down to its last living branch by the 1960s, and was finished off by a lightning strike in the 1970s. A replacement beech was planted at the site 2007-08-18 with an information plaque, but it is a young sapling (order of 15-20 years old) with no independent remarkability of its own, comparable to the rejected Kanzelbuche and Puecklersche Blutbuche entries already blocked in this file. Never ship the original; the replacement could be reconsidered decades from now once it has real size, and only as a Czech, not German, candidate."
+    },
+    {
+      "name": "Hutbuche bei Frauenroth",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Buche_Frauenroth,_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hutbuche_April2009.JPG",
+        "https://commons.wikimedia.org/wiki/File:Hutbuche_April2009_HF1.JPG"
+      ],
+      "status": "blocked",
+      "reason": "DEAD. Per de.wikipedia.org/wiki/Hutbuche_bei_Frauenroth and baumkunde.de (which titles its own entry with a dagger, \"† Hutebuche in Frauenroth\", the German tree-register convention for deceased), this triple-trunked beech stood at the forest edge near the cemetery of Frauenroth (Burkardroth, Bad Kissingen district, Bavaria), designated Naturdenkmal 672-N/030 since 1971, roughly 250-350 years old, and host to an annual Hutbuchenfest. A branch failure in 2009 revealed fungal decay (oyster, honey and fire fungus), and the tree collapsed outright during Storm Egon on the night of 2017-01-12/13. No living successor was found in this search. Never ship."
+    },
+    {
+      "name": "Urbuche",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:2020-08_Urbuche_Mitgenfeld.jpg",
+        "https://commons.wikimedia.org/wiki/File:2020-08_Urbuche_Mitgenfeld_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Buche_Mitgenfeld,_1.jpg"
+      ],
+      "status": "blocked",
+      "reason": "DEAD. This European beech stood above Mitgenfeld (part of Oberleichtersbach, Bad Kissingen district, Bavarian Rhoen), on the south slope of the Pilsterberg at roughly 530m elevation, reputed over 600 years old and one of the oldest beeches in Germany, listed as a Naturdenkmal. Per de.wikipedia.org/wiki/Urbuche, baumkunde.de (again titled with the dagger, deceased marker: \"† Urbuche bei Mitgenfeld\") and infranken.de news coverage, it broke apart on the night of 2013-05-13/14, shortly after inspectors had found a crack and were planning to brace the crown. Photos on Commons (2020) likely show the site or remnants rather than a living tree; treat any post-2013 photo with suspicion if this is ever reconsidered. Never ship."
+    },
+    {
+      "name": "Bärenwaldeiche bei Niederholzklau",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau1.JPG",
+        "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau11.JPG",
+        "https://commons.wikimedia.org/wiki/File:B%C3%A4reneiche-Niederholzklau12.JPG"
+      ],
+      "status": "blocked",
+      "reason": "DEAD. This pedunculate oak (Quercus robur) stood in forest near Niederholzklau (part of Freudenberg, Siegen-Wittgenstein, North Rhine-Westphalia), first documented 1453, reputed roughly 700 years old, about 5m girth and 30m tall, Naturdenkmal since 1988, damaged by a lightning strike in 1990 (bark stripped along 20m) and treated with mycorrhizal soil inoculation from 1993. Per de.wikipedia.org/wiki/Baerenwaldeiche, baumkunde.de (dagger-marked deceased) and siegener-zeitung.de/freudenberg-online.com news coverage, it fell in a storm on the night of 2024-04-15 and is confirmed dead. Never ship."
+    },
+    {
+      "name": "Dr. August Köster-Eiche",
+      "lat": null,
+      "lng": null,
+      "photos": [
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_075.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_076.jpg",
+        "https://commons.wikimedia.org/wiki/File:Wuppertal_Ronsdorfer_Anlagen_2015_077.jpg"
+      ],
+      "status": "blocked",
+      "reason": "NOT REMARKABLE. This is a young memorial oak in the Ronsdorfer Anlagen park, Wuppertal (roughly 51.234N 7.207E), honouring Dr. August Köster, who chaired the Ronsdorfer Heimat- und Buergerverein (local heritage/civic association) 1935-1966. Wikimedia Commons categorises the tree under \"planted in the 2000s\" (its own subcategory carries no Wikidata item and no age/girth data), it does not appear in de.wikipedia's own \"Liste der Gedenkbaeume in Wuppertal\", and no source found gives it any age, size or independent fame beyond the memorial sign. A tree honouring a local association chairman, itself only about two decades old, does not clear the genuinely-old / visually-spectacular / historically-significant bar and clearly fails the single-tree-destination test (nobody would travel specifically for this tree). Wuppertal is not yet a published city; this candidate is not strong enough to seed one and would not survive as a lead worth carrying forward either. Photographs (Commons, 2015) not inspected further since the tree fails on remarkability before location or photo quality become relevant."
     }
   ]
 }
