@@ -155,11 +155,48 @@ def check(text, label="text"):
     return hits
 
 
+VOICE = pathlib.Path(__file__).resolve().parent.parent / "drafts" / "PITCH_VOICE.md"
+
+
+def learn(bad, good, why):
+    """Add one pair to the calibration set, at the moment he corrects me.
+
+    The reason this exists is the reason the whole layer exists. A set of pairs
+    that only grows when I remember to grow it decays into a snapshot of one
+    afternoon, which is the failure mode CLAUDE.md already records about notes.
+    Adding a pair has to cost one command, so it happens while the correction
+    is still on the screen.
+
+    The pair goes above "What to do instead", so the newest correction is the
+    first thing read after the diagnosis.
+    """
+    import datetime
+    text = VOICE.read_text(encoding="utf-8")
+    anchor = "## What to do instead, in order"
+    if anchor not in text:
+        print(f"pitchcheck --learn: cannot find the section to add to in {VOICE}")
+        return 1
+    entry = (f"**{why.strip()}** (added {datetime.date.today().isoformat()})\n\n"
+             f"- NO: \"{bad.strip()}\"\n"
+             f"- YES: \"{good.strip()}\"\n\n")
+    VOICE.write_text(text.replace(anchor, entry + anchor, 1), encoding="utf-8")
+    print(f"pitchcheck: pair added to {VOICE.name}. If the bad half can be "
+          f"grepped, add it to TICS in this file too.")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("path", nargs="?", help="file to check, or - for stdin")
     ap.add_argument("--text", help="check this string instead of a file")
+    ap.add_argument("--learn", nargs=3, metavar=("BAD", "GOOD", "WHY"),
+                    help="record a correction as a pair in PITCH_VOICE.md, "
+                         "which is what keeps this layer from decaying into a "
+                         "snapshot of the day it was written")
     a = ap.parse_args()
+
+    if a.learn:
+        return learn(*a.learn)
 
     if a.text is not None:
         text, label = a.text, "--text"
