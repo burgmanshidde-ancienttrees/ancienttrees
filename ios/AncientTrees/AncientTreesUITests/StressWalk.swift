@@ -78,13 +78,13 @@ final class StressWalk: XCTestCase {
                 let count = buttons.count
                 guard count > 0 else { lastAction = "nothing to tap"; break }
                 let pick = buttons.element(boundBy: Int.random(in: 0..<count, using: &rng))
-                // ONE THROWING snapshot, and it is the only call here that can
-                // be caught. .exists answers safely, but .frame and .label are
-                // plain properties: when the element has gone since the count
-                // was read they do not return, they fail the test outright, and
-                // this test exists precisely to survive a screen moving under
-                // it. The comment above records the same death at index 15;
-                // this is index 20, on iOS 18.5 in CI on 2026-09-01, and
+                // ONE THROWING snapshot, and it is the only resolve-by-element
+                // call left here. .exists answers safely, but .frame and
+                // .label are plain properties: when the element has gone since
+                // the count was read they do not return, they fail the test
+                // outright, and this test exists precisely to survive a screen
+                // moving under it. The comment above records the same death at
+                // index 15, then index 20 on iOS 18.5 in CI on 2026-09-01, and
                 // resolving later only ever narrows that window rather than
                 // closing it. snapshot() throws, so `try?` turns a red gate
                 // into the "gone before the tap" this loop already knows how to
@@ -111,8 +111,17 @@ final class StressWalk: XCTestCase {
                     lastAction = "left '\(pick.label)' alone"
                     break
                 }
+                // Tap the POINT the snapshot already found, not the element
+                // again: pick.coordinate(...) re-resolves the live element,
+                // which is exactly the call that died at index 21 on iOS 18.5
+                // in CI on 2026-09-03, mid-animation, after every guard above
+                // it had already passed. An absolute screen coordinate needs
+                // no further resolution and cannot go stale between the
+                // snapshot and the tap.
                 lastAction = "tap '\(pick.label)'"
-                pick.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
+                app.coordinate(withNormalizedOffset: .zero)
+                    .withOffset(CGVector(dx: box.midX, dy: box.midY))
+                    .tap()
             case 6, 7:
                 lastAction = "swipe up"
                 app.swipeUp()
