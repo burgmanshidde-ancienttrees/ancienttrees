@@ -4470,6 +4470,80 @@
    ],
    "trees": 6,
    "logged": false
+  },
+  {
+   "started": "2026-09-04T00:21:33+00:00",
+   "date": "2026-09-04",
+   "run_id": "33818544690",
+   "minutes": 58.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 470,
+   "denials": 30,
+   "denials_source": "permission_denials: Bash, Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(find), Bash(for), Bash(git), Bash(grep), Bash(mkdir), Bash(python3), Bash(until)",
+   "ended": "success",
+   "tokens": 62368621,
+   "claims_held": [
+    "bordeaux"
+   ],
+   "commits": 34,
+   "cities_touched": 13,
+   "cities": [
+    {
+     "city": "port-renfrew",
+     "trees": 2
+    },
+    {
+     "city": "alicante",
+     "trees": 1
+    },
+    {
+     "city": "cooper-creek",
+     "trees": 1
+    },
+    {
+     "city": "derby",
+     "trees": 1
+    },
+    {
+     "city": "flinders-ranges",
+     "trees": 1
+    },
+    {
+     "city": "kawatana",
+     "trees": 1
+    },
+    {
+     "city": "matsumae",
+     "trees": 1
+    },
+    {
+     "city": "numata",
+     "trees": 1
+    },
+    {
+     "city": "omishima",
+     "trees": 1
+    },
+    {
+     "city": "pemberton",
+     "trees": 1
+    },
+    {
+     "city": "sakegawa",
+     "trees": 1
+    },
+    {
+     "city": "shimizu",
+     "trees": 1
+    },
+    {
+     "city": "baarn",
+     "trees": 0
+    }
+   ],
+   "trees": 13,
+   "logged": true
   }
  ],
  "schedule_changes": [

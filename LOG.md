@@ -19,6 +19,8 @@ Build (4194 pages) and `scripts/qa.py` (5987 checked) clean throughout. All reso
 
 **Cagliari's Italian overlay written (Contract J), full 10 trees.** `langcheck.py --next` named it the highest-impression untranslated Italian page (43 impressions) with no `it` overlay. Hand-written, matching the established style of the other 7 Italian city overlays. Build (5999 pages) and `scripts/qa.py` clean.
 
+**Bordeaux's French overlay written (Contract J), full 10 trees.** Next on `langcheck.py --next` (39 impressions, no `fr` overlay). Same pattern: hand-written, matching Paris/Brussels/Geneva/Nice. `i18ncheck.py` caught an over-length intro and three stories; trimmed and clean.
+
 ## 2026-09-04 - Night run 2026-09-03 23:32 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 47.7 minutes of its 120 minute window, 374 turns, 33 commands refused by the allowlist, ended clean (success). 6 tree(s) reached data/cities across 6 city file(s), and the run still wrote no log entry of its own. Claims left behind: indianapolis, boise, fort-lauderdale, which block the top of the queue until they expire.
