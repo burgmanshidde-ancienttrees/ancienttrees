@@ -1095,9 +1095,14 @@ struct TreeDetail: View {
     @ViewBuilder private var locationLine: some View {
         if tree.precision.needsWarning {
             Button { placing = true } label: {
+                // NO ICON (Hidde, 2026-09-04: "soms zie je een target icoon of
+                // locatie icoon op een boom kaart, ik weet niet precies wat dat
+                // is maar haal maar helemaal weg, voegt niks toe"). He is the
+                // second reader not to know what a crosshair meant here, the
+                // first being the reason "Pin: Approximate" became a sentence
+                // earlier today. The words already say it, and a glyph that has
+                // to be decoded is worse than no glyph.
                 HStack(alignment: .firstTextBaseline, spacing: 10) {
-                    Image(systemName: "scope")
-                        .foregroundStyle(Brand.inkSoft)
                     Group {
                         Text("Approximate location. ").fontWeight(.semibold)
                         // The ask belongs here rather than three screens away:

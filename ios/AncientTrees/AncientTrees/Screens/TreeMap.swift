@@ -242,6 +242,7 @@ struct TreeMap: UIViewRepresentable {
             container.addSubview(recentre)
             let lift = recentre.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -120)
             context.coordinator.recentreLift = lift
+            context.coordinator.recentreView = recentre
             NSLayoutConstraint.activate([
                 recentre.trailingAnchor.constraint(equalTo: container.safeAreaLayoutGuide.trailingAnchor, constant: -12),
                 lift,
@@ -411,6 +412,8 @@ struct TreeMap: UIViewRepresentable {
         private var breath: Timer?
         /// The constraint that keeps the recentre control above the sheet.
         var recentreLift: NSLayoutConstraint?
+        /// And the control itself, so it can fade rather than be destroyed.
+        weak var recentreView: UIView?
 
         init(_ p: TreeMap) { parent = p }
         deinit { breath?.invalidate() }
@@ -676,14 +679,34 @@ struct TreeMap: UIViewRepresentable {
                 // Google Maps both have this control ride the sheet frame by
                 // frame. The content inset below deliberately stays on the stop.
                 let coverage = parent.livePoints ?? coverage
-                // Never higher than mid-screen. At full height the sheet is 86
-                // percent of the phone, so "just above the sheet" put the
-                // recentre control up among the search field and the filter
-                // chips, three controls deep in the same 120 points (seen
-                // 2026-08-25, on the map-full screen the first time it was
-                // photographed).
-                let clamped = max(min(-(coverage + 12), -120), -(map.bounds.height * 0.55))
+                let height = map.bounds.height
+                // IT RIDES ALL THE WAY AND FADES, rather than sticking and then
+                // vanishing (Hidde, 2026-09-04: "het button op de kaart om je
+                // naar je locatie te krijgen die verdwijnt en verspringt als je
+                // de lijst view verschuift").
+                //
+                // Two things made that one fault. It was clamped at 55 percent
+                // of the screen, so past that the sheet slid over a button that
+                // had stopped moving; and the map tab removed it from the view
+                // hierarchy outright at the FULL stop, which only changes when a
+                // drag ends, so it disappeared on release and was rebuilt
+                // somewhere else on the way back down.
+                //
+                // The clamp existed for a real reason: at full height "just
+                // above the sheet" put this control up among the search field
+                // and the filter chips. Fading solves that better than freezing
+                // did, because by the time it would collide it is not there.
+                let clamped = min(-(coverage + 12), -120)
                 if abs(lift.constant - clamped) > 1 { lift.constant = clamped }
+                // Gone by the time the sheet covers 70 percent, which is past
+                // any stop but full, and untappable before it is invisible.
+                let from = height * 0.55, to = height * 0.70
+                let t = (coverage - from) / max(to - from, 1)
+                let alpha = max(0, min(1, 1 - t))
+                if let view = recentreView, abs(view.alpha - alpha) > 0.01 {
+                    view.alpha = alpha
+                    view.isUserInteractionEnabled = alpha > 0.05
+                }
             }
 
             // AND THE CAMERA HAS TO KNOW ABOUT THE SHEET TOO, which until
