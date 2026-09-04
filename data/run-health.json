@@ -4749,6 +4749,161 @@
    ],
    "trees": 14,
    "logged": true
+  },
+  {
+   "started": "2026-09-04T07:40:37+00:00",
+   "date": "2026-09-04",
+   "run_id": "33845501699",
+   "minutes": 40.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 314,
+   "denials": 31,
+   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(for), Bash(git), Bash(iconv), Bash(ls), Bash(python3), Bash(rm), Bash(tail), Bash(timeout), Bash(wc)",
+   "ended": "success",
+   "tokens": 5498180,
+   "claims_held": [
+    "_famous-japan",
+    "_famous-poland"
+   ],
+   "commits": 38,
+   "cities_touched": 33,
+   "cities": [
+    {
+     "city": "allouville-bellefosse",
+     "trees": 1
+    },
+    {
+     "city": "bad-blumau",
+     "trees": 1
+    },
+    {
+     "city": "bansko",
+     "trees": 1
+    },
+    {
+     "city": "bari",
+     "trees": 1
+    },
+    {
+     "city": "concoret",
+     "trees": 1
+    },
+    {
+     "city": "granit",
+     "trees": 1
+    },
+    {
+     "city": "miriam-vale",
+     "trees": 1
+    },
+    {
+     "city": "pirangi",
+     "trees": 1
+    },
+    {
+     "city": "vassununga",
+     "trees": 1
+    },
+    {
+     "city": "auckland",
+     "trees": 0
+    },
+    {
+     "city": "brighton",
+     "trees": 0
+    },
+    {
+     "city": "brunswick-georgia",
+     "trees": 0
+    },
+    {
+     "city": "catania",
+     "trees": 0
+    },
+    {
+     "city": "columbia-missouri",
+     "trees": 0
+    },
+    {
+     "city": "coos-bay",
+     "trees": 0
+    },
+    {
+     "city": "enschede",
+     "trees": 0
+    },
+    {
+     "city": "fortingall",
+     "trees": 0
+    },
+    {
+     "city": "fulufjallet",
+     "trees": 0
+    },
+    {
+     "city": "guerneville",
+     "trees": 0
+    },
+    {
+     "city": "hampton-virginia",
+     "trees": 0
+    },
+    {
+     "city": "hiroshima",
+     "trees": 0
+    },
+    {
+     "city": "jaegerspris-nordskov",
+     "trees": 0
+    },
+    {
+     "city": "kanazawa",
+     "trees": 0
+    },
+    {
+     "city": "kauai",
+     "trees": 0
+    },
+    {
+     "city": "martinsville-new-jersey",
+     "trees": 0
+    },
+    {
+     "city": "olympic-national-park",
+     "trees": 0
+    },
+    {
+     "city": "santa-maria-del-tule",
+     "trees": 0
+    },
+    {
+     "city": "sequoia-national-park",
+     "trees": 0
+    },
+    {
+     "city": "simsbury",
+     "trees": 0
+    },
+    {
+     "city": "stelmuze",
+     "trees": 0
+    },
+    {
+     "city": "sunderland-massachusetts",
+     "trees": 0
+    },
+    {
+     "city": "tillamook",
+     "trees": 0
+    },
+    {
+     "city": "waipoua-forest",
+     "trees": 0
+    }
+   ],
+   "trees": 9,
+   "logged": true
   }
  ],
  "schedule_changes": [
