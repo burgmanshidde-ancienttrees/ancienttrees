@@ -2,14 +2,14 @@
 
 Fill these into App Store Connect: sidebar > Featuring > Nominations > + > Create Nomination.
 
-## Nomination Name  (43/60)
-Explore the remarkable old trees around you
+## Nomination Name  (39/60)
+Explore remarkable old trees around you
 
-Hidde's wording, and both words are his. "Explore" beat my "Find" because
-finding is a search and exploring is an afternoon outside, which is what the
-product is; Apple's own Today-tab writes in the same discovery voice. "Around
+Hidde's wording throughout. "Explore" beat "Find" because finding is a search
+and exploring is an afternoon outside, which is what the product is. "Around
 you" beat "near you" because near is a distance and around is where you are
-standing in the middle of something, which is the promise.
+standing in the middle of something. No article, because a headline reads
+better without one.
 
 The field is internal. This is the app's INTRODUCTION, so broad is right; the
 narrower angle, the ginkgos in November, is what a second nomination is for.
