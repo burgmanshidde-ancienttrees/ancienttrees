@@ -43,17 +43,46 @@ function textLabel(raw: string): string {
   return s;
 }
 
+// A tree citing two articles on one site rendered the same host twice, which
+// reads as a duplicate rather than as two sources (Lisbon's jacarandas cited
+// A Mensagem twice on the day this shipped). Where a host repeats, the last
+// meaningful path segment is added so the two are told apart.
+function pathHint(url: string): string {
+  try {
+    const parts = new URL(url).pathname.split("/").filter(Boolean);
+    const last = parts[parts.length - 1] ?? "";
+    const hint = last.replace(/\.\w{2,5}$/, "").replace(/[-_]+/g, " ").trim();
+    if (!hint) return "";
+    return hint.length > 40 ? hint.slice(0, 39).trimEnd() + "…" : hint;
+  } catch {
+    return "";
+  }
+}
+
 export function treeSources(tree: { verified_sources?: string[] }): TreeSource[] {
   const raw = tree.verified_sources ?? [];
   const seen = new Set<string>();
   const out: TreeSource[] = [];
+  const hostCount = new Map<string, number>();
+  for (const entry of raw) {
+    const s = String(entry ?? "").trim();
+    if (/^https?:\/\//i.test(s)) {
+      const h = hostLabel(s);
+      hostCount.set(h, (hostCount.get(h) ?? 0) + 1);
+    }
+  }
   for (const entry of raw) {
     const s = String(entry ?? "").trim();
     if (!s) continue;
     if (seen.has(s)) continue;
     seen.add(s);
-    if (/^https?:\/\//i.test(s)) out.push({ href: s, label: hostLabel(s) });
-    else out.push({ label: textLabel(s) });
+    if (/^https?:\/\//i.test(s)) {
+      const h = hostLabel(s);
+      const hint = (hostCount.get(h) ?? 0) > 1 ? pathHint(s) : "";
+      out.push({ href: s, label: hint ? `${h}, ${hint}` : h });
+    } else {
+      out.push({ label: textLabel(s) });
+    }
   }
   return out;
 }
