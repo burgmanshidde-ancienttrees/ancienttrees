@@ -39,14 +39,14 @@ From mid October, 570 of those trees reach the best weeks of their year, and the
 
 The app launched on 3 September 2026 and ships in seven languages.
 
-## Helpful Details  (515/500)
-Made by one person in the Netherlands who loves old trees and being outside.
+## Helpful Details  (485/500)
+Made by one person in the Netherlands who loves old trees.
 
 Every tree is verified against two independent sources before it goes on the map, and a location we cannot state precisely says so on the page instead of sending somebody to the wrong spot. A pin you can trust is the difference between a good afternoon and a wasted one.
 
-Readers correct us and send photographs from the app, which go on the tree's page with their name under it.
+Readers correct us and send photographs from the app, which appear on the tree's page with their name under it.
 
-Seven languages, written rather than machine translated.
+Seven languages, written not translated.
 
 ## Checked before writing
 - 2,472 trees, 362 places, 25 countries (scripts/stats.py, 2026-09-04)
