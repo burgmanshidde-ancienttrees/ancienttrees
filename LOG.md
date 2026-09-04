@@ -9,6 +9,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-04 (continuation) - Finished a standing _famous-japan claim: 3 trees, +1 city (Iwaki)
+
+An earlier attempt in this window stopped after 8 minutes with 112 of its 120 unspent, leaving one claim standing (`_famous-japan`, three trees fully verified and staged in `data/research/famous-japan-batch{1,2,3}-verified.json`, stories only). `leads.py --ready` was empty, so per the resume instructions this claim was the whole job.
+
+Wrote and shipped all three: **fjk_002** (Ohatsuki Ginkgo of Jotakuji Temple, toppled by a 2018 typhoon and still resprouting), **ata_002** (Byakushin of Joganji Temple, an 800+ year spiral-trunked juniper), **iwk_001** (Nakakamado no Shidare Momiji, a weeping maple, new place Iwaki). Fujikawaguchiko and Atami both grew from one tree to two; their intro/meta copy was updated to match, since it previously said "maps one tree". Full detail in CURATION.md.
+
+Full local build (6155 pages), `scripts/qa.py` and `scripts/preflight.py` both clean. Claim released. `scripts/health.py` rung 2 clear (0 BLOCKER, 1 WARN that names itself as session-only app-test work, not for a night run).
+
 ## 2026-09-04 (session) - The conifer hero is gone, and the smoke gate gets a run a push cannot cancel
 
 Hidde, from the Discover tab: the conifer cover (hero-4, Paul Yong) was too

@@ -10,6 +10,16 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-04 (continuation) - Finished the standing _famous-japan claim: 3 trees, Fujikawaguchiko and Atami grown to two each, Iwaki opened
+
+Picked up a `_famous-japan` verify claim left standing by an earlier attempt in this window, with three trees already fully verified and staged uncommitted in `data/research/famous-japan-batch{1,2,3}-verified.json`, stories only missing. Wrote all three directly rather than dispatching a fresh write pass:
+
+- **Fujikawaguchiko** (fjk_002, The Ohatsuki Ginkgo of Jotakuji Temple): a leaf-seed variant ginkgo in Minobu (~17km south, day-trip distance, labelled honestly), one of only 7 nationally-designated Ohatsuki Icho in Japan. Toppled by Typhoon Trami on 2018-09-30; the temple left it where it fell and it has resprouted and fruited from the ground every year since. Age (~750 years) is a Nichiren-era legend, stated as such. Fujikawaguchiko's intro/meta/question_answer updated from "maps one tree" to two; hero/oldest stay fjk_001 (Shoji no Osugi, older).
+- **Atami** (ata_002, The Byakushin of Joganji Temple): a spiral-trunked Chinese juniper over 800 years old at a temple in Yugawara, one stop by train from Atami (day-trip boundary, labelled honestly). National Natural Monument since 1939. Atami's intro/meta/question_answer updated from "maps one tree" to two; hero/oldest stay ata_001 (the Great Camphor, legendarily older).
+- **Iwaki** (iwk_001, Nakakamado no Shidare Momiji): new single-tree place under the 2026-08-31 exception. A two-trunk weeping Japanese maple, National Natural Monument since 1937, that Iwaki's city government tracks and forecasts for autumn colour every year. No confirmed age: ja.wikipedia's 400-500 year figure rests on a bridge claim to the temple's founding date that no source actually makes, so left unstated per the no-basis rule. Real travel to Takahagi's only tree (tkh_001) is 45-70 minutes door to door, well past the day-trip boundary, so it does not join Takahagi as a container.
+
+None have photos yet (honest gap, `status: missing`). `data/countries/japan.json`'s city count corrected 66 to 67; `city_names.py` resolved Iwaki's foreign-language names into `data/city-aliases.json`. Full local build (6155 pages) and `scripts/qa.py`/`preflight.py` clean. Claim released.
+
 ## 2026-09-04 (continuation) - Australia famous-tree batch: 1 verified of 12, and a photo viewing pass on the 5+-tree shortlist
 
 Dispatched a verify pass on `famous_demand.py --next`'s Australia batch (12 candidates, unusually weak demand for this lane at 17-82 reads/month, several 19th-century explorer "blazed"/"marked" trees flagged in the brief as high dead-tree risk). The caution paid off: **1 verified, 11 blocked**, the worst yield of any famous-tree batch run so far.
