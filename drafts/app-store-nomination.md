@@ -61,7 +61,7 @@ Apple would be featuring.
 https://ancienttrees.app
 ```
 
-## Description  (812/1000)
+## Description  (810/1000)
 
 Only the App Store team sees this. It is a pitch to Apple's editors, not the
 public listing, so it never repeats the feature list they already have.
