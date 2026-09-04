@@ -104,7 +104,13 @@ def photo_block(entry, width, height, reason, today):
 
 
 def write_image(src, dest):
-    from PIL import Image, ImageOps
+    try:
+        from PIL import Image, ImageOps
+    except ImportError:
+        raise RuntimeError(
+            "Pillow is not installed, and a reader's photograph must be rotated "
+            "upright before it ships (qa refuses a self-hosted file whose EXIF "
+            "tag would turn it again). Run: pip install pillow")
     im = Image.open(src)
     im = ImageOps.exif_transpose(im)
     if im.mode not in ("RGB",):
