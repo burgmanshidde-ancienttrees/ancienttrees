@@ -5,7 +5,7 @@
   "intro": "Valencia protects more monumental and singular trees than any other region in Spain, over 2,400 across the Comunitat Valenciana under a 2006 law, and the city maps five routes past its own share of them. Several of its most-loved trees share an oddly specific origin story: 19th century gardeners meant to plant a magnolia and grabbed a fig sapling by mistake, or a species imported because it had just become fashionable on the French Riviera. What survives from those errors and fashions includes the widest tree canopy in the city, a 400-year-old olive, and the tallest tree in the province.",
   "meta_description": "Valencia protects more monumental trees than any Spanish region. Meet El Titan, a 174-year-old fig planted by mistake, and a 400-year-old olive.",
   "question_answer": "The oldest tree in Valencia is generally cited as the olive tree of Parque de la Rambleta, in the San Marcelino neighbourhood, estimated at around 400 years old and described by the city's own monumental trees route as the oldest specimen among all five of its walking trails.",
-  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and twenty-three more monumental trees across the city.",
+  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and twenty-four more monumental trees across the city.",
   "question_context": "Valencia is unusually well documented for this kind of question: the Comunitat Valenciana keeps a legal Catálogo de Árboles Monumentales y Singulares under a 2006 regional law, now covering more than 2,400 protected trees, and the city government separately publishes five named walking and cycling routes past its own monumental specimens, complete with individual profiles. Within that system, the olive of Parque de la Rambleta is the one most consistently named as the oldest, though as with most old olives, its 400-year figure comes from general estimate rather than a ring count or documented planting record. El Titan, the city's giant Ficus macrophylla in the Jardines del Parterre, is younger by comparison at 174 years but has a firmer, more specifically documented planting date, the tradeoff between the two runs through most of this list. The park sits in the San Marcelino neighbourhood on Pio IX street, next to the city's General Cemetery, a short bus ride south of the historic centre.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Valencia's monumental trees free to see?",
-      "a": "Fifteen of them are free: the Rambleta olive, El Titan and the rest of the Jardines del Parterre and Glorieta figs, and the other park and street trees all stand in open public ground. The other nine, including the Kashmir Cypress and Caucasian Elm, share the Jardi Botanic de la Universitat de Valencia, which charges a small entry fee, an ordinary botanical-garden ticket rather than anything specific to the trees."
+      "a": "Fifteen of them are free: the Rambleta olive, El Titan and the rest of the Jardines del Parterre and Glorieta figs, and the other park and street trees all stand in open public ground. The other ten, including the Kashmir Cypress and Caucasian Elm, share the Jardi Botanic de la Universitat de Valencia, which charges a small entry fee, an ordinary botanical-garden ticket rather than anything specific to the trees."
     },
     {
       "q": "How does Valencia protect its monumental trees?",
@@ -808,6 +808,37 @@
       },
       "paid_entry": true,
       "notes": "Single-sourced: only the Comunitat Valenciana's register of monumental and singular trees (id 1150) carries this specimen; espores.org's own ten-tree feature on this garden, which corroborates several neighbours, does not include it."
+    },
+    {
+      "id": "vlc_026",
+      "name": "La Carcasa",
+      "species": "Date Palm (Phoenix dactylifera)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+        "latitude": 39.47774,
+        "longitude": -0.386057,
+        "neighbourhood": "Ciutat Vella"
+      },
+      "story": "A date palm is supposed to grow one trunk. This one grows more than 35, all rising from a single base and splitting again as they climb, until the whole plant reads less like a tree than like something caught mid-explosion. That is exactly where the name comes from: a carcasa is the spent casing of a firework shell, the part left behind after the burst, and whoever named this palm had clearly stood underneath one before.\n\nPhoenix dactylifera is the ordinary date palm grown across the Mediterranean and the Middle East for its fruit, and it only branches like this under unusual conditions, typically when an injury to the growing tip forces several new shoots to compete for the top rather than one taking over cleanly. Valencia's specimen has kept doing it long enough and thoroughly enough that the university's own botanic garden calls it the most special palm on the grounds, ahead of trees twice its height nearby.\n\nNo age is recorded for it. The regional register that measures the garden's monumental trees left the girth column blank too, which makes sense for a trunk this divided; a single number would not describe it honestly.\n\nIt grows in the Jardi Botanic de la Universitat de Valencia, a ten minute walk from Angel Guimera metro station, behind the same small entrance fee that covers the Kashmir Cypress and the Bottle Tree.",
+      "verified_sources": [
+        "data/registers/valencia-arboles-monumentales.json (register_id 4916, height 19.1m, no girth recorded)",
+        "https://www.jardibotanic.org/?apid=palmeres-70&idioma=_spa"
+      ],
+      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Bottle Tree",
+      "transport": "10 min walk from Angel Guimera metro station",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "paid_entry": true,
+      "notes": "No age or girth in any source. Independently named and described by the Jardi Botanic's own site (jardibotanic.org), which corroborates the register's coordinates and calls it 'la palmera mas especial del Jardin' for its 35+ branching stems, an unusual multi-trunk form for this species."
     }
   ]
 }
