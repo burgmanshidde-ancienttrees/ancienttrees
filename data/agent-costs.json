@@ -5124,6 +5124,27 @@
         "tokens": 62000,
         "trees": 6,
         "note": "6 single-tree destination stories; ~10.3k tokens/tree, under the 15k target. One species name normalised (Common Yew to European Yew) to match the 37 existing Taxus baccata trees."
+      },
+      {
+        "target": "iOS app (rung 2)",
+        "kind": "fix",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session work, not dispatched: ios.yml had failed twice today on a SMALL layout finding (the compact worth-it button was 16pt wide against Apple's 44pt minimum, WorthItShape's compact branch set minHeight but never minWidth). One-line fix, pushed; tokens not tracked since no agent was dispatched."
+      },
+      {
+        "target": "submissions batch ids 64-83",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 0,
+        "note": "18 worth-it/vote-undone bookkeeping rows and one already-queued sighting lead (Baarn); all marked processed, nothing to verify or mail. Tokens not tracked, no agent dispatched."
+      },
+      {
+        "target": "_famous-japan batch G2",
+        "kind": "verify",
+        "tokens": 83000,
+        "trees": 4,
+        "note": "4 named candidates by combined Wikipedia readership (famous_demand.py --next): 1 joins Fujikawaguchiko, 3 published as new single-tree places (Yabu, Shiwa, Ito) under the 2026-08-31 exception. ~21k/tree."
       }
     ]
   }
