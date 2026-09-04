@@ -21,8 +21,43 @@ def _b64url(raw: bytes) -> str:
     return base64.urlsafe_b64encode(raw).rstrip(b"=").decode("ascii")
 
 
+# THE FILE READS ITSELF, so nobody has to remember to source it.
+#
+# Everything here already lives in ~/.ancienttrees-appstoreconnect.env by this
+# project's own convention (credentials outside the repo). Requiring a `source`
+# first turned a missing shell line into a WRONG ANSWER rather than an error on
+# 2026-09-04: release.py asks this module for the last uploaded build, and
+# without the variables it falls back silently to the project file's number,
+# which was 8 while Apple already held 9. The archive would have been built,
+# and only Apple would have said no.
+#
+# Only fills what is not already set, so an explicit export and CI's secrets
+# both still win.
+def _load_env_file(path="~/.ancienttrees-appstoreconnect.env"):
+    try:
+        with open(os.path.expanduser(path), encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if line.startswith("export "):
+                    line = line[len("export "):]
+                if "=" not in line:
+                    continue
+                k, v = line.split("=", 1)
+                k = k.strip()
+                v = v.strip().strip('"').strip("'")
+                if k and k not in os.environ:
+                    os.environ[k] = v
+    except OSError:
+        pass
+
+
 def _env(name: str) -> str:
     v = os.environ.get(name)
+    if not v:
+        _load_env_file()
+        v = os.environ.get(name)
     if not v:
         raise SystemExit(
             "%s is not set. Run: source ~/.ancienttrees-appstoreconnect.env"
