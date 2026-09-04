@@ -829,6 +829,88 @@ struct TreeDetail: View {
         return first.count > 24 ? "see the story" : first
     }
 
+    /// One sheet for every blank, because four sheets that differ by a
+    /// placeholder is four places for them to drift apart.
+    private func editor(_ field: EditableField) -> some View {
+        FieldEditor(field: field,
+                    initial: current(field),
+                    onSave: { text in
+                        guard let m = mine else { return }
+                        switch field {
+                        case .name: sightings.update(m.id, name: text)
+                        case .age: sightings.update(m.id, age: text)
+                        case .story: sightings.update(m.id, note: text)
+                        }
+                        editing = nil
+                    },
+                    onCancel: { editing = nil })
+    }
+
+    private func current(_ field: EditableField) -> String {
+        switch field {
+        case .name: tree.name
+        case .age: tree.age ?? ""
+        case .story: tree.story
+        }
+    }
+
+    /// A field on your own tree that nobody has filled in yet.
+    enum EditableField: String, Identifiable {
+        case name, age, story
+        var id: String { rawValue }
+
+        var prompt: String {
+            switch self {
+            case .name: "What do you call it?"
+            case .age: "How old is it, roughly?"
+            case .story: "What makes this tree special?"
+            }
+        }
+
+        /// Long answers get room; a species or an age is one line.
+        var long: Bool { self == .story }
+    }
+
+    /// An empty field, offered rather than hidden. The green says it is
+    /// yours to fill; a grey dash would read as missing data on our side.
+    private func blank(_ label: String, _ field: EditableField) -> some View {
+        Button { editing = field } label: {
+            HStack(spacing: 5) {
+                Image(systemName: "plus.circle")
+                Text(label)
+            }
+            .font(.subheadline)
+            .foregroundStyle(Brand.moss)
+            .frame(minHeight: 44)
+            .contentShape(.rect)
+        }
+        .buttonStyle(.plain)
+    }
+
+    /// EVERYTHING A PERSON NEEDS BEFORE SETTING OFF, in one bordered block:
+    /// two columns for the facts that are short, then a line for the location
+    /// and a band for the ticket, both of which need words.
+    ///
+    /// The rule this follows, and it decided every question in the redesign
+    /// (2026-09-04): a column states a short value, a line carries words, a
+    /// panel is for something that decides whether you set off at all, and a
+    /// fact appears exactly once per page.
+    ///
+    /// Reference: AllTrails' trail page, from Hidde's own screenshot of the
+    /// Klompenpad Netelenburchpad, with his amendment that the labels sit on
+    /// top of their values ("ik ben voor labels on top"). AllTrails puts the
+    /// value on top, which works for them because every value in their row is
+    /// a number; the moment one is a word that can wrap, the label has to lead
+    /// or the row loses its baseline. CONVENTIONS.md carries both halves.
+    private var factsBlock: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            columns
+            locationLine
+            if mine == nil, tree.paidEntry { ticketBand }
+        }
+        .brandCard(14)
+    }
+
     private var columns: some View {
         HStack(alignment: .top, spacing: 0) {
             ageColumn.fixedSize(horizontal: true, vertical: false)
