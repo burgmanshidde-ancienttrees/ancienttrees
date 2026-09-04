@@ -708,6 +708,19 @@ VIEW_ONLY = re.compile(r"view-only|visible from|in (?:clear |full )?view from|fr
 # needed."
 NO_PERMISSION = re.compile(r"no permission is needed|no permission needed|"
                            r"without an appointment|no appointment (?:is )?needed", re.I)
+# A booking anyone can make is a yes too (Hidde, 2026-09-01, CLAUDE.md "A
+# booking is a yes too"): the test is whether the thing between the reader and
+# the tree is a price and a schedule, which we can state, or somebody's
+# permission, which we cannot promise. A scheduled tour or open day that any
+# member of the public can book is the former, not the latter, even though the
+# access field also has to use words like "booked" or "appointment" to say so
+# honestly. This pattern is deliberately narrow: it only exempts a sentence
+# that says the booking itself is open to anyone, never a bare "by
+# appointment" or "must be booked" with no such statement.
+BOOKING_OPEN_TO_ANYONE = re.compile(
+    r"anyone can book|bookable by anyone|open to the public|public events?\b"
+    r"|scheduled (?:public )?(?:events?|open days?|tours?)|guided walks? .*"
+    r"(?:anyone|public)|check the .* calendar", re.I)
 # The sentence is about a DIFFERENT place. Seville's lagunaria is the reason:
 # its access field distinguishes the free city garden the tree stands in from
 # the palace gardens next door, and it is the neighbours that need the
@@ -790,7 +803,7 @@ def check_access_permission():
             d = json.load(fh)
         for t in d.get("trees") or []:
             access = t.get("access") or ""
-            if VIEW_ONLY.search(access) or NO_PERMISSION.search(access):
+            if VIEW_ONLY.search(access) or NO_PERMISSION.search(access) or BOOKING_OPEN_TO_ANYONE.search(access):
                 continue
             # Sentence by sentence, because an access field routinely describes
             # more than one place and the gate is often on the other one.
