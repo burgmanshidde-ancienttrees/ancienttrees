@@ -312,10 +312,14 @@ struct MapTab: View {
                     focusIsFix: located,
                     route: walkRoute,
                     routeIsReal: (shownWalk?.shape?.count ?? 0) > 1,
-                    // Not while the sheet covers the map. It is a control on a
-                    // surface nobody can see at that height, and it climbed up
-                    // among the chips trying to stay above the sheet.
-                    showsRecentre: sheetHeight != .full,
+                    // ALWAYS BUILT, never added and removed (2026-09-04). It
+                    // used to be dropped from the hierarchy at the full stop,
+                    // and a stop only changes when a drag ENDS, so the control
+                    // vanished on release and was rebuilt elsewhere on the way
+                    // back down. TreeMap fades it out against the live sheet
+                    // height instead, which is the same intention without the
+                    // jump: by the time the sheet covers the map, it is gone.
+                    showsRecentre: true,
                     // Off while a walk is on screen, for the same reason as on
                     // the walk page itself: its stops must stay countable.
                     clusters: shownWalk == nil,

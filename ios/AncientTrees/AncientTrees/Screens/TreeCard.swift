@@ -155,9 +155,13 @@ struct TreeCard: View {
         HStack(spacing: 6) {
             Text(tree.commonName)
             if let age = tree.age { dot; Text(shortAge(age)) }
-            if tree.precision.needsWarning {
-                dot; Image(systemName: "scope")
-            }
+            // The crosshair that stood here is gone (Hidde, 2026-09-04: "soms
+            // zie je een target icoon of locatie icoon op een boom kaart, ik
+            // weet niet precies wat dat is maar haal maar helemaal weg, voegt
+            // niks toe"). It meant "the pin is approximate", which is worth
+            // saying in words on the tree's own page and worth nothing as an
+            // undecodable glyph in a row of species and age. Nothing is lost:
+            // the page it opens says it in a sentence.
         }
         .font(.caption)
         .foregroundStyle(.secondary)
