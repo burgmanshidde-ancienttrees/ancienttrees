@@ -38,8 +38,8 @@
       "at": "2026-09-02T11:25:10+00:00"
     },
     "2026-09-03": {
-      "note": "Home.swift hero tagline already reads Brand.gold at line 274, not goldInk; WARN was stale or already fixed by the time this run checked",
-      "at": "2026-09-04T00:23:45+00:00"
+      "note": "hero tagline goldInk WARN: checked, Home.swift:274 already reads Brand.gold (matches HeroCover.swift); no fix needed, likely already corrected in an earlier commit",
+      "at": "2026-09-04T02:35:40+00:00"
     }
   }
 }
