@@ -293,7 +293,7 @@ private struct WorthItShape: ViewModifier {
 
     func body(content: Content) -> some View {
         if compact {
-            content.frame(minHeight: 44).contentShape(.rect)
+            content.frame(minWidth: 44, minHeight: 44).contentShape(.rect)
         } else {
             content
                 .padding(.horizontal, 14)
