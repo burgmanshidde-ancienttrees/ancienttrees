@@ -2,20 +2,22 @@
 
 Fill these into App Store Connect: sidebar > Featuring > Nominations > + > Create Nomination.
 
-## Nomination Name  (38/60)
-Find the remarkable old trees near you
+## Nomination Name  (41/60)
+Explore the remarkable old trees near you
 
-Hidde's own wording, and it is better than what I proposed: this is the app's
-INTRODUCTION, so broad and plain is right, and a narrower angle (the ginkgos in
-November) is what a second nomination is for. It is also almost word for word
-the value proposition in CLAUDE.md, "it shows you the remarkable old trees near
-you". My first draft read "New app: find the remarkable old trees near you" and
-he was right that it was dry: the dryness was the category prefix, not the
-sentence after it.
+If you prefer "in your city", use it: "Explore remarkable old trees in your
+city" is 38 characters and reads more concretely. I kept "near you" because the
+app works from where you are standing and a large share of what we map is on
+islands and in villages, and because it is the value proposition in CLAUDE.md
+almost word for word.
 
-"near you" rather than "in your city" on purpose. The app works from where you
-are standing, and a large share of what we map is in villages, on islands and
-in parks outside any city.
+"Explore" is Hidde's and is better than my "Find": finding is a search,
+exploring is an afternoon outside, which is what the product actually is.
+Apple's own Today-tab writes in the same discovery voice.
+
+The field is internal either way. This is the app's INTRODUCTION, so broad is
+right; a narrower angle, the ginkgos in November, is what a second nomination
+is for.
 
 ## Nomination Type
 App Launch
