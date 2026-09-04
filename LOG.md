@@ -9,6 +9,46 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-04 (session) - Sitemap lastmod is per PAGE now, because half the site claimed to change on one day
+
+Hidde pasted Search Console's "Discovered, currently not indexed" report: 655
+pages Google knows and has never crawled (349 when qa.py's check was written
+on 08-13), among them the Germany and Netherlands country pages and the city
+pages of Arnhem, Bath, Ede, Fukuoka, Los Angeles, Nice (fr), Palermo (it) and
+Zurich (de). He has requested indexing by hand for those ten. The reading, in
+DECISIONS-length: the domain's crawl is rationed for lack of links, and we
+are adding pages faster than the ration.
+
+The part we were doing to ourselves: 2,035 of the sitemap's 4,244 URLs
+carried lastmod 2026-09-03, because one commit that day re-indented 21 city
+files (7f527c8b, a script writing indent=1 into indent=2 files) and another
+set best_time on 139 trees across 69 files, and lastmod was per FILE while a
+city file holds twenty pages. Google discounts lastmod once it proves
+unreliable, which the 08-13 fix was written to stop, and qa.py's check only
+asked that the dates vary.
+
+**Fixed at the root, not the symptom.** `scripts/lastmod.py` hashes what each
+page is actually built from (tree record; city fields plus the card-level
+tree fields; overlay plus English for translated pages), keys and whitespace
+normalised so a re-indent changes nothing, and keeps `data/lastmod.json`:
+hash and date per page, 4,036 pages. Unchanged hash keeps its date; changed
+or new gets today; a page seen for the first time takes its file's git date
+skipping the two bulk commits. `sitemap-integration.ts` reads the map and
+falls back to per-file git only for pages with a file of their own (species,
+countries, collections, standing pages), where git was already right. The
+rule lives in Python and only its answer travels, per the answer-not-rule
+convention. deploy.yml runs `--write` before every build; nightly.yml runs it
+and commits the map so the record lasts.
+
+**The ratchet:** qa.py now fails a sitemap where more than a quarter of the
+URLs share one date (a genuine rewrite of a quarter of the site is a session's
+event, not a build's). preflight NOTEs a city file written with indent=1 (24
+today, against 337 with indent=2) so the next mixed-indent rewrite is caught on
+its first file. Seeded map spread: largest single date 21 percent (08-29).
+
+Not verified locally (no Node here); the deploy build is the verification,
+and the next entry says whether it went green.
+
 ## 2026-09-04 (session) - Batch-010 is finished by the night run from tomorrow; nothing could go out today
 
 Hidde said "1 you can do", meaning finish batch-010-app-launch (163

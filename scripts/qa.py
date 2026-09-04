@@ -1119,13 +1119,33 @@ def check_sitemap_dates():
     sm = DIST / "sitemap.xml"
     if not sm.exists():
         return []
-    dates = set(re.findall(r"<lastmod>([^<]+)</lastmod>", sm.read_text(encoding="utf-8")))
-    if len(dates) > 1:
-        return []
-    return ["sitemap.xml: every url carries the same lastmod (%s). The dates come "
-            "from each page's last source commit, so one date means git history "
-            "was unavailable at build time (check fetch-depth on the checkout)."
-            % (next(iter(dates), "none"))]
+    found = re.findall(r"<lastmod>([^<]+)</lastmod>", sm.read_text(encoding="utf-8"))
+    dates = set(found)
+    if len(dates) <= 1:
+        return ["sitemap.xml: every url carries the same lastmod (%s). The dates come "
+                "from each page's last source commit, so one date means git history "
+                "was unavailable at build time (check fetch-depth on the checkout)."
+                % (next(iter(dates), "none"))]
+    # The softer form of the same lie, found 2026-09-04 in Search Console's
+    # own numbers: 2,035 of 4,244 URLs claimed 2026-09-03, because one commit
+    # re-indented 21 city files and another touched 69 for a field on 139
+    # trees, and lastmod was per FILE. Google discounts lastmod once it proves
+    # unreliable, on a domain whose crawl is already rationed (655 pages found
+    # and never crawled that week). Dates are per PAGE now (scripts/lastmod.py,
+    # read by sitemap-integration.ts), so a quarter of the site claiming one
+    # day means either that script did not run before the build or a genuine
+    # rewrite of a quarter of the site, which is a session's event, not a
+    # build's.
+    if len(found) >= 500:
+        top = max(dates, key=found.count)
+        share = found.count(top) / len(found)
+        if share > 0.25:
+            return ["sitemap.xml: %d of %d urls (%.0f%%) carry the same lastmod %s. "
+                    "Per-page dates come from data/lastmod.json (scripts/lastmod.py "
+                    "--write, run by deploy.yml before the build); a bulk rewrite of "
+                    "the source files must not restamp pages whose content did not "
+                    "change." % (found.count(top), len(found), share * 100, top)]
+    return []
 
 
 def check_robots_is_the_file_we_wrote():

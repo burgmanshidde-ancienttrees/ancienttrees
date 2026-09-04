@@ -75,6 +75,13 @@ jobs:
       # working-directory matters beyond convention: data-dir.ts resolves
       # ../data from process.cwd(), so astro build must run with site/ as
       # cwd or every content-collection read breaks.
+      # Dates each page by when its CONTENT last changed, so the sitemap's
+      # lastmod stays credible (2026-09-04: half the site claimed to change
+      # in one day because two scripts rewrote files without changing pages).
+      # Not committed here; nightly.yml commits the map so the record lasts.
+      - name: Date the pages that changed
+        run: python3 scripts/lastmod.py --write
+
       - name: Build site
         working-directory: site
         run: npx astro build
