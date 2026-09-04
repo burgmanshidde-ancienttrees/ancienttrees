@@ -1,0 +1,62 @@
+{
+  "city": "Shinkamigoto",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "On Nakadori Island in the remote Goto archipelago, a single Akou tree splits into two trunks that straddle the path to Narao Shrine like a natural gate. At 13.9 metres round it is Japan's largest specimen of the species, a National Natural Monument since 1961, put at over 670 years old. Local legend says walking beneath its split roots grants longevity. Free, on open shrine ground, a 10-minute walk from Narao's ferry terminal.",
+  "meta_description": "The Akou Tree of Narao, Shinkamigoto: Japan's largest Akou tree, 13.9m round, a National Natural Monument since 1961. Free, 10 minutes from the ferry.",
+  "question_meta": "Shinkamigoto's mapped tree is the Akou Tree of Narao, Japan's largest specimen of the species, put at over 670 years old.",
+  "question_answer": "Shinkamigoto's mapped tree is the Akou Tree of Narao, an Akou (a strangler-fig relative) at Narao Shrine on Nakadori Island. At 13.9 metres in trunk circumference it is recorded as Japan's largest tree of its species, a National Natural Monument since 1961, and is put at over 670 years old.",
+  "question_context": "The tree stands at Narao Shrine, on the Goto archipelago's Nakadori Island, settled by Wakayama fishermen in the late 16th century who came here to pray for good catches and safe voyages. Japan's Agency for Cultural Affairs designated it a National Natural Monument on 27 April 1961. Its trunk splits into two major stems about 7 metres up, each roughly 6 and 7 metres around, matching the combined 13.9-metre figure the town's own tourism board publishes, and the roots do the same lower down, forking to straddle the shrine path like a natural torii. Local legend holds that passing beneath it grants long life. It is deciduous for an evergreen: the whole crown drops within about a week each May, then regrows just as fast, a habit both the town's tourism board and the national heritage record independently describe. Reached by ferry from Nagasaki city or Sasebo, about a 10-minute walk from Narao port; the shrine grounds are free and open, with nothing charged and no booking required to see it.",
+  "hero_tree_id": "skm_001",
+  "oldest_tree_id": "skm_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Its trunk splits into two stems that straddle the path to Narao Shrine like a natural gate, and at 13.9 metres round it is recorded as Japan's largest Akou tree. Local legend says walking beneath the split roots grants longevity."
+    },
+    {
+      "q": "How old is it?",
+      "a": "The town's tourism board puts it at over 670 years. It has been a National Natural Monument since 1961."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "It looks much the same most of the year, but for about a week each May it sheds its whole crown at once, then regrows it just as fast."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By ferry from Nagasaki city or Sasebo to Narao port on Nakadori Island, then a 10-minute walk. The shrine grounds are free and open."
+    }
+  ],
+  "trees": [
+    {
+      "id": "skm_001",
+      "name": "The Akou Tree of Narao",
+      "species": "Akou (Ficus superba var. japonica)",
+      "age_estimate": "over 670 years",
+      "age_min": 670,
+      "age_max": 750,
+      "girth_cm": 1390,
+      "location": {
+        "address": "Narao Shrine, Narao-go, Shinkamigoto, Minamimatsuura District, Nagasaki Prefecture 853-3101, Japan",
+        "latitude": 32.8397772,
+        "longitude": 129.0598155,
+        "neighbourhood": "Narao, Shinkamigoto (Nakadori Island, Goto Islands)"
+      },
+      "story": "Japan's largest Akou tree grows two trunks instead of one, and both of them straddle the path to Narao Shrine like a gate nobody built.\n\nAn Akou is a strangler fig relative, evergreen, buttressed, its roots as thick as branches on most trees. This one splits about seven metres up into two major stems, one roughly six metres round and the other seven, adding to a combined trunk circumference of 13.9 metres, the largest recorded for the species anywhere in Japan. Lower down, the roots fork the same way, forming a natural arch over the approach to the shrine. Local legend says whoever passes beneath it lives a long life.\n\nWakayama fishermen settled this stretch of Nakadori Island in the late 16th century and prayed here for good catches and safe crossings, which is likely why a shrine grew up around a tree this size rather than the other way round. Japan's Agency for Cultural Affairs made it a National Natural Monument in 1961.\n\nFor an evergreen it behaves oddly: once a year, over about a week each May, the entire crown drops its leaves at once, then regrows them just as fast, so the tree goes briefly bare in a season when everything around it is green.\n\nNakadori Island sits in the Goto archipelago, reached by ferry from Nagasaki city or Sasebo. The shrine is free and open, about ten minutes on foot from Narao port.",
+      "verified_sources": [
+        "https://online.bunka.go.jp/heritages/detail/173355",
+        "https://shinkamigoto.nagasaki-tabinet.com/spot/10011"
+      ],
+      "access": "Free, on the grounds of Narao Shrine, publicly open",
+      "transport": "About 700m / 10 min walk from Narao ferry terminal (Narao port), Shinkamigoto",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
