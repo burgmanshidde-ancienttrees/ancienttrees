@@ -145,6 +145,22 @@ def main():
         if not to or "@" not in parseaddr(to)[1]:
             results.append(f"SKIP  {label}: no verified address, never guessed")
             continue
+        # A BATCH NEVER SENDS TO THE SAME ADDRESS TWICE, EVEN WITH A
+        # resend_reason (found 2026-09-04: re-running batch-010-app-launch
+        # on a second day re-sent its own first 46 addresses, because
+        # resend_reason justifies writing again from a DIFFERENT batch and
+        # was never meant to permit a batch re-sending itself to whoever it
+        # already reached in an earlier invocation of the same file). This
+        # check is unconditional and comes before the resend_reason logic
+        # below on purpose.
+        this_batch = batch.get("batch")
+        if this_batch and any((s2.get("to") or "").lower() == to.lower()
+                               and s2.get("batch") == this_batch
+                               for s2 in sent_log["sent"]):
+            results.append(f"SKIP  {label}: {to} was already sent THIS batch "
+                            f"({this_batch}); re-running a multi-day batch "
+                            f"never repeats within itself")
+            continue
         # NEVER THE SAME ADDRESS TWICE UNLESS SOMEBODY MEANT IT (Hidde,
         # 2026-08-16). The refusal is the default and always was; what was
         # missing is the door, so a deliberate follow-up used to be silently
