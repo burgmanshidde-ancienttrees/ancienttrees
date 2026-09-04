@@ -1,0 +1,64 @@
+{
+  "city": "Ito",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "The Yamamomo of Renchakuji is Japan's largest recorded bayberry, 7.2 metres round on a terrace above the Jogasaki cliffs on the Izu Peninsula. A National Natural Monument since 1999, it has hosted its own nitrogen-fixing bacteria for centuries to hold on in thin coastal soil. Published here as a single-tree place under the 2026-08-31 exception because it stands too far from Atami, the nearest city we map, for a same-day trip.",
+  "meta_description": "The Yamamomo of Renchakuji, Ito: Japan's largest bayberry, 7.2m round above the Jogasaki cliffs, a National Natural Monument since 1999.",
+  "question_meta": "Ito's mapped tree is the Yamamomo of Renchakuji, Japan's largest recorded bayberry, a National Natural Monument since 1999.",
+  "question_answer": "Ito's mapped tree is the Yamamomo of Renchakuji, a Japanese bayberry on a terrace above the Jogasaki cliffs, recorded as Japan's largest specimen of the species at 7.2 metres round.",
+  "question_context": "It is a female tree, 15 metres tall, its trunk splitting into three heavy limbs that carry a crown roughly 22 metres east to west and 18 north to south, the figures taken when Japan made it a National Natural Monument in January 1999. Bayberries host nitrogen-fixing bacteria in nodules on their roots, which is how the species holds on in the thin coastal soil above the Jogasaki cliffs. Its age is disputed: cautious sources say over 300 years, while a local story claims over a thousand and says the tree was brought from the grove around the mausoleum of Emperor Heizei, a claim the evidence does not settle either way. This stretch of the Izu coast once held a separate designated bayberry colony at Tajima Village, and old maps of that colony still circulate beside photographs of this tree, but the colony no longer exists and this is a single, separate stock standing on its own. The temple grounds are described by a tourism guide as freely open at all times, reached by bus from Izu-Kogen Station (about 9 minutes to the Renchakuji stop) or by car, with free parking for about 25 vehicles.",
+  "hero_tree_id": "ito_001",
+  "oldest_tree_id": "ito_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "At 7.2 metres round it is Japan's largest recorded yamamomo (Japanese bayberry), standing on a terrace above the Jogasaki cliffs on the Izu Peninsula."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Nobody agrees. Cautious sources say over 300 years; a local legend claims over a thousand. The honest answer is somewhere in that wide band."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, Renchakuji's temple grounds are described as freely open at all times, with free parking for about 25 vehicles."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Izu Kyuko Line to Izu-Kogen Station, then an eastbound bus toward the marine park, about 9 minutes to the Renchakuji stop, then a short walk."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ito_001",
+      "name": "The Yamamomo of Renchakuji",
+      "species": "Japanese Bayberry (Myrica rubra, syn. Morella rubra)",
+      "age_estimate": "several hundred years",
+      "age_min": 300,
+      "age_max": 1000,
+      "girth_cm": 720,
+      "height_m": 15.0,
+      "location": {
+        "address": "835 Tomido, Ito City, Shizuoka 413-0231, Japan (grounds of Renchakuji temple, on a terrace above the Jogasaki coast)",
+        "latitude": 34.882579,
+        "longitude": 139.130902,
+        "neighbourhood": "Tomido, Ito City, on the Izu Peninsula, roughly 25 km from Atami, which we already publish; too far and too different a trip (Izu Kyuko Line plus a bus) to read as the same day, so treated as its own single-tree place"
+      },
+      "verified_sources": [
+        "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/shogaigakushuka/bunka_supotsu/2/2/1/2427.html",
+        "https://ja.wikipedia.org/wiki/%E8%93%AE%E7%9D%80%E5%AF%BA%E3%81%AE%E3%83%A4%E3%83%9E%E3%83%A2%E3%83%A2",
+        "https://rurubu.jp/andmore/spot/80022285"
+      ],
+      "access": "Free. The temple grounds are described by a tourism guide as 境内自由, freely open at all times. Reached by bus from Izu-Kogen Station (about 9 minutes to the Renchakuji stop) or by car; free parking for about 25 vehicles.",
+      "transport": "Izu Kyuko Line to Izu-Kogen Station, then an eastbound bus toward the marine park, about 9 minutes to the Renchakuji stop, short walk from there.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Japan's largest recorded yamamomo makes a good part of its own fertiliser. Bayberries host nitrogen-fixing bacteria in nodules on their roots, which is how the species holds on in thin coastal soil, and this one has reached 7.2 metres round on a terrace above the Jogasaki cliffs.\n\nIt is a female, 15 metres tall, the trunk splitting into three heavy limbs that carry a crown roughly 22 metres east to west and 18 north to south. Those are the figures taken when Japan made it a National Natural Monument in January 1999, and nobody appears to have measured it since. A tourism listing still described it in the present tense this year, which is reassuring rather than conclusive.\n\nIts age is the part nobody agrees on. The cautious sources say over 300 years. A local story says over a thousand and has the tree brought here from the grove around the mausoleum of Emperor Heizei. Nothing in the evidence settles it, so the honest answer is somewhere in that wide band, and if you know better, tell us.\n\nOne thing it is not, whatever the archives suggest. This stretch of the Izu coast once held a designated bayberry colony at Tajima Village, and old maps of it circulate next to photographs of this tree. That colony was a separate designation and no longer exists. Renchakuji's bayberry is a single stock, standing on its own in temple grounds that are open at any hour.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

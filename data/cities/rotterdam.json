@@ -2,10 +2,11 @@
   "city": "Rotterdam",
   "country": "Netherlands",
   "status": "needs_curation",
+  "oldest_tree_id": "rot_001",
   "intro": "Rotterdam's old trees are survivors first and monuments second. The German bombing of May 1940 erased most of the city centre in a single night, and the soft, subsiding soil across much of the region shortens most trees' working lives regardless of what happens above ground; the city has barely 3,000 monumental trees against 600,000 total. What remains earned its place the hard way: a plane that predates the park built around it, another that survived the exact firestorm that flattened everything nearby, a coronation linden, a beech that watched the shipping elite build their street.",
-  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. Nine verified locations.",
+  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. Twelve verified locations.",
   "question_answer": "Rotterdam's oldest tree is the Plane of het Park, standing since around 1800, before landscape architects Jan David and Louis Paul Zocher designed the park around it in 1852. At roughly 226 years old, it has survived both the 1940 bombing that destroyed much of the city centre and the 1953 flood that put het Park itself underwater.",
-  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus eight more.",
+  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus eleven more.",
   "question_context": "Rotterdam's tree ages tell a story most Dutch cities don't have to tell: almost everything old here either predates the 20th century's two great disasters or was planted afterward to replace what didn't survive them. The Park Plane and the Breitenbach Plane both cleared the German bombing of 14 May 1940 that flattened the historic centre a short walk from each of them, and the Park Plane cleared a second disaster besides, the 1953 flood that put much of the park underwater for weeks. That double survival is the actual basis for calling it Rotterdam's oldest confirmed tree rather than simply its most storied one; several other candidates are old enough to be plausible rivals but lack a comparably documented history reaching back before 1900. The Westersingel Plane, the Wilhelmina Linden and the Koningin Emmaplein Beech are all younger by a wide enough margin, planted within a few decades of each other in the 1890s, that the ranking among Rotterdam's oldest three genuinely rests on the two 19th-century-or-earlier planes rather than any of the turn-of-the-century additions.",
   "faq": [
     {
@@ -14,7 +15,7 @@
     },
     {
       "q": "Are Rotterdam's remarkable trees free to visit?",
-      "a": "Yes, all nine stand in public parks or on public streets, open at any time, no ticket required."
+      "a": "Yes. Most stand in public parks or on public streets, open at any time, no ticket required. Three, the beech and two cedars in the Historic Garden of Schoonoord, need entering a gated garden that is free but keeps daily opening hours."
     },
     {
       "q": "Why does Rotterdam have so few monumental trees?",
@@ -286,6 +287,98 @@
       ],
       "access": "Free, public street, open at any time",
       "transport": "Centrum, central Rotterdam; about a 12 minute walk from Rotterdam Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rot_010",
+      "name": "The Copper Beech of Schoonoord",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 155-165 years",
+      "age_min": 155,
+      "age_max": 166,
+      "girth_cm": null,
+      "location": {
+        "address": "Historische Tuin Schoonoord, Kievitslaan, Rotterdam",
+        "latitude": 51.909305,
+        "longitude": 4.473105,
+        "neighbourhood": "Scheepvaartkwartier"
+      },
+      "story": "Schoonoord holds roughly a thousand species of plants and trees inside a garden barely bigger than a football pitch, and this copper beech is one of only two survivors from the day its original layout went in, sometime between 1860 and 1870. Wikipedia separately mentions a '200-year-old beech' among the park's notable trees, but that figure predates the garden itself by decades, so it more likely rounds a different tree or repeats an unverified figure than describes this one. The register's own planting band puts this beech at roughly 155 to 165 years, a more specific and better-sourced number, so that is the one used here, flagged for the conflict rather than resolved by guessing.\n\nThe register calls the trunk '125 cm dik', the Dutch word for thickness rather than circumference, which most likely means a diameter near that figure and a girth closer to 390 cm, though the record does not say so directly and it has not been measured independently. Twenty metres tall, crown eighteen metres across, standing beside the garden's pond on a narrow footpath near the Westzeedijk boundary.\n\nSchoonoord is a former country estate, a protected Rijksmonument since 2000, owned by the Stichting Schoonoord and open to the public since 1973 after decades as a private garden. Bees, koi and a resident tawny owl share the grounds. Two ancient Lebanon cedars from the same original planting stand nearby.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1696614)",
+        "https://www.tuinschoonoord.nl/",
+        "https://nl.wikipedia.org/wiki/Park_Schoonoord_(Rotterdam)"
+      ],
+      "access": "Free, daily 8:30-16:30 (closes during large festivals in adjoining Het Park)",
+      "transport": "Walkable from central Rotterdam, near the Euromast, roughly 15 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rot_011",
+      "name": "The Lebanon Cedars of Schoonoord",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "roughly 155-165 years (register); local sources say over 250 years",
+      "age_min": 155,
+      "age_max": 260,
+      "girth_cm": null,
+      "location": {
+        "address": "Historische Tuin Schoonoord, Kievitslaan, Rotterdam",
+        "latitude": 51.909,
+        "longitude": 4.473482,
+        "neighbourhood": "Scheepvaartkwartier"
+      },
+      "story": "Rotterdam's own garden site and Wikipedia both single out this pair as the best-known trees in the whole of Schoonoord, and neither source agrees on how old they are. Standing together at one point in the garden, they read as one feature rather than two.\n\nThe estate's own history puts their planting at the garden's original 1860s layout, which would make them roughly 155 to 165 years old today. Wikipedia and several tourism write-ups instead call them 'ruim 250 jaar oud', over 250 years, which would put their planting before the garden existed at all: either they arrived here as already-mature transplants, or the figure is a repeated claim nobody has checked. Neither can be preferred with confidence, so both are recorded rather than one picked over the other.\n\nWhat is not in dispute is the setting. Schoonoord is a 1.2-hectare former country estate on the Kievitslaan, a protected Rijksmonument since 2000, owned by the Stichting Schoonoord and open to the public since 1973. A copper beech from the same original planting stands nearby. Entry is free, daily from 8:30 to 16:30, though the garden closes during the large festivals held next door in Het Park.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1694861)",
+        "https://www.tuinschoonoord.nl/",
+        "https://nl.wikipedia.org/wiki/Park_Schoonoord_(Rotterdam)"
+      ],
+      "access": "Free, daily 8:30-16:30 (closes during large festivals in adjoining Het Park)",
+      "transport": "Walkable from central Rotterdam, near the Euromast, roughly 15 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rot_012",
+      "name": "The Atlas Cedar of Heemraadspark",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "roughly 85-95 years",
+      "age_min": 86,
+      "age_max": 96,
+      "girth_cm": null,
+      "location": {
+        "address": "Heemraadssingel, near the Schietbaanbrug, west side near no. 215B, Rotterdam",
+        "latitude": 51.915601,
+        "longitude": 4.454556,
+        "neighbourhood": "Nieuwe Westen"
+      },
+      "story": "Rotterdam's own list of monumental trees calls this Atlas cedar '100+ years old', which would put its planting before 1926. The register that catalogued it individually gives an exact year instead, 1930, within a band of 1930 to 1940, which is both more specific and the number used here, flagged against the city's rounder claim.\n\nIt stands on municipal land beside the Heemraadssingel canal, near the Schietbaanbrug, a wooden footbridge from 1867 that is itself a listed monument, on the canal's west side near house number 215B. The Heemraadssingel is one of Rotterdam's oldest and best-preserved canals, laid out between roughly 1900 and 1915 as part of a protected cityscape, and today carries about fifty tree species along its banks, mostly planes and lindens. A cedar standing out among them is rare enough to have earned this one its own register entry.\n\nOther sources describe a pair of Atlas cedars further along the same canal, near house number 180, which may or may not be the same trees under a different address; this entry covers the specimen at the register's own coordinate, by the footbridge. The canal and its trees are public at all times, no ticket, no gate, just a path along the water.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1695437)",
+        "https://www.rotterdam.nl/monumentale-bomen"
+      ],
+      "access": "Free, public canalside park (Heemraadssingel/Heemraadspark), open at any time",
+      "transport": "Walkable from central Rotterdam, Nieuwe Westen district, roughly 20-25 minutes; also reachable by tram along the singel",
       "photo": {
         "url": null,
         "license": null,
