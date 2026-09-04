@@ -4,16 +4,17 @@
   "leads": [
     {
       "name": "Amidaji no Keyaki",
-      "lat": null,
-      "lng": null,
+      "lat": 34.520083,
+      "lng": 135.866972,
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15310888693).jpg",
         "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15503409120).jpg",
         "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(23353240079).jpg"
       ],
       "status": "lead",
-      "species": "Zelkova (Zelkova sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species": "Zelkova (Zelkova serrata)",
+      "species_basis": "confirmed by hitozato-kyoboku.com survey and Commons category, which both name Zelkova serrata directly",
+      "verify_2026-09-04": "Verified 2026-09-04, real and alive (photographed 2023-07-25 per hitozato-kyoboku.com survey site, which also cites a 2023-04 Ministry of Environment giant-tree database measurement: height 22m, girth 605cm; an older Kinki-regional survey gives height 10m, girth 5.2m). Estimated age 'roughly 800 years' per on-site signage (a legend/tradition, not a documented planting record). Stands in front of the surviving Amida Hall of the former Jionji temple in Jionji, Sakurai City, Nara Prefecture, next to Tamatsura Shrine; leans out over the road from a stone retaining wall. NOT a National or Prefectural Natural Monument, only a Nara-Prefecture-signed 'protected tree' (hogo jumoku), so evidence is thinner than most of this file's other entries. Two independent sources: hitozato-kyoboku.com's detailed survey page (measurements, coordinates, history) and the Commons category description (independently giving the same coordinates and confirming species/location). HELD rather than shipped: no festival, rite, record-holder claim or notable legend beyond generic signage was found, so it does not clearly clear the single-tree-destination bar, and Sakurai sits a 27-31 minute DIRECT TRAIN from Nara Station alone (JR Sakurai Line/Manyo Mahoroba Line), which with station walks on both ends runs well past the ~30 minute day-trip boundary from Nara's centre, so it should not be added to data/cities/nara.json either. A future pass with more time, or evidence of a stronger fame signal, could still publish it standalone (Sakurai has no published city page) or fold it into a future Sakurai/Hase-dera area page."
     },
     {
       "name": "Annaka haraichi no Sugi Namiki",
@@ -23,22 +24,9 @@
         "https://commons.wikimedia.org/wiki/File:Annaka_haraichi_no_suginamiki(1934).jpg",
         "https://commons.wikimedia.org/wiki/File:Annaka_haraichi_no_suginamiki.jpg"
       ],
-      "status": "lead",
-      "species": "Japanese Cedar (Cryptomeria sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
-    },
-    {
-      "name": "Arita no Icho",
-      "lat": null,
-      "lng": null,
-      "photos": [
-        "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Arita_01.jpg",
-        "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Arita_02.jpg",
-        "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Arita_03.jpg"
-      ],
-      "status": "lead",
-      "species": "Ginkgo (Ginkgo sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "blocked",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "reason": "Confirmed 2026-09-04 to be exactly what 'Namiki' (avenue) suggests: a National Natural Monument (designated 1933-04-01) cedar avenue along the old Nakasendo road in Haraichi, Annaka City, Gunma Prefecture, not a single tree. Once numbered 732 trees (1844 count); only 13 survive today per Tokyo Shimbun (2020s health survey of the 13 remaining) and ja.wikipedia. Not a single collectible point; blocked as an avenue per BRIEF_RESEARCH.md's hard limits. Sources: ja.wikipedia.org/wiki/安中原市のスギ並木, tokyo-np.co.jp/article/276168."
     },
     {
       "name": "Chujohimeseigan Zakura",

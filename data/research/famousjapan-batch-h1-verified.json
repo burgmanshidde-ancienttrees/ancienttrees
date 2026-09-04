@@ -1,0 +1,52 @@
+[
+  {
+    "id": "fjk_004",
+    "name": "The Ohatsuki Ginkgo of Hongokuji",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "roughly 700 years",
+    "age_min": 600,
+    "age_max": 750,
+    "girth_cm": 540,
+    "location": {
+      "address": "2271 Shimoyama-honcho, Shimoyama, Minobu, Minami-Koma District, Yamanashi Prefecture, Japan (grounds of Hongokuji Temple, between the guardian gate and the main hall)",
+      "latitude": 35.413825,
+      "longitude": 138.441118,
+      "neighbourhood": "Shimoyama, Minobu"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/本国寺のオハツキイチョウ",
+      "https://kunishitei.bunka.go.jp/heritage/detail (Agency for Cultural Affairs national designation database, designated 1929-04-02)",
+      "https://www.jalan.net/kankou/spt_19365ac2100117549/ (access corroboration, Hadakajima Station 20 min walk)"
+    ],
+    "access": "Free, on the grounds of Hongokuji Temple between the guardian gate and main hall; visited as a village landmark alongside the temple",
+    "transport": "Hadakajima Station (JR Minobu Line), about 20 minutes on foot",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Designated a National Natural Monument on 1929-04-02 (one of only seven nationally designated 'ohatsuki icho' ginkgos in Japan, a rare mutation where seeds/ovules form directly on the leaf blade instead of in the normal position; three of the seven stand in Minobu Town alone). Legend, per ja.wikipedia, says the monk Nichiren planted it during an overnight stay in 1282, which would put it at roughly 700-750 years; this is a legend, not a documented planting record, so age is given as a broad derived estimate rather than a precise figure. Root circumference (nemawari) 6.42m / 642cm; trunk girth (standard breast-height measurement) 5.4m / 540cm, recorded as girth_cm. Height 24m. Base has many aerial/prop roots but comparatively few of the milky 'chichi' (nipple-like) growths some old ginkgos show. First reported to the scientific/botanical community in July 1891 as an example of ohatsuki leaf-borne seed production. DUPLICATE CHECK (the point of this brief): this is a genuinely DISTINCT third tree from fjk_002 (Jotakuji, ~750m to the north/northwest) and fjk_003 (Yagisawa/Yamajinja shrine, ~1.65km away), not the same tree under another name. Different temple (Hongokuji vs Jotakuji vs the Yagisawa shrine), different address, different designation record, and ja.wikipedia's own article on this tree explicitly cross-references 'the nearby Jozakuji [=Jotakuji] Ohatsuki Icho, several hundred meters north' as a separate, comparable specimen. All three sit inside Minobu Town, within the day-trip cluster already used to deliver fjk_002 and fjk_003 as part of the Fujikawaguchiko city page (2026-09-04), so this joins the same cluster as a fourth tree, fjk_004, using the next free id in that city's sequence. Access: temple grounds appear open as a village/pilgrimage site (Minobu is a major Nichiren-sect pilgrimage area; the temple sits directly on National Route 52), and the travel-site listing treats it as an ordinary visitable spot with a walking-distance train station; no gate, fee or restriction found in any source, so treated as free and open like its two sibling ginkgos. Two independent sources used: the Agency for Cultural Affairs' own national designation record (existence, designation date, ownership) and ja.wikipedia's detailed article (measurements, legend, cross-reference to the other two Minobu ohatsuki ginkgos), corroborated for access/transport by a third travel-listing source."
+  },
+  {
+    "id": "art_001",
+    "name": "The Great Ginkgo of Arita",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "850 to over 1000 years",
+    "age_min": 850,
+    "age_max": 1000,
+    "girth_cm": 800,
+    "location": {
+      "address": "1-13 Izumiyama 1-chome, Arita, Nishimatsuura District, Saga Prefecture, Japan (grounds of Izumiyama Benzaiten Shrine, also known as Ichikishima Shrine)",
+      "latitude": 33.193194,
+      "longitude": 129.905167,
+      "neighbourhood": "Izumiyama, Arita"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/有田のイチョウ",
+      "https://www.town.arita.lg.jp/dynamic/info/pub/detail.aspx?c_id=26&id=64 (Arita Town official site)",
+      "https://kunishitei.bunka.go.jp (Agency for Cultural Affairs national designation database, designated 1926-10-20)"
+    ],
+    "access": "Free, on the public grounds of Izumiyama Benzaiten Shrine",
+    "transport": "Kamiarita Station (JR Sasebo Line), about 10 minutes on foot; or 10 minutes by car from Arita IC",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Designated a National Natural Monument on 1926-10-20, the first ginkgo ever so designated in Japan (of 20 nationally designated ginkgos total). Stands at Izumiyama Benzaiten Shrine (Ichikishima Shrine) in Arita, Saga Prefecture, the historic centre of Japanese porcelain (the Izumiyama quarry, source of the kaolin that started Arita-yaki, is right beside it). Height approx 40m, branch spread approx 31m east-west. Girth given two ways in ja.wikipedia: root/base circumference approx 11m, trunk girth at breast height approx 8m (recorded as girth_cm 800; the 11m figure is a basal/root measurement, not the trunk, and should not be quoted as the trunk girth). Age estimated at 850 to over 1000 years, an estimate rather than a documented planting date, kept as a broad range. Gender is disputed between sources (male vs female), left out of the record rather than guessed; a question for the page. History: shaded an Edo-period customs checkpoint (kuchiya-bansho) that once controlled porcelain smuggling out of the district; local tradition credits it with shielding neighbouring houses from an 1828 typhoon-driven fire. Health: the tree drops branches occasionally; an adjacent house was relocated 20m away in September 2020 after cavity/arborist assessment in 2018, and branches are now cable-braced. Coordinates: ja.wikipedia's own article notes the official survey-map pin sits over 100m from the tree's true position and gives corrected coordinates (33.193194, 129.905167, used here), so location_precision is confirmed against the corrected reading rather than the stale map pin. Access: open shrine grounds, no fee, no restriction found. No existing published city sits within day-trip range of Arita in data/cities, so this ships as its own new single-tree place under the 2026-08-31 exception: it clearly passes the destination test on its own (first-ever nationally designated ginkgo, up to 1000+ years old, in Japan's most famous porcelain town, which people already travel to). Two independent sources: ja.wikipedia's detailed sourced article and Arita Town's own official page, both corroborated by the Agency for Cultural Affairs' national designation record."
+  }
+]
