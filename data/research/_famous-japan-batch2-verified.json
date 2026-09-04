@@ -1,0 +1,49 @@
+[
+  {
+    "id": "asg_001",
+    "name": "Itoi-no-Okatsura",
+    "species": "Katsura (Cercidiphyllum japonicum)",
+    "age_estimate": "over 1,000 years",
+    "age_min": 1000,
+    "age_max": 2000,
+    "girth_cm": 1836,
+    "location": {
+      "address": "216-1 Takenouchi, Wadayama-cho, Asago, Hyogo Prefecture, Japan",
+      "latitude": 35.411722,
+      "longitude": 134.920778,
+      "neighbourhood": "Itoi Gorge, upper Itoi River, Izushi-Itoi Prefectural Natural Park"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E7%B3%B8%E4%BA%95%E3%81%AE%E5%A4%A7%E3%82%AB%E3%83%84%E3%83%A9",
+      "https://online.bunka.go.jp/heritages/detail/172605"
+    ],
+    "access": "Free, but remote: a mountain trail in a prefectural natural park with no gate or fee, roughly 90 minutes on foot from the nearest bus terminus.",
+    "transport": "JR San'in Line to Wadayama Station, then bus to the Takenouchi terminus, then about 90 minutes on foot up the Itoi Gorge trail.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "NEW SINGLE-TREE PLACE (container \"Asago\", id prefix asg, nearest other city 34.4km). Passes the single-famous-tree destination test: designated a national Natural Monument (tennen kinembutsu) on 1951-06-09 by Japan's Agency for Cultural Affairs, one of the country's rarest and most famous giant katsura specimens, a genuine visual spectacle. What it actually is: not one trunk but a decayed, hollow main stump (large enough inside to hold six tatami mats, per ja.wikipedia) surrounded by a ring of about 80 root suckers (hikobae) that from a distance look like a small grove of katsura trees rather than one tree; this is the whole point of visiting it. Two sources conflict slightly on measurements, recorded honestly rather than picking a winner: ja.wikipedia gives height 36m, spread E-W 30m x N-S 31m, about 80 suckers; the official Bunkacho cultural-heritage database (online.bunka.go.jp, dated to designation) gives height 36m, girth (measured around the whole clump) 18.36m, spread E-W 40m x N-S 33.4m, \"4 or 5\" large and small suckers forming the ring, with the largest single sucker measuring 2.30m girth at 2m height. Likely different survey dates; do not average, state as reported. girth_cm 1836 is the COMBINED whole-clump circumference from the Bunkacho record (18.36m), not a single trunk measurement; the largest individual sucker alone is 230cm. Say this plainly if girth is quoted, never present it as one trunk's girth. Age: ja.wikipedia states the age is \"estimated at over 1,000 years\" (some tourism pages informally say up to 2,000); kept as the vague range the source gives, not sharpened. Species: Cercidiphyllum japonicum, katsura is dioecious (separate male and female plants) and this specimen is documented as a male tree (osu-kabu). Legend: during a historic drought, a visiting high priest is said to have draped his robe over the tree and prayed for rain, ending the drought; locals still call it \"Koromogi\" (robe tree) or \"Otaki-san\" and revere it as a water deity, marking it with a sacred shimenawa rope. Health: the tree suffered a vigor decline after flood-control concrete embankment work along the adjacent Itoi River cut off its water source and buried its root zone in clay fill; the Hyogo branch of the Japan Tree Doctors Association carried out restorative work (an irrigation system, soil improvement) in December 2001. Flagged: newest dated evidence seen by me is 2018-dated photos captioned on Wikipedia; no news of death or removal found, and it remains listed as a current national monument, but confirm-alive evidence is a few years old. Access: a mountain path inside a prefectural natural park (Izushi-Itoi Prefectural Natural Park), no gate or fee mentioned in either source, genuinely free but a serious walk, not a casual stop; state the real distance and travel time honestly rather than softening it."
+  },
+  {
+    "id": "suz_001",
+    "name": "Shiroko Fudan Zakura",
+    "species": "Fudanzakura cherry, believed Yamazakura x Oshima-zakura hybrid (Cerasus jamasakura x Cerasus speciosa, cultivar Cerasus Sato-Zakura Group 'Fudanzakura')",
+    "age_estimate": "current wood roughly 80 years, site documented since 757 CE",
+    "age_min": 75,
+    "age_max": 85,
+    "location": {
+      "address": "3-2-12 Jike, Suzuka, Mie Prefecture, Japan (within Koyasu Kannon-ji Temple)",
+      "latitude": 34.82425,
+      "longitude": 136.580028,
+      "neighbourhood": "Shiroko, Koyasu Kannon-ji Temple precinct"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%AD%90%E4%B8%8D%E6%96%AD%E3%82%B6%E3%82%AF%E3%83%A9",
+      "https://www.kankomie.or.jp/spot/21661"
+    ],
+    "access": "Free, in the courtyard of Koyasu Kannon-ji Temple, open to visitors.",
+    "transport": "Kintetsu Nagoya Line to Tsuzumigaura Station, about 2 minutes on foot.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "NEW SINGLE-TREE PLACE (container \"Suzuka\", id prefix suz, nearest other city 38.9km). Passes the single-famous-tree destination test: this is the type specimen (genbaku, \"original tree\") of the named cherry cultivar Fudanzakura, a national Natural Monument since 1923-03-07 (one of only 39 cherries ever so designated, and the only one whose designated name contains \"Fudan\"), with a documented literary and cultural history stretching back to a Nara-period temple record (757-765 CE), referenced in medieval renga poetry (poet Sogi, 16th century), turned into a Noh play subject in the Edo period, and illustrated in the famous 1797 guidebook \"Ise Sangu Meisho Zue\". Genuinely a destination in its own right, and unusually easy to reach (2 minutes on foot from a train station). Species: believed interspecific hybrid of Yamazakura (Cerasus jamasakura / Prunus jamasakura) and Oshima-zakura (Cerasus speciosa / Prunus speciosa); the cultivar is formally named Cerasus Sato-Zakura Group \"Fudanzakura\". This specimen is THE original tree the cultivar is named after and propagated from. The unusual, vivid fact the brief flagged: \"Fudanzakura\" means roughly \"ceaseless cherry\" -- it holds leaves nearly year-round and puts out a scattering of single five-petaled flowers somewhere on its branches almost continuously except in high summer, with documented peaks in spring (March, per multiple Edo-period accounts) and, distinctively, again in autumn/winter (October into winter), which a 1978-1980 Mie University study (Nagata) tied to unusually early leaf drop in September triggering off-season flower buds. This autumn/winter flowering is rare even among other named \"fudanzakura\"-type cherries elsewhere in Japan, per ja.wikipedia. A recent source (kankomie.or.jp, the official Mie prefecture tourism board) still describes it blooming nearly year-round today, and the temple holds a memorial event, Fudanzakura Kuyo-e, every 17 March, which is itself a possible seasonal hook. AGE IS SPLIT BETWEEN TWO DIFFERENT SOURCED FACTS -- DO NOT BRIDGE THEM INTO ONE NUMBER. (1) The SITE has a documented cherry called Fudanzakura continuously since a temple record dated 757-765 CE, roughly 1,260 years, repeated in written sources across the centuries. (2) The WOOD standing today is much younger: the trunk has died back and resprouted from the base repeatedly after damage (main stem died 1897, storm damage 1925, temple fire 1946, Ise Bay Typhoon 1959), and a 2023-dated source states the two current stools each measure under 50cm in girth, with the wood itself estimated at roughly 80 years old (dating from the 1946 fire). A cited cherry researcher (Toshio Katsuki) considers it plausible the ROOTSTOCK itself genuinely continues from as far back as the Muromachi period, but flags that this needs more verification. Used the wood-age figure (about 80 years) as age_estimate/age_min/age_max since that is the closest thing to a measured, sourced age of the living material; the much longer documented site history is a separate, real fact for the story to tell honestly as its own claim (the tree AT THIS SPOT has been famous and named for 1,200+ years) without implying the current trunk is that old. This is exactly the bridge-claim trap the brief warns about. A 1934 survey (Hattori) recorded four stools with a girth of about 40cm each at that time; not used as girth_cm since the wood has regrown from a fire since (1946) and that figure predates it, recorded here only as historical context. Location: within the walled precinct of Koyasu Kannon-ji Temple, in a stone-walled enclosure (7.5m x 7.5m, about 1m/70cm high) built in 1832, with a stone monument (Fudanzakura poem stele) erected 1868 on its north side. This is a temple courtyard, openly visited (the temple is also known locally as a safe-childbirth shrine and distributes leaves as charms; no admission fee found in either source; treat as free, open temple grounds). Health: actively monitored and treated. Suzuka City has commissioned periodic diagnosis since 2006 (arborist Masayuki Nakamura); a multi-year soil and root restoration programme ran from 2011, and by the time of the cited 2023 account the tree was recovering well with healthy new growth and little dieback, an unusually well-documented and recent confirm-alive record. Photo note for the writer/photo pass: the file File:Autumn_blooming_Shiroko_Fudan_Zakura_blossom_sketched_on_November_10,_1935.jpg is an old sketch (1935), historically useful evidence for the autumn-blooming habit but NOT usable as a ship photo per the photo standard (no archival/illustration images as the tree photo); the other two Commons files are photographs and should be checked by a photo pass."
+  }
+]

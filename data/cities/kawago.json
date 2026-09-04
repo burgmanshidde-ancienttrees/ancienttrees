@@ -1,0 +1,63 @@
+{
+  "city": "Kawago",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Kawago is a hamlet in Saga Prefecture built around a single tree: a camphor with a trunk 21 metres round, hollow enough to walk into, ranked among the widest trees in Japan. A monk once carved a Buddha into its trunk; the carving is gone, but a bronze one it hid survives. The town built a park around the tree in 1995 and asks nothing to see it.",
+  "meta_description": "Kawago no Okusu: a hollow camphor with a 21m trunk, among Japan's widest trees. Free, in a park built around it, Takeo City, Saga.",
+  "question_meta": "Kawago's mapped tree is Kawago no Okusu, a camphor with a 21-metre trunk girth, among the widest trees in Japan.",
+  "question_answer": "Kawago's mapped tree is Kawago no Okusu (The Great Camphor of Kawago), a hollow camphor whose trunk measures 21 metres around at the base, ranking it among the five widest trees in Japan by girth. Local tradition puts its age at roughly 3,000 years, though that figure is not scientifically dated. Japan designated it a national natural monument in 1924.",
+  "question_context": "The tree stands in a small park purpose-built around it in 1995, in Wakaki-cho, Takeo City. Its trunk is hollow enough to enter, and inside the southwest cavity stands a stone shrine to the fox deity Inari. A local legend holds that the Nara-period monk Gyoki carved a 2.4-metre standing image of Kannon into the trunk; the carving was destroyed during the anti-Buddhist purges of the 1870s, but a separate bronze Kannon found inside the tree survived and is now kept in a hall nearby, a Takeo city cultural property. Measurements from Japanese Wikipedia and the local tourism board agree closely: a base girth of 21 metres, root circumference of 33 to 35 metres, height of 25 to 26 metres and a canopy spreading 27 metres in every direction, ranking it 5th nationally by girth among Japan's largest trees. The park is free and open 9:00 to 17:00 daily, closed around New Year; an adjacent puppet-theatre attraction charges separately but the tree itself does not. Reached by community bus from JR Takeo-Onsen Station to the Kawago stop, two minutes on foot.",
+  "hero_tree_id": "kwg_001",
+  "oldest_tree_id": "kwg_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "Its trunk measures 21 metres around at the base, wide enough to rank among the five largest trees in Japan by girth, and it is hollow enough to walk into."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Local tradition puts it at roughly 3,000 years, though nobody has dated it scientifically. It was designated a national natural monument in 1924."
+    },
+    {
+      "q": "Can I go inside the trunk?",
+      "a": "Yes. The hollow interior holds a small stone shrine to the fox deity Inari, in the cavity on the southwest side."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By community bus from JR Takeo-Onsen Station on the Sasebo Line to the Kawago stop, then a two-minute walk. The park is free and open daily from 9:00 to 17:00."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kwg_001",
+      "name": "Kawago no Okusu (The Great Camphor of Kawago)",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "roughly 3,000 years by local tradition, not scientifically dated",
+      "age_min": 2000,
+      "age_max": 3500,
+      "girth_cm": 2100,
+      "height_m": 25,
+      "location": {
+        "address": "7843 Kawago, Wakaki-cho, Takeo City, Saga Prefecture 843-0151, Japan (inside Kawago no Okusu Park)",
+        "latitude": 33.251833,
+        "longitude": 129.993333,
+        "neighbourhood": "Wakaki, Takeo City"
+      },
+      "story": "A monk once carved a two-and-a-half-metre Buddha into this camphor's hollow trunk. The carving is gone now, destroyed during Japan's anti-Buddhist purges of the 1870s, but a bronze image hidden inside the same trunk survived and now sits in a hall nearby.\n\nLocal tradition puts the Kawago no Okusu at roughly 3,000 years old, though nobody has measured that precisely. What is measured is the trunk: 21 metres around at the base, among the widest of any tree in Japan and enough to rank fifth nationally by girth. The crown spreads 27 metres in every direction and rises 25 metres up. Japan designated it a natural monument in 1924, more than seventy years before the small park built specifically around it opened in 1995.\n\nThe trunk is hollow enough to enter, and inside its southwest cavity stands a stone shrine to the fox deity Inari, tended long after the carved Buddha it once sheltered was lost. The tree has outlived the monk who carved it, the era that destroyed the carving and the empire that ruled either time, and it is still doing what it has done for three thousand years by the town's own count: standing in a village in Saga Prefecture, growing.\n\nFree to visit, open daily from nine to five, closed around New Year. A community bus from Takeo-Onsen Station stops two minutes' walk away.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/川古のクス",
+        "https://www.takeo-kk.net/sightseeing/001282.php"
+      ],
+      "access": "Free to view inside Kawago no Okusu Park, open 9:00-17:00 daily, closed around New Year. An adjacent puppet-theatre attraction (Tameasashikan) charges separately; the tree itself is not gated.",
+      "transport": "JR Sasebo Line to Takeo-Onsen Station, then community bus to the Kawago stop, 2 minutes' walk. About 10 minutes by car from the Takeo-Hokuho Interchange via Route 498.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
