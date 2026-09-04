@@ -1,0 +1,64 @@
+{
+  "city": "Numata",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "A mulberry that was left to grow instead of picked bare. The Great Mulberry of Usune stands 13.65 metres tall and 5.67 metres round, widely reported as the largest wild mulberry in Japan, on farmland inside the country's silk-growing heartland near the Tomioka Silk Mill. A National Natural Monument since 1956. Its age is disputed between a traditional 1,500 years and a 1991 survey's 300-plus. Free, at any hour, via a wooden walkway near Ishizumi Daijingu shrine.",
+  "meta_description": "The Great Mulberry of Usune, Numata: reportedly Japan's largest wild mulberry, a National Natural Monument since 1956. Free, at any hour.",
+  "question_meta": "Numata's mapped tree is the Great Mulberry of Usune, a National Natural Monument disputed between 300 and 1,500 years old.",
+  "question_answer": "Numata's mapped tree is the Great Mulberry of Usune, a wild mulberry standing 13.65 metres tall and 5.67 metres round, widely reported as the largest of its kind in Japan and a National Natural Monument since 1956. Its age is disputed: the city repeats a traditional figure of roughly 1,500 years, while an official 1991 survey suggested something nearer 300.",
+  "question_context": "The tree stands on farmland in what was Usune village, part of the wider Gunma silk story that runs through the nearby Tomioka Silk Mill, a UNESCO World Heritage site. Farmers treated it as a guardian of silkworm rearing, and when frost stripped the leaf crop on surrounding farms, its leaves were used to feed silkworms instead; local tradition also holds it served as a benchmark in a 1686 Maebashi domain land survey. The Cultural Affairs Agency's own record disagrees on its dimensions too, giving 10.7 metres tall and 5 metres round at chest height against the city's more recent 13.65m/567cm. In 2018 the tree was under treatment for pest damage; no report has been found of it since dying or being removed. Viewing is free at any hour along a maintained wooden walkway near Ishizumi Daijingu shrine, reached by bus from JR Numata Station to the Ishizumi Ippommatsu stop, or about 15 minutes by car from Numata IC on the Kan-etsu Expressway.",
+  "hero_tree_id": "num_001",
+  "oldest_tree_id": "num_001",
+  "faq": [
+    {
+      "q": "What is special about this tree?",
+      "a": "It is a wild mulberry left to grow rather than cropped for silkworm feed, widely reported as the largest of its kind in Japan, and it is tied into the country's silk-heritage story near the Tomioka Silk Mill."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. Numata City repeats a traditional figure of roughly 1,500 years; a 1991 official survey suggested something closer to 300. Neither has been resolved."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes, viewable at any time along a maintained wooden walkway, with parking at the neighbouring Ishizumi Daijingu shrine. The walkway can be slippery when wet or snowy."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By bus from JR Numata Station to the Ishizumi Ippommatsu stop, a 2-minute walk from there, or about 15 minutes by car from Numata IC on the Kan-etsu Expressway."
+    }
+  ],
+  "trees": [
+    {
+      "id": "num_001",
+      "name": "The Great Mulberry of Usune",
+      "species": "Yamaguwa / Japanese Wild Mulberry (Morus bombycis)",
+      "age_estimate": "traditionally said to be roughly 1,500 years; a 1991 official survey estimated 300+ years",
+      "age_min": 300,
+      "age_max": 1500,
+      "girth_cm": 567,
+      "height_m": 13.65,
+      "location": {
+        "address": "2083 Machida-cho, Numata City, Gunma Prefecture (Ishizumi-cho area, formerly Usune Village, Tone District)",
+        "latitude": 36.680056,
+        "longitude": 139.044917,
+        "neighbourhood": "Ishizumi, Numata"
+      },
+      "story": "Japan made this tree a National Natural Monument in 1956, which is a strange honour for a mulberry. In Gunma a mulberry is a leaf crop, grown low and picked bare to feed silkworms. This one was left alone: Numata City measures it at 13.65 metres tall and 5.67 metres around, and it is widely reported as the largest wild mulberry in the country.\n\nIt stands on farmland in what was Usune village, inside the Gunma silk story that runs through the Tomioka Silk Mill, now a World Heritage site. Farmers here treated it as a guardian of silkworm rearing, and when frost stripped the mulberry crop on surrounding farms, its leaves fed the worms. By local tradition it also served as a benchmark in a Maebashi domain land survey in 1686.\n\nIts age is a dispute nobody has settled. The city repeats the traditional figure of roughly 1,500 years; a 1991 official survey suggested something nearer 300. The Cultural Affairs Agency's own record disagrees on the dimensions too, listing 10.7 metres tall and five metres round at chest height. In 2018 the tree was under treatment for pest damage.\n\nViewing is free and at any hour, along a maintained wooden walkway to the trunk, with parking at Ishizumi Daijingu shrine next door. The walkway is slippery in wet or snowy weather.",
+      "verified_sources": [
+        "https://www.city.numata.gunma.jp/kyouiku/bunkazai/ichiran/kuni/1000831.html",
+        "https://ja.wikipedia.org/wiki/薄根の大クワ",
+        "https://online.bunka.go.jp/heritages/detail/138127"
+      ],
+      "access": "Free, viewable at any time; a maintained wooden viewing walkway (recently repaired) leads to the tree, on cultivated land near Ishizumi Daijingu shrine. Parking available in spare space at the shrine. Visitors asked to avoid times that would inconvenience nearby residents. Caution advised on the walkway in wet or snowy weather.",
+      "transport": "Bus from JR Numata Station (Joetsu Line), Kan-etsu Kotsu Sayama Line, alight at 'Ishizumi Ippommatsu' stop, 2 min walk. Or 15 min drive from Numata IC on the Kan-etsu Expressway.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
