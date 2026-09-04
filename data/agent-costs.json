@@ -5117,6 +5117,13 @@
         "tokens": 126258,
         "trees": 2,
         "note": "5 register candidates checked; 3 private-land (register's own private:true flag missed by the brief) and blocked, 2 public and verified with register+news cross-check, one of the two turned out to be on Formentera not Ibiza and was split into its own research file; both below the 4-tree floor, neither published"
+      },
+      {
+        "target": "famousuk-batch1, famousgermany-batch1, formentera, ibiza",
+        "kind": "write",
+        "tokens": 62000,
+        "trees": 6,
+        "note": "6 single-tree destination stories; ~10.3k tokens/tree, under the 15k target. One species name normalised (Common Yew to European Yew) to match the 37 existing Taxus baccata trees."
       }
     ]
   }

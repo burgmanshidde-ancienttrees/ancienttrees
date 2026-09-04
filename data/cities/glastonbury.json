@@ -1,0 +1,67 @@
+{
+  "city": "Glastonbury",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Glastonbury already draws pilgrims for its abbey and its legends, and one more waits in the churchyard of St John the Baptist. The Glastonbury Thorn is a hawthorn that flowers twice a year, once with everything else in spring and once around midwinter, when nothing else in England is doing much of anything. Every specimen descends from grafted cuttings tied to a legend of Joseph of Arimathea. Since 1929 a flowering sprig has been cut each December and sent to the reigning monarch, a tradition this particular tree still keeps.",
+  "meta_description": "The Glastonbury Thorn flowers twice a year and supplies the monarch's Christmas sprig every December, a tradition kept since 1929. Free, in the churchyard.",
+  "question_meta": "The Glastonbury Thorn in St John's churchyard flowers twice a year and supplies the monarch's Christmas sprig. Where to find it, and its ninety-year story.",
+  "question_answer": "The oldest tree in Glastonbury is the Glastonbury Thorn, a hawthorn in the churchyard of St John the Baptist on the High Street. It was planted in the 1930s by George Chislett, then head gardener of Glastonbury Abbey, which makes it about ninety years old. It flowers twice a year, and every December a flowering sprig is cut by pupils of St John's Infants School and sent to the reigning monarch, a tradition kept since 1929. It is free to visit, standing in the churchyard, open in daylight hours.",
+  "question_context": "This is the tree that lasted, not the first one. Tradition says the whole Glastonbury Thorn lineage descends from a staff planted by Joseph of Arimathea, a story first written down in 1520, and a Parliamentary soldier is said to have cut down the original around 1647. Every specimen since has been grafted, because the twice-flowering trait does not survive from seed. Glastonbury has lost two others: the tree on Wearyall Hill was vandalised in 2010, its replacement sapling snapped in 2012, and the whole tree was removed by the landowner in 2019; the specimen inside Glastonbury Abbey died in 1991 and was felled the following year. This one, grafted by Abbey head gardener George Chislett in the 1930s, is what remains. It has not had an easy run either: a 2018 report called it decrepit and heavily infested with mistletoe, though a December 2024 visit found it much healthier and flowering well. The coordinates given are the church's rather than a tree-level pin, so the location is marked approximate until someone has stood in the churchyard and confirmed exactly where in it the tree grows.",
+  "hero_tree_id": "gls_001",
+  "oldest_tree_id": "gls_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Glastonbury?",
+      "a": "The Glastonbury Thorn, a hawthorn in the churchyard of St John the Baptist, planted in the 1930s and roughly ninety years old."
+    },
+    {
+      "q": "Why does it flower twice a year?",
+      "a": "It is Crataegus monogyna 'Biflora', a hawthorn variety that flowers once in spring like any other and again around midwinter. The trait only survives by grafting, so every Holy Thorn in Glastonbury is a cutting of the last one."
+    },
+    {
+      "q": "Why is a sprig cut from it every December?",
+      "a": "Since 1929, pupils from St John's Infants School have cut a flowering sprig each December and sent it to the reigning monarch, a tradition that continues today."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the churchyard of St John the Baptist on the High Street, open to the public in daylight hours."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gls_001",
+      "name": "The Glastonbury Thorn",
+      "species": "Hawthorn (Crataegus monogyna 'Biflora')",
+      "age_estimate": "about 90 years",
+      "age_min": 85,
+      "age_max": 100,
+      "location": {
+        "address": "Churchyard of the Church of St John the Baptist, High Street, Glastonbury, Somerset, BA6 9DR",
+        "latitude": 51.1482,
+        "longitude": -2.7162,
+        "neighbourhood": "Glastonbury town centre"
+      },
+      "story": "Every December, children from St John's Infants School cut a flowering sprig from this hawthorn and send it to the reigning monarch. They have done it since 1929. The tree can oblige because it is Crataegus monogyna 'Biflora', a hawthorn that flowers twice a year, once in spring like every other one and once around midwinter, when nothing else in the churchyard is doing anything at all. The trait does not survive seed, so every Holy Thorn in Glastonbury is a cutting grafted from the last one.\n\nThis specimen was planted in the 1930s by George Chislett, then head gardener at Glastonbury Abbey, who learned to graft Holy Thorn cuttings onto blackthorn rootstock. That makes it about ninety years old, and it is the one that lasted. The Abbey's tree died in 1991 and was cut down the following year. The tree on Wearyall Hill was attacked in December 2010, lost its replacement sapling in 2012, and was taken out altogether in 2019.\n\nBy tradition the whole lineage descends from a staff pushed into the ground by Joseph of Arimathea, a story first written down in 1520, and a Parliamentary soldier is said to have felled the original around 1647. Recent decades have been harder on it than any legend. In 2018 it was described as decrepit and heavily infested with mistletoe. A visit in December 2024 found it almost clear of the stuff and flowering well.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Glastonbury_Thorn",
+        "https://www.plant-lore.com/plantofthemonth/glastonburys-holy-thorn-december-2024/",
+        "https://www.caughtbytheriver.net/2021/07/the-glastonbury-holy-thorn/"
+      ],
+      "access": "Free. Standing in the churchyard of St John the Baptist, open to the public in daylight hours, right on Glastonbury's High Street.",
+      "transport": "No railway station in Glastonbury; nearest is Castle Cary, about 11 miles away. Frequent local bus services stop in the town centre, about 5 minutes' walk from the churchyard.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [12],
+        "kind": "flowers",
+        "label": "December, when the winter flowering comes and the Christmas sprig is cut"
+      }
+    }
+  ]
+}

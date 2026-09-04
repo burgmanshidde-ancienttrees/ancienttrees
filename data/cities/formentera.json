@@ -1,0 +1,63 @@
+{
+  "city": "Formentera",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Formentera is small enough to cross by bike, and its oldest tree grows a short ride from the island's best known beach. The Savina de Ses Salines is probably the oldest Phoenician juniper in the Balearics, over 500 years by the regional register's own reckoning, spread wide rather than tall because nothing else ever grew close enough to compete with it. It stands inside Ses Salines Natural Park on the public path between the port and Ses Illetes, free, no ticket, no gate.",
+  "meta_description": "The Savina de Ses Salines, probably the oldest juniper in the Balearics at over 500 years, grows near Ses Illetes beach. Free, in Ses Salines Natural Park.",
+  "question_meta": "The Savina de Ses Salines, probably the oldest juniper in the Balearics, grows near Formentera's best known beach. Its age, its size, and how to reach it.",
+  "question_answer": "The oldest tree on Formentera is the Savina de Ses Salines, a Phoenician juniper standing in Ses Salines Natural Park about 250 metres from Ses Illetes beach. The regional register and an independent island survey both put it at over 500 years, without stating an upper bound. It is free to visit, on the public coastal path between La Savina port and Ses Illetes, reachable on foot or by bike from the ferry.",
+  "question_context": "The regional register (Balearic government) and a 2022 island survey of notable trees agree closely on the tree's description and both stop at the same phrase: over 500 years. Neither source puts a ceiling on that figure, so it is best read as a floor rather than a precise estimate. Phoenician juniper on this coast is usually a low, salt-scoured shrub bent away from the wind, but this specimen is 7.5 metres tall with a crown 12 metres across and a trunk 94 centimetres thick, close to three metres round. The register's own explanation is that nothing ever grew close enough to compete with it, so it spread wide instead of straining upward. It was catalogued as a singular tree on 11 June 1993. Ownership is recorded inconsistently, one source naming Spain's coastal authority and the register itself naming Salinera Espanola, the historic salt company behind the surrounding lagoons, though this does not affect public access: the tree sits inside Ses Salines Natural Park on the coastal path, and in summer cars are kept out of the wider area to protect the park.",
+  "hero_tree_id": "fmt_001",
+  "oldest_tree_id": "fmt_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree on Formentera?",
+      "a": "The Savina de Ses Salines, a Phoenician juniper in Ses Salines Natural Park, put at over 500 years by the regional register and a 2022 island survey."
+    },
+    {
+      "q": "Why is it so wide instead of tall?",
+      "a": "The register attributes its unusual size to isolated growth: nothing else ever grew close enough to compete with it, so it spread outward rather than upward. Its crown spans 12 metres."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the public coastal path inside Ses Salines Natural Park, between La Savina port and Ses Illetes beach, with no ticket or gate."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By ferry from Ibiza Town to La Savina port on Formentera, about 25 to 35 minutes, then 20 to 30 minutes on foot or by bike along the coastal dune path towards Ses Illetes."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fmt_001",
+      "name": "Savina de Ses Salines",
+      "species": "Phoenician Juniper (Juniperus phoenicea)",
+      "age_estimate": "over 500 years",
+      "age_min": 500,
+      "age_max": null,
+      "girth_cm": 295,
+      "height_m": 7.5,
+      "location": {
+        "address": "Ses Salines Natural Park, Cavall d'en Borras dune area, roughly 250 m from Ses Illetes beach",
+        "latitude": 38.740533,
+        "longitude": 1.431288,
+        "neighbourhood": "Ses Salines Natural Park, Formentera"
+      },
+      "story": "Probably the oldest juniper in the Balearics grows in a dune about 250 metres from Ses Illetes, the best known beach on Formentera. The regional register and a 2022 island survey of notable trees agree on the phrasing and refuse to go further than it: over 500 years. Neither puts a ceiling on that figure, so read it as a floor rather than an estimate.\n\nPhoenician juniper on this coast is usually a low, salt-scoured thing, bent away from the wind and going nowhere in a hurry. This one is 7.5 metres tall, with a crown 12 metres across and a trunk 94 centimetres thick, close to three metres round. The register's explanation for the size is plain enough: nothing ever grew near enough to compete with it, so it spread instead of straining upwards.\n\nIt was catalogued as a singular tree on 11 June 1993. Who owns it is less settled. One record puts it with the Spanish coastal authority, the regional register with Salinera Espanola, the historic salt company behind these lagoons. Neither answer changes what a visitor meets, because the tree stands inside the Ses Salines Natural Park on the public path between La Savina port and Ses Illetes, twenty or thirty minutes from the ferry on foot or by bike.\n\nIn summer the cars are kept out to protect the park, which suits the tree. Almost everyone who passes it is walking to the beach with their back to the dunes.",
+      "verified_sources": [
+        "https://www.caib.es/sites/proteccioespecies/ca/n/savina_de_ses_salines-21527/",
+        "https://www.periodicodeibiza.es/pitiusas/ibiza/2022/01/21/1690971/arboles-historia-parecen-autenticas-obras-arte.html"
+      ],
+      "access": "Free. Stands inside the Ses Salines Natural Park on the dune track between La Savina port and Ses Illetes beach; a public coastal footpath (also used by cyclists) passes the dune area, and vehicle access to the wider area is restricted in summer to protect the park.",
+      "transport": "Ferry from Ibiza Town to La Savina port on Formentera (about 25-35 minutes), then roughly 20-30 minutes on foot or by bike along the coastal dune path towards Ses Illetes.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

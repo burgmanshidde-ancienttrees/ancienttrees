@@ -1,0 +1,63 @@
+{
+  "city": "Runnymede",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Runnymede is famous for a meadow where King John sealed Magna Carta in 1215, and across the Thames at Ankerwycke stands the tree old enough to have watched it happen. The Ankerwycke Yew is somewhere between 2,000 and 2,500 years old, hollow enough to step inside, and 7.98 metres round at its base. It grows in the grounds of a ruined priory on open National Trust parkland, no ticket needed, reached on foot from Magna Carta Lane.",
+  "meta_description": "The Ankerwycke Yew, 2,000 to 2,500 years old and 7.98m round, stands where Magna Carta may have been sealed in 1215. Free, on National Trust land.",
+  "question_meta": "The Ankerwycke Yew, one of Britain's oldest trees, may have witnessed the sealing of Magna Carta in 1215. Its age, its size, and how to reach it.",
+  "question_answer": "The oldest tree at Runnymede is the Ankerwycke Yew, growing in the grounds of the ruined St Mary's Priory at Ankerwycke, across the Thames from Runnymede meadow. The Woodland Trust puts its age at approximately 2,000 years; the National Trust says as much as 2,500. It is free to visit, on open National Trust parkland reached on foot from Magna Carta Lane, no ticket required.",
+  "question_context": "Two national bodies that both know their trees cannot agree on this one's age to within five hundred years, and neither can settle it, because an old yew rots from the middle outwards and takes its rings with it. What can be measured is the trunk: 7.98 metres round, taken low, at thirty centimetres off the ground, because a base this hollowed and buttressed offers no clean line higher up. Either age figure leaves it standing here in June 1215, when King John sealed Magna Carta somewhere on this stretch of the Thames; tradition puts the sealing under this tree, and some historians argue the ceremony happened on this bank rather than in the meadow opposite, though that remains an argument rather than a record. The same caution applies to the story that Henry VIII courted Anne Boleyn beneath it in the 1530s. A 2020 survey recorded holes, water pockets, decaying wood in the crown and a trunk hollow enough to step into, all of it ordinary for a yew of this age and no sign the tree is anything but alive and standing. Visitors still tie strips of cloth to nearby boards, an old habit for an old tree.",
+  "hero_tree_id": "ank_001",
+  "oldest_tree_id": "ank_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Runnymede?",
+      "a": "The Ankerwycke Yew, somewhere between 2,000 and 2,500 years old, growing in the ruined grounds of St Mary's Priory at Ankerwycke across the Thames from Runnymede meadow."
+    },
+    {
+      "q": "Did Magna Carta get sealed under this tree?",
+      "a": "By tradition, yes, and some historians argue the 1215 sealing happened on this bank of the Thames rather than in Runnymede meadow. It is a strong tradition, not a documented fact."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on open National Trust parkland at Runnymede and Ankerwycke, reached on foot from Magna Carta Lane, with no ticket needed to see the tree itself."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Wraysbury railway station, on the line between Windsor & Eton Riverside and London Waterloo, is nearest, about a 20 to 30 minute walk via the riverside path."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ank_001",
+      "name": "The Ankerwycke Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "roughly 2,000 to 2,500 years",
+      "age_min": 2000,
+      "age_max": 2500,
+      "girth_cm": 798,
+      "location": {
+        "address": "Ankerwycke, in the grounds of the ruined St Mary's Priory, off Magna Carta Lane, near Wraysbury, Surrey/Berkshire border, opposite Runnymede across the Thames",
+        "latitude": 51.44476,
+        "longitude": -0.55644,
+        "neighbourhood": "Runnymede and Ankerwycke (National Trust)"
+      },
+      "story": "Two national bodies that both know their trees cannot agree on this one's age to within five hundred years. The Woodland Trust says approximately 2,000. The National Trust says as much as 2,500. Neither can settle it, because an old yew rots from the middle outwards and takes its rings with it. What can be measured is the trunk: 7.98 metres round, and taken low, at thirty centimetres off the ground, because a base this hollowed and buttressed offers no clean line higher up.\n\nEither figure leaves it standing here in June 1215, when King John sealed Magna Carta somewhere on this stretch of the Thames. Tradition puts the sealing under this tree, and some historians do argue the ceremony happened on this bank rather than in the meadow opposite. That is an argument, not a record. The same applies to the story that Henry VIII courted Anne Boleyn beneath it in the 1530s. Said to, thought to, never written down at the time.\n\nThe certainties are quieter. It grows in the grounds of St Mary's Priory, a ruined Benedictine house on open National Trust land, reached on foot from Magna Carta Lane. The 2020 survey recorded holes, water pockets, decaying wood in the crown and a trunk hollow enough to step into, all of it ordinary for a yew of this age. Visitors still tie strips of cloth to the boards beside it, which is an old habit for an old tree.",
+      "verified_sources": [
+        "https://ati.woodlandtrust.org.uk/tree-search/tree?treeid=2121",
+        "https://www.nationaltrust.org.uk/visit/surrey/runnymede-and-ankerwycke/things-to-see-and-do-at-runnymede-and-ankerwycke",
+        "https://www.nationaltrust.org.uk/runnymede-and-ankerwycke/features/125-years-of-the-national-trust-"
+      ],
+      "access": "Free. On National Trust open parkland at Runnymede and Ankerwycke, reached via a public path/circular walk from Magna Carta Lane; no ticket or permission needed to see the tree. Parking on site is limited and may be chargeable for non-members; the tree itself is not behind any gate.",
+      "transport": "Wraysbury railway station (Windsor & Eton Riverside to London Waterloo line) is the nearest, about 0.8 miles / a 20-30 minute walk via the riverside path (routes are indirect, following the Thames and field paths rather than a straight line); the infrequent 305 bus from Wraysbury station stops at Magna Carta Lane, closer still.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
