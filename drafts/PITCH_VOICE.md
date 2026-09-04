@@ -86,7 +86,9 @@ reader draw the conclusion.
 **A craft claim a reader can multiply out and disbelieve. Show one true visual detail instead of asserting effort** (added 2026-09-04)
 
 - NO: "Every tree is researched and written by hand, one at a time, in seven languages."
-- YES: "Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo."
+- YES: "Tap one and you get what it is, how old it is, and why it was left standing while everything around it came down."
+  (This pair used to answer with the per-species pins. See the pair below,
+  added the same day: that sentence is true, visible and still uninteresting.)
 
 **Opening on what nobody else can do, so we can answer 'we can'. Same habit as the unasked contrast, wearing a setup-and-payoff coat. State the wonder and then say what we do with it** (added 2026-09-04)
 
@@ -101,12 +103,45 @@ reader draw the conclusion.
 **Writing copy from the WEBSITE and the PLANS instead of the shipped build. Walks and the season story sit behind flags that are off for every real user. Check Kit/Launch.swift before naming any feature** (added 2026-09-04)
 
 - NO: "An old ginkgo turns completely gold for two weeks in November, and the app builds a walk that strings a few of them together."
-- YES: "Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything."
+- YES: "Old trees you have stood in front of become your collection."
+  (Also a check on the build, and unlike the pins it is about the reader.)
 
 **His name, anywhere a stranger reads. I put it in deliberately and called it his choice; it is not a choice, it is never** (added 2026-09-04)
 
 - NO: "Made by Hidde Burgmans, a designer in the Netherlands."
 - YES: "Out this month, in seven languages, with 2,472 trees mapped so far."
+
+**A detail about how WE built it, however true, visible and checked. Hidde,
+2026-09-04: "forget drawn as its own species nobody cares"** (added 2026-09-04)
+
+- NO: "Every pin on the map is drawn as its own species, so an oak reads as an
+  oak and a ginkgo as a ginkgo before you tap anything."
+- YES: "You walk into a churchyard you had never walked into, ten minutes from
+  your door, and stand under something that has been alive for four hundred
+  years."
+
+This is the hardest correction in the file, because the rejected sentence
+passes every test above it. It is specific, it is not a contrast, it names no
+competitor, it leads with no count, and it was checked against the shipped
+build and against the screenshot it sits beside. It fails on the one thing no
+check can see: **its subject is our map rather than the reader's afternoon.**
+A craft detail is the counts error wearing a better coat, and I wrote this one
+into this very file twice, as the GOOD half of two pairs, which is how a
+calibration set teaches you to repeat a mistake. The test to apply: **who is
+the subject of the sentence?** If it is the app, the data, the map or us, it
+belongs in Helpful Details or nowhere.
+
+**Declaring the mission, when he asks for it** (added 2026-09-04)
+
+- The instinct in this file is to show rather than declare, and it is right
+  about strangers. It is not a veto: he asked twice for the mission to be in
+  the featuring nomination, and it is his pitch.
+- The form that works is BOTH, in that order: "Our mission is to get people
+  outside to enjoy nature. You walk into a churchyard you had never walked
+  into, ten minutes from your door, and stand under something that has been
+  alive for four hundred years."
+- A mission sentence alone is a slogan. The concrete sentence under it is what
+  makes it true, so it never gets cut to tighten the paragraph.
 
 ## What to do instead, in order
 

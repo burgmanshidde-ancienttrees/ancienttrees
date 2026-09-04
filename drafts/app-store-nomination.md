@@ -61,7 +61,7 @@ Apple would be featuring.
 https://ancienttrees.app
 ```
 
-## Description  (923/1000)
+## Description  (812/1000)
 
 Only the App Store team sees this. It is a pitch to Apple's editors, not the
 public listing, so it never repeats the feature list they already have.
@@ -69,9 +69,9 @@ public listing, so it never repeats the feature list they already have.
 ```
 Some of the trees in your city were standing before the city was. Ancient Trees takes you to them.
 
-Open it anywhere and the map fills with the old trees around you, every pin drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything. Tap one and you get what it is, how old it is, why it was left standing while everything around it came down, and directions to the trunk.
+Open it anywhere and the map fills with the old trees around you. Tap one and you get what it is, how old it is, why it was left standing while everything around it came down, and directions to the trunk.
 
-What that buys somebody is an afternoon outside. You walk into a churchyard you had never walked into, ten minutes from your door, and stand under something that has been alive for four hundred years.
+Our mission is to get people outside to enjoy nature. You walk into a churchyard you had never walked into, ten minutes from your door, and stand under something that has been alive for four hundred years.
 
 Old trees you have stood in front of become your collection. You follow other people and see the trees they have found, and one nobody has mapped you photograph where you stand.
 

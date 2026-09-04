@@ -1,0 +1,34 @@
+{
+  "batch": "batch-010",
+  "note": "Hand-scouted non-institutional contacts (scripts/outreach_scout.py --find), chosen against the measured pattern in scripts/outreach_stats.py: gardens/parks/municipal inboxes are 0 of 12 replies, while personal/independent sites and local history/nature blogs answer best. Every recipient is cited as a verified_source on our own tree pages, so each opener names the specific article or dataset rather than claiming the tree itself (mailcheck's POSSESSIVE CLAIM check). Every mail carries the App Store link per Hidde's 2026-09-03 standing instruction. Two candidates from the same harvest, woodwideweb.brussels@gmail.com and cre.porto@ucp.pt, turned out already mailed in batch-006 (2026-08-22, no reply since) and were dropped rather than re-asked, per the no-repeated-ask rule. NOT SENT, awaiting his one word.",
+  "status": "awaiting_hidde",
+  "mails": [
+    {
+      "to": "info@treesandshrubsonline.org",
+      "found_at": "https://treesandshrubsonline.org/about",
+      "outlet": "Trees and Shrubs Online (International Dendrology Society)",
+      "country": "United Kingdom",
+      "type": "unknown",
+      "subject": "Can you help me with ancienttrees.app? Your Franklinia page",
+      "body": "Hi,\n\nI found your page on Franklinia alatamaha and used it to write up the Franklin Tree in Boston's Explorers Garden, the largest known specimen anywhere. Excellent resource.\n\nMy name is Hidde. I love old trees and being outdoors, and with ancienttrees.app I try to get more people to appreciate nature and go outside. ancienttrees.app is live with about 2,400 trees across 195 cities now, and the iOS app just launched too: https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB\n\nYour species pages have helped me place trees in Boston, Cambridge, Dublin, Edinburgh, London, Lyon and Oxford. Is there a specimen in any of those cities, in your own experience, that you think deserves a spot on the map?\n\nIf the site's worth it, a mention on treesandshrubsonline would help a lot, but no pressure either way.\n\nThanks,\nHidde"
+    },
+    {
+      "to": "pestbuda@pestbuda.hu",
+      "found_at": "https://pestbuda.hu/impresszum",
+      "outlet": "Pestbuda (Budapest local history)",
+      "country": "Hungary",
+      "type": "blog",
+      "subject": "Can you help me with ancienttrees.app? Budapest's old trees",
+      "body": "Hi,\n\nI found your writing on Budapest's old trees, the ancient plane on Margaret Island and the pagoda tree at Buda Castle especially. Wonderful research.\n\nMy name is Hidde. I love old trees and being outdoors, and with ancienttrees.app I try to get more people to appreciate nature and go outside. ancienttrees.app is live with about 2,400 trees across 195 cities now, nine of Budapest's twelve trees lean on your articles, and the iOS app just launched too: https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB\n\nHere's the Budapest page: https://ancienttrees.app/budapest. Is there a Budapest tree you think the site is missing, one you'd point a visitor to yourself?\n\nIf you think the site is worth it, a mention on pestbuda.hu would help a lot, but no pressure either way.\n\nThanks,\nHidde"
+    },
+    {
+      "to": "info@biodiversityireland.ie",
+      "found_at": "https://maps.biodiversityireland.ie/about",
+      "outlet": "National Biodiversity Data Centre (Heritage Trees of Ireland dataset)",
+      "country": "Ireland",
+      "type": "ngo",
+      "subject": "Can you help me with ancienttrees.app? Your Heritage Trees dataset",
+      "body": "Hi,\n\nI found your Heritage Trees of Ireland dataset. The CC BY licence made it possible for me to publish fourteen trees I'd never have found otherwise, eight of Cork's thirteen and six of Dublin's seventeen, from Fota and Blarney to Glasnevin's arboretum. Genuinely useful work.\n\nMy name is Hidde. I love old trees and being outdoors, and with ancienttrees.app I try to get more people to appreciate nature and go outside. ancienttrees.app is live with about 2,400 trees across 195 cities now, and the iOS app just launched too: https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB\n\nIs the survey still being added to, or is there a more recent version I should be pulling from? And is there an Irish tree, in Dublin or Cork especially, that you think deserves a spot on the map: https://ancienttrees.app/cork\n\nIf you think the site's worth it, a mention would help a lot, but no pressure either way.\n\nThanks,\nHidde"
+    }
+  ]
+}
