@@ -971,3 +971,33 @@ dismissal that sticks, iOS only, and never a dimmed backdrop.
 service, one file per language in `site/public/assets/appstore/`. A store
 button is the most convention-bound control there is and drawing our own pill
 with the words typed into it is the exact failure of 2026-08-20.
+
+---
+
+## Asking for an App Store review
+
+**Reference: Apple's own SKStoreReviewController guidance**, not a specific
+third-party app. Use the native `.requestReview` SwiftUI environment action
+only; never a custom "are you enjoying this?" screen in front of it, which
+App Store Review Guideline 5.6.1 forbids as satisfaction gating. Never wire
+it to a "Rate us" button. Ask at the end of a sequence the person has just
+completed successfully, never on launch and never mid-task.
+
+**Where we ask: ticking a tree**, `CollectSheet.claim`, the moment already
+described in that file's own comment as "the payoff... the app's job at
+that exact second is to tell them what it is." AllTrails-style outdoor
+apps ask after completing a whole trail; our closest equivalent is
+finishing a curated Walk, but that feature is still lightly used, so the
+ask is tied to the tick itself, which works for everyone. See
+`Kit/ReviewPrompt.swift` and DECISIONS.md-shaped reasoning in
+`docs/superpowers/specs/2026-09-03-review-prompt-design.md`.
+
+**Milestones, our own choice (Apple sets no specific numbers):** the 3rd,
+10th and 25th tree ticked, each asked once, at least 7 days apart, 3 asks
+in the phone's lifetime. The 3 echoes `Nudge.swift`'s own "third save...
+starts to look like a collection" reasoning, reused here as the same
+restraint pattern applied to a different ask.
+
+Read 2026-09-03:
+- https://developer.apple.com/documentation/storekit/requesting-app-store-reviews
+- https://www.avanderlee.com/swift/skstorereviewcontroller-app-ratings/
