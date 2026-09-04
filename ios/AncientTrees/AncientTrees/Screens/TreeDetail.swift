@@ -148,9 +148,13 @@ struct TreeDetail: View {
                     // worth the visit is a question to nobody, and the access
                     // and transport lines are ours to research, not blanks for
                     // you to fill about a tree you already stood at.
-                    if mine == nil { WorthItView(tree: tree) }
                     story
                     if mine == nil, tree.hasAccessInfo { accessBlock }
+                    // "Something's wrong", low on the page, which is where he
+                    // asked for it (2026-09-04: "de something's wrong knop maar
+                    // wel naar beneden"). The vote that used to head this block
+                    // is now the thumb beside the place name.
+                    if mine == nil { WorthItView(tree: tree, showsVote: false) }
                     // The "Nobody has photographed this one" card is gone
                     // (Hidde, 2026-08-26: "die mag helemaal weg"). It was a
                     // paragraph explaining a control that now exists: the
@@ -578,7 +582,7 @@ struct TreeDetail: View {
                 .overlay { heroFallback }
                 .clipped()
                 .contentShape(.rect)
-                .onTapGesture { if mine == nil { navigator.collectNearby = true } }
+                .onTapGesture { if mine == nil { navigator.collectAbout = tree.name; navigator.collectNearby = true } }
                 .accessibilityElement(children: .combine)
                 .accessibilityAddTraits(mine == nil ? .isButton : [])
                 .accessibilityIdentifier("tree-empty-photo")
@@ -719,12 +723,20 @@ struct TreeDetail: View {
     /// ask in the line plus the ask in the cell, the common name plus the
     /// Latin name in one cell).
     private var summaryLine: some View {
-        // The count that used to stand here is gone with the vote's move back
-        // above the story: a reduced voting control forty points above the
-        // full one is the same fact twice, which is the fault this file keeps
-        // recording.
-        HStack(spacing: 6) {
+        // THE THUMB SITS HERE, beside the place, and it is a button (Hidde,
+        // 2026-09-04: "zet die thumb omhoog gewoon naast de stadsnaam zoals
+        // ontworpen en dat je hem kan aanklikken om er een toe te voegen").
+        //
+        // Always, not only where a count exists. It stood behind that guard
+        // this morning, and a count exists on almost no tree yet, so the
+        // control was invisible exactly where the first vote would have come
+        // from.
+        HStack(spacing: 8) {
             placeLink
+            if mine == nil {
+                dot
+                WorthItButton(tree: tree, compact: true)
+            }
         }
         .font(.subheadline)
     }
@@ -1323,7 +1335,7 @@ struct TreeDetail: View {
         // centimetres from the one in the bar, and the bar is where he wants
         // the act promoted.
         if mine == nil, tree.photo == nil {
-            Button { navigator.collectNearby = true } label: {
+            Button { navigator.collectAbout = tree.name; navigator.collectNearby = true } label: {
                 Image(systemName: "camera.fill")
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Brand.ink)
@@ -1475,7 +1487,7 @@ struct TreeDetail: View {
             // maken"). Same circle as the heart, same size, same border: two
             // things you can do to a tree, drawn as two of the same control.
             if mine == nil {
-                Button { navigator.collectNearby = true } label: {
+                Button { navigator.collectAbout = tree.name; navigator.collectNearby = true } label: {
                     Image(systemName: "camera")
                         .font(.title3)
                         .foregroundStyle(Brand.moss)

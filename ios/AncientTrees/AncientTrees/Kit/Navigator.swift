@@ -59,6 +59,16 @@ public final class Navigator {
     /// Collect's own button asking for the nearby-trees sheet. The root owns
     /// every sheet, so the request travels rather than the presentation.
     public var collectNearby = false
+    /// WHICH TREE the camera was opened from, when it was opened from one
+    /// (Hidde, 2026-09-04: "als je vanuit een boom op de camera knop klikt is
+    /// de boodschap iets anders dan wil je iets zeggen als voeg deze boom toe
+    /// aan je collectie door er een foto van te maken").
+    ///
+    /// The sheet is the same sheet and the flow is the same flow; only the
+    /// first screen's words change, because somebody who tapped the camera on
+    /// Old Tjikko is not browsing, they are standing in front of a named tree.
+    /// nil everywhere else, where the generic line is the honest one.
+    public var collectAbout: String? = nil
 
 
     public init() {}

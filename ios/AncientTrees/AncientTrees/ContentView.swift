@@ -502,6 +502,13 @@ struct ContentView: View {
                 // silently never appeared. The ask is presented from the root so
                 // that a tick on a tree page and a third save on the map land in
                 // the same sheet rather than in two near-identical ones.
+                // The tree the camera was opened from lasts exactly as long as
+                // the sheet does. Without this, tapping the camera on Old
+                // Tjikko and then opening the camera from the tab bar an hour
+                // later would still offer to add Old Tjikko.
+                .onChange(of: rootSheet) { _, now in
+                    if now == nil { navigator.collectAbout = nil }
+                }
                 .sheet(item: $rootSheet) { which in
                     Group {
                         switch which {
@@ -510,7 +517,8 @@ struct ContentView: View {
                         case .paywall(let feature):
                             PaywallView(feature: feature)
                         case .spot(let mode):
-                            CollectSheet(catalogue: cat, origin: origin, mode: mode)
+                            CollectSheet(catalogue: cat, origin: origin, mode: mode,
+                                         about: navigator.collectAbout)
                         }
                     }
                     // A sheet does not inherit the environment set on the view
