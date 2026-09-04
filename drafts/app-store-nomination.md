@@ -55,21 +55,26 @@ en, nl, es, it, de, pt, fr, ja
 https://ancienttrees.app
 ```
 
-## Description  (855/1000)
+## Description  (906/1000)
 
 Only the App Store team sees this. It is the field that decides.
 
 ```
-Most people have walked past a thousand-year-old tree without knowing it. Getting them to stop, go outside and stand in front of one is the point of Ancient Trees.
+How old is that tree? Most people never find out. They walk past something that has been alive for a thousand years, standing in a churchyard, on a campus, or behind a wall on a street they use every week.
 
-The app tells you which tree, where it stands and why it is worth the walk. The Ankerwycke Yew was already ancient when Magna Carta was sealed beside it. The Totteridge Yew is the oldest living thing in London. You collect the ones you have seen.
+Ancient Trees tells you which tree, how old it is and why it is worth the walk. The Ankerwycke Yew was already ancient when Magna Carta was sealed beside it. The Totteridge Yew is the oldest living thing in London. You collect the ones you have seen.
 
 People add trees themselves. Photograph something epic we do not have and it goes on the map with your name under it.
 
-It knows when a tree is at its best. An old ginkgo turns completely gold for two weeks in November, then drops almost every leaf at once, and the app tells you when yours is turning.
+It also knows when a tree is at its best. An old ginkgo turns completely gold for two weeks in November, then drops almost every leaf at once, and the app tells you when yours is turning.
 
 2,472 trees in 362 places across 25 countries, each checked against two independent sources. Launched 3 September 2026, in seven languages.
 ```
+
+Opens on the question the reader already has, which is Merlin Bird ID's shape
+("What's that bird? Ask Merlin"), the strongest of the four reference openings
+in PITCH_VOICE.md. It is also our own biggest search term: "oldest tree in
+[city]" is what brings most people to the website.
 
 ## Helpful Details  (485/500)
 
