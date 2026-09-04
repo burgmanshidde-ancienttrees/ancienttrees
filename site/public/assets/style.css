@@ -421,11 +421,13 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
     max-height: calc(100vh - var(--header-h) - 1.5rem); overflow-y: auto; padding: 0.5rem 0; }
   .nav-drop-menu a { padding: 0.65rem 1rem; font-size: 15px; }
   .nav-drop-menu .nav-group { padding: 0 1rem; }
-  /* The app pill sits in the bar on a phone too (2026-09-04). Compact, because
-     the mark, the pill and the 40px menu button share a 375px row. 36px tall
-     rather than 32, since this is a thumb target on a phone and not a mouse
-     target. */
-  .bar-links a.bar-cta { height: 36px; padding: 0 0.8rem; font-size: 13px; }
+  /* The app pill sits in the bar on a phone too (2026-09-04). Narrower than on
+     desktop, because the mark, the pill and the menu button share a 375px row,
+     and 44 TALL, because that is the number Apple asks for and the number the
+     smoke test measures: the first version shipped at 36 and the gate caught it
+     on six page types at once, which is exactly what that gate is for. 44 in a
+     56px bar leaves 6px above and below. */
+  .bar-links a.bar-cta { height: 44px; padding: 0 0.85rem; font-size: 13px; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
   .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
 
