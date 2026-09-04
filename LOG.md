@@ -1,6 +1,12 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 - Night run 2026-09-04 15:01 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 10.4 minutes of its 120 minute window, 63 turns, 16 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: _famous-japan, alicante, eindhoven, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-04 (session) - I nearly told Apple the app does things it cannot
 
 Two corrections from you on the nomination, and the second is the worst
