@@ -54,7 +54,6 @@
 
 import CoreLocation
 import Photos
-import StoreKit
 import SwiftUI
 
 struct CollectSheet: View {
@@ -70,7 +69,6 @@ struct CollectSheet: View {
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
     @Environment(ReviewPrompt.self) private var reviewPrompt
-    @Environment(\.requestReview) private var requestReview
     @Environment(Navigator.self) private var navigator
     @Environment(\.dismiss) private var dismiss
 
@@ -425,15 +423,17 @@ struct CollectSheet: View {
                          image: image, date: taken ?? Date())
         withAnimation(.snappy) { stage = .ticked(t.id) }
         // "You found \(t.name)" below is the payoff moment; see
-        // ReviewPrompt.swift and CONVENTIONS.md for why this is where the
-        // native ask belongs and nowhere else. The delay lets the payoff
-        // card actually land before the system prompt can cover it — asking
-        // AT the moment of success, rather than simultaneously with the
-        // animation that reveals it, per Apple's own guidance.
-        if isNewTick, reviewPrompt.consider(ticked: saved.visitedCount) {
+        // ReviewPrompt.swift and CONVENTIONS.md for why the native ask may
+        // fall here. A tree ticked off is a tree seen, and the strongest
+        // kind, so it counts toward the same three. The delay lets the
+        // payoff card actually land before the system prompt can cover it:
+        // asking AT the moment of success, rather than simultaneously with
+        // the animation that reveals it, per Apple's own guidance.
+        if isNewTick {
+            reviewPrompt.saw(t.id)
             Task {
                 try? await Task.sleep(for: .seconds(2))
-                requestReview()
+                reviewPrompt.consider()
             }
         }
     }

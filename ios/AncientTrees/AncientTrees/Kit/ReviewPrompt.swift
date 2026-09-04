@@ -4,17 +4,27 @@
 // Convention: Apple's own developer guidance (developer.apple.com, read
 // 2026-09-03) says to use the native SKStoreReviewController prompt only,
 // never a custom "are you enjoying this?" gate in front of it (App Store
-// Review Guideline 5.6.1 forbids that), and to ask at the end of a sequence
-// the person has just completed successfully, never from a button and
-// never on launch. See CONVENTIONS.md.
+// Review Guideline 5.6.1 forbids that), and to ask once somebody has shown
+// engagement, at a pause rather than in the middle of something. Never from
+// a button and never on launch. See CONVENTIONS.md.
 //
-// The moment we use is ticking a tree: CollectSheet's own comment already
-// calls that "the payoff... the app's job at that exact second is to tell
-// them what it is", which is exactly Apple's "successfully completed"
-// moment. Three escalating milestones, each asked at most once, at least a
-// week apart, three asks in the phone's lifetime: the same shape as
-// Nudge's own restraint, and the count 3 echoes Nudge's own "third save...
-// starts to look like a collection" reasoning.
+// WHAT COUNTS AS ENGAGEMENT CHANGED ON 2026-09-04, on Hidde's ruling:
+// "afgevinkte bomen is wel te lang - ik denk naar 3 bomen bekeken in de
+// app". The first version counted trees TICKED OFF, which is the strongest
+// signal there is and also the rarest: a tick means somebody stood in front
+// of a trunk with a camera, so three of them is weeks of walking, and the
+// ask would have reached almost nobody. Three trees LOOKED AT is a bar
+// every interested person clears in one sitting, and it is still engagement
+// rather than a launch counter.
+//
+// Two moments ask, because the counter and the moment are different things.
+// Closing a tree page is the pause: the reader finished something and is
+// back on a list. Ticking a tree off is the payoff, described in
+// CollectSheet's own comment as "the app's job at that exact second".
+// Whichever comes first wins, and both share one lifetime cap.
+//
+// Three escalating milestones, each asked at most once, at least a week
+// apart, three asks in the phone's lifetime.
 
 import Foundation
 import Observation
@@ -23,11 +33,22 @@ import Observation
 @Observable
 public final class ReviewPrompt {
     private let defaults: UserDefaults
-    private let firedKey = "reviewPrompt.fired.v1"
-    private let lastKey = "reviewPrompt.last.v1"
+    // v2: the milestone numbers used to mean trees ticked and now mean trees
+    // seen, so an early tester's fired set would silence an ask it never
+    // actually made under the new rule.
+    private let firedKey = "reviewPrompt.fired.v2"
+    private let lastKey = "reviewPrompt.last.v2"
+    private let seenKey = "reviewPrompt.seen.v1"
     private let maxAsks = 3
     private let quietDays = 7.0
     private let suppressedOverride: Bool?
+
+    /// Set the moment a milestone is reached; the ROOT view watches this and
+    /// performs the system ask. It lives there rather than in the screen that
+    /// noticed, because the screen that notices is usually the one going
+    /// away: a tree page asks on the way out, and a view that is leaving the
+    /// hierarchy is a bad place from which to present anything.
+    public var pending = false
 
     /// Ordered so the first unfired, met threshold wins. Named rather than
     /// indexed so a milestone stays stable if the list ever grows.
@@ -44,21 +65,24 @@ public final class ReviewPrompt {
         set { defaults.set(newValue, forKey: lastKey) }
     }
 
-    /// `suppressedOverride` exists only for ReviewPromptTests: production
-    /// code (and every other caller) leaves it `nil` and gets the safe
-    /// default below, which cannot be forgotten. A unit test that needs to
-    /// exercise `consider()`'s actual decision-making (rather than confirm
-    /// it is suppressed) passes `suppressed: false` explicitly, because the
-    /// XCTest environment guard is otherwise ALWAYS true for any
-    /// `xcodebuild test` invocation, individual or full-suite alike — there
-    /// is no environment state in which a test could observe `consider()`
-    /// returning `true` without this seam.
+    /// The trees this phone has opened, by id. A SET rather than a tally
+    /// because "three trees" means three different ones: opening the same
+    /// yew three times is one tree looked at three times, and a counter
+    /// cannot tell those apart.
+    private var seen: Set<String> {
+        get { Set(defaults.stringArray(forKey: seenKey) ?? []) }
+        set { defaults.set(Array(newValue), forKey: seenKey) }
+    }
+
+    public var seenCount: Int { seen.count }
+
     public init(defaults: UserDefaults = .standard, suppressed: Bool? = nil) {
         self.defaults = defaults
         self.suppressedOverride = suppressed
         if ProcessInfo.processInfo.arguments.contains("-reset-collection") {
             defaults.removeObject(forKey: firedKey)
             defaults.removeObject(forKey: lastKey)
+            defaults.removeObject(forKey: seenKey)
         }
     }
 
@@ -71,6 +95,16 @@ public final class ReviewPrompt {
             || ProcessInfo.processInfo.arguments.contains("-no-review-prompt")
     }
 
+    /// Record that a tree page was opened. Stops recording once the last
+    /// milestone is behind us, so this never grows past ~25 ids in defaults:
+    /// nothing above the highest threshold can change any decision.
+    public func saw(_ treeId: String) {
+        guard let ceiling = Self.milestones.last?.count, seen.count < ceiling else { return }
+        var s = seen
+        s.insert(treeId)
+        seen = s
+    }
+
     /// The pure decision, kept apart from `suppressed` so its milestone,
     /// quiet-period and lifetime-cap logic can be unit tested without the
     /// XCTest guard silencing every call.
@@ -81,13 +115,14 @@ public final class ReviewPrompt {
         return milestones.first { total >= $0.count && !fired.contains($0.name) }?.name
     }
 
-    /// Called after a tree is ticked. Returns `true` the moment a new
-    /// milestone is reached and conditions allow it; the caller then, and
-    /// only then, calls SwiftUI's `\.requestReview` action.
+    /// Called at a pause: a tree page closing, or a tree just ticked off.
+    /// Sets `pending` when a new milestone is reached and conditions allow
+    /// it, which is the root's cue to make the system ask. Returns the same
+    /// answer for a caller that wants to know.
     @discardableResult
-    public func consider(ticked total: Int, now: Date = Date()) -> Bool {
+    public func consider(now: Date = Date()) -> Bool {
         guard !suppressed else { return false }
-        guard let name = Self.milestone(for: total, fired: fired, last: last, now: now,
+        guard let name = Self.milestone(for: seen.count, fired: fired, last: last, now: now,
                                          maxAsks: maxAsks, quietDays: quietDays) else {
             return false
         }
@@ -95,6 +130,7 @@ public final class ReviewPrompt {
         f.insert(name)
         fired = f
         last = now
+        pending = true
         return true
     }
 }

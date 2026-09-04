@@ -983,20 +983,37 @@ App Store Review Guideline 5.6.1 forbids as satisfaction gating. Never wire
 it to a "Rate us" button. Ask at the end of a sequence the person has just
 completed successfully, never on launch and never mid-task.
 
-**Where we ask: ticking a tree**, `CollectSheet.claim`, the moment already
-described in that file's own comment as "the payoff... the app's job at
-that exact second is to tell them what it is." AllTrails-style outdoor
-apps ask after completing a whole trail; our closest equivalent is
-finishing a curated Walk, but that feature is still lightly used, so the
-ask is tied to the tick itself, which works for everyone. See
+**What counts, corrected by Hidde on 2026-09-04: trees LOOKED AT, not
+trees ticked off** ("afgevinkte bomen is wel te lang - ik denk naar 3
+bomen bekeken in de app"). The first version counted ticks, which is the
+strongest engagement signal the app has and also the rarest: a tick means
+somebody stood in front of a trunk with a camera, so three of them is
+weeks of walking and the ask would have reached almost nobody. Three tree
+pages opened is a bar an interested person clears in one sitting, and it
+is still engagement rather than a launch counter. Different trees, not
+three visits to one.
+
+**Where we ask: two moments, whichever comes first.** Closing a tree page
+is the PAUSE Apple describes, the reader having finished something and
+landed back on a list. Ticking a tree off is the payoff, described in
+`CollectSheet.claim`'s own comment as "the app's job at that exact
+second", and it counts toward the same three. Neither screen presents the
+dialog itself: they raise a flag and `ContentView` makes the ask, because
+the screen that notices a milestone is usually the one going away. See
 `Kit/ReviewPrompt.swift` and DECISIONS.md-shaped reasoning in
 `docs/superpowers/specs/2026-09-03-review-prompt-design.md`.
 
 **Milestones, our own choice (Apple sets no specific numbers):** the 3rd,
-10th and 25th tree ticked, each asked once, at least 7 days apart, 3 asks
-in the phone's lifetime. The 3 echoes `Nudge.swift`'s own "third save...
-starts to look like a collection" reasoning, reused here as the same
-restraint pattern applied to a different ask.
+10th and 25th different tree seen, each asked once, at least 7 days
+apart, 3 asks in the phone's lifetime. The 3 echoes `Nudge.swift`'s own
+"third save... starts to look like a collection" reasoning, reused here
+as the same restraint pattern applied to a different ask.
+
+**In TestFlight the dialog never appears at all**, whatever we call.
+Apple disables it for TestFlight builds. A development build from a Mac
+shows it every time with no throttle, and the App Store throttles it to
+3 a year on top of our own cap. So "I saw nothing in TestFlight" is the
+expected behaviour and never evidence of a bug here.
 
 Read 2026-09-03:
 - https://developer.apple.com/documentation/storekit/requesting-app-store-reviews

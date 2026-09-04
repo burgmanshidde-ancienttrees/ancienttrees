@@ -31,6 +31,7 @@ struct TreeDetail: View {
     @State private var choosingSpecies = false
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
+    @Environment(ReviewPrompt.self) private var reviewPrompt
     @State private var reporting = false
     /// What the menu item they chose says, seeded into the report.
     @State private var reportOpening: String?
@@ -354,6 +355,14 @@ struct TreeDetail: View {
                 sightings.update(m.id, species: picked)
             }
         }
+        .onDisappear {
+            // The PAUSE, which is where Apple says the ask belongs: the
+            // reader finished a tree and is back on a list. Nothing is
+            // presented from here, because a view that is leaving the
+            // hierarchy is a bad place to present from; this only raises
+            // the flag the root watches. See Kit/ReviewPrompt.swift.
+            reviewPrompt.consider()
+        }
         .task {
             // The share card, drawn once per page. Only on your own trees, and
             // only if it has not been drawn already: this runs again when the
@@ -368,6 +377,11 @@ struct TreeDetail: View {
                 shareImage = drawn
             }
             Measure.event("tree_opened", ["tree": mine == nil ? tree.id : "own"])
+            // Three trees LOOKED AT is the review ask's threshold (Hidde,
+            // 2026-09-04). Counted here beside the measurement because this
+            // is the same event; only our own catalogue counts, since a
+            // tree somebody added themselves is one they already knew.
+            if mine == nil { reviewPrompt.saw(tree.id) }
             // Debug scaffolding, same family as -tab, -select and -collected:
             // simctl cannot tap, and a screen that only exists after a tap is a
             // screen that ships unlooked at.
