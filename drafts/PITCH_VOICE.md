@@ -98,6 +98,16 @@ reader draw the conclusion.
 - NO: "Out since 3 September, in seven languages, made by Hidde Burgmans. 2,472 trees mapped, and the eight weeks they are worth crossing town for start now."
 - YES: "There are about eight weeks in the year when a tree is worth crossing town for, and they start now. [in the paragraph where the season already lives]"
 
+**Writing copy from the WEBSITE and the PLANS instead of the shipped build. Walks and the season story sit behind flags that are off for every real user. Check Kit/Launch.swift before naming any feature** (added 2026-09-04)
+
+- NO: "An old ginkgo turns completely gold for two weeks in November, and the app builds a walk that strings a few of them together."
+- YES: "Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything."
+
+**His name, anywhere a stranger reads. I put it in deliberately and called it his choice; it is not a choice, it is never** (added 2026-09-04)
+
+- NO: "Made by Hidde Burgmans, a designer in the Netherlands."
+- YES: "Out this month, in seven languages, with 2,472 trees mapped so far."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
