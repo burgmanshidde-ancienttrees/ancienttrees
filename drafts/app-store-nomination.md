@@ -55,14 +55,14 @@ en, nl, es, it, de, pt, fr, ja
 https://ancienttrees.app
 ```
 
-## Description  (956/1000)
+## Description  (920/1000)
 
 Only the App Store team sees this. It is the field that decides.
 
 ```
-Every city has a few trees that were already old when it was built, and almost nobody can tell you where they are.
+Some of the trees in your city were standing before the city was. Ancient Trees takes you to them.
 
-Ancient Trees does. It shows the remarkable old trees around you, builds a walk that strings a few together, and tells you what you are standing under. You tick off the ones you have seen, from the Ankerwycke Yew at Runnymede to the giant three streets away.
+It shows the remarkable old trees around you, builds a walk that strings a few together, and tells you what you are standing under. You tick off the ones you have seen, from the Ankerwycke Yew at Runnymede to the giant three streets away.
 
 Every pin is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything.
 
@@ -92,6 +92,15 @@ UNUserNotificationCenter, nothing. Season Radar ALERTS are a paid-tier promise
 from 2026-08-18 that is not built. Telling Apple we notify people would be a
 claim about a feature that does not exist, so it now says the app shows you,
 which is what it does.
+
+**And the opening was wrong twice.** It first argued with a mountain nobody
+mentioned; the fix rebuilt the same habit in a new coat, "almost nobody can
+tell you where they are. Ancient Trees does." Hidde: "waarom met een negatieve
+tegenstelling beginnen in godsnaam onthou dat nooit meer." Recording it in
+PITCH_VOICE.md was not enough, because the second version was written AFTER
+recording the first. So it is a check now (NEGATIVE_SETUP in pitchcheck.py,
+opening 260 characters only, since the same words are fine mid-text and fatal
+as a hook). The opening states the wonder and then says what we do with it.
 
 ## Helpful Details  (485/500)
 

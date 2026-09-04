@@ -52,6 +52,17 @@ TICS = [
      "you are arguing with an alternative the reader never had in mind. Say "
      "what it IS."),
 
+    # THE NEGATIVE SETUP. Hidde, 2026-09-04, on "almost nobody can tell you
+    # where they are. Ancient Trees does.": "deze tegenstelling weg waarom met
+    # een negatieve tegenstelling beginnen in godsnaam onthou dat nooit meer."
+    # It is the unasked contrast again in a different coat, and I rebuilt it
+    # while fixing the first one, which is exactly why it earns a check rather
+    # than a note. Checked in the OPENING only, because "most people never see
+    # it" is fine as a fact in the middle and fatal as a hook.
+    (None, "the opening sets up a negative so we can answer it",
+     "you are opening on what nobody else can do so that we can say 'we can'. "
+     "State the wonder, then say what we do with it. No setup, no payoff."),
+
     # UNIQUENESS BY DENIAL. Three clauses about other people's products teach
     # the reader what we are not. Show the thing instead and say nothing about
     # the field.
@@ -99,6 +110,13 @@ TICS = [
 ]
 
 FIRST_SENTENCE = re.compile(r"^\s*(.{10,400}?[.!?])(?:\s|$)", re.S)
+
+# The opening is roughly the first two sentences: where a negative does damage.
+NEGATIVE_SETUP = re.compile(
+    r"\b(almost nobody|nobody|no one|hardly anyone|few people|"
+    r"most people (?:never|do not|don't)|you (?:probably )?(?:have no|cannot) idea|"
+    r"nobody (?:can|could|knows|tells)|never find out)\b", re.I)
+OPENING_CHARS = 260
 ABOUT_US = re.compile(r"\b(we|our|us|ancient trees)\b|\d", re.I)
 
 # Below this, a block is a value (an app id, locale codes, a url, a headline),
@@ -148,8 +166,14 @@ def check(text, label="text"):
             m = FIRST_SENTENCE.search(body.strip())
             if m and ABOUT_US.search(m.group(1)):
                 hits.append(("the first sentence is about us",
-                             TICS[3][2],
+                             TICS[4][2],
                              " ".join(m.group(1).split())[:90]))
+            opening = body.strip()[:OPENING_CHARS]
+            neg = NEGATIVE_SETUP.search(opening)
+            if neg:
+                hits.append(("the opening sets up a negative so we can answer it",
+                             TICS[1][2],
+                             " ".join(opening.split())[:90]))
         for word, why in copy_rules.offences(body):
             hits.append(("banned in all copy", why, word))
     return hits
