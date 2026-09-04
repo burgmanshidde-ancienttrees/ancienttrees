@@ -5102,6 +5102,22 @@
         "wasted": 0,
         "brief_wrong": false
       }
+    ],
+    "2026-09-04": [
+      {
+        "target": "famousjapan-batch-e1-e3 + alicante",
+        "kind": "write",
+        "tokens": 0,
+        "trees": 7,
+        "note": "session merge, not dispatched: finished a write-stories pass an earlier attempt in this window left uncommitted (verify_notes already turned into stories, city files already assembled); published 6 new single-tree places plus Alicante's 15th tree, fixed two under-length question_context bodies and a missing paid_entry flag, tokens not tracked since no new agent was dispatched for the writing itself"
+      },
+      {
+        "target": "ibiza",
+        "kind": "verify",
+        "tokens": 126258,
+        "trees": 2,
+        "note": "5 register candidates checked; 3 private-land (register's own private:true flag missed by the brief) and blocked, 2 public and verified with register+news cross-check, one of the two turned out to be on Formentera not Ibiza and was split into its own research file; both below the 4-tree floor, neither published"
+      }
     ]
   }
 }
