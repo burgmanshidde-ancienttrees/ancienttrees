@@ -61,7 +61,7 @@ Apple would be featuring.
 https://ancienttrees.app
 ```
 
-## Description  (840/1000)
+## Description  (911/1000)
 
 Only the App Store team sees this. It is a pitch to Apple's editors, not the
 public listing, so it never repeats the feature list they already have.
@@ -75,7 +75,7 @@ What that buys somebody is an afternoon outside. You walk into a churchyard you 
 
 The ones you have stood in front of become your collection. You follow other people and see the trees they have found, and one nobody has mapped you photograph where you stand.
 
-Out this month, with 2,474 trees mapped so far.
+Out this month, with 2,474 trees so far: fifty-six of them in Barcelona, one of them on the green of a Dorset village.
 ```
 
 **Rewritten 2026-09-04 to argue FOR the app, on Hidde's correction:** "moet
