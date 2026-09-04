@@ -1,0 +1,70 @@
+{
+  "city": "Iwaki",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Iwaki maps one tree: the Weeping Maple of Nakakamado, a two-trunk clump of Japanese maple growing in an umbrella shape at a small Kannon temple in the Watanabe-machi district. It is a National Natural Monument since 1937 with no confirmed age, but the city government tracks its autumn colour every single year and publishes the forecast. Published alone here because the tree itself is the destination, not because Iwaki's research is finished.",
+  "meta_description": "The Weeping Maple of Nakakamado, Iwaki: a two-trunk National Natural Monument maple, famous each November for its colour, free to visit.",
+  "question_meta": "Iwaki's only mapped tree is the Weeping Maple of Nakakamado, a National Natural Monument maple famous for its autumn colour.",
+  "question_answer": "Iwaki's only mapped tree is the Weeping Maple of Nakakamado (Acer palmatum), a two-trunk weeping maple growing at Kannon-do temple in the Watanabe-machi district, a National Natural Monument since 1937.",
+  "question_context": "The tree is really two trunks growing together as one umbrella-shaped clump, a naturally occurring weeping and twisted form of the ordinary Japanese maple. The larger stem stands 6.8 metres tall and 3.5 metres round; the smaller reaches 4 metres, and together they spread 12 metres of branches over the grounds of a small Kannon temple. Japan designated it a National Natural Monument in 1937, and it has held that status for close to ninety years.\n\nNo age is stated on this page. Japanese Wikipedia's own article speculates 400 to 500 years if the tree dates to the temple's founding, but no source actually ties the two together, so the figure is left out rather than repeated as fact. What is documented instead is attention: Iwaki's city government tracks and publishes this specific maple's autumn colour every year, most recently noting in late November 2024 that the leaves had just begun to turn. A nine-space car park near the temple exists for the visitors who come to see it.",
+  "hero_tree_id": "iwk_001",
+  "oldest_tree_id": "iwk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Iwaki?",
+      "a": "The Weeping Maple of Nakakamado (Acer palmatum), a two-trunk National Natural Monument maple at Kannon-do temple in the Watanabe-machi district. No confirmed age has been established."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Nobody knows for certain. Japanese Wikipedia speculates 400 to 500 years, but only if it dates to the founding of the temple beside it, a link no source actually confirms, so the age is left unstated rather than guessed."
+    },
+    {
+      "q": "When is the best time to see it?",
+      "a": "Late November, when the maple turns red. Iwaki's city government tracks and publishes its autumn colour every year."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on the grounds of Kannon-do temple, open to the public, with a dedicated car park about a 10-minute walk away."
+    }
+  ],
+  "trees": [
+    {
+      "id": "iwk_001",
+      "name": "Nakakamado no Shidare Momiji",
+      "species": "Weeping Japanese Maple (Acer palmatum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 350,
+      "height_m": 6.8,
+      "location": {
+        "address": "Kannon-do temple grounds, Nakakamado, Watanabe-machi, Iwaki, Fukushima Prefecture",
+        "latitude": 36.96345,
+        "longitude": 140.80748,
+        "neighbourhood": "Nakakamado, Watanabe-machi"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E4%B8%AD%E9%87%9C%E6%88%B8%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%83%A2%E3%83%9F%E3%82%B8",
+        "https://online.bunka.go.jp/heritages/detail/204813",
+        "https://www.city.iwaki.lg.jp/www/contents/1450324990004/index.html"
+      ],
+      "access": "Free. Stands on the grounds of a Kannon temple (Kannon-do), open to visitors; a dedicated 9-space car park is about a 10-minute walk from the tree.",
+      "transport": "About 10 minutes' walk from a dedicated visitor car park near Izumi Station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "notes": "New place: Iwaki, Fukushima, opened for this single tree under the 2026-08-31 single-famous-tree exception. Real one-way travel to Takahagi's only mapped tree (tkh_001, Arakawa Hachimangu Shrine) is 45 to 70 minutes door to door depending on mode, well past the day-trip boundary, so this does not join Takahagi as a place. Passes the destination test on its own merits: 90-year National Natural Monument status, an annual city-government autumn-colour tracking page, a dedicated 9-space visitor car park, and appearances as a named autumn-colour spot on major Japanese travel and weather platforms. No confirmed age: ja.wikipedia's 400-500 year figure is speculative, resting on a bridge claim to the temple's founding date that no source actually makes, so left unstated per the no-basis rule rather than sharpened into a number.",
+      "best_time": {
+        "months": [11],
+        "label": "late November, when the maple turns red",
+        "kind": "autumn colour"
+      },
+      "story": "No one will say how old this maple is, and that is not an oversight. Japanese Wikipedia's own article speculates 400 to 500 years, but only if the tree dates to the founding of the temple beside it, a link no source actually makes, so that number is left off this page rather than repeated as fact.\n\nWhat Iwaki does know, and publishes every autumn, is exactly when the tree turns. The city government tracks this specific maple's colour change year by year, and its most recent update, posted in late November 2024, noted the leaves had just begun to shift. It has drawn that kind of attention every autumn since at least 1937, when Japan designated it a National Natural Monument. Ninety years on, it is still a named autumn-colour destination on Japanese travel and weather sites that forecast leaf-turning nationwide.\n\nThe tree is really two trunks growing as one clump, a naturally occurring weeping, twisted form of the ordinary Japanese maple: the larger stem 6.8 metres tall and 3.5 metres round, the smaller 4 metres tall, together spreading 12 metres of branches into an umbrella shape over the grounds of Kannon-do temple. A nine-space car park a short walk away exists for exactly one reason, and it is not the temple.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

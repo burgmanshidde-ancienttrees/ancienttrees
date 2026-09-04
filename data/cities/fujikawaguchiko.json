@@ -2,10 +2,10 @@
   "city": "Fujikawaguchiko",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Fujikawaguchiko maps one tree: Shoji no Osugi, a Japanese cedar kept as the sacred tree of Suwa Shrine beside Lake Shoji, one of the Fuji Five Lakes. Twelve metres round the trunk and forty metres tall, it is among the largest cedars in Yamanashi Prefecture, and shrine ground is why it survived that long in a valley people have farmed for centuries. Locally it is Sennen-sugi, the Thousand-Year Cedar, though the sourced estimate is closer to 1,200 years. Published alone here because the tree is the destination, not because Fujikawaguchiko's research is finished.",
-  "meta_description": "Shoji no Osugi, Fujikawaguchiko: a sacred cedar at Suwa Shrine by Lake Shoji, roughly 1,200 years old, free to visit.",
-  "question_meta": "Fujikawaguchiko's only mapped tree is Shoji no Osugi, a sacred cedar roughly 1,200 years old at Suwa Shrine.",
-  "question_answer": "Fujikawaguchiko's only mapped tree is Shoji no Osugi, a Japanese cedar estimated at roughly 1,200 years old, standing as the sacred tree of Suwa Shrine in the Shoji district by Lake Shoji.",
+  "intro": "Fujikawaguchiko maps two trees, both kept alive by sacred ground rather than a park department. Shoji no Osugi is Suwa Shrine's guardian cedar by Lake Shoji, roughly 1,200 years old and twelve metres round. A short drive south at Jotakuji Temple in neighbouring Minobu stands the Ohatsuki Ginkgo, a genuine botanical variant that Typhoon Trami flattened in 2018 and that has kept fruiting from the ground ever since. Published at two rather than a full ten because that is what the research here has verified so far.",
+  "meta_description": "Fujikawaguchiko's two mapped trees: Shoji no Osugi, a 1,200-year cedar by Lake Shoji, and the Ohatsuki Ginkgo, still fruiting after a 2018 fall.",
+  "question_meta": "Fujikawaguchiko's oldest mapped tree is Shoji no Osugi, a sacred cedar roughly 1,200 years old at Suwa Shrine by Lake Shoji.",
+  "question_answer": "Fujikawaguchiko's oldest mapped tree, of two, is Shoji no Osugi, a Japanese cedar estimated at roughly 1,200 years old, standing as the sacred tree of Suwa Shrine in the Shoji district by Lake Shoji.",
   "question_context": "Twelve metres round the trunk and forty metres tall, this is one of the largest cedars in Yamanashi, and it stands in a shrine yard rather than deep forest. Suwa Shrine keeps it as its goshinboku, the sacred tree of the place. Shrine trees get left alone, which is how a cedar reaches this size in a valley people have lived in for centuries. Locally it goes by Sennen-sugi, the Thousand-Year Cedar. The estimate behind that name is roughly 1,200 years, a broad figure arrived at from the tree's size rather than from anything counted, so treat the nickname as the rounder version of an already round number. On 31 January 1928 the state made the protection official and designated it a National Natural Monument. The setting is the other half of the appeal: Shoji is one of the Fuji Five Lakes, so the tree stands inside one of the most photographed landscapes in Japan while the mountain takes the attention. The shrine grounds are open and free, and there is nothing between a visitor and the trunk.",
   "hero_tree_id": "fjk_001",
   "oldest_tree_id": "fjk_001",
@@ -51,6 +51,38 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Twelve metres round the trunk and forty metres tall, this is one of the largest cedars in Yamanashi, and it stands in a shrine yard rather than deep forest. Suwa Shrine keeps it as its goshinboku, the sacred tree of the place. Shrine trees get left alone, which is how a cedar reaches this size in a valley people have lived in for centuries.\n\nLocally it goes by Sennen-sugi, the Thousand-Year Cedar. The estimate behind that name is roughly 1,200 years, a broad figure arrived at from the tree's size rather than from anything counted, so treat the nickname as the rounder version of an already round number. On 31 January 1928 the state made the protection official and designated it a National Natural Monument.\n\nThe setting is the other half of the appeal. Shoji is one of the Fuji Five Lakes, so the tree stands inside one of the most photographed landscapes in Japan while the mountain takes the attention. The shrine grounds are open and free, and there is nothing between a visitor and the trunk.\n\nNo recent assessment of its health turned up in the sources we reached, and nothing in them points to decline. If you have been there lately, tell us how it looked.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "fjk_002",
+      "name": "The Ohatsuki Ginkgo of Jotakuji Temple",
+      "species": "Ohatsuki Ginkgo, a leaf-seed variant (Ginkgo biloba var. epiphylla)",
+      "age_estimate": "roughly 750 years",
+      "age_min": 700,
+      "age_max": 800,
+      "girth_cm": 660,
+      "height_m": 23.0,
+      "location": {
+        "address": "279 Shimoyama-Kamisawa, Minobu, Nanko-gun, Yamanashi 409-2723, Japan (grounds of Jotakuji Temple)",
+        "latitude": 35.4201,
+        "longitude": 138.44439,
+        "neighbourhood": "Shimoyama, Minobu-cho (about 17 km south of Fujikawaguchiko, within day-trip distance)"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E4%B8%8A%E6%B2%A2%E5%AF%BA%E3%81%AE%E3%82%AA%E3%83%8F%E3%83%84%E3%82%AD%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+        "https://www.town.minobu.lg.jp/page/1587.html"
+      ],
+      "access": "Free, on the grounds of Jotakuji Temple, a working Nichiren-sect temple that welcomes visitors. Signposted from National Route 52 as 'Sakasa-icho' (Upside-down Ginkgo).",
+      "transport": "About 15 minutes' walk from Hatakajima Station on the JR Minobu Line.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "notes": "Ohatsuki (leaf-seed) variant, one of only 7 nationally designated examples in Japan, 3 of them within this one district of Minobu. Snapped near the base and toppled by Typhoon Trami on 2018-09-30; the temple left it where it fell, and it had resprouted and was fruiting again from the fallen trunk by 2019 (Minobu-cho's own page, updated December 2025, confirms the tree's vigour is still being monitored). Age of roughly 750 years comes from a Nichiren-era legend, not a measured figure: a priest's ginkgo-wood walking staff, planted over a poisoned dog's grave, is said to have taken root. Girth and height are the pre-2018 standing measurements, kept as the official designation record; the tree no longer stands at that height.",
+      "story": "On the night of 30 September 2018, Typhoon Trami snapped this ginkgo off near its base and laid the whole tree flat on the ground at Jotakuji Temple. The temple left it exactly where it fell rather than clearing it away, and within a year new shoots were pushing out of the fallen trunk. It has fruited from the ground every autumn since. Locals now call it Yokobushi no Oh-Icho, the great fallen ginkgo, and the town still tracks its condition on its own website today.\n\nThis is not an ordinary ginkgo. It is an Ohatsuki variant, in which roughly a third of the seeds grow fused to the edge of a leaf instead of hanging free, a mutation first described to Japanese science from this exact tree in 1891. Only seven trees of this kind carry national Natural Monument status, designated in 1929, and three of the seven stand within a couple of kilometres of each other in this one district of Minobu.\n\nLocal legend explains the ground rather than the species: a Nichiren-sect priest is said to have planted his teacher's walking staff, cut from ginkgo wood, over the grave of a dog that once took poison meant for him, and the staff took root. Whatever actually planted it, something here has kept it fruiting for roughly 750 years, upright for most of them and, since 2018, flat on its side.",
       "photo": {
         "url": null,
         "license": null,
