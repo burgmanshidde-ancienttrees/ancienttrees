@@ -2,11 +2,11 @@
   "city": "Bari",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Puglia's regional register recognises exactly four trees anywhere in the whole of Bari as officially monumental, and this list carries all four. Two share a flowerbed in the gardens of Piazza Umberto I outside the central station: an Argentine ombu too heavy for its own roots, and a Mexican ponytail palm locals call the smoke-eater. A third, a scarred Aleppo pine in the suburb of Carrassi, has been climbed by neighbourhood kids for decades. The fourth stands 30 kilometres out in Quasano, a Murgia hamlet, named the Lie Tree for the grievances peasants once traded beneath it.",
-  "meta_description": "Bari's four officially monumental trees: an Argentine ombu, a Mexican elephant's foot, a climbed Aleppo pine, and a holm oak named for peasant grievances.",
+  "intro": "Puglia's regional register recognises five trees in and around Bari as officially monumental, and this list carries all five. Two share a flowerbed in the gardens of Piazza Umberto I: an Argentine ombu too heavy for its own roots, and a Mexican ponytail palm locals call the smoke-eater. A third, a scarred Aleppo pine in Carrassi, has been climbed by neighbourhood kids for decades. Two more stand out in Toritto, a Murgia hamlet 30 minutes away: the Lie Tree of Quasano, and a downy oak inside a working farm reached only by booking a walk.",
+  "meta_description": "Bari's five monumental trees: an Argentine ombu, a Mexican elephant's foot, a climbed pine, a peasant-grievance oak, and a farm oak reached by booking.",
   "question_answer": "Bari's oldest tree, by the best available evidence, is the Lie Tree of Quasano, a holm oak in the Murgia hamlet of Toritto planted in the second half of the 19th century, putting it at roughly 125 to 175 years old. The Pine of Carrassi, inside the city itself, sits in a nearly identical range, estimated at around 150 years by a University of Bari botanist who cautions that dating either tree precisely is very difficult.",
-  "question_meta": "Bari's oldest tree may be the Lie Tree of Quasano, a 19th century holm oak 30km out, tied by the city's Pine of Carrassi. All 4 monumental trees.",
-  "question_context": "Age here is a matter of best evidence rather than precision, because none of Bari's four officially monumental trees carries a measured planting date. The Lie Tree of Quasano has the strongest documented basis: local sources say it is absent from the estate's own land records before the mid-1800s, and its name comes from complaints peasants traded beneath it in the disillusioned years after Italian unification. The Pine of Carrassi rests on a University of Bari botanist's estimate of roughly a century and a half, given with the same caution. The two younger trees, an Argentine ombu and a Mexican ponytail palm sharing a bed in Piazza Umberto I outside the central station, are neither dateable by growth rings (both are technically giant herbs, not true trees) nor documented at planting. The Quasano tree is a genuine day trip, about 30 km from the centre with no direct rail; the other three sit within a few kilometres of Bari Centrale.",
+  "question_meta": "Bari's oldest tree may be the Lie Tree of Quasano, a 19th century holm oak 30km out, tied by the city's Pine of Carrassi. All 5 monumental trees.",
+  "question_context": "Age here is a matter of best evidence rather than precision, because none of Bari's five officially monumental trees carries a measured planting date. The Lie Tree of Quasano has the strongest documented basis: local sources say it is absent from the estate's own land records before the mid-1800s, and its name comes from complaints peasants traded beneath it in the disillusioned years after Italian unification. The Pine of Carrassi rests on a University of Bari botanist's estimate of roughly a century and a half, given with the same caution. The two younger trees, an Argentine ombu and a Mexican ponytail palm sharing a bed in Piazza Umberto I outside the central station, are neither dateable by growth rings (both are technically giant herbs, not true trees) nor documented at planting. The downy oak at Masseria Pilapalucci has no age record at all. The Quasano tree and the masseria oak are genuine day trips, about 30 km from the centre with no direct rail; the other three sit within a few kilometres of Bari Centrale.",
   "faq": [
     {
       "q": "What is the oldest tree in Bari?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Why does Bari have so few monumental trees?",
-      "a": "Puglia's regional register of monumental trees recognises only four anywhere in the comune of Bari. It is a strict legal designation, not a count of every remarkable tree in the city, and this list is all four."
+      "a": "Puglia's regional register of monumental trees recognises only five anywhere in and around the comune of Bari. It is a strict legal designation, not a count of every remarkable tree in the area, and this list is all five."
     },
     {
       "q": "Are Bari's trees free to see?",
-      "a": "Yes. The ombu and the ponytail palm stand in the public gardens of Piazza Umberto I, the pine on an open street corner in Carrassi, and the Lie Tree beside a public road in Quasano. None needs a ticket."
+      "a": "Most of them. The ombu and the ponytail palm stand in the public gardens of Piazza Umberto I, the pine on an open street corner in Carrassi, and the Lie Tree beside a public road in Quasano, none needing a ticket. The fifth, a downy oak at Masseria Pilapalucci in Toritto, stands on a private working farm and can only be visited on the masseria's own scheduled events."
     },
     {
       "q": "What does 'Lie Tree' mean?",
@@ -163,6 +163,33 @@
         "height": 1080
       },
       "height_m": 11.0
+    },
+    {
+      "id": "bar_005",
+      "name": "The Roverella of Pilapalucci",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 305,
+      "height_m": 20,
+      "location": {
+        "address": "Masseria Storica Pilapalucci, Contrada Pilapalucci, Toritto (BA)",
+        "latitude": 40.986272,
+        "longitude": 16.614764,
+        "neighbourhood": "Toritto, a hamlet roughly 18 km from central Bari"
+      },
+      "verified_sources": [
+        "data/registers/puglia-alberi-monumentali.json (register_id 02/L220/BA/16, girth 305cm, height 20m, comune Toritto, locality Masseria Pilapalucci)",
+        "data/registers/italy-masaf.json (sheet_id 02/L220/BA/16, same figures, same coordinates; both registers draw on the same underlying MASAF/Puglia dataset, counted as one source)",
+        "https://www.masseriapilapalucci.it/ferragosto-2026/ (the masseria's own event page, fetched directly, confirming the tree by name and its inclusion on a guided 2026 walk)"
+      ],
+      "access": "Private working farm (Masseria Storica Pilapalucci, a 16th century farmstead on Italy's ADSI register of historic houses). Not open to casual walk-up visitors; the tree stands inside the farm's own grounds among its olive and almond groves. It is included on the masseria's scheduled public events, such as its Ferragosto walk, which anyone can book; check the masseria's own calendar before visiting.",
+      "transport": "By car only, no public transport reaches Toritto's rural contrade from Bari in a reasonable time. Roughly 30-35 minutes' drive from central Bari.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The Roverella of Pilapalucci grows inside the walls of a working farm, which means nobody wanders up to it by accident. Masseria Storica Pilapalucci is a fortified farmstead dating to the 16th century, listed among Italy's historic private houses, and this downy oak stands in its olive and almond groves rather than beside a public road. The masseria opens its gates for scheduled events, among them a guided walk through the groves that stops at the tree it calls its own monumental specimen, which is how an outsider gets to stand under it at all.\n\nDowny oak is the working oak of the Murgia plateau, built for thin limestone soil and dry summers rather than for spectacle, and this one has done the ordinary thing for a very long time: a trunk just over three metres round, a crown reaching twenty metres up. Nobody wrote down when it was planted. Centuries of farm labour around a masseria rarely leave that kind of note, and the regional register that protects it records size and species, never a birth date.\n\nThe visit is real, just conditional. Check the masseria's own event calendar before making the drive out to Toritto, and go on a day it is actually open.",
+      "verify_notes": "Species and girth agree between the two register imports (one underlying source, per the two-source rule). Second, independent source is the masseria's own 2026 Ferragosto event page, fetched directly rather than from a search summary, confirming the tree by name, its 'albero monumentale' designation and its place on a 2026 guided walk, which is decent alive-now evidence. No age source found anywhere; left undocumented rather than derived without a supportable growth-rate basis for downy oak on this soil. Access is the booking case (2026-09-01 ruling): a private working farm, not walk-up, but its scheduled public events are bookable by anyone, so it clears hard rule 10 as a price-and-schedule case rather than a private-permission refusal. Not within Bari's usual day-trip boundary; published as a Toritto entry alongside bar_004 (Quasano, also in Toritto), the same pattern this city already uses."
     }
   ]
 }
