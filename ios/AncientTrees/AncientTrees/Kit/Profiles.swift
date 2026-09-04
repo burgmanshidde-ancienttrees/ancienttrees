@@ -126,6 +126,31 @@ public final class Profiles {
         await load(userId: userId, token: token)
     }
 
+    /// WHO FOLLOWS YOU, and who you follow (Hidde, 2026-09-04: "ik zie ook dat
+    /// ik twee followers heb, opzich nice als ik daar op kan klikken en volg
+    /// terug kan doen"). The numbers have been on the profile since the first
+    /// day and led nowhere, which makes them decoration rather than people.
+    ///
+    /// Two calls rather than a join, because the follows table holds ids and
+    /// the names live in profiles: ask who, then ask who they are. Somebody who
+    /// has signed up and never chosen a display name has no profile row at all,
+    /// so they come back as an id with no name; the screen says so rather than
+    /// inventing one. Two of the three accounts on this database are in exactly
+    /// that state today.
+    public func followerIds(of userId: String, token: String?) async -> [String] {
+        await ids("follows?select=follower&followee=eq.\(userId)&limit=200", key: "follower", token: token)
+    }
+
+    public func followingIds(of userId: String, token: String?) async -> [String] {
+        await ids("follows?select=followee&follower=eq.\(userId)&limit=200", key: "followee", token: token)
+    }
+
+    private func ids(_ path: String, key: String, token: String?) async -> [String] {
+        guard let data = try? await send(request(path, "GET", token: token)) else { return [] }
+        guard let rows = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]] else { return [] }
+        return rows.compactMap { $0[key] as? String }
+    }
+
     /// People, by the name they chose. The only way to find somebody, which is
     /// deliberate: there is no browsing of everybody who ever signed up.
     public func search(_ query: String, token: String?) async -> [Profile] {
