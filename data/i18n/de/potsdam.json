@@ -1,0 +1,64 @@
+{
+ "_note": "Deutsches Overlay für Potsdam, von Hand geschrieben 2026-09-04. Nur Text: Koordinaten, Fotos, Lizenzen und best_time bleiben in data/cities/potsdam.json. Die Seite sagt offen, dass alle vier Bäume auf der Berliner Seite der Glienicker Brücke stehen, nicht in Potsdam selbst; diese Ehrlichkeit wird in der Übersetzung nicht geglättet.",
+ "city": "Potsdam",
+ "title": "Alte Bäume bei Potsdam: Jenseits der Glienicker Brücke",
+ "meta_description": "Vier geschützte Bäume bei Potsdam, jenseits der Glienicker Brücke: die Königslinde, eine 300 Jahre alte Eiche und zwei weitere im UNESCO-Parkgelände.",
+ "intro": "Jeder Baum auf dieser Seite steht außerhalb Potsdams selbst, jenseits der Glienicker Brücke in Berlin. Alle vier stehen dort unter dem Schutz des Landes Berlin, zwölf Tramminuten vom Potsdamer Hauptbahnhof entfernt: zwei Winterlinden, eine davon im Register selbst als Königslinde benannt, und zwei Eichen, die weitere fast sechs Meter im Umfang. Die Parklandschaft, in der sie stehen, gehört zum UNESCO-Welterbe der Schlösser und Parks von Potsdam und Berlin, ganzjährig frei zugänglich.",
+ "question_title": "Was ist der älteste Baum bei Potsdam? (rund 300 Jahre)",
+ "question_meta": "Der älteste Baum bei der Glienicker Brücke: die Jägerhof-Eiche, rund 300 Jahre alt, 2023 mit 566cm Umfang gemessen. Wo sie steht, und was es sonst gibt.",
+ "question_answer": "Der älteste Baum auf dieser Seite ist die Eiche am Jägerhof im Volkspark Klein-Glienicke, rund 300 Jahre alt und 2023 zuletzt mit 566 Zentimetern Umfang gemessen. Ungefähr, denn kein Register hier verzeichnet überhaupt Alter: Berlins Liste der Naturdenkmäler, die alle vier Bäume schützt, gibt jedem eine Nummer, eine Art, ein Flurstück und einen Satz zum Standort, und endet dort. Die 300-Jahre-Zahl stammt aus einem deutschen Baumarchiv, das vom Jägerhof selbst zurückrechnet, der vor 1830 gebaut wurde, als die Eiche schon stand und nach Einschätzung des Archivs bereits über hundert Jahre alt war. Die anderen drei Bäume, zwei Winterlinden und eine zweite Eiche, haben nirgends ein veröffentlichtes Alter, deshalb nennt diese Seite keins statt einer Vermutung.",
+ "question_context": "Alle vier Bäume stehen in einem Streifen Parkland, der sich wie Potsdam liest und als Berlin verwaltet wird. Die Glienicker Brücke ist die Grenze, die Tram vom Potsdamer Hauptbahnhof überquert sie in zwölf Minuten, und die Parks am östlichen Ufer gehören zum UNESCO-Welterbe der Schlösser und Parks von Potsdam und Berlin. Alle vier stehen unter Naturdenkmalschutz des Landes Berlin, eine rechtliche Ausweisung statt einer Erhebung: Das Register verzeichnet weder Alter noch Umfang noch Zustand, deshalb tragen drei von ihnen hier keine Maße. Die Ausnahme ist die Jägerhof-Eiche, 2023 von einem deutschen Baumarchiv mit 566 Zentimetern vermessen, die am besten dokumentierte und mit Abstand größte der vier. Drei stehen wenige hundert Meter von der Brücke entfernt, die Eiche liegt fünfzehn bis zwanzig Minuten weiter südlich. Drei Platanen im ummauerten Garten hinter dem Jagdschloss bleiben außen vor, weil niemand den öffentlichen Zugang bestätigen konnte.",
+ "faq": [
+  {
+   "q": "Was ist der älteste Baum bei Potsdam?",
+   "a": "Die Eiche am Jägerhof im Volkspark Klein-Glienicke, rund 300 Jahre alt. Die Schätzung stammt von einem deutschen Baumarchiv, das sie 2023 mit 566 Zentimetern Umfang maß und vom Jägerhof zurückrechnete, der vor 1830 gebaut wurde, als die Eiche schon stand. Berlins Naturdenkmalregister führt kein Altersfeld, nichts hier ist also ein datierter Pflanzeintrag."
+  },
+  {
+   "q": "Stehen diese Bäume wirklich in Potsdam?",
+   "a": "Nein, und die Seite sagt das mit Absicht. Alle vier stehen am Berliner Havelufer, in Berlin-Wannsee, direkt jenseits der Glienicker Brücke von Potsdam aus gesehen. In der Praxis ist es trotzdem ein Potsdam-Spaziergang: Die Tram 93 vom Potsdamer Hauptbahnhof erreicht die Brücke in etwa zwölf Minuten."
+  },
+  {
+   "q": "Sind sie kostenlos zu besichtigen?",
+   "a": "Ja. Alle vier stehen in offenem, öffentlichem Parkland, kein Ticket für die Bäume selbst, und das ganze Gebiet gehört zum UNESCO-Welterbe der Schlösser und Parks von Potsdam und Berlin."
+  },
+  {
+   "q": "Kann ich alle vier auf einem Spaziergang sehen?",
+   "a": "Ja, und es ist ein guter. Die beiden Linden und die erste Eiche liegen wenige hundert Meter von der Brücke entfernt; die Jägerhof-Eiche ist weitere fünfzehn bis zwanzig Minuten südlich entlang des Parkwegs über der Havel, nahe dem Krughorn. Rechnen Sie mit rund zwei Stunden für die Runde mit Pausen."
+  }
+ ],
+ "strings_note": "Felder pro Baum: name, species (deutscher Artname, gleiche lateinische Bezeichnung), age_estimate, access, transport, story. Stories 150-250 Wörter, gleiche Messlatte wie im Englischen, keine Gedankenstriche.",
+ "trees": {
+  "pot_001": {
+   "name": "Die Linde im Park Jagdschloss Glienicke",
+   "species": "Winterlinde (Tilia cordata)",
+   "age_estimate": "",
+   "access": "Kostenlos, ganzjährig öffentlich zugänglich. Steht im offenen Parkland um das Jagdschloss, nicht im ummauerten Institutsgarten hinter dem Gebäude",
+   "transport": "Tram 93 ab Potsdam Hauptbahnhof bis Glienicker Brücke, etwa 12 Minuten, dann ein kurzer Weg in den Park",
+   "story": "Zweihundert Meter von dieser Linde entfernt liegt die Brücke, an der der Kalte Krieg Menschen austauschte. Über die Glienicker Brücke liefen die Agentenaustausche zwischen Amerikanern und Sowjets, und die Grenze verlief mitten im Wasser darunter. Der Baum steht am östlichen Ufer, also in Berlin, auch wenn es von Potsdams Hauptbahnhof nur zwölf Tramminuten sind und weit weg von allem, was ein Berliner als seine Stadt empfindet.\n\nEs ist eine Winterlinde, vom Land Berlin als Naturdenkmal unter der Nummer 6-99/B geschützt, im offenen Parkland des Park Jagdschloss Glienicke rund um das alte Jagdschloss. Was dieser Schutz nicht mitbringt, sind Informationen. Das Register nennt eine Art, eine Flurnummer und einen Ort, und mehr nicht: kein Alter, kein Umfang, kein Wort zum Zustand des Baumes, weil es ein Rechtsinstrument ist und keine Erhebung.\n\nDieser Eintrag bleibt also dünner als die meisten hier, und das steht auch so da. Eine einzige amtliche Quelle nennt den Baum, keine zweite haben wir gefunden. Was diese Quelle aber belegt, ist die Sache, für die es sich zu gehen lohnt: Jemand hat sich diese eine Linde unter all den Bäumen eines großen Parks angesehen und entschieden, dass sie nicht gefällt werden darf."
+  },
+  "pot_002": {
+   "name": "Die Königslinde",
+   "species": "Winterlinde (Tilia cordata)",
+   "age_estimate": "",
+   "access": "Kostenlos, ganzjährig öffentlich zugänglich, kein Tor, keine Öffnungszeiten, kein Eintritt. Teil des UNESCO-Welterbes der Schlösser und Parks von Potsdam und Berlin",
+   "transport": "Tram 93 ab Potsdam Hauptbahnhof bis Glienicker Brücke, etwa 12 Minuten, dann ein kurzer Weg in den Schlossgarten",
+   "story": "Unter dieser Linde tranken Menschen Tee, und der Boden, auf dem sie saßen, ist noch da. Ein Mosaikpflaster nahe dem Löwenbrunnen im Schlossgarten markiert die Stelle, an der Gäste des Anwesens von Prinz Carl von Preußen unter dem Baum saßen, und die eigene Parkgeschichte nennt sie einen der eindrucksvollsten Solitärbäume des Anwesens.\n\nBerlins Naturdenkmalregister stimmt auf seine trockene Art zu. Es gibt dem Baum eine Nummer, 6-100/B, und einen Namen, Königslinde, was ungewöhnlich ist in einem Dokument, das sonst meist nur Art und Flurnummer festhält und dann aufhört. Der Garten um sie herum wurde ab 1816 von Peter Joseph Lenné für Prinz Carl angelegt, eine englische Landschaft mit langen Sichtachsen an einem preußischen Flussufer, heute Teil des UNESCO-Welterbes der Schlösser und Parks von Potsdam und Berlin. Er ist offen, kostenlos und hat kein Tor.\n\nWeder das Register noch die Parkgeschichte geben dieser Linde ein Alter oder einen Umfang, deshalb bekommt sie hier auch keins. Sie steht an der Königstraße gegenüber dem Wiesenteich, auf der Berliner Seite der Glienicker Brücke, zwölf Minuten von Potsdam Hauptbahnhof mit der Tram 93, und sie ist der Baum auf diesem Spaziergang, unter dem tatsächlich Menschen gesessen haben."
+  },
+  "pot_003": {
+   "name": "Die Eiche im Schlosspark Glienicke",
+   "species": "Stieleiche (Quercus robur)",
+   "age_estimate": "",
+   "access": "Kostenlos, ganzjährig öffentlich zugänglich, dasselbe Parkland wie die beiden Linden, Teil des UNESCO-Welterbes der Schlösser und Parks von Potsdam und Berlin",
+   "transport": "Tram 93 ab Potsdam Hauptbahnhof bis Glienicker Brücke, etwa 12 Minuten, dann einige Minuten weiter in den Park als die Lindenbäume",
+   "story": "Berlin schützt diese Eiche per Gesetz, und fast nichts sonst über sie ist verzeichnet. Sie erscheint im Naturdenkmalregister des Landes Berlin als 6-105/B, eine Stieleiche, rund 150 Meter nördlich der Königstraße 35C im Schlosspark Glienicke. Dieser Eintrag gibt eine Art, ein Flurstück und eine Position an, und dort endet er: kein Alter, kein Umfang, kein Wort zum Zustand, weil das Register dazu da ist zu sagen, was nicht gefällt werden darf, statt zu beschreiben, was da ist.\n\nDiesen Baum muss man sich also selbst ansehen. Er wächst im Landschaftsgarten, den Peter Joseph Lenné ab 1816 für Prinz Carl von Preußen anlegte, ein Park aus konstruierten Ausblicken, die zufällig wirken sollen, heute Teil des UNESCO-Welterbes der Schlösser und Parks von Potsdam und Berlin. Eichen sind das langlebige Mobiliar solcher Gärten, oft älter als die Gestaltung um sie herum.\n\nDie eine Tatsache, die das Register liefert, sagt etwas, das ein Maßband nicht könnte: Von tausenden Bäumen in diesem Parkgelände ist jemand zu genau diesem gegangen und hat ihn aufgeschrieben. Er liegt ein paar Minuten weiter in den Park hinein als die beiden geschützten Linden. Wenn Sie ein Maßband um ihn legen, sagen Sie uns die Zahl."
+  },
+  "pot_004": {
+   "name": "Die Jägerhof-Eiche",
+   "species": "Stieleiche (Quercus robur)",
+   "age_estimate": "rund 300 Jahre",
+   "access": "Kostenlos, öffentlich zugänglich. Der Volkspark Klein-Glienicke wurde in den 1930er Jahren öffentlich zugänglich, als Berlin das Anwesen erwarb; der Jägerhof und das Gelände darum sind öffentlich zugänglich, hoch über dem Havel-Uferweg nahe dem Krughorn",
+   "transport": "Tram 93 ab Potsdam Hauptbahnhof bis Glienicker Brücke, etwa 12 Minuten, dann etwa 15 bis 20 Minuten zu Fuß südlich entlang des Parkwegs zum Jägerhof",
+   "story": "Die Eiche war zuerst da. Der Jägerhof im Volkspark Klein-Glienicke entstand irgendwann vor 1830, und nach Einschätzung des deutschen Baumarchivs, das diesen Baum vermessen hat, war er schon über hundert Jahre alt, als die Bauleute kamen. Das setzt seinen Anfang vor etwa 1730 an, was 300 Jahre zu einer fairen Schätzung macht, nicht zu einer genauen. Gebohrt hat niemand, und Berlins Naturdenkmalregister, das ihn als 6-73/B schützt, hat kein Altersfeld, in das eine Zahl könnte.\n\nDer Umfang steht fester: 566 Zentimeter in Brusthöhe, gemessen 2023. Fast sechs Meter Stamm, mit weitem Abstand der schwerste Baum dieses Spaziergangs. Er steht hoch über dem Havel-Weg nahe dem Krughorn, südlich im Park von der Glienicker Brücke aus und etwa fünfzehn bis zwanzig Gehminuten von den anderen drei Bäumen hier entfernt.\n\nBerlin kaufte das Anwesen in den 1930er Jahren und öffnete es der Öffentlichkeit, der Boden unter dieser Eiche ist also seit fast einem Jahrhundert begehbar. Davor war es Jagdgebiet, wofür ein Jägerhof da ist. Das Jagdschloss wurde für den Sport gebaut. Die Eiche stand ihm einfach im Weg und überlebte die ganze Angelegenheit."
+  }
+ }
+}
