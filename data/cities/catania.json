@@ -72,9 +72,9 @@
         "longitude": 15.085181,
         "neighbourhood": "Centro Storico"
       },
-      "story": "Italy's national register of monumental trees records this bunya pine at 45 metres tall. That figure does not hold up. A second registry measured the same specimen at about 22 metres, and 45 would be remarkable for an Araucaria bidwillii growing anywhere outside its native forest. The trunk measurements agree far better, 3.40 metres around on the national sheet against 3.33 on the other, and that is the more useful number anyway.\n\nThe species grows wild in a few pockets of southeast Queensland and nowhere else on earth. It builds a dark, symmetrical dome on a straight column of a trunk, carries stiff glossy leaves in spirals along the branches, and drops cones weighing several kilograms from the top of the crown, which is why Australian parks sign the ground underneath them.\n\nVilla Bellini holds a whole collection of araucarias, the Norfolk Island pine, the Cook pine and the hoop pine among them, but only two are individually listed as monumental: this one and its neighbour, twenty to thirty metres away across the garden. From the path they read as a pair, and there is no reason to see them as anything else. No source records an age for either. Nobody wrote the planting down, and the two registries that took the trunks in hand did not attempt a figure.",
+      "story": "Italy's national register of monumental trees records this bunya pine at 45 metres tall. That figure does not hold up. A second registry measured the same specimen at about 22 metres, and 45 would be remarkable for an Araucaria bidwillii growing anywhere outside its native forest. The trunk is the steadier number, 3.00 metres around on the national sheet against 3.33 on the other, close enough given the years between the two surveys.\n\nThe species grows wild in a few pockets of southeast Queensland and nowhere else on earth. It builds a dark, symmetrical dome on a straight column of a trunk, carries stiff glossy leaves in spirals along the branches, and drops cones weighing several kilograms from the top of the crown, which is why Australian parks sign the ground underneath them.\n\nVilla Bellini holds a whole collection of araucarias, the Norfolk Island pine, the Cook pine and the hoop pine among them, but only two are individually listed as monumental: this one and its neighbour, twenty to thirty metres away across the garden. From the path they read as a pair, and there is no reason to see them as anything else. No source records an age for either. Nobody wrote the planting down, and the two registries that took the trunks in hand did not attempt a figure.",
       "verified_sources": [
-        "italy-masaf register (sheet_id 03/C351/CT/19, girth 340cm, locality Villa Bellini)",
+        "italy-masaf register (sheet_id 03/C351/CT/19, girth 300cm, locality Villa Bellini)",
         "https://www.lasiciliainrete.it/directory-tangibili/listing/pino-del-queensland-di-villa-bellini-1/",
         "RAMI registry specimen record 32351 (girth 3.33m at 1.30m height, height approx 22m)"
       ],
@@ -91,7 +91,7 @@
         "height": 2749
       },
       "height_m": 45.0,
-      "verify_notes": "Height 45.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 45.0 m from the italy-masaf register, matched on our own pin (0 m away). 2026-09-04: a deepen pass on Catania found this tree's own citation and story text quoted the neighbour's girth (340cm) instead of its own (300cm, which matches sheet 03 at this pin's exact coordinate); corrected the citation and prose, girth_cm field was already right.",
       "girth_cm": 300
     },
     {
@@ -109,7 +109,7 @@
       },
       "story": "Forty centimetres of trunk is the whole difference between this bunya pine and the one standing twenty to thirty metres away. Italy's national register lists them as two separate monuments, at 3.00 and 3.40 metres around, and a second registry re-measured them at 3.05 and 3.33. On height the difference more or less vanishes and may even run the other way: this one comes out at roughly 22.5 metres against its neighbour's 22, a gap nobody would pick out from the path. The national register puts this tree at 40 metres, which the independent measurement does not support and which reads as an error on the sheet, the same kind that inflates its neighbour to 45.\n\nAraucaria bidwillii is native to a small stretch of southeast Queensland, and in a Sicilian garden it does what it does at home: a straight bare column carrying a dark tiered crown, with leaves stiff and sharp enough to be worth not grabbing.\n\nNeither tree has a documented age. No planting record survives and neither register carries a figure, so what a visitor gets is size rather than years. The two stand close enough that they are one stop on a walk through Villa Bellini, which is the honest way to see them: side by side, forty centimetres apart in the paperwork and near enough identical in person.",
       "verified_sources": [
-        "italy-masaf register (sheet_id 02/C351/CT/19, girth 300cm, locality Villa Bellini)",
+        "italy-masaf register (sheet_id 02/C351/CT/19, girth 340cm, locality Villa Bellini)",
         "https://www.lasiciliainrete.it/directory-tangibili/listing/pino-del-queensland-di-villa-bellini-1/",
         "RAMI registry specimen record 32352 (girth 3.05m at 1.30m height, height approx 22.5m)"
       ],
@@ -126,7 +126,7 @@
         "height": 4000
       },
       "height_m": 40.0,
-      "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 40.0 m from the italy-masaf register, matched on our own pin (0 m away). 2026-09-04: this tree's citation quoted the neighbour's girth (300cm) instead of its own (340cm, which matches sheet 02 at this pin's exact coordinate); corrected. Note this tree is named 'Smaller' but its own register girth (340cm) is larger than its neighbour's (300cm); RAMI's independent measurements run the other way (305 vs 333), so which is truly thicker is genuinely disputed between the two sources and the names are not re-ordered on that basis alone, per house style on not over-precisifying a girth comparison.",
       "girth_cm": 340
     },
     {
