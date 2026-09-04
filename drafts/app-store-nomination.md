@@ -55,52 +55,38 @@ en, nl, es, it, de, pt, fr, ja
 https://ancienttrees.app
 ```
 
-## Description  (920/1000)
+## Description  (699/1000)
 
-Only the App Store team sees this. It is the field that decides.
+Only the App Store team sees this, which is the thing that took longest to
+land: it is a pitch to Apple's editors, not the public listing. An editor
+already has the feature list from the submission form, so a bullet list of
+features spends the whole budget re-typing what they have.
 
 ```
 Some of the trees in your city were standing before the city was. Ancient Trees takes you to them.
 
-It shows the remarkable old trees around you, builds a walk that strings a few together, and tells you what you are standing under. You tick off the ones you have seen, from the Ankerwycke Yew at Runnymede to the giant three streets away.
+An old ginkgo turns completely gold for two weeks in November and then drops nearly every leaf at once. The app tells you which trees near you are turning this week, and builds a walk that strings a few of them together. There are about eight weeks in the year when a tree is worth crossing town for, and they start now.
 
-Every pin is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything.
+Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything. You tick off the ones you have stood under.
 
-An old ginkgo turns completely gold for two weeks in November, then drops nearly every leaf at once. The app shows you which trees near you are turning, which makes late October the moment this is worth putting in front of people.
-
-Photograph a tree we do not have and it goes on the map with your name under it, once we have checked it.
-
-Made by Hidde Burgmans, a designer in the Netherlands. 56 trees in Barcelona, 45 in Munich, 2,472 in all, in seven languages.
+Made by Hidde Burgmans, a designer in the Netherlands, in seven languages, with 2,472 trees mapped so far.
 ```
 
-Judged blind by an independent reader against Hidde's own bullet-list version,
-which scored 4 against this one's 7. The finding worth keeping: **bullets
-belong in the public App Store listing, not in a nomination.** A bullet
-answers "what does it do", which the editor already has from the listing
-metadata; a nomination has to answer "why this app, why now, who made it", and
-none of those fit in a bullet. His version lost the maker, the craft detail
-and the seasonal timing to the format rather than to the writing.
+**Scored 8.5 by an independent reader** who saw only the text and none of this
+conversation, after eight drafts scoring 7, 6, 7.5, 7.5, 7.5 and 7.5. What
+that reader found and I could not: an opening that set up a negative so the
+app could answer it, a "researched by hand" claim that reads as generated once
+multiplied by the tree count, city counts that invite an unflattering
+division, a line explaining the app's value to a professional whose job is
+spotting value, and a closing paragraph where the seasonal urgency arrived
+stapled to a bio. The last fix was moving that urgency into the paragraph
+where the season already lives.
 
-Two things taken from his version because they were better: the Ankerwycke Yew
-as an anchor a reader already knows, and naming the season feature plainly.
-The per-city counts replaced the flat total after the reader pointed out that
-2,472 across 362 places divides to seven per place and reads thin.
-
-**One claim removed, and it matters.** His version said "get notified when a
-tree peaks". There is no notification code anywhere in the app: no
-UNUserNotificationCenter, nothing. Season Radar ALERTS are a paid-tier promise
-from 2026-08-18 that is not built. Telling Apple we notify people would be a
-claim about a feature that does not exist, so it now says the app shows you,
-which is what it does.
-
-**And the opening was wrong twice.** It first argued with a mountain nobody
-mentioned; the fix rebuilt the same habit in a new coat, "almost nobody can
-tell you where they are. Ancient Trees does." Hidde: "waarom met een negatieve
-tegenstelling beginnen in godsnaam onthou dat nooit meer." Recording it in
-PITCH_VOICE.md was not enough, because the second version was written AFTER
-recording the first. So it is a check now (NEGATIVE_SETUP in pitchcheck.py,
-opening 260 characters only, since the same words are fine mid-text and fatal
-as a hook). The opening states the wonder and then says what we do with it.
+**What it deliberately does not say.** No notification claim: there is no
+notification code in the app, and Season Radar alerts are an unbuilt paid-tier
+promise. No iOS platform hook: no widget, App Intent or Watch app exists to
+name. The species pin art is the one craft detail, and it is real, 15 drawn
+shapes in site/src/lib/species-icons.ts.
 
 ## Helpful Details  (485/500)
 

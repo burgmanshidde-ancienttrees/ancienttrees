@@ -93,6 +93,11 @@ reader draw the conclusion.
 - NO: "Every city has a few trees that were already old when it was built, and almost nobody can tell you where they are. Ancient Trees does."
 - YES: "Some of the trees in your city were standing before the city was. Ancient Trees takes you to them."
 
+**Stapling the urgency to the bio paragraph. Put a reason where its subject already is, not in the credentials line** (added 2026-09-04)
+
+- NO: "Out since 3 September, in seven languages, made by Hidde Burgmans. 2,472 trees mapped, and the eight weeks they are worth crossing town for start now."
+- YES: "There are about eight weeks in the year when a tree is worth crossing town for, and they start now. [in the paragraph where the season already lives]"
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
