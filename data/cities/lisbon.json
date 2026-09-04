@@ -1141,6 +1141,79 @@
         "status": "missing"
       },
       "girth_cm": 390
+    },
+    {
+      "id": "lis_034",
+      "name": "The First Jacarandas of Lisbon",
+      "species": "Blue Jacaranda (Jacaranda mimosifolia)",
+      "age_estimate": "about 200 years",
+      "age_min": 195,
+      "age_max": 215,
+      "location": {
+        "address": "Jardim Botânico da Ajuda, Calçada da Ajuda, 1300-011 Lisboa",
+        "latitude": 38.706111,
+        "longitude": -9.200833,
+        "neighbourhood": "Ajuda"
+      },
+      "story": "Every jacaranda in Lisbon can be traced back to this garden. The trees that turn the city lilac each May, more than three hundred of them on Avenida 5 de Outubro alone, descend from the first specimens acclimatised here in the early 1800s under Félix de Avelar Brotero, who directed the Ajuda garden from 1811. Brotero did not keep the tree to himself. He handed seed to anyone in Lisbon willing to plant it, which is how a South American species became the signature tree of a Portuguese capital. Two of those first jacarandas are still standing here, among younger ones planted since, and they kept one habit that gives them away: while the rest of the city flowers through May and into June, these two are the last in Lisbon to open. Why is not settled. The suggestion is that being the first to acclimatise left them on a slightly different clock from their own descendants. The garden around them was laid out in 1768 for King José I and is the oldest in Portugal, small enough to cross in half an hour, which makes this an easy visit to time properly. Come at the end of June, when the avenues have dropped their petals and these two are still in flower.",
+      "how_to_recognise": "The garden keeps an alley of jacarandas along the upper terrace, and the two originals stand among younger trees. We have not established which two, so the pin marks the garden. Tell us if you know them.",
+      "verified_sources": [
+        "https://getlisbon.com/discovering/jacarandas-of-lisbon/",
+        "https://amensagem.pt/2026/05/20/jacarandas-arvores-lisboa-origem/",
+        "https://amensagem.pt/2025/03/25/jacarandas-arvores-lisboa-origem/"
+      ],
+      "access": "Paid entry to Jardim Botânico da Ajuda (about 1 euro; free Sunday mornings 10:00-13:00)",
+      "transport": "12 min walk from Belém station (Linha de Cascais); tram 18E stops nearby",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "late June, when they flower last of all Lisbon's jacarandas",
+        "kind": "flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Two trees described as one entry: the sources say two of the original acclimatised specimens survive in the garden, without saying where. Position within the garden is unresolved, hence the approximate pin and the question on the page. Age derived from Brotero's directorship (from 1811) rather than from a recorded planting date.",
+      "location_precision": "approximate",
+      "paid_entry": true
+    },
+    {
+      "id": "lis_035",
+      "name": "The Paineira of Rua dos Jerónimos",
+      "species": "Paineira (Ceiba crispiflora)",
+      "age_estimate": "about 95 years",
+      "age_min": 85,
+      "age_max": 105,
+      "location": {
+        "address": "Rua dos Jerónimos, Belém, 1400-211 Lisboa",
+        "latitude": 38.6982,
+        "longitude": -9.2052,
+        "neighbourhood": "Belém"
+      },
+      "story": "One of Lisbon's most walked tourist streets has a South American giant standing on it and almost nobody looks up. The paineira on Rua dos Jerónimos stands two minutes from the monastery that fills every postcard of the city, and it holds its own: 4.2 metres round the trunk, 24 metres tall, with a crown spreading 22 metres when the state last measured it in 2015. Portugal classified it as a tree of public interest in December 2001, the protection reserved for individual specimens worth keeping. Ceiba crispiflora comes from the forests of southern Brazil and does not hide where it is from. The trunk swells into a bottle shape and carries blunt conical thorns, and it flowers pink before splitting open pods packed with a silky white floss, the stuff that once filled pillows and life jackets. By the register's own reckoning it went in around 1930, which makes it younger than most trees on this map and no less worth the detour. It is the sort of tree you walk past twice: once without seeing it, and once when somebody points at the thorns.",
+      "verified_sources": [
+        "https://si.icnf.pt/",
+        "data/registers/portugal-icnf.json (processo KNJ1/404, 'paineira ou árvore-da-sumaíma', Ceiba crispiflora H.B.et K., árvore isolada, Rua dos Jerónimos, Belém, classified D.R. n.º 298 II Série de 27/12/2001, girth 4.2 m, height 24 m, crown 22 m, measured 2015)",
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/"
+      ],
+      "access": "Free, on a public street",
+      "transport": "5 min walk from Belém station (Linha de Cascais); tram 15E stops at Mosteiro dos Jerónimos",
+      "girth_cm": 420,
+      "height_m": 24,
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "paid_entry": false
     }
   ],
   "hero_tree_id": "lis_017"

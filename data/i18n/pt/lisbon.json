@@ -1,296 +1,312 @@
 {
- "_note": "Portuguese overlay for Lisbon, hand-written 2026-08-22. European Portuguese, for readers in Lisbon. Rendered from data/cities/lisbon.json, which stays the source of truth: every fact, age, hedge and access note here already exists there in verified English, and nothing was researched or sharpened in translation. The search terms are not translations: Portugal's legal category is 'arvores de interesse publico' (ICNF) and people also search 'arvores monumentais Lisboa', so the title, meta and question fields carry those rather than a literal rendering of 'ancient trees'. Text only: every coordinate, photo, licence and walk stays in data/cities/lisbon.json.",
- "city": "Lisboa",
- "title": "Árvores monumentais de Lisboa: as 33 mais notáveis",
- "meta_description": "As árvores mais notáveis de Lisboa: as oliveiras de 457 anos de Santo Amaro, um dragoeiro que ninguém consegue datar e mais 32 de interesse público.",
- "intro": "Lisboa tem mais árvores classificadas de interesse público do que qualquer outro município português, ao abrigo de uma lei de 2012. As mais antigas são quatro oliveiras ocas junto a uma capela no alto de Alcântara, mais velhas do que a dinastia de Bragança. A mais estranha é uma figueira-da-borracha que fugiu de um vaso rachado na Mouraria e tomou conta de uma rua. Pelo meio ficam um dragoeiro que sangra vermelho, um cipreste que toda a gente trata por cedro e a tipuana do parlamento. Todas menos uma são de acesso livre.",
- "question_title": "Qual é a árvore mais antiga de Lisboa? (457 anos)",
- "question_meta": "A árvore mais antiga de Lisboa é uma das quatro oliveiras da Capela de Santo Amaro, em Alcântara, com cerca de 457 anos. Onde ficam e como lá chegar.",
- "question_answer": "A árvore mais antiga de Lisboa é uma das quatro oliveiras que crescem à porta da Capela de Santo Amaro, em Alcântara, com cerca de 457 anos, as únicas árvores da cidade cuja idade documentada é anterior ao século XVIII. Estão num pequeno jardim no alto do morro, com uma vista de rio bem conhecida, a onze minutos a pé da estação de Alcântara-Terra.",
- "question_context": "Lisboa guarda as suas árvores mais antigas perto da água. As quatro oliveiras da Capela de Santo Amaro crescem encostadas ao muro de uma pequena capela circular, no alto de Alcântara, desde algum momento do século XVI, o que lhes dá cerca de 457 anos pelos registos de classificação da própria cidade, décadas a mais do que tudo o resto nesta lista. A capela, construída em 1549, é monumento nacional, mas as árvores sobreviveram a várias campanhas de restauro do edifício ao lado. A segunda mais velha é o dragoeiro do Jardim Botânico da Ajuda, que já era um adulto feito quando foi transplantado para o primeiro jardim botânico da cidade, em 1768, o que lhe dá pelo menos 258 anos. Entre as duas ficam duas maneiras muito diferentes de durar: oliveiras discretas à porta de uma capela em funcionamento, e um dragoeiro dramático, meio desfeito, atrás de bilhete pago e de uma escora de aço. Chegar às oliveiras é simples: estação de Alcântara-Terra, na Linha de Cascais, e depois onze minutos a subir, passando pelo Miradouro de Santo Amaro, uma das melhores vistas de rio da cidade e habitualmente muito mais calma do que as famosas da baixa.",
- "faq": [
-  {
-   "q": "Qual é a árvore mais antiga de Lisboa?",
-   "a": "Uma das quatro oliveiras à porta da Capela de Santo Amaro, em Alcântara, com cerca de 457 anos, décadas a mais do que qualquer outra árvore desta lista."
-  },
-  {
-   "q": "As árvores monumentais de Lisboa são de acesso livre?",
-   "a": "Vinte das trinta e três são gratuitas, em jardins públicos, largos e esquinas de rua. A excepção é o dragoeiro do Jardim Botânico da Ajuda, que exige bilhete do jardim botânico, cerca de 1 euro, gratuito ao domingo de manhã."
-  },
-  {
-   "q": "Porque é que Lisboa tem tantas árvores de interesse público?",
-   "a": "Desde uma lei de 2012, o Estado português pode proteger formalmente árvores individuais pela idade, raridade ou história. Lisboa tem mais árvores classificadas do que qualquer outro município do país, concentradas sobretudo nas freguesias centrais mais antigas."
-  },
-  {
-   "q": "O que é um dragoeiro?",
-   "a": "Dracaena draco é uma espécie da Macaronésia, de crescimento lento e vida longa, cuja seiva vermelha, o sangue-de-drago, era comercializada por toda a Europa medieval como tinta e verniz. O exemplar de Lisboa, no Jardim Botânico da Ajuda, é o mais antigo da espécie em Portugal continental."
+  "_note": "Portuguese overlay for Lisbon, hand-written 2026-08-22. European Portuguese, for readers in Lisbon. Rendered from data/cities/lisbon.json, which stays the source of truth: every fact, age, hedge and access note here already exists there in verified English, and nothing was researched or sharpened in translation. The search terms are not translations: Portugal's legal category is 'arvores de interesse publico' (ICNF) and people also search 'arvores monumentais Lisboa', so the title, meta and question fields carry those rather than a literal rendering of 'ancient trees'. Text only: every coordinate, photo, licence and walk stays in data/cities/lisbon.json.",
+  "city": "Lisboa",
+  "title": "Árvores monumentais de Lisboa: as 35 mais notáveis",
+  "meta_description": "As árvores mais notáveis de Lisboa: as oliveiras de 457 anos de Santo Amaro, um dragoeiro que ninguém consegue datar e mais 32 de interesse público.",
+  "intro": "Lisboa tem mais árvores classificadas de interesse público do que qualquer outro município português, ao abrigo de uma lei de 2012. As mais antigas são quatro oliveiras ocas junto a uma capela no alto de Alcântara, mais velhas do que a dinastia de Bragança. A mais estranha é uma figueira-da-borracha que fugiu de um vaso rachado na Mouraria e tomou conta de uma rua. Pelo meio ficam um dragoeiro que sangra vermelho, um cipreste que toda a gente trata por cedro e a tipuana do parlamento. Todas menos uma são de acesso livre.",
+  "question_title": "Qual é a árvore mais antiga de Lisboa? (457 anos)",
+  "question_meta": "A árvore mais antiga de Lisboa é uma das quatro oliveiras da Capela de Santo Amaro, em Alcântara, com cerca de 457 anos. Onde ficam e como lá chegar.",
+  "question_answer": "A árvore mais antiga de Lisboa é uma das quatro oliveiras que crescem à porta da Capela de Santo Amaro, em Alcântara, com cerca de 457 anos, as únicas árvores da cidade cuja idade documentada é anterior ao século XVIII. Estão num pequeno jardim no alto do morro, com uma vista de rio bem conhecida, a onze minutos a pé da estação de Alcântara-Terra.",
+  "question_context": "Lisboa guarda as suas árvores mais antigas perto da água. As quatro oliveiras da Capela de Santo Amaro crescem encostadas ao muro de uma pequena capela circular, no alto de Alcântara, desde algum momento do século XVI, o que lhes dá cerca de 457 anos pelos registos de classificação da própria cidade, décadas a mais do que tudo o resto nesta lista. A capela, construída em 1549, é monumento nacional, mas as árvores sobreviveram a várias campanhas de restauro do edifício ao lado. A segunda mais velha é o dragoeiro do Jardim Botânico da Ajuda, que já era um adulto feito quando foi transplantado para o primeiro jardim botânico da cidade, em 1768, o que lhe dá pelo menos 258 anos. Entre as duas ficam duas maneiras muito diferentes de durar: oliveiras discretas à porta de uma capela em funcionamento, e um dragoeiro dramático, meio desfeito, atrás de bilhete pago e de uma escora de aço. Chegar às oliveiras é simples: estação de Alcântara-Terra, na Linha de Cascais, e depois onze minutos a subir, passando pelo Miradouro de Santo Amaro, uma das melhores vistas de rio da cidade e habitualmente muito mais calma do que as famosas da baixa.",
+  "faq": [
+    {
+      "q": "Qual é a árvore mais antiga de Lisboa?",
+      "a": "Uma das quatro oliveiras à porta da Capela de Santo Amaro, em Alcântara, com cerca de 457 anos, décadas a mais do que qualquer outra árvore desta lista."
+    },
+    {
+      "q": "As árvores monumentais de Lisboa são de acesso livre?",
+      "a": "Vinte das trinta e três são gratuitas, em jardins públicos, largos e esquinas de rua. A excepção é o dragoeiro do Jardim Botânico da Ajuda, que exige bilhete do jardim botânico, cerca de 1 euro, gratuito ao domingo de manhã."
+    },
+    {
+      "q": "Porque é que Lisboa tem tantas árvores de interesse público?",
+      "a": "Desde uma lei de 2012, o Estado português pode proteger formalmente árvores individuais pela idade, raridade ou história. Lisboa tem mais árvores classificadas do que qualquer outro município do país, concentradas sobretudo nas freguesias centrais mais antigas."
+    },
+    {
+      "q": "O que é um dragoeiro?",
+      "a": "Dracaena draco é uma espécie da Macaronésia, de crescimento lento e vida longa, cuja seiva vermelha, o sangue-de-drago, era comercializada por toda a Europa medieval como tinta e verniz. O exemplar de Lisboa, no Jardim Botânico da Ajuda, é o mais antigo da espécie em Portugal continental."
+    }
+  ],
+  "strings_note": "Per-tree fields: name, species (Portuguese common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Hedges carried over exactly where the English source hedges.",
+  "trees": {
+    "lis_001": {
+      "name": "As Oliveiras de Santo Amaro",
+      "species": "Oliveira (Olea europaea)",
+      "age_estimate": "457 anos",
+      "access": "Livre, acesso permanente, jardim público em redor da capela",
+      "transport": "11 min a pé da estação de Alcântara-Terra (Linha de Cascais), ou eléctrico 15E até ao Calvário e depois 9 min a pé",
+      "story": "Quatro oliveiras à porta de uma pequena capela redonda de Alcântara sobreviveram a todos os reis portugueses desde antes de existir a dinastia de Bragança. Pelos registos de classificação da própria cidade têm cerca de 457 anos, as árvores datadas mais antigas de Lisboa, plantadas bastante antes de a Capela de Santo Amaro ao lado ter tomado a sua forma circular actual, em 1549. A capela foi reconstruída e restaurada mais do que uma vez desde então; as oliveiras cá fora limitaram-se a continuar a crescer. Nenhuma das quatro é alta, seis metros quando muito, mas os troncos ocaram e torceram-se com a idade até ficarem mais parecidos com madeira trazida pelo mar do que com oliveira de pomar. Os serviços florestais da cidade classificaram-nas por interesse cultural, pedagógico e paisagístico, linguagem burocrática para aquilo que é, no fundo, velhice bem levada. As oliveiras costumam marcar terreno agrícola, não capelas com vista de rio, e estas quatro ignoraram discretamente o facto de lhes ter crescido à volta um porto de trabalho e, mais tarde, a Ponte 25 de Abril. O alto que partilham é um dos melhores miradouros gratuitos sobre o Tejo, e numa tarde normal é a vista que leva quase toda a atenção, enquanto quatro dos seres vivos mais antigos da cidade estão a poucos passos dali, escorados, retorcidos e praticamente ignorados."
+    },
+    "lis_002": {
+      "name": "O Dragoeiro da Ajuda",
+      "species": "Dragoeiro (Dracaena draco)",
+      "age_estimate": "250 a 400 anos",
+      "access": "Entrada paga no Jardim Botânico da Ajuda (cerca de 1 euro; gratuito ao domingo de manhã, das 10:00 às 13:00)",
+      "transport": "12 min a pé da estação de Belém (Linha de Cascais); o eléctrico 18E pára ali perto",
+      "story": "Corte a casca desta árvore e ela sangra vermelho. A resina de Dracaena draco oxida num carmesim escuro em tempos muito procurado por toda a Europa como sangue-de-drago, usado em vernizes, tintas e medicina popular medievais. Este exemplar já era um adulto feito quando o botânico italiano Domingos Vandelli o transplantou para o primeiro jardim botânico de Lisboa, em 1768, o que lhe dá pelo menos 258 anos e possivelmente perto de 400, porque os dragoeiros não formam anéis anuais e ninguém registou o seu nascimento. A copa chegou a estender-se por quase 23 metros, das maiores da espécie no país, até uma infecção por fungos se instalar por volta de 2006 e lhe custar cerca de metade do tamanho. Uma estrutura de aço segura hoje o que resta. O jardim, construído nos terrenos do Palácio Real da Ajuda para D. José I, trata a árvore como emblema, e os rebentos dela foram propagados num pequeno viveiro de dragoeiros mais novos ali ao lado. Os dragoeiros crescem devagar e podem viver séculos depois de instalados, por isso este, sem metade da copa e ainda de pé, pode muito bem ser novo para o que a espécie dá."
+    },
+    "lis_003": {
+      "name": "O Cipreste do Príncipe Real",
+      "species": "Cipreste-do-buçaco (Cupressus lusitanica)",
+      "age_estimate": "mais de 150 anos",
+      "access": "Livre, jardim público",
+      "transport": "Curta caminhada da estação do Rato (Metro, Linha Amarela)",
+      "story": "A primeira árvore protegida por lei em Portugal não é um cedro. Toda a gente lhe chama cedro-do-Buçaco, mas a árvore que preside ao jardim do Príncipe Real é um Cupressus lusitanica, um cipreste das montanhas do México e da Guatemala com um nome português que nunca mereceu. Em 1940 tornou-se a primeira árvore do país classificada como de interesse público, décadas antes de existir um registo nacional formal para estas coisas. A copa, outrora uma cúpula enorme em forma de coreto com uns 30 metros de diâmetro, foi rareando com a idade e com os temporais até cerca de sete metros de altura visível, embora o tronco continue a medir quatro metros de perímetro na base. Os registos patrimoniais portugueses dão-lhe cerca de 150 anos, mais do que o jardim oitocentista à volta. Um registo internacional de árvores diz antes que data de cerca de 1740, quase o dobro da idade, uma diferença que ninguém resolveu. Aos sábados de manhã, no mercado biológico, as pessoas abrigam-se debaixo do que resta da copa sem imaginarem que estão sob uma árvore cujos papéis são mais antigos do que quase todos os edifícios à vista, e cuja idade exacta continua em aberto entre quem é pago para a saber."
+    },
+    "lis_004": {
+      "name": "A Bela-Sombra do Largo do Limoeiro",
+      "species": "Bela-sombra (Phytolacca dioica)",
+      "age_estimate": "mais de 100 anos",
+      "access": "Livre, largo público",
+      "transport": "4 min a pé da paragem de eléctrico das Portas do Sol (12E/28E)",
+      "story": "O largo tem o nome de um limoeiro que desapareceu há muito. Quem o substituiu como marco da zona foi uma bela-sombra, espécie sul-americana de tronco inchado e canelado que pode medir uns dezassete metros de perímetro na base, mais largo do que a maioria das fachadas da rua. Cresce encostada ao muro exterior da antiga cadeia do Limoeiro, edifício que guardou presos políticos durante boa parte do século XX e onde hoje se formam juízes. Fotografias do arquivo municipal mostram-na já adulta e considerável em 1910, o que colocaria a idade real mais perto dos 115 anos do que dos 100 habitualmente citados. A madeira da bela-sombra é famosa por ser mole e resistente ao fogo, sem serventia nenhuma para carpinteiros, o que talvez explique porque esta sobreviveu quando árvores mais úteis ali à volta não sobreviveram. Fica a poucos passos do miradouro das Portas do Sol, uma das melhores vistas sobre os telhados de Alfama e sobre o rio, embora quase toda a gente passe ao lado do tronco inchado a caminho do gradeamento. Fiel à alcunha que lhe deram, bela-sombra, continua a dar cobertura excelente a um troço de passeio que de outro modo não teria nada de especial."
+    },
+    "lis_005": {
+      "name": "A Tipuana do Jardim de São Bento",
+      "species": "Tipuana (Tipuana tipu)",
+      "age_estimate": "90 anos",
+      "access": "Livre, jardim público ao lado da Assembleia da República",
+      "transport": "2 min a pé da estação de São Bento (Linha de Sintra)",
+      "story": "O parlamento português tem uma árvore sul-americana à porta. Esta tipuana, plantada há cerca de noventa anos no pequeno jardim triangular ao lado do Palácio de São Bento, dá flores cor de laranja com uma mancha castanho-avermelhada na base de cada pétala, e é natural da Bolívia e da Argentina, sem ligação nenhuma ao mosteiro beneditino quinhentista que o palácio já foi. O mosteiro passou a sede do parlamento português em 1834, depois da extinção das ordens religiosas, e o jardim ao lado tem visto desde então ministros, manifestantes e uma crise política ou outra a poucas dezenas de metros da copa. A árvore é uma das árvores de interesse público classificadas de Lisboa, estatuto que mal chega a duas dezenas de exemplares em toda a cidade. A sua madeira, a tipa, é apreciada na América do Sul para mobiliário, embora ninguém aqui tenha planos de a abater para fazer uma mesa. O fim do inverno e a primavera trazem a floração, quando o terço de hectare escasso do jardim ganha um laranja surpreendente mesmo em frente ao sítio onde se escrevem as leis do país."
+    },
+    "lis_006": {
+      "name": "As Árvores-de-Coral do Jardim da Luz",
+      "species": "Árvore-de-coral (Erythrina crista-galli)",
+      "age_estimate": "100 anos",
+      "access": "Livre, jardim público",
+      "transport": "1 min a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
+      "story": "Apesar do nome, esta árvore nunca esteve perto da Índia. Os marinheiros portugueses chamaram ao género Erythrina árvore-de-coral das Índias depois de desembarcarem no Brasil convencidos de que tinham chegado à Ásia, um erro geográfico de cinco séculos que ficou colado ao nome comum. Crescem dois exemplares no lado sul do Jardim da Luz, em Carnide, ambos classificados como árvores de interesse público desde 1996 e ambos com cerca de um século, com doze e quinze metros de altura. Todos os junhos enchem-se de flores de um vermelho vivo com a forma inconfundível de uma crista de galo, o pormenor que está por trás do nome da espécie, crista-galli. O nome oficial do jardim, Jardim Teixeira Rebelo, homenageia o primeiro director do Colégio Militar ali ao lado, embora quase toda a gente lhe continue a chamar Jardim da Luz, por causa da igreja barroca do outro lado do largo. Há uma estação de metro tão encostada ao portão que os passageiros da Linha Azul saem quase por baixo da copa das duas árvores sem darem por isso. Para duas transplantadas sul-americanas baptizadas com o continente errado, instalaram-se na Lisboa suburbana sem queixas, a florir todos os verões independentemente do nome que lhes derem."
+    },
+    "lis_007": {
+      "name": "O Lódão-Bastardo da Avenida de Berlim",
+      "species": "Lódão-bastardo (Celtis australis)",
+      "age_estimate": "86 anos",
+      "access": "Livre, rua e placa de trânsito públicas",
+      "transport": "Cerca de 15 min a pé da estação Bela Vista (Metro, Linha Vermelha), ou autocarro até à Avenida de Berlim",
+      "story": "Uma árvore lembra-se das quintas que aqui havia. Antes de a expansão de Lisboa para leste, nos anos 40 e 50, cobrir de prédios as quintas dos Olivais, este pedaço de terreno era campo, e um único lódão-bastardo daquele tempo sobreviveu às obras, ainda de pé no que é hoje o cruzamento da Avenida de Berlim com a Avenida Francisco Luís Gomes. O registo nacional de árvores de interesse público mediu-o em 2015 e deu-lhe 75 anos e 15,7 metros de altura, menos do que o século redondo que já lhe atribuíram, mas ainda assim mais velho do que os prédios à volta, com uma copa larga e simétrica que parece plantada de propósito e quase de certeza não foi. A espécie dá um fruto pequeno e doce que lhe valeu uma alcunha popular ligada aos pássaros que o vêm comer, e a madeira foi durante muito tempo apreciada para cabos de ferramenta e de chicote, pela flexibilidade. Classificado de interesse público no processo KNJ1/405, está hoje ao lado de uma escultura de bronze chamada Homem Sucata, soldada a partir de peças de automóvel em 1993, um par estranho entre o passado rural da zona e o seu presente industrial na mesma placa de trânsito. Quem passa por estas avenidas tem um vizinho mais velho do que as torres de habitação fazem supor."
+    },
+    "lis_008": {
+      "name": "O Ginkgo da Praça Paiva Couceiro",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "mais de 100 anos",
+      "access": "Livre, praça pública",
+      "transport": "Cerca de 10 min a pé da estação Arroios (Metro, Linha Verde)",
+      "story": "O Ginkgo biloba é muitas vezes chamado fóssil vivo, uma espécie praticamente inalterada há mais de 200 milhões de anos e uma das pouquíssimas plantas que se sabe terem rebentado de novo perto do marco zero de Hiroxima, uma resistência que a espécie carrega na reputação e não na biografia desta árvore em concreto. O exemplar de Lisboa, na Praça Paiva Couceiro, no bairro operário da Penha de França, é um membro comparativamente novo de uma linhagem antiga: tem mais de um século e está classificado como árvore de interesse público, embora ninguém tenha conseguido fixar a data exacta de plantação. As folhas em leque ficam de um amarelo vivo e uniforme todos os novembros, antes de caírem quase todas ao mesmo tempo, um espectáculo sem paralelo nesta lista e que atrai uma pequena multidão anual de fotógrafos a uma praça sem nada de especial. Os ginkgos são dióicos, macho ou fêmea, e só as árvores fêmeas dão o fruto de cheiro notoriamente desagradável; se esta poupou o bairro a esse perigo de outono, ou se o sexo nunca chegou a ser registado, ninguém parece saber. Seja como for, é a única ligação viva da Penha de França a um género mais antigo do que a maioria das cadeias de montanhas do mundo."
+    },
+    "lis_009": {
+      "name": "A Paineira do Jardim Alfredo Keil",
+      "species": "Paineira (Ceiba speciosa)",
+      "age_estimate": "mais de 100 anos (conjunto classificado em 2017)",
+      "access": "Livre, jardim público",
+      "transport": "6 min a pé da estação Restauradores (Metro, Linha Azul)",
+      "story": "Todos os outubros esta árvore torna um pequeno jardim cor-de-rosa. A paineira do Jardim Alfredo Keil é um de seis exemplares classificados individualmente dentro de um conjunto de nove árvores que a cidade declarou colectivamente de interesse público em 2017, uma espécie sul-americana cujo tronco verde e espinhoso e cujas flores cor de algodão-doce se tornaram uma marca não oficial do outono lisboeta nos últimos anos. O jardim, desenhado em 1882 no antigo terreno da Feira da Ladra, antes de esta se mudar para Alfama, mal chega para conter a copa da árvore, e um busto do compositor Alfredo Keil, autor da melodia que veio a ser o hino nacional, vigia de um dos cantos. Nenhuma fonte isola a idade exacta desta paineira, porque a classificação de 2017 cobre todo o conjunto de árvores em vez de datar cada exemplar. O fruto que se segue às flores abre-se e liberta sementes envoltas numa paina branca e sedosa, em tempos usada para encher almofadas e coletes salva-vidas, uma nota prática e macia sobre uma árvore que passa todos os outonos a dar o espectáculo mais barulhento do bairro."
+    },
+    "lis_010": {
+      "name": "A Figueira-da-Borracha Gigante da Mouraria",
+      "species": "Figueira-da-borracha (Ficus elastica)",
+      "age_estimate": "20 a 40 anos, idade exacta desconhecida",
+      "access": "Livre, rua pública",
+      "transport": "Curta caminhada da estação Martim Moniz (Metro, Linha Verde)",
+      "story": "Ninguém sabe como esta árvore aqui foi parar, e é aí que está quase toda a graça. Uma figueira-da-borracha ergue-se hoje uns seis metros sobre uma rua estreita da Mouraria, com as raízes que fugiram de um vaso rachado há anos e entraram directamente no chão, e com o tronco e os ramos a preencherem o vão entre duas fachadas da Rua de São Cristóvão como se tivesse sido plantada ali de propósito. Não foi. Os investigadores de plantas que a examinaram, entre eles o botânico André Mota, confirmam a espécie e descrevem o crescimento improvisado, mas não a origem. Ao contrário das árvores de interesse público classificadas que estão no resto desta lista, esta não tem idade oficial, nem estatuto de protecção, nem placa municipal, apenas várias centenas de avaliações entusiásticas na internet e um café que abriu ao lado em 2022, em parte por causa do movimento que a árvore agora traz. É a entrada mais nova e menos oficial daqui, quase de certeza com menos de 40 anos, incluída não pela idade mas pelo facto de uma planta de vaso se ter soltado e ter passado discretamente a ser uma das árvores mais fotografadas do bairro."
+    },
+    "lis_011": {
+      "name": "A Figueira do Jardim da Estrela",
+      "species": "Figueira-da-Austrália (Ficus macrophylla)",
+      "age_estimate": "cerca de 150 anos",
+      "access": "Livre, aberto todos os dias das 07:00 à meia-noite",
+      "transport": "Eléctrico 25E ou 28E até à Estrela (Basílica), depois cerca de 2 min a pé",
+      "story": "Lisboa aparafusou uma chapa metálica a este tronco e, onde devia estar a idade, lê-se uma palavra: desconhecida. É uma honestidade pouco habitual num município, e é também o mais interessante que há para dizer sobre a árvore. O jardim à volta abriu em abril de 1852, ao fim de dez anos de obras aos solavancos, por isso a figueira não pode ter muito mais de século e três quartos, o que, para uma coisa deste volume, é a surpresa. As figueiras-da-Austrália crescem a uma velocidade que faz as outras árvores parecerem preguiçosas. A chapa chegou em 2020, quando Lisboa deu bilhete de identidade a 27.610 das suas árvores e pendurou códigos QR em cerca de 750 delas. Olhe para cima e percebe-se porque é que esta espécie inquieta as pessoas: as raízes aéreas caem dos ramos como cordas e, onde chegam ao solo, engrossam até formarem troncos novos, de maneira que a árvore se vai tornando devagar numa colónia de si própria. Também não está sozinha. Há pelo menos cinco figueiras adultas nestes cinco hectares, e a que está à beira do lago, com as raízes a transbordar do lancil na direcção dos patos, é a que toda a gente fotografa."
+    },
+    "lis_012": {
+      "name": "O Dragoeiro do Jardim da Estrela",
+      "species": "Dragoeiro (Dracaena draco)",
+      "age_estimate": "desconhecida, plantado depois de o jardim abrir em 1852",
+      "access": "Livre, aberto todos os dias das 07:00 à meia-noite",
+      "transport": "Eléctrico 25E ou 28E até à Estrela (Basílica), depois cerca de 2 min a pé",
+      "story": "Ninguém lhe sabe dizer a idade desta árvore, e isso é uma propriedade da espécie e não uma falha de papelada. Um dragoeiro não é uma árvore no sentido corrente: não deposita anéis anuais, por isso o único método que data com fiabilidade um carvalho ou uma faia simplesmente não se aplica. Os botânicos contam antes gerações de ramos, porque a copa só se bifurca depois de cada floração, e isso acontece em intervalos de uma década ou mais. O que daí resulta é esta forma, um tronco a abrir-se num guarda-chuva apertado de lâminas rígidas verde-azuladas, com um ar menos de coisa crescida do que de coisa construída. Corte a casca e a seiva corre vermelha, que é de onde vem o nome e a razão por que a resina era comercializada pela Europa medieval como sangue-de-drago, para vernizes, medicamentos e tintas. A espécie é das Canárias e da Madeira, onde hoje é rara em estado selvagem. Este exemplar está entre as palmeiras e os bancos, perto do centro do jardim, desde algum momento posterior a 1852, a sobreviver discretamente a todos os jardineiros que trabalharam à sua volta, e Lisboa tem um segundo no nosso mapa, no jardim botânico da Ajuda."
+    },
+    "lis_013": {
+      "name": "A Figueira Estranguladora do Príncipe Real",
+      "species": "Figueira-da-Austrália (Ficus macrophylla)",
+      "age_estimate": "cerca de 155 anos",
+      "access": "Livre, praça pública, aberta a qualquer hora",
+      "transport": "Metro do Rato (Linha Amarela), cerca de 6 min a subir a pé, ou eléctrico 24E até à Praça do Príncipe Real",
+      "story": "Toda a gente nesta praça olha para o cipreste. Está debaixo de uma armação metálica que parece uma mesa verde, foi a primeira árvore de Lisboa a receber protecção legal, em 1940, e leva com todas as fotografias. Três figueiras australianas estão à volta dele e quase ninguém repara nelas, o que é estranho, porque são a razão de a praça parecer ter tecto. Esta tem o tronco mais grosso das três, pouco mais de seis metros de perímetro, e segura a copa a vinte e um metros de altura. A Ficus macrophylla não começa a vida como árvore na Austrália. Germina na forquilha de outra, deixa cair raízes ao longo do tronco do hospedeiro e engrossa-as até o hospedeiro ficar envolvido e morrer, que é a razão de a espécie ser chamada estranguladora. Aqui não tinha nada para estrangular, por isso as raízes aéreas limitam-se a pender, a chegar ao saibro e a endurecer em escoras. Debaixo disto tudo há água. O reservatório da Patriarcal ficou pronto em 1864, uma câmara octogonal assente em trinta e um pilares com 880 metros cúbicos para a cidade, e o jardim é a tampa. Aos sábados de manhã monta-se um mercado de produtores por entre os troncos."
+    },
+    "lis_014": {
+      "name": "O Teixo do Campo de Santana",
+      "species": "Teixo (Taxus baccata)",
+      "age_estimate": "cerca de 130 anos",
+      "access": "Livre, jardim municipal, aberto todos os dias",
+      "transport": "Metro Intendente (Linha Verde), cerca de 8 min a pé, ou Metro Avenida (Linha Azul), cerca de 10 min",
+      "story": "Um teixo europeu não tem nada que crescer aqui. A espécie é dos adros húmidos do norte e da sombra das montanhas, e Lisboa não oferece nem uma coisa nem outra, e no entanto este chegou a perto de quatro metros de perímetro e catorze metros de altura, num alto sobre a Avenida. Portugal classificou-o em maio de 1968, o que faz dele uma das primeiras árvores protegidas da cidade, e o registo nacional dá-lhe hoje pouco mais de 130 anos. O chão debaixo dele tem uma história mais dura do que os relvados sugerem. Este campo teve um matadouro e depois uma praça de touros, e em 1817 foram aqui enforcados os homens condenados com Gomes Freire de Andrade, que é como o Campo de Santana passou a Campo dos Mártires da Pátria. O jardim veio depois, desenhado à volta de um lago com aves exóticas a passear pelos caminhos, e a faculdade de medicina e o Hospital de São José continuam a apertar-lhe as margens. No topo do mesmo campo está a estátua de Sousa Martins, médico morto em 1897, com o pedestal soterrado em placas de mármore deixadas por quem acredita que ele ainda responde. Num teixo tudo é venenoso menos a polpa vermelha à volta da semente."
+    },
+    "lis_015": {
+      "name": "A Figueira-Benjamim do Campo de Santana",
+      "species": "Figueira-benjamim (Ficus benjamina)",
+      "age_estimate": "cerca de 130 anos",
+      "access": "Livre, jardim municipal, aberto todos os dias",
+      "transport": "Metro Intendente (Linha Verde), cerca de 8 min a pé, ou Metro Avenida (Linha Azul), cerca de 10 min",
+      "story": "A Ficus benjamina é a árvore que quase toda a gente conhece como planta de vaso, a coisa lustrosa amuada a um canto do escritório e a largar folhas sempre que alguém a muda de sítio. A cinquenta passos do teixo, na mesma encosta, uma delas tem cinco metros de perímetro e uma copa a vinte metros de altura. Portugal classificou-a exactamente no mesmo dia que o teixo, 21 de maio de 1968, e o registo nacional ainda a arquiva sob um segundo nome que diz o que a espécie faz quando nada a trava: matapalo. Tal como as parentes da baía de Moreton, pode começar no alto de outra árvore e trabalhar de cima para baixo, e mesmo plantada honestamente em terra mantém o hábito de deixar descer raízes finas dos ramos. Uma correcção útil antes de ir. O registo mapeia aqui um único exemplar. As fontes portuguesas que descrevem o jardim contam dois, classificados em conjunto ao abrigo do mesmo diploma de 1968. Essa diferença entre uma lista nacional e aquilo que a cidade tem de facto é perfeitamente normal, por isso conte com um par e fique junto do maior. O jardim à volta chega às vinte e oito espécies de árvores, com um cedro-do-himalaia e uma amoreira-do-papel pelo meio, por isso a figueira não é a única importada que passou do rótulo."
+    },
+    "lis_016": {
+      "name": "O Taxódio do Jardim da Parada",
+      "species": "Taxódio-mexicano (Taxodium mucronatum)",
+      "age_estimate": "desconhecida, não registada no registo nacional",
+      "access": "Livre, jardim público. Um estaleiro do metro ocupa parte do quarteirão pelo menos até ao fim de 2026 e os caminhos desviam-se à volta dele; as árvores classificadas ficam dentro de um raio protegido, longe das obras",
+      "transport": "Eléctrico 25E ou 28E até Campo de Ourique, depois cerca de 5 min a pé",
+      "story": "Seis metros e meio de perímetro e vinte e seis de altura fazem desta a maior árvore de um jardim que ocupa um quarteirão inteiro, e há quatro anos que está no centro de uma discussão sobre um metro. Lisboa está a construir uma estação por baixo de Campo de Ourique. O estaleiro come uma fatia do jardim, os moradores formaram um movimento para o travar e, em 2024, ataram fitas de cor aos ramos: preta para árvore a abater, vermelha para risco elevado de morrer, amarela para em risco. A resposta pública da empresa do metro foi um raio de vinte metros à volta das três árvores classificadas do jardim, sem obras lá dentro e com verificações continuadas do estado delas, e o abate de seis lódãos não classificados, quatro dos quais replantados nos mesmos buracos. A árvore traz ainda uma pequena disputa taxonómica. O registo nacional dá-a como Taxodium mucronatum, o cipreste-mexicano das margens de rio do México, a espécie que produziu o tronco mais largo alguma vez medido numa árvore. A junta de freguesia e a enciclopédia portuguesa chamam-lhe antes cipreste-calvo. Ninguém publicou uma resolução. O jardim foi o campo de parada do quartel de Campo de Ourique, que é a razão de ninguém lhe chamar pelo nome do presidente."
+    },
+    "lis_017": {
+      "name": "O Metrosídero do Jardim da Parada",
+      "species": "Metrosídero (Metrosideros excelsa)",
+      "age_estimate": "desconhecida, não registada no registo nacional",
+      "access": "Livre, jardim público. Um estaleiro do metro ocupa parte do quarteirão pelo menos até ao fim de 2026 e os caminhos desviam-se à volta dele; as árvores classificadas ficam dentro de um raio protegido, longe das obras",
+      "transport": "Eléctrico 25E ou 28E até Campo de Ourique, depois cerca de 5 min a pé",
+      "story": "São dois, a dez metros um do outro, na berma deste jardim, e o registo protege-os como árvores separadas, o que é justo: um mede 4,55 metros de perímetro e o outro 4,9. Vistos de baixo leem-se como uma coisa só, um emaranhado baixo de ramos cinzentos a correr quase na horizontal por cima do passeio, com cortinas de raiz aérea penduradas, mais uma árvore que caiu e continuou do que uma que se pôs de pé. O Metrosideros excelsa vem da costa da Ilha do Norte da Nova Zelândia, onde agarra falésias vulcânicas exactamente com essas raízes. Em Campo de Ourique agarra um lancil. A floração aqui cai em maio e junho, meio ano longe da floração de dezembro que o tornou árvore de Natal na terra de origem, e não é um acontecimento discreto: a copa enche-se de estames carmesim e de quase nada a que se possa chamar pétala, e o passeio por baixo fica vermelho à medida que caem. Os dois foram classificados em setembro de 2018, tarde para uma coisa deste tamanho, e ambos estão hoje dentro do raio de vinte metros sem obras que a empresa do metro prometeu à volta das árvores classificadas do jardim."
+    },
+    "lis_018": {
+      "name": "A Tipuana do Jardim 9 de Abril",
+      "species": "Tipuana (Tipuana tipu)",
+      "age_estimate": "cerca de 145 anos",
+      "access": "Livre, jardim municipal com acesso público permanente. Não é o jardim do museu ao lado e não é preciso bilhete",
+      "transport": "Os autocarros 727 e 713 param na Rua das Janelas Verdes, junto ao Museu de Arte Antiga, a 1 min a pé; da estação de Santos são cerca de 8 min a subir",
+      "story": "Este jardim tem o nome de uma derrota. A 9 de abril de 1918 o Corpo Expedicionário Português foi desfeito em La Lys, na Flandres, no espaço de uma manhã, e Lisboa pôs a data num pequeno terraço sobre o rio. A tipuana dá sombra a quase todo ele: vinte e dois metros de altura, três metros e um quinto de perímetro, classificada em 2001 juntamente com duas vizinhas e, pelas contas do registo nacional, hoje perto dos 145 anos. A Tipuana tipu é boliviana e argentina, uma leguminosa que se comporta como um plátano nas cidades mediterrânicas e que por isso se planta em todo o lado, ao longo de avenidas inteiras de Lisboa. O que ela faz e os plátanos não fazem é pingar. Nos meses quentes a copa liberta uma chuva fina e pegajosa, melada dos insectos sugadores que vivem nela, e quem estacionou uma vez o carro debaixo de uma não repete. O terreno foi a cerca murada das Albertas, um convento carmelita, antes de a cidade tomar conta dele. Por causa disso sobrevivem no uso diário dois nomes mais antigos para o sítio, Jardim das Albertas e Jardim da Rocha do Conde de Óbidos. Chegue ao parapeito e o Tejo abre-se, gruas de contentores e tudo."
+    },
+    "lis_019": {
+      "name": "A Tamareira do Jardim 9 de Abril",
+      "species": "Tamareira (Phoenix dactylifera)",
+      "age_estimate": "cerca de 145 anos",
+      "access": "Livre, jardim municipal com acesso público permanente. Não é o jardim do museu ao lado e não é preciso bilhete",
+      "transport": "Os autocarros 727 e 713 param na Rua das Janelas Verdes, junto ao Museu de Arte Antiga, a 1 min a pé; da estação de Santos são cerca de 8 min a subir",
+      "story": "A câmara municipal chama a isto a árvore mais alta da cidade e põe-lhe 38 metros, quatro acima do arco triunfal ao fundo da Baixa. O registo nacional mediu-a em 2015 e escreveu 26,7. Os dois números estão publicados, nenhuma fonte os reconcilia, e ao pé dela também não vai resolver a questão, porque uma tamareira não dá ao olho nada com que comparar: sem ramos, sem afunilamento, apenas uma coluna cinzenta de bases de folha velhas e depois um jorro de palmas lá muito em cima. A Phoenix dactylifera é uma cultura de deserto da Mesopotâmia e do norte de África, plantada pelo fruto há pelo menos cinco mil anos e quase nunca deixada chegar a esta altura, porque um pomar mantém as palmeiras baixas o suficiente para se subir e colher. Ninguém andava a colher esta. Foi classificada em 2001, juntamente com a tipuana e a árvore-de-fogo ao lado, e o relógio do registo põe-na perto dos 145 anos. O tronco mal chega a metro e meio de perímetro. Aguentou tudo isso durante século e meio, na beira de um terraço sobre o Tejo que ainda lisonjeia mais a altura."
+    },
+    "lis_020": {
+      "name": "A Tipuana do Jardim Roque Gameiro",
+      "species": "Tipuana (Tipuana tipu)",
+      "age_estimate": "cerca de 115 anos",
+      "access": "Livre, jardim público ao lado da estação do Cais do Sodré",
+      "transport": "Estação do Cais do Sodré (Metro Linha Verde, comboio e cacilheiro), 2 minutos a pé, o jardim é mesmo ao lado",
+      "story": "Esta árvore está no meio de um terminal de autocarros, e essa é a história honesta em vez de coisa para disfarçar. O jardim, conhecido por Jardim do Cais do Sodré, fica exactamente onde convergem as linhas de comboio de Sintra e de Cascais, a Linha Verde do metro e o cacilheiro, uma das primeiras manchas de verde por que passa quem chega a Lisboa de comboio ou de barco. Durante anos os autocarros da Carris comeram quase todo o espaço disponível; uma requalificação ao abrigo do programa Uma Praça em Cada Bairro tem vindo a devolver alguma parte. Ao longo de tudo isso, uma única Tipuana tipu continuou a crescer no centro, classificada como árvore de interesse público desde 2001 e hoje com uns 115 anos, espécie sul-americana que chegou a Lisboa muito antes de alguém lhe construir um interface de transportes à volta. O tronco fica pouco abaixo dos três metros de perímetro. Ali ao lado estão uma escultura de bronze chamada Homem do Leme e um quiosque antigo que já foi bilheteira, ambos mais fáceis de notar do que a árvore que os precede. Venha entre fevereiro e maio e o argumento para parar fica mais fácil: a copa passa a laranja queimado, com as flores em cacho, e por uns tempos ofusca os autocarros que ficam a trabalhar por baixo."
+    },
+    "lis_021": {
+      "name": "A Tipuana da Praça São João Bosco",
+      "species": "Tipuana (Tipuana tipu)",
+      "age_estimate": "cerca de 115 anos",
+      "access": "Livre, jardim público e rotunda, aberto a todas as horas",
+      "transport": "Eléctrico 25E até Campo de Ourique / Prazeres, depois cerca de 5 minutos a pé",
+      "story": "Uma árvore com trinta e quatro metros de copa cresce no meio de uma rotunda, e em 2018 essa copa tinha passado a ser o problema. Em março desse ano vieram cá arboristas da cidade e técnicos do instituto da natureza aliviar a carga: remoção selectiva de ramos, desbaste da copa, cortes pensados para deixar o vento passar em vez de o empurrar, o tipo de cirurgia de que uma árvore deste tamanho precisa para se manter de pé sobre uma estrada. O jardim que a segura, sete mil metros quadrados à volta de uma estátua de Dom Bosco erguida em 1988, forma a rotunda que faz passar o trânsito entre Campo de Ourique e Prazeres, mesmo em frente ao segundo maior cemitério de Lisboa. O registo nacional deu ao tronco da tipuana 100 anos quando o mediu em 2010, o que a coloca hoje já depois do primeiro século, importada das terras baixas subtropicais da Bolívia e da Argentina. Ganhou protecção legal como árvore de interesse público em janeiro de 2019, uma de umas poucas dezenas em Lisboa com esse estatuto. O tronco tem 3,4 metros de perímetro, modesto ao lado do que a árvore estende por cima. O fim da primavera pinta de laranja os relvados da rotunda quando ela floresce. Os carros dão-lhe a volta mil vezes por dia; quase nenhum condutor sabe à volta do que anda."
+    },
+    "lis_022": {
+      "name": "A Azinheira do Parque Bensaúde",
+      "species": "Azinheira (Quercus ilex)",
+      "age_estimate": "cerca de 110 anos",
+      "access": "Livre, parque municipal público",
+      "transport": "Cerca de 15 minutos a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
+      "story": "Quatro árvores do Parque Bensaúde têm ordem de protecção nacional, e aquela de que o bairro mais se orgulha não está entre elas. É o sobreiro, tido como o mais antigo de Lisboa, noutro ponto do mesmo parque. A lista oficial é outra: duas azinheiras, um eucalipto-de-flor-vermelha e um bordo-comum.\n\nEsta é a mais pesada das duas azinheiras. A companheira, a uns 50 metros, é uma árvore que se abraça. Esta não: 3,12 metros de tronco, 21 metros de altura e a copa baixa e densa de folhas pequenas e duras que as azinheiras mantêm durante o inverno.\n\nO terreno foi privado quase todo esse tempo. Começou por ser a Quinta de Santo António das Frechas, propriedade seiscentista na estrada para a Luz, e mais tarde ficou com o nome da família Bensaúde, que a possuiu. Só nas últimas décadas é que alguém pôde passear livremente debaixo desta árvore.\n\nAs quatro foram classificadas em conjunto em 2004. O registo deu a esta azinheira 100 anos quando foi medida em 2017, o que a põe perto dos 110 agora. É uma estimativa de quem fez o levantamento e não uma contagem de anéis, e as azinheiras crescem devagar o suficiente para o número poder falhar uma década para qualquer dos lados."
+    },
+    "lis_023": {
+      "name": "A Segunda Azinheira do Parque Bensaúde",
+      "species": "Azinheira (Quercus ilex)",
+      "age_estimate": "cerca de 110 anos",
+      "access": "Livre, parque municipal público",
+      "transport": "Cerca de 15 minutos a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
+      "story": "Duas azinheiras do Parque Bensaúde foram classificadas no mesmo dia e registadas com a mesma idade. Uma mede 3,12 metros de perímetro. Esta mede 1,72.\n\nEstão a uns 50 metros uma da outra, no mesmo solo, o que é um bom lembrete de que o perímetro e a idade só se relacionam por alto. A luz, a água e aquilo que as raízes encontram lá em baixo decidem quase tudo. Esta é também a mais baixa do par, com 17 metros, e é a que se consegue de facto abraçar, que é a maneira mais rápida de saber que encontrou a árvore certa.\n\nA azinheira é a besta de carga perene do campo ibérico, escura e densa, a segurar as folhas pequenas e coriáceas durante todo o inverno. Não há aqui época sem folha nem cor de outono, por isso a árvore está igual em janeiro e em julho.\n\nO parque à volta foi a Quinta de Santo António das Frechas, propriedade seiscentista mais tarde da família Bensaúde, aberta ao público como parque municipal a partir da Estrada da Luz. As duas azinheiras foram classificadas em 2004, juntamente com um eucalipto-de-flor-vermelha e um bordo-comum invulgarmente grosso a curta distância para poente.\n\nO registo anotou 100 anos na medição de 2017, ou seja uns 110 hoje, por estimativa de quem mediu e não por plantação datada."
+    },
+    "lis_024": {
+      "name": "O Eucalipto de Flor Vermelha do Parque Bensaúde",
+      "species": "Eucalipto-de-flor-vermelha (Corymbia ficifolia)",
+      "age_estimate": "não documentada",
+      "access": "Livre, parque municipal público",
+      "transport": "Cerca de 15 minutos a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
+      "story": "Esta é a mais pequena das quatro árvores protegidas do Parque Bensaúde e a única que está na lista pelo que faz e não pelo que é. Com 7 metros de altura e 1,45 de perímetro, perde em todas as medidas para as vizinhas. Depois chega o pino do verão e a copa inteira fica escarlate.\n\nA Corymbia ficifolia vem de uma faixa estreita de costa no sudoeste da Austrália Ocidental, área natural pequena o suficiente para se atravessar de carro numa tarde, e foi plantada pelas zonas amenas do mundo exactamente por isto: cachos densos de flores vermelhas por cima da folhagem, a durar semanas e a deixar um tapete por baixo.\n\nNão há idade registada para ela em lado nenhum. Foi classificada em 2004 pelas flores e por ser pouco comum na cidade, e não por qualquer pretensão a antiguidade, e ninguém a datou desde então.\n\nFica a uns 40 metros a poente da azinheira maior, perto do bordo, por isso as quatro árvores classificadas do parque fazem um circuito de poucos minutos. O Parque Bensaúde foi a Quinta de Santo António das Frechas antes de a câmara o abrir, e é assim que uma plantação privada de um ornamental australiano acabou numa lista pública. Alguém quis flores vermelhas no seu próprio jardim, e um século depois o jardim passou a ser de toda a gente."
+    },
+    "lis_025": {
+      "name": "O Bordo-Comum do Parque Bensaúde",
+      "species": "Bordo-comum (Acer campestre)",
+      "age_estimate": "não documentada",
+      "access": "Livre, parque municipal público",
+      "transport": "Cerca de 15 minutos a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
+      "story": "Um bordo-comum com 3,5 metros de cintura é uma esquisitice. Este é o modesto dos bordos europeus, árvore de sebe e de orla de bosque que costuma parar perto dos 15 metros e raramente engrossa, e tem um tronco mais largo do que qualquer das azinheiras classificadas que estão a poucas dezenas de metros para nascente.\n\nChega aos 13,5 metros no extremo poente do Parque Bensaúde, a quarta das quatro árvores que o Estado destacou aqui em 2004. Não há idade registada para ele. Os bordos-comuns são difíceis de datar sem lhes cortar o tronco e este nunca foi levantado para efeitos de idade, por isso a resposta honesta é que é velho o suficiente para ter passado muito da dimensão habitual, e mais preciso do que isso não há.\n\nOlhe para as folhas para ter a certeza de que encontrou a árvore certa. O bordo-comum tem folhas pequenas de cinco lobos com pontas rombas e arredondadas, muito diferentes dos bordos de bico afiado dos parques e das ruas, e os ramos mais velhos ganham muitas vezes cristas de cortiça que se sentem com o polegar. No outono fica amarelo limpo, por pouco tempo, antes de o clima ameno de Lisboa lhe tirar a folha.\n\nO parque foi a Quinta de Santo António das Frechas, propriedade seiscentista, o que explica como é que um bordo do norte da Europa aqui foi parar. Alguém o plantou num jardim privado e deixou-o crescer."
+    },
+    "lis_026": {
+      "name": "A Melaleuca do Jardim Constantino",
+      "species": "Melaleuca-espinhosa (Melaleuca styphelioides)",
+      "age_estimate": "cerca de 115 anos",
+      "access": "Livre, jardim público",
+      "transport": "Curta caminhada da estação Arroios ou Anjos (Metro, Linha Verde)",
+      "story": "Lisboa tem uma melaleuca-espinhosa e é esta. O registo português do Jardim Constantino chama-lhe única na cidade, o que é uma afirmação forte para um jardim de um quarto de hectare.\n\nA Melaleuca styphelioides é uma árvore australiana cultivada pela casca: branca, esponjosa, depositada em camadas de papel onde se afunda o polegar, a descamar em folhas à volta de um tronco de 1,58 metros de perímetro. As folhas são pequenas, rígidas e de ponta aguçada, que é a metade espinhosa do nome. Com 18 metros de altura e 11 de copa, é a alta e fina deste jardim. A figueira a poucos passos é a larga.\n\nO jardim abriu em 1889 e tem o nome de Constantino José Marques de Sampaio e Melo, florista. Tem lago, parque infantil e uma estátua de Prometeu, e fica em Arroios a duas ruas do metro, por isso esta árvore passou a vida inteira numa praça de cidade e não num parque.\n\nFoi classificada em 1996, meio século depois da vizinha. O registo anotou 107 anos quando foi medida em 2017, ou seja uns 115 agora, o que a poria no chão por volta de 1910, uma geração depois do próprio jardim."
+    },
+    "lis_027": {
+      "name": "A Figueira-da-Austrália do Jardim Constantino",
+      "species": "Figueira-da-Austrália (Ficus macrophylla)",
+      "age_estimate": "cerca de 115 anos",
+      "access": "Livre, jardim público",
+      "transport": "Curta caminhada da estação Arroios ou Anjos (Metro, Linha Verde)",
+      "story": "Um jardim de um quarto de hectare em Arroios tem uma figueira com 26 metros de copa, o que explica quase toda a sombra do sítio. O Jardim Constantino é pequeno: um lago, um parque infantil, uma estátua de Prometeu e duas árvores protegidas. Esta é a larga.\n\nA Ficus macrophylla vem da costa leste da Austrália e foi plantada por toda a Lisboa no fim do século XIX e no princípio do XX exactamente por esta razão. Cresce depressa, atira uma copa densa e deita as raízes de contraforte que fazem um exemplar adulto parecer que está a segurar o chão. Com 24 metros de altura sobre um tronco de 2,33 metros de perímetro, esta cumpriu a tarefa.\n\nEstá protegida desde 1947, o que é cedo. A melaleuca a poucos metros teve de esperar até 1996 pelo mesmo estatuto. O registo anotou 107 anos quando a árvore foi medida em 2017, ou seja uns 115 hoje.\n\nLisboa tem figueiras-da-Austrália mais conhecidas, no Príncipe Real e no Jardim da Estrela, ambas com palco próprio no centro da cidade e público à frente. Esta tem uma praça de bairro, um banco por baixo e nenhuma fila."
+    },
+    "lis_028": {
+      "name": "As Belas-Sombras do Jardim António Feijó",
+      "species": "Bela-sombra (Phytolacca dioica)",
+      "age_estimate": "cerca de 115 anos",
+      "access": "Livre, jardim público",
+      "transport": "Curta caminhada da estação Arroios ou Anjos (Metro, Linha Verde)",
+      "story": "Os dois troncos mais gordos deste jardim não são bem madeira. A Phytolacca dioica, a bela-sombra, é uma erva gigante e não uma árvore, e a base inchada que a faz parecer antiga é tecido mole, cheio de água, que se amolga com uma unha. Cresce depressa, não produz madeira que se aproveite e desfaz-se mais cedo do que o volume faz supor.\n\nSão duas aqui, e saíram quase idênticas: 10,45 e 10,4 metros de perímetro, 17,6 e 16,4 metros de altura. Estão a uns 30 metros uma da outra, uma no canto sudeste do jardim e outra no topo, por isso a visita é às duas ou a nenhuma.\n\nO jardim envolve a Igreja de Nossa Senhora dos Anjos, inaugurada em 1911, e o par foi plantado por alturas do acabamento da igreja. Foram classificadas em 1947, das primeiras ordens de protecção de Lisboa, e reclassificadas em 2018.\n\nO registo anotou-lhes 105 anos quando foram medidas em 2015, ou seja uns 115 agora. Com uma bela-sombra esse número é ainda mais mole do que o costume. O tronco não deposita os anéis anuais bem arrumados que se contariam num carvalho, por isso qualquer idade é deduzida do tamanho e do que digam os registos de plantação."
+    },
+    "lis_029": {
+      "name": "A Bela-Sombra da Praça António Sardinha",
+      "species": "Bela-sombra (Phytolacca dioica)",
+      "age_estimate": "cerca de 115 anos",
+      "access": "Livre, praça pública",
+      "transport": "Curta caminhada da estação Arroios (Metro, Linha Verde) ou autocarros da Penha de França",
+      "story": "As raízes desta saem do chão a parecer mais troncos. A própria junta de freguesia, na sua página sobre a Praça António Sardinha, descreve uma bela-sombra centenária cujas raízes se assemelham a troncos que convergem num só, o que é uma descrição justa do que faz uma Phytolacca dioica grande. A base espalha-se em contrafortes e dobras até ser difícil dizer onde acaba a árvore e começa o chão.\n\nCom 10,9 metros de perímetro é mais grossa do que qualquer uma do par que está a 600 metros dali, no Jardim António Feijó. A copa chega a quase 21 metros de largura numa árvore de apenas 16,2 metros de altura, ou seja, é mais larga do que alta.\n\nNada disto é madeira. A bela-sombra é uma erva gigante dos pampas sul-americanos, tecido mole cheio de água, que é a razão de inchar tão depressa e de uma máquina desatenta lhe poder fazer estragos que um carvalho encolheria os ombros.\n\nEstá ao lado de uma escola primária e, quando a praça foi refeita em 2023, as obras foram desenhadas à volta dela. Foi classificada em 2000. O registo anotou 105 anos na medição de 2015, ou seja uns 115 agora, estimativa a partir do tamanho e não de uma plantação datada."
+    },
+    "lis_030": {
+      "name": "O Dragoeiro da Quinta Conde dos Arcos",
+      "species": "Dragoeiro (Dracaena draco)",
+      "age_estimate": "cerca de 215 anos",
+      "access": "Livre, parque urbano público (três portões, abertos aproximadamente das 6:30 às 20:00 ou 22:00 consoante a época)",
+      "transport": "Nos Olivais; as estações de metro mais próximas são Encarnação ou Bela Vista (Linha Vermelha), a uns 15 a 20 minutos a pé",
+      "story": "Este dragoeiro é mais do dobro de largo do que de alto: 6,2 metros de altura debaixo de uma copa de quase 14 metros, num tronco de 4,75 metros de perímetro. O Dracaena draco cresce assim de propósito. Levanta um caule, floresce, bifurca-se, e outra vez, até um exemplar velho parecer um guarda-chuva feito de guarda-chuvas.\n\nNinguém o consegue datar como deve ser. Os dragoeiros não depositam anéis anuais, por isso todas as idades publicadas para um deles são deduzidas da ramificação ou de registos. O registo anotou 200 anos quando o mediu em 2010, o que lhe dá uns 215 agora, e é mais ou menos toda a precisão que esta espécie permite.\n\nCresce na Quinta Conde dos Arcos, uma propriedade privada que a câmara de Lisboa expropriou em 1940 e mais tarde abriu como parque de nove hectares nos Olivais. O antigo palácio alberga a escola de jardinagem municipal. A junta de freguesia identifica este dragoeiro como a única árvore de interesse público entre as 28 espécies que ali crescem, e faz visitas guiadas gratuitas em datas marcadas ao longo do ano.\n\nA seiva corre vermelha onde a casca é cortada, que é de onde vem o nome. O sangue-de-drago saía das Canárias e da Madeira como tinta e como remédio há séculos, muito antes de alguém se lembrar de plantar um destes em Lisboa."
+    },
+    "lis_031": {
+      "name": "O Plátano do Hospital Pulido Valente",
+      "species": "Plátano (Platanus x acerifolia)",
+      "age_estimate": "mais de 350 anos",
+      "access": "Livre, terrenos de um hospital público (Hospital Pulido Valente, da ULS Santa Maria); a árvore está no pátio aberto do Edifício D. Carlos, visível sem entrar em zonas clínicas, mas quem for deve comportar-se como visita do hospital",
+      "transport": "Junto ao Hospital Pulido Valente / Lumiar (Metro, Linha Amarela, curta caminhada)",
+      "story": "O registo nacional dá a este plátano 364 anos. Se estiver certo, já aqui estava antes do hospital, antes da estrada e antes de quase todo o Lumiar.\n\nTrate o número com cuidado. Vem do processo de classificação aberto em 1945 e tem sido repetido desde então, inclusive no livro Árvores da Cidade, que dá os mesmos 364 anos e valores de altura e de copa quase iguais. Duas fontes, uma origem, e ninguém alguma vez datou a madeira. Somando os anos passados desde esse levantamento, o próprio número do registo daria hoje uns 375.\n\nO que foi de facto medido já chega: 5,85 metros de perímetro, 28 metros de altura e uma copa de 37 metros, nove metros mais larga do que a árvore é alta. Ocupa o pátio de entrada do Edifício D. Carlos, no Hospital Pulido Valente, e o hospital faz ali por baixo as suas comemorações de aniversário.\n\nIsto não é um parque. É um hospital público em funcionamento, e a árvore está no pátio aberto, onde se vê sem chegar perto de zonas clínicas, por isso vá como iria ao jardim de alguém e não se meta no caminho.\n\nO plátano é a árvore que Lisboa plantou em todo o lado no século XIX, para dar sombra. Este, se o processo estiver certo, já era velho quando essa moda começou."
+    },
+    "lis_032": {
+      "name": "O Plátano da Travessa do Arco da Torre",
+      "species": "Plátano (Platanus x acerifolia)",
+      "age_estimate": "cerca de 165 anos",
+      "access": "Livre, rua pública",
+      "transport": "Curta caminhada de Belém ou do Restelo, servida pelo eléctrico 15E e por várias carreiras de autocarro ao longo da Avenida da Índia",
+      "story": "A dois minutos da fila da Torre de Belém, numa travessa onde quase nenhum visitante entra, está um plátano de 29 metros. A Travessa do Arco da Torre corre paralela à Avenida da Torre de Belém, perto do Largo da Princesa, e esta é a árvore que passa por cima das cumeeiras ao longo dela.\n\nO tronco tem 3,75 metros de perímetro e a copa espalha-se por quase 27,5 metros, dimensões de parque para uma coisa que cresce numa rua pública sem jardim à volta. Os plátanos de rua costumam ser cortados a fundo por causa dos fios e das janelas. A este deixaram-no espalhar-se.\n\nO registo anotou 150 anos quando foi medido em 2010, ou seja uns 165 agora, e a cobertura independente das árvores classificadas de Lisboa dá-lhe aproximadamente o mesmo. Foi classificado em 2000.\n\nEssa idade coloca a plantação nos anos 60 do século XIX, quando Belém ainda estava a ser cosida à cidade e muito antes de a frente ribeirinha ganhar os monumentos, os museus e as multidões. Tudo o que hoje traz aqui vários milhões de pessoas por ano chegou à vista desta árvore, e ela assistiu ao conjunto de uma rua atrás, por cima dos telhados, com uns carros estacionados por baixo."
+    },
+    "lis_033": {
+      "name": "O Cipreste-de-Monterey do Parque do Caramão da Ajuda",
+      "species": "Cipreste-de-Monterey (Cupressus macrocarpa)",
+      "age_estimate": "cerca de 95 anos",
+      "access": "Livre, parque público",
+      "transport": "Em Belém/Ajuda, acessível de autocarro pela Calçada da Ajuda; não há estação de metro nas proximidades",
+      "story": "O cipreste-de-Monterey tem uma das áreas naturais mais pequenas de qualquer conífera: dois promontórios na costa da Califórnia, junto a Monterey, alguns quilómetros de falésia e mais nada em estado selvagem. Também cresce à vontade em quase qualquer sítio ameno e costeiro, que é como um deles foi parar a uns 9.000 quilómetros dali, com um tronco de 3,9 metros, num parque acima de Belém.\n\nCom 18,5 metros de altura e 17 de copa, é uma árvore pesada, larga e escura, a forma que os ciprestes-de-Monterey ganham depois de o vento lhes trabalhar umas décadas: ramos horizontais, topo achatado, folhagem em ramalhetes densos que cheiram a limão quando esmagados.\n\nEstá no Parque do Caramão da Ajuda, que é um parque público e não a Tapada da Ajuda ao lado. Vale a pena acertar nessa distinção antes de sair de casa, porque são vizinhos e só um deles tem esta árvore.\n\nPara além do registo do Estado, ninguém parece ter escrito sobre ela. O registo classificou-a em 2000 e anotou 85 anos quando foi medida em 2015, o que lhe dá uns 95 agora, e são esses os únicos números publicados. É um registo sólido até onde vai, e é tudo o que se sabe sobre este cipreste."
+    },
+    "lis_034": {
+      "name": "Os Primeiros Jacarandás de Lisboa",
+      "species": "Jacarandá (Jacaranda mimosifolia)",
+      "age_estimate": "cerca de 200 anos",
+      "access": "Entrada paga no Jardim Botânico da Ajuda (cerca de 1 euro; grátis aos domingos de manhã, 10:00-13:00)",
+      "transport": "12 min a pé da estação de Belém (Linha de Cascais); o eléctrico 18E pára perto",
+      "story": "Todos os jacarandás de Lisboa remontam a este jardim. As árvores que pintam a cidade de lilás em Maio, mais de trezentas só na Avenida 5 de Outubro, descendem dos primeiros exemplares aclimatados aqui no início do século XIX sob a direcção de Félix de Avelar Brotero, que dirigiu o jardim da Ajuda a partir de 1811. Brotero não guardou a árvore para si. Ofereceu semente a quem em Lisboa a quisesse plantar, e foi assim que uma espécie sul-americana se tornou a árvore que identifica uma capital portuguesa. Dois desses primeiros jacarandás continuam de pé no jardim, entre outros plantados depois, e mantiveram um hábito que os denuncia: enquanto o resto da cidade floresce por Maio dentro e entra em Junho, estes dois são os últimos de Lisboa a abrir. A razão não está estabelecida. Sugere-se que terem sido os primeiros a aclimatar-se os deixou num relógio ligeiramente diferente do dos seus próprios descendentes. O jardim à volta deles foi traçado em 1768 para D. José I e é o mais antigo de Portugal, pequeno o bastante para se percorrer em meia hora. Venha no fim de Junho, quando as avenidas já largaram as flores e estes dois ainda estão floridos."
+    },
+    "lis_035": {
+      "name": "A Paineira da Rua dos Jerónimos",
+      "species": "Paineira (Ceiba crispiflora)",
+      "age_estimate": "cerca de 95 anos",
+      "access": "Livre, na via pública",
+      "transport": "5 min a pé da estação de Belém (Linha de Cascais); o eléctrico 15E pára no Mosteiro dos Jerónimos",
+      "story": "Uma das ruas mais percorridas por turistas em Lisboa tem uma gigante sul-americana plantada nela e quase ninguém olha para cima. A paineira da Rua dos Jerónimos fica a dois minutos do mosteiro que enche todos os postais da cidade, e não precisa da vizinhança para se impor: 4,2 metros de perímetro no tronco, 24 metros de altura e uma copa de 22 metros na última medição do Estado, em 2015. Portugal classificou-a como árvore de interesse público em Dezembro de 2001, a protecção reservada a exemplares que vale a pena manter. A Ceiba crispiflora vem das florestas do sul do Brasil e não esconde de onde é. O tronco engrossa em forma de garrafa e carrega espinhos cónicos rombos, e floresce em rosa antes de abrir cápsulas cheias de uma paina branca e sedosa, a mesma que outrora enchia almofadas e coletes salva-vidas. Pelas contas do próprio registo foi plantada por volta de 1930, o que a torna mais nova do que a maioria das árvores deste mapa e não menos digna do desvio. É o tipo de árvore por que se passa duas vezes: uma sem a ver, outra quando alguém aponta para os espinhos."
+    }
   }
- ],
- "strings_note": "Per-tree fields: name, species (Portuguese common name, same Latin), age_estimate, access, transport, story. Stories 150-250 words, same bar as the English, no em dashes. Hedges carried over exactly where the English source hedges.",
- "trees": {
-  "lis_001": {
-   "name": "As Oliveiras de Santo Amaro",
-   "species": "Oliveira (Olea europaea)",
-   "age_estimate": "457 anos",
-   "access": "Livre, acesso permanente, jardim público em redor da capela",
-   "transport": "11 min a pé da estação de Alcântara-Terra (Linha de Cascais), ou eléctrico 15E até ao Calvário e depois 9 min a pé",
-   "story": "Quatro oliveiras à porta de uma pequena capela redonda de Alcântara sobreviveram a todos os reis portugueses desde antes de existir a dinastia de Bragança. Pelos registos de classificação da própria cidade têm cerca de 457 anos, as árvores datadas mais antigas de Lisboa, plantadas bastante antes de a Capela de Santo Amaro ao lado ter tomado a sua forma circular actual, em 1549. A capela foi reconstruída e restaurada mais do que uma vez desde então; as oliveiras cá fora limitaram-se a continuar a crescer. Nenhuma das quatro é alta, seis metros quando muito, mas os troncos ocaram e torceram-se com a idade até ficarem mais parecidos com madeira trazida pelo mar do que com oliveira de pomar. Os serviços florestais da cidade classificaram-nas por interesse cultural, pedagógico e paisagístico, linguagem burocrática para aquilo que é, no fundo, velhice bem levada. As oliveiras costumam marcar terreno agrícola, não capelas com vista de rio, e estas quatro ignoraram discretamente o facto de lhes ter crescido à volta um porto de trabalho e, mais tarde, a Ponte 25 de Abril. O alto que partilham é um dos melhores miradouros gratuitos sobre o Tejo, e numa tarde normal é a vista que leva quase toda a atenção, enquanto quatro dos seres vivos mais antigos da cidade estão a poucos passos dali, escorados, retorcidos e praticamente ignorados."
-  },
-  "lis_002": {
-   "name": "O Dragoeiro da Ajuda",
-   "species": "Dragoeiro (Dracaena draco)",
-   "age_estimate": "250 a 400 anos",
-   "access": "Entrada paga no Jardim Botânico da Ajuda (cerca de 1 euro; gratuito ao domingo de manhã, das 10:00 às 13:00)",
-   "transport": "12 min a pé da estação de Belém (Linha de Cascais); o eléctrico 18E pára ali perto",
-   "story": "Corte a casca desta árvore e ela sangra vermelho. A resina de Dracaena draco oxida num carmesim escuro em tempos muito procurado por toda a Europa como sangue-de-drago, usado em vernizes, tintas e medicina popular medievais. Este exemplar já era um adulto feito quando o botânico italiano Domingos Vandelli o transplantou para o primeiro jardim botânico de Lisboa, em 1768, o que lhe dá pelo menos 258 anos e possivelmente perto de 400, porque os dragoeiros não formam anéis anuais e ninguém registou o seu nascimento. A copa chegou a estender-se por quase 23 metros, das maiores da espécie no país, até uma infecção por fungos se instalar por volta de 2006 e lhe custar cerca de metade do tamanho. Uma estrutura de aço segura hoje o que resta. O jardim, construído nos terrenos do Palácio Real da Ajuda para D. José I, trata a árvore como emblema, e os rebentos dela foram propagados num pequeno viveiro de dragoeiros mais novos ali ao lado. Os dragoeiros crescem devagar e podem viver séculos depois de instalados, por isso este, sem metade da copa e ainda de pé, pode muito bem ser novo para o que a espécie dá."
-  },
-  "lis_003": {
-   "name": "O Cipreste do Príncipe Real",
-   "species": "Cipreste-do-buçaco (Cupressus lusitanica)",
-   "age_estimate": "mais de 150 anos",
-   "access": "Livre, jardim público",
-   "transport": "Curta caminhada da estação do Rato (Metro, Linha Amarela)",
-   "story": "A primeira árvore protegida por lei em Portugal não é um cedro. Toda a gente lhe chama cedro-do-Buçaco, mas a árvore que preside ao jardim do Príncipe Real é um Cupressus lusitanica, um cipreste das montanhas do México e da Guatemala com um nome português que nunca mereceu. Em 1940 tornou-se a primeira árvore do país classificada como de interesse público, décadas antes de existir um registo nacional formal para estas coisas. A copa, outrora uma cúpula enorme em forma de coreto com uns 30 metros de diâmetro, foi rareando com a idade e com os temporais até cerca de sete metros de altura visível, embora o tronco continue a medir quatro metros de perímetro na base. Os registos patrimoniais portugueses dão-lhe cerca de 150 anos, mais do que o jardim oitocentista à volta. Um registo internacional de árvores diz antes que data de cerca de 1740, quase o dobro da idade, uma diferença que ninguém resolveu. Aos sábados de manhã, no mercado biológico, as pessoas abrigam-se debaixo do que resta da copa sem imaginarem que estão sob uma árvore cujos papéis são mais antigos do que quase todos os edifícios à vista, e cuja idade exacta continua em aberto entre quem é pago para a saber."
-  },
-  "lis_004": {
-   "name": "A Bela-Sombra do Largo do Limoeiro",
-   "species": "Bela-sombra (Phytolacca dioica)",
-   "age_estimate": "mais de 100 anos",
-   "access": "Livre, largo público",
-   "transport": "4 min a pé da paragem de eléctrico das Portas do Sol (12E/28E)",
-   "story": "O largo tem o nome de um limoeiro que desapareceu há muito. Quem o substituiu como marco da zona foi uma bela-sombra, espécie sul-americana de tronco inchado e canelado que pode medir uns dezassete metros de perímetro na base, mais largo do que a maioria das fachadas da rua. Cresce encostada ao muro exterior da antiga cadeia do Limoeiro, edifício que guardou presos políticos durante boa parte do século XX e onde hoje se formam juízes. Fotografias do arquivo municipal mostram-na já adulta e considerável em 1910, o que colocaria a idade real mais perto dos 115 anos do que dos 100 habitualmente citados. A madeira da bela-sombra é famosa por ser mole e resistente ao fogo, sem serventia nenhuma para carpinteiros, o que talvez explique porque esta sobreviveu quando árvores mais úteis ali à volta não sobreviveram. Fica a poucos passos do miradouro das Portas do Sol, uma das melhores vistas sobre os telhados de Alfama e sobre o rio, embora quase toda a gente passe ao lado do tronco inchado a caminho do gradeamento. Fiel à alcunha que lhe deram, bela-sombra, continua a dar cobertura excelente a um troço de passeio que de outro modo não teria nada de especial."
-  },
-  "lis_005": {
-   "name": "A Tipuana do Jardim de São Bento",
-   "species": "Tipuana (Tipuana tipu)",
-   "age_estimate": "90 anos",
-   "access": "Livre, jardim público ao lado da Assembleia da República",
-   "transport": "2 min a pé da estação de São Bento (Linha de Sintra)",
-   "story": "O parlamento português tem uma árvore sul-americana à porta. Esta tipuana, plantada há cerca de noventa anos no pequeno jardim triangular ao lado do Palácio de São Bento, dá flores cor de laranja com uma mancha castanho-avermelhada na base de cada pétala, e é natural da Bolívia e da Argentina, sem ligação nenhuma ao mosteiro beneditino quinhentista que o palácio já foi. O mosteiro passou a sede do parlamento português em 1834, depois da extinção das ordens religiosas, e o jardim ao lado tem visto desde então ministros, manifestantes e uma crise política ou outra a poucas dezenas de metros da copa. A árvore é uma das árvores de interesse público classificadas de Lisboa, estatuto que mal chega a duas dezenas de exemplares em toda a cidade. A sua madeira, a tipa, é apreciada na América do Sul para mobiliário, embora ninguém aqui tenha planos de a abater para fazer uma mesa. O fim do inverno e a primavera trazem a floração, quando o terço de hectare escasso do jardim ganha um laranja surpreendente mesmo em frente ao sítio onde se escrevem as leis do país."
-  },
-  "lis_006": {
-   "name": "As Árvores-de-Coral do Jardim da Luz",
-   "species": "Árvore-de-coral (Erythrina crista-galli)",
-   "age_estimate": "100 anos",
-   "access": "Livre, jardim público",
-   "transport": "1 min a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
-   "story": "Apesar do nome, esta árvore nunca esteve perto da Índia. Os marinheiros portugueses chamaram ao género Erythrina árvore-de-coral das Índias depois de desembarcarem no Brasil convencidos de que tinham chegado à Ásia, um erro geográfico de cinco séculos que ficou colado ao nome comum. Crescem dois exemplares no lado sul do Jardim da Luz, em Carnide, ambos classificados como árvores de interesse público desde 1996 e ambos com cerca de um século, com doze e quinze metros de altura. Todos os junhos enchem-se de flores de um vermelho vivo com a forma inconfundível de uma crista de galo, o pormenor que está por trás do nome da espécie, crista-galli. O nome oficial do jardim, Jardim Teixeira Rebelo, homenageia o primeiro director do Colégio Militar ali ao lado, embora quase toda a gente lhe continue a chamar Jardim da Luz, por causa da igreja barroca do outro lado do largo. Há uma estação de metro tão encostada ao portão que os passageiros da Linha Azul saem quase por baixo da copa das duas árvores sem darem por isso. Para duas transplantadas sul-americanas baptizadas com o continente errado, instalaram-se na Lisboa suburbana sem queixas, a florir todos os verões independentemente do nome que lhes derem."
-  },
-  "lis_007": {
-   "name": "O Lódão-Bastardo da Avenida de Berlim",
-   "species": "Lódão-bastardo (Celtis australis)",
-   "age_estimate": "86 anos",
-   "access": "Livre, rua e placa de trânsito públicas",
-   "transport": "Cerca de 15 min a pé da estação Bela Vista (Metro, Linha Vermelha), ou autocarro até à Avenida de Berlim",
-   "story": "Uma árvore lembra-se das quintas que aqui havia. Antes de a expansão de Lisboa para leste, nos anos 40 e 50, cobrir de prédios as quintas dos Olivais, este pedaço de terreno era campo, e um único lódão-bastardo daquele tempo sobreviveu às obras, ainda de pé no que é hoje o cruzamento da Avenida de Berlim com a Avenida Francisco Luís Gomes. O registo nacional de árvores de interesse público mediu-o em 2015 e deu-lhe 75 anos e 15,7 metros de altura, menos do que o século redondo que já lhe atribuíram, mas ainda assim mais velho do que os prédios à volta, com uma copa larga e simétrica que parece plantada de propósito e quase de certeza não foi. A espécie dá um fruto pequeno e doce que lhe valeu uma alcunha popular ligada aos pássaros que o vêm comer, e a madeira foi durante muito tempo apreciada para cabos de ferramenta e de chicote, pela flexibilidade. Classificado de interesse público no processo KNJ1/405, está hoje ao lado de uma escultura de bronze chamada Homem Sucata, soldada a partir de peças de automóvel em 1993, um par estranho entre o passado rural da zona e o seu presente industrial na mesma placa de trânsito. Quem passa por estas avenidas tem um vizinho mais velho do que as torres de habitação fazem supor."
-  },
-  "lis_008": {
-   "name": "O Ginkgo da Praça Paiva Couceiro",
-   "species": "Ginkgo (Ginkgo biloba)",
-   "age_estimate": "mais de 100 anos",
-   "access": "Livre, praça pública",
-   "transport": "Cerca de 10 min a pé da estação Arroios (Metro, Linha Verde)",
-   "story": "O Ginkgo biloba é muitas vezes chamado fóssil vivo, uma espécie praticamente inalterada há mais de 200 milhões de anos e uma das pouquíssimas plantas que se sabe terem rebentado de novo perto do marco zero de Hiroxima, uma resistência que a espécie carrega na reputação e não na biografia desta árvore em concreto. O exemplar de Lisboa, na Praça Paiva Couceiro, no bairro operário da Penha de França, é um membro comparativamente novo de uma linhagem antiga: tem mais de um século e está classificado como árvore de interesse público, embora ninguém tenha conseguido fixar a data exacta de plantação. As folhas em leque ficam de um amarelo vivo e uniforme todos os novembros, antes de caírem quase todas ao mesmo tempo, um espectáculo sem paralelo nesta lista e que atrai uma pequena multidão anual de fotógrafos a uma praça sem nada de especial. Os ginkgos são dióicos, macho ou fêmea, e só as árvores fêmeas dão o fruto de cheiro notoriamente desagradável; se esta poupou o bairro a esse perigo de outono, ou se o sexo nunca chegou a ser registado, ninguém parece saber. Seja como for, é a única ligação viva da Penha de França a um género mais antigo do que a maioria das cadeias de montanhas do mundo."
-  },
-  "lis_009": {
-   "name": "A Paineira do Jardim Alfredo Keil",
-   "species": "Paineira (Ceiba speciosa)",
-   "age_estimate": "mais de 100 anos (conjunto classificado em 2017)",
-   "access": "Livre, jardim público",
-   "transport": "6 min a pé da estação Restauradores (Metro, Linha Azul)",
-   "story": "Todos os outubros esta árvore torna um pequeno jardim cor-de-rosa. A paineira do Jardim Alfredo Keil é um de seis exemplares classificados individualmente dentro de um conjunto de nove árvores que a cidade declarou colectivamente de interesse público em 2017, uma espécie sul-americana cujo tronco verde e espinhoso e cujas flores cor de algodão-doce se tornaram uma marca não oficial do outono lisboeta nos últimos anos. O jardim, desenhado em 1882 no antigo terreno da Feira da Ladra, antes de esta se mudar para Alfama, mal chega para conter a copa da árvore, e um busto do compositor Alfredo Keil, autor da melodia que veio a ser o hino nacional, vigia de um dos cantos. Nenhuma fonte isola a idade exacta desta paineira, porque a classificação de 2017 cobre todo o conjunto de árvores em vez de datar cada exemplar. O fruto que se segue às flores abre-se e liberta sementes envoltas numa paina branca e sedosa, em tempos usada para encher almofadas e coletes salva-vidas, uma nota prática e macia sobre uma árvore que passa todos os outonos a dar o espectáculo mais barulhento do bairro."
-  },
-  "lis_010": {
-   "name": "A Figueira-da-Borracha Gigante da Mouraria",
-   "species": "Figueira-da-borracha (Ficus elastica)",
-   "age_estimate": "20 a 40 anos, idade exacta desconhecida",
-   "access": "Livre, rua pública",
-   "transport": "Curta caminhada da estação Martim Moniz (Metro, Linha Verde)",
-   "story": "Ninguém sabe como esta árvore aqui foi parar, e é aí que está quase toda a graça. Uma figueira-da-borracha ergue-se hoje uns seis metros sobre uma rua estreita da Mouraria, com as raízes que fugiram de um vaso rachado há anos e entraram directamente no chão, e com o tronco e os ramos a preencherem o vão entre duas fachadas da Rua de São Cristóvão como se tivesse sido plantada ali de propósito. Não foi. Os investigadores de plantas que a examinaram, entre eles o botânico André Mota, confirmam a espécie e descrevem o crescimento improvisado, mas não a origem. Ao contrário das árvores de interesse público classificadas que estão no resto desta lista, esta não tem idade oficial, nem estatuto de protecção, nem placa municipal, apenas várias centenas de avaliações entusiásticas na internet e um café que abriu ao lado em 2022, em parte por causa do movimento que a árvore agora traz. É a entrada mais nova e menos oficial daqui, quase de certeza com menos de 40 anos, incluída não pela idade mas pelo facto de uma planta de vaso se ter soltado e ter passado discretamente a ser uma das árvores mais fotografadas do bairro."
-  },
-  "lis_011": {
-   "name": "A Figueira do Jardim da Estrela",
-   "species": "Figueira-da-Austrália (Ficus macrophylla)",
-   "age_estimate": "cerca de 150 anos",
-   "access": "Livre, aberto todos os dias das 07:00 à meia-noite",
-   "transport": "Eléctrico 25E ou 28E até à Estrela (Basílica), depois cerca de 2 min a pé",
-   "story": "Lisboa aparafusou uma chapa metálica a este tronco e, onde devia estar a idade, lê-se uma palavra: desconhecida. É uma honestidade pouco habitual num município, e é também o mais interessante que há para dizer sobre a árvore. O jardim à volta abriu em abril de 1852, ao fim de dez anos de obras aos solavancos, por isso a figueira não pode ter muito mais de século e três quartos, o que, para uma coisa deste volume, é a surpresa. As figueiras-da-Austrália crescem a uma velocidade que faz as outras árvores parecerem preguiçosas. A chapa chegou em 2020, quando Lisboa deu bilhete de identidade a 27.610 das suas árvores e pendurou códigos QR em cerca de 750 delas. Olhe para cima e percebe-se porque é que esta espécie inquieta as pessoas: as raízes aéreas caem dos ramos como cordas e, onde chegam ao solo, engrossam até formarem troncos novos, de maneira que a árvore se vai tornando devagar numa colónia de si própria. Também não está sozinha. Há pelo menos cinco figueiras adultas nestes cinco hectares, e a que está à beira do lago, com as raízes a transbordar do lancil na direcção dos patos, é a que toda a gente fotografa."
-  },
-  "lis_012": {
-   "name": "O Dragoeiro do Jardim da Estrela",
-   "species": "Dragoeiro (Dracaena draco)",
-   "age_estimate": "desconhecida, plantado depois de o jardim abrir em 1852",
-   "access": "Livre, aberto todos os dias das 07:00 à meia-noite",
-   "transport": "Eléctrico 25E ou 28E até à Estrela (Basílica), depois cerca de 2 min a pé",
-   "story": "Ninguém lhe sabe dizer a idade desta árvore, e isso é uma propriedade da espécie e não uma falha de papelada. Um dragoeiro não é uma árvore no sentido corrente: não deposita anéis anuais, por isso o único método que data com fiabilidade um carvalho ou uma faia simplesmente não se aplica. Os botânicos contam antes gerações de ramos, porque a copa só se bifurca depois de cada floração, e isso acontece em intervalos de uma década ou mais. O que daí resulta é esta forma, um tronco a abrir-se num guarda-chuva apertado de lâminas rígidas verde-azuladas, com um ar menos de coisa crescida do que de coisa construída. Corte a casca e a seiva corre vermelha, que é de onde vem o nome e a razão por que a resina era comercializada pela Europa medieval como sangue-de-drago, para vernizes, medicamentos e tintas. A espécie é das Canárias e da Madeira, onde hoje é rara em estado selvagem. Este exemplar está entre as palmeiras e os bancos, perto do centro do jardim, desde algum momento posterior a 1852, a sobreviver discretamente a todos os jardineiros que trabalharam à sua volta, e Lisboa tem um segundo no nosso mapa, no jardim botânico da Ajuda."
-  },
-  "lis_013": {
-   "name": "A Figueira Estranguladora do Príncipe Real",
-   "species": "Figueira-da-Austrália (Ficus macrophylla)",
-   "age_estimate": "cerca de 155 anos",
-   "access": "Livre, praça pública, aberta a qualquer hora",
-   "transport": "Metro do Rato (Linha Amarela), cerca de 6 min a subir a pé, ou eléctrico 24E até à Praça do Príncipe Real",
-   "story": "Toda a gente nesta praça olha para o cipreste. Está debaixo de uma armação metálica que parece uma mesa verde, foi a primeira árvore de Lisboa a receber protecção legal, em 1940, e leva com todas as fotografias. Três figueiras australianas estão à volta dele e quase ninguém repara nelas, o que é estranho, porque são a razão de a praça parecer ter tecto. Esta tem o tronco mais grosso das três, pouco mais de seis metros de perímetro, e segura a copa a vinte e um metros de altura. A Ficus macrophylla não começa a vida como árvore na Austrália. Germina na forquilha de outra, deixa cair raízes ao longo do tronco do hospedeiro e engrossa-as até o hospedeiro ficar envolvido e morrer, que é a razão de a espécie ser chamada estranguladora. Aqui não tinha nada para estrangular, por isso as raízes aéreas limitam-se a pender, a chegar ao saibro e a endurecer em escoras. Debaixo disto tudo há água. O reservatório da Patriarcal ficou pronto em 1864, uma câmara octogonal assente em trinta e um pilares com 880 metros cúbicos para a cidade, e o jardim é a tampa. Aos sábados de manhã monta-se um mercado de produtores por entre os troncos."
-  },
-  "lis_014": {
-   "name": "O Teixo do Campo de Santana",
-   "species": "Teixo (Taxus baccata)",
-   "age_estimate": "cerca de 130 anos",
-   "access": "Livre, jardim municipal, aberto todos os dias",
-   "transport": "Metro Intendente (Linha Verde), cerca de 8 min a pé, ou Metro Avenida (Linha Azul), cerca de 10 min",
-   "story": "Um teixo europeu não tem nada que crescer aqui. A espécie é dos adros húmidos do norte e da sombra das montanhas, e Lisboa não oferece nem uma coisa nem outra, e no entanto este chegou a perto de quatro metros de perímetro e catorze metros de altura, num alto sobre a Avenida. Portugal classificou-o em maio de 1968, o que faz dele uma das primeiras árvores protegidas da cidade, e o registo nacional dá-lhe hoje pouco mais de 130 anos. O chão debaixo dele tem uma história mais dura do que os relvados sugerem. Este campo teve um matadouro e depois uma praça de touros, e em 1817 foram aqui enforcados os homens condenados com Gomes Freire de Andrade, que é como o Campo de Santana passou a Campo dos Mártires da Pátria. O jardim veio depois, desenhado à volta de um lago com aves exóticas a passear pelos caminhos, e a faculdade de medicina e o Hospital de São José continuam a apertar-lhe as margens. No topo do mesmo campo está a estátua de Sousa Martins, médico morto em 1897, com o pedestal soterrado em placas de mármore deixadas por quem acredita que ele ainda responde. Num teixo tudo é venenoso menos a polpa vermelha à volta da semente."
-  },
-  "lis_015": {
-   "name": "A Figueira-Benjamim do Campo de Santana",
-   "species": "Figueira-benjamim (Ficus benjamina)",
-   "age_estimate": "cerca de 130 anos",
-   "access": "Livre, jardim municipal, aberto todos os dias",
-   "transport": "Metro Intendente (Linha Verde), cerca de 8 min a pé, ou Metro Avenida (Linha Azul), cerca de 10 min",
-   "story": "A Ficus benjamina é a árvore que quase toda a gente conhece como planta de vaso, a coisa lustrosa amuada a um canto do escritório e a largar folhas sempre que alguém a muda de sítio. A cinquenta passos do teixo, na mesma encosta, uma delas tem cinco metros de perímetro e uma copa a vinte metros de altura. Portugal classificou-a exactamente no mesmo dia que o teixo, 21 de maio de 1968, e o registo nacional ainda a arquiva sob um segundo nome que diz o que a espécie faz quando nada a trava: matapalo. Tal como as parentes da baía de Moreton, pode começar no alto de outra árvore e trabalhar de cima para baixo, e mesmo plantada honestamente em terra mantém o hábito de deixar descer raízes finas dos ramos. Uma correcção útil antes de ir. O registo mapeia aqui um único exemplar. As fontes portuguesas que descrevem o jardim contam dois, classificados em conjunto ao abrigo do mesmo diploma de 1968. Essa diferença entre uma lista nacional e aquilo que a cidade tem de facto é perfeitamente normal, por isso conte com um par e fique junto do maior. O jardim à volta chega às vinte e oito espécies de árvores, com um cedro-do-himalaia e uma amoreira-do-papel pelo meio, por isso a figueira não é a única importada que passou do rótulo."
-  },
-  "lis_016": {
-   "name": "O Taxódio do Jardim da Parada",
-   "species": "Taxódio-mexicano (Taxodium mucronatum)",
-   "age_estimate": "desconhecida, não registada no registo nacional",
-   "access": "Livre, jardim público. Um estaleiro do metro ocupa parte do quarteirão pelo menos até ao fim de 2026 e os caminhos desviam-se à volta dele; as árvores classificadas ficam dentro de um raio protegido, longe das obras",
-   "transport": "Eléctrico 25E ou 28E até Campo de Ourique, depois cerca de 5 min a pé",
-   "story": "Seis metros e meio de perímetro e vinte e seis de altura fazem desta a maior árvore de um jardim que ocupa um quarteirão inteiro, e há quatro anos que está no centro de uma discussão sobre um metro. Lisboa está a construir uma estação por baixo de Campo de Ourique. O estaleiro come uma fatia do jardim, os moradores formaram um movimento para o travar e, em 2024, ataram fitas de cor aos ramos: preta para árvore a abater, vermelha para risco elevado de morrer, amarela para em risco. A resposta pública da empresa do metro foi um raio de vinte metros à volta das três árvores classificadas do jardim, sem obras lá dentro e com verificações continuadas do estado delas, e o abate de seis lódãos não classificados, quatro dos quais replantados nos mesmos buracos. A árvore traz ainda uma pequena disputa taxonómica. O registo nacional dá-a como Taxodium mucronatum, o cipreste-mexicano das margens de rio do México, a espécie que produziu o tronco mais largo alguma vez medido numa árvore. A junta de freguesia e a enciclopédia portuguesa chamam-lhe antes cipreste-calvo. Ninguém publicou uma resolução. O jardim foi o campo de parada do quartel de Campo de Ourique, que é a razão de ninguém lhe chamar pelo nome do presidente."
-  },
-  "lis_017": {
-   "name": "O Metrosídero do Jardim da Parada",
-   "species": "Metrosídero (Metrosideros excelsa)",
-   "age_estimate": "desconhecida, não registada no registo nacional",
-   "access": "Livre, jardim público. Um estaleiro do metro ocupa parte do quarteirão pelo menos até ao fim de 2026 e os caminhos desviam-se à volta dele; as árvores classificadas ficam dentro de um raio protegido, longe das obras",
-   "transport": "Eléctrico 25E ou 28E até Campo de Ourique, depois cerca de 5 min a pé",
-   "story": "São dois, a dez metros um do outro, na berma deste jardim, e o registo protege-os como árvores separadas, o que é justo: um mede 4,55 metros de perímetro e o outro 4,9. Vistos de baixo leem-se como uma coisa só, um emaranhado baixo de ramos cinzentos a correr quase na horizontal por cima do passeio, com cortinas de raiz aérea penduradas, mais uma árvore que caiu e continuou do que uma que se pôs de pé. O Metrosideros excelsa vem da costa da Ilha do Norte da Nova Zelândia, onde agarra falésias vulcânicas exactamente com essas raízes. Em Campo de Ourique agarra um lancil. A floração aqui cai em maio e junho, meio ano longe da floração de dezembro que o tornou árvore de Natal na terra de origem, e não é um acontecimento discreto: a copa enche-se de estames carmesim e de quase nada a que se possa chamar pétala, e o passeio por baixo fica vermelho à medida que caem. Os dois foram classificados em setembro de 2018, tarde para uma coisa deste tamanho, e ambos estão hoje dentro do raio de vinte metros sem obras que a empresa do metro prometeu à volta das árvores classificadas do jardim."
-  },
-  "lis_018": {
-   "name": "A Tipuana do Jardim 9 de Abril",
-   "species": "Tipuana (Tipuana tipu)",
-   "age_estimate": "cerca de 145 anos",
-   "access": "Livre, jardim municipal com acesso público permanente. Não é o jardim do museu ao lado e não é preciso bilhete",
-   "transport": "Os autocarros 727 e 713 param na Rua das Janelas Verdes, junto ao Museu de Arte Antiga, a 1 min a pé; da estação de Santos são cerca de 8 min a subir",
-   "story": "Este jardim tem o nome de uma derrota. A 9 de abril de 1918 o Corpo Expedicionário Português foi desfeito em La Lys, na Flandres, no espaço de uma manhã, e Lisboa pôs a data num pequeno terraço sobre o rio. A tipuana dá sombra a quase todo ele: vinte e dois metros de altura, três metros e um quinto de perímetro, classificada em 2001 juntamente com duas vizinhas e, pelas contas do registo nacional, hoje perto dos 145 anos. A Tipuana tipu é boliviana e argentina, uma leguminosa que se comporta como um plátano nas cidades mediterrânicas e que por isso se planta em todo o lado, ao longo de avenidas inteiras de Lisboa. O que ela faz e os plátanos não fazem é pingar. Nos meses quentes a copa liberta uma chuva fina e pegajosa, melada dos insectos sugadores que vivem nela, e quem estacionou uma vez o carro debaixo de uma não repete. O terreno foi a cerca murada das Albertas, um convento carmelita, antes de a cidade tomar conta dele. Por causa disso sobrevivem no uso diário dois nomes mais antigos para o sítio, Jardim das Albertas e Jardim da Rocha do Conde de Óbidos. Chegue ao parapeito e o Tejo abre-se, gruas de contentores e tudo."
-  },
-  "lis_019": {
-   "name": "A Tamareira do Jardim 9 de Abril",
-   "species": "Tamareira (Phoenix dactylifera)",
-   "age_estimate": "cerca de 145 anos",
-   "access": "Livre, jardim municipal com acesso público permanente. Não é o jardim do museu ao lado e não é preciso bilhete",
-   "transport": "Os autocarros 727 e 713 param na Rua das Janelas Verdes, junto ao Museu de Arte Antiga, a 1 min a pé; da estação de Santos são cerca de 8 min a subir",
-   "story": "A câmara municipal chama a isto a árvore mais alta da cidade e põe-lhe 38 metros, quatro acima do arco triunfal ao fundo da Baixa. O registo nacional mediu-a em 2015 e escreveu 26,7. Os dois números estão publicados, nenhuma fonte os reconcilia, e ao pé dela também não vai resolver a questão, porque uma tamareira não dá ao olho nada com que comparar: sem ramos, sem afunilamento, apenas uma coluna cinzenta de bases de folha velhas e depois um jorro de palmas lá muito em cima. A Phoenix dactylifera é uma cultura de deserto da Mesopotâmia e do norte de África, plantada pelo fruto há pelo menos cinco mil anos e quase nunca deixada chegar a esta altura, porque um pomar mantém as palmeiras baixas o suficiente para se subir e colher. Ninguém andava a colher esta. Foi classificada em 2001, juntamente com a tipuana e a árvore-de-fogo ao lado, e o relógio do registo põe-na perto dos 145 anos. O tronco mal chega a metro e meio de perímetro. Aguentou tudo isso durante século e meio, na beira de um terraço sobre o Tejo que ainda lisonjeia mais a altura."
-  },
-  "lis_020": {
-   "name": "A Tipuana do Jardim Roque Gameiro",
-   "species": "Tipuana (Tipuana tipu)",
-   "age_estimate": "cerca de 115 anos",
-   "access": "Livre, jardim público ao lado da estação do Cais do Sodré",
-   "transport": "Estação do Cais do Sodré (Metro Linha Verde, comboio e cacilheiro), 2 minutos a pé, o jardim é mesmo ao lado",
-   "story": "Esta árvore está no meio de um terminal de autocarros, e essa é a história honesta em vez de coisa para disfarçar. O jardim, conhecido por Jardim do Cais do Sodré, fica exactamente onde convergem as linhas de comboio de Sintra e de Cascais, a Linha Verde do metro e o cacilheiro, uma das primeiras manchas de verde por que passa quem chega a Lisboa de comboio ou de barco. Durante anos os autocarros da Carris comeram quase todo o espaço disponível; uma requalificação ao abrigo do programa Uma Praça em Cada Bairro tem vindo a devolver alguma parte. Ao longo de tudo isso, uma única Tipuana tipu continuou a crescer no centro, classificada como árvore de interesse público desde 2001 e hoje com uns 115 anos, espécie sul-americana que chegou a Lisboa muito antes de alguém lhe construir um interface de transportes à volta. O tronco fica pouco abaixo dos três metros de perímetro. Ali ao lado estão uma escultura de bronze chamada Homem do Leme e um quiosque antigo que já foi bilheteira, ambos mais fáceis de notar do que a árvore que os precede. Venha entre fevereiro e maio e o argumento para parar fica mais fácil: a copa passa a laranja queimado, com as flores em cacho, e por uns tempos ofusca os autocarros que ficam a trabalhar por baixo."
-  },
-  "lis_021": {
-   "name": "A Tipuana da Praça São João Bosco",
-   "species": "Tipuana (Tipuana tipu)",
-   "age_estimate": "cerca de 115 anos",
-   "access": "Livre, jardim público e rotunda, aberto a todas as horas",
-   "transport": "Eléctrico 25E até Campo de Ourique / Prazeres, depois cerca de 5 minutos a pé",
-   "story": "Uma árvore com trinta e quatro metros de copa cresce no meio de uma rotunda, e em 2018 essa copa tinha passado a ser o problema. Em março desse ano vieram cá arboristas da cidade e técnicos do instituto da natureza aliviar a carga: remoção selectiva de ramos, desbaste da copa, cortes pensados para deixar o vento passar em vez de o empurrar, o tipo de cirurgia de que uma árvore deste tamanho precisa para se manter de pé sobre uma estrada. O jardim que a segura, sete mil metros quadrados à volta de uma estátua de Dom Bosco erguida em 1988, forma a rotunda que faz passar o trânsito entre Campo de Ourique e Prazeres, mesmo em frente ao segundo maior cemitério de Lisboa. O registo nacional deu ao tronco da tipuana 100 anos quando o mediu em 2010, o que a coloca hoje já depois do primeiro século, importada das terras baixas subtropicais da Bolívia e da Argentina. Ganhou protecção legal como árvore de interesse público em janeiro de 2019, uma de umas poucas dezenas em Lisboa com esse estatuto. O tronco tem 3,4 metros de perímetro, modesto ao lado do que a árvore estende por cima. O fim da primavera pinta de laranja os relvados da rotunda quando ela floresce. Os carros dão-lhe a volta mil vezes por dia; quase nenhum condutor sabe à volta do que anda."
-  },
-  "lis_022": {
-   "name": "A Azinheira do Parque Bensaúde",
-   "species": "Azinheira (Quercus ilex)",
-   "age_estimate": "cerca de 110 anos",
-   "access": "Livre, parque municipal público",
-   "transport": "Cerca de 15 minutos a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
-   "story": "Quatro árvores do Parque Bensaúde têm ordem de protecção nacional, e aquela de que o bairro mais se orgulha não está entre elas. É o sobreiro, tido como o mais antigo de Lisboa, noutro ponto do mesmo parque. A lista oficial é outra: duas azinheiras, um eucalipto-de-flor-vermelha e um bordo-comum.\n\nEsta é a mais pesada das duas azinheiras. A companheira, a uns 50 metros, é uma árvore que se abraça. Esta não: 3,12 metros de tronco, 21 metros de altura e a copa baixa e densa de folhas pequenas e duras que as azinheiras mantêm durante o inverno.\n\nO terreno foi privado quase todo esse tempo. Começou por ser a Quinta de Santo António das Frechas, propriedade seiscentista na estrada para a Luz, e mais tarde ficou com o nome da família Bensaúde, que a possuiu. Só nas últimas décadas é que alguém pôde passear livremente debaixo desta árvore.\n\nAs quatro foram classificadas em conjunto em 2004. O registo deu a esta azinheira 100 anos quando foi medida em 2017, o que a põe perto dos 110 agora. É uma estimativa de quem fez o levantamento e não uma contagem de anéis, e as azinheiras crescem devagar o suficiente para o número poder falhar uma década para qualquer dos lados."
-  },
-  "lis_023": {
-   "name": "A Segunda Azinheira do Parque Bensaúde",
-   "species": "Azinheira (Quercus ilex)",
-   "age_estimate": "cerca de 110 anos",
-   "access": "Livre, parque municipal público",
-   "transport": "Cerca de 15 minutos a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
-   "story": "Duas azinheiras do Parque Bensaúde foram classificadas no mesmo dia e registadas com a mesma idade. Uma mede 3,12 metros de perímetro. Esta mede 1,72.\n\nEstão a uns 50 metros uma da outra, no mesmo solo, o que é um bom lembrete de que o perímetro e a idade só se relacionam por alto. A luz, a água e aquilo que as raízes encontram lá em baixo decidem quase tudo. Esta é também a mais baixa do par, com 17 metros, e é a que se consegue de facto abraçar, que é a maneira mais rápida de saber que encontrou a árvore certa.\n\nA azinheira é a besta de carga perene do campo ibérico, escura e densa, a segurar as folhas pequenas e coriáceas durante todo o inverno. Não há aqui época sem folha nem cor de outono, por isso a árvore está igual em janeiro e em julho.\n\nO parque à volta foi a Quinta de Santo António das Frechas, propriedade seiscentista mais tarde da família Bensaúde, aberta ao público como parque municipal a partir da Estrada da Luz. As duas azinheiras foram classificadas em 2004, juntamente com um eucalipto-de-flor-vermelha e um bordo-comum invulgarmente grosso a curta distância para poente.\n\nO registo anotou 100 anos na medição de 2017, ou seja uns 110 hoje, por estimativa de quem mediu e não por plantação datada."
-  },
-  "lis_024": {
-   "name": "O Eucalipto de Flor Vermelha do Parque Bensaúde",
-   "species": "Eucalipto-de-flor-vermelha (Corymbia ficifolia)",
-   "age_estimate": "não documentada",
-   "access": "Livre, parque municipal público",
-   "transport": "Cerca de 15 minutos a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
-   "story": "Esta é a mais pequena das quatro árvores protegidas do Parque Bensaúde e a única que está na lista pelo que faz e não pelo que é. Com 7 metros de altura e 1,45 de perímetro, perde em todas as medidas para as vizinhas. Depois chega o pino do verão e a copa inteira fica escarlate.\n\nA Corymbia ficifolia vem de uma faixa estreita de costa no sudoeste da Austrália Ocidental, área natural pequena o suficiente para se atravessar de carro numa tarde, e foi plantada pelas zonas amenas do mundo exactamente por isto: cachos densos de flores vermelhas por cima da folhagem, a durar semanas e a deixar um tapete por baixo.\n\nNão há idade registada para ela em lado nenhum. Foi classificada em 2004 pelas flores e por ser pouco comum na cidade, e não por qualquer pretensão a antiguidade, e ninguém a datou desde então.\n\nFica a uns 40 metros a poente da azinheira maior, perto do bordo, por isso as quatro árvores classificadas do parque fazem um circuito de poucos minutos. O Parque Bensaúde foi a Quinta de Santo António das Frechas antes de a câmara o abrir, e é assim que uma plantação privada de um ornamental australiano acabou numa lista pública. Alguém quis flores vermelhas no seu próprio jardim, e um século depois o jardim passou a ser de toda a gente."
-  },
-  "lis_025": {
-   "name": "O Bordo-Comum do Parque Bensaúde",
-   "species": "Bordo-comum (Acer campestre)",
-   "age_estimate": "não documentada",
-   "access": "Livre, parque municipal público",
-   "transport": "Cerca de 15 minutos a pé da estação Colégio Militar/Luz (Metro, Linha Azul)",
-   "story": "Um bordo-comum com 3,5 metros de cintura é uma esquisitice. Este é o modesto dos bordos europeus, árvore de sebe e de orla de bosque que costuma parar perto dos 15 metros e raramente engrossa, e tem um tronco mais largo do que qualquer das azinheiras classificadas que estão a poucas dezenas de metros para nascente.\n\nChega aos 13,5 metros no extremo poente do Parque Bensaúde, a quarta das quatro árvores que o Estado destacou aqui em 2004. Não há idade registada para ele. Os bordos-comuns são difíceis de datar sem lhes cortar o tronco e este nunca foi levantado para efeitos de idade, por isso a resposta honesta é que é velho o suficiente para ter passado muito da dimensão habitual, e mais preciso do que isso não há.\n\nOlhe para as folhas para ter a certeza de que encontrou a árvore certa. O bordo-comum tem folhas pequenas de cinco lobos com pontas rombas e arredondadas, muito diferentes dos bordos de bico afiado dos parques e das ruas, e os ramos mais velhos ganham muitas vezes cristas de cortiça que se sentem com o polegar. No outono fica amarelo limpo, por pouco tempo, antes de o clima ameno de Lisboa lhe tirar a folha.\n\nO parque foi a Quinta de Santo António das Frechas, propriedade seiscentista, o que explica como é que um bordo do norte da Europa aqui foi parar. Alguém o plantou num jardim privado e deixou-o crescer."
-  },
-  "lis_026": {
-   "name": "A Melaleuca do Jardim Constantino",
-   "species": "Melaleuca-espinhosa (Melaleuca styphelioides)",
-   "age_estimate": "cerca de 115 anos",
-   "access": "Livre, jardim público",
-   "transport": "Curta caminhada da estação Arroios ou Anjos (Metro, Linha Verde)",
-   "story": "Lisboa tem uma melaleuca-espinhosa e é esta. O registo português do Jardim Constantino chama-lhe única na cidade, o que é uma afirmação forte para um jardim de um quarto de hectare.\n\nA Melaleuca styphelioides é uma árvore australiana cultivada pela casca: branca, esponjosa, depositada em camadas de papel onde se afunda o polegar, a descamar em folhas à volta de um tronco de 1,58 metros de perímetro. As folhas são pequenas, rígidas e de ponta aguçada, que é a metade espinhosa do nome. Com 18 metros de altura e 11 de copa, é a alta e fina deste jardim. A figueira a poucos passos é a larga.\n\nO jardim abriu em 1889 e tem o nome de Constantino José Marques de Sampaio e Melo, florista. Tem lago, parque infantil e uma estátua de Prometeu, e fica em Arroios a duas ruas do metro, por isso esta árvore passou a vida inteira numa praça de cidade e não num parque.\n\nFoi classificada em 1996, meio século depois da vizinha. O registo anotou 107 anos quando foi medida em 2017, ou seja uns 115 agora, o que a poria no chão por volta de 1910, uma geração depois do próprio jardim."
-  },
-  "lis_027": {
-   "name": "A Figueira-da-Austrália do Jardim Constantino",
-   "species": "Figueira-da-Austrália (Ficus macrophylla)",
-   "age_estimate": "cerca de 115 anos",
-   "access": "Livre, jardim público",
-   "transport": "Curta caminhada da estação Arroios ou Anjos (Metro, Linha Verde)",
-   "story": "Um jardim de um quarto de hectare em Arroios tem uma figueira com 26 metros de copa, o que explica quase toda a sombra do sítio. O Jardim Constantino é pequeno: um lago, um parque infantil, uma estátua de Prometeu e duas árvores protegidas. Esta é a larga.\n\nA Ficus macrophylla vem da costa leste da Austrália e foi plantada por toda a Lisboa no fim do século XIX e no princípio do XX exactamente por esta razão. Cresce depressa, atira uma copa densa e deita as raízes de contraforte que fazem um exemplar adulto parecer que está a segurar o chão. Com 24 metros de altura sobre um tronco de 2,33 metros de perímetro, esta cumpriu a tarefa.\n\nEstá protegida desde 1947, o que é cedo. A melaleuca a poucos metros teve de esperar até 1996 pelo mesmo estatuto. O registo anotou 107 anos quando a árvore foi medida em 2017, ou seja uns 115 hoje.\n\nLisboa tem figueiras-da-Austrália mais conhecidas, no Príncipe Real e no Jardim da Estrela, ambas com palco próprio no centro da cidade e público à frente. Esta tem uma praça de bairro, um banco por baixo e nenhuma fila."
-  },
-  "lis_028": {
-   "name": "As Belas-Sombras do Jardim António Feijó",
-   "species": "Bela-sombra (Phytolacca dioica)",
-   "age_estimate": "cerca de 115 anos",
-   "access": "Livre, jardim público",
-   "transport": "Curta caminhada da estação Arroios ou Anjos (Metro, Linha Verde)",
-   "story": "Os dois troncos mais gordos deste jardim não são bem madeira. A Phytolacca dioica, a bela-sombra, é uma erva gigante e não uma árvore, e a base inchada que a faz parecer antiga é tecido mole, cheio de água, que se amolga com uma unha. Cresce depressa, não produz madeira que se aproveite e desfaz-se mais cedo do que o volume faz supor.\n\nSão duas aqui, e saíram quase idênticas: 10,45 e 10,4 metros de perímetro, 17,6 e 16,4 metros de altura. Estão a uns 30 metros uma da outra, uma no canto sudeste do jardim e outra no topo, por isso a visita é às duas ou a nenhuma.\n\nO jardim envolve a Igreja de Nossa Senhora dos Anjos, inaugurada em 1911, e o par foi plantado por alturas do acabamento da igreja. Foram classificadas em 1947, das primeiras ordens de protecção de Lisboa, e reclassificadas em 2018.\n\nO registo anotou-lhes 105 anos quando foram medidas em 2015, ou seja uns 115 agora. Com uma bela-sombra esse número é ainda mais mole do que o costume. O tronco não deposita os anéis anuais bem arrumados que se contariam num carvalho, por isso qualquer idade é deduzida do tamanho e do que digam os registos de plantação."
-  },
-  "lis_029": {
-   "name": "A Bela-Sombra da Praça António Sardinha",
-   "species": "Bela-sombra (Phytolacca dioica)",
-   "age_estimate": "cerca de 115 anos",
-   "access": "Livre, praça pública",
-   "transport": "Curta caminhada da estação Arroios (Metro, Linha Verde) ou autocarros da Penha de França",
-   "story": "As raízes desta saem do chão a parecer mais troncos. A própria junta de freguesia, na sua página sobre a Praça António Sardinha, descreve uma bela-sombra centenária cujas raízes se assemelham a troncos que convergem num só, o que é uma descrição justa do que faz uma Phytolacca dioica grande. A base espalha-se em contrafortes e dobras até ser difícil dizer onde acaba a árvore e começa o chão.\n\nCom 10,9 metros de perímetro é mais grossa do que qualquer uma do par que está a 600 metros dali, no Jardim António Feijó. A copa chega a quase 21 metros de largura numa árvore de apenas 16,2 metros de altura, ou seja, é mais larga do que alta.\n\nNada disto é madeira. A bela-sombra é uma erva gigante dos pampas sul-americanos, tecido mole cheio de água, que é a razão de inchar tão depressa e de uma máquina desatenta lhe poder fazer estragos que um carvalho encolheria os ombros.\n\nEstá ao lado de uma escola primária e, quando a praça foi refeita em 2023, as obras foram desenhadas à volta dela. Foi classificada em 2000. O registo anotou 105 anos na medição de 2015, ou seja uns 115 agora, estimativa a partir do tamanho e não de uma plantação datada."
-  },
-  "lis_030": {
-   "name": "O Dragoeiro da Quinta Conde dos Arcos",
-   "species": "Dragoeiro (Dracaena draco)",
-   "age_estimate": "cerca de 215 anos",
-   "access": "Livre, parque urbano público (três portões, abertos aproximadamente das 6:30 às 20:00 ou 22:00 consoante a época)",
-   "transport": "Nos Olivais; as estações de metro mais próximas são Encarnação ou Bela Vista (Linha Vermelha), a uns 15 a 20 minutos a pé",
-   "story": "Este dragoeiro é mais do dobro de largo do que de alto: 6,2 metros de altura debaixo de uma copa de quase 14 metros, num tronco de 4,75 metros de perímetro. O Dracaena draco cresce assim de propósito. Levanta um caule, floresce, bifurca-se, e outra vez, até um exemplar velho parecer um guarda-chuva feito de guarda-chuvas.\n\nNinguém o consegue datar como deve ser. Os dragoeiros não depositam anéis anuais, por isso todas as idades publicadas para um deles são deduzidas da ramificação ou de registos. O registo anotou 200 anos quando o mediu em 2010, o que lhe dá uns 215 agora, e é mais ou menos toda a precisão que esta espécie permite.\n\nCresce na Quinta Conde dos Arcos, uma propriedade privada que a câmara de Lisboa expropriou em 1940 e mais tarde abriu como parque de nove hectares nos Olivais. O antigo palácio alberga a escola de jardinagem municipal. A junta de freguesia identifica este dragoeiro como a única árvore de interesse público entre as 28 espécies que ali crescem, e faz visitas guiadas gratuitas em datas marcadas ao longo do ano.\n\nA seiva corre vermelha onde a casca é cortada, que é de onde vem o nome. O sangue-de-drago saía das Canárias e da Madeira como tinta e como remédio há séculos, muito antes de alguém se lembrar de plantar um destes em Lisboa."
-  },
-  "lis_031": {
-   "name": "O Plátano do Hospital Pulido Valente",
-   "species": "Plátano (Platanus x acerifolia)",
-   "age_estimate": "mais de 350 anos",
-   "access": "Livre, terrenos de um hospital público (Hospital Pulido Valente, da ULS Santa Maria); a árvore está no pátio aberto do Edifício D. Carlos, visível sem entrar em zonas clínicas, mas quem for deve comportar-se como visita do hospital",
-   "transport": "Junto ao Hospital Pulido Valente / Lumiar (Metro, Linha Amarela, curta caminhada)",
-   "story": "O registo nacional dá a este plátano 364 anos. Se estiver certo, já aqui estava antes do hospital, antes da estrada e antes de quase todo o Lumiar.\n\nTrate o número com cuidado. Vem do processo de classificação aberto em 1945 e tem sido repetido desde então, inclusive no livro Árvores da Cidade, que dá os mesmos 364 anos e valores de altura e de copa quase iguais. Duas fontes, uma origem, e ninguém alguma vez datou a madeira. Somando os anos passados desde esse levantamento, o próprio número do registo daria hoje uns 375.\n\nO que foi de facto medido já chega: 5,85 metros de perímetro, 28 metros de altura e uma copa de 37 metros, nove metros mais larga do que a árvore é alta. Ocupa o pátio de entrada do Edifício D. Carlos, no Hospital Pulido Valente, e o hospital faz ali por baixo as suas comemorações de aniversário.\n\nIsto não é um parque. É um hospital público em funcionamento, e a árvore está no pátio aberto, onde se vê sem chegar perto de zonas clínicas, por isso vá como iria ao jardim de alguém e não se meta no caminho.\n\nO plátano é a árvore que Lisboa plantou em todo o lado no século XIX, para dar sombra. Este, se o processo estiver certo, já era velho quando essa moda começou."
-  },
-  "lis_032": {
-   "name": "O Plátano da Travessa do Arco da Torre",
-   "species": "Plátano (Platanus x acerifolia)",
-   "age_estimate": "cerca de 165 anos",
-   "access": "Livre, rua pública",
-   "transport": "Curta caminhada de Belém ou do Restelo, servida pelo eléctrico 15E e por várias carreiras de autocarro ao longo da Avenida da Índia",
-   "story": "A dois minutos da fila da Torre de Belém, numa travessa onde quase nenhum visitante entra, está um plátano de 29 metros. A Travessa do Arco da Torre corre paralela à Avenida da Torre de Belém, perto do Largo da Princesa, e esta é a árvore que passa por cima das cumeeiras ao longo dela.\n\nO tronco tem 3,75 metros de perímetro e a copa espalha-se por quase 27,5 metros, dimensões de parque para uma coisa que cresce numa rua pública sem jardim à volta. Os plátanos de rua costumam ser cortados a fundo por causa dos fios e das janelas. A este deixaram-no espalhar-se.\n\nO registo anotou 150 anos quando foi medido em 2010, ou seja uns 165 agora, e a cobertura independente das árvores classificadas de Lisboa dá-lhe aproximadamente o mesmo. Foi classificado em 2000.\n\nEssa idade coloca a plantação nos anos 60 do século XIX, quando Belém ainda estava a ser cosida à cidade e muito antes de a frente ribeirinha ganhar os monumentos, os museus e as multidões. Tudo o que hoje traz aqui vários milhões de pessoas por ano chegou à vista desta árvore, e ela assistiu ao conjunto de uma rua atrás, por cima dos telhados, com uns carros estacionados por baixo."
-  },
-  "lis_033": {
-   "name": "O Cipreste-de-Monterey do Parque do Caramão da Ajuda",
-   "species": "Cipreste-de-Monterey (Cupressus macrocarpa)",
-   "age_estimate": "cerca de 95 anos",
-   "access": "Livre, parque público",
-   "transport": "Em Belém/Ajuda, acessível de autocarro pela Calçada da Ajuda; não há estação de metro nas proximidades",
-   "story": "O cipreste-de-Monterey tem uma das áreas naturais mais pequenas de qualquer conífera: dois promontórios na costa da Califórnia, junto a Monterey, alguns quilómetros de falésia e mais nada em estado selvagem. Também cresce à vontade em quase qualquer sítio ameno e costeiro, que é como um deles foi parar a uns 9.000 quilómetros dali, com um tronco de 3,9 metros, num parque acima de Belém.\n\nCom 18,5 metros de altura e 17 de copa, é uma árvore pesada, larga e escura, a forma que os ciprestes-de-Monterey ganham depois de o vento lhes trabalhar umas décadas: ramos horizontais, topo achatado, folhagem em ramalhetes densos que cheiram a limão quando esmagados.\n\nEstá no Parque do Caramão da Ajuda, que é um parque público e não a Tapada da Ajuda ao lado. Vale a pena acertar nessa distinção antes de sair de casa, porque são vizinhos e só um deles tem esta árvore.\n\nPara além do registo do Estado, ninguém parece ter escrito sobre ela. O registo classificou-a em 2000 e anotou 85 anos quando foi medida em 2015, o que lhe dá uns 95 agora, e são esses os únicos números publicados. É um registo sólido até onde vai, e é tudo o que se sabe sobre este cipreste."
-  }
- }
 }
