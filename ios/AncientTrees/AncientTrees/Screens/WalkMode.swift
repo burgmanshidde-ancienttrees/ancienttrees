@@ -44,6 +44,7 @@ struct WalkMode: View {
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
+    @Environment(ReviewPrompt.self) private var reviewPrompt
     // Both only to hand on to the collect sheet: a sheet does not inherit
     // observables from the view that presents it, which is the trap ContentView's
     // appObjects() exists for and which trapped the app twice in two days.
@@ -183,6 +184,7 @@ struct WalkMode: View {
                 .environment(saved)
                 .environment(account)
                 .environment(nudge)
+                .environment(reviewPrompt)
                 .environment(sightings)
                 .environment(navigator)
                 .environment(units)
