@@ -323,6 +323,13 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
           python3 scripts/sightings_inbox.py
+          # Pillow only when there is a photograph to publish. The runner does
+          # not carry it, and sightings_publish.py needs it to rotate the
+          # pixels upright; without this the run would judge a photograph and
+          # then fail to put it anywhere, which is the worst of both.
+          if [ "$(python3 -c "import json;print(len(json.load(open('data/sighting-queue.json'))['queue']))" 2>/dev/null || echo 0)" != "0" ]; then
+            pip install --quiet pillow || true
+          fi
           if ! git diff --quiet -- data/sighting-queue.json data/sightings-processed.json data/leads; then
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"
