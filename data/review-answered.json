@@ -40,6 +40,10 @@
     "2026-09-03": {
       "note": "hero tagline goldInk WARN: checked, Home.swift:274 already reads Brand.gold (matches HeroCover.swift); no fix needed, likely already corrected in an earlier commit",
       "at": "2026-09-04T02:35:40+00:00"
+    },
+    "2026-09-04": {
+      "note": "Wrote the regression test for the invented coordinate (c4598e78): CollectSheet.route() is a pure function now and APhotographNeverGetsAnInventedCoordinate covers all four cases; proven to fail on the pre-fix behaviour. f3211e03",
+      "at": "2026-09-04T13:55:20+00:00"
     }
   }
 }

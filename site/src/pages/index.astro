@@ -416,6 +416,24 @@ const scripts = SEARCH_WIDGET_JS;
         button and AllTrails' has the search field. Nothing is lost: /explore
         is the Map item in the bar at every width, and the footer carries it.
 
+        The SHAPE is Polarsteps', copied on purpose (Hidde, 2026-09-04: "kun je
+        precies het ontwerp van deze knop overnemen maar dan met ons app logo",
+        with their phone homepage beside it). Measured off that screenshot
+        rather than guessed: a white pill about 46 tall, the app icon 28 square
+        sitting close to the left edge, a small gap, then the label in 17px
+        bold near-black, and a soft shadow under the whole thing.
+
+        The picture is the REAL app icon, ios/.../AppIcon.png resized, and not
+        the site's own icon-512.png, which is an older drawing of the same tree.
+        This button's whole trick is showing the thing the reader will find on
+        their home screen afterwards, so it has to be that file.
+
+        This is not the App Store badge and does not pretend to be one; that
+        badge is Apple's artwork, is never redrawn, and lives on /app and in the
+        download dialog (CONVENTIONS.md 2026-09-03). A brand's own pill carrying
+        its own icon is a different control, which is exactly what Polarsteps,
+        komoot and AllTrails all put in their hero.
+
         And it says "Get the app" while the bar says "Download the app" (Hidde:
         "maybe say get the app so you dont say the same thing twice"). English
         typed here rather than pulled from chrome(): this page exists in
@@ -425,7 +443,7 @@ const scripts = SEARCH_WIDGET_JS;
         rest. */}
     <p class="hero-links">
       <a class="hero-app" href="/app" data-app-download data-ev="app-cta">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7.5 11 12 15.5 16.5 11"/><path d="M5 19h14"/></svg>Get the app</a>
+        <img src="/assets/app-icon.png" width="96" height="96" alt="" loading="eager" decoding="async">Get the app</a>
     </p>
   </div>
 </div>
