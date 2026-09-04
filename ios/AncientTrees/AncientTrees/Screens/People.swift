@@ -79,6 +79,38 @@ struct PeopleView: View {
                     Text(emptyLine)
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 }
+                // INVITE SOMEBODY, on the screen where you have just found out
+                // there is nobody (Hidde, 2026-09-04: "laten we dan de
+                // uitnodigingslink doen, conventie").
+                //
+                // Convention: Strava, AllTrails and Instagram all put an
+                // "Invite friends" row in exactly this place and all three do
+                // the same thing with it, which is the system share sheet with
+                // one line and a link. Nobody builds a screen for it, and
+                // nobody asks for an email address to send it to: the sheet
+                // already knows every way this person contacts anybody.
+                //
+                // THE LINK IS THE APP STORE, not a profile page, and that is a
+                // deliberate limit rather than a first version. A link that
+                // makes the follow happen by itself would have to name the
+                // sender on a public web page, and this site does not publish
+                // a person's name (2026-08-11). So the invitation brings
+                // somebody to the app, and finding each other is still the
+                // search above.
+                if source == .search {
+                    ShareLink(item: URL(string: "https://apps.apple.com/app/id6806177833")!,
+                              message: Text("Come and see which ancient trees are near you. I am collecting them on Ancient Trees.")) {
+                        HStack(spacing: 12) {
+                            Image(systemName: "person.badge.plus")
+                                .frame(width: 32).foregroundStyle(Brand.moss)
+                            Text("Invite a friend").font(.callout).foregroundStyle(Brand.ink)
+                            Spacer(minLength: 0)
+                        }
+                        .frame(minHeight: 44)
+                        .contentShape(.rect)
+                    }
+                    .accessibilityIdentifier("people-invite")
+                }
                 ForEach(visible, id: \.user_id) { p in
                     HStack(spacing: 12) {
                         ZStack {
