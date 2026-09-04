@@ -10,6 +10,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-04 (continuation) - Cagliari's Italian overlay (Contract J)
+
+`langcheck.py --next` named Cagliari the highest-impression untranslated Italian page (43 impressions, its English twin, over the ten-day window) with no `it` overlay yet. Hand-written full overlay for all 10 trees plus the city and question page, matching the established Italian style (Rome/Palermo/Naples/Florence/Milan/Bologna/Venice overlays, "alberi monumentali" as the search term). Faithful to the English facts throughout, including the honest gaps (Corongiu's lime keeps its unconfirmed trail-access note, the Tintitaco keeps its two disagreeing age figures). `i18ncheck.py` caught a missing `intro` key and two over-length meta fields (174 and 165 chars against the 155 limit), fixed before commit.
+
 ## 2026-09-04 (continuation) - Ibiza register verify pass: 2 verified, both below their floor, and one belongs to Formentera not Ibiza
 
 Dispatched a verify pass on Ibiza's 5 register candidates (balears-arbres-singulars.json). 3 turned out to sit on private land, the register's own `private: true` flag confirmed by independent sources (periodicodeibiza.es); one of them, the Olivera de N'Espanya, a possibly 1,000+-year-old olive and plausibly the largest in Spain, is the single most tempting exclusion of the pass, but its own sources say its exact location is deliberately kept low-profile and it stands on private land. All recorded in `data/leads/ibiza.json` with reasons, alongside the 3 group-designation entries the brief had already excluded.
