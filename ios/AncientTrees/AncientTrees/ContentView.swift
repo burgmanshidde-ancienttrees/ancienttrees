@@ -480,8 +480,22 @@ struct ContentView: View {
                     // call site did exactly that for a day (Profile's identity
                     // row still asked for tab 3), and the cost of the guard is
                     // a comparison.
-                    if let new { if (0...2).contains(new) { tab = new }
-                                 navigator.selectTab = nil }
+                    if let new {
+                        if (0...2).contains(new) {
+                            tab = new
+                        } else {
+                            // AND IT SAYS SO NOW. Dropping it silently is what
+                            // let a dead "Add a tree" button sit on Discover
+                            // for over a week (2026-09-04): the guard did its
+                            // job, the button did nothing, and nothing anywhere
+                            // said why. In a debug build this stops the app in
+                            // the test that hits it; in release it still fails
+                            // safe, because a dead end is worse than a dead
+                            // button.
+                            assertionFailure("selectTab \(new) matches no tab; the camera is an action, not a tab. Use navigator.collectNearby.")
+                        }
+                        navigator.selectTab = nil
+                    }
                 }
                 .onChange(of: navigator.showCityOnMap) { _, new in
                     // Same handling as showOnMap below: pop the map's stack and
