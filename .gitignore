@@ -21,3 +21,9 @@ data/i18n/*/*.json.partial
 # pass. Underscore-prefixed names are the convention for "not a city" and
 # data/leads/ already uses it.
 data/i18n/*/_*.json
+
+# Xcode per-user editor state: window positions and open tabs, not code.
+# It changes every time the project is opened, and while it was tracked it made
+# `release.py` refuse to archive on a "dirty ios/" that was nothing of the kind
+# (2026-09-04). Apple ships the same line in its own .gitignore template.
+**/xcuserdata/
