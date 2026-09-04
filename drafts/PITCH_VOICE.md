@@ -88,6 +88,11 @@ reader draw the conclusion.
 - NO: "Every tree is researched and written by hand, one at a time, in seven languages."
 - YES: "Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo."
 
+**Opening on what nobody else can do, so we can answer 'we can'. Same habit as the unasked contrast, wearing a setup-and-payoff coat. State the wonder and then say what we do with it** (added 2026-09-04)
+
+- NO: "Every city has a few trees that were already old when it was built, and almost nobody can tell you where they are. Ancient Trees does."
+- YES: "Some of the trees in your city were standing before the city was. Ancient Trees takes you to them."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
