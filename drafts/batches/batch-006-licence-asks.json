@@ -1,7 +1,7 @@
 {
  "batch": "006-licence-asks",
  "note": "Every register this project is blocked on that has NOT already been asked, on Hidde's instruction 2026-08-16 ('laten we ze dan nu allemaal tegelijk uit de deur gooien'). Started as five; the Woodland Trust and Catalonia were cut because he remembered mailing them and drafts/OUTREACH.md confirms both went on 2026-08-08 with no reply yet. That file's own guidance is that a polite follow-up is reasonable after three or four weeks, and eight days is not that. Texts rewritten in his own style from the Arnhem mail he supplied the same day: name and what he builds first, goal stated plainly, one ask, one tree question. Reasoning in drafts/batch-licence-asks.md. Every mail says in one sentence that the site is free today and may have a paid tier later, because claiming non-commercial would be a lie we would have to walk back. Send: python3 scripts/outreach_send.py drafts/batches/batch-006-licence-asks.json --send",
- "status": "approved_by_hidde",
+ "status": "sent_complete",
  "mails": [
   {
    "to": "Council@cityofsydney.nsw.gov.au",
