@@ -13,6 +13,66 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-09-04
+
+Reviewed commits since the last review (f66c7324, 2026-09-03 11:19 UTC)
+through 61cc80c6 (~240 commits, mostly routine assembly-line work: dozens of
+single-tree "famous-tree" places opened across Japan/Australia/Germany/
+Poland/UK/Brazil/Bulgaria/France, register scouting, photo sweeps, outreach
+batches). Sampled the substantial, non-routine ones: the App Store review
+prompt build (`b54a1542`/`a08eafd8`/`47c131db`/`63ed91f3`, self-reviewed
+in-session and correctly following Apple's SKStoreReviewController guidance,
+recorded in `CONVENTIONS.md`), the on-device camera GPS-fabrication fix
+(`c4598e78`), the walks/Season Radar ad removal from the site and app
+(`f8b4539b`, `117f185f`, `7031e30a`), the App Store announcement on the
+website (`a98fe78a`, `a5694be0`), the Bari booking-access publish
+(`95251f0d`), the personal-email removal from outbound mail
+(`e4a788c2`), the breadcrumb-schema fix (`d06293b0`), the tree-card
+boundary restyle (`ec65076b`), the My trees/Favourites per-tree state fix
+(`bc6eeaf0`), the `/t` share-page redesign (`9a5dc878`), and the sitemap
+lastmod-by-content-hash rewrite (`1d061928`). Ran `python3 scripts/qa.py`
+(6145 pages, clean) and `python3 scripts/health.py` (all green, no
+BLOCKER, REVIEW.md's 2026-09-03 WARN already answered and verified fixed:
+`Home.swift`'s hero tagline is back on `Brand.gold`). Spot-checked the
+built site: `/app`, `/`, `/bari` (new bar_005 tree renders correctly, title
+and FAQ updated from four to five trees, "Are Bari's trees free to see?"
+correctly split into free/paid), `/prague` (new Elm of Zatory, count
+correct at 18), `/t`, and `/account` (Seen badge and per-tree heart state
+both render).
+
+**WARN, APP — the exact bug just fixed on-device has no regression test,
+despite a UI test suite built specifically for this state.**
+`ios/AncientTrees/AncientTreesUITests/RefusedWalk.swift` exists, by its own
+header comment, because "this app is ABOUT where you are standing, so it is
+the state most likely to make it look broken," and CLAUDE.md calls a
+fabricated location the product's "one unforgivable error." `c4598e78`
+(today) fixed exactly that failure mode: `CollectSheet.resolve()` was
+recording a confident `.device` GPS fix even when location was off,
+silently falling back to the last remembered fix or Dam square, found only
+because Hidde happened to test it on his own phone. `RefusedWalk`'s one
+test that opens the collect sheet with location refused,
+`testCollectSaysWhatItCannotDoRatherThanShowingNothing`, never taps the
+camera button; it only asserts the sheet isn't blank. No test anywhere
+exercises `resolve()` taking its new `.place` branch. The fix itself reads
+correct (routes to the same honest pin-drag stage a location-less
+photograph already uses), but a later refactor of `CollectSheet`'s photo
+flow could reintroduce the exact fabrication CLAUDE.md hard rule 10 forbids
+and nothing in CI would notice. A session (not a night run, since this is
+app test-authoring) should add a case to `RefusedWalk` that launches
+`-collect` with location refused, taps the camera affordance, and asserts
+the flow lands on the pin-drag/`.place` stage rather than silently
+recording a `.device` fix.
+
+Everything else read clean: no em dashes or banned words, no
+builder-speak toward the visitor, no superlative collisions in the sampled
+pages, the Android-app copy change and the App Store announcement are
+Hidde's own explicit wording rather than a run's invention, and the six
+rotated app screenshots (`species-pick.png`, `species.png`,
+`tree-nophoto.png`, `tree.png`, `walk-begin.png`, `walk.png`) show nothing
+that contradicts itself, overpromises, or leaves an unexplained control.
+
+---
+
 ## 2026-09-03
 
 Reviewed commits since the last review (3f36e214, 2026-09-02 11:19 UTC)
