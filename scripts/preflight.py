@@ -1520,6 +1520,28 @@ def _haversine(lat1, lon1, lat2, lon2):
         * math.sin((lon2 - lon1) * p / 2) ** 2))
 
 
+def check_city_indent():
+    """A city file is written with indent=2, the way 337 of 353 were on
+    2026-09-04; the other 24 had been rewritten by a script using indent=1.
+
+    A NOTE rather than a FAIL. Two writers with two indents means every touch
+    by the other one rewrites the whole file: on 2026-09-03 one commit
+    re-indented 21 files without changing a fact and restamped 2,035 sitemap
+    URLs as changed that day. Per-page lastmod (scripts/lastmod.py) is immune
+    to this now, so the remaining cost is an unreadable diff; the note exists
+    so the next one-space writer is caught on its first file.
+    """
+    out = []
+    for p in sorted(glob.glob("data/cities/*.json")):
+        with open(p, encoding="utf-8") as fh:
+            fh.readline()
+            second = fh.readline()
+        if second.startswith(" ") and not second.startswith("  "):
+            out.append(f"{os.path.basename(p)} is indented with one space; city files use "
+                       "indent=2 (a script writing indent=1 rewrites the whole file)")
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
@@ -1544,7 +1566,7 @@ def main():
         print("FAIL " + line)
     for line in (check_stacked_pins() + check_search_names() + check_paid_share()
                  + check_country_counts() + check_leads_already_published()
-                 + check_tree_labels_are_translated()):
+                 + check_tree_labels_are_translated() + check_city_indent()):
         print("NOTE " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
     return 1 if problems else 0

@@ -10,6 +10,8 @@ import fs from "node:fs";
 import path from "node:path";
 import type { AstroIntegration } from "astro";
 import { buildRedirectStubs } from "./redirect-map";
+import { slugify } from "./slug";
+import { QUESTION_SLUG } from "./i18n";
 
 const BASE_URL = "https://ancienttrees.app";
 
@@ -43,7 +45,7 @@ export default function sitemapIntegration(): AstroIntegration {
         // plausible part of why 349 URLs sat at "Discovered - currently not
         // indexed" on 2026-08-13: found, never crawled. Found by reading the
         // generated sitemap after Hidde pasted that Search Console reason.
-        const lastmod = sourceDates(distRoot);
+        const lastmod = pageDates(distRoot, sourceDates(distRoot));
         const fallback = new Date().toISOString().slice(0, 10);
         const urls = htmlFiles.map((f) => canonicalFor(path.relative(distRoot, f))).sort();
         const entries = urls
@@ -66,6 +68,69 @@ export default function sitemapIntegration(): AstroIntegration {
   };
 }
 
+
+/** Per-PAGE dates from data/lastmod.json, falling back to per-file git dates.
+ *
+ * Written 2026-09-04. The per-file date below is right for a page with a file
+ * of its own and wrong for a tree, because a city file holds twenty: one
+ * commit re-indented 21 city files without changing a fact, another set a
+ * field on 139 trees across 69 files, and 2,035 of 4,244 URLs told Google they
+ * changed that day. scripts/lastmod.py hashes what each page is actually built
+ * from and records the date that hash last moved; this reads the map and only
+ * asks git for pages the map does not cover (species, countries, collections,
+ * standing pages), which have a file each and are dated right already. The
+ * RULE lives in the Python script and only its ANSWER travels here, per the
+ * answer-not-rule convention in CLAUDE.md: this function never hashes anything.
+ */
+function pageDates(
+  distRoot: string,
+  fallback: (url: string) => string | undefined
+): (url: string) => string | undefined {
+  const repo = path.resolve(distRoot, "..", "..");
+  let entries: Record<string, { h: string; d: string }> = {};
+  try {
+    entries = JSON.parse(fs.readFileSync(path.join(repo, "data", "lastmod.json"), "utf-8")).entries ?? {};
+  } catch {
+    return fallback;
+  }
+  const langs = new Set(Object.keys(QUESTION_SLUG));
+  const questionSlugs = new Set(["oldest-tree", ...Object.values(QUESTION_SLUG)]);
+  // slug -> id per city, from the same slug rule the pages use.
+  const slugIds = new Map<string, Map<string, string>>();
+  const idsFor = (city: string): Map<string, string> => {
+    const hit = slugIds.get(city);
+    if (hit) return hit;
+    const m = new Map<string, string>();
+    try {
+      const doc = JSON.parse(fs.readFileSync(path.join(repo, "data", "cities", `${city}.json`), "utf-8"));
+      for (const t of doc.trees ?? []) {
+        const loc = t.location ?? {};
+        if (t.story && loc.latitude != null && loc.longitude != null && t.id) m.set(slugify(t.name), t.id);
+      }
+    } catch {
+      /* no such city file: the map has nothing for it either */
+    }
+    slugIds.set(city, m);
+    return m;
+  };
+  return (url: string) => {
+    const p = url.replace(BASE_URL, "").replace(/^\//, "").replace(/\/$/, "");
+    const seg = p.split("/").filter(Boolean);
+    let prefix = "";
+    if (seg.length && langs.has(seg[0])) {
+      prefix = `${seg.shift()}:`;
+    }
+    let key: string | undefined;
+    if (seg.length === 1) key = `${prefix}city:${seg[0]}`;
+    else if (seg.length === 2 && questionSlugs.has(seg[1])) key = `${prefix}q:${seg[0]}`;
+    else if (seg.length === 2) {
+      const id = idsFor(seg[0]).get(seg[1]);
+      if (id) key = `${prefix}tree:${id}`;
+    }
+    const hit = key ? entries[key] : undefined;
+    return hit?.d ?? fallback(url);
+  };
+}
 
 /** Map a canonical URL to the commit date of the file it is generated from.
  *

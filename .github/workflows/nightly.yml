@@ -262,6 +262,22 @@ jobs:
             git push
           fi
 
+      # The per-page lastmod record (scripts/lastmod.py): deploy.yml computes
+      # it before every build and does not commit it, so this is where the
+      # dates survive. A page that changed reads "today" until this runs, and
+      # it runs twelve times a day.
+      - name: Record when each page last changed
+        continue-on-error: true
+        run: |
+          python3 scripts/lastmod.py --write
+          if ! git diff --quiet data/lastmod.json; then
+            git config user.name "claude[bot]"
+            git config user.email "41898282+claude[bot]@users.noreply.github.com"
+            git add data/lastmod.json
+            git commit -m "Record when each page last changed"
+            git push
+          fi
+
       - name: Take down a photograph whose account is gone
         # /terms and /privacy promise that deleting an account removes what was
         # published with it. The database keeps that promise by cascade; a
