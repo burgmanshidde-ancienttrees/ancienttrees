@@ -2,6 +2,20 @@
 
 <!-- archive-index -->
 
+## Submissions batch, 2026-09-04 (ids 64-83): votes and one already-queued tree lead
+
+20 unprocessed rows, all from today. 18 are "worth it" / "vote undone" pairs on
+sar_001, ful_001, utr_002 and pad_001 (mostly one account exercising the new
+compact vote button, per WorthIt.swift's 2026-09-04 redesign) — bookkeeping,
+verified nothing, mailed nothing, per the standing rule for vote-undo rows.
+The one real submission, id 70 (kind: tree, Baarn, GPS 52.21398,5.29701,
+"standing at the tree"), is the app's own sighting 4d6fb810, already fetched
+and recorded by `sightings_inbox.py` earlier today at
+`data/leads/_sightings.json` ("A tree I found", no species, 554m from the
+nearest published tree) with outcome "lead". Nothing more to verify from a
+name-only, species-unknown photograph; it waits like any other lead. All 20
+ids appended to `data/submissions-processed.json`.
+
 ## Lisbon, 2026-09-04: +2 from getLISBON's own writing
 
 getLISBON (contact@getlisbon.com) replied to batch-006 suggesting two jacarandas
