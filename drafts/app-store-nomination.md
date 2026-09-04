@@ -2,22 +2,17 @@
 
 Fill these into App Store Connect: sidebar > Featuring > Nominations > + > Create Nomination.
 
-## Nomination Name  (41/60)
-Explore the remarkable old trees near you
+## Nomination Name  (43/60)
+Explore the remarkable old trees around you
 
-If you prefer "in your city", use it: "Explore remarkable old trees in your
-city" is 38 characters and reads more concretely. I kept "near you" because the
-app works from where you are standing and a large share of what we map is on
-islands and in villages, and because it is the value proposition in CLAUDE.md
-almost word for word.
+Hidde's wording, and both words are his. "Explore" beat my "Find" because
+finding is a search and exploring is an afternoon outside, which is what the
+product is; Apple's own Today-tab writes in the same discovery voice. "Around
+you" beat "near you" because near is a distance and around is where you are
+standing in the middle of something, which is the promise.
 
-"Explore" is Hidde's and is better than my "Find": finding is a search,
-exploring is an afternoon outside, which is what the product actually is.
-Apple's own Today-tab writes in the same discovery voice.
-
-The field is internal either way. This is the app's INTRODUCTION, so broad is
-right; a narrower angle, the ginkgos in November, is what a second nomination
-is for.
+The field is internal. This is the app's INTRODUCTION, so broad is right; the
+narrower angle, the ginkgos in November, is what a second nomination is for.
 
 ## Nomination Type
 App Launch
