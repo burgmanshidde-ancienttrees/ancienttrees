@@ -230,7 +230,21 @@ struct HomeView: View {
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
             Button {
-                navigator.selectTab = TabBar.collectTag
+                // THE CAMERA IS NOT A TAB (Hidde, 2026-09-04: "add a tree knop
+                // in discover onderaan doet het nog steeds niet").
+                //
+                // This asked for TabBar.collectTag, which was a real tab until
+                // the bar went to three destinations and a separate camera
+                // disc on 2026-08-26. Since then ContentView's guard has
+                // silently dropped any selection outside 0...2, because a
+                // selection matching no tag leaves the TabView on its first
+                // page with no bar and no way back. The guard was right and
+                // this call site was the second one it was quietly saving:
+                // Profile's identity row was the first, found a week earlier.
+                //
+                // So it does what every other entry to the camera does, which
+                // is ask for the deed rather than for a place.
+                navigator.collectNearby = true
             } label: {
                 Label("Add a tree", systemImage: "camera.fill")
             }
