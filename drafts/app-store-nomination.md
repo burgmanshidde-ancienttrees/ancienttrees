@@ -55,38 +55,36 @@ en, nl, es, it, de, pt, fr, ja
 https://ancienttrees.app
 ```
 
-## Description  (699/1000)
+## Description  (594/1000)
 
-Only the App Store team sees this, which is the thing that took longest to
-land: it is a pitch to Apple's editors, not the public listing. An editor
-already has the feature list from the submission form, so a bullet list of
-features spends the whole budget re-typing what they have.
+Only the App Store team sees this. It is a pitch to Apple's editors, not the
+public listing, so it never repeats the feature list they already have.
 
 ```
 Some of the trees in your city were standing before the city was. Ancient Trees takes you to them.
 
-An old ginkgo turns completely gold for two weeks in November and then drops nearly every leaf at once. The app tells you which trees near you are turning this week, and builds a walk that strings a few of them together. There are about eight weeks in the year when a tree is worth crossing town for, and they start now.
+Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything. Tap one and you get what it is, how old it is, why it was left standing while everything around it came down, and directions to the trunk.
 
-Every pin on the map is drawn as its own species, so an oak reads as an oak and a ginkgo as a ginkgo before you tap anything. You tick off the ones you have stood under.
+You tick off the ones you have stood under. Find a tree we have missed and you add it yourself, with your own photograph, and it goes on the map for everybody.
 
-Made by Hidde Burgmans, a designer in the Netherlands, in seven languages, with 2,472 trees mapped so far.
+Out this month, in seven languages, with 2,472 trees mapped so far.
 ```
 
-**Scored 8.5 by an independent reader** who saw only the text and none of this
-conversation, after eight drafts scoring 7, 6, 7.5, 7.5, 7.5 and 7.5. What
-that reader found and I could not: an opening that set up a negative so the
-app could answer it, a "researched by hand" claim that reads as generated once
-multiplied by the tree count, city counts that invite an unflattering
-division, a line explaining the app's value to a professional whose job is
-spotting value, and a closing paragraph where the seasonal urgency arrived
-stapled to a bio. The last fix was moving that urgency into the paragraph
-where the season already lives.
+**Scored 8.5 on a blind read**, by a reader who saw the text and none of this
+conversation.
 
-**What it deliberately does not say.** No notification claim: there is no
-notification code in the app, and Season Radar alerts are an unbuilt paid-tier
-promise. No iOS platform hook: no widget, App Intent or Watch app exists to
-name. The species pin art is the one craft detail, and it is real, 15 drawn
-shapes in site/src/lib/species-icons.ts.
+**Two things were cut late and both were the point.** An earlier draft scored
+8.5 on a paragraph about a ginkgo turning gold and a walk between trees. The
+shipped app has NEITHER: `Kit/Launch.swift` hides walks, the season story and
+Plus behind arguments that are off for every real user, because they are what
+the paid tier introduces. I had written from the website and the plan instead
+of the build, in a document addressed to Apple. And the maker's name is out:
+"dont mention me ever". Both are checks in pitchcheck.py now rather than
+things to remember.
+
+**What is left is only what a user can actually do today:** the map with a
+drawn pin per species, a tree's story and age and directions, ticking off what
+you have stood under, and adding a tree with your own photograph.
 
 ## Helpful Details  (485/500)
 

@@ -127,6 +127,32 @@ PROSE_WORDS = 25
 FENCE = re.compile(r"^```[a-z]*\n(.*?)^```", re.M | re.S)
 
 
+# FEATURES THE SHIPPED APP DOES NOT HAVE. Hidde, 2026-09-04, on a nomination
+# draft whose best paragraph was about autumn colour: "you know that the app
+# doesnt have walks and seasons yet". He was right and it was the worst mistake
+# of the day: Kit/Launch.swift hides walks, the season story and Plus behind
+# arguments that are off for every real user, because they are what the paid
+# tier introduces later. I had written copy from the WEBSITE and the PLANS
+# rather than from the build, and it was addressed to Apple.
+#
+# Keep this list in step with Launch.swift. A word here is not banned outright,
+# because a nomination may legitimately say a thing is coming; it is flagged so
+# the claim has to be deliberate rather than absent-minded.
+HIDDEN_FEATURES = re.compile(
+    r"\b(walk(?:s|ing)? (?:route|between|that strings)|smart walking|"
+    r"builds? a walk|season(?:al)? (?:radar|alert)|at its best|"
+    r"turns? (?:completely )?gold|(?:are|is) turning|peaks? in "
+    r"(?:november|autumn)|when a tree peaks|notif\w+|badge|offline)\b", re.I)
+
+
+# THE OWNER'S NAME, in anything a stranger reads. Hidde, 2026-09-04, finding it
+# in a nomination draft where I had put it deliberately and called it his
+# choice: "dont mention me ever". qa.py has guarded the website against this
+# since 2026-08-11; a pitch was not covered, and an Apple nomination is exactly
+# the kind of document where "it is only for one editor" feels like an excuse.
+OWNER_NAME = re.compile(r"\b(hidde|burgmans)\b", re.I)
+
+
 def body_of(text):
     """The copy a stranger will read, not the notes around it.
 
@@ -174,6 +200,20 @@ def check(text, label="text"):
                 hits.append(("the opening sets up a negative so we can answer it",
                              TICS[1][2],
                              " ".join(opening.split())[:90]))
+        for m in OWNER_NAME.finditer(body):
+            hits.append(("the owner's name",
+                         "Hidde, 2026-09-04: \"dont mention me ever\". It applies to "
+                         "anything a stranger reads, an Apple nomination included. "
+                         "A photographer's licence credit is the only name this "
+                         "project puts anywhere.",
+                         m.group(0)))
+        for m in HIDDEN_FEATURES.finditer(body):
+            hits.append(("a feature the shipped app does not have",
+                         "walks, the season story, alerts, badges and offline sit "
+                         "behind flags in Kit/Launch.swift that are OFF for every "
+                         "real user; they are what Plus introduces. Check the "
+                         "build, not the website or the plan.",
+                         " ".join(m.group(0).split())[:90]))
         for word, why in copy_rules.offences(body):
             hits.append(("banned in all copy", why, word))
     return hits
