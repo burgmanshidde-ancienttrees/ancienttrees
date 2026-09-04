@@ -48,9 +48,11 @@ NUDGE = """PITCH COPY (scripts/hooks/pitch_nudge.py, fires on messages about pit
 This looks like copy a stranger reads to decide whether we are interesting,
 which is the register I write worst. Before drafting a sentence:
 
-1. READ drafts/PITCH_VOICE.md. It is pairs, not rules: the bad version and the
-   good version of the same line, from the times he corrected me. Imitate a
-   pair rather than reasoning from a principle.
+1. READ drafts/PITCH_VOICE.md. Two things are in it and both are for
+   imitating rather than reasoning from. PAIRS: the bad line beside the good
+   one, from the times he corrected me. And the REFERENCE OPENINGS, verbatim
+   from Merlin, AllTrails, Seek and komoot, which every one of them starts on
+   the reader rather than on the company. Copy the shape of one of those.
 
 2. The one habit to catch yourself doing: writing as though winning an
    argument instead of showing something. Defining by denying ("not up a
