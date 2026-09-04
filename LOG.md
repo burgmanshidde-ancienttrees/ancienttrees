@@ -1,6 +1,50 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 (continuation of a window an earlier attempt stopped early with 98 minutes left) - Finished two standing claims: Rotterdam +3, three new Japan single-tree places, Valencia dispatched
+
+Cleared the same three claims the earlier attempt left standing rather than
+starting anything new. `rotterdam` and `_famous-japan` both had finished,
+uncommitted work sitting in `data/research/`; neither needed a fresh pass.
+
+**Rotterdam, 9 -> 12 trees.** `rotterdam-verified.json` held three verified
+trees with no story yet (the Copper Beech and paired Lebanon Cedars of the
+Historic Garden of Schoonoord, and the Heemraadssingel Atlas Cedar); wrote
+them myself rather than dispatching a write pass for three trees alone. Each
+carries a flagged age conflict recorded honestly rather than resolved by
+guessing: the beech and cedars have a register-vs-Wikipedia disagreement, the
+cedars' own "over 250 years" local claim would predate the garden's 1860s
+layout. Set `oldest_tree_id: rot_001` explicitly, because the cedars' disputed
+260-year upper estimate would otherwise crown them "Rotterdam's oldest" ahead
+of the well-documented Park Plane, which is not a claim this page should make
+on unresolved evidence. Four candidates went to `data/leads/rotterdam.json`
+as leads/blocked (a thin single-source elm, two duplicates of already-
+published trees, a private-garden ginkgo). Claim released.
+
+**Famous-japan batch G2, already fully written, just needed merging.**
+`famous-japan-batch-g2-verified.json` held four trees with complete stories
+from an earlier attempt: fjk_003 joined Fujikawaguchiko as a third tree (same
+Ohatsuki-ginkgo cluster as fjk_002, 1.7km away); yab_001 (**Yabu**), shw_001
+(**Shiwa**) and ito_001 (**Ito**) shipped as new single-tree places under the
+2026-08-31 exception, each 16-25km from its nearest published city with no
+practical same-day transit link. Claim released.
+
+Build failed twice on merge: Fujikawaguchiko's growing-city copy still said
+"published at two" and "full ten" (Contract C word count and the count-
+promise check both caught it), and Rotterdam's oldest-tree page choked until
+`oldest_tree_id` was set (see above). Both fixed, build/QA/preflight clean.
+
+**Valencia dispatched to a verify agent rather than worked by hand.** The
+claim was 2.5 hours old with no delivered work: 391 unmined register
+candidates from a 449-candidate 20km sweep, per BRIEF_RESEARCH.md scope, too
+large for this session to hand-verify itself. Sent a verify agent with the
+standing brief, told to prefer named register entries over the hundreds of
+unnamed street palms and to favour a walkable cluster. Result not in yet by
+the time this entry was written.
+
+Health check clear (rung 2), no BLOCKER, nothing stale. 1 commit so far
+(the two finished claims), pushed.
+
 ## 2026-09-04 (continuation of a window an earlier attempt stopped early with 116 minutes left) - Finished the standing _famous-japan claim, scouted three US registers, all dead ends
 
 Started by clearing what the earlier attempt in this window left uncommitted:
