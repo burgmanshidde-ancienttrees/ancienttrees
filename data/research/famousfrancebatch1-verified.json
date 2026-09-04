@@ -1,0 +1,63 @@
+{
+  "verified": [
+    {
+      "id": "alv_001",
+      "name": "The Oak of Allouville-Bellefosse (Chêne Chapelle)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 800 to 1,200 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 1500,
+      "location": {
+        "address": "Rue du Docteur Patenotre, 76190 Allouville-Bellefosse, Seine-Maritime, France",
+        "latitude": 49.596389,
+        "longitude": 0.676389,
+        "neighbourhood": "Allouville-Bellefosse village centre"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Ch%C3%AAne_d%27Allouville",
+        "https://en.wikipedia.org/wiki/Ch%C3%AAne_chapelle",
+        "https://www.seine-maritime-tourisme.com/en/offers/le-chene-dallouville-bellefosse-allouville-bellefosse-en-5133293/"
+      ],
+      "access": "Free, standing in the open in the village centre next to the church; a spiral staircase around the trunk gives access to the two chapels built into the hollow.",
+      "transport": "In the centre of Allouville-Bellefosse village, Seine-Maritime; no rail, reached by car, roughly 30-35 minutes from Yvetot or Bolbec",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Widely reported as the oldest oak in France, possibly in Europe. Age disputed between local tradition (dating it to Charlemagne's era, c. 800 AD, so ~1200 years) and scientific estimate (closer to 800 years); both figures repeated across sources, recorded as a range rather than a single number per the vague-source rule. Species Quercus robur (chene pedoncule), confirmed by fr.wikipedia and a botanical description site. Circumference 15m at 1m height (girth_cm 1500, pariszigzag.fr), height 18m. Struck by lightning in the 1600s which hollowed the trunk; Abbe du Detroit and Father du Cerceau built two chapels into the hollow starting 1696, Notre-Dame-de-la-Paix and the Chambre de l'Ermite, both still standing and in occasional use, reached by an external spiral staircase. Saved from burning during the French Revolution when a local renamed it the 'Temple of Reason'. Classified as a monument historique in 1932. Confirmed alive: fr.wikipedia states it 'est toujours vivant et produit feuillage et glands' (still alive, produces foliage and acorns), and it is an actively signposted, staffed tourist attraction (Espace decouverte du Chene visitor centre nearby, phone number for visits) with recent Tripadvisor reviews. By far the strongest candidate of this batch: 450 views/month across 11 language Wikipedias, a genuinely unique feature (two working chapels inside a living tree trunk) found nowhere else.",
+      "destination_test": "PASS, clearly: a unique, one-of-a-kind feature (two chapels built into a living oak's hollow trunk), a classified historic monument with its own visitor centre, staircase and centuries of pilgrimage history. People travel to this specific tree in this specific village for no other reason."
+    },
+    {
+      "id": "gth_001",
+      "name": "The Guillotin Oak (Chêne à Guillotin)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500 to 1,000 years",
+      "age_min": 500,
+      "age_max": 1000,
+      "girth_cm": 960,
+      "location": {
+        "address": "Near the hamlet of La Rue-Éon, Concoret, Morbihan, Brittany, France, on the edge of the Forêt de Paimpont (Brocéliande)",
+        "latitude": 48.056389,
+        "longitude": -2.226667,
+        "neighbourhood": "La Rue-Éon, Forêt de Paimpont"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Ch%C3%AAne_%C3%A0_Guillotin",
+        "https://broceliande.guide/Le-Chene-a-Guillotin-l-ancetre-de-Broceliande",
+        "https://www.destination-broceliande.com/en/discover/our-must-haves/the-forest-of-broceliande/legends-side/legendary-arthurian-sites-in-broceliande/the-guillotin-oak/"
+      ],
+      "access": "Free, standing beside a path on the edge of the Foret de Paimpont near La Rue-Eon; owned by the commune of Concoret since 2000 and fenced since 2019 to stop visitors touching the trunk, but fully visible and reachable on foot.",
+      "transport": "Near the hamlet of La Rue-Eon, commune of Concoret, Morbihan; no rail, reached by car or on the forest trail network, roughly 40 minutes from Rennes",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Called the Chene des Rues-Eon until the 1970s; renamed for a legend that a refractory priest, Pierre-Paul Guillotin, hid inside or near it during the French Revolution. Age genuinely disputed: fr.wikipedia gives 'between 500 and 1000 years' with different sources dating it to the 10th or the 15th century, and one source says legend claims nearly a thousand years while the more sober estimate is about 500; recorded as a wide range rather than picking a winner, per the two-sources-disagree rule. Circumference 9.6m at widest (girth_cm 960), height about 16m. Labeled 'Arbre remarquable de France' in 2017 by the A.R.B.R.E.S. association, a national remarkable-tree register, which is a second independent confirmation beyond fr.wikipedia. Confirmed alive and actively conserved: the commune of Concoret bought the tree in 2000, the Office National des Forets maintains it with synthetic bark repairs and branch supports, and a protective fence was added in 2019, all signs of an ongoing, recent conservation programme rather than a historical record. Coordinates from fr.wikipedia (48°03'23\"N 2°13'36\"W = 48.0564, -2.2267) closely match the brief's given coordinates (48.056262, -2.226319), cross-confirming the pin. The panoramio caption calling it '1000 years' reflects the upper end of the legend/estimate range already recorded, not a separate claim.",
+      "destination_test": "PASS: called 'the most spectacular of the large trees of Broceliande' in sources, it has its own distinct legend (separate from the forest's Arthurian mythology), its own national remarkable-tree designation, its own conservation programme and fence, and its own name recognised independently of the forest's other attractions. Somebody researching Broceliande's trees specifically seeks this one out by name."
+    }
+  ],
+  "blocked": [
+    {
+      "lead_name": "Tilleuls de Sully",
+      "reason": "not a collectible point: 'Tilleul de Sully' is a generic type name, not one tree. Confirmed by fr.wikipedia (Tilleul de Sully) and multiple regional tourism sites: Sully, minister of Henri IV and Grand Voyer of France, ordered in 1599/1600 that a lime or elm be planted in front of the church of every village in the kingdom, as a gathering place for parish assemblies after mass. Dozens of villages across France each have their own locally-named 'Tilleul de Sully' or 'Arbre de Sully', independently: Ordonnaz, Innimond, Songieu, Cormaranche, Craz and Journans (all in Ain), Sagy (Saone-et-Loire), Therondels (Aveyron/Cantal area), Olby, and others. The lead's own Commons category photos show three unrelated villages (Blaudeix, Innimont, Collonges-les-Bevy), confirming this is a scattered set of separate specimens rather than one famous tree. Fails BRIEF_RESEARCH.md's 'one collectible point' test outright: there is no single obvious place to stand. Each village's own Sully lime could in principle be verified individually as a local entry in that village's own city/place file, but this candidate as given (a generic category) cannot be delivered as one tree.",
+      "note_for_future_pass": "A separate lead, 'Le Sully de Pesselières' at 47.56425556, 3.3432, was named in the brief as a possible single most-distinctive/famous individual Sully lime worth checking, but this pass did not find any source discussing that specific specimen (no results for 'Le Sully' + Pesselieres) and did not verify it. Left as an open lead for a future pass rather than substituted in here."
+    }
+  ]
+}

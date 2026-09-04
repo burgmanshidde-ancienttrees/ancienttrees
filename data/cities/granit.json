@@ -1,0 +1,64 @@
+{
+  "city": "Granit",
+  "country": "Bulgaria",
+  "status": "needs_curation",
+  "intro": "A 1982 core sample counted 1,637 rings in this oak, dating its germination to around the year 345 and making it Bulgaria's oldest tree with a scientific reading behind the number. Its record size, a 7.45-metre girth and a crown once over 1,000 square metres, is mostly history: a 1969 storm and falling groundwater have left only one branch alive, confirmed still greening every spring as recently as 2024. It stands free and open in Granit village.",
+  "meta_description": "The Granit Oak in Bulgaria is dated to around 1,680 years by a 1982 ring count, the country's oldest tree. One living branch remains, free to visit.",
+  "question_meta": "The Granit Oak, Bulgaria's oldest dated tree, is down to one living branch after a long decline. Its 1982 ring count, and how to visit.",
+  "question_answer": "The oldest tree in Granit is the Granit Oak, a pedunculate oak dated by a 1982 core sample to about 1,680 years old, Bulgaria's oldest tree with a scientific reading behind the figure. A storm took its largest branch in 1969 and the tree has been declining since, kept alive today by a single branch confirmed still greening every spring as of 2024. It stands free and open in the village, protected as a natural monument since 1967.",
+  "question_context": "A forester's core sample in 1982 counted 1,637 annual rings in this oak, which puts its germination around 345, in the twilight of the Roman Balkans. Add the years since the boring and the count now runs to roughly 1,680, the only figure in this batch that comes from an actual dendrochronological reading rather than a repeated estimate. Its full-grown record is remarkable: 7.45 metres of girth, a crown that once spread over 1,000 square metres, 23.4 metres of height. Most of that is history. A storm in 1969 took its largest branch, and the tree has been losing ground since, plainly to falling groundwater around Granit village rather than to any single event. Repairs went in during 1983, concrete and wire holding weight the trunk could no longer carry on its own, and by 2018 only a single branch remained alive. That branch still leafs out every spring, confirmed as recently as 2024, which is why the tree remains a living, visitable specimen. It has stood as a declared natural monument since 1967 and carries entry 388 in Bulgaria's Century-Old Trees Registry.",
+  "hero_tree_id": "gnk_001",
+  "oldest_tree_id": "gnk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Granit?",
+      "a": "The Granit Oak, dated by a 1982 core sample to about 1,680 years old, Bulgaria's oldest tree and one of the oldest in Europe with an actual ring count behind the figure."
+    },
+    {
+      "q": "Is the tree still alive?",
+      "a": "Yes, though barely. A storm broke its largest branch in 1969 and falling groundwater has driven a long decline; by 2018 only one branch remained, and it was still greening each spring as of 2024."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open in Granit village, a signposted natural monument. Protective fencing keeps visitors from getting too close, but the tree is fully visible on foot."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It stands in Granit village, Bratya Daskalovi municipality, Stara Zagora Province. There is no rail; it is reached by road, roughly 30 to 40 minutes from Stara Zagora or Chirpan."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gnk_001",
+      "name": "The Granit Oak (Granitski dab)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 1,680 years",
+      "age_min": 1650,
+      "age_max": 1700,
+      "girth_cm": 745,
+      "location": {
+        "address": "Village of Granit, Bratya Daskalovi municipality, Stara Zagora Province, Bulgaria",
+        "latitude": 42.254067,
+        "longitude": 25.13608,
+        "neighbourhood": "Granit village"
+      },
+      "story": "A forester's core sample in 1982 counted 1,637 rings in this oak, which puts its germination around 345, in the twilight of the Roman Balkans, and makes it Bulgaria's oldest recorded tree. Four decades on, add the years since the boring, and the count runs to around 1,680.\n\nIts full-grown record is remarkable: 7.45 metres of girth, a crown that once spread over 1,000 square metres, 23 metres of height. Most of that is history now. A storm in 1969 took its largest branch, and the tree has been losing ground ever since, plainly to falling groundwater around the village rather than to any single event. Repairs went in during 1983, concrete and wire holding weight the trunk could no longer carry on its own, and by 2018 only a single branch was still alive.\n\nThat one branch still leafs out every spring, confirmed as recently as 2024, which is why the tree remains a living, visitable specimen rather than a memorial to one. It has stood as a declared natural monument since 1967 and carries entry 388 in Bulgaria's Century-Old Trees Registry. What you meet today is not the tree at its record size but the tree at the end of a long fight to stay alive at all, worth seeing for exactly that reason.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Granit_oak",
+        "https://bg.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%81%D0%BA%D0%B8_%D0%B4%D1%8A%D0%B1",
+        "https://www.24chasa.bg/spravochnik/article/1120124",
+        "https://www.infoz.bg/region/4619-granitskiat-dab"
+      ],
+      "access": "Free. Stands in the open in Granit village (a signposted natural monument and the region's main tourist draw); protective fencing limits how close visitors get but the tree is fully visible and reachable on foot.",
+      "transport": "Village of Granit, Bratya Daskalovi municipality, Stara Zagora Province; no rail, reached by road, roughly 30-40 min drive from Stara Zagora or Chirpan",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

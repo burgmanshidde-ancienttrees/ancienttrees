@@ -1,0 +1,82 @@
+[
+ {
+  "id": "gls_001",
+  "name": "The Glastonbury Thorn",
+  "species": "Hawthorn (Crataegus monogyna 'Biflora')",
+  "age_estimate": "about 90 years",
+  "age_min": 85,
+  "age_max": 100,
+  "location": {
+   "address": "Churchyard of the Church of St John the Baptist, High Street, Glastonbury, Somerset, BA6 9DR",
+   "latitude": 51.1482,
+   "longitude": -2.7162,
+   "neighbourhood": "Glastonbury town centre"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Glastonbury_Thorn",
+   "https://www.plant-lore.com/plantofthemonth/glastonburys-holy-thorn-december-2024/",
+   "https://www.caughtbytheriver.net/2021/07/the-glastonbury-holy-thorn/"
+  ],
+  "access": "Free. Standing in the churchyard of St John the Baptist, open to the public in daylight hours, right on Glastonbury's High Street.",
+  "transport": "No railway station in Glastonbury; nearest is Castle Cary, about 11 miles away. Frequent local bus services stop in the town centre, about 5 minutes' walk from the churchyard.",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "story": "Every December, children from St John's Infants School cut a flowering sprig from this hawthorn and send it to the reigning monarch. They have done it since 1929. The tree can oblige because it is Crataegus monogyna 'Biflora', a hawthorn that flowers twice a year, once in spring like every other one and once around midwinter, when nothing else in the churchyard is doing anything at all. The trait does not survive seed, so every Holy Thorn in Glastonbury is a cutting grafted from the last one.\n\nThis specimen was planted in the 1930s by George Chislett, then head gardener at Glastonbury Abbey, who learned to graft Holy Thorn cuttings onto blackthorn rootstock. That makes it about ninety years old, and it is the one that lasted. The Abbey's tree died in 1991 and was cut down the following year. The tree on Wearyall Hill was attacked in December 2010, lost its replacement sapling in 2012, and was taken out altogether in 2019.\n\nBy tradition the whole lineage descends from a staff pushed into the ground by Joseph of Arimathea, a story first written down in 1520, and a Parliamentary soldier is said to have felled the original around 1647. Recent decades have been harder on it than any legend. In 2018 it was described as decrepit and heavily infested with mistletoe. A visit in December 2024 found it almost clear of the stuff and flowering well.",
+  "best_time": {
+   "months": [
+    12
+   ],
+   "kind": "flowers",
+   "label": "December, when the winter flowering comes and the Christmas sprig is cut"
+  }
+ },
+ {
+  "id": "ank_001",
+  "name": "The Ankerwycke Yew",
+  "species": "European Yew (Taxus baccata)",
+  "age_estimate": "roughly 2,000 to 2,500 years",
+  "age_min": 2000,
+  "age_max": 2500,
+  "girth_cm": 798,
+  "location": {
+   "address": "Ankerwycke, in the grounds of the ruined St Mary's Priory, off Magna Carta Lane, near Wraysbury, Surrey/Berkshire border, opposite Runnymede across the Thames",
+   "latitude": 51.44476,
+   "longitude": -0.55644,
+   "neighbourhood": "Runnymede and Ankerwycke (National Trust)"
+  },
+  "verified_sources": [
+   "https://ati.woodlandtrust.org.uk/tree-search/tree?treeid=2121",
+   "https://www.nationaltrust.org.uk/visit/surrey/runnymede-and-ankerwycke/things-to-see-and-do-at-runnymede-and-ankerwycke",
+   "https://www.nationaltrust.org.uk/runnymede-and-ankerwycke/features/125-years-of-the-national-trust-"
+  ],
+  "access": "Free. On National Trust open parkland at Runnymede and Ankerwycke, reached via a public path/circular walk from Magna Carta Lane; no ticket or permission needed to see the tree. Parking on site is limited and may be chargeable for non-members; the tree itself is not behind any gate.",
+  "transport": "Wraysbury railway station (Windsor & Eton Riverside to London Waterloo line) is the nearest, about 0.8 miles / a 20-30 minute walk via the riverside path (routes are indirect, following the Thames and field paths rather than a straight line); the infrequent 305 bus from Wraysbury station stops at Magna Carta Lane, closer still.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "Two national bodies that both know their trees cannot agree on this one's age to within five hundred years. The Woodland Trust says approximately 2,000. The National Trust says as much as 2,500. Neither can settle it, because an old yew rots from the middle outwards and takes its rings with it. What can be measured is the trunk: 7.98 metres round, and taken low, at thirty centimetres off the ground, because a base this hollowed and buttressed offers no clean line higher up.\n\nEither figure leaves it standing here in June 1215, when King John sealed Magna Carta somewhere on this stretch of the Thames. Tradition puts the sealing under this tree, and some historians do argue the ceremony happened on this bank rather than in the meadow opposite. That is an argument, not a record. The same applies to the story that Henry VIII courted Anne Boleyn beneath it in the 1530s. Said to, thought to, never written down at the time.\n\nThe certainties are quieter. It grows in the grounds of St Mary's Priory, a ruined Benedictine house on open National Trust land, reached on foot from Magna Carta Lane. The 2020 survey recorded holes, water pockets, decaying wood in the crown and a trunk hollow enough to step into, all of it ordinary for a yew of this age. Visitors still tie strips of cloth to the boards beside it, which is an old habit for an old tree."
+ },
+ {
+  "id": "tol_001",
+  "name": "The Tolpuddle Martyrs Tree",
+  "species": "Sycamore (Acer pseudoplatanus)",
+  "age_estimate": "roughly 340 years",
+  "age_min": 320,
+  "age_max": 360,
+  "girth_cm": 606,
+  "location": {
+   "address": "The Village Green, Tolpuddle, Dorchester, Dorset, DT2 7EW",
+   "latitude": 50.74943,
+   "longitude": -2.29679,
+   "neighbourhood": "Tolpuddle village green"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Tolpuddle_Martyrs_Tree",
+   "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=11766"
+  ],
+  "access": "Free. Stands in the open on Tolpuddle's public village green, owned/managed by the National Trust; no gate, ticket or permission needed. The Tolpuddle Martyrs Museum next door is a separate, free-entry attraction.",
+  "transport": "Moreton railway station is the nearest, about 3 miles away. A limited Damory Coaches bus service (route CR9, a few times a day on weekdays) connects Tolpuddle with Dorchester, about 7 miles off.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "story": "The British trade union movement has a birthplace with a postcode, and it is a sycamore on a village green in Dorset. In 1833 six farm labourers met under this tree to discuss forming an agricultural union as their wages fell. In 1834 they were tried under an anti-mutiny act of 1797, not for the union itself but for swearing a secret oath, and transported to Australia for seven years of penal labour. A mass petition and public marches overturned the sentences, and the men were home after roughly three.\n\nThe tree was about 150 years old on the day they sat under it. A 2005 assessment dated it to approximately 320 years, which puts it near 340 now, though that dating is itself two decades old. At 6.06 metres round at chest height it is the largest sycamore in Dorset, and hollow enough that a television presenter was once lowered inside it for the National Trust.\n\nHollow is not the same as finished. In 2023 the trunk was pollarded to take weight off the limbs, work expected to buy it another two centuries. Every July the village fills for the Tolpuddle Martyrs Festival and several thousand people walk past a tree that was named one of the 50 Great British Trees in 2002 and shortlisted for England's Tree of the Year in 2015. The museum beside it is free, and so is the green."
+ }
+]

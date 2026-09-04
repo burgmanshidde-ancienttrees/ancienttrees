@@ -10,6 +10,19 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
 <!-- archive-index -->
+## 2026-09-04 (continuation) - 6 more single-tree places: Brazil batch 1, Bulgaria batch 1 and 2, France batch 1
+
+Finished 4 standing verify claims (`_famous-brazil-batch1`, `_famous-bulgaria-batch1`, `_famous-france-batch1`, `_famous-bulgaria-batch2`) left by an earlier attempt in this window. Three trees (Brazil x2, Bulgaria x1) already had full stories written and new city files staged, uncommitted; wrote the remaining three (France x2, Bulgaria x1) directly from the verify pass's `verify_notes`, all under the 2026-08-31 single-tree-destination exception:
+
+- **Pirangi** (pir_001, Cajueiro de Pirangi): a single cashew whose branches root laterally, spreading one tree across roughly 8,500 sqm; Guinness World Record holder since 1994 for largest cashew tree, ~138 years old, paid entry (R$10).
+- **Vassununga** (pat_001, O Patriarca): a jequitiba-rosa in the cerrado of Vassununga State Park, widely called Brazil's oldest tree though the age claims range wildly (600 to 3,000+ years across three uncorroborated sources); free but pre-booked entry.
+- **Bansko** (bkp_001, Baikushev's Pine): a Bosnian pine in Pirin National Park, ~1,300 years by repeated tradition (contemporary of Khan Asparuh, no ring count found), 7.8m girth, free.
+- **Allouville-Bellefosse** (alv_001, Chêne Chapelle): an oak roughly 800-1,200 years old, hollowed by lightning in the 1600s and holding two working chapels inside since 1696, monument historique since 1932, free.
+- **Concoret** (gth_001, Guillotin Oak): an oak on the edge of Forêt de Paimpont (Brocéliande), 500-1,000 years disputed, national "Arbre remarquable" since 2017, fenced since 2019 but visible from a public path, free.
+- **Granit** (gnk_001, Granit Oak): Bulgaria's oldest tree by an actual 1982 ring count (~1,680 years), reduced to one living branch after a 1969 storm and falling groundwater, confirmed still greening as of 2024, natural monument since 1967, free.
+
+None have photos yet (honest gap, `status: missing`). Two new country pages written to close the page-gap these opened (`brazil.json`, 3 cities/8 trees; `bulgaria.json`, 3 cities/6 trees), and France's country page counts corrected (7→9 cities, 96→98 trees). Also cleared and re-added the pin-outlier NOTE for `pir_001` in `preflight.py`'s `check_pin_is_in_its_own_country()` by hand (checked against pt/en Wikipedia coordinates; Pirangi is a genuine 2,054km outlier from Rio de Janeiro, our other Brazilian city). Full local build (6121 pages) and `scripts/qa.py` clean (had to `git fetch --unshallow` first; the shallow-clone sitemap-lastmod check otherwise false-positives). All 4 claims released.
+
 ## 2026-09-04 (continuation) - 6 single-tree places: UK batch 1, Germany batch 1, Formentera, Ibiza
 
 Finished 2 standing verify claims (`_famous-uk-batch1`, `_famous-germany-batch1`) plus 2 orphaned verified-but-unwritten leads (Formentera, Ibiza) with one write-stories pass, one tree each place, all under the 2026-08-31 single-tree-destination exception:

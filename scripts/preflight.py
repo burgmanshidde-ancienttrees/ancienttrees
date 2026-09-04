@@ -1475,6 +1475,16 @@ def check_pin_is_in_its_own_country():
     the wrong place before any correction can reach them.
     """
     FAR_KM = 2000
+    # Cleared by hand against the tree's own sources: a genuine outlier rather
+    # than a bad pin. An id here keeps the threshold tight for everybody else,
+    # which is what widening it a second time would have cost.
+    CHECKED_BY_HAND = {
+        # Pirangi do Norte lies 12km south of Natal on the Rio Grande do Norte
+        # coast, 2054km from the nearest other Brazilian tree we publish (Rio
+        # de Janeiro). Coordinate checked against the pt/en Wikipedia position
+        # for the Cajueiro de Pirangi, 2026-09-04.
+        "pir_001",
+    }
     by_country = collections.defaultdict(list)
     for path in sorted(glob.glob("data/cities/*.json")):
         with open(path, encoding="utf-8") as fh:
@@ -1493,7 +1503,7 @@ def check_pin_is_in_its_own_country():
         for i, r in enumerate(rows):
             nearest = min(_haversine(r[0], r[1], s[0], s[1])
                           for j, s in enumerate(rows) if j != i)
-            if nearest > FAR_KM:
+            if nearest > FAR_KM and r[4] not in CHECKED_BY_HAND:
                 out.append("%s (%s, %s) sits %.0f km from the nearest other "
                            "tree in %s, at %.5f,%.5f. A dropped minus sign or "
                            "a swapped latitude and longitude looks exactly "

@@ -1,0 +1,32 @@
+{
+  "verified": [
+    {
+      "id": "gnk_001",
+      "name": "The Granit Oak (Granitski dab)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 1,680 years",
+      "age_min": 1650,
+      "age_max": 1700,
+      "girth_cm": 745,
+      "location": {
+        "address": "Village of Granit, Bratya Daskalovi municipality, Stara Zagora Province, Bulgaria",
+        "latitude": 42.254067,
+        "longitude": 25.13608,
+        "neighbourhood": "Granit village"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Granit_oak",
+        "https://bg.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%81%D0%BA%D0%B8_%D0%B4%D1%8A%D0%B1",
+        "https://www.24chasa.bg/spravochnik/article/1120124",
+        "https://www.infoz.bg/region/4619-granitskiat-dab"
+      ],
+      "access": "Free. Stands in the open in Granit village (a signposted natural monument and the region's main tourist draw); protective fencing limits how close visitors get but the tree is fully visible and reachable on foot.",
+      "transport": "Village of Granit, Bratya Daskalovi municipality, Stara Zagora Province; no rail, reached by road, roughly 30-40 min drive from Stara Zagora or Chirpan",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Widely reported as Bulgaria's oldest tree and among the oldest in Europe. Dated in March 1982 by Pressler borer (dendrochronological core), which counted 1637 annual rings, giving a germination date of c. 345 AD; en.wikipedia and bg.wikipedia both cite this ring count as the age method (not a vague estimate, a real dendro reading, though decades old now so age_min/max nudged upward for years elapsed since 1982). Girth 7.45-7.46 m (sources vary by 1cm), diameter 2.38 m, height 23.4 m, historic crown area c. 1017 sq m. Registered in Bulgaria's Century-Old Trees Registry, entry #388 (a national protected-tree register), declared a natural monument in 1967. SEVERE DECLINE, flagged for the writer: its largest branch broke in a 1969 storm and the tree has been dying ever since (low groundwater cited as the unfixable cause); by 2018 only one branch remained alive, propped with a steel structure and old concrete/wire repairs from 1983 that news sources call unsuccessful. A 2024-dated bg.wikipedia revision and a 2024 news search both still describe that one living branch greening each spring, so it is CONFIRMED ALIVE as of 2024, but this is a tree in its final years rather than a healthy specimen; the story should say so honestly rather than presenting the old crown/height/area figures as its current appearance. Coordinates from en.wikipedia (42.254067, 25.136080) and bg.wikipedia (42.254036, 25.136009) agree to within a few metres, tree-level precision.",
+      "destination_test": "PASS: Bulgaria's most famous named tree, the country's oldest, a signposted natural monument and established regional tourist attraction that people specifically travel to Granit village to see."
+    }
+  ],
+  "blocked": []
+}

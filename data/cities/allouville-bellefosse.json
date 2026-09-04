@@ -1,0 +1,63 @@
+{
+  "city": "Allouville-Bellefosse",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "The Chêne Chapelle in Allouville-Bellefosse is an oak old enough that nobody agrees by how much, somewhere between 800 and 1,200 years. Lightning hollowed its trunk in the 1600s, and two priests built two working chapels into the hollow starting in 1696, reached by a spiral staircase wrapped around the outside. It still leafs out and drops acorns every year, standing free and open on the village street next to the church.",
+  "meta_description": "The Chêne Chapelle in Allouville-Bellefosse is an oak roughly 800 to 1,200 years old with two chapels built into its hollow trunk, free to visit.",
+  "question_meta": "The Chêne Chapelle in Allouville-Bellefosse is an ancient oak with two chapels built inside its trunk. Its disputed age, and how to see inside.",
+  "question_answer": "The oldest tree in Allouville-Bellefosse is the Chêne Chapelle, an oak roughly 800 to 1,200 years old with two chapels built into its lightning-hollowed trunk since 1696. Its girth measures about 15 metres, and a spiral staircase wrapped around the outside lets visitors climb between the two chapels. It stands free and open on the village street next to the church.",
+  "question_context": "Two figures circulate for the tree's age and neither carries a ring count. Local tradition dates the planting to around 800, under Charlemagne, which would put it close to 1,200 years old; a more cautious scientific estimate puts it nearer 800. Both are repeated across sources and neither is settled, so the honest answer sits somewhere in that span, older than the church built beside it either way. Lightning struck the oak sometime in the 1600s and hollowed the trunk enough that two priests, Abbé du Détroit and Father du Cerceau, built two chapels into it from 1696: Notre-Dame-de-la-Paix low down and the Chambre de l'Ermite above. Both still stand, reached by a spiral staircase around the trunk's outside rather than through it. The tree nearly did not survive the Revolution: a local resident is said to have renamed it the Temple of Reason rather than let it be felled as a relic of the old order, and it worked. France classified it a monument historique in 1932, and its own French Wikipedia entry confirms it is still alive, producing foliage and acorns.",
+  "hero_tree_id": "alv_001",
+  "oldest_tree_id": "alv_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Allouville-Bellefosse?",
+      "a": "The Chêne Chapelle, a pedunculate oak roughly 800 to 1,200 years old, hollowed by lightning in the 1600s and now holding two working chapels inside its trunk."
+    },
+    {
+      "q": "Why does it have chapels inside it?",
+      "a": "Lightning hollowed the trunk sometime in the 1600s. Two priests, Abbé du Détroit and Father du Cerceau, built two chapels into the hollow starting in 1696, and both are still there, reached by an external spiral staircase."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands in the open on the village street next to the church, with no ticket needed. The nearby Espace découverte du Chêne visitor centre can arrange a closer look inside."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It stands in the centre of Allouville-Bellefosse, Seine-Maritime. There is no rail station in the village; it is reached by car, roughly 30 to 35 minutes from Yvetot or Bolbec."
+    }
+  ],
+  "trees": [
+    {
+      "id": "alv_001",
+      "name": "The Oak of Allouville-Bellefosse (Chêne Chapelle)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 800 to 1,200 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 1500,
+      "location": {
+        "address": "Rue du Docteur Patenotre, 76190 Allouville-Bellefosse, Seine-Maritime, France",
+        "latitude": 49.596389,
+        "longitude": 0.676389,
+        "neighbourhood": "Allouville-Bellefosse village centre"
+      },
+      "story": "Lightning hollowed this oak sometime in the 1600s, and two priests turned the hollow into two chapels rather than let the tree rot from the inside. Abbé du Détroit and Father du Cerceau built Notre-Dame-de-la-Paix low in the trunk and the Chambre de l'Ermite above it starting in 1696, and both are still there, reached by a spiral staircase wrapped around the outside of the trunk.\n\nLocal tradition puts its planting under Charlemagne, around 800, which would make it some 1,200 years old; a more sober scientific reading puts it closer to 800. Neither figure comes with a ring count attached, so the honest answer is somewhere between the two, older than the buildings around it either way. Its girth runs to 15 metres at a metre off the ground, under 18 metres of crown that still leafs out and drops acorns every year.\n\nIt survived a closer call than lightning. During the Revolution, a local resident is said to have renamed it the Temple of Reason rather than let it be felled as a symbol of the old order, and it worked. France classified it a monument historique in 1932. A small visitor centre nearby, the Espace découverte du Chêne, can arrange a look inside; the tree itself stands free and open on the village street, next to the church it long ago outgrew.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Ch%C3%AAne_d%27Allouville",
+        "https://en.wikipedia.org/wiki/Ch%C3%AAne_chapelle",
+        "https://www.seine-maritime-tourisme.com/en/offers/le-chene-dallouville-bellefosse-allouville-bellefosse-en-5133293/"
+      ],
+      "access": "Free, standing in the open in the village centre next to the church; a spiral staircase around the trunk gives access to the two chapels built into the hollow.",
+      "transport": "In the centre of Allouville-Bellefosse village, Seine-Maritime; no rail, reached by car, roughly 30-35 minutes from Yvetot or Bolbec",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}

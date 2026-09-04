@@ -1,0 +1,63 @@
+{
+  "city": "Concoret",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "The Guillotin Oak stands on the edge of the Forêt de Paimpont, the forest most people know as Brocéliande, and carries a Revolution-era legend of its own separate from the forest's Arthurian one. Estimated at 500 to 1,000 years old, its trunk runs 9.6 metres round under a 16-metre crown. The commune of Concoret bought it in 2000 and keeps it alive with visible repairs; a fence went up in 2019, but the oak stands beside a public path and is fully visible.",
+  "meta_description": "The Guillotin Oak near Concoret is a Breton oak 500 to 1,000 years old, a national remarkable tree on the edge of the Forêt de Paimpont. Free, fenced.",
+  "question_meta": "The Guillotin Oak stands on the edge of Brocéliande near Concoret. Its Revolution-era legend, disputed age, and how to reach it.",
+  "question_answer": "The oldest tree near Concoret is the Guillotin Oak, a pedunculate oak on the edge of the Forêt de Paimpont estimated at 500 to 1,000 years old. Its trunk measures 9.6 metres round under a 16-metre crown, and it has carried its own listing as a national remarkable tree since 2017. It stands beside a public path near the hamlet of La Rue-Éon, free to see, with a fence added in 2019 to protect its roots.",
+  "question_context": "A priest hid from the Revolution here, or so the story insists, and Pierre-Paul Guillotin's name replaced the tree's older one, the Chêne des Rues-Éon, sometime in the 20th century. Whether he actually sheltered in or beside the trunk is tradition rather than record. The age is genuinely disputed: French sources place it anywhere between 500 and 1,000 years, with both the tenth and fifteenth centuries put forward as its likely start, and nobody has settled it. What can be measured is the trunk, 9.6 metres round at its widest. In 2017 the national register of remarkable trees, A.R.B.R.E.S., gave the tree its own listing, independent of the forest's Arthurian reputation. The commune of Concoret bought it in 2000, and the Office National des Forêts has kept it standing since with synthetic bark patches and branch supports, work that shows rather than hides. A fence went up in 2019 to keep feet off the roots, but the oak stands beside a public path and is fully visible from it, one specific, named tree in a forest that has plenty of unnamed ones.",
+  "hero_tree_id": "gth_001",
+  "oldest_tree_id": "gth_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Concoret?",
+      "a": "The Guillotin Oak, a pedunculate oak estimated at 500 to 1,000 years old, standing on the edge of the Forêt de Paimpont near the hamlet of La Rue-Éon."
+    },
+    {
+      "q": "Where does the name Guillotin come from?",
+      "a": "Tradition holds that a refractory priest, Pierre-Paul Guillotin, hid in or near the tree during the French Revolution. The tree was formerly known as the Chêne des Rues-Éon."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands beside a public path on the edge of the forest, fully visible; a fence added in 2019 keeps visitors from stepping on the roots but does not block the view."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "It stands near the hamlet of La Rue-Éon, commune of Concoret, Morbihan. There is no rail; it is reached by car or on the forest trail network, roughly 40 minutes from Rennes."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gth_001",
+      "name": "The Guillotin Oak (Chêne à Guillotin)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500 to 1,000 years",
+      "age_min": 500,
+      "age_max": 1000,
+      "girth_cm": 960,
+      "location": {
+        "address": "Near the hamlet of La Rue-Éon, Concoret, Morbihan, Brittany, France, on the edge of the Forêt de Paimpont (Brocéliande)",
+        "latitude": 48.056389,
+        "longitude": -2.226667,
+        "neighbourhood": "La Rue-Éon, Forêt de Paimpont"
+      },
+      "story": "A priest hid from the Revolution here, or so the story around this oak insists, and Pierre-Paul Guillotin's name replaced its older one, the Chêne des Rues-Éon, sometime in the 20th century. Whether he actually sheltered in or beside the trunk is tradition rather than record; what is on record is the tree itself, on the edge of the Forêt de Paimpont, the forest most people know as Brocéliande.\n\nIts age is genuinely disputed. French sources place it anywhere between 500 and 1,000 years, with both the tenth and fifteenth centuries put forward as its likely start, and nobody settles it. What can be measured is the trunk, 9.6 metres round at its widest, under a crown some 16 metres tall. In 2017 the national register of remarkable trees, A.R.B.R.E.S., gave it its own listing, independent of the forest's Arthurian reputation.\n\nThe commune of Concoret bought the tree in 2000 and the Office National des Forêts has kept it alive since with synthetic bark patches and branch supports, work that shows rather than hides. A fence went up in 2019 to keep feet off the roots, but the oak stands beside a public path and is fully visible from it, one specific, named tree in a forest that has plenty of unnamed ones.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Ch%C3%AAne_%C3%A0_Guillotin",
+        "https://broceliande.guide/Le-Chene-a-Guillotin-l-ancetre-de-Broceliande",
+        "https://www.destination-broceliande.com/en/discover/our-must-haves/the-forest-of-broceliande/legends-side/legendary-arthurian-sites-in-broceliande/the-guillotin-oak/"
+      ],
+      "access": "Free, standing beside a path on the edge of the Foret de Paimpont near La Rue-Eon; owned by the commune of Concoret since 2000 and fenced since 2019 to stop visitors touching the trunk, but fully visible and reachable on foot.",
+      "transport": "Near the hamlet of La Rue-Eon, commune of Concoret, Morbihan; no rail, reached by car or on the forest trail network, roughly 40 minutes from Rennes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
