@@ -28,6 +28,7 @@ his name on the listing, and the one step that reaches Apple.
 """
 
 import argparse
+import json
 import datetime
 import os
 import re
@@ -72,29 +73,69 @@ def check_current():
     return head
 
 
+def uploaded_build():
+    """The highest build App Store Connect already holds, or None.
+
+    The docstring below used to say there was no way to ask. There is now: an
+    API key landed on 2026-09-03 for asc_downloads.py, and this is the same
+    read-only gear under hard rule 5's carve-out. It matters because the guess
+    was already wrong on 2026-09-04: the project file said 8 while App Store
+    Connect held 9, so the next archive would have been another build 9 and the
+    upload would have been refused after the whole archive was made.
+
+    Silent about a missing key on purpose. Somebody without the credentials
+    still gets the old behaviour and the old warning, rather than a stop.
+    """
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from asc_auth import bearer_token
+        import urllib.request
+
+        token = bearer_token()
+        url = ("https://api.appstoreconnect.apple.com/v1/builds"
+               "?filter[app]=6806177833&limit=20&sort=-uploadedDate")
+        req = urllib.request.Request(url, headers={"Authorization": "Bearer " + token})
+        with urllib.request.urlopen(req, timeout=25) as r:
+            data = json.load(r)
+        nums = [int(b["attributes"]["version"]) for b in data.get("data", [])
+                if str(b.get("attributes", {}).get("version", "")).isdigit()]
+        return max(nums) if nums else None
+    except Exception as exc:
+        print(f"note: could not ask App Store Connect for the last build ({exc.__class__.__name__}). "
+              f"Falling back to the project file's number.")
+        return None
+
+
 def bump_build(explicit=None):
-    """Raise the build number, and it cannot always work this out alone.
+    """Raise the build number past everything Apple already has.
 
     The project file is not the record of what has been UPLOADED. Xcode's
     "Manage Version and Build Number" increments at distribution time and does
     not write back here, so the file said 2 while TestFlight already held 4, and
     the first run of this script produced a build 3 that App Store Connect would
-    have refused as lower than one it already had (2026-08-30).
+    have refused as lower than one it already had (2026-08-30). It happened
+    again on 2026-09-04, file at 8 against Apple's 9.
 
-    So: pass --build N when TestFlight is ahead of this file. There is no way to
-    ask App Store Connect from here without an API key, and inventing a number
-    is worse than being told one.
+    So the number comes from Apple when it can, from the file plus one when it
+    cannot, and from --build N when somebody says so.
     """
     with open(PBX, encoding="utf-8") as fh:
         src = fh.read()
     found = sorted({int(m) for m in re.findall(r"CURRENT_PROJECT_VERSION = (\d+);", src)})
     if not found:
         die("no CURRENT_PROJECT_VERSION in the project file.")
-    nxt = explicit if explicit is not None else found[-1] + 1
-    if explicit is None:
-        print("note: this is the project file's number plus one. If TestFlight already "
-              "holds a higher build, pass --build N; Xcode's own increment does not "
-              "write back here.")
+    if explicit is not None:
+        nxt = explicit
+    else:
+        live = uploaded_build()
+        if live is not None:
+            nxt = max(found[-1], live) + 1
+            print(f"App Store Connect holds build {live}; this project file says {found[-1]}.")
+        else:
+            nxt = found[-1] + 1
+            print("note: this is the project file's number plus one. If TestFlight already "
+                  "holds a higher build, pass --build N; Xcode's own increment does not "
+                  "write back here.")
     src = re.sub(r"CURRENT_PROJECT_VERSION = \d+;",
                  f"CURRENT_PROJECT_VERSION = {nxt};", src)
     with open(PBX, "w", encoding="utf-8") as fh:
