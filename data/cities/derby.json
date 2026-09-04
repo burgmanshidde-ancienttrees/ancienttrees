@@ -1,0 +1,63 @@
+{
+  "city": "Derby",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Derby maps one tree: a hollow boab a few kilometres out on the Gibb River Road, famous for a prison story historians have since traced to a newspaper caption rather than to any real record. What is documented is older, a shelter and burial place for the Nyikina and Warrwa people. Published alone here because the tree itself is the destination, not because Derby's research is finished.",
+  "meta_description": "The Boab Prison Tree near Derby, WA: a giant hollow boab, 12.5m round, wrongly famous as a lock-up. Free roadside stop on the Gibb River Road.",
+  "question_meta": "Derby's only mapped tree is the Boab Prison Tree, a giant hollow boab on the Gibb River Road whose prison legend does not hold up to the evidence.",
+  "question_answer": "Derby's only mapped tree, and its oldest, is the Boab Prison Tree, a Boab (Adansonia gregorii) beside the Derby-Gibb River Road a few kilometres south of town. Its trunk measured about four metres through in 1905, close to twelve and a half metres around, and it is documented since 1916 as a shelter and burial place used by Aboriginal people, though the popular story of prisoners locked inside it has no supporting evidence.",
+  "question_context": "Historians Kristyn Harman and Elizabeth Grant, and separately the anthropologist Kim Akerman, traced the prison story to a 1948 newspaper description of an artwork and to a different, similarly named tree at Wyndham. No record has turned up of anyone held inside this particular trunk. What is documented is older: in 1916 the anthropologist Herbert Basedow photographed it as a living boab used for shelter and burial, and recorded human bones inside it, a use with real significance for the Nyikina and Warrwa people. The one trunk measurement on record, taken in 1905, gives a girth of 12.57 metres and an age estimate of roughly 500 years, which reads as a round guess rather than a dating; radiocarbon work since has reportedly suggested it is considerably older, so it is stated here as disputed. It stands free to visit on the road toward the Gibb River Road, ringed by a post-and-wire fence put up after visitors compacted its roots and carved into its bark.",
+  "hero_tree_id": "der_001",
+  "oldest_tree_id": "der_001",
+  "faq": [
+    {
+      "q": "What is the Boab Prison Tree?",
+      "a": "A giant hollow boab beside the Gibb River Road south of Derby, historically used by Aboriginal people for shelter and burial. Its popular name comes from a prison legend that historians have found no evidence for."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. A 1905 record estimated roughly 500 years, but that reads as a guess rather than a measurement, and radiocarbon work since has been reported to suggest it is considerably older."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It is a well-known roadside stop with unrestricted public access and no entry fee, protected by a post-and-wire fence."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By self-drive, roughly 4 to 6km south of Derby town on the road toward the Gibb River Road. There is no public transport to the site."
+    }
+  ],
+  "trees": [
+    {
+      "id": "der_001",
+      "name": "Boab Prison Tree",
+      "species": "Boab (Adansonia gregorii)",
+      "age_estimate": "disputed, at least 500 years",
+      "age_min": 500,
+      "age_max": null,
+      "girth_cm": 1257,
+      "location": {
+        "address": "Derby-Gibb River Road, adjacent to Myall's Bore, Derby, Western Australia 6728",
+        "latitude": -17.347862,
+        "longitude": 123.670163,
+        "neighbourhood": "Derby Town Commonage, ~4-6km south of Derby township, on the road toward the Gibb River Road"
+      },
+      "story": "The prison in the name looks like a fiction. Historians Kristyn Harman and Elizabeth Grant, and separately the anthropologist Kim Akerman, traced the story of Aboriginal prisoners held inside this hollow boab back to a 1948 newspaper description of an artwork, and to a different, similarly named tree at Wyndham. No evidence has turned up that anyone was ever locked in this trunk.\n\nWhat is documented is older and quieter. In 1916 the anthropologist Herbert Basedow photographed it as a living boab used by Aboriginal people as a shelter and a burial place, and recorded bleached human bones inside it. The tree carries real significance for the Nyikina and Warrwa people, and that has nothing to do with the legend that put it on postcards.\n\nIt is a giant. The one measurement on record, taken in 1905, gives a trunk four metres through, which is close to twelve and a half metres around. The same record put its age at roughly 500 years, which would make it past 600 now, though that reads as a round guess rather than a dating, and radiocarbon work since has been reported to make it considerably older. Nobody has settled it.\n\nIt stands a few kilometres south of Derby on the road toward the Gibb River Road, free to visit, ringed by a post and wire fence put there because visitors compacted its roots and cut into its bark.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Boab_Prison_Tree,_Derby",
+        "https://www.trusttrees.org.au/tree/WA/Derby/Adjacent_To_MyallS_Bore_Derby_Gibb_River_Rd",
+        "https://inherit.dplh.wa.gov.au/public/inventory/details/95acfb24-b2ca-4f96-8b4b-b68d73927df9"
+      ],
+      "access": "Free, unrestricted public access per the National Trust register; a well-known roadside stop on Derby-Gibb River Road, protected by a post-and-wire fence to stop soil compaction and carving, with interpretive signage. No entry fee found in any source.",
+      "transport": "No public transport; self-drive, roughly 4-6km south of Derby town on the road toward the Gibb River Road (sources give slightly different distances: WA state heritage register says 4km, other tourism sources say 6km).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

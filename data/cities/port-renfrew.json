@@ -1,0 +1,96 @@
+{
+  "city": "Port Renfrew",
+  "country": "Canada",
+  "status": "needs_curation",
+  "intro": "Port Renfrew maps two giant Douglas-firs reached by rough logging roads on Vancouver Island's west coast. Big Lonely Doug stands alone in a 2012 clearcut that spared it, an accidental monument to old-growth logging. The Red Creek Fir, an hour further out, holds more wood than any known Douglas-fir on Earth. Neither has a documented age, both are free to reach, and both are worth the drive.",
+  "meta_description": "Big Lonely Doug and the Red Creek Fir near Port Renfrew, BC: two record-sized old-growth Douglas-firs, reached by logging road. Free, self-drive.",
+  "question_meta": "Port Renfrew's two mapped trees, Big Lonely Doug and the Red Creek Fir, are both roughly 1,000-year-old Douglas-firs of record size on Vancouver Island.",
+  "question_answer": "Port Renfrew's oldest mapped tree, tied with its neighbour, is Big Lonely Doug, a Coast Douglas-fir (Pseudotsuga menziesii var. menziesii) left standing alone in a 2012 clearcut on the Gordon Main logging road. It and the Red Creek Fir, an hour further out, are both estimated to have seeded around the year 1000, a broad, unmeasured figure neither source treats as a ring count.",
+  "question_context": "Big Lonely Doug became famous by accident: logger Dennis Cronin marked it Leave Tree in 2011, and when the surrounding old growth came down in 2012, the 66-metre fir was left alone in the bare clearing, a photograph that made it a symbol of old-growth logging before it had a name. It ranks as Canada's second-largest known Douglas-fir by volume. The Red Creek Fir, about 45 minutes further east near the San Juan River, is the largest known Douglas-fir on Earth by volume, with a 13.3-metre girth and a scarred, forked crown showing it has lost its top to storms more than once. Both trees are free to visit on Crown land with no gate or permit, reached by rough, largely unmaintained logging roads that need a high-clearance vehicle, followed by a short trail on foot. Road conditions shift year to year with storm damage and active logging nearby, so check conditions before setting out. Neither tree has a documented ring count; both ages are stated here as a broad estimate rather than a measurement.",
+  "hero_tree_id": "prv_001",
+  "oldest_tree_id": "prv_001",
+  "faq": [
+    {
+      "q": "What is Big Lonely Doug?",
+      "a": "A 66-metre Coast Douglas-fir left standing alone after the old-growth stand around it was clearcut in 2012, now an internationally known symbol of old-growth logging."
+    },
+    {
+      "q": "What is the Red Creek Fir?",
+      "a": "The largest known Douglas-fir on Earth by volume, with a 13.3-metre girth, standing about 45 minutes from Port Renfrew near the San Juan River."
+    },
+    {
+      "q": "How old are they?",
+      "a": "Both are estimated to have seeded around the year 1000, a broad, unmeasured figure. Nobody has cored either tree to count the rings."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By high-clearance or 4WD vehicle on rough logging roads from Port Renfrew, roughly 15-20 minutes for Big Lonely Doug and 45 minutes for the Red Creek Fir, each followed by a short trail on foot. There is no public transit."
+    }
+  ],
+  "trees": [
+    {
+      "id": "prv_001",
+      "name": "Big Lonely Doug",
+      "species": "Coast Douglas-fir (Pseudotsuga menziesii var. menziesii)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 1191,
+      "height_m": 66.0,
+      "location": {
+        "address": "Gordon Main logging road, Gordon River Valley, about 10 km north of Port Renfrew, Vancouver Island, BC",
+        "latitude": 48.64626,
+        "longitude": -124.45063,
+        "neighbourhood": "Gordon River Valley (Tree Farm Licence 46, Pacheedaht traditional territory)"
+      },
+      "story": "In 2011, timber cruiser Dennis Cronin walked into an old-growth stand marked for logging and found a Douglas-fir too big to ignore. He wrapped it in ribbon reading Leave Tree, over and over, and in 2012 the forest around it came down anyway. What was left standing was a single 66-metre fir alone in a clearcut, and the photograph of it made the tree famous before it had a name.\n\nActivist and photographer T.J. Watt gave it one in 2014: Big Lonely Doug. Measured that April by forest ecologist Andy MacKinnon, it came in at 66.0 metres tall with an 11.91-metre girth, second in volume among Canada's known Douglas-firs and worth 701 points on the BC Big Tree Registry. It carries roughly a thousand years of growth, seeded around the year 1000, though nobody has counted its rings.\n\nIt stands on Crown land, no permit needed, about 15 minutes from Port Renfrew on the Gordon Main logging road. The road turns rough past the Gordon River bridge and a short, steep trail drops to the base, though the best view of it, alone in the clearing that made it famous, is from the road itself.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Big_Lonely_Doug",
+        "https://ancientforestalliance.org/big-lonely-doug-officially-measured-and-confirmed-as-canadas-2nd-largest-douglas-fir-tree/",
+        "https://happiestoutdoors.ca/avatar-grove-big-lonely-doug/"
+      ],
+      "access": "Free, on Crown land within Tree Farm Licence 46; the tree itself was marked with a green 'Leave Tree' ribbon by the logger who found it and left standing when the surrounding stand was clearcut in 2012, so there is no gate or permission needed. Reaching it needs a vehicle: the logging road is fine for a standard car up to the Gordon River bridge, then gets rough and steep, with 4WD/high clearance recommended beyond it (2WD drivers can park at the bridge and walk about 1.5 km up the road). From the road pullout a flagged, fairly steep trail (about 250 m round trip) drops through clearcut debris to the tree's base; the best full view is actually from the road itself.",
+      "transport": "No public transit. Drive from Port Renfrew via the Gordon Main logging road (roughly 15-20 minutes); high-clearance or 4WD recommended past the Gordon River bridge.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prv_002",
+      "name": "Red Creek Fir",
+      "species": "Coast Douglas-fir (Pseudotsuga menziesii var. menziesii)",
+      "age_estimate": "roughly 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "girth_cm": 1330,
+      "height_m": 74.0,
+      "location": {
+        "address": "Red Creek Fir Forest Service Recreation Site, San Juan River valley, about 15 km / 45 minutes' drive east of Port Renfrew, Vancouver Island, BC",
+        "latitude": 48.579743,
+        "longitude": -124.220776,
+        "neighbourhood": "San Juan River valley (often loosely called 'the Walbran' by visitors, but it sits in the San Juan valley, not the Walbran Valley proper)"
+      },
+      "story": "The Red Creek Fir holds more wood than any other Douglas-fir ever measured: 349 cubic metres of trunk, a girth of 13.3 metres and a diameter of 4.23 metres taken just above the base. Even that undersells it. The scarred, forked crown shows it has lost its top to storms at least twice, which means the tree standing here today may once have been taller than the 74 metres it reaches now.\n\nIt seeded around the year 1000, by the same rough estimate applied to its rival Big Lonely Doug an hour's drive away, though nobody has cored it to count the rings. It sits inside a Forest Service Recreation Site and an Old-Growth Management Area rather than under any protection written specifically for it, which has been enough so far.\n\nGetting there takes commitment: about 45 minutes from Port Renfrew on rough, largely unmaintained logging roads that a high-clearance vehicle should handle and a low one probably should not, past several large old cedars, then an easy kilometre on foot. Road conditions shift year to year with storm damage and logging nearby, so check before you go.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Red_Creek_Fir",
+        "https://www.alltrails.com/trail/canada/british-columbia/red-creek-fir",
+        "https://happiestoutdoors.ca/wp-content/uploads/2018/04/2017-Tall-Tree-Driving-Directions.pdf"
+      ],
+      "access": "Free, Crown land within a designated Forest Service Recreation Site and Old-Growth Management Area, no gate or permission needed. Reached via rough, largely unmaintained industrial logging roads (high-clearance vehicle essential, 4WD preferable, roughly a 45-minute drive from Port Renfrew), then an easy, well-used trail of about 1 km return (10-15 minutes) passing several large old cedars. Road conditions vary year to year with storm damage and active logging in the area; state plainly rather than assuming the road is always open.",
+      "transport": "No public transit. High-clearance vehicle required, driving from Port Renfrew via industrial logging roads (about 45 minutes), followed by a short signed hiking trail.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}

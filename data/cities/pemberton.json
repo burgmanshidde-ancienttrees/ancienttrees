@@ -1,0 +1,64 @@
+{
+  "city": "Pemberton",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Pemberton maps one tree: a karri turned into a fire lookout in 1947, its trunk fitted with a spiral of steel pegs a prince himself helped drill. Once 61 metres tall, it lost its rotting crown in a recent trim and reopened to climbers in 2026 at a lower platform. Published alone here because the tree, not the town, is the destination.",
+  "meta_description": "The Gloucester Tree in Pemberton, WA: a former fire lookout karri you can still climb via steel pegs, reopened 2026 after a safety closure.",
+  "question_meta": "Pemberton's only mapped tree is the Gloucester Tree, a karri fire-lookout tree fitted with a climbable spiral of steel pegs since 1947.",
+  "question_answer": "Pemberton's only mapped tree, and its oldest, is the Gloucester Tree, a Karri (Eucalyptus diversicolor) in Gloucester National Park about 3km from town. Fitted in 1947 with a spiral of steel pegs to serve as a fire lookout, it was once the second tallest such tree in the world, and its climb reopened to the public on 1 July 2026 after a three-year safety closure, now stopping at a lower platform.",
+  "question_context": "The tree takes its name from Prince Henry, Duke of Gloucester, who worked an auger into the trunk himself during a visit in the late 1940s. Forester George Reynolds drove the spiral of pegs up the trunk in 1947, one of eight fire-lookout trees raised across the south west between 1937 and 1952, and Jack Watson, a forester and Gallipoli veteran, made the first test climb, taking six hours. At the climbing zone the trunk measured 7.3 metres round on that first ascent. The tree stood 61 metres tall until a trim removed seven metres of rotting crown; the climb closed in November 2023 on safety grounds and reopened in July 2026 at a new platform 37 metres up rather than the old 53. There is no harness and the risk is the climber's own. Its age is given only as a floor, at least 250 years, with no ceiling and no ring count on record. A DPaW day-use entry fee applies for vehicle access to Gloucester National Park; there is no public transport, and Pemberton itself is a short, rural drive away.",
+  "hero_tree_id": "pem_001",
+  "oldest_tree_id": "pem_001",
+  "faq": [
+    {
+      "q": "What is the Gloucester Tree?",
+      "a": "A karri in Gloucester National Park fitted in 1947 with a spiral of steel pegs as a forestry fire lookout, still climbable today."
+    },
+    {
+      "q": "How old is it?",
+      "a": "At least 250 years, by the sources' own account, with no upper figure and no ring count on record."
+    },
+    {
+      "q": "Can you still climb it?",
+      "a": "Yes. The climb reopened on 1 July 2026 after a three-year safety closure, now stopping at a platform 37 metres up rather than the old 53. There is no harness and the climb is at your own risk."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car, about 3km (a 5 minute drive) from Pemberton town centre. A DPaW day-use entry fee applies for vehicle entry to Gloucester National Park."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pem_001",
+      "name": "The Gloucester Tree",
+      "species": "Karri (Eucalyptus diversicolor)",
+      "age_estimate": "at least 250 years",
+      "age_min": 250,
+      "age_max": null,
+      "girth_cm": 730,
+      "location": {
+        "address": "Gloucester National Park, Pemberton, Western Australia 6260",
+        "latitude": -34.447653,
+        "longitude": 116.059522,
+        "neighbourhood": "Gloucester National Park, ~3km from Pemberton town centre"
+      },
+      "story": "A prince helped drill the holes. Prince Henry, Duke of Gloucester, came through in the late 1940s and worked an auger into this karri's trunk himself, which is how the tree got both its name and part of its ladder.\n\nThe ladder was the point. In 1947 the forestry service picked this karri as a fire lookout, one of eight raised across the south west between 1937 and 1952, and George Reynolds drove a spiral of steel pegs up the trunk. Jack Watson, a forester and Gallipoli veteran who later ran Kings Park, made the test climb and took six hours over it. The job at the top was to see smoke over the karri forest before it turned into something visible from the ground. It became the second tallest fire lookout tree in the world, behind the Dave Evans Bicentennial Tree a few kilometres away.\n\nIt stood 61 metres until a trim took seven metres of rotting crown off. The climb closed in November 2023 on safety grounds and reopened on 1 July 2026, now stopping at a platform 37 metres up rather than the old 53. There is still no harness and the risk is still the climber's own. At the climbing zone the trunk measured 7.3 metres round on that first ascent in 1947.\n\nIts age is a floor without a ceiling: sources say at least 250 years, and nobody has counted the rings.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Gloucester_Tree",
+        "https://www.abc.net.au/news/2025-04-16/gloucester-tree-climb-wa-to-be-rebuilt-lower-height/105183702",
+        "https://www.pembertonvisitor.com.au/nature-national-park/gloucester-tree",
+        "https://www.pembertondiscoverytours.com.au/post/climbing-the-gloucester-tree-pemberton"
+      ],
+      "access": "Free to view; DPaW national park day-use entry fee applies for vehicle entry to Gloucester National Park. Open daylight hours. The climb itself (pegs spiralling the trunk) reopened 1 July 2026 after a 3-year safety closure, now restricted to a new 37m platform (was 53m) after the crown was trimmed 7m for rot; no harness provided, climb at own risk.",
+      "transport": "No public transport to the park; ~5 minute drive / 3km from Pemberton town, which itself is rural and has limited coach/bus service. Car is the practical way in.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    }
+  ]
+}
