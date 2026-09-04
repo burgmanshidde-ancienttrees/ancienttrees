@@ -603,7 +603,7 @@ struct CollectSheet: View {
             // a photograph taken on this screen can end up on that tree's page
             // when the page has none or this one is better. Somebody who is
             // told that only on the other screen has not been told.
-            Text("Your photograph can appear on the tree's page, with your name under it.")
+            Text("Your photograph can appear on the tree's page, with your name under it. Delete your account later and your name comes off it, while the picture stays.")
                 .font(.footnote)
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
@@ -689,7 +689,7 @@ struct CollectSheet: View {
                 // decides to send it, which is the only moment consent means
                 // anything. No toggle beside it, per his 2026-08-24 ruling that
                 // the reader should not carry a choice that is ours.
-                Text("Your photograph can appear on the tree's page, with your name under it. We read every word you send.")
+                Text("Your photograph can appear on the tree's page, with your name under it. Delete your account later and your name comes off it, while the picture stays. We read every word you send.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -776,7 +776,7 @@ struct CollectSheet: View {
             Text("It is in your trees now, with your photograph.")
                 .font(.subheadline)
                 .foregroundStyle(Brand.inkSoft)
-            Text("Your photograph can appear on the tree's page, with your name under it. We read every word you send.")
+            Text("Your photograph can appear on the tree's page, with your name under it. Delete your account later and your name comes off it, while the picture stays. We read every word you send.")
                 .font(.footnote)
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
