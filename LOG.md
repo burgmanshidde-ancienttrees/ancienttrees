@@ -9,6 +9,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-04 - Night run 2026-09-03 23:32 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 47.7 minutes of its 120 minute window, 374 turns, 33 commands refused by the allowlist, ended clean (success). 6 tree(s) reached data/cities across 6 city file(s), and the run still wrote no log entry of its own. Claims left behind: indianapolis, boise, fort-lauderdale, which block the top of the queue until they expire.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported. What it cannot tell you is WHY the run stopped: the transcript is hidden on purpose, the repo being public. If this shape repeats, the two things worth suspecting are the usage window and the refused commands.
+
 ## 2026-09-03 (continuation run 8, part 2) - Jacksonville register scout: thin, one lead recorded
 
 After the bomenbieb claims closed out, `scout_next.py --target` pointed at Jacksonville. The Florida Champion Tree Register is real but thin for Duval County (8 of 577 rows) and withholds coordinates for private trees; found one public specimen (a National Champion Tough Bumelia) and recorded it as a lead rather than forcing a register import. `ffs.fdacs.gov` added to the fetch blocklist (unreachable from this sandbox; Wayback substitutes). Jacksonville still needs a from-zero research pass for its other trees. Detail in CURATION.md.

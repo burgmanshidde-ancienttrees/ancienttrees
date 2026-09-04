@@ -4422,6 +4422,54 @@
    ],
    "trees": 9,
    "logged": true
+  },
+  {
+   "started": "2026-09-03T23:32:27+00:00",
+   "date": "2026-09-04",
+   "run_id": "33818019771",
+   "minutes": 47.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 374,
+   "denials": 33,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(if), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(tail)",
+   "ended": "success",
+   "tokens": 28405725,
+   "claims_held": [
+    "indianapolis",
+    "boise",
+    "fort-lauderdale"
+   ],
+   "commits": 17,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "port-renfrew",
+     "trees": 2
+    },
+    {
+     "city": "cooper-creek",
+     "trees": 1
+    },
+    {
+     "city": "derby",
+     "trees": 1
+    },
+    {
+     "city": "flinders-ranges",
+     "trees": 1
+    },
+    {
+     "city": "pemberton",
+     "trees": 1
+    },
+    {
+     "city": "baarn",
+     "trees": 0
+    }
+   ],
+   "trees": 6,
+   "logged": false
   }
  ],
  "schedule_changes": [
