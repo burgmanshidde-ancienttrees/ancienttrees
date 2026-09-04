@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ali_015",
+    "name": "The Araucaria of Plaza de Calvo Sotelo",
+    "species": "Norfolk Island Pine (Araucaria heterophylla)",
+    "age_estimate": "over a century",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": null,
+    "location": {
+      "address": "Plaza de Calvo Sotelo (Plaza de las Palomas), Alicante",
+      "latitude": 38.343606,
+      "longitude": -0.48818,
+      "neighbourhood": "City centre, between Avenida Doctor Gadea and Avenida Federico Soto"
+    },
+    "verified_sources": [
+      "https://www.alicante.es/sites/default/files/documentos/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante/senderos-centro.pdf (Ayuntamiento de Alicante's own walking-route brochure, stop 8, Plaza de Calvo Sotelo: 'un olmo, un platano de sombra ... y una enorme araucaria'; the companion species fact-sheet PDF at the same URL path (senderos-centro-arboles.pdf) captions a photo 'Araucaria en Plaza Calvo Sotelo')",
+      "https://anticalicante.blogspot.com/2026/05/alicante-ayer-y-hoy-plaza-de-calvo.html (independent local-history 'then and now' blog, fetched directly 2026-09-04, no citation to the Ayuntamiento brochure or Wikipedia in this post: 'La plaza destaca tanto por su arbolado -que incluye una imponente araucaria centenaria- como por ser un nucleo de gran tradicion social y festera')"
+    ],
+    "access": "Free, open public plaza in the city centre (popularly called Plaza de las Palomas), no gate or opening hours",
+    "transport": "TRAM Luceros stop (lines L1-L4) or Plaza de los Luceros, roughly 5-8 minutes on foot; about 350m from the Plaza Gabriel Miro fig cluster",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "PREVIOUSLY A LEAD (see data/leads/alicante.json), held twice (2026-08-23, 2026-08-26, re-checked 2026-09-03) for having only ONE effective source: the Ayuntamiento's own walking-tour brochure family (senderos-centro.pdf plus its companion species fact-sheet), which es.wikipedia's 'Arboles singulares de Alicante' and 'Plaza de Calvo Sotelo' articles and an earlier 2014 anticalicante.blogspot.com post all simply restate (the 2014 post explicitly credits Wikipedia as its text source). This pass found a SECOND, genuinely independent source: a different anticalicante.blogspot.com post from 2026-05 ('Alicante Ayer y Hoy - Plaza de Calvo Sotelo'), a historical then-and-now photo feature with no citation to the brochure or Wikipedia, describing 'una imponente araucaria centenaria' (an imposing centenarian araucaria) as one of the plaza's two defining features alongside its social/festival tradition. That clears the two-source bar for EXISTENCE and a vague age ('centenaria' = over a century, taken as vaguely as given, never sharpened to a number). It does NOT give species precision beyond 'araucaria' (the brochure's fact-sheet is the source for the specific ID as Araucaria heterophylla/'excelsa', the common ornamental Norfolk Island pine planted across coastal Spain) or any girth/height figure. No register entry exists (checked: no Araucaria heterophylla/excelsa anywhere in data/registers/valencia-arboles-monumentales.json within 70km of Alicante), no OSM natural=tree node in the plaza carries a genus tag (checked via Overpass, bbox around the plaza: 11 untagged broadleaved nodes, presumably the elm/plane, nothing coniferous/needleleaved), and no Wikimedia Commons photo of the plaza's trees could be found (Commons search for 'Plaza Calvo Sotelo' and 'Calvo Sotelo araucaria' returned nothing usable). PIN: plaza-level only, not tree-level; no source places the tree at a specific corner or gives a photo with enough context to fix its exact spot within the plaza, so location_precision is honestly 'approximate' (centroid of the plaza per OSM/Nominatim way 22563716). The plaza's other two named trees at this same stop, an elm (Ulmus minor) and a plane tree (Platanus x hispanica), remain single-sourced (the same 2026-05 blog post names only the araucaria, not them) and stay in leads.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  }
+]

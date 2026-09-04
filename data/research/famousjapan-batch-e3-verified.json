@@ -1,0 +1,56 @@
+[
+  {
+    "id": "mtm_001",
+    "container": "new:Matsumae",
+    "name": "Kechimyaku Zakura (The Blood-Lineage Cherry)",
+    "species": "Matsumae Hayazaki Cherry (Prunus sp., cultivar 'Matsumae-hayazaki', presumed Prunus lannesiana x Prunus verecunda hybrid)",
+    "age_estimate": "200 to 300+ years (sources disagree)",
+    "age_min": 200,
+    "age_max": 320,
+    "girth_cm": 550,
+    "height_m": 8,
+    "location": {
+      "address": "Kozenji Temple, Matsushiro, Matsumae, Matsumae District, Hokkaido (address block 松城303)",
+      "latitude": 41.43152,
+      "longitude": 140.10604,
+      "neighbourhood": "Matsushiro, Matsumae"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/血脈桜",
+      "https://tenki.jp/sakura/1/4/50065.html",
+      "https://garden-guide.jp/spot.php?i=kozenji-matsumae"
+    ],
+    "access": "Free, temple grounds open to the public. JR Kikonai station, then Hakodate Bus approx. 1.5 hours to Matsushiro-shimo stop, then 10 minute walk.",
+    "transport": "Matsushiro-shimo bus stop (Hakodate Bus from JR Kikonai) + 10 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Grows at Kozenji Temple (founded 1575, Jodo-shu sect) in Matsushiro, Matsumae, Hokkaido, the historic castle town famous nationwide for its cherry blossoms (Matsumae is regularly ranked one of Hokkaido's top cherry-viewing sites, with 250+ cultivars across the town, so this single tree is embedded in a much bigger local cherry culture; judged it still clears the single-tree-destination bar because it is individually named, carries its own legend, and is the documented parent/origin tree of a named cultivar, distinct from the general park population). Designated a Hokkaido Memorial Tree (北海道指定記念樹木) in 1973. It is the original/mother tree of the Matsumae-hayazaki cultivar, also called Naden (南殿); the cultivar is believed a hybrid of Takasago and Kasumizakura and is thought to have arrived via Hokumae-bune (Kitamae-bune) trading-ship culture from the Sea of Japan coast. Carries a local legend, 'the maiden and the blood lineage' (乙女と血脈), tied to the tree's name. Age disagreement across sources: ja.wikipedia gives 'over 200 years or over 280 years'; multiple tourism/garden sources (garden-guide.jp, hanami.walkerplus.com, tenki.jp) say 'over 300 years'; recorded honestly as a range rather than picking a winner. Height ~8m and girth 5.5m (550cm) agree across all sources checked, so treated as solid. Alive-now evidence: tenki.jp (Japan Meteorological Corporation's own cherry-blossom tracking site) lists it as an active bloom-forecast site through the concluded 2026 season, i.e. tracked and blooming as of spring 2026. Free entry, no restrictions found. Judgement call recorded for the writer/curator: whether this should ship alone as 'new:Matsumae' (this pass's call) or wait to see if Matsumae Park's other notable cherry specimens turn up a fuller cluster later; either is defensible."
+  },
+  {
+    "id": "num_001",
+    "container": "new:Numata",
+    "name": "The Great Mulberry of Usune",
+    "species": "Yamaguwa / Japanese Wild Mulberry (Morus bombycis)",
+    "age_estimate": "traditionally said to be roughly 1,500 years; a 1991 official survey estimated 300+ years",
+    "age_min": 300,
+    "age_max": 1500,
+    "girth_cm": 567,
+    "height_m": 13.65,
+    "location": {
+      "address": "2083 Machida-cho, Numata City, Gunma Prefecture (Ishizumi-cho area, formerly Usune Village, Tone District)",
+      "latitude": 36.680056,
+      "longitude": 139.044917,
+      "neighbourhood": "Ishizumi, Numata"
+    },
+    "verified_sources": [
+      "https://www.city.numata.gunma.jp/kyouiku/bunkazai/ichiran/kuni/1000831.html",
+      "https://ja.wikipedia.org/wiki/薄根の大クワ",
+      "https://online.bunka.go.jp/heritages/detail/138127"
+    ],
+    "access": "Free, viewable at any time; a maintained wooden viewing walkway (recently repaired) leads to the tree, on cultivated land near Ishizumi Daijingu shrine. Parking available in spare space at the shrine. Visitors asked to avoid times that would inconvenience nearby residents. Caution advised on the walkway in wet or snowy weather.",
+    "transport": "Bus from JR Numata Station (Joetsu Line), Kan-etsu Kotsu Sayama Line, alight at 'Ishizumi Ippommatsu' stop, 2 min walk. Or 15 min drive from Numata IC on the Kan-etsu Expressway.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "National Natural Monument, designated 15 May 1956, managed by Numata City since 1953. Widely reported as Japan's largest yamaguwa (wild mulberry) specimen by girth and one of the country's most celebrated mulberry trees. Part of the 'Gunma Silk Heritage' storyline, associated with the UNESCO World Heritage Tomioka Silk Mill and the region's sericulture history; the tree is revered locally as a guardian of silkworm farming, and its leaves were used to feed silkworms during frost damage in surrounding farms historically. Local tradition holds it was used as a benchmark during a 1686 Maebashi-domain land survey. City government page (city.numata.gunma.jp) gives age ~1,500 years, height 13.65m, girth 5.67m; the online Cultural Affairs Agency database gives a slightly different height (10.7m) and girth (5m at 1.4m above the base), and one secondary source notes a 1991 official survey suggested a more modest 300+ years against the traditional 1,500-year claim; recorded both age figures honestly as a range rather than picking one, and used the city's own current figures (13.65m / 567cm) as primary since they are the most recent and specific. As of 2018 the tree was reported undergoing arboricultural treatment/restoration for pest damage; no report found of it having died or been removed since. Stands on cultivated farmland rather than in a park, but access is explicitly open: 'viewing is free, can be seen at any time' per the city tourism association, with a maintained public walkway and designated parking at the neighbouring shrine, so this clears hard rule 10 despite being farmland (same pattern as the Ypres/Leuven OSM-access technique, here confirmed directly by the city's own tourism copy rather than by a map tag). Single-tree-destination judgement: passes, given the national monument status, 'largest in Japan' claim, UNESCO-adjacent Silk Heritage tie-in, and dedicated public viewing infrastructure built specifically for visitors. Note for city building: Higashiagatsuma (already published, hgt_001 Agarikodaio) is a SEPARATE town roughly 20km away; this tree does not belong in that city file despite the original brief's assumption, it is in Numata City, which is not yet published."
+  }
+]
