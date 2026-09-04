@@ -6704,51 +6704,54 @@
   "ist_001": {
    "city": "Istanbul",
    "name": "The Oldest Plane of Bahçeköy",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": []
   },
   "ist_002": {
    "city": "Istanbul",
    "name": "The Ahtapot Çınar",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": []
   },
   "ist_005": {
    "city": "Istanbul",
    "name": "The Çengelköy Plane",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": [
     {
      "title": "File:İstanbul - Çengelköy, Üsküdar r3 - Şub 2013.JPG",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%C4%B0stanbul_-_%C3%87engelk%C3%B6y%2C_%C3%9Csk%C3%BCdar_r3_-_%C5%9Eub_2013.JPG/960px-%C4%B0stanbul_-_%C3%87engelk%C3%B6y%2C_%C3%9Csk%C3%BCdar_r3_-_%C5%9Eub_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/%C4%B0stanbul_-_%C3%87engelk%C3%B6y%2C_%C3%9Csk%C3%BCdar_r3_-_%C5%9Eub_2013.JPG/960px-%C4%B0stanbul_-_%C3%87engelk%C3%B6y%2C_%C3%9Csk%C3%BCdar_r3_-_%C5%9Eub_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul_-_%C3%87engelk%C3%B6y,_%C3%9Csk%C3%BCdar_r3_-_%C5%9Eub_2013.JPG",
      "licence": "CC BY-SA 3.0",
-     "author": "VikiPicture"
+     "author": "VikiPicture",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Billboards in Turkey Category:CC-BY-SA-3.0 Category:Self-published work Category:Çengelköy"
     }
    ]
   },
   "ist_007": {
    "city": "Istanbul",
    "name": "The Ata Fıstık Çamı",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": []
   },
   "ist_008": {
    "city": "Istanbul",
    "name": "The Florya Mastic Tree",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": []
   },
   "ist_009": {
    "city": "Istanbul",
    "name": "The Ehrami Servi of Büyükada",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": []
   },
   "kra_003": {
@@ -13268,8 +13271,8 @@
   "ist_011": {
    "city": "Istanbul",
    "name": "The Topkapı Palace Courtyard Plane",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": []
   },
   "lon_011": {
@@ -15843,22 +15846,22 @@
   "ist_012": {
    "city": "Istanbul",
    "name": "The Gülhane London Plane",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": []
   },
   "ist_013": {
    "city": "Istanbul",
    "name": "The Gülhane Nettle Tree",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": []
   },
   "ist_014": {
    "city": "Istanbul",
    "name": "The Topkapı Palace Yew",
-   "checked": "2026-08-13",
-   "sweep": 2,
+   "checked": "2026-09-04",
+   "sweep": 5,
    "candidates": []
   },
   "lon_020": {
@@ -51344,6 +51347,1084 @@
    "checked": "2026-09-04",
    "sweep": 5,
    "candidates": []
+  },
+  "hgt_001": {
+   "city": "Higashiagatsuma",
+   "name": "The Great Zelkova of Haramachi",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Haramachi-no-O-Keyaki 201907 001.jpg (Wikidata Q130296651)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Haramachi-no-O-Keyaki_201907_001.jpg/960px-Haramachi-no-O-Keyaki_201907_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Haramachi-no-O-Keyaki_201907_001.jpg",
+     "licence": "CC0",
+     "author": "ja:User:㭍月例祭",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Haramachi no Okeyaki Category:Self-published work",
+     "source": "wikidata/Q130296651"
+    }
+   ]
+  },
+  "hmy_001": {
+   "city": "Higashimiyoshi",
+   "name": "The Great Camphor of Kamo",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:加茂の大クス - panoramio.jpg (Wikidata Q11398822)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/%E5%8A%A0%E8%8C%82%E3%81%AE%E5%A4%A7%E3%82%AF%E3%82%B9_-_panoramio.jpg/960px-%E5%8A%A0%E8%8C%82%E3%81%AE%E5%A4%A7%E3%82%AF%E3%82%B9_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E5%8A%A0%E8%8C%82%E3%81%AE%E5%A4%A7%E3%82%AF%E3%82%B9_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "ball banban",
+     "lat": 34.040836,
+     "lng": 133.93203,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Kamo-no-Okusu Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "source": "wikidata/Q11398822"
+    }
+   ]
+  },
+  "hgn_001": {
+   "city": "Higashine",
+   "name": "The Great Zelkova of Higashine",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Great zelkova of Higashine. January 2022 A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Great_zelkova_of_Higashine._January_2022_A.jpg/960px-Great_zelkova_of_Higashine._January_2022_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Great_zelkova_of_Higashine._January_2022_A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 38.441657,
+     "lng": 140.401998,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Higashine no Okeyaki Category:January 2022 in Yamagata prefecture Category:Japan photographs taken on 2022-01-22 Category:Self-published work Category:Snow in Yamagata prefecture"
+    },
+    {
+     "title": "File:Great zelkova of Higashine. January 2022 B.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Great_zelkova_of_Higashine._January_2022_B.jpg/960px-Great_zelkova_of_Higashine._January_2022_B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Great_zelkova_of_Higashine._January_2022_B.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 38.441828,
+     "lng": 140.401893,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Higashine no Okeyaki Category:January 2022 in Yamagata prefecture Category:Japan photographs taken on 2022-01-22 Category:Self-published work Category:Snow in Yamagata prefecture"
+    },
+    {
+     "title": "File:Great zelkova of Higashine. January 2022 C.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Great_zelkova_of_Higashine._January_2022_C.jpg/960px-Great_zelkova_of_Higashine._January_2022_C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Great_zelkova_of_Higashine._January_2022_C.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 38.441803,
+     "lng": 140.401917,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Higashine no Okeyaki Category:Self-published work"
+    },
+    {
+     "title": "File:Great zelkova of Higashine. January 2022 D.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Great_zelkova_of_Higashine._January_2022_D.jpg/960px-Great_zelkova_of_Higashine._January_2022_D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Great_zelkova_of_Higashine._January_2022_D.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 38.441818,
+     "lng": 140.401872,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Higashine no Okeyaki Category:Self-published work"
+    },
+    {
+     "title": "File:Great zelkova of Higashine. January 2022 E.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Great_zelkova_of_Higashine._January_2022_E.jpg/960px-Great_zelkova_of_Higashine._January_2022_E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Great_zelkova_of_Higashine._January_2022_E.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 38.44218,
+     "lng": 140.402045,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Higashine no Okeyaki Category:Self-published work"
+    },
+    {
+     "title": "File:Great zelkova of Higashine. January 2022 F.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Great_zelkova_of_Higashine._January_2022_F.jpg/960px-Great_zelkova_of_Higashine._January_2022_F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Great_zelkova_of_Higashine._January_2022_F.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 38.44218,
+     "lng": 140.40202,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Higashine no Okeyaki Category:January 2022 in Yamagata prefecture Category:Japan photographs taken on 2022-01-22 Category:Self-published work Category:Snow in Yamagata prefecture"
+    },
+    {
+     "title": "File:Higashine City Central Sports Park 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Higashine_City_Central_Sports_Park_1.jpg/960px-Higashine_City_Central_Sports_Park_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Higashine_City_Central_Sports_Park_1.jpg",
+     "licence": "CC0",
+     "author": "Ebiebi2",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-Zero Category:Higashine, Yamagata Category:Self-published work"
+    },
+    {
+     "title": "File:Higashine city office.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Higashine_city_office.JPG/960px-Higashine_city_office.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Higashine_city_office.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "アラツク",
+     "lat": 38.43097222,
+     "lng": 140.39066667,
+     "cats": "Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Higashine, Yamagata Category:Japan photographs taken on 2013-05-01 Category:License migration redundant Category:Self-published work Category:Taken with Sony DSC-HX5V Category:Town halls in Yamagata prefecture"
+    },
+    {
+     "title": "File:Higashine stn.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/45/Higashine_stn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Higashine_stn.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Jojoba~jawiki at Japanese Wikipedia",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-migrated-with-disclaimers Category:Files moved to Commons from ja.wikipedia Category:GFDL-ja Category:Higashine Station Category:License migration completed"
+    },
+    {
+     "title": "File:JR East Higashine Station Platform, Yamagata Pref.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/JR_East_Higashine_Station_Platform%2C_Yamagata_Pref.jpg/960px-JR_East_Higashine_Station_Platform%2C_Yamagata_Pref.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:JR_East_Higashine_Station_Platform,_Yamagata_Pref.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Mister0124",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Higashine Station Category:Japan photographs taken on 2024-03-31 Category:March 2024 in rail transport in Yamagata prefecture Category:Railway photographs taken on 2024-03-31 Category:Self-published work Category:Train station platforms in Yamagata prefecture"
+    },
+    {
+     "title": "File:Magaibutsu at Omoriyama Higashine Yamagata.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Magaibutsu_at_Omoriyama_Higashine_Yamagata.jpg/960px-Magaibutsu_at_Omoriyama_Higashine_Yamagata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Magaibutsu_at_Omoriyama_Higashine_Yamagata.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Cp9asngf",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Gochi Nyorai Category:Higashine, Yamagata Category:Magaibutsu Category:Self-published work"
+    }
+   ]
+  },
+  "hbi_006": {
+   "city": "Hilo",
+   "name": "The Coconut of Waiolama Canal",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "hok_001": {
+   "city": "Hokuto",
+   "name": "Jindai-zakura (Yamataka Jindai Zakura)",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Jindai-zakura.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Jindai-zakura.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Jindai-zakura.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0-migrated-with-disclaimers Category:Files with no machine-readable author Category:Files with no machine-readable source Category:GFDL-ja Category:Jindai-zakura, Hokuto Category:License migration completed Category:Media missing infobox template"
+    },
+    {
+     "title": "File:Jindai-zakura (33721126343).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Jindai-zakura_%2833721126343%29.jpg/960px-Jindai-zakura_%2833721126343%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Jindai-zakura_(33721126343).jpg",
+     "licence": "CC BY 2.0",
+     "author": "skyseeker",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Jindai-zakura, Hokuto"
+    },
+    {
+     "title": "File:Yamataka Kohigan Zakura 2011 - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Yamataka_Kohigan_Zakura_2011_-_panoramio.jpg/960px-Yamataka_Kohigan_Zakura_2011_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yamataka_Kohigan_Zakura_2011_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Koichi Shibata",
+     "lat": 35.780234,
+     "lng": 138.365217,
+     "cats": "Category:CC-BY-SA-3.0 Category:Famous Sakura in Japan Category:Files with coordinates missing SDC location of creation Category:Hokuto, Yamanashi Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+    }
+   ]
+  },
+  "ich_001": {
+   "city": "Ichinohe",
+   "name": "The Wisteria of Fujishima",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Fujishima wisteria, Sept. 2022. A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Fujishima_wisteria%2C_Sept._2022._A.jpg/960px-Fujishima_wisteria%2C_Sept._2022._A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 40.166383,
+     "lng": 141.3049,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fujishima no Fuji Category:Self-published work"
+    },
+    {
+     "title": "File:Fujishima wisteria, Sept. 2022. B.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Fujishima_wisteria%2C_Sept._2022._B.jpg/960px-Fujishima_wisteria%2C_Sept._2022._B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._B.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 40.16636,
+     "lng": 141.304933,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fujishima no Fuji Category:Self-published work Category:Wisteria pergolas in Japan"
+    },
+    {
+     "title": "File:Fujishima wisteria, Sept. 2022. C.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Fujishima_wisteria%2C_Sept._2022._C.jpg/960px-Fujishima_wisteria%2C_Sept._2022._C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._C.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 40.166383,
+     "lng": 141.304843,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fujishima no Fuji Category:Self-published work Category:Wisteria pergolas in Japan"
+    },
+    {
+     "title": "File:Fujishima wisteria, Sept. 2022. D.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Fujishima_wisteria%2C_Sept._2022._D.jpg/960px-Fujishima_wisteria%2C_Sept._2022._D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._D.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 40.166418,
+     "lng": 141.304962,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fujishima no Fuji Category:Self-published work"
+    },
+    {
+     "title": "File:Fujishima wisteria, Sept. 2022. E.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Fujishima_wisteria%2C_Sept._2022._E.jpg/960px-Fujishima_wisteria%2C_Sept._2022._E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._E.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 40.166353,
+     "lng": 141.304977,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fujishima no Fuji Category:Self-published work"
+    },
+    {
+     "title": "File:Fujishima wisteria, Sept. 2022. F.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Fujishima_wisteria%2C_Sept._2022._F.jpg/960px-Fujishima_wisteria%2C_Sept._2022._F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Fujishima_wisteria,_Sept._2022._F.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 40.166448,
+     "lng": 141.304872,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fujishima no Fuji Category:Self-published work Category:Wisteria pergolas in Japan"
+    },
+    {
+     "title": "File:Kan-Nondo wisteria near wisteria in Fujishima. Sept. 2022. A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Kan-Nondo_wisteria_near_wisteria_in_Fujishima._Sept._2022._A.jpg/960px-Kan-Nondo_wisteria_near_wisteria_in_Fujishima._Sept._2022._A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kan-Nondo_wisteria_near_wisteria_in_Fujishima._Sept._2022._A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 40.166473,
+     "lng": 141.304925,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fujishima no Fuji Category:Self-published work"
+    },
+    {
+     "title": "File:Kan-Nondo wisteria near wisteria in Fujishima. Sept. 2022. B.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Kan-Nondo_wisteria_near_wisteria_in_Fujishima._Sept._2022._B.jpg/960px-Kan-Nondo_wisteria_near_wisteria_in_Fujishima._Sept._2022._B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kan-Nondo_wisteria_near_wisteria_in_Fujishima._Sept._2022._B.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 40.166535,
+     "lng": 141.304857,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Fujishima no Fuji Category:Self-published work"
+    }
+   ]
+  },
+  "iga_001": {
+   "city": "Iga",
+   "name": "Takakura Jinja no Shibunashigaya",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Kagoji no Shibunashigaya A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kagoji_no_Shibunashigaya_A.jpg/960px-Kagoji_no_Shibunashigaya_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kagoji_no_Shibunashigaya_A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.791525,
+     "lng": 136.08075,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kagoji no Shibunashigaya Category:Self-published work"
+    },
+    {
+     "title": "File:Kagoji no Shibunashigaya F.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Kagoji_no_Shibunashigaya_F.jpg/960px-Kagoji_no_Shibunashigaya_F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kagoji_no_Shibunashigaya_F.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.791658,
+     "lng": 136.080818,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kagoji no Shibunashigaya Category:Self-published work"
+    },
+    {
+     "title": "File:Takakura Jinja no Shibunashigaya Dec. 2019. a.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Takakura_Jinja_no_Shibunashigaya_Dec._2019._a.jpg/960px-Takakura_Jinja_no_Shibunashigaya_Dec._2019._a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_Dec._2019._a.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.795445,
+     "lng": 136.090822,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Takakura Jinja no Shibunashigaya"
+    },
+    {
+     "title": "File:Takakura Jinja no Shibunashigaya Dec. 2019. b.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Takakura_Jinja_no_Shibunashigaya_Dec._2019._b.jpg/960px-Takakura_Jinja_no_Shibunashigaya_Dec._2019._b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_Dec._2019._b.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.795638,
+     "lng": 136.090798,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Takakura Jinja no Shibunashigaya"
+    },
+    {
+     "title": "File:Takakura Jinja no Shibunashigaya Dec. 2019. c.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Takakura_Jinja_no_Shibunashigaya_Dec._2019._c.jpg/960px-Takakura_Jinja_no_Shibunashigaya_Dec._2019._c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_Dec._2019._c.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.795802,
+     "lng": 136.090955,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Takakura Jinja no Shibunashigaya"
+    },
+    {
+     "title": "File:Takakura Jinja no Shibunashigaya May. 2023. A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Takakura_Jinja_no_Shibunashigaya_May._2023._A.jpg/960px-Takakura_Jinja_no_Shibunashigaya_May._2023._A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_May._2023._A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.79524,
+     "lng": 136.09044,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Takakura Jinja no Shibunashigaya"
+    },
+    {
+     "title": "File:Takakura Jinja no Shibunashigaya May. 2023. B.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Takakura_Jinja_no_Shibunashigaya_May._2023._B.jpg/960px-Takakura_Jinja_no_Shibunashigaya_May._2023._B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_May._2023._B.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.795557,
+     "lng": 136.090255,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Takakura Jinja no Shibunashigaya"
+    },
+    {
+     "title": "File:Takakura Jinja no Shibunashigaya May. 2023. C.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Takakura_Jinja_no_Shibunashigaya_May._2023._C.jpg/960px-Takakura_Jinja_no_Shibunashigaya_May._2023._C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_May._2023._C.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.795143,
+     "lng": 136.090568,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Takakura Jinja no Shibunashigaya"
+    },
+    {
+     "title": "File:Takakura Jinja no Shibunashigaya May. 2023. D.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Takakura_Jinja_no_Shibunashigaya_May._2023._D.jpg/960px-Takakura_Jinja_no_Shibunashigaya_May._2023._D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_May._2023._D.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.795425,
+     "lng": 136.09056,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Takakura Jinja no Shibunashigaya"
+    },
+    {
+     "title": "File:Takakura Jinja no Shibunashigaya May. 2023. E.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Takakura_Jinja_no_Shibunashigaya_May._2023._E.jpg/960px-Takakura_Jinja_no_Shibunashigaya_May._2023._E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Takakura_Jinja_no_Shibunashigaya_May._2023._E.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.795365,
+     "lng": 136.090555,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Takakura Jinja no Shibunashigaya"
+    }
+   ]
+  },
+  "iwt_001": {
+   "city": "Iwata",
+   "name": "Yuya no Naga Fuji (the Long Wisteria of Yuya)",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Red wisteria at Yuya no Naga Fuji garden.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Red_wisteria_at_Yuya_no_Naga_Fuji_garden.jpg/960px-Red_wisteria_at_Yuya_no_Naga_Fuji_garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Red_wisteria_at_Yuya_no_Naga_Fuji_garden.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.737043,
+     "lng": 137.814745,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Yuya no Naga Fuji"
+    },
+    {
+     "title": "File:White wisteria at Yuya no Naga Fuji garden.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/White_wisteria_at_Yuya_no_Naga_Fuji_garden.jpg/960px-White_wisteria_at_Yuya_no_Naga_Fuji_garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:White_wisteria_at_Yuya_no_Naga_Fuji_garden.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.736932,
+     "lng": 137.814798,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Wisteria pergolas Category:Yuya no Naga Fuji"
+    },
+    {
+     "title": "File:Yuya no Naga Fuji, Shizuoka prefecture natural monument wisteria tree No.2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.2.jpg/960px-Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yuya_no_Naga_Fuji,_Shizuoka_prefecture_natural_monument_wisteria_tree_No.2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.737153,
+     "lng": 137.814885,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Wisteria pergolas in Shizuoka prefecture Category:Yuya no Naga Fuji"
+    },
+    {
+     "title": "File:Yuya no Naga Fuji, Shizuoka prefecture natural monument wisteria tree No.3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.3.jpg/960px-Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yuya_no_Naga_Fuji,_Shizuoka_prefecture_natural_monument_wisteria_tree_No.3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.73715,
+     "lng": 137.81485,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Wisteria pergolas in Shizuoka prefecture Category:Yuya no Naga Fuji"
+    },
+    {
+     "title": "File:Yuya no Naga Fuji, Shizuoka prefecture natural monument wisteria tree No.4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.4.jpg/960px-Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yuya_no_Naga_Fuji,_Shizuoka_prefecture_natural_monument_wisteria_tree_No.4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.737128,
+     "lng": 137.814845,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Wisteria pergolas in Shizuoka prefecture Category:Yuya no Naga Fuji"
+    },
+    {
+     "title": "File:Yuya no Naga Fuji, Shizuoka prefecture natural monument wisteria tree No.5 A.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.5_A.jpg/960px-Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.5_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yuya_no_Naga_Fuji,_Shizuoka_prefecture_natural_monument_wisteria_tree_No.5_A.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.737178,
+     "lng": 137.814898,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Yuya no Naga Fuji"
+    },
+    {
+     "title": "File:Yuya no Naga Fuji, Shizuoka prefecture natural monument wisteria tree No.5 B.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.5_B.jpg/960px-Yuya_no_Naga_Fuji%2C_Shizuoka_prefecture_natural_monument_wisteria_tree_No.5_B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yuya_no_Naga_Fuji,_Shizuoka_prefecture_natural_monument_wisteria_tree_No.5_B.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.737153,
+     "lng": 137.814895,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Yuya no Naga Fuji"
+    },
+    {
+     "title": "File:Yuya no Naga Fuji, a wisteria tree a natural monument of Japan. F.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Yuya_no_Naga_Fuji%2C_a_wisteria_tree_a_natural_monument_of_Japan._F.jpg/960px-Yuya_no_Naga_Fuji%2C_a_wisteria_tree_a_natural_monument_of_Japan._F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yuya_no_Naga_Fuji,_a_wisteria_tree_a_natural_monument_of_Japan._F.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.737235,
+     "lng": 137.814858,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Wisteria pergolas in Shizuoka prefecture Category:Yuya no Naga Fuji"
+    },
+    {
+     "title": "File:Yuya no Naga Fuji wisteria tree E.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Yuya_no_Naga_Fuji_wisteria_tree_E.jpg/960px-Yuya_no_Naga_Fuji_wisteria_tree_E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yuya_no_Naga_Fuji_wisteria_tree_E.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.737118,
+     "lng": 137.814827,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Wisteria pergolas in Shizuoka prefecture Category:Yuya no Naga Fuji"
+    },
+    {
+     "title": "File:Yuya no Naga Fuji wisteria tree F.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Yuya_no_Naga_Fuji_wisteria_tree_F.jpg/960px-Yuya_no_Naga_Fuji_wisteria_tree_F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Yuya_no_Naga_Fuji_wisteria_tree_F.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "さかおり",
+     "lat": 34.737195,
+     "lng": 137.814928,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Wisteria pergolas in Shizuoka prefecture Category:Yuya no Naga Fuji"
+    }
+   ]
+  },
+  "kga_001": {
+   "city": "Kaga",
+   "name": "Kayano no Osugi",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kag_001": {
+   "city": "Kagoshima",
+   "name": "The Camphor of Shiroyama",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Shiroyama (Shiroyamacho, Kagoshima) VLux5 hdsr 16.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Shiroyama_%28Shiroyamacho%2C_Kagoshima%29_VLux5_hdsr_16.jpg/960px-Shiroyama_%28Shiroyamacho%2C_Kagoshima%29_VLux5_hdsr_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Shiroyama_(Shiroyamacho,_Kagoshima)_VLux5_hdsr_16.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Views from Shiroyama (Shiroyamacho, Kagoshima)"
+    },
+    {
+     "title": "File:Shiroyama (Shiroyamacho, Kagoshima) VLux5 hdsr 20.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Shiroyama_%28Shiroyamacho%2C_Kagoshima%29_VLux5_hdsr_20.jpg/960px-Shiroyama_%28Shiroyamacho%2C_Kagoshima%29_VLux5_hdsr_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Shiroyama_(Shiroyamacho,_Kagoshima)_VLux5_hdsr_20.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Shiroyama (Shiroyamacho, Kagoshima)"
+    },
+    {
+     "title": "File:Shiroyama (Shiroyamacho, Kagoshima) VLux5 hdsr ca03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Shiroyama_%28Shiroyamacho%2C_Kagoshima%29_VLux5_hdsr_ca03.jpg/960px-Shiroyama_%28Shiroyamacho%2C_Kagoshima%29_VLux5_hdsr_ca03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Shiroyama_(Shiroyamacho,_Kagoshima)_VLux5_hdsr_ca03.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Shiroyama (Shiroyamacho, Kagoshima)"
+    }
+   ]
+  },
+  "kag_004": {
+   "city": "Kagoshima",
+   "name": "The Camphor of Kagoshima Shrine",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:December 2025 in Kagoshima (Yamashita-chō, Kagoshima) VLux5 hdsr 31.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/December_2025_in_Kagoshima_%28Yamashita-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_31.jpg/960px-December_2025_in_Kagoshima_%28Yamashita-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_31.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:December_2025_in_Kagoshima_(Yamashita-ch%C5%8D,_Kagoshima)_VLux5_hdsr_31.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Night december 2025 in town (Yamashita-chō, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:December 2025 in Kagoshima (Yamashita-chō, Kagoshima) VLux5 hdsr 33.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/December_2025_in_Kagoshima_%28Yamashita-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_33.jpg/960px-December_2025_in_Kagoshima_%28Yamashita-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_33.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:December_2025_in_Kagoshima_(Yamashita-ch%C5%8D,_Kagoshima)_VLux5_hdsr_33.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Night december 2025 in town (Yamashita-chō, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:December 2025 in Kagoshima (Yamashita-chō, Kagoshima) VLux5 hdsr 49.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/December_2025_in_Kagoshima_%28Yamashita-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_49.jpg/960px-December_2025_in_Kagoshima_%28Yamashita-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_49.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:December_2025_in_Kagoshima_(Yamashita-ch%C5%8D,_Kagoshima)_VLux5_hdsr_49.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Night december 2025 in town (Yamashita-chō, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Kagoshima Montage.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kagoshima_Montage.jpg/960px-Kagoshima_Montage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kagoshima_Montage.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "A pool full of water",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Kagoshima Category:Montages of cities in Japan Category:Self-published work"
+    },
+    {
+     "title": "File:Somuta cemetery in Kagoshima (Somuta, Kagoshima) VLux5 hdsr 04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Somuta_cemetery_in_Kagoshima_%28Somuta%2C_Kagoshima%29_VLux5_hdsr_04.jpg/960px-Somuta_cemetery_in_Kagoshima_%28Somuta%2C_Kagoshima%29_VLux5_hdsr_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Somuta_cemetery_in_Kagoshima_(Somuta,_Kagoshima)_VLux5_hdsr_04.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Somuta cemetery in Kagoshima (Somuta, Kagoshima)"
+    },
+    {
+     "title": "File:Somuta cemetery in Kagoshima (Somuta, Kagoshima) VLux5 hdsr 06.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Somuta_cemetery_in_Kagoshima_%28Somuta%2C_Kagoshima%29_VLux5_hdsr_06.jpg/960px-Somuta_cemetery_in_Kagoshima_%28Somuta%2C_Kagoshima%29_VLux5_hdsr_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Somuta_cemetery_in_Kagoshima_(Somuta,_Kagoshima)_VLux5_hdsr_06.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Somuta cemetery in Kagoshima (Somuta, Kagoshima)"
+    }
+   ]
+  },
+  "kag_005": {
+   "city": "Kagoshima",
+   "name": "The Ogatama of Nanshu Shrine",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kag_006": {
+   "city": "Kagoshima",
+   "name": "The Camphor of Kasuga Shrine",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kag_007": {
+   "city": "Kagoshima",
+   "name": "The Akou of Tagayama Park",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Kagoshima Station View From Tagayama Park.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Kagoshima_Station_View_From_Tagayama_Park.jpg/960px-Kagoshima_Station_View_From_Tagayama_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kagoshima_Station_View_From_Tagayama_Park.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Sakoppi",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Kagoshima Freight Terminal Category:Kagoshima Station (2020) Category:November 2020 in rail transport in Kagoshima prefecture Category:Self-published work"
+    }
+   ]
+  },
+  "kag_008": {
+   "city": "Kagoshima",
+   "name": "The Kurogane Holly of Gionnosu Park",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr mm03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm03.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_mm03.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr mm04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm04.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_mm04.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr mm16.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm16.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_mm16.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr mm18.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm18.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_mm18.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr xw18.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw18.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_xw18.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Sakurajima view from Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr xw20.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw20.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_xw20.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Sakurajima view from Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work Category:Self-published work missing SDC copyright license"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr xw25.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw25.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_xw25.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work Category:Self-published work missing SDC copyright license"
+    }
+   ]
+  },
+  "kag_009": {
+   "city": "Kagoshima",
+   "name": "The Akou of Yuno",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kag_011": {
+   "city": "Kagoshima",
+   "name": "The Propped Pine of Gionnosu",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr mm03.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm03.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_mm03.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr mm04.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm04.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_mm04.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr mm16.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm16.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_mm16.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr mm18.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm18.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_mm18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_mm18.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr pd01.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_pd01.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_pd01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_pd01.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Passer domesticus in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr xw18.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw18.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_xw18.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Sakurajima view from Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+    },
+    {
+     "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr xw25.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw25.jpg/960px-Gionnosu_Ryokuchi_Park_%28Gionnosucho%2C_Kagoshima%29_VLux5_hdsr_xw25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gionnosu_Ryokuchi_Park_(Gionnosucho,_Kagoshima)_VLux5_hdsr_xw25.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Hyppolyte de Saint-Rambert",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work Category:Self-published work missing SDC copyright license"
+    }
+   ]
+  },
+  "kag_012": {
+   "city": "Kagoshima",
+   "name": "The Pine the Ryukyu Ships Steered By",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kag_013": {
+   "city": "Kagoshima",
+   "name": "The Ginkgo of Nanshu Shrine",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kmk_001": {
+   "city": "Kamakura",
+   "name": "The Junipers of Kenchoji",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kmk_002": {
+   "city": "Kamakura",
+   "name": "The Great Ginkgo of Tsurugaoka Hachimangu",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kmk_003": {
+   "city": "Kamakura",
+   "name": "The Tabunoki of the Goryo Shrine at Sakanoshita",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kmk_004": {
+   "city": "Kamakura",
+   "name": "The Crabapple of Kosokuji",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kmk_005": {
+   "city": "Kamakura",
+   "name": "The Weeping Cherry of Jochiji",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kmk_006": {
+   "city": "Kamakura",
+   "name": "The Inumaki of Kakuonji",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kng_001": {
+   "city": "Kanagi",
+   "name": "Junihon-yasu",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kan_001": {
+   "city": "Kanazawa",
+   "name": "The Chinquapins of Dogata",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Grand chinquapin tree in front of Shiinoki Cultural Complex of Ishikawa Prefecture.JPG (Wikidata Q111585833)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG/960px-Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "そらみみ",
+     "lat": 36.56208333,
+     "lng": 136.65792778,
+     "cats": "Category:CC-BY-SA-4.0 Category:Dogata no Shiinoki Category:Files with coordinates missing SDC location of creation Category:Self-published work",
+     "source": "wikidata/Q111585833"
+    },
+    {
+     "title": "File:Grand chinquapin tree in front of Shiinoki Cultural Complex of Ishikawa Prefecture.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG/960px-Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "そらみみ",
+     "lat": 36.56208333,
+     "lng": 136.65792778,
+     "cats": "Category:CC-BY-SA-4.0 Category:Dogata no Shiinoki Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    }
+   ]
+  },
+  "kan_002": {
+   "city": "Kanazawa",
+   "name": "The Cherry of Shogetsuji",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": []
+  },
+  "kan_003": {
+   "city": "Kanazawa",
+   "name": "The Karasaki Pine",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Karasaki-Shrine-nt1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Karasaki-Shrine-nt1.jpg/960px-Karasaki-Shrine-nt1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Karasaki-Shrine-nt1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Muscla3pin",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Karasaki-jinja Category:Pinus in Japan Category:Self-published work Category:Trees in Shiga prefecture"
+    },
+    {
+     "title": "File:Karasaki-Shrine-nt4.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Karasaki-Shrine-nt4.jpg/960px-Karasaki-Shrine-nt4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Karasaki-Shrine-nt4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Muscla3pin",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Karasaki-jinja Category:Pinus in Japan Category:Self-published work Category:Trees in Shiga prefecture Category:Views of Lake Biwa from Otsu"
+    },
+    {
+     "title": "File:Karasaki-Shrine-nt5.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Karasaki-Shrine-nt5.jpg/960px-Karasaki-Shrine-nt5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Karasaki-Shrine-nt5.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Muscla3pin",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Karasaki-jinja Category:Pinus in Japan Category:Self-published work Category:Trees in Shiga prefecture"
+    },
+    {
+     "title": "File:Karasaki-Shrine.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Karasaki-Shrine.jpg/960px-Karasaki-Shrine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Karasaki-Shrine.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "イココ",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Karasaki-jinja Category:Self-published work Category:Torii in Japan"
+    },
+    {
+     "title": "File:唐崎松 Karasaki Pine - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/%E5%94%90%E5%B4%8E%E6%9D%BE_Karasaki_Pine_-_panoramio.jpg/960px-%E5%94%90%E5%B4%8E%E6%9D%BE_Karasaki_Pine_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%B4%8E%E6%9D%BE_Karasaki_Pine_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "lienyuan lee",
+     "lat": 36.562703,
+     "lng": 136.663367,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Japan photographs taken on 2011-05-16 Category:Karasakinomatsu at Kenroku-en Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 6452510"
+    },
+    {
+     "title": "File:唐崎松 Karasaki Pine - panoramio (1).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/%E5%94%90%E5%B4%8E%E6%9D%BE_Karasaki_Pine_-_panoramio_%281%29.jpg/960px-%E5%94%90%E5%B4%8E%E6%9D%BE_Karasaki_Pine_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%B4%8E%E6%9D%BE_Karasaki_Pine_-_panoramio_(1).jpg",
+     "licence": "CC BY 3.0",
+     "author": "lienyuan lee",
+     "lat": 36.563091,
+     "lng": 136.663251,
+     "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Gangetsunomatsu at Kenroku-en Category:Japan photographs taken on 2011-05-16 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 6452510"
+    }
+   ]
+  },
+  "kan_004": {
+   "city": "Kanazawa",
+   "name": "The Raised-Root Pine",
+   "checked": "2026-09-04",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Asahisakura Cherry Tree in Kenroku Garden 2.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Asahisakura_Cherry_Tree_in_Kenroku_Garden_2.JPG/960px-Asahisakura_Cherry_Tree_in_Kenroku_Garden_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Asahisakura_Cherry_Tree_in_Kenroku_Garden_2.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "そらみみ",
+     "lat": 36.56224444,
+     "lng": 136.66351389,
+     "cats": "Category:Asahizakura at Kenroku-en Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work"
+    },
+    {
+     "title": "File:Cement torii in a Japanese garden in Japan (154).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cement_torii_in_a_Japanese_garden_in_Japan_%28154%29.jpg/960px-Cement_torii_in_a_Japanese_garden_in_Japan_%28154%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Cement_torii_in_a_Japanese_garden_in_Japan_(154).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Savannah Rivka",
+     "lat": 36.561577,
+     "lng": 136.663803,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Folklore 2020 Category:Images from Wiki Loves Folklore 2020 in Japan Category:Japan photographs taken on 2019-06-26 Category:Japanese gardens in Ishikawa prefecture Category:Self-published work Category:Uploaded via Campaign:wllove"
+    },
+    {
+     "title": "File:Kenroku-en pine with raised roots close up.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Kenroku-en_pine_with_raised_roots_close_up.jpg/960px-Kenroku-en_pine_with_raised_roots_close_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Kenroku-en_pine_with_raised_roots_close_up.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "SOHAFun",
+     "lat": 36.561858,
+     "lng": 136.663353,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Japan photographs taken on 2018-04-10 Category:May 2018 in Kanazawa Category:Neagarinomatsu at Kenrokuen Category:Self-published work"
+    },
+    {
+     "title": "File:Majestic Pine Tree Propped by Support Poles in a Lush Japanese Garden.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Majestic_Pine_Tree_Propped_by_Support_Poles_in_a_Lush_Japanese_Garden.jpg/960px-Majestic_Pine_Tree_Propped_by_Support_Poles_in_a_Lush_Japanese_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Majestic_Pine_Tree_Propped_by_Support_Poles_in_a_Lush_Japanese_Garden.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Immanuelle",
+     "lat": 36.562142,
+     "lng": 136.663544,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photos by Immanuelle Category:Self-published work"
+    },
+    {
+     "title": "File:Moss-Covered Tree with Sturdy Branches Overlooking a Pathway Next to a Pond in a Japanese Garden.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Moss-Covered_Tree_with_Sturdy_Branches_Overlooking_a_Pathway_Next_to_a_Pond_in_a_Japanese_Garden.jpg/960px-Moss-Covered_Tree_with_Sturdy_Branches_Overlooking_a_Pathway_Next_to_a_Pond_in_a_Japanese_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Moss-Covered_Tree_with_Sturdy_Branches_Overlooking_a_Pathway_Next_to_a_Pond_in_a_Japanese_Garden.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Immanuelle",
+     "lat": 36.561936,
+     "lng": 136.663056,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photos by Immanuelle Category:Self-published work"
+    },
+    {
+     "title": "File:Neagarinomatsu Pine Tree in Kenroku Garden.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Neagarinomatsu_Pine_Tree_in_Kenroku_Garden.jpg/960px-Neagarinomatsu_Pine_Tree_in_Kenroku_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Neagarinomatsu_Pine_Tree_in_Kenroku_Garden.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "そらみみ",
+     "lat": 36.56207222,
+     "lng": 136.66343611,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Neagarinomatsu at Kenrokuen Category:Self-published work Category:Yukitsuri at Kenrokuen"
+    },
+    {
+     "title": "File:Pine trees in Kenroku Garden.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Pine_trees_in_Kenroku_Garden.jpg/960px-Pine_trees_in_Kenroku_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pine_trees_in_Kenroku_Garden.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "そらみみ",
+     "lat": 36.56156667,
+     "lng": 136.66308611,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Kenroku-en Category:Self-published work"
+    },
+    {
+     "title": "File:Silhouette of a Tree with Sunlight Behind, Overlooking a Park with People Walking.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Silhouette_of_a_Tree_with_Sunlight_Behind%2C_Overlooking_a_Park_with_People_Walking.jpg/960px-Silhouette_of_a_Tree_with_Sunlight_Behind%2C_Overlooking_a_Park_with_People_Walking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Silhouette_of_a_Tree_with_Sunlight_Behind,_Overlooking_a_Park_with_People_Walking.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Immanuelle",
+     "lat": 36.561836,
+     "lng": 136.663008,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Photos by Immanuelle Category:Self-published work"
+    },
+    {
+     "title": "File:Statue of Yamato Takeru no Mikoto and Tamukematsu Pine Tree in Kenroku Garden.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Statue_of_Yamato_Takeru_no_Mikoto_and_Tamukematsu_Pine_Tree_in_Kenroku_Garden.JPG/960px-Statue_of_Yamato_Takeru_no_Mikoto_and_Tamukematsu_Pine_Tree_in_Kenroku_Garden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Statue_of_Yamato_Takeru_no_Mikoto_and_Tamukematsu_Pine_Tree_in_Kenroku_Garden.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "そらみみ",
+     "lat": 36.56207222,
+     "lng": 136.66349722,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Tamukematsu (left) at Kenroku-en Category:Yamato Takeru in Kenroku-en Category:Yukitsuri at Kenrokuen"
+    }
+   ]
   }
  },
  "notes": [
