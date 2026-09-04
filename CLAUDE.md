@@ -101,7 +101,7 @@ Each run, do exactly this, in order:
 
 Read `/data/city-queue.json` (the source file: every city's rank, score, tree target and measured state) and the published city files, then take the first item on this ladder that applies. Do one thing per run and do it properly; a half-researched city is worse than none.
 
-1. **Unprocessed submissions** (see Step 0b). Someone cared enough to send something, that outranks everything.
+1. **Unprocessed submissions, and the photographs readers sent through the app** (see Step 0b). Someone cared enough to send something, that outranks everything. `python3 scripts/sightings_inbox.py --status` prints the photo queue; judging it is the run's own work, not an agent's to dispatch.
 2. **The site is broken. Ask with one command: `python3 scripts/health.py`.** It answers the whole rung, exit 0 for clear and 1 for something to deal with: the newest Smoke test and deploy conclusions, whether the Data digest or Fresh-eyes review has gone past 26 hours or the Weekly analysis past 8 days (GitHub drops schedules silently, and the digest's own watchdog cannot report a digest that never ran), and whether REVIEW.md's newest entry holds a BLOCKER. It prints the `gh workflow run` line to fix a stale one. Written 2026-08-17 because doing this by hand is four `gh` calls plus three thresholds held in your head, and a check that costs that much gets skipped on a short window.
 
    A BLOCKER outranks all new coverage, and it is answered rather than obeyed: read the finding, then check its evidence before acting on it, because the reviewer can only see what we published and a finding built on our own invented sentence inherits the invention. The worked example is the same day this rung was scripted: a BLOCKER said Milan's Archdevil stood in a courtyard of a dwelling, and the courtyard was a bridge claim in our own story. The comune's own page says park, and grants gate access. Retiring the tree would have obeyed the BLOCKER and lost a good entry.
@@ -494,6 +494,15 @@ For each new submission:
 - Rows whose `why` starts with `vote undone` are bookkeeping from the thumbs' undo: mark them processed, verify nothing, mail nothing.
 - A second report on an already-checked tree reopens the question rather than being waved off with the earlier verdict.
 - Log the exchange in the tree's `verify_notes`, so the next run continues the thread instead of restarting it.
+
+**A photograph sent through the app is the same rung, and it is the loop this project runs on (built 2026-09-04).** The two ends were already closed and the middle was empty: the app has said since 2026-09-03 that a photograph somebody sends can appear on the tree's page with their name under it, the share link lets them see and pass on their own tree, and `photo_takedown.py` keeps the deletion promise. Nothing read those photographs, so not one had ever reached a page. Every knock now runs `scripts/sightings_inbox.py`, which fetches each shared sighting carrying a photograph, matches it to a tree we map (the app's own `tree_id`, else the nearest published tree within 30 metres), downloads the file into `out/sightings/` and writes `data/sighting-queue.json`.
+
+What a run does with it, and the split is the same one this file draws everywhere: **retrieval is the script's, judgement is yours.**
+
+- **LOOK at the file.** It is on disk, in `out/sightings/`, and the Cadiz standard applies unchanged. A photograph of the wrong trunk is still the wrong trunk, and `match: distance` at 28 metres in a park full of limes is exactly the case for `hold` rather than `approve`.
+- **A tree that already has a photograph is a comparison, not a refusal.** Hidde, 2026-09-02: "ook als de boom er al is en geen foto heeft of de foto van de gebruiker is beter gaan we die gebruiken." The queue prints what the tree carries today so the question can be answered.
+- **Apply the verdicts with `python3 scripts/sightings_publish.py verdicts.json --send`**, never by editing a city file by hand. It rotates the pixels upright and drops the EXIF tag (qa refuses a self-hosted file that would turn in the browser), resizes, writes `source: "contributor"` and `contributor_user_id` together (preflight refuses one without the other, because that id is the whole of the deletion promise), credits the DISPLAY NAME and never an email address, and mails the reader that their photograph is live with one question back about the next tree.
+- **A sighting that matches nothing we map is a LEAD, never a page.** It lands in `data/leads/_sightings.json` and meets the normal bar like any other candidate. A reader adding a tree does not lower it.
 
 A submitted tree that verifies is worth more than a new city researched from scratch, because it proves someone cares about that city. Process submissions first, then continue with the next pending city if the usage window still allows.
 
