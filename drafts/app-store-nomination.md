@@ -49,36 +49,28 @@ en, nl, es, it, de, pt, fr, ja
 ## Supplemental Materials
 https://ancienttrees.app
 
-## Description  (987/1000)
-There is probably an ancient ginkgo within reach of wherever you are reading this. For about two weeks in November it turns completely gold, then drops almost every leaf at once. We map 83 of them, in 60 places across 22 countries, and the app tells you which weeks yours is worth crossing town for.
-
-That is the whole idea. Ancient Trees shows you the remarkable old trees near you, tells you why each one is worth the walk, and lets you collect the ones you have stood in front of.
+## Description  (1019/1000)
+Ancient Trees is for people who love being outdoors. It shows you the remarkable old trees around you, tells you why each one is worth the walk, and lets you collect the ones you have stood in front of.
 
 Nothing else does this. There are tree databases written for botanists and there are hiking apps, but nothing that walks you to one extraordinary tree and tells you what you are looking at.
 
 We map 2,472 trees in 362 places across 25 countries, every one verified against two independent sources. The Ankerwycke Yew at Runnymede, standing when Magna Carta was sealed. The Totteridge Yew, the oldest living thing in London. El Drago Milenario on Tenerife.
 
+The app also knows when a tree is at its best, which is what makes it something you plan rather than read. There is probably an ancient ginkgo within reach of wherever you are: for about two weeks in November it turns completely gold, then drops almost every leaf at once. We map 83 of them across 22 countries.
+
 Launched 3 September 2026, in seven languages.
 
-## Helpful Details  (485/500)
-Made by one person in the Netherlands who loves old trees.
+## Why the ginkgo is in paragraph four and not paragraph one
 
-Every tree is verified against two independent sources before it goes on the map, and a location we cannot state precisely says so on the page instead of sending somebody to the wrong spot. A pin you can trust is the difference between a good afternoon and a wasted one.
+It opened the description until Hidde asked the obvious question: why lead on
+one species when the title is deliberately broad. He is right, and it
+contradicted the choice he had already made well. This nomination is the app's
+INTRODUCTION, so the first sentence has to say what the app IS; an editor who
+starts on ginkgos can reasonably think this is a ginkgo app and stop there.
 
-Readers correct us and send photographs from the app, which appear on the tree's page with their name under it.
-
-Seven languages, written not translated.
-
-## Why the ginkgo opens it, and is not the subject
-
-Hidde asked whether to aim the whole nomination at the ginkgo. It opens the
-description and does not become the nomination, on purpose. Apple features
-APPS, and a nomination that is only about one species sells a list rather than
-a product. What the ginkgo does is give an editor a picture in the first
-sentence, which is the hardest thing to do in 1,000 characters, and it happens
-to be true everywhere: 83 of them in 60 places across 22 countries, 77 peaking
-in October or November. /collections/ginkgos-worth-a-november-trip already
-exists if they want somewhere to point.
+The ginkgo stays because it is the best single illustration of the season
+radar, which is the feature that turns the app from something you read into
+something you plan. It earns a paragraph, not the opening.
 
 ## Checked before writing
 - 2,472 trees, 362 places, 25 countries (scripts/stats.py, 2026-09-04)
