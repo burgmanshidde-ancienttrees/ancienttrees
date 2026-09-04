@@ -1,6 +1,6 @@
 {
   "country": "Australia",
-  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+  "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.\n\n2026-09-04 verify pass (1 agent, 12 candidates): 1 verified and published as data/cities/miriam-vale.json (Big Fig, bfm_001); 11 blocked (8 on access, 2 dead, 1 not a single collectible point). Full verify_notes in data/research/famousaustraliabatch1-verified.json. See LOG.md 2026-09-04 for the breakdown.",
   "leads": [
     {
       "name": "Big Fig, Miriam Vale",
@@ -9,9 +9,8 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Big_Fig,_Miriam_Vale.jpg"
       ],
-      "status": "lead",
-      "species": "Fig (Ficus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "status": "published",
+      "tree_id": "bfm_001"
     },
     {
       "name": "Bland Oak",
@@ -67,9 +66,10 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Fig_Tree,_Gladstone_(2009).jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Fig (Ficus sp.)",
-      "species_basis": "genus read from the tree's own name; ask the reader which species"
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "fails single-tree-destination test: good local heritage tree but not a travel destination on its own; no tourism promotion found"
     },
     {
       "name": "Gloucester Tree",
@@ -101,7 +101,8 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:The_H2_Hinde_Tree_(Macadamia_integrifolia)_on_Colliston_(2008).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "private farm property, access explicitly listed as Restricted"
     },
     {
       "name": "Hodgkinson's Marked Tree",
@@ -111,7 +112,8 @@
         "https://commons.wikimedia.org/wiki/File:Hodgkinson%27s_Marked_Tree_(2007).jpg",
         "https://commons.wikimedia.org/wiki/File:Hodgkinson%27s_Marked_Tree_-_marks.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "private station homestead paddock, boat-only access, no public access arrangement"
     },
     {
       "name": "Hoop Pines, Bald Hills",
@@ -120,11 +122,12 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:602346_-_Hoop_Pines_(2009).jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Hoop Pine (Araucaria cunninghamii)",
       "species_basis": "confirmed by Queensland Heritage Register listing and Wikipedia",
       "age_estimate": "taller tree ~190 years, smaller ~140 years (per Queensland Heritage Register citation)",
-      "note": "A genuinely compact pair, one site, historically significant (marks the original Stewart Farmhouse site, among the earliest non-Indigenous settlement in Bald Hills; hoop pine logging was one reason for the Moreton Bay penal settlement). BLOCKED ON ACCESS ONLY, not on quality: the pair stands 'at the end of the school's main driveway, framing the entrance to the Administration Building' of St Paul's Anglican School, a 51-hectare private campus at 34 Strathpine Road; no source found stating the driveway or entrance is open to the public without a school reason to be there. Per the school-grounds rule this stays a lead rather than a block: if a future pass finds evidence of genuine public access (a public path, visibility from Strathpine Road itself, stated open days) it can ship. Not researched further in this pass (checked 2026-09-01)."
+      "note": "A genuinely compact pair, one site, historically significant (marks the original Stewart Farmhouse site, among the earliest non-Indigenous settlement in Bald Hills; hoop pine logging was one reason for the Moreton Bay penal settlement). BLOCKED ON ACCESS ONLY, not on quality: the pair stands 'at the end of the school's main driveway, framing the entrance to the Administration Building' of St Paul's Anglican School, a 51-hectare private campus at 34 Strathpine Road; no source found stating the driveway or entrance is open to the public without a school reason to be there. Per the school-grounds rule this stays a lead rather than a block: if a future pass finds evidence of genuine public access (a public path, visibility from Strathpine Road itself, stated open days) it can ship. Not researched further in this pass (checked 2026-09-01).",
+      "reason": "school grounds (St Paul's Anglican School), no evidence of public access"
     },
     {
       "name": "Jacaranda, University of Sydney",
@@ -146,7 +149,8 @@
       "photos": [
         "https://commons.wikimedia.org/wiki/File:Kidman%27s_Tree_of_Knowledge_(2005).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "private working homestead compound (Glengyle Station), no public access; 60km from nearest town"
     },
     {
       "name": "Landsborough Tree",
@@ -156,7 +160,8 @@
         "https://commons.wikimedia.org/wiki/File:Landsborough_Tree.jpg",
         "https://commons.wikimedia.org/wiki/File:Landsborough_Tree_from_W_(2009).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "dead: destroyed by vandals Dec 2002, burnt stump only"
     },
     {
       "name": "Landsborough's Blazed Tree (Camp 67)",
@@ -166,7 +171,8 @@
         "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_67_(2009).jpg",
         "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_67_(2009)_-_blaze.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "on private freehold land, no evidence of public access from the highway"
     },
     {
       "name": "Landsborough's Blazed Tree (Camp 69)",
@@ -176,7 +182,8 @@
         "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_69_(2015).jpg",
         "https://commons.wikimedia.org/wiki/File:Landsborough%27s_Blazed_Tree,_Camp_69_(2015)_-_closeup.jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "on private grazing leasehold land, no evidence of public access from the highway"
     },
     {
       "name": "Leichhardt Tree, Comet",
@@ -195,7 +202,8 @@
         "https://commons.wikimedia.org/wiki/File:Moonah_Creek_%27Hanging_Tree%27_(1964).jpg",
         "https://commons.wikimedia.org/wiki/File:Moonah_Creek_%27Hanging_Tree%27_(2003).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "dead per 2003 condition assessment (no longer living, termite damage); also private station land"
     },
     {
       "name": "Pillar Box, Claremont",
@@ -240,7 +248,8 @@
         "https://commons.wikimedia.org/wiki/File:The_Robbers_Tree_(Plaque).jpg",
         "https://commons.wikimedia.org/wiki/File:The_Robbers_Tree_(Robbery_Under_Arms).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "dead: struck by lightning 2021, damaged beyond repair, stump only remains"
     },
     {
       "name": "Tree of Knowledge (Australia)",
@@ -261,7 +270,8 @@
         "https://commons.wikimedia.org/wiki/File:William_Wyndhams_gravesite_and_remnant_orchard_trees.jpg",
         "https://commons.wikimedia.org/wiki/File:William_Wyndhams_gravesite_and_remnant_orchard_trees_(2004).jpg"
       ],
-      "status": "lead"
+      "status": "blocked",
+      "reason": "not a single collectible point: remnant orchard trees scattered across a whole suburb"
     },
     {
       "name": "Boab Prison Tree",

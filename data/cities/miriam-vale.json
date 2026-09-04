@@ -1,0 +1,62 @@
+{
+  "city": "Miriam Vale",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "The Big Fig stands unfenced on a street corner in Miriam Vale, Queensland, roughly 12 metres round at its buttressed base under a canopy 30 by 35 metres wide. Queensland's heritage register dates its planting to around 1897 to 1900, likely part of a beautification scheme that gave several North Coast Line railway stations a single large weeping fig. It has been the town's milk depot, its Anzac Day shelter and an impromptu vet's surgery, and today anyone driving the coast road to Agnes Water or Seventeen Seventy passes directly beneath it.",
+  "meta_description": "The Big Fig in Miriam Vale, Queensland is a weeping fig about 12 metres round with a 35-metre canopy, planted around 1897-1900. Free, unfenced.",
+  "question_meta": "Miriam Vale's Big Fig is a roadside weeping fig roughly 12 metres round. Its uncertain age, civic history, and how to see it.",
+  "question_answer": "The oldest tree in Miriam Vale is the Big Fig, a weeping fig on the Station Street road reserve estimated at 110 to 130 years old. Queensland's heritage register places its planting between 1897 and about 1900. Its trunk measures roughly 12 metres round at the buttressed base, under a canopy spanning 30 by 35 metres. It stands unfenced in the open, free to see, beside the road most travellers take between Gladstone and the coastal towns of Agnes Water and Town of Seventeen Seventy.",
+  "question_context": "No single source pins the fig's age exactly. Queensland's heritage register gives a planting window of 1897 to about 1900, while an earlier newspaper account offers a rival planting story, so the honest range runs from about 110 to 130 years. It was likely planted as part of a Queensland Railways beautification scheme that gave a single large weeping fig to several stations along the North Coast Line, though the register calls that unconfirmed. The measurements are steadier: roughly 12 metres round including the buttressing and roots, a canopy 30 by 35 metres, a crown 10 to 15 metres tall. The tree has done more civic work than most buildings around it. It served as the town's milk and cream collection point until 1977, sheltered Anzac Day services since the 1921 war memorial went up, and locals once brought sick animals to be looked over under its branches in the 1950s and 60s. Today it is the chosen emblem of Miriam Vale Community Development Inc, which plans a boardwalk beneath the crown. Gladstone Regional Council last confirmed it standing in January 2015, when arborists trimmed its roots and fitted a barrier to protect the road.",
+  "hero_tree_id": "bfm_001",
+  "oldest_tree_id": "bfm_001",
+  "faq": [
+    {
+      "q": "What is the Big Fig in Miriam Vale?",
+      "a": "A weeping fig (Ficus benjamina) on the Station Street road reserve, roughly 12 metres round at its buttressed base with a canopy 30 by 35 metres across, one of the largest fig trees in regional Queensland."
+    },
+    {
+      "q": "How old is the Big Fig?",
+      "a": "Roughly 110 to 130 years. Queensland's heritage register dates its planting to between 1897 and about 1900, though an earlier newspaper account tells a slightly different story, so no single figure is certain."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands unfenced in the open on a public road reserve in the centre of Miriam Vale, visible and reachable from both Station Street and Blomfield Street."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Miriam Vale sits on the route between Gladstone and the coastal towns of Agnes Water and Town of Seventeen Seventy. The tree stands roadside in the town centre, beside the railway station; no public transport is needed to reach it."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bfm_001",
+      "name": "The Big Fig",
+      "species": "Weeping Fig (Ficus benjamina)",
+      "age_estimate": "roughly 110 to 130 years",
+      "age_min": 110,
+      "age_max": 130,
+      "girth_cm": 1200,
+      "location": {
+        "address": "Station Street road reserve, Miriam Vale, Gladstone Region, Queensland",
+        "latitude": -24.3292,
+        "longitude": 151.5637,
+        "neighbourhood": "Miriam Vale town centre, beside the railway station"
+      },
+      "story": "No source agrees on this fig's exact age, but everyone agrees on its size. The Big Fig runs about 12 metres round at the base, buttressed and surface-rooted rather than a single slim trunk, under a canopy that spans 30 by 35 metres over a corner of Miriam Vale's Station Street. Queensland's heritage register places its planting between 1897 and about 1900, likely as part of a beautification scheme that put a single large weeping fig at several stations along the North Coast Line between Bundaberg and Gladstone, though the tree's own history is unconfirmed.\n\nThe fig has done more civic work than most buildings. It served as the town's milk and cream collection point until 1977, and the earth mounds of the old loading ramp still sit beneath it. It has sheltered Anzac Day services since the war memorial went up in 1921. Locals brought sick animals to be looked at under it in the 1950s and 60s, an informal veterinary consultation with no walls. Today it is the chosen emblem of Miriam Vale Community Development Inc, which has plans, not yet built, for a boardwalk and signage beneath the crown.\n\nGladstone Regional Council last confirmed it standing in January 2015, when arborists trimmed its roots and fitted a barrier to protect the road. No fence separates the tree from the street. Anyone driving the coast road to Agnes Water or Seventeen Seventy already passes directly beneath it.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Big_Fig,_Miriam_Vale",
+        "https://www.news-mail.com.au/news/fig-tree-undergo-trim/2513510/"
+      ],
+      "access": "Free. Stands in an unused corner of the public Station Street road reserve, in the open commercial centre of Miriam Vale next to the railway station and opposite the War Memorial Park; no fence or gate, visible and reachable from both Station Street and Blomfield Street.",
+      "transport": "Miriam Vale town centre, on the Bruce Highway route between Gladstone and Agnes Water/Town of Seventeen Seventy; roadside in the town, no public transport needed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
