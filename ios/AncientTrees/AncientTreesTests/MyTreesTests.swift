@@ -318,6 +318,69 @@ struct RecordingATreeOfYourOwn {
     }
 }
 
+// MARK: - a photograph never gets a coordinate we cannot stand behind
+
+/// THE ONE UNFORGIVABLE ERROR, kept out by test rather than by memory.
+///
+/// On 2026-09-03 Hidde added a tree on his own phone with location switched
+/// off and got a confident pin nowhere near him. `origin` falls back to the
+/// last fix the phone ever had, or to Dam square (LocationOff.swift), and the
+/// camera path stamped that as `.device`, "GPS, standing at the tree". It
+/// could also have auto-claimed a real tree near that fallback that nobody
+/// ever stood at.
+///
+/// c4598e78 fixed it and shipped no test, which the fresh-eyes review flagged
+/// the next morning: `RefusedWalk` exists for precisely this state. The fix is
+/// a pure function now, so the four combinations can be asked on any machine,
+/// and a simulator does not have to be able to deny a GPS fix mid-flow.
+///
+/// CLAUDE.md: a wrong photo is a swap, a wrong age is an edit, a tree that
+/// died is a removal. A wrong location is different in kind, because the
+/// person is already standing in the wrong place before any correction can
+/// reach them.
+@Suite(.serialized)
+struct APhotographNeverGetsAnInventedCoordinate {
+
+    /// The regression. Camera, location off: ask, never claim a fix.
+    @Test func theCameraWithLocationOffAsksRatherThanInventingAFix() {
+        let route = CollectSheet.route(cameraShot: true,
+                                       locationKnown: false,
+                                       photoHasCoordinate: false)
+        #expect(route == .askForThePin,
+                "with location off the camera path recorded the fallback point as a device fix, which is a pin somebody drove to for nothing")
+        #expect(route != .settle(.device))
+    }
+
+    /// And the case it must not break: standing there with a real fix is still
+    /// the whole point of the camera path, and asking for a pin there would be
+    /// a question nobody should have to answer.
+    @Test func theCameraWithARealFixStillClaimsIt() {
+        #expect(CollectSheet.route(cameraShot: true,
+                                   locationKnown: true,
+                                   photoHasCoordinate: false) == .settle(.device))
+    }
+
+    /// The camera roll keeps its own answer: the file's coordinate says where
+    /// the picture was TAKEN, which beats where the phone is standing now.
+    @Test func aPhotographWithItsOwnCoordinateUsesIt() {
+        #expect(CollectSheet.route(cameraShot: false,
+                                   locationKnown: true,
+                                   photoHasCoordinate: true) == .settle(.photo))
+    }
+
+    /// A picture with no location asks, whatever the phone knows. Where the
+    /// phone is standing now says nothing about where the picture was taken,
+    /// and the old library path already got this right.
+    @Test func aPhotographWithoutOneAsksEvenWhenThePhoneKnowsWhereItIs() {
+        #expect(CollectSheet.route(cameraShot: false,
+                                   locationKnown: true,
+                                   photoHasCoordinate: false) == .askForThePin)
+        #expect(CollectSheet.route(cameraShot: false,
+                                   locationKnown: false,
+                                   photoHasCoordinate: false) == .askForThePin)
+    }
+}
+
 // MARK: - permission refused
 
 /// What the app does when somebody says no.
