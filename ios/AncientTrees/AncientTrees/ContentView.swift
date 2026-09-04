@@ -502,13 +502,6 @@ struct ContentView: View {
                 // silently never appeared. The ask is presented from the root so
                 // that a tick on a tree page and a third save on the map land in
                 // the same sheet rather than in two near-identical ones.
-                // The tree the camera was opened from lasts exactly as long as
-                // the sheet does. Without this, tapping the camera on Old
-                // Tjikko and then opening the camera from the tab bar an hour
-                // later would still offer to add Old Tjikko.
-                .onChange(of: rootSheet) { _, now in
-                    if now == nil { navigator.collectAbout = nil }
-                }
                 .sheet(item: $rootSheet) { which in
                     Group {
                         switch which {
@@ -517,8 +510,23 @@ struct ContentView: View {
                         case .paywall(let feature):
                             PaywallView(feature: feature)
                         case .spot(let mode):
+                            // The tree the camera was opened from lasts exactly
+                            // as long as this sheet. Without the reset, tapping
+                            // the camera on Old Tjikko and then opening the
+                            // camera from the tab bar an hour later would still
+                            // offer to add Old Tjikko.
+                            //
+                            // ON THE SHEET, not on the body above. As an
+                            // `.onChange(of: rootSheet)` up there it was one
+                            // modifier too many for that chain and the CI
+                            // compiler gave up on the whole expression
+                            // ("unable to type-check this expression in
+                            // reasonable time", 2026-09-04), while Xcode 26 on
+                            // this desk compiled it fine. Same effect, and a
+                            // small expression the type-checker can hold.
                             CollectSheet(catalogue: cat, origin: origin, mode: mode,
                                          about: navigator.collectAbout)
+                                .onDisappear { navigator.collectAbout = nil }
                         }
                     }
                     // A sheet does not inherit the environment set on the view
