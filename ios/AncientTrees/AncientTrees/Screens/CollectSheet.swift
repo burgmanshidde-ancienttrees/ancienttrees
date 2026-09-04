@@ -54,6 +54,7 @@
 
 import CoreLocation
 import Photos
+import StoreKit
 import SwiftUI
 
 struct CollectSheet: View {
@@ -68,6 +69,8 @@ struct CollectSheet: View {
     @Environment(Sightings.self) private var sightings
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
+    @Environment(ReviewPrompt.self) private var reviewPrompt
+    @Environment(\.requestReview) private var requestReview
     @Environment(Navigator.self) private var navigator
     @Environment(\.dismiss) private var dismiss
 
@@ -420,6 +423,12 @@ struct CollectSheet: View {
         sightings.record(treeId: t.id, name: t.name, lat: t.lat, lng: t.lng,
                          image: image, date: taken ?? Date())
         withAnimation(.snappy) { stage = .ticked(t.id) }
+        // "You found \(t.name)" below is the payoff moment; see
+        // ReviewPrompt.swift and CONVENTIONS.md for why this is where the
+        // native ask belongs and nowhere else.
+        if reviewPrompt.consider(ticked: saved.visitedCount) {
+            requestReview()
+        }
     }
 
     // MARK: - The photograph does not say where it was taken
