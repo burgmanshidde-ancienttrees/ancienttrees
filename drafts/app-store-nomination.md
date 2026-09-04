@@ -49,14 +49,14 @@ en, nl, es, it, de, pt, fr, ja
 ## Supplemental Materials
 https://ancienttrees.app
 
-## Description  (1019/1000)
+## Description  (996/1000)
 Ancient Trees is for people who love being outdoors. It shows you the remarkable old trees around you, tells you why each one is worth the walk, and lets you collect the ones you have stood in front of.
 
 Nothing else does this. There are tree databases written for botanists and there are hiking apps, but nothing that walks you to one extraordinary tree and tells you what you are looking at.
 
 We map 2,472 trees in 362 places across 25 countries, every one verified against two independent sources. The Ankerwycke Yew at Runnymede, standing when Magna Carta was sealed. The Totteridge Yew, the oldest living thing in London. El Drago Milenario on Tenerife.
 
-The app also knows when a tree is at its best, which is what makes it something you plan rather than read. There is probably an ancient ginkgo within reach of wherever you are: for about two weeks in November it turns completely gold, then drops almost every leaf at once. We map 83 of them across 22 countries.
+The app also knows when a tree is at its best, which makes it something you plan rather than read. There is probably an ancient ginkgo within reach of you now: for two weeks in November it turns completely gold, then drops almost every leaf at once. We map 83 of them across 22 countries.
 
 Launched 3 September 2026, in seven languages.
 
