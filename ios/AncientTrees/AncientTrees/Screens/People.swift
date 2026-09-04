@@ -16,6 +16,16 @@
 import SwiftUI
 
 struct PeopleView: View {
+    /// WHAT THIS LIST IS (Hidde, 2026-09-04: "ik zie ook dat ik twee followers
+    /// heb, opzich nice als ik daar op kan klikken en volg terug kan doen").
+    ///
+    /// One screen rather than three, because a followers list is a list of
+    /// people with a follow button beside each, which is exactly what this
+    /// already was. Only where the rows come from changes, so blocking,
+    /// reporting and the row itself cannot drift into two versions.
+    enum Source: String { case search, followers, following }
+    var source: Source = .search
+
     @Environment(\.dismiss) private var dismiss
     @Environment(Account.self) private var account
     @Environment(Profiles.self) private var profiles
@@ -50,14 +60,23 @@ struct PeopleView: View {
             + results.filter { moderation.hides($0.user_id) }
     }
 
+    /// Said plainly per list, including the case that is true today: somebody
+    /// can follow you before they have chosen a display name, and then there is
+    /// nothing to show but the fact that they are there.
+    private var emptyLine: String {
+        switch source {
+        case .search: query.isEmpty ? "Search for somebody by the name they chose."
+                                    : "Nobody by that name yet."
+        case .followers: "Nobody follows you yet."
+        case .following: "You do not follow anybody yet."
+        }
+    }
+
     var body: some View {
         NavigationStack {
             List {
-                if visible.isEmpty && !query.isEmpty && !searching {
-                    Text("Nobody by that name yet.")
-                        .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                } else if visible.isEmpty {
-                    Text("Search for somebody by the name they chose.")
+                if visible.isEmpty && !searching {
+                    Text(emptyLine)
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 }
                 ForEach(visible, id: \.user_id) { p in
@@ -67,7 +86,7 @@ struct PeopleView: View {
                             if let url = p.avatar_url, let u = URL(string: url) {
                                 TreePhoto(url: u) { Color.clear }
                                     .clipShape(.circle)
-                            } else if let first = p.display_name.first {
+                            } else if let first = p.display_name.first, !p.display_name.isEmpty {
                                 Text(String(first).uppercased())
                                     .font(.brand(16, .black, relativeTo: .body))
                                     .foregroundStyle(Brand.moss)
@@ -75,7 +94,12 @@ struct PeopleView: View {
                         }
                         .frame(width: 40, height: 40)
 
-                        Text(p.display_name).font(.callout)
+                        // Somebody who has signed up and never chosen a name.
+                        // Said rather than filled in: a placeholder name would
+                        // be the one thing this project does not do.
+                        Text(p.display_name.isEmpty ? "No name yet" : p.display_name)
+                            .font(.callout)
+                            .foregroundStyle(p.display_name.isEmpty ? Brand.inkSoft : Brand.ink)
                             .foregroundStyle(moderation.hides(p.user_id) ? Brand.inkSoft : Brand.ink)
                         Spacer(minLength: 8)
 
@@ -126,8 +150,12 @@ struct PeopleView: View {
                 }
             }
             .listStyle(.plain)
-            .searchable(text: $query, prompt: "Search people")
-            .navigationTitle("Find people")
+            // The search box belongs to the search list only. A followers list
+            // with a "Search people" bar above it is two features in one
+            // screen, and the bar would filter nothing.
+            .modifier(SearchableWhen(on: source == .search, text: $query))
+            .navigationTitle(source == .search ? "Find people"
+                             : source == .followers ? "Followers" : "Following")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -185,8 +213,32 @@ struct PeopleView: View {
                 // keeps promising not to ship.
                 if DemoPeople.on { results = DemoPeople.all }
             }
+            .task(id: source) {
+                guard source != .search, let uid = account.session?.userId else { return }
+                searching = true
+                let token = await account.freshToken()
+                let ids = source == .followers
+                    ? await profiles.followerIds(of: uid, token: token)
+                    : await profiles.followingIds(of: uid, token: token)
+                let known = await profiles.byIds(ids, token: token)
+                // A COUNT AND A LIST THAT DISAGREE IS WORSE THAN EITHER. Two of
+                // the three accounts here have signed up and never chosen a
+                // display name, so they have no profiles row at all and byIds
+                // returns nothing for them. Dropping them would show "2
+                // followers" above a list saying nobody follows you.
+                //
+                // So they get a row that says what is true. Not a made-up name,
+                // and not an id: an id is not a person to anybody but a
+                // database.
+                let byId = Dictionary(uniqueKeysWithValues: known.map { ($0.user_id, $0) })
+                results = ids.map { id in
+                    byId[id] ?? Profiles.Profile(user_id: id, display_name: "",
+                                                 avatar_url: nil, units: nil)
+                }
+                searching = false
+            }
             .task(id: query) {
-                if DemoPeople.on { return }
+                if DemoPeople.on || source != .search { return }
                 // A beat before asking, so typing does not fire a request per
                 // letter.
                 searching = true
@@ -225,6 +277,23 @@ struct PeopleView: View {
             } else {
                 await profiles.follow(p.user_id, me: s.userId, token: t)
             }
+        }
+    }
+}
+
+
+/// `.searchable` cannot be applied conditionally inline without changing the
+/// view's identity, which drops the list's scroll position and its focus. A
+/// modifier that branches inside `body` keeps one identity.
+private struct SearchableWhen: ViewModifier {
+    let on: Bool
+    @Binding var text: String
+
+    func body(content: Content) -> some View {
+        if on {
+            content.searchable(text: $text, prompt: "Search people")
+        } else {
+            content
         }
     }
 }

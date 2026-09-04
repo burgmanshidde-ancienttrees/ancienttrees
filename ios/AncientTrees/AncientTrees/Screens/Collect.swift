@@ -51,6 +51,14 @@ struct CollectView: View {
     @State private var openSettings = ProcessInfo.processInfo.arguments.contains("-settings")
     @State private var editingProfile = ProcessInfo.processInfo.arguments.contains("-profile-edit")
     @State private var findingPeople = ProcessInfo.processInfo.arguments.contains("-people")
+    /// Which list of people is open, if any. An enum rather than two booleans,
+    /// so both cannot be true at once.
+    private enum PeopleList: String, Identifiable {
+        case followers, following
+        var id: String { rawValue }
+        var source: PeopleView.Source { self == .followers ? .followers : .following }
+    }
+    @State private var peopleList: PeopleList?
     @State private var sheetHeight: SheetHeight = .half
     @State private var selectedTree: Tree?
     @Environment(Profiles.self) private var profiles
@@ -155,6 +163,7 @@ struct CollectView: View {
         }
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
         .sheet(isPresented: $findingPeople) { PeopleView() }
+        .sheet(item: $peopleList) { which in PeopleView(source: which.source) }
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .keepCollection(saved.savedCount), localCount: saved.savedCount)
                 .environment(account).environment(saved)
@@ -687,9 +696,25 @@ struct CollectView: View {
                         // are here from the first day rather than added later, so
                         // the page does not change shape on somebody the week
                         // following opens.
+                        // THE NUMBERS LEAD SOMEWHERE (Hidde, 2026-09-04: "ik
+                        // zie ook dat ik twee followers heb, opzich nice als ik
+                        // daar op kan klikken en volg terug kan doen"). They
+                        // had been counts and nothing else since the first day,
+                        // which is the one thing every reference does not do:
+                        // Polarsteps, Strava and Instagram all open a list from
+                        // exactly here, and following back is the whole point
+                        // of knowing you have a follower.
                         HStack(spacing: 14) {
-                            Text("\(profiles.followers) followers")
-                            Text("\(profiles.following) following")
+                            Button { peopleList = .followers } label: {
+                                Text("\(profiles.followers) followers")
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityIdentifier("mytrees-followers")
+                            Button { peopleList = .following } label: {
+                                Text("\(profiles.following) following")
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityIdentifier("mytrees-following")
                         }
                         .font(.caption).foregroundStyle(Brand.inkSoft)
                         // CAPPED, because two counts side by side cannot grow
