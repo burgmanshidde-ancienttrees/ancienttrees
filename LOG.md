@@ -9,6 +9,38 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-09-04 (session) - Bug: re-running batch-010 duplicate-mailed 46 organisations, fixed by pruning the batch file
+
+You said "sent next batch" and I re-ran the same command from yesterday.
+It re-sent the identical app-launch mail to the same 46 addresses from
+2026-09-03, plus 3 genuinely new ones, before the 50/day cap closed it again.
+Only 3 of today's 49 sends were new.
+
+**Why:** every mail in batch-010 carries a `resend_reason` (needed because
+all 212 addresses had been mailed before, in earlier batches). The send
+script's dedup only skips an address that lacks a resend_reason; with one
+present, "already mailed" becomes a deliberate REPEAT rather than a skip.
+That is the right behaviour for a genuinely new, spaced-out follow-up, but it
+also meant every re-run of THIS SAME batch file started back at mail #1 and
+re-sent whatever the cap allowed, since the file had no memory of what it had
+already sent within itself.
+
+**Fixed:** pruned the 49 already-sent addresses out of
+`drafts/batches/batch-010-app-launch.json`, so it now holds only the 163
+untouched ones. Verified with a dry run: every remaining entry is a genuine
+first-time-for-this-batch REPEAT (against an older batch), none of them
+duplicate today's or yesterday's sends. Running it again tomorrow, or any
+day after, will only reach fresh addresses from here on; I will prune again
+after each send rather than trust the script's own dedup for a multi-day
+batch.
+
+**The damage:** 46 real organisations, including Het Parool, DUIC, Arnold
+Arboretum, Rock Creek Conservancy, the Bayerische Schlösserverwaltung and
+others, got the same one-paragraph "the app launched" note twice in two
+days. Nothing false or sensitive went out, and it is a minor annoyance rather
+than a real harm, but it is a mistake and it is yours to know about rather
+than mine to quietly patch over.
+
 ## 2026-09-04 (continuation of the same window) - Register scouting (New Orleans, empty), an Australia famous-tree batch (1 of 12), and a photo viewing pass (3 approved, 1 held, 8 rejected) plus a real bug fix
 
 After the previous entry's 6-tree publish and claim releases, the window still had time left, so ran three independent lanes in parallel via background agents rather than serially.
