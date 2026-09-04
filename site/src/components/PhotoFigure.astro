@@ -30,16 +30,19 @@ interface Props {
   /** The widths the page itself lays the picture out at. */
   widths?: number[];
   sizes?: string;
+  /** "hero" is the full-bleed treatment ported from the app's tree page:
+   *  edge to edge on a phone, a fixed crop height, credit underneath. */
+  variant?: "inline" | "hero";
 }
 const { photo, alt, lang = "en", widths = [700, 1100, 1600],
-        sizes = "(max-width: 800px) 100vw, 760px" } = Astro.props;
+        sizes = "(max-width: 800px) 100vw, 760px", variant = "inline" } = Astro.props;
 const t = ui(lang);
 const dims = photoDims(photo);
 const credit = creditRequired(photo.license)
   ? t.photoCredit(creditText(photo.attribution, photo.license) ?? "")
   : null;
 ---
-<figure class="tree-photo">
+<figure class={variant === "hero" ? "tree-photo tree-hero" : "tree-photo"}>
   <button type="button" class="photo-open" aria-label={t.photoOpen}>
     <img {...imgSrcset(photo.url, widths, sizes, dims.width, dims.height)} alt={alt} loading="lazy" />
   </button>

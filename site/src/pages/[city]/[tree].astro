@@ -205,30 +205,33 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <main class="content-page has-tree-bar">
     <Breadcrumbs items={crumbItems} />
-    {tree.paid_entry && (
-      // Said HIGH, next to the name, because it changes whether somebody sets
-      // off at all (Hidde, 2026-08-24). The access line further down carries
-      // the detail; this is the fact you need before you read anything else.
-      <p class="ticket-note"><strong>Ticket needed.</strong> {tree.access}</p>
-    )}
-    <div class="page-head">
-      <h1>{tree.name}{tree.label && <span class="tree-label">{tree.label}</span>}</h1>
-      <ShareButton url={canonical} title={tree.name} />
-    </div>
-    <p class="chip-row">
-      {/* `||` not `??`: a tree with no age carries age_estimate as an empty
-          string as often as it omits the key, and `??` let "" through, which
-          rendered as a bare grey pill with nothing in it. Found on the Vilnius
-          trees, where five of seven have no published age at all. */}
-      <span class="chip">{tree.age_estimate || "age unknown"}</span>
-      <span class="chip">{spCommon}</span>
-      {isApprox && <span class="chip approx">pin approximate</span>}
+    {/* THE APP'S TREE PAGE, PORTED (Hidde, 2026-09-04: "import the design of
+        the detail tree page of the app we just finalised"). The app version
+        had the convention pass this one never got, and the order it arrived at
+        is better on three counts that are visible in one screenshot.
 
-    </p>
+        The picture comes FIRST and runs edge to edge. It used to sit after the
+        title and two chips, inset, so on a 375 point phone the one thing that
+        decides whether somebody sets off was the third block down. Every
+        reference (Airbnb's listing, AllTrails' trail, Apple Maps' place) opens
+        with the image at full bleed and no margin.
+
+        The facts became a CARD, high, instead of chips: age, species and pin
+        honesty are the same kind of answer and belong together, and the
+        species is the door to its own page. This also brings the page closer
+        to Contract A, which asks for a scannable fact block above the fold;
+        the detail list (location, access, transport) keeps its place below and
+        now sits above the map rather than under it.
+
+        And the spacing is a RHYTHM rather than one gap repeated: 28px between
+        sections, 10px inside a group. A page where everything is equally far
+        apart has no hierarchy, which was Hidde's complaint about the app on
+        2026-08-26 and was equally true here. */}
     {photo && photo.url ? (
-      <PhotoFigure photo={photo} alt={tree.name} lang="en" />
+      <PhotoFigure photo={photo} alt={tree.name} lang="en" variant="hero"
+        widths={[700, 1100, 1600]} sizes="(max-width: 760px) 100vw, 760px" />
     ) : (
-      <figure class="tree-noph">
+      <figure class="tree-noph tree-hero">
         <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
         <figcaption>
           <b>{spCommon}</b>
@@ -236,6 +239,39 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
           <a href="/contribute">Send us yours</a> and it goes on this page.</span>
         </figcaption>
       </figure>
+    )}
+    <div class="tree-head">
+      <div class="page-head">
+        <h1>{tree.name}{tree.label && <span class="tree-label">{tree.label}</span>}</h1>
+        <ShareButton url={canonical} title={tree.name} />
+      </div>
+      <p class="tree-sub">{tree.species ?? spCommon}</p>
+      <p class="tree-place">{[loc.neighbourhood, cityName].filter(Boolean).join(", ")}</p>
+    </div>
+    {/* Age, species and pin honesty in one card. `||` not `??` on the age: a
+        tree with no age carries age_estimate as an empty string as often as it
+        omits the key, and `??` let "" through, which rendered as a bare pill
+        with nothing in it (the Vilnius trees). */}
+    <div class="fact-card">
+      <div class="fact"><b>{tree.age_estimate || "not recorded"}</b><span>Age</span></div>
+      {spSlug ? (
+        <a class="fact" href={`/species/${spSlug}`}><b>{spCommon} <span class="fact-go" aria-hidden="true">›</span></b><span>Species</span></a>
+      ) : (
+        <div class="fact"><b>{spCommon}</b><span>Species</span></div>
+      )}
+      <div class="fact"><b>{isApprox ? "Approximate" : "Exact"}</b><span>Pin</span></div>
+    </div>
+    {tree.paid_entry && (
+      // Said HIGH, next to the name, because it changes whether somebody sets
+      // off at all (Hidde, 2026-08-24). The access line further down carries
+      // the detail; this is the fact you need before you read anything else.
+      <p class="ticket-note"><strong>Ticket needed.</strong> {tree.access}</p>
+    )}
+    {isApprox && (
+      <p class="approx-note">
+        The pin marks the right spot roughly, not the tree itself. It stands here, but we have not confirmed the precise position on the ground yet.{" "}
+        <a href={submitLink("correction", cityName, tree.name)}>Know exactly where it is?</a>
+      </p>
     )}
 
     <div class="tree-bar" aria-label="Actions">
@@ -269,14 +305,6 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         the moment the reader has just learned what the tree is. */}
     <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} />
     <Fragment set:html={seasonHtml} />
-    <div class="map-embed"><div id="map" class="map"></div></div>
-    <p class="go-note">The button above opens directions in your maps app. {tree.transport ?? ""}</p>
-    {isApprox && (
-      <p class="approx-note">
-        The pin marks the right spot roughly, not the tree itself. It stands here, but we have not confirmed the precise position on the ground yet.{" "}
-        <a href={submitLink("correction", cityName, tree.name)}>Know exactly where it is?</a>
-      </p>
-    )}
     <dl class="facts">
       <dt>Species</dt><dd>{tree.species ?? ""}</dd>
       <dt>Age estimate</dt><dd>{tree.age_estimate ?? "unknown"}</dd>
@@ -284,6 +312,8 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <dt>Access</dt><dd>{tree.access ?? ""}</dd>
       <dt>Getting there</dt><dd>{tree.transport ?? ""}</dd>
     </dl>
+    <div class="map-embed"><div id="map" class="map"></div></div>
+    <p class="go-note">The button above opens directions in your maps app. {tree.transport ?? ""}</p>
     {sources.length > 0 && (
       <section class="tree-sources">
         <h2>Sources</h2>
@@ -308,15 +338,27 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         </div>
       </Fragment>
     )}
-    <div class="cta">
-      {allTrees.length > 1 ? (
-        <Fragment>Curious what else is standing in {cityName}? See <a href={`/${cslug}`}>all {allTrees.length} remarkable ancient trees in {cityName}</a> or find out <a href={`/${cslug}/oldest-tree`}>what the oldest tree in {cityName} is</a>.</Fragment>
-      ) : (
-        <Fragment>This is the one entry on the map for {cityName} so far. See it on <a href={`/${cslug}`}>the {cityName} page</a>.</Fragment>
-      )}
-      {spSlug && <Fragment> It is a {spCommon}; see <a href={`/species/${spSlug}`}>every {spCommon.toLowerCase()} on the site</a>.</Fragment>}
-      {parkPage && <Fragment> It stands in <a href={`/parks/${parkPage.slug}`}>{parkPage.name || parkPage.park}</a>, which has more.</Fragment>}
-    </div>
+    {/* WHERE TO GO NEXT, as chips rather than a paragraph, which is what the
+        app closes a tree with (Hidde, 2026-08-26: "onderaan de boom detail
+        pagina discover more in city, park or country, verschillende knoppen").
+        AllTrails closes a trail with its own facet pills and Google Maps with
+        "More places nearby"; a reading page that simply stops is a dead end.
+        Every link Contract A requires is still here (city page, question page,
+        nearby trees above), now as targets rather than as a sentence. */}
+    <section class="discover-more">
+      <h2>Discover more</h2>
+      <div class="dm-chips">
+        <a class="dm-chip" href={`/${cslug}`}>{allTrees.length > 1 ? `All ${allTrees.length} trees in ${cityName}` : `${cityName}`}</a>
+        {allTrees.length > 1 && <a class="dm-chip" href={`/${cslug}/oldest-tree`}>The oldest tree in {cityName}</a>}
+        {spSlug && <a class="dm-chip" href={`/species/${spSlug}`}>Every {spCommon.toLowerCase()}</a>}
+        {parkPage && <a class="dm-chip" href={`/parks/${parkPage.slug}`}>{parkPage.name || parkPage.park}</a>}
+        {/* No country chip: country pages live at /[country] and only exist
+            once an intro is written and three cities qualify, so linking one
+            from here would need that whole check and can otherwise ship a dead
+            link, which qa.py rightly refuses. The app carries a country chip
+            because it has no park facet; this page has four already. */}
+      </div>
+    </section>
     <div class="app-pitch">
       <strong>Collect the trees you stand in front of</strong>
       <p>Ticking this one off, walks past several more, and your collection growing city by city: that is the Ancient Trees app.</p>
