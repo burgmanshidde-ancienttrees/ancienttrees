@@ -98,6 +98,26 @@ struct TreeDetail: View {
                 VStack(alignment: .leading, spacing: 0) {
                     hero
                     VStack(alignment: .leading, spacing: 28) {
+                    // ONE GROUP: what this tree IS. The name, where it stands
+                    // and the facts are not three sections, and giving them the
+                    // 28 point section gap put 53 points of air between the
+                    // place and the first label (Hidde, 2026-09-04: "de spacing
+                    // verticaal tussen titel ondertitel en dan years old is te
+                    // groot, kijk ff hoe dat hoort").
+                    //
+                    // Measured on the SE before changing anything: the title
+                    // ends at 502, the place TEXT sits at 523 to 541 inside a
+                    // 44 point tap target that runs to 554, and "Years old" is
+                    // at 594. So three things stacked: 13 points of tap area
+                    // below the text, then the 28, then the card's own 12 point
+                    // inset. The rhythm this file already follows (28 between
+                    // sections, 10 inside a group, from Airbnb, AllTrails and
+                    // Apple Maps) was being applied to the wrong boundary.
+                    //
+                    // Grouped at 8, so the visible gap becomes about 21 to the
+                    // card's edge and the card's own inset carries the rest.
+                    // The 28 still separates this whole group from the story.
+                    VStack(alignment: .leading, spacing: 8) {
                     header
                     // THE CONFIRMATION, WHERE YOU LAND (Hidde, 2026-09-01: "ook
                     // krijg je geen bevestiging dat iets is opgeslagen"). It
@@ -129,6 +149,7 @@ struct TreeDetail: View {
                     // everywhere in this app, and sharing it made a garden's
                     // entrance fee read as one of our own tiers (2026-08-25).
                     factsBlock
+                    }
                     // THE WHOLE VOTE SITS HERE, above the story (Hidde,
                     // 2026-09-04: "de hele interactie moet daarboven zitten en
                     // niet meer onderaan qua thumbs").
