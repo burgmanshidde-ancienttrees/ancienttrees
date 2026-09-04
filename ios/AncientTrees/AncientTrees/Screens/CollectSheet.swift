@@ -302,26 +302,62 @@ struct CollectSheet: View {
 
     // MARK: - The one decision
 
-    /// THE CAMERA PATH. You are standing there, so the device fix is the
-    /// answer and there is nothing to ask.
+    /// What a fresh photograph earns: a coordinate we may stand behind, or the
+    /// pin-dragging stage.
+    enum Route: Equatable {
+        case settle(Fix)
+        /// We cannot honestly say where this was taken, so we ask.
+        case askForThePin
+    }
+
+    /// WHERE A PHOTOGRAPH GOES, as a decision rather than as a branch buried in
+    /// a SwiftUI view.
     ///
-    /// UNLESS `origin` is not actually a fix. Found 2026-09-03: with location
-    /// off or refused, `origin` quietly falls back to the last fix this phone
-    /// ever had, or to Dam square (LocationOff.swift), and this used to record
-    /// that as `.device`, "GPS, standing at the tree". A confident lie is
-    /// worse than the honest gap the library path already has for exactly
-    /// this case, so an unknown origin routes here the same way a photograph
-    /// with no embedded location does: drag the pin, fix `.placed`.
+    /// It is pulled out here for the reason CLAUDE.md records about the camera:
+    /// when a check cannot run on the machine that tests it, make the DECISION
+    /// testable instead of the situation. A simulator cannot deny a real GPS
+    /// fix in the middle of a camera flow, which is why the bug below reached a
+    /// phone; this function can be asked all four questions anywhere.
+    ///
+    /// The bug it exists to keep out (found on-device by Hidde, 2026-09-03,
+    /// fixed in c4598e78): with location off or refused, `origin` quietly falls
+    /// back to the last fix this phone ever had, or to Dam square
+    /// (LocationOff.swift), and the camera path recorded that as `.device`,
+    /// "GPS, standing at the tree". A confident lie is worse than the honest
+    /// gap the library path already has for the same case, and CLAUDE.md calls
+    /// a fabricated location the one error a reader cannot forgive, because
+    /// they are already standing in the wrong place before any correction
+    /// reaches them.
+    static func route(cameraShot: Bool,
+                      locationKnown: Bool,
+                      photoHasCoordinate: Bool) -> Route {
+        if cameraShot {
+            // Standing there IS the fix, but only when the phone actually has
+            // one. Never .device on a fallback.
+            return locationKnown ? .settle(.device) : .askForThePin
+        }
+        // The camera roll. The file's own coordinate beats ours, because it
+        // records where the picture was taken rather than where the phone is
+        // now; without one we ask, whatever location says.
+        return photoHasCoordinate ? .settle(.photo) : .askForThePin
+    }
+
+    /// THE CAMERA PATH. You are standing there, so the device fix is the
+    /// answer and there is nothing to ask, unless the phone cannot tell us
+    /// where that is. See `route(cameraShot:locationKnown:photoHasCoordinate:)`.
     private func resolve(_ image: UIImage?) {
         guard let image else { return }
         taken = nil
-        guard location.known else {
+        switch Self.route(cameraShot: true,
+                          locationKnown: location.known,
+                          photoHasCoordinate: false) {
+        case .settle(let fix):
+            settle(image, at: origin, fix: fix)
+        case .askForThePin:
             shot = image
             placing = .init(latitude: origin.lat, longitude: origin.lng)
             withAnimation(.snappy) { stage = .place }
-            return
         }
-        settle(image, at: origin, fix: .device)
     }
 
     /// THE CAMERA ROLL PATH. The photograph usually knows where it was taken;
@@ -330,8 +366,14 @@ struct CollectSheet: View {
         guard let p else { return }
         shot = p.image
         taken = p.taken
-        if let c = p.coordinate {
-            settle(p.image, at: (c.latitude, c.longitude), fix: .photo)
+        let route = Self.route(cameraShot: false,
+                               locationKnown: location.known,
+                               photoHasCoordinate: p.coordinate != nil)
+        // The binding rather than a force unwrap: `route` only says settle when
+        // there IS a coordinate, and a crash is a poor way to find out that
+        // stopped being true.
+        if case .settle(let fix) = route, let c = p.coordinate {
+            settle(p.image, at: (c.latitude, c.longitude), fix: fix)
         } else {
             placing = .init(latitude: origin.lat, longitude: origin.lng)
             withAnimation(.snappy) { stage = .place }
