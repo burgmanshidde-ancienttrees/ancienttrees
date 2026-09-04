@@ -1,0 +1,63 @@
+{
+  "city": "Bad Blumau",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "Locals in the hamlet of Bierbaum an der Safen call this oak \"die dicke Oachn\", the fat oak, and two very different stories claim it. A German dendrological register reads its 8.75-metre girth as 500 to 600 years of growth; local tradition insists on something closer to a thousand, with a planting date of around 1020. Lightning hit it in the 1970s and a bad concrete repair nearly finished the job, before tree surgeon Manfred Saller redid the work properly in 1989. It stands on a private plot with a public trail, signage and guided tours built around it.",
+  "meta_description": "The oak of Bierbaum, Bad Blumau, is 8.75m round, age disputed between 500-600 years and a local claim of 1,000. Marked trail, guided tours.",
+  "question_meta": "Bad Blumau's oak, 8.75m round, is claimed at 500 to 1,000 years old. Its lightning strike, 1989 repair, and how to visit.",
+  "question_answer": "The oldest tree near Bad Blumau is the oak of Bierbaum an der Safen, at the end of the Eichenweg toward Loimeth. A dendrological register reads its girth at 500 to 600 years; local tradition claims closer to 1,000, with a planting date of around 1020, though no source names a method behind that figure. Its trunk measures 8.75 metres round and its crown reaches 30 metres. It stands on a private plot but is treated as a public attraction, with a marked trail, information signage and guided tours.",
+  "question_context": "The two ages in circulation come from different kinds of evidence and neither has been reconciled. Baumkunde.de, a German dendrological register, measured the tree in 2018 and reads its girth and growth pattern as 500 to 600 years, noting this contradicts the popular name. Local reporting instead states flatly that experts confirm roughly 1,000 years and repeats a planting date of around 1020, without naming who measured it or how. Both figures are recorded here rather than one picked as correct. The tree's recent history is better documented. Lightning struck it sometime in the 1970s, and whoever repaired the wound packed the hollow with concrete, a well-meant fix that traps moisture and speeds decay rather than stopping it. In 1989 the tree surgeon Manfred Saller redid the job properly, funded by a donation from the Austrian businesswoman Heidi Horten, and the tree was recorded in visibly vital condition at its most recent 2018 survey. It grows on a private plot in Bierbaum, a hamlet in the municipality of Bad Blumau, but the owners have built a public attraction around it: a marked trail, a sign, and guided tours that bring thousands of visitors a year.",
+  "hero_tree_id": "bib_001",
+  "oldest_tree_id": "bib_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Bad Blumau?",
+      "a": "The oak of Bierbaum an der Safen, known locally as \"die dicke Oachn\" (the fat oak), claimed at anywhere from 500 to 1,000 years old depending on the source."
+    },
+    {
+      "q": "How old is the oak really?",
+      "a": "Nobody has settled it. A German dendrological register reads its girth as 500 to 600 years of growth; local tradition claims closer to 1,000, with a planting date given as around 1020, but no source names the method behind that figure."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "The tree stands on a private plot, but the owners have built a public attraction around it, with a marked trail, information signage and guided tours; no entry fee is stated for simply walking the trail."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "The tree stands in Bierbaum an der Safen, at the end of the Eichenweg toward Loimeth, in the municipality of Bad Blumau, Styria. Reached by road; no rail station in the hamlet itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bib_001",
+      "name": "The Oak of Bierbaum (die dicke Oachn)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "disputed, roughly 500 to 1,000 years",
+      "age_min": 500,
+      "age_max": 1000,
+      "girth_cm": 875,
+      "location": {
+        "address": "End of the Eichenweg toward Loimeth, Bierbaum an der Safen, Bad Blumau, Steiermark, Austria",
+        "latitude": 47.105423,
+        "longitude": 16.049133,
+        "neighbourhood": "Bierbaum an der Safen"
+      },
+      "story": "Locals call it \"die dicke Oachn\", the fat oak, and it has survived at least one bad repair. Lightning struck it sometime in the 1970s and whoever patched the wound packed the hollow with concrete, the kind of well-meant fix that traps moisture and speeds up rot rather than stopping it. In 1989 the tree surgeon Manfred Saller redid the job properly, funded by a donation from the Austrian businesswoman Heidi Horten, and local reporting says the tree has been visibly healthier since.\n\nIts age depends on which measurement you trust. The German dendrological register baumkunde.de puts it at 500 to 600 years, a figure read from its girth and growth pattern. Local tradition insists on something closer to a thousand, with a planting date given as around 1020, though no source names the method behind that number. Both figures are repeated here rather than settled. What is measured rather than argued about is the trunk, 8.75 metres round as of a 2018 survey, under 30 metres of crown.\n\nThe oak stands on a private plot at the edge of Bierbaum, but the owners have built a public attraction around it anyway: a marked trail, an interpretive sign, and guided tours that bring thousands of visitors a year to stand under a tree that two very different stories both agree is old.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/1309-tausendjaehrige_eiche_in_bad_blumau/",
+        "https://www.meinbezirk.at/hartberg-fuerstenfeld/c-lokales/die-1000-jaehrige-eiche-von-bierbaum_a7441969",
+        "https://www.meinbezirk.at/graz/c-regionauten-community/die-1000-jaehrige-eiche-in-bierbaum-gemeinde-bad-blumau_a5050954"
+      ],
+      "access": "On a private plot at the edge of Bierbaum an der Safen, but treated as a public attraction: a marked trail (the Eichenweg), information signage and guided tours; no fee stated for walking the trail.",
+      "transport": "Bierbaum an der Safen, municipality of Bad Blumau, Steiermark; no rail station in the hamlet, reached by road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
