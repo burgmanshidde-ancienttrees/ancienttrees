@@ -1001,3 +1001,4 @@ restraint pattern applied to a different ask.
 Read 2026-09-03:
 - https://developer.apple.com/documentation/storekit/requesting-app-store-reviews
 - https://www.avanderlee.com/swift/skstorereviewcontroller-app-ratings/
+- https://criticalmoments.io/blog/skstorereviewcontroller_guide_with_examples

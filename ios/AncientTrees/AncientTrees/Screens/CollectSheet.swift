@@ -419,15 +419,22 @@ struct CollectSheet: View {
     }
 
     private func claim(_ t: Tree, image: UIImage, at here: (lat: Double, lng: Double)) {
-        if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
+        let isNewTick = !saved.isVisited(t.id)
+        if isNewTick { saved.toggleVisited(t.id) }
         sightings.record(treeId: t.id, name: t.name, lat: t.lat, lng: t.lng,
                          image: image, date: taken ?? Date())
         withAnimation(.snappy) { stage = .ticked(t.id) }
         // "You found \(t.name)" below is the payoff moment; see
         // ReviewPrompt.swift and CONVENTIONS.md for why this is where the
-        // native ask belongs and nowhere else.
-        if reviewPrompt.consider(ticked: saved.visitedCount) {
-            requestReview()
+        // native ask belongs and nowhere else. The delay lets the payoff
+        // card actually land before the system prompt can cover it — asking
+        // AT the moment of success, rather than simultaneously with the
+        // animation that reveals it, per Apple's own guidance.
+        if isNewTick, reviewPrompt.consider(ticked: saved.visitedCount) {
+            Task {
+                try? await Task.sleep(for: .seconds(2))
+                requestReview()
+            }
         }
     }
 

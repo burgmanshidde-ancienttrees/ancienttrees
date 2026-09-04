@@ -56,6 +56,10 @@ public final class ReviewPrompt {
     public init(defaults: UserDefaults = .standard, suppressed: Bool? = nil) {
         self.defaults = defaults
         self.suppressedOverride = suppressed
+        if ProcessInfo.processInfo.arguments.contains("-reset-collection") {
+            defaults.removeObject(forKey: firedKey)
+            defaults.removeObject(forKey: lastKey)
+        }
     }
 
     /// Off whenever a test runner is attached, so no UI test can forget to

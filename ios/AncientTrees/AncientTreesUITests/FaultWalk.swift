@@ -23,7 +23,7 @@ final class FaultWalk: XCTestCase {
 
     private func launch(_ args: [String]) -> XCUIApplication {
         let app = XCUIApplication()
-        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks", "-no-cover"] + args
+        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks", "-no-cover", "-no-review-prompt"] + args
         app.launch()
         return app
     }

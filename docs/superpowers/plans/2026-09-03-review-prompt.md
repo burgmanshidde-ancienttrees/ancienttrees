@@ -14,7 +14,7 @@
 - Milestones: the 3rd, 10th and 25th tree ticked, counted by `saved.visitedCount` at the moment of a successful tick.
 - Each milestone fires at most once; at least 7 days between any two asks; at most 3 asks in the phone's lifetime.
 - The only UI is the native `\.requestReview` SwiftUI environment action (StoreKit). No custom "are you enjoying the app?" screen — App Store Review Guideline 5.6.1 forbids gating the native prompt.
-- Always suppressed when running under XCTest (`ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil`), regardless of any launch argument, so no test can forget to guard against a real system dialog. Additionally suppressed by an explicit `-no-review-prompt` launch argument, for symmetry with `-no-nudge`.
+- Always suppressed for unit tests via the XCTest environment guard (`ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil`). For UI tests, that guard does NOT reliably apply — the app under test runs as a separate process from the XCTest runner — so UI tests rely on the explicit `-no-review-prompt` launch argument instead, which every UI test that could reach a tick now passes (see the final review's Important finding #2, fixed 2026-09-04).
 - Record the interaction in `CONVENTIONS.md` with its sources, per the standing "a lookup you have to repeat is a lookup that gets skipped" rule.
 - Spec: `docs/superpowers/specs/2026-09-03-review-prompt-design.md`.
 

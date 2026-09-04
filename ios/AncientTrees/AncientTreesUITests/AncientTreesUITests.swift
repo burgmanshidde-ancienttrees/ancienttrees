@@ -40,7 +40,7 @@ final class AncientTreesUITests: XCTestCase {
         // makes the list deterministic: Amsterdam always has trees near it.
         // And a clean collection, because serial testing shares one simulator
         // across every test and a tick left by one would greet the next.
-        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks", "-no-cover"] + args
+        app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks", "-no-cover", "-no-review-prompt"] + args
         app.launch()
         return app
     }
@@ -343,7 +343,7 @@ final class AncientTreesUITests: XCTestCase {
         // ams_018 is the Plantage walk's first stop, seeded as collected so the
         // counter has something true to say.
         app.launchArguments = ["-at=52.3667,4.9086", "-reset-collection", "-no-nudge", "-no-cover",
-                               "-signed-in", "-collected=ams_018",
+                               "-no-review-prompt", "-signed-in", "-collected=ams_018",
                                "-begin=amsterdam|Plantage"]
         app.launch()
 
