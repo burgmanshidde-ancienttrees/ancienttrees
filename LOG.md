@@ -1,6 +1,48 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 (session) - The app button leaves the hamburger and stands in the bar
+
+You asked, since the AllTrails sheet is off the table, to at least take the
+download button out of the menu and keep it visible, and to bring it forward on
+the homepage. Then you corrected where that matters: AllTrails does this on the
+phone, not on the desktop.
+
+**What changed.** The pill was already in the desktop bar and hidden inside the
+hamburger panel on a phone. It now stands in the bar at every width and the
+panel copy is gone, which reverses the phone half of 2026-08-20's "gooi dan
+alles onder het hamburger menu" for this one control and nothing else. The
+homepage hero gets the same button under the search field. Both are komoot's
+own shape, from the screenshot you sent: a filled pill beside the hamburger,
+and one filled button over the photograph.
+
+**What I did NOT touch, and it was close.** The CSS carries your instruction
+from 2026-08-20 that the hero's action is TEXT and not a pill, with "do not
+re-promote this to a button" written under it. "Explore trees near you" is
+still an underlined link. The app button is a second, different control, and
+the comment beside it says which of the two goes back to text if they ever
+start competing. Say the word and it is that one.
+
+**Three things went wrong and all three are fixed.** The pill shipped 36px
+tall and the smoke test caught it on six page types at once: Apple asks for 44
+and layout_rules.py holds that number for the site and the app together. The
+hero button shipped as an icon with no words, because there are two string
+tables here and I read the wrong one. And the wordmark breakpoint was 480 on
+the first try, which left a lonely leaf on a 375px phone; measured across all
+eight languages the bar wants about 346px, so it is 360.
+
+**One thing that was not mine.** The smoke test had been red since the tree
+page was ported this morning: its hero used width:100vw, and vw counts the
+scrollbar, so on any browser drawing a classic one the figure stood 15px wider
+than the page and shoved the document sideways. iOS overlays its scrollbar,
+which is why the phone it was designed on never showed it. Full bleed now comes
+off the container's own padding. Smoke is green.
+
+FOR HIDDE: another session or a night run was committing this same checkout
+while I worked, and it swept my half-finished bar and hero edits into its own
+commit (cef107a9, "Website tree page"). Nothing was lost and the CSS followed
+in 9d3faf24, but that commit message does not describe what is in it.
+
 ## 2026-09-04 (session) - A third copy layer, because the pitch register had no check and it shows
 
 You said my copy sucks and asked for a way to fix it forever rather than one
