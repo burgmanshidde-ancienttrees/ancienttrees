@@ -5018,6 +5018,52 @@
    ],
    "trees": 1,
    "logged": true
+  },
+  {
+   "started": "2026-09-04T20:00:20+00:00",
+   "date": "2026-09-04",
+   "run_id": "33914001785",
+   "minutes": 60.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 349,
+   "denials": 22,
+   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(mkdir), Bash(python3), Bash(rm)",
+   "ended": "success",
+   "tokens": 13306455,
+   "claims_held": [
+    "valencia"
+   ],
+   "commits": 13,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "rotterdam",
+     "trees": 3
+    },
+    {
+     "city": "fujikawaguchiko",
+     "trees": 1
+    },
+    {
+     "city": "ito",
+     "trees": 1
+    },
+    {
+     "city": "shiwa",
+     "trees": 1
+    },
+    {
+     "city": "valencia",
+     "trees": 1
+    },
+    {
+     "city": "yabu",
+     "trees": 1
+    }
+   ],
+   "trees": 8,
+   "logged": true
   }
  ],
  "schedule_changes": [
