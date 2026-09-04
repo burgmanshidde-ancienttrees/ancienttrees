@@ -28,6 +28,8 @@
 
 import Foundation
 import Observation
+import SwiftUI
+import StoreKit
 
 @MainActor
 @Observable
@@ -133,4 +135,35 @@ public final class ReviewPrompt {
         pending = true
         return true
     }
+}
+
+/// THE ONE PLACE THE SYSTEM DIALOG IS ASKED FOR. The screens that notice a
+/// milestone only raise `pending`, because the screen that notices is
+/// usually the one going away: a tree page asks on the way out, and a view
+/// leaving the hierarchy is a bad place to present anything from. This sits
+/// on the root, which is always on screen, so the ask always lands.
+///
+/// A ViewModifier rather than an `onChange` written inline on the root:
+/// ContentView's body is already at the edge of what the Swift type checker
+/// will take, and adding one generic closure to that chain tipped it into
+/// "unable to type-check this expression in reasonable time".
+///
+/// The prompt is passed in rather than read from the environment, because
+/// this modifier is applied ABOVE the root's own `.appObjects` and would
+/// therefore be looking for something injected below it.
+struct ReviewAsk: ViewModifier {
+    let prompt: ReviewPrompt
+    @Environment(\.requestReview) private var requestReview
+
+    func body(content: Content) -> some View {
+        content.onChange(of: prompt.pending) { _, now in
+            guard now else { return }
+            prompt.pending = false
+            requestReview()
+        }
+    }
+}
+
+extension View {
+    func reviewAsk(_ prompt: ReviewPrompt) -> some View { modifier(ReviewAsk(prompt: prompt)) }
 }
