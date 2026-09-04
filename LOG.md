@@ -1,6 +1,36 @@
 # LOG
 
 <!-- archive-index -->
+## 2026-09-04 (continuation of a window an earlier attempt stopped early with 116 minutes left) - Finished the standing _famous-japan claim, scouted three US registers, all dead ends
+
+Started by clearing what the earlier attempt in this window left uncommitted:
+a finished verify pass on the standing `_famous-japan` claim (one candidate,
+the Akou Tree of Narao) and a resolved `_famous-germany` batch (one candidate,
+a duplicate of an already-known Bavarian register tree, no write-up needed).
+Wrote the story myself rather than dispatching an agent for a single tree, and
+published **Shinkamigoto** (skm_001, the Akou Tree of Narao): Japan's largest
+recorded Akou tree, a National Natural Monument since 1961 on Nakadori Island
+in the Goto archipelago, free and public, under the 2026-08-31 single-tree
+exception. Photo left honestly missing; ranks below shipping the tree. Claim
+released, both leads files updated with the resolution.
+
+READY was empty (0 leads needing only a story) and the sightings inbox was
+empty too, so moved to `scout_next.py --target`, which named three US cities
+in a row with no supply and no register verdict: **Austin, Indianapolis,
+Oakland.** Scouted all three; none had anything importable. Austin's "heritage
+tree" open dataset (PDDL licensed, 19,801 rows) turned out to be a permit log
+keyed to a trunk-diameter ordinance threshold, same shape as LA's protected-
+species rule already ruled out, mostly private yards. Indiana's Big Tree
+Register has real champions in Marion County but no coordinates and no stated
+licence. Oakland has a Landmark Tree ordinance and no published list behind
+it. All three recorded in `data/register-scouting.json` so the next
+`scout_next.py --target` pass moves on instead of re-searching the same dead
+ends. Route forward for all three is from-zero web research, gated on Hidde
+naming them.
+
+Health check clear (rung 2), no BLOCKER, nothing stale. Build and QA and
+preflight all pass. 4 commits, all pushed.
+
 ## 2026-09-04 - Night run 2026-09-04 15:01 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 10.4 minutes of its 120 minute window, 63 turns, 16 commands refused by the allowlist, ended clean (success). 7 commit(s), none of them a published tree. Claims left behind: _famous-japan, alicante, eindhoven, which block the top of the queue until they expire.
