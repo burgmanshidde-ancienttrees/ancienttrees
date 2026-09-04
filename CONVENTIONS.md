@@ -992,6 +992,26 @@ tall, which is Apple's minimum and what `scripts/layout_rules.py` measures, and
 the wordmark beside the mark drops under 360px, because the bar wants about
 346px in the longest of the eight languages.
 
+**And what that hero button LOOKS like, from Polarsteps (2026-09-04).** Hidde
+sent their phone homepage and said "kun je precies het ontwerp van deze knop
+overnemen maar dan met ons app logo". Measured off the screenshot rather than
+remembered: a white pill about 46 tall, the app icon 28 square close to the
+left edge, a small gap, the label in 17px bold near-black, a soft shadow. The
+padding is asymmetric on purpose, the icon nearly inset in the pill, which is
+what makes it read as an app rather than as a link.
+
+**The picture is the app's OWN icon, the file the store and the home screen
+show**, not a site logo that resembles it, because the button's whole trick is
+promising the thing the reader will find on their phone afterwards. Ours is
+cream where theirs is a strong red, so it carries a 10% hairline; without it
+the tile's edge vanishes into the white pill and the tree looks like it is
+floating.
+
+None of this is the App Store badge and it must never imitate one. Apple's
+badge is Apple's artwork, is never redrawn, and belongs on /app and in the
+download dialog. A brand's own pill carrying its own icon is a different
+control, and Polarsteps, komoot and AllTrails all put one in their hero.
+
 ---
 
 ## Asking for an App Store review
