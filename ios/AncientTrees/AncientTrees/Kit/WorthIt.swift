@@ -85,15 +85,28 @@ struct WorthItView: View {
             HStack(spacing: 10) {
                 Text("Been here? Worth the visit?")
                     .font(.subheadline.weight(.semibold))
-                thumb("up", "hand.thumbsup")
-                thumb("down", "hand.thumbsdown")
+                Spacer(minLength: 0)
+                WorthItButton(tree: tree)
             }
-            if !vote.isEmpty {
-                Text("Thanks, counted. Tap again to undo.")
-                    .font(.footnote).foregroundStyle(.secondary)
+            if !reported {
+                // ITS OWN ENTRY, never nested under the vote (2026-08-16:
+                // "je kunt een boom niet leuk vinden of niet de moeite vinden
+                // zonder dat er iets mis is"). With the thumbs down gone this
+                // is the only way in, which is what the website has done all
+                // along.
+                Button { whyOpen.toggle() } label: {
+                    Text("Something's wrong")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(Brand.inkSoft)
+                        .underline()
+                        .frame(minHeight: 44)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("worthit-report")
             }
             if whyOpen && !reported {
-                Text("Care to say why? (optional)")
+                Text("What's wrong? (optional)")
                     .font(.footnote.weight(.semibold))
                 chipRow
             }
@@ -121,53 +134,6 @@ struct WorthItView: View {
         .sheet(isPresented: $signingIn) {
             SignInSheet(reason: .feedback, localCount: 0)
         }
-    }
-
-    private func thumb(_ dir: String, _ icon: String) -> some View {
-        Button {
-            // Visible to everyone; voting needs the account that lets us
-            // answer (2026-08-21, the Google Maps convention).
-            guard account.isSignedIn else { signingIn = true; return }
-            if vote == dir {
-                send("vote undone", vote == "up" ? "worth it" : "not worth it")
-                counts.record(tree.id, from: vote, to: "")
-                vote = ""
-                whyOpen = false
-                return
-            }
-            if !vote.isEmpty {
-                send("vote undone", vote == "up" ? "worth it" : "not worth it")
-            }
-            counts.record(tree.id, from: vote, to: dir)
-            vote = dir
-            send(dir == "up" ? "worth it" : "not worth it", nil)
-            whyOpen = (dir == "down")
-        } label: {
-            // THE FIGURE SITS ON THE CONTROL IT IS ABOUT (Hidde, 2026-08-27:
-            // "zet gewoon bij thumb hoeveel mensen thumb up of down hebben
-            // gedaan verder niet"), which is where YouTube, Reddit and every
-            // review page put one, and it replaces the sentence that used to
-            // stand under the tree's name.
-            //
-            // Nothing at all until somebody has voted: a 0 beside a thumb on a
-            // tree we chose to publish reads as a verdict, and it is only an
-            // empty table.
-            HStack(spacing: 6) {
-                Image(systemName: vote == dir ? icon + ".fill" : icon)
-                if let n = dir == "up" ? counts.up(tree.id) : counts.down(tree.id) {
-                    Text("\(n)")
-                        .font(.subheadline.weight(.semibold))
-                        .monospacedDigit()
-                }
-            }
-            .frame(minWidth: 44, minHeight: 44)
-        }
-        .buttonStyle(.bordered)
-        .tint(vote == dir ? Brand.moss : .secondary)
-        .accessibilityLabel(dir == "up"
-            ? "Yes, \(tree.name) was worth the visit"
-            : "No, \(tree.name) was not worth the visit")
-        .accessibilityAddTraits(vote == dir ? .isSelected : [])
     }
 
     private var chipRow: some View {
@@ -218,6 +184,117 @@ struct WorthItView: View {
                                               token: await account.freshToken())
         }
     }
+}
+
+/// THE ONE VOTE, drawn twice on a tree page and always in step, because both
+/// copies read the same `at_worthit_<id>` key.
+///
+/// One direction only (Hidde, 2026-09-04: "i agree that we dont need a thumb
+/// down"). Every reference offers a single positive act and routes the
+/// negative to a report: Strava's kudos, Instagram's like, Reddit's upvote,
+/// YouTube's like. This page already carries the negative twice, in the
+/// toolbar's report menu and in the chips under this control.
+///
+/// The number sits ON the control, which is the other half of the same
+/// convention and the answer to Hidde's question ("how does someone add a
+/// thumb up by clicking the 17"): nobody anywhere draws a count that is only a
+/// count beside a separate button that casts. So the small one in the summary
+/// line is not a label, it is this button.
+struct WorthItButton: View {
+    let tree: Tree
+    /// The small one, for the line under the name.
+    var compact = false
+
+    @Environment(Account.self) private var account
+    @Environment(VoteCounts.self) private var counts
+    @AppStorage private var vote: String
+    @State private var signingIn = false
+
+    init(tree: Tree, compact: Bool = false) {
+        self.tree = tree
+        self.compact = compact
+        _vote = AppStorage(wrappedValue: "", "at_worthit_\(tree.id)")
+    }
+
+    private var cast: Bool { vote == "up" }
+
+    var body: some View {
+        Button(action: tap) {
+            HStack(spacing: compact ? 4 : 6) {
+                Image(systemName: cast ? "hand.thumbsup.fill" : "hand.thumbsup")
+                    .font(.system(size: compact ? 13 : 16, weight: .semibold))
+                if let n = counts.up(tree.id) {
+                    Text("\(n)")
+                        .font(compact ? .subheadline : .brand(15, .semibold, relativeTo: .subheadline))
+                        .monospacedDigit()
+                        .underline(compact)
+                }
+            }
+            .foregroundStyle(cast ? Brand.moss : (compact ? Brand.ink : Brand.ink))
+            .modifier(WorthItShape(compact: compact, cast: cast))
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier(compact ? "worthit-count" : "worthit-button")
+        .accessibilityLabel(cast
+            ? "You found \(tree.name) worth the visit. Tap to undo"
+            : "Yes, \(tree.name) was worth the visit")
+        .accessibilityAddTraits(cast ? .isSelected : [])
+        .sheet(isPresented: $signingIn) {
+            SignInSheet(reason: .feedback, localCount: 0)
+        }
+    }
+
+    private func tap() {
+        // Visible to everyone; voting needs the account that lets us answer
+        // (2026-08-21, the Google Maps convention).
+        guard account.isSignedIn else { signingIn = true; return }
+        if cast {
+            send("vote undone", "worth it")
+            counts.record(tree.id, from: "up", to: "")
+            vote = ""
+            return
+        }
+        counts.record(tree.id, from: vote, to: "up")
+        vote = "up"
+        send("worth it", nil)
+    }
+
+    private func send(_ verdict: String, _ reason: String?) {
+        let why = reason.map { "\(verdict): \($0)" } ?? verdict
+        Task {
+            _ = await Submission.sendFeedback(city: tree.city,
+                                              tree: "\(tree.id) (\(tree.name))",
+                                              why: why,
+                                              token: await account.freshToken())
+        }
+    }
+}
+
+/// A capsule after the story, plain text in the summary line. The tap target
+/// stays 44 points in both, which is the whole reason the small one is
+/// allowed to be small.
+private struct WorthItShape: ViewModifier {
+    let compact: Bool
+    let cast: Bool
+
+    func body(content: Content) -> some View {
+        if compact {
+            content.frame(minHeight: 44).contentShape(.rect)
+        } else {
+            content
+                .padding(.horizontal, 14)
+                .frame(height: 44)
+                .background(cast ? Brand.moss.opacity(0.12) : Brand.surface,
+                            in: .capsule)
+                .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+        }
+    }
+}
+
+/// The count under the name. Same button, small.
+struct WorthItCount: View {
+    let tree: Tree
+    var body: some View { WorthItButton(tree: tree, compact: true) }
 }
 
 /// A wrapping row for the chips, so they fit a 375 point screen.
