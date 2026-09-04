@@ -63,6 +63,9 @@ struct CollectSheet: View {
     /// both modes now enter the same flow, because the flow is what decides.
     enum Mode: String { case collect, add }
     var mode: Mode = .collect
+    /// The tree somebody tapped the camera on, when there is one. Only the
+    /// intro screen reads it: see CollectIntro.
+    var about: String? = nil
 
     @Environment(Saved.self) private var saved
     @Environment(Sightings.self) private var sightings
@@ -164,7 +167,8 @@ struct CollectSheet: View {
                 // thumb already is, which is what Airbnb does with any sheet
                 // that asks for something. Everything after it is a list or a
                 // form, so those scroll.
-                CollectIntro(onStart: { openCamera() },
+                CollectIntro(about: about,
+                             onStart: { openCamera() },
                              onLibrary: { openLibrary() })
                     .padding(.horizontal, 20)
                     .padding(.bottom, 24)

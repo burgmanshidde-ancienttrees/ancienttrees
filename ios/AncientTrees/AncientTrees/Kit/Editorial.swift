@@ -37,6 +37,28 @@ public enum Editorial {
         return out
     }
 
+    /// PHOTOGRAPHS FIRST, in any list of a place's trees (Hidde, 2026-09-04,
+    /// looking at Italy's 327: "kun je bij dit soort land of stad of whatever
+    /// overzichten bomen met foto's bovenaan zetten").
+    ///
+    /// `leadWithAPhotograph` above only promotes ONE, so the first card is a
+    /// picture and the second is a green placeholder, which is exactly what he
+    /// was looking at. That one is right where only the opening card is being
+    /// staged; this one is right where the list is a browse and 82 percent of
+    /// the trees have no photograph yet.
+    ///
+    /// A stable partition rather than a sort, deliberately: whatever order the
+    /// caller already had inside each group is kept, so a list sorted by
+    /// distance stays sorted by distance and this adds one rule rather than
+    /// replacing the caller's.
+    ///
+    /// Likes join this as the second key when there are any to sort by (his
+    /// "en in de toekomst met likes"). Deliberately not yet: a list ordered by
+    /// a number that is zero on every row is the same list with a slower sort.
+    public static func photographsFirst<T>(_ list: [T], photo: (T) -> Bool) -> [T] {
+        list.filter(photo) + list.filter { !photo($0) }
+    }
+
     /// What Saved and Collect open with before anyone has saved or ticked a
     /// thing: the nearest trees worth wanting, photographs first, never one
     /// the person already has.

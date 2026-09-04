@@ -34,6 +34,17 @@
 import SwiftUI
 
 struct CollectIntro: View {
+    /// The tree somebody tapped the camera on, when they came from one
+    /// (Hidde, 2026-09-04: "als je vanuit een boom op de camera knop klikt is
+    /// de boodschap iets anders dan wil je iets zeggen als voeg deze boom toe
+    /// aan je collectie door er een foto van te maken").
+    ///
+    /// He is right that the general line is wrong there. "Build your tree
+    /// collection" is an invitation, which is what somebody pressing the middle
+    /// button needs; somebody who tapped the camera on Old Tjikko has already
+    /// accepted the invitation and wants to know what this button does to THIS
+    /// tree. Same sheet, same flow, different first sentence.
+    var about: String? = nil
     var onStart: () -> Void
     /// The camera roll, added 2026-08-28. Convention: iNaturalist, where the
     /// gallery is an ordinary route and not a fallback, reachable both by long
@@ -43,7 +54,8 @@ struct CollectIntro: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("Build your tree collection")
+            Text(about == nil ? "Build your tree collection"
+                              : "Add this tree to your collection")
                 .font(.brand(28, .bold, relativeTo: .title))
                 .foregroundStyle(Brand.ink)
                 .fixedSize(horizontal: false, vertical: true)
@@ -71,7 +83,11 @@ struct CollectIntro: View {
             // So this says the one thing that is true of both routes and cannot
             // stop being true: you take a picture, and it is yours. It is the
             // file's own worked example, not a new sentence.
-            Text("Every tree you photograph joins your collection.")
+            // Named, and the reader is the subject joined with "by", which is
+            // PRODUCT_COPY.md's own shape. The general line stays exactly as it
+            // was for every other way in.
+            Text(about.map { "You can add \($0) by taking a photograph of it." }
+                 ?? "Every tree you photograph joins your collection.")
                 .font(.brand(16, .regular, relativeTo: .body))
                 .foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)

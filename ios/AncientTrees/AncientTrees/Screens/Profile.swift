@@ -416,6 +416,23 @@ struct ProfileView: View {
                 // under them sits at 16, which appfit reads as a drift and a
                 // reader reads as sloppy without being able to name it.
             VStack(spacing: 0) {
+                // RATE THE APP, and it is the convention rather than a pick
+                // (Hidde, 2026-09-04: "is het normaal conventie om ook een
+                // review de app knop bij settings te hebben"). It is: Apple's
+                // own apps, Strava, AllTrails and Komoot all carry a row like
+                // this in settings, and the App Store's own `action=write-review`
+                // parameter exists for it.
+                //
+                // A LINK, never SKStoreReviewController. Apple's guidance is
+                // explicit that the automatic prompt must not be attached to a
+                // button: the system may show nothing at all (it is capped at
+                // three a year), and a button that usually does nothing is
+                // worse than no button. ReviewPrompt keeps the automatic ask at
+                // its milestone; this is the door for somebody who has decided
+                // by themselves, and it always opens.
+                link("Rate the app", "star",
+                     "https://apps.apple.com/app/id6806177833?action=write-review")
+                Divider().padding(.leading, 48)
                 link("Privacy", "lock", "https://ancienttrees.app/privacy")
                 Divider().padding(.leading, 48)
                 // The map credit lives one level down now (Hidde, 2026-08-25:

@@ -71,8 +71,9 @@ struct WorthItView: View {
                            "What we got wrong, or what we are missing"),
     ]
 
-    init(tree: Tree) {
+    init(tree: Tree, showsVote: Bool = true) {
         self.tree = tree
+        self.showsVote = showsVote
         _vote = AppStorage(wrappedValue: "", "at_worthit_\(tree.id)")
         _reported = State(initialValue:
             UserDefaults.standard.string(forKey: "at_wrong_\(tree.id)") != nil)
@@ -80,13 +81,26 @@ struct WorthItView: View {
             UserDefaults.standard.bool(forKey: "at_wrong_detail_\(tree.id)"))
     }
 
+    /// THE VOTE LEFT THIS BLOCK (Hidde, 2026-09-04: "de worth the visit tekst
+    /// mag helemaal weg, zet die thumb omhoog gewoon naast de stadsnaam zoals
+    /// ontworpen en dat je hem kan aanklikken om er een toe te voegen").
+    ///
+    /// The thumb is now the compact button in the line under the tree's name,
+    /// where it is a control rather than a question, and the question itself is
+    /// gone: a heading that asks whether you have been here is a sentence spent
+    /// on a thing the thumb says by being a thumb. What is left here is the
+    /// report entry, which he asked to keep and to put lower down.
+    var showsVote: Bool
+
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            HStack(spacing: 10) {
-                Text("Been here? Worth the visit?")
-                    .font(.subheadline.weight(.semibold))
-                Spacer(minLength: 0)
-                WorthItButton(tree: tree)
+            if showsVote {
+                HStack(spacing: 10) {
+                    Text("Been here? Worth the visit?")
+                        .font(.subheadline.weight(.semibold))
+                    Spacer(minLength: 0)
+                    WorthItButton(tree: tree)
+                }
             }
             if !reported {
                 // ITS OWN ENTRY, never nested under the vote (2026-08-16:

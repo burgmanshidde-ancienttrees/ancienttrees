@@ -32,11 +32,14 @@ struct PlaceMapPage: View {
     @State private var selected: Tree?
     @State private var topCard: String?
 
+    /// Photographs first, because this list is a browse and most of these
+    /// trees have no picture yet. See Editorial.photographsFirst.
     private var trees: [Tree] {
-        switch place {
+        let all = switch place {
         case .city(let slug): catalogue.trees(inCity: slug)
         case .country(let name): catalogue.trees(inCountry: name)
         }
+        return Editorial.photographsFirst(all, photo: { $0.photo != nil })
     }
 
     private var title: String {
