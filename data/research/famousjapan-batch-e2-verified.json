@@ -1,0 +1,55 @@
+[
+  {
+    "id": "smz_001",
+    "name": "The Great Cycad of Ryuge-ji",
+    "species": "Sago Palm (Cycas revoluta)",
+    "age_estimate": "about 1,100 years (temple tradition)",
+    "age_min": 900,
+    "age_max": 1300,
+    "girth_cm": 520,
+    "height_m": 3.79,
+    "location": {
+      "address": "Ryuge-ji Temple, 2085 Muramatsu, Shimizu-ku, Shizuoka City, Shizuoka Prefecture",
+      "latitude": 34.99022,
+      "longitude": 138.48478,
+      "neighbourhood": "Shimizu, Shizuoka"
+    },
+    "verified_sources": [
+      "https://bunka.nii.ac.jp/heritages/detail/201766",
+      "https://ja.wikipedia.org/wiki/%E9%BE%8D%E8%8F%AF%E5%AF%BA%E3%81%AE%E3%82%BD%E3%83%86%E3%83%84",
+      "https://www.pref.shizuoka.jp/kankosports/bunkageijutsu/bunkazai/1002825/1004990/1021654.html"
+    ],
+    "access": "Paid entry to Ryuge-ji Temple grounds, reported around 400 yen adult / 200 yen child (aggregator source, not the temple's own site), viewing hours approximately 8:30-16:30",
+    "transport": "JR Tokaido Line to Shimizu Station, then Shizutetsu Justline bus toward Shimizu City Hospital / Chureito, about 20 min, alight at the Ryuge-ji stop; or 20 min by car from the Tomei Expressway Shimizu interchange",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources: the national register (Agency for Cultural Affairs / Cultural Heritage Online, designated Natural Monument 1924-12-09, one of the first 7 cycads ever so designated) and Japanese Wikipedia's well-cited article (multiple published botanical references). Confirmed still listed as a nationally designated property on Shizuoka Prefecture's own cultural-property page, last updated 2024-08-06, which is the best 'still standing' evidence found (no dated recent photo or news item located in this pass; site is an active, maintained temple attraction with paid entry, which is itself weak evidence of continued upkeep). SINGLE PLANT, not a grove: both the register and Wikipedia describe it as 'honju' (this tree/individual), one base ('nemoto') from which 58 thick branches/trunks fan out, base circumference 5.2m; the whole clump looks like a large thicket but sources consistently treat it as one specimen. It is a MALE specimen (confirmed by both the 1924 register text and Wikipedia). Widely called one of Japan's three great cycads (Nihon San-dai Sotetsu), alongside Noman-ji's cycad (also Shizuoka Pref) and Myokoku-ji's cycad (Sakai, Osaka); largest cultivated cycad specimen in Japan per botanist Honda Masaji, quoted in Wikipedia. AGE IS LEGENDARY, not measured: temple tradition (per the on-site placard) says it was transplanted from China and donated by Tokugawa Yorinobu (founder of the Kii Tokugawa) and Tokugawa Yorifusa (founder of the Mito Tokugawa), giving roughly 1,100 years; this is oral/temple tradition rather than a documented planting date or growth-rate derivation, so age_min/age_max are left broad and the estimate is labelled as tradition. Branch girths individually: north branch ~2.6m, centre ~2.3m, south ~1.7m; canopy spread east-west ~8.94m, north-south ~9.85m. Old 1924 register figures in shaku/sun convert to a base circumference of about 515cm, height about 3.79m, closely matching Wikipedia's modern 5.2m/3.79m figures. Access line partly sourced from a travel aggregator (jalan-type search result) rather than the temple's own site, which returned only a JS-heavy homepage with no readable fee/hours text in this pass; flagged for that reason. SINGLE-TREE-DESTINATION test: passes. It is one of Japan's three great cycads and the largest cultivated cycad in the country, a specifically named pilgrimage-worthy botanical specimen with its own historical/legendary backstory, not merely 'a good tree in a temple'. Nearest published city is 31.9km away and Shizuoka itself is not yet published, so this ships as its own single-tree place, container new:Shimizu (the temple sits in Shimizu-ku, the former city merged into Shizuoka in 2003)."
+  },
+  {
+    "id": "skg_001",
+    "name": "Kosugi no Osugi (the Totoro Tree)",
+    "species": "Japanese Cedar (Cryptomeria japonica)",
+    "age_estimate": "roughly 700 to 1,000+ years (sources disagree)",
+    "age_min": 700,
+    "age_max": 1000,
+    "girth_cm": 630,
+    "height_m": 20,
+    "location": {
+      "address": "108-5 Magarikawa, Sakegawa Village, Mogami District, Yamagata Prefecture",
+      "latitude": 38.82005,
+      "longitude": 140.18726,
+      "neighbourhood": "Magarikawa, Sakegawa Village"
+    },
+    "verified_sources": [
+      "https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%9D%89%E3%81%AE%E5%A4%A7%E6%9D%89",
+      "https://keikan.pref.yamagata.jp/vp_082/",
+      "https://www.tokyocreative.com/sights/6412-kosugi-no-osugi-totoro-tree",
+      "https://nextshark.com/totoro-cedar-tree-increasing-visitors"
+    ],
+    "access": "Free, a village-designated natural monument with a public car park and marked path; Japanese Wikipedia notes the path from the car park to the tree is not snow-cleared in winter, implying open, unstaffed access the rest of the year",
+    "transport": "No direct train or bus found; nearest station is JR Shinjo (Ou Main Line / Yamagata Shinkansen terminus), about 30 minutes by car or taxi from there. This is NOT within an easy transit reach of Tsuruoka, roughly 23km away in a straight line with no direct route found in the sources checked; access guidance in every source found points to Shinjo, not Tsuruoka",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "CONFIRMED DIFFERENT TREE from the already-published Tsuruoka entry trk_001 (Hagurosan no Jiji Sugi, a cedar on Mt Haguro): different name, different legend, different administrative village (Sakegawa, Mogami District) versus Tsuruoka City, different species framing (this one is described as the same natural variety as the Mogami Gorge wild cedars, 'jindai-sugi'). NOT added to Tsuruoka's file: despite the brief's suggestion, every access source found (Japanese Wikipedia, the prefectural landscape page, tourism pages) routes visitors via Shinjo Station, a different city, about 30 min by car from the tree; no source connects it to Tsuruoka at all, and folding it into the Tsuruoka page would misrepresent which town it actually belongs to (CLAUDE.md's day-trip rule: never present an out-of-town tree as standing in the city it does not belong to). Shipping instead as its own single-tree place, container new:Sakegawa. AGE CONFLICT, delivered honestly rather than picking a winner: Japanese Wikipedia states 700 to 800+ years; the Yamagata Prefecture's own official landscape page titles this entry '推定樹齢1000年' (estimated age 1000 years); English tourism press repeats 'nearly 1,000 years'. Range widened to cover both rather than silently preferring one. Girth is 'nemawari' (root/base circumference), 6.3m, consistent across the Japanese sources; height about 20m; canopy spread about 17m. TWO TRUNKS FROM ONE BASE: the tree splits into two 'cores' near the base, which is exactly why it is nicknamed Meoto-sugi (married-couple cedar) and Enmusubi no Sugi (matchmaking cedar), and also why its silhouette reads as two round 'ears', the resemblance to Totoro that made it a viral tourist attraction from around 2020 (Yahoo News, Japan Today, NextShark, DesignTaxi, TokyoCreative all covered the phenomenon with recent visitor photos, which is reasonable 'alive and visited recently' evidence even without a single dated primary photo). Designated a Sakegawa Village natural monument/cultural property on 1986-11-27. Local legend: a lord of Shinjo sheltered from a blizzard under this tree while deer hunting. A mountain deity (yamagami) is enshrined at its base. SINGLE-TREE-DESTINATION test: clearly passes, arguably the strongest of this batch. It went internationally viral specifically as a single, individually recognisable tree (the 'Totoro Tree'), with dedicated English-language travel writeups (TokyoCreative, Japan Today, NextShark) describing tourists making a special trip and posing with umbrellas to recreate a film scene; this is demand for THIS tree, not for the region generally."
+  }
+]
