@@ -65,11 +65,13 @@ guidance asks for.
   first time `total` reaches an unfired milestone, provided the quiet period
   and lifetime cap allow it. Returns `false` otherwise, including whenever
   running under XCTest.
-- Test suppression, two independent guards: `ProcessInfo.processInfo
-  .environment["XCTestConfigurationFilePath"] != nil` always disables it
-  (so no UI test can forget to suppress it), plus an explicit
-  `-no-review-prompt` launch argument for symmetry with `-no-nudge` and for
-  anyone reading the launch args to see the intent stated.
+- Test suppression: the `XCTestConfigurationFilePath` environment guard
+  reliably covers unit tests, but does NOT reliably cover UI tests (the app
+  under test runs as a separate process from the XCTest runner, and that
+  variable is set in the runner's environment, not necessarily the app's).
+  UI tests therefore rely on the explicit `-no-review-prompt` launch
+  argument, which the shared launch-argument helper in every UI test file
+  that can reach a tick now passes.
 
 **Wiring:**
 - `ContentView.swift` gains `@State fileprivate var reviewPrompt =

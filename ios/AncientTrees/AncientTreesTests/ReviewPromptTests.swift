@@ -67,13 +67,18 @@ struct ReviewPromptTests {
         // otherwise always on during any xcodebuild test run (see
         // ReviewPrompt.swift's `suppressedOverride`). This test is about
         // the persistence logic, not the guard — neverFiresUnderXCTest
-        // below covers the guard itself.
+        // below covers the guard itself. The second call is 8 days later,
+        // past the quiet period, so a `false` there proves "first" is
+        // recorded as fired rather than merely proving the quiet period
+        // blocked a same-instant repeat (which holdsOffUntilTheQuietPeriodPasses
+        // already covers on the pure function).
         let s = Scratch(); defer { s.clean() }
         let prompt = ReviewPrompt(defaults: s.defaults, suppressed: false)
         let now = Date()
+        let eightDaysLater = now.addingTimeInterval(8 * 86_400)
 
         #expect(prompt.consider(ticked: 3, now: now) == true)
-        #expect(prompt.consider(ticked: 3, now: now) == false)
+        #expect(prompt.consider(ticked: 3, now: eightDaysLater) == false)
     }
 
     @Test func neverFiresUnderXCTest() {

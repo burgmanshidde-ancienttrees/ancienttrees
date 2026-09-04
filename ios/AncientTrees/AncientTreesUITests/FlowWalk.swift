@@ -279,7 +279,7 @@ final class FlowWalk: XCTestCase {
 
         for flow in Self.flows {
             let app = XCUIApplication()
-            app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks", "-no-cover"] + flow.args
+            app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks", "-no-cover", "-no-review-prompt"] + flow.args
             app.launch()
             // The catalogue is 2.5 MB of JSON and nothing exists until it is
             // read; a step taken before that taps an empty window.
