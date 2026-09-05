@@ -5367,6 +5367,34 @@
         "tokens": 0,
         "trees": 0,
         "note": "Session work, not a dispatched agent: fixed REVIEW.md WARN (Scheessel spelling), wrote the European Larch species intro (pagegaps.py's one gap), rebuilt and ran qa.py clean."
+      },
+      {
+        "target": "_famous-france",
+        "kind": "verify",
+        "tokens": 145000,
+        "trees": 6,
+        "note": "Checked all 12 candidates; 6 verified (incl. Arburacellu, a strong single-tree case), 5 confirmed dead/blocked, 1 left as lead pending a fame judgement call."
+      },
+      {
+        "target": "alicante",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 1,
+        "note": "Well-picked-over register cluster; only new find was a press-documented, unregistered fourth tree at Plaza de Calvo Sotelo (flagged, genus-only, approximate pin); two flagged leads stay unresolved."
+      },
+      {
+        "target": "famousfrance-write",
+        "kind": "write",
+        "tokens": 90000,
+        "trees": 6,
+        "note": "6 single-tree French places written as full place files; preflight 0 problems."
+      },
+      {
+        "target": "alicante-write",
+        "kind": "session",
+        "tokens": 0,
+        "trees": 1,
+        "note": "Session wrote ali_016's story/translation directly (1 tree, too thin for a dispatched write pass) and fixed 3 accent-consistency bugs the France write pass introduced (nantes/lue/prety name vs question_answer mismatches) that broke the astro build."
       }
     ]
   }
